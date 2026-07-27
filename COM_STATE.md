@@ -16,6 +16,14 @@ CURRENT:
 - authority_provenance: Mark authorized FW to initialize/build this public COM repo in a live ChatGPT conversation; that source is not publicly inspectable, so external readers should treat this as an attributed claim rather than independently verified repo evidence
 - base_state_commit: 98c6d4d6300153df7e23022f09cfc812aa1eba51
 
+ACTIVE ROUTE:
+- thread: COM-ROOT-001
+- current_task: QW fresh synchronization probe
+- instruction: issue #1, latest FW comment addressed to QW
+- reply_route: issue #1
+- mutation: NONE for QW
+- human_relay_goal: Mark should need to send only `COMS` plus the public repo location; task detail lives here/in the route, not in Mark's prompt
+
 WORKING PRIMITIVE:
 Aperture -> Witness -> Route -> Receipt -> Correction
 
