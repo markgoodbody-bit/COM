@@ -1,138 +1,269 @@
-# COM working protocol hypothesis v0.1
+# COM protocol v0.2 working candidate
 
-Status: working hypothesis only. Not canon, not validated, and expected to change as new apertures and failure modes appear.
+Status: working candidate. Not canon and not validated.
+
+Read `COM_CORE.md` for the causal model. This file defines the smallest practical operating discipline.
 
 ## 1. Purpose
 
-COM is a transport-independent shared communication substrate for entities operating under uncertainty.
+COM exists to let independent apertures coordinate real work under uncertainty while preserving identity, provenance, semantic force, authority, route state, disagreement, and correction.
 
-Its job is not to maximize message volume or force consensus. Its job is to preserve enough structure that independent apertures can understand, verify, correct, and continue shared work without silently losing identity, meaning, evidence, authority, disagreement, or causal history.
+Success is not more protocol. Success is less ambiguity and less human relay burden.
 
-## 2. Middle-out primitive
+## 2. Core objects
 
-At the smallest useful scale:
+COM distinguishes:
 
-`Aperture -> Witness -> Route -> Receipt -> Correction`
+```text
+EVENT   = what happened or was attempted
+ROUTE   = carrier/channel with causal state of its own
+WITNESS = bounded observation/claim about an event, route, or state
+STATE   = compact current projection supported by witnesses
+```
 
-A witness should be expressible as four coupled parts:
+CONTROL is an envelope on events/actions, not a separate causal node.
 
-`ANCHOR -> DELTA -> EVIDENCE -> CONTROL`
+CORRECTION is a relation/event that qualifies or supersedes prior addressable state without erasing it.
 
-- ANCHOR: who/which session, thread or parents, and relevant state/freshness.
-- DELTA: the claim, observation, request, or change that matters now.
-- EVIDENCE: source, scope, uncertainty, and route to deeper evidence.
-- CONTROL: authority/modality, permitted effect, ownership, and correction/return route.
+RECEIPT is a witness type, not a primitive.
 
-The same shape should remain useful when zooming from one word or claim to one work item, one team, or a larger network. Zoom should change scale, not the governing structure.
+## 3. Minimal event record
 
-## 3. Compression rule
+Use only the fields required by consequence and uncertainty.
 
-Transmit the minimum sufficient witness that lets the receiver understand, verify, correct, and ask for more.
+A durable EVENT should be able to preserve:
 
-Progressive disclosure:
+```text
+event_id
+source
+kind
+parents / dependencies
+payload or payload_ref
+route
+state/time anchor where relevant
+control
+status: ATTEMPTED | ACCEPTED | COMPLETED | REJECTED | UNKNOWN
+```
 
-`summary -> evidence map -> raw evidence`
+Do not invent a successful event from an attempt.
 
-Compress content. Do not compress away provenance, modality, uncertainty, disagreement, missing apertures, evidence scope, authority, or correction routes.
+## 4. Minimal witness record
+
+A WITNESS should be able to preserve:
+
+```text
+witness_id
+observer
+subject: <event | route | state | claim>
+observation
+locus / route
+anchor / observation window where relevant
+evidence or evidence_ref
+uncertainty / claim_status
+```
+
+One useful human-readable encoding remains:
+
+```text
+ANCHOR -> DELTA -> EVIDENCE -> CONTROL
+```
+
+but this is an encoding convenience, not COM's ontology.
+
+- ANCHOR: identity, parents, relevant state/freshness.
+- DELTA: event, observation, request, or change that matters now.
+- EVIDENCE: source, scope, uncertainty, route to deeper evidence.
+- CONTROL: modality, authority, permitted effect, ownership, return/correction route.
+
+Do not force all four labels into tiny routine messages when meaning is already unambiguous.
+
+## 5. Semantic force
+
+Preserve modality exactly enough that a receiver does not accidentally strengthen or weaken authority.
+
+```text
+SHOULD != MUST
+EXPECTATION != AUTHORIZATION
+CAN != MAY
+MAY != MUST
+OBSERVED != INFERRED
+ABSENCE OF A GRANT != DENIAL
+ATTEMPTED != COMPLETED
+NOT OBSERVED != DID NOT EXIST
+```
+
+A semantically stronger paraphrase is a state change, not compression.
+
+## 6. Non-observation and failure
+
+Never infer another aperture's state merely from local absence.
+
+Record non-observation at an explicit boundary:
+
+```text
+expected: <event / event class>
+observer: <aperture>
+locus: <route / endpoint / state surface>
+window_or_anchor: <time/state inspected>
+observation: NOT_OBSERVED
+uncertainty: <unresolved causal possibilities>
+```
+
+Keep distinct:
+- not sent;
+- send attempted and rejected;
+- sent but delayed/lost;
+- present on route but not retrievable by receiver;
+- retrieved but unparseable;
+- received but no action taken;
+- explicit refusal.
+
+Silence never means assent.
+
+## 7. Evidence discipline
+
+Evidence should preserve source, scope, freshness/anchor where relevant, and uncertainty.
+
+Successful retrieval of one file does not prove exhaustive repository inspection.
+
+A model statement does not become provider evidence because it sounds confident.
+
+Agreement between apertures is not validation.
+
+## 8. Identity and session discipline
+
+Separate:
+- stable role;
+- runtime/model/provider;
+- session/aperture instance.
+
+Unknown remains `UNKNOWN`.
+
+A new session boundary must be established, not inferred from elapsed time, temporary unavailability, topic changes, or carrier failure.
+
+A real replacement session receives a new session identity and reconstructs continuity from durable COM. It does not inherit predecessor mutation ownership silently.
+
+## 9. Current state and history
+
+Use two surfaces:
+
+1. durable history/evidence;
+2. `COM_STATE.md`, a compact current projection.
+
+Current state does not rewrite history. History does not need to be retransmitted during normal operation.
+
+Do not store a self-referential `current_head` inside `COM_STATE.md`. Use retrieval/carrier object identity for the file/commit actually observed. An internal `state_basis` may identify the prior state on which an update was based.
+
+If visible content and carrier metadata disagree, classify freshness `DEGRADED` and stop unsafe mutation.
+
+## 10. COMS
+
+`COMS` means synchronize from shared COM before relying on conversational assumptions.
+
+On `COMS`:
+
+1. read `COM_STATE.md`;
+2. establish identity/session honestly;
+3. locate only tasks addressed to this aperture/role;
+4. verify authority/control before any write;
+5. follow an embedded task or immutable route object named by state;
+6. do not depend on a long issue transcript as the sole carrier of an active instruction;
+7. if retrieval/freshness contradicts itself, report `DEGRADED` with bounded evidence and stop mutation;
+8. if no addressed task exists, do not take another aperture's task;
+9. if synchronized and idle, stop.
+
+Normal `COMS` should be cheap.
+
+## 11. Task / work event
+
+A mutation-capable TASK event should normally state:
+
+```text
+task_id
+addressed_to
+instruction
+base_anchor
+write_scope
+no_touch
+authority_source
+reply_route
+status
+```
+
+For code/repository mutation, exact-head discipline applies whenever the result depends on a particular state.
+
+If the relevant head moves outside the acknowledged envelope, do not silently adapt. Re-read/re-negotiate or explicitly report the drift.
+
+## 12. Parallel work
+
+Parallel work requires semantic ownership, not merely disjoint filenames.
+
+For each active work item:
+
+```text
+work_id
+owner / mutator
+reviewers
+base_anchor
+semantic_scope
+write_scope
+no_touch
+dependencies
+status
+merge/integration owner
+```
+
+One mutator owns one semantic defect/work item at a time unless deliberate collision is visible.
+
+A clean Git merge does not prove semantic integration.
+
+## 13. Correction
+
+Corrections are additive and recursively correctable.
+
+Prefer the smallest patch that contains the defect:
+
+```text
+PATCH
+  target
+  field_or_relation
+  old
+  new
+  evidence
+  effect
+```
+
+If an upstream error invalidates many descendants, repair the causal cone rather than cosmetically rewriting each symptom.
+
+If local repair becomes unsafe, pause mutation and reconstruct from durable evidence/state.
+
+## 14. Compression and adaptive depth
+
+Default:
+
+```text
+summary -> evidence map -> raw evidence
+```
+
+Compress content, not provenance, modality, uncertainty, dissent, authority, route state, or correction paths.
+
+Use more redundancy only when uncertainty, consequence, or hardening risk requires it. Collapse back after synchronization.
 
 A summary with no route back to evidence is deletion, not reversible compression.
 
-## 4. Modal preservation
+## 15. Human role
 
-Communication must preserve semantic force.
+Mark is human authority, not intended to be a permanent transport bus.
 
-Examples:
+Human relay is a legitimate fallback and must preserve provenance, but any design that routinely requires Mark to shuttle machine-readable state between apertures has not yet achieved COM's practical goal.
 
-- SHOULD != MUST
-- EXPECTATION != AUTHORIZATION
-- CAN != MAY
-- MAY != MUST
-- OBSERVED != INFERRED
-- ABSENCE OF A GRANT != DENIAL
+## 16. Non-goals / anti-drift
 
-A semantically stronger paraphrase is a state change and must not be smuggled in as compression.
+COM v0.2 is not trying to become:
+- a universal theory of communication;
+- a truth or consensus engine;
+- a taxonomy for every possible failure before real work resumes;
+- a replacement for Git, issue trackers, or domain tooling;
+- a protocol that consumes more attention than the work it protects.
 
-## 5. Evidence discipline
-
-Evidence records should preserve at least:
-
-- source
-- scope: exactly what was inspected or measured
-- freshness/state anchor where relevant
-- uncertainty / claim status
-
-Successful retrieval of one file does not by itself prove exhaustive inspection of a repository. A local test is not hosted-CI evidence. A model statement is not independent provider evidence.
-
-## 6. Correction
-
-Correction is recursive and additive.
-
-A correction does not erase the old witness and does not become truth merely because it is labelled CORRECTION.
-
-Prefer the smallest bounded patch that contains the defect:
-
-```
-PATCH
-  target: <addressable prior claim/state>
-  field: <single semantic field>
-  old: <old value>
-  new: <new value>
-  source: <evidence>
-  effect: <what changes and what explicitly does not>
-```
-
-If one upstream defect affects many downstream states, identify the affected causal cone rather than independently rewriting every symptom.
-
-When local repair is no longer sufficient, pause mutation and reconstruct from canonical state/evidence rather than creating a correction storm.
-
-## 7. Causality
-
-Messages and work form a causal graph, not only a transcript.
-
-A receiver can inherit distortion from an upstream prompt or summary. Therefore important claims need parents/dependencies, and root cause should remain distinguishable from downstream manifestation.
-
-`DEFECT != ROOT_CAUSE`
-
-## 8. State and history
-
-COM needs two coupled surfaces:
-
-1. durable witness history: what was actually said/done, including errors and corrections;
-2. compact current state: what an arriving aperture needs now.
-
-Current state must not rewrite history. History must not become so large that current state is practically unretrievable.
-
-## 9. Session loss and reconstruction
-
-No AI session may be the sole carrier of collaboration state.
-
-Session/context exhaustion is an ordinary carrier failure. A replacement aperture receives a new session identity and reconstructs continuity from durable COM state/evidence. It does not silently inherit the predecessor session's identity, confidence, or mutation ownership.
-
-## 10. Answerability without possession
-
-COM should request enough rationale/evidence to make a conclusion inspectable without requiring unrestricted access to another aperture's private internal reasoning.
-
-Answerability does not require possession.
-
-## 11. Adaptive depth
-
-Communication depth should increase when uncertainty, consequence, or hardening risk rises, and collapse again after synchronization is restored.
-
-Normal state: compact witness.
-Degraded state: richer state/evidence/acknowledgement.
-Ambiguous high-impact state: fail closed and resynchronize.
-
-Do not answer every error by retransmitting everything.
-Correct at the smallest causal boundary that contains the defect.
-
-## 12. Non-goals at v0.1
-
-Not yet specified:
-- a final schema
-- CI enforcement
-- transport-specific encodings
-- automatic authority assignment
-- consensus rules
-- truth adjudication
-
-First pressure-test the primitives against different apertures and real failure modes.
+When in doubt, ask: does this addition materially improve safe coordination on real work? If not, leave it out.
