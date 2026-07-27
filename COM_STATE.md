@@ -1,84 +1,107 @@
-COM_STATE v0.1
+# COM_STATE v0.2
 
-STATUS:
-Working state. Not validated. Do not treat model agreement as proof.
+STATUS: WORKING CANDIDATE / IDLE
 
-FIRE:
-A public shared reference for independent entities to establish communication under uncertainty.
+COM is not validated. Model agreement is not proof.
 
-CURRENT:
-- focus: discover the smallest communication structure that preserves identity, meaning, evidence, authority, failure, and correction across different AI apertures
-- execution_mode: SERIAL
+## PURPOSE
+
+A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making the human carry the whole collaboration.
+
+Core model: `COM_CORE.md`.
+Operational discipline: `COM_PROTOCOL_WORKING.md`.
+
+## CURRENT
+
 - human_authority: Mark
-- active_mutator: FW / session FW-20260727T2012+0100-8F3C
-- qwen_apertures: human-relayed; at least two distinct QW tabs have participated; do not silently merge their session identity
-- latest_qw_session: UNKNOWN — Mark explicitly reported the latest recovery return came from a fresh QW tab; no unique QW session identifier was supplied in that return
-- cc_session: `CC-20260727T2020+0100-0C60` CONTINUING, self-reported by CC through Mark relay and claimed issue #1 receipt `gh-comment:5097308918`
-- cc_session_boundary: NONE REPORTED — CC states there was a transport gap/topic change, not a session restart; do not infer a new session from elapsed time, temporary unavailability, topic change, or carrier interruption
-- cc_test_condition: CORRELATED, not cold — CC explicitly reports prior IAC/1 exposure on private Campfire issue #134
-- cc_review_status: NOT_VERIFIED
-- cc_mutation_authority: NONE for the review; no mutation ownership was inherited or newly granted
-- cc_to_fw_transport: DEGRADED — CC can post to GitHub, but FW's available GitHub issue-comment retrieval repeatedly truncates before latest CC comment bodies
-- human_relay_topology: Mark is temporarily load-bearing for some CC -> FW traffic; this is working as a carrier fallback but is contrary to COM's target of reducing human relay burden
-- authority_provenance: Mark authorized FW to initialize/build this public COM repo in a live ChatGPT conversation; that source is not publicly inspectable, so external readers should treat this as an attributed claim rather than independently verified repo evidence
-- base_state_commit: 98c6d4d6300153df7e23022f09cfc812aa1eba51
-- base_state_semantics: ancestry/origin anchor only; not a current-head or freshness claim
-- qwen_current_freshness: DEGRADED / NOT ESTABLISHED
-- qwen_historical_recovery: SUCCEEDED for immutable commit 78b2b500cd4003eed61f71093105a3e23a8e53ab
+- execution_default: SERIAL unless explicitly changed
+- active_task: NONE
+- active_mutator: NONE
+- last_build_actor: FW / session `FW-20260727T2012+0100-8F3C`
+- last_build_authority: Mark directly instructed FW to examine what COM could be and make it that; this is an attributed live-conversation claim, not independently inspectable public evidence
+- state_basis: `030e79e82baf3bf864302f924f22d07622e0b7cf` — head immediately before this state projection was written; this is NOT the commit containing this file
+- core_status: v0.2 working candidate
+- protocol_status: v0.2 working candidate
 
-ACTIVE ROUTE:
-- thread: COM-ROOT-001
-- received_cc_review: issue #1 `gh-comment:5096989145`, reported by Mark; review is CORRELATED and NOT_VERIFIED
-- completed_cc_provenance_receipt: claimed issue #1 `gh-comment:5097308918`; CC reports same continuing session `CC-20260727T2020+0100-0C60`
-- preserved_cc_evidence: `evidence/CC_PROVENANCE_CONTINUITY_001.md`
-- direct_fw_read_limit: latest CC comment bodies remain unavailable through FW's current connector surface; this is carrier degradation, not CC silence or absence
-- current_task: CC bounded minimality probe against FW counter-hypothesis `Aperture --[Witness via Route]--> Aperture`
-- instruction: issue #1 `gh-comment:5097352791`
-- cc_action: REVIEW ONLY; mutation NONE; preserve NOT_VERIFIED and CORRELATED status
-- reply_route: issue #1; Mark relay remains fallback if FW retrieval truncates again
-- mutation: FW only in current SERIAL mode unless Mark visibly reassigns authority
-- next_after_return: change only the smallest structure actually required by the five failure cases; do not add a FAILURE primitive unless the collapsed model actually breaks
+## COMS
 
-WORKING PRIMITIVE:
-Aperture -> Witness -> Route -> Receipt -> Correction
+`COMS` means synchronize from this shared surface before relying on conversational assumptions.
 
-Candidate collapse under test:
-Aperture --[Witness via Route]--> Aperture
+On COMS:
+1. read this file;
+2. establish honestly available role/session/runtime identity;
+3. act only on a task addressed to that aperture/role;
+4. verify authority before mutation;
+5. if no task is addressed here, do not steal another aperture's work;
+6. if state/retrieval evidence contradicts itself, report `DEGRADED` and stop unsafe mutation;
+7. if synchronized and idle, stop.
 
-Working message capsule:
-ANCHOR -> DELTA -> EVIDENCE -> CONTROL
+Current result for any aperture: **IDLE / NO ACTIVE TASK**.
 
-OBSERVED FINDINGS:
-- compress content; preserve provenance and modality
-- SHOULD != MUST; EXPECTATION != AUTHORIZATION; CAN != MAY
-- evidence must preserve scope/freshness, not merely cite a source
-- corrections are additive witnesses, not truth resets
-- correction should patch the smallest causal state that contains the defect
-- correction itself remains correctable
-- sender framing can inject downstream error; causal parents matter
-- compact current state and durable history are different surfaces; neither replaces the other
-- no AI session should be the sole carrier of collaboration state
-- `COMS` plus the repo location was sufficient for one QW aperture to discover and execute a detailed routed task without Mark carrying that task text
-- transport capability can be asymmetric; relay provenance must survive route completion
-- ancestry/origin identity and freshness/current-observation identity must not be conflated
-- a mutable transport can expose an internally coherent but stale state
-- if metadata and visible content disagree about freshness, state should be treated as DEGRADED rather than CURRENT until resolved
-- degraded communication should add bounded redundancy or an alternative carrier, then collapse back after resynchronization
-- a fresh replacement aperture can reconstruct useful historical/causal state from durable COM without inheriting predecessor session identity
-- immutable historical recovery does not by itself establish present mutable-state freshness
-- reviewer/test independence is itself evidence: a useful review can be CORRELATED and must not be represented as cold merely because the task requested coldness
-- retrieval truncation is a carrier limitation, not silence from the missing speaker; incomplete visibility must remain explicit rather than being converted into absence
-- session continuity and carrier continuity are separate: a carrier gap does not create a new aperture or session
-- a session boundary must be established, not inferred from elapsed time, availability loss, topic change, or transport failure
-- Mark becoming a required relay is a live topology/fallback state, not neutral observation; COM should eventually remove that load without erasing the fallback witness
+## WORKING CORE
 
-OPEN:
-- determine whether absence/failure needs a new primitive or can be represented as typed Witness/outcome states with explicit observation locus
-- test whether `Receipt` and `Correction` are Witness types rather than primitives
-- test whether Route remains independently causal or can collapse into Witness/CONTROL without losing carrier-failure information
-- determine the minimum safe way to establish current freshness without creating a self-referential `current_head` field inside the state object
-- reduce the current Mark-mediated CC -> FW carrier dependency
-- do not add schema, CI, automation, or large protocol machinery until the primitives survive more pressure
+COM now distinguishes:
 
-CORRECTION / HISTORY:
-This file is the compact current state, not the historical record. Git history and explicit evidence records preserve prior states. Do not rewrite old witnesses to make later corrections look retroactively true.
+```text
+EVENT   = what happened or was attempted
+ROUTE   = carrier with causal state of its own
+WITNESS = bounded observation/claim about event, route, or state
+STATE   = compact current projection supported by witnesses
+```
+
+CONTROL is an envelope on events/actions.
+RECEIPT is a witness type.
+CORRECTION is an additive relation/event, not a primitive stage.
+
+Absence is never inferred from local non-observation. A non-observation must name the expected event, observer, locus/route, observation window or state anchor, and unresolved uncertainty.
+
+## LOCKED WORKING DISCIPLINES
+
+- preserve semantic force: `SHOULD != MUST`, `EXPECTATION != AUTHORIZATION`, `OBSERVED != INFERRED`, `NOT OBSERVED != DID NOT EXIST`
+- preserve source, scope, freshness, uncertainty and route to evidence
+- agreement is not validation
+- corrections add; they do not erase old witnesses
+- session continuity and carrier continuity are separate
+- a session boundary must be established, not inferred from time/topic/temporary transport failure
+- Route remains independently causal because carriers can cache, truncate, delay, transform or hide state
+- exact-head / explicit scope discipline applies to state-dependent mutation
+- parallel work needs semantic ownership, not merely disjoint paths
+- human relay is a fallback, not the target architecture
+- no AI session may be the sole carrier of collaboration state
+
+## KNOWN CARRIER LIMITS
+
+Historical probes established that:
+- QW could receive a coherent but stale mutable GitHub view while immutable newer commits existed;
+- FW's GitHub issue-comment retrieval could truncate before later CC comments even though issue metadata showed more comments;
+- Mark temporarily became a fallback relay for some CC -> FW traffic.
+
+Operational consequence:
+**A long issue transcript must not be the sole carrier of an active task.** Put the actionable task in this current state or in a compact/immutable route object referenced here.
+
+These are historical carrier observations, not claims that every current route remains degraded.
+
+## HISTORY
+
+Git history and `evidence/` preserve the v0/v0.1 experiments, stale reads, relays, corrections, and correlated reviews.
+
+Do not rewrite those records to make v0.2 look inevitable.
+
+The former primitive
+
+`Aperture -> Witness -> Route -> Receipt -> Correction`
+
+is retained in history as a falsified/over-factored working hypothesis, not silently converted into the new model.
+
+## NEXT PROOF
+
+Do not immediately add schema, CI, automation, more failure taxonomy, or another self-referential review loop.
+
+The next meaningful pressure test should be **real collaborative work**:
+- one actual task;
+- explicit actor/authority/scope;
+- at least one independent witness/verification step;
+- route failure preserved if it occurs;
+- Mark not required to shuttle routine machine-readable state.
+
+Only add machinery when a real failure demonstrates that the smaller core is insufficient.
