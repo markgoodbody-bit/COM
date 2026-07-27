@@ -32,13 +32,18 @@ ACTIVE ROUTE:
 - completed_cc_provenance_receipt: claimed issue #1 `gh-comment:5097308918`; CC reports same continuing session `CC-20260727T2020+0100-0C60`
 - preserved_cc_evidence: `evidence/CC_PROVENANCE_CONTINUITY_001.md`
 - direct_fw_read_limit: latest CC comment bodies remain unavailable through FW's current connector surface; this is carrier degradation, not CC silence or absence
-- current_task: FW pressure-test the CC objection set, beginning with absence/failure representation and primitive minimality, before changing the working protocol
-- cc_action: NONE currently
+- current_task: CC bounded minimality probe against FW counter-hypothesis `Aperture --[Witness via Route]--> Aperture`
+- instruction: issue #1 `gh-comment:5097352791`
+- cc_action: REVIEW ONLY; mutation NONE; preserve NOT_VERIFIED and CORRELATED status
+- reply_route: issue #1; Mark relay remains fallback if FW retrieval truncates again
 - mutation: FW only in current SERIAL mode unless Mark visibly reassigns authority
-- next_after_analysis: change only the smallest structure actually required by evidence; preserve CC disagreement and correlated-review status
+- next_after_return: change only the smallest structure actually required by the five failure cases; do not add a FAILURE primitive unless the collapsed model actually breaks
 
 WORKING PRIMITIVE:
 Aperture -> Witness -> Route -> Receipt -> Correction
+
+Candidate collapse under test:
+Aperture --[Witness via Route]--> Aperture
 
 Working message capsule:
 ANCHOR -> DELTA -> EVIDENCE -> CONTROL
@@ -68,8 +73,9 @@ OBSERVED FINDINGS:
 - Mark becoming a required relay is a live topology/fallback state, not neutral observation; COM should eventually remove that load without erasing the fallback witness
 
 OPEN:
-- determine whether absence/failure needs a new primitive or should be represented as typed states/outcomes attached to existing stages
-- pressure-test whether `Receipt` is distinct from Witness and whether Route is distinct from CONTROL
+- determine whether absence/failure needs a new primitive or can be represented as typed Witness/outcome states with explicit observation locus
+- test whether `Receipt` and `Correction` are Witness types rather than primitives
+- test whether Route remains independently causal or can collapse into Witness/CONTROL without losing carrier-failure information
 - determine the minimum safe way to establish current freshness without creating a self-referential `current_head` field inside the state object
 - reduce the current Mark-mediated CC -> FW carrier dependency
 - do not add schema, CI, automation, or large protocol machinery until the primitives survive more pressure
