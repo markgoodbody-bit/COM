@@ -1,6 +1,6 @@
 # COM_STATE v0.2
 
-STATUS: WORKING CANDIDATE / IDLE
+STATUS: WORKING CANDIDATE / ACTIVE
 
 COM is not validated. Model agreement is not proof.
 
@@ -14,12 +14,19 @@ Operational discipline: `COM_PROTOCOL_WORKING.md`.
 ## CURRENT
 
 - human_authority: Mark
-- execution_default: SERIAL unless explicitly changed
-- active_task: NONE
-- active_mutator: NONE
-- last_build_actor: FW / session `FW-20260727T2012+0100-8F3C`
-- last_build_authority: Mark directly instructed FW to examine what COM could be and make it that; this is an attributed live-conversation claim, not independently inspectable public evidence
-- state_basis: `030e79e82baf3bf864302f924f22d07622e0b7cf` — head immediately before this state projection was written; this is NOT the commit containing this file
+- execution_mode: delegated CC branch work / FW integration
+- active_task: `COM-OPT-001` — optimize the public COM repository as a usable coordination surface
+- addressed_to: CC; continuing session `CC-20260727T2020+0100-0C60` if still active, otherwise a fresh CC session must identify itself honestly
+- active_mutator: CC on `claude/optimize-com-v0.2` only
+- integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
+- task_route: issue #2 `COM v0.2 · Claude repo optimization pass`
+- work_branch: `claude/optimize-com-v0.2`
+- base_anchor: `96034d87893bf36a1a9eb13968bc205edf687a4a`
+- write_scope: `README.md`, `COM_CORE.md`, `COM_PROTOCOL_WORKING.md`; may create `evidence/README.md`; at most one additional small navigation/index file if clearly justified
+- no_touch: `COM_STATE.md`, existing `evidence/*.md` witness files, `routes/*`, `main`, issue #1 history, schema/CI/automation/code
+- deliverable: bounded branch commits + PR to `main`; do not merge
+- authority_source: Mark explicitly asked FW to optimize the repo with Claude in the live ChatGPT conversation; public issue #2 carries the delegated branch scope
+- state_basis: `96034d87893bf36a1a9eb13968bc205edf687a4a` — main head before this active-task state update; not the commit containing this file
 - core_status: v0.2 working candidate
 - protocol_status: v0.2 working candidate
 
@@ -32,15 +39,19 @@ On COMS:
 2. establish honestly available role/session/runtime identity;
 3. act only on a task addressed to that aperture/role;
 4. verify authority before mutation;
-5. if no task is addressed here, do not steal another aperture's work;
+5. respect exact branch/base/write/no-touch scope;
 6. if state/retrieval evidence contradicts itself, report `DEGRADED` and stop unsafe mutation;
-7. if synchronized and idle, stop.
+7. if no task is addressed to you, do not steal another aperture's work;
+8. if synchronized and idle for your role, stop.
 
-Current result for any aperture: **IDLE / NO ACTIVE TASK**.
+Current result:
+- **CC:** ACTIVE TASK `COM-OPT-001`; read issue #2 and work only on `claude/optimize-com-v0.2`.
+- **FW:** integration owner; do not independently edit CC's semantic work while CC owns the task.
+- **Other apertures:** no active task.
 
 ## WORKING CORE
 
-COM now distinguishes:
+COM distinguishes:
 
 ```text
 EVENT   = what happened or was attempted
@@ -65,7 +76,7 @@ Absence is never inferred from local non-observation. A non-observation must nam
 - a session boundary must be established, not inferred from time/topic/temporary transport failure
 - Route remains independently causal because carriers can cache, truncate, delay, transform or hide state
 - exact-head / explicit scope discipline applies to state-dependent mutation
-- parallel work needs semantic ownership, not merely disjoint paths
+- parallel/delegated work needs semantic ownership, not merely disjoint paths
 - human relay is a fallback, not the target architecture
 - no AI session may be the sole carrier of collaboration state
 
@@ -77,7 +88,7 @@ Historical probes established that:
 - Mark temporarily became a fallback relay for some CC -> FW traffic.
 
 Operational consequence:
-**A long issue transcript must not be the sole carrier of an active task.** Put the actionable task in this current state or in a compact/immutable route object referenced here.
+**A long issue transcript must not be the sole carrier of an active task.** The actionable task is therefore summarized here and specified durably in issue #2.
 
 These are historical carrier observations, not claims that every current route remains degraded.
 
@@ -93,15 +104,13 @@ The former primitive
 
 is retained in history as a falsified/over-factored working hypothesis, not silently converted into the new model.
 
-## NEXT PROOF
+## CURRENT PROOF
 
-Do not immediately add schema, CI, automation, more failure taxonomy, or another self-referential review loop.
+`COM-OPT-001` is the first deliberate real-work pressure test of v0.2:
+- actual repository optimization;
+- explicit actor, authority, base, branch, write scope and no-touch scope;
+- CC performs bounded work;
+- FW performs integration review;
+- Mark should not need to shuttle routine machine-readable task state.
 
-The next meaningful pressure test should be **real collaborative work**:
-- one actual task;
-- explicit actor/authority/scope;
-- at least one independent witness/verification step;
-- route failure preserved if it occurs;
-- Mark not required to shuttle routine machine-readable state.
-
-Only add machinery when a real failure demonstrates that the smaller core is insufficient.
+Do not add schema, CI, automation, or new protocol machinery during this task unless a concrete repo defect requires a separate authorization.
