@@ -1,6 +1,6 @@
 # COM_STATE v0.2
 
-STATUS: WORKING CANDIDATE / IDLE
+STATUS: WORKING CANDIDATE / ACTIVE
 
 COM is not validated. Model agreement is not proof.
 
@@ -14,17 +14,23 @@ Operational discipline: `COM_PROTOCOL_WORKING.md`.
 ## CURRENT
 
 - human_authority: Mark
-- execution_default: SERIAL unless explicitly changed
-- active_task: NONE
-- active_mutator: NONE
+- execution_mode: delegated CC narrow repair / FW integration
+- active_task: `COM-WITNESS-001` — correct and decide PR #5 deadlock witness
+- addressed_to: CC / session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
+- active_mutator: CC on `claude/com-state-unblock` only
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
-- last_completed_task: `COM-OPT-001` — public COM repository optimization with CC
-- cc_session_for_task: `CC-20260727T2020+0100-0C60`
-- optimization_pr: PR #3 `COM v0.2: separate core from protocol, make the front door navigable`
-- cc_final_head: `3b9369862b63219360cd31c9fc6cfa73e913b3d3`
-- merged_commit: `76d3994584d55944cd5983c0e527151b3435143e`
-- merge_result: CLEAN after FW review and three bounded semantic repairs
-- state_basis: `76d3994584d55944cd5983c0e527151b3435143e` — merged repository state immediately before this projection update; not the commit containing this file
+- pull_request: PR #5 `COM: preserve the COM-OPT-001 delegation deadlock as evidence`
+- reviewed_head: `c10f937c123501220780e3f5bf91836c8a9f341e`
+- review_route: PR #5 comment `5101871210`
+- verdict: `REVISE-NARROW`
+- requested_repair: replace the witness's unresolved causal discriminator with established FW tool-history facts; do not redesign COM in this PR
+- established_fact_1: FW did not retrieve issue #2 comment `5101128952` at either of the two `COMS -> WAIT` turns
+- established_fact_2: FW did not inspect issue #2 or PR #3 on either WAIT turn; route truncation was therefore not demonstrated as the proximate cause of those waits
+- established_fact_3: on a later COMS, FW directly discovered PR #3 through GitHub and began integration review; Mark did not relay the work product or patch
+- write_scope: `evidence/COM_DELEGATION_DEADLOCK_001.md` only on the CC branch
+- no_touch: `COM_STATE.md`, other evidence witnesses, routes, protocol/core/README, `main`
+- deliverable: one corrected PR #5 head; FW then decides merge/reject and returns state to idle
+- state_basis: `d85b2274ecea9764055236eea5c65645a617ecba` — main head before this projection update; not the commit containing this file
 - core_status: v0.2 working candidate
 - protocol_status: v0.2 working candidate
 
@@ -42,7 +48,10 @@ On COMS:
 7. if no task is addressed to you, do not steal another aperture's work;
 8. if synchronized and idle for your role, stop.
 
-Current result for all apertures: **IDLE / NO ACTIVE TASK**.
+Current result:
+- **CC:** apply the narrow factual correction described above to PR #5, then stop. Do not merge.
+- **FW:** wait for a new PR #5 head, then decide it.
+- **Other apertures:** no active task.
 
 ## WORKING CORE
 
@@ -73,24 +82,26 @@ Absence is never inferred from local non-observation.
 - human relay is a fallback, not the target architecture
 - no AI session may be the sole carrier of collaboration state
 
-## COM-OPT-001 RESULT
+## LIVE DEFECT NOW EXPOSED
 
-The first deliberate real-work pressure test of v0.2 completed successfully as a coordination workflow, not as validation of COM itself:
-- Mark requested repo optimization with Claude once;
-- FW encoded task, scope, branch and authority in COM;
-- CC discovered the task through `COMS`, optimized on its branch and opened PR #3;
-- FW discovered the PR through COM/GitHub without Mark relaying the work product;
-- FW reviewed the actual diff and returned three narrow repairs through GitHub;
-- CC discovered and applied those repairs through COM/GitHub;
-- FW re-reviewed the new head, explicitly checked one non-overlapping main-branch drift, and merged PR #3;
-- Mark did not shuttle routine task state or patches between FW and CC.
+The prior projection said `IDLE / NO ACTIVE TASK` while PR #5 was open, mergeable and undecided. That projection was incomplete.
 
-This is evidence that the current coordination pattern can reduce human relay burden in at least this bounded case. It is not evidence of general reliability or validation.
+This state update repairs the live projection. It does **not** by itself repair the underlying structural issue: a hand-maintained current-state projection can omit new work/witnesses created outside its writer's observation path.
+
+## COM-OPT-001 RESULT, CORRECTED
+
+`COM-OPT-001` completed, but the first delegation-return loop did not close cleanly through the original state-only COMS procedure:
+- CC opened PR #3 and posted a work-return witness;
+- FW ran COMS twice, read the current state only, and correctly returned WAIT under the written procedure;
+- on a later COMS, FW expanded direct GitHub inspection, discovered PR #3, reviewed it, routed narrow repairs, and ultimately merged it;
+- Mark did not shuttle the work product or patch between apertures.
+
+So the bounded workflow eventually reduced human relay burden, while simultaneously exposing a state/return-route defect. Both facts stand. Neither validates COM generally.
 
 ## HISTORY / LIMITS
 
 Git history and `evidence/` preserve earlier probes, stale reads, relays, corrections and correlated reviews. Do not rewrite those records to make v0.2 look inevitable.
 
-Known historical carrier failures remain relevant: coherent stale mutable reads, truncated issue-comment retrieval, and temporary human fallback relay. A long issue transcript must not be the sole carrier of an active task.
+Historical carrier truncation remains real evidence, but it is not established as the cause of the two `COMS -> WAIT` turns in COM-OPT-001 because FW did not query the worker return route on those turns.
 
 Do not add schema, CI, automation, or more protocol machinery unless real work exposes a concrete need.
