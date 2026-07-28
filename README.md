@@ -41,12 +41,16 @@ A mutable label such as `main`, `latest`, or a successful repository URL fetch i
 COMS
 state_seen: <carrier/object anchor or UNKNOWN>
 freshness: ANCHORED:<basis> | UNKNOWN | DEGRADED
-identity: <role/session and known runtime/model/provider basis>
+role: <role or UNASSIGNED>
+session: <session id or UNKNOWN>
+runtime: <known value or UNKNOWN>
+model: <known value or UNKNOWN>
+provider: <known value or UNKNOWN>
 task: <task_id | NONE | NOT_ESTABLISHED>
 action: <performed action | bounded stop reason>
 ```
 
-For an explicitly invoked `COMS`, explanation without that bounded result does not establish that synchronization occurred. `task: NONE` means sufficiently anchored state was reached and showed no addressed task. `task: NOT_ESTABLISHED` means synchronization did not reach sufficiently anchored state to determine whether an addressed task exists; it proves neither task presence nor task absence. If an addressed task exists, follow its control envelope rather than merely describing it.
+For literal `COMS` on any transport, explanation without that bounded result does not establish that synchronization occurred. `task: NONE` means sufficiently anchored state was reached and showed no addressed task. `task: NOT_ESTABLISHED` means synchronization did not reach sufficiently anchored state to determine whether an addressed task exists; it proves neither task presence nor task absence. If an addressed task exists, follow its control envelope rather than merely describing it.
 
 ## First time here?
 
