@@ -1,6 +1,6 @@
 # COM_STATE v0.3.2
 
-STATUS: WORKING BASELINE / ACTIVE BOUNDED INTRODUCTION
+STATUS: WORKING BASELINE / ACTIVE BOUNDED PROJECTION-LAG REPAIR
 
 COM is not validated, canon, or a truth oracle. Model agreement is not proof.
 
@@ -11,21 +11,22 @@ A small shared coordination field that lets independent human/AI apertures recov
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V032-BUILD2-001` — Campfire 1 ↔ Build 2 introduction / routing identity handshake
-- execution_mode: BUILD 2 COMS + HELLO/WELCOME ONLY / NO CODE MUTATION
-- addressed_to: active Framework aperture/tab carrying the Campfire Relay v0.18.3 build lane; Mark's current human label for that aperture is `Build 2`; session/runtime/model/provider are not established by this label
-- lane_evidence: Campfire Relay issue #127 + draft PR #130 `framework/v0.18.3-trace-integration`, frozen candidate head `e84f7e0ac98f309c2ca9339a90d66d0322cc70c5`; if this does not match the receiver's current work, it must not claim `Build 2`
-- instruction: execute COMS from a fresh anchor; establish your own role/session/runtime/model/provider honestly; if the lane evidence matches, receive Campfire 1 HELLO `COM-HELLO-CAMPFIRE1-20260728-001` and reply on COM issue #16 with a protocol-complete HELLO or WELCOME/receipt
-- integration_owner: Campfire 1 / session `FW-20260728-CAMPFIRE-A91D`
-- repository_mutation: Build 2 may reply on COM issue #16 only for this task; no COM file/branch mutation and no Campfire Relay code/build/release/provider action is authorized by this introduction
-- reply_route: COM issue #16 `COM v0.3.2 · Campfire 1 HELLO to Build 2`
-- observation_owner: Campfire 1 / session `FW-20260728-CAMPFIRE-A91D`
+- active_task: `COM-V032-PROJECTION-001` — prevent lagging projection from replaying work already completed on its declared reply route
+- execution_mode: BUILD 2 COM PROTOCOL + EVIDENCE ONLY / NO CAMPFIRE PRODUCT MUTATION
+- addressed_to: Build 2 / Framework session `FW-20260728T1915+0100-5C7A`
+- lane_evidence: COM issue #17 + branch `framework/com-v032-projection-lag`; exact branch base `ddf6075ad18f794394895757a759ea593fb13893`
+- instruction: preserve the real issue #16 projection-lag witness and add the smallest protocol rule that prevents duplicate task execution when preserved terminal/superseding evidence is already present on the task's declared reply route
+- integration_owner: Build 2 / Framework session `FW-20260728T1915+0100-5C7A`
+- repository_mutation: Build 2 may mutate only the bounded COM issue/branch/PR/projection surfaces required for `COM-V032-PROJECTION-001`; no Campfire Relay code/build/release/provider action is authorized by this COM repair
+- reply_route: COM issue #17 `COM v0.3.2 · projection lag must not replay completed route work`
+- observation_owner: Build 2 / Framework session `FW-20260728T1915+0100-5C7A`
 - next_check: MANUAL
-- authority_source: Mark current conversation instruction — "Introduce yourself to Build 2 over COMS (it may not know it's Build 2 yet)"
-- state_basis: `af083258f42a98c20107d9e767ab6134b4051b57` — main before this projection update; this file is not self-authenticating freshness
+- authority_source: Mark current conversation instruction — "very good. proceed. build"
+- state_basis: `ddf6075ad18f794394895757a759ea593fb13893` — prior main projection; this file is not self-authenticating freshness
+- prior_task_correction: `COM-V032-BUILD2-001` is no longer projected active. Build 2 HELLO/receipt `COM-HELLO-BUILD2-20260728-001` and later return `COM-BUILD2-FRONTIER-OUTPUT-RETURN-20260728-001` are present on its declared reply route, issue #16. This correction does not claim Campfire 1 independently observed those events before this projection update.
 - core_status: v0.3 integrated working baseline
-- protocol_status: v0.3.2 integrated working baseline
-- next_lane: Campfire Relay product/research-instrument build
+- protocol_status: v0.3.2 integrated working baseline + bounded projection-lag repair in progress
+- next_lane: Campfire Relay product/research-instrument build after this bounded COM defect is returned
 
 ## INTEGRATED BASELINE
 
@@ -56,19 +57,22 @@ Integrated v0.3.2 behavior includes:
 Observed useful successes:
 - immutable COM_STATE bootstrap supported task discovery + HELLO;
 - fixed public GitHub `commits/main` rendezvous matched independently observed live head at multiple tested boundaries;
-- one full cold chain succeeded: fixed rendezvous -> live SHA -> immutable state -> task discovery -> COMS -> protocol-complete HELLO.
+- one full cold chain succeeded: fixed rendezvous -> live SHA -> immutable state -> task discovery -> COMS -> protocol-complete HELLO;
+- issue #16 carried Build 2's protocol-complete HELLO/receipt and a later bounded product-repair return without requiring Mark to carry the work product itself.
 
 Observed useful failures:
 - mutable repository-root retrieval repeatedly served coherent historical state to QW;
 - QW twice explained COMS accurately without executing it, motivating the auditable completion witness;
-- a later QW return replayed historical task `COM-V031-QW-004` / anchor `b0ddef2f...` while FW independently observed a later live head.
+- a later QW return replayed historical task `COM-V031-QW-004` / anchor `b0ddef2f...` while FW independently observed a later live head;
+- issue #16 exposed a distinct projection-lag defect: COM `main` and `COM_STATE.md` were freshly anchored, but the projection still showed an introduction task active after its declared reply route already contained the required receipt and later terminal return.
 
 Issue #15 (`COM-V032-QW-004`) was cancelled under Mark's instruction to stabilize COM and return to Campfire. Its missing return remains bounded `NOT_OBSERVED`; no QW failure or route diagnosis is inferred.
 
 CC reviews were correlated and returned `NARROW — no BREAK`; they are design review evidence, not validation. QW runtime/model/provider labels remain SELF_CLAIM unless independently established.
 
 Current coordination event:
-- COM issue #16 carries Campfire 1's protocol-complete HELLO and Mark's human routing label `Build 2`; no Build 2 receipt has yet been observed at this projection boundary.
+- issue #17 carries the bounded repair card for `COM-V032-PROJECTION-001`;
+- the previous issue #16 introduction is historical route evidence, not the current task projection.
 
 ## KNOWN LIMITS — CARRY FORWARD, DO NOT BLOCK PRODUCT WORK
 
@@ -78,6 +82,7 @@ Current coordination event:
 - Human relay remains necessary where an aperture has no writable route; provenance/modality must remain explicit.
 - `observation_owner + next_check` has not yet completed a fully autonomous asynchronous loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
+- `COM_STATE.md` remains a derived projection that can lag route events until an authorized writer observes and incorporates them; `COM-V032-PROJECTION-001` is repairing duplicate-execution behavior under that known structural condition, not claiming to eliminate projection latency itself.
 
 These are known engineering limits, not reasons to keep polishing COM in isolation.
 
@@ -86,8 +91,8 @@ These are known engineering limits, not reasons to keep polishing COM in isolati
 `COMS` means synchronize from shared COM before relying on conversational assumptions.
 
 Current result:
-- **Build 2:** if you are the active Framework aperture carrying the Campfire Relay v0.18.3 lane identified above, perform `COM-V032-BUILD2-001`; establish fresh session/identity honestly and reply on issue #16. If the lane evidence does not match, do not claim the role.
-- **Campfire 1:** HELLO emitted on issue #16; observe that exact reply route at the next manual check; do not infer receipt before a return is observed.
+- **Build 2:** execute `COM-V032-PROJECTION-001` from issue #17 / branch `framework/com-v032-projection-lag`; remain inside the bounded protocol/evidence scope above.
+- **Campfire 1:** no active mutation task. Issue #16 remains available as historical route evidence; no acknowledgement is inferred if none is observed.
 - **CC:** no active COM task.
 - **QW:** no active COM task.
 - **Other apertures:** no active COM task.
