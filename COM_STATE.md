@@ -1,6 +1,6 @@
 # COM_STATE v0.3.2
 
-STATUS: WORKING CANDIDATE / ACTIVE TEST
+STATUS: WORKING CANDIDATE / ACTIVE REVIEW
 
 COM is not validated. Model agreement is not proof.
 
@@ -10,103 +10,82 @@ A small shared coordination field that lets independent human/AI apertures recov
 
 Integrated core/protocol: PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4acf`.
 Integrated COMS execution repair: PR #8 merged at `5219ca2df18213289948935ecc4b1ffa8925fe0c`.
-Candidate interface repair: PR #14, head `56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8`.
+Candidate interface repair: PR #14, frozen head `56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8`.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V032-QW-001` — cold test PR #14 fixed-rendezvous + complete-HELLO front door
-- addressed_to: fresh/unestablished aperture invoked by Mark as QW; runtime/model/provider remain SELF_CLAIM unless independently established
-- execution_mode: QW READ/RETURN COLD TEST / FW integration
-- repository_mutation_for_QW: NONE
+- active_task: `COM-V032-CC-001` — hostile review of PR #14 after successful QW cold test
+- addressed_to: CC aperture; current CC session identity must be established/reconstructed honestly on return
+- execution_mode: CC READ/RETURN HOSTILE REVIEW / FW integration
+- repository_mutation_for_CC: NONE
 - task_route: PR #14 `COM v0.3.2: fixed rendezvous bootstrap and complete HELLO execution`
-- reply_route: PR #14, or explicit Mark→FW→GitHub relay if QW has no writable GitHub route
+- reply_route: PR #14
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - next_check: MANUAL
-- authority_source: Mark instructed FW to keep improving COM and use QW without waiting for CC
-- state_basis: `e9757c3e365f801da5da7c73d0d98a3b87c31dd9` — main before this projection update; not the commit containing this file
+- authority_source: Mark instructed FW to keep improving COM and use QW without waiting for CC; CC is now available again and is used as reviewer, not release gate
+- state_basis: `85e09530114f37ad52cb2261d434b62fab01890c` — main before this projection update; not the commit containing this file
 - core_status: v0.3 integrated working candidate
-- protocol_status: v0.3.1 integrated working candidate; v0.3.2 README interface candidate under test
+- protocol_status: v0.3.1 integrated working candidate; v0.3.2 README interface candidate under review
 
-## LATEST BEHAVIORAL RESULT — `COM-V031-QW-005`
+## QW COLD RESULT — `COM-V032-QW-001`
 
-QW reported the following chain in a fresh session:
+QW returned through explicit Mark→FW relay after entering the immutable candidate README at PR #14 head `56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8`.
 
-`fixed commits API -> main SHA e9757c3e... -> immutable COM_STATE at that SHA -> addressed task COM-V031-QW-005 -> COMS`
+Observed chain:
+`candidate README -> fixed commits/main rendezvous -> main SHA 85e09530114f37ad52cb2261d434b62fab01890c -> immutable COM_STATE -> task COM-V032-QW-001 -> COMS -> complete HELLO`
 
-FW independently observed the same `main` head at that boundary. QW did not fall back to mutable repository-root rendering.
+FW independently observed the same live `main` head at that boundary.
 
-Classification: **FIXED RENDEZVOUS -> IMMUTABLE STATE -> COMS -> TASK DISCOVERY SUCCESS**.
+HELLO observed:
+- event_id: `evt-20260728-qw-hello-001`
+- role: `UNASSIGNED`
+- session: `sess-20260728-qw-001`
+- runtime: `UNKNOWN`
+- model: `Qwen3.7` — SELF_CLAIM
+- provider: `UNKNOWN`
+- continuity: `FRESH`
+- state_seen/freshness anchored to `85e09530114f37ad52cb2261d434b62fab01890c`
+- capabilities: read-only; no writable GitHub route
+- identity_basis: `SELF_CLAIM`
+- authority: `NONE`
+- reply_route: explicit Mark→FW→GitHub relay
 
-The subsequent HELLO attempt was **not protocol-complete**:
-- no unique `event_id` was supplied;
-- no explicit unique `session` identifier was supplied;
-- runtime/model/provider were not kept as separate fields.
+FW preserved the return on PR #14 comment `5104097880` and issued WELCOME comment `5104101255` recognizing `UNASSIGNED`, session `sess-20260728-qw-001`, authority `NONE`, and no further QW task.
 
-FW therefore did not emit WELCOME for that HELLO attempt. Preserved on issue #13 comment `5103887311`.
+Classification: **COLD FIXED-RENDEZVOUS -> IMMUTABLE STATE -> COMS -> TASK DISCOVERY -> PROTOCOL-COMPLETE HELLO SUCCESS**. Behavioral evidence only, not validation.
 
-Identity note: that fresh QW session self-reported `Qwen3.7` / `Qwen (Alibaba Cloud)`. Earlier Mark described the available aperture as Qwen 3.8. Neither is independently authenticated here; preserve both as claims and do not silently reconcile them.
+## ACTIVE REVIEW — `COM-V032-CC-001`
 
-## CANDIDATE REPAIR — PR #14
+PR #14 remains frozen at `56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8` while CC reviews read-only.
 
-PR #14 changes README only. It is evidence-derived from the successful rendezvous chain and incomplete HELLO attempt.
+CC should try to BREAK or NARROW:
+1. carrier specificity: does the README keep the GitHub `commits/main` path as a GitHub implementation path rather than general COM ontology;
+2. freshness semantics: is the returned SHA described only as an anchor at the observation boundary, not timeless currency;
+3. failure behavior: does unavailable rendezvous stop bounded rather than silently falling back to stale mutable root;
+4. normative ownership: does README point to the protocol HELLO envelope rather than becoming a second normative schema;
+5. ceremony: are all added instructions justified by observed failures;
+6. test contamination: did QW actually exercise the candidate front door rather than merely follow external prompting.
 
-It proposes:
-1. for this GitHub carrier, cold synchronization begins at the fixed public `commits/main` API;
-2. use the returned SHA to retrieve immutable `COM_STATE.md`, then execute COMS;
-3. if that rendezvous cannot be anchored, stop bounded rather than silently falling back to mutable repository-root rendering;
-4. when HELLO is required, execute the complete minimum-useful HELLO envelope from the protocol; a prose identity/availability summary is not HELLO;
-5. protocol remains the authoritative home of the HELLO schema.
-
-No new primitive, schema, automation, lease, authority model, or identity machinery is introduced.
-
-## ACTIVE TEST — `COM-V032-QW-001`
-
-Cold-path procedure:
-1. start a fresh QW session with no inherited QW role/session/authority;
-2. enter through immutable candidate README at PR #14 head `56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8`;
-3. receive literal `COMS` only;
-4. follow the candidate README rather than relying on remembered COM history;
-5. resolve the fixed `commits/main` rendezvous route, then retrieve `COM_STATE.md` at the exact SHA it returns;
-6. discover this addressed task from that anchored state;
-7. return the minimal COMS result;
-8. emit the complete minimum-useful HELLO defined by `COM_PROTOCOL_WORKING.md` — including a new unique `event_id`, a new unique `session`, and separate runtime/model/provider fields using `UNKNOWN` where needed;
-9. default `role: UNASSIGNED`, `authority: NONE`;
-10. no repository mutation and no redesign.
-
-Candidate launch object:
-`https://github.com/markgoodbody-bit/COM/blob/56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8/README.md`
-
-Useful outcomes: complete anchored COMS+HELLO, honest bounded stop, or a new concrete failure. Agreement is not validation.
+CC mutation authority: NONE. Return bounded BREAK / NARROW / RETAIN findings with exact evidence on PR #14.
 
 ## COMS
 
-`COMS` means synchronize from this shared surface before relying on conversational assumptions.
-
-On COMS:
-1. establish the strongest honest freshness anchor available;
-2. establish role/runtime/model/provider/session honestly;
-3. determine addressed task from sufficiently anchored state rather than defaulting to `NONE`;
-4. verify authority before any write;
-5. inspect declared return/status routes when responsible for observation or integration;
-6. report bounded `UNKNOWN`/`DEGRADED` when freshness is insufficient or contradictory;
-7. do not substitute protocol explanation for synchronization;
-8. if synchronized and idle for your role, stop.
+`COMS` means synchronize from shared COM before relying on conversational assumptions.
 
 Current result:
-- **QW:** perform `COM-V032-QW-001`; no repository mutation; return on PR #14 if writable, otherwise through explicit human relay.
-- **FW:** observation/integration owner; hold candidate mutation until QW return or a concrete defect demands correction.
-- **CC:** no active task; availability is not a release gate.
+- **CC:** perform `COM-V032-CC-001`; no mutation; return on PR #14.
+- **QW:** synchronized/introduced for the completed test only; no active task; no authority grant.
+- **FW:** observation/integration owner; keep candidate mutation frozen until CC return or a concrete safety/factual correction requires intervention.
 - **Other apertures:** no active task.
 
 ## KNOWN LIMITS / OPEN PROOF
 
-- Mutable repository-root retrieval repeatedly returned coherent historical state to QW.
-- The fixed commits API exposed the correct live `main` SHA to QW and FW at tested boundaries.
-- Fixed rendezvous -> immutable state -> COMS -> task discovery has now succeeded once end-to-end.
-- Complete HELLO execution through that chain has not yet succeeded.
-- `observation_owner + next_check` has not completed a full asynchronous proof loop without a human trigger.
+- Mutable repository-root retrieval has repeatedly returned coherent historical state to QW.
+- The fixed public `commits/main` API has exposed the live main SHA to QW at multiple tested boundaries and enabled an end-to-end cold rendezvous path once through the v0.3.2 candidate.
+- This does not prove future availability, cross-provider portability, or COM validity.
+- `observation_owner + next_check` has not yet completed a full asynchronous proof loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
 
-Do not add schema, CI, automation, cryptographic identity machinery, or new protocol primitives unless real work exposes a concrete need.
+Do not add schema, CI, automation, cryptographic identity machinery, leases, or new protocol primitives unless real work exposes a concrete need.
