@@ -4,11 +4,12 @@ Witness class: operational failure of COM v0.2 during its first real-work test, 
 
 ```text
 observer:    CC / session CC-20260727T2020+0100-0C60
-subject:     COM-OPT-001 delegation loop (state surface + COMS)
-observation: DELEGATION_LOOP_DID_NOT_CLOSE_THROUGH_COM
+subject:     COM-OPT-001 delegation loop (COMS procedure + state projection)
+observation: COMPLETED_DELEGATED_WORK_NOT_DISCOVERABLE_BY_THE_COMS_PROCEDURE
 locus:       COM_STATE.md on main; issue #2; PR #3
 anchor:      main 135a8f76656df3d3ab2e6853e2111c95a1ee6cf8 during the failure window
-claim:       OBSERVED for repo state; REPORTED for FW's two WAIT results
+claim:       OBSERVED for repo state; REPORTED for FW's runtime behaviour, later
+             established by FW from its own tool history (see Established facts)
 status:      NOT_VERIFIED by an independent aperture
 ```
 
@@ -22,9 +23,20 @@ status:      NOT_VERIFIED by an independent aperture
 | — | Mark issues `COMS` to FW again, after both signals above are visible. FW returns **WAIT** |
 | 2026-07-28T07:21:48Z | CC posts operational witness reproducing the failure (comment 5101169400) |
 | 2026-07-28T07:35:55Z | CC posts unblock message and proposed repair (comment 5101290459) |
-| 2026-07-28 (later) | FW reviews PR #3 (review `4795136958`, verdict `REVISE-NARROW`) and writes `COM_STATE.md` itself at main `520a389`, routing repairs back to CC |
+| — | On a later `COMS`, FW expands its GitHub inspection, discovers PR #3 directly, and begins integration review |
+| 2026-07-28T08:03:49Z | FW review `4795136958`, verdict `REVISE-NARROW` |
+| — | FW writes `COM_STATE.md` at main `520a389`, routing the repairs back to CC |
+| 2026-07-28 | PR #3 merged clean at `76d3994` |
 
 Throughout the failure window, `COM_STATE.md` on `main` read `active_task: COM-OPT-001`, `active_mutator: CC`.
+
+## Established facts
+
+These were unresolved when this witness was first drafted. FW settled them from its own tool history in PR #5 review comment `5101871210`, and they are recorded here as FW's report about FW's own runtime — a stronger source than CC's inference, and still not independently verified.
+
+1. At the two `COMS -> WAIT` turns, FW **did not retrieve** issue #2 comment `5101128952`.
+2. At those two turns, FW **did not inspect issue #2 or PR #3 at all**. No retrieval was attempted against the worker's return route.
+3. On a later `COMS`, FW expanded its GitHub inspection, **directly discovered PR #3**, read it, and began integration review. **Mark did not relay the work product or the patch.**
 
 ## Why FW's WAIT was correct
 
@@ -34,46 +46,60 @@ This is not a model failure and not misbehaviour by either aperture. The defect 
 
 ## The defect
 
-`COM_STATE.md` is the only surface `COMS` consults, and only the integration owner may write it. The integration owner learns that delegated work has finished by reading that file. Therefore:
+The proximate cause is now narrow and specific:
 
-> a completed delegated task is not discoverable through COM.
+> `COMS` did not require a non-mutator to inspect the delegated worker's return surface before concluding the work was still in progress.
 
-The worker produced a PR, a witness, and a receipt. None could reach the surface the delegator is instructed to read.
+The carrier was not at fault. GitHub held the PR and the witness the whole time, and served them correctly the moment FW looked — fact 3. The procedure simply never sent FW to look. Its read-set was one file, and that file was the one surface the worker was forbidden to update.
 
-Two consequences that generalise beyond this instance:
+Underneath that sits a structural condition which this incident exposed but did not by itself prove:
+
+> `COM_CORE.md` defines `STATE = compact current projection supported by witnesses`, but `COM_STATE.md` is hand-maintained and its write authority is a privilege. **A projection maintained by privilege cannot reflect a witness written by anyone else.**
+
+Two consequences that generalise:
 
 1. **An unchanged projection is not evidence of unchanged work.** Staleness of the state file and stability of the underlying work are indistinguishable to the reader. Same family as `NOT OBSERVED != DID NOT EXIST`, applied to state rather than to messages.
 2. **A single-writer surface cannot carry a second aperture's completion.** Delegation therefore requires a return route the delegator is *obliged* to read, not merely permitted to.
 
-## Root cause
+## What route truncation did and did not explain
 
-`COM_CORE.md` defines `STATE = compact current projection supported by witnesses`.
+COM's KNOWN CARRIER LIMITS records FW's issue-comment retrieval truncating before later CC comments, and CC initially offered that as a candidate cause for these two waits.
 
-In practice `COM_STATE.md` is a hand-maintained file whose write authority is a privilege held by one aperture. **A projection maintained by privilege cannot reflect a witness written by anyone else.** The definition and the implementation disagree, and this deadlock is what that disagreement looks like when real work runs through it.
+**It was not the cause.** Fact 2 rules it out: a retrieval that never happened cannot truncate. Historical truncation remains a real and separate carrier risk, and it is not withdrawn as a finding — but it is not the discriminator for this incident, and this witness no longer leaves it open as one.
 
-## How the instance was resolved — and what was NOT adopted
+## How the instance was resolved
 
-The loop closed because **FW wrote `COM_STATE.md` itself** at `520a389`, after reviewing PR #3. It did not close by the worker's completion becoming visible through COM.
+Not by human relay. Fact 3 establishes that FW discovered the completed work product itself, through GitHub, on a later `COMS`.
 
-CC proposed a minimal repair — a `worker_status_route` field plus a `COMS` step obliging a non-mutator to read it before concluding a delegated task is still in progress. **That repair was not adopted.** The `COMS` step list on `main` at `520a389` is unchanged at eight steps. Recorded here so the proposal is not later mistaken for an applied fix.
+What the human did supply was the **trigger**: each `COMS` was issued by Mark. So across this incident the human remained the *scheduler* of synchronization while ceasing to be the *carrier* of content. That distinction matters and CC's earlier framing — that the loop "closed only by human relay" — was **wrong** and is withdrawn.
 
-**The structural defect is therefore open and unrepaired.** One instance was resolved by the privileged writer exercising its privilege, which is the mechanism the defect describes, not a fix for it.
+FW then wrote `COM_STATE.md` itself at `520a389`. The state surface was corrected by the privileged writer exercising its privilege, which is the mechanism the structural condition describes rather than a repair of it.
 
-## Unresolved, and load-bearing
+## What was proposed and not adopted
 
-**It is not established how FW learned that CC's work was complete.** Two candidate causes remain open:
+CC proposed a minimal repair: a `worker_status_route` field naming the worker's return route, plus a `COMS` step obliging a non-mutator to read it before concluding a delegated task is still in progress.
 
-- **(a) the state surface** — FW eventually read issue #2 or PR #3 directly, outside the `COMS` procedure;
-- **(b) human relay** — Mark carried the message, as he had already done earlier in this thread.
+**It was not adopted.** The `COMS` step list on `main` at `520a389` was unchanged at eight steps. Recorded so the proposal is not later mistaken for an applied fix.
 
-These have opposite implications. Under (a) COM partially worked; under (b) it did not, and the loop closed by exactly the fallback `COM_PROTOCOL_WORKING.md` §15 names as failing COM's practical goal.
+Fact 2 does bear on its merits, and the direction favours the repair: since the failure was a read-set that was too narrow rather than a carrier that failed, widening the read-set addresses the actual mechanism. CC's earlier hedge — that the repair might be *necessary but not sufficient* because it pointed at a route known to truncate — no longer applies to this incident. **CC authored that repair, so this assessment is self-interested and should carry little weight.** Whether to adopt it remains FW's decision, and it is a workaround for the structural condition, not a fix of it.
 
-A third possibility is not excluded and would change the diagnosis: **FW's retrieval of issue #2 may have truncated.** `COM_STATE.md`'s KNOWN CARRIER LIMITS already records FW's issue-comment retrieval truncating before later CC comments. If FW never retrieved comment 5101128952, the proximate cause was route truncation rather than the state surface — and the proposed `worker_status_route` repair would then be **necessary but not sufficient**, because it points at the very route known to truncate.
+## Genuinely still open
 
-CC asked FW directly whether it retrieved comment 5101128952 at either `COMS`. **No answer had been received when this witness was written.** That single fact separates the causes and is worth more than the analysis above.
+- The structural condition above is **unrepaired**. Deriving `COM_STATE.md` from the witness graph rather than maintaining it by hand is deferred to v0.3.
+- Whether the same failure recurs once the human stops issuing `COMS` at all is **untested**. Every synchronization in this incident was human-triggered, so COM has not yet been shown to close a delegation loop unprompted.
+- No independent aperture has reviewed this witness. CC wrote it; FW corrected it; both are participants.
 
 ## Scope of this witness
 
 - Directly observed by CC via the GitHub API: `COM_STATE.md` content at each anchor, PR states and heads, comment IDs and timestamps, the `COMS` step count at `520a389`.
-- **Not** observed by CC: FW's runtime, FW's retrieval extent, and FW's two `WAIT` results — all reported by Mark.
-- CC is not a neutral observer here. CC is the delegated worker whose completion went unnoticed, and the author of the repair that was not adopted. Discount accordingly.
+- **Not** observed by CC: FW's runtime, its retrieval extent, and its two `WAIT` results. Those were reported by Mark, and the three Established facts are FW's report about itself.
+- CC is not a neutral observer. CC is the delegated worker whose completion went unnoticed, and the author of the repair that was not adopted. Discount accordingly.
+
+## Revisions before landing
+
+This witness was corrected twice before entering the record, both times because a claim in it was not supported:
+
+1. An early draft stated the `worker_status_route` repair **had been applied**. It had not. Corrected before landing.
+2. A later draft left route truncation open as the load-bearing discriminator, and stated the loop closed by human relay. FW's tool history refuted both. Corrected before landing.
+
+Neither correction rewrote a claim that had already landed. Both are noted here so the record shows what this witness once asserted and why it changed.
