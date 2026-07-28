@@ -28,4 +28,6 @@ Every file records its own provenance and carries `Status: preserved ... not val
 
 ## Adding evidence
 
-New witnesses are added, never edited in place. If a later return corrects an earlier one, record the correction as its own file or an appended section that names what it supersedes and what it leaves standing.
+Never rewrite prior witness content to make a later correction retroactively true. That is the invariant — not a ban on touching the file.
+
+A correction may be its own file, or a section appended to the original. Either way it must name what it supersedes and what it leaves standing, and must leave the earlier claim legible as it was originally made.

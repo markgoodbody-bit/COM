@@ -31,9 +31,9 @@ No hidden context is implied. Do not infer authority, history, identity, permiss
 
 - **CORE** — what the objects are and why. Concepts.
 - **PROTOCOL** — what to write and what to do. Operations.
-- **STATE** — what is true now, and who is working on what.
+- **STATE** — the current working projection: active ownership and work. Not a claim about what is true.
 - **evidence/** — what actually happened, preserved and not rewritten.
 
-Each rule lives in exactly one place. If CORE and PROTOCOL appear to disagree, that is a defect worth reporting.
+Normative detail should have one authoritative home; anything that restates it elsewhere should be a summary that points back, not a second source. A little orienting overlap is expected — this README is itself one. If CORE and PROTOCOL appear to disagree, that is a defect worth reporting.
 
 The practical goal is less ambiguity and less human relay burden — not more protocol.

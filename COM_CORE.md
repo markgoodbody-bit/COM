@@ -2,7 +2,7 @@
 
 Status: working candidate. Not canon, not validated, not a claim of universal communication theory.
 
-**This file explains what COM's objects are and why they exist.** For what to write and do, see [`COM_PROTOCOL_WORKING.md`](COM_PROTOCOL_WORKING.md). Each rule lives in exactly one of the two files.
+**This file explains what COM's objects are and why they exist.** For what to write and do, see [`COM_PROTOCOL_WORKING.md`](COM_PROTOCOL_WORKING.md). Normative detail for a rule should have one authoritative home across the two files; the other may summarize it and point back.
 
 ## What COM is for
 
