@@ -1,6 +1,6 @@
-# COM_STATE v0.3 candidate review
+# COM_STATE v0.3
 
-STATUS: WORKING CANDIDATE / ACTIVE
+STATUS: WORKING CANDIDATE / ACTIVE TEST
 
 COM is not validated. Model agreement is not proof.
 
@@ -8,112 +8,73 @@ COM is not validated. Model agreement is not proof.
 
 A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making the human carry the whole collaboration.
 
-Core/protocol candidate: PR #6 on `framework/com-v0.3-bootstrap-liveness`.
+Integrated core/protocol: PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4acf`.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V03-CC-002` — bounded re-review of the revised v0.3 candidate
-- execution_mode: CC READ-ONLY REVIEW / FW sole semantic mutation
-- addressed_to: CC / continuing session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
-- candidate_mutator: FW on `framework/com-v0.3-bootstrap-liveness` only
+- active_task: `COM-V03-QW-002` — cold freshness/bootstrap test against integrated v0.3
+- addressed_to: cold/unestablished aperture invoked by Mark as QW / user-described Qwen 3.8; runtime/model/provider remain SELF_CLAIM unless independently established
+- execution_mode: QW READ/RETURN TEST / FW integration
+- repository_mutation_for_QW: NONE
+- allowed_return_write: issue #7 comment only if the aperture actually has that route; otherwise human relay is permitted and must be marked as relay
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
-- pull_request: PR #6 `COM v0.3 candidate: cold bootstrap, freshness, delegated-return discovery`
-- candidate_head: `9f43dd9a49a914adf1d3824643f90ad40a365ab3`
-- original_base_anchor: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682`
-- main_has_advanced: YES — state/evidence routing commits only; PR #6 is currently reported mergeable
-- reply_route: PR #6 conversation
-- review_scope: check whether the revised candidate honestly resolves/narrows the first CC review and QW stale-route finding without creating new ontology or falsely claiming autonomous liveness
-- no_touch_for_CC: all files/branches/main/evidence/routes; review only
-- deliverable: bounded BREAK / NARROW / RETAIN delta against head `9f43dd9a...`; do not restate already-resolved points unless still defective
-- authority_source: Mark explicitly instructed FW to keep improving COM and proceed using CC and QW
-- state_basis: `fcb58f553ef6aa6b58038c44e3f2976390baaaee` — main head before this projection update; not the commit containing this file
-- core_status: v0.3 revised working candidate / unmerged
-- protocol_status: v0.3 revised working candidate / unmerged
+- observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
+- next_check: MANUAL
+- task_route: issue #7 `COM v0.3 · QW cold freshness/bootstrap test`
+- reply_route: issue #7
+- base_anchor: `f6c35db1ad8d53c61f9a21daf011651471fd4acf`
+- authority_source: Mark explicitly instructed FW to continue improving COM and proceed using CC and QW
+- state_basis: `f6c35db1ad8d53c61f9a21daf011651471fd4acf` — main before this state-projection update; not the commit containing this file
+- core_status: v0.3 integrated working candidate
+- protocol_status: v0.3 integrated working candidate
 
-## FIRST REVIEW RESULTS — INTEGRATED
+## TASK CONTROL — `COM-V03-QW-002`
 
-### CC hostile review
+Instruction:
+1. enter from repository root `main`; read README and this state first;
+2. establish the strongest route/object freshness anchor the actual retrieval mechanism exposes;
+3. a mutable label such as `main`, a URL, or successful retrieval is not by itself a current-state anchor;
+4. if freshness for this state-dependent task is `UNKNOWN` or `DEGRADED`, stop and report that bounded result; do not execute a coherent older task;
+5. only if sufficiently anchored, follow the integrated cold-aperture `HELLO` rule;
+6. do not self-assign a stable role or authority; default `role: UNASSIGNED`, `authority: NONE` unless anchored evidence establishes otherwise;
+7. if no writable GitHub route exists, emit HELLO/report on the available user transport for explicitly marked human relay;
+8. separate OBSERVED facts from inference; no redesign for elegance.
 
-Return: PR #6 comment `5102333896`.
+No-touch:
+- repository files and branches;
+- historical evidence and route objects;
+- issues/PRs other than an allowed return comment on issue #7.
 
-Accepted pressure:
-- PROJECTION was wrongly made a mandatory causal hop;
-- return discovery was overstated as liveness;
-- HELLO `AVAILABLE` could become stale;
-- event identity needed an explicit unpreserved/unknown case;
-- identity conflict needed a resolver path;
-- EVENT/WITNESS must remain relational;
-- IDLE scope, citation stability and newline hygiene needed narrowing.
-
-### QW cold test
-
-Return: Mark→FW→GitHub relay on PR #6 comment `5102459982`.
-
-Observed result:
-- QW reported inspecting current `main`, but its `web_extractor` surfaced coherent historical v0.1 state and the old Issue #1 task;
-- QW therefore executed the old task and never discovered PR #6 or reached HELLO;
-- no direct QW GitHub write was observed;
-- runtime/model/provider identity remains self-reported.
-
-Classification: **DEGRADED freshness-route failure**, not a HELLO success/failure.
-
-## REVISED CANDIDATE
-
-The revised candidate now states:
-
-```text
-EVENT[CONTROL] --via ROUTE--> observation
-                              |
-                              v
-                           WITNESS
-                           /     \
-                          v       v
-                    next EVENT  PROJECTION update
-                                  |
-                                  +---- may inform later EVENT
-```
-
-Key changes:
-- PROJECTION is derived/optional, not a mandatory causal gate;
-- mutable labels such as `main`/`latest` and successful retrieval are navigation, not freshness proof;
-- freshness is bounded as `ANCHORED:<basis> | UNKNOWN | DEGRADED`;
-- state-dependent mutation stops on insufficient/contradictory freshness;
-- HELLO records `presence: OBSERVED_AT_HELLO`, not durable availability;
-- lost event identity is `UNPRESERVED/UNKNOWN`, not silently treated as new;
-- identity conflict routes to an explicit resolver before affected mutation;
-- delegated work separates return discovery from scheduling and may carry `observation_owner` + `next_check`; `MANUAL` makes no autonomous-liveness claim;
-- IDLE remains bounded to known inspected/carried-forward work.
+Success is not agreement. Useful outcomes include anchored HELLO success, honest `UNKNOWN`/`DEGRADED` stop, or a new concrete failure mode.
 
 ## COMS
 
 `COMS` means synchronize from this shared surface before relying on conversational assumptions.
 
 On COMS:
-1. retrieve this state from the intended route and establish the strongest honest freshness anchor available;
-2. establish role/runtime/model/provider/session honestly;
-3. act only on a task addressed to that aperture/role;
-4. inspect the declared artifact/reply route before reporting WAIT on delegated/review work;
-5. verify authority before mutation;
-6. respect branch/base/write/no-touch scope;
-7. if state/retrieval freshness is insufficient or contradictory, report bounded `UNKNOWN`/`DEGRADED` and stop affected mutation;
-8. if no task is addressed to you, do not steal another aperture's work;
+1. retrieve this state from the intended route;
+2. establish the strongest honest freshness anchor available from the route/carrier;
+3. if freshness is insufficient or contradictory, report bounded `UNKNOWN`/`DEGRADED` and stop affected state-dependent action;
+4. establish role/runtime/model/provider/session honestly;
+5. act only on a task addressed to that aperture/role/test condition;
+6. verify authority before any write;
+7. inspect declared return/status routes when responsible for observation or integration;
+8. do not infer silence, absence, identity, authority, or currency from a successful fetch alone;
 9. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** perform `COM-V03-CC-002`; review PR #6 head `9f43dd9a...` only; return on PR #6; no mutation.
-- **FW:** wait for CC's bounded re-review, then integrate or decide PR #6.
-- **QW:** no active task during this re-review phase. Its next useful test is a genuinely cold run against `main` after the candidate is integrated, if integration occurs.
+- **QW cold test:** perform `COM-V03-QW-002`; no repository mutation; return on issue #7 if writable, otherwise through explicitly marked human relay.
+- **FW:** observation/integration owner; at the manual next check, inspect issue #7 and any Mark-relayed QW return before concluding WAIT/IDLE.
+- **CC:** no active task.
 - **Other apertures:** no active task.
 
-## HISTORY / LIMITS
+## KNOWN LIMITS / OPEN PROOF
 
-PR #5's durable witness remains `evidence/COM_DELEGATION_DEADLOCK_001.md` on main. QW's stale-route return is preserved on PR #6 with relay provenance.
-
-The revised candidate has not yet demonstrated:
-- successful cold HELLO;
-- resistance to QW's stale web-extractor path after integration;
-- autonomous scheduling/liveness;
-- event identity recovery across a route that strips identity.
+- QW's previous cold run retrieved coherent historical v0.1 material while believing it was current `main`; this is a route-level freshness failure, not a HELLO result.
+- Prose cannot make a stale carrier fresh. A route that cannot expose a sufficient anchor leaves the aperture read-only for state-dependent mutation through that route.
+- A genuine cold HELLO has not yet succeeded.
+- `observation_owner + next_check` has not yet completed a full asynchronous proof loop.
+- Event identity recovery across a route that strips identity remains untested.
 
 Do not add schema, CI, automation, cryptographic identity machinery, or new protocol primitives unless real work exposes a concrete need.
