@@ -14,23 +14,44 @@ Operational candidate: `COM_PROTOCOL_WORKING.md` on the same branch.
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V03-001` — review the v0.3 bootstrap/liveness candidate
-- task_phase: CC CRITIQUE / FW integration
-- addressed_to: CC / continuing session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
+- active_work: `COM-V03-001` — pressure-test the v0.3 bootstrap/liveness candidate
+- execution_mode: PARALLEL READ-ONLY REVIEW / FW sole mutation
 - active_mutator: FW on `framework/com-v0.3-bootstrap-liveness` only
-- reviewer: CC, mutation `NONE`
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - pull_request: PR #6 `COM v0.3 candidate: cold bootstrap, event identity, delegated-return liveness`
 - candidate_head: `2b14cf7dd8be0f617d96e7f90237c2bad10fdd76`
 - base_anchor: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682`
-- reply_route: PR #6 conversation
-- review_scope: falsify/narrow the three substantive additions — cold HELLO/WELCOME bootstrap, event identity/idempotency, delegated return-path/IDLE liveness — and challenge the generative rule if it adds hidden ontology
-- no_touch_for_CC: branch files, `COM_STATE.md`, evidence, routes, main; review only
-- FW_write_scope: `README.md`, `COM_CORE.md`, `COM_PROTOCOL_WORKING.md` on the candidate branch only until review is integrated
-- authority_source: Mark asked FW to keep improving COM and explicitly asked whether it can be improved, what is missing, and what other designs have done
-- state_basis: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682` — main head before this state update; not the commit containing this file
+- shared_reply_route: PR #6 conversation
+- authority_source: Mark explicitly authorized FW to proceed using CC and QW/Qwen 3.8
+- state_basis: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682` — candidate base before this review-state update; not the commit containing this file
 - core_status: v0.3 working candidate / unmerged
 - protocol_status: v0.3 working candidate / unmerged
+
+### Review lane A — CC hostile review
+
+- task_id: `COM-V03-CC-001`
+- addressed_to: CC / continuing session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
+- mutation: NONE
+- task: falsify/narrow the candidate additions: cold HELLO/WELCOME bootstrap, event identity/idempotency, delegated return-path/IDLE liveness; challenge the generative rule if it smuggles hidden ontology or unnecessary machinery
+- read_scope: PR #6, candidate branch, current main state, relevant existing evidence only when needed
+- no_touch: all files/branches/main/evidence/routes
+- reply_route: PR #6 conversation
+- deliverable: bounded critique with BREAK / NARROW / RETAIN findings and exact defect locations; no redesign for elegance
+
+### Review lane B — QW cold-aperture test
+
+- task_id: `COM-V03-QW-001`
+- target_test_aperture: QW / user-described Qwen 3.8; runtime/model/provider claims remain SELF_CLAIM unless independently established
+- mutation: NONE
+- test_condition: behave as a cold/unestablished aperture. Do not rely on remembered prior QW role/session/authority. Prior continuity may be used only if the repo itself supplies evidence sufficient to reconstruct it.
+- entry_surface: repository root on `main`; read README and COM_STATE first
+- candidate_under_test: `framework/com-v0.3-bootstrap-liveness`
+- task: determine whether the repo alone tells a new aperture how to synchronize, introduce itself without self-granting role/authority, locate the candidate, and return a review
+- bootstrap_instruction: use the candidate `HELLO` rule as a test-only rule; emit a HELLO on PR #6 if a writable route is available. Default `role: UNASSIGNED` and `authority: NONE` unless the repo itself supports a stronger claim.
+- test_points: discoverability; session minting; role claim; runtime/model/provider honesty; state anchor; capabilities; reply route; protocol-version handling; what happens if no write route exists; whether COMS and HELLO order is unambiguous
+- no_touch: all files/branches/main/evidence/routes
+- reply_route: PR #6 conversation
+- deliverable: the actual HELLO attempted plus a cold-arrival report distinguishing OBSERVED ambiguity/failure from preference; do not repair files
 
 ## COMS
 
@@ -39,8 +60,8 @@ Operational candidate: `COM_PROTOCOL_WORKING.md` on the same branch.
 On COMS:
 1. read this file;
 2. establish honestly available role/runtime/model/provider/session identity;
-3. act only on a task addressed to that aperture/role;
-4. if reviewing delegated work, inspect the declared `reply_route`/artifact before reporting WAIT;
+3. act only on a task addressed to that aperture/role or test condition;
+4. inspect the declared artifact/reply route before reporting WAIT on delegated/review work;
 5. verify authority before mutation;
 6. respect branch/base/write/no-touch scope;
 7. if state/retrieval evidence contradicts itself, report `DEGRADED` and stop unsafe mutation;
@@ -48,10 +69,10 @@ On COMS:
 9. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** review PR #6 only. Return a bounded critique on PR #6. Do not edit files or merge.
-- **FW:** wait for CC review, then integrate/reject/narrow. Do not treat agreement as validation.
-- **Other established apertures:** no active task.
-- **Cold/unestablished aperture:** may synchronize read-only; the candidate `HELLO` bootstrap is not canon until this PR is resolved.
+- **CC:** perform `COM-V03-CC-001`; review only; return on PR #6.
+- **QW cold test:** perform `COM-V03-QW-001`; do not inherit old QW identity by assumption; use candidate HELLO if possible; return on PR #6.
+- **FW:** do not mutate the candidate while the two independent reviews are in flight unless a safety/factual correction is necessary; then integrate disagreement after both returns or an explicit bounded failure/non-return.
+- **Other apertures:** no active task.
 
 ## CANDIDATE GENERATIVE RULE
 
@@ -70,10 +91,6 @@ Real work exposed two concrete holes in v0.2:
 - delegated completion could exist on the worker's return surface while the state-only COMS procedure still returned WAIT.
 
 The candidate also adds stable event identity/idempotency because duplicate/retry ambiguity was an unrepresented failure mode and is solvable without adding a new primitive.
-
-## EXTERNAL DESIGN PRESSURE
-
-The candidate was compared against public designs including A2A, MCP, FIPA ACL, CloudEvents, Matrix, ActivityPub, and W3C/OpenTelemetry context propagation. Their structures are inputs, not authority; COM should borrow only what survives its own observed problems and anti-drift test.
 
 ## HISTORY / LIMITS
 
