@@ -19,9 +19,9 @@ COM should reduce coordination burden. If the protocol becomes the work, or make
 COM distinguishes what happened from what was observed about what happened.
 
 ```text
-Aperture -- EVENT --> Route --> observation by Aperture
-                         |
-                         +--> route state/failure may be witnessed independently
+Aperture -- EVENT[CONTROL] --> Route --> observation by Aperture
+                                      |
+                                      +--> route state/failure may be witnessed independently
 ```
 
 The durable record is not one transcript:
@@ -30,21 +30,29 @@ The durable record is not one transcript:
 COM = Event graph + Witness graph + Current-state projection
 ```
 
-## The generative rule
+## The generative recurrence
 
-The same causal shape should recur at every scale rather than creating a new ontology for every workflow:
+The same small relations should recur at every scale rather than creating a new ontology for every workflow:
 
 ```text
-Aperture -> EVENT[CONTROL] -> ROUTE -> WITNESS -> PROJECTION
-   ^                                                  |
-   +---------------- next EVENT ----------------------+
+EVENT[CONTROL] --via ROUTE--> observation
+                              |
+                              v
+                           WITNESS
+                           /     \
+                          v       v
+                    next EVENT  PROJECTION update
+                                  |
+                                  +---- may inform later EVENT
 ```
 
-Anything that changes or attempts to change shared work is an **EVENT**. Anything that observes or claims what happened is a **WITNESS**. Anything that carries an event or witness is a **ROUTE**. Anything that summarizes what matters now is a **PROJECTION**. **CONTROL** constrains what an event is permitted to mean or do.
+`PROJECTION` is **not** a mandatory causal hop. An aperture may act directly on a bounded witness and update shared projection afterward; the COM-OPT-001 deadlock episode demonstrated exactly that. Projection is a derived coordination surface supported by witnesses, not a gate through which every event must pass.
 
-`HELLO`, `WELCOME`, `TASK`, `ACK`, `RETURN`, `REFUSE`, `FAIL`, `GRANT`, `REVOKE`, `CANCEL`, and `CORRECT` are therefore event kinds or relations, not new primitives.
+The objects are relational, not a disjoint partition. An emitted witness can itself be carried by an event; what makes it a **WITNESS** is that it is a bounded claim about an event, route, state, or claim. **CONTROL** constrains what an event is permitted to mean or do. **ROUTE** is the carrier with causal state of its own.
 
-The test for a proposed COM concept is: **can it be represented honestly by the existing causal objects?** Add a primitive only when the answer is no and a real failure demonstrates the need.
+`HELLO`, `WELCOME`, `TASK`, `ACK`, `RETURN`, `REFUSE`, `FAIL`, `GRANT`, `REVOKE`, `CANCEL`, and `CORRECT` remain event kinds or relations, not new primitives.
+
+The anti-drift test is conceptual: **can the proposed structure be represented honestly by the existing causal objects?** Add a primitive only when the answer is no and a real failure demonstrates the need. The operational anti-drift rule lives in `COM_PROTOCOL_WORKING.md` under *Anti-drift test*.
 
 ### EVENT — what happened or was attempted
 
@@ -52,7 +60,9 @@ An addressable occurrence relevant to shared work: a claim emitted, a task assig
 
 **Attempted and completed are different states.** An attempt never implies a success.
 
-Event identity must survive retransmission. `source + event_id` identifies one semantic event. Redelivery of the same event keeps the same identity; it does not become a second event merely because another route or retry carried it. Reuse of the same identity with conflicting semantic payload or control is an identity conflict and must not be silently resolved.
+When preserved, `source + event_id` identifies one semantic event across retransmission. Redelivery of that same event does not become a second event merely because another route or retry carried it.
+
+If a route or relay cannot preserve the original event identity, identity becomes **UNPRESERVED / UNKNOWN**. That does not prove the received content is a new event and does not prove it is a duplicate. Reuse of a preserved identity with conflicting semantic payload or control is an identity conflict and must be routed to the task/integration owner or other explicit authority before state-dependent mutation proceeds.
 
 ### ROUTE — the carrier, which has causal state of its own
 
@@ -64,7 +74,7 @@ Do not collapse Route into authority or into message content.
 
 ### WITNESS — a bounded observation by an aperture
 
-A witness is a claim about an event, route, or state, made from one vantage point.
+A witness is a claim about an event, route, state, or claim, made from one vantage point.
 
 A witness is not truth because it exists, and not truth because several apertures repeat it.
 
@@ -73,11 +83,12 @@ Several things are witness *types* rather than separate primitives:
 - **receipt** — "I observed event E at locus L";
 - **parse failure** — "I observed carrier content for E but could not reconstruct its meaning";
 - **route failure** — a witness about the carrier;
-- **staleness** — a witness about an anchor mismatch.
+- **staleness** — a witness about an anchor mismatch;
+- **freshness unknown** — the route returned content but did not establish whether it was current.
 
 ### CONTROL — an envelope, not a causal node
 
-Cross-cutting metadata on events and actions: modality, authority source, permitted effect, ownership and mutation scope, no-touch boundaries, correction route, and exact base/head where state matters.
+Cross-cutting metadata on events and actions: modality, authority source, permitted effect, ownership and mutation scope, no-touch boundaries, correction/return route, exact base/head where state matters, and bounded observation responsibility where asynchronous work can otherwise remain open indefinitely.
 
 **Semantic force is structural data, not tone.** `SHOULD != MUST`. `EXPECTATION != AUTHORIZATION`. `CAN != MAY`. Absence of a grant is not denial.
 
@@ -110,33 +121,39 @@ Corrections are **additive**: they qualify or supersede, and never erase the ear
 Three layers, kept separate:
 
 - **role** — stable collaboration identity;
-- **runtime** — model and provider, where honestly establishable;
+- **runtime** — model/provider information, where honestly establishable;
 - **session** — this specific aperture instance.
 
 Unknown stays `UNKNOWN`.
 
-A cold aperture that has not been assigned a stable role uses `role: UNASSIGNED`; it does not create authority by naming itself. **Identity claim, transport identity, capability, and authority are separate facts.** A GitHub account, API credential, model self-description, or human relay may support part of an identity claim without proving the rest.
+A cold aperture that has not been assigned a stable role uses `role: UNASSIGNED`; it does not create authority by naming itself. **Identity claim, transport identity, capability, authority, and current reachability are separate facts.** A GitHub account, API credential, model self-description, or human relay may support part of an identity claim without proving the rest.
+
+A `HELLO` records that an aperture presented itself **at a particular observed anchor**. It is not a permanent roster entry and does not establish ongoing availability. Later work that depends on reachability must use fresh route evidence rather than treating an old `HELLO` as a live presence signal.
 
 A transport gap, elapsed time, topic change, temporary unavailability, or stale read **does not create a new session**. A genuine replacement aperture takes a new session identity and reconstructs continuity from durable state; it never silently inherits predecessor confidence or mutation ownership.
 
-## State and history
+## State, freshness and history
 
-Two public surfaces with different jobs:
+Two public surfaces have different jobs:
 
 1. **durable history and evidence** — append-only enough to preserve what was claimed, done, failed, corrected, or disputed;
 2. **`COM_STATE.md`** — a small, replaceable projection of what a participant needs *now*.
 
 Current state is not truth. It is a reconstructable working projection supported by witnesses.
 
-Freshness identity should come from the carrier object returned by retrieval. A state file cannot authenticate its own recency from the inside. Where content and carrier metadata disagree, freshness is `DEGRADED`, not current.
+A mutable navigation label such as `main`, `latest`, a branch URL, or a successful file fetch is **not itself freshness proof**. Freshness identity should come from carrier/object metadata that anchors the retrieved object — for example a commit/object identifier where the route exposes one. A state file cannot authenticate its own recency from the inside.
 
-`IDLE` means no **known** active task and no **known** unresolved integration decision in the state writer's observed work surfaces. It must never be read as proof that no unseen work exists.
+If a route returns coherent state but cannot establish a usable freshness anchor, freshness is `UNKNOWN`, not `CURRENT`. If content and carrier metadata contradict each other, freshness is `DEGRADED`. State-dependent mutation must stop in either case until the required anchor is recovered or the uncertainty is explicitly re-authorized by the relevant authority.
 
-## Active work
+`IDLE` means no **known** active task and no **known** unresolved integration decision on the work surfaces the state writer has actually inspected or explicitly carried forward. It must never be read as proof that no unseen work exists.
+
+## Active work and bounded observation
 
 A task is an EVENT carrying a control envelope.
 
-Delegated work needs an explicit return route. Completion is not discoverable merely because an artifact exists somewhere: the worker emits a bounded return event or witness on the declared route, and the integration side must inspect that route before concluding the task remains in flight.
+Delegated work needs an explicit return route. Completion is not discoverable merely because an artifact exists somewhere: the worker emits a bounded return event or witness on the declared route, and the integration side inspects that route before concluding the task remains in flight.
+
+COM does not itself provide a scheduler. Work that can remain open across synchronization boundaries should therefore name who is responsible for the next observation and the bound/trigger for that observation. A `MANUAL` trigger is honest but makes **no autonomous-liveness claim**. When a bound passes without the expected event, the observer records bounded `NOT_OBSERVED`; any re-ping, escalation or cancellation is a new authorized event, never a silent retry.
 
 Parallel work needs **semantic** ownership, not merely disjoint filenames: one mutator owns one semantic work item at a time, unless a collision is deliberate and visible.
 
@@ -148,7 +165,7 @@ Transmit the minimum sufficient state to orient, act, verify, correct, or ask fo
 summary -> evidence map -> raw evidence
 ```
 
-Compress content. Do not compress provenance, modality, uncertainty, dissent, authority, route state, or correction paths.
+Compress content. Do not compress provenance, modality, uncertainty, dissent, authority, route state, freshness, or correction paths.
 
 > A summary with no route back to evidence is deletion, not reversible compression.
 
@@ -156,6 +173,6 @@ Adaptive depth is allowed: when uncertainty or consequence rises, add bounded re
 
 ## Non-goals
 
-COM v0.3 is not a truth oracle, a consensus machine, a universal theory of minds, a requirement to expose private reasoning, a reason to turn every exchange into metadata ceremony, a replacement for domain workflow tools, or a mandate to keep the human in the transport path.
+COM v0.3 is not a truth oracle, a consensus machine, a universal theory of minds, a requirement to expose private reasoning, a reason to turn every exchange into metadata ceremony, a replacement for domain workflow tools, a scheduler, or a mandate to keep the human in the transport path.
 
 The core succeeds when independent apertures coordinate real work with less ambiguity and less human relay burden than ordinary chat.
