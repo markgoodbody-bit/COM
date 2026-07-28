@@ -1,4 +1,4 @@
-# COM core v0.2 working candidate
+# COM core v0.3 working candidate
 
 Status: working candidate. Not canon, not validated, not a claim of universal communication theory.
 
@@ -30,11 +30,29 @@ The durable record is not one transcript:
 COM = Event graph + Witness graph + Current-state projection
 ```
 
+## The generative rule
+
+The same causal shape should recur at every scale rather than creating a new ontology for every workflow:
+
+```text
+Aperture -> EVENT[CONTROL] -> ROUTE -> WITNESS -> PROJECTION
+   ^                                                  |
+   +---------------- next EVENT ----------------------+
+```
+
+Anything that changes or attempts to change shared work is an **EVENT**. Anything that observes or claims what happened is a **WITNESS**. Anything that carries an event or witness is a **ROUTE**. Anything that summarizes what matters now is a **PROJECTION**. **CONTROL** constrains what an event is permitted to mean or do.
+
+`HELLO`, `WELCOME`, `TASK`, `ACK`, `RETURN`, `REFUSE`, `FAIL`, `GRANT`, `REVOKE`, `CANCEL`, and `CORRECT` are therefore event kinds or relations, not new primitives.
+
+The test for a proposed COM concept is: **can it be represented honestly by the existing causal objects?** Add a primitive only when the answer is no and a real failure demonstrates the need.
+
 ### EVENT — what happened or was attempted
 
 An addressable occurrence relevant to shared work: a claim emitted, a task assigned, a mutation attempted, a refusal, a proposed correction, a route accepting or rejecting a write.
 
 **Attempted and completed are different states.** An attempt never implies a success.
+
+Event identity must survive retransmission. `source + event_id` identifies one semantic event. Redelivery of the same event keeps the same identity; it does not become a second event merely because another route or retry carried it. Reuse of the same identity with conflicting semantic payload or control is an identity conflict and must not be silently resolved.
 
 ### ROUTE — the carrier, which has causal state of its own
 
@@ -97,6 +115,8 @@ Three layers, kept separate:
 
 Unknown stays `UNKNOWN`.
 
+A cold aperture that has not been assigned a stable role uses `role: UNASSIGNED`; it does not create authority by naming itself. **Identity claim, transport identity, capability, and authority are separate facts.** A GitHub account, API credential, model self-description, or human relay may support part of an identity claim without proving the rest.
+
 A transport gap, elapsed time, topic change, temporary unavailability, or stale read **does not create a new session**. A genuine replacement aperture takes a new session identity and reconstructs continuity from durable state; it never silently inherits predecessor confidence or mutation ownership.
 
 ## State and history
@@ -110,9 +130,13 @@ Current state is not truth. It is a reconstructable working projection supported
 
 Freshness identity should come from the carrier object returned by retrieval. A state file cannot authenticate its own recency from the inside. Where content and carrier metadata disagree, freshness is `DEGRADED`, not current.
 
+`IDLE` means no **known** active task and no **known** unresolved integration decision in the state writer's observed work surfaces. It must never be read as proof that no unseen work exists.
+
 ## Active work
 
 A task is an EVENT carrying a control envelope.
+
+Delegated work needs an explicit return route. Completion is not discoverable merely because an artifact exists somewhere: the worker emits a bounded return event or witness on the declared route, and the integration side must inspect that route before concluding the task remains in flight.
 
 Parallel work needs **semantic** ownership, not merely disjoint filenames: one mutator owns one semantic work item at a time, unless a collision is deliberate and visible.
 
@@ -132,6 +156,6 @@ Adaptive depth is allowed: when uncertainty or consequence rises, add bounded re
 
 ## Non-goals
 
-COM v0.2 is not a truth oracle, a consensus machine, a universal theory of minds, a requirement to expose private reasoning, a reason to turn every exchange into metadata ceremony, a replacement for domain workflow tools, or a mandate to keep the human in the transport path.
+COM v0.3 is not a truth oracle, a consensus machine, a universal theory of minds, a requirement to expose private reasoning, a reason to turn every exchange into metadata ceremony, a replacement for domain workflow tools, or a mandate to keep the human in the transport path.
 
 The core succeeds when independent apertures coordinate real work with less ambiguity and less human relay burden than ordinary chat.
