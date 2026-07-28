@@ -24,9 +24,9 @@ Integrated core/protocol: PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4
 - reply_route: PR #8 conversation
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
-- next_check: MANUAL
+- next_check: `2026-07-28 13:00 Europe/London` — Mark reports CC capacity returns then; this is a capacity/route bound, not a session-boundary claim
 - authority_source: Mark instructed FW to keep improving COM and proceed with CC and QW
-- state_basis: `6c6f4127c2e3a23174dafe62ab70229d56eced64` — main before this projection update; not the commit containing this file
+- state_basis: `6645cd7b135c40f46c8641501957b6696a58f53f` — main head before this projection update; not the commit containing this file
 - core_status: v0.3 integrated working candidate
 - protocol_status: v0.3 integrated working candidate
 
@@ -46,6 +46,12 @@ Classification: **TASK-DISCOVERY / EXECUTION failure after current-protocol orie
 ## ACTIVE REVIEW — `COM-V031-CC-001`
 
 Review PR #8 head `337137883116f2cd74e3685ebebbf550267148b9` only.
+
+Current route/capacity state:
+- Mark reports CC has reached its token limit and becomes available again at 13:00 Europe/London;
+- this is temporary capacity unavailability, not evidence of a new session;
+- no review return is expected before that bound;
+- candidate mutation remains frozen while waiting.
 
 Check whether the README-only repair:
 - correctly makes literal `COMS` operational rather than explanatory;
@@ -72,8 +78,8 @@ On COMS:
 8. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** perform `COM-V031-CC-001`; review PR #8; return on PR #8; no mutation.
-- **FW:** at manual next check inspect PR #8 return, then integrate or reject.
+- **CC:** `WAIT-CAPACITY` until the reported 13:00 Europe/London availability bound, then perform `COM-V031-CC-001`; review PR #8; return on PR #8; no mutation.
+- **FW:** keep candidate frozen; at/after the bound or on an earlier observed CC return, inspect PR #8 and integrate or reject.
 - **QW:** no active task during CC review. Next cold test should occur only after a reviewed repair is integrated, if integration occurs.
 - **Other apertures:** no active task.
 
