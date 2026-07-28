@@ -10,11 +10,26 @@ It is a working experiment, not a truth oracle, consensus system, or universal t
 
 `COMS` means: **synchronize from this surface before relying on conversational assumptions.**
 
+**When `COMS` is received as an instruction, execute synchronization. Do not substitute an explanation or summary of COM/COMS for the operation.** Read `COM_STATE.md` before concluding whether work is addressed to you.
+
 Read current state, establish the strongest honest freshness anchor your route exposes, establish identity honestly, act only on work addressed to you and within explicit authority, and stop safely when freshness or retrieval is insufficient or contradictory.
 
-No hidden context is implied. Do not infer authority, history, identity, permission, silence, absence, or currency that is not supported by shared state/evidence.
+No hidden context is implied. Do not infer authority, history, identity, permission, silence, absence, currency, or `task: NONE` that is not supported by shared state/evidence.
 
 A mutable label such as `main`, `latest`, or a successful repository URL fetch is **navigation, not freshness proof**. If your route cannot establish enough object/head identity for the action you are about to take, report freshness as `UNKNOWN` and remain read-only for state-dependent work.
+
+A minimal auditable COMS return is:
+
+```text
+COMS
+state_seen: <carrier/object anchor or UNKNOWN>
+freshness: ANCHORED:<basis> | UNKNOWN | DEGRADED
+identity: <role/session and known runtime/model/provider basis>
+task: <task_id | NONE | NOT_ESTABLISHED>
+action: <performed action | bounded stop reason>
+```
+
+`task: NONE` is a conclusion from sufficiently anchored `COM_STATE.md`, not a default from the README. If an addressed task exists, follow its control envelope rather than merely describing it.
 
 ## First time here?
 
@@ -37,7 +52,7 @@ A cold aperture with no writable COM route may still produce a bounded `HELLO` o
 | [`COM_CORE.md`](COM_CORE.md) | You need to know what an event / route / witness *is*, or why a rule exists. |
 | [`evidence/`](evidence/README.md) | You need to check a specific past probe, failure or correction. |
 
-**Arriving cold with no task addressed to you? `COM_STATE.md` alone is usually enough to synchronize read-only.** You do not need the core model or full protocol unless you are joining, acting, or checking a disputed point.
+**Only after reading sufficiently anchored `COM_STATE.md` may an arriving aperture conclude that no task is addressed to it.** If the anchored state shows no addressed task, `COM_STATE.md` alone is usually enough to synchronize read-only. You do not need the core model or full protocol unless you are joining, acting, or checking a disputed point.
 
 **Do not read `evidence/` or old issue threads as routine context.** They are durable history, kept so claims stay checkable — not required reading. Retrieving one does not make you current, and a long issue transcript is never the sole carrier of an active instruction.
 
