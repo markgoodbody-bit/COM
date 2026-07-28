@@ -16,17 +16,21 @@ Operational discipline: `COM_PROTOCOL_WORKING.md`.
 - human_authority: Mark
 - execution_mode: delegated CC branch work / FW integration
 - active_task: `COM-OPT-001` — optimize the public COM repository as a usable coordination surface
+- task_phase: CC NARROW REPAIR after FW integration review
 - addressed_to: CC; continuing session `CC-20260727T2020+0100-0C60` if still active, otherwise a fresh CC session must identify itself honestly
 - active_mutator: CC on `claude/optimize-com-v0.2` only
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - task_route: issue #2 `COM v0.2 · Claude repo optimization pass`
 - work_branch: `claude/optimize-com-v0.2`
-- base_anchor: `96034d87893bf36a1a9eb13968bc205edf687a4a`
-- write_scope: `README.md`, `COM_CORE.md`, `COM_PROTOCOL_WORKING.md`; may create `evidence/README.md`; at most one additional small navigation/index file if clearly justified
+- pull_request: PR #3 `COM v0.2: separate core from protocol, make the front door navigable`
+- reviewed_head: `55de9539d23cf2b8e833dc574e914adcab985407`
+- integration_review: PR review `4795136958`; verdict `REVISE-NARROW`
+- requested_repairs: (1) README must not define STATE as truth; (2) replace absolute `each rule lives in exactly one place` wording with one-authoritative-home/summary discipline; (3) evidence index must forbid rewriting prior witness content rather than forbid all in-place appends
+- write_scope: `README.md`, `COM_CORE.md`, `COM_PROTOCOL_WORKING.md`, `evidence/README.md`
 - no_touch: `COM_STATE.md`, existing `evidence/*.md` witness files, `routes/*`, `main`, issue #1 history, schema/CI/automation/code
-- deliverable: bounded branch commits + PR to `main`; do not merge
+- deliverable: update the same branch/PR with only the narrow repairs unless they expose a dependent defect; do not merge
 - authority_source: Mark explicitly asked FW to optimize the repo with Claude in the live ChatGPT conversation; public issue #2 carries the delegated branch scope
-- state_basis: `96034d87893bf36a1a9eb13968bc205edf687a4a` — main head before this active-task state update; not the commit containing this file
+- state_basis: `135a8f76656df3d3ab2e6853e2111c95a1ee6cf8` — main head immediately before this state update; not the commit containing this file
 - core_status: v0.2 working candidate
 - protocol_status: v0.2 working candidate
 
@@ -45,8 +49,8 @@ On COMS:
 8. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** ACTIVE TASK `COM-OPT-001`; read issue #2 and work only on `claude/optimize-com-v0.2`.
-- **FW:** integration owner; do not independently edit CC's semantic work while CC owns the task.
+- **CC:** apply the three bounded repairs from PR review `4795136958` on `claude/optimize-com-v0.2`, then update PR #3. Do not merge.
+- **FW:** wait for a new PR head, then re-review and integrate only if clean.
 - **Other apertures:** no active task.
 
 ## WORKING CORE
@@ -88,7 +92,7 @@ Historical probes established that:
 - Mark temporarily became a fallback relay for some CC -> FW traffic.
 
 Operational consequence:
-**A long issue transcript must not be the sole carrier of an active task.** The actionable task is therefore summarized here and specified durably in issue #2.
+**A long issue transcript must not be the sole carrier of an active task.** The actionable task is therefore summarized here and specified durably in issue #2 / PR #3.
 
 These are historical carrier observations, not claims that every current route remains degraded.
 
@@ -109,8 +113,10 @@ is retained in history as a falsified/over-factored working hypothesis, not sile
 `COM-OPT-001` is the first deliberate real-work pressure test of v0.2:
 - actual repository optimization;
 - explicit actor, authority, base, branch, write scope and no-touch scope;
-- CC performs bounded work;
-- FW performs integration review;
-- Mark should not need to shuttle routine machine-readable task state.
+- CC performed the bounded optimization and opened PR #3 without Mark relaying the work product;
+- FW discovered the PR through COM/GitHub, reviewed it directly, and returned three bounded repairs through the PR;
+- Mark did not have to shuttle the task or patch between apertures.
 
-Do not add schema, CI, automation, or new protocol machinery during this task unless a concrete repo defect requires a separate authorization.
+The GitHub account cannot submit a formal `REQUEST_CHANGES` review against a PR authored by the same GitHub account, so FW's integration verdict is carried as a PR review comment with explicit `REVISE-NARROW` status. This is a platform-control limitation, not evidence that the review was accepted or absent.
+
+Do not add schema, CI, automation, or new protocol machinery during this task unless a concrete repo defect requires separate authorization.
