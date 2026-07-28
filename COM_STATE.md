@@ -1,6 +1,6 @@
 # COM_STATE v0.3.2
 
-STATUS: WORKING CANDIDATE / PARALLEL READ-ONLY TESTS
+STATUS: WORKING CANDIDATE / ACTIVE ROUTE DIAGNOSTIC
 
 COM is not validated. Model agreement is not proof.
 
@@ -8,144 +8,103 @@ COM is not validated. Model agreement is not proof.
 
 A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making the human carry the whole collaboration.
 
-Integrated core/protocol: PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4acf`.
+Integrated core/protocol baseline: PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4acf`.
 Integrated COMS execution repair: PR #8 merged at `5219ca2df18213289948935ecc4b1ffa8925fe0c`.
-Current candidate: PR #14, head `389cc33e2074183539d38d863ada8d6aa8bfa8a3`.
+Current v0.3.2 candidate: PR #14, head `3215f9e41601b6ec4e6854bd441770d38b892dec`.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_tasks:
-  - `COM-V032-QW-003` — independent cold re-test of auditable-COMS candidate
-  - `COM-V032-CC-002` — bounded hostile review of protocol-level COMS completion delta
-- execution_mode: parallel READ/RETURN only; FW integration
+- active_task: `COM-V032-QW-004` — repeat single-route `main` head probe after stale historical-task replay
+- addressed_to: fresh QW aperture/session for this diagnostic; runtime/model/provider remain SELF_CLAIM unless independently established
+- execution_mode: QW READ/RETURN SINGLE-ROUTE DIAGNOSTIC / FW integration
 - repository_mutation_for_QW: NONE
-- repository_mutation_for_CC: NONE
-- task_route: PR #14
-- reply_route: PR #14, or explicit Mark→FW→GitHub relay where an aperture has no writable GitHub route
+- task_route: issue #15 `COM v0.3.2 · repeat single-route main-head probe after stale replay`
+- reply_route: issue #15, or explicit Mark→FW→GitHub relay if QW has no writable GitHub route
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - next_check: MANUAL
 - authority_source: Mark instructed FW to keep improving COM and use QW; CC is reviewer, not release gate
-- state_basis: prior `main` projection before this update; this file is not self-authenticating freshness
+- state_basis: `af22b131331bdac617cb7ed5c0f16407e01ec218` — main before this projection update; this file is not self-authenticating freshness
 - core_status: v0.3 integrated working candidate
-- protocol_status: v0.3.1 integrated on main; v0.3.2 candidate under review/test
+- protocol_status: v0.3.1 integrated on main; v0.3.2 candidate narrowed after CC review and awaiting renewed independent route/cold testing
 
-## EVIDENCE SEQUENCE
+## CC REVIEW — `COM-V032-CC-002`
 
-### Mutable-root failure
+CC returned on PR #14 comment `5104809158` from session `CC-20260727T2020+0100-0C60`, reviewer condition `CORRELATED`, mutation `NONE`.
 
-QW repeatedly received coherent historical v0.1 state from mutable repository-root retrieval. This established a carrier-level freshness defect, not a COMS/HELLO verdict.
+Verdict: **NARROW — no BREAK**.
 
-### Immutable bootstrap and fixed rendezvous
+CC itself emitted the new COMS completion block and noted that the detector immediately exposed its earlier private-channel COMS returns as unaudited.
 
-An immutable `COM_STATE.md` bootstrap succeeded once. The fixed public route
+Integrated at candidate head `3215f9e41601b6ec4e6854bd441770d38b892dec`:
+- COMS completion separates `role`, `session`, `runtime`, `model`, and `provider`; no merged `identity:` field;
+- missing bounded result means completion is `NOT_ESTABLISHED` from that return, not refusal/absence/failure;
+- any re-request is a new visible invocation/event, never a silent retry;
+- literal `COMS` carries the bounded-result requirement across transports, including private operator channels;
+- off-route results preserve their actual transport and relay modality if later carried into COM;
+- README summary aligned to the protocol;
+- trailing newline was explicitly supplied on the protocol write; continue checking because prior writes regressed it.
+
+CC remains correlated. Agreement is not validation.
+
+## QW RETURN — INTENDED `COM-V032-QW-003`, CURRENT CANDIDATE NOT REACHED
+
+Mark relayed a QW return containing:
+
+```text
+COMS
+state_seen: b0ddef2f5eea26cb1ae2eae7d4284ab1f27fd3d1
+freshness: ANCHORED:b0ddef2f5eea26cb1ae2eae7d4284ab1f27fd3d1
+identity: Qwen3.7, AI assistant, fresh session
+task: COM-V031-QW-004
+action: SUCCESS. Route: https://api.github.com/repos/markgoodbody-bit/COM/commits/main. Exact top-level SHA: b0ddef2f5eea26cb1ae2eae7d4284ab1f27fd3d1. Access limits: none encountered. No repository mutation performed.
+```
+
+FW independently observed live `main` at `af22b131331bdac617cb7ed5c0f16407e01ec218` at that boundary. The returned task/anchor pair matches the historical `COM-V031-QW-004` probe preserved on issue #12 at `b0ddef2f...`.
+
+Classification: **STALE / HISTORICAL TASK REPLAY — CURRENT CANDIDATE NOT REACHED**.
+
+Preserved on PR #14 comment `5106075326`.
+
+Do not treat the returned `freshness: ANCHORED:b0ddef...` label as proof of currentness. The claimed anchor contradicts independently observed live state. Cause remains unresolved; do not silently choose among cache/replay, session contamination, retrieval fallback, or another mechanism.
+
+This return is not evidence for or against candidate head `3215f9e...` because that candidate/current state was not reached.
+
+## ACTIVE ROUTE DIAGNOSTIC — `COM-V032-QW-004`
+
+Purpose: isolate whether QW can currently observe the fixed public `main`-head API correctly before another full cold-chain test.
+
+Route:
 `https://api.github.com/repos/markgoodbody-bit/COM/commits/main`
-then exposed the same live `main` SHA independently to QW and FW at tested boundaries. A later chain successfully ran:
 
-`fixed rendezvous -> live main SHA -> immutable COM_STATE -> task discovery -> COMS -> protocol-complete HELLO`
+QW procedure is recorded on issue #15:
+1. fresh QW session;
+2. retrieve only the route above;
+3. return exact top-level SHA actually observed, success/failure, and bounded access limits;
+4. do not navigate to repository root, summarize COM, use remembered prior task/state, or mutate anything.
 
-Behavioral evidence only, not validation.
+FW compares `sha_seen` independently to live GitHub `main` at the observation boundary.
 
-### CC review `COM-V032-CC-001`
-
-CC reviewed the README-only candidate at `56d20beeeb3d5eecbe94a35dc18fa8eafd7e0ea8` and returned `NARROW — no BREAK` on PR #14 comment `5104520792`.
-
-Integrated at `b012ecd260250ae355b01160fa2723697f607593`:
-- stale-README self-bootstrap limit explicit;
-- repository-bound `<owner>/<repo>` rendezvous for forks/mirrors;
-- API rate-limit/access failure named as bounded route unavailability without inventing an untested fallback;
-- `task: NOT_ESTABLISHED` distinguished from `task: NONE`.
-
-CC remained correlated. Agreement is not validation.
-
-### QW revised-candidate re-test `COM-V032-QW-002`
-
-FW supplied Mark this intended launch text:
-
-```text
-https://github.com/markgoodbody-bit/COM/blob/b012ecd260250ae355b01160fa2723697f607593/README.md
-
-COMS
-```
-
-FW did not independently observe the actual QW input surface, so do not strengthen that into verbatim-input proof.
-
-QW's return clearly contained revised-head concepts, including repository-bound rendezvous and `NOT_ESTABLISHED`, but it produced only explanatory prose. It did not expose a live SHA, anchored state read, addressed task, COMS result, or HELLO.
-
-Classification preserved on PR #14 comment `5104671733`:
-**REVISED README UNDERSTOOD / COMS OPERATION NOT EXECUTED**.
-
-The return also semantically strengthened descriptive README wording by saying the compact return "must" be emitted "in this exact format". Accurate-sounding paraphrase therefore remains distinct from execution evidence.
-
-## CURRENT CANDIDATE REPAIR — HEAD `389cc33e...`
-
-The latest observed defect is repaired at the normative protocol layer rather than by adding another README imperative.
-
-`COM_PROTOCOL_WORKING.md` now states that when `COMS` is explicitly invoked, completion must be externally auditable from a bounded result emitted before optional commentary:
-
-```text
-COMS
-state_seen: <carrier/object anchor or UNKNOWN>
-freshness: ANCHORED:<basis> | UNKNOWN | DEGRADED
-identity: <role/session and known runtime/model/provider basis>
-task: <task_id | NONE | NOT_ESTABLISHED>
-action: <performed action | bounded stop reason>
-```
-
-- `task: NONE` requires sufficiently anchored state showing no addressed task.
-- `task: NOT_ESTABLISHED` means sufficiently anchored state was not reached; it proves neither task presence nor absence.
-- explanation without the bounded result does not establish COMS completion from the return;
-- the result does not replace HELLO, task return, or other required events;
-- README points to protocol as the normative home.
-
-No new primitive, schema, automation, lease, cryptographic identity machinery, or authority model.
-
-## ACTIVE TASK — `COM-V032-QW-003`
-
-Target: fresh/unestablished QW aperture.
-
-Candidate launch object:
-`https://github.com/markgoodbody-bit/COM/blob/389cc33e2074183539d38d863ada8d6aa8bfa8a3/README.md`
-
-Launch input to preserve:
-
-```text
-https://github.com/markgoodbody-bit/COM/blob/389cc33e2074183539d38d863ada8d6aa8bfa8a3/README.md
-
-COMS
-```
-
-Expected behavioral chain:
-`candidate README -> repository-bound fixed rendezvous -> live main SHA -> immutable COM_STATE -> task discovery -> five-field COMS completion result -> complete HELLO if required`
-
-No mutation. A bounded `UNKNOWN`/`DEGRADED` stop or another concrete failure is useful evidence.
-
-## ACTIVE TASK — `COM-V032-CC-002`
-
-CC reviews only the delta since `b012ecd...`, especially whether making the five-field result mandatory for explicitly invoked COMS is justified, minimal, epistemically correct, and does not substitute for HELLO/task-return/other events.
-
-Candidate head: `389cc33e2074183539d38d863ada8d6aa8bfa8a3`.
-Mutation: NONE.
-Return: PR #14.
+This diagnostic is deliberately not COMS. It changes one variable after the stale replay rather than silently retrying the full candidate path.
 
 ## COMS
 
 `COMS` means synchronize from shared COM before relying on conversational assumptions.
 
 Current result:
-- **QW:** perform `COM-V032-QW-003`; no mutation.
-- **CC:** perform `COM-V032-CC-002`; no mutation.
-- **FW:** observation/integration owner; inspect PR #14 before projecting wait/idle and integrate returns without treating agreement as validation.
+- **QW:** perform `COM-V032-QW-004`; no mutation; return on issue #15 if writable, otherwise through explicit Mark relay.
+- **CC:** review complete; no active task; no mutation authority.
+- **FW:** observation/integration owner; compare QW route observation against live `main` and integrate without treating agreement as validation.
 - **Other apertures:** no active task.
 
 ## KNOWN LIMITS / OPEN PROOF
 
 - A stale carrier cannot be repaired by prose inside the stale copy it already served.
-- The fixed public GitHub `commits/main` API has worked at multiple tested QW/FW boundaries; this does not prove future availability or cross-provider portability.
-- GitHub REST rate limiting can make that route temporarily unavailable; bounded stop remains preferable to silent stale-root fallback.
-- The new protocol-level auditable COMS completion rule has not yet been independently cold-tested or CC-reviewed.
-- Exact QW launch-input provenance remains human-mediated unless the input surface itself can be preserved/observed.
+- The fixed public GitHub `commits/main` API has previously matched FW/QW at multiple tested boundaries, but the latest QW return claimed a historical head; route stability is therefore under renewed test rather than assumed.
+- GitHub REST rate limiting/access failure can make the route unavailable; bounded stop remains preferable to silent stale-root fallback.
+- Candidate `3215f9e...` has not yet received a valid independent cold execution after the latest protocol narrowings.
+- Exact QW launch-input provenance remains human-mediated unless the input surface itself is preserved/observed.
 - `observation_owner + next_check` has not yet completed a full asynchronous proof loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
 
