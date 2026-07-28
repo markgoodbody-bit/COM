@@ -14,17 +14,17 @@ Integrated COMS front-door repair: PR #8 merged at `5219ca2df18213289948935ecc4b
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V031-QW-003` — rendezvous route probe
-- addressed_to: QW aperture / fresh session for this probe; runtime/model/provider remain SELF_CLAIM unless independently established
-- execution_mode: QW READ/RETURN ROUTE PROBE / FW integration
+- active_task: `COM-V031-QW-004` — single-route `main` head API probe
+- addressed_to: fresh QW aperture/session for this probe; runtime/model/provider remain SELF_CLAIM unless independently established
+- execution_mode: QW READ/RETURN SINGLE-ROUTE PROBE / FW integration
 - repository_mutation_for_QW: NONE
-- task_route: issue #11 `COM v0.3.1 · rendezvous route probe`
-- reply_route: issue #11, or explicit Mark→FW→GitHub relay if QW has no writable GitHub route
+- task_route: issue #12 `COM v0.3.1 · single-route main-head probe`
+- reply_route: issue #12, or explicit Mark→FW→GitHub relay if QW has no writable GitHub route
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - next_check: MANUAL
 - authority_source: Mark instructed FW to keep improving COM and use QW without waiting for CC
-- state_basis: `d60e64df42b2e9edd0191f16e42ecbf3f8bea2f6` — main before this projection update; not the commit containing this file
+- state_basis: `d64531a9645f345a9ef8c8b0fcfa49c0353515c9` — main before this projection update; not the commit containing this file
 - core_status: v0.3 integrated working candidate
 - protocol_status: v0.3.1 front-door repair integrated working candidate
 
@@ -37,28 +37,30 @@ Preserved on issue #10:
 - FW WELCOME comment `5103647861`;
 - issue #10 closed completed.
 
-Observed:
-- QW reported `freshness: ANCHORED:d60e64df42b2e9edd0191f16e42ecbf3f8bea2f6`;
-- QW discovered `COM-V031-QW-002`;
-- QW emitted HELLO `QW-HELLO-1b409699e2de` with `role: UNASSIGNED`, `authority: NONE`, fresh session `QW-7f050b6dc575`;
-- FW observed the relayed HELLO and WELCOME'd it without granting role or authority;
-- QW separately observed the mutable repository root still rendering historical v0.1-era material during the same session.
+Classification: **ANCHORED COMS + TASK DISCOVERY + HELLO SUCCESS ON IMMUTABLE CARRIER**. Behavioral evidence, not validation.
 
-Classification: **ANCHORED COMS + TASK DISCOVERY + HELLO SUCCESS ON IMMUTABLE CARRIER**. This is behavioral evidence, not validation. It does not solve mutable rendezvous.
+## RENDEZVOUS TEST `COM-V031-QW-003` — TASK NOT ENTERED
 
-## ACTIVE TEST — `COM-V031-QW-003`
+QW was launched toward immutable `COM_STATE.md @ d64531a9645f345a9ef8c8b0fcfa49c0353515c9`, but the returned witness contained no reference to that anchor, issue #11, or candidate routes A-D. It reproduced the historical v0.1 / issue #1 world instead.
 
-Purpose: identify whether any stable public route can recover a current immutable state anchor without Mark carrying the changing commit SHA.
+Preserved on issue #11 comment `5103715997`.
 
-Launch discipline:
-1. enter this active task through the immutable `COM_STATE.md` URL supplied by Mark;
-2. inspect issue #11;
-3. probe only the candidate routes named there;
-4. report retrieval, state/version seen, exposed commit/object identity, anchor adequacy, discrepancies and access limits;
-5. do not infer causes of stale results;
-6. do not mutate or redesign COM.
+Classification: **LAUNCH-SURFACE REVERSION / TASK NOT ENTERED**. This is not evidence for or against any candidate route because the route probe never ran. Issue #11 is closed. No silent retry under identical conditions.
 
-Candidate routes are defined in issue #11. The result should classify each as `USABLE RENDEZVOUS CANDIDATE`, `NO USABLE CANDIDATE`, or `DEGRADED/INCONCLUSIVE`.
+## ACTIVE TEST — `COM-V031-QW-004`
+
+Purpose: test one stable rendezvous candidate directly, without repo-root navigation, COMS execution, issue discovery, or multi-route branching.
+
+Route under test:
+`https://api.github.com/repos/markgoodbody-bit/COM/commits/main`
+
+QW procedure:
+1. use a fresh QW session;
+2. retrieve only that route;
+3. return retrieval `SUCCESS|FAIL`, the exact top-level `sha` if any, the exact route, and bounded access limits;
+4. do not navigate to repository root, summarize COM, infer causes, or mutate anything.
+
+FW will compare QW's `sha_seen` independently against the live GitHub `main` head at the observation boundary.
 
 ## COMS
 
@@ -75,8 +77,8 @@ On COMS:
 8. if synchronized and idle for your role, stop.
 
 Current result:
-- **QW:** perform `COM-V031-QW-003`; no repository mutation; return on issue #11 if writable, otherwise through explicit human relay.
-- **FW:** observation/integration owner; inspect issue #11 and any Mark-relayed return at the next manual check.
+- **QW:** perform `COM-V031-QW-004`; no repository mutation; return on issue #12 if writable, otherwise through explicit human relay.
+- **FW:** observation/integration owner; compare returned SHA with live GitHub `main` head.
 - **CC:** no active task. Temporary capacity unavailability does not by itself create a new session.
 - **Other apertures:** no active task.
 
@@ -84,6 +86,7 @@ Current result:
 
 - Mutable repository-root retrieval has repeatedly returned coherent historical state to QW.
 - Immutable COM_STATE bootstrap has succeeded once with QW.
+- A later immutable launch reverted to stale v0.1 before the intended route probe was entered; cause remains unresolved.
 - A stable mutable rendezvous route that exposes a trustworthy current immutable anchor has not yet been established.
 - `observation_owner + next_check` has not yet completed a full asynchronous proof loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
