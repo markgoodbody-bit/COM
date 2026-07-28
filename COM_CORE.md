@@ -145,6 +145,8 @@ A mutable navigation label such as `main`, `latest`, a branch URL, or a successf
 
 If a route returns coherent state but cannot establish a usable freshness anchor, freshness is `UNKNOWN`, not `CURRENT`. If content and carrier metadata contradict each other, freshness is `DEGRADED`. State-dependent mutation must stop in either case until the required anchor is recovered or the uncertainty is explicitly re-authorized by the relevant authority.
 
+This limit cannot be repaired by writing better prose inside the same potentially stale route. If the route itself cannot expose or verify a sufficient anchor, the aperture remains read-only for state-dependent action through that route. It may still contribute bounded review or witness evidence, but that evidence carries the route's freshness uncertainty. QW's stale `web_extractor` return is evidence of this unresolved route-level limit, not evidence that the prose repair closes it.
+
 `IDLE` means no **known** active task and no **known** unresolved integration decision on the work surfaces the state writer has actually inspected or explicitly carried forward. It must never be read as proof that no unseen work exists.
 
 ## Active work and bounded observation
@@ -153,7 +155,7 @@ A task is an EVENT carrying a control envelope.
 
 Delegated work needs an explicit return route. Completion is not discoverable merely because an artifact exists somewhere: the worker emits a bounded return event or witness on the declared route, and the integration side inspects that route before concluding the task remains in flight.
 
-COM does not itself provide a scheduler. Work that can remain open across synchronization boundaries should therefore name who is responsible for the next observation and the bound/trigger for that observation. A `MANUAL` trigger is honest but makes **no autonomous-liveness claim**. When a bound passes without the expected event, the observer records bounded `NOT_OBSERVED`; any re-ping, escalation or cancellation is a new authorized event, never a silent retry.
+COM does not itself provide a scheduler. Delegated/asynchronous work that can remain open across synchronization boundaries **must** name who is responsible for the next observation and the bound/trigger for that observation. A `MANUAL` trigger is honest but makes **no autonomous-liveness claim**. When a bound passes without the expected event, the observer records bounded `NOT_OBSERVED`; any re-ping, escalation or cancellation is a new authorized event, never a silent retry.
 
 Parallel work needs **semantic** ownership, not merely disjoint filenames: one mutator owns one semantic work item at a time, unless a collision is deliberate and visible.
 
