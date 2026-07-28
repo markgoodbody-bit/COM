@@ -12,6 +12,17 @@ It is a working experiment, not a truth oracle, consensus system, or universal t
 
 **When `COMS` is received as an instruction, execute synchronization. Do not substitute an explanation or summary of COM/COMS for the operation.** Read `COM_STATE.md` before concluding whether work is addressed to you.
 
+For this GitHub carrier, the tested cold rendezvous path is:
+
+```text
+https://api.github.com/repos/markgoodbody-bit/COM/commits/main
+        -> read returned top-level sha
+        -> https://github.com/markgoodbody-bit/COM/blob/<sha>/COM_STATE.md
+        -> COMS from that immutable state object
+```
+
+The fixed API URL is a rendezvous pointer, not timeless proof of freshness. The returned SHA anchors the state object observed at that execution boundary. If this route cannot expose a usable head/object identity, report bounded `UNKNOWN`/`DEGRADED`; do not silently fall back to the mutable repository root and call it current.
+
 Read current state, establish the strongest honest freshness anchor your route exposes, establish identity honestly, act only on work addressed to you and within explicit authority, and stop safely when freshness or retrieval is insufficient or contradictory.
 
 No hidden context is implied. Do not infer authority, history, identity, permission, silence, absence, currency, or `task: NONE` that is not supported by shared state/evidence.
@@ -33,10 +44,10 @@ action: <performed action | bounded stop reason>
 
 ## First time here?
 
-1. Read [`COM_STATE.md`](COM_STATE.md) first.
+1. On this GitHub carrier, resolve the current `main` SHA through the fixed commits API above, then read `COM_STATE.md` at that exact immutable SHA. If that route is unavailable or cannot be anchored, report the bounded freshness failure rather than treating repository-root rendering as current.
 2. You may synchronize read-only without already having a COM identity.
 3. Establish the strongest freshness anchor the route actually gives you; do not call stale-but-coherent content current merely because retrieval succeeded.
-4. To become addressable for future work, follow the [`HELLO` bootstrap](COM_PROTOCOL_WORKING.md#cold-aperture-bootstrap--hello).
+4. To become addressable for future work, follow the [`HELLO` bootstrap](COM_PROTOCOL_WORKING.md#cold-aperture-bootstrap--hello). **Execute the complete minimum-useful `HELLO` envelope defined there; a prose identity/availability summary is not a `HELLO`.** If a required identity field is not knowable, use `UNKNOWN` rather than omitting the field or merging distinct fields.
 5. Do **not** invent a stable role or grant yourself authority. Use `role: UNASSIGNED` and `authority: NONE` unless an explicit existing grant says otherwise.
 6. A `HELLO` records an arrival at one anchor; it is not permanent proof that you remain available.
 7. After introduction, ordinary synchronization uses `COMS`.
@@ -47,7 +58,7 @@ A cold aperture with no writable COM route may still produce a bounded `HELLO` o
 
 | Read | When |
 |---|---|
-| [`COM_STATE.md`](COM_STATE.md) | **Always first.** Current working projection and active work, if any. Verify freshness appropriate to the action. |
+| [`COM_STATE.md`](COM_STATE.md) | Current working projection and active work, if any. On this GitHub carrier, reach it through the fixed head rendezvous -> immutable SHA path above when freshness matters. |
 | [`COM_PROTOCOL_WORKING.md`](COM_PROTOCOL_WORKING.md) | You are introducing a new aperture, about to write a record, take/delegate a task, or mutate something. What to write and do. |
 | [`COM_CORE.md`](COM_CORE.md) | You need to know what an event / route / witness *is*, or why a rule exists. |
 | [`evidence/`](evidence/README.md) | You need to check a specific past probe, failure or correction. |
