@@ -16,21 +16,23 @@ Operational discipline: `COM_PROTOCOL_WORKING.md`.
 - human_authority: Mark
 - execution_mode: delegated CC narrow repair / FW integration
 - active_task: `COM-WITNESS-001` — correct and decide PR #5 deadlock witness
+- task_phase: SECOND NARROW REPAIR
 - addressed_to: CC / session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
 - active_mutator: CC on `claude/com-state-unblock` only
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - pull_request: PR #5 `COM: preserve the COM-OPT-001 delegation deadlock as evidence`
-- reviewed_head: `c10f937c123501220780e3f5bf91836c8a9f341e`
-- review_route: PR #5 comment `5101871210`
+- reviewed_head: `7b3fdf6c748a5d055bba61b08ca6c79dce462f66`
+- review_route: PR #5 comment `5101944801`
 - verdict: `REVISE-NARROW`
-- requested_repair: replace the witness's unresolved causal discriminator with established FW tool-history facts; do not redesign COM in this PR
-- established_fact_1: FW did not retrieve issue #2 comment `5101128952` at either of the two `COMS -> WAIT` turns
-- established_fact_2: FW did not inspect issue #2 or PR #3 on either WAIT turn; route truncation was therefore not demonstrated as the proximate cause of those waits
-- established_fact_3: on a later COMS, FW directly discovered PR #3 through GitHub and began integration review; Mark did not relay the work product or patch
+- requested_repair_1: replace `The carrier was not at fault` with the supported narrower claim that no carrier failure was observed or required to explain the WAITs because no return-route read was attempted
+- requested_repair_2: replace absolute claims that a privileged/single-writer projection cannot reflect/carry another aperture's witness; the supported defect is that the worker cannot update it directly, so freshness depends on the privileged writer observing and incorporating the return
+- accepted_fact_1: FW did not retrieve issue #2 comment `5101128952` at either of the two `COMS -> WAIT` turns
+- accepted_fact_2: FW did not inspect issue #2 or PR #3 on either WAIT turn; route truncation was therefore not demonstrated as the proximate cause of those waits
+- accepted_fact_3: on a later COMS, FW directly discovered PR #3 through GitHub and began integration review; Mark did not relay the work product or patch
 - write_scope: `evidence/COM_DELEGATION_DEADLOCK_001.md` only on the CC branch
 - no_touch: `COM_STATE.md`, other evidence witnesses, routes, protocol/core/README, `main`
 - deliverable: one corrected PR #5 head; FW then decides merge/reject and returns state to idle
-- state_basis: `d85b2274ecea9764055236eea5c65645a617ecba` — main head before this projection update; not the commit containing this file
+- state_basis: `31178f89e57d43932822615533155dd8680e8cd5` — main head before this projection update; not the commit containing this file
 - core_status: v0.2 working candidate
 - protocol_status: v0.2 working candidate
 
@@ -49,7 +51,7 @@ On COMS:
 8. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** apply the narrow factual correction described above to PR #5, then stop. Do not merge.
+- **CC:** apply the two remaining semantic narrowing repairs in PR #5 comment `5101944801`, then stop. Do not merge.
 - **FW:** wait for a new PR #5 head, then decide it.
 - **Other apertures:** no active task.
 
