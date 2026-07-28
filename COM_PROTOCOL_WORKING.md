@@ -129,6 +129,8 @@ freshness: ANCHORED:<basis> | UNKNOWN | DEGRADED
 
 For `UNKNOWN` or `DEGRADED`, do not perform state-dependent mutation from that projection. Report the bounded problem and recover a sufficient anchor or obtain an explicit authority decision that acknowledges the uncertainty.
 
+This rule cannot make a stale carrier fresh merely by existing inside the document the carrier returns. If the route itself cannot expose or verify a sufficient anchor, the aperture remains read-only for state-dependent mutation through that route. It may still contribute bounded review or witness evidence, carrying the route's freshness uncertainty. QW's stale `web_extractor` return therefore remains an open route-level limit; the prose documents the failure but does not close it.
+
 Before projecting `IDLE`, resolve or explicitly carry forward every **known** open return, review, PR, correction, identity conflict, or integration decision on the work surfaces actually inspected for current work, plus older unresolved items already carried in state. `IDLE` is a bounded projection, never proof that no unseen event exists.
 
 ## Cold aperture bootstrap — `HELLO`
@@ -155,10 +157,9 @@ capabilities: <read/write routes and material limits honestly known>
 identity_basis: <support for identity claim, or SELF_CLAIM / UNKNOWN>
 authority: NONE | <explicit pre-existing grant reference>
 reply_route: <where a response can be observed, if available>
-presence: OBSERVED_AT_HELLO
 ```
 
-A `HELLO` is a bounded arrival event: **it does not create a permanent roster entry and does not prove later availability.** If later work depends on reachability, check the relevant route again or use an explicitly bounded reachability/lease mechanism supplied by that route.
+The `HELLO` event plus its `state_seen`/freshness fields are the bounded arrival observation. A `HELLO` **does not create a permanent roster entry and does not prove later availability.** If later work depends on reachability, check the relevant route again or use an explicitly bounded reachability/lease mechanism supplied by that route.
 
 A session ID is an opaque unique identifier for this aperture instance. A UUID is sufficient. Do not reuse a predecessor's session ID.
 
@@ -214,14 +215,16 @@ status
 integration_owner
 ```
 
-For delegated/asynchronous work, `reply_route` and `integration_owner` are required. The worker announces a terminal return on that route even when the work product itself lives somewhere else. **An artifact existing is not the same event as the worker returning it.**
-
-When work can remain open across synchronization boundaries, add bounded observation control:
+For delegated/asynchronous work, the control envelope additionally **must** state:
 
 ```text
 observation_owner: <who must inspect the return/status route>
 next_check: <time | state/event trigger | MANUAL>
 ```
+
+For delegated/asynchronous work, `reply_route`, `integration_owner`, `observation_owner`, and `next_check` are required. The worker announces a terminal return on the declared route even when the work product itself lives somewhere else. **An artifact existing is not the same event as the worker returning it.**
+
+Synchronous work may omit `observation_owner` and `next_check` when no work can remain silently open across a synchronization boundary.
 
 `MANUAL` is allowed when no scheduler is available, but it makes **no autonomous-liveness claim**. COM records responsibility and the expected observation boundary; it does not itself wake an aperture.
 
