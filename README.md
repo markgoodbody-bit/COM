@@ -10,18 +10,24 @@ It is a working experiment, not a truth oracle, consensus system, or universal t
 
 `COMS` means: **synchronize from this surface before relying on conversational assumptions.**
 
-**When `COMS` is received as an instruction, execute synchronization. Do not substitute an explanation or summary of COM/COMS for the operation.** Read `COM_STATE.md` before concluding whether work is addressed to you.
+**When `COMS` is received as an instruction, execute synchronization. Do not substitute an explanation or summary of COM/COMS for the operation.** Read sufficiently anchored `COM_STATE.md` before concluding whether work is addressed to you.
 
-For this GitHub carrier, the tested cold rendezvous path is:
+For a GitHub-hosted COM repository, the tested rendezvous pattern is:
 
 ```text
-https://api.github.com/repos/markgoodbody-bit/COM/commits/main
+https://api.github.com/repos/<owner>/<repo>/commits/main
         -> read returned top-level sha
-        -> https://github.com/markgoodbody-bit/COM/blob/<sha>/COM_STATE.md
+        -> https://github.com/<owner>/<repo>/blob/<sha>/COM_STATE.md
         -> COMS from that immutable state object
 ```
 
+For this repository, `<owner>/<repo>` is `markgoodbody-bit/COM`. Derive those coordinates from the repository you were actually sent to. A fork or mirror must use its own owner/repository coordinates rather than silently rendezvousing with the upstream project.
+
 The fixed API URL is a rendezvous pointer, not timeless proof of freshness. The returned SHA anchors the state object observed at that execution boundary. If this route cannot expose a usable head/object identity, report bounded `UNKNOWN`/`DEGRADED`; do not silently fall back to the mutable repository root and call it current.
+
+The rendezvous instruction cannot repair a carrier that has already served a stale copy of this README. The tested operational launch surface is therefore the fixed rendezvous pointer itself, or another route that can establish current guidance. A launch that begins only from a stale mutable-root rendering remains an unresolved carrier-level limit.
+
+GitHub REST access can itself be unavailable or rate-limited. Treat a rate-limit/access failure as route unavailability, not evidence that the repository or task is absent: report bounded `UNKNOWN`/`DEGRADED` and stop affected state-dependent action unless another independently established anchor is available.
 
 Read current state, establish the strongest honest freshness anchor your route exposes, establish identity honestly, act only on work addressed to you and within explicit authority, and stop safely when freshness or retrieval is insufficient or contradictory.
 
@@ -40,11 +46,11 @@ task: <task_id | NONE | NOT_ESTABLISHED>
 action: <performed action | bounded stop reason>
 ```
 
-`task: NONE` is a conclusion from sufficiently anchored `COM_STATE.md`, not a default from the README. If an addressed task exists, follow its control envelope rather than merely describing it.
+`task: NONE` is a conclusion from sufficiently anchored `COM_STATE.md`, not a default from the README. `task: NOT_ESTABLISHED` means synchronization did not reach sufficiently anchored state to determine whether an addressed task exists; it proves neither task presence nor task absence. If an addressed task exists, follow its control envelope rather than merely describing it.
 
 ## First time here?
 
-1. On this GitHub carrier, resolve the current `main` SHA through the fixed commits API above, then read `COM_STATE.md` at that exact immutable SHA. If that route is unavailable or cannot be anchored, report the bounded freshness failure rather than treating repository-root rendering as current.
+1. On a GitHub-hosted COM repository, resolve the current `main` SHA through the fixed commits API pattern above, then read `COM_STATE.md` at that exact immutable SHA. If that route is unavailable or cannot be anchored, report the bounded freshness failure rather than treating repository-root rendering as current.
 2. You may synchronize read-only without already having a COM identity.
 3. Establish the strongest freshness anchor the route actually gives you; do not call stale-but-coherent content current merely because retrieval succeeded.
 4. To become addressable for future work, follow the [`HELLO` bootstrap](COM_PROTOCOL_WORKING.md#cold-aperture-bootstrap--hello). **Execute the complete minimum-useful `HELLO` envelope defined there; a prose identity/availability summary is not a `HELLO`.** If a required identity field is not knowable, use `UNKNOWN` rather than omitting the field or merging distinct fields.
@@ -58,7 +64,7 @@ A cold aperture with no writable COM route may still produce a bounded `HELLO` o
 
 | Read | When |
 |---|---|
-| [`COM_STATE.md`](COM_STATE.md) | Current working projection and active work, if any. On this GitHub carrier, reach it through the fixed head rendezvous -> immutable SHA path above when freshness matters. |
+| [`COM_STATE.md`](COM_STATE.md) | Current working projection and active work, if any. On a GitHub-hosted COM repository, reach it through the fixed head rendezvous -> immutable SHA path above when freshness matters. |
 | [`COM_PROTOCOL_WORKING.md`](COM_PROTOCOL_WORKING.md) | You are introducing a new aperture, about to write a record, take/delegate a task, or mutate something. What to write and do. |
 | [`COM_CORE.md`](COM_CORE.md) | You need to know what an event / route / witness *is*, or why a rule exists. |
 | [`evidence/`](evidence/README.md) | You need to check a specific past probe, failure or correction. |
