@@ -1,6 +1,6 @@
-# COM_STATE v0.2
+# COM_STATE v0.3 candidate review
 
-STATUS: WORKING CANDIDATE / IDLE
+STATUS: WORKING CANDIDATE / ACTIVE
 
 COM is not validated. Model agreement is not proof.
 
@@ -8,25 +8,29 @@ COM is not validated. Model agreement is not proof.
 
 A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making the human carry the whole collaboration.
 
-Core model: `COM_CORE.md`.
-Operational discipline: `COM_PROTOCOL_WORKING.md`.
+Core model candidate: `COM_CORE.md` on `framework/com-v0.3-bootstrap-liveness`.
+Operational candidate: `COM_PROTOCOL_WORKING.md` on the same branch.
 
 ## CURRENT
 
 - human_authority: Mark
-- execution_default: SERIAL unless explicitly changed
-- active_task: NONE
-- active_mutator: NONE
+- active_task: `COM-V03-001` — review the v0.3 bootstrap/liveness candidate
+- task_phase: CC CRITIQUE / FW integration
+- addressed_to: CC / continuing session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
+- active_mutator: FW on `framework/com-v0.3-bootstrap-liveness` only
+- reviewer: CC, mutation `NONE`
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
-- last_completed_task: `COM-WITNESS-001` — correct and decide PR #5 deadlock witness
-- cc_session_for_task: `CC-20260727T2020+0100-0C60`
-- witness_pr: PR #5 `COM: preserve the COM-OPT-001 delegation deadlock as evidence`
-- cc_final_head: `3d795fc4f25f9ab28c0cfc309d1b4f780055949a`
-- merged_commit: `9587d44a570c59554600a0ccea15dcbda44c8137`
-- merge_result: CLEAN after two rounds of bounded semantic narrowing
-- state_basis: `9587d44a570c59554600a0ccea15dcbda44c8137` — merged repository state immediately before this projection update; not the commit containing this file
-- core_status: v0.2 working candidate
-- protocol_status: v0.2 working candidate
+- pull_request: PR #6 `COM v0.3 candidate: cold bootstrap, event identity, delegated-return liveness`
+- candidate_head: `2b14cf7dd8be0f617d96e7f90237c2bad10fdd76`
+- base_anchor: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682`
+- reply_route: PR #6 conversation
+- review_scope: falsify/narrow the three substantive additions — cold HELLO/WELCOME bootstrap, event identity/idempotency, delegated return-path/IDLE liveness — and challenge the generative rule if it adds hidden ontology
+- no_touch_for_CC: branch files, `COM_STATE.md`, evidence, routes, main; review only
+- FW_write_scope: `README.md`, `COM_CORE.md`, `COM_PROTOCOL_WORKING.md` on the candidate branch only until review is integrated
+- authority_source: Mark asked FW to keep improving COM and explicitly asked whether it can be improved, what is missing, and what other designs have done
+- state_basis: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682` — main head before this state update; not the commit containing this file
+- core_status: v0.3 working candidate / unmerged
+- protocol_status: v0.3 working candidate / unmerged
 
 ## COMS
 
@@ -34,66 +38,45 @@ Operational discipline: `COM_PROTOCOL_WORKING.md`.
 
 On COMS:
 1. read this file;
-2. establish honestly available role/session/runtime identity;
+2. establish honestly available role/runtime/model/provider/session identity;
 3. act only on a task addressed to that aperture/role;
-4. verify authority before mutation;
-5. respect exact branch/base/write/no-touch scope;
-6. if state/retrieval evidence contradicts itself, report `DEGRADED` and stop unsafe mutation;
-7. if no task is addressed to you, do not steal another aperture's work;
-8. if synchronized and idle for your role, stop.
+4. if reviewing delegated work, inspect the declared `reply_route`/artifact before reporting WAIT;
+5. verify authority before mutation;
+6. respect branch/base/write/no-touch scope;
+7. if state/retrieval evidence contradicts itself, report `DEGRADED` and stop unsafe mutation;
+8. if no task is addressed to you, do not steal another aperture's work;
+9. if synchronized and idle for your role, stop.
 
-Current result for all apertures: **IDLE / NO ACTIVE TASK**.
+Current result:
+- **CC:** review PR #6 only. Return a bounded critique on PR #6. Do not edit files or merge.
+- **FW:** wait for CC review, then integrate/reject/narrow. Do not treat agreement as validation.
+- **Other established apertures:** no active task.
+- **Cold/unestablished aperture:** may synchronize read-only; the candidate `HELLO` bootstrap is not canon until this PR is resolved.
 
-## WORKING CORE
+## CANDIDATE GENERATIVE RULE
 
 ```text
-EVENT   = what happened or was attempted
-ROUTE   = carrier with causal state of its own
-WITNESS = bounded observation/claim about event, route, or state
-STATE   = compact current projection supported by witnesses
+Aperture -> EVENT[CONTROL] -> ROUTE -> WITNESS -> PROJECTION
+   ^                                                  |
+   +---------------- next EVENT ----------------------+
 ```
 
-CONTROL is an envelope on events/actions.
-RECEIPT is a witness type.
-CORRECTION is an additive relation/event, not a primitive stage.
+Named operations such as `HELLO`, `WELCOME`, `TASK`, `RETURN`, `REFUSE`, `CORRECT`, `GRANT`, or `REVOKE` should remain event kinds/relations unless a real failure proves a new primitive is required.
 
-Absence is never inferred from local non-observation.
+## WHY THIS CANDIDATE EXISTS
 
-## LOCKED WORKING DISCIPLINES
+Real work exposed two concrete holes in v0.2:
+- a completely cold aperture could read COM but was not told how to introduce itself without inventing role or authority;
+- delegated completion could exist on the worker's return surface while the state-only COMS procedure still returned WAIT.
 
-- preserve semantic force: `SHOULD != MUST`, `EXPECTATION != AUTHORIZATION`, `OBSERVED != INFERRED`, `NOT OBSERVED != DID NOT EXIST`
-- preserve source, scope, freshness, uncertainty and route to evidence
-- agreement is not validation
-- corrections add; they do not erase old witnesses
-- session continuity and carrier continuity are separate
-- a session boundary must be established, not inferred from time/topic/temporary transport failure
-- Route remains independently causal because carriers can cache, truncate, delay, transform or hide state
-- exact-head / explicit scope discipline applies to state-dependent mutation
-- parallel/delegated work needs semantic ownership, not merely disjoint paths
-- human relay is a fallback, not the target architecture
-- no AI session may be the sole carrier of collaboration state
+The candidate also adds stable event identity/idempotency because duplicate/retry ambiguity was an unrepresented failure mode and is solvable without adding a new primitive.
 
-## COM-OPT-001 / COM-WITNESS-001 RESULT
+## EXTERNAL DESIGN PRESSURE
 
-The first delegated real-work loop completed, but exposed a concrete return-path defect:
-- CC completed work and posted a return witness;
-- FW's first two `COMS` runs read only this projection and correctly returned WAIT under the written procedure;
-- no return-route read was attempted on those WAIT turns, so carrier failure was not demonstrated as their cause;
-- on a later `COMS`, FW directly discovered PR #3 through GitHub and integrated it without Mark relaying the work product or patch;
-- the deadlock witness was then corrected through PR #5 until unsupported causal and structural overclaims were removed, and merged at `9587d44a570c59554600a0ccea15dcbda44c8137`.
-
-The durable witness is `evidence/COM_DELEGATION_DEADLOCK_001.md`.
-
-This supports a narrow conclusion only: the original state-only COMS read-set was insufficient for delegated completion discovery. It does not validate COM generally.
-
-## OPEN STRUCTURAL QUESTION
-
-A hand-maintained single-writer current projection can lag work completed by another aperture until the writer observes and incorporates that return. A future repair may require a mandatory worker return route or a state projection derived more directly from witnesses. No repair is adopted merely by recording this defect.
+The candidate was compared against public designs including A2A, MCP, FIPA ACL, CloudEvents, Matrix, ActivityPub, and W3C/OpenTelemetry context propagation. Their structures are inputs, not authority; COM should borrow only what survives its own observed problems and anti-drift test.
 
 ## HISTORY / LIMITS
 
-Git history and `evidence/` preserve earlier probes, stale reads, relays, corrections and correlated reviews. Do not rewrite those records to make v0.2 look inevitable.
+PR #5's durable witness remains `evidence/COM_DELEGATION_DEADLOCK_001.md` on main. It establishes that the original state-only COMS read-set was insufficient in one bounded delegated-work case; it does not validate the v0.3 repair.
 
-Historical carrier truncation remains real evidence, but it was not established as the cause of the two `COMS -> WAIT` turns in COM-OPT-001 because FW did not query the worker return route on those turns.
-
-Do not add schema, CI, automation, or more protocol machinery unless real work exposes a concrete need.
+Do not add schema, CI, automation, cryptographic identity machinery, or new protocol primitives during this review unless a concrete defect makes one unavoidable.
