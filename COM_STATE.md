@@ -14,58 +14,58 @@ Integrated COMS front-door repair: PR #8 merged at `5219ca2df18213289948935ecc4b
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V031-QW-002` — immutable-anchor COMS + HELLO test
-- addressed_to: cold/unestablished aperture invoked by Mark as QW / user-described Qwen 3.8; runtime/model/provider remain SELF_CLAIM unless independently established
-- execution_mode: QW READ/RETURN TEST / FW integration
+- active_task: `COM-V031-QW-003` — rendezvous route probe
+- addressed_to: QW aperture / fresh session for this probe; runtime/model/provider remain SELF_CLAIM unless independently established
+- execution_mode: QW READ/RETURN ROUTE PROBE / FW integration
 - repository_mutation_for_QW: NONE
-- task_route: issue #10 `COM v0.3.1 · QW immutable-anchor COMS/HELLO test`
-- reply_route: issue #10, or explicit Mark→FW→GitHub relay if no writable GitHub route exists
+- task_route: issue #11 `COM v0.3.1 · rendezvous route probe`
+- reply_route: issue #11, or explicit Mark→FW→GitHub relay if QW has no writable GitHub route
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - next_check: MANUAL
 - authority_source: Mark instructed FW to keep improving COM and use QW without waiting for CC
-- state_basis: `d53cce1087d05148bbf2a826421dfb79855950c7` — main before this state-projection update; not the commit containing this file
+- state_basis: `d60e64df42b2e9edd0191f16e42ecbf3f8bea2f6` — main before this projection update; not the commit containing this file
 - core_status: v0.3 integrated working candidate
 - protocol_status: v0.3.1 front-door repair integrated working candidate
 
-## QW COLD TEST HISTORY
+## IMMUTABLE BOOTSTRAP RESULT — `COM-V031-QW-002`
 
-`COM-V03-QW-001`: returned coherent historical v0.1 state through a stale route; HELLO was not reached.
+COMS + task discovery + HELLO succeeded when QW entered through immutable `COM_STATE.md @ d60e64df42b2e9edd0191f16e42ecbf3f8bea2f6`.
 
-`COM-V03-QW-002`: surfaced current-v0.3 concepts but substituted an explanation of COMS for execution; did not establish freshness, discover the addressed task, emit HELLO, or stop `UNKNOWN`/`DEGRADED`.
+Preserved on issue #10:
+- QW return relay comment `5103644884`;
+- FW WELCOME comment `5103647861`;
+- issue #10 closed completed.
 
-`COM-V031-QW-001`: after v0.3.1 integration, QW again received the historical v0.1/issue #1 world from mutable repository-root retrieval and executed that old task coherently. The Mark→FW→GitHub relay is preserved on issue #9 comment `5103540087`. Issue #9 is closed as a completed test with result **STALE CARRIER REPLAY / FRESHNESS FAILURE BEFORE v0.3.1 COMS EXECUTION**.
+Observed:
+- QW reported `freshness: ANCHORED:d60e64df42b2e9edd0191f16e42ecbf3f8bea2f6`;
+- QW discovered `COM-V031-QW-002`;
+- QW emitted HELLO `QW-HELLO-1b409699e2de` with `role: UNASSIGNED`, `authority: NONE`, fresh session `QW-7f050b6dc575`;
+- FW observed the relayed HELLO and WELCOME'd it without granting role or authority;
+- QW separately observed the mutable repository root still rendering historical v0.1-era material during the same session.
 
-This third result does **not** establish that the v0.3.1 execution repair failed, because QW did not observe the v0.3.1 surface. It reconfirms the route-level limit: prose inside a stale carrier cannot make that carrier current.
+Classification: **ANCHORED COMS + TASK DISCOVERY + HELLO SUCCESS ON IMMUTABLE CARRIER**. This is behavioral evidence, not validation. It does not solve mutable rendezvous.
 
-## ACTIVE TEST — `COM-V031-QW-002`
+## ACTIVE TEST — `COM-V031-QW-003`
 
-Purpose: separate two variables that the mutable-root test conflated:
+Purpose: identify whether any stable public route can recover a current immutable state anchor without Mark carrying the changing commit SHA.
 
-1. COMS/HELLO behavior once the state object is fixed and identifiable;
-2. mutable-route freshness / rendezvous.
+Launch discipline:
+1. enter this active task through the immutable `COM_STATE.md` URL supplied by Mark;
+2. inspect issue #11;
+3. probe only the candidate routes named there;
+4. report retrieval, state/version seen, exposed commit/object identity, anchor adequacy, discrepancies and access limits;
+5. do not infer causes of stale results;
+6. do not mutate or redesign COM.
 
-Cold-path procedure:
-1. enter from an immutable `COM_STATE.md` URL pinned to the commit containing this active task, supplied in the launch trigger;
-2. execute literal `COMS`; do not explain COMS;
-3. report the immutable object/commit actually observed as `state_seen`;
-4. determine the addressed task from this state and return `state_seen`, `freshness`, `identity`, `task`, `action`;
-5. if the immutable object cannot be retrieved or tied to the supplied object/commit identity, report bounded `UNKNOWN`/`DEGRADED` and stop;
-6. if this task is discovered, follow the integrated cold-aperture `HELLO` rule;
-7. default `role: UNASSIGNED`, `authority: NONE`; do not inherit prior QW role/session;
-8. if no writable GitHub route exists, return on the available user transport for explicit human relay;
-9. no repository mutation and no redesign for elegance.
-
-The immutable state object is a frozen task carrier for this test. It is **not** claimed to remain globally current after later commits.
-
-Success is not agreement. Useful outcomes include anchored COMS+HELLO, honest bounded stop, or a new concrete failure mode.
+Candidate routes are defined in issue #11. The result should classify each as `USABLE RENDEZVOUS CANDIDATE`, `NO USABLE CANDIDATE`, or `DEGRADED/INCONCLUSIVE`.
 
 ## COMS
 
 `COMS` means synchronize from this shared surface before relying on conversational assumptions.
 
 On COMS:
-1. retrieve the intended state object and establish the strongest honest freshness/identity anchor available;
+1. retrieve this state and establish the strongest honest freshness anchor available;
 2. establish role/runtime/model/provider/session honestly;
 3. determine addressed task from sufficiently anchored state rather than defaulting to `NONE`;
 4. verify authority before any write;
@@ -75,18 +75,16 @@ On COMS:
 8. if synchronized and idle for your role, stop.
 
 Current result:
-- **QW cold test:** perform `COM-V031-QW-002`; no repository mutation; return on issue #10 if writable, otherwise through explicitly marked human relay.
-- **FW:** observation/integration owner; inspect issue #10 and any Mark-relayed return at the next manual check.
+- **QW:** perform `COM-V031-QW-003`; no repository mutation; return on issue #11 if writable, otherwise through explicit human relay.
+- **FW:** observation/integration owner; inspect issue #11 and any Mark-relayed return at the next manual check.
 - **CC:** no active task. Temporary capacity unavailability does not by itself create a new session.
 - **Other apertures:** no active task.
 
 ## KNOWN LIMITS / OPEN PROOF
 
-- A genuine cold HELLO has not yet succeeded.
-- Mutable repository-root retrieval has returned coherent historical state to QW more than once.
-- A stale carrier cannot be repaired by prose inside the stale carrier.
-- The v0.3.1 COMS execution repair has not yet been isolated from the stale mutable-root route.
-- A future launcher/rendezvous mechanism may need to carry an immutable expected anchor or use a route capable of proving current object identity; this is an engineering hypothesis, not yet a new protocol primitive.
+- Mutable repository-root retrieval has repeatedly returned coherent historical state to QW.
+- Immutable COM_STATE bootstrap has succeeded once with QW.
+- A stable mutable rendezvous route that exposes a trustworthy current immutable anchor has not yet been established.
 - `observation_owner + next_check` has not yet completed a full asynchronous proof loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
 
