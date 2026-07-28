@@ -15,30 +15,39 @@ Operational candidate: `COM_PROTOCOL_WORKING.md` on the same branch.
 
 - human_authority: Mark
 - active_work: `COM-V03-001` — pressure-test the v0.3 bootstrap/liveness candidate
-- execution_mode: PARALLEL READ-ONLY REVIEW / FW sole mutation
-- active_mutator: FW on `framework/com-v0.3-bootstrap-liveness` only
+- execution_mode: PARALLEL READ-ONLY REVIEW / FW sole semantic mutation
+- candidate_mutator: FW on `framework/com-v0.3-bootstrap-liveness` only
+- state_projection_writer: FW on `COM_STATE.md` only
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - pull_request: PR #6 `COM v0.3 candidate: cold bootstrap, event identity, delegated-return liveness`
 - candidate_head: `2b14cf7dd8be0f617d96e7f90237c2bad10fdd76`
 - base_anchor: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682`
 - shared_reply_route: PR #6 conversation
 - authority_source: Mark explicitly authorized FW to proceed using CC and QW/Qwen 3.8
-- state_basis: `f01aee2c7aef35c22d7ad99d02f67cd76aa78682` — candidate base before this review-state update; not the commit containing this file
+- state_basis: `ee14a76a9759d1b45e4fc7ffbfb791358e63e624` — main state-projection commit before this update; not the commit containing this file
 - core_status: v0.3 working candidate / unmerged
 - protocol_status: v0.3 working candidate / unmerged
 
-### Review lane A — CC hostile review
+### Review lane A — CC hostile review — RETURNED
 
 - task_id: `COM-V03-CC-001`
-- addressed_to: CC / continuing session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
+- reviewer: CC / session `CC-20260727T2020+0100-0C60`
 - mutation: NONE
-- task: falsify/narrow the candidate additions: cold HELLO/WELCOME bootstrap, event identity/idempotency, delegated return-path/IDLE liveness; challenge the generative rule if it smuggles hidden ontology or unnecessary machinery
-- read_scope: PR #6, candidate branch, current main state, relevant existing evidence only when needed
-- no_touch: all files/branches/main/evidence/routes
-- reply_route: PR #6 conversation
-- deliverable: bounded critique with BREAK / NARROW / RETAIN findings and exact defect locations; no redesign for elegance
+- return: PR #6 comment `5102333896`
+- reviewed_head: `2b14cf7dd8be0f617d96e7f90237c2bad10fdd76`
+- verdict: REVISE / NOT_VERIFIED / reviewer_condition CORRELATED
+- material_findings:
+  - BREAK: generative rule wrongly put PROJECTION on every causal path; repo history supports WITNESS -> EVENT with PROJECTION as a possible derived branch/update
+  - NARROW: candidate improves return discoverability, not autonomous liveness; no synchronization trigger/deadline/expiry exists
+  - BREAK/NARROW: HELLO `AVAILABLE` can become stale without a validity bound
+  - NARROW: event identity needs an explicit unknown/lost-identity case across relays that cannot preserve event_id
+  - NARROW: identity conflict needs an owner/decision path rather than merely `do not silently resolve`
+  - NARROW: IDLE sweep scope and known/unseen limitation should remain explicit
+  - NARROW: EVENT and WITNESS definitions must remain relational, not an overlapping partition
+  - housekeeping: one authoritative anti-drift home, avoid section-number citations, restore trailing newlines
+- FW disposition: ACCEPT AS PRESSURE, DO NOT PATCH YET; wait for QW cold result and integrate both together
 
-### Review lane B — QW cold-aperture test
+### Review lane B — QW cold-aperture test — OUTSTANDING
 
 - task_id: `COM-V03-QW-001`
 - target_test_aperture: QW / user-described Qwen 3.8; runtime/model/provider claims remain SELF_CLAIM unless independently established
@@ -69,12 +78,14 @@ On COMS:
 9. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** perform `COM-V03-CC-001`; review only; return on PR #6.
-- **QW cold test:** perform `COM-V03-QW-001`; do not inherit old QW identity by assumption; use candidate HELLO if possible; return on PR #6.
-- **FW:** do not mutate the candidate while the two independent reviews are in flight unless a safety/factual correction is necessary; then integrate disagreement after both returns or an explicit bounded failure/non-return.
+- **CC:** review returned; stop unless FW explicitly asks a bounded follow-up.
+- **QW cold test:** complete `COM-V03-QW-001`; return on PR #6.
+- **FW:** hold candidate mutation until QW returns or a bounded non-return/failure is established; then integrate both reviews.
 - **Other apertures:** no active task.
 
-## CANDIDATE GENERATIVE RULE
+## CANDIDATE GENERATIVE RULE — UNDER CHALLENGE
+
+Current candidate text:
 
 ```text
 Aperture -> EVENT[CONTROL] -> ROUTE -> WITNESS -> PROJECTION
@@ -82,7 +93,7 @@ Aperture -> EVENT[CONTROL] -> ROUTE -> WITNESS -> PROJECTION
    +---------------- next EVENT ----------------------+
 ```
 
-Named operations such as `HELLO`, `WELCOME`, `TASK`, `RETURN`, `REFUSE`, `CORRECT`, `GRANT`, or `REVOKE` should remain event kinds/relations unless a real failure proves a new primitive is required.
+CC has produced evidence-backed pressure that `PROJECTION` is not a mandatory hop. No replacement is adopted until integration after the cold test.
 
 ## WHY THIS CANDIDATE EXISTS
 
