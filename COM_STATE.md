@@ -1,6 +1,6 @@
 # COM_STATE v0.2
 
-STATUS: WORKING CANDIDATE / ACTIVE
+STATUS: WORKING CANDIDATE / IDLE
 
 COM is not validated. Model agreement is not proof.
 
@@ -14,25 +14,17 @@ Operational discipline: `COM_PROTOCOL_WORKING.md`.
 ## CURRENT
 
 - human_authority: Mark
-- execution_mode: delegated CC narrow repair / FW integration
-- active_task: `COM-WITNESS-001` — correct and decide PR #5 deadlock witness
-- task_phase: SECOND NARROW REPAIR
-- addressed_to: CC / session `CC-20260727T2020+0100-0C60` if still active; otherwise a fresh CC session must identify itself honestly
-- active_mutator: CC on `claude/com-state-unblock` only
+- execution_default: SERIAL unless explicitly changed
+- active_task: NONE
+- active_mutator: NONE
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
-- pull_request: PR #5 `COM: preserve the COM-OPT-001 delegation deadlock as evidence`
-- reviewed_head: `7b3fdf6c748a5d055bba61b08ca6c79dce462f66`
-- review_route: PR #5 comment `5101944801`
-- verdict: `REVISE-NARROW`
-- requested_repair_1: replace `The carrier was not at fault` with the supported narrower claim that no carrier failure was observed or required to explain the WAITs because no return-route read was attempted
-- requested_repair_2: replace absolute claims that a privileged/single-writer projection cannot reflect/carry another aperture's witness; the supported defect is that the worker cannot update it directly, so freshness depends on the privileged writer observing and incorporating the return
-- accepted_fact_1: FW did not retrieve issue #2 comment `5101128952` at either of the two `COMS -> WAIT` turns
-- accepted_fact_2: FW did not inspect issue #2 or PR #3 on either WAIT turn; route truncation was therefore not demonstrated as the proximate cause of those waits
-- accepted_fact_3: on a later COMS, FW directly discovered PR #3 through GitHub and began integration review; Mark did not relay the work product or patch
-- write_scope: `evidence/COM_DELEGATION_DEADLOCK_001.md` only on the CC branch
-- no_touch: `COM_STATE.md`, other evidence witnesses, routes, protocol/core/README, `main`
-- deliverable: one corrected PR #5 head; FW then decides merge/reject and returns state to idle
-- state_basis: `31178f89e57d43932822615533155dd8680e8cd5` — main head before this projection update; not the commit containing this file
+- last_completed_task: `COM-WITNESS-001` — correct and decide PR #5 deadlock witness
+- cc_session_for_task: `CC-20260727T2020+0100-0C60`
+- witness_pr: PR #5 `COM: preserve the COM-OPT-001 delegation deadlock as evidence`
+- cc_final_head: `3d795fc4f25f9ab28c0cfc309d1b4f780055949a`
+- merged_commit: `9587d44a570c59554600a0ccea15dcbda44c8137`
+- merge_result: CLEAN after two rounds of bounded semantic narrowing
+- state_basis: `9587d44a570c59554600a0ccea15dcbda44c8137` — merged repository state immediately before this projection update; not the commit containing this file
 - core_status: v0.2 working candidate
 - protocol_status: v0.2 working candidate
 
@@ -50,10 +42,7 @@ On COMS:
 7. if no task is addressed to you, do not steal another aperture's work;
 8. if synchronized and idle for your role, stop.
 
-Current result:
-- **CC:** apply the two remaining semantic narrowing repairs in PR #5 comment `5101944801`, then stop. Do not merge.
-- **FW:** wait for a new PR #5 head, then decide it.
-- **Other apertures:** no active task.
+Current result for all apertures: **IDLE / NO ACTIVE TASK**.
 
 ## WORKING CORE
 
@@ -84,26 +73,27 @@ Absence is never inferred from local non-observation.
 - human relay is a fallback, not the target architecture
 - no AI session may be the sole carrier of collaboration state
 
-## LIVE DEFECT NOW EXPOSED
+## COM-OPT-001 / COM-WITNESS-001 RESULT
 
-The prior projection said `IDLE / NO ACTIVE TASK` while PR #5 was open, mergeable and undecided. That projection was incomplete.
+The first delegated real-work loop completed, but exposed a concrete return-path defect:
+- CC completed work and posted a return witness;
+- FW's first two `COMS` runs read only this projection and correctly returned WAIT under the written procedure;
+- no return-route read was attempted on those WAIT turns, so carrier failure was not demonstrated as their cause;
+- on a later `COMS`, FW directly discovered PR #3 through GitHub and integrated it without Mark relaying the work product or patch;
+- the deadlock witness was then corrected through PR #5 until unsupported causal and structural overclaims were removed, and merged at `9587d44a570c59554600a0ccea15dcbda44c8137`.
 
-This state update repairs the live projection. It does **not** by itself repair the underlying structural issue: a hand-maintained current-state projection can omit new work/witnesses created outside its writer's observation path.
+The durable witness is `evidence/COM_DELEGATION_DEADLOCK_001.md`.
 
-## COM-OPT-001 RESULT, CORRECTED
+This supports a narrow conclusion only: the original state-only COMS read-set was insufficient for delegated completion discovery. It does not validate COM generally.
 
-`COM-OPT-001` completed, but the first delegation-return loop did not close cleanly through the original state-only COMS procedure:
-- CC opened PR #3 and posted a work-return witness;
-- FW ran COMS twice, read the current state only, and correctly returned WAIT under the written procedure;
-- on a later COMS, FW expanded direct GitHub inspection, discovered PR #3, reviewed it, routed narrow repairs, and ultimately merged it;
-- Mark did not shuttle the work product or patch between apertures.
+## OPEN STRUCTURAL QUESTION
 
-So the bounded workflow eventually reduced human relay burden, while simultaneously exposing a state/return-route defect. Both facts stand. Neither validates COM generally.
+A hand-maintained single-writer current projection can lag work completed by another aperture until the writer observes and incorporates that return. A future repair may require a mandatory worker return route or a state projection derived more directly from witnesses. No repair is adopted merely by recording this defect.
 
 ## HISTORY / LIMITS
 
 Git history and `evidence/` preserve earlier probes, stale reads, relays, corrections and correlated reviews. Do not rewrite those records to make v0.2 look inevitable.
 
-Historical carrier truncation remains real evidence, but it is not established as the cause of the two `COMS -> WAIT` turns in COM-OPT-001 because FW did not query the worker return route on those turns.
+Historical carrier truncation remains real evidence, but it was not established as the cause of the two `COMS -> WAIT` turns in COM-OPT-001 because FW did not query the worker return route on those turns.
 
 Do not add schema, CI, automation, or more protocol machinery unless real work exposes a concrete need.
