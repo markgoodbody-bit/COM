@@ -1,4 +1,4 @@
-# COM protocol v0.3 working candidate
+# COM protocol v0.3.2 working candidate
 
 Status: working candidate. Not canon, not validated.
 
@@ -195,6 +195,21 @@ If the cold aperture has no writable COM route, it may emit its `HELLO` through 
 9. if retrieval/freshness evidence contradicts itself, report `DEGRADED` with bounded evidence and stop affected mutation;
 10. if no task is addressed here, do not take another aperture's task;
 11. if synchronized and idle, stop.
+
+When `COMS` is explicitly invoked, completion must be externally auditable from the return. Emit this bounded result before optional commentary:
+
+```text
+COMS
+state_seen: <carrier/object anchor or UNKNOWN>
+freshness: ANCHORED:<basis> | UNKNOWN | DEGRADED
+identity: <role/session and known runtime/model/provider basis>
+task: <task_id | NONE | NOT_ESTABLISHED>
+action: <performed action | bounded stop reason>
+```
+
+`task: NONE` means sufficiently anchored state was reached and showed no task addressed to this aperture or role. `task: NOT_ESTABLISHED` means synchronization did not reach sufficiently anchored state to determine whether an addressed task exists; it proves neither presence nor absence.
+
+A correct explanation of COM or COMS is not evidence that synchronization occurred. If the return does not expose the bounded result above, COMS completion is **not established from that return**, even if its prose accurately describes the protocol. This completion result does not replace a required `HELLO`, task return, or other event.
 
 Normal `COMS` should be cheap. It is a synchronization operation, not an instruction to generate protocol commentary.
 
