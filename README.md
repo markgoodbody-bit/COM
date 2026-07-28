@@ -35,7 +35,7 @@ No hidden context is implied. Do not infer authority, history, identity, permiss
 
 A mutable label such as `main`, `latest`, or a successful repository URL fetch is **navigation, not freshness proof**. If your route cannot establish enough object/head identity for the action you are about to take, report freshness as `UNKNOWN` and remain read-only for state-dependent work.
 
-A minimal auditable COMS return is:
+[`COM_PROTOCOL_WORKING.md`](COM_PROTOCOL_WORKING.md#coms) is the normative home of COMS completion. Its compact required result is:
 
 ```text
 COMS
@@ -46,7 +46,7 @@ task: <task_id | NONE | NOT_ESTABLISHED>
 action: <performed action | bounded stop reason>
 ```
 
-`task: NONE` is a conclusion from sufficiently anchored `COM_STATE.md`, not a default from the README. `task: NOT_ESTABLISHED` means synchronization did not reach sufficiently anchored state to determine whether an addressed task exists; it proves neither task presence nor task absence. If an addressed task exists, follow its control envelope rather than merely describing it.
+For an explicitly invoked `COMS`, explanation without that bounded result does not establish that synchronization occurred. `task: NONE` means sufficiently anchored state was reached and showed no addressed task. `task: NOT_ESTABLISHED` means synchronization did not reach sufficiently anchored state to determine whether an addressed task exists; it proves neither task presence nor task absence. If an addressed task exists, follow its control envelope rather than merely describing it.
 
 ## First time here?
 
