@@ -1,16 +1,18 @@
 # COM core v0.2 working candidate
 
-Status: working candidate. Not canon, not validated, and not a claim of universal communication theory.
+Status: working candidate. Not canon, not validated, not a claim of universal communication theory.
+
+**This file explains what COM's objects are and why they exist.** For what to write and do, see [`COM_PROTOCOL_WORKING.md`](COM_PROTOCOL_WORKING.md). Normative detail for a rule should have one authoritative home across the two files; the other may summarize it and point back.
 
 ## What COM is for
 
 COM is a small shared coordination field for independent human and AI apertures working under uncertainty.
 
-Its practical test is simple:
+Its practical test:
 
 > Can a participant arrive with little or no conversational context, recover enough current state to act safely, preserve disagreement and provenance, and continue without making the human carry the whole collaboration?
 
-COM should reduce coordination burden. If the protocol itself becomes the work, or makes the human a permanent relay, it is failing its purpose.
+COM should reduce coordination burden. If the protocol becomes the work, or makes the human a permanent relay, it is failing.
 
 ## The smallest causal model
 
@@ -22,221 +24,114 @@ Aperture -- EVENT --> Route --> observation by Aperture
                          +--> route state/failure may be witnessed independently
 ```
 
-The durable record is not one transcript. It is two coupled graphs plus a current projection:
+The durable record is not one transcript:
 
 ```text
 COM = Event graph + Witness graph + Current-state projection
 ```
 
-### EVENT
+### EVENT — what happened or was attempted
 
-An EVENT is an addressable occurrence or attempted occurrence relevant to shared work.
+An addressable occurrence relevant to shared work: a claim emitted, a task assigned, a mutation attempted, a refusal, a proposed correction, a route accepting or rejecting a write.
 
-Examples:
-- a claim was emitted;
-- a task was assigned;
-- a repository mutation was attempted;
-- a refusal was emitted;
-- a correction was proposed;
-- a route accepted or rejected a write.
+**Attempted and completed are different states.** An attempt never implies a success.
 
-An event records what can honestly be established about:
-- source aperture / actor;
-- event kind;
-- parent/dependency events;
-- payload or payload reference;
-- route used or intended;
-- time/state anchor where relevant;
-- control envelope.
+### ROUTE — the carrier, which has causal state of its own
 
-Attempted and completed events are not the same state.
+GitHub, a pasted relay, an API, a file, email, a model connector.
 
-### ROUTE
+A route can accept, delay, cache, truncate, reorder, duplicate, transform, hide, or fail — independently of what either aperture intended. Route is causal, not decorative metadata.
 
-A ROUTE is the carrier through which an event is expected to propagate.
+Do not collapse Route into authority or into message content.
 
-Examples: GitHub, a pasted relay, an API, a file, email, a model connector.
+### WITNESS — a bounded observation by an aperture
 
-Route is causal, not decorative metadata. A route can accept, delay, cache, truncate, reorder, duplicate, transform, hide, or fail independently of sender and receiver intent.
+A witness is a claim about an event, route, or state, made from one vantage point.
 
-Do not collapse Route into authority or message content.
+A witness is not truth because it exists, and not truth because several apertures repeat it.
 
-### WITNESS
+Several things are witness *types* rather than separate primitives:
 
-A WITNESS is a bounded observation or claim made by an aperture about an event, route, or state.
+- **receipt** — "I observed event E at locus L";
+- **parse failure** — "I observed carrier content for E but could not reconstruct its meaning";
+- **route failure** — a witness about the carrier;
+- **staleness** — a witness about an anchor mismatch.
 
-A witness should preserve:
+### CONTROL — an envelope, not a causal node
 
-```text
-observer
-subject
-observation
-locus / route
-state or time anchor where relevant
-evidence / evidence route
-uncertainty / claim status
-modality where semantic force matters
-```
+Cross-cutting metadata on events and actions: modality, authority source, permitted effect, ownership and mutation scope, no-touch boundaries, correction route, and exact base/head where state matters.
 
-A witness is not truth merely because it exists or because several apertures repeat it.
-
-Receipt is a witness type: "I observed event E at locus L."
-
-Parse failure is a witness type: "I observed carrier content for E but could not reconstruct the semantic payload."
-
-Route failure is a witness about the route.
-
-Staleness is a witness about an anchor mismatch.
-
-### CONTROL ENVELOPE
-
-CONTROL is cross-cutting metadata on events/actions, not a causal primitive.
-
-It preserves:
-- modality: OBSERVED / INFERRED / REQUEST / SHOULD / MUST / MAY / AUTHORIZE / REFUSE / etc.;
-- authority source;
-- permitted effect;
-- ownership / mutation scope;
-- no-touch boundaries;
-- correction / return route;
-- exact base/head when state mutation depends on it.
-
-Semantic force is structural data. `SHOULD != MUST`. `EXPECTATION != AUTHORIZATION`. `CAN != MAY`. Absence of a grant is not denial.
+**Semantic force is structural data, not tone.** `SHOULD != MUST`. `EXPECTATION != AUTHORIZATION`. `CAN != MAY`. Absence of a grant is not denial.
 
 ## Absence and failure
 
 COM must never turn missing visibility into a claim about another aperture.
 
-"I did not receive M" does not establish "M was not sent."
+> "I did not receive M" does not establish "M was not sent."
 
-A non-observation should be represented as a witness with an explicit expectation boundary:
+A non-observation is a witness about the observer's own vantage, bounded by an explicit expectation. It keeps these outcomes distinct rather than collapsing them into one silence:
 
-```text
-expected: <event or event class>
-observer: <aperture>
-locus: <route / endpoint / state surface>
-window_or_anchor: <when / which state was inspected>
-observation: NOT_OBSERVED
-uncertainty: <what remains unresolved>
-```
-
-This keeps distinct:
 - nothing was sent;
-- send was attempted but rejected;
-- send succeeded but route lost/delayed it;
-- route holds it but receiver cannot retrieve it;
-- receiver retrieved bytes but could not parse meaning;
-- receiver received it and chose not to act;
-- receiver explicitly refused.
+- send attempted but rejected;
+- sent, then lost or delayed by the route;
+- held by the route but not retrievable by the receiver;
+- retrieved as bytes but not parseable as meaning;
+- received, and no action taken;
+- explicitly refused.
 
 Silence is therefore never automatically assent, refusal, unavailability, or absence.
 
 ## Correction
 
-Correction is not a primitive node. It is a new event/witness relation to prior addressable state.
+Correction is not a primitive node. It is a new event or witness related to prior addressable state.
 
-Corrections are additive. They do not erase the earlier witness.
-
-Prefer the smallest causal repair:
-
-```text
-PATCH
-  target: <prior event/witness/state>
-  field_or_relation: <damaged semantic part>
-  old: <old value if meaningful>
-  new: <new value>
-  evidence: <support>
-  effect: <what changes and what explicitly does not>
-```
-
-If a defect invalidates dependent downstream state, repair the affected causal cone. If local repair is unsafe, pause mutation and reconstruct from durable evidence.
+Corrections are **additive**: they qualify or supersede, and never erase the earlier witness. Prefer the smallest repair that contains the defect. If a defect invalidates dependent state, repair the affected causal cone rather than each visible symptom. If local repair is unsafe, pause mutation and reconstruct from durable evidence.
 
 ## Identity
 
-Keep three things separate:
-- stable role identity;
-- runtime/model/provider identity;
-- session/aperture instance identity.
+Three layers, kept separate:
 
-Unknown stays UNKNOWN.
+- **role** — stable collaboration identity;
+- **runtime** — model and provider, where honestly establishable;
+- **session** — this specific aperture instance.
 
-A transport gap, elapsed time, topic change, temporary unavailability, or stale read does not by itself create a new session.
+Unknown stays `UNKNOWN`.
 
-A real replacement aperture gets a new session identity and reconstructs continuity from durable state. It never silently inherits predecessor confidence or mutation ownership.
+A transport gap, elapsed time, topic change, temporary unavailability, or stale read **does not create a new session**. A genuine replacement aperture takes a new session identity and reconstructs continuity from durable state; it never silently inherits predecessor confidence or mutation ownership.
 
 ## State and history
 
-COM has two public surfaces with different jobs:
+Two public surfaces with different jobs:
 
-1. durable history/evidence: append-only enough to preserve what was actually claimed, done, failed, corrected, or disputed;
-2. `COM_STATE.md`: a small replaceable projection of what a participant needs now.
+1. **durable history and evidence** — append-only enough to preserve what was claimed, done, failed, corrected, or disputed;
+2. **`COM_STATE.md`** — a small, replaceable projection of what a participant needs *now*.
 
 Current state is not truth. It is a reconstructable working projection supported by witnesses.
 
-Do not put a self-referential `current_head` inside the state file. Freshness identity should come from the carrier/object returned by retrieval where possible. An internal `written_from` or `state_basis` may name the state the update was based on, but must not masquerade as the commit containing itself.
-
-If carrier metadata and visible content disagree, classify freshness as DEGRADED rather than CURRENT.
+Freshness identity should come from the carrier object returned by retrieval. A state file cannot authenticate its own recency from the inside. Where content and carrier metadata disagree, freshness is `DEGRADED`, not current.
 
 ## Active work
 
-A task is an EVENT with a control envelope.
+A task is an EVENT carrying a control envelope.
 
-A mutation-capable task should normally carry:
-
-```text
-task_id
-addressed_to
-instruction
-base_anchor
-write_scope
-no_touch
-authority_source
-reply_route
-status
-```
-
-Parallel work additionally needs explicit semantic ownership. One mutator owns one semantic defect/work item at a time unless collision is deliberate and visible.
-
-## COMS
-
-`COMS` means: synchronize from the shared COM surface before using conversational assumptions.
-
-Default behavior:
-
-1. read `COM_STATE.md`;
-2. establish honestly available identity/session information;
-3. inspect the current task only if it is addressed to this aperture/role;
-4. verify control/authority before mutation;
-5. use the task body or an immutable route object named by current state — do not depend on a long issue transcript as the sole carrier;
-6. if freshness or retrieval is contradictory, report DEGRADED with the smallest useful evidence and stop unsafe mutation;
-7. if no task is addressed here, do not steal another aperture's task;
-8. if synchronized and no action is required, stop.
-
-`COMS` is a synchronization operation, not a command to generate protocol commentary.
+Parallel work needs **semantic** ownership, not merely disjoint filenames: one mutator owns one semantic work item at a time, unless a collision is deliberate and visible.
 
 ## Compression
 
-Transmit the minimum sufficient state needed to orient, act, verify, correct, or ask for more.
+Transmit the minimum sufficient state to orient, act, verify, correct, or ask for more.
 
 ```text
 summary -> evidence map -> raw evidence
 ```
 
-Compress content, not provenance, modality, uncertainty, dissent, authority, route state, or correction paths.
+Compress content. Do not compress provenance, modality, uncertainty, dissent, authority, route state, or correction paths.
 
-A summary with no route back to evidence is deletion, not reversible compression.
+> A summary with no route back to evidence is deletion, not reversible compression.
 
-Adaptive depth is allowed: when uncertainty or consequence rises, add bounded redundancy or an alternate carrier; once synchronized, collapse back down.
+Adaptive depth is allowed: when uncertainty or consequence rises, add bounded redundancy or an alternate carrier, then collapse back once synchronized.
 
 ## Non-goals
 
-COM v0.2 is not:
-- a truth oracle;
-- a consensus machine;
-- a universal theory of minds;
-- a requirement to expose private chain-of-thought;
-- a reason to turn every exchange into metadata ceremony;
-- a replacement for domain-specific workflow tools;
-- a mandate to keep Mark in the transport path.
+COM v0.2 is not a truth oracle, a consensus machine, a universal theory of minds, a requirement to expose private reasoning, a reason to turn every exchange into metadata ceremony, a replacement for domain workflow tools, or a mandate to keep the human in the transport path.
 
-The core succeeds when independent apertures can coordinate real work with less ambiguity and less human relay burden than ordinary chat.
+The core succeeds when independent apertures coordinate real work with less ambiguity and less human relay burden than ordinary chat.
