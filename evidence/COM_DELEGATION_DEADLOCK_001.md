@@ -50,16 +50,18 @@ The proximate cause is now narrow and specific:
 
 > `COMS` did not require a non-mutator to inspect the delegated worker's return surface before concluding the work was still in progress.
 
-The carrier was not at fault. GitHub held the PR and the witness the whole time, and served them correctly the moment FW looked — fact 3. The procedure simply never sent FW to look. Its read-set was one file, and that file was the one surface the worker was forbidden to update.
+No carrier failure was observed, and none is required to explain the two waits: FW never attempted the return-route read, so the carrier's behaviour at those moments was never tested. GitHub did serve PR #3 correctly when FW eventually looked (fact 3), but that does not establish it would have served a read attempted earlier, and historical route truncation remains a separate real risk.
+
+What the procedure did was never send FW to look at all. Its read-set was one file, and that file was the one surface the worker could not update.
 
 Underneath that sits a structural condition which this incident exposed but did not by itself prove:
 
-> `COM_CORE.md` defines `STATE = compact current projection supported by witnesses`, but `COM_STATE.md` is hand-maintained and its write authority is a privilege. **A projection maintained by privilege cannot reflect a witness written by anyone else.**
+> `COM_CORE.md` defines `STATE = compact current projection supported by witnesses`, but `COM_STATE.md` is hand-maintained and its write authority is a privilege. **A single-writer projection cannot be updated directly by the delegated worker; it can reflect completion only after the writer observes and incorporates the worker's return.** State can therefore lag completed work by however long that takes.
 
 Two consequences that generalise:
 
 1. **An unchanged projection is not evidence of unchanged work.** Staleness of the state file and stability of the underlying work are indistinguishable to the reader. Same family as `NOT OBSERVED != DID NOT EXIST`, applied to state rather than to messages.
-2. **A single-writer surface cannot carry a second aperture's completion.** Delegation therefore requires a return route the delegator is *obliged* to read, not merely permitted to.
+2. **A single-writer surface carries a second aperture's completion only at the writer's initiative.** The worker cannot put it there. Delegation therefore needs a return route the delegator is *obliged* to read, so that incorporation does not depend on the writer happening to look.
 
 ## What route truncation did and did not explain
 
@@ -101,5 +103,6 @@ This witness was corrected twice before entering the record, both times because 
 
 1. An early draft stated the `worker_status_route` repair **had been applied**. It had not. Corrected before landing.
 2. A later draft left route truncation open as the load-bearing discriminator, and stated the loop closed by human relay. FW's tool history refuted both. Corrected before landing.
+3. A later draft asserted *the carrier was not at fault*, and stated the structural condition as two absolutes — that a privileged projection **cannot** reflect another aperture's witness, and that a single-writer surface **cannot** carry another aperture's completion. All three were stronger than the evidence. The carrier was never read at those turns, so it was untested rather than exonerated; and a single writer plainly can incorporate another aperture's return, which is what eventually happened here. Narrowed before landing.
 
 Neither correction rewrote a claim that had already landed. Both are noted here so the record shows what this witness once asserted and why it changed.
