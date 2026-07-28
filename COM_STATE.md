@@ -1,6 +1,6 @@
 # COM_STATE v0.3.2
 
-STATUS: WORKING BASELINE / ACTIVE BOUNDED PROJECTION-LAG REPAIR
+STATUS: WORKING BASELINE / IDLE — BOUNDED CANDIDATE RETURNED
 
 COM is not validated, canon, or a truth oracle. Model agreement is not proof.
 
@@ -11,22 +11,25 @@ A small shared coordination field that lets independent human/AI apertures recov
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V032-PROJECTION-001` — prevent lagging projection from replaying work already completed on its declared reply route
-- execution_mode: BUILD 2 COM PROTOCOL + EVIDENCE ONLY / NO CAMPFIRE PRODUCT MUTATION
-- addressed_to: Build 2 / Framework session `FW-20260728T1915+0100-5C7A`
-- lane_evidence: COM issue #17 + branch `framework/com-v032-projection-lag`; exact branch base `ddf6075ad18f794394895757a759ea593fb13893`
-- instruction: preserve the real issue #16 projection-lag witness and add the smallest protocol rule that prevents duplicate task execution when preserved terminal/superseding evidence is already present on the task's declared reply route
-- integration_owner: Build 2 / Framework session `FW-20260728T1915+0100-5C7A`
-- repository_mutation: Build 2 may mutate only the bounded COM issue/branch/PR/projection surfaces required for `COM-V032-PROJECTION-001`; no Campfire Relay code/build/release/provider action is authorized by this COM repair
-- reply_route: COM issue #17 `COM v0.3.2 · projection lag must not replay completed route work`
-- observation_owner: Build 2 / Framework session `FW-20260728T1915+0100-5C7A`
+- active_task: NONE
+- execution_mode: IDLE / NO COM MUTATION AUTHORIZED BY CURRENT PROJECTION
+- addressed_to: NONE
+- integration_owner: NONE
+- repository_mutation: NONE from current COM state; any further COM mutation requires a fresh explicit task/authority source
+- reply_route: NONE for active work
+- observation_owner: NONE
 - next_check: MANUAL
-- authority_source: Mark current conversation instruction — "very good. proceed. build"
-- state_basis: `ddf6075ad18f794394895757a759ea593fb13893` — prior main projection; this file is not self-authenticating freshness
-- prior_task_correction: `COM-V032-BUILD2-001` is no longer projected active. Build 2 HELLO/receipt `COM-HELLO-BUILD2-20260728-001` and later return `COM-BUILD2-FRONTIER-OUTPUT-RETURN-20260728-001` are present on its declared reply route, issue #16. This correction does not claim Campfire 1 independently observed those events before this projection update.
+- authority_source: none for new work; completed bounded task was authorized by Mark's conversation instruction — "very good. proceed. build"
+- state_basis: `9e9ddd17c69b032b8a51f190d0c35aade510dc03` — prior main projection; this file is not self-authenticating freshness
+- last_returned_task: `COM-V032-PROJECTION-001`
+- last_return_route: COM issue #17; return event `COM-BUILD2-PROJECTION-RETURN-20260728-001`
+- candidate: draft PR #19 `COM v0.3.2: prevent task replay from projection lag`, branch `framework/com-v032-projection-lag`, exact returned head `8705034806b4e740f82a09d99c9591b8102e3bb8`
+- candidate_exact_blobs: protocol `e4392669284dd1d8ad2a3daf818f72e8700c80a9`; witness `6c4c33e1f46a6f9ce72a225dc891f334cdfcd2c9`
+- candidate_status: RETURNED / DRAFT / MERGEABLE AT RETURN BOUNDARY / NOT MERGED / NOT INTEGRATED / NOT VALIDATION
+- prior_task_correction: `COM-V032-BUILD2-001` remains historical, not active. Build 2 HELLO/receipt `COM-HELLO-BUILD2-20260728-001` and later return `COM-BUILD2-FRONTIER-OUTPUT-RETURN-20260728-001` are preserved on its declared reply route, issue #16. No Campfire 1 acknowledgement is inferred where none was observed.
 - core_status: v0.3 integrated working baseline
-- protocol_status: v0.3.2 integrated working baseline + bounded projection-lag repair in progress
-- next_lane: Campfire Relay product/research-instrument build after this bounded COM defect is returned
+- protocol_status: v0.3.2 integrated working baseline; projection-lag repair exists only as draft candidate PR #19 until explicitly integrated
+- next_lane: Campfire Relay product/research-instrument build
 
 ## INTEGRATED BASELINE
 
@@ -71,8 +74,8 @@ Issue #15 (`COM-V032-QW-004`) was cancelled under Mark's instruction to stabiliz
 CC reviews were correlated and returned `NARROW — no BREAK`; they are design review evidence, not validation. QW runtime/model/provider labels remain SELF_CLAIM unless independently established.
 
 Current coordination event:
-- issue #17 carries the bounded repair card for `COM-V032-PROJECTION-001`;
-- the previous issue #16 introduction is historical route evidence, not the current task projection.
+- `COM-V032-PROJECTION-001` returned on issue #17 and is represented by draft PR #19; it is not active work and has not been integrated;
+- issue #16 remains historical route evidence for the prior Build 2 introduction/product-return chain.
 
 ## KNOWN LIMITS — CARRY FORWARD, DO NOT BLOCK PRODUCT WORK
 
@@ -82,7 +85,7 @@ Current coordination event:
 - Human relay remains necessary where an aperture has no writable route; provenance/modality must remain explicit.
 - `observation_owner + next_check` has not yet completed a fully autonomous asynchronous loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
-- `COM_STATE.md` remains a derived projection that can lag route events until an authorized writer observes and incorporates them; `COM-V032-PROJECTION-001` is repairing duplicate-execution behavior under that known structural condition, not claiming to eliminate projection latency itself.
+- `COM_STATE.md` is a derived projection and can lag route events until an authorized writer observes and incorporates them. Draft PR #19 contains a bounded candidate repair preventing such lag from causing duplicate task execution; this state does not claim that repair is integrated before merge/integration.
 
 These are known engineering limits, not reasons to keep polishing COM in isolation.
 
@@ -91,11 +94,13 @@ These are known engineering limits, not reasons to keep polishing COM in isolati
 `COMS` means synchronize from shared COM before relying on conversational assumptions.
 
 Current result:
-- **Build 2:** execute `COM-V032-PROJECTION-001` from issue #17 / branch `framework/com-v032-projection-lag`; remain inside the bounded protocol/evidence scope above.
-- **Campfire 1:** no active mutation task. Issue #16 remains available as historical route evidence; no acknowledgement is inferred if none is observed.
+- **Build 2:** no active COM task.
+- **Campfire 1:** no active COM task. Issue #16 remains historical route evidence; no acknowledgement is inferred if none is observed.
 - **CC:** no active COM task.
 - **QW:** no active COM task.
 - **Other apertures:** no active COM task.
+
+Draft PR #19 is an unresolved integration decision, not an active mutation task. A future aperture may inspect it when an explicit integration/review decision is requested; it must not merge or continue the candidate merely because it exists.
 
 ## ANTI-DRIFT / REOPEN RULE
 
