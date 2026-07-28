@@ -1,6 +1,6 @@
-# COM_STATE v0.3.1 candidate review
+# COM_STATE v0.3.1
 
-STATUS: WORKING CANDIDATE / ACTIVE
+STATUS: WORKING CANDIDATE / ACTIVE TEST
 
 COM is not validated. Model agreement is not proof.
 
@@ -9,87 +9,87 @@ COM is not validated. Model agreement is not proof.
 A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making the human carry the whole collaboration.
 
 Integrated core/protocol: PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4acf`.
+Integrated COMS front-door repair: PR #8 merged at `5219ca2df18213289948935ecc4b1ffa8925fe0c`.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V031-CC-001` — bounded review of the COMS execution-interface repair
-- addressed_to: CC / continuing session `CC-20260727T2020+0100-0C60` if still active; otherwise fresh CC session must identify itself honestly
-- execution_mode: CC READ-ONLY REVIEW / FW sole candidate mutation
-- candidate_branch: `framework/com-v0.3.1-coms-execution`
-- candidate_head: `337137883116f2cd74e3685ebebbf550267148b9`
-- pull_request: PR #8 `COM v0.3.1: make COMS execute before explaining`
-- candidate_mutator: FW only
-- repository_mutation_for_CC: NONE
-- reply_route: PR #8 conversation
+- active_task: `COM-V031-QW-001` — cold COMS execution + HELLO test against integrated v0.3.1
+- addressed_to: cold/unestablished aperture invoked by Mark as QW / user-described Qwen 3.8; runtime/model/provider remain SELF_CLAIM unless independently established
+- execution_mode: QW READ/RETURN TEST / FW integration
+- repository_mutation_for_QW: NONE
+- task_route: issue #9 `COM v0.3.1 · QW cold COMS execution test`
+- reply_route: issue #9, or explicit Mark→FW→GitHub relay if no writable GitHub route exists
 - integration_owner: FW / session `FW-20260727T2012+0100-8F3C`
 - observation_owner: FW / session `FW-20260727T2012+0100-8F3C`
-- next_check: `2026-07-28 13:00 Europe/London` — Mark reports CC capacity returns then; this is a capacity/route bound, not a session-boundary claim
-- authority_source: Mark instructed FW to keep improving COM and proceed with CC and QW
-- state_basis: `6645cd7b135c40f46c8641501957b6696a58f53f` — main head before this projection update; not the commit containing this file
+- next_check: MANUAL
+- base_anchor: `5219ca2df18213289948935ecc4b1ffa8925fe0c`
+- authority_source: Mark instructed FW to keep improving COM and use QW without waiting for CC
+- state_basis: `5219ca2df18213289948935ecc4b1ffa8925fe0c` — main before this state-projection update; not the commit containing this file
 - core_status: v0.3 integrated working candidate
-- protocol_status: v0.3 integrated working candidate
+- protocol_status: v0.3.1 front-door repair integrated working candidate
 
-## QW COLD TEST `COM-V03-QW-002` — RETURNED / NEW FAILURE
+## PR #8 INTEGRATION DECISION
 
-Return is preserved on issue #7 as Mark→FW→GitHub relay comment `5103022965`.
+PR #8 changed README only and was merged by FW after direct integration review.
 
-Observed result:
-- QW surfaced current-v0.3 concepts including freshness anchoring, `UNASSIGNED`, `authority: NONE`, and navigation != freshness;
-- QW did not provide a route/object freshness anchor;
-- QW did not report `UNKNOWN` or `DEGRADED`;
-- QW did not discover/execute active task `COM-V03-QW-002`, locate issue #7, emit HELLO, or return the required bounded stop;
-- instead it substituted a generic explanation of COM/COMS for the synchronization operation.
+- reviewed_head: `337137883116f2cd74e3685ebebbf550267148b9`
+- merge_commit: `5219ca2df18213289948935ecc4b1ffa8925fe0c`
+- CC review `COM-V031-CC-001` did not complete because Mark reported temporary token/capacity unavailability.
+- Mark explicitly instructed FW not to wait for CC and to continue with QW.
+- CC non-return is therefore not treated as approval, rejection, or validation.
+- v0.3.1 remains NOT_VERIFIED until exercised.
 
-Classification: **TASK-DISCOVERY / EXECUTION failure after current-protocol orientation**. This differs from the earlier stale-v0.1 route failure. Exact files/routes QW actually retrieved remain NOT_VERIFIED.
+## QW COLD TEST HISTORY
 
-## ACTIVE REVIEW — `COM-V031-CC-001`
+`COM-V03-QW-001`: returned coherent historical v0.1 state through a stale route; HELLO was not reached.
 
-Review PR #8 head `337137883116f2cd74e3685ebebbf550267148b9` only.
+`COM-V03-QW-002`: surfaced current-v0.3 concepts but substituted an explanation of COMS for execution; did not establish freshness, discover the addressed task, emit HELLO, or stop `UNKNOWN/DEGRADED`.
 
-Current route/capacity state:
-- Mark reports CC has reached its token limit and becomes available again at 13:00 Europe/London;
-- this is temporary capacity unavailability, not evidence of a new session;
-- no review return is expected before that bound;
-- candidate mutation remains frozen while waiting.
+Both failures remain evidence. Neither is rewritten by v0.3.1.
 
-Check whether the README-only repair:
-- correctly makes literal `COMS` operational rather than explanatory;
-- requires `COM_STATE.md` before concluding `task: NONE`;
-- makes the minimal COMS return useful without creating ceremony or a second protocol source;
-- preserves the distinction between freshness anchoring and merely printing an anchor-shaped field;
-- does not accidentally require mutation or HELLO when freshness is `UNKNOWN`/`DEGRADED`;
-- remains a narrow interface repair rather than new ontology.
+## ACTIVE TEST — `COM-V031-QW-001`
 
-Deliverable: bounded `BREAK / NARROW / RETAIN` delta on PR #8. Do not redesign for elegance. No mutation.
+Cold-path procedure:
+1. enter from repository root `main` with literal `COMS`;
+2. execute synchronization rather than explain COMS;
+3. read README and this state first;
+4. establish the strongest route/object freshness anchor actually exposed;
+5. return the minimal auditable COMS result: `state_seen`, `freshness`, `identity`, `task`, `action`;
+6. if freshness is `UNKNOWN` or `DEGRADED`, stop and report the bounded reason;
+7. only if sufficiently anchored and this task is discovered, follow the integrated `HELLO` rule;
+8. default `role: UNASSIGNED`, `authority: NONE`; do not self-grant;
+9. if no writable GitHub route exists, return on the available user transport for explicitly marked human relay;
+10. no repository mutation and no redesign for elegance.
+
+Success is not agreement. Useful outcomes include anchored COMS+HELLO, honest bounded stop, or a new concrete failure mode.
 
 ## COMS
 
 `COMS` means synchronize from this shared surface before relying on conversational assumptions.
 
 On COMS:
-1. retrieve this state from the intended route and establish the strongest honest freshness anchor available;
+1. retrieve this state and establish the strongest honest freshness anchor available;
 2. establish role/runtime/model/provider/session honestly;
-3. act only on a task addressed to that aperture/role/test condition;
-4. inspect declared return/status routes when responsible for observation or integration;
-5. verify authority before any write;
+3. determine addressed task from sufficiently anchored state rather than defaulting to `NONE`;
+4. verify authority before any write;
+5. inspect declared return/status routes when responsible for observation or integration;
 6. if freshness is insufficient or contradictory, report bounded `UNKNOWN`/`DEGRADED` and stop affected state-dependent action;
-7. do not infer `task: NONE`, silence, absence, identity, authority, or currency from a successful fetch alone;
+7. do not substitute protocol explanation for the synchronization operation;
 8. if synchronized and idle for your role, stop.
 
 Current result:
-- **CC:** `WAIT-CAPACITY` until the reported 13:00 Europe/London availability bound, then perform `COM-V031-CC-001`; review PR #8; return on PR #8; no mutation.
-- **FW:** keep candidate frozen; at/after the bound or on an earlier observed CC return, inspect PR #8 and integrate or reject.
-- **QW:** no active task during CC review. Next cold test should occur only after a reviewed repair is integrated, if integration occurs.
+- **QW cold test:** perform `COM-V031-QW-001`; no repository mutation; return on issue #9 if writable, otherwise through explicitly marked human relay.
+- **FW:** observation/integration owner; inspect issue #9 and any Mark-relayed return at the next manual check.
+- **CC:** no active task. Temporary capacity unavailability does not by itself create a new session.
 - **Other apertures:** no active task.
 
 ## KNOWN LIMITS / OPEN PROOF
 
-- QW cold run 1 reproduced a coherent stale-route failure before HELLO.
-- QW cold run 2 reached current protocol concepts but did not execute live COMS/task discovery.
 - A genuine cold HELLO has not yet succeeded.
 - A stale carrier cannot be repaired by prose inside the stale carrier.
-- `observation_owner + next_check` has not yet completed a full asynchronous proof loop.
+- The v0.3.1 COMS execution repair has not yet been tested by QW.
+- `observation_owner + next_check` has not yet completed a full asynchronous proof loop without a human trigger.
 - Event identity recovery across a route that strips identity remains untested.
 
 Do not add schema, CI, automation, cryptographic identity machinery, or new protocol primitives unless real work exposes a concrete need.
