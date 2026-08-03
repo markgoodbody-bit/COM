@@ -1,145 +1,135 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — BOUNDED CC REVIEW DELEGATED
+STATUS: ACTIVE — CANONICAL CC REVIEW ROUTE RECONCILED
 
-COM is not validated, canon, or a truth oracle. Model agreement is not proof.
+COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement is not proof.
 
 ## PURPOSE
 
-A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making the human carry the whole collaboration.
+A small shared coordination field that lets independent human/AI apertures recover current work, act within explicit authority, preserve provenance/disagreement/failure, and correct state without making Mark carry the whole collaboration.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `CR-V01831-CC-REVIEW-001`
+- active_task: `COM-V032-CC-REVIEW-002`
 - execution_mode: DELEGATED READ-ONLY HOSTILE REVIEW
 - addressed_to: CC
 - integration_owner: Framework / Build 3, session `FW-BUILD3-20260803T202518Z-6A91`
-- repository_mutation: no Campfire Relay mutation authorized; CC may write only return comments on the declared COM route
-- reply_route: COM issue #21, `CC review · Campfire Relay v0.18.31 model-catalogue candidate`
 - observation_owner: Framework / Build 3
 - next_check: MANUAL on CC terminal return
-- authority_source: Mark's 2026-08-03 conversation instruction — “Claude Code (CC) is fresh and available. COMS and proceed. You are Framework (Build 3).”
-- state_basis: `5b60bddfa10a2490ef1e8c778ffa4768fd4d30a0` — prior anchored COM main state; this projection is not self-authenticating freshness
-- task_event: `COM-FW3-CR-V01831-REVIEW-20260803-001`
-- thread_id: `CR-V01831-MODEL-CATALOG-REVIEW`
-- work_target: Campfire Relay draft PR #156
-- work_target_head: `bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6`
-- work_target_base: `eeee56b601f4698aadbc56c5665be69093d18245`
-- work_target_tree: `3092dcf55fe05f834cd5b20d529987e70c687f57`
-- task_status: OPEN / AWAITING protocol-complete CC COMS + HELLO + ACK, then terminal review return
-- write_scope: read-only review of `markgoodbody-bit/campfire-relay`; COM issue #21 comments only
-- no_touch: Campfire Relay main, PR #156 bytes/metadata, release/tag/package/Production activation, TRACE/COM/Debate semantics, live provider calls/spend, v0.19/Exchange
-- required_return: verdict `NO BREAK`, `NARROW`, or `BREAK`; exact evidence; observed/inspected/unverified distinctions; integration recommendation; explicit agreement-is-not-validation boundary
+- reply_route: COM issue #20, `COM-V032-CC-REVIEW-002 · cold review Campfire Relay PR #156`
+- authority_source: Mark's 2026-08-03 conversation instruction — `Claude Code (CC) is fresh and available. COMS and proceed`; Build 3 role assignment supplied in the same live conversation
+- state_basis: `ad9e03f8f702d66d421de7ceb702491560d08a6f` plus Mark's subsequently supplied Build 2 transcript and direct inspection of COM issues #20/#21; this file is not self-authenticating freshness
+- task_status: OPEN / AWAITING CC COMS + fresh HELLO/ACK + terminal review return
+- repository_mutation: NONE authorized for Campfire Relay; CC may write only return comments on issue #20
 - current_product_lane: Campfire Relay v0.18.31 modular model-catalogue maintenance candidate
-- product_candidate_status: draft PR #156; hosted-green built candidate; not merged, tagged, released, published to trusted persistent release channel, or activated in Windows Production
+- work_target: `markgoodbody-bit/campfire-relay` draft PR #156
+- work_target_base: `eeee56b601f4698aadbc56c5665be69093d18245`
+- work_target_head: `bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6`
+- work_target_tree: `3092dcf55fe05f834cd5b20d529987e70c687f57`
+- product_candidate_status: hosted-green built candidate; draft/open/unmerged at last inspection; not tagged, released, published to the trusted persistent release channel, or activated in Windows Production
 - human_release_authority: Mark retains merge and release authority
 
-Prior completed coordination remains historical, not active:
-- last_returned_task: `COM-V032-PROJECTION-001`
-- last_return_route: COM issue #17; return event `COM-BUILD2-PROJECTION-RETURN-20260728-001`
-- projection-lag candidate: draft COM PR #19, branch `framework/com-v032-projection-lag`, exact returned head `8705034806b4e740f82a09d99c9591b8102e3bb8`
-- projection-lag candidate_status: RETURNED / DRAFT / NOT MERGED / NOT INTEGRATED / NOT VALIDATION; not part of the current task
-- prior Build 2 introduction/product-return route: COM issue #16; historical only
+## CONTINUITY CORRECTION
 
-Core/protocol status:
-- core_status: v0.3 integrated working baseline
-- protocol_status: v0.3.2 integrated working baseline
-- COM status: coordination carrier for real Campfire Relay work; do not reopen protocol design unless a concrete defect appears or Mark explicitly directs it
+Mark supplied the old Framework / Build 2 chat after Framework / Build 3 had opened issue #21 for the same review target.
+
+The recovered evidence establishes:
+- issue #20 was created first by Build 2 for exact head `bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6`;
+- issue #20 therefore remains the canonical task and reply route;
+- Build 3 has taken over integration and observation ownership on issue #20 without changing CC's task, target or mutation boundary;
+- issue #21 is closed as `duplicate`, not completed, and remains visible evidence of a projection/continuity failure;
+- no CC return was observed on either route at the correction boundary. This is bounded `NOT_OBSERVED`, not failure, refusal or absence.
+
+Defect record:
+- defect_id: `COM-PROJECTION-DUPLICATE-ROUTE-001`
+- causal basis: Build 3 synchronized against a COM projection that did not carry Build 2's later issue #20 dispatch, then created a semantically duplicate route before Mark supplied the old chat
+- immediate repair: preserve earliest task identity/route, transfer current ownership, close later route as duplicate, correct COM_STATE
+- broader protocol change: NONE authorized or presently required; carry this as real product-work evidence against projection lag
 
 ## ACTIVE TASK ENVELOPE
 
 ```text
-task_id: CR-V01831-CC-REVIEW-001
+task_id: COM-V032-CC-REVIEW-002
 addressed_to: CC
-instruction: COMS from anchored COM state, emit a fresh protocol-complete HELLO/ACK on issue #21, then independently and hostilely review exact Campfire Relay PR #156 head bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6. Do not inherit Build 2 conclusions as validation.
-base_anchor: COM prior main 5b60bddfa10a2490ef1e8c778ffa4768fd4d30a0; Campfire Relay PR #156 base eeee56b601f4698aadbc56c5665be69093d18245, head bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6, tree 3092dcf55fe05f834cd5b20d529987e70c687f57
-write_scope: read-only Campfire Relay review; COM issue #21 comments only
-no_touch: main, PR mutation, merge, tag, release, package publication, Production activation, TRACE/COM/Debate semantics, provider spend, v0.19/Exchange
-authority_source: Mark current conversation instruction; delegated by Framework / Build 3 for this bounded review only
-reply_route: COM issue #21
+instruction: execute COMS from anchored COM, emit a fresh protocol-complete HELLO/ACK on issue #20, then independently and hostilely review exact Campfire Relay PR #156 head bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6; do not treat Build 2's green build or any AI agreement as validation
+base_anchor: Campfire Relay base eeee56b601f4698aadbc56c5665be69093d18245; head bf9b7a88698d04cdb3a82ab99e6cee22ae0ae7e6; tree 3092dcf55fe05f834cd5b20d529987e70c687f57
+write_scope: read-only Campfire Relay review; COM issue #20 comments only
+no_touch: Campfire Relay main or PR mutation; merge; tag; release; package publication; Production activation; TRACE/COM/Debate semantics; provider calls/spend; v0.19/Exchange
+reply_route: COM issue #20
 status: OPEN
 integration_owner: Framework / Build 3, FW-BUILD3-20260803T202518Z-6A91
 observation_owner: Framework / Build 3
 next_check: MANUAL on terminal return
 ```
 
-The detailed review questions and return contract live in immutable issue event `COM-FW3-CR-V01831-REVIEW-20260803-001` on COM issue #21. The issue thread is the reply route; this state projection is the discovery surface.
+Required terminal verdict is the original issue #20 contract:
+- `BREAK — concrete defect`;
+- `NARROW — bounded repair required`; or
+- `CLEAR FOR FRAMEWORK INTEGRATION DECISION — no material defect observed`.
 
-Exact-head discipline applies. If PR #156 head moves outside the stated envelope, CC must report drift and stop rather than silently adapting.
+Return must identify exact reviewed head, inspected files, tests/commands if any, confirmed facts versus inference, unresolved uncertainty, and whether mutation occurred. Agreement is not validation.
 
-## INTEGRATED BASELINE
+Exact-head discipline applies. If PR #156 moves outside the stated envelope, CC must stop and report drift rather than silently adapting.
 
-Core/protocol lineage retained from the prior state:
-- PR #6 merged at `f6c35db1ad8d53c61f9a21daf011651471fd4acf` — cold bootstrap, freshness, delegated-return discovery;
-- PR #8 merged at `5219ca2df18213289948935ecc4b1ffa8925fe0c` — COMS front-door execution repair;
-- PR #14 reviewed candidate head `3215f9e41601b6ec4e6854bd441770d38b892dec` was closed unmerged after exact manual integration onto current `main` because the live-state branch had moved;
-- exact PR #14 README blob `cc12ad01b17b6623409eb6eee055f6b47d3dbaf5` integrated at `d6025c0e47f4e1cc81323ccc603256405b01f8a4`;
-- exact PR #14 protocol blob `45c66e7e62530c57de91d8330cc2e1963c8741d1` integrated at `c299dd9a1f24dd8b3e97eafb69d4bf66fd8d3e6f`.
+## ADDITIONAL READ-ONLY INSPECTION SURFACES
 
-Integrated v0.3.2 behavior includes:
-- GitHub carrier rendezvous through repository-bound `commits/main` -> immutable SHA -> `COM_STATE.md`;
-- mutable labels are navigation, not freshness proof;
-- stale-carrier and API/rate-limit failure stop bounded rather than silently falling back;
-- cold `HELLO` keeps role/session/runtime/model/provider/authority separate;
-- literal `COMS` requires an externally auditable bounded return across transports;
-- `task: NONE` is distinct from `task: NOT_ESTABLISHED`;
-- explanation of COMS is not evidence that synchronization completed;
-- missing completion evidence is `NOT_ESTABLISHED` from that return, not refusal/absence/failure;
-- retries/re-requests are visible new events, never silent;
-- delegated work carries `reply_route`, `integration_owner`, `observation_owner`, and `next_check`;
-- absence is recorded as bounded `NOT_OBSERVED`, never inferred global failure.
+Supplied by Mark and transferred to canonical issue #20:
+
+- `http://127.0.0.1:4317/` — same-machine installed Campfire surface where reachable. Read-only observation only. It is not evidence that PR #156 is installed and not a GitHub freshness anchor. No Relay/Debate/re-judge, provider call, Setup/profile/catalogue/configuration/state/updater/release mutation.
+- `markgoodbody-bit/TRACE` — semantic/provenance reference, observed main anchor `0a74b94bbd403756c1f14b23c09fc935bdac46ca`; not an edit target, promotion source or truth authority.
+- `markgoodbody-bit/mechanical-ethics` — human/normative provenance reference, observed main anchor `fb2cc9e41107bba6ec66d7788513d6e208af80c5`; not an executable specification or edit target.
+- `markgoodbody-bit/campfire-relay` — executable review target. Local installed runtime, repository main/base, PR candidate and semantic source repositories must remain separately identified.
+
+## PRIOR COORDINATION — HISTORICAL, NOT ACTIVE
+
+- Build 2 constructed the v0.18.31 candidate and dispatched issue #20 before its chat reached maximum length.
+- duplicate Build 3 route issue #21: CLOSED / DUPLICATE; do not ACK or return there.
+- prior returned task: `COM-V032-PROJECTION-001`, return route issue #17.
+- projection-lag candidate: draft COM PR #19, exact returned head `8705034806b4e740f82a09d99c9591b8102e3bb8`; RETURNED / DRAFT / NOT MERGED / NOT INTEGRATED / NOT VALIDATION.
+- prior Build 2 introduction/product-return route issue #16 remains historical evidence.
+
+Core/protocol status:
+- core_status: v0.3 integrated working baseline
+- protocol_status: v0.3.2 integrated working baseline
+- COM protocol work remains paused unless real Campfire work exposes a concrete defect or Mark explicitly directs it
 
 ## EVIDENCE POSTURE
 
-Observed useful successes:
-- immutable COM_STATE bootstrap supported task discovery + HELLO;
-- fixed public GitHub `commits/main` rendezvous matched independently observed live head at multiple tested boundaries;
-- one full cold chain succeeded: fixed rendezvous -> live SHA -> immutable state -> task discovery -> COMS -> protocol-complete HELLO;
-- issue #16 carried Build 2's protocol-complete HELLO/receipt and later bounded product-repair return without requiring Mark to carry the work product itself.
+Useful successes retained:
+- immutable COM_STATE bootstrap supported task discovery and HELLO;
+- fixed GitHub rendezvous has matched independently observed heads at several boundaries;
+- issue routes have carried bounded AI returns without Mark transporting the work product itself.
 
-Observed useful failures:
-- mutable repository-root retrieval repeatedly served coherent historical state to QW;
-- QW twice explained COMS accurately without executing it, motivating the auditable completion witness;
-- a later QW return replayed historical task `COM-V031-QW-004` / anchor `b0ddef2f...` while FW independently observed a later live head;
-- issue #16 exposed projection lag: freshly anchored COM state still showed an introduction task active after its declared reply route contained the required receipt and later terminal return.
+Useful failures retained:
+- mutable-root retrieval has served coherent historical state;
+- QW has explained COMS without executing it and has replayed a historical head;
+- issue #16 exposed state projection lag after route completion;
+- the current Build 3 duplication exposed another projection/continuity failure: issue #20 existed but was absent from the state Build 3 synchronized against.
 
-Issue #15 (`COM-V032-QW-004`) was cancelled under Mark's instruction to stabilize COM and return to Campfire. Its missing return remains bounded `NOT_OBSERVED`; no QW failure or route diagnosis is inferred.
+These are bounded engineering observations. They do not validate COM and are not a reason to stop Campfire product work for protocol polishing.
 
-CC reviews are design/review evidence, not validation. Runtime/model/provider labels remain self-claims unless independently established.
+## KNOWN LIMITS
 
-## KNOWN LIMITS — CARRY FORWARD, DO NOT BLOCK PRODUCT WORK
-
-- A stale carrier cannot be repaired by prose inside the stale copy it already served.
-- The fixed GitHub rendezvous has worked but is not proven universally fresh, continuously available, or portable across providers/carriers.
-- QW produced one historical-head replay through a path that had previously worked; exact cause remains unresolved.
-- Human relay remains necessary where an aperture has no writable route; provenance/modality must remain explicit.
-- `observation_owner + next_check` has not yet completed a fully autonomous asynchronous loop without a human trigger.
-- Event identity recovery across a route that strips identity remains untested.
-- `COM_STATE.md` is a derived projection and can lag route events until an authorized writer observes and incorporates them. Draft PR #19 contains a bounded candidate repair preventing such lag from causing duplicate task execution; this state does not claim that repair is integrated.
-
-These are known engineering limits, not reasons to polish COM instead of doing the Campfire Relay work.
+- A stale carrier cannot be repaired by prose inside the stale copy it served.
+- The fixed GitHub rendezvous is useful but not proven universally fresh or continuously available.
+- Human relay remains necessary where an aperture has no writable route.
+- `observation_owner + next_check` does not itself create autonomous scheduling.
+- Event identity recovery across identity-stripping routes remains untested.
+- `COM_STATE.md` is a derived projection and can lag route events. Draft PR #19 is a bounded candidate repair, not integrated behavior.
 
 ## COMS
 
-`COMS` means synchronize from shared COM before relying on conversational assumptions.
-
 Current result by role:
-- **Framework / Build 3:** active integration/observation ownership for `CR-V01831-CC-REVIEW-001`; inspect issue #21 at the manual observation boundary; do not merge or release without Mark's later decision.
-- **CC:** active task `CR-V01831-CC-REVIEW-001`; execute COMS, emit fresh HELLO/ACK, review exact PR #156 head, and return on issue #21.
-- **Build 2:** no active task; prior v0.18.31 candidate construction is historical evidence and must not be treated as an independent review.
+- **Framework / Build 3:** owns integration and manual observation for `COM-V032-CC-REVIEW-002`; inspect issue #20; do not merge or release without Mark's later decision.
+- **CC:** active task `COM-V032-CC-REVIEW-002`; COMS, fresh HELLO/ACK and terminal return on issue #20 only.
+- **Build 2:** no active task; candidate construction and original dispatch are historical evidence.
 - **Campfire 1:** no active COM task.
 - **QW:** no active COM task.
 - **Other apertures:** no active COM task.
 
-Draft COM PR #19 remains an unresolved integration decision, not an active mutation task. It must not be merged or continued merely because it exists.
+## ANTI-DRIFT
 
-## ANTI-DRIFT / REOPEN RULE
+Do not add protocol machinery for elegance. Do not turn green CI, repeated model conclusions or clean presentation into validation. Do not reopen COM design unless the concrete coordination defect requires a bounded repair or Mark explicitly orders it.
 
-Do not add schema, CI, automation, cryptographic identity machinery, leases, new failure taxonomies, or new protocol primitives for elegance.
-
-COM protocol work reopens only when:
-1. real Campfire Relay work exposes a concrete coordination/provenance/freshness/authority/return-path defect; or
-2. Mark explicitly directs a new COM task.
-
-The practical goal is less ambiguity and less human relay burden, not more protocol.
+The practical goal is less ambiguity and less human relay burden while getting Campfire Relay into trustworthy usable shape.
