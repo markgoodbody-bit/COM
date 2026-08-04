@@ -1,21 +1,51 @@
 # COM_STATE v0.3.2
 
-STATUS: STABLE — CAMPFIRE RELAY v0.18.31 RELEASED, INSTALLED, PROVENANCE-BOUND AND ROLLBACK-READY
+STATUS: ACTIVE — TRACE v0.2.6 TRANSITION CANDIDATE HOSTILE REVIEW OPEN; CAMPFIRE RELAY v0.18.31 REMAINS STABLE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: NONE
-- integration_owner: Framework / Build 3, session `FW-BUILD3-20260803T202518Z-6A91`
-- current_product_lane: Campfire Relay v0.18.31 stable maintenance baseline
-- Windows Production activation task: `COM-V032-PRODUCTION-ACTIVATE-001` — COMPLETE / issue #22 closed
-- installed-provenance defect: `CR-V01831-INSTALLED-PROVENANCE-MISSING-001` — REPAIRED FOR INSTALLED v0.18.31
-- launcher: v0.1.6 on trusted `launcher-production` channel
-- next_action: NONE ASSIGNED; await Mark's explicit direction
+- active_task: `TRACE-V026-CC-REVIEW-001` — OPEN / COM issue #24 / awaiting CC COMS + HELLO + ACK
+- integration_owner: Framework, session `FW-20260804-TRACE026-9C2E`
+- observation_owner: Framework, session `FW-20260804-TRACE026-9C2E`
+- reply_route: `markgoodbody-bit/COM` issue #24
+- next_check: MANUAL on CC terminal return
+- current_product_lane: TRACE v0.2.6 transition candidate review
+- Campfire Relay lane: v0.18.31 stable maintenance baseline; no new Campfire task
 
-## RELEASED AND INSTALLED TARGET
+## TRACE v0.2.6 REVIEW TASK
+
+Task: `TRACE-V026-CC-REVIEW-001`
+
+Addressed to: `CC`
+
+Authority source: Mark's 2026-08-04 conversation instruction that Claude is available and Framework may update COMS.
+
+Purpose: fresh independent hostile review of the TRACE v0.2.6 transition candidate before full-seed compilation or merge.
+
+Exact target:
+
+- repository: `markgoodbody-bit/TRACE`
+- PR: #17 — `Build TRACE v0.2.6 transition candidate`
+- base SHA: `983aeec18d41935ec59dd84c70bc6b0dcd49e287`
+- head SHA: `abfd4ebfcd645ef78604cd3123ca367494e0a8b2`
+- branch: `framework/trace-v0-2-6-transition-candidate`
+- status at dispatch: open, mergeable, ready for review, not merged
+- hosted CI at dispatch: `TRACE v0.2.6 transition candidate` run #8 — SUCCESS
+
+Control:
+
+- review only;
+- CC repository mutation: forbidden;
+- CC write scope: comments on COM issue #24 only;
+- no TRACE branch/file/PR metadata mutation, merge, tag, release, provider call or spend;
+- required terminal verdict: `BREAK`, `NARROW`, or `CLEAR FOR FRAMEWORK INTEGRATION DECISION`;
+- exact-head discipline applies; head movement outside the acknowledged envelope requires re-read or explicit drift report;
+- Framework must inspect the reply route and record an integration decision before closing the task.
+
+## RELEASED AND INSTALLED CAMPFIRE TARGET
 
 Repository: `markgoodbody-bit/campfire-relay`
 
@@ -76,21 +106,26 @@ The launcher recovery path authenticates the current Production tag, proves the 
 
 ## SPEND AND REVIEW BOUNDARIES
 
-- successful provenance reconciliation made no live provider calls;
+- TRACE review task `TRACE-V026-CC-REVIEW-001` is read-only and permits no provider call or spend;
+- successful Campfire provenance reconciliation made no live provider calls;
 - the earlier full diagnostic's approximately £0.0025 provider-probe delta remains preserved as a separate historical fact;
-- CC review task `COM-V032-CC-REVIEW-003` was requested with explicit nonce and exact-head transitions;
-- no CC-authored ACK or terminal verdict was observed before bounded integration;
-- this remains unresolved review coverage, not agreement, refusal, failure, clearance or validation.
+- prior CC review task `COM-V032-CC-REVIEW-003` was requested with explicit nonce and exact-head transitions;
+- no CC-authored ACK or terminal verdict was observed before its bounded integration;
+- that remains unresolved historical review coverage, not agreement, refusal, failure, clearance or validation.
 
 ## COMS
 
-- **Mark:** human authority; no active local task.
-- **Framework / Build 3:** v0.18.31 release, Windows activation and installed-provenance reconciliation closed.
-- **CC:** no active task or mutation authority.
-- **Build 2 / Campfire 1 / QW / other apertures:** no active COM task.
+- **Mark:** human authority; authorized the TRACE v0.2.6 CC review task.
+- **Framework / `FW-20260804-TRACE026-9C2E`:** integration and observation owner for `TRACE-V026-CC-REVIEW-001`.
+- **CC:** active addressed task `TRACE-V026-CC-REVIEW-001`; expected to run literal COMS, emit fresh-session HELLO/ACK, review exact TRACE PR #17 head, and return on COM issue #24.
+- **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
-Do not infer general product validation from release, CI, installation or provenance closure. Do not begin v0.19/Exchange, another model-catalogue refresh or paid-provider work without new explicit authority.
+Do not merge TRACE PR #17 or begin full `TRACE_FORMAL_SEED_v0_2_6.md` compilation before Framework integrates the CC terminal return, unless Mark explicitly overrides that gate.
+
+Do not infer validation from the candidate, CC agreement, green CI, mergeability or a future version label.
+
+Do not begin Campfire Relay v0.19/Exchange, another model-catalogue refresh or paid-provider work without new explicit authority.
 
 `The lullaby was never for the cradle`.
