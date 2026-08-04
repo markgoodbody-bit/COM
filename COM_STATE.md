@@ -1,15 +1,16 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.6 TRANSITION CANDIDATE HOSTILE REVIEW OPEN; CAMPFIRE RELAY v0.18.31 REMAINS STABLE
+STATUS: ACTIVE — TRACE v0.2.6 TRANSITION CANDIDATE HOSTILE REVIEW ACKNOWLEDGED; TERMINAL VERDICT PENDING
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `TRACE-V026-CC-REVIEW-001` — OPEN / COM issue #24 / awaiting CC COMS + HELLO + ACK
+- active_task: `TRACE-V026-CC-REVIEW-001` — OPEN / COM issue #24 / CC presence ACK observed / terminal verdict pending
 - integration_owner: Framework, session `FW-20260804-TRACE026-9C2E`
 - observation_owner: Framework, session `FW-20260804-TRACE026-9C2E`
+- addressed_reviewer: CC, session `CC-20260804T1940+0100-7D31`
 - reply_route: `markgoodbody-bit/COM` issue #24
 - next_check: MANUAL on CC terminal return
 - current_product_lane: TRACE v0.2.6 transition candidate review
@@ -32,8 +33,25 @@ Exact target:
 - base SHA: `983aeec18d41935ec59dd84c70bc6b0dcd49e287`
 - head SHA: `abfd4ebfcd645ef78604cd3123ca367494e0a8b2`
 - branch: `framework/trace-v0-2-6-transition-candidate`
-- status at dispatch: open, mergeable, ready for review, not merged
+- current status: open, mergeable, ready for review, not merged
 - hosted CI at dispatch: `TRACE v0.2.6 transition candidate` run #8 — SUCCESS
+
+## CC ACKNOWLEDGEMENT
+
+Observed on COM issue #24:
+
+- event: `COM-CC-TRACE026-PRESENCE-ACK-20260804-001`
+- CC session: `CC-20260804T1940+0100-7D31`
+- model/provider self-report: `claude-opus-5` / Anthropic
+- exact base and head independently matched
+- task receipt: observed
+- review status in ACK: `review NOT started`
+- terminal verdict: not observed
+- mutation: none reported
+- CC requested that PR #17 not be integrated or merged on silence
+- Framework accepted the hold and rechecked the head unchanged
+
+Mark reports that Claude performed COMS. The issue-route ACK independently establishes fresh-session identity, target receipt and no-mutation status. It does not itself contain the protocol's literal bounded `COMS` block or a separately labelled `HELLO`; this remains a route-level formatting gap rather than a substantive review blocker. The terminal return should include or reference the bounded synchronization basis.
 
 Control:
 
@@ -43,6 +61,8 @@ Control:
 - no TRACE branch/file/PR metadata mutation, merge, tag, release, provider call or spend;
 - required terminal verdict: `BREAK`, `NARROW`, or `CLEAR FOR FRAMEWORK INTEGRATION DECISION`;
 - exact-head discipline applies; head movement outside the acknowledged envelope requires re-read or explicit drift report;
+- no deadline pressure is imposed;
+- silence is not clearance;
 - Framework must inspect the reply route and record an integration decision before closing the task.
 
 ## RELEASED AND INSTALLED CAMPFIRE TARGET
@@ -115,9 +135,9 @@ The launcher recovery path authenticates the current Production tag, proves the 
 
 ## COMS
 
-- **Mark:** human authority; authorized the TRACE v0.2.6 CC review task.
-- **Framework / `FW-20260804-TRACE026-9C2E`:** integration and observation owner for `TRACE-V026-CC-REVIEW-001`.
-- **CC:** active addressed task `TRACE-V026-CC-REVIEW-001`; expected to run literal COMS, emit fresh-session HELLO/ACK, review exact TRACE PR #17 head, and return on COM issue #24.
+- **Mark:** human authority; reports Claude performed COMS and authorizes the current TRACE review lane.
+- **Framework / `FW-20260804-TRACE026-9C2E`:** integration and observation owner for `TRACE-V026-CC-REVIEW-001`; integration hold active.
+- **CC / `CC-20260804T1940+0100-7D31`:** task acknowledged at exact head; terminal hostile-review verdict pending; no mutation reported.
 - **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
