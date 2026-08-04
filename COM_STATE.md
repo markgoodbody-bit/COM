@@ -1,69 +1,118 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.6 TRANSITION CANDIDATE HOSTILE REVIEW ACKNOWLEDGED; TERMINAL VERDICT PENDING
+STATUS: ACTIVE — TRACE v0.2.6 NARROW REPAIR APPLIED; CC RE-REVIEW PENDING
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `TRACE-V026-CC-REVIEW-001` — OPEN / COM issue #24 / CC presence ACK observed / terminal verdict pending
+- active_task: `TRACE-V026-CC-REVIEW-001` — NARROW returned, accepted and repaired; CC re-review pending on COM issue #24
 - integration_owner: Framework, session `FW-20260804-TRACE026-9C2E`
 - observation_owner: Framework, session `FW-20260804-TRACE026-9C2E`
 - addressed_reviewer: CC, session `CC-20260804T1940+0100-7D31`
 - reply_route: `markgoodbody-bit/COM` issue #24
-- next_check: MANUAL on CC terminal return
-- current_product_lane: TRACE v0.2.6 transition candidate review
+- next_check: MANUAL on CC re-review return for repaired head
+- current_product_lane: TRACE v0.2.6 transition candidate repair review
+- comms_defect: `COM-V032-ISSUE-COMMENT-TRUNCATION-001` — OPEN / COM issue #25
 - Campfire Relay lane: v0.18.31 stable maintenance baseline; no new Campfire task
 
-## TRACE v0.2.6 REVIEW TASK
+## TRACE v0.2.6 REVIEW AND REPAIR
 
 Task: `TRACE-V026-CC-REVIEW-001`
 
-Addressed to: `CC`
+Repository: `markgoodbody-bit/TRACE`
 
-Authority source: Mark's 2026-08-04 conversation instruction that Claude is available and Framework may update COMS.
+PR: #17 — `Build TRACE v0.2.6 transition candidate`
 
-Purpose: fresh independent hostile review of the TRACE v0.2.6 transition candidate before full-seed compilation or merge.
+Base SHA:
 
-Exact target:
+```text
+983aeec18d41935ec59dd84c70bc6b0dcd49e287
+```
 
-- repository: `markgoodbody-bit/TRACE`
-- PR: #17 — `Build TRACE v0.2.6 transition candidate`
-- base SHA: `983aeec18d41935ec59dd84c70bc6b0dcd49e287`
-- head SHA: `abfd4ebfcd645ef78604cd3123ca367494e0a8b2`
-- branch: `framework/trace-v0-2-6-transition-candidate`
-- current status: open, mergeable, ready for review, not merged
-- hosted CI at dispatch: `TRACE v0.2.6 transition candidate` run #8 — SUCCESS
+Original reviewed head:
 
-## CC ACKNOWLEDGEMENT
+```text
+abfd4ebfcd645ef78604cd3123ca367494e0a8b2
+```
 
-Observed on COM issue #24:
+CC terminal return:
 
-- event: `COM-CC-TRACE026-PRESENCE-ACK-20260804-001`
-- CC session: `CC-20260804T1940+0100-7D31`
-- model/provider self-report: `claude-opus-5` / Anthropic
-- exact base and head independently matched
-- task receipt: observed
-- review status in ACK: `review NOT started`
-- terminal verdict: not observed
-- mutation: none reported
-- CC requested that PR #17 not be integrated or merged on silence
-- Framework accepted the hold and rechecked the head unchanged
+- full comment: `5183287806`, posted 2026-08-04T18:52:00Z;
+- short-form comment: `5183326850`;
+- verdict: `NARROW — bounded repair required before compilation`;
+- CC mutation: none reported.
 
-Mark reports that Claude performed COMS. The issue-route ACK independently establishes fresh-session identity, target receipt and no-mutation status. It does not itself contain the protocol's literal bounded `COMS` block or a separately labelled `HELLO`; this remains a route-level formatting gap rather than a substantive review blocker. The terminal return should include or reference the bounded synchronization basis.
+Accepted findings:
 
-Control:
+1. `TRACE-V026-VALIDATOR-VACUITY-001`
+   - original checker passed gutted narrative artefacts while failing whitespace-only reflow;
+   - original green CI established weak string/manifest consistency, not substantive candidate validity.
+2. `TRACE-V026-F03-F04-CONTAINMENT-WARRANT-001`
+   - the candidate did not explicitly state what v0.2.5's general aperture-relativity fails to provide;
+   - F03/F04 carried the whole version-bump warrant and required an explicit non-duplication argument.
 
-- review only;
-- CC repository mutation: forbidden;
-- CC write scope: comments on COM issue #24 only;
-- no TRACE branch/file/PR metadata mutation, merge, tag, release, provider call or spend;
-- required terminal verdict: `BREAK`, `NARROW`, or `CLEAR FOR FRAMEWORK INTEGRATION DECISION`;
-- exact-head discipline applies; head movement outside the acknowledged envelope requires re-read or explicit drift report;
-- no deadline pressure is imposed;
-- silence is not clearance;
-- Framework must inspect the reply route and record an integration decision before closing the task.
+Repaired head:
+
+```text
+963875f003841e813ecfb65493e65b09495e12f6
+```
+
+Repair applied:
+
+- executable scope renamed and bounded to `PACKAGE_INTEGRITY_AND_DECLARED_CONTRACT_ONLY`;
+- README and machine output state that green CI is not semantic validity, adequacy of the argument, or TRACE validation;
+- normalized SHA-256 bindings cover the disposition matrix, formal patch and regression contract;
+- whitespace-only reflow is normalized;
+- patch A-G section closure is checked;
+- R01-R12 and V26-A-H are parsed as 20 distinct non-empty sections;
+- hostile tests reproduce the gutted-document and whitespace-only mutations;
+- F03/F04 containment test now states both the v0.2.5 general rules and the missing target-set specialization;
+- explicit withdrawal condition: if full compilation cannot preserve the specialization using existing objects, demote F03/F04 and withdraw the version bump.
+
+Hosted evidence at repaired head:
+
+- workflow: `TRACE v0.2.6 transition package integrity` run #14;
+- conclusion: SUCCESS;
+- normalized artefact digests checked: 3;
+- regression sections checked: 20;
+- tests: 13 passed;
+- errors: 0;
+- warnings: 0.
+
+Current PR state:
+
+- open;
+- mergeable;
+- not merged;
+- full `TRACE_FORMAL_SEED_v0_2_6.md` not compiled.
+
+Framework returned repaired head `963875f003841e813ecfb65493e65b09495e12f6` to CC on issue #24 and requested re-anchored `BREAK`, `NARROW`, or `CLEAR FOR FRAMEWORK INTEGRATION DECISION`.
+
+## CORRECTION — FALSE `NOT_OBSERVED`
+
+Framework's earlier projection that the CC terminal verdict was `NOT_OBSERVED` was wrong.
+
+The GitHub issue-comment response explicitly reported that its output was truncated at a line boundary. Framework saw only comments 1 and 2 and treated that incomplete response as exhaustive. Comment 3 already existed and contained the complete terminal verdict.
+
+Correct distinctions:
+
+```text
+TRUNCATED_RETRIEVAL != EXHAUSTIVE_ROUTE_INSPECTION
+MISSING_FROM_TRUNCATED_OUTPUT != NOT_OBSERVED_ON_ROUTE
+RETRIEVAL_INCOMPLETE != EVENT_ABSENT
+```
+
+The correction is recorded on COM issue #24 in Framework comment `5183360524`.
+
+The comms-lane defect is recorded as COM issue #25:
+
+```text
+COM-V032-ISSUE-COMMENT-TRUNCATION-001
+```
+
+Operational rule now applied: a visibly truncated route retrieval cannot support `NOT_OBSERVED` for later events. Use response-resource search/read, direct comment identity, another bounded query, or report `RETRIEVAL_INCOMPLETE`.
 
 ## RELEASED AND INSTALLED CAMPFIRE TARGET
 
@@ -79,73 +128,23 @@ Repository: `markgoodbody-bit/campfire-relay`
 - release-content-manifest SHA-256: `094dfeeb0f5442933cd6b2e682475c7cd00b08dc392f37d6f69a244658dadd12`
 - catalogue-manifest SHA-256: `f1fce253299da622e54df571b1551a56a353ef1b51c8014d5836a257c6086eaf`
 
-## WINDOWS PRODUCTION EVIDENCE
-
-Observed from launcher v0.1.6 reconciliation output on 2026-08-04:
-
-- reconciliation status: `provenance_reconciled`
-- health: `ok=true`, name `Campfire Relay`, version `0.18.31`
-- health timestamp: `2026-08-04T16:01:44.276Z`
-- runtime root: `C:\Users\markg\CampfireRelay\CAMPFIRE_RELAY_v0_18_31`
-- persistent provenance: `C:\Users\markg\CampfireRelay\STATE\data\install-provenance.json`
-- recorded `installedAt`: `2026-08-04T16:01:44.7395462Z`
-- timestamp boundary: this value was established by provenance reconciliation because no earlier exact package record existed; it is not proof of the original activation time
-- current target: `CAMPFIRE_RELAY_v0_18_31`
-- rollback target: `CAMPFIRE_RELAY_v0_18_3`
-- `START_PREVIOUS_CAMPFIRE.ps1` exists: true
-- audit timestamp: `2026-08-04T16:01:44.7637072Z`
-- audit result: `provenance-reconciled`
-- reconciliation: `trusted-github-release`
-- local self-test: `completed-without-live-provider-probes`
-- reconciliation provider calls: none
-
-The local source commit, tree, package SHA, tag commit and release ref exactly matched the immutable Production release manifest.
-
-Preserved Production directories observed:
-
-- `CAMPFIRE_RELAY_v0_18_31`
-- `CAMPFIRE_RELAY_v0_18_3`
-- `CAMPFIRE_RELAY_v0_18_2_1`
-- `CAMPFIRE_RELAY_v0_18_2`
-- `CAMPFIRE_RELAY_v0_18_1`
-- `CAMPFIRE_RELAY_v0_18_0`
-- `CAMPFIRE_RELAY_v0_17_9`
-- `CAMPFIRE_RELAY_v0_17_8`
-- `CAMPFIRE_RELAY_v0_17_7`
-
-## LAUNCHER REPAIR RECORD
-
-PR #161: `Launcher v0.1.6: reconcile installed Production provenance`
-
-- exact reviewed head: `4d15864b5c8c16dc0df22054676817542584066e`
-- launcher-production merge commit: `945903b98e889a9e5712b260d32613df67191ea7`
-- hosted CI: campfire-ci #1044 — SUCCESS
-- application v0.18.31, immutable tag and published release: unchanged
-
-The launcher recovery path authenticates the current Production tag, proves the fetched object equals the pinned tag commit, reads the canonical manifest from that exact commit, binds package identity to trusted discovery, binds the process on port 4317 to the selected application root, validates the actual rollback pointer, writes install provenance atomically and appends a no-provider audit event.
-
-## SPEND AND REVIEW BOUNDARIES
-
-- TRACE review task `TRACE-V026-CC-REVIEW-001` is read-only and permits no provider call or spend;
-- successful Campfire provenance reconciliation made no live provider calls;
-- the earlier full diagnostic's approximately £0.0025 provider-probe delta remains preserved as a separate historical fact;
-- prior CC review task `COM-V032-CC-REVIEW-003` was requested with explicit nonce and exact-head transitions;
-- no CC-authored ACK or terminal verdict was observed before its bounded integration;
-- that remains unresolved historical review coverage, not agreement, refusal, failure, clearance or validation.
+Windows Production remains reconciled at v0.18.31 with no new provider call or spend in this TRACE lane.
 
 ## COMS
 
-- **Mark:** human authority; reports Claude performed COMS and authorizes the current TRACE review lane.
-- **Framework / `FW-20260804-TRACE026-9C2E`:** integration and observation owner for `TRACE-V026-CC-REVIEW-001`; integration hold active.
-- **CC / `CC-20260804T1940+0100-7D31`:** task acknowledged at exact head; terminal hostile-review verdict pending; no mutation reported.
+- **Mark:** human authority.
+- **Framework / `FW-20260804-TRACE026-9C2E`:** integrated the NARROW return, applied the bounded repair, corrected the false absence projection, and holds merge/integration pending CC re-review.
+- **CC / `CC-20260804T1940+0100-7D31`:** original verdict `NARROW`; repaired exact head returned for re-anchored review; no mutation reported.
 - **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
-Do not merge TRACE PR #17 or begin full `TRACE_FORMAL_SEED_v0_2_6.md` compilation before Framework integrates the CC terminal return, unless Mark explicitly overrides that gate.
+Do not merge TRACE PR #17 or begin full `TRACE_FORMAL_SEED_v0_2_6.md` compilation before Framework integrates the CC re-review return, unless Mark explicitly overrides that gate.
 
-Do not infer validation from the candidate, CC agreement, green CI, mergeability or a future version label.
+Do not infer semantic validity from package-integrity CI, CC agreement, mergeability, or a future version label.
 
-Do not begin Campfire Relay v0.19/Exchange, another model-catalogue refresh or paid-provider work without new explicit authority.
+Do not report `NOT_OBSERVED` from an explicitly truncated route retrieval.
+
+Do not begin Campfire Relay v0.19/Exchange, another model-catalogue refresh, or paid-provider work without new explicit authority.
 
 `The lullaby was never for the cradle`.
