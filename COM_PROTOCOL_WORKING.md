@@ -113,6 +113,8 @@ Identity claim, transport principal, capability, authority, and reachability are
 
 `COM_STATE.md` is the compact current projection; history and evidence are durable and are not retransmitted during normal operation. Current state never rewrites history.
 
+A freshness anchor for `COM_STATE.md` establishes which projection bytes were current at that carrier/object boundary. It does **not** establish that the projection has already incorporated every later event on every route it references. Carrier freshness and projection completeness are separate questions.
+
 Do not store a self-referential `current_head` inside `COM_STATE.md`. Use carrier/object identity from the retrieval that actually occurred. An internal `state_basis` may name the prior state an update was based on.
 
 A mutable name or URL is navigation, not an anchor. Before state-dependent action, establish a freshness anchor adequate to that action from the route/carrier when possible. Examples include a commit/head/object identity returned by the carrier. Content identity alone may prove which bytes were read without proving that a mutable branch still points there; consequence determines how strong the anchor must be.
@@ -189,12 +191,16 @@ If the cold aperture has no writable COM route, it may emit its `HELLO` through 
 3. establish role/runtime/model/provider/session honestly;
 4. if this is first participation and the aperture is not established, use the `HELLO` rule before expecting to be addressed or authorized;
 5. locate only tasks addressed to this aperture or role on sufficiently anchored state;
-6. if delegated work is shown as active and this aperture owns integration/status, inspect the declared `reply_route` before reporting `WAIT` or `IDLE`; if the route cannot be inspected, report bounded `NOT_OBSERVED` rather than assuming work is still running;
-7. verify authority and control before any write;
-8. follow the task body or an immutable route object named by state — do not depend on a long issue transcript as the sole carrier of an active instruction;
-9. if retrieval/freshness evidence contradicts itself, report `DEGRADED` with bounded evidence and stop affected mutation;
-10. if no task is addressed here, do not take another aperture's task;
-11. if synchronized and idle, stop.
+6. if a projected task's status materially affects what this aperture would do next, inspect its declared `reply_route` before reporting `WAIT` or `IDLE`, or before replaying the projected instruction;
+7. if preserved route evidence establishes that the projected task has already been satisfied, terminated, corrected, cancelled, or superseded, treat the projection as lagging for that task: do not replay the instruction or duplicate its terminal event; report the bounded projection lag and the route evidence instead. Projection correction remains an explicit authorized state-write event — observing the route does not silently rewrite `COM_STATE.md`;
+8. if the declared route cannot be inspected, or preserved identity/relation is insufficient to establish what happened to that task, report bounded `NOT_OBSERVED` / `UNKNOWN` as appropriate rather than inferring either completion or continued work;
+9. verify authority and control before any write;
+10. follow the task body or an immutable route object named by state — do not depend on a long issue transcript as the sole carrier of an active instruction;
+11. if retrieval/freshness evidence contradicts itself, report `DEGRADED` with bounded evidence and stop affected mutation;
+12. if no task is addressed here, do not take another aperture's task;
+13. if synchronized and idle, stop.
+
+This is a task-scoped reconciliation rule, not a global rule that route content automatically overrides projection state. The route evidence must be the task's declared route and must preserve enough identity/relation to support the bounded conclusion being drawn.
 
 When literal `COMS` is explicitly invoked, the requirement travels with the invocation across transports: private conversation, COM route, or human relay. Completion must be externally auditable from that return. Emit this bounded result before optional commentary:
 
