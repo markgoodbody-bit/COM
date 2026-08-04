@@ -1,110 +1,95 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — CAMPFIRE RELAY v0.18.31 RUNNING / LAUNCHER v0.1.6 PROVENANCE RECOVERY READY
+STATUS: STABLE — CAMPFIRE RELAY v0.18.31 RELEASED, INSTALLED, PROVENANCE-BOUND AND ROLLBACK-READY
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `COM-V032-PRODUCTION-ACTIVATE-001`
-- active_route: COM issue #22
-- task_status: OPEN / FUNCTIONALLY ACTIVATED / LOCAL PROVENANCE RECONCILIATION READY
+- active_task: NONE
 - integration_owner: Framework / Build 3, session `FW-BUILD3-20260803T202518Z-6A91`
-- current_product_lane: Campfire Relay v0.18.31 released and running; launcher v0.1.6 integrated
-- next_action: update the installed launcher to v0.1.6, run the no-provider provenance reconciliation tool, and return its complete JSON output
+- current_product_lane: Campfire Relay v0.18.31 stable maintenance baseline
+- Windows Production activation task: `COM-V032-PRODUCTION-ACTIVATE-001` — COMPLETE / issue #22 closed
+- installed-provenance defect: `CR-V01831-INSTALLED-PROVENANCE-MISSING-001` — REPAIRED FOR INSTALLED v0.18.31
+- launcher: v0.1.6 on trusted `launcher-production` channel
+- next_action: NONE ASSIGNED; await Mark's explicit direction
 
-## RELEASED AND RUNNING TARGET
+## RELEASED AND INSTALLED TARGET
 
 Repository: `markgoodbody-bit/campfire-relay`
 
 - application: `0.18.31`
 - model catalogue: `2026.08.03.1`
+- production tag: `campfire-production-v0.18.31`
+- release/tag commit: `c035d5b65da804f68aad4c2def895848c66f9e2b`
 - packaged source commit: `f88e808f13c30abdb646b14876be864db3f14293`
 - packaged source tree: `6fbfe992ee4b8e04defecdf57c4de0dd53fd121c`
-- release-record main commit: `c035d5b65da804f68aad4c2def895848c66f9e2b`
-- production tag: `campfire-production-v0.18.31`
 - package SHA-256: `70e423075b101905aa65da1277da2799eff7028cddacc67169a27fdc6ec97bd4`
-- Windows origin: `http://127.0.0.1:4317`
-- observed app version: `0.18.31`
-- observed runtime root: `~/CampfireRelay/CAMPFIRE_RELAY_v0_18_31`
-- observed ledger integrity: 83/83 files, 1627 lines, malformed 0, duplicate event ids 0, duplicate terminal ids 0, cost history complete
+- release-content-manifest SHA-256: `094dfeeb0f5442933cd6b2e682475c7cd00b08dc392f37d6f69a244658dadd12`
+- catalogue-manifest SHA-256: `f1fce253299da622e54df571b1551a56a353ef1b51c8014d5836a257c6086eaf`
 
-The returned full diagnostic ran eight live provider probes and recorded approximately £0.0025. No further provider call is required or authorized for this repair.
+## WINDOWS PRODUCTION EVIDENCE
 
-## DEFECT
+Observed from launcher v0.1.6 reconciliation output on 2026-08-04:
 
-`CR-V01831-INSTALLED-PROVENANCE-MISSING-001`
+- reconciliation status: `provenance_reconciled`
+- health: `ok=true`, name `Campfire Relay`, version `0.18.31`
+- health timestamp: `2026-08-04T16:01:44.276Z`
+- runtime root: `C:\Users\markg\CampfireRelay\CAMPFIRE_RELAY_v0_18_31`
+- persistent provenance: `C:\Users\markg\CampfireRelay\STATE\data\install-provenance.json`
+- installed-at: `2026-08-04T16:01:44.7395462Z`
+- current target: `CAMPFIRE_RELAY_v0_18_31`
+- rollback target: `CAMPFIRE_RELAY_v0_18_3`
+- `START_PREVIOUS_CAMPFIRE.ps1` exists: true
+- audit timestamp: `2026-08-04T16:01:44.7637072Z`
+- audit result: `provenance-reconciled`
+- reconciliation: `trusted-github-release`
+- local self-test: `completed-without-live-provider-probes`
+- reconciliation provider calls: none
 
-Confirmed root cause:
+The local source commit, tree, package SHA, tag commit and release ref exactly matched the immutable Production release manifest.
 
-1. the v0.18.31 Production ZIP was created with raw `git archive`;
-2. the runtime persists exact installed identity only when local/package provenance metadata exists;
-3. the release package did not contain that metadata;
-4. the installed diagnostic therefore could not attest source commit, source tree, package SHA, installed-at timestamp or launcher targets.
+Preserved Production directories observed:
 
-The version and directory name alone are not exact package provenance.
+- `CAMPFIRE_RELAY_v0_18_31`
+- `CAMPFIRE_RELAY_v0_18_3`
+- `CAMPFIRE_RELAY_v0_18_2_1`
+- `CAMPFIRE_RELAY_v0_18_2`
+- `CAMPFIRE_RELAY_v0_18_1`
+- `CAMPFIRE_RELAY_v0_18_0`
+- `CAMPFIRE_RELAY_v0_17_9`
+- `CAMPFIRE_RELAY_v0_17_8`
+- `CAMPFIRE_RELAY_v0_17_7`
 
-## INTEGRATED REPAIR
+## LAUNCHER REPAIR RECORD
 
 PR #161: `Launcher v0.1.6: reconcile installed Production provenance`
 
-- base: `launcher-production` at `03f7346cb968bd4e02102bcced6fe0af9d88230c`
 - exact reviewed head: `4d15864b5c8c16dc0df22054676817542584066e`
-- merge commit: `945903b98e889a9e5712b260d32613df67191ea7`
-- launcher version: `0.1.6`
-- changed files: exactly 3
+- launcher-production merge commit: `945903b98e889a9e5712b260d32613df67191ea7`
 - hosted CI: campfire-ci #1044 — SUCCESS
-- state: MERGED INTO TRUSTED LAUNCHER CHANNEL
+- application v0.18.31, immutable tag and published release: unchanged
 
-The recovery tool:
+The launcher recovery path authenticates the current Production tag, proves the fetched object equals the pinned tag commit, reads the canonical manifest from that exact commit, binds package identity to trusted discovery, binds the process on port 4317 to the selected application root, validates the actual rollback pointer, writes install provenance atomically and appends a no-provider audit event.
 
-- authenticates and pins the current stable Production tag through the existing release channel;
-- requires installed Production to be up to date with that exact release;
-- proves `FETCH_HEAD^{commit}` equals the authenticated tag commit;
-- reads the manifest from the exact authenticated commit and canonical path;
-- binds package SHA to trusted discovery;
-- verifies health name/version and binds the port-4317 process root through the free local `/api/self-test`;
-- reads the actual rollback target from `START_PREVIOUS_CAMPFIRE.ps1`;
-- refuses an outside-root, invalid or missing rollback directory;
-- atomically writes `STATE/data/install-provenance.json`;
-- appends a `provenance-reconciled` audit event;
-- performs no live provider calls.
+## SPEND AND REVIEW BOUNDARIES
 
-## REVIEW BOUNDARY
-
-CC review task `COM-V032-CC-REVIEW-003` on issue #23 is closed after bounded integration.
-
-- nonce-bearing request was persisted;
-- no CC-authored ACK or terminal verdict was observed;
+- successful provenance reconciliation made no live provider calls;
+- the earlier full diagnostic's approximately £0.0025 provider-probe delta remains preserved as a separate historical fact;
+- CC review task `COM-V032-CC-REVIEW-003` was requested with explicit nonce and exact-head transitions;
+- no CC-authored ACK or terminal verdict was observed before bounded integration;
 - this remains unresolved review coverage, not agreement, refusal, failure, clearance or validation.
-
-Framework's own hostile pass found and repaired four material weaknesses before integration: running-root binding, actual rollback-pointer binding, mutable fetched-object binding, and the PowerShell literal-`$previous` parser defect.
-
-## LOCAL EXECUTION
-
-1. Open the Campfire Relay Launcher.
-2. Press `CHECK GITHUB`.
-3. Apply the launcher update to `0.1.6` and allow restart.
-4. Run in PowerShell:
-
-```powershell
-$script = Join-Path $HOME 'CampfireRelay\LAUNCHER\campfire-relay\RECONCILE_CAMPFIRE_PROVENANCE_FROM_GITHUB.ps1'
-if (-not (Test-Path $script)) { throw "Reconciliation tool not found: $script" }
-& $script -JsonOnly
-```
-
-Return the complete JSON output. Do not edit provenance manually and do not rerun the full live-provider diagnostic.
 
 ## COMS
 
-- **Mark:** active local operator and human authority; run the bounded reconciliation and return JSON.
-- **Framework / Build 3:** launcher repair integrated; owns issue #22 evidence reconciliation and closure decision.
-- **CC:** review task closed with no observed return; no mutation authority.
-- **Build 2 / Campfire 1 / QW / other apertures:** no active task.
+- **Mark:** human authority; no active local task.
+- **Framework / Build 3:** v0.18.31 release, Windows activation and installed-provenance reconciliation closed.
+- **CC:** no active task or mutation authority.
+- **Build 2 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
-Production v0.18.31 remains running. Do not begin v0.19/Exchange or another catalogue refresh. Do not call providers to prove installation. Do not manually fabricate installed provenance.
+Do not infer general product validation from release, CI, installation or provenance closure. Do not begin v0.19/Exchange, another model-catalogue refresh or paid-provider work without new explicit authority.
 
 `The lullaby was never for the cradle`.
