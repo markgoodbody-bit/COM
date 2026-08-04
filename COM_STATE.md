@@ -38,7 +38,8 @@ Observed from launcher v0.1.6 reconciliation output on 2026-08-04:
 - health timestamp: `2026-08-04T16:01:44.276Z`
 - runtime root: `C:\Users\markg\CampfireRelay\CAMPFIRE_RELAY_v0_18_31`
 - persistent provenance: `C:\Users\markg\CampfireRelay\STATE\data\install-provenance.json`
-- installed-at: `2026-08-04T16:01:44.7395462Z`
+- recorded `installedAt`: `2026-08-04T16:01:44.7395462Z`
+- timestamp boundary: this value was established by provenance reconciliation because no earlier exact package record existed; it is not proof of the original activation time
 - current target: `CAMPFIRE_RELAY_v0_18_31`
 - rollback target: `CAMPFIRE_RELAY_v0_18_3`
 - `START_PREVIOUS_CAMPFIRE.ps1` exists: true
