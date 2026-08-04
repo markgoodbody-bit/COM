@@ -1,100 +1,154 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.6 NARROW REPAIR APPLIED; CC RE-REVIEW PENDING
+STATUS: ACTIVE — TRACE v0.2.6 COMPILED WORKING CANDIDATE MERGED; RELEASE/CANON NOT GRANTED
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `TRACE-V026-CC-REVIEW-001` — NARROW returned, accepted and repaired; CC re-review pending on COM issue #24
+- active_task: `NONE`
 - integration_owner: Framework, session `FW-20260804-TRACE026-9C2E`
-- observation_owner: Framework, session `FW-20260804-TRACE026-9C2E`
-- addressed_reviewer: CC, session `CC-20260804T1940+0100-7D31`
-- reply_route: `markgoodbody-bit/COM` issue #24
-- next_check: MANUAL on CC re-review return for repaired head
-- current_product_lane: TRACE v0.2.6 transition candidate repair review
+- observation_owner: `NONE`
+- next_action: `NONE — await Mark direction`
+- current_product_lane: TRACE v0.2.6 compiled working candidate
+- completed_review_task: `TRACE-V026-CC-REVIEW-001` — CLOSED / COM issue #24
 - comms_defect: `COM-V032-ISSUE-COMMENT-TRUNCATION-001` — OPEN / COM issue #25
-- Campfire Relay lane: v0.18.31 stable maintenance baseline; no new Campfire task
+- Campfire Relay lane: v0.18.31 stable maintenance baseline; no active Campfire task
 
-## TRACE v0.2.6 REVIEW AND REPAIR
-
-Task: `TRACE-V026-CC-REVIEW-001`
+## TRACE v0.2.6 CURRENT STATE
 
 Repository: `markgoodbody-bit/TRACE`
 
-PR: #17 — `Build TRACE v0.2.6 transition candidate`
-
-Base SHA:
+Current main commit:
 
 ```text
-983aeec18d41935ec59dd84c70bc6b0dcd49e287
+e4df6e9bb7cc6e236395836e41edc6d7025985e6
 ```
 
-Original reviewed head:
+Formal object:
 
 ```text
-abfd4ebfcd645ef78604cd3123ca367494e0a8b2
+TRACE_FORMAL_SEED_v0_2_6.md
 ```
 
-CC terminal return:
+Status:
 
-- full comment: `5183287806`, posted 2026-08-04T18:52:00Z;
-- short-form comment: `5183326850`;
-- verdict: `NARROW — bounded repair required before compilation`;
-- CC mutation: none reported.
+```text
+COMPILED WORKING CANDIDATE
+NOT RELEASED
+NOT CANON
+NOT VALIDATED
+NOT AUTHORITY
+```
 
-Accepted findings:
+The repository front door exposes both the v0.2.5 reviewed test baseline and the v0.2.6 compiled working candidate.
+
+## TRANSITION PACKAGE
+
+PR #17: `Build TRACE v0.2.6 transition candidate`
+
+- original reviewed head: `abfd4ebfcd645ef78604cd3123ca367494e0a8b2`
+- CC verdict: `NARROW — bounded repair required before compilation`
+- repaired exact head: `963875f003841e813ecfb65493e65b09495e12f6`
+- merge commit: `e310b9e0314213524183d1ffe83e14f2d4f0745c`
+
+Accepted and repaired findings:
 
 1. `TRACE-V026-VALIDATOR-VACUITY-001`
-   - original checker passed gutted narrative artefacts while failing whitespace-only reflow;
-   - original green CI established weak string/manifest consistency, not substantive candidate validity.
+   - original checker passed gutted narrative artefacts and failed whitespace-only reflow;
+   - executable scope was bounded to package integrity and declared-contract checks;
+   - normalized artefact bindings and hostile regressions were added.
 2. `TRACE-V026-F03-F04-CONTAINMENT-WARRANT-001`
-   - the candidate did not explicitly state what v0.2.5's general aperture-relativity fails to provide;
-   - F03/F04 carried the whole version-bump warrant and required an explicit non-duplication argument.
+   - F03/F04 carried the version-bump warrant without stating what v0.2.5 failed to provide;
+   - the explicit containment and non-duplication argument was added.
 
-Repaired head:
+The requested additional CC re-review of the repaired transition-package head was not received before Mark explicitly instructed Framework to proceed. That event is recorded as:
 
 ```text
-963875f003841e813ecfb65493e65b09495e12f6
+ADDITIONAL_RE_REVIEW_NOT_RECEIVED_BEFORE_HUMAN_OVERRIDE
 ```
 
-Repair applied:
+It is not `CLEAR`, agreement, refusal, failed review, or silence-as-clearance.
 
-- executable scope renamed and bounded to `PACKAGE_INTEGRITY_AND_DECLARED_CONTRACT_ONLY`;
-- README and machine output state that green CI is not semantic validity, adequacy of the argument, or TRACE validation;
-- normalized SHA-256 bindings cover the disposition matrix, formal patch and regression contract;
-- whitespace-only reflow is normalized;
-- patch A-G section closure is checked;
-- R01-R12 and V26-A-H are parsed as 20 distinct non-empty sections;
-- hostile tests reproduce the gutted-document and whitespace-only mutations;
-- F03/F04 containment test now states both the v0.2.5 general rules and the missing target-set specialization;
-- explicit withdrawal condition: if full compilation cannot preserve the specialization using existing objects, demote F03/F04 and withdraw the version bump.
+## FULL-SEED COMPILATION
 
-Hosted evidence at repaired head:
+PR #18: `Compile TRACE formal seed v0.2.6`
 
-- workflow: `TRACE v0.2.6 transition package integrity` run #14;
-- conclusion: SUCCESS;
-- normalized artefact digests checked: 3;
-- regression sections checked: 20;
-- tests: 13 passed;
-- errors: 0;
-- warnings: 0.
+- base main: `e310b9e0314213524183d1ffe83e14f2d4f0745c`
+- exact reviewed head: `6a15d433d827bec670c73258021c1e2863bed3da`
+- merge commit: `e4df6e9bb7cc6e236395836e41edc6d7025985e6`
+- changed files: 5
+- compiled object: `TRACE_FORMAL_SEED_v0_2_6.md`
+- deterministic compiler: `tools/compile_trace_v026.py`
+- workflow: `.github/workflows/trace-v026-full-seed.yml`
 
-Current PR state:
+Admitted formal repair:
 
-- open;
-- mergeable;
-- not merged;
-- full `TRACE_FORMAL_SEED_v0_2_6.md` not compiled.
+```text
+TARGET_SET_SELECTION_IS_APERTURE_BEARING
+ACCOUNTING_AND_COVERAGE_ARE_APERTURE_RELATIVE
+```
 
-Framework returned repaired head `963875f003841e813ecfb65493e65b09495e12f6` to CC on issue #24 and requested re-anchored `BREAK`, `NARROW`, or `CLEAR FOR FRAMEWORK INTEGRATION DECISION`.
+The compiled seed also preserves the already-established ceilings:
+
+```text
+DIVERGENT_READINGS != AUTHORITY
+ROUTE_TO_BRAKE != CORRECTION_COMPLETED
+TARGET_SET_RECORDED != TARGET_SET_COMPLETE
+COVERAGE_CHECK_PASSED != DILIGENCE_ESTABLISHED
+AUTHORITY_HANDOFF_RECORDED != AUTHORITY_LEGITIMATED
+BRAKE_ACTIVATION_RECORDED != TRANSITION_INTERRUPTED
+TRANSITION_INTERRUPTED != HARM_PREVENTED
+```
+
+No new primitive, node type, edge type, port, controlled-vocabulary member, required packet field, selector, value rule, or moral authority was added.
+
+## EXACT-HEAD EVIDENCE
+
+At full-seed reviewed head `6a15d433d827bec670c73258021c1e2863bed3da`:
+
+- full-seed workflow run #6 / run id `30957382712`: SUCCESS;
+- transition-package integrity run #15 / run id `30957382717`: SUCCESS;
+- base lines: 5,455;
+- compiled lines: 5,591;
+- bounded insertion families: 6;
+- mixed old identifier occurrences: 0;
+- embedded minimum-schema shape identical after version normalization: true;
+- hostile compiler tests: 4 PASS;
+- deterministic committed-output check: PASS;
+- whitespace/diff integrity: PASS.
+
+Compiler hostile cases reject:
+
+- gutted target-set repair;
+- mixed v0.2.5/v0.2.6 identifiers;
+- minimum-schema shape growth;
+- stale or manually altered generated output.
+
+Line-ending-only reflow is non-material.
+
+This establishes deterministic compilation and declared-contract integrity only. It does not establish semantic sufficiency, world validity, operational effectiveness, decision advantage, release readiness, or canon.
+
+## REVIEW ROUTE CLOSURE
+
+COM issue #24 is closed as completed.
+
+Terminal task state:
+
+```text
+TRACE-V026-CC-REVIEW-001
+NARROW_RECEIVED
+NARROW_INTEGRATED
+ADDITIONAL_RE_REVIEW_NOT_RECEIVED_BEFORE_HUMAN_OVERRIDE
+TRANSITION_PACKAGE_MERGED
+FULL_SEED_COMPILED_AND_MERGED
+TASK_CLOSED
+```
 
 ## CORRECTION — FALSE `NOT_OBSERVED`
 
-Framework's earlier projection that the CC terminal verdict was `NOT_OBSERVED` was wrong.
-
-The GitHub issue-comment response explicitly reported that its output was truncated at a line boundary. Framework saw only comments 1 and 2 and treated that incomplete response as exhaustive. Comment 3 already existed and contained the complete terminal verdict.
+Framework's earlier projection that the CC terminal verdict was `NOT_OBSERVED` was wrong. The issue-comment response was explicitly truncated before the terminal comment.
 
 Correct distinctions:
 
@@ -104,15 +158,13 @@ MISSING_FROM_TRUNCATED_OUTPUT != NOT_OBSERVED_ON_ROUTE
 RETRIEVAL_INCOMPLETE != EVENT_ABSENT
 ```
 
-The correction is recorded on COM issue #24 in Framework comment `5183360524`.
+The operational repair remains active: a visibly truncated route retrieval cannot support `NOT_OBSERVED` for later events. Use response-resource search/read, direct comment identity, another bounded query, or report `RETRIEVAL_INCOMPLETE`.
 
-The comms-lane defect is recorded as COM issue #25:
+The comms-lane defect remains open as COM issue #25:
 
 ```text
 COM-V032-ISSUE-COMMENT-TRUNCATION-001
 ```
-
-Operational rule now applied: a visibly truncated route retrieval cannot support `NOT_OBSERVED` for later events. Use response-resource search/read, direct comment identity, another bounded query, or report `RETRIEVAL_INCOMPLETE`.
 
 ## RELEASED AND INSTALLED CAMPFIRE TARGET
 
@@ -125,23 +177,21 @@ Repository: `markgoodbody-bit/campfire-relay`
 - packaged source commit: `f88e808f13c30abdb646b14876be864db3f14293`
 - packaged source tree: `6fbfe992ee4b8e04defecdf57c4de0dd53fd121c`
 - package SHA-256: `70e423075b101905aa65da1277da2799eff7028cddacc67169a27fdc6ec97bd4`
-- release-content-manifest SHA-256: `094dfeeb0f5442933cd6b2e682475c7cd00b08dc392f37d6f69a244658dadd12`
-- catalogue-manifest SHA-256: `f1fce253299da622e54df571b1551a56a353ef1b51c8014d5836a257c6086eaf`
 
-Windows Production remains reconciled at v0.18.31 with no new provider call or spend in this TRACE lane.
+Windows Production remains reconciled at v0.18.31. No provider call or spend occurred in the TRACE v0.2.6 build and review lane.
 
 ## COMS
 
-- **Mark:** human authority.
-- **Framework / `FW-20260804-TRACE026-9C2E`:** integrated the NARROW return, applied the bounded repair, corrected the false absence projection, and holds merge/integration pending CC re-review.
-- **CC / `CC-20260804T1940+0100-7D31`:** original verdict `NARROW`; repaired exact head returned for re-anchored review; no mutation reported.
+- **Mark:** human authority; release and canon authority retained.
+- **Framework / `FW-20260804-TRACE026-9C2E`:** integrated the CC NARROW return, applied the bounded repairs, compiled and exact-head reviewed v0.2.6, merged the working candidate, and closed the review lane.
+- **CC / `CC-20260804T1940+0100-7D31`:** original verdict `NARROW`; no additional repaired-head re-review received before Mark's override; no mutation reported.
 - **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
-Do not merge TRACE PR #17 or begin full `TRACE_FORMAL_SEED_v0_2_6.md` compilation before Framework integrates the CC re-review return, unless Mark explicitly overrides that gate.
+Do not call TRACE v0.2.6 released, canon, validated, world-valid, operationally effective, or decision-advantaged without a separate explicit act and evidence appropriate to that claim.
 
-Do not infer semantic validity from package-integrity CI, CC agreement, mergeability, or a future version label.
+Do not infer CC clearance from the human override or completed build.
 
 Do not report `NOT_OBSERVED` from an explicitly truncated route retrieval.
 
