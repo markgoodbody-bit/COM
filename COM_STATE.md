@@ -147,30 +147,36 @@ PR #163: `Launcher v0.1.7: install verified TRACE profile channels`
 ```text
 base channel: launcher-production
 base: 945903b98e889a9e5712b260d32613df67191ea7
-head: dbc6469fbc20b35638922a9d622d6c98f62d8128
+head: 9a9d34d0f7fad0ba3767f99cabca40961c0a6e4e
 state: DRAFT / OPEN / MERGEABLE / UNMERGED
-hosted CI: campfire-ci #1054 SUCCESS
+hosted CI: campfire-ci #1059 SUCCESS
 launcher version: 0.1.7
+changed files: 6
 ```
 
 The installer:
 
+- holds an exclusive `trace-profile-install.lock` before cache or persistent-state mutation;
 - fetches `trace-profile-production` into a dedicated bare cache;
 - rejects a non-fast-forward rewrite from the previously accepted channel commit;
 - archives the channel manifest and selected profile from one exact commit;
 - fetches the TRACE source repository and exact declared source commit;
 - verifies source SHA-256 `de21182f...`;
-- binds the process on port 4317 to its `/api/self-test.runtimePaths.appRoot`;
-- dynamically imports that exact installed Campfire build's `src/traceActivation.mjs`;
+- binds port 4317 to a versioned app root under the expected Campfire directory;
+- requires `/api/health.version` to match that root's `VERSION.txt`;
+- dynamically imports that exact running Campfire build's `src/traceActivation.mjs`;
 - reuses the running build's verified profile install lifecycle;
 - installs source under persistent `PROJECT_WORKSPACE/TRACE/CURRENT`;
 - installs the profile under persistent `PROJECT_WORKSPACE/TRACE_MODULES`;
 - byte-compares `active.json` before and after;
 - does not activate or promote;
-- rolls back newly created source/profile state on late transaction failure;
-- appends a no-provider install audit event.
+- rolls back newly created source/profile state on ordinary late transaction failure;
+- if operator activation changes `active.json` concurrently, stops and preserves verified state rather than deleting a profile that may now be active;
+- appends a no-provider install audit event only on clean success.
 
-## FAILED ATTEMPT PRESERVED
+## FAILED ATTEMPTS PRESERVED
+
+### Lifecycle-source mismatch
 
 Launcher head `472759a933b8c74470d82c8445afcdbadfb39154` failed `campfire-ci #1048`.
 
@@ -182,7 +188,13 @@ launcher checkout's older src/traceActivation.mjs
 installed v0.18.31 application lifecycle
 ```
 
-The launcher checkout lacked `installBundledTraceProfileCandidate`. The successor binds to the actual running application root. The released v0.18.31 source commit `f88e808f13c30abdb646b14876be864db3f14293` exposes the required install function. The failed run remains evidence; it was not silently retried.
+The launcher checkout lacked `installBundledTraceProfileCandidate`. The successor binds to the actual running application root. The released v0.18.31 source commit `f88e808f13c30abdb646b14876be864db3f14293` exposes the required install function.
+
+### Stale source-contract assertion
+
+Installer head `a6f4eaf0e5829c3d82153d3f42169fa82584a8d3` failed `campfire-ci #1058` because a source-contract test still required wording removed by the concurrency-safe implementation. The executable transaction tests, including concurrent activation preservation, passed. The stale assertion was corrected at final head `9a9d34d0...` and CI #1059 passed.
+
+No failed run was silently retried or erased.
 
 ## REVIEW
 
@@ -215,7 +227,7 @@ Campfire Relay v0.18.31 remains released, installed, healthy, provenance-bound, 
 ## COMS
 
 - **Mark:** human authority; requested TRACE v0.2.7 be pluggable into Campfire and separately requested a public-facing TRACE repository update.
-- **Framework / Build 3:** built the separate profile and installer channels, preserved the failed candidate, obtained exact-head hosted CI, and owns Campfire review integration.
+- **Framework / Build 3:** built the separate profile and installer channels, preserved both failed candidates, obtained exact-head hosted CI, and owns Campfire review integration.
 - **Framework / `FW-20260805-TRACE-PUBLIC-6B4E`:** built TRACE PR #31 and owns public-front-door review integration only.
 - **CC:** active read-only reviewer on COM issues #31 and #32; no mutation authority.
 - **Other Framework sessions / Build 2 / Campfire 1 / QW / other apertures:** no mutation authority on these lanes unless separately assigned.
