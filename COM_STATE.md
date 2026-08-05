@@ -1,6 +1,6 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.7 CAMPFIRE PROFILE/INSTALLER REVIEW AND TRACE PUBLIC FRONT-DOOR REVIEW
+STATUS: ACTIVE — TRACE v0.2.7 CAMPFIRE CHANNELS INTEGRATED / LOCAL INSTALL PENDING; TRACE PUBLIC FRONT-DOOR REVIEW ACTIVE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, polished prose, public interest, and successful model output are not proof.
 
@@ -9,14 +9,14 @@ COM is a working coordination baseline, not canon, validation, consensus, or a t
 - human_authority: Mark
 - active_task: `COM-V032-TRACE027-CAMPFIRE-001`
 - active_route: COM issue #30
-- review_task: `COM-V032-CC-REVIEW-004`
-- review_route: COM issue #32
 - integration_owner: Framework / Build 3, session `FW-BUILD3-20260803T202518Z-6A91`
-- current_product_lane: plug released TRACE v0.2.7 into Campfire as a replaceable hash-bound judging profile
-- profile_candidate: Campfire PR #162 — DRAFT / OPEN / MERGEABLE / UNMERGED
-- installer_candidate: Campfire PR #163 — DRAFT / OPEN / MERGEABLE / UNMERGED
-- merge_gate: HELD pending review integration or explicit Mark override
-- local_install_gate: HELD; no Windows mutation yet
+- current_product_lane: install and explicitly activate released TRACE v0.2.7 in Campfire
+- profile_channel: INTEGRATED / `trace-profile-production` at `8eb0f9e8a73192f3446c05df6564b4d042c3f0d8`
+- launcher_channel: INTEGRATED / `launcher-production` at `06716db65a2e85054eb71c8c84f13ad33877e3f7`
+- review_task: `COM-V032-CC-REVIEW-004` — CLOSED / issue #32
+- review_return: no CC-authored ACK or terminal verdict observed; unresolved coverage preserved
+- local_install_gate: READY / waiting for Mark to update launcher and return Stage 1 JSON
+- local_activation_gate: HELD until Stage 1 install evidence is reconciled
 - provider_calls_or_spend: NONE
 - concurrent_task: `TRACE-PUBLIC-FRONT-DOOR-001`
 - concurrent_route: COM issue #31
@@ -77,7 +77,7 @@ REVIEW_TEMPLATE != REVIEW RESULT
 
 This concurrent lane does not change the formal seed, PDF, release declaration, schema, compiler, probes, carrier build machinery, formal vocabulary, semantics, release status, authority, permission, clearance, or validation status.
 
-CC review route: COM issue #31. Framework session `FW-20260805-TRACE-PUBLIC-6B4E` owns integration and observation for this lane only. It has no mutation authority over the concurrent Campfire task.
+CC review route: COM issue #31. Framework session `FW-20260805-TRACE-PUBLIC-6B4E` owns integration and observation for this lane only. It has no mutation authority over the Campfire local-install lane.
 
 ## RELEASED TRACE SOURCE ANCHOR
 
@@ -106,25 +106,17 @@ NOT_CLEARANCE
 
 TRACE v0.2.7 rendered carrier work is complete and integrated on TRACE main `6704743ef5435a65793ea35e2c92ca238cc920e1`. The Markdown object remains the formal source. The Campfire integration does not depend on the PDF carrier. The public-front-door candidate does not alter either object.
 
-## PROFILE CHANNEL CANDIDATE
+## INTEGRATED PROFILE CHANNEL
 
 PR #162: `Add released TRACE v0.2.7 as a Campfire judging profile`
 
 ```text
-base channel: trace-profile-production
-base: c035d5b65da804f68aad4c2def895848c66f9e2b
-head: 36d412e090b09a7328c004352d0558686a4640dd
-state: DRAFT / OPEN / MERGEABLE / UNMERGED
+reviewed head: 36d412e090b09a7328c004352d0558686a4640dd
 hosted CI: campfire-ci #1050 SUCCESS
-changed files: 8
-```
-
-Profile identity:
-
-```text
+merged channel commit: 8eb0f9e8a73192f3446c05df6564b4d042c3f0d8
+channel: trace-profile-production
 profile id: trace-formal-v0-2-7
 profile version: 1.0.0
-channel: trace-profile-production
 install by default: false
 activate by default: false
 ```
@@ -138,20 +130,17 @@ The profile:
 - includes an inspectable manual source-section map;
 - explicitly states that it is not the complete formal object or an automatic compiler;
 - preserves `trace-judge-v1` as an installed rollback candidate;
-- does not activate automatically.
+- does not install or activate automatically.
 
-## LAUNCHER INSTALLER CANDIDATE
+## INTEGRATED LAUNCHER INSTALLER
 
 PR #163: `Launcher v0.1.7: install verified TRACE profile channels`
 
 ```text
-base channel: launcher-production
-base: 945903b98e889a9e5712b260d32613df67191ea7
-head: 9a9d34d0f7fad0ba3767f99cabca40961c0a6e4e
-state: DRAFT / OPEN / MERGEABLE / UNMERGED
+reviewed head: 9a9d34d0f7fad0ba3767f99cabca40961c0a6e4e
 hosted CI: campfire-ci #1059 SUCCESS
+merged channel commit: 06716db65a2e85054eb71c8c84f13ad33877e3f7
 launcher version: 0.1.7
-changed files: 6
 ```
 
 The installer:
@@ -178,63 +167,73 @@ The installer:
 
 ### Lifecycle-source mismatch
 
-Launcher head `472759a933b8c74470d82c8445afcdbadfb39154` failed `campfire-ci #1048`.
-
-Demonstrated defect:
-
-```text
-launcher checkout's older src/traceActivation.mjs
-!=
-installed v0.18.31 application lifecycle
-```
-
-The launcher checkout lacked `installBundledTraceProfileCandidate`. The successor binds to the actual running application root. The released v0.18.31 source commit `f88e808f13c30abdb646b14876be864db3f14293` exposes the required install function.
+Launcher head `472759a933b8c74470d82c8445afcdbadfb39154` failed `campfire-ci #1048` because the launcher checkout's older lifecycle module lacked the installed application's verified install export. The repair binds to the exact running application root.
 
 ### Stale source-contract assertion
 
-Installer head `a6f4eaf0e5829c3d82153d3f42169fa82584a8d3` failed `campfire-ci #1058` because a source-contract test still required wording removed by the concurrency-safe implementation. The executable transaction tests, including concurrent activation preservation, passed. The stale assertion was corrected at final head `9a9d34d0...` and CI #1059 passed.
+Installer head `a6f4eaf0e5829c3d82153d3f42169fa82584a8d3` failed `campfire-ci #1058` because a source-contract test still required wording removed by the concurrency-safe implementation. Executable transaction tests passed; the stale assertion was corrected at final head `9a9d34d0...`.
 
 No failed run was silently retried or erased.
 
-## REVIEW
+## REVIEW BOUNDARY
 
-Campfire CC review task: COM issue #32.
+CC review issue #32 was given exact anchors, a nonce-bearing execution trigger, successor-head transitions, failure evidence and a required two-target verdict.
 
-Required terminal form:
+No CC-authored ACK or terminal return was observed before bounded integration. This remains unresolved review coverage, not agreement, refusal, failure, clearance or validation. Any late material finding remains admissible evidence.
 
-```text
-PROFILE: BREAK | NARROW | CLEAR WITH RESIDUAL LIMITS
-INSTALLER: BREAK | NARROW | CLEAR WITH RESIDUAL LIMITS
-COMBINED: HOLD | REPAIR THEN RE-ANCHOR | CLEAR FOR FRAMEWORK INTEGRATION DECISION
+Framework independently found and repaired the lifecycle-source mismatch, concurrent-activation rollback risk, installer/cache-pin race, insufficient running-root binding and stale source-contract assertion before integration.
+
+## LOCAL STAGE 1 — INSTALL ONLY
+
+1. Close and reopen the Campfire Relay Launcher so the fast-forward bootstrap updates to launcher v0.1.7.
+2. Run:
+
+```powershell
+$script = Join-Path $HOME 'CampfireRelay\LAUNCHER\campfire-relay\INSTALL_TRACE_PROFILE_FROM_GITHUB.ps1'
+if (-not (Test-Path $script)) { throw "TRACE profile installer not found: $script" }
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$script" -JsonOnly
 ```
 
-TRACE public-front-door CC review task: COM issue #31.
-
-Required terminal form:
+Expected boundaries:
 
 ```text
-BREAK
-NARROW
-CLEAR WITH RESIDUAL LIMITS
+profile: trace-formal-v0-2-7
+source SHA-256: de21182f42228a0104181fb24f245c652c3150853e14172c4174be4bb9ef03ab
+activeRecordChanged: false
+activated: false
+promoted: false
+providerCalls: none
 ```
 
-No CC return is yet observed on either route. Silence is not agreement or clearance. A partial or truncated retrieval is not evidence of absence.
+Return the complete JSON before activation.
+
+## LOCAL STAGE 2 — EXPLICIT ACTIVATION
+
+After Stage 1 evidence is reconciled:
+
+- open Campfire Setup / TRACE profiles;
+- locate `Campfire TRACE v0.2.7 judging profile` / `trace-formal-v0-2-7`;
+- require `INACTIVE` and `HASH VERIFIED`;
+- press `Activate for test`;
+- confirm current `trace-judge-v1` and new `trace-formal-v0-2-7` identities.
+
+Activation affects future TRACE / COMPARE judging only. Historical rounds remain frozen. No provider call is required.
 
 ## EXISTING CAMPFIRE BASELINE
 
-Campfire Relay v0.18.31 remains released, installed, healthy, provenance-bound, and rollback-ready. Its versioned application tree is unchanged. The current active TRACE profile remains v0.2.5 until a later explicit local activation.
+Campfire Relay v0.18.31 remains released, installed, healthy, provenance-bound, and rollback-ready. Its versioned application tree is unchanged. The current active TRACE profile remains v0.2.5 until Stage 2 succeeds.
 
 ## COMS
 
-- **Mark:** human authority; requested TRACE v0.2.7 be pluggable into Campfire and separately requested a public-facing TRACE repository update.
-- **Framework / Build 3:** built the separate profile and installer channels, preserved both failed candidates, obtained exact-head hosted CI, and owns Campfire review integration.
-- **Framework / `FW-20260805-TRACE-PUBLIC-6B4E`:** built TRACE PR #31 and owns public-front-door review integration only.
-- **CC:** active read-only reviewer on COM issues #31 and #32; no mutation authority.
+- **Mark:** human authority and active local operator for Stage 1; return the complete install JSON before activation.
+- **Framework / Build 3:** profile and installer channels integrated; owns Stage 1 evidence reconciliation and Stage 2 activation verification.
+- **Framework / `FW-20260805-TRACE-PUBLIC-6B4E`:** owns the concurrent TRACE public-front-door review lane only.
+- **CC:** Campfire review task closed with no observed return; public-front-door review task remains separately active on issue #31; no mutation authority.
 - **Other Framework sessions / Build 2 / Campfire 1 / QW / other apertures:** no mutation authority on these lanes unless separately assigned.
 
 ## BOUNDARY
 
-Do not merge Campfire PR #162 or #163, install locally, or activate TRACE v0.2.7 merely because CI is green.
+Do not activate TRACE v0.2.7 before Stage 1 install evidence is reconciled.
 
 Do not merge TRACE PR #31 merely because the prose is clearer or the repository is public.
 
@@ -242,7 +241,7 @@ Do not call the Campfire profile the complete TRACE source, canon, validation, a
 
 Do not call the public-front-door candidate a formal repair, semantic revision, validation, endorsement, or licence grant.
 
-Installation and activation remain separate. Activation, when later authorized, affects future TRACE/COMPARE judging only and does not rewrite historical rounds.
+Installation and activation remain separate. Activation affects future TRACE/COMPARE judging only and does not rewrite historical rounds.
 
 No provider call is required for install or activation verification.
 
