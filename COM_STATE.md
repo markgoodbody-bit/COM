@@ -1,6 +1,6 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.7 RENDERED CARRIER AT EXACT-HEAD REVIEW; MAIN PDF UNCHANGED
+STATUS: ACTIVE — TRACE v0.2.7 RENDERED CARRIER NARROW REPAIR PASSED CI; BOUNDED CC RE-ANCHOR PENDING
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, and visual review are not proof.
 
@@ -10,13 +10,17 @@ COM is a working coordination baseline, not canon, validation, consensus, or a t
 - active_task: `TRACE-V027-RENDERED-CARRIER-001`
 - integration_owner: Framework, session `FW-20260805-TRACE027-PDF-2A6D`
 - observation_owner: Framework, session `FW-20260805-TRACE027-PDF-2A6D`
-- addressed_reviewer: CC / fresh task session not yet observed
+- addressed_reviewer: CC, session `CC-20260804T1940+0100-7D31`
 - reply_route: `markgoodbody-bit/COM` issue #28
-- next_check: manual on CC terminal return
 - current_product_lane: TRACE v0.2.7 rendered formal carrier candidate
-- candidate_pr: `markgoodbody-bit/TRACE` PR #26 — DRAFT / OPEN / UNMERGED
+- candidate_pr: `markgoodbody-bit/TRACE` PR #26 — DRAFT / OPEN / MERGEABLE / UNMERGED
+- candidate_head: `0b9534b1f038e2d1c39e2644c4a92753cc0923c7`
 - active_released_baseline: TRACE v0.2.7
 - released_baseline_main: `084a8c2ad0f5b54212b079e1a7edd7630932f6eb`
+- CC verdict: `NARROW — one bounded repair, everything else clear`
+- bounded repair: applied and post-repair CI passed
+- terminal bounded re-anchor: pending
+- next_check: manual on CC bounded return
 - late_review_route: COM issue #27 — OPEN / NON-GATING
 - earlier_late_review_route: COM issue #26 — OPEN / NON-GATING
 - comms_defect: `COM-V032-ISSUE-COMMENT-TRUNCATION-001` — OPEN / COM issue #25
@@ -46,46 +50,29 @@ NOT_PERMISSION
 NOT_CLEARANCE
 ```
 
-`TRACE_FORMAL_SEED_v0_2_6.md` remains the preserved released predecessor. `TRACE_FORMAL_SEED_v0_2_5.md` remains the preserved earlier reviewed predecessor.
-
-The rendered-carrier lane does not alter or supersede the released Markdown object.
+The rendered-carrier lane does not alter or supersede the released Markdown object. `TRACE_FORMAL_SEED_v0_2_6.md` and `TRACE_FORMAL_SEED_v0_2_5.md` remain preserved predecessors.
 
 ## PRIOR FORMAL INTEGRATION
 
-### v0.2.6 falsify x100
-
 ```text
-TRACE PR #20
+TRACE PR #20 — v0.2.6 falsify x100
 merged main: d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
+verdict: NARROW
 formal v0.2.6 bytes changed: NO
-audit verdict: NARROW
-```
 
-The audit exposed bounded documentary, partial-ingestion, serialization, worked-transfer, and front-door drift without supporting core rollback, release withdrawal, primitive growth, minimum-schema growth, a selector, or a value rule.
-
-### v0.2.7 narrow repair and release
-
-```text
-TRACE PR #21
+TRACE PR #21 — v0.2.7 narrow repair
 candidate head: 0e6ab648cafed142e89e5cf1902c3b64faee8984
 merged main: 61393387d930e57450f50818151ba4a0f31023cf
 
-TRACE PR #22
+TRACE PR #22 — v0.2.7 release
 release head: f2ca397063d68520bb04883fcd0c49d389f77ec4
 released main: 084a8c2ad0f5b54212b079e1a7edd7630932f6eb
 formal-object bytes changed in release PR: NO
 ```
 
-Admitted v0.2.7 repair:
+The v0.2.7 formal repair propagated target-set aperture and aperture-relative coverage through compressed surfaces, added `I57`–`I60`, repaired the survival kernel/revision declaration/unresolved register, added one non-required profile and one constructed transfer, and corrected the old carrier description.
 
-- propagate target-set aperture and aperture-relative coverage through compressed surfaces;
-- add invariants `I57`–`I60`;
-- repair survival kernel, revision declaration, and unresolved register;
-- add one non-required existing-object target-set aperture profile;
-- add one constructed divergent-target-aperture transfer;
-- correct the front-door description of the old carrier.
-
-Locked non-growth boundary:
+Locked non-growth boundary remains:
 
 ```text
 new primitive:                    NO
@@ -99,33 +86,17 @@ new value rule:                   NO
 new authority rule:               NO
 ```
 
-v0.2.7 exact-head falsification result:
-
-```text
-workflow: 30963832233
-probes: 100
-resisted: 100
-findings: 0
-hostile mutations: 20
-mutation-detector failures: 0
-verdict: CLEAR_WITH_RESIDUAL_LIMITS
-```
-
-That result is regression and containment evidence only.
-
 ## TRACE v0.2.7 RENDERED CARRIER CANDIDATE
-
-Branch and PR:
 
 ```text
 branch: framework/trace-v0-2-7-pdf-carrier
 PR: TRACE #26
 base: 084a8c2ad0f5b54212b079e1a7edd7630932f6eb
-head: 53dc34e52f0563e20e651a8489b2ab86c47c1079
-state: DRAFT / OPEN / UNMERGED
+head: 0b9534b1f038e2d1c39e2644c4a92753cc0923c7
+state: DRAFT / OPEN / MERGEABLE / UNMERGED
 ```
 
-Exact candidate:
+Exact carrier binary:
 
 ```text
 path: TRACE.pdf
@@ -147,15 +118,16 @@ NOT_PERMISSION
 NOT_CLEARANCE
 ```
 
-The current `TRACE.pdf` on `main` is still the old v0.5 mixed-format carrier. It remains unchanged until PR #26 is integrated. The proposed replacement keeps the prior binary recoverable in Git history rather than adding another permanent public PDF.
+The current `TRACE.pdf` on `main` remains the old v0.5 carrier until PR #26 is integrated. The proposed replacement deliberately preserves the v0.5 carrier in Git history rather than maintaining a second in-tree public PDF. Formal predecessor seeds remain separate in-tree authority-bearing source objects.
 
-## CARRIER SOURCE AND TRANSFORMATION BOUNDARY
+## SOURCE AND TRANSFORMATION BOUNDARY
 
-The Markdown formal seed remains byte-unchanged at blob `9238986ddc18c34709906b2fc4510d827c68d2b2`.
+The released formal seed remains byte-unchanged at blob `9238986ddc18c34709906b2fc4510d827c68d2b2`.
 
 Carrier files:
 
 ```text
+.gitattributes
 carrier/TRACE_v0_2_7_RENDERED_CARRIER_SOURCE.md
 carrier/trace_v027_carrier_front.md
 carrier/trace_v027_carrier_header.tex
@@ -178,9 +150,9 @@ The wrapper differs from the formal source in exactly two declared presentation-
 
 No proposition, symbol, relation, scope, identifier, schema field, invariant, example, primitive, node, edge, port, selector, value rule, or authority rule is declared added or removed.
 
-## BUILD AND VISUAL EVIDENCE
+## PDF BUILD AND VISUAL EVIDENCE
 
-Final exact-head workflow:
+Pre-review exact-head workflow:
 
 ```text
 run: 30996508650
@@ -211,7 +183,7 @@ normalized extracted-text SHA-256:
 
 Framework downloaded the exact corrected binary, rendered it at 160 dpi, and inspected all 75 pages across 19 contact sheets.
 
-The first hosted exact binary exposed a duplicate automatically generated table of contents before the title page. Framework rejected it, removed the automatic pre-title TOC, retained one explicit contents sequence after the title, rematerialized the exact binary, and reran verification.
+The first hosted binary exposed a duplicate automatically generated table of contents before the title page. It was rejected, the build was corrected to retain one explicit contents sequence after the title, and the exact binary was rematerialized.
 
 Current visual result:
 
@@ -228,41 +200,111 @@ blank pages: none
 right-edge collision: none observed
 ```
 
-Visual review is evidence about the exact carrier binary only. It does not validate the formal system or the world claims it may be used to represent.
+## CC EXACT-HEAD REVIEW RETURN
 
-## ACTIVE CC REVIEW
-
-COM issue #28 now carries a fresh exact-head read-only hostile review request for TRACE PR #26.
-
-Required verdicts:
+CC returned on COM issue #28 at pre-repair head `53dc34e52f0563e20e651a8489b2ab86c47c1079`:
 
 ```text
-BREAK
-NARROW
-CLEAR WITH RESIDUAL LIMITS
+NARROW — one bounded repair, everything else clear
+session: CC-20260804T1940+0100-7D31
+mutation: NONE
 ```
 
-Review target includes:
+CC mechanically confirmed:
 
-- semantic change hidden in presentation-only repairs;
-- wrapper drift not caught by current checks;
-- insufficient binary/source provenance;
-- clipping, overlap, glyph, table, equation, order, duplication, or omission defects;
-- version/release confusion from replacing the v0.5 carrier;
-- erosion of the Markdown-source authority boundary;
-- self-confirming or incomplete automated checks;
-- mishandling of the rejected duplicate-TOC binary;
-- overstatement of visual review, reproducibility, or fidelity.
+- both declared presentation-only changes preserve logical/table-cell content;
+- source-only and wrapper-only drift fail closed;
+- exact PDF binary identity matches;
+- README/report preserve the Markdown-source authority boundary;
+- the rejected duplicate-TOC binary was disclosed transparently;
+- current verifier design materially covers the declared PDF failure surface.
+
+CC did not independently inspect the rendered pages because PyMuPDF was unavailable in its environment. Its PDF visual claims therefore stand unchallenged rather than independently confirmed.
+
+## ACCEPTED NARROW FINDING
+
+Finding:
+
+```text
+default Git for Windows checkout
+core.autocrlf=true
+Markdown LF -> CRLF
+correct tree -> false formal source SHA-256 mismatch
+```
+
+Framework accepts this as a real verification-integrity defect. A correct checkout must not appear tampered merely because Git for Windows used its default line-ending policy.
+
+Bounded repair:
+
+```text
+.gitattributes
+*.md text eol=lf
+```
+
+Persistent workflow now:
+
+- asserts `eol=lf` for the formal seed and generated wrapper;
+- initializes a fresh detached checkout;
+- sets `core.autocrlf=true` before checkout;
+- asserts the seed and wrapper contain no CRLF sequences;
+- reruns `build_trace_v027_carrier.py --check-source` in that checkout.
+
+The first test-harness implementation failed because a shallow PR merge checkout did not expose the named branch to a local clone. That failed run remains recorded:
+
+```text
+run: 30998175499
+conclusion: FAILURE
+defect: test harness branch lookup
+repair status: corrected without silent retry
+```
+
+The harness was changed to fetch and detach at the checked-out `HEAD` object.
+
+## POST-REPAIR EXACT-HEAD EVIDENCE
+
+```text
+run: 30998432225
+head: 0b9534b1f038e2d1c39e2644c4a92753cc0923c7
+conclusion: SUCCESS
+artifact: 8927207776
+artifact ZIP SHA-256:
+8cb0819928ce6c8d54779de51dc7d9b5eb423aef979cf99df2f53afb55c00487
+```
+
+All steps passed:
+
+```text
+committed wrapper and PDF verification: PASS
+default-Windows checkout compatibility: PASS
+rebuild and semantic render surface: PASS
+diff integrity: PASS
+evidence upload: PASS
+```
+
+The formal seed blob, wrapper content, and PDF binary are unchanged by the line-ending repair.
+
+## ACTIVE BOUNDED RE-ANCHOR
+
+Framework posted the repaired exact head and terminal CI evidence to COM issue #28.
+
+Requested bounded return:
+
+```text
+NARROW REMAINS — repair insufficient or new bounded defect
+CLEAR WITH RESIDUAL LIMITS — NARROW finding contained
+```
 
 Current route state:
 
 ```text
-HELLO / ACK: NOT YET OBSERVED
-TERMINAL VERDICT: NOT YET OBSERVED
+INITIAL TERMINAL VERDICT: NARROW — INTEGRATED
+BOUNDED RE-ANCHOR REQUEST: POSTED
+BOUNDED TERMINAL RETURN: NOT YET OBSERVED
 TRACE MUTATION BY CC: NONE OBSERVED
+MERGE GATE: HELD
 ```
 
-PR #26 remains draft and unmerged until Framework integrates a terminal return or Mark later explicitly overrides the wait. Silence is not clearance.
+PR #26 remains draft and unmerged. Silence is not clearance.
 
 ## EARLIER REVIEW ROUTES
 
@@ -286,21 +328,21 @@ RETRIEVAL_INCOMPLETE != EVENT_ABSENT
 
 ## COMS
 
-- **Mark:** human and release authority; instructed Framework to proceed into the separate rendered-carrier lane.
-- **Framework / `FW-20260805-TRACE027-PDF-2A6D`:** built, rejected, corrected, verified, visually inspected, and opened exact-head TRACE PR #26; owns integration and observation.
-- **CC:** exact-head rendered-carrier review requested on COM issue #28; no return observed yet.
+- **Mark:** human and release authority; instructed Framework to proceed into the rendered-carrier lane and then invoked COMS for integration.
+- **Framework / `FW-20260805-TRACE027-PDF-2A6D`:** accepted CC's NARROW finding, applied the bounded LF checkout repair, preserved the failed harness run, corrected the harness, obtained green post-repair exact-head CI, and requested bounded re-anchor.
+- **CC / `CC-20260804T1940+0100-7D31`:** returned NARROW with one reproducible Windows checkout defect; bounded re-anchor now pending.
 - **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
 Do not call the carrier or TRACE v0.2.7 canon, validated, world-valid, authoritative, permission, or clearance.
 
-Do not infer CC review, agreement, refusal, or clearance from silence.
+Do not infer CC agreement, refusal, or clearance from silence.
 
 Do not treat green carrier CI as semantic fidelity or visual review as world validation.
 
-Do not merge PR #26 until the CC return is integrated or Mark explicitly overrides the wait.
+Do not merge PR #26 until the bounded CC return is integrated or Mark explicitly overrides the wait.
 
-Do not modify PR #26's exact head while review is anchored without posting a new head and re-anchoring.
+Do not modify PR #26's exact head without posting a new head and re-anchoring.
 
 `The lullaby was never for the cradle`.
