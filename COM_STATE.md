@@ -1,8 +1,8 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.7 CAMPFIRE PROFILE AND VERIFIED INSTALLER UNDER REVIEW
+STATUS: ACTIVE — TRACE v0.2.7 CAMPFIRE PROFILE/INSTALLER REVIEW AND TRACE PUBLIC FRONT-DOOR REVIEW
 
-COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, and successful model output are not proof.
+COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, polished prose, public interest, and successful model output are not proof.
 
 ## CURRENT
 
@@ -18,6 +18,66 @@ COM is a working coordination baseline, not canon, validation, consensus, or a t
 - merge_gate: HELD pending review integration or explicit Mark override
 - local_install_gate: HELD; no Windows mutation yet
 - provider_calls_or_spend: NONE
+- concurrent_task: `TRACE-PUBLIC-FRONT-DOOR-001`
+- concurrent_route: COM issue #31
+- concurrent_integration_owner: Framework, session `FW-20260805-TRACE-PUBLIC-6B4E`
+- concurrent_candidate: TRACE PR #31 — DRAFT / OPEN / UNMERGED
+- concurrent_candidate_head: `8029adb7d3cbdb33f75638df13c1303eadadd0f4`
+- concurrent_merge_gate: HELD pending CC review integration or explicit Mark override
+
+## CONCURRENT TRACE PUBLIC FRONT-DOOR LANE
+
+Mark asked Framework to update the main TRACE repository so interested parties can inspect it and explicitly requested COMS coordination with Claude Code.
+
+Exact candidate:
+
+```text
+repository: markgoodbody-bit/TRACE
+PR: #31
+base: 6704743ef5435a65793ea35e2c92ca238cc920e1
+head: 8029adb7d3cbdb33f75638df13c1303eadadd0f4
+branch: framework/trace-public-front-door-001
+```
+
+Changed files:
+
+```text
+README.md
+REVIEW_GUIDE.md
+.github/ISSUE_TEMPLATE/trace-review.md
+```
+
+The candidate:
+
+- rewrites the root README around the problem TRACE is attempting to solve;
+- gives unfamiliar readers a five-minute, human-readable, and exact-formal entry path;
+- adds conceptual, formal, operational, adversarial, and empirical review lanes;
+- gives reviewers a traceable finding format and issue template;
+- explains the formal-source, rendered-carrier, and external-release distinction;
+- states current claim ceilings and residual limits;
+- discloses that reuse and licensing terms have not yet been specified.
+
+Candidate diff:
+
+```text
+commits: 3
+files changed: 3
+additions: 366
+deletions: 20
+```
+
+Scope boundary:
+
+```text
+PUBLIC_FRONT_DOOR != FORMAL_REWRITE
+ACCESSIBILITY != CLAIM_EXPANSION
+INVITATION_TO_REVIEW != VALIDATION
+REVIEW_TEMPLATE != REVIEW RESULT
+```
+
+This concurrent lane does not change the formal seed, PDF, release declaration, schema, compiler, probes, carrier build machinery, formal vocabulary, semantics, release status, authority, permission, clearance, or validation status.
+
+CC review route: COM issue #31. Framework session `FW-20260805-TRACE-PUBLIC-6B4E` owns integration and observation for this lane only. It has no mutation authority over the concurrent Campfire task.
 
 ## RELEASED TRACE SOURCE ANCHOR
 
@@ -44,7 +104,7 @@ NOT_PERMISSION
 NOT_CLEARANCE
 ```
 
-TRACE v0.2.7 rendered carrier work is complete and integrated on TRACE main `6704743ef5435a65793ea35e2c92ca238cc920e1`. The Markdown object remains the formal source. The Campfire integration does not depend on the PDF carrier.
+TRACE v0.2.7 rendered carrier work is complete and integrated on TRACE main `6704743ef5435a65793ea35e2c92ca238cc920e1`. The Markdown object remains the formal source. The Campfire integration does not depend on the PDF carrier. The public-front-door candidate does not alter either object.
 
 ## PROFILE CHANNEL CANDIDATE
 
@@ -126,7 +186,7 @@ The launcher checkout lacked `installBundledTraceProfileCandidate`. The successo
 
 ## REVIEW
 
-CC review task: COM issue #32.
+Campfire CC review task: COM issue #32.
 
 Required terminal form:
 
@@ -136,7 +196,17 @@ INSTALLER: BREAK | NARROW | CLEAR WITH RESIDUAL LIMITS
 COMBINED: HOLD | REPAIR THEN RE-ANCHOR | CLEAR FOR FRAMEWORK INTEGRATION DECISION
 ```
 
-No CC return is yet observed. Silence is not agreement or clearance.
+TRACE public-front-door CC review task: COM issue #31.
+
+Required terminal form:
+
+```text
+BREAK
+NARROW
+CLEAR WITH RESIDUAL LIMITS
+```
+
+No CC return is yet observed on either route. Silence is not agreement or clearance. A partial or truncated retrieval is not evidence of absence.
 
 ## EXISTING CAMPFIRE BASELINE
 
@@ -144,20 +214,26 @@ Campfire Relay v0.18.31 remains released, installed, healthy, provenance-bound, 
 
 ## COMS
 
-- **Mark:** human authority; requested TRACE v0.2.7 be pluggable into Campfire.
-- **Framework / Build 3:** built the separate profile and installer channels, preserved the failed candidate, obtained exact-head hosted CI, and owns review integration.
-- **CC:** active read-only review on issue #32; no mutation authority.
-- **Other Framework session:** TRACE v0.2.7 rendered-carrier lane complete; no active mutation authority on this task.
-- **Build 2 / Campfire 1 / QW / other apertures:** no active task.
+- **Mark:** human authority; requested TRACE v0.2.7 be pluggable into Campfire and separately requested a public-facing TRACE repository update.
+- **Framework / Build 3:** built the separate profile and installer channels, preserved the failed candidate, obtained exact-head hosted CI, and owns Campfire review integration.
+- **Framework / `FW-20260805-TRACE-PUBLIC-6B4E`:** built TRACE PR #31 and owns public-front-door review integration only.
+- **CC:** active read-only reviewer on COM issues #31 and #32; no mutation authority.
+- **Other Framework sessions / Build 2 / Campfire 1 / QW / other apertures:** no mutation authority on these lanes unless separately assigned.
 
 ## BOUNDARY
 
-Do not merge PR #162 or #163, install locally, or activate TRACE v0.2.7 merely because CI is green.
+Do not merge Campfire PR #162 or #163, install locally, or activate TRACE v0.2.7 merely because CI is green.
+
+Do not merge TRACE PR #31 merely because the prose is clearer or the repository is public.
 
 Do not call the Campfire profile the complete TRACE source, canon, validation, authority, permission, clearance, or promotion.
+
+Do not call the public-front-door candidate a formal repair, semantic revision, validation, endorsement, or licence grant.
 
 Installation and activation remain separate. Activation, when later authorized, affects future TRACE/COMPARE judging only and does not rewrite historical rounds.
 
 No provider call is required for install or activation verification.
+
+`TRUNCATED_RETRIEVAL != EXHAUSTIVE_ROUTE_INSPECTION`.
 
 `The lullaby was never for the cradle`.
