@@ -1,20 +1,22 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.6 FALSIFY X100 RETURNED NARROW; CC INDEPENDENT REVIEW PENDING
+STATUS: ACTIVE — TRACE v0.2.7 NARROW REPAIR CANDIDATE GREEN AT EXACT HEAD; CC HOSTILE REVIEW PENDING
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `TRACE-V026-FALSIFY-X100-CC`
-- integration_owner: Framework, session `FW-20260805-TRACE026-FALSIFY-6A1D`
-- observation_owner: Framework, session `FW-20260805-TRACE026-FALSIFY-6A1D`
-- addressed_reviewer: CC / session not yet observed on this task
-- reply_route: `markgoodbody-bit/COM` issue #26
+- active_task: `TRACE-V027-EXACT-HEAD-REVIEW-001`
+- integration_owner: Framework, session `FW-20260805-TRACE027-BUILD-71C4`
+- observation_owner: Framework, session `FW-20260805-TRACE027-BUILD-71C4`
+- addressed_reviewer: CC / fresh task session not yet observed
+- reply_route: `markgoodbody-bit/COM` issue #27
 - next_check: manual on CC terminal return
-- current_product_lane: TRACE v0.2.6 falsification, drift audit, and narrow-errata disposition
-- audit_pr: `markgoodbody-bit/TRACE` PR #20 — DRAFT / OPEN / UNMERGED
+- current_product_lane: TRACE v0.2.7 narrow drift-repair candidate
+- candidate_pr: `markgoodbody-bit/TRACE` PR #21 — DRAFT / OPEN / MERGEABLE / UNMERGED
+- active_released_baseline: TRACE v0.2.6
+- previous_audit_task: `TRACE-V026-FALSIFY-X100-CC` — human wait override applied; late CC return remains admissible evidence but is no longer an integration gate
 - comms_defect: `COM-V032-ISSUE-COMMENT-TRUNCATION-001` — OPEN / COM issue #25
 - Campfire Relay lane: v0.18.31 stable maintenance baseline; no active Campfire task
 
@@ -22,27 +24,20 @@ COM is a working coordination baseline, not canon, validation, consensus, or a t
 
 Repository: `markgoodbody-bit/TRACE`
 
-Released main before audit branch:
+Current main:
 
 ```text
-fb50464c219eb6b8cc8b6ea9a0790f183238c0eb
+d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
 ```
 
 Released formal object:
 
 ```text
 TRACE_FORMAL_SEED_v0_2_6.md
-blob 5e50886f20bceef63be90456cae7f7f895bcd6
+blob 5e50886f20bceef63be90456cae7f7f7f895bcd6
 ```
 
-Predecessor:
-
-```text
-TRACE_FORMAL_SEED_v0_2_5.md
-blob 6ebc97274eb07c27979491820793989ba918a102
-```
-
-Release status remains:
+Release state remains:
 
 ```text
 RELEASED
@@ -54,193 +49,167 @@ NOT_PERMISSION
 NOT_CLEARANCE
 ```
 
-The audit has not withdrawn or rewritten the release.
+v0.2.7 has not superseded, rewritten, or silently relabelled v0.2.6.
 
-## FRAMEWORK FALSIFY X100 APERTURE
+## v0.2.6 FALSIFY X100 — INTEGRATED EVIDENCE
+
+TRACE PR #20 merged the audit evidence only.
+
+```text
+PR: #20 — Audit TRACE v0.2.6 with 100 falsification probes
+merged main: d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
+formal-seed bytes changed: NO
+```
+
+Mark's statement `very good keep going`, made after Framework stated that PR #20 would remain held absent a CC return or explicit override, was integrated as the human override of that additional wait.
+
+```text
+HUMAN_WAIT_OVERRIDE_RECEIVED
+CC_CLEARANCE_NOT_INFERRED
+CC_AGREEMENT_NOT_INFERRED
+LATE_CC_RETURN_REMAINS_ADMISSIBLE
+```
+
+The v0.2.6 audit verdict remains `NARROW`. It exposed bounded documentary, partial-ingestion, serialization, worked-transfer, and front-door drift without supporting core rollback, release withdrawal, primitive growth, minimum-schema growth, a selector, or a value rule.
+
+## TRACE v0.2.7 CANDIDATE
 
 Branch:
 
 ```text
-framework/trace-v0-2-6-falsify-x100
+framework/trace-v0-2-7-narrow-repair
 ```
 
-Current branch head:
+Exact candidate head:
 
 ```text
-61b18921095ec38573ef212022d5c8ddb9f90e55
+0e6ab648cafed142e89e5cf1902c3b64faee8984
 ```
 
 Draft PR:
 
 ```text
-TRACE #20 — Audit TRACE v0.2.6 with 100 falsification probes
+TRACE #21 — Build TRACE v0.2.7 narrow drift-repair candidate
 ```
 
-Human-readable report:
+Candidate state:
 
 ```text
-falsification/TRACE_v0_2_6_FALSIFY_X100_REPORT.md
+WORKING_CANDIDATE
+NOT_RELEASED
+NOT_CANON
+NOT_VALIDATED
+NOT_AUTHORITY
+NOT_PERMISSION
+NOT_CLEARANCE
 ```
 
-Machine-readable summary:
+Admitted repair scope:
+
+1. propagate target-set aperture and aperture-relative coverage into the middle-out seed;
+2. add numbered invariants `I57`–`I60`;
+3. repair the survival kernel;
+4. replace the stale revision declaration with explicit v0.2.6 → v0.2.7 succession;
+5. add target-set incompleteness and target-selection authority limits to the unresolved register;
+6. add one non-required canonical serialization profile using existing graph objects;
+7. add one constructed divergent-target-aperture transfer;
+8. correct README front-door ordering and label `TRACE.pdf` as the older v0.5 carrier candidate.
+
+Locked non-growth boundary:
 
 ```text
-falsification/trace_v026_falsify_x100_summary.json
+new primitive:                    NO
+new node type:                    NO
+new edge type:                    NO
+new port:                         NO
+new required packet property:     NO
+minimum-schema shape change:      NO
+new selector:                     NO
+new value rule:                   NO
+new authority rule:               NO
+PDF replacement in this change:   NO
 ```
 
-Hosted exact evidence run:
+## DETERMINISTIC BUILD
+
+Compiler:
 
 ```text
-workflow: TRACE v0.2.6 falsify x100
-run id: 30960448135
-run number: 5
-reviewed audit head: a21b277944b2fac2a623e0d2be4cebdce3112c3d
+tools/compile_trace_v027.py
+```
+
+Compiled object:
+
+```text
+TRACE_FORMAL_SEED_v0_2_7.md
+```
+
+Exact build result:
+
+```text
+base lines:                          5,591
+compiled lines:                      5,759
+base SHA-256:      5a26462f613d9051d8f165dc7b4bb8778dd79ac4c4836144ac94622802f1ddaa
+compiled SHA-256:  de21182f42228a0104181fb24f245c652c3150853e14172c4174be4bb9ef03ab
+schema shape identical:              true
+node vocabulary unchanged:           true
+edge vocabulary unchanged:           true
+required packet properties unchanged:true
+stale v0.2.6 machine identifiers:    0
+compiler status:                     PASS
+```
+
+The committed candidate is byte-identical to deterministic compiler output.
+
+## v0.2.7 FALSIFY X100
+
+Exact-head workflow:
+
+```text
+workflow: TRACE v0.2.7 falsify x100
+run id: 30963832233
+run number: 3
+head: 0e6ab648cafed142e89e5cf1902c3b64faee8984
 conclusion: SUCCESS
-artifact id: 8912715016
-artifact ZIP SHA-256: 992e2b2df72c71ceb847dada23b9d9ec5d4fbaedb9ec8e11604ec2dcec921f9e
-extracted JSON SHA-256: 80f27f4ca8c6c73f57d3f162a2ad98a57583867dba3c2707979b739403c9ab0d
+artifact id: 8913933758
+artifact ZIP SHA-256: 1590f84abb61edec99dc2722521270d532b0e9e04289d2461475dc114530b612
 ```
 
-Audit result:
+Result:
 
 ```text
 probe_count:                       100
-resisted_count:                     85
-finding_count:                      15
-material_finding_count:             13
-already_bounded_limitation_count:    1
-transfer_gap_count:                  1
+resisted_count:                    100
+finding_count:                       0
 mutation_probe_count:               20
 mutation_detector_failure_count:     0
-verdict:                         NARROW
+verdict: CLEAR_WITH_RESIDUAL_LIMITS
 ```
 
-Green workflow means the audit executed and the mutation detector closed. It does not mean TRACE passed every probe or is validated.
+The first v0.2.7 audit execution exposed four audit-instrument defects: one brittle value-layer token and three ineffective mutation detectors. They were repaired, the temporary repair workflow removed itself, and the full suite was rerun at a new exact head. They are not represented as candidate failures.
 
-## WHAT RESISTED FALSIFICATION
-
-The following survived the executable aperture:
-
-- release identity and exact object-blob binding;
-- v0.2.5 predecessor preservation;
-- synchronized v0.2.6 formal and packet identifiers;
-- unchanged minimum-schema shape after version normalization;
-- unchanged node, edge, and required-property vocabularies;
-- deterministic regeneration from v0.2.5;
-- independent reverse reconstruction of normalized v0.2.5;
-- target-set tuple fields: source, targets, basis, omissions, alternatives, control, uncertainty;
-- target-set/world-scope and coverage/completeness non-entailments;
-- no new selector, value rule, moral authority, permission, or affirmative proceed instruction;
-- all 20 hostile mutation probes detected their mutations.
-
-No unexplained core drift outside the admitted v0.2.6 compilation patch was found by the reverse transform.
-
-## NARROW FINDING FAMILIES
-
-### 1. Partial-ingestion drift
-
-Probe IDs:
+Residual limits:
 
 ```text
-P02 P03 P04 P05 P11 P15
+AUDIT_EXECUTION_NOT_VALIDATION
+MINIMUM_VALIDATOR_REMAINS_SHAPE_AND_VOCABULARY_ONLY
+TARGET_DISCOVERY_AND_AUTHORITY_REMAIN_CHECKER_EXTERNAL
+TRACE_PDF_REMAINS_OLDER_CARRIER_BUT_IS_NOW_LABELLED
+CONSTRUCTED_TRANSFER_NOT_WORLD_EVIDENCE
 ```
 
-The target-set-aperture repair is present in the main body but absent from the middle-out seed, numbered invariant list, and survival kernel. A partial ingestion can therefore reconstruct a v0.2.6-labelled object without the distinction that justified v0.2.6.
+Green CI establishes deterministic compilation and closure of the declared regression/mutation suite only. It does not establish world validity, decision advantage, complete target discovery, legitimate authority, operational effectiveness, permission, or clearance.
 
-### 2. Revision-declaration drift
+## EXACT-HEAD CC HOSTILE REVIEW
 
-Probe IDs:
+COM issue #27 dispatches a fresh read-only hostile review of TRACE PR #21 at exact head:
 
 ```text
-P06 P07
+base: d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
+head: 0e6ab648cafed142e89e5cf1902c3b64faee8984
 ```
 
-`[21.1]` still describes the v0.2.5 transition-discipline pass rather than the v0.2.6 target-set-aperture repair.
-
-### 3. Unresolved-register omission
-
-Probe ID:
-
-```text
-P08
-```
-
-`[21.4]` omits the risk that a selected target set can exclude materially affected scopes while coverage remains complete only relative to that aperture.
-
-### 4. Serialization under-specification
-
-Probe ID:
-
-```text
-T19
-```
-
-Existing objects can represent a target-set aperture, but the canonical packet supplies no standard serialization profile. Implementations may invent incompatible local conventions.
-
-### 5. Minimum-validator ceiling
-
-Probe ID:
-
-```text
-T20
-```
-
-The minimum schema does not enforce target-set references. This is already honestly bounded and does not justify schema growth by itself.
-
-### 6. Worked-transfer gap
-
-Probe ID:
-
-```text
-P09
-```
-
-No worked transformation demonstrates divergent target-set apertures or their existing-object serialization.
-
-### 7. Front-door drift
-
-Probe IDs:
-
-```text
-R10 P13 P14
-```
-
-`TRACE.pdf` is an older July v0.5 carrier candidate, is listed before the released formal seed, and is not labelled as older in the README.
-
-## CURRENT DISPOSITION
-
-```text
-core rollback:                         NO
-release withdrawal:                    NO
-new primitive:                         NO
-minimum-schema growth:                 NO
-new selector or value rule:            NO
-narrow formal-document errata:        YES
-canonical existing-object profile:    YES
-constructed worked example:           YES
-README front-door correction:         YES
-immediate silent PDF replacement:      NO
-```
-
-The active released v0.2.6 baseline now carries an open narrow-errata state. PR #20 records the audit only; it does not apply the repair.
-
-## INDEPENDENT CC APERTURE
-
-COM issue #26 dispatches a read-only independent hostile review to CC.
-
-Framework posted its executable audit result to the route in comment `5185811414` so CC can compare or challenge it without being treated as bound by it.
-
-Current CC state:
-
-```text
-HELLO / ACK: NOT YET OBSERVED
-TERMINAL VERDICT: NOT YET OBSERVED
-MUTATION: NONE OBSERVED
-```
-
-The route currently contains Framework's dispatch and result only. No CC agreement, refusal, or clearance is inferred.
-
-Accepted terminal verdicts:
+Required verdicts:
 
 ```text
 BREAK
@@ -248,15 +217,31 @@ NARROW
 CLEAR WITH RESIDUAL LIMITS
 ```
 
-## PREVIOUS REVIEW PROVENANCE
+Review target includes:
 
-The earlier v0.2.6 transition-package review on COM issue #24 returned:
+- hidden primitive, schema, port, or required-field growth;
+- selector, value, or authority smuggling;
+- target completeness or discovery claims;
+- policy authority smuggled through the constructed example;
+- semantic drift outside the compiler transformation;
+- false confidence from 100/100 probe resistance;
+- version or release confusion while v0.2.6 remains active.
+
+Current route state:
 
 ```text
-NARROW — bounded repair required before compilation
+HELLO / ACK: NOT YET OBSERVED
+TERMINAL VERDICT: NOT YET OBSERVED
+TRACE MUTATION: NONE OBSERVED
 ```
 
-The validator-vacuity and F03/F04 containment findings were integrated before compilation. The requested additional repaired-head re-review was not received before Mark instructed Framework to proceed. That historical human override is not CC clearance.
+PR #21 remains draft and unmerged until Framework integrates the return or Mark explicitly overrides the wait. Silence is not clearance.
+
+## EARLIER CC ROUTE
+
+COM issue #26 requested independent review of the v0.2.6 x100 audit. No CC return was observed before Mark overrode the additional wait and instructed Framework to continue.
+
+That route remains historically open to a late return, but it is not the active integration gate. A late return must be preserved and assessed rather than silently discarded.
 
 ## COMMS DEFECT
 
@@ -276,23 +261,23 @@ RETRIEVAL_INCOMPLETE != EVENT_ABSENT
 
 ## COMS
 
-- **Mark:** human authority; ordered falsify x100, drift checking, and broad tool use.
-- **Framework / `FW-20260805-TRACE026-FALSIFY-6A1D`:** ran and hardened the executable x100 aperture, preserved evidence, opened draft TRACE PR #20, dispatched CC independently, and owns integration.
-- **CC:** independent review requested on COM issue #26; no return observed yet.
+- **Mark:** human authority; authorized continued construction after the v0.2.6 audit and retains merge/release authority.
+- **Framework / `FW-20260805-TRACE027-BUILD-71C4`:** integrated PR #20 evidence, built and falsified v0.2.7, opened draft TRACE PR #21, dispatched the exact-head CC review, and owns integration.
+- **CC:** exact-head hostile review requested on COM issue #27; no return observed yet.
 - **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
-Do not treat the x100 score as a probability, certification, validation rate, or evidence of world validity.
+Do not merge or release TRACE v0.2.7 merely because 100/100 declared probes resisted.
 
-Do not merge TRACE PR #20 or begin formal errata integration until the CC return is integrated, unless Mark explicitly overrides that wait.
+Do not call v0.2.7 canon, validated, world-valid, authoritative, permission, or clearance.
 
-Do not silently rewrite the released formal seed. A repair must declare whether it is byte-level errata under v0.2.6 or a successor version.
+Do not infer CC clearance from silence, delayed execution, or a human override.
 
-Do not grow the minimum schema merely to make every semantic distinction machine-enforced.
+Do not alter PR #21's exact head while CC review is anchored unless an evidenced repair requires re-anchoring.
+
+Do not grow the minimum schema merely to enforce every semantic distinction.
 
 Do not replace `TRACE.pdf` without a separate rendered review.
-
-Do not infer CC clearance from silence.
 
 `The lullaby was never for the cradle`.
