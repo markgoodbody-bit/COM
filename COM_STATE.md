@@ -1,22 +1,20 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — TRACE v0.2.7 NARROW REPAIR CANDIDATE GREEN AT EXACT HEAD; CC HOSTILE REVIEW PENDING
+STATUS: TRACE v0.2.7 RELEASED AS ACTIVE FORMAL BASELINE; NO ACTIVE TRACE INTEGRATION GATE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement and green CI are not proof.
 
 ## CURRENT
 
 - human_authority: Mark
-- active_task: `TRACE-V027-EXACT-HEAD-REVIEW-001`
+- active_task: `NONE`
 - integration_owner: Framework, session `FW-20260805-TRACE027-BUILD-71C4`
 - observation_owner: Framework, session `FW-20260805-TRACE027-BUILD-71C4`
-- addressed_reviewer: CC / fresh task session not yet observed
-- reply_route: `markgoodbody-bit/COM` issue #27
-- next_check: manual on CC terminal return
-- current_product_lane: TRACE v0.2.7 narrow drift-repair candidate
-- candidate_pr: `markgoodbody-bit/TRACE` PR #21 — DRAFT / OPEN / MERGEABLE / UNMERGED
-- active_released_baseline: TRACE v0.2.6
-- previous_audit_task: `TRACE-V026-FALSIFY-X100-CC` — human wait override applied; late CC return remains admissible evidence but is no longer an integration gate
+- current_product_lane: TRACE v0.2.7 released-baseline observation and bounded correction only
+- active_released_baseline: TRACE v0.2.7
+- late_review_route: `markgoodbody-bit/COM` issue #27 — OPEN / NON-GATING
+- earlier_late_review_route: `markgoodbody-bit/COM` issue #26 — OPEN / NON-GATING
+- next_check: manual on a terminal CC return or a new instruction from Mark
 - comms_defect: `COM-V032-ISSUE-COMMENT-TRUNCATION-001` — OPEN / COM issue #25
 - Campfire Relay lane: v0.18.31 stable maintenance baseline; no active Campfire task
 
@@ -27,17 +25,24 @@ Repository: `markgoodbody-bit/TRACE`
 Current main:
 
 ```text
-d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
+084a8c2ad0f5b54212b079e1a7edd7630932f6eb
 ```
 
 Released formal object:
 
 ```text
-TRACE_FORMAL_SEED_v0_2_6.md
-blob 5e50886f20bceef63be90456cae7f7f7f895bcd6
+TRACE_FORMAL_SEED_v0_2_7.md
+blob 9238986ddc18c34709906b2fc4510d827c68d2b2
 ```
 
-Release state remains:
+Release declaration:
+
+```text
+TRACE_v0_2_7_BASELINE_RELEASE.md
+release id: TRACE-v0.2.7-FORMAL-BASELINE
+```
+
+Release state:
 
 ```text
 RELEASED
@@ -49,71 +54,37 @@ NOT_PERMISSION
 NOT_CLEARANCE
 ```
 
-v0.2.7 has not superseded, rewritten, or silently relabelled v0.2.6.
+`TRACE_FORMAL_SEED_v0_2_6.md` remains preserved as the released predecessor. `TRACE_FORMAL_SEED_v0_2_5.md` remains preserved as the earlier reviewed predecessor.
 
-## v0.2.6 FALSIFY X100 — INTEGRATED EVIDENCE
+## INTEGRATION RECORD
 
-TRACE PR #20 merged the audit evidence only.
+### v0.2.6 falsify x100 evidence
 
 ```text
-PR: #20 — Audit TRACE v0.2.6 with 100 falsification probes
+TRACE PR #20
 merged main: d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
-formal-seed bytes changed: NO
+formal v0.2.6 bytes changed: NO
+audit verdict: NARROW
 ```
 
-Mark's statement `very good keep going`, made after Framework stated that PR #20 would remain held absent a CC return or explicit override, was integrated as the human override of that additional wait.
+The audit exposed bounded documentary, partial-ingestion, serialization, worked-transfer, and front-door drift. It did not support core rollback, release withdrawal, primitive growth, minimum-schema growth, a selector, or a value rule.
+
+### v0.2.7 narrow repair candidate
 
 ```text
-HUMAN_WAIT_OVERRIDE_RECEIVED
-CC_CLEARANCE_NOT_INFERRED
-CC_AGREEMENT_NOT_INFERRED
-LATE_CC_RETURN_REMAINS_ADMISSIBLE
-```
-
-The v0.2.6 audit verdict remains `NARROW`. It exposed bounded documentary, partial-ingestion, serialization, worked-transfer, and front-door drift without supporting core rollback, release withdrawal, primitive growth, minimum-schema growth, a selector, or a value rule.
-
-## TRACE v0.2.7 CANDIDATE
-
-Branch:
-
-```text
-framework/trace-v0-2-7-narrow-repair
-```
-
-Exact candidate head:
-
-```text
-0e6ab648cafed142e89e5cf1902c3b64faee8984
-```
-
-Draft PR:
-
-```text
-TRACE #21 — Build TRACE v0.2.7 narrow drift-repair candidate
-```
-
-Candidate state:
-
-```text
-WORKING_CANDIDATE
-NOT_RELEASED
-NOT_CANON
-NOT_VALIDATED
-NOT_AUTHORITY
-NOT_PERMISSION
-NOT_CLEARANCE
+TRACE PR #21
+candidate head: 0e6ab648cafed142e89e5cf1902c3b64faee8984
+merged main: 61393387d930e57450f50818151ba4a0f31023cf
 ```
 
 Admitted repair scope:
 
 1. propagate target-set aperture and aperture-relative coverage into the middle-out seed;
 2. add numbered invariants `I57`–`I60`;
-3. repair the survival kernel;
-4. replace the stale revision declaration with explicit v0.2.6 → v0.2.7 succession;
-5. add target-set incompleteness and target-selection authority limits to the unresolved register;
-6. add one non-required canonical serialization profile using existing graph objects;
-7. add one constructed divergent-target-aperture transfer;
-8. correct README front-door ordering and label `TRACE.pdf` as the older v0.5 carrier candidate.
+3. repair the survival kernel, revision declaration, and unresolved register;
+4. add one non-required canonical existing-object target-set aperture profile;
+5. add one constructed divergent-target-aperture transfer;
+6. correct README front-door ordering and label `TRACE.pdf` as the older v0.5 carrier candidate.
 
 Locked non-growth boundary:
 
@@ -127,48 +98,14 @@ minimum-schema shape change:      NO
 new selector:                     NO
 new value rule:                   NO
 new authority rule:               NO
-PDF replacement in this change:   NO
+PDF replacement:                  NO
 ```
 
-## DETERMINISTIC BUILD
-
-Compiler:
-
-```text
-tools/compile_trace_v027.py
-```
-
-Compiled object:
-
-```text
-TRACE_FORMAL_SEED_v0_2_7.md
-```
-
-Exact build result:
-
-```text
-base lines:                          5,591
-compiled lines:                      5,759
-base SHA-256:      5a26462f613d9051d8f165dc7b4bb8778dd79ac4c4836144ac94622802f1ddaa
-compiled SHA-256:  de21182f42228a0104181fb24f245c652c3150853e14172c4174be4bb9ef03ab
-schema shape identical:              true
-node vocabulary unchanged:           true
-edge vocabulary unchanged:           true
-required packet properties unchanged:true
-stale v0.2.6 machine identifiers:    0
-compiler status:                     PASS
-```
-
-The committed candidate is byte-identical to deterministic compiler output.
-
-## v0.2.7 FALSIFY X100
-
-Exact-head workflow:
+### v0.2.7 executable evidence
 
 ```text
 workflow: TRACE v0.2.7 falsify x100
 run id: 30963832233
-run number: 3
 head: 0e6ab648cafed142e89e5cf1902c3b64faee8984
 conclusion: SUCCESS
 artifact id: 8913933758
@@ -186,8 +123,6 @@ mutation_detector_failure_count:     0
 verdict: CLEAR_WITH_RESIDUAL_LIMITS
 ```
 
-The first v0.2.7 audit execution exposed four audit-instrument defects: one brittle value-layer token and three ineffective mutation detectors. They were repaired, the temporary repair workflow removed itself, and the full suite was rerun at a new exact head. They are not represented as candidate failures.
-
 Residual limits:
 
 ```text
@@ -198,50 +133,48 @@ TRACE_PDF_REMAINS_OLDER_CARRIER_BUT_IS_NOW_LABELLED
 CONSTRUCTED_TRANSFER_NOT_WORLD_EVIDENCE
 ```
 
-Green CI establishes deterministic compilation and closure of the declared regression/mutation suite only. It does not establish world validity, decision advantage, complete target discovery, legitimate authority, operational effectiveness, permission, or clearance.
-
-## EXACT-HEAD CC HOSTILE REVIEW
-
-COM issue #27 dispatches a fresh read-only hostile review of TRACE PR #21 at exact head:
+### v0.2.7 release
 
 ```text
-base: d166a97d0a3d4e4e5bf0f6cd2395f15bd5f16869
-head: 0e6ab648cafed142e89e5cf1902c3b64faee8984
+TRACE PR #22
+release branch head: f2ca397063d68520bb04883fcd0c49d389f77ec4
+merged main: 084a8c2ad0f5b54212b079e1a7edd7630932f6eb
+formal-object bytes changed in release PR: NO
 ```
 
-Required verdicts:
+The repository front door now identifies v0.2.7 as the active released formal baseline and preserves v0.2.6 as the released predecessor.
+
+## HUMAN OVERRIDE AND REVIEW PROVENANCE
+
+COM issue #27 dispatched a fresh read-only Claude/CC hostile review of PR #21 at the exact candidate head.
+
+Before any CC terminal return was observed, Mark instructed Framework:
 
 ```text
-BREAK
-NARROW
-CLEAR WITH RESIDUAL LIMITS
+COMS and proceed
 ```
 
-Review target includes:
-
-- hidden primitive, schema, port, or required-field growth;
-- selector, value, or authority smuggling;
-- target completeness or discovery claims;
-- policy authority smuggled through the constructed example;
-- semantic drift outside the compiler transformation;
-- false confidence from 100/100 probe resistance;
-- version or release confusion while v0.2.6 remains active.
-
-Current route state:
+Framework integrated that instruction as:
 
 ```text
-HELLO / ACK: NOT YET OBSERVED
-TERMINAL VERDICT: NOT YET OBSERVED
-TRACE MUTATION: NONE OBSERVED
+HUMAN_WAIT_OVERRIDE_RECEIVED
+CC_CLEARANCE_NOT_INFERRED
+CC_AGREEMENT_NOT_INFERRED
+CC_REFUSAL_NOT_INFERRED
+LATE_CC_RETURN_REMAINS_ADMISSIBLE
 ```
 
-PR #21 remains draft and unmerged until Framework integrates the return or Mark explicitly overrides the wait. Silence is not clearance.
+The candidate and release were integrated under human authority. A late CC return must be preserved and assessed. A material late finding may justify a later bounded correction, but does not retroactively become prior clearance or prior refusal.
 
-## EARLIER CC ROUTE
+Current route state for issue #27:
 
-COM issue #26 requested independent review of the v0.2.6 x100 audit. No CC return was observed before Mark overrode the additional wait and instructed Framework to continue.
-
-That route remains historically open to a late return, but it is not the active integration gate. A late return must be preserved and assessed rather than silently discarded.
+```text
+HELLO / ACK: NOT OBSERVED
+TERMINAL VERDICT: NOT OBSERVED
+TRACE MUTATION BY CC: NONE OBSERVED
+INTEGRATION GATE: CLOSED BY HUMAN OVERRIDE
+ROUTE STATUS: OPEN / NON-GATING
+```
 
 ## COMMS DEFECT
 
@@ -261,23 +194,23 @@ RETRIEVAL_INCOMPLETE != EVENT_ABSENT
 
 ## COMS
 
-- **Mark:** human authority; authorized continued construction after the v0.2.6 audit and retains merge/release authority.
-- **Framework / `FW-20260805-TRACE027-BUILD-71C4`:** integrated PR #20 evidence, built and falsified v0.2.7, opened draft TRACE PR #21, dispatched the exact-head CC review, and owns integration.
-- **CC:** exact-head hostile review requested on COM issue #27; no return observed yet.
+- **Mark:** human and release authority; explicitly authorized continuation and release through `COMS and proceed`.
+- **Framework / `FW-20260805-TRACE027-BUILD-71C4`:** integrated the v0.2.6 audit evidence, built and falsified v0.2.7, recorded the human override, merged PR #21, released through PR #22, and owns late-return integration.
+- **CC:** hostile review routes #26 and #27 remain open to late terminal returns; neither route is an active integration gate.
 - **Build 3 / Campfire 1 / QW / other apertures:** no active COM task.
 
 ## BOUNDARY
 
-Do not merge or release TRACE v0.2.7 merely because 100/100 declared probes resisted.
+Do not call TRACE v0.2.7 canon, validated, world-valid, authoritative, permission, or clearance.
 
-Do not call v0.2.7 canon, validated, world-valid, authoritative, permission, or clearance.
+Do not infer CC review, agreement, refusal, or clearance from silence or human override.
 
-Do not infer CC clearance from silence, delayed execution, or a human override.
-
-Do not alter PR #21's exact head while CC review is anchored unless an evidenced repair requires re-anchoring.
+Do not treat 100/100 declared probe resistance as probability, certification, or complete falsification.
 
 Do not grow the minimum schema merely to enforce every semantic distinction.
 
 Do not replace `TRACE.pdf` without a separate rendered review.
+
+Future TRACE formal work starts from the released v0.2.7 object unless Mark explicitly selects another base.
 
 `The lullaby was never for the cradle`.
