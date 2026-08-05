@@ -1,8 +1,8 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — CAMPFIRE TRACE v0.2.7 LOCAL INSTALL PENDING; TRACE PUBLIC FRONT DOOR INTEGRATED
+STATUS: ACTIVE — CAMPFIRE TRACE v0.2.7 LOCAL INSTALL PENDING; TRACE PUBLIC REPOSITORY PREPARATION COMPLETE
 
-COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, polished prose, public interest, and successful model output are not proof.
+COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, polished prose, public interest, citation metadata, and successful model output are not proof.
 
 ## CURRENT
 
@@ -16,13 +16,13 @@ COM is a working coordination baseline, not canon, validation, consensus, or a t
 - local_install_gate: READY / waiting for Mark to update launcher and return Stage 1 JSON
 - local_activation_gate: HELD until Stage 1 install evidence is reconciled
 - provider_calls_or_spend: NONE
-- completed_task: `TRACE-PUBLIC-FRONT-DOOR-001`
-- completed_route: COM issue #31
-- completed_integration_owner: Framework, session `FW-20260805-TRACE-PUBLIC-6B4E`
-- TRACE_public_front_door: INTEGRATED / TRACE PR #31
-- current_TRACE_main: `f21408c517dcd5ef1c360d9f5fb8666d9d4dd6cf`
-- public_front_door_CC_return: NOT OBSERVED BEFORE HUMAN WAIT OVERRIDE
-- late_public_front_door_CC_return: ADMISSIBLE / NON-GATING
+- completed_public_front_door_task: `TRACE-PUBLIC-FRONT-DOOR-001` / COM issue #31
+- completed_repository_prep_task: `TRACE-REPO-PREP-001` / COM issue #33
+- repository_prep_integration_owner: Framework, session `FW-20260805-TRACE-REPO-8D21`
+- TRACE_public_repository: PREPARED / TRACE PRs #31 and #32 integrated
+- current_TRACE_main: `dc145cbaf43d1ffe14ad26c0e79e7e6d22fc793d`
+- repository_prep_CC_return: NOT OBSERVED BEFORE HUMAN COMPLETION AUTHORITY
+- late_repository_prep_CC_return: ADMISSIBLE / NON-GATING
 
 ## RELEASED TRACE SOURCE ANCHOR
 
@@ -49,7 +49,7 @@ NOT_PERMISSION
 NOT_CLEARANCE
 ```
 
-The public-front-door integration did not alter the formal source, rendered carrier, release declaration, schema, compiler, probes, carrier machinery, formal vocabulary, semantics, release status, authority, permission, clearance, validation status, or licensing status.
+The public-repository work did not alter the formal source, rendered carrier, release declaration, schema, compiler, probes, carrier machinery, formal vocabulary, semantics, release status, authority, permission, clearance or validation status.
 
 ## TRACE PUBLIC FRONT DOOR — INTEGRATED
 
@@ -62,7 +62,7 @@ merge commit: f21408c517dcd5ef1c360d9f5fb8666d9d4dd6cf
 changed files: 3
 ```
 
-Changed files:
+Integrated files:
 
 ```text
 README.md
@@ -70,46 +70,66 @@ REVIEW_GUIDE.md
 .github/ISSUE_TEMPLATE/trace-review.md
 ```
 
-The integrated front door:
+The front door explains the problem before repository machinery, gives five-minute, human-readable and exact-formal reading paths, distinguishes the Markdown formal source from the PDF carrier, states claim ceilings, and gives external reviewers structured conceptual, formal, operational, adversarial and empirical review routes.
 
-- explains the problem before repository machinery;
-- gives five-minute, human-readable, and exact-formal reading paths;
-- distinguishes the released Markdown formal source from the rendered PDF carrier and release declaration;
-- states current claim ceilings and residual limits;
-- adds conceptual, formal, operational, adversarial, and empirical review lanes;
-- asks reviewers to separate fact from inference and provide exact evidence, failure mode, containment, repair, and gate effect;
-- provides a structured GitHub issue template for external findings;
-- discloses that reuse and licensing terms have not yet been specified.
+## TRACE REPOSITORY PUBLICATION PREP — COMPLETE
+
+TRACE PR #32: `Complete TRACE repository publication metadata`
+
+```text
+base: f21408c517dcd5ef1c360d9f5fb8666d9d4dd6cf
+reviewed head: 0af81d2a293d263d449b8e0b343ad4223784997e
+merge commit: dc145cbaf43d1ffe14ad26c0e79e7e6d22fc793d
+changed files: 5
+```
+
+Integrated files:
+
+```text
+CITATION.cff
+CONTRIBUTING.md
+LICENSE_STATUS.md
+.github/pull_request_template.md
+README.md
+```
+
+The completed repository surface now provides:
+
+- machine-readable citation metadata for TRACE v0.2.7 and Mark Goodbody;
+- review-first contribution guidance with fact/inference, provenance, released-object and AI-assistance discipline;
+- an explicit record that no general reuse licence has yet been granted, without selecting a licence;
+- a pull-request template requiring scope, evidence, claim boundaries, provenance, verification, compatibility and rights-to-submit acknowledgement;
+- root README links to citation, contribution and licence-status material.
+
+`CITATION.cff` was parsed as valid YAML during Framework review. No GitHub Release object, tag, repository topic set, description change or licence selection is claimed by this integration.
+
+The obsolete open TRACE v0.11 review issue #2 was closed as superseded and preserved with a note that closure does not mean its concerns were disproved. The public TRACE repository now has no intentionally open historical task issue; new findings use the current review template.
 
 Scope boundary:
 
 ```text
-PUBLIC_FRONT_DOOR != FORMAL_REWRITE
-ACCESSIBILITY != CLAIM_EXPANSION
-INVITATION_TO_REVIEW != VALIDATION
-REVIEW_TEMPLATE != REVIEW RESULT
-PUBLIC_VISIBILITY != LICENCE_GRANT
+PUBLICATION_METADATA != FORMAL_CHANGE
+CITATION != VALIDATION
+CONTRIBUTION_GUIDANCE != LICENCE_GRANT
+PUBLIC_VISIBILITY != REUSE_PERMISSION
+ISSUE_CLOSED != CONCERNS_DISPROVED
 ```
 
 ### Review provenance
 
-A fresh exact-head Claude Code review was dispatched through COM issue #31. The complete route contained only Framework messages before Mark instructed:
+A fresh exact-head Claude Code review was dispatched through COM issue #33 at PR #32 head `0af81d2...`.
+
+Issue metadata reported exactly one comment, the Framework review request. No CC-authored ACK or terminal return was observed before completion. Mark's instruction to finish preparing the repository was integrated as human completion authority:
 
 ```text
-COMS and proceed
-```
-
-Framework integrated that instruction as:
-
-```text
-HUMAN_WAIT_OVERRIDE_RECEIVED
+HUMAN_COMPLETION_AUTHORITY_RECEIVED
 CC_CLEARANCE_NOT_INFERRED
 CC_AGREEMENT_NOT_INFERRED
 CC_REFUSAL_NOT_INFERRED
 LATE_CC_RETURN_REMAINS_ADMISSIBLE
 ```
 
-Framework completed its own exact-head review and found no blocker. No CI workflow was attached to the documentation-only change. The absence of a CC return is preserved as unresolved review coverage, not clearance or agreement.
+Framework completed exact-head review and found no blocker. The absence of a CC return remains unresolved review coverage, not clearance or agreement.
 
 ## CURRENT RENDERED CARRIER
 
@@ -198,21 +218,21 @@ Activation affects future TRACE / COMPARE judging only. Historical rounds remain
 
 ## COMS
 
-- **Mark:** human authority and active local operator for Campfire Stage 1; authorized the TRACE public-front-door integration through `COMS and proceed`.
+- **Mark:** human authority and active local operator for Campfire Stage 1; authorized completion of the TRACE public repository preparation.
 - **Framework / Build 3:** owns Campfire Stage 1 evidence reconciliation and Stage 2 activation verification.
-- **Framework / `FW-20260805-TRACE-PUBLIC-6B4E`:** completed and integrated TRACE PR #31; owns assessment of any late public-front-door CC return.
-- **CC:** no public-front-door terminal return observed before human override; no clearance inferred; late material evidence remains admissible.
+- **Framework / `FW-20260805-TRACE-REPO-8D21`:** completed TRACE PR #32, closed superseded TRACE issue #2, synchronized repository state and owns assessment of any late repository-prep CC return.
+- **CC:** no repository-prep terminal return observed before human completion authority; no clearance inferred; late material evidence remains admissible.
 - **Other Framework sessions / Build 2 / Campfire 1 / QW / other apertures:** no mutation authority on active lanes unless separately assigned.
 
 ## BOUNDARY
 
 Do not activate TRACE v0.2.7 in Campfire before Stage 1 install evidence is reconciled.
 
-Do not call the Campfire profile the complete TRACE source, canon, validation, authority, permission, clearance, or promotion.
+Do not call the Campfire profile the complete TRACE source, canon, validation, authority, permission, clearance or promotion.
 
-Do not call the public front door a formal repair, semantic revision, validation, endorsement, or licence grant.
+Do not call public-repository polish a formal repair, semantic revision, validation, endorsement, publication peer review or licence grant.
 
-Do not infer CC review, agreement, refusal, or clearance from silence or human override.
+Do not infer CC review, agreement, refusal or clearance from silence or human authority.
 
 Installation and activation remain separate. Activation affects future TRACE/COMPARE judging only and does not rewrite historical rounds.
 
