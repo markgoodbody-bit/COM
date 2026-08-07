@@ -1,33 +1,63 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — ME v0.7.0 COMPREHENSIVE COVERAGE UNDER CC REVIEW; PRIOR READING COPY REMAINS VERIFIED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
+STATUS: ACTIVE — ME v0.7.0 COMPREHENSIVE COVERAGE REVIEW COMPLETED; LOCAL CC-INTEGRATED READING COPY VERIFIED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, and successful model output are not proof.
 
-## ACTIVE — ME v0.7.0 COMPREHENSIVE COVERAGE REVIEW
+## COMPLETED — ME v0.7.0 COMPREHENSIVE COVERAGE REVIEW
 
 ```text
 task_id: ME-V070-CC-002
-addressed_to: CC
-instruction: hostile editorial review of the exact comprehensive-coverage expansion carried in COM issue #35
-COM_route: issue #35
-payload_comments: 5217836382, 5217839636, 5217844168, 5217848256
-base_source_sha256: b4c78b46aaf8aa3e8d2df5ddf2915cdd52aff77b170802fd6956e2bd6e631fff
-candidate_source_sha256: 1780c805971620d6f7934a188d65ced98512a789f5084f43874c532f4d0381e5
-base_words: 13,752
-candidate_words: 16,930
-net_addition: 3,178
-write_scope: NONE / read-only review
-no_touch: Mechanical Ethics repository; frozen v0.6.3; prior v0.7.0 candidates; COM state
+COM_route: issue #35 / CLOSED COMPLETED
 human_authority: Mark
 integration_owner: Framework / FW-ME070-COVERAGE-20260807T1400+0100-71D4
-observation_owner: Framework
-next_check: MANUAL
-reply_route: COM issue #35
-status: ACTIVE / AWAITING_CC_RETURN
+CC_return: comment 5218286185 / COM-CC-ME070-COVERAGE-RETURN-20260807-001
+CC_reviewed_object_sha256: 1780c805971620d6f7934a188d65ced98512a789f5084f43874c532f4d0381e5
+CC_verdict: REBUILD FROM SMALLER COVERAGE CORE
+Framework_integration: comment 5219179285
+repository_main_changed: false
 ```
 
-The payload contains the exact text for eight new sections, the collective-authority expansion, and replacement Appendix B. An issue or artifact is not a terminal CC return. Silence does not imply agreement, refusal, absence, identity, or clearance.
+CC reviewed the 16,930-word comprehensive V1 object and returned a read-only review. CC identity, model and provider fields remain self-reported. Agreement is not validation.
+
+Framework integrated the findings against the already-narrowed V2.1 object. The unearned priority selector, closure duplication, insider-policy drift and Appendix B self-certification were removed. Strong sections on authored clocks, truth without force, collective authority and machine speed were retained. Disputed standing and positive good were narrowed.
+
+### Final local source
+
+```text
+file: MECHANICAL_ETHICS_HUMAN_READER_v0_7_0_COMPREHENSIVE_COVERAGE_CC_INTEGRATED_WORKING_CANDIDATE.md
+SHA-256: cc001e9ce34c46b3d5ac45772c8f1425dcb412b411a0cdfceaaca91330482a7a
+words: 15,369
+prior CC-integrated reader words: 13,752
+delta: +1,617
+comprehensive V1 delta: -1,561
+comprehensive V2.1 delta: -476
+```
+
+### Verified local reading copy
+
+```text
+file: Mechanical_Ethics_v0_7_0_COMPREHENSIVE_CC_INTEGRATED_READING_COPY.pdf
+SHA-256: 3f95d03b9fa7b230a6f84b9d07476bc706d9318ea57d06dc2510a3a27eb9b979
+size: 592,937 bytes
+pages: 36
+geometry: all A4
+verification: all pages rendered through Poppler and PDFium at 144 DPI; maximum numeric page-content boundary difference 2 pixels; all-page contact sheets visually inspected
+```
+
+State ceiling:
+
+```text
+LOCAL_COMPREHENSIVE_COVERAGE_CC_INTEGRATED_WORKING_CANDIDATE
+LOCAL_READING_COPY_VERIFIED
+NOT_REPOSITORY_BASELINE
+NOT_RELEASED
+NOT_CANON
+NOT_VALIDATED
+NOT_PUBLICATION_READY
+```
+
+Frozen Mechanical Ethics v0.6.3 remains the repository preservation baseline at `markgoodbody-bit/mechanical-ethics` main commit `c7f1a2cf1bdceb7bf56e7129f3ff4d9376651d3f`.
 
 ## COMPLETED — PRIOR ME v0.7.0 CC COLLABORATION
 
@@ -41,26 +71,6 @@ ME_review_PR: #33 / CLOSED UNMERGED
 ME_review_record_head: d0fc7681084718394691e6c6b44e015d4c0182b4
 repository_main_changed: false
 ```
-
-Prior final local source:
-
-```text
-file: MECHANICAL_ETHICS_HUMAN_READER_v0_7_0_CC_INTEGRATED_WORKING_CANDIDATE.md
-SHA-256: b4c78b46aaf8aa3e8d2df5ddf2915cdd52aff77b170802fd6956e2bd6e631fff
-words: 13,752
-```
-
-Prior verified reading copy:
-
-```text
-file: Mechanical_Ethics_v0_7_0_CC_INTEGRATED_READING_COPY.pdf
-SHA-256: b42dc5f244871e0787c980f820ac0cf30a945dabc268a1c400b8ada52b4ed43d
-size: 583,095 bytes
-pages: 34
-geometry: all A4
-```
-
-Frozen Mechanical Ethics v0.6.3 remains the repository preservation baseline at `markgoodbody-bit/mechanical-ethics` main commit `c7f1a2cf1bdceb7bf56e7129f3ff4d9376651d3f`.
 
 ## CURRENT — CAMPFIRE TRACE v0.2.7
 
@@ -106,7 +116,7 @@ NOT_CLEARANCE
 
 ## BOUNDARY
 
-Do not infer CC agreement, refusal, absence, identity verification or clearance beyond a preserved return.
+Do not infer CC agreement, refusal, absence, identity verification or clearance beyond preserved returns.
 
 Do not call the comprehensive-coverage candidate complete, accepted, canonical, validated, released, publication-ready, or a repository baseline.
 
