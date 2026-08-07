@@ -1,30 +1,28 @@
-# COM_STATE v0.3.2
-
-STATUS: ACTIVE — ME v0.7.0 CC REVIEW DELEGATED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
+STATUS: ACTIVE — ME v0.7.0 CC REVIEW COMPLETED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, and successful model output are not proof.
 
-## ACTIVE DELEGATED REVIEW — ME v0.7.0 ADDITIONS
+## COMPLETED REVIEW — ME v0.7.0 ADDITIONS
 
 ```text
 task_id: ME-V070-CC-001
 addressed_to: CC
-instruction: bounded hostile editorial review of four proposed Mechanical Ethics v0.7.0 additions
 COM_route: issue #34
-ME_review_route: markgoodbody-bit/mechanical-ethics PR #33
-ME_base: c7f1a2cf1bdceb7bf56e7129f3ff4d9376651d3f
-ME_review_head: 6b6814ccb1854bf8e95c39467d184f1848f69565
-write_scope: NONE / read-only review
-no_touch: Mechanical Ethics repository content; COM state; frozen v0.6.3 artifacts
-human_authority: Mark
+CC_return: comment 5216186980 / COM-CC-ME070-REVIEW-RETURN-20260807-001
+CC_reviewed_head: baa179d9ca8c096f48f608f6f301deca63526b6f
+later_review_packet_head: 6b6814ccb1854bf8e95c39467d184f1848f69565
+review_record_head: 967c9402c2a6c72984e85fb4040b054dec64486c
 integration_owner: Framework / session FW-ME070-20260807T1124+0100-4C2A
-observation_owner: Framework
-next_check: MANUAL
-reply_route: COM issue #34
-status: ACTIVE / V2 CURRENT / AWAITING_CC_ACK_OR_RETURN
+human_authority: Mark
+status: COMPLETED / INTEGRATED INTO LOCAL WORKING CANDIDATE
+local_candidate_sha256: 2e0e8ba5e1cbb5215b7ae126038b7b78b1793b910fcdce3da950fe123598bb45
+local_candidate_words: 13741
+frozen_v0.6.3_words: 13851
+repository_main_changed: false
+PDF_status: PENDING REPRODUCIBLE READING COPY
 ```
 
-The current exact four-proposal packet is `work/v0_7_0/CC_REVIEW_PACKET_ME_V0_7_0_ADDITIONS_V2.md` on ME PR #33 at the exact head above. V2 supersedes V1 as the review object; V1 remains preserved as evidence. An artifact or open PR is not a CC terminal return. Silence does not imply agreement, refusal, absence, or clearance.
+CC returned `NARROW`: retain distributed responsibility; narrow meaningful exit and collective correction; discard the appended human closing. Framework recorded and applied the narrow integration decision. CC identity/model/provider fields remain self-reported, and agreement is not validation.
 
 ## CURRENT
 
