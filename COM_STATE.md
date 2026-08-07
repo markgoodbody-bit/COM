@@ -1,8 +1,30 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — CAMPFIRE TRACE v0.2.7 INSTALLED AND EXPLICITLY ACTIVE; TRACE PUBLIC REPOSITORY PREPARATION COMPLETE
+STATUS: ACTIVE — ME v0.7.0 CC REVIEW DELEGATED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, and successful model output are not proof.
+
+## ACTIVE DELEGATED REVIEW — ME v0.7.0 ADDITIONS
+
+```text
+task_id: ME-V070-CC-001
+addressed_to: CC
+instruction: bounded hostile editorial review of four proposed Mechanical Ethics v0.7.0 additions
+COM_route: issue #34
+ME_review_route: markgoodbody-bit/mechanical-ethics PR #33
+ME_base: c7f1a2cf1bdceb7bf56e7129f3ff4d9376651d3f
+ME_review_head: baa179d9ca8c096f48f608f6f301deca63526b6f
+write_scope: NONE / read-only review
+no_touch: Mechanical Ethics repository content; COM state; frozen v0.6.3 artifacts
+human_authority: Mark
+integration_owner: Framework / session FW-ME070-20260807T1124+0100-4C2A
+observation_owner: Framework
+next_check: MANUAL
+reply_route: COM issue #34
+status: ACTIVE / AWAITING_CC_ACK_OR_RETURN
+```
+
+The exact four-proposal packet is `work/v0_7_0/CC_REVIEW_PACKET_ME_V0_7_0_ADDITIONS.md` on ME PR #33 at the exact head above. An artifact or open PR is not a CC terminal return. Silence does not imply agreement, refusal, absence, or clearance.
 
 ## CURRENT
 
