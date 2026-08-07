@@ -13,7 +13,7 @@ instruction: bounded hostile editorial review of four proposed Mechanical Ethics
 COM_route: issue #34
 ME_review_route: markgoodbody-bit/mechanical-ethics PR #33
 ME_base: c7f1a2cf1bdceb7bf56e7129f3ff4d9376651d3f
-ME_review_head: baa179d9ca8c096f48f608f6f301deca63526b6f
+ME_review_head: 6b6814ccb1854bf8e95c39467d184f1848f69565
 write_scope: NONE / read-only review
 no_touch: Mechanical Ethics repository content; COM state; frozen v0.6.3 artifacts
 human_authority: Mark
@@ -21,10 +21,10 @@ integration_owner: Framework / session FW-ME070-20260807T1124+0100-4C2A
 observation_owner: Framework
 next_check: MANUAL
 reply_route: COM issue #34
-status: ACTIVE / AWAITING_CC_ACK_OR_RETURN
+status: ACTIVE / V2 CURRENT / AWAITING_CC_ACK_OR_RETURN
 ```
 
-The exact four-proposal packet is `work/v0_7_0/CC_REVIEW_PACKET_ME_V0_7_0_ADDITIONS.md` on ME PR #33 at the exact head above. An artifact or open PR is not a CC terminal return. Silence does not imply agreement, refusal, absence, or clearance.
+The current exact four-proposal packet is `work/v0_7_0/CC_REVIEW_PACKET_ME_V0_7_0_ADDITIONS_V2.md` on ME PR #33 at the exact head above. V2 supersedes V1 as the review object; V1 remains preserved as evidence. An artifact or open PR is not a CC terminal return. Silence does not imply agreement, refusal, absence, or clearance.
 
 ## CURRENT
 
