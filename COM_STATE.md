@@ -1,8 +1,43 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — ME v0.7.0 COMPREHENSIVE COVERAGE REVIEW COMPLETED; LOCAL CC-INTEGRATED READING COPY VERIFIED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
+STATUS: ACTIVE — ME v0.7.0 AWAITING MARK'S COMPLETE HUMAN READ; CC COVERAGE REVIEW COMPLETED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
 
-COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, and successful model output are not proof.
+COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, successful model output, and a completed reading pass are not proof.
+
+## CURRENT — ME v0.7.0 HUMAN READING GATE
+
+```text
+gate_id: ME-V070-HUMAN-READ-001
+human_reader: Mark
+human_authority: Mark
+reading_window: 2026-08-08 through 2026-08-09 / Europe-London
+reading_object: Mechanical_Ethics_v0_7_0_COMPREHENSIVE_CC_INTEGRATED_READING_COPY.pdf
+reading_object_SHA256: 3f95d03b9fa7b230a6f84b9d07476bc706d9318ea57d06dc2510a3a27eb9b979
+source_object: MECHANICAL_ETHICS_HUMAN_READER_v0_7_0_COMPREHENSIVE_COVERAGE_CC_INTEGRATED_WORKING_CANDIDATE.md
+source_object_SHA256: cc001e9ce34c46b3d5ac45772c8f1425dcb412b411a0cdfceaaca91330482a7a
+mode: read continuously as a book
+capture_during_read: notes only
+edit_during_read: no
+AI_expansion_during_gate: no
+additional_CC_review_during_gate: no
+repository_main_changed: false
+status: AWAITING_HUMAN_READ
+```
+
+The purpose of this gate is to test the edition's movement as a complete human reader, not to reopen completeness work. Mark may note only material defects: unclear argument, attention loss, unearned claim, repetition, wrong placement, or carrier problem. Silence in the notes is not validation, and finishing the read does not automatically promote, release, validate, canonise, or publish the candidate.
+
+After the read, Framework should classify the notes before editing:
+
+```text
+MATERIAL_ARGUMENT_DEFECT
+REGISTER_OR_CLARITY_DEFECT
+FLOW_OR_PLACEMENT_DEFECT
+DUPLICATION_OR_EXCESS
+CARRIER_DEFECT
+OPTIONAL_PREFERENCE
+```
+
+The next decision is whether to retain the candidate, perform one bounded editorial correction pass, or propose a new preservation baseline. No repository mutation follows automatically.
 
 ## COMPLETED — ME v0.7.0 COMPREHENSIVE COVERAGE REVIEW
 
@@ -50,6 +85,7 @@ State ceiling:
 ```text
 LOCAL_COMPREHENSIVE_COVERAGE_CC_INTEGRATED_WORKING_CANDIDATE
 LOCAL_READING_COPY_VERIFIED
+AWAITING_HUMAN_READ
 NOT_REPOSITORY_BASELINE
 NOT_RELEASED
 NOT_CANON
@@ -117,6 +153,10 @@ NOT_CLEARANCE
 ## BOUNDARY
 
 Do not infer CC agreement, refusal, absence, identity verification or clearance beyond preserved returns.
+
+Do not edit or expand the v0.7.0 reading object during the human-reading gate.
+
+Do not infer acceptance, validation, release readiness, canon or promotion from completion of the human read.
 
 Do not call the comprehensive-coverage candidate complete, accepted, canonical, validated, released, publication-ready, or a repository baseline.
 
