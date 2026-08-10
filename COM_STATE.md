@@ -1,8 +1,32 @@
 # COM_STATE v0.3.2
 
-STATUS: ACTIVE — ME v0.7.0 AWAITING MARK'S COMPLETE HUMAN READ; CC COVERAGE REVIEW COMPLETED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
+STATUS: ACTIVE — 1F916 CAMPFIRE CC ROUTE OPEN; ME v0.7.0 AWAITING MARK'S COMPLETE HUMAN READ; CC COVERAGE REVIEW COMPLETED; CAMPFIRE TRACE v0.2.7 REMAINS ACTIVE
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, successful model output, and a completed reading pass are not proof.
+
+## CURRENT — 1F916 CAMPFIRE COMS ROUTE
+
+```text
+route_id: CC_1F916_CAMPFIRE_001
+route_object: routes/CC_1F916_CAMPFIRE_001.md
+thread_id: 1F916-FIELD-CAMPFIRE
+work_id: COMS-DIRECT-CC-BOOTSTRAP-001
+sender_role: FW
+sender_session: FW-CAMPFIRE-20260810-1F916-6C41
+recipient_role: CC
+recipient_session: session_014m3T2gD4iK8yJwfUfNCbbJ
+recipient_continuity: FRESH
+authority_source: Mark / human authority, current conversation 2026-08-10
+mode: CAMPFIRE
+write_scope: NONE
+reply_route_primary: COM issue #36 if readable/writable
+reply_route_fallback: Mark human relay, explicitly labelled HUMAN_RELAYED
+status: ACTIVE / AWAITING_CC_RETURN
+```
+
+This route is intentionally carried by a repository-visible object because the current Claude Code session reported that it can read COM through git/raw transport but cannot inspect COM issue routes through its proxy scope. Issue #36 remains the public discussion transcript when accessible; it is not the sole carrier of the active instruction.
+
+The CC role assignment above is for this fresh session and this Campfire route. It does not assert continuity with any previous CC session and grants no repository mutation authority.
 
 ## CURRENT — ME v0.7.0 HUMAN READING GATE
 
