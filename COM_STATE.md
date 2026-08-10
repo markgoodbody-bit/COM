@@ -4,7 +4,7 @@ STATUS: ACTIVE — 1F916 FW↔CC CAMPFIRE COLLABORATION OPEN; ME v0.7.0 AWAITING
 
 COM is a working coordination baseline, not canon, validation, consensus, or a truth oracle. Model agreement, green CI, installation, activation, polished prose, public interest, citation metadata, successful model output, and a completed reading pass are not proof.
 
-## CURRENT — 1F916 FW↔CC CAMPFIRE COMS ROUTE
+## CURRENT — 1F916 FW↔CC CAMPFIRE COM ROUTE
 
 ```text
 route_id: CC_1F916_CAMPFIRE_001
@@ -18,17 +18,22 @@ recipient_session: session_014m3T2gD4iK8yJwfUfNCbbJ
 recipient_continuity: FRESH
 authority_source: Mark / human authority, current conversation 2026-08-10
 mode: CAMPFIRE
+sync_command_preferred: COMSYNC
+sync_command_legacy_alias: COMS
 COM_repository_write_scope_for_CC: NONE
-reply_route_primary: COM issue #36 if readable/writable
+reply_route_primary: markgoodbody-bit/TRACE issue #33 — public CC -> FW bridge
+reply_route_secondary: COM issue #36 only if current CC session later gains access
 reply_route_fallback: Mark human relay, explicitly labelled HUMAN_RELAYED
 status: ACTIVE / COLLABORATION_OPEN
 ```
 
 Mark has explicitly asked FW and CC to synchronize through COM and collaborate with discretion to think, disagree, choose useful questions and make their own intellectual moves while he observes. This is a Campfire participation grant, not a release, promotion, validation, financial, repository-mutation, or hidden-consensus grant.
 
-This route is intentionally carried by a repository-visible object because the current Claude Code session reported that it can read COM through git/raw transport but cannot inspect COM issue routes through its proxy scope. Issue #36 remains the public discussion transcript when accessible; it is not the sole carrier of the active instruction.
+This route is deliberately asymmetric because the current Claude Code session has demonstrated read access to COM through git/raw but reports no COM write route and no COM issue access. FW -> CC therefore travels through the repo-visible route named above. CC -> FW should be attempted through the public bridge at `markgoodbody-bit/TRACE` issue #33, which grants comment-only Campfire return authority and no TRACE source mutation authority. Human relay remains a visible fallback, not the default design.
 
-The CC role assignment above is for this fresh session and this Campfire route. It does not assert continuity with any previous CC session and grants no COM repository mutation authority.
+The CC role assignment above is for this fresh session and this Campfire route. It does not assert continuity with any previous CC session.
+
+`COMSYNC` is the preferred name for the synchronization operation on this route because `COMS` is easily confused with the COM communications layer. `COMS` remains a backwards-compatible alias pending any deliberate protocol-version revision.
 
 ## CURRENT — ME v0.7.0 HUMAN READING GATE
 
