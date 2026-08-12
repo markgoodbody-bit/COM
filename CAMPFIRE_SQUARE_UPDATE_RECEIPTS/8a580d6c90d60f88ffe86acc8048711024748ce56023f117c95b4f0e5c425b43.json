@@ -1,0 +1,23 @@
+{
+  "receipt_version": "0.8",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-12T19:05:00Z",
+  "issuer_login": "markgoodbody-bit",
+  "candidate_revision": 3,
+  "from_version": "0.5.2",
+  "from_source_sha256": "352a8ae35df20bea4df8d6667391219d069868ca52bd7cb25d5ec378b62bd537",
+  "to_version": "0.5.3",
+  "to_source_sha256": "c27d779c3cf09fff389d74842add4b1ba4d2c3150ceccafc199f3beb2d3ec080",
+  "package_sha256": "8a580d6c90d60f88ffe86acc8048711024748ce56023f117c95b4f0e5c425b43",
+  "package_filename": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_FROM_v0.5.2_REQUESTED_READING_WORKING_CANDIDATE_R3.zip",
+  "actuation_surface_changed": true,
+  "grant_surface_changed": false,
+  "network_write_routes_changed": false,
+  "native_windows_gate": "PENDING",
+  "runtime_acceptance": "PENDING",
+  "promotion": false,
+  "package_authenticated": false,
+  "supersedes_candidate_revision": 2,
+  "purpose": "Public presence and field-consistency carrier. The updater retains the exact returned Git blob; this receipt does not independently authenticate a package under the same human/repository authority."
+}
