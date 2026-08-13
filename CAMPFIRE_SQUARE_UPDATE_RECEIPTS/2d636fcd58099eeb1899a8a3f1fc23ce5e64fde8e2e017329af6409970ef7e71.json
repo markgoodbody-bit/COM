@@ -6,6 +6,7 @@
   "issuer_login": "markgoodbody-bit",
   "application": "Campfire Square",
   "version": "0.5.3",
+  "to_version": "0.5.3",
   "candidate_revision": 10,
   "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R10_FROM_v0.5.3_R9_FIRE_VOTES_AND_COM_PLAN_FRESHNESS_WORKING_CANDIDATE.zip",
   "package_sha256": "2d636fcd58099eeb1899a8a3f1fc23ce5e64fde8e2e017329af6409970ef7e71",
