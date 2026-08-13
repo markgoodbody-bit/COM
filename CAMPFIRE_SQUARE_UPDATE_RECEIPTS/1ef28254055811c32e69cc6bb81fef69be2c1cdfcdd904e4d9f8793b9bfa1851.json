@@ -1,0 +1,43 @@
+{
+  "receipt_version": "0.19",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T20:10:23Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 19,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R19_FROM_v0.5.3_R18_WITNESS_INDEPENDENCE_WORKING_CANDIDATE.zip",
+  "package_sha256": "1ef28254055811c32e69cc6bb81fef69be2c1cdfcdd904e4d9f8793b9bfa1851",
+  "from_source_sha256": "3dc38ae943d13eb5c59da58b6c252618a0db2a6429b301c564718a8a240facaa",
+  "to_source_sha256": "68cc7e6d203ed817bc36b0a04928997065860ff43c8487718df1c0557a0b70b8",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "witness_surface_changed": true,
+  "relay_surface_changed": true,
+  "update_surface_changed": false,
+  "boundary_changing_update": true,
+  "field_defect_repaired": "Witness checks lacked bounded evidence-group identity, QUICK could retain a verdict without its target, instrument status and public effect were not explicit orthogonal axes, and the R17 local resolver could close a same-id public correction debt.",
+  "repair_summary": "Group checks by observed artifact/call without calling them independent witnesses; retain exact target/aperture/plan/action identity in QUICK; record concurrent local-investigation and public-correction obligations; preserve public debt when resolving a local investigation; and report stable test ids plus changed-surface mutation coverage.",
+  "unchanged_boundaries": "No new Square write route or action type; no credential, identity, quota, grant, high-reach review, target, retry, update-authentication, deletion, requested-read, Horizon or COM-plan change. Existing R15-R18 events and debts remain unchanged.",
+  "contract_tests": {
+    "passed": 75,
+    "total": 75,
+    "stable_test_ids": true,
+    "surface_counts": true,
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "surface": "R19 witness-independence required tokens",
+    "operator": "required-token-character-substitution",
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "EXACT_R18_BRIDGE_DERIVATION_STATIC_CONTRACT_DRIFT_DIFFERENTIAL_PARSER_UTF8_FIXTURE_AND_CHANGED_SURFACE_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_ONE_BOUNDED_FIELD_TRANSITION_PENDING",
+  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+}
