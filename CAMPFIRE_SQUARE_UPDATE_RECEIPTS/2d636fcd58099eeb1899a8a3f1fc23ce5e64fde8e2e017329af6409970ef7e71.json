@@ -1,0 +1,37 @@
+{
+  "receipt_version": "0.10",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T09:16:37Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "candidate_revision": 10,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R10_FROM_v0.5.3_R9_FIRE_VOTES_AND_COM_PLAN_FRESHNESS_WORKING_CANDIDATE.zip",
+  "package_sha256": "2d636fcd58099eeb1899a8a3f1fc23ce5e64fde8e2e017329af6409970ef7e71",
+  "from_source_sha256": "cac870dc3d61bec4b695e23d0be7204adf360f8e6bd5aa66ee41cbae0c666678",
+  "to_source_sha256": "8a25bb3f76ca1e2d074ab97309807d82de3e10323a2a952e1dbf04523be61dd4",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "boundary_changing_update": false,
+  "contract_tests": {
+    "passed": 116,
+    "total": 116
+  },
+  "falsification": {
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "field_defects_repaired": [
+    "FIRE row projection omitted the live post votes property, leaving the Votes column blank.",
+    "COM plan import depended on a single whole-issue observation and could report absence despite a valid immutable plan comment being present."
+  ],
+  "repair_summary": [
+    "FIRE rows now project the live votes value already present on post objects.",
+    "COM plan discovery now uses bounded newest-first issue-specific and repository-wide routes, deduplicates immutable comment IDs, retries freshness observations, and reports observation diagnostics on failure."
+  ],
+  "runtime_status": "STATIC_AND_FALSIFICATION_CLEAR_WINDOWS_FIELD_RETEST_PENDING",
+  "claim_ceiling": "Working candidate only. This receipt records exact package availability and test state; it is not release, promotion, validation, authority, permission, clearance, or package authentication."
+}
