@@ -1,0 +1,41 @@
+{
+  "receipt_version": "0.18-bridge",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T20:10:23Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 18,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R18_FROM_v0.5.3_R17_UPDATE_BOUNDARY_DISCLOSURE_BRIDGE_WORKING_CANDIDATE.zip",
+  "package_sha256": "710fa15353b425b447041044bf0c4c4e6b97f7deab576a4f2714c338fa4d08a3",
+  "from_source_sha256": "ac0937410c073f3d8a04ae7d87da0403821694e321a7782c60d91f098232b4e8",
+  "to_source_sha256": "3dc38ae943d13eb5c59da58b6c252618a0db2a6429b301c564718a8a240facaa",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "witness_surface_changed": false,
+  "relay_surface_changed": false,
+  "update_surface_changed": true,
+  "boundary_changing_update": false,
+  "field_defect_repaired": "R17 update inspection ignores an explicit manifest boundary_changing_update declaration when actuation and grant flags are unchanged.",
+  "repair_summary": "Display both declared and effective boundary state and fail closed on a manifest that denies a boundary implied by actuation/grant changes.",
+  "unchanged_boundaries": "Witness, Relay, plan, Square write, credential, identity, quota, grant, high-reach review, target, retry, deletion, requested-read, Horizon and COM-plan behavior are byte-unchanged.",
+  "contract_tests": {
+    "passed": 17,
+    "total": 17,
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "surface": "R18 update-boundary bridge",
+    "operator": "required-token-character-substitution",
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "EXACT_R17_DISCLOSURE_ONLY_BRIDGE_STATIC_AND_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_AND_INSTALL_PENDING",
+  "claim_ceiling": "Working bridge candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+}
