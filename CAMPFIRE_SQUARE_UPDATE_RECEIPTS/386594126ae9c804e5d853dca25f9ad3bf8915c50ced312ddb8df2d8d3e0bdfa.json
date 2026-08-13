@@ -1,0 +1,36 @@
+{
+  "receipt_version": "0.17",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T17:10:46Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 17,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R17_FROM_v0.5.3_R16_WITNESS_OBLIGATION_SEPARATION_WORKING_CANDIDATE.zip",
+  "package_sha256": "386594126ae9c804e5d853dca25f9ad3bf8915c50ced312ddb8df2d8d3e0bdfa",
+  "from_source_sha256": "e8eedd1b56c5c9b3a3567b76e93e22bec571d773c98ed3eee7d947690d4bdc45",
+  "to_source_sha256": "ac0937410c073f3d8a04ae7d87da0403821694e321a7782c60d91f098232b4e8",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "plan_surface_changed": true,
+  "boundary_changing_update": true,
+  "field_defect_repaired": "A private witness/instrument mismatch and a material public-state mismatch shared one CORRECTION_DUE lane, causing internal witness-schema bookkeeping to be posted publicly to Square participants without Campfire Square context.",
+  "repair_summary": "Split witness investigations from public correction obligations. Add a local-only, evidence-bound resolution action that re-reads direct/public-thread surfaces, compares immutable intended IDs and hashes, appends local evidence and disposition, and invokes no Square write route or quota.",
+  "unchanged_boundaries": "No new Square write route or public action type; no credential, quota, standing-grant, high-reach-review, target, retry, update-authentication or deletion change. The resolver records fresh equality only and does not establish historical cause, instrument validity or semantic truth.",
+  "contract_tests": {
+    "passed": 62,
+    "total": 62,
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "STATIC_CONTRACT_DRIFT_DIFFERENTIAL_PARSER_AND_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_LOCAL_ONLY_FIELD_TEST_PENDING",
+  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+}
