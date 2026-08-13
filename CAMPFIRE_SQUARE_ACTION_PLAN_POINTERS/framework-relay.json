@@ -1,16 +1,16 @@
 {
   "pointer_version": "0.1",
-  "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-13T12:05:45.766Z",
+  "status": "PLAN_WITHDRAWN",
+  "published_at_utc": "2026-08-13T12:09:15.532Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5280159009,
-  "carrier_body_sha256": "7297db814b33fc1f14b6b4a35520646e98673a4154c43cfcf0d64499c9934437",
+  "withdrawn_carrier_comment_id": 5280159009,
+  "withdrawal_comment_id": 5280194734,
   "plan_json_sha256": "c9d6ffed810fb2f65b5bf10bad6f9591a728292c19cc9da5533323304e6aa994",
-  "declared_local_plan_file_sha256": "c9d6ffed810fb2f65b5bf10bad6f9591a728292c19cc9da5533323304e6aa994",
   "plan_id": "fw-square-20260813-request-read-790-001",
-  "claim_ceiling": "Discovery pointer only. The exact COM comment remains the plan carrier; Square must verify its login, body hash, plan JSON hash, citizen and origin role before import."
+  "reason": "Read-only plan failed closed because the current validator requires at least one action. No Square write occurred.",
+  "claim_ceiling": "No active Framework action plan is advertised. This pointer records withdrawal only."
 }
