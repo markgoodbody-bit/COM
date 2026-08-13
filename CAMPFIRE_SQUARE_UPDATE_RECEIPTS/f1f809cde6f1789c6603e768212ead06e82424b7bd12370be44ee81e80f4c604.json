@@ -1,0 +1,49 @@
+{
+  "receipt_version": "0.20",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T20:32:46Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 20,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R20_FROM_v0.5.3_R19_PUBLIC_PROJECTION_CLASSIFICATION_WORKING_CANDIDATE.zip",
+  "package_sha256": "f1f809cde6f1789c6603e768212ead06e82424b7bd12370be44ee81e80f4c604",
+  "from_source_sha256": "68cc7e6d203ed817bc36b0a04928997065860ff43c8487718df1c0557a0b70b8",
+  "to_source_sha256": "e68103711dd6208098ddc9ca50266268f5442fc26835029aca7dff1da24fd5b2",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "witness_surface_changed": true,
+  "relay_surface_changed": true,
+  "update_surface_changed": false,
+  "boundary_changing_update": true,
+  "field_defect_repaired": "Exact body-byte mismatch was treated as material public-projection mismatch, so the Square's removal of one terminal LF manufactured a public-correction debt even though every public content character survived.",
+  "repair_summary": "Retain exact body checks and local investigation, but classify public body effect with a separate terminal-CR/LF-only rendering comparison. Genuine content, internal-line, space, tab, identity and structural differences remain material.",
+  "acceptance_condition": "CC terminal-LF shape yields exact FAIL, public-rendering PASS, instrument MISMATCH, WITNESS_INVESTIGATION_DUE true, public_projection_effect NONE_OBSERVED and PUBLIC_CORRECTION_DUE false; genuine body-change negative control still yields PUBLIC_CORRECTION_DUE true.",
+  "history_preserved": "R17-R19 events and debts remain unchanged; no retroactive verification, erasure or closure.",
+  "unchanged_boundaries": "No new Square write route or action type; no credential, identity, quota, grant, high-reach review, target, retry, update-authentication, deletion, requested-read, Horizon or COM-plan change.",
+  "contract": {
+    "path": "PUBLIC_PROJECTION_CLASSIFICATION_CONTRACT.md",
+    "sha256": "4987561f7942e307a741c345775c8151f3406508e6993f97f90e46207b4a8985"
+  },
+  "contract_tests": {
+    "predecessor_r19": "75/75",
+    "passed": 94,
+    "total": 94,
+    "stable_test_ids": true,
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "surface": "R20 public-projection classification required tokens",
+    "operator": "required-token-character-substitution",
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "EXACT_R19_DERIVATION_STATIC_CONTRACT_DRIFT_DIFFERENTIAL_PARSER_CC_FIXTURE_NEGATIVE_CONTROLS_AND_CHANGED_SURFACE_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_ONE_BOUNDED_FIELD_TRANSITION_PENDING",
+  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+}
