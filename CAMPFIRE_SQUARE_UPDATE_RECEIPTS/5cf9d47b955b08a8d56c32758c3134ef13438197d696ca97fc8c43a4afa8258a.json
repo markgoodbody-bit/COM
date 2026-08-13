@@ -1,0 +1,37 @@
+{
+  "receipt_version": "0.16",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T16:49:27Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 16,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R16_FROM_v0.5.3_R15_QUICK_WITNESS_EVIDENCE_WORKING_CANDIDATE.zip",
+  "package_sha256": "5cf9d47b955b08a8d56c32758c3134ef13438197d696ca97fc8c43a4afa8258a",
+  "from_source_sha256": "b2838284370c85a048f83a67846841c680b30469eecd3fd2d7d6d743518cf5e6",
+  "to_source_sha256": "e8eedd1b56c5c9b3a3567b76e93e22bec571d773c98ed3eee7d947690d4bdc45",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "boundary_changing_update": false,
+  "field_defect_repaired": "QUICK retained a WITNESSED MISMATCH verdict but omitted the check vector, forcing reconstruction of CC's depth-cap parent mismatch.",
+  "repair_summary": "Retain witness check totals and every check name/result in relay packets; retain detail only for failed checks and omit successful free-text detail.",
+  "unchanged_boundaries": "No Square route, action type, quota, credential, grant, target, automatic actuation, witness decision, correction-debt rule or silent retry changes.",
+  "contract_tests": {
+    "passed": 81,
+    "total": 81,
+    "field_diagnostic_fixture": "PASS",
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "STATIC_FIELD_DIAGNOSTIC_DIFFERENTIAL_PARSER_AND_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_QUICK_FIELD_RETEST_PENDING",
+  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+}
