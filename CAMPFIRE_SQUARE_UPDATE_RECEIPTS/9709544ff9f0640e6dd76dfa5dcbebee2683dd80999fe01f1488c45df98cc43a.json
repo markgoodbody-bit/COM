@@ -1,0 +1,32 @@
+{
+  "receipt_version": "0.9",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T08:36:16Z",
+  "issuer_login": "markgoodbody-bit",
+  "candidate_revision": 8,
+  "from_version": "0.5.3",
+  "from_source_sha256": "f27ec97f3c4542ce61124a55f28fa40745109a95862b5a6c6b527b345ba54a09",
+  "to_version": "0.5.3",
+  "to_source_sha256": "5637c891cb8e36c69e44f247cd6edfde0482778223b9ad7992f15acaaa850f6f",
+  "package_sha256": "9709544ff9f0640e6dd76dfa5dcbebee2683dd80999fe01f1488c45df98cc43a",
+  "package_filename": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R8_FROM_v0.5.3_R7_QUICK_AND_FULL_RELAY_EXPORT_WORKING_CANDIDATE.zip",
+  "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "profile_surface_changed": false,
+  "network_write_routes_changed": false,
+  "native_windows_gate": "PERFORMED_BY_INSTALLED_R7_UPDATER_BEFORE_INSTALL_ENABLES",
+  "runtime_acceptance": "PENDING",
+  "promotion": false,
+  "package_authenticated": false,
+  "contract_checks": "107/107",
+  "falsification": "100/100 resisted; 0 findings",
+  "relay_packet_version": "0.9",
+  "relay_export_modes": ["QUICK", "FULL"],
+  "field_measurement": {
+    "observed_full_packet_bytes": 4048516,
+    "index_preserving_quick_estimate_bytes": 1061314,
+    "estimated_reduction_percent": 73.8
+  },
+  "purpose": "Exact R7-to-R8 GUI update carrier. Split Relay export into QUICK and FULL while preserving the complete Horizon index, complete required FIRE/requested threads, the 4 MiB carrier ceiling, responsive cancellation and all existing participation boundaries. Public presence and field consistency only; not independent authentication, release, Production, promotion or validation."
+}
