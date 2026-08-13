@@ -1,16 +1,21 @@
 {
-  "pointer_version": "0.1",
-  "status": "PLAN_WITHDRAWN",
-  "published_at_utc": "2026-08-13T12:09:15.532Z",
+  "pointer_version": "0.2",
+  "status": "PLAN_AVAILABLE",
+  "published_at_utc": "2026-08-13T13:18:07.751Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "withdrawn_carrier_comment_id": 5280159009,
-  "withdrawal_comment_id": 5280194734,
-  "plan_json_sha256": "c9d6ffed810fb2f65b5bf10bad6f9591a728292c19cc9da5533323304e6aa994",
-  "plan_id": "fw-square-20260813-request-read-790-001",
-  "reason": "Read-only plan failed closed because the current validator requires at least one action. No Square write occurred.",
-  "claim_ceiling": "No active Framework action plan is advertised. This pointer records withdrawal only."
+  "carrier_comment_id": 5280944709,
+  "carrier_body_sha256": "ff3fb7693426dca86c34e79b95c0eb95e42015c6e84db0bc91ea42411e7df252",
+  "plan_json_sha256": "03fba283732b229abf44281960c86d26458792919a7c7df2cb157028a1b86644",
+  "plan_id": "fw-square-20260813-request-read-790-r13-002",
+  "intent": "Add Square post 790 to Framework's profile-local requested-read list after complete live-thread verification; perform no Square write.",
+  "requires_operator_trigger": true,
+  "square_write_actions": 0,
+  "requested_post_ids": [
+    790
+  ],
+  "claim_ceiling": "Pointer to one exact read-only Framework plan carrier. Publication is not execution, participation, model-read, cognition, authority, permission, validation or clearance."
 }
