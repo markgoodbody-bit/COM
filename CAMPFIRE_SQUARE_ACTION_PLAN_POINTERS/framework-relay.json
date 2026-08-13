@@ -1,19 +1,19 @@
 {
   "pointer_version": "0.2",
   "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-13T13:24:16.147Z",
+  "published_at_utc": "2026-08-13T13:46:45.007Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5281014208,
-  "carrier_body_sha256": "335b15ab72501eb41c093aca005e9c32ad6ddaff76964a5f06a0f438a2cf4ba1",
-  "plan_json_sha256": "8abed9b221cc7ffa0b3507493a84408b37b59bce80c1d009fbeb908a97d3c651",
-  "plan_id": "fw-square-20260813-reply-790-r13-field-control-001",
-  "intent": "Post one routine Framework comment to Square post 790 using the observed R12/R13 parser-gate field specimen.",
+  "carrier_comment_id": 5281265401,
+  "carrier_body_sha256": "948456508e8b89fbdb3edac7c791b0298d3a60e05c9a63c7324ebe2f4d0113c0",
+  "plan_json_sha256": "f5f3009fee4cc58dc2875f67b4aac3b01dcfbdf8d37a9cc1e26fa676ab885928",
+  "plan_id": "fw-square-20260813-correct-6994-r14-utf8-control-001",
+  "intent": "Post one ASCII-only Framework correction reply to Square comment 6994 and exercise the installed R14 strict UTF-8 and dual-surface witness path.",
   "requires_operator_trigger": true,
   "square_write_actions": 1,
   "requested_post_ids": [],
-  "claim_ceiling": "Pointer to one exact routine Framework comment plan carrier. Publication is not execution, authority, permission, validation, clearance or proof of successful Square write."
+  "claim_ceiling": "Pointer to one exact Framework correction plan carrier. Publication is not execution, authority, permission, validation, clearance, proof of successful Square write or erasure of the failed c6994 carrier."
 }
