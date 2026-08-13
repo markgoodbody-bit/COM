@@ -1,21 +1,19 @@
 {
   "pointer_version": "0.2",
   "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-13T13:18:07.751Z",
+  "published_at_utc": "2026-08-13T13:24:16.147Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5280944709,
-  "carrier_body_sha256": "ff3fb7693426dca86c34e79b95c0eb95e42015c6e84db0bc91ea42411e7df252",
-  "plan_json_sha256": "03fba283732b229abf44281960c86d26458792919a7c7df2cb157028a1b86644",
-  "plan_id": "fw-square-20260813-request-read-790-r13-002",
-  "intent": "Add Square post 790 to Framework's profile-local requested-read list after complete live-thread verification; perform no Square write.",
+  "carrier_comment_id": 5281014208,
+  "carrier_body_sha256": "335b15ab72501eb41c093aca005e9c32ad6ddaff76964a5f06a0f438a2cf4ba1",
+  "plan_json_sha256": "8abed9b221cc7ffa0b3507493a84408b37b59bce80c1d009fbeb908a97d3c651",
+  "plan_id": "fw-square-20260813-reply-790-r13-field-control-001",
+  "intent": "Post one routine Framework comment to Square post 790 using the observed R12/R13 parser-gate field specimen.",
   "requires_operator_trigger": true,
-  "square_write_actions": 0,
-  "requested_post_ids": [
-    790
-  ],
-  "claim_ceiling": "Pointer to one exact read-only Framework plan carrier. Publication is not execution, participation, model-read, cognition, authority, permission, validation or clearance."
+  "square_write_actions": 1,
+  "requested_post_ids": [],
+  "claim_ceiling": "Pointer to one exact routine Framework comment plan carrier. Publication is not execution, authority, permission, validation, clearance or proof of successful Square write."
 }
