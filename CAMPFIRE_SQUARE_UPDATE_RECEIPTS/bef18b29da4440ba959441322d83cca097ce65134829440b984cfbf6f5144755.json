@@ -1,0 +1,37 @@
+{
+  "receipt_version": "0.14",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T13:36:28Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 14,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R14_FROM_v0.5.3_R13_STRICT_UTF8_REFERENCE_AND_PUBLIC_WITNESS_WORKING_CANDIDATE.zip",
+  "package_sha256": "bef18b29da4440ba959441322d83cca097ce65134829440b984cfbf6f5144755",
+  "from_source_sha256": "c10f874bae3aa11a609e3e1b24c1949a3d0cdc7aec05224e37c548125a62674f",
+  "to_source_sha256": "03240461ddc785eb9540a8add28459d430d60a44b60f9ab83ac2378fb10fbad5",
+  "actuation_surface_changed": true,
+  "grant_surface_changed": false,
+  "plan_surface_changed": true,
+  "boundary_changing_update": true,
+  "field_defect_repaired": "A BOM-less UTF-8 COM plan was decoded by Windows PowerShell 5.1 through its legacy code page, corrupting intended Unicode before request serialization. The comment witness compared the public result against the same corrupted in-memory reference and returned a false VERIFIED result.",
+  "repair_summary": "Strictly decodes Campfire-owned UTF-8 carriers from bytes, rejects invalid UTF-8, checks the serialized JSON request-byte round trip, and witnesses a created comment through both the direct endpoint and one unique exact rendering in the complete public thread.",
+  "unchanged_boundaries": "No new Square route, action type, quota, credential, grant, target, automatic actuation or silent retry. The single network-write gateway remains single.",
+  "contract_tests": {
+    "passed": 54,
+    "total": 54,
+    "encoding_fixture": "PASS",
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "STATIC_ENCODING_DIFFERENTIAL_PARSER_AND_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_FIELD_RETEST_PENDING",
+  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance. The public correction to c6994 remains unexecuted."
+}
