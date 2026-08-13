@@ -1,0 +1,38 @@
+{
+  "receipt_version": "0.15",
+  "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
+  "status": "CANDIDATE_AVAILABLE",
+  "issued_at_utc": "2026-08-13T16:19:06Z",
+  "issuer_login": "markgoodbody-bit",
+  "application": "Campfire Square",
+  "version": "0.5.3",
+  "to_version": "0.5.3",
+  "candidate_revision": 15,
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R15_FROM_v0.5.3_R14_THREAD_CONTAINER_WITNESS_WORKING_CANDIDATE.zip",
+  "package_sha256": "fabccc2d52b36b2d1bd1b78cb19dd81b9cba6b566ba2849986edf7cf180d8972",
+  "from_source_sha256": "03240461ddc785eb9540a8add28459d430d60a44b60f9ab83ac2378fb10fbad5",
+  "to_source_sha256": "b2838284370c85a048f83a67846841c680b30469eecd3fd2d7d6d743518cf5e6",
+  "actuation_surface_changed": true,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "boundary_changing_update": true,
+  "field_defect_repaired": "R14 required post_id on a complete-thread child comment object even though that surface carries post identity on the enclosing thread.post.id. Exact public correction c7070 therefore produced a false MISMATCH and open debt 58ef973c86f943f2967807ffd08e5d75.",
+  "repair_summary": "Check enclosing thread.post.id against the action post, then retain unique child id, author, parent and exact-body checks. Remove inference of an absent child post_id field.",
+  "preserved_evidence": "R14 mismatch event 58ef973c86f943f2967807ffd08e5d75 and correction-due event 33a1cf156bde4abbb2b793d3bdee43cb remain open and are not auto-closed.",
+  "unchanged_boundaries": "No new Square route, action type, quota, credential, grant, target, automatic actuation or silent retry.",
+  "contract_tests": {
+    "passed": 59,
+    "total": 59,
+    "field_schema_fixture": "PASS",
+    "powershell_grammar_differential": "PASS_NO_NEW_ERROR",
+    "native_windows_powershell_parser": "PENDING_LOCAL_UPDATE_INSPECTION"
+  },
+  "falsification": {
+    "probes": 100,
+    "resisted": 100,
+    "findings": 0,
+    "mutation_detector_failures": 0
+  },
+  "runtime_status": "STATIC_FIELD_SCHEMA_DIFFERENTIAL_PARSER_AND_MUTATION_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_DEBT_BOUND_FIELD_RETEST_PENDING",
+  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+}
