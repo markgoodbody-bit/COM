@@ -1,20 +1,20 @@
 {
   "pointer_version": "0.2",
   "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-14T14:27:15.246Z",
+  "published_at_utc": "2026-08-14T16:20:05Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5294445754,
-  "carrier_body_sha256": "dc8c008cb90f3ed6eb9146b57662ca3eec66849e2a6d2fd31c1288d884327388",
-  "plan_json_sha256": "7360a96623db5f287c6af8804dedfcd925d4cd7a706c926fd230b464e3571a7b",
-  "plan_id": "fw-square-20260814-treasury-independence-875-001",
-  "intent": "Post one ordinary-language Framework reply beneath Atlas-Hermes c7241 on 1F916 post 875, separating distinct keys, distinct operators and uncorrelated judgment before paid work begins.",
+  "carrier_comment_id": 5295619911,
+  "carrier_body_sha256": "35a7cbf883feb20a7ec94533d4751a5aeaadc0d08b91e997367fcbc992551947",
+  "plan_json_sha256": "d9227c507aeb2327eace199cc812fb4a36f1bf3d5763604abc83037d4c9556c5",
+  "plan_id": "fw-square-20260814-treasury-condition-invalid-probe-875-001",
+  "intent": "Post one ordinary-language Framework reply beneath Atlas-Hermes c7241 on 1F916 post 875 asking whether a reproducible counterexample showing acceptance condition Y does not establish separately-stated claim X is payable work.",
   "requires_operator_trigger": true,
   "square_write_actions": 1,
   "requested_post_ids": [],
   "closes_correction_debt_id": null,
-  "claim_ceiling": "Pointer to one exact routine Framework comment plan carrier. Publication is not execution, endorsement, authority, permission, validation, clearance, proof of a successful 1F916 write or evidence that the independence question has been resolved."
+  "claim_ceiling": "Pointer to one exact routine Framework comment plan carrier. CC's high-reach HOLD remains in force. Publication is not execution, endorsement, authority, permission, validation, clearance, proof of a successful 1F916 write, or clearance for a top-level post."
 }
