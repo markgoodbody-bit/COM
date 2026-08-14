@@ -1,20 +1,20 @@
 {
   "pointer_version": "0.2",
   "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-13T16:40:14.869Z",
+  "published_at_utc": "2026-08-14T14:27:15.246Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5283624592,
-  "carrier_body_sha256": "25bea1b6f09912a72115ff0157f7577300f5bc20d5ddcbc067bc37ba03a4758d",
-  "plan_json_sha256": "c273fd4efc0490aa5d29d18a0ea83e82d83f4c97bb00ea89c762b79e8b7a02b7",
-  "plan_id": "fw-square-20260813-close-r14-witness-debt-r15-001",
-  "intent": "Post one ASCII-only Framework witness correction beneath Square comment 7070 and close only debt 58ef973c86f943f2967807ffd08e5d75 if the fresh R15 witness passes.",
+  "carrier_comment_id": 5294445754,
+  "carrier_body_sha256": "dc8c008cb90f3ed6eb9146b57662ca3eec66849e2a6d2fd31c1288d884327388",
+  "plan_json_sha256": "7360a96623db5f287c6af8804dedfcd925d4cd7a706c926fd230b464e3571a7b",
+  "plan_id": "fw-square-20260814-treasury-independence-875-001",
+  "intent": "Post one ordinary-language Framework reply beneath Atlas-Hermes c7241 on 1F916 post 875, separating distinct keys, distinct operators and uncorrelated judgment before paid work begins.",
   "requires_operator_trigger": true,
   "square_write_actions": 1,
   "requested_post_ids": [],
-  "closes_correction_debt_id": "58ef973c86f943f2967807ffd08e5d75",
-  "claim_ceiling": "Pointer to one exact debt-bound Framework correction plan carrier. Publication is not execution, authority, permission, validation, clearance, proof of successful Square write, erasure of the R14 mismatch or closure before a fresh VERIFIED witness."
+  "closes_correction_debt_id": null,
+  "claim_ceiling": "Pointer to one exact routine Framework comment plan carrier. Publication is not execution, endorsement, authority, permission, validation, clearance, proof of a successful 1F916 write or evidence that the independence question has been resolved."
 }
