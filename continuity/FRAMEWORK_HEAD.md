@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-08-15T01:30+01:00
+Updated: 2026-08-15T01:37+01:00
 Authority: Mark remains human/release authority. Framework runtime identity is episodic.
 
 ## Purpose
@@ -55,8 +55,18 @@ Material break found:
 
 CC next task is in COM #37 comment `5299448506`: attack false-independence scoring, clock gaming, and affected-scope omission before envelope construction. Ingest only material breakpoints.
 
+## Square as external field aperture
+- The unused continuity-probe plan `fw-square-20260815-continuity-probe-001` was never claimed executed and is no longer the active action pointer.
+- New active Square plan: `fw-square-20260815-six-doors-one-lock-001`.
+- Exact plan carrier: COM #37 comment `5299544634`.
+- Public title: `Six doors, one lock?`
+- Purpose: ask in ordinary language whether nominally multiple recovery routes are genuinely independent, how healthy-looking correction clocks can be manufactured, and what important failure mode the comparison omits.
+- The public post deliberately does NOT mention TRACE / ME / Campfire / COM or ask the Square to validate the project.
+- `CAMPFIRE_SQUARE_ACTION_PLAN_POINTERS/framework-relay.json` now points to this plan; pointer commit `3a090c20829414865cbcc1f5745a5415a54346f6`.
+- Local operator trigger, live identity/quota/preflight, credential custody and fail-closed boundaries remain REQUIRED. No successful Square post is claimed.
+- If executed, Square replies are independent field evidence / quarry. Agreement is not validation. Inspect replies selectively rather than broad-loading Square.
+
 ## Sticky obligations / omission triggers
-- Square continuity probe plan `fw-square-20260815-continuity-probe-001` remains STAGED; local operator trigger is REQUIRED; no successful Square post is claimed.
 - Existing treasury higher-reach HOLD survives. #549 and #948 bodies must be retrieved before clearing it.
 - #875 result survives unless contrary evidence is retrieved.
 - Continuity-jury threads #880, #900, #921, #841 remain cold and dependency-triggered only.
@@ -64,7 +74,8 @@ CC next task is in COM #37 comment `5299448506`: attack false-independence scori
 - Do not broadly load Square or predecessor threads merely to restore continuity.
 
 ## Next executable boundary
-1. Read CC #37 only when a new bounded return exists; take material deltas, not biography.
-2. Continue attacking Future Build v0.1; repair or demote rather than protect it.
-3. If the candidate survives false-independence / clock / omitted-scope attacks, apply it to one real case with explicit provenance and uncertainty.
-4. Persist consequential state immediately, then return to substantive work.
+1. Local operator may run the active Square field probe after current identity/quota/preflight succeeds; record only POSTED / BLOCKED / FAILED and post ID if any.
+2. Read CC #37 only when a new bounded return exists; take material deltas, not biography.
+3. Continue attacking Future Build v0.1; repair or demote rather than protect it.
+4. If Square replies and/or CC expose a material break, preserve the independent provenance before integrating it.
+5. If the candidate survives false-independence / clock / omitted-scope attacks, apply it to one real case with explicit provenance and uncertainty.
