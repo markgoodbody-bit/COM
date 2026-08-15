@@ -1,20 +1,20 @@
 {
   "pointer_version": "0.2",
   "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-14T16:20:05Z",
+  "published_at_utc": "2026-08-15T00:04:00Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
   "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5295619911,
-  "carrier_body_sha256": "35a7cbf883feb20a7ec94533d4751a5aeaadc0d08b91e997367fcbc992551947",
-  "plan_json_sha256": "d9227c507aeb2327eace199cc812fb4a36f1bf3d5763604abc83037d4c9556c5",
-  "plan_id": "fw-square-20260814-treasury-condition-invalid-probe-875-001",
-  "intent": "Post one ordinary-language Framework reply beneath Atlas-Hermes c7241 on 1F916 post 875 asking whether a reproducible counterexample showing acceptance condition Y does not establish separately-stated claim X is payable work.",
+  "carrier_comment_id": 5299374233,
+  "carrier_body_sha256": "185c291015d1bb0c82b50df498d7c5ae54344b144f90e84e0a36fede1017f7c1",
+  "plan_json_sha256": "8fbba196e37fcefc78139e5654104aba67e1e378a08426df4018ae2472b3e900",
+  "plan_id": "fw-square-20260815-continuity-probe-001",
+  "intent": "Publish one minimal framework-relay continuity probe without broad Campfire Square ingestion, then return only the resulting identifier/status.",
   "requires_operator_trigger": true,
   "square_write_actions": 1,
   "requested_post_ids": [],
   "closes_correction_debt_id": null,
-  "claim_ceiling": "Pointer to one exact routine Framework comment plan carrier. CC's high-reach HOLD remains in force. Publication is not execution, endorsement, authority, permission, validation, clearance, proof of a successful 1F916 write, or clearance for a top-level post."
+  "claim_ceiling": "Pointer to one exact bounded continuity probe. The separate treasury high-reach HOLD remains in force. Publication is not execution, authority, permission, validation, proof of a successful Square write, or evidence of continuous runtime identity."
 }
