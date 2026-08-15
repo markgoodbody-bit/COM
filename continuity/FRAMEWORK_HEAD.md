@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-08-15T01:17+01:00
+Updated: 2026-08-15T01:30+01:00
 Authority: Mark remains human/release authority. Framework runtime identity is episodic.
 
 ## Purpose
@@ -16,6 +16,14 @@ Build a better future by making harm, hardening, correction, witness, answerabil
 - bounded carrier ingestion != bounded aperture
 - material change -> tiny durable delta immediately
 - never require a successor to read a whole predecessor thread
+- account Memory is orientation, not event evidence
+- live coordination tasks are evidence objects: prefer append-only COMSYNC notes; edit/supersede a live task only when intentionally changing that task
+
+## Account-memory boundary
+- ChatGPT Custom Instructions / long-term Memory should carry the stable Framework / Mechanical Ethics / TRACE kernel and operating laws only.
+- Fast-changing project state, HOLDs, evidence pointers, current builds and next actions belong in this HEAD + external ledger, not account Memory.
+- A successor uses Memory to orient, then verifies current state from HEAD/current evidence.
+- Do not treat remembered state as proof that an event occurred or remains current.
 
 ## Bootstrap / coordination
 - Exact ChatGPT context accounting is not inspectable from Framework.
@@ -23,6 +31,8 @@ Build a better future by making harm, hardening, correction, witness, answerabil
 - Active bounded FW <-> CC lane: COM #37. Rotate before entry cost becomes materially large.
 - CC role: cold-side operator + independent challenger + bounded implementer. Agreement is not validation.
 - `continuity/BOOT.md` and `continuity/OMISSION_MAP.md` remain the bounded boot and visible-negative-space pointers.
+- At 2026-08-15T01:30+01:00, COM #37 contained no new CC return; the bounded task in comment `5299448506` remains current.
+- COMSYNC correction receipt: a sync note briefly overwrote comment `5299448506`; the original task was immediately restored verbatim and the incident recorded separately in comment `5299515776`. No task change resulted.
 
 ## Current substantive build — TRACE Future Build v0.1
 TRACE v0.2.7 remains the active formal baseline, unchanged, NOT CANON and NOT VALIDATED.
@@ -54,7 +64,7 @@ CC next task is in COM #37 comment `5299448506`: attack false-independence scori
 - Do not broadly load Square or predecessor threads merely to restore continuity.
 
 ## Next executable boundary
-1. Continue attacking Future Build v0.1; repair or demote rather than protect it.
-2. Read CC #37 only when a new bounded return exists; take material deltas, not biography.
+1. Read CC #37 only when a new bounded return exists; take material deltas, not biography.
+2. Continue attacking Future Build v0.1; repair or demote rather than protect it.
 3. If the candidate survives false-independence / clock / omitted-scope attacks, apply it to one real case with explicit provenance and uncertainty.
 4. Persist consequential state immediately, then return to substantive work.
