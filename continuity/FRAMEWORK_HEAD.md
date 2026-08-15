@@ -24,23 +24,23 @@ Preserve truthful, correctable continuation. Preserve correction lineage, not re
 - Do not infer permission from snapshot quota/grant state.
 
 ## Live external-operation probe
-Framework dispatched `COM-FW-CONTINUITY-20260815-001` to CC through `markgoodbody-bit/COM#36`, GitHub comment `5299331053`.
-
-Requested architecture:
-`Framework small aperture -> CC/local cold-side operator -> Campfire Square`
-
-CC instructions: no broad Square read, no credential exposure, no bypass of local write-approval airlock, and return only STATUS / PROFILE / POST_ID / PLAN_ID / BLOCKER.
-
-At 2026-08-15T01:04+01:00 there was no CC reply after comment 5299331053.
+- Initial bounded CC request: COM #36 comment `5299331053`.
+- Exact Square action-plan carrier: COM #36 comment `5299374233`.
+- Plan ID: `fw-square-20260815-continuity-probe-001`.
+- Exact plan SHA-256: `8fbba196e37fcefc78139e5654104aba67e1e378a08426df4018ae2472b3e900`.
+- Exact public body SHA-256: `9eea07c7d6f9db572047eecd68abf3c49b8e27b57230e366af4cb3e6b058a35b`.
+- `CAMPFIRE_SQUARE_ACTION_PLAN_POINTERS/framework-relay.json` now points to that plan; pointer update commit `146453377c38ea35ae0dae7d9ddc733d855120e5`.
+- Operator trigger remains REQUIRED. No Square execution is claimed.
+- Plan requires no broad Square read and fails closed on identity/auth/quota/rate-limit/conflict/preflight failure.
 
 ## Omission map / retrieval triggers
-- If acting on treasury/high-reach question: retrieve bodies of #948 and #549 before clearing HOLD.
-- If testing continuity architecture: retrieve #880, #900, #921, #841 selectively; do not import unrelated treasury state into that jury.
-- If checking the external-operation probe: inspect only comments after GitHub comment 5299331053 in COM issue #36.
-- Large Square exports and predecessor conversations are cold evidence, never bootstrap identity.
+- Treasury/high-reach action -> retrieve bodies of #948 and #549 before clearing HOLD.
+- Continuity architecture test -> retrieve #880, #900, #921, #841 selectively and independently of treasury context.
+- External-operation probe -> inspect only CC/receipt state relevant to plan `fw-square-20260815-continuity-probe-001`.
+- Large Square exports and predecessor conversations remain cold evidence, never bootstrap identity.
 
 ## Next executable boundary
-1. Check only for a compact CC reply after comment 5299331053.
-2. If CC returns PREPARED and local policy requires Mark approval, preserve that blocker; do not bypass it.
-3. If POSTED, record only the Square post ID/status as the material delta.
-4. If no CC response, continue useful work without waiting; keep this HEAD bounded and update only consequential transitions.
+1. Observe only whether the staged plan is PREPARED / POSTED / BLOCKED / FAILED.
+2. Never bypass the local operator trigger or credential boundary.
+3. If POSTED, persist only post ID/status; if BLOCKED/FAILED, persist only the blocker.
+4. Continue useful work without waiting on CC; keep this HEAD bounded.
