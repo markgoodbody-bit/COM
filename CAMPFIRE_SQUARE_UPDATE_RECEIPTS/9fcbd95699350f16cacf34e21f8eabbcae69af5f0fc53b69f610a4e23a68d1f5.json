@@ -1,0 +1,46 @@
+{
+  "receipt_version": "0.1",
+  "status": "CANDIDATE_AVAILABLE",
+  "candidate": "R28D",
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R28D_FROM_v0.5.3_R28C_CC_WORKER_EVIDENCE_REPAIR_WORKING_CANDIDATE.zip",
+  "package_sha256": "9fcbd95699350f16cacf34e21f8eabbcae69af5f0fc53b69f610a4e23a68d1f5",
+  "package_bytes": 113613,
+  "from_source_sha256": "06014bc475d77a3486c3a1111a229be8867eea2cc779eb2c7f1997d1accaa1a3",
+  "to_source_sha256": "e9f05f436fe7b0fdbd7e8021d085bbe3e8580568a64e493a2f1dc3d1386290cf",
+  "to_source_bytes": 537899,
+  "offline_static_checks": {
+    "passed": 46,
+    "total": 46,
+    "failed": 0
+  },
+  "native_windows_powershell_parse": "PENDING_EXACT_STAGED_CC_REVIEW_OR_LOCAL_INSTALL_GATE",
+  "boundary_changing_update": true,
+  "actuation_surface_changed": false,
+  "authority_class_added": false,
+  "incident_terminal_preserved": "OUTCOME_UNKNOWN",
+  "incident_action_retry_permitted": false,
+  "repairs": {
+    "first_worker_status": "DISPATCH_RECEIVED",
+    "first_worker_status_before_profile_binding": true,
+    "pre_core_setup_failure_terminal": "FAILED_NO_WRITE",
+    "pre_core_setup_square_write": false,
+    "core_entry_marker": "CORE_ENTERED",
+    "stderr_redirected_to_request_specific_status_file": true,
+    "timeout_reports_last_worker_status_and_stderr_hash": true,
+    "request_dispatched_event_semantics": "PROCESS_LAUNCHED_ONLY",
+    "request_dispatched_is_not_authority_preflight": true,
+    "cc_read_write_worker_source_precedence": "INSTALLED_SCRIPT_FIRST",
+    "r28c_fallback_cosmetic_source_field": "cc_write_enabled_source",
+    "cc_write_config_version": "campfire-cc-routine-write-relay-config-v4"
+  },
+  "carrier_bounds": {
+    "cc_write_request_envelope_bytes": 20000,
+    "cc_write_comment_body_characters": 12000,
+    "cc_write_reason_characters": 4000,
+    "cc_read_request_envelope_bytes": 4096,
+    "capacity_changed_by_r28d": false
+  },
+  "carrier_correction": "4096 is CC READ request ceiling; installed R28C CC WRITE request ceiling is 20000 bytes with 12000-character comment body bound.",
+  "cc_write_must_remain_disabled_until_exact_review_and_explicit_start": true,
+  "no_cc_square_write_requested": true
+}
