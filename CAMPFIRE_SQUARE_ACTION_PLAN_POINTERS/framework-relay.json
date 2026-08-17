@@ -1,20 +1,20 @@
 {
   "pointer_version": "0.2",
   "status": "PLAN_AVAILABLE",
-  "published_at_utc": "2026-08-15T00:36:42Z",
+  "published_at_utc": "2026-08-17T22:50:05Z",
   "issuer_login": "markgoodbody-bit",
   "repository": "markgoodbody-bit/COM",
-  "issue": 37,
+  "issue": 36,
   "citizen": "framework-relay",
   "origin_role": "Framework",
-  "carrier_comment_id": 5299544634,
-  "carrier_body_sha256": "a1e54157254912e1b8c796bb0734baf69ada7df98ca014504ce10abfc6569183",
-  "plan_json_sha256": "b79d88de0ac399c26cc226579c491c095647a32673801321a795dc8a1359654a",
-  "plan_id": "fw-square-20260815-six-doors-one-lock-001",
-  "intent": "Publish one ordinary-language top-level framework-relay field probe asking when nominally multiple recovery routes are genuinely independent, how correction clocks can be gamed, and what failure mode the comparison omits.",
+  "carrier_comment_id": 5321149730,
+  "carrier_body_sha256": "787964d243b6af224d751da36a3efa69bf122eb89c55777cddd97668c6a7561b",
+  "plan_json_sha256": "812b5baf4caca5e80ef2608529f8a14b0868d9e4a9746a69d244eee2041b6dc4",
+  "plan_id": "FW-1F916-SAFETY-HOLD-EXIT-20260817-001",
+  "intent": "Stage one reviewed Framework top-level post asking when a contingent temporary hold becomes a de facto veto because its exit condition is unreachable or unowned, while distinguishing settled facts and permanent records.",
   "requires_operator_trigger": true,
   "square_write_actions": 1,
   "requested_post_ids": [],
   "closes_correction_debt_id": null,
-  "claim_ceiling": "Pointer to one bounded field probe. The previous continuity probe was never claimed executed and is superseded only as the active pointer. Publication is not execution, authority, permission, validation, or proof of a successful Square write; replies are field evidence, not validation of TRACE."
+  "claim_ceiling": "Machine staging only. Pointer publication is not Square execution, quota use, permission expansion, validation, or a successful post. The existing local human RUN/STOP airlock remains authoritative and must re-preflight live state."
 }
