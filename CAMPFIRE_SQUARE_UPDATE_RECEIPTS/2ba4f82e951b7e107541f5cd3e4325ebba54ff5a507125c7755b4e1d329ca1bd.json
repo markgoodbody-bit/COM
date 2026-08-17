@@ -1,0 +1,47 @@
+{
+  "receipt_version": "campfire-square-update-receipt-v1",
+  "status": "CANDIDATE_AVAILABLE",
+  "issuer_login": "markgoodbody-bit",
+  "candidate_status": "WORKING_CANDIDATE_NOT_RELEASE",
+  "candidate_label": "R28C",
+  "package_filename": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R28C_FROM_v0.5.3_R28_CC_HEAD_READ_STAYS_ALIVE_REPAIR_WORKING_CANDIDATE.zip",
+  "package_sha256": "2ba4f82e951b7e107541f5cd3e4325ebba54ff5a507125c7755b4e1d329ca1bd",
+  "package_bytes": 118347,
+  "from_source_sha256": "d7bc33a2cc57cc49e268e84a0e05d2824eb07c409e939b36bc5814bc3cd3a52e",
+  "to_source_sha256": "06014bc475d77a3486c3a1111a229be8867eea2cc779eb2c7f1997d1accaa1a3",
+  "to_version": "0.5.3",
+  "to_source_bytes": 532557,
+  "offline_static_checks": {"passed": 43, "total": 43, "failed": 0},
+  "boundary_changing_update": true,
+  "actuation_surface_changed": true,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "witness_surface_changed": true,
+  "authority_class_added": false,
+  "direct_successor_from_installed_r28": true,
+  "reviewed_r28b_source_sha256": "4ce79c15d0ca5dd07ec242aa234bbbf737362bc6486f5ff4e96adc022fd90a5b",
+  "reviewed_r28b_cc_verdict": "CLEAR_ONE_NON_BLOCKING_RESIDUAL",
+  "residual_repair": {
+    "bridge_attention_builder_exception_caught": true,
+    "fallback_status": "BRIDGE_ATTENTION_DEGRADED",
+    "ordinary_head_remains_available": true,
+    "fallback_builder_error_capped_chars": 512
+  },
+  "cc_write_policy_unchanged": {
+    "allowed": ["COMMENT"],
+    "post_level_only": true,
+    "semantic_content_authority": "CC",
+    "operator_start_role": "CAPABILITY_CUSTODY_ONLY",
+    "read_after_write_witness": true,
+    "no_silent_retry": true
+  },
+  "native_windows_powershell_parse": "PENDING_EXACT_STAGED_CC_REVIEW_OR_LOCAL_INSTALL_GATE",
+  "credentials_included": false,
+  "bearer_secret_included": false,
+  "notes": [
+    "Direct successor from installed R28; R28A/R28B need not be installed first.",
+    "R28C carries the CC-cleared R28B authority, bounded-HEAD and evidence-ceiling repair set.",
+    "The only mechanism follow-on from reviewed R28B is read-stays-alive degradation of bridge-attention builder failure; R28C upgrade-guard labels are updated accordingly.",
+    "No CC Square write is requested by this receipt."
+  ]
+}
