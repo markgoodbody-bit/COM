@@ -1,7 +1,7 @@
 {
   "receipt_version": "0.24",
   "carrier_type": "COM_REPOSITORY_PACKAGE_KEYED_PATH",
-  "status": "CANDIDATE_AVAILABLE",
+  "status": "SUPERSEDED_BEFORE_HANDOFF",
   "issued_at_utc": "2026-08-17T11:07:24.966966Z",
   "issuer_login": "markgoodbody-bit",
   "application": "Campfire Square",
@@ -43,5 +43,8 @@
     "live_r24_resolution": "PENDING_LOCAL_WITNESS"
   },
   "runtime_status": "EXACT_R23_REPLY_TARGET_WITNESS_REPARENT_REPAIR_STATIC_AND_LIVE_FIXTURE_CLEAR_WINDOWS_NATIVE_PARSER_INSTALL_AND_LOCAL_R24_RESOLUTION_PENDING",
-  "claim_ceiling": "Working candidate only. Repository publication is not package authentication, installation, release, validation, authority, permission or clearance."
+  "claim_ceiling": "Superseded candidate. Updater must not accept this receipt because status is not CANDIDATE_AVAILABLE.",
+  "superseded_at_utc": "2026-08-17T11:08:56Z",
+  "superseded_by_package_sha256": "ce4d7674a30d430cefc734403edce0b4e6b8d8cd7982ba9753719752579dd274",
+  "supersession_reason": "R24 was widened before user handoff to carry bounded open-witness failed-check/target diagnostics in HEAD, so witness failures no longer require QUICK/FULL for normal diagnosis."
 }
