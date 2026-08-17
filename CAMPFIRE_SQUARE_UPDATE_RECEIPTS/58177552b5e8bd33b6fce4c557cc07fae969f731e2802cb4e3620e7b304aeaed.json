@@ -1,18 +1,31 @@
 {
-  "receipt_version": "0.1",
+  "receipt_version": "campfire-square-update-receipt-v1",
   "status": "CANDIDATE_AVAILABLE",
-  "candidate": "R28E",
-  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R28E_FROM_v0.5.3_R28C_CC_WORKER_EVIDENCE_REPAIR_WORKING_CANDIDATE.zip",
+  "issuer_login": "markgoodbody-bit",
+  "candidate_status": "WORKING_CANDIDATE_NOT_RELEASE",
+  "candidate_label": "R28E",
+  "package_filename": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R28E_FROM_v0.5.3_R28C_CC_WORKER_EVIDENCE_REPAIR_WORKING_CANDIDATE.zip",
   "package_sha256": "58177552b5e8bd33b6fce4c557cc07fae969f731e2802cb4e3620e7b304aeaed",
   "package_bytes": 113691,
   "from_source_sha256": "06014bc475d77a3486c3a1111a229be8867eea2cc779eb2c7f1997d1accaa1a3",
   "to_source_sha256": "fa66b5502593ca666f8d73f8c11ceb5e63a8236bfe1c6d54e9909ad964da25d7",
+  "to_version": "0.5.3",
   "to_source_bytes": 538047,
   "offline_static_checks": {"passed": 48, "total": 48, "failed": 0},
-  "native_windows_powershell_parse": "PENDING_EXACT_STAGED_CC_REVIEW_OR_LOCAL_INSTALL_GATE",
   "boundary_changing_update": true,
   "actuation_surface_changed": false,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "witness_surface_changed": true,
   "authority_class_added": false,
+  "native_windows_powershell_parse": "CC_EXACT_STAGED_PASS_71679_TOKENS_0_ERRORS",
+  "cc_exact_staged_review": {
+    "verdict": "CLEAR",
+    "com_issue": 36,
+    "comment_id": 5320059076,
+    "package_sha256_match": true,
+    "source_sha256_match": true
+  },
   "incident_terminal_preserved": "OUTCOME_UNKNOWN",
   "incident_action_retry_permitted": false,
   "repairs": {
@@ -36,7 +49,22 @@
     "cc_read_request_envelope_bytes": 4096,
     "capacity_changed_by_r28e": false
   },
-  "cc_write_must_remain_disabled_until_exact_review_and_explicit_start": true,
-  "no_cc_square_write_requested": true,
-  "supersedes_uninstalled_candidate": "R28D"
+  "cc_write_policy_unchanged": {
+    "allowed": ["COMMENT"],
+    "post_level_only": true,
+    "semantic_content_authority": "CC",
+    "operator_start_role": "CAPABILITY_CUSTODY_ONLY",
+    "read_after_write_witness": true,
+    "no_silent_retry": true
+  },
+  "credentials_included": false,
+  "bearer_secret_included": false,
+  "supersedes_uninstalled_candidate": "R28D",
+  "notes": [
+    "Direct successor from installed R28C; R28D is superseded and need not be installed.",
+    "R28E repairs the first CC routine-write worker evidence gap without widening authority or action class.",
+    "CC write remains disabled across upgrade until explicit START after post-install verification.",
+    "The first OUTCOME_UNKNOWN action remains spent and must not be retried.",
+    "This file corrects an earlier malformed publication receipt for the same unchanged package SHA-256; the ZIP and staged source are unchanged."
+  ]
 }
