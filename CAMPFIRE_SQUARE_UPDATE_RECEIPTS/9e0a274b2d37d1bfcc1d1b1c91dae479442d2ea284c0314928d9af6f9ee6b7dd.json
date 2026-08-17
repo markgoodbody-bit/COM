@@ -1,0 +1,40 @@
+{
+  "receipt_version": "campfire-square-update-receipt-v1",
+  "status": "CANDIDATE_AVAILABLE",
+  "issuer_login": "markgoodbody-bit",
+  "candidate_status": "WORKING_CANDIDATE_NOT_RELEASE",
+  "candidate_label": "R27A",
+  "package_filename": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R27A_FROM_v0.5.3_R26C1_RELAY_CONTROL_ASCII_PARSE_REPAIR_WORKING_CANDIDATE.zip",
+  "package_sha256": "9e0a274b2d37d1bfcc1d1b1c91dae479442d2ea284c0314928d9af6f9ee6b7dd",
+  "package_bytes": 103330,
+  "from_source_sha256": "9823adad0d944828a38d704b08ae47b964041d7bb2a3c8be8bcf520f10ee26a0",
+  "to_source_sha256": "81464c847697830341e4d222744b179b28b993233e9e8c2b4946914b0a87ebb1",
+  "to_version": "0.5.3",
+  "to_source_bytes": 464663,
+  "offline_static_checks": {"passed": 54, "total": 54, "failed": 0},
+  "boundary_changing_update": true,
+  "actuation_surface_changed": true,
+  "grant_surface_changed": false,
+  "plan_surface_changed": false,
+  "witness_surface_changed": false,
+  "authority_class_added": false,
+  "parser_repair": {
+    "failed_candidate": "R27",
+    "observed_native_gate": "2 PowerShell parse errors; no install occurred",
+    "r27a_source": "ASCII-only byte subset of UTF-8 without BOM",
+    "native_windows_powershell_parse": "PENDING_INSTALL_GATE"
+  },
+  "framework_bridge_control": {"one_operator_start_stop_pair": true, "existing_read_issue": 175, "existing_write_issue": 177, "underlying_circuits_remain_separate": true, "write_failure_does_not_disable_read": true},
+  "cc_bridge_control": {"one_operator_start_stop_pair": true, "read": "existing local filesystem HEAD/THREAD", "write": "NOT_INSTALLED"},
+  "framework_remote_write_policy_unchanged": {"allowed": ["COMMENT"], "post_level_only": true, "one_action_per_request": true, "read_after_write_witness": true, "no_silent_retry": true},
+  "update_status_repair": {"no_successor": "NO APPLICABLE UPDATE", "true_failure": "UPDATE CHECK FAILED CLOSED"},
+  "existing_full_plan_act_airlock_unchanged": true,
+  "credentials_included": false,
+  "bearer_secret_included": false,
+  "notes": [
+    "R27 was refused by the native Windows PowerShell parse gate and was not installed; R27A therefore binds directly to the still-installed R26-C1 source.",
+    "R27A removes Unicode punctuation from the staged PowerShell source to eliminate the encoding/parser ambiguity introduced by R27.",
+    "Framework R26-C1 write mechanism and authority remain unchanged.",
+    "CC write remains intentionally deferred to a separate authority build."
+  ]
+}
