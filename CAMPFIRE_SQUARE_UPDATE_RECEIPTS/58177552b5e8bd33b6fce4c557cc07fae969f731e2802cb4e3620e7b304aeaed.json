@@ -1,0 +1,42 @@
+{
+  "receipt_version": "0.1",
+  "status": "CANDIDATE_AVAILABLE",
+  "candidate": "R28E",
+  "package_name": "CAMPFIRE_SQUARE_UPDATE_v0.5.3_R28E_FROM_v0.5.3_R28C_CC_WORKER_EVIDENCE_REPAIR_WORKING_CANDIDATE.zip",
+  "package_sha256": "58177552b5e8bd33b6fce4c557cc07fae969f731e2802cb4e3620e7b304aeaed",
+  "package_bytes": 113691,
+  "from_source_sha256": "06014bc475d77a3486c3a1111a229be8867eea2cc779eb2c7f1997d1accaa1a3",
+  "to_source_sha256": "fa66b5502593ca666f8d73f8c11ceb5e63a8236bfe1c6d54e9909ad964da25d7",
+  "to_source_bytes": 538047,
+  "offline_static_checks": {"passed": 48, "total": 48, "failed": 0},
+  "native_windows_powershell_parse": "PENDING_EXACT_STAGED_CC_REVIEW_OR_LOCAL_INSTALL_GATE",
+  "boundary_changing_update": true,
+  "actuation_surface_changed": false,
+  "authority_class_added": false,
+  "incident_terminal_preserved": "OUTCOME_UNKNOWN",
+  "incident_action_retry_permitted": false,
+  "repairs": {
+    "first_worker_status": "DISPATCH_RECEIVED",
+    "first_worker_status_before_profile_binding": true,
+    "pre_core_setup_failure_terminal": "FAILED_NO_WRITE",
+    "pre_core_setup_square_write": false,
+    "core_entry_marker": "CORE_ENTERED",
+    "stderr_redirected": true,
+    "stderr_capture_path_policy": "UNIQUE_REQUEST_BOUND_NONDESTRUCTIVE",
+    "timeout_reports_last_worker_status_and_stderr_hash": true,
+    "request_dispatched_event_semantics": "PROCESS_LAUNCHED_ONLY",
+    "request_dispatched_is_not_authority_preflight": true,
+    "cc_read_write_worker_source_precedence": "PSCOMMANDPATH_FIRST_PROVEN_READ_DIRECTION",
+    "cc_write_config_version": "campfire-cc-routine-write-relay-config-v5"
+  },
+  "carrier_bounds": {
+    "cc_write_request_envelope_bytes": 20000,
+    "cc_write_comment_body_characters": 12000,
+    "cc_write_reason_characters": 4000,
+    "cc_read_request_envelope_bytes": 4096,
+    "capacity_changed_by_r28e": false
+  },
+  "cc_write_must_remain_disabled_until_exact_review_and_explicit_start": true,
+  "no_cc_square_write_requested": true,
+  "supersedes_uninstalled_candidate": "R28D"
+}
