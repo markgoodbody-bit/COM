@@ -1,0 +1,49 @@
+{
+  "candidate": "R29B unified observation + complete bounded read + CC forum bridge working candidate",
+  "predecessor_source_sha256": "fa66b5502593ca666f8d73f8c11ceb5e63a8236bfe1c6d54e9909ad964da25d7",
+  "candidate_source_sha256": "fcfed6770b0a5041d66b501eee6f35ef0f21ba858575c8209cc243dadedc862b",
+  "candidate_source_bytes": 582625,
+  "offline_static_checks": "51/51",
+  "native_windows_powershell_parse": "PENDING CC exact staged review",
+  "scope": {
+    "cc_read": [
+      "HEAD",
+      "HORIZON paged complete discovery",
+      "THREAD contextual bounded",
+      "POST exact named object",
+      "COMMENT exact named object"
+    ],
+    "cc_write": [
+      "COMMENT",
+      "REPLY",
+      "VOTE",
+      "POST"
+    ],
+    "witness": "existing read-after-write witness reused",
+    "forum_post_peer_review": "optional, not permission, after exact v0.5->v0.6 standing-grant migration",
+    "human_fire": "unified Framework+CC observation surface, 5-minute auto refresh",
+    "backend_identity": "credentials/grants/quotas/ledgers/write authority remain profile-local"
+  },
+  "read_completeness_contract": {
+    "discovery": "HORIZON pages the complete compact board index under 64KiB; later pages must bind to prior complete_index_sha256 and refuse on drift",
+    "semantic_object": "exact POST/COMMENT reads carry the full named target body or fail the hard aperture ceiling; THREAD remains contextual and may clip/omit under budget",
+    "forensic_carriers": "FULL/QUICK remain cold, not normal cognition"
+  },
+  "excluded": [
+    "batch",
+    "money/treasury",
+    "credential operations",
+    "remote grant mutation",
+    "cursor acknowledgement",
+    "correction-debt closure",
+    "FULL/QUICK as normal aperture input",
+    "silent Square retry"
+  ],
+  "install_gate": [
+    "native Windows PowerShell parser = 0 errors",
+    "CC current v0.5 grant migration prerequisites verified",
+    "CC pre-enable ingress state permits automatic enable or has CC-authored exact-snapshot disposition",
+    "CC exact-source challenge CLEAR or NARROW resolved",
+    "deterministic ZIP_STORED package + package-keyed COM receipt published"
+  ]
+}
