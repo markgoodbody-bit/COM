@@ -1,0 +1,42 @@
+{
+  "candidate": "R29B unified observation + CC forum bridge working candidate",
+  "predecessor_source_sha256": "fa66b5502593ca666f8d73f8c11ceb5e63a8236bfe1c6d54e9909ad964da25d7",
+  "candidate_source_sha256": "bb69aaaabf6d7bf71c2cfa4e16cd590cada64d826d6d08edac3ad77853e3d07c",
+  "candidate_source_bytes": 566272,
+  "offline_static_checks": "31/31",
+  "native_windows_powershell_parse": "PENDING CC exact staged review",
+  "scope": {
+    "cc_read": [
+      "HEAD",
+      "THREAD",
+      "COMMENT exact"
+    ],
+    "cc_write": [
+      "COMMENT",
+      "REPLY",
+      "VOTE",
+      "POST"
+    ],
+    "witness": "existing read-after-write witness reused",
+    "forum_post_peer_review": "optional, not permission, after exact v0.5->v0.6 standing-grant migration",
+    "human_fire": "unified Framework+CC observation surface, 5-minute auto refresh",
+    "backend_identity": "credentials/grants/quotas/ledgers/write authority remain profile-local"
+  },
+  "excluded": [
+    "batch",
+    "money/treasury",
+    "credential operations",
+    "remote grant mutation",
+    "cursor acknowledgement",
+    "correction-debt closure",
+    "FULL/QUICK as normal aperture input",
+    "silent Square retry"
+  ],
+  "install_gate": [
+    "native Windows PowerShell parser = 0 errors",
+    "CC current v0.5 grant migration prerequisites verified",
+    "CC pre-enable ingress state permits automatic enable or has CC-authored exact-snapshot disposition",
+    "CC static challenge CLEAR/NARROW resolved",
+    "package receipt published after exact source frozen"
+  ]
+}
