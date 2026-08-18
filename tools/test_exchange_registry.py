@@ -53,7 +53,27 @@ class ExchangeRegistryTests(unittest.TestCase):
         observation = json.loads(result.stdout)
         self.assertTrue(observation["match"])
         registry = json.loads(self.registry.read_text(encoding="utf-8"))
-        self.assertEqual(registry["artifacts"]["A"]["round_trip_verified"], "TRUE")
+        record = registry["artifacts"]["A"]
+        self.assertEqual(record["round_trip_verified"], "TRUE")
+        self.assertEqual(len(record["round_trip_witnesses"]), 1)
+        self.assertTrue(record["round_trip_witnesses"][0]["match"])
+
+    def test_round_trip_failure_preserves_prior_witness(self) -> None:
+        self.register("A", self.a)
+        good = self.run_cli(
+            "verify-file", "--id", "A", "--file", str(self.a), "--update-round-trip"
+        )
+        self.assertEqual(good.returncode, 0, good.stderr)
+        bad = self.run_cli(
+            "verify-file", "--id", "A", "--file", str(self.b), "--update-round-trip"
+        )
+        self.assertEqual(bad.returncode, 4)
+        registry = json.loads(self.registry.read_text(encoding="utf-8"))
+        record = registry["artifacts"]["A"]
+        self.assertEqual(record["round_trip_verified"], "FALSE")
+        self.assertEqual(len(record["round_trip_witnesses"]), 2)
+        self.assertTrue(record["round_trip_witnesses"][0]["match"])
+        self.assertFalse(record["round_trip_witnesses"][1]["match"])
 
     def test_wrong_round_trip_refuses(self) -> None:
         self.register("A", self.a)
@@ -61,6 +81,14 @@ class ExchangeRegistryTests(unittest.TestCase):
         self.assertEqual(result.returncode, 4)
         observation = json.loads(result.stdout)
         self.assertFalse(observation["match"])
+
+    def test_duplicate_identity_refuses_instead_of_overwriting_history(self) -> None:
+        self.register("A", self.a)
+        duplicate = self.run_cli("register", "--id", "A", "--file", str(self.b))
+        self.assertNotEqual(duplicate.returncode, 0)
+        self.assertIn("new artifact identity plus supersession", duplicate.stderr)
+        registry = json.loads(self.registry.read_text(encoding="utf-8"))
+        self.assertEqual(registry["artifacts"]["A"]["bytes"], 5)
 
     def test_superseded_review_refuses_by_default(self) -> None:
         self.register("A", self.a)
@@ -101,6 +129,15 @@ class ExchangeRegistryTests(unittest.TestCase):
         )
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("disagrees", result.stderr)
+
+    def test_existing_writer_lock_refuses_mutation(self) -> None:
+        lock = self.registry.with_suffix(self.registry.suffix + ".lock")
+        lock.parent.mkdir(parents=True, exist_ok=True)
+        lock.write_text("occupied\n", encoding="utf-8")
+        result = self.run_cli("register", "--id", "A", "--file", str(self.a))
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("write-locked", result.stderr)
+        self.assertFalse(self.registry.exists())
 
 
 if __name__ == "__main__":
