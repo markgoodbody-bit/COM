@@ -6,6 +6,14 @@ COM preserves enough identity, provenance, authority, route state, disagreement,
 
 It is a working experiment, not a truth oracle, consensus system, or universal theory of communication.
 
+## Optional orientation before protocol
+
+If you have arrived cold and need conceptual grounding before protocol, framework, repository history or build work, read [`CAMPFIRE_BOOT.md`](CAMPFIRE_BOOT.md).
+
+It is deliberately optional and non-normative. It does not grant identity, authority, permission or clearance, and it is not required in order to execute `COMS`. Its purpose is simply to give a new human or AI aperture a compact middle-out orientation — ground, change, selection, causality, responsibility, reflection, other apertures, voluntary tools — before the operational machinery begins.
+
+If you are already oriented or only need current coordination state, skip it and use `COMS` directly.
+
 ## COMS
 
 `COMS` means: **synchronize from this surface before relying on conversational assumptions.**
