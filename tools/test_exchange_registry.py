@@ -280,6 +280,74 @@ class ExchangeRegistryTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("write-locked", result.stderr)
 
+    # --- CC/69 regression: --allow-unreconciled is scoped to ABSENT only ------
+    #
+    # The flag names absence. EXPIRED / PREDATES_ARTIFACT / INVALID are states
+    # where the registry DID detect a basis and found it defective or stale.
+    # Accepting one of those is a different act and must be separately named.
+
+    def _resolve(self, *extra):
+        return self.cli("resolve", "--id", "A", *extra)
+
+    def test_allow_unreconciled_permits_absent(self):
+        self.add("A", self.a)
+        result = self._resolve("--allow-unreconciled")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        payload = json.loads(result.stdout)
+        self.assertTrue(payload["review_allowed"])
+        self.assertEqual(payload["reconciliation_state"], "ABSENT")
+
+    def test_allow_unreconciled_refuses_expired(self):
+        self.add("A", self.a, observed_at=utc_after(days=-9))
+        self.reconcile(
+            observed_at=utc_after(days=-8), valid_until=utc_after(days=-7)
+        )
+        plain = self._resolve()
+        self.assertEqual(plain.returncode, 5, plain.stderr)
+        result = self._resolve("--allow-unreconciled")
+        payload = json.loads(result.stdout)
+        self.assertEqual(payload["reconciliation_state"], "EXPIRED")
+        self.assertFalse(payload["review_allowed"])
+        self.assertEqual(result.returncode, 5)
+
+    def test_allow_unreconciled_refuses_predates_artifact(self):
+        self.add("A", self.a)
+        self.reconcile(
+            observed_at=utc_after(days=-3), valid_until=utc_after(days=30)
+        )
+        result = self._resolve("--allow-unreconciled")
+        payload = json.loads(result.stdout)
+        self.assertEqual(payload["reconciliation_state"], "PREDATES_ARTIFACT")
+        self.assertFalse(payload["review_allowed"])
+        self.assertEqual(result.returncode, 5)
+
+    def test_allow_unreconciled_refuses_invalid(self):
+        self.add("A", self.a)
+        self.reconcile()
+        data = json.loads(self.registry.read_text(encoding="utf-8"))
+        data["reconciliations"][-1]["evidence_ref"] = None
+        self.registry.write_text(
+            json.dumps(data, indent=2, sort_keys=True), encoding="utf-8"
+        )
+        result = self._resolve("--allow-unreconciled")
+        payload = json.loads(result.stdout)
+        self.assertEqual(payload["reconciliation_state"], "INVALID")
+        self.assertFalse(payload["review_allowed"])
+        self.assertEqual(result.returncode, 5)
+
+    def test_bounded_declaration_still_needs_its_own_named_acceptance(self):
+        self.add("A", self.a)
+        self.reconcile()
+        blocked = self._resolve("--allow-unreconciled")
+        blocked_payload = json.loads(blocked.stdout)
+        self.assertEqual(
+            blocked_payload["reconciliation_state"], "BOUNDED_DECLARATION"
+        )
+        self.assertFalse(blocked_payload["review_allowed"])
+        allowed = self._resolve("--accept-declared-reconciliation")
+        self.assertEqual(allowed.returncode, 0, allowed.stderr)
+        self.assertTrue(json.loads(allowed.stdout)["review_allowed"])
+
 
 if __name__ == "__main__":
     unittest.main()

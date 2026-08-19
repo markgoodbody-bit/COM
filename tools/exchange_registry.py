@@ -365,12 +365,24 @@ def cmd_resolve(args):
             "known-superseded object; name the successor or pass --historical",
             3,
         )
-    elif args.allow_unreconciled:
+    elif args.allow_unreconciled and rec_state == "ABSENT":
+        # ABSENT means no reconciliation basis exists. The other states mean the
+        # registry DID detect a basis and found it defective or stale, which is
+        # a different act to accept and must be named separately. A flag about
+        # absence must not clear a detected fault.
         allowed, reason, return_code = (
             True,
-            f"current in bounded registry; unreconciled use explicitly allowed "
-            f"(reconciliation_state={rec_state})",
+            "current in bounded registry; absent reconciliation explicitly "
+            "allowed (reconciliation_state=ABSENT)",
             0,
+        )
+    elif args.allow_unreconciled:
+        allowed, reason, return_code = (
+            False,
+            f"--allow-unreconciled applies only to reconciliation_state=ABSENT; "
+            f"this registry detected {rec_state}, which is a defective or stale "
+            f"basis rather than a missing one and remains a refusal",
+            5,
         )
     elif rec_state == "BOUNDED_DECLARATION" and args.accept_declared_reconciliation:
         allowed, reason, return_code = (
