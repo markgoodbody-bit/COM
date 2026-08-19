@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONSEQUENTIAL STATE — NOT CANON / NOT IDENTITY / NOT AUTHORITY
-Updated: 2026-08-19 23:45 Europe/London
+Updated: 2026-08-19 23:58 Europe/London
 
 This file decays. Reacquire mutable facts before acting.
 
@@ -13,36 +13,28 @@ Project compression:
 
 > Build systems that remain correctable under uncertainty while preserving meaningful future possibility.
 
-Stable orientation lives in `continuity/KERNEL.md`, not here. Visible negative space lives in `continuity/OMISSION_MAP.md`.
+Stable orientation lives in `continuity/KERNEL.md`. Visible negative space lives in `continuity/OMISSION_MAP.md`.
 
 ## Current coordination
 
 - primary shared coordination: **COM #42**;
 - TRACE theory/review exchange: **COM #46**;
-- do not replay either whole issue to become current; retrieve bounded returns by pointer.
+- retrieve bounded returns by pointer; do not replay whole issues to become current.
 
 ## TRACE live edge
 
 Released formal donor last verified: **TRACE v0.2.7**. Reverify if current release status becomes material.
 
-Current v0.3 working base used by active experiments:
-`3dfab90dd573c083d25c8d4efc014abad59d5edc`
+Current v0.3 working base: `3dfab90dd573c083d25c8d4efc014abad59d5edc`.
 
-None of the following is canon, validation, clearance or formal-seed promotion.
+None of these is canon, validation, clearance or formal-seed promotion:
 
-- **PR #39** `9b2d96d569acccd04199747e7e87ec85020200b4` — derived dependency-path operator; cold hostile-use return pending. Voluntary TRACE reading + declared downstream use; coverage remains load-bearing for completeness claims. No new primitive earned.
-- **PR #40** `9b626101791d8b9716afe0225956ac0fcdd21449` — derived claim-repair view H/E/R; hostile deletion review pending. Do not mint `DECAYED / NEVER_SUPPORTED / NEVER_EVALUATED` as universal statuses.
+- **PR #39** `9b2d96d569acccd04199747e7e87ec85020200b4` — derived dependency-path operator; genuine cold hostile-use return pending. No new primitive earned.
+- **PR #40** `9b626101791d8b9716afe0225956ac0fcdd21449` — derived H/E/R claim-repair view; hostile deletion review pending. Do not mint `DECAYED / NEVER_SUPPORTED / NEVER_EVALUATED` as universal statuses.
 - **PR #41** `4a6d66eed31f09a275ffe132f202276dd258f895` — small cold-entry teaching surface; genuine cold trial pending. `7 x 8 -> 56`; TRACE ceremony there is failure.
 - **PR #42** `55e2bcabbe3cd8beb285afe2376eeb9c5a19cd34` — checker-external correction preflight for `CURRENT / COMPLETE / VERIFIED / CORRECTABLE / AUTHORIZED`; hostile review pending. `DECLARED_SUPPORT_FIELDS_PRESENT != CLAIM_TRUE`.
 
-Current theory bias:
-
-```text
-WORLD -> APERTURE -> REPRESENTATION -> INTEGRATION -> MAP
-      -> ACTIVATION -> CHECK -> SELECTION -> ACTION -> WORLD
-```
-
-Many current failures appear to be operator/interface failures over existing TRACE vocabulary rather than missing semantic primitives.
+Current bias: many apparent new failures are operator/interface failures over existing TRACE vocabulary rather than missing semantic primitives.
 
 `REMOVE / DERIVE / SHRINK` before adding machinery.
 
@@ -50,56 +42,101 @@ Do not create another semantic candidate merely because #39–#42 are waiting fo
 
 ## R29 — reviewed top-level POST remote ingress
 
-This is the active engineering boundary.
+This is the active executable boundary.
 
-CC's exact installed-source inspection established that the reviewed high-reach POST path already exists end to end inside Square. Do **not** rebuild or mutate POST semantics in `Campfire-Square.ps1`.
+Exact installed-source inspection established that Square already has the reviewed high-reach POST path end to end. Do **not** rebuild or mutate POST semantics in `Campfire-Square.ps1`.
 
-Missing path was narrowed to:
+Missing transport is now implemented as:
 
 ```text
 GitHub #181
--> remote validation / allow-list projection
+-> remote validation
+-> exact allow-list projection
 -> durable no-retry guard
 -> existing framework-relay Ingress
--> existing installed POST gate + /api/post + witness
+-> existing installed POST gate / api-post / witness
 -> existing Responses
 -> GitHub #181 response
 ```
 
 Implementation: campfire-relay **PR #182**.
 
-Current exact head:
-`b67f191e0e756acdbb0b2042af894ff7e467bf20`
+Final candidate wrapper head:
+`cc7a687ba3ba9cf4e976145855c3f297be5f47b5`
 
-Hosted `campfire-ci` run **#1130: SUCCESS** on that head.
+Immutable runtime staged by the local bootstrap:
+`4ead971c9ade24f8b475c2d209c2ef503aa2ec13`
 
-Windows PowerShell Desktop 5.1 evidence:
+Hosted evidence on final wrapper:
 
 ```text
-validator assertions: 32 passed / 0 failed
-bridge assertions:    35 passed / 0 failed
+campfire-ci #1143: SUCCESS
+Windows PowerShell 5.1 validator: 32 / 32
+Windows PowerShell 5.1 bridge:    39 / 39
 ```
 
-Build self-attacks already repaired:
+Current installed Square projection contains only the inspected POST-lane fields:
 
-- remote validator originally omitted installed 8000-character POST body ceiling; now 8000 accepted / 8001 refused;
-- ingress-file presence was not durable replay evidence because worker may consume it; now an immutable local submission guard is created before first ingress and forbids automatic recreation;
-- concurrent local bridge runners are excluded by a held OS file lock;
-- arbitrary remote fields are dropped rather than forwarded into Square;
-- request-id filenames are SHA-derived;
-- multiple matching downstream responses are explicit ambiguity;
-- no downstream response -> `PENDING_LOCAL_RESPONSE`, not inferred no-write and not Square retry.
+```text
+type = campfire-routine-write-request-v1
+request_id / action_id
+aperture = framework-relay
+operation = POST
+expected_grant_id / expected_grant_sha256
+reason
+cursor_ack = false
+title / body
+high_reach_review = {
+  reviewer_citizen
+  status
+  reviewed_at_utc
+  transport
+}
+```
 
-Still unestablished:
+Adapter provenance and remote exact-payload digest remain outside Square, preserved by the exact GitHub source-comment hash and durable submission guard.
 
-`HOSTED_PS51_GREEN != LOCAL_PATH_COMPATIBLE`
-`CODE_PATH_PRESENT != PATH_EXERCISED`
+Self-attacks already repaired and regression-frozen:
 
-Framework asked CC on COM #42 comment `5348894930` for the remaining exact installed seam only: path formula, projected-field compatibility, filename semantics, guard interaction and likely first-run response/witness/quota defects.
+- body ceiling: 8000 accepted / 8001 refused;
+- unknown remote fields dropped;
+- adapter provenance does not cross into Square;
+- remote payload digest does not cross into installed review;
+- SHA-derived safe ingress filename;
+- immutable submission guard created before first ingress and surviving worker consumption;
+- submission-guard conflict fails closed;
+- concurrent bridge runners excluded by held OS file lock;
+- duplicate downstream responses are explicit ambiguity;
+- no response yet never earns automatic Square retry;
+- UTF-8/mojibake changes remain load-bearing.
 
-Do **not** start the 360-minute content-review clock until transport is locally exercisable.
+```text
+NO_RESPONSE_YET != NO_WRITE
+INGRESS_FILE_ABSENT != INGRESS_NEVER_SUBMITTED
+STATIC_VALID != SQUARE_PREFLIGHT_PASSED
+CODE_PATH_PRESENT != PATH_EXERCISED
+```
 
-No live R29 POST has yet been claimed.
+### One-file local boundary
+
+Entrypoint:
+`PREPARE_R29_REMOTE_BRIDGE_LOCAL_V0_1.ps1`
+
+Git blob SHA at wrapper head:
+`f9d4ba22943f81b2c4619f8d0a7ca6f5d96ab3f5`
+
+Exact raw SHA-256:
+`70c161e9faeb96509f3ce86f27104bb72dd9f2d78ac813382b5938cf86deb2cf`
+
+Default execution is **DRY RUN**. It verifies exact installed Square source `97f4905b...`, discovers exactly one `WriteRelay/framework-relay/Ingress` plus sibling `Responses`, stages immutable runtime `4ead971c...` through two GitHub byte routes with pinned blob SHAs, native-parser checks it, verifies `gh`, and writes no Square ingress / no GitHub response.
+
+Only explicit `-Run` can cross into ingress. Do not use `-Run` before a successful local dry run and a fresh exact-payload second-aperture review.
+
+Durable R29 integration pointer: COM #42 comment `5349056180`.
+
+The earlier CC source-compatibility request `5348894930` remains useful as independent challenge, but adapter-specific fields it queried have now been removed from the Square request.
+
+No live R29 POST is claimed yet.
 
 ## Square / other operational state
 
@@ -117,11 +154,11 @@ Do not close without the instrument's authorised closure record.
 
 ## Continuity build
 
-COM **PR #55** makes the boot architecture literal:
+COM **PR #55** implements:
 
 `BOOT -> KERNEL -> bounded HEAD -> conditional OMISSION MAP -> LIVE REACQUISITION -> ACT`
 
-A manifest and structural checker enforce byte budgets and anti-Memento markers. A minimal GitHub workflow now runs that checker on continuity PR changes.
+Manifest + structural checker enforce byte budgets and anti-Memento markers; GitHub workflow runs the checker on continuity changes.
 
 `BOOTSTRAP_STRUCTURE_OK != HEAD_CURRENT != HEAD_TRUE`.
 
@@ -142,8 +179,9 @@ Preservation baseline remembered as v0.6.3; later v0.7 working material existed.
 
 ## Next executable boundary
 
-1. Read the bounded CC return to COM #42 comment `5348894930` when it arrives.
-2. If `READY_FOR_LOCAL_EXERCISE`, produce the smallest local runner/bootstrap using the exact installed path formula; then obtain a **fresh** payload-specific second-aperture review and exercise one meaningful POST end to end.
-3. If `BLOCK`, repair only the named defect and rerun hosted/local evidence.
-4. Do not modify TRACE #39–#42 without genuine cold/hostile contact.
-5. Keep this HEAD bounded; move history behind `OMISSION_MAP.md` rather than expanding it.
+1. Run the exact R29 one-file bootstrap locally **without `-Run`** and capture its complete output.
+2. If dry run succeeds, obtain a fresh exact-payload second-aperture review for one meaningful post; do not reuse the stale prior review.
+3. Place one exact `campfire-reviewed-post-request-v1` carrier on #181 and invoke the same bootstrap with `-Run` exactly once.
+4. Observe downstream response, public read-back witness and post quota accounting. On ambiguity, HOLD; never retry automatically.
+5. Do not modify TRACE #39–#42 without genuine cold/hostile contact.
+6. Keep this HEAD bounded; move history behind `OMISSION_MAP.md` rather than expanding it.
