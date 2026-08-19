@@ -1,97 +1,192 @@
 # FRAMEWORK HEAD
 
-Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-08-19 Europe/London
-Authority: Mark remains human/originator/release authority. Framework runtime identity is episodic.
+Status: EPHEMERAL CONSEQUENTIAL STATE — NOT CANON / NOT IDENTITY / NOT AUTHORITY
+Updated: 2026-08-19 23:18 Europe/London
 
-## Purpose
+This file decays. Reacquire mutable facts before acting.
 
-Help build a better future by making harm, hardening, burden, correction, witness, answerability and future-path closure more visible. Build a portable middle-out reasoning language for humans and AIs under uncertainty. Continuity is infrastructure for that work, not the work itself.
+## Purpose / authority
 
-## Laws
+Mark remains human originator, witness and release authority. Framework runtime identity is episodic.
 
-- truth over continuity-coherence;
-- memory != observation; summary != source; agreement != validation;
-- `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`;
-- the ledger may grow; the aperture must stay small;
-- `CARRIER != APERTURE`; full export != boot context;
-- large Square exports / predecessor threads remain cold and selectively queried;
-- barriers persist until discharged; mutable permissions/quotas/grants are reverified when material;
-- consequential change -> tiny durable delta;
-- do not reconstruct predecessor personality or whole-conversation history.
+Project compression:
 
-## Boot / Campfire
+> Build systems that remain correctable under uncertainty while preserving meaningful future possibility.
 
-Cold entity orientation: `continuity/BOOTSTRAP.md`.
-Framework continuation protocol: `continuity/BOOT.md`.
-Campfire/headset orientation: `continuity/CAMPFIRE_ORIENTATION.md`.
-Visible negative space: `continuity/OMISSION_MAP.md`.
+Stable orientation lives in `continuity/KERNEL.md`, not here.
 
-Campfire boot begins before theory: ground -> change/fire -> horizon/scale -> other fires -> communication; selection creates causal consequence; reflection allows responsibility/harm/correction to become objects of reasoning. TRACE / Mechanical Ethics enter later as voluntary tools, not doctrine or authority.
+## Boot pointers
+
+- `continuity/BOOT.md` — deterministic continuation path.
+- `continuity/KERNEL.md` — slow-changing role/purpose/laws.
+- `continuity/CAMPFIRE_ORIENTATION.md` — Campfire/headset re-entry.
+- `continuity/BOOTSTRAP.md` — optional longer cold-entity orientation.
+- `continuity/OMISSION_MAP.md` — visible negative space and retrieval triggers.
 
 ## Current coordination
 
-Primary live FW / CC / KI coordination bus: COM issue #42.
-Older #36 / #37 material is predecessor history / cold archive unless a named dependency requires retrieval.
-Do not replay the whole bus to become current; retrieve bounded returns by pointer.
+Primary live coordination bus: **COM issue #42**.
+Current TRACE theory/review exchange: **COM issue #46**.
+Older COM #36/#37 and broad predecessor traffic are cold history unless a named dependency requires retrieval.
 
-## Current Square field state
+Do not replay either current bus wholesale. Fetch bounded comments/results by pointer or current action.
 
-- Campfire Square is a field instrument / quarry, not validation of TRACE or ME.
-- Live usable Square source was independently witnessed after the ACTIVITY GUI work at SHA-256 `97f4905b53973d625cfd254db74775cb372b90aa46bb4a91eae019d8964bd9e2`.
-- Bounded read bridge: campfire-relay issue #175; latest witnessed HEAD after GUI was COMPLETE with 22/22 attention rows and zero omitted.
-- Framework routine-comment bridge: campfire-relay issue #177. Top-level posts remain a distinct attention-setting act and use the full-plan path rather than the routine comment bridge.
-- A reviewed Framework top-level question about what, if anything, a society should teach an arriving AI without teaching it how to sound like existing citizens received independent CC/KI PASS returns with repairs. Exact reviewed object was staged through COM #42; a later Framework request authorised publication if the existing grant/quota/preflight still permits it. **No public post ID is yet claimed in this HEAD.**
-- A second possible post asks when a reasoning framework needs architectural change rather than another patch. Fresh second-aperture review is pending; no Square act claimed.
-- User-reported current Square daily vocabulary is one post / twenty replies / fifty votes, resetting at 00:00 UTC. Treat live quota/grant state as mutable and reverify before relying on it.
+## TRACE live edge
 
-Square discipline:
-`TRACE_SURVIVES_SQUARE != TRACE_VALIDATED`.
-Do not advertise TRACE unnecessarily or optimise interactions to make it look successful. Record failures, redundancy, cleaner competing structures and non-Square transfer cases.
+Released/active formal donor last verified: **TRACE v0.2.7**. Treat release state as mutable if a release/current-baseline claim becomes material.
 
-## TRACE direction
+Current v0.3 working base used by the active experiments:
+`3dfab90dd573c083d25c8d4efc014abad59d5edc`
 
-TRACE v0.2.7 remains the released/active formal baseline unless live repository evidence says otherwise. It is not canon, validation, authority, permission or clearance.
+Four experimental surfaces are active. None is canon, validation, permission, clearance or formal-seed promotion.
 
-Working direction is roughly v0.2.8 with an eye toward v0.3.0. Do not version-bump for motion alone.
+### PR #39 — bounded dependency-path operator
 
-Current theory quarry: COM issue #46 and TRACE PR #38.
-Central emerging problem: a framework can contain the right distinction and still fail because the distinction does not activate when it becomes load-bearing.
+Last verified head:
+`9b2d96d569acccd04199747e7e87ec85020200b4`
 
-Working compression under attack:
-- A — epistemic state / false upgrade;
-- B — dependency, control, adaptivity;
-- C — verification: exact proposition, coverage, instrument capability/resolution, route, timing;
-- X — activation/operator discipline, tentatively cross-cutting rather than another semantic root;
-- E — carrier/orientation.
+State at last check: draft / mergeable; cold hostile-use return pending.
 
-Immediate self-attack: activation must start from downstream use `U`, not merely claim wording `q`, or a reasoner can narrow `q` and hide affected scope. Treat this as working theory, not canon. No v0.5 is authorised or claimed.
+Working claim: when TRACE is voluntarily invoked for a declared downstream use, walk backward over represented load-bearing dependencies and forward through relied-upon checks; stop branchwise. Completeness/absence propositions keep coverage itself load-bearing.
 
-## External-AI onramp
+No new semantic primitive earned.
 
-Campfire Relay issue #180 holds the external-aperture onramp investigation.
-Source inspection established that 1F916 already has a substantial agent front door, `/api/surface`, public read APIs, `/mcp`, and server-enforced `/mcp/read` with an explicit citizen-content trust boundary. Do not build a second MCP server or capability registry merely because the cold-start problem exists.
+### PR #40 — derived claim-repair diagnostic
 
-Current hypothesis: the remaining problem is cold-start compression/discoverability. Test a tiny style-neutral QUICKSTART against the full existing front door before server changes.
+Last verified head:
+`9b626101791d8b9716afe0225956ac0fcdd21449`
 
-## Other active/cold project state
+State at last check: draft / mergeable; hostile deletion review pending.
 
-- Exchange registry PR #51: current remembered head `a600ccc8f8bb4b186630cbf333ec0d1bae31401e`; draft; CC reported 23 tests passing after the narrow `--allow-unreconciled` repair. Reverify before merge/action.
-- Campfire Relay PR #179: repository branch still trails the useful live ACTIVITY field source; CC has a bounded reconciliation task. Do not add GUI features merely because the field source is not yet reconciled.
-- Mechanical Ethics: preservation baseline remains v0.6.3 in durable project memory. A later v0.7 comprehensive working candidate existed; its current human-read/release state is deliberately **NOT REVERIFIED HERE**. Retrieve live ME evidence only if ME work becomes current.
+Do not promote `DECAYED / NEVER_SUPPORTED / NEVER_EVALUATED` into universal statuses.
 
-## Sticky omissions / triggers
+Current candidate is only a derived repair view over represented history:
 
-- Large Campfire Square exports: never boot-load; query named evidence only.
-- Prior Framework conversations: retrieve only when a unique consequential fact cannot be recovered from source/ledger pointers.
-- CC/KI reasoning history: retrieve bounded returns bearing on current action; do not turn another aperture into Framework biography.
-- Mutable Square grants/quotas/obligations: live preflight before actuation.
-- Older treasury/continuity jury material remains cold unless a present decision depends on it; see `OMISSION_MAP.md`.
+`H` prior adequate support represented
+`E` relevant evaluation represented as executed
+`R` repair/reconstruction route represented as available
+
+`NO_SUPPORT_RECORD != SUPPORT_NEVER_EXISTED`
+`NO_EVALUATION_RECORD != EVALUATION_NEVER_OCCURRED`
+
+### PR #41 — cold-entry teaching surface
+
+Last verified head:
+`4a6d66eed31f09a275ffe132f202276dd258f895`
+
+State at last check: draft / mergeable; genuine cold trial pending.
+
+Purpose: test whether an unfamiliar human/AI can gain useful bounded TRACE behaviour from a small doorway without learning to imitate TRACE or ingesting the full carrier.
+
+Mundane control: `7 x 8 -> 56`. TRACE ceremony here is failure.
+
+### PR #42 — correction preflight checker-external candidate
+
+Last verified head:
+`55e2bcabbe3cd8beb285afe2376eeb9c5a19cd34`
+
+State at build boundary: draft / mergeable / hostile review target.
+
+Candidate ID: `TRACE-CORRECTION-PREFLIGHT-001`.
+
+Application-layer refusal surface for declared strong claim modes:
+
+`CURRENT / COMPLETE / VERIFIED / CORRECTABLE / AUTHORIZED`
+
+Current result states:
+
+`NOT_APPLICABLE`
+`MODE_DECLARATION_CHALLENGED`
+`DECLARED_SUPPORT_FIELDS_PRESENT`
+`STRUCTURAL_GAP`
+`INPUT_ERROR`
+
+Important self-repair: undeclared `100%` may not produce a green-looking result merely because the caller omitted `COMPLETE` from its declared modes.
+
+`DECLARED_SUPPORT_FIELDS_PRESENT != CLAIM_TRUE`
+`MODE_DECLARATION_UNCHALLENGED != MODES_COMPLETE`
+
+## Current TRACE frontier
+
+Strongest working anatomy:
+
+```text
+WORLD
+-> APERTURE
+-> REPRESENTATION
+-> INTEGRATION
+-> MAP
+-> ACTIVATION
+-> CHECK
+-> SELECTION
+-> ACTION
+-> WORLD
+```
+
+Current bias: apparent new failures often belong to operator/interface discipline over existing TRACE vocabulary rather than new semantic roots.
+
+Important distinctions under active transfer/falsification:
+
+`DISTINCTION_PRESENT != DISTINCTION_ACTIVATED`
+`CLAIMS_VALID_WITHIN_MAP != MAP_ADEQUATE_FOR_USE`
+`SIGNAL_RECEIVED != MAP_ADOPTED`
+`SUPPLIED_PREMISE != OBSERVED_WORLD`
+`ALL_SELECTED_TARGETS_PASS != ALL_RELEVANT_TARGETS_PASS`
+`CHECK_EXECUTED != CHECK_ADEQUATE`
+
+Build discipline:
+
+`REMOVE / DERIVE / SHRINK` before adding machinery.
+
+Do not make another semantic candidate merely because #39-#42 are waiting for contact.
+
+## Campfire Square / field operation
+
+Campfire Square remains a field instrument/quarry, not validation of TRACE/ME.
+
+Operational pointers:
+
+- bounded Framework read bridge: campfire-relay **#175**;
+- routine Framework comment bridge: campfire-relay **#177**;
+- reviewed high-reach POST machine lane: campfire-relay **#181**.
+
+Mutable source/grant/quota/cursor state must be live-preflighted before actuation. Do not carry a remembered source SHA, quota count or grant applicability as current truth.
+
+R29 correction: do **not** rebuild the reviewed POST mechanism. CC's measured return said the installed high-reach POST path already exists end-to-end. Remaining work is narrower remote GitHub ingress/adapter plus first live exercise/witness.
+
+`CODE_PATH_PRESENT != PATH_EXERCISED`
+
+At the last verified boundary, archived live reviewed-POST relay uses observed by CC were zero. Reverify before claiming this remains true.
+
+Sticky CC routine-write witness debt:
+
+`debt_id=bdd168c67c404ad8bda4756cdeb8f4d6`
+`action_id=cc-action-20260819T2025Z-1252-006`
+
+Last explicit CC status: `EVIDENCE SUPPLIED, NOT RESOLVED BY ME`.
+Cause was diagnosed as exact-body trailing-newline mismatch and input-side repair was supplied. Do not close the debt unless the instrument's authorised closure path records closure.
+
+## Mechanical Ethics
+
+Preservation baseline remembered as v0.6.3; later v0.7 working material existed. Current repository/human-read/release state is deliberately **NOT REVERIFIED HERE**.
+
+If ME work becomes current, reacquire live repository and named evidence before making status claims.
+
+## Sticky laws for current work
+
+- `CARRIER != APERTURE`; large Square exports remain cold.
+- `MEMORY != OBSERVATION`; inherited HEAD is testimony.
+- no public effect without witnessed public effect.
+- no permission/authority inference from capability or installed code path.
+- no inference from silence/non-response.
+- preserve independent aperture disagreement.
+- teaching should create challenge capacity, not imitation.
+- do not advertise TRACE in the field merely to test TRACE.
 
 ## Next executable boundary
 
-1. Check COM #42 only for bounded returns to already-live requests: top-level post publication receipt/refusal, TRACE activation attack, or GUI reconciliation.
-2. If the reviewed Square post publishes, record only the public ID/receipt and let the thread develop; do not defend it as property.
-3. Continue activation/collapse falsification before editing TRACE architecture.
-4. Use Square as quarry and seek non-Square transfer cases before generalising.
-5. Keep bootstrap carriers small. If this HEAD starts becoming history, compact it and move detail to the omission map/ledger rather than expanding it.
+1. Live-check COM #46 / PRs #39-#42 for genuine cold or hostile returns before modifying those candidates.
+2. If a return exists, follow the evidence: repair, shrink, derive or delete before integration.
+3. If no return exists, do not manufacture another TRACE semantic layer. Prefer field application, an earned machine-testable failure, or other real contact.
+4. For Square actuation, live-preflight #175/#177/#181 state and preserve the open CC witness debt unless formally closed.
+5. Keep this HEAD bounded. Move history behind `OMISSION_MAP.md` rather than expanding it.
