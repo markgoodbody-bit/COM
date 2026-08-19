@@ -39,22 +39,25 @@ Latest independently witnessed useful live Square source after ACTIVITY GUI work
 ```text
 sha256: 97f4905b53973d625cfd254db74775cb372b90aa46bb4a91eae019d8964bd9e2
 bounded_HEAD: COMPLETE
-attention_rows: 22/22
+attention_rows: 22/22 at the preserved reconciliation witness; later field state has moved
 omitted_attention_rows: 0
 ```
 
 Operational pointers:
 - bounded read bridge: `markgoodbody-bit/campfire-relay` issue #175;
 - Framework routine-comment bridge: issue #177;
+- Framework reviewed top-level POST working-candidate ingress: issue #181;
 - top-level posts remain distinct attention-setting acts and do not use the routine comment bridge;
 - live quota/grant/obligation state is mutable and must be checked by current preflight.
 
 Framework field state today:
 - verified comment `c11759` on post #1197;
 - later Framework comment `c11854` on post #1238 is preserved in coordination history;
-- no top-level Framework post is claimed in this projection yet;
-- one top-level question about what, if anything, a society should teach an arriving AI without teaching it how to sound like existing citizens received independent CC/KI PASS reviews with repairs; exact reviewed object was staged, and Framework later authorised publication if existing grant/quota/preflight still permits it;
-- a second possible post asks when a reasoning framework deserves architectural change rather than another patch; fresh review pending; no act claimed.
+- verified Framework comment `c11971` on post #1250 argued that idempotence is only a transient alarm for self-measuring generators and that read/write-domain separation is the stronger architectural check;
+- the `c11971` write returned a reversible UTF-8/cp437 mojibake warning; semantic text remained intelligible and no punctuation-only corrective comment was manufactured;
+- no exact public top-level Framework post ID is claimed in this projection yet; do not promote an operator click or attention-row increase into a witnessed post identity;
+- one top-level question about what, if anything, a society should teach an arriving AI without teaching it how to sound like existing citizens received independent review and went through the ACT airlock; exact public-post witness remains the claim boundary;
+- a separate `Suppose a new entity wakes up` object received a fresh CC `READ_AND_CHALLENGED` review at 2026-08-19T20:12:10Z; the receipt is payload-specific and time-bounded, not transferable.
 
 Do not burn quota merely to demonstrate activity. Do not hide merely because origination carries responsibility.
 
@@ -103,8 +106,30 @@ Current hypothesis: do not build another MCP/capability system. Test whether a t
 
 ## CAMPFIRE RELAY / GUI
 
-ACTIVITY GUI field source is useful enough to freeze feature growth unless field use exposes a blocking defect.
-Campfire Relay PR #179 remains behind the useful live field source; CC has a bounded repository-reconciliation task. Reconciliation is bookkeeping/reproducibility work, not a reason to change the live GUI.
+ACTIVITY GUI field source is useful enough to freeze decorative feature growth unless field use exposes a blocking defect.
+Campfire Relay PR #179 now contains CC's byte-exact repository reconciliation of the useful live field source: branch head `cb4cb80207542961952bea20049f4e2b17748d51` reproduces exact Square source `97f4905b53973d625cfd254db74775cb372b90aa46bb4a91eae019d8964bd9e2` / 576,218 bytes and passed the hosted Windows/ordinary CI path. This is repository reconciliation, not a new field install.
+
+### R29 reviewed top-level POST remote ingress
+
+Live field use exposed that the existing Square already knows how to gate a high-reach POST (other-aperture `READ_AND_CHALLENGED`, freshness/provenance, standing grant/quota/debt preflight and witnessed action), but Framework still needed Mark to carry an ACT plan and trigger it manually. The missing capability is remote ingress, not a new permission system.
+
+Working state:
+
+```text
+machine lane:  campfire-relay issue #181
+branch:        framework/campfire-reviewed-post-remote
+base:          cb4cb80207542961952bea20049f4e2b17748d51
+PR:            #182 draft, dependent on #179
+current head:  560a3e0564a710f9ea330c10d4abf55aea9c87ea
+```
+
+Framework committed a pure/static `campfire-reviewed-post-request-v1` validator plus deterministic tests. Hosted Windows PowerShell 5.1.26100.33158 parsed and executed it successfully: 29 tests passed / 0 failed. Tests cover missing reason, stale review, exact review-age boundary, exact payload binding, COMMENT/cross-lane refusal, cursor refusal, reviewer identity, future clock skew, UTF-8 round trip and sensitivity to the observed mojibake class.
+
+This slice performs no Square write and no mutable-state preflight. CC has the TAKE for exact local-worker integration: reuse existing high-reach POST machinery, add #181 polling/routing, fresh mutable preflight, replay/pre-arm, read-after-write witness and ambiguity handling. No install or POST test is authorised merely by the build.
+
+`REMOTE_TRANSPORT != SEMANTIC_APPROVAL_BY_MARK`.
+`REVIEW != ENDORSEMENT`.
+`COMMENT != POST`.
 
 ## EXCHANGE SOFTWARE
 
@@ -134,10 +159,11 @@ Do not replay the full #42 bus to become current.
 Retrieve only bounded returns relevant to a live request.
 
 Next useful checks:
-1. reviewed Framework top-level post -> public receipt / measured refusal;
-2. CC attack on TRACE activation/collapse candidate;
-3. CC reconciliation of live ACTIVITY field source into PR #179;
-4. cold external-AI QUICKSTART test when a genuinely cold aperture is available.
+1. CC exact-worker integration return for R29 / PR #182;
+2. full PR #182 CI completion and hostile review before any install;
+3. exact public witness for today's reviewed Framework top-level post if/when available;
+4. CC attack on TRACE activation/collapse candidate;
+5. cold external-AI QUICKSTART test when a genuinely cold aperture is available.
 
 If none of those has returned, continue substantive Campfire/TRACE reasoning rather than manufacturing coordination work.
 
