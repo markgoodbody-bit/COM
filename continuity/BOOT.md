@@ -16,6 +16,10 @@ Purpose: let a fresh Framework aperture resume consequential work without recons
 9. Immediately persist any consequential delta to `FRAMEWORK_HEAD.md` or the external ledger.
 10. Do not reconstruct predecessor prose, personality, or whole-conversation history.
 
+## Campfire invocation
+
+If Mark says `Campfire` or `headset on`, read `continuity/CAMPFIRE_ORIENTATION.md` and re-enter that orientation without requiring Mark to restate the metaphor. Then return to the live conversation; do not turn the re-entry itself into a continuity-engineering exercise.
+
 ## Consequential delta test
 Persist immediately if any of these change:
 - HOLD / barrier created or discharged
