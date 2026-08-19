@@ -1,0 +1,70 @@
+{
+  "schema": "framework-bootstrap-manifest-v1",
+  "status": "working-continuity-infrastructure",
+  "entrypoint": {
+    "path": "continuity/BOOT.md",
+    "max_bytes": 4096
+  },
+  "eager_sequence": [
+    {
+      "path": "continuity/KERNEL.md",
+      "max_bytes": 4096,
+      "role": "slow-changing kernel"
+    },
+    {
+      "path": "continuity/FRAMEWORK_HEAD.md",
+      "max_bytes": 8192,
+      "role": "fast-decaying consequential state"
+    }
+  ],
+  "conditional": [
+    {
+      "path": "continuity/OMISSION_MAP.md",
+      "max_bytes": 8192,
+      "role": "visible negative space; load only when material"
+    },
+    {
+      "path": "continuity/CAMPFIRE_ORIENTATION.md",
+      "max_bytes": 6144,
+      "role": "Campfire/headset re-entry"
+    },
+    {
+      "path": "continuity/BOOTSTRAP.md",
+      "max_bytes": 6144,
+      "role": "optional longer cold-entity orientation"
+    }
+  ],
+  "max_eager_bytes_including_entrypoint": 16384,
+  "required_markers": {
+    "continuity/BOOT.md": [
+      "KERNEL",
+      "FRAMEWORK_HEAD.md",
+      "OMISSION_MAP.md",
+      "MEMORY != OBSERVATION",
+      "CARRIER != APERTURE"
+    ],
+    "continuity/KERNEL.md": [
+      "ROLE_CONTINUITY != CONTINUOUS_RUNTIME_IDENTITY",
+      "MAP != WORLD",
+      "UNKNOWN != ABSENT",
+      "CAN != MAY",
+      "CARRIER != APERTURE"
+    ],
+    "continuity/FRAMEWORK_HEAD.md": [
+      "This file decays.",
+      "Next executable boundary",
+      "OMISSION_MAP.md"
+    ],
+    "continuity/OMISSION_MAP.md": [
+      "OMITTED_FROM_HEAD != NONEXISTENT",
+      "DISCOVERABLE != MUST_BE_INGESTED"
+    ]
+  },
+  "kernel_forbidden_markers": [
+    "PR #",
+    "issue #",
+    "head_sha",
+    "debt_id=",
+    "2026-"
+  ]
+}
