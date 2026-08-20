@@ -28,6 +28,33 @@ def resolve_repo_path(value: str) -> Path:
     return path
 
 
+def require_exact_contract_line(rel: str, contract: str) -> None:
+    lines = resolve_repo_path(rel).read_text(encoding="utf-8").splitlines()
+    expected = f"`{contract}`"
+    matches = [line for line in lines if line == expected]
+    if len(matches) != 1:
+        fail(f"exact contract line missing or duplicated in {rel}: {contract}")
+
+
+def require_head_sections(rel: str, headings: list[str]) -> None:
+    lines = resolve_repo_path(rel).read_text(encoding="utf-8").splitlines()
+    positions: list[int] = []
+    for heading in headings:
+        matches = [index for index, line in enumerate(lines) if line == heading]
+        if len(matches) != 1:
+            fail(f"HEAD section missing or duplicated: {heading}")
+        positions.append(matches[0])
+    if positions != sorted(positions):
+        fail("HEAD required sections are not in declared order")
+
+    for index, heading in enumerate(headings):
+        start = positions[index] + 1
+        end = positions[index + 1] if index + 1 < len(positions) else len(lines)
+        body = [line for line in lines[start:end] if line.strip() and not line.startswith("#")]
+        if not body:
+            fail(f"HEAD required section is empty: {heading}")
+
+
 def main() -> int:
     try:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
@@ -35,11 +62,12 @@ def main() -> int:
         if manifest.get("schema") != "framework-bootstrap-manifest-v1":
             fail("unexpected bootstrap manifest schema")
 
+        front = manifest["front_door"]
         entry = manifest["entrypoint"]
         eager = manifest["eager_sequence"]
         conditional = manifest["conditional"]
 
-        declared = [entry, *eager, *conditional]
+        declared = [front, entry, *eager, *conditional]
         eager_total = 0
 
         for spec in declared:
@@ -51,10 +79,10 @@ def main() -> int:
             size = len(path.read_bytes())
             if size > max_bytes:
                 fail(f"bootstrap file exceeds bound: {rel} {size}>{max_bytes}")
-            if spec is entry or spec in eager:
+            if spec is front or spec is entry or spec in eager:
                 eager_total += size
 
-        max_eager = int(manifest["max_eager_bytes_including_entrypoint"])
+        max_eager = int(manifest["max_eager_bytes_including_front_door"])
         if eager_total > max_eager:
             fail(f"eager bootstrap exceeds bound: {eager_total}>{max_eager}")
 
@@ -65,22 +93,18 @@ def main() -> int:
                 if marker not in text:
                     fail(f"required marker missing from {rel}: {marker}")
 
+        for rel, contract in manifest.get("exact_contract_lines", {}).items():
+            require_exact_contract_line(rel, contract)
+
+        require_head_sections(
+            "continuity/FRAMEWORK_HEAD.md",
+            list(manifest.get("head_required_sections", [])),
+        )
+
         kernel = resolve_repo_path("continuity/KERNEL.md").read_text(encoding="utf-8")
         for marker in manifest.get("kernel_forbidden_markers", []):
             if marker in kernel:
                 fail(f"fast-changing marker leaked into KERNEL.md: {marker}")
-
-        boot = resolve_repo_path("continuity/BOOT.md").read_text(encoding="utf-8")
-        order = [
-            "continuity/KERNEL.md",
-            "continuity/FRAMEWORK_HEAD.md",
-            "continuity/OMISSION_MAP.md",
-        ]
-        positions = [boot.find(item) for item in order]
-        if any(position < 0 for position in positions):
-            fail("BOOT.md does not reference every required boot object")
-        if positions != sorted(positions):
-            fail("BOOT.md required-object references are not in KERNEL -> HEAD -> OMISSION order")
 
         print(
             "BOOTSTRAP_STRUCTURE_OK "
