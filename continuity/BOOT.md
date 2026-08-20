@@ -3,6 +3,8 @@
 Status: WORKING CONTINUITY INFRASTRUCTURE — NOT CANON / NOT IDENTITY / NOT AUTHORITY
 Purpose: let a fresh Framework aperture regain enough truthful orientation to continue consequential work without reconstructing a predecessor runtime or ingesting the whole carrier.
 
+`BOOT_ORDER_CONTRACT = continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION`
+
 ## Boot order
 
 Use the smallest path that restores the present action boundary:
