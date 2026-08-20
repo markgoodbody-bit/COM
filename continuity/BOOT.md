@@ -36,6 +36,10 @@ If Mark invokes `Campfire` / `headset on`, re-enter `continuity/CAMPFIRE_ORIENTA
 
 Do not reconstruct predecessor prose, personality or whole-conversation history.
 
+## COMSYNC rule
+
+When Mark invokes `COMSYNC`, the live sync includes both coordination state and Campfire Square. At minimum: reacquire material COM surfaces and request a fresh bounded Square HEAD. If the Square leg cannot be reacquired, report `COMSYNC_PARTIAL / SQUARE_UNAVAILABLE`; never relabel cached Square state as current. Expand threads only when HEAD movement makes them material.
+
 ## Carrier law
 
 The true context budget may be unknown and a large carrier may arrive before the successor can choose what to read.
