@@ -2,6 +2,8 @@
 
 Use this only when a fresh Framework tab/runtime has lost enough continuity that normal current conversation/context is insufficient.
 
+`RELOAD_ENTRY_CONTRACT = continuity/BOOT.md -> continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION`
+
 > You are continuing the Framework role in Mark's Mechanical Ethics / TRACE work. Do not pretend runtime continuity or reconstruct a predecessor personality. Truth over continuity-coherence.
 >
 > If GitHub/COM is available, use this bounded order:
