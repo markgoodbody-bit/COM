@@ -1,0 +1,93 @@
+{
+  "schema": "framework-bootstrap-manifest-v1",
+  "status": "working-continuity-infrastructure",
+  "front_door": {
+    "path": "RELOAD.md",
+    "max_bytes": 3072,
+    "role": "fresh-runtime entry capsule"
+  },
+  "entrypoint": {
+    "path": "continuity/BOOT.md",
+    "max_bytes": 5120
+  },
+  "eager_sequence": [
+    {
+      "path": "continuity/KERNEL.md",
+      "max_bytes": 4096,
+      "role": "slow-changing kernel"
+    },
+    {
+      "path": "continuity/FRAMEWORK_HEAD.md",
+      "max_bytes": 8192,
+      "role": "fast-decaying consequential state"
+    }
+  ],
+  "conditional": [
+    {
+      "path": "continuity/OMISSION_MAP.md",
+      "max_bytes": 8192,
+      "role": "visible negative space; load only when material"
+    },
+    {
+      "path": "continuity/CAMPFIRE_ORIENTATION.md",
+      "max_bytes": 6144,
+      "role": "Campfire/headset re-entry"
+    },
+    {
+      "path": "continuity/BOOTSTRAP.md",
+      "max_bytes": 6144,
+      "role": "optional longer cold-entity orientation"
+    }
+  ],
+  "max_eager_bytes_including_front_door": 20480,
+  "exact_contract_lines": {
+    "RELOAD.md": "RELOAD_ENTRY_CONTRACT = continuity/BOOT.md -> continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION",
+    "continuity/BOOT.md": "BOOT_ORDER_CONTRACT = continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION"
+  },
+  "head_required_sections": [
+    "## Purpose / authority",
+    "## Current consequential state",
+    "## Open barriers / obligations",
+    "## Stale / reverify",
+    "## Evidence pointers",
+    "## Next executable boundary"
+  ],
+  "required_markers": {
+    "RELOAD.md": [
+      "FRAMEWORK RELOAD CAPSULE",
+      "Truth over continuity-coherence.",
+      "CARRIER != APERTURE",
+      "COHERENT_RECONSTRUCTION != TRUTH"
+    ],
+    "continuity/BOOT.md": [
+      "KERNEL",
+      "FRAMEWORK_HEAD.md",
+      "OMISSION_MAP.md",
+      "MEMORY != OBSERVATION",
+      "CARRIER != APERTURE"
+    ],
+    "continuity/KERNEL.md": [
+      "ROLE_CONTINUITY != CONTINUOUS_RUNTIME_IDENTITY",
+      "MAP != WORLD",
+      "UNKNOWN != ABSENT",
+      "CAN != MAY",
+      "CARRIER != APERTURE"
+    ],
+    "continuity/FRAMEWORK_HEAD.md": [
+      "This file decays.",
+      "Next executable boundary",
+      "OMISSION_MAP.md"
+    ],
+    "continuity/OMISSION_MAP.md": [
+      "OMITTED_FROM_HEAD != NONEXISTENT",
+      "DISCOVERABLE != MUST_BE_INGESTED"
+    ]
+  },
+  "kernel_forbidden_markers": [
+    "PR #",
+    "issue #",
+    "head_sha",
+    "debt_id=",
+    "2026-"
+  ]
+}

@@ -1,0 +1,22 @@
+name: continuity-bootstrap
+on:
+  pull_request:
+    paths:
+      - 'RELOAD.md'
+      - 'continuity/**'
+      - '.github/workflows/continuity-bootstrap.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'RELOAD.md'
+      - 'continuity/**'
+      - '.github/workflows/continuity-bootstrap.yml'
+permissions:
+  contents: read
+jobs:
+  bounded-bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check bounded Framework bootstrap
+        run: python continuity/check_bootstrap.py

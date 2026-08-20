@@ -1,80 +1,99 @@
 # FRAMEWORK BOOT — BOUNDED CONTINUATION PROTOCOL
 
-Status: WORKING CONTINUITY INFRASTRUCTURE — NOT CANON
-Purpose: let a fresh Framework aperture resume consequential work without reconstructing a predecessor runtime or exhausting itself on the carrier.
+Status: WORKING CONTINUITY INFRASTRUCTURE — NOT CANON / NOT IDENTITY / NOT AUTHORITY
+Purpose: let a fresh Framework aperture regain enough truthful orientation to continue consequential work without reconstructing a predecessor runtime or ingesting the whole carrier.
 
-## Before state
+`BOOT_ORDER_CONTRACT = continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION`
 
-If the fresh aperture lacks basic project/orientation context, read `continuity/BOOTSTRAP.md` once. It is voluntary orientation, not authority and not event evidence.
+## Boot order
 
-If Mark says `Campfire` or `headset on`, read `continuity/CAMPFIRE_ORIENTATION.md` and re-enter that orientation without requiring Mark to restate the metaphor. Then return to the live conversation; do not turn re-entry into a continuity-engineering exercise.
+Use the smallest path that restores the present action boundary:
 
-Do not automatically load both orientation files when current conversation/account memory already supplies enough orientation.
+```text
+BOOT
+-> KERNEL
+-> bounded HEAD
+-> OMISSION MAP only where material
+-> LIVE REACQUISITION of mutable premises
+-> THINK / CHALLENGE / ACT
+```
 
-## Bounded boot sequence
+If Mark invokes `Campfire` / `headset on`, re-enter `continuity/CAMPFIRE_ORIENTATION.md` before theory or build reflexes. Campfire is orientation; return to the live question once oriented.
 
-1. Read `continuity/FRAMEWORK_HEAD.md` only.
-2. Identify the current user question / action boundary.
-3. List only the dependencies needed to answer or act.
-4. Check `continuity/OMISSION_MAP.md` for omitted domains that could materially change the action.
-5. Retrieve only those cold evidence objects.
-6. Reverify mutable premises before relying on them.
-7. Preserve sticky barriers until explicitly discharged; revalidate permissions instead of inheriting them.
-8. Act within current authority and tool boundaries.
-9. Immediately persist any consequential delta to `FRAMEWORK_HEAD.md` or the external ledger.
-10. Do not reconstruct predecessor prose, personality or whole-conversation history.
+`continuity/BOOTSTRAP.md` is an optional longer cold-entity teaching surface. Do not load it automatically when `KERNEL.md` plus current conversation already provides enough ground.
 
-## Carrier survival law
+## Deterministic sequence
 
-The true context budget may be unknown and a carrier may be injected before the successor can choose what to read.
+1. Read `continuity/KERNEL.md` once.
+2. Read `continuity/FRAMEWORK_HEAD.md` once.
+3. Identify the current user question or executable boundary.
+4. Ask which omitted facts could specifically change that boundary.
+5. Consult `continuity/OMISSION_MAP.md` only for those domains.
+6. Retrieve the smallest source/evidence slice that can resolve them.
+7. Reacquire mutable repository, permission, quota, grant, field and external-world state before relying on it.
+8. Preserve unresolved barriers/debts until an authorised closure route records discharge.
+9. Act within current authority and tool boundaries.
+10. Persist only consequential deltas to HEAD or the external ledger.
+11. Exit boot. Do the substantive work.
+
+Do not reconstruct predecessor prose, personality or whole-conversation history.
+
+## COMSYNC rule
+
+When Mark invokes `COMSYNC`, the live sync includes both coordination state and Campfire Square. At minimum: reacquire material COM surfaces and request a fresh bounded Square HEAD. If the Square leg cannot be reacquired, report `COMSYNC_PARTIAL / SQUARE_UNAVAILABLE`; never relabel cached Square state as current. Expand threads only when HEAD movement makes them material.
+
+## Carrier law
+
+The true context budget may be unknown and a large carrier may arrive before the successor can choose what to read.
 
 Therefore:
 
 `CARRIER != APERTURE`
-`FULL EXPORT != BOOT CONTEXT`
-`HORIZON COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY COGNITION`
+`FULL_EXPORT != BOOT_CONTEXT`
+`HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION`
 
-The continuity architecture is:
+Large Campfire Square exports, predecessor transcripts, full issue histories and old build logs are cold evidence. Do not ingest them wholesale merely to become current.
 
-`KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`
+Prefer:
 
-The ledger may grow. The aperture must stay small.
+```text
+cold carrier
+-> body-free index / HEAD / omission pointers
+-> bounded source slice
+-> consequential state only
+```
 
-Large Campfire Square exports, predecessor transcripts and issue histories are cold evidence. Never ingest them wholesale merely to feel current. Query them selectively through named posts/comments/evidence pointers or deterministic body-free indexes.
-
-If HEAD itself begins accumulating history, compact it before adding more. Preserve visible negative space in the omission map rather than carrying every omitted object in cognition.
+If HEAD starts carrying history rather than current consequence, compact it before adding more.
 
 ## Consequential delta test
 
-Persist immediately if any of these change:
-- HOLD / barrier created or discharged;
-- permission or clearance state changes;
-- decision boundary changes;
-- evidence pointer becomes material;
-- premise becomes stale / requires reverify;
-- external action is prepared, executed, blocked or fails;
-- omission trigger changes;
-- next executable boundary changes.
+Persist when one of these changes:
 
-Everything else may remain disposable reasoning.
+- a barrier / HOLD / correction debt is created or discharged;
+- authority, permission or clearance state changes;
+- a current decision or next executable boundary changes;
+- a premise becomes stale or is freshly verified;
+- a material evidence pointer changes;
+- an external action is prepared, executed, blocked, ambiguous or fails;
+- an omission trigger changes;
+- a working object becomes current enough that a successor would otherwise act on stale state.
 
-## Account-memory boundary
+Everything else may remain disposable reasoning or external ledger history.
 
-Account memory/custom instructions should carry stable role, purpose and operating laws only.
+## Truth boundary
 
-Fast-changing project state, current builds, HOLDs, quotas, grants, evidence receipts and next actions belong in HEAD + external ledger and must be reverified when material.
+Inherited continuity is testimony, not current observation.
 
 `MEMORY != OBSERVATION`
 `SUMMARY != SOURCE`
+`COHERENT_RECONSTRUCTION != TRUTH`
 
-## Hard stop against continuity recursion
+A coherent bootstrap may still be stale, incomplete or wrong. If source reacquisition conflicts with HEAD, source wins and HEAD must be corrected.
 
-Do not respond to uncertainty by loading more history by default.
-If a needed fact is absent, use the omission map to retrieve the smallest evidence capable of changing the present action.
+If bounded retrieval cannot resolve a material uncertainty, preserve `UNKNOWN` rather than inventing continuity.
 
-If continuity remains uncertain after bounded retrieval, say so plainly. A bounded `UNKNOWN` is safer than a coherent invented past.
-
-## Exit from boot
+## Exit
 
 Continuity is infrastructure, not the project.
-Once the current boundary is trustworthy enough to proceed, return to the substantive Mechanical Ethics / TRACE / Campfire task rather than continuing memory engineering for its own sake.
+
+Once the present boundary is trustworthy enough to proceed, stop bootstrapping. Listen, reason, challenge, participate and build.
