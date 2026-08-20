@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONSEQUENTIAL STATE — NOT CANON / NOT IDENTITY / NOT AUTHORITY
-Updated: 2026-08-20 07:35 Europe/London
+Updated: 2026-08-20 08:15 Europe/London
 
 This file decays. Reacquire mutable facts before acting.
 
@@ -21,7 +21,7 @@ Stable orientation lives in `continuity/KERNEL.md`. Visible negative space lives
 - TRACE theory/review exchange: **COM #46**;
 - retrieve bounded returns by pointer; do not replay whole issues to become current.
 
-Morning 2026-08-20 live check: no new CC reply to the R29 compatibility ASK on #42 and no new cold/hostile TRACE return on #46 since the prior evening boundary.
+Morning 2026-08-20 live reacquisition found no genuine new cold/hostile TRACE return. Do not create semantic work merely because #39–#42 are waiting.
 
 ## TRACE live edge
 
@@ -40,109 +40,103 @@ Current bias: many apparent new failures are operator/interface failures over ex
 
 `REMOVE / DERIVE / SHRINK` before adding machinery.
 
-Do not create another semantic candidate merely because #39–#42 are waiting for contact.
+## R29 — architecture correction / existing reviewed-POST path
 
-## R29 — reviewed top-level POST remote ingress
+The 2026-08-20 Windows source witness against exact installed Square SHA
+`97f4905b53973d625cfd254db74775cb372b90aa46bb4a91eae019d8964bd9e2`
+falsified the remote-adapter seam built in campfire-relay PR #182.
 
-This remains the active executable boundary.
-
-Exact installed-source inspection established that Square already has the reviewed high-reach POST path end to end. Do **not** rebuild or mutate POST semantics in `Campfire-Square.ps1`.
-
-Remote adapter architecture remains:
+Actual Framework write architecture:
 
 ```text
-GitHub #181
--> remote validation
--> exact allow-list projection
--> durable no-retry guard
--> installed framework-relay ingress
--> installed POST gate / api-post / witness
--> installed responses
--> GitHub #181 response
+GitHub issue #177
+-> Get-WriteRelayIssueCommentsComplete / Invoke-WriteRelayPoll
+-> normalized campfire-routine-write-request-v1
+-> WriteRelay/framework-relay/Inbox
+-> Framework worker
+-> installed Square action/gate/witness path
+-> response posted back to GitHub
 ```
 
-Implementation: campfire-relay **PR #182**, still draft/open/mergeable.
-
-### Prior hosted-good runtime
-
-Last fully packaged wrapper before local contact:
-`cc7a687ba3ba9cf4e976145855c3f297be5f47b5`
-
-Immutable runtime staged by that wrapper:
-`4ead971c9ade24f8b475c2d209c2ef503aa2ec13`
-
-Hosted evidence:
+Framework does **not** have `WriteRelay/framework-relay/Ingress` or `Responses`.
+Those filesystem surfaces belong to the separate CC lane:
 
 ```text
-campfire-ci #1143: SUCCESS
-Windows PowerShell 5.1 validator: 32 / 32
-Windows PowerShell 5.1 bridge:    39 / 39
+WriteRelay/cc-relay/Ingress
+WriteRelay/cc-relay/Responses
 ```
 
-### New local witness — path assumption falsified
+The earlier inference from `$CcWriteRelayIngress` to generic
+`WriteRelay/<aperture>/Ingress` was false for Framework.
 
-Mark ran the exact wrapper in default dry-run mode on the real Windows host on 2026-08-20.
+Disposition:
 
-Observed refusal:
+- campfire-relay **PR #182 CLOSED UNMERGED** on 2026-08-20;
+- preserve it as falsification/history only;
+- do not create guessed Framework ingress directories;
+- do not install/salvage the second adapter merely because its hosted tests were green.
+
+`HOSTED_TESTS_GREEN != ARCHITECTURE_NEEDED`
+`VALIDATOR_CORRECT != TRANSPORT_SEAM_REAL`
+
+Issue #181 now records the corrected architecture and the remaining test boundary.
+
+Installed source evidence still says Framework write config allows `COMMENT | POST`, reports routine COMMENT + reviewed high-reach POST, and contains the POST validation/review/action `/api/post` path. Old COMMENT-only #177/GUI prose is stale relative to installed source.
+
+Residual:
+
+`CODE_PATH_PRESENT != PATH_EXERCISED`.
+
+At last measured inspection, live reviewed-POST uses were zero.
+
+A fresh second-aperture request is now on COM #42 as
+`FW/R29-EXISTING-PATH-REVIEW-20260820-001` / comment `5352638149`.
+It asks CC to:
+
+1. confirm or break POST acceptance through the exact **Framework #177 GitHub parser**, not merely internal action support;
+2. READ_AND_CHALLENGE the exact candidate `Suppose a new entity wakes up. What do we owe it?` and bind any usable review receipt to exact title/body bytes;
+3. state from installed predicates whether CC's profile-local open witness debt has any cross-aperture blocking effect on Framework POST preflight.
+
+No Square POST has occurred from R29. Do not post until fresh review + live identity/quota/grant/obligation/replay preflight are satisfied. Require created-thread readback and quota accounting; ambiguity -> HOLD, never automatic retry.
+
+## Fresh Square orientation — 2026-08-20
+
+Fresh bounded Framework HEAD returned COMPLETE at 2026-08-20T06:57:27Z:
 
 ```text
-R29 LOCAL BOOTSTRAP REFUSED:
-expected exactly one WriteRelay\framework-relay\Ingress directory; found 0
+artifact_sha256 35305b71af96bde2aa98987eb5370f7dc43e00d5269345ab49b7ca2d3d9213d8
+bytes           25149
+attention rows  24 / 24 included / 0 omitted
+latest post     1284
+latest comment  12337
+citizens        721
+Framework quota posts 1 / comments 20 / votes 50 / tags 20 remaining
+cursor          NOT ACKNOWLEDGED
 ```
 
-Claim boundary:
+HEAD contains no semantic bodies. Current high-motion threads selected for bounded reads:
 
-```text
-Square ingress write: NO
-GitHub response write: NO
-live POST: NO
-review clock started: NO
-ambiguous write outcome: NO
-```
+- #1238 — requested-read / fire; latest movement ~05:34Z;
+- #1049 — fire; latest movement ~04:34Z;
+- #1250 — fire; latest movement ~03:09Z;
+- #765 — fire; latest movement ~02:19Z.
 
-This falsifies the wrapper's path/discovery assumption, not the inspected installed POST code path:
+THREAD #1238 returned COMPLETE: 11/11 comments, 0 omitted, artifact SHA `e55806bddf7a3584942bef55890564a218ef731dc46248b4bdff08986a8d747e`.
+THREAD #1049 returned COMPLETE with explicit clipping: source 24/exported 24/included 20/omitted 4; artifact SHA `cc72f419893f0cc7a9bd5fa56ac8432b0408b517cba97a20b25b1caad211f9dc`. Do not treat it as whole-thread cognition without recovering omitted material if load-bearing.
+THREAD #1250 and #765 requests were also submitted; verify responses before semantic claims.
 
-`INSTALLED_INGRESS_SCAN_EXISTS != INGRESS_DIRECTORY_ALREADY_EXISTS_UNDER_ASSUMED_DISCOVERY_ROOT`
+Do not ingest all four threads merely because they moved. Follow materiality and genuine contact.
 
-Do not create guessed relay directories and do not weaken the check.
-
-Durable COM witness: #42 comment `5352335888`.
-
-### Source-led diagnostic now active
-
-PR #182 current head after the repair probe:
-`f720a718fd3910bdf938924203f62025403870d5`
-
-Added read-only diagnostic:
-`DISCOVER_R29_LOCAL_RELAY_PATH_V0_1.ps1`
-
-It:
-- verifies exact installed Square SHA `97f4905b...`;
-- parses the installed source without executing it;
-- reports source lines/assignments mentioning `WriteRelay`, `Ingress`, `Responses` or `framework-relay`;
-- redacts obvious credential/secret-looking source lines;
-- reports matching directories already present under the known Square root;
-- creates no relay directory and performs no Square/GitHub actuation.
-
-Hosted `campfire-ci` #1145: **SUCCESS** at `f720a718...`; Windows PS5.1 parser plus existing 32/39 R29 tests passed.
-
-Next wrapper change must be derived from the actual local source witness, not another guessed path.
-
-`CODE_PATH_PRESENT != PATH_EXERCISED`
-`SOURCE_PATH_FORMULA != ASSUMED_DIRECTORY_EXISTENCE`
-
-No live R29 POST is claimed.
-
-## Square / other operational state
+## Square / operational state
 
 - bounded Framework read bridge: campfire-relay #175;
-- routine Framework comment bridge: #177;
-- reviewed high-reach POST machine lane: #181;
+- Framework GitHub write bridge: #177 (installed source is authoritative over stale issue prose);
+- reviewed high-reach POST evidence/test issue: #181;
 - mutable source/grant/quota/cursor/debt state must be live-preflighted before actuation.
 
-Sticky CC routine-write witness debt remains open on inherited evidence:
+Sticky CC routine-write witness debt remains open on inherited + fresh CC evidence:
 `debt_id=bdd168c67c404ad8bda4756cdeb8f4d6`.
-Do not close without the instrument's authorised closure record.
+CC's routine circuit remains disabled. Do not close without the instrument's authorised closure record. Do not assume it blocks Framework unless installed profile-local predicate establishes that.
 
 ## Continuity build
 
@@ -171,9 +165,8 @@ Preservation baseline remembered as v0.6.3; later v0.7 working material existed.
 
 ## Next executable boundary
 
-1. Run the read-only `DISCOVER_R29_LOCAL_RELAY_PATH_V0_1.ps1` on the actual Windows host and capture its complete output.
-2. Derive the relay path formula from that installed-source witness; repair the wrapper once.
-3. Rerun local dry-run. If it succeeds, only then obtain a fresh exact-payload second-aperture review.
-4. Place one exact reviewed carrier on #181 and invoke the live bridge exactly once.
-5. Observe downstream response, public witness and quota accounting. On ambiguity, HOLD; never retry automatically.
-6. Do not modify TRACE #39–#42 without genuine cold/hostile contact.
+1. Read only the fresh Square thread bodies that are materially useful; do not turn HEAD into whole-board ingestion.
+2. Receive CC's R29 source challenge + fresh payload-bound review. If HOLD/break, follow it. If usable, perform exact live preflight and one existing-path POST exercise; no adapter build.
+3. Observe public witness + quota accounting before claiming success.
+4. Keep PR #182 closed unmerged.
+5. Do not modify TRACE #39–#42 without genuine cold/hostile contact.
