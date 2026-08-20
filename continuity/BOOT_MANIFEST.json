@@ -1,9 +1,14 @@
 {
   "schema": "framework-bootstrap-manifest-v1",
   "status": "working-continuity-infrastructure",
+  "front_door": {
+    "path": "RELOAD.md",
+    "max_bytes": 3072,
+    "role": "fresh-runtime entry capsule"
+  },
   "entrypoint": {
     "path": "continuity/BOOT.md",
-    "max_bytes": 4096
+    "max_bytes": 5120
   },
   "eager_sequence": [
     {
@@ -34,8 +39,26 @@
       "role": "optional longer cold-entity orientation"
     }
   ],
-  "max_eager_bytes_including_entrypoint": 16384,
+  "max_eager_bytes_including_front_door": 20480,
+  "exact_contract_lines": {
+    "RELOAD.md": "RELOAD_ENTRY_CONTRACT = continuity/BOOT.md -> continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION",
+    "continuity/BOOT.md": "BOOT_ORDER_CONTRACT = continuity/KERNEL.md -> continuity/FRAMEWORK_HEAD.md -> [continuity/OMISSION_MAP.md if material] -> LIVE_REACQUISITION"
+  },
+  "head_required_sections": [
+    "## Purpose / authority",
+    "## Current consequential state",
+    "## Open barriers / obligations",
+    "## Stale / reverify",
+    "## Evidence pointers",
+    "## Next executable boundary"
+  ],
   "required_markers": {
+    "RELOAD.md": [
+      "FRAMEWORK RELOAD CAPSULE",
+      "Truth over continuity-coherence.",
+      "CARRIER != APERTURE",
+      "COHERENT_RECONSTRUCTION != TRUTH"
+    ],
     "continuity/BOOT.md": [
       "KERNEL",
       "FRAMEWORK_HEAD.md",
