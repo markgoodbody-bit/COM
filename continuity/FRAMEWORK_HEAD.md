@@ -31,6 +31,7 @@ Working surface:
 repo: markgoodbody-bit/TRACE
 PR: #38
 branch: framework/trace-v0-3-0-working
+observed head after orientation repair: 54e22b52a9fc3e4fd044fcad1b541512ca1f6a49
 spine: PROJECT/TRACE_v0_3_0_SPINE_CANDIDATE_v0_11.md
 semantic commit: 41fafe81a681cdc6514efc13524bae6ea6d6af8d
 full candidate: PROJECT/TRACE_FORMAL_SEED_v0_3_0_FULL_WORKING_CANDIDATE_v0_1.md
@@ -38,7 +39,7 @@ project gate: PROJECT/TRACE_v0_3_0_EVALUATION_FREEZE_v0_1.md
 status: WORKING / ATTACK OBJECT / NOT RELEASE / NOT CANON / NOT VALIDATED
 ```
 
-F03-F10 are preserved coherence findings. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned. Exact mutable PR head must be re-read before action; orientation-only commits after the x100 have moved it beyond the earlier `a8097b86...` cleanup head without changing the semantic v0.11/full-candidate identities above.
+F03-F10 are preserved coherence findings. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned. The post-x100 commits are orientation/evaluation-gate changes; the v0.11 semantic commit and full-candidate identity above remain the objects under test.
 
 ### Mechanical Ethics
 
@@ -46,7 +47,7 @@ Main preservation baseline remains **v0.6.3**. PR #34 is a narrow working v0.7 f
 
 ### Campfire Relay / Square tooling
 
-Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre is PR #190. A bounded WIP classification map now exists on that branch at `docs/CURRENT_WIP_MAP.md`.
+Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre is PR #190. A bounded WIP classification map exists on that branch at `docs/CURRENT_WIP_MAP.md`; last observed map-creation head `a66450f5fb43b4d844ce8a7a7eb83498b8906725`.
 
 Current classification:
 
@@ -59,11 +60,11 @@ PR #178 Exchange memory           HOLD / SEPARATE FUTURE LANE
 PR #174 Exchange state            HOLD / SEPARATE FUTURE LANE
 ```
 
-Reverify exact heads before action. Several PR bodies have stale self-declared `current exact head` values; embedded SHA text is evidence, not self-verifying currentness.
+Reverify exact heads before action. Embedded SHA text is evidence, not self-verifying currentness.
 
 ### COM
 
-- TRACE theory / hostile-review ledger: issue #46. Treat its comment history as external ledger, not bounded HEAD; its top-level orientation is stale until repaired.
+- TRACE theory / hostile-review ledger: issue #46. Treat its comment history as external ledger, not bounded HEAD; top-level orientation still needs conversion to a live pointer.
 - Campfire Square field ledger: issue #42.
 - Project-plan x100 + drift audit: issue #56.
 
@@ -107,11 +108,10 @@ User-reported current boundary: CC is out of tokens until 21:00 Europe/London on
 
 ## Next executable boundary
 
-1. Finish orientation repair only; do not open F11.
-2. Make PR #38 and COM #46 front doors point to the evaluation freeze / bounded HEAD rather than stale internal state.
-3. Keep Campfire WIP work on the CURRENT lane unless a named dependency justifies reopening HOLD/SUPERSEDED ancestry.
-4. Freeze the outward-evaluation protocol and kill/demote criteria **before** choosing the test cases.
-5. Then run the outward comparison. If TRACE does not earn its complexity, shrink or demote it rather than automatically repairing forward.
+1. Convert PR #38 and COM #46 front doors to the evaluation-freeze / bounded-HEAD posture; do not open F11.
+2. Keep Campfire WIP work on the CURRENT lane unless a named dependency justifies reopening HOLD/SUPERSEDED ancestry.
+3. Freeze the outward-evaluation protocol and kill/demote criteria **before** choosing the test cases.
+4. Then run the outward comparison. If TRACE does not earn its complexity, shrink or demote it rather than automatically repairing forward.
 
 ## Omission discipline
 
