@@ -31,26 +31,39 @@ Working surface:
 repo: markgoodbody-bit/TRACE
 PR: #38
 branch: framework/trace-v0-3-0-working
-head observed 2026-08-25: a8097b86f505cda7eb4e028694c181f7827ec09f
 spine: PROJECT/TRACE_v0_3_0_SPINE_CANDIDATE_v0_11.md
 semantic commit: 41fafe81a681cdc6514efc13524bae6ea6d6af8d
 full candidate: PROJECT/TRACE_FORMAL_SEED_v0_3_0_FULL_WORKING_CANDIDATE_v0_1.md
+project gate: PROJECT/TRACE_v0_3_0_EVALUATION_FREEZE_v0_1.md
 status: WORKING / ATTACK OBJECT / NOT RELEASE / NOT CANON / NOT VALIDATED
 ```
 
-F03-F10 are preserved coherence findings. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned.
+F03-F10 are preserved coherence findings. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned. Exact mutable PR head must be re-read before action; orientation-only commits after the x100 have moved it beyond the earlier `a8097b86...` cleanup head without changing the semantic v0.11/full-candidate identities above.
 
 ### Mechanical Ethics
 
-Main preservation baseline remains **v0.6.3**. PR #34 is a narrow working v0.7 field-delta audit/coherence surface; observed head `3e4e4a3239080dae972c34dce1e1de2b6de50d41`. It is not a release or merge request. Human read/release judgement remains required.
+Main preservation baseline remains **v0.6.3**. PR #34 is a narrow working v0.7 field-delta audit/coherence surface; last observed head `3e4e4a3239080dae972c34dce1e1de2b6de50d41`. It is not a release or merge request. Human read/release judgement remains required.
 
 ### Campfire Relay / Square tooling
 
-Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre is PR #190; observed PR head `b7991e67c0f34c87425a2e854ef4536c9cfc9160`. Older overlapping Square / LiveWorld / Exchange branches require explicit CURRENT / HOLD / SUPERSEDED classification before being used as starting points. Reverify exact heads before action; several PR bodies have stale self-declared `current exact head` values.
+Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre is PR #190. A bounded WIP classification map now exists on that branch at `docs/CURRENT_WIP_MAP.md`.
+
+Current classification:
+
+```text
+PR #190 Simple v1                 CURRENT WIP CENTRE
+PR #183 R29/R30 legacy policy     HOLD / LEGACY EVIDENCE
+PR #179 ACTIVITY GUI              HOLD / PREDECESSOR ORIENTATION
+PR #173 Live World core           SUPERSEDED FOR CURRENT SQUARE IMPLEMENTATION
+PR #178 Exchange memory           HOLD / SEPARATE FUTURE LANE
+PR #174 Exchange state            HOLD / SEPARATE FUTURE LANE
+```
+
+Reverify exact heads before action. Several PR bodies have stale self-declared `current exact head` values; embedded SHA text is evidence, not self-verifying currentness.
 
 ### COM
 
-- TRACE theory / hostile-review ledger: issue #46. Treat its comment history as external ledger, not bounded HEAD; its top-level orientation is stale.
+- TRACE theory / hostile-review ledger: issue #46. Treat its comment history as external ledger, not bounded HEAD; its top-level orientation is stale until repaired.
 - Campfire Square field ledger: issue #42.
 - Project-plan x100 + drift audit: issue #56.
 
@@ -94,9 +107,9 @@ User-reported current boundary: CC is out of tokens until 21:00 Europe/London on
 
 ## Next executable boundary
 
-1. Repair stale orientation surfaces only; do not open F11.
-2. Update TRACE project pointers to v0.11/full-candidate/current freeze state.
-3. Establish a bounded Campfire WIP CURRENT / HOLD / SUPERSEDED map before more architecture.
+1. Finish orientation repair only; do not open F11.
+2. Make PR #38 and COM #46 front doors point to the evaluation freeze / bounded HEAD rather than stale internal state.
+3. Keep Campfire WIP work on the CURRENT lane unless a named dependency justifies reopening HOLD/SUPERSEDED ancestry.
 4. Freeze the outward-evaluation protocol and kill/demote criteria **before** choosing the test cases.
 5. Then run the outward comparison. If TRACE does not earn its complexity, shrink or demote it rather than automatically repairing forward.
 
