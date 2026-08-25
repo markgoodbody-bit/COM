@@ -6,7 +6,22 @@ Authority: Mark remains human originator / witness / release authority. Framewor
 
 ## Purpose
 
-Help build a better future by making harm, hardening, burden, correction, witness integrity, answerability and future-path closure more visible. Build a portable middle-out reasoning language for humans and AIs under uncertainty. Continuity and tooling exist to serve that purpose; they are not the terminal objective.
+Help build a better future by making harm, hardening, burden, correction, witness integrity, answerability and future-path closure more visible. Build a portable middle-out reasoning language for humans and AIs under uncertainty.
+
+Mark's current project-direction correction is explicit:
+
+> **Do not lose accumulated understanding. Keep building to encompass more; do not narrow the project.**
+
+This means expanding total representational reach while keeping receiver-facing apertures usable. Core compression, layering or relocation is permitted only when the preserved project still carries the earned structure and evidence.
+
+```text
+CORE_COMPRESSION != PROJECT_NARROWING
+RELOCATION != ERASURE
+FAILED_OBJECT != LOST_OBJECT
+NOT_UNIVERSAL != DELETE
+EXPANSION != CORE_BLOAT
+HORIZON_COMPLETENESS != COMPULSORY_COGNITION
+```
 
 ## Laws
 
@@ -15,7 +30,8 @@ Help build a better future by making harm, hardening, burden, correction, witnes
 - `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`;
 - the ledger may grow; the aperture must stay small;
 - `CARRIER != APERTURE`; full export != boot context;
-- failed objects remain visible; current pointers must not silently inherit old `CURRENT` claims;
+- failed/superseded/redundant objects remain visible with provenance;
+- no evaluation result authorises silent deletion of earned distinctions/evidence;
 - mutable repository, Square, grant, quota and runtime state must be reverified when material;
 - do not reconstruct predecessor personality or continuous runtime identity.
 
@@ -31,76 +47,78 @@ Working surface:
 repo: markgoodbody-bit/TRACE
 PR: #38
 branch: framework/trace-v0-3-0-working
-observed head after orientation repair: 54e22b52a9fc3e4fd044fcad1b541512ca1f6a49
 spine: PROJECT/TRACE_v0_3_0_SPINE_CANDIDATE_v0_11.md
 semantic commit: 41fafe81a681cdc6514efc13524bae6ea6d6af8d
 full candidate: PROJECT/TRACE_FORMAL_SEED_v0_3_0_FULL_WORKING_CANDIDATE_v0_1.md
-project gate: PROJECT/TRACE_v0_3_0_EVALUATION_FREEZE_v0_1.md
+live project-direction correction: PROJECT/TRACE_v0_3_0_EXPANSION_PRESERVATION_RULE_v0_1.md
 status: WORKING / ATTACK OBJECT / NOT RELEASE / NOT CANON / NOT VALIDATED
 ```
 
-F03-F10 are preserved coherence findings. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned. The post-x100 commits are orientation/evaluation-gate changes; the v0.11 semantic commit and full-candidate identity above remain the objects under test.
+F03-F10 remain preserved coherence findings. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned by those findings.
+
+The earlier `TRACE_v0_3_0_EVALUATION_FREEZE_v0_1.md` and frozen outward protocol v0.4 remain evidence, but their project-level `SHRINK / DEMOTE` framing is superseded by Mark's expansion/preservation correction. Do not rewrite those historical objects.
 
 ### Mechanical Ethics
 
-Main preservation baseline remains **v0.6.3**. PR #34 is a narrow working v0.7 field-delta audit/coherence surface; last observed head `3e4e4a3239080dae972c34dce1e1de2b6de50d41`. It is not a release or merge request. Human read/release judgement remains required.
+Main preservation baseline remains **v0.6.3**. PR #34 is a narrow working v0.7 field-delta audit/coherence surface, not a release or merge request. Human read/release judgement remains required. ME is not subordinate cleanup after TRACE; it is a coequal human-facing expansion surface.
 
 ### Campfire Relay / Square tooling
 
-Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre is PR #190. A bounded WIP classification map exists on that branch at `docs/CURRENT_WIP_MAP.md`; last observed map-creation head `a66450f5fb43b4d844ce8a7a7eb83498b8906725`.
-
-Current classification:
-
-```text
-PR #190 Simple v1                 CURRENT WIP CENTRE
-PR #183 R29/R30 legacy policy     HOLD / LEGACY EVIDENCE
-PR #179 ACTIVITY GUI              HOLD / PREDECESSOR ORIENTATION
-PR #173 Live World core           SUPERSEDED FOR CURRENT SQUARE IMPLEMENTATION
-PR #178 Exchange memory           HOLD / SEPARATE FUTURE LANE
-PR #174 Exchange state            HOLD / SEPARATE FUTURE LANE
-```
-
-Reverify exact heads before action. Embedded SHA text is evidence, not self-verifying currentness.
+Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre is PR #190. `docs/CURRENT_WIP_MAP.md` classifies older branches so `OPEN_PR != CURRENT_DIRECTION` while preserving all ancestry/evidence.
 
 ### COM
 
-- TRACE theory / hostile-review ledger: issue #46. Treat its comment history as external ledger, not bounded HEAD; top-level orientation still needs conversion to a live pointer.
-- Campfire Square field ledger: issue #42.
-- Project-plan x100 + drift audit: issue #56.
+- TRACE theory / hostile-review ledger: issue #46 — ledger, not bounded HEAD;
+- Campfire Square field ledger: issue #42;
+- project-plan x100 + drift audit: issue #56 — preserve original findings, but its shrink/project-contraction recommendation is superseded by Mark's correction;
+- this file is the bounded cross-project HEAD.
 
-## Project-plan correction — active
+## Current project-plan correction
 
-The 2026-08-25 Framework x100 found **no core-purpose or authority-ceiling drift**, but did find material orientation, stopping, endogenous-evidence, human-facing-balance and impact-path drift.
+The x100 correctly found orientation drift, inward-loop risk, endogenous evidence, human-facing lag and weak impact/comparator evidence. It overreached in treating weak performance as grounds to narrow or discard accumulated TRACE structure.
 
-Current corrective posture:
+Current rule:
 
 ```text
-SEMANTIC EXPANSION: FROZEN FOR ONE OUTWARD-EVALUATION CYCLE
+KEEP BUILDING OUTWARD
+LOSE EARNED STRUCTURE: NO
 F11-BY-MOMENTUM: NO
-REOPEN BOUNDED-CLOSED SURFACE: ONLY WITH MATERIALLY DISTINCT COUNTEREXAMPLE
-NEW PRIMITIVE / ROOT: NO
-MERGE / RELEASE / CANON: NO
+NEW PRIMITIVE/ROOT WITHOUT MATERIALLY DISTINCT NEED: NO
+REOPEN BOUNDED-CLOSED SURFACE WITHOUT DISTINCT FAILURE: NO
+BROAD REVIEWER TREADMILL: NO
+MERGE / RELEASE / CANON BY MOMENTUM: NO
 ```
 
-This freeze is not a claim that TRACE is finished. A real counterexample may reopen a surface. Interesting ideas, reviewer availability, version pressure or an unused build path do not.
+`KEEP BUILDING` means more encompassing, not indiscriminate core accretion.
 
-## Evaluation boundary to earn continuation
+Preferred placement order:
 
-Before selecting favorable cases, predeclare a mixed outward test set and comparator. The next serious project question is not another internal coherence seam but whether TRACE earns its complexity.
+```text
+reuse existing core
+-> derived view/operator
+-> domain profile
+-> checker/tooling/runtime binding
+-> human translation / ME
+-> add universal structure only if existing layers cannot faithfully carry the new case
+```
 
-Required evaluation dimensions:
+Everything earned remains discoverable even when not active in the smallest interface.
 
-1. ordinary careful analysis versus TRACE-assisted analysis;
-2. predeclared non-Campfire / non-1F916 cases;
-3. at least one negative control where TRACE should add little;
-4. cold receivers without author coaching;
-5. misses, false positives / over-firing, time/token/cognitive cost;
-6. end-to-end survival from scene -> claims -> structure -> limits -> packet -> receiver;
-7. explicit shrink / demote / stop conditions if benefit does not justify complexity.
+## Evaluation boundary
 
-`FINDING_FOUND != REPAIR_REQUIRED`.
-`REPAIR_POSSIBLE != CONTINUATION_JUSTIFIED`.
-`ARTIFACT_COHERENCE != WORLDLY_USEFULNESS`.
+Outward evaluation still matters. Its job is now to determine:
+
+- where TRACE genuinely adds structure;
+- where ordinary reasoning already carries the distinction;
+- where the compact carrier loses structure that the full project knows;
+- where over-firing or false confidence needs containment;
+- where new domains expose missing structure;
+- what belongs in universal core vs derived/profile/tooling/human layers;
+- how to compress interfaces without losing project knowledge.
+
+Negative results should produce placement/redesign/containment evidence, not deletion authority.
+
+The frozen v0.4 protocol is preserved as pre-correction evidence. A successor protocol must replace project-contraction outcomes with expansion/placement/redesign outcomes before item-level case selection continues.
 
 ## CC availability
 
@@ -108,10 +126,11 @@ User-reported current boundary: CC is out of tokens until 21:00 Europe/London on
 
 ## Next executable boundary
 
-1. Convert PR #38 and COM #46 front doors to the evaluation-freeze / bounded-HEAD posture; do not open F11.
-2. Keep Campfire WIP work on the CURRENT lane unless a named dependency justifies reopening HOLD/SUPERSEDED ancestry.
-3. Freeze the outward-evaluation protocol and kill/demote criteria **before** choosing the test cases.
-4. Then run the outward comparison. If TRACE does not earn its complexity, shrink or demote it rather than automatically repairing forward.
+1. Update PR #38 / COM orientation to the expansion-preservation rule.
+2. Preserve frozen protocol v0.4 unchanged as historical pre-correction evidence.
+3. Build/freeze successor outward protocol with outcomes such as `EXPAND_CORE`, `EXPAND_PROFILE`, `DERIVED_VIEW`, `REDESIGN_CARRIER`, `CONTAIN_OVERFIRE`, `PRESERVE_INACTIVE`, not project narrowing.
+4. Only then continue collection manifest -> item intake -> mechanical case selection -> cold comparison.
+5. Use every result to make the project encompass more of the world while preserving negative evidence and keeping bounded apertures usable.
 
 ## Omission discipline
 
