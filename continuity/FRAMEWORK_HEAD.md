@@ -166,9 +166,11 @@ No Square write/vote/post was actuated during this COMSYNC.
 - COM issue #42 = Square field ledger, not current capability proof.
 - COM issue #56 = x100/drift evidence.
 - `continuity/OMISSION_MAP.md` remains the negative-space retrieval index.
-- `COM_STATE.md` was derived 2026-08-19 and is stale for mutable current state even though its historical header says `ACTIVE — CURRENT PROJECTION`. Treat that label as false-current historical text until explicitly repaired.
+- `COM_STATE.md` is now v0.4.1 and explicitly declares itself a **HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE**. The former 2026-08-19 projection remains preserved at Git blob `a541dfe1326531f4477ee043738389f9cd77f9e4`.
 
-Recurring defect remains:
+The false-current label has therefore been repaired without creating a second competing detailed HEAD.
+
+Recurring defect remains broader than that one label:
 
 ```text
 LIVE OBJECT CHANGES
@@ -177,7 +179,7 @@ LIVE OBJECT CHANGES
 -> REDISCOVERY / MANUAL REPAIR
 ```
 
-Do not redesign continuity now. The immediate outward build edge remains more valuable.
+Do not redesign continuity now. Finish the outward build edge first; later add only narrow dependency/freshness signalling where it materially prevents recurrence.
 
 ## CC boundary
 
