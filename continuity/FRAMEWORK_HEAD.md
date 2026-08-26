@@ -183,7 +183,7 @@ Current concrete correction:
 
 This route relation is itself mutable. Reverify before consequential Square work.
 
-`COM_STATE.md` is v0.4.1 and explicitly a **HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE**. Former 2026-08-19 projection remains preserved at Git blob `a541dfe1326531f4477ee043738389f9cd77f9e4`.
+`COM_STATE.md` is v0.4.2 and explicitly a **HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE**. Former 2026-08-19 projection remains preserved at Git blob `a541dfe1326531f4477ee043738389f9cd77f9e4`.
 
 Do not redesign continuity broadly now. The route specimen strengthens the later narrow repair requirement: current-state surfaces that control execution need dependency/freshness signalling, not just current-looking values.
 
