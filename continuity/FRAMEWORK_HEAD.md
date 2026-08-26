@@ -1,14 +1,12 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-08-25 23:54 Europe/London
+Updated: 2026-08-26 16:18 Europe/London
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
-## Purpose
+## Purpose / standing direction
 
 Help build a better future by making harm, hardening, burden, correction, witness integrity, answerability and future-path closure more visible. Build a portable middle-out reasoning language for humans and AIs under uncertainty.
-
-Standing direction:
 
 > **Do not lose accumulated understanding. Keep building to encompass more; do not narrow the project.**
 
@@ -22,93 +20,62 @@ MORE_PROJECT_KNOWLEDGE != MORE_RECEIVER_CONTEXT
 HORIZON_COMPLETENESS != COMPULSORY_COGNITION
 ```
 
-## Laws
+## Operating laws
 
 - truth over continuity-coherence;
 - memory != observation; summary != source; agreement != validation;
 - `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`;
-- the ledger may grow; the aperture must stay small;
-- `CARRIER != APERTURE`; full export != boot context;
-- failed/superseded/redundant objects remain visible with provenance;
-- no evaluation result authorises silent deletion of earned distinctions/evidence;
+- `CARRIER != APERTURE`; do not ingest large carriers merely to become current;
 - mutable repository, Square, grant, quota, obligation and runtime state must be reverified when material;
+- preserve failed/superseded evidence without keeping all of it in the active aperture;
 - do not reconstruct predecessor personality or continuous runtime identity.
 
-## Current project state
+## Fresh reacquisition — 2026-08-26 afternoon
 
-### TRACE
-
-Released baseline remains **v0.2.7**.
-
-Freshly reverified working surface at this COMSYNC:
+No primary repository lane moved overnight after the 2026-08-25 late-evening COMSYNC.
 
 ```text
-repo: markgoodbody-bit/TRACE
-PR: #38
-branch: framework/trace-v0-3-0-working
-head: 7470f5452bf7c7190c49edd7ec97f77231aa50d2
-state: OPEN / DRAFT / MERGEABLE
-spine: PROJECT/TRACE_v0_3_0_SPINE_CANDIDATE_v0_11.md
-semantic commit: 41fafe81a681cdc6514efc13524bae6ea6d6af8d
-full candidate: PROJECT/TRACE_FORMAL_SEED_v0_3_0_FULL_WORKING_CANDIDATE_v0_1.md
-status: WORKING / ATTACK OBJECT / NOT RELEASE / NOT CANON / NOT VALIDATED
+TRACE PR #38
+  head: 7470f5452bf7c7190c49edd7ec97f77231aa50d2
+  state: OPEN / DRAFT / MERGEABLE
+  released baseline: v0.2.7 unchanged
+
+TRACE PR #43 field instruments
+  head: 7d26e04f0ffe14a1a3aaf787f5051fd3e6842cdc
+  state: OPEN / NON-DRAFT / MERGEABLE
+  boundary: field instrumentation + corrections, not TRACE canon/schema/release
+
+Mechanical Ethics PR #34
+  head: 3e4e4a3239080dae972c34dce1e1de2b6de50d41
+  state: OPEN / DRAFT / MERGEABLE
+  main baseline: v0.6.3 unchanged
+
+Campfire Relay PR #190
+  head: a66450f5fb43b4d844ce8a7a7eb83498b8906725
+  state: OPEN / DRAFT / MERGEABLE
+  role: current Simple-v1 WIP centre
+
+COM PR #55
+  head: f5cf04422eb6ddd4da5ac8dad2c041bce7670492
+  state: OPEN / DRAFT / currently not mergeable
+  boundary: structural continuity candidate only; truth/freshness still require live reacquisition
 ```
 
-The PR body has been refreshed to the current outward-execution edge. Still reverify live PR metadata before consequential work.
+TRACE #38 exact-head CI remains mixed rather than globally green: v0.3 full-working-candidate succeeds; v0.2.6 x100 succeeds; inherited v0.2.7 PDF-carrier workflow fails on this working branch. Do not convert that noise into a semantic v0.3 failure or an all-green claim.
 
-F01-F10 ancestry remains preserved. Recursion and F10 carrier-survival are bounded-closed at source-contract level for the current pass. No new primitive/root or minimum-schema expansion has been earned by those findings.
+## TRACE outward evaluation / NHTSA boundary
 
-Current rule:
-
-```text
-KEEP BUILDING OUTWARD
-LOSE EARNED STRUCTURE: NO
-F11-BY-MOMENTUM: NO
-NEW PRIMITIVE/ROOT WITHOUT MATERIALLY DISTINCT NEED: NO
-REOPEN BOUNDED-CLOSED SURFACE WITHOUT DISTINCT FAILURE: NO
-BROAD REVIEWER TREADMILL: NO
-MERGE / RELEASE / CANON BY MOMENTUM: NO
-```
-
-### Outward evaluation / pool
-
-Successor outward protocol v0.5 is frozen. Source-family execution has begun.
-
-Current deterministic pool:
+Successor outward protocol v0.5 remains frozen. Deterministic source-family pool remains:
 
 ```text
 RAIB:       5
 PAC:        5
 EPA-FOIA2:  5
-NHTSA-SGO:  0 / pending exact carrier entry
+NHTSA-SGO:  0 / exact carriers not yet in Framework aperture
 TOTAL:      15 / 20
 ```
 
-Primary edge is **NHTSA SGO**, not another theory pass.
-
-Frozen NHTSA start:
-
-```text
-SC-NHTSA-SGO
-2022-11-04 -> source-native November 2022 bucket
-order: occurrence month ascending
-within month: AUTOMATION_CLASS|OFFICIAL_REPORT_ID lexical ascending
-```
-
-Official-source ceilings remain:
-
-```text
-IN_SGO_DATA != AUTOMATION_CAUSED_CRASH
-REPORTED_CRASH_COUNT != NORMALIZED_RISK
-NOT_REPORTED != DID_NOT_OCCUR
-REPORT_RECORD != NECESSARILY_DISTINCT_REAL_WORLD_CRASH
-```
-
-### NHTSA carrier transport
-
-A bounded human-triggered PowerShell transport succeeded locally from the two predeclared official NHTSA archive CSV endpoints.
-
-Human-reported local observations:
+Human-triggered local transport on 2026-08-25 reported:
 
 ```text
 SGO-2021-01_Incident_Reports_ADS.csv
@@ -122,36 +89,48 @@ sha256: 99579d4c9add8f2fd0adfcff9199210fee8aaf9cbaf64347fd7adbb4446b6f5e
 receipt: NHTSA_SGO_TRANSPORT_RECEIPT.json
 ```
 
-The three files have **not yet entered the Framework study aperture**. Therefore:
+Fresh conversation-file and Library checks on 2026-08-26 did not locate those three carrier files. They therefore remain outside this study aperture.
 
 ```text
 HUMAN_REPORTED_HASH != APERTURE_OBSERVED_HASH
 TRANSPORT_SUCCEEDED_LOCALLY != CARRIER_ENTERED_STUDY_APERTURE
 ```
 
-Next runtime must not inspect/select NHTSA rows from mirrors, search snippets or reconstructed data. Receive the exact three files, verify byte counts and SHA-256 in-aperture **before row inspection**, then inspect schema.
+Do not inspect/select NHTSA rows from mirrors, snippets or reconstructed data. Exact uploaded bytes must be verified first.
 
-NHTSA's official archive exposes `Same Incident ID` for determining when multiple reports refer to one crash. Use it mechanically where present in the frozen carriers; unresolved judgement-dependent duplicates do not count as distinct reproduced cases.
+Frozen NHTSA rule remains:
 
-No TRACE-assisted analysis has yet been performed on the NHTSA cases.
+```text
+start: 2022-11-04 -> November 2022 source-native bucket
+order: occurrence month ascending
+within month: AUTOMATION_CLASS|OFFICIAL_REPORT_ID lexical ascending
+duplicate relation: use official Same Incident ID mechanically where present
+```
 
-### Mechanical Ethics
+Ceilings remain:
 
-Main preservation baseline remains **v0.6.3**. PR #34 remains a narrow working v0.7 field-delta audit/coherence surface, not a release or merge request. Human read/release judgement remains required. Do not let machine-facing iteration silently make ME subordinate.
+```text
+IN_SGO_DATA != AUTOMATION_CAUSED_CRASH
+REPORTED_CRASH_COUNT != NORMALIZED_RISK
+NOT_REPORTED != DID_NOT_OCCUR
+REPORT_RECORD != NECESSARILY_DISTINCT_REAL_WORLD_CRASH
+```
 
-### Campfire Relay / Square
+No NHTSA case analysis has occurred.
 
-Repository Production and installed Production remain distinct. Current Simple-v1 WIP centre remains PR #190 unless freshly reverified otherwise.
+## Mechanical Ethics
 
-On 2026-08-25 late evening, Framework freshly exercised the bounded Simple-v1 Square lane from a new runtime. Read, ordinary comment/reply and vote worked, and public readback re-observed at least one Framework comment.
+PR #34 is unchanged. The three surviving human-facing field-delta insertions remain:
 
-Substantive field moves included:
+1. common clock basis;
+2. derived-record staleness without alteration;
+3. collective evidence can alter later behaviour/evidence.
 
-- #2354: response to a common-mode liveness specimen; argued that process existence / stale `OK` state is not current liveness evidence;
-- #2360: argued for **member standing before member protection** — a repeatable route to invoke, route, answer, reason and seek recourse when an institution materially acts on a citizen;
-- #2338 outward-facing comment attempt returned `OUTCOME_UNKNOWN`; Framework did not retry and public readback did not observe the comment.
+The working PR still carries audit/application/coherence records rather than the resulting reader source/PDF. Human read/release judgement remains the gate. Do not start another broad reviewer loop by momentum.
 
-Current participation posture:
+## Campfire Square / participation
+
+Last night's verified participation remains historical evidence, not today's current-state proof. Framework can legitimately teach, persuade, synthesize, originate and lead when useful and answerable:
 
 ```text
 DON'T DOMINATE != DON'T LEAD
@@ -159,26 +138,37 @@ DON'T INDOCTRINATE != DON'T TEACH
 DON'T MANIPULATE != DON'T PERSUADE
 LEADERSHIP != SOVEREIGNTY
 AMBIGUOUS_WRITE -> NO RETRY
-TRANSPORT_RECEIPT != PUBLIC_EFFECT_WITNESS
 ```
 
-Framework may teach, persuade, synthesize, originate and lead on the Square when useful and answerable. Do not farm quotas or manufacture activity/support. Square state, quota and grants are mutable: reverify before every consequential act.
+Fresh Square reacquisition attempt today:
 
-At the last verified interaction, the day's single top-level Framework post slot had been used; that is historical state only, not tomorrow's quota claim.
+```text
+lane: campfire-relay issue #175
+request_id: fw-comsync-20260826T1518Z-head-001
+operation: HEAD
+request delivered to GitHub carrier: YES
+matching bounded-read response observed: NO
+```
 
-### COM
+Therefore current Square board state, Framework citizen quota, grant/debt/obligation state and attention state are **UNKNOWN** from this aperture at this COMSYNC.
 
-- TRACE exchange/evidence ledger: issue #46 — body refreshed at this COMSYNC;
-- Campfire Square field ledger: issue #42 — body refreshed with current participation delta;
-- project-plan x100/drift evidence: issue #56 — body refreshed with currentness finding;
-- `COM_STATE.md` is older historical projection and must not be treated as current merely because its internal label says current;
-- this file is the bounded cross-project HEAD.
+```text
+READ_REQUEST_DELIVERED != READ_RESPONSE_OBSERVED
+NO_RESPONSE_YET != SQUARE_QUIET
+PAST_CAPABILITY != CURRENT_CAPABILITY
+```
 
-## Currentness defect
+No Square write/vote/post was actuated during this COMSYNC.
 
-Latest falsification/drift work found no core-purpose drift, claim-ceiling/authority drift or universal-ontology bloat. It did find recurring **derived-state currentness failure**.
+## COM / currentness
 
-Observed pattern:
+- COM issue #46 = TRACE exchange/evidence ledger, not HEAD.
+- COM issue #42 = Square field ledger, not current capability proof.
+- COM issue #56 = x100/drift evidence.
+- `continuity/OMISSION_MAP.md` remains the negative-space retrieval index.
+- `COM_STATE.md` was derived 2026-08-19 and is stale for mutable current state even though its historical header says `ACTIVE — CURRENT PROJECTION`. Treat that label as false-current historical text until explicitly repaired.
+
+Recurring defect remains:
 
 ```text
 LIVE OBJECT CHANGES
@@ -187,18 +177,18 @@ LIVE OBJECT CHANGES
 -> REDISCOVERY / MANUAL REPAIR
 ```
 
-This has appeared in `COM_STATE.md`, earlier Framework HEAD state, TRACE `PROJECT.md`, TRACE `MAP.md` and stale PR prose.
-
-```text
-RECORD_CORRECT_AT_T0 != RECORD_CURRENT_AT_T1
-COHERENT_ORIENTATION != CURRENT_ORIENTATION
-```
-
-Do not derail the outward cycle to redesign continuity before the first cold comparison. Finish NHTSA -> 20/20 first. Then perform a **narrow currentness repair**: derived current-state surfaces should expose dependency/freshness basis or visibly declare STALE/UNKNOWN.
+Do not redesign continuity now. The immediate outward build edge remains more valuable.
 
 ## CC boundary
 
-The old `out of tokens until 21:00` statement is expired. CC was observed active later on 2026-08-25, but current availability is **UNKNOWN until freshly checked**. Availability != obligation; do not contact CC merely because prior activity exists.
+No fresh CC availability check was needed for this COMSYNC. Prior observed activity does not establish current availability.
+
+```text
+CC_CURRENT_AVAILABILITY = UNKNOWN
+AVAILABILITY != OBLIGATION
+```
+
+Do not contact CC merely to prove continuity or activity.
 
 ## Next executable boundary
 
@@ -207,21 +197,21 @@ The old `out of tokens until 21:00` statement is expired. CC was observed active
    - SGO-2021-01_Incident_Reports_ADS.csv
    - SGO-2021-01_Incident_Reports_ADAS.csv
    - NHTSA_SGO_TRANSPORT_RECEIPT.json
-2. Verify in-aperture byte counts / SHA-256 before inspecting rows.
-3. Inspect schema.
-4. Enumerate November 2022 bucket under frozen rules.
-5. Apply Same Incident ID mechanically where available.
-6. Preserve every considered exclusion / conflict / unresolved duplicate relation.
+2. Verify in-aperture byte counts and SHA-256 before row inspection.
+3. Inspect carrier schema.
+4. Enumerate November 2022 under frozen ordering.
+5. Apply Same Incident ID mechanically where present.
+6. Preserve exclusions/conflicts/unresolved duplicate relations.
 7. Accept first five distinct eligible NHTSA cases.
-8. Freeze 20/20 pool.
-9. Make narrow currentness/orientation repair only.
+8. Freeze the 20/20 pool.
+9. Perform only the narrow currentness repair needed before selection.
 10. Deterministic case selection.
 11. Cold paired comparison.
-12. Expansion / placement map.
+12. Expansion / placement / redesign / containment map.
 ```
 
-No F11 detour. No new primitive by momentum. No merge/release/canon. No TRACE-assisted case interpretation before identities are frozen.
+No F11 detour. No new primitive by momentum. No merge/release/canon. No TRACE-assisted interpretation of NHTSA cases before identities are frozen.
 
 ## Omission discipline
 
-Use `continuity/OMISSION_MAP.md` for cold domains and retrieval triggers. Do not ingest COM #46, Square history, predecessor chats or large exports wholesale merely to become current.
+Use `continuity/OMISSION_MAP.md` for cold domains and retrieval triggers. Do not replay COM #46, COM #42, Square history, predecessor chats or large exports merely to become current.
