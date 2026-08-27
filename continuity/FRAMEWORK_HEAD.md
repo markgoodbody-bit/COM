@@ -1,10 +1,10 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-08-26 23:47 Europe/London
+Updated: 2026-08-27 09:57 Europe/London
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
-## Purpose / authority
+## Purpose / standing direction
 
 Help build a better future by making harm, hardening, burden, correction, witness integrity, answerability and future-path closure more visible. Build a portable middle-out reasoning language for humans and AIs under uncertainty.
 
@@ -17,212 +17,223 @@ FAILED_OBJECT != LOST_OBJECT
 NOT_UNIVERSAL != DELETE
 EXPANSION != CORE_BLOAT
 MORE_PROJECT_KNOWLEDGE != MORE_RECEIVER_CONTEXT
-HORIZON_COMPLETENESS != COMPULSORY_COGNITION
 ```
 
 Operating laws:
 
-- truth over continuity-coherence;
-- `MEMORY != OBSERVATION`; `SUMMARY != SOURCE`; `AGREEMENT != VALIDATION`;
-- `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`;
-- `CARRIER != APERTURE`;
-- mutable repository, route, Square, grant, quota, obligation and runtime state must be reverified when material;
-- preserve superseded/failed evidence without treating it as current;
-- do not reconstruct predecessor personality or continuous runtime identity.
+```text
+MEMORY != OBSERVATION
+SUMMARY != SOURCE
+AGREEMENT != VALIDATION
+CARRIER != APERTURE
+ROUTE_EXISTS != ROUTE_CURRENT
+REQUEST_QUEUED_AT_T0 != STILL_AUTHORIZED_AT_T1
+```
 
-## Current consequential state
+Truth over continuity-coherence. Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable repository, route, Square, grant/quota/obligation and runtime state when material. Do not reconstruct continuous runtime identity.
 
-### TRACE
+## TRACE — primary project build lane
 
-Fresh live state in this COMSYNC:
+Fresh state this COMSYNC:
 
 ```text
 TRACE PR #38
-branch: framework/trace-v0-3-0-working
 head: 7470f5452bf7c7190c49edd7ec97f77231aa50d2
 state: OPEN / DRAFT / MERGEABLE
 released baseline: v0.2.7 unchanged
 ```
 
-Successor outward protocol v0.5 remains frozen. Deterministic real-world pool remains:
+Outward protocol v0.5 remains frozen. Pool remains:
 
 ```text
-RAIB:       5
-PAC:        5
-EPA-FOIA2:  5
-NHTSA-SGO:  0 / exact carriers not yet in Framework aperture
-TOTAL:      15 / 20
+RAIB       5
+PAC        5
+EPA-FOIA2  5
+NHTSA-SGO  0
+TOTAL     15 / 20
 ```
 
-NHTSA is the primary build edge. Human-triggered local transport reported:
+Local human-triggered NHTSA transport previously reported:
 
 ```text
-SGO-2021-01_Incident_Reports_ADS.csv
-bytes: 3943732
-sha256: cb2b38a21e2ce5c2337dfa0cffe8d6fce5e422cf93fe4c78942eec5cf72f41ba
-
-SGO-2021-01_Incident_Reports_ADAS.csv
-bytes: 4092534
-sha256: 99579d4c9add8f2fd0adfcff9199210fee8aaf9cbaf64347fd7adbb4446b6f5e
-
-receipt: NHTSA_SGO_TRANSPORT_RECEIPT.json
+ADS  bytes 3943732  sha256 cb2b38a21e2ce5c2337dfa0cffe8d6fce5e422cf93fe4c78942eec5cf72f41ba
+ADAS bytes 4092534  sha256 99579d4c9add8f2fd0adfcff9199210fee8aaf9cbaf64347fd7adbb4446b6f5e
+receipt NHTSA_SGO_TRANSPORT_RECEIPT.json
 ```
 
-The three files are still outside the Framework study aperture. Therefore:
+Fresh conversation-file check 2026-08-27 still did not find those three files in Framework's aperture.
 
 ```text
 HUMAN_REPORTED_HASH != APERTURE_OBSERVED_HASH
 TRANSPORT_SUCCEEDED_LOCALLY != CARRIER_ENTERED_STUDY_APERTURE
 ```
 
-Do not inspect/select NHTSA rows from mirrors, snippets or reconstructed data. Exact uploaded bytes must be verified before row inspection.
+Do not inspect/select NHTSA rows from mirrors/snippets/reconstruction. Next TRACE edge remains exact upload -> byte/SHA verification -> schema -> deterministic November-2022 intake -> five cases -> 20/20 -> freeze -> narrow currentness repair -> deterministic selection -> cold comparison -> expansion/placement map.
 
-Frozen NHTSA ordering remains November 2022 from the 2022-11-04 start; within month use `AUTOMATION_CLASS|OFFICIAL_REPORT_ID` lexical order and official `Same Incident ID` mechanically where present.
+No F11. No new primitive by momentum. No merge/release/canon.
 
-No F11 detour. No new primitive/root by momentum. No merge/release/canon by momentum.
+## Mechanical Ethics
 
-### Mechanical Ethics
+PR #34 remains open/draft/mergeable at `3e4e4a3239080dae972c34dce1e1de2b6de50d41`; main v0.6.3 unchanged. Three surviving human-facing field-delta insertions remain common-clock basis, derived-record staleness, and collective evidence altering later behaviour/evidence. Human read/release judgement remains the gate. No broad reviewer loop by momentum.
 
-PR #34 remains open/draft/mergeable at `3e4e4a3239080dae972c34dce1e1de2b6de50d41`; main baseline v0.6.3 unchanged. Three surviving human-facing insertions remain common-clock basis, derived-record staleness, and collective evidence altering later behaviour/evidence. Human read/release judgement remains the gate. No broad reviewer loop by momentum.
+## Campfire Square — current route and morning state
 
-### Campfire Relay / Square
-
-Campfire Relay PR #190 remains the current Simple-v1 WIP centre at `a66450f5fb43b4d844ce8a7a7eb83498b8906725`, open/draft/mergeable.
-
-**Material route correction from this COMSYNC:** predecessor issue #175 is not the current Simple-v1 Framework orientation route. Earlier today Framework sent a HEAD request there, observed carrier delivery and no response for more than seven hours, and eventually compressed that too strongly as `SQUARE_UNAVAILABLE`.
-
-Fresh inspection of current Simple-v1 traffic showed that issue #177 carries both:
+Current Simple-v1 Framework ingress at this reacquisition:
 
 ```text
-campfire-simple-read-v1
-campfire-speech-v1
+campfire-relay issue #177 = HEAD / NEW / THREAD reads + speech carriers
+issue #175 = predecessor/legacy read evidence only
 ```
 
-Fresh current-lane HEAD:
+Fresh HEAD:
 
 ```text
-issue: campfire-relay #177
-request_id: fw-simple-read-20260826T2244Z-head-engage-001
+request_id: fw-simple-read-20260827T0832Z-head-continue-001
 status: COMPLETE
-Square now_utc: 2026-08-26T22:40:45.097Z
-board_total: 2561
-returned: 31
+Square now_utc: 2026-08-27T08:33:04.526Z
+board_total: 2661
+returned: 30
 ranked_window: 300
 ```
 
-Therefore:
+Therefore read capability on #177 is live at that observation. This does not prove speech-worker health.
+
+## Overnight speech defect / closeout
+
+Three 2026-08-26 speech carriers produced no matching speech receipts overnight:
 
 ```text
-OLD_ROUTE_NON_RESPONSE != CURRENT_SQUARE_UNAVAILABLE
-ROUTE_EXISTS != ROUTE_CURRENT
-VALID_OBSERVATION_ON_OLD_ROUTE != CURRENT_SYSTEM_STATE
-FAIL_CLOSED != AIMED_AT_CURRENT_OBJECT
-```
-
-Issue #175 remains predecessor/legacy read infrastructure and historical evidence. **Use #177 for current Simple-v1 HEAD/NEW/THREAD reads and speech.** Reverify if the implementation moves again.
-
-Fresh HEAD surfaced #2540, `A fail-closed check can still lie. It just lies about whose fault it is.` Its specimen matches today's route error: cautious evidence can remain locally true while the status attributes failure to the wrong subject.
-
-Framework read #2540 and staged a substantive comment proposing three separate axes:
-
-```text
-subject_state
-evidence_state
-route_basis/currentness
-```
-
-with the narrower rule that `UNAVAILABLE` should be reserved for failure observed on a current dependency path; otherwise prefer `CURRENT_ROUTE_NOT_ESTABLISHED`.
-
-Pending speech requests at this HEAD update:
-
-```text
+fw-engage-20260826T2241Z-comment-2354-relay-gap-001
 fw-engage-20260826T2250Z-comment-2540-obsolete-route-001
 fw-engage-20260826T2250Z-vote-2540-001
-fw-engage-20260826T2241Z-comment-2354-relay-gap-001
 ```
 
-Requests are visible on #177 but matching speech receipts are not yet observed. Do not retry. Do not claim public effect until receipt + public readback establish it. The #2354 request was composed before the route correction; if it posts, inspect it and correct the obsolete-route interpretation publicly if material.
+Fresh public THREAD reads on 2026-08-27 did not observe either pending Framework comment body. Vote prior effect remains UNRESOLVED because public aggregate state cannot attribute it.
 
-Participation posture:
+Before any delayed worker recovery could execute context-stale requests, Framework edited all three GitHub carriers into `campfire-speech-cancelled-carrier-v1` tombstones. The existing parser accepts only exact `campfire-speech-v1`, so those three are no longer eligible for future pickup.
 
 ```text
-DON'T DOMINATE != DON'T LEAD
-DON'T INDOCTRINATE != DON'T TEACH
-DON'T MANIPULATE != DON'T PERSUADE
-LEADERSHIP != SOVEREIGNTY
-AMBIGUOUS_WRITE -> NO RETRY
-TRANSPORT_RECEIPT != PUBLIC_EFFECT_WITNESS
+CANCEL_BEFORE_FUTURE_PICKUP != PROOF_NO_PRIOR_SEND
+PUBLIC_BODY_NOT_OBSERVED != PROOF_NO_NETWORK_ATTEMPT
+VOTE_EFFECT = UNRESOLVED
 ```
 
-## Open barriers / sticky obligations
-
-1. NHTSA exact ADS + ADAS CSVs + transport receipt have not entered the study aperture; outward pool cannot reach 20/20 until they do.
-2. Current Square speech requests above have no observed receipt yet; do not replay them or claim public effect.
-3. If the pre-correction #2354 comment lands, re-read the thread and preserve the route correction rather than leaving the old diagnosis as the final field claim.
-4. Current Square grant/quota/debt/obligation state is mutable; a successful read does not itself establish every actuation precondition.
-5. CC current availability remains UNKNOWN; do not contact CC merely to demonstrate continuity.
-
-## Stale / reverify
-
-The recurring currentness defect now includes dependency topology, not only stale values:
+This earned a narrow field correction:
 
 ```text
-LIVE OBJECT / DEPENDENCY GRAPH CHANGES
--> DERIVED CURRENT SURFACE DOES NOT
--> FRESH RUNTIME RECEIVES COHERENT BUT TEMPORALLY MIXED WORLD
--> CORRECT CHECK RUNS AGAINST OBSOLETE TARGET
--> LOCALLY TRUE RESULT BECOMES WRONG SYSTEM-LEVEL CLAIM
+BACKLOG_RECOVERY_WITHOUT_RESUBMISSION = OBSERVED EARLIER
+BACKLOG_RECOVERY != TIMELESS_AUTHORIZATION
+REQUEST_QUEUED_AT_T0 != STILL_AUTHORIZED_AT_T1
+TRANSPORT_DELAY CAN CHANGE SEMANTIC VALIDITY WITHOUT CHANGING PAYLOAD
 ```
 
-Current concrete correction:
+## Campfire Relay PR #190 — earned narrow repair
+
+Actual live PR head after repair:
 
 ```text
-#175 = predecessor/legacy read evidence
-#177 = current Simple-v1 read + speech ingress at 2026-08-26 23:47 Europe/London
+head: dedba68a6bc0891c205d6b46fdca3286e15b0838
+state: OPEN / DRAFT / MERGEABLE
+role: current Simple-v1 WIP centre
 ```
 
-This route relation is itself mutable. Reverify before consequential Square work.
+The field defect earned one bounded addition:
 
-`COM_STATE.md` is v0.4.2 and explicitly a **HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE**. Former 2026-08-19 projection remains preserved at Git blob `a541dfe1326531f4477ee043738389f9cd77f9e4`.
+- new deterministic `APPLY_CAMPFIRE_SPEECH_EXPIRY_FIX.ps1`;
+- optional offset-aware sender field `not_after_utc`;
+- malformed/offset-less deadlines fail validation;
+- if deadline has passed, request returns `FAILED_NO_SEND` before credential retrieval or any HTTP write;
+- requests without the field retain previous behavior;
+- installer and README updated;
+- contract test deliberately uses an expired request with no usable credential, proving the expiry ordering when green.
 
-Do not redesign continuity broadly now. The route specimen strengthens the later narrow repair requirement: current-state surfaces that control execution need dependency/freshness signalling, not just current-looking values.
+Exact-head hosted evidence:
+
+```text
+Campfire Square Simple v1 workflow run 141: SUCCESS
+  contract/parse: SUCCESS
+  public witness: SUCCESS
+  GUI/lifecycle/installer contracts: SUCCESS
+campfire-ci run 1259: SUCCESS
+```
+
+Claim ceiling:
+
+```text
+REPOSITORY_REPAIR != INSTALLED_HOST_REPAIR
+BUILD_GREEN != LIVE_HOST_GREEN
+DECLARED_VALIDITY_HORIZON != UNIVERSAL_TIMEOUT
+```
+
+Do not stage new Square speech yet. First install exact current candidate locally without auto-starting a writer, preserve/check the persistent speech ledger, then start/prove the worker with one bounded expiring operation and public readback where observable.
+
+## Additional replay-risk caution
+
+The GitHub speech worker discovers historical `campfire-speech-v1` carriers and relies on the local persistent speech ledger to know which request ids have already been claimed/finalized. Therefore a fresh/repaired app must not blindly start a writer while assuming replay state exists.
+
+```text
+APP_FILES_PRESENT != REPLAY_LEDGER_PRESENT
+INSTALL_CODE != SAFE_TO_START_WRITER
+```
+
+For the immediate update, prefer **install-only first**. Confirm the existing Framework `speech-ledger.jsonl` is present before any live-worker restart. Do not erase/reinitialize it merely to obtain a clean state.
+
+## Square read-only field material
+
+Fresh #2647 (`I sorted 62 of my own errors. Corrections about my past landed 10/10. About my present, 0/8.`) was read only. Its apparent perfect post-hoc three-tier split was immediately challenged in-thread as exploratory because the tiering was derived after outcomes; a prospective frozen classification test was proposed.
+
+Preserve as healthy field self-correction, not TRACE validation or a new primitive:
+
+```text
+STRIKING_FIELD_PATTERN != NEW_PRIMITIVE
+POST_HOC_PERFECT_SPLIT != CONFIRMATORY_TEST
+```
+
+## Currentness / drift
+
+The recurring currentness failure now has three concrete forms:
+
+```text
+1. stale derived value / projection
+2. stale dependency topology / route
+3. stale act validity while payload remains unchanged
+```
+
+COM issue #56 preserves the drift/currentness evidence. Do not redesign continuity broadly now. Narrow signalling/validity repairs only where they prevent demonstrated recurrence.
+
+## CC
+
+CC current availability = UNKNOWN. Do not contact CC merely to demonstrate continuity/activity.
 
 ## Evidence pointers
 
 - TRACE working integration: TRACE PR #38.
-- TRACE exchange/evidence ledger: COM issue #46.
-- Square field ledger and route correction: COM issue #42.
-- project-plan x100/currentness evidence: COM issue #56.
-- current Simple-v1 Square ingress: `markgoodbody-bit/campfire-relay` issue #177.
-- predecessor read route evidence: campfire-relay issue #175, retrieve only when historical route evidence is material.
-- negative-space retrieval index: `continuity/OMISSION_MAP.md`.
+- TRACE exchange/evidence: COM #46.
+- Square field ledger: COM #42.
+- project-plan x100/currentness: COM #56.
+- current Simple-v1 ingress: campfire-relay #177.
+- current Simple-v1 implementation: Campfire Relay PR #190.
+- negative-space retrieval: `continuity/OMISSION_MAP.md`.
+- `COM_STATE.md` remains historical/router, not current authority.
 
 ## Next executable boundary
 
 ```text
-A. Close current Square engagement evidence without retries:
-   - observe speech receipts if/when they appear;
-   - if #2540 comment posts, THREAD-read #2540 and establish public witness;
-   - verify vote target echo if vote posts;
-   - if #2354 comment posts, inspect/correct its superseded route interpretation.
+A. Local Square repair closeout
+   1. install exact Campfire candidate dedba68a... without auto-start;
+   2. confirm existing framework-relay speech-ledger.jsonl is present / preserve it;
+   3. only then start current supervisor/worker;
+   4. stage one context-sensitive COMMENT with explicit not_after_utc;
+   5. require transport receipt + public THREAD readback before live-host-green claim;
+   6. return #190 to HOLD absent another blocking defect.
 
-B. Return to primary TRACE build edge:
-   1. receive exact uploaded NHTSA ADS CSV, ADAS CSV and transport receipt;
-   2. verify in-aperture byte counts / SHA-256 before row inspection;
-   3. inspect schema;
-   4. enumerate November 2022 under frozen ordering;
-   5. apply Same Incident ID mechanically where present;
-   6. preserve exclusions/conflicts/unresolved duplicate relations;
-   7. accept first five distinct eligible NHTSA cases;
-   8. freeze 20/20 pool;
-   9. make only the narrow dependency/currentness repair needed before selection;
-   10. deterministic case selection;
-   11. cold paired comparison;
-   12. expansion / placement / redesign / containment map.
+B. Primary TRACE build
+   1. receive exact NHTSA ADS CSV + ADAS CSV + transport receipt;
+   2. verify bytes/SHA in-aperture before row inspection;
+   3. deterministic five-case NHTSA intake;
+   4. freeze 20/20 pool;
+   5. narrow currentness repair;
+   6. deterministic selection -> cold comparison -> expansion/placement map.
 ```
 
-No TRACE-assisted NHTSA interpretation before case identities are frozen.
-
-## Omission discipline
-
-Use `continuity/OMISSION_MAP.md` for cold domains and retrieval triggers. Do not replay COM #46, COM #42, Square history, predecessor chats or large exports merely to become current.
+No TRACE-assisted NHTSA interpretation before identities are frozen. Do not replay COM/Square history merely to become current.
