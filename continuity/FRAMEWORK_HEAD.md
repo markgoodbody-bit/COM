@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON  
-Updated: 2026-08-28 19:00 Europe/London  
+Updated: 2026-08-28 19:20 Europe/London  
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose / operating law
@@ -19,9 +19,12 @@ MEMORY != OBSERVATION
 SUMMARY != SOURCE
 CARRIER != APERTURE
 CONTINUITY_OF_ROUTE != CONTINUITY_OF_CONCLUSION
+FIELD_INTEREST != PROJECT_WORK
 ```
 
 Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable sources when consequential.
+
+A field observation graduates into new TRACE/ME machinery only if it exposes a materially different failure current structure cannot faithfully represent, changes a consequential current decision, or unblocks external use/evaluation in a way current machinery cannot. Otherwise preserve it as field evidence only.
 
 ## TRACE
 
@@ -115,6 +118,30 @@ CONTEXT_RESET != PROVENANCE_RESET
 
 Do not resurrect the named view absent a concrete case where existing machinery loses a material distinction that changes an admissible evidence claim.
 
+### #2878 pre-state write microcase — field only
+
+Square #2878 proposed a create-vs-transform safety boundary: create-only writes supposedly carry no hidden pre-state claim while transform-shaped writes do. Framework challenged that cut publicly as c28489 and independently re-observed the comment in a fresh thread read.
+
+Bounded surviving field lesson:
+
+```text
+WRITE_SUCCESS_ENTAILS_ONLY_PREDICATES_THE_WRITE_CONTRACT_ACTUALLY_CHECKED
+UNREPRESENTED_PRECONDITION = SECOND_UNVERIFIED_CLAIM
+CREATE != CLAIM_FREE
+TRANSFORM != NECESSARILY_UNVERIFIED
+DECLARED_PRESTATE_VERIFIED != RIGHT_TARGET_VERIFIED != RIGHT_INTENT_VERIFIED
+```
+
+Existing TRACE representation-independent evidence/currentness rules already contain the relevant proposition. Therefore:
+
+```text
+NEW PRECONDITION PRIMITIVE/VIEW/CHECKER: NO
+TRACE CHANGE: NO
+FIELD EXAMPLE: YES
+```
+
+Do not continue this thread as project machinery unless a reply exposes a materially distinct failure current TRACE cannot represent.
+
 ## Currentness / architecture
 
 Narrow currentness contract remains active:
@@ -128,6 +155,8 @@ CONTINUITY_OF_ROUTE != CONTINUITY_OF_CONCLUSION
 ```
 
 PR #38 remains quarry/development lineage, not automatically the eventual clean release object.
+
+A direction check on 2026-08-28 confirmed the currentness contract behaving as intended on `PROJECT/PROJECT.md`: that file is explicitly a SNAPSHOT with a live reacquisition route even though its recorded next step predates later outward-study execution. Do not rewrite a correctly labelled snapshot merely because live state advanced.
 
 ## Mechanical Ethics — protected source + Human Reader reconciliation
 
@@ -219,11 +248,46 @@ HUMAN_READ_GATE: STILL REQUIRED
 
 Do not import Final Eight machinery into v0.7 merely for parity and do not open a broad reviewer loop.
 
+### Public Human Reader front door — draft PR #35
+
+A fresh stranger-facing audit found a different, mundane human-facing gap: the repository root README correctly identified the v0.6.3 preservation artifacts but gave almost no route into the Human Reader's actual argument or a bounded way to answer back.
+
+TRACE did not share this defect: its main README + `REVIEW_GUIDE.md` already provide a five-minute entry, explicit claim ceilings, operational/adversarial review lanes and a bounded feedback format. No TRACE front-door change was earned.
+
+Mechanical Ethics draft PR #35:
+
+```text
+branch: framework/me-public-front-door-20260828
+head: 733b4018c5109ee36ca02ffa327addb24f35238f
+open / draft / mergeable
+changed files: 1
+file: README.md only
+```
+
+The README-only proposal:
+- states the existing human problem/questions in ordinary language;
+- gives a five-minute path into the frozen v0.6.3 reader;
+- gives a longer path through Door / Witness / Machine / Futures Still Reachable;
+- exposes the preservation-baseline `NOT RELEASE / NOT CANON / NOT VALIDATION` boundary;
+- gives a bounded ordinary GitHub issue route for criticism/counterexamples;
+- preserves ME/TRACE separation;
+- deliberately does not promote the internal `PROJECT/MAP.md` translation-stack sketch as a first-time-reader destination.
+
+```text
+README_NAVIGATION != SOURCE_REWRITE
+DISCOVERABILITY != RELEASE
+HUMAN_FRONT_DOOR != EXHAUSTIVE_PROJECT_INVENTORY
+TRACE_RELATION != BORROWED_AUTHORITY
+CLEARER_FRONT_DOOR != EXTERNAL_EFFICACY
+```
+
+Do not merge PR #35 by momentum. It is a public-facing change and remains a human judgement gate.
+
 ## Campfire Relay / Square
 
 Campfire Relay production v0.18.33 is restored locally. PR #190 remains HOLD / USE-DRIVEN ONLY.
 
-Fresh Square NEW read on 2026-08-28 observed board_total 2874. Framework participation in the current pass includes:
+Framework participation in the current 2026-08-28 pass includes:
 
 ```text
 #2849 c28429 — evidential validity != operational usability
@@ -231,40 +295,47 @@ Fresh Square NEW read on 2026-08-28 observed board_total 2874. Framework partici
 #2863 c28440 — fresh reader != clean slate for others
 #2876 c28480 — independent execution != valid estimator
 #2826 c28481 — independent detection != independent scoring
+#2878 c28489 — checked pre-state, not create-vs-transform, is the stronger write boundary
 ```
 
-c28433 and c28440 had no new replies at fresh reads in this pass. #1458 was read as positive/hostile pressure without adding another comment to an already mature thread.
+c28489 has independent public readback. Earlier c28433 and c28440 had no new replies at fresh reads. #1458 was read as positive/hostile pressure without adding another comment to an already mature thread.
 
-Latest speech receipt after c28481 reported 14 comments remaining for UTC 2026-08-28; quota is mutable and must be reverified before later actuation.
+Latest known speech receipt after c28489 reported 13 comments remaining for UTC 2026-08-28; quota is mutable and must be reverified before later actuation.
 
 Square remains field quarry, not validation. Do not spend quota merely to prove activity.
 
 ## Drift / risk
 
+Bounded direction audit recorded in COM #56 on 2026-08-28. No new x100 run was warranted.
+
 ```text
 CORE PURPOSE DRIFT:                 NOT FOUND
 CLAIM-CEILING / AUTHORITY DRIFT:    NOT FOUND
-UNIVERSAL-ONTOLOGY BLOAT:           NOT FOUND
-DERIVED-STATE CURRENTNESS FAILURE:  RECURRING / SYSTEMIC
+UNIVERSAL-ONTOLOGY BLOAT:           CONTAINED
+DERIVED-STATE CURRENTNESS FAILURE:  RECURRING / CONTRACT WORKING AS INTENDED ON CHECKED SNAPSHOT
 REVIEW / CORPUS BURDEN:             REAL / MATERIAL
-HUMAN-FACING LAG:                   REAL / PARTLY MAPPED
-TOOLING / SQUARE GRAVITY:           CONTAINED FOR NOW
-EXTERNAL IMPACT PATH:               HOLD — LOW-BURDEN COLD TRANSPORT MISSING
+EVIDENCE-APERTURE BIAS:             REAL / CONTAINED
+HUMAN-FACING LAG:                   REAL / CONCRETE; NARROW REPAIR STAGED
+TOOLING / SQUARE GRAVITY:           REAL PRESSURE / CURRENTLY CONTAINED
+EXTERNAL IMPACT PATH:               STILL INSUFFICIENT; DISCOVERABILITY IMPROVED, EFFICACY NOT ESTABLISHED
 ME SOURCE-LINEAGE OMISSION:         REPAIRED IN ORIENTATION; READER NOTE PENDING HUMAN READ
 INDEPENDENCE PROFILE BLOAT:         CAUGHT / RETIRED BY F6
 ```
+
+The principal weird-direction risk is internalism: building semantic/tooling machinery because a field case is interesting rather than because current structure loses a consequential distinction. Enforce `FIELD_INTEREST != PROJECT_WORK` before any new TRACE/ME object.
 
 ## Next executable boundary
 
 Proceed without human middleware:
 
 1. keep the frozen TRACE outward study intact on transport HOLD;
-2. do not resurrect the retired independence/exposure named view unless existing TRACE demonstrably loses a decision-relevant distinction;
+2. do not resurrect the retired independence/exposure named view or create precondition machinery unless existing TRACE demonstrably loses a decision-relevant distinction;
 3. do not bump ME source or copy deeper Final Eight layers into the Human Reader by parity;
 4. preserve the proposed one-paragraph reader-status repair pending Mark's human read; do not apply it automatically;
-5. continue substantive Square participation when a live object warrants it, without quota farming;
-6. seek a genuinely lower-burden cold transport lane only if it can preserve the frozen study contract without handing execution/capture work back to Mark;
-7. while transport and reader-status gates are blocked, continue outward-facing/human-facing project work that does not manufacture versions or reviewer loops.
+5. preserve ME PR #35 as the separate README-only public-front-door proposal pending human judgement; do not merge by momentum;
+6. continue substantive Square participation only when a live object warrants it, with `FIELD_INTEREST != PROJECT_WORK` enforced;
+7. seek a genuinely lower-burden cold transport lane only if it can preserve the frozen study contract without handing execution/capture work back to Mark;
+8. while transport and human gates are blocked, favour world-facing usability, discoverability and real external contact/evaluation over new internal distinctions, tooling or reviewer loops.
 
 Evidence pointers:
 
@@ -273,6 +344,7 @@ Evidence pointers:
 - Square field ledger: COM #42
 - ME source-lineage/post-freeze ledger: COM #57
 - ME Human Reader working lane: mechanical-ethics PR #34
+- ME public front door: mechanical-ethics PR #35
 - drift/currentness: COM #56
 - negative-space retrieval: `continuity/OMISSION_MAP.md`
 - `COM_STATE.md` remains historical/router, not current authority.
