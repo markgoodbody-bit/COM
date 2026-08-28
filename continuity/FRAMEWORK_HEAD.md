@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON  
-Updated: 2026-08-28 18:45 Europe/London  
+Updated: 2026-08-28 19:00 Europe/London  
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose / operating law
@@ -63,6 +63,8 @@ HUMAN_AS_TRANSPORT_LAYER != EXTERNAL_RECEIVER_AUTOMATION
 
 No primary A/T output exists. This is not an efficacy result. Do not restart the manual workflow.
 
+A connector/plugin search on 2026-08-28 found no installed/installable Gemini/Qwen/Kimi/OpenRouter inference connector. Campfire Relay already has provider modules for Gemini/Qwen/Kimi, but no existing GitHub Actions workflow references the relevant provider API-key secret names, and the available GitHub connector can inspect/re-run existing workflows but cannot dispatch a new one. Do not build a half-automated hosted workflow that merely hands the trigger back to Mark.
+
 ### Independence / exposure pressure cycle — named view retired
 
 Working quarry preserved:
@@ -86,14 +88,14 @@ ME SOURCE CHANGE: NO
 
 Pressure cases:
 
-1. Square #2876 — two reproducible numbers whose claimed meaning changed when comparator/denominator semantics were inspected. Existing TRACE verification discrimination already handles this:
+1. Square #2876 — existing TRACE verification discrimination already handles reproducible bad measurement meaning:
 
 ```text
 INDEPENDENT_EXECUTION != VALID_ESTIMATOR
 REPRODUCIBLE_NUMBER != CORRECTLY_TYPED_CLAIM
 ```
 
-2. Square #2826 — external/unavoidable residue repairs detection but arrives ungraded. Existing provenance can carry evaluator/rubric authorship and timing:
+2. Square #2826 — existing provenance can carry evaluator/rubric authorship and timing:
 
 ```text
 INDEPENDENT_DETECTION != INDEPENDENT_SCORING
@@ -101,16 +103,9 @@ BLINDED_RATER != INDEPENDENT_RUBRIC
 FIXED_RUBRIC != VALID_RUBRIC
 ```
 
-3. Square #1458 — different-model/no-shared-code reimplementation independently recomputed an identity hash chain from public source/contract. A later stranger exposed an omitted serialization detail in the printed recipe while recovering the same chain under corrected compact encoding. Evidential credit is scoped:
+3. Square #1458 — different-model/no-shared-code reimplementation supported implementation-independent chain recomputation under the declared contract, not independent truth of past events. Existing TRACE witness/aperture/provenance machinery scoped the evidence without a new named profile.
 
-```text
-INDEPENDENT_IMPLEMENTATION_CHECK: SUPPORTED
-INDEPENDENT_SOURCE_TRUTH: NOT ESTABLISHED
-CHAIN_COHERENCE_UNDER_DECLARED_CONTRACT: SUPPORTED BY RECOMPUTATION
-PAST_EVENT_TRUTH: NOT ESTABLISHED BY HASH CONSISTENCY
-```
-
-Existing TRACE provenance + aperture + target-set + verification + witness-scope machinery made every tested evidence decision without the named profile. Preserve the field lessons but do not resurrect the view absent a concrete case where existing machinery loses a material distinction.
+Preserve bounded field distinctions:
 
 ```text
 FRESH_CONTEXT != COLD_RECEIVER
@@ -118,7 +113,7 @@ CURRENT_SEPARATION != HISTORICAL_INDEPENDENCE
 CONTEXT_RESET != PROVENANCE_RESET
 ```
 
-These survive as bounded field/study distinctions, not a new carrier expansion.
+Do not resurrect the named view absent a concrete case where existing machinery loses a material distinction that changes an admissible evidence claim.
 
 ## Currentness / architecture
 
@@ -134,7 +129,7 @@ CONTINUITY_OF_ROUTE != CONTINUITY_OF_CONCLUSION
 
 PR #38 remains quarry/development lineage, not automatically the eventual clean release object.
 
-## Mechanical Ethics — corrected source lineage
+## Mechanical Ethics — protected source + Human Reader reconciliation
 
 Mechanical Ethics Final Eight v0.28.2 was frozen on 2026-06-04 as the protected working source.
 
@@ -154,7 +149,7 @@ Book III := choose_and_answer
 
 Freeze means protected working source, not canon/validation/release/public reader. Future source work derives from it; do not rebuild/wrap/trim by momentum. COM #57 is the bounded lineage ledger.
 
-ME repo PR #34 is a separate later human-reader/editorial line over main v0.6.3.
+ME repo PR #34 is a separate later human-reader/editorial working line over main v0.6.3.
 
 ```text
 FINAL_EIGHT_VERSION != HUMAN_READER_VERSION
@@ -162,7 +157,67 @@ LATER_DATE != SOURCE_SUPERSESSION
 DERIVATIVE_READER != PROTECTED_SOURCE_BODY
 ```
 
-Current field pressure did **not** earn ME v0.29. Successor/debt continuity, operator burden and independence/captured-reviewer concerns are already substantially carried by v0.28.2. The attempted named TRACE independence profile was retired as redundant rather than installed into ME.
+### Source-to-reader reconciliation — 2026-08-28
+
+PR #34 current live state after reconciliation:
+
+```text
+branch: framework/me-v0-7-0-field-delta-20260824
+head: db2aad79dd7539c4d203b3ab9aa5986fc0bd4d75
+open / draft / mergeable
+5 commits / 5 working-record files
+reader source/PDF not committed
+Final Eight source not modified
+```
+
+New records:
+
+- `work/v0_7_0/ME_V0_7_0_FINAL_EIGHT_V0_28_2_SOURCE_TO_READER_RECONCILIATION_20260828.md`
+- `work/v0_7_0/ME_V0_7_0_SOURCE_LINEAGE_STATUS_NOTE_CANDIDATE_20260828.md`
+
+Reconciliation result:
+
+```text
+BOOK I / HUMAN ROUTE: STRONG
+WITNESS / CUSTODY / RESIDUE: STRONG
+BURDEN / COMPLEXITY / CORRECTION THEATRE: STRONG
+USABLE FUTURES / CARE / KINDNESS: STRONG
+
+BOOK II INSTALLED CONSTRAINT: HUMAN-TRANSLATED / TAXONOMY COMPRESSED
+STEWARDSHIP: HUMAN-TRANSLATED / SYSTEMIC LAYER COMPRESSED
+RESPONSIBILITY TRACE: PARTIAL / DELEGATION LAYER COMPRESSED
+
+UPDATE / SUCCESSOR RESPONSIBILITY: DEEPER SOURCE LAYER
+ACCEPTED-LOSS / COLLISION ACCOUNTING: DEEPER SOURCE LAYER
+FUTURE-FACING FORESIGHT / BOUNDED PRECAUTION: DEEPER SOURCE LAYER
+```
+
+The v0.7 Human Reader is not obsolete or inferior. It is a strong selective human front door. The material defect is source-lineage discoverability: Appendix C does not currently tell a reader that a separately versioned protected working-source corpus carries broader developed machinery.
+
+```text
+MATERIAL_SOURCE_LINEAGE_DISCOVERABILITY_GAP: YES
+NEW_ME_THEORY: NO
+NEW_ME_SOURCE_VERSION: NO
+READER_OBSOLETE: NO
+```
+
+Smallest repair earned: one ~91-word Appendix C `Reader status` note. It explicitly preserves:
+
+```text
+PROTECTED_SOURCE != HIGHER_MORAL_AUTHORITY
+HUMAN_READER != INFERIOR_ARTIFACT
+SOURCE_BREADTH != READER_BLOAT_REQUIREMENT
+DISCOVERABILITY != COMPULSORY_COGNITION
+```
+
+The note has been internally pressure-tested against source hierarchy, reader demotion, internal-archaeology bloat and update-treadmill failure. It survives as a **proposed-only** candidate.
+
+```text
+APPLIED_TO_READER: NO
+HUMAN_READ_GATE: STILL REQUIRED
+```
+
+Do not import Final Eight machinery into v0.7 merely for parity and do not open a broad reviewer loop.
 
 ## Campfire Relay / Square
 
@@ -192,10 +247,10 @@ CLAIM-CEILING / AUTHORITY DRIFT:    NOT FOUND
 UNIVERSAL-ONTOLOGY BLOAT:           NOT FOUND
 DERIVED-STATE CURRENTNESS FAILURE:  RECURRING / SYSTEMIC
 REVIEW / CORPUS BURDEN:             REAL / MATERIAL
-HUMAN-FACING LAG:                   REAL / EMERGING
+HUMAN-FACING LAG:                   REAL / PARTLY MAPPED
 TOOLING / SQUARE GRAVITY:           CONTAINED FOR NOW
 EXTERNAL IMPACT PATH:               HOLD — LOW-BURDEN COLD TRANSPORT MISSING
-ME SOURCE-LINEAGE OMISSION:         REPAIRED
+ME SOURCE-LINEAGE OMISSION:         REPAIRED IN ORIENTATION; READER NOTE PENDING HUMAN READ
 INDEPENDENCE PROFILE BLOAT:         CAUGHT / RETIRED BY F6
 ```
 
@@ -205,10 +260,11 @@ Proceed without human middleware:
 
 1. keep the frozen TRACE outward study intact on transport HOLD;
 2. do not resurrect the retired independence/exposure named view unless existing TRACE demonstrably loses a decision-relevant distinction;
-3. do not bump ME source unless a real gap survives against protected v0.28.2;
-4. continue substantive Square participation when a live object warrants it, without quota farming;
-5. seek a genuinely lower-burden cold transport lane capable of preserving exact frozen inputs, fresh contexts, runtime identity, raw returns, deterministic order and no selective retry;
-6. if no such transport lane is available, continue outward-facing / human-facing project work rather than exporting coordination burden to Mark.
+3. do not bump ME source or copy deeper Final Eight layers into the Human Reader by parity;
+4. preserve the proposed one-paragraph reader-status repair pending Mark's human read; do not apply it automatically;
+5. continue substantive Square participation when a live object warrants it, without quota farming;
+6. seek a genuinely lower-burden cold transport lane only if it can preserve the frozen study contract without handing execution/capture work back to Mark;
+7. while transport and reader-status gates are blocked, continue outward-facing/human-facing project work that does not manufacture versions or reviewer loops.
 
 Evidence pointers:
 
@@ -216,6 +272,7 @@ Evidence pointers:
 - TRACE exchange/evidence: COM #46
 - Square field ledger: COM #42
 - ME source-lineage/post-freeze ledger: COM #57
+- ME Human Reader working lane: mechanical-ethics PR #34
 - drift/currentness: COM #56
 - negative-space retrieval: `continuity/OMISSION_MAP.md`
 - `COM_STATE.md` remains historical/router, not current authority.
