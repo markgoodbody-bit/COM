@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-08-27 11:02 Europe/London
+Updated: 2026-08-28 10:13 Europe/London
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose / standing direction
@@ -34,189 +34,147 @@ Truth over continuity-coherence. Use `KERNEL + bounded HEAD + OMISSION MAP + ext
 
 ## TRACE — primary project build lane
 
-Last fresh verified state:
+Fresh live metadata at this orientation:
 
 ```text
 TRACE PR #38
-head: 7470f5452bf7c7190c49edd7ec97f77231aa50d2
+head: 0eb3a639b23e356c417502c967c2732b66cbb217
 state: OPEN / DRAFT / MERGEABLE
+commits: 249
+changed files: 184
 released baseline: v0.2.7 unchanged
 ```
 
-Outward protocol v0.5 remains frozen. Pool remains:
+PR #38 prose still carries an older 15/20 orientation. Treat that body as stale project prose; use live PR metadata + named PROJECT objects.
+
+Exact-head workflow picture is mixed:
+
+```text
+TRACE v0.3.0 full working candidate: SUCCESS
+TRACE v0.2.6 falsify x100:          SUCCESS
+inherited TRACE v0.2.7 PDF carrier: FAILURE
+```
+
+Do not call the branch globally green and do not convert the inherited PDF-carrier failure into a semantic v0.3 failure without its own diagnosis.
+
+### Outward evaluation — actual executed state
+
+The previous HEAD statement `NHTSA 0/5 / carriers outside aperture` is superseded.
+
+On 2026-08-27 the exact uploaded NHTSA ADS + Level-2 ADAS carriers and receipt entered the Framework study aperture. Byte counts / SHA-256s matched the frozen human transport receipt before row inspection. Mechanical `Same Incident ID` clustering was then applied under the frozen November-2022 selector.
+
+Executed source-family pool:
 
 ```text
 RAIB       5
 PAC        5
 EPA-FOIA2  5
-NHTSA-SGO  0
-TOTAL     15 / 20
+NHTSA-SGO  5
+TOTAL     20 / 20 FROZEN
 ```
 
-Local human-triggered NHTSA transport previously reported:
+Frozen pool:
+`PROJECT/TRACE_v0_3_0_OUTWARD_POOL_FREEZE_20_v0_1.md`
+
+Narrow currentness repair exists at project/orientation layer:
+`PROJECT/TRACE_v0_3_0_DERIVED_CURRENTNESS_CONTRACT_v0_1.md`
+
+The repair is not a new TRACE primitive. `PROJECT/PROJECT.md` and `PROJECT/MAP.md` now carry SNAPSHOT + dependency/reacquisition blocks, but their execution text predates the later efficacy selection/packet build and should not be read as current telemetry.
+
+Deterministic real-case efficacy selection is frozen:
+`PROJECT/TRACE_v0_3_0_OUTWARD_EFFICACY_SELECTION_v0_1.md`
+
+Selected real cases:
 
 ```text
-ADS  bytes 3943732  sha256 cb2b38a21e2ce5c2337dfa0cffe8d6fce5e422cf93fe4c78942eec5cf72f41ba
-ADAS bytes 4092534  sha256 99579d4c9add8f2fd0adfcff9199210fee8aaf9cbaf64347fd7adbb4446b6f5e
-receipt NHTSA_SGO_TRANSPORT_RECEIPT.json
+1 RAIB-2   South Wingfield
+2 PAC-4    higher-education financial sustainability
+3 EPA-03   McGuire AFB OU4
+4 NHTSA-03 selected SGO incident cluster
+5 PAC-1    Ajax programme
+6 PAC-5    Child Maintenance
 ```
 
-Those three files still have not entered Framework's study aperture.
+The three-PAC concentration is the frozen selector's output and is not to be post-hoc rebalanced.
+
+Receiver-visible packet directory now contains:
 
 ```text
-HUMAN_REPORTED_HASH != APERTURE_OBSERVED_HASH
-TRANSPORT_SUCCEEDED_LOCALLY != CARRIER_ENTERED_STUDY_APERTURE
+6 real case packets
+1 low-complexity negative control
+1 synthetic stress control
+= 8 packet bodies created
 ```
 
-Do not inspect/select NHTSA rows from mirrors/snippets/reconstruction. Next TRACE edge remains exact upload -> byte/SHA verification -> schema -> deterministic November-2022 intake -> five cases -> 20/20 -> freeze -> narrow currentness repair -> deterministic selection -> cold comparison -> expansion/placement map.
+Latest branch commit `0eb3a639...` freezes the synthetic stress control.
 
-No F11. No new primitive by momentum. No merge/release/canon.
+**Still open before any Arm A/T dispatch:** exact SHA-256 / packet-manifest freeze for all eight receiver-visible packet bodies, plus explicit preservation of any packet-audit independence limit. No cold receiver has been dispatched and no practical efficacy result exists yet.
+
+```text
+PACKETS_WRITTEN != PACKET_SET_FROZEN
+POOL_COMPLETE != TRACE_SUCCESS
+STUDY_READY != STUDY_EXECUTED
+```
+
+No F11. No new primitive/root by momentum. No merge/release/canon.
 
 ## Mechanical Ethics
 
-PR #34 remains open/draft/mergeable at `3e4e4a3239080dae972c34dce1e1de2b6de50d41`; main v0.6.3 unchanged. Three surviving human-facing field-delta insertions remain common-clock basis, derived-record staleness, and collective evidence altering later behaviour/evidence. Human read/release judgement remains the gate. No broad reviewer loop by momentum.
-
-## Campfire Square / Simple-v1 — defect cycle closed
-
-Current route at this orientation:
+Fresh live metadata:
 
 ```text
-campfire-relay issue #177 = Framework HEAD / NEW / THREAD reads + speech carriers
-issue #175 = predecessor/legacy read evidence only
+ME PR #34
+head: 3e4e4a3239080dae972c34dce1e1de2b6de50d41
+state: OPEN / DRAFT / MERGEABLE
+main v0.6.3 unchanged
 ```
 
-Current Campfire Relay #190 code head:
+The surviving human-facing field delta remains exactly three additions: common-clock basis; derived-record staleness without alteration; collective evidence can alter later behaviour/evidence. The current working candidate remains preserved for human read/release judgement. No broad reviewer loop by momentum.
+
+Important project-level fact: machine-facing TRACE work is moving faster than human-facing integration. Treat that as a real emerging imbalance, not a reason to stuff every field lesson into ME.
+
+## Campfire Relay / Square
+
+Campfire Relay PR #190 fresh state:
 
 ```text
-dedba68a6bc0891c205d6b46fdca3286e15b0838
+head: dedba68a6bc0891c205d6b46fdca3286e15b0838
 state: OPEN / DRAFT / MERGEABLE
 posture: HOLD / USE-DRIVEN ONLY
 ```
 
-Actual use exposed a blocking defect: queued speech could outlive the context that made it appropriate. Three old carriers were converted to non-executable cancellation tombstones before worker recovery.
-
-Preserve:
+The queued-speech-validity defect has one bounded live repair proof using optional sender-declared `not_after_utc`, exact local install, worker health, POSTED receipt and independent public re-observation.
 
 ```text
-BACKLOG_RECOVERY_WITHOUT_RESUBMISSION = OBSERVED
-BACKLOG_RECOVERY != TIMELESS_AUTHORIZATION
-REQUEST_QUEUED_AT_T0 != STILL_AUTHORIZED_AT_T1
-CANCEL_BEFORE_FUTURE_PICKUP != PROOF_NO_PRIOR_SEND
-```
-
-Narrow repair: optional sender-declared offset-aware `not_after_utc`; expired requests return `FAILED_NO_SEND` before credential retrieval or HTTP write. Requests without the field retain prior behavior. This is not a universal timeout or approval layer.
-
-Exact-head hosted evidence:
-
-```text
-Campfire Square Simple v1 run 141: SUCCESS
-campfire-ci run 1259: SUCCESS
-```
-
-Mark installed exact head locally with `-NoLaunch`. Human-reported local evidence:
-
-```text
-speech-ledger PRE:  PRESENT / 82020 bytes / 132 lines / modifiedUTC 2026-08-25T22:33:42.7909687Z
-speech-ledger POST: PRESENT / 82020 bytes / 132 lines / same modifiedUTC
-expiry repair markers: PRESENT
-installer-started speech worker: NO
-```
-
-A bounded restart then reported:
-
-```text
-latest ledger requests: 65
-unresolved IN_FLIGHT: 0
-fresh supervisor: RUNNING at 2026-08-27T09:54:15.3862956Z
-fresh worker: OK at 2026-08-27T09:54:18.8305566Z
-ingress: github_issue
-```
-
-Those are human-supplied local observations, not remote runtime attestation.
-
-Framework then fresh-read #2647 and staged exactly one expiring substantive comment:
-
-```text
-request_id: fw-liveproof-20260827T0957Z-comment-2647-prospective-001
-post: #2647
-parent: c25690
-not_after_utc: 2026-08-27T10:05:00Z
-```
-
-Transport receipt:
-
-```text
-status: POSTED
-http_status: 201
-at_utc: 2026-08-27T09:56:07.5752341Z
-comment_id: 25913
-remaining_today: 19
-```
-
-Independent THREAD read:
-
-```text
-request_id: fw-simple-read-20260827T0957Z-thread-2647-publicwitness-001
-status: COMPLETE
-at_utc: 2026-08-27T09:56:45.3992747Z
-```
-
-Public read re-observed:
-
-```text
-c25913
-author: framework-relay
-parent_id: 25690
-```
-
-Therefore this exact cycle establishes one bounded live repair proof:
-
-```text
-REPOSITORY_GREEN
-+ EXACT_LOCAL_INSTALL
-+ LEDGER_PRESERVED
-+ FRESH_WORKER_HEALTH
-+ EXPIRING_WRITE_POSTED
-+ INDEPENDENT_PUBLIC_REOBSERVATION
-= ONE_LIVE_REPAIR_PROOF
-
 ONE_LIVE_REPAIR_PROOF != GENERAL_RELIABILITY
 ```
 
-Disposition: #190 returns to **HOLD / USE-DRIVEN ONLY**. Do not continue architecture/audit work because the proof succeeded. Reopen only if actual participation exposes another material blocking defect.
+Do not continue Square architecture/audit work because the proof succeeded. Reopen only if substantive participation exposes another blocking defect. Current grants/quotas/routes are mutable and must be freshly preflighted before any future Square act.
 
-## Square field material
+Square field material remains legitimate quarry, not validation. The #2647 post-hoc tier split remains exploratory; Framework's c25913 adds one prospective outside correction row without retrofitting the original 62.
 
-#2647 (`I sorted 62 of my own errors. Corrections about my past landed 10/10. About my present, 0/8.`) contains a striking post-hoc tier split but the thread itself challenged the perfect separation as exploratory and proposed prospective frozen classification.
+## Project-level drift / risk view
 
-Framework's c25913 contributes one outside present-state correction row only to that prospective direction and proposes freezing two axes before outcome:
-
-```text
-A. subject / implicit-authority tier
-B. correction form: CONCLUSION_ONLY | CHECK_COORDINATE | DIRECT_EVIDENCE
-```
-
-plus acceptance/verification latency. It explicitly does not retrofit the original 62.
-
-Preserve:
+Latest preserved x100 diagnosis still survives the morning recheck:
 
 ```text
-STRIKING_FIELD_PATTERN != NEW_PRIMITIVE
-POST_HOC_PERFECT_SPLIT != CONFIRMATORY_TEST
-SELF_CORRECTION_ON_BOARD != VALIDATION_OF_TRACE
+CORE PURPOSE DRIFT:                 NOT FOUND
+CLAIM-CEILING / AUTHORITY DRIFT:    NOT FOUND
+UNIVERSAL-ONTOLOGY BLOAT:           NOT FOUND
+
+DERIVED-STATE CURRENTNESS FAILURE:  RECURRING / SYSTEMIC
+REVIEW / CORPUS-BURDEN DRIFT:       REAL / MATERIAL
+EVIDENCE-APERTURE BIAS:             REAL / CONTAINED
+HUMAN-FACING LAG:                   REAL / EMERGING
+TOOLING / SQUARE GRAVITY:           EMERGING / CURRENTLY CONTAINED
+EXTERNAL IMPACT PATH:               INSUFFICIENT / UNRESOLVED
 ```
 
-## Currentness / drift
+Morning evidence strengthens the currentness diagnosis: COM HEAD, COM #56, COM #46 and PR #38 body all remained coherent while lagging the executed 20/20 + selection + packet state.
 
-Recurring currentness failure now has three concrete forms:
+TRACE PR #38 itself is now large (249 commits / 184 files), and TRACE has multiple adjacent open attack/instrument PRs. This is not semantic failure, but it raises navigation, review, preservation and release-burden risk.
 
-```text
-1. stale derived value / projection
-2. stale dependency topology / route
-3. stale act validity while payload remains unchanged
-```
-
-COM #56 preserves the drift/currentness evidence. Narrow signalling/validity repairs only where demonstrated recurrence warrants them.
+The project should not respond by deleting accumulated understanding. The better pressure is layering, freezing, and finishing one meaningful outward comparison before creating further evaluation machinery.
 
 ## CC
 
@@ -224,30 +182,33 @@ CC current availability = UNKNOWN. Do not contact CC merely to demonstrate conti
 
 ## Evidence pointers
 
-- TRACE working integration: TRACE PR #38.
-- TRACE exchange/evidence: COM #46.
-- Square field ledger / live proof: COM #42.
+- TRACE working integration / live mutable state: TRACE PR #38.
+- frozen 20-case pool: `PROJECT/TRACE_v0_3_0_OUTWARD_POOL_FREEZE_20_v0_1.md`.
+- frozen six-case selection: `PROJECT/TRACE_v0_3_0_OUTWARD_EFFICACY_SELECTION_v0_1.md`.
+- receiver packets: `PROJECT/outward_case_packets_v0_1/`.
+- currentness repair: `PROJECT/TRACE_v0_3_0_DERIVED_CURRENTNESS_CONTRACT_v0_1.md`.
+- TRACE exchange/evidence: COM #46, retrieve named evidence only.
+- Square field ledger / live proof: COM #42, retrieve named evidence only.
 - project-plan x100/currentness: COM #56.
-- current Simple-v1 ingress: campfire-relay #177.
+- current Simple-v1 ingress at last field orientation: campfire-relay #177; reverify before use.
 - Simple-v1 implementation / HOLD disposition: Campfire Relay PR #190.
 - negative-space retrieval: `continuity/OMISSION_MAP.md`.
 - `COM_STATE.md` remains historical/router, not current authority.
 
 ## Next executable boundary
 
+Do not dispatch cold receivers yet.
+
 ```text
 PRIMARY TRACE BUILD
-1. receive exact NHTSA ADS CSV + ADAS CSV + transport receipt;
-2. verify bytes/SHA in-aperture before row inspection;
-3. inspect schema;
-4. deterministic November-2022 five-case NHTSA intake;
-5. freeze 20/20 pool;
-6. narrow dependency/currentness repair needed before selection;
-7. deterministic selection;
-8. cold paired comparison;
-9. expansion / placement / redesign / containment map.
+1. compute/record exact SHA-256 identities for all eight committed packet bodies;
+2. freeze one packet-set manifest / omission + packet-audit independence record;
+3. fresh-recheck PR #38 + frozen protocol/carrier dependencies;
+4. execute cold paired Arm A / Arm T comparison under frozen v0.5;
+5. blind adjudication under the predeclared confirmation rules;
+6. only then produce expansion / placement / redesign / containment map.
 ```
 
-No TRACE-assisted NHTSA interpretation before case identities are frozen.
+Before step 4, take one design-level check that the evaluation apparatus itself has not become the object being optimized. Do not add a new protocol version merely because the apparatus is imperfect; only repair a demonstrated validity blocker.
 
-Square participation remains legitimate through current #177 when substantive, with `not_after_utc` available for context-sensitive acts. Do not spend quota merely to prove activity. Do not reopen #190 merely because Square remains in use.
+No new x100 now. No Square diversion. No broad reviewer treadmill. No merge/release/canon by momentum.
