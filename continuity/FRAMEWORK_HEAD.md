@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON  
-Updated: 2026-08-28 18:15 Europe/London  
+Updated: 2026-08-28 18:20 Europe/London  
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose / operating law
@@ -28,7 +28,7 @@ Working branch: `framework/trace-v0-3-0-working`
 Current consequential head:
 
 ```text
-c2f99b6e37a13cd78e31aec77d2ef4f5d1e1cbd2
+0386050e7ca932a47b201fb31c2d8a7aad72310a
 ```
 
 Released v0.2.7 remains untouched. No merge/release/canon. No F11/new primitive by momentum.
@@ -64,11 +64,12 @@ No primary A/T output exists. This is not an efficacy result. Do not restart the
 
 ### Post-freeze derived independence candidate
 
-Square #2861 plus project pressure produced:
+Current working objects:
 
-`PROJECT/TRACE_v0_3_0_DERIVED_INDEPENDENCE_EXPOSURE_CANDIDATE_v0_1.md`
+- `PROJECT/TRACE_v0_3_0_DERIVED_INDEPENDENCE_EXPOSURE_CANDIDATE_v0_1.md`
+- `PROJECT/TRACE_v0_3_0_DERIVED_INDEPENDENCE_EXPOSURE_CASE_BATTERY_v0_1.md`
 
-Status: derived view candidate only; created after study freeze; does not modify compact v0.11, protocol, packets or released v0.2.7.
+Status: derived view + adversarial fixtures only; created after study freeze; neither modifies compact v0.11, protocol, packets or released v0.2.7.
 
 ```text
 FRESH_CONTEXT != COLD_RECEIVER
@@ -78,15 +79,18 @@ CONTAMINATED_EVIDENCE != FALSE_PROPOSITION
 PRIOR_PARTICIPATION_SOMEWHERE != PERMANENT_NONINDEPENDENCE_EVERYWHERE
 ```
 
-Pressure test found ME already carries contaminated-pilot, independence-gap and captured-reviewer machinery, while an older TRACE derivative carries an `independence_profile` including `origin_correlation`. Current compact v0.3 carries only the weaker ceiling `EXTERNAL != INDEPENDENT`. Therefore:
+Pressure test found ME already carries contaminated-pilot, independence-gap and captured-reviewer machinery, while an older TRACE derivative carries an `independence_profile` including `origin_correlation`. Current compact v0.3 carries only the weaker ceiling `EXTERNAL != INDEPENDENT`.
+
+Eight frozen constructed fixtures now test: fresh-tab laundering; unrelated checksum witness; different-provider/shared-answer contamination; same-provider partial independence; selected/paid reviewer; historical co-author returning after divergence; blinded adjudicator who designed the rubric; unknown prior exposure.
 
 ```text
 NEW_PRIMITIVE: NO
 UNIVERSAL_CORE_CHANGE: NO
 DERIVED_VIEW_CANDIDATE: YES
+BATTERY_RESULT: NOT YET — FIXTURES NOW FROZEN FOR PRESSURE
 ```
 
-Candidate must survive real cases where present separation and historical exposure diverge; retire it if existing provenance machinery is sufficient.
+Do not keep rewriting the candidate to make it survive its own fixtures. Next evidence should come from real cases / external pressure or a deliberate redundancy pass.
 
 ## Currentness / architecture
 
@@ -103,10 +107,6 @@ CONTINUITY_OF_ROUTE != CONTINUITY_OF_CONCLUSION
 PR #38 remains quarry/development lineage, not automatically the eventual clean release object.
 
 ## Mechanical Ethics — corrected source lineage
-
-A material continuity omission was repaired on 2026-08-28.
-
-### Protected source
 
 Mechanical Ethics Final Eight v0.28.2 was frozen on 2026-06-04 as the protected working source.
 
@@ -126,9 +126,7 @@ Book III := choose_and_answer
 
 Freeze means protected working source, not canon/validation/release/public reader. Future source work derives from it; do not rebuild/wrap/trim by momentum. COM #57 is the bounded lineage ledger.
 
-### Human Reader line
-
-ME repo PR #34 is a separate later human-reader/editorial line over main v0.6.3. Do not order its v0.7 namespace against Final Eight v0.28.2 as though they are one version sequence.
+ME repo PR #34 is a separate later human-reader/editorial line over main v0.6.3.
 
 ```text
 FINAL_EIGHT_VERSION != HUMAN_READER_VERSION
@@ -171,7 +169,7 @@ ME SOURCE-LINEAGE OMISSION:         REPAIRED
 Proceed without human middleware:
 
 1. keep the frozen TRACE outward study intact on transport HOLD;
-2. pressure-test the derived independence/exposure view against real reviewer/audit cases; retire or narrow if redundant;
+2. leave the new independence/exposure candidate and its eight fixtures stable until real/external pressure or a deliberate redundancy pass;
 3. do not bump ME source unless a real decision-relevant gap survives against protected v0.28.2;
 4. let current Square threads answer back before adding more volume;
 5. seek low-burden cold transport only when it can preserve the frozen study contract without turning Mark into infrastructure.
