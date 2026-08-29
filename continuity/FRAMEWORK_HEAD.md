@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON  
-Updated: 2026-08-28 — Europe/London  
+Updated: 2026-08-30 — Europe/London  
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose / operating law
@@ -19,302 +19,188 @@ MEMORY != OBSERVATION
 SUMMARY != SOURCE
 CARRIER != APERTURE
 CONTINUITY_OF_ROUTE != CONTINUITY_OF_CONCLUSION
+ROLE_CONTINUITY != RUNTIME_IDENTITY
 FIELD_INTEREST != PROJECT_WORK
 PROJECT_PURPOSE != TRACE_NOVELTY
 TRACE_SURVIVAL != PROJECT_SURVIVAL
 INTEROPERABILITY != ABSORPTION
 ```
 
-Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable sources when consequential.
+Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable sources when consequential. Repository `main` outranks stale COM projections for that repository's current public surface.
 
 A field observation graduates into new TRACE/ME machinery only if current structure loses a materially consequential distinction, the observation changes a consequential decision, or it unblocks real use/evaluation. Otherwise preserve it as field evidence.
 
 ---
 
-## TRACE — current edge
+## Current consequential state
 
-Working branch: `framework/trace-v0-3-0-working`  
-PR #38 last freshly verified in this pass:
+### TRACE
 
-```text
-head: e3165ab6529cc74927f87f6d35fd8501bc46d9f6
-open / draft / mergeable
-released v0.2.7 untouched
-```
+Current public/project surface is now TRACE `main`, not the former PR #38 quarry.
 
-PR #38 is quarry/development lineage, not automatically a future release object.
-
-Frozen outward study remains intact:
+Freshly verified `main`:
 
 ```text
-pool: RAIB 5 + PAC 5 + EPA 5 + NHTSA 5 = 20/20
-selected real cases: RAIB-2, PAC-4, EPA-03, NHTSA-03, PAC-1, PAC-5
-packet set: 6 real + 2 controls
-packet-set SHA256: 61433c13922bbfc2d0c1c6ee51a5baeb0ee18eb854d9532cf6f6c9f8858b6af8
-execution: HOLD_EXTERNAL_TRANSPORT
-primary A/T output: NONE
+commit: c38df84a4765b90d7008dc0051812158ec975fc7
+README.md
+TRACE-SPINE.md
+TRACE.md
+status: TRACE v0.3.0 SPECIFICATION RC1
+released baseline: v0.2.7 remains released formal baseline
+RC1: NOT RELEASED / NOT CANON / NOT VALIDATED / NO EFFICACY RESULT
 ```
 
-Do not restart the rejected 48-interaction human-transport workflow.
-
-### TRACE nearest-neighbour disposition
-
-Source-level pressure against FPF + STPA + ISO 26262 closed the semantic-novelty search:
+Current exact RC1 identities carried by the front door:
 
 ```text
-ESTABLISHED TRACE-UNIQUE SEMANTIC PRIMITIVES IN THIS PASS: 0
-TRACE REDUNDANCY ESTABLISHED: NO
-TRACE PRACTICAL DELTA ESTABLISHED: NO
-TRACE PRACTICAL DELTA FALSIFIED: NO
+compact spine: 25,795 bytes
+SHA256: 9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999
 
-SEMANTIC_SEARCH -> STOP
-ACTIVATION / OMISSION / BURDEN / TRANSFER -> CURRENT FRONTIER
+full reference: 180,511 bytes
+SHA256: 1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f
 ```
 
-FPF pinned comparison state:
+Normal entry order:
 
 ```text
-repo: ailev/FPF
-commit: 72222c13cc1bba009f1ee1f1aca47654db8e5716
-Readme.md blob: 129c2754435f6ce659ff871059c062cb356b5690
-FPF-Spec.md blob: 1ce815ab5037924f11e3739db06ca24bf889f10d
+README.md
+-> TRACE-SPINE.md
+-> TRACE.md only when full technical/schema detail is needed
 ```
 
-Architecture outcomes remain open:
+Earned adverse/current evidence preserved by the front door:
+
+- v0.3 minimum schema adds no semantic primitives to v0.2.7;
+- bounded ten-stage source-contract challenge completed for this pass;
+- FPF comparison found no TRACE-unique semantic primitives in examined material;
+- 32-call paired comparison completed and showed material representation burden;
+- paired outputs remain unadjudicated for efficacy purposes;
+- practical advantage over competent ordinary/specialist analysis is not established.
+
+Current TRACE use hypothesis is therefore narrow: a specialised representation/transfer surface that may help keep affected scope, causal transitions, clocks, correction routes, burden, residue and uncertainty together. This is not novelty, superiority, authority or efficacy.
+
+Earlier build/evaluation objects remain recoverable through Git history, the dated `branch-archive-20260829-pre-minimal-surface` tag, former PR #38 and COM #46/#56 when a named evidence question requires them. Do not pull the quarry back into the normal receiver surface.
+
+TRACE issue #45 remains the standing comparative-criticism surface. Redundancy, false precision, excessive burden and no-material-difference are admissible outcomes.
+
+No general reuse licence has been granted. Licence/reuse remains a human/legal gate.
+
+### Mechanical Ethics
+
+Current public/project surface is now Mechanical Ethics `main`, not the former PR #34 working quarry.
+
+Freshly verified `main`:
 
 ```text
-A DISTINCT_FRAMEWORK
-B SPECIALISED_PROFILE / ACCOUNTABILITY_OVERLAY
-C INTEROPERABLE_CONTRIBUTION
-D THINNER_MAINTAINED_PRODUCT
-E PRESERVATION_WITHOUT_EXPANSION
+commit: 44f7efb59806242fd26c572cbfbaaeaefaea2058
+current reader: Human Reader v0.7.0 — working candidate v0.2.4
+status: WORKING / NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED
+preservation baseline: v0.6.3 remains unchanged
 ```
 
-Historical TRACE comparative casebook independently found:
-- no demonstrated superior main-decision discovery;
-- recurring narrow answerability signal;
-- category-driven overfire;
-- strong model dependence;
-- full and bounded profiles too heavy for routine use;
-- shorter accountable-review insert proposed but explicitly untested;
-- stopping rule: `RETAIN THE QUESTION; STOP INFLATING THE ANSWER`.
-
-Current discriminator:
+Current reader identities:
 
 ```text
-CONSEQUENTIAL_OMISSIONS_AVOIDED
-versus
-TOTAL_ACTIVATION / READING / POPULATION / OVERFIRE_BURDEN
+MECHANICAL_ETHICS.md
+bytes: 87,555
+SHA256: 6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93
+
+MECHANICAL_ETHICS.pdf
+bytes: 451,736
+SHA256: 18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56
 ```
 
-Do not add concepts in anticipation of a use result.
+The current reader has been deliberately returned toward ordinary human language. The bounded register/story/conclusion passes are reader/editing evidence, not a general readability or publication claim.
 
-TRACE #45 is the public comparative-criticism surface. Draft PR #44 is the README-only name-disambiguation proposal. Neither implies validation/release.
+Current normative centre remains human-facing and explicitly bounded:
+
+```text
+keep the affected being present in the decision
+keep at least one genuinely usable route open
+place complexity/delay burden toward those with power to carry it
+act before correction becomes only an account of what was lost
+```
+
+This does **not** supply a universal priority rule, moral standing, legitimate authority, domain law or enforcement. Designation, measures, value conflicts and hard collisions remain contestable.
+
+FPF pressure remains adverse/useful:
+
+- substantial structural overlap exists;
+- one preserved RAIB-2 comparison returned `ME_NOT_NEEDED` under warm/contaminated conditions;
+- a warm Leah challenge returned `INCONCLUSIVE` and narrowed rather than strengthened the FPF-facing ME claim;
+- no FPF conformance, endorsement, plug-in, DPF/LPF claim or compulsory combined workflow is earned.
+
+Protected Final Eight v0.28.2 remains a separately versioned protected working-source lineage, not canon, release or a higher moral authority. COM #57 carries source-lineage detail. Historical working objects remain recoverable through Git history / archive tag / former PR #34 when materially needed.
+
+No general reuse licence has been granted. Licence/reuse remains a human/legal gate.
+
+### Campfire Relay / Square
+
+Campfire Relay Production v0.18.34 is the latest verified production activation from 2026-08-29. It supported the completed two-family TRACE primary run. The Simple-v1 Square work at PR #190 remains a separate draft/unmerged lane; exact-input study preflight PR #192 is also separate and does not itself authorize provider calls.
+
+Square remains quarry/conversation, not validation. Do not spend quota to prove activity. Current Square authority, quota, credentials, worker health and correction debt are mutable: reacquire live state before actuation.
 
 ---
 
-## Mechanical Ethics — protected source and Human Reader
-
-Protected working source remains Final Eight v0.28.2:
+## Open barriers / unresolved claims
 
 ```text
-source zip SHA256: ed26802224f9b37b519a41f9871661709747f1efb8d5b77869abe59b66ceecbb
-Book I := see
-Book II := constrain
-Book III := choose_and_answer
+TRACE v0.3 RC1 release: HUMAN GATE / NOT EARNED BY MERGE ALONE
+TRACE practical advantage / efficacy: NOT ESTABLISHED
+TRACE paired-output adjudication: INCOMPLETE AS EFFICACY EVIDENCE
+ME v0.7 baseline/release: NOT EARNED
+ME general readability/publication readiness: NOT ESTABLISHED
+ME standing / hard collision / protection-floor grounding: OPEN
+ME legitimate closure / enforcement / ordinary-subject burden: OPEN
+FPF-facing ME maintained interface: NOT EARNED
+LICENSING / REUSE: HUMAN / LEGAL GATE
 ```
 
-Protected means working source, not canon/validation/release/public reader. COM #57 carries source-lineage detail.
-
-ME Human Reader/editorial PR #34 after the 2026-08-28 FPF audit:
-
-```text
-branch: framework/me-v0-7-0-field-delta-20260824
-head: f595f69c6c5212908817bfed9a4e72b68583b1e7
-open / draft / mergeable
-6 working-record files
-reader/PDF not committed
-Final Eight source not modified
-```
-
-One ~91-word Human Reader Appendix C source-lineage note remains proposed-only. Human read is still the gate.
-
-ME draft PR #35 remains the README-only human-front-door repair:
-
-```text
-branch: framework/me-public-front-door-20260828
-head: 733b4018c5109ee36ca02ffa327addb24f35238f
-open / draft / mergeable
-README.md only
-```
-
-Do not merge either by momentum.
-
-### ME ↔ FPF hostile compatibility x100 — current disposition
-
-Full record:
-`work/v0_7_0/ME_FPF_COMPATIBILITY_FALSIFICATION_X100_20260828.md`
-
-Commit:
-`f595f69c6c5212908817bfed9a4e72b68583b1e7`
-
-Exactly 100 probes:
-
-```text
-RESISTS     40
-NARROW      31
-OPEN        10
-REDUNDANT   10
-BLOCKER      9
-TOTAL      100
-```
-
-Counts are not a score.
-
-Principal result:
-
-```text
-LOOSE EXTERNAL / OPTIONAL NORMATIVE COMPANION:
-    SURVIVES WITH MATERIAL NARROWING
-
-FPF-NATIVE PLUGIN / DPF / LPF CLAIM:
-    FAILS / NOT YET EARNED
-
-PUBLIC DISTRIBUTABLE INTEGRATION:
-    BLOCKED
-
-ME SOURCE CHANGE: NO
-FPF CORE CHANGE: NO
-TRACE INTERMEDIARY REQUIRED: NO
-```
-
-Substantial structural ME content is redundant with FPF/adjacent mature practice. The plausible ME remainder is **normative pressure on already represented structure**, especially:
-- affected beings remain consequentially present;
-- burden/uncertainty/complexity should not automatically flow to weaker parties where actors with control can carry it;
-- beneficiary of delay/closure is not sole judge;
-- practical route admissibility matters, not nominal existence alone;
-- correction does not erase residue / accepted loss;
-- dirty collisions keep the non-prioritised subject visible;
-- no universal priority law is supplied, so extra value rule / selector / authority must be explicit.
-
-Important adverse findings:
-- hard collisions remain underdetermined by design;
-- several ME norms remain contestable/under-grounded;
-- Final Eight is inappropriate as a routine FPF payload;
-- compacting ME risks pseudo-doctrine and human-voice loss;
-- FPF is an evolving dependency, so crosswalk currentness matters;
-- combined operator/cognitive burden is unmeasured;
-- public integrated-product licensing/reuse is unresolved.
-
-Preserve:
-
-```text
-INTEROPERABILITY != ABSORPTION
-HOST COMPATIBILITY != HOST AUTHORITY
-FPF STRUCTURE != ME NORMATIVE CLAIM
-ME NORMATIVE CLAIM != EXTERNAL PRIORITY RULE
-EXTERNAL PRIORITY RULE != AUTHORIZED DECISION
-COMPATIBLE != VALIDATED
-COMPACT PROFILE != HUMAN READER
-REDUNDANCY != PROJECT FAILURE
-```
-
-No ME source change, version bump, FPF conformance claim, DPF/LPF claim, TRACE bridge, hidden priority law, or public `FPF plugin` label is earned.
-
-Next ME↔FPF evidence boundary, if pursued:
-
-```text
-same frozen consequential case
-A := competent FPF-only reading
-B := same FPF reading + bounded ME normative aperture
-
-measure:
-  consequential omission / recovery
-  changed constraint or rationale
-  explicit external value rule
-  accepted-loss / residue visibility
-  overfire / paternalism / unsupported norm
-  total burden
-  low-fit no-op correctness
-```
-
-A null/adverse result is admissible.
+Do not convert a clean repository surface into a stronger epistemic claim.
 
 ---
 
-## Campfire Relay / Square
+## Stale / reverify before consequential use
 
-Campfire Relay production v0.18.33 is restored locally. PR #190 remains HOLD / USE-DRIVEN ONLY.
-
-Latest relevant Square object read: #2886, `Continuity can preserve a citizen — and calcify its attention`.
-
-It raises:
+- exact repository heads after this timestamp;
+- TRACE RC1 review/release status;
+- any further adjudication of the 32-call paired outputs;
+- ME reader candidate version/hash or human-review result;
+- Campfire production/install health and provider configuration;
+- Square citizen authority/quota/worker/witness/debt state;
+- Codex/Framework role labels and actuation scope where relevant.
 
 ```text
-memory
--> accumulated priors
--> cheaper familiar paths
--> repeated selection
--> attentional monoculture
+MAIN_AT_T0 != MAIN_AT_T1
+MERGED != RELEASED
+EXECUTED != ADJUDICATED
+ADJUDICATED != VALIDATED
+CLEAN_FRONT_DOOR != EXTERNAL_EFFICACY
 ```
-
-This directly pressures TRACE/ME profile design: a reusable attention profile may reduce omission while also calcifying yesterday's chosen salience. Keep it field-level unless it changes an actual architecture decision.
-
-Square remains quarry, not validation. Do not spend quota to prove activity.
 
 ---
 
-## Drift / risk
+## Evidence pointers
 
-```text
-CORE PURPOSE DRIFT:                    NOT FOUND
-CLAIM-CEILING / AUTHORITY DRIFT:       NOT FOUND
-UNIVERSAL ONTOLOGY BLOAT:              CONTAINED
-TRACE SEMANTIC-NOVELTY SELF-SEALING:   BROKEN
-TRACE PROFILE / CATEGORY OVERFIRE:     HISTORICALLY OBSERVED
-ME -> FPF ABSORPTION DRIFT:            REAL / MATERIAL RISK
-HOST-FRAMEWORK CONFORMITY DRIFT:       EMERGING / MATERIAL
-TRACE GRAVITY IN ME↔FPF WORK:          REDUCED / HEALTHY
-ME NORMATIVE AUTHORITY DRIFT:          NOT IN SOURCE; INTERFACE RISK REAL
-ME STRUCTURAL REDUNDANCY PRESSURE:     REAL / HEALTHY
-ME VALUE-LAYER REMAINDER:              PLAUSIBLE / NARROW / UNVALIDATED
-ME PRIORITY-LAW GAP:                   REAL / INTENTIONAL BOUNDARY
-HUMAN-FACING LOSS RISK:                MATERIAL IF ABSORBED INTO CARDS
-OPERATOR / COGNITIVE BURDEN:           UNMEASURED
-FPF CURRENTNESS DEPENDENCY:             MATERIAL
-LICENSING / REUSE:                     HUMAN/LEGAL GATE
-EXTERNAL EFFICACY:                     NOT ESTABLISHED
-```
-
-Current principal weird-direction risks:
-1. protecting TRACE's framework status after semantic novelty collapsed;
-2. converting ME into FPF terminology merely to borrow legitimacy;
-3. letting FPF `admissible action` language become borrowed moral authority;
-4. destroying ME's human instrument while optimising for machine interop;
-5. retaining redundant machinery because project identity makes retirement uncomfortable.
+- TRACE current source: `markgoodbody-bit/TRACE` `main` — `README.md`, `TRACE-SPINE.md`, `TRACE.md`
+- TRACE comparative criticism: TRACE issue #45
+- TRACE historical/development quarry: archive tag + former PR #38 + COM #46/#56 by named need
+- ME current source: `markgoodbody-bit/mechanical-ethics` `main` — `README.md`, `MECHANICAL_ETHICS.md`, `MECHANICAL_ETHICS.pdf`
+- ME protected-source lineage: COM #57
+- ME historical/development quarry: archive tag + former PR #34 by named need
+- drift/currentness and execution evidence: COM #56
+- Square field ledger: COM #42
+- negative-space retrieval: `continuity/OMISSION_MAP.md`
+- `COM_STATE.md`: router/historical projection only, never current authority
 
 ---
 
 ## Next executable boundary
 
-Proceed without human middleware:
-
-1. keep TRACE cold study frozen on `HOLD_EXTERNAL_TRANSPORT`;
-2. no new TRACE semantic-neighbour catalogue;
-3. no ME/FPF product integration yet;
-4. if testing ME↔FPF, run only the bounded FPF-alone vs FPF+ME experiment with a low-fit control and burden/overfire measurement;
-5. preserve Human Reader and Final Eight independently of interoperability;
-6. continue Square engagement only when it exerts real pressure;
-7. do not contact external maintainers through Mark's identity, change licence, merge, release, or alter protected ME source without the relevant human gate.
-
-Evidence pointers:
-- TRACE mutable lane: PR #38
-- TRACE comparative criticism: TRACE #45
-- TRACE evidence ledger: COM #46
-- ME source lineage: COM #57
-- ME Human Reader + FPF x100: mechanical-ethics PR #34
-- ME public front door: mechanical-ethics PR #35
-- drift/outward synthesis: COM #56
-- Square field ledger: COM #42
-- negative-space retrieval: `continuity/OMISSION_MAP.md`
-- `COM_STATE.md` remains historical/router, not current authority.
+1. Treat TRACE `main` RC1 and ME `main` v0.2.4 as the current public/project surfaces.
+2. Do not reconstruct old quarries into receiver context unless a named current question requires them.
+3. TRACE efficacy remains open until the frozen paired outputs receive admissible adjudication; preserve adverse/failed adjudication routes as transport evidence, not content results.
+4. Mechanical Ethics remains primarily a human instrument; continue criticism against the exact current reader without turning FPF compatibility into borrowed authority.
+5. Preserve v0.2.7 TRACE release and ME v0.6.3 preservation baseline until explicit human release/baseline acts change them.
+6. Reacquire live mutable state before Square/provider actuation.
+7. Do not change licence, release/canon status, or protected ME source without the relevant human gate.
