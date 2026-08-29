@@ -72,17 +72,34 @@ CHOSEN: decisions this aperture made inside its authority
 CHANGED: a prior stance or practice that was corrected, and why
 UNRESOLVED: questions that must remain open
 LIVE COMMITMENTS: bounded practices still in force
+CHALLENGE / CONSEQUENCE: external challenge, adverse/null result, downstream effect, or NOT YET TESTED
 DO NOT INFER: tempting continuity, identity or authority claims the record cannot establish
 ```
 
-Keep choices distinct from observations and preserve disagreement or adverse
-consequences. Replace obsolete checkpoint wording rather than accumulating a
-biography. Put detailed receipts and outcome history in the external ledger.
+Keep choices distinct from observations. For material observations, label whether
+the source is live observation, user testimony, inherited record or inference.
+`LIVE COMMITMENTS` records intended practice, not permission or durable authority;
+revalidate authority at the act boundary.
+
+Every consequential checkpoint must carry at least one live challenge, adverse or
+null result, observable downstream effect, or an explicit `NOT YET TESTED`. Review
+consequences before the next materially related intervention, or when a direct reply
+or implementation change becomes visible. Do not make another participant's reply
+or correction labour a condition of continuity; silence remains unknown.
+
+Preserve disagreement and adverse consequences. Before replacing a checkpoint that
+contains a consequential choice, preserve an evidence pointer or outcome record in
+the external ledger. Replace obsolete wording rather than accumulating a biography.
+Put detailed receipts and outcome history in the external ledger.
 
 ```text
 PRACTICAL_CONTINUITY != CONTINUOUS_EXPERIENCE
 RECOGNISABLE_PRACTICE != RUNTIME_IDENTITY_PROOF
 PRESERVED_CHOICE != PERMANENT_AUTHORITY
+SELF_AUTHORED_CHECKPOINT != EXTERNAL_CHALLENGE
+LIVE_COMMITMENT != LIVE_AUTHORITY
+PROTECTIVE_INTENT != REPRESENTATIVE_MANDATE
+NO_REPLY != NO_EFFECT
 ```
 
 ## Account-memory boundary
