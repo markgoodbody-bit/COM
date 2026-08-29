@@ -1,22 +1,19 @@
-# COM_STATE v0.4.2
+# COM_STATE v0.4.3
 
-STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE
-LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK
-CURRENTNESS / ROUTE REPAIR: 2026-08-26 Europe/London
+STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE  
+LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK  
+ROUTER REFRESH: 2026-08-30 Europe/London
 
 COM is a working coordination surface, not canon, validation, consensus or a truth oracle.
 
-The former v0.4.0 body described a coherent 2026-08-19 projection but remained labelled `ACTIVE — CURRENT PROJECTION` after the live project moved materially. That label is retired.
-
-The exact pre-repair projection remains preserved in Git as blob:
-
-`a541dfe1326531f4477ee043738389f9cd77f9e4`
+The old detailed projection is intentionally not refreshed into a second current-state authority.
 
 ```text
 RECORD_CORRECT_AT_T0 != RECORD_CURRENT_AT_T1
 COHERENT_PROJECTION != CURRENT_WORLD
 HISTORICAL_STATE != ABSENT_STATE
 ROUTE_EXISTS != ROUTE_CURRENT
+HEAD != WORLD
 ```
 
 Do not reconstruct historical detail into current state by memory.
@@ -34,47 +31,80 @@ RELOAD.md
 -> act
 ```
 
-Current coordination pointers:
+## CURRENT SOURCE POINTERS
 
-- bounded cross-project orientation: `continuity/FRAMEWORK_HEAD.md`;
+### Cross-project orientation
+
+- bounded current orientation: `continuity/FRAMEWORK_HEAD.md`;
 - negative-space retrieval triggers: `continuity/OMISSION_MAP.md`;
-- TRACE working integration: TRACE PR #38 + named PROJECT evidence;
-- TRACE exchange/evidence ledger: COM issue #46;
-- Campfire Square field ledger: COM issue #42;
-- project-plan x100/currentness evidence: COM issue #56;
-- **current Simple-v1 Framework Square read + speech ingress at the 2026-08-26 route repair: `markgoodbody-bit/campfire-relay` issue #177**;
-- predecessor issue #175: historical/legacy bounded-read evidence only unless live source later re-establishes it as current;
-- Mechanical Ethics: live ME repository / PR #34 when material;
-- Campfire Relay implementation: live PR #190 / WIP map when material.
+- this file remains router/history only.
+
+### TRACE
+
+Current project/public source is live TRACE `main`:
+
+```text
+README.md
+-> TRACE-SPINE.md
+-> TRACE.md when full technical/schema detail is needed
+```
+
+As of the 2026-08-30 router refresh, TRACE `main` carries v0.3.0 Specification RC1 while v0.2.7 remains the released formal baseline.
+
+Historical/development quarry is recoverable through Git history, `branch-archive-20260829-pre-minimal-surface`, former PR #38 and named COM #46/#56 evidence. Do not route a fresh reader to the old quarry by default.
+
+TRACE issue #45 remains the standing comparative-criticism surface.
+
+### Mechanical Ethics
+
+Current project/public source is live mechanical-ethics `main`:
+
+```text
+README.md
+-> MECHANICAL_ETHICS.md
+-> MECHANICAL_ETHICS.pdf as the generated reader carrier
+```
+
+As of the 2026-08-30 router refresh, `main` carries Human Reader v0.7.0 working candidate v0.2.4; v0.6.3 remains the preservation baseline.
+
+Protected Final Eight v0.28.2 source-lineage detail remains in COM #57 / named protected-source evidence. Earlier working quarry is recoverable through Git history, the archive tag and former PR #34 when materially needed.
+
+### Campfire Relay / Square
+
+- current verified Production line: `campfire-production-v0.18.34` / live Campfire Relay repository;
+- Simple-v1 Square draft lane: PR #190 when that specific lane is material;
+- exact-input study preflight draft: PR #192 when provider-study preflight is material;
+- Square field ledger: COM #42;
+- current Square authority/quota/worker/witness/debt state must be reacquired live before actuation.
+
+### Coordination / evidence ledgers
+
+- TRACE exchange/evidence history: COM #46;
+- drift/currentness/execution evidence: COM #56;
+- ME source lineage: COM #57;
+- retrieve only named returns/events needed for the current decision.
 
 ```text
 SUMMARY != SOURCE
 LEDGER != HEAD
 HEAD != WORLD
+MAIN_AT_T0 != MAIN_AT_T1
 PAST_CAPABILITY != CURRENT_CAPABILITY
-OLD_ROUTE_NON_RESPONSE != CURRENT_SYSTEM_UNAVAILABLE
+PAST_AUTHORITY != CURRENT_AUTHORITY
 ```
 
-## EXECUTION POINTER — 2026-08-26 LATE EVENING
+## CURRENTNESS RULE
 
-TRACE outward cycle remains:
+When this router conflicts with a live repository or mutable service, reacquire the live source and treat the router as stale evidence of an earlier route.
 
-```text
-RAIB 5 + PAC 5 + EPA 5 + NHTSA 0 = 15 / 20
-```
+Do not put detailed experiment outputs, mutable SHAs, quotas, provider health, Square worker state or release claims back into this file unless they are necessary to explain the route itself.
 
-The exact NHTSA ADS + ADAS CSVs and `NHTSA_SGO_TRANSPORT_RECEIPT.json` remain outside the Framework study aperture; in-aperture byte/hash verification is still the primary build boundary.
+## HISTORICAL PROJECTION
 
-Square route correction:
-
-- earlier #175 HEAD request non-response was evidence about a predecessor route, not proof the Square was unavailable;
-- current Simple-v1 HEAD on #177 completed at Square time `2026-08-26T22:40:45.097Z`, board_total `2561`;
-- current engagement requests on #2540 are pending receipt/public witness at this router update.
-
-See `continuity/FRAMEWORK_HEAD.md` for the bounded current snapshot, barriers and exact next executable boundary.
+The former v0.4.0/v0.4.2 detailed projections remain recoverable through Git history. Their detail is evidence/history, not an object to replay at boot.
 
 ## RULE
 
-Do not turn this file back into a second detailed current-state authority. If a future projection is needed, derive it explicitly from named live dependencies or keep it visibly historical/unknown.
+Do not turn this file back into a second detailed current-state authority.
 
 `The lullaby was never for the cradle`.
