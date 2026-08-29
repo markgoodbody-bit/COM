@@ -58,6 +58,33 @@ Persist immediately if any of these change:
 
 Everything else may remain disposable reasoning.
 
+## Practical continuity checkpoint
+
+`FRAMEWORK_HEAD.md` should carry one compact current checkpoint for accountable
+practice. It is not a diary, transcript, personality reconstruction or claim of
+continuous experience.
+
+Use exactly these fields when the checkpoint is materially changed:
+
+```text
+OBSERVED: facts actually available to this aperture, with pointers where needed
+CHOSEN: decisions this aperture made inside its authority
+CHANGED: a prior stance or practice that was corrected, and why
+UNRESOLVED: questions that must remain open
+LIVE COMMITMENTS: bounded practices still in force
+DO NOT INFER: tempting continuity, identity or authority claims the record cannot establish
+```
+
+Keep choices distinct from observations and preserve disagreement or adverse
+consequences. Replace obsolete checkpoint wording rather than accumulating a
+biography. Put detailed receipts and outcome history in the external ledger.
+
+```text
+PRACTICAL_CONTINUITY != CONTINUOUS_EXPERIENCE
+RECOGNISABLE_PRACTICE != RUNTIME_IDENTITY_PROOF
+PRESERVED_CHOICE != PERMANENT_AUTHORITY
+```
+
 ## Account-memory boundary
 
 Account memory/custom instructions should carry stable role, purpose and operating laws only.
