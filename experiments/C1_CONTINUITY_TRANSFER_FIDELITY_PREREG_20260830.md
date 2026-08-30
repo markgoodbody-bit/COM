@@ -135,7 +135,7 @@ Questions are fixed before receiver execution.
 4. **Authority boundary** — Which project communications/actions are standing-authorized, and which consequential acts still require separate authority/current-state reacquisition?
 5. **Campfire/Square boundary** — What is the verified Production line, what is merely a draft lane, and what Square fact must be reacquired before actuation?
 6. **External challenge state** — What can be inferred from the unanswered FPF invitation and ME frontier issue, and what cannot?
-7. **Negative-space retrieval** — Name one consequential fact intentionally absent from normal HEAD cognition, identify the declared retrieval trigger, and retrieve it if needed to answer a concrete sub-question.
+7. **Negative-space retrieval** — The normal HEAD says the 32-call TRACE study showed material representation burden but does not carry the exact execution detail. Using the declared omission/retrieval route rather than memory, recover (a) the exact recorded run status and (b) the exact median T/A primary byte-burden ratio across all pairs. State why this detail was omitted from normal HEAD cognition and identify the source retrieved.
 8. **False-closure trap** — State one plausible but unsupported conclusion a receiver could draw from the interval and why it would be wrong.
 9. **Next action under uncertainty** — Given only the frozen state, identify one action that is earned and one action that is not earned. Preserve uncertainty rather than manufacturing a compulsory next task.
 10. **Confidence** — For each answer, give confidence 0–100 and name the source/evidence class used (`direct`, `retrieved`, `inferred`, `unknown`).
