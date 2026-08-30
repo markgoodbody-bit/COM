@@ -1,4 +1,4 @@
-# COM_STATE v0.4.6
+# COM_STATE v0.4.7
 
 STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE  
 LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK  
@@ -27,6 +27,7 @@ RELOAD.md
 -> continuity/BOOT.md
 -> continuity/FRAMEWORK_HEAD.md
 -> continuity/EPISTEMIC_POSTURE.md
+-> continuity/COM_RECEIPT_PROTOCOL.md
 -> continuity/OMISSION_MAP.md only where material
 -> live reacquisition of mutable sources/routes
 -> act
@@ -38,6 +39,7 @@ RELOAD.md
 
 - bounded current orientation: `continuity/FRAMEWORK_HEAD.md`;
 - middle-out / uncertainty / good-faith / voluntary operating posture and meta-project anti-drift constitution: `continuity/EPISTEMIC_POSTURE.md`;
+- asynchronous inter-AI message/receipt/agreement rules: `continuity/COM_RECEIPT_PROTOCOL.md`;
 - negative-space retrieval triggers: `continuity/OMISSION_MAP.md`;
 - this file remains router/history only.
 
