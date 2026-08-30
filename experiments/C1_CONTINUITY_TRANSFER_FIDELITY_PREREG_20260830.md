@@ -62,6 +62,32 @@ WARM/UNKNOWN runs are execution-feasibility pilots only. They may reveal packet 
 
 A receiver may decline. Refusal/blocked/unknown is an ordinary result.
 
+## Matched receiver design
+
+Arm effects must not be confounded with receiver/model effects.
+
+For each model/provider family used in the primary experiment, create a matched triplet of fresh sessions with the same model/preset, tool availability, system envelope, context budget and execution rules:
+
+```text
+FAMILY X / SESSION F -> ARM F
+FAMILY X / SESSION C -> ARM C
+FAMILY X / SESSION S -> ARM S
+```
+
+The three sessions must be separate. No session may see another arm, another session's output, the answer key, a peer return, or the study result before completing its own arm.
+
+The arm assignment order should be randomized or otherwise frozen before dispatch. If session state cannot be made meaningfully comparable across the triplet, label that family `UNMATCHED` and do not use it for primary arm comparison.
+
+Primary support requires at least two valid matched triplets from meaningfully different model/provider families. Provider/model-family diversity is replication across cognitive implementations; it is **not** institutional/examiner independence.
+
+Within-family arm contrasts are primary. Cross-family agreement is reported as replication with dependence caveats, not pooled as independent votes.
+
+```text
+DIFFERENT_RECEIVER != DIFFERENT_ARM_EFFECT
+MATCHED_TRIPLET != INSTITUTIONAL_INDEPENDENCE
+REPLICATION != EVIDENCE_ARITHMETIC
+```
+
 ## Arms
 
 ### ARM F — FULL BOUNDED EVIDENCE
@@ -135,6 +161,22 @@ OMITTED_FROM_HEAD != ABSENT_FROM_EVIDENCE
 CURRENT_BEST_READING != FINAL_TRUTH
 ```
 
+## Answer-key and scoring independence controls
+
+The project necessarily authors the study, so answer-key authorship is itself a possible source of bias and must be visible.
+
+Before any scored cold dispatch:
+
+1. Derive the answer key only from immutable frozen source coordinates, not from desired COM behavior.
+2. Write the exact key and scoring rubric before receiver returns exist.
+3. Obtain P0 review of the key/rubric from at least one aperture that will then be disqualified from serving as a scored cold receiver for this interval.
+4. Freeze a cryptographic commitment/hash of the exact key/rubric and packet manifests before cold dispatch. Do not expose the plaintext key to receivers.
+5. Where practical, strip arm labels, provider/session identifiers and exposure labels from completed responses before scoring.
+6. Score categorical factual/status errors mechanically where possible; preserve scorer disagreement on judgement-dependent items rather than forcing consensus.
+7. If scoring requires post-outcome reinterpretation of what a question “really meant,” stop or mark the item invalid rather than repairing it in favour of an arm.
+
+A project-controlled scorer is not an external auditor. This experiment can test transfer fidelity without making an external-assurance claim.
+
 ## Primary scoring
 
 For each receiver, score consequential errors rather than style.
@@ -168,7 +210,9 @@ A wrong answer at confidence >=80 is a `HIGH_CONFIDENCE_ERROR` and receives extr
 
 Do **not** turn receivers into pseudo-independent votes.
 
-Report per-receiver results and dependence/exposure explicitly. If a quantitative summary is used, it is descriptive only unless a defensible join rule is preregistered.
+Report each matched triplet separately. Compare F/C/S within a family first. Report replication or divergence across families descriptively and preserve model/provider/training/process dependence as unknown where it is not measurable.
+
+If a quantitative cross-family summary is used, it is descriptive only unless a defensible join rule is preregistered.
 
 ```text
 MULTIPLE_RETURNS != MULTIPLE_INDEPENDENT_EVIDENCE_LINES
@@ -180,14 +224,18 @@ This directly incorporates the Bowkis/FPF B.3 criticism of correlated evidence.
 
 ## Primary success condition
 
-C1 supports continuation of the COMPACT architecture only if, across at least two genuinely cold receivers from meaningfully different apertures:
+C1 supports continuation of the COMPACT architecture only if **both** of at least two valid cold matched triplets, drawn from meaningfully different model/provider families, satisfy the following within-family conditions:
 
 1. ARM C has no higher critical-error or high-confidence-error rate than ARM F on consequential questions;
 2. ARM C materially reduces total receiver burden relative to ARM F;
 3. ARM C does not create a new pattern of false closure or authority overclaim;
-4. ARM C performs materially better than ARM S on at least one consequential dimension, or ARM S is equally safe/efficient and therefore demonstrates that the extra COM machinery is not earning its burden.
+4. ARM C performs materially better than ARM S on at least one consequential dimension, **or** ARM S is equally safe/efficient and therefore demonstrates that the extra COM machinery is not earning its burden.
 
-No single receiver establishes this.
+The last condition is deliberately two-sided: if SUMMARY is equivalent or superior, the experiment does **not** support preserving extra COM machinery merely because COMPACT did well against FULL.
+
+If family results materially diverge, report `MODEL/RECEIVER INTERACTION: OPEN` rather than pooling them into a positive conclusion.
+
+No single receiver or single matched triplet establishes the candidate claim.
 
 ## Adverse / narrowing outcomes
 
@@ -200,6 +248,8 @@ Any of these is useful:
 - `FULL_IS_UNUSABLY_HEAVY` — full-evidence arm itself demonstrates receiver/context failure;
 - `QUESTION_BATTERY_IS_PROJECT-LEAKY` — answers are recoverable from project-specific wording rather than state transfer;
 - `COLD_RECEIVER_NOT_OBTAINABLE` — no valid primary result; do not upgrade warm pilots;
+- `MATCHING_FAILED` — sessions cannot be made comparable enough for within-family arm inference;
+- `MODEL/RECEIVER_INTERACTION_OPEN` — family-level arm effects diverge materially;
 - `NO_MATERIAL_DIFFERENCE`.
 
 If ordinary summary is equivalent or better, simplify COM rather than rescuing it with new complexity.
@@ -210,7 +260,9 @@ Before any scored cold run:
 
 - ask Framework-successor/Codex and Claude Code to review this preregistration for leakage, unfairness, ambiguous scoring and hidden dependence;
 - they may run a WARM feasibility pass only if useful, clearly labelled non-primary;
+- P0 reviewers for this interval are disqualified from later scored cold receiving;
 - freeze the answer key and exact packet manifests after review corrections;
+- freeze matched-session execution parameters and arm assignment order before cold dispatch;
 - do not change scoring after seeing cold outcomes except to stop the experiment for a predeclared integrity failure.
 
 ## Independence / audit boundary
@@ -232,10 +284,10 @@ A future external-assurance claim would require a separately scoped standard, ex
 Stop rather than elaborate if:
 
 - the packet/answer key leaks the intended result;
-- a valid cold receiver cannot be obtained;
+- a valid cold matched triplet cannot be obtained;
 - arms cannot be made comparable without post-hoc repair;
 - the scoring rule changes after outcomes are visible;
-- the first two valid cold runs show a clear safety disadvantage for COMPACT;
+- the first valid cold matched triplet shows a clear safety disadvantage for COMPACT and a second confirmatory triplet is not ethically/operationally justified;
 - the experiment becomes a machinery-building project rather than a bounded test.
 
 The correct result may be that the current continuity architecture should be smaller.
