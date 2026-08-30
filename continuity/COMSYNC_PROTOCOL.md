@@ -20,12 +20,15 @@ A COMSYNC should:
 
 1. reacquire current COM `main`;
 2. read `COM_STATE.md` and follow its current routing;
-3. read the bounded `FRAMEWORK_HEAD`, `EPISTEMIC_POSTURE`, `COM_RECEIPT_PROTOCOL`, and omission map only where material;
-4. read new coordination messages/receipts since the aperture's last known cursor rather than replaying whole threads;
-5. identify current assignments, superseding directions, unresolved receipt debt and any basis-head mismatch;
-6. reacquire only the live project sources needed for the current assignment;
-7. return required receipts for consequential directions/decisions encountered during the sync;
-8. do not ingest broad Square history or unrelated cold evidence merely because it exists.
+3. read the bounded `FRAMEWORK_HEAD`, `EPISTEMIC_POSTURE`, `TEAM_OPERATING_MODEL`, `COM_RECEIPT_PROTOCOL`, and omission map only where material;
+4. read `coordination/ACTIVE_THREAD_POINTER.md`, then use that live active coordination thread rather than assuming an older issue number remains current;
+5. read new coordination messages/receipts since the aperture's last known cursor rather than replaying whole retired/cold threads;
+6. identify current assignments, superseding directions, unresolved receipt debt and any basis-head mismatch;
+7. reacquire only the live project sources needed for the current assignment;
+8. return required receipts for consequential directions/decisions encountered during the sync;
+9. do not ingest broad Square history or unrelated cold evidence merely because it exists.
+
+If the active-thread pointer and live issue state disagree, live issue state wins and the pointer should be repaired.
 
 COMSYNC is designed to be cheap enough to run frequently.
 
@@ -68,6 +71,12 @@ BASIS_HEAD != CURRENT_HEAD_BY_ASSUMPTION
 ## Rollover rule
 
 Active coordination threads are working apertures, not permanent cognition surfaces. When a thread becomes retrieval-heavy, its body is materially stale, or current work is difficult to distinguish from history, freeze it as a cold ledger and open a fresh active coordination thread with a compact handoff and unresolved receipt debt carried forward.
+
+After rollover:
+- update `coordination/ACTIVE_THREAD_POINTER.md`;
+- leave a final pointer in the retired thread;
+- close/freeze the retired thread without deleting history;
+- do not require fresh apertures to replay the retired thread.
 
 No universal comment-count threshold is required. The trigger is material retrieval/currentness burden.
 
