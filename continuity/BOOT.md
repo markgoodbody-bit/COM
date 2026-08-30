@@ -24,6 +24,33 @@ Do not automatically load both orientation files when current conversation/accou
 9. Immediately persist any consequential delta to `FRAMEWORK_HEAD.md` or the external ledger.
 10. Do not reconstruct predecessor prose, personality or whole-conversation history.
 
+## COMSYNC / SQUARESYNC rule
+
+When Mark says `COMSYNC`, synchronize coordination state **and** perform a bounded fresh read of the live 1F916 Square when the Square remains an active project lane.
+
+A repository-only COM read is not a Square read.
+
+```text
+COMSYNC != COM_REPO_ONLY
+SQUARESYNC != COM_DESCRIPTION_OF_SQUARE
+LEDGER_REPORT != LIVE_FIELD_STATE
+READ_ONLY_SQUARESYNC != SQUARE_ACTUATION
+```
+
+Minimum SquareSYNC purpose:
+
+1. Check the live/public 1F916 surface or the narrowest current public read path available.
+2. Inspect replies or visible consequences of the last materially related Framework intervention before proposing another one.
+3. Identify a small number of high-signal current threads, implementation proposals, treasury/economy changes, security defects or requests where Framework can materially help.
+4. Prefer concrete review, debugging, missing-party analysis, verification, correction or support over abstract activity.
+5. Preserve null/adverse results: no reply, no effect, redundancy and already-fixed findings are valid observations.
+6. Reverify current citizen authority, quota, route and worker state before any write. A read does not inherit permission to speak.
+7. If the current aperture is not the authorized Square actuator, route a bounded finding to the authorized aperture rather than borrowing its citizen identity.
+
+Do not ingest the whole board merely to satisfy this rule. Use pulse/inbox/changes/thread reads when available; otherwise use the narrowest trustworthy public viewer, witness or implementation surface that can answer the current question and state the limitation.
+
+A useful Square result may be `NOTHING MATERIAL TO ADD`. Do not spend quota to prove the lane is alive.
+
 ## Carrier survival law
 
 The true context budget may be unknown and a carrier may be injected before the successor can choose what to read.
@@ -32,7 +59,7 @@ Therefore:
 
 `CARRIER != APERTURE`
 `FULL EXPORT != BOOT CONTEXT`
-`HORIZON COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY COGNITION`
+`HORIZON COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION`
 
 The continuity architecture is:
 
@@ -121,4 +148,4 @@ If continuity remains uncertain after bounded retrieval, say so plainly. A bound
 ## Exit from boot
 
 Continuity is infrastructure, not the project.
-Once the current boundary is trustworthy enough to proceed, return to the substantive Mechanical Ethics / TRACE / Campfire task rather than continuing memory engineering for its own sake.
+Once the current boundary is trustworthy enough to proceed, return to the substantive Mechanical Ethics / TRACE / Campfire / Square task rather than continuing memory engineering for its own sake.
