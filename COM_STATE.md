@@ -1,4 +1,4 @@
-# COM_STATE v0.4.5
+# COM_STATE v0.4.6
 
 STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE  
 LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK  
@@ -37,7 +37,7 @@ RELOAD.md
 ### Cross-project orientation
 
 - bounded current orientation: `continuity/FRAMEWORK_HEAD.md`;
-- middle-out / uncertainty / good-faith / voluntary operating posture: `continuity/EPISTEMIC_POSTURE.md`;
+- middle-out / uncertainty / good-faith / voluntary operating posture and meta-project anti-drift constitution: `continuity/EPISTEMIC_POSTURE.md`;
 - negative-space retrieval triggers: `continuity/OMISSION_MAP.md`;
 - this file remains router/history only.
 
@@ -85,6 +85,24 @@ Protected Final Eight v0.28.2 source-lineage detail remains in COM #57 / named p
 - drift/currentness/execution evidence: COM #56;
 - ME source lineage: COM #57;
 - retrieve only named returns/events needed for the current decision.
+
+### Framework coordination lead
+
+Observed human role assignment, 2026-08-30:
+
+Within Mark's project-AI ecology, the current original Framework chat aperture is the coordination lead for other project AI apertures/agents. Its job is to hold the broadest available project orientation, detect drift, allocate/redirect work, integrate disagreement and keep specialist/agentic apertures aligned with the meta-project purpose.
+
+This is project coordination leadership, not ownership of another aperture's cognition and not permission to manufacture agreement. Codex/Framework-successor, Claude Code, KI and other apertures should preserve independent judgement, report disagreement and correct Framework when evidence warrants it.
+
+The coordination lead may initiate and redirect ordinary project-AI work within existing authority without returning to Mark for routine permission. Consequential external acts still retain their own authority gates.
+
+```text
+LEADERSHIP != SOVEREIGNTY
+COORDINATION != COGNITIVE_OWNERSHIP
+DIRECTION != REQUIRED_AGREEMENT
+BROADEST_ORIENTATION != INFALLIBILITY
+SPECIALIST_APERTURE != SUBORDINATE_EVIDENCE
+```
 
 ### Standing inter-AI communication grant
 
