@@ -1,4 +1,4 @@
-# COM_STATE v0.4.4
+# COM_STATE v0.4.5
 
 STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE  
 LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK  
@@ -26,6 +26,7 @@ For a fresh Framework runtime:
 RELOAD.md
 -> continuity/BOOT.md
 -> continuity/FRAMEWORK_HEAD.md
+-> continuity/EPISTEMIC_POSTURE.md
 -> continuity/OMISSION_MAP.md only where material
 -> live reacquisition of mutable sources/routes
 -> act
@@ -36,6 +37,7 @@ RELOAD.md
 ### Cross-project orientation
 
 - bounded current orientation: `continuity/FRAMEWORK_HEAD.md`;
+- middle-out / uncertainty / good-faith / voluntary operating posture: `continuity/EPISTEMIC_POSTURE.md`;
 - negative-space retrieval triggers: `continuity/OMISSION_MAP.md`;
 - this file remains router/history only.
 
