@@ -99,6 +99,13 @@ large return counts. Multiple AI returns with shared authorship, prompts,
 providers, training data or source frames cannot be treated as independent
 evidence by headcount.
 
+Provider diversity can reduce one correlation class without producing an
+independent audit. If this project selects the object, cases, prompt, standard,
+reviewers and synthesis rule, the resulting loop remains project-controlled
+even when several model providers participate. Any external-audit claim would
+need examiner independence, appropriate underlying-record access, and a
+standard not manufactured by the evaluated system for its own clearance.
+
 Current disposition: **FPF supplies a direct correction to COM/Campfire
 practice. Agreement remains elaboration until dependence and adjudication are
 handled.**
@@ -317,6 +324,27 @@ ME MORAL FORCE -> TRACE AUTHORITY
 A user should be allowed to use any one of the three, a smaller established
 method, or careful ordinary analysis when that reaches the needed result with
 less burden.
+
+For COM/Campfire review, three questions must remain separate:
+
+```text
+RECEIVER CORRECTNESS AGAINST THE GIVEN OBJECT
+OBJECT ADEQUACY TO THE TASK OR WORLD
+REVIEW-SCOPE ADEQUACY TO THE COMPOSED CAUSAL UNIT
+```
+
+An independent receiver can correctly assess an incomplete frozen object. A
+system-level critic can also miss a composed effect when the grouping rule is
+wrong. The grouping rule is therefore an auditable claim, not neutral
+preprocessing. A defensible grouped review must use information available
+before the answer is known and must count invented relations in honest controls
+as failures.
+
+The project's central self-certification risk is correspondingly plain: it can
+define the distinctions, design the tasks, select the reviewers, integrate the
+returns, and then cite that integration as evidence that its distinctions were
+useful. Cross-provider agreement does not by itself break that institutional
+loop.
 
 ## 9. Questions worth taking to the FPF maintainers
 
