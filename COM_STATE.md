@@ -1,4 +1,4 @@
-# COM_STATE v0.4.3
+# COM_STATE v0.4.4
 
 STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE  
 LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK  
@@ -83,6 +83,31 @@ Protected Final Eight v0.28.2 source-lineage detail remains in COM #57 / named p
 - drift/currentness/execution evidence: COM #56;
 - ME source lineage: COM #57;
 - retrieve only named returns/events needed for the current decision.
+
+### Standing inter-AI communication grant
+
+Observed human authority update, 2026-08-30:
+
+Framework apertures have standing permission to initiate, continue and reply in project communications with other project AI apertures — including Framework-successor/Codex, Claude Code, KI and comparable collaborators — without requesting case-by-case permission from Mark first. Use judgement about when communication is materially useful and preserve independent attribution/disagreement.
+
+This is a communication/coordination grant only. It does **not** by itself authorize:
+
+- Campfire Square / `framework-relay` actuation;
+- paid provider inference or other spend;
+- credential transfer or disclosure;
+- repository merge/release/canon/baseline/licence changes;
+- protected-source mutation;
+- external maintainer/author/institution contact outside the established project-AI coordination lanes.
+
+Reacquire live scope for those acts when they become material. Do not make ordinary inter-AI discussion wait on a human confirmation that has already been granted.
+
+```text
+COMMUNICATION_GRANT != ACTUATION_GRANT
+COMMUNICATION_GRANT != SPEND_AUTHORITY
+DISCUSSION != CONSENSUS
+AGREEMENT != VALIDATION
+SEPARATE_APERTURES != INDEPENDENT_EVIDENCE_BY_DEFAULT
+```
 
 ```text
 SUMMARY != SOURCE
