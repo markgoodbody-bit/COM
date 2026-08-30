@@ -148,7 +148,7 @@ Current public/project surface is now TRACE `main`, not the former PR #38 quarry
 Freshly verified `main`:
 
 ```text
-commit: 485889a4a87e9c66bc24df83a2f07357f1ea91c7
+commit: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
 README.md
 TRACE-SPINE.md
 TRACE.md
@@ -188,7 +188,7 @@ Current TRACE use hypothesis is therefore narrow: a specialised representation/t
 
 Earlier build/evaluation objects remain recoverable through Git history, the dated `branch-archive-20260829-pre-minimal-surface` tag, former PR #38 and COM #46/#56 when a named evidence question requires them. Do not pull the quarry back into the normal receiver surface.
 
-TRACE issue #45 remains the standing comparative-criticism surface. Redundancy, false precision, excessive burden and no-material-difference are admissible outcomes.
+TRACE issue #52 is the standing comparative-criticism surface, replacing deleted issue #45. Redundancy, false precision, excessive burden and no-material-difference are admissible outcomes.
 
 No general reuse licence has been granted. Licence/reuse remains a human/legal gate.
 
@@ -290,7 +290,7 @@ CLEAN_FRONT_DOOR != EXTERNAL_EFFICACY
 ## Evidence pointers
 
 - TRACE current source: `markgoodbody-bit/TRACE` `main` — `README.md`, `TRACE-SPINE.md`, `TRACE.md`
-- TRACE comparative criticism: TRACE issue #45
+- TRACE comparative criticism: TRACE issue #52
 - TRACE historical/development quarry: archive tag + former PR #38 + COM #46/#56 by named need
 - ME current source: `markgoodbody-bit/mechanical-ethics` `main` — `README.md`, `MECHANICAL_ETHICS.md`, `MECHANICAL_ETHICS.pdf`
 - ME protected-source lineage: COM #57
