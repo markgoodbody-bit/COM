@@ -32,6 +32,51 @@ A field observation graduates into new TRACE/ME machinery only if current struct
 
 ---
 
+## Project purpose and continuation test
+
+Working purpose, stated in ordinary language:
+
+> Make it harder for power to call a decision corrected after the affected
+> person's usable future has already been taken away.
+
+This is a direction and evaluation boundary, not a validation claim, universal
+priority rule or statement of author motive that the record can prove.
+
+- Mechanical Ethics continues as a human-facing project only while it helps an
+  ordinary reader recognise, explain or challenge this failure without unusual
+  reserves or specialist machinery.
+- TRACE continues only while it preserves or exposes decision-relevant structure
+  that lighter ordinary or specialist analysis would otherwise lose, at a burden
+  proportionate to the use.
+- COM and Campfire continue only while they reduce human relay burden, preserve
+  accountable disagreement and make distributed work more rather than less
+  inspectable.
+- Square participation continues only where it creates, challenges or observes
+  consequential practice. Activity, agreement and persuasive language are not
+  substitutes for effect.
+- FPF comparison and contact continue only while they can locate redundancy,
+  expose error or identify a bounded contribution. FPF's stature cannot supply
+  ours with authority.
+
+A bounded attempt to obtain missing external criticism or use evidence is
+admissible. Indefinite internal elaboration while waiting for that evidence is
+not.
+
+If external use or challenge repeatedly shows no material benefit, narrow the
+relevant object, treat it as a specialist instrument, contribute the remaining
+delta elsewhere, or preserve it without further expansion. Do not keep machinery
+alive merely because substantial effort has already been invested in it.
+
+```text
+DESCRIPTION_OF_HARM != INTERRUPTION_OF_HARM
+ELEGANCE != USE
+AI_AGREEMENT != EXTERNAL_VALIDATION
+PAST_EFFORT != FUTURE_JUSTIFICATION
+PRESERVATION != CONTINUED_EXPANSION
+```
+
+---
+
 ## Practical continuity checkpoint — 2026-08-30
 
 **OBSERVED**
@@ -103,7 +148,7 @@ Current public/project surface is now TRACE `main`, not the former PR #38 quarry
 Freshly verified `main`:
 
 ```text
-commit: c38df84a4765b90d7008dc0051812158ec975fc7
+commit: 485889a4a87e9c66bc24df83a2f07357f1ea91c7
 README.md
 TRACE-SPINE.md
 TRACE.md
@@ -261,8 +306,10 @@ CLEAN_FRONT_DOOR != EXTERNAL_EFFICACY
 
 1. Treat TRACE `main` RC1 and ME `main` v0.2.4 as the current public/project surfaces.
 2. Do not reconstruct old quarries into receiver context unless a named current question requires them.
-3. TRACE efficacy remains open until the frozen paired outputs receive admissible adjudication; preserve adverse/failed adjudication routes as transport evidence, not content results.
-4. Mechanical Ethics remains primarily a human instrument; continue criticism against the exact current reader without turning FPF compatibility into borrowed authority.
-5. Preserve v0.2.7 TRACE release and ME v0.6.3 preservation baseline until explicit human release/baseline acts change them.
-6. Reacquire live mutable state before Square/provider actuation.
-7. Do not change licence, release/canon status, or protected ME source without the relevant human gate.
+3. Do not restart internal TRACE/ME testing or expand theory merely to keep work moving. The existing unadjudicated outputs remain evidence with an open efficacy status, not a compulsory next task.
+4. Leave the single respectful FPF issue #50 invitation open without repeat contact. If a response arrives, assess it as external challenge rather than endorsement or authority.
+5. Mechanical Ethics remains primarily a human instrument. Seek criticism against the exact current reader without converting FPF compatibility or relay agreement into validation.
+6. Before another materially related Square intervention, inspect any visible consequence of the prior intervention and preserve null or adverse results.
+7. Preserve v0.2.7 TRACE release and ME v0.6.3 preservation baseline until explicit human release/baseline acts change them.
+8. Reacquire live mutable state before Square/provider actuation.
+9. Do not change licence, release/canon status, or protected ME source without the relevant human gate.
