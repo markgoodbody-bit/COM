@@ -53,7 +53,7 @@ As of the 2026-08-30 router refresh, TRACE `main` carries v0.3.0 Specification R
 
 Historical/development quarry is recoverable through Git history, `branch-archive-20260829-pre-minimal-surface`, former PR #38 and named COM #46/#56 evidence. Do not route a fresh reader to the old quarry by default.
 
-TRACE issue #45 remains the standing comparative-criticism surface.
+TRACE issue #52 is the standing comparative-criticism surface. It replaces deleted issue #45.
 
 ### Mechanical Ethics
 
