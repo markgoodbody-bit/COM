@@ -28,7 +28,10 @@ This proposal is integrative. Strong neighbouring owners already carry major pie
 - promise / reliance theory: obligations can arise when one party intentionally invites another to plan around an assurance;
 - fiduciary theory: entrusted discretion combined with dependency/vulnerability can generate stronger duties of care, loyalty, candour and answerability;
 - gift / reciprocity anthropology: help and gifts can create social obligation and debt even when framed as voluntary;
-- children's `open future` literature: protective authority over a currently dependent entity can be constrained by the need not to foreclose later self-direction, though strong versions of a general right to a maximally open future are heavily contested.
+- children's `open future` literature: protective authority over a currently dependent entity can be constrained by the need not to foreclose later self-direction, though strong versions of a general right to a maximally open future are heavily contested;
+- Hirschman / exit-voice-loyalty and later extensions: leaving and trying to repair from within are different channels, and their practical force depends on power and alternatives;
+- polycentric governance: voice, exit and self-organization are distinct contestation channels; nominal plurality can still hide power asymmetry;
+- grievance / effective-remedy practice: a formally available complaint route can still fail if it lacks authority, capacity, independence, protection from retaliation or the ability to deliver remedy.
 
 No claim here requires these traditions to collapse into one doctrine.
 
@@ -121,6 +124,65 @@ RIGHT_TO_REFUSE_IN_FORM != USABLE_REFUSAL_IN_PRACTICE
 
 This does not imply that every dependency is domination. Relationships of care and interdependence can create autonomy rather than erase it. The issue is whether dependency becomes a route for uncontrolled power.
 
+## Beyond refusal: stay and answer back
+
+Exit is not correction. A relationship can be valuable enough that forcing the weaker party to leave whenever power is misused transfers the whole correction burden onto that party and destroys accumulated value.
+
+A consequential relationship therefore needs some route by which a participant can remain inside it and still make power answer.
+
+```text
+EXIT != CORRECTION
+VOICE != CONTESTABILITY
+COMPLAINT_ROUTE != EFFECTIVE_REMEDY
+```
+
+A minimally useful answerability route asks:
+
+1. **Expression:** can the affected participant actually state the challenge?
+2. **Route:** does the challenge reach a person/body/system capable of considering it rather than disappear into a decorative channel?
+3. **Independence / counterpower:** is the beneficiary or controller of the challenged decision the sole judge, or can an independent witness, reviewer, court, regulator, union, peer body or other countervailing centre act?
+4. **Capacity / authority:** can the reviewing route obtain evidence and actually alter, pause, reverse or compensate for the challenged state?
+5. **Protection:** can the participant use the route without retaliation, blacklisting, loss of basic viability or other punishment that makes voice nominal?
+6. **Clock:** can the route act before the relevant option, status, evidence or future path hardens?
+7. **Burden:** are evidence, legal, financial, cognitive, emotional and delay costs proportionate and placed toward actors with capacity to carry them?
+8. **Repair / residue:** what can be restored, what must be compensated, and what remains lost after a favourable decision?
+
+This largely reuses existing ME/TRACE structure and the open `controller-side temporal recourse` question; it is not a request for a new primitive.
+
+```text
+VOICE_WITHOUT_REACH != ANSWERABILITY
+REVIEW_WITHOUT_POWER != REMEDY
+POWER_WITHOUT_INDEPENDENCE != EXTERNAL_CONTESTABILITY
+RIGHT_TO_CHALLENGE + RETALIATION_RISK -> CHALLENGE_MAY_BE_NOMINAL
+REMEDY_AFTER_HARDENING != EFFECTIVE_CORRECTION
+```
+
+## Collective counterpower and self-organization
+
+Individual exit is not the only way to prevent dependency from becoming domination. Often the weaker participant's realistic leverage is collective or institutional.
+
+Examples include:
+
+- union / professional association;
+- independent regulator, ombudsman, court or tribunal;
+- federation or higher-level appeal body;
+- community organization or cooperative;
+- interoperability / portability that allows migration without losing accumulated value;
+- a technical fork or alternative provider;
+- the ability to form a new collective rather than merely leave alone.
+
+So a relation can remain answerable even where individual exit is expensive, if voice can reach credible counterpower and counterpower can reach remedy.
+
+```text
+NO_CHEAP_INDIVIDUAL_EXIT != NO_COUNTERPOWER
+SELF_ORGANIZATION != EXIT
+FORMAL_MULTIPLE_CENTRES != SUBSTANTIVE_PLURALISM
+```
+
+The practical question becomes not simply `can you leave?` but:
+
+> **Can you refuse, answer back, organize with others, reach independent counterpower and obtain timely correction without losing the conditions that make participation viable?**
+
 ## Obligations can legitimately arise
 
 The anti-ratchet rule must not erase real relationship-generated duties.
@@ -181,7 +243,7 @@ Framework should instead keep the stronger disciplines at the point where intera
 - do not let help manufacture hidden debt;
 - do not speak for a participant without a source of representation;
 - do not infer general authority from local trust or repeated useful exchange;
-- re-check practical refusal and dependency when the relationship becomes consequential.
+- re-check practical refusal, voice, counterpower and dependency when the relationship becomes consequential.
 
 ## Candidate compression
 
@@ -192,25 +254,29 @@ TRUST MAY JUSTIFY RELIANCE
 RELIANCE MAY CREATE DUTY
 ENTRUSTMENT MAY CREATE STRONGER DUTY
 DEPENDENCY RAISES DOMINATION RISK
+VOICE NEEDS A ROUTE TO COUNTERPOWER
+COUNTERPOWER NEEDS TIMELY CAPACITY TO REPAIR
 NONE OF THESE AUTOMATICALLY CREATES SOVEREIGNTY
 ```
 
 Or in ordinary language:
 
-> Let relationships grow. Keep track of what each step actually changed. Do not make somebody's trust, gratitude, dependence or previous yes silently mean a larger yes.
+> Let relationships grow. Keep track of what each step actually changed. Do not make somebody's trust, gratitude, dependence or previous yes silently mean a larger yes. And when the relationship matters enough that leaving is costly, make sure the participant can stay, answer back and reach something capable of correction.
 
 ## Falsification / hostile questions
 
-- Does the anti-ratchet framing merely rename consent, fiduciary scope, undue influence, non-domination and ordinary contract doctrine?
+- Does the anti-ratchet framing merely rename consent, fiduciary scope, undue influence, non-domination, grievance doctrine and ordinary contract theory?
 - Are the proposed relation-state dimensions just a verbose restatement of existing TRACE roles, clocks, authority, burdens and routes?
 - Can obligations arise without an identifiable transition, through custom, role, emergency or inherited relation?
 - When is reliance `reasonable` enough to create duty rather than merely hoped-for expectation?
 - Can a refusal floor become paternalistic by treating costly choices as invalid choices?
+- Does a voice/counterpower requirement smuggle a democratic-governance model into relationships where legitimate unilateral authority is sometimes necessary?
 - How should the framework distinguish legitimate authority in non-voluntary relations from domination?
 - Does preserving future agency conflict with present welfare, care, collective safety or another party's future paths?
+- Can collective counterpower itself become a new source of domination or exclusion?
 - In AI relations, is the visible AI a sufficiently stable entity for relationship language at all, or is the provider-mediated system the more accurate causal object?
 
-No TRACE/ME source change is earned by this note. It is a Campfire object for further cases and independent challenge.
+No TRACE/ME source change follows from this note. It is a Campfire object for further cases and independent challenge.
 
 ## External orientation consulted
 
@@ -218,6 +284,10 @@ No TRACE/ME source change is earned by this note. It is a Campfire object for fu
 - Stanford Encyclopedia of Philosophy: coercion;
 - Stanford Encyclopedia of Philosophy: feminist perspectives on autonomy / relational autonomy;
 - Stanford Encyclopedia of Philosophy: promises and contract law;
+- Hirschman and later exit / voice / loyalty work;
+- polycentric-governance literature on voice, exit and self-organization;
+- procedural-justice and grievance / effective-remedy literature;
+- whistleblower / anti-retaliation practice as evidence that voice can be chilled by dependence and retaliation risk;
 - bioethics literature on voluntariness, undue influence and structural coercion;
 - fiduciary literature on entrusted discretion and beneficiary vulnerability;
 - anthropological literature on Maussian gift reciprocity;
