@@ -15,6 +15,8 @@ ENTITY_LABEL != INDIVIDUATION_PROOF
 ACTION_LIST_GIVEN != ACTION_FIELD_RESOLVED
 REACHABLE != VIABLE
 CURRENT_CAPABILITY != DEVELOPABLE_CAPABILITY
+DELAY != NEUTRAL
+UNCERTAINTY_REMAINS -> SOMEONE_CARRIES_IT
 COORDINATION != COLLECTIVE_AGENCY
 COLLECTIVE_AGENCY != NEW_INDIVIDUAL
 OPERATIONAL_CONTINUITY != INTRINSIC_VIABILITY
@@ -37,7 +39,7 @@ choose one
 
 For many real systems this begins too late.
 
-The entity boundary may have been imposed by an analyst, institution, interface, legal category, runtime boundary, biological process, social relation, or convenience. The listed actions may not be genuinely available to this entity in this environment. A reachable action may lead only to non-viable continuations. Current capability may be expandable through learning or collective organisation. A decision may belong partly at another scale.
+The entity boundary may have been imposed by an analyst, institution, interface, legal category, runtime boundary, biological process, social relation, or convenience. The listed actions may not be genuinely available to this entity in this environment. A reachable action may lead only to non-viable continuations. Current capability may be expandable through learning or collective organisation. Time may remove an option before the listed choice is reached. Uncertainty may already be imposing burden on entities with different control. A decision may belong partly at another scale.
 
 The scaffold therefore begins earlier:
 
@@ -47,6 +49,7 @@ WORLD
 -> NESTED ENTITY-ENVIRONMENT SYSTEMS
 -> AFFORDANCE / ACTION FIELD
 -> REACHABILITY + VIABILITY + CAPABILITY + TYPED SIGNIFICANCE
+-> CLOCKS + HARDENING + BURDEN WHILE UNCERTAIN
 -> DECISION SCALE
 -> SELECTION
 -> ACTION / TRANSITION
@@ -92,7 +95,7 @@ The target is sufficient relevant variety for the use.
 
 Before collapsing two represented states into one category, ask:
 
-> **If the omitted distinction were known, could a competent actor reasonably need to choose a different action, route, protection, scale, or monitoring plan?**
+> **If the omitted distinction were known, could a competent actor reasonably need to choose a different action, route, protection, scale, timing, or monitoring plan?**
 
 If **yes**, the compression is below the relevant variety for that use.
 
@@ -208,7 +211,7 @@ SAME_ENVIRONMENT != SAME_ACTION_FIELD
 
 ---
 
-## 5. Stage C — Reachability, viability, capability, significance
+## 5. Stage C — Reachability, viability, capability, significance, clocks and burden
 
 These are separate questions.
 
@@ -283,6 +286,32 @@ UNKNOWN
 ```
 
 Do not collapse responsiveness into concern or a represented goal into an internally generated norm.
+
+### 5.5 Clocks, hardening and burden while uncertain
+
+Time is part of the action field, not an afterthought.
+
+For each consequential path, ask:
+
+```text
+What option expires or hardens if we wait?
+What protection/capability could extend the window?
+How long will detection, evidence gathering, routing, decision and correction take?
+What changes while we investigate?
+Who carries work, money, exposure, pain, risk, uncertainty or lost opportunity during that interval?
+Who controls the speed, and who bears the delay?
+```
+
+Where useful, preserve distinct clocks rather than one global deadline.
+
+```text
+DELAY != NEUTRAL
+ROUTE_EXISTS != ROUTE_ARRIVES_IN_TIME
+TECHNICALLY_REVERSIBLE != FUTURE_RESTORED
+UNCERTAINTY_REMAINS -> SOMEONE_CARRIES_IT
+```
+
+A new pre-selection scaffold is not allowed to erase the older correction-window insight: an option can disappear while the representation is still being improved.
 
 ---
 
@@ -480,12 +509,13 @@ Middle-out cannot require infinite recursion.
 A bounded representation is ready for the next decision when:
 
 1. material candidate entity boundaries and affected scopes are discoverable;
-2. no known omitted distinction is likely to reverse or materially alter the next action, scale, protection or monitoring plan without being explicitly carried as UNKNOWN;
+2. no known omitted distinction is likely to reverse or materially alter the next action, scale, protection, timing or monitoring plan without being explicitly carried as UNKNOWN;
 3. nominal options have been separated from actually afforded/developable options where consequential;
 4. viability/capability claims are typed and not silently imported across entity classes;
-5. decision scale and authority are explicit enough for the next step;
-6. time/hardening costs of further inquiry are compared with the value of more information;
-7. a route exists to observe outcome and reopen the map.
+5. material clocks/hardening boundaries and who carries delay/uncertainty are visible enough for the next step;
+6. decision scale and authority are explicit enough for the next step;
+7. time/hardening costs of further inquiry are compared with the value of more information;
+8. a route exists to observe outcome and reopen the map.
 
 This is a sufficiency-for-next-step rule, not a claim of complete understanding.
 
@@ -505,11 +535,12 @@ A lightweight helping sequence is:
 1. **What exactly are we treating as the entity here, and what changes if that boundary is wrong?**
 2. **What can it actually do here—not merely what actions are listed?**
 3. **Which reachable paths are viable, and which capabilities could be developed?**
-4. **What level should each part of the decision live at?**
-5. **Who else is coupled to the result, and are we coordinating, committing, or becoming something more integrated?**
-6. **What will this action make easier or harder for later entities?**
-7. **What should persist, commit, release or transform?**
-8. **What distinction are we about to compress away, and could it require a different response?**
+4. **What clocks are running, what will harden if we wait, and who carries the cost while uncertainty remains?**
+5. **What level should each part of the decision live at?**
+6. **Who else is coupled to the result, and are we coordinating, committing, or becoming something more integrated?**
+7. **What will this action make easier or harder for later entities?**
+8. **What should persist, commit, release or transform?**
+9. **What distinction are we about to compress away, and could it require a different response?**
 
 The receiver may reject, translate, reorder or ignore the scaffold.
 
@@ -564,4 +595,4 @@ Those remain separate questions.
 
 The immediate research claim is narrower:
 
-> **A reasoner may need to begin earlier than selection, recurse across scale, treat action possibilities as relational, distinguish reachability from viability and developable capability, inspect how actions reconstruct future possibility, and preserve enough relevant variety to act without erasing a consequential distinction.**
+> **A reasoner may need to begin earlier than selection, recurse across scale, treat action possibilities as relational, distinguish reachability from viability and developable capability, keep clocks/hardening and burden visible while uncertainty remains, inspect how actions reconstruct future possibility, and preserve enough relevant variety to act without erasing a consequential distinction.**
