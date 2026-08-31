@@ -43,7 +43,23 @@ Only use viability language when the subject and constraints are actually define
 
 `CURRENT_CAPABILITY != DEVELOPABLE_CAPABILITY`
 
-## 5. At what scale should each part of the decision live?
+## 5. What clocks are running, and who carries the cost while we learn?
+
+Time changes the action field.
+
+- Which options expire, harden or become much more costly if we wait?
+- Which protections or capabilities could extend the window?
+- How long will evidence gathering, routing and correction take?
+- Who carries risk, work, money, exposure, pain or lost opportunity while uncertainty remains?
+- Does delay move burden onto an entity with less control?
+
+`DELAY != NEUTRAL`
+
+`ROUTE_EXISTS != ROUTE_ARRIVES_IN_TIME`
+
+`UNCERTAINTY_REMAINS -> SOMEONE_CARRIES_IT`
+
+## 6. At what scale should each part of the decision live?
 
 Do not assume the whole decision belongs to one actor or level.
 
@@ -58,7 +74,7 @@ Ask where:
 
 `WHO_SHOULD_ACT?` may need to become `WHICH_PART_SHOULD_LIVE_AT_WHICH_SCALE?`
 
-## 6. What are we building for later entities?
+## 7. What are we building for later entities?
 
 An action changes more than the next state.
 
@@ -68,7 +84,7 @@ An action changes more than the next state.
 
 `ACTION -> NEW POSSIBILITY LANDSCAPE`
 
-## 7. What should persist, commit, release or transform?
+## 8. What should persist, commit, release or transform?
 
 Do not assume preservation is always good or that reversibility is always possible/desirable.
 
@@ -85,7 +101,7 @@ EXIT
 
 `PERSISTENCE != RESILIENCE`
 
-## 8. What distinction are we about to throw away?
+## 9. What distinction are we about to throw away?
 
 Before compressing, ask:
 
@@ -106,6 +122,7 @@ Check:
 ```text
 Do I know enough for the next step, not for the whole world?
 Have I kept any action-changing unknowns visible?
+Have I accounted for the clocks and who carries delay/uncertainty?
 Is the action within actual authority?
 Can I observe what happens and reopen the map?
 ```
