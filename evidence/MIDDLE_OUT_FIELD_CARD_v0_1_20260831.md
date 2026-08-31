@@ -15,7 +15,34 @@ You do not need to use the vocabulary. Change the questions. Reject the card if 
 
 `ENTITY_LABEL != ENTITY_RESOLVED`
 
-## 2. What can it actually do here?
+## 2. What do we actually know, and through whose aperture?
+
+Separate where consequential:
+
+```text
+OBSERVED
+REPORTED
+INFERRED
+DESIGNATED
+DISPUTED
+UNKNOWN
+```
+
+Ask:
+
+- Who/what supplied the evidence?
+- How current is it?
+- What can this entity see that another cannot?
+- What is inaccessible or omitted?
+- Would another aperture plausibly change the action field or affected scopes?
+
+`MAP != WORLD`
+
+`UNKNOWN != ABSENT`
+
+`LAST_KNOWN_GOOD != CURRENT`
+
+## 3. What can it actually do here?
 
 Do not trust the supplied menu of choices.
 
@@ -25,7 +52,7 @@ Do not trust the supplied menu of choices.
 
 `LISTED_OPTION != REAL_OPTION`
 
-## 3. Which futures are merely reachable, and which can actually hold together?
+## 4. Which futures are merely reachable, and which can actually hold together?
 
 - Can this path be reached?
 - Can the relevant entity/system remain inside its essential constraints if it takes that path?
@@ -35,7 +62,7 @@ Do not trust the supplied menu of choices.
 
 Only use viability language when the subject and constraints are actually defined.
 
-## 4. What could become possible that is not possible yet?
+## 5. What could become possible that is not possible yet?
 
 - What capability can be learned, built, shared or scaffolded?
 - Would a constraint or commitment close one path while creating a more valuable shared capability?
@@ -43,7 +70,7 @@ Only use viability language when the subject and constraints are actually define
 
 `CURRENT_CAPABILITY != DEVELOPABLE_CAPABILITY`
 
-## 5. What clocks are running, and who carries the cost while we learn?
+## 6. What clocks are running, and who carries the cost while we learn?
 
 Time changes the action field.
 
@@ -59,7 +86,7 @@ Time changes the action field.
 
 `UNCERTAINTY_REMAINS -> SOMEONE_CARRIES_IT`
 
-## 6. At what scale should each part of the decision live?
+## 7. At what scale should each part of the decision live?
 
 Do not assume the whole decision belongs to one actor or level.
 
@@ -70,11 +97,31 @@ Ask where:
 - authority lives;
 - externalities spill;
 - coordination is possible;
-- correction is reachable.
+- challenge/correction/exit is reachable.
 
 `WHO_SHOULD_ACT?` may need to become `WHICH_PART_SHOULD_LIVE_AT_WHICH_SCALE?`
 
-## 7. What are we building for later entities?
+## 8. Who else is coupled to the result, and what kind of togetherness is this?
+
+Do not turn several actors into a `WE` automatically.
+
+Ask whether this is better described as:
+
+```text
+PARALLEL ACTION
+COORDINATION
+MUTUAL RESPONSIVENESS
+JOINT COMMITMENT
+SHARED PLAN
+INSTITUTION
+COLLECTIVE AGENCY HYPOTHESIS
+```
+
+If preferences/judgments are being combined, ask what aggregation rule or incentive structure is doing the combining.
+
+`COORDINATION != COLLECTIVE_AGENCY`
+
+## 9. What are we building for later entities?
 
 An action changes more than the next state.
 
@@ -84,7 +131,7 @@ An action changes more than the next state.
 
 `ACTION -> NEW POSSIBILITY LANDSCAPE`
 
-## 8. What should persist, commit, release or transform?
+## 10. What should persist, commit, release or transform?
 
 Do not assume preservation is always good or that reversibility is always possible/desirable.
 
@@ -101,11 +148,11 @@ EXIT
 
 `PERSISTENCE != RESILIENCE`
 
-## 9. What distinction are we about to throw away?
+## 11. What distinction are we about to throw away?
 
 Before compressing, ask:
 
-> **If this omitted difference were known, could it reasonably require a different action, protection, scale, route or monitoring plan?**
+> **If this omitted difference were known, could it reasonably require a different action, protection, scale, timing, route or monitoring plan?**
 
 If yes, keep it visible or carry it as UNKNOWN.
 
@@ -121,9 +168,11 @@ Check:
 
 ```text
 Do I know enough for the next step, not for the whole world?
+Are the load-bearing sources/currentness good enough for this step?
 Have I kept any action-changing unknowns visible?
 Have I accounted for the clocks and who carries delay/uncertainty?
 Is the action within actual authority?
+Can affected entities answer back or reach correction where relevant?
 Can I observe what happens and reopen the map?
 ```
 
