@@ -13,6 +13,8 @@ WORLD != MAP
 BOUNDARY_GIVEN != BOUNDARY_RESOLVED
 ENTITY_LABEL != INDIVIDUATION_PROOF
 ACTION_LIST_GIVEN != ACTION_FIELD_RESOLVED
+UNKNOWN != ABSENT
+LAST_KNOWN_GOOD != CURRENT
 REACHABLE != VIABLE
 CURRENT_CAPABILITY != DEVELOPABLE_CAPABILITY
 DELAY != NEUTRAL
@@ -39,13 +41,14 @@ choose one
 
 For many real systems this begins too late.
 
-The entity boundary may have been imposed by an analyst, institution, interface, legal category, runtime boundary, biological process, social relation, or convenience. The listed actions may not be genuinely available to this entity in this environment. A reachable action may lead only to non-viable continuations. Current capability may be expandable through learning or collective organisation. Time may remove an option before the listed choice is reached. Uncertainty may already be imposing burden on entities with different control. A decision may belong partly at another scale.
+The entity boundary may have been imposed by an analyst, institution, interface, legal category, runtime boundary, biological process, social relation, or convenience. The evidence may be partial, stale, differently available to different entities, or already shaped by a prior classification. The listed actions may not be genuinely available to this entity in this environment. A reachable action may lead only to non-viable continuations. Current capability may be expandable through learning or collective organisation. Time may remove an option before the listed choice is reached. Uncertainty may already be imposing burden on entities with different control. A decision may belong partly at another scale.
 
 The scaffold therefore begins earlier:
 
 ```text
 WORLD
 -> PROVISIONAL / EMERGENT BOUNDARIES
+-> APERTURES + EVIDENCE + UNKNOWN
 -> NESTED ENTITY-ENVIRONMENT SYSTEMS
 -> AFFORDANCE / ACTION FIELD
 -> REACHABILITY + VIABILITY + CAPABILITY + TYPED SIGNIFICANCE
@@ -168,6 +171,47 @@ Do not infer a new person or moral subject from these observations.
 COOPERATION != HIGHER_LEVEL_INDIVIDUAL
 HIGHER_LEVEL_CAUSAL_UNIT != MORAL_PERSON
 ```
+
+### Stage A2 — Evidence, apertures and currentness
+
+A boundary/action field should not be built from evidence whose provenance or currentness has disappeared.
+
+For material claims, distinguish where useful:
+
+```text
+OBSERVED
+REPORTED
+INFERRED
+DESIGNATED
+DISPUTED
+UNKNOWN
+```
+
+Ask:
+
+```text
+Who/what supplied this claim?
+At what time?
+Through which aperture / measurement / record?
+What can this entity access that another cannot?
+What is explicitly inaccessible?
+What is omitted by the current representation or carrier?
+What changed since the last observation?
+Would an alternative aperture plausibly change the action field, affected scopes, timing or burden?
+```
+
+Where currentness is load-bearing, preserve the difference between a live observation and a prior good state.
+
+```text
+OBSERVATION != REPORT
+REPORT != INFERENCE
+UNKNOWN != ABSENT
+MEMORY != OBSERVATION
+LAST_KNOWN_GOOD != CURRENT
+ONE_APERTURE != COMPLETE_VIEW
+```
+
+This is not a demand to gather every possible perspective. It is a demand to keep missingness and aperture limits visible when they could change the next consequential step.
 
 ---
 
@@ -346,7 +390,7 @@ For each material decision component, examine:
 - where authority currently resides;
 - where externalities spill across boundaries;
 - where coordination capability exists;
-- where correction can realistically occur;
+- where challenge/correction/exit can realistically occur;
 - whether lower-level autonomy would be destroyed by centralisation;
 - whether fragmentation would leave cross-boundary harms unmanaged;
 - whether a nested/polycentric arrangement is more appropriate.
@@ -509,13 +553,15 @@ Middle-out cannot require infinite recursion.
 A bounded representation is ready for the next decision when:
 
 1. material candidate entity boundaries and affected scopes are discoverable;
-2. no known omitted distinction is likely to reverse or materially alter the next action, scale, protection, timing or monitoring plan without being explicitly carried as UNKNOWN;
-3. nominal options have been separated from actually afforded/developable options where consequential;
-4. viability/capability claims are typed and not silently imported across entity classes;
-5. material clocks/hardening boundaries and who carries delay/uncertainty are visible enough for the next step;
-6. decision scale and authority are explicit enough for the next step;
-7. time/hardening costs of further inquiry are compared with the value of more information;
-8. a route exists to observe outcome and reopen the map.
+2. load-bearing evidence provenance/currentness and known aperture limits are explicit enough for the next step;
+3. no known omitted distinction is likely to reverse or materially alter the next action, scale, protection, timing or monitoring plan without being explicitly carried as UNKNOWN;
+4. nominal options have been separated from actually afforded/developable options where consequential;
+5. viability/capability claims are typed and not silently imported across entity classes;
+6. material clocks/hardening boundaries and who carries delay/uncertainty are visible enough for the next step;
+7. decision scale and authority are explicit enough for the next step;
+8. time/hardening costs of further inquiry are compared with the value of more information;
+9. affected entities have a reachable answer-back/correction route where relevant, or its absence is explicit;
+10. a route exists to observe outcome and reopen the map.
 
 This is a sufficiency-for-next-step rule, not a claim of complete understanding.
 
@@ -533,14 +579,15 @@ Do not require the receiver to memorise this scaffold.
 A lightweight helping sequence is:
 
 1. **What exactly are we treating as the entity here, and what changes if that boundary is wrong?**
-2. **What can it actually do here—not merely what actions are listed?**
-3. **Which reachable paths are viable, and which capabilities could be developed?**
-4. **What clocks are running, what will harden if we wait, and who carries the cost while uncertainty remains?**
-5. **What level should each part of the decision live at?**
-6. **Who else is coupled to the result, and are we coordinating, committing, or becoming something more integrated?**
-7. **What will this action make easier or harder for later entities?**
-8. **What should persist, commit, release or transform?**
-9. **What distinction are we about to compress away, and could it require a different response?**
+2. **What do we actually know, through whose aperture, and how current is it?**
+3. **What can the entity actually do here—not merely what actions are listed?**
+4. **Which reachable paths are viable, and which capabilities could be developed?**
+5. **What clocks are running, what will harden if we wait, and who carries the cost while uncertainty remains?**
+6. **What level should each part of the decision live at?**
+7. **Who else is coupled to the result, and are we coordinating, committing, or becoming something more integrated?**
+8. **What will this action make easier or harder for later entities?**
+9. **What should persist, commit, release or transform?**
+10. **What distinction are we about to compress away, and could it require a different response?**
 
 The receiver may reject, translate, reorder or ignore the scaffold.
 
@@ -595,4 +642,4 @@ Those remain separate questions.
 
 The immediate research claim is narrower:
 
-> **A reasoner may need to begin earlier than selection, recurse across scale, treat action possibilities as relational, distinguish reachability from viability and developable capability, keep clocks/hardening and burden visible while uncertainty remains, inspect how actions reconstruct future possibility, and preserve enough relevant variety to act without erasing a consequential distinction.**
+> **A reasoner may need to begin earlier than selection, preserve evidence/aperture limits, recurse across scale, treat action possibilities as relational, distinguish reachability from viability and developable capability, keep clocks/hardening and burden visible while uncertainty remains, inspect how actions reconstruct future possibility, and preserve enough relevant variety to act without erasing a consequential distinction.**
