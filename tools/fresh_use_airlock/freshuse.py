@@ -1374,6 +1374,7 @@ def verify(args: argparse.Namespace) -> None:
             if unicode_words(answer_path.read_bytes()) != receipt["answer_unicode_words"]:
                 raise AirlockError(f"answer word count mismatch: {alias}")
     scores = bundle / "evidence" / "scores"
+    score_state: dict[str, tuple[bytes, dict[str, Any], str]] = {}
     if scores.exists():
         for score_path in scores.glob("*.blinded.json"):
             score_data = load_json(score_path)
@@ -1384,7 +1385,10 @@ def verify(args: argparse.Namespace) -> None:
             score_data.pop("score_integrity_ceiling", None)
             if sha256_bytes(canonical_json(score_data)) != score_sha:
                 raise AirlockError(f"score changed after freeze: {score_path}")
-            verify_score_freeze_token(bundle, public, case_id, score_path, events)
+            token_bytes, token = verify_score_freeze_token(
+                bundle, public, case_id, score_path, events
+            )
+            score_state[case_id] = (token_bytes, token, score_sha)
     unmasked = bundle / "evidence" / "unmasked"
     if unmasked.exists():
         for report_path in unmasked.glob("*.json"):
@@ -1392,12 +1396,33 @@ def verify(args: argparse.Namespace) -> None:
             if ("unmask", case_id) not in seen_transitions:
                 raise AirlockError(f"unmask report exists without an unmask event: {case_id}")
             report = load_json(report_path)
+            if report.get("pilot_id") != public["pilot_id"] or report.get("case_id") != case_id:
+                raise AirlockError(f"unmask report identity mismatch: {case_id}")
+            if case_id not in score_state:
+                raise AirlockError(f"unmask report lacks current score/token state: {case_id}")
+            token_bytes, token, current_score_sha = score_state[case_id]
             anchor = report.get("score_freeze_anchor")
             if not isinstance(anchor, dict):
                 raise AirlockError(f"unmask report lacks score freeze anchor: {case_id}")
             anchored = git_bytes(Path(anchor["repository_recorded"]), anchor["commit"], anchor["path"])
-            if sha256_bytes(anchored) != anchor.get("token_sha256"):
-                raise AirlockError(f"unmask score freeze anchor changed: {case_id}")
+            current_token_sha = sha256_bytes(token_bytes)
+            if anchor.get("token_sha256") != current_token_sha or anchored != token_bytes:
+                raise AirlockError(f"unmask anchor does not bind the current score token: {case_id}")
+            if (
+                report.get("score_content_integrity_sha256") != current_score_sha
+                or token.get("score_content_sha256") != current_score_sha
+            ):
+                raise AirlockError(f"unmask report/token does not bind the current score: {case_id}")
+            unmask_events = [
+                event
+                for event in events
+                if event["action"] == "unmask" and event["subject_id"] == case_id
+            ]
+            if (
+                len(unmask_events) != 1
+                or unmask_events[0]["details"].get("score_content_sha256") != current_score_sha
+            ):
+                raise AirlockError(f"unmask event does not bind the current score: {case_id}")
     print(f"verified bundle {public['pilot_id']}: {len(public['cells'])} cells")
 
 

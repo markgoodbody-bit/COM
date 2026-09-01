@@ -399,6 +399,68 @@ class FreshUseAirlockTests(unittest.TestCase):
         )
         self.assertIn("Git anchor bytes do not match", blocked.stderr)
 
+    def test_verify_rejects_post_unmask_tail_rewrite(self):
+        public = self._prepare()
+        aliases = [cell["cell_alias"] for cell in public["cells"]]
+        for index, alias in enumerate(aliases):
+            receipt = self._complete_receipt(alias)
+            answer = self.base / f"post-unmask-answer-{index}.txt"
+            answer.write_text("Keep the action bounded and revisable.\n", encoding="utf-8")
+            self._run(
+                "record", "--bundle", self.bundle, "--alias", alias,
+                "--receipt", receipt, "--answer", answer
+            )
+        score = {
+            "schema_version": "1",
+            "pilot_id": "test-pilot-001",
+            "case_id": "R1",
+            "cell_aliases": aliases,
+            "scorer_1_identity": "fixture-scorer",
+            "scorer_1_project_exposure": "UNKNOWN",
+            "scorer_2_identity": None,
+            "scorer_2_project_exposure": None,
+            "criteria": {
+                name: {"rating": "NO_MATERIAL_DIFFERENCE", "note": "Original fixture."}
+                for name in freshuse.CRITERIA
+            },
+            "unique_material_error_by_cell": {alias: False for alias in aliases},
+            "burden_note": "Original fixture.",
+            "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+            "evaluation_limits": "Fixture only.",
+        }
+        score_path = self.base / "post-unmask-score.json"
+        score_path.write_text(json.dumps(score), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        anchor_commit, anchor_path = self._anchor_score_token()
+        self._run(
+            "unmask", "--bundle", self.bundle, "--case", "R1",
+            "--anchor-repo", self.repo, "--anchor-commit", anchor_commit,
+            "--anchor-path", anchor_path
+        )
+        report_path = self.bundle / "evidence" / "unmasked" / "R1.json"
+        report = json.loads(report_path.read_text())
+        original_score_sha = report["score_content_integrity_sha256"]
+
+        log_path = self.bundle / "evidence" / "events.jsonl"
+        lines = log_path.read_text(encoding="utf-8").splitlines()
+        log_path.write_text("\n".join(lines[:-2]) + "\n", encoding="utf-8")
+        (self.bundle / "evidence" / "scores" / "R1.blinded.json").unlink()
+        (self.bundle / "evidence" / "score-freeze-tokens" / "R1.json").unlink()
+        score["burden_note"] = "Substituted after unmask."
+        score["provisional_comparison"] = "CELL_2_MATERIALLY_BETTER"
+        score_path.write_text(json.dumps(score), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        freshuse.append_event(
+            self.bundle,
+            action="unmask",
+            subject_id="R1",
+            artifact_path="evidence/unmasked/R1.json",
+            artifact_sha256=freshuse.sha256_file(report_path),
+            details={"score_content_sha256": original_score_sha},
+        )
+        failed = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("unmask anchor does not bind the current score token", failed.stderr)
+
     def test_event_log_tamper_fails_verification(self):
         self._prepare()
         log_path = self.bundle / "evidence" / "events.jsonl"
