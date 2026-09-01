@@ -17,7 +17,8 @@ It closes five preparation/evidence gaps:
    extracted bytes, a parity case-pack hash, and each complete cell-input hash.
 3. **Arm identity stays evaluator-only.** Public random cell aliases are split
    from a permission-restricted private arm map. Public listing order is also
-   randomised.
+   randomised. The prepare event binds the exact hidden-map bytes, and both
+   verification and unmasking enforce that binding before using arm identity.
 4. **Failure/attempt evidence is append-only.** Answers and receipts are created
    once. Duplicate recording, post-hoc packet mutation, over-budget answers,
    malformed timestamps/exposure fields, and relabelled retries are rejected.
@@ -47,6 +48,17 @@ manifest, raw-hash, extraction and extracted-hash checks complete before the
 private-storage guard. The guard still executes before the first bundle file is
 written, so Windows permission failure cannot leave receiver or evaluator
 artifacts behind.
+
+Preparation also freezes a sorted case-to-source-ledger hash map. Verification
+requires exactly one ledger per public case and joins ledger pilot/case identity,
+case-pack, source identity, extracted member, hash and size to the exact packet
+manifests before replaying raw-byte extraction. A rewritten, missing, extra or
+semantically disconnected ledger is rejected.
+
+Permission establishment and later permission verification are separate paths.
+Creation installs and reads back the boundary. Existing-bundle commands only
+read it: broadened POSIX modes or Windows DACLs fail without being silently
+repaired by the verifier.
 
 Observable burden retained by the receipt includes elapsed time, exact answer
 bytes/Unicode words, reported token counts, source opens, clarifications,

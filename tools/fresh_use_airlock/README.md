@@ -132,6 +132,10 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
 - The private source ledger binds `raw bytes -> extraction recipe -> extracted
   bytes -> case-pack hash -> cell-input hash`. Raw snapshots remain local/private
   run evidence by default; do not turn COM into a mirror of third-party pages.
+  Preparation freezes a sorted case-to-ledger hash map in the first event. The
+  verifier requires exact case coverage and joins each ledger's identity,
+  case-pack, source identity, extracted member, hash, and size back to both
+  receiver packets.
 - ZIP cells use sorted members, fixed timestamps, and no compression so the
   same members produce stable bytes.
 - Public aliases are random and do not contain arm labels.
@@ -142,6 +146,13 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
 - On POSIX the boundary is exact mode bits. On native Windows it is a protected,
   read-back-verified DACL for current user + Local System + built-in
   Administrators. The current user is owner; no other trustee is accepted.
+  Permission installation occurs only while creating new protected artifacts.
+  Loading, recording, scoring, unmasking, and verification use read-only
+  permission checks: a broadened mode or DACL stops the command and is never
+  silently repaired.
+- The initial hash-chained event freezes the evaluator-only arm-map hash as well
+  as the source-ledger hashes. Verification and unmasking reject any later arm
+  mapping change before using the map.
 - Each receipt distinguishes tool-bound hashes/measurements from
   operator-attested provider, exposure, timing and burden metadata. Hashing an
   attestation binds its bytes; it does not make the claim true in the world.
@@ -157,7 +168,8 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
   previously anchored score from being silently substituted; it still does not
   establish a trusted wall-clock time or prove that nobody inspected the arm
   map.
-- The verifier detects packet, answer, receipt, and frozen-score changes.
+- The verifier detects packet, hidden-map, source-ledger, answer, receipt, and
+  frozen-score changes.
 
 ## Important ceilings
 

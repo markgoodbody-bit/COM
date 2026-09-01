@@ -160,6 +160,19 @@ class FreshUseAirlockTests(unittest.TestCase):
         self._git("commit", "-m", f"anchor {case_id} score token")
         return self._git("rev-parse", "HEAD").stdout.strip(), anchor_path
 
+    def _rewrite_prepare_event(self):
+        log_path = self.bundle / "evidence" / "events.jsonl"
+        lines = log_path.read_text(encoding="utf-8").splitlines()
+        self.assertEqual(1, len(lines), "fixture rewrite is valid only before receiver events")
+        event = json.loads(lines[0])
+        body = dict(event)
+        body.pop("event_sha256")
+        event["event_sha256"] = freshuse.sha256_bytes(freshuse.canonical_json(body))
+        log_path.write_text(
+            json.dumps(event, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n",
+            encoding="utf-8",
+        )
+
     def _windows_runner(
         self,
         *,
@@ -221,6 +234,17 @@ class FreshUseAirlockTests(unittest.TestCase):
         self.assertEqual(freshuse.sha256_file(self.raw), source["raw_sha256"])
         self.assertEqual(freshuse.sha256_bytes(self.extracted), source["extracted_sha256"])
         self.assertEqual("html_visible_text_v1", source["extraction_recipe"]["mode"])
+        prepare_event = json.loads(
+            (self.bundle / "evidence" / "events.jsonl").read_text().splitlines()[0]
+        )
+        self.assertEqual(
+            freshuse.sha256_file(self.bundle / "private" / "arm-map.json"),
+            prepare_event["details"]["private_arm_map_sha256"],
+        )
+        self.assertEqual(
+            {"R1": freshuse.sha256_file(self.bundle / "private" / "source-ledgers" / "R1.json")},
+            prepare_event["details"]["source_ledger_sha256_by_case"],
+        )
         aids = []
         self.assertIn("Answer in English", public["launch_sentence"])
         for cell in public["cells"]:
@@ -594,6 +618,37 @@ class FreshUseAirlockTests(unittest.TestCase):
         )
         self.assertEqual("0", calls[1][1]["FRESHUSE_ACL_IS_DIRECTORY"])
 
+    def test_native_windows_verify_only_never_runs_set_acl(self):
+        runner, calls = self._windows_runner()
+        freshuse.verify_private_storage(
+            self.base, 0o700, platform_name="nt", windows_runner=runner
+        )
+        self.assertEqual(2, len(calls))
+        self.assertEqual("whoami.exe", calls[0][0][0])
+        self.assertNotIn("Set-Acl", calls[1][0][-1])
+        self.assertIn("Get-Acl", calls[1][0][-1])
+
+    def test_native_windows_verify_only_rejects_broadened_acl_without_repair(self):
+        runner, _calls = self._windows_runner()
+        observed = json.loads(runner(["powershell.exe", "read"], {}).stdout)
+        observed["rules"].append(
+            {
+                "sid": "S-1-5-11",
+                "type": "Allow",
+                "rights": freshuse.WINDOWS_FULL_CONTROL,
+                "inherited": False,
+                "inheritance": 3,
+                "propagation": 0,
+            }
+        )
+        runner, calls = self._windows_runner(observed=observed)
+        with self.assertRaisesRegex(freshuse.AirlockError, "exactly three rules"):
+            freshuse.verify_private_storage(
+                self.base, 0o700, platform_name="nt", windows_runner=runner
+            )
+        self.assertEqual(2, len(calls))
+        self.assertTrue(all("Set-Acl" not in argv[-1] for argv, _env in calls))
+
     def test_native_windows_private_storage_rejects_identity_failures(self):
         cases = (
             ({"whoami_returncode": 1}, "identity lookup failed"),
@@ -702,6 +757,117 @@ class FreshUseAirlockTests(unittest.TestCase):
                     type("Args", (), {"config": str(self.config)})(), out
                 )
         self.assertEqual([], [path for path in out.rglob("*") if path.is_file()])
+
+    def test_existing_posix_acl_broadening_fails_without_repair(self):
+        self._prepare()
+        self.bundle.chmod(0o755)
+        failed = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("expected mode 700", failed.stderr)
+        self.assertEqual(0o755, self.bundle.stat().st_mode & 0o777)
+
+    def test_arm_map_swap_is_rejected_by_prepare_binding(self):
+        self._prepare()
+        path = self.bundle / "private" / "arm-map.json"
+        arm_map = json.loads(path.read_text())
+        self.assertEqual(2, len(arm_map["cells"]))
+        first, second = arm_map["cells"]
+        first["underlying_arm"], second["underlying_arm"] = (
+            second["underlying_arm"], first["underlying_arm"]
+        )
+        path.write_text(json.dumps(arm_map), encoding="utf-8")
+        failed = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("private arm map changed after preparation", failed.stderr)
+
+    def test_unmask_rejects_arm_map_swap_before_joining_identity(self):
+        public = self._prepare()
+        aliases = [cell["cell_alias"] for cell in public["cells"]]
+        for index, alias in enumerate(aliases):
+            answer = self.base / f"arm-swap-answer-{index}.txt"
+            answer.write_text("Keep the bounded action revisable.\n", encoding="utf-8")
+            self._run(
+                "record", "--bundle", self.bundle, "--alias", alias,
+                "--receipt", self._complete_receipt(alias), "--answer", answer,
+            )
+        score = {
+            "schema_version": "1",
+            "pilot_id": "test-pilot-001",
+            "case_id": "R1",
+            "cell_aliases": aliases,
+            "scorer_1_identity": "fixture-scorer",
+            "scorer_1_project_exposure": "UNKNOWN",
+            "scorer_2_identity": None,
+            "scorer_2_project_exposure": None,
+            "criteria": {
+                name: {"rating": "NO_MATERIAL_DIFFERENCE", "note": "Fixture."}
+                for name in freshuse.CRITERIA
+            },
+            "unique_material_error_by_cell": {alias: False for alias in aliases},
+            "burden_note": "Fixture.",
+            "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+            "evaluation_limits": "Fixture only.",
+        }
+        score_path = self.base / "arm-swap-score.json"
+        score_path.write_text(json.dumps(score), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        anchor_commit, anchor_path = self._anchor_score_token()
+        map_path = self.bundle / "private" / "arm-map.json"
+        arm_map = json.loads(map_path.read_text())
+        first, second = arm_map["cells"]
+        first["underlying_arm"], second["underlying_arm"] = (
+            second["underlying_arm"], first["underlying_arm"]
+        )
+        map_path.write_text(json.dumps(arm_map), encoding="utf-8")
+        failed = self._run(
+            "unmask", "--bundle", self.bundle, "--case", "R1",
+            "--anchor-repo", self.repo, "--anchor-commit", anchor_commit,
+            "--anchor-path", anchor_path, ok=False,
+        )
+        self.assertIn("private arm map changed after preparation", failed.stderr)
+        self.assertFalse((self.bundle / "evidence" / "unmasked" / "R1.json").exists())
+
+    def test_source_ledger_rewrite_is_rejected_by_prepare_binding(self):
+        self._prepare()
+        path = self.bundle / "private" / "source-ledgers" / "R1.json"
+        ledger = json.loads(path.read_text())
+        ledger["sources"][0]["source_identity"] = "rewritten provenance"
+        path.write_text(json.dumps(ledger), encoding="utf-8")
+        failed = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("private source ledger changed after preparation", failed.stderr)
+
+    def test_source_ledger_missing_or_extra_file_is_rejected(self):
+        with self.subTest(state="missing"):
+            self._prepare()
+            (self.bundle / "private" / "source-ledgers" / "R1.json").unlink()
+            failed = self._run("verify", "--bundle", self.bundle, ok=False)
+            self.assertIn("do not exactly cover public cases", failed.stderr)
+        self.bundle.rename(self.base / "missing-run")
+        self.bundle = self.base / "run-extra"
+        with self.subTest(state="extra"):
+            self._prepare()
+            extra = self.bundle / "private" / "source-ledgers" / "EXTRA.json"
+            extra.write_text("{}\n", encoding="utf-8")
+            extra.chmod(0o600)
+            failed = self._run("verify", "--bundle", self.bundle, ok=False)
+            self.assertIn("do not exactly cover public cases", failed.stderr)
+
+    def test_source_ledger_semantic_mismatch_fails_even_if_prepare_hash_is_rebound(self):
+        self._prepare()
+        ledger_path = self.bundle / "private" / "source-ledgers" / "R1.json"
+        ledger = json.loads(ledger_path.read_text())
+        ledger["sources"][0]["extracted_member"] = "SOURCES/99_substituted.txt"
+        ledger_path.write_bytes(freshuse.canonical_json(ledger))
+        event_path = self.bundle / "evidence" / "events.jsonl"
+        event = json.loads(event_path.read_text().splitlines()[0])
+        event["details"]["source_ledger_sha256_by_case"]["R1"] = freshuse.sha256_file(
+            ledger_path
+        )
+        event_path.write_text(
+            json.dumps(event, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n",
+            encoding="utf-8",
+        )
+        self._rewrite_prepare_event()
+        failed = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("source ledger/package member mismatch", failed.stderr)
 
 
 if __name__ == "__main__":

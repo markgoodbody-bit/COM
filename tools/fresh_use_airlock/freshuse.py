@@ -195,7 +195,9 @@ $rules = @($acl.GetAccessRules($true, $true, [System.Security.Principal.Security
 """.strip()
 
 
-def _windows_private_storage(path: Path, mode: int, runner: WindowsRunner) -> None:
+def _windows_private_storage(
+    path: Path, mode: int, runner: WindowsRunner, *, apply: bool
+) -> None:
     if not path.exists():
         raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: path does not exist: {path}")
     is_directory = path.is_dir()
@@ -215,12 +217,13 @@ def _windows_private_storage(path: Path, mode: int, runner: WindowsRunner) -> No
         }
     )
     powershell = ["powershell.exe", "-NoLogo", "-NoProfile", "-NonInteractive", "-Command"]
-    result = runner(powershell + [_WINDOWS_SET_DACL], environment)
-    if result.returncode != 0:
-        raise AirlockError(
-            "PRIVATE_STORAGE_UNVERIFIED: Windows DACL installation failed: "
-            + str(result.stderr).strip()
-        )
+    if apply:
+        result = runner(powershell + [_WINDOWS_SET_DACL], environment)
+        if result.returncode != 0:
+            raise AirlockError(
+                "PRIVATE_STORAGE_UNVERIFIED: Windows DACL installation failed: "
+                + str(result.stderr).strip()
+            )
     result = runner(powershell + [_WINDOWS_READ_DACL], environment)
     if result.returncode != 0:
         raise AirlockError(
@@ -266,7 +269,7 @@ def _windows_private_storage(path: Path, mode: int, runner: WindowsRunner) -> No
         raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: missing or unexpected Windows trustee")
 
 
-def require_private_storage(
+def apply_private_storage(
     path: Path,
     mode: int,
     *,
@@ -275,7 +278,9 @@ def require_private_storage(
 ) -> None:
     platform_name = os.name if platform_name is None else platform_name
     if platform_name == "nt":
-        _windows_private_storage(path, mode, windows_runner or _default_windows_runner)
+        _windows_private_storage(
+            path, mode, windows_runner or _default_windows_runner, apply=True
+        )
         return
     if platform_name != "posix":
         raise AirlockError(
@@ -287,6 +292,49 @@ def require_private_storage(
         raise AirlockError(
             f"PRIVATE_STORAGE_UNVERIFIED: expected mode {mode:o} for {path}, got {actual:o}"
         )
+
+
+def verify_private_storage(
+    path: Path,
+    mode: int,
+    *,
+    platform_name: str | None = None,
+    windows_runner: WindowsRunner | None = None,
+) -> None:
+    """Verify an existing boundary without repairing or otherwise mutating it."""
+    platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        _windows_private_storage(
+            path, mode, windows_runner or _default_windows_runner, apply=False
+        )
+        return
+    if platform_name != "posix":
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: unsupported operating-system permission model: {platform_name}"
+        )
+    if not path.exists():
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: path does not exist: {path}")
+    actual = stat.S_IMODE(path.stat().st_mode)
+    if actual != mode:
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: expected mode {mode:o} for {path}, got {actual:o}"
+        )
+
+
+def require_private_storage(
+    path: Path,
+    mode: int,
+    *,
+    platform_name: str | None = None,
+    windows_runner: WindowsRunner | None = None,
+) -> None:
+    """Backward-compatible name for establishing a new private boundary."""
+    apply_private_storage(
+        path,
+        mode,
+        platform_name=platform_name,
+        windows_runner=windows_runner,
+    )
 
 
 def private_storage_boundary(*, platform_name: str | None = None) -> str:
@@ -364,6 +412,9 @@ def append_event(
     details: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     log = event_log_path(bundle)
+    log_existed = log.exists()
+    if log_existed:
+        verify_private_storage(log, 0o600)
     events = read_event_log(bundle, allow_missing=action == "prepare")
     if action == "prepare" and events:
         raise AirlockError("prepare event already exists")
@@ -408,7 +459,10 @@ def append_event(
         os.close(descriptor)
     if written != len(encoded):
         raise AirlockError("short write to local event log")
-    require_private_storage(log, 0o600)
+    if log_existed:
+        verify_private_storage(log, 0o600)
+    else:
+        apply_private_storage(log, 0o600)
     return event
 
 
@@ -721,9 +775,16 @@ def prevalidate_case_inputs(
 
 
 def load_bundle(bundle: Path) -> tuple[dict[str, Any], dict[str, Any]]:
-    require_private_storage(bundle, 0o700)
-    require_private_storage(bundle / "private", 0o700)
-    require_private_storage(bundle / "private" / "arm-map.json", 0o600)
+    verify_private_storage(bundle, 0o700)
+    verify_private_storage(bundle / "public", 0o700)
+    verify_private_storage(bundle / "public" / "cells", 0o700)
+    verify_private_storage(bundle / "private", 0o700)
+    verify_private_storage(bundle / "private" / "source-ledgers", 0o700)
+    verify_private_storage(bundle / "private" / "arm-map.json", 0o600)
+    for ledger_path in (bundle / "private" / "source-ledgers").glob("*.json"):
+        verify_private_storage(ledger_path, 0o600)
+    if event_log_path(bundle).exists():
+        verify_private_storage(event_log_path(bundle), 0o600)
     public = load_json(bundle / "public" / "launch-register.json")
     private = load_json(bundle / "private" / "arm-map.json")
     if public.get("schema_version") != SCHEMA_VERSION or private.get("schema_version") != SCHEMA_VERSION:
@@ -731,6 +792,137 @@ def load_bundle(bundle: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     if public.get("pilot_id") != private.get("pilot_id"):
         raise AirlockError("public/private pilot identity mismatch")
     return public, private
+
+
+def verify_prepare_private_bindings(
+    bundle: Path, public: dict[str, Any], events: list[dict[str, Any]]
+) -> dict[str, str]:
+    """Bind hidden preparation artifacts without exposing their contents publicly."""
+    prepare_events = [event for event in events if event.get("action") == "prepare"]
+    if (
+        len(prepare_events) != 1
+        or events[0] is not prepare_events[0]
+        or prepare_events[0].get("subject_id") != public.get("pilot_id")
+    ):
+        raise AirlockError("local event log must contain exactly one initial prepare event")
+    details = prepare_events[0].get("details")
+    if not isinstance(details, dict):
+        raise AirlockError("prepare event lacks private artifact bindings")
+    expected_arm_map = require_sha(
+        details.get("private_arm_map_sha256"), "prepare private_arm_map_sha256"
+    )
+    arm_map_path = bundle / "private" / "arm-map.json"
+    if sha256_file(arm_map_path) != expected_arm_map:
+        raise AirlockError("private arm map changed after preparation")
+
+    cases = {cell.get("case_id") for cell in public.get("cells", [])}
+    if not cases or any(not isinstance(case_id, str) for case_id in cases):
+        raise AirlockError("public register has invalid case coverage")
+    bindings = details.get("source_ledger_sha256_by_case")
+    if not isinstance(bindings, dict) or set(bindings) != cases:
+        raise AirlockError("prepare source-ledger bindings do not exactly cover public cases")
+    ledger_dir = bundle / "private" / "source-ledgers"
+    expected_names = {f"{case_id}.json" for case_id in cases}
+    actual_names = {entry.name for entry in ledger_dir.iterdir()}
+    if actual_names != expected_names:
+        raise AirlockError("private source-ledger files do not exactly cover public cases")
+    checked: dict[str, str] = {}
+    for case_id in sorted(cases):
+        expected = require_sha(bindings[case_id], f"prepare source ledger {case_id}")
+        ledger_path = ledger_dir / f"{case_id}.json"
+        if not ledger_path.is_file() or sha256_file(ledger_path) != expected:
+            raise AirlockError(f"private source ledger changed after preparation: {case_id}")
+        checked[case_id] = expected
+    return checked
+
+
+def verify_source_ledger_joins(
+    bundle: Path,
+    public: dict[str, Any],
+    manifests_by_case: dict[str, list[dict[str, Any]]],
+) -> None:
+    """Join frozen raw provenance to the exact receiver-visible source members."""
+    expected_cases = {cell["case_id"] for cell in public["cells"]}
+    if set(manifests_by_case) != expected_cases:
+        raise AirlockError("packet manifests do not exactly cover public cases")
+    for case_id in sorted(expected_cases):
+        manifests = manifests_by_case[case_id]
+        if not manifests:
+            raise AirlockError(f"case has no packet manifests: {case_id}")
+        reference = manifests[0]
+        for manifest in manifests[1:]:
+            if (
+                manifest.get("case_pack_sha256") != reference.get("case_pack_sha256")
+                or manifest.get("source_snapshots") != reference.get("source_snapshots")
+                or manifest.get("members", {}).get("CASE_TASK.md")
+                != reference.get("members", {}).get("CASE_TASK.md")
+            ):
+                raise AirlockError(f"receiver cells do not share one case/source pack: {case_id}")
+        case_cells = [cell for cell in public["cells"] if cell["case_id"] == case_id]
+        if any(cell.get("case_pack_sha256") != reference.get("case_pack_sha256") for cell in case_cells):
+            raise AirlockError(f"public/packet case-pack mismatch: {case_id}")
+        expected_source_hashes = [source.get("sha256") for source in reference["source_snapshots"]]
+        if any(cell.get("source_snapshot_sha256") != expected_source_hashes for cell in case_cells):
+            raise AirlockError(f"public/packet source-list mismatch: {case_id}")
+
+        ledger_path = bundle / "private" / "source-ledgers" / f"{case_id}.json"
+        ledger = load_json(ledger_path)
+        require_keys(
+            ledger,
+            {"schema_version", "pilot_id", "case_id", "case_pack_sha256", "sources"},
+            f"source ledger {case_id}",
+        )
+        if (
+            ledger["schema_version"] != SCHEMA_VERSION
+            or ledger["pilot_id"] != public["pilot_id"]
+            or ledger["case_id"] != case_id
+            or ledger["case_pack_sha256"] != reference["case_pack_sha256"]
+        ):
+            raise AirlockError(f"source ledger identity/case-pack mismatch: {case_id}")
+        ledger_sources = ledger["sources"]
+        packet_sources = reference["source_snapshots"]
+        if not isinstance(ledger_sources, list) or len(ledger_sources) != len(packet_sources):
+            raise AirlockError(f"source ledger/package source count mismatch: {case_id}")
+        for index, (source, packet_source) in enumerate(zip(ledger_sources, packet_sources), 1):
+            if not isinstance(source, dict):
+                raise AirlockError(f"invalid source ledger entry: {case_id}:{index}")
+            require_keys(
+                source,
+                {
+                    "source_identity", "raw_path_recorded", "raw_sha256", "raw_size_bytes",
+                    "extraction_recipe", "extracted_member", "extracted_sha256",
+                    "extracted_size_bytes",
+                },
+                f"source ledger {case_id}:{index}",
+            )
+            packet_member = reference["members"].get(source["extracted_member"])
+            if (
+                source["source_identity"] != packet_source.get("source_identity")
+                or source["extracted_member"] != packet_source.get("member")
+                or source["extracted_sha256"] != packet_source.get("sha256")
+                or source["extracted_size_bytes"] != packet_source.get("size_bytes")
+                or not isinstance(packet_member, dict)
+                or packet_member.get("sha256") != source["extracted_sha256"]
+                or packet_member.get("size_bytes") != source["extracted_size_bytes"]
+            ):
+                raise AirlockError(f"source ledger/package member mismatch: {case_id}:{index}")
+            raw_path = Path(source["raw_path_recorded"])
+            if not raw_path.is_file():
+                raise AirlockError(f"raw source evidence missing: {raw_path}")
+            raw = raw_path.read_bytes()
+            if (
+                sha256_bytes(raw) != source["raw_sha256"]
+                or len(raw) != source["raw_size_bytes"]
+            ):
+                raise AirlockError(f"raw source changed after preparation: {raw_path}")
+            extracted = extract_source(
+                raw, source["extraction_recipe"], f"verify {case_id}:{index}"
+            )
+            if (
+                sha256_bytes(extracted) != source["extracted_sha256"]
+                or len(extracted) != source["extracted_size_bytes"]
+            ):
+                raise AirlockError(f"source extraction changed after preparation: {raw_path}")
 
 
 def cell_entry(public: dict[str, Any], alias: str) -> dict[str, Any]:
@@ -811,6 +1003,7 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
 
     public_cells: list[dict[str, Any]] = []
     private_cells: list[dict[str, Any]] = []
+    source_ledger_sha256_by_case: dict[str, str] = {}
     seen_aliases: set[str] = set()
     seen_cases: set[str] = set()
     for case in cases:
@@ -968,8 +1161,9 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
                     "cell_input_sha256": cell_input_sha,
                 }
             )
+        ledger_path = out / "private" / "source-ledgers" / f"{case_id}.json"
         write_new(
-            out / "private" / "source-ledgers" / f"{case_id}.json",
+            ledger_path,
             canonical_json(
                 {
                     "schema_version": SCHEMA_VERSION,
@@ -982,6 +1176,7 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
             ),
             mode=0o600,
         )
+        source_ledger_sha256_by_case[case_id] = sha256_file(ledger_path)
 
     # Randomise outward listing so O/Q construction order does not disclose identity.
     secrets.SystemRandom().shuffle(public_cells)
@@ -1014,6 +1209,7 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
         details={
             "packet_sha256": sorted(cell["packet_sha256"] for cell in public_cells),
             "private_arm_map_sha256": sha256_file(out / "private" / "arm-map.json"),
+            "source_ledger_sha256_by_case": dict(sorted(source_ledger_sha256_by_case.items())),
             "private_map_confidentiality": permission_boundary,
         },
     )
@@ -1441,6 +1637,7 @@ def unmask(args: argparse.Namespace) -> None:
     if sha256_bytes(canonical_json(score_data)) != score_sha:
         raise AirlockError("blinded score changed after freeze")
     events = read_event_log(bundle)
+    verify_prepare_private_bindings(bundle, public, events)
     score_events = [
         event for event in events if event["action"] == "score" and event["subject_id"] == case_id
     ]
@@ -1553,6 +1750,7 @@ def verify(args: argparse.Namespace) -> None:
     events = read_event_log(bundle)
     if not events or events[0]["action"] != "prepare" or events[0]["subject_id"] != public["pilot_id"]:
         raise AirlockError("local event log must begin with this pilot's prepare event")
+    verify_prepare_private_bindings(bundle, public, events)
     if any(event["action"] not in {"prepare", "record", "score", "unmask"} for event in events):
         raise AirlockError("local event log contains an unknown transition")
     seen_transitions: set[tuple[str, str]] = set()
@@ -1600,28 +1798,27 @@ def verify(args: argparse.Namespace) -> None:
                 raise AirlockError(f"unmask event precedes score event: {case_id}")
     if len(public["cells"]) != len(private["cells"]):
         raise AirlockError("public/private cell count mismatch")
-    for ledger_path in (bundle / "private" / "source-ledgers").glob("*.json"):
-        ledger = load_json(ledger_path)
-        for source in ledger["sources"]:
-            raw_path = Path(source["raw_path_recorded"])
-            if not raw_path.is_file():
-                raise AirlockError(f"raw source evidence missing: {raw_path}")
-            raw = raw_path.read_bytes()
-            if sha256_bytes(raw) != source["raw_sha256"]:
-                raise AirlockError(f"raw source changed after preparation: {raw_path}")
-            extracted = extract_source(raw, source["extraction_recipe"], f"verify {ledger_path.name}")
-            if sha256_bytes(extracted) != source["extracted_sha256"]:
-                raise AirlockError(f"source extraction changed after preparation: {raw_path}")
+    manifests_by_case: dict[str, list[dict[str, Any]]] = {}
     for cell in public["cells"]:
         alias = cell["cell_alias"]
         mapped = private_entry(private, alias)
-        if mapped["packet_sha256"] != cell["packet_sha256"]:
+        if (
+            mapped["case_id"] != cell["case_id"]
+            or mapped["case_pack_sha256"] != cell["case_pack_sha256"]
+            or mapped["packet_sha256"] != cell["packet_sha256"]
+        ):
             raise AirlockError(f"public/private packet mismatch: {alias}")
         packet = bundle / "public" / cell["packet_file"]
         if sha256_file(packet) != cell["packet_sha256"]:
             raise AirlockError(f"packet hash mismatch: {alias}")
         manifest = verify_zip_members(packet)
-        if manifest["case_pack_sha256"] != cell["case_pack_sha256"]:
+        manifests_by_case.setdefault(cell["case_id"], []).append(manifest)
+        if (
+            manifest["case_id"] != cell["case_id"]
+            or manifest["case_pack_sha256"] != cell["case_pack_sha256"]
+            or manifest["members"]["CASE_TASK.md"]["sha256"]
+            != cell["neutral_task_sha256"]
+        ):
             raise AirlockError(f"public/cell case-pack mismatch: {alias}")
         cell_input_identity = {
             "case_pack_sha256": mapped["case_pack_sha256"],
@@ -1646,6 +1843,7 @@ def verify(args: argparse.Namespace) -> None:
                 raise AirlockError(f"answer changed after record: {alias}")
             if unicode_words(answer_path.read_bytes()) != receipt["answer_unicode_words"]:
                 raise AirlockError(f"answer word count mismatch: {alias}")
+    verify_source_ledger_joins(bundle, public, manifests_by_case)
     scores = bundle / "evidence" / "scores"
     score_state: dict[str, tuple[bytes, dict[str, Any], str]] = {}
     if scores.exists():
