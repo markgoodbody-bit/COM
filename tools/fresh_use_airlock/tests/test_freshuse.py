@@ -510,9 +510,29 @@ class FreshUseAirlockTests(unittest.TestCase):
             freshuse.deterministic_zip(target, {"member.txt": b"new"})
         self.assertEqual(b"sentinel", target.read_bytes())
 
-    def test_native_windows_private_storage_fails_closed(self):
-        with self.assertRaisesRegex(freshuse.AirlockError, "PRIVATE_STORAGE_UNVERIFIED"):
-            freshuse.require_private_storage(self.base, 0o700, platform_name="nt")
+    @unittest.skipUnless(os.name == "nt", "native Windows DACL test")
+    def test_native_windows_private_storage_is_applied_and_read_back(self):
+        freshuse.require_private_storage(self.base, 0o700)
+        state = freshuse.windows_acl_state(self.base)
+        self.assertTrue(state["protected"])
+        self.assertEqual(1, len(state["rules"]))
+        self.assertEqual(state["current_sid"], state["rules"][0]["sid"])
+        self.assertEqual("FullControl", state["rules"][0]["rights"])
+        self.assertFalse(state["rules"][0]["inherited"])
+        icacls = Path(os.environ["SystemRoot"]) / "System32" / "icacls.exe"
+        changed = subprocess.run(
+            [str(icacls), str(self.base), "/grant", "*S-1-1-0:R"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+        )
+        self.assertEqual(0, changed.returncode)
+        with self.assertRaisesRegex(freshuse.AirlockError, "exactly one"):
+            freshuse.verify_private_storage(self.base, 0o700)
+
+    def test_unknown_private_storage_platform_fails_closed(self):
+        with self.assertRaisesRegex(freshuse.AirlockError, "unsupported platform"):
+            freshuse.require_private_storage(self.base, 0o700, platform_name="unknown")
 
 
 if __name__ == "__main__":

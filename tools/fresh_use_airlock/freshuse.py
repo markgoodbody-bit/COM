@@ -94,10 +94,12 @@ def write_new(path: Path, data: bytes, mode: int | None = None) -> None:
 
 def require_private_storage(path: Path, mode: int, *, platform_name: str | None = None) -> None:
     platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        require_windows_private_storage(path)
+        return
     if platform_name != "posix":
         raise AirlockError(
-            "PRIVATE_STORAGE_UNVERIFIED: native Windows permission handling is not implemented; "
-            "run the airlock in WSL/Linux or add and test a Windows DACL backend"
+            f"PRIVATE_STORAGE_UNVERIFIED: unsupported platform {platform_name!r}"
         )
     path.chmod(mode)
     actual = stat.S_IMODE(path.stat().st_mode)
@@ -105,6 +107,154 @@ def require_private_storage(path: Path, mode: int, *, platform_name: str | None 
         raise AirlockError(
             f"PRIVATE_STORAGE_UNVERIFIED: expected mode {mode:o} for {path}, got {actual:o}"
         )
+
+
+def verify_private_storage(path: Path, mode: int, *, platform_name: str | None = None) -> None:
+    platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        verify_windows_private_storage(path)
+        return
+    if platform_name != "posix":
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: unsupported platform {platform_name!r}")
+    actual = stat.S_IMODE(path.stat().st_mode)
+    if actual != mode:
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: expected mode {mode:o} for {path}, got {actual:o}"
+        )
+
+
+def windows_acl_state(path: Path) -> dict[str, Any]:
+    system_root = os.environ.get("SystemRoot")
+    if not system_root:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: SystemRoot is unavailable")
+    powershell = Path(system_root) / "System32" / "WindowsPowerShell" / "v1.0" / "powershell.exe"
+    if not powershell.is_file():
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: Windows PowerShell is missing: {powershell}")
+    script = r"""
+$ErrorActionPreference = 'Stop'
+[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+$target = $env:FRESHUSE_ACL_TARGET
+if ([System.IO.Directory]::Exists($target)) {
+    $acl = [System.IO.Directory]::GetAccessControl($target)
+} elseif ([System.IO.File]::Exists($target)) {
+    $acl = [System.IO.File]::GetAccessControl($target)
+} else {
+    throw "ACL target does not exist: $target"
+}
+$rules = @($acl.GetAccessRules($true, $true, [System.Security.Principal.SecurityIdentifier]) | ForEach-Object {
+    [pscustomobject]@{
+        sid = $_.IdentityReference.Value
+        rights = $_.FileSystemRights.ToString()
+        type = $_.AccessControlType.ToString()
+        inherited = [bool]$_.IsInherited
+        inheritance = $_.InheritanceFlags.ToString()
+        propagation = $_.PropagationFlags.ToString()
+    }
+})
+[pscustomobject]@{
+    current_sid = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
+    protected = [bool]$acl.AreAccessRulesProtected
+    rules = $rules
+} | ConvertTo-Json -Compress -Depth 5
+"""
+    acl_environment = dict(os.environ)
+    acl_environment["FRESHUSE_ACL_TARGET"] = str(path.resolve())
+    proc = subprocess.run(
+        [
+            str(powershell),
+            "-NoLogo",
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            script,
+        ],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env=acl_environment,
+    )
+    if proc.returncode:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: cannot read Windows DACL: "
+            + proc.stderr.strip()
+        )
+    try:
+        state = json.loads(proc.stdout)
+    except json.JSONDecodeError as exc:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: invalid Windows DACL read-back") from exc
+    if not isinstance(state, dict) or not isinstance(state.get("rules"), list):
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: incomplete Windows DACL read-back")
+    return state
+
+
+def require_windows_private_storage(path: Path) -> None:
+    if not path.exists():
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: path does not exist: {path}")
+    before = windows_acl_state(path)
+    current_sid = before.get("current_sid")
+    if not isinstance(current_sid, str) or not re.fullmatch(r"S-\d(?:-\d+)+", current_sid):
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: current Windows SID is unavailable")
+    system_root = os.environ.get("SystemRoot")
+    icacls = Path(system_root) / "System32" / "icacls.exe"
+    if not icacls.is_file():
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: icacls is missing: {icacls}")
+    inheritance = "(OI)(CI)" if path.is_dir() else ""
+    grant = f"*{current_sid}:{inheritance}F"
+    proc = subprocess.run(
+        [str(icacls), str(path.resolve()), "/inheritance:r", "/grant:r", grant],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    if proc.returncode:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: icacls failed: "
+            + (proc.stderr.strip() or proc.stdout.strip())
+        )
+    verify_windows_private_storage(path, expected_sid=current_sid)
+
+
+def verify_windows_private_storage(path: Path, *, expected_sid: str | None = None) -> None:
+    if not path.exists():
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: path does not exist: {path}")
+    after = windows_acl_state(path)
+    current_sid = after.get("current_sid")
+    if not isinstance(current_sid, str) or not re.fullmatch(r"S-\d(?:-\d+)+", current_sid):
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: current Windows SID is unavailable")
+    if expected_sid is not None and current_sid != expected_sid:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: current Windows SID changed during DACL check")
+    rules = after["rules"]
+    expected_inheritance = "ContainerInherit, ObjectInherit" if path.is_dir() else "None"
+    valid = (
+        after.get("protected") is True
+        and len(rules) == 1
+        and rules[0].get("sid") == current_sid
+        and rules[0].get("rights") == "FullControl"
+        and rules[0].get("type") == "Allow"
+        and rules[0].get("inherited") is False
+        and rules[0].get("inheritance") == expected_inheritance
+        and rules[0].get("propagation") == "None"
+    )
+    if not valid:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: Windows DACL read-back did not show exactly one "
+            "non-inherited current-user FullControl rule"
+        )
+
+
+def private_storage_boundary(platform_name: str | None = None) -> str:
+    platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "posix":
+        return "POSIX_MODE_BITS_VERIFIED__OPERATOR_ISOLATION_STILL_REQUIRED"
+    if platform_name == "nt":
+        return "WINDOWS_DACL_VERIFIED_CURRENT_USER_ONLY__OWNER_OR_ADMIN_CAN_STILL_REWRITE"
+    raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: unsupported platform {platform_name!r}")
 
 
 def event_log_path(bundle: Path) -> Path:
@@ -457,9 +607,9 @@ def extract_source(raw: bytes, recipe: dict[str, Any], context: str) -> bytes:
 
 
 def load_bundle(bundle: Path) -> tuple[dict[str, Any], dict[str, Any]]:
-    require_private_storage(bundle, 0o700)
-    require_private_storage(bundle / "private", 0o700)
-    require_private_storage(bundle / "private" / "arm-map.json", 0o600)
+    verify_private_storage(bundle, 0o700)
+    verify_private_storage(bundle / "private", 0o700)
+    verify_private_storage(bundle / "private" / "arm-map.json", 0o600)
     public = load_json(bundle / "public" / "launch-register.json")
     private = load_json(bundle / "private" / "arm-map.json")
     if public.get("schema_version") != SCHEMA_VERSION or private.get("schema_version") != SCHEMA_VERSION:
@@ -529,12 +679,10 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
 
     (out / "public" / "cells").mkdir(parents=True)
     (out / "private").mkdir(parents=True)
-    require_private_storage(out, 0o700)
-    require_private_storage(out / "private", 0o700)
-    permission_boundary = "POSIX_MODE_BITS_VERIFIED__OPERATOR_ISOLATION_STILL_REQUIRED"
 
     public_cells: list[dict[str, Any]] = []
     private_cells: list[dict[str, Any]] = []
+    private_ledgers: dict[str, bytes] = {}
     seen_aliases: set[str] = set()
     cases = cfg["cases"]
     if not isinstance(cases, list) or not cases:
@@ -695,18 +843,27 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
                     "cell_input_sha256": cell_input_sha,
                 }
             )
+        private_ledgers[case_id] = canonical_json(
+            {
+                "schema_version": SCHEMA_VERSION,
+                "pilot_id": pilot_id,
+                "case_id": case_id,
+                "case_pack_sha256": case_pack_sha,
+                "sources": private_source_register,
+                "warning": "LOCAL/PRIVATE RUN EVIDENCE; do not commit raw third-party bytes by default.",
+            }
+        )
+
+    # Validate all declared inputs before the platform confidentiality gate so
+    # a bad config retains its own diagnosis. Apply protection immediately
+    # before the first private evidence write.
+    permission_boundary = private_storage_boundary()
+    require_private_storage(out, 0o700)
+    require_private_storage(out / "private", 0o700)
+    for case_id, ledger_bytes in sorted(private_ledgers.items()):
         write_new(
             out / "private" / "source-ledgers" / f"{case_id}.json",
-            canonical_json(
-                {
-                    "schema_version": SCHEMA_VERSION,
-                    "pilot_id": pilot_id,
-                    "case_id": case_id,
-                    "case_pack_sha256": case_pack_sha,
-                    "sources": private_source_register,
-                    "warning": "LOCAL/PRIVATE RUN EVIDENCE; do not commit raw third-party bytes by default.",
-                }
-            ),
+            ledger_bytes,
             mode=0o600,
         )
 

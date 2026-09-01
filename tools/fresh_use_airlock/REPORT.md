@@ -30,14 +30,18 @@ It closes five preparation/evidence gaps:
    it is not a trusted wall-clock or proof that the operator did not inspect the
    arm map. Unmasking deliberately does not manufacture a final disposition.
 
-Claude Code's first threat-model review also produced four bounded repairs:
+Claude Code's threat-model reviews also produced bounded repairs:
 - raw HTML can be transformed directly through visible-text normalization and
   frozen line selection in one replayable extraction recipe;
-- native Windows now fails closed until a tested private-map DACL backend
-  exists;
+- native Windows applies a current-user-only DACL and fails closed unless an
+  separate structured security-descriptor read-back confirms the exact rule set;
 - receipts classify tool-bound facts separately from operator attestations;
 - the output budget is explicitly English-scoped and ZIP creation uses
   exclusive file creation.
+
+The Windows DACL protects against ordinary access by other local users. It does
+not protect the evidence from the owner or a machine administrator, and it does
+not establish that the operator avoided reading the arm map.
 
 Observable burden retained by the receipt includes elapsed time, exact answer
 bytes/Unicode words, reported token counts, source opens, clarifications,

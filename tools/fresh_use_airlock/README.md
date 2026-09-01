@@ -27,10 +27,12 @@ PINNED PROJECT TEXT + PRESERVED EXTERNAL BYTES
 - a local COM checkout containing the pinned commits;
 - exact local snapshots of every external source supplied to receivers.
 
-No Python packages or network access are used. This v1 requires a POSIX
-filesystem boundary (Linux/macOS/WSL). Native Windows execution fails closed
-because `chmod` is not a tested Windows confidentiality control for the private
-arm map.
+No Python packages or network access are used. On POSIX systems, private paths
+must read back with the requested mode bits. On native Windows, the tool uses
+the built-in `icacls.exe` utility to remove inherited access and grant only the
+current user SID full control, then reads the security descriptor back through
+the .NET access-control API. It fails closed unless the DACL is protected and
+contains exactly that one non-inherited rule.
 
 Create a source receipt and inspect the extracted bytes before putting its
 fields into the pilot config:
@@ -130,7 +132,10 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
 - ZIP cells use sorted members, fixed timestamps, and no compression so the
   same members produce stable bytes.
 - Public aliases are random and do not contain arm labels.
-- Private-map permissions are restricted where the filesystem supports it.
+- Private paths use verified POSIX mode bits or a verified native Windows DACL.
+  The Windows boundary excludes ordinary other-user access; it does not prevent
+  the owner or a machine administrator from changing the ACL or reading the
+  evidence. The operator must still keep the arm map out of receiver inputs.
 - Each receipt distinguishes tool-bound hashes/measurements from
   operator-attested provider, exposure, timing and burden metadata. Hashing an
   attestation binds its bytes; it does not make the claim true in the world.
