@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — R1 RUN009 DRY / EXACT LAUNCH GATE CLEARED
+### 7Q fresh-use packet — R1 RUN009 DRY / HASHED TEXT-ATTACHMENT GATE
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -143,10 +143,13 @@ Therefore:
 `R1 RUN009 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
 `FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE PASS`
 `MANUAL R1 LAUNCH GATE = CLEARED`
-`REMOTE TEMPORARY-CHAT ROUTE = RETIRED AFTER GOOGLE FLAGGED CLOUD MACOS SESSION AS SUSPICIOUS / AUTH TABS CLOSED / NOT DISPATCHED`
-`NATIVE TEMPORARY-CHAT ROUTE = PREFERRED / ALREADY-AUTHENTICATED USER APP / TWO MANUAL ATTACH+SEND ACTS ONLY`
-`ANONYMOUS INLINE DERIVATIVE = DRAFT PR #79 @ 67ee93c... / 38 TESTS PASS / CODEX PASS / CLAUDE CODE REVIEW OPEN`
-`ANONYMOUS RECEIVER CONTEXTS = TWO SEPARATE CONTEXTS REQUIRED / CURRENT CLOUD BROWSER EXPOSES ONE`
+`REMOTE TEMPORARY-CHAT ROUTE = USER-AUTHORISED BOUNDED RETRY SUCCEEDED / TEMPORARY + UNPERSONALIZED VISIBLE / NO NEW GOOGLE CHALLENGE`
+`REMOTE ACCOUNT SAFETY = NO AUTH LOOP / CLOSE SESSION AFTER RUN OR HOLD / USER MAY REVOKE CLOUD MACOS SESSION AGAIN`
+`ZIP UPLOAD = FAILED BEFORE DISPATCH / RETIRED FOR THIS RUN`
+`LONG INLINE COMPOSER = EXACT THROUGH 10,000 CHARACTERS THEN NORMALIZED / HOLD / RETIRED FOR THIS RUN`
+`HASHED TEXT ATTACHMENT = FIRST NEUTRAL CELL STAGED UNSENT / EXACT FILENAME VISIBLE / EXTERNAL LAUNCH STRING SHA-256 VERIFIED`
+`ANONYMOUS TEXT DERIVATIVE = DRAFT PR #79 @ 67ee93c... / 38 TESTS PASS / CODEX PASS_FOR_HASHED_TEXT_ATTACHMENT_DISPATCH / CLAUDE CODE FINAL RECEIPT OPEN`
+`ANONYMOUS RECEIVER CONTEXTS = SEPARATE TEMPORARY CHATS REQUIRED / FIRST CONTEXT STAGED / SECOND NOT YET LAUNCHED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
 Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
@@ -253,8 +256,9 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Claude Code exact-head review of anonymous inline-transport derivative PR #79; Codex returned `PASS_FOR_ANONYMOUS_INLINE_TRANSPORT_REVIEW_STAGE`;
-- user-side revocation of the remote macOS Google session, then two native-app Temporary Chat launches using the sealed neutral ZIPs; do not retry cloud-browser Google auth;
+- Claude Code final attachment-route receipt on anonymous transport derivative PR #79; Codex returned `PASS_FOR_HASHED_TEXT_ATTACHMENT_DISPATCH` after exact browser preflight;
+- first neutral R1 cell is staged but unsent in a Temporary + Unpersonalized ChatGPT context using `cell-6ca546d4de1b.message.txt`; do not dispatch before the Claude Code receipt;
+- after completed run or explicit HOLD, close the remote authenticated browser session and let the user revoke the cloud macOS Google session again if desired; do not loop authentication;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
