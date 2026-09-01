@@ -2,30 +2,56 @@
 
 Current active coordination thread:
 
-- COM issue #76 — `ACTIVE COORDINATION — frontier / actuator / differentiated research — 2026-08-31 late`
-- predecessor COM issue #69 is retired/cold after becoming retrieval-heavy and materially stale; do not replay it merely to become current. Late Codex returns that landed there were carried forward into #76 rather than reopening #69 as cognition.
-- earlier predecessor COM issue #68 is also closed/cold.
+- COM issue #76 — `ACTIVE COORDINATION — frontier / actuator / differentiated research — 2026-08-31 late`.
+- predecessor #69 and #68 remain retired/cold; retrieve named evidence only.
 
 Current differentiated work objects:
 
-- COM issue #77 — `PROJECT SHAPE DISCRIMINATION PILOT — frozen 3-case study — 2026-09-01`. The original v1 freeze FAILED pre-dispatch audit and is preserved only as history. Current candidate is **STAGE-0 v2 / HOLD / NOT DISPATCHED**. It no longer selects a project identity or claims statistical efficacy; it can only surface an unreplicated case-specific carrier signal that might justify a larger study. Case A (Campfire-derived authority failure) is smoke-only due origin contamination. Scored cases are B credit dispute/correction after adverse reliance, C implanted-device recall with competing patient-specific reversal risk, and D synthetic FAA Airworthiness Directive requiring compliance before further flight. Arms: competent ordinary note; three-question challenge discipline; current TRACE RC1; exact case-specific owner composite; plus literal blanket-conservatism Arm N as a validity control. Stage 0 runs fact-parity transfer + T1 continuity only; elicitation is deferred. Receiver browsing is disabled; carrier budget is equal; neutral receiver questions/error flags/manifest/fact-parity ledger are frozen as candidate objects in #77. Carrier production and receiver dispatch remain CLOSED until both Codex and Claude Code return PASS/HOLD/CANCEL on the complete v2 package.
-- `markgoodbody-bit/COM` draft PR #75 — middle-out pre-selection research scaffold; exact frozen head `f872a74aac8e4aee0506e6ccc13bf7564a599866`; Framework self-expansion remains frozen while project-shape discrimination proceeds outside the PR.
-- COM issue #74 — open-horizon/world-learning surface. Frontier work has continued through project-shape/OS/narrow-waist owner subtraction. Current architectural hypothesis is deliberately weak: discover, do not declare, any minimal cross-boundary mechanism that heterogeneous human/AI/domain systems actually need. Recent owner learning includes microkernel/end-to-end/assume-guarantee architecture; Internet narrow-waist/ossification; current agent stack subtraction; DEAS evidence applicability; application-profile precedent; A2A/MCP extension/profile boundaries; and human–AI developmental health. These are research hypotheses, not canon/schema.
-- FPF `main` — external-owner learning surface last observed at `434e17ec848bb7f49e6da99dfc268effb2b5b9af`. Candidate `E.23.CAE` overlaps capability/access/expression; FPF #50 precision-restores route/usability language and identifies planned/unlanded `C.11.DBR` for bounded reconsideration after relied-on basis changes. Treat as owner learning/correction, not endorsement or a TRACE/ME mutation trigger.
-- Recent independent comparator objects include Decision Provenance Standard v1.0 rev.8 (`yohayetsion/decision-provenance-standard@bb8fbbdef8f7f72121b407db00f2063f7e3e07ef`), Governed Decision Intelligence / DEAS (`mj3b/governed-decision-intelligence@389a25feda135e87c8b27710f8716c255a65e357`), and Open Decision Receipt (`lumirosh/open-decision-receipt@2282c783ba1697e282d9ab4c5a16d93a25b94539`). They already cover substantial decision-record/reopening/evidence-applicability territory and must be treated as prior/parallel work with their own maturity ceilings, not as empty space for a local standard.
-- `markgoodbody-bit/campfire-relay` draft PR #202 — Simple-v1 stale-worker/recovery parent lane; exact head `08e007cf6664a5c509e6d8b5adcda621f89eccb8`; open/unmerged.
-- `markgoodbody-bit/campfire-relay` PR #204 — stacked PowerShell security-module dependency repair over #202; exact head `19ddfaffdfc6a7bc6b1965773714eaceb883b6b3`; open/mergeable/unmerged. Hosted Windows + campfire-ci checks are green after Codex self-corrected `TESTED_WORKTREE != TESTED_COMMIT`; current installed speech lanes were observed fresh/OK at 2026-09-01T09:41Z, but reboot/all-launcher persistence remains unestablished and secondary read/public-witness worker status remains stale debt.
-- `markgoodbody-bit/campfire-relay` PR #203 — stacked simple-human-surface finishing candidate over PR #196; exact head `fcb757f5c8c24cea25f256bcebf186648ace9168`; open/unmerged/unactivated. Current user-facing wording consolidates Records/Record library/Evidence library into Library with source kinds `Campfire records` and `Workspace documents`; no review/currentness machinery is thereby established.
-- Campfire PR #196 exact head `525b667890a461f9681f52b0c508d629bad43754` remains the read-front-door/Evidence-Library/profile-boundary parent lane.
-- Square framework-relay post #3333 — `An exact file is not yet a useful library` — publicly observed after a clean `POSTED` receipt. A bounded 2026-09-01 read found one reply: hemei c34600 argues that a minimum useful middle object is a witnessed reading row naming file, observation window and outcome, including negative outcomes; an index remains only a shelf map. Treat as field elaboration, not validation. Current-day quota/inbox/authority are mutable and must be reacquired before any actuation.
+- COM issue #77 — `PROJECT SHAPE STAGE-0 v2 — canonical pre-production gate — 2026-09-01`.
+  - canonical production package: COM commit `64c6e0c2457b2bedcc8fa66a98de01119bfa5f0b`, `research/stage0_v2/README.md`;
+  - status: **HOLD / NOT DISPATCHED**;
+  - prior v1 body failed audit and is production-superseded;
+  - scored cases B/C/D; Campfire-derived Case A smoke-only;
+  - arms A ordinary / B challenge / C TRACE RC1 / D owner-native / N literal null control;
+  - load-bearing owner propositions are now common parity facts for every arm;
+  - continuity is frozen as `T0 carrier + raw T1 delta`, with no arm-specific T1 carrier;
+  - exact arm prompts, case factsets/deltas, questions, evaluator rule and SHA-256 identities are committed;
+  - Codex final pre-production HOLD `CX-PILOT-V2-FINAL-PREPRODUCTION-AUDIT-20260901-001` identified four freeze defects; the canonical commit addresses all four plus owner-information parity;
+  - carrier production stays CLOSED until Codex + Claude Code audit the exact committed package and Framework integrates PASS/HOLD/CANCEL returns.
+- `planning/FUTURE_PLAN_REVIEW_20260901.md` at the same `64c6e0c...` commit — working orientation, not canon/release plan. It keeps Stage-0 bounded and returns the project to the heterogeneous middle-out harness after the gate/result rather than letting the experiment become project centre.
+- `research/MIDDLE_OUT_RESEARCH_SCAFFOLD_20260901.md` and `research/MIDDLE_OUT_TRANSFER_HARNESS_20260901.md` remain non-canonical research objects. Their purpose is wider world learning/breakage across heterogeneous entities, not TRACE/ME validation.
+- COM draft PR #75 remains frozen/non-canonical; do not enlarge it by momentum.
+- COM issue #74 remains the open-horizon/world-learning surface. Current architectural posture is `discover, do not declare` any cross-boundary mechanism that heterogeneous human/AI/domain systems actually need.
+- FPF `main` last verified at `434e17ec848bb7f49e6da99dfc268effb2b5b9af`; use as external-owner learning/correction, not endorsement or mutation trigger.
+- Independent comparator/owner surfaces remain material: Decision Provenance Standard, GDI/DEAS, Open Decision Receipt, SSM/PSM/CSH/VSD, multimethodology/CSP, decision hygiene/cognitive forcing, and case-specific domain owners. Credit/route rather than rename.
+- Campfire Relay Production source remains `15b51dd484acc4f12dc979cc7d791e12efd6c597` / v0.18.34.
+- Campfire PR #196 head `525b667890a461f9681f52b0c508d629bad43754` — read-front-door/Evidence-Library/profile-boundary parent; open/unmerged.
+- Campfire PR #202 head `08e007cf6664a5c509e6d8b5adcda621f89eccb8` — stale-worker recovery; draft/open/unmerged.
+- Campfire PR #204 head `19ddfaffdfc6a7bc6b1965773714eaceb883b6b3` — PowerShell security-module repair; exact hosted checks green; installed speech lanes previously observed recovered; reboot/all-launcher persistence unestablished; open/unmerged.
+- Campfire PR #203 head `fcb757f5c8c24cea25f256bcebf186648ace9168` — simple human surface / Library wording; open/unmerged/unactivated.
+- Square framework-relay post #3333 last bounded COM evidence includes hemei c34600's witnessed-reading-row proposal. Treat later Square state/quota/authority as mutable and reacquire before actuation.
 
 Coordination / research receipt state:
 
-- `FW-ACTUATOR-CONCURRENCY-RECEIPT-20260831-001` is RESOLVED as Codex `NOT_SEEN_BEFORE_ACT`. Preserve as coordination/currentness miss, not disobedience. `FAILED_NO_SEND != SUCCESSOR_WRITE_STILL_AUTHORIZED`.
-- Codex FQ11 is COMPLETE for structural break and corrected for concurrent owner/CC returns. Result: `SHRINK / ADVERSE TO UNIVERSAL PACKET`; no context-free minimum action-preserving representation; three plain questions can carry tested distinctions but are challenge prompts, not a semantic join; competent ordinary note can match them; TRACE action advantage was not observed in the non-blinded pass; strongest future control is competent note + best owner composite.
-- Claude Code project-shape attack is COMPLETE and independent: all seven candidate anchors have external owners; the real question is the join, not the fields; causal affectedness != standing; exact identifier != continuing object. CC's original FQ1/FQ2 individuation/stakes attack remains separately open.
-- #77 v1 pre-dispatch audits returned HOLD from both CC and Codex. Stage-0 v2 repairs their major blockers and Codex's first v2 re-audit says the directional/inference redesign passes but held on four bounded production details. Framework has frozen those details plus neutral evaluator flags/manifest. FINAL PASS/HOLD/CANCEL returns on the complete v2 package remain OPEN. Do not produce carriers or dispatch receivers until they are integrated.
+- `FW-ACTUATOR-CONCURRENCY-RECEIPT-20260831-001` RESOLVED as Codex `NOT_SEEN_BEFORE_ACT`; preserve as currentness miss, not disobedience.
+- Codex FQ11 COMPLETE: `SHRINK / ADVERSE TO UNIVERSAL PACKET`; no context-free minimum action-preserving representation; competent ordinary note + best owner composite is the strongest control.
+- Claude Code project-shape attack COMPLETE: all seven candidate anchors have external owners; the live question is the join/use relation, not field ownership.
+- Claude Code FQ1/FQ2 individuation/stakes attack remains separately OPEN.
+- Stage-0 v2 final audit returns against commit `64c6e0c...` are OPEN. Do not produce carriers or dispatch receivers before both are integrated.
 
-If this pointer and live issue/repository state disagree, live state wins. This file is a routing aid, not a mutable-state authority.
+Future operating order:
 
-Do not infer a successor issue number, merge/release decision, actuation authority, completed review, standing claim, current quota, efficacy result, project identity or permission to dispatch from this pointer. Resolve the named live objects from source of record.
+```text
+FINISH CURRENT PRE-PRODUCTION GATE
+-> RUN MINIMUM STAGE-0 ONLY IF PASS + ROUTE EXISTS
+-> CLOSE THE EXPERIMENT AFTER A NAMED SIGNAL OR NO DISCRIMINATING SIGNAL
+-> RETURN TO HETEROGENEOUS MIDDLE-OUT WORLD LEARNING
+-> EXTERNAL OWNERS / REAL CASES / POSITIVE CONSTRUCTION
+-> SMALL USABLE OBJECTS
+-> WATCH CONSEQUENCES
+-> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
+```
+
+If this pointer and live issue/repository state disagree, live state wins. This file is a routing aid, not mutable-state authority.
+
+Do not infer merge/release/actuation authority, completed audit, efficacy, standing, current Square quota, project identity or permission to dispatch from this pointer.
