@@ -762,6 +762,7 @@ class FreshUseAirlockTests(unittest.TestCase):
                 )
         self.assertEqual([], [path for path in out.rglob("*") if path.is_file()])
 
+    @unittest.skipUnless(os.name == "posix", "POSIX permission semantics only")
     def test_existing_posix_acl_broadening_fails_without_repair(self):
         self._prepare()
         self.bundle.chmod(0o755)
@@ -850,7 +851,7 @@ class FreshUseAirlockTests(unittest.TestCase):
             self._prepare()
             extra = self.bundle / "private" / "source-ledgers" / "EXTRA.json"
             extra.write_text("{}\n", encoding="utf-8")
-            extra.chmod(0o600)
+            freshuse.require_private_storage(extra, 0o600)
             failed = self._run("verify", "--bundle", self.bundle, ok=False)
             self.assertIn("do not exactly cover public cases", failed.stderr)
 
