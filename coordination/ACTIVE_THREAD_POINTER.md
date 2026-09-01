@@ -43,7 +43,7 @@ Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campf
 
 The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in the live `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`; its receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
 
-Draft PR #78 now points to repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`. The executable is byte-identical to the native-Windows-tested direct-.NET repair; the final test-only commit marks POSIX chmod semantics as POSIX-only and gives the injected extra-ledger fixture a valid private ACL so Windows reaches the intended coverage check. The arm-map, source-ledger, score-chain and verify-only permission joins remain. Thirty-two tests pass on Linux; the byte-identical executable passed native Windows with 31 PASS, 1 POSIX-only SKIP and real DACL broadening rejected twice without silent healing. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies. Codex and Claude Code have each returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against this exact head; the exact airlock gate is therefore cleared for the frozen voluntary/manual R1 launch. The user has directed maximal safe automation of the no-spend Temporary Chat route. Browser authentication is pending; neither neutral cell has been dispatched.
+Draft PR #78 now points to repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`. The executable is byte-identical to the native-Windows-tested direct-.NET repair; the final test-only commit marks POSIX chmod semantics as POSIX-only and gives the injected extra-ledger fixture a valid private ACL so Windows reaches the intended coverage check. The arm-map, source-ledger, score-chain and verify-only permission joins remain. Thirty-two tests pass on Linux; the byte-identical executable passed native Windows with 31 PASS, 1 POSIX-only SKIP and real DACL broadening rejected twice without silent healing. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies. Codex and Claude Code have each returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against this exact head; the exact airlock gate is therefore cleared for the frozen voluntary/manual R1 launch. The user has directed maximal safe automation of the no-spend Temporary Chat route. Google's device-approval flow ended as `Sign-in stopped`; a user-approved authentication restart is required. Neither neutral cell has been dispatched.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
@@ -119,7 +119,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 - Claude Code voluntary-help tool build: OPEN.
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
 - Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
-- No-spend Temporary Chat R1 execution: USER-DIRECTED / AUTHENTICATION PENDING / NOT DISPATCHED.
+- No-spend Temporary Chat R1 execution: USER-DIRECTED / GOOGLE SIGN-IN STOPPED / USER ACTION REQUIRED / NOT DISPATCHED.
 - Paid provider/API dispatch: NOT AUTHORIZED.
 - Square later content/inbox/quota/authority: UNKNOWN.
 - Campfire PR #202 normal draft->ready path: tool-blocked.
@@ -130,7 +130,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> COMPLETE USER AUTHENTICATION FOR THE NO-SPEND TEMPORARY-CHAT ROUTE
+-> RESTART AND COMPLETE USER AUTHENTICATION FOR THE NO-SPEND TEMPORARY-CHAT ROUTE
 -> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
 -> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
