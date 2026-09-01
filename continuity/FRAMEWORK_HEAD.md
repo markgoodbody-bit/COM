@@ -117,7 +117,7 @@ Codex's pre-dispatch audit then found the real blocking defect:
 `URL + RETRIEVAL DATE != EXACT RECEIVER SOURCE BYTES`
 
 A provider-free preparation/evidence airlock is now on draft COM PR #78:
-- repaired exact head `30f3dc8e789c61642f745ab0665f47794aff0832`;
+- repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`;
 - path `tools/fresh_use_airlock/`;
 - 32 tests PASS locally, including deterministic Windows DACL, binding/tamper and module-cmdlet-exclusion regressions;
 - binds captured HTML -> deterministic bounded extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> local transition chain -> blinded score -> unmask receipt;
@@ -140,7 +140,7 @@ Therefore:
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
 `EXACT R1 RECEIVER SOURCE BYTES = PRIVATELY PRESERVED / HASH-WITNESSED`
 `R1 RUN009 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
-`FRESH-USE AIRLOCK = DRAFT PR #78 @ 30f3dc8e... / CODEX PASS FOR NATIVE GATE / CLAUDE CODE NATIVE-WINDOWS REPRODUCTION OPEN`
+`FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE EXACT-HEAD RETURN OPEN`
 `FRESH RECEIVER ROUTE = AVAILABLE WITH CAVEATS / NOT AUTHORIZED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
@@ -248,7 +248,7 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Claude Code PR #78 exact-head / R1 `RUN009` native-Windows reproduction; Codex returned `PASS_FOR_NATIVE_WINDOWS_REPRODUCTION_GATE`;
+- Claude Code PR #78 exact-head / R1 `RUN009` final return; Codex returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;

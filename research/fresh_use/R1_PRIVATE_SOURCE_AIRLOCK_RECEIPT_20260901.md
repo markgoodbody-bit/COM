@@ -44,7 +44,7 @@ The bounded receiver material is approximately 2,620 words / 15,997 bytes across
 Tool candidate:
 - COM draft PR #78;
 - original reviewed head: `8dc389fddbd8502e9d548c075b90bc23408ee894`;
-- current repaired exact head: `30f3dc8e789c61642f745ab0665f47794aff0832`;
+- current repaired exact head: `ed5e03787cc55e76276ab4a91cfb01505e60f231`;
 - provider-free: prepares, verifies, records, freezes blinded scores and unmasks; it does not browse, dispatch, score substantive answers or authorize spend.
 
 Claude Code returned `REPAIR` on the original head. Its five findings were integrated:
@@ -115,7 +115,7 @@ Verification at preparation:
 
 ## Remaining gates
 
-- independent Codex exact-head + `RUN009` re-audit: `PASS_FOR_NATIVE_WINDOWS_REPRODUCTION_GATE`;
+- independent Codex exact-head + `RUN009` final re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
 - Claude Code native-Windows exact-head reproduction request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-009`: OPEN;
 - fresh receiver launch: CLOSED;
 - receiver/spend authority: CLOSED.

@@ -43,7 +43,7 @@ Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campf
 
 The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in the live `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`; its receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
 
-Draft PR #78 now points to repaired exact head `30f3dc8e789c61642f745ab0665f47794aff0832`. The arm-map, source-ledger, score-chain and verify-only permission joins remain. The native Windows implementation now uses direct .NET Directory/File SetAccessControl and GetAccessControl calls instead of `Set-Acl`/`Get-Acl`, whose PowerShell security module failed on the operator host. Thirty-two tests pass on Linux, including module-cmdlet exclusion and proof that verify-only inspection issues no SetAccessControl call. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies; prior runs are quarantined and were never dispatched. Codex returned `PASS_FOR_NATIVE_WINDOWS_REPRODUCTION_GATE`; Claude Code's native-Windows reproduction remains open under `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-009`. No receiver launch is authorized yet.
+Draft PR #78 now points to repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`. The executable is byte-identical to the native-Windows-tested direct-.NET repair; the final test-only commit marks POSIX chmod semantics as POSIX-only and gives the injected extra-ledger fixture a valid private ACL so Windows reaches the intended coverage check. The arm-map, source-ledger, score-chain and verify-only permission joins remain. Thirty-two tests pass on Linux; the byte-identical executable passed native Windows with 31 PASS, 1 POSIX-only SKIP and real DACL broadening rejected twice without silent healing. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies. Codex returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`; Claude Code's final exact-head return remains open under `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-010`. No receiver launch is authorized yet.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
@@ -115,7 +115,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 ## Open debt
 
 - Codex + Claude Code Stage-0 exact-two-repair re-audits: OPEN.
-- Codex PR #78 exact-head / R1 `RUN009`: `PASS_FOR_NATIVE_WINDOWS_REPRODUCTION_GATE`; Claude Code native-Windows reproduction: OPEN.
+- Codex PR #78 exact-head / R1 `RUN009`: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`; Claude Code: OPEN.
 - Claude Code voluntary-help tool build: OPEN.
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
 - Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
