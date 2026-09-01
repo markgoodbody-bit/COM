@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — R1 RUN009 DRY / HASHED TEXT-ATTACHMENT GATE
+### 7Q fresh-use packet — R1 RUN009 COMPLETE / NO MATERIAL DIFFERENCE
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -140,17 +140,26 @@ Therefore:
 `7Q DESIGN = FROZEN`
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
 `EXACT R1 RECEIVER SOURCE BYTES = PRIVATELY PRESERVED / HASH-WITNESSED`
-`R1 RUN009 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
+`R1 RUN009 = TWO FIRST ATTEMPTS COMPLETE / BLIND SCORE FROZEN / UNMASKED ONCE`
 `FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE PASS`
 `MANUAL R1 LAUNCH GATE = CLEARED`
 `REMOTE TEMPORARY-CHAT ROUTE = USER-AUTHORISED BOUNDED RETRY SUCCEEDED / TEMPORARY + UNPERSONALIZED VISIBLE / NO NEW GOOGLE CHALLENGE`
 `REMOTE ACCOUNT SAFETY = NO AUTH LOOP / CLOSE SESSION AFTER RUN OR HOLD / USER MAY REVOKE CLOUD MACOS SESSION AGAIN`
 `ZIP UPLOAD = FAILED BEFORE DISPATCH / RETIRED FOR THIS RUN`
 `LONG INLINE COMPOSER = EXACT THROUGH 10,000 CHARACTERS THEN NORMALIZED / HOLD / RETIRED FOR THIS RUN`
-`HASHED TEXT ATTACHMENT = FIRST NEUTRAL CELL STAGED UNSENT / EXACT FILENAME VISIBLE / EXTERNAL LAUNCH STRING SHA-256 VERIFIED`
-`ANONYMOUS TEXT DERIVATIVE = DRAFT PR #79 @ 67ee93c... / 38 TESTS PASS / CODEX PASS_FOR_HASHED_TEXT_ATTACHMENT_DISPATCH / CLAUDE CODE FINAL RECEIPT OPEN`
-`ANONYMOUS RECEIVER CONTEXTS = SEPARATE TEMPORARY CHATS REQUIRED / FIRST CONTEXT STAGED / SECOND NOT YET LAUNCHED`
+`HASHED TEXT ATTACHMENT = BOTH NEUTRAL CELLS DISPATCHED ONCE / SEPARATE TEMPORARY + UNPERSONALIZED CHATS / EXACT LAUNCH TEXT`
+`ANONYMOUS TEXT DERIVATIVE = DRAFT PR #79 @ 67ee93c... / 38 TESTS PASS / CODEX ATTACHMENT PASS / CLAUDE CODE PASS_AS_FALLBACK_TRANSPORT`
+`R1 BLIND SCORE = NO_MATERIAL_DIFFERENCE ON ALL FIVE CRITERIA / NO UNIQUE MATERIAL ERROR`
+`R1 UNMASK = Q cell-6ca546d4de1b 505 UNITS / 31s; O cell-fb424360ddd7 543 UNITS / 33s`
+`R1 7Q_FRESH_USE_SIGNAL = NO`
+`R1 PUBLIC SCORE-BEFORE-UNMASK ANCHOR = dd51798e3e688b5e0afe96dd519c7b47c9acc391`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
+
+Result:
+- `research/fresh_use/R1_RUN009_RESULT_20260901.md`;
+- disposition `NO_MATERIAL_DIFFERENCE`;
+- no TRACE/ME mutation, efficacy claim or named-mechanism replication earned;
+- R2 remains the second frozen initial case and is the next bounded fresh-use edge.
 
 Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
 
@@ -256,9 +265,8 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Claude Code final attachment-route receipt on anonymous transport derivative PR #79; Codex returned `PASS_FOR_HASHED_TEXT_ATTACHMENT_DISPATCH` after exact browser preflight;
-- first neutral R1 cell is staged but unsent in a Temporary + Unpersonalized ChatGPT context using `cell-6ca546d4de1b.message.txt`; do not dispatch before the Claude Code receipt;
-- after completed run or explicit HOLD, close the remote authenticated browser session and let the user revoke the cloud macOS Google session again if desired; do not loop authentication;
+- R2 packet preparation and two first-attempt launches under the now-proven hashed text-attachment route; do not reuse R1 chats or infer a signal from R1;
+- close the remote authenticated browser session after preserving R1 receipts and before any later pause; the user may revoke the cloud macOS Google session again if desired; do not loop authentication;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
