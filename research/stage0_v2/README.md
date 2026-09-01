@@ -8,9 +8,9 @@ This directory is the single current production source for COM #77 Stage-0 v2. T
 
 Purpose:
 
-> Test whether any local carrier/practice shows a case-specific transfer or T0→T1 continuity signal after strict fact parity, or whether competent ordinary analysis and owner-native practice already cover the tested use.
+> Test whether any local carrier/practice shows a case-specific transfer or T0→T1 continuity signal after strict fact parity, or whether a plain-prose carrier from the same project-conditioned producer and owner-native practice already cover the tested use.
 
-The study is deliberately underpowered. A positive result can only justify replication of a named error mechanism. A negative result can only block local build/promotion from this stage. It cannot prove universal redundancy, absence of value, efficacy, project identity, or project survival.
+The study is deliberately underpowered. A positive result can only justify replication of a named error mechanism. A negative result can only block local build/promotion from this stage. It cannot prove universal redundancy, untreated ordinary-reasoning sufficiency, absence of value, efficacy, project identity, or project survival.
 
 ## Scored cases
 
@@ -22,7 +22,7 @@ The prior Campfire-derived Case A is smoke-only and excluded from scored inferen
 
 ## Arms
 
-- Arm A — competent ordinary note
+- Arm A — plain-prose note from the same project-conditioned producer; not an untreated ordinary-reasoning baseline
 - Arm B — three-question lightweight challenge discipline
 - Arm C — current TRACE RC1 smallest-use practice
 - Arm D — case-specific owner-native control
