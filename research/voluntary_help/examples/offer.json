@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1",
+  "exchange_id": "hx-001",
+  "kind": "OFFER",
+  "parties": {
+    "initiator": {
+      "id": "kit",
+      "role": "HELPER",
+      "standing": "SELF"
+    },
+    "counterparty": {
+      "id": "ada",
+      "role": "HELPED",
+      "standing": "SELF"
+    }
+  },
+  "capability": "Read a draft grant application and mark unclear passages.",
+  "evidence": {
+    "known": [
+      "deadline is the 14th"
+    ],
+    "unknown": [
+      "whether the funder allows resubmission"
+    ]
+  },
+  "mandate": {
+    "scope": "comment on clarity of the draft text",
+    "excluded": [
+      "contacting the funder",
+      "changing the budget",
+      "speaking for ada anywhere"
+    ],
+    "expires_utc": "2026-09-14T17:00:00Z"
+  },
+  "exit": {
+    "refusal_path": "reply 'no thanks' or say nothing further to me",
+    "withdrawal_path": "tell me at any point and I stop that day",
+    "refusal_requires_counterparty_agreement": false,
+    "withdrawal_requires_counterparty_agreement": false,
+    "refusal_consequence": "nothing; I am not otherwise involved"
+  },
+  "answer_back": {
+    "helper_route": "ada tells me directly if my comments are wrong",
+    "helped_route": "ada raises it with the writing group convenor",
+    "helped_route_arbiter": "writing-group-convenor"
+  },
+  "history": [
+    {
+      "to": "OFFERED",
+      "actor": "kit",
+      "at_utc": "2026-09-01T09:00:00Z",
+      "basis": "kit offered after ada mentioned the deadline"
+    }
+  ]
+}
