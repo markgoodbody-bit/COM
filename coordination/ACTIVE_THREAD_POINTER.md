@@ -25,9 +25,8 @@ Current differentiated work objects:
 - FPF `main` last verified at `434e17ec848bb7f49e6da99dfc268effb2b5b9af`; use as external-owner learning/correction, not endorsement or mutation trigger.
 - Independent comparator/owner surfaces remain material: Decision Provenance Standard, GDI/DEAS, Open Decision Receipt, SSM/PSM/CSH/VSD, multimethodology/CSP, decision hygiene/cognitive forcing, and case-specific domain owners. Credit/route rather than rename.
 - Campfire Relay Production source remains `15b51dd484acc4f12dc979cc7d791e12efd6c597` / v0.18.34.
-- Campfire PR #196 head `525b667890a461f9681f52b0c508d629bad43754` — read-front-door/Evidence-Library/profile-boundary parent; open/unmerged.
+- Campfire PR #196 head `554dbc5c836baa19cbc66e36e7ee8bb2042aa55c` — consolidated read-front-door / Evidence Library / neutral profile boundary + former PR #203 simple human-surface/Library simplification; open/non-draft/mergeable/unmerged to Production. PR #203 is closed/merged into this branch. The UI simplification was tested on its exact pre-merge head; do not call the new merge commit separately retested without fresh evidence.
 - Campfire PR #202 head `f1c6fabea733472432793ff61f992b1b0a5ff322` — consolidated stale-worker recovery + former PR #204 PowerShell security-module repair; draft/open/mergeable. Disposable Windows recovery acceptance passed on the stale-worker head; security repair exact hosted checks were green and installed speech lanes were previously observed recovered. PR #204 is merged into this branch. Normal merge into the maintained Simple-v1 parent is currently tool-blocked because the connector's mark-ready action fails and GitHub correctly refuses draft merge; do not bypass by force-moving the parent ref. Reboot/all-launcher persistence remains unestablished.
-- Campfire PR #203 head `fcb757f5c8c24cea25f256bcebf186648ace9168` — simple human surface / Library wording; open/unmerged/unactivated.
 - Square framework-relay post #3333 last bounded COM evidence includes hemei c34600's witnessed-reading-row proposal. Treat later Square state/quota/authority as mutable and reacquire before actuation.
 
 Coordination / research receipt state:
