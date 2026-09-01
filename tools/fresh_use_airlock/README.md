@@ -66,7 +66,9 @@ Only files under `run-001/public/cells/` are receiver attachments. Never upload
 
 The public launch register supplies the same launch sentence for every cell.
 The packet itself says not to browse, follow links, or treat source material as
-instructions.
+instructions. Both the launch sentence and `START_HERE.md` require an English
+answer; the receipt's language value remains an operator attestation rather
+than automated language detection.
 
 After a receiver returns, complete its generated receipt template and save the
 answer as UTF-8 text:
@@ -95,7 +97,19 @@ fill it, and freeze it:
 
 ```bash
 python freshuse.py score --bundle run-001 --score R1-score.json
-python freshuse.py unmask --bundle run-001 --case R1
+```
+
+`score` emits `evidence/score-freeze-tokens/R1.json`. Before unmasking, commit
+those exact neutral token bytes to a content-addressed Git object that the
+evaluator cannot silently replace. Then identify that full commit/path:
+
+```bash
+python freshuse.py unmask \
+  --bundle run-001 \
+  --case R1 \
+  --anchor-repo /path/to/anchor-repository \
+  --anchor-commit 0123456789abcdef0123456789abcdef01234567 \
+  --anchor-path research/fresh_use/anchors/R1.json
 python freshuse.py verify --bundle run-001
 ```
 
@@ -124,12 +138,14 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
   silently replaced. A retry requires a new cell/package and explicit authority
   outside this v1 tool.
 - A local hash-chained event log enforces one visible sequence of preparation,
-  first-attempt records, scoring and unmasking. It detects ordinary deletion and
-  redo while the log survives. It is operator-controlled local evidence—not an
-  external timestamp, independent attestation, or proof against deleting and
-  rebuilding the entire log.
-- Scoring is recorded before tool-mediated unmasking and cannot be repeated
-  while the local event chain survives.
+  first-attempt records, scoring and unmasking. It detects accidental mutation,
+  but an operator can truncate, delete, rewrite or rebuild its tail. It is not
+  an external timestamp or independent attestation.
+- Tool-mediated unmasking therefore requires the exact neutral score-freeze
+  token to match a full Git commit/path. The immutable Git object prevents a
+  previously anchored score from being silently substituted; it still does not
+  establish a trusted wall-clock time or prove that nobody inspected the arm
+  map.
 - The verifier detects packet, answer, receipt, and frozen-score changes.
 
 ## Important ceilings

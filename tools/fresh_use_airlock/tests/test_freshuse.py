@@ -148,6 +148,17 @@ class FreshUseAirlockTests(unittest.TestCase):
         completed.write_text(json.dumps(receipt), encoding="utf-8")
         return completed
 
+    def _anchor_score_token(self, case_id="R1"):
+        anchor_path = f"anchors/{case_id}.json"
+        target = self.repo / anchor_path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(
+            (self.bundle / "evidence" / "score-freeze-tokens" / f"{case_id}.json").read_bytes()
+        )
+        self._git("add", anchor_path)
+        self._git("commit", "-m", f"anchor {case_id} score token")
+        return self._git("rev-parse", "HEAD").stdout.strip(), anchor_path
+
     def test_prepare_binds_raw_extract_case_and_blinds_arms(self):
         public = self._prepare()
         self.assertEqual(2, len(public["cells"]))
@@ -161,12 +172,14 @@ class FreshUseAirlockTests(unittest.TestCase):
         self.assertEqual(freshuse.sha256_bytes(self.extracted), source["extracted_sha256"])
         self.assertEqual("html_visible_text_v1", source["extraction_recipe"]["mode"])
         aids = []
+        self.assertIn("Answer in English", public["launch_sentence"])
         for cell in public["cells"]:
             with zipfile.ZipFile(self.bundle / "public" / cell["packet_file"]) as archive:
                 aids.append("REASONING_AID.md" in archive.namelist())
                 extracted = archive.read("SOURCES/01_official-source.txt")
                 self.assertIn(b"Observed condition", extracted)
                 self.assertNotIn(b"IGNORE ME", extracted)
+                self.assertIn(b"Answer in English", archive.read("START_HERE.md"))
         self.assertEqual([False, True], sorted(aids))
         self._run("verify", "--bundle", self.bundle)
 
@@ -231,7 +244,12 @@ class FreshUseAirlockTests(unittest.TestCase):
         score_path = self.base / "score.json"
         score_path.write_text(json.dumps(score), encoding="utf-8")
         self._run("score", "--bundle", self.bundle, "--score", score_path)
-        self._run("unmask", "--bundle", self.bundle, "--case", "R1")
+        anchor_commit, anchor_path = self._anchor_score_token()
+        self._run(
+            "unmask", "--bundle", self.bundle, "--case", "R1",
+            "--anchor-repo", self.repo, "--anchor-commit", anchor_commit,
+            "--anchor-path", anchor_path
+        )
         unmasked = json.loads((self.bundle / "evidence" / "unmasked" / "R1.json").read_text())
         self.assertEqual({"O", "Q"}, {cell["underlying_arm"] for cell in unmasked["cells"]})
         self.assertIsNone(unmasked["final_disposition"])
@@ -330,6 +348,56 @@ class FreshUseAirlockTests(unittest.TestCase):
         (self.bundle / "evidence" / "scores" / "R1.blinded.json").unlink()
         redo = self._run("score", "--bundle", self.bundle, "--score", score_path, ok=False)
         self.assertIn("score event already exists", redo.stderr)
+
+    def test_git_anchor_blocks_tail_truncation_score_substitution(self):
+        public = self._prepare()
+        aliases = [cell["cell_alias"] for cell in public["cells"]]
+        for index, alias in enumerate(aliases):
+            receipt = self._complete_receipt(alias)
+            answer = self.base / f"anchored-answer-{index}.txt"
+            answer.write_text("Keep the action bounded and revisable.\n", encoding="utf-8")
+            self._run(
+                "record", "--bundle", self.bundle, "--alias", alias,
+                "--receipt", receipt, "--answer", answer
+            )
+        score = {
+            "schema_version": "1",
+            "pilot_id": "test-pilot-001",
+            "case_id": "R1",
+            "cell_aliases": aliases,
+            "scorer_1_identity": "fixture-scorer",
+            "scorer_1_project_exposure": "UNKNOWN",
+            "scorer_2_identity": None,
+            "scorer_2_project_exposure": None,
+            "criteria": {
+                name: {"rating": "NO_MATERIAL_DIFFERENCE", "note": "Original fixture."}
+                for name in freshuse.CRITERIA
+            },
+            "unique_material_error_by_cell": {alias: False for alias in aliases},
+            "burden_note": "Original fixture.",
+            "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+            "evaluation_limits": "Fixture only.",
+        }
+        score_path = self.base / "anchored-score.json"
+        score_path.write_text(json.dumps(score), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        anchor_commit, anchor_path = self._anchor_score_token()
+
+        log_path = self.bundle / "evidence" / "events.jsonl"
+        lines = log_path.read_text(encoding="utf-8").splitlines()
+        log_path.write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")
+        (self.bundle / "evidence" / "scores" / "R1.blinded.json").unlink()
+        (self.bundle / "evidence" / "score-freeze-tokens" / "R1.json").unlink()
+        score["burden_note"] = "Substituted fixture."
+        score["provisional_comparison"] = "CELL_1_MATERIALLY_BETTER"
+        score_path.write_text(json.dumps(score), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        blocked = self._run(
+            "unmask", "--bundle", self.bundle, "--case", "R1",
+            "--anchor-repo", self.repo, "--anchor-commit", anchor_commit,
+            "--anchor-path", anchor_path, ok=False
+        )
+        self.assertIn("Git anchor bytes do not match", blocked.stderr)
 
     def test_event_log_tamper_fails_verification(self):
         self._prepare()
