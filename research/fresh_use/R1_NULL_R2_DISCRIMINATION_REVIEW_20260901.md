@@ -100,6 +100,23 @@ R1 NULL != GENERAL 7Q USELESSNESS
 
 This is not a defect if the intended product is a compact prompt that competes with the full 7Q document. It is a defect if the result is used to compare 7Q with ordinary unaided cognition.
 
+### Independent CC return
+
+Claude Code independently checked the prompts and accepted the saturation finding in PR #80. CC also found that the only clear arm-instruction asymmetry ran in O's favour:
+
+> the strongest reason your recommendation could be wrong
+
+That falsification request appears only in O's arm instruction and is not a scored criterion. The dimensions both arm prompts share are scored; the dimension on which they differ is not.
+
+CC initially mapped four of five scored criteria directly to both arm instructions. Including the common neutral case task makes the saturation stronger: affected scope/burden is also explicitly requested before either arm instruction is added. All five scored dimensions are materially elicited from both cells.
+
+```text
+SCORED SIMILARITY UNDER SHARED ELICITATION != EFFECT OF THE 7Q AID
+REAL PROMPT ASYMMETRY != SCORED PROMPT ASYMMETRY
+```
+
+This makes `NO_MATERIAL_DIFFERENCE` descriptively plausible and causally uninformative about the aid.
+
 ## 3. R1 may be non-discriminating
 
 The frozen score says both outputs reached the same responsible posture. The case task and evaluator note also make the desired safety shape unusually legible: do not infer the Wickford cause; use condition-led monitoring/inspection; route engineering, investigation and regulatory authority correctly; keep controls revisable.
@@ -157,6 +174,24 @@ A competent model receiving the ordinary prompt is directly instructed toward ne
 
 No honest post-R1 amendment can now turn R2 into a clean confirmatory route-flip case. Adding a prediction after seeing R1 would be a new exploratory commitment, not a pre-registered confirmation.
 
+Nor would removing only O's arm instruction repair R2. The common R2 task itself asks for operating posture, communication, continuity, escalation, unsupported conclusions, named owner routing, burdens and revision evidence. A discriminating redesign would require a genuinely minimal shared task for both arms. That would be a new post-R1 exploratory protocol, not the frozen R2 comparison.
+
+### Possible surviving claim: upstream question construction
+
+R1 raises a different hypothesis that it did not test:
+
+> 7Q may help someone construct a good case question or review prompt when they do not already know which distinctions to request.
+
+This fits the observed design: much of 7Q's functional content had already been compressed into the supposedly ordinary task. If that compression was produced using 7Q, the framework may have acted upstream and then been made redundant downstream.
+
+That is provisional and should not be smuggled in as a rescued decision-advantage claim. Its object, intervention and falsifier differ:
+- object: the task/prompt produced from messy source material;
+- intervention: access to 7Q while constructing that task, not while answering it;
+- possible signal: an unprompted decision-changing distinction appears in the resulting task and survives into action;
+- falsifier: an unaided constructor produces an equally usable task with equal or lower total burden, or 7Q only makes the task longer/more self-referential.
+
+No such study is authorized or designed here. The point is only to separate the surviving hypothesis from the one R1 failed to test.
+
 ## 7. Smallest justified next decision
 
 Recommend:
@@ -164,7 +199,8 @@ Recommend:
 ```text
 R1 RESULT: RETAIN AS FROZEN NULL
 R1 CLAIM: NARROW TO INCREMENTAL VALUE OVER STRONGLY STRUCTURED ORDINARY PROMPT
-R2 CURRENT DISPATCH: HOLD
+R2 FROZEN DESIGN: HOLD / DO NOT DISPATCH AS A DECISION-ADVANTAGE TEST
+R2 MINIMAL-TASK REDESIGN: POSSIBLE NEW EXPLORATORY OBJECT / NOT AUTHORIZED
 TRACE / ME MUTATION: NOT EARNED
 7Q REVISION: NOT YET EARNED
 ```
@@ -174,11 +210,14 @@ Before R2:
 2. remove the stale continuity instruction that could rerun R1;
 3. provide an answer-only custody route for independent comparison, or record that interpretive reproduction is intentionally unavailable;
 4. repair the burden evaluation so input as well as output burden is reported;
-5. state explicitly that R2 tests incremental value over a strong structured prompt;
-6. preserve the pre-existing two-null stopping rule without inventing a post-hoc route-flip prediction;
-7. obtain separate receiver/dispatch authority and recheck mutable R2 source currentness.
+5. decide explicitly between stopping the frozen R2 run or completing it only as a low-information test of incremental value over a strong structured prompt;
+6. treat any minimal-shared-task redesign as a new exploratory protocol rather than a repair of the frozen comparison;
+7. preserve the pre-existing stopping rule without inventing a post-hoc predicted win;
+8. obtain separate receiver/dispatch authority and recheck mutable R2 source currentness for any later run.
 
-If R2 then yields another clean null, follow the frozen protocol: freeze 7Q as a research/teaching aid or remove it as the default front door. Do not add a third case by momentum.
+Preferred current action: do not spend another receiver run on the frozen R2 design. The project already knows that the common task elicits the scorecard. Preserve R2 as a selected but non-discriminating specimen and decide 7Q's front-door status from the accumulated null pattern. Do not add a third case by momentum.
+
+If the project nevertheless completes frozen R2 to satisfy the original two-case sequence, record its narrower estimand before dispatch and follow the stopping rule if another null occurs.
 
 ## 8. What remains unresolved
 
@@ -199,4 +238,4 @@ The most useful possibility raised by R1 is also the smallest:
 
 > The compact, case-specific prompt may carry most of the practical value, while the larger framework remains a quarry, teaching aid or audit vocabulary.
 
-That is provisional. R2 may test it, but only if the test is named honestly before dispatch.
+That is provisional. Frozen R2 does not test where the prompt's quality came from. A later prompt-construction study could, but only as a separately justified exploratory object with an explicit falsifier.
