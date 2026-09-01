@@ -1,0 +1,61 @@
+{
+  "schema_version": "1",
+  "pilot_id": "7Q-FRESH-USE-20260901-RUN001",
+  "source_com_head": "7810398ecdecc911d546fdb0c7862ded788d524c",
+  "com_repo": "../../COM-live",
+  "spec": {
+    "protocol": {
+      "commit": "9ce803bf6be1b717d963d5a2e9ed6e74c808f7a5",
+      "path": "research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md",
+      "sha256": "9879ffe0e7411dcb9bd61d2ba790938a14101c129f2dc6897ab9a6ba91b9d0d3"
+    },
+    "candidate": {
+      "commit": "eec157b47c21b34f156e136ead734d4269eb870d",
+      "path": "research/MIDDLE_OUT_ENTRY_7Q_CANDIDATE_20260901.md",
+      "sha256": "17e289fea039d3a7f543e0c334d02a08ea474ac8085a1f8e03eac318b24bcad0"
+    },
+    "prompts": {
+      "commit": "7a3230316ece7c5f2c2c72fe6583b154309ad271",
+      "path": "research/fresh_use/RECEIVER_PROMPTS_20260901.md",
+      "sha256": "9212c48ccedf8fd73168eda4e5217628bdc788a089a599c444ecf635a7fbe087"
+    }
+  },
+  "cases": [
+    {
+      "case_id": "R1",
+      "manifest": {
+        "commit": "25ed401228fc1a87abd02cf8076e55bc4b6670b2",
+        "path": "research/fresh_use/CASE_R1_WICKFORD_RAIL_20260901.md",
+        "sha256": "6cf4ed439bfeb5718e99bd667502ac6e75f4d1ec53b9bd8565df77440246ea36"
+      },
+      "sources": [
+        {
+          "raw_path": "REPLACE_WITH_LOCAL_PRIVATE_RAW_SNAPSHOT_PATH",
+          "raw_sha256": "REPLACE_WITH_64_HEX",
+          "extraction": {"mode": "html_visible_text_v1"},
+          "extracted_sha256": "REPLACE_WITH_64_HEX",
+          "source_identity": "Exact URL, edition/accession, and retrieval UTC",
+          "display_name": "raib-wickford.html"
+        }
+      ]
+    },
+    {
+      "case_id": "R2",
+      "manifest": {
+        "commit": "bc0a7e83cd782b99f9c3c4c9e6cd02e9d908c008",
+        "path": "research/fresh_use/CASE_R2_BOSTON_SCIENTIFIC_CYBER_20260901.md",
+        "sha256": "7874494e002f10685aceb25afc4fe6872d89f94f689294af96d886fb4856f2e7"
+      },
+      "sources": [
+        {
+          "raw_path": "REPLACE_WITH_LOCAL_PRIVATE_SEC_8K_SNAPSHOT_PATH",
+          "raw_sha256": "REPLACE_WITH_64_HEX",
+          "extraction": {"mode": "html_visible_text_v1"},
+          "extracted_sha256": "REPLACE_WITH_64_HEX",
+          "source_identity": "SEC accession 0000885725-26-000056",
+          "display_name": "sec-8k.html"
+        }
+      ]
+    }
+  ]
+}
