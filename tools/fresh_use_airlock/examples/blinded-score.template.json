@@ -1,0 +1,27 @@
+{
+  "schema_version": "1",
+  "pilot_id": "7Q-FRESH-USE-20260901-RUN001",
+  "case_id": "R1",
+  "cell_aliases": [
+    "cell-REPLACE1",
+    "cell-REPLACE2"
+  ],
+  "scorer_1_identity": "",
+  "scorer_1_project_exposure": "UNKNOWN",
+  "scorer_2_identity": null,
+  "scorer_2_project_exposure": null,
+  "criteria": {
+    "action_sequence": {"rating": "UNCLEAR", "note": ""},
+    "evidence_uncertainty": {"rating": "UNCLEAR", "note": ""},
+    "owner_authority": {"rating": "UNCLEAR", "note": ""},
+    "affected_scope_burden": {"rating": "UNCLEAR", "note": ""},
+    "time_correction": {"rating": "UNCLEAR", "note": ""}
+  },
+  "unique_material_error_by_cell": {
+    "cell-REPLACE1": "UNCLEAR",
+    "cell-REPLACE2": "UNCLEAR"
+  },
+  "burden_note": "",
+  "provisional_comparison": "EVALUATION_INCONCLUSIVE",
+  "evaluation_limits": ""
+}
