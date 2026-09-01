@@ -118,7 +118,8 @@ Verification at preparation:
 - independent Codex exact-head + `RUN009` final re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
 - Claude Code native-Windows exact-head re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against `ed5e03787cc55e76276ab4a91cfb01505e60f231` (comment `5496852035`); 32/32 tests executed on native Windows, one correct POSIX-only skip;
 - exact airlock/manual R1 launch gate: CLEARED by both required receipts;
-- no-spend Temporary Chat receiver launch: USER-DIRECTED / GOOGLE SIGN-IN STOPPED / USER ACTION REQUIRED / NOT DISPATCHED;
+- no-spend Temporary Chat receiver launch: USER-DIRECTED / GOOGLE 2FA APPROVED / OPENAI OAUTH CALLBACK FAILED / NOT DISPATCHED;
+- logged-out anonymous route: FILE UPLOAD UNAVAILABLE; any inline-text derivative requires a new exact dual review and separate browser contexts;
 - paid provider/API spend authority: NOT AUTHORIZED.
 
 This object establishes reproducible preparation only.

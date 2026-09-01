@@ -143,7 +143,8 @@ Therefore:
 `R1 RUN009 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
 `FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE PASS`
 `MANUAL R1 LAUNCH GATE = CLEARED`
-`NO-SPEND TEMPORARY-CHAT RECEIVER ROUTE = USER-DIRECTED / GOOGLE SIGN-IN STOPPED / USER ACTION REQUIRED / NOT DISPATCHED`
+`NO-SPEND TEMPORARY-CHAT RECEIVER ROUTE = USER-DIRECTED / GOOGLE 2FA APPROVED / OPENAI OAUTH CALLBACK FAILED / NOT DISPATCHED`
+`LOGGED-OUT ANONYMOUS ROUTE = FRESHNESS PLAUSIBLE / ATTACHMENTS UNAVAILABLE / INLINE DERIVATIVE REQUIRES NEW EXACT REVIEW`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
 Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
@@ -250,7 +251,7 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- browser authentication and exact no-spend Temporary Chat launch of the two neutral R1 cells; both required PR #78 exact-head / `RUN009` receipts are `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
+- alternate authenticated Temporary Chat recovery or a separately reviewed anonymous inline-transport derivative; Google 2FA succeeded but OpenAI returned `OAuthCallback`, and logged-out uploads are unavailable;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
@@ -266,7 +267,8 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> RESTART AND COMPLETE USER AUTHENTICATION FOR THE NO-SPEND TEMPORARY-CHAT ROUTE
+-> BUILD + REVIEW THE SMALLEST HASH-BOUND INLINE TRANSPORT DERIVATIVE
+-> OR COMPLETE AN ALTERNATE AUTHENTICATED TEMPORARY-CHAT SIGN-IN
 -> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
 -> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
