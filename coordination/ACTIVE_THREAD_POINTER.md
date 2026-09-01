@@ -41,7 +41,9 @@ Next evidence must be genuinely fresh use + burden against competent ordinary/do
 
 Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campfire Relay Production -> Kimi K2.6 can provide separate sessions, but wider-project exposure is known, service readiness is unverified, and no no-spend claim exists. No dispatch is authorized.
 
-The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Draft PR #78, head `8dc389fddbd8502e9d548c075b90bc23408ee894`, now carries a provider-free source/cell/output airlock with six local tests passing. Claude Code code/threat-model review is open. Exact R1 source bytes still need lawful/private preservation before any receiver run.
+The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md` at commit `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
+
+Draft PR #78 now points to repaired exact head `2c3aa3c52136dd6968fa41bd5e2996746f687190`. Claude Code returned `REPAIR` on the prior head; the five ordering/confidentiality/attestation/language/ZIP findings were integrated. Thirteen tests pass. Current private dry object `FRESH-USE-R1-20260901-RUN004` prepares/verifies against captured HTML and the frozen bounded extracts; prior runs are quarantined and were never dispatched. Codex + Claude Code exact-head/`RUN004` re-audits are open. No receiver launch is authorized yet.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
@@ -113,10 +115,10 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 ## Open debt
 
 - Codex + Claude Code Stage-0 exact-two-repair re-audits: OPEN.
-- Claude Code PR #78 code/threat-model review: OPEN.
+- Codex + Claude Code PR #78 exact-head / R1 `RUN004` re-audits: OPEN.
 - Claude Code voluntary-help tool build: OPEN.
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
-- Exact R1 source-byte preservation and extraction: OPEN.
+- Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
 - Receiver dispatch/spend authority: CLOSED.
 - Square later content/inbox/quota/authority: UNKNOWN.
 - Campfire PR #202 normal draft->ready path: tool-blocked.
@@ -127,8 +129,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> REVIEW / REPAIR / DELETE DRAFT AIRLOCK PR #78
--> PRESERVE LAWFUL PRIVATE R1 SOURCE BYTES + DETERMINISTIC EXTRACTS
+-> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN004 RE-AUDITS
 -> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
 -> IF AUTHORIZED, COMPARE 7Q AGAINST COMPETENT ORDINARY / DOMAIN REASONING ON R1
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT

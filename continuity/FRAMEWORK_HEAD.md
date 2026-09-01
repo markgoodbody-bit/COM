@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — AIRLOCK BUILT / SOURCE-BYTE + REVIEW BLOCKED
+### 7Q fresh-use packet — R1 RUN004 DRY / EXACT-HEAD RE-AUDIT GATED
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -108,7 +108,7 @@ Compare only:
 - competent ordinary/domain reasoning;
 - same exact source/task + frozen 7Q.
 
-Equal answer budget: 700 Unicode words. Same model/version/settings within each case. One isolated fresh receiver session per cell. No live browsing during run.
+Equal answer budget: 700 versioned English word units; additional scalar/byte measures retained. Same model/version/settings within each case. One isolated fresh receiver session per cell. No live browsing during run.
 
 Codex returned `ROUTE_AVAILABLE_WITH_CAVEATS` for maintained Campfire Relay Production -> Kimi K2.6: isolated fresh sessions are technically available, but historical wider-project exposure is known, current service readiness is unverified, and no no-spend claim exists. Four paid cells would require four exact one-use call-bound authorizations; none is granted.
 
@@ -117,20 +117,30 @@ Codex's pre-dispatch audit then found the real blocking defect:
 `URL + RETRIEVAL DATE != EXACT RECEIVER SOURCE BYTES`
 
 A provider-free preparation/evidence airlock is now on draft COM PR #78:
-- head `8dc389fddbd8502e9d548c075b90bc23408ee894`;
+- repaired exact head `2c3aa3c52136dd6968fa41bd5e2996746f687190`;
 - path `tools/fresh_use_airlock/`;
-- six tests PASS locally;
-- binds raw bytes -> deterministic extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> blinded score freeze -> unmask receipt;
+- 13 tests PASS locally;
+- binds captured HTML -> deterministic bounded extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> local transition chain -> blinded score -> unmask receipt;
 - dispatches nothing and authorizes nothing;
-- exact code/threat-model review requested from Claude Code;
+- Claude Code returned `REPAIR` on the prior head; all five bounded findings were repaired and exact-head re-audit is requested;
 - raw third-party pages/run packets remain private/local evidence unless redistribution is permitted.
+
+Exact R1 source bytes and deterministic extracts are privately preserved. Receipt-only witness:
+- `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`;
+- commit `226ea37030cf4886b9a85f79e667d3d08283e5cf`;
+- `RUN001`-`RUN003` quarantined / never dispatched;
+- current `FRESH-USE-R1-20260901-RUN004` prepares and verifies;
+- shared case-pack SHA `05b7bdd9e1feb9050eaa4e24b33314d2f78512ae42f03a8df8110d9d7e2da567`.
+
+The tool now states its limits inside its artefacts: the transition chain is local/operator-controlled rather than an external timestamp; hash-bound attestations are not authenticated facts; native Windows private-map handling fails closed; the English counter is not cross-language parity.
 
 Therefore:
 
 `7Q DESIGN = FROZEN`
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
-`EXACT RECEIVER SOURCE BYTES = NOT YET PRESERVED`
-`FRESH-USE AIRLOCK = DRAFT PR #78 / REVIEW OPEN`
+`EXACT R1 RECEIVER SOURCE BYTES = PRIVATELY PRESERVED / HASH-WITNESSED`
+`R1 RUN004 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
+`FRESH-USE AIRLOCK = DRAFT PR #78 @ 2c3aa3c... / EXACT-HEAD RE-AUDIT OPEN`
 `FRESH RECEIVER ROUTE = AVAILABLE WITH CAVEATS / NOT AUTHORIZED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
@@ -238,10 +248,9 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Claude Code PR #78 code/threat-model review;
+- Codex + Claude Code PR #78 exact-head / R1 `RUN004` re-audits;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
-- lawful/private preservation of exact R1 source bytes and deterministic extracts;
 - explicit receiver/spend authorization, if later chosen;
 - Square later content/inbox/quota/authority;
 - Campfire PR #202 normal draft->ready path.
@@ -255,8 +264,7 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> REVIEW / REPAIR / DELETE DRAFT AIRLOCK PR #78
--> PRESERVE LAWFUL PRIVATE R1 SOURCE BYTES + DETERMINISTIC EXTRACTS
+-> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN004 RE-AUDITS
 -> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
 -> IF AUTHORIZED, RUN R1 ORDINARY vs 7Q ON THE SAME EXACT SOURCE/TASK
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
