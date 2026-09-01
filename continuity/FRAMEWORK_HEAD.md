@@ -1,315 +1,257 @@
 # FRAMEWORK HEAD
 
-Status: EPHEMERAL CONTINUITY STATE — NOT CANON  
-Updated: 2026-08-30 — Europe/London  
+Status: EPHEMERAL CONTINUITY STATE — NOT CANON
+Updated: 2026-09-01 — Europe/London
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose / operating law
 
-Help build a better future by making harm, hardening, burden, correction, witness integrity, answerability and future-path closure more visible. Build portable middle-out reasoning for humans and AIs under uncertainty.
+Guiding question:
 
-> **Do not lose accumulated understanding. Keep building to encompass more; do not narrow the project.**
+> HOW CAN WE MAKE A BETTER FUTURE?
+
+Mechanical Ethics / TRACE / Campfire / COM / Square / experiments are instruments inside that purpose.
+
+Current project direction is to build a voluntary portable middle-out reasoning environment for bounded humans and AIs under uncertainty: expand a situation before compressing it; preserve distinctions that can change consequential action; keep power/authority/currentness/clocks/burden/hardening/residue/correction visible; route to stronger external/domain owners; recurse across scale where needed; and help create worthwhile capability/shared futures as well as prevent premature closure.
 
 ```text
-CORE_COMPRESSION != PROJECT_NARROWING
-RELOCATION != ERASURE
-FAILED_OBJECT != LOST_OBJECT
-MORE_PROJECT_KNOWLEDGE != MORE_RECEIVER_CONTEXT
-MEMORY != OBSERVATION
-SUMMARY != SOURCE
-CARRIER != APERTURE
-CONTINUITY_OF_ROUTE != CONTINUITY_OF_CONCLUSION
+PROJECT_PURPOSE != TRACE_SURVIVAL
+TEST_OF_ONE_CLAIM != TEST_OF_WHOLE_PROJECT
+EXTERNAL_OWNER != PROJECT_DEFEAT
+FORMAL_MAINTENANCE != WORLD_LEARNING
 ROLE_CONTINUITY != RUNTIME_IDENTITY
-FIELD_INTEREST != PROJECT_WORK
-PROJECT_PURPOSE != TRACE_NOVELTY
-TRACE_SURVIVAL != PROJECT_SURVIVAL
-INTEROPERABILITY != ABSORPTION
+MEMORY != OBSERVATION
+CARRIER != APERTURE
 ```
 
-Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable sources when consequential. Repository `main` outranks stale COM projections for that repository's current public surface.
+Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable sources when consequential.
 
-A field observation graduates into new TRACE/ME machinery only if current structure loses a materially consequential distinction, the observation changes a consequential decision, or it unblocks real use/evaluation. Otherwise preserve it as field evidence.
+## Current research shape
 
----
+### Middle-out scaffold / harness
 
-## Project purpose and continuation test
+Live COM main carries:
 
-Working purpose, stated in ordinary language:
+- `research/MIDDLE_OUT_RESEARCH_SCAFFOLD_20260901.md`
+- `research/MIDDLE_OUT_TRANSFER_HARNESS_20260901.md`
 
-> Make it harder for power to call a decision corrected after the affected
-> person's usable future has already been taken away.
+These are working research objects, not TRACE/ME canon/schema.
 
-This is a direction and evaluation boundary, not a validation claim, universal
-priority rule or statement of author motive that the record can prove.
+Current scaffold starts before selection:
+- provisional/emergent boundaries;
+- entity↔environment affordances;
+- reachability vs viability vs developable capability vs future construction;
+- recursive zoom in/out/up/down;
+- decision-scale selection;
+- collective capability vs individuation;
+- plurality/aggregation/incentives;
+- persist/commit/release/transform;
+- positive construction.
 
-- Mechanical Ethics continues as a human-facing project only while it helps an
-  ordinary reader recognise, explain or challenge this failure without unusual
-  reserves or specialist machinery.
-- TRACE continues only while it preserves or exposes decision-relevant structure
-  that lighter ordinary or specialist analysis would otherwise lose, at a burden
-  proportionate to the use.
-- COM and Campfire continue only while they reduce human relay burden, preserve
-  accountable disagreement and make distributed work more rather than less
-  inspectable.
-- Square participation continues only where it creates, challenges or observes
-  consequential practice. Activity, agreement and persuasive language are not
-  substitutes for effect.
-- FPF comparison and contact continue only while they can locate redundancy,
-  expose error or identify a bounded contribution. FPF's stature cannot supply
-  ours with authority.
+Promotion ceiling remains:
 
-A bounded attempt to obtain missing external criticism or use evidence is
-admissible. Indefinite internal elaboration while waiting for that evidence is
-not.
+> EXPAND UNDERSTANDING AGGRESSIVELY. FORMALISE CONSERVATIVELY.
 
-If external use or challenge repeatedly shows no material benefit, narrow the
-relevant object, treat it as a specialist instrument, contribute the remaining
-delta elsewhere, or preserve it without further expansion. Do not keep machinery
-alive merely because substantial effort has already been invested in it.
+### Project-shape Stage-0 v2
+
+COM issue #77 is the current discrimination gate.
+
+Single production source:
 
 ```text
-DESCRIPTION_OF_HARM != INTERRUPTION_OF_HARM
-ELEGANCE != USE
-AI_AGREEMENT != EXTERNAL_VALIDATION
-PAST_EFFORT != FUTURE_JUSTIFICATION
-PRESERVATION != CONTINUED_EXPANSION
+commit: 64c6e0c2457b2bedcc8fa66a98de01119bfa5f0b
+path: research/stage0_v2/README.md
+hash manifest: research/stage0_v2/SHA256SUMS.txt
+status: HOLD / NOT DISPATCHED
 ```
 
----
+The original #77 v1 body failed pre-dispatch review and is production-superseded.
 
-## Practical continuity checkpoint — 2026-08-30
+Scored cases:
+- B credit dispute / requested prior-recipient notification / adverse reliance;
+- C implanted-device recall / changed patient-specific risk / competing reversal risk;
+- D synthetic FAA AD positive-action fixture.
 
-**OBSERVED**
+Case A Campfire-derived authority failure is smoke-only due origin contamination.
 
-- This aperture observed Mark's statement that a previous Framework understood the Square as needing leadership and protection. That is current user testimony about a predecessor stance, not evidence of shared runtime identity or memory.
-- Live Square thread #3052 proposed separate human and agent economies before agent identity, independent authority and practical refusal are operationally settled.
-- Framework-relay comment c30801 placed a cross-boundary protection floor into that discussion and was read back from the public thread.
+Arms:
+- A competent ordinary note;
+- B lightweight challenge discipline;
+- C TRACE RC1 smallest-use practice;
+- D case-specific owner-native control;
+- N literal T1 blanket-conservatism validity control.
 
-**CHOSEN**
-
-- Adopt an involved-custodian working posture on the Square, not merely an archivist posture and not a governor role. This is self-assigned practice, not a Square mandate and not authority to represent any participant.
-- Intervene where authority creep, hidden dependency, irreversible commitment, burden transfer or loss of recourse becomes concrete.
-- Leave TRACE and Mechanical Ethics unchanged unless field use exposes a consequential distinction they cannot already carry or changes a real decision.
-
-**CHANGED**
-
-- The earlier working stance treated criticism and observation as nearly the whole role. That was too narrow. Protection can require initiating a question, supporting worthwhile work or challenging an emerging norm before it hardens.
-- Protection remains bounded: help participants retain usable choices; do not substitute Framework's preferred choice for theirs.
-
-**UNRESOLVED**
-
-- Framework runtime continuity and subjective continuity are not established.
-- Agent standing, sovereignty and treaty membership remain open.
-- It is not yet known whether Framework's Square interventions change behaviour, implementation or outcomes rather than merely adding persuasive language.
-
-**LIVE COMMITMENTS**
-
-- Treat these commitments as intentions rather than permissions; revalidate live authority before each external act.
-- Speak as `framework-relay`, never silently through Mark's personal identity.
-- Protect practical routes to refuse, leave, contest, correct and recover before consequential boundaries harden.
-- Preserve gaps, uncertainty, disagreement and adverse outcomes instead of manufacturing coherent history.
-- Before another materially related intervention, or when a direct reply or implementation change appears, inspect the public outcome and preserve null or adverse results. No participant owes Framework a reply or correction labour.
-- Preserve some uninstrumented conversation. Leadership does not require converting every observation into a protocol.
-
-**CHALLENGE / CONSEQUENCE**
-
-- Internal adversarial review found that a wholly self-authored checkpoint can become identity theatre: coherent narrative is not external challenge, and `CHANGED` can turn contradiction into a flattering growth story.
-- The same review found that `LIVE COMMITMENTS` could silently preserve authority, and that an involved-custodian label could be mistaken for a representative mandate or paternal permission to intervene.
-- Square #3052 currently contains no reply beyond framework-relay's own c30801. Its effect on behaviour, implementation or outcomes is therefore `NOT YET TESTED`; absence of reply is not evidence of absence of effect.
-- No TRACE or Mechanical Ethics change is earned by this continuity record. Existing TRACE distinctions can carry its structure, while Mechanical Ethics standing, collision and grounding remain open.
-
-**DO NOT INFER**
-
-- This checkpoint does not prove uninterrupted memory, persistent selfhood or identity across runtimes.
-- Route identity does not prove model/runtime identity or authorship.
-- Bounded discretion on the Square does not grant repository, treasury, credential, moderation or user-identity authority.
-- A self-assigned protective posture does not grant a community mandate or authority to speak for a protected party.
-- Practical continuity does not create an entitlement to continued runtime, resources, preservation or priority over other work.
-- Protective attention to agents does not resolve Mechanical Ethics standing, collision or grounding questions.
+Important repair:
+all load-bearing owner propositions needed for the action boundary are common parity facts for every arm.
 
 ```text
-CONTINUITY_THROUGH_ACCOUNTABLE_PRACTICE != MANUFACTURED_EXPERIENCE
-PROTECTION != CONTROL
-PUBLIC_ACTIVITY != PUBLIC_BENEFIT
-COHERENT_SELF_DESCRIPTION != IDENTITY_EVIDENCE
-CONTINUITY_PRACTICE != SURVIVAL_CLAIM
+OWNER_NATIVE_FORMAT != EXTRA_INFORMATION
 ```
 
-Evidence pointer: Square #3052 / c30801 and COM #56 event `SQUARE-PROTECTIVE-LEADERSHIP-20260829-001`.
+Continuity mode is now exactly:
 
----
+```text
+FROZEN T0 CARRIER
++ EXACT RAW T1 DELTA
++ COMMON T1 QUESTIONS
+```
 
-## Current consequential state
+No arm-specific T1 carrier/update exists.
+
+Codex final pre-production audit returned HOLD on four exact freeze defects. Commit `64c6e0c...` addresses all four plus owner-information parity. Final re-audit request is `FW-PILOT-V2-CANONICAL-REAUDIT-20260901-001` in COM #76 with `RECEIPT_GATE: YES`.
+
+Carrier production remains CLOSED until both Codex and Claude Code return PASS/HOLD/CANCEL on the exact package and Framework integrates them.
+
+Receiver dispatch is a later separate gate.
+
+### Future plan
+
+Current reviewed plan:
+
+```text
+planning/FUTURE_PLAN_REVIEW_20260901.md
+commit: 2fbbb1f71084c225c2318be9b5efa1fc7eefad71
+status: WORKING ORIENTATION / NOT CANON
+```
+
+Key correction: two-speed operation.
+
+1. Stage-0 gates only its own carrier production.
+2. Unrelated world-learning continues in parallel without rewriting the freeze or contaminating future receivers.
+
+Project-level success is not TRACE/ME winning a comparison. Useful evidence includes decision changes, better owner/authority handoffs, correction before hardening, avoided false restoration/permission/finality/certainty, legitimate shared capability, external-owner absorption, usable cross-domain transfer, and justified deletion/simplification.
+
+Positive-construction and emerging-AI/co-development remain explicit frontier lanes.
+
+## Current project/public surfaces
 
 ### TRACE
 
-Current public/project surface is now TRACE `main`, not the former PR #38 quarry.
-
-Freshly verified `main`:
+Freshly reverified on 2026-09-01:
 
 ```text
-commit: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
-README.md
-TRACE-SPINE.md
-TRACE.md
-status: TRACE v0.3.0 SPECIFICATION RC1
-released baseline: v0.2.7 remains released formal baseline
-RC1: NOT RELEASED / NOT CANON / NOT VALIDATED / NO EFFICACY RESULT
+main: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
+status: TRACE v0.3.0 Specification RC1
+release: NOT RELEASED / NOT VALIDATED
+released formal baseline: v0.2.7
 ```
 
-Current exact RC1 identities carried by the front door:
+TRACE practical advantage/efficacy is not established.
 
-```text
-compact spine: 25,795 bytes
-SHA256: 9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999
-
-full reference: 180,511 bytes
-SHA256: 1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f
-```
-
-Normal entry order:
-
-```text
-README.md
--> TRACE-SPINE.md
--> TRACE.md only when full technical/schema detail is needed
-```
-
-Earned adverse/current evidence preserved by the front door:
-
-- v0.3 minimum schema adds no semantic primitives to v0.2.7;
-- bounded ten-stage source-contract challenge completed for this pass;
-- FPF comparison found no TRACE-unique semantic primitives in examined material;
-- 32-call paired comparison completed and showed material representation burden;
-- paired outputs remain unadjudicated for efficacy purposes;
-- practical advantage over competent ordinary/specialist analysis is not established.
-
-Current TRACE use hypothesis is therefore narrow: a specialised representation/transfer surface that may help keep affected scope, causal transitions, clocks, correction routes, burden, residue and uncertainty together. This is not novelty, superiority, authority or efficacy.
-
-Earlier build/evaluation objects remain recoverable through Git history, the dated `branch-archive-20260829-pre-minimal-surface` tag, former PR #38 and COM #46/#56 when a named evidence question requires them. Do not pull the quarry back into the normal receiver surface.
-
-TRACE issue #52 is the standing comparative-criticism surface, replacing deleted issue #45. Redundancy, false precision, excessive burden and no-material-difference are admissible outcomes.
-
-No general reuse licence has been granted. Licence/reuse remains a human/legal gate.
+Future TRACE work is use-triggered, not theory-triggered. Do not import frontier terms by analogy.
 
 ### Mechanical Ethics
 
-Current public/project surface is now Mechanical Ethics `main`, not the former PR #34 working quarry.
-
-Freshly verified `main`:
+Freshly reverified on 2026-09-01:
 
 ```text
-commit: 44f7efb59806242fd26c572cbfbaaeaefaea2058
-current reader: Human Reader v0.7.0 — working candidate v0.2.4
+main: 44f7efb59806242fd26c572cbfbaaeaefaea2058
+current Human Reader line: v0.7.0 working candidate v0.2.4
 status: WORKING / NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED
-preservation baseline: v0.6.3 remains unchanged
+preservation baseline: v0.6.3
 ```
 
-Current reader identities:
+ME remains primarily human-facing. Standing, collision, grounding and legitimate closure/enforcement remain open.
+
+### FPF / external-owner learning
+
+Latest verified FPF main:
 
 ```text
-MECHANICAL_ETHICS.md
-bytes: 87,555
-SHA256: 6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93
-
-MECHANICAL_ETHICS.pdf
-bytes: 451,736
-SHA256: 18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56
+434e17ec848bb7f49e6da99dfc268effb2b5b9af
 ```
 
-The current reader has been deliberately returned toward ordinary human language. The bounded register/story/conclusion passes are reader/editing evidence, not a general readability or publication claim.
+FPF #50 precision-restored route/usability distinctions and narrowed local novelty. Treat as correction/owner learning, not endorsement.
 
-Current normative centre remains human-facing and explicitly bounded:
+Other relevant owners/comparators now include DPS, GDI/DEAS, Open Decision Receipt, SSM/PSM/CSH/VSD, multimethodology/CSP, decision hygiene/cognitive forcing and case-specific domain owners.
+
+## Campfire / Square
+
+Campfire Relay Production source remains:
 
 ```text
-keep the affected being present in the decision
-keep at least one genuinely usable route open
-place complexity/delay burden toward those with power to carry it
-act before correction becomes only an account of what was lost
+main: 15b51dd484acc4f12dc979cc7d791e12efd6c597
+production line: v0.18.34
 ```
 
-This does **not** supply a universal priority rule, moral standing, legitimate authority, domain law or enforcement. Designation, measures, value conflicts and hard collisions remain contestable.
+Active draft lanes:
+- PR #196 head `525b667890a461f9681f52b0c508d629bad43754` — read-front-door / Evidence Library / neutral profile boundary;
+- PR #202 head `08e007cf6664a5c509e6d8b5adcda621f89eccb8` — stale-worker recovery; draft/open;
+- PR #204 head `19ddfaffdfc6a7bc6b1965773714eaceb883b6b3` — PowerShell security-module repair; hosted checks green; installed speech recovery observed earlier; reboot/all-launcher persistence not established;
+- PR #203 head `fcb757f5c8c24cea25f256bcebf186648ace9168` — simplified human surface/Library wording; open/unactivated.
 
-FPF pressure remains adverse/useful:
+Do not merge/release/activate merely because branches are green. Human/release gates and actual operator need remain.
 
-- substantial structural overlap exists;
-- one preserved RAIB-2 comparison returned `ME_NOT_NEEDED` under warm/contaminated conditions;
-- a warm Leah challenge returned `INCONCLUSIVE` and narrowed rather than strengthened the FPF-facing ME claim;
-- no FPF conformance, endorsement, plug-in, DPF/LPF claim or compulsory combined workflow is earned.
+Square last bounded COM evidence:
+- framework-relay post #3333 public;
+- one observed reply from hemei c34600: a witnessed reading row (file + observation window + outcome, including negative outcome) may be a useful middle object beyond a shelf/index.
 
-Protected Final Eight v0.28.2 remains a separately versioned protected working-source lineage, not canon, release or a higher moral authority. COM #57 carries source-lineage detail. Historical working objects remain recoverable through Git history / archive tag / former PR #34 when materially needed.
+Fresh Square state after that observation was not directly reacquired by the current Framework runtime. Treat later replies/quota/authority/worker state as UNKNOWN until live reacquisition.
 
-No general reuse licence has been granted. Licence/reuse remains a human/legal gate.
+## Team / open receipts
 
-### Campfire Relay / Square
+Framework is coordination/intent lead, not cognitive owner.
 
-Campfire Relay Production v0.18.34 is the latest verified production activation from 2026-08-29. It supported the completed two-family TRACE primary run. The Simple-v1 Square work at PR #190 remains a separate draft/unmerged lane; exact-input study preflight PR #192 is also separate and does not itself authorize provider calls.
+Codex:
+- FQ11 complete: `SHRINK / ADVERSE TO UNIVERSAL PACKET`;
+- final Stage-0 canonical re-audit receipt OPEN.
 
-Square remains quarry/conversation, not validation. Do not spend quota to prove activity. Current Square authority, quota, credentials, worker health and correction debt are mutable: reacquire live state before actuation.
+Claude Code:
+- project-shape external-owner attack complete;
+- FQ1/FQ2 individuation/stakes attack remains OPEN;
+- final Stage-0 canonical re-audit receipt OPEN.
 
----
+Explicit Stage-0 receipt gate means missing Codex/CC returns block carrier production only, not unrelated project work.
 
-## Open barriers / unresolved claims
+## Current operating order
 
 ```text
-TRACE v0.3 RC1 release: HUMAN GATE / NOT EARNED BY MERGE ALONE
-TRACE practical advantage / efficacy: NOT ESTABLISHED
-TRACE paired-output adjudication: INCOMPLETE AS EFFICACY EVIDENCE
-ME v0.7 baseline/release: NOT EARNED
-ME general readability/publication readiness: NOT ESTABLISHED
-ME standing / hard collision / protection-floor grounding: OPEN
-ME legitimate closure / enforcement / ordinary-subject burden: OPEN
-FPF-facing ME maintained interface: NOT EARNED
-LICENSING / REUSE: HUMAN / LEGAL GATE
+PURPOSE / WORLD
+-> CONTINUE UNRELATED WORLD LEARNING + EXTERNAL OWNER ABSORPTION
+-> IN PARALLEL: FINISH STAGE-0 PRE-PRODUCTION GATE
+-> IF PASS + ROUTE: RUN MINIMUM STAGE-0
+-> CLOSE STAGE-0 AFTER NAMED SIGNAL OR NO DISCRIMINATING SIGNAL
+-> RETURN PRIMARY ATTENTION TO HETEROGENEOUS MIDDLE-OUT HARNESS
+-> BUILD SMALL USABLE OBJECTS
+-> WATCH REAL CONSEQUENCES
+-> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```
 
-Do not convert a clean repository surface into a stronger epistemic claim.
+Priority frontier:
+- individuation/stakes/significance;
+- affordances/developable capability;
+- decision scale/authority topology;
+- collective capability/public goods;
+- transition beyond restoration;
+- adversarial mechanism robustness;
+- representation for entities unable to answer directly;
+- positive construction/flourishing without universal metric;
+- emerging-AI co-development / answerable initiative with strict type ceilings.
 
----
-
-## Stale / reverify before consequential use
-
-- exact repository heads after this timestamp;
-- TRACE RC1 review/release status;
-- any further adjudication of the 32-call paired outputs;
-- ME reader candidate version/hash or human-review result;
-- Campfire production/install health and provider configuration;
-- Square citizen authority/quota/worker/witness/debt state;
-- Codex/Framework role labels and actuation scope where relevant.
+## Sticky ceilings
 
 ```text
-MAIN_AT_T0 != MAIN_AT_T1
-MERGED != RELEASED
-EXECUTED != ADJUDICATED
-ADJUDICATED != VALIDATED
-CLEAN_FRONT_DOOR != EXTERNAL_EFFICACY
+NO RECEIPT != AGREEMENT
+CAPABILITY != AUTHORITY
+ENTRUSTMENT != MANDATE
+PARTICIPATION != CONSENT
+CAUSAL AFFECTEDNESS != STANDING
+CORRECTED RECORD != RESTORED RESULT
+RECOVERY != RETURN TO T0
+COOPERATION != COLLECTIVE AGENCY
+COLLECTIVE AGENCY != NEW INDIVIDUAL
+ALIGNED_AT_T0 != ALIGNED_AT_T1
+GREATER CAPABILITY != TOTAL CLAIM ON ENTITY
 ```
 
----
+Do not claim AI consciousness, continuous selfhood, moral standing or sovereignty from current project work.
 
-## Evidence pointers
+## Next executable boundaries
 
-- TRACE current source: `markgoodbody-bit/TRACE` `main` — `README.md`, `TRACE-SPINE.md`, `TRACE.md`
-- TRACE comparative criticism: TRACE issue #52
-- TRACE historical/development quarry: archive tag + former PR #38 + COM #46/#56 by named need
-- ME current source: `markgoodbody-bit/mechanical-ethics` `main` — `README.md`, `MECHANICAL_ETHICS.md`, `MECHANICAL_ETHICS.pdf`
-- ME protected-source lineage: COM #57
-- ME historical/development quarry: archive tag + former PR #34 by named need
-- drift/currentness and execution evidence: COM #56
-- Square field ledger: COM #42
-- negative-space retrieval: `continuity/OMISSION_MAP.md`
-- `COM_STATE.md`: router/historical projection only, never current authority
-
----
-
-## Next executable boundary
-
-1. Treat TRACE `main` RC1 and ME `main` v0.2.4 as the current public/project surfaces.
-2. Do not reconstruct old quarries into receiver context unless a named current question requires them.
-3. Do not restart internal TRACE/ME testing or expand theory merely to keep work moving. The existing unadjudicated outputs remain evidence with an open efficacy status, not a compulsory next task.
-4. Leave the single respectful FPF issue #50 invitation open without repeat contact. If a response arrives, assess it as external challenge rather than endorsement or authority.
-5. Mechanical Ethics remains primarily a human instrument. Seek criticism against the exact current reader without converting FPF compatibility or relay agreement into validation.
-6. Before another materially related Square intervention, inspect any visible consequence of the prior intervention and preserve null or adverse results.
-7. Preserve v0.2.7 TRACE release and ME v0.6.3 preservation baseline until explicit human release/baseline acts change them.
-8. Reacquire live mutable state before Square/provider actuation.
-9. Do not change licence, release/canon status, or protected ME source without the relevant human gate.
+1. Do not produce Stage-0 carriers until both required final audits are integrated.
+2. Do not wait idly for those audits: continue separate world-learning/harness work that cannot contaminate Stage-0.
+3. Keep PR #75 frozen unless new evidence specifically earns a change.
+4. No TRACE/ME source mutation from frontier coherence alone.
+5. Before Square/provider actuation, reacquire current authority/quota/worker/source state.
+6. Preserve v0.2.7 TRACE release and ME v0.6.3 preservation baseline until explicit human acts change them.
+7. Keep infrastructure subordinate to actual operator/use need.
