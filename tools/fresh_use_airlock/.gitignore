@@ -3,3 +3,5 @@
 /runs/
 /run-*/
 *.receiver-run/
+__pycache__/
+*.py[cod]

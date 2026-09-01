@@ -22,8 +22,20 @@ It closes five preparation/evidence gaps:
    once. Duplicate recording, post-hoc packet mutation, over-budget answers,
    malformed timestamps/exposure fields, and relabelled retries are rejected.
 5. **Evaluation order is enforceable.** A two-cell comparison is frozen under
-   aliases before arm unmasking. Unmasking deliberately does not manufacture a
-   final disposition.
+   aliases before arm unmasking. A local hash-chained transition log detects a
+   deleted-and-redone score while the log survives. The artefact states its
+   ceiling: this is operator-controlled local ordering evidence, not an
+   external timestamp or proof that the operator did not inspect the arm map.
+   Unmasking deliberately does not manufacture a final disposition.
+
+Claude Code's first threat-model review also produced four bounded repairs:
+- raw HTML can be transformed directly through visible-text normalization and
+  frozen line selection in one replayable extraction recipe;
+- native Windows now fails closed until a tested private-map DACL backend
+  exists;
+- receipts classify tool-bound facts separately from operator attestations;
+- the output budget is explicitly English-scoped and ZIP creation uses
+  exclusive file creation.
 
 Observable burden retained by the receipt includes elapsed time, exact answer
 bytes/Unicode words, reported token counts, source opens, clarifications,

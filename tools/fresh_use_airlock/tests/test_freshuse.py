@@ -187,7 +187,7 @@ class FreshUseAirlockTests(unittest.TestCase):
         duplicate = self._run(
             "record", "--bundle", self.bundle, "--alias", alias, "--receipt", receipt, "--answer", answer, ok=False
         )
-        self.assertIn("refusing to overwrite", duplicate.stderr)
+        self.assertIn("first-attempt record event already exists", duplicate.stderr)
 
         other = public["cells"][1]["cell_alias"]
         other_receipt = self._complete_receipt(other)
@@ -240,7 +240,7 @@ class FreshUseAirlockTests(unittest.TestCase):
         recorded_answer = self.bundle / "evidence" / "answers" / f"{aliases[0]}.txt"
         recorded_answer.write_text("tampered\n", encoding="utf-8")
         tampered = self._run("verify", "--bundle", self.bundle, ok=False)
-        self.assertIn("answer changed after record", tampered.stderr)
+        self.assertIn("recorded answer missing or changed", tampered.stderr)
 
     def test_utf8_line_range_extraction_is_exact(self):
         raw = b"one\r\ntwo\r\nthree\r\nfour\r\n"
@@ -294,6 +294,95 @@ class FreshUseAirlockTests(unittest.TestCase):
             ok=False,
         )
         self.assertIn("refusing to overwrite", duplicate.stderr)
+
+    def test_local_event_chain_blocks_deleted_score_redo(self):
+        public = self._prepare()
+        aliases = [cell["cell_alias"] for cell in public["cells"]]
+        for index, alias in enumerate(aliases):
+            receipt = self._complete_receipt(alias)
+            answer = self.base / f"ordered-answer-{index}.txt"
+            answer.write_text("Keep the action bounded and revisable.\n", encoding="utf-8")
+            self._run(
+                "record", "--bundle", self.bundle, "--alias", alias,
+                "--receipt", receipt, "--answer", answer
+            )
+        score = {
+            "schema_version": "1",
+            "pilot_id": "test-pilot-001",
+            "case_id": "R1",
+            "cell_aliases": aliases,
+            "scorer_1_identity": "fixture-scorer",
+            "scorer_1_project_exposure": "UNKNOWN",
+            "scorer_2_identity": None,
+            "scorer_2_project_exposure": None,
+            "criteria": {
+                name: {"rating": "NO_MATERIAL_DIFFERENCE", "note": "Fixture."}
+                for name in freshuse.CRITERIA
+            },
+            "unique_material_error_by_cell": {alias: False for alias in aliases},
+            "burden_note": "Fixture.",
+            "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+            "evaluation_limits": "Fixture only.",
+        }
+        score_path = self.base / "ordered-score.json"
+        score_path.write_text(json.dumps(score), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        (self.bundle / "evidence" / "scores" / "R1.blinded.json").unlink()
+        redo = self._run("score", "--bundle", self.bundle, "--score", score_path, ok=False)
+        self.assertIn("score event already exists", redo.stderr)
+
+    def test_event_log_tamper_fails_verification(self):
+        self._prepare()
+        log_path = self.bundle / "evidence" / "events.jsonl"
+        event = json.loads(log_path.read_text().splitlines()[0])
+        event["action"] = "tampered"
+        log_path.write_text(json.dumps(event) + "\n", encoding="utf-8")
+        failed = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("local event changed after append", failed.stderr)
+
+    def test_receipt_separates_bound_and_attested_claims(self):
+        public = self._prepare()
+        alias = public["cells"][0]["cell_alias"]
+        receipt = self._complete_receipt(alias)
+        answer = self.base / "classified-answer.txt"
+        answer.write_text("A bounded English answer.\n", encoding="utf-8")
+        self._run(
+            "record", "--bundle", self.bundle, "--alias", alias,
+            "--receipt", receipt, "--answer", answer
+        )
+        recorded = json.loads(
+            (self.bundle / "evidence" / "receipts" / f"{alias}.json").read_text()
+        )
+        classes = recorded["evidence_classification"]
+        self.assertIn("answer_sha256", classes["cryptographically_bound_fields"])
+        self.assertIn("receiver_model_version", classes["operator_attested_fields"])
+        self.assertEqual(["elapsed_seconds"], classes["derived_from_operator_attestation"])
+
+    def test_non_english_budget_is_rejected(self):
+        public = self._prepare()
+        alias = public["cells"][0]["cell_alias"]
+        receipt_path = self._complete_receipt(alias)
+        receipt = json.loads(receipt_path.read_text())
+        receipt["answer_language"] = "ja"
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        answer = self.base / "non-english-answer.txt"
+        answer.write_text("判断を修正可能に保つ。\n", encoding="utf-8")
+        failed = self._run(
+            "record", "--bundle", self.bundle, "--alias", alias,
+            "--receipt", receipt_path, "--answer", answer, ok=False
+        )
+        self.assertIn("answer_language must be en", failed.stderr)
+
+    def test_zip_collision_preserves_existing_bytes(self):
+        target = self.base / "collision.zip"
+        target.write_bytes(b"sentinel")
+        with self.assertRaises(freshuse.AirlockError):
+            freshuse.deterministic_zip(target, {"member.txt": b"new"})
+        self.assertEqual(b"sentinel", target.read_bytes())
+
+    def test_native_windows_private_storage_fails_closed(self):
+        with self.assertRaisesRegex(freshuse.AirlockError, "PRIVATE_STORAGE_UNVERIFIED"):
+            freshuse.require_private_storage(self.base, 0o700, platform_name="nt")
 
 
 if __name__ == "__main__":

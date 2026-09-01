@@ -27,7 +27,10 @@ PINNED PROJECT TEXT + PRESERVED EXTERNAL BYTES
 - a local COM checkout containing the pinned commits;
 - exact local snapshots of every external source supplied to receivers.
 
-No Python packages or network access are used.
+No Python packages or network access are used. This v1 requires a POSIX
+filesystem boundary (Linux/macOS/WSL). Native Windows execution fails closed
+because `chmod` is not a tested Windows confidentiality control for the private
+arm map.
 
 Create a source receipt and inspect the extracted bytes before putting its
 fields into the pilot config:
@@ -80,6 +83,12 @@ python freshuse.py record \
 ceiling. It writes the exact answer and a derived burden receipt using
 create-only semantics. A second record for the same cell is rejected.
 
+The 700-unit cap is explicitly scoped to English-language answers and uses the
+versioned `english_unicode_word_units_v1` counter. Receipts also record UTF-8
+bytes, Unicode scalars, non-whitespace Unicode scalars, and provider-reported
+tokens when available. It is not a cross-language budget; a non-English answer
+is rejected for this pilot rather than treated as comparable.
+
 After both cells for a case are recorded, an evaluator compares the aliases
 without seeing the private map. Copy `examples/blinded-score.template.json`,
 fill it, and freeze it:
@@ -108,10 +117,19 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
   same members produce stable bytes.
 - Public aliases are random and do not contain arm labels.
 - Private-map permissions are restricted where the filesystem supports it.
+- Each receipt distinguishes tool-bound hashes/measurements from
+  operator-attested provider, exposure, timing and burden metadata. Hashing an
+  attestation binds its bytes; it does not make the claim true in the world.
 - One bundle contains first attempts only. A failure is evidence; it is not
   silently replaced. A retry requires a new cell/package and explicit authority
   outside this v1 tool.
-- Scoring is frozen before unmasking and cannot be overwritten.
+- A local hash-chained event log enforces one visible sequence of preparation,
+  first-attempt records, scoring and unmasking. It detects ordinary deletion and
+  redo while the log survives. It is operator-controlled local evidence—not an
+  external timestamp, independent attestation, or proof against deleting and
+  rebuilding the entire log.
+- Scoring is recorded before tool-mediated unmasking and cannot be repeated
+  while the local event chain survives.
 - The verifier detects packet, answer, receipt, and frozen-score changes.
 
 ## Important ceilings
