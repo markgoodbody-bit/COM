@@ -49,6 +49,29 @@ The observed R1 result is:
 
 The correct scope is one case, one output per arm, one receiver model, one pair of sessions.
 
+### Burden result is incomplete
+
+The protocol explicitly says to preserve input words/tokens and warns against collapsing burden into output length. The public R1 burden note nevertheless compares only output word units and attested response time.
+
+The Q arm received the exact 7Q candidate in addition to the common material. At pinned commit `eec157b...`, that file is 6,964 Git-object bytes and approximately 890 English word units. The verified rendered transport artifacts were:
+
+| Cell | Unmasked arm | Rendered message bytes |
+|---|---|---:|
+| `cell-6ca546d4de1b` | Q | 30,946 |
+| `cell-fb424360ddd7` | O | 23,576 |
+
+The Q message was 7,370 bytes larger. That is a real input burden differential even though Q's final answer was 38 words shorter and its observed response was 2 seconds faster.
+
+Therefore the public statements `7Q_BURDEN_EXCEEDS_VALUE = NO` and `ORDINARY_SUFFICIENT = NOT ASSIGNED (ordinary burden was not lower/equal)` are not fully earned from the published burden record. They may still be defensible if model input processing is explicitly treated as negligible for this use, but that value judgement was not frozen or reported. At minimum:
+
+```text
+OUTPUT BURDEN EDGE: SMALL / Q
+INPUT BURDEN EDGE: MATERIAL IN BYTES / O
+TOTAL BURDEN COMPARISON: INCOMPLETE
+```
+
+This does not alter the five-field action/evidence/owner/scope/time null. It does weaken the published burden disposition and must be resolved before R2 reuses the scorer.
+
 ## 2. The ordinary arm was already strongly structured
 
 The neutral R1 task explicitly required:
@@ -150,9 +173,10 @@ Before R2:
 1. reconcile whether the exact CC attachment-dispatch gate was satisfied or bypassed;
 2. remove the stale continuity instruction that could rerun R1;
 3. provide an answer-only custody route for independent comparison, or record that interpretive reproduction is intentionally unavailable;
-4. state explicitly that R2 tests incremental value over a strong structured prompt;
-5. preserve the pre-existing two-null stopping rule without inventing a post-hoc route-flip prediction;
-6. obtain separate receiver/dispatch authority and recheck mutable R2 source currentness.
+4. repair the burden evaluation so input as well as output burden is reported;
+5. state explicitly that R2 tests incremental value over a strong structured prompt;
+6. preserve the pre-existing two-null stopping rule without inventing a post-hoc route-flip prediction;
+7. obtain separate receiver/dispatch authority and recheck mutable R2 source currentness.
 
 If R2 then yields another clean null, follow the frozen protocol: freeze 7Q as a research/teaching aid or remove it as the default front door. Do not add a third case by momentum.
 
@@ -160,6 +184,7 @@ If R2 then yields another clean null, follow the frozen protocol: freeze 7Q as a
 
 - Did Q change any intermediate distinction that the final action compressed away?
 - Were the answer bodies materially more or less legible to an ordinary human evaluator?
+- What total input-token or input-word burden did each receiver process, and how should that cost be weighted when material gain is zero?
 - Was the R1 final attachment gate satisfied before dispatch, bypassed, or merely not carried into COM?
 - Is 7Q's intended value decision improvement, teachability, memory support, reviewability, or question discovery for people without expert prompts?
 - Would the smaller product actually be the well-constructed ordinary prompt rather than the seven-question document?
