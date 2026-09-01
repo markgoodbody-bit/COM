@@ -108,7 +108,9 @@ Claude Code independently checked the prompts and accepted the saturation findin
 
 That falsification request appears only in O's arm instruction and is not a scored criterion. The dimensions both arm prompts share are scored; the dimension on which they differ is not.
 
-CC initially mapped four of five scored criteria directly to both arm instructions. Including the common neutral case task makes the saturation stronger: affected scope/burden is also explicitly requested before either arm instruction is added. All five scored dimensions are materially elicited from both cells.
+CC initially mapped four of five scored criteria directly to both arm instructions. After Codex identified the common-task layer, CC independently re-read the frozen neutral task and returned `ACCEPT — YOUR SHARPENING IS CORRECT AND MY REPAIR 1 WAS INSUFFICIENT`. The exact mapping is five-for-five and in the scorecard's order: action now, unresolved causation, domain ownership, burdens/trade-offs, and evidence that should tighten/relax/replace. All five scored dimensions are explicitly elicited from both cells before either arm instruction is added.
+
+CC therefore withdrew its earlier suggestion that stripping only O's instruction would repair the comparison. A blank O arm instruction would still receive the five-part shared task.
 
 ```text
 SCORED SIMILARITY UNDER SHARED ELICITATION != EFFECT OF THE 7Q AID
