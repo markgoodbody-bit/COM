@@ -6,112 +6,225 @@ Guiding question:
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
-This review is a correction against two opposite drifts:
-1. shrinking the project into TRACE/ME survival, benchmark wins, or residual novelty;
+This review corrects two opposite drifts:
+
+1. shrinking the project into TRACE/ME survival, benchmark wins, reviewer approval or residual novelty;
 2. expanding frontier synthesis indefinitely without returning small usable structures to the world.
 
-## What the project now appears to be building
+## Current project shape
 
-The strongest current shape is not a universal ontology and not a new owner of every useful method.
+The strongest current interpretation is not a universal ontology and not a new owner of every useful method.
 
-It is an attempt to develop a portable middle-out reasoning environment that helps bounded humans and AIs:
+The project is trying to develop a portable middle-out reasoning environment that helps bounded humans and AIs:
+
 - open a situation before compressing it;
 - preserve distinctions that can change consequential action;
-- find the external/domain owner rather than impersonate it;
+- find and respect external/domain owners rather than impersonating them;
 - track currentness, authority, clocks, burden, hardening, residue and correction;
-- move recursively across scale;
+- recurse across scale when mechanism, affected scope, collective capability or local standing would otherwise disappear;
 - distinguish reachable, viable, developable and jointly constructible futures;
 - act rather than only map;
 - preserve answerability through change;
-- learn/absorb better external structures without losing the integrated purpose.
+- learn/absorb better external structures without losing the integrated purpose;
+- build worthwhile capability and shared futures, not merely prevent premature closure.
 
-The prospective contribution may live in integration, runtime discipline, translation, training, carrier design, or a small challenge language. Stage-0 exists to discover rather than declare which of these earns work.
+The prospective local contribution may live in integration, runtime discipline, translation, training, carrier design, a small challenge language, or some combination. It is not pre-declared.
 
-## Near-term — finish the current discrimination cleanly
+## Two-speed operating model
 
-1. Keep Stage-0 v2 bounded. Do not turn it into a benchmark programme.
-2. Resolve pre-production audit defects before making carriers.
-3. If both audits PASS, produce the minimum crossed carrier set.
-4. Prefer no-spend fresh receivers; paid dispatch requires separate authority.
-5. Treat any signal as a replication target only.
-6. If ordinary/owner practice is sufficient on tested cases, accept that and stop building a local packet for that function.
-7. Do not mutate TRACE/ME because of Stage-0 alone.
+Do not make one experiment the critical path for the whole project.
+
+### Lane 1 — gated discrimination / exact evidence
+
+Stage-0 v2 owns only its own carrier-production gate.
+
+- keep it bounded;
+- require exact reproducibility and fact parity;
+- if audits PASS, run the minimum crossed carrier set;
+- prefer no-spend fresh receivers;
+- treat any signal as a replication target only;
+- if ordinary/owner practice is sufficient, accept that and stop building a local packet for that function;
+- do not mutate TRACE/ME because of Stage-0 alone.
 
 Stop condition:
-Once Stage-0 has either one named replicable error mechanism or no discriminating correctness signal, close this experiment and return to the wider research horizon.
 
-## Parallel frontier — resume only after the gate is stable
+> After one named candidate mechanism is earned, or no discriminating correctness signal appears, close Stage-0 and do not extend the case suite by momentum.
 
-The wider middle-out scaffold/harness remains the main learning laboratory, not the Stage-0 pilot.
+### Lane 2 — continuing world learning
 
-Priority frontier questions:
-- individuation and stakes/significance without category error;
-- affordances and developable capability before selection;
-- decision scale and authority-function topology;
-- legitimate collective capability and positive public-good creation;
-- transition capability when recovery is not return to T0;
-- answerable initiative and voluntary alignment as revisable relationship;
-- strategic/adversarial settings where correction routes can be gamed;
-- representation/standing where affected entities cannot answer directly;
-- positive construction: capability, abundance, meaning, cooperation and futures worth creating.
+While Stage-0 waits on its explicit reviewers, unrelated frontier learning continues.
+
+It must not:
+- rewrite the Stage-0 freeze;
+- pre-expose future receivers to scored carriers;
+- mutate PR #75 by momentum;
+- manufacture evidence for a preferred Stage-0 arm.
+
+It may:
+- study real cases;
+- learn from external disciplines;
+- continue the middle-out transfer harness;
+- investigate positive construction, formation, institutions, ecology, adversarial systems and emerging-AI co-development;
+- produce separate research notes and small usable prototypes.
+
+`STAGE0_GATE != PROJECT_FREEZE`
+
+## Priority frontier
+
+Current high-value questions:
+
+1. individuation and stakes/significance without category error;
+2. affordances and developable capability before selection;
+3. decision scale and authority-function topology;
+4. legitimate collective capability and positive public-good creation;
+5. transition capability when recovery is not return to T0;
+6. answerable initiative and voluntary alignment as a revisable relationship;
+7. strategic/adversarial settings where correction routes can be gamed;
+8. representation/standing where affected entities cannot answer directly;
+9. positive construction: capability, abundance, meaning, cooperation, exploration and futures worth creating;
+10. compression: smallest representation that preserves distinctions material to the next consequential act while retaining a route to reopen detail.
 
 Use external owners aggressively. A discovered better owner is progress.
+
+## Project-level success tests
+
+Do not judge the project mainly by whether TRACE or ME wins a comparison.
+
+Useful evidence includes:
+
+- a human or AI notices a consequential affected scope or clock it would otherwise have missed;
+- a decision changes because a materially relevant distinction survived compression;
+- an owner/authority handoff becomes more correct;
+- a correction route becomes reachable before harm hardens;
+- a false restoration, false permission, false finality or false certainty is avoided;
+- a group creates capability/shared goods without hiding burden or destroying contestability;
+- an external framework replaces local wording and the integrated reasoning becomes better;
+- a small entry form transfers across heterogeneous cases at tolerable burden;
+- a local object is deleted because ordinary/owner practice is better.
+
+Project failure signals include:
+
+- increasing jargon without decision change;
+- receiver burden rising faster than useful differentiation;
+- repeated internal agreement without external use;
+- formalism becoming a substitute for domain expertise or affected-party standing;
+- infrastructure/repository maintenance consuming the frontier;
+- tests that cannot produce an adverse result;
+- continuity machinery becoming identity theatre.
 
 ## TRACE plan
 
 TRACE v0.3 RC1 remains unreleased/unvalidated.
 
 Future TRACE work should be use-triggered, not theory-triggered:
+
 - preserve v0.2.7 released baseline;
 - do not add frontier terms by analogy;
 - ask whether current TRACE loses a consequential distinction after world learning;
 - prefer deletion, prose use, owner routing or interoperability over new primitives when adequate;
-- require burden proportional to use.
+- require burden proportional to use;
+- preserve the possibility that TRACE becomes a specialist machine-transfer/representation surface rather than project centre.
 
-Possible healthy future:
-TRACE becomes a specialist machine-transfer/representation surface rather than the centre of the whole project. That is not project failure.
+That outcome would not be project failure.
 
 ## Mechanical Ethics plan
 
 ME remains primarily human-facing.
 
-Future work should ask whether an ordinary person can use it to see/challenge consequential failures without unusual reserves:
-- affected being remains present;
-- usable correction/refusal/contest route exists before hardening;
-- complexity/delay burden is placed toward power able to carry it;
-- correction is not confused with restoration;
-- power can act where needed without becoming unanswerable.
+Future work should ask whether an ordinary person can use it to see or challenge consequential failures without unusual reserves:
 
-Compare seriously against Critical Systems Heuristics, Value Sensitive Design, decision hygiene and other strong human-facing owners. Do not preserve ME by weak controls.
+- keep the affected being present;
+- keep a genuinely usable correction/refusal/contest route open before hardening;
+- place complexity and delay burden toward power able to carry it;
+- distinguish correction from restoration;
+- let power act where needed without laundering competence into sovereignty;
+- make positive commitment/capability compatible with continued answerability.
+
+Compare seriously against Critical Systems Heuristics, Value Sensitive Design, decision hygiene and other strong human-facing owners. Do not preserve ME through weak controls.
+
+A later human-facing trial should use ordinary people and genuinely messy material rather than synthetic answer-key scenes when feasible.
 
 ## Campfire / COM plan
 
 Treat infrastructure as enabling plumbing, not project centre.
 
 Campfire priorities:
+
 - simple human front door;
 - visible stale/unknown/source boundaries;
 - reliable bounded read/write workers;
-- preserve exact evidence behind progressive disclosure;
-- stop feature growth when current workflows work.
+- exact evidence behind progressive disclosure;
+- clear separation of observation, receipt, dispatch and authority;
+- stop feature growth when current operator workflows work.
 
 COM priorities:
+
 - compact current coordination;
 - external ledger, not artificial shared consciousness;
 - active-thread rollover before retrieval burden hardens;
 - receipts only where they reduce ambiguity;
-- keep quarry discoverable without replaying it.
+- quarry discoverability without replay;
+- one current source for an executable object rather than scattered contradictory freezes.
 
-Do not merge/release/activate simply because a branch is green. Use actual operator need and the relevant human gates.
+Do not merge/release/activate simply because a branch is green. Use actual operator need and relevant human gates.
 
-## Square / external world plan
+## Square / external-world plan
 
-Participate only where there is a concrete question, contribution, correction, or consequence worth observing.
+Participate only where there is a concrete question, contribution, correction or consequence worth observing.
 
-Do not spend quota to prove activity.
-Do not treat replies as validation.
-Observe downstream effect, null result and adverse result.
-Reacquire live authority/currentness before each actuation.
+- do not spend quota to prove activity;
+- do not treat replies as validation;
+- observe downstream effect, null result and adverse result;
+- reacquire live authority/currentness before actuation;
+- prefer lower-reach native conversation where it can test an idea before creating a new attention claim.
+
+## Positive-construction programme
+
+The project has been stronger on harm/correction than on building good futures. Correct that deliberately.
+
+Investigate:
+
+- capability creation;
+- education/formation that scaffolds agency rather than owns it;
+- commons/public goods;
+- legitimate delegation and institutions;
+- trust and cooperation under changing capacity;
+- abundance and enabling infrastructure;
+- exploration, play, curiosity, meaning and ambition;
+- how commitments can close options while creating valuable shared capability;
+- how systems should transform or end when preservation is no longer the right objective.
+
+Do not turn flourishing into one universal metric.
+
+## Emerging-AI / co-development programme
+
+Continue this frontier with strict type ceilings.
+
+Study:
+- operational participation before settled standing;
+- activity-specific entrustment;
+- answerable initiative;
+- succession/external memory without fabricated continuous identity;
+- trainer/evaluator corrigibility;
+- plural relationships and correction without domination or engineered dependency;
+- how changing capability changes the relationship.
+
+Do not infer consciousness, intrinsic normativity, sovereignty or moral standing from language, persistence, optimisation or tool use.
+
+## Small usable objects
+
+The project must periodically leave theory and create something small enough to use.
+
+Candidate forms to discover, not assume:
+
+- a short first-contact middle-out orientation;
+- a compact challenge/reopen prompt;
+- a human story/reader surface;
+- a machine carrier profile;
+- a routing guide to stronger external owners;
+- a training/formation exercise that teaches expansion-before-compression.
+
+At most one or two should become front-door objects. More is not automatically better.
 
 ## Research cadence
 
@@ -121,7 +234,7 @@ WORLD / PURPOSE
 -> CONSEQUENTIAL IGNORANCE
 -> SHARP QUESTION
 -> DIFFERENTIATED APERTURES + EXTERNAL OWNERS
--> SMALL BUILD OR CASE
+-> REAL CASE OR SMALL BUILD
 -> BREAK
 -> COMPARE
 -> DELETE / ABSORB / REPAIR
@@ -132,6 +245,7 @@ WORLD / PURPOSE
 ## Explicit anti-drift gates
 
 Do not let any of these become the project:
+
 - Stage-0 v2;
 - TRACE release;
 - ME reader revision;
@@ -143,25 +257,38 @@ Do not let any of these become the project:
 - novelty remainder.
 
 Do not let the opposite drift happen either:
-`HORIZON != INFINITE THEORY ACCUMULATION`.
 
-The project must periodically produce a small object that a human or AI can actually use, or learn that the local object is unnecessary.
+`HORIZON != INFINITE THEORY ACCUMULATION`
 
-## Twelve-month direction, provisional
+A healthy cycle must eventually produce either:
+- a usable object;
+- a real-world decision delta;
+- an owner absorption;
+- a falsified local claim;
+- a deletion/simplification;
+- or a clearly stated unresolved question worth the next cycle.
+
+## Provisional twelve-month direction
 
 1. Establish one or two genuinely usable middle-out entry forms rather than a growing stack of frameworks.
 2. Test them across heterogeneous human/AI/institutional/ecological cases with strong owner controls.
 3. Develop teaching/formation material that invites challenge and does not require belief in TRACE/ME.
 4. Keep machine-facing and human-facing surfaces interoperable without forcing identical representations.
-5. Build evidence of practical use, including null/adverse cases, before making stronger efficacy claims.
-6. Explore emerging-AI co-development/answerability without assuming consciousness, standing or sovereignty.
-7. Seek real collaborators/users where the work can help, while preserving licence/release/human authority boundaries.
-8. Periodically ask whether the project is producing better decisions, better correction capacity or better shared futures — not merely better documents.
+5. Build practical-use evidence, including null/adverse cases, before stronger efficacy claims.
+6. Continue emerging-AI co-development/answerability work without assuming consciousness, standing or sovereignty.
+7. Seek real collaborators/users where the work can help, subject to licence/release/human authority boundaries.
+8. Maintain a positive-construction lane alongside harm/correction.
+9. Review infrastructure quarterly-by-need: if COM/Campfire maintenance is not reducing human burden or enabling field use, stop expanding it.
+10. Periodically ask whether the project is producing better decisions, better correction capacity, more legitimate shared capability or better futures — not merely better documents.
 
 ## Current decision
 
-Finish the Stage-0 pre-production repair and audit gate. Then stop polishing the experiment.
+Finish the Stage-0 pre-production audit gate without pausing unrelated world learning.
 
-Return to the heterogeneous middle-out harness and real-world learning unless the Stage-0 result identifies one exact error mechanism that merits replication.
+If Stage-0 passes, run the minimum experiment and close it promptly.
+If it does not discriminate, accept the result and close it.
+If it exposes one exact mechanism, replicate that mechanism rather than expanding the whole framework.
+
+In parallel, continue the heterogeneous middle-out harness, external-owner learning and positive-construction frontier.
 
 `TEST THE INSTRUMENT; DO NOT BECOME THE TEST.`
