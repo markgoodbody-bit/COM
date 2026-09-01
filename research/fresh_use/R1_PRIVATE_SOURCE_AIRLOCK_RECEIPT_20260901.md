@@ -44,7 +44,7 @@ The bounded receiver material is approximately 2,620 words / 15,997 bytes across
 Tool candidate:
 - COM draft PR #78;
 - original reviewed head: `8dc389fddbd8502e9d548c075b90bc23408ee894`;
-- current repaired exact head: `106f35b0979c687f66488aed8d074c0ea12cef04`;
+- current repaired exact head: `a2cac08c4013797c8fa33389c4e47f5c27555f76`;
 - provider-free: prepares, verifies, records, freezes blinded scores and unmasks; it does not browse, dispatch, score substantive answers or authorize spend.
 
 Claude Code returned `REPAIR` on the original head. Its five findings were integrated:
@@ -58,25 +58,29 @@ The repaired head adds a clearly bounded local hash-chained transition sequence;
 
 Codex then reproduced final-event tail truncation plus different-score substitution against the first repair. The current head explicitly concedes local-log truncation/rewrite and makes `score` emit a neutral freeze token. Tool-mediated unmask now requires those exact bytes at a full Git commit/path. Both shared receiver-facing surfaces also state `Answer in English`; the language field remains operator-attested rather than machine-verified.
 
+Codex's next exact audit reproduced a post-unmask split-chain substitution: an anchored token/report for score A could coexist with rewritten current score/token B and a rebuilt local event tail. The current head closes that join explicitly. Verification now requires agreement among the current freeze-token bytes, Git-anchored token bytes, current score-artifact hash, unmask-report score hash and unmask-event score hash. A dedicated post-unmask rewrite regression is included.
+
 Superseded dry objects are quarantined and were never dispatched:
 - `RUN001`: visible pilot identifier leaked the project label `7Q`;
 - `RUN002`: neutral labels and packet parity passed, but original HTML -> visible-text was outside the bundle verifier;
 - `RUN003`: direct raw-HTML composite extraction passed, but it preceded integration of Claude Code's five evidence-boundary findings.
 - `RUN004`: integrated Claude Code's findings, but preceded the external Git freeze-token requirement and receiver-facing English instruction.
+- `RUN005`: added the Git token anchor and English instruction, but preceded the five-way post-unmask score/token/report/event join.
 
 Current dry bundle:
 
 ```text
-pilot_id: FRESH-USE-R1-20260901-RUN005
+pilot_id: FRESH-USE-R1-20260901-RUN006
 cells: 2
 case_pack_sha256: 05b7bdd9e1feb9050eaa4e24b33314d2f78512ae42f03a8df8110d9d7e2da567
-public_launch_register_sha256: 6a5e52c6000d9e541b340b2765d883cc569b5c7ee40223cf82aff8a493fe054f
-packet_sha256_1: afaa31ef58cedb050a8c26eeb9254f2963f0c29c87505609af2d7b919c42d607
-packet_sha256_2: 81e8deb4c2800680b4d63f70620529b4e4405824a04b09f89a2d04c0103e9d8c
-private_arm_map_commitment_sha256: 163e7dc64cac4cdb4fb759cc9cd6a1a4f9fb4e3f4058bfbb97974a9d63b34af7
-private_source_ledger_commitment_sha256: b21cc35cb9a8f7f4f2730ec016313d50d8653a5811164ba5e9cca704d9a4f498
-local_genesis_event_log_sha256: 1cdf4e2f50274274e320507a7d26bbd37a29c126fc1c96f6ab91c0193dfd30b2
-tool_sha256: c28613d351d0557c5a9f01ed7823b8a03df632c8e622f03cc2f5f5c411846aba
+public_launch_register_sha256: 537ccb624ba67a08848ca480a0208fa4f6257162b2e2c82c249df132b60ece25
+packet_sha256_1: 71fb38c31ba098aa11fa1fda3de9d57d81f5af97d28881d73877730d967d7fbe
+packet_sha256_2: 36a4744d0817d14c58a34716d47cb9d51701c45acd4d06963465aaa6c180f4d8
+private_arm_map_commitment_sha256: dc4ca95238b86d332b05d149d408d83c54098650450586769f5e23ff48baa2ee
+private_source_ledger_commitment_sha256: 0a132becdfea11f1a2fa6caf789e6b61b7aae78b117fe9f71560df11b80e2ddb
+local_genesis_event_log_sha256: e51a2f79b50331e25a7881b048b8f6604ce6ae63714e63b2eab9aba544b507d6
+local_genesis_event_sha256: 8a62e44fc58d1635ec64da4c2f5c1b9e1800e49447967f582144419238cdad68
+tool_sha256: ebeb8c7decb42d191e33c591190719e6e5fe3c99b8bb972622dc5a359413ce92
 ```
 
 Public packet/register inspection found no `7Q`, arm identity, evaluator or score label. One packet contains the frozen reasoning aid and its matching exact instruction; the other does not. Which neutral cell alias maps to which arm remains only in the evaluator-private `0600` mapping behind a verified `0700` run/private boundary. The private source ledger and local event log are also `0600`.
@@ -93,7 +97,7 @@ GIT TOKEN ANCHOR != TRUSTED TIME OR PROOF OF COGNITIVE BLINDNESS
 Verification at preparation:
 - `freshuse.py prepare`: PASS — two sealed cells;
 - `freshuse.py verify`: PASS;
-- unit suite: 14/14 PASS;
+- unit suite: 15/15 PASS;
 - `py_compile`: PASS;
 - original HTML -> visible text -> frozen lines replayed by bundle verifier: PASS;
 - identical source-snapshot list and case-pack SHA-256 across both cells: PASS;
@@ -102,8 +106,8 @@ Verification at preparation:
 
 ## Remaining gates
 
-- independent Codex exact-head + `RUN005` re-audit: OPEN at receipt update;
-- Claude Code exact-head re-audit request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-004`: OPEN;
+- independent Codex exact-head + `RUN006` re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
+- Claude Code exact-head re-audit request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-005`: OPEN;
 - fresh receiver launch: CLOSED;
 - receiver/spend authority: CLOSED.
 
