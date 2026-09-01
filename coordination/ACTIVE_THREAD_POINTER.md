@@ -41,9 +41,9 @@ Next evidence must be genuinely fresh use + burden against competent ordinary/do
 
 Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campfire Relay Production -> Kimi K2.6 can provide separate sessions, but wider-project exposure is known, service readiness is unverified, and no no-spend claim exists. No dispatch is authorized.
 
-The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md` at commit `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
+The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in the live `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`; its receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
 
-Draft PR #78 now points to repaired exact head `2c3aa3c52136dd6968fa41bd5e2996746f687190`. Claude Code returned `REPAIR` on the prior head; the five ordering/confidentiality/attestation/language/ZIP findings were integrated. Thirteen tests pass. Current private dry object `FRESH-USE-R1-20260901-RUN004` prepares/verifies against captured HTML and the frozen bounded extracts; prior runs are quarantined and were never dispatched. Codex + Claude Code exact-head/`RUN004` re-audits are open. No receiver launch is authorized yet.
+Draft PR #78 now points to repaired exact head `106f35b0979c687f66488aed8d074c0ea12cef04`. Claude Code's five findings and Codex's reproduced tail-truncation/language findings were integrated. Fourteen tests pass. Tool-mediated unmask now requires the exact neutral score-freeze token at a full Git commit/path; this is not a trusted timestamp or proof of cognitive blindness. Both shared receiver-facing surfaces say `Answer in English`; language remains operator-attested. Current private dry object `FRESH-USE-R1-20260901-RUN005` prepares/verifies against captured HTML and the frozen bounded extracts; prior runs are quarantined and were never dispatched. Codex + Claude Code exact-head/`RUN005` re-audits are open. No receiver launch is authorized yet.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
@@ -115,7 +115,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 ## Open debt
 
 - Codex + Claude Code Stage-0 exact-two-repair re-audits: OPEN.
-- Codex + Claude Code PR #78 exact-head / R1 `RUN004` re-audits: OPEN.
+- Codex + Claude Code PR #78 exact-head / R1 `RUN005` re-audits: OPEN.
 - Claude Code voluntary-help tool build: OPEN.
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
 - Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
@@ -129,7 +129,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN004 RE-AUDITS
+-> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN005 RE-AUDITS
 -> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
 -> IF AUTHORIZED, COMPARE 7Q AGAINST COMPETENT ORDINARY / DOMAIN REASONING ON R1
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT

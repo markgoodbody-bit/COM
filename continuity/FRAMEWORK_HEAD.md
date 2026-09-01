@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — R1 RUN004 DRY / EXACT-HEAD RE-AUDIT GATED
+### 7Q fresh-use packet — R1 RUN005 DRY / EXACT-HEAD RE-AUDIT GATED
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -117,9 +117,9 @@ Codex's pre-dispatch audit then found the real blocking defect:
 `URL + RETRIEVAL DATE != EXACT RECEIVER SOURCE BYTES`
 
 A provider-free preparation/evidence airlock is now on draft COM PR #78:
-- repaired exact head `2c3aa3c52136dd6968fa41bd5e2996746f687190`;
+- repaired exact head `106f35b0979c687f66488aed8d074c0ea12cef04`;
 - path `tools/fresh_use_airlock/`;
-- 13 tests PASS locally;
+- 14 tests PASS locally;
 - binds captured HTML -> deterministic bounded extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> local transition chain -> blinded score -> unmask receipt;
 - dispatches nothing and authorizes nothing;
 - Claude Code returned `REPAIR` on the prior head; all five bounded findings were repaired and exact-head re-audit is requested;
@@ -127,20 +127,20 @@ A provider-free preparation/evidence airlock is now on draft COM PR #78:
 
 Exact R1 source bytes and deterministic extracts are privately preserved. Receipt-only witness:
 - `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`;
-- commit `226ea37030cf4886b9a85f79e667d3d08283e5cf`;
-- `RUN001`-`RUN003` quarantined / never dispatched;
-- current `FRESH-USE-R1-20260901-RUN004` prepares and verifies;
+- receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`; use the live file for the current dry object;
+- `RUN001`-`RUN004` quarantined / never dispatched;
+- current `FRESH-USE-R1-20260901-RUN005` prepares and verifies;
 - shared case-pack SHA `05b7bdd9e1feb9050eaa4e24b33314d2f78512ae42f03a8df8110d9d7e2da567`.
 
-The tool now states its limits inside its artefacts: the transition chain is local/operator-controlled rather than an external timestamp; hash-bound attestations are not authenticated facts; native Windows private-map handling fails closed; the English counter is not cross-language parity.
+The tool now states its limits inside its artefacts: the transition chain is local/operator-controlled and vulnerable to truncation/rewrite; tool-mediated unmask requires an exact neutral score-freeze token at a full Git commit/path; that anchor is not trusted time or proof of cognitive blindness; hash-bound attestations are not authenticated facts; native Windows private-map handling fails closed; both shared receiver surfaces require English while the language label remains operator-attested.
 
 Therefore:
 
 `7Q DESIGN = FROZEN`
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
 `EXACT R1 RECEIVER SOURCE BYTES = PRIVATELY PRESERVED / HASH-WITNESSED`
-`R1 RUN004 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
-`FRESH-USE AIRLOCK = DRAFT PR #78 @ 2c3aa3c... / EXACT-HEAD RE-AUDIT OPEN`
+`R1 RUN005 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
+`FRESH-USE AIRLOCK = DRAFT PR #78 @ 106f35b... / EXACT-HEAD RE-AUDIT OPEN`
 `FRESH RECEIVER ROUTE = AVAILABLE WITH CAVEATS / NOT AUTHORIZED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
@@ -248,7 +248,7 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Codex + Claude Code PR #78 exact-head / R1 `RUN004` re-audits;
+- Codex + Claude Code PR #78 exact-head / R1 `RUN005` re-audits;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
@@ -264,7 +264,7 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN004 RE-AUDITS
+-> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN005 RE-AUDITS
 -> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
 -> IF AUTHORIZED, RUN R1 ORDINARY vs 7Q ON THE SAME EXACT SOURCE/TASK
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT

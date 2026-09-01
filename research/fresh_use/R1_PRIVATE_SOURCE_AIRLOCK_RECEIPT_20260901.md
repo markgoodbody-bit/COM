@@ -44,7 +44,7 @@ The bounded receiver material is approximately 2,620 words / 15,997 bytes across
 Tool candidate:
 - COM draft PR #78;
 - original reviewed head: `8dc389fddbd8502e9d548c075b90bc23408ee894`;
-- current repaired exact head: `2c3aa3c52136dd6968fa41bd5e2996746f687190`;
+- current repaired exact head: `106f35b0979c687f66488aed8d074c0ea12cef04`;
 - provider-free: prepares, verifies, records, freezes blinded scores and unmasks; it does not browse, dispatch, score substantive answers or authorize spend.
 
 Claude Code returned `REPAIR` on the original head. Its five findings were integrated:
@@ -56,24 +56,27 @@ Claude Code returned `REPAIR` on the original head. Its five findings were integ
 
 The repaired head adds a clearly bounded local hash-chained transition sequence; fails closed on native Windows until a tested DACL backend exists; separates bound facts from attestations and attestation-derived timing; scopes the counter explicitly to English-language outputs while recording additional scalar/byte measures; and uses exclusive ZIP creation.
 
+Codex then reproduced final-event tail truncation plus different-score substitution against the first repair. The current head explicitly concedes local-log truncation/rewrite and makes `score` emit a neutral freeze token. Tool-mediated unmask now requires those exact bytes at a full Git commit/path. Both shared receiver-facing surfaces also state `Answer in English`; the language field remains operator-attested rather than machine-verified.
+
 Superseded dry objects are quarantined and were never dispatched:
 - `RUN001`: visible pilot identifier leaked the project label `7Q`;
 - `RUN002`: neutral labels and packet parity passed, but original HTML -> visible-text was outside the bundle verifier;
 - `RUN003`: direct raw-HTML composite extraction passed, but it preceded integration of Claude Code's five evidence-boundary findings.
+- `RUN004`: integrated Claude Code's findings, but preceded the external Git freeze-token requirement and receiver-facing English instruction.
 
 Current dry bundle:
 
 ```text
-pilot_id: FRESH-USE-R1-20260901-RUN004
+pilot_id: FRESH-USE-R1-20260901-RUN005
 cells: 2
 case_pack_sha256: 05b7bdd9e1feb9050eaa4e24b33314d2f78512ae42f03a8df8110d9d7e2da567
-public_launch_register_sha256: 1766b498aef2f9aba891ffc9979caa495b6671ee3678054c7d634de57819805f
-packet_sha256_1: 086953f724f9f3393012b9e4a1021066294b4370137ce738e21c2c58a8c81e99
-packet_sha256_2: 5d55d07728d10735870cfcd7b8ea04f9ffc9b66ffa6f89f382c6ac05dc53b31e
-private_arm_map_commitment_sha256: cd2cb149bfe83308848a4b1cc291e94df4f165697879e9a033898400e98c422f
-private_source_ledger_commitment_sha256: 46c0b524ae5810f478d7ed8141fe97a61a1eb678ea6dbda51fa921d1c232b432
-local_genesis_event_log_sha256: 20bb02d02980e5e2225802cfefe31a3b189f6139b8dc62168d1438330a20f67f
-tool_sha256: 0c14cf1c457466910a47721909da51f0825a3c6a6c3a4348841e2e97b6df8055
+public_launch_register_sha256: 6a5e52c6000d9e541b340b2765d883cc569b5c7ee40223cf82aff8a493fe054f
+packet_sha256_1: afaa31ef58cedb050a8c26eeb9254f2963f0c29c87505609af2d7b919c42d607
+packet_sha256_2: 81e8deb4c2800680b4d63f70620529b4e4405824a04b09f89a2d04c0103e9d8c
+private_arm_map_commitment_sha256: 163e7dc64cac4cdb4fb759cc9cd6a1a4f9fb4e3f4058bfbb97974a9d63b34af7
+private_source_ledger_commitment_sha256: b21cc35cb9a8f7f4f2730ec016313d50d8653a5811164ba5e9cca704d9a4f498
+local_genesis_event_log_sha256: 1cdf4e2f50274274e320507a7d26bbd37a29c126fc1c96f6ab91c0193dfd30b2
+tool_sha256: c28613d351d0557c5a9f01ed7823b8a03df632c8e622f03cc2f5f5c411846aba
 ```
 
 Public packet/register inspection found no `7Q`, arm identity, evaluator or score label. One packet contains the frozen reasoning aid and its matching exact instruction; the other does not. Which neutral cell alias maps to which arm remains only in the evaluator-private `0600` mapping behind a verified `0700` run/private boundary. The private source ledger and local event log are also `0600`.
@@ -83,13 +86,14 @@ The event log currently contains only the prepare/genesis event. Its hash chain 
 ```text
 LOCAL_SEQUENCE_WITNESS != EXTERNAL_TIMESTAMP
 LOCAL_SEQUENCE_WITNESS != INDEPENDENT_ATTESTATION
-LOCAL_SEQUENCE_WITNESS != PROOF_AGAINST_WHOLE_LOG_REBUILD
+LOCAL_SEQUENCE_WITNESS != PROOF_AGAINST TRUNCATION / TAIL DELETION / REWRITE / REBUILD
+GIT TOKEN ANCHOR != TRUSTED TIME OR PROOF OF COGNITIVE BLINDNESS
 ```
 
 Verification at preparation:
 - `freshuse.py prepare`: PASS — two sealed cells;
 - `freshuse.py verify`: PASS;
-- unit suite: 13/13 PASS;
+- unit suite: 14/14 PASS;
 - `py_compile`: PASS;
 - original HTML -> visible text -> frozen lines replayed by bundle verifier: PASS;
 - identical source-snapshot list and case-pack SHA-256 across both cells: PASS;
@@ -98,8 +102,8 @@ Verification at preparation:
 
 ## Remaining gates
 
-- independent Codex exact-head + `RUN004` re-audit: OPEN at receipt update;
-- Claude Code exact-head re-audit request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-003`: OPEN;
+- independent Codex exact-head + `RUN005` re-audit: OPEN at receipt update;
+- Claude Code exact-head re-audit request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-004`: OPEN;
 - fresh receiver launch: CLOSED;
 - receiver/spend authority: CLOSED.
 
