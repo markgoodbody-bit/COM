@@ -76,9 +76,16 @@ python freshuse.py record \
   --answer receiver-answer.txt
 ```
 
-`record` verifies the packet, timestamps, exposure enums, counts, and 700-word
-ceiling. It writes the exact answer and a derived burden receipt using
-create-only semantics. A second record for the same cell is rejected.
+`record` verifies the packet and validates the format of timestamps, exposure
+enums, counts, and the 700-word ceiling. This v1 requires the receipt to declare
+English (`en`) and rejects non-Latin letter scripts; another language requires a
+separately defined counting policy. Receiver identity, exposure, timing, token, and interaction
+fields remain operator attestations. The output receipt lists those separately
+from fields the tool mechanically checks or derives.
+
+It writes the exact answer and receipt using create-only semantics. A second
+record for the same cell is rejected while the complete local bundle is
+retained.
 
 After both cells for a case are recorded, an evaluator compares the aliases
 without seeing the private map. Copy `examples/blinded-score.template.json`,
@@ -107,12 +114,23 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
 - ZIP cells use sorted members, fixed timestamps, and no compression so the
   same members produce stable bytes.
 - Public aliases are random and do not contain arm labels.
-- Private-map permissions are restricted where the filesystem supports it.
+- On POSIX systems the tool applies restrictive modes to the private directory
+  and private files. On Windows it does not claim that `chmod` establishes an
+  ACL: private-map confidentiality is procedural unless the operator separately
+  configures and verifies Windows access control.
 - One bundle contains first attempts only. A failure is evidence; it is not
   silently replaced. A retry requires a new cell/package and explicit authority
   outside this v1 tool.
-- Scoring is frozen before unmasking and cannot be overwritten.
-- The verifier detects packet, answer, receipt, and frozen-score changes.
+- Preparation writes an integrity manifest covering the public packets,
+  receipt templates, private arm map, and private source ledgers. Successful
+  `prepare`, `record`, `score`, and `unmask` operations append a hash-chained
+  line to `evidence/log.jsonl`. Unmasking requires a matching prior score event.
+  The verifier detects missing or changed prepared/logged artifacts and ordinary
+  delete-and-redo attempts when the complete bundle remains intact.
+- This local log is ordering evidence, not an external timestamp or independent
+  witness. An operator who controls the whole bundle can erase or replace both
+  artifacts and log. Preserve the complete bundle in a separately governed or
+  versioned store if stronger chronology is required.
 
 ## Important ceilings
 
@@ -124,6 +142,11 @@ This does not establish domain correctness, efficacy, validation, project
 survival, canon, or authority. It deliberately permits a null or adverse result.
 No run should be described as independent if the scorer constructed 7Q; use the
 protocol's `PROJECT-PARTICIPANT / CONTAMINATED` ceiling where applicable.
+
+The tool is deliberately substantial for a small pilot because the same
+airlock is intended to be reused across Stage 0 and later bounded tests. If that
+reuse does not happen, simplify or remove it rather than treating maintenance
+burden as automatically justified.
 
 This v1 never spends or dispatches. If a later paid dispatcher is built, each of
 the four intended calls needs a separate one-use, call-bound authorization. A

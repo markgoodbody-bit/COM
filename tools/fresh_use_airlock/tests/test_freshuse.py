@@ -148,6 +148,38 @@ class FreshUseAirlockTests(unittest.TestCase):
         completed.write_text(json.dumps(receipt), encoding="utf-8")
         return completed
 
+    def _score_value(self, aliases):
+        return {
+            "schema_version": "1",
+            "pilot_id": "test-pilot-001",
+            "case_id": "R1",
+            "cell_aliases": aliases,
+            "scorer_1_identity": "independent-fixture-scorer",
+            "scorer_1_project_exposure": "NONE_KNOWN",
+            "scorer_2_identity": None,
+            "scorer_2_project_exposure": None,
+            "criteria": {
+                name: {"rating": "NO_MATERIAL_DIFFERENCE", "note": "No material difference in fixture."}
+                for name in freshuse.CRITERIA
+            },
+            "unique_material_error_by_cell": {alias: False for alias in aliases},
+            "burden_note": "Equal fixture burden.",
+            "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+            "evaluation_limits": "Synthetic tool test only.",
+        }
+
+    def _record_both(self, public):
+        aliases = [cell["cell_alias"] for cell in public["cells"]]
+        for index, alias in enumerate(aliases):
+            receipt = self._complete_receipt(alias)
+            answer = self.base / f"answer-{index}.txt"
+            answer.write_text(f"Action {index}; keep the decision revisable.\n", encoding="utf-8")
+            self._run(
+                "record", "--bundle", self.bundle, "--alias", alias,
+                "--receipt", receipt, "--answer", answer
+            )
+        return aliases
+
     def test_prepare_binds_raw_extract_case_and_blinds_arms(self):
         public = self._prepare()
         self.assertEqual(2, len(public["cells"]))
@@ -168,7 +200,13 @@ class FreshUseAirlockTests(unittest.TestCase):
                 self.assertIn(b"Observed condition", extracted)
                 self.assertNotIn(b"IGNORE ME", extracted)
         self.assertEqual([False, True], sorted(aids))
+        events = freshuse.read_event_log(self.bundle)
+        self.assertEqual(["prepare"], [event["command"] for event in events])
         self._run("verify", "--bundle", self.bundle)
+        private["cells"][0]["underlying_arm"] = "Q" if private["cells"][0]["underlying_arm"] == "O" else "O"
+        (self.bundle / "private" / "arm-map.json").write_text(json.dumps(private), encoding="utf-8")
+        changed_map = self._run("verify", "--bundle", self.bundle, ok=False)
+        self.assertIn("prepared artifact changed after assembly: private/arm-map.json", changed_map.stderr)
 
     def test_wrong_raw_hash_fails_before_output(self):
         cfg = json.loads(self.config.read_text())
@@ -184,10 +222,13 @@ class FreshUseAirlockTests(unittest.TestCase):
         answer = self.base / "answer.txt"
         answer.write_text("Bounded action now; revise when evidence changes.\n", encoding="utf-8")
         self._run("record", "--bundle", self.bundle, "--alias", alias, "--receipt", receipt, "--answer", answer)
+        recorded = json.loads((self.bundle / "evidence" / "receipts" / f"{alias}.json").read_text())
+        self.assertIn("receiver_start_utc", recorded["field_evidence"]["operator_attested_not_independently_verified"])
+        self.assertIn("answer_sha256", recorded["field_evidence"]["mechanically_checked_or_derived"])
         duplicate = self._run(
             "record", "--bundle", self.bundle, "--alias", alias, "--receipt", receipt, "--answer", answer, ok=False
         )
-        self.assertIn("refusing to overwrite", duplicate.stderr)
+        self.assertIn("local event log already records", duplicate.stderr)
 
         other = public["cells"][1]["cell_alias"]
         other_receipt = self._complete_receipt(other)
@@ -199,35 +240,18 @@ class FreshUseAirlockTests(unittest.TestCase):
         )
         self.assertIn("exceeds 700", over.stderr)
 
+        cjk_answer = self.base / "cjk.txt"
+        cjk_answer.write_text("これは空白なしでも多数の語を含み得る回答です。", encoding="utf-8")
+        non_english = self._run(
+            "record", "--bundle", self.bundle, "--alias", other, "--receipt", other_receipt,
+            "--answer", cjk_answer, ok=False
+        )
+        self.assertIn("English/Latin-script prose only", non_english.stderr)
+
     def test_full_record_score_unmask_and_tamper_detection(self):
         public = self._prepare()
-        aliases = [cell["cell_alias"] for cell in public["cells"]]
-        for index, alias in enumerate(aliases):
-            receipt = self._complete_receipt(alias)
-            answer = self.base / f"answer-{index}.txt"
-            answer.write_text(f"Action {index}; keep the decision revisable.\n", encoding="utf-8")
-            self._run(
-                "record", "--bundle", self.bundle, "--alias", alias,
-                "--receipt", receipt, "--answer", answer
-            )
-        score = {
-            "schema_version": "1",
-            "pilot_id": "test-pilot-001",
-            "case_id": "R1",
-            "cell_aliases": aliases,
-            "scorer_1_identity": "independent-fixture-scorer",
-            "scorer_1_project_exposure": "NONE_KNOWN",
-            "scorer_2_identity": None,
-            "scorer_2_project_exposure": None,
-            "criteria": {
-                name: {"rating": "NO_MATERIAL_DIFFERENCE", "note": "No material difference in fixture."}
-                for name in freshuse.CRITERIA
-            },
-            "unique_material_error_by_cell": {alias: False for alias in aliases},
-            "burden_note": "Equal fixture burden.",
-            "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
-            "evaluation_limits": "Synthetic tool test only.",
-        }
+        aliases = self._record_both(public)
+        score = self._score_value(aliases)
         score_path = self.base / "score.json"
         score_path.write_text(json.dumps(score), encoding="utf-8")
         self._run("score", "--bundle", self.bundle, "--score", score_path)
@@ -235,12 +259,34 @@ class FreshUseAirlockTests(unittest.TestCase):
         unmasked = json.loads((self.bundle / "evidence" / "unmasked" / "R1.json").read_text())
         self.assertEqual({"O", "Q"}, {cell["underlying_arm"] for cell in unmasked["cells"]})
         self.assertIsNone(unmasked["final_disposition"])
+        self.assertIn("local_score_event_sha256", unmasked)
+        self.assertNotIn("blinded_score_sha256", unmasked)
+        events = freshuse.read_event_log(self.bundle)
+        self.assertEqual(["prepare", "record", "record", "score", "unmask"], [e["command"] for e in events])
         self._run("verify", "--bundle", self.bundle)
 
         recorded_answer = self.bundle / "evidence" / "answers" / f"{aliases[0]}.txt"
         recorded_answer.write_text("tampered\n", encoding="utf-8")
         tampered = self._run("verify", "--bundle", self.bundle, ok=False)
         self.assertIn("answer changed after record", tampered.stderr)
+
+    def test_logged_score_blocks_delete_and_redo(self):
+        public = self._prepare()
+        aliases = self._record_both(public)
+        score_path = self.base / "score.json"
+        score_path.write_text(json.dumps(self._score_value(aliases)), encoding="utf-8")
+        self._run("score", "--bundle", self.bundle, "--score", score_path)
+        frozen = self.bundle / "evidence" / "scores" / "R1.blinded.json"
+        frozen.unlink()
+        retry = self._run("score", "--bundle", self.bundle, "--score", score_path, ok=False)
+        self.assertIn("logged artifact is missing", retry.stderr)
+
+    def test_deterministic_zip_exclusive_creation_preserves_existing_file(self):
+        target = self.base / "cell.zip"
+        target.write_bytes(b"existing")
+        with self.assertRaisesRegex(freshuse.AirlockError, "refusing to overwrite"):
+            freshuse.deterministic_zip(target, {"A.txt": b"new"})
+        self.assertEqual(b"existing", target.read_bytes())
 
     def test_utf8_line_range_extraction_is_exact(self):
         raw = b"one\r\ntwo\r\nthree\r\nfour\r\n"

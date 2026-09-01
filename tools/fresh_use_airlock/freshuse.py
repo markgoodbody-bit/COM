@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import io
 import json
 import os
 import re
@@ -19,6 +20,7 @@ import stat
 import subprocess
 import sys
 import tempfile
+import unicodedata
 import zipfile
 from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
@@ -52,6 +54,8 @@ ARM_HEADING = {
     "O": "## ARM O — COMPETENT ORDINARY REASONING",
     "Q": "## ARM Q — 7Q-ASSISTED REASONING",
 }
+EVENT_LOG = Path("evidence") / "log.jsonl"
+PREPARATION_INTEGRITY = Path("evidence") / "preparation-integrity.json"
 
 
 class AirlockError(RuntimeError):
@@ -88,8 +92,105 @@ def write_new(path: Path, data: bytes, mode: int | None = None) -> None:
             handle.write(data)
     except FileExistsError as exc:
         raise AirlockError(f"refusing to overwrite existing evidence: {path}") from exc
-    if mode is not None:
+    if mode is not None and os.name == "posix":
         path.chmod(mode)
+
+
+def utc_now() -> str:
+    return dt.datetime.now(dt.timezone.utc).isoformat(timespec="microseconds").replace("+00:00", "Z")
+
+
+def read_event_log(bundle: Path) -> list[dict[str, Any]]:
+    path = bundle / EVENT_LOG
+    if not path.is_file():
+        raise AirlockError(f"local event log is missing: {path}")
+    events: list[dict[str, Any]] = []
+    previous: str | None = None
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as exc:
+        raise AirlockError(f"cannot read local event log {path}: {exc}") from exc
+    if not lines:
+        raise AirlockError("local event log is empty")
+    for sequence, line in enumerate(lines, 1):
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise AirlockError(f"invalid local event log line {sequence}: {exc}") from exc
+        if not isinstance(event, dict):
+            raise AirlockError(f"invalid local event log line {sequence}: object required")
+        event_hash = event.pop("event_sha256", None)
+        expected = sha256_bytes(canonical_json(event))
+        if event_hash != expected:
+            raise AirlockError(f"local event log hash mismatch at line {sequence}")
+        if event.get("sequence") != sequence or event.get("previous_event_sha256") != previous:
+            raise AirlockError(f"local event log chain mismatch at line {sequence}")
+        require_utc(event.get("timestamp_utc"), f"event line {sequence} timestamp_utc")
+        target = event.get("target")
+        if not isinstance(target, str):
+            raise AirlockError(f"local event log target missing at line {sequence}")
+        relative = PurePosixPath(target)
+        if relative.is_absolute() or ".." in relative.parts:
+            raise AirlockError(f"unsafe local event target at line {sequence}: {target}")
+        artifact = bundle.joinpath(*relative.parts)
+        if not artifact.is_file():
+            raise AirlockError(f"logged artifact is missing at line {sequence}: {target}")
+        if sha256_file(artifact) != event.get("artifact_sha256"):
+            raise AirlockError(f"logged artifact hash mismatch at line {sequence}: {target}")
+        event["event_sha256"] = event_hash
+        events.append(event)
+        previous = event_hash
+    return events
+
+
+def append_event(bundle: Path, command: str, target: Path) -> dict[str, Any]:
+    events = [] if not (bundle / EVENT_LOG).exists() else read_event_log(bundle)
+    try:
+        relative = target.resolve().relative_to(bundle.resolve()).as_posix()
+    except ValueError as exc:
+        raise AirlockError(f"event target is outside bundle: {target}") from exc
+    if not target.is_file():
+        raise AirlockError(f"cannot log missing artifact: {target}")
+    event = {
+        "schema_version": SCHEMA_VERSION,
+        "sequence": len(events) + 1,
+        "timestamp_utc": utc_now(),
+        "command": command,
+        "target": relative,
+        "artifact_sha256": sha256_file(target),
+        "previous_event_sha256": events[-1]["event_sha256"] if events else None,
+    }
+    event["event_sha256"] = sha256_bytes(canonical_json(event))
+    log_path = bundle / EVENT_LOG
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    with log_path.open("ab") as handle:
+        handle.write(json.dumps(event, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8"))
+        handle.write(b"\n")
+        handle.flush()
+        os.fsync(handle.fileno())
+    return event
+
+
+def event_for(events: list[dict[str, Any]], command: str, target: Path, bundle: Path) -> list[dict[str, Any]]:
+    relative = target.resolve().relative_to(bundle.resolve()).as_posix()
+    return [event for event in events if event.get("command") == command and event.get("target") == relative]
+
+
+def verify_preparation_integrity(bundle: Path) -> None:
+    manifest = load_json(bundle / PREPARATION_INTEGRITY)
+    require_keys(manifest, {"schema_version", "members"}, "preparation integrity manifest")
+    if manifest["schema_version"] != SCHEMA_VERSION or not isinstance(manifest["members"], dict):
+        raise AirlockError("invalid preparation integrity manifest")
+    for relative, expected in manifest["members"].items():
+        posix = PurePosixPath(relative)
+        if posix.is_absolute() or ".." in posix.parts:
+            raise AirlockError(f"unsafe preparation integrity member: {relative}")
+        require_sha(expected, f"preparation integrity member {relative}")
+        path = bundle.joinpath(*posix.parts)
+        if not path.is_file():
+            raise AirlockError(f"prepared artifact is missing: {relative}")
+        if sha256_file(path) != expected:
+            raise AirlockError(f"prepared artifact changed after assembly: {relative}")
 
 
 def require_keys(obj: dict[str, Any], keys: set[str], context: str) -> None:
@@ -182,25 +283,31 @@ def extract_neutral_task(case_text: str) -> str:
 
 
 def deterministic_zip(path: Path, members: dict[str, bytes]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    if path.exists():
-        raise AirlockError(f"refusing to overwrite cell packet: {path}")
-    with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_STORED, strict_timestamps=True) as archive:
+    for name in members:
+        posix = PurePosixPath(name)
+        if posix.is_absolute() or ".." in posix.parts:
+            raise AirlockError(f"unsafe ZIP member: {name}")
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_STORED, strict_timestamps=True) as archive:
         for name in sorted(members):
-            posix = PurePosixPath(name)
-            if posix.is_absolute() or ".." in posix.parts:
-                raise AirlockError(f"unsafe ZIP member: {name}")
             info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_STORED
             info.external_attr = (stat.S_IFREG | 0o644) << 16
             archive.writestr(info, members[name])
+    write_new(path, buffer.getvalue())
 
 
-def unicode_words(data: bytes) -> int:
+def english_words(data: bytes) -> int:
     try:
         text = data.decode("utf-8")
     except UnicodeDecodeError as exc:
         raise AirlockError("answer must be UTF-8") from exc
+    for char in text:
+        if unicodedata.category(char).startswith("L") and "LATIN" not in unicodedata.name(char, ""):
+            raise AirlockError(
+                "700-word ceiling supports English/Latin-script prose only; "
+                "this answer requires a separately declared counting policy"
+            )
     return len(re.findall(r"\b[^\W_]+(?:['’\-][^\W_]+)*\b", text, flags=re.UNICODE))
 
 
@@ -319,6 +426,7 @@ def extract_source(raw: bytes, recipe: dict[str, Any], context: str) -> bytes:
 
 
 def load_bundle(bundle: Path) -> tuple[dict[str, Any], dict[str, Any]]:
+    verify_preparation_integrity(bundle)
     public = load_json(bundle / "public" / "launch-register.json")
     private = load_json(bundle / "private" / "arm-map.json")
     if public.get("schema_version") != SCHEMA_VERSION or private.get("schema_version") != SCHEMA_VERSION:
@@ -353,9 +461,16 @@ def prepare(args: argparse.Namespace) -> None:
         if final_out.exists():
             raise AirlockError(f"output appeared during assembly: {final_out}")
         os.replace(temporary, final_out)
+        append_event(final_out, "prepare", final_out / PREPARATION_INTEGRITY)
     except Exception:
         shutil.rmtree(temporary, ignore_errors=True)
         raise
+    if os.name != "posix":
+        print(
+            "warning: private-map confidentiality is procedural on this platform; "
+            "POSIX file modes were not enforced",
+            file=sys.stderr,
+        )
     print(f"prepared {count} sealed cells in {final_out}")
 
 
@@ -388,7 +503,8 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
 
     (out / "public" / "cells").mkdir(parents=True)
     (out / "private").mkdir(parents=True)
-    (out / "private").chmod(0o700)
+    if os.name == "posix":
+        (out / "private").chmod(0o700)
 
     public_cells: list[dict[str, Any]] = []
     private_cells: list[dict[str, Any]] = []
@@ -499,7 +615,8 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
                 "cell_alias": alias,
                 "case_id": case_id,
                 "live_browsing": False,
-                "maximum_answer_unicode_words": 700,
+                "maximum_answer_words": 700,
+                "answer_language_policy": "declared English (en), using Latin-script word counting",
                 "members": {
                     name: {"sha256": sha256_bytes(data), "size_bytes": len(data)}
                     for name, data in sorted(members.items())
@@ -585,6 +702,25 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
     write_new(out / "public" / "launch-register.json", canonical_json(public_register))
     write_new(out / "private" / "arm-map.json", canonical_json(private_map), mode=0o600)
     prepare_receipt_templates(out, public_register)
+    prepared_paths = [
+        out / "public" / "launch-register.json",
+        out / "private" / "arm-map.json",
+        *(out / "private" / "source-ledgers").glob("*.json"),
+        *(out / "public" / "cells").glob("*.zip"),
+        *(out / "public" / "receipt-templates").glob("*.json"),
+    ]
+    preparation_manifest = {
+        "schema_version": SCHEMA_VERSION,
+        "members": {
+            path.relative_to(out).as_posix(): sha256_file(path)
+            for path in sorted(prepared_paths, key=lambda item: item.relative_to(out).as_posix())
+        },
+        "ceiling": (
+            "This manifest detects changes while it and the complete bundle are retained; "
+            "it is not an external witness."
+        ),
+    }
+    write_new(out / PREPARATION_INTEGRITY, canonical_json(preparation_manifest))
     return len(public_cells)
 
 
@@ -647,6 +783,7 @@ def prepare_receipt_templates(bundle: Path, public: dict[str, Any]) -> None:
             "receiver_prior_project_exposure": "UNKNOWN",
             "receiver_prior_case_exposure": "UNKNOWN",
             "freshness_note": "",
+            "answer_language": "en",
             "receiver_start_utc": "",
             "receiver_end_utc": "",
             "reported_input_tokens": None,
@@ -672,6 +809,7 @@ def validate_optional_count(value: Any, context: str) -> int | None:
 def record(args: argparse.Namespace) -> None:
     bundle = Path(args.bundle).resolve()
     public, private = load_bundle(bundle)
+    events = read_event_log(bundle)
     alias = args.alias
     cell = cell_entry(public, alias)
     private_entry(private, alias)
@@ -690,6 +828,7 @@ def record(args: argparse.Namespace) -> None:
         "receiver_prior_project_exposure",
         "receiver_prior_case_exposure",
         "freshness_note",
+        "answer_language",
         "receiver_start_utc",
         "receiver_end_utc",
         "reported_input_tokens",
@@ -709,6 +848,8 @@ def record(args: argparse.Namespace) -> None:
     for key in ("receiver_model_provider", "receiver_model_version", "receiver_session_id_or_local_alias"):
         if not isinstance(receipt_in[key], str) or not receipt_in[key].strip():
             raise AirlockError(f"receipt {key} must be non-empty")
+    if receipt_in["answer_language"] != "en":
+        raise AirlockError("this v1 parity ceiling requires answer_language to be en")
     for key in ("receiver_prior_project_exposure", "receiver_prior_case_exposure"):
         if receipt_in[key] not in EXPOSURES:
             raise AirlockError(f"receipt {key} must be one of {sorted(EXPOSURES)}")
@@ -730,9 +871,9 @@ def record(args: argparse.Namespace) -> None:
         )
     answer_path = Path(args.answer)
     answer = answer_path.read_bytes()
-    words = unicode_words(answer)
+    words = english_words(answer)
     if words > 700:
-        raise AirlockError(f"answer exceeds 700 Unicode words: {words}")
+        raise AirlockError(f"answer exceeds 700 English/Latin-script words: {words}")
     recorded = dict(receipt_in)
     recorded.update(
         {
@@ -742,25 +883,68 @@ def record(args: argparse.Namespace) -> None:
             "case_pack_sha256": cell["case_pack_sha256"],
             "cell_input_sha256": cell["cell_input_sha256"],
             "answer_sha256": sha256_bytes(answer),
-            "answer_unicode_words": words,
+            "answer_word_count": words,
+            "word_count_policy": "English/Latin-script prose; Unicode word-token regex v1",
             "answer_size_bytes": len(answer),
             "elapsed_seconds": (end - start).total_seconds(),
+            "field_evidence": {
+                "mechanically_checked_or_derived": [
+                    "schema_version",
+                    "pilot_id",
+                    "cell_alias",
+                    "packet_sha256",
+                    "source_snapshot_sha256",
+                    "neutral_task_sha256",
+                    "case_pack_sha256",
+                    "cell_input_sha256",
+                    "answer_sha256",
+                    "answer_word_count",
+                    "answer_size_bytes",
+                ],
+                "operator_attested_not_independently_verified": [
+                    "receiver_model_provider",
+                    "receiver_model_version",
+                    "receiver_settings",
+                    "receiver_session_id_or_local_alias",
+                    "receiver_prior_project_exposure",
+                    "receiver_prior_case_exposure",
+                    "freshness_note",
+                    "answer_language",
+                    "receiver_start_utc",
+                    "receiver_end_utc",
+                    "elapsed_seconds",
+                    "reported_input_tokens",
+                    "reported_output_tokens",
+                    "errors_or_truncation",
+                    "source_open_count",
+                    "clarification_count",
+                    "terminology_lookup_count",
+                ],
+                "ceiling": (
+                    "The receipt binds these attestations to this artifact; it does not verify "
+                    "that the operator-reported facts are true."
+                ),
+            },
         }
     )
     answer_out = bundle / "evidence" / "answers" / f"{alias}.txt"
     receipt_out = bundle / "evidence" / "receipts" / f"{alias}.json"
+    if event_for(events, "record", receipt_out, bundle):
+        raise AirlockError(f"local event log already records this first attempt: {alias}")
     write_new(answer_out, answer)
     try:
         write_new(receipt_out, canonical_json(recorded))
     except Exception:
         answer_out.unlink(missing_ok=True)
         raise
+    append_event(bundle, "record", receipt_out)
     print(f"recorded first attempt {alias}: {words} words, {recorded['elapsed_seconds']:.3f}s")
 
 
 def score(args: argparse.Namespace) -> None:
     bundle = Path(args.bundle).resolve()
     public, private = load_bundle(bundle)
+    events = read_event_log(bundle)
     score_in = load_json(Path(args.score))
     required = {
         "schema_version",
@@ -817,15 +1001,22 @@ def score(args: argparse.Namespace) -> None:
     frozen = dict(score_in)
     frozen["score_sha256"] = sha256_bytes(canonical_json(score_in))
     target = bundle / "evidence" / "scores" / f"{case_id}.blinded.json"
+    if event_for(events, "score", target, bundle):
+        raise AirlockError(f"local event log already records a blinded score for {case_id}")
     write_new(target, canonical_json(frozen))
+    append_event(bundle, "score", target)
     print(f"froze blinded score for {case_id}: {frozen['score_sha256']}")
 
 
 def unmask(args: argparse.Namespace) -> None:
     bundle = Path(args.bundle).resolve()
     public, private = load_bundle(bundle)
+    events = read_event_log(bundle)
     case_id = args.case
     score_path = bundle / "evidence" / "scores" / f"{case_id}.blinded.json"
+    score_events = event_for(events, "score", score_path, bundle)
+    if len(score_events) != 1:
+        raise AirlockError(f"unmask requires exactly one locally logged score event for {case_id}")
     score_data = load_json(score_path)
     score_sha = score_data.pop("score_sha256", None)
     if sha256_bytes(canonical_json(score_data)) != score_sha:
@@ -841,7 +1032,7 @@ def unmask(args: argparse.Namespace) -> None:
                 "underlying_arm": arm_entry["underlying_arm"],
                 "packet_sha256": arm_entry["packet_sha256"],
                 "answer_sha256": receipt["answer_sha256"],
-                "answer_unicode_words": receipt["answer_unicode_words"],
+                "answer_word_count": receipt["answer_word_count"],
                 "elapsed_seconds": receipt["elapsed_seconds"],
                 "reported_input_tokens": receipt["reported_input_tokens"],
                 "reported_output_tokens": receipt["reported_output_tokens"],
@@ -853,19 +1044,25 @@ def unmask(args: argparse.Namespace) -> None:
         "schema_version": SCHEMA_VERSION,
         "pilot_id": public["pilot_id"],
         "case_id": case_id,
-        "blinded_score_sha256": score_sha,
+        "score_content_sha256": score_sha,
+        "score_artifact_sha256": sha256_file(score_path),
+        "local_score_event_sha256": score_events[0]["event_sha256"],
         "blinded_provisional_comparison": score_data["provisional_comparison"],
         "cells": joined,
         "ceiling": (
             "This is a mechanical unmask receipt, not a disposition, validation, efficacy, "
-            "TRACE/ME mutation, or claim of independent scoring."
+            "TRACE/ME mutation, independent scoring, or external proof of evaluation order. "
+            "The local event log evidences order only while the complete bundle is retained."
         ),
         "final_disposition": None,
         "final_disposition_authority": None,
         "final_disposition_note": None,
     }
     target = bundle / "evidence" / "unmasked" / f"{case_id}.json"
+    if event_for(events, "unmask", target, bundle):
+        raise AirlockError(f"local event log already records an unmask for {case_id}")
     write_new(target, canonical_json(report))
+    append_event(bundle, "unmask", target)
     print(f"unmasked {case_id}; no final disposition was assigned")
 
 
@@ -902,6 +1099,7 @@ def verify_zip_members(path: Path) -> dict[str, Any]:
 def verify(args: argparse.Namespace) -> None:
     bundle = Path(args.bundle).resolve()
     public, private = load_bundle(bundle)
+    read_event_log(bundle)
     if len(public["cells"]) != len(private["cells"]):
         raise AirlockError("public/private cell count mismatch")
     for ledger_path in (bundle / "private" / "source-ledgers").glob("*.json"):
@@ -946,7 +1144,7 @@ def verify(args: argparse.Namespace) -> None:
                 raise AirlockError(f"receipt packet mismatch: {alias}")
             if sha256_file(answer_path) != receipt["answer_sha256"]:
                 raise AirlockError(f"answer changed after record: {alias}")
-            if unicode_words(answer_path.read_bytes()) != receipt["answer_unicode_words"]:
+            if english_words(answer_path.read_bytes()) != receipt["answer_word_count"]:
                 raise AirlockError(f"answer word count mismatch: {alias}")
     scores = bundle / "evidence" / "scores"
     if scores.exists():

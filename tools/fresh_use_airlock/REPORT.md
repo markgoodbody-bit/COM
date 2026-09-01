@@ -16,18 +16,27 @@ It closes five preparation/evidence gaps:
    ledger binds raw bytes to a versioned deterministic extraction recipe,
    extracted bytes, a parity case-pack hash, and each complete cell-input hash.
 3. **Arm identity stays evaluator-only.** Public random cell aliases are split
-   from a permission-restricted private arm map. Public listing order is also
-   randomised.
-4. **Failure/attempt evidence is append-only.** Answers and receipts are created
-   once. Duplicate recording, post-hoc packet mutation, over-budget answers,
-   malformed timestamps/exposure fields, and relabelled retries are rejected.
-5. **Evaluation order is enforceable.** A two-cell comparison is frozen under
-   aliases before arm unmasking. Unmasking deliberately does not manufacture a
-   final disposition.
+   from a private arm map. POSIX modes are applied where meaningful; on Windows
+   confidentiality remains procedural unless separately enforced with ACLs.
+   Public listing order is randomised.
+4. **Ordinary replacement is locally observable.** Answers and receipts are
+   created once. A preparation manifest also binds the public packets, receipt
+   templates, private arm map, and source ledgers. Successful evidence-producing
+   commands add a hash-chained line to a local append log. Duplicate recording,
+   post-hoc mutation, over-budget English/Latin-script answers, malformed
+   timestamp/exposure fields, and relabelled retries are rejected while the
+   complete bundle is retained.
+5. **Evaluation order is locally checked.** A score event must precede unmasking,
+   and the unmask receipt binds the score artifact and event hashes. This is not
+   an external timestamp or independent witness: a controller able to replace
+   the entire bundle can manufacture a different history. Unmasking deliberately
+   does not manufacture a final disposition.
 
-Observable burden retained by the receipt includes elapsed time, exact answer
-bytes/Unicode words, reported token counts, source opens, clarifications,
-terminology lookups, exposure state, and errors/truncation.
+Observable burden retained by the receipt includes operator-attested timing,
+reported token counts, source opens, clarifications, terminology lookups,
+exposure state, and errors/truncation, alongside mechanically derived exact
+answer bytes, English/Latin-script word count, and size. The receipt makes the
+attested/derived distinction explicit; binding an attestation does not verify it.
 
 ## What this enables now
 
