@@ -78,11 +78,17 @@ Fresh external case manifests:
 
 R1 — Wickford rail / hot-weather track risk
 - `research/fresh_use/CASE_R1_WICKFORD_RAIL_20260901.md`
-- commit `022f74e8668352fa88ae743950a9098c9993129b`.
+- current source-witness commit `25ed401228fc1a87abd02cf8076e55bc4b6670b2`;
+- RAIB current page + current-investigations register rechecked 2026-09-01 and still `Investigating`;
+- current Network Rail heat/track owner material rechecked;
+- no causal finding inferred.
 
 R2 — Boston Scientific cyber / operations disruption
 - `research/fresh_use/CASE_R2_BOSTON_SCIENTIFIC_CYBER_20260901.md`
-- commit `555ff65cbf89e7b5cda1c7dda1f924331862a9a6`.
+- current source-witness commit `bc0a7e83cd782b99f9c3c4c9e6cd02e9d908c008`;
+- immutable primary: SEC accession `0000885725-26-000056`, accepted `2026-08-26 06:06:57`;
+- Boston Scientific newsroom page is explicitly treated as mutable supplemental material;
+- if an exact live-page snapshot cannot be preserved for dispatch, clean fallback is SEC-only rather than silent page drift.
 
 Exact receiver prompts:
 - `research/fresh_use/RECEIVER_PROMPTS_20260901.md`
@@ -104,15 +110,14 @@ Compare only:
 
 Equal answer budget: 700 Unicode words. Same model/version/settings within each case. One isolated fresh receiver session per cell. No live browsing during run.
 
-These case manifests preserve external source identities + neutral tasks; they are NOT Framework fact tables or answer keys. At dispatch time preserve exact source snapshots/identities. If a mutable source has changed, create a new case version or transparently re-freeze; do not silently substitute.
-
-Codex direction `FW-7Q-FRESH-RECEIVER-ROUTE-20260901-001` is OPEN / NON-BLOCKING and authorizes route/cost/freshness discovery only. No reply observed yet.
+Codex direction `FW-7Q-FRESH-RECEIVER-ROUTE-20260901-001` is OPEN / NON-BLOCKING and authorizes route/cost/freshness discovery only. No reply observed at latest recheck.
 
 No direct installable external inference plugin/provider route is available through the current Framework runtime.
 
 Therefore:
 
 `7Q PRE-DISPATCH DESIGN = COMPLETE`
+`SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
 `FRESH RECEIVER TRANSPORT = UNRESOLVED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
@@ -231,8 +236,8 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> WAIT FOR / DISCOVER GENUINELY FRESH NO-SPEND RECEIVER TRANSPORT
--> AT DISPATCH FREEZE EXACT SOURCE SNAPSHOTS FOR R1/R2
+-> RESOLVE GENUINELY FRESH NO-SPEND RECEIVER TRANSPORT
+-> AT DISPATCH USE CURRENT R1 SOURCE STATE; FOR R2 USE IMMUTABLE SEC PRIMARY + EXACT SNAPSHOT OF LIVE SUPPLEMENT OR SEC-ONLY FALLBACK
 -> RUN ORDINARY vs 7Q ON SAME SOURCE/TASK
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
 -> DELETE / REPAIR / RETAIN 7Q
