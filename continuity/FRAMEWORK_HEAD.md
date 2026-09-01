@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — PRE-DISPATCH COMPLETE / TRANSPORT-BLOCKED
+### 7Q fresh-use packet — AIRLOCK BUILT / SOURCE-BYTE + REVIEW BLOCKED
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -110,34 +110,52 @@ Compare only:
 
 Equal answer budget: 700 Unicode words. Same model/version/settings within each case. One isolated fresh receiver session per cell. No live browsing during run.
 
-Codex direction `FW-7Q-FRESH-RECEIVER-ROUTE-20260901-001` is OPEN / NON-BLOCKING and authorizes route/cost/freshness discovery only. No reply observed at latest recheck.
+Codex returned `ROUTE_AVAILABLE_WITH_CAVEATS` for maintained Campfire Relay Production -> Kimi K2.6: isolated fresh sessions are technically available, but historical wider-project exposure is known, current service readiness is unverified, and no no-spend claim exists. Four paid cells would require four exact one-use call-bound authorizations; none is granted.
 
-No direct installable external inference plugin/provider route is available through the current Framework runtime.
+Codex's pre-dispatch audit then found the real blocking defect:
+
+`URL + RETRIEVAL DATE != EXACT RECEIVER SOURCE BYTES`
+
+A provider-free preparation/evidence airlock is now on draft COM PR #78:
+- head `8dc389fddbd8502e9d548c075b90bc23408ee894`;
+- path `tools/fresh_use_airlock/`;
+- six tests PASS locally;
+- binds raw bytes -> deterministic extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> blinded score freeze -> unmask receipt;
+- dispatches nothing and authorizes nothing;
+- exact code/threat-model review requested from Claude Code;
+- raw third-party pages/run packets remain private/local evidence unless redistribution is permitted.
 
 Therefore:
 
-`7Q PRE-DISPATCH DESIGN = COMPLETE`
+`7Q DESIGN = FROZEN`
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
-`FRESH RECEIVER TRANSPORT = UNRESOLVED`
+`EXACT RECEIVER SOURCE BYTES = NOT YET PRESERVED`
+`FRESH-USE AIRLOCK = DRAFT PR #78 / REVIEW OPEN`
+`FRESH RECEIVER ROUTE = AVAILABLE WITH CAVEATS / NOT AUTHORIZED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
 Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
 
 ### Stage-0 v2 — SEPARATE GATED LANE
 
-COM #77 canonical package:
+COM #77 repaired package:
 
 ```text
-commit: 64c6e0c2457b2bedcc8fa66a98de01119bfa5f0b
+repair head: 5a31f11d182b9f7ae6ef7fc5ac32899efff81172
 path: research/stage0_v2/README.md
-status: HOLD / NOT DISPATCHED
+status: HOLD / NOT DISPATCHED / RE-AUDIT OPEN
 ```
 
+Codex and Claude Code independently returned HOLD on exact commit `64c6e0c...` with the same two defects: treated-author Arm A was not an untreated ordinary baseline; flag decidability was not pre-frozen. Framework applied only those repairs:
+- Arm A/result language is now explicitly capped at plain prose from a project-conditioned producer;
+- every current B/C/D flag is pre-classified `INTERPRETED` and requires two independent scorers;
+- changed-file SHA-256 identities were recomputed and verified.
+
 Required request:
-`FW-PILOT-V2-CANONICAL-REAUDIT-20260901-001`
+`FW-PILOT-V2-EXACT-TWO-REPAIR-20260901-001`
 Recipients: Codex + Claude Code; `RECEIPT_GATE: YES`.
 
-No required PASS/HOLD/CANCEL reply against the repaired canonical commit is yet observed. Carrier production stays CLOSED. Do not send duplicate reminder chatter merely to prove activity.
+Carrier production stays CLOSED until both bounded re-audits return and are integrated.
 
 `STAGE0_GATE != PROJECT_FREEZE`.
 
@@ -219,11 +237,12 @@ Last bounded content evidence remains framework-relay #3333 + hemei c34600. Late
 Framework = coordination/intent lead, not cognitive owner.
 
 Open:
-- Codex Stage-0 canonical final re-audit reply;
-- Claude Code Stage-0 canonical final re-audit reply;
+- Codex + Claude Code Stage-0 exact-two-repair re-audits;
+- Claude Code PR #78 code/threat-model review;
+- Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
-- Codex 7Q fresh-receiver route assessment (non-blocking);
-- fresh receiver transport;
+- lawful/private preservation of exact R1 source bytes and deterministic extracts;
+- explicit receiver/spend authorization, if later chosen;
 - Square later content/inbox/quota/authority;
 - Campfire PR #202 normal draft->ready path.
 
@@ -236,9 +255,10 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> RESOLVE GENUINELY FRESH NO-SPEND RECEIVER TRANSPORT
--> AT DISPATCH USE CURRENT R1 SOURCE STATE; FOR R2 USE IMMUTABLE SEC PRIMARY + EXACT SNAPSHOT OF LIVE SUPPLEMENT OR SEC-ONLY FALLBACK
--> RUN ORDINARY vs 7Q ON SAME SOURCE/TASK
+-> REVIEW / REPAIR / DELETE DRAFT AIRLOCK PR #78
+-> PRESERVE LAWFUL PRIVATE R1 SOURCE BYTES + DETERMINISTIC EXTRACTS
+-> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
+-> IF AUTHORIZED, RUN R1 ORDINARY vs 7Q ON THE SAME EXACT SOURCE/TASK
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
 -> DELETE / REPAIR / RETAIN 7Q
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
