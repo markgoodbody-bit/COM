@@ -211,7 +211,7 @@ class FreshUseAirlockTests(unittest.TestCase):
                 return subprocess.CompletedProcess(
                     argv, whoami_returncode, whoami_stdout, "whoami failed"
                 )
-            if "Set-Acl" in argv[-1]:
+            if "SetAccessControl" in argv[-1]:
                 return subprocess.CompletedProcess(argv, set_returncode, "", "set failed")
             return subprocess.CompletedProcess(
                 argv,
@@ -591,10 +591,14 @@ class FreshUseAirlockTests(unittest.TestCase):
         )
         self.assertEqual(3, len(calls))
         self.assertEqual("whoami.exe", calls[0][0][0])
-        self.assertIn("Set-Acl", calls[1][0][-1])
-        self.assertIn("Get-Acl", calls[2][0][-1])
+        self.assertIn("SetAccessControl", calls[1][0][-1])
+        self.assertIn("GetAccessControl", calls[2][0][-1])
         self.assertEqual(str(self.base), calls[1][1]["FRESHUSE_ACL_PATH"])
         self.assertEqual("1", calls[1][1]["FRESHUSE_ACL_IS_DIRECTORY"])
+
+    def test_windows_backend_avoids_security_module_cmdlets(self):
+        self.assertNotIn("Set-Acl", freshuse._WINDOWS_SET_DACL)
+        self.assertNotIn("Get-Acl", freshuse._WINDOWS_READ_DACL)
 
     def test_native_windows_private_storage_verifies_file_dacl(self):
         target = self.base / "private.json"
@@ -625,8 +629,8 @@ class FreshUseAirlockTests(unittest.TestCase):
         )
         self.assertEqual(2, len(calls))
         self.assertEqual("whoami.exe", calls[0][0][0])
-        self.assertNotIn("Set-Acl", calls[1][0][-1])
-        self.assertIn("Get-Acl", calls[1][0][-1])
+        self.assertNotIn("SetAccessControl", calls[1][0][-1])
+        self.assertIn("GetAccessControl", calls[1][0][-1])
 
     def test_native_windows_verify_only_rejects_broadened_acl_without_repair(self):
         runner, _calls = self._windows_runner()
@@ -647,7 +651,7 @@ class FreshUseAirlockTests(unittest.TestCase):
                 self.base, 0o700, platform_name="nt", windows_runner=runner
             )
         self.assertEqual(2, len(calls))
-        self.assertTrue(all("Set-Acl" not in argv[-1] for argv, _env in calls))
+        self.assertTrue(all("SetAccessControl" not in argv[-1] for argv, _env in calls))
 
     def test_native_windows_private_storage_rejects_identity_failures(self):
         cases = (

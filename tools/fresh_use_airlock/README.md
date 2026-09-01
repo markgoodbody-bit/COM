@@ -31,7 +31,9 @@ No Python packages or network access are used. POSIX hosts verify exact `0700`
 directory and `0600` file modes. Native Windows uses built-in `whoami.exe` plus
 Windows PowerShell/.NET ACL facilities. It resolves the current account to one
 unambiguous SID, installs a protected DACL, and then independently reads the ACL
-back. The read-back must show the current user as owner and exactly three
+back. Both operations use the direct .NET directory/file access-control APIs;
+they do not depend on the `Set-Acl` or `Get-Acl` module cmdlets. The read-back
+must show the current user as owner and exactly three
 explicit `Allow FullControl` trustees: the current user, Local System, and the
 built-in Administrators group. Inheritance, duplicate/missing/unexpected
 trustees, deny rules, wrong rights or propagation, malformed output, unavailable

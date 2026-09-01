@@ -36,9 +36,10 @@ Claude Code's threat-model review also produced bounded repairs:
   frozen line selection in one replayable extraction recipe;
 - native Windows now has a fail-closed DACL backend: current identity is
   resolved by SID, a protected current-user/System/Administrators ACL is
-  installed with built-in PowerShell/.NET facilities, and an independent ACL
-  read-back must exactly match owner, trustee, allow/rights, inheritance and
-  propagation expectations;
+  installed with direct .NET directory/file access-control APIs rather than
+  `Set-Acl`/`Get-Acl` module cmdlets, and an independent ACL read-back must
+  exactly match owner, trustee, allow/rights, inheritance and propagation
+  expectations;
 - receipts classify tool-bound facts separately from operator attestations;
 - the output budget is explicitly English-scoped and ZIP creation uses
   exclusive file creation.

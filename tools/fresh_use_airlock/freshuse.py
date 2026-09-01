@@ -170,13 +170,23 @@ foreach ($sidText in @($userSidText, 'S-1-5-18', 'S-1-5-32-544')) {
     )
     [void]$security.AddAccessRule($rule)
 }
-Set-Acl -LiteralPath $path -AclObject $security
+if ($isDirectory) {
+    [System.IO.Directory]::SetAccessControl($path, $security)
+} else {
+    [System.IO.File]::SetAccessControl($path, $security)
+}
 """.strip()
 
 
 _WINDOWS_READ_DACL = r"""
 $ErrorActionPreference = 'Stop'
-$acl = Get-Acl -LiteralPath $env:FRESHUSE_ACL_PATH
+$path = $env:FRESHUSE_ACL_PATH
+$isDirectory = $env:FRESHUSE_ACL_IS_DIRECTORY -eq '1'
+$acl = if ($isDirectory) {
+    [System.IO.Directory]::GetAccessControl($path)
+} else {
+    [System.IO.File]::GetAccessControl($path)
+}
 $rules = @($acl.GetAccessRules($true, $true, [System.Security.Principal.SecurityIdentifier]) | ForEach-Object {
     [ordered]@{
         sid = $_.IdentityReference.Value
