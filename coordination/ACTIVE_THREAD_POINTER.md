@@ -18,7 +18,7 @@ Current differentiated work objects:
   - exact arm prompts, case factsets/deltas, questions, evaluator rule and SHA-256 identities are committed;
   - Codex final pre-production HOLD `CX-PILOT-V2-FINAL-PREPRODUCTION-AUDIT-20260901-001` identified four freeze defects; the canonical commit addresses all four plus owner-information parity;
   - carrier production stays CLOSED until Codex + Claude Code audit the exact committed package and Framework integrates PASS/HOLD/CANCEL returns.
-- `planning/FUTURE_PLAN_REVIEW_20260901.md` at the same `64c6e0c...` commit — working orientation, not canon/release plan. It keeps Stage-0 bounded and returns the project to the heterogeneous middle-out harness after the gate/result rather than letting the experiment become project centre.
+- `planning/FUTURE_PLAN_REVIEW_20260901.md` — current reviewed version at COM commit `2fbbb1f71084c225c2318be9b5efa1fc7eefad71`; working orientation, not canon/release plan. It uses a two-speed model: Stage-0 gates only its own production while unrelated world-learning continues; it adds project-level success/failure tests, positive-construction and emerging-AI/co-development lanes.
 - `research/MIDDLE_OUT_RESEARCH_SCAFFOLD_20260901.md` and `research/MIDDLE_OUT_TRANSFER_HARNESS_20260901.md` remain non-canonical research objects. Their purpose is wider world learning/breakage across heterogeneous entities, not TRACE/ME validation.
 - COM draft PR #75 remains frozen/non-canonical; do not enlarge it by momentum.
 - COM issue #74 remains the open-horizon/world-learning surface. Current architectural posture is `discover, do not declare` any cross-boundary mechanism that heterogeneous human/AI/domain systems actually need.
