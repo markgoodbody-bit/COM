@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "pilot_id": "7Q-FRESH-USE-20260901-RUN001",
+  "pilot_id": "FRESH-USE-20260901-RUN001",
   "source_com_head": "7810398ecdecc911d546fdb0c7862ded788d524c",
   "com_repo": "../../COM-live",
   "spec": {

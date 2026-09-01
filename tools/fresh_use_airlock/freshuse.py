@@ -275,6 +275,17 @@ def extract_source(raw: bytes, recipe: dict[str, Any], context: str) -> bytes:
         if not result.strip():
             raise AirlockError(f"{context} HTML extraction produced no visible text")
         return result
+    if mode == "html_visible_text_line_ranges_v1":
+        if set(recipe) != {"mode", "ranges"}:
+            raise AirlockError(
+                f"{context} html_visible_text_line_ranges_v1 requires only ranges"
+            )
+        visible = extract_source(raw, {"mode": "html_visible_text_v1"}, context)
+        return extract_source(
+            visible,
+            {"mode": "utf8_line_ranges_v1", "ranges": recipe["ranges"]},
+            context,
+        )
     if mode == "utf8_line_ranges_v1":
         if set(recipe) != {"mode", "ranges"}:
             raise AirlockError(f"{context} utf8_line_ranges_v1 requires only ranges")
@@ -582,9 +593,9 @@ def source_receipt(args: argparse.Namespace) -> None:
     if not raw_path.is_file():
         raise AirlockError(f"raw snapshot is not a file: {raw_path}")
     recipe: dict[str, Any] = {"mode": args.mode}
-    if args.mode == "utf8_line_ranges_v1":
+    if args.mode in {"utf8_line_ranges_v1", "html_visible_text_line_ranges_v1"}:
         if not args.ranges:
-            raise AirlockError("--ranges JSON is required for utf8_line_ranges_v1")
+            raise AirlockError(f"--ranges JSON is required for {args.mode}")
         try:
             recipe["ranges"] = json.loads(args.ranges)
         except json.JSONDecodeError as exc:
@@ -957,7 +968,12 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument(
         "--mode",
         required=True,
-        choices=("identity_v1", "html_visible_text_v1", "utf8_line_ranges_v1"),
+        choices=(
+            "identity_v1",
+            "html_visible_text_v1",
+            "utf8_line_ranges_v1",
+            "html_visible_text_line_ranges_v1",
+        ),
     )
     p.add_argument("--ranges", help="JSON line ranges, e.g. '[[10,40],[55,80]]'")
     p.add_argument("--output", required=True)

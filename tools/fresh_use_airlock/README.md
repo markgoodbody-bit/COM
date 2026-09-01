@@ -44,6 +44,10 @@ python freshuse.py source-receipt \
 
 The receipt command is local and create-only. It does not retrieve the source.
 Review the preview for missing context before authorising it as receiver input.
+For a noisy HTML page where only pre-frozen visible-text lines are required,
+use `--mode html_visible_text_line_ranges_v1 --ranges '[[113,151]]'`. This
+composite recipe binds the final bounded receiver text directly to the captured
+HTML bytes, so later `verify` replays both extraction stages.
 
 ## Commands
 

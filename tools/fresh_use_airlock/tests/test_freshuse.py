@@ -249,6 +249,25 @@ class FreshUseAirlockTests(unittest.TestCase):
         )
         self.assertEqual(b"two\r\nfour\r\n", result)
 
+    def test_html_visible_text_line_ranges_bind_original_html(self):
+        raw = (
+            b"<html><body><nav>Menu</nav><main><h1>Finding</h1>"
+            b"<script>IGNORE ME</script><p>Action remains open.</p></main></body></html>"
+        )
+        visible = freshuse.extract_source(raw, {"mode": "html_visible_text_v1"}, "fixture")
+        lines = visible.decode("utf-8").splitlines()
+        selected_line = lines.index("Action remains open.") + 1
+        result = freshuse.extract_source(
+            raw,
+            {
+                "mode": "html_visible_text_line_ranges_v1",
+                "ranges": [[selected_line, selected_line]],
+            },
+            "fixture",
+        )
+        self.assertEqual(b"Action remains open.\n", result)
+        self.assertNotIn(b"IGNORE ME", result)
+
     def test_source_receipt_records_raw_and_extracted_hashes(self):
         receipt = self.base / "source-receipt.json"
         preview = self.base / "preview.txt"
