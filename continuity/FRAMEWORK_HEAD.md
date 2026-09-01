@@ -30,7 +30,7 @@ Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable s
 
 Cross-case synthesis:
 - `research/MIDDLE_OUT_CROSS_CASE_SYNTHESIS_20260901.md`
-- commit `afe5427cb1f678edaf509519819811e159b67f90`
+- commit `afe5427cb1f678edaf509519819811e159b67f90`.
 
 Verdict:
 
@@ -68,35 +68,55 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use protocol — ACTIVE EXECUTION EDGE
+### 7Q fresh-use packet — PRE-DISPATCH COMPLETE / TRANSPORT-BLOCKED
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
 - commit `9ce803bf6be1b717d963d5a2e9ed6e74c808f7a5`.
 
-Compare:
+Fresh external case manifests:
+
+R1 — Wickford rail / hot-weather track risk
+- `research/fresh_use/CASE_R1_WICKFORD_RAIL_20260901.md`
+- commit `022f74e8668352fa88ae743950a9098c9993129b`.
+
+R2 — Boston Scientific cyber / operations disruption
+- `research/fresh_use/CASE_R2_BOSTON_SCIENTIFIC_CYBER_20260901.md`
+- commit `555ff65cbf89e7b5cda1c7dda1f924331862a9a6`.
+
+Exact receiver prompts:
+- `research/fresh_use/RECEIVER_PROMPTS_20260901.md`
+- commit `7a3230316ece7c5f2c2c72fe6583b154309ad271`.
+
+Evaluator-only pre-registered notes:
+- R1 `research/fresh_use/EVALUATOR_NOTE_R1_WICKFORD_20260901.md`
+  commit `1012bfdf6d6914e4e4a465c1f0321de504d24b7c`;
+- R2 `research/fresh_use/EVALUATOR_NOTE_R2_BOSTON_SCIENTIFIC_20260901.md`
+  commit `ec4ce1836c08c34c38c02bf59ed88b4ddb9c1863`.
+
+Neutral run manifest:
+- `research/fresh_use/RUN_MANIFEST_TEMPLATE_20260901.md`
+- commit `8cacf9539b71c7c79452cf116a30df69c5b788e3`.
+
+Compare only:
 - competent ordinary/domain reasoning;
-- same source/task + frozen 7Q.
+- same exact source/task + frozen 7Q.
 
-Measure action/sequence/evidence/owner/correction delta separately from burden. Allow ordinary-better/no-value/7Q-error/inconclusive results.
+Equal answer budget: 700 Unicode words. Same model/version/settings within each case. One isolated fresh receiver session per cell. No live browsing during run.
 
-Fresh external source manifests now frozen:
+These case manifests preserve external source identities + neutral tasks; they are NOT Framework fact tables or answer keys. At dispatch time preserve exact source snapshots/identities. If a mutable source has changed, create a new case version or transparently re-freeze; do not silently substitute.
 
-1. R1 — Wickford rail / hot-weather track risk
-   - `research/fresh_use/CASE_R1_WICKFORD_RAIL_20260901.md`
-   - source-manifest commit `022f74e8668352fa88ae743950a9098c9993129b`.
-   - RAIB active investigation + current Network Rail heat/track owner material.
+Codex direction `FW-7Q-FRESH-RECEIVER-ROUTE-20260901-001` is OPEN / NON-BLOCKING and authorizes route/cost/freshness discovery only. No reply observed yet.
 
-2. R2 — Boston Scientific cyber / operations disruption
-   - `research/fresh_use/CASE_R2_BOSTON_SCIENTIFIC_CYBER_20260901.md`
-   - source-manifest commit `555ff65cbf89e7b5cda1c7dda1f924331862a9a6`.
-   - SEC 8-K + company incident update source identities.
+No direct installable external inference plugin/provider route is available through the current Framework runtime.
 
-These are source manifests, NOT project-authored fact tables or answer keys. Preserve frozen external source snapshots before receiver dispatch; do not silently substitute later investigation/restoration updates.
+Therefore:
 
-Codex direction `FW-7Q-FRESH-RECEIVER-ROUTE-20260901-001` is OPEN / NON-BLOCKING. It authorizes route/cost/freshness discovery only, no model call or spend.
+`7Q PRE-DISPATCH DESIGN = COMPLETE`
+`FRESH RECEIVER TRANSPORT = UNRESOLVED`
+`PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
-No direct installable external inference plugin was found from this runtime. Fresh receiver transport remains unresolved.
+Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
 
 ### Stage-0 v2 — SEPARATE GATED LANE
 
@@ -202,18 +222,23 @@ Open:
 - Square later content/inbox/quota/authority;
 - Campfire PR #202 normal draft->ready path.
 
+Latest FULL COMSYNC receipt:
+`FW-FULL-COMSYNC-20260901-004` in COM #76.
+
 ## Next executable order
 
 ```text
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> PRESERVE EXACT EXTERNAL SOURCE SNAPSHOTS FOR R1/R2
--> RESOLVE GENUINELY FRESH / NO-SPEND RECEIVER TRANSPORT
+-> WAIT FOR / DISCOVER GENUINELY FRESH NO-SPEND RECEIVER TRANSPORT
+-> AT DISPATCH FREEZE EXACT SOURCE SNAPSHOTS FOR R1/R2
 -> RUN ORDINARY vs 7Q ON SAME SOURCE/TASK
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
 -> DELETE / REPAIR / RETAIN 7Q
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```
+
+Do not manufacture execution while transport is unresolved.
 
 `7Q IS A DOOR, NOT A DESTINATION.`
