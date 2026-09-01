@@ -35,6 +35,15 @@ Retrieved/verified by Framework on 2026-09-01 Europe/London.
    - published 2026-08-24;
    - current-season owner material on prolonged hot/dry weather, ground shrinkage, uneven track, reduced timetables and closures.
 
+## Freeze witness — 2026-09-01
+
+Fresh public re-read on 2026-09-01 confirmed:
+- the Wickford RAIB page still identifies the event as an active investigation and lists track status/maintenance, hot-weather mitigation, train performance and management factors as investigation questions;
+- the RAIB current-investigations register still lists `14 08 2026 — Derailment of a passenger train at Wickford — Investigating`;
+- Network Rail current owner material still describes heat-related rail expansion/buckling, preventive monitoring/preparation and local speed restriction/closure responses.
+
+This is a currentness witness, not a copied snapshot of third-party pages. Before receiver dispatch, preserve the exact supplied source bytes if the transport permits it; otherwise record the retrieval time and re-check that these load-bearing source states have not moved. If RAIB has published findings or changed the case status, do not silently run this version as though the investigation were still at the same stage.
+
 These source identities are the experiment object. Do not silently replace them with later RAIB findings if the case is dispatched after the investigation advances. Either preserve the frozen source snapshots or transparently re-freeze as a new case version.
 
 ## Neutral task — identical for both arms
