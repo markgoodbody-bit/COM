@@ -176,8 +176,7 @@ production line: v0.18.34
 
 Active draft lanes:
 - PR #196 head `525b667890a461f9681f52b0c508d629bad43754` — read-front-door / Evidence Library / neutral profile boundary;
-- PR #202 head `08e007cf6664a5c509e6d8b5adcda621f89eccb8` — stale-worker recovery; draft/open;
-- PR #204 head `19ddfaffdfc6a7bc6b1965773714eaceb883b6b3` — PowerShell security-module repair; hosted checks green; installed speech recovery observed earlier; reboot/all-launcher persistence not established;
+- PR #202 head `f1c6fabea733472432793ff61f992b1b0a5ff322` — consolidated stale-worker recovery + former PR #204 PowerShell security-module repair; draft/open/mergeable. Disposable Windows recovery acceptance passed on the stale-worker head; security-module exact hosted checks were green and installed speech recovery was observed earlier. PR #204 is merged into this branch. Normal merge into the Simple-v1 parent is tool-blocked because the connector's mark-ready action fails and GitHub refuses draft merge; do not bypass the draft gate by force-moving the parent ref. Reboot/all-launcher persistence remains unestablished;
 - PR #203 head `fcb757f5c8c24cea25f256bcebf186648ace9168` — simplified human surface/Library wording; open/unactivated.
 
 Do not merge/release/activate merely because branches are green. Human/release gates and actual operator need remain.
