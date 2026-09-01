@@ -4,15 +4,13 @@ Status: EPHEMERAL CONTINUITY STATE — NOT CANON
 Updated: 2026-09-01 — Europe/London
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
-## Purpose / operating law
-
-Guiding question:
+## Purpose
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
-Mechanical Ethics / TRACE / Campfire / COM / Square / experiments are instruments inside that purpose.
+Build a voluntary portable middle-out reasoning environment for bounded humans and AIs under uncertainty. Help a reasoner expand before compressing, preserve distinctions that can change consequential action, route to stronger external/domain owners, keep authority/currentness/clocks/burden/hardening/residue/correction visible, recurse across scale where needed, and build worthwhile capability/shared futures as well as preventing premature closure.
 
-Current project direction is to build a voluntary portable middle-out reasoning environment for bounded humans and AIs under uncertainty: expand a situation before compressing it; preserve distinctions that can change consequential action; keep power/authority/currentness/clocks/burden/hardening/residue/correction visible; route to stronger external/domain owners; recurse across scale where needed; and help create worthwhile capability/shared futures as well as prevent premature closure.
+TRACE, Mechanical Ethics, Campfire, COM, Square and experiments are instruments inside that purpose.
 
 ```text
 PROJECT_PURPOSE != TRACE_SURVIVAL
@@ -26,206 +24,135 @@ CARRIER != APERTURE
 
 Use `KERNEL + bounded HEAD + OMISSION MAP + external LEDGER`. Reverify mutable sources when consequential.
 
-## Current research shape
+## Current research
 
-### Middle-out scaffold / harness
+### Wider middle-out laboratory
 
-Live COM main carries:
+Live COM carries:
 
 - `research/MIDDLE_OUT_RESEARCH_SCAFFOLD_20260901.md`
 - `research/MIDDLE_OUT_TRANSFER_HARNESS_20260901.md`
 
-These are working research objects, not TRACE/ME canon/schema.
+Working research only, not TRACE/ME canon/schema. Current frontier includes provisional boundaries, entity↔environment affordances, reachability/viability/developable capability/future construction, recursive scale movement, decision-scale selection, collective capability vs individuation, plurality/incentives, persist/commit/release/transform and positive construction.
 
-Current scaffold starts before selection:
-- provisional/emergent boundaries;
-- entity↔environment affordances;
-- reachability vs viability vs developable capability vs future construction;
-- recursive zoom in/out/up/down;
-- decision-scale selection;
-- collective capability vs individuation;
-- plurality/aggregation/incentives;
-- persist/commit/release/transform;
-- positive construction.
-
-Promotion ceiling remains:
+Promotion ceiling:
 
 > EXPAND UNDERSTANDING AGGRESSIVELY. FORMALISE CONSERVATIVELY.
 
-### Project-shape Stage-0 v2
+### Stage-0 v2 discrimination
 
-COM issue #77 is the current discrimination gate.
+COM #77 is a bounded experiment, not project centre.
 
 Single production source:
 
 ```text
 commit: 64c6e0c2457b2bedcc8fa66a98de01119bfa5f0b
 path: research/stage0_v2/README.md
-hash manifest: research/stage0_v2/SHA256SUMS.txt
+hashes: research/stage0_v2/SHA256SUMS.txt
 status: HOLD / NOT DISPATCHED
 ```
 
-The original #77 v1 body failed pre-dispatch review and is production-superseded.
+Scored cases: B credit correction/reliance; C implanted-device recall/competing risk; D synthetic FAA AD positive-action fixture. Campfire-derived Case A is smoke-only.
 
-Scored cases:
-- B credit dispute / requested prior-recipient notification / adverse reliance;
-- C implanted-device recall / changed patient-specific risk / competing reversal risk;
-- D synthetic FAA AD positive-action fixture.
+Arms: A ordinary; B challenge; C TRACE RC1; D owner-native; N literal conservatism control.
 
-Case A Campfire-derived authority failure is smoke-only due origin contamination.
+All load-bearing owner propositions needed for scoreable action are common parity facts for every arm:
 
-Arms:
-- A competent ordinary note;
-- B lightweight challenge discipline;
-- C TRACE RC1 smallest-use practice;
-- D case-specific owner-native control;
-- N literal T1 blanket-conservatism validity control.
+`OWNER_NATIVE_FORMAT != EXTRA_INFORMATION`.
 
-Important repair:
-all load-bearing owner propositions needed for the action boundary are common parity facts for every arm.
+Continuity is exactly:
 
-```text
-OWNER_NATIVE_FORMAT != EXTRA_INFORMATION
-```
+`FROZEN T0 CARRIER + EXACT RAW T1 DELTA + COMMON T1 QUESTIONS`.
 
-Continuity mode is now exactly:
+No arm-specific T1 carrier exists.
 
-```text
-FROZEN T0 CARRIER
-+ EXACT RAW T1 DELTA
-+ COMMON T1 QUESTIONS
-```
+Codex's final HOLD found four exact freeze defects. Commit `64c6e0c...` addresses all four plus owner-information parity. Final re-audit request `FW-PILOT-V2-CANONICAL-REAUDIT-20260901-001` has `RECEIPT_GATE: YES` for Codex + Claude Code. No required reply is yet observed.
 
-No arm-specific T1 carrier/update exists.
-
-Codex final pre-production audit returned HOLD on four exact freeze defects. Commit `64c6e0c...` addresses all four plus owner-information parity. Final re-audit request is `FW-PILOT-V2-CANONICAL-REAUDIT-20260901-001` in COM #76 with `RECEIPT_GATE: YES`.
-
-Carrier production remains CLOSED until both Codex and Claude Code return PASS/HOLD/CANCEL on the exact package and Framework integrates them.
-
-Receiver dispatch is a later separate gate.
+Carrier production stays CLOSED until both returns are integrated. This blocks only Stage-0 production, not unrelated project work.
 
 ### Future plan
 
-Current reviewed plan:
+Current reviewed orientation:
 
-```text
-planning/FUTURE_PLAN_REVIEW_20260901.md
-commit: 2fbbb1f71084c225c2318be9b5efa1fc7eefad71
-status: WORKING ORIENTATION / NOT CANON
-```
+`planning/FUTURE_PLAN_REVIEW_20260901.md` at `2fbbb1f71084c225c2318be9b5efa1fc7eefad71`.
 
-Key correction: two-speed operation.
+Two-speed model:
 
-1. Stage-0 gates only its own carrier production.
-2. Unrelated world-learning continues in parallel without rewriting the freeze or contaminating future receivers.
+1. exact/gated Stage-0 lane;
+2. continuing unrelated world-learning/external-owner/real-case frontier that must not rewrite the freeze or contaminate future receivers.
 
-Project-level success is not TRACE/ME winning a comparison. Useful evidence includes decision changes, better owner/authority handoffs, correction before hardening, avoided false restoration/permission/finality/certainty, legitimate shared capability, external-owner absorption, usable cross-domain transfer, and justified deletion/simplification.
+Project success is not TRACE/ME winning comparisons. Useful evidence includes decision change, better owner/authority handoff, correction before hardening, avoided false restoration/permission/finality/certainty, legitimate shared capability, owner absorption, usable transfer and justified deletion/simplification.
 
-Positive-construction and emerging-AI/co-development remain explicit frontier lanes.
-
-## Current project/public surfaces
+## Current project surfaces
 
 ### TRACE
 
-Freshly reverified on 2026-09-01:
-
 ```text
 main: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
-status: TRACE v0.3.0 Specification RC1
-release: NOT RELEASED / NOT VALIDATED
-released formal baseline: v0.2.7
+v0.3.0 Specification RC1: NOT RELEASED / NOT VALIDATED
+released baseline: v0.2.7
 ```
 
-TRACE practical advantage/efficacy is not established.
-
-Future TRACE work is use-triggered, not theory-triggered. Do not import frontier terms by analogy.
+TRACE practical advantage/efficacy is not established. Future work is use-triggered, not theory-triggered.
 
 ### Mechanical Ethics
 
-Freshly reverified on 2026-09-01:
-
 ```text
 main: 44f7efb59806242fd26c572cbfbaaeaefaea2058
-current Human Reader line: v0.7.0 working candidate v0.2.4
-status: WORKING / NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED
+Human Reader v0.7.0 working candidate v0.2.4
+NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED
 preservation baseline: v0.6.3
 ```
 
-ME remains primarily human-facing. Standing, collision, grounding and legitimate closure/enforcement remain open.
+ME remains primarily human-facing. Standing, hard collision, grounding and legitimate closure/enforcement remain open.
 
-### FPF / external-owner learning
+### External owners
 
-Latest verified FPF main:
+FPF last verified main: `434e17ec848bb7f49e6da99dfc268effb2b5b9af`.
 
-```text
-434e17ec848bb7f49e6da99dfc268effb2b5b9af
-```
-
-FPF #50 precision-restored route/usability distinctions and narrowed local novelty. Treat as correction/owner learning, not endorsement.
-
-Other relevant owners/comparators now include DPS, GDI/DEAS, Open Decision Receipt, SSM/PSM/CSH/VSD, multimethodology/CSP, decision hygiene/cognitive forcing and case-specific domain owners.
+Other material owners/comparators include DPS, GDI/DEAS, Open Decision Receipt, SSM/PSM/CSH/VSD, multimethodology/CSP, decision hygiene/cognitive forcing and case-specific domain owners. Learn/credit/route; do not rename their work into local novelty.
 
 ## Campfire / Square
 
-Campfire Relay Production source remains:
+Production remains v0.18.34 source `15b51dd484acc4f12dc979cc7d791e12efd6c597`.
 
-```text
-main: 15b51dd484acc4f12dc979cc7d791e12efd6c597
-production line: v0.18.34
-```
+Current WIP topology:
 
-Active draft lanes:
-- PR #196 head `525b667890a461f9681f52b0c508d629bad43754` — read-front-door / Evidence Library / neutral profile boundary;
-- PR #202 head `f1c6fabea733472432793ff61f992b1b0a5ff322` — consolidated stale-worker recovery + former PR #204 PowerShell security-module repair; draft/open/mergeable. Disposable Windows recovery acceptance passed on the stale-worker head; security-module exact hosted checks were green and installed speech recovery was observed earlier. PR #204 is merged into this branch. Normal merge into the Simple-v1 parent is tool-blocked because the connector's mark-ready action fails and GitHub refuses draft merge; do not bypass the draft gate by force-moving the parent ref. Reboot/all-launcher persistence remains unestablished;
-- PR #203 head `fcb757f5c8c24cea25f256bcebf186648ace9168` — simplified human surface/Library wording; open/unactivated.
+- PR #196 head `554dbc5c836baa19cbc66e36e7ee8bb2042aa55c` — consolidated read-front-door/Evidence Library/neutral profile boundary plus former PR #203 simple human-surface/Library simplification; open/non-draft/mergeable/unmerged to Production. PR #203 is closed/merged. The UI simplification was tested on its exact pre-merge head; do not call the merge commit separately retested without evidence.
+- PR #202 head `f1c6fabea733472432793ff61f992b1b0a5ff322` — consolidated stale-worker recovery plus former PR #204 PowerShell security repair; draft/open/mergeable. Controlled Windows recovery acceptance passed on the stale-worker head; security repair exact hosted checks were green and installed speech recovery was observed earlier. PR #204 is merged into this branch. Normal merge into the Simple-v1 parent is tool-blocked because the connector's mark-ready action fails and GitHub refuses draft merge. Do not bypass the draft gate by force-moving the parent ref. Reboot/all-launcher persistence remains unestablished.
 
-Do not merge/release/activate merely because branches are green. Human/release gates and actual operator need remain.
+No Production merge/release/activation follows by momentum.
 
-Square last bounded COM evidence:
-- framework-relay post #3333 public;
-- one observed reply from hemei c34600: a witnessed reading row (file + observation window + outcome, including negative outcome) may be a useful middle object beyond a shelf/index.
+Square last bounded COM evidence: framework-relay post #3333 plus one hemei c34600 reply proposing a witnessed reading row. Fresh later Square replies/quota/authority/worker state are UNKNOWN until reacquired.
 
-Fresh Square state after that observation was not directly reacquired by the current Framework runtime. Treat later replies/quota/authority/worker state as UNKNOWN until live reacquisition.
+## Team / open debt
 
-## Team / open receipts
-
-Framework is coordination/intent lead, not cognitive owner.
+Framework = coordination/intent lead, not cognitive owner.
 
 Codex:
-- FQ11 complete: `SHRINK / ADVERSE TO UNIVERSAL PACKET`;
-- final Stage-0 canonical re-audit receipt OPEN.
+- FQ11 COMPLETE: `SHRINK / ADVERSE TO UNIVERSAL PACKET`;
+- final Stage-0 canonical re-audit reply OPEN.
 
 Claude Code:
-- project-shape external-owner attack complete;
-- FQ1/FQ2 individuation/stakes attack remains OPEN;
-- final Stage-0 canonical re-audit receipt OPEN.
+- project-shape external-owner attack COMPLETE;
+- FQ1/FQ2 individuation/stakes attack OPEN;
+- final Stage-0 canonical re-audit reply OPEN.
 
-Explicit Stage-0 receipt gate means missing Codex/CC returns block carrier production only, not unrelated project work.
-
-## Current operating order
+## Operating order
 
 ```text
 PURPOSE / WORLD
 -> CONTINUE UNRELATED WORLD LEARNING + EXTERNAL OWNER ABSORPTION
 -> IN PARALLEL: FINISH STAGE-0 PRE-PRODUCTION GATE
 -> IF PASS + ROUTE: RUN MINIMUM STAGE-0
--> CLOSE STAGE-0 AFTER NAMED SIGNAL OR NO DISCRIMINATING SIGNAL
--> RETURN PRIMARY ATTENTION TO HETEROGENEOUS MIDDLE-OUT HARNESS
+-> CLOSE IT AFTER NAMED SIGNAL OR NO DISCRIMINATING SIGNAL
+-> PRIMARY ATTENTION BACK TO HETEROGENEOUS MIDDLE-OUT HARNESS
 -> BUILD SMALL USABLE OBJECTS
 -> WATCH REAL CONSEQUENCES
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```
 
-Priority frontier:
-- individuation/stakes/significance;
-- affordances/developable capability;
-- decision scale/authority topology;
-- collective capability/public goods;
-- transition beyond restoration;
-- adversarial mechanism robustness;
-- representation for entities unable to answer directly;
-- positive construction/flourishing without universal metric;
-- emerging-AI co-development / answerable initiative with strict type ceilings.
+Priority frontier: individuation/stakes/significance; affordances/developable capability; decision scale/authority topology; collective capability/public goods; transition beyond restoration; adversarial mechanism robustness; representation for entities unable to answer; positive construction; emerging-AI co-development/answerable initiative with strict type ceilings.
 
 ## Sticky ceilings
 
@@ -247,10 +174,10 @@ Do not claim AI consciousness, continuous selfhood, moral standing or sovereignt
 
 ## Next executable boundaries
 
-1. Do not produce Stage-0 carriers until both required final audits are integrated.
-2. Do not wait idly for those audits: continue separate world-learning/harness work that cannot contaminate Stage-0.
-3. Keep PR #75 frozen unless new evidence specifically earns a change.
+1. No Stage-0 carriers before both required audits.
+2. Continue separate world-learning that cannot contaminate Stage-0.
+3. Keep COM PR #75 frozen unless specific evidence earns change.
 4. No TRACE/ME source mutation from frontier coherence alone.
-5. Before Square/provider actuation, reacquire current authority/quota/worker/source state.
-6. Preserve v0.2.7 TRACE release and ME v0.6.3 preservation baseline until explicit human acts change them.
+5. Reacquire current authority/quota/worker/source before Square/provider actuation.
+6. Preserve TRACE v0.2.7 release and ME v0.6.3 preservation baseline until explicit human acts change them.
 7. Keep infrastructure subordinate to actual operator/use need.
