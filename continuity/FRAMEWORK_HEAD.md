@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — R1 RUN009 DRY / NATIVE-WINDOWS REPRODUCTION GATED
+### 7Q fresh-use packet — R1 RUN009 DRY / EXACT LAUNCH GATE CLEARED
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -123,6 +123,7 @@ A provider-free preparation/evidence airlock is now on draft COM PR #78:
 - binds captured HTML -> deterministic bounded extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> local transition chain -> blinded score -> unmask receipt;
 - dispatches nothing and authorizes nothing;
 - Claude Code returned a second `REPAIR` after native Windows execution showed that the intended fail-closed guard made every preparation path unusable on the operator's platform; the current head adds a protected, independently read-back Windows DACL plus validation-order repair;
+- Codex and Claude Code have now each returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231` and `RUN009`; Claude Code reproduced 32/32 tests on native Windows with one correct POSIX-only skip;
 - raw third-party pages/run packets remain private/local evidence unless redistribution is permitted.
 
 Exact R1 source bytes and deterministic extracts are privately preserved. Receipt-only witness:
@@ -140,8 +141,9 @@ Therefore:
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
 `EXACT R1 RECEIVER SOURCE BYTES = PRIVATELY PRESERVED / HASH-WITNESSED`
 `R1 RUN009 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
-`FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE EXACT-HEAD RETURN OPEN`
-`FRESH RECEIVER ROUTE = AVAILABLE WITH CAVEATS / NOT AUTHORIZED`
+`FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE PASS`
+`MANUAL R1 LAUNCH GATE = CLEARED`
+`NO-SPEND TEMPORARY-CHAT RECEIVER ROUTE = USER-DIRECTED / AUTHENTICATION PENDING / NOT DISPATCHED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
 Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
@@ -248,7 +250,7 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Claude Code PR #78 exact-head / R1 `RUN009` final return; Codex returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
+- browser authentication and exact no-spend Temporary Chat launch of the two neutral R1 cells; both required PR #78 exact-head / `RUN009` receipts are `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
@@ -264,9 +266,9 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> INTEGRATE CODEX EXACT-HEAD/RUN009 + CLAUDE CODE NATIVE-WINDOWS REPRODUCTION
--> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
--> IF AUTHORIZED, RUN R1 ORDINARY vs 7Q ON THE SAME EXACT SOURCE/TASK
+-> COMPLETE USER AUTHENTICATION FOR THE NO-SPEND TEMPORARY-CHAT ROUTE
+-> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
+-> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
 -> DELETE / REPAIR / RETAIN 7Q
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
