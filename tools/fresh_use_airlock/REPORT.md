@@ -35,7 +35,7 @@ Claude Code's threat-model review also produced bounded repairs:
   frozen line selection in one replayable extraction recipe;
 - native Windows now has a fail-closed DACL backend: current identity is
   resolved by SID, a protected current-user/System/Administrators ACL is
-  installed with built-in PowerShell/.NET facilities, and an independent ACL
+  installed with built-in PowerShell/.NET facilities, and a separate ACL
   read-back must exactly match owner, trustee, allow/rights, inheritance and
   propagation expectations;
 - receipts classify tool-bound facts separately from operator attestations;
@@ -100,6 +100,10 @@ privileged built-ins are retained for normal OS operation and recovery. Unknown
 trustees, inherited rules, ambiguous SID resolution, unavailable built-in
 commands, and unverifiable read-back all stop execution. POSIX mode bits retain
 their corresponding root/operator/storage-layer ceiling.
+
+Existing bundles are checked without reapplying permissions. This preserves a
+widened or otherwise changed ACL as a failure signal rather than silently
+restoring the expected rule set before verification.
 
 ## Suggested COM integration
 

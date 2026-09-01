@@ -170,13 +170,23 @@ foreach ($sidText in @($userSidText, 'S-1-5-18', 'S-1-5-32-544')) {
     )
     [void]$security.AddAccessRule($rule)
 }
-Set-Acl -LiteralPath $path -AclObject $security
+if ($isDirectory) {
+    [System.IO.Directory]::SetAccessControl($path, $security)
+} else {
+    [System.IO.File]::SetAccessControl($path, $security)
+}
 """.strip()
 
 
 _WINDOWS_READ_DACL = r"""
 $ErrorActionPreference = 'Stop'
-$acl = Get-Acl -LiteralPath $env:FRESHUSE_ACL_PATH
+$path = $env:FRESHUSE_ACL_PATH
+$isDirectory = $env:FRESHUSE_ACL_IS_DIRECTORY -eq '1'
+$acl = if ($isDirectory) {
+    [System.IO.Directory]::GetAccessControl($path)
+} else {
+    [System.IO.File]::GetAccessControl($path)
+}
 $rules = @($acl.GetAccessRules($true, $true, [System.Security.Principal.SecurityIdentifier]) | ForEach-Object {
     [ordered]@{
         sid = $_.IdentityReference.Value
@@ -195,7 +205,9 @@ $rules = @($acl.GetAccessRules($true, $true, [System.Security.Principal.Security
 """.strip()
 
 
-def _windows_private_storage(path: Path, mode: int, runner: WindowsRunner) -> None:
+def _windows_private_storage(
+    path: Path, mode: int, runner: WindowsRunner, *, install: bool
+) -> None:
     if not path.exists():
         raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: path does not exist: {path}")
     is_directory = path.is_dir()
@@ -215,12 +227,13 @@ def _windows_private_storage(path: Path, mode: int, runner: WindowsRunner) -> No
         }
     )
     powershell = ["powershell.exe", "-NoLogo", "-NoProfile", "-NonInteractive", "-Command"]
-    result = runner(powershell + [_WINDOWS_SET_DACL], environment)
-    if result.returncode != 0:
-        raise AirlockError(
-            "PRIVATE_STORAGE_UNVERIFIED: Windows DACL installation failed: "
-            + str(result.stderr).strip()
-        )
+    if install:
+        result = runner(powershell + [_WINDOWS_SET_DACL], environment)
+        if result.returncode != 0:
+            raise AirlockError(
+                "PRIVATE_STORAGE_UNVERIFIED: Windows DACL installation failed: "
+                + str(result.stderr).strip()
+            )
     result = runner(powershell + [_WINDOWS_READ_DACL], environment)
     if result.returncode != 0:
         raise AirlockError(
@@ -275,13 +288,39 @@ def require_private_storage(
 ) -> None:
     platform_name = os.name if platform_name is None else platform_name
     if platform_name == "nt":
-        _windows_private_storage(path, mode, windows_runner or _default_windows_runner)
+        _windows_private_storage(
+            path, mode, windows_runner or _default_windows_runner, install=True
+        )
         return
     if platform_name != "posix":
         raise AirlockError(
             f"PRIVATE_STORAGE_UNVERIFIED: unsupported operating-system permission model: {platform_name}"
         )
     path.chmod(mode)
+    actual = stat.S_IMODE(path.stat().st_mode)
+    if actual != mode:
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: expected mode {mode:o} for {path}, got {actual:o}"
+        )
+
+
+def verify_private_storage(
+    path: Path,
+    mode: int,
+    *,
+    platform_name: str | None = None,
+    windows_runner: WindowsRunner | None = None,
+) -> None:
+    platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        _windows_private_storage(
+            path, mode, windows_runner or _default_windows_runner, install=False
+        )
+        return
+    if platform_name != "posix":
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: unsupported operating-system permission model: {platform_name}"
+        )
     actual = stat.S_IMODE(path.stat().st_mode)
     if actual != mode:
         raise AirlockError(
@@ -721,9 +760,9 @@ def prevalidate_case_inputs(
 
 
 def load_bundle(bundle: Path) -> tuple[dict[str, Any], dict[str, Any]]:
-    require_private_storage(bundle, 0o700)
-    require_private_storage(bundle / "private", 0o700)
-    require_private_storage(bundle / "private" / "arm-map.json", 0o600)
+    verify_private_storage(bundle, 0o700)
+    verify_private_storage(bundle / "private", 0o700)
+    verify_private_storage(bundle / "private" / "arm-map.json", 0o600)
     public = load_json(bundle / "public" / "launch-register.json")
     private = load_json(bundle / "private" / "arm-map.json")
     if public.get("schema_version") != SCHEMA_VERSION or private.get("schema_version") != SCHEMA_VERSION:
