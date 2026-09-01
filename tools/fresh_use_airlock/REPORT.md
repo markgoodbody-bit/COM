@@ -6,6 +6,15 @@ Built a local, provider-free airlock that converts the frozen 7Q research
 definitions plus preserved external source bytes into mechanically checkable,
 neutrally aliased receiver cells.
 
+A bounded anonymous-text adapter now covers the no-upload path. It converts one
+sealed public cell into a deterministic UTF-8 message with canonical member
+order, explicit byte lengths and SHA-256 hashes, and a detached hash over the
+complete pre-hash message. Its verifier reconstructs every member and requires
+byte equality with the original ZIP. It rejects ambiguous or text-unsafe cell
+inputs and omits ZIP names/metadata and private arm identity. This is only a
+local transport/verification path: it does not dispatch, establish receiver
+freshness, conceal receiver-facing aid presence, score, or unmask.
+
 It closes five preparation/evidence gaps:
 
 1. **Tested object = named object.** Protocol, candidate, prompts, and case

@@ -68,6 +68,34 @@ python freshuse.py prepare --config pilot-config.json --output run-001
 python freshuse.py verify --bundle run-001
 ```
 
+When a voluntary receiver has only a logged-out text box and cannot accept the
+cell ZIP, render exactly one sealed public cell as one UTF-8 message:
+
+```bash
+python anonymous_text_transport.py render \
+  --cell run-001/public/cells/cell-0123456789ab.zip \
+  --output cell-0123456789ab.message.txt
+python anonymous_text_transport.py verify \
+  --message cell-0123456789ab.message.txt \
+  --cell run-001/public/cells/cell-0123456789ab.zip
+```
+
+The message uses the fixed launch sentence with “packet below,” then frames
+`START_HERE.md`, `RUN_INSTRUCTION.md`, `CASE_TASK.md`, optional
+`REASONING_AID.md`, sorted `SOURCES/*`, and `CELL_MANIFEST.json` last. Every
+frame names the member and records its byte length and SHA-256. The final
+detached `message_sha256` covers every preceding byte, from the launch sentence
+through the transport-end delimiter. `verify` reconstructs the framed members,
+checks their hashes and manifest, and compares every byte with the original
+ZIP. Output is deterministic from member bytes and does not carry the ZIP
+filename, ZIP order/metadata, or evaluator-only arm mapping.
+
+The adapter rejects duplicate, unsafe, unexpected, non-UTF-8, oversized, or
+delimiter-colliding members and writes create-only output. It is transport, not
+authentication: a logged-out session is not evidence of freshness, and the
+presence or absence of the receiver-facing reasoning aid remains visible to
+that receiver. The adapter does not dispatch, score, unmask, or edit a cell.
+
 Only files under `run-001/public/cells/` are receiver attachments. Never upload
 `private/arm-map.json`; it contains the evaluator-only arm mapping.
 
