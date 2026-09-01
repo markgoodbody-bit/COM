@@ -4,7 +4,8 @@ Status: SMALL USABLE RESEARCH CANDIDATE / NOT CANON / NOT TRACE OR ME / NOT DECI
 
 Derived from:
 - six-case transfer harness;
-- `research/MIDDLE_OUT_CROSS_CASE_SYNTHESIS_20260901.md`.
+- `research/MIDDLE_OUT_CROSS_CASE_SYNTHESIS_20260901.md`;
+- six-case action-preservation backcheck `research/MIDDLE_OUT_ENTRY_7Q_BACKCHECK_20260901.md`.
 
 Purpose:
 
@@ -63,6 +64,7 @@ What clocks, lead times, path dependencies and lock-ins matter?
 - What changes if we act now?
 - What changes if we wait?
 - What future capability/dependence/incentive/evidence environment does each action construct?
+- If materially strategic actors can adapt to the rule/measure, what behavior does it incentivize or make gameable?
 - Is the latest safe decision time earlier than visible failure because preparation takes time?
 
 ```text
@@ -70,7 +72,7 @@ DELAY CHANGES THE WORLD
 FAILURE THRESHOLD != LATEST SAFE DECISION TIME
 ```
 
-Use these only where time/lead-time is actually material.
+Use these only where time, lead-time or strategic adaptation is actually material.
 
 ## Q5 — WHAT OWNER / EVIDENCE DO WE NEED?
 
@@ -162,9 +164,15 @@ HORIZON COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY COGNITION
 - current AI operational continuity != intrinsic viability;
 - artifact/successor continuity != continuous identity;
 - collective capability != new individual;
-- downstream/accountability/recognition language is governance-typed, not universal relationship vocabulary;
+- downward-accountability/external-recognition language is governance-typed, not universal relationship vocabulary;
 - compensation/correction != restored life/place/opportunity;
 - present capability != mandate/standing/sovereignty.
+
+## Backcheck ceiling
+
+The six-case backcheck found no action-critical deletion after the strategic-adaptation trigger above was made explicit.
+
+That is only a representation/action-preservation result. It is not fresh-reader evidence, burden evidence, independent transfer evidence or validation.
 
 ## Success / failure test
 
