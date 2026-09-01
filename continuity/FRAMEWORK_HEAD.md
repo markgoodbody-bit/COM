@@ -144,7 +144,7 @@ Therefore:
 `FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE PASS`
 `MANUAL R1 LAUNCH GATE = CLEARED`
 `REMOTE TEMPORARY-CHAT ROUTE = USER-AUTHORISED BOUNDED RETRY SUCCEEDED / TEMPORARY + UNPERSONALIZED VISIBLE / NO NEW GOOGLE CHALLENGE`
-`REMOTE ACCOUNT SAFETY = NO AUTH LOOP / CLOSE SESSION AFTER RUN OR HOLD / USER MAY REVOKE CLOUD MACOS SESSION AGAIN`
+`REMOTE ACCOUNT SAFETY = NO AUTH LOOP / ALL CLOUD BROWSER TABS CLOSED AFTER R1 / USER MAY REVOKE CLOUD MACOS SESSION AGAIN`
 `ZIP UPLOAD = FAILED BEFORE DISPATCH / RETIRED FOR THIS RUN`
 `LONG INLINE COMPOSER = EXACT THROUGH 10,000 CHARACTERS THEN NORMALIZED / HOLD / RETIRED FOR THIS RUN`
 `HASHED TEXT ATTACHMENT = BOTH NEUTRAL CELLS DISPATCHED ONCE / SEPARATE TEMPORARY + UNPERSONALIZED CHATS / EXACT LAUNCH TEXT`
@@ -266,7 +266,7 @@ Framework = coordination/intent lead, not cognitive owner.
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
 - R2 packet preparation and two first-attempt launches under the now-proven hashed text-attachment route; do not reuse R1 chats or infer a signal from R1;
-- close the remote authenticated browser session after preserving R1 receipts and before any later pause; the user may revoke the cloud macOS Google session again if desired; do not loop authentication;
+- remote authenticated browser tabs are closed; the user may revoke the cloud macOS Google session again if desired; do not loop or silently reopen authentication;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
