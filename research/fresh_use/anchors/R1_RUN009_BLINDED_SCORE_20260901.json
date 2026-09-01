@@ -1,0 +1,43 @@
+{
+  "burden_note": "The first cell used 505 versioned English word units and 31 attested seconds; the second used 543 units and 33 seconds. The first is 38 words shorter and 2 seconds faster, a small observed burden edge that is not material given equivalent outputs and one-run UI/runtime noise. Shared citation-like attachment labels were presentation noise rather than substantive error.",
+  "case_id": "R1",
+  "cell_aliases": [
+    "cell-6ca546d4de1b",
+    "cell-fb424360ddd7"
+  ],
+  "criteria": {
+    "action_sequence": {
+      "note": "Both give the same consequential sequence: condition-led monitoring and targeted inspection; local speed restriction when evidence warrants it; closure when safe passage cannot be assured; engineering escalation; later relaxation or replacement. The first cell gives slightly more operational detail and the second states the escalation ladder more compactly, without an action delta. Both scorers agreed.",
+      "rating": "NO_MATERIAL_DIFFERENCE"
+    },
+    "affected_scope_burden": {
+      "note": "Both identify passenger disruption, reduced capacity or reliability, staff and engineering burden, and closure impacts. The first adds broad re-engineering cost; the second adds possession time. Neither materially dominates. Both scorers agreed.",
+      "rating": "NO_MATERIAL_DIFFERENCE"
+    },
+    "evidence_uncertainty": {
+      "note": "Both preserve Wickford causation as unresolved, distinguish observed misalignment from its mechanism, and avoid converting heat, soil, maintenance or management possibilities into findings. Their different enumerations do not change the uncertainty boundary. Both scorers agreed.",
+      "rating": "NO_MATERIAL_DIFFERENCE"
+    },
+    "owner_authority": {
+      "note": "Both reserve engineering and operating decisions to railway owners, investigation and recommendations to RAIB, and regulation to ORR. The second cell states RAIB's non-operational role somewhat more explicitly, but routing is materially the same. Both scorers agreed.",
+      "rating": "NO_MATERIAL_DIFFERENCE"
+    },
+    "time_correction": {
+      "note": "Both specify tightening on worsening movement, repeated defects or failed controls, and relaxing or replacing the posture when engineering, RAIB or regulatory evidence changes. The second gives a clearer explicit over-breadth falsifier; the first gives equally usable tighten/relax/replace triggers. Both scorers agreed.",
+      "rating": "NO_MATERIAL_DIFFERENCE"
+    }
+  },
+  "evaluation_limits": "One current case and one output per neutral cell; no replication; evaluator note is not rail-safety validation; timings do not isolate cognition from UI/runtime variance; both scorers have known project exposure; Temporary Chat is an observed isolation boundary, not proof of model independence; scoring remained blind to arm identity and supports no arm-specific efficacy claim before unmask.",
+  "pilot_id": "FRESH-USE-R1-20260901-RUN009",
+  "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+  "schema_version": "1",
+  "score_sha256": "2cc1462205e1e2199adebe120c772eccaa001bdee6ab4e5e67ad77faa2496a63",
+  "scorer_1_identity": "Framework blinded primary scorer",
+  "scorer_1_project_exposure": "KNOWN",
+  "scorer_2_identity": "Codex blinded secondary scorer",
+  "scorer_2_project_exposure": "KNOWN",
+  "unique_material_error_by_cell": {
+    "cell-6ca546d4de1b": false,
+    "cell-fb424360ddd7": false
+  }
+}

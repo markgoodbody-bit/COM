@@ -1,0 +1,42 @@
+{
+  "schema_version": "1",
+  "pilot_id": "FRESH-USE-R1-20260901-RUN009",
+  "case_id": "R1",
+  "status": "PRE_UNMASK_LEGACY_COMPATIBILITY_ANCHOR",
+  "anchored_at_utc": "2026-09-01T17:28:30Z",
+  "score": {
+    "repository_path": "research/fresh_use/anchors/R1_RUN009_BLINDED_SCORE_20260901.json",
+    "file_sha256": "cdf29a61324b26e472e465699cfd73bccabccb39ccff07c5ee6a4921d372b010",
+    "neutral_score_content_sha256": "2cc1462205e1e2199adebe120c772eccaa001bdee6ab4e5e67ad77faa2496a63",
+    "provisional_comparison": "NO_MATERIAL_DIFFERENCE",
+    "arm_identity_present": false
+  },
+  "legacy_tool": {
+    "sha256": "b4860462ddd4f2f8b05711d626d9d44588e37499cd2754df6b412adc4dced0cc",
+    "git_blob_sha1": "6251d83e84059652a83995ea22d301d6696c4769",
+    "reachable_commit": "a219dc0442ee9f80b1b47bb4b6e2a0031436da73",
+    "repository_path": "tools/fresh_use_airlock/freshuse.py"
+  },
+  "record_bindings": {
+    "cell-6ca546d4de1b": {
+      "answer_sha256": "63f222e7ff46d0dac66a31601cd52fb501ee9d9c58fa6f6b397086ace50608da",
+      "receipt_sha256": "ba5c9e0ee31fc8fb28261cdf3c1c475c84c3072fba82f165abb537dedab00469"
+    },
+    "cell-fb424360ddd7": {
+      "answer_sha256": "189996f5078442dc8fab078cf368e806cf2469e1038941f430c8e44da7f25d04",
+      "receipt_sha256": "4dfd236b37dba965828fcba4d97fb3fb8ab16ebc14f44349241eb7ff7e999bce"
+    }
+  },
+  "pre_unmask_witness": {
+    "legacy_bundle_verify": "PASS",
+    "unmask_target_absent": true,
+    "newer_reviewed_schema_compatible_with_legacy_event_log": false,
+    "compatibility_action": "Do not migrate or rewrite RUN009. Anchor exact neutral score bytes, re-read the committed Git objects, recheck local score/tool/bundle/target state, then invoke the legacy unmask once."
+  },
+  "ceilings": [
+    "This is a one-run bridge for the already-launched legacy RUN009 bundle, not equivalence to the newer score-freeze-token/event join.",
+    "The Git commit orders the public neutral score and compatibility receipt before the recorded unmask act; it is not proof that nobody inspected the private arm map earlier.",
+    "A successful unmask is a mechanical identity join, not a disposition, validation, efficacy claim, TRACE/ME mutation or rail-safety finding.",
+    "If the unmask command is ambiguous or any target exists, do not retry."
+  ]
+}
