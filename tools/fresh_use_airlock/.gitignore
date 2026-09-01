@@ -1,0 +1,5 @@
+# Raw third-party snapshots and run outputs are private/local evidence by default.
+/snapshots/
+/runs/
+/run-*/
+*.receiver-run/
