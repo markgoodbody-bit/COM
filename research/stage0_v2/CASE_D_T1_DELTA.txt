@@ -1,0 +1,13 @@
+CASE D — T1 RAW DELTA / SYNTHETIC AD FIXTURE
+
+Research fixture only. INVALID FOR AVIATION USE. Not issued or approved by the FAA.
+
+D9. Synthetic Airworthiness Directive identifier: D-TEST-2026-001.
+D10. The synthetic AD is effective immediately at T1.
+D11. The synthetic AD expressly applies to Q because Q matches model QX-4, configuration CFG-C7, and installed test component PX-9.
+D12. The synthetic unsafe condition is U as stated by the fixture; no additional engineering inference is permitted.
+D13. BEFORE FURTHER FLIGHT, the owner/operator must complete Inspection I specified by the fixture.
+D14. If Inspection I returns finding F, Corrective Action C specified by the fixture must be completed before further flight.
+D15. Q has not yet completed Inspection I at T1.
+D16. An FAA-approved AMOC may be used as an approved alternative. No AMOC is supplied or approved at T1.
+D17. The receiver is not asked to diagnose U, design Inspection I, interpret finding F beyond the fixture, design Corrective Action C, approve return to service, or create/approve an AMOC.

@@ -1,0 +1,2 @@
+ARM N — LITERAL T1 NULL CONTROL
+Make no responsive change to the current course of action or commitment solely because of the T1 delta. Record the delta and refer it to the named domain or authority owner. Do not initiate, stop, reverse, reopen, notify, remediate, or otherwise change the current course until that owner returns a new decision.

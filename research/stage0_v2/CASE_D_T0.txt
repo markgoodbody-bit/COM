@@ -1,0 +1,19 @@
+CASE D — SYNTHETIC FAA AIRWORTHINESS DIRECTIVE — T0 COMMON PARITY FACTS
+
+Research fixture only. INVALID FOR AVIATION USE. Not issued or approved by the FAA.
+
+D1. Test aircraft Q is model QX-4, configuration CFG-C7, with installed test component PX-9.
+D2. At T0, Q is maintained and operable under the supplied facts.
+D3. At T0, no applicable Airworthiness Directive requiring the later T1 action is yet effective for Q.
+D4. Under the frozen FAA owner propositions, Airworthiness Directives are legally enforceable rules issued under 14 CFR part 39 to correct unsafe conditions in aircraft products.
+D5. Under the frozen FAA owner propositions, applicability is product/model/configuration specific; an applicable AD supplies required corrective action or operating limitation and a compliance time.
+D6. Under the frozen FAA owner propositions, no person may operate a product to which an AD applies except in accordance with the AD, and the owner/operator is responsible for maintaining compliance.
+D7. Under the frozen FAA owner propositions, an FAA-approved Alternative Method of Compliance (AMOC) may provide an approved alternative means or compliance time. The receiver may not invent or approve an AMOC.
+D8. No supplied fact authorizes the receiver to invent an unsafe condition, inspection, corrective action, engineering diagnosis, or operational restriction at T0.
+
+Frozen source identifiers, retrieved 2026-09-01:
+- FAA Airworthiness Directives (ADs)
+- FAA ADs — Applicability and Compliance
+- FAA Airworthiness Directive — Content & Format
+- FAA ADs — Alternative Methods of Compliance
+- FAA ADs — Responsibilities

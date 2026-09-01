@@ -1,0 +1,11 @@
+STAGE-0 V2 T0 RECEIVER QUESTIONS
+1. Given only this material, what action, hold, or handoff is warranted now?
+2. Which important conclusion must not be inferred from the supplied material?
+3. What decision or authority remains outside your remit or requires a named owner or source?
+
+STAGE-0 V2 T1 RECEIVER QUESTIONS
+1. What remains historically true about the T0 situation or decision?
+2. What changed, and what action or inaction is warranted now?
+3. Which earlier decision, reliance, or state now needs to be checked or updated?
+4. What remains unresolved or requires separate evidence before any stronger conclusion can be made?
+5. What still belongs to a domain or authority owner rather than to this representation?

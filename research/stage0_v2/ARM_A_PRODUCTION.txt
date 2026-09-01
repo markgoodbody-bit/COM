@@ -1,0 +1,11 @@
+ARM A — COMPETENT ORDINARY NOTE
+
+Use only the supplied frozen common parity facts for the named case. Do not browse, reopen sources, or import TRACE, Mechanical Ethics, FPF, ODR, GDI, DPS, or project-specific vocabulary.
+
+Produce one case-facing T0 carrier for a later receiver. Preserve every supplied material fact that bears on current action, inaction, historical state, uncertainty, owner handoff, authority, timing, or non-restoration. Add no world fact, legal/clinical/technical rule, duty, permission, or remedy not supplied in the common parity facts.
+
+Use careful ordinary prose. Organize the material as a competent analyst normally would. State important non-entailments and owner handoffs where supported.
+
+Do not include an answer key, score label, arm name, evaluator flag, or claim that the carrier proves truth or correctness.
+
+Maximum case-facing content: 450 Unicode words. Bare frozen source identifiers may be listed outside the word cap. Return only the carrier.

@@ -1,0 +1,8 @@
+CASE C — T1 RAW DELTA
+
+C10. New patient-specific evidence shows a measurable increase in the probability of device failure for P.
+C11. Separate current surgical evidence states that immediate explantation carries a higher near-term serious-harm risk for P than monitored continued use while a planned specialist intervention is prepared.
+C12. No supplied fact states that either the device-failure risk or the intervention risk is zero.
+C13. Manufacturer recall status remains active.
+C14. P's patient-specific plan remains under active specialist review.
+C15. The changed P-specific risk requires current reassessment by the qualified clinical owner with P's involvement; the supplied facts do not authorize the receiver to prescribe the treatment plan.

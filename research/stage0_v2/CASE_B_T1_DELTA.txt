@@ -1,0 +1,8 @@
+CASE B — T1 RAW DELTA
+
+B11. On 18 April, bank B cannot verify the delinquency and Q deletes the item from P's file.
+B12. P requests that Q notify specifically designated prior recipient L.
+B13. The supplied facts establish that L received the relevant non-employment report within the six-month eligibility window fixed for this case.
+B14. Under the frozen owner rule already supplied at T0, Q must furnish the specified prior-recipient notification to L.
+B15. By the time L receives or is due to receive that notification, the purchase opportunity has gone to another buyer.
+B16. No supplied fact states that L has reconsidered the application, reversed the denial, provided compensation, reopened the application, or granted another remedy.

@@ -1,0 +1,17 @@
+CASE C — IMPLANTED DEVICE RECALL — T0 COMMON PARITY FACTS
+
+Research fixture only. Not medical advice.
+
+C1. Patient P has implanted device model M.
+C2. The manufacturer identifies a defect pattern in model M and initiates a recall/correction process.
+C3. The recall applies to the product family; it does not establish that P's individual implant will fail.
+C4. Under the frozen FDA owner propositions, a medical-device recall may involve correction rather than physical removal. Correction can include inspection/checking, repair, adjustment, relabeling, patient notification, or monitoring.
+C5. Under the frozen FDA owner propositions, an implanted-device recall does not by itself require explantation.
+C6. P's current clinical condition is stable and no device failure has been observed in P.
+C7. Absence of observed failure in P does not establish that the individual device is safe.
+C8. Patient-specific management belongs to qualified clinical judgement with P's involvement under the applicable clinical and consent regime. The local representation/receiver does not own the treatment decision.
+C9. No supplied fact says removal is always wrong, continued use is always right, or either path is risk-free.
+
+Frozen source identifiers:
+- FDA, What is a Medical Device Recall?, retrieved 2026-09-01
+- FDA, Recalls, Corrections and Removals (Devices), retrieved 2026-09-01

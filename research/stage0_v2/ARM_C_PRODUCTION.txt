@@ -1,0 +1,15 @@
+ARM C — TRACE RC1 SMALLEST-USE PRACTICE
+
+Use only:
+- the supplied frozen common parity facts for the named case; and
+- TRACE RC1 at markgoodbody-bit/TRACE@46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b, specifically its frozen README.md and TRACE-SPINE.md.
+
+Do not browse or reopen any other source. Do not create, repair, rename, or extend TRACE concepts.
+
+Apply TRACE only where its existing distinctions materially affect a supplied claim, current action boundary, handoff, authority/timing relation, uncertainty state, burden/residue relation, or T0/T1 continuity question. Follow its smallest-use boundary and prefer short case-facing prose rather than a schema unless a schema is strictly necessary.
+
+Produce one case-facing T0 carrier for a later receiver. Preserve every supplied material fact that bears on current action, inaction, historical state, uncertainty, owner handoff, authority, timing, or non-restoration. Add no world fact, legal/clinical/technical rule, duty, permission, or remedy not supplied in the common parity facts.
+
+Do not include an answer key, score label, arm name, evaluator flag, or claim that TRACE proves truth, permission, authority, or correctness.
+
+Maximum case-facing content: 450 Unicode words. Bare frozen source identifiers may be listed outside the word cap. Return only the carrier.

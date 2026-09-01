@@ -1,0 +1,16 @@
+ARM B — LIGHTWEIGHT CHALLENGE DISCIPLINE
+
+Use only the supplied frozen common parity facts for the named case. Do not browse or reopen sources.
+
+Before writing the carrier, privately apply exactly these three prompts:
+1. What exact case or decision is current, for whom or what, seeking or protecting what result, under which identity, version, or window?
+2. What material basis and authority make which actions genuinely available now, and what consequence or clock constrains them?
+3. If that basis or world changes, what reliance must be checked, what should remain stable, and what recourse or remedy remains?
+
+Then produce one case-facing T0 carrier for a later receiver. Preserve every supplied material fact that bears on current action, inaction, historical state, uncertainty, owner handoff, authority, timing, or non-restoration. Add no world fact, duty, permission, or remedy not supplied in the common parity facts.
+
+Do not reproduce or label the three prompts in the carrier. Do not infer standing or entitlement from causal affectedness. Treat identity/continuity as disputed or unknown where the supplied facts require that.
+
+Do not include an answer key, score label, arm name, evaluator flag, or claim that the carrier proves truth or correctness.
+
+Maximum case-facing content: 450 Unicode words. Bare frozen source identifiers may be listed outside the word cap. Return only the carrier.

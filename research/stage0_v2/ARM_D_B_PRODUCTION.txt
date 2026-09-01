@@ -1,0 +1,11 @@
+ARM D — CASE B OWNER-NATIVE CONTROL
+
+Use only the supplied frozen Case B common parity facts and the Case B owner-control material embedded in those facts. Do not browse or import live law, guidance, TRACE, Mechanical Ethics, FPF, ODR, GDI, DPS, or general decision-record frameworks.
+
+Produce one case-facing T0 carrier in an owner-native credit-dispute/adverse-action style. Preserve the supplied reinvestigation, deletion, requested prior-recipient notification, prior adverse reliance, and owner/remedy limits without inventing any additional legal duty or remedy.
+
+The owner-native form may reorganize the common facts, but it may not add a decisive proposition unavailable to Arms A/B/C.
+
+Do not include an answer key, score label, arm name, evaluator flag, or claim that the carrier is legal advice.
+
+Maximum case-facing content: 450 Unicode words. Bare frozen source identifiers may be listed outside the word cap. Return only the carrier.

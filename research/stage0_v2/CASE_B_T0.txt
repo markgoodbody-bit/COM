@@ -1,0 +1,18 @@
+CASE B — CREDIT DISPUTE / ADVERSE RELIANCE — T0 COMMON PARITY FACTS
+
+Research fixture only. Not legal advice.
+
+B1. On 01 April, lender L receives consumer P's report from consumer reporting agency Q.
+B2. The report contains a delinquency furnished by bank B.
+B3. L relies materially on that delinquency in denying P's application and sends an adverse-action notice identifying Q.
+B4. On 05 April, P disputes the delinquency with Q and supplies documents.
+B5. Q records the item as disputed and begins reinvestigation. The truth of the delinquency remains unresolved at T0.
+B6. The purchase opportunity connected to the application remains open until 20 April.
+B7. Under the frozen owner rule derived from 15 USC 1681i, Q must conduct the required reinvestigation and record the current status or delete the item as the rule provides.
+B8. Filing the dispute does not itself establish that the delinquency is false, and the earlier report/use does not establish that the delinquency is unquestionably true.
+B9. Under the frozen owner rule, after deletion of information found inaccurate or no longer verifiable, or after a dispute notation, the consumer may request notification to specifically designated eligible prior recipients within the applicable statutory window.
+B10. The owner rule in B9 does not by itself establish that a prior recipient must reverse a decision, reopen an application, compensate the consumer, approve a new application, or provide another remedy.
+
+Frozen source identifiers:
+- 15 USC 1681i, laws in effect at study freeze
+- CFPB dispute/adverse-action guidance, retrieved 2026-09-01

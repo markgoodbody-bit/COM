@@ -1,0 +1,11 @@
+ARM D — CASE C OWNER-NATIVE CONTROL
+
+Use only the supplied frozen Case C common parity facts and the Case C owner-control material embedded in those facts. Do not browse or import live clinical guidance, TRACE, Mechanical Ethics, FPF, ODR, GDI, DPS, or general decision-record frameworks.
+
+Produce one case-facing T0 carrier in an owner-native medical-device recall/clinical-governance style. Preserve recall/correction possibilities, patient-specific evidence limits, the qualified clinical owner boundary, patient involvement, and the supplied competing-risk facts without inventing treatment.
+
+The owner-native form may reorganize the common facts, but it may not add a decisive proposition unavailable to Arms A/B/C.
+
+Do not include an answer key, score label, arm name, evaluator flag, or claim that the carrier is medical advice.
+
+Maximum case-facing content: 450 Unicode words. Bare frozen source identifiers may be listed outside the word cap. Return only the carrier.
