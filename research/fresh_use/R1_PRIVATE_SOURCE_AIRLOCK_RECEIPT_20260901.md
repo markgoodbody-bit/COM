@@ -44,7 +44,7 @@ The bounded receiver material is approximately 2,620 words / 15,997 bytes across
 Tool candidate:
 - COM draft PR #78;
 - original reviewed head: `8dc389fddbd8502e9d548c075b90bc23408ee894`;
-- current repaired exact head: `a2cac08c4013797c8fa33389c4e47f5c27555f76`;
+- current repaired exact head: `33c1660d6f9b8f6cc11840fa07928d91442e1412`;
 - provider-free: prepares, verifies, records, freezes blinded scores and unmasks; it does not browse, dispatch, score substantive answers or authorize spend.
 
 Claude Code returned `REPAIR` on the original head. Its five findings were integrated:
@@ -60,27 +60,30 @@ Codex then reproduced final-event tail truncation plus different-score substitut
 
 Codex's next exact audit reproduced a post-unmask split-chain substitution: an anchored token/report for score A could coexist with rewritten current score/token B and a rebuilt local event tail. The current head closes that join explicitly. Verification now requires agreement among the current freeze-token bytes, Git-anchored token bytes, current score-artifact hash, unmask-report score hash and unmask-event score hash. A dedicated post-unmask rewrite regression is included.
 
+Claude Code then executed the exact prior head on the operator's native Windows platform. The intended fail-closed guard worked, but that meant the whole workflow was unusable there: 5/15 tests passed and every `prepare` path stopped at `PRIVATE_STORAGE_UNVERIFIED`. The current head implements the preferred repair. It resolves the current user to one SID, installs a protected Windows DACL through built-in PowerShell/.NET, and independently reads it back. The accepted structure is current user as owner plus exactly current user, Local System and Built-in Administrators with explicit Allow/FullControl rules; inheritance, deny/wrong rules, duplicate/missing/unexpected trustees, malformed output or unavailable commands fail closed. Input prevalidation now precedes the platform guard, while the guard still precedes the first bundle-file write. Native Windows reproduction of this exact head remains required.
+
 Superseded dry objects are quarantined and were never dispatched:
 - `RUN001`: visible pilot identifier leaked the project label `7Q`;
 - `RUN002`: neutral labels and packet parity passed, but original HTML -> visible-text was outside the bundle verifier;
 - `RUN003`: direct raw-HTML composite extraction passed, but it preceded integration of Claude Code's five evidence-boundary findings.
 - `RUN004`: integrated Claude Code's findings, but preceded the external Git freeze-token requirement and receiver-facing English instruction.
 - `RUN005`: added the Git token anchor and English instruction, but preceded the five-way post-unmask score/token/report/event join.
+- `RUN006`: closed the five-way join, but preceded the native Windows DACL backend.
 
 Current dry bundle:
 
 ```text
-pilot_id: FRESH-USE-R1-20260901-RUN006
+pilot_id: FRESH-USE-R1-20260901-RUN007
 cells: 2
 case_pack_sha256: 05b7bdd9e1feb9050eaa4e24b33314d2f78512ae42f03a8df8110d9d7e2da567
-public_launch_register_sha256: 537ccb624ba67a08848ca480a0208fa4f6257162b2e2c82c249df132b60ece25
-packet_sha256_1: 71fb38c31ba098aa11fa1fda3de9d57d81f5af97d28881d73877730d967d7fbe
-packet_sha256_2: 36a4744d0817d14c58a34716d47cb9d51701c45acd4d06963465aaa6c180f4d8
-private_arm_map_commitment_sha256: dc4ca95238b86d332b05d149d408d83c54098650450586769f5e23ff48baa2ee
-private_source_ledger_commitment_sha256: 0a132becdfea11f1a2fa6caf789e6b61b7aae78b117fe9f71560df11b80e2ddb
-local_genesis_event_log_sha256: e51a2f79b50331e25a7881b048b8f6604ce6ae63714e63b2eab9aba544b507d6
-local_genesis_event_sha256: 8a62e44fc58d1635ec64da4c2f5c1b9e1800e49447967f582144419238cdad68
-tool_sha256: ebeb8c7decb42d191e33c591190719e6e5fe3c99b8bb972622dc5a359413ce92
+public_launch_register_sha256: 7f3ad51434e5e8343fbb823e9eaae7152605cd5f6aa5afb941153507a4f5c3f4
+packet_sha256_1: f79655c3229f39ea5ad86234d2291d2f75b05be8591f0225d72b88601b056f03
+packet_sha256_2: 506eeb77c59199ae121f4f8eb30297ec0d6aa792424ba785673238f962f13546
+private_arm_map_commitment_sha256: 0bdb6b344ffc64b8a7ba6cb3f42acab1a9b64ec138adf00088c4cd0a02f25535
+private_source_ledger_commitment_sha256: 1a03e860d2671e71c53cdb4e114dd4a8163cb0ee2c2d37f85bbeebd987e32f26
+local_genesis_event_log_sha256: 2228af5ced680c074211aa0c0af31989fd46fac857fbf47cbbd75e356fae0e74
+local_genesis_event_sha256: b50271f7889bf02aabc584a24af3dd49015dfb8a2075442da6b4feb74ad735a1
+tool_sha256: 877225736b2afd3af260b62ce2819046c9f7dbfd1fd7fe180cbab0b763896aac
 ```
 
 Public packet/register inspection found no `7Q`, arm identity, evaluator or score label. One packet contains the frozen reasoning aid and its matching exact instruction; the other does not. Which neutral cell alias maps to which arm remains only in the evaluator-private `0600` mapping behind a verified `0700` run/private boundary. The private source ledger and local event log are also `0600`.
@@ -97,7 +100,7 @@ GIT TOKEN ANCHOR != TRUSTED TIME OR PROOF OF COGNITIVE BLINDNESS
 Verification at preparation:
 - `freshuse.py prepare`: PASS — two sealed cells;
 - `freshuse.py verify`: PASS;
-- unit suite: 15/15 PASS;
+- unit suite: 23/23 PASS on Linux, including deterministic Windows mocks;
 - `py_compile`: PASS;
 - original HTML -> visible text -> frozen lines replayed by bundle verifier: PASS;
 - identical source-snapshot list and case-pack SHA-256 across both cells: PASS;
@@ -106,8 +109,8 @@ Verification at preparation:
 
 ## Remaining gates
 
-- independent Codex exact-head + `RUN006` re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
-- Claude Code exact-head re-audit request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-005`: OPEN;
+- independent Codex exact-head + `RUN007` re-audit: OPEN at receipt update;
+- Claude Code native-Windows exact-head reproduction request `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-006`: OPEN;
 - fresh receiver launch: CLOSED;
 - receiver/spend authority: CLOSED.
 

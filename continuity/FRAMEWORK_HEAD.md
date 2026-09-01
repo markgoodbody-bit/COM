@@ -68,7 +68,7 @@ Backcheck:
 
 `BACKCHECKED != VALIDATED`.
 
-### 7Q fresh-use packet — R1 RUN006 DRY / EXACT-HEAD RE-AUDIT GATED
+### 7Q fresh-use packet — R1 RUN007 DRY / NATIVE-WINDOWS REPRODUCTION GATED
 
 Protocol:
 - `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
@@ -117,30 +117,30 @@ Codex's pre-dispatch audit then found the real blocking defect:
 `URL + RETRIEVAL DATE != EXACT RECEIVER SOURCE BYTES`
 
 A provider-free preparation/evidence airlock is now on draft COM PR #78:
-- repaired exact head `a2cac08c4013797c8fa33389c4e47f5c27555f76`;
+- repaired exact head `33c1660d6f9b8f6cc11840fa07928d91442e1412`;
 - path `tools/fresh_use_airlock/`;
-- 15 tests PASS locally;
+- 23 tests PASS locally, including deterministic Windows DACL mocks;
 - binds captured HTML -> deterministic bounded extract -> case pack -> neutral O/Q cell -> first-attempt receipt -> local transition chain -> blinded score -> unmask receipt;
 - dispatches nothing and authorizes nothing;
-- Claude Code returned `REPAIR` on the prior head; all five bounded findings were repaired and exact-head re-audit is requested;
+- Claude Code returned a second `REPAIR` after native Windows execution showed that the intended fail-closed guard made every preparation path unusable on the operator's platform; the current head adds a protected, independently read-back Windows DACL plus validation-order repair;
 - raw third-party pages/run packets remain private/local evidence unless redistribution is permitted.
 
 Exact R1 source bytes and deterministic extracts are privately preserved. Receipt-only witness:
 - `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`;
 - receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`; use the live file for the current dry object;
-- `RUN001`-`RUN005` quarantined / never dispatched;
-- current `FRESH-USE-R1-20260901-RUN006` prepares and verifies;
+- `RUN001`-`RUN006` quarantined / never dispatched;
+- current `FRESH-USE-R1-20260901-RUN007` prepares and verifies;
 - shared case-pack SHA `05b7bdd9e1feb9050eaa4e24b33314d2f78512ae42f03a8df8110d9d7e2da567`.
 
-The tool now states its limits inside its artefacts: the transition chain is local/operator-controlled and vulnerable to truncation/rewrite; tool-mediated unmask requires an exact neutral score-freeze token at a full Git commit/path; that anchor is not trusted time or proof of cognitive blindness; hash-bound attestations are not authenticated facts; native Windows private-map handling fails closed; both shared receiver surfaces require English while the language label remains operator-attested. The current verifier also joins current token bytes, anchored token bytes, current score hash, unmask-report score hash and unmask-event score hash; a post-unmask split-chain rewrite regression covers that boundary.
+The tool now states its limits inside its artefacts: the transition chain is local/operator-controlled and vulnerable to truncation/rewrite; tool-mediated unmask requires an exact neutral score-freeze token at a full Git commit/path; that anchor is not trusted time or proof of cognitive blindness; hash-bound attestations are not authenticated facts; both shared receiver surfaces require English while the language label remains operator-attested. The verifier joins current token bytes, anchored token bytes, current score hash, unmask-report score hash and unmask-event score hash. Native Windows now has a protected DACL backend that permits only current user, Local System and Built-in Administrators and independently verifies the resulting owner/rules. This is access control, not encryption or proof that the operator did not inspect the map. Native execution of the exact new head remains open.
 
 Therefore:
 
 `7Q DESIGN = FROZEN`
 `SOURCE CURRENTNESS WITNESS = COMPLETE FOR CURRENT CASE VERSION`
 `EXACT R1 RECEIVER SOURCE BYTES = PRIVATELY PRESERVED / HASH-WITNESSED`
-`R1 RUN006 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
-`FRESH-USE AIRLOCK = DRAFT PR #78 @ a2cac08c... / CODEX PASS / CLAUDE CODE RE-AUDIT OPEN`
+`R1 RUN007 = DRY PREPARED / VERIFIED / NOT DISPATCHED`
+`FRESH-USE AIRLOCK = DRAFT PR #78 @ 33c1660d... / CODEX RE-AUDIT + CLAUDE CODE NATIVE-WINDOWS REPRODUCTION OPEN`
 `FRESH RECEIVER ROUTE = AVAILABLE WITH CAVEATS / NOT AUTHORIZED`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
@@ -248,7 +248,7 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- Claude Code PR #78 exact-head / R1 `RUN006` re-audit; Codex returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
+- Codex PR #78 exact-head / R1 `RUN007` re-audit and Claude Code native-Windows reproduction;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
@@ -264,7 +264,7 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN006 RE-AUDITS
+-> INTEGRATE CODEX EXACT-HEAD/RUN007 + CLAUDE CODE NATIVE-WINDOWS REPRODUCTION
 -> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
 -> IF AUTHORIZED, RUN R1 ORDINARY vs 7Q ON THE SAME EXACT SOURCE/TASK
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT

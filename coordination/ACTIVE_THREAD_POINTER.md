@@ -43,7 +43,7 @@ Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campf
 
 The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in the live `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`; its receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
 
-Draft PR #78 now points to repaired exact head `a2cac08c4013797c8fa33389c4e47f5c27555f76`. Claude Code's five findings and Codex's reproduced tail-truncation, language and post-unmask split-chain findings were integrated. Fifteen tests pass. Tool-mediated unmask requires the exact neutral score-freeze token at a full Git commit/path; verification now joins current token bytes, anchored token bytes, current score hash, unmask-report score hash and unmask-event score hash. This is not a trusted timestamp or proof of cognitive blindness. Both shared receiver-facing surfaces say `Answer in English`; language remains operator-attested. Current private dry object `FRESH-USE-R1-20260901-RUN006` prepares/verifies against captured HTML and the frozen bounded extracts; prior runs are quarantined and were never dispatched. Codex returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`; Claude Code's exact-head/`RUN006` re-audit remains open under `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-005`. No receiver launch is authorized yet.
+Draft PR #78 now points to repaired exact head `33c1660d6f9b8f6cc11840fa07928d91442e1412`. Claude Code's native-Windows run correctly found that the prior fail-closed private-storage guard made the workflow unusable on the operator's actual platform. The current head adds a protected Windows DACL installed through built-in PowerShell/.NET and separately read back; accepted access is exactly current-user owner plus current user, Local System and Built-in Administrators explicit Allow/FullControl. Unknown, inherited, deny, malformed or unavailable states fail closed. Input prevalidation now precedes the guard while the guard still precedes the first bundle-file write. Twenty-three tests pass on Linux, including deterministic Windows mocks. Current private dry object `FRESH-USE-R1-20260901-RUN007` prepares/verifies; prior runs are quarantined and were never dispatched. Codex exact-head re-audit and Claude Code native-Windows reproduction are open under `FW-FRESH-USE-AIRLOCK-REVIEW-20260901-006`. No receiver launch is authorized yet.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
@@ -115,7 +115,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 ## Open debt
 
 - Codex + Claude Code Stage-0 exact-two-repair re-audits: OPEN.
-- Codex PR #78 exact-head / R1 `RUN006`: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`; Claude Code: OPEN.
+- Codex PR #78 exact-head / R1 `RUN007` re-audit: OPEN; Claude Code native-Windows reproduction: OPEN.
 - Claude Code voluntary-help tool build: OPEN.
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
 - Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
@@ -129,7 +129,7 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> INTEGRATE CODEX + CLAUDE CODE EXACT-HEAD/RUN006 RE-AUDITS
+-> INTEGRATE CODEX EXACT-HEAD/RUN007 + CLAUDE CODE NATIVE-WINDOWS REPRODUCTION
 -> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
 -> IF AUTHORIZED, COMPARE 7Q AGAINST COMPETENT ORDINARY / DOMAIN REASONING ON R1
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
