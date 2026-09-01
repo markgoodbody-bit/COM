@@ -118,7 +118,8 @@ Verification at preparation:
 - independent Codex exact-head + `RUN009` final re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`;
 - Claude Code native-Windows exact-head re-audit: `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against `ed5e03787cc55e76276ab4a91cfb01505e60f231` (comment `5496852035`); 32/32 tests executed on native Windows, one correct POSIX-only skip;
 - exact airlock/manual R1 launch gate: CLEARED by both required receipts;
-- no-spend Temporary Chat receiver launch: USER-DIRECTED / GOOGLE 2FA APPROVED / OPENAI OAUTH CALLBACK FAILED / NOT DISPATCHED;
+- remote cloud-browser Temporary Chat route: RETIRED AFTER GOOGLE SUSPICIOUS-MACOS ALERT / AUTH TABS CLOSED / NOT DISPATCHED;
+- native-app Temporary Chat route: PREFERRED / TWO MANUAL ATTACH+SEND ACTS REQUIRED;
 - logged-out anonymous route: FILE UPLOAD UNAVAILABLE;
 - inline derivative: draft PR #79 exact head `67ee93c06f0c490c80317f57e3ad35a192cb16b8`; 38/38 tests PASS; Codex `PASS_FOR_ANONYMOUS_INLINE_TRANSPORT_REVIEW_STAGE`; Claude Code review OPEN; two separate browser contexts unresolved;
 - paid provider/API spend authority: NOT AUTHORIZED.
