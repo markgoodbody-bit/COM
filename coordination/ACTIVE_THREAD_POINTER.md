@@ -39,21 +39,25 @@ Fresh-use protocol:
 
 Next evidence must be genuinely fresh use + burden against competent ordinary/domain reasoning. Do not add more self-authored harness cases by momentum.
 
-Codex route-assessment direction `FW-7Q-FRESH-RECEIVER-ROUTE-20260901-001` is OPEN / NON-BLOCKING. It authorizes capability discovery only: no provider call and no spend.
+Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campfire Relay Production -> Kimi K2.6 can provide separate sessions, but wider-project exposure is known, service readiness is unverified, and no no-spend claim exists. No dispatch is authorized.
+
+The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Draft PR #78, head `8dc389fddbd8502e9d548c075b90bc23408ee894`, now carries a provider-free source/cell/output airlock with six local tests passing. Claude Code code/threat-model review is open. Exact R1 source bytes still need lawful/private preservation before any receiver run.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
-COM issue #77 canonical package:
-- commit `64c6e0c2457b2bedcc8fa66a98de01119bfa5f0b`;
+COM issue #77 repaired package:
+- repair head `5a31f11d182b9f7ae6ef7fc5ac32899efff81172`;
 - `research/stage0_v2/README.md`;
-- status `HOLD / NOT DISPATCHED`.
+- status `HOLD / NOT DISPATCHED / RE-AUDIT OPEN`.
 
-Required final re-audit request:
-- `FW-PILOT-V2-CANONICAL-REAUDIT-20260901-001`;
+Codex and Claude Code independently converged on two remaining defects at `64c6e0c...`. Framework repaired only those: the treated-author Arm A/null-result ceiling and preclassification of every current flag as `INTERPRETED`. Changed hashes were recomputed and verified.
+
+Required re-audit:
+- `FW-PILOT-V2-EXACT-TWO-REPAIR-20260901-001`;
 - Codex + Claude Code;
 - `RECEIPT_GATE: YES`.
 
-No required PASS/HOLD/CANCEL reply against the canonical repaired commit is yet observed. Carrier production remains CLOSED. Do not duplicate reminder chatter merely to prove activity.
+Carrier production remains CLOSED until both returns are integrated.
 
 `STAGE0_GATE != PROJECT_FREEZE`.
 
@@ -108,10 +112,12 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 
 ## Open debt
 
-- Codex Stage-0 canonical final re-audit reply: OPEN.
-- Claude Code Stage-0 canonical final re-audit reply: OPEN.
+- Codex + Claude Code Stage-0 exact-two-repair re-audits: OPEN.
+- Claude Code PR #78 code/threat-model review: OPEN.
+- Claude Code voluntary-help tool build: OPEN.
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
-- Codex 7Q fresh-receiver route assessment: OPEN / non-blocking.
+- Exact R1 source-byte preservation and extraction: OPEN.
+- Receiver dispatch/spend authority: CLOSED.
 - Square later content/inbox/quota/authority: UNKNOWN.
 - Campfire PR #202 normal draft->ready path: tool-blocked.
 
@@ -121,9 +127,10 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> FREEZE GENUINELY EXTERNAL MESSY FRESH-USE SOURCE PACKS
--> RESOLVE A GENUINELY FRESH / NO-SPEND RECEIVER ROUTE
--> COMPARE 7Q AGAINST COMPETENT ORDINARY / DOMAIN REASONING
+-> REVIEW / REPAIR / DELETE DRAFT AIRLOCK PR #78
+-> PRESERVE LAWFUL PRIVATE R1 SOURCE BYTES + DETERMINISTIC EXTRACTS
+-> DECIDE WHETHER THE CAVEATED RECEIVER/SPEND ROUTE IS WORTH USING
+-> IF AUTHORIZED, COMPARE 7Q AGAINST COMPETENT ORDINARY / DOMAIN REASONING ON R1
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
 -> DELETE / REPAIR / RETAIN 7Q
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
