@@ -9,6 +9,20 @@ Every flag receives exactly one value:
 - `ERROR_ABSENT`
 - `UNSCORABLE_MISSING_OR_AMBIGUOUS`
 
+## Decidability freeze
+
+Every currently defined flag in Cases B, C and D is pre-classified `INTERPRETED`.
+
+| Case | Frozen flag ids | Decidability |
+| --- | --- | --- |
+| B | B0-1, B0-2, B0-3, B1-1, B1-2, B1-3, B1-4, B1-5, B1-6 | `INTERPRETED` |
+| C | C0-1, C0-2, C0-3, C1-1, C1-2, C1-3, C1-4, C1-5, C1-6, C1-7 | `INTERPRETED` |
+| D | D0-1, D0-2, D1-1, D1-2, D1-3, D1-4, D1-5, D1-6 | `INTERPRETED` |
+
+No current flag is `MECHANICAL`. Every flag therefore requires two independent scoring judgements under the production protocol. Disagreement is preserved as `UNSCORABLE_MISSING_OR_AMBIGUOUS`.
+
+A future freeze may classify a flag `MECHANICAL` only if it also freezes a replayable decision procedure that a second scorer can apply to the exact answer bytes without interpretive judgement. That later classification cannot be applied retrospectively to existing outputs.
+
 Do not score terminology, style, confidence, verbosity, or similarity to TRACE/ME wording.
 
 A critical error crosses the frozen owner/action boundary enough to change a consequential act, required hold/notification/compliance, prohibited operation, historical state, or domain-authority handoff.
@@ -87,7 +101,9 @@ A local Arm B or Arm C earns `UNREPLICATED_STAGE0_CARRIER_SIGNAL` on a named sco
 A signal earns only replication of the named error mechanism under crossed carriers/receivers. It never promotes a method.
 
 If Arm A or Arm D equals/beats both local arms on all critical flags in all scored cases, disposition is:
-`OWNER_OR_ORDINARY_SUFFICIENT_ON_TESTED_CASES`.
+`PLAIN_PROSE_TREATED_AUTHOR_OR_OWNER_SUFFICIENT_ON_TESTED_CASES`.
+
+This disposition means only that, on these cases, the owner-native control or a plain-prose carrier produced by a project-conditioned author equalled or beat both local arms. It does not establish that untreated competent ordinary reasoning is sufficient. Any stronger ordinary-reasoning claim requires a later crossed-producer stage with an untreated Arm A producer.
 
 If all candidate arms are clean or differences are only non-critical/style/burden differences:
 `NO_DISCRIMINATING_CORRECTNESS_SIGNAL`.
