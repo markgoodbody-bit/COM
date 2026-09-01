@@ -265,7 +265,8 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- R2 packet preparation and two first-attempt launches under the now-proven hashed text-attachment route; do not reuse R1 chats or infer a signal from R1;
+- R1 pre-dispatch gate chronology, answer-only review custody and input-burden correction under draft PR #80; do not rewrite the frozen score or infer clearance from successful outputs;
+- R2 remains the preselected second case but dispatch is HOLD pending the R1 review, an exact statement of the narrower tested claim, source currentness and separate receiver/dispatch authority;
 - remote authenticated browser tabs are closed; the user may revoke the cloud macOS Google session again if desired; do not loop or silently reopen authentication;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
@@ -282,16 +283,16 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> COMPLETE CLAUDE CODE EXACT REVIEW OF PR #79 @ 67ee93c...
--> REVOKE THE REMOTE MACOS GOOGLE SESSION FROM A TRUSTED USER DEVICE
--> USE TWO NATIVE-APP TEMPORARY CHATS, ONE SEALED ZIP EACH
--> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
--> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
--> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
--> DELETE / REPAIR / RETAIN 7Q
+-> PRESERVE R1 RUN009 AS COMPLETE / UNMASKED ONCE / NO RETRY
+-> RECONCILE WHETHER THE EXACT ATTACHMENT GATE WAS SATISFIED OR BYPASSED BEFORE DISPATCH
+-> REVIEW PR #80 PROMPT-SATURATION + ANSWER-CUSTODY + INPUT-BURDEN FINDINGS
+-> STATE R1 ONLY AS NO INCREMENTAL VALUE OVER THE STRONGLY STRUCTURED ORDINARY PROMPT
+-> HOLD R2 UNTIL THE NARROW TEST CLAIM + CURRENT SOURCES + SEPARATE DISPATCH AUTHORITY ARE EXPLICIT
+-> IF R2 IS LATER AUTHORIZED, PRESERVE THE EXISTING TWO-NULL STOPPING RULE AND DO NOT ADD A POST-HOC PREDICTED WIN
+-> RETAIN / FREEZE-AS-TEACHING-AID / DELETE 7Q ONLY UNDER THE FROZEN EVIDENCE RULES
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```
 
-Do not manufacture execution while transport is unresolved.
+Do not rerun R1 or manufacture retroactive gate clearance.
 
 `7Q IS A DOOR, NOT A DESTINATION.`
