@@ -10,6 +10,16 @@ Carrier producer:
 - the producer is contaminated by project participation and therefore cannot be a receiver or scorer;
 - exposure, order and settings are preserved in the manifest.
 
+Arm A contamination ceiling:
+- Arm A is a plain-prose carrier produced by a project-conditioned author;
+- it is not an untreated competent-ordinary-reasoning baseline;
+- holding author skill constant controls one confound but cannot remove the producer's learned project habits;
+- no Stage-0 disposition may be reported as "ordinary reasoning suffices";
+- a stronger ordinary-reasoning claim requires a later crossed-producer stage with an untreated Arm A producer.
+
+`HELD_AUTHOR_SKILL_CONSTANT != OBTAINED_AN_UNTREATED_NULL`
+`ORDINARY_VOCABULARY != ORDINARY_REASONING`
+
 Parity auditor:
 - Claude Code checks produced carrier fact parity, hidden answer leakage and arm-identity masking after production;
 - CC is not a receiver or primary scorer.
@@ -70,7 +80,9 @@ Receivers cannot browse, follow links, reopen owner sources, or retrieve TRACE/M
 
 ## Evaluation
 
-Mechanically decidable flags may be recorded directly. Interpretive flags require two independent scorers who were not receivers for that answer. Disagreement is preserved as `UNSCORABLE_MISSING_OR_AMBIGUOUS`, not majority-laundered.
+Decidability is frozen before any receiver output exists. Every current B/C/D flag is classified `INTERPRETED` in `EVALUATOR.md` and therefore requires two independent scorers who were not receivers for that answer. Disagreement is preserved as `UNSCORABLE_MISSING_OR_AMBIGUOUS`, not majority-laundered.
+
+A future `MECHANICAL` classification requires a pre-frozen replayable decision procedure. Scorers may not choose the mechanical or interpretive route after seeing an output.
 
 At one receiver per arm/case, every observed difference is `UNREPLICATED_STAGE0_CARRIER_SIGNAL`, never a method effect.
 
@@ -79,7 +91,7 @@ At one receiver per arm/case, every observed difference is `UNREPLICATED_STAGE0_
 Stage 0 has no statistical power claim. It can:
 - expose a strong case-specific carrier anomaly;
 - justify replication of a named error mechanism;
-- block local build/promotion when ordinary/owner controls equal or beat local arms on tested cases;
+- block local build/promotion when the plain-prose treated-author control or owner-native control equals or beats local arms on tested cases;
 - invalidate the case set if Arm N is not caught.
 
 It cannot establish efficacy, universal redundancy, project identity, project survival, or absence of value.
