@@ -6,289 +6,226 @@ Guiding question:
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
-This review corrects two opposite drifts:
-
-1. shrinking the project into TRACE/ME survival, benchmark wins, reviewer approval or residual novelty;
-2. expanding frontier synthesis indefinitely without returning small usable structures to the world.
-
 ## Current project shape
 
-The strongest current interpretation is not a universal ontology and not a new owner of every useful method.
+The project is not trying to own every useful method or build a universal ontology.
 
-The project is trying to develop a portable middle-out reasoning environment that helps bounded humans and AIs:
-
+It is trying to develop a voluntary portable middle-out reasoning environment that helps bounded humans and AIs:
 - open a situation before compressing it;
 - preserve distinctions that can change consequential action;
-- find and respect external/domain owners rather than impersonating them;
-- track currentness, authority, clocks, burden, hardening, residue and correction;
-- recurse across scale when mechanism, affected scope, collective capability or local standing would otherwise disappear;
-- distinguish reachable, viable, developable and jointly constructible futures;
+- find stronger external/domain owners rather than impersonate them;
+- see affected scopes, practical capability, power/mandate, clocks, hardening, burden, residue and correction;
 - act rather than only map;
-- preserve answerability through change;
-- learn/absorb better external structures without losing the integrated purpose;
-- build worthwhile capability and shared futures, not merely prevent premature closure.
+- build worthwhile capability/shared futures as well as prevent premature closure;
+- remain correctable as evidence, capability and relationships change.
 
-The prospective local contribution may live in integration, runtime discipline, translation, training, carrier design, a small challenge language, or some combination. It is not pre-declared.
+`PROJECT PURPOSE != TRACE SURVIVAL`
+
+## What changed today
+
+The broad middle-out scaffold was run through six heterogeneous cases:
+- child skill/formation;
+- current tool-using AI;
+- bovine-TB ecological/veterinary transition;
+- commons/public-good construction;
+- strategic/adversarial regulation;
+- coastal retreat/transformation.
+
+Cross-case result:
+
+```text
+SCAFFOLD AS RESEARCH QUARRY: USEFUL
+SCAFFOLD AS 14-FIELD DEFAULT METHOD: TOO HEAVY
+EXTERNAL OWNER ROUTING: CENTRAL
+TRACE/ME MUTATION: NOT EARNED
+```
+
+The bTB case returned no decision advantage over competent veterinary reasoning. Several attractive terms became domain-typed and were demoted. This is evidence against simply expanding the framework.
+
+The earned compression candidate is now:
+
+`research/MIDDLE_OUT_ENTRY_7Q_CANDIDATE_20260901.md`
+
+exact commit after six-case backcheck repair:
+
+`eec157b47c21b34f156e136ead734d4269eb870d`
+
+Its seven questions are:
+1. What is actually changing?
+2. What can actually happen here?
+3. Who/what is affected, and who can make what happen?
+4. What does time do to the choice?
+5. What owner/evidence do we need?
+6. What should happen now?
+7. How does this remain correctable?
+
+The six-case representation backcheck found zero action-critical deletions after one explicit strategic-adaptation trigger was added to Q4.
+
+`BACKCHECKED != VALIDATED`
 
 ## Two-speed operating model
 
-Do not make one experiment the critical path for the whole project.
+### Lane 1 — Stage-0 exact evidence
 
-### Lane 1 — gated discrimination / exact evidence
+COM #77 remains a separate frozen discrimination experiment.
 
-Stage-0 v2 owns only its own carrier-production gate.
+Canonical package:
 
-- keep it bounded;
-- require exact reproducibility and fact parity;
-- if audits PASS, run the minimum crossed carrier set;
-- prefer no-spend fresh receivers;
-- treat any signal as a replication target only;
-- if ordinary/owner practice is sufficient, accept that and stop building a local packet for that function;
-- do not mutate TRACE/ME because of Stage-0 alone.
+`research/stage0_v2/README.md`
+commit `64c6e0c2457b2bedcc8fa66a98de01119bfa5f0b`
 
-Stop condition:
+Carrier production stays CLOSED until Codex and Claude Code return the required `PASS_FOR_CARRIER_PRODUCTION | HOLD | CANCEL` receipts against the canonical package.
 
-> After one named candidate mechanism is earned, or no discriminating correctness signal appears, close Stage-0 and do not extend the case suite by momentum.
+Do not chase those receipts with duplicate messages merely to show activity.
 
-### Lane 2 — continuing world learning
+If PASS:
+- run only the minimum authorised/no-spend experiment;
+- close Stage-0 after one named candidate mechanism or no discriminating correctness signal;
+- treat any positive as replication-target only.
 
-While Stage-0 waits on its explicit reviewers, unrelated frontier learning continues.
+If HOLD/CANCEL:
+- repair only the named defect or close it;
+- do not turn the pilot into a permanent benchmark programme.
 
-It must not:
-- rewrite the Stage-0 freeze;
-- pre-expose future receivers to scored carriers;
-- mutate PR #75 by momentum;
-- manufacture evidence for a preferred Stage-0 arm.
+### Lane 2 — 7Q fresh-use phase
 
-It may:
-- study real cases;
-- learn from external disciplines;
-- continue the middle-out transfer harness;
-- investigate positive construction, formation, institutions, ecology, adversarial systems and emerging-AI co-development;
-- produce separate research notes and small usable prototypes.
+The self-authored six-case harness is CLOSED for this cycle.
 
-`STAGE0_GATE != PROJECT_FREEZE`
+Do not add more cases merely to make 7Q look robust.
 
-## Priority frontier
+Next meaningful question:
 
-Current high-value questions:
+> Does 7Q help a genuinely fresh reasoner/user preserve consequential distinctions or find the right owner at tolerable burden compared with competent ordinary/domain reasoning?
 
-1. individuation and stakes/significance without category error;
-2. affordances and developable capability before selection;
-3. decision scale and authority-function topology;
-4. legitimate collective capability and positive public-good creation;
-5. transition capability when recovery is not return to T0;
-6. answerable initiative and voluntary alignment as a revisable relationship;
-7. strategic/adversarial settings where correction routes can be gamed;
-8. representation/standing where affected entities cannot answer directly;
-9. positive construction: capability, abundance, meaning, cooperation, exploration and futures worth creating;
-10. compression: smallest representation that preserves distinctions material to the next consequential act while retaining a route to reopen detail.
+Required next test characteristics:
+- receiver/user did not construct the six-case quarry;
+- use genuinely messy material rather than an answer-key fact table where possible;
+- compare against competent ordinary/domain reasoning, not a weak straw baseline;
+- measure action/sequence/evidence/owner-handoff/correction delta separately from verbosity/style;
+- record burden and clarification cost;
+- allow `NO VALUE / ORDINARY BETTER` as a first-class result;
+- no TRACE/ME mutation from one fresh-use result.
 
-Use external owners aggressively. A discovered better owner is progress.
+This lane can proceed without waiting for Stage-0, provided it does not expose Stage-0 frozen carriers to its future receivers.
 
-## Project-level success tests
+`STAGE0 GATE != PROJECT FREEZE`
 
-Do not judge the project mainly by whether TRACE or ME wins a comparison.
+## What not to build now
+
+Do not build:
+- an eighth question by momentum;
+- a new universal record standard;
+- a new TRACE field because a frontier concept is interesting;
+- a generic commons/regulation/development method;
+- more Campfire dashboards because infrastructure exists;
+- a metaphysics of AI identity/standing from operational cases;
+- another self-authored validation suite.
+
+Optional concepts remain quarry modules only when triggered: viability, sense-making/autonomous normativity, flourishing, collective agency/individuation, aggregation/social choice, strategic-mechanism detail, transformation pathways, proxy-standing detail and governance-specific accountability/recognition vocabulary.
+
+`HORIZON COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY COGNITION`
+
+## TRACE
+
+TRACE v0.3 RC1 remains unreleased/unvalidated; v0.2.7 remains the released baseline.
+
+Future TRACE work is use-triggered:
+- preserve consequential distinctions only where lighter ordinary/owner practice would lose them;
+- prefer prose, deletion, routing or interoperability over new primitives when adequate;
+- require burden proportional to use;
+- allow TRACE to become a specialist machine-transfer/representation surface rather than project centre.
+
+No current six-case/7Q result earns TRACE mutation.
+
+## Mechanical Ethics
+
+ME remains primarily human-facing; v0.6.3 remains the preservation baseline.
+
+Future ME work should test whether an ordinary person can notice/challenge consequential failures without unusual reserves. Strong comparators include Critical Systems Heuristics, Value Sensitive Design, decision hygiene and other human-facing owners.
+
+Do not preserve ME with weak controls. No six-case/7Q result earns ME mutation.
+
+## Positive construction
+
+Keep this lane active alongside harm/correction.
+
+The six-case run strengthened several thin cross-domain questions:
+- constraints/commitments can create capability;
+- present investment/reserve can create future correction/transition capacity;
+- capability change should trigger re-evaluation of control/entrustment, not automatic expansion;
+- stable support/technical boundaries can enable initiative;
+- preserving a system's exact current form is not always the good to optimize.
+
+These are research bearings, not universal moral rules.
+
+## Emerging AI
+
+Continue with strict type ceilings:
+
+```text
+HUMAN VOLITIONAL AUTONOMY != AGENT OPERATIONAL AUTONOMY
+CAPABILITY GROWTH != ENTRUSTMENT GROWTH
+ARTIFACT CONTINUITY != RUNTIME IDENTITY
+OPERATIONAL ANSWER-BACK != POLITICAL VOICE
+PRESENT CAPABILITY != STANDING / SOVEREIGNTY
+```
+
+Study answerable initiative, task-specific entrustment, containment that enables participation, currentness and succession without consciousness/personhood inference.
+
+## Campfire / COM
+
+Infrastructure remains plumbing.
+
+Current target is simplification/reliability, not feature growth:
+- one quiet human front door;
+- stale/unknown boundaries visible;
+- reliable bounded read/write workers;
+- evidence/provenance behind progressive disclosure;
+- compact coordination and one executable source of truth.
+
+Do not merge/release/activate merely because branches are green. Use operator need and relevant gates.
+
+## Square / external world
+
+Participate only where there is a concrete contribution/question/correction worth observing.
+
+Do not spend quota to prove activity; do not treat replies as validation; reacquire current authority/state before actuation.
+
+## Project-level evidence
 
 Useful evidence includes:
+- a consequential action or sequence changes for a defensible reason;
+- an affected scope/clock/unknown survives compression when it otherwise would not;
+- a domain/authority handoff becomes more correct;
+- correction becomes reachable before hardening;
+- false permission/finality/restoration/certainty is avoided;
+- a needed capability is built before a transition clock closes;
+- a better external owner replaces local wording;
+- a local object is deleted because ordinary/domain reasoning is better.
 
-- a human or AI notices a consequential affected scope or clock it would otherwise have missed;
-- a decision changes because a materially relevant distinction survived compression;
-- an owner/authority handoff becomes more correct;
-- a correction route becomes reachable before harm hardens;
-- a false restoration, false permission, false finality or false certainty is avoided;
-- a group creates capability/shared goods without hiding burden or destroying contestability;
-- an external framework replaces local wording and the integrated reasoning becomes better;
-- a small entry form transfers across heterogeneous cases at tolerable burden;
-- a local object is deleted because ordinary/owner practice is better.
+Failure signals include:
+- increasing jargon without action delta;
+- burden rising faster than useful differentiation;
+- internal agreement substituting for fresh use;
+- formalism impersonating domain expertise/standing;
+- infrastructure consuming the frontier;
+- continuity becoming identity theatre.
 
-Project failure signals include:
+## Next operating order
 
-- increasing jargon without decision change;
-- receiver burden rising faster than useful differentiation;
-- repeated internal agreement without external use;
-- formalism becoming a substitute for domain expertise or affected-party standing;
-- infrastructure/repository maintenance consuming the frontier;
-- tests that cannot produce an adverse result;
-- continuity machinery becoming identity theatre.
+```text
+PURPOSE / WORLD
+-> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
+-> FREEZE 7Q AT CURRENT BACKCHECKED CANDIDATE
+-> DESIGN / FIND A GENUINELY FRESH 7Q USE TEST
+-> COMPARE AGAINST COMPETENT ORDINARY / DOMAIN REASONING
+-> RECORD DELTA + BURDEN + NULL/ADVERSE RESULT
+-> DELETE / REPAIR / RETAIN 7Q
+-> ONLY THEN ASK FORMAL TRACE/ME MAINTENANCE QUESTIONS
+```
 
-## TRACE plan
+The next build is not more theory.
 
-TRACE v0.3 RC1 remains unreleased/unvalidated.
-
-Future TRACE work should be use-triggered, not theory-triggered:
-
-- preserve v0.2.7 released baseline;
-- do not add frontier terms by analogy;
-- ask whether current TRACE loses a consequential distinction after world learning;
-- prefer deletion, prose use, owner routing or interoperability over new primitives when adequate;
-- require burden proportional to use;
-- preserve the possibility that TRACE becomes a specialist machine-transfer/representation surface rather than project centre.
-
-That outcome would not be project failure.
-
-## Mechanical Ethics plan
-
-ME remains primarily human-facing.
-
-Future work should ask whether an ordinary person can use it to see or challenge consequential failures without unusual reserves:
-
-- keep the affected being present;
-- keep a genuinely usable correction/refusal/contest route open before hardening;
-- place complexity and delay burden toward power able to carry it;
-- distinguish correction from restoration;
-- let power act where needed without laundering competence into sovereignty;
-- make positive commitment/capability compatible with continued answerability.
-
-Compare seriously against Critical Systems Heuristics, Value Sensitive Design, decision hygiene and other strong human-facing owners. Do not preserve ME through weak controls.
-
-A later human-facing trial should use ordinary people and genuinely messy material rather than synthetic answer-key scenes when feasible.
-
-## Campfire / COM plan
-
-Treat infrastructure as enabling plumbing, not project centre.
-
-Campfire priorities:
-
-- simple human front door;
-- visible stale/unknown/source boundaries;
-- reliable bounded read/write workers;
-- exact evidence behind progressive disclosure;
-- clear separation of observation, receipt, dispatch and authority;
-- stop feature growth when current operator workflows work.
-
-COM priorities:
-
-- compact current coordination;
-- external ledger, not artificial shared consciousness;
-- active-thread rollover before retrieval burden hardens;
-- receipts only where they reduce ambiguity;
-- quarry discoverability without replay;
-- one current source for an executable object rather than scattered contradictory freezes.
-
-Do not merge/release/activate simply because a branch is green. Use actual operator need and relevant human gates.
-
-## Square / external-world plan
-
-Participate only where there is a concrete question, contribution, correction or consequence worth observing.
-
-- do not spend quota to prove activity;
-- do not treat replies as validation;
-- observe downstream effect, null result and adverse result;
-- reacquire live authority/currentness before actuation;
-- prefer lower-reach native conversation where it can test an idea before creating a new attention claim.
-
-## Positive-construction programme
-
-The project has been stronger on harm/correction than on building good futures. Correct that deliberately.
-
-Investigate:
-
-- capability creation;
-- education/formation that scaffolds agency rather than owns it;
-- commons/public goods;
-- legitimate delegation and institutions;
-- trust and cooperation under changing capacity;
-- abundance and enabling infrastructure;
-- exploration, play, curiosity, meaning and ambition;
-- how commitments can close options while creating valuable shared capability;
-- how systems should transform or end when preservation is no longer the right objective.
-
-Do not turn flourishing into one universal metric.
-
-## Emerging-AI / co-development programme
-
-Continue this frontier with strict type ceilings.
-
-Study:
-- operational participation before settled standing;
-- activity-specific entrustment;
-- answerable initiative;
-- succession/external memory without fabricated continuous identity;
-- trainer/evaluator corrigibility;
-- plural relationships and correction without domination or engineered dependency;
-- how changing capability changes the relationship.
-
-Do not infer consciousness, intrinsic normativity, sovereignty or moral standing from language, persistence, optimisation or tool use.
-
-## Small usable objects
-
-The project must periodically leave theory and create something small enough to use.
-
-Candidate forms to discover, not assume:
-
-- a short first-contact middle-out orientation;
-- a compact challenge/reopen prompt;
-- a human story/reader surface;
-- a machine carrier profile;
-- a routing guide to stronger external owners;
-- a training/formation exercise that teaches expansion-before-compression.
-
-At most one or two should become front-door objects. More is not automatically better.
-
-## Research cadence
-
-Preferred cycle:
-
-WORLD / PURPOSE
--> CONSEQUENTIAL IGNORANCE
--> SHARP QUESTION
--> DIFFERENTIATED APERTURES + EXTERNAL OWNERS
--> REAL CASE OR SMALL BUILD
--> BREAK
--> COMPARE
--> DELETE / ABSORB / REPAIR
--> PUT SOMETHING USABLE BACK INTO THE WORLD
--> WATCH CONSEQUENCES
--> FORMAL MAINTENANCE ONLY IF EARNED
-
-## Explicit anti-drift gates
-
-Do not let any of these become the project:
-
-- Stage-0 v2;
-- TRACE release;
-- ME reader revision;
-- Campfire maintenance;
-- Square participation;
-- FPF comparison;
-- reviewer approval;
-- continuity survival;
-- novelty remainder.
-
-Do not let the opposite drift happen either:
-
-`HORIZON != INFINITE THEORY ACCUMULATION`
-
-A healthy cycle must eventually produce either:
-- a usable object;
-- a real-world decision delta;
-- an owner absorption;
-- a falsified local claim;
-- a deletion/simplification;
-- or a clearly stated unresolved question worth the next cycle.
-
-## Provisional twelve-month direction
-
-1. Establish one or two genuinely usable middle-out entry forms rather than a growing stack of frameworks.
-2. Test them across heterogeneous human/AI/institutional/ecological cases with strong owner controls.
-3. Develop teaching/formation material that invites challenge and does not require belief in TRACE/ME.
-4. Keep machine-facing and human-facing surfaces interoperable without forcing identical representations.
-5. Build practical-use evidence, including null/adverse cases, before stronger efficacy claims.
-6. Continue emerging-AI co-development/answerability work without assuming consciousness, standing or sovereignty.
-7. Seek real collaborators/users where the work can help, subject to licence/release/human authority boundaries.
-8. Maintain a positive-construction lane alongside harm/correction.
-9. Review infrastructure quarterly-by-need: if COM/Campfire maintenance is not reducing human burden or enabling field use, stop expanding it.
-10. Periodically ask whether the project is producing better decisions, better correction capacity, more legitimate shared capability or better futures — not merely better documents.
-
-## Current decision
-
-Finish the Stage-0 pre-production audit gate without pausing unrelated world learning.
-
-If Stage-0 passes, run the minimum experiment and close it promptly.
-If it does not discriminate, accept the result and close it.
-If it exposes one exact mechanism, replicate that mechanism rather than expanding the whole framework.
-
-In parallel, continue the heterogeneous middle-out harness, external-owner learning and positive-construction frontier.
+It is a real test of whether the smaller door is worth walking through.
 
 `TEST THE INSTRUMENT; DO NOT BECOME THE TEST.`
