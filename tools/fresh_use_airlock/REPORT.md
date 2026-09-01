@@ -30,14 +30,23 @@ It closes five preparation/evidence gaps:
    it is not a trusted wall-clock or proof that the operator did not inspect the
    arm map. Unmasking deliberately does not manufacture a final disposition.
 
-Claude Code's first threat-model review also produced four bounded repairs:
+Claude Code's threat-model review also produced bounded repairs:
 - raw HTML can be transformed directly through visible-text normalization and
   frozen line selection in one replayable extraction recipe;
-- native Windows now fails closed until a tested private-map DACL backend
-  exists;
+- native Windows now has a fail-closed DACL backend: current identity is
+  resolved by SID, a protected current-user/System/Administrators ACL is
+  installed with built-in PowerShell/.NET facilities, and an independent ACL
+  read-back must exactly match owner, trustee, allow/rights, inheritance and
+  propagation expectations;
 - receipts classify tool-bound facts separately from operator attestations;
 - the output budget is explicitly English-scoped and ZIP creation uses
   exclusive file creation.
+
+The preparation order was also repaired. All configuration, pinned-object,
+manifest, raw-hash, extraction and extracted-hash checks complete before the
+private-storage guard. The guard still executes before the first bundle file is
+written, so Windows permission failure cannot leave receiver or evaluator
+artifacts behind.
 
 Observable burden retained by the receipt includes elapsed time, exact answer
 bytes/Unicode words, reported token counts, source opens, clarifications,
@@ -83,6 +92,14 @@ domain correctness, 7Q usefulness, or project validity. New session remains
 different from historically fresh receiver. A run can and should still end in a
 null, adverse, burden-exceeds-value, case-not-discriminating, or inconclusive
 outcome.
+
+The Windows ACL backend is access control, not encryption. It does not defend
+against compromise of the current account, administrators, Local System, the
+kernel, backups, or offline media; administrators can take ownership. Those two
+privileged built-ins are retained for normal OS operation and recovery. Unknown
+trustees, inherited rules, ambiguous SID resolution, unavailable built-in
+commands, and unverifiable read-back all stop execution. POSIX mode bits retain
+their corresponding root/operator/storage-layer ceiling.
 
 ## Suggested COM integration
 

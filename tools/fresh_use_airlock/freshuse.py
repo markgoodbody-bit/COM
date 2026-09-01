@@ -8,8 +8,10 @@ opens a network connection, evaluates an answer, or changes the project repos.
 from __future__ import annotations
 
 import argparse
+import csv
 import datetime as dt
 import hashlib
+import io
 import json
 import os
 import re
@@ -22,7 +24,7 @@ import tempfile
 import zipfile
 from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
-from typing import Any
+from typing import Any, Callable
 
 
 SCHEMA_VERSION = "1"
@@ -92,12 +94,192 @@ def write_new(path: Path, data: bytes, mode: int | None = None) -> None:
         require_private_storage(path, mode)
 
 
-def require_private_storage(path: Path, mode: int, *, platform_name: str | None = None) -> None:
+WINDOWS_SYSTEM_SID = "S-1-5-18"
+WINDOWS_ADMINISTRATORS_SID = "S-1-5-32-544"
+WINDOWS_FULL_CONTROL = 2032127
+WindowsRunner = Callable[[list[str], dict[str, str]], Any]
+
+
+def _default_windows_runner(argv: list[str], env: dict[str, str]) -> subprocess.CompletedProcess[str]:
+    try:
+        return subprocess.run(
+            argv,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=False,
+            env=env,
+        )
+    except OSError as exc:
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: cannot execute {argv[0]}: {exc}"
+        ) from exc
+
+
+def _windows_current_identity(runner: WindowsRunner) -> tuple[str, str]:
+    result = runner(["whoami.exe", "/user", "/fo", "csv", "/nh"], dict(os.environ))
+    if result.returncode != 0:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: whoami identity lookup failed: "
+            + str(result.stderr).strip()
+        )
+    try:
+        rows = [row for row in csv.reader(io.StringIO(result.stdout)) if any(field.strip() for field in row)]
+    except (csv.Error, TypeError) as exc:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: cannot parse whoami output") from exc
+    if len(rows) != 1 or len(rows[0]) != 2:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: whoami returned an ambiguous identity")
+    account, sid = (field.strip() for field in rows[0])
+    if not account or not re.fullmatch(r"S-\d+(?:-\d+)+", sid):
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: whoami returned an invalid account or SID")
+    if sid in {WINDOWS_SYSTEM_SID, WINDOWS_ADMINISTRATORS_SID}:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: current identity aliases a privileged built-in trustee"
+        )
+    return account, sid
+
+
+_WINDOWS_SET_DACL = r"""
+$ErrorActionPreference = 'Stop'
+$path = $env:FRESHUSE_ACL_PATH
+$userSidText = $env:FRESHUSE_ACL_USER_SID
+$isDirectory = $env:FRESHUSE_ACL_IS_DIRECTORY -eq '1'
+$security = if ($isDirectory) {
+    [System.Security.AccessControl.DirectorySecurity]::new()
+} else {
+    [System.Security.AccessControl.FileSecurity]::new()
+}
+$security.SetAccessRuleProtection($true, $false)
+$userSid = [System.Security.Principal.SecurityIdentifier]::new($userSidText)
+$security.SetOwner($userSid)
+$inheritance = if ($isDirectory) {
+    [System.Security.AccessControl.InheritanceFlags]::ContainerInherit -bor
+        [System.Security.AccessControl.InheritanceFlags]::ObjectInherit
+} else {
+    [System.Security.AccessControl.InheritanceFlags]::None
+}
+foreach ($sidText in @($userSidText, 'S-1-5-18', 'S-1-5-32-544')) {
+    $sid = [System.Security.Principal.SecurityIdentifier]::new($sidText)
+    $rule = [System.Security.AccessControl.FileSystemAccessRule]::new(
+        $sid,
+        [System.Security.AccessControl.FileSystemRights]::FullControl,
+        $inheritance,
+        [System.Security.AccessControl.PropagationFlags]::None,
+        [System.Security.AccessControl.AccessControlType]::Allow
+    )
+    [void]$security.AddAccessRule($rule)
+}
+Set-Acl -LiteralPath $path -AclObject $security
+""".strip()
+
+
+_WINDOWS_READ_DACL = r"""
+$ErrorActionPreference = 'Stop'
+$acl = Get-Acl -LiteralPath $env:FRESHUSE_ACL_PATH
+$rules = @($acl.GetAccessRules($true, $true, [System.Security.Principal.SecurityIdentifier]) | ForEach-Object {
+    [ordered]@{
+        sid = $_.IdentityReference.Value
+        type = $_.AccessControlType.ToString()
+        rights = [int64]$_.FileSystemRights
+        inherited = [bool]$_.IsInherited
+        inheritance = [int]$_.InheritanceFlags
+        propagation = [int]$_.PropagationFlags
+    }
+})
+[ordered]@{
+    protected = [bool]$acl.AreAccessRulesProtected
+    owner_sid = $acl.GetOwner([System.Security.Principal.SecurityIdentifier]).Value
+    rules = [object[]]$rules
+} | ConvertTo-Json -Compress -Depth 5
+""".strip()
+
+
+def _windows_private_storage(path: Path, mode: int, runner: WindowsRunner) -> None:
+    if not path.exists():
+        raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: path does not exist: {path}")
+    is_directory = path.is_dir()
+    expected_mode = 0o700 if is_directory else 0o600
+    if mode != expected_mode:
+        raise AirlockError(
+            f"PRIVATE_STORAGE_UNVERIFIED: Windows backend supports only "
+            f"{'0700 directories' if is_directory else '0600 files'}"
+        )
+    _account, user_sid = _windows_current_identity(runner)
+    environment = dict(os.environ)
+    environment.update(
+        {
+            "FRESHUSE_ACL_PATH": str(path),
+            "FRESHUSE_ACL_USER_SID": user_sid,
+            "FRESHUSE_ACL_IS_DIRECTORY": "1" if is_directory else "0",
+        }
+    )
+    powershell = ["powershell.exe", "-NoLogo", "-NoProfile", "-NonInteractive", "-Command"]
+    result = runner(powershell + [_WINDOWS_SET_DACL], environment)
+    if result.returncode != 0:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: Windows DACL installation failed: "
+            + str(result.stderr).strip()
+        )
+    result = runner(powershell + [_WINDOWS_READ_DACL], environment)
+    if result.returncode != 0:
+        raise AirlockError(
+            "PRIVATE_STORAGE_UNVERIFIED: Windows DACL read-back failed: "
+            + str(result.stderr).strip()
+        )
+    try:
+        observed = json.loads(result.stdout)
+    except (json.JSONDecodeError, TypeError) as exc:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: Windows DACL read-back is not JSON") from exc
+    if not isinstance(observed, dict) or set(observed) != {"protected", "owner_sid", "rules"}:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: Windows DACL read-back has an unknown shape")
+    if observed["protected"] is not True:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: Windows DACL still permits inheritance")
+    if observed["owner_sid"] != user_sid:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: Windows owner SID is not the current user")
+    rules = observed["rules"]
+    if not isinstance(rules, list) or len(rules) != 3:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: Windows DACL must contain exactly three rules")
+    expected_sids = {user_sid, WINDOWS_SYSTEM_SID, WINDOWS_ADMINISTRATORS_SID}
+    observed_sids: set[str] = set()
+    expected_inheritance = 3 if is_directory else 0
+    for rule in rules:
+        if not isinstance(rule, dict) or set(rule) != {
+            "sid", "type", "rights", "inherited", "inheritance", "propagation"
+        }:
+            raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: Windows DACL rule has an unknown shape")
+        sid = rule["sid"]
+        if not isinstance(sid, str) or sid in observed_sids:
+            raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: duplicate or invalid Windows trustee")
+        observed_sids.add(sid)
+        if (
+            rule["type"] != "Allow"
+            or rule["rights"] != WINDOWS_FULL_CONTROL
+            or rule["inherited"] is not False
+            or rule["inheritance"] != expected_inheritance
+            or rule["propagation"] != 0
+        ):
+            raise AirlockError(
+                f"PRIVATE_STORAGE_UNVERIFIED: unsafe or unverifiable Windows ACL rule for {sid}"
+            )
+    if observed_sids != expected_sids:
+        raise AirlockError("PRIVATE_STORAGE_UNVERIFIED: missing or unexpected Windows trustee")
+
+
+def require_private_storage(
+    path: Path,
+    mode: int,
+    *,
+    platform_name: str | None = None,
+    windows_runner: WindowsRunner | None = None,
+) -> None:
     platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        _windows_private_storage(path, mode, windows_runner or _default_windows_runner)
+        return
     if platform_name != "posix":
         raise AirlockError(
-            "PRIVATE_STORAGE_UNVERIFIED: native Windows permission handling is not implemented; "
-            "run the airlock in WSL/Linux or add and test a Windows DACL backend"
+            f"PRIVATE_STORAGE_UNVERIFIED: unsupported operating-system permission model: {platform_name}"
         )
     path.chmod(mode)
     actual = stat.S_IMODE(path.stat().st_mode)
@@ -105,6 +287,15 @@ def require_private_storage(path: Path, mode: int, *, platform_name: str | None 
         raise AirlockError(
             f"PRIVATE_STORAGE_UNVERIFIED: expected mode {mode:o} for {path}, got {actual:o}"
         )
+
+
+def private_storage_boundary(*, platform_name: str | None = None) -> str:
+    platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        return "WINDOWS_PROTECTED_DACL_VERIFIED__OPERATOR_ISOLATION_STILL_REQUIRED"
+    if platform_name == "posix":
+        return "POSIX_MODE_BITS_VERIFIED__OPERATOR_ISOLATION_STILL_REQUIRED"
+    raise AirlockError(f"PRIVATE_STORAGE_UNVERIFIED: unsupported operating system: {platform_name}")
 
 
 def event_log_path(bundle: Path) -> Path:
@@ -456,6 +647,79 @@ def extract_source(raw: bytes, recipe: dict[str, Any], context: str) -> bytes:
     raise AirlockError(f"{context} unsupported extraction mode: {mode}")
 
 
+def prevalidate_case_inputs(
+    cases: Any, *, repo: Path, config_path: Path
+) -> None:
+    """Validate all case structure and source hashes before creating private storage."""
+    if not isinstance(cases, list) or not cases:
+        raise AirlockError("cases must be a non-empty list")
+    seen_cases: set[str] = set()
+    for case in cases:
+        if not isinstance(case, dict):
+            raise AirlockError("case must be an object")
+        require_keys(case, {"case_id", "manifest", "sources"}, "case")
+        case_id = case["case_id"]
+        if not isinstance(case_id, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,40}", case_id):
+            raise AirlockError(f"invalid case_id: {case_id}")
+        if case_id in seen_cases:
+            raise AirlockError(f"duplicate case_id: {case_id}")
+        seen_cases.add(case_id)
+        manifest_ref = case["manifest"]
+        if not isinstance(manifest_ref, dict):
+            raise AirlockError(f"case {case_id} manifest must be an object")
+        require_keys(manifest_ref, {"commit", "path", "sha256"}, f"case {case_id} manifest")
+        manifest_bytes = git_bytes(repo, manifest_ref["commit"], manifest_ref["path"])
+        verify_experiment_text(manifest_bytes, manifest_ref["sha256"], f"case {case_id} manifest")
+        extract_neutral_task(manifest_bytes.decode("utf-8"))
+        sources = case["sources"]
+        if not isinstance(sources, list) or not sources:
+            raise AirlockError(f"case {case_id} has no preserved source snapshots")
+        member_names: set[str] = set()
+        for index, source in enumerate(sources, 1):
+            if not isinstance(source, dict):
+                raise AirlockError(f"case {case_id} source {index} must be an object")
+            require_keys(
+                source,
+                {
+                    "raw_path", "raw_sha256", "extraction", "extracted_sha256",
+                    "source_identity", "display_name",
+                },
+                f"case {case_id} source",
+            )
+            source_path = Path(source["raw_path"])
+            if not source_path.is_absolute():
+                source_path = (config_path.parent / source_path).resolve()
+            if not source_path.is_file():
+                raise AirlockError(f"source snapshot is not a file: {source_path}")
+            raw = source_path.read_bytes()
+            expected_raw = require_sha(source["raw_sha256"], f"case {case_id} raw_sha256")
+            actual_raw = sha256_bytes(raw)
+            if actual_raw != expected_raw:
+                raise AirlockError(
+                    f"raw source hash mismatch for {source_path}: expected {expected_raw}, got {actual_raw}"
+                )
+            extracted = extract_source(raw, source["extraction"], f"case {case_id} source {index}")
+            expected_extracted = require_sha(
+                source["extracted_sha256"], f"case {case_id} extracted_sha256"
+            )
+            actual_extracted = sha256_bytes(extracted)
+            if actual_extracted != expected_extracted:
+                raise AirlockError(
+                    f"extracted source hash mismatch for {source_path}: "
+                    f"expected {expected_extracted}, got {actual_extracted}"
+                )
+            identity = source["source_identity"]
+            if not isinstance(identity, str) or not identity.strip():
+                raise AirlockError(f"case {case_id} source_identity is empty")
+            safe_name = re.sub(r"[^A-Za-z0-9._-]+", "_", str(source["display_name"])).strip("._")
+            if not safe_name:
+                raise AirlockError(f"case {case_id} source has invalid display_name")
+            member_name = f"SOURCES/{index:02d}_{safe_name}"
+            if member_name in member_names:
+                raise AirlockError(f"duplicate receiver source member: {member_name}")
+            member_names.add(member_name)
+
+
 def load_bundle(bundle: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     require_private_storage(bundle, 0o700)
     require_private_storage(bundle / "private", 0o700)
@@ -527,18 +791,27 @@ def _prepare_into(args: argparse.Namespace, out: Path) -> int:
     prompt_text = loaded_spec["prompts"].decode("utf-8")
     instructions = {arm: extract_fenced_instruction(prompt_text, arm).encode("utf-8") for arm in ("O", "Q")}
 
-    (out / "public" / "cells").mkdir(parents=True)
-    (out / "private").mkdir(parents=True)
+    cases = cfg["cases"]
+    prevalidate_case_inputs(cases, repo=repo, config_path=config_path)
+
+    # The temporary root exists but contains no experiment files at this point.
+    # Establish its boundary before creating children; Windows traverse-bypass
+    # semantics make it unsafe to rely on the parent DACL alone for children
+    # that were created under an earlier, permissive ACL.
     require_private_storage(out, 0o700)
+    (out / "public").mkdir()
+    require_private_storage(out / "public", 0o700)
+    (out / "public" / "cells").mkdir()
+    require_private_storage(out / "public" / "cells", 0o700)
+    (out / "private").mkdir(parents=True)
     require_private_storage(out / "private", 0o700)
-    permission_boundary = "POSIX_MODE_BITS_VERIFIED__OPERATOR_ISOLATION_STILL_REQUIRED"
+    (out / "private" / "source-ledgers").mkdir()
+    require_private_storage(out / "private" / "source-ledgers", 0o700)
+    permission_boundary = private_storage_boundary()
 
     public_cells: list[dict[str, Any]] = []
     private_cells: list[dict[str, Any]] = []
     seen_aliases: set[str] = set()
-    cases = cfg["cases"]
-    if not isinstance(cases, list) or not cases:
-        raise AirlockError("cases must be a non-empty list")
     seen_cases: set[str] = set()
     for case in cases:
         require_keys(case, {"case_id", "manifest", "sources"}, "case")

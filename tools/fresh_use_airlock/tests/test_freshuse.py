@@ -6,6 +6,7 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -158,6 +159,55 @@ class FreshUseAirlockTests(unittest.TestCase):
         self._git("add", anchor_path)
         self._git("commit", "-m", f"anchor {case_id} score token")
         return self._git("rev-parse", "HEAD").stdout.strip(), anchor_path
+
+    def _windows_runner(
+        self,
+        *,
+        observed=None,
+        whoami_stdout='"WORKSTATION\\pilot","S-1-5-21-100-200-300-1001"\n',
+        whoami_returncode=0,
+        set_returncode=0,
+        read_returncode=0,
+        read_stdout=None,
+    ):
+        if observed is None:
+            observed = {
+                "protected": True,
+                "owner_sid": "S-1-5-21-100-200-300-1001",
+                "rules": [
+                    {
+                        "sid": sid,
+                        "type": "Allow",
+                        "rights": freshuse.WINDOWS_FULL_CONTROL,
+                        "inherited": False,
+                        "inheritance": 3,
+                        "propagation": 0,
+                    }
+                    for sid in (
+                        "S-1-5-21-100-200-300-1001",
+                        freshuse.WINDOWS_SYSTEM_SID,
+                        freshuse.WINDOWS_ADMINISTRATORS_SID,
+                    )
+                ],
+            }
+        calls = []
+
+        def runner(argv, env):
+            calls.append((argv, env))
+            if argv[0] == "whoami.exe":
+                return subprocess.CompletedProcess(
+                    argv, whoami_returncode, whoami_stdout, "whoami failed"
+                )
+            if "Set-Acl" in argv[-1]:
+                return subprocess.CompletedProcess(argv, set_returncode, "", "set failed")
+            return subprocess.CompletedProcess(
+                argv,
+                read_returncode,
+                json.dumps(observed) if read_stdout is None else read_stdout,
+                "read failed",
+            )
+
+        return runner, calls
 
     def test_prepare_binds_raw_extract_case_and_blinds_arms(self):
         public = self._prepare()
@@ -510,9 +560,148 @@ class FreshUseAirlockTests(unittest.TestCase):
             freshuse.deterministic_zip(target, {"member.txt": b"new"})
         self.assertEqual(b"sentinel", target.read_bytes())
 
-    def test_native_windows_private_storage_fails_closed(self):
-        with self.assertRaisesRegex(freshuse.AirlockError, "PRIVATE_STORAGE_UNVERIFIED"):
-            freshuse.require_private_storage(self.base, 0o700, platform_name="nt")
+    def test_native_windows_private_storage_verifies_directory_dacl(self):
+        runner, calls = self._windows_runner()
+        freshuse.require_private_storage(
+            self.base, 0o700, platform_name="nt", windows_runner=runner
+        )
+        self.assertEqual(3, len(calls))
+        self.assertEqual("whoami.exe", calls[0][0][0])
+        self.assertIn("Set-Acl", calls[1][0][-1])
+        self.assertIn("Get-Acl", calls[2][0][-1])
+        self.assertEqual(str(self.base), calls[1][1]["FRESHUSE_ACL_PATH"])
+        self.assertEqual("1", calls[1][1]["FRESHUSE_ACL_IS_DIRECTORY"])
+
+    def test_native_windows_private_storage_verifies_file_dacl(self):
+        target = self.base / "private.json"
+        target.write_text("{}", encoding="utf-8")
+        runner, _calls = self._windows_runner()
+        observed = {
+            "protected": True,
+            "owner_sid": "S-1-5-21-100-200-300-1001",
+            "rules": [
+                dict(rule, inheritance=0)
+                for rule in json.loads(
+                    self._windows_runner()[0](
+                        ["powershell.exe", "read"], {}
+                    ).stdout
+                )["rules"]
+            ],
+        }
+        runner, calls = self._windows_runner(observed=observed)
+        freshuse.require_private_storage(
+            target, 0o600, platform_name="nt", windows_runner=runner
+        )
+        self.assertEqual("0", calls[1][1]["FRESHUSE_ACL_IS_DIRECTORY"])
+
+    def test_native_windows_private_storage_rejects_identity_failures(self):
+        cases = (
+            ({"whoami_returncode": 1}, "identity lookup failed"),
+            ({"whoami_stdout": '"A","S-1-5-21-1"\n"B","S-1-5-21-2"\n'}, "ambiguous"),
+            ({"whoami_stdout": '"A","not-a-sid"\n'}, "invalid account or SID"),
+            ({"whoami_stdout": '"SYSTEM","S-1-5-18"\n'}, "privileged built-in"),
+        )
+        for options, message in cases:
+            with self.subTest(message=message):
+                runner, _calls = self._windows_runner(**options)
+                with self.assertRaisesRegex(freshuse.AirlockError, message):
+                    freshuse.require_private_storage(
+                        self.base, 0o700, platform_name="nt", windows_runner=runner
+                    )
+
+    def test_native_windows_private_storage_rejects_command_or_output_failures(self):
+        cases = (
+            ({"set_returncode": 1}, "installation failed"),
+            ({"read_returncode": 1}, "read-back failed"),
+            ({"read_stdout": "not-json"}, "read-back is not JSON"),
+        )
+        for options, message in cases:
+            with self.subTest(message=message):
+                runner, _calls = self._windows_runner(**options)
+                with self.assertRaisesRegex(freshuse.AirlockError, message):
+                    freshuse.require_private_storage(
+                        self.base, 0o700, platform_name="nt", windows_runner=runner
+                    )
+
+    def test_native_windows_private_storage_rejects_unavailable_builtin(self):
+        with mock.patch.object(
+            freshuse.subprocess, "run", side_effect=FileNotFoundError("missing fixture")
+        ):
+            with self.assertRaisesRegex(freshuse.AirlockError, "cannot execute whoami.exe"):
+                freshuse.require_private_storage(self.base, 0o700, platform_name="nt")
+
+    def test_native_windows_private_storage_rejects_wrong_mode_for_path_kind(self):
+        runner, _calls = self._windows_runner()
+        with self.assertRaisesRegex(freshuse.AirlockError, "0700 directories"):
+            freshuse.require_private_storage(
+                self.base, 0o600, platform_name="nt", windows_runner=runner
+            )
+
+    def test_native_windows_private_storage_rejects_unsafe_readback(self):
+        base_runner, _calls = self._windows_runner()
+        baseline = json.loads(base_runner(["powershell.exe", "read"], {}).stdout)
+        cases = []
+        changed = json.loads(json.dumps(baseline))
+        changed["protected"] = False
+        cases.append((changed, "permits inheritance"))
+        changed = json.loads(json.dumps(baseline))
+        changed["owner_sid"] = freshuse.WINDOWS_SYSTEM_SID
+        cases.append((changed, "owner SID"))
+        changed = json.loads(json.dumps(baseline))
+        changed["rules"][0]["inherited"] = True
+        cases.append((changed, "unsafe or unverifiable"))
+        changed = json.loads(json.dumps(baseline))
+        changed["rules"][0]["type"] = "Deny"
+        cases.append((changed, "unsafe or unverifiable"))
+        changed = json.loads(json.dumps(baseline))
+        changed["rules"][0]["rights"] = 1
+        cases.append((changed, "unsafe or unverifiable"))
+        changed = json.loads(json.dumps(baseline))
+        changed["rules"][0]["sid"] = "S-1-5-11"
+        cases.append((changed, "unexpected Windows trustee"))
+        changed = json.loads(json.dumps(baseline))
+        changed["rules"][1]["sid"] = changed["rules"][0]["sid"]
+        cases.append((changed, "duplicate or invalid"))
+        changed = json.loads(json.dumps(baseline))
+        changed["rules"] = changed["rules"][:2]
+        cases.append((changed, "exactly three rules"))
+        for observed, message in cases:
+            with self.subTest(message=message):
+                runner, _calls = self._windows_runner(observed=observed)
+                with self.assertRaisesRegex(freshuse.AirlockError, message):
+                    freshuse.require_private_storage(
+                        self.base, 0o700, platform_name="nt", windows_runner=runner
+                    )
+
+    def test_raw_hash_error_precedes_private_storage_guard(self):
+        cfg = json.loads(self.config.read_text())
+        cfg["cases"][0]["sources"][0]["raw_sha256"] = "0" * 64
+        self.config.write_text(json.dumps(cfg), encoding="utf-8")
+        out = self.base / "assembly"
+        out.mkdir()
+        with mock.patch.object(
+            freshuse,
+            "require_private_storage",
+            side_effect=AssertionError("private guard ran too early"),
+        ):
+            with self.assertRaisesRegex(freshuse.AirlockError, "raw source hash mismatch"):
+                freshuse._prepare_into(
+                    type("Args", (), {"config": str(self.config)})(), out
+                )
+
+    def test_private_guard_runs_before_first_bundle_file_write(self):
+        out = self.base / "assembly"
+        out.mkdir()
+        with mock.patch.object(
+            freshuse,
+            "require_private_storage",
+            side_effect=freshuse.AirlockError("PRIVATE_STORAGE_UNVERIFIED: fixture"),
+        ):
+            with self.assertRaisesRegex(freshuse.AirlockError, "PRIVATE_STORAGE_UNVERIFIED"):
+                freshuse._prepare_into(
+                    type("Args", (), {"config": str(self.config)})(), out
+                )
+        self.assertEqual([], [path for path in out.rglob("*") if path.is_file()])
 
 
 if __name__ == "__main__":

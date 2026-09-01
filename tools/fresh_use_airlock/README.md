@@ -27,10 +27,15 @@ PINNED PROJECT TEXT + PRESERVED EXTERNAL BYTES
 - a local COM checkout containing the pinned commits;
 - exact local snapshots of every external source supplied to receivers.
 
-No Python packages or network access are used. This v1 requires a POSIX
-filesystem boundary (Linux/macOS/WSL). Native Windows execution fails closed
-because `chmod` is not a tested Windows confidentiality control for the private
-arm map.
+No Python packages or network access are used. POSIX hosts verify exact `0700`
+directory and `0600` file modes. Native Windows uses built-in `whoami.exe` plus
+Windows PowerShell/.NET ACL facilities. It resolves the current account to one
+unambiguous SID, installs a protected DACL, and then independently reads the ACL
+back. The read-back must show the current user as owner and exactly three
+explicit `Allow FullControl` trustees: the current user, Local System, and the
+built-in Administrators group. Inheritance, duplicate/missing/unexpected
+trustees, deny rules, wrong rights or propagation, malformed output, unavailable
+commands, or an ambiguous identity fail closed.
 
 Create a source receipt and inspect the extracted bytes before putting its
 fields into the pilot config:
@@ -130,7 +135,13 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
 - ZIP cells use sorted members, fixed timestamps, and no compression so the
   same members produce stable bytes.
 - Public aliases are random and do not contain arm labels.
-- Private-map permissions are restricted where the filesystem supports it.
+- Private-map permissions are verified before the first bundle file is written.
+  All config, pinned project text, case-manifest, extraction, raw-source, and
+  declared-hash checks run before that guard, so an input defect is reported as
+  such rather than being masked by an unavailable storage backend.
+- On POSIX the boundary is exact mode bits. On native Windows it is a protected,
+  read-back-verified DACL for current user + Local System + built-in
+  Administrators. The current user is owner; no other trustee is accepted.
 - Each receipt distinguishes tool-bound hashes/measurements from
   operator-attested provider, exposure, timing and burden metadata. Hashing an
   attestation binds its bytes; it does not make the claim true in the world.
@@ -153,6 +164,14 @@ protocol's signal, null, adverse, exposure, and authority ceilings.
 This makes the transport more reproducible; it does not make a receiver fresh.
 The operator must still record historical exposure honestly. A Temporary Chat,
 new session, or new alias is not proof of independence.
+
+The storage guard is a local access-control boundary, not encryption or a
+defence against a compromised account, kernel, administrator, backup agent, or
+offline disk reader. Windows administrators can take ownership, and Local
+System/Administrators are retained for operating-system and administrative
+recovery. A filesystem or PowerShell environment whose ACL state cannot be
+read back in the expected form is unsupported and fails closed. POSIX mode bits
+have the analogous operator/root and storage-layer ceilings.
 
 This does not establish domain correctness, efficacy, validation, project
 survival, canon, or authority. It deliberately permits a null or adverse result.
