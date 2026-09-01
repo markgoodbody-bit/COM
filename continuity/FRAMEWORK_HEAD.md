@@ -144,7 +144,8 @@ Therefore:
 `FRESH-USE AIRLOCK = DRAFT PR #78 @ ed5e0378... / CODEX PASS / CLAUDE CODE PASS`
 `MANUAL R1 LAUNCH GATE = CLEARED`
 `NO-SPEND TEMPORARY-CHAT RECEIVER ROUTE = USER-DIRECTED / GOOGLE 2FA APPROVED / OPENAI OAUTH CALLBACK FAILED / NOT DISPATCHED`
-`LOGGED-OUT ANONYMOUS ROUTE = FRESHNESS PLAUSIBLE / ATTACHMENTS UNAVAILABLE / INLINE DERIVATIVE REQUIRES NEW EXACT REVIEW`
+`ANONYMOUS INLINE DERIVATIVE = DRAFT PR #79 @ 67ee93c... / 38 TESTS PASS / CODEX PASS / CLAUDE CODE REVIEW OPEN`
+`ANONYMOUS RECEIVER CONTEXTS = TWO SEPARATE CONTEXTS REQUIRED / CURRENT CLOUD BROWSER EXPOSES ONE`
 `PROVIDER SPEND = NOT AUTHORIZED / NOT USED`
 
 Do not use Framework/Codex/CC as the first fresh receiver; all are materially exposed.
@@ -251,7 +252,8 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- alternate authenticated Temporary Chat recovery or a separately reviewed anonymous inline-transport derivative; Google 2FA succeeded but OpenAI returned `OAuthCallback`, and logged-out uploads are unavailable;
+- Claude Code exact-head review of anonymous inline-transport derivative PR #79; Codex returned `PASS_FOR_ANONYMOUS_INLINE_TRANSPORT_REVIEW_STAGE`;
+- two genuinely separate anonymous receiver contexts, or alternate authenticated Temporary Chat recovery; current cloud browser exposes one anonymous cookie context;
 - Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
@@ -267,8 +269,8 @@ Latest FULL COMSYNC receipt:
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> BUILD + REVIEW THE SMALLEST HASH-BOUND INLINE TRANSPORT DERIVATIVE
--> OR COMPLETE AN ALTERNATE AUTHENTICATED TEMPORARY-CHAT SIGN-IN
+-> COMPLETE CLAUDE CODE EXACT REVIEW OF PR #79 @ 67ee93c...
+-> ESTABLISH TWO SEPARATE ANONYMOUS CONTEXTS OR ALTERNATE AUTHENTICATED TEMPORARY CHATS
 -> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
 -> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT

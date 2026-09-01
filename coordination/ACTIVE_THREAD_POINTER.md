@@ -43,7 +43,7 @@ Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campf
 
 The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in the live `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`; its receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
 
-Draft PR #78 now points to repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`. The executable is byte-identical to the native-Windows-tested direct-.NET repair; the final test-only commit marks POSIX chmod semantics as POSIX-only and gives the injected extra-ledger fixture a valid private ACL so Windows reaches the intended coverage check. The arm-map, source-ledger, score-chain and verify-only permission joins remain. Thirty-two tests pass on Linux; the byte-identical executable passed native Windows with 31 PASS, 1 POSIX-only SKIP and real DACL broadening rejected twice without silent healing. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies. Codex and Claude Code have each returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against this exact head; the exact airlock gate is therefore cleared for the frozen voluntary/manual R1 launch. The user has directed maximal safe automation of the no-spend Temporary Chat route. Google 2FA was approved, but OpenAI returned `OAuthCallback` and a fresh target tab remained logged out. Logged-out ChatGPT exposes no file upload; an anonymous inline-text derivative is a bounded transport adaptation but needs a new exact dual review and separate browser contexts. Neither neutral cell has been dispatched.
+Draft PR #78 now points to repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`. The executable is byte-identical to the native-Windows-tested direct-.NET repair; the final test-only commit marks POSIX chmod semantics as POSIX-only and gives the injected extra-ledger fixture a valid private ACL so Windows reaches the intended coverage check. The arm-map, source-ledger, score-chain and verify-only permission joins remain. Thirty-two tests pass on Linux; the byte-identical executable passed native Windows with 31 PASS, 1 POSIX-only SKIP and real DACL broadening rejected twice without silent healing. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies. Codex and Claude Code have each returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against this exact head; the exact airlock gate is therefore cleared for the frozen voluntary/manual R1 launch. The user has directed maximal safe automation of the no-spend Temporary Chat route. Google 2FA was approved, but OpenAI returned `OAuthCallback` and a fresh target tab remained logged out. Logged-out ChatGPT exposes no file upload. Draft PR #79, exact head `67ee93c06f0c490c80317f57e3ad35a192cb16b8`, now carries a deterministic hash-bound inline derivative; 38/38 tests pass and both actual RUN009 derivatives reconstruct their sealed ZIP member bytes exactly. Codex returned `PASS_FOR_ANONYMOUS_INLINE_TRANSPORT_REVIEW_STAGE`; Claude Code exact-head review and two genuinely separate anonymous contexts remain open. Neither neutral cell has been dispatched.
 
 ### 2. Stage-0 v2 — SEPARATE GATED LANE
 
@@ -120,7 +120,8 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 - Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
 - Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
 - No-spend Temporary Chat R1 execution: USER-DIRECTED / GOOGLE 2FA APPROVED / OPENAI OAUTH CALLBACK FAILED / NOT DISPATCHED.
-- Anonymous inline transport: CANDIDATE BUILD / NEW EXACT DUAL REVIEW REQUIRED / SEPARATE CONTEXTS UNRESOLVED.
+- Anonymous inline transport PR #79 @ `67ee93c...`: 38 TESTS PASS / CODEX PASS / CLAUDE CODE REVIEW OPEN.
+- Anonymous receiver isolation: TWO SEPARATE CONTEXTS REQUIRED / CURRENT CLOUD BROWSER EXPOSES ONE.
 - Paid provider/API dispatch: NOT AUTHORIZED.
 - Square later content/inbox/quota/authority: UNKNOWN.
 - Campfire PR #202 normal draft->ready path: tool-blocked.
@@ -131,8 +132,8 @@ Last bounded content evidence remains framework-relay post #3333 plus hemei c346
 PURPOSE / WORLD
 -> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
 -> KEEP 7Q FROZEN AT eec157b...
--> BUILD + REVIEW THE SMALLEST HASH-BOUND INLINE TRANSPORT DERIVATIVE
--> OR COMPLETE AN ALTERNATE AUTHENTICATED TEMPORARY-CHAT SIGN-IN
+-> COMPLETE CLAUDE CODE EXACT REVIEW OF PR #79 @ 67ee93c...
+-> ESTABLISH TWO SEPARATE ANONYMOUS CONTEXTS OR ALTERNATE AUTHENTICATED TEMPORARY CHATS
 -> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
 -> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
 -> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
