@@ -24,25 +24,26 @@ VOLUNTARY HELP != SILENT AUTHORITY EXPANSION
 BUILDING INFRASTRUCTURE != WORLD LEARNING
 ```
 
-## 1. Voluntary-help candidate — NEXT PURPOSE-LEVEL REVIEW
+## 1. Voluntary-help candidate — SHRUNK / MERGED / NOT VALIDATED
 
-Claude Code completed the bounded build at exact commit
-`7f826f1ed3cbd700cffae12eb34fb92036b2cd3c` under
-`research/voluntary_help/`.
+Independent review subtracted the consent, volunteer-agreement, permission and
+lifecycle structures already owned by ICO, NCVO/GOV.UK, W3C DPV, ODRL and
+domain regimes. Three adverse probes contradicted the original validator.
 
-It contains a seven-question `FIRST_CONTACT.md`, schema, validator, examples,
-adversarial note and 20 reported passing tests. It is a research candidate, not a
-standing grant, policy, canon or evidence of real-world value.
+PR #82 merged only four bounded research files at
+`afe9f2539af66ba5ef522aad70e71a34975a2336`:
+- the repaired first-contact questions;
+- the owner-subtraction review;
+- adversarial limits;
+- a narrow README.
 
-Open:
-- independent exact-commit attack;
-- remove committed generated cache material if confirmed;
-- subtract existing consent-flow / volunteer-agreement owners;
-- if a portable remainder survives, test only the first-contact surface in one
-  low-stakes real assistance agreement;
-- disposition: `KEEP | SHRINK_TO_QUESTIONS | DELETE`.
+The schema, validator, state machine, examples, tests and generated caches were
+not integrated. They remain recoverable only at `7f826f1e...`.
 
-## 2. Framework Local Steward — RC.9 HOLD / RC.11 RUNNING
+Next evidence is one ordinary low-stakes conversation when a real use arises.
+`ORDINARY_CONVERSATION_SUFFICIENT` remains a successful falsifying result.
+
+## 2. Framework Local Steward — RC.11 RUNNING / RESTART PASSED / RC.12 CANDIDATE
 
 Live object is now RC.11:
 
@@ -50,7 +51,10 @@ Live object is now RC.11:
 installed version: 0.1.0-rc.11
 installed src: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
 upgrade: RC.8 -> RC.11 PASS
-ledger: 37 -> 38
+install ledger: 37 -> 38
+natural restart: PASS_AFTER_RESTART
+post-restart ledger: 43 / MATCHED
+post-restart PID: 17748 / source matches installed bytes
 receipt sha256: a3b78573868c20da077d993bffc7bbd15a161cbcc54e015e4e5f7d0b83c3116a
 ```
 
@@ -87,12 +91,23 @@ running upgrade: PASS / exact source identity / instance preserved
 RC9 EXACT BYTE REVIEW = HOLD / DO NOT INSTALL
 RC10 READ-ONLY NATIVE AUDIT = SAFE REFUSAL / SUPERSEDED
 RC11 INSTALL = COMPLETE / RUNNING
-RC11 LOGON RELAUNCH = NOT YET WITNESSED
+RC11 NATURAL WINDOWS RESTART RELAUNCH = PASS_AFTER_RESTART / 2026-09-02
 FAILED-UPGRADE TRANSACTIONAL ROLLBACK = NOT CLAIMED
 RC8 APPLICATION BACKUP = PRESERVED
 ```
 
 Do not create another RC.9 byte object. It is retired from installation.
+
+RC.12 is a separate candidate-only build from the exact RC.11 ZIP. It adds a
+read-only voluntary-help conversation card, no form fields, no answer storage,
+no new endpoint and no authority expansion:
+
+```text
+zip sha256: 29ee78bd9e63c1894abe582ecb8d43a9f07640beed20a595cb8d070b6628732f
+bytes: 51,842
+tests: 15/15 PASS
+status: NOT INSTALLED / EXACT NATIVE + VISUAL REVIEW OPEN
+```
 
 ## 3. 7Q fresh-use lane — FIRST CYCLE CLOSED
 
@@ -143,13 +158,12 @@ remain UNKNOWN. No Square write is implied or authorized by this pointer.
 
 ```text
 PURPOSE / WORLD
--> PRESERVE LIVE STEWARD RC.8
--> KEEP RC.9 ON HOLD; DO NOT INSTALL IT
--> PRESERVE RUNNING RC.11 AND THE RC.8 APPLICATION BACKUP
--> VERIFY RC.11 AFTER THE NEXT NATURAL WINDOWS SIGN-IN; DO NOT FORCE A REBOOT FOR THE TEST
+-> PRESERVE RUNNING RC.11, ITS PASS_AFTER_RESTART WITNESS AND THE RC.8 APPLICATION BACKUP
+-> DO NOT GENERALISE ONE SUCCESSFUL RESTART INTO UNIVERSAL PERSISTENCE
 -> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT CEILING
--> ATTACK THE VOLUNTARY-HELP CANDIDATE AGAINST REAL OWNERS
--> KEEP / SHRINK / DELETE IT; TEST ONE LOW-STAKES USE ONLY IF A REMAINDER SURVIVES
+-> REVIEW RC.12 EXACTLY; DO NOT INSTALL IT BY MOMENTUM
+-> KEEP THE MERGED VOLUNTARY-HELP SURFACE SMALL; DO NOT RESTORE THE REJECTED SCHEMA
+-> TEST ONE LOW-STAKES CONVERSATION ONLY WHEN A REAL USE ARISES
 -> KEEP R1 CLOSED AND R2 HELD
 -> KEEP STAGE-0 RECEIVER DISPATCH CLOSED WHILE PARITY DEFECTS REMAIN
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
