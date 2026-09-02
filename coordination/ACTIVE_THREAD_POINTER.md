@@ -42,14 +42,16 @@ Open:
   low-stakes real assistance agreement;
 - disposition: `KEEP | SHRINK_TO_QUESTIONS | DELETE`.
 
-## 2. Framework Local Steward — RC.9 REVIEW GATE
+## 2. Framework Local Steward — RC.9 HOLD / RC.11 RUNNING
 
-Live object remains RC.8:
+Live object is now RC.11:
 
 ```text
-package line: e57d6e40da7835e4b70b419a81a68d1fe1b7495cd15a1af425933d70e3dd047c
-installed src: ef679820eba2c963890a48efeaf4361860dbf57eac357651595644fa571e9b06
-last witness: PID 43432 / 37 ledger entries / head MATCHED
+installed version: 0.1.0-rc.11
+installed src: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
+upgrade: RC.8 -> RC.11 PASS
+ledger: 37 -> 38
+receipt sha256: a3b78573868c20da077d993bffc7bbd15a161cbcc54e015e4e5f7d0b83c3116a
 ```
 
 Claude Code built one distinct RC.9 candidate on the operator PC. It is NOT installed:
@@ -62,18 +64,35 @@ src sha256: 51b0136a616304a5778a6e38e925b6d72c6541009b7ebdb676df13356dc0d0d1
 reported tests: 15/15 source + 15/15 extracted; PowerShell parse PASS
 ```
 
-The build reports repairs for scheduled-task retention, truthful terminating exits,
-and exact runtime source identity. It deliberately does not carry the bounded handoff
-and has not exercised the required native Task Scheduler failure/recovery paths.
+Exact-byte audit is complete at
+`research/FRAMEWORK_LOCAL_STEWARD_RC9_AUDIT_20260902.md`. Build identity works,
+but the task-ownership predicate, overwrite race, `-NoStart` witness bypass,
+existing-token ACL handling, process match, uninstall exit semantics, missing
+rollback and wrong RC.8 dashboard badge require HOLD.
+
+RC.10's native read-only audit ran all tests and then refused safely because
+live RC.8 does not publish the source-identity field being introduced. RC.11
+repairs that audit asymmetry without weakening normal post-upgrade identity:
 
 ```text
-RC9 BUILT != RC9 CLEARED FOR INSTALL
-EXACT BYTE REVIEW = OPEN
-NATIVE DISPOSABLE PERSISTENCE WITNESS = OPEN
-LIVE RC.8 = PRESERVE
+zip sha256: f95f23246be17623c1ecf4063f544b0b45543bc7d5cd9a0ffebf9376ea5627d6
+bytes: 50,178
+src sha256: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
+Node suite: 15/15 PASS on Windows
+AuditOnly: PASS_NO_MUTATION
+running upgrade: PASS / exact source identity / instance preserved
 ```
 
-Do not create another RC.9 byte object. Review this exact candidate or retire it.
+```text
+RC9 EXACT BYTE REVIEW = HOLD / DO NOT INSTALL
+RC10 READ-ONLY NATIVE AUDIT = SAFE REFUSAL / SUPERSEDED
+RC11 INSTALL = COMPLETE / RUNNING
+RC11 LOGON RELAUNCH = NOT YET WITNESSED
+FAILED-UPGRADE TRANSACTIONAL ROLLBACK = NOT CLAIMED
+RC8 APPLICATION BACKUP = PRESERVED
+```
+
+Do not create another RC.9 byte object. It is retired from installation.
 
 ## 3. 7Q fresh-use lane — FIRST CYCLE CLOSED
 
@@ -125,9 +144,10 @@ remain UNKNOWN. No Square write is implied or authorized by this pointer.
 ```text
 PURPOSE / WORLD
 -> PRESERVE LIVE STEWARD RC.8
--> OBTAIN INDEPENDENT EXACT-BYTE REVIEW OF THE ONE RC.9 CANDIDATE
--> RUN ONLY DISPOSABLE / NON-INTERFERING NATIVE PERSISTENCE WITNESSES
--> DO NOT INSTALL RC.9 UNTIL BOTH GATES PASS
+-> KEEP RC.9 ON HOLD; DO NOT INSTALL IT
+-> PRESERVE RUNNING RC.11 AND THE RC.8 APPLICATION BACKUP
+-> VERIFY RC.11 AFTER THE NEXT NATURAL WINDOWS SIGN-IN; DO NOT FORCE A REBOOT FOR THE TEST
+-> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT CEILING
 -> ATTACK THE VOLUNTARY-HELP CANDIDATE AGAINST REAL OWNERS
 -> KEEP / SHRINK / DELETE IT; TEST ONE LOW-STAKES USE ONLY IF A REMAINDER SURVIVES
 -> KEEP R1 CLOSED AND R2 HELD

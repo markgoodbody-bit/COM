@@ -207,13 +207,14 @@ FPF main last verified:
 
 ### Framework Local Steward
 
-The installed local service remains RC.8:
+RC.11 is now the installed local service:
 
 ```text
-live package line: e57d6e40da7835e4b70b419a81a68d1fe1b7495cd15a1af425933d70e3dd047c
-installed src: ef679820eba2c963890a48efeaf4361860dbf57eac357651595644fa571e9b06
-last witnessed PID: 43432
-last witnessed ledger: 37 entries / chain and ledger-head matched
+installed version: 0.1.0-rc.11
+installed src: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
+upgrade witness: RC.8 -> RC.11 PASS
+last witnessed ledger: 38 entries / consistent and advanced from 37
+receipt sha256: a3b78573868c20da077d993bffc7bbd15a161cbcc54e015e4e5f7d0b83c3116a
 ```
 
 RC.9 was built once by Claude Code on the operator PC and is NOT installed:
@@ -226,19 +227,38 @@ src sha256: 51b0136a616304a5778a6e38e925b6d72c6541009b7ebdb676df13356dc0d0d1
 reported tests: 15/15 source + 15/15 extracted; PowerShell parser PASS
 ```
 
-RC.9 repairs the observed scheduled-task retention/exit-truthfulness path and makes
-the executing server bytes self-identifying through `/health` and bounded status.
-Installer success now binds exact version plus source hash. These are reported build
-facts, not yet an independent exact-byte review or native upgrade witness.
+Exact-byte audit is now complete at
+`research/FRAMEWORK_LOCAL_STEWARD_RC9_AUDIT_20260902.md`.
+RC.9's source identity and normal-path comparison work, but the release is HOLD:
+the visible badge says RC.8; task ownership omits principal/trigger/run-level/state;
+`-Force` leaves an overwrite race; `-NoStart` can bypass the claimed runtime witness;
+existing token ACLs are not rechecked; and failed upgrades are not rolled back.
+
+A distinct RC.10 safety candidate was built from the exact RC.9 bytes. Its
+native read-only audit ran all tests and then refused safely because live RC.8
+does not yet publish the source-identity field RC.9 introduces. RC.11 repairs
+that audit asymmetry while keeping normal post-upgrade identity strict:
+
+```text
+zip sha256: f95f23246be17623c1ecf4063f544b0b45543bc7d5cd9a0ffebf9376ea5627d6
+bytes: 50,178
+src sha256: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
+native Node tests: 15/15 PASS
+native AuditOnly: PASS_NO_MUTATION
+native running upgrade: PASS / exact source identity / instance preserved
+```
 
 Current gate:
 
 ```text
-RC9 BUILT != RC9 CLEARED FOR INSTALL
-EXACT SOURCE REVIEW = OPEN
-NATIVE SCHEDULED-TASK WITNESSES = OPEN
-BOUNDED HANDOFF = DEFERRED TO RC.10
-LIVE INSTALL = RC.8 / DO NOT REPLACE BY MOMENTUM
+RC9 EXACT SOURCE REVIEW = HOLD / RETIRED FROM INSTALL
+RC10 READ-ONLY AUDIT = SAFE REFUSAL / SUPERSEDED
+RC11 INSTALL = COMPLETE / RUNNING / EXACT SOURCE WITNESSED
+RC11 LEDGER CONTINUITY = 37 -> 38
+RC11 ACTUAL FUTURE LOGON RELAUNCH = NOT YET WITNESSED
+TRANSACTIONAL FAILED-UPGRADE RECOVERY = NOT CLAIMED
+BOUNDED HANDOFF = STILL DEFERRED
+RC8 APPLICATION BACKUP = PRESERVED
 ```
 
 No current six-case/7Q result earns TRACE or ME mutation.
@@ -304,7 +324,7 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Stage-0 B_C/D_D parity defects; receiver dispatch remains closed;
-- independent exact-artifact review and native bounded upgrade witnesses for Steward RC.9; do not install from the build return alone;
+- actual future-logon relaunch witness for installed Steward RC.11; do not manufacture it through another installer restart;
 - R1 answer-only review custody and full input-burden limits remain visible after merged PR #80; do not rewrite the frozen score or infer causal efficacy from successful outputs;
 - R2 remains the preselected second case but its frozen shared task has the same saturation defect; dispatch is HOLD pending a new discriminating claim/design, source currentness and separate receiver/dispatch authority;
 - remote authenticated browser tabs are closed; the user may revoke the cloud macOS Google session again if desired; do not loop or silently reopen authentication;
@@ -327,8 +347,10 @@ PURPOSE / WORLD
 -> STATE R1 ONLY AS NO INCREMENTAL VALUE OVER THE STRONGLY STRUCTURED ORDINARY PROMPT
 -> HOLD R2 UNTIL THE NARROW TEST CLAIM + CURRENT SOURCES + SEPARATE DISPATCH AUTHORITY ARE EXPLICIT
 -> IF R2 IS LATER AUTHORIZED, PRESERVE THE EXISTING TWO-NULL STOPPING RULE AND DO NOT ADD A POST-HOC PREDICTED WIN
--> REVIEW THE EXACT RC.9 BYTES; THEN RUN ONLY DISPOSABLE/NON-INTERFERING NATIVE PERSISTENCE WITNESSES
--> DO NOT INSTALL RC.9 UNTIL THAT GATE RETURNS
+-> KEEP RC.9 ON HOLD; DO NOT INSTALL IT
+-> PRESERVE RUNNING RC.11 AND THE RC.8 APPLICATION BACKUP
+-> VERIFY RC.11 RELAUNCH AFTER THE NEXT NATURAL WINDOWS SIGN-IN; DO NOT FORCE A REBOOT FOR THE TEST
+-> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT UNPROVEN CEILING
 -> ATTACK THE VOLUNTARY-HELP CANDIDATE AGAINST CONSENT-FLOW / VOLUNTEER-AGREEMENT OWNERS
 -> KEEP / SHRINK / DELETE IT; TEST ONE LOW-STAKES USE ONLY IF A PORTABLE REMAINDER SURVIVES
 -> RETAIN / FREEZE-AS-TEACHING-AID / DELETE 7Q ONLY UNDER THE FROZEN EVIDENCE RULES
