@@ -43,71 +43,50 @@ not integrated. They remain recoverable only at `7f826f1e...`.
 Next evidence is one ordinary low-stakes conversation when a real use arises.
 `ORDINARY_CONVERSATION_SUFFICIENT` remains a successful falsifying result.
 
-## 2. Framework Local Steward — RC.11 RUNNING / RESTART PASSED / RC.12 CANDIDATE
+## 2. Framework Local Steward — RC.13 RUNNING / FIRST HANDOFF PASSED
 
-Live object is now RC.11:
-
-```text
-installed version: 0.1.0-rc.11
-installed src: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
-upgrade: RC.8 -> RC.11 PASS
-install ledger: 37 -> 38
-natural restart: PASS_AFTER_RESTART
-post-restart ledger: 43 / MATCHED
-post-restart PID: 17748 / source matches installed bytes
-receipt sha256: a3b78573868c20da077d993bffc7bbd15a161cbcc54e015e4e5f7d0b83c3116a
-```
-
-Claude Code built one distinct RC.9 candidate on the operator PC. It is NOT installed:
+RC.13 is installed and running after exact candidate review, read-only native
+audit and witnessed upgrade:
 
 ```text
-zip: C:\Users\markg\Downloads\DEV\Framework-Local-Steward-0.1.0-rc.9.zip
-zip sha256: 5e3dfae421331e35e0d8b4ab907a366b191b1ef1cc144a9905a5961d3057f57f
-bytes: 47,284
-src sha256: 51b0136a616304a5778a6e38e925b6d72c6541009b7ebdb676df13356dc0d0d1
-reported tests: 15/15 source + 15/15 extracted; PowerShell parse PASS
+version: 0.1.0-rc.13
+source sha256: 17cf629e46ce81ab9c2730fcf19995e49f6abe1e2e05bc558cb3e26a2c002138
+candidate ZIP: 131c32c853e022b46a3f3d8a3572f4eb263ddd752989fb492fd7eb7ebf147f00
+Windows tests: 17/17 PASS
+upgrade: RC.11 -> RC.13 PASS
+ledger: 43 -> 44
+upgrade receipt: 101c2ebf7fa8c441f2b55549ed2b7a0d0d6939a376dc2b769b086c8904908dba
 ```
 
-Exact-byte audit is complete at
-`research/FRAMEWORK_LOCAL_STEWARD_RC9_AUDIT_20260902.md`. Build identity works,
-but the task-ownership predicate, overwrite race, `-NoStart` witness bypass,
-existing-token ACL handling, process match, uninstall exit semantics, missing
-rollback and wrong RC.8 dashboard badge require HOLD.
-
-RC.10's native read-only audit ran all tests and then refused safely because
-live RC.8 does not publish the source-identity field being introduced. RC.11
-repairs that audit asymmetry without weakening normal post-upgrade identity:
+The first dashboard handoff was manually carried into Framework and verified:
 
 ```text
-zip sha256: f95f23246be17623c1ecf4063f544b0b45543bc7d5cd9a0ffebf9376ea5627d6
-bytes: 50,178
-src sha256: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
-Node suite: 15/15 PASS on Windows
-AuditOnly: PASS_NO_MUTATION
-running upgrade: PASS / exact source identity / instance preserved
+capsule sha256: 940f554e8696128e061a3e3579d7b9d8e41a8de3d835db36a7668cf084928e44
+bytes: 9,693
+source ledger: 44 / MATCHED
+source head: 2b80678b837c9521caf023fd5f55f5a36721fab7a8ea9c26bca054ddc8ae0559
+transport: PASS / no provider call or spend
 ```
+
+The raw capsule is not committed. Receipt-only analysis is at
+`research/FRAMEWORK_LOCAL_STEWARD_RC13_FIRST_HANDOFF_20260902.md`.
+
+The transport also exposed its first real limitation: the mission was carried
+faithfully but was stale. It still described RC.11 and PR #82 as open and used
+COM basis `f13ad2ad...` while live COM main was `22f0e731...`; its timer still
+labelled it `CURRENT`.
 
 ```text
-RC9 EXACT BYTE REVIEW = HOLD / DO NOT INSTALL
-RC10 READ-ONLY NATIVE AUDIT = SAFE REFUSAL / SUPERSEDED
-RC11 INSTALL = COMPLETE / RUNNING
-RC11 NATURAL WINDOWS RESTART RELAUNCH = PASS_AFTER_RESTART / 2026-09-02
-FAILED-UPGRADE TRANSACTIONAL ROLLBACK = NOT CLAIMED
-RC8 APPLICATION BACKUP = PRESERVED
+RECORDED_CURRENT != EXTERNALLY_CURRENT
+TRANSPORT_INTEGRITY != CONTENT_CURRENTNESS
 ```
 
-Do not create another RC.9 byte object. It is retired from installation.
-
-RC.12 is a separate candidate-only build from the exact RC.11 ZIP. It adds a
-read-only voluntary-help conversation card, no form fields, no answer storage,
-no new endpoint and no authority expansion:
-
-```text
-zip sha256: 29ee78bd9e63c1894abe582ecb8d43a9f07640beed20a595cb8d070b6628732f
-bytes: 51,842
-tests: 15/15 PASS
-status: NOT INSTALLED / EXACT NATIVE + VISUAL REVIEW OPEN
-```
+Use RC.13 handoffs for bounded local-state reacquisition and reverify mutable
+external bases before acting. Do not add network reach or project authority to
+make the local service appear current. Preserve the RC.11 natural-restart
+witness; RC.13 natural-restart persistence and transactional failed-upgrade
+recovery remain unproven. RC.9/RC.10 are retired audit history; the RC.8
+application backup remains preserved.
 
 ## 3. 7Q fresh-use lane — FIRST CYCLE CLOSED
 
@@ -133,7 +112,7 @@ Receiver dispatch remains CLOSED.
 ## 5. Project surfaces
 
 ```text
-COM main: 43b62bcc53ba29d30e3a96c3a4d461f7eb233224 before this pointer repair
+COM main: 22f0e73165fe16b5f66d53b23be5e6c137d6a5dd before this pointer repair
 TRACE main: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
 ME main: 44f7efb59806242fd26c572cbfbaaeaefaea2058
 FPF main last verified: 3c3f968398a938bc10e83da22d509b7b8f642d83
@@ -158,10 +137,11 @@ remain UNKNOWN. No Square write is implied or authorized by this pointer.
 
 ```text
 PURPOSE / WORLD
--> PRESERVE RUNNING RC.11, ITS PASS_AFTER_RESTART WITNESS AND THE RC.8 APPLICATION BACKUP
+-> PRESERVE RUNNING RC.13, THE RC.11 PASS_AFTER_RESTART WITNESS AND THE RC.8 APPLICATION BACKUP
 -> DO NOT GENERALISE ONE SUCCESSFUL RESTART INTO UNIVERSAL PERSISTENCE
+-> USE BOUNDED HANDOFF FOR LOCAL REACQUISITION; REVERIFY MUTABLE EXTERNAL BASES
+-> TREAT STEWARD MISSION CURRENTNESS AS RECORDED/LOCAL, NOT AUTOMATICALLY EXTERNAL
 -> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT CEILING
--> REVIEW RC.12 EXACTLY; DO NOT INSTALL IT BY MOMENTUM
 -> KEEP THE MERGED VOLUNTARY-HELP SURFACE SMALL; DO NOT RESTORE THE REJECTED SCHEMA
 -> TEST ONE LOW-STAKES CONVERSATION ONLY WHEN A REAL USE ARISES
 -> KEEP R1 CLOSED AND R2 HELD
