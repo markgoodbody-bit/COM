@@ -2,7 +2,8 @@
 
 Status: technical candidate not retained for deployment. Not canon, not TRACE, not Mechanical Ethics, not validated, not adopted.
 
-Read this before the schema. If it persuades you not to use the object, it has done its job.
+This note reviews the original technical candidate preserved at commit `7f826f1e...`.
+If it persuades you not to use the retained questions, it has done its job.
 
 ## Owner subtraction, first
 
@@ -35,7 +36,7 @@ volunteering at scale          volunteer management practice, insurance,
 
 Small, and worth stating narrowly rather than dressing up.
 
-A **short, checkable record of a bounded offer or request between two named parties, in situations too small or too informal for any of the regimes above to have been engaged** — a colleague reading a draft, a neighbour with a car, one agent doing a task for another — where the ordinary failure is not illegality but drift: an offer becoming an expectation, help becoming an obligation, a favour becoming a claim.
+A short conversation about a bounded offer or request between two parties — a colleague reading a draft, a neighbour with a car, one agent doing a task for another — where the ordinary failure is drift: an offer becoming an expectation, help becoming an obligation, or a favour becoming a claim. Informality does not prove that law, safeguarding, employment, data protection or another owner is absent; check the owner whenever consequence or uncertainty warrants it.
 
 The original candidate claimed one structural contribution: **no state can be reached by waiting**. Independent review found that consent-lifecycle models and consent-record standards already own that structure, and that a string naming an actor does not witness the actor's act.
 
