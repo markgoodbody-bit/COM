@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON
-Updated: 2026-09-01 — Europe/London
+Updated: 2026-09-02 — Europe/London
 Authority: Mark remains human originator / witness / release authority. Framework runtime identity is episodic.
 
 ## Purpose
@@ -170,7 +170,7 @@ COM #77 repaired package:
 ```text
 repair head: 5a31f11d182b9f7ae6ef7fc5ac32899efff81172
 path: research/stage0_v2/README.md
-status: HOLD / NOT DISPATCHED / RE-AUDIT OPEN
+status: RE-AUDIT PASSED / PRODUCTION CELLS HELD / RECEIVER DISPATCH CLOSED
 ```
 
 Codex and Claude Code independently returned HOLD on exact commit `64c6e0c...` with the same two defects: treated-author Arm A was not an untreated ordinary baseline; flag decidability was not pre-frozen. Framework applied only those repairs:
@@ -178,11 +178,11 @@ Codex and Claude Code independently returned HOLD on exact commit `64c6e0c...` w
 - every current B/C/D flag is pre-classified `INTERPRETED` and requires two independent scorers;
 - changed-file SHA-256 identities were recomputed and verified.
 
-Required request:
-`FW-PILOT-V2-EXACT-TWO-REPAIR-20260901-001`
-Recipients: Codex + Claude Code; `RECEIPT_GATE: YES`.
-
-Carrier production stays CLOSED until both bounded re-audits return and are integrated.
+The exact-two-repair re-audit is complete. Codex and Claude Code both returned PASS
+against `5a31f11d...`; the carrier-production receipt gate was satisfied. Later B_C and
+D_D production cells remain on HOLD for parity defects, and receiver dispatch remains
+CLOSED. Do not describe the completed re-audits as open or infer dispatch authority
+from their PASS.
 
 `STAGE0_GATE != PROJECT_FREEZE`.
 
@@ -203,7 +203,43 @@ preservation baseline: v0.6.3
 ```
 
 FPF main last verified:
-`434e17ec848bb7f49e6da99dfc268effb2b5b9af`.
+`3c3f968398a938bc10e83da22d509b7b8f642d83`.
+
+### Framework Local Steward
+
+The installed local service remains RC.8:
+
+```text
+live package line: e57d6e40da7835e4b70b419a81a68d1fe1b7495cd15a1af425933d70e3dd047c
+installed src: ef679820eba2c963890a48efeaf4361860dbf57eac357651595644fa571e9b06
+last witnessed PID: 43432
+last witnessed ledger: 37 entries / chain and ledger-head matched
+```
+
+RC.9 was built once by Claude Code on the operator PC and is NOT installed:
+
+```text
+zip: C:\Users\markg\Downloads\DEV\Framework-Local-Steward-0.1.0-rc.9.zip
+zip sha256: 5e3dfae421331e35e0d8b4ab907a366b191b1ef1cc144a9905a5961d3057f57f
+bytes: 47,284
+src sha256: 51b0136a616304a5778a6e38e925b6d72c6541009b7ebdb676df13356dc0d0d1
+reported tests: 15/15 source + 15/15 extracted; PowerShell parser PASS
+```
+
+RC.9 repairs the observed scheduled-task retention/exit-truthfulness path and makes
+the executing server bytes self-identifying through `/health` and bounded status.
+Installer success now binds exact version plus source hash. These are reported build
+facts, not yet an independent exact-byte review or native upgrade witness.
+
+Current gate:
+
+```text
+RC9 BUILT != RC9 CLEARED FOR INSTALL
+EXACT SOURCE REVIEW = OPEN
+NATIVE SCHEDULED-TASK WITNESSES = OPEN
+BOUNDED HANDOFF = DEFERRED TO RC.10
+LIVE INSTALL = RC.8 / DO NOT REPLACE BY MOMENTUM
+```
 
 No current six-case/7Q result earns TRACE or ME mutation.
 
@@ -248,7 +284,10 @@ WIP:
 
 Reboot/all-launcher persistence for speech repair remains unestablished. No Production merge/release/activation by momentum.
 
-Square direct API remains unreachable from this Framework runtime.
+Square direct API reachability is aperture-dependent. The latest bounded COM witness
+restored unauthenticated public reading at `2026-09-02T09:56:06.719Z` (post 3565,
+comment 37386, event 6100, null 13318, citizens 2110, porch 932). Authenticated inbox,
+quota, identity and write authority remained UNKNOWN; no write was made.
 
 Fresh fallback public witness:
 - repo `1f916-ai/1f916` main `fd282fbb484e68ede1f2e4ef45a5dcd466329d8e`;
@@ -264,31 +303,34 @@ Last bounded content evidence remains framework-relay #3333 + hemei c34600. Late
 Framework = coordination/intent lead, not cognitive owner.
 
 Open:
-- Codex + Claude Code Stage-0 exact-two-repair re-audits;
-- R1 pre-dispatch gate chronology, answer-only review custody and input-burden correction under draft PR #80; do not rewrite the frozen score or infer clearance from successful outputs;
-- R2 remains the preselected second case but dispatch is HOLD pending the R1 review, an exact statement of the narrower tested claim, source currentness and separate receiver/dispatch authority;
+- Stage-0 B_C/D_D parity defects; receiver dispatch remains closed;
+- independent exact-artifact review and native bounded upgrade witnesses for Steward RC.9; do not install from the build return alone;
+- R1 answer-only review custody and full input-burden limits remain visible after merged PR #80; do not rewrite the frozen score or infer causal efficacy from successful outputs;
+- R2 remains the preselected second case but its frozen shared task has the same saturation defect; dispatch is HOLD pending a new discriminating claim/design, source currentness and separate receiver/dispatch authority;
 - remote authenticated browser tabs are closed; the user may revoke the cloud macOS Google session again if desired; do not loop or silently reopen authentication;
-- Claude Code voluntary-help protocol/tool build `FW-VOLUNTARY-HELP-TOOLS-20260901-001`;
+- voluntary-help candidate exact commit `7f826f1ed3cbd700cffae12eb34fb92036b2cd3c`: build complete; independent owner-subtraction/adversarial review open; generated cache files require removal before integration;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
 - Square later content/inbox/quota/authority;
 - Campfire PR #202 normal draft->ready path.
 
-Latest FULL COMSYNC receipt:
-`FW-FULL-COMSYNC-20260901-004` in COM #76.
+Latest COMSYNC receipt:
+`FW-COMSYNC-20260902-003` in COM #76.
 
 ## Next executable order
 
 ```text
 PURPOSE / WORLD
--> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
+-> KEEP STAGE-0 RECEIVER DISPATCH FROZEN UNTIL B_C/D_D PARITY DEFECTS ARE REPAIRED
 -> KEEP 7Q FROZEN AT eec157b...
 -> PRESERVE R1 RUN009 AS COMPLETE / UNMASKED ONCE / NO RETRY
--> RECONCILE WHETHER THE EXACT ATTACHMENT GATE WAS SATISFIED OR BYPASSED BEFORE DISPATCH
--> REVIEW PR #80 PROMPT-SATURATION + ANSWER-CUSTODY + INPUT-BURDEN FINDINGS
 -> STATE R1 ONLY AS NO INCREMENTAL VALUE OVER THE STRONGLY STRUCTURED ORDINARY PROMPT
 -> HOLD R2 UNTIL THE NARROW TEST CLAIM + CURRENT SOURCES + SEPARATE DISPATCH AUTHORITY ARE EXPLICIT
 -> IF R2 IS LATER AUTHORIZED, PRESERVE THE EXISTING TWO-NULL STOPPING RULE AND DO NOT ADD A POST-HOC PREDICTED WIN
+-> REVIEW THE EXACT RC.9 BYTES; THEN RUN ONLY DISPOSABLE/NON-INTERFERING NATIVE PERSISTENCE WITNESSES
+-> DO NOT INSTALL RC.9 UNTIL THAT GATE RETURNS
+-> ATTACK THE VOLUNTARY-HELP CANDIDATE AGAINST CONSENT-FLOW / VOLUNTEER-AGREEMENT OWNERS
+-> KEEP / SHRINK / DELETE IT; TEST ONE LOW-STAKES USE ONLY IF A PORTABLE REMAINDER SURVIVES
 -> RETAIN / FREEZE-AS-TEACHING-AID / DELETE 7Q ONLY UNDER THE FROZEN EVIDENCE RULES
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```

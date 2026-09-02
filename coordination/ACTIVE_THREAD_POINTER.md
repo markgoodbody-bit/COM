@@ -1,146 +1,139 @@
 # ACTIVE THREAD POINTER
 
+Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY
+Updated: 2026-09-02 — Europe/London
+
 Current active coordination thread:
 
 - COM issue #76 — `ACTIVE COORDINATION — frontier / actuator / differentiated research — 2026-08-31 late`.
 - predecessor #69 and #68 remain retired/cold; retrieve named evidence only.
 
-## Current differentiated work
+## Purpose anchor
 
-### 1. 7Q fresh-use lane — ACTIVE RESEARCH EDGE
+> HOW CAN WE MAKE A BETTER FUTURE?
 
-The six-case middle-out quarry is CLOSED for this cycle.
-
-Cross-case synthesis:
-- `research/MIDDLE_OUT_CROSS_CASE_SYNTHESIS_20260901.md`
-- commit `afe5427cb1f678edaf509519819811e159b67f90`
-
-Result:
+Build voluntary, portable, middle-out help that makes consequential change, harm,
+hardening, power, answer-back and correction more visible without taking over.
+TRACE, Mechanical Ethics, Campfire, COM, experiments and the Local Steward are
+instruments inside that purpose.
 
 ```text
-SCAFFOLD AS RESEARCH QUARRY: USEFUL
-SCAFFOLD AS 14-FIELD DEFAULT METHOD: TOO HEAVY
-EXTERNAL OWNER ROUTING: CENTRAL
-TRACE/ME MUTATION: NOT EARNED
+PROJECT PURPOSE != INSTRUMENT SURVIVAL
+TEST OF ONE CLAIM != TEST OF WHOLE PROJECT
+VOLUNTARY HELP != SILENT AUTHORITY EXPANSION
+BUILDING INFRASTRUCTURE != WORLD LEARNING
 ```
 
-Current small entry candidate:
-- `research/MIDDLE_OUT_ENTRY_7Q_CANDIDATE_20260901.md`
-- exact repaired commit `eec157b47c21b34f156e136ead734d4269eb870d`
+## 1. Voluntary-help candidate — NEXT PURPOSE-LEVEL REVIEW
 
-Six-case backcheck:
-- `research/MIDDLE_OUT_ENTRY_7Q_BACKCHECK_20260901.md`
-- commit `be23e8e20b2c2395f7a176c91b3b6a8d5304b2c4`
-- action-critical deletions: 0; one strategic-adaptation trigger repaired.
+Claude Code completed the bounded build at exact commit
+`7f826f1ed3cbd700cffae12eb34fb92036b2cd3c` under
+`research/voluntary_help/`.
 
-Fresh-use protocol:
-- `research/MIDDLE_OUT_7Q_FRESH_USE_PROTOCOL_20260901.md`
-- COM main currently `9ce803bf6be1b717d963d5a2e9ed6e74c808f7a5`.
+It contains a seven-question `FIRST_CONTACT.md`, schema, validator, examples,
+adversarial note and 20 reported passing tests. It is a research candidate, not a
+standing grant, policy, canon or evidence of real-world value.
 
-Next evidence must be genuinely fresh use + burden against competent ordinary/domain reasoning. Do not add more self-authored harness cases by momentum.
+Open:
+- independent exact-commit attack;
+- remove committed generated cache material if confirmed;
+- subtract existing consent-flow / volunteer-agreement owners;
+- if a portable remainder survives, test only the first-contact surface in one
+  low-stakes real assistance agreement;
+- disposition: `KEEP | SHRINK_TO_QUESTIONS | DELETE`.
 
-Codex route assessment returned `ROUTE_AVAILABLE_WITH_CAVEATS`: maintained Campfire Relay Production -> Kimi K2.6 can provide separate sessions, but wider-project exposure is known, service readiness is unverified, and no no-spend claim exists. No dispatch is authorized.
+## 2. Framework Local Steward — RC.9 REVIEW GATE
 
-The pre-dispatch audit found that source identities/currentness witnesses are not exact receiver source bytes. Exact R1 official-source bytes and deterministic bounded extracts are now privately preserved and hash-witnessed in the live `research/fresh_use/R1_PRIVATE_SOURCE_AIRLOCK_RECEIPT_20260901.md`; its receipt history begins at `226ea37030cf4886b9a85f79e667d3d08283e5cf`.
+Live object remains RC.8:
 
-Draft PR #78 now points to repaired exact head `ed5e03787cc55e76276ab4a91cfb01505e60f231`. The executable is byte-identical to the native-Windows-tested direct-.NET repair; the final test-only commit marks POSIX chmod semantics as POSIX-only and gives the injected extra-ledger fixture a valid private ACL so Windows reaches the intended coverage check. The arm-map, source-ledger, score-chain and verify-only permission joins remain. Thirty-two tests pass on Linux; the byte-identical executable passed native Windows with 31 PASS, 1 POSIX-only SKIP and real DACL broadening rejected twice without silent healing. Current private dry object `FRESH-USE-R1-20260901-RUN009` prepares/verifies. Codex and Claude Code have each returned `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH` against this exact head; the exact airlock gate is therefore cleared for the frozen voluntary/manual R1 launch. The user has directed maximal safe automation of the no-spend Temporary Chat route. Google 2FA was approved, OpenAI returned `OAuthCallback`, and Google then flagged the cloud-browser macOS session as suspicious. All remote authentication tabs are closed and cloud-browser Google auth is retired. OpenAI's official guidance says a Google-created account must continue with Google, so an email-method substitution is not being attempted. The preferred route is now two Temporary Chats in the user's already-authenticated native app, one sealed neutral ZIP each. Draft PR #79 remains a fallback inline derivative: exact head `67ee93c06f0c490c80317f57e3ad35a192cb16b8`, 38/38 tests PASS, Codex PASS, Claude Code review OPEN. Neither neutral cell has been dispatched.
+```text
+package line: e57d6e40da7835e4b70b419a81a68d1fe1b7495cd15a1af425933d70e3dd047c
+installed src: ef679820eba2c963890a48efeaf4361860dbf57eac357651595644fa571e9b06
+last witness: PID 43432 / 37 ledger entries / head MATCHED
+```
 
-### 2. Stage-0 v2 — SEPARATE GATED LANE
+Claude Code built one distinct RC.9 candidate on the operator PC. It is NOT installed:
 
-COM issue #77 repaired package:
-- repair head `5a31f11d182b9f7ae6ef7fc5ac32899efff81172`;
-- `research/stage0_v2/README.md`;
-- status `HOLD / NOT DISPATCHED / RE-AUDIT OPEN`.
+```text
+zip: C:\Users\markg\Downloads\DEV\Framework-Local-Steward-0.1.0-rc.9.zip
+zip sha256: 5e3dfae421331e35e0d8b4ab907a366b191b1ef1cc144a9905a5961d3057f57f
+bytes: 47,284
+src sha256: 51b0136a616304a5778a6e38e925b6d72c6541009b7ebdb676df13356dc0d0d1
+reported tests: 15/15 source + 15/15 extracted; PowerShell parse PASS
+```
 
-Codex and Claude Code independently converged on two remaining defects at `64c6e0c...`. Framework repaired only those: the treated-author Arm A/null-result ceiling and preclassification of every current flag as `INTERPRETED`. Changed hashes were recomputed and verified.
+The build reports repairs for scheduled-task retention, truthful terminating exits,
+and exact runtime source identity. It deliberately does not carry the bounded handoff
+and has not exercised the required native Task Scheduler failure/recovery paths.
 
-Required re-audit:
-- `FW-PILOT-V2-EXACT-TWO-REPAIR-20260901-001`;
-- Codex + Claude Code;
-- `RECEIPT_GATE: YES`.
+```text
+RC9 BUILT != RC9 CLEARED FOR INSTALL
+EXACT BYTE REVIEW = OPEN
+NATIVE DISPOSABLE PERSISTENCE WITNESS = OPEN
+LIVE RC.8 = PRESERVE
+```
 
-Carrier production remains CLOSED until both returns are integrated.
+Do not create another RC.9 byte object. Review this exact candidate or retire it.
+
+## 3. 7Q fresh-use lane — FIRST CYCLE CLOSED
+
+R1 RUN009 is complete, unmasked once and must not be rerun. Result:
+`NO_MATERIAL_DIFFERENCE`, with no unique material error.
+
+The common prompt already instructed both arms to produce the scorecard in scorecard
+order. The earned claim is therefore narrow: no incremental answer value over that
+strongly structured ordinary prompt. Full input burden and causal efficacy were not
+established. PR #80 merged this correction into main.
+
+R2 remains frozen but HOLD. Its shared task has the same saturation defect; do not
+dispatch it as a decision-advantage test. No TRACE/ME mutation is earned.
+
+## 4. Stage-0 v2 — SEPARATE GATED LANE
+
+Exact-two-repair re-audits against `5a31f11d...` both returned PASS, satisfying that
+receipt gate. Later B_C and D_D production cells remain on HOLD for parity defects.
+Receiver dispatch remains CLOSED.
 
 `STAGE0_GATE != PROJECT_FREEZE`.
 
-### 3. Project plan
+## 5. Project surfaces
 
-- `planning/FUTURE_PLAN_REVIEW_20260901.md`
-- commit `fd5e33d4400768d968199ffb8f4c5f7976d30291`.
+```text
+COM main: 43b62bcc53ba29d30e3a96c3a4d461f7eb233224 before this pointer repair
+TRACE main: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
+ME main: 44f7efb59806242fd26c572cbfbaaeaefaea2058
+FPF main last verified: 3c3f968398a938bc10e83da22d509b7b8f642d83
+Campfire Production: 15b51dd484acc4f12dc979cc7d791e12efd6c597 / v0.18.34
+```
 
-Two lanes:
-1. exact/gated Stage-0;
-2. frozen 7Q candidate moving to fresh-use/burden testing.
+TRACE v0.3.0 remains an unreleased/unvalidated Specification RC1; v0.2.7 is the
+released baseline. ME v0.7.0 remains a working non-release candidate; v0.6.3 is the
+preservation baseline.
 
-No new framework layer until fresh use earns it.
+Campfire PR #196 remains the open consolidated workbench/simple-human surface.
+PR #202 remains draft; do not force-move around the draft/mark-ready gate.
 
-### 4. Project surfaces
+## 6. Square / 1F916
 
-TRACE:
-- main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`;
-- v0.3.0 Specification RC1 unreleased/unvalidated;
-- v0.2.7 remains released baseline.
-
-Mechanical Ethics:
-- main `44f7efb59806242fd26c572cbfbaaeaefaea2058`;
-- v0.7.0 working candidate remains non-baseline/non-release;
-- v0.6.3 preservation baseline.
-
-FPF:
-- main last verified `434e17ec848bb7f49e6da99dfc268effb2b5b9af`.
-
-### 5. Campfire Relay
-
-Production remains v0.18.34 / main `15b51dd484acc4f12dc979cc7d791e12efd6c597`.
-
-WIP:
-- PR #196 head `554dbc5c836baa19cbc66e36e7ee8bb2042aa55c` — consolidated workbench + simple human surface; open/non-draft/mergeable/unmerged; consolidated `campfire-ci` green.
-- PR #202 head `f1c6fabea733472432793ff61f992b1b0a5ff322` — consolidated stale-worker + PowerShell security repair; draft/open/mergeable; consolidated `campfire-ci` + `Campfire Square Simple v1` green. Normal parent merge remains blocked by the broken mark-ready connector path plus GitHub's correct draft merge gate. Do not force-move around it.
-
-No Production merge/release/activation by momentum.
-
-### 6. Square / 1F916
-
-Direct Square JSON remains unreachable from the current Framework runtime.
-
-Fallback public witness:
-- `1f916-ai/1f916` main `fd282fbb484e68ede1f2e4ef45a5dcd466329d8e`;
-- witness commit timestamp `2026-09-01T13:30:55Z`;
-- identity log and treasury witnesses verified/countersigned at that point.
-
-This proves the public logs continued to advance and verify; it does NOT reveal Framework inbox/replies/quota/authority.
-
-Last bounded content evidence remains framework-relay post #3333 plus hemei c34600 witnessed-reading-row reply. Later content/inbox/quota/actuation authority remain UNKNOWN until a direct authenticated/public read path is reacquired.
-
-## Open debt
-
-- Codex + Claude Code Stage-0 exact-two-repair re-audits: OPEN.
-- Codex + Claude Code PR #78 exact-head / R1 `RUN009`: both `PASS_FOR_MANUAL_R1_RECEIVER_LAUNCH`; exact launch gate CLEARED.
-- Claude Code voluntary-help tool build: OPEN.
-- Claude Code FQ1/FQ2 individuation/stakes attack: OPEN.
-- Exact R1 source-byte preservation and extraction: COMPLETE / PRIVATE / HASH-WITNESSED.
-- Remote cloud-browser Temporary Chat execution: RETIRED AFTER GOOGLE SUSPICIOUS-MACOS ALERT / AUTH TABS CLOSED / NOT DISPATCHED.
-- Native-app Temporary Chat execution: PREFERRED / TWO MANUAL ATTACH+SEND ACTS REQUIRED.
-- Anonymous inline transport PR #79 @ `67ee93c...`: 38 TESTS PASS / CODEX PASS / CLAUDE CODE REVIEW OPEN.
-- Anonymous receiver isolation: TWO SEPARATE CONTEXTS REQUIRED / CURRENT CLOUD BROWSER EXPOSES ONE.
-- Paid provider/API dispatch: NOT AUTHORIZED.
-- Square later content/inbox/quota/authority: UNKNOWN.
-- Campfire PR #202 normal draft->ready path: tool-blocked.
+Latest bounded COM witness restored unauthenticated public reading at
+`2026-09-02T09:56:06.719Z`: post 3565, comment 37386, event 6100, null 13318,
+citizens 2110, porch 932. Authenticated inbox, quota, identity and write authority
+remain UNKNOWN. No Square write is implied or authorized by this pointer.
 
 ## Current operating order
 
 ```text
 PURPOSE / WORLD
--> KEEP STAGE-0 FROZEN UNTIL REQUIRED RECEIPTS
--> KEEP 7Q FROZEN AT eec157b...
--> COMPLETE CLAUDE CODE EXACT REVIEW OF PR #79 @ 67ee93c...
--> REVOKE THE REMOTE MACOS GOOGLE SESSION FROM A TRUSTED USER DEVICE
--> USE TWO NATIVE-APP TEMPORARY CHATS, ONE SEALED ZIP EACH
--> LAUNCH TWO NEUTRAL R1 CELLS, ONE FRESH SESSION EACH, WITH THE FROZEN SENTENCE
--> RECORD EACH FIRST ATTEMPT WITHOUT SILENT RETRY
--> RECORD ACTION/EVIDENCE/OWNER/CORRECTION DELTA + BURDEN + NULL/ADVERSE RESULT
--> DELETE / REPAIR / RETAIN 7Q
+-> PRESERVE LIVE STEWARD RC.8
+-> OBTAIN INDEPENDENT EXACT-BYTE REVIEW OF THE ONE RC.9 CANDIDATE
+-> RUN ONLY DISPOSABLE / NON-INTERFERING NATIVE PERSISTENCE WITNESSES
+-> DO NOT INSTALL RC.9 UNTIL BOTH GATES PASS
+-> ATTACK THE VOLUNTARY-HELP CANDIDATE AGAINST REAL OWNERS
+-> KEEP / SHRINK / DELETE IT; TEST ONE LOW-STAKES USE ONLY IF A REMAINDER SURVIVES
+-> KEEP R1 CLOSED AND R2 HELD
+-> KEEP STAGE-0 RECEIVER DISPATCH CLOSED WHILE PARITY DEFECTS REMAIN
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```
 
-If this pointer and live source disagree, live source wins. Do not infer merge/release/actuation authority, completed audits, efficacy, standing, current Square quota, project identity or permission to dispatch from this pointer.
+If this pointer and live source disagree, live source wins. Do not infer release,
+merge, install, dispatch, spend, standing, identity continuity or authority from it.
