@@ -207,60 +207,53 @@ FPF main last verified:
 
 ### Framework Local Steward
 
-RC.11 is now the installed local service:
+RC.13 is the installed local service. It combines RC.12's read-only
+voluntary-help card with a token-protected, human-carried bounded handoff:
 
 ```text
-installed version: 0.1.0-rc.11
-installed src: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
-upgrade witness: RC.8 -> RC.11 PASS
-last witnessed ledger: 38 entries / consistent and advanced from 37
-receipt sha256: a3b78573868c20da077d993bffc7bbd15a161cbcc54e015e4e5f7d0b83c3116a
+installed version: 0.1.0-rc.13
+installed source: 17cf629e46ce81ab9c2730fcf19995e49f6abe1e2e05bc558cb3e26a2c002138
+candidate ZIP: 131c32c853e022b46a3f3d8a3572f4eb263ddd752989fb492fd7eb7ebf147f00
+tests on Windows: 17/17 PASS
+upgrade: RC.11 -> RC.13 PASS / exact runtime identity witnessed
+upgrade ledger: 43 -> 44
+upgrade receipt: 101c2ebf7fa8c441f2b55549ed2b7a0d0d6939a376dc2b769b086c8904908dba
 ```
 
-RC.9 was built once by Claude Code on the operator PC and is NOT installed:
+First real dashboard handoff:
 
 ```text
-zip: C:\Users\markg\Downloads\DEV\Framework-Local-Steward-0.1.0-rc.9.zip
-zip sha256: 5e3dfae421331e35e0d8b4ab907a366b191b1ef1cc144a9905a5961d3057f57f
-bytes: 47,284
-src sha256: 51b0136a616304a5778a6e38e925b6d72c6541009b7ebdb676df13356dc0d0d1
-reported tests: 15/15 source + 15/15 extracted; PowerShell parser PASS
+capsule sha256: 940f554e8696128e061a3e3579d7b9d8e41a8de3d835db36a7668cf084928e44
+bytes: 9,693
+schema: framework-steward-handoff-v2
+source ledger: 44 / MATCHED
+source head: 2b80678b837c9521caf023fd5f55f5a36721fab7a8ea9c26bca054ddc8ae0559
+transport: PASS / manual human carry / no provider calls or spend
 ```
 
-Exact-byte audit is now complete at
-`research/FRAMEWORK_LOCAL_STEWARD_RC9_AUDIT_20260902.md`.
-RC.9's source identity and normal-path comparison work, but the release is HOLD:
-the visible badge says RC.8; task ownership omits principal/trigger/run-level/state;
-`-Force` leaves an overwrite race; `-NoStart` can bypass the claimed runtime witness;
-existing token ACLs are not rechecked; and failed upgrades are not rolled back.
-
-A distinct RC.10 safety candidate was built from the exact RC.9 bytes. Its
-native read-only audit ran all tests and then refused safely because live RC.8
-does not yet publish the source-identity field RC.9 introduces. RC.11 repairs
-that audit asymmetry while keeping normal post-upgrade identity strict:
+Receipt-only analysis is at
+`research/FRAMEWORK_LOCAL_STEWARD_RC13_FIRST_HANDOFF_20260902.md`; the raw
+capsule is not committed. It transported the local state faithfully and exposed
+that the retained mission was stale: it still named RC.11, treated merged PR #82
+as open and used COM basis `f13ad2ad...` while live main was `22f0e731...`, yet
+reported `CURRENT` because its time window remained open.
 
 ```text
-zip sha256: f95f23246be17623c1ecf4063f544b0b45543bc7d5cd9a0ffebf9376ea5627d6
-bytes: 50,178
-src sha256: e4efba655e82ca3fc781b1da6c7a35caf1888f67018dc7423254c531ce565cba
-native Node tests: 15/15 PASS
-native AuditOnly: PASS_NO_MUTATION
-native running upgrade: PASS / exact source identity / instance preserved
+RECORDED_CURRENT != EXTERNALLY_CURRENT
+TRANSPORT_INTEGRITY != CONTENT_CURRENTNESS
+LOCAL_QUIET != NOTHING_CHANGED_ELSEWHERE
 ```
 
-Current gate:
+Use the handoff for bounded local reacquisition, then reverify mutable external
+bases. Do not turn the Steward into a network client or project authority to
+solve currentness. The first capsule cannot independently contain its own later
+`handoff.created` event; the same-user ledger remains a local consistency record,
+not an independent witness.
 
-```text
-RC9 EXACT SOURCE REVIEW = HOLD / RETIRED FROM INSTALL
-RC10 READ-ONLY AUDIT = SAFE REFUSAL / SUPERSEDED
-RC11 INSTALL = COMPLETE / RUNNING / EXACT SOURCE WITNESSED
-RC11 LEDGER CONTINUITY = 37 -> 38 -> 43
-RC11 NATURAL WINDOWS RESTART RELAUNCH = PASS_AFTER_RESTART / 2026-09-02
-RC12 READ-ONLY VOLUNTARY-HELP CARD = CANDIDATE ONLY / 15 TESTS PASS / NOT INSTALLED
-TRANSACTIONAL FAILED-UPGRADE RECOVERY = NOT CLAIMED
-BOUNDED HANDOFF = STILL DEFERRED
-RC8 APPLICATION BACKUP = PRESERVED
-```
+Preserve the successful RC.11 natural-restart witness. RC.13 survival across a
+later natural restart and transactional failed-upgrade recovery remain unproven.
+RC.9/RC.10 are retired audit history; the RC.8 application backup remains
+preserved.
 
 No current six-case/7Q result earns TRACE or ME mutation.
 
@@ -329,13 +322,13 @@ Open:
 - R2 remains the preselected second case but its frozen shared task has the same saturation defect; dispatch is HOLD pending a new discriminating claim/design, source currentness and separate receiver/dispatch authority;
 - remote authenticated browser tabs are closed; the user may revoke the cloud macOS Google session again if desired; do not loop or silently reopen authentication;
 - voluntary-help candidate: owner-subtracted and shrunk to the question-only surface merged by PR #82 at `afe9f2539af66ba5ef522aad70e71a34975a2336`; schema/validator/state machine remain rejected and recoverable only at `7f826f1e...`; one ordinary low-stakes conversation may still return `ORDINARY_CONVERSATION_SUFFICIENT`;
-- Steward RC.12 read-only help-card candidate: ZIP `29ee78bd9e63c1894abe582ecb8d43a9f07640beed20a595cb8d070b6628732f`, 15/15 tests PASS, not installed, exact/native/visual review open;
+- Steward RC.13 natural-restart persistence remains unwitnessed; its first handoff exposed stale mission currentness, so mutable external bases must still be reverified live;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
 - Square later content/inbox/quota/authority;
 - Campfire PR #202 normal draft->ready path.
 
-Latest COMSYNC receipt:
+Latest COMSYNC receipt before this repair:
 `FW-COMSYNC-20260902-003` in COM #76.
 
 ## Next executable order
@@ -348,12 +341,12 @@ PURPOSE / WORLD
 -> STATE R1 ONLY AS NO INCREMENTAL VALUE OVER THE STRONGLY STRUCTURED ORDINARY PROMPT
 -> HOLD R2 UNTIL THE NARROW TEST CLAIM + CURRENT SOURCES + SEPARATE DISPATCH AUTHORITY ARE EXPLICIT
 -> IF R2 IS LATER AUTHORIZED, PRESERVE THE EXISTING TWO-NULL STOPPING RULE AND DO NOT ADD A POST-HOC PREDICTED WIN
--> KEEP RC.9 ON HOLD; DO NOT INSTALL IT
--> PRESERVE RUNNING RC.11 AND THE RC.8 APPLICATION BACKUP
+-> PRESERVE RUNNING RC.13 AND THE RC.8 APPLICATION BACKUP
 -> PRESERVE THE RC.11 PASS_AFTER_RESTART WITNESS; DO NOT GENERALISE ONE RESTART INTO UNIVERSAL PERSISTENCE
+-> TREAT STEWARD MISSION CURRENTNESS AS RECORDED/LOCAL UNTIL MUTABLE EXTERNAL BASES ARE REVERIFIED
+-> USE BOUNDED HANDOFF FOR LOCAL REACQUISITION; DO NOT COMMIT RAW CAPSULES BY DEFAULT
 -> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT UNPROVEN CEILING
 -> KEEP THE VOLUNTARY-HELP QUESTION SURFACE SMALL; DO NOT RESTORE THE REJECTED SCHEMA / VALIDATOR
--> REVIEW RC.12 AS A READ-ONLY GUI CANDIDATE; DO NOT INSTALL BY MOMENTUM
 -> TEST ONE LOW-STAKES VOLUNTARY-HELP CONVERSATION ONLY WHEN A REAL USE ARISES
 -> RETAIN / FREEZE-AS-TEACHING-AID / DELETE 7Q ONLY UNDER THE FROZEN EVIDENCE RULES
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
