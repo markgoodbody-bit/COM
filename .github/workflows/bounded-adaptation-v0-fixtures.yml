@@ -1,0 +1,22 @@
+name: bounded-adaptation-v0-fixtures
+
+on:
+  pull_request:
+    paths:
+      - 'research/BOUNDED_ADAPTATION_*'
+      - 'research/validate_bounded_adaptation_v0_fixtures.py'
+      - '.github/workflows/bounded-adaptation-v0-fixtures.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate bounded adaptation v0 fixtures
+        run: python research/validate_bounded_adaptation_v0_fixtures.py
