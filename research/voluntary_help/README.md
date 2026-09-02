@@ -1,12 +1,12 @@
 # Voluntary help — Help Exchange candidate v0.1
 
-**Status:** CANDIDATE / NOT CANON / NOT TRACE OR ME / NOT VALIDATED / NOT ADOPTED / NO ENFORCEMENT
+**Status:** SHRINK-TO-QUESTIONS REVIEW / NOT CANON / NOT TRACE OR ME / NOT VALIDATED / NOT ADOPTED / NO ENFORCEMENT
 
 Built for `FW-VOLUNTARY-HELP-TOOLS-20260901-001`. Answers to the project anchor — *how can we make a better future?* — by trying to keep one small interaction from going wrong in the ways it usually goes wrong.
 
-**Read [`ADVERSARIAL_NOTE.md`](ADVERSARIAL_NOTE.md) first.** It names the external owners that already govern almost all of this, and states how little is left over. If it talks you out of the object, that is a good outcome.
+Independent review on 2 September 2026 found that the formal consent/state machinery is already better owned elsewhere and that three additional probes contradict claims made by the validator. See [`REVIEW_20260902.md`](REVIEW_20260902.md).
 
-**If you just want the useful part**, read [`FIRST_CONTACT.md`](FIRST_CONTACT.md). Seven plain questions, no vocabulary, no software.
+**The retained candidate is [`FIRST_CONTACT.md`](FIRST_CONTACT.md).** It is a repaired conversational aid, not a consent mechanism. The schema, validator, state machine and examples remain research evidence only and must not be deployed as a usable agreement or proof of consent.
 
 ## Files
 
@@ -19,7 +19,9 @@ examples/             one bounded offer, one emergency action.
 tests/                20 tests over the ten required scenarios.
 ```
 
-## Run it
+The last four lines describe the original technical candidate. They are retained for auditability, not recommended for use.
+
+## Research-only reproduction
 
 ```bash
 python help_exchange.py examples/offer.json examples/emergency.json
