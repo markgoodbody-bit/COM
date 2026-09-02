@@ -1,6 +1,6 @@
 # Adversarial note — what this cannot do, and who already owns it
 
-Status: candidate only. Not canon, not TRACE, not Mechanical Ethics, not validated, not adopted.
+Status: technical candidate not retained for deployment. Not canon, not TRACE, not Mechanical Ethics, not validated, not adopted.
 
 Read this before the schema. If it persuades you not to use the object, it has done its job.
 
@@ -37,9 +37,9 @@ Small, and worth stating narrowly rather than dressing up.
 
 A **short, checkable record of a bounded offer or request between two named parties, in situations too small or too informal for any of the regimes above to have been engaged** — a colleague reading a draft, a neighbour with a car, one agent doing a task for another — where the ordinary failure is not illegality but drift: an offer becoming an expectation, help becoming an obligation, a favour becoming a claim.
 
-Its one structural contribution is that **no state can be reached by waiting**. Every change names an actor and an act, and the four default coercive shapes are refused by the object's own structure rather than by a reader noticing.
+The original candidate claimed one structural contribution: **no state can be reached by waiting**. Independent review found that consent-lifecycle models and consent-record standards already own that structure, and that a string naming an actor does not witness the actor's act.
 
-That is a small contribution and it may not be a novel one. Consent-flow modelling, RFC-style decision records, and volunteer-agreement templates all cover adjacent ground. I have not run a full prior-art subtraction against those, and this note should not be read as claiming the leftover survives one.
+The portable remainder is therefore not a distinct record standard. It is a short conversation that combines scope and exclusions, real refusal consequences, retained decision authority, knowns/unknowns, answer-back, and honest treatment of emergency action. That remainder is retained only in `FIRST_CONTACT.md`.
 
     NOT_YET_SUBTRACTED != UNOWNED
 
