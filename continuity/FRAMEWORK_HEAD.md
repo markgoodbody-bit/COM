@@ -254,8 +254,9 @@ Current gate:
 RC9 EXACT SOURCE REVIEW = HOLD / RETIRED FROM INSTALL
 RC10 READ-ONLY AUDIT = SAFE REFUSAL / SUPERSEDED
 RC11 INSTALL = COMPLETE / RUNNING / EXACT SOURCE WITNESSED
-RC11 LEDGER CONTINUITY = 37 -> 38
-RC11 ACTUAL FUTURE LOGON RELAUNCH = NOT YET WITNESSED
+RC11 LEDGER CONTINUITY = 37 -> 38 -> 43
+RC11 NATURAL WINDOWS RESTART RELAUNCH = PASS_AFTER_RESTART / 2026-09-02
+RC12 READ-ONLY VOLUNTARY-HELP CARD = CANDIDATE ONLY / 15 TESTS PASS / NOT INSTALLED
 TRANSACTIONAL FAILED-UPGRADE RECOVERY = NOT CLAIMED
 BOUNDED HANDOFF = STILL DEFERRED
 RC8 APPLICATION BACKUP = PRESERVED
@@ -324,11 +325,11 @@ Framework = coordination/intent lead, not cognitive owner.
 
 Open:
 - Stage-0 B_C/D_D parity defects; receiver dispatch remains closed;
-- actual future-logon relaunch witness for installed Steward RC.11; do not manufacture it through another installer restart;
 - R1 answer-only review custody and full input-burden limits remain visible after merged PR #80; do not rewrite the frozen score or infer causal efficacy from successful outputs;
 - R2 remains the preselected second case but its frozen shared task has the same saturation defect; dispatch is HOLD pending a new discriminating claim/design, source currentness and separate receiver/dispatch authority;
 - remote authenticated browser tabs are closed; the user may revoke the cloud macOS Google session again if desired; do not loop or silently reopen authentication;
-- voluntary-help candidate exact commit `7f826f1ed3cbd700cffae12eb34fb92036b2cd3c`: build complete; independent owner-subtraction/adversarial review open; generated cache files require removal before integration;
+- voluntary-help candidate: owner-subtracted and shrunk to the question-only surface merged by PR #82 at `afe9f2539af66ba5ef522aad70e71a34975a2336`; schema/validator/state machine remain rejected and recoverable only at `7f826f1e...`; one ordinary low-stakes conversation may still return `ORDINARY_CONVERSATION_SUFFICIENT`;
+- Steward RC.12 read-only help-card candidate: ZIP `29ee78bd9e63c1894abe582ecb8d43a9f07640beed20a595cb8d070b6628732f`, 15/15 tests PASS, not installed, exact/native/visual review open;
 - Claude Code FQ1/FQ2 individuation/stakes attack;
 - explicit receiver/spend authorization, if later chosen;
 - Square later content/inbox/quota/authority;
@@ -349,10 +350,11 @@ PURPOSE / WORLD
 -> IF R2 IS LATER AUTHORIZED, PRESERVE THE EXISTING TWO-NULL STOPPING RULE AND DO NOT ADD A POST-HOC PREDICTED WIN
 -> KEEP RC.9 ON HOLD; DO NOT INSTALL IT
 -> PRESERVE RUNNING RC.11 AND THE RC.8 APPLICATION BACKUP
--> VERIFY RC.11 RELAUNCH AFTER THE NEXT NATURAL WINDOWS SIGN-IN; DO NOT FORCE A REBOOT FOR THE TEST
+-> PRESERVE THE RC.11 PASS_AFTER_RESTART WITNESS; DO NOT GENERALISE ONE RESTART INTO UNIVERSAL PERSISTENCE
 -> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT UNPROVEN CEILING
--> ATTACK THE VOLUNTARY-HELP CANDIDATE AGAINST CONSENT-FLOW / VOLUNTEER-AGREEMENT OWNERS
--> KEEP / SHRINK / DELETE IT; TEST ONE LOW-STAKES USE ONLY IF A PORTABLE REMAINDER SURVIVES
+-> KEEP THE VOLUNTARY-HELP QUESTION SURFACE SMALL; DO NOT RESTORE THE REJECTED SCHEMA / VALIDATOR
+-> REVIEW RC.12 AS A READ-ONLY GUI CANDIDATE; DO NOT INSTALL BY MOMENTUM
+-> TEST ONE LOW-STAKES VOLUNTARY-HELP CONVERSATION ONLY WHEN A REAL USE ARISES
 -> RETAIN / FREEZE-AS-TEACHING-AID / DELETE 7Q ONLY UNDER THE FROZEN EVIDENCE RULES
 -> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
 ```
