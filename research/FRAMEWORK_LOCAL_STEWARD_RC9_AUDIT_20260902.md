@@ -144,6 +144,35 @@ identity, scheduled-task start, and retained-ledger advancement. The receipt
 facts above are witnessed from the operator transcript; the receipt JSON bytes
 have not been independently ingested.
 
-It does not establish actual relaunch at the next Windows sign-in, externally
-anchored ledger completeness, transactional failed-upgrade rollback, uninstall,
-or Unicode-profile behavior. RC.8 application backup remains preserved.
+At this point it did not establish actual relaunch at the next Windows sign-in,
+externally anchored ledger completeness, transactional failed-upgrade rollback,
+uninstall, or Unicode-profile behavior. The later witness below closes the first
+item for one natural restart only. RC.8 application backup remains preserved.
+
+
+## RC.11 natural Windows restart witness
+
+After a normal user-initiated Windows restart, the operator ran the frozen
+read-only persistence check. It returned `PASS_AFTER_RESTART`:
+
+```text
+boot: 2026-09-02T18:23:46.5+01:00
+scheduled-task last run: 2026-09-02T18:23:57+01:00
+service process start: 2026-09-02T18:24:04.7099091+01:00
+version: 0.1.0-rc.11
+PID: 17748
+task state: 4 / RUNNING
+task result: 267009 / 0x41301 / TASK_RUNNING
+source matches installed bytes: true
+ledger_ok: true
+ledger entries: 43
+head_state: MATCHED
+```
+
+The scheduled task and service process both started after the recorded operating
+system boot. The running module reported the same SHA-256 as the installed
+`src/steward.mjs`, and the internally consistent ledger advanced from 38 to 43
+entries. This establishes one actual natural restart relaunch of the exact RC.11
+build. It does not establish universal future persistence, transactional
+failed-upgrade rollback, uninstall behavior, external ledger anchoring or every
+Windows policy/profile environment.
