@@ -6,9 +6,10 @@ Date: 2026-09-02
 
 ## Purpose
 
-Test whether the installed Local Steward can move a compact, inspectable account
-of local state into a separate Framework aperture without network access,
-credential use, model dispatch, provider spend or automatic external action.
+Test whether the installed Local Steward can prepare a compact, inspectable
+account of local state for human carriage into a separate Framework aperture
+without the Steward itself gaining network access, credential use, model
+dispatch, provider spend or automatic external action.
 
 ## Evidence boundary
 
