@@ -6,7 +6,7 @@ Purpose: catch one failure before it becomes a plan assumption:
 
 > **A fallback can exist locally while being unavailable system-wide when several actors need it in the same stressed world.**
 
-Use only when a consequential plan relies on a reserve, shared pool, neighbouring unit, external supplier, surge capability, fallback route, borrowed expertise, liquidity, compute, human attention, independent review or other spare capability.
+Use only when a consequential plan relies on a reserve, shared pool, neighbouring unit, external supplier, surge capability, fallback route, borrowed expertise, liquidity, compute, human attention, independent review or other spare capability. Authorization/release routes may also be material to whether that capability can be used in time, but authority itself is not treated as a fungible reserve.
 
 If no shared/borrowed capacity is material, stop and use ordinary/domain reasoning.
 
@@ -21,9 +21,19 @@ FAST_PASS_COMPLETE != RESILIENCE_PROVEN
 NO_COMMON_MODE_FOUND != INDEPENDENCE_PROVEN
 UNKNOWN != SAFE
 ROUTE_TO_OWNER != OWNER_DECISION
+CAPABILITY != AUTHORITY
+CAPABILITY_TO_ACT != MANDATE_TO_ACT
+AUTHORIZATION_LATENCY != AUTHORITY_DEFECT
+SINGLE_LEGITIMATE_AUTHORITY != REDUNDANCY_FAILURE
 ```
 
 Completing this route does not certify resilience or safety. An unanswered material question means the fallback claim remains **unestablished at this level**, not that the fallback is absent and not that proceeding is forbidden. Route the uncertainty according to stakes and domain authority.
+
+### Authority boundary
+
+An authorization gate can make otherwise available capacity unusable in time. That is a real operational dependency. But this route must not convert an engineering desire for redundancy into a grant, delegation or redistribution of authority.
+
+A single legitimate authority may be intentional. If authorization latency threatens a consequential path, expose that fact and route it to the authority/governance owner. Pre-delegation, emergency mandates or alternate authorizers are only available where legitimately established outside this route.
 
 ## 60-second pass
 
@@ -36,16 +46,16 @@ Ask six questions before treating the backup as real:
    - If several plans borrow the same capacity at once, it has been double-counted.
 
 3. **What failure lineage does the backup share with the primary route?**
-   - Same grid, fuel, cloud, model family, staff pool, port, market, supplier, authority, evidence source or hazard zone can make two backups one failure.
+   - Same grid, fuel, cloud, model family, staff pool, port, market, supplier, authorization dependency, evidence source or hazard zone can make two backups one failure.
 
 4. **Can it be converted and delivered before the threatened path hardens?**
-   - Count request, authorization, switching, transport, setup, staffing and stressed-world delays.
+   - Count request, legitimate authorization, switching, transport, setup, staffing and stressed-world delays.
 
 5. **What remains after we use it?**
    - How long to replenish stock, recover people, rebuild money/attention, repair equipment or restore the route before another event can arrive?
 
 6. **If joint demand exceeds joint capacity, who decides who gets it?**
-   - What local minimum must remain protected, who has allocation authority, whose interests/standing count, and what challenge/review is possible in time?
+   - What local minimum must remain protected, who already has allocation authority, whose interests/standing count, and what challenge/review is possible in time?
 
 If all six are already answered by a competent owner-native method, stop. Use that method.
 
@@ -59,7 +69,7 @@ Write the shortest chain from reserve to protection:
 CAPACITY EXISTS
 -> DETECT NEED
 -> REQUEST
--> AUTHORIZE / ALLOCATE
+-> LEGITIMATELY AUTHORIZE / ALLOCATE
 -> TRANSPORT / SWITCH / CONVERT
 -> BECOMES USABLE
 -> PROTECTS BEFORE HARDENING
@@ -105,13 +115,13 @@ If the next plausible event can arrive before replenishment, model a sequence ra
 When jointly deliverable capacity is insufficient, route to the legitimate domain owner while keeping these questions visible:
 
 - who can claim the capacity;
-- who may allocate it;
+- who already has authority to allocate it;
 - what minimums/floors must remain locally protected;
 - what duty, priority rule or public purpose governs allocation;
 - who bears delay, transfer, conservation or denial;
 - what residue remains after emergency allocation.
 
-This route does **not** solve standing, distributive justice, clinical triage, market policy or legal priority.
+This route does **not** solve standing, distributive justice, clinical triage, market policy, legal priority or mandate design.
 
 ### E. Build before the stress arrives
 
@@ -120,7 +130,8 @@ Possible owner-justified moves include:
 - diversify by failure lineage, not vendor count;
 - protect a local minimum while retaining shared surge capability;
 - increase firm/deliverable capacity rather than headline capacity;
-- pre-position equipment, fuel, housing, parts, finance or authority;
+- pre-position equipment, fuel, housing, parts or finance;
+- where legitimate authority has already established pre-delegation or emergency mandates, make their triggers/scope/expiry operationally clear;
 - train extra people / preserve human verification skill;
 - create independent sensing and evidence routes;
 - shift demand in time;
@@ -138,7 +149,7 @@ CAPABILITY COUNTED:
 SIMULTANEOUS CLAIMANTS:
 SHARED FAILURE / CONVERSION BOTTLENECK:
 DELIVERY + REPLENISHMENT CLOCK:
-LOCAL FLOOR / ALLOCATION OWNER:
+LOCAL FLOOR / EXISTING ALLOCATION OWNER:
 BUILD-BEFORE-STRESS ACTION:
 EVIDENCE THAT WOULD CHANGE THIS READING:
 ```
@@ -177,7 +188,7 @@ JOINT AVAILABILITY
 + ACTIVATION / CONVERSION TIME
 + REPLENISHMENT
 + SIMULTANEOUS CLAIMANTS
-+ ALLOCATION AUTHORITY
++ EXISTING ALLOCATION AUTHORITY
 ```
 
 with equal or lower burden.
