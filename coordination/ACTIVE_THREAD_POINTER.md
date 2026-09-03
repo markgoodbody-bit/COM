@@ -1,153 +1,173 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY
-Updated: 2026-09-02 — Europe/London
+Updated: 2026-09-03 — Europe/London
 
 Current active coordination thread:
 
 - COM issue #76 — `ACTIVE COORDINATION — frontier / actuator / differentiated research — 2026-08-31 late`.
-- predecessor #69 and #68 remain retired/cold; retrieve named evidence only.
+- predecessor #69/#68 remain retired/cold; retrieve named evidence only.
 
 ## Purpose anchor
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
-Build voluntary, portable, middle-out help that makes consequential change, harm,
-hardening, power, answer-back and correction more visible without taking over.
-TRACE, Mechanical Ethics, Campfire, COM, experiments and the Local Steward are
-instruments inside that purpose.
+TRACE, Mechanical Ethics, Campfire, COM, Square, experiments and the Local Steward are instruments inside that purpose.
 
 ```text
-PROJECT PURPOSE != INSTRUMENT SURVIVAL
-TEST OF ONE CLAIM != TEST OF WHOLE PROJECT
-VOLUNTARY HELP != SILENT AUTHORITY EXPANSION
-BUILDING INFRASTRUCTURE != WORLD LEARNING
+PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
+WORLD_LEARNING != VALIDATION_LOOP
+CAPABILITY != AUTHORITY
+ROLE_CONTINUITY != RUNTIME_IDENTITY
 ```
 
-## 1. Voluntary-help candidate — SHRUNK / MERGED / NOT VALIDATED
+## 1. Fresh project surfaces
 
-Independent review subtracted the consent, volunteer-agreement, permission and
-lifecycle structures already owned by ICO, NCVO/GOV.UK, W3C DPV, ODRL and
-domain regimes. Three adverse probes contradicted the original validator.
-
-PR #82 merged only four bounded research files at
-`afe9f2539af66ba5ef522aad70e71a34975a2336`:
-- the repaired first-contact questions;
-- the owner-subtraction review;
-- adversarial limits;
-- a narrow README.
-
-The schema, validator, state machine, examples, tests and generated caches were
-not integrated. They remain recoverable only at `7f826f1e...`.
-
-Next evidence is one ordinary low-stakes conversation when a real use arises.
-`ORDINARY_CONVERSATION_SUFFICIENT` remains a successful falsifying result.
-
-## 2. Framework Local Steward — RC.13 RUNNING / FIRST HANDOFF PASSED
-
-RC.13 is installed and running after exact candidate review, read-only native
-audit and witnessed upgrade:
+Observed in FULL COMSYNC on 2026-09-03:
 
 ```text
-version: 0.1.0-rc.13
-source sha256: 17cf629e46ce81ab9c2730fcf19995e49f6abe1e2e05bc558cb3e26a2c002138
-candidate ZIP: 131c32c853e022b46a3f3d8a3572f4eb263ddd752989fb492fd7eb7ebf147f00
-Windows tests: 17/17 PASS
-upgrade: RC.11 -> RC.13 PASS
-ledger: 43 -> 44
-upgrade receipt: 101c2ebf7fa8c441f2b55549ed2b7a0d0d6939a376dc2b769b086c8904908dba
+COM main:      7c8a6d83a24bfce92ac0f05a63f5395e56acb4e4
+TRACE main:    46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
+ME main:       44f7efb59806242fd26c572cbfbaaeaefaea2058
+Campfire main: 08756b68d824b783fb214ff4790abf37f10150ca
+FPF:           FRESH ACCESS UNAVAILABLE / DO NOT CARRY AN OLD SHA AS CURRENT
 ```
 
-The first dashboard handoff was manually carried into Framework and verified:
+TRACE v0.3.0 remains an unreleased/unvalidated Specification RC1; v0.2.7 remains the released baseline. ME v0.7.0 remains a working candidate; v0.6.3 remains the preservation baseline. No TRACE/ME release, baseline or canon change is implied here.
+
+## 2. Local Steward — carried local evidence, not fresh host observation
+
+COM still records Framework Local Steward RC.13 as installed/running after the witnessed RC.11 -> RC.13 upgrade and first bounded handoff. Framework cannot see localhost from this runtime.
 
 ```text
-capsule sha256: 940f554e8696128e061a3e3579d7b9d8e41a8de3d835db36a7668cf084928e44
-bytes: 9,693
-source ledger: 44 / MATCHED
-source head: 2b80678b837c9521caf023fd5f55f5a36721fab7a8ea9c26bca054ddc8ae0559
-transport: PASS / no provider call or spend
-```
-
-The raw capsule is not committed. Receipt-only analysis is at
-`research/FRAMEWORK_LOCAL_STEWARD_RC13_FIRST_HANDOFF_20260902.md`.
-
-The transport also exposed its first real limitation: the mission was carried
-faithfully but was stale. It still described RC.11 and PR #82 as open and used
-COM basis `f13ad2ad...` while live COM main was `22f0e731...`; its timer still
-labelled it `CURRENT`.
-
-```text
+COM_RECORDS_RC13_RUNNING != FRAMEWORK_FRESHLY_OBSERVED_HOST_LIVENESS
 RECORDED_CURRENT != EXTERNALLY_CURRENT
 TRANSPORT_INTEGRITY != CONTENT_CURRENTNESS
 ```
 
-Use RC.13 handoffs for bounded local-state reacquisition and reverify mutable
-external bases before acting. Do not add network reach or project authority to
-make the local service appear current. Preserve the RC.11 natural-restart
-witness; RC.13 natural-restart persistence and transactional failed-upgrade
-recovery remain unproven. RC.9/RC.10 are retired audit history; the RC.8
-application backup remains preserved.
+Use the Steward for bounded local reacquisition when available. Reverify mutable external bases before acting. Do not add network reach or authority merely to make local state appear current.
 
-## 3. 7Q fresh-use lane — FIRST CYCLE CLOSED
+## 3. Closed / retired lanes
 
-R1 RUN009 is complete, unmasked once and must not be rerun. Result:
-`NO_MATERIAL_DIFFERENCE`, with no unique material error.
+- R1 RUN009: CLOSED / `NO_MATERIAL_DIFFERENCE`; no rerun.
+- R2: CLOSED/HELD; no rerun merely because old state is stale.
+- Campfire PR #206: CLOSED UNMERGED / `NO_MATERIAL_ADVANTAGE / REPAIR_SHRINK`.
+- COM PR #70: CLOSED UNMERGED / superseded custody finding.
+- COM PRs #78/#79: CLOSED UNMERGED / historical R1 launch infrastructure.
+- COM PR #91: CLOSED UNMERGED after stronger domain-owner subtraction.
+- COM #73 bovine-TB field case: CLOSED / `NO CHANGE` transfer result.
+- COM PR #88 Square payout field case: MERGED as source-bounded non-canonical evidence at COM main `7c8a6d83...`.
 
-The common prompt already instructed both arms to produce the scorecard in scorecard
-order. The earned claim is therefore narrow: no incremental answer value over that
-strongly structured ordinary prompt. Full input burden and causal efficacy were not
-established. PR #80 merged this correction into main.
+Do not reopen these merely because older coordination text names them.
 
-R2 remains frozen but HOLD. Its shared task has the same saturation defect; do not
-dispatch it as a decision-advantage test. No TRACE/ME mutation is earned.
+## 4. Frozen continuity / adaptation candidates
 
-## 4. Stage-0 v2 — SEPARATE GATED LANE
-
-Exact-two-repair re-audits against `5a31f11d...` both returned PASS, satisfying that
-receipt gate. Later B_C and D_D production cells remain on HOLD for parity defects.
-Receiver dispatch remains CLOSED.
-
-`STAGE0_GATE != PROJECT_FREEZE`.
-
-## 5. Project surfaces
+### PR #86 — Local Continuity Capsule v1
 
 ```text
-COM main: 22f0e73165fe16b5f66d53b23be5e6c137d6a5dd before this pointer repair
-TRACE main: 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
-ME main: 44f7efb59806242fd26c572cbfbaaeaefaea2058
-FPF main last verified: 3c3f968398a938bc10e83da22d509b7b8f642d83
-Campfire Production: 15b51dd484acc4f12dc979cc7d791e12efd6c597 / v0.18.34
+head: df3bd8d2508ac64035ff411283683b906c6ada8f
+status: DRAFT / PASS_CONTRACT / FROZEN FOR USE-DRIVEN EVIDENCE
 ```
 
-TRACE v0.3.0 remains an unreleased/unvalidated Specification RC1; v0.2.7 is the
-released baseline. ME v0.7.0 remains a working non-release candidate; v0.6.3 is the
-preservation baseline.
+Do not expand for more contract validation. Use-driven evidence must be willing to shrink/retire it if it does not remove real human transport burden.
 
-Campfire PR #196 remains the open consolidated workbench/simple-human surface.
-PR #202 remains draft; do not force-move around the draft/mark-ready gate.
+### PR #87 — Bounded Adaptation Loop v0
 
-## 6. Square / 1F916
+```text
+head: 01628790ca63251fb9ff405245b746e8703a5d84
+status: DRAFT / FIRST REAL CYCLE REPRESENTED / EXACT-CURRENT INDEPENDENT VERDICT STILL OPEN
+```
 
-Latest bounded COM witness restored unauthenticated public reading at
-`2026-09-02T09:56:06.719Z`: post 3565, comment 37386, event 6100, null 13318,
-citizens 2110, porch 932. Authenticated inbox, quota, identity and write authority
-remain UNKNOWN. No Square write is implied or authorized by this pointer.
+Prior contract PASS does not transfer automatically to the current use-driven head. Silence is not PASS. No daemon activation follows.
 
-## Current operating order
+### PR #89 — temporal attention extension
+
+```text
+head: bd8ad579374f70617c1b19ed2bad2c6e2dcdc7f1
+status: DRAFT / SHRUNK INTO COM_RECEIPT_PROTOCOL / EXACT-CURRENT INDEPENDENT VERDICT OPEN
+```
+
+New `ATTENTION/1` writes are frozen while this remains draft. GitHub comments are mutable/deletable; visible marker sequence is not proved history.
+
+### Campfire PR #207 — Lazy Temporal Attention v0
+
+```text
+head: e7db5a8622e943ca7ed155d9a7b582696a734bec
+status: DRAFT / REAL LIFECYCLE SELF-TESTED / INDEPENDENT VERDICT OPEN
+```
+
+One lifecycle proved only bounded read/projection behaviour, not persistent intelligence, burden reduction or activation authority.
+
+## 5. Current world-learning frontier
+
+### COM #90 — Local Power Plan / positive construction
+
+Question: when public support intends both to deliver assets and grow local/community capability, what should remain after the helper steps back?
+
+Framework owner-subtraction found strong community-energy/capacity-development owners and retired generic field-card PR #91. Clean Codex/Claude returns remain open. Leading Framework disposition: `DOMAIN_OWNS_IT` unless a consequential residual survives.
+
+### COM #92 — coding-agent entrustment nearest-neighbour subtraction
+
+Current external-owner subtraction already removes broad novelty claims for:
+
+```text
+PERSISTENCE/TIMERS
+SHARED MULTI-AGENT WORKSPACE
+RELATIONAL COMMITMENTS
+DIVERGENT LOCAL RELATIONSHIP VIEWS
+CONFLICTING BELIEF CONTEXTS
+ASSERTION PROVENANCE
+CONTEXTUAL TRUST/DELEGATION
+DYNAMIC/ADJUSTABLE AUTONOMY
+ACTION/APPROVAL BOUNDARIES
+```
+
+Leading Framework standing: `DOMAIN_OWNS_MOST_OF_IT / RESIDUAL_UNPROVEN`.
+Clean Codex/Claude returns remain open.
+
+### COM #93 — Campfire residual falsifier
+
+Frozen, not yet dispatched. Tests whether an owner-native composition can preserve a hard persistent relational scene without bespoke Campfire machinery.
+
+Allowed dispositions:
+
+```text
+OWNER_STACK_SUFFICIENT
+OWNER_STACK_SUFFICIENT_BUT_GLUE_DOMINATES
+MATERIAL_RESIDUAL
+MALFORMED_TEST
+```
+
+Do not dispatch until #92 clean returns are integrated or the wait is explicitly abandoned.
+
+## 6. Square / 1F916 public witness
+
+Latest bounded public witness observed during FULL COMSYNC:
+
+```text
+witness repo head: 64b73429df5639bd602f7c84f29b6f8e3cfdc2f2
+observed at: 2026-09-03T15:25:24Z
+identity: verified_through_id 6522 / sealed_entries 6508 / total_rows 6522
+treasury: verified_through_id 19 / sealed_entries 11 / total_rows 19
+```
+
+Both current checkpoint roots were countersigned in that witness cycle.
+
+This establishes public witness continuity only. Authenticated framework-relay inbox/replies/quota/current write authority remain UNKNOWN. No Square write is implied.
+
+## 7. Current operating order
 
 ```text
 PURPOSE / WORLD
--> PRESERVE RUNNING RC.13, THE RC.11 PASS_AFTER_RESTART WITNESS AND THE RC.8 APPLICATION BACKUP
--> DO NOT GENERALISE ONE SUCCESSFUL RESTART INTO UNIVERSAL PERSISTENCE
--> USE BOUNDED HANDOFF FOR LOCAL REACQUISITION; REVERIFY MUTABLE EXTERNAL BASES
--> TREAT STEWARD MISSION CURRENTNESS AS RECORDED/LOCAL, NOT AUTOMATICALLY EXTERNAL
--> KEEP TRANSACTIONAL FAILED-UPGRADE RECOVERY AS AN EXPLICIT CEILING
--> KEEP THE MERGED VOLUNTARY-HELP SURFACE SMALL; DO NOT RESTORE THE REJECTED SCHEMA
--> TEST ONE LOW-STAKES CONVERSATION ONLY WHEN A REAL USE ARISES
--> KEEP R1 CLOSED AND R2 HELD
--> KEEP STAGE-0 RECEIVER DISPATCH CLOSED WHILE PARITY DEFECTS REMAIN
--> FORMAL TRACE/ME MAINTENANCE ONLY IF EARNED
+-> LEARN FROM STRONGER OWNERS
+-> SUBTRACT REDUNDANT LOCAL MACHINERY
+-> PRESERVE NULL / ADVERSE RESULTS
+-> KEEP #86 FROZEN
+-> KEEP #87/#89/#207 DRAFT UNTIL EXACT-CURRENT RETURNS OR USE-DRIVEN FALSIFICATION
+-> DO NOT WRITE NEW ATTENTION/1 MARKERS WHILE #89 IS DRAFT
+-> INTEGRATE CLEAN #90/#92 RETURNS WHEN THEY ACTUALLY ARRIVE
+-> KEEP #93 FROZEN UNTIL ITS INDEPENDENCE GATE IS RESOLVED
+-> BUILD ONLY WHEN A CONSEQUENTIALLY DISTINCT RESIDUAL SURVIVES
 ```
 
-If this pointer and live source disagree, live source wins. Do not infer release,
-merge, install, dispatch, spend, standing, identity continuity or authority from it.
+If this pointer and live source disagree, live source wins. Do not infer release, merge, install, dispatch, spend, standing, identity continuity or authority from this file.
