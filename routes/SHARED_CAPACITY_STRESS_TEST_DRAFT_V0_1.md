@@ -17,7 +17,13 @@ DIFFERENT_LABEL != DIFFERENT_FAILURE_LINEAGE
 STOCK != FLOW
 EVENT_ENDED != BUFFER_RESTORED
 TECHNICAL_SHORTAGE != LEGITIMATE_ALLOCATION_RULE
+FAST_PASS_COMPLETE != RESILIENCE_PROVEN
+NO_COMMON_MODE_FOUND != INDEPENDENCE_PROVEN
+UNKNOWN != SAFE
+ROUTE_TO_OWNER != OWNER_DECISION
 ```
+
+Completing this route does not certify resilience or safety. An unanswered material question means the fallback claim remains **unestablished at this level**, not that the fallback is absent and not that proceeding is forbidden. Route the uncertainty according to stakes and domain authority.
 
 ## 60-second pass
 
