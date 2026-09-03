@@ -2,283 +2,193 @@
 
 Status: **WORKING FIELD ROUTE / NOT CANON / NOT TRACE SCHEMA / NOT AN ALLOCATION RULE**
 
-Purpose: help a bounded human or AI notice when a resilience, correction or contingency plan is counting on capacity that is shared, borrowed, correlated, slow to deliver, slow to regenerate, or already claimed by others.
+Purpose: catch one failure before it becomes a plan assumption:
 
-This route is for a specific class of situation:
+> **A fallback can exist locally while being unavailable system-wide when several actors need it in the same stressed world.**
 
-> **The plan works only because some spare capability is expected to be available when the primary capability is insufficient.**
+Use only when a consequential plan relies on a reserve, shared pool, neighbouring unit, external supplier, surge capability, fallback route, borrowed expertise, liquidity, compute, human attention, independent review or other spare capability.
 
-Examples include staff, beds, electricity, fuel, liquidity, compute, communications, transport, housing, specialist expertise, emergency authority, human attention, independent review, trusted evidence or mutual aid.
-
-The route does **not** replace domain capacity planning, emergency medicine, grid engineering, finance, logistics, public-law priority rules or ethics. Use the strongest owner method first. This card exists to expose cross-domain failure conditions that are easy to hide behind the word `backup`, `reserve`, `pool`, `surge`, `redundancy` or `fallback`.
+If no shared/borrowed capacity is material, stop and use ordinary/domain reasoning.
 
 ```text
-RESERVE_EXISTS != RESERVE_AVAILABLE_TO_ME
+RESERVE_EXISTS != RESERVE_USABLE
+LOCAL_BUFFER != JOINTLY_AVAILABLE_BUFFER
+DIFFERENT_LABEL != DIFFERENT_FAILURE_LINEAGE
 STOCK != FLOW
-BORROWABLE_CAPACITY != DEDICATED_CAPACITY
-MANY_BACKUPS != MANY_FAILURE_LINEAGES
-LOCAL_CONTINGENCY_PLAN != SYSTEM-WIDE CONTINGENCY CAPACITY
-SUM_OF_LOCAL_RESERVES != JOINTLY_AVAILABLE_RESERVE
-RECOVERY_FROM_EVENT_1 != CAPACITY_READY_FOR_EVENT_2
+EVENT_ENDED != BUFFER_RESTORED
+TECHNICAL_SHORTAGE != LEGITIMATE_ALLOCATION_RULE
 ```
 
-## Use only when triggered
+## 60-second pass
 
-Use this route when at least one consequential next action relies on:
+Ask six questions before treating the backup as real:
 
-- a shared pool;
-- spare capacity elsewhere;
-- an external supplier or neighbouring unit;
-- a contingency or fallback path;
-- surge staffing / surge beds / reserve generation / strategic stocks;
-- borrowing liquidity, compute, expertise, attention or authority;
-- a claimed independent reviewer, monitor, backup service or second route.
+1. **What exact capability are we counting on?**
+   - Name the usable thing, not `redundancy`: trained people, beds, MW, fuel delivered/day, cash, vehicles, review-hours, independent judgements.
 
-If the situation does not rely on borrowed/shared capacity, stop. Do not force this route onto ordinary decisions.
+2. **Who else needs the same capability in the same bad world?**
+   - If several plans borrow the same capacity at once, it has been double-counted.
 
-## The route
+3. **What failure lineage does the backup share with the primary route?**
+   - Same grid, fuel, cloud, model family, staff pool, port, market, supplier, authority, evidence source or hazard zone can make two backups one failure.
 
-Ordinary language is enough. A table is optional. The output should be the smallest account that changes the action.
+4. **Can it be converted and delivered before the threatened path hardens?**
+   - Count request, authorization, switching, transport, setup, staffing and stressed-world delays.
 
-### 1. Name the capability actually being counted
+5. **What remains after we use it?**
+   - How long to replenish stock, recover people, rebuild money/attention, repair equipment or restore the route before another event can arrive?
 
-Do not begin with `we have redundancy`.
+6. **If joint demand exceeds joint capacity, who decides who gets it?**
+   - What local minimum must remain protected, who has allocation authority, whose interests/standing count, and what challenge/review is possible in time?
 
-Ask:
+If all six are already answered by a competent owner-native method, stop. Use that method.
 
-- What exact capability is expected to absorb the overload or failure?
-- In what unit does it become useful: beds, trained people, MW, barrels/day, vehicles, cash, review-hours, model-independent judgements?
-- Is it **dedicated**, **locally protected**, **shared**, **borrowed on request**, or merely **assumed reachable**?
-- Who controls release of it?
+## If the fast pass finds a problem
 
-A reserve that cannot be identified operationally is not yet a usable reserve.
+### A. Trace conversion, not just stock
 
-### 2. Trace the failure lineage, not the label
-
-Ask what event could simultaneously damage the primary route **and** the backup.
-
-Check shared dependence on:
-
-- power / fuel / water / network;
-- geography / weather / hazard zone;
-- supplier / cloud / model / training lineage;
-- staff / specialist team / contractor;
-- transport / port / road / airspace;
-- finance / market liquidity / common collateral;
-- data / evidence / monitoring source;
-- legal authority / decision-maker;
-- public trust / communications channel.
-
-Two different vendors are not independent if the same grid, upstream supplier, model family, port, staff pool or legal bottleneck can disable both.
+Write the shortest chain from reserve to protection:
 
 ```text
-DIFFERENT_NAME != DIFFERENT_FAILURE_MODE
-SEPARATE_UNIT != INDEPENDENT_DEMAND
-SEPARATE_APERTURE != INDEPENDENT_EPISTEMIC_LINEAGE
+CAPACITY EXISTS
+-> DETECT NEED
+-> REQUEST
+-> AUTHORIZE / ALLOCATE
+-> TRANSPORT / SWITCH / CONVERT
+-> BECOMES USABLE
+-> PROTECTS BEFORE HARDENING
+-> REPLENISH / RESTORE
 ```
 
-### 3. Test concurrency: who else needs it in the same bad world?
+Ask where the same stress event can break or slow that chain.
 
-The question is not whether the capacity exists on an average day.
-
-Ask:
-
-- Which other units, populations or systems can claim the same capacity?
-- What event makes their demand rise at the same time as ours?
-- Are local peaks usually asynchronous, or can they synchronize?
-- Is the pooling benefit based on an independence assumption that disappears in the stress case?
-- Has the same reserve been counted in several plans?
-
-If everyone plans to borrow from the same neighbour, the neighbour is not a system-wide reserve.
-
-### 4. Convert stock into flow: can the capacity arrive before the clock closes?
-
-Ask:
-
-- What has to happen between `capacity exists` and `capacity protects`?
-- How long do detection, request, authorization, transport, setup, switching, staffing and delivery take under the stressed conditions?
-- Can the event that creates the need also slow the delivery route?
-- Is the quoted capacity firm under the relevant operating conditions, or non-firm/probabilistic?
-
-For a consequential path `p`, the practical question is:
+A practical timing question is:
 
 ```text
-T_deliver(shared_capacity, stressed_world) < T_harden(p)
+T_deliver(shared_capacity, stressed_world) < T_harden(affected_path)
 ```
 
-Do not treat the expression as a measured law when the times are uncertain. The purpose is to expose a delivery-clock assumption.
+This is a prompt to expose the clock, not a universal measured law.
 
-### 5. Test regeneration: what is left after using the buffer?
+### B. Check correlation and concurrency
 
-A buffer is a stateful capability.
+Pooling is useful when spare capacity remains spare while another unit is stressed.
 
 Ask:
 
-- Does use consume stock, fatigue people, spend money, degrade equipment, exhaust political trust, consume review attention, or reduce future optionality?
-- How long until the capacity is restored?
-- What event could arrive before restoration?
-- Does the response build future capability or consume it?
+- are demands usually asynchronous or weakly correlated;
+- can one event synchronize them;
+- do apparent alternatives share upstream dependencies;
+- is the reserve counted by several units or sectors;
+- is capacity firm under the relevant conditions, or probabilistic/non-firm?
+
+Do not infer that pooling is bad. Do not infer that local autonomy is always safer.
+
+### C. Check regeneration across more than one event
 
 ```text
 CORRECTION_t -> CHANGES CORRECTION_CAPACITY_t+1
-EVENT_ENDED != BUFFER_RESTORED
 ```
 
-If the next plausible shock can arrive before regeneration, plan for a multi-event sequence rather than a clean single-event recovery.
+Use can consume fuel, liquidity, staff endurance, trust, maintenance headroom, evidence quality or human verification capacity.
 
-### 6. Protect a local floor where pooling would otherwise erase recoverability
+If the next plausible event can arrive before replenishment, model a sequence rather than one isolated shock.
 
-Pooling is often valuable. Local protection is often valuable. Neither should be maximised by default.
+### D. Surface collision; do not invent the priority rule
 
-Ask:
+When jointly deliverable capacity is insufficient, route to the legitimate domain owner while keeping these questions visible:
 
-- What minimum capability must remain locally and immediately accessible?
-- What would become impossible to recover if this unit gives away its last local reserve?
-- Which capabilities have rebuild/acquisition lead times longer than the correction window?
-- Can shared capacity be used above a protected local floor rather than replacing the floor?
+- who can claim the capacity;
+- who may allocate it;
+- what minimums/floors must remain locally protected;
+- what duty, priority rule or public purpose governs allocation;
+- who bears delay, transfer, conservation or denial;
+- what residue remains after emergency allocation.
 
-The answer may be zero in some domains and substantial in others. This route does not author the number.
+This route does **not** solve standing, distributive justice, clinical triage, market policy or legal priority.
 
-### 7. Expose the collision before the pool saturates
+### E. Build before the stress arrives
 
-If joint demand can exceed jointly deliverable capacity, an engineering model is no longer enough.
+Possible owner-justified moves include:
 
-Ask before the emergency:
-
-- Who has standing to claim the scarce capacity?
-- Who has authority to allocate it?
-- What priority rule, duty or public purpose governs allocation?
-- Which minimums are non-tradable, if any?
-- How are affected parties represented?
-- Can the allocation be challenged or revisited quickly enough to matter?
-- Who carries the burden of conserving, waiting, transferring or going without?
-- What residue remains after the emergency allocation?
-
-```text
-CAPACITY_SHORTAGE -> ALLOCATION
-ALLOCATION -> VALUE / STANDING / AUTHORITY
-TECHNICAL_OPTIMUM != LEGITIMATE_PRIORITY
-```
-
-This card reveals the collision. It does not solve moral pluralism, standing, floor-grounding or distributive justice.
-
-### 8. Build before the stress case arrives
-
-Do not stop at `the backup is weak`.
-
-Possible construction moves include:
-
-- diversify by **failure lineage**, not vendor count;
-- protect a local minimum while retaining a shared surge pool;
+- diversify by failure lineage, not vendor count;
+- protect a local minimum while retaining shared surge capability;
 - increase firm/deliverable capacity rather than headline capacity;
-- pre-position equipment, fuel, housing, spare parts or authority;
-- train additional people before expertise is needed;
-- preserve human verification skill while using automation;
-- create independent sensing/evidence routes;
-- reduce or shift demand in time;
-- make mutual-aid release rules explicit before scarcity;
-- shorten switching/transport/authorization latency;
-- increase regeneration rate after use;
-- remove a common bottleneck that makes otherwise separate reserves jointly unavailable.
+- pre-position equipment, fuel, housing, parts, finance or authority;
+- train extra people / preserve human verification skill;
+- create independent sensing and evidence routes;
+- shift demand in time;
+- shorten activation and conversion latency;
+- improve replenishment rate;
+- remove common bottlenecks;
+- exercise the whole reserve-to-protection route, not merely check that the stored asset exists.
 
-A good result identifies **what to construct now**, not merely what could fail later.
+## Small return
 
-## Small output
-
-A useful return can usually fit in this form:
+Use prose if possible. If structure helps, keep only what changes the action:
 
 ```text
 CAPABILITY COUNTED:
-SHARED / DEDICATED / BORROWED:
-COMMON-MODE FAILURE:
 SIMULTANEOUS CLAIMANTS:
-DELIVERY CLOCK:
-REGENERATION CLOCK:
-LOCAL FLOOR AT RISK:
-COLLISION / ALLOCATION OWNER:
+SHARED FAILURE / CONVERSION BOTTLENECK:
+DELIVERY + REPLENISHMENT CLOCK:
+LOCAL FLOOR / ALLOCATION OWNER:
 BUILD-BEFORE-STRESS ACTION:
 EVIDENCE THAT WOULD CHANGE THIS READING:
 ```
 
-Do not fill fields that add no decision value. Plain prose is preferable when it carries the same distinctions with less burden.
+## What owner pressure has already shown
 
-## Stop / route rules
+This draft does **not** claim a new resilience method.
 
-Stop this route and use the domain owner directly when:
+Strong owner fields already contain the substantive mechanics:
 
-- the domain already has a mature joint-capacity model that contains the relevant dependencies;
-- no shared/borrowed capacity is material to the decision;
-- the remaining question is a legal/clinical/engineering calculation outside the competence of this route;
-- the decisive issue is priority/standing rather than capacity mechanics — route to the legitimate allocation owner while keeping the collision visible;
-- further tracing would not change the next action and only produces a larger dependency map.
+- resilience engineering: adaptive-capacity sharing / graceful extensibility;
+- finance: system-wide liquidity, common holdings, margin/fire-sale amplification;
+- hospitals: surge planning, pooling, transfer constraints and correlated demand;
+- fire/rescue: mutual aid and local retention during widespread incidents;
+- electricity: firm capacity, reserves, flexibility and interdependency;
+- energy security: strategic stocks plus refinery/transport/product bottlenecks;
+- AI control: monitoring latency, multi-agent attacks, recovery and monitor robustness.
 
-Do not infer that pooling is bad, local autonomy is good, redundancy must be dedicated, or every reserve needs a numerical correlation model.
+The candidate value is only a cross-domain **activation and routing** function: prevent `backup exists` from ending the inquiry too early.
 
-## Worked pressure tests
+The Bank of England SWES is a clean adverse example: the owner-native exercise already captures buffer depletion, correlated rebuilding, repo expectations, asset-sale amplification and market-capacity saturation in far greater detail. This field route adds no finance analysis there; at most it points a non-specialist toward system-wide analysis sooner.
 
-### A. Multi-hospital ICU pooling
+## Stop / falsify
 
-Owner evidence: Daudelin et al. (2026) finds hospital pooling can reduce ICU demand volatility through aggregation of imperfectly correlated patient demand and can flatten peaks when local epidemic waves are asynchronous. The same paper observes lower diversification benefit when ICU peaks become more synchronized. A separate 2026 hospital-bed governance model explicitly treats demand covariance as a determinant of the value of pooling and examines designs combining shared capacity with protected local reserve.
+Close or leave this draft unmerged if competent ordinary non-specialists already move reliably from:
 
-What this route changes:
+```text
+BACKUP EXISTS
+```
 
-- `POOL SIZE` is not enough; inspect demand correlation.
-- patient transfer requires transport, receiving staff and clinical capability, not merely an empty nominal bed.
-- fully centralising beds can create local-access and coordination costs even when pooling reduces mismatch.
-- if the shared pool saturates, the problem becomes clinical/ethical allocation, not a covariance calculation.
+to:
 
-Disposition: **USEFUL CROSS-DOMAIN ENTRY; DOMAIN OWNER STILL DOES THE REAL CAPACITY AND CLINICAL WORK.**
+```text
+JOINT AVAILABILITY
++ SHARED FAILURE LINEAGE
++ ACTIVATION / CONVERSION TIME
++ REPLENISHMENT
++ SIMULTANEOUS CLAIMANTS
++ ALLOCATION AUTHORITY
+```
 
-### B. Electricity system under heat + fast concentrated load growth
+with equal or lower burden.
 
-Owner evidence: IEA Electricity 2026 treats grid capacity as a major bottleneck and distinguishes firm from condition-dependent capacity. Current U.S. heat emergencies have required backup generation and higher reserve requirements while large concentrated loads such as data centres are expanding connection demand.
+Do not add a scalar reserve score. Staff, fuel, electricity, liquidity, trusted evidence and human attention have different units, substitution rules, replenishment times and allocation problems.
 
-What this route changes:
+## Owner anchors
 
-- connection capacity, emergency reserve margin, transformers and dispatchable flexibility are shared correction resources;
-- capacity that is connectable in normal conditions may be non-firm during stressed conditions;
-- planning against speculative or double-counted demand can itself consume investment and planning capacity;
-- a locally financeable load can alter what remains reachable for other loads when firm capacity is scarce.
-
-Disposition: **USEFUL FOR EXPOSING SHARED-CAPACITY CLAIMS; GRID RELIABILITY/CONNECTION DECISIONS REMAIN WITH SYSTEM OPERATORS AND REGULATORS.**
-
-### C. Strategic oil stocks during a transport/refining shock
-
-Owner evidence: OECD's 2026 energy-shock analysis says strategic stocks are important buffers but large headline inventories do not guarantee immediate market relief because refinery capacity, tanker availability and product bottlenecks limit conversion of stocks into usable supply.
-
-What this route changes:
-
-- barrels in storage are not barrels/day delivered to the affected economy;
-- reserve-release plans can share the same refinery, tanker, port or product bottleneck;
-- long disruptions consume the buffer and create a regeneration problem;
-- country-level coverage can diverge sharply, making allocation and burden international as well as technical.
-
-Disposition: **USEFUL `STOCK -> FLOW -> COLLISION` CHECK; ENERGY SECURITY OWNERS PROVIDE THE ACTUAL MODELS.**
-
-## What this draft is testing
-
-The draft survives only if real users or cases show that it catches a material cross-domain omission before the owner-native method is reached, or helps identify the correct owner/problem sooner.
-
-Delete, absorb or reduce it if it merely paraphrases ordinary contingency planning.
-
-A strong falsifier is:
-
-> Given a real capacity-dependent decision, competent ordinary/domain reasoning reliably notices the same common-mode, concurrency, delivery, regeneration and allocation issues with equal or lower burden.
-
-No claim of novelty is made.
-
-## External owner anchors used for this draft
-
-- D. D. Woods, theory of graceful extensibility / sustained adaptability.
-- R. I. Cook & B. A. Long, adaptive-capacity sharing in technical incident response, *Applied Ergonomics* (2021): https://pubmed.ncbi.nlm.nih.gov/32927402/
-- Daudelin et al., hospital capacity pooling / diversification mechanisms, *Risk Analysis* (2026): https://onlinelibrary.wiley.com/doi/full/10.1111/risa.70329
-- `Designing Governance Boundaries for Hospital Bed Management` (2026): https://www.mdpi.com/2227-9032/14/13/1949
-- Nature Climate Change, `Infrastructure links amplify impacts` (2026): https://www.nature.com/articles/s41558-026-02747-1
-- IEA, *Electricity 2026 — Grids*: https://www.iea.org/reports/electricity-2026/grids
-- IEA, *Electricity 2026 — Flexibility*: https://www.iea.org/reports/electricity-2026/flexibility
-- OECD, 2026 energy-shock resilience analysis: https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2026-issue-1_2d1956f0-en/full-report/from-energy-shocks-to-stronger-resilience_761a5995.html
-- WHO, ethics of health research priority setting: https://www.who.int/publications/i/item/9789240110953
+- Cook & Long, adaptive-capacity sharing / resilience engineering: https://pubmed.ncbi.nlm.nih.gov/32927402/
+- Bank of England SWES final report: https://www.bankofengland.co.uk/financial-stability/boe-system-wide-exploratory-scenario-exercise/boe-swes-exercise-final-report
+- Daudelin et al., hospital capacity pooling (2026): https://onlinelibrary.wiley.com/doi/full/10.1111/risa.70329
+- Hospital pooling/local-protection governance (2026): https://www.mdpi.com/2227-9032/14/13/1949
+- Nature Climate Change, infrastructure interdependency (2026): https://www.nature.com/articles/s41558-026-02747-1
+- IEA Electricity 2026 — grids/flexibility: https://www.iea.org/reports/electricity-2026/grids
+- England National Co-ordination and Advisory Framework: https://www.gov.uk/government/publications/national-coordination-and-advisory-framework-for-england/national-co-ordination-and-advisory-framework-for-england-accessible-version
+- OECD energy-shock resilience: https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2026-issue-1_2d1956f0-en/full-report/from-energy-shocks-to-stronger-resilience_761a5995.html
 
 ## Boundary
 
-This draft does not alter TRACE, Mechanical Ethics, Campfire, Square authority, release state or canon. It is a reversible field route built from current world pressure and external owner work.
+No TRACE, Mechanical Ethics, Campfire or Square authority/source change follows from this draft. It is a reversible practical route built from current world pressure and external owner work.
