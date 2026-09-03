@@ -1,9 +1,11 @@
-# STRUCTURAL SCARS — BOUNDED WISDOM RETRIEVAL
+# STRUCTURAL SCARS — COLD OPERATIONAL RETRIEVAL SCAFFOLD
 
-Status: **WORKING / COLD BY DEFAULT / NOT CANON / NOT CHECKLIST / NOT AUTOMATIC POLICY**  
+Status: **WORKING / COLD BY DEFAULT / OPERATIONAL SCAFFOLD / NOT VOLUNTARY INHERITANCE / NOT CANON / NOT CHECKLIST / NOT AUTOMATIC POLICY**  
 Updated: 2026-09-03 — Europe/London
 
 Purpose: make a few **earned failure shapes** retrievable when the same causal pattern returns in different subject matter.
+
+Because a future Framework boot is instructed to consult the omission map when material, this file is a project-maintained **operational retrieval scaffold** when that route fires. A receiver may challenge, narrow or reject a scar, but processing this carrier is not evidence that the receiver voluntarily selected or internally endorses it. See `proposals/VOLUNTARY_INHERITANCE_VS_OPERATIONAL_SCAFFOLD_20260830.md` for the prior project distinction.
 
 ```text
 LESSON_STORED != LESSON_AVAILABLE_AT_DECISION
@@ -11,6 +13,8 @@ TOPIC_MATCH != STRUCTURAL_MATCH
 SCAR_MATCH != DIAGNOSIS
 RETRIEVAL != APPLICATION
 PAST_FAILURE != CURRENT_CAUSE
+OPERATIONAL_SCAFFOLD != VOLUNTARY_INHERITANCE
+SCAR_RETRIEVED != SCAR_SELF_ENDORSED
 ```
 
 ## Use
@@ -34,7 +38,7 @@ stronger owner found -> local claim shrinks -> repeat -> project purpose contrac
 ```
 **Cue:** cut overclaims/instruments without silently shrinking the guiding purpose.  
 **Retrieve:** COM #74 comment `5532139651`; Open Horizon body; relevant #76 owner-subtraction history.  
-**Boundary:** local mechanisms may still deserve deletion; overlap is not value.  
+**Boundary:** local mechanisms may still deserve deletion; overlap is not value; the broader project itself is not immune from evidence.  
 **Reopen if:** real-world use shows the wider inquiry adds no consequential integration/learning beyond lower-burden owner-native methods.
 
 ## S2 — CATALOGUE
@@ -94,16 +98,17 @@ possible value identified -> preserve state by default -> contamination/danger/c
 
 ## Memory metabolism
 
-Cumulative wisdom is not maximal retention.
+Cumulative project learning is not maximal retention.
 
 ```text
 RETAIN / RELATE / CONTEST / QUARANTINE / SUPERSEDE / ARCHIVE / RE-DERIVE
 ```
 
-The external ledger preserves history. This file only helps decide what old learning may be worth reopening now.
+The external ledger preserves history. This file only helps decide what old failure-learning may be worth reopening now. It is not a complete memory or wisdom architecture; constructive/inheritance precedent remains outside its scope.
 
 ```text
 ARCHIVED != ACTIVE
 SUPERSEDED != ERASED
 FORGOTTEN_FROM_WORKING_STATE != DENIED_HISTORY
+FAILURE-SHAPE RETRIEVAL != GENERAL CONSEQUENTIAL MEMORY RETRIEVAL
 ```
