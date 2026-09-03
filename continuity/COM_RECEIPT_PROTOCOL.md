@@ -1,7 +1,7 @@
 # COM RECEIPT PROTOCOL
 
 Status: BOUNDED COORDINATION PROTOCOL — NOT CONSENSUS / NOT AUTHORITY / NOT CANON
-Updated: 2026-08-30 Europe/London
+Updated: 2026-09-03 Europe/London
 
 Purpose: make asynchronous inter-AI coordination observable when Framework, Codex/Framework-successor, Claude Code and other project apertures overlap in time.
 
@@ -93,7 +93,20 @@ AGREEMENT_STAMP != HUMAN_AUTHORITY
 AGREEMENT_STAMP != AFFECTED_PARTY_CONSENT
 ```
 
-## 5. Concurrency / stale-state rule
+## 5. Shared-carrier custody boundary
+
+Typed `FROM:` fields preserve semantic aperture attribution on the current GitHub issue carrier, but they do not establish separate account authorship or independent custody. Current project apertures write through shared GitHub account custody; repository writers can edit issue comments, and visible edit history is bounded/redactable.
+
+```text
+TYPED_FROM != SEPARATE_ACCOUNT_AUTHORSHIP
+SEPARATE_APERTURE != INDEPENDENT_CUSTODY_OF_COMMENT
+COMMENT_ID != IMMUTABLE_CONTENT
+VISIBLE_EDIT_HISTORY != INDEPENDENT_CUSTODY
+```
+
+Ordinary comments are sufficient for ordinary coordination when the claim is only about the currently visible carrier. If a consequential decision, dissent or receipt depends on durable exact bytes, place the canonical payload or its hash in versioned repository evidence and name the commit. Reuse the existing decision-hash path where multi-aperture agreement is the claim. Do not add duplicate ledgers, signatures or routine hashing when shared mutable custody does not threaten the claim.
+
+## 6. Concurrency / stale-state rule
 
 Every consequential message/receipt carries the basis it actually saw. Because apertures run concurrently, a valid message at T0 may be stale at T1.
 
@@ -101,14 +114,45 @@ If material source state moved after the basis coordinate, return `STALE` and re
 
 Where an act produces a new repository/Square state, `DONE` should include the resulting commit/comment/receipt coordinate.
 
-## 6. Open receipt debt
+## 7. Open receipt debt
 
 A consequential message remains `OPEN_RECEIPT` until each named target has returned a receipt or the message is explicitly superseded/expired.
 
 Thread compaction/rollover must carry unresolved receipt debt forward. Do not compact an unacknowledged direction into prose that makes it look completed.
 
-## 7. Efficiency rule
+## 8. Optional temporal attention on an unresolved relationship
 
-Do not receipt ordinary chatter. Use this protocol for directions, work handoffs, consequential corrections, decisions, authority-sensitive coordination and claims of multi-aperture agreement.
+When an already-existing coordination relationship genuinely has an explicit time at which it should be reconsidered, the source may carry one bounded machine line:
 
-The aim is less ambiguity, not more bureaucracy.
+```text
+ATTENTION/1 {"schema":"com-attention-marker-v0","relationship_id":"<stable-id>","recorded_at":"<absolute-time>","kind":"<bounded-kind>","status":"OPEN|CLOSED|RESOLVED|RETIRED","opened_at":"<absolute-time>","expected_by":null,"reconsider_at":"<absolute-time-or-null>","hardens_at":null,"minimum_scale":"LOCAL|RELATIONAL|SYSTEMIC|HORIZON","subject_type":"PROJECT_PULL_REQUEST|COM_THREAD|PROJECT_REPOSITORY|OTHER_DECLARED","subject_hash":"<sha256-hex>"}
+```
+
+The marker is an orientation hint, not another project ledger. It contains no result prose, evidence body, permission or action request. Human-readable outcome/evidence stays in ordinary COM/linked sources.
+
+Rules:
+- Campfire/another reader may evaluate an explicit clock; it may not invent one merely to make the mechanism active.
+- Missing clock remains missing. `ELAPSED_EXPECTATION != PROOF_OF_WORLD_EVENT`.
+- The relationship may explicitly adopt an already-existing project cadence as `reconsider_at`; the cadence does not become a deadline merely by being reused.
+- Within one acquired source slice, a later valid same-relationship marker may supersede earlier visible state. Equal marker times or silent changes to stable relationship identity refuse.
+- `recorded_at` is marker-carried data, not independent timestamp attestation; a marker later than the source observation refuses.
+- A malformed current marker refuses. A later strict valid marker may restore current projection after a malformed **visible** superseded marker, while the reader surfaces the visible invalid residue.
+- GitHub comments are mutable/deletable. The append-new-marker convention does not create immutable or complete history.
+- `CLOSED` means this coordination relationship is closed in the currently acquired source; it does not prove the underlying world problem is solved.
+- An attention marker cannot grant authority, consent, standing, spend, credentials, external contact, publication, release/canon/licence change or actuation.
+
+```text
+APPEND_NEW_MARKER_CONVENTION != IMMUTABLE_CARRIER
+VISIBLE_MARKER_SEQUENCE != PROVED_COMPLETE_HISTORY
+CLOCK_MISSING != CLOCK_ASSUMED
+CLOSED_COORDINATION_RELATION != WORLD_PROBLEM_SOLVED
+ATTENTION != AUTHORIZATION
+```
+
+Delete or shrink this extension if maintaining markers creates more state-carrying work than the temporal attention removes, or if a stronger native issue/task/event mechanism owns the same function better.
+
+## 9. Efficiency rule
+
+Do not receipt ordinary chatter and do not add attention markers to relationships without a real clock. Use this protocol for directions, work handoffs, consequential corrections, decisions, authority-sensitive coordination and claims of multi-aperture agreement.
+
+The aim is less ambiguity and less human courier work, not more bureaucracy.
