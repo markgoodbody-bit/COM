@@ -22,6 +22,8 @@ When a current process resembles a scar:
 3. check current owners, evidence, authority and consequences;
 4. adapt, reject or retain the old lesson.
 
+If a scar materially changes what is retrieved, challenged or decided, name it in the resulting return as `SCAR: S#`. This records that the scar actually fired; it does not prove the match was correct or require logging non-retrieval.
+
 A scar is a warning hypothesis, not a rule. Add one only after real failure, adverse/null consequence, hostile attack or repeated correction leaves a named evidence route.
 
 ## S1 — PURPOSE SHRINK
