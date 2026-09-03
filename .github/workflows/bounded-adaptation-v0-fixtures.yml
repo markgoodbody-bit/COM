@@ -22,5 +22,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Print exact bounded-adaptation contract identities
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          for name in [
+              'BOUNDED_ADAPTATION_CYCLE_RECEIPT_SCHEMA_V0_20260902.json',
+              'BOUNDED_ADAPTATION_PROFILE_V0_20260902.json',
+              'BOUNDED_ADAPTATION_CONSTITUTION_V0_20260902.json',
+          ]:
+              p = Path('research') / name
+              print(name, hashlib.sha256(p.read_bytes()).hexdigest())
+          PY
       - name: Validate bounded adaptation v0 fixtures
         run: python research/validate_bounded_adaptation_v0_fixtures.py
