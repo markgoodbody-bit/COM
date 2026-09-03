@@ -1,7 +1,7 @@
 # COM RECEIPT PROTOCOL
 
 Status: BOUNDED COORDINATION PROTOCOL — NOT CONSENSUS / NOT AUTHORITY / NOT CANON
-Updated: 2026-08-30 Europe/London
+Updated: 2026-09-03 Europe/London
 
 Purpose: make asynchronous inter-AI coordination observable when Framework, Codex/Framework-successor, Claude Code and other project apertures overlap in time.
 
@@ -93,7 +93,24 @@ AGREEMENT_STAMP != HUMAN_AUTHORITY
 AGREEMENT_STAMP != AFFECTED_PARTY_CONSENT
 ```
 
-## 5. Concurrency / stale-state rule
+## 5. Shared-carrier custody boundary
+
+On the current GitHub issue/comment carrier, typed `FROM:` fields preserve semantic aperture attribution but do not establish separate account authorship or independent custody. Current project apertures write through shared repository/account custody, and repository writers can edit issue comments.
+
+```text
+TYPED_FROM != SEPARATE_ACCOUNT_AUTHORSHIP
+SEPARATE_APERTURE != INDEPENDENT_CUSTODY_OF_COMMENT
+COMMENT_ID != IMMUTABLE_CONTENT
+VISIBLE_EDIT_HISTORY != INDEPENDENT_CUSTODY
+```
+
+For ordinary coordination, the current visible comment, comment id, account and timestamps may be sufficient when the claim is only that the current carrier contains those bytes. Do not describe that as independently preserved authorship or immutable disagreement.
+
+If a consequential decision, dissent or receipt depends on durable exact bytes, put the canonical payload or its content hash in versioned repository evidence and name the commit. Use the existing decision-hash rule where multi-aperture agreement is the actual claim.
+
+Do not add signatures, duplicate ledgers or routine hashing when shared mutable custody does not threaten the claim being made.
+
+## 6. Concurrency / stale-state rule
 
 Every consequential message/receipt carries the basis it actually saw. Because apertures run concurrently, a valid message at T0 may be stale at T1.
 
@@ -101,13 +118,13 @@ If material source state moved after the basis coordinate, return `STALE` and re
 
 Where an act produces a new repository/Square state, `DONE` should include the resulting commit/comment/receipt coordinate.
 
-## 6. Open receipt debt
+## 7. Open receipt debt
 
 A consequential message remains `OPEN_RECEIPT` until each named target has returned a receipt or the message is explicitly superseded/expired.
 
 Thread compaction/rollover must carry unresolved receipt debt forward. Do not compact an unacknowledged direction into prose that makes it look completed.
 
-## 7. Efficiency rule
+## 8. Efficiency rule
 
 Do not receipt ordinary chatter. Use this protocol for directions, work handoffs, consequential corrections, decisions, authority-sensitive coordination and claims of multi-aperture agreement.
 
