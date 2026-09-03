@@ -9,11 +9,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 SCHEMA_PATH = ROOT / "BOUNDED_ADAPTATION_CYCLE_RECEIPT_SCHEMA_V0_20260902.json"
 PROFILE_PATH = ROOT / "BOUNDED_ADAPTATION_PROFILE_V0_20260902.json"
+CONSTITUTION_PATH = ROOT / "BOUNDED_ADAPTATION_CONSTITUTION_V0_20260902.json"
 FIXTURES_PATH = ROOT / "BOUNDED_ADAPTATION_V0_FIXTURES_20260902.json"
 
 
 def fail(path, message):
     raise ValueError(f"{path}: {message}")
+
+
+def sha256_bytes(data):
+    return hashlib.sha256(data).hexdigest()
 
 
 def type_ok(value, expected):
@@ -99,10 +104,21 @@ def parse_utc(value, path):
     return parsed
 
 
-def validate_profile(receipt, profile, profile_bytes):
-    digest = hashlib.sha256(profile_bytes).hexdigest()
-    if receipt["profile_sha256"] != digest:
-        fail("$.profile_sha256", f"does not match profile bytes {digest}")
+def validate_contract_bindings(profile, profile_bytes, constitution_bytes, bundle):
+    profile_digest = sha256_bytes(profile_bytes)
+    constitution_digest = sha256_bytes(constitution_bytes)
+    if profile["constitution_sha256"] != constitution_digest:
+        fail("profile.constitution_sha256", f"does not bind current constitution bytes {constitution_digest}")
+    if bundle["profile_sha256"] != profile_digest:
+        fail("fixtures.profile_sha256", f"does not bind current profile bytes {profile_digest}")
+    return profile_digest, constitution_digest
+
+
+def validate_profile(receipt, profile, profile_digest, constitution_digest):
+    if receipt["profile_sha256"] != profile_digest:
+        fail("$.profile_sha256", f"does not match profile bytes {profile_digest}")
+    if receipt["constitution_sha256"] != constitution_digest:
+        fail("$.constitution_sha256", f"does not match constitution bytes {constitution_digest}")
     if receipt["constitution_sha256"] != profile["constitution_sha256"]:
         fail("$.constitution_sha256", "does not match profile constitution")
 
@@ -189,8 +205,12 @@ def validate_semantics(receipt):
 def main():
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     profile_bytes = PROFILE_PATH.read_bytes()
+    constitution_bytes = CONSTITUTION_PATH.read_bytes()
     profile = json.loads(profile_bytes)
     bundle = json.loads(FIXTURES_PATH.read_text(encoding="utf-8"))
+    profile_digest, constitution_digest = validate_contract_bindings(
+        profile, profile_bytes, constitution_bytes, bundle
+    )
 
     failures = []
     for fixture in bundle["fixtures"]:
@@ -198,7 +218,7 @@ def main():
         error = None
         try:
             validate_schema(fixture["receipt"], schema)
-            validate_profile(fixture["receipt"], profile, profile_bytes)
+            validate_profile(fixture["receipt"], profile, profile_digest, constitution_digest)
             validate_semantics(fixture["receipt"])
         except ValueError as exc:
             valid = False
@@ -211,6 +231,8 @@ def main():
 
     if failures:
         return 1
+    print(f"PASS exact profile sha256: {profile_digest}")
+    print(f"PASS exact constitution sha256: {constitution_digest}")
     print(f"PASS all {len(bundle['fixtures'])} bounded-adaptation v0 fixtures")
     return 0
 
