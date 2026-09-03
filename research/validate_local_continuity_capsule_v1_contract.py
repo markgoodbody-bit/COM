@@ -7,6 +7,7 @@ call a model, use credentials, spend, or grant authority.
 
 from __future__ import annotations
 
+import copy
 import hashlib
 import json
 from datetime import datetime
@@ -20,8 +21,8 @@ SCHEMA_PATH = ROOT / "research" / "LOCAL_CONTINUITY_CAPSULE_V1_SCHEMA_20260902.j
 PROFILE_PATH = ROOT / "research" / "LOCAL_CONTINUITY_CAPSULE_V1_PROFILE_20260902.json"
 FIXTURES_PATH = ROOT / "research" / "LOCAL_CONTINUITY_CAPSULE_V1_FIXTURES_20260903.json"
 
-EXPECTED_SCHEMA_SHA256 = "3183838ba182388dee0fe62ed4c533bf3ebafe3bb6d44e802163e658a82769fe"
-EXPECTED_PROFILE_SHA256 = "bdf07c294b49af6adc0b1345d6ebeac20f0287a8542cfd483197a111b7e6eb08"
+EXPECTED_SCHEMA_SHA256 = "18e52c4c2746998db23f17c39ceb9aa4a055342991bdef83614399bd5e3fc932"
+EXPECTED_PROFILE_SHA256 = "e94ce05630b09a4ce0ed70023a32a3a3b810da196189b53142c21bfc284bdfba"
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -35,6 +36,16 @@ def load(path: Path) -> tuple[bytes, dict]:
 
 def parse_utc(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
+def deep_merge(base: dict, patch: dict) -> dict:
+    result = copy.deepcopy(base)
+    for key, value in patch.items():
+        if isinstance(value, dict) and isinstance(result.get(key), dict):
+            result[key] = deep_merge(result[key], value)
+        else:
+            result[key] = copy.deepcopy(value)
+    return result
 
 
 def validate_profile_schema_parity(schema: dict, profile: dict) -> None:
@@ -80,12 +91,15 @@ def validate_profile_schema_parity(schema: dict, profile: dict) -> None:
         row["state_id"]: row["active_condition_code"]
         for row in profile["active_condition_rules"]["specific_state_mapping"]
     }
-    assert set(rule_map) == set(schema_dwell), "specific active-condition map does not cover every dwell state"
+    assert set(rule_map) == set(schema_dwell), (
+        "specific active-condition map does not cover every dwell state"
+    )
     assert set(rule_map.values()) <= profile_active
-    assert profile["active_condition_rules"]["breach_mapping"]["any_breached_dwell_requires"] == (
+    breach = profile["active_condition_rules"]["breach_mapping"]
+    assert breach["any_breached_dwell_requires"] == (
         "STATE_UNCHANGED_BEYOND_EXPECTED_DWELL"
     )
-    assert profile["active_condition_rules"]["breach_mapping"][
+    assert breach[
         "state_unchanged_beyond_expected_dwell_requires_any_breached_dwell"
     ] is True
 
@@ -110,10 +124,13 @@ def validate_capsule_semantics(capsule: dict, profile: dict) -> None:
         since = parse_utc(dwell["unchanged_since_utc"])
         if since > observed:
             raise ValueError(f"{dwell['state_id']} unchanged_since_utc is after observation")
-        expected_breached = (observed - since).total_seconds() >= dwell["expected_max_dwell_seconds"]
+        expected_breached = (
+            observed - since
+        ).total_seconds() >= dwell["expected_max_dwell_seconds"]
         if dwell["breached"] is not expected_breached:
             raise ValueError(
-                f"{dwell['state_id']} breached={dwell['breached']} but recomputation is {expected_breached}"
+                f"{dwell['state_id']} breached={dwell['breached']} "
+                f"but recomputation is {expected_breached}"
             )
         expected_active.add(rule_map[dwell["state_id"]])
         any_breached = any_breached or dwell["breached"]
@@ -124,8 +141,8 @@ def validate_capsule_semantics(capsule: dict, profile: dict) -> None:
     actual_active = set(capsule["active_conditions"]["codes"])
     if actual_active != expected_active:
         raise ValueError(
-            f"active_conditions do not equal dwell-derived conditions: expected={sorted(expected_active)} "
-            f"actual={sorted(actual_active)}"
+            "active_conditions do not equal dwell-derived conditions: "
+            f"expected={sorted(expected_active)} actual={sorted(actual_active)}"
         )
     if capsule["active_conditions"]["present"] is not bool(expected_active):
         raise ValueError("active_conditions.present disagrees with derived condition set")
@@ -151,27 +168,29 @@ def main() -> None:
     assert fixture_bundle["profile_sha256"] == profile_sha
 
     Draft202012Validator.check_schema(schema)
-    validator = Draft202012Validator(schema)
+    schema_validator = Draft202012Validator(schema)
     validate_profile_schema_parity(schema, profile)
 
     for vector in profile["canonicalization_test_vectors"]:
         observed_vector_sha = sha256_bytes(vector["canonical_json"].encode("utf-8"))
         assert observed_vector_sha == vector["sha256"], (
-            f"canonicalization vector {vector['name']} digest mismatch: {observed_vector_sha}"
+            f"canonicalization vector {vector['name']} digest mismatch: "
+            f"{observed_vector_sha}"
         )
 
-    # Digest arithmetic negative: changed schema bytes must not retain a valid profile binding.
     mutated_schema_sha = sha256_bytes(schema_bytes + b"\n")
     assert mutated_schema_sha != schema_sha
     assert profile["capsule_schema_sha256"] != mutated_schema_sha
 
     failures = []
+    base_capsule = fixture_bundle["base_capsule"]
     for fixture in fixture_bundle["fixtures"]:
+        capsule = deep_merge(base_capsule, fixture["patch"])
         valid = True
         detail = ""
         try:
-            validator.validate(fixture["capsule"])
-            validate_capsule_semantics(fixture["capsule"], profile)
+            schema_validator.validate(capsule)
+            validate_capsule_semantics(capsule, profile)
         except (ValidationError, ValueError, AssertionError) as exc:
             valid = False
             detail = str(exc).splitlines()[0]
