@@ -5,6 +5,7 @@ on:
     paths:
       - 'research/BOUNDED_ADAPTATION_*'
       - 'research/validate_bounded_adaptation_v0_fixtures.py'
+      - 'research/validate_bounded_adaptation_v0_clean_deletion_gate.py'
       - '.github/workflows/bounded-adaptation-v0-fixtures.yml'
       - '.gitattributes'
 
@@ -38,3 +39,5 @@ jobs:
           PY
       - name: Validate bounded adaptation v0 fixtures
         run: python research/validate_bounded_adaptation_v0_fixtures.py
+      - name: Validate clean deletion-gate refusal
+        run: python research/validate_bounded_adaptation_v0_clean_deletion_gate.py
