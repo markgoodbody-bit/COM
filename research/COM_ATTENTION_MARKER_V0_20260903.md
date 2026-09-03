@@ -44,6 +44,8 @@ All timestamps are absolute ISO-8601 with timezone. `expected_by`, `reconsider_a
 
 `subject_hash` identifies the subject coordinate without copying URLs, titles, bodies or source content into the temporal projection.
 
+Unknown marker properties are invalid in v0. Human-readable outcome/evidence text belongs elsewhere in the COM comment or linked source, not inside the temporal marker.
+
 ## Update semantics
 
 Markers are append-only coordination observations.
@@ -58,6 +60,27 @@ A closing marker keeps the same `relationship_id`, sets `status` to `CLOSED | RE
 LATEST_MARKER_FOR_RELATIONSHIP = CURRENT_COM_COORDINATION_STATE
 OLDER_MARKER != DELETED_HISTORY
 ```
+
+### Malformed historical marker recovery
+
+Append-only history must be correctable without pretending an invalid record disappeared.
+
+If an `ATTENTION/1` line is valid JSON and still has a usable v0 relationship envelope — a canonical `relationship_id` plus an absolute valid `recorded_at` — but the rest of that marker is invalid, then:
+
+- if it is the latest marker for that relationship, current projection **must refuse**;
+- a later fully valid strict marker with the same relationship id and a later `recorded_at` may restore current projection;
+- the invalid superseded marker remains historical residue and the reader should surface a bounded warning such as `SUPERSEDED_INVALID_MARKER`;
+- the reader must not copy or reinterpret the invalid extra fields as part of current state.
+
+Invalid JSON, or a purported marker without enough valid envelope information to identify the relationship and ordering, cannot be safely quarantined and must fail the source slice rather than be silently skipped.
+
+```text
+CORRECTED_CURRENT_STATE != ERASED_INVALID_HISTORY
+MALFORMED_CURRENT_MARKER -> REFUSE
+MALFORMED_SUPERSEDED_MARKER -> WARN + USE_LATER_VALID_STATE
+```
+
+This recovery rule exists because the real first lifecycle test produced an invalid closing marker with extra human-readable `resolution` / `evidence` properties. Campfire correctly refused it. A later strict closing marker repaired current coordination without deleting the malformed historical row.
 
 ## Clock ownership
 
@@ -96,10 +119,11 @@ Repair/delete this format if:
 - users have to duplicate substantive PR/issue state inside the marker;
 - clocks are routinely invented merely to make the attention system active;
 - latest-marker selection can silently choose between contradictory states;
+- malformed historical markers can either permanently poison a corrected relationship or be silently erased without residue;
 - marker text starts becoming a generic project ledger;
 - attention markers become an authorization channel;
 - maintaining markers costs more human effort than the temporal attention they provide.
 
 ## Next gate
 
-Build one strict parser/projection adapter in Campfire, then use at least one real COM marker. Measure whether the marker adds useful temporal orientation without becoming another manual state-carrying burden.
+The strict Campfire adapter and the first real COM marker now exist. The next gate is lifecycle use: OPEN -> due/recheck -> CLOSED/corrected, including malformed historical residue, while measuring whether source-owned markers reduce rather than relocate human state-carrying burden.
