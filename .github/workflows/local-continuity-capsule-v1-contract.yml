@@ -1,0 +1,24 @@
+name: local-continuity-capsule-v1-contract
+
+on:
+  pull_request:
+    paths:
+      - 'research/LOCAL_CONTINUITY_CAPSULE_V1_SCHEMA_20260902.json'
+      - 'research/LOCAL_CONTINUITY_CAPSULE_V1_PROFILE_20260902.json'
+      - 'research/validate_local_continuity_capsule_v1_contract.py'
+      - '.github/workflows/local-continuity-capsule-v1-contract.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate exact capsule v1 contract binding
+        run: python research/validate_local_continuity_capsule_v1_contract.py
