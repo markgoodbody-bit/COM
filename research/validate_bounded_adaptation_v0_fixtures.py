@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 import sys
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -67,6 +68,8 @@ def validate_schema(value, schema, path="$"):
             if key in value:
                 validate_schema(value[key], child, f"{path}.{key}")
     elif expected_type == "array":
+        if "minItems" in schema and len(value) < schema["minItems"]:
+            fail(path, f"has {len(value)} items; minimum is {schema['minItems']}")
         if "maxItems" in schema and len(value) > schema["maxItems"]:
             fail(path, f"has {len(value)} items; maximum is {schema['maxItems']}")
         if schema.get("uniqueItems"):
@@ -84,6 +87,16 @@ def validate_schema(value, schema, path="$"):
     elif expected_type == "string" and "pattern" in schema:
         if re.search(schema["pattern"], value) is None:
             fail(path, f"value does not match pattern {schema['pattern']}")
+
+
+def parse_utc(value, path):
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except (TypeError, ValueError) as exc:
+        fail(path, f"invalid timestamp: {exc}")
+    if parsed.tzinfo is None:
+        fail(path, "timestamp must be timezone-aware")
+    return parsed
 
 
 def validate_profile(receipt, profile, profile_bytes):
@@ -120,6 +133,59 @@ def validate_profile(receipt, profile, profile_bytes):
             fail(f"$.temporary_adaptations[{index}].default_reversion_code", "is required by profile")
 
 
+def validate_semantics(receipt):
+    if not receipt["source_refs"]:
+        fail("$.source_refs", "must name at least one observed source basis")
+
+    started = parse_utc(receipt["started_at_utc"], "$.started_at_utc")
+    completed = parse_utc(receipt["completed_at_utc"], "$.completed_at_utc")
+    if completed < started:
+        fail("$.completed_at_utc", "may not precede started_at_utc")
+
+    deltas = receipt["material_delta_codes"]
+    if not deltas:
+        fail("$.material_delta_codes", "must explicitly state a material delta or NO_MATERIAL_DELTA")
+    if "NO_MATERIAL_DELTA" in deltas and deltas != ["NO_MATERIAL_DELTA"]:
+        fail("$.material_delta_codes", "NO_MATERIAL_DELTA must be exclusive")
+
+    unknowns = receipt["unknown_codes"]
+    if not unknowns:
+        fail("$.unknown_codes", "must explicitly state NONE or one or more unknowns")
+    if "NONE" in unknowns and unknowns != ["NONE"]:
+        fail("$.unknown_codes", "NONE must be exclusive")
+
+    result = receipt["result"]
+    moves = receipt["moves_selected"]
+    if result == "MOVED":
+        if not moves or moves == ["NO_MATERIAL_MOVE"]:
+            fail("$.moves_selected", "MOVED requires at least one actual move")
+        if deltas == ["NO_MATERIAL_DELTA"]:
+            fail("$.material_delta_codes", "MOVED cannot claim NO_MATERIAL_DELTA")
+    elif result == "NO_MATERIAL_MOVE":
+        if moves != ["NO_MATERIAL_MOVE"]:
+            fail("$.moves_selected", "NO_MATERIAL_MOVE result requires exactly the NO_MATERIAL_MOVE move")
+        if deltas != ["NO_MATERIAL_DELTA"]:
+            fail("$.material_delta_codes", "NO_MATERIAL_MOVE result requires NO_MATERIAL_DELTA")
+    elif result == "PAUSED" and "PAUSE" not in moves:
+        fail("$.moves_selected", "PAUSED result requires PAUSE")
+    elif result == "ESCALATED" and "ESCALATE" not in moves:
+        fail("$.moves_selected", "ESCALATED result requires ESCALATE")
+
+    for index, adaptation in enumerate(receipt["temporary_adaptations"]):
+        if adaptation["move"] not in moves:
+            fail(f"$.temporary_adaptations[{index}].move", "must also appear in moves_selected")
+        expires = parse_utc(adaptation["expires_at_utc"], f"$.temporary_adaptations[{index}].expires_at_utc")
+        if expires <= completed:
+            fail(f"$.temporary_adaptations[{index}].expires_at_utc", "must be after completed_at_utc")
+
+    lane = receipt["oldest_unresolved_lane_code"]
+    age = receipt["oldest_unresolved_lane_age_seconds"]
+    if lane == "NONE" and age is not None:
+        fail("$.oldest_unresolved_lane_age_seconds", "must be null when oldest_unresolved_lane_code is NONE")
+    if lane != "NONE" and age is None:
+        fail("$.oldest_unresolved_lane_age_seconds", "must be present when an unresolved lane is named")
+
+
 def main():
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     profile_bytes = PROFILE_PATH.read_bytes()
@@ -133,6 +199,7 @@ def main():
         try:
             validate_schema(fixture["receipt"], schema)
             validate_profile(fixture["receipt"], profile, profile_bytes)
+            validate_semantics(fixture["receipt"])
         except ValueError as exc:
             valid = False
             error = str(exc)
