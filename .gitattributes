@@ -1,0 +1,3 @@
+research/BOUNDED_ADAPTATION_*.json text eol=lf
+research/validate_bounded_adaptation_v0_fixtures.py text eol=lf
+.github/workflows/bounded-adaptation-v0-fixtures.yml text eol=lf
