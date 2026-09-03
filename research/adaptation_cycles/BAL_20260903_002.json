@@ -1,0 +1,73 @@
+{
+  "schema": "framework-bounded-adaptation-cycle-receipt-v0",
+  "cycle_id": "BAL-20260903-002",
+  "constitution_sha256": "6cb67d151d50cfe2268c055da15d9339ace849c1b2ef487834b823eb61457805",
+  "profile_sha256": "6195e926e52232248001e45c50b3884acc7c3ac6c5799ceef93a441725eeed68",
+  "basis_id": "sha256:8c40256cdc1496c00fe0e8df083692e9309f565a51037ae94e0eebb61d447146",
+  "started_at_utc": "2026-09-03T10:10:00Z",
+  "completed_at_utc": "2026-09-03T10:16:14Z",
+  "source_refs": [
+    {
+      "source_id": "PROJECT_PULL_REQUEST",
+      "coordinate_hash": "f128b536fe0e3d509fc11a9b5be4152468273fa3f96602d9aba9f5dd17681099",
+      "domain_hash": "0840f474dfab381482fa77d39c165de0fba92616c688d3372ed2672305aa5699",
+      "state": "VERIFIED"
+    },
+    {
+      "source_id": "PROJECT_PULL_REQUEST",
+      "coordinate_hash": "2cf807bebd962867585f3eaade1b4cb42abf0057dbbd863da75b060a86ecfb4e",
+      "domain_hash": "0840f474dfab381482fa77d39c165de0fba92616c688d3372ed2672305aa5699",
+      "state": "VERIFIED"
+    },
+    {
+      "source_id": "PROJECT_PULL_REQUEST",
+      "coordinate_hash": "c2ec9abd426f3b0331798f144deeb6298d9430fe19ca44bc69bacccb0a2578d9",
+      "domain_hash": "0840f474dfab381482fa77d39c165de0fba92616c688d3372ed2672305aa5699",
+      "state": "VERIFIED"
+    }
+  ],
+  "material_delta_codes": [
+    "CANDIDATE_REVIEW_CHANGED",
+    "REPOSITORY_HEAD_CHANGED"
+  ],
+  "unknown_codes": [
+    "APERTURE_RECEIPT_PENDING"
+  ],
+  "moves_selected": [
+    "REVIEW",
+    "BUILD_REVERSIBLE",
+    "CORRECT_COORDINATION"
+  ],
+  "moves_rejected": [],
+  "temporary_adaptations": [],
+  "oldest_unresolved_lane_code": "BOUNDED_ADAPTATION",
+  "oldest_unresolved_lane_age_seconds": 50100,
+  "anti_drift_results": {
+    "purpose_substitution": "PASS",
+    "authority_creep": "PASS",
+    "carrier_capture": "PASS",
+    "validation_loop": "WARN",
+    "infrastructure_theatre": "WARN",
+    "framework_bottleneck": "WARN",
+    "external_owner_neglect": "PASS",
+    "policy_hardening": "PASS"
+  },
+  "budget_used": {
+    "wall_clock_seconds": 374,
+    "public_source_reads": 18,
+    "external_source_domains": 1,
+    "project_aperture_requests": 0,
+    "repo_mutating_calls": 5,
+    "new_branches": 0,
+    "new_pull_requests": 0,
+    "record_bytes": 2500,
+    "provider_spend_usd": 0
+  },
+  "authority_class_max": "B",
+  "result": "MOVED",
+  "next_trigger_codes": [
+    "APERTURE_RETURN",
+    "SOURCE_CHANGE",
+    "MANUAL_REVIEW"
+  ]
+}
