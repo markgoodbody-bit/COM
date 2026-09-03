@@ -104,14 +104,15 @@ def parse_utc(value, path):
     return parsed
 
 
-def validate_contract_bindings(profile, profile_bytes, constitution_bytes, bundle):
+def validate_contract_bindings(schema_bytes, profile, profile_bytes, constitution_bytes):
+    schema_digest = sha256_bytes(schema_bytes)
     profile_digest = sha256_bytes(profile_bytes)
     constitution_digest = sha256_bytes(constitution_bytes)
+    if profile["receipt_schema_sha256"] != schema_digest:
+        fail("profile.receipt_schema_sha256", f"does not bind current receipt schema bytes {schema_digest}")
     if profile["constitution_sha256"] != constitution_digest:
         fail("profile.constitution_sha256", f"does not bind current constitution bytes {constitution_digest}")
-    if bundle["profile_sha256"] != profile_digest:
-        fail("fixtures.profile_sha256", f"does not bind current profile bytes {profile_digest}")
-    return profile_digest, constitution_digest
+    return schema_digest, profile_digest, constitution_digest
 
 
 def validate_profile(receipt, profile, profile_digest, constitution_digest):
@@ -203,23 +204,28 @@ def validate_semantics(receipt):
 
 
 def main():
-    schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
+    schema_bytes = SCHEMA_PATH.read_bytes()
+    schema = json.loads(schema_bytes)
     profile_bytes = PROFILE_PATH.read_bytes()
     constitution_bytes = CONSTITUTION_PATH.read_bytes()
     profile = json.loads(profile_bytes)
     bundle = json.loads(FIXTURES_PATH.read_text(encoding="utf-8"))
-    profile_digest, constitution_digest = validate_contract_bindings(
-        profile, profile_bytes, constitution_bytes, bundle
+    schema_digest, profile_digest, constitution_digest = validate_contract_bindings(
+        schema_bytes, profile, profile_bytes, constitution_bytes
     )
 
+    fixture_profile_alias = bundle["profile_sha256"]
     failures = []
     for fixture in bundle["fixtures"]:
+        receipt = json.loads(json.dumps(fixture["receipt"]))
+        if receipt.get("profile_sha256") == fixture_profile_alias:
+            receipt["profile_sha256"] = profile_digest
         valid = True
         error = None
         try:
-            validate_schema(fixture["receipt"], schema)
-            validate_profile(fixture["receipt"], profile, profile_digest, constitution_digest)
-            validate_semantics(fixture["receipt"])
+            validate_schema(receipt, schema)
+            validate_profile(receipt, profile, profile_digest, constitution_digest)
+            validate_semantics(receipt)
         except ValueError as exc:
             valid = False
             error = str(exc)
@@ -229,11 +235,22 @@ def main():
         detail = "" if error is None else f" ({error})"
         print(f"{status} {fixture['name']}: observed_valid={valid}{detail}")
 
+    # The fixture bundle's former profile digest is deliberately retained as a stale binding witness.
+    stale = json.loads(json.dumps(bundle["fixtures"][0]["receipt"]))
+    stale["profile_sha256"] = fixture_profile_alias
+    try:
+        validate_profile(stale, profile, profile_digest, constitution_digest)
+        failures.append(("reject_stale_profile_binding", True, None))
+        print("FAIL reject_stale_profile_binding: stale profile digest was accepted")
+    except ValueError as exc:
+        print(f"PASS reject_stale_profile_binding: {exc}")
+
     if failures:
         return 1
+    print(f"PASS exact receipt schema sha256: {schema_digest}")
     print(f"PASS exact profile sha256: {profile_digest}")
     print(f"PASS exact constitution sha256: {constitution_digest}")
-    print(f"PASS all {len(bundle['fixtures'])} bounded-adaptation v0 fixtures")
+    print(f"PASS all {len(bundle['fixtures'])} bounded-adaptation v0 fixtures plus stale-profile binding check")
     return 0
 
 
