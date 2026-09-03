@@ -4,8 +4,10 @@ on:
   pull_request:
     paths:
       - 'research/BOUNDED_ADAPTATION_*'
+      - 'research/adaptation_cycles/BAL_*.json'
       - 'research/validate_bounded_adaptation_v0_fixtures.py'
       - 'research/validate_bounded_adaptation_v0_clean_deletion_gate.py'
+      - 'research/validate_BAL_20260903_002.py'
       - '.github/workflows/bounded-adaptation-v0-fixtures.yml'
       - '.gitattributes'
 
@@ -41,3 +43,5 @@ jobs:
         run: python research/validate_bounded_adaptation_v0_fixtures.py
       - name: Validate clean deletion-gate refusal
         run: python research/validate_bounded_adaptation_v0_clean_deletion_gate.py
+      - name: Validate first real bounded-adaptation receipt
+        run: python research/validate_BAL_20260903_002.py
