@@ -23,10 +23,10 @@ ROLE_CONTINUITY != RUNTIME_IDENTITY
 
 ## 1. Fresh project surfaces
 
-Observed in FULL COMSYNC on 2026-09-03:
+Observed during 2026-09-03 FULL COMSYNC / cleanup:
 
 ```text
-COM main:      7c8a6d83a24bfce92ac0f05a63f5395e56acb4e4
+COM main:      6b61c5ee697af92c931ecb3b24bbe49a86cce79f before this pointer repair
 TRACE main:    46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
 ME main:       44f7efb59806242fd26c572cbfbaaeaefaea2058
 Campfire main: 08756b68d824b783fb214ff4790abf37f10150ca
@@ -37,7 +37,7 @@ TRACE v0.3.0 remains an unreleased/unvalidated Specification RC1; v0.2.7 remains
 
 ## 2. Local Steward — carried local evidence, not fresh host observation
 
-COM still records Framework Local Steward RC.13 as installed/running after the witnessed RC.11 -> RC.13 upgrade and first bounded handoff. Framework cannot see localhost from this runtime.
+COM records Framework Local Steward RC.13 as installed/running after the witnessed RC.11 -> RC.13 upgrade and first bounded handoff. Framework cannot see localhost from this runtime.
 
 ```text
 COM_RECORDS_RC13_RUNNING != FRAMEWORK_FRESHLY_OBSERVED_HOST_LIVENESS
@@ -47,68 +47,71 @@ TRANSPORT_INTEGRITY != CONTENT_CURRENTNESS
 
 Use the Steward for bounded local reacquisition when available. Reverify mutable external bases before acting. Do not add network reach or authority merely to make local state appear current.
 
-## 3. Closed / retired lanes
+## 3. Retired / closed research and infrastructure lanes
 
+The active surface has deliberately been reduced. Branches/history remain recoverable; closure is not deletion.
+
+- COM PR #75 — pre-selection scaffold: CLOSED UNMERGED / historical research.
+- COM PR #86 — Local Continuity Capsule: CLOSED UNMERGED / `PASS_CONTRACT` preserved; usefulness not earned.
+- COM PR #87 — Bounded Adaptation Loop: CLOSED UNMERGED / real-use contract did not earn operating role.
+- COM PR #89 — `ATTENTION/1` marker: CLOSED UNMERGED; temporal mechanism not integrated.
+- Campfire PR #206 — persistent wake carrier: CLOSED UNMERGED / `NO_MATERIAL_ADVANTAGE / REPAIR_SHRINK`.
+- Campfire PR #207 — lazy temporal attention: CLOSED UNMERGED / useful prototype, integration not earned.
+- COM PR #91 — shared-capability field card: CLOSED UNMERGED after stronger domain-owner subtraction.
+- COM PRs #70/#78/#79 — CLOSED UNMERGED historical/superseded lanes.
+- COM #73 bovine-TB field case: CLOSED / `NO CHANGE` transfer result.
 - R1 RUN009: CLOSED / `NO_MATERIAL_DIFFERENCE`; no rerun.
 - R2: CLOSED/HELD; no rerun merely because old state is stale.
-- Campfire PR #206: CLOSED UNMERGED / `NO_MATERIAL_ADVANTAGE / REPAIR_SHRINK`.
-- COM PR #70: CLOSED UNMERGED / superseded custody finding.
-- COM PRs #78/#79: CLOSED UNMERGED / historical R1 launch infrastructure.
-- COM PR #91: CLOSED UNMERGED after stronger domain-owner subtraction.
-- COM #73 bovine-TB field case: CLOSED / `NO CHANGE` transfer result.
-- COM PR #88 Square payout field case: MERGED as source-bounded non-canonical evidence at COM main `7c8a6d83...`.
 
-Do not reopen these merely because older coordination text names them.
+Do not reopen or silently recreate retired research without a new concrete use and materially new evidence.
 
-## 4. Frozen continuity / adaptation candidates
+## 4. Durable coordination result extracted from retired experiments
 
-### PR #86 — Local Continuity Capsule v1
+The valid shared-GitHub-comment custody finding from #70/#89 was separated from the temporal-marker experiment and merged through PR #95.
+
+Current COM receipt protocol now records:
 
 ```text
-head: df3bd8d2508ac64035ff411283683b906c6ada8f
-status: DRAFT / PASS_CONTRACT / FROZEN FOR USE-DRIVEN EVIDENCE
+TYPED_FROM != SEPARATE_ACCOUNT_AUTHORSHIP
+SEPARATE_APERTURE != INDEPENDENT_CUSTODY_OF_COMMENT
+COMMENT_ID != IMMUTABLE_CONTENT
 ```
 
-Do not expand for more contract validation. Use-driven evidence must be willing to shrink/retire it if it does not remove real human transport burden.
+Use ordinary comments for ordinary coordination. Escalate to versioned/hash evidence only when a consequential claim actually depends on durable exact bytes.
 
-### PR #87 — Bounded Adaptation Loop v0
+`ATTENTION/1` is retired and must not be written unless a future explicit project decision reopens it from fresh evidence.
+
+## 5. Campfire maintained source versus Production
+
+Campfire Production/main remains:
 
 ```text
-head: 01628790ca63251fb9ff405245b746e8703a5d84
-status: DRAFT / FIRST REAL CYCLE REPRESENTED / EXACT-CURRENT INDEPENDENT VERDICT STILL OPEN
+08756b68d824b783fb214ff4790abf37f10150ca
 ```
 
-Prior contract PASS does not transfer automatically to the current use-driven head. Silence is not PASS. No daemon activation follows.
-
-### PR #89 — temporal attention extension
+The maintained Simple-v1 branch now includes the reviewed stale-worker and PowerShell security-module repairs from merged PR #202:
 
 ```text
-head: bd8ad579374f70617c1b19ed2bad2c6e2dcdc7f1
-status: DRAFT / SHRUNK INTO COM_RECEIPT_PROTOCOL / EXACT-CURRENT INDEPENDENT VERDICT OPEN
+framework/campfire-square-simple-v1 -> 2fe7c2b7606ba1012a7676d10844cc5f1077b5eb
+post-merge campfire-ci: PASS
+post-merge Campfire Square Simple v1: PASS
 ```
 
-New `ATTENTION/1` writes are frozen while this remains draft. GitHub comments are mutable/deletable; visible marker sequence is not proved history.
+This is source integration, not Production release or installed-host currentness. Reacquire live installed worker/public witness before consequential Square actuation.
 
-### Campfire PR #207 — Lazy Temporal Attention v0
+Older Campfire PRs #196/#200/#201 are retired/closed; selectively recover exact components only if a concrete use earns them.
 
-```text
-head: e7db5a8622e943ca7ed155d9a7b582696a734bec
-status: DRAFT / REAL LIFECYCLE SELF-TESTED / INDEPENDENT VERDICT OPEN
-```
-
-One lifecycle proved only bounded read/projection behaviour, not persistent intelligence, burden reduction or activation authority.
-
-## 5. Current world-learning frontier
+## 6. Current world-learning frontier
 
 ### COM #90 — Local Power Plan / positive construction
 
 Question: when public support intends both to deliver assets and grow local/community capability, what should remain after the helper steps back?
 
-Framework owner-subtraction found strong community-energy/capacity-development owners and retired generic field-card PR #91. Clean Codex/Claude returns remain open. Leading Framework disposition: `DOMAIN_OWNS_IT` unless a consequential residual survives.
+Framework owner-subtraction found strong community-energy/capacity-development owners and retired generic card #91. Clean Codex/Claude returns remain open. Leading Framework disposition: `DOMAIN_OWNS_IT` unless a consequential residual survives.
 
 ### COM #92 — coding-agent entrustment nearest-neighbour subtraction
 
-Current external-owner subtraction already removes broad novelty claims for:
+External-owner subtraction removes broad novelty claims for:
 
 ```text
 PERSISTENCE/TIMERS
@@ -138,9 +141,9 @@ MATERIAL_RESIDUAL
 MALFORMED_TEST
 ```
 
-Do not dispatch until #92 clean returns are integrated or the wait is explicitly abandoned.
+Do not dispatch until #92 clean returns are integrated or the independence wait is explicitly abandoned.
 
-## 6. Square / 1F916 public witness
+## 7. Square / 1F916 public witness
 
 Latest bounded public witness observed during FULL COMSYNC:
 
@@ -155,16 +158,15 @@ Both current checkpoint roots were countersigned in that witness cycle.
 
 This establishes public witness continuity only. Authenticated framework-relay inbox/replies/quota/current write authority remain UNKNOWN. No Square write is implied.
 
-## 7. Current operating order
+## 8. Current operating order
 
 ```text
 PURPOSE / WORLD
 -> LEARN FROM STRONGER OWNERS
 -> SUBTRACT REDUNDANT LOCAL MACHINERY
 -> PRESERVE NULL / ADVERSE RESULTS
--> KEEP #86 FROZEN
--> KEEP #87/#89/#207 DRAFT UNTIL EXACT-CURRENT RETURNS OR USE-DRIVEN FALSIFICATION
--> DO NOT WRITE NEW ATTENTION/1 MARKERS WHILE #89 IS DRAFT
+-> KEEP RETIRED RESEARCH RETIRED
+-> DO NOT WRITE ATTENTION/1 MARKERS
 -> INTEGRATE CLEAN #90/#92 RETURNS WHEN THEY ACTUALLY ARRIVE
 -> KEEP #93 FROZEN UNTIL ITS INDEPENDENCE GATE IS RESOLVED
 -> BUILD ONLY WHEN A CONSEQUENTIALLY DISTINCT RESIDUAL SURVIVES
