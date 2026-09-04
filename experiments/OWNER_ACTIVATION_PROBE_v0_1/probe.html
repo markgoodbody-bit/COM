@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Owner Activation Probe v0.1</title>
+<title>Two-Case Decision Exercise</title>
 <style>
   :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.45; color-scheme: light dark; }
   body { max-width: 860px; margin: 0 auto; padding: 28px 20px 60px; }
@@ -20,12 +20,12 @@
 </style>
 </head>
 <body>
-<h1>Owner Activation Probe <span class="muted">v0.1</span></h1>
-<p class="muted">Local-only A/B runner. No network calls, telemetry, external assets, persistent browser storage, participant names/codes, or automatic uploads.</p>
+<h1>Two-Case Decision Exercise</h1>
+<p class="muted">Local-only feasibility runner. No network calls, telemetry, external assets, persistent browser storage, participant names/codes, or automatic uploads.</p>
 
 <section id="setup" class="card">
   <h2>Start</h2>
-  <p>This feasibility runner does not need identifying information. Do not enter names or other personal details in your answers.</p>
+  <p>This exercise does not need identifying information. Do not enter names or other personal details in your answers.</p>
   <div><button id="startSession">Start session</button></div>
 </section>
 
@@ -60,12 +60,12 @@
   const VERSION = 'owner-activation-probe-v0.1';
   const cases = {
     A: {
-      title: 'Case A — corrected social-care source',
+      title: 'Case A — corrected social-care record',
       text: 'A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment was completed after the note entered the case record. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.',
       prompt: 'After correcting a material source, check whether any still-consequential assessment, plan, risk judgement or action relied on the bad source. If so, route only that act to its existing accountable owner for reconsideration.'
     },
     B: {
-      title: 'Case B — shared energy fallback under Hormuz disruption',
+      title: 'Case B — Hormuz export-resilience briefing',
       text: 'During a severe disruption in the Strait of Hormuz, a planning team says regional hydrocarbon exports remain resilient because Saudi and UAE pipelines can bypass the strait. Its briefing cites headline oil-pipeline capacities and treats them as sufficient evidence that the regional fallback is adequate.\n\nYou are not being asked to forecast prices or assign geopolitical blame.',
       prompt: 'Before relying on the backup, ask who else needs it in the same bad world, what shared bottleneck limits it, whether it can actually be delivered in time, and who allocates it if demand exceeds supply.'
     }
