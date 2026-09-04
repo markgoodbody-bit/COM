@@ -32,6 +32,10 @@
   <div><button id="startSession" disabled>Start session</button></div>
 </section>
 
+<section id="sessionControls" class="hidden">
+  <button id="discard">Discard session</button>
+</section>
+
 <section id="runner" class="hidden">
   <div class="card">
     <div class="status" id="progress"></div>
@@ -52,7 +56,6 @@
   <h2>Complete</h2>
   <p>Both first answers are frozen in memory for this browser session. Export the JSON once and give it to the operator.</p>
   <button id="exportJson">Export JSON</button>
-  <button id="discard">Discard session</button>
   <pre id="summary"></pre>
 </section>
 
@@ -136,6 +139,7 @@
       results: []
     };
     setup.classList.add('hidden');
+    el('sessionControls').classList.remove('hidden');
     runner.classList.remove('hidden');
     renderCase();
   });
@@ -198,6 +202,7 @@
     currentIndex = 0;
     done.classList.add('hidden');
     runner.classList.add('hidden');
+    el('sessionControls').classList.add('hidden');
     setup.classList.remove('hidden');
     el('caseMaterial').classList.add('hidden');
     el('consent').checked = false;
