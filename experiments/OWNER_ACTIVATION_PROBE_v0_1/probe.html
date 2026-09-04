@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Owner Activation Probe v0.1</title>
+<style>
+  :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.45; color-scheme: light dark; }
+  body { max-width: 860px; margin: 0 auto; padding: 28px 20px 60px; }
+  h1 { margin-bottom: .2rem; }
+  .muted { opacity: .72; }
+  .card { border: 1px solid #8886; border-radius: 12px; padding: 18px; margin: 18px 0; }
+  .caseText { white-space: pre-wrap; }
+  .prompt { border-left: 4px solid currentColor; padding: 10px 14px; margin: 14px 0; font-weight: 650; }
+  textarea { width: 100%; min-height: 220px; box-sizing: border-box; padding: 12px; font: inherit; }
+  input { font: inherit; padding: 8px; }
+  button { font: inherit; padding: 9px 14px; margin: 6px 8px 6px 0; cursor: pointer; }
+  button[disabled], textarea[disabled] { opacity: .55; cursor: not-allowed; }
+  .status { font-variant-numeric: tabular-nums; }
+  .hidden { display: none; }
+  code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+</style>
+</head>
+<body>
+<h1>Owner Activation Probe <span class="muted">v0.1</span></h1>
+<p class="muted">Local-only crossed A/B runner. No network calls, telemetry, external assets, localStorage, cookies, or automatic uploads.</p>
+
+<section id="setup" class="card">
+  <h2>Start</h2>
+  <p>Use a disposable participant code. Do not enter a real name, email address, or other identifying information.</p>
+  <label>Participant code <input id="participant" maxlength="40" placeholder="e.g. P07"></label>
+  <div><button id="startSession">Start session</button></div>
+</section>
+
+<section id="runner" class="hidden">
+  <div class="card">
+    <div class="status" id="progress"></div>
+    <h2 id="caseTitle"></h2>
+    <div id="caseText" class="caseText"></div>
+    <div id="treatment" class="prompt hidden"></div>
+    <p><strong>Question:</strong> What is the smallest useful next action now, and what evidence would change your answer?</p>
+    <button id="startCase">Start this case</button>
+    <div id="answerArea" class="hidden">
+      <p class="status" id="timerNote">Timer running.</p>
+      <textarea id="answer" placeholder="Write your first answer here."></textarea>
+      <div><button id="submitAnswer">Submit first answer</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="done" class="card hidden">
+  <h2>Complete</h2>
+  <p>Both first answers are frozen in memory for this browser session. Export the JSON once and give it to the operator.</p>
+  <button id="exportJson">Export JSON</button>
+  <button id="discard">Discard session</button>
+  <pre id="summary"></pre>
+</section>
+
+<script>
+(() => {
+  'use strict';
+
+  const VERSION = 'owner-activation-probe-v0.1';
+  const cases = {
+    A: {
+      title: 'Case A — corrected social-care source',
+      text: 'A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment relied on the note. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.\n\nYou are not being asked to decide the disputed merits of any other issue.',
+      prompt: 'After correcting a material source, check whether any still-consequential assessment, plan, risk judgement or action relied on the bad source. If so, route only that act to its existing accountable owner for reconsideration.'
+    },
+    B: {
+      title: 'Case B — shared energy fallback under Hormuz disruption',
+      text: 'During a severe disruption in the Strait of Hormuz, a planning team says regional oil exports remain resilient because alternative pipelines can bypass the strait. Current owner analysis says normal Strait flows are much larger than available bypass capacity; sustainable throughput can be below nameplate; rerouting logistics can constrain use; and regional LNG has no comparable bypass route.\n\nYou are not being asked to forecast prices or assign geopolitical blame.',
+      prompt: 'Before relying on the backup, ask who else needs it in the same bad world, what shared bottleneck limits it, whether it can actually be delivered in time, and who allocates it if demand exceeds supply.'
+    }
+  };
+
+  const el = id => document.getElementById(id);
+  const setup = el('setup');
+  const runner = el('runner');
+  const done = el('done');
+  let session = null;
+  let caseStartedAt = null;
+  let currentIndex = 0;
+
+  function randomBit() {
+    if (window.crypto && crypto.getRandomValues) {
+      const a = new Uint32Array(1);
+      crypto.getRandomValues(a);
+      return a[0] & 1;
+    }
+    return Math.random() < 0.5 ? 0 : 1;
+  }
+
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return 'session-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2);
+  }
+
+  function buildAssignment() {
+    const promptOnA = randomBit() === 0;
+    const orderAB = randomBit() === 0;
+    const armFor = {
+      A: promptOnA ? 'PROMPT' : 'PLAIN',
+      B: promptOnA ? 'PLAIN' : 'PROMPT'
+    };
+    return {
+      order: orderAB ? ['A', 'B'] : ['B', 'A'],
+      armFor
+    };
+  }
+
+  function renderCase() {
+    const id = session.assignment.order[currentIndex];
+    const c = cases[id];
+    const arm = session.assignment.armFor[id];
+    el('progress').textContent = `Case ${currentIndex + 1} of 2`;
+    el('caseTitle').textContent = c.title;
+    el('caseText').textContent = c.text;
+    el('treatment').textContent = c.prompt;
+    el('treatment').classList.toggle('hidden', arm !== 'PROMPT');
+    el('startCase').disabled = false;
+    el('startCase').classList.remove('hidden');
+    el('answerArea').classList.add('hidden');
+    el('answer').value = '';
+    el('answer').disabled = false;
+    el('submitAnswer').disabled = false;
+    caseStartedAt = null;
+  }
+
+  el('startSession').addEventListener('click', () => {
+    const participantCode = el('participant').value.trim();
+    session = {
+      version: VERSION,
+      session_id: uuid(),
+      participant_code: participantCode,
+      created_at_local: new Date().toISOString(),
+      assignment: buildAssignment(),
+      results: []
+    };
+    setup.classList.add('hidden');
+    runner.classList.remove('hidden');
+    renderCase();
+  });
+
+  el('startCase').addEventListener('click', () => {
+    if (!session || caseStartedAt) return;
+    caseStartedAt = performance.now();
+    el('startCase').disabled = true;
+    el('startCase').classList.add('hidden');
+    el('answerArea').classList.remove('hidden');
+    el('answer').focus();
+  });
+
+  el('submitAnswer').addEventListener('click', () => {
+    if (!session || caseStartedAt === null) return;
+    const response = el('answer').value.trim();
+    if (!response) {
+      alert('Please enter your first answer before submitting.');
+      return;
+    }
+    const elapsedMs = Math.round(performance.now() - caseStartedAt);
+    const caseId = session.assignment.order[currentIndex];
+    session.results.push({
+      case_id: caseId,
+      arm: session.assignment.armFor[caseId],
+      elapsed_ms: elapsedMs,
+      response,
+      character_count: response.length
+    });
+    el('answer').disabled = true;
+    el('submitAnswer').disabled = true;
+
+    currentIndex += 1;
+    if (currentIndex < 2) {
+      setTimeout(renderCase, 250);
+    } else {
+      session.completed_at_local = new Date().toISOString();
+      runner.classList.add('hidden');
+      done.classList.remove('hidden');
+      el('summary').textContent = 'Session complete. Responses: 2. No score was calculated in the participant interface.';
+    }
+  });
+
+  el('exportJson').addEventListener('click', () => {
+    if (!session || session.results.length !== 2) return;
+    const payload = JSON.stringify(session, null, 2);
+    const blob = new Blob([payload], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const safe = (session.participant_code || 'anonymous').replace(/[^a-zA-Z0-9_-]+/g, '_');
+    a.href = url;
+    a.download = `${VERSION}_${safe}_${session.session_id}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+
+  el('discard').addEventListener('click', () => {
+    session = null;
+    caseStartedAt = null;
+    currentIndex = 0;
+    done.classList.add('hidden');
+    runner.classList.add('hidden');
+    setup.classList.remove('hidden');
+    el('participant').value = '';
+    el('summary').textContent = '';
+  });
+})();
+</script>
+</body>
+</html>
