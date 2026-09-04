@@ -34,16 +34,16 @@
 <section id="runner" class="hidden">
   <div class="card">
     <div class="status" id="progress"></div>
-    <h2 id="caseTitle"></h2>
-    <div id="caseText" class="caseText"></div>
-    <div id="treatment" class="prompt hidden"></div>
-    <p><strong>Question:</strong> What is the smallest useful next action now, and what evidence would change your answer?</p>
-    <button id="startCase">Start this case</button>
-    <div id="answerArea" class="hidden">
-      <p class="status">Timer running.</p>
+    <div id="caseMaterial" class="hidden">
+      <h2 id="caseTitle"></h2>
+      <div id="caseText" class="caseText"></div>
+      <div id="treatment" class="prompt hidden"></div>
+      <p><strong>Question:</strong> What is the smallest useful next action now, and what evidence would change your answer?</p>
+      <p class="status">Timer running from case reveal.</p>
       <textarea id="answer" placeholder="Write your first answer here."></textarea>
       <div><button id="submitAnswer">Submit first answer</button></div>
     </div>
+    <button id="startCase">Reveal and start this case</button>
   </div>
 </section>
 
@@ -108,14 +108,14 @@
     const id = session.assignment.order[currentIndex];
     const c = cases[id];
     const arm = session.assignment.arm;
-    el('progress').textContent = `Case ${currentIndex + 1} of 2`;
+    el('progress').textContent = `Case ${currentIndex + 1} of 2 — content hidden until start`;
     el('caseTitle').textContent = c.title;
     el('caseText').textContent = c.text;
     el('treatment').textContent = c.prompt;
     el('treatment').classList.toggle('hidden', arm !== 'PROMPT');
+    el('caseMaterial').classList.add('hidden');
     el('startCase').disabled = false;
     el('startCase').classList.remove('hidden');
-    el('answerArea').classList.add('hidden');
     el('answer').value = '';
     el('answer').disabled = false;
     el('submitAnswer').disabled = false;
@@ -142,7 +142,7 @@
     caseStartedAt = performance.now();
     el('startCase').disabled = true;
     el('startCase').classList.add('hidden');
-    el('answerArea').classList.remove('hidden');
+    el('caseMaterial').classList.remove('hidden');
     el('answer').focus();
   });
 
@@ -198,6 +198,7 @@
     done.classList.add('hidden');
     runner.classList.add('hidden');
     setup.classList.remove('hidden');
+    el('caseMaterial').classList.add('hidden');
     el('participant').value = '';
     el('summary').textContent = '';
   });
