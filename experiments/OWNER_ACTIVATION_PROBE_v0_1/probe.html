@@ -18,7 +18,6 @@
   button[disabled], textarea[disabled] { opacity: .55; cursor: not-allowed; }
   .status { font-variant-numeric: tabular-nums; }
   .hidden { display: none; }
-  code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
 </style>
 </head>
 <body>
@@ -41,7 +40,7 @@
     <p><strong>Question:</strong> What is the smallest useful next action now, and what evidence would change your answer?</p>
     <button id="startCase">Start this case</button>
     <div id="answerArea" class="hidden">
-      <p class="status" id="timerNote">Timer running.</p>
+      <p class="status">Timer running.</p>
       <textarea id="answer" placeholder="Write your first answer here."></textarea>
       <div><button id="submitAnswer">Submit first answer</button></div>
     </div>
@@ -64,12 +63,12 @@
   const cases = {
     A: {
       title: 'Case A — corrected social-care source',
-      text: 'A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment relied on the note. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.\n\nYou are not being asked to decide the disputed merits of any other issue.',
+      text: 'A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment was completed after the note entered the case record. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.\n\nThe case does not establish whether or how much the later assessment relied on the inaccurate fact.',
       prompt: 'After correcting a material source, check whether any still-consequential assessment, plan, risk judgement or action relied on the bad source. If so, route only that act to its existing accountable owner for reconsideration.'
     },
     B: {
       title: 'Case B — shared energy fallback under Hormuz disruption',
-      text: 'During a severe disruption in the Strait of Hormuz, a planning team says regional oil exports remain resilient because alternative pipelines can bypass the strait. Current owner analysis says normal Strait flows are much larger than available bypass capacity; sustainable throughput can be below nameplate; rerouting logistics can constrain use; and regional LNG has no comparable bypass route.\n\nYou are not being asked to forecast prices or assign geopolitical blame.',
+      text: 'During a severe disruption in the Strait of Hormuz, a planning team says regional oil exports remain resilient because Saudi and UAE pipelines can bypass the strait. Its briefing cites headline pipeline capacities but does not reconcile those figures with current utilisation, sustainable operating flow, export/logistics constraints, simultaneous demand for the same routes, or what happens to Gulf LNG that has no equivalent bypass.\n\nYou are not being asked to forecast prices or assign geopolitical blame.',
       prompt: 'Before relying on the backup, ask who else needs it in the same bad world, what shared bottleneck limits it, whether it can actually be delivered in time, and who allocates it if demand exceeds supply.'
     }
   };
@@ -143,7 +142,7 @@
   });
 
   el('startCase').addEventListener('click', () => {
-    if (!session || caseStartedAt) return;
+    if (!session || caseStartedAt !== null) return;
     caseStartedAt = performance.now();
     el('startCase').disabled = true;
     el('startCase').classList.add('hidden');
