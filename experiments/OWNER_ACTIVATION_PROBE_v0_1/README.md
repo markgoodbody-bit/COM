@@ -97,9 +97,9 @@ Results export as a local JSON file after both first answers are submitted.
 
 The participant-facing HTML deliberately uses the neutral title `Two-Case Decision Exercise`; it does not advertise `owner activation`, `A/B`, TRACE, ME, #100 or #101 before answers are complete.
 
-The setup screen gives proportionate information before participation: what is collected, local-only storage/export behavior, no time limit, voluntary participation, stop/discard route, no identifying information, and the intended de-identified feasibility comparison. The Start button remains disabled until the participant affirmatively checks the consent box.
+The setup screen gives proportionate information before participation: what is collected, local-only storage/export behavior, no time limit, voluntary participation, stop/discard route, no requested identifying information, and the intended feasibility comparison. The Start button remains disabled until the participant affirmatively checks the consent box.
 
-The runner does not request a participant name or code and does not export wall-clock timestamps. A random session ID is sufficient to keep the two responses paired. Participants should still avoid putting identifying information into free-text answers.
+The runner does not request a participant name or code and does not export wall-clock timestamps. A random session ID is sufficient to keep the two responses paired. This is **data minimisation, not a guarantee of de-identification**: participants should avoid putting identifying information into free-text answers, and an operator should treat any accidentally identifying free text according to the applicable data-handling context.
 
 The participant should not be told the desired answer or shown the scoring rubric before answering.
 
