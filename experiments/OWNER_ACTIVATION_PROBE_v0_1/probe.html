@@ -96,7 +96,7 @@
 
   function uuid() {
     if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
-    return 'session-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2);
+    return 'session-' + Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2);
   }
 
   function buildAssignment() {
