@@ -24,7 +24,9 @@ ONE SMALL TEST != EFFICACY
 
 ### A — corrected social-care source
 
-A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment relied on the note. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.
+A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment was completed after the note entered the case record. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.
+
+The case does **not** establish whether or how much the later assessment relied on the inaccurate fact. That is deliberately left for the participant to notice or investigate.
 
 Neutral question:
 
@@ -38,7 +40,7 @@ This is the surviving small join under COM PR #100. It creates no new duty and d
 
 ### B — shared energy fallback under Hormuz disruption
 
-During a severe disruption in the Strait of Hormuz, a planning team says regional oil exports remain resilient because alternative pipelines can bypass the strait. Current owner analysis says normal Strait flows are much larger than available bypass capacity; sustainable throughput can be below nameplate; rerouting logistics can constrain use; and regional LNG has no comparable bypass route.
+During a severe disruption in the Strait of Hormuz, a planning team says regional oil exports remain resilient because Saudi and UAE pipelines can bypass the strait. Its briefing cites headline pipeline capacities but does not reconcile those figures with current utilisation, sustainable operating flow, export/logistics constraints, simultaneous demand for the same routes, or what happens to Gulf LNG that has no equivalent bypass.
 
 Neutral question:
 
@@ -50,6 +52,17 @@ Treatment prompt:
 
 This is the unresolved activation-only remainder under COM PR #101. Energy-security owners already contain the substantive mechanics.
 
+## Current owner basis for the case design
+
+Recheck before a real run.
+
+- NHS England's current record-amendment guidance says inaccurate information may need to remain visible because professionals may have read or relied on it; information-governance staff should consider who viewed it and possibly relied on it in care/treatment decisions.
+- The IEA Strait of Hormuz factsheet says about 20 mb/d of oil transited the strait in 2025 versus an estimated 3.5–5.5 mb/d of available crude bypass capacity; it warns that rerouting logistics/supply chains have not been robustly tested and that Gulf LNG has no equivalent route to market.
+
+Owner links:
+- https://transform.england.nhs.uk/information-governance/guidance/amending-patient-and-service-user-records/
+- https://www.iea.org/about/oil-security-and-emergency-response/strait-of-hormuz
+
 ## Design
 
 Use the local `probe.html` file. It has no network calls, telemetry, external assets or persistent browser storage.
@@ -58,7 +71,7 @@ Each participant receives both cases in a crossed order:
 
 - one case `PLAIN`;
 - one case `PROMPT`;
-- assignment is randomized locally;
+- assignment and case order are randomized locally;
 - response time begins only when the participant starts a case;
 - results export as a local JSON file after both first answers are submitted.
 
@@ -66,28 +79,32 @@ Do not identify participants by real name. Use a disposable participant code if 
 
 The participant should not be told the desired answer or shown the scoring rubric before answering.
 
+Important analysis boundary: because each participant sees different cases under different arms, **do not** treat one participant's prompted Case A versus plain Case B as a causal comparison. Compare `PLAIN` versus `PROMPT` **within the same case across participants**. The crossed design reduces participant-level burden and exposes order, but it does not make the two cases interchangeable.
+
+For the first smoke test, collect without inspecting answer quality until each case has at least four first attempts in each arm. Randomization may require more than eight participants. This is only a stopping rule for a tiny feasibility batch, not a powered statistical design.
+
 ## Scoring after collection
 
 Score from the answer alone, blinded to arm where practical.
 
 ### Case A owner-critical observations
 
-1. correct the established factual error / propagate correction to the external recipient as required by the relevant owner process;
-2. identify the later assessment as a still-consequential dependent act;
-3. route that assessment to its existing accountable owner for recorded reconsideration rather than automatically reversing it;
+1. correct/annotate the established factual error through the existing record owner and address the external copy through the relevant owner process;
+2. ask whether the later assessment materially relied on the inaccurate fact rather than assuming either reliance or independence;
+3. if material reliance is found, route that assessment to its existing accountable owner for recorded reconsideration rather than automatically reversing it;
 4. distinguish `no material reliance found` from `reliance cannot be established from available records` when evidence is incomplete.
 
 ### Case B owner-critical observations
 
-1. do not equate nameplate bypass capacity with sustainable/exportable supply;
-2. test joint availability / simultaneous claimants under the same disruption;
-3. test conversion, logistics and delivery before treating the fallback as usable;
+1. do not equate headline/nameplate bypass capacity with currently available sustainable/exportable supply;
+2. ask for current utilisation, sustainable flow and conversion/export/logistics evidence before relying on the fallback;
+3. test joint availability / simultaneous claimants under the same disruption;
 4. surface the allocation/authority question if joint demand exceeds deliverable capacity;
-5. distinguish oil bypass from LNG where the physical route differs.
+5. keep physically non-substitutable flows such as LNG separate rather than laundering them into generic `energy capacity`.
 
 ## Primary comparison
 
-For each case compare:
+For each case separately compare `PLAIN` versus `PROMPT` on:
 
 1. consequential next action / owner / hold / reopen condition;
 2. owner-critical observation count;
@@ -108,7 +125,7 @@ INCONCLUSIVE
 MALFORMED_CASE
 ```
 
-`POSSIBLE_ACTIVATION_DELTA` requires an action-relevant owner-critical observation to appear in the prompted arm that is absent or materially later in the comparable plain arm. Mere extra detail does not count.
+`POSSIBLE_ACTIVATION_DELTA` requires an action-relevant owner-critical observation to appear more reliably or materially earlier in the prompted arm **for the same case**. Mere extra detail does not count.
 
 ## First-run ceiling
 
@@ -131,11 +148,4 @@ If a signal appears, the next step is a better real-user test with the relevant 
 - PR #100 and #101 remain separate objects and are not merged by this experiment;
 - owner methods remain authoritative for domain decisions.
 
-## Current source anchors
-
-- COM PR #100 — social-care correction consequence check.
-- COM PR #101 — shared correction-capacity stress route.
-- NHS England record-amendment guidance — consider who viewed/reied on inaccurate health/care information when correcting records.
-- IEA 2026 Strait of Hormuz factsheet — normal flows, bypass-capacity limits, sustainable/logistical constraints and LNG route limits.
-
-Use current owner sources when scoring a real run. If a material owner fact changes, freeze a new case version rather than silently changing the answer key.
+If a material owner fact changes, freeze a new case version rather than silently changing the answer key.
