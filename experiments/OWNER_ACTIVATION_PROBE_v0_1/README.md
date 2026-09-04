@@ -67,21 +67,24 @@ Owner links:
 
 Use the local `probe.html` file. It has no network calls, telemetry, external assets or persistent browser storage.
 
-Each participant receives both cases in a crossed order:
+Each participant is randomized once to a **session arm**:
 
-- one case `PLAIN`;
-- one case `PROMPT`;
-- assignment and case order are randomized locally;
-- response time begins only when the participant starts a case;
-- results export as a local JSON file after both first answers are submitted.
+- `PLAIN`: both cases are shown without the activation prompts; or
+- `PROMPT`: each case is shown with its small case-specific activation prompt.
+
+Case order is randomized independently.
+
+This between-participant arm is deliberate. An earlier crossed design gave each person one prompted and one plain case; that was rejected before use because a prompt seen first could teach/prime the later `PLAIN` response and contaminate the control.
+
+Response time begins only when the participant starts a case. Results export as a local JSON file after both first answers are submitted.
 
 Do not identify participants by real name. Use a disposable participant code if needed.
 
 The participant should not be told the desired answer or shown the scoring rubric before answering.
 
-Important analysis boundary: because each participant sees different cases under different arms, **do not** treat one participant's prompted Case A versus plain Case B as a causal comparison. Compare `PLAIN` versus `PROMPT` **within the same case across participants**. The crossed design reduces participant-level burden and exposes order, but it does not make the two cases interchangeable.
+Compare `PLAIN` versus `PROMPT` **within the same case across participants**. Randomized case order can be inspected as a possible order/fatigue effect; do not silently pool it away if it matters.
 
-For the first smoke test, collect without inspecting answer quality until each case has at least four first attempts in each arm. Randomization may require more than eight participants. This is only a stopping rule for a tiny feasibility batch, not a powered statistical design.
+For the first smoke test, collect at least four completed participants in each session arm before inspecting answer quality: minimum 8 participants, yielding at least four PLAIN and four PROMPT first attempts for each case. This is only a tiny feasibility batch, not a powered statistical design.
 
 ## Scoring after collection
 
