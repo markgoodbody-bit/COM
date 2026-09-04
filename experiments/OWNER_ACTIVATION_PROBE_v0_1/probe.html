@@ -24,9 +24,12 @@
 <p class="muted">Local-only feasibility runner. No network calls, telemetry, external assets, persistent browser storage, participant names/codes, or automatic uploads.</p>
 
 <section id="setup" class="card">
-  <h2>Start</h2>
-  <p>This exercise does not need identifying information. Do not enter names or other personal details in your answers.</p>
-  <div><button id="startSession">Start session</button></div>
+  <h2>Before you start</h2>
+  <p>This is a small feasibility test of a two-case reasoning interface. It records your two written answers and the elapsed time from each case reveal to submission. There is no time limit; answer normally.</p>
+  <p>Your answers stay only in this browser session unless you choose <strong>Export JSON</strong> at the end and give that file to the operator. Nothing is sent automatically. Do not include names or other identifying information in your answers.</p>
+  <p>Taking part is voluntary. You can stop at any time by closing this page or using <strong>Discard session</strong>; unexported answers are not sent anywhere.</p>
+  <label><input id="consent" type="checkbox"> I understand this information and choose to take part. My de-identified answers and response times may be compared with other sessions for this feasibility test.</label>
+  <div><button id="startSession" disabled>Start session</button></div>
 </section>
 
 <section id="runner" class="hidden">
@@ -120,7 +123,12 @@
     caseStartedAt = null;
   }
 
+  el('consent').addEventListener('change', () => {
+    el('startSession').disabled = !el('consent').checked;
+  });
+
   el('startSession').addEventListener('click', () => {
+    if (!el('consent').checked) return;
     session = {
       version: VERSION,
       session_id: uuid(),
@@ -192,6 +200,8 @@
     runner.classList.add('hidden');
     setup.classList.remove('hidden');
     el('caseMaterial').classList.add('hidden');
+    el('consent').checked = false;
+    el('startSession').disabled = true;
     el('summary').textContent = '';
   });
 })();
