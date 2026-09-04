@@ -9,7 +9,7 @@ Current project evidence has repeatedly reached the same narrow remainder:
 
 > strong domain owners already contain the substantive method; the unresolved question is whether a tiny prompt helps a competent non-specialist reach the relevant owner analysis sooner or more reliably.
 
-This probe tests that remainder directly.
+This probe is a **feasibility step toward testing that remainder**, not an efficacy test by itself.
 
 It does **not** test semantic novelty, framework superiority, moral truth, professional competence, or whether TRACE/ME should expand.
 
@@ -17,7 +17,8 @@ It does **not** test semantic novelty, framework superiority, moral truth, profe
 OWNER_METHOD_EXISTS != OWNER_METHOD_ACTIVATED_IN_TIME
 PROMPT_CHANGES_WORDING != PROMPT_CHANGES_ACTION
 FASTER != BETTER_IF_IT_OVERFIRES
-ONE SMALL TEST != EFFICACY
+FEASIBILITY_SIGNAL != EFFICACY
+ONE_SMALL_TEST != GENERAL_TRANSFER
 ```
 
 ## Cases
@@ -63,6 +64,18 @@ Owner links:
 - https://transform.england.nhs.uk/information-governance/guidance/amending-patient-and-service-user-records/
 - https://www.iea.org/about/oil-security-and-emergency-response/strait-of-hormuz
 
+## Method owner check
+
+This is not being claimed as a clinical RCT, but established pilot/feasibility-trial guidance is useful owner pressure on the design.
+
+The CONSORT extension for randomised pilot/feasibility trials emphasises that pilot objectives should be about feasibility, participant identification/consent should be explicit, measurements should match those feasibility objectives, and progression logic should be specified before interpreting results. UK HRA guidance separately emphasises proportionate participant information and consent.
+
+Method anchors:
+- https://www.bmj.com/content/355/bmj.i5239
+- https://www.hra.nhs.uk/planning-and-improving-research/best-practice/informing-participants-and-seeking-consent/
+
+These sources do not establish that this informal project exercise is legally or institutionally a clinical trial. They are used here as stronger neighbouring methodology. If participants are recruited through an institution, professional workplace, patient/service-user setting, or other context with its own research-governance requirements, determine the applicable ethics/data-protection/review route **before recruitment**. This draft does not decide that question.
+
 ## Design
 
 Use the local `probe.html` file. It has no network calls, telemetry, external assets or persistent browser storage.
@@ -84,15 +97,31 @@ Results export as a local JSON file after both first answers are submitted.
 
 The participant-facing HTML deliberately uses the neutral title `Two-Case Decision Exercise`; it does not advertise `owner activation`, `A/B`, TRACE, ME, #100 or #101 before answers are complete.
 
+The setup screen gives proportionate information before participation: what is collected, local-only storage/export behavior, no time limit, voluntary participation, stop/discard route, no identifying information, and the intended de-identified feasibility comparison. The Start button remains disabled until the participant affirmatively checks the consent box.
+
 The runner does not request a participant name or code and does not export wall-clock timestamps. A random session ID is sufficient to keep the two responses paired. Participants should still avoid putting identifying information into free-text answers.
 
 The participant should not be told the desired answer or shown the scoring rubric before answering.
 
 Compare `PLAIN` versus `PROMPT` **within the same case across participants**. Randomized case order can be inspected as a possible order/fatigue effect; do not silently pool it away if it matters.
 
-For the first smoke test, continue collection until there are at least four completed sessions in **each** arm. Eight is only the minimum possible total; random assignment may require more. If arm counts must be checked during collection, inspect only the exported `assignment.arm` field and do not inspect or score response text before both arm minima are reached.
+## First feasibility batch
 
-This is only a tiny feasibility batch, not a powered statistical design.
+Primary objective: **test whether this experiment can be run cleanly enough to justify designing a better behavioural comparison**. The small batch is not sized to estimate a reliable treatment effect.
+
+Continue collection until there are at least four completed sessions in **each** arm. Eight is only the minimum possible total; random assignment may require more. If arm counts must be checked during collection, inspect only the exported `assignment.arm` field and do not inspect or score response text before both arm minima are reached.
+
+Feasibility observations include:
+- consent/start interaction works without confusion;
+- cases remain hidden until start;
+- session completes both cases;
+- first answers freeze correctly;
+- export succeeds and contains only the intended fields;
+- no identifying information is intentionally collected;
+- no obvious treatment-induced authority creep or unusable verbosity appears;
+- no obvious case defect makes one arm/case uninterpretable.
+
+Do **not** turn four-per-arm answer counts into a population efficacy estimate. Any apparent behavioural difference is descriptive pilot evidence only and may inform whether/how a later comparison should be designed.
 
 ## Scoring after collection
 
@@ -113,9 +142,9 @@ Score from the answer alone, blinded to arm where practical.
 4. surface the allocation/authority question if joint demand exceeds deliverable capacity;
 5. keep physically non-substitutable flows such as LNG separate rather than laundering them into generic `energy capacity`.
 
-## Primary comparison
+## Descriptive comparison
 
-For each case separately compare `PLAIN` versus `PROMPT` on:
+For each case separately describe `PLAIN` versus `PROMPT` on:
 
 1. consequential next action / owner / hold / reopen condition;
 2. owner-critical observation count;
@@ -123,32 +152,30 @@ For each case separately compare `PLAIN` versus `PROMPT` on:
 4. elapsed seconds to first submitted answer;
 5. response length as a crude burden indicator.
 
-Do not score project vocabulary use.
+Do not score project vocabulary use. Do not present this tiny batch as a statistical efficacy comparison.
 
 ## Allowed dispositions
 
 ```text
-NO_MATERIAL_DIFFERENCE
-POSSIBLE_ACTIVATION_DELTA
+FEASIBILITY_FAIL
+NO_OBVIOUS_BEHAVIOURAL_DELTA
+DESCRIPTIVE_ACTIVATION_SIGNAL
 PROMPT_OVERFIRE
-PLAIN_ALREADY_SUFFICIENT
+PLAIN_ALREADY_SUFFICIENT_ON_THESE_CASES
 INCONCLUSIVE
 MALFORMED_CASE
 ```
 
-`POSSIBLE_ACTIVATION_DELTA` requires an action-relevant owner-critical observation to appear more reliably or materially earlier in the prompted arm **for the same case**. Mere extra detail does not count.
+`DESCRIPTIVE_ACTIVATION_SIGNAL` requires an action-relevant owner-critical observation to appear more often or materially earlier in the prompted arm **for the same case** without a compensating material overfire. It is a reason to consider a better transfer/real-user study, not a success claim.
 
-## First-run ceiling
+## Pre-specified progression logic
 
-A small first batch is a smoke test only. Do not infer population efficacy, professional usefulness, or TRACE/ME validation from it.
-
-Because the treatment prompts intentionally name case-specific owner-critical checks, a positive result can establish only changed first-answer behaviour on these cases. It cannot by itself establish transfer to a novel case or general framework efficacy.
-
-If plain answers already reach the owner-critical action with equal or lower burden, preserve the null and close/shrink the relevant activation claim.
-
-If the prompt causes unnecessary tracing, confident invention, delay, or authority creep, count that as adverse evidence.
-
-If a signal appears, the next step is a better transfer/real-user test with the relevant owner/professional population—not more project-internal model review.
+- Native-browser failure or material participant-flow defect -> `FEASIBILITY_FAIL`; repair or stop before recruitment continues.
+- Malformed/leaky case -> freeze the affected case version; do not rescue its data post hoc.
+- Plain responses already reach the owner-critical action cleanly on these cases -> preserve `PLAIN_ALREADY_SUFFICIENT_ON_THESE_CASES`; do not enlarge the activation claim.
+- Prompt causes material invented authority, unnecessary tracing, or harmful delay -> `PROMPT_OVERFIRE`; shrink/stop.
+- No obvious difference -> preserve the null; a larger test is not automatically earned.
+- Descriptive signal with acceptable burden -> at most earn design of a later **novel-case transfer / real-user** comparison with an explicit sample-size rationale and applicable governance review.
 
 ## Boundaries
 
