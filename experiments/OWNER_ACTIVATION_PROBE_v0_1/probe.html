@@ -13,7 +13,6 @@
   .caseText { white-space: pre-wrap; }
   .prompt { border-left: 4px solid currentColor; padding: 10px 14px; margin: 14px 0; font-weight: 650; }
   textarea { width: 100%; min-height: 220px; box-sizing: border-box; padding: 12px; font: inherit; }
-  input { font: inherit; padding: 8px; }
   button { font: inherit; padding: 9px 14px; margin: 6px 8px 6px 0; cursor: pointer; }
   button[disabled], textarea[disabled] { opacity: .55; cursor: not-allowed; }
   .status { font-variant-numeric: tabular-nums; }
@@ -22,12 +21,11 @@
 </head>
 <body>
 <h1>Owner Activation Probe <span class="muted">v0.1</span></h1>
-<p class="muted">Local-only A/B runner. No network calls, telemetry, external assets, localStorage, cookies, or automatic uploads.</p>
+<p class="muted">Local-only A/B runner. No network calls, telemetry, external assets, persistent browser storage, participant names/codes, or automatic uploads.</p>
 
 <section id="setup" class="card">
   <h2>Start</h2>
-  <p>Use a disposable participant code. Do not enter a real name, email address, or other identifying information.</p>
-  <label>Participant code <input id="participant" maxlength="40" placeholder="e.g. P07"></label>
+  <p>This feasibility runner does not need identifying information. Do not enter names or other personal details in your answers.</p>
   <div><button id="startSession">Start session</button></div>
 </section>
 
@@ -123,12 +121,9 @@
   }
 
   el('startSession').addEventListener('click', () => {
-    const participantCode = el('participant').value.trim();
     session = {
       version: VERSION,
       session_id: uuid(),
-      participant_code: participantCode,
-      created_at_local: new Date().toISOString(),
       assignment: buildAssignment(),
       results: []
     };
@@ -169,7 +164,6 @@
     if (currentIndex < 2) {
       setTimeout(renderCase, 250);
     } else {
-      session.completed_at_local = new Date().toISOString();
       runner.classList.add('hidden');
       done.classList.remove('hidden');
       el('summary').textContent = 'Session complete. Responses: 2. No score was calculated in the participant interface.';
@@ -182,9 +176,8 @@
     const blob = new Blob([payload], {type: 'application/json'});
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    const safe = (session.participant_code || 'anonymous').replace(/[^a-zA-Z0-9_-]+/g, '_');
     a.href = url;
-    a.download = `${VERSION}_${safe}_${session.session_id}.json`;
+    a.download = `${VERSION}_${session.session_id}.json`;
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -199,7 +192,6 @@
     runner.classList.add('hidden');
     setup.classList.remove('hidden');
     el('caseMaterial').classList.add('hidden');
-    el('participant').value = '';
     el('summary').textContent = '';
   });
 })();
