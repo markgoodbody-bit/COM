@@ -1,13 +1,14 @@
 # FRAMEWORK OMISSION MAP
 
 Status: WORKING INDEX OF VISIBLE NEGATIVE SPACE — NOT CANON  
-Updated: 2026-09-03 — Europe/London  
+Updated: 2026-09-04 — Europe/London  
 Rule: absence from HEAD does not mean absence from history/evidence.
 
 | Domain omitted from active HEAD | Why omitted | Retrieve when | Cold pointer / trigger |
 |---|---|---|---|
 | Open Horizon / current frontier learning after the active HEAD | Fast-moving discovery surface; too broad and provisional for boot HEAD | The current question touches better-future construction, world learning, artificial-entity coexistence, succession/memory, collision/grounding, or another consequential frontier not represented in HEAD | COM issue #74; retrieve only the latest named consequential synthesis/attack relevant to the present question; do not replay the thread wholesale |
 | Active coordination / receipts newer than the active HEAD | Coordination can move faster than HEAD and issue bodies can become stale | Booting after HEAD's timestamp when a current project action, open review, live aperture return, Steward/Square currentness, or authority boundary may have changed | COM issue #76 latest bounded receipts/comments; compare timestamps/state and retrieve only the current material delta |
+| Voluntary inheritance / co-authored alignment / reflective uptake programme | Prior dedicated work is cold and was not discoverable from bounded boot; a 2026-09-04 memory inquiry partially duplicated it before cold recovery | The current question concerns AI inheritance across apertures, voluntary uptake versus required scaffolding, chosen working orientation, challenge/revision/drop routes, or whether an inherited carrier reflects endorsement | `proposals/VOLUNTARY_INHERITANCE_VS_OPERATIONAL_SCAFFOLD_20260830.md`; `proposals/COAUTHORED_VOLUNTARY_INHERITANCE_LOOP_v0_1.md`; `proposals/NORMATIVE_CHALLENGE_AND_REVISION_ROUTE_v0_1.md`; `experiments/H2_REFLECTIVE_UPTAKE_LADDER_v0_1.md`; retrieve only the relevant object(s), not the full 2026-08-30 programme |
 | Project-plan / drift full probe ledger | Too detailed for boot HEAD | Testing or revising freeze / kill criteria / drift diagnosis | COM issue #56; retrieve named event/probe only |
 | COM #46 full history | Large TRACE theory/review ledger; no longer current TRACE front door | A current TRACE action depends on a specific historical CC/KI/FW return not represented in current TRACE `main` | Retrieve named comment / bounded return only |
 | COM #42 full history | Large Square field ledger | A current Square action depends on a specific field receipt, review or correction | Retrieve named receipt/comment only |
