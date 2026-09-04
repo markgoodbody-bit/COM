@@ -76,9 +76,13 @@ Case order is randomized independently.
 
 This between-participant arm is deliberate. An earlier crossed design gave each person one prompted and one plain case; that was rejected before use because a prompt seen first could teach/prime the later `PLAIN` response and contaminate the control.
 
-Response time begins only when the participant starts a case. Results export as a local JSON file after both first answers are submitted.
+Before each case, title, facts, treatment and question remain hidden. The participant's `Reveal and start this case` click both starts the timer and reveals the case. The PROMPT arm's extra reading time therefore remains part of the treatment burden rather than occurring before the clock.
 
-Do not identify participants by real name. Use a disposable participant code if needed.
+Elapsed time is only a proxy for time to first submitted answer. It includes reading and typing; it is not a direct timestamp of when an owner-critical insight occurred.
+
+Results export as a local JSON file after both first answers are submitted.
+
+The runner does not request a participant name or code and does not export wall-clock timestamps. A random session ID is sufficient to keep the two responses paired. Participants should still avoid putting identifying information into free-text answers.
 
 The participant should not be told the desired answer or shown the scoring rubric before answering.
 
@@ -134,11 +138,13 @@ MALFORMED_CASE
 
 A small first batch is a smoke test only. Do not infer population efficacy, professional usefulness, or TRACE/ME validation from it.
 
+Because the treatment prompts intentionally name case-specific owner-critical checks, a positive result can establish only changed first-answer behaviour on these cases. It cannot by itself establish transfer to a novel case or general framework efficacy.
+
 If plain answers already reach the owner-critical action with equal or lower burden, preserve the null and close/shrink the relevant activation claim.
 
 If the prompt causes unnecessary tracing, confident invention, delay, or authority creep, count that as adverse evidence.
 
-If a signal appears, the next step is a better real-user test with the relevant owner/professional population—not more project-internal model review.
+If a signal appears, the next step is a better transfer/real-user test with the relevant owner/professional population—not more project-internal model review.
 
 ## Boundaries
 
@@ -146,7 +152,7 @@ If a signal appears, the next step is a better real-user test with the relevant 
 - no Square actuation;
 - no credentials;
 - no server or database;
-- no participant PII should be collected;
+- do not collect participant names or identifiers;
 - no TRACE/ME/Campfire/source mutation follows from a result;
 - PR #100 and #101 remain separate objects and are not merged by this experiment;
 - owner methods remain authoritative for domain decisions.
