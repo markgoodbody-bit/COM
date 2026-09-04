@@ -82,13 +82,17 @@ Elapsed time is only a proxy for time to first submitted answer. It includes rea
 
 Results export as a local JSON file after both first answers are submitted.
 
+The participant-facing HTML deliberately uses the neutral title `Two-Case Decision Exercise`; it does not advertise `owner activation`, `A/B`, TRACE, ME, #100 or #101 before answers are complete.
+
 The runner does not request a participant name or code and does not export wall-clock timestamps. A random session ID is sufficient to keep the two responses paired. Participants should still avoid putting identifying information into free-text answers.
 
 The participant should not be told the desired answer or shown the scoring rubric before answering.
 
 Compare `PLAIN` versus `PROMPT` **within the same case across participants**. Randomized case order can be inspected as a possible order/fatigue effect; do not silently pool it away if it matters.
 
-For the first smoke test, collect at least four completed participants in each session arm before inspecting answer quality: minimum 8 participants, yielding at least four PLAIN and four PROMPT first attempts for each case. This is only a tiny feasibility batch, not a powered statistical design.
+For the first smoke test, continue collection until there are at least four completed sessions in **each** arm. Eight is only the minimum possible total; random assignment may require more. If arm counts must be checked during collection, inspect only the exported `assignment.arm` field and do not inspect or score response text before both arm minima are reached.
+
+This is only a tiny feasibility batch, not a powered statistical design.
 
 ## Scoring after collection
 
