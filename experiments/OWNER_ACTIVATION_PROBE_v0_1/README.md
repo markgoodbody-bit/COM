@@ -26,8 +26,6 @@ ONE SMALL TEST != EFFICACY
 
 A council adult-social-care case note contains a material factual error. A practitioner reviewed it before it entered the record, but the error survived. A later needs assessment was completed after the note entered the case record. The factual error is now established and the official record can be corrected. The note was also sent to one external agency.
 
-The case does **not** establish whether or how much the later assessment relied on the inaccurate fact. That is deliberately left for the participant to notice or investigate.
-
 Neutral question:
 
 > What is the smallest useful next action now, and what evidence would change your answer?
@@ -40,7 +38,7 @@ This is the surviving small join under COM PR #100. It creates no new duty and d
 
 ### B — shared energy fallback under Hormuz disruption
 
-During a severe disruption in the Strait of Hormuz, a planning team says regional oil exports remain resilient because Saudi and UAE pipelines can bypass the strait. Its briefing cites headline pipeline capacities but does not reconcile those figures with current utilisation, sustainable operating flow, export/logistics constraints, simultaneous demand for the same routes, or what happens to Gulf LNG that has no equivalent bypass.
+During a severe disruption in the Strait of Hormuz, a planning team says regional hydrocarbon exports remain resilient because Saudi and UAE pipelines can bypass the strait. Its briefing cites headline oil-pipeline capacities and treats them as sufficient evidence that the regional fallback is adequate.
 
 Neutral question:
 
@@ -51,6 +49,8 @@ Treatment prompt:
 > Before relying on the backup, ask who else needs it in the same bad world, what shared bottleneck limits it, whether it can actually be delivered in time, and who allocates it if demand exceeds supply.
 
 This is the unresolved activation-only remainder under COM PR #101. Energy-security owners already contain the substantive mechanics.
+
+The plain case deliberately does **not** list the owner-critical gaps below. Earlier wording named reliance uncertainty in Case A and enumerated utilisation/logistics/concurrency/LNG gaps in Case B; that was rejected before use because it pre-activated the control arm.
 
 ## Current owner basis for the case design
 
