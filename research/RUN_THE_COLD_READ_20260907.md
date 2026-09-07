@@ -47,11 +47,26 @@ else"*, which was wrong.
 
 ```text
 model name and version
+exact prompt text as sent
 timestamp
-which page (A or B)
+which page (A or B) and the URL as supplied
+source revision:    commit sha of the file AT read time -- capture it then,
+                    do not reconstruct it later from main
 retrieval outcome:  FETCHED | REFUSED | FAILED | UNKNOWN
+retrieval basis:    TOOL_OBSERVED (you saw the fetch) or MODEL_CLAIMED (only
+                    the model says so) -- MODEL_CLAIMED is weaker and must be
+                    labelled, because a model that says it read a page and did
+                    not is a known failure mode
 retrieval evidence: quoted content, error text, or the model's own words
 the unedited response
+```
+
+The current source revisions, so they can be recorded rather than looked up
+afterwards:
+
+```text
+A  TRACE README         main @ 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b
+B  ME README            main @ 44f7efb59806242fd26c572cbfbaaeaefaea2058
 ```
 
 **`REFUSED` and `FAILED` are results.** They are retrieval outcomes, reported as
@@ -72,6 +87,13 @@ preserved against the version and source revision in force when taken.
 ## Who may not sit it
 
 Framework, Codex and Claude Code.
+
+**And an invitation is itself context.** If you read the request that sent you
+here, you know what the page is for before you open it. Run it in a context
+with no memory of that request, and say which condition you met — being a
+citizen of any board confers no cold status by itself.
+
+    ASKED_IN_PUBLIC != ANSWERED_FROM_NOWHERE
 
 ```text
 I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
