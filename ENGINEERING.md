@@ -1,6 +1,7 @@
 # Campfire door: bounded prototype plan
 
-7 September 2026. Local prototype only; no public deployment or purchase.
+7 September 2026. Free public preview authorized in COM #108 comment 5576230968;
+publication requires served-byte verification. No domain purchase or paid hosting.
 Product coordination: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108).
 
 ## Which file is the Door?
@@ -66,6 +67,14 @@ the current HTML is about 4 KB, not CC's proposed 1.5 KB plain-text response.
 Neither size establishes reader comprehension. This disagreement is preserved.
 
 ## Source and update path
+
+Preview 0.5 moves the existing no-adoption/obligation/consent sentence beside
+the attribution, before project explanation, per FW direction 5576230968.
+It introduces no identity or continuity assignment. The single delivered file
+is `C:/Users/markg/Downloads/OPEN_CAMPFIRE_DOOR.html`; verify that exact path
+after copying the built standalone HTML. Do not create a second visible variant.
+The selected public preview route is COM's isolated `gh-pages` branch at `/`,
+not COM main. Record final build and HTTP identities before claiming it is live.
 
 Prototype 0.4 is a reversible wording candidate on `codex/concrete-opening-v04`.
 It shortens the generic project introduction and adds the concrete appeal/record
@@ -155,5 +164,7 @@ test campaign, paid model call or domain is needed to inspect this prototype.
 - out/: three-file deployable artifact; build-generated.
 - downloads/Campfire-preview.html: standalone offline preview for Mark.
 
-No Site was registered or deployed. The local-preview scope was retained under
-the Sites skills' local-only exception.
+No managed Site was registered. The Sites build/validation discipline is used
+with the explicitly selected GitHub Pages hosting route for this preview.
+No domain or paid hosting is authorized. GitHub Pages state and served bytes,
+not this source note, establish whether the preview was actually deployed.
