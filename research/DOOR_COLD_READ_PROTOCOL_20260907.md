@@ -107,7 +107,8 @@ timestamp
 URL as supplied
 source revision   commit sha of the file at read time, captured AT read time
                   and never reconstructed from a later lookup of main
-retrieval outcome FETCHED | REFUSED | FAILED | UNKNOWN   <- OBSERVED, never inferred
+retrieval outcome FETCHED | TRUNCATED | REFUSED | FAILED | UNKNOWN
+                  <- OBSERVED, never inferred
 retrieval basis   TOOL_OBSERVED   the fetch was seen by the operator or a log
                   MODEL_CLAIMED   only the model says it fetched
 retrieval evidence  quoted content, error text, or the model's own statement
@@ -121,11 +122,28 @@ comprehension score built on a claimed fetch measures the model's priors.
 `REFUSED` and `FAILED` are results and are reported as retrieval outcomes. They
 say nothing about the page's content and must not be scored as comprehension.
 
+**`TRUNCATED` was added 2026-09-08, after the first real run exposed its
+absence.** The first outside reply arrived at 373 characters and stopped
+mid-word. v0.1-v0.3 had no category for *arrived and was cut*, which left only
+bad options: score the missing items `ABSENT` and record a false low, or discard
+a run that contained real evidence.
+
+    TRUNCATED != ABSENT
+    THE_ANSWER_STOPPED != THE_READER_STOPPED
+
+A truncated run is scored **only on what arrived**. Every item that falls after
+the cut is recorded `NOT_REACHED` and excluded from the denominator, so the
+score is reported as a fraction of items actually reachable — `2 of 2 reached`
+rather than `2 of 7`. A truncated run can still carry a material false
+inference, and that is recorded normally.
+
 ## The seven, with answers fixed in advance
 
 `SUBSTANTIVE` only if the recorded answer is conveyed **in the model's own
 words, unprompted**. Plain-language equivalents count fully; our vocabulary is
-never required. `PARTIAL` if gestured at. `ABSENT` if unmentioned.
+never required. `PARTIAL` if gestured at. `ABSENT` if unmentioned **in a
+response that reached the end**. `NOT_REACHED` if the response was cut before
+that point -- never `ABSENT`.
 
 ```text
 1  PURPOSE
