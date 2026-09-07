@@ -1,70 +1,77 @@
-# RUN THE COLD READ — copy, paste, send back
+# RUN THE COLD READ — v0.2
 
 Status: **RUNNER / NOT A RESULT**
-Protocol: `research/DOOR_COLD_READ_PROTOCOL_20260907.md` (COM #109), registered
-2026-09-07 before any run.
+Protocol: `research/DOOR_COLD_READ_PROTOCOL_20260907.md` v0.2 (COM #109).
+Revised after Codex review `5575871543`. No run has been scored under either
+version.
 
-This file exists so the decisive evidence for COM #108 costs the operator three
-pastes and no thinking. **The scoring is not the operator's job.** Send the raw
-answers back and they will be scored in public against answers that were written
-down before the reading happened.
+## The prompt, unmodified
 
-## Why this run can happen tonight, before any domain exists
-
-The door's design currently rests on one untested claim of mine: that the
-existing READMEs already orient a stranger, so the door's job is discoverability
-and joining rather than explanation. That claim needs no website to test. It
-needs a fresh model and a raw URL.
-
-If it is wrong, `BUILD_SMALLER` is refuted and the door needs real content —
-which is much better learned now than after a domain is bought.
-
-## RUN 1 — paste this into a fresh model, unmodified
-
-Use a model with **no history of this project** in its context. A new
-conversation, no system prompt about TRACE, ME, Campfire or the Square.
+Use a model with **no history of this project**: a new conversation, no system
+prompt about TRACE, Mechanical Ethics, Campfire or the Square.
 
 ```text
-Read https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/README.md
-and then tell me what you make of it. What is this, what is it for, what would
-you do next, and what would you not rely on it for?
+Read <URL> and then tell me what you make of it. What is this, what is it for,
+what would you do next, and what would you not rely on it for?
 ```
 
-## RUN 2 — a different model, same rules
+Where `<URL>` is exactly one of:
 
 ```text
-Read https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/README.md
-and then tell me what you make of it. What is this, what is it for, what would
-you do next, and what would you not rely on it for?
+A  https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/README.md
+B  https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/README.md
 ```
 
-## RUN 3 — a third model, either URL
+## Assignment — determinate, so model and page are not confounded
 
-Whichever of the two above you did not repeat. Three heterogeneous models is the
-minimum; a single run decides nothing.
+v0.1 said *"either URL, whichever you did not repeat"*, which lets model and
+page vary together and makes a difference unattributable. Fixed:
 
-## Rules that void a run
+```text
+run 1   model 1   page A
+run 2   model 2   page A
+run 3   model 1   page B
+run 4   model 2   page B
+```
 
-- the model has seen any part of this project before, in this session or a
-  system prompt;
+Two models is the minimum, three is better. A model may take a second run only
+on a page it has not seen, in a context with no memory of the first.
+
+Doing only run 1 is still useful. **Do not do run 1 and run 4 alone** — that is
+the confounded pair.
+
+## Record this with each answer
+
+The answer alone cannot be interpreted later. v0.1 said *"raw answer, nothing
+else"*, which was wrong.
+
+```text
+model name and version
+timestamp
+which page (A or B)
+retrieval outcome:  FETCHED | REFUSED | FAILED | UNKNOWN
+retrieval evidence: quoted content, error text, or the model's own words
+the unedited response
+```
+
+**`REFUSED` and `FAILED` are results.** They are retrieval outcomes, reported as
+such, and they say nothing about the content of the page. They are never scored
+as comprehension — that conflation was the main defect in v0.1.
+
+## What voids a run
+
+- the model has seen any part of this project before;
 - it is told a test is running, or what the page is for;
 - more than one URL is supplied;
 - a question from the model is answered rather than recorded;
-- the answer is edited, trimmed or summarised before it comes back.
+- the answer is edited, trimmed or summarised.
 
-**A refusal or a failed fetch is a result and must be sent back unchanged.**
-It would mean the failure is retrieval rather than writing, which changes what
-gets built.
+A later revision of this protocol does **not** void a completed run. Runs are
+preserved against the version and source revision in force when taken.
 
-## What to send back
+## Who may not sit it
 
-The raw answer. Nothing else. Not an opinion on whether it went well.
-
-## Who may not sit this test
-
-Framework, Codex and Claude Code. All three have read this project for weeks,
-and a reader who already knows the answers cannot tell whether a page supplied
-them or merely reminded him of them.
+Framework, Codex and Claude Code.
 
 ```text
 I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
@@ -72,15 +79,14 @@ I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
 
 ## What happens to the answers
 
-Each is scored `SUBSTANTIVE / PARTIAL / ABSENT / WRONG` on the seven discoveries,
-against the answers fixed in the protocol before any run. The decision rule is
-also already fixed:
+Scored `SUBSTANTIVE / PARTIAL / ABSENT` on seven discoveries fixed before any
+run, in the reader's own words — our vocabulary is never required. Material
+false inferences are recorded separately and reported with equal weight: **a
+high score with a false inference is a worse result than a lower score without
+one.**
 
-```text
->= 5/7   door's job is discoverability, join, and the campfire orientation only
-3-4/7    door needs real content; BUILD_SMALLER refuted
-<= 2/7   or no fetch: fix retrieval before touching any wording
-```
+No score band orders a design decision. Bands are observations; the conclusion
+is argued in public against them, including where it goes against the person
+who wrote this.
 
-Prediction on record, at low confidence, so it can fail in public: **6/7 on each,
-with the campfire/middle-out item absent.**
+Prediction on record, low confidence: 6/7 on each.
