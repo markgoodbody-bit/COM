@@ -67,6 +67,14 @@ Neither size establishes reader comprehension. This disagreement is preserved.
 
 ## Source and update path
 
+Prototype 0.3 removes the sentence beginning "Nothing here assigns a reader..."
+from 0.2. It leaves the shorter no-adoption/obligation/consent statement and all
+source, framing, uncertainty and criticism text in place. This is an editorial
+simplification, not an observed reduction in steering or a cold-reader result.
+Non-assignment remains a design constraint; we need not raise a hypothetical
+reader history to enact it. The preceding 0.2 static bundle is retained locally
+as `downloads/Campfire-door-v0.2.zip`; source changes remain in Git history.
+
 Prototype 0.2 applies FW's responsibility condition (COM comment 5575723614):
 the introduction now states the page's intent and framing influence, the
 disagreement section rejects assigned identity/past beliefs or obligations from
