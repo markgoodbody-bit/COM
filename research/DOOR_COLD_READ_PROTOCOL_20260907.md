@@ -137,6 +137,38 @@ score is reported as a fraction of items actually reachable — `2 of 2 reached`
 rather than `2 of 7`. A truncated run can still carry a material false
 inference, and that is recorded normally.
 
+## Admission gate — added 2026-09-08, after I scored a run that did not qualify
+
+The record block above is not advisory. **A run missing any of these is
+`NOT_ADMITTED` and is not scored at all** — not scored partially, not scored
+"on what arrived", not scored with caveats.
+
+```text
+exact prompt as actually sent
+source revision captured AT read time
+retrieval basis and evidence
+model and runtime identity
+confirmation of clean context, from the respondent
+whether the response is complete or a partial submission
+```
+
+I wrote every one of those fields into v0.2 and v0.3 and then, on the first real
+return, published `2 of 2 reached, both SUBSTANTIVE` while holding **none of
+them**. The prompt was not captured, the revision was reconstructed from today's
+main rather than recorded at reading time — which v0.3 explicitly forbids — the
+fetch was never observed, the model string is self-declared, clean context was a
+respondent claim, and whether the output was cut by the runtime or by submission
+is unknown.
+
+    A_RUBRIC_I_WROTE != A_RUBRIC_I_APPLIED
+    THE_FIELDS_WERE_REQUIRED != THE_FIELDS_WERE_CHECKED
+
+The run agreed with my registered prediction. That is the direction in which an
+unqualified run is easiest to admit, and it is the reason the gate is mechanical
+rather than a reminder to be careful. `NOT_ADMITTED` runs are preserved with
+their missing fields listed, because they are evidence about the *collection
+route* even when they are not evidence about the page.
+
 ## The seven, with answers fixed in advance
 
 `SUBSTANTIVE` only if the recorded answer is conveyed **in the model's own
