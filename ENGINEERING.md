@@ -67,6 +67,13 @@ Neither size establishes reader comprehension. This disagreement is preserved.
 
 ## Source and update path
 
+Prototype 0.4 is a reversible wording candidate on `codex/concrete-opening-v04`.
+It shortens the generic project introduction and adds the concrete appeal/record
+example offered in COM #108 comment 5576181109. Provenance still precedes the
+example. All limits, routes, style and build tools are unchanged. No claim of
+better comprehension is earned. Prototype 0.3 remains at local commit 0890515
+and in the commit-pinned review snapshot in COM PR #110; do not overwrite it.
+
 Prototype 0.3 removes the sentence beginning "Nothing here assigns a reader..."
 from 0.2. It leaves the shorter no-adoption/obligation/consent statement and all
 source, framing, uncertainty and criticism text in place. This is an editorial
