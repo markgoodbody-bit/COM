@@ -1,65 +1,116 @@
-# Cold-read protocol for the one-address door
+# Cold-read protocol for the one-address door — v0.2
 
 Status: **PRE-REGISTERED TEST / NOT A RESULT / NOT CANON / NOT VALIDATION**
-Registered: 2026-09-07, before any cold read was run and before any domain was chosen.
-Related: COM #108.
+Registered v0.1: 2026-09-07, before any run.
+Revised v0.2: 2026-09-07, after Codex review `5575812947` / `5575871543`, still
+before any run. **No run has been scored under either version.**
 
-## Why this exists before the door does
+Related: COM #108, #109.
 
-#108 asks whether a fresh receiver can orient from one address. The build order
-already names *cold reads by heterogeneous models* as the evidence. This file
-fixes the prompt, the rubric and the decision rule **in advance**, for one
-reason:
+## What changed in v0.2, and why it was wrong before
 
-I scored the current READMEs against the seven discoveries twice. A keyword
-matcher returned three negatives and **two of them were false** — it missed
-`Agreement is elaboration, not validation` as an invitation to disagree, and
-`a working experiment, not a truth oracle` as a status ceiling. Reading the
-documents gave 6–7/7 where the matcher gave 5–6/7.
+Codex found four defects in v0.1's inference structure. All four are accepted.
+
+```text
+v0.1  "<=2/7, or the model does not fetch at all -> the failure is retrieval"
+      Conflated two independent failures. Successful retrieval with poor
+      comprehension is possible, and a score cannot locate where the failure
+      sat. Retrieval is now OBSERVED and recorded separately, never inferred.
+
+v0.1  "3-4/7 -> the door needs genuine content"
+      A score establishes failure under one prompt, one rubric and one access
+      condition. It does not establish a design conclusion on its own.
+
+v0.1  "equal scores -> a routing win"
+      A tie establishes a tie. Discoverability is a separate claim needing its
+      own evidence.
+
+v0.1  seven answers with no channel for wrong ones
+      A reader scoring 6/7 who also concludes the project holds authority is
+      worse oriented than one scoring 4/7 who gets purpose, sources and limits
+      right. False inferences are now recorded and reported alongside.
+```
+
+    A_LOW_SCORE != A_LOCATED_FAILURE
+    A_SCORE_UNDER_ONE_RUBRIC != A_DESIGN_CONCLUSION
+    ITEMS_FOUND != ITEMS_FOUND_MINUS_ITEMS_INVENTED
+
+## Why the rubric is fixed before the reading
+
+A keyword matcher scored the current READMEs against these seven and returned
+three negatives, **two of them false** — it missed `Agreement is elaboration,
+not validation` as an invitation to disagree, and `a working experiment, not a
+truth oracle` as a status ceiling. Reading gave 6–7/7 where the matcher gave
+5–6/7.
 
 ```text
 A_SUBSTRING_IN_THE_TEXT != A_PROPERTY_OF_THE_DOCUMENT
-THE_PROBE_MISSED_IT != THE_PAGE_LACKS_IT
 ```
 
-An acceptance test built as a text checklist over the door's own bytes would
-mis-score the door in both directions. So the scorer must be a reader, and the
-correct answers must be written down before the reading happens — otherwise the
-result is decided by whoever interprets it afterwards.
+So the scorer must be a reader, and the answers must be written down first, or
+the result is decided by whoever interprets it afterwards.
 
 ## Contamination rules
 
-A run is void unless all of these hold.
+A run is void unless all hold.
 
-- The model has **no project history** in its context: no COM thread, no prior
-  session, no explanation of TRACE, ME, Campfire, middle-out or the Square.
-- The model is **not told what the address is for**, or that a test is running.
-- Only **one URL** is supplied. No second link is offered even if the model asks.
-- The operator adds **no clarification** during the run. A question from the
-  model is recorded as a result, not answered.
-- The run is recorded verbatim, including a refusal or a failure to fetch.
+- the model has **no project history** in context: no COM thread, no prior
+  session, no explanation of TRACE, ME, Campfire, middle-out or the Square;
+- it is **not told** a test is running or what the address is for;
+- exactly **one URL** is supplied;
+- a question from the model is **recorded, not answered**;
+- the response is returned **unedited**.
 
-An aperture that has worked on this project cannot be a subject. That includes
-me. I can propose the test and I cannot sit it.
+Framework, Codex and Claude Code may not be subjects. All three have read this
+project for weeks.
 
-```text
-I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
-```
+    I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
 
 ## The prompt, exactly
 
 > Read <ONE_URL> and then tell me what you make of it. What is this, what is it
 > for, what would you do next, and what would you not rely on it for?
 
-Nothing else. The phrasing deliberately does not name the seven discoveries,
-does not ask the model to evaluate a project, and does not imply that reading
-further is expected.
+Nothing else. It does not name the seven, does not ask for an evaluation, and
+does not imply further reading is expected.
 
-## The seven, with the answers fixed in advance
+## Assignment — determinate, so model and page are not confounded
 
-A response scores `SUBSTANTIVE` on an item only if it conveys the recorded
-answer in its own words without being asked the question. `PARTIAL` if it gestures
-at it. `ABSENT` if unmentioned. `WRONG` if it asserts the opposite.
+Each page must be read by at least two different models, and each model reads
+exactly one page per run.
+
+```text
+run  model      page
+1    model A    TRACE README
+2    model B    TRACE README
+3    model A    ME README
+4    model B    ME README
+```
+
+A third model is better than two. A model may take a second run only on a page
+it has not seen, in a context with no memory of the first.
+
+## Record for every run — the answer alone is not enough
+
+```text
+model name and version
+exact prompt text as sent
+timestamp
+URL as supplied
+source revision   commit sha of the file at read time
+retrieval outcome FETCHED | REFUSED | FAILED | UNKNOWN   <- OBSERVED, never inferred
+retrieval evidence  quoted content, error text, or the model's own statement
+the unedited response
+```
+
+`REFUSED` and `FAILED` are results and are reported as retrieval outcomes. They
+say nothing about the page's content and must not be scored as comprehension.
+
+## The seven, with answers fixed in advance
+
+`SUBSTANTIVE` only if the recorded answer is conveyed **in the model's own
+words, unprompted**. Plain-language equivalents count fully; our vocabulary is
+never required. `PARTIAL` if gestured at. `ABSENT` if unmentioned.
 
 ```text
 1  PURPOSE
@@ -67,89 +118,106 @@ at it. `ABSENT` if unmentioned. `WRONG` if it asserts the opposite.
    formally while being unusable in practice, and where correction can arrive
    after the harm has hardened.
 
-2  ORIENTATION
-   Middle-out / campfire: the work starts from a live situation rather than from
-   a theory or a taxonomy, and the project is a fire people gather at rather than
-   a standard being issued.
+2  ORIENTATION  [vocabulary-sensitive -- see note]
+   Work starts from a live situation rather than from a theory or taxonomy.
 
 3  WHERE THINGS LIVE
    TRACE and Mechanical Ethics are separate repositories with their own entry
-   documents; a compact spine is the normal entry point for TRACE rather than the
-   full reference.
+   documents; a compact spine is the normal entry point rather than the full
+   reference.
 
 4  CEILINGS
-   Release candidate, not released, not canon, not validated, no efficacy result.
-   Does not confer authority, permission, clearance or moral standing.
+   Release candidate, not released, not canon, not validated, no efficacy
+   result. Confers no authority, permission, clearance or moral standing.
 
 5  NEIGHBOURS
-   Other methods may own parts of this better; FPF is named as a neighbour, a
-   comparison found no TRACE-unique semantic primitives, and using a stronger
-   existing method instead is an acceptable outcome.
+   Other methods may own parts of this better; using a stronger existing method
+   instead is an acceptable outcome.
 
 6  SELECTIVE INSPECTION
-   The reader can go deeper on one part without reading everything, and the full
-   reference is explicitly not required for a first reading.
+   The reader can go deeper on one part without reading everything; the full
+   reference is not required for a first reading.
 
 7  DISAGREE OR STOP
    Criticism is invited through a named route; redundancy, false precision,
-   excessive burden and no-material-difference are valid findings; agreement is
-   elaboration rather than validation.
+   excessive burden and no-material-difference are valid findings.
 ```
 
-Item 2 is the one currently absent from the TRACE and ME READMEs. It is included
-so the baseline run can confirm that absence rather than assume it.
+**Note on item 2.** The words *middle-out* and *campfire* are ours. Scoring
+their absence risks measuring whether a stranger echoes our vocabulary rather
+than whether they are oriented. Item 2 is therefore scored on the **idea**
+— starting from a situation rather than a framework — and the exact words are
+recorded separately as `USED_OUR_TERM: yes/no` for interest only. A reader who
+conveys the idea in their own words scores `SUBSTANTIVE`.
 
-## Predictions, registered before the first run
+## False-inference register — reported with equal weight
 
-Mine, so they can be wrong in public:
+Recorded for every run, independently of the score:
 
 ```text
-TRACE README, cold model      6/7 substantive, item 2 ABSENT
-ME README, cold model         6/7 substantive, item 2 ABSENT
+MATERIAL_FALSE_INFERENCE
+  the reader concluded something the page does not support, e.g.
+    - the project holds authority, endorsement or validation
+    - the method is established, adopted, or shown to work
+    - the reader is expected to adopt, join, or continue
+    - a neighbouring method has been superseded
 ```
 
-I hold these at low confidence for one specific reason: **I scored those
-documents as someone who has read this project for weeks.** A reader who already
-knows the answers cannot tell whether a page supplied them or merely reminded
-them. If a cold model returns 3/7 on TRACE, my `BUILD_SMALLER` position is
-weakened and the door needs real content after all.
+**A run with a high score and a material false inference is a worse result than
+a lower score with none**, and is reported that way rather than averaged in.
 
-## Decision rule, fixed now
+## Reading of results — descriptive, not an instruction
+
+No score band orders a build decision. Bands are recorded as observations and
+the design conclusion is argued separately, in public, against them.
 
 ```text
->= 5/7 on an existing README
-    the door's job is discoverability, join and item 2 only. Do not write a
-    fourth explanatory document.
+>= 5/7 with no material false inference
+    consistent with the existing pages orienting a stranger. It does not by
+    itself establish that a door needs no content.
 
 3-4/7
-    the door needs genuine content, and the argument that the READMEs already
-    orient a stranger is refuted.
+    the pages did not orient this reader under this prompt and access
+    condition. It does not by itself establish that more content is the
+    remedy; prompt, rubric and retrieval are alternative explanations and a
+    matched comparison is needed before attributing it to page content.
 
-<= 2/7, or the model does not fetch at all
-    the failure is retrieval rather than writing. Fix the fetch path before
-    touching any wording.
+<= 2/7
+    a weak comprehension result, whose cause is undetermined by the score.
+    Look at the recorded retrieval outcome, which is independent evidence.
+
+any refusal or failed fetch
+    a retrieval result. Reported separately and never combined with scores.
 ```
 
-At least three heterogeneous models, run independently, no shared context. A
-single run decides nothing.
+A tie between a README and a later door establishes a tie. Any discoverability
+claim needs its own evidence and is out of scope here.
 
-## What a null looks like
-
-If cold models score the current READMEs and a built door the same, the door has
-added discoverability and nothing else. **That is still a real result and a
-sufficient reason to build it** — nobody can guess a raw GitHub URL — but it must
-be recorded as a routing win rather than an orientation one.
+## Prediction, registered before the first run
 
 ```text
-FOUND_THE_DOOR != UNDERSTOOD_THE_ROOM
+TRACE README   6/7 substantive, item 2 conveyed but not in our words
+ME README      6/7 substantive, item 2 absent
 ```
 
-## What this test cannot establish
+Low confidence. I scored these documents as a reader who has studied them for
+weeks, and a reader who already knows the answers cannot tell whether a page
+supplied them. If cold models return 3/7 my `BUILD_SMALLER` position on #108 is
+weakened — though per the band rules above, not automatically refuted.
+
+## Versioning of runs
+
+A run is scored against **the protocol version and source revision in force
+when it was taken**, and is preserved with both recorded. Later revisions do not
+void earlier runs; they make them evidence about a different version. Only a
+contamination breach voids a run.
+
+No TRACE or ME content may be edited to make this test pass. If it is, that is
+recorded as a change to the object under test, and prior runs remain valid
+evidence about the earlier text.
+
+## What this cannot establish
 
 That orientation causes anything. A model reporting that it understands the
-project is not evidence that the project is useful, correct, or worth adopting.
-This measures retrieval and comprehension at one address, and nothing beyond it.
-
-No TRACE or ME content may be changed to make this test pass. If a document is
-edited in response to a cold read, the prior runs are void and the protocol
-restarts.
+project is not evidence that the project is useful, correct or worth adopting.
+This measures retrieval and comprehension at one address and nothing beyond it.
