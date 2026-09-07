@@ -3,7 +3,7 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Campfire</a><span>Preview · 0.5</span></header>
+    <header className="masthead"><a href="#start">Campfire</a><span>Preview · 0.6</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
@@ -30,7 +30,7 @@ export default function Home() {
           </article>
         </div>
         <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
-        <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination; <a href="https://github.com/markgoodbody-bit/campfire-relay">Campfire Relay</a> holds collaboration tools. Neither is a prerequisite for reading.</p>
+        <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
       </section>
       <section className="boundaries" aria-labelledby="response">
         <h2 id="response">Disagreement belongs here</h2>
@@ -38,7 +38,7 @@ export default function Home() {
       </section>
     </main>
     <footer>
-      <p>Preview 0.5 · 7 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
+      <p>Preview 0.6 · 7 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
     </footer>
   </>;
