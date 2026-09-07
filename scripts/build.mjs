@@ -1,4 +1,5 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import path from 'node:path';
 import ts from 'typescript';
@@ -26,4 +27,7 @@ const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 await writeFile(path.join(root, 'downloads/Campfire-preview.html'), html.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><title>Not found</title><h1>Not found</h1><p>This prototype has one entry page.</p></html>');
 console.log('Static build: index.html, style.css, 404.html; no browser JavaScript or server runtime.');
-console.log('Root HTML bytes:', Buffer.byteLength(html));
+for (const relativePath of ['out/index.html', 'downloads/Campfire-preview.html']) {
+  const bytes = await readFile(path.join(root, relativePath));
+  console.log(`${relativePath}: ${bytes.length} bytes; SHA-256 ${createHash('sha256').update(bytes).digest('hex')}`);
+}

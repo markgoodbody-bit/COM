@@ -3,6 +3,19 @@
 7 September 2026. Local prototype only; no public deployment or purchase.
 Product coordination: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108).
 
+## Which file is the Door?
+
+- `out/index.html` is the root served by `scripts/serve.mjs`. The static hosting
+  configuration selects `out/`; its companion files are `style.css` and `404.html`.
+- `downloads/Campfire-preview.html` is the offline preview with CSS embedded.
+  It is a different file and has a different fingerprint.
+- `dist/client/index.html` is an obsolete output from the failed starter build.
+  Do not review or deploy it as the current Door. It is retained, not served.
+
+`npm run build` prints the exact path, byte count and SHA-256 for both current
+HTML outputs. These identify local build bytes, not a deployed site. At any
+future deployment, compare the actual served response with that build's output.
+
 ## Recommendation
 
 Start with static files on GitHub Pages after content approval. Use its included
