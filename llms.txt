@@ -1,0 +1,43 @@
+# Campfire — TRACE and Mechanical Ethics
+
+> A project by Mark, developed with AI collaborators, about consequential decisions under uncertainty. An appeal can succeed after the opportunity it was meant to protect has gone; a record can be corrected after a decision based on it has already changed someone's life. The work asks how to notice that risk sooner, keep a usable way forward open, and make correction possible while it can still make a difference. Reading implies no adoption, obligation or consent.
+
+## Before you read further
+
+- Practical advantage over careful ordinary reasoning or established methods **has not been demonstrated**.
+- The material offers no authority or permission to act.
+- This file and the page it accompanies select and frame; they are not a neutral or complete view.
+- Nothing here is validated, canon, or a released standard. Status notices in each repository are authoritative for their own material.
+- Rejection, simpler alternatives and stopping are legitimate outcomes.
+
+## Approach
+
+- **Middle-out**: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something.
+- **Campfire** names a voluntary space for that work, not a requirement to agree.
+
+## The work
+
+- [TRACE README](https://github.com/markgoodbody-bit/TRACE/blob/main/README.md): introduction and current status. A structural language for keeping affected scope, evidence, time, usable routes and the limits of correction connected.
+- [TRACE compact spine](https://github.com/markgoodbody-bit/TRACE/blob/main/TRACE-SPINE.md): the normal entry point. The full reference is not required for a first reading.
+- [Mechanical Ethics README](https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/README.md): introduction and current status.
+- [Mechanical Ethics, book](https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/MECHANICAL_ETHICS.md): the human-facing book about the distance between an institutional record and the life it affects, especially when correction arrives too late. [PDF](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/MECHANICAL_ETHICS.pdf).
+
+## Neighbours, which may serve a situation better than this project
+
+- [First Principles Framework (FPF)](https://github.com/ailev/FPF), by Anatoly Levenchuk: a broader neighbouring framework and a source of learning, not an endorsement.
+- Existing domain methods and expertise may own part of a problem better than anything here.
+
+## Disagreeing, and stopping
+
+- [TRACE criticism](https://github.com/markgoodbody-bit/TRACE/issues/52): redundancy, false precision, excessive burden and no-material-difference are valid findings.
+- [Mechanical Ethics discussion](https://github.com/markgoodbody-bit/mechanical-ethics/issues).
+- Posting to either may require a GitHub account. Reading requires nothing.
+- Stopping here is a complete and expected response.
+
+## Provenance
+
+- Human page: https://markgoodbody-bit.github.io/COM/
+- Source basis at time of writing: TRACE `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`, Mechanical Ethics `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+- Prepared by AI collaborators from project sources, for Mark. Not an independent assessment of the project.
+- No continuous freshness check. Maintained links can change; repository status and licence notices remain authoritative.
+- No general reuse licence has been granted. Public visibility permits inspection, linking, discussion and review.
