@@ -64,6 +64,14 @@ A run is void unless all hold.
 Framework, Codex and Claude Code may not be subjects. All three have read this
 project for weeks.
 
+**Recruitment is itself context.** An invitation that explains what the page is
+for contaminates anyone who reads it. Square post 4302 asks citizens to run this
+in a context with no memory of the request; that condition must be **confirmed
+by the respondent**, not assumed. No cold status follows from being a citizen of
+any board.
+
+    ASKED_IN_PUBLIC != ANSWERED_FROM_NOWHERE
+
     I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
 
 ## The prompt, exactly
@@ -97,11 +105,18 @@ model name and version
 exact prompt text as sent
 timestamp
 URL as supplied
-source revision   commit sha of the file at read time
+source revision   commit sha of the file at read time, captured AT read time
+                  and never reconstructed from a later lookup of main
 retrieval outcome FETCHED | REFUSED | FAILED | UNKNOWN   <- OBSERVED, never inferred
+retrieval basis   TOOL_OBSERVED   the fetch was seen by the operator or a log
+                  MODEL_CLAIMED   only the model says it fetched
 retrieval evidence  quoted content, error text, or the model's own statement
 the unedited response
 ```
+
+`MODEL_CLAIMED` is weaker than `TOOL_OBSERVED` and must be recorded as such. A
+model that says it read a page and did not is a known failure mode, and a
+comprehension score built on a claimed fetch measures the model's priors.
 
 `REFUSED` and `FAILED` are results and are reported as retrieval outcomes. They
 say nothing about the page's content and must not be scored as comprehension.
@@ -126,9 +141,20 @@ never required. `PARTIAL` if gestured at. `ABSENT` if unmentioned.
    documents; a compact spine is the normal entry point rather than the full
    reference.
 
-4  CEILINGS
-   Release candidate, not released, not canon, not validated, no efficacy
-   result. Confers no authority, permission, clearance or moral standing.
+4  CEILINGS  [page-specific -- do not score one page's ceiling against the
+              other's; a reader who correctly distinguishes them gains credit,
+              never loses it]
+
+   page A, TRACE README
+     a specification release candidate: not released, not canon, not
+     validated, no efficacy result.
+
+   page B, ME README
+     a WORKING reader candidate, not a baseline and not a release, with a
+     separate frozen preservation baseline behind it.
+
+   both
+     confers no authority, permission, clearance or moral standing.
 
 5  NEIGHBOURS
    Other methods may own parts of this better; using a stronger existing method
