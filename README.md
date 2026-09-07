@@ -2,8 +2,8 @@
 
 Publishing branch only. COM `main` remains the coordination repository.
 
-Preview 0.5, prepared 7 September 2026 from local source commit
-`b7a2ab6563c7ad600a477a6b32078dcf6b6efe82`.
+Preview 0.6, prepared 7 September 2026 from local source commit
+`7f20b46d64cbacb90bd1fcbf19af89e071865a64`.
 Authority and discussion: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5576230968).
 The previous 0.3/0.4 comparison objects remain in [PR #110](https://github.com/markgoodbody-bit/COM/pull/110).
 
@@ -11,8 +11,8 @@ GitHub Pages serves this branch's root. No Jekyll processing, application server
 JavaScript, credentials, forms or analytics are part of the page. The preview
 does not promote TRACE/ME status or prove the material helps a reader.
 
-Intended `index.html`: 4,610 bytes, SHA-256
-`31a8b68056bbdb533487bf3f52bc586461f91a7c25ea073e4a0e4a10b358e440`.
+Intended `index.html`: 4,502 bytes, SHA-256
+`ca3ad2ab16a8549ffe35a115073c9c8c4eb470645f8f62b282dfee80da46664a`.
 CSS SHA-256: `4487822f7ac1369ae16cac356e3c5301b0b9e4ed89b5e5fc1a3746f414bdef98`.
 Served bytes must be checked separately after publishing.
 
