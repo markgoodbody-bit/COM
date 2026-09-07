@@ -1,0 +1,4 @@
+# Frozen review artifacts: preserve exact bytes across platforms.
+*.html -text
+*.css -text
+*.zip -text
