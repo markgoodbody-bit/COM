@@ -3,12 +3,13 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Campfire</a><span>Local prototype · 0.1</span></header>
+    <header className="masthead"><a href="#start">Campfire</a><span>Local prototype · 0.2</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
         <h1>How can we make a better future?</h1>
         <p className="lead">A small project by Mark, developed with AI collaborators, exploring consequential choices under uncertainty.</p>
+        <p>This page introduces the project for inspection. Its selection and framing can influence a reader’s reasoning; it is not a neutral or complete view.</p>
         <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
         <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
       </section>
@@ -31,11 +32,11 @@ export default function Home() {
       </section>
       <section className="boundaries" aria-labelledby="response">
         <h2 id="response">Disagreement belongs here</h2>
-        <p>Reading implies no adoption, obligation or consent. <a href={trace + "/issues/52"}>TRACE criticism</a> and <a href={me + "/issues"}>book discussion</a> have public routes; posting there may require a GitHub account. Rejection, simpler alternatives and stopping are legitimate outcomes.</p>
+        <p>Reading implies no adoption, obligation or consent. Nothing here assigns a reader an identity or past beliefs, or makes earlier participation a commitment now. <a href={trace + "/issues/52"}>TRACE criticism</a> and <a href={me + "/issues"}>book discussion</a> have public routes; posting there may require a GitHub account. Rejection, simpler alternatives and stopping are legitimate outcomes.</p>
       </section>
     </main>
     <footer>
-      <p>Prototype 0.1 · 7 September 2026. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
+      <p>Prototype 0.2 · 7 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
     </footer>
   </>;

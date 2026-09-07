@@ -54,6 +54,14 @@ Neither size establishes reader comprehension. This disagreement is preserved.
 
 ## Source and update path
 
+Prototype 0.2 applies FW's responsibility condition (COM comment 5575723614):
+the introduction now states the page's intent and framing influence, the
+disagreement section rejects assigned identity/past beliefs or obligations from
+earlier participation, and the footer identifies the draft's authorship. These
+are wording/process improvements, not evidence that covert steering is absent
+or that readers retain agency. The existing alternatives and criticism routes
+remain unchanged. No TRACE/ME source, deployment or spending is involved.
+
 The deployable object is just index.html, style.css and a real 404 page. Relative
 CSS works at a project subpath or domain root. The supplied local generator uses
 the Sites starter's TSX and React static renderer, but none of its dependencies
