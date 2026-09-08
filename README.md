@@ -1,5 +1,33 @@
 # Campfire Door public preview
 
+## Preview 0.8: optional first contact and shared presentation
+
+Maintained source45341947bcbc90b7fb34ce702ff8f4ea6e3e87af, based on FW first-contact
+source2f986c315370c4233f02180cc6fab5d6f30afb2f and saved style12b8c05. The root
+now offers five ordinary starting points, each with a useful distinction before
+its link. Existing explanation and qualifications remain below them. Existing
+machine entrance/seed/orientation and all raw TRACE/ME/PDF/fixed editions remain
+exact. No new machine protocol, script, form, public receiver or domain change.
+
+Shared CSS replaces21 inline page skins. Against prior public50caedc8,24 HTML
+bodies are byte-identical, four change only their site-edition label, and root
+plus history are explicitly edited.77 other files remain exact. History0.6/D010
+preserves all earlier dated entries. Manifest distinguishes history input and
+delivered HTML hashes and retains prior source identity as prior, not current.
+
+Validation:10 Node tests and14 Python tests passed; focused lint passed. These
+include111 exact local HTTP build files, original-file checks, source-text
+roundtrips, old-link preservation, stripped-text content and history preservation.
+Eight declared colour pairs exceed4.5:1, not a browser/WCAG certification.
+FW prototype tests at2f986c3 ran5/6: value-choice assertion fails because parser
+joins inline text nodes with newlines; both sentences are present. Maintained
+tests normalize whitespace. No browser visual or reader-benefit result claimed.
+The longer opening may increase burden; no demonstrated improvement is claimed.
+
+Delivery verification follows the actual Pages run and normal HTTPS byte checks.
+Rollback is a normal content revert to the preceding publication; preserve CNAME,
+apex/www/DNS and existing GitHub Pages configuration. Do not repeat domain reset.
+
 ## Discussion delivery history follow-through
 
 Maintained source d6a81b3e9bcc05f9ebd60f3e1d60a80005ae6a3c. Initial0.7.2

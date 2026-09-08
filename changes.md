@@ -1,6 +1,22 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.5 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.6 · 8 September 2026
+
+Edition 0.6 adds D010, the first-contact and shared-style successor labelled site Preview 0.8. This entry describes the prepared change, not a continuous delivery check. Earlier entries retain their original observation times.
+
+### D010
+
+**8 September 2026 — Offer useful starting points before the longer explanation.**
+
+**Changed:** The homepage now begins with five optional movements: a situation, a possibility, a disagreement, compact source, or curiosity. Each contains a usable distinction before its link, so a failed next fetch does not leave only a directory. The existing correction-window example and limits remain under “Why this exists”. Critical destinations remain visible absolute addresses as well as ordinary links. All reading pages use one shared light/dark stylesheet instead of separate page skins.
+
+**Why:** The earlier opening required reading the project explanation before choosing a direction. Framework's first-contact work proposes beginning with what brought the reader here, not their identity or agreement. The source and HTML alternatives remain options, not required stages. [Design basis and compatibility cases](https://github.com/markgoodbody-bit/COM/tree/2f986c315370c4233f02180cc6fab5d6f30afb2f/door-prototypes/perspective-walk-20260908).
+
+**Preserved:** The existing machine entrance, seed, orientation, TRACE and Mechanical Ethics files, PDF, fixed editions, discussion text and old destinations. No second machine protocol, new theory, licence or domain configuration is introduced. The old machine source's edition remains explicitly distinguished from the newer site wrapper.
+
+**Still open:** Whether this helps a reader understand or find anything. Structural checks and colour-pair arithmetic are not browser, accessibility or reader-benefit validation. More useful text also makes the opening longer; this is a trade-off, not a demonstrated reduction in reading burden. Discussion remains read-only, without a submission form. Receiver evaluation is separate from public intake.
+
+## Earlier dated entries
 
 Edition 0.5 adds D009, the editorial discussion reading delivered as site Preview 0.7.2 and checked at 14:45 UTC. Reading discussion here is now possible; submitting a reply here is still not. [Earlier edition 0.4](https://github.com/markgoodbody-bit/COM/blob/3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e/door-prototypes/perspective-walk-20260908/CHANGES.md).
 

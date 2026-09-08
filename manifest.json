@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.7.2",
+  "site_edition": "0.8",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
@@ -51,8 +51,9 @@
       "source_path": "door-prototypes/perspective-walk-20260908/discussion/DISCUSSION.md",
       "generator_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
       "markdown_sha256": "7117f1acf2c6cce494da2413c82fe8185f99dcb21342e4053ceb545efa222c18",
-      "html_sha256": "98310708d53cf919392854a3e71cccac349c9562cdc95c6a0990f69732815405",
-      "status": "Editorial reading seed only; no submissions received."
+      "html_sha256": "18d8a45911abc4c345e90dc83d0562e0282774b36f005ab309bccf42588bf0ba",
+      "status": "Editorial reading seed only; no submissions received.",
+      "input_html_sha256": "98310708d53cf919392854a3e71cccac349c9562cdc95c6a0990f69732815405"
     },
     "build_direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335",
     "earlier_llms_proposal": "https://github.com/markgoodbody-bit/COM/pull/113",
@@ -60,9 +61,11 @@
     "published_source": "https://github.com/markgoodbody-bit/COM/tree/gh-pages",
     "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness.",
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
-    "change_history_source_commit": "74560b174fb24523186ba321a2fde4f3d23bad70",
-    "change_history_source_path": "door-prototypes/perspective-walk-20260908/CHANGES.md",
-    "change_history_sha256": "acf25114a35794c5e77864f3562d929a647d1a759b3589758789bffef4980965",
+    "change_history_previous_source_commit": "74560b174fb24523186ba321a2fde4f3d23bad70",
+    "change_history_source_path": "public/changes.md in the maintained site source",
+    "change_history_sha256": "b173f45a7e5a30d59bf100fa9e8c9d0779e110f84a61e227eeae1cbdc14373b3",
+    "change_history_input_html_sha256": "2e2ff5f858ae29a8ef859bfa7e41a82b066442e2da7a850d25741496d6b17158",
+    "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
     "resource_inventory_sha256": "948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8",
@@ -98,7 +101,14 @@
         "edition": "ME v0.7.0 working candidate v0.2.4, source 44f7efb59806242fd26c572cbfbaaeaefaea2058; not a new ME release",
         "sha256": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
       }
-    ]
+    ],
+    "change_history_html_sha256": "cd4c117b37a75512625191e25da45d6065fa794d1b29ff8f0a87c8a55f9615fc",
+    "presentation": {
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
+      "stylesheet": "/style.css",
+      "stylesheet_sha256": "ba9e5d2f09b4a7dadbc8edd2e43a38208f7f705ce23355f1d7cb0b5bf41d4948",
+      "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
+    }
   },
   "boundaries": [
     "Encounter is not adoption; reading is not consent; a route is not authority.",
