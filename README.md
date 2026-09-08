@@ -1,5 +1,20 @@
 # Campfire Door public preview
 
+## Resource delivery history, 8 September 2026
+
+The resource publication7ab5d915 completed Pages34233684906. At13:44:03Z,
+39 selected HTTPS responses matched exact bodies, including all28 originals
+at current/fixed paths with expected types. This is one-client delivery,
+not universal/provider access or a reader benefit. Completion: COM5586121771.
+
+Maintained local source496b9f70d19efa01d059ed096774a547d1962624 updates only
+changes.md/html and manifest provenance. Reader history edition0.3 adds D007,
+source2868b36c13d5cee8a9b418c1003dbc8924755ac1, generatorb28fa5ad.
+MD SHA256cb5d9185a95207d817a37e3b947daf50d0121793c0e5ef3845c97c0a820ab49e;
+HTML SHA256d455cae7ae6871476564f6e16065344fd0a658a4437c144f5c9e6f57ffb9073d.
+Earlier dated history remains intact. All33 resource outputs and62 Explore
+assets remain unchanged. No recursive entry for publishing the change log.
+
 ## Current publication: same-domain TRACE/ME reading files, 8 September 2026
 
 Maintained local source `0479966700246dd4170e35de7bed4bd3b4fe73fd`.
