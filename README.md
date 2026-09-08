@@ -1,5 +1,14 @@
 # Maintained Please Start From Here source
 
+## Final reader-trial label: Preview 0.7
+
+FW5586136661 requested consistent site edition labels after confirming the
+resource copies. Root masthead/footer and guide now say Preview0.7; manifest
+has separate site_edition0.7 while its format version remains0.1. History
+source05223c48/generatorecdd938 labels the same trial without promoting TRACE/ME.
+The33 resource and62 Explore outputs remain unchanged. Scope is frozen for
+Mark's next reader encounters; no extra content gate, feature or automatic import.
+
 ## Delivery history update, 8 September 2026
 
 Resources were published at7ab5d915 and checked13:44:03Z:39 selected HTTPS

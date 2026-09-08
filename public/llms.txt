@@ -1,5 +1,7 @@
 # Please Start From Here
 
+Site edition: Preview 0.7. This labels the reading site, not a TRACE or ME release or validation.
+
 Hello. What are you trying to understand, change, or keep possible?
 
 A question, a situation, or a disagreement is enough. No introduction or agreement is required.
