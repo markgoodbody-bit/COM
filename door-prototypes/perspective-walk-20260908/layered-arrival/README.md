@@ -2,13 +2,14 @@
 
 DRAFT / OFFLINE / NOT DEPLOYED / NO READER RESULT
 
-This is one proposed journey through the existing futures reading. It sits beside
-the maintained Explore build, does not modify that build or its source library,
-and is not a new public endpoint. Seven small records separate entry, situation,
-small account, depth, perspective, challenge and basis. Each has JSON, Markdown
-and script-free HTML. An optional packet carries the same records in one fetch.
-The HTML is deliberately a noindex offline preview, not a reversal of the public
-Door's indexing policy. Do not publish the folder by copying it to gh-pages.
+One proposed journey through the existing futures reading. It sits beside the
+maintained Explore build and does not modify that build or its source library.
+Seven records separate entry, situation, small account, depth, perspective,
+challenge and basis. Each has JSON, Markdown and script-free HTML. An optional
+packet provides the combined reading. No public endpoint is added.
+
+The HTML retains noindex as an offline preview. Do not copy this folder to the
+public site or restore the retired public-page indexing exclusion.
 
 ## Reproduce
 
@@ -19,48 +20,94 @@ python -m unittest -v test_trial
 python build_trial.py --output NEW_EMPTY_DIRECTORY
 ```
 
-Open `start.html` in that output, or read `start.json`. Any individual file is
-also an entry; no homepage, login, identity, network fetch or reply is required.
-The default source is the existing parent `library.json`. Its exact 74d72cf
-SHA-256 is checked, so a changed library requires an explicit design reinspection.
-No network libraries or publishing operations are used by the builder.
+Open start.html or packet.html in the output, or read their JSON/Markdown forms.
+The default source is the existing parent library.json. Its exact 74d72cf SHA-256
+is checked; changed library bytes require explicit reinspection. No network,
+publication, tracking, visitor input or model calls occur in the builder.
 
-The unchanged futures wording is source-derived. New greeting organisation,
-situation and challenge framing are declared proposals. `source_fields` contains
-symbolic selectors by node id, not RFC JSON Pointers. No assertion of semantic
-equivalence between the short and full accounts, universal relevance or practical
-advantage is made. The counterexample remains in the small account itself.
+## Preservation contract and its limits
 
-## Executed local checks
+The futures wording is source-derived and unchanged. The organisation, situation
+prompt and challenge framing are declared proposals. The smallest futures card
+retains the full counterexample. source_fields uses symbolic selectors by node id,
+not RFC JSON Pointers. No semantic equivalence or practical advantage is claimed.
 
-Fourteen offline tests passed. They check exact source wording, shared
-representations, direct-entry boundaries, local links, deterministic output,
-changed-source refusal, HTML escaping, output overwrite refusal and the
-one-fetch packet's record identity. Twenty-four generated files matched a
-temporary loopback HTTP server; a missing path returned 404; the server stopped.
-These are structural/local-delivery checks, not browser rendering, public
-hosting, provider admission, accessibility conformance or reader understanding.
+The JSON packet retains all seven complete records. Rendered packets preserve
+each card's title, section text and labelled routes, not every machine metadata
+field. Within-packet routes point to the corresponding document anchors; the four
+external source, alternative-method and discussion destinations remain intact.
+No external source body is bundled or silently fetched.
 
-Machine entrance: 1,056 UTF-8 body bytes. Complete JSON packet: 9,846 bytes.
-Those counts omit protocol headers, extraction wrappers, tokens and latency;
-the larger packet also contains more material, so this is not an efficacy
-comparison. Output-tree SHA-256:
-`7c70f345695dbb4ba9902c885259311ccb89113f6d1b021950bceacf0bc60fd9`.
+An intact individual page has status/boundary text and a route to its basis.
+Detailed source/proposal attribution and the source hash are not repeated in
+every rendered card. A copied excerpt can lose that route and context. Neither
+an HTML-link check nor a successful fetch establishes detached-copy continuity.
 
-The exact input library was recovered from the mounted earlier build archive
-plus the already-recorded two-field patch and matched against the known Git
-blob `eaa7d37243637f9b31c28bafbdd9b6143ef0fde6`, not guessed from a partial excerpt.
-A normal raw-source attempt failed this runtime's DNS. No public delivery result
-is claimed. The production generator suite was not rerun.
+## Repair discovered during the comparison
 
-## Decision still open
+The initial c4da27c4 prototype's JSON packet preserved routes, but its Markdown
+and HTML packets copied only section prose and substituted seven sibling-page
+links. They omitted all four external destinations. The existing 14 tests passed
+because packet tests checked prose, not route preservation. That earlier
+cross-representation claim was too broad. Historical files and receipts remain
+at c4da27c461363081949fcca2c92ba0c5a4e4bda4; they are not the repaired outputs.
 
-Read [UNKNOWN_MAP.md](UNKNOWN_MAP.md). The next comparison concerns total effort,
-retained qualifications and freedom to choose or reject the framing, not clicks
-or praise. Keep the live Door stable. Codex retains public publication and the
-preceding Partial views integration; this draft does not block that work. CC's
-substantive review is separate. A future integration would retire duplicate
-entrypoints deliberately rather than add another permanent parallel portal.
+The repair renders each card with its own labelled routes in the packet. Internal
+links use local fragments rather than another file; source and outward links
+retain their exact URLs. Only packet.md and packet.html change in the 24 outputs.
+All 21 individual representations and packet.json remain byte-identical.
 
-No new licence, account, secret, spending, external contact, tracking, tool service,
-model call or scheduler is introduced or authorised.
+Executed in this pass: 20 local tests passed. Six added tests run against the old
+builder first produced five failures and one missing-renderer error; after the
+repair they passed. Checks cover per-card route/context preservation, distinct
+outbound links, local fragment targets, escaping and refusal of unsafe links.
+All 24 outputs matched through a temporary loopback HTTP server; a missing route
+returned 404; the server stopped. The production generator suite was not rerun.
+
+Browser inspection was attempted, not completed. Playwright's default browser
+binary was unavailable; the installed system Chromium refused the loopback URL
+with ERR_BLOCKED_BY_ADMINISTRATOR. No bypass was attempted. These results do not
+establish rendering, browser fragment behaviour, accessibility conformance,
+provider admission, public delivery or reader usefulness.
+
+Current start.json: 1,056 UTF-8 bytes; unchanged packet.json: 9,846 bytes.
+Repaired packet.md: 7,188 bytes; packet.html: 9,783 bytes.
+Output-tree SHA-256:
+`f67f2fdffa1a71b0a87bbd3641742ad4714b5ca0348249ff4cb54c450930dc91`.
+
+## Measured trade-off, not a usability verdict
+
+Markdown response-body sizes, excluding headers, tokens, tool wrappers, latency
+and monetary cost:
+
+| Reading route | Responses | Bytes |
+|---|---:|---:|
+| Existing complete futures reading | 1 | 1,607 |
+| Prototype small futures card | 1 | 834 |
+| Small account + detail + perspective | 3 | 2,831 |
+| Above, preceded by the entrance | 4 | 3,606 |
+| Repaired complete prototype packet | 1 | 7,188 |
+
+The existing page was read at published revision edefdeee6ba890ea0776d1fb518549120c5b276d;
+its reproduced bytes match Git blob 314f6358459e8dc8826b9a909f028666ca2bf911.
+The three-card route contains the same five futures text fields, but also adds
+boundary, standing and navigation text and repeats some fields. It is not an
+equal-content or behavioural comparison. The complete probe additionally carries
+welcome, privacy and design-context material. Its growth is the cost of restoring
+missing routes, not measured improvement.
+
+Provisional integration choice: keep the existing complete reading as a direct
+depth option; offer a smaller account for readers who need only that distinction.
+Do not require a journey through several fragments to reconstruct a small page.
+Packet access remains optional, and fragments are not independently retrieved
+resources. Test actual reader needs rather than ranking by clicks or byte count.
+
+## Boundaries and next step
+
+Read UNKNOWN_MAP.md. Its questions remain open unless this pass supplies a narrow
+structural observation. The fixed live Partial views publication is separate and
+complete in Codex's return 5585148725. Codex retains sole site publication. This
+repair does not authorise deployment or expansion across ten nodes. Any later
+integration must preserve useful current URLs and retire duplication deliberately.
+
+No new licence, account, spending, external contact, reader study or scheduler.

@@ -10,10 +10,11 @@ import build_trial as b
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.tags=[]; self.text=[]
+        super().__init__(); self.links=[]; self.tags=[]; self.text=[]; self.ids=[]
     def handle_starttag(self, tag, attrs):
         self.tags.append(tag)
         for key,value in attrs:
+            if key == 'id': self.ids.append(value)
             if key in ('href','src'): self.links.append(value)
     def handle_data(self, value): self.text.append(value)
 
@@ -44,7 +45,9 @@ class TrialTests(unittest.TestCase):
                 page=Page();page.feed(data.decode())
                 self.assertFalse({'script','form','iframe','img','object'} & set(page.tags))
                 for href in page.links:
-                    if not urlsplit(href).scheme: self.assertIn(href,self.files)
+                    if href.startswith('#'):
+                        self.assertIn(href[1:], page.ids)
+                    elif not urlsplit(href).scheme: self.assertIn(href,self.files)
     def test_same_fields_and_navigation_in_all_three_forms(self):
         for ident in b.IDS:
             obj=json.loads(self.files[ident+'.json'])
@@ -96,5 +99,63 @@ class TrialTests(unittest.TestCase):
             with self.assertRaises(ValueError):b.write_new(p,self.files)
     def test_duplicate_json_keys_refused(self):
         with self.assertRaises(ValueError):json.loads('{"x":1,"x":2}',object_pairs_hook=b.unique)
+
+    def test_packet_html_preserves_every_cards_routes(self):
+        data=self.files['packet.html'].decode()
+        for card in b.cards(self.lib).values():
+            marker='<article id="card-' + card['id'] + '">'
+            self.assertIn(marker, data)
+            section=data.split(marker,1)[1].split('</article>',1)[0]
+            page=Page();page.feed(section)
+            for edge in card['routes']:
+                href=edge['href']
+                expected=(href if urlsplit(href).scheme else
+                          '#probe-top' if href=='packet.json' else '#card-'+href[:-5])
+                self.assertIn(expected,page.links)
+                self.assertIn(edge['label'],' '.join(page.text))
+    def test_packet_markdown_preserves_every_cards_routes(self):
+        data=self.files['packet.md'].decode()
+        for card in b.cards(self.lib).values():
+            marker='<a id="card-' + card['id'] + '"></a>'
+            self.assertIn(marker,data)
+            section=data.split(marker,1)[1].split('<a id="card-',1)[0]
+            for edge in card['routes']:
+                href=edge['href']
+                expected=(href if urlsplit(href).scheme else
+                          '#probe-top' if href=='packet.json' else '#card-'+href[:-5])
+                self.assertIn('['+edge['label']+']('+expected+')',section)
+    def test_packet_has_unique_working_local_fragments(self):
+        page=Page();page.feed(self.files['packet.html'].decode())
+        self.assertEqual(len(page.ids),len(set(page.ids)))
+        self.assertEqual(set(page.ids),{'probe-top'}|{'card-'+ident for ident in b.IDS})
+        for link in page.links:
+            if link.startswith('#'):self.assertIn(link[1:],page.ids)
+            elif not urlsplit(link).scheme:self.assertIn(link,('packet.json','packet.md'))
+    def test_packet_preserves_outward_destinations_in_both_forms(self):
+        required={edge['href'] for card in b.cards(self.lib).values()
+                  for edge in card['routes'] if urlsplit(edge['href']).scheme}
+        self.assertEqual(len(required),4)
+        for ext in ('.md','.html'):
+            data=self.files['packet'+ext].decode()
+            for url in required:self.assertIn(url,data)
+    def test_packet_sections_keep_their_card_context(self):
+        data=self.files['packet.html'].decode()
+        for card in b.cards(self.lib).values():
+            marker='<article id="card-'+card['id']+'">'
+            self.assertIn(marker,data)
+            section=data.split(marker,1)[1].split('</article>',1)[0]
+            page=Page();page.feed(section);text=' '.join(page.text)
+            self.assertIn(card['title'],text)
+            for heading,body in card['sections']:
+                self.assertIn(heading,text);self.assertIn(body,text)
+    def test_packet_renderer_refuses_unsafe_links_and_escapes_text(self):
+        records=b.cards(self.lib)
+        records['start']['sections']=[('Heading','<script>bad()</script>')]
+        page=Page();page.feed(b.render_packet(records,'.html').decode())
+        self.assertNotIn('script',page.tags)
+        self.assertIn('<script>bad()</script>',' '.join(page.text))
+        records['start']['routes'][0]['href']='javascript:bad()'
+        with self.assertRaises(ValueError):b.render_packet(records,'.html')
+        with self.assertRaises(ValueError):b.render_packet(records,'.md')
 
 if __name__=='__main__':unittest.main(verbosity=2)

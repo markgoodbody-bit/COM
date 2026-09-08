@@ -68,10 +68,13 @@ a wrong turn. Fewer clicks is not always better; more clicks is not engagement.
 
 ### 4. Does context survive a deep arrival or a handoff?
 
-Readers may enter the middle, copy one card, or mix old and new versions. Every
-card carries its own status, boundary, source locator and relevant context. The
-source is pinned, and the builder refuses an unexpected library. That catches
-one build change; it cannot detect all stale caches or context stripped by tools.
+Readers may enter the middle, copy one card, or mix old and new versions. JSON
+cards carry status, boundary, a relative basis locator and symbolic source_fields.
+Rendered cards preserve status/boundary text and a labelled route to the basis;
+they do not repeat every source field or the full source/proposal attribution.
+These are intact-resource properties, not guarantees for an isolated copied
+excerpt. The source is pinned and the builder refuses an unexpected library;
+that catches one build change, not stripped context or all stale caches.
 No continuously current state or persistent reader identity is claimed.
 
 ### 5. Are our questions helpful or quietly exclusionary?
@@ -130,10 +133,15 @@ free will, a stable self or a human-like motivational system is made.
 
 ### 11. Can we maintain a forest of tiny files without contradiction?
 
-The experiment derives all three representations from one source. The same records
-also populate the packet. Tests check navigation and source preservation. But
-maintainer effort, version drift across host/cache/tool and repeated caveats may
-still outweigh savings. One seven-card probe is not authority to multiply this
+The experiment derives all three representations from one source. Complete records
+populate packet.json; rendered packets preserve their titles, section prose and
+labelled routes, not every machine metadata field. A second-pass check found the
+original rendered packets omitted four external destinations despite passing the
+prose-preservation tests. That defect is repaired with route-specific regression
+coverage; it is not evidence that all context survives. Measured three-card body
+bytes also exceed the existing complete futures page for the overlapping five
+text fields; see README.md for the unequal-content comparison. Maintainer effort,
+version drift across host/cache/tool and repeated caveats may still outweigh savings. One seven-card probe is not authority to multiply this
 across the whole site. Stable public routes would require a separate integration
 choice, not merely copying the generated directory into production.
 

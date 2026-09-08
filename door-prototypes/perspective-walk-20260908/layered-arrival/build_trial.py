@@ -149,6 +149,61 @@ def render(card: dict, extension: str) -> bytes:
     return page.encode()
 
 
+def packet_href(href: str) -> str:
+    """Keep outbound destinations; bundled cards need only a local jump."""
+    safe_link(href)
+    if urlsplit(href).scheme:
+        return href
+    return '#probe-top' if href == 'packet.json' else '#card-' + href[:-5]
+
+
+def render_packet(records: dict[str, dict], extension: str) -> bytes:
+    """Retain each card's context and routes in the combined reading."""
+    if extension not in ('.md', '.html') or tuple(records) != IDS:
+        raise ValueError('Unsupported packet representation or record set')
+    esc = html.escape
+    prepared = [(ident, obj, [(edge['label'], packet_href(edge['href']))
+                 for edge in obj['routes']]) for ident, obj in records.items()]
+    if extension == '.md':
+        out = ['<a id="probe-top"></a>', '# Whole small probe', STATUS, BOUNDARY,
+               '## In this packet', '\n'.join(
+                   '- [' + obj['title'] + '](#card-' + ident + ')'
+                   for ident, obj, _ in prepared)]
+        for ident, obj, links in prepared:
+            out += ['<a id="card-' + ident + '"></a>', '## ' + obj['title']]
+            out += ['### ' + heading + '\n\n' + body for heading, body in obj['sections']]
+            out += ['### Optional routes', '\n'.join(
+                '- [' + label + '](' + href + ')' for label, href in links)]
+        return ('\n\n'.join(out) + '\n').encode('utf-8')
+    page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<meta name="robots" content="noindex,nofollow">'
+            '<title>Whole small probe</title>'
+            '<link rel="alternate" type="application/json" href="packet.json">'
+            '<link rel="alternate" type="text/markdown" href="packet.md">'
+            '<style>body{font:1rem/1.6 system-ui,sans-serif;max-width:46rem;'
+            'margin:3rem auto;padding:0 1rem}h1{line-height:1.2}'
+            'h2{font-size:1.2rem}h3{font-size:1.05rem}li{margin:.5rem 0}'
+            'article{margin-top:2.5rem}footer{margin-top:2rem}</style>'
+            '</head><body><main id="probe-top"><h1>Whole small probe</h1><p>'
+            + esc(STATUS) + '</p><p>' + esc(BOUNDARY)
+            + '</p><nav aria-label="In this packet"><ul>')
+    page += ''.join('<li><a href="#card-' + ident + '">' + esc(obj['title'])
+                    + '</a></li>' for ident, obj, _ in prepared)
+    page += '</ul></nav>'
+    for ident, obj, links in prepared:
+        page += '<article id="card-' + ident + '"><h2>' + esc(obj['title']) + '</h2>'
+        page += ''.join('<section><h3>' + esc(heading) + '</h3><p>' + esc(body)
+                        + '</p></section>' for heading, body in obj['sections'])
+        page += '<nav aria-label="Routes from ' + esc(obj['title'], quote=True) + '"><ul>'
+        page += ''.join('<li><a href="' + esc(href, quote=True) + '">' + esc(label)
+                        + '</a></li>' for label, href in links)
+        page += '</ul></nav></article>'
+    page += ('</main><footer>Same source: <a href="packet.json">JSON</a> · '
+             '<a href="packet.md">Text</a></footer></body></html>\n')
+    return page.encode('utf-8')
+
+
 def generate(path: Path) -> tuple[dict[str, bytes], dict]:
     lib = load_library(path)
     records = cards(lib)
@@ -163,12 +218,8 @@ def generate(path: Path) -> tuple[dict[str, bytes], dict]:
             files[ident + extension] = render(obj, extension)
     files['packet.json'] = encode({'status': STATUS, 'boundary': BOUNDARY,
         'note': 'Optional complete probe. Relative file links still refer to sibling resources; no external source body is bundled.', 'cards': list(records.values())})
-    packet = {'id': 'packet', 'title': 'Whole small probe', 'sections': [], 'routes': []}
-    for obj in records.values():
-        packet['sections'] += [(obj['title'] + ' / ' + k, v) for k, v in obj['sections']]
-    packet['routes'] = [route('entry', obj['title'], ident + '.json') for ident, obj in records.items()]
     for extension in ('.md', '.html'):
-        files['packet' + extension] = render(packet, extension)
+        files['packet' + extension] = render_packet(records, extension)
     for name, data in files.items():
         if len(data) > 24576:
             raise ValueError('Probe resource over budget: ' + name)
