@@ -181,6 +181,32 @@ def arrival(lib: dict, files: dict[str, bytes]) -> dict[str, bytes]:
 
 
 
+PACKET_REFERENCE_NOTE = (
+    'Embedded accounts retain source wording and historical status labels; those labels '
+    'are not a current deployment report. Only example file references are rebased to '
+    'this packet directory. The referenced files are optional generated views. '
+    'No fetch is required to read the shared facts already included here.'
+)
+
+
+def packet_examples(examples: dict) -> dict:
+    """Rebase copied example file references without changing the source objects."""
+    rendered = copy.deepcopy(examples)
+    allowed = {name + '.json' for name in EXAMPLES}
+    def rebase(value: str) -> str:
+        if not isinstance(value, str) or value not in allowed:
+            raise ValueError('Unknown packet example reference')
+        return 'example/' + value
+    for obj in rendered.values():
+        for key in ('case', 'shared_case'):
+            if key in obj:
+                obj[key] = rebase(obj[key])
+        for link in obj['next']:
+            if 'path' in link:
+                link['path'] = rebase(link['path'])
+    return rendered
+
+
 def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     lib, examples = load(source)
     files: dict[str, bytes] = {}
@@ -243,13 +269,15 @@ def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     clinks = [('Project discussion',lib['challenge_route']['url']),('Sources and alternatives','sources.md'),('Return or stop','index.md')]
     put('challenge.md', document('Challenge or leave', cparts, clinks))
     put('challenge.html', html_document('Challenge or leave', cparts, [(a,b.replace('.md','.html') if not b.startswith('https:') else b) for a,b in clinks], 'challenge.md','llms.txt'))
-    packet = dict(lib, status=STATUS, examples=examples,
+    embedded_examples = packet_examples(examples)
+    packet = dict(lib, status=STATUS, examples=embedded_examples,
+                  example_reference_note=PACKET_REFERENCE_NOTE,
                   packet_boundary='Optional full local carrier. No external TRACE/ME text is bundled; source pointers only. Do not fetch the full packet unless it is useful.')
     put('packet.json', encode(packet))
     packet_text = document(title + ' — optional full packet', overview, [])
     for n in lib['nodes']:
         packet_text += '\n' + document(n['title'], [('Small account',n['short']),('Expand',n['detail']),('Another position',n['perspective']),('Challenge',n['challenge']),('Open question',n['question']),('Kind',n['kind'])], [])
-    packet_text += '\n# Shared example data\n\n```json\n' + json.dumps(examples,ensure_ascii=False,indent=2) + '\n```\n'
+    packet_text += '\n# Shared example data\n\n' + PACKET_REFERENCE_NOTE + '\n\n```json\n' + json.dumps(embedded_examples,ensure_ascii=False,indent=2) + '\n```\n'
     packet_text += '\n' + document('Sources, limits and reply access',src_parts + [('Reply access',lib['challenge_route']['access'])],src_links)
     put('packet.md',packet_text)
     llms = '# Please Start From Here — experimental reading space\n\n> ' + lib['purpose'] + '\n\n' + lib['boundary'] + '\n\nThis is a bounded static extension, not a required course or agent service. The full packet is optional.\n\n## Entry\n\n- [Small beginning](' + BASE + 'index.md): orientation without a required identity\n- [Machine map](' + BASE + 'map.json): individual resources and byte sizes\n\n## Patterns\n\n'

@@ -144,7 +144,17 @@ class ReadingBuildTests(unittest.TestCase):
     def test_packet_has_all_nodes_and_original_example(self):
         packet=json.loads(self.files['explore/packet.json'])
         self.assertEqual(self.library['nodes'],packet['nodes'])
-        self.assertEqual(self.examples,packet['examples'])
+        embedded = copy.deepcopy(packet['examples'])
+        for obj in embedded.values():
+            for key in ('case', 'shared_case'):
+                if key in obj:
+                    self.assertTrue(obj[key].startswith('example/'))
+                    obj[key] = obj[key].removeprefix('example/')
+            for edge in obj['next']:
+                if 'path' in edge:
+                    self.assertTrue(edge['path'].startswith('example/'))
+                    edge['path'] = edge['path'].removeprefix('example/')
+        self.assertEqual(self.examples, embedded)
     def test_output_refuses_existing_site(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp); (root/'CNAME').write_text('existing.test\n')
