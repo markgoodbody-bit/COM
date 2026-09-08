@@ -1,12 +1,14 @@
+import { SITE_EDITION } from '../scripts/site-edition.mjs';
 const trace = "https://github.com/markgoodbody-bit/TRACE";
 const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Please Start From Here</a><span>Preview · 0.7</span></header>
+    <header className="masthead"><a href="#start">Please Start From Here</a><span>Preview · {SITE_EDITION}</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
+        <p className="eyebrow">Site Preview {SITE_EDITION}</p>
         <h1>How can we make a better future?</h1>
         <p>A project by Mark, developed with AI collaborators.</p>
         <p>Hello. What are you trying to understand, change, or keep possible?</p>
@@ -22,6 +24,7 @@ export default function Home() {
       <section aria-labelledby="reading">
         <p className="route"><a href="/explore/">Explore ten short readings</a> on change, futures, power and correction, plus one example viewed from different positions. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
         <p className="route">AI reading: start here<br/><a href="https://pleasestartfromhere.com/explore/start.json">https://pleasestartfromhere.com/explore/start.json</a><br/>Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
+        <p className="route">HTML source-text reading alternative<br/><a href="https://pleasestartfromhere.com/read/start.html">https://pleasestartfromhere.com/read/start.html</a></p>
         <p className="route">One example, viewed from different positions<br/><a href="https://pleasestartfromhere.com/explore/example/entry.md">https://pleasestartfromhere.com/explore/example/entry.md</a></p>
         <p className="route">Public discussion route and reply limits<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
         <h2 id="reading">The work and its neighbours</h2>
@@ -48,7 +51,7 @@ export default function Home() {
     </main>
     <footer>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
-      <p>Preview 0.7 · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
+      <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
     </footer>
   </>;

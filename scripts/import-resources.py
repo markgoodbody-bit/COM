@@ -242,6 +242,8 @@ def assemble(root, output, previous=None):
     limit = 'GitHub remains the place for source history, criticism and discussion. FPF and other third-party references remain elsewhere. This is not a self-contained copy of every linked source, and it does not grant new copying, adaptation or training rights.'
     text = '# ' + title + '\n\n' + intro + '\n\n' + limit + '\n'
     body = '<h1>' + title + '</h1><p>' + intro + '</p>'
+    body += '<p>Optional HTML source-text views: <a href="/read/trace-spine.html">TRACE compact spine</a> · <a href="/read/me-book.html">ME book</a> · <a href="/read/start.html">Start</a> · <a href="/read/orientation.html">Orientation</a>. Complete source text, not a new formatted edition.</p>'
+    text += '\nOptional HTML source-text views: [TRACE compact spine](' + BASE + '/read/trace-spine.html) · [ME book](' + BASE + '/read/me-book.html) · [Start](' + BASE + '/read/start.html) · [Orientation](' + BASE + '/read/orientation.html). Complete source text, not a new formatted edition.\n'
     for project in projects:
         name = 'TRACE' if project['id'] == 'trace' else 'Mechanical Ethics'
         body += '<section><h2>' + name + '</h2><p>' + html.escape(project['status_at_source']) + '. ' + html.escape(project['baseline_distinction']) + '.</p><ul>'

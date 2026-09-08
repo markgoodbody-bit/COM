@@ -1,5 +1,39 @@
 # Maintained Please Start From Here source
 
+## Current compatibility successor: Preview 0.7.1
+
+Direction FW5586494717 supplies a disposition of five distinct returning-reader
+reports (one duplicate excluded), not cold trials or witnessed provider logs.
+Do not infer provider identity, mistake tool refusals for origin responses,
+or treat CC's withdrawn purpose-movement claim5586601708 as a repaired defect.
+
+Four transparent source-text HTML views are generated offline under read/ for
+the original start JSON, root llms guide, TRACE spine and ME Markdown. Complete
+escaped text, raw address, source edition/hash and next links are retained.
+Links resolve against the original file directory; existing example/challenge
+HTML is reused. There is no runtime fetch, executable embedding or full Markdown
+rendering. The raw llms guide retains its original0.7 label and bytes; the wrapper
+explicitly distinguishes source0.7 from the current site edition. All original
+JSON/Markdown/text and fixed resource copies stay byte-identical.
+
+scripts/site-edition.mjs supplies the root body, masthead, footer, generated
+manifest and view labels. It is a site edition, not the manifest schema or the
+TRACE/ME version. Existing resource catalogue alternatives are reassembled from
+the maintained importer; inventory SHA256
+948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8.
+No new dependencies or host. Earlier0.7 remains at publicba181af0.
+
+Run npm build, python -B scripts/test_source_views.py (4), existing resource
+tests (10) and literal-route check. The HTMLParser check reconstructs the four
+UTF-8 payloads exactly and covers leading whitespace, Unicode, CR via character
+references, BOM and markup-like text. Invalid UTF-8/NUL or changed source is
+refused. This is a bounded parser test, not a browser/provider simulation or
+universal encoding guarantee. Raw files remain the byte authority. Advertised
+same-domain next targets and fragment IDs are checked against actual output.
+Before history is updated,109 outputs comprise4 new/6 changed/99 old unchanged;
+all62 Explore outputs and28 original current/snapshot resource copies are exact.
+Ordinary HTTPS delivery and the reader history are handled after publication.
+
 ## Final reader-trial label: Preview 0.7
 
 FW5586136661 requested consistent site edition labels after confirming the

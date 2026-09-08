@@ -54,7 +54,7 @@
     "change_history_sha256": "55b9c357b252983500e18082f24c63d748a5b2488522756fd70c37293e957bfb",
     "change_history_generator_commit": "ecdd93891a48becc901afab8a708da3c0e090a62",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
-    "resource_inventory_sha256": "26963e06a95925ab1e0f48366cee27d0c34fe6cb851616ea139bf5edfd2c90bc",
+    "resource_inventory_sha256": "948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8",
     "worked_revision_source_commit": "730ece48c96fae27d66c797c2fc8fe96a61e8d39",
     "worked_revision_source_path": "door-prototypes/perspective-walk-20260908/WORKED_REVISION.md",
     "explore_source_path": "door-prototypes/perspective-walk-20260908/"

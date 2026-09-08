@@ -6,6 +6,8 @@ import ts from 'typescript';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { copyResources } from './resources.mjs';
+import { writeViews, VIEWS } from './source-views.mjs';
+import { SITE_EDITION } from './site-edition.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 // Validate all copied resources before changing the normal build output.
@@ -27,10 +29,16 @@ await writeFile(path.join(root, 'out/index.html'), html);
 await writeFile(path.join(root, 'out/style.css'), await readFile(path.join(root, 'app/globals.css')));
 const machineFiles = ['llms.txt', 'seed.txt', 'manifest.json', 'robots.txt', 'sitemap.xml'];
 for (const name of machineFiles) {
-  const bytes = await readFile(path.join(root, 'public', name));
+  let bytes = await readFile(path.join(root, 'public', name));
   new TextDecoder('utf-8', { fatal: true }).decode(bytes);
   if (name === 'seed.txt' && bytes.length > 1024) throw new Error('Transferable seed must remain under 1 KiB');
-  if (name === 'manifest.json') JSON.parse(bytes.toString('utf8'));
+  if (name === 'manifest.json') {
+    const manifest = JSON.parse(bytes.toString('utf8'));
+    manifest.site_edition = SITE_EDITION;
+    manifest.routes.html_source_text = '/read/start.html';
+    manifest.provenance.html_source_text = VIEWS;
+    bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
+  }
   await writeFile(path.join(root, 'out', name), bytes);
 }
 // Preserve the exact generated Explore assets accepted from the publishing handoff.
@@ -48,6 +56,7 @@ async function copyExplore(relative = 'explore') {
   }
 }
 await copyExplore();
+await writeViews(path.join(root, 'public'), path.join(root, 'out'));
 // Reviewed reader history is separately pinned; preserve its exact source bytes.
 for (const name of ['changes.md', 'changes.html']) {
   const bytes = await readFile(path.join(root, 'public', name));

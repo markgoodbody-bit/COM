@@ -4,6 +4,8 @@ The documents are here on this site. You can read the Markdown or download the e
 
 GitHub remains the place for source history, criticism and discussion. FPF and other third-party references remain elsewhere. This is not a self-contained copy of every linked source, and it does not grant new copying, adaptation or training rights.
 
+Optional HTML source-text views: [TRACE compact spine](https://pleasestartfromhere.com/read/trace-spine.html) · [ME book](https://pleasestartfromhere.com/read/me-book.html) · [Start](https://pleasestartfromhere.com/read/start.html) · [Orientation](https://pleasestartfromhere.com/read/orientation.html). Complete source text, not a new formatted edition.
+
 ## TRACE
 
 v0.3.0 specification RC1 / NOT RELEASED / NOT CANON / NOT VALIDATED / NO EFFICACY RESULT. v0.2.7 remains released formal baseline; not substituted by this copy.
