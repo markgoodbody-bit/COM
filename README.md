@@ -94,3 +94,17 @@ links and the existing stylesheet also resolve from nested missing paths.
 HTTP 404 remains an error response; there is no redirect, search, script,
 tracking, invented destination or claim about why the path is absent.
 Only the generated `404.html` changes; the other 67 outputs are preserved.
+
+## First-contact value and routing copy
+
+FW direction: COM #108 comment 5583292550. The existing two-sentence value
+choice from `explore/start.json` now appears once after homepage authorship and
+once after the root machine guide's opening description. The machine guide's
+existing small entrance link moves to the first Start item and uses the same
+'AI reading: start here' label as the homepage, without duplicating its URL.
+The footer describes today's wording/navigation update, not a new source review.
+
+Only `index.html` and root `llms.txt` change from publication `916c804`.
+All reading content, seed, prior destinations, limits and hosting settings are
+preserved. This makes an existing value choice visible; it adds no new theory
+and does not demonstrate improved reader outcomes.
