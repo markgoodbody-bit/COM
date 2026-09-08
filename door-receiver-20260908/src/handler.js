@@ -1,5 +1,6 @@
 import {Store,Problem,newKey,sha,text} from './store.js';
 import {correctionAdmin} from './correction-handler.js';
+import {edgeAdmission} from './edge-admission.js';
 const enc=new TextEncoder();
 const esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
   .replaceAll('"','&quot;').replaceAll("'",'&#39;');
@@ -52,6 +53,7 @@ export async function handle(request,env,clock=()=>Date.now()){
     if(request.method==='POST'){
       const origin=request.headers.get('origin');
       if(origin&&origin!==env.APP_ORIGIN)throw new Problem(403,'CROSS_ORIGIN_POST_REFUSED');
+      if(['/submit','/api/submit'].includes(url.pathname))await edgeAdmission(env,'contribution');
       input=await readInput(request);
     }
     const store=new Store(env.DB,clock);await store.sweep();
