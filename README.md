@@ -1,5 +1,31 @@
 # Maintained Please Start From Here source
 
+## Shared house-style candidate, not yet published
+
+Following Mark-relayed Gemini advice recorded in FW5586692116, one maintained
+stylesheet now supplies root, Explore, discussion, catalogue, history and source
+views. Before: separate inline skins, mismatched heading sizes and light-only
+root. After: system sans/monospace roles, a descending 1.25 heading scale, neutral
+light/dark tokens, underlined links, visible focus, rem spacing and wrapping.
+The build replaces only generated head styles. It preserves body markup, reading
+order, destinations, source text, raw originals, PDFs and fixed editions.
+Explore output sizes/hashes and discussion delivered-HTML identity are recomputed;
+the original discussion rendering hash is retained separately as an input pin.
+
+Local validation: build, preview delivery, source/discussion preservation and
+`node --test scripts/test-house-style.mjs`. The latter compares every HTML body
+and all non-presentation files to public50caedc8, checks generated inventory and
+stylesheet hashes, and calculates eight declared light/dark text contrast pairs.
+These checks do not establish browser usability, actual computed styles or WCAG
+conformance. Keyboard, 200% text enlargement, 320 CSS-pixel reflow and text-spacing
+overrides remain unverified. Preview handoff returned queued, not a visual pass.
+
+Public remains0.7.2/50caedc8. No release/history entry claiming delivery, provider
+login, public contribution collection, DNS change or spending is included here.
+Before publishing: complete or explicitly disposition the browser acceptance,
+record the actual presentation change in existing history, then publish the exact
+candidate with an updated site edition. Do not report this candidate as live.
+
 ## Local preview route repair, 8 September 2026
 
 Before: the hand-written preview route list returned 404 for `/explore/`,
