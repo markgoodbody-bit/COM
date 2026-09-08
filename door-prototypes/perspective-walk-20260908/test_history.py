@@ -25,7 +25,7 @@ class HistoryTests(unittest.TestCase):
         for url in re.findall(r'\]\((https://[^)]+)\)', raw.decode()):
             self.assertIn(url, parser.links)
         self.assertEqual(re.findall(r'<h3 id="([^"]+)"', page),
-                         ['d008', 'd007', 'd006', 'd005', 'd004', 'd003', 'd002', 'd001', 'p001', 'p002', 'r001'])
+                         ['d009', 'd008', 'd007', 'd006', 'd005', 'd004', 'd003', 'd002', 'd001', 'p001', 'p002', 'r001'])
         self.assertEqual(parser.tags.count('h1'), 1)
         self.assertEqual(parser.robots, [])
         self.assertFalse(set(parser.tags) & {'script', 'iframe', 'form', 'object'})
