@@ -1,6 +1,8 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.3 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.4 · 8 September 2026
+
+Edition 0.4 adds D008, four optional HTML source-text views delivered as site Preview 0.7.1 and checked at 14:29 UTC. Earlier entries retain their original scope and observation times. [Earlier edition 0.3](https://github.com/markgoodbody-bit/COM/blob/05223c485d83ff8654da18f92efa71423ba79590/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
 Edition 0.3 adds D007, the local reading copies verified at 13:44 UTC and identified for the next reader trial as site Preview 0.7. This is a site edition label, not a TRACE or ME release or validation. Earlier entries remain as dated history, not continuously current descriptions. [Earlier edition 0.2](https://github.com/markgoodbody-bit/COM/blob/4609bd04b0053959da39ba4fde4f20c29316c558/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
@@ -11,6 +13,18 @@ This log connects changes to their reasons, evidence and unfinished consequences
 This first edition covers selected Door changes recorded through 13:04 UTC on 8 September, not the full history of TRACE or Mechanical Ethics. Dates below describe the work; this retrospective account was written afterwards. **Published** means a named publication and delivery report exists, not that every reader can access it or that it improves reasoning. **Source built** and **Offline** do not mean live. The evidence is project-controlled records, not independent custody or a continuous service monitor.
 
 ## Published changes
+
+### D008
+
+**8 September 2026 — Offer complete source text in HTML as well as the original files.**
+
+**Changed:** Four optional pages show the complete small entrance JSON, orientation text, TRACE compact spine and Mechanical Ethics book Markdown. Each identifies its original edition, raw address and hash, with working next links outside the source-text block. This is not a newly formatted book or an abridgement. The homepage offers the alternative beside the existing machine entrance; the catalogue and sitemap include all four. Site Preview 0.7.1 is distinct from the unchanged orientation source's original Preview 0.7 label. [HTML source-text entrance](https://pleasestartfromhere.com/read/start.html).
+
+**Why:** Mark relayed six pasted blocks containing five distinct returning-reader reports; one was duplicated. Some reported receiving the homepage but not later files. They are not cold trials or independently witnessed access logs. Some reports described earlier editions or unsupported guessed routes; one also reported failure on an HTML challenge page. Another representation is a bounded compatibility hypothesis, not a demonstrated diagnosis of extension, MIME, caching or provider policy. [Reports and disposition](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586494717).
+
+**Evidence:** Four new files and six changed generated files leave 99 prior files unchanged, including every raw source, fixed snapshot, Explore file and the existing stylesheet. Parsed text from each new view reencodes to its exact original bytes. Local tests include whitespace, Unicode and markup-like text; advertised targets and fragments resolve. At 14:29 UTC, 56 ordinary HTTPS responses matched the publication, including all four views, their advertised active next targets and all original resource copies. Expected HTML and raw media types passed. [Publication acff173e](https://github.com/markgoodbody-bit/COM/commit/acff173ed906414c28ecc82830bec0ec0e6c3385) · [Delivery, test scope and limits](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586767917).
+
+**Still open:** Whether the readers who reported failures can receive these alternatives, and whether they help. Standard parser and one-client delivery checks are not browser visual review or provider simulation. The raw files remain the byte authority. No original wording, candidate status, licence, crawler policy or domain configuration changed. The separate request to read and reply to discussion without a GitHub account is unfinished. Claude Code withdrew earlier claims that a purpose sentence had moved; this release does not claim to repair that alleged movement. [Withdrawal](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586601708).
 
 ### D007
 
