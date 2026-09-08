@@ -85,7 +85,18 @@ export class Store {
     if (!row) throw new Problem(404,'RECEIPT_UNAVAILABLE');
     return row;
   }
-  async receipt(id,managementKey) { return this.privateView(await this.owner(id,managementKey)); }
+  async receipt(id,managementKey) {
+    const row=await this.owner(id,managementKey);
+    const view=this.privateView(row);
+    // Let the owner find the separate answer without searching a public feed.
+    // Recheck current state/revision in the query so replacement or withdrawal
+    // cannot expose a response attached to an earlier publication.
+    view.responses=await this.rows(`SELECT r.actor,r.body,r.created_at FROM responses r
+      JOIN contributions c ON c.id=r.contribution_id AND c.revision=r.revision
+      WHERE c.id=? AND c.revision=? AND c.state='published' AND c.body IS NOT NULL
+      ORDER BY r.id`,id,row.revision);
+    return view;
+  }
   async revise(id,managementKey,input) {
     const row=await this.owner(id,managementKey);
     const body=text(input.body,4000), display=text(input.display_name??'',80,true);
