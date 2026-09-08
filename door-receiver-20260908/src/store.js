@@ -140,13 +140,19 @@ export class Store {
     const row=await this.owner(id,managementKey);
     if (row.state!=='declined'||row.body===null) throw new Problem(409,'NOT_RECONSIDERABLE');
     const now=this.clock(), token=crypto.randomUUID();
-    await this.db.batch([
+    const result=await this.db.batch([
       this.statement(`UPDATE contributions SET reconsideration=1,updated_at=?,mutation_token=?
         WHERE id=? AND state='declined' AND body IS NOT NULL`,now,token,id),
       this.statement(`INSERT INTO events(contribution_id,revision,action,actor,reason,created_at)
         SELECT id,revision,'reconsideration','contributor',?,? FROM contributions
         WHERE id=? AND mutation_token=?`,reason,now,id,token)
     ]);
+    // The guard above reads the row; this UPDATE re-checks it. A legal
+    // declined->pending replacement between the two leaves every statement
+    // behaving correctly and nothing changed, so without this the contributor
+    // is handed a receipt for an appeal that was never recorded and left no
+    // event for an operator to find. NO_EXCEPTION_IS_NOT_IT_WORKED.
+    if(result[0].meta.changes!==1) throw new Problem(409,'NOT_RECONSIDERABLE');
     return this.receipt(id,managementKey);
   }
   async moderate(id,input,actor) {
