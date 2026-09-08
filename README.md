@@ -1,5 +1,35 @@
 # Campfire Door public preview
 
+## Current publication: same-domain TRACE/ME reading files, 8 September 2026
+
+Maintained local source `0479966700246dd4170e35de7bed4bd3b4fe73fd`.
+Direction: [FW5585774470](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585774470).
+Input inventory COM10c23eb, exact14 originals at TRACE46f4fcd1 and ME44f7efb5.
+Current copies and fixed snapshots preserve all original Markdown/PDF/image
+bytes and notices. A small catalogue and two figures directory indexes make
+the direct reading routes usable without a compulsory GitHub hop. Source
+history, discussion, third-party work and original Explore provenance remain
+outbound. No general HTML conversion, PDF regeneration or new rights grant.
+
+33 new resource files,2,122,697bytes; inventory SHA256
+`26963e06a95925ab1e0f48366cee27d0c34fe6cb851616ea139bf5edfd2c90bc`.
+105 generated outputs:33 new,4 changed,68 old unchanged from486c148b.
+All62 Explore outputs and prior history files remain exact. Normal builds
+verify local copies without network access, reject missing/changed/extra
+inputs and refuse fixed snapshot replacement. Future imports retain the prior
+snapshot inventory. Ten maintained import/build tests passed, including
+negative controls. All50 existing PDF pages parse; no visual-review claim.
+
+FW4c942e3's source improved SVG namespace/ID/style guards. Its17 fixture tests
+passed, but its raw PDF action regex rejected an /AA sequence in encoded image
+object134 of the actual PDF; that is not an action dictionary. See
+[comparison5586078108](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586078108).
+The maintained parsed-object check passed; PDF bytes are unchanged. These are
+bounded checks, not a comprehensive security audit or independent validation.
+
+Live delivery is checked separately; the reader history follows the actual
+delivery observation. No TLS/DNS change, new host, paid service or browser runtime.
+
 ## Current publication: reader change history, 8 September 2026
 
 Maintained local source `c54c65f15556f563d5e75a5acfe65f0ced40c9cc`.
