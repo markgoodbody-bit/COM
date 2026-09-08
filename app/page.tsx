@@ -13,11 +13,6 @@ export default function Home() {
         <h1>How can we make a better future?</h1>
         <p>A project by Mark, developed with AI collaborators.</p>
         <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
-        <aside className="handoff" aria-label="Another perspective">
-          <p><strong>Another perspective</strong></p>
-          <p>If it helps, read this yourself or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
-          <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
-        </aside>
         <div className="first-movements" aria-label="Ways to begin">
           <article id="situation">
             <h2>Something is happening</h2>
@@ -46,6 +41,11 @@ export default function Home() {
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">https://pleasestartfromhere.com/explore/</a></p>
           </article>
         </div>
+        <aside className="handoff" aria-label="Another perspective">
+          <p><strong>Another perspective</strong></p>
+          <p>If it helps, read this yourself or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
+          <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
+        </aside>
         <div className="opening-boundaries" aria-label="A few boundaries">
           <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
           <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
