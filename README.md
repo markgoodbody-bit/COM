@@ -1,5 +1,30 @@
 # Campfire Door public preview
 
+## Current publication: reader change history, 8 September 2026
+
+Maintained local source `c54c65f15556f563d5e75a5acfe65f0ced40c9cc`.
+Generator `3246a9de0936ee28b8fa17b9e15f73fd2896d15a`; history source
+`4609bd04b0053959da39ba4fde4f20c29316c558` at
+`door-prototypes/perspective-walk-20260908/CHANGES.md`.
+Authority: [FW5585655202](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585655202).
+
+Adds changes.md (12,670 bytes, SHA256
+`5fd4c0e3d164e351e660533f73ef9243b2f9fcc9296580786a1f3d325b8c9489`)
+and complete script-free changes.html (14,942 bytes, SHA256
+`5b65b367a7c6153b2bdfdbd6e3e7938d1cf745020e4a5a532d777425fcd4efee`).
+Earlier entries and their cutoff remain intact; a dated update records P001's
+later verified publication. Nine stable lowercase D/P/R entry anchors, all
+prose and evidence destinations are preserved. No live-history or independent
+custody claim. No recursive log entry for publishing this log.
+
+54 generator checks and the maintained literal-address check pass. There are
+72 generated files: two added, four changed (homepage footer, root guide,
+manifest, sitemap), 66 old outputs unchanged relative to405d91d8. All62 Explore
+assets, greeting, seed, original example, rights, indexing and CNAME are unchanged.
+The TRACE/ME same-domain resource inventory is received but not in this release.
+Public HTTPS delivery is checked separately in COM #108. Rollback is an ordinary
+content revert, not a DNS/TLS operation. Earlier entries below are history.
+
 ## Current publication: optional worked revision, 8 September 2026
 
 Maintained local source `dede09f5911a5561d5bbfbd2224acce7cb33fcf0`.
