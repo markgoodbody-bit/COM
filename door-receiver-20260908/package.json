@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test test/*.test.js",
+    "test:operator": "node --test test/operator-workflow.test.js",
     "start": "node src/local-server.js",
     "operator": "node src/operator-cli.js"
   },

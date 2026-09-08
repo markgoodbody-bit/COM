@@ -39,6 +39,28 @@ is needed for the Node test path.
 npm test
 ```
 
+For one closed, no-setup operator rehearsal:
+
+```sh
+npm run test:operator
+```
+
+This starts a separate loopback server with a disposable synthetic database and
+fresh in-memory credentials. It invokes the actual operator CLI to open test
+intake, inspect one invented objection, pause intake, publish the reviewed
+revision and send a separately attributed answer. The contributor then reads
+that answer through their own private receipt and withdraws the contribution.
+The test stops its server and removes its temporary database. It does not use
+Cloudflare, production credentials or the public site. It checks HTTP/form
+responses, not browser rendering, human review quality or durable operator custody.
+
+Before the receipt repair, this rehearsal failed because private receipts did
+not include the project answer. They now include a separate `responses` array
+(actor, body and creation time) for the currently published revision; withdrawn
+or replaced text does not expose an earlier answer. Publication, response and
+project change remain separate. The initial submission receipt still only
+confirms stored status; use the private receipt check for subsequent answers.
+
 For the loopback demonstration, set `PSFH_ADMIN_TOKEN` and `PSFH_RATE_SECRET` to
 two different randomly generated secrets of at least 32 characters, then:
 
