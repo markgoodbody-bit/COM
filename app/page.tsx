@@ -1,6 +1,7 @@
 /* Static React rendering, not a Next.js runtime: native links must work without JavaScript. */
 /* eslint-disable next/no-html-link-for-pages */
 import { SITE_EDITION } from '../scripts/site-edition.mjs';
+import { CAMP_FIRE } from '../scripts/camp-fire.mjs';
 const trace = "https://github.com/markgoodbody-bit/TRACE";
 const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
-        <h1>How can we make a better future?</h1>
+        <h1>Please Start From Here</h1>
+        <p className="guiding-question">How can we make a better future?</p>
         <p>A project by Mark, developed with AI collaborators.</p>
         <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
         <div className="first-movements" aria-label="Ways to begin">
@@ -52,6 +54,13 @@ export default function Home() {
           <p>Reading implies no adoption, obligation or consent.</p>
         </div>
       </section>
+      <figure className="camp-fire" aria-labelledby="camp-fire-credit">
+        <img src={CAMP_FIRE.local_image} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="lazy" decoding="async" />
+        <figcaption id="camp-fire-credit">
+          <a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.<br/>
+          {CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.
+        </figcaption>
+      </figure>
       <section className="small-loop" aria-labelledby="small-loop">
         <p className="eyebrow">Use only what helps</p>
         <h2 id="small-loop">Take one useful step</h2>
@@ -95,6 +104,12 @@ export default function Home() {
         <p><a href="https://pleasestartfromhere.com/resources/">All local reading files, diagrams and fixed editions</a>.</p>
         <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
         <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
+        <article className="artist-source" id="winslow-homer" aria-labelledby="homer-heading">
+          <h3 id="homer-heading">The painting and its maker</h3>
+          <p><strong>{CAMP_FIRE.artist} ({CAMP_FIRE.artist_dates})</strong> was an American painter. He began in commercial printmaking and worked as an artist-correspondent during the Civil War. His subjects included rural life, coastal communities and the sea. He moved to Prouts Neck, Maine, in 1883. <a href={CAMP_FIRE.biography_url}>Read H. Barbara Weinberg’s biography at The Met</a>.</p>
+          <p><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite>, {CAMP_FIRE.date}</a> is an oil painting on canvas. The Met traces it to a visit to Keene Valley, New York, and identifies the two figures as fishermen. Object number {CAMP_FIRE.accession}. {CAMP_FIRE.credit}.</p>
+          <p>The image is reproduced without cropping or alteration from <a href={CAMP_FIRE.image_url}>The Met’s original photograph</a>, under its <a href={CAMP_FIRE.rights_url}>Open Access policy</a>. <a href="/art/camp-fire.json">Image source details</a>. Its use here does not imply endorsement by the artist or museum.</p>
+        </article>
       </section>
       <section className="boundaries" aria-labelledby="response">
         <h2 id="response">Disagreement belongs here</h2>

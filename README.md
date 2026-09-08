@@ -1,6 +1,20 @@
 # Maintained Please Start From Here source
 
-## Current release preparation, 8 September 2026
+## Current title and artwork revision, 8 September 2026
+
+Preview 0.8.1 gives **Please Start From Here** the primary title, with the guiding
+question below. Homer's **Camp Fire** follows the intact opening choices and
+boundaries, with visible attribution and an artist/source entry. See
+[HOMER_TITLE_CANDIDATE.md](HOMER_TITLE_CANDIDATE.md) for provenance, before/after,
+checks and limits. The separate non-public teaching prototype is not included.
+
+The publication direction is [FW5592807329](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329).
+This source is prepared for the existing gh-pages lane, not a new Sites deployment.
+Build normally with `npm run build`; preserve all generated paths and publishing
+metadata. The gh-pages README and later COM return record the actual publication
+identity and delivery evidence. Earlier sections below are historical.
+
+## Earlier release preparation, 8 September 2026
 
 The accepted content is f7d606b219ad7c969717376b711c7541ab6100fd: five starting
 points before the optional AI handoff, six unnumbered optional questions, and

@@ -9,6 +9,7 @@ import { copyResources } from './resources.mjs';
 import { writeViews, VIEWS } from './source-views.mjs';
 import { SITE_EDITION } from './site-edition.mjs';
 import { applyHouseStyle } from './house-style.mjs';
+import { copyCampFire, CAMP_FIRE } from './camp-fire.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 // Discussion is an accepted editorial source, not a submission or live inbox.
@@ -21,6 +22,7 @@ for (const [name, key] of [['index.md', 'markdown_sha256'], ['index.html', 'html
 }
 // Validate all copied resources before changing the normal build output.
 await copyResources(path.join(root, 'public/resources'), path.join(root, 'out/resources'));
+await copyCampFire(path.join(root, 'public'), path.join(root, 'out'));
 await mkdir(path.join(root, '.build'), { recursive: true });
 await mkdir(path.join(root, 'out'), { recursive: true });
 const source = await readFile(path.join(root, 'app/page.tsx'), 'utf8');
@@ -46,6 +48,9 @@ for (const name of machineFiles) {
     manifest.site_edition = SITE_EDITION;
     manifest.routes.html_source_text = '/read/start.html';
     manifest.provenance.html_source_text = VIEWS;
+    manifest.routes.artwork = '/art/camp-fire.json';
+    manifest.provenance.artwork = { record: '/art/camp-fire.json', image_sha256: CAMP_FIRE.sha256, source: CAMP_FIRE.object_url };
+    manifest.provenance.title_and_art_direction = 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329';
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }
   await writeFile(path.join(root, 'out', name), bytes);
@@ -81,7 +86,8 @@ await mkdir(path.join(root, 'downloads'), { recursive: true });
 const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 // Keep the downloadable local preview outside the public indexing-policy change.
 const previewHtml = html.replace('<link rel="describedby"', '<meta name="robots" content="noindex,nofollow"><link rel="describedby"');
-await writeFile(path.join(root, 'downloads/Campfire-preview.html'), previewHtml.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
+const offlineArt = 'data:image/jpeg;base64,' + (await readFile(path.join(root, 'public/art/camp-fire.jpg'))).toString('base64');
+await writeFile(path.join(root, 'downloads/Campfire-preview.html'), previewHtml.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>').replace('src="' + CAMP_FIRE.local_image + '"', 'src="' + offlineArt + '"'));
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Please Start From Here</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="/style.css"></head><body><header class="masthead"><a href="/">Please Start From Here</a></header><main><section class="intro"><h1>Page not found</h1><p>There is no page at this address.</p><p><a href="/">Return to the introduction</a> or <a href="/explore/">explore the readings</a>.</p></section></main></body></html>\n');
 await applyHouseStyle(path.join(root, 'out'));
 console.log('Static build: shared HTML presentation, preserved reading sources; no browser JavaScript or server runtime.');

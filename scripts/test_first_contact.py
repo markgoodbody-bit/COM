@@ -4,6 +4,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 import subprocess
 import unittest
+import hashlib
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLISHED = ROOT.parent / 'DEV' / 'campfire-door-pages'
@@ -47,6 +49,26 @@ class FirstContactTests(unittest.TestCase):
         cls.html = (ROOT / 'out/index.html').read_text(encoding='utf-8')
         cls.page = Reading(cls.html)
         cls.text = ' '.join(' '.join(cls.page.text).split())
+
+    def test_primary_title_and_optional_attributed_artwork(self):
+        self.assertEqual(self.html.count('<h1>'), 1)
+        self.assertIn('<h1>Please Start From Here</h1>', self.html)
+        self.assertIn('<p class="guiding-question">How can we make a better future?</p>', self.html)
+        record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
+        image = (ROOT / 'out/art/camp-fire.jpg').read_bytes()
+        self.assertEqual(hashlib.sha256(image).hexdigest(), record['sha256'])
+        self.assertEqual(len(image), record['bytes'])
+        self.assertIn('src="/art/camp-fire.jpg"', self.html)
+        self.assertIn('alt="' + record['alt'] + '"', self.html)
+        self.assertIn('loading="lazy"', self.html)
+        self.assertLess(self.html.index('class="opening-boundaries"'), self.html.index('<figure'))
+        for link in [record['object_url'], record['rights_url'], record['biography_url'], '#winslow-homer', '/art/camp-fire.json']:
+            self.assertIn(link, self.page.links)
+        self.assertIn(record['credit'], self.text)
+        manifest = json.loads((ROOT / 'out/manifest.json').read_text(encoding='utf-8'))
+        self.assertEqual(manifest['routes']['artwork'], '/art/camp-fire.json')
+        self.assertEqual(manifest['provenance']['artwork']['image_sha256'], record['sha256'])
+        self.assertNotIn('teaching_preview', manifest['provenance'])
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',

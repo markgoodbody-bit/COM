@@ -5,6 +5,8 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { sharedStyle } from './house-style.mjs';
 import { VIEWS, decodeSource, renderSource } from './source-views.mjs';
+import { SITE_EDITION } from './site-edition.mjs';
+import { CAMP_FIRE } from './camp-fire.mjs';
 
 test('head-only transformation preserves markup-like source payload', () => {
   const input = '<html><head><style>body{color:red}</style></head><body><pre>&lt;style&gt;text&lt;/style&gt;</pre></body></html>';
@@ -23,13 +25,22 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       const relative = prefix + entry.name;
       if (entry.isDirectory()) { await check(dir + '/' + entry.name, relative + '/'); continue; }
       const actual = await readFile(dir + '/' + entry.name);
+      if (relative === 'art/camp-fire.jpg') {
+        assert.equal(createHash('sha256').update(actual).digest('hex'), CAMP_FIRE.sha256);
+        assert.equal(actual.length, CAMP_FIRE.bytes);
+        continue;
+      }
+      if (relative === 'art/camp-fire.json') {
+        assert.deepEqual(JSON.parse(actual), CAMP_FIRE);
+        continue;
+      }
       const before = execFileSync('git', ['show', baseline + ':' + relative], { cwd: publishing, maxBuffer: 10 * 1024 * 1024 });
       if (relative.endsWith('.html')) {
         const html = actual.toString('utf8');
         // Root, appended history and deliberately revised orientation are edited.
         // The other three source views change wrapper edition, not payload.
         if (!['index.html', 'changes.html', 'read/orientation.html'].includes(relative)) {
-          const normalize = text => text.replace('Site Preview 0.8</p>', 'Site Preview 0.7.2</p>');
+          const normalize = text => text.replace('Site Preview ' + SITE_EDITION + '</p>', 'Site Preview 0.7.2</p>');
           assert.equal(normalize(html.slice(html.indexOf('<body'))), before.toString('utf8').slice(before.toString('utf8').indexOf('<body')), relative);
           if (html.slice(html.indexOf('<body')) === before.toString('utf8').slice(before.toString('utf8').indexOf('<body'))) unchangedBodies++;
           else editionOnlyBodies++;

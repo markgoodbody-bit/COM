@@ -1,6 +1,22 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.7 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.8 · 8 September 2026
+
+Edition 0.8 adds D012, the title and artwork revision prepared as site Preview 0.8.1. This entry records the change and its evidence, not a claim that a particular reader has received or benefited from it. Earlier entries retain their original observation times.
+
+### D012
+
+**8 September 2026 — Give the work its title, and credit the painting and its maker.**
+
+**Changed:** Please Start From Here is the main human-facing title. How can we make a better future? remains the guiding question beneath it. Winslow Homer's 1880 Camp Fire appears after the existing opening choices, invitation and boundaries. A visible credit leads to the museum record and a short artist/source entry within the existing page. The title is not turned into a required first step, and the choices remain optional.
+
+**Why:** Mark wanted the name to read as the title of the work and chose a human-made painting. [Publication direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329). The Met identifies the work as public domain; its original photograph is reproduced without cropping or alteration and served locally. The small artist entry draws on museum sources and credits H. Barbara Weinberg's biography. Neither the painting nor its use implies endorsement. [Museum object and image](https://www.metmuseum.org/art/collection/search/11112) · [Open Access policy](https://www.metmuseum.org/policies/image-resources).
+
+**Evidence and limits:** The build checks the image's exact identity, and local readback confirms the title, credit and artist link. The image is lazy-loaded after the opening choices, but costs about 2.35 MB if loaded; it adds no content to the seed or orientation. Layout checks do not demonstrate reader benefit or full accessibility. Public delivery requires a separate observation after deployment.
+
+**Preserved:** The existing starting points, optional questions, source routes, Explore readings, read-only discussion, TRACE and Mechanical Ethics files, PDF and fixed editions. The orientation changes only its site edition label. The separate experimental teaching/index prototype remains non-public. No new theory, receiver, tracking, generated art, domain configuration or project licence is included.
+
+## Earlier title and opening edition
 
 Edition 0.7 adds D011, an optional question set and a human-first opening within site Preview 0.8. This entry records the prepared change and its bounded checks, not a claim of delivery or reader benefit. Previous entries and their observation times remain below.
 
