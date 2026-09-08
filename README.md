@@ -1,5 +1,29 @@
 # Maintained Please Start From Here source
 
+## Local preview route repair, 8 September 2026
+
+Before: the hand-written preview route list returned 404 for `/explore/`,
+`/read/start.html` and the ME PDF, despite their presence in the published build.
+After: the server inventories the generated `out/` tree at startup and serves
+its exact file bytes plus directory-index aliases. Request paths never become
+filesystem paths. Hidden entries are omitted; linked and unknown file types
+stop startup. Only GET/HEAD are accepted. This remains a local static preview,
+not a receiver. Restart after rebuilding; there is no live reload.
+
+The preview CSP now permits the generated pages' inline CSS and same-origin
+diagrams. Scripts, forms and external resources remain blocked by that policy.
+This is not a browser visual review or a general security audit.
+
+`npm run build` and `node --test scripts/test-serve.mjs` pass. The test requests
+all 111 current output files and directory aliases, compares exact bodies, and
+checks HEAD, ETag, missing/private paths, malformed URLs, PDF type and rejected
+POST. All 111 output files remain byte-identical to public commit
+50caedc89646b7337a86a5610cef24426b518cf3. No release or deployment is needed.
+
+Coordination supersedes the older assignment below: FW owns receiver PR116;
+CC reviews/reproduces it. Codex retains the maintained site and deployment.
+Public receiving, provider authentication and the shared-style pass remain open.
+
 ## Delivered discussion reading and history
 
 Preview0.7.2 public81ca060433144a028ec78db294b4e9d878c3a1bf / Pages34240219144
