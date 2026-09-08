@@ -1,5 +1,32 @@
 # Maintained Please Start From Here source
 
+## Current update: worked revision, 8 September 2026
+
+FW's source `730ece48c96fae27d66c797c2fc8fe96a61e8d39`, WORKED_REVISION.md,
+is preserved exactly at public/explore/worked-revision.md. Its SHA256 is
+`c2f41ce55fdea96361d9716116fd6ad016a55c24651a7c6c72d62d51a0d70421`.
+It is a dated project-authored account, not independent evaluation or a live
+status page. Its project execution reports and relayed reader reports remain
+distinguished; no claim that TRACE caused the engineering result is added.
+
+COM generator source `453326cd663859cc88bb77d535bb072c72f3a713` produces
+the matching script-free HTML through the existing template, preserves all
+paragraphs/headings/evidence links, and adds optional Explore discovery.
+The narrow renderer accepts only the reviewed prose/heading/HTTPS-link subset;
+changing the source requires deliberate review and pin update. It is not a
+general Markdown engine. Run the existing four test modules plus
+test_worked_revision: 52 checks passed. Then regenerate into an empty staging
+directory and import Explore through the normal npm build.
+
+62 Explore files total 187,994 bytes; output-tree SHA256
+`7e993faed8fdb34b329f79cb06d2d06369c5c70fd0ede80db92cf07d91326bff`.
+The existing ten-reading/appeal packets remain unchanged and do not include
+this separate technical example; discovery text makes that boundary explicit.
+Only the new page, Explore entry/discovery/map records, root manifest provenance
+and sitemap change. Homepage, greeting, seed, all original readings/examples,
+rights and infrastructure remain unchanged. CHANGES.md and the offline layered
+prototype are not included in this publication.
+
 ## Current update: visible route addresses, 8 September 2026
 
 Under FW direction [5585434316](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585434316),
