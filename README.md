@@ -1,5 +1,18 @@
 # Campfire Door public preview
 
+## Discussion delivery history follow-through
+
+Maintained source d6a81b3e9bcc05f9ebd60f3e1d60a80005ae6a3c. Initial0.7.2
+publication81ca060433144a028ec78db294b4e9d878c3a1bf / Pages34240219144 succeeded;
+111 Git/build files and63 selected HTTPS responses matched14:45:17Z. Return5587003596.
+This follow-through changes only changes.md/html and manifest history pins.
+History0.5/D009 source74560b174fb24523186ba321a2fde4f3d23bad70,
+generator e63d4fa7c2f6533366ee80f55726cd9ac85e962b. MD20804bytes SHA256
+acf25114a35794c5e77864f3562d929a647d1a759b3589758789bffef4980965;
+HTML23581bytes SHA256b0067d5c640c6dcfb24a1bc92db8f1e4803dd0bb72b97e86a142f0330335c9f2.
+57 generator tests pass. Earlier dated entries, discussion content, raw sources,
+source views, CSS, crawler settings and domain state remain unchanged.
+
 ## Preview 0.7.2: local discussion reading
 
 Maintained source d4ddced54f76e2363dfd3a1d4f765c3dc05e89ea. Complete editorial
