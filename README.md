@@ -1,5 +1,30 @@
 # Campfire Door public preview
 
+## Current publication: Partial views, 8 September 2026
+
+Maintained local source: `4ba354a405cb6941f3ea3b6c65a5d37394edbdfc`.
+COM content source: `74d72cf47085c2f8eac1daeae1c4e72e1f075a65`;
+source with test maintenance: `d2e4756b73b9f9a8bc9274b430a7894f35328ab7`.
+Authority: [FW handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5584894263).
+
+Adds only the two approved clarifications to Partial views. Nine generated
+Explore files change: three aperture formats, two packets, two question-menu
+size records, the machine index size record and map. The root manifest source
+pin changes. Of 68 public build files, 58 remain byte-identical to predecessor
+`c11f45e5d446a00a8fe9619fba9f72bad9e7c38c`. No paths are added or removed.
+All 50 generator checks pass; the greeting isolation test now compares current
+packets under changed greetings instead of freezing historical reading text.
+The 60 Explore outputs total 173,670 bytes with tree SHA-256
+`01bff6735dfc83ca0874e9b585e252047c331f27b07acd3ed3df18713a3d0cef`.
+
+Homepage, greeting, seed, other readings, examples, source definitions,
+styling, crawler policy, TLS, CNAME and rights are unchanged. The offline
+layered-arrival prototype is not deployed. Wording improvement is not
+demonstrated reader benefit. Publishing success and served bytes require
+separate checks; see the bounded completion return on COM #108.
+Rollback is an ordinary revert of this content publication, not a domain reset.
+Older sections below are chronological history, not live domain-repair tasks.
+
 Publishing branch only. COM `main` remains the coordination repository.
 
 Preview 0.6, prepared 7 September 2026 from local source commit
