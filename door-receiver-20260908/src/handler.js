@@ -1,4 +1,5 @@
 import {Store,Problem,newKey,sha,text} from './store.js';
+import {correctionAdmin} from './correction-handler.js';
 const enc=new TextEncoder();
 const esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
   .replaceAll('"','&quot;').replaceAll("'",'&#39;');
@@ -81,6 +82,7 @@ export async function handle(request,env,clock=()=>Date.now()){
     }
     if(request.method==='POST'&&url.pathname==='/api/admin'){
       await admin(request,input,env);const actor='authorised-local-operator';let result;
+      if(['corrections','resolve-correction'].includes(input.action))return json(await correctionAdmin(input,env,clock,actor));
       if(input.action==='ready'||input.action==='pause')result=await store.readiness(input.action==='ready');
       else if(input.action==='queue')result={queue:await store.queue()};
       else if(input.action==='respond')result=await store.respond(input.id,input,actor);
