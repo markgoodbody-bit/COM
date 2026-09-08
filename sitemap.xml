@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pleasestartfromhere.com/</loc></url>
-  <url><loc>https://pleasestartfromhere.com/llms.txt</loc></url>
-  <url><loc>https://pleasestartfromhere.com/seed.txt</loc></url>
-  <url><loc>https://pleasestartfromhere.com/manifest.json</loc></url>
-  <url><loc>https://pleasestartfromhere.com/robots.txt</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/change.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/aperture.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/significance.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/futures.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/selection.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/power.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/hardening.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/correction.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/care.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/nodes/wisdom.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/example/entry.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/example/case.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/example/route.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/example/affected.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/example/challenge.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/sources.html</loc></url>
+  <url><loc>https://pleasestartfromhere.com/explore/challenge.html</loc></url>
 </urlset>

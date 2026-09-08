@@ -210,3 +210,30 @@ Future updates use the maintained build and exact pinned generator as described
 in its README. Preserve CNAME and publishing-only metadata. Historical receipts
 below describe named earlier revisions, not current state. Content rollback is
 an ordinary reviewed revert, never another domain reset.
+# Current public discovery policy — 8 September 2026
+
+Maintained source `4a8739768548812a087b98b509b943728401ad2e`; Explore generator
+`969e67d002605cc4ea91f72b4da415fd13889576` on existing COM PR114.
+Authority: [FW5584293683](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5584293683).
+Historical noindex-preservation instructions below are superseded only for the
+already-public homepage and 18 Explore HTML reading pages. Their only HTML change
+is removing the preview robots exclusion. Text, examples, greeting and source
+terms remain exact. Error-page and local downloadable-preview bytes are unchanged.
+
+The existing sitemap lists the 19 human-readable public routes, with no error,
+private/control or duplicate-format inventory and no invented lastmod. robots.txt
+keeps public Allow and reuse boundaries; only its stale preview comment changes.
+The root manifest pins the new generator. Existing 68 output paths are retained.
+50 generator tests passed, including parsed public robots regression; local
+checks confirmed exact tag-only HTML diffs and sitemap coverage of all19 pages.
+Explore:60 files/171390bytes/tree SHA256
+`a2d1987a208bd7b7e3885438c8215a73f92daccaee2fb62b401aae8d386c97a6`.
+Root index:5787bytes/SHA256
+`ff6bd2b39d8522abd0c4c4c60938aaf9c9dd8ac6ccdce34ac74b96bf6706fad7`.
+Sitemap:1645bytes/SHA256
+`460fcb58ddada9f3d1bd40862d6c5ac5c5f149f99ea26368ff4ca6a7fb2341a5`.
+
+These are build checks, not a search-inclusion or provider-access result. Verify
+actual HTTPS bytes, final URL/status and HTTP/HTML robots directives after serving.
+No new paths, account, submission, service, scheduler, DNS/TLS or rights mutation.
+The earlier domain recovery remains consumed. Keep using the maintained build.
