@@ -12,18 +12,21 @@ function page(title,body,status=200){return new Response(`<!doctype html><html l
 function json(obj,status=200){return new Response(JSON.stringify(obj),{status,headers:{...headers,'Content-Type':'application/json; charset=utf-8'}});}
 function form(input={},error=''){
   const retry=input.retry_key??newKey(),management=input.management_key??newKey();
-  return `${error?`<p role="alert">${esc(error)}</p>`:''}<p>This separate route asks the project to review material that may concern or affect you. It is not an automatic takedown. Ordinary contribution intake may be paused while correction capacity remains available.</p><form method="post" action="/report"><label>Contribution reference<input name="target_id" value="${esc(input.target_id)}" required></label><label>Reason<select name="kind"><option value="privacy">Privacy</option><option value="safety">Safety</option><option value="misattribution">Misattribution</option><option value="other">Other</option></select></label><label>Optional note<textarea name="note" rows="4">${esc(input.note)}</textarea></label><input type="hidden" name="retry_key" value="${esc(retry)}"><input type="hidden" name="management_key" value="${esc(management)}"><p>Save both private keys before sending. A stored request is not a takedown, publication decision or project answer.</p><p>Retry key: <code>${esc(retry)}</code><br>Management key: <code>${esc(management)}</code></p><button>Request review</button></form>`;
+  const options=['privacy','safety','misattribution','other'].map(kind=>`<option value="${kind}"${kind===(input.kind??'privacy')?' selected':''}>${kind[0].toUpperCase()+kind.slice(1)}</option>`).join('');
+return `${error?`<p role="alert">${esc(error)}</p>`:''}<p>This separate route asks the project to review material that may concern or affect you. It is not an automatic takedown. Ordinary contribution intake may be paused while correction capacity remains available.</p><form method="post" action="/report"><label>Contribution reference<input name="target_id" value="${esc(input.target_id)}" required></label><label>Reason<select name="kind">${options}</select></label><label>Optional note<textarea name="note" rows="4">${esc(input.note)}</textarea></label><input type="hidden" name="retry_key" value="${esc(retry)}"><input type="hidden" name="management_key" value="${esc(management)}"><p>Save both private keys before sending. A stored request is not a takedown, publication decision or project answer.</p><p>Retry key: <code>${esc(retry)}</code><br>Management key: <code>${esc(management)}</code></p><button>Request review</button></form>`;
 }
 function manage(){return `<h2>Check or withdraw a correction request</h2><form method="post" action="/report/manage"><label>Correction reference<input name="id" required></label><label>Private management key<input name="management_key" type="password" required autocomplete="off"></label><button name="action" value="receipt">Check status</button><button name="action" value="withdraw">Withdraw request</button></form>`;}
 async function readInput(request){
   const type=(request.headers.get('content-type')??'').split(';')[0].trim().toLowerCase();
   if(!['application/json','application/x-www-form-urlencoded'].includes(type))throw new Problem(415,'UNSUPPORTED_CONTENT_TYPE');
   const declared=Number(request.headers.get('content-length')??0);if(declared>65536)throw new Problem(413,'REQUEST_TOO_LARGE');
-  const bytes=new Uint8Array(await request.arrayBuffer());if(bytes.byteLength>65536)throw new Problem(413,'REQUEST_TOO_LARGE');
+  let size=0;const parts=[],reader=request.body?.getReader();
+  if(reader)for(;;){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;if(size>65536){await reader.cancel();throw new Problem(413,'REQUEST_TOO_LARGE');}parts.push(value);}
+  const bytes=new Uint8Array(size);let offset=0;for(const p of parts){bytes.set(p,offset);offset+=p.length;}
   let source;try{source=new TextDecoder('utf-8',{fatal:true}).decode(bytes);}catch{throw new Problem(400,'INVALID_UTF8');}
   try{
     if(type==='application/json'){const v=JSON.parse(source);if(!v||Array.isArray(v)||typeof v!=='object')throw 0;return v;}
-    const params=new URLSearchParams(source),v={};for(const [k,x] of params){if(Object.hasOwn(v,k))throw 0;v[k]=x;}return v;
+    const params=new URLSearchParams(source),v={};for(const [k,x] of params){if(Object.hasOwn(v,k))throw 0;Object.defineProperty(v,k,{value:x,enumerable:true});}return v;
   }catch{throw new Problem(400,'INVALID_REQUEST');}
 }
 async function moderator(request,env){
@@ -31,6 +34,15 @@ async function moderator(request,env){
   const provided=request.headers.get('authorization')?.replace(/^Bearer /,'')??'';
   const a=await sha(expected),b=await sha(provided);let d=0;for(let i=0;i<a.length;i++)d|=a.charCodeAt(i)^b.charCodeAt(i);
   if(d!==0)throw new Problem(401,'MODERATOR_AUTH_REQUIRED');
+}
+
+// Caller authenticates first. This only records a review outcome; it does not
+// establish that content changed or perform a target-content action.
+export async function correctionAdmin(input,env,clock,actor){
+  const corrections=new CorrectionStore(env.DB,clock);
+  if(input.action==='corrections')return {corrections:await corrections.queue()};
+  if(input.action==='resolve-correction')return corrections.resolve(input.id,input,actor);
+  throw new Problem(400,'UNKNOWN_CORRECTION_ADMIN_ACTION');
 }
 
 export async function handleCorrection(request,env,clock=()=>Date.now()){

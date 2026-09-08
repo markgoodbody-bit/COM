@@ -49,3 +49,26 @@ test('browser correction form exists but remains inside the hard local-only rece
   const remote={...f.env,APP_ORIGIN:'https://discussion.example.test'};
   const blocked=await handle(new Request(remote.APP_ORIGIN+'/report'),remote,()=>fixed);assert.equal(blocked.status,503);
 });
+
+test('oversized unlabelled streams stop early on correction and admin routing',async t=>{
+  const f=fixture(t);
+  for(const path of ['/api/correction','/api/admin']){
+    let pulls=0;
+    const body=new ReadableStream({pull(controller){
+      pulls++;controller.enqueue(new Uint8Array(1024).fill(32));
+      if(pulls===1000)controller.close();
+    }});
+    const response=await handle(new Request(f.env.APP_ORIGIN+path,{method:'POST',headers:{'Content-Type':'application/json'},body,duplex:'half'}),f.env,()=>fixed);
+    assert.equal(response.status,413);
+    assert.ok(pulls<100,`${path} consumed ${pulls} chunks before refusing`);
+  }
+});
+
+test('failed browser report preserves selected reason with original retry keys',async t=>{
+  const f=fixture(t),input={...report(),target_id:'',kind:'misattribution'};
+  const response=await handle(new Request(f.env.APP_ORIGIN+'/report',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(input)}),f.env,()=>fixed);
+  assert.equal(response.status,400);
+  const html=await response.text();
+  assert.match(html,/<option value="misattribution" selected>/);
+  assert.ok(html.includes(input.retry_key));assert.ok(html.includes(input.management_key));
+});
