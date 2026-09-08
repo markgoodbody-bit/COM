@@ -23,7 +23,8 @@ CREATE TABLE contributions (
   closed_at INTEGER,
   moderation_reason TEXT,
   reconsideration INTEGER NOT NULL DEFAULT 0,
-  client_hash TEXT NOT NULL
+  client_hash TEXT NOT NULL,
+  mutation_token TEXT
 );
 CREATE INDEX contributions_state ON contributions(state);
 CREATE TABLE responses (
