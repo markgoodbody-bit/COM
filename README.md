@@ -1,5 +1,24 @@
 # Maintained Please Start From Here source
 
+## Current update: reader change history, 8 September 2026
+
+Root changes.md preserves CHANGES.md edition 0.2 from COM commit
+`4609bd04b0053959da39ba4fde4f20c29316c558`, SHA256
+`5fd4c0e3d164e351e660533f73ef9243b2f9fcc9296580786a1f3d325b8c9489`.
+The earlier entries and cutoff are retained, with a separate dated P001
+publication update. Root changes.html carries the complete prose, evidence
+links and nine stable lowercase D/P/R entry anchors. This is an authored
+history, not independent custody or a live monitoring claim.
+
+Generator `3246a9de0936ee28b8fa17b9e15f73fd2896d15a` extends the existing
+reviewed prose renderer only with bold labels and entry headings. Run its
+six test modules (54 checks) and `python -B build.py --history-output NEW_EMPTY_DIR`,
+then import the two files into public and run the maintained npm build.
+Existing 62 Explore outputs remain byte-identical. A compact footer URL,
+root guide, manifest and sitemap provide optional discovery; no new service,
+hosting, licence, content theory or reader-benefit claim. The same-domain
+TRACE/ME resource inventory is received but is not included in this release.
+
 ## Current update: worked revision, 8 September 2026
 
 FW's source `730ece48c96fae27d66c797c2fc8fe96a61e8d39`, WORKED_REVISION.md,

@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 URLS = tuple('https://pleasestartfromhere.com/explore/' + route for route in
              ('start.json', 'example/entry.md', 'challenge.md'))
+HISTORY_URL = 'https://pleasestartfromhere.com/changes.html'
 
 
 class BodyText(HTMLParser):
@@ -39,9 +40,10 @@ if __name__ == '__main__':
         parser = BodyText()
         parser.feed((ROOT / relative).read_text(encoding='utf-8'))
         text = ' '.join(parser.parts)
-        for url in URLS:
+        for url in (*URLS, HISTORY_URL):
             assert text.count(url) == 1, (relative, url, text.count(url))
     guide = (ROOT / 'out/llms.txt').read_text(encoding='utf-8')
     for url in URLS:
         assert '](' + url + ')' in guide, url
-    print('Three literal destinations survive attribute-free body extraction; root guide uses absolute destinations. No provider-access or usability claim.')
+    assert '](https://pleasestartfromhere.com/changes.md)' in guide
+    print('Three reading routes and history URL survive attribute-free body extraction; guide links are absolute. No provider-access or usability claim.')

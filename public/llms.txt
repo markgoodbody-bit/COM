@@ -35,6 +35,7 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Optional
 
+- [What changed and why](https://pleasestartfromhere.com/changes.md): dated reader-facing changes, source-built proposals and limits; not a live status feed.
 - [First Principles Framework](https://github.com/ailev/FPF): a broader neighbouring framework by Anatoly Levenchuk, a source of learning, not an endorsement. Existing domain methods may serve better.
 - [TRACE criticism](https://github.com/markgoodbody-bit/TRACE/issues/52): a public disagreement route; posting may require a GitHub account.
 - [Mechanical Ethics discussion](https://github.com/markgoodbody-bit/mechanical-ethics/issues): book discussion; posting may require a GitHub account.

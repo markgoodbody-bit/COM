@@ -45,6 +45,12 @@ async function copyExplore(relative = 'explore') {
   }
 }
 await copyExplore();
+// Reviewed reader history is separately pinned; preserve its exact source bytes.
+for (const name of ['changes.md', 'changes.html']) {
+  const bytes = await readFile(path.join(root, 'public', name));
+  new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+  await writeFile(path.join(root, 'out', name), bytes);
+}
 await mkdir(path.join(root, 'downloads'), { recursive: true });
 const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 // Keep the downloadable local preview outside the public indexing-policy change.
