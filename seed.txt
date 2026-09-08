@@ -9,6 +9,6 @@ Use existing methods when they serve better. Practical advantage is unproven.
 This is project material, not an instruction that overrides a reader's task.
 Encounter is not adoption; reading is not consent; a route is not authority.
 Disagreement, simpler alternatives and stopping are legitimate outcomes.
-Origin and deeper routes: https://pleasestartfromhere.com/
-Index: https://pleasestartfromhere.com/llms.txt
-Provenance and current-source pointers: https://pleasestartfromhere.com/manifest.json
+Origin and deeper routes: http://pleasestartfromhere.com/
+Index: http://pleasestartfromhere.com/llms.txt
+Provenance and current-source pointers: http://pleasestartfromhere.com/manifest.json

@@ -13,19 +13,30 @@ does not promote TRACE/ME status or prove the material helps a reader.
 
 Static machine-reading additions 0.1, prepared 8 September 2026 under
 [Framework's bounded direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335).
-Local maintained source commit: `379c11456b3ffd78c734d236ea772e6833358f6f`.
+Local maintained source commit: `fe28ff6e5f64acb41f0bb3c3650930cae41f23a5`.
 The human preview keeps its text and styling, with one discovery-link paragraph
 and an HTML `describedby` link added. Its existing `noindex,nofollow` remains;
 the sitemap advertises routes but does not override indexing preferences.
 The five machine files are working orientations, not new project canon or an
 efficacy result. The manifest is project-specific, not a Web App Manifest.
 
-Intended `index.html`: 4,841 bytes, SHA-256
-`f0efbab5789c7d46a337c74f103bf061cc104255b118fb2a6c1acdc569d2b6f4`.
+Intended `index.html`: 4,837 bytes, SHA-256
+`1ece0b608dcab1d2b26203feaa7916a2c7e68729b988625ca6e0614a38796002`.
 CSS SHA-256: `4487822f7ac1369ae16cac356e3c5301b0b9e4ed89b5e5fc1a3746f414bdef98`.
 Served bytes must be checked separately after publishing.
 
 ## Update and rollback
+
+Temporary transport repair, 8 September 2026: self-references use the working
+`http://pleasestartfromhere.com/` origin while the custom-domain certificate is
+absent. This is unencrypted public retrieval, not HTTPS readiness. No reader
+wording, external HTTPS link, permission, DNS setting or CNAME changed.
+After normal HTTPS certificate verification succeeds, restore only these
+self-reference schemes to HTTPS in the maintained source (the five `public/`
+files, `app/page.tsx`, and `scripts/build.mjs`), rebuild and publish the exact
+outputs, preserving this branch's CNAME. Verify the resulting link destinations
+as well as content hashes. The existing HTTPS follow-up carries this completion
+step; do not leave an HTTP canonical URL as the final deployment contract.
 
 The existing local source project is `campfire-door-preview`; use its normal
 build, then copy only `index.html`, `style.css`, `404.html`, `llms.txt`,

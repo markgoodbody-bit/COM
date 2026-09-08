@@ -12,9 +12,9 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Start
 
-- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
-- [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
-- [Human reading](https://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
+- [Small transferable seed](http://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
+- [Machine map](http://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
+- [Human reading](http://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
 
 ## Project sources
 

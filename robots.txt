@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pleasestartfromhere.com/sitemap.xml
+Sitemap: http://pleasestartfromhere.com/sitemap.xml
