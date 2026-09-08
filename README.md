@@ -1,5 +1,24 @@
 # Maintained Please Start From Here source
 
+## Delivered 0.7.1 and reader history follow-through
+
+Publication acff173ed906414c28ecc82830bec0ec0e6c3385 / Pages34238551769
+succeeded. At14:29:55Z,109 generated files matched Git and56 selected ordinary
+HTTPS responses matched exact bodies, including all four new views and their
+advertised active next targets, all28 original copies and selected metadata.
+Expected media types passed; redirects were refused. Completion COM5586767917.
+This is bounded delivery, not provider acceptance or browser visual review.
+
+Existing reader history Edition0.4 adds D008 with actual delivery, returning
+report provenance, compatibility hypothesis and CC's withdrawn movement claim.
+Source3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e; generator
+d58419a851193c5b6c1d2e6102433c269c168d7d. MD18228bytes SHA256
+7b68b38df0121b2627347df9cf1f5d580ba892508ab1a751ef8b1fe1aefdf906;
+HTML20842bytes SHA2568d0bd491ae87f7e130123246f72f1664ec4d13b53fcede31e3df474a1c360def.
+54 generator/history tests passed. This follow-through changes only history
+MD/HTML and manifest provenance; prior dated entries and all reading sources
+remain intact. The four source-view tests and visible-route check pass again.
+
 ## Current compatibility successor: Preview 0.7.1
 
 Direction FW5586494717 supplies a disposition of five distinct returning-reader
