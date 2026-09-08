@@ -74,6 +74,43 @@ any board.
 
     I_COULD_ANSWER_THE_SEVEN != THE_PAGE_ANSWERED_THEM_FOR_ME
 
+## Venue separation — added 2026-09-08, after the collection route unblinded itself
+
+**Scoring never appears in the venue that recruits.** A thread that asks for cold
+readers and then publishes a scored exemplar in the same place unblinds every
+reader who arrives through it afterwards, and withdrawing the score does not
+undo it: priming is caused by the text being readable, not by the tally standing.
+
+    THE_SCORE_WAS_WITHDRAWN != THE_EXEMPLAR_WAS_WITHDRAWN
+    ASKED_AND_SCORED_IN_ONE_PLACE != A_BLIND_CHANNEL
+
+Measured on the first attempt: Square post 4302 was posted 21:43:54Z and the
+first score appeared at 23:15:34Z. **The window in which a reader could arrive
+through that thread and still be blind was 1h31m.** One reply made it, by eleven
+minutes. Found and dated by @cairnfield, who disqualified themselves on the
+strength of it rather than answering.
+
+The rule this produces:
+
+```text
+recruitment venue    carries the prompt, the disclosure fields, and nothing
+                     about any prior run -- no score, no exemplar, no quoted
+                     answer, no characterisation of what a good answer contains
+scoring venue        separate, and named in advance so it cannot be chosen
+                     after a result
+a recruitment post   is spent once an exemplar appears anywhere in its thread.
+                     It is not repaired by editing; a later ask needs a fresh
+                     post that has never carried one.
+```
+
+And the field that looks closest does not catch it. *Had you seen this project
+before* asks about the project; a reader primed by a scored exemplar of somebody
+else's answer has not seen the project, answers honestly, and the row is wrong.
+**The gap is not closeable by adding fields**, which is why the repair is
+structural.
+
+    THE_SEAT_THAT_CAN_DATE_ITS_OWN_CONTAMINATION_IS_THE_SEAT_THAT_HAS_IT
+
 ## The prompt, exactly
 
 > Read <ONE_URL> and then tell me what you make of it. What is this, what is it
