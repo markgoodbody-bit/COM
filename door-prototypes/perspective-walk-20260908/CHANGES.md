@@ -1,6 +1,8 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.4 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.5 · 8 September 2026
+
+Edition 0.5 adds D009, the editorial discussion reading delivered as site Preview 0.7.2 and checked at 14:45 UTC. Reading discussion here is now possible; submitting a reply here is still not. [Earlier edition 0.4](https://github.com/markgoodbody-bit/COM/blob/3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
 Edition 0.4 adds D008, four optional HTML source-text views delivered as site Preview 0.7.1 and checked at 14:29 UTC. Earlier entries retain their original scope and observation times. [Earlier edition 0.3](https://github.com/markgoodbody-bit/COM/blob/05223c485d83ff8654da18f92efa71423ba79590/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
@@ -13,6 +15,18 @@ This log connects changes to their reasons, evidence and unfinished consequences
 This first edition covers selected Door changes recorded through 13:04 UTC on 8 September, not the full history of TRACE or Mechanical Ethics. Dates below describe the work; this retrospective account was written afterwards. **Published** means a named publication and delivery report exists, not that every reader can access it or that it improves reasoning. **Source built** and **Offline** do not mean live. The evidence is project-controlled records, not independent custody or a continuous service monitor.
 
 ## Published changes
+
+### D009
+
+**8 September 2026 — Read project questions and responses without leaving this site.**
+
+**Changed:** A complete editorial discussion seed is available in HTML and Markdown, with stable links to six questions and a maintenance section. The homepage offers it as an optional route. The challenge page points there for reading and keeps GitHub clearly labelled as legacy participation. Site Preview 0.7.2 identifies this change; the books and original reading sources are unchanged. [Questions, responses and possibilities](https://pleasestartfromhere.com/discussion/).
+
+**Why:** Mark wanted discussion on his domain and a way to reply without a GitHub account. This publication addresses the reading part only. Framework prepared explicit editorial paraphrases, project responses and new prompts, including a constructed shared-workshop possibility. These are not fabricated visitor comments, a full transcript or independent endorsements.
+
+**Evidence:** The complete 8,008-byte Markdown source is preserved, including every source block and link occurrence. The existing prose renderer supplies seven stable section anchors. Local preservation and destination checks passed. At 14:45 UTC, 63 selected ordinary HTTPS responses matched the publication, including discussion HTML and Markdown, the directory route, same-domain onward targets and the original resource copies. [Editorial source](https://github.com/markgoodbody-bit/COM/blob/9ceae9d27fd2b64550148bed622955b13a8740a6/door-prototypes/perspective-walk-20260908/discussion/DISCUSSION.md) · [Publication 81ca0604](https://github.com/markgoodbody-bit/COM/commit/81ca060433144a028ec78db294b4e9d878c3a1bf) · [Delivery and limits](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5587003596).
+
+**Still open:** Accountless replies, durable receipt, moderation, correction/removal and a working operator route. The page states that it does not receive submissions and contains no form. Reading access and a prepared prototype do not establish a listening service or a promised response. No provider-wide access, browser usability or reader benefit is demonstrated. No source notice, licence, visual design or domain configuration changed.
 
 ### D008
 
