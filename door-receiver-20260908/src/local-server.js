@@ -1,7 +1,7 @@
 /** Loopback only. No request-body or access logs. Synthetic testing, not public deployment. */
 import {createServer} from 'node:http';
 import {SqliteAdapter} from './sqlite-adapter.js';
-import {handle} from './handler.js';
+import {handle} from './router.js';
 import {resolve} from 'node:path';
 const token=process.env.PSFH_ADMIN_TOKEN,rate=process.env.PSFH_RATE_SECRET;
 if(!token||token.length<32||!rate||rate.length<32){

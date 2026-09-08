@@ -7,6 +7,8 @@ export class SqliteAdapter {
     this.sql.exec('PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL;');
     const exists=this.sql.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='service'").get();
     if(!exists) this.sql.exec(readFileSync(new URL('../migrations/0001.sql',import.meta.url),'utf8'));
+    const corrections=this.sql.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='correction_requests'").get();
+    if(!corrections) this.sql.exec(readFileSync(new URL('../migrations/0002_correction_requests.sql',import.meta.url),'utf8'));
   }
   prepare(sql) {
     const db=this, make=(args=[])=>({

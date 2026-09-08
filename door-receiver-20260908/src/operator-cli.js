@@ -28,10 +28,16 @@ async function stdinJson(readStdin) {
 }
 
 function validatePayload(action, input) {
-  if (['ready','pause','queue'].includes(action)) return {action};
+  if (['ready','pause','queue','corrections'].includes(action)) return {action};
   const id = input.id;
-  const revision = input.revision;
   if (typeof id !== 'string' || !id.trim()) throw new OperatorError('ID_REQUIRED');
+  if (action === 'resolve-correction') {
+    if (!['no_change','content_changed','content_removed','other'].includes(input.outcome))
+      throw new OperatorError('VALID_CORRECTION_OUTCOME_REQUIRED');
+    if (typeof input.reason !== 'string' || !input.reason.trim()) throw new OperatorError('REASON_REQUIRED');
+    return {action,id,outcome:input.outcome,reason:input.reason};
+  }
+  const revision = input.revision;
   if (!Number.isSafeInteger(revision) || revision < 1) throw new OperatorError('VALID_REVISION_REQUIRED');
   if (action === 'publish' || action === 'decline') {
     if (typeof input.reason !== 'string' || !input.reason.trim()) throw new OperatorError('REASON_REQUIRED');
@@ -50,7 +56,7 @@ export async function runOperator({argv, env, fetchImpl=fetch, readStdin=async()
   const token = env.PSFH_ADMIN_TOKEN;
   if (typeof token !== 'string' || token.length < 32) throw new OperatorError('PSFH_ADMIN_TOKEN_NOT_CONFIGURED');
   const url = receiverUrl(env.PSFH_OPERATOR_URL);
-  const input = ['ready','pause','queue'].includes(action) ? {} : await stdinJson(readStdin);
+  const input = ['ready','pause','queue','corrections'].includes(action) ? {} : await stdinJson(readStdin);
   const payload = validatePayload(action,input);
   const response = await fetchImpl(url, {
     method:'POST',
