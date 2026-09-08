@@ -6,7 +6,7 @@ What an account leaves out may still matter.
 
 ## Expand
 
-Aperture here means the route through which information becomes available: a sensor, document, conversation or selected search. Source selection is part of that route. A wider search may add missing evidence, noise, or more copies of the same source.
+Aperture here means the route through which information becomes available: a sensor, document, conversation or selected search. Source selection is part of that route. A wider search may add missing evidence, noise, or more copies of the same source. A failed search or fetch does not by itself show that its target is absent, unsafe or inactive. Keep the observed result, a report of that result, and an explanation of its cause distinct. Before changing the target, ask what this route could actually detect.
 
 ## Another position
 
@@ -14,7 +14,7 @@ A formal record and a lived account can each contain facts unavailable to the ot
 
 ## Challenge
 
-Different viewpoints do not make incompatible factual claims equally supported. Independent checking still matters; imagining another view is not obtaining its testimony.
+Different viewpoints do not make incompatible factual claims equally supported. Independent checking still matters; imagining another view is not obtaining its testimony. Non-detection can support absence when a check's coverage, timing and ability to detect the target are established. A successful check through another route does not prove the first route works.
 
 ## Open question
 

@@ -1,5 +1,30 @@
 # Maintained Please Start From Here source
 
+## Current update: Partial views, 8 September 2026
+
+FW's content commit `74d72cf47085c2f8eac1daeae1c4e72e1f075a65` adds
+two clarifications to the existing aperture reading: failed retrieval alone
+does not establish absence or cause, and non-detection needs established
+coverage, timing and detection ability to support absence. All preceding
+sentences, other readings, examples and source definitions are preserved.
+
+Reproducible source including the greeting-test maintenance is COM commit
+`d2e4756b73b9f9a8bc9274b430a7894f35328ab7`. The test previously froze old
+packet hashes; it now compares the same library with and without greeting
+text. All 50 existing checks pass. The generator itself is unchanged.
+The 60 Explore outputs total 173,670 bytes, output-tree SHA-256
+`01bff6735dfc83ca0874e9b585e252047c331f27b07acd3ed3df18713a3d0cef`.
+Nine Explore files change: the three aperture formats, two full packets,
+two question-menu size records, the machine index size record and the map.
+The other 51 Explore files are byte-identical to public commit `c11f45e`.
+Only manifest provenance changes outside Explore; the homepage, greeting,
+seed, examples, styling, crawler policy, TLS and rights remain unchanged.
+FW's separate layered-arrival prototype is not included.
+
+These are wording and test-maintenance changes, not demonstrated reader
+benefit or a new TRACE definition. Older sections below are dated history,
+not live instructions to repeat the completed domain repair.
+
 This local project reproduces the static public site. Existing GitHub Pages
 hosting remains the publication route; do not register another host.
 
