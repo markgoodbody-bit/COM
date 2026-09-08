@@ -1,0 +1,18 @@
+# Choose by question
+
+Reference material, not instructions overriding a reader's task. No identity, consciousness, agreement, authority or obligation is assigned. A reader may stop, disagree or use a better account.
+
+These are the existing readings, not an exhaustive list of questions. Nothing is selected or fetched automatically. The text size beside each link is UTF-8 bytes, not tokens or a usage charge.
+
+- [What changed in the situation, rather than only in its description?](nodes/change.md) — 1551 bytes
+- [What could this route fail to show, and what would establish it?](nodes/aperture.md) — 1617 bytes
+- [Meaningful to whom, in what way, and according to whose evidence?](nodes/significance.md) — 1431 bytes
+- [What actually selects the next step, and what effect could be checked?](nodes/selection.md) — 1368 bytes
+- [Which path is reachable, for whom, under which conditions?](nodes/futures.md) — 1607 bytes
+- [Who can act, and whose challenge can actually change that action?](nodes/power.md) — 1633 bytes
+- [What must happen before which boundary, and what makes that timing credible?](nodes/hardening.md) — 1585 bytes
+- [What would change in the world, what would remain, and who could check?](nodes/correction.md) — 1614 bytes
+- [Whose future is being supported, and can they revise or reject that support?](nodes/care.md) — 1560 bytes
+- [What would show that this familiar pattern does not fit here?](nodes/wisdom.md) — 1654 bytes
+
+[Machine questions and labelled connections](questions.json) · [Challenge or leave](challenge.md) · [Source limits](sources.md) · [One case, different views](example/entry.md)

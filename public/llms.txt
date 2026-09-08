@@ -32,5 +32,6 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Optional connected readings
 
+- [Small machine entrance](/explore/start.json): optional routes and source-exact questions without fetching the full resource map.
 - [Explore](/explore/index.md): small accounts, alternative positions and challenges; no required sequence.
 - [Explore machine map](/explore/map.json): independently fetchable resources, sizes and source identities.
