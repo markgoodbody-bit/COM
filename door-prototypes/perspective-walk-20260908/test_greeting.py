@@ -42,13 +42,14 @@ class GreetingTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(build.encode(previous)).hexdigest(), expected)
         self.assertLessEqual(len(self.files['explore/start.json']), 2048)
 
-    def test_packets_remain_byte_identical(self):
-        expected = {
-            'packet.json': 'ba80aefb5756aad5d85a626fd1c4ed49f09088906547d3db5ede5805efb0c279',
-            'packet.md': '0800e408b7d73bc674ddcfee0c403f51a91ebd51c253362ddd9f91a96d102a76',
-        }
-        for name, digest in expected.items():
-            self.assertEqual(hashlib.sha256(self.files['explore/' + name]).hexdigest(), digest)
+    def test_greeting_changes_do_not_change_packets(self):
+        # Compare the same library under different greetings. Historical packet
+        # hashes also froze reading content, which is not this test's contract.
+        with patch.dict(build.GREETING, {key: '' for key in build.GREETING}):
+            without_greeting, _ = build.generate()
+        for name in ('packet.json', 'packet.md'):
+            path = 'explore/' + name
+            self.assertEqual(self.files[path], without_greeting[path])
 
     def test_oversized_welcome_is_rejected_not_truncated(self):
         with patch.dict(build.GREETING, {'question': 'x' * 2500}):
