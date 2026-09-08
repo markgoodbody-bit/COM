@@ -135,3 +135,22 @@ Rebuild Explore from exact Git bytes with
 assets into `public/explore`, then run the existing `npm run build`. Preserve
 all 68 output paths and publishing-only metadata. Historical receipts below
 describe their named revisions, not current transport or content state.
+# Public search-discovery update — 8 September 2026
+
+FW direction5584293683 retires preview indexing exclusion only for the existing
+public homepage and Explore HTML. It supersedes historical noindex-preservation
+instructions below. The error page and downloadable local preview retain their
+original exclusion and bytes. Public substantive text, greeting, seed, source
+terms, indexing-independent retrieval rules, domain and TLS settings are unchanged.
+
+Current generator: `969e67d002605cc4ea91f72b4da415fd13889576` on COM PR114.
+Four modules pass 50 tests, including parsed public-page robots regression.
+Explore tree SHA-256 `a2d1987a208bd7b7e3885438c8215a73f92daccaee2fb62b401aae8d386c97a6`;
+60 files / 171,390 bytes. Only 18 HTML robots tags and map hashes change there.
+The existing sitemap now lists 19 human-readable routes (root plus Explore),
+not the technical/control inventory. No invented lastmod dates or new paths.
+The root manifest pins this generator. Build using the existing commands below.
+
+This removes an authored search exclusion. Actual indexing, search inclusion,
+and provider-specific access are not established by build or HTTPS checks.
+No new service, submission, account, rights grant or domain recovery is included.

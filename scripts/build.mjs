@@ -19,7 +19,7 @@ await writeFile(modulePath, result.outputText);
 const { default: Page } = await import(pathToFileURL(modulePath).href);
 const body = renderToStaticMarkup(React.createElement(Page));
 if (/<script\b|<form\b|<iframe\b/i.test(body)) throw new Error('Reader path must be static and read-only');
-const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Please Start From Here | TRACE and Mechanical Ethics</title><meta name="description" content="A voluntary starting point for TRACE, Mechanical Ethics and neighbouring methods."><meta name="robots" content="noindex,nofollow"><link rel="describedby" type="text/plain" href="https://pleasestartfromhere.com/llms.txt"><link rel="stylesheet" href="./style.css"></head><body>' + body + '</body></html>\n';
+const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Please Start From Here | TRACE and Mechanical Ethics</title><meta name="description" content="A voluntary starting point for TRACE, Mechanical Ethics and neighbouring methods."><link rel="describedby" type="text/plain" href="https://pleasestartfromhere.com/llms.txt"><link rel="stylesheet" href="./style.css"></head><body>' + body + '</body></html>\n';
 await writeFile(path.join(root, 'out/index.html'), html);
 await writeFile(path.join(root, 'out/style.css'), await readFile(path.join(root, 'app/globals.css')));
 const machineFiles = ['llms.txt', 'seed.txt', 'manifest.json', 'robots.txt', 'sitemap.xml'];
@@ -47,7 +47,9 @@ async function copyExplore(relative = 'explore') {
 await copyExplore();
 await mkdir(path.join(root, 'downloads'), { recursive: true });
 const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
-await writeFile(path.join(root, 'downloads/Campfire-preview.html'), html.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
+// Keep the downloadable local preview outside the public indexing-policy change.
+const previewHtml = html.replace('<link rel="describedby"', '<meta name="robots" content="noindex,nofollow"><link rel="describedby"');
+await writeFile(path.join(root, 'downloads/Campfire-preview.html'), previewHtml.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Please Start From Here</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="/style.css"></head><body><header class="masthead"><a href="/">Please Start From Here</a></header><main><section class="intro"><h1>Page not found</h1><p>There is no page at this address.</p><p><a href="/">Return to the introduction</a> or <a href="/explore/">explore the readings</a>.</p></section></main></body></html>\n');
 console.log('Static build: human preview, five machine-reading files and preserved Explore assets; no browser JavaScript or server runtime.');
 for (const relativePath of ['out/index.html', 'out/404.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
