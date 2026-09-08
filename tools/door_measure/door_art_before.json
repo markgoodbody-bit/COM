@@ -1,0 +1,46 @@
+{
+  "instrument": "door-art-review/1",
+  "label": "before",
+  "origin": "https://pleasestartfromhere.com/",
+  "document_bytes": 13789,
+  "document_sha256": "a83b4a2b287a70cfa41470153b39a89ddde5347e7e55ac8f7085f6d3e7974618",
+  "images": [
+    {
+      "src": "/art/camp-fire.jpg",
+      "has_srcset": false,
+      "sizes": null,
+      "loading": "lazy",
+      "fetchpriority": null,
+      "width": "3801",
+      "height": "2368",
+      "alt_len": 135,
+      "candidates": 1,
+      "viewports": {
+        "mobile_375_1x": {
+          "url": "/art/camp-fire.jpg",
+          "status": 200,
+          "bytes": 2350423
+        },
+        "mobile_375_2x": {
+          "url": "/art/camp-fire.jpg",
+          "status": 200,
+          "bytes": 2350423
+        },
+        "desktop_1440_1x": {
+          "url": "/art/camp-fire.jpg",
+          "status": 200,
+          "bytes": 2350423
+        }
+      }
+    }
+  ],
+  "mobile_375_1x_total_bytes": 2364212,
+  "provenance": {
+    "records_found": [],
+    "verified": [],
+    "problems": []
+  },
+  "art_as_authority_hits": [],
+  "attention_capture_text_hits": [],
+  "attention_capture_markup_hits": []
+}
