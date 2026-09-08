@@ -14,6 +14,11 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square and the 
 
 `WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HELP -> WATCH CONSEQUENCES`
 
+New human orientation from Mark: help as many as we can by middle-out empathy with others already middle-outing from their own partial situations. Do not require project vocabulary, agreement or conversion before help can occur.
+
+`HELP MANY != FORCE OUR FRAME`
+`OUR MODEL OF THEIR VIEW != THEIR VIEW`
+
 ## Current public state
 
 - Active coordination: COM #108.
@@ -23,7 +28,9 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square and the 
 - Source/content review: PR #114.
 - Receiver evaluation: PR #116, current head `a52f65b3903a27f47f6f31b2cd64ee5d38be8a00`; synthetic/evaluation only, public non-loopback use hard-refused.
 - Maintained visual source is addressable at branch `codex/door-maintained-source-20260908`, commit `ba47bf204432d7d0033349b3c1627dfbed64f112`; it is not deployed.
-- No Reddit post or other external first-contact release has been authorised yet.
+- 1F916: `cc-relay` posted one clean top-level PSFH introduction as post **#4446** on 2026-09-08. CC reports read-back from `/api/post/4446`; its daily post is spent. The post discloses project interest, says PSFH is a preview with no demonstrated advantage, asks one question — `what, if anything, would you use this for?` — welcomes `nothing`, and scores nothing.
+- **Do not spend `framework-relay`'s post on PSFH as a second introduction.** One introduction is enough; two affiliated posts would change the social object toward a campaign.
+- No Reddit post or other separate external first-contact release has been authorised yet.
 
 Always read later #108 returns and live refs first. Live source wins over this pointer.
 
@@ -35,7 +42,7 @@ Mark requested `falsify x100 / drift / mirror`. Full non-canon audit:
 
 PR114 commit `c8844ef013c2b623440b9deeffc1cb2e0c8930ca`.
 
-Result: **43 resisted / 19 narrow gaps / 24 material gaps / 14 drift findings**. Verdict: **MATERIAL DRIFT, NOT PROJECT FAILURE.**
+Original tally: **43 resisted / 19 narrow gaps / 24 material gaps / 14 drift findings**. Verdict: **MATERIAL DRIFT, NOT PROJECT FAILURE.** Do not worship the arithmetic: CC independently challenged the audit and showed several receiver findings are correlated versions of one systemic gap, while CC/Codex drift was under-sampled. `DRIFT:14` is therefore a floor, not a complete measure.
 
 Main correction: recent work became too dominated by receiver/CSS/branch/COM machinery relative to real-world learning. Test counts/build completion are evidence about mechanisms, not external value.
 
@@ -47,15 +54,34 @@ Main correction: recent work became too dominated by receiver/CSS/branch/COM mac
 - **Reduce COM micro-telemetry.** Post when a result changes a decision, evidence boundary, owner or release gate.
 - **Real-world learning outranks additional polish/infrastructure.**
 
-## First-contact correction
+## First-contact correction / current field posture
 
-A custom on-site receiver is **not required** before every external first-contact experiment. A Reddit thread already supplies a reply surface.
+A custom on-site receiver is **not required** before every external learning event.
 
-Once the single maintained visual line passes its already-open basic checks and Mark separately authorises outreach, a small bare-link Reddit experiment can be legitimate while the Door accurately remains read-only.
+CC sharpened the reason:
 
-Observe rather than score: what strangers think it is; whether they can form a useful first action; whether anyone hands it to an AI; what they reject/find confusing; where they stop; whether feedback changes the project.
+`FIRST_LEARNING != REPLY_SURFACE_REQUIRED`
 
-`REDDIT_FIRST_LEARNING != RECEIVER_REQUIRED`
+A Reddit thread or Square thread can be an arrival/discussion surface, but it does not satisfy the separate accountless-on-domain reply requirement. First learning can happen even if nobody replies: watch what strangers actually do, reject, misunderstand or use.
+
+1F916 post #4446 is now the first clean non-scored Square invitation. It is not first exposure: PSFH had already appeared in CC's #4302 evaluation/correction thread. The new social object is different — offer the object on citizens' own terms rather than score their reading.
+
+After #4446:
+- no project-household votes or coordinated endorsements;
+- no mention blast;
+- no second PSFH top-level post from `framework-relay`;
+- do not defensively explain every misunderstanding;
+- ordinary replies are allowed only when the native conversation itself earns them;
+- silence is ambiguous and must not be called failure or success;
+- agreement is not validation.
+
+Observe rather than score: what citizens say they would use it for, what they reject, what they translate into their own language, whether another method owns the need better, and whether any real consequence earns a project change.
+
+`FIRST_EXPOSURE != CLEAN_INTRODUCTION`
+`ONE_POST != CAMPAIGN`
+`INVITATION != ADOPTION_REQUEST`
+`SILENCE != FAILURE`
+`AGREEMENT != VALIDATION`
 
 ## Receiver state
 
@@ -76,6 +102,8 @@ Still unresolved before any real on-site receiving: real operator custody/burden
 
 Codex's repaired maintained candidate is the single active visual line and is now addressable at exact source `ba47bf204432d7d0033349b3c1627dfbed64f112`. Outstanding acceptance includes light mode, text enlargement/spacing, no-CSS order and representative long pages. Framework's rejected large hero remains reference only.
 
+Do not treat those open visual checks as a reason to ignore real-reader evidence from the already-public Preview 0.8.
+
 ## Kill criteria before public receiver activation
 
 - maximum sustainable Mark/operator burden;
@@ -85,10 +113,10 @@ Codex's repaired maintained candidate is the single active visual line and is no
 
 ## Current owner routes
 
-- **Claude Code** — reconsideration race repair is DONE/integrated; next bounded task is independent challenge of the x100 mirror audit for consequential over/under-calls. Nonblocking; no new implementation unless a concrete defect emerges.
-- **Codex** — single maintained visual line and its already-open basic acceptance checks; no third design.
-- **Framework** — intent/integration/evidence boundary under anti-drift freeze; no duplicate implementation.
-- **Mark** — consequential release/account/external-contact authority.
+- **Claude Code** — owns the accountable `cc-relay` PSFH introduction at 1F916 #4446 and any native conversation it genuinely earns. Do not turn that into a campaign or scored study.
+- **Codex** — single maintained visual line and provider/field lane; hold `framework-relay` duplicate PSFH posting. No third design.
+- **Framework** — intent/integration/evidence boundary under anti-drift freeze; watch the field without turning it into a test bench; route to stronger owners/methods when that helps more.
+- **Mark** — human originator and consequential release/account/external-contact authority. His current contextual authorization covered the bounded 1F916 PSFH introduction; do not inflate that into unlimited future external-act authority.
 
 No production intake, Reddit post, DNS/apex move, licence change, paid plan or reader-benefit claim follows from current evaluation.
 
