@@ -93,16 +93,17 @@ export class Store {
       throw new Problem(409,'CLOSED_CONTRIBUTION');
     if (!Number.isSafeInteger(input.revision)||input.revision!==row.revision)
       throw new Problem(409,'REVISION_CONFLICT');
-    const now=this.clock(), marker=crypto.randomUUID();
+    const now=this.clock(), token=crypto.randomUUID();
     const result=await this.db.batch([
       this.statement(`UPDATE contributions SET body=?,display_name=?,state='pending',
-        revision=revision+1,updated_at=?,body_expires_at=?,moderation_reason=NULL,reconsideration=0
-        WHERE id=? AND revision=? AND body IS NOT NULL
-        AND state IN ('pending','published','declined')`,body,display,now,now+14*DAY,id,row.revision),
-      this.statement(`INSERT INTO events(contribution_id,revision,action,actor,reason,created_at)
-        SELECT id,revision,'revised','contributor',?,? FROM contributions WHERE id=? AND changes()=1`,marker,now,id),
+        revision=revision+1,updated_at=?,body_expires_at=?,moderation_reason=NULL,reconsideration=0,
+        mutation_token=? WHERE id=? AND revision=? AND body IS NOT NULL
+        AND state IN ('pending','published','declined')`,body,display,now,now+14*DAY,token,id,row.revision),
+      this.statement(`INSERT INTO events(contribution_id,revision,action,actor,created_at)
+        SELECT id,revision,'revised','contributor',? FROM contributions
+        WHERE id=? AND mutation_token=?`,now,id,token),
       this.statement(`DELETE FROM responses WHERE contribution_id=? AND EXISTS
-        (SELECT 1 FROM events WHERE contribution_id=? AND reason=?)`,id,id,marker)
+        (SELECT 1 FROM contributions WHERE id=? AND mutation_token=?)`,id,id,token)
     ]);
     if (result[0].meta.changes!==1) throw new Problem(409,'REVISION_CONFLICT');
     return this.receipt(id,managementKey);
@@ -110,14 +111,16 @@ export class Store {
   async withdraw(id,managementKey) {
     const row=await this.owner(id,managementKey);
     if (row.state==='withdrawn') return this.privateView(row);
-    const now=this.clock();
+    const now=this.clock(), token=crypto.randomUUID();
     await this.db.batch([
       this.statement(`UPDATE contributions SET state='withdrawn',body=NULL,display_name='',
-        moderation_reason=NULL,reconsideration=0,closed_at=?,updated_at=?,revision=revision+1
-        WHERE id=? AND state!='withdrawn'`,now,now,id),
+        moderation_reason=NULL,reconsideration=0,closed_at=?,updated_at=?,revision=revision+1,
+        mutation_token=? WHERE id=? AND state!='withdrawn'`,now,now,token,id),
       this.statement(`INSERT INTO events(contribution_id,revision,action,actor,created_at)
-        SELECT id,revision,'withdrawn','contributor',? FROM contributions WHERE id=? AND changes()=1`,now,id),
-      this.statement('DELETE FROM responses WHERE contribution_id=?',id)
+        SELECT id,revision,'withdrawn','contributor',? FROM contributions
+        WHERE id=? AND mutation_token=?`,now,id,token),
+      this.statement(`DELETE FROM responses WHERE contribution_id=? AND EXISTS
+        (SELECT 1 FROM contributions WHERE id=? AND mutation_token=?)`,id,id,token)
     ]);
     return this.receipt(id,managementKey);
   }
@@ -125,13 +128,13 @@ export class Store {
     text(reason,1000);
     const row=await this.owner(id,managementKey);
     if (row.state!=='declined'||row.body===null) throw new Problem(409,'NOT_RECONSIDERABLE');
-    const now=this.clock();
+    const now=this.clock(), token=crypto.randomUUID();
     await this.db.batch([
-      this.statement(`UPDATE contributions SET reconsideration=1,updated_at=?
-        WHERE id=? AND state='declined' AND body IS NOT NULL`,now,id),
+      this.statement(`UPDATE contributions SET reconsideration=1,updated_at=?,mutation_token=?
+        WHERE id=? AND state='declined' AND body IS NOT NULL`,now,token,id),
       this.statement(`INSERT INTO events(contribution_id,revision,action,actor,reason,created_at)
         SELECT id,revision,'reconsideration','contributor',?,? FROM contributions
-        WHERE id=? AND changes()=1`,reason,now,id)
+        WHERE id=? AND mutation_token=?`,reason,now,id,token)
     ]);
     return this.receipt(id,managementKey);
   }
@@ -139,15 +142,15 @@ export class Store {
     const action=input.action, reason=text(input.reason,1000);
     if (!['publish','decline'].includes(action)||!Number.isSafeInteger(input.revision))
       throw new Problem(400,'INVALID_MODERATION');
-    const now=this.clock(), state=action==='publish'?'published':'declined';
+    const now=this.clock(), state=action==='publish'?'published':'declined', token=crypto.randomUUID();
     const result=await this.db.batch([
       this.statement(`UPDATE contributions SET state=?,moderation_reason=?,updated_at=?,
-        body_expires_at=?,reconsideration=0
+        body_expires_at=?,reconsideration=0,mutation_token=?
         WHERE id=? AND revision=? AND body IS NOT NULL
         AND (state='pending' OR (state='declined' AND reconsideration=1))`,
-        state,reason,now,state==='declined'?now+14*DAY:null,id,input.revision),
+        state,reason,now,state==='declined'?now+14*DAY:null,token,id,input.revision),
       this.statement(`INSERT INTO events(contribution_id,revision,action,actor,reason,created_at)
-        SELECT id,revision,?,?,?,? FROM contributions WHERE id=? AND changes()=1`,action,actor,reason,now,id)
+        SELECT id,revision,?,?,?,? FROM contributions WHERE id=? AND mutation_token=?`,action,actor,reason,now,id,token)
     ]);
     if(result[0].meta.changes!==1) throw new Problem(409,'MODERATION_STATE_CONFLICT');
     return {id,state,revision:input.revision};
