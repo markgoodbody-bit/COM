@@ -3,7 +3,7 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Campfire</a><span>Preview · 0.6</span></header>
+    <header className="masthead"><a href="#start">Please Start From Here</a><span>Preview · 0.6</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
@@ -16,8 +16,8 @@ export default function Home() {
         <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
       </section>
       <section aria-labelledby="reading">
-        <p className="route"><a href="/explore/">Explore the connected reading space</a> — small accounts, other perspectives and challenges. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
-        <p className="route">Machine reading: <a href="http://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="http://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="http://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
+        <p className="route"><a href="/explore/">Explore ten short readings</a> on change, futures, power and correction, plus one example viewed from different positions. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
+        <p className="route"><a href="/explore/start.json">AI reading: start here</a>. Also available: <a href="http://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="http://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="http://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
     </main>
     <footer>
-      <p>Preview 0.6 · 7 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
+      <p>Preview 0.6 · prepared 7 September 2026; navigation and naming updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
     </footer>
   </>;

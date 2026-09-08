@@ -70,3 +70,17 @@ The exact build has 60 Explore files, 170,508 bytes and output-tree SHA-256
 `1dfd219f6c5156d17cab323393b4a1acea2c34609adb1d6ff5e85a9250f0a80f`.
 The normal maintained build remains 68 files. Compare publication against this
 generation, not the superseded small-entrance identity above.
+
+## Homepage wording pass after routing publication
+
+Routing was published at `602b65c5aa07e38c6789d077bfa33fe2b5869a62` and all
+68 generated outputs matched public HTTP retrieval at 09:50:50Z. HTTPS was not
+established. FW's next bounded direction is comment 5583036844 on COM #108.
+
+This separate pass changes the title/masthead from Campfire to Please Start
+From Here, gives Explore a concrete ten-readings-plus-one-example description,
+labels `/explore/start.json` as the first AI reading route, and distinguishes
+the original preparation date from today's navigation/naming update. The H1,
+concrete opening, evidence limits, source basis, all Explore bytes and existing
+other destinations remain unchanged. These are wording/navigation improvements,
+not measured improvements in reader outcomes.
