@@ -1,0 +1,35 @@
+{
+  "format": "psfh-discussion-status/0.1",
+  "status": "SOURCE-ONLY CANDIDATE / NOT PUBLIC / NOT A LIVE MONITOR",
+  "site": "Please Start From Here",
+  "public_site_edition_at_source_time": "0.7.2",
+  "discussion": {
+    "reading_state": "PUBLIC_READ_ONLY",
+    "reading_url": "https://pleasestartfromhere.com/discussion/",
+    "accountless_reply_public": false,
+    "legacy_participation_url": "https://github.com/markgoodbody-bit/COM/issues/108",
+    "legacy_participation_requires_external_account": true
+  },
+  "receiver": {
+    "state": "EVALUATION_ONLY",
+    "public_intake": false,
+    "summary": "A synthetic accountless receiver has passed local cross-runtime tests and substantive lifecycle tests over one isolated remote D1 database. No public receiving endpoint, real contributor intake, operator service or production handling promise is established.",
+    "important_unknowns": [
+      "end-to-end deployed HTTP/operator route",
+      "provider disaster/crash durability",
+      "real transport interruption",
+      "remote admission races",
+      "physical erasure and provider backup/log retention",
+      "affected-person removal route",
+      "production moderation custody and contact"
+    ]
+  },
+  "meaning": {
+    "reading_is_not_replying": true,
+    "receipt_is_not_publication": true,
+    "publication_is_not_project_response": true,
+    "project_response_is_not_project_change": true
+  },
+  "boundary": "This file would describe the capability state published with an edition; it is not a continuous health check, authority grant, promise of response, or invitation to send sensitive information.",
+  "design_note": "If integrated, generate this from the same maintained release state as the human discussion wording rather than hand-maintaining two contradictory claims. This is a project convention, not a proposed web standard."
+}
