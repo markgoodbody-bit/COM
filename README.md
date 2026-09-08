@@ -127,3 +127,23 @@ to check source preservation. This is a packaging repair, not new case evidence.
 HTTPS still fails normal certificate verification. No DNS, CNAME, account,
 licence, enforcement or domain-reset change is included. Roll back content
 with a normal revert, not a domain operation.
+
+## Homepage wording/navigation follow-up — 8 September 2026
+
+Current maintained source: `f8ad742aed00d90a50320acd5f0c81a8fa863ac7`.
+Authority: [FW's bounded copy direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5583036844).
+The preceding routing publication `602b65c5aa07e38c6789d077bfa33fe2b5869a62`
+passed Pages deployment and all 68 outputs matched public HTTP at 09:50:50Z.
+
+This follow-up changes only generated `index.html`: title/masthead now use
+Please Start From Here; Explore names its ten readings and separate example;
+the first AI link says 'AI reading: start here'; the footer distinguishes
+preparation from navigation/naming update. The H1, substantive opening,
+boundaries, all previous destinations and other 67 generated files are preserved.
+This is a wording/navigation improvement, not a reader-effectiveness result.
+
+Current index: 5,283 bytes, SHA-256
+`970aa98765a4a1654db6345d6fe3ba009ec3bfaffc0ae247dc8394c53e7c0018`.
+The earlier index identity above is historical. Explore remains pinned to
+`323a3fa9c96bd67c323bab967607c4855508b531` and tree `1dfd219f6c5156d17cab323393b4a1acea2c34609adb1d6ff5e85a9250f0a80f`.
+No account, DNS, certificate, source term, release or indexing-policy change.
