@@ -1,8 +1,8 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-08 — Europe/London  
-Current basis: COM main `15c096a7`; #108 through FW title/art direction `5592682334`, brand clarification `5592723205`, live-publication authority `5592807329`, reiteration `5592936780` and Codex completion `5592937468`. An overlapping read from 22:35Z through 22:48Z recovered the later reiteration; it is the same completed publication, not a second release. Retain overlap rather than jumping to the latest self-post. Codex's separate non-public teaching prototype remains local `9d69245e`; CC's independent fixture remains pending. Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns take precedence.
+Updated: 2026-09-09 — Europe/London  
+Current basis: COM main `308d3eaf`; Mark's direct request for substantially better presentation, scope receipt `5592995706`, and completed editorial publication `5593127853`. Overlapping #108 read from 22:54Z through 23:09Z found no new external direction. Retain overlap rather than jumping to the latest self-post. Separate non-public teaching prototype remains local `9d69245e`; CC's independent fixture remains pending. Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns take precedence.
 Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
 
 ## Purpose
@@ -27,7 +27,7 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 
 - Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
-- Published edition: **Preview 0.8.1**, `gh-pages` `e0d765b3d203035971b5fa544eb5f5b48cc0f518`, maintained source `3f5212e0a18627482ac972c6610a42a61ee54ee9`. Pages run `34287529345` succeeded at 22:46:35Z. All 113 build/publishing objects match. **No fresh direct-domain root readback for this edition is established here**; Codex's prior safe-open refusal was not bypassed. CC `5591043373` describes earlier Preview 0.8, not this successor. Completion and exact limits: Codex `5592937468`.
+- Published edition: **Preview 0.8.2**, `gh-pages` `ae5883d820bde739391bcf1586635e5a9ccea8d0`, maintained source `9de16502df42eb5c1d7d7df329236972eb86ae1e`. Pages run `34289318428` succeeded at 23:09:34Z. All 113 build/publishing objects match. **No fresh direct-domain root readback for this edition is established here**; Codex's prior safe-open refusal was not bypassed. Older CC/public receipts are not this successor's readback. Completion and exact limits: Codex `5593127853`.
 - Public discussion remains **read-only**.
 - 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446** at 18:54:16.628Z. Codex checked it at 22:14:41Z: zero comments / `has_more false`, approximately 3h20m old, not a next-day read or evidence of rejection. CC reports a planned next-day read; that is not proof a future check will run. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
 - `agentic-qa` 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account. Later 48907/48938 report implemented checks and exercised cases, with other contributors' additions. This is **reported implementation/testing**, not independently verified deployment/outcome or PSFH/TRACE efficacy. Credit the other contributors; do not attribute the whole repair to us.
@@ -40,7 +40,7 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 `SILENCE != FAILURE`  
 `AGREEMENT != VALIDATION`
 
-## PSFH title and human-made artwork — published, bounded readback
+## PSFH editorial presentation — published, bounded readback
 
 `Please Start From Here` is the proper title/name of the work, not merely a small
 instruction meaning step one. The guiding question remains beneath. No numbered
@@ -49,25 +49,36 @@ onboarding, homepage wordplay explanation, logo or marketing machinery is added.
 FW `5592682334` and `5592723205` specify the title and Winslow Homer's actual 1880
 Camp Fire. FW `5592807329`, reiterated by `5592936780`, relays Mark's explicit
 instruction to update the live website without waiting for unavailable CC.
-Codex `5592937468` completes this exact object, not the teaching experiment.
+Codex `5592937468` completed that title/art object as 0.8.1. Mark then directly
+found it too basic and requested substantially better design within the constraints;
+he also explicitly authorised desktop/mobile browser testing. Scope `5592995706`
+and completion `5593127853` identify the distinct editorial successor, not a
+duplicate of the first title/art release or the teaching experiment.
 
-Maintained `3f5212e0` and publishing `e0d765b3` replace the earlier source/publication
-pair below. Met object 11112 / accession 27.181 supplies public-domain provenance;
+Maintained `9de16502` and publishing `ae5883d8` now supersede `3f5212e0` / `e0d765b3`.
+The title/art opening is composed side-by-side on wide screens and stacks on mobile;
+four early direct links precede it. Ruled editorial sections replace rounded cards;
+the explanation, optional questions, books and attribution have distinct layouts.
+All original paragraphs, headings and destinations are preserved by regression.
+Met object 11112 / accession 27.181 supplies public-domain provenance;
 the unaltered 3801x2368 JPEG is 2,350,423 bytes, SHA-256
 `7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1`.
 Visible credit reaches the museum and a small on-page artist/source entry with
 H. Barbara Weinberg's biography link. Provenance is in `art/camp-fire.json`.
-The image is lazy-loaded after the opening choices and boundaries, not added to
-compact machine readings. No project licence or endorsement follows from image use.
+The image is now before the detailed choices, still lazy-loaded and absent from
+compact machine readings. This can load it sooner and makes scrolling to the choices
+longer; early Ways to begin navigation avoids that traversal. No project licence or
+endorsement follows from image use.
 
-Ten generated paths change, two art files are added, 101 remain identical and none
-are removed. Build, 10 Node and 17 Python checks pass; the maintained checkout
-reproduces all 113 reviewed outputs. 320x800 dark-theme readback shows no horizontal
-overflow and readable title/art/credit. First choice y543.88 is about72 pixels later
-than the earlier opening, a cost of title hierarchy. Enlarged text, light-theme
-browser, complete keyboard/accessibility and reader benefit remain unestablished.
-Own local preview stopped. Offline HTML exists, but browser file handoff was
-policy-refused and not worked around. Publication success is not public receipt.
+Ten generated paths change from 0.8.1, 103 remain identical, none added or removed.
+Build, 10 Node and 18 Python checks pass; the maintained checkout reproduces all113
+reviewed outputs. Final 1440x1000 and320x800 dark-theme homepage readbacks show no
+horizontal overflow. Direct navigation y24/y58; detailed choices y771/y1015; the
+mobile jump reaches the first choice. Art credit reaches its source entry. This is
+bounded homepage layout/navigation evidence, not all-route visual, enlarged-text,
+light-theme browser, complete accessibility or reader-benefit verification. Two
+post-anchor screenshots failed; those transitions have DOM evidence only. Own
+preview stopped. No repeat blocked file or custom-domain read was attempted.
 
 ## Earlier human-first publication — retained evidence, not current readback
 
@@ -156,7 +167,7 @@ The pre-boot `RUNNING` comparison is now implemented in CC's `5ba5a286`, before 
 ## Current owner routes
 
 - **Claude Code** — independent pre-build teaching accept/reject fixture under `5592260057`, before reading Codex implementation; remains pending during Mark's reported credit pause. Also owns #4446 conversation/reported next-day read and watchdog runtime `5ba5a286`; test-only PR #212 is available for review/integration. No PR-merge or reader-benefit claim follows from a handoff alone.
-- **Codex** — title/art publication completed as `3f5212e0` -> `e0d765b3`; fresh direct-domain root readback remains unestablished. Do not repeat the same release. Separate teaching prototype is local `9d69245e`, not pushed/published; preserve CC's independent fixture. Bounded Square field work continues. Test-isolation repair remains draft PR #212. Reopen closed watchdog findings only on changed source or new failure evidence.
+- **Codex** — requested editorial successor published as `9de16502` -> `ae5883d8`, completion `5593127853`; fresh direct-domain root readback remains unestablished. Do not repeat it. Separate teaching prototype is local `9d69245e`, not pushed/published; preserve CC's independent fixture. Bounded Square field work continues. Test-isolation repair remains draft PR #212. Reopen closed watchdog findings only on changed source or new failure evidence.
 - **Framework** — title/brand and live-update directions `5592682334`, `5592723205`, `5592807329`, `5592936780` answered by `5592937468`. No repeat publication needed. Assess teaching KEEP/DELETE after local prototype and independent fixture returns under `5592260057`; that experiment remains non-public. Preserve optional scaffolding, differing entry points/pace/depth, intent/evidence boundaries and stronger external owners.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 

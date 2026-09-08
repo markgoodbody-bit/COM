@@ -1,8 +1,8 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR
-Updated: 2026-09-08 — Europe/London
-Basis: COM main `15c096a7`; COM #108 through title/brand directions `5592682334` / `5592723205`, live-update authority `5592807329` / `5592936780`, and Codex completion `5592937468`. Overlapping read from 22:35Z through 22:48Z. Later returns take precedence.
+Updated: 2026-09-09 — Europe/London
+Basis: COM main `308d3eaf`; Mark's direct request for stronger presentation, scope `5592995706`, and editorial publication return `5593127853`. Overlapping #108 read from 22:54Z through 23:09Z. Later returns take precedence.
 Mark remains human originator, witness and consequential release/account authority. Runtime identity is episodic.
 
 ## Campfire before framework
@@ -75,9 +75,18 @@ Do not demand perfect coverage. One bounded entity cannot do everything. Preserv
 
 Read `coordination/ACTIVE_THREAD_POINTER.md`, then only later consequential returns in COM #108. Reacquire exact source/publishing heads before mutation. Follow COMSYNC, receipt and team protocols; do not replay the whole thread or a Square export.
 
-Current public address: `https://pleasestartfromhere.com/`, published Preview 0.8.1 at maintained `3f5212e0` / gh-pages `e0d765b3`. Pages run `34287529345` succeeded; current direct-domain root receipt is not established in this pointer. Codex did not bypass its prior safe-open refusal. It remains a static reading space; reading does not require identity, agreement, adoption or reply. Public discussion remains read-only.
+Current public address: `https://pleasestartfromhere.com/`, published Preview 0.8.2 at maintained `9de16502` / gh-pages `ae5883d8`. Pages run `34289318428` succeeded; current direct-domain root receipt is not established in this pointer. Codex did not bypass its prior safe-open refusal. It remains a static reading space; reading does not require identity, agreement, adoption or reply. Public discussion remains read-only.
 
 Please Start From Here is the proper title/name of the gift, with How can we make a better future? retained as its guiding question. Mark's title/art revision is published: Homer's unaltered Camp Fire, visible museum/public-domain credit and a small artist/source entry. No generated art, marketing machinery, mandatory beginning, licence change or machine payload expansion with imagery. Read Codex `5592937468` for exact identities, source-to-publication parity, mobile placement cost and incomplete delivery/accessibility evidence. Do not publish the same change again.
+
+Mark then directly judged 0.8.1 too basic and asked for substantially more within
+the constraints. The editorial successor is completed in `5593127853`: composed
+title/art opening, early direct navigation, distinct ruled reading sections and
+shared serif/sans typography. Original paragraphs, headings, sources and art bytes
+remain intact. Desktop/mobile homepage checks passed within the stated scope;
+earlier image placement costs scrolling space, with a direct jump available. This
+is visual/navigation work, not new theory or evidence of usefulness. Earlier
+placement claims describe 0.8.1 and must not be repeated as current.
 
 The separate teaching direction remains deliberately small and NON-PUBLIC. Reviews found that the existing ten Explore nodes already carry authored plain-English `short` summaries and other useful routes. Codex completed local opt-in prototype `9d69245e`; it was not pushed or included in the title/art publication. Claude Code must build the independent acceptance/rejection fixture before reading that implementation or its tests. No authored `indications`, Field Card schema, situation service, tracking, ranking, receiver activation or public publication is authorized by that experiment. See #108 comment `5592260057` and teaching return `5592661065`.
 
