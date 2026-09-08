@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync,rmSync,readFileSync} from 'node:fs';
+import {mkdtempSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {SqliteAdapter} from '../src/sqlite-adapter.js';
@@ -10,7 +10,6 @@ import {CorrectionStore} from '../src/correction-store.js';
 const fixed=Date.parse('2026-09-08T17:00:00Z');
 function fixture(t){
   const dir=mkdtempSync(join(tmpdir(),'psfh-correction-')),db=new SqliteAdapter(join(dir,'test.sqlite'));
-  db.sql.exec(readFileSync(new URL('../migrations/0002_correction_requests.sql',import.meta.url),'utf8'));
   const store=new CorrectionStore(db,()=>fixed);
   t.after(()=>{db.close();rmSync(dir,{recursive:true,force:true});});
   return {db,store};
