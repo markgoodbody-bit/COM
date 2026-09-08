@@ -8,6 +8,10 @@ import unittest
 HERE = Path(__file__).resolve().parent
 
 
+def normalized(value: str) -> str:
+    return ' '.join(value.split())
+
+
 class TextAndLinks(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -40,6 +44,7 @@ class FirstContactCandidateTests(unittest.TestCase):
         cls.parser = TextAndLinks()
         cls.parser.feed(cls.html)
         cls.stripped = '\n'.join(cls.parser.text)
+        cls.stripped_flat = normalized(cls.stripped)
 
     def test_five_optional_movements_have_self_contained_takeaways(self):
         self.assertEqual([m['id'] for m in self.machine['moves']],
@@ -47,7 +52,7 @@ class FirstContactCandidateTests(unittest.TestCase):
         for move in self.machine['moves']:
             takeaway = move.get('takeaway_if_you_stop_here', '')
             self.assertGreaterEqual(len(takeaway), 80, move['id'])
-            self.assertIn(takeaway, self.stripped, move['id'])
+            self.assertIn(normalized(takeaway), self.stripped_flat, move['id'])
 
     def test_critical_routes_survive_both_href_and_visible_text(self):
         for move in self.machine['moves']:
@@ -59,11 +64,11 @@ class FirstContactCandidateTests(unittest.TestCase):
                 self.assertIn(url, self.stripped, (move['id'], key))
 
     def test_stripped_text_keeps_question_value_and_exit(self):
-        self.assertIn(self.machine['question'], self.stripped)
-        self.assertIn(self.machine['invitation'], self.stripped)
-        self.assertIn(self.machine['value_choice'], self.stripped)
-        self.assertIn('You may disagree, use another method, or leave.', self.stripped)
-        self.assertIn('accountless replying is being built', self.stripped)
+        self.assertIn(normalized(self.machine['question']), self.stripped_flat)
+        self.assertIn(normalized(self.machine['invitation']), self.stripped_flat)
+        self.assertIn(normalized(self.machine['value_choice']), self.stripped_flat)
+        self.assertIn('You may disagree, use another method, or leave.', self.stripped_flat)
+        self.assertIn('accountless replying is being built', self.stripped_flat)
 
     def test_no_script_dependency_and_alternatives_are_advertised(self):
         self.assertEqual(self.parser.scripts, 0)
