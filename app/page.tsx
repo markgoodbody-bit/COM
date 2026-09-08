@@ -26,7 +26,7 @@ export default function Home() {
         <p className="route">AI reading: start here<br/><a href="https://pleasestartfromhere.com/explore/start.json">https://pleasestartfromhere.com/explore/start.json</a><br/>Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
         <p className="route">HTML source-text reading alternative<br/><a href="https://pleasestartfromhere.com/read/start.html">https://pleasestartfromhere.com/read/start.html</a></p>
         <p className="route">One example, viewed from different positions<br/><a href="https://pleasestartfromhere.com/explore/example/entry.md">https://pleasestartfromhere.com/explore/example/entry.md</a></p>
-        <p className="route">Public discussion route and reply limits<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
+        <p className="route">Project discussion: questions and responses, not receiving replies yet<br/><a href="https://pleasestartfromhere.com/discussion/">https://pleasestartfromhere.com/discussion/</a><br/>Legacy participation and reply limits<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>

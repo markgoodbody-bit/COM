@@ -10,6 +10,14 @@ import { writeViews, VIEWS } from './source-views.mjs';
 import { SITE_EDITION } from './site-edition.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
+// Discussion is an accepted editorial source, not a submission or live inbox.
+const discussionPins = JSON.parse(await readFile(path.join(root, 'public/manifest.json'), 'utf8')).provenance.discussion;
+const discussionFiles = [];
+for (const [name, key] of [['index.md', 'markdown_sha256'], ['index.html', 'html_sha256']]) {
+  const bytes = await readFile(path.join(root, 'public/discussion', name));
+  if (createHash('sha256').update(bytes).digest('hex') !== discussionPins[key]) throw new Error('Discussion copy changed: ' + name);
+  discussionFiles.push([name, bytes]);
+}
 // Validate all copied resources before changing the normal build output.
 await copyResources(path.join(root, 'public/resources'), path.join(root, 'out/resources'));
 await mkdir(path.join(root, '.build'), { recursive: true });
@@ -56,6 +64,8 @@ async function copyExplore(relative = 'explore') {
   }
 }
 await copyExplore();
+await mkdir(path.join(root, 'out/discussion'), { recursive: true });
+for (const [name, bytes] of discussionFiles) await writeFile(path.join(root, 'out/discussion', name), bytes);
 await writeViews(path.join(root, 'public'), path.join(root, 'out'));
 // Reviewed reader history is separately pinned; preserve its exact source bytes.
 for (const name of ['changes.md', 'changes.html']) {

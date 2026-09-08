@@ -45,7 +45,8 @@ class SourceViewTests(unittest.TestCase):
         manifest = json.loads((ROOT / 'out/manifest.json').read_bytes())
         views = manifest['provenance']['html_source_text']
         self.assertEqual(len(views), 4)
-        self.assertEqual(manifest['site_edition'], '0.7.1')
+        edition = subprocess.check_output(['node', '--input-type=module', '-e', "import {SITE_EDITION} from './scripts/site-edition.mjs';process.stdout.write(SITE_EDITION)"], cwd=ROOT).decode()
+        self.assertEqual(manifest['site_edition'], edition)
         for view in views:
             raw = (ROOT / 'public' / view['source']).read_bytes()
             page = (ROOT / 'out' / view['output']).read_text(encoding='utf-8')
@@ -54,7 +55,7 @@ class SourceViewTests(unittest.TestCase):
             self.assertEqual(''.join(parser.payload).encode(), raw)
             self.assertEqual(hashlib.sha256(raw).hexdigest(), view['sha256'])
             self.assertIn(view['sha256'], page)
-            self.assertIn('Site Preview 0.7.1', page)
+            self.assertIn('Site Preview ' + edition, page)
             self.assertIn(ORIGIN + '/' + view['source'], parser.links)
             self.assertFalse(set(parser.tags) & {'script', 'iframe', 'form', 'object', 'embed'})
             self.assertEqual(parser.ids.count('source-text'), 1)

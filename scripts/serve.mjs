@@ -4,6 +4,9 @@ import { createHash } from 'node:crypto';
 import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '../out');
 const routes = new Map([['/', ['index.html','text/html; charset=utf-8']], ['/index.html', ['index.html','text/html; charset=utf-8']], ['/style.css', ['style.css','text/css; charset=utf-8']]]);
+routes.set('/discussion/', ['discussion/index.html', 'text/html; charset=utf-8']);
+routes.set('/discussion/index.html', ['discussion/index.html', 'text/html; charset=utf-8']);
+routes.set('/discussion/index.md', ['discussion/index.md', 'text/markdown; charset=utf-8']);
 for (const [name, type] of [['llms.txt', 'text/plain'], ['seed.txt', 'text/plain'], ['manifest.json', 'application/json'], ['robots.txt', 'text/plain'], ['sitemap.xml', 'application/xml']]) {
   routes.set('/' + name, [name, type + '; charset=utf-8']);
 }

@@ -14,6 +14,7 @@ A public issue link is not evidence of timely reply or practical remedy. This st
 
 ## Routes
 
-- [Project discussion](https://github.com/markgoodbody-bit/COM/issues/108)
+- [Project discussion: editorial questions and responses](https://pleasestartfromhere.com/discussion/)
+- [Legacy GitHub discussion and participation](https://github.com/markgoodbody-bit/COM/issues/108)
 - [Sources and alternatives](sources.md)
 - [Return or stop](index.md)

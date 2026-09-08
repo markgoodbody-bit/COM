@@ -14,6 +14,8 @@
     "human_reading": "/",
     "change_history": "/changes.html",
     "change_history_text": "/changes.md",
+    "discussion": "/discussion/",
+    "discussion_text": "/discussion/index.md",
     "resources": "/resources/",
     "resources_text": "/resources/index.md",
     "resource_inventory": "/resources/inventory.json",
@@ -43,12 +45,20 @@
     }
   ],
   "provenance": {
+    "discussion": {
+      "source_commit": "9ceae9d27fd2b64550148bed622955b13a8740a6",
+      "source_path": "door-prototypes/perspective-walk-20260908/discussion/DISCUSSION.md",
+      "generator_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
+      "markdown_sha256": "7117f1acf2c6cce494da2413c82fe8185f99dcb21342e4053ceb545efa222c18",
+      "html_sha256": "98310708d53cf919392854a3e71cccac349c9562cdc95c6a0990f69732815405",
+      "status": "Editorial reading seed only; no submissions received."
+    },
     "build_direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335",
     "earlier_llms_proposal": "https://github.com/markgoodbody-bit/COM/pull/113",
     "human_preview_source_commit": "7f20b46d64cbacb90bd1fcbf19af89e071865a64",
     "published_source": "https://github.com/markgoodbody-bit/COM/tree/gh-pages",
     "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness.",
-    "explore_source_commit": "453326cd663859cc88bb77d535bb072c72f3a713",
+    "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_source_commit": "3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e",
     "change_history_source_path": "door-prototypes/perspective-walk-20260908/CHANGES.md",
     "change_history_sha256": "7b68b38df0121b2627347df9cf1f5d580ba892508ab1a751ef8b1fe1aefdf906",

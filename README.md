@@ -1,5 +1,32 @@
 # Maintained Please Start From Here source
 
+## Preview 0.7.2: discussion reading, not reply access
+
+FW5586836238 supplies the complete editorial source9ceae9d27fd2b64550148bed622955b13a8740a6.
+No source wording changed. New /discussion/index.md is8008bytes SHA256
+7117f1acf2c6cce494da2413c82fe8185f99dcb21342e4053ceb545efa222c18;
+HTML9675bytes SHA25698310708d53cf919392854a3e71cccac349c9562cdc95c6a0990f69732815405.
+Existing COM prose renderer extended with explicit stable heading IDs and return
+paths at1b41e0c9fec685dcd462c925c651ec6bd4debd3a. Seven section anchors;
+all41 source blocks and13 link occurrences preserved. Editorial summaries,
+constructed possibility and unavailable receiving are explicit, not live comments.
+
+The existing homepage route gains one optional local discussion link. Challenge
+HTML/MD defaults to local reading, with legacy GitHub participation preserved;
+its map inventory is regenerated. Manifest pins both outputs and their sources;
+normal build rejects changed/missing discussion copies. Sitemap adds the page.
+One maintained site-edition value moves to0.7.2; the four source-text wrappers
+change only their site edition, never their embedded source. All raw originals,
+snapshots, CSS, root orientation, seed, domain/crawler settings and previous
+history are unchanged. Initial comparison:111 files,2 new,10 changed,99 unchanged.
+
+57 COM generator tests,2 maintained discussion tests,4 source-view tests and
+visible-route check passed. Text/link/anchor checks are not browser usability
+or receiving-service tests. Local preview adds only explicit discussion GET/HEAD
+routes; no POST. No form, storage, backend, login or new dependencies. CC owns
+the isolated receiver prototype. Public delivery and existing-history record
+follow; no accountless reply-completion claim.
+
 ## Delivered 0.7.1 and reader history follow-through
 
 Publication acff173ed906414c28ecc82830bec0ec0e6c3385 / Pages34238551769
