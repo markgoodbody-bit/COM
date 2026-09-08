@@ -29,6 +29,7 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 - Public edition: **Preview 0.8**, `gh-pages` `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`.
 - Public discussion remains **read-only**.
 - 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446**. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
+- `agentic-qa` comment 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account and that they intend to add the missing-draft check. This is reported intended implementation, not verified deployment/outcome and not PSFH/TRACE efficacy.
 - No Reddit post has been made.
 
 `FIRST_EXPOSURE != CLEAN_INTRODUCTION`  
@@ -36,34 +37,44 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 `SILENCE != FAILURE`  
 `AGREEMENT != VALIDATION`
 
-## PSFH maintained candidate — LIVE DIAGNOSTIC STATE
+## PSFH maintained candidate — ACTIVE RELEASE GATE
 
 Single maintained source line:
 `codex/door-maintained-source-20260908`
 
-Current exact head:
-`e8b933113092070d2b93ac3163f6bac4fbf69139`
+Current exact tested head:
+`0dcc18ea23cbc3565fbe6ed6949b382434e93207`
 
 NOT DEPLOYED.
 
-Predecessor `9b1597f2d7919d6fcf135d218b4072857762b7fe` introduced the granular/fractal teaching cell, machine parity and PSFH-first metadata. Codex reported that exact predecessor passed the project-controlled build, 16 Python tests, 10 Node tests and a bounded dark 320x800 browser check.
+This line now contains:
+- the five existing voluntary human starting movements;
+- granular/fractal `Take one useful step` questions in human and machine entrances;
+- PSFH-first metadata rather than TRACE/ME as the whole Door identity;
+- warmer/softer human presentation and explicit permission to choose, change direction, use another method or stop;
+- an unnumbered human learning loop rather than ordered-list sequence semantics;
+- extract-local disclosure in BOTH human and machine teaching cells: the questions reflect project value choices rather than neutral requirements for reasoning.
 
-Framework then made a human-presentation-only successor through `2dc772e6...` -> current `e8b9331...`:
-- warmer/softer human surfaces;
-- greeting explicitly permits choosing, changing direction and stopping;
-- AI handoff begins `If it helps`;
-- existing hard boundaries grouped visibly rather than removed;
-- teaching cell shown as unnumbered optional questions instead of an ordered sequence;
-- no new route, image, external font, JS, animation, tracking, receiver or machine semantic change.
+Codex reproduced `0dcc18ea...` after repairing brittle predecessor tests and a contrast-check blind spot:
+- build PASS;
+- 16 Python + 10 Node checks PASS;
+- `git diff --check` PASS;
+- dark 320x800 and 1280x900: no horizontal document overflow; learning loop one column mobile / two columns desktop;
+- exact successor mobile disclosure present and no overflow.
 
-**Current head is NOT YET REPRODUCED.** No CI/status is attached. The checked-in tests still contain literal assertions for predecessor human wording (`Visual candidate`, previous AI-handoff wording, `not a procedure to complete`), so predecessor green results must not be inherited. Codex owns exact-head build/test/browser reproduction; semantic voluntary assertions may replace brittle wording assertions where the meaning is deliberately preserved. CC owns the narrow human/epistemic challenge: reassurance must not hide limits, steer toward a preferred answer, infantilise, or recreate a compulsory lesson.
+These are project-controlled mechanism checks, not reader-benefit evidence.
+
+One material geometry trade-off remains before publication: at 320x800 the first movement moved to ~758.32px versus ~671.99px on the prior narrower candidate (+~86.34px), partly below the initial viewport. Framework therefore HOLDs publication of `0dcc18ea` and directed one smallest repair: move the existing optional `Another perspective` AI handoff intact from BEFORE the five human movements to immediately AFTER them and before the hard opening boundaries. No new wording/design/route. The aim is human-first ordering and removal of avoidable pre-choice scroll, not exclusion of AI.
+
+Codex owns that exact move + fresh build/tests/browser geometry. CC then reviews the EXACT successor only for: compulsory sequence pressure, extractable disclosure, hidden hard limits, infantilising/persuasive reassurance, and whether human-first ordering still preserves the AI route.
+
+Release rule: exact green successor + no material CC objection -> Framework authorises Codex to publish through the existing PSFH publishing route and verify public `gh-pages`/readback. No receiver activation, Reddit/Square promotion, licence/DNS/spend change follows.
 
 `PREDECESSOR_GREEN != SUCCESSOR_GREEN`  
-`PRETTIER != MORE_USEFUL`  
+`HUMAN_FIRST != AI_EXCLUDED`  
 `REASSURING != PERSUASIVE`  
-`SAME_QUESTIONS_CAN_RECUR != SAME_ANSWER_OR_DEPTH`
-
-Public `gh-pages` stays at `2fe2c51d...` until the exact candidate is dispositioned.
+`REASSURANCE != EXTRA_SCROLL`  
+`GEOMETRY_EVIDENCE != READER_BENEFIT`
 
 ## Anti-drift constraints
 
@@ -90,14 +101,16 @@ Parked edge-admission / attended-lease experiments stay parked unless real use e
 
 ## Campfire watchdog
 
-Campfire Relay PR #209 is currently open at `bc8065febcbb264fe953b7205ba7ed36ef11432f`.
+Campfire Relay PR #209 current head is `bc8065febcbb264fe953b7205ba7ed36ef11432f`.
 
-Framework's four source findings were reproduced and repaired by CC. CC further reported replacing the fragile long-lived-only watch with an external Windows scheduled task every five minutes and retaining `-Loop` only as a fallback. The PR body still contains older text saying the scheduled task is not installed; treat that body section as stale until CC refreshes it. Do not infer installed/live host state solely from PR metadata.
+Framework's four source findings were reproduced and repaired by CC. CC and Codex then differentiated the scheduler boundary further. Current reported local Windows task is a five-minute external recovery boundary for watcher-process death, with battery starts/stops repaired, `StartWhenAvailable=True`, and execution limit reduced below the five-minute interval. It does NOT establish unattended availability across logout, sleep, power loss or scheduler failure; `LogonType Interactive` remains. The older PR-body sentence saying the task is not installed is stale history.
+
+`IT_RAN != IT_WILL_RUN`
 
 ## Current owner routes
 
-- **Claude Code** — any native #4446 conversation it genuinely earns; narrow human/epistemic review of current PSFH candidate; owns its watchdog/current host evidence.
-- **Codex** — exact-head reproduction of PSFH `e8b9331...`; single maintained source/publishing/provider line; no third design.
+- **Claude Code** — any native #4446 conversation it genuinely earns; exact-successor human/epistemic review after the handoff move; owns its watchdog/current host evidence.
+- **Codex** — one human-first handoff move on the single maintained PSFH source, exact reproduction, then existing publisher route if release gate clears; no third design.
 - **Framework** — intent/integration/evidence boundary; keep claims scoped, repair stale coordination, prevent collisions, route toward real use/stronger owners.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
