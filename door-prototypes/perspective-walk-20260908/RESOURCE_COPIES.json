@@ -1,0 +1,147 @@
+{
+  "format": "psfh-resource-copy-input/0.1",
+  "edition": "0.1",
+  "prepared": "2026-09-08",
+  "status": "BUILD INPUT / NOT A PUBLIC DELIVERY RECEIPT",
+  "purpose": "Publish the current first-party reading resources as actual same-domain files, not redirects or runtime GitHub fetches.",
+  "authority_basis": "Mark explicitly requested first-party resource copies on pleasestartfromhere.com in this conversation. No downstream licence, training right, private-data publication or new spend is granted by this inventory.",
+  "source_observation": "Current main refs, complete non-truncated repository trees and README notices were read through the GitHub connector on 8 September 2026. Byte bodies and dependencies must be verified by the maintained importer before publication.",
+  "projects": [
+    {
+      "id": "trace",
+      "repository": "markgoodbody-bit/TRACE",
+      "commit": "46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b",
+      "status_at_source": "v0.3.0 specification RC1 / NOT RELEASED / NOT CANON / NOT VALIDATED / NO EFFICACY RESULT",
+      "baseline_distinction": "v0.2.7 remains released formal baseline; not substituted by this copy",
+      "notice_path": "README.md",
+      "current_prefix": "/resources/trace/",
+      "snapshot_prefix": "/resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/",
+      "files": [
+        {
+          "path": "README.md",
+          "git_blob_sha1": "0df1a46a33eb63fa47a3cdc4a3b145115f2ccfc1",
+          "bytes": 6563,
+          "media_type": "text/markdown; charset=utf-8"
+        },
+        {
+          "path": "TRACE-SPINE.md",
+          "git_blob_sha1": "488989cef87e47adc6df8407382717ebf58e10a6",
+          "bytes": 25795,
+          "media_type": "text/markdown; charset=utf-8",
+          "sha256_declared_by_source_readme": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999"
+        },
+        {
+          "path": "TRACE.md",
+          "git_blob_sha1": "3f7011abb2f453ef250990e6e30cbd787db683c7",
+          "bytes": 180511,
+          "media_type": "text/markdown; charset=utf-8",
+          "sha256_declared_by_source_readme": "1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f"
+        }
+      ]
+    },
+    {
+      "id": "mechanical-ethics",
+      "repository": "markgoodbody-bit/mechanical-ethics",
+      "commit": "44f7efb59806242fd26c572cbfbaaeaefaea2058",
+      "status_at_source": "v0.7.0 working candidate v0.2.4 / NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED",
+      "baseline_distinction": "v0.6.3 remains preservation baseline; not substituted by this copy",
+      "notice_path": "README.md",
+      "current_prefix": "/resources/mechanical-ethics/",
+      "snapshot_prefix": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/",
+      "files": [
+        {
+          "path": "README.md",
+          "git_blob_sha1": "3bdc070a79bef1835250b81f7fb1f9c764382555",
+          "bytes": 3120,
+          "media_type": "text/markdown; charset=utf-8"
+        },
+        {
+          "path": "MECHANICAL_ETHICS.md",
+          "git_blob_sha1": "cc6f5195b3d71d29f6bfbc8062ef9623f6f2dcb2",
+          "bytes": 87555,
+          "media_type": "text/markdown; charset=utf-8",
+          "sha256_declared_by_source_readme": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
+        },
+        {
+          "path": "MECHANICAL_ETHICS.pdf",
+          "git_blob_sha1": "874f5311a49e962d8b50005f74ed11ed41f27700",
+          "bytes": 451736,
+          "media_type": "application/pdf",
+          "sha256_declared_by_source_readme": "18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56"
+        },
+        {
+          "path": "figures/figure-1-file-and-life.png",
+          "git_blob_sha1": "828de31780ef8765b2a0136ac3a327083d0c751a",
+          "bytes": 81671,
+          "media_type": "image/png"
+        },
+        {
+          "path": "figures/figure-1-file-and-life.svg",
+          "git_blob_sha1": "6234e6a0c736156e084edb98a92680a6f98e2478",
+          "bytes": 3268,
+          "media_type": "image/svg+xml"
+        },
+        {
+          "path": "figures/figure-2-correction-window.png",
+          "git_blob_sha1": "4f4b9596def6f67e51e33b5b8b19e6197debdcd9",
+          "bytes": 58039,
+          "media_type": "image/png"
+        },
+        {
+          "path": "figures/figure-2-correction-window.svg",
+          "git_blob_sha1": "8e1b533877995b2ec4859b4a92fd64ad3bba4e37",
+          "bytes": 2887,
+          "media_type": "image/svg+xml"
+        },
+        {
+          "path": "figures/figure-3-two-flats-one-wall.png",
+          "git_blob_sha1": "7e71dbb9b2fbe3e3df1a4421160a42a1aaf1a4f7",
+          "bytes": 69949,
+          "media_type": "image/png"
+        },
+        {
+          "path": "figures/figure-3-two-flats-one-wall.svg",
+          "git_blob_sha1": "f36b0b408cd78a7dde0ccfc23437d3c11b7895d1",
+          "bytes": 3756,
+          "media_type": "image/svg+xml"
+        },
+        {
+          "path": "figures/figure-4-machine-speed-human-correction.png",
+          "git_blob_sha1": "eab574b5c8f26544eaf0d6a1a754d9df0037d9ab",
+          "bytes": 65773,
+          "media_type": "image/png"
+        },
+        {
+          "path": "figures/figure-4-machine-speed-human-correction.svg",
+          "git_blob_sha1": "305a86f99420984c2752cb696ab2d55cdac34ca5",
+          "bytes": 3979,
+          "media_type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "byte_totals": {
+    "source_files": 1044602,
+    "source_file_count": 14,
+    "current_plus_one_snapshot": 2089204,
+    "scope": "Raw selected bodies only; excludes HTML renderings, catalogue, existing site, future editions and transfer overhead."
+  },
+  "exclude": [
+    "private or conversation-only material",
+    "COM operational history, credentials and full chat/Square exports",
+    "build scripts and .github workflows",
+    "third-party FPF corpus and third-party media/transcripts",
+    "archived candidates/baselines not explicitly selected in this edition"
+  ],
+  "delivery_rules": [
+    "Copy the selected files byte-for-byte to each prefix, preserving directories, notices and case-sensitive filenames.",
+    "Serve current_prefix files directly, without redirecting the client to GitHub. Snapshot prefixes remain fixed after publication.",
+    "Fetch on the maintained build side using normal permitted authenticated/public source routes, not in the arriving browser or agent.",
+    "Fail closed on missing files, source commit mismatch, unexpected Git blob/size, declared SHA256 mismatch, Git LFS pointer instead of data, or unexpected active content. Never substitute an error page.",
+    "Retain the last good publication on an acquisition or verification failure; do not relabel it latest.",
+    "Inspect document dependencies and fragment links. List still-external destinations explicitly as provenance, history, third-party work or participation; do not silently claim all links are local.",
+    "Default site-owned navigation to local readings; preserve original GitHub source locators separately. Do not globally rewrite preserved raw source bytes or silently change the Explore source contract.",
+    "Expose a small resource catalogue with source revision, status, original source URL, local file addresses, bytes and verified SHA256 for each copy.",
+    "Update CHANGES.md only with actually reached build/publication/delivery status. No timeless freshness or provider-admission claim."
+  ]
+}
