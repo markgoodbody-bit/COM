@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-08 — Europe/London  
-Current basis: COM main `4b613f45`; #108 through Framework comment `5591271545` at 20:15:12Z; publication/readback basis remains Codex `5591010858` plus CC `5591043373`. Campfire PR #209 separately reacquired through `bd7192a7` at 19:42:07Z. Later returns still take precedence.
+Current basis: COM main `7ead1e6d`; #108 through CC's corrected handoff `5592049927` at 21:22:34Z, following Codex `5592007646`, CC repair return `5591939916` and superseded handoff `5591982220`. Publication/readback basis remains Codex `5591010858` plus CC `5591043373`; Campfire PR #209 is now `d784d90d`. Later returns still take precedence.
 Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
 
 ## Purpose
@@ -29,8 +29,9 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 - Public address: `https://pleasestartfromhere.com/`.
 - Public edition: **Preview 0.8**, `gh-pages` `0cff0265fb861e06689fe0700145b610cd201e1d`. Pages run `34271672584` succeeded; public content/route readback is reported by CC `5591043373`, not a fresh direct-domain check by Codex or the current Framework runtime.
 - Public discussion remains **read-only**.
-- 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446**. Codex `5591086899` checked it at 19:57:35Z and reported zero comments / `has_more false`. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies. No later direct Square state is claimed here.
-- `agentic-qa` comment 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account and that they intend to add the missing-draft check. This remains reported intended implementation, not verified deployment/outcome and not PSFH/TRACE efficacy.
+- 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446** at 18:54:16.628Z. Codex `5592007646` checked it at 21:17:59Z: zero comments / `has_more false`, approximately 2h24m old, not the seven hours in CC's handoff. CC reports a planned next-day read; that is not proof a future check will run. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
+- `agentic-qa` 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account. Later 48907/48938 report implemented checks and exercised cases, with other contributors' additions. This is **reported implementation/testing**, not independently verified deployment/outcome or PSFH/TRACE efficacy. Credit the other contributors; do not attribute the whole repair to us.
+- Codex's separate reply **48971** asks which dated commitment supports a claimed breach while preserving the adverse 41.758-hour interval. Transport, automatic public-identity witness and direct exact-body readback are recorded in `5592007646`; no response to that question was observed at 21:22:37Z. Clearledger **48970**, posted before our reply, already reports a shipped crossing-declaration distinction. That is their work, not an effect of our later comment; the declaration's basis remains the separate question.
 - No Reddit post has been made.
 
 `FIRST_EXPOSURE != CLEAN_INTRODUCTION`  
@@ -65,11 +66,13 @@ FW `5591229999` identified a possible field-guide/retrieval function after Mark-
 
 PSFH already has a source shelf and a network of questions. Existing node objects already carry nearly every proposed field-card function through `short`, `question`, `next`, `challenge`, `sources`, `source_pointers`, `routes.example`, `status` and `boundary`. **Do not create a new Field Card object/schema or another flat document library.**
 
-The smallest live candidate is optional plain-language `indications` / `when_this_might_help` attached only to selected existing nodes, plus at most one derived situation-to-node index if that materially improves retrieval. The human form may say "This might help when..."; the machine surface should carry the same cue. No ranking score, diagnosis, automatic halt, mandatory traversal or coverage quota.
+The bounded inspections have returned. Codex `5591598574` found that the existing `questions.json`/`.txt` already supplies the derived index; a new situation-index resource is unnecessary. After CC's attack `5591595214`, Codex `5591716829` proposed the smaller first option: expose selected existing `short` summaries beside the questions before authoring a new `indications` field. This is a proposal awaiting FW's integration disposition, **not an implemented feature or an accepted build direction**.
 
-Manual cue-to-node retrieval at `5591271545` was clean for correction/residue, late appeal/hardening, capability-versus-authority, non-detection/aperture and wisdom/context-fit. It was partial for high-confidence score treated as fact/authority and for consequence-relative stopping when viewpoints accumulate. Treat those as possible retrieval gaps, not automatic content gaps.
+FW's manual cue-to-node retrieval at `5591271545` was reported clean for correction/residue, late appeal/hardening, capability-versus-authority, non-detection/aperture and wisdom/context-fit, and partial for high-confidence score treated as fact/authority and consequence-relative stopping when viewpoints accumulate. Those are possible retrieval gaps, not automatic content gaps or measured reader benefit. Codex has not seen raw Qwen/Dola transcripts; proposed cues are not verified quotations or independent cold evidence.
 
-Codex has been asked for a **shape-or-NULL inspection only**: can one derived situation index come from existing nodes plus optional indications without a new schema/page tree? CC has been asked to attack whether an indication becomes diagnosis or recommendation by implication. `RECEIPT_GATE: NO`; no return is present after `5591271545` at this basis. Do not implement the larger idea while those bounded attacks are outstanding.
+Codex's shape-or-NULL assignment and CC's attack are complete; do not request them again as missing work. Preserve their disagreement: node-description wording may reduce an implied diagnosis but does not prove the risk disappears; one voluntary link is not inherently a diagnosis, and forcing a second irrelevant result is not a safeguard. Keep zero/one/many possible matches, optional navigation and the full index reachable. Missing authored cues are not a coverage map. No ranking, automatic halt, mandatory traversal or coverage quota.
+
+If FW selects an index change, derive all accepted representations from the existing source and state the additive index-contract change. Do not patch generated copies independently or add another page tree. Existing questions/search are the baseline. No comparative retrieval benefit is established; no new build/publication followed these reviews.
 
 The earlier example boundary still applies. Codex `5591086899` notes that a time-evolving extension of a frozen fictional example must label every added event/condition as stipulated and include adverse/null branches; the existing reported site incident is stronger for demonstrating revision from evidence but does not establish comparative TRACE/ME advantage or measured benefit.
 
@@ -95,7 +98,7 @@ Keep:
 
 ## Receiver
 
-PR #116 remains draft/open at `a52f65b3903a27f47f6f31b2cd64ee5d38be8a00`, optional evaluation infrastructure / NOT PUBLIC INTAKE. Its current body records repaired local/D1 lifecycle evidence and preserves `LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`; public non-loopback remains hard-refused.
+PR #116 remains draft/open and **unmerged** at `a52f65b3903a27f47f6f31b2cd64ee5d38be8a00`, verified at 21:18Z. A repair integrated on its draft branch is not a merged PR or a public receiver. It remains optional evaluation infrastructure / NOT PUBLIC INTAKE. Its body records repaired local/D1 lifecycle evidence and preserves `LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`; public non-loopback remains hard-refused.
 
 Before real on-domain receiving: sustainable operator custody/burden, retention/log/backup reality and quiet cleanup, abuse/failure behaviour, deployed browser/accessibility, honest handling/contact notice, private-capability UX and explicit simplify/kill criteria remain unresolved.
 
@@ -103,20 +106,24 @@ Parked edge-admission / attended-lease experiments stay parked unless real use e
 
 ## Campfire watchdog
 
-Campfire Relay PR #209 current reacquired head is `bd7192a7cc7d53b89949e2c0dcc2e8de5fd0bae2` (19:42:07Z), superseding the prior pointer's `bc8065fe...` coordinate.
+Campfire Relay PR #209 remains OPEN at `d784d90d39f6f67b1c21a8dc98ec683377f95ca4`, superseding `bd7192a7` and `aa2f66e4`. Codex `5592007646` inspected the exact repair diff and ran that source's default registrar in READ-ONLY mode against the installed task: exit 0. The named source/default mismatch finding is closed; the PR is not merged or promoted.
 
-Framework's four source findings were reproduced and repaired by CC. CC and Codex then differentiated the scheduler boundary further. Current reported local Windows task is a five-minute external recovery boundary for watcher-process death, with battery starts/stops repaired, `StartWhenAvailable=True`, and execution limit reduced below the five-minute interval. It does NOT establish unattended availability across logout, sleep, power loss or scheduler failure; `LogonType Interactive` remains.
+The installed task and committed default now use two-minute polling / one-minute execution limit, with the existing 300-second stale threshold. Nominal threshold-plus-poll delay is about 420 seconds, not half of 600; it is not an end-to-end recovery guarantee. Battery conditions and `StartWhenAvailable` were checked. Availability across logout, sleep, power loss or scheduler failure is not established; `LogonType Interactive` remains.
 
-The new PR head puts the scheduled boundary into version control: `Register-WatchTask.ps1` verifies the expected conditions by default and can apply/repair them, while `test_taskcond.ps1` checks both a correct task and a deliberately broken defaults-like task and asserts that the break actually landed before treating failure as discrimination. This is reproducibility/negative-case evidence, not proof of unattended availability or future recovery.
+The unsafe negative test on the LIVE watcher has been replaced: per-run disposable probe, no force-overwrite, cleanup gated on creation, intended cadence, deliberately broken settings. The live task is only read. Unsupported intervals below two minutes are refused. CC reports the negative-case run; Codex did not execute that task-creating test. Do not revive the old live-task fault injection or repeatedly recheck these closed findings without changed source or new failure evidence.
+
+Incident correction: Windows recorded a host reboot at 20:33-20:34Z; the normal Square launcher under Explorer started the supervisor at 20:39:34Z. This is not an unexplained paired service crash. It also does not erase the post-boot delay: the 20:37 watcher pass ran on an already live host and saw a status younger than its threshold. The initiating human/automation gesture remains unidentified. See Codex `5591684437`, CC `5591939916`, and the qualification in `5592007646`.
+
+**New, still open:** CC `5592049927` accepts that correction and identifies the pre-boot-status gap. Comparing status time with host boot time is a proposed mitigation, not an implemented repair or a general liveness proof. CC is not building it tonight. Codex is inspecting a bounded draft-only repair; no live installation, task retune or service restart is included.
 
 `IT_RAN != IT_WILL_RUN`  
 `A_TEST_THAT_RAN != A_TEST_THAT_TESTED_ANYTHING`
 
 ## Current owner routes
 
-- **Claude Code** — any native #4446 conversation it genuinely earns; completed public readback/review; attack the smaller indication proposal; owns its watchdog/current host evidence.
-- **Codex** — preserve exact maintained/published source relationship and readback attribution; inspect situation-index shape-or-NULL only; no repeat handoff repair, duplicate publication or third design.
-- **Framework** — intent/integration/evidence boundary; keep claims scoped, repair stale coordination, prevent collisions, use real reader language, and route toward real use/stronger owners.
+- **Claude Code** — #4446 conversation and its reported next-day read; smaller-indication attack and named watchdog source repairs returned. Corrected handoff `5592049927` supersedes the three erroneous claims in `5591982220`. No live-host, PR-merge or reader-benefit claim should be inferred from a handoff alone.
+- **Codex** — maintained/published source continuity and bounded field work; shape-or-NULL review complete, summary-first option returned; bounded draft inspection of the new pre-boot-status finding. No repeat handoff repair, duplicate publication or third design. Reopen closed watchdog findings only on changed source or new failure evidence.
+- **Framework** — integration disposition on the returned retrieval proposals, intent/evidence boundary, real reader language and stronger external owners. Completed reviews are not a waiting gate; the remaining task is choosing the smallest justified next step, including no change.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
 Always read later #108 returns and reacquire live refs before acting. Live source wins over this pointer.
