@@ -32,4 +32,9 @@ This is a bounded static extension, not a required course or agent service. The 
 
 ## Optional
 
-- [Whole local packet](https://pleasestartfromhere.com/explore/packet.md): 18354 UTF-8 bytes; not required; no external corpus
+- [Whole local packet](https://pleasestartfromhere.com/explore/packet.md): 18822 UTF-8 bytes; not required; no external corpus
+
+## Small machine entry
+
+- [Start JSON](https://pleasestartfromhere.com/explore/start.json): small entry and optional routes
+- [Choose by question](https://pleasestartfromhere.com/explore/questions.txt): existing questions without the full resource inventory

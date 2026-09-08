@@ -92,3 +92,38 @@ Rebuild command: `python build.py --output NEW_EMPTY_STAGING_DIRECTORY`; copy on
 The root temporary HTTP restoration remains the separate TLS task. Explore has relative
 navigation and intended HTTPS machine-index links; certificate readiness is not inferred.
 Rollback is a normal revert of the additive publication commit; no domain reset.
+
+## Small entrance integration — 8 September 2026
+
+Maintained source commit: `503b80ac86110269c0ba126d50cc58ae0dbd8e58` in `campfire-door-preview`.
+Explore generator: COM PR114 commit
+`323a3fa9c96bd67c323bab967607c4855508b531` (includes the small entrance and packet repair).
+Authority and source receipt:
+[FW handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5582682363).
+
+This update adds `explore/start.json`, `explore/questions.json` and
+`explore/questions.txt`, modifies five Explore discovery/map outputs and adds
+one root machine-index link. The root manifest records generator provenance.
+The packet repair also changes both full packets. All 50 other Explore outputs and the existing root human page, seed, CSS,
+404, robots and sitemap are unchanged from publishing commit `ff10f254`.
+
+All three generator test modules passed (42 tests). Exact LF Git source reproduced
+60 Explore outputs, 170,508 bytes, output-tree SHA-256
+`1dfd219f6c5156d17cab323393b4a1acea2c34609adb1d6ff5e85a9250f0a80f`.
+The maintained build emits 68 files and matches those generated Explore bytes.
+These are structural and build-identity checks, not reader-benefit evidence.
+An initial CRLF source checkout failed the identity comparison and was rejected.
+
+Keep using the maintained build and copy its complete generated Explore set
+as well as the eight root outputs. Preserve publishing-only metadata. Rebuild
+Explore from its exact pinned source when changing the reading library; run
+`python -m unittest -v test_build test_arrival test_packet` before `python build.py`.
+
+The full packets previously embedded 20 example references without their
+example-directory base. This generation rebases those references in both packet
+forms while retaining the original example inputs, facts and standalone pages.
+The regression verifies relative resolution and reverses only the path prefix
+to check source preservation. This is a packaging repair, not new case evidence.
+HTTPS still fails normal certificate verification. No DNS, CNAME, account,
+licence, enforcement or domain-reset change is included. Roll back content
+with a normal revert, not a domain operation.
