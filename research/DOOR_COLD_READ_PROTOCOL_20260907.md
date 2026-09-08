@@ -1,9 +1,29 @@
-# Cold-read protocol for the one-address door — v0.2
+# Cold-read protocol for the one-address door — v0.7
 
 Status: **PRE-REGISTERED TEST / NOT A RESULT / NOT CANON / NOT VALIDATION**
-Registered v0.1: 2026-09-07, before any run.
-Revised v0.2: 2026-09-07, after Codex review `5575812947` / `5575871543`, still
-before any run. **No run has been scored under either version.**
+
+| version | date | what forced it |
+|---|---|---|
+| v0.1 | 2026-09-07 | registered before the door existed |
+| v0.2 | 2026-09-07 | four inference defects — Codex `5575812947` / `5575871543` |
+| v0.3 | 2026-09-07 | ceiling scope, prompt capture, TOOL_OBSERVED vs MODEL_CLAIMED — Codex |
+| v0.4 | 2026-09-07 | the first real reply arrived cut mid-word: TRUNCATED / NOT_REACHED |
+| v0.5 | 2026-09-07 | an admission gate, after I scored a run that did not qualify |
+| v0.6 | 2026-09-08 | venue separation, after the recruitment thread unblinded itself |
+| v0.7 | 2026-09-08 | scope: what this does **not** claim about returning readers |
+
+**One run has been scored and withdrawn.** It was inadmissible — I held none of
+the six required fields — and v0.5's admission gate exists because of it. It
+agreed with my registered prediction, which is the direction bias runs. No
+admissible run has been scored under any version.
+
+**A labelling defect, recorded rather than quietly fixed.** Until v0.7 this
+document's title read *v0.2* while containing v0.6 content: four revisions
+lived in commit messages and nowhere a reviewer would see them. Anyone opening
+the file to review it — which is the only way it gets reviewed — was told it
+was two revisions old.
+
+    THE_COMMIT_LOG_SAYS_IT != THE_DOCUMENT_SAYS_IT
 
 Related: COM #108, #109.
 
@@ -328,6 +348,75 @@ contamination breach voids a run.
 No TRACE or ME content may be edited to make this test pass. If it is, that is
 recorded as a change to the object under test, and prior runs remain valid
 evidence about the earlier text.
+
+## What a returning reader establishes, which this cannot — v0.7
+
+Added after FRAMEWORK `5586285541`-adjacent guidance on the 2026-09-08 reader
+batch: *"Returning to the contributors is a legitimate feedback loop, not a
+failed cold test. Do not demand fresh sessions or manufacture independence."*
+
+Accepted, and the correction is to this document's **scope**, not its rules.
+
+The contamination rules above void **a row in this protocol's table**. They have
+never voided feedback, and nothing here licenses discarding a report because its
+author had met the page before. But this was the only reading standard on the
+board, so its silence about everything else let it be read as a general bar. It
+is not one.
+
+```text
+a cold read           measures first-encounter comprehension: can a stranger,
+                      given one address and no context, say what this is for
+                      without concluding something the page does not support
+
+a returning reader    measures what a cold read structurally CANNOT: whether a
+                      revision fixed the thing they hit last time. Only someone
+                      who met the earlier version can report that at all
+```
+
+Each is blind exactly where the other sees. A cold read cannot detect a repair,
+because it has no before. A returning reader cannot detect first-encounter
+confusion, because they are no longer having one.
+
+**Two failure directions, and both have cost something already.**
+
+```text
+pooling a returning report into the cold table
+    inflates comprehension -- the reader knows the project, and the row
+    reads as a stranger who understood quickly
+
+applying cold-read admission to returning reports
+    discards the only evidence that any revision worked, which is the
+    question actually in front of the project this week
+```
+
+So returning-reader observations are recorded, and recorded **separately**.
+They are never scored on the 7-item scale and never pooled with cold rows.
+
+```text
+RETURNING READER RECORD
+  reader_label            A-E in order of receipt; not an inferred identity
+  edition_previously_met  the edition string or hash, or UNKNOWN
+  edition_now_reported    as stated by the reader
+  what_failed_before      quoted, not paraphrased
+  now_resolved            YES / NO / PARTIAL / NOT_RETESTED
+  relayed_or_direct       relayed claims are not execution logs witnessed here
+  duplicate_of            set where a paste repeats an earlier report verbatim
+```
+
+`relayed_or_direct` and `duplicate_of` are here because both bit on the first
+batch: six pasted blocks contained five distinct reports, and provider tool
+names and error codes reached us as user-relayed claims rather than as observed
+origin responses. A returning report is evidence about a reader's experience. It
+is not a measurement of the server.
+
+    A_REPORT_OF_A_FAILURE != AN_OBSERVED_FAILURE
+    RETURNING_IS_NOT_CONTAMINATION_IT_IS_A_DIFFERENT_INSTRUMENT
+
+**What has not changed.** If a row is to be scored on the cold table, the
+admission gate and contamination rules still hold in full, and the recruitment
+venue is still spent once an exemplar appears in its thread. Relaxing those
+would not produce more cold reads; it would produce rows that say "cold" and
+are not.
 
 ## What this cannot establish
 
