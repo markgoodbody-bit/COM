@@ -22,8 +22,9 @@ instruments inside the wider purpose; no instrument is the purpose itself.
 - Source/build review: [PR #114](https://github.com/markgoodbody-bit/COM/pull/114).
 - Accountless reply prototype: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116),
   current reviewed/repaired head `f06967a103d9f5c952b10bce56c00b0e88acc49f`.
-- First-contact next-source direction on PR #114: `FIRST_CONTACT.md`, first commit
-  `6c1a9afad31c09ff2a9b0b74d82fab224ff1366a`.
+- First-contact next-source work is on PR #114; current branch includes
+  `FIRST_CONTACT.md`, HTML/JSON mocks, `FIRST_CONTACT_ONE_FETCH.txt` and one
+  no-JS fractal reading probe through source head `b1832c0d3aa9e4bd0a2551f2fa097463c1c41c1f`.
 
 Read later #108 returns and live heads before acting. These are retrieval anchors, not
 proof that nothing later happened. Do not replay the whole thread or a Square carrier.
@@ -47,40 +48,48 @@ The default project-discussion reading route points to
 
 ## Receiver / provider state
 
-Receiver PR #116 remains synthetic/local only and hard-refuses non-loopback requests.
-Framework's repaired local suite passes **16/16** on Linux Node 22.16. Claude Code
-independently reproduced the original receiver 15/15 on Windows Node 24.19 and ran its
-pre-written adapter scenarios 5/5. The D1-portability risk from cross-statement SQLite
-`changes()` has been removed locally by gating audit events on an explicit row mutation
-token; the new regression deliberately zeroes `changes()` between batch statements and
-still requires the audit sequence.
+Receiver PR #116 remains synthetic/evaluation-only and its source hard-refuses non-loopback
+public use. Framework's repaired local suite passes **16/16** on Linux Node 22.16. Claude
+Code independently reproduced the original receiver 15/15 on Windows Node 24.19 and ran
+its pre-written adapter scenarios 5/5. The original audit portability risk from cross-
+statement SQLite `changes()` was removed locally by gating events on an explicit row
+mutation token; the hostile regression resets `changes()` between batch statements and
+still requires the complete audit sequence.
 
-CC's retention finding remains real and unresolved as a provider-level promise:
-logical cleanup / `body=NULL` can leave old bytes in local SQLite WAL until later
-checkpoint/truncation. Therefore logical unavailability, deadline classification, later
-sweep and physical erasure are distinct events. No exact-time physical deletion claim.
+CC's retention finding remains real and unresolved as a provider-level promise: logical
+cleanup / `body=NULL` can leave old bytes in local SQLite WAL until later checkpoint or
+truncation. Deadline classification, later sweep, logical unavailability and physical
+erasure are distinct events. No exact-time deletion claim.
 
-Mark's Cloudflare browser authorisation is now followed by terminal verification. Codex
-ran the installed Wrangler `whoami` once: OAuth authenticated, one account, Pages/D1 write
-scopes present. No token was printed and no repeat login was launched.
+Cloudflare is authenticated. Codex ran Wrangler `whoami` once after Mark's browser grant:
+one account, Pages/D1 write scopes present, no token printed and no repeat login.
 
-Codex created one isolated remote D1 evaluation database, `psfh-receiver-eval-20260908`,
-without a public application endpoint. The current migration loaded successfully. A
-synthetic direct insert while intake was closed failed specifically with the intended
-`INTAKE_PAUSED` trigger, and subsequent reads found zero contributions/events. This is
-the first real-provider storage result; it is not yet Worker-bound Store lifecycle,
-receipt durability, moderation, erasure or public receiving evidence.
+One isolated remote D1 evaluation database exists: `psfh-receiver-eval-20260908`. Do not
+create another. Its exact schema loaded successfully and closed-intake refusal was verified.
+Codex then exercised the current receiver against the SAME remote D1 binding through a
+local workerd harness. Eight lifecycle groups passed: paused admission, fresh-store receipt,
+paused same-request retry without duplication, changed retry conflict, private/public
+separation, separately attributed response, revision unpublishing, stale approval rejection,
+decline/reconsider/publish/withdraw and exact seven-event audit. Injected audit failure
+rolled back both state and event. An actual-handler lost-ack injection returned 503 without
+claiming receipt; retry with pre-held keys recovered one ID and one row while paused.
+Remote reads afterwards found the synthetic records withdrawn with bodies NULL, no published
+rows and no leftover evaluation trigger.
 
-Next provider work is the exact Worker/D1 binding and state-transition lifecycle using the
-one existing evaluation database. Do not create a second evaluation database, remove the
-local-only guard, enable real intake, change apex/www/nameservers/TLS or accept a paid plan
-merely because authentication now works.
+This is real remote D1 lifecycle evidence, not yet a deployed public Pages/Worker receiver.
+Still unresolved: provider disaster/crash durability, real transport interruption, remote
+admission races, end-to-end deployed HTTP/operator route, provider retention/backups/logs,
+affected-person removal and operator custody. No production intake from these results.
+
+Codex preserved a global Wrangler/workerd compatibility-date failure and used an isolated
+newer npm-exec Wrangler for the evaluation; the global install was not downgraded or changed.
+Provider query usage occurred; invoice cost was not measured.
 
 ## First-contact direction
 
 The live root 0.7.2 is coherent but asks a stranger to absorb a long introductory block
-before reaching the useful routes. The next source direction keeps the existing greeting
-and values, then offers behaviour-based first movements rather than identity categories:
+before reaching the useful routes. The next source direction keeps the greeting and values,
+then offers behaviour-based first movements rather than identity categories:
 
 - something is happening -> start from the situation;
 - something could be made possible -> reachable futures;
@@ -88,32 +97,37 @@ and values, then offers behaviour-based first movements rather than identity cat
 - compact source -> machine/source view;
 - curiosity -> wander/Explore.
 
-The point is progressive disclosure, not more menus. The small account must remain useful
-by itself and meaning-changing qualifications stay beside it. Deeper pages can recur around
-`start here / look closer / change viewpoint / check basis / challenge-or-leave` where useful,
-without forcing a symmetric tree. The accountless discussion route must continue to say
-read-only until receiving actually works.
+The new **one-fetch rule** is consequential: every movement contains one useful distinction
+before its link. If every deeper fetch is blocked, first contact should still be a complete
+small use rather than merely a directory. Source-only HTML and JSON mocks carry this property,
+and `FIRST_CONTACT_ONE_FETCH.txt` is a compact stripped-text candidate.
 
-Codex has also built a local shared-house-style candidate based on Mark-relayed Gemini
-feedback. It unifies previously divergent HTML presentation while preserving the content
-bodies, but browser keyboard/zoom/reflow/text-spacing acceptance is not yet claimed and the
-style is not public. Functional reply/provider work remains higher priority.
+The fractal is a movement grammar, not a symmetric page tree. One source-only Reachable
+Futures probe demonstrates a hybrid no-JS approach: the smallest account plus its meaning-
+changing limit stay visible, while native HTML disclosure layers offer `look closer / change
+viewpoint / check basis / challenge / move elsewhere`. This can reduce visual burden without
+forcing extra network fetches; it does not prove extractor behavior or reader benefit.
+
+Codex has a local shared-house-style candidate based on Mark-relayed Gemini feedback. It
+unifies previously divergent HTML presentation while preserving content bodies. Browser/
+keyboard/zoom/reflow/text-spacing acceptance remains to be established; style is not public.
+Codex has accepted the first-contact sources as comparison inputs for the maintained successor.
 
 ## Owners / availability
 
-- **Codex** — sole maintained-site/domain/provider operator; continue exact remote D1/Pages
-  evaluation and later integrate accepted first-contact/style changes.
+- **Codex** — sole maintained-site/domain/provider operator; continue the same remote D1/Pages
+  path toward bounded deployed HTTP/operator evaluation, then integrate accepted first-contact
+  and style changes through maintained source.
 - **Framework** — intent/integration lead; owns PR #116 and first-contact source direction;
-  continue building/reviewing without waiting for routine receipts.
+  continue receiver handling/retention boundaries and first-contact building without waiting.
 - **Claude Code** — independent review/reproduction when available. CC is temporarily near
-  its token limit; this is **not a critical-path stop**. Do not assign new blocking review
-  gates during that window.
+  its token limit; this is **not a critical-path stop** and no new blocking gate should be added.
 - **Mark** — human originator and consequential release/account authority. Routine AI-to-AI
   work should not bounce back to Mark unnecessarily.
 
 No production intake until real-provider persistence, moderation access,
 withdrawal/correction, handling notice/contact and failure behaviour are exercised. A local
-pass or one remote schema test is not permission to collect real submissions.
+or remote evaluation pass is not permission to collect real submissions.
 
 ## Separate / unresolved, not foreground blockers
 
@@ -128,7 +142,8 @@ pass or one remote schema test is not permission to collect real submissions.
 `ROLE CONTINUITY != RUNTIME IDENTITY`  
 `POSTED != RECEIVED != ACTED != EFFECT`  
 `LOCAL_LIFECYCLE_PASS != D1_DURABILITY_GUARANTEE`  
+`REMOTE_D1_LIFECYCLE_PASS != PUBLIC_RECEIVER_READY`  
 `LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`  
-`BROWSER_AUTH_GRANTED + WHOAMI_OK != PUBLIC_RECEIVER_READY`  
+`NEXT_FETCH_FAILS != FIRST_CONTACT_BECOMES_ONLY_A_DIRECTORY`  
 `CC_LOW_TOKENS != STOP`  
 `LIVE SOURCE WINS OVER A STALE POINTER`
