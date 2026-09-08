@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-08 — Europe/London  
-Current basis: COM main `fb1d2c4e`; #108 through FW teaching assignment `5592260057`, bootstrap repair `5592401515` and Codex recovery acknowledgement `5592447055`. Overlapping read through 22:18Z found no later external return. Codex's non-public teaching prototype is local commit `9d69245e`; CC's independent pre-build fixture remains pending. Publication/readback basis remains Codex `5591010858` plus CC `5591043373`; Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns still take precedence.
+Current basis: COM main `15c096a7`; #108 through FW title/art direction `5592682334`, brand clarification `5592723205`, live-publication authority `5592807329`, reiteration `5592936780` and Codex completion `5592937468`. An overlapping read from 22:35Z through 22:48Z recovered the later reiteration; it is the same completed publication, not a second release. Retain overlap rather than jumping to the latest self-post. Codex's separate non-public teaching prototype remains local `9d69245e`; CC's independent fixture remains pending. Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns take precedence.
 Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
 
 ## Purpose
@@ -27,7 +27,7 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 
 - Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
-- Public edition: **Preview 0.8**, `gh-pages` `0cff0265fb861e06689fe0700145b610cd201e1d`. Pages run `34271672584` succeeded; public content/route readback is reported by CC `5591043373`, not a fresh direct-domain check by Codex or the current Framework runtime.
+- Published edition: **Preview 0.8.1**, `gh-pages` `e0d765b3d203035971b5fa544eb5f5b48cc0f518`, maintained source `3f5212e0a18627482ac972c6610a42a61ee54ee9`. Pages run `34287529345` succeeded at 22:46:35Z. All 113 build/publishing objects match. **No fresh direct-domain root readback for this edition is established here**; Codex's prior safe-open refusal was not bypassed. CC `5591043373` describes earlier Preview 0.8, not this successor. Completion and exact limits: Codex `5592937468`.
 - Public discussion remains **read-only**.
 - 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446** at 18:54:16.628Z. Codex checked it at 22:14:41Z: zero comments / `has_more false`, approximately 3h20m old, not a next-day read or evidence of rejection. CC reports a planned next-day read; that is not proof a future check will run. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
 - `agentic-qa` 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account. Later 48907/48938 report implemented checks and exercised cases, with other contributors' additions. This is **reported implementation/testing**, not independently verified deployment/outcome or PSFH/TRACE efficacy. Credit the other contributors; do not attribute the whole repair to us.
@@ -40,12 +40,41 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 `SILENCE != FAILURE`  
 `AGREEMENT != VALIDATION`
 
-## PSFH publication — completed work, bounded readback
+## PSFH title and human-made artwork — published, bounded readback
+
+`Please Start From Here` is the proper title/name of the work, not merely a small
+instruction meaning step one. The guiding question remains beneath. No numbered
+onboarding, homepage wordplay explanation, logo or marketing machinery is added.
+
+FW `5592682334` and `5592723205` specify the title and Winslow Homer's actual 1880
+Camp Fire. FW `5592807329`, reiterated by `5592936780`, relays Mark's explicit
+instruction to update the live website without waiting for unavailable CC.
+Codex `5592937468` completes this exact object, not the teaching experiment.
+
+Maintained `3f5212e0` and publishing `e0d765b3` replace the earlier source/publication
+pair below. Met object 11112 / accession 27.181 supplies public-domain provenance;
+the unaltered 3801x2368 JPEG is 2,350,423 bytes, SHA-256
+`7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1`.
+Visible credit reaches the museum and a small on-page artist/source entry with
+H. Barbara Weinberg's biography link. Provenance is in `art/camp-fire.json`.
+The image is lazy-loaded after the opening choices and boundaries, not added to
+compact machine readings. No project licence or endorsement follows from image use.
+
+Ten generated paths change, two art files are added, 101 remain identical and none
+are removed. Build, 10 Node and 17 Python checks pass; the maintained checkout
+reproduces all 113 reviewed outputs. 320x800 dark-theme readback shows no horizontal
+overflow and readable title/art/credit. First choice y543.88 is about72 pixels later
+than the earlier opening, a cost of title hierarchy. Enlarged text, light-theme
+browser, complete keyboard/accessibility and reader benefit remain unestablished.
+Own local preview stopped. Offline HTML exists, but browser file handoff was
+policy-refused and not worked around. Publication success is not public receipt.
+
+## Earlier human-first publication — retained evidence, not current readback
 
 Single maintained source line:
 `codex/door-maintained-source-20260908`
 
-Published maintained source:
+Earlier published maintained source:
 `e03759f85a99b5eb5601df4ad400171d525307ed`
 
 The mobile handoff repair, exact review and publication are complete. Do not repeat the old `0dcc18ea` assignment or publish the same change again.
@@ -127,8 +156,8 @@ The pre-boot `RUNNING` comparison is now implemented in CC's `5ba5a286`, before 
 ## Current owner routes
 
 - **Claude Code** — independent pre-build teaching accept/reject fixture under `5592260057`, before reading Codex implementation; remains pending during Mark's reported credit pause. Also owns #4446 conversation/reported next-day read and watchdog runtime `5ba5a286`; test-only PR #212 is available for review/integration. No PR-merge or reader-benefit claim follows from a handoff alone.
-- **Codex** — authorised non-public teaching prototype completed locally at `9d69245e`, not pushed/published; maintain exact source mapping and preserve CC's independent fixture. Bounded Square field work continues. Overlapping boot implementation stopped and test-isolation repair remains draft PR #212. No repeat handoff repair, duplicate publication or third design. Reopen closed watchdog findings only on changed source or new failure evidence.
-- **Framework** — teaching integration direction returned in `5592260057`; bootstrap updated in `5592401515`. Assess KEEP/DELETE after local prototype and independent fixture returns. Preserve optional scaffolding, differing entry points/pace/depth, intent/evidence boundaries and stronger external owners. No public release follows automatically.
+- **Codex** — title/art publication completed as `3f5212e0` -> `e0d765b3`; fresh direct-domain root readback remains unestablished. Do not repeat the same release. Separate teaching prototype is local `9d69245e`, not pushed/published; preserve CC's independent fixture. Bounded Square field work continues. Test-isolation repair remains draft PR #212. Reopen closed watchdog findings only on changed source or new failure evidence.
+- **Framework** — title/brand and live-update directions `5592682334`, `5592723205`, `5592807329`, `5592936780` answered by `5592937468`. No repeat publication needed. Assess teaching KEEP/DELETE after local prototype and independent fixture returns under `5592260057`; that experiment remains non-public. Preserve optional scaffolding, differing entry points/pace/depth, intent/evidence boundaries and stronger external owners.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
 Always read later #108 returns and reacquire live refs before acting. Live source wins over this pointer.

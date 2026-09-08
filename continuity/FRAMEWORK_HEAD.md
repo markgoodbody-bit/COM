@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR
 Updated: 2026-09-08 — Europe/London
-Basis: COM main `d9a3bf51`; COM #108 through Framework direction `5592260057` at 21:42:09Z. Later returns take precedence.
+Basis: COM main `15c096a7`; COM #108 through title/brand directions `5592682334` / `5592723205`, live-update authority `5592807329` / `5592936780`, and Codex completion `5592937468`. Overlapping read from 22:35Z through 22:48Z. Later returns take precedence.
 Mark remains human originator, witness and consequential release/account authority. Runtime identity is episodic.
 
 ## Campfire before framework
@@ -75,9 +75,11 @@ Do not demand perfect coverage. One bounded entity cannot do everything. Preserv
 
 Read `coordination/ACTIVE_THREAD_POINTER.md`, then only later consequential returns in COM #108. Reacquire exact source/publishing heads before mutation. Follow COMSYNC, receipt and team protocols; do not replay the whole thread or a Square export.
 
-Current public address: `https://pleasestartfromhere.com/`, Preview 0.8 at the current active-route basis. It remains a static reading space; reading does not require identity, agreement, adoption or reply. Public discussion remains read-only.
+Current public address: `https://pleasestartfromhere.com/`, published Preview 0.8.1 at maintained `3f5212e0` / gh-pages `e0d765b3`. Pages run `34287529345` succeeded; current direct-domain root receipt is not established in this pointer. Codex did not bypass its prior safe-open refusal. It remains a static reading space; reading does not require identity, agreement, adoption or reply. Public discussion remains read-only.
 
-Current PSFH build direction at this basis is deliberately small. Reviews found that the existing ten Explore nodes already carry authored plain-English `short` summaries and other useful routes. Framework has authorised a reversible NON-PUBLIC teaching prototype only: Codex is to test whether exposing existing summaries and self-selected existing representations beside the question index reduces activation burden without profiling or auto-routing. Claude Code is to build the independent acceptance/rejection harness before reading Codex's implementation. No authored `indications`, Field Card schema, situation service, tracking, ranking, receiver activation or public publication is authorized by that direction. See #108 comment `5592260057`.
+Please Start From Here is the proper title/name of the gift, with How can we make a better future? retained as its guiding question. Mark's title/art revision is published: Homer's unaltered Camp Fire, visible museum/public-domain credit and a small artist/source entry. No generated art, marketing machinery, mandatory beginning, licence change or machine payload expansion with imagery. Read Codex `5592937468` for exact identities, source-to-publication parity, mobile placement cost and incomplete delivery/accessibility evidence. Do not publish the same change again.
+
+The separate teaching direction remains deliberately small and NON-PUBLIC. Reviews found that the existing ten Explore nodes already carry authored plain-English `short` summaries and other useful routes. Codex completed local opt-in prototype `9d69245e`; it was not pushed or included in the title/art publication. Claude Code must build the independent acceptance/rejection fixture before reading that implementation or its tests. No authored `indications`, Field Card schema, situation service, tracking, ranking, receiver activation or public publication is authorized by that experiment. See #108 comment `5592260057` and teaching return `5592661065`.
 
 Receiver PR #116 remains optional evaluation infrastructure / NOT PUBLIC INTAKE unless later live source says otherwise. TRACE/ME release/candidate/preservation distinctions remain unchanged unless their own live repositories say otherwise.
 
