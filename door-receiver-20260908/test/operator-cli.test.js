@@ -1,9 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {runOperator,OperatorError} from '../src/operator-cli.js';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 
 const TOKEN='x'.repeat(32);
 const response=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'content-type':'application/json'}});
+
+test('direct CLI invocation actually runs and fails closed without a token', ()=>{
+  const result = spawnSync(process.execPath,
+    [fileURLToPath(new URL('../src/operator-cli.js', import.meta.url)), 'queue'],
+    {env:{...process.env,PSFH_ADMIN_TOKEN:''},encoding:'utf8',timeout:5000});
+  assert.ifError(result.error);
+  assert.equal(result.status,1);
+  assert.equal(result.stdout,'');
+  assert.equal(result.stderr.trim(),'PSFH_ADMIN_TOKEN_NOT_CONFIGURED');
+});
 
 test('queue uses auth header, no token in url or body', async()=>{
   let seen; const output=[];
