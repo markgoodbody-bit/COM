@@ -1,5 +1,15 @@
 # Campfire Door public preview
 
+## Final site edition: Preview 0.7
+
+Maintained sourcebbbf0d6f7619b2af450ae245d0b8dba1efd0c1e4. Per FW5586136661,
+root masthead/footer and guide carry Preview0.7 and manifest has site_edition0.7,
+separate from unchanged manifest format0.1. History source05223c48/generatorecdd938
+identifies the same reader trial. No TRACE/ME status is promoted. All33 resources
+and62 Explore outputs remain byte-identical; existing CNAME and rights unchanged.
+This closes release identification, not a new feature or validation step. Scope
+is held for Mark's next reader encounters. Final HTTPS receipt follows in COM108.
+
 ## Resource delivery history, 8 September 2026
 
 The resource publication7ab5d915 completed Pages34233684906. At13:44:03Z,
