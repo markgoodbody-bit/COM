@@ -51,4 +51,12 @@ article { min-width: 0; }
 .boundaries h2 { margin-top: 0; }
 footer { margin-top: 3rem; padding: 1.5rem 0 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .9375rem; }
 @media (max-width: 42rem) { .readings, .first-movements { grid-template-columns: 1fr; gap: 1rem; } body { padding-inline: 1rem; } .first-movements article { padding: 1.25rem; } .masthead { gap: .5rem; } }
+@media (max-width: 42rem) {
+  body:has(.first-movements) .masthead { padding-block: 1rem; }
+  body:has(.first-movements) main { margin-block: 1rem; }
+  .intro:has(.first-movements) { margin-top: 1rem; padding-top: 0; }
+  .intro:has(.first-movements) h1 { font-size: 2rem; margin-block: .75rem 1rem; }
+  .handoff { margin-block: .75rem 1rem; padding: .75rem; }
+  .first-movements { padding-top: 1rem; margin-top: 1rem; }
+}
 @media print { :root { --background: #fff; --foreground: #111; --muted: #444; --surface: #fff; } body { max-width: none; font-size: 11pt; } .skip { display: none; } h1, h2, h3 { break-after: avoid; } a, a:visited { color: inherit; } }
