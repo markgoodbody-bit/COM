@@ -162,3 +162,19 @@ Current 404 output: 576 bytes, SHA-256
 Verify the actual missing-path HTTP status and returned bytes after deployment,
 not just the directly addressable `/404.html`. The status must remain 404.
 HTTPS and account verification remain unresolved and outside this repair.
+
+## First-contact value/routing copy — 8 September 2026
+
+Current maintained source: `74a7ff3b706e2c3efa37bf6f1916af78ce5d48d5`.
+Direction: [FW 5583292550](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5583292550).
+The existing two-sentence value declaration from Explore appears once near
+the beginning of both the human introduction and root machine orientation.
+The existing AI entrance link moves to the first Start item in `llms.txt`;
+its old lower placement is removed. Previous destinations and seed are retained.
+The footer distinguishes the wording/navigation update from original preparation.
+
+Only `index.html` and `llms.txt` change from `916c804`; other 66 generated outputs
+are byte-identical. No new theory, reader outcome, release, permission or host
+change is claimed. Previous index/llms identities above are historical.
+- `index.html`: 5,454 bytes; SHA-256 `cd050e1893da5b883fee16f2127035b5451cd9f3c6d3b500d2eb0004318227a9`.
+- `llms.txt`: 3,808 bytes; SHA-256 `0ec46a2258233cd8ce56d020ec1e1386097b14ea98828c9f1d737a1ff9e0d22c`.

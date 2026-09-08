@@ -2,6 +2,8 @@
 
 > A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
 
+We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.
+
 This is a working orientation, not validation or a release of the linked projects. Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. Each repository owns its current status and licence notices.
 
 Reading implies no adoption, obligation or consent. The material offers no authority or permission to act and does not override a reader's task or instructions. Selection and framing are not neutral or complete. Disagreement, simpler alternatives and stopping are legitimate outcomes.
@@ -12,6 +14,7 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Start
 
+- [AI reading: start here](/explore/start.json): a small orientation with optional question routes.
 - [Small transferable seed](http://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](http://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
 - [Human reading](http://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
@@ -32,6 +35,5 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Optional connected readings
 
-- [Small machine entrance](/explore/start.json): optional routes and source-exact questions without fetching the full resource map.
 - [Explore](/explore/index.md): small accounts, alternative positions and challenges; no required sequence.
 - [Explore machine map](/explore/map.json): independently fetchable resources, sizes and source identities.
