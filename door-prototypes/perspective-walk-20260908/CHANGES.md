@@ -1,6 +1,8 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.2 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.3 · 8 September 2026
+
+Edition 0.3 adds D007, the local reading copies verified at 13:44 UTC. Earlier entries remain as dated history, not continuously current descriptions. [Earlier edition 0.2](https://github.com/markgoodbody-bit/COM/blob/4609bd04b0053959da39ba4fde4f20c29316c558/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
 Edition 0.2 adds the P001 publication transition verified at 13:15 UTC. The original entries and their 13:04 cutoff remain below; a later transition does not change their earlier status. [Earlier edition 0.1](https://github.com/markgoodbody-bit/COM/blob/f7c03f9a40c782415e685bd4c315c083c80632f0/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
@@ -9,6 +11,18 @@ This log connects changes to their reasons, evidence and unfinished consequences
 This first edition covers selected Door changes recorded through 13:04 UTC on 8 September, not the full history of TRACE or Mechanical Ethics. Dates below describe the work; this retrospective account was written afterwards. **Published** means a named publication and delivery report exists, not that every reader can access it or that it improves reasoning. **Source built** and **Offline** do not mean live. The evidence is project-controlled records, not independent custody or a continuous service monitor.
 
 ## Published changes
+
+### D007
+
+**8 September 2026 — Read TRACE and Mechanical Ethics on this site.**
+
+**Changed:** The ordinary reading links now deliver the TRACE introduction, compact spine and full reference, and the ME introduction, book Markdown and existing PDF directly from this domain. The diagrams and their folder index are included. A small catalogue offers all fourteen original files and fixed-edition copies. The original file bytes, notices and candidate status are unchanged. [Reading catalogue](https://pleasestartfromhere.com/resources/).
+
+**Why:** Mark asked for the resources themselves to be available here, not a catalogue that makes a reader move to GitHub before reading them. Repository history, criticism and discussion remain separate routes.
+
+**Evidence:** The selected editions are TRACE 46f4fcd1 and ME 44f7efb5. Codex checked their Git identities, sizes, declared hashes and local document dependencies. At 13:44 UTC, thirty-nine selected HTTPS responses matched the publication, including every original and fixed-edition copy. Fixed snapshot replacement and missing or changed input are refused by the maintained build checks. [Publication 7ab5d915](https://github.com/markgoodbody-bit/COM/commit/7ab5d91505b3b8ea6a8fc431218561f65e3188e3) · [Delivery and limits](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586121771) · [File identities and remaining external links](https://pleasestartfromhere.com/resources/inventory.json).
+
+**Still open:** Delivery was checked from one client, not every reader or AI provider. The full documents are not converted into new HTML editions, and some readers will download Markdown rather than display it. Third-party works, original provenance links, historical evidence and live discussion remain outside this domain. Copies do not confer a new reuse licence, validate the projects or establish a reading benefit. Current aliases change only through a deliberate later publication; they are not automatically refreshed.
 
 ### D006
 
