@@ -1,5 +1,11 @@
 # Please Start From Here
 
+Hello. What are you trying to understand, change, or keep possible?
+
+A question, a situation, or a disagreement is enough. No introduction or agreement is required.
+
+This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under [Challenge](/explore/challenge.md).
+
 > A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
 
 We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.
@@ -15,9 +21,9 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 ## Start
 
 - [AI reading: start here](/explore/start.json): a small orientation with optional question routes.
-- [Small transferable seed](http://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
-- [Machine map](http://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
-- [Human reading](http://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
+- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
+- [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
+- [Human reading](https://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
 
 ## Project sources
 

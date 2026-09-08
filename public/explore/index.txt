@@ -1,5 +1,9 @@
 # Please Start From Here — explore
 
+## Welcome
+
+Hello. What are you trying to understand, change, or keep possible? A question, a situation, or a disagreement is enough. No introduction or agreement is required. This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under Challenge.
+
 ## Purpose
 
 How can we make a better future? A voluntary, middle-out reading space for bounded humans and artificial systems.

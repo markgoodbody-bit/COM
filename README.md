@@ -108,3 +108,30 @@ Only `index.html` and root `llms.txt` change from publication `916c804`.
 All reading content, seed, prior destinations, limits and hosting settings are
 preserved. This makes an existing value choice visible; it adds no new theory
 and does not demonstrate improved reader outcomes.
+# Welcome and secure-link maintenance — 8 September 2026
+
+The current Explore generator is COM PR114 commit
+`77165a1fb67215506128814939c9635e9b3e6ba1`, directory
+`door-prototypes/perspective-walk-20260908/`. Its four test modules passed
+49 checks; exact Git source produced 60 files / 172,236 bytes, tree SHA-256
+`975c16885d9fc24b1dd970cffc6737a77a5a20e6fd4bfd1b132a954d1da4eb2f`.
+Only five Explore entrances and their map changed; 54 other Explore outputs,
+including complete packets and all individual readings, are byte-identical.
+The same optional welcome appears at the root, with a real Challenge link and
+an explicit no-replies boundary. The root manifest updates generator provenance.
+This is wording and navigation work, not demonstrated reader benefit.
+
+Normal verified custom-domain HTTPS succeeded at 10:59:42Z after the one-shot
+domain remove/restore recovery. GitHub confirmed an approved apex/www certificate
+and HTTPS enforcement. The temporary HTTP self-references in seven maintained
+source files are now HTTPS; seed wording is unchanged apart from those schemes.
+The seed is 999 UTF-8 bytes. No DNS, account-protection, indexing or source-term
+change. Account-level domain protection remains unconfirmed. Do not repeat the
+domain recovery. Public delivery of this build must be verified separately.
+
+Rebuild Explore from exact Git bytes with
+`python -m unittest -v test_build test_arrival test_packet test_greeting`, then
+`python build.py --output NEW_EMPTY_STAGING_DIRECTORY`. Copy generated Explore
+assets into `public/explore`, then run the existing `npm run build`. Preserve
+all 68 output paths and publishing-only metadata. Historical receipts below
+describe their named revisions, not current transport or content state.

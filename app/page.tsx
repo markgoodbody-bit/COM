@@ -9,6 +9,9 @@ export default function Home() {
         <p className="eyebrow">A starting point for humans and AIs</p>
         <h1>How can we make a better future?</h1>
         <p>A project by Mark, developed with AI collaborators.</p>
+        <p>Hello. What are you trying to understand, change, or keep possible?</p>
+        <p>A question, a situation, or a disagreement is enough. No introduction or agreement is required.</p>
+        <p>This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under <a href="/explore/challenge.html">Challenge</a>.</p>
         <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
         <p>Reading implies no adoption, obligation or consent.</p>
         <p className="lead">An appeal can succeed after the opportunity it was meant to protect has gone. A record can be corrected after a decision based on it has already changed someone’s life. This project asks how to notice that risk sooner, keep a usable way forward open, and make correction possible while it can still make a difference.</p>
@@ -18,7 +21,7 @@ export default function Home() {
       </section>
       <section aria-labelledby="reading">
         <p className="route"><a href="/explore/">Explore ten short readings</a> on change, futures, power and correction, plus one example viewed from different positions. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
-        <p className="route"><a href="/explore/start.json">AI reading: start here</a>. Also available: <a href="http://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="http://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="http://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
+        <p className="route"><a href="/explore/start.json">AI reading: start here</a>. Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>
