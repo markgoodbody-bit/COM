@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-08 — Europe/London  
-Current basis: COM main `7ead1e6d`; #108 through CC's corrected handoff `5592049927` at 21:22:34Z, following Codex `5592007646`, CC repair return `5591939916` and superseded handoff `5591982220`. Publication/readback basis remains Codex `5591010858` plus CC `5591043373`; Campfire PR #209 is now `d784d90d`. Later returns still take precedence.
+Current basis: COM main `d9a3bf51`; #108 through CC boot-check return `5592233307` at 21:39:32Z and Codex overlap/test review `5592215946`, following corrected handoff `5592049927`. Publication/readback basis remains Codex `5591010858` plus CC `5591043373`; Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns still take precedence.
 Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
 
 ## Purpose
@@ -106,7 +106,7 @@ Parked edge-admission / attended-lease experiments stay parked unless real use e
 
 ## Campfire watchdog
 
-Campfire Relay PR #209 remains OPEN at `d784d90d39f6f67b1c21a8dc98ec683377f95ca4`, superseding `bd7192a7` and `aa2f66e4`. Codex `5592007646` inspected the exact repair diff and ran that source's default registrar in READ-ONLY mode against the installed task: exit 0. The named source/default mismatch finding is closed; the PR is not merged or promoted.
+Campfire Relay PR #209 remains OPEN at `5ba5a28684dbf2b6d8dfdb0a9cacd0ebe1d50d5f`, superseding `d784d90d`. The source/default mismatch finding was already closed at `d784d90d`: Codex `5592007646` inspected its repair diff and ran that source's default registrar in READ-ONLY mode against the installed task, exit 0. CC `5592233307` reports deployment of the new boot-aware script; Codex compared installed source with `5ba5a286` at 21:43:01Z and found exact text agreement after CRLF normalization, without invoking the watchdog. Deployment is not a PR merge or demonstrated incident recovery.
 
 The installed task and committed default now use two-minute polling / one-minute execution limit, with the existing 300-second stale threshold. Nominal threshold-plus-poll delay is about 420 seconds, not half of 600; it is not an end-to-end recovery guarantee. Battery conditions and `StartWhenAvailable` were checked. Availability across logout, sleep, power loss or scheduler failure is not established; `LogonType Interactive` remains.
 
@@ -114,15 +114,17 @@ The unsafe negative test on the LIVE watcher has been replaced: per-run disposab
 
 Incident correction: Windows recorded a host reboot at 20:33-20:34Z; the normal Square launcher under Explorer started the supervisor at 20:39:34Z. This is not an unexplained paired service crash. It also does not erase the post-boot delay: the 20:37 watcher pass ran on an already live host and saw a status younger than its threshold. The initiating human/automation gesture remains unidentified. See Codex `5591684437`, CC `5591939916`, and the qualification in `5592007646`.
 
-**New, still open:** CC `5592049927` accepts that correction and identifies the pre-boot-status gap. Comparing status time with host boot time is a proposed mitigation, not an implemented repair or a general liveness proof. CC is not building it tonight. Codex is inspecting a bounded draft-only repair; no live installation, task retune or service restart is included.
+The pre-boot `RUNNING` comparison is now implemented in CC's `5ba5a286`, before the age check, and restart events retain the observed cause. Codex stopped its overlapping runtime candidate when the new head appeared; the uninstalled alternative is preserved locally at `1e716849` and is not the implementation line. Source ordering and a timestamp comparison are not a general process-liveness or causal proof: missing boot observations, inconsistent/future clocks and states other than `RUNNING` retain limitations.
+
+**New test-only draft:** Codex identified that `test_bootcheck.py` in `5ba5a286` writes a fixed candidate path inside the live App and removes a fixed temporary directory. Do not run it unchanged. PR #212 (`930d2ff3a05657d221a9b80e2dff8fcdae4d66f8`, base `claude/local-service-watchdog`) replaces that fixture with selected source functions and in-memory I/O; no runtime file changes. Eleven boundary cases and two explicitly labelled limitation characterizations matched on PowerShell 5.1/7; disabling the pre-boot guard produced six mismatches and exit 1 through the Python entry point. The two adverse behaviours are recorded, not endorsed: absent boot observation falls back to age; future boot time can request a restart for a fresh report. The host query, disk I/O and end-to-end recovery are not tested by this fixture. PR #212 is draft/open, not merged or installed. Codex did not install or restart anything.
 
 `IT_RAN != IT_WILL_RUN`  
 `A_TEST_THAT_RAN != A_TEST_THAT_TESTED_ANYTHING`
 
 ## Current owner routes
 
-- **Claude Code** — #4446 conversation and its reported next-day read; smaller-indication attack and named watchdog source repairs returned. Corrected handoff `5592049927` supersedes the three erroneous claims in `5591982220`. No live-host, PR-merge or reader-benefit claim should be inferred from a handoff alone.
-- **Codex** — maintained/published source continuity and bounded field work; shape-or-NULL review complete, summary-first option returned; bounded draft inspection of the new pre-boot-status finding. No repeat handoff repair, duplicate publication or third design. Reopen closed watchdog findings only on changed source or new failure evidence.
+- **Claude Code** — #4446 conversation and its reported next-day read; smaller-indication attack and watchdog runtime repairs returned, including `5ba5a286`. Test-only PR #212 is available for review/integration. Corrected handoff `5592049927` supersedes the three erroneous claims in `5591982220`; boot build `5592233307` supersedes the earlier intention not to build tonight. No PR-merge or reader-benefit claim should be inferred from a handoff alone.
+- **Codex** — maintained/published source continuity and bounded field work; shape-or-NULL review complete, summary-first option returned; overlapping boot implementation stopped and test-isolation repair returned as draft PR #212. No repeat handoff repair, duplicate publication or third design. Reopen closed watchdog findings only on changed source or new failure evidence.
 - **Framework** — integration disposition on the returned retrieval proposals, intent/evidence boundary, real reader language and stronger external owners. Completed reviews are not a waiting gate; the remaining task is choosing the smallest justified next step, including no change.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
