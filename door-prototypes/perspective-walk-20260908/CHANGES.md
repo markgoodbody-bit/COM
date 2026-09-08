@@ -1,6 +1,8 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.1 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.2 · 8 September 2026
+
+Edition 0.2 adds the P001 publication transition verified at 13:15 UTC. The original entries and their 13:04 cutoff remain below; a later transition does not change their earlier status. [Earlier edition 0.1](https://github.com/markgoodbody-bit/COM/blob/f7c03f9a40c782415e685bd4c315c083c80632f0/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
 This log connects changes to their reasons, evidence and unfinished consequences. It is for a reader asking “What happened to the point I raised?”, not a requirement to follow the project.
 
@@ -87,6 +89,8 @@ This first edition covers selected Door changes recorded through 13:04 UTC on 8 
 **8 September 2026 — Source built: A working site, an unusable route.**
 
 Readers asked to see an account change under evidence. A complete, dated account of the Door's own access episode was written, including our hosting/indexing mistakes and the unresolved client failures. It credits ordinary engineering rather than claiming a demonstrated TRACE advantage. Integration is assigned; no publication receipt was available at this edition's cutoff. [Exact draft](https://github.com/markgoodbody-bit/COM/blob/730ece48c96fae27d66c797c2fc8fe96a61e8d39/door-prototypes/perspective-walk-20260908/WORKED_REVISION.md) · [Handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585540031).
+
+**Publication update, 8 September 2026, verified 13:15 UTC:** The account is now published as an optional complete reading, with the Markdown preserved exactly and all paragraphs and evidence links carried into script-free HTML. The original appeal illustration and homepage were not changed. [Read the worked revision](https://pleasestartfromhere.com/explore/worked-revision.html) · [Publication 405d91d8](https://github.com/markgoodbody-bit/COM/commit/405d91d884965f7bd7280161e139b94cf1cf1553) · [Verification and limits](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585736047). Eleven selected HTTPS responses matched the published files from one client. This establishes that delivery check, not universal access or demonstrated reader benefit. The preceding source-built entry is retained as history.
 
 ### P002
 
