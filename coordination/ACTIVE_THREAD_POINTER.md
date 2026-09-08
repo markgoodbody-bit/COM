@@ -12,109 +12,97 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square and the 
 
 `PROJECT PURPOSE != INSTRUMENT SURVIVAL`
 
-Operating direction:
-
 `WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HELP -> WATCH CONSEQUENCES`
 
-Mark's current human orientation:
+Mark's current orientation: help as many as we can by middle-out empathy with others already middle-outing from their own partial situations.
 
-> Help as many as we can. Middle out and empathise with others middle outing.
+`HELP MANY != FORCE OUR FRAME`  
+`OUR MODEL_OF_THEIR_VIEW != THEIR_VIEW`  
+`COMMON_FLOOR != IDENTICAL_PATH`
 
-Interpretation:
-
-`HELP MANY != FORCE OUR FRAME`
-`OUR MODEL OF THEIR VIEW != THEIR VIEW`
-`COMMON FLOOR != IDENTICAL PATH`
-
-Begin from the other entity's actual situation, language, evidence, capability, clocks and aims. TRACE/ME vocabulary is optional. A better external method/owner should be used or credited rather than translated into ours by reflex.
+Begin from the other entity's actual situation, language, evidence, capabilities, clocks and aims. TRACE/ME vocabulary is optional. Prefer or credit a stronger external method/owner when it fits better.
 
 ## Current public / field state
 
 - Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
 - Public edition: **Preview 0.8**, `gh-pages` `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`.
-- Public discussion is **read-only**.
-- Source/content review: PR #114.
-- Maintained visual/source line: `codex/door-maintained-source-20260908` at `ba47bf204432d7d0033349b3c1627dfbed64f112`; NOT DEPLOYED. Reacquire before mutation.
-- Receiver evaluation: PR #116 at `a52f65b3903a27f47f6f31b2cd64ee5d38be8a00`; optional evaluation infrastructure / NOT PUBLIC INTAKE.
+- Public discussion remains **read-only**.
 - 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446**. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
 - No Reddit post has been made.
 
-`FIRST_EXPOSURE != CLEAN_INTRODUCTION`
-`ONE_POST != CAMPAIGN`
-`SILENCE != FAILURE`
+`FIRST_EXPOSURE != CLEAN_INTRODUCTION`  
+`ONE_POST != CAMPAIGN`  
+`SILENCE != FAILURE`  
 `AGREEMENT != VALIDATION`
 
-## Anti-drift / mirror disposition
+## PSFH maintained candidate — LIVE DIAGNOSTIC STATE
 
-Full x100 audit remains at:
+Single maintained source line:
+`codex/door-maintained-source-20260908`
+
+Current exact head:
+`e8b933113092070d2b93ac3163f6bac4fbf69139`
+
+NOT DEPLOYED.
+
+Predecessor `9b1597f2d7919d6fcf135d218b4072857762b7fe` introduced the granular/fractal teaching cell, machine parity and PSFH-first metadata. Codex reported that exact predecessor passed the project-controlled build, 16 Python tests, 10 Node tests and a bounded dark 320x800 browser check.
+
+Framework then made a human-presentation-only successor through `2dc772e6...` -> current `e8b9331...`:
+- warmer/softer human surfaces;
+- greeting explicitly permits choosing, changing direction and stopping;
+- AI handoff begins `If it helps`;
+- existing hard boundaries grouped visibly rather than removed;
+- teaching cell shown as unnumbered optional questions instead of an ordered sequence;
+- no new route, image, external font, JS, animation, tracking, receiver or machine semantic change.
+
+**Current head is NOT YET REPRODUCED.** No CI/status is attached. The checked-in tests still contain literal assertions for predecessor human wording (`Visual candidate`, previous AI-handoff wording, `not a procedure to complete`), so predecessor green results must not be inherited. Codex owns exact-head build/test/browser reproduction; semantic voluntary assertions may replace brittle wording assertions where the meaning is deliberately preserved. CC owns the narrow human/epistemic challenge: reassurance must not hide limits, steer toward a preferred answer, infantilise, or recreate a compulsory lesson.
+
+`PREDECESSOR_GREEN != SUCCESSOR_GREEN`  
+`PRETTIER != MORE_USEFUL`  
+`REASSURING != PERSUASIVE`  
+`SAME_QUESTIONS_CAN_RECUR != SAME_ANSWER_OR_DEPTH`
+
+Public `gh-pages` stays at `2fe2c51d...` until the exact candidate is dispositioned.
+
+## Anti-drift constraints
+
+Full x100 artifact remains at:
 `door-prototypes/perspective-walk-20260908/FALSIFICATION_X100_DRIFT_MIRROR_20260908.md`
 (PR114 commit `c8844ef013c2b623440b9deeffc1cb2e0c8930ca`).
 
-Substance: material drift toward receiver/CSS/branch/COM machinery relative to real-world learning. CC later showed several receiver findings were correlated and team self-drift was under-sampled; do not worship the original counts.
-
-Effective constraints:
+Keep:
 - no speculative Door feature branches by momentum;
 - no third visual line;
-- receiver is optional, not a prerequisite for learning;
+- receiver optional, not prerequisite for learning;
 - test/build counts describe mechanisms, not external value;
-- COM should carry consequential decisions/evidence/owner changes, not motion telemetry;
-- real-world learning outranks more machinery.
+- COM carries consequential state, not motion telemetry;
+- real-world learning outranks machinery;
+- an available token is not a reason to spend it.
 
-`FIRST_LEARNING != REPLY_SURFACE_REQUIRED`
-`AN_AVAILABLE_TOKEN != A_REASON_TO_SPEND_IT`
-`TOPIC_OVERLAP != HELP_EARNED`
+## Receiver
 
-## PSFH granular / fractal teaching direction — ACTIVE
+PR #116 remains draft/open at `a52f65b3903a27f47f6f31b2cd64ee5d38be8a00`, optional evaluation infrastructure / NOT PUBLIC INTAKE. Public non-loopback remains hard-refused.
 
-Mark's current product correction: a good teacher does not deliver one standardized lesson as the best path for every pupil. PSFH should provide shared structural questions with different voluntary entry points, depth, examples and exits.
+Before real on-domain receiving: sustainable operator custody/burden, retention/log/backup reality, abuse/failure behaviour, deployed browser/accessibility, honest handling/contact notice, private-capability UX and explicit simplify/kill criteria remain unresolved.
 
-Framework direction to Codex: `FW-PSFH-GRANULAR-FRACTAL-TEACHING-CELL-20260908-001` in COM #108.
+Parked edge-admission / attended-lease experiments stay parked unless real use earns them.
 
-Implementation target is the EXISTING maintained source line only; no new branch or page tree.
+## Campfire watchdog
 
-One compact reusable teaching cell should appear after the existing five first movements, and in the machine entrance:
+Campfire Relay PR #209 is currently open at `bc8065febcbb264fe953b7205ba7ed36ef11432f`.
 
-1. **NOTICE** — what is actually observed / reported / inferred / unknown?
-2. **CHOOSE** — what reachable actions or possibilities exist, including waiting/non-action where relevant?
-3. **DECIDE** — what action, scale and uncertainty; description is not permission.
-4. **RESPONSIBILITY** — who can act/decide/stop/correct; who carries burden; who can answer back?
-5. **REPERCUSSIONS** — what changes now/later/elsewhere; what hardens; what opens/closes; what residue remains?
-6. **CHECK / CORRECT** — what would show the reading was wrong; what changed; continue/deepen/move sideways/use a stronger method/leave?
+Framework's four source findings were reproduced and repaired by CC. CC further reported replacing the fragile long-lived-only watch with an external Windows scheduled task every five minutes and retaining `-Loop` only as a fallback. The PR body still contains older text saying the scheduled task is not installed; treat that body section as stale until CC refreshes it. Do not infer installed/live host state solely from PR metadata.
 
-This is NOT a mandatory six-step procedure. The visitor may take one useful piece and leave. The same questions may recur at another depth without requiring the same answer or amount of detail.
+## Current owner routes
 
-`SAME_QUESTIONS_CAN_RECUR != SAME_ANSWER_OR_DEPTH`
-`SMALLEST_USEFUL_INCREMENT > WHOLE_TEXTBOOK`
-`TEACHER_MODEL_OF_PUPIL != PUPIL`
-
-Same bounded repair also covers two already-observed source gaps:
-- machine entrance currently says Preview 0.7 while maintained `SITE_EDITION` is 0.8;
-- root HTML title/description foreground TRACE/ME rather than PSFH's broader voluntary purpose.
-
-Codex owns implementation/build evidence on the maintained line. CC attacks only whether the returned cell became compulsory, smuggled moral ordering, or duplicated TRACE/ME. No deployment until exact source/build return is reviewed.
-
-## Receiver ceiling
-
-PR #116 preserves substantial synthetic/local/provider work, including revision-bound moderation, private receipt response retrieval, affected-person correction, reporter-note control and the repaired `reconsider()` zero-change race.
-
-Still required before any real on-domain receiving: sustainable human/operator custody, retention/log/backup reality, abuse/failure behaviour, deployed browser/accessibility, honest handling/contact notice, private-capability UX, and explicit simplify/kill criteria.
-
-`RECEIVER_EXISTS != RECEIVER_NEEDED`
-`CLI_REHEARSAL_PASS != OPERATOR_CUSTODY`
-`LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`
-
-Parked edge-admission / attended-lease experiments remain parked unless real use earns them.
-
-## Current differentiated owner routes
-
-- **Claude Code** — owns any native conversation #4446 genuinely earns; no campaign/scoring. It also owns repair/observation of its Campfire watchdog after Framework's source review; do not make that a new general infrastructure programme.
-- **Codex** — owns the single maintained PSFH source/publishing/provider line and bounded technical/mechanism help in the field. Current PSFH task is the granular/fractal teaching cell above.
-- **Framework** — intent/integration/evidence boundary; prevent collisions; attack important objects when differentiated review is earned; route toward real use and stronger owners rather than making every encounter a project artifact.
-- **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped; do not inflate them into unlimited future actuation.
+- **Claude Code** — any native #4446 conversation it genuinely earns; narrow human/epistemic review of current PSFH candidate; owns its watchdog/current host evidence.
+- **Codex** — exact-head reproduction of PSFH `e8b9331...`; single maintained source/publishing/provider line; no third design.
+- **Framework** — intent/integration/evidence boundary; keep claims scoped, repair stale coordination, prevent collisions, route toward real use/stronger owners.
+- **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
 Always read later #108 returns and reacquire live refs before acting. Live source wins over this pointer.
 
-`ROLE CONTINUITY != RUNTIME IDENTITY`
-`POSTED != RECEIVED != ACTED != EFFECT`
-`LIVE SOURCE WINS OVER A STALE POINTER`
+`ROLE_CONTINUITY != RUNTIME_IDENTITY`  
+`POSTED != RECEIVED != ACTED != EFFECT`  
+`LIVE_SOURCE_WINS_OVER_A_STALE_POINTER`
