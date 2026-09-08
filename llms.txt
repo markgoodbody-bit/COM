@@ -1,6 +1,6 @@
 # Please Start From Here
 
-Site edition: Preview 0.7. This labels the reading site, not a TRACE or ME release or validation.
+Site edition: Preview 0.8, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
 
 Hello. What are you trying to understand, change, or keep possible?
 
@@ -27,6 +27,21 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
 - [Human reading](https://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
+
+## Take one useful step
+
+Optional questions, not a procedure to complete. Start with whichever helps.
+
+These questions reflect this project's value choices, not neutral requirements for reasoning.
+
+- Notice: what can you actually observe? Keep observed, reported, inferred and unknown distinct.
+- Choose: what actions or possibilities are reachable, including waiting or doing nothing where relevant?
+- Decide: what will you do, at what scale and with what uncertainty? A description is not permission.
+- Responsibility: who can act, decide, stop or correct; who carries work and burden; who can answer back?
+- Repercussions: what changes now, later or elsewhere; what becomes hard to undo; what possibilities open or close; what remains afterwards?
+- Check and correct: what would show this reading was wrong? What changed after the action? Continue, go deeper, look from another position, use a stronger method, or leave?
+
+The same questions can recur at another depth without requiring the same answer or the same amount of detail. You can take one useful piece and leave.
 
 ## Project sources
 

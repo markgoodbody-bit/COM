@@ -1,5 +1,32 @@
 # Campfire Door public preview
 
+## Preview 0.8 follow-through: human-first opening and optional questions
+
+Maintained source e03759f85a99b5eb5601df4ad400171d525307ed, after accepted
+content f7d606b219ad7c969717376b711c7541ab6100fd. CC's exact content acceptance
+is COM5590871067; exact build/browser reproduction is COM5590901242. Release
+preparation removes transient not-published labels without upgrading working
+status; COM5590965671 records that narrow successor and repeated checks.
+
+The existing AI invitation follows all five starting points. Six unnumbered
+optional questions retain their local value disclosure and exit to a stronger
+method or stopping. Reader history0.7/D011 records why, with prior history
+preserved. Warm shared styling changes presentation, not source status.
+All original TRACE/ME/PDF/fixed-edition bytes and existing routes remain intact.
+No receiver, scripts, forms, DNS, licence, spending or promotional change.
+
+Build +16 Python/+10 Node checks pass. Native dark-theme320x800 and1280x900
+checks found no horizontal overflow; source f7d moved the first starting point
+262.44px earlier on mobile. Removing the release label then saved another line.
+Geometry and declared contrast are not reader benefit or full accessibility
+verification. Light-theme browser review, enlarged text and text spacing remain
+untested. Publication/delivery evidence is recorded after the actual Pages run;
+this source entry does not assert that run succeeded or all clients can read it.
+
+Rollback: ordinary content revert to preceding publication2fe2c51d, retaining
+CNAME, .nojekyll, exact-byte attributes and existing GitHub Pages configuration.
+Do not reset the domain or replace the publishing tree with a source checkout.
+
 ## Preview 0.8: optional first contact and shared presentation
 
 Maintained source45341947bcbc90b7fb34ce702ff8f4ea6e3e87af, based on FW first-contact

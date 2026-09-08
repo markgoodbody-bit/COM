@@ -1,6 +1,22 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.6 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.7 · 8 September 2026
+
+Edition 0.7 adds D011, an optional question set and a human-first opening within site Preview 0.8. This entry records the prepared change and its bounded checks, not a claim of delivery or reader benefit. Previous entries and their observation times remain below.
+
+### D011
+
+**8 September 2026 — Keep the starting points first, and make the questions optional.**
+
+**Changed:** The five starting points precede an optional invitation to ask an AI for another perspective. Below the starting points and boundaries, six unnumbered questions cover noticing, choices, decisions, responsibility, repercussions, and checking or correcting. Readers may use one, skip others, try a stronger method, or leave. The set carries its own value-choice disclosure in both the page and machine orientation. Warmer shared presentation does not remove the existing limits or create a reply service.
+
+**Why:** Review found that a numbered list could imply a required procedure, that the value-choice disclosure needed to travel with an extracted question set, and that placing the AI invitation first delayed the human starting points on a small screen. The invitation was moved intact rather than removed. [Exact content review](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5590871067).
+
+**Evidence and limits:** The accepted content passed the existing build and 26 checks. At 320 by 800, moving the invitation placed the first starting point about 262 pixels earlier than the preceding candidate. Two checked screen sizes had no horizontal overflow. This is layout and structural evidence, not demonstrated reader benefit or a full accessibility audit. Light-theme browser inspection, enlarged text and text-spacing overrides remain untested. [Reproduction and scope](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5590901242).
+
+**Preserved:** The accepted questions, optional exits, stated value choices, source routes, TRACE and Mechanical Ethics originals, PDF and fixed editions. Release preparation removes temporary “not published” labels without changing working-preview or non-validation status. Discussion remains read-only. No new licence, domain, receiver or promotion is part of this change.
+
+## Previous dated edition
 
 Edition 0.6 adds D010, the first-contact and shared-style successor labelled site Preview 0.8. This entry describes the prepared change, not a continuous delivery check. Earlier entries retain their original observation times.
 
