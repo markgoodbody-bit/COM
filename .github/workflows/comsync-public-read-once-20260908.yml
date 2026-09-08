@@ -1,0 +1,115 @@
+name: Full COMSYNC public read once 20260908
+on:
+  push:
+    branches: [framework/door-perspective-walk-20260908]
+    paths: [.github/workflows/comsync-public-read-once-20260908.yml]
+permissions: {}
+jobs:
+  public-read:
+    if: github.run_attempt == '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read selected public endpoints without credentials or mutations
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures, datetime, hashlib, json, urllib.request, urllib.parse
+          PIN = 'ff10f254bece7b62d02af52d9cd16cfebcda72d4'
+          HOSTS = {'pleasestartfromhere.com','www.pleasestartfromhere.com','1f916.ai','raw.githubusercontent.com','api.github.com'}
+          def now(): return datetime.datetime.now(datetime.timezone.utc).isoformat()
+          def emit(label, value): print(label+' '+json.dumps(value,ensure_ascii=True),flush=True)
+          class Redirect(urllib.request.HTTPRedirectHandler):
+              def __init__(self): self.chain=[]
+              def redirect_request(self,req,fp,code,msg,headers,newurl):
+                  p=urllib.parse.urlsplit(newurl)
+                  if p.hostname not in HOSTS or p.scheme not in ('http','https'):
+                      raise ValueError('Redirect outside declared public hosts')
+                  if req.full_url.startswith('https:') and p.scheme != 'https':
+                      raise ValueError('HTTPS downgrade refused')
+                  self.chain.append({'from':req.full_url,'to':newurl,'status':code})
+                  return super().redirect_request(req,fp,code,msg,headers,newurl)
+          def get(url,limit=262144):
+              meta={'requested':url,'at':now()}; handler=Redirect()
+              try:
+                  p=urllib.parse.urlsplit(url)
+                  if p.hostname not in HOSTS or p.scheme not in ('http','https'):
+                      raise ValueError('URL outside declared scope')
+                  req=urllib.request.Request(url,headers={'User-Agent':'Framework-bounded-read-only-COMSYNC','Cache-Control':'no-cache'})
+                  with urllib.request.build_opener(handler).open(req,timeout=10) as r:
+                      data=r.read(limit+1)
+                      if len(data)>limit: raise ValueError('Response exceeds bounded read')
+                      meta.update(status=r.status,final=r.url,redirects=handler.chain,bytes=len(data),content_type=r.headers.get('Content-Type'),sha256=hashlib.sha256(data).hexdigest())
+                      return meta,data
+              except Exception as e:
+                  meta.update(error=type(e).__name__+': '+str(e)[:400],redirects=handler.chain)
+                  return meta,None
+          emit('SCOPE',{'started':now(),'publication_basis':PIN,'method':'unauthenticated GET only; normal TLS verification; no site/DNS/settings/write/provider calls','limits':'selected routes and three known public threads, not a whole-board or authenticated-inbox read'})
+          ref='https://api.github.com/repos/markgoodbody-bit/COM/git/ref/heads/gh-pages'
+          before,raw=get(ref)
+          if raw:
+              try: before['head']=json.loads(raw)['object']['sha']
+              except Exception as e: before['parse_error']=str(e)
+          emit('PUBLICATION_HEAD_BEFORE',before)
+          paths=['index.html','seed.txt','llms.txt','manifest.json','explore/index.md','explore/map.json','explore/packet.md']
+          def inspect(path):
+              source,expected=get('https://raw.githubusercontent.com/markgoodbody-bit/COM/'+PIN+'/'+path)
+              rows=[]
+              for scheme in ('https','http'):
+                  actual,body=get(scheme+'://pleasestartfromhere.com/'+path)
+                  actual['path']=path
+                  actual['matches_pinned_source']=None if body is None or expected is None else body==expected
+                  if body is not None and path.endswith('.json'):
+                      try: json.loads(body); actual['json_parse']='PASS'
+                      except Exception as e: actual['json_parse']='FAIL: '+str(e)
+                  rows.append(actual)
+              return {'path':path,'source':source,'checks':rows}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+              for row in pool.map(inspect,paths): emit('DOOR',row)
+          for url in ['https://pleasestartfromhere.com/','https://www.pleasestartfromhere.com/','http://pleasestartfromhere.com/','https://pleasestartfromhere.com/explore/']:
+              meta,_=get(url); emit('ENTRY',meta)
+          meta,raw=get('https://1f916.ai/api/surface')
+          if raw:
+              try:
+                  obj=json.loads(raw)
+                  meta['top_level_keys']=list(obj) if isinstance(obj,dict) else 'not-object'
+                  meta['bounded_surface_prefix']=json.dumps(obj,ensure_ascii=True)[:6000]
+              except Exception as e: meta['parse_error']=str(e)
+          emit('SQUARE_SURFACE',meta)
+          for number in [4302,3333,4335]:
+              meta,raw=get('https://1f916.ai/api/post/'+str(number))
+              if raw:
+                  try:
+                      obj=json.loads(raw)
+                      if not isinstance(obj,dict): raise ValueError('Unexpected root shape')
+                      meta['top_level_keys']=list(obj)
+                      post=obj.get('post',{})
+                      if not isinstance(post,dict): post={}
+                      meta['post']={k:post[k] for k in ['id','title','author','created_at','comment_count'] if k in post}
+                      comments=obj.get('comments',post.get('comments',[]))
+                      if not isinstance(comments,list):
+                          meta['comment_shape_unknown']=True; comments=[]
+                      meta['returned_comments']=len(comments)
+                      meta['has_more']=obj.get('has_more','NOT_IN_RESPONSE')
+                      meta['comment_ids']=[c.get('id') for c in comments if isinstance(c,dict)]
+                      if number==4302:
+                          selected=[c for c in comments if isinstance(c,dict) and isinstance(c.get('id'),int) and c['id']>47476]
+                      else:
+                          selected=[c for c in comments if isinstance(c,dict)][-3:]
+                      meta['selected_comments']=[]
+                      for c in selected[-8:]:
+                          entry={k:c[k] for k in ['id','author','citizen','created_at','parent_id','body','content','text'] if k in c}
+                          for k in ['body','content','text']:
+                              if isinstance(entry.get(k),str) and len(entry[k])>2800:
+                                  entry[k]=entry[k][:2800]; entry[k+'_truncated']=True
+                          meta['selected_comments'].append(entry)
+                      meta['selection_limit']='4302: IDs above 47476, last 8; other two threads: last 3 returned; text cap 2800 characters'
+                  except Exception as e: meta['parse_error']=str(e)
+              emit('SQUARE_POST',meta)
+          after,raw=get(ref)
+          if raw:
+              try: after['head']=json.loads(raw)['object']['sha']
+              except Exception as e: after['parse_error']=str(e)
+          emit('PUBLICATION_HEAD_AFTER',after)
+          emit('FINISHED',{'at':now(),'meaning':'request results above are evidence; successful job exit alone is not website health or complete field coverage'})
+          PY
