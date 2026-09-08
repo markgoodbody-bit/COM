@@ -3,7 +3,7 @@
 SYNTHETIC ONLY. LOCAL TEST HARNESS. DO NOT DEPLOY.
 
 The original run imported PR116 source f06967a103d9f5c952b10bce56c00b0e88acc49f.
-The checkout now incorporates PR1167b0aa944 plus repair c8fb095; old results below
+The checkout now incorporates the receiver subtree equal to PR1160870bc02; old results below
 remain pinned to their original source. Record the actual checkout on each run.
 This imports the receiver, rather than implementing another receiver.
 The test runs in local workerd, using Wrangler's remote D1 binding to the existing
@@ -24,8 +24,8 @@ npm exec --yes --package=wrangler@4.129.1 -- wrangler types worker-configuration
 npm exec --yes --package=wrangler@4.129.1 -- wrangler dev --config wrangler.jsonc --show-interactive-dev-session=false
 ```
 
-POST `/run`, `/lost-ack`, `/correction` or `/clear-note` at the printed loopback URL with
-`X-PSFH-Evaluation: synthetic-only`. Neither endpoint accepts submitted content.
+POST `/run`, `/lost-ack`, `/correction`, `/clear-note` or `/receipt-response` at the printed loopback URL with
+`X-PSFH-Evaluation: synthetic-only`. These endpoints accept no caller-supplied content.
 Inspect `status`, not merely HTTP completion. Stop the dev session afterwards.
 Do not use `--local`: it disables remote bindings and would change the test.
 
@@ -146,6 +146,39 @@ The operator calls traverse the real router inside workerd, not a standalone CLI
 over deployed HTTP. No new database, site change, public receiving, DNS change,
 login or paid-plan enrollment. Provider queries consume quota; invoice cost is
 not measured.
+
+## Private current-response receipt, 18:12 UTC
+
+Harness commit `167bc5712f3d4f54f47ec2739f5b82dc669afe33` imports the unchanged
+receiver subtree from `58cb6c7920abf55b74c7d41ebc066d913ea1035e`, previously
+verified byte-equal to PR116 `0870bc02af3577f50545740e43333344c876e577`.
+Only the new `/receipt-response` recipe ran. No schema or receiver change and no
+repetition of the older correction/lifecycle matrix. Generated Wrangler4.129.1
+types refreshed without a diff; TypeScript7.0.2 noEmit/allowJs/skipLibCheck passed.
+
+At 18:12:36Z the real router in local workerd, using the SAME remote D1 binding,
+returned PASS for four groups:
+
+1. Owner private receipt returns exactly one current answer with body, separate
+   operator attribution and integer timestamp; no extra answer fields.
+2. Wrong management key returns404/RECEIPT_UNAVAILABLE without an answer.
+3. Replacement returns pending revision2 without the earlier answer. Fresh
+   publication and response expose only the second answer through the receipt.
+4. Withdrawal removes text and answers from the private receipt and public view.
+
+Synthetic record `181e9edc-966a-4a30-a4c0-dc59d9ebf79d`. Readiness was briefly
+opened for its submission, then paused before moderation. Cleanup also pauses
+intake and can recover its own record by the pre-held retry key if acknowledgement
+is lost. That recovery branch was not fault-injected in this run. No keys printed.
+
+After stopping the dev session, a separate Wrangler remote SQL process confirmed
+enabled0/ready_until0, withdrawn/revision3/bodyNULL/empty display name, zero
+responses for this record, and zero published contributions. Retained events are
+received1/publish1/revised2/publish2/withdrawn3. This is logical clearing, not
+physical erasure of provider history or backups. No deployed HTTP/browser flow,
+concurrent revision race, real operator custody or response guarantee is proved.
+No new database, migrations, public receiving, site/DNS change or paid plan.
+Queries consume quota; invoice cost was not measured.
 
 ## Remaining work
 
