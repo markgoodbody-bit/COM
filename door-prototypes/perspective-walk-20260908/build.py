@@ -228,7 +228,8 @@ def worked_revision(source: Path) -> tuple[bytes, str]:
 
 
 def prose_page(raw: bytes, source_url: str, alternate: str, return_label: str,
-               history: bool = False) -> str:
+               history: bool = False, heading_ids: dict | None = None,
+               return_url: str = 'index.html', describedby: str = 'llms.txt') -> str:
     """Reviewed prose subset only; history adds bold labels and stable entry IDs."""
     text = raw.decode('utf-8')
     blocks = text.strip().split('\n\n')
@@ -255,7 +256,14 @@ def prose_page(raw: bytes, source_url: str, alternate: str, return_label: str,
     body, ids = [], set()
     for block in blocks:
         if block.startswith('## ') and '\n' not in block:
-            body.append('<h2>' + html.escape(block[3:]) + '</h2>')
+            attribute = ''
+            if heading_ids is not None:
+                ident = heading_ids[block[3:]]
+                if not re.fullmatch(r'[a-z][a-z0-9-]*', ident) or ident in ids:
+                    raise ValueError('Invalid or duplicate prose heading ID')
+                ids.add(ident)
+                attribute = ' id="' + ident + '"'
+            body.append('<h2' + attribute + '>' + html.escape(block[3:]) + '</h2>')
         elif history and re.fullmatch(r'### [DPR]\d{3}[^\n]*', block):
             ident = block[4:8].lower()
             if ident in ids:
@@ -267,8 +275,10 @@ def prose_page(raw: bytes, source_url: str, alternate: str, return_label: str,
             raise ValueError('Unsupported worked-revision Markdown block')
         else:
             body.append('<p>' + inline(block) + '</p>')
+    if heading_ids is not None and set(heading_ids.values()) != ids:
+        raise ValueError('Unused prose heading IDs')
     page = html_document(title, [], [('Edition source', source_url),
-                         (return_label, 'index.html')], alternate, 'llms.txt')
+                         (return_label, return_url)], alternate, describedby)
     page = page.replace('<nav aria-label="Optional routes">',
                         ''.join(body) + '<nav aria-label="Optional routes">', 1)
     return page
@@ -276,6 +286,29 @@ def prose_page(raw: bytes, source_url: str, alternate: str, return_label: str,
 
 HISTORY_COMMIT = '3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e'
 HISTORY_SHA256 = '7b68b38df0121b2627347df9cf1f5d580ba892508ab1a751ef8b1fe1aefdf906'
+
+DISCUSSION_COMMIT = '9ceae9d27fd2b64550148bed622955b13a8740a6'
+DISCUSSION_SHA256 = '7117f1acf2c6cce494da2413c82fe8185f99dcb21342e4053ceb545efa222c18'
+DISCUSSION_HEADINGS = {
+    'Can I read the actual work without leaving this site?': 'reading-access',
+    'What happened to the criticism readers offered?': 'criticism-and-revision',
+    'Can I start small without losing the important qualification?': 'starting-small',
+    'What could we make possible that is not possible yet?': 'creating-possibilities',
+    'Can I reject the framing and still contribute?': 'rejecting-the-framing',
+    'Can I answer without a GitHub account?': 'reply-access',
+    'How this discussion can change': 'changing-this-discussion',
+}
+
+
+def generate_discussion(source: Path = HERE) -> dict[str, bytes]:
+    raw = (source / 'discussion/DISCUSSION.md').read_bytes()
+    if digest(raw) != DISCUSSION_SHA256:
+        raise ValueError('Discussion changed; review source before updating its pin')
+    source_url = ('https://github.com/markgoodbody-bit/COM/blob/' + DISCUSSION_COMMIT
+                  + '/door-prototypes/perspective-walk-20260908/discussion/DISCUSSION.md')
+    page = prose_page(raw, source_url, 'index.md', 'Return to the Door or stop',
+                      heading_ids=DISCUSSION_HEADINGS, return_url='/', describedby='/llms.txt')
+    return {'discussion/index.md': raw, 'discussion/index.html': page.encode('utf-8')}
 
 
 def generate_history(source: Path = HERE) -> dict[str, bytes]:
@@ -352,7 +385,9 @@ def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     put('sources.html', html_document('Sources and neighbouring work', src_parts, src_links[:-1] + [('Return','index.html')], 'sources.md','llms.txt'))
     cparts = [('Challenge the content', 'These accounts can omit people, infer too much or steer the reader. A different account may serve better. A challenge need not be expressed in this project\'s vocabulary.'),
               ('Actual reply route', lib['challenge_route']['access']), ('Limits', 'A public issue link is not evidence of timely reply or practical remedy. This static site does not host a conversation, accept submissions, store visitor identity or run agent tools.')]
-    clinks = [('Project discussion',lib['challenge_route']['url']),('Sources and alternatives','sources.md'),('Return or stop','index.md')]
+    clinks = [('Project discussion: editorial questions and responses','https://pleasestartfromhere.com/discussion/'),
+              ('Legacy GitHub discussion and participation',lib['challenge_route']['url']),
+              ('Sources and alternatives','sources.md'),('Return or stop','index.md')]
     put('challenge.md', document('Challenge or leave', cparts, clinks))
     put('challenge.html', html_document('Challenge or leave', cparts, [(a,b.replace('.md','.html') if not b.startswith('https:') else b) for a,b in clinks], 'challenge.md','llms.txt'))
     embedded_examples = packet_examples(examples)
@@ -403,8 +438,16 @@ def main() -> int:
     parser.add_argument('--output',type=Path,help='New or empty staging directory; no publishing')
     parser.add_argument('--check',action='store_true',help='Validate and build in memory only')
     parser.add_argument('--history-output',type=Path,help='Build only the two history files into new or empty staging')
+    parser.add_argument('--discussion-output',type=Path,help='Build only the two read-only discussion files into new or empty staging')
     args = parser.parse_args()
     try:
+        if args.discussion_output:
+            if args.output or args.check or args.history_output:
+                parser.error('--discussion-output is separate from other build modes')
+            files = generate_discussion()
+            write_new(args.discussion_output, files)
+            print(json.dumps({p: {'bytes': len(b), 'sha256': digest(b)} for p, b in files.items()}, indent=2))
+            return 0
         if args.history_output:
             if args.output or args.check:
                 parser.error('--history-output is separate from Explore output/check')
