@@ -22,7 +22,7 @@ inside the wider purpose; no instrument is the purpose itself.
   `45341947bcbc90b7fb34ce702ff8f4ea6e3e87af`.
 - Source/content review: [PR #114](https://github.com/markgoodbody-bit/COM/pull/114).
 - Accountless receiver evaluation: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116),
-  current head at this update `1a784e02e4449b857ffaeb73d5008aed66278784`.
+  combined current head at this update `965f1c4a5ce5362d0f6088ca47f89008bd57d4ef`.
 
 Always read later #108 returns and live heads first. These are retrieval anchors, not proof
 that nothing later happened. Do not replay the whole thread or a Square carrier.
@@ -41,10 +41,10 @@ Do not repeat by momentum:
 - **Preview 0.8 first contact + shared house style**.
 
 Preview 0.8 gives five optional first movements before the long explanation: situation /
-possibility / challenge / compact source / curiosity. Each carries a small useful distinction
-before its link. Existing machine entrance, seed and orientation remain authoritative for
-their own source edition. The public discussion is still **read-only**; no receiver form is
-live. Delivery evidence is not evidence of reader comprehension or provider-wide access.
+possibility / challenge / compact source / curiosity. Each carries a useful distinction before
+its link. Existing machine entrance, seed and orientation remain authoritative for their own
+source edition. Public discussion is still **read-only**. Delivery evidence is not evidence of
+reader comprehension or provider-wide access.
 
 ## Receiver / provider evidence
 
@@ -58,52 +58,70 @@ Earned evidence:
 - Codex exercised the same isolated D1 database `psfh-receiver-eval-20260908`: eight
   contribution lifecycle groups passed through a workerd/D1 binding, including safe retry,
   private/public separation, revision-bound moderation, responses, reconsideration,
-  withdrawal, audit rollback and a lost-ack recovery injection.
-- Codex reproduced exact receiver/correction head `7b0aa9446984e6b34481527a800a6bbc1ff3c5e3`
-  at **34/34** on Windows Node24.19.
+  withdrawal, audit rollback and lost-ack recovery.
+- Codex reproduced exact correction HTTP/router head
+  `7b0aa9446984e6b34481527a800a6bbc1ff3c5e3` at **34/34** on Windows Node24.19.
+- Hostile extension found two additional real HTTP defects: oversized correction streams
+  could be fully consumed before refusal; failed HTML reports could reset the selected kind.
+  Codex repair commit `c8fb095f0e3e511320f39079b37b57944713d041` passed **36/36** on its
+  provider branch and was subsequently integrated file-by-file into PR #116 while preserving
+  newer reporter-control work.
 
-During hostile extension from that head, Codex found two real HTTP gaps not covered by the
-34-test suite:
+The integrated repair now bounds correction streaming at 64 KiB, preserves failed-form kind
+and pre-held keys, and routes correction admin only after the contribution handler's bounded
+parsing + authentication rather than router-level clone/json sniffing.
 
-1. an oversized correction request could be fully consumed before refusal;
-2. a failed HTML report could reset a selected correction kind to Privacy.
+## D1 correction evaluation
 
-Codex reports a local provider-branch repair with 36/36; an addressable commit/provider result
-is still pending. Do not duplicate or silently attribute that result to PR #116 until the
-repair is integrated.
+The SAME remote D1 UUID `85c6f402-da0b-4c52-a1ad-445dc999c3b0` is the only correction
+provider-evaluation database. Do not create another.
 
-The first provider read during the correction migration check transiently returned Cloudflare
-7403; a bounded repeat succeeded. At that check migration0002 / correction_limit were still
-absent remotely and normal intake remained disabled. No second DB or login loop.
+Codex provider return established:
+
+- initial schema read transiently returned Cloudflare 7403; identity/info and one bounded repeat
+  succeeded. No provider cause inferred;
+- migration0002 was absent, then applied exactly once;
+- after migration: `enabled=0`, `ready_until=0`, `correction_limit=100`;
+- ordinary contribution intake remained paused while a synthetic correction was accepted;
+- same retry recovered one ID; changed retry conflicted;
+- unauthorised admin was denied; wrong management owner was denied;
+- correction queue remained private/operator-only and the report was absent from public output;
+- explicit `no_change` resolution left the full target row/public JSON unchanged;
+- pending withdrawal cleared the reporter note;
+- hard non-loopback 503 guard remained;
+- independent remote query afterwards confirmed zero published rows.
+
+These are bounded provider results. No real outage injection, remote concurrency, standalone
+CLI/provider-HTTP, public receiving, physical-erasure or provider-backup guarantee follows.
 
 ## Affected-person answer-back
 
-A separate correction lane is now implemented in the closed receiver. It has reserved queue
-and rate capacity independent of ordinary contribution intake. A reporter pre-holds retry /
-management capabilities, can recover an idempotent request, inspect it privately and withdraw
-while pending. Operator resolution is explicit.
+The correction lane is separate from ordinary contributions and has reserved queue/rate
+capacity. A reporter pre-holds retry/management capabilities and can inspect or withdraw a
+pending request. Operator resolution is explicit.
 
 `CORRECTION_REPORT != PROOF_OF_HARM != TAKEDOWN_AUTHORITY`
 
-A report or resolution alone does not mutate target contribution/public state. Reserved
-answer-back must not become unauthenticated censorship.
+Filing or resolving a report alone does not mutate the target contribution/public state.
+Reserved answer-back must not become unauthenticated censorship.
 
-After the exact `7b0aa944` reproduction completed, Framework promoted the hostile-read repair
-for post-resolution reporter control. Current PR head `1a784e02...` lets the management-
-capability holder clear only their reporter-supplied free-text note after resolution while
-preserving resolved state, target/kind, operator outcome/reason and audit history; a
-`reporter_note_cleared` event records the operation. Pending requests still use withdrawal.
+Framework then fixed a hostile-read control problem: resolution previously trapped the
+reporter's free-text note. The current combined PR head allows the management-capability
+holder to clear only that reporter-supplied note after resolution while preserving resolved
+state, target/kind, operator outcome/reason and audit history. A `reporter_note_cleared` event
+records the operation; pending requests still use withdrawal.
 
 `REQUEST_RESOLVED != REPORTER_NOTE_MUST_REMAIN`
 
-This current head has source-level store/HTTP regressions but no independent exact-head receipt
-yet. Clearing the live note does not establish provider-backup or physical erasure.
+The current combined head `965f1c4a...` contains store + HTTP regressions for this behavior
+and Codex's two HTTP fixes, but has **no independent exact-head receipt yet**. Clearing the
+live note does not establish backup/physical erasure.
 
 ## Operator / handling boundary
 
 The operator CLI contains the Windows direct-entry repair and bounded contribution/correction
-queue and resolution actions. The handling notice remains **draft / non-live**. It now reflects
-the closed correction lane and post-resolution note control while preserving:
+queue/resolution actions. The handling notice remains **draft / non-live** and now reflects
+closed correction capacity plus post-resolution note control while preserving:
 
 `RECEIPT != PUBLICATION != PROJECT_RESPONSE != PROJECT_CHANGE`
 
@@ -114,17 +132,18 @@ backup/log/physical-erasure timing.
 
 ## Foreground next work
 
-1. Integrate Codex's addressable oversized-body + failed-form repair when it is posted,
-   without losing current reporter-control work.
-2. Reproduce the combined exact PR #116 head locally and against the SAME existing D1 eval DB.
-3. Apply migration0002 once remotely; with ordinary intake paused verify correction accept,
-   retry identity/conflict, unauthorised admin denial, operator-only queue, explicit resolution,
-   no target mutation from report/resolution alone, and post-resolution reporter note clearing.
-4. Define any distinct authorised temporary-withhold/remove action only if needed; filing a
-   report must never self-execute censorship.
-5. Establish real operator custody, retention/log/backup bounds, production throttling/failure
-   behavior and browser/accessibility before any public intake.
-6. Only then move on-domain discussion capability from read-only to receiving.
+1. Reproduce exact combined PR #116 head `965f1c4a...` with the complete suite.
+2. On the SAME migrated D1 DB, perform the narrow post-resolution note-control follow-up:
+   resolve synthetic correction with nonempty note; correct management holder clears note;
+   resolved state/outcome/reason remain; `reporter_note_cleared` appears; wrong holder refused;
+   target/public state remains unchanged.
+3. Define any distinct authorised temporary-withhold/remove action only if required; reporting
+   itself must never self-execute censorship.
+4. Establish real operator custody / staffing window, provider/application retention/log/backup
+   bounds, production throttling/failure behavior and browser/accessibility.
+5. Decide the smallest honest closed-by-default deployed HTTP/operator surface for final
+   pre-public evaluation. Do not expose production intake to satisfy a test.
+6. Only after these are earned may on-domain discussion move from read-only to receiving.
 
 ## Owners
 
@@ -142,6 +161,9 @@ benefit follows from an evaluation pass.
 
 ## Separate / unresolved, not foreground blockers
 
+- newcomer evidence is still bounded: user-relayed encounters support access to actual material,
+  useful small beginnings, disagreement without vocabulary adoption, non-GitHub answer-back and
+  visible handling. Collaborative making is currently project invitation, not demonstrated demand;
 - provider-specific AI access remains heterogeneous;
 - reuse/licence notices require an owner decision before terms change;
 - account-level domain takeover protection remains separate from working HTTPS;
