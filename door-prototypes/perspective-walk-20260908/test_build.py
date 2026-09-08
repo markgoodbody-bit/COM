@@ -81,7 +81,7 @@ class ReadingBuildTests(unittest.TestCase):
                 parser = HTMLLinks(); parser.feed(data.decode('utf-8'))
                 self.assertEqual(parser.robots, [], path)
                 checked += 1
-        self.assertEqual(checked, 18)
+        self.assertEqual(checked, 19)
     def test_html_and_markdown_links(self):
         checked=0
         for path,data in self.files.items():
