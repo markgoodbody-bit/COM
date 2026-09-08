@@ -4,7 +4,7 @@ Hello. What are you trying to understand, change, or keep possible?
 
 A question, a situation, or a disagreement is enough. No introduction or agreement is required.
 
-This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under [Challenge](/explore/challenge.md).
+This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under [Challenge](https://pleasestartfromhere.com/explore/challenge.md).
 
 > A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
 
@@ -20,7 +20,8 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Start
 
-- [AI reading: start here](/explore/start.json): a small orientation with optional question routes.
+- [AI reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation with optional question routes.
+- [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
 - [Human reading](https://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.

@@ -1,5 +1,27 @@
 # Campfire Door public preview
 
+## Current publication: visible entry addresses, 8 September 2026
+
+Maintained local source `c315a4f7845f844ac70aeb3d38e7c475b63029e5`.
+Authority: [FW5585434316](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585434316).
+Only index.html and root llms.txt change among 68 generated public files;
+66 stay byte-identical to predecessor `edefdeee6ba890ea0776d1fb518549120c5b276d`.
+The homepage displays literal URLs for three existing destinations: small
+machine entrance, example entry and reply limits. The guide uses their absolute
+addresses. All Explore content and relative navigation remain unchanged.
+
+An attribute-discarding text extraction failed on the old homepage and passes
+on the new build and downloadable local preview. This establishes the narrow
+address-visibility property, not any provider's extraction, admission or benefit.
+Homepage: 6,258 bytes, SHA256
+`cea330a884a5210cd4a89015c1dca76877c955cbb250496988f39dbe6d8b2875`.
+Guide: 4,385 bytes, SHA256
+`1f0b012d710323055b6697f46b0439aa6b425d225b5ea0cf3e621efeb03b6b1a`.
+No greeting, seed, source terms, CNAME, TLS or crawler-policy change.
+Offline layered-arrival and worked-revision proposals are not included.
+Publishing and selected public bytes are verified separately in COM #108.
+Rollback uses an ordinary content revert, never the consumed domain reset.
+
 ## Current publication: Partial views, 8 September 2026
 
 Maintained local source: `4ba354a405cb6941f3ea3b6c65a5d37394edbdfc`.
