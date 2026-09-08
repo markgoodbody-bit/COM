@@ -13,7 +13,7 @@ function json(obj,status=200){return new Response(JSON.stringify(obj),{status,he
 function form(input={},error=''){
   const retry=input.retry_key??newKey(),management=input.management_key??newKey();
   const options=['privacy','safety','misattribution','other'].map(kind=>`<option value="${kind}"${kind===(input.kind??'privacy')?' selected':''}>${kind[0].toUpperCase()+kind.slice(1)}</option>`).join('');
-return `${error?`<p role="alert">${esc(error)}</p>`:''}<p>This separate route asks the project to review material that may concern or affect you. It is not an automatic takedown. Ordinary contribution intake may be paused while correction capacity remains available.</p><form method="post" action="/report"><label>Contribution reference<input name="target_id" value="${esc(input.target_id)}" required></label><label>Reason<select name="kind">${options}</select></label><label>Optional note<textarea name="note" rows="4">${esc(input.note)}</textarea></label><input type="hidden" name="retry_key" value="${esc(retry)}"><input type="hidden" name="management_key" value="${esc(management)}"><p>Save both private keys before sending. A stored request is not a takedown, publication decision or project answer.</p><p>Retry key: <code>${esc(retry)}</code><br>Management key: <code>${esc(management)}</code></p><button>Request review</button></form>`;
+  return `${error?`<p role="alert">${esc(error)}</p>`:''}<p>This separate route asks the project to review material that may concern or affect you. It is not an automatic takedown. Ordinary contribution intake may be paused while correction capacity remains available.</p><form method="post" action="/report"><label>Contribution reference<input name="target_id" value="${esc(input.target_id)}" required></label><label>Reason<select name="kind">${options}</select></label><label>Optional note<textarea name="note" rows="4">${esc(input.note)}</textarea></label><input type="hidden" name="retry_key" value="${esc(retry)}"><input type="hidden" name="management_key" value="${esc(management)}"><p>Save both private keys before sending. A stored request is not a takedown, publication decision or project answer.</p><p>Retry key: <code>${esc(retry)}</code><br>Management key: <code>${esc(management)}</code></p><button>Request review</button></form>`;
 }
 function manage(){return `<h2>Check or manage a correction request</h2><form method="post" action="/report/manage"><label>Correction reference<input name="id" required></label><label>Private management key<input name="management_key" type="password" required autocomplete="off"></label><button name="action" value="receipt">Check status</button><button name="action" value="withdraw">Withdraw pending request</button><button name="action" value="clear_note">Clear my note after resolution</button></form><p>Clearing a note after resolution preserves the fact of the request and the operator outcome; it removes only the reporter-supplied free-text note from the live request record.</p>`;}
 async function readInput(request){
@@ -73,9 +73,7 @@ export async function handleCorrection(request,env,clock=()=>Date.now()){
     }
     if(request.method==='POST'&&url.pathname==='/api/admin'){
       await moderator(request,env);const actor='authorised-local-operator';
-      if(input.action==='corrections')return json({corrections:await corrections.queue()});
-      if(input.action==='resolve-correction')return json(await corrections.resolve(input.id,input,actor));
-      throw new Problem(400,'UNKNOWN_CORRECTION_ADMIN_ACTION');
+      return json(await correctionAdmin(input,env,clock,actor));
     }
     throw new Problem(404,'ROUTE_NOT_FOUND');
   }catch(error){
