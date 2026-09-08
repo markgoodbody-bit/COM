@@ -1,5 +1,19 @@
 # Maintained Please Start From Here source
 
+## Delivered discussion reading and history
+
+Preview0.7.2 public81ca060433144a028ec78db294b4e9d878c3a1bf / Pages34240219144
+succeeded. At14:45:17Z,111 Git/build files and63 ordinary HTTPS responses matched,
+including discussion HTML/MD/directory and same-domain active next targets.
+COM5587003596 records scope, source identities and unchanged receiving gap.
+
+Existing history Edition0.5/D009 follows actual delivery: source74560b174fb24523186ba321a2fde4f3d23bad70,
+generator e63d4fa7c2f6533366ee80f55726cd9ac85e962b. MD20804bytes SHA256
+acf25114a35794c5e77864f3562d929a647d1a759b3589758789bffef4980965;
+HTML23581bytes SHA256b0067d5c640c6dcfb24a1bc92db8f1e4803dd0bb72b97e86a142f0330335c9f2.
+57 generator/history/discussion tests pass. Only historyMD/HTML and manifest
+history pins change in this follow-through; earlier entries remain intact.
+
 ## Preview 0.7.2: discussion reading, not reply access
 
 FW5586836238 supplies the complete editorial source9ceae9d27fd2b64550148bed622955b13a8740a6.
