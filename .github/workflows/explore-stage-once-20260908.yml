@@ -1,0 +1,165 @@
+name: Explore frozen build and delivery check 20260908
+on:
+  push:
+    branches: [framework/door-perspective-walk-20260908]
+    paths: [.github/workflows/explore-stage-once-20260908.yml]
+permissions:
+  contents: write
+concurrency:
+  group: explore-stage-once-20260908
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.repository == 'markgoodbody-bit/COM' && github.ref == 'refs/heads/framework/door-perspective-walk-20260908'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify frozen source, build a separate publication commit, check delivery
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, concurrent.futures, hashlib, importlib.util, json, os, pathlib, re, subprocess, sys, tempfile, time, urllib.error, urllib.parse, urllib.request
+          REPO = 'markgoodbody-bit/COM'
+          SOURCE = 'c20f644eda2eda0a5bdf9bb4fa8f8dc8f854fa2f'
+          BASE = 'a0b5a7c0dcedd39356d4a48c6c42e49015a26b44'
+          STAGE = 'framework/explore-built-20260908'
+          PREFIX = 'door-prototypes/perspective-walk-20260908/'
+          ORIGIN = 'https://pleasestartfromhere.com/'
+          EXPECTED_TREE = '18bbd9d058cae597df10eb867a77d503f26d98b66cd13c83642ce27243ffd91c'
+          PINS = {
+              'EXPLORE.md':'8203ecd1f8647b46ce0f6994f2159ffec8d925e2',
+              'README.md':'04b03297bce15411654568daac057eb90375061f',
+              'affected.json':'03ef658f4648cdc7c403fea9e2d91f0d7bddf87f',
+              'build.py':'d21a8926f6273522605dcca3134b48395bf34d0f',
+              'case.json':'ad5886f76343852b95631995b72e93d5f3d0a709',
+              'challenge.json':'84bce87e1cd31e684980c6069297c1d6568a1236',
+              'entry.json':'8c28eddd03ff926f15b070c958da8509e7f1e33e',
+              'library.json':'2a5fc616b53c2a813eff1dad987fe42c28139b3e',
+              'route.json':'dd1330a99ea313ac368135cf7b24c10133042e71',
+              'test_build.py':'9fccff8bae68166ad965b607fdb7dbd3987af7b8'}
+          def api(path, data=None):
+              req = urllib.request.Request('https://api.github.com/repos/'+REPO+'/'+path,
+                  data=None if data is None else json.dumps(data).encode(),
+                  headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'], 'Accept':'application/vnd.github+json', 'Content-Type':'application/json', 'User-Agent':'PSFH-bounded-build', 'X-GitHub-Api-Version':'2022-11-28'})
+              with urllib.request.urlopen(req, timeout=25) as r:
+                  return json.load(r)
+          def file_at(path, ref):
+              obj = api('contents/'+urllib.parse.quote(path, safe='/')+'?ref='+ref)
+              if obj.get('encoding') != 'base64' or obj.get('type') != 'file':
+                  raise ValueError('Unexpected file response: '+path)
+              return base64.b64decode(obj['content'])
+          def sha(data): return hashlib.sha256(data).hexdigest()
+          def current(): return api('git/ref/heads/gh-pages')['object']['sha']
+          if current() != BASE:
+              raise RuntimeError('Publishing base moved; do not overwrite. Reconcile through COM.')
+          try:
+              api('git/ref/heads/'+STAGE)
+          except urllib.error.HTTPError as e:
+              if e.code != 404: raise
+          else:
+              raise RuntimeError('Staging ref already exists; no duplicate publication attempt.')
+          with tempfile.TemporaryDirectory() as temp:
+              root = pathlib.Path(temp)
+              for name, pin in PINS.items():
+                  data = file_at(PREFIX+name, SOURCE)
+                  actual = hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+                  if actual != pin: raise RuntimeError('Frozen source mismatch: '+name)
+                  (root/name).write_bytes(data)
+              child_env = {k:v for k,v in os.environ.items() if k != 'GH_TOKEN'}
+              subprocess.run([sys.executable,'-m','unittest','-v','test_build'],cwd=root,env=child_env,check=True,timeout=60)
+              spec = importlib.util.spec_from_file_location('frozen_builder',root/'build.py')
+              mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+              files, report = mod.generate(root)
+              if report['output_tree_sha256'] != EXPECTED_TREE or len(files) != 57:
+                  raise RuntimeError('Generated output differs from reviewed build')
+              print('FROZEN_BUILD_MATCHED '+json.dumps(report),flush=True)
+              preserved = {p:file_at(p,BASE) for p in ['CNAME','seed.txt','style.css','robots.txt','sitemap.xml','404.html','.nojekyll']}
+              if preserved['CNAME'].strip() != b'pleasestartfromhere.com':
+                  raise RuntimeError('Unexpected domain binding')
+              old = {p:file_at(p,BASE) for p in ['index.html','llms.txt','manifest.json','README.md']}
+              index = old['index.html'].decode()
+              needle = '<section aria-labelledby="reading">'
+              if index.count(needle) != 1 or '/explore/' in index:
+                  raise RuntimeError('Homepage insertion basis changed')
+              link = '<p class="route"><a href="/explore/">Explore the connected reading space</a> — small accounts, other perspectives and challenges. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>'
+              files['index.html'] = index.replace(needle,needle+link,1).encode()
+              if files['index.html'].decode().replace(link,'',1) != index:
+                  raise RuntimeError('Unexpected homepage change')
+              files['llms.txt'] = old['llms.txt'] + b'\n## Optional connected readings\n\n- [Explore](/explore/index.md): small accounts, alternative positions and challenges; no required sequence.\n- [Explore machine map](/explore/map.json): independently fetchable resources, sizes and source identities.\n'
+              manifest = json.loads(old['manifest.json'])
+              manifest['routes'].update(explore='/explore/',explore_text='/explore/index.md',explore_map='/explore/map.json')
+              manifest['provenance']['explore_source_commit'] = SOURCE
+              manifest['provenance']['explore_source_path'] = PREFIX
+              files['manifest.json'] = (json.dumps(manifest,ensure_ascii=False,indent=2)+'\n').encode()
+              readme = old['README.md'].decode()
+              readme = re.sub(r'Intended `index.html`: [\d,]+ bytes, SHA-256\n`[0-9a-f]{64}`\.',
+                  'Intended `index.html`: '+format(len(files['index.html']),',')+' bytes, SHA-256\n`'+sha(files['index.html'])+'`.',readme,count=1)
+              note = ('\n## Explore 0.2 additive publication — 8 September 2026\n\n'
+                  'Built from COM PR114 source `'+SOURCE+'`, directory `'+PREFIX+'`.\n'
+                  'The 57 generated `explore/` files have deterministic output-tree SHA256 `'+EXPECTED_TREE+'`.\n'
+                  'Only root discovery links/map and this publishing guide changed outside that directory.\n'
+                  'CNAME, seed, CSS, existing crawler/indexing policy and account settings are unchanged.\n'
+                  'This commit is source publication, not proof of public HTTPS or reader benefit.\n\n'
+                  'Future site builds MUST preserve or regenerate `explore/` from the pinned builder; do not\n'
+                  'silently drop it when copying the old eight-file local build. Codex should incorporate the\n'
+                  'same generated assets and discovery additions into the maintained local project.\n'
+                  'Rebuild command: `python build.py --output NEW_EMPTY_STAGING_DIRECTORY`; copy only its\n'
+                  '`explore/` child, never the COM source branch. Run `python -m unittest -v test_build` first.\n'
+                  'The root temporary HTTP restoration remains the separate TLS task. Explore has relative\n'
+                  'navigation and intended HTTPS machine-index links; certificate readiness is not inferred.\n'
+                  'Rollback is a normal revert of the additive publication commit; no domain reset.\n')
+              files['README.md'] = (readme+note).encode()
+              if set(files) - {p for p in files if p.startswith('explore/')} != set(old):
+                  raise RuntimeError('Unapproved output outside Explore')
+              if current() != BASE: raise RuntimeError('Publishing base moved during build')
+              base_tree = api('git/commits/'+BASE)['tree']['sha']
+              tree = api('git/trees',{'base_tree':base_tree,'tree':[{'path':p,'mode':'100644','type':'blob','content':b.decode('utf-8')} for p,b in sorted(files.items())]})
+              commit = api('git/commits',{'message':'Publish Explore 0.2 static readings from frozen PR114 source '+SOURCE,'tree':tree['sha'],'parents':[BASE]})
+              stage = api('git/refs',{'ref':'refs/heads/'+STAGE,'sha':commit['sha']})
+              receipt = {'state':'STAGED_NOT_PUBLISHED','commit':commit['sha'],'parent':BASE,'source':SOURCE,'files_added_or_changed':len(files),'stage_ref':STAGE,'build':report}
+              print('STAGE_RECEIPT '+json.dumps(receipt),flush=True)
+              with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as s:
+                  s.write('## Frozen Explore build\n\n```json\n'+json.dumps(receipt,indent=2)+'\n```\n')
+              # This job never advances gh-pages. The connector may promote the staged
+              # commit with a non-force update after inspection. This bounded one-shot
+              # check has no scheduler or recurring process and never bypasses TLS.
+              def fetch(url):
+                  req = urllib.request.Request(url,headers={'User-Agent':'PSFH-public-delivery-check','Cache-Control':'no-cache'})
+                  with urllib.request.urlopen(req,timeout=6) as r:
+                      if url.startswith('https:') and not r.url.startswith('https:'):
+                          raise RuntimeError('HTTPS downgraded by redirect')
+                      return r.status, r.url, r.read(),r.headers.get('Content-Type','')
+              deadline = time.monotonic()+180
+              delivery = {'state':'PUBLIC_DELIVERY_NOT_OBSERVED','last_errors':{}}
+              while time.monotonic()<deadline:
+                  found = False
+                  for origin in [ORIGIN,ORIGIN.replace('https:','http:',1)]:
+                      try:
+                          code, final, data, mime = fetch(origin+'explore/map.json')
+                          if code == 200 and data == files['explore/map.json']:
+                              checks = dict(files)
+                              checks.pop('README.md')
+                              checks.update(preserved)
+                              def check(item):
+                                  p, expected = item
+                                  status, url, body, kind = fetch(origin+p)
+                                  return {'path':p,'match':status==200 and body==expected,'status':status,'url':url,'content_type':kind,'sha256':sha(body)}
+                              with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+                                  results = list(pool.map(check,sorted(checks.items())))
+                              if not all(x['match'] for x in results):
+                                  raise RuntimeError('One or more served files differ from publication')
+                              for p, expected in [('',files['index.html']),('explore/',files['explore/index.html'])]:
+                                  code, final, body, mime = fetch(origin+p)
+                                  if code!=200 or body!=expected: raise RuntimeError('Directory entry mismatch: '+p)
+                              delivery = {'state':'HTTPS_DELIVERY_MATCHED' if origin.startswith('https:') else 'HTTP_ONLY_DELIVERY_MATCHED','origin':origin,'verified_files':len(results),'commit':commit['sha'],'results':results}
+                              found = True; break
+                      except Exception as e:
+                          delivery['last_errors'][origin] = type(e).__name__+': '+str(e)[:260]
+                  if found: break
+                  time.sleep(5)
+              print('PUBLIC_DELIVERY_RECEIPT '+json.dumps(delivery),flush=True)
+              with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as s:
+                  s.write('\n## Public delivery (separate from build)\n\n```json\n'+json.dumps(delivery,indent=2)+'\n```\n')
+          PY
