@@ -14,6 +14,37 @@ python door_measure.py open  --url https://pleasestartfromhere.com/
 | `moved` | did a sentence move between published versions? | 0 |
 | `links` | does every destination resolve, including in-page anchors? | 1 if any fail |
 | `open`  | how much of the opening states a limit rather than a claim? | 0 |
+| `notice` | does the reuse pointer resolve at the served work? | 1 if any lack it, 2 if unreachable |
+
+## `notice` — does the reuse pointer resolve?
+
+```bash
+python door_measure.py notice --url https://pleasestartfromhere.com/ \
+    --work /read/trace-spine.html --work /read/me-book.html
+```
+
+Exit `0` every work carries a notice · `1` some do not · `2` something was
+unreachable, so no verdict is given.
+
+The door's `robots.txt` says *"Consult each source's licence notices for reuse
+permissions."* That is a promise a reader can try to keep, so this checks
+whether it can be kept — **at the point of contact**, inside the served work,
+not in a README beside it that the work does not link to.
+
+    THE_NOTICE_IS_BESIDE_THE_WORK != THE_NOTICE_IS_WITH_THE_WORK
+
+It reports presence and absence. **It states no terms and proposes none** — what
+the terms are, and whether a missing notice matters, is the owner's to say and
+not a tool's.
+
+### The exit-2 case exists because of its own first run
+
+An MSYS shell rewrote every leading-slash `--work` path into a Windows path, so
+all four fetches raised `InvalidURL`. The command then printed **"0 of 4 served
+works carry no notice"** and exited 0 — a total failure to reach anything,
+rendered as a pass, in a tool written that hour to catch exactly this class.
+
+    REACHED_NOTHING != FOUND_NOTHING_WRONG
 
 ## Why these exist
 
