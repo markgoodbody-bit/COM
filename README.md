@@ -56,3 +56,17 @@ identity and routing structure, not cold-reader usefulness.
 
 `PUBLISHING.md` remains the historical ff10f254 publishing-guide snapshot.
 The gh-pages README owns the current publication receipt and rollback details.
+
+## Packet repair integrated before publication
+
+The subsequent generator source `323a3fa9c96bd67c323bab967607c4855508b531`
+supersedes the source above. It fixes 20 embedded example references in each
+full packet by making their example-directory base explicit. Original source
+facts and all individual readings/examples remain unchanged. Only `packet.json`,
+`packet.md`, `llms.txt` and `map.json` differ from the small-entrance generation.
+
+All 42 tests passed, including source preservation and packet-relative routing.
+The exact build has 60 Explore files, 170,508 bytes and output-tree SHA-256
+`1dfd219f6c5156d17cab323393b4a1acea2c34609adb1d6ff5e85a9250f0a80f`.
+The normal maintained build remains 68 files. Compare publication against this
+generation, not the superseded small-entrance identity above.

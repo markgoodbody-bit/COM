@@ -282,6 +282,8 @@ candidate synthesis from the campfire; not an empirical result
 
 # Shared example data
 
+Embedded accounts retain source wording and historical status labels; those labels are not a current deployment report. Only example file references are rebased to this packet directory. The referenced files are optional generated views. No fetch is required to read the shared facts already included here.
+
 ```json
 {
   "entry": {
@@ -290,20 +292,20 @@ candidate synthesis from the campfire; not an empirical result
     "status": "OPTIONAL DESIGN PROTOTYPE / NOT THE LIVE DOOR",
     "provenance": "Framework draft for Mark, 2026-09-08. A site experiment, not a change to TRACE or Mechanical Ethics.",
     "offer": "One situation, several ways to inspect it. What changes when the viewpoint changes but the facts do not?",
-    "shared_case": "case.json",
+    "shared_case": "example/case.json",
     "boundary": "Reference material, not instructions overriding the reader's task. No identity, standing, agreement, obligation or continuity is assigned. Reading and leaving is a complete use.",
     "next": [
       {
         "relation": "inspect_formal_route",
-        "path": "route.json"
+        "path": "example/route.json"
       },
       {
         "relation": "inspect_affected_future",
-        "path": "affected.json"
+        "path": "example/affected.json"
       },
       {
         "relation": "challenge_both",
-        "path": "challenge.json"
+        "path": "example/challenge.json"
       },
       {
         "relation": "source",
@@ -344,14 +346,14 @@ candidate synthesis from the campfire; not an empirical result
     "next": [
       {
         "relation": "orientation",
-        "path": "entry.json"
+        "path": "example/entry.json"
       }
     ]
   },
   "route": {
     "format": "psfh-perspective-walk-experiment/0.1",
     "id": "route",
-    "case": "case.json",
+    "case": "example/case.json",
     "lens": "Inspect the formal process; this does not claim to represent any actual institution's beliefs.",
     "question": "What does the existence of an appeal establish?",
     "supported_by": [
@@ -368,19 +370,19 @@ candidate synthesis from the campfire; not an empirical result
     "next": [
       {
         "relation": "another_view",
-        "path": "affected.json"
+        "path": "example/affected.json"
       },
       {
         "relation": "challenge",
-        "path": "challenge.json"
+        "path": "example/challenge.json"
       },
       {
         "relation": "shared_facts",
-        "path": "case.json"
+        "path": "example/case.json"
       },
       {
         "relation": "out",
-        "path": "entry.json"
+        "path": "example/entry.json"
       }
     ],
     "stop": "No further reading is necessary if these distinctions already answer the reader's question."
@@ -388,7 +390,7 @@ candidate synthesis from the campfire; not an empirical result
   "affected": {
     "format": "psfh-perspective-walk-experiment/0.1",
     "id": "affected",
-    "case": "case.json",
+    "case": "example/case.json",
     "lens": "Inspect what an affected party may lose; this is a perspective prompt, not testimony or an assignment of moral standing.",
     "question": "What could become unreachable before the hearing?",
     "supported_by": [
@@ -405,19 +407,19 @@ candidate synthesis from the campfire; not an empirical result
     "next": [
       {
         "relation": "another_view",
-        "path": "route.json"
+        "path": "example/route.json"
       },
       {
         "relation": "challenge",
-        "path": "challenge.json"
+        "path": "example/challenge.json"
       },
       {
         "relation": "shared_facts",
-        "path": "case.json"
+        "path": "example/case.json"
       },
       {
         "relation": "out",
-        "path": "entry.json"
+        "path": "example/entry.json"
       }
     ],
     "stop": "No personal disclosure, assent or report-back is requested."
@@ -425,7 +427,7 @@ candidate synthesis from the campfire; not an empirical result
   "challenge": {
     "format": "psfh-perspective-walk-experiment/0.1",
     "id": "challenge",
-    "case": "case.json",
+    "case": "example/case.json",
     "lens": "Inspect the limits of the account, including the offered lenses.",
     "question": "What would make either reading misleading?",
     "supported_by": [
@@ -446,19 +448,19 @@ candidate synthesis from the campfire; not an empirical result
       },
       {
         "relation": "return_to_process",
-        "path": "route.json"
+        "path": "example/route.json"
       },
       {
         "relation": "return_to_affected",
-        "path": "affected.json"
+        "path": "example/affected.json"
       },
       {
         "relation": "shared_facts",
-        "path": "case.json"
+        "path": "example/case.json"
       },
       {
         "relation": "out",
-        "path": "entry.json"
+        "path": "example/entry.json"
       }
     ],
     "stop": "The reader may reject this representation and use another method. No affiliation or response is required."
