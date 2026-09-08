@@ -1,5 +1,38 @@
 # Campfire Door public preview
 
+## Preview 0.8.1: primary title and Winslow Homer attribution
+
+Maintained source `3f5212e0a18627482ac972c6610a42a61ee54ee9`, based on
+`e03759f85a99b5eb5601df4ad400171d525307ed`. Publication direction:
+[FW5592807329](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329).
+
+Please Start From Here is the main title, with the existing guiding question below.
+The unaltered 1880 Camp Fire follows the opening choices and boundaries. Its visible
+credit reaches a small artist/source entry and authoritative Met sources. The Met
+marks the work Public Domain and supplies Open Access CC0 image use; this does not
+change project licences or imply endorsement. The local image is 2,350,423 bytes,
+SHA-256 `7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1`.
+The complete provenance record is `art/camp-fire.json`.
+
+Both maintained and reviewed checkouts produced identical 113-file builds. Against
+publication `0cff0265`, 101 generated files are unchanged; ten change and two art
+files are added. No path is removed. All Explore content, raw TRACE/ME/PDF/fixed
+editions, discussion, seed and crawler policy are unchanged. Orientation changes
+only its edition label; four complete source-text views update their wrapper edition.
+D012 records the title/art rationale and limits without inventing delivery or benefit.
+
+Build, 10 Node and 17 Python checks passed, including local HTTP checks for all 113
+outputs. A native dark-themed 320x800 readback showed readable title/art/credit and
+no horizontal overflow. First starting point y=543.88 is about 72 pixels later than
+the previous opening, a cost of the requested title hierarchy. Enlarged text, light
+theme and full keyboard/accessibility behaviour remain unestablished. No experimental
+teaching/index prototype is included. Actual Pages success and direct-domain readback
+must be reported separately in COM; these source checks are not served evidence.
+
+Rollback is an ordinary content revert to preceding publication `0cff0265`, preserving
+CNAME, .nojekyll, exact-byte attributes and the existing Pages configuration. No DNS,
+receiver, tracking, promotion, project licence or Sites registration change.
+
 ## Preview 0.8 follow-through: human-first opening and optional questions
 
 Maintained source e03759f85a99b5eb5601df4ad400171d525307ed, after accepted

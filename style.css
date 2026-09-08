@@ -28,6 +28,11 @@ h3 { font-size: 1.25rem; }
 h4 { font-size: 1rem; }
 p { margin: 0 0 1rem; max-width: 70ch; }
 .lead { font-size: 1rem; }
+.guiding-question { font-size: 1.25rem; line-height: 1.4; color: var(--foreground); }
+.camp-fire { max-width: 48rem; margin: 2.5rem auto 3rem; }
+.camp-fire img { display: block; width: 100%; height: auto; }
+.camp-fire figcaption { font-size: .9375rem; line-height: 1.5; margin-top: .75rem; color: var(--muted); }
+.artist-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 ul, ol { padding-inline-start: 1.5rem; }
 li { margin-block: .5rem; }
 code, pre { font-family: var(--mono); font-size: 1rem; }

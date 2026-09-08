@@ -1,6 +1,6 @@
 # Please Start From Here
 
-Site edition: Preview 0.8, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
+Site edition: Preview 0.8.1, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
 
 Hello. What are you trying to understand, change, or keep possible?
 
