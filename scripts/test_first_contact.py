@@ -63,6 +63,7 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('src="/art/camp-fire.jpg"', self.html)
         self.assertIn('alt="' + record['alt'] + '"', self.html)
         self.assertIn('loading="lazy"', self.html)
+        self.assertLess(self.html.index('<figcaption'), self.html.index('<img'))
         # The editorial revision moves the same art into the opening composition.
         # Direct reading routes precede it; the original detailed choices remain.
         self.assertLess(self.html.index('aria-label="Reading routes"'), self.html.index('<figure'))

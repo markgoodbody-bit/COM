@@ -64,3 +64,11 @@ remain unestablished unless a later explicit record supplies those observations.
 The already-recorded custom-domain safe-open refusal is not bypassed through
 another transport. Source/publishing identity and hosting success must not be
 reported as a fresh direct-domain root receipt.
+
+## Attribution follow-through
+
+FW5593126537 clarified that human authorship should be immediately legible rather
+than mistaken for generated decoration. The exact title/artist/museum/public-domain
+caption was moved above the image in DOM and visual order. The artist link and
+unaltered image remain. A regression asserts attribution-before-image order.
+This does not promise first-viewport visibility at every screen/text setting.

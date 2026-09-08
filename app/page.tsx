@@ -23,11 +23,11 @@ export default function Home() {
         <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
         </div>
         <figure className="camp-fire" aria-labelledby="camp-fire-credit">
-          <img src={CAMP_FIRE.local_image} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="lazy" decoding="async" />
           <figcaption id="camp-fire-credit">
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
+          <img src={CAMP_FIRE.local_image} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="lazy" decoding="async" />
         </figure>
         </div>
         <div className="first-movements" aria-label="Ways to begin">
