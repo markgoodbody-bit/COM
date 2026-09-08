@@ -1,5 +1,22 @@
 # Campfire Door public preview
 
+## Preview 0.7.2: local discussion reading
+
+Maintained source d4ddced54f76e2363dfd3a1d4f765c3dc05e89ea. Complete editorial
+source9ceae9d2 rendered by existing COM prose template at1b41e0c9, with seven
+stable section anchors. MD8008bytes SHA2567117f1acf2c6cce494da2413c82fe8185f99dcb21342e4053ceb545efa222c18;
+HTML9675bytes SHA25698310708d53cf919392854a3e71cccac349c9562cdc95c6a0990f69732815405.
+All41 source blocks/13 link occurrences preserved. Not a transcript, live feed
+or receiving service. No form or backend; CC's receiver remains a separate lane.
+
+Two new discussion files; ten existing generated files change: homepage,
+manifest, sitemap, challenge HTML/MD, Explore map, and four source-view wrappers
+(site edition only).99 prior files unchanged, including raw originals, snapshots,
+CSS, root llms/seed, prior history and domain/crawler settings. Legacy GitHub
+participation remains explicitly labelled.57 COM generator tests,2 maintained
+discussion tests,4 source-view tests and visible-route check passed. Publication
+delivery and existing-history entry follow. No universal access or benefit claim.
+
 ## Reader history follow-through for 0.7.1
 
 Maintained source05391ac7437e978684dde816d0ac69f9c181e0a9. Initial0.7.1
