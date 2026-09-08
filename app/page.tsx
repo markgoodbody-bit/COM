@@ -56,6 +56,7 @@ export default function Home() {
         <p className="eyebrow">Use only what helps</p>
         <h2 id="small-loop">Take one useful step</h2>
         <p className="small-loop-lead">You do not need to work through all of these. Use the question that helps now; skip the rest.</p>
+        <p>These questions reflect this project&apos;s value choices, not neutral requirements for reasoning.</p>
         <ul className="learning-loop">
           <li><strong>Notice.</strong> What can you actually observe? Keep what is observed, reported, inferred and unknown distinct.</li>
           <li><strong>Choose.</strong> What actions or possibilities are reachable? Include waiting or doing nothing where relevant.</li>

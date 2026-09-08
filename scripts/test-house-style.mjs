@@ -72,8 +72,8 @@ test('declared light and dark text pairs meet the selected 4.5:1 floor', async (
     return channels[0] * .2126 + channels[1] * .7152 + channels[2] * .0722;
   };
   for (const block of [css.split('@media')[0], css.split('@media (prefers-color-scheme: dark)')[1].split('* {')[0]]) {
-    const tokens = Object.fromEntries([...block.matchAll(/--([a-z]+): (#[0-9a-f]{6})/g)].map(m => [m[1], m[2]]));
-    for (const background of ['background', 'surface', 'panel']) {
+    const tokens = Object.fromEntries([...block.matchAll(/--([a-z-]+): (#[0-9a-f]{6})/g)].map(m => [m[1], m[2]]));
+    for (const background of ['background', 'surface', 'panel', 'wash', 'warm-panel']) {
     for (const key of ['foreground', 'muted', 'accent', 'visited']) {
       const values = [luminance(tokens[key]), luminance(tokens[background])].sort((a, b) => a - b);
       const ratio = (values[1] + .05) / (values[0] + .05);

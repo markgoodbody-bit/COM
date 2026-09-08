@@ -32,6 +32,8 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 Optional questions, not a procedure to complete. Start with whichever helps.
 
+These questions reflect this project's value choices, not neutral requirements for reasoning.
+
 - Notice: what can you actually observe? Keep observed, reported, inferred and unknown distinct.
 - Choose: what actions or possibilities are reachable, including waiting or doing nothing where relevant?
 - Decide: what will you do, at what scale and with what uncertainty? A description is not permission.

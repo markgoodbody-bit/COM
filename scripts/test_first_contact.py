@@ -14,11 +14,18 @@ class Reading(HTMLParser):
     def __init__(self, html):
         super().__init__(convert_charrefs=True)
         self.text, self.links, self.alternates, self.tags = [], [], [], []
+        self.sections, self.open_sections = [], []
         self.feed(html)
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         self.tags.append(tag)
+        if tag == 'section':
+            section = {'attrs': attrs, 'tags': [], 'text': []}
+            self.sections.append(section)
+            self.open_sections.append(section)
+        for section in self.open_sections:
+            section['tags'].append(tag)
         if tag == 'a':
             self.links.append(attrs.get('href', ''))
         if tag == 'link' and attrs.get('rel') == 'alternate':
@@ -26,6 +33,12 @@ class Reading(HTMLParser):
 
     def handle_data(self, data):
         self.text.append(data)
+        for section in self.open_sections:
+            section['text'].append(data)
+
+    def handle_endtag(self, tag):
+        if tag == 'section':
+            self.open_sections.pop()
 
 
 class FirstContactTests(unittest.TestCase):
@@ -75,9 +88,9 @@ class FirstContactTests(unittest.TestCase):
             self.assertIn((mime, 'https://pleasestartfromhere.com' + path), self.page.alternates)
 
     def test_optional_handoff_survives_text_extraction(self):
-        self.assertIn('Visual candidate', self.text)
+        self.assertRegex(self.text, r'Visual candidate|Working preview')
         self.assertIn('not published', self.text)
-        self.assertIn('You can read this yourself, or hand this address to an AI', self.text)
+        self.assertRegex(self.text, r'(You can|If it helps,) read this yourself,? or hand this address to an AI')
         self.assertIn('No special prompt is required.', self.text)
         self.assertLess(self.text.index('Another perspective'), self.text.index('Something is happening'))
         self.assertIn('https://pleasestartfromhere.com/', self.page.links)
@@ -85,19 +98,32 @@ class FirstContactTests(unittest.TestCase):
     def test_optional_small_loop_after_movements_and_in_machine_reading(self):
         self.assertLess(self.text.index('I am only curious'), self.text.index('Take one useful step'))
         self.assertLess(self.text.index('Take one useful step'), self.text.index('Why this exists'))
-        cell = self.html.split('<section aria-labelledby="small-loop">')[1].split('</section>')[0]
-        self.assertEqual(Reading(cell).tags.count('li'), 6)
-        self.assertIn('not a procedure to complete', self.text)
-        self.assertIn('A description is not permission.', self.text)
+        cells = [s for s in self.page.sections if s['attrs'].get('aria-labelledby') == 'small-loop']
+        self.assertEqual(len(cells), 1)
+        cell = cells[0]
+        cell_text = ' '.join(' '.join(cell['text']).split())
+        self.assertEqual(cell['tags'].count('li'), 6)
+        self.assertEqual(cell['tags'].count('ul'), 1)
+        self.assertNotIn('ol', cell['tags'])
+        # Explicit optional-use properties, not a general semantic evaluator.
+        self.assertRegex(cell_text, r'not a procedure to complete|You do not need to work through all of these')
+        self.assertRegex(cell_text, r'Start with whichever helps|Use the question that helps now; skip the rest')
+        self.assertRegex(cell_text, r'[Tt]ake one useful piece and leave')
+        self.assertIn('A description is not permission.', cell_text)
+        disclosure = "These questions reflect this project's value choices, not neutral requirements for reasoning."
+        self.assertIn(disclosure, cell_text)
         recurrence = 'The same questions can recur at another depth without requiring the same answer or the same amount of detail.'
         self.assertIn(recurrence, self.text)
         machine = (ROOT / 'out/llms.txt').read_text(encoding='utf-8')
+        machine_cell = machine.split('## Take one useful step')[1].split('## Project sources')[0]
+        self.assertIn(disclosure, machine_cell)
         self.assertIn(recurrence, machine)
         self.assertIn('not a procedure to complete', machine)
         self.assertIn('A description is not permission.', machine)
         self.assertIn('You can take one useful piece and leave.', machine)
         for label in ['Notice', 'Choose', 'Decide', 'Responsibility', 'Repercussions', 'Check and correct']:
             self.assertIn(label + ':', machine)
+            self.assertIn(label + '.', cell_text)
         edition = subprocess.check_output(['node', '--input-type=module', '-e', "import {SITE_EDITION} from './scripts/site-edition.mjs';process.stdout.write(SITE_EDITION)"], cwd=ROOT).decode()
         self.assertIn('Site edition: Preview ' + edition, machine)
         self.assertNotIn('Site edition: Preview 0.7', machine)
