@@ -61,6 +61,27 @@ test('operator resolution is explicit and does not itself mutate the target cont
   await expectProblem(f.store.resolve(r.id,{outcome:'no_change',reason:'stale'},'operator'),'CORRECTION_STATE_CONFLICT');
 });
 
+test('reporter can clear their free-text note after resolution without erasing outcome or history',async t=>{
+  const f=fixture(t),input=draft(),r=await f.store.submit(input,'client');
+  await f.store.resolve(r.id,{outcome:'content_changed',reason:'Synthetic operator disposition'},'operator');
+  const cleared=await f.store.clearNote(r.id,input.management_key);
+  assert.equal(cleared.state,'resolved');
+  assert.equal(cleared.note,'');
+  assert.equal(cleared.operator_outcome,'content_changed');
+  assert.equal(cleared.operator_reason,'Synthetic operator disposition');
+  const actions=f.db.sql.prepare('SELECT action FROM correction_events ORDER BY id').all().map(x=>x.action);
+  assert.deepEqual(actions,['received','resolved','reporter_note_cleared']);
+  const again=await f.store.clearNote(r.id,input.management_key);
+  assert.equal(again.note,'');
+  assert.equal(f.db.sql.prepare("SELECT COUNT(*) AS n FROM correction_events WHERE action='reporter_note_cleared'").get().n,1);
+});
+
+test('note clearing is not a substitute for pending withdrawal',async t=>{
+  const f=fixture(t),input=draft(),r=await f.store.submit(input,'client');
+  await expectProblem(f.store.clearNote(r.id,input.management_key),'CORRECTION_NOT_RESOLVED');
+  assert.equal((await f.store.receipt(r.id,input.management_key)).note,input.note);
+});
+
 test('unauthenticated report never auto-hides or publishes anything',async t=>{
   const f=fixture(t),input=draft();await f.store.submit(input,'client');
   assert.equal(f.db.sql.prepare("SELECT COUNT(*) AS n FROM contributions WHERE state='published'").get().n,0);
