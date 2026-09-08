@@ -1,6 +1,7 @@
 import { Store, newKey, Problem } from '../door-receiver-20260908/src/store.js';
 import { handle } from '../door-receiver-20260908/src/handler.js';
 import { lostAcknowledgement } from './lost-ack-test';
+import { correctionEvaluation } from './correction-test';
 
 function check(value: unknown, label: string): asserts value {
   if (!value) throw Error(label);
@@ -18,10 +19,11 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     if (url.hostname !== '127.0.0.1' || url.search || request.headers.has('origin') ||
-        request.method !== 'POST' || !['/run', '/lost-ack'].includes(url.pathname) ||
+        request.method !== 'POST' || !['/run', '/lost-ack', '/correction'].includes(url.pathname) ||
         request.headers.get('X-PSFH-Evaluation') !== 'synthetic-only')
       return new Response('Local evaluation only', { status: 403 });
     if (url.pathname === '/lost-ack') return lostAcknowledgement(env);
+    if (url.pathname === '/correction') return correctionEvaluation(env);
     const store = new Store(env.DB);
     const passed: string[] = [];
     let id: string | undefined;
@@ -46,14 +48,14 @@ export default {
       check((await store.first('SELECT COUNT(*) AS n FROM contributions WHERE id=?', id)).n === 1, 'no duplicate');
       await refused(() => store.submit({...input, body: 'different'}, client), 'RETRY_CONTENT_CONFLICT');
       passed.push('same retry recovers while paused; changed retry refused');
-      check(!(await store.publicItems()).some(row => row.id === id), 'pending privacy');
+      check(!(await store.publicItems()).some((row: {id: string}) => row.id === id), 'pending privacy');
       await store.moderate(id, {action: 'publish', revision: 1, reason: 'Synthetic review'}, 'synthetic-operator');
       await store.respond(id, {revision: 1, body: 'Synthetic separate response'}, 'synthetic-operator');
-      check((await store.publicItems()).find(row => row.id === id)?.responses.length === 1, 'separate response');
+      check((await store.publicItems()).find((row: {id: string}) => row.id === id)?.responses.length === 1, 'separate response');
       passed.push('private pending, reviewed publication, separate response');
       const replacement = await store.revise(id, input.management_key, {revision: 1, body: 'Synthetic replacement', display_name: ''});
       check(replacement.revision === 2 && replacement.state === 'pending', 'revision state');
-      check(!(await store.publicItems()).some(row => row.id === id), 'replacement unpublishes');
+      check(!(await store.publicItems()).some((row: {id: string}) => row.id === id), 'replacement unpublishes');
       check((await store.rows('SELECT id FROM responses WHERE contribution_id=?', id)).length === 0, 'old response removed');
       await refused(() => store.moderate(id, {action: 'publish', revision: 1, reason: 'Stale'}, 'synthetic-operator'), 'MODERATION_STATE_CONFLICT');
       passed.push('replacement requires fresh review; stale approval refused');
@@ -75,11 +77,11 @@ export default {
       await refused(() => store.moderate(id, {action:'publish',revision:2,reason:'Stale after withdrawal'}, 'synthetic-operator'), 'MODERATION_STATE_CONFLICT');
       const last = await store.receipt(id, input.management_key);
       check(last.state === 'withdrawn' && last.body === null, 'withdrawal');
-      check(!(await store.publicItems()).some(row => row.id === id), 'withdrawn public');
-      const actions = (await store.rows('SELECT action FROM events WHERE contribution_id=? ORDER BY id', id)).map(row => row.action);
+      check(!(await store.publicItems()).some((row: {id: string}) => row.id === id), 'withdrawn public');
+      const actions = (await store.rows('SELECT action FROM events WHERE contribution_id=? ORDER BY id', id)).map((row: {action: string}) => row.action);
       check(JSON.stringify(actions) === JSON.stringify(['received','publish','revised','decline','reconsideration','publish','withdrawn']), 'exact audit events');
       passed.push('decline/reconsider/publish/withdraw and exact seven-event audit');
-      return Response.json({status:'PASS', source:'f06967a103d9f5c952b10bce56c00b0e88acc49f', id, passed, actions, limits:'Local workerd with remote D1 binding; not deployed HTTP service, crash durability or physical erasure.'});
+      return Response.json({status:'PASS', source:'current checkout; record its Git identity separately', id, passed, actions, limits:'Local workerd with remote D1 binding; not deployed HTTP service, crash durability or physical erasure.'});
     } catch (error) {
       return Response.json({status:'FAIL',id,passed,error:String(error)}, {status:500});
     } finally {
