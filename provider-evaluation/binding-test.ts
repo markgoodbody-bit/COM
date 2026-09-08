@@ -2,6 +2,7 @@ import { Store, newKey, Problem } from '../door-receiver-20260908/src/store.js';
 import { handle } from '../door-receiver-20260908/src/handler.js';
 import { lostAcknowledgement } from './lost-ack-test';
 import { correctionEvaluation } from './correction-test';
+import { noteControlEvaluation } from './note-control-test';
 
 function check(value: unknown, label: string): asserts value {
   if (!value) throw Error(label);
@@ -19,11 +20,12 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     if (url.hostname !== '127.0.0.1' || url.search || request.headers.has('origin') ||
-        request.method !== 'POST' || !['/run', '/lost-ack', '/correction'].includes(url.pathname) ||
+        request.method !== 'POST' || !['/run', '/lost-ack', '/correction', '/clear-note'].includes(url.pathname) ||
         request.headers.get('X-PSFH-Evaluation') !== 'synthetic-only')
       return new Response('Local evaluation only', { status: 403 });
     if (url.pathname === '/lost-ack') return lostAcknowledgement(env);
     if (url.pathname === '/correction') return correctionEvaluation(env);
+    if (url.pathname === '/clear-note') return noteControlEvaluation(env);
     const store = new Store(env.DB);
     const passed: string[] = [];
     let id: string | undefined;

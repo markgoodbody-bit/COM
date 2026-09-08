@@ -24,7 +24,7 @@ npm exec --yes --package=wrangler@4.129.1 -- wrangler types worker-configuration
 npm exec --yes --package=wrangler@4.129.1 -- wrangler dev --config wrangler.jsonc --show-interactive-dev-session=false
 ```
 
-POST `/run`, `/lost-ack` or `/correction` at the printed loopback URL with
+POST `/run`, `/lost-ack`, `/correction` or `/clear-note` at the printed loopback URL with
 `X-PSFH-Evaluation: synthetic-only`. Neither endpoint accepts submitted content.
 Inspect `status`, not merely HTTP completion. Stop the dev session afterwards.
 Do not use `--local`: it disables remote bindings and would change the test.
@@ -108,14 +108,53 @@ behaviour. Generated Wrangler4.129.1 types and current config schema were read.
 No strict checking of imported JavaScript is claimed. Older `/run` and `/lost-ack`
 were NOT rerun as part of the correction result.
 
+## Post-resolution note control, 17:25 UTC
+
+Integrated Framework965f1c4a5ce5362d0f6088ca47f89008bd57d4ef into provider
+branch bd6865518495b6f56e4895b8577ab1e0a024751a. The entire receiver subtree
+has an empty Git diff against that Framework head. Complete Windows suite39/39
+PASS. A merge conflict affected only return-line indentation; Framework's
+indentation was retained, and its direct correction-admin helper reuse was kept.
+
+Added `/clear-note` as a bounded synthetic recipe, not a publicly deployed
+management endpoint. No content, credential or action is taken from its caller.
+It reuses the earlier withdrawn synthetic target and never opens ordinary intake.
+Migration0002 was already present and was NOT reapplied. The earlier lifecycle
+matrix was not rerun. Generated Wrangler4.129.1 types were refreshed; TypeScript
+7.0.2 noEmit/allowJs/skipLibCheck passed after correcting the new test's receipt
+indexing type. No receiver runtime repair was needed for this follow-up.
+
+Provider `/clear-note` result17:25:27Z: PASS, four groups:
+
+1. Pending clear_note409 and wrong management key404 leave the note intact.
+2. Owner clear_note200 clears the live note while preserving id, target, kind,
+   resolved state, outcome, reason, created_at and closed_at.
+3. Repeated clearing and original submission retry leave the note empty and
+   exactly one reporter_note_cleared event; original retry does not restore text.
+4. Entire target row and public JSON unchanged; enabled0/ready_until0 throughout.
+
+Report f2f176d6-5919-4cfb-8e5e-4b7f456a1cbc. A separate remote SQL process after
+stopping workerd confirmed resolved/empty note/no_change, retained synthetic
+operator reason, events received/resolved/reporter_note_cleared, target still
+withdrawn/bodyNULL, zero published rows and intake disabled. Port8791 had no
+listener after shutdown. Earlier report94792df5 remains historical synthetic
+residue; its management key was not retained, so this run does not clear it.
+
+Live-row note clearing is not physical erasure of logs, backups or older storage.
+The target used here was already withdrawn, not a published-content takedown test.
+The operator calls traverse the real router inside workerd, not a standalone CLI
+over deployed HTTP. No new database, site change, public receiving, DNS change,
+login or paid-plan enrollment. Provider queries consume quota; invoice cost is
+not measured.
+
 ## Remaining work
 
 Keep public receiving closed. Review retention/notice and operational controls;
 exercise remote concurrent admission and a deployed-but-closed integration only
 within the established account/domain scope. Preserve the existing site, original
 database and local-only guard. Preview0.8 first-contact/style work is delivered;
-this evaluation does not change it. Correction resolution currently prevents the
-reporter from clearing the private note: Framework owns that narrow follow-up.
+this evaluation does not change it. Post-resolution note control is now reproduced
+at the scope above; real operator custody, retention and response handling remain.
 Operator disposition is a recorded assertion, not proof that content changed.
 No standalone CLI over provider HTTP, remote concurrency, live receiving,
 reader-benefit, backup purge or operational response guarantee is established.
