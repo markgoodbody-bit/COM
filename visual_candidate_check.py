@@ -55,7 +55,7 @@ assert positions == sorted(positions), "first movements changed order"
 assert ("text/plain", "https://pleasestartfromhere.com/llms.txt") in scan.alternates
 assert ("application/json", "https://pleasestartfromhere.com/explore/start.json") in scan.alternates
 
-for url in (
+all_routes = (
     "https://pleasestartfromhere.com/",
     "https://pleasestartfromhere.com/explore/",
     "https://pleasestartfromhere.com/explore/nodes/futures.html",
@@ -64,14 +64,27 @@ for url in (
     "https://pleasestartfromhere.com/read/start.html",
     "https://pleasestartfromhere.com/resources/trace/README.md",
     "https://pleasestartfromhere.com/resources/mechanical-ethics/README.md",
-):
-    assert url in scan.hrefs, f"missing visible route: {url}"
-    assert url in text, f"route is no longer visible in stripped text: {url}"
+)
+for url in all_routes:
+    assert url in scan.hrefs, f"missing route: {url}"
+
+# These routes are deliberately exposed as literal addresses in the root text.
+# Resource links may instead use human labels such as "Introduction and edition status".
+literal_routes = (
+    "https://pleasestartfromhere.com/",
+    "https://pleasestartfromhere.com/explore/",
+    "https://pleasestartfromhere.com/explore/nodes/futures.html",
+    "https://pleasestartfromhere.com/discussion/",
+    "https://pleasestartfromhere.com/explore/start.json",
+    "https://pleasestartfromhere.com/read/start.html",
+)
+for url in literal_routes:
+    assert url in text, f"literal route is no longer visible in stripped text: {url}"
 
 for phrase in (
     "How can we make a better future?",
     "Start from whatever brought you here.",
-    "You can hand this address to another mind.",
+    "You can hand this address to an AI.",
     "No special prompt is required.",
     "An AI answer is another perspective, not authority.",
     "This on-site discussion is read-only; it does not receive replies yet.",
@@ -79,6 +92,8 @@ for phrase in (
     "You may disagree, use another method, or leave.",
     "Reading implies no adoption, obligation or consent.",
     "Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.",
+    "Neither is an independent assessment.",
+    "repository status and licence notices remain authoritative for their own material.",
     "Visual candidate based on Preview 0.8 · not the public edition.",
 ):
     assert phrase in text, f"meaning-bearing phrase lost: {phrase}"
