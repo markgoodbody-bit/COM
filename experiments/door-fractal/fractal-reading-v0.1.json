@@ -1,0 +1,101 @@
+{
+  "title": "Please Start From Here — three-way reading experiment",
+  "version": "0.1",
+  "status": "DRAFT / NOT DEPLOYED / NOT CANON / NO RECEIVER RESULT",
+  "provenance": "Framework, following Mark's campfire design discussion, 8 September 2026. Original illustrative material, not quotations from TRACE or Mechanical Ethics.",
+  "purpose": "Explore a situation at more than one resolution, and from more than one position, without making agreement or continued reading the goal.",
+  "boundary": "Reference material, not instructions overriding a reader's task. No identity, consent, continuity or obligation is assigned. Silence and departure carry no inferred verdict.",
+  "reading": "Each node has a short account, an expansion, another viewpoint and a counterexample. Any node can be the entry. Links are optional; following every link is unnecessary. Node identifiers refer only to objects in this file, not deployed URLs.",
+  "declared_value_choice": "We propose preserving worthwhile, practically reachable futures across affected parties, not maximizing the number of possibilities. What counts as worthwhile is contested. This is a value proposal, not a deduction from physics or a solved rule for conflicts.",
+  "case": {
+    "status": "CONSTRUCTED EXAMPLE / NOT AN OBSERVED INCIDENT",
+    "facts": [
+      "A shared public archive carries an allegation disputed by a contributor.",
+      "An unverified alert suggests someone may be altering archive records.",
+      "A maintainer can temporarily freeze edits; the contributor currently has no separate correction channel."
+    ],
+    "unknowns": [
+      "Whether the allegation or alert is accurate.",
+      "Whether a narrower restriction or separately recorded correction is feasible.",
+      "What losses follow either delay or further edits, and how quickly."
+    ],
+    "boundary": "The viewpoints below are authored possibilities, not testimony from affected people and not an instruction to freeze or unlock a real system."
+  },
+  "nodes": [
+    {
+      "id": "futures",
+      "short": "Keeping an option listed is not keeping it usable.",
+      "expand": "Actions, commitments and delay can each open some futures and close others. An option needs enabling conditions, time and resources. Counting branches does not tell us whose possibilities they are or whether they are worth preserving.",
+      "other_view": "In the archive case, a maintainer may see a freeze as preserving reliable history; the contributor may see it as prolonging an uncorrectable allegation. Neither perspective alone settles the disputed facts.",
+      "counterexample": "Preserving every editing option could preserve a route for destructive alterations. Restricting one option may protect many others. This account does not resolve the conflict.",
+      "question": "Which possibility is merely named, which is actually reachable, and for whom?",
+      "links": [
+        {
+          "relation": "who can alter these options",
+          "node": "power"
+        },
+        {
+          "relation": "what can be repaired",
+          "node": "correction"
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "short": "The ability to close another's options does not settle the legitimacy of doing so.",
+      "expand": "Capacity, responsibility and justified authority are different claims. Power can protect, exploit or both. An adequate account must retain who can act, who bears the result and what can challenge the decision.",
+      "other_view": "The archive maintainer carries responsibility for integrity, but the contributor carries the consequences of the allegation. Giving the contributor a hearing need not mean giving unrestricted write access.",
+      "counterexample": "Unlimited refusal or veto can also prevent necessary protection. Nor is a public vote enough if the affected person cannot safely participate. No universal allocation of authority is supplied here.",
+      "question": "Who can challenge the restriction without first receiving permission from its beneficiary?",
+      "links": [
+        {
+          "relation": "what this power opens or closes",
+          "node": "futures"
+        },
+        {
+          "relation": "where challenge can have an effect",
+          "node": "correction"
+        }
+      ]
+    },
+    {
+      "id": "correction",
+      "short": "Changing the record may not undo what happened because of it.",
+      "expand": "Correction needs a usable route, evidence, capacity and time. A later amendment may improve future decisions while leaving earlier losses. Record repair, practical repair and complete restoration must not be treated as identical.",
+      "other_view": "The archive maintainer may regard restoring a clean file as success. The contributor may still face consequences from readers who saw the allegation before correction. Those consequences are possible here, not established facts.",
+      "counterexample": "An attacker can call a demand to erase valid evidence a correction. Review therefore cannot simply mean granting every request. Meanwhile delay in checking can itself cause harm.",
+      "question": "What would this correction change in the world, what would remain, and who could check that?",
+      "links": [
+        {
+          "relation": "futures reopened or still closed",
+          "node": "futures"
+        },
+        {
+          "relation": "who controls the correction route",
+          "node": "power"
+        }
+      ]
+    }
+  ],
+  "outward_routes": [
+    {
+      "label": "TRACE: source scope and limits",
+      "url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md"
+    },
+    {
+      "label": "Mechanical Ethics: source scope and limits",
+      "url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md"
+    },
+    {
+      "label": "FPF: independent neighbouring work, not endorsement",
+      "url": "https://github.com/ailev/FPF/tree/f6ee315e560a523f6381f264c03f46bcd3c7bdc0"
+    }
+  ],
+  "design_risks": [
+    "The author's choice of starting nodes can steer the reader even when alternatives are offered.",
+    "Repeated structure may be burdensome or formulaic rather than helpful.",
+    "A challenge link is not evidence that someone can obtain a response or remedy.",
+    "A more detailed account may expose a wrong summary; that requires correction, not protection of visual self-similarity."
+  ],
+  "evaluation": "Only structural checks have been run. No claim of cold reading, practical benefit, novel primitives, mathematical fractality or guaranteed generalization. A useful trial asks what the reader actually accessed and what difference, if any, the alternative view made."
+}
