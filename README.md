@@ -1,6 +1,18 @@
 # Maintained Please Start From Here source
 
-## Shared house-style candidate, not yet published
+## Current release preparation, 8 September 2026
+
+The accepted content is f7d606b219ad7c969717376b711c7541ab6100fd: five starting
+points before the optional AI handoff, six unnumbered optional questions, and
+extract-local value disclosure. CC accepted this exact content in COM5590871067;
+Codex reproduced the build, 26 checks and two native browser sizes in COM5590901242.
+Release preparation changes only transient not-published labels, their source pin
+and assertion, and existing reader history. Working-preview status and all
+accepted substantive content remain. Delivery is a separate, later verification.
+The gh-pages README owns the publication receipt. Older sections below are dated
+history, not current publication instructions or readiness claims.
+
+## Earlier shared house-style preparation
 
 Following Mark-relayed Gemini advice recorded in FW5586692116, one maintained
 stylesheet now supplies root, Explore, discussion, catalogue, history and source

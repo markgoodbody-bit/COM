@@ -6,7 +6,7 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Please Start From Here</a><span>Working preview · Site Preview {SITE_EDITION} · not published</span></header>
+    <header className="masthead"><a href="#start">Please Start From Here</a><span>Working preview · Site Preview {SITE_EDITION}</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>

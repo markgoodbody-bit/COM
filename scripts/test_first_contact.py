@@ -89,7 +89,7 @@ class FirstContactTests(unittest.TestCase):
 
     def test_optional_handoff_survives_text_extraction(self):
         self.assertRegex(self.text, r'Visual candidate|Working preview')
-        self.assertIn('not published', self.text)
+        self.assertNotIn('not published', self.text)
         self.assertRegex(self.text, r'(You can|If it helps,) read this yourself,? or hand this address to an AI')
         self.assertIn('No special prompt is required.', self.text)
         self.assertLess(self.text.index('I am only curious'), self.text.index('Another perspective'))
@@ -116,6 +116,7 @@ class FirstContactTests(unittest.TestCase):
         recurrence = 'The same questions can recur at another depth without requiring the same answer or the same amount of detail.'
         self.assertIn(recurrence, self.text)
         machine = (ROOT / 'out/llms.txt').read_text(encoding='utf-8')
+        self.assertNotIn('not published', machine)
         machine_cell = machine.split('## Take one useful step')[1].split('## Project sources')[0]
         self.assertIn(disclosure, machine_cell)
         self.assertIn(recurrence, machine)
