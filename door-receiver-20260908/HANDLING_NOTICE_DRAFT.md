@@ -43,7 +43,13 @@ Before publication, a contributor can replace or withdraw pending text using the
 
 A project reply remains separate from the contributor's words.
 
-**A removal route for an affected person other than the contributor is not implemented yet. Real intake must not open until there is a bounded way to report exposed information or request removal without having to repeat that material publicly.**
+A separate affected-person correction lane now exists in the **closed evaluation receiver**. It has reserved pending capacity independent of ordinary contribution intake, so a paused or full discussion queue is not intended to remove the correction route. A reporter can identify a contribution reference, choose a broad correction category, optionally add a short note, and retain private retry and management capabilities. The route does not require that the reporter repeat the allegedly exposed material publicly.
+
+A correction report is a request for review, not proof of harm and not automatic takedown authority. Filing or resolving the report does not by itself hide, delete or publish the target contribution. Any content change requires a distinct authorised action.
+
+The reporter can withdraw a pending request. In the current post-resolution control candidate, the management-capability holder can also clear the reporter-supplied free-text note after the operator has resolved the request. That operation is designed to preserve the fact that the request existed, its resolved state, the operator outcome/reason and an audit event recording that the reporter note was cleared. It is **not** a promise that provider backups or every earlier storage representation have been physically erased.
+
+This affected-person route is not public yet. It still requires exact-head/provider reproduction, operator-custody and retention evidence before it can support a live service promise.
 
 ## Retention: current evidence boundary
 
@@ -59,7 +65,9 @@ The live notice therefore must not promise deletion at an exact deadline or comp
 
 ## Capacity and pauses
 
-The first receiver design has bounded queue, body and rate limits plus an operator-readiness window. New intake is intended to pause when there is no current readiness check or capacity is exhausted. A pause should not disable existing receipt checks, contributor correction or withdrawal.
+The first receiver design has bounded queue, body and rate limits plus an operator-readiness window. New ordinary intake is intended to pause when there is no current readiness check or capacity is exhausted. A pause should not disable existing receipt checks, contributor correction or withdrawal.
+
+The affected-person correction lane has separate reserved queue/rate capacity in the closed prototype. That separation is deliberate: ordinary discussion congestion should not automatically make correction unreachable.
 
 An open form would therefore mean that the service currently has bounded receiving capacity, not that it is continuously staffed or that a response time is guaranteed.
 
@@ -69,11 +77,12 @@ Before real intake:
 
 1. exercise the deployed HTTP/operator route while the service remains synthetic and closed by default;
 2. establish the real operator route and custody;
-3. implement and test an affected-person removal/report path with reserved correction capacity;
-4. verify provider/application retention behavior well enough to say what removal actually means;
-5. verify production throttling and failure behavior;
-6. ensure the public machine-readable capability status and human wording come from the same release state;
-7. test withdrawal and correction while new intake is paused;
-8. publish this notice only after deployment unknowns are replaced by supported behavior.
+3. reproduce the affected-person correction path, including reserved capacity, reporter management and post-resolution note clearing, against the intended provider path;
+4. define and test any distinct authorised temporary-withhold/remove action without making an unauthenticated report self-executing;
+5. verify provider/application retention behavior well enough to say what removal actually means;
+6. verify production throttling and failure behavior;
+7. ensure the public machine-readable capability status and human wording come from the same release state;
+8. test withdrawal and correction while new ordinary intake is paused;
+9. publish this notice only after deployment unknowns are replaced by supported behavior.
 
 Until those are done, the public discussion page remains read-only and this receiver should not accept real contributions.

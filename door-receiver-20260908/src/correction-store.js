@@ -66,6 +66,25 @@ export class CorrectionStore {
     if(result[0].meta.changes!==1)throw new Problem(409,'CORRECTION_STATE_CONFLICT');
     return this.receipt(id,managementKey);
   }
+  async clearNote(id,managementKey){
+    const row=await this.owner(id,managementKey);
+    if(row.state!=='resolved')throw new Problem(409,'CORRECTION_NOT_RESOLVED');
+    if(row.note==='')return this.privateView(row);
+    const now=this.clock(),token=crypto.randomUUID();
+    const result=await this.db.batch([
+      this.statement(`UPDATE correction_requests SET note='',updated_at=?,mutation_token=?
+        WHERE id=? AND state='resolved' AND note!=''`,now,token,id),
+      this.statement(`INSERT INTO correction_events(correction_id,action,actor,created_at)
+        SELECT id,'reporter_note_cleared','reporter',? FROM correction_requests
+        WHERE id=? AND mutation_token=?`,now,id,token)
+    ]);
+    if(result[0].meta.changes!==1){
+      const current=await this.owner(id,managementKey);
+      if(current.state==='resolved'&&current.note==='')return this.privateView(current);
+      throw new Problem(409,'CORRECTION_STATE_CONFLICT');
+    }
+    return this.receipt(id,managementKey);
+  }
   async queue(){return this.rows(`SELECT id,target_id,kind,note,state,created_at,updated_at
     FROM correction_requests WHERE state='pending' ORDER BY created_at LIMIT 100`);}
   async resolve(id,input,actor){

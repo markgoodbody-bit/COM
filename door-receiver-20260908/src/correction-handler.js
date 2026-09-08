@@ -15,7 +15,7 @@ function form(input={},error=''){
   const options=['privacy','safety','misattribution','other'].map(kind=>`<option value="${kind}"${kind===(input.kind??'privacy')?' selected':''}>${kind[0].toUpperCase()+kind.slice(1)}</option>`).join('');
 return `${error?`<p role="alert">${esc(error)}</p>`:''}<p>This separate route asks the project to review material that may concern or affect you. It is not an automatic takedown. Ordinary contribution intake may be paused while correction capacity remains available.</p><form method="post" action="/report"><label>Contribution reference<input name="target_id" value="${esc(input.target_id)}" required></label><label>Reason<select name="kind">${options}</select></label><label>Optional note<textarea name="note" rows="4">${esc(input.note)}</textarea></label><input type="hidden" name="retry_key" value="${esc(retry)}"><input type="hidden" name="management_key" value="${esc(management)}"><p>Save both private keys before sending. A stored request is not a takedown, publication decision or project answer.</p><p>Retry key: <code>${esc(retry)}</code><br>Management key: <code>${esc(management)}</code></p><button>Request review</button></form>`;
 }
-function manage(){return `<h2>Check or withdraw a correction request</h2><form method="post" action="/report/manage"><label>Correction reference<input name="id" required></label><label>Private management key<input name="management_key" type="password" required autocomplete="off"></label><button name="action" value="receipt">Check status</button><button name="action" value="withdraw">Withdraw request</button></form>`;}
+function manage(){return `<h2>Check or manage a correction request</h2><form method="post" action="/report/manage"><label>Correction reference<input name="id" required></label><label>Private management key<input name="management_key" type="password" required autocomplete="off"></label><button name="action" value="receipt">Check status</button><button name="action" value="withdraw">Withdraw pending request</button><button name="action" value="clear_note">Clear my note after resolution</button></form><p>Clearing a note after resolution preserves the fact of the request and the operator outcome; it removes only the reporter-supplied free-text note from the live request record.</p>`;}
 async function readInput(request){
   const type=(request.headers.get('content-type')??'').split(';')[0].trim().toLowerCase();
   if(!['application/json','application/x-www-form-urlencoded'].includes(type))throw new Problem(415,'UNSUPPORTED_CONTENT_TYPE');
@@ -67,6 +67,7 @@ export async function handleCorrection(request,env,clock=()=>Date.now()){
     if(request.method==='POST'&&['/report/manage','/api/correction-manage'].includes(url.pathname)){
       let result;if(input.action==='receipt')result=await corrections.receipt(input.id,input.management_key);
       else if(input.action==='withdraw')result=await corrections.withdraw(input.id,input.management_key);
+      else if(input.action==='clear_note')result=await corrections.clearNote(input.id,input.management_key);
       else throw new Problem(400,'UNKNOWN_CORRECTION_ACTION');
       return browser?page('Correction request status',`<pre>${esc(JSON.stringify(result,null,2))}</pre>${manage()}<p><a href="/">Return</a></p>`):json(result);
     }

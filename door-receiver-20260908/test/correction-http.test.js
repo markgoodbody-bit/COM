@@ -43,9 +43,22 @@ test('operator resolution records an outcome but does not automatically mutate t
   assert.equal(f.db.sql.prepare('SELECT COUNT(*) AS n FROM contributions').get().n,0);
 });
 
+test('reporter can clear note after resolution while operator outcome remains',async t=>{
+  const f=fixture(t),input=report(),receipt=await (await f.call('/api/correction',input)).json();
+  await f.call('/api/admin',{action:'resolve-correction',id:receipt.id,outcome:'content_changed',reason:'Synthetic review changed the target.'},true);
+  const cleared=await f.call('/api/correction-manage',{action:'clear_note',id:receipt.id,management_key:input.management_key});
+  assert.equal(cleared.status,200);
+  const state=await cleared.json();
+  assert.equal(state.state,'resolved');assert.equal(state.note,'');
+  assert.equal(state.operator_outcome,'content_changed');
+  const row=f.db.sql.prepare('SELECT state,note,operator_outcome,operator_reason FROM correction_requests WHERE id=?').get(receipt.id);
+  assert.equal(row.state,'resolved');assert.equal(row.note,'');assert.equal(row.operator_outcome,'content_changed');
+  assert.equal(f.db.sql.prepare("SELECT COUNT(*) AS n FROM correction_events WHERE correction_id=? AND action='reporter_note_cleared'").get(receipt.id).n,1);
+});
+
 test('browser correction form exists but remains inside the hard local-only receiver guard',async t=>{
   const f=fixture(t),page=await f.call('/report');assert.equal(page.status,200);
-  const text=await page.text();assert.match(text,/not an automatic takedown/i);assert.match(text,/Save both private keys/i);
+  const text=await page.text();assert.match(text,/not an automatic takedown/i);assert.match(text,/Save both private keys/i);assert.match(text,/Clear my note after resolution/i);
   const remote={...f.env,APP_ORIGIN:'https://discussion.example.test'};
   const blocked=await handle(new Request(remote.APP_ORIGIN+'/report'),remote,()=>fixed);assert.equal(blocked.status,503);
 });
