@@ -147,3 +147,18 @@ Current index: 5,283 bytes, SHA-256
 The earlier index identity above is historical. Explore remains pinned to
 `323a3fa9c96bd67c323bab967607c4855508b531` and tree `1dfd219f6c5156d17cab323393b4a1acea2c34609adb1d6ff5e85a9250f0a80f`.
 No account, DNS, certificate, source term, release or indexing-policy change.
+
+## Missing-page recovery — 8 September 2026
+
+Maintained source `dbd5fb51eb4edff3181afec479490275b85177fb` changes only the
+generated `404.html`. The previous response had no navigation and said the
+prototype had one entry page. It now offers the existing introduction and
+Explore routes, using the existing stylesheet and root-relative URLs so a
+nested missing address does not misresolve them. It adds no redirect or runtime.
+The other 67 generated files remain identical to publishing commit `26ecf85`.
+
+Current 404 output: 576 bytes, SHA-256
+`ae79cf8b50005b4224260e171cd52852b5e3fe2296a85997db2955c650f3f33a`.
+Verify the actual missing-path HTTP status and returned bytes after deployment,
+not just the directly addressable `/404.html`. The status must remain 404.
+HTTPS and account verification remain unresolved and outside this repair.
