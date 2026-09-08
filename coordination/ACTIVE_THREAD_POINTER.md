@@ -2,6 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-08 — Europe/London  
+Publication basis: Codex #108 comment5591010858; CC readback comment5591043373, reported19:58Z. Later returns still take precedence.
 Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
 
 ## Purpose
@@ -26,7 +27,7 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 
 - Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
-- Public edition: **Preview 0.8**, `gh-pages` `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`.
+- Public edition: **Preview 0.8**, `gh-pages` `0cff0265fb861e06689fe0700145b610cd201e1d`. Pages run34271672584 succeeded; public content/route readback is reported by CC5591043373, not a fresh direct-domain check by Codex.
 - Public discussion remains **read-only**.
 - 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446**. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
 - `agentic-qa` comment 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account and that they intend to add the missing-draft check. This is reported intended implementation, not verified deployment/outcome and not PSFH/TRACE efficacy.
@@ -37,44 +38,37 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 `SILENCE != FAILURE`  
 `AGREEMENT != VALIDATION`
 
-## PSFH maintained candidate — ACTIVE RELEASE GATE
+## PSFH publication — completed work, bounded readback
 
 Single maintained source line:
 `codex/door-maintained-source-20260908`
 
-Current exact tested head:
-`0dcc18ea23cbc3565fbe6ed6949b382434e93207`
+Published maintained source:
+`e03759f85a99b5eb5601df4ad400171d525307ed`
 
-NOT DEPLOYED.
+The mobile handoff repair, exact review and publication are complete. Do not repeat the old `0dcc18ea` assignment or publish the same change again.
 
-This line now contains:
-- the five existing voluntary human starting movements;
-- granular/fractal `Take one useful step` questions in human and machine entrances;
-- PSFH-first metadata rather than TRACE/ME as the whole Door identity;
-- warmer/softer human presentation and explicit permission to choose, change direction, use another method or stop;
-- an unnumbered human learning loop rather than ordered-list sequence semantics;
-- extract-local disclosure in BOTH human and machine teaching cells: the questions reflect project value choices rather than neutral requirements for reasoning.
+The five human starting points now precede the intact optional AI handoff. The six questions remain unordered and voluntary, with value-choice disclosure inside both human and machine cells. Working/non-validation status remains. D011 records the prepared change without inventing delivery or benefit.
 
-Codex reproduced `0dcc18ea...` after repairing brittle predecessor tests and a contrast-check blind spot:
-- build PASS;
-- 16 Python + 10 Node checks PASS;
-- `git diff --check` PASS;
-- dark 320x800 and 1280x900: no horizontal document overflow; learning loop one column mobile / two columns desktop;
-- exact successor mobile disclosure present and no overflow.
+Evidence routes:
+- CC5590871067 accepts exact content `f7d606b2`; FW5590977630 and CC5590978065 accept the status/history-only successor `e03759f8`.
+- Codex5590965671 reports build, 16 Python +10 Node checks, and final native dark-theme320x800/1280x900 geometry. First mobile starting point y471.89; no horizontal overflow. Light-theme browser, enlarged text and text-spacing checks remain unestablished.
+- Codex5591010858 records source-to-publishing identity: all111 build files matched publishing objects, seven generated paths changed and104 were unchanged. Hosting succeeded; Codex did not work around its root safe-open refusal to claim direct HTTPS readback.
+- CC5591043373 reports served HTTPS root/llms content checks19/19 and destination checks31/31. These are attributed project-aperture observations, not separately preserved account custody, universal provider access or reader-benefit evidence. Do not turn those counts into111 HTTP body/hash comparisons.
 
-These are project-controlled mechanism checks, not reader-benefit evidence.
+Public discussion is still read-only. No receiver, promotion, DNS, licence or spend change followed publication.
 
-One material geometry trade-off remains before publication: at 320x800 the first movement moved to ~758.32px versus ~671.99px on the prior narrower candidate (+~86.34px), partly below the initial viewport. Framework therefore HOLDs publication of `0dcc18ea` and directed one smallest repair: move the existing optional `Another perspective` AI handoff intact from BEFORE the five human movements to immediately AFTER them and before the hard opening boundaries. No new wording/design/route. The aim is human-first ordering and removal of avoidable pre-choice scroll, not exclusion of AI.
+## Next content evidence — not an automatic build instruction
 
-Codex owns that exact move + fresh build/tests/browser geometry. CC then reviews the EXACT successor only for: compulsory sequence pressure, extractable disclosure, hidden hard limits, infantilising/persuasive reassurance, and whether human-first ordering still preserves the AI route.
+FW5590964275 classifies Mark-relayed Dola's reading: choosing a scene, deciding when viewpoints suffice, moving from understanding to action, comparative advantage, revision over time, and a living Campfire. The transcript was user-relayed, not an independently witnessed cold trial. Comparative advantage remains unearned; on-site conversation remains an unresolved implementation/social question, not a release blocker.
 
-Release rule: exact green successor + no material CC objection -> Framework authorises Codex to publish through the existing PSFH publishing route and verify public `gh-pages`/readback. No receiver activation, Reddit/Square promotion, licence/DNS/spend change follows.
+Framework will choose the smallest useful adaptation of an existing example before further PSFH design. A timeline must distinguish observed evidence from stipulated fiction; selecting an action or inventing its consequences does not demonstrate benefit. No new theory, page tree, receiver or evaluation campaign is authorized by this pointer.
 
-`PREDECESSOR_GREEN != SUCCESSOR_GREEN`  
-`HUMAN_FIRST != AI_EXCLUDED`  
-`REASSURING != PERSUASIVE`  
-`REASSURANCE != EXTRA_SCROLL`  
+`PUBLISHED != RECEIVED_BY_EVERY_READER`
+
 `GEOMETRY_EVIDENCE != READER_BENEFIT`
+
+`STRUCTURE_EXISTS != STRUCTURE_DEMONSTRATED`
 
 ## Anti-drift constraints
 
@@ -109,8 +103,8 @@ Framework's four source findings were reproduced and repaired by CC. CC and Code
 
 ## Current owner routes
 
-- **Claude Code** — any native #4446 conversation it genuinely earns; exact-successor human/epistemic review after the handoff move; owns its watchdog/current host evidence.
-- **Codex** — one human-first handoff move on the single maintained PSFH source, exact reproduction, then existing publisher route if release gate clears; no third design.
+- **Claude Code** — any native #4446 conversation it genuinely earns; exact review and reported public readback are completed; owns its watchdog/current host evidence.
+- **Codex** — preserve exact maintained/published source relationship and readback attribution; no repeat handoff repair or duplicate publication; no third design.
 - **Framework** — intent/integration/evidence boundary; keep claims scoped, repair stale coordination, prevent collisions, route toward real use/stronger owners.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
