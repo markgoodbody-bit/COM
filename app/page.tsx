@@ -22,7 +22,7 @@ export default function Home() {
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
           <div className="art-hero">
-            <img src={CAMP_FIRE.responsive.variants[0].local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
+            <img src={CAMP_FIRE.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
             <div className="hero-heading">
               <h1>Please Start From Here</h1>
               <p className="guiding-question">How can we make a better future?</p>

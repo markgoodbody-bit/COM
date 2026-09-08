@@ -34,6 +34,11 @@ at720w and86 at1440w. They were not regenerated here. The master has no ICC prof
 or EXIF orientation to strip. Resizing and re-encoding are lossy; viewing copies
 are not the museum's original file. A changed encoder/output requires review.
 
+FW5593496393 confirms5ff03dc as the integration base and retains the original
+as the fallback for browsers without responsive-image support. Such a browser
+can still load2.35MB. Modern source selection is not a universal payload ceiling.
+CC must review the exact candidate before public publication.
+
 Viewing copies are57,147 and255,138bytes; original2,350,423bytes. The sizes hint is
 a conservative estimate of the existing CSS slots. Browser choice depends on
 viewport, density, cache and implementation. The eager image may load below a short

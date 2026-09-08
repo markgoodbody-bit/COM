@@ -60,7 +60,7 @@ class FirstContactTests(unittest.TestCase):
         image = (ROOT / 'out/art/camp-fire.jpg').read_bytes()
         self.assertEqual(hashlib.sha256(image).hexdigest(), record['sha256'])
         self.assertEqual(len(image), record['bytes'])
-        self.assertIn('src="/art/camp-fire-720.jpg"', self.html)
+        self.assertIn('src="/art/camp-fire.jpg"', self.html)
         self.assertIn('alt="' + record['alt'] + '"', self.html)
         self.assertIn('loading="eager"', self.html)
         self.assertIn('srcSet="', self.html)
