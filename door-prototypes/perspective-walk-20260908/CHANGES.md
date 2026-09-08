@@ -2,7 +2,7 @@
 
 Please Start From Here · Reader change log · Edition 0.3 · 8 September 2026
 
-Edition 0.3 adds D007, the local reading copies verified at 13:44 UTC. Earlier entries remain as dated history, not continuously current descriptions. [Earlier edition 0.2](https://github.com/markgoodbody-bit/COM/blob/4609bd04b0053959da39ba4fde4f20c29316c558/door-prototypes/perspective-walk-20260908/CHANGES.md).
+Edition 0.3 adds D007, the local reading copies verified at 13:44 UTC and identified for the next reader trial as site Preview 0.7. This is a site edition label, not a TRACE or ME release or validation. Earlier entries remain as dated history, not continuously current descriptions. [Earlier edition 0.2](https://github.com/markgoodbody-bit/COM/blob/4609bd04b0053959da39ba4fde4f20c29316c558/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
 Edition 0.2 adds the P001 publication transition verified at 13:15 UTC. The original entries and their 13:04 cutoff remain below; a later transition does not change their earlier status. [Earlier edition 0.1](https://github.com/markgoodbody-bit/COM/blob/f7c03f9a40c782415e685bd4c315c083c80632f0/door-prototypes/perspective-walk-20260908/CHANGES.md).
 
