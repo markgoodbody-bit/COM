@@ -129,6 +129,58 @@ def html_document(title: str, parts: list[tuple[str, str]], links: list[tuple[st
             'No sign-in, personal disclosure or report-back is needed.</footer></body></html>\n')
 
 
+
+def arrival(lib: dict, files: dict[str, bytes]) -> dict[str, bytes]:
+    """Index existing questions/edges; no new reading content or chosen best route."""
+    catalogue = []
+    lines = ['# Choose by question', '', lib['boundary'], '',
+             'These are the existing readings, not an exhaustive list of questions. '
+             'Nothing is selected or fetched automatically. The text size beside '
+             'each link is UTF-8 bytes, not tokens or a usage charge.', '']
+    for node in lib['nodes']:
+        paths = {kind: 'nodes/' + node['id'] + ext
+                 for kind, ext in (('json', '.json'), ('text', '.md'))}
+        sizes = {kind: len(files['explore/' + path]) for kind, path in paths.items()}
+        catalogue.append({'id': node['id'], 'question': node['question'],
+                          'routes': paths, 'bytes': sizes,
+                          'next': [dict(edge, path='nodes/' + edge['target'] + '.json')
+                                   for edge in node['next']]})
+        lines.append('- [' + node['question'] + '](' + paths['text'] + ')'
+                     + ' — ' + str(sizes['text']) + ' bytes')
+    lines += ['', '[Machine questions and labelled connections](questions.json) · '
+              '[Challenge or leave](challenge.md) · [Source limits](sources.md) · '
+              '[One case, different views](example/entry.md)', '']
+    result = {'questions.json': encode({
+        'format': 'psfh-question-index/0.1', 'status': STATUS,
+        'boundary': lib['boundary'],
+        'scope': 'All current local reading nodes; questions and edges copied from '
+                 'their source, not a complete account of reality or a ranked policy.',
+        'base': 'Relative paths resolve against this resource URL.',
+        'routes': {'start': 'start.json', 'text': 'questions.txt',
+                   'source_limits': 'sources.json', 'challenge': 'challenge.md'},
+        'nodes': catalogue}),
+        'questions.txt': ('\n'.join(lines)).encode('utf-8')}
+    result['start.json'] = encode({
+        'format': 'psfh-arrival/0.1', 'status': STATUS,
+        'purpose': lib['purpose'], 'orientation': lib['orientation'],
+        'boundary': lib['boundary'], 'value_choice': lib['value_choice'],
+        'reading': 'Optional static reference, not an agent or callable tool. '
+                   'Choose by question, inspect a different viewpoint or challenge, '
+                   'or leave. No automatic traversal or report-back.',
+        'base': 'Relative paths resolve against this resource URL.',
+        'routes': {'questions': 'questions.json', 'questions_text': 'questions.txt',
+                   'example': 'example/entry.json', 'source_limits': 'sources.json',
+                   'challenge': 'challenge.md', 'resource_hashes': 'map.json',
+                   'orientation_text': 'index.md', 'optional_full_packet': 'packet.md'},
+        'scope': 'Source snapshot only; no claim of current public reachability.'})
+    caps = {'start.json': 2048, 'questions.json': 8192, 'questions.txt': 4096}
+    for path, cap in caps.items():
+        if len(result[path]) > cap:
+            raise ValueError('Small-entry byte budget exceeded: ' + path)
+    return result
+
+
+
 def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     lib, examples = load(source)
     files: dict[str, bytes] = {}
@@ -140,7 +192,8 @@ def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     overview = [('Purpose', lib['purpose']), ('A small beginning', lib['orientation']),
                 ('Choice', lib['reading']), ('Boundary', lib['boundary']),
                 ('Our value choice', lib['value_choice'])]
-    entry_links = [(n['title'], 'nodes/' + n['id'] + '.md') for n in lib['nodes']]
+    entry_links = [('Choose by question', 'questions.txt'), ('Small machine entrance', 'start.json')]
+    entry_links += [(n['title'], 'nodes/' + n['id'] + '.md') for n in lib['nodes']]
     entry_links += [('One case, several viewpoints', 'example/entry.md'),
                     ('Source identities and limits', 'sources.md'), ('Criticism and reply access', 'challenge.md'),
                     ('Machine map with resource sizes', 'map.json'), ('Optional complete local packet', 'packet.md')]
@@ -202,7 +255,10 @@ def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     llms = '# Please Start From Here — experimental reading space\n\n> ' + lib['purpose'] + '\n\n' + lib['boundary'] + '\n\nThis is a bounded static extension, not a required course or agent service. The full packet is optional.\n\n## Entry\n\n- [Small beginning](' + BASE + 'index.md): orientation without a required identity\n- [Machine map](' + BASE + 'map.json): individual resources and byte sizes\n\n## Patterns\n\n'
     llms += '\n'.join(f'- [{n["title"]}]({BASE}nodes/{n["id"]}.md): {n["short"]}' for n in lib['nodes'])
     llms += '\n\n## Other routes\n\n- [Shared example](' + BASE + 'example/entry.md): the same facts through different views\n- [Sources](' + BASE + 'sources.md): snapshots, neighbouring work and limits\n- [Challenge](' + BASE + 'challenge.md): actual reply access and its limits\n\n## Optional\n\n- [Whole local packet](' + BASE + 'packet.md): ' + str(len(files['explore/packet.md'])) + ' UTF-8 bytes; not required; no external corpus\n'
+    llms += '\n## Small machine entry\n\n- [Start JSON](' + BASE + 'start.json): small entry and optional routes\n- [Choose by question](' + BASE + 'questions.txt): existing questions without the full resource inventory\n'
     put('llms.txt',llms)
+    for path, data in arrival(lib, files).items():
+        put(path, data)
     manifest = {'format':'psfh-resource-map/0.2','status':STATUS,'intended_base_if_published':BASE,
                 'boundary':lib['boundary'],'traversal':'Optional, bounded reading. Links can cycle; no fetch or report-back is required. A reader can stop when its question is answered.',
                 'source_sha256':digest((source/'library.json').read_bytes()),'nodes':node_index,
