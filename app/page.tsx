@@ -7,14 +7,29 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Please Start From Here</a><span>Working preview · Site Preview {SITE_EDITION}</span></header>
+    <header className="masthead" id="top">
+      <a className="site-name" href="#start">Please Start From Here</a>
+      <nav aria-label="Reading routes"><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
+      <span>Working preview · Site Preview {SITE_EDITION}</span>
+    </header>
     <main id="start">
       <section className="intro">
+        <div className="opening-composition">
+        <div className="opening-copy">
         <p className="eyebrow">A starting point for humans and AIs</p>
         <h1>Please Start From Here</h1>
         <p className="guiding-question">How can we make a better future?</p>
         <p>A project by Mark, developed with AI collaborators.</p>
         <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
+        </div>
+        <figure className="camp-fire" aria-labelledby="camp-fire-credit">
+          <img src={CAMP_FIRE.local_image} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="lazy" decoding="async" />
+          <figcaption id="camp-fire-credit">
+            <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
+            <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
+          </figcaption>
+        </figure>
+        </div>
         <div className="first-movements" aria-label="Ways to begin">
           <article id="situation">
             <h2>Something is happening</h2>
@@ -43,6 +58,7 @@ export default function Home() {
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">https://pleasestartfromhere.com/explore/</a></p>
           </article>
         </div>
+        <div className="perspective-and-boundaries">
         <aside className="handoff" aria-label="Another perspective">
           <p><strong>Another perspective</strong></p>
           <p>If it helps, read this yourself or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
@@ -53,14 +69,8 @@ export default function Home() {
           <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
           <p>Reading implies no adoption, obligation or consent.</p>
         </div>
+        </div>
       </section>
-      <figure className="camp-fire" aria-labelledby="camp-fire-credit">
-        <img src={CAMP_FIRE.local_image} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="lazy" decoding="async" />
-        <figcaption id="camp-fire-credit">
-          <a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.<br/>
-          {CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.
-        </figcaption>
-      </figure>
       <section className="small-loop" aria-labelledby="small-loop">
         <p className="eyebrow">Use only what helps</p>
         <h2 id="small-loop">Take one useful step</h2>
@@ -76,19 +86,19 @@ export default function Home() {
         </ul>
         <p className="loop-note">The same questions can recur at another depth without requiring the same answer or the same amount of detail. Take one useful piece and leave if that is enough.</p>
       </section>
-      <section aria-labelledby="why">
+      <section className="context-reading" aria-labelledby="why">
         <h2 id="why">Why this exists</h2>
         <p className="lead">An appeal can succeed after the opportunity it was meant to protect has gone. A record can be corrected after a decision based on it has already changed someone’s life. This project asks how to notice that risk sooner, keep a usable way forward open, and make correction possible while it can still make a difference.</p>
         <p>This page introduces the project for inspection. Its selection and framing can influence a reader’s reasoning; it is not a neutral or complete view.</p>
         <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
         <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
       </section>
-      <section aria-labelledby="reading">
+      <section className="library" aria-labelledby="reading">
+        <h2 id="reading">The work and its neighbours</h2>
         <p className="route"><a href="/explore/">Explore ten short readings</a> on change, futures, power and correction, plus one example viewed from different positions. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
         <p className="route">Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
         <p className="route">One example, viewed from different positions<br/><a href="https://pleasestartfromhere.com/explore/example/entry.md">https://pleasestartfromhere.com/explore/example/entry.md</a></p>
         <p className="route">Continue in your own context, or inspect external participation and reply limits under <a href="/explore/challenge.html">Challenge</a>.<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
-        <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>
             <h3><a href="https://pleasestartfromhere.com/resources/trace/README.md">TRACE</a></h3>

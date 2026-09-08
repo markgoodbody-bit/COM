@@ -1,6 +1,18 @@
 # Maintained Please Start From Here source
 
-## Current title and artwork revision, 8 September 2026
+## Current editorial presentation, 9 September 2026
+
+Preview 0.8.2 responds to Mark's judgement that 0.8.1 was too basic. The same
+title, painting and content now form an editorial opening, with early direct
+navigation and quieter ruled sections instead of repeated rounded cards.
+See [EDITORIAL_PRESENTATION.md](EDITORIAL_PRESENTATION.md) for before/after,
+source-preservation checks, mobile costs and unresolved questions.
+
+The [direct-request receipt](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592995706)
+records the scope. The existing publishing lane remains unchanged. This is a
+presentation change, not new theory, receiver functionality or reader validation.
+
+## Earlier title and artwork revision, 8 September 2026
 
 Preview 0.8.1 gives **Please Start From Here** the primary title, with the guiding
 question below. Homer's **Camp Fire** follows the intact opening choices and

@@ -6,6 +6,8 @@ import subprocess
 import unittest
 import hashlib
 import json
+from collections import Counter
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLISHED = ROOT.parent / 'DEV' / 'campfire-door-pages'
@@ -61,7 +63,13 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('src="/art/camp-fire.jpg"', self.html)
         self.assertIn('alt="' + record['alt'] + '"', self.html)
         self.assertIn('loading="lazy"', self.html)
-        self.assertLess(self.html.index('class="opening-boundaries"'), self.html.index('<figure'))
+        # The editorial revision moves the same art into the opening composition.
+        # Direct reading routes precede it; the original detailed choices remain.
+        self.assertLess(self.html.index('aria-label="Reading routes"'), self.html.index('<figure'))
+        self.assertLess(self.html.index('<figure'), self.html.index('class="first-movements"'))
+        navigation = self.html.split('aria-label="Reading routes"')[1].split('</nav>')[0]
+        for target in ['/explore/', '/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf', '/discussion/']:
+            self.assertIn(target, navigation)
         for link in [record['object_url'], record['rights_url'], record['biography_url'], '#winslow-homer', '/art/camp-fire.json']:
             self.assertIn(link, self.page.links)
         self.assertIn(record['credit'], self.text)
@@ -69,6 +77,19 @@ class FirstContactTests(unittest.TestCase):
         self.assertEqual(manifest['routes']['artwork'], '/art/camp-fire.json')
         self.assertEqual(manifest['provenance']['artwork']['image_sha256'], record['sha256'])
         self.assertNotIn('teaching_preview', manifest['provenance'])
+
+    def test_editorial_layout_preserves_all_original_paragraphs_and_headings(self):
+        original = subprocess.check_output(['git', 'show', 'e0d765b3d203035971b5fa544eb5f5b48cc0f518:index.html'], cwd=PUBLISHED).decode('utf-8')
+        def blocks(html):
+            # Compare substantive blocks independently of authorised relocation.
+            values = []
+            for block in re.findall(r'<(?:p|h[1-4])\b[^>]*>(.*?)</(?:p|h[1-4])>', html, re.S):
+                text = ' '.join(' '.join(Reading(block).text).split())
+                values.append(re.sub(r'Preview 0\.8(?:\.\d+)?', 'Preview [edition]', text))
+            return Counter(values)
+        self.assertEqual(blocks(original), blocks(self.html))
+        self.assertTrue(set(Reading(original).links).issubset(self.page.links))
+        self.assertIn('href="#situation"', self.html.split('</header>')[0])
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',

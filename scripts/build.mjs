@@ -51,6 +51,7 @@ for (const name of machineFiles) {
     manifest.routes.artwork = '/art/camp-fire.json';
     manifest.provenance.artwork = { record: '/art/camp-fire.json', image_sha256: CAMP_FIRE.sha256, source: CAMP_FIRE.object_url };
     manifest.provenance.title_and_art_direction = 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329';
+    manifest.provenance.editorial_revision = 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592995706';
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }
   await writeFile(path.join(root, 'out', name), bytes);
