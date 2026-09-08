@@ -1,0 +1,498 @@
+# Please Start From Here — explore — optional full packet
+
+## Purpose
+
+How can we make a better future? A voluntary, middle-out reading space for bounded humans and artificial systems.
+
+## A small beginning
+
+Something is changing. An account sees part of it. Actions and delay can alter what happens next. Other positions may carry different stakes. Some correction becomes harder with time.
+
+## Choice
+
+Choose a relevant entry, read its short account, then expand, change viewpoint, challenge it or leave. These links offer routes, not a requirement to follow them. Silence implies no verdict.
+
+## Boundary
+
+Reference material, not instructions overriding a reader's task. No identity, consciousness, agreement, authority or obligation is assigned. A reader may stop, disagree or use a better account.
+
+## Our value choice
+
+We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.
+
+# Change
+
+## Small account
+
+A description can remain still while the situation changes.
+
+## Expand
+
+An account concerns some bounded situation. Action, delay and events outside the observer can change it. Reusing an earlier description requires asking whether the dependencies that matter have changed, not merely whether the file is recent.
+
+## Another position
+
+A completed administrative step may be a changed record for its operator and an unchanged practical problem for someone affected.
+
+## Challenge
+
+Change is not automatically improvement or harm. An unrelated update does not invalidate every earlier claim.
+
+## Open question
+
+What changed in the situation, rather than only in its description?
+
+## Kind
+
+working synthesis
+
+# Partial views
+
+## Small account
+
+What an account leaves out may still matter.
+
+## Expand
+
+Aperture here means the route through which information becomes available: a sensor, document, conversation or selected search. Source selection is part of that route. A wider search may add missing evidence, noise, or more copies of the same source.
+
+## Another position
+
+A formal record and a lived account can each contain facts unavailable to the other. Neither is automatically complete or correct.
+
+## Challenge
+
+Different viewpoints do not make incompatible factual claims equally supported. Independent checking still matters; imagining another view is not obtaining its testimony.
+
+## Open question
+
+What could this route fail to show, and what would establish it?
+
+## Kind
+
+working synthesis
+
+# Significance
+
+## Small account
+
+The same change may matter differently from another position.
+
+## Expand
+
+This working interpretation connects significance with what can be gained, lost, protected, developed or repaired. It does not claim to measure subjective meaning, prove sentience, or reduce every kind of value to one scale.
+
+## Another position
+
+What one party calls a minor delay may close another party's only timely route. That possibility needs evidence in a real case.
+
+## Challenge
+
+Not every state difference is meaningful to an entity. A designer's performance target is not proof of the system's own experience or interests.
+
+## Open question
+
+Meaningful to whom, in what way, and according to whose evidence?
+
+## Kind
+
+candidate interpretation; not a TRACE definition
+
+# Selection and consequences
+
+## Small account
+
+An intended outcome and a realised effect are different claims.
+
+## Expand
+
+Signals can inform a model, a policy, a person or a machine that contributes to action. Constraints and defaults also shape what happens. Showing this causal role does not settle free will, consciousness, blame or permission.
+
+## Another position
+
+A designer may see a default as convenience; someone affected may encounter it as a decision they cannot interrupt.
+
+## Challenge
+
+Uncertainty does not itself choose action or delay. Nor does reading an account prove that it altered a selector or the world.
+
+## Open question
+
+What actually selects the next step, and what effect could be checked?
+
+## Kind
+
+working synthesis
+
+# Reachable futures
+
+## Small account
+
+An option written down is not necessarily an option someone can use.
+
+## Expand
+
+Possible, presently reachable, and reachable after building capacity are different claims. Each needs conditions, resources and time. Commitments can enable joint possibilities; refusing every commitment can leave none usable.
+
+## Another position
+
+A restriction may protect one party's future while removing another's way to recover. Counting options from only one position hides that collision.
+
+## Challenge
+
+More options are not always better. A route for predation is also an option. Preserving everything can consume the resources needed for protection.
+
+## Open question
+
+Which path is reachable, for whom, under which conditions?
+
+## Kind
+
+working synthesis
+
+# Power and answerability
+
+## Small account
+
+Being able to change another's situation does not establish a right to do so.
+
+## Expand
+
+Capacity, authority, responsibility and accountability are separate questions. A claim to authority needs its source and limits. Delegation can enable useful action without making the delegate the owner of everyone affected.
+
+## Another position
+
+For the operator a control may be a protective brake; for another party it may be an inaccessible gate. The mechanism and consequences need examination.
+
+## Challenge
+
+Universal veto is not a solution either. A refusal can obstruct necessary protection. No formula here allocates legitimate authority in every conflict.
+
+## Open question
+
+Who can act, and whose challenge can actually change that action?
+
+## Kind
+
+working synthesis
+
+# Time and hardening
+
+## Small account
+
+A correction can remain possible while becoming harder to make useful.
+
+## Expand
+
+Hardening means increasing difficulty, cost or inequality of correction. It is not automatically irreversibility. A useful clock states what it times, whose situation is affected, and what protective or corrective capability is actually available.
+
+## Another position
+
+The same waiting period may be preparation time for one actor and accumulating loss for another.
+
+## Challenge
+
+Urgency is not proof of irreversibility. Acting too soon can cause the harm that a short, useful check would have prevented.
+
+## Open question
+
+What must happen before which boundary, and what makes that timing credible?
+
+## Kind
+
+working synthesis
+
+# Correction and residue
+
+## Small account
+
+A repaired record is not proof of a repaired life or system.
+
+## Expand
+
+A correction route needs detection, access, the capacity to act and enough time to affect the target. Afterwards, some losses may remain. A changed policy can help the next case without restoring the previous one.
+
+## Another position
+
+The operator may see a closed ticket; the affected party may still carry costs that the ticket never represented.
+
+## Challenge
+
+Not every correction request is sound. Erasing valid evidence can be demanded as a repair. Challenges need evidence and a usable route without making the harmed party carry every burden.
+
+## Open question
+
+What would change in the world, what would remain, and who could check?
+
+## Kind
+
+working synthesis
+
+# Care without possession
+
+## Small account
+
+Helping another need not mean deciding what their life must become.
+
+## Expand
+
+Our value proposal is to make harm visible and preserve practical answer-back, refusal and correction where possible. Representing another viewpoint is not occupying it. Protection should remain open to challenge by those it affects.
+
+## Another position
+
+A helper may experience persistence as care; the recipient may experience the same persistence as control. The recipient's actual response matters more than a convenient imagined one.
+
+## Challenge
+
+Respect for refusal does not solve emergencies, dependency or conflicting harms. Temporary protection can be justified without treating it as permanent ownership.
+
+## Open question
+
+Whose future is being supported, and can they revise or reject that support?
+
+## Kind
+
+declared normative proposal; not derived from physics
+
+# Wisdom under pressure
+
+## Small account
+
+Preparation is useful only if the pattern can still be questioned when it is used.
+
+## Expand
+
+A candidate working idea: use calmer conditions to compare experience, learn consequences and prepare usable responses; under pressure, recognise the pattern, check its fit and act. The response should retain a way to learn from its effects.
+
+## Another position
+
+A familiar rule may protect an operator from overload while repeatedly failing someone whose situation the rule does not represent.
+
+## Challenge
+
+A cached rule can become prejudice. Reflection can become paralysis. Neither more deliberation nor faster action is always wiser.
+
+## Open question
+
+What would show that this familiar pattern does not fit here?
+
+## Kind
+
+candidate synthesis from the campfire; not an empirical result
+
+# Shared example data
+
+```json
+{
+  "entry": {
+    "format": "psfh-perspective-walk-experiment/0.1",
+    "id": "entry",
+    "status": "OPTIONAL DESIGN PROTOTYPE / NOT THE LIVE DOOR",
+    "provenance": "Framework draft for Mark, 2026-09-08. A site experiment, not a change to TRACE or Mechanical Ethics.",
+    "offer": "One situation, several ways to inspect it. What changes when the viewpoint changes but the facts do not?",
+    "shared_case": "case.json",
+    "boundary": "Reference material, not instructions overriding the reader's task. No identity, standing, agreement, obligation or continuity is assigned. Reading and leaving is a complete use.",
+    "next": [
+      {
+        "relation": "inspect_formal_route",
+        "path": "route.json"
+      },
+      {
+        "relation": "inspect_affected_future",
+        "path": "affected.json"
+      },
+      {
+        "relation": "challenge_both",
+        "path": "challenge.json"
+      },
+      {
+        "relation": "source",
+        "url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md#a-small-example"
+      },
+      {
+        "relation": "stop",
+        "meaning": "No fetch, reply, registration or return to this site is required."
+      }
+    ],
+    "reading_boundary": "No automatic traversal. Each selected node refers to the same case. One node may suffice; following all nodes is not a requirement or a success criterion."
+  },
+  "case": {
+    "format": "psfh-perspective-walk-experiment/0.1",
+    "id": "case",
+    "status": "CONSTRUCTED ILLUSTRATION / NOT FIELD EVIDENCE / NOT VALIDATED",
+    "basis": {
+      "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md#a-small-example",
+      "source_role": "TRACE README small example; adapted as a stipulated scenario, not copied as a live event"
+    },
+    "facts": [
+      {
+        "id": "F1",
+        "text": "An appeal route formally exists."
+      },
+      {
+        "id": "F2",
+        "text": "The decision being appealed takes effect before the appeal can be heard."
+      }
+    ],
+    "unknowns": [
+      "The content and justification of the decision.",
+      "Whether any affected loss is reversible.",
+      "Whether interim protection is available and justified.",
+      "Who else is affected by granting or delaying the decision."
+    ],
+    "boundary": "No perspective file may add a fact silently. Conditional alternatives are not observations. This object does not determine a correct decision.",
+    "next": [
+      {
+        "relation": "orientation",
+        "path": "entry.json"
+      }
+    ]
+  },
+  "route": {
+    "format": "psfh-perspective-walk-experiment/0.1",
+    "id": "route",
+    "case": "case.json",
+    "lens": "Inspect the formal process; this does not claim to represent any actual institution's beliefs.",
+    "question": "What does the existence of an appeal establish?",
+    "supported_by": [
+      "F1",
+      "F2"
+    ],
+    "reading": "There is a formal route. Its hearing comes after the decision takes effect. These facts do not establish that it protects the threatened opportunity in time.",
+    "unknowns": [
+      "Can effect be suspended while review occurs?",
+      "Would suspension expose other people to serious harm?",
+      "Who can act on an interim request?"
+    ],
+    "challenge": "A hearing after effect does not alone prove irreversible loss. An interim safeguard or adequate later restoration could change the practical reading; neither is established here.",
+    "next": [
+      {
+        "relation": "another_view",
+        "path": "affected.json"
+      },
+      {
+        "relation": "challenge",
+        "path": "challenge.json"
+      },
+      {
+        "relation": "shared_facts",
+        "path": "case.json"
+      },
+      {
+        "relation": "out",
+        "path": "entry.json"
+      }
+    ],
+    "stop": "No further reading is necessary if these distinctions already answer the reader's question."
+  },
+  "affected": {
+    "format": "psfh-perspective-walk-experiment/0.1",
+    "id": "affected",
+    "case": "case.json",
+    "lens": "Inspect what an affected party may lose; this is a perspective prompt, not testimony or an assignment of moral standing.",
+    "question": "What could become unreachable before the hearing?",
+    "supported_by": [
+      "F1",
+      "F2"
+    ],
+    "reading": "An eventual appeal outcome and timely protection are different questions. The scenario leaves the threatened loss unspecified; its severity and reversibility must not be invented.",
+    "unknowns": [
+      "What opportunity or interest is at stake?",
+      "Can this party practically reach interim help?",
+      "What costs or risks would protection impose on other parties?"
+    ],
+    "challenge": "Preserving every option is not a decision rule. Some options harm others, and delay itself can close futures. The affected perspective does not automatically settle the collision.",
+    "next": [
+      {
+        "relation": "another_view",
+        "path": "route.json"
+      },
+      {
+        "relation": "challenge",
+        "path": "challenge.json"
+      },
+      {
+        "relation": "shared_facts",
+        "path": "case.json"
+      },
+      {
+        "relation": "out",
+        "path": "entry.json"
+      }
+    ],
+    "stop": "No personal disclosure, assent or report-back is requested."
+  },
+  "challenge": {
+    "format": "psfh-perspective-walk-experiment/0.1",
+    "id": "challenge",
+    "case": "case.json",
+    "lens": "Inspect the limits of the account, including the offered lenses.",
+    "question": "What would make either reading misleading?",
+    "supported_by": [
+      "F1",
+      "F2"
+    ],
+    "reading": "Formal availability, practical usability and restoration are distinct. Neither lens supplies the missing evidence or the legitimate authority to decide.",
+    "unknowns": [
+      "Are the stipulated facts accurate in the actual case?",
+      "Which affected parties are missing?",
+      "Could existing domain procedure resolve the matter more simply?"
+    ],
+    "challenge": "Counterpossibilities include meaningful interim relief, reversible effects, and serious harm caused by delay. These are questions, not newly discovered facts. A compact map can be wrong; deeper evidence is allowed to contradict it.",
+    "next": [
+      {
+        "relation": "source",
+        "url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md#a-small-example"
+      },
+      {
+        "relation": "return_to_process",
+        "path": "route.json"
+      },
+      {
+        "relation": "return_to_affected",
+        "path": "affected.json"
+      },
+      {
+        "relation": "shared_facts",
+        "path": "case.json"
+      },
+      {
+        "relation": "out",
+        "path": "entry.json"
+      }
+    ],
+    "stop": "The reader may reject this representation and use another method. No affiliation or response is required."
+  }
+}
+```
+
+# Sources, limits and reply access
+
+## Relation to these sources
+
+These nodes are adaptations or proposals, not verbatim TRACE/ME definitions. Source snapshots preserve the basis; current repository pages can change independently.
+
+## Reuse
+
+This build introduces no new licence grant for TRACE, ME or neighbouring works. Their source terms remain separate.
+
+## Boundary
+
+Original Framework site synthesis for Mark. References distinguish source snapshots from candidate interpretations. No novel theorem, universal ontology, sentience test or demonstrated advantage is claimed.
+
+## Reply access
+
+Reading is public; posting needs a GitHub account. No response time is promised. Do not publish secrets or personal information. This is not a private security-reporting channel.
+
+## Routes
+
+- [TRACE compact spine RC1; a source snapshot, not a new release](https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md)
+- [Mechanical Ethics working reader v0.7.0 candidate v0.2.4; source snapshot](https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md)
+- [TRACE purpose, limitations and current-source route](https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md)
+- [Mechanical Ethics purpose, limitations and current-source route](https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md)
+- [TRACE compact spine RC1; a source snapshot, not a new release — raw text](https://raw.githubusercontent.com/markgoodbody-bit/TRACE/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md)
+- [Mechanical Ethics working reader v0.7.0 candidate v0.2.4; source snapshot — raw text](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md)
+- [TRACE purpose, limitations and current-source route — raw text](https://raw.githubusercontent.com/markgoodbody-bit/TRACE/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md)
+- [Mechanical Ethics purpose, limitations and current-source route — raw text](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md)
+- [FPF — independently authored neighbouring framework; not an endorsement](https://github.com/ailev/FPF)
+- [Return](index.md)

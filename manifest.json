@@ -12,7 +12,10 @@
     "map": "/manifest.json",
     "human_reading": "/",
     "crawler_rules": "/robots.txt",
-    "sitemap": "/sitemap.xml"
+    "sitemap": "/sitemap.xml",
+    "explore": "/explore/",
+    "explore_text": "/explore/index.md",
+    "explore_map": "/explore/map.json"
   },
   "source_repositories": [
     {
@@ -38,7 +41,9 @@
     "earlier_llms_proposal": "https://github.com/markgoodbody-bit/COM/pull/113",
     "human_preview_source_commit": "7f20b46d64cbacb90bd1fcbf19af89e071865a64",
     "published_source": "https://github.com/markgoodbody-bit/COM/tree/gh-pages",
-    "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness."
+    "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness.",
+    "explore_source_commit": "c20f644eda2eda0a5bdf9bb4fa8f8dc8f854fa2f",
+    "explore_source_path": "door-prototypes/perspective-walk-20260908/"
   },
   "boundaries": [
     "Encounter is not adoption; reading is not consent; a route is not authority.",

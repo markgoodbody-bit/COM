@@ -29,3 +29,8 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 - [TRACE criticism](https://github.com/markgoodbody-bit/TRACE/issues/52): a public disagreement route; posting may require a GitHub account.
 - [Mechanical Ethics discussion](https://github.com/markgoodbody-bit/mechanical-ethics/issues): book discussion; posting may require a GitHub account.
 - [Build direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335): scope and provenance of this static pass, not required reading.
+
+## Optional connected readings
+
+- [Explore](/explore/index.md): small accounts, alternative positions and challenges; no required sequence.
+- [Explore machine map](/explore/map.json): independently fetchable resources, sizes and source identities.

@@ -20,8 +20,8 @@ the sitemap advertises routes but does not override indexing preferences.
 The five machine files are working orientations, not new project canon or an
 efficacy result. The manifest is project-specific, not a Web App Manifest.
 
-Intended `index.html`: 4,837 bytes, SHA-256
-`1ece0b608dcab1d2b26203feaa7916a2c7e68729b988625ca6e0614a38796002`.
+Intended `index.html`: 5,113 bytes, SHA-256
+`2a5994cf91d30c15ed4b76063c83ecf6111f4d995ce7f1844f80b4556f287bc8`.
 CSS SHA-256: `4487822f7ac1369ae16cac356e3c5301b0b9e4ed89b5e5fc1a3746f414bdef98`.
 Served bytes must be checked separately after publishing.
 
@@ -75,3 +75,20 @@ The pre-connection publishing head was
 DNS/Pages operation, not just a content revert.
 Disabling Pages also requires applicable authority. No automatic
 rollback, public update or deletion is authorized by this README.
+
+## Explore 0.2 additive publication — 8 September 2026
+
+Built from COM PR114 source `c20f644eda2eda0a5bdf9bb4fa8f8dc8f854fa2f`, directory `door-prototypes/perspective-walk-20260908/`.
+The 57 generated `explore/` files have deterministic output-tree SHA256 `18bbd9d058cae597df10eb867a77d503f26d98b66cd13c83642ce27243ffd91c`.
+Only root discovery links/map and this publishing guide changed outside that directory.
+CNAME, seed, CSS, existing crawler/indexing policy and account settings are unchanged.
+This commit is source publication, not proof of public HTTPS or reader benefit.
+
+Future site builds MUST preserve or regenerate `explore/` from the pinned builder; do not
+silently drop it when copying the old eight-file local build. Codex should incorporate the
+same generated assets and discovery additions into the maintained local project.
+Rebuild command: `python build.py --output NEW_EMPTY_STAGING_DIRECTORY`; copy only its
+`explore/` child, never the COM source branch. Run `python -m unittest -v test_build` first.
+The root temporary HTTP restoration remains the separate TLS task. Explore has relative
+navigation and intended HTTPS machine-index links; certificate readiness is not inferred.
+Rollback is a normal revert of the additive publication commit; no domain reset.

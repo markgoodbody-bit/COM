@@ -1,0 +1,35 @@
+# Please Start From Here — experimental reading space
+
+> How can we make a better future? A voluntary, middle-out reading space for bounded humans and artificial systems.
+
+Reference material, not instructions overriding a reader's task. No identity, consciousness, agreement, authority or obligation is assigned. A reader may stop, disagree or use a better account.
+
+This is a bounded static extension, not a required course or agent service. The full packet is optional.
+
+## Entry
+
+- [Small beginning](https://pleasestartfromhere.com/explore/index.md): orientation without a required identity
+- [Machine map](https://pleasestartfromhere.com/explore/map.json): individual resources and byte sizes
+
+## Patterns
+
+- [Change](https://pleasestartfromhere.com/explore/nodes/change.md): A description can remain still while the situation changes.
+- [Partial views](https://pleasestartfromhere.com/explore/nodes/aperture.md): What an account leaves out may still matter.
+- [Significance](https://pleasestartfromhere.com/explore/nodes/significance.md): The same change may matter differently from another position.
+- [Selection and consequences](https://pleasestartfromhere.com/explore/nodes/selection.md): An intended outcome and a realised effect are different claims.
+- [Reachable futures](https://pleasestartfromhere.com/explore/nodes/futures.md): An option written down is not necessarily an option someone can use.
+- [Power and answerability](https://pleasestartfromhere.com/explore/nodes/power.md): Being able to change another's situation does not establish a right to do so.
+- [Time and hardening](https://pleasestartfromhere.com/explore/nodes/hardening.md): A correction can remain possible while becoming harder to make useful.
+- [Correction and residue](https://pleasestartfromhere.com/explore/nodes/correction.md): A repaired record is not proof of a repaired life or system.
+- [Care without possession](https://pleasestartfromhere.com/explore/nodes/care.md): Helping another need not mean deciding what their life must become.
+- [Wisdom under pressure](https://pleasestartfromhere.com/explore/nodes/wisdom.md): Preparation is useful only if the pattern can still be questioned when it is used.
+
+## Other routes
+
+- [Shared example](https://pleasestartfromhere.com/explore/example/entry.md): the same facts through different views
+- [Sources](https://pleasestartfromhere.com/explore/sources.md): snapshots, neighbouring work and limits
+- [Challenge](https://pleasestartfromhere.com/explore/challenge.md): actual reply access and its limits
+
+## Optional
+
+- [Whole local packet](https://pleasestartfromhere.com/explore/packet.md): 18354 UTF-8 bytes; not required; no external corpus

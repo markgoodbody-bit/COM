@@ -1,0 +1,47 @@
+# Appeal example — case
+
+## Status
+
+WORKING ILLUSTRATION / NOT FIELD EVIDENCE / NO RECEIVER RESULT
+
+## Basis
+
+{
+  "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md#a-small-example",
+  "source_role": "TRACE README small example; adapted as a stipulated scenario, not copied as a live event"
+}
+
+## Facts
+
+[
+  {
+    "id": "F1",
+    "text": "An appeal route formally exists."
+  },
+  {
+    "id": "F2",
+    "text": "The decision being appealed takes effect before the appeal can be heard."
+  }
+]
+
+## Unknowns
+
+[
+  "The content and justification of the decision.",
+  "Whether any affected loss is reversible.",
+  "Whether interim protection is available and justified.",
+  "Who else is affected by granting or delaying the decision."
+]
+
+## Boundary
+
+No perspective file may add a fact silently. Conditional alternatives are not observations. This object does not determine a correct decision.
+
+## Rendering note
+
+Generated from PR114 source. Shared F1/F2 facts unchanged; presentation status updated for optional serving.
+
+## Routes
+
+- [orientation](entry.md)
+- [Reading-space entry or stop](../index.md)
