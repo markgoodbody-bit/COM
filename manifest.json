@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.7",
+  "site_edition": "0.7.1",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
@@ -21,7 +21,8 @@
     "sitemap": "/sitemap.xml",
     "explore": "/explore/",
     "explore_text": "/explore/index.md",
-    "explore_map": "/explore/map.json"
+    "explore_map": "/explore/map.json",
+    "html_source_text": "/read/start.html"
   },
   "source_repositories": [
     {
@@ -54,10 +55,40 @@
     "change_history_sha256": "55b9c357b252983500e18082f24c63d748a5b2488522756fd70c37293e957bfb",
     "change_history_generator_commit": "ecdd93891a48becc901afab8a708da3c0e090a62",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
-    "resource_inventory_sha256": "26963e06a95925ab1e0f48366cee27d0c34fe6cb851616ea139bf5edfd2c90bc",
+    "resource_inventory_sha256": "948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8",
     "worked_revision_source_commit": "730ece48c96fae27d66c797c2fc8fe96a61e8d39",
     "worked_revision_source_path": "door-prototypes/perspective-walk-20260908/WORKED_REVISION.md",
-    "explore_source_path": "door-prototypes/perspective-walk-20260908/"
+    "explore_source_path": "door-prototypes/perspective-walk-20260908/",
+    "html_source_text": [
+      {
+        "output": "read/start.html",
+        "source": "explore/start.json",
+        "title": "Start: complete JSON source text",
+        "edition": "Door Preview 0.7, publishing ba181af07ed1254c9670010574c77c8503969de3; psfh-arrival format 0.1",
+        "sha256": "4cc066e604d73b3f21ff1072d23bbe9b5057dd82b8552bb1b899779f3f58ed2e"
+      },
+      {
+        "output": "read/orientation.html",
+        "source": "llms.txt",
+        "title": "Orientation: complete text source",
+        "edition": "Door Preview 0.7, publishing ba181af07ed1254c9670010574c77c8503969de3; its original site label is retained",
+        "sha256": "b9c90ef5ab0e52252117849d9fdd18f0a12fc8843678da795b039dcd7bbef7bc"
+      },
+      {
+        "output": "read/trace-spine.html",
+        "source": "resources/trace/TRACE-SPINE.md",
+        "title": "TRACE compact spine: complete Markdown source text",
+        "edition": "TRACE RC1, source 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b; not a new TRACE release",
+        "sha256": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999"
+      },
+      {
+        "output": "read/me-book.html",
+        "source": "resources/mechanical-ethics/MECHANICAL_ETHICS.md",
+        "title": "Mechanical Ethics: complete Markdown source text",
+        "edition": "ME v0.7.0 working candidate v0.2.4, source 44f7efb59806242fd26c572cbfbaaeaefaea2058; not a new ME release",
+        "sha256": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
+      }
+    ]
   },
   "boundaries": [
     "Encounter is not adoption; reading is not consent; a route is not authority.",

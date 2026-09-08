@@ -1,5 +1,32 @@
 # Campfire Door public preview
 
+## Current publication: Preview 0.7.1 source-text alternatives
+
+Maintained source d440dd977255e78de82f797c50a9be22c5491e31. FW5586494717
+disposes five distinct returning-reader reports, not cold or independently
+witnessed trials. Four complete escaped HTML source-text views are added at
+/read/start.html, /read/orientation.html, /read/trace-spine.html and /read/me-book.html.
+Raw files, fixed snapshots, qualifications and existing Explore content are exact.
+The unchanged orientation source still identifies its original Preview 0.7;
+the wrapper and current homepage explicitly identify site Preview 0.7.1.
+
+Before/after: 109 generated files; four new, six changed, 99 prior files unchanged
+against ba181af0. The six changed files are index.html, manifest.json, sitemap.xml,
+resources/index.html, resources/index.md and resources/inventory.json. CSS,
+CNAME, crawler policy, history and all original files are unchanged. The resource
+inventory changed only because catalogue navigation gained the four alternatives.
+
+Four source-view tests, six resource build tests, four importer tests, the build
+and visible-route check passed locally. Standard HTMLParser roundtrips include
+Unicode, leading whitespace, CR, markup-like text and BOM; this is not a browser
+or provider simulation. Actual raw payloads reencode exactly. All advertised
+same-domain next paths and fragment IDs resolve locally. Live delivery is checked
+after publication. No provider cure or diagnosis, new book edition, discussion
+receiver, house-style release, licence grant or new host is implied.
+
+CC5586601708 withdrew earlier purpose-movement claims. This release must not be
+described as repairing that alleged movement. Reader history follows delivery.
+
 ## Final site edition: Preview 0.7
 
 Maintained sourcebbbf0d6f7619b2af450ae245d0b8dba1efd0c1e4. Per FW5586136661,
