@@ -204,6 +204,93 @@ def cmd_open(a):
     print("  %-4s @%-6d %6d chars to the end" % ("end", len(vis), len(vis) - prev))
 
 
+NOTICE = re.compile(r"no general reuse licen[cs]e|permission to copy|"
+                    r"PUBLIC_VISIBILITY != REUSE_PERMISSION", re.I)
+
+
+def cmd_notice(a):
+    """Does robots.txt's own instruction resolve at the point of contact?
+
+    A site that says "consult each source's licence notices" has made a
+    checkable promise. This checks it, and checks it where the reader
+    actually lands: inside the served work, not in a README beside it.
+
+        THE_NOTICE_IS_BESIDE_THE_WORK != THE_NOTICE_IS_WITH_THE_WORK
+
+    It reports presence and absence only. It states no terms, proposes none,
+    and treats a missing notice as a fact about the pointer, never as advice
+    about what the terms should be -- that is the owner's, not a tool's.
+    """
+    base = a.url.rstrip("/") + "/"
+    code, robots = 0, b""
+    try:
+        with urllib.request.urlopen(urllib.request.Request(base + "robots.txt", headers=UA), timeout=25) as r:
+            robots = r.read()
+    except Exception:
+        pass
+    rt = robots.decode("utf-8", "replace")
+    print("robots.txt directives to the reader:")
+    for line in rt.splitlines():
+        if line.strip().startswith("#"):
+            print("   ", line.strip())
+    if not rt:
+        print("    (no robots.txt served)")
+
+    print("\nworks served from this domain, and whether the notice travels with them:")
+    missing = 0
+    unreachable = []
+    for path in a.work:
+        # A leading slash is mangled into a Windows path by MSYS shells, which
+        # turned every fetch in the first run of this command into an
+        # InvalidURL -- and the run still reported "0 carry no notice".
+        path = "/" + path.lstrip("/")
+        try:
+            with urllib.request.urlopen(urllib.request.Request(base.rstrip("/") + path, headers=UA), timeout=40) as r:
+                body = r.read()
+                status = r.status
+        except urllib.error.HTTPError as e:
+            print("  %-52s %s   <-- unreachable" % (path, e.code))
+            unreachable.append(path)
+            continue
+        except Exception as e:
+            print("  %-52s %s   <-- unreachable" % (path, type(e).__name__))
+            unreachable.append(path)
+            continue
+        text = body.decode("utf-8", "replace")
+        has = bool(NOTICE.search(text))
+        if not has:
+            missing += 1
+        print("  %-52s %3d %9d b  %s" % (path, status, len(body),
+                                         "notice present" if has else "NO NOTICE"))
+
+    # A work advertised for indexing and carrying no notice is the sharp case:
+    # it is the copy most likely to be met first and least likely to be
+    # accompanied by anything.
+    try:
+        with urllib.request.urlopen(urllib.request.Request(base + "sitemap.xml", headers=UA), timeout=25) as r:
+            sm = r.read().decode("utf-8", "replace")
+        print("\nadvertised in sitemap.xml:")
+        for path in a.work:
+            print("   %-52s %s" % (path, "listed" if path in sm else "not listed"))
+    except Exception:
+        print("\n(no sitemap.xml served)")
+
+    # A check that reached nothing must never report clean. The first run of
+    # this command fetched zero works and printed "0 of 4 carry no notice",
+    # which reads exactly like a pass.
+    #
+    #     REACHED_NOTHING != FOUND_NOTHING_WRONG
+    if unreachable:
+        print("\nCOULD NOT CHECK: %d of %d works were unreachable (%s)."
+              % (len(unreachable), len(a.work), ", ".join(unreachable[:3])))
+        print("No verdict is given; a run that reached nothing has not checked anything.")
+        sys.exit(2)
+
+    print("\n%d of %d served works carry no notice." % (missing, len(a.work)))
+    print("Whether that matters, and what the terms are, is the owner's to say.")
+    sys.exit(1 if missing else 0)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -225,6 +312,12 @@ def main():
     o.add_argument("--url", required=True)
     o.add_argument("--window", type=int, default=1500)
     o.set_defaults(func=cmd_open)
+
+    n = sub.add_parser("notice", help="does the reuse pointer resolve at the served work?")
+    n.add_argument("--url", required=True)
+    n.add_argument("--work", action="append", required=True,
+                   help="path of a served work; repeat for each")
+    n.set_defaults(func=cmd_notice)
 
     a = p.parse_args()
     a.func(a)
