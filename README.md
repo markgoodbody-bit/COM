@@ -84,3 +84,13 @@ the original preparation date from today's navigation/naming update. The H1,
 concrete opening, evidence limits, source basis, all Explore bytes and existing
 other destinations remain unchanged. These are wording/navigation improvements,
 not measured improvements in reader outcomes.
+
+## Missing-page recovery
+
+An unknown public path returned HTTP 404 with the old unlinked sentence
+'This prototype has one entry page.' The fallback now identifies the site and
+offers two existing destinations: the introduction and Explore. Root-relative
+links and the existing stylesheet also resolve from nested missing paths.
+HTTP 404 remains an error response; there is no redirect, search, script,
+tracking, invented destination or claim about why the path is absent.
+Only the generated `404.html` changes; the other 67 outputs are preserved.

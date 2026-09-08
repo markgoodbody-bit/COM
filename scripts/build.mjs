@@ -48,9 +48,9 @@ await copyExplore();
 await mkdir(path.join(root, 'downloads'), { recursive: true });
 const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 await writeFile(path.join(root, 'downloads/Campfire-preview.html'), html.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
-await writeFile(path.join(root, 'out/404.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><title>Not found</title><h1>Not found</h1><p>This prototype has one entry page.</p></html>');
+await writeFile(path.join(root, 'out/404.html'), '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Please Start From Here</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="/style.css"></head><body><header class="masthead"><a href="/">Please Start From Here</a></header><main><section class="intro"><h1>Page not found</h1><p>There is no page at this address.</p><p><a href="/">Return to the introduction</a> or <a href="/explore/">explore the readings</a>.</p></section></main></body></html>\n');
 console.log('Static build: human preview, five machine-reading files and preserved Explore assets; no browser JavaScript or server runtime.');
-for (const relativePath of ['out/index.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
+for (const relativePath of ['out/index.html', 'out/404.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
   const bytes = await readFile(path.join(root, relativePath));
   console.log(`${relativePath}: ${bytes.length} bytes; SHA-256 ${createHash('sha256').update(bytes).digest('hex')}`);
 }
