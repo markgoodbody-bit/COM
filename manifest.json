@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "name": "Please Start From Here",
-  "canonical_url": "http://pleasestartfromhere.com/",
+  "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
   "updated": "2026-09-08",
@@ -42,7 +42,7 @@
     "human_preview_source_commit": "7f20b46d64cbacb90bd1fcbf19af89e071865a64",
     "published_source": "https://github.com/markgoodbody-bit/COM/tree/gh-pages",
     "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness.",
-    "explore_source_commit": "323a3fa9c96bd67c323bab967607c4855508b531",
+    "explore_source_commit": "77165a1fb67215506128814939c9635e9b3e6ba1",
     "explore_source_path": "door-prototypes/perspective-walk-20260908/"
   },
   "boundaries": [

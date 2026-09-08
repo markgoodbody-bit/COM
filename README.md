@@ -178,3 +178,35 @@ are byte-identical. No new theory, reader outcome, release, permission or host
 change is claimed. Previous index/llms identities above are historical.
 - `index.html`: 5,454 bytes; SHA-256 `cd050e1893da5b883fee16f2127035b5451cd9f3c6d3b500d2eb0004318227a9`.
 - `llms.txt`: 3,808 bytes; SHA-256 `0ec46a2258233cd8ce56d020ec1e1386097b14ea98828c9f1d737a1ff9e0d22c`.
+# Current welcome and HTTPS update — 8 September 2026
+
+Maintained source: `b7a395ba0ccb033751fb9b7d8af9d96680dcf3a5`.
+Explore generator: `77165a1fb67215506128814939c9635e9b3e6ba1`,
+`door-prototypes/perspective-walk-20260908/`; all four modules / 49 tests passed.
+Exact source reproduces 60 Explore files / 172,236 bytes, tree SHA-256
+`975c16885d9fc24b1dd970cffc6737a77a5a20e6fd4bfd1b132a954d1da4eb2f`.
+
+Before: the entrances introduced the work but did not ask a reader's question;
+root self-references temporarily used HTTP. After: five Explore entrances and
+the human/root-machine introduction share the optional welcome and explicit
+no-replies boundary. Their map and root provenance are current. Root self-links
+use HTTPS after normal certificate verification succeeded at 10:59:42Z.
+Exactly 12 of 68 generated files change from `8d23f18`; all paths remain.
+The other 56 files, including all readings, full packets, CSS and 404, are identical.
+Seed wording is preserved apart from HTTPS schemes (999 bytes).
+
+One domain removal and immediate restoration ran at 10:57Z. GitHub's restoration
+head `8d23f18` has the exact same complete tree as `3eaf0da`. Approved apex/www
+certificate and HTTPS enforcement were subsequently read back. Do not repeat
+that recovery. Domain account protection remains unconfirmed. No DNS, source
+terms, indexing or project status changed. This is transport/wording work, not
+reader-benefit evidence. These build identities require separate public checks:
+
+- index.html: 5,834 bytes; SHA-256 `e1bdbebad2c6301b0c3944ed290f69e6ef972c5b705f7a3c1defc6543622cfdf`.
+- llms.txt: 4,159 bytes; SHA-256 `3ce4f9b71b28b2b271207e4b4f8f33f09b9ea9833e93b06d171d9715133e6e66`.
+- seed.txt: 999 bytes; SHA-256 `484cb0fa39471bedd8d7ad64f768b6b709d7b454890221f8d410930da73bcd8a`.
+
+Future updates use the maintained build and exact pinned generator as described
+in its README. Preserve CNAME and publishing-only metadata. Historical receipts
+below describe named earlier revisions, not current state. Content rollback is
+an ordinary reviewed revert, never another domain reset.

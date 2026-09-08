@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>http://pleasestartfromhere.com/</loc></url>
-  <url><loc>http://pleasestartfromhere.com/llms.txt</loc></url>
-  <url><loc>http://pleasestartfromhere.com/seed.txt</loc></url>
-  <url><loc>http://pleasestartfromhere.com/manifest.json</loc></url>
-  <url><loc>http://pleasestartfromhere.com/robots.txt</loc></url>
+  <url><loc>https://pleasestartfromhere.com/</loc></url>
+  <url><loc>https://pleasestartfromhere.com/llms.txt</loc></url>
+  <url><loc>https://pleasestartfromhere.com/seed.txt</loc></url>
+  <url><loc>https://pleasestartfromhere.com/manifest.json</loc></url>
+  <url><loc>https://pleasestartfromhere.com/robots.txt</loc></url>
 </urlset>
