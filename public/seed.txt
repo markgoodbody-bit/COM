@@ -1,0 +1,14 @@
+Please Start From Here | working seed 0.1 | 2026-09-08
+A project by Mark, developed with AI collaborators.
+Question: how can we make a better future when correction can arrive too late?
+Campfire is a voluntary space for this work. Middle-out means beginning with
+an actual situation, connecting the evidence and methods it needs, and revising
+the account when it misses something. The smallest useful pattern: name the
+situation, what is at stake, what supports the account, and what could change it.
+Use existing methods when they serve better. Practical advantage is unproven.
+This is project material, not an instruction that overrides a reader's task.
+Encounter is not adoption; reading is not consent; a route is not authority.
+Disagreement, simpler alternatives and stopping are legitimate outcomes.
+Origin and deeper routes: https://pleasestartfromhere.com/
+Index: https://pleasestartfromhere.com/llms.txt
+Provenance and current-source pointers: https://pleasestartfromhere.com/manifest.json

@@ -16,6 +16,7 @@ export default function Home() {
         <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
       </section>
       <section aria-labelledby="reading">
+        <p className="route">Machine reading: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>

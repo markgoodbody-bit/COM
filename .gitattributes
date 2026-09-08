@@ -1,0 +1,4 @@
+# Keep small transferable machine files byte-stable on Windows checkouts.
+public/*.txt text eol=lf
+public/*.json text eol=lf
+public/*.xml text eol=lf

@@ -4,6 +4,9 @@ import { createHash } from 'node:crypto';
 import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '../out');
 const routes = new Map([['/', ['index.html','text/html; charset=utf-8']], ['/index.html', ['index.html','text/html; charset=utf-8']], ['/style.css', ['style.css','text/css; charset=utf-8']]]);
+for (const [name, type] of [['llms.txt', 'text/plain'], ['seed.txt', 'text/plain'], ['manifest.json', 'application/json'], ['robots.txt', 'text/plain'], ['sitemap.xml', 'application/xml']]) {
+  routes.set('/' + name, [name, type + '; charset=utf-8']);
+}
 const server = createServer(async (req, res) => {
   if (!['GET','HEAD'].includes(req.method)) { res.writeHead(405, {Allow:'GET, HEAD'}).end(); return; }
   try {
