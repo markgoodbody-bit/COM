@@ -1,5 +1,6 @@
 import {Problem,newKey,sha} from './store.js';
 import {CorrectionStore} from './correction-store.js';
+import {edgeAdmission} from './edge-admission.js';
 
 const esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
   .replaceAll('"','&quot;').replaceAll("'",'&#39;');
@@ -53,6 +54,7 @@ export async function handleCorrection(request,env,clock=()=>Date.now()){
     if(!env.DB)throw new Problem(503,'STORAGE_UNAVAILABLE');
     if(request.method==='POST'){
       const origin=request.headers.get('origin');if(origin&&origin!==env.APP_ORIGIN)throw new Problem(403,'CROSS_ORIGIN_POST_REFUSED');
+      if(['/report','/api/correction'].includes(url.pathname))await edgeAdmission(env,'correction');
       input=await readInput(request);
     }
     const corrections=new CorrectionStore(env.DB,clock);
