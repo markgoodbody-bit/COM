@@ -4,6 +4,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { sharedStyle } from './house-style.mjs';
+import { VIEWS, decodeSource, renderSource } from './source-views.mjs';
 
 test('head-only transformation preserves markup-like source payload', () => {
   const input = '<html><head><style>body{color:red}</style></head><body><pre>&lt;style&gt;text&lt;/style&gt;</pre></body></html>';
@@ -25,17 +26,28 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       const before = execFileSync('git', ['show', baseline + ':' + relative], { cwd: publishing, maxBuffer: 10 * 1024 * 1024 });
       if (relative.endsWith('.html')) {
         const html = actual.toString('utf8');
-        // Only the root and appended reader history have substantive edits.
-        // The four full source views change their wrapper edition, not payload.
-        if (!['index.html', 'changes.html'].includes(relative)) {
+        // Root, appended history and deliberately revised orientation are edited.
+        // The other three source views change wrapper edition, not payload.
+        if (!['index.html', 'changes.html', 'read/orientation.html'].includes(relative)) {
           const normalize = text => text.replace('Site Preview 0.8</p>', 'Site Preview 0.7.2</p>');
           assert.equal(normalize(html.slice(html.indexOf('<body'))), before.toString('utf8').slice(before.toString('utf8').indexOf('<body')), relative);
           if (html.slice(html.indexOf('<body')) === before.toString('utf8').slice(before.toString('utf8').indexOf('<body'))) unchangedBodies++;
           else editionOnlyBodies++;
         }
+        if (relative === 'read/orientation.html') {
+          const view = VIEWS.find(v => v.output === relative);
+          const bytes = await readFile('public/' + view.source);
+          // Pin and exact payload checked here, not an unrestricted exception.
+          const expected = renderSource(view, bytes, []);
+          const payload = text => text.split('<code id="source-text">')[1].split('</code>')[0];
+          assert.equal(payload(html), payload(expected));
+          assert.ok(decodeSource(bytes).includes('not a procedure to complete'));
+        }
         assert.match(html, /<link rel="stylesheet" href="\.?\/?style\.css">/, relative);
         assert.doesNotMatch(html.slice(0, html.indexOf('</head>')), /<style>/, relative);
         pages++;
+      } else if (relative === 'llms.txt') {
+        assert.deepEqual(actual, await readFile('public/llms.txt'));
       } else if (!['style.css', 'manifest.json', 'explore/map.json', 'changes.md'].includes(relative)) {
         assert.deepEqual(actual, before, relative); unchanged++;
       }
@@ -50,7 +62,7 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
     const bytes = await readFile('out/explore/' + item.path);
     assert.equal(item.bytes, bytes.length, item.path); assert.equal(item.sha256, sha(bytes), item.path);
   }
-  console.log({ checkedHtmlPages: pages, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, explicitlyEditedBodies: 2, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
+  console.log({ checkedHtmlPages: pages, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, explicitlyEditedBodies: 3, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
 });
 
 test('declared light and dark text pairs meet the selected 4.5:1 floor', async () => {

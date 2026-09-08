@@ -50,6 +50,19 @@ export default function Home() {
         <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
         <p>Reading implies no adoption, obligation or consent.</p>
       </section>
+      <section aria-labelledby="small-loop">
+        <h2 id="small-loop">Take one useful step</h2>
+        <p>These questions are an optional way to work on something, not a procedure to complete. Start with whichever helps.</p>
+        <ol>
+          <li><strong>Notice.</strong> What can you actually observe? Keep what is observed, reported, inferred and unknown distinct.</li>
+          <li><strong>Choose.</strong> What actions or possibilities are reachable? Include waiting or doing nothing where relevant.</li>
+          <li><strong>Decide.</strong> What will you do, at what scale, and with what uncertainty? A description is not permission.</li>
+          <li><strong>Responsibility.</strong> Who can act, decide, stop or correct? Who carries the work and burden, and who can answer back?</li>
+          <li><strong>Repercussions.</strong> What changes now, later or elsewhere? What becomes hard to undo, what possibilities open or close, and what remains afterwards?</li>
+          <li><strong>Check and correct.</strong> What would show this reading was wrong? What changed after the action? Continue, go deeper, look from another position, use a stronger method, or leave?</li>
+        </ol>
+        <p>The same questions can recur at another depth without requiring the same answer or the same amount of detail. You can take one useful piece and leave.</p>
+      </section>
       <section aria-labelledby="why">
         <h2 id="why">Why this exists</h2>
         <p className="lead">An appeal can succeed after the opportunity it was meant to protect has gone. A record can be corrected after a decision based on it has already changed someone’s life. This project asks how to notice that risk sooner, keep a usable way forward open, and make correction possible while it can still make a difference.</p>

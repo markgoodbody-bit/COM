@@ -82,6 +82,28 @@ class FirstContactTests(unittest.TestCase):
         self.assertLess(self.text.index('Another perspective'), self.text.index('Something is happening'))
         self.assertIn('https://pleasestartfromhere.com/', self.page.links)
 
+    def test_optional_small_loop_after_movements_and_in_machine_reading(self):
+        self.assertLess(self.text.index('I am only curious'), self.text.index('Take one useful step'))
+        self.assertLess(self.text.index('Take one useful step'), self.text.index('Why this exists'))
+        cell = self.html.split('<section aria-labelledby="small-loop">')[1].split('</section>')[0]
+        self.assertEqual(Reading(cell).tags.count('li'), 6)
+        self.assertIn('not a procedure to complete', self.text)
+        self.assertIn('A description is not permission.', self.text)
+        recurrence = 'The same questions can recur at another depth without requiring the same answer or the same amount of detail.'
+        self.assertIn(recurrence, self.text)
+        machine = (ROOT / 'out/llms.txt').read_text(encoding='utf-8')
+        self.assertIn(recurrence, machine)
+        self.assertIn('not a procedure to complete', machine)
+        self.assertIn('A description is not permission.', machine)
+        self.assertIn('You can take one useful piece and leave.', machine)
+        for label in ['Notice', 'Choose', 'Decide', 'Responsibility', 'Repercussions', 'Check and correct']:
+            self.assertIn(label + ':', machine)
+        edition = subprocess.check_output(['node', '--input-type=module', '-e', "import {SITE_EDITION} from './scripts/site-edition.mjs';process.stdout.write(SITE_EDITION)"], cwd=ROOT).decode()
+        self.assertIn('Site edition: Preview ' + edition, machine)
+        self.assertNotIn('Site edition: Preview 0.7', machine)
+        self.assertIn('<title>Please Start From Here</title>', self.html)
+        self.assertIn('A voluntary starting point for understanding, deciding, making and correcting under uncertainty.', self.html)
+
     def test_no_old_destination_dropped_and_history_preserved(self):
         def old(name):
             return subprocess.check_output(['git', 'show', BASELINE + ':' + name], cwd=PUBLISHED).decode('utf-8')
