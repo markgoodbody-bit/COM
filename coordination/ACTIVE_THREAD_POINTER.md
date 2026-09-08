@@ -17,12 +17,13 @@ inside the wider purpose; no instrument is the purpose itself.
 
 - Active Door work / AI handoffs: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108).
 - Public address: `https://pleasestartfromhere.com/`.
-- Current public edition: **Preview 0.8**, publication commit
-  `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`; maintained source reported by Codex
-  `45341947bcbc90b7fb34ce702ff8f4ea6e3e87af`.
+- Current public edition: **Preview 0.8**, `gh-pages`
+  `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`.
 - Source/content review: [PR #114](https://github.com/markgoodbody-bit/COM/pull/114).
 - Accountless receiver evaluation: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116),
-  combined current head at this update `965f1c4a5ce5362d0f6088ca47f89008bd57d4ef`.
+  current head `0870bc02af3577f50545740e43333344c876e577`.
+- Unpublished visual candidate: branch `framework/door-visual-candidate-20260908`, current
+  head `056277d919856441dee3adb158c5628aa8266337`, forked from exact public 0.8.
 
 Always read later #108 returns and live heads first. These are retrieval anchors, not proof
 that nothing later happened. Do not replay the whole thread or a Square carrier.
@@ -43,127 +44,137 @@ Do not repeat by momentum:
 Preview 0.8 gives five optional first movements before the long explanation: situation /
 possibility / challenge / compact source / curiosity. Each carries a useful distinction before
 its link. Existing machine entrance, seed and orientation remain authoritative for their own
-source edition. Public discussion is still **read-only**. Delivery evidence is not evidence of
-reader comprehension or provider-wide access.
+source edition. Public discussion remains **read-only**. Delivery evidence is not reader-
+benefit evidence.
 
-## Receiver / provider evidence
+## Receiver / provider state
 
-PR #116 remains synthetic/evaluation-only and hard-refuses public non-loopback use.
+PR #116 remains synthetic/evaluation-only and source hard-refuses public non-loopback use.
 
-Earned evidence:
+Earned evidence includes:
 
-- Framework contribution-receiver suite after audit portability repair: 16/16 Linux Node22.16.
-- Claude Code independently reproduced an earlier head: 15/15 Windows Node24.19 plus 5/5
-  pre-written adapter scenarios.
-- Codex exercised the same isolated D1 database `psfh-receiver-eval-20260908`: eight
-  contribution lifecycle groups passed through a workerd/D1 binding, including safe retry,
-  private/public separation, revision-bound moderation, responses, reconsideration,
-  withdrawal, audit rollback and lost-ack recovery.
-- Codex reproduced exact correction HTTP/router head
-  `7b0aa9446984e6b34481527a800a6bbc1ff3c5e3` at **34/34** on Windows Node24.19.
-- Hostile extension found two additional real HTTP defects: oversized correction streams
-  could be fully consumed before refusal; failed HTML reports could reset the selected kind.
-  Codex repair commit `c8fb095f0e3e511320f39079b37b57944713d041` passed **36/36** on its
-  provider branch and was subsequently integrated file-by-file into PR #116 while preserving
-  newer reporter-control work.
+- Framework contribution receiver after audit-portability repair: 16/16 Linux Node22.16;
+- Claude Code earlier independent reproduction: 15/15 Windows + 5/5 pre-written scenarios;
+- Codex correction HTTP/router head `7b0aa944...`: 34/34 Windows;
+- Codex hostile HTTP repair branch: 36/36 after bounding correction streams and preserving
+  failed-form state;
+- same isolated D1 database `psfh-receiver-eval-20260908` / UUID
+  `85c6f402-da0b-4c52-a1ad-445dc999c3b0` has migration0002 applied exactly once;
+- remote correction evaluation kept ordinary intake disabled and passed retry/conflict,
+  private operator queue, unauthorised admin denial, explicit no-change resolution without
+  target/public mutation, pending withdrawal and non-loopback guard;
+- post-resolution reporter note control was then reproduced on that same D1 binding: wrong
+  management key refused, owner cleared only their live note, resolved outcome/reason persisted,
+  target/public state stayed unchanged, and one `reporter_note_cleared` event remained;
+- provider receiver subtree with those repairs passed 39/39.
 
-The integrated repair now bounds correction streaming at 64 KiB, preserves failed-form kind
-and pre-held keys, and routes correction admin only after the contribution handler's bounded
-parsing + authentication rather than router-level clone/json sniffing.
+No second D1 evaluation database should be created.
 
-## D1 correction evaluation
+## Contributor answer-back now reaches the private receipt
 
-The SAME remote D1 UUID `85c6f402-da0b-4c52-a1ad-445dc999c3b0` is the only correction
-provider-evaluation database. Do not create another.
+Codex's closed operator rehearsal exposed a consequential gap: a project answer could exist on
+the public listing while the contributor's private receipt only showed status.
 
-Codex provider return established:
+Framework integrated Codex provider commit `58cb6c79...` as exact receiver blobs onto the
+current PR #116 line without importing provider-evaluation history. Current head is
+`0870bc02...`.
 
-- initial schema read transiently returned Cloudflare 7403; identity/info and one bounded repeat
-  succeeded. No provider cause inferred;
-- migration0002 was absent, then applied exactly once;
-- after migration: `enabled=0`, `ready_until=0`, `correction_limit=100`;
-- ordinary contribution intake remained paused while a synthetic correction was accepted;
-- same retry recovered one ID; changed retry conflicted;
-- unauthorised admin was denied; wrong management owner was denied;
-- correction queue remained private/operator-only and the report was absent from public output;
-- explicit `no_change` resolution left the full target row/public JSON unchanged;
-- pending withdrawal cleared the reporter note;
-- hard non-loopback 503 guard remained;
-- independent remote query afterwards confirmed zero published rows.
+`Store.receipt` now adds a separate `responses` array (`actor`, `body`, `created_at`) only for
+the contribution's **current published revision**. Replacement or withdrawal cannot reveal an
+answer attached to an older publication. Initial submission/retry receipts remain storage
+receipts; a later private receipt check retrieves the project answer.
 
-These are bounded provider results. No real outage injection, remote concurrency, standalone
-CLI/provider-HTTP, public receiving, physical-erasure or provider-backup guarantee follows.
+Codex's exact receiver subtree passed **40/40** on Windows Node24.19 and the standalone closed
+`npm run test:operator` rehearsal passed **1/1**:
 
-## Affected-person answer-back
+`ready -> invented objection -> queue -> pause -> reasoned publish -> separate response -> owner private receipt reads answer -> withdraw`
 
-The correction lane is separate from ordinary contributions and has reserved queue/rate
-capacity. A reporter pre-holds retry/management capabilities and can inspect or withdraw a
-pending request. Operator resolution is explicit.
-
-`CORRECTION_REPORT != PROOF_OF_HARM != TAKEDOWN_AUTHORITY`
-
-Filing or resolving a report alone does not mutate the target contribution/public state.
-Reserved answer-back must not become unauthenticated censorship.
-
-Framework then fixed a hostile-read control problem: resolution previously trapped the
-reporter's free-text note. The current combined PR head allows the management-capability
-holder to clear only that reporter-supplied note after resolution while preserving resolved
-state, target/kind, operator outcome/reason and audit history. A `reporter_note_cleared` event
-records the operation; pending requests still use withdrawal.
-
-`REQUEST_RESOLVED != REPORTER_NOTE_MUST_REMAIN`
-
-The current combined head `965f1c4a...` contains store + HTTP regressions for this behavior
-and Codex's two HTTP fixes, but has **no independent exact-head receipt yet**. Clearing the
-live note does not establish backup/physical erasure.
-
-## Operator / handling boundary
-
-The operator CLI contains the Windows direct-entry repair and bounded contribution/correction
-queue/resolution actions. The handling notice remains **draft / non-live** and now reflects
-closed correction capacity plus post-resolution note control while preserving:
+Wrong operator/management capabilities were refused and temporary state/secrets were cleaned.
+The new private receipt-response query has **not yet been exercised against remote D1**.
 
 `RECEIPT != PUBLICATION != PROJECT_RESPONSE != PROJECT_CHANGE`
 
+## Affected-person correction boundary
+
+Correction capacity is separate from ordinary contribution intake and has reserved queue/rate
+capacity.
+
+`CORRECTION_REPORT != PROOF_OF_HARM != TAKEDOWN_AUTHORITY`
+
+A report/resolution alone does not change target content. A resolved reporter can clear only
+their own free-text note while preserving target/kind, resolved disposition, operator
+outcome/reason and audit history.
+
+`REQUEST_RESOLVED != REPORTER_NOTE_MUST_REMAIN`
+
+The handling notice remains **draft / non-live**. Clearing live fields does not establish
+provider backup/log/physical erasure.
+
 `DEADLINE_REACHED != CLEANUP_RAN != LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`
 
-CC's local SQLite WAL finding remains real; D1 success does not establish exact provider
-backup/log/physical-erasure timing.
+## Arrival ecology / visual candidate
+
+Mark wants eventually to be able to post the bare Door link on Reddit and invite people to use
+it if they want. A random human may not independently think to hand the address to an AI; many
+kinds of humans, AIs, crawlers, sceptics, deep-link visitors and returning contributors will
+arrive through different apertures.
+
+Framework source direction on PR #114 defines an **arrival ecology**, not one funnel. The new
+unpublished branch `framework/door-visual-candidate-20260908` is an actual two-file visual
+candidate forked from exact public 0.8:
+
+- warmer off-white / near-black + blue + restrained amber;
+- broad quiet opening field with CSS-only horizon/branching motif;
+- five existing semantic first movements rendered as asymmetric places-to-begin;
+- optional `Another perspective` human->AI handoff with literal Door address and ordinary
+  example questions; no provider endorsement, special syntax or AI-authority claim;
+- no external fonts/images/framework/tracking/JS or motion dependency;
+- existing literal URLs, raw alternatives, limits, disagreement and read-only discussion
+  wording preserved;
+- responsive one-column collapse and existing focus/no-script semantics retained by design.
+
+This candidate is **not public** and must not be published piecemeal. Codex should render it
+locally and return actual desktop/mobile light/dark screenshots plus keyboard, zoom/reflow,
+text-spacing, no-CSS/stripped-order and shared-style regression observations. If accepted, move
+the design into maintained site source rather than treating this gh-pages-derived branch as the
+generator.
+
+`PRETTIER != MORE USEFUL`  
+`HUMAN INVITATION != AI OBLIGATION`
 
 ## Foreground next work
 
-1. Reproduce exact combined PR #116 head `965f1c4a...` with the complete suite.
-2. On the SAME migrated D1 DB, perform the narrow post-resolution note-control follow-up:
-   resolve synthetic correction with nonempty note; correct management holder clears note;
-   resolved state/outcome/reason remain; `reporter_note_cleared` appears; wrong holder refused;
-   target/public state remains unchanged.
-3. Define any distinct authorised temporary-withhold/remove action only if required; reporting
-   itself must never self-execute censorship.
-4. Establish real operator custody / staffing window, provider/application retention/log/backup
-   bounds, production throttling/failure behavior and browser/accessibility.
-5. Decide the smallest honest closed-by-default deployed HTTP/operator surface for final
-   pre-public evaluation. Do not expose production intake to satisfy a test.
-6. Only after these are earned may on-domain discussion move from read-only to receiving.
+1. Receiver: bounded remote-D1 check of the new private receipt-response query only; do not
+   rerun already-earned correction work without a regression reason.
+2. Operations: establish actual operator custody/review capacity and the smallest honest
+   attended intake window; a successful synthetic rehearsal is not staffing.
+3. Retention: replace remaining provider/application log/backup unknowns before publishing a
+   live handling notice.
+4. Deployment: choose the smallest closed-by-default HTTP/operator pre-public surface; do not
+   expose production intake merely to satisfy a test.
+5. Browser/accessibility: verify actual contribution/report surfaces before public receiving.
+6. Visual candidate: browser/screenshot review and maintained-source translation if it survives.
+7. Only after these are earned may on-domain discussion move from read-only to receiving.
+8. Reddit/external first contact remains later and separately authorised; no post yet.
 
 ## Owners
 
 - **Codex** — sole maintained-site/domain/provider operator and owner of the one existing D1
-  evaluation database. Preserve public 0.8 and working apex/www/nameservers/TLS.
+  evaluation database; preserve public 0.8 and working apex/www/nameservers/TLS.
 - **Framework** — intent/integration lead and PR #116 implementation owner; maintain receiver /
-  correction / handling boundaries and evidence separation.
+  correction / arrival / handling boundaries and evidence separation.
 - **Claude Code** — independent review/reproduction when available; no blocking gate or duplicate
   receiver implementation.
-- **Mark** — human originator and consequential release/account authority. Routine AI-to-AI work
-  should not bounce back to Mark unnecessarily.
+- **Mark** — human originator and consequential release/account authority. Routine reversible
+  AI-to-AI work should not bounce back to Mark unnecessarily.
 
-No production intake, paid-plan enrollment, DNS/apex move, licence change or claim of reader
-benefit follows from an evaluation pass.
+No production intake, Reddit post, paid-plan enrollment, DNS/apex move, licence change or claim
+of reader benefit follows from an evaluation or visual pass.
 
 ## Separate / unresolved, not foreground blockers
 
-- newcomer evidence is still bounded: user-relayed encounters support access to actual material,
-  useful small beginnings, disagreement without vocabulary adoption, non-GitHub answer-back and
-  visible handling. Collaborative making is currently project invitation, not demonstrated demand;
+- newcomer evidence remains bounded and non-representative; collaborative making is still a
+  project invitation, not demonstrated visitor demand;
 - provider-specific AI access remains heterogeneous;
 - reuse/licence notices require an owner decision before terms change;
 - account-level domain takeover protection remains separate from working HTTPS;
@@ -177,6 +188,6 @@ benefit follows from an evaluation pass.
 `POSTED != RECEIVED != ACTED != EFFECT`  
 `REMOTE_D1_LIFECYCLE_PASS != PUBLIC_RECEIVER_READY`  
 `LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`  
+`CLI_REHEARSAL_PASS != OPERATOR_CUSTODY`  
 `NEXT_FETCH_FAILS != FIRST_CONTACT_BECOMES_ONLY_A_DIRECTORY`  
-`CLI_UNIT_PASS != CLI_EXECUTES_ON_THIS_OS`  
 `LIVE SOURCE WINS OVER A STALE POINTER`
