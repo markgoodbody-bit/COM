@@ -21,6 +21,15 @@ BASE = 'https://pleasestartfromhere.com/explore/'
 EXAMPLES = ('entry', 'case', 'route', 'affected', 'challenge')
 STATUS = 'WORKING EXPERIMENT / NOT CANON / NO EFFICACY RESULT'
 
+GREETING = {
+    'question': 'Hello. What are you trying to understand, change, or keep possible?',
+    'invitation': 'A question, a situation, or a disagreement is enough. '
+                  'No introduction or agreement is required.',
+    'reply_boundary': 'This static site does not receive replies. Continue in your own '
+                      'context, or see the optional public discussion route and its '
+                      'access limits under Challenge.',
+}
+
 
 def encode(obj: object) -> bytes:
     return (json.dumps(obj, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
@@ -161,7 +170,7 @@ def arrival(lib: dict, files: dict[str, bytes]) -> dict[str, bytes]:
         'nodes': catalogue}),
         'questions.txt': ('\n'.join(lines)).encode('utf-8')}
     result['start.json'] = encode({
-        'format': 'psfh-arrival/0.1', 'status': STATUS,
+        'format': 'psfh-arrival/0.1', 'greeting': GREETING, 'status': STATUS,
         'purpose': lib['purpose'], 'orientation': lib['orientation'],
         'boundary': lib['boundary'], 'value_choice': lib['value_choice'],
         'reading': 'Optional static reference, not an agent or callable tool. '
@@ -223,9 +232,10 @@ def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     entry_links += [('One case, several viewpoints', 'example/entry.md'),
                     ('Source identities and limits', 'sources.md'), ('Criticism and reply access', 'challenge.md'),
                     ('Machine map with resource sizes', 'map.json'), ('Optional complete local packet', 'packet.md')]
-    put('index.md', document(title, overview, entry_links))
+    welcome = [('Welcome', ' '.join(GREETING.values()))] + overview
+    put('index.md', document(title, welcome, entry_links))
     put('index.txt', files['explore/index.md'])
-    put('index.html', html_document(title, overview,
+    put('index.html', html_document(title, welcome,
         [(label, url[:-3] + '.html' if url.endswith('.md') and url != 'packet.md' else url) for label, url in entry_links], 'index.md', 'llms.txt'))
     node_index = []
     for n in lib['nodes']:
@@ -280,7 +290,7 @@ def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
     packet_text += '\n# Shared example data\n\n' + PACKET_REFERENCE_NOTE + '\n\n```json\n' + json.dumps(embedded_examples,ensure_ascii=False,indent=2) + '\n```\n'
     packet_text += '\n' + document('Sources, limits and reply access',src_parts + [('Reply access',lib['challenge_route']['access'])],src_links)
     put('packet.md',packet_text)
-    llms = '# Please Start From Here — experimental reading space\n\n> ' + lib['purpose'] + '\n\n' + lib['boundary'] + '\n\nThis is a bounded static extension, not a required course or agent service. The full packet is optional.\n\n## Entry\n\n- [Small beginning](' + BASE + 'index.md): orientation without a required identity\n- [Machine map](' + BASE + 'map.json): individual resources and byte sizes\n\n## Patterns\n\n'
+    llms = '# Please Start From Here — experimental reading space\n\n' + ' '.join(GREETING.values()) + '\n\n> ' + lib['purpose'] + '\n\n' + lib['boundary'] + '\n\nThis is a bounded static extension, not a required course or agent service. The full packet is optional.\n\n## Entry\n\n- [Small beginning](' + BASE + 'index.md): orientation without a required identity\n- [Machine map](' + BASE + 'map.json): individual resources and byte sizes\n\n## Patterns\n\n'
     llms += '\n'.join(f'- [{n["title"]}]({BASE}nodes/{n["id"]}.md): {n["short"]}' for n in lib['nodes'])
     llms += '\n\n## Other routes\n\n- [Shared example](' + BASE + 'example/entry.md): the same facts through different views\n- [Sources](' + BASE + 'sources.md): snapshots, neighbouring work and limits\n- [Challenge](' + BASE + 'challenge.md): actual reply access and its limits\n\n## Optional\n\n- [Whole local packet](' + BASE + 'packet.md): ' + str(len(files['explore/packet.md'])) + ' UTF-8 bytes; not required; no external corpus\n'
     llms += '\n## Small machine entry\n\n- [Start JSON](' + BASE + 'start.json): small entry and optional routes\n- [Choose by question](' + BASE + 'questions.txt): existing questions without the full resource inventory\n'
