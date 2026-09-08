@@ -30,6 +30,12 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         assert.equal(actual.length, CAMP_FIRE.bytes);
         continue;
       }
+      const variant = CAMP_FIRE.responsive_variants.find(item => item.local_image === '/' + relative);
+      if (variant) {
+        assert.equal(createHash('sha256').update(actual).digest('hex'), variant.sha256);
+        assert.equal(actual.length, variant.bytes);
+        continue;
+      }
       if (relative === 'art/camp-fire.json') {
         assert.deepEqual(JSON.parse(actual), CAMP_FIRE);
         continue;

@@ -88,7 +88,14 @@ const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 // Keep the downloadable local preview outside the public indexing-policy change.
 const previewHtml = html.replace('<link rel="describedby"', '<meta name="robots" content="noindex,nofollow"><link rel="describedby"');
 const offlineArt = 'data:image/jpeg;base64,' + (await readFile(path.join(root, 'public/art/camp-fire.jpg'))).toString('base64');
-await writeFile(path.join(root, 'downloads/Campfire-preview.html'), previewHtml.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>').replace('src="' + CAMP_FIRE.local_image + '"', 'src="' + offlineArt + '"'));
+const offlineHtml = previewHtml
+  .replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>')
+  .replace(/<link rel="preload" as="image" imageSrcSet="[^"]+" imageSizes="[^"]+" fetchPriority="high"\/>/, '')
+  .replace(/ srcSet="[^"]+"/, '')
+  .replace(/ sizes="[^"]+"/, '')
+  .replace(' fetchPriority="high"', '')
+  .replace('src="' + CAMP_FIRE.local_image + '"', 'src="' + offlineArt + '"');
+await writeFile(path.join(root, 'downloads/Campfire-preview.html'), offlineHtml);
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Please Start From Here</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="/style.css"></head><body><header class="masthead"><a href="/">Please Start From Here</a></header><main><section class="intro"><h1>Page not found</h1><p>There is no page at this address.</p><p><a href="/">Return to the introduction</a> or <a href="/explore/">explore the readings</a>.</p></section></main></body></html>\n');
 await applyHouseStyle(path.join(root, 'out'));
 console.log('Static build: shared HTML presentation, preserved reading sources; no browser JavaScript or server runtime.');

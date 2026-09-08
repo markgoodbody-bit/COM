@@ -62,7 +62,19 @@ class FirstContactTests(unittest.TestCase):
         self.assertEqual(len(image), record['bytes'])
         self.assertIn('src="/art/camp-fire.jpg"', self.html)
         self.assertIn('alt="' + record['alt'] + '"', self.html)
-        self.assertIn('loading="lazy"', self.html)
+        self.assertNotIn('loading="lazy"', self.html)
+        self.assertIn('fetchPriority="high"', self.html)
+        self.assertIn('sizes="(max-width: 60rem)', self.html)
+        for variant in record['responsive_variants']:
+            responsive = (ROOT / 'out' / variant['local_image'].lstrip('/')).read_bytes()
+            self.assertEqual(hashlib.sha256(responsive).hexdigest(), variant['sha256'])
+            self.assertEqual(len(responsive), variant['bytes'])
+            self.assertIn(f"{variant['local_image']} {variant['width']}w", self.html)
+        self.assertLess(record['responsive_variants'][0]['bytes'], record['bytes'] // 20)
+        offline = (ROOT / 'downloads' / 'Campfire-preview.html').read_text(encoding='utf-8')
+        self.assertIn('data:image/jpeg;base64,', offline)
+        self.assertNotIn('srcSet=', offline)
+        self.assertNotIn('/art/camp-fire-720.jpg', offline)
         self.assertLess(self.html.index('<figcaption'), self.html.index('<img'))
         # The editorial revision moves the same art into the opening composition.
         # Direct reading routes precede it; the original detailed choices remain.

@@ -27,7 +27,11 @@ export default function Home() {
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
-          <img src={CAMP_FIRE.local_image} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="lazy" decoding="async" />
+          <img src={CAMP_FIRE.local_image}
+            srcSet={CAMP_FIRE.responsive_variants.map(image => `${image.local_image} ${image.width}w`).join(', ')}
+            sizes="(max-width: 60rem) min(44rem, calc(100vw - 2.5rem)), min(53vw, 47rem)"
+            alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height}
+            fetchPriority="high" decoding="async" />
         </figure>
         </div>
         <div className="first-movements" aria-label="Ways to begin">
