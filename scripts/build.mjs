@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import path from 'node:path';
@@ -30,11 +30,26 @@ for (const name of machineFiles) {
   if (name === 'manifest.json') JSON.parse(bytes.toString('utf8'));
   await writeFile(path.join(root, 'out', name), bytes);
 }
+// Preserve the exact generated Explore assets accepted from the publishing handoff.
+// Do not silently omit a missing source directory or follow filesystem links.
+async function copyExplore(relative = 'explore') {
+  for (const entry of await readdir(path.join(root, 'public', relative), { withFileTypes: true })) {
+    const child = path.join(relative, entry.name);
+    if (entry.isDirectory()) await copyExplore(child);
+    else if (entry.isFile()) {
+      const bytes = await readFile(path.join(root, 'public', child));
+      new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+      await mkdir(path.dirname(path.join(root, 'out', child)), { recursive: true });
+      await writeFile(path.join(root, 'out', child), bytes);
+    } else throw new Error(`Unsupported Explore entry: ${child}`);
+  }
+}
+await copyExplore();
 await mkdir(path.join(root, 'downloads'), { recursive: true });
 const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 await writeFile(path.join(root, 'downloads/Campfire-preview.html'), html.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><title>Not found</title><h1>Not found</h1><p>This prototype has one entry page.</p></html>');
-console.log('Static build: human preview and five machine-reading files; no browser JavaScript or server runtime.');
+console.log('Static build: human preview, five machine-reading files and preserved Explore assets; no browser JavaScript or server runtime.');
 for (const relativePath of ['out/index.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
   const bytes = await readFile(path.join(root, relativePath));
   console.log(`${relativePath}: ${bytes.length} bytes; SHA-256 ${createHash('sha256').update(bytes).digest('hex')}`);
