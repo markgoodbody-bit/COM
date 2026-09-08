@@ -6,19 +6,19 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Please Start From Here</a><span>Visual candidate · based on Site Preview {SITE_EDITION} · not published</span></header>
+    <header className="masthead"><a href="#start">Please Start From Here</a><span>Working preview · Site Preview {SITE_EDITION} · not published</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
         <h1>How can we make a better future?</h1>
         <p>A project by Mark, developed with AI collaborators.</p>
-        <p>Hello. Start from whatever brought you here. No introduction or agreement is required.</p>
+        <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
         <aside className="handoff" aria-label="Another perspective">
           <p><strong>Another perspective</strong></p>
-          <p>You can read this yourself, or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
+          <p>If it helps, read this yourself or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
           <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
         </aside>
-        <div className="first-movements" aria-label="Optional starting points">
+        <div className="first-movements" aria-label="Ways to begin">
           <article id="situation">
             <h2>Something is happening</h2>
             <p>What is changing, what is uncertain, and what could become harder to correct? A description can stay still while the situation changes. Keep what was observed, what was reported, and the explanation distinct. A failed search or fetch does not by itself establish absence.</p>
@@ -46,22 +46,25 @@ export default function Home() {
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">https://pleasestartfromhere.com/explore/</a></p>
           </article>
         </div>
-        <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
-        <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
-        <p>Reading implies no adoption, obligation or consent.</p>
+        <div className="opening-boundaries" aria-label="A few boundaries">
+          <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
+          <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
+          <p>Reading implies no adoption, obligation or consent.</p>
+        </div>
       </section>
-      <section aria-labelledby="small-loop">
+      <section className="small-loop" aria-labelledby="small-loop">
+        <p className="eyebrow">Use only what helps</p>
         <h2 id="small-loop">Take one useful step</h2>
-        <p>These questions are an optional way to work on something, not a procedure to complete. Start with whichever helps.</p>
-        <ol>
+        <p className="small-loop-lead">You do not need to work through all of these. Use the question that helps now; skip the rest.</p>
+        <ul className="learning-loop">
           <li><strong>Notice.</strong> What can you actually observe? Keep what is observed, reported, inferred and unknown distinct.</li>
           <li><strong>Choose.</strong> What actions or possibilities are reachable? Include waiting or doing nothing where relevant.</li>
           <li><strong>Decide.</strong> What will you do, at what scale, and with what uncertainty? A description is not permission.</li>
           <li><strong>Responsibility.</strong> Who can act, decide, stop or correct? Who carries the work and burden, and who can answer back?</li>
           <li><strong>Repercussions.</strong> What changes now, later or elsewhere? What becomes hard to undo, what possibilities open or close, and what remains afterwards?</li>
           <li><strong>Check and correct.</strong> What would show this reading was wrong? What changed after the action? Continue, go deeper, look from another position, use a stronger method, or leave?</li>
-        </ol>
-        <p>The same questions can recur at another depth without requiring the same answer or the same amount of detail. You can take one useful piece and leave.</p>
+        </ul>
+        <p className="loop-note">The same questions can recur at another depth without requiring the same answer or the same amount of detail. Take one useful piece and leave if that is enough.</p>
       </section>
       <section aria-labelledby="why">
         <h2 id="why">Why this exists</h2>
