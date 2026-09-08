@@ -1,5 +1,49 @@
 # Maintained Please Start From Here source
 
+## Current update: same-domain reading copies, 8 September 2026
+
+The Door's normal TRACE/ME reading routes now point to direct static files under
+resources/. Repository/history/participation routes remain distinct and outbound.
+The fourteen originals at TRACE46f4fcd1 and ME44f7efb5, including the existing
+50-page ME PDF and four PNG/SVG pairs, are copied exactly at current and fixed
+snapshot paths. Notices and candidate/baseline distinctions remain unchanged.
+The catalogue links all files; two figures directory indexes close the preserved
+README's directory link. No general Markdown renderer or PDF authoring is used.
+
+33 resource files total2,122,697bytes. Inventory SHA256:
+`26963e06a95925ab1e0f48366cee27d0c34fe6cb851616ea139bf5edfd2c90bc`.
+`scripts/RESOURCE_COPIES.json` is the exact reviewed input from COM10c23eb.
+All selected Git commit/tree/path/blob/size identities and four source-declared
+SHA256 values were checked. Acquisition is explicit through gh; normal npm builds
+are offline and verify all resource hashes before copying. The importer requires
+Python and pypdf for deliberate imports; normal builds use the existing Node runtime.
+
+For a future edition, review the inventory and update its explicit pin, acquire
+into a new empty directory, then assemble into another new empty directory with
+the existing public/resources as --previous. Previously recorded snapshots must
+remain identical. Review the new inventory hash and update scripts/resources.mjs
+and root manifest deliberately. Import the completed directory without deleting
+old snapshots, run npm build and the resource tests, and publish only after exact
+output comparison. Acquisition/validation failures must leave the last public
+site untouched. The build refuses missing/changed/extra files and fixed snapshot
+replacement; it does not fetch moving main branches automatically.
+
+Checks: `node --test scripts/test-resources.mjs` (6 tests),
+`python -B scripts/test_import_resources.py` (4 tests), existing literal-route
+check and unchanged Explore output comparison. Parsed PDF object checks, restricted
+SVG checks and Markdown link closure are bounded, not a comprehensive security
+audit or visual review. FW4c942e3's17 fixture tests pass, but its unmodified raw
+PDF-token check rejected /AA inside encoded image object134. That rejection was
+reported in COM5586078108, not silently counted as a passed corpus test. Its SVG
+namespace/ID/style checks informed the maintained importer.
+
+105 public outputs:33 added,4 changed,68 old outputs unchanged from486c148b.
+All62 Explore assets remain exact, including their upstream provenance pointers.
+Third-party texts, original source pointers, history and live discussion remain
+outbound; no claim of a completely self-contained ecosystem or provider access.
+No new host, rights, dependency lockfile, browser script, service, or DNS/TLS change.
+The reader change history is updated after actual public delivery is checked.
+
 ## Current update: reader change history, 8 September 2026
 
 Root changes.md preserves CHANGES.md edition 0.2 from COM commit

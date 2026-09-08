@@ -13,6 +13,9 @@
     "human_reading": "/",
     "change_history": "/changes.html",
     "change_history_text": "/changes.md",
+    "resources": "/resources/",
+    "resources_text": "/resources/index.md",
+    "resource_inventory": "/resources/inventory.json",
     "crawler_rules": "/robots.txt",
     "sitemap": "/sitemap.xml",
     "explore": "/explore/",
@@ -49,6 +52,8 @@
     "change_history_source_path": "door-prototypes/perspective-walk-20260908/CHANGES.md",
     "change_history_sha256": "5fd4c0e3d164e351e660533f73ef9243b2f9fcc9296580786a1f3d325b8c9489",
     "change_history_generator_commit": "3246a9de0936ee28b8fa17b9e15f73fd2896d15a",
+    "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
+    "resource_inventory_sha256": "26963e06a95925ab1e0f48366cee27d0c34fe6cb851616ea139bf5edfd2c90bc",
     "worked_revision_source_commit": "730ece48c96fae27d66c797c2fc8fe96a61e8d39",
     "worked_revision_source_path": "door-prototypes/perspective-walk-20260908/WORKED_REVISION.md",
     "explore_source_path": "door-prototypes/perspective-walk-20260908/"

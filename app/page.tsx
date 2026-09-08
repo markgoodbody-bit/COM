@@ -27,16 +27,17 @@ export default function Home() {
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>
-            <h3><a href={trace}>TRACE</a></h3>
+            <h3><a href="https://pleasestartfromhere.com/resources/trace/README.md">TRACE</a></h3>
             <p>A structural language for keeping affected scope, evidence, time, usable routes and the limits of correction connected.</p>
-            <p className="route"><a href={trace + "/blob/main/README.md"}>Introduction and current status</a><br/><a href={trace + "/blob/main/TRACE-SPINE.md"}>Compact spine</a></p>
+            <p className="route"><a href="https://pleasestartfromhere.com/resources/trace/README.md">Introduction and edition status</a><br/><a href="https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md">Compact spine</a> · <a href="https://pleasestartfromhere.com/resources/trace/TRACE.md">Full reference</a><br/><a href={trace}>Source repository and history</a></p>
           </article>
           <article>
-            <h3><a href={me}>Mechanical Ethics</a></h3>
+            <h3><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/README.md">Mechanical Ethics</a></h3>
             <p>The human-facing book about the distance between an institutional record and the life it affects, especially when correction arrives too late.</p>
-            <p className="route"><a href={me + "/blob/main/README.md"}>Introduction and current status</a><br/><a href={me + "/blob/main/MECHANICAL_ETHICS.md"}>Book: Markdown</a> · <a href="https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/MECHANICAL_ETHICS.pdf">PDF</a></p>
+            <p className="route"><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/README.md">Introduction and edition status</a><br/><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Book: Markdown</a> · <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">PDF</a><br/><a href={me}>Source repository and history</a></p>
           </article>
         </div>
+        <p><a href="https://pleasestartfromhere.com/resources/">All local reading files, diagrams and fixed editions</a>.</p>
         <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
         <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
       </section>

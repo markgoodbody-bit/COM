@@ -3,3 +3,5 @@ public/*.txt text eol=lf
 public/*.json text eol=lf
 public/*.xml text eol=lf
 public/explore/** -text
+public/resources/** -text
+scripts/RESOURCE_COPIES.json -text

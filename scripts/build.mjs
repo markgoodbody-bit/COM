@@ -5,8 +5,11 @@ import path from 'node:path';
 import ts from 'typescript';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { copyResources } from './resources.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
+// Validate all copied resources before changing the normal build output.
+await copyResources(path.join(root, 'public/resources'), path.join(root, 'out/resources'));
 await mkdir(path.join(root, '.build'), { recursive: true });
 await mkdir(path.join(root, 'out'), { recursive: true });
 const source = await readFile(path.join(root, 'app/page.tsx'), 'utf8');

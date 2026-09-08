@@ -28,10 +28,11 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Project sources
 
-- [TRACE introduction](https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/README.md): a structural language for examining affected scope, evidence, time, usable routes and limits of correction; includes its own status and limits.
-- [TRACE compact spine](https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/TRACE-SPINE.md): the compact specification and normal technical entry point.
-- [Mechanical Ethics introduction](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/README.md): current book status and reading routes.
-- [Mechanical Ethics book](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/MECHANICAL_ETHICS.md): the human-facing account of the distance between an institutional record and the life it affects.
+- [TRACE introduction](https://pleasestartfromhere.com/resources/trace/README.md): a structural language for examining affected scope, evidence, time, usable routes and limits of correction; includes its edition status and limits.
+- [TRACE compact spine](https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md): the compact specification and normal technical entry point.
+- [Mechanical Ethics introduction](https://pleasestartfromhere.com/resources/mechanical-ethics/README.md): selected book edition and reading routes.
+- [Mechanical Ethics book](https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md): the human-facing account of the distance between an institutional record and the life it affects.
+- [Local reading catalogue](https://pleasestartfromhere.com/resources/index.md): the full reference, ME PDF, diagrams, fixed editions and source identities. These are byte-exact selected copies, not continuously refreshed heads. Original repository links remain provenance and contribution routes; third-party references remain external.
 
 ## Optional
 
