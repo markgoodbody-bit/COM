@@ -13,10 +13,10 @@ test('head-only transformation preserves markup-like source payload', () => {
   assert.throws(() => sharedStyle('<body>no head</body>'));
 });
 
-test('all HTML bodies, raw resources and published content survive the style-only build', async () => {
+test('unmodified HTML bodies and raw resources survive the first-contact and style build', async () => {
   const baseline = '50caedc89646b7337a86a5610cef24426b518cf3';
   const publishing = 'C:/Users/markg/Downloads/DEV/campfire-door-pages';
-  let pages = 0, unchanged = 0;
+  let pages = 0, unchangedBodies = 0, editionOnlyBodies = 0, unchanged = 0;
   async function check(dir, prefix = '') {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       const relative = prefix + entry.name;
@@ -25,11 +25,18 @@ test('all HTML bodies, raw resources and published content survive the style-onl
       const before = execFileSync('git', ['show', baseline + ':' + relative], { cwd: publishing, maxBuffer: 10 * 1024 * 1024 });
       if (relative.endsWith('.html')) {
         const html = actual.toString('utf8');
-        assert.equal(html.slice(html.indexOf('<body')), before.toString('utf8').slice(before.toString('utf8').indexOf('<body')), relative);
+        // Only the root and appended reader history have substantive edits.
+        // The four full source views change their wrapper edition, not payload.
+        if (!['index.html', 'changes.html'].includes(relative)) {
+          const normalize = text => text.replace('Site Preview 0.8</p>', 'Site Preview 0.7.2</p>');
+          assert.equal(normalize(html.slice(html.indexOf('<body'))), before.toString('utf8').slice(before.toString('utf8').indexOf('<body')), relative);
+          if (html.slice(html.indexOf('<body')) === before.toString('utf8').slice(before.toString('utf8').indexOf('<body'))) unchangedBodies++;
+          else editionOnlyBodies++;
+        }
         assert.match(html, /<link rel="stylesheet" href="\.?\/?style\.css">/, relative);
         assert.doesNotMatch(html.slice(0, html.indexOf('</head>')), /<style>/, relative);
         pages++;
-      } else if (!['style.css', 'manifest.json', 'explore/map.json'].includes(relative)) {
+      } else if (!['style.css', 'manifest.json', 'explore/map.json', 'changes.md'].includes(relative)) {
         assert.deepEqual(actual, before, relative); unchanged++;
       }
     }
@@ -43,7 +50,7 @@ test('all HTML bodies, raw resources and published content survive the style-onl
     const bytes = await readFile('out/explore/' + item.path);
     assert.equal(item.bytes, bytes.length, item.path); assert.equal(item.sha256, sha(bytes), item.path);
   }
-  console.log({ unchangedHtmlBodies: pages, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
+  console.log({ checkedHtmlPages: pages, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, explicitlyEditedBodies: 2, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
 });
 
 test('declared light and dark text pairs meet the selected 4.5:1 floor', async () => {

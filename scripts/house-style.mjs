@@ -33,6 +33,7 @@ export async function applyHouseStyle(root) {
   const discussion = manifest.provenance.discussion;
   discussion.input_html_sha256 = discussion.html_sha256;
   discussion.html_sha256 = sha(await readFile(path.join(root, 'discussion/index.html')));
+  manifest.provenance.change_history_html_sha256 = sha(await readFile(path.join(root, 'changes.html')));
   manifest.provenance.presentation = {
     direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116',
     stylesheet: '/style.css', stylesheet_sha256: sha(await readFile(path.join(root, 'style.css'))),

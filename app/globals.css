@@ -34,6 +34,10 @@ th, td { text-align: start; vertical-align: top; padding: .5rem; border-bottom: 
 .readings { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; border-top: 3px solid var(--accent); padding-top: 1.5rem; }
 .readings h3 { margin-top: 0; }
 article { min-width: 0; }
+.first-movements { margin-block: 1.5rem; }
+.first-movements article { padding-block: 1rem; border-bottom: 1px solid var(--border); }
+.first-movements h2 { font-size: 1.25rem; margin-block: 0 .5rem; }
+.first-movements p:last-child { margin-bottom: 0; }
 .route { line-height: 1.6; }
 .status { font-size: .9375rem; color: var(--muted); padding-top: .75rem; border-top: 1px solid var(--border); }
 .boundaries { padding-top: 1.5rem; border-top: 1px solid var(--border); }

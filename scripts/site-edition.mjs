@@ -1,1 +1,1 @@
-export const SITE_EDITION = '0.7.2';
+export const SITE_EDITION = '0.8';

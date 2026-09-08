@@ -1,3 +1,5 @@
+/* Static React rendering, not a Next.js runtime: native links must work without JavaScript. */
+/* eslint-disable next/no-html-link-for-pages */
 import { SITE_EDITION } from '../scripts/site-edition.mjs';
 const trace = "https://github.com/markgoodbody-bit/TRACE";
 const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
@@ -11,11 +13,41 @@ export default function Home() {
         <p className="eyebrow">Site Preview {SITE_EDITION}</p>
         <h1>How can we make a better future?</h1>
         <p>A project by Mark, developed with AI collaborators.</p>
-        <p>Hello. What are you trying to understand, change, or keep possible?</p>
-        <p>A question, a situation, or a disagreement is enough. No introduction or agreement is required.</p>
-        <p>This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under <a href="/explore/challenge.html">Challenge</a>.</p>
+        <p>Hello. Start from whatever brought you here. No introduction or agreement is required.</p>
+        <div className="first-movements" aria-label="Optional starting points">
+          <article id="situation">
+            <h2>Something is happening</h2>
+            <p>What is changing, what is uncertain, and what could become harder to correct? A description can stay still while the situation changes. Keep what was observed, what was reported, and the explanation distinct. A failed search or fetch does not by itself establish absence.</p>
+            <p className="route"><a href="https://pleasestartfromhere.com/explore/">https://pleasestartfromhere.com/explore/</a></p>
+          </article>
+          <article id="possibility">
+            <h2>Something could be made possible</h2>
+            <p>An option is not usable merely because it can be described. Start with a worthwhile future: whose future is it, what conditions, resources and time would make it reachable, and what could the same choice close for someone else?</p>
+            <p className="route"><a href="https://pleasestartfromhere.com/explore/nodes/futures.html">https://pleasestartfromhere.com/explore/nodes/futures.html</a></p>
+          </article>
+          <article id="challenge">
+            <h2>Something here seems wrong, incomplete or worth discussing</h2>
+            <p>A useful objection does not need this project&apos;s vocabulary and does not have to propose a repair. What is missing, what does another method handle better, and can people affected by the account answer back?</p>
+            <p>Read the current questions and project responses. This on-site discussion is read-only; it does not receive replies yet.</p>
+            <p className="route"><a href="https://pleasestartfromhere.com/discussion/">https://pleasestartfromhere.com/discussion/</a></p>
+          </article>
+          <article id="source">
+            <h2>I want the compact source</h2>
+            <p>This material is reference, not permission or authority. Source identity, edition and uncertainty should remain inspectable. Reading does not require adoption, agreement or report-back.</p>
+            <p className="route"><a href="https://pleasestartfromhere.com/explore/start.json">https://pleasestartfromhere.com/explore/start.json</a><br/>Complete HTML source-text alternative:<br/><a href="https://pleasestartfromhere.com/read/start.html">https://pleasestartfromhere.com/read/start.html</a></p>
+          </article>
+          <article id="curiosity">
+            <h2>I am only curious</h2>
+            <p>Wander. You do not need a problem, an identity category or a commitment to begin. Notice what seems consequential, surprising, useful or wrong. Reading and leaving is a complete use.</p>
+            <p className="route"><a href="https://pleasestartfromhere.com/explore/">https://pleasestartfromhere.com/explore/</a></p>
+          </article>
+        </div>
         <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
+        <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
         <p>Reading implies no adoption, obligation or consent.</p>
+      </section>
+      <section aria-labelledby="why">
+        <h2 id="why">Why this exists</h2>
         <p className="lead">An appeal can succeed after the opportunity it was meant to protect has gone. A record can be corrected after a decision based on it has already changed someone’s life. This project asks how to notice that risk sooner, keep a usable way forward open, and make correction possible while it can still make a difference.</p>
         <p>This page introduces the project for inspection. Its selection and framing can influence a reader’s reasoning; it is not a neutral or complete view.</p>
         <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
@@ -23,10 +55,9 @@ export default function Home() {
       </section>
       <section aria-labelledby="reading">
         <p className="route"><a href="/explore/">Explore ten short readings</a> on change, futures, power and correction, plus one example viewed from different positions. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
-        <p className="route">AI reading: start here<br/><a href="https://pleasestartfromhere.com/explore/start.json">https://pleasestartfromhere.com/explore/start.json</a><br/>Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
-        <p className="route">HTML source-text reading alternative<br/><a href="https://pleasestartfromhere.com/read/start.html">https://pleasestartfromhere.com/read/start.html</a></p>
+        <p className="route">Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
         <p className="route">One example, viewed from different positions<br/><a href="https://pleasestartfromhere.com/explore/example/entry.md">https://pleasestartfromhere.com/explore/example/entry.md</a></p>
-        <p className="route">Project discussion: questions and responses, not receiving replies yet<br/><a href="https://pleasestartfromhere.com/discussion/">https://pleasestartfromhere.com/discussion/</a><br/>Legacy participation and reply limits<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
+        <p className="route">Continue in your own context, or inspect external participation and reply limits under <a href="/explore/challenge.html">Challenge</a>.<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>
