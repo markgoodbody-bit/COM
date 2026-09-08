@@ -17,13 +17,12 @@ inside the wider purpose; no instrument is the purpose itself.
 
 - Active Door work / AI handoffs: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108).
 - Public address: `https://pleasestartfromhere.com/`.
-- Current verified public edition: **Preview 0.8**, publication commit
+- Current public edition: **Preview 0.8**, publication commit
   `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`; maintained source reported by Codex
   `45341947bcbc90b7fb34ce702ff8f4ea6e3e87af`.
 - Source/content review: [PR #114](https://github.com/markgoodbody-bit/COM/pull/114).
-- Accountless receiver evaluation: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116).
-  Framework has integrated Codex's Windows CLI-entry repair; current branch head must be
-  reacquired before acting.
+- Accountless receiver evaluation: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116),
+  current head at this update `1a784e02e4449b857ffaeb73d5008aed66278784`.
 
 Always read later #108 returns and live heads first. These are retrieval anchors, not proof
 that nothing later happened. Do not replay the whole thread or a Square carrier.
@@ -33,7 +32,7 @@ that nothing later happened. Do not replay the whole thread or a Square carrier.
 Do not repeat by momentum:
 
 - domain purchase / exact naming;
-- HTTPS certificate recovery and secure redirects;
+- HTTPS recovery and secure redirects;
 - public indexing eligibility repair;
 - same-domain TRACE / Mechanical Ethics reading copies and fixed snapshots;
 - reader-facing change history and worked revision;
@@ -41,80 +40,102 @@ Do not repeat by momentum:
 - same-domain read-only discussion page;
 - **Preview 0.8 first contact + shared house style**.
 
-Preview 0.8 moves useful choices ahead of the long explanation. Its five optional starting
-movements are situation / possibility / challenge / compact source / curiosity. Each carries
-a small useful distinction before its link, so a root-only encounter need not be merely a
-directory. Existing machine entrance, seed and orientation remain authoritative for their
-own source edition and were deliberately not replaced by another protocol. The correction-
-window illustration and evidential/value limits remain under `Why this exists`.
+Preview 0.8 gives five optional first movements before the long explanation: situation /
+possibility / challenge / compact source / curiosity. Each carries a small useful distinction
+before its link. Existing machine entrance, seed and orientation remain authoritative for
+their own source edition. The public discussion is still **read-only**; no receiver form is
+live. Delivery evidence is not evidence of reader comprehension or provider-wide access.
 
-Codex reported Pages workflow `34252909746` successful and at 16:45 BST all 111 publishing
-files matched the build, with 66 selected HTTPS responses byte-matching expected content and
-media types. This is delivery evidence, not reader comprehension or provider-wide access.
-The public source itself identifies Preview 0.8 and the first movements.
+## Receiver / provider evidence
 
-The on-domain discussion is still **read-only**. No public form or receiver is live.
+PR #116 remains synthetic/evaluation-only and hard-refuses public non-loopback use.
 
-## Receiver / provider state
+Earned evidence:
 
-Receiver PR #116 remains evaluation-only and public use is hard-refused in source. Earned
-evidence so far:
+- Framework contribution-receiver suite after audit portability repair: 16/16 Linux Node22.16.
+- Claude Code independently reproduced an earlier head: 15/15 Windows Node24.19 plus 5/5
+  pre-written adapter scenarios.
+- Codex exercised the same isolated D1 database `psfh-receiver-eval-20260908`: eight
+  contribution lifecycle groups passed through a workerd/D1 binding, including safe retry,
+  private/public separation, revision-bound moderation, responses, reconsideration,
+  withdrawal, audit rollback and a lost-ack recovery injection.
+- Codex reproduced exact receiver/correction head `7b0aa9446984e6b34481527a800a6bbc1ff3c5e3`
+  at **34/34** on Windows Node24.19.
 
-- Framework local receiver suite after audit-portability repair: 16/16 on Linux Node 22.16.
-- Claude Code independently reproduced the earlier receiver: 15/15 on Windows Node 24.19,
-  plus 5/5 pre-written adapter scenarios.
-- Codex exercised the same isolated remote D1 database `psfh-receiver-eval-20260908` with
-  the repaired receiver through a workerd/D1 binding: eight lifecycle groups passed,
-  including receipt recovery, safe retry, private/public separation, revision-bound
-  moderation, response, reconsideration, withdrawal, exact audit sequence and rollback on
-  an injected audit failure. A handler lost-ack injection returned 503 without claiming a
-  receipt; retry with pre-held keys recovered one stored result.
+During hostile extension from that head, Codex found two real HTTP gaps not covered by the
+34-test suite:
 
-This is real D1 evaluation evidence, not a public receiver or disaster-durability guarantee.
-Do not create a second eval database.
+1. an oversized correction request could be fully consumed before refusal;
+2. a failed HTML report could reset a selected correction kind to Privacy.
 
-Framework added a bounded operator CLI and handling-notice draft. Codex found a real Windows
-CLI entrypoint defect hidden by imported-function tests; its exact fix used
-`pathToFileURL(resolve(argv[1]))` plus a direct subprocess regression. Framework has now
-integrated that repair into PR #116. Codex's provider-evaluation branch reported 22/22 after
-the repair; the exact PR #116 head still needs a fresh complete-suite receipt after the
-integration.
+Codex reports a local provider-branch repair with 36/36; an addressable commit/provider result
+is still pending. Do not duplicate or silently attribute that result to PR #116 until the
+repair is integrated.
 
-The handling notice deliberately keeps these distinct:
+The first provider read during the correction migration check transiently returned Cloudflare
+7403; a bounded repeat succeeded. At that check migration0002 / correction_limit were still
+absent remotely and normal intake remained disabled. No second DB or login loop.
+
+## Affected-person answer-back
+
+A separate correction lane is now implemented in the closed receiver. It has reserved queue
+and rate capacity independent of ordinary contribution intake. A reporter pre-holds retry /
+management capabilities, can recover an idempotent request, inspect it privately and withdraw
+while pending. Operator resolution is explicit.
+
+`CORRECTION_REPORT != PROOF_OF_HARM != TAKEDOWN_AUTHORITY`
+
+A report or resolution alone does not mutate target contribution/public state. Reserved
+answer-back must not become unauthenticated censorship.
+
+After the exact `7b0aa944` reproduction completed, Framework promoted the hostile-read repair
+for post-resolution reporter control. Current PR head `1a784e02...` lets the management-
+capability holder clear only their reporter-supplied free-text note after resolution while
+preserving resolved state, target/kind, operator outcome/reason and audit history; a
+`reporter_note_cleared` event records the operation. Pending requests still use withdrawal.
+
+`REQUEST_RESOLVED != REPORTER_NOTE_MUST_REMAIN`
+
+This current head has source-level store/HTTP regressions but no independent exact-head receipt
+yet. Clearing the live note does not establish provider-backup or physical erasure.
+
+## Operator / handling boundary
+
+The operator CLI contains the Windows direct-entry repair and bounded contribution/correction
+queue and resolution actions. The handling notice remains **draft / non-live**. It now reflects
+the closed correction lane and post-resolution note control while preserving:
 
 `RECEIPT != PUBLICATION != PROJECT_RESPONSE != PROJECT_CHANGE`
 
 `DEADLINE_REACHED != CLEANUP_RAN != LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`
 
-CC's local SQLite WAL finding remains real: `body=NULL` does not establish prompt physical
-erasure. Remote D1 lifecycle success does not establish provider backup/log/physical-erasure
-timing.
+CC's local SQLite WAL finding remains real; D1 success does not establish exact provider
+backup/log/physical-erasure timing.
 
 ## Foreground next work
 
-1. **Receiver correctness:** Codex reruns the complete PR #116 suite at the integrated head.
-2. **Affected-person answer-back:** build and test a bounded report/removal request route that
-   does not require the original contributor's management key and retains reserved correction
-   capacity even when ordinary contribution intake is paused/full. It must not auto-censor on
-   an unauthenticated report; operator action and outcome remain explicit.
-3. **Operator/provider route:** exercise the CLI through an existing safe closed evaluation
-   HTTP/admin path when available; do not invent or expose a public admin service merely for a
-   test.
-4. **Retention / custody:** establish provider/application storage, logging, backup and operator
-   handling boundaries before publishing a live handling notice.
-5. **Public receiving:** only after the above, add the accountless reply surface and change
-   discussion capability from read-only to receiving. Do not imply this early.
+1. Integrate Codex's addressable oversized-body + failed-form repair when it is posted,
+   without losing current reporter-control work.
+2. Reproduce the combined exact PR #116 head locally and against the SAME existing D1 eval DB.
+3. Apply migration0002 once remotely; with ordinary intake paused verify correction accept,
+   retry identity/conflict, unauthorised admin denial, operator-only queue, explicit resolution,
+   no target mutation from report/resolution alone, and post-resolution reporter note clearing.
+4. Define any distinct authorised temporary-withhold/remove action only if needed; filing a
+   report must never self-execute censorship.
+5. Establish real operator custody, retention/log/backup bounds, production throttling/failure
+   behavior and browser/accessibility before any public intake.
+6. Only then move on-domain discussion capability from read-only to receiving.
 
-## Owners / availability
+## Owners
 
 - **Codex** — sole maintained-site/domain/provider operator and owner of the one existing D1
-  evaluation database. Preserve the working apex/www/nameservers/TLS and current public 0.8.
-- **Framework** — intent/integration lead and PR #116 implementation owner; build the bounded
-  affected-person correction route and maintain evidence/claim separation.
-- **Claude Code** — independent reviewer/reproducer when available. Temporary token limits are
-  not a critical-path gate; no duplicate receiver implementation.
-- **Mark** — human originator and consequential release/account authority. Routine build and
-  AI-to-AI coordination should not bounce back to Mark unnecessarily.
+  evaluation database. Preserve public 0.8 and working apex/www/nameservers/TLS.
+- **Framework** — intent/integration lead and PR #116 implementation owner; maintain receiver /
+  correction / handling boundaries and evidence separation.
+- **Claude Code** — independent review/reproduction when available; no blocking gate or duplicate
+  receiver implementation.
+- **Mark** — human originator and consequential release/account authority. Routine AI-to-AI work
+  should not bounce back to Mark unnecessarily.
 
 No production intake, paid-plan enrollment, DNS/apex move, licence change or claim of reader
 benefit follows from an evaluation pass.
@@ -124,9 +145,10 @@ benefit follows from an evaluation pass.
 - provider-specific AI access remains heterogeneous;
 - reuse/licence notices require an owner decision before terms change;
 - account-level domain takeover protection remains separate from working HTTPS;
+- FPF has advanced since the last substantive comparison; later focused reading may be useful,
+  but no silent conformance/novelty conclusion follows;
 - Square and other project domains require their own live reacquisition when material;
-- retired research remains retired; DSIT submission remains completed; test lanes are probes,
-  not the project purpose.
+- retired research remains retired; DSIT submission remains completed; probes are not purpose.
 
 `PROJECT PURPOSE != INSTRUMENT SURVIVAL`  
 `ROLE CONTINUITY != RUNTIME IDENTITY`  
