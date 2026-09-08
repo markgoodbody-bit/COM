@@ -125,7 +125,6 @@ def html_document(title: str, parts: list[tuple[str, str]], links: list[tuple[st
     nav = ''.join(f'<li><a href="{esc(url, quote=True)}">{esc(label)}</a></li>' for label, url in links)
     return ('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
-            '<meta name="robots" content="noindex,nofollow">'
             f'<title>{esc(title)} · Please Start From Here</title>'
             f'<link rel="alternate" type="text/markdown" href="{esc(alternate, quote=True)}">'
             f'<link rel="describedby" href="{esc(describedby, quote=True)}">'

@@ -19,8 +19,12 @@ class HTMLLinks(HTMLParser):
         self.links = []
         self.tags = []
         self.text = []
+        self.robots = []
     def handle_starttag(self,tag,attrs):
         self.tags.append(tag)
+        attributes = dict(attrs)
+        if tag == 'meta' and attributes.get('name', '').lower() in ('robots', 'googlebot', 'bingbot'):
+            self.robots.append(attributes.get('content', '').lower())
         for key,value in attrs:
             if key in ('href','src') and value:
                 self.links.append(value)
@@ -70,6 +74,14 @@ class ReadingBuildTests(unittest.TestCase):
             if path.endswith('.html'):
                 parser=HTMLLinks(); parser.feed(data.decode())
                 self.assertFalse(set(parser.tags)&{'script','form','iframe','object','embed'})
+    def test_public_readings_have_no_preview_indexing_exclusion(self):
+        checked = 0
+        for path, data in self.files.items():
+            if path.endswith('.html'):
+                parser = HTMLLinks(); parser.feed(data.decode('utf-8'))
+                self.assertEqual(parser.robots, [], path)
+                checked += 1
+        self.assertEqual(checked, 18)
     def test_html_and_markdown_links(self):
         checked=0
         for path,data in self.files.items():
