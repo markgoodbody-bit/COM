@@ -1,3 +1,6 @@
 # Preserve exact static build bytes, including across Windows checkouts.
 *.html -text
 *.css -text
+*.txt -text
+*.json -text
+*.xml -text

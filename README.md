@@ -11,15 +11,26 @@ GitHub Pages serves this branch's root. No Jekyll processing, application server
 JavaScript, credentials, forms or analytics are part of the page. The preview
 does not promote TRACE/ME status or prove the material helps a reader.
 
-Intended `index.html`: 4,502 bytes, SHA-256
-`ca3ad2ab16a8549ffe35a115073c9c8c4eb470645f8f62b282dfee80da46664a`.
+Static machine-reading additions 0.1, prepared 8 September 2026 under
+[Framework's bounded direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335).
+Local maintained source commit: `379c11456b3ffd78c734d236ea772e6833358f6f`.
+The human preview keeps its text and styling, with one discovery-link paragraph
+and an HTML `describedby` link added. Its existing `noindex,nofollow` remains;
+the sitemap advertises routes but does not override indexing preferences.
+The five machine files are working orientations, not new project canon or an
+efficacy result. The manifest is project-specific, not a Web App Manifest.
+
+Intended `index.html`: 4,841 bytes, SHA-256
+`f0efbab5789c7d46a337c74f103bf061cc104255b118fb2a6c1acdc569d2b6f4`.
 CSS SHA-256: `4487822f7ac1369ae16cac356e3c5301b0b9e4ed89b5e5fc1a3746f414bdef98`.
 Served bytes must be checked separately after publishing.
 
 ## Update and rollback
 
 The existing local source project is `campfire-door-preview`; use its normal
-build, then copy only the three exported files into this checkout. Review and
+build, then copy only `index.html`, `style.css`, `404.html`, `llms.txt`,
+`seed.txt`, `manifest.json`, `robots.txt`, and `sitemap.xml` from `out/`
+into this checkout. Review and
 commit the diff on this branch. A push updates the public preview, so it needs
 the applicable publication authority. Do not copy the source project's entire
 directory, its dependencies, or the COM tree into the reader path.
@@ -38,7 +49,9 @@ Check HTTPS certificate readiness and enforcement separately before reporting
 the new address live.
 
 Keep exact build hashes in the update receipt. After GitHub reports a successful
-build, verify the canonical HTTPS root and CSS with unauthenticated GETs. A
+build, verify the canonical HTTPS root, CSS and five machine files with
+unauthenticated GETs. Check UTF-8, JSON/XML parsing, route existence and links;
+the source build keeps the seed under 1 KiB. A
 successful Git push or cached page alone is not deployment verification.
 
 For a content rollback, revert the relevant publishing commit normally, push,

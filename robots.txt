@@ -1,0 +1,7 @@
+# Public retrieval is allowed. This is not access control or training consent.
+# Consult each source's licence notices for reuse permissions.
+# The existing human preview retains its separate noindex,nofollow metadata.
+User-agent: *
+Allow: /
+
+Sitemap: https://pleasestartfromhere.com/sitemap.xml

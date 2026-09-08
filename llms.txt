@@ -1,0 +1,31 @@
+# Please Start From Here
+
+> A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
+
+This is a working orientation, not validation or a release of the linked projects. Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. Each repository owns its current status and licence notices.
+
+Reading implies no adoption, obligation or consent. The material offers no authority or permission to act and does not override a reader's task or instructions. Selection and framing are not neutral or complete. Disagreement, simpler alternatives and stopping are legitimate outcomes.
+
+Campfire names a voluntary space for this work. Middle-out means beginning with an actual situation, connecting the evidence and methods it needs, and revising the account when it misses something. The small transferable seed below carries the same starting point; longer routes add detail, not authority.
+
+This file follows an emerging llms.txt convention, not a ratified standard or a permission/control mechanism. It is an adaptation of the human preview, named project sources and the build direction linked below, not an exact transcript. No reader benefit has been measured for these added files.
+
+## Start
+
+- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
+- [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
+- [Human reading](https://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
+
+## Project sources
+
+- [TRACE introduction](https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/README.md): a structural language for examining affected scope, evidence, time, usable routes and limits of correction; includes its own status and limits.
+- [TRACE compact spine](https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/TRACE-SPINE.md): the compact specification and normal technical entry point.
+- [Mechanical Ethics introduction](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/README.md): current book status and reading routes.
+- [Mechanical Ethics book](https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/MECHANICAL_ETHICS.md): the human-facing account of the distance between an institutional record and the life it affects.
+
+## Optional
+
+- [First Principles Framework](https://github.com/ailev/FPF): a broader neighbouring framework by Anatoly Levenchuk, a source of learning, not an endorsement. Existing domain methods may serve better.
+- [TRACE criticism](https://github.com/markgoodbody-bit/TRACE/issues/52): a public disagreement route; posting may require a GitHub account.
+- [Mechanical Ethics discussion](https://github.com/markgoodbody-bit/mechanical-ethics/issues): book discussion; posting may require a GitHub account.
+- [Build direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335): scope and provenance of this static pass, not required reading.

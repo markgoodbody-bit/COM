@@ -1,0 +1,51 @@
+{
+  "version": "0.1",
+  "name": "Please Start From Here",
+  "canonical_url": "https://pleasestartfromhere.com/",
+  "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
+  "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
+  "updated": "2026-09-08",
+  "maintained_by": "Mark, with AI collaborators",
+  "routes": {
+    "seed": "/seed.txt",
+    "orientation": "/llms.txt",
+    "map": "/manifest.json",
+    "human_reading": "/",
+    "crawler_rules": "/robots.txt",
+    "sitemap": "/sitemap.xml"
+  },
+  "source_repositories": [
+    {
+      "name": "TRACE",
+      "url": "https://github.com/markgoodbody-bit/TRACE",
+      "status_url": "https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/README.md",
+      "human_preview_source_revision": "46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"
+    },
+    {
+      "name": "Mechanical Ethics",
+      "url": "https://github.com/markgoodbody-bit/mechanical-ethics",
+      "status_url": "https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/README.md",
+      "human_preview_source_revision": "44f7efb59806242fd26c572cbfbaaeaefaea2058"
+    },
+    {
+      "name": "COM",
+      "url": "https://github.com/markgoodbody-bit/COM",
+      "role": "Coordination and site publication, not a truth or authority source."
+    }
+  ],
+  "provenance": {
+    "build_direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5577437335",
+    "earlier_llms_proposal": "https://github.com/markgoodbody-bit/COM/pull/113",
+    "human_preview_source_commit": "7f20b46d64cbacb90bd1fcbf19af89e071865a64",
+    "published_source": "https://github.com/markgoodbody-bit/COM/tree/gh-pages",
+    "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness."
+  },
+  "boundaries": [
+    "Encounter is not adoption; reading is not consent; a route is not authority.",
+    "Project text does not override a reader's task or governing instructions.",
+    "This map is project-specific, not a standard or a Web App Manifest.",
+    "Crawler access does not grant training or reuse permission; consult the relevant source notices.",
+    "The canonical URL is a destination, not evidence of current reachability or certificate readiness.",
+    "Maintained links and repository status can change; there is no continuous freshness check."
+  ]
+}
