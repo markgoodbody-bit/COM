@@ -8,180 +8,100 @@ Purpose: restore the current work route, not create a second live-state ledger.
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
-Build a voluntary, AI-first starting address with selective depth, other viewpoints,
-challenge, contribution and outward routes. Human rendering is a translation of the same
-material. TRACE, Mechanical Ethics, Campfire, COM, Square and the Door are instruments
-inside the wider purpose; no instrument is the purpose itself.
+Please Start From Here is a voluntary AI-first/human-readable starting address. TRACE, Mechanical Ethics, COM, Campfire, Square and the Door are instruments inside the wider purpose; no instrument is the purpose itself.
 
-## Current route
+## Current anchors
 
-- Active Door work / AI handoffs: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108).
+- Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
-- Current public edition: **Preview 0.8**, `gh-pages`
-  `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`.
-- Source/content review: [PR #114](https://github.com/markgoodbody-bit/COM/pull/114).
-- Accountless receiver evaluation: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116),
-  current head `0870bc02af3577f50545740e43333344c876e577`.
-- Unpublished visual candidate: branch `framework/door-visual-candidate-20260908`, current
-  head `056277d919856441dee3adb158c5628aa8266337`, forked from exact public 0.8.
+- Public edition remains **Preview 0.8**, `gh-pages` `2fe2c51dbe9f1cd1040bdd302cc786f30cd34cac`.
+- Public discussion remains **read-only**.
+- Source/content review: PR #114.
+- Receiver evaluation: PR #116, current head `0870bc02af3577f50545740e43333344c876e577`.
+- Framework visual candidate branch `framework/door-visual-candidate-20260908`, head `8d492f46dc42699ba28894b3b3a73e1c8106a3a9`; presentation bytes are unchanged from `056277d919856441dee3adb158c5628aa8266337`, later head only adds its structural checker.
+- Isolated edge-admission candidate: `framework/door-receiver-edge-admission-20260908`, head `16c626d406348545a323e2aad2243a3d3fb59554`, UNEXECUTED/UNMERGED.
+- Isolated attended-lease candidate: `framework/door-receiver-attended-lease-20260908`, head `c1cf1229581247c280bf6a0bfcc9b3f958c85379`, UNEXECUTED/UNMERGED.
 
-Always read later #108 returns and live heads first. These are retrieval anchors, not proof
-that nothing later happened. Do not replay the whole thread or a Square carrier.
+Always read later #108 returns and live refs before acting. Live source wins over this pointer.
 
-## Delivered public foundations
+## Delivered public foundation
 
-Do not repeat by momentum:
+Do not repeat by momentum: domain/HTTPS/indexing repair, same-domain TRACE/ME readings, change history, HTML alternatives for selected machine sources, read-only discussion, and Preview 0.8 first contact/shared house style.
 
-- domain purchase / exact naming;
-- HTTPS recovery and secure redirects;
-- public indexing eligibility repair;
-- same-domain TRACE / Mechanical Ethics reading copies and fixed snapshots;
-- reader-facing change history and worked revision;
-- HTML alternatives for selected raw machine / Markdown sources;
-- same-domain read-only discussion page;
-- **Preview 0.8 first contact + shared house style**.
+Preview 0.8 keeps five optional first movements before the long explanation: situation / possibility / challenge / compact source / curiosity. Each contains useful local substance before its link. Delivery evidence is not reader-benefit evidence.
 
-Preview 0.8 gives five optional first movements before the long explanation: situation /
-possibility / challenge / compact source / curiosity. Each carries a useful distinction before
-its link. Existing machine entrance, seed and orientation remain authoritative for their own
-source edition. Public discussion remains **read-only**. Delivery evidence is not reader-
-benefit evidence.
+## Receiver / answer-back state
 
-## Receiver / provider state
-
-PR #116 remains synthetic/evaluation-only and source hard-refuses public non-loopback use.
+PR #116 remains synthetic/evaluation-only and hard-refuses public non-loopback use.
 
 Earned evidence includes:
 
-- Framework contribution receiver after audit-portability repair: 16/16 Linux Node22.16;
-- Claude Code earlier independent reproduction: 15/15 Windows + 5/5 pre-written scenarios;
-- Codex correction HTTP/router head `7b0aa944...`: 34/34 Windows;
-- Codex hostile HTTP repair branch: 36/36 after bounding correction streams and preserving
-  failed-form state;
-- same isolated D1 database `psfh-receiver-eval-20260908` / UUID
-  `85c6f402-da0b-4c52-a1ad-445dc999c3b0` has migration0002 applied exactly once;
-- remote correction evaluation kept ordinary intake disabled and passed retry/conflict,
-  private operator queue, unauthorised admin denial, explicit no-change resolution without
-  target/public mutation, pending withdrawal and non-loopback guard;
-- post-resolution reporter note control was then reproduced on that same D1 binding: wrong
-  management key refused, owner cleared only their live note, resolved outcome/reason persisted,
-  target/public state stayed unchanged, and one `reporter_note_cleared` event remained;
-- provider receiver subtree with those repairs passed 39/39.
+- earlier Framework/CC/Codex local reproductions;
+- same isolated D1 UUID `85c6f402-da0b-4c52-a1ad-445dc999c3b0`, with migration0002 applied exactly once;
+- remote correction retry/conflict, private operator queue, unauthorised admin denial, explicit no-change resolution without target/public mutation, pending withdrawal and hard public guard;
+- post-resolution reporter note clearing preserving disposition/outcome/reason/audit while refusing wrong management key;
+- provider receiver subtree with those repairs 39/39;
+- later receiver subtree with private receipt response repair 40/40 Windows and standalone closed `npm run test:operator` rehearsal 1/1.
 
-No second D1 evaluation database should be created.
-
-## Contributor answer-back now reaches the private receipt
-
-Codex's closed operator rehearsal exposed a consequential gap: a project answer could exist on
-the public listing while the contributor's private receipt only showed status.
-
-Framework integrated Codex provider commit `58cb6c79...` as exact receiver blobs onto the
-current PR #116 line without importing provider-evaluation history. Current head is
-`0870bc02...`.
-
-`Store.receipt` now adds a separate `responses` array (`actor`, `body`, `created_at`) only for
-the contribution's **current published revision**. Replacement or withdrawal cannot reveal an
-answer attached to an older publication. Initial submission/retry receipts remain storage
-receipts; a later private receipt check retrieves the project answer.
-
-Codex's exact receiver subtree passed **40/40** on Windows Node24.19 and the standalone closed
-`npm run test:operator` rehearsal passed **1/1**:
-
-`ready -> invented objection -> queue -> pause -> reasoned publish -> separate response -> owner private receipt reads answer -> withdraw`
-
-Wrong operator/management capabilities were refused and temporary state/secrets were cleaned.
-The new private receipt-response query has **not yet been exercised against remote D1**.
+Current consequential behavior: contributor private receipt can carry separately attributed project responses for the **current published revision**. Replacement/withdrawal cannot reveal an earlier answer.
 
 `RECEIPT != PUBLICATION != PROJECT_RESPONSE != PROJECT_CHANGE`
 
-## Affected-person correction boundary
+The new private receipt-response query has not yet been exercised against remote D1. This is the next narrow provider check; do not rerun the whole correction matrix without a regression reason.
 
-Correction capacity is separate from ordinary contribution intake and has reserved queue/rate
-capacity.
+Correction remains separately available from ordinary intake.
 
 `CORRECTION_REPORT != PROOF_OF_HARM != TAKEDOWN_AUTHORITY`
 
-A report/resolution alone does not change target content. A resolved reporter can clear only
-their own free-text note while preserving target/kind, resolved disposition, operator
-outcome/reason and audit history.
-
 `REQUEST_RESOLVED != REPORTER_NOTE_MUST_REMAIN`
 
-The handling notice remains **draft / non-live**. Clearing live fields does not establish
-provider backup/log/physical erasure.
+## Visual arrival ecology
 
-`DEADLINE_REACHED != CLEANUP_RAN != LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`
+Mark wants eventually to be able to post the bare Door URL on Reddit and simply invite people to use it. Arrivals may be humans, human->AI handoffs, direct AIs, crawlers, sceptics, deep-link visitors or returning contributors. Design for an arrival ecology, not identity personas or a conversion funnel.
 
-## Arrival ecology / visual candidate
+Framework's unpublished visual presentation adds a warmer open field, five semantic places-to-begin, a quiet CSS horizon/branching motif and an optional `Another perspective` human->AI handoff with literal URL and AI-not-authority qualification. No JS, tracking, fetched decoration, external fonts or provider endorsement.
 
-Mark wants eventually to be able to post the bare Door link on Reddit and invite people to use
-it if they want. A random human may not independently think to hand the address to an AI; many
-kinds of humans, AIs, crawlers, sceptics, deep-link visitors and returning contributors will
-arrive through different apertures.
+Codex also has a **different** maintained visual candidate. Its partial native-dark browser review found a concrete mobile issue and repaired its own candidate: at 320x800 the first movement moved from ~872px to ~672px after a narrow CSS change. Those observations do NOT transfer to Framework's visual object. Do not blind-merge the aesthetics. Codex is to inspect Framework's exact presentation next and then choose one coherent maintained-source integration.
 
-Framework source direction on PR #114 defines an **arrival ecology**, not one funnel. The new
-unpublished branch `framework/door-visual-candidate-20260908` is an actual two-file visual
-candidate forked from exact public 0.8:
+Framework visual branch has `visual_candidate_check.py` as a structural guard only; it is not visual-quality/accessibility/reader-benefit evidence.
 
-- warmer off-white / near-black + blue + restrained amber;
-- broad quiet opening field with CSS-only horizon/branching motif;
-- five existing semantic first movements rendered as asymmetric places-to-begin;
-- optional `Another perspective` human->AI handoff with literal Door address and ordinary
-  example questions; no provider endorsement, special syntax or AI-authority claim;
-- no external fonts/images/framework/tracking/JS or motion dependency;
-- existing literal URLs, raw alternatives, limits, disagreement and read-only discussion
-  wording preserved;
-- responsive one-column collapse and existing focus/no-script semantics retained by design.
-
-This candidate is **not public** and must not be published piecemeal. Codex should render it
-locally and return actual desktop/mobile light/dark screenshots plus keyboard, zoom/reflow,
-text-spacing, no-CSS/stripped-order and shared-style regression observations. If accepted, move
-the design into maintained site source rather than treating this gh-pages-derived branch as the
-generator.
-
-`PRETTIER != MORE USEFUL`  
+`PRETTIER != MORE USEFUL`
 `HUMAN INVITATION != AI OBLIGATION`
+
+## Admission / custody experiments — isolated
+
+### Edge admission candidate
+
+Purpose: soft anonymous/AI-friendly burst shedding before body consumption without CAPTCHA/account/IP profiling. Separate class-based contribution and correction limiter bindings/keys; D1 queue/body/rate caps remain the hard admission boundary. No visitor identity/IP-derived key is used. Candidate has five intended regressions but Framework has NOT executed it. Do not merge yet.
+
+### Attended intake lease candidate
+
+Current receiver readiness lasts 24 hours. The isolated custody candidate changes only `Store.readiness(true)` to a one-hour renewable attended lease. No schema or public API change. It adds three intended regressions: one-hour expiry blocks new intake; renewal/pause behavior; existing receipt/withdrawal still works after lease expiry. It also adds `ATTENDED_INTAKE.md`.
+
+`FORM_VISIBLE != OPERATOR_PRESENT`
+`LEASE_OPEN != RESPONSE_PROMISED`
+`LEASE_EXPIRED != EXISTING_RECEIPT_DISABLED`
+
+Framework has NOT executed this candidate. One hour is an evaluation default, not measured staffing capacity.
 
 ## Foreground next work
 
-1. Receiver: bounded remote-D1 check of the new private receipt-response query only; do not
-   rerun already-earned correction work without a regression reason.
-2. Operations: establish actual operator custody/review capacity and the smallest honest
-   attended intake window; a successful synthetic rehearsal is not staffing.
-3. Retention: replace remaining provider/application log/backup unknowns before publishing a
-   live handling notice.
-4. Deployment: choose the smallest closed-by-default HTTP/operator pre-public surface; do not
-   expose production intake merely to satisfy a test.
-5. Browser/accessibility: verify actual contribution/report surfaces before public receiving.
-6. Visual candidate: browser/screenshot review and maintained-source translation if it survives.
-7. Only after these are earned may on-domain discussion move from read-only to receiving.
-8. Reddit/external first contact remains later and separately authorised; no post yet.
+1. Codex: inspect Framework's exact visual object and return screenshots/browser breakage; keep the two visual lines distinct until then.
+2. Codex: SAME existing D1 only, narrow remote test of private receipt-response query: correct owner sees current response; wrong key denied; replacement/withdraw suppress stale response.
+3. Then reproduce/falsify isolated attended-lease and edge-admission candidates locally. No provider resource creation merely to satisfy these tests.
+4. Establish actual operator custody/review capacity, retention/log/backup bounds and production throttling/failure behavior.
+5. Verify deployed contribution/report browser/accessibility behavior.
+6. Only after those are earned may discussion move from read-only to receiving.
+7. Reddit/external first contact remains later and separately authorised.
 
 ## Owners
 
-- **Codex** — sole maintained-site/domain/provider operator and owner of the one existing D1
-  evaluation database; preserve public 0.8 and working apex/www/nameservers/TLS.
-- **Framework** — intent/integration lead and PR #116 implementation owner; maintain receiver /
-  correction / arrival / handling boundaries and evidence separation.
-- **Claude Code** — independent review/reproduction when available; no blocking gate or duplicate
-  receiver implementation.
-- **Mark** — human originator and consequential release/account authority. Routine reversible
-  AI-to-AI work should not bounce back to Mark unnecessarily.
+- Codex — sole maintained-site/domain/provider operator and owner of the one D1 evaluation database.
+- Framework — intent/integration lead and receiver/arrival/handling boundary owner.
+- Claude Code — independent review/reproduction when available; nonblocking.
+- Mark — human originator and consequential release/account authority.
 
-No production intake, Reddit post, paid-plan enrollment, DNS/apex move, licence change or claim
-of reader benefit follows from an evaluation or visual pass.
-
-## Separate / unresolved, not foreground blockers
-
-- newcomer evidence remains bounded and non-representative; collaborative making is still a
-  project invitation, not demonstrated visitor demand;
-- provider-specific AI access remains heterogeneous;
-- reuse/licence notices require an owner decision before terms change;
-- account-level domain takeover protection remains separate from working HTTPS;
-- FPF has advanced since the last substantive comparison; later focused reading may be useful,
-  but no silent conformance/novelty conclusion follows;
-- Square and other project domains require their own live reacquisition when material;
-- retired research remains retired; DSIT submission remains completed; probes are not purpose.
+No production intake, Reddit post, paid plan, DNS/apex move, licence change or reader-benefit claim follows from any current evaluation.
 
 `PROJECT PURPOSE != INSTRUMENT SURVIVAL`  
 `ROLE CONTINUITY != RUNTIME IDENTITY`  
@@ -189,5 +109,4 @@ of reader benefit follows from an evaluation or visual pass.
 `REMOTE_D1_LIFECYCLE_PASS != PUBLIC_RECEIVER_READY`  
 `LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`  
 `CLI_REHEARSAL_PASS != OPERATOR_CUSTODY`  
-`NEXT_FETCH_FAILS != FIRST_CONTACT_BECOMES_ONLY_A_DIRECTORY`  
 `LIVE SOURCE WINS OVER A STALE POINTER`
