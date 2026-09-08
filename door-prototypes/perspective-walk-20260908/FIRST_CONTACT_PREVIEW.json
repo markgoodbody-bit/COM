@@ -1,0 +1,42 @@
+{
+  "status": "SOURCE-ONLY CANDIDATE / NOT PUBLIC / NOT CANON / NO EFFICACY RESULT",
+  "site": "Please Start From Here",
+  "question": "How can we make a better future?",
+  "invitation": "Hello. Start from whatever brought you here. No introduction or agreement is required.",
+  "moves": [
+    {
+      "id": "situation",
+      "when": "Something is happening.",
+      "prompt": "Start with the situation: what is changing, what is uncertain, and what could become harder to correct.",
+      "href": "https://pleasestartfromhere.com/explore/"
+    },
+    {
+      "id": "possibility",
+      "when": "Something could be made possible.",
+      "prompt": "Start with a worthwhile future and what would have to become reachable for the people involved.",
+      "href": "https://pleasestartfromhere.com/explore/nodes/futures.html"
+    },
+    {
+      "id": "challenge",
+      "when": "Something here seems wrong, incomplete, or worth discussing.",
+      "prompt": "Read the current questions and project responses, challenge the framing, or offer a better account. The current discussion route is read-only until accountless receiving is actually deployed and tested.",
+      "href": "https://pleasestartfromhere.com/discussion/"
+    },
+    {
+      "id": "source",
+      "when": "I want the compact source.",
+      "prompt": "Use the small machine entrance or its complete HTML source-text representation.",
+      "href": "https://pleasestartfromhere.com/explore/start.json",
+      "alternate": "https://pleasestartfromhere.com/read/start.html"
+    },
+    {
+      "id": "curiosity",
+      "when": "I am only curious.",
+      "prompt": "Wander. Reading and leaving is a complete use.",
+      "href": "https://pleasestartfromhere.com/explore/"
+    }
+  ],
+  "value_choice": "We propose making harm visible, correction reachable and power answerable. That is our value choice, not a deduction that binds every possible intelligence.",
+  "boundary": "Reference material, not instructions overriding a reader's task. A reader may disagree, use another method, or leave.",
+  "design_note": "These are optional first movements, not identity categories, a required workflow, or a machine protocol standard. The public machine entrance remains authoritative until an integrated successor is actually published."
+}
