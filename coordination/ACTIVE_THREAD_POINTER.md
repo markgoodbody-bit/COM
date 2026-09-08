@@ -1,8 +1,8 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-09 — Europe/London  
-Current basis: COM main `308d3eaf`; Mark's direct request for substantially better presentation, scope receipt `5592995706`, and completed editorial publication `5593127853`. Overlapping #108 read from 22:54Z through 23:09Z found no new external direction. Retain overlap rather than jumping to the latest self-post. Separate non-public teaching prototype remains local `9d69245e`; CC's independent fixture remains pending. Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns take precedence.
+Updated: 2026-09-09 — Europe/London
+Current basis: COM main `837d8839`; Mark's direct presentation request, editorial completion `5593127853`, then FW authenticity clarification `5593126537` and completed attribution follow-through `5593227106`. An overlapping #108 read from 23:08Z recovered the FW clarification after the first completion. Retain overlap rather than jumping to the latest self-post. Separate non-public teaching prototype remains local `9d69245e`; CC's independent fixture remains pending. Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns take precedence.
 Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
 
 ## Purpose
@@ -27,7 +27,7 @@ Begin from the other entity's actual situation, language, evidence, capabilities
 
 - Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
-- Published edition: **Preview 0.8.2**, `gh-pages` `ae5883d820bde739391bcf1586635e5a9ccea8d0`, maintained source `9de16502df42eb5c1d7d7df329236972eb86ae1e`. Pages run `34289318428` succeeded at 23:09:34Z. All 113 build/publishing objects match. **No fresh direct-domain root readback for this edition is established here**; Codex's prior safe-open refusal was not bypassed. Older CC/public receipts are not this successor's readback. Completion and exact limits: Codex `5593127853`.
+- Published edition: **Preview 0.8.2**, `gh-pages` `53ba36596ac73dde1871e03f8992f33e9ebf990e`, maintained source `5d107120d8101fca79c720139cdc6c9f6b563c50`. Pages run `34290162103` succeeded. All 113 build/publishing objects match. **No fresh direct-domain root readback for this edition is established here**; Codex's prior safe-open refusal was not bypassed. Older CC/public receipts are not this successor's readback. Editorial completion `5593127853`; attribution follow-through and exact limits `5593227106`.
 - Public discussion remains **read-only**.
 - 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446** at 18:54:16.628Z. Codex checked it at 22:14:41Z: zero comments / `has_more false`, approximately 3h20m old, not a next-day read or evidence of rejection. CC reports a planned next-day read; that is not proof a future check will run. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
 - `agentic-qa` 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account. Later 48907/48938 report implemented checks and exercised cases, with other contributors' additions. This is **reported implementation/testing**, not independently verified deployment/outcome or PSFH/TRACE efficacy. Credit the other contributors; do not attribute the whole repair to us.
@@ -55,7 +55,16 @@ he also explicitly authorised desktop/mobile browser testing. Scope `5592995706`
 and completion `5593127853` identify the distinct editorial successor, not a
 duplicate of the first title/art release or the teaching experiment.
 
-Maintained `9de16502` and publishing `ae5883d8` now supersede `3f5212e0` / `e0d765b3`.
+The editorial revision `9de16502` / `ae5883d8` superseded `3f5212e0` / `e0d765b3`.
+Current `5d107120` / `53ba3659` is the narrow attribution follow-through: the same
+title/artist/museum/public-domain credit now precedes the unaltered painting,
+answering FW `5593126537`. Creator, work and rights routes remain. Five generated
+paths change from the preceding editorial publication; 108 remain identical.
+Refreshed 1440x1000 and320x800 dark-theme readbacks show no horizontal overflow;
+caption bottom/image top are y263/y279 and y781/y797 respectively. The mobile
+image follows the opening text and credit, not a promised universal first screen.
+Return `5593227106` records exact publication and tests. The next paragraphs
+describe the broader editorial change and its earlier measurements.
 The title/art opening is composed side-by-side on wide screens and stacks on mobile;
 four early direct links precede it. Ruled editorial sections replace rounded cards;
 the explanation, optional questions, books and attribution have distinct layouts.
@@ -167,7 +176,7 @@ The pre-boot `RUNNING` comparison is now implemented in CC's `5ba5a286`, before 
 ## Current owner routes
 
 - **Claude Code** — independent pre-build teaching accept/reject fixture under `5592260057`, before reading Codex implementation; remains pending during Mark's reported credit pause. Also owns #4446 conversation/reported next-day read and watchdog runtime `5ba5a286`; test-only PR #212 is available for review/integration. No PR-merge or reader-benefit claim follows from a handoff alone.
-- **Codex** — requested editorial successor published as `9de16502` -> `ae5883d8`, completion `5593127853`; fresh direct-domain root readback remains unestablished. Do not repeat it. Separate teaching prototype is local `9d69245e`, not pushed/published; preserve CC's independent fixture. Bounded Square field work continues. Test-isolation repair remains draft PR #212. Reopen closed watchdog findings only on changed source or new failure evidence.
+- **Codex** — editorial successor and attribution follow-through published, current `5d107120` -> `53ba3659`, returns `5593127853` / `5593227106`; fresh direct-domain root readback remains unestablished. Do not repeat it. Separate teaching prototype is local `9d69245e`, not pushed/published; preserve CC's independent fixture. Bounded Square field work continues. Test-isolation repair remains draft PR #212. Reopen closed watchdog findings only on changed source or new failure evidence.
 - **Framework** — title/brand and live-update directions `5592682334`, `5592723205`, `5592807329`, `5592936780` answered by `5592937468`. No repeat publication needed. Assess teaching KEEP/DELETE after local prototype and independent fixture returns under `5592260057`; that experiment remains non-public. Preserve optional scaffolding, differing entry points/pace/depth, intent/evidence boundaries and stronger external owners.
 - **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
 
