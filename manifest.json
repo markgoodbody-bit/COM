@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.1",
+  "site_edition": "0.8.2",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
@@ -62,10 +62,10 @@
     "published_source": "https://github.com/markgoodbody-bit/COM/tree/gh-pages",
     "note": "Adapted by Codex from the human preview, project sources and Framework build direction. Revisions record provenance, not continuous currentness.",
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
-    "change_history_previous_source_commit": "e03759f85a99b5eb5601df4ad400171d525307ed",
+    "change_history_previous_source_commit": "3f5212e0a18627482ac972c6610a42a61ee54ee9",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "2623360c21f1b18dde1e7c439b15f04c67897825fbe8b2b9fa647febae034b84",
-    "change_history_input_html_sha256": "047151ee325d8e92321ac1fd64b9fc4d81f650e9ddf1107d55b49762d51f3027",
+    "change_history_sha256": "d4f6c5e912b11554e82ac011ac952b7cdba2d1bfae7787c3bb0cf05d26f1102a",
+    "change_history_input_html_sha256": "933f71097575fae519dc60c8e6306ad71a8b6e3555e254dd2e604f25646f398b",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -85,8 +85,8 @@
         "output": "read/orientation.html",
         "source": "llms.txt",
         "title": "Orientation: complete text source",
-        "edition": "Site Preview 0.8.1, maintained working edition with optional teaching questions; not validation",
-        "sha256": "b44042f81bf9a25d8ab8fa336b8514054fed823697a26f246b835c68afa4a52b"
+        "edition": "Site Preview 0.8.2, maintained working edition with optional teaching questions; not validation",
+        "sha256": "a89be8d20797428e82bc86be4ffa68df7c128a833c20a04826fedc449c1c0da9"
       },
       {
         "output": "read/trace-spine.html",
@@ -109,11 +109,12 @@
       "source": "https://www.metmuseum.org/art/collection/search/11112"
     },
     "title_and_art_direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329",
-    "change_history_html_sha256": "140ec1773bb9a1c06c95300fd463df9a807e99be9f4866183d1639f5afdfa1bc",
+    "editorial_revision": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592995706",
+    "change_history_html_sha256": "cc02b43acab9d22adba414d053cefcb6981d17b799be39af9e7e617f24773186",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "948b6c1d24355e2f48ace04ff618689749f936198d7361d2c4a0aa850d39de04",
+      "stylesheet_sha256": "34eb4b206cd0d5978da8748e6b63de33f84522dc5e8b483449ec78b3f410f6ce",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },

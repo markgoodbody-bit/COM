@@ -1,6 +1,22 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.8 · 8 September 2026
+Please Start From Here · Reader change log · Edition 0.9 · 9 September 2026
+
+Edition 0.9 adds D013, the editorial presentation prepared as site Preview 0.8.2. Dates use Europe/London. The preceding title/art change remains below, including its original placement and verification limits.
+
+### D013
+
+**9 September 2026 — Give the same work a more considered presentation.**
+
+**Changed:** The title and unaltered painting share the opening on a wide screen and stack on a narrow one. Early navigation reaches the starting choices, Explore, the book and read-only discussion. Ruled sections replace the repeated rounded cards. The optional questions, explanation, books and artist credit use distinct layouts with shared typography and light/dark colours. All original paragraphs, headings, qualifications and destinations remain, though the painting and reading heading move.
+
+**Why:** Mark found the previous result too basic and asked for substantially better design within the existing constraints. This is a response to that judgement, not evidence that the new arrangement helps every reader. [Request and scope](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592995706).
+
+**Evidence and limits:** Source checks compare the original paragraphs and headings, preserve all previous destinations and check image identity. Desktop and mobile browser inspection is part of this revision. The painting now precedes the detailed starting choices, so readers who scroll through it reach those choices later; the early Ways to begin link can skip to them. The original 2.35 MB image is unchanged and remains lazy-loaded, but its earlier position can trigger loading sooner. No accessibility conformance or reader-benefit claim follows from the layout checks. Public receipt remains a separate observation after deployment.
+
+**Preserved:** Working-preview status, voluntary use, stated value choices, all original book and Explore source bytes, read-only discussion and the compact seed. The orientation changes only its edition label. No new theory, generated imagery, remote font, tracking, receiver, licence, domain configuration or experimental teaching/index publication is included.
+
+## Previous title and artwork edition
 
 Edition 0.8 adds D012, the title and artwork revision prepared as site Preview 0.8.1. This entry records the change and its evidence, not a claim that a particular reader has received or benefited from it. Earlier entries retain their original observation times.
 

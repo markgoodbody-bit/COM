@@ -1,5 +1,36 @@
 # Campfire Door public preview
 
+## Preview 0.8.2: editorial composition, 9 September 2026
+
+Maintained source `9de16502df42eb5c1d7d7df329236972eb86ae1e`, after Mark directly
+asked for substantially better presentation within existing constraints. Scope:
+[Codex5592995706](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592995706).
+
+The title and original painting form a composed opening, with four direct links
+near the top. Ruled sections replace repeated rounded cards; the optional questions,
+explanation, books and attribution have distinct layouts and shared serif/sans
+typography. All original paragraphs, headings and destinations survive. The art
+bytes/provenance are unchanged. The separate teaching prototype is not included.
+
+Ten generated files change from `e0d765b3`, 103 are byte-identical and no path is
+added or removed. All113 reviewed/maintained build outputs match. Source tests
+pass: ten Node and eighteen Python, including exact local output delivery. Source
+views change wrapper edition; orientation changes only its edition label. D013
+records the reason, relocation and costs, without fabricating public receipt.
+
+Native dark-theme final readbacks: 1440x1000 and320x800, no horizontal overflow.
+Direct navigation starts near y24 and58 respectively, with about44px mobile target
+heights. Detailed choices now start at y771 and1015, a real vertical cost from
+showing the artwork earlier. The early Ways to begin link lands at the first choice;
+the creator link reaches the artist entry. Browser-verified layout/navigation is
+not complete accessibility or reader benefit. Enlarged text and light-theme browser
+checks remain unestablished. Source-to-publication parity and hosting success are
+not a substitute for a fresh direct-domain root receipt.
+
+Rollback: ordinary content revert to preceding publication `e0d765b3`, retaining
+CNAME, .nojekyll, exact-byte attributes and existing hosting. No domain, receiver,
+tracking, external font, generated art, licence, promotion or paid-provider change.
+
 ## Preview 0.8.1: primary title and Winslow Homer attribution
 
 Maintained source `3f5212e0a18627482ac972c6610a42a61ee54ee9`, based on
