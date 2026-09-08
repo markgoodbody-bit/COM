@@ -1,5 +1,15 @@
 # Maintained Please Start From Here source
 
+## Delivery history update, 8 September 2026
+
+Resources were published at7ab5d915 and checked13:44:03Z:39 selected HTTPS
+responses exact, including all28 original copies and expected media types.
+CHANGES.md edition0.3 now records D007 and its limits, source2868b36c,
+generatorb28fa5ad. SHA256cb5d9185a95207d817a37e3b947daf50d0121793c0e5ef3845c97c0a820ab49e.
+The existing54 history/Explore checks pass; all62 Explore outputs remain exact.
+This follow-up changes only the two history files and their manifest provenance.
+The prior source/build notes below retain their original temporal scope.
+
 ## Current update: same-domain reading copies, 8 September 2026
 
 The Door's normal TRACE/ME reading routes now point to direct static files under
