@@ -1,5 +1,6 @@
 /** A deliberately isolated receiving core; D1-shaped calls, no network or tool execution. */
 export const DAY = 86400000;
+export const ATTENDED_LEASE_MS = 60*60*1000;
 const encoder = new TextEncoder();
 export class Problem extends Error {
   constructor(status, code) { super(code); this.status=status; this.code=code; }
@@ -29,7 +30,9 @@ export class Store {
   async first(sql,...args) { return this.statement(sql,...args).first(); }
   async rows(sql,...args) { return (await this.statement(sql,...args).all()).results; }
   async readiness(enabled) {
-    const until=enabled?this.clock()+DAY:0;
+    // Intake is an attended lease, not a durable service-state promise. An operator
+    // can renew it while actively present; otherwise new intake closes itself.
+    const until=enabled?this.clock()+ATTENDED_LEASE_MS:0;
     await this.statement('UPDATE service SET enabled=?,ready_until=? WHERE id=1',enabled?1:0,until).run();
     return {enabled,ready_until:until};
   }
