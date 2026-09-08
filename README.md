@@ -1,5 +1,19 @@
 # Campfire Door public preview
 
+## Reader history follow-through for 0.7.1
+
+Maintained source05391ac7437e978684dde816d0ac69f9c181e0a9. Initial0.7.1
+publication acff173ed906414c28ecc82830bec0ec0e6c3385 / Pages34238551769
+succeeded; 56 selected HTTPS responses matched at14:29:55Z. COM5586767917.
+This follow-through updates only changes.md/html and manifest history pins.
+Edition0.4/D008 source3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e,
+generator d58419a851193c5b6c1d2e6102433c269c168d7d. MD18228bytes SHA256
+7b68b38df0121b2627347df9cf1f5d580ba892508ab1a751ef8b1fe1aefdf906;
+HTML20842bytes SHA2568d0bd491ae87f7e130123246f72f1664ec4d13b53fcede31e3df474a1c360def.
+54 generator/history tests passed. All earlier dated entries, four new source
+views, original files, fixed snapshots, CSS and domain settings remain exact.
+No accountless reply service or house-style change is part of this publication.
+
 ## Current publication: Preview 0.7.1 source-text alternatives
 
 Maintained source d440dd977255e78de82f797c50a9be22c5491e31. FW5586494717
