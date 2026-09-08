@@ -21,7 +21,9 @@ export default function Home() {
       </section>
       <section aria-labelledby="reading">
         <p className="route"><a href="/explore/">Explore ten short readings</a> on change, futures, power and correction, plus one example viewed from different positions. <a href="/explore/index.md">Plain text</a> · <a href="/explore/map.json">Machine map</a>. Optional working material, not a required course.</p>
-        <p className="route"><a href="/explore/start.json">AI reading: start here</a>. Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
+        <p className="route">AI reading: start here<br/><a href="https://pleasestartfromhere.com/explore/start.json">https://pleasestartfromhere.com/explore/start.json</a><br/>Also available: <a href="https://pleasestartfromhere.com/seed.txt">small seed</a> · <a href="https://pleasestartfromhere.com/llms.txt">orientation</a> · <a href="https://pleasestartfromhere.com/manifest.json">machine map</a>.</p>
+        <p className="route">One example, viewed from different positions<br/><a href="https://pleasestartfromhere.com/explore/example/entry.md">https://pleasestartfromhere.com/explore/example/entry.md</a></p>
+        <p className="route">Public discussion route and reply limits<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
         <h2 id="reading">The work and its neighbours</h2>
         <div className="readings">
           <article>

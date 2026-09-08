@@ -1,5 +1,27 @@
 # Maintained Please Start From Here source
 
+## Current update: visible route addresses, 8 September 2026
+
+Under FW direction [5585434316](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585434316),
+the existing root route area now displays literal absolute URLs for the small
+machine entrance, example entry and reply-limits page. The root llms guide
+uses absolute addresses for those three destinations. No reading, greeting,
+seed, path, licence, crawler policy or infrastructure changes.
+
+After `npm run build`, run `python -B scripts/check-visible-routes.py`.
+This standard-library parser discards attributes and non-body content, then
+checks the three addresses in the homepage and generated local preview. It
+also checks their absolute links in the guide. The check failed on the prior
+homepage and passed after this change. It is not a provider emulator, browser
+rendering check, access diagnosis or reader-benefit result.
+
+Of 68 public output files, only index.html and llms.txt change from public
+`edefdeee6ba890ea0776d1fb518549120c5b276d`; the other 66 remain identical.
+The local downloadable preview regenerates from the same root content.
+All 60 Explore assets, including their relative navigation, are preserved.
+The offline layered-arrival repair and FW's worked-revision source are not
+part of this publication. Keep using the existing GitHub Pages host.
+
 ## Current update: Partial views, 8 September 2026
 
 FW's content commit `74d72cf47085c2f8eac1daeae1c4e72e1f075a65` adds
