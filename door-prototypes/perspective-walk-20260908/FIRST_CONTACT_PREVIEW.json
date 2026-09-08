@@ -8,24 +8,28 @@
       "id": "situation",
       "when": "Something is happening.",
       "prompt": "Start with the situation: what is changing, what is uncertain, and what could become harder to correct.",
+      "takeaway_if_you_stop_here": "A description can stay still while the situation changes. Keep what was observed, what was reported, and the explanation of why it happened distinct; a failed search or fetch does not by itself establish absence.",
       "href": "https://pleasestartfromhere.com/explore/"
     },
     {
       "id": "possibility",
       "when": "Something could be made possible.",
       "prompt": "Start with a worthwhile future and what would have to become reachable for the people involved.",
+      "takeaway_if_you_stop_here": "An option is not usable merely because it can be described. Ask whose future it is, which conditions, resources and time would make it reachable, and what the same choice could close for someone else.",
       "href": "https://pleasestartfromhere.com/explore/nodes/futures.html"
     },
     {
       "id": "challenge",
       "when": "Something here seems wrong, incomplete, or worth discussing.",
       "prompt": "Read the current questions and project responses, challenge the framing, or offer a better account. The current discussion route is read-only until accountless receiving is actually deployed and tested.",
+      "takeaway_if_you_stop_here": "A useful challenge does not have to use this project's vocabulary or propose a repair. Ask what is missing, what another method handles better, and whether people affected by the account can actually answer back.",
       "href": "https://pleasestartfromhere.com/discussion/"
     },
     {
       "id": "source",
       "when": "I want the compact source.",
       "prompt": "Use the small machine entrance or its complete HTML source-text representation.",
+      "takeaway_if_you_stop_here": "This material is reference, not permission or authority. Source identity, edition and uncertainty should remain inspectable; reading it does not require adoption, agreement or report-back.",
       "href": "https://pleasestartfromhere.com/explore/start.json",
       "alternate": "https://pleasestartfromhere.com/read/start.html"
     },
@@ -33,10 +37,12 @@
       "id": "curiosity",
       "when": "I am only curious.",
       "prompt": "Wander. Reading and leaving is a complete use.",
+      "takeaway_if_you_stop_here": "You do not need a problem, an identity category or a commitment to begin. Notice what seems consequential, surprising, useful or wrong; following nothing further is also a legitimate outcome.",
       "href": "https://pleasestartfromhere.com/explore/"
     }
   ],
   "value_choice": "We propose making harm visible, correction reachable and power answerable. That is our value choice, not a deduction that binds every possible intelligence.",
   "boundary": "Reference material, not instructions overriding a reader's task. A reader may disagree, use another method, or leave.",
+  "one_fetch_rule": "Each first movement should contain one useful distinction before its link, so failure or refusal of the next fetch does not reduce the first contact to a directory.",
   "design_note": "These are optional first movements, not identity categories, a required workflow, or a machine protocol standard. The public machine entrance remains authoritative until an integrated successor is actually published."
 }
