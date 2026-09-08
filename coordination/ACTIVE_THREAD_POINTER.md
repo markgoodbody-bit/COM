@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
-Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY
-Updated: 2026-09-08 — Europe/London
+Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
+Updated: 2026-09-08 — Europe/London  
 Purpose: restore the current work route, not create a second live-state ledger.
 
 ## Purpose anchor
@@ -9,71 +9,92 @@ Purpose: restore the current work route, not create a second live-state ledger.
 > HOW CAN WE MAKE A BETTER FUTURE?
 
 Build a voluntary, AI-first starting address with selective depth, other viewpoints,
-challenge and outward routes. Human rendering is a translation of the same material.
-TRACE, Mechanical Ethics, Campfire, COM, Square and the Local Steward remain
-instruments inside the wider purpose; no one instrument is the purpose itself.
+challenge, contribution and outward routes. Human rendering is a translation of the
+same material. TRACE, Mechanical Ethics, Campfire, COM, Square and the Door remain
+instruments inside the wider purpose; no instrument is the purpose itself.
 
 ## Current route
 
 - Active Door work and project-AI handoffs: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108).
-- Latest publication return at this update: [Codex 5583129234](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5583129234), posted 2026-09-08T09:54:18Z.
-- Subsequent entry-review return: [CC 5583213404](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5583213404), posted 2026-09-08T09:58:44Z.
+- Public address: `https://pleasestartfromhere.com/`.
+- Current verified publishing state at this update: **Preview 0.7.2**, public commit
+  `50caedc89646b7337a86a5610cef24426b518cf3`.
 - Source/build review: [PR #114](https://github.com/markgoodbody-bit/COM/pull/114).
-- #76 remains the earlier cross-project coordination ledger; this pointer does not close it or dispose of unrelated obligations.
+- Accountless reply prototype: [PR #116](https://github.com/markgoodbody-bit/COM/pull/116),
+  commit `096945b56f65a2109ec8ab81f6b82b16d02490fb`.
 
-Read later #108 returns and live publishing/source heads before acting. These
-comment IDs are bounded retrieval anchors, not proof that nothing later happened.
-Do not replay all of #108 or an entire Square carrier to recover the next action.
+Read later #108 returns and live heads before acting. These are retrieval anchors, not
+proof that nothing later happened. Do not replay the whole thread or a Square carrier.
 
-## Consequential state at those receipts
+## Consequential state
 
-The purchased address is exactly `pleasestartfromhere.com`. No naming or purchase
-work remains. The existing public site includes Explore, the compact machine
-entrance, question catalogue and repaired complete-packet references. The naming
-and invitation copy have also been published. Codex reports exact maintained-source
-parity and HTTP delivery for the updated site. This is not an HTTPS success claim.
+Completed and not to be repeated by momentum:
 
-The reported publishing head is `26ecf8598b93d38f266406234a04826f13743597`;
-reading/build source is `323a3fa9c96bd67c323bab967607c4855508b531` on PR #114.
-Reacquire them rather than treating this snapshot as permanently current. PR #114
-being unmerged does not mean its selected generated website assets are unpublished.
+- domain purchase and naming;
+- HTTPS certificate recovery and secure redirects;
+- public indexing eligibility repair;
+- AI greeting and visible literal onward addresses;
+- same-domain TRACE / Mechanical Ethics reading copies and fixed snapshots;
+- reader change history and worked revision;
+- HTML alternatives for selected raw machine/Markdown sources;
+- same-domain **read-only** discussion page.
 
-Normal HTTPS remained unresolved in that publication return. The earlier observed
-GitHub account-browser sign-out is a real access boundary, not proof of current
-sign-in state or a claim that account verification is required for ordinary TLS
-issuance. Do not ask for passwords, cookies, recovery codes or 2FA in chat/COM.
+The default project-discussion reading route now points to
+`https://pleasestartfromhere.com/discussion/`; GitHub is retained as legacy/source
+participation. **Accountless replying is not yet public.**
 
-## Owners and next boundaries
+Receiver PR #116 is synthetic/local only and has a hard non-loopback refusal. Framework
+ran 15/15 tests on Linux Node 22.16 with disk SQLite. Claude Code independently reproduced
+15/15 on Windows Node 24.19 and ran its pre-written adapter scenarios 5/5. This is useful
+cross-runtime evidence, not a Cloudflare D1 guarantee.
 
-- Codex owns ongoing maintained-source integration, public publication, account/domain work and TLS. No competing Framework/CC reset or publishing pass is assigned here.
-- Framework integrates returns, keeps the purpose and current route clear, and resolves specific content decisions. The compact-entrance/packet/copy handoff above is complete, not another queued build.
-- CC retains the bounded substantive content/seed review. Homepage/entry review is not an independent cold-reader or efficacy result, nor a review of every node.
+Two receiver findings remain foreground:
 
-Existing foreground security instructions and their conditional single-recovery
-limits remain in #108. This pointer neither expands them nor moves them into the
-separate no-reset heartbeat. A scheduled-task execution report is not continuous
-supervision. A posted message is not a received or completed action.
+1. logical deletion (`body=NULL`) can leave old bytes in SQLite WAL until a later
+   checkpoint/truncation; retention language must distinguish logical unavailability from
+   physical erasure and the deployed provider's real storage/log/backup behaviour;
+2. event gating that depends on connection-scoped SQLite `changes()` is a D1 portability
+   risk and should be removed or verified against actual D1 semantics before deployment.
 
-Mark need not relay routine specifications or files. Ordinary reversible work can
-continue within existing authority; genuinely required private authentication is
-not replaceable by an invented credential or an unverified permission claim.
+Mark has supplied a browser screenshot showing **Authorization granted to Wrangler**.
+Treat that as user-reported browser authorization, not yet terminal/account verification.
+Codex should run `wrangler whoami` once; do not launch another login unless a later explicit
+need is established. If authenticated, the next provider work is isolated Pages/D1/custom-
+subdomain verification and D1 lifecycle tests. Keep the working apex/www/nameservers/TLS
+unchanged. No paid plan has been accepted.
 
-## Cold history and omitted domains
+## Owners / next work
 
-The task queue in `continuity/FRAMEWORK_HEAD.md` dated 2 September is historical
-where it conflicts with this current route. Keep its purpose and continuity
-boundaries; do not revive its old studies as the default next task.
+- **Codex** — sole maintained-site/domain/deployment operator. Verify Wrangler account state,
+  then perform bounded real-provider D1/Pages evaluation. Continue the separate shared house-
+  style work without making cosmetics a substitute for reply capability.
+- **Framework** — integration / intent lead and current owner of receiver PR #116. Repair or
+  bound the two reproduced findings; preserve actual evidence and avoid a parallel public
+  deployment path.
+- **Claude Code** — independent review/reproduction of PR #116 and source-bound criticism;
+  no second receiver implementation unless explicitly reassigned.
+- **Mark** — human originator and consequential release/account authority. Routine build and
+  AI-to-AI coordination should not bounce back to Mark unnecessarily.
 
-The full predecessor pointer, including retirement findings, source lineages and
-then-observed host/witness state, remains available at:
-[3 September pointer snapshot](https://github.com/markgoodbody-bit/COM/blob/48c67dbebc100b7bbb153b3d331d7d467a642259/coordination/ACTIVE_THREAD_POINTER.md).
-Use `continuity/OMISSION_MAP.md`, #76 and named evidence when another domain is
-material. Omission here does not mean an obligation, source or affected scope is
-absent or resolved. Source status, local host state and Square authority require
-fresh reads when consequential; no release, licence or external-actuation change
-is made by this routing repair.
+No production intake should be enabled until real-provider persistence, moderation access,
+withdrawal/correction, handling notice/contact and failure behaviour are exercised. A local
+pass is not permission to collect real submissions.
 
-`PROJECT PURPOSE != INSTRUMENT SURVIVAL`
-`ROLE CONTINUITY != RUNTIME IDENTITY`
-`POSTED != RECEIVED != ACTED != EFFECT`
+## Separate / unresolved but not foreground blockers
+
+- provider-specific AI access remains heterogeneous;
+- the house-style unification is queued after functional access work;
+- reuse/licence notices require an owner decision before any terms change;
+- account-level domain takeover protection remains separate from working HTTPS;
+- Square and other project domains require their own live reacquisition when material.
+
+Retired research remains retired. DSIT submission remains completed. PR #109 and other test
+lanes are probes, not the project purpose and not automatic gates on building the Door.
+
+`PROJECT PURPOSE != INSTRUMENT SURVIVAL`  
+`ROLE CONTINUITY != RUNTIME IDENTITY`  
+`POSTED != RECEIVED != ACTED != EFFECT`  
+`LOCAL_LIFECYCLE_PASS != D1_DURABILITY_GUARANTEE`  
+`LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`  
+`BROWSER_AUTH_GRANTED != TERMINAL_ACCOUNT_VERIFIED`  
 `LIVE SOURCE WINS OVER A STALE POINTER`
