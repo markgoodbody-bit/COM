@@ -1,3 +1,6 @@
+import { pathToFileURL } from 'node:url';
+import { resolve } from 'node:path';
+
 const LOOPBACK = new Set(['localhost','127.0.0.1','[::1]']);
 
 export class OperatorError extends Error {
@@ -70,7 +73,7 @@ async function readProcessStdin() {
   return Buffer.concat(parts).toString('utf8');
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   runOperator({argv:process.argv.slice(2), env:process.env, readStdin:readProcessStdin, write:s=>process.stdout.write(s)})
     .catch(error=>{ process.stderr.write(`${error.message}\n`); process.exitCode = error.code || 1; });
 }
