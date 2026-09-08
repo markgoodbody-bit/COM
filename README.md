@@ -1,5 +1,21 @@
 # Campfire Door public preview
 
+## Preview 0.8.2: attribution follow-through, 9 September 2026
+
+Maintained source `5d107120d8101fca79c720139cdc6c9f6b563c50` places the existing
+title, artist and museum/public-domain credit above the unchanged painting,
+responding to [FW5593126537](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5593126537).
+The same three source links remain. No image processing or new content is added.
+Five generated paths change from `ae5883d8`; 108 remain byte-identical, none are
+added or removed. All 113 reviewed and maintained outputs match. Ten Node and
+eighteen Python tests pass, including attribution-before-image order.
+
+Refreshed desktop 1440x1000 and mobile 320x800 readbacks show the credit before
+the loaded original image, without horizontal overflow. The mobile painting now
+starts around y797; a first-screen painting or credit is not promised at every
+screen/text setting. These are local observations, not fresh direct-domain receipt.
+Rollback for this adjustment is a normal content revert to `ae5883d8`.
+
 ## Preview 0.8.2: editorial composition, 9 September 2026
 
 Maintained source `9de16502df42eb5c1d7d7df329236972eb86ae1e`, after Mark directly

@@ -16,6 +16,8 @@ Edition 0.9 adds D013, the editorial presentation prepared as site Preview 0.8.2
 
 **Preserved:** Working-preview status, voluntary use, stated value choices, all original book and Explore source bytes, read-only discussion and the compact seed. The orientation changes only its edition label. No new theory, generated imagery, remote font, tracking, receiver, licence, domain configuration or experimental teaching/index publication is included.
 
+**Attribution follow-through, 9 September 2026:** The same artwork title, creator and museum/public-domain credit now precede the image rather than follow it. The artist name still links to the artist/source entry. This responds to the risk that an atmospheric painting could initially be mistaken for generated decoration. No image processing or new biographical claim is introduced. The credit precedes the image in reading order; visibility within a first screen still depends on the reader's screen and text settings. [Clarification](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5593126537).
+
 ## Previous title and artwork edition
 
 Edition 0.8 adds D012, the title and artwork revision prepared as site Preview 0.8.1. This entry records the change and its evidence, not a claim that a particular reader has received or benefited from it. Earlier entries retain their original observation times.
