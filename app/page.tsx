@@ -2,6 +2,7 @@
 /* eslint-disable next/no-html-link-for-pages */
 import { SITE_EDITION } from '../scripts/site-edition.mjs';
 import { CAMP_FIRE } from '../scripts/camp-fire.mjs';
+import { artworkSrcSet, HOMER_SIZES } from '../scripts/artwork.mjs';
 const trace = "https://github.com/markgoodbody-bit/TRACE";
 const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
@@ -15,24 +16,24 @@ export default function Home() {
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
-        <div className="opening-copy">
-        <p className="eyebrow">A starting point for humans and AIs</p>
-        <h1>Please Start From Here</h1>
-        <p className="guiding-question">How can we make a better future?</p>
-        <p>A project by Mark, developed with AI collaborators.</p>
-        <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
-        </div>
         <figure className="camp-fire" aria-labelledby="camp-fire-credit">
           <figcaption id="camp-fire-credit">
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
-          <img src={CAMP_FIRE.local_image}
-            srcSet={CAMP_FIRE.responsive_variants.map(image => `${image.local_image} ${image.width}w`).join(', ')}
-            sizes="(max-width: 60rem) min(44rem, calc(100vw - 2.5rem)), min(53vw, 47rem)"
-            alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height}
-            fetchPriority="high" decoding="async" />
+          <div className="art-hero">
+            <img src={CAMP_FIRE.responsive.variants[0].local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
+            <div className="hero-heading">
+              <h1>Please Start From Here</h1>
+              <p className="guiding-question">How can we make a better future?</p>
+            </div>
+          </div>
         </figure>
+        <div className="opening-copy">
+          <p className="eyebrow">A starting point for humans and AIs</p>
+          <p>A project by Mark, developed with AI collaborators.</p>
+          <p>Hello. Start from whatever brought you here. Pick whichever beginning feels closest; you can change direction, go deeper, or stop whenever you like. No introduction or agreement is required.</p>
+        </div>
         </div>
         <div className="first-movements" aria-label="Ways to begin">
           <article id="situation">
@@ -122,7 +123,8 @@ export default function Home() {
           <h3 id="homer-heading">The painting and its maker</h3>
           <p><strong>{CAMP_FIRE.artist} ({CAMP_FIRE.artist_dates})</strong> was an American painter. He began in commercial printmaking and worked as an artist-correspondent during the Civil War. His subjects included rural life, coastal communities and the sea. He moved to Prouts Neck, Maine, in 1883. <a href={CAMP_FIRE.biography_url}>Read H. Barbara Weinberg’s biography at The Met</a>.</p>
           <p><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite>, {CAMP_FIRE.date}</a> is an oil painting on canvas. The Met traces it to a visit to Keene Valley, New York, and identifies the two figures as fishermen. Object number {CAMP_FIRE.accession}. {CAMP_FIRE.credit}.</p>
-          <p>The image is reproduced without cropping or alteration from <a href={CAMP_FIRE.image_url}>The Met’s original photograph</a>, under its <a href={CAMP_FIRE.rights_url}>Open Access policy</a>. <a href="/art/camp-fire.json">Image source details</a>. Its use here does not imply endorsement by the artist or museum.</p>
+          <p>The painting is shown in smaller viewing copies without cropping, retouching or generative alteration. <a href={CAMP_FIRE.local_image}>The unchanged local original</a> comes from <a href={CAMP_FIRE.image_url}>The Met’s original photograph</a>, under its <a href={CAMP_FIRE.rights_url}>Open Access policy</a>. <a href="/art/camp-fire.json">Image source details</a>. Its use here does not imply endorsement by the artist or museum.</p>
+          <p className="art-reading"><strong>Why this spoke to us.</strong> {CAMP_FIRE.why_this_spoke_to_us}</p>
         </article>
       </section>
       <section className="boundaries" aria-labelledby="response">

@@ -1,0 +1,20 @@
+{
+  "parent_local_image": "/art/camp-fire.jpg",
+  "parent_sha256": "7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1",
+  "prepared_on": "2026-09-09",
+  "encoder": "ImageMagick 6.9.11-60 / JPEG",
+  "source_commit": "5ff03dc98a519a7958a05b681b7231450146c319",
+  "transformation": "Proportional Lanczos downsampling, auto-orient, metadata stripped, JPEG encoding. Quality85 at720w, quality86 at1440w. No crop or generative alteration. Files preserved byte-for-byte from the completed initiative-cycle source, not regenerated during integration. Not byte-identical to the museum original.",
+  "variants": [
+    {
+      "local_image": "/art/camp-fire-720.jpg", "width": 720, "height": 449,
+      "bytes": 57147,
+      "sha256": "1790607240f010723618dd1e0aed49a3c806ac0bbf3fe4d8b5bde69450658577"
+    },
+    {
+      "local_image": "/art/camp-fire-1440.jpg", "width": 1440, "height": 897,
+      "bytes": 255138,
+      "sha256": "ffaf089763a9f82319b72f18a6359f6efd1a1ef680cd917b7f135926a04bf9a1"
+    }
+  ]
+}

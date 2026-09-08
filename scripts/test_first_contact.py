@@ -60,21 +60,11 @@ class FirstContactTests(unittest.TestCase):
         image = (ROOT / 'out/art/camp-fire.jpg').read_bytes()
         self.assertEqual(hashlib.sha256(image).hexdigest(), record['sha256'])
         self.assertEqual(len(image), record['bytes'])
-        self.assertIn('src="/art/camp-fire.jpg"', self.html)
+        self.assertIn('src="/art/camp-fire-720.jpg"', self.html)
         self.assertIn('alt="' + record['alt'] + '"', self.html)
-        self.assertNotIn('loading="lazy"', self.html)
-        self.assertIn('fetchPriority="high"', self.html)
-        self.assertIn('sizes="(max-width: 60rem)', self.html)
-        for variant in record['responsive_variants']:
-            responsive = (ROOT / 'out' / variant['local_image'].lstrip('/')).read_bytes()
-            self.assertEqual(hashlib.sha256(responsive).hexdigest(), variant['sha256'])
-            self.assertEqual(len(responsive), variant['bytes'])
-            self.assertIn(f"{variant['local_image']} {variant['width']}w", self.html)
-        self.assertLess(record['responsive_variants'][0]['bytes'], record['bytes'] // 20)
-        offline = (ROOT / 'downloads' / 'Campfire-preview.html').read_text(encoding='utf-8')
-        self.assertIn('data:image/jpeg;base64,', offline)
-        self.assertNotIn('srcSet=', offline)
-        self.assertNotIn('/art/camp-fire-720.jpg', offline)
+        self.assertIn('loading="eager"', self.html)
+        self.assertIn('srcSet="', self.html)
+        self.assertIn(' sizes="', self.html)
         self.assertLess(self.html.index('<figcaption'), self.html.index('<img'))
         # The editorial revision moves the same art into the opening composition.
         # Direct reading routes precede it; the original detailed choices remain.
@@ -100,9 +90,60 @@ class FirstContactTests(unittest.TestCase):
                 text = ' '.join(' '.join(Reading(block).text).split())
                 values.append(re.sub(r'Preview 0\.8(?:\.\d+)?', 'Preview [edition]', text))
             return Counter(values)
-        self.assertEqual(blocks(original), blocks(self.html))
+        before, after = blocks(original), blocks(self.html)
+        # Only these explicitly reviewed art-provenance paragraphs may differ.
+        old_credit = 'The image is reproduced without cropping or alteration from The Met’s original photograph , under its Open Access policy . Image source details . Its use here does not imply endorsement by the artist or museum.'
+        new_credit = 'The painting is shown in smaller viewing copies without cropping, retouching or generative alteration. The unchanged local original comes from The Met’s original photograph , under its Open Access policy . Image source details . Its use here does not imply endorsement by the artist or museum.'
+        record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
+        interpretation = 'Why this spoke to us. ' + record['why_this_spoke_to_us']
+        self.assertEqual(before[old_credit], 1)
+        self.assertEqual(after[new_credit], 1)
+        self.assertEqual(after[interpretation], 1)
+        before.subtract([old_credit]); after.subtract([new_credit, interpretation])
+        self.assertEqual(+before, +after)
         self.assertTrue(set(Reading(original).links).issubset(self.page.links))
         self.assertIn('href="#situation"', self.html.split('</header>')[0])
+
+    def test_viewing_copies_and_offline_identity(self):
+        from PIL import Image
+        record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
+        self.assertEqual(record['responsive']['parent_sha256'], record['sha256'])
+        self.assertEqual(record['responsive']['parent_local_image'], record['local_image'])
+        self.assertEqual([v['width'] for v in record['responsive']['variants']], [720, 1440])
+        for variant in record['responsive']['variants']:
+            file = ROOT / 'out' / variant['local_image'].lstrip('/')
+            self.assertEqual(hashlib.sha256(file.read_bytes()).hexdigest(), variant['sha256'])
+            self.assertEqual(file.stat().st_size, variant['bytes'])
+            with Image.open(file) as image:
+                self.assertEqual(image.size, (variant['width'], variant['height']))
+            self.assertLess(variant['bytes'], record['bytes'])
+            self.assertIn(f"{variant['local_image']} {variant['width']}w", self.html)
+        self.assertIn(record['why_this_spoke_to_us'], self.text)
+        offline = (ROOT / 'downloads/Campfire-preview.html').read_text(encoding='utf-8')
+        self.assertNotRegex(offline, r'(?i)(?:srcset|imagesrcset|imagesizes)=')
+        self.assertIn('src="data:image/jpeg;base64,', offline)
+        self.assertNotIn('src="/art/', offline)
+
+    def test_hero_white_text_has_a_conservative_image_contrast_floor(self):
+        from PIL import Image
+        css = (ROOT / 'app/globals.css').read_text(encoding='utf-8')
+        self.assertIn('background: rgba(0,0,0,.74); color: #ffffff;', css)
+        self.assertIn('background: #141b20;', css)
+        self.assertNotIn('object-fit: cover', css)
+        def linear(value):
+            value /= 255
+            return value / 12.92 if value <= .04045 else ((value + .055) / 1.055) ** 2.4
+        record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
+        for variant in record['responsive']['variants']:
+            with Image.open(ROOT / 'out' / variant['local_image'].lstrip('/')) as image:
+                # Upper-bound background luminance from actual channel maxima.
+                # This is conservative across the complete image, including text
+                # positions at other widths, not a measured browser paint result.
+                maxima = [upper * .26 for lower, upper in image.getextrema()]
+            lum = sum(weight * linear(value) for weight, value in zip((.2126, .7152, .0722), maxima))
+            ratio = 1.05 / (lum + .05)
+            self.assertGreaterEqual(ratio, 4.5)
+            print(f"Hero contrast lower bound {variant['width']}px: {ratio:.2f}:1")
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',

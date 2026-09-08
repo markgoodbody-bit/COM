@@ -1,6 +1,19 @@
 # Maintained Please Start From Here source
 
-## Current editorial presentation, 9 September 2026
+## Current painting-led opening and delivery, 9 September 2026
+
+Preview 0.8.3 preserves the museum original and supplies two smaller viewing
+copies. The desktop title sits over the full frame in a readable dark panel;
+on phones the panel follows the uncropped painting. Early navigation remains.
+The provenance paragraph distinguishes derivatives from the original, and the
+project's interpretation explicitly does not claim the artist's intention.
+
+See [HUMAN_ART.md](HUMAN_ART.md) for source/derivative identity, preparation,
+browser observations, costs and the asset-blocked, unpublished Vermeer proof.
+Normal builds verify accepted image bytes; they do not regenerate them.
+No teaching or self-selected-entrance prototype is included in this publication.
+
+## Earlier editorial presentation, 9 September 2026
 
 Preview 0.8.2 responds to Mark's judgement that 0.8.1 was too basic. The same
 title, painting and content now form an editorial opening, with early direct

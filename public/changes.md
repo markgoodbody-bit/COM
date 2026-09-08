@@ -1,6 +1,20 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.9 · 9 September 2026
+Please Start From Here · Reader change log · Edition 0.10 · 9 September 2026
+
+### D014
+
+**9 September 2026 — A painting-led opening, with viewing-sized files and visible lineage.**
+
+**Changed:** On wider screens the white title and guiding question sit in a local dark panel over the real painting. On narrow screens a solid dark title panel follows the full image. Neither arrangement crops the work. Its credit remains above, and early links still reach the choices directly. Only the landing page uses this treatment. Other introductory paragraphs follow the image, so the choices may be farther down for readers who scroll. [Direction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5593314132).
+
+**Delivery:** The existing source-bound720/1440-pixel viewing copies are kept:57,147 and255,138bytes, versus the2,350,423-byte original. The browser can select a copy from its viewport and pixel density; it is no longer offered the full master as its default image. The original remains locally available and unchanged. A parallel three-copy candidate was set aside rather than add a second image pipeline. The offline handoff embeds the720-pixel copy without responsive/preload network candidates. [Image finding](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5593207769) · [Preserved derivative source](https://github.com/markgoodbody-bit/COM/commit/5ff03dc98a519a7958a05b681b7231450146c319).
+
+**Provenance and meaning:** A source record retains creator, work/date, institution, rights evidence, original hash, derivative settings/hashes, alt text and artist route. The visible source paragraph now calls the displayed images smaller viewing copies. Resizing and JPEG compression change pixels; they are not unchanged originals. A separate project-authored note says why the painting spoke to us and explicitly does not attribute that interpretation to Homer. No crop, retouching or generative operation is added by this integration.
+
+**Evidence and limits:** Source tests retain all non-art paragraphs and previous destinations, reject changed image bytes and compare white text against conservative bounds from the actual image pixels under the declared dark panel. Browser selection/layout is checked separately. Eager loading can fetch the image below a short viewport; caching and browser choices vary. Smaller files do not prove faster painting, accessibility conformance, invitation or usefulness. Original TRACE/ME/PDF/Explore content and seed remain unchanged; the orientation changes only its edition label. No receiver, tracking, licence, new host, or experimental entrance/teaching/Vermeer publication.
+
+## Previous editorial edition
 
 Edition 0.9 adds D013, the editorial presentation prepared as site Preview 0.8.2. Dates use Europe/London. The preceding title/art change remains below, including its original placement and verification limits.
 

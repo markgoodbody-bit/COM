@@ -25,15 +25,15 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       const relative = prefix + entry.name;
       if (entry.isDirectory()) { await check(dir + '/' + entry.name, relative + '/'); continue; }
       const actual = await readFile(dir + '/' + entry.name);
-      if (relative === 'art/camp-fire.jpg') {
-        assert.equal(createHash('sha256').update(actual).digest('hex'), CAMP_FIRE.sha256);
-        assert.equal(actual.length, CAMP_FIRE.bytes);
-        continue;
-      }
-      const variant = CAMP_FIRE.responsive_variants.find(item => item.local_image === '/' + relative);
+      const variant = CAMP_FIRE.responsive.variants.find(item => item.local_image === '/' + relative);
       if (variant) {
         assert.equal(createHash('sha256').update(actual).digest('hex'), variant.sha256);
         assert.equal(actual.length, variant.bytes);
+        continue;
+      }
+      if (relative === 'art/camp-fire.jpg') {
+        assert.equal(createHash('sha256').update(actual).digest('hex'), CAMP_FIRE.sha256);
+        assert.equal(actual.length, CAMP_FIRE.bytes);
         continue;
       }
       if (relative === 'art/camp-fire.json') {
