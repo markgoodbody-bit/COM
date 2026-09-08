@@ -61,11 +61,13 @@ test('declared light and dark text pairs meet the selected 4.5:1 floor', async (
   };
   for (const block of [css.split('@media')[0], css.split('@media (prefers-color-scheme: dark)')[1].split('* {')[0]]) {
     const tokens = Object.fromEntries([...block.matchAll(/--([a-z]+): (#[0-9a-f]{6})/g)].map(m => [m[1], m[2]]));
+    for (const background of ['background', 'surface', 'panel']) {
     for (const key of ['foreground', 'muted', 'accent', 'visited']) {
-      const values = [luminance(tokens[key]), luminance(tokens.background)].sort((a, b) => a - b);
+      const values = [luminance(tokens[key]), luminance(tokens[background])].sort((a, b) => a - b);
       const ratio = (values[1] + .05) / (values[0] + .05);
       assert.ok(ratio >= 4.5, key + ': ' + ratio);
-      console.log(tokens.background, key, ratio.toFixed(3));
+      console.log(tokens[background], key, ratio.toFixed(3));
+    }
     }
   }
   // Pair arithmetic is not browser, focus, reflow, spacing or WCAG verification.

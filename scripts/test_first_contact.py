@@ -74,6 +74,14 @@ class FirstContactTests(unittest.TestCase):
         for mime, path in [('text/plain', '/llms.txt'), ('application/json', '/explore/start.json')]:
             self.assertIn((mime, 'https://pleasestartfromhere.com' + path), self.page.alternates)
 
+    def test_optional_handoff_survives_text_extraction(self):
+        self.assertIn('Visual candidate', self.text)
+        self.assertIn('not published', self.text)
+        self.assertIn('You can read this yourself, or hand this address to an AI', self.text)
+        self.assertIn('No special prompt is required.', self.text)
+        self.assertLess(self.text.index('Another perspective'), self.text.index('Something is happening'))
+        self.assertIn('https://pleasestartfromhere.com/', self.page.links)
+
     def test_no_old_destination_dropped_and_history_preserved(self):
         def old(name):
             return subprocess.check_output(['git', 'show', BASELINE + ':' + name], cwd=PUBLISHED).decode('utf-8')

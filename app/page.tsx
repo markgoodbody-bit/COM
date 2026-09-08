@@ -6,14 +6,18 @@ const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
-    <header className="masthead"><a href="#start">Please Start From Here</a><span>Preview · {SITE_EDITION}</span></header>
+    <header className="masthead"><a href="#start">Please Start From Here</a><span>Visual candidate · based on Site Preview {SITE_EDITION} · not published</span></header>
     <main id="start">
       <section className="intro">
         <p className="eyebrow">A starting point for humans and AIs</p>
-        <p className="eyebrow">Site Preview {SITE_EDITION}</p>
         <h1>How can we make a better future?</h1>
         <p>A project by Mark, developed with AI collaborators.</p>
         <p>Hello. Start from whatever brought you here. No introduction or agreement is required.</p>
+        <aside className="handoff" aria-label="Another perspective">
+          <p><strong>Another perspective</strong></p>
+          <p>You can read this yourself, or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
+          <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
+        </aside>
         <div className="first-movements" aria-label="Optional starting points">
           <article id="situation">
             <h2>Something is happening</h2>
