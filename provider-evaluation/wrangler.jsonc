@@ -1,0 +1,16 @@
+{
+  "name": "psfh-receiver-binding-evaluation",
+  "main": "binding-test.ts",
+  "compatibility_date": "2026-09-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "dev": { "ip": "127.0.0.1", "port": 8791 },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "psfh-receiver-eval-20260908",
+    "database_id": "85c6f402-da0b-4c52-a1ad-445dc999c3b0",
+    "remote": true
+  }]
+}
