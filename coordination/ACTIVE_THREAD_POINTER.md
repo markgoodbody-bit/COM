@@ -18,7 +18,7 @@ Please Start From Here is a voluntary AI-first/human-readable starting address. 
 - Public discussion remains **read-only**.
 - Source/content review: PR #114.
 - Receiver evaluation: PR #116, current head `0870bc02af3577f50545740e43333344c876e577`.
-- Framework visual candidate branch `framework/door-visual-candidate-20260908`, head `8d492f46dc42699ba28894b3b3a73e1c8106a3a9`; presentation bytes are unchanged from `056277d919856441dee3adb158c5628aa8266337`, later head only adds its structural checker.
+- Framework visual alternative: `framework/door-visual-candidate-20260908`, current head `6804f6f0157a50cd20e00bca03b9779363f173ab`.
 - Isolated edge-admission candidate: `framework/door-receiver-edge-admission-20260908`, head `16c626d406348545a323e2aad2243a3d3fb59554`, UNEXECUTED/UNMERGED.
 - Isolated attended-lease candidate: `framework/door-receiver-attended-lease-20260908`, head `c1cf1229581247c280bf6a0bfcc9b3f958c85379`, UNEXECUTED/UNMERGED.
 
@@ -41,7 +41,8 @@ Earned evidence includes:
 - remote correction retry/conflict, private operator queue, unauthorised admin denial, explicit no-change resolution without target/public mutation, pending withdrawal and hard public guard;
 - post-resolution reporter note clearing preserving disposition/outcome/reason/audit while refusing wrong management key;
 - provider receiver subtree with those repairs 39/39;
-- later receiver subtree with private receipt response repair 40/40 Windows and standalone closed `npm run test:operator` rehearsal 1/1.
+- later receiver subtree with private receipt response repair 40/40 Windows and standalone closed `npm run test:operator` rehearsal 1/1;
+- Codex independently confirmed the **entire** PR116 `door-receiver-20260908` subtree is byte-equal to the tested `58cb6c79...` receiver subtree, so those local test receipts transfer to current PR116 scope.
 
 Current consequential behavior: contributor private receipt can carry separately attributed project responses for the **current published revision**. Replacement/withdrawal cannot reveal an earlier answer.
 
@@ -55,15 +56,22 @@ Correction remains separately available from ordinary intake.
 
 `REQUEST_RESOLVED != REPORTER_NOTE_MUST_REMAIN`
 
-## Visual arrival ecology
+## Visual arrival ecology — one active line, one alternative
 
 Mark wants eventually to be able to post the bare Door URL on Reddit and simply invite people to use it. Arrivals may be humans, human->AI handoffs, direct AIs, crawlers, sceptics, deep-link visitors or returning contributors. Design for an arrival ecology, not identity personas or a conversion funnel.
 
-Framework's unpublished visual presentation adds a warmer open field, five semantic places-to-begin, a quiet CSS horizon/branching motif and an optional `Another perspective` human->AI handoff with literal URL and AI-not-authority qualification. No JS, tracking, fetched decoration, external fonts or provider endorsement.
+There were two distinct visual candidates. Codex has now browser-inspected Framework's exact larger presentation and OBJECTED to importing it unchanged:
 
-Codex also has a **different** maintained visual candidate. Its partial native-dark browser review found a concrete mobile issue and repaired its own candidate: at 320x800 the first movement moved from ~872px to ~672px after a narrow CSS change. Those observations do NOT transfer to Framework's visual object. Do not blind-merge the aesthetics. Codex is to inspect Framework's exact presentation next and then choose one coherent maintained-source integration.
+- at 320x800 the first movement began ~1140.82px down the document;
+- at 1280x900 it began ~697.64px down;
+- the exact candidate also dropped important public0.8 footer caveats;
+- its structural checker had an over-strict literal-URL assertion.
 
-Framework visual branch has `visual_candidate_check.py` as a structural guard only; it is not visual-quality/accessibility/reader-benefit evidence.
+Framework accepts that objection. **Codex's repaired maintained candidate is the single active visual integration base.** Its previously observed first movement positions after narrow mobile repair were ~671.99px at320x800 and ~640.87px at1280x900. Those are layout observations, not reader-benefit evidence.
+
+Framework's larger visual branch is retained only as an alternative/reference. It was repaired semantically at `6804f6f...`: plain `You can hand this address to an AI`, restored independent-assessment/provisional/status/licence caveats, and corrected checker contract. The larger layout itself was not promoted.
+
+Active maintained visual requirements remain: useful first movement early, optional human->AI handoff, no identity gate/provider endorsement, raw/no-script paths, visible criticism/limits/caveats, plain AI wording. Light mode, text enlargement/spacing and no-CSS browser acceptance are still open. Before publication Codex should push an addressable maintained-source candidate so exact source can be reviewed rather than inferred from screenshots.
 
 `PRETTIER != MORE USEFUL`
 `HUMAN INVITATION != AI OBLIGATION`
@@ -86,8 +94,8 @@ Framework has NOT executed this candidate. One hour is an evaluation default, no
 
 ## Foreground next work
 
-1. Codex: inspect Framework's exact visual object and return screenshots/browser breakage; keep the two visual lines distinct until then.
-2. Codex: SAME existing D1 only, narrow remote test of private receipt-response query: correct owner sees current response; wrong key denied; replacement/withdraw suppress stale response.
+1. Codex: SAME existing D1 only, narrow remote test of private receipt-response query: correct owner sees current response; wrong key denied; replacement/withdraw suppress stale response.
+2. Codex: continue the single maintained visual line through light mode, text enlargement/spacing, no-CSS and long-page checks; push addressable maintained source before release.
 3. Then reproduce/falsify isolated attended-lease and edge-admission candidates locally. No provider resource creation merely to satisfy these tests.
 4. Establish actual operator custody/review capacity, retention/log/backup bounds and production throttling/failure behavior.
 5. Verify deployed contribution/report browser/accessibility behavior.
