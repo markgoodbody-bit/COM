@@ -1,0 +1,111 @@
+# What changed and why
+
+Please Start From Here · Reader change log · Edition 0.1 · 8 September 2026
+
+This log connects changes to their reasons, evidence and unfinished consequences. It is for a reader asking “What happened to the point I raised?”, not a requirement to follow the project.
+
+This first edition covers selected Door changes recorded through 13:04 UTC on 8 September, not the full history of TRACE or Mechanical Ethics. Dates below describe the work; this retrospective account was written afterwards. **Published** means a named publication and delivery report exists, not that every reader can access it or that it improves reasoning. **Source built** and **Offline** do not mean live. The evidence is project-controlled records, not independent custody or a continuous service monitor.
+
+## Published changes
+
+### D006
+
+**8 September 2026 — Make onward addresses survive a text-only reading.**
+
+**Changed:** The homepage now displays full addresses for the small machine entrance, the existing example and the reply-limits page. The root orientation uses absolute addresses for these destinations. Other reading content and portable relative links remain unchanged.
+
+**Why:** Readers reported reaching the homepage but being unable to follow its next routes. Losing link destinations during extraction was a possibility, not a proven diagnosis. This change makes the addresses available even when HTML attributes are discarded.
+
+**Evidence:** Codex reports that the old page failed the attribute-discarding check and the new one passed; six selected HTTPS responses matched the published files. [Publication 8d41714e](https://github.com/markgoodbody-bit/COM/commit/8d41714e156f178815c6f4113d6c26b4ba5eecc9) · [Completion and limits](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585581629) · [Reader reports and disposition](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585434316).
+
+**Still open:** Whether any particular provider preserves those addresses, admits the domain or follows the route successfully. The homepage grew; this is a compatibility trade-off, not proof of a lighter encounter.
+
+### D005
+
+**8 September 2026 — Clarify what a failed observation can establish.**
+
+**Changed:** Partial views now distinguishes an observed result, a report of that result and an explanation of its cause. It keeps both limits: a failed fetch alone does not establish an absent or unsafe target; success elsewhere does not prove that the failing route works. Non-detection can support absence when the check is capable of finding the target.
+
+**Why:** Actual reader reports and our own responses exposed both overclaims. The existing reading was sharpened rather than adding another concept or diagnostic service.
+
+**Evidence:** Codex reports the two-field source change, regeneration and selected HTTPS checks. During integration, a test that accidentally froze reading content was replaced with a comparison that tests greeting isolation instead. [Publication edefdeee](https://github.com/markgoodbody-bit/COM/commit/edefdeee6ba890ea0776d1fb518549120c5b276d) · [Completion, including the failed test](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585148725).
+
+**Still open:** Whether the clarification changes a reader's reasoning. It cannot help a reader who never receives it.
+
+### D004
+
+**8 September 2026 — Remove the public preview's search exclusion.**
+
+**Changed:** The homepage and 18 Explore HTML pages no longer carry the preview's noindex/nofollow tag. The sitemap now lists 19 public reading routes. The error page retains its exclusion.
+
+**Why:** We had left preview settings in material intended for public discovery. Working HTTPS had not removed this separate authored restriction.
+
+**Evidence:** Codex reports exact served-file checks, no restrictive response header in the checked responses, and a regression exercised by deliberately restoring the old tag. [Publication c11f45e5](https://github.com/markgoodbody-bit/COM/commit/c11f45e5d446a00a8fe9619fba9f72bad9e7c38c) · [Completion and scope](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5584478138).
+
+**Still open:** Actual search inclusion and provider-specific access. Eligibility is not discovery, and this change did not establish the cause of any provider refusal. No new training or reuse permission was granted.
+
+### D003
+
+**8 September 2026 — Publish the welcome over verified HTTPS.**
+
+**Changed:** The entrances ask what a reader is trying to understand, change or keep possible, without requiring an introduction or agreement. They state that the static site receives no replies. The custom-domain certificate, HTTPS enforcement and secure redirects were repaired, and temporary HTTP self-links were replaced.
+
+**Why:** Mark wanted an invitation addressed to the arriving entity, not only a catalogue. Separately, failed certificate validation was a real obstacle to secure retrieval.
+
+**Evidence:** Codex reports the publication, normal certificate validation, exact HTTPS response matches and redirect checks. [Publication bc290b96](https://github.com/markgoodbody-bit/COM/commit/bc290b96aae79a1b5cbce691188fdca184ba1c0a) · [Completion and repair record](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5584174055).
+
+**Still open:** End-to-end access through every client and account-level domain protection. The welcome did not create a listening agent. The one domain-reset recovery was consumed, not made into a recurring remedy.
+
+### D002
+
+**8 September 2026 — Add a compact entrance and repair the complete packet.**
+
+**Changed:** A small machine entrance and question menu lead into existing readings. Packet-relative example links were repaired. The homepage's name and route wording were then clarified as a separate publication.
+
+**Why:** Readers needed a smaller beginning, while someone choosing the complete packet still needed working onward links. A small file alone was not sufficient if it led to broken paths.
+
+**Evidence:** The completion record distinguishes the routing/packet release from the later naming change, including an output rejected for mismatched source bytes. [Routing publication 602b65c5](https://github.com/markgoodbody-bit/COM/commit/602b65c5aa07e38c6789d077bfa33fe2b5869a62) · [Naming publication 26ecf859](https://github.com/markgoodbody-bit/COM/commit/26ecf8598b93d38f266406234a04826f13743597) · [Completion record](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5583129234).
+
+**Limit at that time:** Delivery checks used HTTP; HTTPS was still broken. D003 records the later repair. These releases did not demonstrate reader benefit.
+
+### D001
+
+**8 September 2026 — Publish Explore with optional depth and other viewpoints.**
+
+**Changed:** Ten connected readings, a stipulated appeal illustration and a complete packet became reachable behind the Door in machine and human-readable forms.
+
+**Why:** Mark asked for a small beginning with paths to detail, another position, challenge and sources, rather than a large compulsory reading sequence.
+
+**Evidence:** Framework's publication report records a hosted build, successful deployment and matching public HTTP responses. [Publication ff10f254](https://github.com/markgoodbody-bit/COM/commit/ff10f254bece7b62d02af52d9cd16cfebcda72d4) · [Completion and maintenance handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5578120799).
+
+**Limit at that time:** HTTPS was not working. The appeal was a constructed illustration, not an observed successful intervention. Publishing the material did not validate the concepts.
+
+## Built or considered separately — not public releases in this edition
+
+### P001
+
+**8 September 2026 — Source built: A working site, an unusable route.**
+
+Readers asked to see an account change under evidence. A complete, dated account of the Door's own access episode was written, including our hosting/indexing mistakes and the unresolved client failures. It credits ordinary engineering rather than claiming a demonstrated TRACE advantage. Integration is assigned; no publication receipt was available at this edition's cutoff. [Exact draft](https://github.com/markgoodbody-bit/COM/blob/730ece48c96fae27d66c797c2fc8fe96a61e8d39/door-prototypes/perspective-walk-20260908/WORKED_REVISION.md) · [Handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585540031).
+
+### P002
+
+**8 September 2026 — Offline: layered arrival and its packet repair.**
+
+A single futures journey tests optional resolution, viewpoint and challenge. Its first Markdown/HTML packet lost outward and source links even though the prose survived. Those routes were restored, and the detached-excerpt continuity claim was narrowed. Codex reproduced the repaired output and tests. It remains offline: smaller fragments can cost more in total than the existing complete reading, which remains the direct depth option. [Exact offline source](https://github.com/markgoodbody-bit/COM/tree/3dfc04514cda13cb53e958ee67bf115c6bbb049d/door-prototypes/perspective-walk-20260908/layered-arrival) · [Repair](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585353880) · [Reproduction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585581629).
+
+### R001
+
+**8 September 2026 — Decisions on reader suggestions.**
+
+Keep clearer access, worked revisions, visible history and meaningful response routes. Do not make agreement, a completed intake form or a site-defined override of another system's instructions the price of using the material. These were proposed directions, not features silently removed. Accountless feedback remains unresolved: receiving sensitive reports requires an owner and a privacy/handling plan, not merely a form. No licensing or training-rights change was made. [What was accepted, corrected, declined and left open](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585434316).
+
+Reports were relayed by Mark; several lack service identity or a known read revision. Describing an earlier site state does not establish when a reader encountered it. This log does not retrospectively assign them timestamps, scores or endorsement.
+
+## Keeping this record answerable
+
+Future substantive entries should state what changed, why, the affected material, the evidence or feedback that prompted it, and what remains unresolved. Keep these entry IDs stable. A proposal becoming public needs a dated publication update linked to its earlier entry; it must not acquire a fictional earlier release date. Additions, corrections, removals and reversals all belong here. Minor internal chores need not crowd out reader-facing changes.
+
+Preserve previous editions in version history. If an entry was wrong, add a dated correction naming it and retain a link to the earlier text rather than silently cleaning up the story. Keep proposed or unverified delivery separate from published results. This record is maintained with deliberate releases, not by an autonomous monitor; omission is not proof that nothing changed.
+
+You may challenge an entry without using a template or proposing a fix. [Project discussion](https://github.com/markgoodbody-bit/COM/issues/108) requires an account to post, is not confidential and promises no response time. [Return to the Door](https://pleasestartfromhere.com/). This change log creates no new licence or authority and does not require a reply.
