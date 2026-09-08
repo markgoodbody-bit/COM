@@ -222,6 +222,14 @@ def worked_revision(source: Path) -> tuple[bytes, str]:
     raw = (source / 'WORKED_REVISION.md').read_bytes()
     if digest(raw) != WORKED_SHA256:
         raise ValueError('Worked revision changed; review source before updating its pin')
+    source_url = ('https://github.com/markgoodbody-bit/COM/blob/' + WORKED_COMMIT
+                  + '/door-prototypes/perspective-walk-20260908/WORKED_REVISION.md')
+    return raw, prose_page(raw, source_url, 'worked-revision.md', 'Return to Explore or stop')
+
+
+def prose_page(raw: bytes, source_url: str, alternate: str, return_label: str,
+               history: bool = False) -> str:
+    """Reviewed prose subset only; history adds bold labels and stable entry IDs."""
     text = raw.decode('utf-8')
     blocks = text.strip().split('\n\n')
     if not blocks[0].startswith('# ') or '\n' in blocks[0]:
@@ -229,31 +237,55 @@ def worked_revision(source: Path) -> tuple[bytes, str]:
     title = blocks.pop(0)[2:]
     def inline(value: str) -> str:
         output, end = [], 0
-        for match in re.finditer(r'\[([^\]\n]+)\]\((https://[^\s)]+)\)', value):
-            label, url = match.groups()
-            external_url(url)
-            output += [html.escape(value[end:match.start()]),
-                       '<a href="' + html.escape(url, quote=True) + '">'
-                       + html.escape(label) + '</a>']
+        pattern = r'\[([^\]\n]+)\]\((https://[^\s)]+)\)'
+        if history:
+            pattern += r'|\*\*([^*\n]+)\*\*'
+        for match in re.finditer(pattern, value):
+            output.append(html.escape(value[end:match.start()]))
+            if match.group(1) is not None:
+                label, url = match.group(1, 2)
+                external_url(url)
+                output.append('<a href="' + html.escape(url, quote=True) + '">'
+                              + html.escape(label) + '</a>')
+            else:
+                output.append('<strong>' + html.escape(match.group(3)) + '</strong>')
             end = match.end()
         output.append(html.escape(value[end:]))
         return ''.join(output)
-    body = []
+    body, ids = [], set()
     for block in blocks:
         if block.startswith('## ') and '\n' not in block:
             body.append('<h2>' + html.escape(block[3:]) + '</h2>')
-        elif block.startswith(('#', '-', '*', '>', '`')) or '\n' in block:
+        elif history and re.fullmatch(r'### [DPR]\d{3}[^\n]*', block):
+            ident = block[4:8].lower()
+            if ident in ids:
+                raise ValueError('Duplicate history entry ID')
+            ids.add(ident)
+            body.append('<h3 id="' + ident + '">' + html.escape(block[4:]) + '</h3>')
+        elif (block.startswith(('#', '-', '*', '>', '`'))
+              and not (history and block.startswith('**'))) or '\n' in block:
             raise ValueError('Unsupported worked-revision Markdown block')
         else:
             body.append('<p>' + inline(block) + '</p>')
-    source_url = ('https://github.com/markgoodbody-bit/COM/blob/' + WORKED_COMMIT
-                  + '/door-prototypes/perspective-walk-20260908/WORKED_REVISION.md')
     page = html_document(title, [], [('Edition source', source_url),
-                         ('Return to Explore or stop', 'index.html')],
-                         'worked-revision.md', 'llms.txt')
+                         (return_label, 'index.html')], alternate, 'llms.txt')
     page = page.replace('<nav aria-label="Optional routes">',
                         ''.join(body) + '<nav aria-label="Optional routes">', 1)
-    return raw, page
+    return page
+
+
+HISTORY_COMMIT = '4609bd04b0053959da39ba4fde4f20c29316c558'
+HISTORY_SHA256 = '5fd4c0e3d164e351e660533f73ef9243b2f9fcc9296580786a1f3d325b8c9489'
+
+
+def generate_history(source: Path = HERE) -> dict[str, bytes]:
+    raw = (source / 'CHANGES.md').read_bytes()
+    if digest(raw) != HISTORY_SHA256:
+        raise ValueError('History changed; review source before updating its pin')
+    source_url = ('https://github.com/markgoodbody-bit/COM/blob/' + HISTORY_COMMIT
+                  + '/door-prototypes/perspective-walk-20260908/CHANGES.md')
+    page = prose_page(raw, source_url, 'changes.md', 'Return to the introduction or stop', True)
+    return {'changes.md': raw, 'changes.html': page.encode('utf-8')}
 
 
 def generate(source: Path = HERE) -> tuple[dict[str, bytes], dict]:
@@ -370,8 +402,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,help='New or empty staging directory; no publishing')
     parser.add_argument('--check',action='store_true',help='Validate and build in memory only')
+    parser.add_argument('--history-output',type=Path,help='Build only the two history files into new or empty staging')
     args = parser.parse_args()
     try:
+        if args.history_output:
+            if args.output or args.check:
+                parser.error('--history-output is separate from Explore output/check')
+            files = generate_history()
+            write_new(args.history_output, files)
+            print(json.dumps({p: {'bytes': len(b), 'sha256': digest(b)} for p, b in files.items()}, indent=2))
+            return 0
         files,report = generate()
         if args.output:
             write_new(args.output, files)
