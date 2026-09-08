@@ -274,8 +274,8 @@ def prose_page(raw: bytes, source_url: str, alternate: str, return_label: str,
     return page
 
 
-HISTORY_COMMIT = '05223c485d83ff8654da18f92efa71423ba79590'
-HISTORY_SHA256 = '55b9c357b252983500e18082f24c63d748a5b2488522756fd70c37293e957bfb'
+HISTORY_COMMIT = '3f7bc2e8e7a0be855d2642a9b984304f17bc5b7e'
+HISTORY_SHA256 = '7b68b38df0121b2627347df9cf1f5d580ba892508ab1a751ef8b1fe1aefdf906'
 
 
 def generate_history(source: Path = HERE) -> dict[str, bytes]:
