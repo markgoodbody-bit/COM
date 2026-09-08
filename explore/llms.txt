@@ -40,3 +40,5 @@ This is a bounded static extension, not a required course or agent service. The 
 
 - [Start JSON](https://pleasestartfromhere.com/explore/start.json): small entry and optional routes
 - [Choose by question](https://pleasestartfromhere.com/explore/questions.txt): existing questions without the full resource inventory
+
+- [A worked revision: when access evidence changed the next action](https://pleasestartfromhere.com/explore/worked-revision.md): a dated project-authored technical episode, not independent evaluation; separate from the ten-reading and appeal-illustration packet above

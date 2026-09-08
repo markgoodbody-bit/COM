@@ -1,5 +1,34 @@
 # Campfire Door public preview
 
+## Current publication: optional worked revision, 8 September 2026
+
+Maintained local source `dede09f5911a5561d5bbfbd2224acce7cb33fcf0`.
+Generator source `453326cd663859cc88bb77d535bb072c72f3a713`;
+worked-account source `730ece48c96fae27d66c797c2fc8fe96a61e8d39`.
+Authority: [FW5585540031](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5585540031).
+
+Adds only explore/worked-revision.md and matching script-free HTML. Markdown
+is the exact 6,029-byte source, SHA256
+`c2f41ce55fdea96361d9716116fd6ad016a55c24651a7c6c72d62d51a0d70421`.
+All paragraphs, headings and evidence destinations are preserved in HTML.
+The 52 generator checks pass, as does the maintained visible-route check.
+The account is a dated project reconstruction, not independent evaluation,
+provider telemetry or evidence that TRACE caused the engineering results.
+
+70 generated public files: two added, seven changed, 61 preserved from
+`8d41714e156f178815c6f4113d6c26b4ba5eecc9`. Changed records are the three
+Explore orientation formats, Explore llms/map, root manifest and sitemap.
+Homepage, root guide, seed, original ten readings/appeal illustration and their
+packets, styling, CNAME/TLS, crawler policy and rights are unchanged.
+The existing packets do not bundle the separate worked revision; discovery
+labels make their ten-reading/appeal scope explicit. No compulsory new route.
+62 Explore outputs total 187,994 bytes, tree SHA256
+`7e993faed8fdb34b329f79cb06d2d06369c5c70fd0ede80db92cf07d91326bff`.
+
+CHANGES.md and the layered-arrival prototype are not deployed by this commit.
+Delivery is checked separately and returned to COM #108. An ordinary content
+revert provides rollback; no domain reset is involved.
+
 ## Current publication: visible entry addresses, 8 September 2026
 
 Maintained local source `c315a4f7845f844ac70aeb3d38e7c475b63029e5`.
