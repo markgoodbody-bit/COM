@@ -92,7 +92,8 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('not published', self.text)
         self.assertRegex(self.text, r'(You can|If it helps,) read this yourself,? or hand this address to an AI')
         self.assertIn('No special prompt is required.', self.text)
-        self.assertLess(self.text.index('Another perspective'), self.text.index('Something is happening'))
+        self.assertLess(self.text.index('I am only curious'), self.text.index('Another perspective'))
+        self.assertLess(self.text.index('Another perspective'), self.text.index('This is a stated value choice'))
         self.assertIn('https://pleasestartfromhere.com/', self.page.links)
 
     def test_optional_small_loop_after_movements_and_in_machine_reading(self):
