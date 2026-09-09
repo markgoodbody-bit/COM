@@ -4,14 +4,12 @@ import {readFile, readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {createPreviewServer} from './serve.mjs';
-import {WORKS} from './works.mjs';
 
 const pins = {
   'favicon.svg': 'b2b950c89165e9c483853e608312f341ceceadb5c05958fd0be4ed77e9b9bd70',
   'favicon.ico': '2e7f27bab62301c5d5d27bf6802faf28753623a228c83abe4f66e5e80731a70e',
   'favicon-LICENSE.txt': '2d0c0cfe9630fcbf019e48b11349d220970e86a38fe05f06854321ee237d56b9',
 };
-const baseline = '965687ee60552e11e25e5c9f797edc7f8b947dcd';
 const publishing = process.env.PSFH_PUBLISHED_CHECKOUT || 'C:/Users/markg/Downloads/DEV/campfire-door-pages';
 const header = '<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">';
 
@@ -32,59 +30,38 @@ test('favicon assets, legacy sizes and source notice have exact identities', asy
   });
 });
 
-test('favicon boundary survives the explicitly bounded Works addition', async () => {
-  let checked=0;
-  async function walk(dir,prefix='') {
-    for (const item of await readdir(dir,{withFileTypes:true})) {
-      const file=prefix+item.name;
-      if(item.isDirectory()){await walk(dir+'/'+item.name,file+'/');continue;}
-      if(file in pins)continue;
-      if (Object.hasOwn(WORKS.files, file)) {
-        const bytes = await readFile('out/' + file);
-        assert.equal(bytes.length, WORKS.files[file].bytes);
-        assert.equal(createHash('sha256').update(bytes).digest('hex'), WORKS.files[file].sha256);
-        continue;
-      }
-      const before=execFileSync('git',['show',baseline+':'+file],{cwd:publishing,maxBuffer:20*1024*1024});
-      let actual=await readFile('out/'+file);
-      if (file === 'sitemap.xml') {
-        const entries = [...actual.toString().matchAll(/^  <url><loc>https:\/\/pleasestartfromhere\.com\/works\/[^<]*<\/loc><\/url>\n/gm)].map(match => match[0]);
-        const routes = ['works/', 'works/harriet-powers/', 'works/johannes-vermeer/', 'works/anna-atkins/', 'works/shen-zhou/', 'works/edmonia-lewis/'];
-        assert.deepEqual(entries, routes.map(route => '  <url><loc>https://pleasestartfromhere.com/' + route + '</loc></url>\n'));
-        for (const entry of entries) actual = Buffer.from(actual.toString().replace(entry, ''));
-      }
-      if(file==='index.html'){
-        const text=actual.toString();
-        assert.equal(text.split(header).length,2);
-        assert.ok(text.indexOf(header)<text.indexOf('</head>'));
-        const worksLink = '<a href="/works/">Works</a>';
-        assert.equal(text.split(worksLink).length, 2);
-        actual=Buffer.from(text.replace(header,'').replace(worksLink,''));
-      }
-      if (file === 'manifest.json') {
-        const map = JSON.parse(actual);
-        assert.equal(map.routes.optional_human_art, '/works/');
-        assert.deepEqual(map.provenance.optional_human_art, {
-          source_review: 'dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175', optional: true,
-          scope: 'Five selected works, not a ranking or representative survey. No required traversal or report-back; not evidence for TRACE or Mechanical Ethics.',
-        });
-        delete map.routes.optional_human_art;
-        delete map.provenance.optional_human_art;
-        const oldMap = JSON.parse(before);
+test('human foyer changes only homepage, shared CSS and its manifest hash', async () => {
+  const published = 'aed75526770de9a7c9a2aa7cef63f1167dad1669';
+  let checked = 0, changed = [];
+  async function walk(dir, prefix = '') {
+    for (const item of await readdir(dir, {withFileTypes: true})) {
+      const file = prefix + item.name;
+      if (item.isDirectory()) { await walk(dir + '/' + item.name, file + '/'); continue; }
+      const before = execFileSync('git', ['show', published + ':' + file], {cwd: publishing, maxBuffer: 20*1024*1024});
+      const actual = await readFile('out/' + file);
+      if (!actual.equals(before)) changed.push(file);
+      if (file === 'index.html') {
+        const html = actual.toString();
+        assert.equal(html.split(header).length, 2);
+        assert.ok(html.indexOf(header) < html.indexOf('</head>'));
+        assert.match(html, /<a class="map-bypass" href="\/explore\/">Just give me the map/);
+        assert.match(html, /<h1>Please Start From <em>Here<\/em><\/h1>/);
+        // Paragraph/link retention and optional-door behaviour have separate
+        // fixed-delta and browser checks, not a blanket content exemption.
+      } else if (file === 'style.css') {
+        assert.equal(actual.toString(), await readFile('app/globals.css', 'utf8'));
+      } else if (file === 'manifest.json') {
+        const map = JSON.parse(actual), oldMap = JSON.parse(before);
         assert.equal(map.provenance.presentation.stylesheet_sha256, createHash('sha256').update(await readFile('out/style.css')).digest('hex'));
         map.provenance.presentation.stylesheet_sha256 = oldMap.provenance.presentation.stylesheet_sha256;
-        actual = Buffer.from(JSON.stringify(map, null, 2) + '\n');
-      }
-      if (file === 'style.css') {
-        const oldRule = '.masthead nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; width: 100%; }';
-        const newRule = '.masthead nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: 0 1.5rem; width: 100%; }';
-        assert.equal(actual.toString().split(newRule).length, 2);
-        actual = Buffer.from(actual.toString().replace(newRule, oldRule));
-      }
-      assert.deepEqual(actual,before,file);checked++;
+        assert.deepEqual(map, oldMap);
+      } else assert.deepEqual(actual, before, file);
+      checked++;
     }
   }
-  await walk('out');assert.equal(checked,115);
+  await walk('out');
+  assert.equal(checked, 154);
+  assert.deepEqual(changed.sort(), ['index.html', 'manifest.json', 'style.css']);
 });
 
 test('preview serves SVG and ICO with their image MIME types', async () => {

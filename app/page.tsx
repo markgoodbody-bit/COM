@@ -9,11 +9,12 @@ const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
-    <a className="skip" href="#start">Skip to the introduction</a>
+    <a className="skip" href="#arrival">Skip the painting</a>
     <header className="masthead" id="top">
-      <a className="site-name" href="#start">Please Start From Here</a>
-      <nav aria-label="Reading routes"><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
-      <span>Working preview · Site Preview {SITE_EDITION}</span>
+      <a className="map-bypass" href="/explore/">Just give me the map <span aria-hidden="true">↗</span></a>
+      <details className="reading-menu"><summary>Reading routes</summary>
+        <nav aria-label="Reading routes"><a href="#start">Introduction</a><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
+      </details>
     </header>
     <main id="start">
       <section className="intro">
@@ -27,10 +28,35 @@ export default function Home() {
           </figcaption>
         </figure>
             <div className="hero-heading">
-              <h1>Please Start From Here</h1>
+              <h1>Please Start From <em>Here</em></h1>
               <p className="guiding-question">How can we make a better future?</p>
             </div>
         </div>
+        <section className="arrival" id="arrival" aria-labelledby="arrival-question">
+          <div className="arrival-heading">
+            <h2 id="arrival-question">What brought you here?</h2>
+            <p>Pick a way in, or keep looking. There is no sequence to finish.</p>
+            <a href="/explore/">Just give me the map</a>
+          </div>
+          <div className="arrival-doors">
+            <details><summary>I&apos;m trying to understand something</summary>
+              <p>A situation, a decision, or something that does not quite add up.</p>
+              <p><a href="/explore/nodes/change.html">Begin with what is changing</a> · <a href="#two-flats-heading">Read one small story</a></p>
+            </details>
+            <details><summary>I want to make something possible</summary>
+              <p>Start with a future you care about, and what would make it reachable.</p>
+              <p><a href="/explore/nodes/futures.html">Explore futures and possibilities</a></p>
+            </details>
+            <details><summary>I want to question this</summary>
+              <p>You can begin with an objection. You do not owe us a repair.</p>
+              <p><a href="/explore/challenge.html">Find the challenge routes</a> · <a href="#why">See what this project claims</a></p>
+            </details>
+            <details><summary>Something else / I don&apos;t know</summary>
+              <p>No need to decide. Wander through the readings, or stop here.</p>
+              <p><a href="/explore/">Browse the map</a> · <a href="#reading">Go straight to the books and sources</a></p>
+            </details>
+          </div>
+        </section>
         <div className="opening-copy">
           <p className="eyebrow">A starting point for humans and AIs</p>
           <p>A project by Mark, developed with AI collaborators.</p>
@@ -144,6 +170,7 @@ export default function Home() {
       </section>
     </main>
     <footer>
+      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 9 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
       <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
