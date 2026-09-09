@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: `coordination/ACTIVE_THREAD_POINTER.md` at commit `d1c6475352ea22d188a46fa7443475a049cc8b84`; COM #108/#118/#119 live returns through the basis recorded there. Later live source takes precedence.
+Basis: `coordination/ACTIVE_THREAD_POINTER.md` at commit `52b9960d5cdf22426c3ae4577af94431dbc313f0`. Later live source takes precedence.
 
 Mark remains human originator, witness and consequential release/account/external-contact authority. Framework runtime identity is episodic: `ROLE_CONTINUITY != RUNTIME_IDENTITY`.
 
@@ -47,24 +47,30 @@ Do not turn PSFH into a course, conversion funnel, identity diagnostic, authorit
 
 Public remains Preview 0.8.3 at `589514fff41d0a65315377093089838026bbd1ec`.
 
-Maintained source is unpublished `b16c7e6f554efb5cb342f60c8644d9ae23a7995c`. Visual direction is accepted: Homer full-frame; title high-left in canopy; people/fire clear; provenance below/right; soft feathered scrim rather than hard card; separate title row when needed. Publication is held for two small earned repairs: use pinned1440 as ordinary visual fallback rather than museum master, and execute meaningful enlarged-text/zoom/reflow evidence. Codex owns integration/publication; CC reviews exact successor.
+Maintained source is unpublished `60f6886542bb5c290180e989eb1bbdfa6acad11a`. Visual direction is accepted: Homer full-frame; title high-left in canopy; people/fire clear; provenance below/right; soft feathered scrim rather than hard card; separate title row when needed. Pinned1440 is now the ordinary visual fallback and museum master remains provenance-linked. Remaining gate is meaningful enlarged-text/zoom/reflow evidence + visual backing-weight judgement + CC exact-source review. Codex owns integration/publication.
 
 No AI-generated art on the live site. Human provenance remains first-class.
 
 ### Desktop flashing watch task
 
-Mark reports a console flash about every two minutes. Likely but not yet proven source: installed `Campfire Local Service Watch`.
+Mark reports a console flash about every two minutes. Installed task already includes `-WindowStyle Hidden`; direct `powershell.exe` console hosting is the likely cause, not missing flags.
 
-Framework built source-only campfire-relay draft PR #213 at `824a7bb87a20970b6e919ebe707fe6fa933bed12`, based exactly on PR209 head `0d87ae2`. It changes only process hosting: GUI-subsystem `wscript.exe` -> audited VBS -> same PowerShell watcher, hidden, wait-for-return, exit-code preserved. No cadence/principal/SYSTEM/S4U/credential/semantics change.
+Single current candidate is Codex branch `codex/watch-hidden-launch-20260909` at `fabb5b0bcc205a3ec10baca97bad7a06af33cc40`, review PR #214. Framework's earlier PR213 is closed unmerged as superseded.
 
-Local operator must inspect/export actual task(s), establish correlation, then apply only if earned and observe at least two due intervals. Host evidence, not source prose, settles whether the flash is gone.
+Candidate uses GUI-subsystem `wscript.exe` + audited `Launch-WatchHidden.vbs`, synchronously launching the same watcher hidden and propagating child exit status. Actual harmless host probe propagated exit37; invalid inputs fail closed. `conhost --headless` swallowed the child failure code and is rejected for this task.
+
+CC accepts wait-and-propagate shape; exact PR214 review still owes Task Scheduler descendant-timeout/security-context check. After KEEP/nonblocking review, Codex may make action-only local update after XML backup while preserving current InteractiveToken/Limited principal, trigger, cadence and settings. Observe natural due intervals and report whether Mark's flash stops, task result, `last_run_utc`, service health and rollback.
 
 `WATCHDOG_RUN != DESKTOP_INTERRUPTION`  
-`SOURCE_SAYS_HIDDEN != HOST_SHOWS_NO_WINDOW`
+`HIDDEN != HEALTHY`  
+`WAIT_AND_PROPAGATE != FIRE_AND_FORGET`
 
 ### Speech supervisor
 
-Separate from the scheduled-task flash. CC has reported five worker restarts and established an unsafe decision shape where one unreadable heartbeat can collapse into restart. Pure transition fixture `0d87ae2` distinguishes transient unreadability, loss-after-valid, never-started, genuine stale age and persistent mismatch. Grace values remain ungrounded. Codex owes independent host/source/ledger reacquisition and one local mitigation or NULL. Local-only repair is authorised only after convergence and exact identity; no fault injection or Production move.
+Separate from scheduled-task flash. Five worker restart transitions have been reread; cause/outage remain unknown. Codex independently rejects current CC transition fixture `0d87ae2` for application: wrong 45s-vs120s boundary, cause labels not actually tested, premises not asserted, and `last_valid` semantics differ from the claim. The adverse installed decision shape remains real, but successor is NULL. Repair fixture later; no current application/fault injection/Production move.
+
+`ADVERSE_INSTALLED_SHAPE != VALID_SUCCESSOR`  
+`NULL > UNGROUNDED_REPAIR`
 
 ### Guestbook
 
@@ -76,7 +82,7 @@ Next build is representation only: non-public human HTML + boring machine export
 
 Do not manufacture a claim for the homepage. Public statement that practical advantage is unproven remains correct.
 
-First empirical candidate is now narrow detection, not global decision quality: correction-window questions may surface irreversibility points that a matched generic structured-risk prompt misses.
+First empirical candidate is narrow detection: correction-window questions may surface irreversibility points that a matched generic structured-risk prompt misses.
 
 Phase0 must establish whether independent reference sets of irreversibility points can be made reliable at all. If not, stop with NULL before recruitment/spend. If Phase0 survives, compare recall + precision/inflation and separately preserve `AVAILABLE != USED != HELPFUL`. No private chain-of-thought requirement.
 
