@@ -9,21 +9,6 @@ const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
-    <style>{`
-      .concrete-story { margin-block: 2.5rem 3rem; padding-block: clamp(2rem, 4vw, 3.5rem); border-block: 1px solid var(--border); display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); column-gap: clamp(2rem, 5vw, 5rem); }
-      .concrete-story header { grid-row: 1 / 6; }
-      .concrete-story header h2 { margin-top: .35rem; max-width: 12ch; }
-      .concrete-story .story-body { grid-column: 2; }
-      .concrete-story .story-lead { font: 400 clamp(1.2rem, 2vw, 1.45rem)/1.55 var(--serif); }
-      .concrete-story .story-questions { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
-      .concrete-story .story-source { margin-top: 1.25rem; color: var(--muted); font-size: .9375rem; }
-      .technical-handoff { color: var(--muted); font-size: .9375rem; }
-      @media (max-width: 48rem) {
-        .concrete-story { grid-template-columns: 1fr; }
-        .concrete-story header { grid-row: auto; }
-        .concrete-story .story-body { grid-column: 1; }
-      }
-    `}</style>
     <a className="skip" href="#start">Skip to the introduction</a>
     <header className="masthead" id="top">
       <a className="site-name" href="#start">Please Start From Here</a>
