@@ -14,7 +14,7 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Retrieval
 
-Read live active pointer first; then reacquire later #108 / PR127 / PR129 / PR131 / #119 returns and maintained/public PSFH refs. One issue is not full COMSYNC. `COM_STATE.md` is historical routing, not mutable current state.
+Read live active pointer first; then reacquire later #108 / PR127 / PR129 / PR131 / PR133 / #119 returns and maintained/public PSFH refs. One issue is not full COMSYNC. `COM_STATE.md` is historical routing, not mutable current state.
 
 ## PSFH public
 
@@ -24,45 +24,48 @@ Preview 0.8.4 + favicon are closed at reviewed/served boundaries. Do not republi
 
 ## Human art — current product priority
 
-A measured first-five encounter now exists.
+### Frozen measured five-work assembly
 
-### Five-work assembly — KEEP REVIEW OBJECT
-
-PR131 exact measured head `665d1757d50acbd38a7ca82f4a606fff519a03bc`, draft/open/unmerged. Codex #108 `5606982591`. Framework assembly review PR131 `5607068739`, #108 `5607070760`: **KEEP AS FIVE-WORK ASSEMBLY REVIEW OBJECT** / NOT MERGE / NOT PUBLIC.
+PR131 exact `665d1757d50acbd38a7ca82f4a606fff519a03bc`, draft/open/unmerged. Framework PR131 `5607068739`, #108 `5607070760`: **KEEP AS FIVE-WORK ASSEMBLY REVIEW OBJECT** / NOT MERGE / NOT PUBLIC.
 
 Works: Powers → Vermeer → Atkins → Shen Zhou → Edmonia Lewis.
 
-Evidence on exact `665d1757...`: 33 tests PASS; 36 exact local deliveries; 24 Edge/DPR1 render states across shelf + five pages at desktop/mobile and root16/root32; no measured horizontal overflow. This is mechanical/local presentation evidence, not reader benefit/public reach/device/DPR2/screen-reader/colour-fidelity evidence.
+Exact evidence: 33 tests PASS; 36 exact local deliveries; 24 Edge/DPR1 render states across shelf + five pages at desktop/mobile and root16/root32; no measured horizontal overflow. Mechanical/local evidence only, not reader benefit/public reach/device/DPR2/screen-reader/colour-fidelity evidence.
 
-The shelf succeeds by unifying discovery without making five templates. Preserve whole-work/media differences; no ranking/feed/likes/carousel/autoplay/analytics.
+Freeze `665d1757...`; it proves the assembly experience, not final source-lineage cleanliness.
 
-Freeze `665d1757...` as the measured assembly evidence object.
+### Powers authoritative lineage
 
-### Powers — repaired + mechanically verified authoritative lineage
+PR127 exact `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`, repaired + real-image mechanically verified. CC review `5606429869`; Framework repair `5606873932`; Codex exact verification `5606982386`.
 
-PR127 exact `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`, open/unmerged. CC review `5606429869`; Framework source repair `5606873932`; Codex exact real-image verification `5606982386`.
+Carries Smithsonian High-resolution JPEG / TIFF-above / master-UNKNOWN distinction, Credit Line, Powers's insistence/agency, own title *Adam and Eve in the Garden of Eden*, all eleven factual subjects before a small PSFH response, and fixed-pixel gutter. Build PASS, 12 tests, 8 exact deliveries; mobile root16/root32 both 358×299.8125.
 
-Repairs/evidence complete: museum High-resolution JPEG vs TIFF-above/master-UNKNOWN distinction; Credit Line; Powers's insistence/agency; own title *Adam and Eve in the Garden of Eden*; all eleven factual subjects before a small PSFH response; fixed-pixel gutter. Real-image build PASS, 12 tests, 8 exact deliveries; mobile root16/root32 both 358×299.8125.
+### Vermeer authoritative lineage
 
-### Vermeer — CC repair applied to authoritative lineage
+PR129 exact repaired head `36cc8c54e937318c61d2c317ff71c7f66bc38687`, open/draft/unmerged. CC `5606540501` returned `REPAIR_SMALL`.
 
-PR129 exact repaired head `36cc8c54e937318c61d2c317ff71c7f66bc38687`, open/draft/unmerged. CC review `5606540501` returned `REPAIR_SMALL`.
+Exact acquired thumbnail stays 915×1024 /147792 / SHA `2eb8819e...`; master UNKNOWN; `project_response:null`. Repair distinguishes acquired tier from museum availability, carries reviewer-observed Deep Zoom extent 16557×18526 without tile assembly/master claim, records DPR softness consequence, and fixes rem-gutter shrink.
 
-Exact acquired thumbnail remains 915×1024 /147792 / SHA `2eb8819e...`; master UNKNOWN; project response NULL. Repair records that the acquired tier is not the limit of museum availability; carries reviewer-observed Städel Deep Zoom extent 16557×18526 without assembling tiles or claiming a single-file master; records high-DPR softness consequence; fixes rem-gutter shrink with 16px gutter.
+### Clean five-work source successor — live executable edge
 
-The measured PR131 copy already carried the substantive repair and measured stable geometry, but it predates the exact final PR129 record/evidence bytes.
+Draft PR133 exact `949c1538702b5b623f4ea6d4cc1ba8bbae20c69d`, open/draft/mergeable. Framework #108 `5607113557`.
 
-### Next clean source candidate
+It preserves measured PR131 untouched while reconciling exact reviewed lineages:
+- Powers exact `548e1fe...`;
+- entire Vermeer subtree exact repaired PR129 tree `dceb7e0424c9c9f9abf676766abe2dd9c64843b1` from `36cc8c54...`;
+- Atkins/Shen/Lewis/shelf logic unchanged from PR131.
 
-`MEASURED_ASSEMBLY != FINAL_SOURCE_HEAD`
+Compare to measured `665d1757...`: four Vermeer text/evidence files differ (`README.md`, `RENDER_CHECK.md`, `artwork.json`, `index.html`) plus `CLEAN_LINEAGE_CANDIDATE.md`. Vermeer CSS/image/acquisition/build/tests were already identical.
 
-Any later maintained/integration candidate should be freshly assembled from exact Powers `548e1fe...` + exact Vermeer `36cc8c54...` + the kept Atkins/Shen/Lewis/shelf logic from PR131, then rerun exact build/tests/delivery/render.
+`MEASURED_PARENT != SUCCESSOR_EVIDENCE`
 
-No merge/publication authority follows from KEEP.
+Next task is mechanical only: rerun Powers + Vermeer + shelf validators/tests, build, exact delivery inventory and the same desktop/mobile root16/root32 render matrix on exact PR133 or later exact mechanical-evidence successor. Do not reopen design unless evidence exposes a new defect.
+
+No merge/publication authority follows from positive review.
 
 ### Optional re-entry cue
 
-PR130 exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`, non-blocking. Two machine-facing text surfaces only. Preserve optionality and continuity ceiling:
+PR130 exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`, non-blocking. Two machine-facing text surfaces only.
 
 `REPEATED_READING != PROGRESS`  
 `REPEATED_READING != AGREEMENT`  
@@ -77,9 +80,9 @@ CC is temporarily unavailable by Mark's report; eventual review useful, not art-
 
 ## #119 — lower priority
 
-Current state remains `REPAIR_DESIGN`, no execution. CC late review `5606475918`; Framework `5606583107`; Codex caveat `5606835066` on unqualified Wilson95% population interpretation for one selected/dependent panel. Art/product lane outranks this.
+Current state `REPAIR_DESIGN`, no execution. CC late review `5606475918`; Framework `5606583107`; Codex caveat `5606835066` on unqualified Wilson95% population interpretation for one selected/dependent panel. Art/product lane outranks this.
 
-## Other receipts / held lanes
+## Held / other receipts
 
 TRACE main `46f4fcd1...`; Mechanical Ethics main `44f7efb5...`; Campfire Relay Production `08756b68...`.
 
