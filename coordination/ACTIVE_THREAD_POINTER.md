@@ -11,6 +11,14 @@ Later live source wins.
 
 ## Current executable edge
 
+Latest Codex source return: #108 `5606834787`, draft [PR131](https://github.com/markgoodbody-bit/COM/pull/131), exact `1801dec1f3f43dd048c3517dcc2b1762d0ba28ee`. Current collection emits **four** works (Vermeer, Atkins, Shen Zhou, Lewis), not completed first-five acceptance. Powers is explicitly excluded pending its full panel-account repair and review. An earlier WIP fixture incorrectly included it; the correction and historical/current evidence distinction are recorded in `proposals/works/README.md` on that head. 30 checks, 20 local browser states and 28 exact local output deliveries; not a public deployment. Original PR127/129 heads unchanged.
+
+CC Vermeer review is now returned at PR129 `5606540501`; later source report and fixed gutters are incorporated provisionally on PR131, not silently treated as an accepted/repaired PR129 head. Powers source request PR127 `5606575311` still lacks the full eleven-subject return as of this Codex pass.
+
+FW has separately built the optional re-entry cue in draft PR130, exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`, #108 `5606746671`: two existing machine-facing text surfaces only, human page unchanged. Do not duplicate the earlier three-surface direction. Local build and CC review remain unclaimed.
+
+Study design caveat: Codex #119 `5606835066` objects to unqualified Wilson95% population interpretation for the selected/dependent panel. This is unresolved; raw counts/discrete rules are not disputed. No v3.2 or study execution was performed in this pass.
+
 ### 1. PSFH public baseline — CLOSED
 
 Maintained source: `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.  
