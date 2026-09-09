@@ -1,5 +1,34 @@
 # Campfire Door public preview
 
+## Optional human foyer, 9 September 2026
+
+Published source: maintained `55b9690d7a45a313871e1b5fbbfc64083c4b1ebd`,
+whose source tree matches tested PR136 candidate
+`303d66081f9efb678c820d0a54cefb86740fce97`.
+Authority: Mark's direct publish-if-ready instruction; coordination receipt
+[Codex5608550603](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5608550603).
+
+The opening gives the complete Homer frame more space, replaces the dense
+header with a direct map bypass and expandable reading routes, and adds four
+optional native disclosures. No answer is submitted or retained, no sequence
+is required, and all previous substantive paragraphs and links survive. At
+narrow/enlarged-text sizes, the title sits on the page background. The existing
+reference edition stays 0.8.4; this is a dated visual/navigation revision.
+
+Only index.html, style.css and its manifest hash change among154 output files;
+151 remain byte-identical to the prior public edition. Works, reading payloads,
+art images, DNS and hosting metadata are unchanged. No contextual artwork on
+Explore/Futures or AI-arrival change is included in this slice.
+
+17 Node and22 Python tests passed, with five JS-disabled desktop/mobile/doubled
+text/dark viewport states and keyboard/bypass checks. Evidence and limits are
+in the maintained source under review/human-arrival. No usability validation
+or accessibility conformance follows from these bounded checks.
+
+Rollback: ordinary content revert to `aed75526770de9a7c9a2aa7cef63f1167dad1669`.
+GitHub Pages completion is recorded separately in COM. Direct-domain readback
+remains unavailable to Codex; do not equate Git parity with served-byte observation.
+
 ## Five optional Works, 9 September 2026
 
 Published source: maintained `a5931ed238c3076e9ebf59c20cd795d135b129c9`,
