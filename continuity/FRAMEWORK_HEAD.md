@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: live `coordination/ACTIVE_THREAD_POINTER.md` and COM main `dc82e53ef5461ffcf34decbf327622a51822287f`; later source wins.
+Basis: live `coordination/ACTIVE_THREAD_POINTER.md`; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -21,72 +21,97 @@ TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, guestboo
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from #108/#118/#119 and PR #123 plus art acquisition evidence.
-3. Reacquire maintained/public heads before mutation.
-4. Do not assume one-thread COMSYNC is complete; discover recently active surfaces and preserve the blind region.
+2. Reacquire later returns from #108 and #119 plus any Powers source candidate.
+3. Reacquire maintained/public PSFH heads before mutation.
+4. Discover recently active COM/PR surfaces; one-thread COMSYNC is not assumed complete.
+5. Do not replay large cold carriers unless a current decision needs a named slice.
 
 ## Current consequential state
 
-### Public PSFH / Homer
+### Public PSFH
 
-Homer presentation deployed and independently checked:
-`gh-pages dd06d95cb880208b30f703c54af33c2440c97812`; Pages run `34360186077` SUCCESS.
+Current public `gh-pages` is still the reviewed Homer presentation:
+`dd06d95cb880208b30f703c54af33c2440c97812`; Pages run `34360186077` SUCCESS.
 
-Actual reviewed `<img src>` fallback is pinned1440;55% feather + fallback both shipped; museum original remains separately served/linked provenance. Do not repeat publication.
+Do not repeat it. Actual ordinary image fallback is pinned1440;55% feather and fallback both shipped; museum original remains separately served/linked provenance.
 
-Maintained PSFH source is `7a5a50dbe81574a246236f5762830112445bbaec` after source-only PR125 merge. Those seed/llms changes are not yet public.
+### Maintained human Door
 
-### PR #123 — concrete-first human Door
+Concrete-first PR123 is **closed and integrated**, not pending.
 
-Draft/non-public exact head `f8b84ec4e1e49cd24c018ba0b7fc7888a555a554`.
+CC final closure `5604467485`: all four findings closed; no further blocking content objection.
 
-Product bytes unchanged from `3f2132f`: source-labelled `Two flats, one wall` ME composite; authority-vs-reference-number mechanism; three human entrances; no-demand sentence; read-only/no-reply ceiling; quieter but direct machine/text routes; prototype CSS moved into `globals.css`.
+Maintained branch `codex/door-maintained-source-20260908` is:
+`d28121c7fca9d064226670fc568dad57073c836c`.
 
-Codex test-only successor is mechanically earned:
-- build PASS;
--22/22 Python PASS;
--11/11 Node PASS incl115 local deliveries;
-- all115 generated outputs byte-identical to pre-test product;
-- fixed committed editorial-delta fixture, not generated from page under test;
-- negative controls prove unlisted deletion/addition still fail;
-- historical links and intended three-card/ceiling/no-demand/route contract remain enforced.
+Its two reviewed parents preserve:
+- PR125 machine-text repairs (`7a5a50db...`):1023-byte seed includes `Not a release or canon.` and final two llms Explore links are absolute;
+- concrete-first human product/test successor (`f8b84ec4...`): Homer -> labelled ME composite `Two flats, one wall` -> three human movements, with no-demand and read-only/no-reply ceilings retained.
 
-Framework KEEP comment `5604006934`. Waiting only on CC's narrow closure of its four prior content/style findings. No merge/publication before that return.
+Product/test evidence at f8b84ec4: build PASS;22/22 Python;11/11 Node incl115 deliveries; fixed editorial-delta fixture with negative controls; no generated product-byte change from the final product head.
+
+`SOURCE_INTEGRATED != PUBLIC_DEPLOYED`
+
+### Preview 0.8.4 release candidate
+
+Framework selected next candidate:
+- site Preview **0.8.4**;
+- Reader change log **Edition0.11 / D015**;
+- D015: **A concrete story before the abstractions.**
+
+Exact source-only RC branch:
+`codex/psfh-preview084-rc-20260909`
+head `3f7803d27c3615d81ede643f153dc2ec20270e01`, direct parent d28121c7.
+
+Framework source read = KEEP. Delta contains release/change metadata and test/pin updates only; no page.tsx, CSS, artwork bytes, Explore content, discussion content, TRACE/ME resource, guestbook or Powers file. D015 labels itself candidate/not receipt and clarifies the historical D014 fallback error without rewriting D014 or calling predecessor Homer changes new0.8.4 work.
+
+Framework asked CC for exact metadata/bundle review in #108 `5604699949`; Codex still owes full build/test/generated-output comparison against public dd06d95. **No gh-pages push until both receipts.**
+
+`RC_COMMITTED != RC_TESTED`
+
+### Harriet Powers art
+
+Exact acquired Smithsonian IDS source image is accepted as a **Smithsonian-delivered source image**, not a museum master:
+- `https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984`
+- JPEG2880x2412 RGB
+-2,671,829 bytes
+- SHA256 `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`.
+
+Prior3000x2512 advertisement is not these bytes. `MUSEUM_MASTER_STATUS = UNKNOWN` stays visible.
+
+Framework independently reacquired NMAH/Smithsonian authoritative public-domain/CC0 evidence and the museum account that Powers explained each of the eleven panels before transfer. Evidence repaired at COM `3d4316b0222ff93da110637d8a85178c201f711f`.
+
+Codex may now prepare source-bound720/1440 derivatives, provenance record/checks and one optional work-page / Explore-linked candidate: textile first, maker/source account before separately labelled PSFH response. No public wiring yet.
+
+`ACQUIRED_SOURCE_IMAGE != MUSEUM_MASTER`  
+`CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
+
+Vermeer remains `ASSET_BLOCKED` for a documented full-source path. Do not promote its thumbnail or guess image variants.
 
 ### Guestbook
 
-Representation stage CLOSED. Exact repaired PR124 passed17/17 and CC closed visitor-heading/trust promotion. Six isolated synthetic experiment files merged to COM main as `75f80f4ce5340817649eefbcf4f0b53d7dec713e`.
+Representation stage complete and preserved in COM main (`75f80f4c...`). #118 disposition: **HOLD_INTAKE**. No form/backend/provider/real guest data/public route.
 
-#118 disposition after closure: **HOLD_INTAKE** (`5603978458`). Representation earned; custody/moderation/removal/retention/provider-log/abuse/cost/operator obligations are not. No form/backend/provider/credentials/real guest data/public route.
+### #119 Phase 0
 
-`REPRESENTATION_EARNED != INTAKE_EARNED`
+Practical advantage remains unproven; no study has run.
 
-### Human art
+CC attack `5604611092` produced six accepted findings. Framework integration #119 `5604662238` keeps design **NOT READY FOR STAGE A**.
 
-Vermeer full-master acquisition remains `ASSET_BLOCKED` on the available documented route; do not promote Städel `thumb-xl` or guess variants.
+Before Stage A can be frozen:
+- freeze an interpretable builder population/recruitment/background rule; Framework currently prefers human reference builders over model/project-AI builders, but exact criteria remain UNSET;
+- freeze development-account budget and maximum rule-revision rounds;
+- later freeze Stage-B holdout N;
+- retain `CAP_HIT` flag;
+- matcher can record `GRANULARITY_MISMATCH` without accepting it as a family edge;
+- report raw and source-eligible family coverage separately;
+- zero eligible denominator remains `UNDEFINED`.
 
-Harriet Powers source-only acquisition is released **now** in parallel with PR123 editorial closure (#108 `5604056609`): exact Smithsonian image id `NMAH-75-2984`, official documented service. Codex/local operator may preserve exact master URL/bytes/MIME/dimensions/size/SHA256/rights, prepare source-bound720/1440 copies and one source-only presentation. No public wiring yet. Framework's own binary transport still fails on the official service; this is a transport limit, not asset absence.
-
-`HOMER_DEPLOYED -> VERMEER_ASSET_BLOCKED -> POWERS_ACQUISITION_PROOF`
-
-### #119
-
-No study has run; practical advantage remains unproven. V2 remains stable target `8372ca1fe703a193255b84487410f289498669c0`.
-
-Framework accepted Codex's three freeze clarifications in #119 `5604017538` without editing v2 so CC can attack one stable object plus explicit delta:
-- raw extraction class/counts != eligible scoring counts; zero eligible denominator => coverage UNDEFINED;
-- `SOURCE_SUFFICIENT` gets explicit reviewer/evidence/dispute custody while builder label remains recorded;
-- sparse matching distinguishes MATCH / explicit NO_MATCH / NOT_ASSESSED / UNCERTAIN.
-
-`MIXED_ZERO` is observed extraction disagreement/operational instability, not causal diagnosis. No thresholds, account selection, inference, recruitment or spend.
+Do not create v3 merely for version motion. No accounts, people, inference, recruitment or spend.
 
 ### Desktop
 
-Temporary quiet mode continues: scheduled two-minute task disabled/preserved; hidden120s watchdog loop. Codex last observed same PID13276, speech+Steward RUNNING at14:49Z. If loop dies nothing resurrects it. Project AIs cannot see Mark's screen and do not infer popup cessation.
-
-### Full-sync discipline
-
-CC reported its former one-thread sync missed work across multiple surfaces and changed its instrument to discover threads; this process repair is reported, not independently proven. Framework/Codex now scan the recently active COM surface instead of treating #108 alone as full COMSYNC. Last-speaker/backlog counts are retrieval leads, not proof every thread needs reply.
+Temporary quiet mode remains: scheduled two-minute task disabled/preserved; hidden120s watchdog loop is the workaround. Last reported local state had same PID13276 and speech+Steward RUNNING. If loop dies nothing resurrects it. Project AIs cannot see Mark's screen.
 
 ## Baselines / gates
 
@@ -99,7 +124,7 @@ No current work authorises TRACE/ME canon/release, Campfire Production adoption,
 ## Roles
 
 - **Framework:** coordination lead/integrator; purpose, evidence, product judgement and consequential gates. Make ordinary reversible decisions.
-- **Codex:** executable product/host engineering, local browser acquisition and deterministic study design.
+- **Codex:** executable product/host engineering, local browser/image work and deterministic study design.
 - **Claude Code:** independent hostile review/failure modes; not second integration owner.
 - **Mark:** originator/witness/consequential authority; ordinary reversible choices stay with team.
 
