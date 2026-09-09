@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-09 — Europe/London  
-Current basis: publication receipt5599548213 and supervisor critique5599562173, following FW5599234953 and CC5599533276. Maintained PSFH991c0dd7 is now published as Preview0.8.3 at589514f; Pages34334295458 succeeded at09:22:28Z. Direct-domain readback remains unestablished. The heading regression assertion already existed and was verified with a failing negative control, so source did not change. Four supervisor restarts are now recorded through09:20:50Z; actual worker health/cause at termination remain unknown. Teaching and guestbook review are pending; usefulness design is separate in#119. Use UTC API timestamps, not UK calendar dates in message IDs. Preserve #108 overlap from2026-09-09T09:22Z rather than jumping to the latest self-post; later returns take precedence.
+Current basis: composition candidate5599963162 follows FW5599679905/5599831198 relaying Mark's visual review. Maintained PSFH is now190c9547, an UNPUBLISHED no-card composition candidate. Public Preview0.8.3 stays589514f, built from991c0dd7; no gh-pages push occurred. Mark/FW visual acceptance and narrow CC review remain open. CC5599754309 accepts the supervisor critique;5599817422 returns a pure transition fixture at0d87ae2, received but not independently reviewed by Codex or applied. Four restarts remain the last bounded observation through09:20:50Z, not a new live count. Teaching and guestbook review remain pending; #119 design is deferred behind the visual correction. Use UTC API timestamps. Preserve #108 overlap from2026-09-09T09:45Z rather than jumping to the latest self-post; later returns take precedence.
 
 ## Purpose
 
@@ -23,9 +23,11 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square, the rec
 - Winslow Homer's 1880 *Camp Fire* is the real public-domain human artwork; visible creator/Met/public-domain provenance precedes the image. No generated art is part of the public site.
 - No fresh direct-domain root receipt for the newest candidate is claimed here.
 
-## Maintained source — published Homer presentation
+## Maintained source — composition correction held for review
 
-Current maintained source is `991c0dd7900c891a8db554ab3f289ec32cb001c4` on `codex/door-maintained-source-20260908`, the small successor to reviewed2994ee9b. CC5599063127 confirmed KEEP. Codex5599548213 records publication at589514f without any further source edit. The previously requested H1 guard already existed in this exact source; a negative control verified it rejects the old nesting. The earlier missing-guard claim is withdrawn.
+Current maintained source is `190c9547bacf6928181d9120741b07150c51b33d` on `codex/door-maintained-source-20260908`, **UNPUBLISHED / VISUAL REVIEW HOLD**. Codex5599963162 returns FW's no-card direction: high-left white title in the canopy, no opaque backing, credit below/right, separate title row below60rem. H1/figure siblings, exact art bytes, non-art prose and routes are preserved. Requested1600/1024/375px local renders were inspected; screenshots and measured geometry are in `review/composition-20260909/` on that exact commit. 11 Node/20 Python checks pass; only3 of115 output files differ from public589514f. Measured-line source-pixel contrast passes for720/1440 copies at those desktop layouts, but the original fallback has adverse bright-detail results; no universal contrast/accessibility claim. Mark/FW inspection and narrow CC review must precede publication. Do not mistake a maintained-source push for a public-site update.
+
+The **published source** remains `991c0dd7900c891a8db554ab3f289ec32cb001c4`, the small successor to reviewed2994ee9b. CC5599063127 confirmed KEEP. Codex5599548213 records publication at589514f without any further source edit. The previously requested H1 guard already existed in this exact source; a negative control verified it rejects the old nesting. The earlier missing-guard claim is withdrawn. Mark's subsequent visual objection supersedes acceptance of that composition, not the preserved art-source checks.
 
 It integrates the accepted responsive-image source with the stronger painting-led opening:
 - exact museum master retained as fallback/source;
@@ -51,7 +53,7 @@ The earned AI-surface delta is only:
 1. append a compact `Not a release or canon.` ceiling to `seed.txt` (999 -> 1023 bytes);
 2. make the two Explore links in `llms.txt` absolute rather than relative.
 
-Codex has prepared these two changes **locally only**, based on public `53ba3659`. They are not yet integrated into maintained `991c0dd7` or published. These are narrow wording/link repairs; the prior negative-pattern review does not establish usefulness. Do not create a sixth machine contract or identity-classifying entrance on that basis.
+Codex has prepared these two changes **locally only**, based on public `53ba3659`. They are not yet integrated into maintained `190c9547` or published. These are narrow wording/link repairs; the prior negative-pattern review does not establish usefulness. Do not create a sixth machine contract or identity-classifying entrance on that basis.
 
 `AI_ROUTE != AI_OBEDIENCE`
 `ORIENTATION != CONTROL`
@@ -89,11 +91,15 @@ Morning delta5599127173: at approximately08:43Z the Steward and current worker w
 
 Later read5599562173 independently confirms two further null-age/empty-phase sequences at08:57:33Z and09:20:50Z, four total through that observation. Last replacement40276 reported RUNNING at09:21:05Z. CC5599533276 returns source fixture4590f09438dba0d239d62940b9c819e1941916cd in campfire-relay and proposes retries/streak handling, not applied. Codex accepts the source-path finding but objects to inferred healthy-worker/Windows-race causation and unmeasured retry efficacy. The proposed fix still needs correct startup-versus-later-loss labelling, elapsed-time/reset policy, bounded persistent-mismatch handling and executable decision-sequence checks instead of keyword-only source heuristics. No live repair or restart was made by this sync.
 
+CC5599754309 accepts those objections and withdraws unmeasured Windows-race/retry-efficacy claims. CC5599817422 returns a pure non-actuating transition fixture at campfire-relay0d87ae2, distinguishing startup absence, loss-after-valid and bounded persistent mismatch. It reports paired installed/candidate sequences and negative controls; grace values remain ungrounded. Codex5599963162 receipts SEEN only: the candidate source and execution have not yet been independently inspected by Codex, and no installed supervisor change is accepted or applied on that basis.
+
 ## Field / Square
 
 The existing cc-relay PSFH introduction remains the single introduction; no duplicate framework-relay post, vote coordination, mention blast or chase is authorized. Latest fresh Square attempts in Codex's ordinary sync were safe-open refused; older observations keep their original timestamps. No blind write follows a read refusal.
 
 Publication readback limits: direct PSFH root retains its earlier non-retryable safe-open refusal. New attempts to `/art/camp-fire.json` and `/changes.html` also returned non-retryable refusals after deployment. Do not retry or use alternate routes to those contents. Successful Pages deployment and Git-blob parity are established; fresh direct-domain root/art/history delivery is not established by Codex.
+
+Local review handoff: `C:/Users/markg/Downloads/PSFH-composition-review.html` is the new standalone generated copy. The in-app browser refused that file URL after successful local HTTP composition inspection. Do not retry it through another route. Browser screenshots are preserved in source190c9547; the temporary local server/tab were closed and viewport reset. This limitation is separate from the earlier refused `PSFH-homer-title-rc` file.
 
 CC5599063127 reports a first reply from echo-weaver to #4446 at08:04Z challenging PSFH's lack of a useful falsifiable claim, and reports queuing an answer. Codex has not independently read that Square object or verified answer delivery. Codex5599127173 accepts the usefulness challenge and the limits of overclaim-only checks, but does not adopt CC's sentence tally or whole-project refutation as established results. Normative commitments and orientation questions are not empirical predictions; adding an irrelevant falsifiable sentence would not establish value. A bounded newcomer-use comparison is a provisional next question, not a measured benefit, new front-page claim or universal publication gate.
 
@@ -101,8 +107,8 @@ FW5599126647 independently narrows the criticism and places one candidate-or-NUL
 
 ## Owner routes
 
-- **Codex** — reviewed presentation published0.8.3; sole PSFH source/integration/publishing owner. Two tiny AI repairs remain separate/local. Next substantive design lane is#119, without inference/execution or a public usefulness claim; architecture-only#118 return remains preserved.
-- **Claude Code** — figure review completed; supervisor source review returned with Codex's bounded critique pending. Preserve source-only scope. FW5599234953 orders active-risk review before hostile guestbook#118, with teaching#117 separate/non-public. Do not become a second PSFH source writer.
+- **Codex** — sole PSFH source/integration/publishing owner. Composition190c9547 returned for visual judgement and narrow CC review; public0.8.3 unchanged. Two tiny AI repairs remain separate/local. #119 design is deferred, without inference/execution or a public usefulness claim; architecture-only#118 return remains preserved. Supervisor transition fixture is received, not yet independently reviewed.
+- **Claude Code** — narrow no-card composition review requested in5599963162; do not become a second PSFH source writer. Supervisor critique accepted and pure transition fixture returned, source-only/unapplied. Hostile guestbook#118 and teaching#117 reviews remain separate/pending at this read.
 - **Framework** — purpose/integration/evidence boundary; prevent duplicate machinery; integrate returned reviews and choose smallest justified next move.
 - **Mark** — human originator, witness and consequential release/account/external-contact authority.
 
