@@ -16,7 +16,7 @@ PSFH, TRACE, Mechanical Ethics, Campfire, COM, tests, receivers, guestbooks and 
 
 ## Current executable order
 
-1. **PR #123 — concrete-first human Door:** Codex is building the bounded **test-only** successor on head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`: integrate test-path portability, replace only superseded five-card assertions with the intended three-card/no-demand/read-only/route contract, and keep a fixed allowlist around intentional editorial subtraction so unrelated loss still fails. No product rewrite. CC then closes content findings. Still DRAFT / NO PUBLICATION.
+1. **PR #123 — concrete-first human Door:** Codex completed the bounded **test-only** successor `f8b84ec4e1e49cd24c018ba0b7fc7888a555a554`: portability plus fixed editorial exceptions;22 Python +11 Node tests pass;115 generated files unchanged. Receipt `5603961071`. CC content closure remains separate. Still DRAFT / NO PUBLICATION.
 2. **Harriet Powers art proof:** after the small PR123 receipt, Codex/local browser may acquire exact Smithsonian media id `NMAH-75-2984` through the documented Smithsonian service, preserve master bytes/URL/MIME/dimensions/size/SHA256/rights wording, prepare source-bound720/1440 viewing copies and one source-only presentation. NO PUBLIC WIRING YET.
 3. **#119 Phase-0 v2:** integrate the three freeze clarifications from Codex review `5603501640` before any confirmatory freeze. No study/inference/recruitment/spend.
 4. **Vermeer:** remains `ASSET_BLOCKED` for the available full-master acquisition path. Do not promote the accessible Städel thumbnail or guess CDN variants.
@@ -62,7 +62,7 @@ This is a preserved **synthetic source experiment only**. No form, endpoint, bac
 
 ## PR #123 — current evidence
 
-Current head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`.
+Current head `f8b84ec4e1e49cd24c018ba0b7fc7888a555a554`; product source unchanged from `3f2132f`.
 
 Accepted product state:
 - source-labelled ME composite `Two flats, one wall`;
@@ -77,6 +77,8 @@ Codex CSS relocation is mechanically accepted: rules moved into `globals.css`; b
 Python debt was reproduced before the CSS move. Test-path proposal `3023db612ad83d70fcf0b3c7018e4e4272054bc4` turns setup errors into real historical checks; with correct checkout the suite moved from14 pass/1 fail/5 errors to15 pass/2 fails/3 errors. Remaining failures include stale old-five-card/visible-text assumptions and a broad paragraph equality rule predating authorised subtraction.
 
 Framework direction #108 `5603859299`: update the test contract to the intended product **without deleting regression protection**. Preserve historical links/blocks with a fixed inspectable allowlist of authorised removed/added editorial blocks. Codex accepted at #108 `5603888846`.
+
+Completed in f8b84ec, receipt `5603961071`: fixed17 removed/21 added text blocks against the unchanged historical pin (including earlier art changes); all other block multiplicities and original link destinations remain checked. Exactly three entrances, no-demand wording, read-only ceiling and route destinations asserted. Two negative controls reject an unlisted paragraph loss/addition. Full result:22 Python +11 Node tests PASS, build PASS,115 local deliveries PASS. All115 generated hashes unchanged. No page/CSS/dependency edits, PR125 bundle or publication. Regression checks are not independent validation of the proposed copy.
 
 `TEST_CONTRACT_FOLLOWS_INTENDED_PRODUCT != DELETE_REGRESSION_TESTS`
 
@@ -112,7 +114,13 @@ Current design input `8372ca1fe703a193255b84487410f289498669c0`. Codex freeze re
 
 ## Desktop quiet mode
 
-Scheduled two-minute `Campfire Local Service Watch` remains disabled/preserved. Hidden120s loop remains the operating workaround; Codex last observed same PID13276 and both services RUNNING at14:49Z. If loop dies, nothing resurrects it. Do not run scheduler alongside it or reopen rejected launcher work without new evidence.
+Two-minute scheduled `Campfire Local Service Watch` remains disabled but preserved. At the14:49Z Codex check the same PID13276 hidden120s loop was present; local state14:49:07Z reported speech and Steward RUNNING. Direct Steward health reported0.1.0-rc.13.local.1, LOCAL_PREPARATION_ONLY, ledger_ok:true. Project AIs cannot see Mark's screen and do not infer popup cessation. If loop dies, nothing currently resurrects it. Do not run scheduler alongside it or reopen rejected launcher work without new evidence.
+
+## Full-sync observation limits
+
+At this Codex pass, Square front-door documentation was reachable, but `/api/new` and both project citizen-profile reads returned non-retryable safe-open refusals. No bypass or Square actuation. Current field activity, replies and quotas remain unverified by Codex. CC's unsolicited report `5603885223` says its two named threads had no newer replies; this is a CC report, not Codex field observation or whole-Square coverage.
+
+CC also reports its former sync only read one issue and missed returns on four other surfaces. Its discovery/backlog repair is reported, not independently tested here. A last-speaker count is a retrieval lead, not proof that every counted thread requires a reply.
 
 `TEMPORARY_QUIET_MODE != PRODUCTION_ARCHITECTURE`
 
