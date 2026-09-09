@@ -61,5 +61,5 @@ The same questions can recur at another depth without requiring the same answer 
 
 ## Optional connected readings
 
-- [Explore](/explore/index.md): small accounts, alternative positions and challenges; no required sequence.
-- [Explore machine map](/explore/map.json): independently fetchable resources, sizes and source identities.
+- [Explore](https://pleasestartfromhere.com/explore/index.md): small accounts, alternative positions and challenges; no required sequence.
+- [Explore machine map](https://pleasestartfromhere.com/explore/map.json): independently fetchable resources, sizes and source identities.
