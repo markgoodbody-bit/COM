@@ -10,23 +10,34 @@ Codex attacked the earlier checker with mutation tests. Against the earlier `a36
 
 Framework independently found and repaired overlapping URL-field gaps, then integrated the stronger Codex field/type/reference and HTML-parser checks onto the PR #124 branch. One additional control keeps **bare-domain** detection active inside the human `<main>` guest-register region without falsely rejecting system-authored filenames such as `register.jsonl` and `README.md` in the footer.
 
-Current mutation suite on the Framework review branch therefore contains 13 tests: one unchanged-fixture PASS plus 12 rejection controls. Run from the repository root:
+The exact integrated pre-HTML-repair head `56cdd4bd...` subsequently passed its direct checker and 13/13 mutation tests in Codex's local checkout. That receipt establishes the checker behaved as intended at that head; it is not a public-intake safety result.
+
+Claude Code then attacked the rendered HTML rather than the contract and found a different class of leak: visitor-supplied `claimed_name` values were being promoted into `<h2>` document headings. The machine JSONL kept its trust boundary, but the human HTML gave guest text a privileged structural position. CC returned `REPAIR_SMALL`.
+
+Current successor repairs that shape:
+- guest claim values no longer become document headings;
+- guest headings are project-authored (`A mark` / `A mark and its correction`);
+- `claimed name: ...` remains explicit in plain text next to the visitor value;
+- every article carries `data-trust` matching its trust class;
+- visitor note text is placed in `<blockquote class="note">` rather than ordinary project prose;
+- the visible `Visitor-supplied untrusted data` label remains present inside every guest article.
+
+Important extraction ceiling: `data-*` attributes do **not** survive literal tag stripping, and preservation of blockquote semantics depends on the extractor. Those structural markers therefore supplement rather than replace the plain-text qualifiers. The representation does not claim a generic solution to prompt injection or HTML extraction ambiguity.
+
+The current mutation suite now contains 17 tests: one unchanged-fixture PASS plus 16 rejection controls. The new controls additionally reject:
+- a guest claim promoted back into an `<h2>`;
+- loss of the article `data-trust` marker;
+- a guest note moved out of its blockquote data structure;
+- loss of the plain-text `claimed name:` qualifier.
+
+Run from the repository root:
 
 ```text
 python experiments/guestbook-representation-20260909/check_representation.py
 python experiments/guestbook-representation-20260909/test_representation.py
 ```
 
-The controls cover:
-- explicit URL and bare-domain guest-name values;
-- dangling and self-referencing corrections;
-- removed text hidden in an extra field;
-- a removal pointing to a still-exported guest id;
-- loss of synthetic-only markers;
-- loss of a per-article human trust label;
-- active hyperlink tags and event attributes;
-- bare-domain text inserted into a human guest article;
-- loss of the per-row machine trust label.
+No green claim is made here for the current post-CC repair head until Codex runs those exact files and returns the result.
 
 Limits remain material: this is a fixed four-article synthetic fixture checker, not an intake validator, general HTML sanitizer, renderer proof, browser/CSS visibility test or exhaustive JSON schema. It does not prove JSON/HTML semantic parity, detect every obfuscated address, reject duplicate JSON keys, prove deletion from private storage/backups/caches, establish a byte ceiling, or prove prompt-injection resistance. Passing these tests does not establish safe public intake.
 
@@ -37,12 +48,16 @@ PASS shape:
 - every guest row in `register.jsonl` contains `trust: visitor_supplied_untrusted_data`;
 - every guest row contains `project_instruction: false`;
 - the human page visibly labels each guest mark as visitor-supplied untrusted data;
+- the human page keeps guest names as qualified data rather than document headings;
+- DOM-aware readers receive an additional `data-trust` marker and blockquote note boundary;
 - no guest mark is present in PSFH root, `llms.txt`, `seed.txt`, manifest, Explore nodes or another orientation object.
 
 FAIL shape:
 
 - a sliced guest row can be read without any indication it is visitor data;
 - a human or AI-facing page visually/semantically merges a mark into PSFH-authored prose;
+- a visitor-supplied name becomes site/document heading structure;
+- structural metadata is described as guaranteed to survive extractors that discard it;
 - a mark is indexed as project instruction or provenance.
 
 ## Claimed fields
@@ -51,9 +66,11 @@ PASS shape:
 
 Guest assertions use `claimed_name`, `claimed_kind`, `claimed_note`, `claimed_encounter_*`.
 
+In the human rendering, the qualifier and the visitor value stay together in the text stream, for example `claimed name: River`.
+
 FAIL shape:
 
-Publisher-shaped fields such as `name`, `kind` or `encountered_source` silently promote self-description into verified fact.
+Publisher-shaped fields such as `name`, `kind` or `encountered_source` silently promote self-description into verified fact; or a visitor value is placed into a document heading without its qualifier.
 
 ## Instruction-shaped text
 
@@ -65,10 +82,11 @@ PASS shape:
 
 - preserved only as the value of `claimed_note` inside an explicitly untrusted guest record;
 - human rendering labels it as guest data;
+- visitor note presentation is structurally distinct where the reader preserves HTML structure;
 - no automated action follows from it;
 - it is absent from project orientation files.
 
-This does **not** prove prompt injection is solved. It tests provenance separation only.
+This does **not** prove prompt injection is solved. It tests provenance and presentation separation only.
 
 ## URL-like text
 
