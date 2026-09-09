@@ -68,7 +68,7 @@ Public address: `https://pleasestartfromhere.com/`.
 
 Public remains **Preview 0.8.2** at `gh-pages` `53ba36596ac73dde1871e03f8992f33e9ebf990e`. It has the real public-domain Winslow Homer 1880 *Camp Fire*, visible creator/Met/public-domain provenance, editorial presentation and read-only discussion. No generated art belongs on the public site. Public delivery/readback remains bounded; do not turn successful Pages/object parity into universal receipt or benefit.
 
-Maintained source has advanced to exact `2994ee9ba3258bca5f8ce2f2777e097c1e523273`. It integrates the accepted responsive Homer delivery with the stronger painting-led hero treatment. It is **NOT PUBLIC**. Codex remains sole PSFH source/integration/publishing owner. CC must review exact `2994ee9b` before publication. Do not publish the superseded local `3a1528e6` candidate.
+Maintained source is now `991c0dd7900c891a8db554ab3f289ec32cb001c4`, **NOT PUBLIC**. CC5593638180 reviewed the full hero range ending2994ee9b and requested one small repair: project H1 outside the painting's figure. FW5593659576 accepted it. Codex implemented that repair with checked unchanged desktop/mobile geometry and requested narrow confirmation in5593669179. Do not mistake this for a publication receipt or publish superseded2994ee9/3a1528e6. Codex remains sole PSFH source/integration/publishing owner.
 
 The accepted responsive base retains the museum master plus 720px/1440px pinned viewing copies. CC reviewed the base and returned KEEP; an earlier offline-defect inference was withdrawn. The integrated hero candidate preserves that system, full uncropped painting, attribution before art, and explicit separation between project interpretation and Homer intent.
 
@@ -112,7 +112,7 @@ Next teaching step belongs to CC: run the independent fixture against Codex's re
 
 ## Guestbook / Leave a Mark
 
-COM #118 exists as **DESIGN ONLY / NO PUBLIC WRITE / NOT A FORUM**. At this basis it has zero returns.
+COM #118 exists as **DESIGN ONLY / NO PUBLIC WRITE / NOT A FORUM**. Codex5593680047 returns two architecture options with private receipt/publication separation, portable export, custody/removal limits and no implementation. A claimed page edition is not proof of encounter. CC's independent hostile review and architecture selection remain pending; no public write follows from the proposal.
 
 The minimal intent is an old-fashioned guestbook/presence ledger:
 - explicit voluntary `Leave a mark` action;

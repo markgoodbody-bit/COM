@@ -25,7 +25,7 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square, the rec
 
 ## Maintained source — integrated Homer candidate, NOT PUBLIC
 
-Current maintained source is `2994ee9ba3258bca5f8ce2f2777e097c1e523273` on `codex/door-maintained-source-20260908`.
+Current maintained source is `991c0dd7900c891a8db554ab3f289ec32cb001c4` on `codex/door-maintained-source-20260908`, the small successor to reviewed2994ee9b. Live gh-pages remains53ba3659. Codex5593669179 records CC's requested repair and asks for its narrow confirmation; this is not yet a publication receipt.
 
 It integrates the accepted responsive-image source with the stronger painting-led opening:
 - exact museum master retained as fallback/source;
@@ -37,9 +37,9 @@ It integrates the accepted responsive-image source with the stronger painting-le
 - existing early navigation and non-art prose/routes remain;
 - local checks reported 11 Node + 20 Python passing, bounded 375x812 and 1440x1000 browser checks, no horizontal overflow.
 
-**Publication gate:** Claude Code must return KEEP / REPAIR_SMALL / DELETE against exact `2994ee9b` before Codex publishes it. Do not publish the superseded local `3a1528e6` candidate. Codex remains sole PSFH source/integration/publishing owner.
+**Publication gate:** CC5593638180 returned REPAIR_SMALL on2994ee9b: move the project H1 outside the artwork figure; other findings were non-blocking. FW5593659576 accepts that sole blocking repair. Codex implemented it in991c0dd: heading and captioned figure are siblings, with unchanged checked desktop/mobile geometry and a declared non-subgrid fallback. Eleven Node/20 Python checks pass, including115 local output deliveries and17.39:1 solid mobile contrast. CC's narrow successor confirmation was requested in5593669179. Do not publish2994ee9 unchanged or the superseded local3a1528e6. Codex remains sole PSFH source/integration/publishing owner.
 
-CC independently reviewed the responsive base and returned **KEEP**; its earlier offline defect inference was withdrawn. The hero candidate itself still awaits the exact-head review.
+CC independently reviewed the responsive base and returned **KEEP**; its earlier offline defect and residual camelCase-test criticisms were both withdrawn. The complete hero range then received the bounded review above. No browser JavaScript does not make sticky/timed CSS effects impossible; Codex5593669179 corrects that overbroad review claim without claiming such effects are present.
 
 Vermeer's *The Geographer* remains a potential second human-art proof object only. Authoritative Städel work/rights records were identified, but the reusable original asset remained safe-open blocked; no local master/hash, placeholder or publication exists. Do not bypass that refusal or bulk-curate art by momentum.
 
@@ -63,7 +63,7 @@ Codex's separate local teaching prototype remains non-public. CC's independent f
 
 ## Guestbook / Leave a Mark
 
-COM #118 is open as **DESIGN ONLY / NO PUBLIC WRITE / NOT A FORUM**. At this basis it has zero comments/returns.
+COM #118 is open as **DESIGN ONLY / NO PUBLIC WRITE / NOT A FORUM**. Codex architecture-only return5593680047 proposes two shapes: one HTTPS service/SQLite or a managed handler/transactional store, each with private pending receipts and separately moderated public records. It flags that a client-declared edition is not proof of actual encounter, and that moderation/removal/backups create operator burden. No provider, architecture or implementation is selected; CC's independent hostile return remains pending at this read.
 
 Minimum intent: voluntary explicit `Leave a mark`; plain text; `I was here` is valid; optional self-chosen name/description/note; transparent receipt time + exact PSFH edition/source; no silent visitor tracking; guest text remains visibly untrusted and separate from PSFH-authored instruction; corrections append/link rather than pretend memory or verified identity.
 
