@@ -68,16 +68,16 @@ def tree(repo, ref):
 
 def blob_bytes(repo, sha):
     raw = gh("repos/%s/git/blobs/%s" % (repo, sha), raw=True)
-    if raw:
+    if raw is not None:
         return raw
     j = gh("repos/%s/git/blobs/%s" % (repo, sha))
-    if j and j.get("content"):
+    if j and j.get("encoding") == "base64" and j.get("content") is not None:
         return base64.b64decode(j["content"])
     return None
 
 
 def index_by_content(repo, ref, prefixes):
-    """-> (exact, normalised, count, truncated).
+    """-> (exact, normalised, successfully_hashed_count, incomplete).
 
     Two indexes, because a bare content match reports a false alarm on a real
     corpus. Measured on the first run: 12 of 36 pins did not resolve, and every
@@ -97,14 +97,19 @@ def index_by_content(repo, ref, prefixes):
     wanted = {p: s for p, s in blobs.items()
               if any(p.startswith(pre) for pre in prefixes)}
     exact, normalised = {}, {}
+    scanned = 0
+    incomplete = truncated
     for path, sha in sorted(wanted.items()):
         data = blob_bytes(repo, sha)
         if data is None:
+            print("  cannot read source blob %s @ %s" % (path, sha))
+            incomplete = True
             continue
+        scanned += 1
         exact.setdefault(hashlib.sha256(data).hexdigest(), []).append(path)
         lf = data.replace(b"\r\n", b"\n")
         normalised.setdefault(hashlib.sha256(lf).hexdigest(), []).append(path)
-    return exact, normalised, len(wanted), truncated
+    return exact, normalised, scanned, incomplete
 
 
 def emitted_bytes(repo, ref, route):
@@ -112,7 +117,7 @@ def emitted_bytes(repo, ref, route):
     j = gh("repos/%s/contents/public/%s?ref=%s" % (repo, route, ref))
     if not j:
         return None
-    if j.get("content"):
+    if j.get("encoding") == "base64" and j.get("content") is not None:
         return base64.b64decode(j["content"])
     return blob_bytes(repo, j["sha"])
 
@@ -131,38 +136,44 @@ def check(repo, pins_ref, pins_path, pins_key, source_ref, prefixes):
     print("  source_review %s" % review)
     print()
 
-    exact, normalised, scanned, truncated = index_by_content(repo, review, prefixes)
+    exact, normalised, scanned, incomplete = index_by_content(repo, review, prefixes)
     if exact is None:
         print("  cannot read the source tree %s -- NO VERDICT" % review[:12])
         return 2
-    if truncated:
-        print("  WARNING: the source tree came back TRUNCATED. A 'not found'")
-        print("  below may be the truncation, not an absent blob. NO VERDICT.")
-        return 2
     print("  hashed %d blobs under %s in %s" % (scanned, ",".join(prefixes), review[:12]))
+    if incomplete:
+        print("  INCOMPLETE source scan: tree truncated or a blob could not be read.")
+        print("  Missing content cannot be treated as absent. NO VERDICT.")
+        return 2
     print()
 
     byte_exact, eol_shift, no_source = [], [], []
+    invalid, unavailable = [], []
     for route, meta in sorted(declared.items()):
-        want = (meta or {}).get("sha256")
-        if not want:
-            no_source.append((route, "no sha256 declared"))
-        elif want in exact:
+        meta = meta if isinstance(meta, dict) else {}
+        want = meta.get("sha256")
+        size = meta.get("bytes")
+        if not isinstance(want, str) or not want or type(size) is not int or size < 0:
+            invalid.append((route, "sha256 and non-negative integer bytes are required"))
+            continue
+        data = emitted_bytes(repo, pins_ref, route)
+        if data is None:
+            unavailable.append(route)
+            continue
+        # Check the declaration BEFORE either source-matching path. A valid
+        # emitted file cannot rehabilitate a fabricated checksum or length.
+        if hashlib.sha256(data).hexdigest() != want or len(data) != size:
+            invalid.append((route, "declared sha256 or bytes differ from emitted copy"))
+            continue
+        if want in exact:
             byte_exact.append((route, exact[want][0]))
+            continue
+        lf = hashlib.sha256(data.replace(b"\r\n", b"\n")).hexdigest()
+        if lf in normalised:
+            eol_shift.append((route, normalised[lf][0],
+                              data.count(b"\r\n")))
         else:
             no_source.append((route, want))
-
-    # Second pass: an emitted TEXT file may carry the checkout's line endings.
-    still = []
-    for route, want in no_source:
-        data = emitted_bytes(repo, pins_ref, route)
-        lf = hashlib.sha256(data.replace(b"\r\n", b"\n")).hexdigest() if data else None
-        if lf and lf in normalised:
-            eol_shift.append((route, normalised[lf][0],
-                              data.count(b"\r\n") if data else 0))
-        else:
-            still.append((route, want))
-    no_source = still
 
     print("  BYTE-EXACT in the source tree: %d of %d" % (len(byte_exact), len(declared)))
     for route, src in byte_exact[:3]:
@@ -172,17 +183,28 @@ def check(repo, pins_ref, pins_path, pins_key, source_ref, prefixes):
     if eol_shift:
         print()
         print("  SAME CONTENT, line endings differ: %d" % len(eol_shift))
-        print("     (emitted from a CRLF checkout; identical after LF normalisation)")
+        print("     (declared emitted bytes verified; identical after LF normalisation)")
         for route, src, n in eol_shift:
-            print("     %-34s <- %-40s +%d CR" % (route, src, n))
+            print("     %-34s <- %-40s emitted CRLFs=%d" % (route, src, n))
     if no_source:
         print()
         print("  NO SOURCE BLOB: %d  -- generated by a build, or genuinely absent" % len(no_source))
         for route, want in no_source:
             print("     %-34s %s" % (route, want[:16] if isinstance(want, str) else ""))
         print("     Distinguishing 'built' from 'absent' needs the builder, not this tool.")
+    if invalid:
+        print()
+        print("  INVALID DECLARED IDENTITY: %d" % len(invalid))
+        for route, reason in invalid:
+            print("     %s: %s" % (route, reason))
+    if unavailable:
+        print()
+        print("  UNREADABLE EMITTED COPY: %d -- NO VERDICT" % len(unavailable))
+        for route in unavailable:
+            print("     %s" % route)
 
-    # The method must be able to FAIL. A fabricated pin must not resolve.
+    # Index sanity check only. The regression suite exercises fabricated pins
+    # through check(); absence from an index alone does not test that path.
     fake = hashlib.sha256(b"a blob that is not in any tree").hexdigest()
     control_ok = fake not in exact and fake not in normalised
     print()
@@ -190,16 +212,18 @@ def check(repo, pins_ref, pins_path, pins_key, source_ref, prefixes):
           % ("correct" if control_ok else "BROKEN, everything 'resolves'"))
     if not control_ok:
         return 2
-    absent = no_source
 
     print()
     print("  WHAT THIS ESTABLISHES")
-    print("    a blob with each resolved content existed in %s" % review[:12])
+    print("    each resolved declaration matches its committed emitted copy")
+    print("    a byte-exact or LF-normalised source match was found in %s, as labelled" % review[:12])
     print("  WHAT IT DOES NOT")
     print("    - that the source-path -> output-route mapping is correct")
     print("    - that those bytes are what any museum or upstream actually supplied")
     print("    - anything about files added to the output but never declared")
-    return 0 if not absent else 1
+    if unavailable:
+        return 2
+    return 1 if no_source or invalid else 0
 
 
 def main():
