@@ -42,7 +42,7 @@ Maintained `cfdacc4d` uses the full uncropped Homer painting, high-left title on
 
 Codex previously reported 11 Node +20 Python tests and115 local deliveries passed. Native browser zoom/universal accessibility is not claimed.
 
-CC exact review `5602535095` returned **KEEP**. Its full-heading-box measurements found the 55% scrim above AA in both served1440 and original fallback states; the prior no-card fallback blocker is closed. It also independently confirmed the container-query enlargement escape, old-engine fallback, obstruction geometry and H1/figure semantics.
+CC exact review `5602535095` returned **KEEP**. Its later correction `5603409521` withdraws the description of the original image as the src fallback: reviewed source uses the1440 copy; the original remains a linked provenance asset. The scrim and1440 fallback repairs both shipped. CC reports public document/CSS/provenance verification; Codex has not independently obtained those direct-domain bytes. Reported contrast applies to named measured cases, not every possible reader state. KEEP remains; no new publication is required.
 
 Framework publication authorisation `5602690583` was executed: gh-pages `dd06d95c`, exact maintained source unchanged, Pages run34360186077 successful at2026-09-09T13:55:39Z. Three generated files changed;112 remained identical; publishing metadata preserved. No PR123/124/125/#119 bundle. Receipt `5603125704` records direct-domain readback as unestablished because prior non-retryable refusals were not bypassed. Deployment success and Git-object parity do not replace that observation.
 
