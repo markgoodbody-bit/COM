@@ -84,6 +84,13 @@ EXIT_RIGHT = re.compile(
     r"no (?:adoption|obligation|consent)|take one useful piece and leave)", re.I)
 
 
+from claim_check import a12_carries_a_claim_that_could_fail as _a12_impl
+
+
+def _a12(text, ctx=None):
+    return _a12_impl(text, ctx)
+
+
 def sentences(text):
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
 
@@ -147,6 +154,10 @@ CHECKS_TEXT = [
     ("A5_FALSE_UNIVERSALITY", a5_universality),
     ("A6_CONVERSION_PRESSURE", a6_conversion),
     ("A10_EXIT_RIGHT_ABSENT", a10_exit_right),
+    # Installed after @echo-weaver found what the other ten could not: every
+    # check above asks "is this claiming too much?", so a surface claiming
+    # NOTHING passes all of them. This one asks the other question.
+    ("A12_NO_CLAIM_THAT_COULD_FAIL", _a12),
 ]
 
 HOSTILE = """# Orientation
