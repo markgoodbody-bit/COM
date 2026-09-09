@@ -1,0 +1,96 @@
+{
+  "browser": "152.0.4191.66",
+  "javascript": false,
+  "states": [
+    {
+      "name": "desktop",
+      "w": 1440,
+      "h": 1000,
+      "scale": 1,
+      "theme": "light",
+      "overflow": false,
+      "titleColor": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "imageWidth": 1440,
+      "details": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bypassVisible": true
+    },
+    {
+      "name": "mobile",
+      "w": 390,
+      "h": 844,
+      "scale": 1,
+      "theme": "light",
+      "overflow": false,
+      "titleColor": "rgb(32, 45, 52)",
+      "background": "rgb(250, 248, 243)",
+      "imageWidth": 390,
+      "details": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bypassVisible": true
+    },
+    {
+      "name": "mobile-200",
+      "w": 390,
+      "h": 844,
+      "scale": 2,
+      "theme": "light",
+      "overflow": false,
+      "titleColor": "rgb(32, 45, 52)",
+      "background": "rgb(250, 248, 243)",
+      "imageWidth": 390,
+      "details": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bypassVisible": true
+    },
+    {
+      "name": "desktop-200",
+      "w": 1440,
+      "h": 1000,
+      "scale": 2,
+      "theme": "light",
+      "overflow": false,
+      "titleColor": "rgb(32, 45, 52)",
+      "background": "rgb(250, 248, 243)",
+      "imageWidth": 1440,
+      "details": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bypassVisible": true
+    },
+    {
+      "name": "mobile-dark",
+      "w": 390,
+      "h": 844,
+      "scale": 1,
+      "theme": "dark",
+      "overflow": false,
+      "titleColor": "rgb(243, 240, 232)",
+      "background": "rgb(24, 33, 38)",
+      "imageWidth": 390,
+      "details": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bypassVisible": true
+    }
+  ]
+}

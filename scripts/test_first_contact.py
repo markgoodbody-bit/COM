@@ -69,7 +69,7 @@ class FirstContactTests(unittest.TestCase):
 
     def test_primary_title_and_optional_attributed_artwork(self):
         self.assertEqual(self.html.count('<h1>'), 1)
-        self.assertIn('<h1>Please Start From Here</h1>', self.html)
+        self.assertIn('<h1>Please Start From <em>Here</em></h1>', self.html)
         figures = re.findall(r'<figure\b[^>]*>.*?</figure>', self.html, re.S)
         self.assertEqual(len(figures), 1)
         self.assertNotIn('<h1', figures[0])
@@ -104,7 +104,7 @@ class FirstContactTests(unittest.TestCase):
         self.assertNotIn('teaching_preview', manifest['provenance'])
 
     def assert_editorial_contract(self, html):
-        original = published_text('e0d765b3d203035971b5fa544eb5f5b48cc0f518', 'index.html')
+        original = published_text('aed75526770de9a7c9a2aa7cef63f1167dad1669', 'index.html')
         def blocks(html):
             # Compare substantive blocks independently of authorised relocation.
             values = []
@@ -113,10 +113,10 @@ class FirstContactTests(unittest.TestCase):
                 values.append(re.sub(r'Preview 0\.8(?:\.\d+)?', 'Preview [edition]', text))
             return Counter(values)
         before, after = blocks(original), blocks(html)
-        # Fixed editorial exceptions, inspected against PR123's source. Never
+        # Fixed foyer additions, inspected against the published Works edition. Never
         # regenerate from the page being tested: that would approve any loss.
-        changes = json.loads((ROOT / 'scripts/fixtures/concrete-first-editorial-delta.json').read_text(encoding='utf-8'))
-        self.assertEqual(changes['historical_revision'], 'e0d765b3d203035971b5fa544eb5f5b48cc0f518')
+        changes = json.loads((ROOT / 'scripts/fixtures/human-arrival-editorial-delta.json').read_text(encoding='utf-8'))
+        self.assertEqual(changes['historical_revision'], 'aed75526770de9a7c9a2aa7cef63f1167dad1669')
         self.assertEqual(before - after, Counter(changes['removed']))
         self.assertEqual(after - before, Counter(changes['added']))
         self.assertTrue(set(Reading(original).links).issubset(Reading(html).links))

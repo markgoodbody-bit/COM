@@ -25,6 +25,5 @@ export async function copyArtwork(sourceRoot, outRoot, record, recordName) {
 export const artworkSrcSet = record => record.responsive.variants
   .map(item => `${item.local_image} ${item.width}w`).join(', ');
 
-// Full-width hero in an 86rem border-box with clamped1rem/4vw/4rem side padding.
-// Conservative at intermediate widths; browser selection is checked separately.
-export const HOMER_SIZES = '(max-width: 25rem) calc(100vw - 2rem), (max-width: 86rem) 92vw, 78rem';
+// The foyer shows the whole frame across the viewport, without cropping.
+export const HOMER_SIZES = '100vw';

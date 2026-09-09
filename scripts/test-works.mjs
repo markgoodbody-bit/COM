@@ -59,7 +59,9 @@ test('publication treatment changes only the named wrappers from the pinned inte
   assert.equal(changed, 6);
   assert.match(await readFile('out/works/index.html', 'utf8'), /The works are not endorsements of this project\./);
   assert.match(await readFile('out/404.html', 'utf8'), /noindex/);
-  for (const file of ['app/page.tsx', 'app/globals.css', 'scripts/build.mjs']) {
+  // Homepage layout is now intentionally revised in the human foyer. Its output
+  // boundary is checked against the published edition in test-favicon.mjs.
+  for (const file of ['scripts/build.mjs']) {
     // These are Git text sources, unlike the byte-pinned Works copies above.
     assert.equal((await readFile(file, 'utf8')).replace(/\r\n/g, '\n'), gitBytes(file).toString('utf8'), file);
   }

@@ -154,6 +154,48 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
 .concrete-story .story-questions { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
 .concrete-story .story-source { margin-top: 1.25rem; color: var(--muted); font-size: .9375rem; }
 .technical-handoff { color: var(--muted); font-size: .9375rem; }
+/* Human foyer. All rules are scoped to the homepage; reading-page skin stays. */
+body:has(.arrival) { max-width: none; padding-inline: 0; }
+body:has(.arrival) main, body:has(.arrival) .intro { margin-top: 0; padding-top: 0; }
+body:has(.arrival) .masthead { padding: .65rem clamp(1rem, 4vw, 4rem); border: 0; align-items: start; }
+body:has(.arrival) .masthead .map-bypass { font: 400 .9375rem/2.75rem var(--sans); }
+body:has(.arrival) .masthead .map-bypass span { color: inherit; font-size: inherit; }
+.reading-menu { text-align: right; max-width: 100%; }
+.reading-menu summary { cursor: pointer; min-height: 2.75rem; padding-block: .55rem; }
+.reading-menu nav { padding-block: .5rem; justify-content: end; }
+.opening-composition:has(.arrival) { margin-top: 0; }
+body:has(.arrival) .art-hero figcaption { padding-inline: clamp(1rem, 4vw, 4rem); width: 100%; font-size: .875rem; }
+body:has(.arrival) .hero-heading { margin: clamp(1.5rem, 4vw, 5rem); max-width: min(40rem, 55%); }
+body:has(.arrival) .intro .hero-heading h1 { max-width: 12ch; font-size: clamp(3rem, 5.8vw, 6rem); }
+body:has(.arrival) .hero-heading h1 em { font-style: italic; }
+body:has(.arrival) .guiding-question { font-style: italic; font-size: clamp(1.4rem, 2.3vw, 2.2rem); max-width: 24ch; }
+.arrival, body:has(.arrival) .opening-copy, body:has(.arrival) .concrete-story, body:has(.arrival) .first-movements, body:has(.arrival) .perspective-and-boundaries, body:has(.arrival) main > section:not(.intro), body:has(.arrival) footer { width: min(calc(100% - 2rem), 76rem); margin-inline: auto; }
+.arrival { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 5rem); padding-block: 2rem; margin-block: 2rem 4rem; }
+.arrival h2 { margin-top: 0; font-size: clamp(2.25rem, 4vw, 3.5rem); max-width: 12ch; }
+.arrival-heading p { max-width: 32ch; color: var(--muted); }
+.arrival-heading > a { display: inline-block; padding-block: .7rem; }
+.arrival-doors details { border-bottom: 1px solid var(--border); padding-block: .35rem; }
+.arrival-doors details:first-child { border-top: 1px solid var(--border); }
+.arrival-doors summary { cursor: pointer; padding: 1rem .2rem; font: 400 clamp(1.25rem, 2vw, 1.5rem)/1.5 var(--serif); }
+.arrival-doors details[open] summary { margin-bottom: .25rem; }
+.arrival-doors details p { padding-inline: 1.25rem .5rem; }
+summary:focus-visible { outline: 3px solid var(--foreground); outline-offset: 3px; }
+:target { scroll-margin-top: 1.5rem; }
+/* At narrow or enlarged-text sizes, put the title on the page, not a black plate. */
+@media (max-width: 60rem) {
+  body:has(.arrival) .hero-heading { margin: 0; padding: 1.5rem 1rem; max-width: none; background: var(--background); color: var(--foreground); }
+  body:has(.arrival) .intro .hero-heading h1, body:has(.arrival) .guiding-question { color: var(--foreground); }
+  body:has(.arrival) .intro .hero-heading h1 { max-width: 18ch; font-size: clamp(2.4rem, 6vw, 4rem); }
+}
+@container artwork (max-width: 60rem) {
+  body:has(.arrival) .hero-heading { margin: 0; padding: 1.5rem 1rem; max-width: none; background: var(--background); color: var(--foreground); }
+  body:has(.arrival) .intro .hero-heading h1, body:has(.arrival) .guiding-question { color: var(--foreground); }
+}
+@media (max-width: 48rem) { .arrival { grid-template-columns: 1fr; gap: 1.5rem; margin-block: 1.5rem 3rem; } .arrival h2 { max-width: none; } }
+@supports (not (grid-template-rows: subgrid)) or (not (mask-composite: intersect)) or (not (container-type: inline-size)) {
+  body:has(.arrival) .hero-heading { margin: 0; max-width: none; background: var(--background); color: var(--foreground); }
+  body:has(.arrival) .intro .hero-heading h1, body:has(.arrival) .guiding-question { color: var(--foreground); }
+}
 @media (max-width: 48rem) {
   .concrete-story { grid-template-columns: 1fr; }
   .concrete-story header { grid-row: auto; }
