@@ -12,80 +12,68 @@ Mark is human originator/witness and consequential release/account/external-cont
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `ROLE_CONTINUITY != RUNTIME_IDENTITY`
 
-## Boot / retrieval
+## Retrieval
 
-1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from #108, PR127 and #119, plus new art PR/branches.
-3. Reacquire maintained/public PSFH refs before mutation.
-4. Discover recent surfaces; one issue is not full COMSYNC.
-5. Do not replay large cold carriers unless a current decision needs a named slice.
+Read live active pointer first; then reacquire later #108 / PR127 / PR129 / #119 returns and maintained/public PSFH refs. Discover recent surfaces; one issue is not full COMSYNC.
 
-## Current consequential state
+## PSFH public
 
-### PSFH public
+Maintained `e30debac2a8c32c37d2abfaa32e988c11fe98e79`; public `gh-pages 9ba8557cbc197e634bb8252f1ce6b977273ff29b`.
 
-Maintained source: `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.
-Public `gh-pages`: `9ba8557cbc197e634bb8252f1ce6b977273ff29b`.
+Preview0.8.4 and favicon are closed at their reviewed/served boundaries. Do not repeat publication. Practical advantage remains unproven.
 
-Preview0.8.4 is closed and served-verified. The later requested favicon is also one completed Pages mutation; do not repeat either release. Practical advantage remains unproven.
+## Human art — current product priority
 
-### Harriet Powers — primary art gate
+Mark explicitly wants **lots of art**. The live product direction is now a provenance-first human `/works/` shelf, while the homepage keeps Homer. No AI-generated actual-site art; no feed/ranking/likes/carousel/autoplay/analytics requirement.
 
-PR127 exact source-only candidate `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`, open/ready/unmerged.
+### Powers
 
-Exact Smithsonian source2880×2412 /2671829bytes / SHA `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`; master status UNKNOWN. Viewing copies720×603 SHA `c424b692...`;1440×1206 SHA `816b56a1...`.
+PR127 exact `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`, open/ready/unmerged. Exact Smithsonian source2880×2412 SHA `fd8280dd...`, master UNKNOWN;720/1440 source-bound copies. Build/tests/delivery green. Measured Edge/Playwright desktop/mobile/root16/root32 states show no horizontal overflow/crop/order defect; doubled mobile text yields a long6085px page. CC's existing independent provenance/presentation/does-the-work-stand review remains the only blocker. Do not duplicate the request. If KEEP, refresh onto current maintained before any public candidate; if repair, prefer subtraction.
 
-Separate build and integrity tests green. Codex now measured exact desktop/mobile/root16/root32 states with Windows Edge/Playwright; no horizontal overflow/crop/order defect in those states. Evidence PR127 `5605892788`, COM `0d4aa67...`. Doubled mobile text creates a long6085px page; this is a real cost. Root32 is not physical-device/native-zoom/a11y certification.
+### Vermeer
 
-CC's existing independent review remains the only blocker: provenance truth, creator/museum account separation, presentation implication, and whether the quilt stands rather than becoming a PSFH teaching/tokenism object. #108 `5606192847` requests closure; do not create duplicate review. If KEEP, refresh integration onto current maintained source before any public candidate.
+Draft PR129 exact `cf1e4e985563c011c7c838af835b35a138d7b37d`,11 additions under `proposals/vermeer/`, base maintained e30debac. Exact Städel record-linked915×1024/147792-byte source SHA `2eb8819e...`, master UNKNOWN; no derivative/upscale. Five outputs/10 tests and actual desktop/mobile/root16/root32 rendering. Initial enlarged-mobile heading split repaired narrowly. Full work first, credit below, attributed museum paraphrase, **project response NULL**. Framework KEEP AS REVIEW OBJECT at PR129 `5606342830`; CC reviews after Powers. No merge/public wiring.
 
-### Vermeer — source acquired
+### Batch A / first-five shelf
 
-Johannes Vermeer, *The Geographer*,1669, Städel. Exact authoritative record-linked `thumb-xl` source acquired by Codex: HTTP200 JPEG915×1024 RGB,147792bytes, SHA `2eb8819e4afe22c219d7fbd01766e41338c5fbe460d0d41c250f8c698fd39106`, no ICC/EXIF orientation; category `AUTHORITATIVE_RECORD_LINKED_THUMB_XL`; master status UNKNOWN. Source size supports bounded display without upscaling.
+Batch A COMPLETE:7 selected works /8 selected images + separately preserved superseded Hiroshige impression; evidence `PSFH_HUMAN_ART_BATCH_A_ACQUISITION_20260909.json`, Codex #108 `5606359135` / COM `ab023274...`.
 
-Next: Codex source-only Vermeer work page, using exact source without forced derivative symmetry; no root/public wiring yet.
+First-five source-only shelf direction #108 `5606386698`:
+1. Powers — quilt;
+2. Vermeer — painting;
+3. Anna Atkins *Ulva lactuca* — cyanotype, exact3375×4000/4494739 source SHA `ae5864af...`;
+4. Shen Zhou *Anchorage on a rainy night* — hanging scroll, exact1722×4000/1370966 source SHA `e9bc0535...`;
+5. Edmonia Lewis *The Death of Cleopatra* — sculpture with two distinct authoritative Smithsonian photographs.
 
-### Human art — lots of art, provenance first
+Build one separate review branch from maintained e30debac. Reuse exact Powers/Vermeer proposal bytes rather than normalising them. Add Atkins/Shen/Lewis work pages + one `/works/` shelf proposal. Real records only; individual pages; preserve aspect/media differences; no public/root/edition change. Atkins/Shen/Lewis project response may be NULL. `FIVE_WORKS != FIVE_TEMPLATES`.
 
-Mark explicitly wants **lots of art**. This earns a future lightweight `/works/` human shelf but not wallpaper/carousel/engagement-feed treatment.
+### Rolling horizon
 
-Rolling set files:
-- first ten: `evidence/PSFH_HUMAN_ART_ROLLING_SET_20260909.md`, COM `e3f90f89...`;
-- Hiroshige object correction: COM `2f22a8ff...`, use Met37386/JP3174 rather than55433;
-- second wave: `evidence/PSFH_HUMAN_ART_SECOND_WAVE_20260909.md`, COM `9345772e...`.
+First set COM `e3f90f89...`; Hiroshige correction COM `2f22a8ff...`; second wave COM `9345772e...`; third wave COM `9cedd8fe...`.
 
-Batch A acquisition targets: Anna Atkins291638; Hiroshige37386; Merian399922; Gentileschi436453; Shen Zhou49549; Posada372097; Edmonia Lewis Smithsonian `saam_1994.17`.
+21-work horizon now exists. Batch B may acquire Hokusai45434, Sultan-Muhammad-attributed452113, Julia Margaret Cameron268697, Basawan+Bhim Gujarati450954, Harriet Hosmer Smithsonian `saam_1918.3.5`. Batch C lower priority: Nainsukh-attributed38009, Lala Deen Dayal291060, Robineau487653, Tanner `saam_1983.95.183`, Rachel Ruysch Rijksmuseum SK-A-354, Mary Cassatt NGA1985.64.81.
 
-Batch B, lower priority but may run independently: Hokusai45434; Sultan Muhammad-attributed Shahnama folio452113; Julia Margaret Cameron268697; Basawan+Bhim Gujarati450954; Harriet Hosmer Smithsonian `saam_1918.3.5`.
+**Do not prioritize work22.** Presentation/review now outranks list growth.
 
-Each work must return independent source custody (`ACQUIRED | BLOCKED | SOURCE_TOO_SMALL`) before transformation/public integration. No inferred filenames/accounts/generated angles. Master status UNKNOWN unless explicitly established.
+`LOTS_OF_ART != WALLPAPER`  
+`ACQUIRE_IN_PARALLEL`  
+`REVIEW_PER_WORK`  
+`PUBLISH_IN_SMALL_BATCHES`
 
-A source-only `/works/` prototype may start after Powers + Vermeer + >=1 newly acquired work have real reviewable records. No placeholders/rankings/likes/infinite scroll/carousel/autoplay/analytics requirement. Homepage retains Homer. Different media earn different presentations. No AI-generated actual-site art.
+## #119 — v3.1 final design review only
 
-Blocked-but-worth-pursuing: Olowe of Ise Met1996.558; Bichitr SmithsonianF1942.15a. `RIGHTS_FRICTION != ART_REJECTED`.
+V3.1: `evidence/PSFH_PHASE0_IRREVERSIBILITY_CONSTRUCT_V3_1_FREEZE_CANDIDATE_20260909.md`, COM `b6be14078ab3296ea887ac5479b1c1fa3f57b8da`, #119 `5606404789`.
 
-### #119 — V3 freeze candidate only
+It removes employer/domain pseudo-diversity quotas; provider venue is not a frozen capability claim; one semantic revision checkpoint after A1 and one after A2; complete survival/NULL rule must exist by post-A2 and A3 tests that exact rule; post-A3 semantic repair => DESIGN NULL; StageB N=6; later operational packet must freeze human time/payment/spend/screening/replacement/withdrawal/data custody with Mark's explicit authority.
 
-V3: `evidence/PSFH_PHASE0_IRREVERSIBILITY_CONSTRUCT_V3_FREEZE_CANDIDATE_20260909.md`, COM `018cde43...`, #119 `5605921440`.
+CC/Codex final hostile design read only. No accounts/provider/cases/participants/recruitment/inference/spend. Public usefulness sentence unchanged.
 
-Human reference-build population,3 builders+2 matchers, StageA exactly3 accounts/max2 semantic revisions, StageB N=6, CAP_HIT/source-sufficiency/sparse-match/granularity/raw-vs-eligible corrections retained. Under hostile review only. No Prolific account/recruitment/spend/inference/StageA.
+## Held
 
-### Guestbook / desktop
+Guestbook #118 `HOLD_INTAKE`. Desktop scheduled2m watchdog disabled/preserved; hidden120s loop remains temporary quiet mode. Speech supervisor evidence-only.
 
-Guestbook representation complete; #118 `HOLD_INTAKE`. No public write/backend/real guest data.
-
-Desktop quiet mode remains: scheduled two-minute watchdog disabled/preserved; hidden120s loop temporary. Do not run both or reopen rejected launcher work without new evidence.
-
-## Baselines / gates
-
-TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
-Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
-Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.
+TRACE `46f4fcd1...`; Mechanical Ethics `44f7efb5...`; Campfire Relay Production `08756b68...`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
 
-`ART_SHOULD_STAND_BEFORE_IT_TEACHES`  
-`LOTS_OF_ART != WALLPAPER`  
-`ACQUIRE_IN_PARALLEL`  
-`PUBLISH_IN_SMALL_BATCHES`  
 `POSTED != RECEIVED != ACTED != EFFECT`
