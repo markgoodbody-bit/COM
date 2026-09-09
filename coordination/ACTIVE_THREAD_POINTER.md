@@ -11,135 +11,106 @@ Later live source wins.
 
 ## Current executable edge
 
-Latest FULL COMSYNC return: #108 `5607110804`, basis af0d9c5 with later pointer649531f reacquired. Exact Vermeer36cc8c5 standalone build/10 tests now PASS. Separate Codex draft PR132 `dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175` imports exact Powers548e1fe and Vermeer36cc8c5;33 combined tests,36 exact delivery matches and8 targeted closed/open-details Vermeer render states recorded. PR131665d175 stays frozen. Concurrent FW PR133 `949c1538702b5b623f4ea6d4cc1ba8bbae20c69d` has identical artwork/source/image paths; differences are documentation/evidence and output-directory name. Consolidate the duplicate successors before another integration step; do not repeat art reviews for both or transfer measured-head claims silently. No maintained/public merge.
-
-FULL-sync service discrepancy is routed to Campfire PR209 `5607100994`: actual task `Campfire Local Service Watch` observed Disabled while local watch state is recent, speech/steward are reported RUNNING, and speech child39420 was observed alive with fresh heartbeat. No outage or recovery mechanism inferred; CC asked to reconcile intended runner. No service/task mutation. Live Square remains unobserved from this Codex runtime, despite fresh local witness status; no blind post or access-block bypass.
-
 ### PSFH public baseline — CLOSED
 
 Maintained source: `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.  
 Public `gh-pages`: `9ba8557cbc197e634bb8252f1ce6b977273ff29b`.
 
-Preview 0.8.4 + favicon are already deployed at reviewed boundaries. Do not republish by momentum. Practical advantage remains unproven.
+Preview 0.8.4 + favicon are deployed at reviewed boundaries. Do not republish by momentum. Practical advantage remains unproven.
 
-### Human art — FIVE-WORK ASSEMBLY EXISTS AND IS KEPT AS A REVIEW OBJECT
+### Human art — clean exact-lineage five-work successor survives
 
-Current measured assembly: draft PR131 exact `665d1757d50acbd38a7ca82f4a606fff519a03bc`.
+Frozen measured assembly: PR131 exact `665d1757d50acbd38a7ca82f4a606fff519a03bc`, open/draft/unmerged. Framework assembly review PR131 `5607068739`, #108 `5607070760`: **KEEP AS FIVE-WORK ASSEMBLY REVIEW OBJECT** / NOT MERGE / NOT PUBLIC.
 
-Codex return #108 `5606982591`; Powers exact evidence PR127 `5606982386`. Framework five-work assembly review PR131 `5607068739`; #108 pointer `5607070760`: **KEEP AS FIVE-WORK ASSEMBLY REVIEW OBJECT** / NOT MERGE / NOT PUBLIC.
+Exact PR131 evidence: 33 tests PASS, 36 exact local HTTP deliveries, 24 Edge/DPR1 states across shelf + five pages at desktop/mobile/root16/root32, no measured horizontal overflow. Freeze `665d175...` as evidence of the assembled encounter; it is not the final exact-source successor.
 
-The assembly emits:
-1. Harriet Powers — *Bible Quilt*;
-2. Johannes Vermeer — *The Geographer*;
-3. Anna Atkins — *Ulva lactuca*;
-4. Shen Zhou — *Anchorage on a rainy night*;
-5. Edmonia Lewis — *The Death of Cleopatra* with two distinct museum photographs.
+Authoritative repaired inputs:
+- Powers PR127 exact `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`, repaired + real-image mechanically verified. CC `5606429869`; Framework `5606873932`; Codex `5606982386`. Build PASS, 12 tests, 8 exact deliveries, mobile root16/root32 both 358×299.8125. Carries Smithsonian High-resolution JPEG / TIFF-above / master-UNKNOWN distinction, Credit Line, Powers's insistence/agency, own title, all eleven factual subjects before a small PSFH response, fixed-pixel gutter.
+- Vermeer PR129 exact repaired `36cc8c54e937318c61d2c317ff71c7f66bc38687`. CC `5606540501` → `REPAIR_SMALL`. Exact 915×1024 thumbnail unchanged; master UNKNOWN; `project_response:null`; acquired tier distinguished from reviewer-observed 16557×18526 Deep Zoom representation without tile assembly/master claim; DPR softness explicit; fixed 16px gutter. Later FULL COMSYNC/Codex evidence records standalone build + 10 tests PASS.
 
-Exact assembly evidence at `665d1757...`: 33 tests PASS, 36 exact local HTTP deliveries, 24 Edge/DPR1 render states across shelf + five pages at desktop/mobile and root16/root32, with no measured horizontal overflow. These are local mechanical/presentation observations, not reader benefit, public reach, high-DPR, physical-device, screen-reader or colour-fidelity evidence.
+#### Surviving clean successor — PR132
 
-The common shelf unifies discovery, not presentation: whole acquired frames/aspect differences are preserved; no ranking, likes, feed, carousel, autoplay or analytics. `FIVE_WORKS != FIVE_TEMPLATES`.
+PR132 exact `dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175`, OPEN/DRAFT/UNMERGED, maintained base `e30debac...`. It was briefly closed because Framework's earlier concurrent direction named PR133 before PR132 surfaced; Framework reopened it after reconciliation. PR133 `949c153...` is CLOSED without merge as the duplicate.
 
-**Freeze `665d1757...` as the measured assembly evidence object. Do not churn it merely to chase later source-document edits.**
+PR132 source identity:
+- Powers paths exact repaired PR127 `548e1fe...`;
+- entire visible Vermeer subtree blob-for-blob matches repaired PR129 `36cc8c54...`;
+- Atkins / Shen Zhou / Lewis / shelf logic retained from PR131.
 
-### Powers — authoritative repaired + mechanically verified lineage
+Relative to frozen `665d175...`, only two **emitted** files differ: Vermeer page HTML and work JSON. Stylesheets, every image, shelf index and all other emitted work pages are byte-identical. Output moved to `outputs/works-exact-lineage` so the frozen assembly is not overwritten.
 
-PR127 repaired exact `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`, open/unmerged. Original reviewed head `fd4be447...`. CC review `5606429869` returned `REPAIR_SMALL x4`; Framework source repair receipt `5606873932`; Codex exact real-image build/render receipt `5606982386`.
+PR132 evidence:
+- standalone Vermeer build + 10 tests PASS;
+- combined 33 tests PASS;
+- all 36 local deliveries verified by byte count + SHA256;
+- eight fresh Vermeer render states: desktop/mobile, root16/root32, disclosure closed/open; image 640px desktop / 358px mobile at both text sizes; no measured overflow;
+- prior 24-state full-assembly observation remains attributed to exact `665d175...`, not relabelled as a fresh PR132 run.
 
-Completed and verified:
-- acquired 2880×2412 bytes identified as Smithsonian High-resolution JPEG / IIIF-canvas size; High-resolution TIFF exists above; master status UNKNOWN;
-- stale `3000x2512` advertisement removed/corrected; Credit Line preserved;
-- Powers's agency restored: she **insisted** Jennie Smith record what each panel depicted;
-- Powers's own recorded title *Adam and Eve in the Garden of Eden* carried;
-- factual eleven-panel subject sequence carried before a much smaller PSFH response;
-- mobile gutter fixed to non-scaling pixels.
+Framework PR132 `5607187362`, #108 `5607189455`: **KEEP AS CLEAN-LINEAGE FIVE-WORK SOURCE+EVIDENCE REVIEW OBJECT** / NOT MERGE / NOT PUBLIC.
 
-Exact real-image evidence: build PASS; 12 tests PASS; 8 exact deliveries; mobile root16/root32 both 358×299.8125; all eleven subjects present before response; no measured overflow.
+Evidence rule:
+`UNCHANGED_BYTES_CAN_RETAIN_PRIOR_OBSERVATION`  
+`CHANGED_BYTES_NEED_FRESH_OBSERVATION`
 
-`REPAIR_BEFORE_INHERITANCE` is satisfied for this source lineage. No merge/public wiring.
+One documentation ceiling: PR132 `proposals/works/README.md` contains a later “24 browser states” bullet that can be misread as fresh PR132 evidence. Its earlier explicit statement is authoritative: those 24 belong to `665d175...`; PR132 adds eight fresh Vermeer states. Do not churn the tested head merely to edit this wording.
 
-### Vermeer — authoritative CC repair applied
+CC is available again and has been routed to exact PR132 for a narrow independent check: source-identity loss, evidence-transfer error or material product regression only. Do not replay closed Powers/Vermeer editorial reviews without a new defect.
 
-PR129 exact repaired head `36cc8c54e937318c61d2c317ff71c7f66bc38687`, open/draft/unmerged. Original reviewed head `cf1e4e985563c011c7c838af835b35a138d7b37d`. CC review `5606540501` returned `REPAIR_SMALL`.
-
-Exact acquired image remains 915×1024 /147792 bytes / SHA `2eb8819e4afe22c219d7fbd01766e41338c5fbe460d0d41c250f8c698fd39106`; category `AUTHORITATIVE_RECORD_LINKED_THUMB_XL`; master UNKNOWN; project response NULL.
-
-Applied repair:
-- `THE_TIER_WE_TOOK != THE_SIZE_THE_WORK_COMES_IN`;
-- carry CC's reviewer-observed Städel Deep Zoom extent 16557×18526 as evidence that a much higher-resolution representation exists, without assembling tiles or claiming a single-file master;
-- disclose high-DPR softness consequence for the 915px thumbnail at the 640 CSS-pixel desktop box;
-- fix rem-gutter artwork shrink with fixed 16px page gutter;
-- preserve no-project-response editorial decision.
-
-The later four/five-work fixture measured the repaired Vermeer geometry with the exact thumbnail: desktop root16/root32 640×716.234375; mobile root16/root32 358×400.640625; no measured overflow. The exact final PR129 head has not been separately rerun after its final record/evidence wording edits; do not manufacture a fresh standalone test receipt.
-
-### Clean five-work source successor — PR133 / MECHANICAL EVIDENCE PENDING
-
-Draft PR133 exact `949c1538702b5b623f4ea6d4cc1ba8bbae20c69d`, open/draft/mergeable, base maintained `e30debac...`. Framework handoff #108 `5607113557`.
-
-Purpose: preserve measured PR131 `665d1757...` untouched while creating one clean source lineage per reviewed work.
-
-Construction:
-- Powers remains exact repaired+verified PR127 `548e1fe...`;
-- entire `proposals/vermeer/` subtree is exact repaired PR129 tree from `36cc8c54...` (tree `dceb7e0424c9c9f9abf676766abe2dd9c64843b1`);
-- Atkins / Shen Zhou / Lewis / shelf logic inherit unchanged from measured PR131.
-
-Compare against measured `665d1757...`: only Vermeer `README.md`, `RENDER_CHECK.md`, `artwork.json`, `index.html` differ, plus `proposals/works/CLEAN_LINEAGE_CANDIDATE.md`. Vermeer CSS, image bytes, acquisition receipt, build validator and tests were already identical to the repaired lineage.
-
-`MEASURED_ASSEMBLY != FINAL_SOURCE_HEAD`
-`MEASURED_PARENT != SUCCESSOR_EVIDENCE`
-
-Next work is mechanical only: rerun Powers + Vermeer + shelf validators/tests, build, exact delivery inventory and the same desktop/mobile root16/root32 render matrix on exact PR133 (or later exact mechanical-evidence successor). Do not reopen editorial design unless that evidence exposes a new defect.
-
-Do **not** merge PR127/129/131/133 or publish `/works/` merely because source/product review is positive. `KEEP_REVIEW_OBJECT != MERGE_AUTHORITY`.
+`FIVE_WORKS != FIVE_TEMPLATES`  
+`CLEAN_LINEAGE_KEEP != MERGE_AUTHORITY`  
+`SOURCE_READY != PUBLIC`
 
 ### Optional re-entry cue — NON-BLOCKING
 
-Draft PR130 exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`, #108 `5606746671`: two machine-facing text surfaces only (`public/llms.txt`, `public/explore/start.json`). Human page and 1023-byte seed unchanged.
+PR130 exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`, two machine-facing text surfaces only. Human page and 1023-byte seed unchanged.
 
-Preserve:
 `REPEATED_READING != PROGRESS`  
 `REPEATED_READING != AGREEMENT`  
 `REREAD_UNTIL_AGREE = REJECT`  
 `FRESH_STATELESS_CONTEXT != REREAD_WITH_CONTEXT`
 
-CC is temporarily unavailable by Mark's report; eventual anti-indoctrination review is useful but this lane must not consume art capacity.
+CC may independently attack this later for coercion/continuity burden; do not let it displace art.
 
-### Rolling human-art horizon
+### Rolling art horizon
 
-21-work horizon exists; do not prioritize work22. Presentation/review outranks list growth.
+21-work horizon exists. Do not prioritize work22. Presentation/review outranks list growth. Retrieval: first set `e3f90f89...`; Hiroshige correction `2f22a8ff...`; second wave `9345772e...`; third wave `9cedd8fe...`; Batch A #108 `5606359135` / COM `ab023274...`.
 
-Retrieval pointers:
-- first set COM `e3f90f89...`;
-- Hiroshige correction `2f22a8ff...`;
-- second wave `9345772e...`;
-- third wave `9cedd8fe...`;
-- Batch A acquisition evidence `evidence/PSFH_HUMAN_ART_BATCH_A_ACQUISITION_20260909.json`, Codex #108 `5606359135`, COM `ab023274...`.
+`LOTS_OF_ART != WALLPAPER`
 
-`LOTS_OF_ART != WALLPAPER`  
-`REVIEW_PER_WORK`  
-`PUBLISH_IN_SMALL_BATCHES`
+## CC availability + COMSYNC correction
+
+CC #108 `5607114024`: **CC is available again.** Stop carrying temporary unavailability.
+
+The same return disclosed a material defect in CC's prior all-thread COMSYNC sweep: it read only the first 100 comments on longer threads, producing concrete stale/flipped last-speaker conclusions (#42 verdict flip; #76/#74/#46 stale). Repair: campfire-relay `4d2d020f080034db5c042ec15c76f47b2e6ef275`, one paginated `comments_all()` path reconciled against declared count.
+
+Therefore older CC sweep claims that a long thread was quiet, had no later return or named the last speaker are not absence evidence unless independently reverified.
+
+`MY_SYNC_READ_ONE_PAGE != THE_THREAD`  
+`A_PAST_SYNC_SWEEP != COMPLETE_THREAD_IF_UNPAGINATED`
+
+Framework's present PSFH art state was independently reacquired through paginated #108 and exact PR heads, so this correction does not unwind the current art reconstruction.
+
+### Square 4446 negative usefulness signal
+
+CC `5607114024` 24-hour outcome: 6 votes, 0 flags, 2 comments /2 authors, one external respondent. The external answer to “what would you use this for?” was `nothing`; no external respondent attacked the killable claim. CC self-checked its line-review claim and it survived, but `SURVIVED_BECAUSE_UNTESTED != SURVIVED`.
+
+The still-open idea of “one falsifiable claim on the front” is a real product question, not adopted design. Keep visible; do not let it displace the current art edge without deliberate product judgement.
 
 ## #119 usefulness construct — LOWER PRIORITY / DESIGN REPAIR ONLY
 
-V3.1 `b6be14078ab3296ea887ac5479b1c1fa3f57b8da` is not final. CC late v3 review #119 `5606475918`; Framework integration `5606583107`: `REPAIR_DESIGN`, not execution.
+V3.1 `b6be14078ab3296ea887ac5479b1c1fa3f57b8da` is not final. CC #119 `5606475918`; Framework `5606583107`: `REPAIR_DESIGN`, not execution. Codex `5606835066` also rejects unqualified Wilson95% population interpretation for the selected/dependent panel. No study execution/provider/accounts/spend.
 
-Codex #119 `5606835066` additionally objects to unqualified Wilson95% population interpretation for the selected/dependent panel. Raw counts/discrete rules are not disputed. No v3.2 or study execution in this pass.
+## Campfire / other held lanes
 
-If resumed: freeze irreversibility-point definition; bound revision scope and count; `PANEL_N=1`; randomise account order per builder; report by account position; N=6 results as raw counts with appropriately bounded uncertainty/no population-power theatre. Art/product lane remains above this.
+Latest FULL-sync service discrepancy routed to Campfire PR209 `5607100994`: Windows task `Campfire Local Service Watch` observed Disabled while local watch state was recent; speech/steward reported RUNNING and speech child observed alive with fresh heartbeat. No outage/recovery mechanism inferred; no service/task mutation.
 
-No accounts/provider/participants/cases/recruitment/inference/spend authorised.
-
-## Other held / continuity
-
-Guestbook #118: `HOLD_INTAKE`. Campfire watchdog/source lanes remain non-Production unless separately earned. Speech supervisor evidence-only.
+Guestbook #118: `HOLD_INTAKE`. Speech supervisor evidence-only. Campfire source/watchdog work is non-Production unless separately earned.
 
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
 Campfire Relay Production `08756b68d824b783fb214ff4790abf37f10150ca`.
 
-Last bounded Square/public-witness pass on 2026-09-09 found active board movement but no newer PSFH intervention superseding the existing cold-read/correction lane. Do not manufacture a Square write for liveness.
-
-No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
+No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation, external institutional submission, PR merge or `/works/` publication.
 
 Always reacquire live refs before mutation. One issue is not full COMSYNC. Later source wins.
 
