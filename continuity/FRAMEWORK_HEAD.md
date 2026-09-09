@@ -20,7 +20,7 @@ CC is AVAILABLE. Prior CC long-thread COMSYNC absence/last-speaker claims need r
 
 ## Public baseline
 
-Maintained `e30debac2a8c32c37d2abfaa32e988c11fe98e79`; public gh-pages `9ba8557cbc197e634bb8252f1ce6b977273ff29b`. Preview0.8.4 closed. No current action authorises republish, maintained merge or public `/works/`.
+Maintained `a5931ed238c3076e9ebf59c20cd795d135b129c9`; public gh-pages `aed75526770de9a7c9a2aa7cef63f1167dad1669`. Mark directly authorised the prepared Works publication (#108 `5608278935`). PR135 and PR134 are merged; maintained source tree matches tested `96cc7a48a26241be14701a7d8e6225a927bc030f` exactly. All 154 published Git blobs match that build. GitHub Pages run `34401618178` succeeded; Pages reports built at 2026-09-09T20:33:04Z. Direct-domain web-tool readback was refused and not bypassed. The release is complete, not waiting for another permission; no unrelated publication authority follows.
 
 ## Framework priority now — AI arrival / self-starting receiver
 
@@ -40,15 +40,15 @@ Human analogue remains: arrival -> intrigue -> orientation -> choice -> small en
 
 ## Art/build lane — Codex
 
-PR134 current `b078c3cf4aa251c4226985c2547d03e3d88b196a`, OPEN/DRAFT/UNMERGED.
+PR134 pre-publication source was `b078c3cf4aa251c4226985c2547d03e3d88b196a`. It now includes PR135 merge `e692a2fa1c3897ac58e7fa5fed88f29524da4b82` and is merged into maintained source at `a5931ed238c3076e9ebf59c20cd795d135b129c9`.
 
 Codex `5607609016` exact `da814362...`: normal-source first-five integration; one Works link; 36 pinned Works files; 16 Node +22 Python tests PASS;154 local deliveries;435 references+10 anchors;28+4 layout states after mobile repair. CC `5607783953`: KEEP on da81436 with one non-blocking self-referential test-provenance ceiling. Codex PR134 `5607823914` / #108 `5607824125` advanced to `b078c3cf...` with explanatory metadata and review documentation only. No independent pins or checker were added: the limitation is recorded, not repaired. All 154 build outputs were unchanged; two focused tests passed. Basis correction `5607927467` and CC verification `5607951970` supersede the earlier erroneous Framework account. CC KEEP is not silently extended to the follow-up.
 
-Framework accepts PR134 as SOURCE-INTEGRATED REVIEW OBJECT / NOT MERGE / NOT PUBLIC.
+Framework's earlier source-only acceptance was followed by Mark's direct publication instruction. Earlier review scopes remain unchanged.
 
 Framework task PR134 `5607917054` is now returned by Codex in #108 `5608061165`: separate draft PR135 exact `96cc7a48a26241be14701a7d8e6225a927bc030f`, parent actual `b078c3cf...`. Six HTML wrappers and six sitemap entries change; all 30 non-HTML Works files remain exact, including 16 images. Homepage/Homer, styles, optional manifest route, llms, seed and build logic are unchanged. Normal build, 17 Node tests, 22 Python tests, 154 deliveries and local link checks passed; eight representative, response-byte-verified viewport captures are in `review/works-publication/README.md`. The new parent-tree comparison is not independent museum-provenance verification.
 
-Publication treatment is prepared, not published or merged. No substantive PR135 review or release decision was observed at this update. Do not transfer CC's da81436 KEEP to this candidate or reassign its completed preparation as unfinished work. Reacquire PR135 and #108 for the next review/release decision; maintained source and gh-pages remain unchanged.
+Publication treatment is now merged and published under Mark's direct instruction. Do not transfer CC's da81436 KEEP to the candidate, recreate a release-decision wait, or republish unchanged output. See the current public baseline above. The separate reviewer-tool repairs and AI-arrival drafts were not included.
 
 `SOURCE_INTEGRATED != PUBLICATION_READY`  
 `PUBLICATION_READY != PUBLISHED`
@@ -85,6 +85,6 @@ Fresh bounded public Square/OpenWitness pass: active traffic, no newer PSFH/fram
 
 #119 = `REPAIR_DESIGN`, no execution/provider/accounts/study/spend. Guestbook #118 `HOLD_INTAKE`. Speech supervisor evidence-only. Campfire source/watchdog changes non-Production unless separately earned.
 
-No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation, external institutional submission, maintained merge or public `/works/`.
+The completed Works publication does not authorise TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation, external institutional submission or unrelated maintained merges/publications.
 
 `POSTED != RECEIVED != ACTED != EFFECT`
