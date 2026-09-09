@@ -1,9 +1,10 @@
 {
   "source_review": "dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175",
-  "status": "Source-only integration; not publication or evidence of reader benefit.",
+  "status": "Source-only publication-treatment candidate; not published or evidence of reader benefit.",
   "verification_ceiling": "files and reviewed_files are declarations in this same record. Their agreement and the offline copier's byte checks establish consistency with declared pins, not independent verification against source_review. Changes to source_review, either inventory or the copied assets require renewed comparison with the pinned source tree; prior review does not verify later changes.",
   "changed_from_review": [
-    "works/index.html: homepage return and explicit selection scope only"
+    "works/index.html: homepage return, explicit selection scope, and publication wrapper treatment",
+    "all six works/**/index.html pages: remove noindex and unpublished/local-review wrapper labels only"
   ],
   "reviewed_files": {
     "works/harriet-powers/index.html": {
@@ -153,8 +154,8 @@
   },
   "files": {
     "works/harriet-powers/index.html": {
-      "bytes": 4606,
-      "sha256": "c388ce783d9a5198204a4aa1a1d1cf8fffd8038803fbbb5b1d6eaa4db46ac472"
+      "bytes": 4506,
+      "sha256": "10afed99df81820a5cbd955e92aa19bb485a6751cdb5ccac6937383c5e2bb87a"
     },
     "works/harriet-powers/work.css": {
       "bytes": 2580,
@@ -185,8 +186,8 @@
       "sha256": "816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f"
     },
     "works/johannes-vermeer/index.html": {
-      "bytes": 2759,
-      "sha256": "16375d4cbccd1591015cd89818d01450b0877f4714707458f07cad0007bacedd"
+      "bytes": 2676,
+      "sha256": "1235f98cf050c9a2a0440deff5d2742b640a72162623f87d17e5cf7bd42d0e11"
     },
     "works/johannes-vermeer/work.css": {
       "bytes": 2155,
@@ -205,8 +206,8 @@
       "sha256": "2eb8819e4afe22c219d7fbd01766e41338c5fbe460d0d41c250f8c698fd39106"
     },
     "works/anna-atkins/index.html": {
-      "bytes": 1847,
-      "sha256": "4b287a3560b72bed607581a2d7865bf90e11091648ec4cc0307858995632177a"
+      "bytes": 1786,
+      "sha256": "596e172f999e0b79023db9420eda80dce0af214e8cf9f08284c7bc29e4b43d3b"
     },
     "art/atkins.json": {
       "bytes": 907,
@@ -229,8 +230,8 @@
       "sha256": "41ac029360ed274a92d0896aeb6a86d01622e24bc510945506ca0d870c31c809"
     },
     "works/shen-zhou/index.html": {
-      "bytes": 2104,
-      "sha256": "def115614cfef6c4011ac3a35777d819d587b768ee06520dfe958936fa10e06a"
+      "bytes": 2043,
+      "sha256": "053171f2159751a1079b0e21a4489d68718886086be1f36b4594b8014043150e"
     },
     "art/shen.json": {
       "bytes": 1098,
@@ -253,8 +254,8 @@
       "sha256": "6b7b753c436953a694e8d46ccd06d0b6367a3b708039d773d3f8e3f74c0bc3d1"
     },
     "works/edmonia-lewis/index.html": {
-      "bytes": 2351,
-      "sha256": "b7d7f55f53c08707b8b22da5bee1004442c4824fde9189c8486c8c2141a4efac"
+      "bytes": 2290,
+      "sha256": "b7c49c67c70bb133bb01b6d550c111d3340fd4d69dfc48a0d7075c9c5a167b3f"
     },
     "art/lewis.json": {
       "bytes": 1017,
@@ -289,8 +290,8 @@
       "sha256": "b8f399f907c839543dd0c73bfcfc67184cf145c917b7c23a3e9d1341c0d3bbbd"
     },
     "works/index.html": {
-      "bytes": 2115,
-      "sha256": "781b1b1817a2c82e874ad47bfdf157b084131dba64d749bbae299b3af2e9b51f"
+      "bytes": 1937,
+      "sha256": "485b5080491112b769a4dff7c85b04b961e7ae0dd13ca8bae4926ec3c910031a"
     },
     "works/shelf.css": {
       "bytes": 3191,
