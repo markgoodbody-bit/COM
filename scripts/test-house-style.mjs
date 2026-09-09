@@ -7,6 +7,7 @@ import { sharedStyle } from './house-style.mjs';
 import { VIEWS, decodeSource, renderSource } from './source-views.mjs';
 import { SITE_EDITION } from './site-edition.mjs';
 import { CAMP_FIRE } from './camp-fire.mjs';
+import { WORKS } from './works.mjs';
 
 test('head-only transformation preserves markup-like source payload', () => {
   const input = '<html><head><style>body{color:red}</style></head><body><pre>&lt;style&gt;text&lt;/style&gt;</pre></body></html>';
@@ -25,6 +26,13 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       const relative = prefix + entry.name;
       if (entry.isDirectory()) { await check(dir + '/' + entry.name, relative + '/'); continue; }
       const actual = await readFile(dir + '/' + entry.name);
+      // Dedicated work pages keep their reviewed geometry, not the Door skin.
+      // Only exact inventory members are excepted; test-works verifies the set.
+      if (Object.hasOwn(WORKS.files, relative)) {
+        assert.equal(actual.length, WORKS.files[relative].bytes);
+        assert.equal(createHash('sha256').update(actual).digest('hex'), WORKS.files[relative].sha256);
+        continue;
+      }
       const variant = CAMP_FIRE.responsive.variants.find(item => item.local_image === '/' + relative);
       if (variant) {
         assert.equal(createHash('sha256').update(actual).digest('hex'), variant.sha256);
@@ -71,6 +79,16 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         pages++;
       } else if (relative === 'llms.txt') {
         assert.deepEqual(actual, await readFile('public/llms.txt'));
+      } else if (relative === 'sitemap.xml') {
+        // Exact six-entry addition is checked in test-favicon; no broad skip.
+        const routes = ['works/', 'works/harriet-powers/', 'works/johannes-vermeer/', 'works/anna-atkins/', 'works/shen-zhou/', 'works/edmonia-lewis/'];
+        let text = actual.toString('utf8');
+        for (const route of routes) {
+          const entry = '  <url><loc>https://pleasestartfromhere.com/' + route + '</loc></url>\n';
+          assert.equal(text.split(entry).length, 2);
+          text = text.replace(entry, '');
+        }
+        assert.deepEqual(Buffer.from(text), before, relative); unchanged++;
       } else if (relative === 'seed.txt') {
         // PR125 adds exactly one reviewed ceiling; every predecessor byte stays.
         const ceiling = 'Not a release or canon.\n';

@@ -1,0 +1,95 @@
+{
+  "vermeerSource": "36cc8c54e937318c61d2c317ff71c7f66bc38687",
+  "scope": "Composite Vermeer only,4 geometry states times details closed/open; DPR1;36 exact composite HTTP deliveries",
+  "browser": "152.0.4191.66",
+  "results": [
+    {
+      "view": "desktop",
+      "expanded": false,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "imageWidth": 640,
+      "imageHeight": 716.234375,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": false,
+      "overflow": []
+    },
+    {
+      "view": "desktop",
+      "expanded": true,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "imageWidth": 640,
+      "imageHeight": 716.234375,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": true,
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "expanded": false,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "imageWidth": 358,
+      "imageHeight": 400.640625,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": false,
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "expanded": true,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "imageWidth": 358,
+      "imageHeight": 400.640625,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": true,
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "expanded": false,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "imageWidth": 640,
+      "imageHeight": 716.234375,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": false,
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "expanded": true,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "imageWidth": 640,
+      "imageHeight": 716.234375,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": true,
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "expanded": false,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "imageWidth": 358,
+      "imageHeight": 400.640625,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": false,
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "expanded": true,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "imageWidth": 358,
+      "imageHeight": 400.640625,
+      "source": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+      "detailsOpen": true,
+      "overflow": []
+    }
+  ]
+}

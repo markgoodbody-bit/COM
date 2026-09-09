@@ -4,6 +4,7 @@ import {readFile, readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {createPreviewServer} from './serve.mjs';
+import {WORKS} from './works.mjs';
 
 const pins = {
   'favicon.svg': 'b2b950c89165e9c483853e608312f341ceceadb5c05958fd0be4ed77e9b9bd70',
@@ -31,20 +32,54 @@ test('favicon assets, legacy sizes and source notice have exact identities', asy
   });
 });
 
-test('relative to published0.8.4 only the root head and three icon assets change', async () => {
+test('favicon boundary survives the explicitly bounded Works addition', async () => {
   let checked=0;
   async function walk(dir,prefix='') {
     for (const item of await readdir(dir,{withFileTypes:true})) {
       const file=prefix+item.name;
       if(item.isDirectory()){await walk(dir+'/'+item.name,file+'/');continue;}
       if(file in pins)continue;
+      if (Object.hasOwn(WORKS.files, file)) {
+        const bytes = await readFile('out/' + file);
+        assert.equal(bytes.length, WORKS.files[file].bytes);
+        assert.equal(createHash('sha256').update(bytes).digest('hex'), WORKS.files[file].sha256);
+        continue;
+      }
       const before=execFileSync('git',['show',baseline+':'+file],{cwd:publishing,maxBuffer:20*1024*1024});
       let actual=await readFile('out/'+file);
+      if (file === 'sitemap.xml') {
+        const entries = [...actual.toString().matchAll(/^  <url><loc>https:\/\/pleasestartfromhere\.com\/works\/[^<]*<\/loc><\/url>\n/gm)].map(match => match[0]);
+        const routes = ['works/', 'works/harriet-powers/', 'works/johannes-vermeer/', 'works/anna-atkins/', 'works/shen-zhou/', 'works/edmonia-lewis/'];
+        assert.deepEqual(entries, routes.map(route => '  <url><loc>https://pleasestartfromhere.com/' + route + '</loc></url>\n'));
+        for (const entry of entries) actual = Buffer.from(actual.toString().replace(entry, ''));
+      }
       if(file==='index.html'){
         const text=actual.toString();
         assert.equal(text.split(header).length,2);
         assert.ok(text.indexOf(header)<text.indexOf('</head>'));
-        actual=Buffer.from(text.replace(header,''));
+        const worksLink = '<a href="/works/">Works</a>';
+        assert.equal(text.split(worksLink).length, 2);
+        actual=Buffer.from(text.replace(header,'').replace(worksLink,''));
+      }
+      if (file === 'manifest.json') {
+        const map = JSON.parse(actual);
+        assert.equal(map.routes.optional_human_art, '/works/');
+        assert.deepEqual(map.provenance.optional_human_art, {
+          source_review: 'dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175', optional: true,
+          scope: 'Five selected works, not a ranking or representative survey. No required traversal or report-back; not evidence for TRACE or Mechanical Ethics.',
+        });
+        delete map.routes.optional_human_art;
+        delete map.provenance.optional_human_art;
+        const oldMap = JSON.parse(before);
+        assert.equal(map.provenance.presentation.stylesheet_sha256, createHash('sha256').update(await readFile('out/style.css')).digest('hex'));
+        map.provenance.presentation.stylesheet_sha256 = oldMap.provenance.presentation.stylesheet_sha256;
+        actual = Buffer.from(JSON.stringify(map, null, 2) + '\n');
+      }
+      if (file === 'style.css') {
+        const oldRule = '.masthead nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; width: 100%; }';
+        const newRule = '.masthead nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: 0 1.5rem; width: 100%; }';
+        assert.equal(actual.toString().split(newRule).length, 2);
+        actual = Buffer.from(actual.toString().replace(newRule, oldRule));
       }
       assert.deepEqual(actual,before,file);checked++;
     }

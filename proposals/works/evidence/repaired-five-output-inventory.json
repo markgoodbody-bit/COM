@@ -1,0 +1,146 @@
+{
+  "works/harriet-powers/index.html": {
+    "bytes": 4606,
+    "sha256": "c388ce783d9a5198204a4aa1a1d1cf8fffd8038803fbbb5b1d6eaa4db46ac472"
+  },
+  "works/harriet-powers/work.css": {
+    "bytes": 2580,
+    "sha256": "e75f79f1a0bd04380fbcda400ce76dcad023cf6ee34a15ffd3ef4b38839ae773"
+  },
+  "art/harriet-powers.json": {
+    "bytes": 3544,
+    "sha256": "b513b49ac8a4003f66e2f7ed5e6d5471525c9287a2a0072d888f66f3f4147a09"
+  },
+  "art/harriet-powers-responsive.json": {
+    "bytes": 1176,
+    "sha256": "c92839a5243f67eedda8197f47425b6c338182f09e455848a07cc6bc7a3bdc7b"
+  },
+  "art/harriet-powers-acquisition.json": {
+    "bytes": 2676,
+    "sha256": "b0593fbb2ed82f7ab621eb0f71865c731b5ae2158f4269c46ab7045bb4f1fd22"
+  },
+  "art/bible-quilt-delivered.jpg": {
+    "bytes": 2671829,
+    "sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d"
+  },
+  "art/bible-quilt-720.jpg": {
+    "bytes": 201415,
+    "sha256": "c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802"
+  },
+  "art/bible-quilt-1440.jpg": {
+    "bytes": 862531,
+    "sha256": "816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f"
+  },
+  "works/johannes-vermeer/index.html": {
+    "bytes": 2705,
+    "sha256": "8a4435fc2cb74d33d8623a39111d9ed45e166e12d9ee4ec8f59eab12eb2cfaa1"
+  },
+  "works/johannes-vermeer/work.css": {
+    "bytes": 2155,
+    "sha256": "d825fe3c487103a463497f871fdd5d44e3622e6cf8abcf6c589c0722add2877a"
+  },
+  "art/vermeer.json": {
+    "bytes": 3036,
+    "sha256": "8b3c5c6229d36e2cc9362379e0e5908173b5587a337cfc5ca5c012b578668710"
+  },
+  "art/vermeer-acquisition.json": {
+    "bytes": 2380,
+    "sha256": "2740dd8d2284044f17415db2f08f6edeb7b7b2f9d9df2b6327c9500724540867"
+  },
+  "art/staedel-1149-thumb-xl.jpg": {
+    "bytes": 147792,
+    "sha256": "2eb8819e4afe22c219d7fbd01766e41338c5fbe460d0d41c250f8c698fd39106"
+  },
+  "works/anna-atkins/index.html": {
+    "bytes": 1847,
+    "sha256": "4b287a3560b72bed607581a2d7865bf90e11091648ec4cc0307858995632177a"
+  },
+  "art/atkins.json": {
+    "bytes": 907,
+    "sha256": "b4f7169bd8b0d9cbf8451ff729671efcc6b7befcc997a2aca8bddb3ad4519537"
+  },
+  "art/atkins-images.json": {
+    "bytes": 2544,
+    "sha256": "46ba4513922878cbdb8beee4fd795dc198b209cdbe56dbbd9485a3ae26a40609"
+  },
+  "art/atkins-source.jpg": {
+    "bytes": 4494739,
+    "sha256": "ae5864af965af2d8a063016b1df67a9e765270281b9bc313513cde12d9f974a6"
+  },
+  "art/atkins-720.jpg": {
+    "bytes": 86776,
+    "sha256": "0229c3897343eb90135e9b0f98f6ed4fb29750d355f21fb9f343263b67a41f60"
+  },
+  "art/atkins-1440.jpg": {
+    "bytes": 388918,
+    "sha256": "41ac029360ed274a92d0896aeb6a86d01622e24bc510945506ca0d870c31c809"
+  },
+  "works/shen-zhou/index.html": {
+    "bytes": 2104,
+    "sha256": "def115614cfef6c4011ac3a35777d819d587b768ee06520dfe958936fa10e06a"
+  },
+  "art/shen.json": {
+    "bytes": 1098,
+    "sha256": "3d51bad571ee18945f74f16bee7e639bc27332e2a9ad01c62ef70847e83f503f"
+  },
+  "art/shen-images.json": {
+    "bytes": 2562,
+    "sha256": "220425096232b578e002cc51eacff6938335dc705f54a77e790d22f889d3109c"
+  },
+  "art/shen-source.jpg": {
+    "bytes": 1370966,
+    "sha256": "e9bc05358ce37ef9eae53dd5454fca797b1e1f43ba4dbdb9164e702493282004"
+  },
+  "art/shen-720.jpg": {
+    "bytes": 199265,
+    "sha256": "48bf4e80956c905e64f897b7a4402a4cd3c54c2324c8a4c7f6f1e9d7008589fe"
+  },
+  "art/shen-1200.jpg": {
+    "bytes": 547637,
+    "sha256": "6b7b753c436953a694e8d46ccd06d0b6367a3b708039d773d3f8e3f74c0bc3d1"
+  },
+  "works/edmonia-lewis/index.html": {
+    "bytes": 2351,
+    "sha256": "b7d7f55f53c08707b8b22da5bee1004442c4824fde9189c8486c8c2141a4efac"
+  },
+  "art/lewis.json": {
+    "bytes": 1017,
+    "sha256": "3970ecc6db3a9f5b39cdd33679e2487eaf17b7bc0591ba546b54bbe58baef211"
+  },
+  "art/lewis-images.json": {
+    "bytes": 5819,
+    "sha256": "05c808d154529f5d7953877003a81682043a735c24564c61f10631d4992b2c8f"
+  },
+  "art/SAAM-1994.17_1-source.jpg": {
+    "bytes": 871456,
+    "sha256": "d6494d0620ad68d9e35aaafda8d298891c783bfbc6cef21c729865fdb1230b28"
+  },
+  "art/SAAM-1994.17_1-720.jpg": {
+    "bytes": 77729,
+    "sha256": "85dbff0292e46540538ec07d527cb6aaa5a4929807bc1379cfe24b49c4b53c6b"
+  },
+  "art/SAAM-1994.17_1-1440.jpg": {
+    "bytes": 259543,
+    "sha256": "ffb07c38d4e7ef4925c020a089cf08c30cdcead5883b0cc4b72aaa10d3d47749"
+  },
+  "art/SAAM-1994.17_2-source.jpg": {
+    "bytes": 994431,
+    "sha256": "e9b53e97cf3e7c9cf7bb0de851f6e6c4c14e6fb2b0c73f0591687cef521bca24"
+  },
+  "art/SAAM-1994.17_2-720.jpg": {
+    "bytes": 83009,
+    "sha256": "0e6ceced55aa1f8fd4a150757b9e53fc30b9787c21c200361108feaab2c0274a"
+  },
+  "art/SAAM-1994.17_2-1440.jpg": {
+    "bytes": 296072,
+    "sha256": "b8f399f907c839543dd0c73bfcfc67184cf145c917b7c23a3e9d1341c0d3bbbd"
+  },
+  "works/index.html": {
+    "bytes": 1995,
+    "sha256": "6cbc741b27677f740b6d921efa85a1f704f9c65a0cca0d96bde140e312a76a67"
+  },
+  "works/shelf.css": {
+    "bytes": 3191,
+    "sha256": "b3ea5b5c1d3a05e7adab591890703ccd98f3a4d2bfd87b8a64798f3df26fb0ab"
+  }
+}

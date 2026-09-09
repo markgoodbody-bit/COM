@@ -1,0 +1,67 @@
+[
+  {
+    "source": {
+      "object_id": "49549",
+      "title": "Anchorage on a rainy night",
+      "creator": "Shen Zhou",
+      "acquired_at_utc": "2026-09-09T17:45:20.9364420Z",
+      "requested_url": "https://images.metmuseum.org/CRDImages/as/original/DP235605.jpg",
+      "final_url": "https://images.metmuseum.org/CRDImages/as/original/DP235605.jpg",
+      "http_status": 200,
+      "mime": "image/jpeg",
+      "width": 1722,
+      "height": 4000,
+      "mode": "RGB",
+      "icc_bytes": 0,
+      "exif_orientation": null,
+      "bytes": 1370966,
+      "sha256": "e9bc05358ce37ef9eae53dd5454fca797b1e1f43ba4dbdb9164e702493282004",
+      "object_url": "https://www.metmuseum.org/art/collection/search/49549",
+      "rights_observation": "Official object page displays Public Domain; official API isPublicDomain=true. The page states unrestricted commercial and noncommercial Open Access use without permission or fee.",
+      "source_category": "Met Open Access API primaryImage",
+      "master_status": "UNKNOWN",
+      "status": "ACQUIRED",
+      "file": "met-49549-authoritative.jpg",
+      "rights_observer": "Codex asset subagent museum_assets_b",
+      "local_integrity_readback": "Codex root reread bytes, SHA and decoded metadata",
+      "transformations": [],
+      "selection_status": "CURRENT_BATCH_A_TARGET"
+    },
+    "parent_file": "shen-source.jpg",
+    "variants": [
+      {
+        "file": "shen-720.jpg",
+        "width": 720,
+        "height": 1672,
+        "bytes": 199265,
+        "sha256": "48bf4e80956c905e64f897b7a4402a4cd3c54c2324c8a4c7f6f1e9d7008589fe",
+        "parent_sha256": "e9bc05358ce37ef9eae53dd5454fca797b1e1f43ba4dbdb9164e702493282004"
+      },
+      {
+        "file": "shen-1200.jpg",
+        "width": 1200,
+        "height": 2787,
+        "bytes": 547637,
+        "sha256": "6b7b753c436953a694e8d46ccd06d0b6367a3b708039d773d3f8e3f74c0bc3d1",
+        "parent_sha256": "e9bc05358ce37ef9eae53dd5454fca797b1e1f43ba4dbdb9164e702493282004"
+      }
+    ],
+    "tool": {
+      "pillow": "12.2.0",
+      "jpeg": "8.0"
+    },
+    "settings": {
+      "filter": "Lanczos",
+      "quality": 86,
+      "subsampling": 2,
+      "optimize": false,
+      "progressive": false,
+      "mode": "RGB retained",
+      "icc": "retained byte-for-byte",
+      "exif": "No EXIF copied; orientation absent or1",
+      "crop": false,
+      "upscale": false
+    },
+    "purpose": "Smaller full-frame delivery copies; originals remain linked. Not colour-fidelity validation."
+  }
+]

@@ -13,3 +13,9 @@ public/favicon.ico -text
 public/explore/** -text
 public/resources/** -text
 scripts/RESOURCE_COPIES.json -text
+# Exact reviewed copies; preserve their recorded bytes on every checkout.
+public/works/** -text
+public/art/** -text
+# Retain the existing Homer's record checkout policy; it is not a new copy.
+public/art/camp-fire-responsive.json text
+scripts/WORKS_COPIES.json -text

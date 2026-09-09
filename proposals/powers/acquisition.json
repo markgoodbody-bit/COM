@@ -1,0 +1,49 @@
+{
+  "status": "DELIVERED_IMAGE_ACQUIRED__MUSEUM_TOP_JPEG_IDENTIFIED__TIFF_TIER_EXISTS__MASTER_UNKNOWN",
+  "image_id": "NMAH-75-2984",
+  "requested_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984",
+  "observed_final_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984",
+  "http_status": 200,
+  "response_content_type": "image/jpeg",
+  "response_content_length": 2671829,
+  "acquired_at_utc_basis": "2026-09-09T15:30:49.9780387Z; local completed-file write time",
+  "file": "NMAH-75-2984-delivered.jpg",
+  "bytes": 2671829,
+  "sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d",
+  "decoded_format": "JPEG",
+  "width": 2880,
+  "height": 2412,
+  "mode": "RGB",
+  "embedded_icc_profile_bytes": 560,
+  "alterations": "none; downloaded bytes preserved",
+  "acquisition_time_metadata_read_failures": [
+    "si.edu object URL: web retrieval404",
+    "americanhistory.si.edu object URL: web retrieval500",
+    "Learning Lab: web and browser views did not expose the required metadata/download controls",
+    "Learning Lab direct HTML request: explicit Cloudflare access block; no bypass or retry"
+  ],
+  "later_authoritative_resolution": {
+    "basis": "Claude Code real-browser read of the documented Smithsonian object page and IIIF manifest, COM PR127 comment 5606429869",
+    "object_url": "https://americanhistory.si.edu/collections/object/nmah_556462",
+    "rights_face": "CC0",
+    "iiif_manifest_license": "https://www.si.edu/termsofuse",
+    "iiif_manifest_attribution": "Smithsonian Institution",
+    "iiif_canvas": {
+      "width": 2880,
+      "height": 2412
+    },
+    "museum_download_panel": {
+      "acquired_tier": "High-resolution JPEG (2880x2412)",
+      "higher_tier_exists": "High-resolution TIFF"
+    },
+    "credit_line": "Gift of Mr. and Mrs. H. M. Heckman",
+    "transport_correction": "Earlier retrieval failures were transport failures, not evidence that the object record or metadata was absent."
+  },
+  "exact_rights_wording": "CC0",
+  "exact_credit_wording": "Gift of Mr. and Mrs. H. M. Heckman",
+  "rights_observation": "Later authorised browser reading resolved the acquisition-time transport gap: the acquired bytes are the museum's High-resolution JPEG and match its 2880x2412 IIIF canvas.",
+  "master_status": "UNKNOWN; a High-resolution TIFF tier exists above the acquired JPEG, but the museum surfaces read here do not establish whether that TIFF is a master.",
+  "viewing_copies": [],
+  "public_wiring": false,
+  "next_gate": "No further gate remains for identifying the acquired JPEG tier. Preserve master status as UNKNOWN unless a documented museum source establishes what the TIFF represents."
+}

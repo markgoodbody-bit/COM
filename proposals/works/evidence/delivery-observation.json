@@ -1,0 +1,181 @@
+{
+  "scope": "28 exact local HTTP responses; selected-image bytes from DPR1 full-document rendering, not initial-load timing/transfer or physical-device testing",
+  "images": [
+    {
+      "view": "desktop",
+      "slug": "",
+      "image_bytes": 511562,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg",
+        "art/atkins-720.jpg",
+        "art/shen-720.jpg",
+        "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop",
+      "slug": "johannes-vermeer/",
+      "image_bytes": 147792,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg"
+      ]
+    },
+    {
+      "view": "desktop",
+      "slug": "anna-atkins/",
+      "image_bytes": 86776,
+      "selected_images": [
+        "art/atkins-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop",
+      "slug": "shen-zhou/",
+      "image_bytes": 199265,
+      "selected_images": [
+        "art/shen-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop",
+      "slug": "edmonia-lewis/",
+      "image_bytes": 160738,
+      "selected_images": [
+        "art/SAAM-1994.17_1-720.jpg",
+        "art/SAAM-1994.17_2-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile",
+      "slug": "",
+      "image_bytes": 511562,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg",
+        "art/atkins-720.jpg",
+        "art/shen-720.jpg",
+        "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile",
+      "slug": "johannes-vermeer/",
+      "image_bytes": 147792,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg"
+      ]
+    },
+    {
+      "view": "mobile",
+      "slug": "anna-atkins/",
+      "image_bytes": 86776,
+      "selected_images": [
+        "art/atkins-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile",
+      "slug": "shen-zhou/",
+      "image_bytes": 199265,
+      "selected_images": [
+        "art/shen-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile",
+      "slug": "edmonia-lewis/",
+      "image_bytes": 160738,
+      "selected_images": [
+        "art/SAAM-1994.17_1-720.jpg",
+        "art/SAAM-1994.17_2-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "",
+      "image_bytes": 511562,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg",
+        "art/atkins-720.jpg",
+        "art/shen-720.jpg",
+        "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "johannes-vermeer/",
+      "image_bytes": 147792,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg"
+      ]
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "anna-atkins/",
+      "image_bytes": 86776,
+      "selected_images": [
+        "art/atkins-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "shen-zhou/",
+      "image_bytes": 199265,
+      "selected_images": [
+        "art/shen-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "edmonia-lewis/",
+      "image_bytes": 160738,
+      "selected_images": [
+        "art/SAAM-1994.17_1-720.jpg",
+        "art/SAAM-1994.17_2-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "",
+      "image_bytes": 511562,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg",
+        "art/atkins-720.jpg",
+        "art/shen-720.jpg",
+        "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "johannes-vermeer/",
+      "image_bytes": 147792,
+      "selected_images": [
+        "art/staedel-1149-thumb-xl.jpg"
+      ]
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "anna-atkins/",
+      "image_bytes": 86776,
+      "selected_images": [
+        "art/atkins-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "shen-zhou/",
+      "image_bytes": 199265,
+      "selected_images": [
+        "art/shen-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "edmonia-lewis/",
+      "image_bytes": 160738,
+      "selected_images": [
+        "art/SAAM-1994.17_1-720.jpg",
+        "art/SAAM-1994.17_2-720.jpg"
+      ]
+    }
+  ]
+}

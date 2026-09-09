@@ -1,0 +1,602 @@
+{
+  "browser": "152.0.4191.66",
+  "scope": "Normal integration; JS disabled; DPR1; root font16/32; whole-document geometry and eager image load checks; viewport screenshots only",
+  "results": [
+    {
+      "route": "/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 6397,
+      "images": [
+        {
+          "src": "/art/camp-fire-1440.jpg",
+          "width": 1260.8125,
+          "naturalWidth": 1248,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 1495,
+      "images": [
+        {
+          "src": "../art/bible-quilt-720.jpg",
+          "width": 357.328125,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/staedel-1149-thumb-xl.jpg",
+          "width": 321.671875,
+          "naturalWidth": 915,
+          "loaded": true
+        },
+        {
+          "src": "../art/atkins-720.jpg",
+          "width": 303.859375,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/shen-720.jpg",
+          "width": 155.015625,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/SAAM-1994.17_1-720.jpg",
+          "width": 270,
+          "naturalWidth": 720,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/harriet-powers/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 2783,
+      "images": [
+        {
+          "src": "../../art/bible-quilt-1440.jpg",
+          "width": 1136,
+          "naturalWidth": 1136,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/johannes-vermeer/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 1636,
+      "images": [
+        {
+          "src": "../../art/staedel-1149-thumb-xl.jpg",
+          "width": 640,
+          "naturalWidth": 915,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/anna-atkins/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 1490,
+      "images": [
+        {
+          "src": "../../art/atkins-1440.jpg",
+          "width": 720,
+          "naturalWidth": 720,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/shen-zhou/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 2244,
+      "images": [
+        {
+          "src": "../../art/shen-1200.jpg",
+          "width": 600,
+          "naturalWidth": 600,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/edmonia-lewis/",
+      "width": 1440,
+      "font": 16,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 1400,
+      "images": [
+        {
+          "src": "../../art/SAAM-1994.17_1-1440.jpg",
+          "width": 577.984375,
+          "naturalWidth": 578,
+          "loaded": true
+        },
+        {
+          "src": "../../art/SAAM-1994.17_2-1440.jpg",
+          "width": 577.984375,
+          "naturalWidth": 578,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 14721,
+      "images": [
+        {
+          "src": "/art/camp-fire-1440.jpg",
+          "width": 1324.8125,
+          "naturalWidth": 1248,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 2376,
+      "images": [
+        {
+          "src": "../art/bible-quilt-720.jpg",
+          "width": 426.65625,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/staedel-1149-thumb-xl.jpg",
+          "width": 321.671875,
+          "naturalWidth": 915,
+          "loaded": true
+        },
+        {
+          "src": "../art/atkins-720.jpg",
+          "width": 303.859375,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/shen-720.jpg",
+          "width": 155.015625,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/SAAM-1994.17_1-720.jpg",
+          "width": 270,
+          "naturalWidth": 720,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/harriet-powers/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 4833,
+      "images": [
+        {
+          "src": "../../art/bible-quilt-1440.jpg",
+          "width": 1408,
+          "naturalWidth": 1136,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/johannes-vermeer/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 2605,
+      "images": [
+        {
+          "src": "../../art/staedel-1149-thumb-xl.jpg",
+          "width": 640,
+          "naturalWidth": 915,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/anna-atkins/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 2168,
+      "images": [
+        {
+          "src": "../../art/atkins-1440.jpg",
+          "width": 720,
+          "naturalWidth": 720,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/shen-zhou/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 3082,
+      "images": [
+        {
+          "src": "../../art/shen-1200.jpg",
+          "width": 600,
+          "naturalWidth": 600,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/edmonia-lewis/",
+      "width": 1440,
+      "font": 32,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 1912,
+      "images": [
+        {
+          "src": "../../art/SAAM-1994.17_1-1440.jpg",
+          "width": 577.984375,
+          "naturalWidth": 578,
+          "loaded": true
+        },
+        {
+          "src": "../../art/SAAM-1994.17_2-1440.jpg",
+          "width": 577.984375,
+          "naturalWidth": 578,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 9212,
+      "images": [
+        {
+          "src": "/art/camp-fire-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 3029,
+      "images": [
+        {
+          "src": "../art/bible-quilt-720.jpg",
+          "width": 358,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/staedel-1149-thumb-xl.jpg",
+          "width": 303.796875,
+          "naturalWidth": 915,
+          "loaded": true
+        },
+        {
+          "src": "../art/atkins-720.jpg",
+          "width": 286.984375,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/shen-720.jpg",
+          "width": 146.40625,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/SAAM-1994.17_1-720.jpg",
+          "width": 255,
+          "naturalWidth": 720,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/harriet-powers/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 2697,
+      "images": [
+        {
+          "src": "../../art/bible-quilt-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/johannes-vermeer/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 1433,
+      "images": [
+        {
+          "src": "../../art/staedel-1149-thumb-xl.jpg",
+          "width": 358,
+          "naturalWidth": 915,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/anna-atkins/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 1135,
+      "images": [
+        {
+          "src": "../../art/atkins-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/shen-zhou/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 1734,
+      "images": [
+        {
+          "src": "../../art/shen-1200.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/edmonia-lewis/",
+      "width": 390,
+      "font": 16,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 1649,
+      "images": [
+        {
+          "src": "../../art/SAAM-1994.17_1-1440.jpg",
+          "width": 357.984375,
+          "naturalWidth": 358,
+          "loaded": true
+        },
+        {
+          "src": "../../art/SAAM-1994.17_2-1440.jpg",
+          "width": 357.984375,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 31852,
+      "images": [
+        {
+          "src": "/art/camp-fire-1440.jpg",
+          "width": 326,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 4942,
+      "images": [
+        {
+          "src": "../art/bible-quilt-720.jpg",
+          "width": 358,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/staedel-1149-thumb-xl.jpg",
+          "width": 303.796875,
+          "naturalWidth": 915,
+          "loaded": true
+        },
+        {
+          "src": "../art/atkins-720.jpg",
+          "width": 286.984375,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/shen-720.jpg",
+          "width": 146.40625,
+          "naturalWidth": 720,
+          "loaded": true
+        },
+        {
+          "src": "../art/SAAM-1994.17_1-720.jpg",
+          "width": 255,
+          "naturalWidth": 720,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/harriet-powers/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 7914,
+      "images": [
+        {
+          "src": "../../art/bible-quilt-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/johannes-vermeer/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 3239,
+      "images": [
+        {
+          "src": "../../art/staedel-1149-thumb-xl.jpg",
+          "width": 358,
+          "naturalWidth": 915,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/anna-atkins/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 2523,
+      "images": [
+        {
+          "src": "../../art/atkins-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/shen-zhou/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 3802,
+      "images": [
+        {
+          "src": "../../art/shen-1200.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/works/edmonia-lewis/",
+      "width": 390,
+      "font": 32,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 2923,
+      "images": [
+        {
+          "src": "../../art/SAAM-1994.17_1-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        },
+        {
+          "src": "../../art/SAAM-1994.17_2-1440.jpg",
+          "width": 358,
+          "naturalWidth": 358,
+          "loaded": true
+        }
+      ],
+      "overflow": []
+    }
+  ]
+}

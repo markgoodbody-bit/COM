@@ -1,0 +1,13 @@
+{
+  "javascriptEnabled": false,
+  "method": "Focus native link then keyboard Enter (not exhaustive Tab sequence)",
+  "home_to_works": true,
+  "return_from_work": [
+    "harriet-powers",
+    "johannes-vermeer",
+    "anna-atkins",
+    "shen-zhou",
+    "edmonia-lewis"
+  ],
+  "shelf_to_home": true
+}
