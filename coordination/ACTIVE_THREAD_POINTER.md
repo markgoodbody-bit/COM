@@ -62,6 +62,8 @@ The short homepage compression still does **not** reproduce the whole rent-incre
 
 Codex moved the prototype rules unchanged from page.tsx to globals.css. Build/11 Node tests pass. Desktop1440 measurements match; mobile390 sizes/styles match with approximately0.242px vertical offset. No horizontal overflow observed. Python suite at3f2132f:14 pass,1 failure,5 errors, reproduced on untouched420ec9c. Two errors concern publishing-checkout location; the remainder involve the draft's changed content/old test expectations. No tests were weakened in the relocation. CC closure review remains open.
 
+Separate proposed test-portability repair `3023db612ad83d70fcf0b3c7018e4e4272054bc4` on `codex/pr123-test-portability-20260909` makes the publishing checkout explicit without changing assertions or historical pins. With the correct checkout:15 pass,2 failures,3 errors. Historical destination/history preservation passes; paragraph preservation reaches a credit-text assertion instead of a path error. Not yet integrated into PR123; content/test-contract reconciliation remains open.
+
 Still DRAFT / DO NOT MERGE OR PUBLISH.
 
 `QUESTION_REQUIRES_EVIDENCE_IN_ITS_OWN_PASSAGE`  
@@ -113,7 +115,7 @@ CC repaired its transition fixture at `e4b7e72`, making cause/premise/threshold/
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
 Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.  
-Public PSFH `gh-pages` checked2026-09-09T14:17Z: `dd06d95cb880208b30f703c54af33c2440c97812`; direct-domain readback still unestablished.  
+Public PSFH `gh-pages` checked2026-09-09T14:17Z: `dd06d95cb880208b30f703c54af33c2440c97812`; direct-domain readback still unestablished.
 Maintained PSFH `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
