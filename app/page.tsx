@@ -60,7 +60,7 @@ export default function Home() {
           </header>
           <div className="story-body">
             <p className="story-lead">Two flats share a wall. Martin owns upstairs. Leah and Sam rent downstairs with their daughter, Mia. Damp appears behind Mia&apos;s bed and spreads while both households try to reach repair.</p>
-            <p>Upstairs, Martin reports the problem through a managing-agent route. Downstairs, Leah and Sam report the damp through the landlord&apos;s portal while Mia&apos;s room keeps changing.</p>
+            <p>Upstairs, Martin&apos;s managing-agent route reaches a person with authority. Downstairs, Leah and Sam enter a tenant portal designed to receive many requests; it gives them a reference number while Mia&apos;s room keeps changing.</p>
             <p>The upstairs wall is repaired. Downstairs, an inspection is offered after Leah and Sam have found another tenancy. They leave before anyone enters the room. The case can close; the consequences do not necessarily close with it.</p>
             <div className="story-questions" aria-label="Questions from the scene">
               <p><strong>What had changed by the time an inspection was offered?</strong></p>
@@ -83,8 +83,9 @@ export default function Home() {
           </article>
           <article id="challenge">
             <h2>I want to explore, question or disagree</h2>
-            <p>Wander without committing to a method, try the material on a real question, or challenge what seems wrong or incomplete. A useful objection does not need this project&apos;s vocabulary and does not have to propose a repair. Reading and leaving is also a complete use.</p>
+            <p>You do not need a problem, an identity category or a commitment to begin. Wander without committing to a method, try the material on a real question, or challenge what seems wrong or incomplete. A useful objection does not need this project&apos;s vocabulary and does not have to propose a repair. Reading and leaving is also a complete use.</p>
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">Explore</a> · <a href="https://pleasestartfromhere.com/discussion/">Read questions and discussion</a></p>
+            <p>This on-site discussion is read-only; it does not receive replies yet.</p>
           </article>
         </div>
         <div className="perspective-and-boundaries">
