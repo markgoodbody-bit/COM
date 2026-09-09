@@ -36,7 +36,12 @@ const { default: Page } = await import(pathToFileURL(modulePath).href);
 const body = renderToStaticMarkup(React.createElement(Page));
 if (/<script\b|<form\b|<iframe\b/i.test(body)) throw new Error('Reader path must be static and read-only');
 const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Please Start From Here</title><meta name="description" content="A voluntary starting point for understanding, deciding, making and correcting under uncertainty."><link rel="describedby" type="text/plain" href="https://pleasestartfromhere.com/llms.txt"><link rel="alternate" type="text/plain" href="https://pleasestartfromhere.com/llms.txt"><link rel="alternate" type="application/json" href="https://pleasestartfromhere.com/explore/start.json"><link rel="stylesheet" href="./style.css"></head><body>' + body + '</body></html>\n';
-await writeFile(path.join(root, 'out/index.html'), html);
+// Browser-tab identity only; do not change the visible page or reading payloads.
+const faviconLinks = '<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">';
+await writeFile(path.join(root, 'out/index.html'), html.replace('</head>', faviconLinks + '</head>'));
+for (const name of ['favicon.svg', 'favicon.ico', 'favicon-LICENSE.txt']) {
+  await writeFile(path.join(root, 'out', name), await readFile(path.join(root, 'public', name)));
+}
 await writeFile(path.join(root, 'out/style.css'), await readFile(path.join(root, 'app/globals.css')));
 const machineFiles = ['llms.txt', 'seed.txt', 'manifest.json', 'robots.txt', 'sitemap.xml'];
 for (const name of machineFiles) {

@@ -40,6 +40,12 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         assert.deepEqual(JSON.parse(actual), CAMP_FIRE);
         continue;
       }
+      // Newly requested icon assets have no historical counterpart; exact pins
+      // and header-only scope are independently asserted in test-favicon.mjs.
+      if (['favicon.svg', 'favicon.ico', 'favicon-LICENSE.txt'].includes(relative)) {
+        assert.deepEqual(actual, await readFile('public/' + relative));
+        continue;
+      }
       const before = execFileSync('git', ['show', baseline + ':' + relative], { cwd: publishing, maxBuffer: 10 * 1024 * 1024 });
       if (relative.endsWith('.html')) {
         const html = actual.toString('utf8');

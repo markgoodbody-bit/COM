@@ -8,6 +8,8 @@ public/changes.* text eol=lf
 # The stylesheet is copied verbatim; builds must not depend on checkout settings.
 app/*.css text eol=lf
 public/art/*.jpg -text
+public/favicon.svg text eol=lf
+public/favicon.ico -text
 public/explore/** -text
 public/resources/** -text
 scripts/RESOURCE_COPIES.json -text
