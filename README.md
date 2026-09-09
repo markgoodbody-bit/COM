@@ -1,5 +1,32 @@
 # Maintained Please Start From Here source
 
+## Art-first journeys, 9 September 2026
+
+Before: Explore, Reachable futures and five dedicated work pages put headings or
+navigation above their artwork. After: their first visible surface is the whole
+image, with titles, navigation and accounts below. A focusable skip link stays
+first in keyboard order. The five accounts now end with optional links to All
+works, the reading map and the opening. No compulsory next-work sequence.
+
+Basis: maintained `0f627f2357d74de6b1556e25f5e4a0be5c9a7c57` and
+[Mark's art-first direction relayed by FW](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5609413248).
+The homepage composition is unchanged. Image bytes, museum records, account
+prose and reading text are retained. Powers and Vermeer HTML line endings were
+normalised; their current copy pins change, not the historical reviewed pins.
+
+Normal build and 25 targeted checks passed (13 Node, 12 first-contact Python).
+The new source comparison permits only the named block moves, skip target and
+end links, with inter-tag whitespace normalisation. It does not extend the old
+source review to approve later presentation changes. Browser inspection covered
+all seven revised pages at actual 1440x900 and 390x845: image top at zero, loaded
+images and no horizontal overflow. A stale phone viewport override was detected;
+those desktop readings were discarded and the phone checks repeated. Vermeer's
+skip-to-account and end-to-map links, and Explore's keyboard bypass, worked.
+
+These are bounded implementation observations, not accessibility conformance,
+new source verification or evidence of reader benefit. AI-arrival PR130 remains
+separate and unpublished. The publishing branch owns the deployment receipt.
+
 ## Whole-painting arrival, 9 September 2026
 
 Presentation-only revision from maintained `742b80e51c0c1b04decf333802a37a0945c637c3`,
@@ -23,7 +50,7 @@ handoff. This is bounded presentation QA, not accessibility conformance or reade
 benefit. Git history preserves the earlier composition; the publishing branch
 owns the actual deployment receipt. AI-arrival changes remain CC's separate lane.
 
-## Current painting-led opening and delivery, 9 September 2026
+## Earlier painting-led opening and delivery, 9 September 2026
 
 Preview 0.8.3 preserves the museum original and supplies two smaller viewing
 copies. The desktop title sits over the full frame in a readable dark panel;
