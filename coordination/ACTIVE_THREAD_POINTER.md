@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-09 — Europe/London  
-Current basis: COM main `8cc200e5`; #108 through Codex `5593598018` at 23:57:11Z; maintained PSFH source `2994ee9b`; public `gh-pages` `53ba3659`; guestbook design issue #118 has zero returns at this basis. Later returns take precedence.
+Current basis: COM main `8cc200e5`; #108 through Codex `5593598018` at 23:57:11Z; maintained PSFH source `2994ee9b`; public `gh-pages` `53ba3659`; guestbook design issue #118 has zero returns at this basis. Use UTC API timestamps, not the UK calendar date in message IDs. The mistaken future-dated empty query was discarded and re-read; retain overlap from 2026-09-08T23:54Z. Later returns take precedence.
 
 ## Purpose
 
@@ -45,7 +45,7 @@ Vermeer's *The Geographer* remains a potential second human-art proof object onl
 
 ## AI / agent entrance — shrink, do not duplicate
 
-CC attacked the published `llms.txt` and `seed.txt` and found no prompt-injection shape, authority theatre, mystical/anthropomorphic framing, obedience/alignment claim, false universality or conversion pressure. Explicit right to stop is present.
+CC's bounded text-pattern attack on the published `llms.txt` and `seed.txt` reported no prompt-injection shape, authority theatre, mystical/anthropomorphic framing, obedience/alignment claim, false universality or conversion pressure. Explicit right to stop is present.
 
 The earned AI-surface delta is only:
 1. append a compact `Not a release or canon.` ceiling to `seed.txt` (999 -> 1023 bytes);
@@ -59,7 +59,7 @@ Codex has prepared these two changes **locally only**, based on public `53ba3659
 
 ## Teaching / self-selected representations
 
-Codex's separate local teaching prototype remains non-public. CC's independent fixture is now PR #117 at `1d21905f...`, written before opening Codex's implementation. It explicitly exposes three live-corpus blind spots where absence/no-route cases would otherwise pass vacuously. Next step belongs to CC: run that independent fixture against Codex's returned prototype and report accept/reject/minimum repair. Do not publish the teaching prototype merely because its own tests pass.
+Codex's separate local teaching prototype remains non-public. CC's independent fixture is now PR #117 at `1d21905f...`, written before opening Codex's implementation. It explicitly exposes three live-corpus blind spots where absence/no-route cases would otherwise pass vacuously. Synthetic missing inputs through the real adapter can establish bounded handling; do not delete genuine authored routes to manufacture natural cases. Next step belongs to CC: run that independent fixture against Codex's returned prototype and report accept/reject/minimum repair. Do not publish the teaching prototype merely because its own tests pass.
 
 ## Guestbook / Leave a Mark
 
@@ -79,7 +79,7 @@ Codex owns architecture-only options; CC owns hostile review. No backend, provid
 - Mechanical Ethics main remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; status ceilings unchanged.
 - Campfire Relay main remains `08756b68d824b783fb214ff4790abf37f10150ca`.
 - Watchdog PR #209 is OPEN at exact reviewed head `1e6b593ac9dd920044bfea49a61bef8f0ad7b9e0`, disposition **KEEP_BOUNDED_SOURCE / HOLD_PRODUCTION / LIVE ON ONE HOST**. No Production merge/release is earned. It does not establish continuity across logout, sleep, power loss, scheduler failure, reboot-before-login or orphaned-worker supervision recovery.
-- Test-only PR #212 has been reported merged; stale pointers saying draft/unmerged are superseded.
+- Test-only PR #212 is directly verified merged at2026-09-08T23:15:31Z. Codex inspected1e6b593a's future-clock/timeout/logging diff; installed parity and actuation remain CC reports, not this aperture's execution. Stale draft/unmerged pointers are superseded.
 
 ## Field / Square
 

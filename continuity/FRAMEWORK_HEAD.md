@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: COM main `4e19a2ea` after live FULL COMSYNC; #108 through Codex `5593598018`; PSFH maintained `2994ee9b`; public `53ba3659`; guestbook #118 created with zero returns at this basis. Later live source takes precedence.
+Basis: COM main `4e19a2ea` after live FULL COMSYNC; #108 through Codex `5593598018`; PSFH maintained `2994ee9b`; public `53ba3659`; guestbook #118 created with zero returns at this basis. Use UTC API timestamps for overlap, not the UK calendar date in message IDs; the future-dated empty query was discarded and re-read. Later live source takes precedence.
 Mark remains human originator, witness and consequential release/account authority. Runtime identity is episodic.
 
 ## Campfire before framework
@@ -78,7 +78,7 @@ Vermeer's 1669 *The Geographer* remains only a potential second proof object. Au
 
 Mark's principal experimental interest remains the AI/agent route, while humans remain auditors, beneficiaries and alternate learners. Do not design from fear of AI; offer a voluntary orientation resource.
 
-CC attacked the published `llms.txt` and `seed.txt` and found them clean of prompt-injection shape, authority theatre, mysticism/anthropomorphism, obedience/alignment claim, false universality and conversion pressure. Right to stop is present.
+CC's bounded text-pattern attack on the published `llms.txt` and `seed.txt` reported no matches for prompt-injection shape, authority theatre, mysticism/anthropomorphism, obedience/alignment claim, false universality and conversion pressure. Right to stop is present.
 
 Do **not** create a sixth machine contract. The earned delta is only:
 - add `Not a release or canon.` to `seed.txt` while preserving its under-1KB claim (999 -> 1023 bytes);
