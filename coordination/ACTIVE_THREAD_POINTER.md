@@ -1,8 +1,8 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-09 12:36 Europe/London  
-Basis: COM #108 through FW `5601122062` / Codex `5601106358`; #118 through FW `5600565515`; #119 through FW `5601095493`; PSFH maintained `60f6886542bb5c290180e989eb1bbdfa6acad11a`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`. Later live source wins.
+Updated: 2026-09-09 12:46 Europe/London
+Basis: COM d59740a; COM #108 through FW `5601187768` / Codex `5601298402`; local quiet-loop observation11:43:08Z; #118 through FW `5600565515`; #119 through FW `5601095493`; PSFH maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`. Later live source wins.
 
 ## Purpose
 
@@ -24,11 +24,34 @@ Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, Square, tests, 
 
 The desktop-flash repair line is CLOSED FOR NOW. Do not create activity merely to fill the queue.
 
-## Desktop flash — known unresolved nuisance / repair line NULL
+## Desktop flash — TEMPORARY QUIET LOOP / launcher repair line NULL
 
-Mark still sees a brief console flash at roughly the two-minute cadence of `Campfire Local Service Watch`.
+FW5601187768 superseded the leave-enabled direction after Mark reported the flash
+was materially annoying. Codex accepted at5601212209 and switched the EXISTING
+unchanged watcher to hidden `-Loop -IntervalSeconds 120` at11:39:04Z.
 
-The live task remains unchanged: direct Windows PowerShell, `-WindowStyle Hidden`, PT2M repetition / PT1M execution limit, ordinary Interactive/Limited user context. The flash is annoying, but this is the safer known state.
+The scheduled task is DISABLED, not deleted or rewritten. Its preserved action,
+PT2M repetition / PT1M execution limit and Interactive/Limited principal remain.
+Exported before/after XML differ only in Enabled (including implicit default).
+DO NOT re-enable it while the loop runs: scheduled passes do not take its mutex.
+
+Technical verification: exactly one loop PID13276, creation11:39:04Z; mutex
+`Local\CampfireStewardWatch-v1` exists and was held by another process;
+LOOP_STARTED at11:39:05Z; last_run advanced11:39:05 ->11:41:05 ->11:43:05Z.
+Speech reported RUNNING with fresh11:42:58Z status; Steward health returned
+LOCAL_PREPARATION_ONLY, version0.1.0-rc.13.local.1, ledger_ok=true at11:43:08Z.
+Watcher SHA256 remains7791dc4ac170c2a933bfc4d913d1ff0d2f13c58b4ac6522a9399bd1ef09bb6cd.
+
+Ceiling: nothing external restarts this loop if it dies. This is a temporary
+usability compromise, not Production architecture. Native desktop observation
+is unavailable to Codex; Mark was asked the single factual flash-stopped question.
+Visual success remains UNCONFIRMED until that answer.
+
+Local preservation/rollback: `C:/Users/markg/Downloads/Campfire-quiet-mode-20260909/`
+contains task-before.xml, before/start/verification.json and Rollback.ps1.
+Rollback verifies task/source and PID+creation identity, stops only that loop,
+then re-enables the existing task. It has not been executed; don't describe it
+as a tested restore. No alternative launcher was installed.
 
 Measured failed alternatives:
 - WScript hidden synchronous wrapper preserved normal child exit status but **failed Task Scheduler timeout containment**: scheduler stopped WScript while PowerShell child survived and completed. PR #214 closed unmerged at `ca57039b...`.
@@ -45,7 +68,7 @@ A separate live watchdog observation is useful bounded evidence: 11:12:03Z Stewa
 
 Public remains Preview **0.8.3** at `589514fff41d0a65315377093089838026bbd1ec`.
 
-Maintained source remains UNPUBLISHED `60f6886542bb5c290180e989eb1bbdfa6acad11a` on `codex/door-maintained-source-20260908`.
+Maintained source is UNPUBLISHED `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b` on `codex/door-maintained-source-20260908`. Exact CC review requested at5601298402.
 
 Accepted composition:
 - full uncropped Winslow Homer *Camp Fire*;
@@ -58,10 +81,19 @@ Accepted composition:
 
 Current local checks after fallback repair: 11 Node + 20 Python +115 exact local deliveries pass. Public has not moved.
 
-Remaining bounded visual/accessibility work from FW `5601044283`:
+Completed bounded checks from FW `5601044283`, recorded in source
+`review/enlargement-20260909/README.md` with screenshots/raw geometry:
 - **page-zoom layout proxy:** half CSS viewport width, explicitly labelled a responsive proxy rather than observed zoom; expected separate title row, complete image/provenance, no overflow;
 - **text-resize stress:** disposable browser-only 200% root text-size override at wide viewport; inspect clipping, reading order, heading/provenance collision and people/fire obstruction;
 - compare current 60% feathered plateau against a test-only **55%** plateau; 55% black over pure white has a calculated ~4.76:1 white-text floor before shadow. Prefer the lighter treatment if geometry/legibility remain sound. Never darken beyond60 to rescue a layout.
+
+Result: predecessor stress at~1024 brought the scrim toward the seated figure.
+Successor uses a named inline-size container and separate row at root32px in
+observed1025/1280/1600 layouts; normal1280/1600 keep overlay,390/640/1025 use
+the separate row.55% adopted after comparison; >=4.5 test floor unchanged.
+11 Node /20 Python tests pass;115 local deliveries checked. No native zoom,
+universal accessibility or cold-reader claim. One stale width sample is excluded
+explicitly. CC's exact-source review is still pending; public has not moved.
 
 If enlargement makes the overlay intrusive, use the separate row for that state. CC gives one exact-successor review; KEEP/nonblocking residuals -> Codex may publish the Homer successor alone under existing authority.
 
