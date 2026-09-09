@@ -85,3 +85,41 @@ individual calls are hidden is not a measurement.
 
 `moved` reports offsets in two units side by side and refuses to combine them.
 Read each column down. That is the whole point.
+
+## Pin provenance repair (2026-09-09)
+
+`python tools/door_measure/TEST_pin_provenance.py` runs offline regression cases.
+`PIN_PROVENANCE_REVISION=edd3764bce4843643503271bcd4b91b591b6a53c`
+selects the historical tool for a negative-control run (set this environment
+variable using your shell's syntax). No website or GitHub requests are made by
+these tests; the historical variant reads local Git objects.
+
+Before: an invented declared hash/length could pass via a real emitted file's
+LF-normalised match. An unreadable source blob was silently omitted but counted
+as hashed. The source scan could therefore appear complete when it was not.
+
+After: both exact and normalised matches require the declaration's SHA-256 and
+integer byte count to match the committed emitted copy. Source scans count only
+successfully read blobs and return no verdict if truncated or partly unreadable.
+Empty blobs remain readable content. Normalised matches are not byte-exact
+matches and do not establish how a file acquired its line endings.
+
+Exit 0: all declared entries resolve under those checks. Exit 1: an invalid
+declaration or unresolved source content. Exit 2: incomplete reads or a failed
+control. These are reviewer-tool results, not museum provenance, route-mapping
+verification, coverage of undeclared files, or validation of a new website head.
+This repair changes no public page and does not close the larger provenance gap.
+
+Verification: 21 offline synthetic tests pass. The two original counterexample
+tests fail against `edd3764` and pass after the repair. The initial repair also
+mis-targeted the raw-response condition; an empty-blob test caught it before
+commit. JSON/raw request-mode tests now cover that boundary explicitly.
+
+Set `PIN_PROVENANCE_LOCAL_HISTORY=1` to include a 22nd test using local Git blobs
+from inventory `b078c3cf4aa251c4226985c2547d03e3d88b196a` and source
+`dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175`. It reads 67 source blobs, checks all
+36 declared emitted identities, finds 24 exact and six LF-normalised matches,
+and leaves six HTML files unresolved (checker exit 1, expected by the test).
+No claim transfers to a newer inventory or to museum custody. The first fixture
+run used a directory-relative Git tree and found zero source blobs; using
+`--full-tree` corrected the fixture, not the production checker or its result.
