@@ -24,7 +24,7 @@ Do not republish or reopen the release. The public usefulness ceiling remains: p
 
 `RELEASE_CLOSED != USEFULNESS_PROVEN`
 
-### 2. Requested browser-tab icon — SOURCE MERGED / PUBLICATION AUTHORISED
+### 2. Requested browser-tab icon — PAGES DEPLOYED / SERVED CHECK OPEN
 
 Mark requested a browser-tab icon. Exact candidate `e0add509d0708533560e856568ac6ba70c844936` was reviewed by Framework and merged into maintained PSFH as:
 `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.
@@ -40,7 +40,9 @@ Exact intended public delta against `gh-pages 965687ee...`:
 
 Source build evidence:14 Node tests incl118 exact local deliveries,22 Python tests and route check PASS;32px raster inspected. Geometry is existing Lucide Flame1.31.0 with amber/dark adaptation; ISC notice applies only to the icon.
 
-Framework publication authority: #108 `5605452516`. At most one icon-only public push; preserve publishing config; browser cache delay is not a retry reason. At the last fresh ref read public was still `965687ee...`, so do not claim icon publication until the public ref/Pages/readback move.
+Framework publication authority: #108 `5605452516`. Codex published once as `9ba8557cbc197e634bb8252f1ce6b977273ff29b`, parent965687ee. All118 generated Git blobs match the reviewed build; the four-path delta and publishing configuration preservation were verified. Pages run `34381300505` completed SUCCESS for exact9ba8557, updated_at2026-09-09T17:11:06Z. Receipt: `evidence/PSFH_FAVICON_PUBLICATION_20260909.md`.
+
+Served root-head/icon readback remains open. Browser cache delay is not a retry reason. No Powers/content/edition change was included.
 
 `ICON_PUBLISHED != EVERY_BROWSER_CACHE_REFRESHED`
 
@@ -64,13 +66,14 @@ Presentation contract: dedicated `/works/harriet-powers/`, whole quilt given vis
 Open evidence/review:
 - Framework requested independent CC art review in PR127 `5605204288`;
 - Framework requested actual browser measurements in `5605456448`: ~1440 desktop, ~390 mobile and materially enlarged text; report viewport/scrollWidth/image size/overflow/order before any repair.
+- Codex has now supplied actual measurements in `evidence/PSFH_POWERS_MEASURED_LAYOUT_20260909.md`, COM0d4aa67: installed headless Edge152/Playwright1.62.1, isolated local-only contexts at1440/390px and root fonts16/32px. No horizontal overflow in those four states; whole frame/section order preserved. Screenshots stay local; no source change. Doubled root font is not native browser zoom or physical-device validation. This closes the missing measurement task, not CC's editorial judgement.
 - CSS deduction is not render observation. If a defect appears, report before repair.
 - After review, any integration candidate must be refreshed onto current maintained source (`e30debac...` or later), because PR127's original base predates0.8.4/favicon even though the isolated changes are mergeable.
 
 `ART_SHOULD_STAND_BEFORE_IT_TEACHES`
 `CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
 
-### 4. Vermeer — EXACT RECORD-LINKED SOURCE ACQUISITION REOPENED
+### 4. Vermeer — EXACT RECORD-LINKED SOURCE ACQUIRED / PRESENTATION NOT BUILT
 
 Städel authoritative object page for Johannes Vermeer, *The Geographer* (1669), inventory1149, marks the picture Public Domain and directly links:
 `https://cdn.staedelmuseum.de/images/49/7c/1149/thumb-xl.jpg`.
@@ -80,6 +83,8 @@ Framework independently confirmed that exact URL renders the image through a pub
 Powers clarified the custody rule: an exact authoritative source image can be useful without a museum-master claim. Framework therefore withdrew the earlier full-master prerequisite in #108 `5605509411`.
 
 Codex/local may acquire **that exact record-linked URL only**. No guessed CDN variants/API/IIIF/account. Return final URL/status/MIME/bytes/dimensions/profile/orientation/SHA, source category `AUTHORITATIVE_RECORD_LINKED_THUMB_XL` (or equivalent), and `MUSEUM_MASTER_STATUS = UNKNOWN`. Never upscale. If native dimensions are too small for a faithful bounded presentation, return `SOURCE_ACQUIRED_BUT_PRESENTATION_TOO_SMALL`. Source-only record/check/presentation only; no public wiring. Powers remains the higher integration gate.
+
+Acquisition is now complete; do not repeat it. Codex observed HTTP200 at the exact URL, JPEG915x1024/RGB/147792bytes, no ICC or EXIF orientation flag, SHA256 `2eb8819e4afe22c219d7fbd01766e41338c5fbe460d0d41c250f8c698fd39106`. Fresh museum-page read confirms the picture's Public Domain label. Exact file and acquisition record are local in `PSFH-Vermeer-source-proof-20260909`; evidence in `evidence/PSFH_VERMEER_SOURCE_ACQUISITION_20260909.md`, COM0d4aa67. Native dimensions permit a bounded presentation without enlargement. No derivative is yet justified at148KB; no presentation/public wiring or HUMAN_ART.md wording change has been made.
 
 `EXACT_AUTHORITATIVE_SOURCE_IMAGE != MUSEUM_MASTER`
 
