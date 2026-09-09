@@ -1,0 +1,161 @@
+{
+  "source": "8b17e5a; final nav grid",
+  "results": [
+    {
+      "viewport": 1440,
+      "font": 16,
+      "width": 1440,
+      "scroll": 1440,
+      "columns": "none",
+      "links": [
+        {
+          "text": "Ways to begin",
+          "width": 97.09375,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Explore",
+          "width": 50.59375,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Works",
+          "width": 42.96875,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Read the book",
+          "width": 98.984375,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Discussion",
+          "width": 71.515625,
+          "height": 44,
+          "lineHeight": "25.5px"
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "font": 32,
+      "width": 1440,
+      "scroll": 1440,
+      "columns": "none",
+      "links": [
+        {
+          "text": "Ways to begin",
+          "width": 194.171875,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Explore",
+          "width": 101.171875,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Works",
+          "width": 85.921875,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Read the book",
+          "width": 197.953125,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Discussion",
+          "width": 143.03125,
+          "height": 88,
+          "lineHeight": "51px"
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "font": 16,
+      "width": 390,
+      "scroll": 390,
+      "columns": "167px 167px",
+      "links": [
+        {
+          "text": "Ways to begin",
+          "width": 167,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Explore",
+          "width": 167,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Works",
+          "width": 167,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Read the book",
+          "width": 167,
+          "height": 44,
+          "lineHeight": "25.5px"
+        },
+        {
+          "text": "Discussion",
+          "width": 167,
+          "height": 44,
+          "lineHeight": "25.5px"
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "font": 32,
+      "width": 390,
+      "scroll": 390,
+      "columns": "326px",
+      "links": [
+        {
+          "text": "Ways to begin",
+          "width": 326,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Explore",
+          "width": 326,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Works",
+          "width": 326,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Read the book",
+          "width": 326,
+          "height": 88,
+          "lineHeight": "51px"
+        },
+        {
+          "text": "Discussion",
+          "width": 326,
+          "height": 88,
+          "lineHeight": "51px"
+        }
+      ]
+    }
+  ]
+}
