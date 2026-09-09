@@ -1,5 +1,26 @@
 # Campfire Door public preview
 
+## Contextual art and history catch-up, 9 September 2026
+
+Maintained source `0f6bd04248b97523e2df3929723b49dc9e3963dc` matches the
+complete tested PR137 candidate tree `2f2a4b649effe765c4d5038c36af05ce9dc4a98c`.
+Authority: Mark's direct publish-if-ready instruction and subsequent proceed;
+[coordination receipt](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5608717311).
+
+Explore and Futures gain distinct image-aware entrances using existing exact
+Atkins and Shen Zhou copies. Titles remain outside the whole images; credits
+link back to canonical Works pages. The prior reading bodies remain intact.
+Four homepage map links now target the reading list directly, bypassing art.
+D016 catches up the reader change log while preserving D015 and older entries.
+No new image bytes, machine-arrival text, intake, tracking or hosting change.
+
+Of154 generated files, eight change and146 remain exact prior-public bytes.
+19 Node/22 Python checks, ten JS-disabled viewport states and keyboard/direct
+map/reading/source/back navigation checks are recorded in review/contextual-art.
+These are bounded functional/presentation checks, not a reader-benefit claim.
+Rollback: ordinary content revert to `5af680b5f7016f4198b8819f2b9ed93d568eb1c3`.
+Pages completion is recorded in COM; no Codex direct-domain served-byte claim.
+
 ## Optional human foyer, 9 September 2026
 
 Published source: maintained `55b9690d7a45a313871e1b5fbbfc64083c4b1ebd`,

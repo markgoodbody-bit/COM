@@ -165,8 +165,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3255,
-      "sha256": "c23d515269feeb42aefbdc334272e30fc15c1e2655817278f42ae149b23ffd59"
+      "bytes": 4701,
+      "sha256": "6a649b82d4f15724fe91713e466c4b7e622b0a6939a612c7c8b43bee9030ac69"
     },
     {
       "path": "index.md",
@@ -245,8 +245,8 @@
     },
     {
       "path": "nodes/futures.html",
-      "bytes": 2523,
-      "sha256": "8b682b222ef336e7599269b6c73d071dbe26de1542a669ba4253ca315a5bd046"
+      "bytes": 3923,
+      "sha256": "501db1b684dff8b0c887daf021032525a3398af6926316b173fad343a0250f97"
     },
     {
       "path": "nodes/futures.json",

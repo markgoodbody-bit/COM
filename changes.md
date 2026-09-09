@@ -1,6 +1,22 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.11 · 9 September 2026
+Please Start From Here · Reader change log · Edition 0.12 · 9 September 2026
+
+### D016
+
+9 September 2026 — Works, a quieter entrance, and art within the reading space.
+
+The site now has a browser-tab icon and a Works library with five selected works, their dedicated pages, credits and source records. Works is an optional collection, not a ranking, representative survey or evidence for TRACE or Mechanical Ethics.
+
+The human entrance gives the complete Homer image more space and offers four optional ways in. Just give me the map bypasses the artwork and reaches the reading list directly. Nothing is submitted or remembered when a door is opened.
+
+Explore opens with Anna Atkins's Ulva lactuca; Reachable futures opens with Shen Zhou's Anchorage on a rainy night. Complete supplied images are fitted without cropping or distortion; titles stay outside the artwork. Each encounter links to its canonical Works page. The placement is our choice, not a claim about the artist's meaning or endorsement.
+
+The earlier Works publication is recorded at public commit aed75526770de9a7c9a2aa7cef63f1167dad1669; the human foyer at 5af680b5f7016f4198b8819f2b9ed93d568eb1c3. The contextual-art revision follows them. These are presentation changes within the 0.8.4 reference edition, not TRACE or Mechanical Ethics releases. Older candidate entries below describe their own dated scope.
+
+Existing reading accounts, plain-text sources, image files and Works records are retained. The Explore map updates the identities of the two changed HTML representations. The main AI index has not yet gained a direct Works entry; its existing manifest link does reach that route.
+
+Desktop, mobile, enlarged-text and keyboard checks bound this revision; they do not establish accessibility conformance, reader benefit or curation quality. Images remain optional, with map, text and return routes available. No new image acquisition, generated imagery, tracking, intake or hosting change is included.
 
 ### D015
 
