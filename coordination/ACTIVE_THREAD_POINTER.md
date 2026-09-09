@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-09 12:12 Europe/London  
+Updated: 2026-09-09 12:30 Europe/London
 Basis before this write: COM main `a95e561f12b398d78acc26a2ccd021b92a7db8f1`; COM #108 through Framework `5600887969` (with Codex correction `5600739966`); #118 through Framework `5600565515`; #119 through Framework `5600671017`; PSFH maintained `60f6886542bb5c290180e989eb1bbdfa6acad11a`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`; rejected hidden-launch PR #214 head `ca57039b69eae271e1633c5f8b4d36f03c91debb`. Later live source wins.
 
 ## Purpose
@@ -25,6 +25,16 @@ Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, Square, tests, 
 Do not create activity merely to fill the queue.
 
 ## Desktop flash — WScript candidate rejected
+
+Latest bounded result: the in-process GUI-host predecessor `77befe4` and
+invocation-operator successor `e7eb941d53295b6460bd401719015ee760e2921e` both
+return1 for explicit exit37, with SetShouldExit=False. The successor implements
+FW `5601044283`'s parameterised AddScript/file-invocation test. Receipt and scope
+are in `tools/local_service_watchdog/inprocess/REVIEW.md` on
+`codex/watch-inprocess-host-20260909`. NULL / STOP THIS REPAIR LINE FOR NOW.
+Later scheduler/intentional-child gates were not run after the first discriminator
+failed. No installation; the desktop flash remains unresolved. The investigation
+requirements below are preserved context, not authority to keep expanding it.
 
 Mark reports a visible console flash roughly every two minutes. Installed `Campfire Local Service Watch` already uses direct `powershell.exe` with `-WindowStyle Hidden`, PT2M repetition / PT1M execution limit, Interactive/Limited ordinary-user context. Missing flags were not the cause.
 
@@ -75,12 +85,24 @@ Current build evidence after fallback repair: 11 Node + 20 Python checks and 115
 
 Remaining gate: meaningful enlarged-text/reflow observation at representative desktop widths plus narrow fallback; inspect scrim coverage, clipping/overflow, people/fire obstruction and visual weight. Framework `5600822527` also requests a browser-only `.55` black scrim comparison: under the same sRGB bound, 55% black over even white gives ~4.76:1 with white text. Prefer 55% over 60% if full glyph/plateau coverage remains >=4.5; do not go lower without a fresh bound. If enlargement breaks overlay geometry, switch that state to the existing separate row rather than darken more painting.
 
+Codex did not establish actual browser zoom: shortcuts left measured viewport,
+DPR and font sizes unchanged. FW `5601044283` now permits two explicitly labelled
+proxies: half-width reflow and a disposable 200% root-text-size stress, plus a
+test-only55% scrim comparison. These have not yet been completed. Neither proxy
+is a genuine zoom observation or universal accessibility/conformance evidence.
+
 CC then does one narrow exact-successor review. If KEEP/nonblocking residuals, existing authority allows Codex to publish the presentation successor without bundling guestbook/usefulness/AI-route work.
 
 `GOOD_COMPOSITION + ROBUST_READABILITY`  
 `ENLARGEMENT_FAILURE -> SEPARATE_ROW, NOT_HEAVIER_CARD`
 
 ## Speech supervisor — adverse installed shape, successor NULL
+
+Separate live Steward observation: local watchdog ledger records UNREACHABLE /
+AWAITING_CONFIRMATION at11:12:03Z, RESTARTED at11:14:03Z and RUNNING at11:16:01Z.
+Codex independently reread these entries after CC `5601044631`. This supports
+the observed confirmation/recovery sequence, not its underlying cause, exact
+downtime, or validation of the speech-supervisor successor below.
 
 Separate from the scheduled-task flash. Five null-age restart transitions have been reread through 09:57:07Z; cause and total outage remain unknown.
 
