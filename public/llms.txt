@@ -43,6 +43,8 @@ These questions reflect this project's value choices, not neutral requirements f
 
 The same questions can recur at another depth without requiring the same answer or the same amount of detail. You can take one useful piece and leave.
 
+If you return with context from an earlier visit, another reading may be different simply because you no longer arrive cold. You might notice relationships, or read against the material for what seems wrong, missing, overstated or better handled elsewhere. Re-reading is optional; stronger disagreement is a legitimate result. A fresh or stateless context with no retained prior context is another cold read, not a continuation.
+
 ## Project sources
 
 - [TRACE introduction](https://pleasestartfromhere.com/resources/trace/README.md): a structural language for examining affected scope, evidence, time, usable routes and limits of correction; includes its edition status and limits.
