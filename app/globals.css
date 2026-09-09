@@ -102,46 +102,32 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
 /* The landing page alone gives the original frame the full opening. No crop. */
 .opening-composition { display: block; }
 .camp-fire { max-width: none; }
-.art-hero { display: grid; grid-template-rows: auto auto auto; isolation: isolate; container: artwork / inline-size; }
-.art-hero > figure { display: grid; grid-area: 1 / 1 / 4 / 2; grid-template-rows: subgrid; }
-.art-hero img { grid-area: 1 / 1; align-self: start; padding: 0; border: 0; }
-.art-hero figcaption { grid-area: 3 / 1; justify-self: end; width: min(100%, 42rem); margin: .75rem 0 0; text-align: right; }
-/* Place the title in the dark canopy, not over the people or fire. */
-.hero-heading { grid-area: 1 / 1; align-self: start; justify-self: start; z-index: 1; position: relative; isolation: isolate; margin: clamp(1.25rem, 3vw, 3rem); padding: 0; background: transparent; color: #ffffff; max-width: min(35rem, 58%); text-shadow: 0 1px 3px #000000, 0 2px 12px rgba(0,0,0,.7); }
-/* The 55% black plateau covers the whole heading, including reflow. Only the
-   outer edge fades: 2rem expansion minus 1.5rem feather leaves .5rem spare.
-   Keep the scrim behind the letters, not as a foreground card over the people. */
-.hero-heading::before { content: ""; position: absolute; inset: -2rem; z-index: -1; pointer-events: none; background: rgba(0,0,0,.55); mask-image: linear-gradient(to right, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent), linear-gradient(to bottom, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent); mask-composite: intersect; }
-.intro:has(.first-movements) .hero-heading h1 { color: #ffffff; margin: 0 0 .85rem; font-size: clamp(2.6rem, 5.2vw, 4.75rem); }
-.hero-heading .guiding-question { color: #ffffff; margin: 0; }
+/* The 3801:2368 source stays whole. Reserve space for navigation and credit,
+   then limit the painting by both viewport height and available width. */
+.art-hero { display: grid; grid-template-rows: auto; align-content: center; isolation: isolate; width: min(100%, calc((100svh - 9rem) * 3801 / 2368)); min-height: calc(100svh - 4.05rem); margin-inline: auto; }
+.art-hero > figure { grid-area: 1 / 1; }
+.art-hero img { display: block; width: 100%; height: auto; object-fit: contain; padding: 0; border: 0; background: transparent; }
+.art-hero figcaption { margin: .75rem 0 0; text-align: center; }
+/* Small lettering in the dark upper canopy; no image mask or title plate. */
+.hero-heading { grid-area: 1 / 1; align-self: start; justify-self: start; z-index: 1; margin: clamp(1rem, 2.5vw, 2.5rem); padding: 0; background: transparent; color: #fff8eb; text-shadow: 0 1px 3px #15100b; }
+.intro:has(.first-movements) .hero-heading h1 { max-width: none; color: inherit; margin: 0; font-size: clamp(1.125rem, 2.3vw, 2rem); line-height: 1.35; letter-spacing: -.015em; }
+.hero-heading h1 em { color: #ecd3a8; font-style: italic; }
+/* A landscape painting cannot fill a portrait screen without cropping. Do not
+   manufacture a full-screen pause with empty space on a phone. */
+@media (max-width: 48rem) { .art-hero { min-height: 0; margin-block: .5rem 2rem; } }
 .opening-copy { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); column-gap: 3rem; margin-top: 2rem; }
 .opening-copy .eyebrow { grid-column: 1; margin-bottom: .5rem; }
 .opening-copy > p:nth-child(2) { grid-column: 1; }
 .opening-copy > p:last-child { grid-column: 2; grid-row: 1 / 3; max-width: 64ch; }
-/* Below 60rem the image is too shallow for a robust canopy-only overlay. */
-@media (max-width: 60rem) {
-  .hero-heading { grid-area: 2 / 1; width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
-  .hero-heading::before { content: none; }
-  .art-hero figcaption { justify-self: stretch; width: 100%; text-align: left; }
-}
-/* Unlike viewport media queries, this rem threshold responds to the computed
-   root text size. Enlarged text gets its own row instead of covering the people. */
-@container artwork (max-width: 60rem) {
-  .hero-heading { grid-area: 2 / 1; width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
-  .hero-heading::before { content: none; }
-  .art-hero figcaption { justify-self: stretch; width: 100%; text-align: left; }
-}
 @media (max-width: 42rem) {
-  .intro:has(.first-movements) .hero-heading h1 { font-size: clamp(2.3rem, 8.5vw, 3.5rem); }
-  .hero-heading .guiding-question { font-size: 1.25rem; }
   .opening-copy { display: block; margin-top: 1.5rem; }
 }
-/* Older layout engines keep the full painting and a separate solid title panel. */
-@supports (not (grid-template-rows: subgrid)) or (not (mask-composite: intersect)) or (not (container-type: inline-size)) {
-  .art-hero, .art-hero > figure { display: block; }
-  .hero-heading { width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
-  .hero-heading::before { content: none; }
-  .art-hero figcaption { width: 100%; text-align: left; }
+/* Very short or text-enlarged viewports keep the title outside the artwork. */
+@media (max-height: 28rem) {
+  .art-hero { width: 100%; min-height: 0; }
+  .art-hero img { width: auto; max-height: 65svh; margin-inline: auto; }
+  .hero-heading { grid-area: 2 / 1; justify-self: center; margin: 1rem; color: var(--foreground); text-shadow: none; }
+  .hero-heading h1 em { color: var(--accent); }
 }
 @media print { :root { --background: #fff; --foreground: #111; --muted: #444; --surface: #fff; --panel: #fff; --warm-panel: #fff; --wash: #fff; --shadow: transparent; } body { max-width: none; font-size: 11pt; background: #fff; } .skip { display: none; } h1, h2, h3 { break-after: avoid; } a, a:visited { color: inherit; } .first-movements article, .small-loop, .handoff { box-shadow: none; } }
 
@@ -192,10 +178,7 @@ body:has(.arrival) .masthead .map-bypass span { color: inherit; font-size: inher
 .reading-menu summary { cursor: pointer; min-height: 2.75rem; padding-block: .55rem; }
 .reading-menu nav { padding-block: .5rem; justify-content: end; }
 .opening-composition:has(.arrival) { margin-top: 0; }
-body:has(.arrival) .art-hero figcaption { padding-inline: clamp(1rem, 4vw, 4rem); width: 100%; font-size: .875rem; }
-body:has(.arrival) .hero-heading { margin: clamp(1.5rem, 4vw, 5rem); max-width: min(40rem, 55%); }
-body:has(.arrival) .intro .hero-heading h1 { max-width: 12ch; font-size: clamp(3rem, 5.8vw, 6rem); }
-body:has(.arrival) .hero-heading h1 em { font-style: italic; }
+body:has(.arrival) .art-hero figcaption { padding-inline: 1rem; width: 100%; font-size: .75rem; }
 body:has(.arrival) .guiding-question { font-style: italic; font-size: clamp(1.4rem, 2.3vw, 2.2rem); max-width: 24ch; }
 .arrival, body:has(.arrival) .opening-copy, body:has(.arrival) .concrete-story, body:has(.arrival) .first-movements, body:has(.arrival) .perspective-and-boundaries, body:has(.arrival) main > section:not(.intro), body:has(.arrival) footer { width: min(calc(100% - 2rem), 76rem); margin-inline: auto; }
 .arrival { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 5rem); padding-block: 2rem; margin-block: 2rem 4rem; }
@@ -209,21 +192,7 @@ body:has(.arrival) .guiding-question { font-style: italic; font-size: clamp(1.4r
 .arrival-doors details p { padding-inline: 1.25rem .5rem; }
 summary:focus-visible { outline: 3px solid var(--foreground); outline-offset: 3px; }
 :target { scroll-margin-top: 1.5rem; }
-/* At narrow or enlarged-text sizes, put the title on the page, not a black plate. */
-@media (max-width: 60rem) {
-  body:has(.arrival) .hero-heading { margin: 0; padding: 1.5rem 1rem; max-width: none; background: var(--background); color: var(--foreground); }
-  body:has(.arrival) .intro .hero-heading h1, body:has(.arrival) .guiding-question { color: var(--foreground); }
-  body:has(.arrival) .intro .hero-heading h1 { max-width: 18ch; font-size: clamp(2.4rem, 6vw, 4rem); }
-}
-@container artwork (max-width: 60rem) {
-  body:has(.arrival) .hero-heading { margin: 0; padding: 1.5rem 1rem; max-width: none; background: var(--background); color: var(--foreground); }
-  body:has(.arrival) .intro .hero-heading h1, body:has(.arrival) .guiding-question { color: var(--foreground); }
-}
 @media (max-width: 48rem) { .arrival { grid-template-columns: 1fr; gap: 1.5rem; margin-block: 1.5rem 3rem; } .arrival h2 { max-width: none; } }
-@supports (not (grid-template-rows: subgrid)) or (not (mask-composite: intersect)) or (not (container-type: inline-size)) {
-  body:has(.arrival) .hero-heading { margin: 0; max-width: none; background: var(--background); color: var(--foreground); }
-  body:has(.arrival) .intro .hero-heading h1, body:has(.arrival) .guiding-question { color: var(--foreground); }
-}
 @media (max-width: 48rem) {
   .concrete-story { grid-template-columns: 1fr; }
   .concrete-story header { grid-row: auto; }

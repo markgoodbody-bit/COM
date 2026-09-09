@@ -29,11 +29,11 @@ export default function Home() {
         </figure>
             <div className="hero-heading">
               <h1>Please Start From <em>Here</em></h1>
-              <p className="guiding-question">How can we make a better future?</p>
             </div>
         </div>
         <section className="arrival" id="arrival" aria-labelledby="arrival-question">
           <div className="arrival-heading">
+            <p className="guiding-question">How can we make a better future?</p>
             <h2 id="arrival-question">What brought you here?</h2>
             <p>Pick a way in, or keep looking. There is no sequence to finish.</p>
             <a href="/explore/#reading-map">Just give me the map</a>
