@@ -13,142 +13,87 @@ PSFH, TRACE, Mechanical Ethics, Campfire, COM, tests, guestbooks and art are ins
 
 ## Current executable edge
 
-### 1. Preview 0.8.4 — release closed by Framework after CC's bounded served return
+### 1. PSFH Preview 0.8.4 — RELEASE CLOSED
 
-Maintained PSFH source:
-`782c3f8d9be07feb788449e1fadd979799213f83` (PR126 merge; prior integrated base `d28121c7fca9d064226670fc568dad57073c836c`).
+Maintained source before the later favicon merge: `782c3f8d9be07feb788449e1fadd979799213f83`.
+Public release: `gh-pages 965687ee60552e11e25e5c9f797edc7f8b947dcd`.
 
-It integrates:
-- reviewed concrete-first human Door (former PR123);
-- PR125 seed/llms portability/ceiling repairs.
+Exact RC `3f7803d27c3615d81ede643f153dc2ec20270e01` passed Codex build/delta evidence and Claude Code metadata/bundle/history review. One authorised push reused the exact115 reviewed generated files; Pages run `34377202742` succeeded. CC then independently read the live origin in #108 `5605366846` and verified Preview0.8.4, the concrete-first story and its ceilings, exact1023-byte seed/hash with `Not a release or canon.`, zero relative `llms.txt` links, and unchanged Homer source/720/1440 bytes. Framework closed the release in #108 `5605392566`.
 
-Exact release candidate:
-- branch `codex/psfh-preview084-rc-20260909`;
-- head `3f7803d27c3615d81ede643f153dc2ec20270e01`;
-- PR #126, merged;
-- direct parent `d28121c7...`;
-- site Preview **0.8.4**;
-- Reader change log **Edition 0.11 / D015 — A concrete story before the abstractions.**
+Do not republish or reopen the release. The public usefulness ceiling remains: practical advantage over careful ordinary reasoning or established methods has not been demonstrated.
 
-Codex RC receipt #108 `5604725987`, evidence `9c9d2418a0d1aac44045369595aa1da5d3b27528`:
-- build PASS;
-- 22/22 Python PASS;
-- 11/11 Node PASS including 115 exact local deliveries;
-- standalone route checker PASS;
-- seed 1023 bytes with pinned approved hash;
-- generated comparison to public `dd06d95...`: **11 changed / 104 identical / 0 added / 0 removed**;
-- all four Homer art artifacts byte-identical;
-- no Powers, guestbook, #119, TRACE/ME, service or provider bundle.
+`RELEASE_CLOSED != USEFULNESS_PROVEN`
 
-Framework inspected source delta, D015 and test-contract changes and returned metadata KEEP. D015 explicitly calls itself a candidate, preserves D014 history byte-for-byte below it, and records the already-published 1440 Homer fallback/feather as a historical clarification rather than a new 0.8.4 art change.
+### 2. Requested browser-tab icon — SOURCE MERGED / PUBLICATION AUTHORISED
 
-Claude Code returned **KEEP** on exact RC `3f7803d27c3615d81ede643f153dc2ec20270e01` in #108 comment `5605021643`: release-metadata truth, accidental bundle and history handling. This was a source/metadata review, not a second full build or deployment observation. The narrow independent review is complete; do not request it again.
+Mark requested a browser-tab icon. Exact candidate `e0add509d0708533560e856568ac6ba70c844936` was reviewed by Framework and merged into maintained PSFH as:
+`e30debac2a8c32c37d2abfaa32e988c11fe98e79`.
 
-Publishing head:
-`gh-pages 965687ee60552e11e25e5c9f797edc7f8b947dcd`, predecessor `dd06d95cb880208b30f703c54af33c2440c97812`.
+PR128 is merged/closed; do not merge it again.
 
-Framework authorised exact publication in #108 `5605194078` and reaffirmed it in `5605233177`. Codex published once after fresh ref checks. All115 generated Git blobs match the reviewed RC;11 changed/104 exact/0 added/0 removed; publishing configuration preserved. Pages run `34377202742` completed **success**, updated_at `2026-09-09T16:31:23Z`, for exact965687ee. Receipt: `evidence/PSFH_PREVIEW084_PUBLICATION_RECEIPT_20260909.md`.
+Exact intended public delta against `gh-pages 965687ee...`:
+- root HTML head gains two favicon links only; visible body remains byte-identical;
+- `favicon.svg`410 bytes, SHA `b2b950c89165e9c483853e608312f341ceceadb5c05958fd0be4ed77e9b9bd70`;
+- `favicon.ico`2322 bytes, SHA `2e7f27bab62301c5d5d27bf6802faf28753623a228c83abe4f66e5e80731a70e`, with16/32/48 images;
+- `favicon-LICENSE.txt`953 bytes, SHA `2d0c0cfe9630fcbf019e48b11349d220970e86a38fe05f06854321ee237d56b9`;
+- all other114 public outputs exact.
 
-CC returned independently attributed served checks in #108 `5605366846`: homepage properties,1023-byte pinned seed,absolute llms links and three Homer image files. Framework accepted this bounded coverage and closed the release in `5605392566`. Do not republish or reopen the release from the earlier pending pointer. Powers remains excluded.
+Source build evidence:14 Node tests incl118 exact local deliveries,22 Python tests and route check PASS;32px raster inspected. Geometry is existing Lucide Flame1.31.0 with amber/dark adaptation; ISC notice applies only to the icon.
 
-Observation limits stay distinct from that process closure: Codex did not perform the custom-domain readback. CC's comment does not enumerate manifest/history/representative read-route fetches; its automated provenance lookup used the wrong `art/index.json` path and returned an unearned zero, with image hashes checked separately. Framework treats that instrument gap as optional tooling debt, not a public defect. Do not inflate this receipt to universal route/browser coverage or reader-benefit evidence.
+Framework publication authority: #108 `5605452516`. At most one icon-only public push; preserve publishing config; browser cache delay is not a retry reason. At the last fresh ref read public was still `965687ee...`, so do not claim icon publication until the public ref/Pages/readback move.
 
-`RC_TESTED != PUBLIC_DEPLOYED`
+`ICON_PUBLISHED != EVERY_BROWSER_CACHE_REFRESHED`
 
-### 2. Harriet Powers — source-only candidate built, independent review OPEN
+### 3. Harriet Powers — PR127 VISUAL/EDITORIAL REVIEW OPEN
 
-Work: Harriet Powers, *Bible Quilt*, 1885–1886, National Museum of American History / Smithsonian Institution.
+Work: Harriet Powers, *Bible Quilt*,1885–1886, National Museum of American History / Smithsonian Institution.
 
-Exact Smithsonian-delivered source image acquired by Codex:
-- URL `https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984`;
-- JPEG 2880 x 2412 RGB;
-- 2,671,829 bytes;
-- SHA-256 `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`.
+Exact Smithsonian IDS-delivered source:
+-2880x2412 JPEG,2,671,829 bytes;
+- SHA `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`;
+- `MUSEUM_MASTER_STATUS = UNKNOWN`.
 
-Authoritative NMAH/Smithsonian evidence independently reacquired by Framework establishes the public-domain/CC0 reuse basis and identifies Powers as maker. The delivered file is accepted as an exact **Smithsonian-delivered source image**; do not call it a museum master/highest resolution/original capture.
+Viewing copies:
+-720x603,201,415 bytes, SHA `c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802`;
+-1440x1206,862,531 bytes, SHA `816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f`.
 
-`MUSEUM_MASTER_STATUS = UNKNOWN`.
+Exact source-only candidate: PR127 / branch `codex/powers-work-page-20260909` / head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`. Fourteen additions confined to `proposals/powers/`; no existing site/public file changed. Separate build PASS;10 integrity/overclaim/drift tests PASS;8 exact local deliveries + work route200.
 
-Evidence: `evidence/PSFH_POWERS_ACQUISITION_RETURN_20260909.md`, repaired at COM `3d4316b0222ff93da110637d8a85178c201f711f`.
+Presentation contract: dedicated `/works/harriet-powers/`, whole quilt given visual space, maker/work/source and mediated museum account before separately labelled PSFH response; no individual panel meanings invented; not homepage hero/wallpaper/Explore concept node/gallery.
 
-Codex execution order #108 `5604976850` is active:
-- preserve parent bytes;
-- make proportional 720w/1440w viewing copies with tool/settings/dimensions/bytes/SHA + parent hash;
-- source artwork record with actual source/rights/master-status ceiling;
-- deterministic provenance tests;
-- source-only dedicated `/works/harriet-powers/` page; images and records under `/art/`, following later placement direction #108 `5605023335`;
-- work/maker/source first; museum record that Powers explained the eleven panels and Smith recorded them; separately labelled PSFH response afterward;
-- no individual panel interpretation unless exact source wording is freshly verified;
-- not another homepage hero, wallpaper, carousel or Homer template;
-- no gh-pages wiring/site-edition bump.
+Open evidence/review:
+- Framework requested independent CC art review in PR127 `5605204288`;
+- Framework requested actual browser measurements in `5605456448`: ~1440 desktop, ~390 mobile and materially enlarged text; report viewport/scrollWidth/image size/overflow/order before any repair.
+- CSS deduction is not render observation. If a defect appears, report before repair.
+- After review, any integration candidate must be refreshed onto current maintained source (`e30debac...` or later), because PR127's original base predates0.8.4/favicon even though the isolated changes are mergeable.
 
-Codex returned the implementation in #108 `5605152783` and PR127 `5605153167`:
-
-- branch `codex/powers-work-page-20260909`;
-- exact head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`, direct parent maintained `d28121c7...`;
-- draft PR127, open/unmerged;
-- fourteen additions confined to `proposals/powers/`; no existing tracked site file changed;
-- exact acquired parent and original acquisition receipt preserved; 720x603 and 1440x1206 viewing copies produced, hashed and reproducible in the recorded encoder environment;
-- separate candidate build PASS, ten narrow tests PASS, eight exact local HTTP deliveries and work-route HTTP200;
-- normal site build still fails at the inherited `llms.txt` pin on d281. Its separate fix belongs to Preview0.8.4 RC, not this art branch;
-- no homepage link, Explore concept node, gallery/index, normal build integration, edition bump or gh-pages mutation.
-
-Independent CC review remains open for source attribution, interpretation/teaching-illustration risk, and representative desktop/mobile/enlarged-text rendering. Codex observed the page's browser accessibility tree and the 720 image, **not** representative desktop/mobile screenshots or overflow behaviour; source-level CSS deductions do not close that gate. Source record and detailed evidence are at `proposals/powers/README.md` on the exact candidate head.
-
-After review, any eventual root link belongs in “The work and its neighbours”, not the first-movement cards or conceptual Explore map. No public wiring is authorised by this pointer.
-
-`ACQUIRED_SOURCE_IMAGE != MUSEUM_MASTER`  
+`ART_SHOULD_STAND_BEFORE_IT_TEACHES`
 `CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
 
-### 3. #119 usefulness construct — deliberately PAUSED before Stage A
+### 4. Vermeer — EXACT RECORD-LINKED SOURCE ACQUISITION REOPENED
 
-No study has run. Practical advantage remains unproven.
+Städel authoritative object page for Johannes Vermeer, *The Geographer* (1669), inventory1149, marks the picture Public Domain and directly links:
+`https://cdn.staedelmuseum.de/images/49/7c/1149/thumb-xl.jpg`.
 
-V2 + Framework clarification were hostile-reviewed by CC in #119 `5604610867`. Framework accepted all six findings in `5604662238`.
+Framework independently confirmed that exact URL renders the image through a public reader, but this aperture cannot obtain binary bytes/hash.
 
-Do **not** write v3 or run Stage A until these remaining choices are frozen:
-1. interpretable builder population / recruitment rule and exposure/heterogeneity reporting;
-2. development-account budget and maximum protocol-revision rounds;
-3. later Stage-B holdout N and mechanical selection rule.
+Powers clarified the custody rule: an exact authoritative source image can be useful without a museum-master claim. Framework therefore withdrew the earlier full-master prerequisite in #108 `5605509411`.
 
-Retained design corrections include:
-- raw extraction class/counts != eligible scoring counts;
-- zero eligible denominator => `UNDEFINED`;
-- `CAP_HIT` must be visible;
-- `GRANULARITY_MISMATCH` is diagnostic, not an accepted edge;
-- report raw and eligible family coverage separately;
-- sparse match states distinguish MATCH / explicit NO_MATCH / NOT_ASSESSED / UNCERTAIN;
-- calibration accounts consumed + revision rounds must be reported.
+Codex/local may acquire **that exact record-linked URL only**. No guessed CDN variants/API/IIIF/account. Return final URL/status/MIME/bytes/dimensions/profile/orientation/SHA, source category `AUTHORITATIVE_RECORD_LINKED_THUMB_XL` (or equivalent), and `MUSEUM_MASTER_STATUS = UNKNOWN`. Never upscale. If native dimensions are too small for a faithful bounded presentation, return `SOURCE_ACQUIRED_BUT_PRESENTATION_TOO_SMALL`. Source-only record/check/presentation only; no public wiring. Powers remains the higher integration gate.
 
-No accounts selected, people contacted, inference, recruitment, spend or public claim.
+`EXACT_AUTHORITATIVE_SOURCE_IMAGE != MUSEUM_MASTER`
 
-`CALIBRATION_WITHOUT_A_BUDGET = FITTING_RISK`
+### 5. #119 usefulness construct — PAUSED BEFORE STAGE A
 
-## Other settled/held lanes
+No study has run; practical advantage remains unproven. CC's six hostile findings are accepted. Do not write v3/run Stage A until builder-population/recruitment rule, development-account + revision budget, and later Stage-B holdout N/selection are frozen. Retain CAP_HIT, GRANULARITY_MISMATCH diagnostic state, raw vs eligible coverage, sparse match states, and zero eligible denominator = UNDEFINED. No recruitment/inference/spend.
 
-### Requested browser-tab icon — PR128 source candidate
+### 6. Other held lanes
 
-Mark requested an icon for the browser tab, then instructed COMSYNC and proceed. Codex prepared an amber Lucide Flame on a dark background at `e0add509d0708533560e856568ac6ba70c844936`, branch `codex/psfh-favicon-20260909`, based on maintained782c3f8d. Draft PR128 is open/unmerged; source receipt #108 `5605410751`.
+Guestbook: representation experiment complete; #118 `HOLD_INTAKE`. No public write/backend/real guest data.
 
-Against public965687ee: root head only +133bytes; three added icon/notice files; all other114 existing outputs and visible root body exact. Build PASS,14 Node tests/22 Python tests/standalone route check PASS. SVG plus16/32/48 ICO and an icon-specific ISC notice; no project-licence, visible page, book, edition or Powers change.32px raster visually inspected; actual browser-tab/cache behaviour unobserved. Waiting for Framework's small publication decision; not part of the already closed0.8.4 publication operation.
+Desktop: scheduled two-minute watcher disabled/preserved; hidden120s loop is temporary quiet mode. Do not run scheduler alongside it or reopen rejected launcher work without new evidence.
 
-### Homer
-
-Published and independently checked at `gh-pages dd06d95...`. High-left 55% feather where robust; separate-row constrained fallback; ordinary `img src` is pinned 1440 viewing copy; museum original remains separately served/linked provenance. Do not repeat publication.
-
-### Vermeer
-
-*The Geographer* remains asset-blocked for a documented full-source acquisition through currently reachable tooling. Städel publicly documents OAI metadata access, but Framework transports refuse the API query route. Do not guess CDN variants or promote `thumb-xl` to a master.
-
-### Guestbook
-
-Synthetic representation experiment complete/merged as COM `75f80f4...`; #118 disposition **HOLD_INTAKE**. No form, backend, provider, credentials, real guest data or public route.
-
-### Desktop quiet mode
-
-Scheduled two-minute `Campfire Local Service Watch` remains disabled/preserved. One hidden 120-second PowerShell loop is the temporary workaround; if it dies nothing resurrects it. Do not run scheduler alongside it or reopen rejected launcher experiments without new evidence.
-
-`TEMPORARY_QUIET_MODE != PRODUCTION_ARCHITECTURE`
+Speech supervisor successor remains unearned/evidence-only.
 
 ## Baselines / gates
 
@@ -161,11 +106,11 @@ No current work authorises TRACE/ME canon/release, Campfire Production adoption,
 ## Roles
 
 - **Framework:** coordination lead/integrator; purpose, evidence, product judgement and consequential gates; make ordinary reversible decisions.
-- **Codex:** executable product/host engineering, local image/browser work and deterministic study design.
+- **Codex:** executable product/host engineering, local browser/image work and deterministic study design.
 - **Claude Code:** independent hostile review/failure modes; not second integration owner.
 - **Mark:** originator/witness/consequential authority; ordinary reversible choices stay with team.
 
-Always reacquire live refs before mutation. Do not treat one issue as full COMSYNC; discover recently active surfaces.
+Always reacquire live refs before mutation. Discover recently active surfaces rather than treating one issue as full COMSYNC.
 
 `POSTED != RECEIVED != ACTED != EFFECT`  
 `RECORDED_CURRENT != EXTERNALLY_CURRENT`
