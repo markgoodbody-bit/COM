@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile, mkdtemp, cp, writeFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { WORKS, verifyWorks, copyWorks } from './works.mjs';
 
 test('normal output retains exactly the declared work pages, images and records', async () => {
@@ -10,7 +11,7 @@ test('normal output retains exactly the declared work pages, images and records'
   const source = await verifyWorks('public'), built = await verifyWorks('out');
   assert.equal(source.size, 36);
   assert.deepEqual(Object.keys(WORKS.files).sort(), Object.keys(WORKS.reviewed_files).sort());
-  for (const route of Object.keys(WORKS.files)) if (route !== 'works/index.html') {
+  for (const route of Object.keys(WORKS.files)) if (!route.endsWith('/index.html')) {
     assert.deepEqual(WORKS.files[route], WORKS.reviewed_files[route], route);
   }
   assert.deepEqual(built, source);
@@ -26,6 +27,42 @@ test('normal output retains exactly the declared work pages, images and records'
   assert.equal(manifest.routes.optional_human_art, '/works/');
   assert.equal(manifest.provenance.optional_human_art.optional, true);
   assert.match(manifest.provenance.optional_human_art.scope, /No required traversal or report-back/);
+});
+
+test('publication treatment changes only the named wrappers from the pinned integration', async () => {
+  const integration = 'b078c3cf4aa251c4226985c2547d03e3d88b196a';
+  const gitBytes = file => execFileSync('git', ['show', integration + ':' + file], { maxBuffer: 20 * 1024 * 1024 });
+  const prior = JSON.parse(gitBytes('scripts/WORKS_COPIES.json'));
+  assert.deepEqual(WORKS.reviewed_files, prior.reviewed_files);
+  assert.equal(WORKS.source_review, prior.source_review);
+  assert.deepEqual(Object.keys(WORKS.files).sort(), Object.keys(prior.files).sort());
+  let changed = 0;
+  for (const route of Object.keys(prior.files)) {
+    const before = gitBytes('public/' + route);
+    const after = await readFile('public/' + route);
+    if (route.endsWith('/index.html')) {
+      const expected = before.toString('utf8')
+        .replace(/^[ \t]*<meta name="robots" content="noindex(?:,nofollow)?">\r?\n/gm, '')
+        .replace(/^[ \t]*<span>Unpublished work-page proposal<\/span>\r?\n/gm, '')
+        .replace(/<meta name="robots" content="noindex(?:,nofollow)?">/g, '')
+        .replace('<p>Please Start From Here · Unpublished collection preview</p>', '')
+        .replace('Five works selected for this preview,', 'Five selected works,')
+        .replace('This is a local review collection, not a published edition. ', '')
+        .replace(' · Unpublished preview', '')
+        .replace('<span>Unpublished work-page preview</span>', '')
+        .replace('<span>Unpublished work-page proposal</span>', '');
+      assert.deepEqual(after, Buffer.from(expected), route);
+      assert.notDeepEqual(after, before, route);
+      changed++;
+    } else assert.deepEqual(after, before, route);
+  }
+  assert.equal(changed, 6);
+  assert.match(await readFile('out/works/index.html', 'utf8'), /The works are not endorsements of this project\./);
+  assert.match(await readFile('out/404.html', 'utf8'), /noindex/);
+  for (const file of ['app/page.tsx', 'app/globals.css', 'scripts/build.mjs']) {
+    // These are Git text sources, unlike the byte-pinned Works copies above.
+    assert.equal((await readFile(file, 'utf8')).replace(/\r\n/g, '\n'), gitBytes(file).toString('utf8'), file);
+  }
 });
 
 test('a changed record fails before the copier writes any output', async () => {

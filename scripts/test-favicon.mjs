@@ -47,6 +47,12 @@ test('favicon boundary survives the explicitly bounded Works addition', async ()
       }
       const before=execFileSync('git',['show',baseline+':'+file],{cwd:publishing,maxBuffer:20*1024*1024});
       let actual=await readFile('out/'+file);
+      if (file === 'sitemap.xml') {
+        const entries = [...actual.toString().matchAll(/^  <url><loc>https:\/\/pleasestartfromhere\.com\/works\/[^<]*<\/loc><\/url>\n/gm)].map(match => match[0]);
+        const routes = ['works/', 'works/harriet-powers/', 'works/johannes-vermeer/', 'works/anna-atkins/', 'works/shen-zhou/', 'works/edmonia-lewis/'];
+        assert.deepEqual(entries, routes.map(route => '  <url><loc>https://pleasestartfromhere.com/' + route + '</loc></url>\n'));
+        for (const entry of entries) actual = Buffer.from(actual.toString().replace(entry, ''));
+      }
       if(file==='index.html'){
         const text=actual.toString();
         assert.equal(text.split(header).length,2);
