@@ -89,8 +89,10 @@ class FirstContactTests(unittest.TestCase):
         # Mark's composition correction puts intact provenance after the image.
         self.assertLess(self.html.index('<img'), self.html.index('<figcaption'))
         # The editorial revision moves the same art into the opening composition.
-        # Direct reading routes precede it; the concrete-first choices follow it.
-        self.assertLess(self.html.index('aria-label="Reading routes"'), self.html.index('<figure'))
+        # The artwork starts at the top edge. Navigation follows; keyboard skip
+        # remains before the painting and the optional choices follow it.
+        self.assertLess(self.html.index('class="skip"'), self.html.index('<figure'))
+        self.assertLess(self.html.index('<figure'), self.html.index('aria-label="Reading routes"'))
         self.assertLess(self.html.index('<figure'), self.html.index('class="first-movements"'))
         navigation = self.html.split('aria-label="Reading routes"')[1].split('</nav>')[0]
         for target in ['/explore/', '/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf', '/discussion/']:
@@ -155,45 +157,22 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('src="data:image/jpeg;base64,', offline)
         self.assertNotIn('src="/art/', offline)
 
-    def test_hero_scrim_plateau_has_a_conservative_contrast_floor(self):
-        from PIL import Image
+    def test_whole_painting_arrival_has_no_scrim_or_forced_mobile_pause(self):
         css = (ROOT / 'app/globals.css').read_text(encoding='utf-8')
-        self.assertIn('background: rgba(0,0,0,.55);', css)
-        self.assertIn('inset: -2rem;', css)
-        self.assertIn('#000 1.5rem, #000 calc(100% - 1.5rem)', css)
-        self.assertIn('mask-composite: intersect;', css)
-        self.assertIn('(not (mask-composite: intersect))', css)
-        self.assertIn('.hero-heading::before { content: none; }', css)
-        self.assertIn('background: #141b20;', css)
+        self.assertNotIn('.hero-heading::before', css)
+        self.assertNotIn('mask-image:', css)
+        self.assertNotIn('background: #141b20;', css)
         self.assertNotIn('object-fit: cover', css)
-
-        def linear(value):
-            value /= 255
-            return value / 12.92 if value <= .04045 else ((value + .055) / 1.055) ** 2.4
-
-        # Fully opaque masks throughout the heading preserve the .55 black
-        # alpha there. A .5rem inset margin remains before the feather begins.
-        # This is an sRGB compositing bound, not a browser/glyph conformance test.
-        white_background_floor = 1.05 / (linear(255 * .45) + .05)
-        self.assertGreaterEqual(white_background_floor, 4.5)
-        print(f"Scrim plateau over white: {white_background_floor:.2f}:1")
-        mobile_lum = sum(w * linear(v) for w, v in zip((.2126, .7152, .0722), (20, 27, 32)))
-        print(f"Solid mobile title contrast: {1.05 / (mobile_lum + .05):.2f}:1")
-
-        record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
-        paths = [record['local_image']] + [v['local_image'] for v in record['responsive']['variants']]
-        for path in paths:
-            with Image.open(ROOT / 'out' / path.lstrip('/')) as image:
-                maxima = [upper * .45 for lower, upper in image.convert('RGB').getextrema()]
-            lum = sum(w * linear(v) for w, v in zip((.2126, .7152, .0722), maxima))
-            ratio = 1.05 / (lum + .05)
-            self.assertGreaterEqual(ratio, 4.5, path)
-            print(f"Whole-frame source-channel bound with scrim {path}: {ratio:.2f}:1")
-
-        # Source guard only; actual reflow still needs browser observation.
-        self.assertIn('container: artwork / inline-size;', css)
-        self.assertIn('@container artwork (max-width: 60rem)', css)
-        self.assertIn('(not (container-type: inline-size))', css)
+        self.assertIn('calc((100svh - 5rem) * 3801 / 2368)', css)
+        self.assertIn('.art-hero { min-height: 0; margin-block: 0 2rem; }', css)
+        self.assertIn('font-size: clamp(1.125rem, 2.3vw, 2rem)', css)
+        self.assertIn('.hero-heading h1 em { color: #ecd3a8;', css)
+        hero = self.html.split('class="art-hero"')[1].split('class="arrival"')[0]
+        self.assertNotIn('How can we make a better future?', hero)
+        self.assertIn('<p class="guiding-question">How can we make a better future?</p>',
+                      self.html.split('class="arrival-heading"')[1])
+        # Source guards only. The previous scrim contrast proof no longer applies;
+        # actual viewport fit, reflow and legibility require browser observation.
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',

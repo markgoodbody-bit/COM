@@ -10,16 +10,10 @@ if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
     <a className="skip" href="#arrival">Skip the painting</a>
-    <header className="masthead" id="top">
-      <a className="map-bypass" href="/explore/#reading-map">Just give me the map <span aria-hidden="true">↗</span></a>
-      <details className="reading-menu"><summary>Reading routes</summary>
-        <nav aria-label="Reading routes"><a href="#start">Introduction</a><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
-      </details>
-    </header>
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
-        <div className="art-hero">
+        <div className="art-hero" id="top">
         <figure className="camp-fire" aria-labelledby="camp-fire-credit">
             <img src={heroFallback.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
           <figcaption id="camp-fire-credit">
@@ -29,11 +23,17 @@ export default function Home() {
         </figure>
             <div className="hero-heading">
               <h1>Please Start From <em>Here</em></h1>
-              <p className="guiding-question">How can we make a better future?</p>
             </div>
         </div>
+        <header className="masthead">
+          <a className="map-bypass" href="/explore/#reading-map">Just give me the map <span aria-hidden="true">↗</span></a>
+          <details className="reading-menu"><summary>Reading routes</summary>
+            <nav aria-label="Reading routes"><a href="#start">Introduction</a><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
+          </details>
+        </header>
         <section className="arrival" id="arrival" aria-labelledby="arrival-question">
           <div className="arrival-heading">
+            <p className="guiding-question">How can we make a better future?</p>
             <h2 id="arrival-question">What brought you here?</h2>
             <p>Pick a way in, or keep looking. There is no sequence to finish.</p>
             <a href="/explore/#reading-map">Just give me the map</a>

@@ -1,5 +1,28 @@
 # Maintained Please Start From Here source
 
+## Whole-painting arrival, 9 September 2026
+
+Presentation-only revision from maintained `742b80e51c0c1b04decf333802a37a0945c637c3`,
+following [FW's bounded handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5609283979).
+Before: the full-width image could extend below the opening viewport; large
+lettering and a feathered dark backing competed with it. After: image width is
+bounded by both screen dimensions, the title is small with a warm italic Here,
+the backing is removed, and the existing guiding question follows the artwork.
+The later [top-edge handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5609413248)
+moves visible navigation after the artwork; the focusable skip link stays first.
+Phones do not receive a forced full-screen blank pause. Short viewports put the
+title after the image. No image bytes, source accounts or reading prose change.
+
+Normal build and 24 existing checks passed (12 Node, 12 first-contact Python).
+The obsolete scrim test was explicitly replaced with the new layout contract;
+its former contrast bound is withdrawn, not carried into this design.
+Browser inspection: 1440x900, 390x845, 320x568 and 845x390; whole painting and no
+horizontal overflow in the inspected states. The question-this disclosure opened.
+The first phone candidate had an excessive blank pause and was corrected before
+handoff. This is bounded presentation QA, not accessibility conformance or reader
+benefit. Git history preserves the earlier composition; the publishing branch
+owns the actual deployment receipt. AI-arrival changes remain CC's separate lane.
+
 ## Current painting-led opening and delivery, 9 September 2026
 
 Preview 0.8.3 preserves the museum original and supplies two smaller viewing
