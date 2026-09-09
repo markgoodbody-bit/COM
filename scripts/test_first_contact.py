@@ -70,7 +70,8 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('loading="eager"', self.html)
         self.assertIn('srcSet="', self.html)
         self.assertIn(' sizes="', self.html)
-        self.assertLess(self.html.index('<figcaption'), self.html.index('<img'))
+        # Mark's composition correction puts intact provenance after the image.
+        self.assertLess(self.html.index('<img'), self.html.index('<figcaption'))
         # The editorial revision moves the same art into the opening composition.
         # Direct reading routes precede it; the original detailed choices remain.
         self.assertLess(self.html.index('aria-label="Reading routes"'), self.html.index('<figure'))
@@ -129,10 +130,12 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('src="data:image/jpeg;base64,', offline)
         self.assertNotIn('src="/art/', offline)
 
-    def test_hero_white_text_has_a_conservative_image_contrast_floor(self):
+    def test_hero_white_text_against_measured_canopy_regions(self):
         from PIL import Image
+        import math
         css = (ROOT / 'app/globals.css').read_text(encoding='utf-8')
-        self.assertIn('background: rgba(0,0,0,.74); color: #ffffff;', css)
+        self.assertIn('background: transparent; color: #ffffff;', css)
+        self.assertIn('align-self: start; justify-self: start;', css)
         self.assertIn('background: #141b20;', css)
         self.assertNotIn('object-fit: cover', css)
         def linear(value):
@@ -143,16 +146,33 @@ class FirstContactTests(unittest.TestCase):
         self.assertGreaterEqual(mobile_ratio, 4.5)
         print(f"Solid mobile title contrast: {mobile_ratio:.2f}:1")
         record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
+        # Native browser Range line boxes, normalized to the complete image,
+        # measured for this composition at requested1600x1100 and1024x900.
+        # These are fixed observations, NOT a responsive geometry test. A later
+        # title/font/placement change needs new browser measurements. Pixel
+        # bounds round outwards and ignore the black shadow's extra contrast.
+        regions = [
+            ('wide title1', .0384589, .0558936, .2840997, .1110929),
+            ('wide title2', .0384589, .1556031, .2713863, .1110928),
+            ('wide question', .0384589, .2821539, .3373321, .0409289),
+            ('small title1', .0331393, .0469046, .2680558, .1054677),
+            ('small title2', .0331393, .1410089, .2560594, .1054677),
+            ('small question', .0331393, .2680965, .3567795, .0425019),
+        ]
+        lut = [linear(value) for value in range(256)]
         for variant in record['responsive']['variants']:
             with Image.open(ROOT / 'out' / variant['local_image'].lstrip('/')) as image:
-                # Upper-bound background luminance from actual channel maxima.
-                # This is conservative across the complete image, including text
-                # positions at other widths, not a measured browser paint result.
-                maxima = [upper * .26 for lower, upper in image.getextrema()]
-            lum = sum(weight * linear(value) for weight, value in zip((.2126, .7152, .0722), maxima))
-            ratio = 1.05 / (lum + .05)
-            self.assertGreaterEqual(ratio, 4.5)
-            print(f"Hero contrast lower bound {variant['width']}px: {ratio:.2f}:1")
+                image = image.convert('RGB')
+                ratios = []
+                for label, x, y, width, height in regions:
+                    box = (math.floor(x * image.width), math.floor(y * image.height),
+                           math.ceil((x + width) * image.width), math.ceil((y + height) * image.height))
+                    pixels = image.crop(box).get_flattened_data()
+                    lum = max(.2126 * lut[r] + .7152 * lut[g] + .0722 * lut[b] for r, g, b in pixels)
+                    ratio = 1.05 / (lum + .05)
+                    self.assertGreaterEqual(ratio, 4.5, (variant['width'], label))
+                    ratios.append(ratio)
+            print(f"Measured-line region minimum {variant['width']}px: {min(ratios):.2f}:1")
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',

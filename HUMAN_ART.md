@@ -3,16 +3,36 @@
 This is a small delivery/provenance mechanism, not a new theory or curation system.
 Homer is the accepted work. The Vermeer proof remains asset-incomplete and unpublished.
 
-## Before and after
+## Local composition correction, 9 September 2026
+
+Candidate only, not published. The public page remains Preview 0.8.3 at
+`589514fff41d0a65315377093089838026bbd1ec`. Mark's screenshot review, relayed in
+COM #108 comments 5599679905 and 5599831198, takes priority over further design work.
+
+Before: the title sat in a hard black panel across the middle-left of the painting,
+and the source credit appeared above it. After: white type sits high in the dark
+canopy, with text shadow but no backing box. Credit follows the full image, aligned
+right on desktop and left on narrow screens. The title moves below the image at
+60rem or less. H1 and figure remain siblings; no words, art bytes or routes changed.
+
+This uses FW's no-card direction, not its provisional CSS numbers. The 60rem
+breakpoint is a conservative layout choice, not a demonstrated universal boundary.
+The checked desktop viewing copies have sufficient contrast in the measured text
+regions; that result does not extend to the full-resolution fallback or every
+possible viewport, font or zoom. See the [review evidence and limitations](review/composition-20260909/README.md).
+Visual acceptance and a narrow CC review are still required before publication.
+
+## Published 0.8.3 integration, before this local correction
 
 The completed initiative-cycle source5ff03dc supplies the original and two viewing
 copies. This integration keeps those exact720/1440-pixel files rather than ship
 the separate480/960/1600 set in the preserved local candidate3a1528e6.
 
-The full frame fills the opening. Above42rem the white title/question sits in a
-local black74%-opacity panel over the painting; below42rem a solid dark panel
-follows the complete frame. There is no crop. Other pages do not inherit this
-image-background treatment. Early navigation skips to the starting choices.
+The published full frame fills the opening. Above42rem the white title/question
+sits in a local black74%-opacity panel over the painting; below42rem a solid dark
+panel follows the complete frame. The local candidate above changes that placement.
+There is no crop. Other pages do not inherit this image-background treatment.
+Early navigation skips to the starting choices.
 
 The source note distinguishes smaller viewing copies from the unchanged original.
 The additional interpretation is explicitly project-authored, not attributed to

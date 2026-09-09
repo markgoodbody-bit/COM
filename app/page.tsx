@@ -18,11 +18,11 @@ export default function Home() {
         <div className="opening-composition">
         <div className="art-hero">
         <figure className="camp-fire" aria-labelledby="camp-fire-credit">
+            <img src={CAMP_FIRE.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
           <figcaption id="camp-fire-credit">
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
-            <img src={CAMP_FIRE.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
         </figure>
             <div className="hero-heading">
               <h1>Please Start From Here</h1>
