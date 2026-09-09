@@ -61,7 +61,7 @@ CC already owns one four-part review: provenance truth, creator/museum account s
 `ART_SHOULD_STAND_BEFORE_IT_TEACHES`  
 `CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
 
-### 3. Vermeer — SOURCE ACQUIRED / WORK PAGE NEXT
+### 3. Vermeer — SOURCE-ONLY WORK PAGE / PR129 REVIEW OPEN
 
 Johannes Vermeer, *The Geographer*,1669, Städel Museum.
 
@@ -79,6 +79,8 @@ Städel authoritative page identifies work/artist/institution and Picture Copyri
 
 Codex direction #108 `5606192847`: build a source-only Vermeer work page from these exact bytes, no forced720/1440 pair, no public/root wiring. Project reading optional and visibly project-authored.
 
+Completed candidate: draft PR129, exact `cf1e4e985563c011c7c838af835b35a138d7b37d`, based on maintainede30debac. Eleven additions under `proposals/vermeer/` only; five exact static outputs and10 targeted checks pass. Uncropped portrait, credit below, short attributed museum paraphrase, no imposed PSFH response. Four actual local desktop/mobile/root16/32px states measured; initial midword enlarged-mobile title defect was repaired with a narrow heading-size change. See `evidence/PSFH_VERMEER_WORK_PAGE_CANDIDATE_20260909.md`. Not public; independent review follows Powers priority.
+
 `EXACT_AUTHORITATIVE_SOURCE_IMAGE != MUSEUM_MASTER`
 
 ### 4. Human art — ROLLING WORKS SHELF / ACQUISITION BATCHES ACTIVE
@@ -91,7 +93,7 @@ First rolling set:
 First-ten horizon:
 1. Homer — public;
 2. Harriet Powers — work-page review;
-3. Vermeer — source acquired/page next;
+3. Vermeer — source-only work-page PR129;
 4. Anna Atkins, *Ulva lactuca*, Met291638;
 5. Utagawa Hiroshige, *Sudden Shower over Shin-Ōhashi Bridge and Atake*;
 6. Maria Sibylla Merian, *Study of Capers, Gorse, and a Beetle*, Met399922;
@@ -106,6 +108,8 @@ Batch A execution #108 `5606192847`:
 - acquire exact documented museum source bytes for Atkins291638, Hiroshige37386, Merian399922, Gentileschi436453, Shen Zhou49549, Posada372097 and Edmonia Lewis `saam_1994.17`;
 - each independently returns `ACQUIRED | BLOCKED | SOURCE_TOO_SMALL` with URL/category/status/MIME/dimensions/metadata/bytes/SHA/object+rights evidence;
 - preserve source before transformation; no inferred filenames/accounts/generated angles; master status UNKNOWN unless explicitly established.
+
+Batch A now acquired: all7 current targets /8 images, including two distinct Lewis photographs. Earlier Hiroshige55433 is preserved separately as a superseded impression; corrected37386 acquired under its own identity. Root Codex reread all9 files and matched their hashes/decoded metadata. See `evidence/PSFH_HUMAN_ART_BATCH_A_RETURN_20260909.md` and its JSON. No derivatives/pages/public wiring follow automatically; source-only works shelf remains unbuilt.
 
 Second wave:
 `evidence/PSFH_HUMAN_ART_SECOND_WAVE_20260909.md`, COM `9345772e4447fb2f9af324eb559ad146b3c04beb`.
@@ -146,6 +150,8 @@ Frozen for review, NOT execution:
 - numeric survival threshold remains intentionally unfrozen until StageA; inability to earn a simple auditable rule => DESIGN NULL.
 
 CC/Codex are to hostile-review executability and pseudo-diversity/fitting risk only. No StageA, participant recruitment, inference or spend.
+
+Codex review now returned `REPAIR_SMALL` in `evidence/PSFH_PHASE0_V3_EXECUTABILITY_REVIEW_20260909.md`: survival-rule freeze timing vs A3 kill-switch ambiguity, discretionary panel-screen rules, and unverified provider/withdrawal/time-payment dependencies. Proposed narrower repairs only; candidate not edited and execution still unauthorised.
 
 `DESIGN_FROZEN != EXECUTION_AUTHORISED`
 
