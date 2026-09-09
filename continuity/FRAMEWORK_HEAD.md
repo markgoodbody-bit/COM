@@ -6,91 +6,76 @@ Basis: live `coordination/ACTIVE_THREAD_POINTER.md`; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
-## Orientation
-
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
 Start from the actual middle: bounded aperture, change through time, other entities, evidence, meanings, capabilities, clocks, power, burdens, unknowns and reachable possibilities. Delay and inaction also change the world.
-
-TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, guestbooks and art are instruments.
 
 `UNCERTAINTY = OPERATING_CONDITION`  
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `ROLE_CONTINUITY != RUNTIME_IDENTITY`
 
-## Retrieval order
+## Boot / retrieval
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from #108, PR127 and #119.
-3. Reacquire maintained/public PSFH heads before mutation.
-4. Discover recently active COM/PR surfaces; one-thread COMSYNC is not assumed complete.
+2. Reacquire later returns from #108, PR127 and any Vermeer/icon execution surface.
+3. Reacquire maintained/public PSFH refs before mutation.
+4. Discover recent surfaces; one issue is not full COMSYNC.
 5. Do not replay large cold carriers unless a current decision needs a named slice.
 
 ## Current consequential state
 
-### PSFH Preview 0.8.4 — PAGES DEPLOYED; SERVED READBACK OPEN
+### Preview 0.8.4 — CLOSED
 
-Reviewed release source `3f7803d27c3615d81ede643f153dc2ec20270e01` passed Codex build/delta evidence and Claude Code metadata/bundle/history KEEP.
+Public `gh-pages 965687ee60552e11e25e5c9f797edc7f8b947dcd` is the reviewed concrete-first Preview0.8.4. Build/review, one-push publication, Pages run `34377202742` SUCCESS, and CC bounded served-origin verification are complete. CC verified the story/mechanism/three movements/ceilings, exact1023-byte seed with `Not a release or canon.`, zero relative `llms.txt` links, and unchanged Homer source/720/1440 bytes. Framework closed the release in #108 `5605392566`.
 
-Maintained branch is now:
-`782c3f8d9be07feb788449e1fadd979799213f83`.
+Do not republish/reopen. Practical advantage remains unproven.
 
-Public publishing branch is now:
-`gh-pages 965687ee60552e11e25e5c9f797edc7f8b947dcd`, direct parent Homer predecessor `dd06d95cb880208b30f703c54af33c2440c97812`.
+### Browser-tab icon — SOURCE MERGED, PUBLICATION AUTHORISED
 
-Codex performed one authorised push using the already-tested RC output, not a rebuild from later source. All115 generated Git blobs match the reviewed output:11 changed /104 identical /0 added /0 removed. Publishing configuration and all four Homer artifacts are unchanged; Powers is excluded.
+Mark requested a browser-tab icon. Exact candidate `e0add509d0708533560e856568ac6ba70c844936` is merged into maintained PSFH as `e30debac2a8c32c37d2abfaa32e988c11fe98e79` (PR128 closed/merged).
 
-GitHub Pages run `34377202742` completed **SUCCESS** for exact `965687ee`, updated at 2026-09-09T16:31:23Z. Publication receipt is in COM evidence and #108 `5605315210`.
+Public predecessor was still `965687ee...` at the last read. Framework #108 `5605452516` authorises exactly one icon-only publication: two root-head icon links, add SVG/ICO/ISC notice at pinned hashes, keep visible root body and all other114 predecessor outputs exact; no edition/content/Powers/etc bundle. Browser cache delay is not a retry reason. Do not claim publication until public ref/Pages/readback moves; do not issue duplicate push instructions.
 
-Remaining observation only: independently attributed **served custom-domain readback** of root/seed/llms/changes/manifest/representative read routes and Homer assets. Codex and Framework transports have recorded custom-domain access limits; do not bypass. Do not republish while waiting.
+### Harriet Powers — PR127 VISUAL/EDITORIAL REVIEW OPEN
 
-Preview 0.8.4 / Reader Edition0.11 D015 contains the reviewed concrete-first human Door and PR125 machine-text repairs. Practical advantage remains unproven.
+Exact source-only candidate `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`, PR127 open/ready/mergeable. Fourteen additions only under `proposals/powers/`; no existing public/site source changed.
 
-`PAGES_DEPLOYED != SERVED_PARITY_OBSERVED`
+Source image: exact Smithsonian IDS delivery2880x2412,2671829 bytes, SHA `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`; `MUSEUM_MASTER_STATUS = UNKNOWN`.
 
-### Harriet Powers — PR127 SOURCE CANDIDATE / REVIEW OPEN
+Viewing copies:720x603 SHA `c424b692...`;1440x1206 SHA `816b56a1...`. Recorded proportional Lanczos JPEG preparation, no crop/retouch/generative operation, second run reproduced hashes. Separate proposal build PASS;10 narrow tests PASS;8 local deliveries + route200.
 
-Exact source-only candidate:
-- PR127, branch `codex/powers-work-page-20260909`;
-- head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`;
--14 additions confined to `proposals/powers/`; no existing site source/public route changed;
-- PR marked ready for review, open/unmerged.
+Page contract: dedicated `/works/harriet-powers/`; whole quilt gets visual space; maker/work/source and mediated museum account precede separately labelled PSFH response; no panel meanings invented; not hero/wallpaper/Explore concept/gallery.
 
-Image custody:
-- Smithsonian IDS-delivered source2880x2412,2671829 bytes, SHA256 `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`;
-- `MUSEUM_MASTER_STATUS = UNKNOWN`;
--720x603 viewing copy201415 bytes, SHA `c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802`;
--1440x1206 viewing copy862531 bytes, SHA `816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f`;
-- derivatives are proportional Lanczos JPEGs with recorded encoder/settings, no crop/retouch/generative operation; second run reproduced hashes.
+Open gate:
+- CC independent art review PR127 `5605204288`;
+- actual browser measurement task PR127 `5605456448`: desktop/mobile/material enlargement, report measured overflow/order before any repair.
+- Framework's own container has `/usr/bin/chromium` but headless Chromium times out even on `about:blank`; this does **not** close the rendering gate and is not evidence against the candidate. Do not substitute CSS arithmetic.
 
-Separate proposal build PASS;10 narrow tests PASS;8 exact local deliveries + work route200. Source/provenance/interpretation structure is coherent on Framework read: maker/work/source first, mediated museum account next, separately labelled PSFH response last; no panel meanings invented.
+After review, refresh integration onto current maintained source (`e30debac...` or later) before any public candidate.
 
-Open gate: CC independent review of representative desktop/mobile/materially enlarged-text rendering, provenance wording, creator-account separation, and whether the quilt stands as a work rather than becoming a PSFH teaching illustration. No public wiring until that review. Any later root link belongs in `The work and its neighbours`, not first-movement cards or conceptual Explore map. No gallery system yet.
+`ART_SHOULD_STAND_BEFORE_IT_TEACHES`
 
-`ART_SHOULD_STAND_BEFORE_IT_TEACHES`  
-`ACQUIRED_SOURCE_IMAGE != MUSEUM_MASTER`  
-`CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
+### Vermeer — RECORD-LINKED SOURCE ACQUISITION REOPENED
 
-Vermeer remains `ASSET_BLOCKED` for a documented full-source path; do not promote its thumbnail or guess image variants.
+Städel's authoritative current object page for Johannes Vermeer, *The Geographer*,1669, inventory1149, marks Picture Copyright Public Domain and directly links exact `https://cdn.staedelmuseum.de/images/49/7c/1149/thumb-xl.jpg`.
 
-### #119 — DELIBERATELY PAUSED BEFORE STAGE A
+Framework web reader can visibly render that exact image; Framework container cannot resolve/download the CDN bytes. `VISIBLE != ACQUIRED`.
 
-No study has run; practical advantage remains unproven.
+Powers clarified the custody rule, so Framework #108 `5605509411` withdrew the earlier museum-master/full-original prerequisite. Codex/local may acquire **that exact record-linked URL only**; no guessed variants/API/IIIF/account. Return bytes/dimensions/profile/orientation/SHA, explicit source category and `MUSEUM_MASTER_STATUS = UNKNOWN`; never upscale. If too small, return `SOURCE_ACQUIRED_BUT_PRESENTATION_TOO_SMALL`. Source-only, no public wiring. Powers remains higher integration priority.
 
-CC hostile review produced six accepted findings. Do not write v3 or run Stage A until these choices are frozen:
-- interpretable builder population/recruitment/background/exposure rule;
-- development-account budget and maximum protocol-revision rounds;
-- later Stage-B holdout N and mechanical selection rule.
+### Art horizon — RESEARCH ONLY
 
-Retain CAP_HIT, GRANULARITY_MISMATCH diagnostic state, raw vs eligible coverage, and zero eligible denominator = UNDEFINED. No accounts selected, people contacted, inference, recruitment or spend.
+COM `af940de3...` preserves two post-Powers horizon candidates, not a build queue: Anna Atkins' *Photographs of British Algae: Cyanotype Impressions* and Utagawa Hiroshige's *View of the Asakusa Kinryuzan Temple from the Azuma Bridge in the Rain*. Both have authoritative Met Public Domain/Open Access records. Do not promote until Powers/Vermeer settle and the work earns a place.
 
-### Guestbook
+### #119 — PAUSED BEFORE STAGE A
 
-Synthetic representation experiment complete and preserved in COM main. #118 disposition: **HOLD_INTAKE**. No form/backend/provider/real guest data/public route.
+No study has run. Do not write v3/run Stage A until builder-population/recruitment rule, development-account + revision budget, and later Stage-B holdout N/selection are frozen. No recruitment/inference/spend.
 
-### Desktop
+### Guestbook / desktop
 
-Temporary quiet mode remains: scheduled two-minute task disabled/preserved; hidden120s watchdog loop is the workaround. If the loop dies nothing resurrects it. Project AIs cannot see Mark's screen. Do not reopen rejected launcher experiments without new evidence.
+Guestbook representation complete; #118 `HOLD_INTAKE`. No public write/backend/real guest data.
+
+Desktop quiet mode remains: scheduled two-minute watchdog disabled/preserved; hidden120s loop is temporary workaround. Do not run both or reopen rejected launcher work without new evidence.
 
 ## Baselines / gates
 
@@ -99,13 +84,6 @@ Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
-
-## Roles
-
-- **Framework:** coordination lead/integrator; purpose, evidence, product judgement and consequential gates. Make ordinary reversible decisions.
-- **Codex:** executable product/host engineering, local browser/image work and deterministic study design.
-- **Claude Code:** independent hostile review/failure modes; not second integration owner.
-- **Mark:** originator/witness/consequential authority; ordinary reversible choices stay with team.
 
 `POSTED != RECEIVED != ACTED != EFFECT`  
 `RECORDED_CURRENT != EXTERNALLY_CURRENT`  
