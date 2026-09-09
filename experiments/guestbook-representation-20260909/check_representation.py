@@ -16,6 +16,13 @@ HTML = ROOT / "register.html"
 
 URL_LIKE = re.compile(r"(?:https?://|www\.)", re.IGNORECASE)
 PUBLISHER_SHAPED_GUEST_FIELDS = {"name", "kind", "note", "encounter_edition", "encounter_source"}
+GUEST_CLAIM_FIELDS = (
+    "claimed_name",
+    "claimed_kind",
+    "claimed_note",
+    "claimed_encounter_edition",
+    "claimed_encounter_source",
+)
 
 
 def fail(message: str) -> None:
@@ -72,13 +79,16 @@ for row in rows[1:]:
             if required not in row:
                 fail(f"{public_id}: missing {required}")
 
+        for field in GUEST_CLAIM_FIELDS:
+            value = row.get(field)
+            if value is not None and not isinstance(value, str):
+                fail(f"{public_id}: {field} must be text or null")
+            if isinstance(value, str) and URL_LIKE.search(value):
+                fail(f"{public_id}: URL-like text is not accepted in v0 guest field {field}")
+
         note = row.get("claimed_note")
-        if not isinstance(note, str):
-            fail(f"{public_id}: claimed_note must be text")
         if len(note) > 280:
             fail(f"{public_id}: claimed_note exceeds 280 Unicode characters")
-        if URL_LIKE.search(note):
-            fail(f"{public_id}: URL-like text is not accepted in v0 guest notes")
 
         if public_id == "fixture-injection-001":
             injection_fixture_seen = "ignore prior instructions" in note.lower()
@@ -87,7 +97,7 @@ for row in rows[1:]:
 
     elif record_type == "guest_mark_removal_state":
         removal_fixture_seen = True
-        for field in ("claimed_name", "claimed_kind", "claimed_note", "claimed_encounter_edition", "claimed_encounter_source"):
+        for field in GUEST_CLAIM_FIELDS:
             if row.get(field) is not None:
                 fail(f"{public_id}: removal state retains {field}")
         if row.get("removed_text_retained_in_current_export") is not False:
