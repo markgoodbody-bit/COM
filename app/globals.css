@@ -107,7 +107,11 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
 .art-hero img { grid-area: 1 / 1; align-self: start; padding: 0; border: 0; }
 .art-hero figcaption { grid-area: 3 / 1; justify-self: end; width: min(100%, 42rem); margin: .75rem 0 0; text-align: right; }
 /* Place the title in the dark canopy, not over the people or fire. */
-.hero-heading { grid-area: 1 / 1; align-self: start; justify-self: start; z-index: 1; margin: clamp(1.25rem, 3vw, 3rem); padding: 0; background: transparent; color: #ffffff; max-width: min(35rem, 58%); text-shadow: 0 1px 3px #000000, 0 2px 12px rgba(0,0,0,.7); }
+.hero-heading { grid-area: 1 / 1; align-self: start; justify-self: start; z-index: 1; position: relative; isolation: isolate; margin: clamp(1.25rem, 3vw, 3rem); padding: 0; background: transparent; color: #ffffff; max-width: min(35rem, 58%); text-shadow: 0 1px 3px #000000, 0 2px 12px rgba(0,0,0,.7); }
+/* The 60% black plateau covers the whole heading, including reflow. Only the
+   outer edge fades: 2rem expansion minus 1.5rem feather leaves .5rem spare.
+   Keep the scrim behind the letters, not as a foreground card over the people. */
+.hero-heading::before { content: ""; position: absolute; inset: -2rem; z-index: -1; pointer-events: none; background: rgba(0,0,0,.60); mask-image: linear-gradient(to right, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent), linear-gradient(to bottom, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent); mask-composite: intersect; }
 .intro:has(.first-movements) .hero-heading h1 { color: #ffffff; margin: 0 0 .85rem; font-size: clamp(2.6rem, 5.2vw, 4.75rem); }
 .hero-heading .guiding-question { color: #ffffff; margin: 0; }
 .opening-copy { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); column-gap: 3rem; margin-top: 2rem; }
@@ -117,6 +121,7 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
 /* Below 60rem the image is too shallow for a robust canopy-only overlay. */
 @media (max-width: 60rem) {
   .hero-heading { grid-area: 2 / 1; width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
+  .hero-heading::before { content: none; }
   .art-hero figcaption { justify-self: stretch; width: 100%; text-align: left; }
 }
 @media (max-width: 42rem) {
@@ -125,9 +130,10 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
   .opening-copy { display: block; margin-top: 1.5rem; }
 }
 /* Older layout engines keep the full painting and a separate solid title panel. */
-@supports not (grid-template-rows: subgrid) {
+@supports (not (grid-template-rows: subgrid)) or (not (mask-composite: intersect)) {
   .art-hero, .art-hero > figure { display: block; }
   .hero-heading { width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
+  .hero-heading::before { content: none; }
   .art-hero figcaption { width: 100%; text-align: left; }
 }
 @media print { :root { --background: #fff; --foreground: #111; --muted: #444; --surface: #fff; --panel: #fff; --warm-panel: #fff; --wash: #fff; --shadow: transparent; } body { max-width: none; font-size: 11pt; background: #fff; } .skip { display: none; } h1, h2, h3 { break-after: avoid; } a, a:visited { color: inherit; } .first-movements article, .small-loop, .handoff { box-shadow: none; } }

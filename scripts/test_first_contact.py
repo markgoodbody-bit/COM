@@ -130,49 +130,40 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('src="data:image/jpeg;base64,', offline)
         self.assertNotIn('src="/art/', offline)
 
-    def test_hero_white_text_against_measured_canopy_regions(self):
+    def test_hero_scrim_plateau_has_a_conservative_contrast_floor(self):
         from PIL import Image
-        import math
         css = (ROOT / 'app/globals.css').read_text(encoding='utf-8')
-        self.assertIn('background: transparent; color: #ffffff;', css)
-        self.assertIn('align-self: start; justify-self: start;', css)
+        self.assertIn('background: rgba(0,0,0,.60);', css)
+        self.assertIn('inset: -2rem;', css)
+        self.assertIn('#000 1.5rem, #000 calc(100% - 1.5rem)', css)
+        self.assertIn('mask-composite: intersect;', css)
+        self.assertIn('(not (mask-composite: intersect))', css)
+        self.assertIn('.hero-heading::before { content: none; }', css)
         self.assertIn('background: #141b20;', css)
         self.assertNotIn('object-fit: cover', css)
+
         def linear(value):
             value /= 255
             return value / 12.92 if value <= .04045 else ((value + .055) / 1.055) ** 2.4
-        mobile_lum = sum(weight * linear(value) for weight, value in zip((.2126, .7152, .0722), (20, 27, 32)))
-        mobile_ratio = 1.05 / (mobile_lum + .05)
-        self.assertGreaterEqual(mobile_ratio, 4.5)
-        print(f"Solid mobile title contrast: {mobile_ratio:.2f}:1")
+
+        # Fully opaque masks throughout the heading preserve the .60 black
+        # alpha there. A .5rem inset margin remains before the feather begins.
+        # This is an sRGB compositing bound, not a browser/glyph conformance test.
+        white_background_floor = 1.05 / (linear(255 * .40) + .05)
+        self.assertGreaterEqual(white_background_floor, 4.5)
+        print(f"Scrim plateau over white: {white_background_floor:.2f}:1")
+        mobile_lum = sum(w * linear(v) for w, v in zip((.2126, .7152, .0722), (20, 27, 32)))
+        print(f"Solid mobile title contrast: {1.05 / (mobile_lum + .05):.2f}:1")
+
         record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
-        # Native browser Range line boxes, normalized to the complete image,
-        # measured for this composition at requested1600x1100 and1024x900.
-        # These are fixed observations, NOT a responsive geometry test. A later
-        # title/font/placement change needs new browser measurements. Pixel
-        # bounds round outwards and ignore the black shadow's extra contrast.
-        regions = [
-            ('wide title1', .0384589, .0558936, .2840997, .1110929),
-            ('wide title2', .0384589, .1556031, .2713863, .1110928),
-            ('wide question', .0384589, .2821539, .3373321, .0409289),
-            ('small title1', .0331393, .0469046, .2680558, .1054677),
-            ('small title2', .0331393, .1410089, .2560594, .1054677),
-            ('small question', .0331393, .2680965, .3567795, .0425019),
-        ]
-        lut = [linear(value) for value in range(256)]
-        for variant in record['responsive']['variants']:
-            with Image.open(ROOT / 'out' / variant['local_image'].lstrip('/')) as image:
-                image = image.convert('RGB')
-                ratios = []
-                for label, x, y, width, height in regions:
-                    box = (math.floor(x * image.width), math.floor(y * image.height),
-                           math.ceil((x + width) * image.width), math.ceil((y + height) * image.height))
-                    pixels = image.crop(box).get_flattened_data()
-                    lum = max(.2126 * lut[r] + .7152 * lut[g] + .0722 * lut[b] for r, g, b in pixels)
-                    ratio = 1.05 / (lum + .05)
-                    self.assertGreaterEqual(ratio, 4.5, (variant['width'], label))
-                    ratios.append(ratio)
-            print(f"Measured-line region minimum {variant['width']}px: {min(ratios):.2f}:1")
+        paths = [record['local_image']] + [v['local_image'] for v in record['responsive']['variants']]
+        for path in paths:
+            with Image.open(ROOT / 'out' / path.lstrip('/')) as image:
+                maxima = [upper * .40 for lower, upper in image.convert('RGB').getextrema()]
+            lum = sum(w * linear(v) for w, v in zip((.2126, .7152, .0722), maxima))
+            ratio = 1.05 / (lum + .05)
+            self.assertGreaterEqual(ratio, 4.5, path)
+            print(f"Whole-frame source-channel bound with scrim {path}: {ratio:.2f}:1")
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',

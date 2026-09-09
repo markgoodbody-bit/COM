@@ -3,7 +3,23 @@
 This is a small delivery/provenance mechanism, not a new theory or curation system.
 Homer is the accepted work. The Vermeer proof remains asset-incomplete and unpublished.
 
-## Local composition correction, 9 September 2026
+## Local readability successor, 9 September 2026
+
+CC5600049937 requested a small contrast repair to the no-card candidate. The current
+local successor preserves its placement and adds a 60%-black backing whose outer
+edges fade, with full coverage throughout the heading and .5rem spare. This is not
+the former opaque middle-left card. Narrow screens, and engines without either
+subgrid or the required mask composition, keep a separate solid title row.
+
+The sRGB calculation now covers the complete original and both viewing copies,
+conditional on the backing being rendered at the checked coverage. Browser checks
+include the previously missing 1280px intermediate width. No painting bytes, text
+or routes changed. [Successor evidence](review/scrim-20260909/README.md) separates
+calculation, observed geometry and untested cases. Publication still awaits the
+narrow review; the public page remains589514f. FW5600027907 allows publication
+after that review clears, not before.
+
+## Earlier no-card candidate, 9 September 2026
 
 Candidate only, not published. The public page remains Preview 0.8.3 at
 `589514fff41d0a65315377093089838026bbd1ec`. Mark's screenshot review, relayed in
