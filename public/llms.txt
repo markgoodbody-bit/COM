@@ -23,6 +23,7 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 ## Start
 
 - [AI reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation with optional question routes.
+- [Human works](https://pleasestartfromhere.com/works/): five works selected for this preview, offered as an optional human-art route. The selection is project-curated, not a ranking or representative canon, and the works are not evidence for TRACE or Mechanical Ethics.
 - [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
