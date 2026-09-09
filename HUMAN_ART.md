@@ -1,7 +1,39 @@
 # Human artwork: source and viewing copies
 
 This is a small delivery/provenance mechanism, not a new theory or curation system.
-Homer is the accepted work. The Vermeer proof remains asset-incomplete and unpublished.
+
+## Current integration edge — first five works, source only
+
+Status: **SOURCE-ONLY INTEGRATION CANDIDATE / NOT PUBLISHED / NOT A CURATION CANON**
+
+Exact reviewed source object: PR132 `dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175`, built from repaired Powers PR127 `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39` and repaired Vermeer PR129 `36cc8c54e937318c61d2c317ff71c7f66bc38687`, with Anna Atkins, Shen Zhou and Edmonia Lewis retained from the kept five-work shelf.
+
+The first five are a project-curated starting shelf, not a ranking, representative canon, completeness claim or diversity proof. Selection is an aperture: other creators, media, histories and affected perspectives remain outside this first view. Nothing about omission here establishes irrelevance or absence.
+
+Current source-ready first five:
+
+1. Harriet Powers — *Bible Quilt*;
+2. Johannes Vermeer — *The Geographer*;
+3. Anna Atkins — *Ulva lactuca*;
+4. Shen Zhou — *Anchorage on a rainy night*;
+5. Edmonia Lewis — *The Death of Cleopatra*, represented through two distinct museum photographs.
+
+The homepage keeps Winslow Homer. The next normal-source candidate gives these five works an optional `/works/` route rather than turning the homepage into an image wall. The shelf unifies discovery, not presentation: each work keeps the geometry and source context appropriate to its medium. Lewis keeps two real museum views; no missing angle is synthesized.
+
+Artwork is not evidence that TRACE or Mechanical Ethics is correct and is not required to illustrate either framework. A null project response is a valid editorial result. Powers carries the maker-linked recorded account because it materially changes what the page can preserve; any PSFH response remains visibly separate and smaller. Sources, institutions, rights, acquisition limits and reproduction limits stay visible per work.
+
+The current reviewed source/evidence state is positive but bounded. PR132 records exact lineages, 33 combined tests, 36 exact local delivery checks and targeted fresh evidence for the Vermeer bytes that differ from the frozen measured assembly. Those checks establish source/build/presentation properties only; they do not establish reader benefit, representativeness, moral value, curation quality or public usefulness.
+
+No public, root, edition or release mutation follows from this record. Normal-site integration must preserve the Door's voluntary reading and exit boundaries, add no feed/ranking/likes/carousel/autoplay/analytics, and earn its own normal-build, link, route, accessibility and render evidence before any publication decision.
+
+`FIRST_FIVE != REPRESENTATIVE_FIVE`  
+`SELECTED != COMPLETE`  
+`ART_ENCOUNTER != FRAMEWORK_EVIDENCE`  
+`SOURCE_READY != PUBLIC`
+
+## Historical delivery and presentation notes
+
+The sections below preserve earlier Homer/Vermeer delivery and presentation work in historical order. Their old current-state wording is not the live integration queue; the current integration edge above wins where states differ.
 
 ## Local readability successor, 9 September 2026
 
@@ -88,15 +120,20 @@ network image references. No real-network paint-time benefit is established.
 Human creator; work/title/date/medium; institution and authoritative source;
 rights evidence; inspection/retrieval date; local original and hash; source-bound
 derivatives/settings/hashes; alt text; visible credit; artist route; a clearly
-project-authored interpretation distinct from artist intention.
+project-authored interpretation distinct from artist intention where a project interpretation is actually used.
 
 Use existing fields, not an art taxonomy. No bulk curation or machine image
 payload. Choose each work's presentation; busy imagery under text or a repeated
-background template is not the default. Two historic European male painters are
-a bounded proof, not a diversity policy. Future selection should not stay inside
-the easiest rights category; living creators require appropriate permission.
+background template is not the default. A project response may be null. An initial
+selection is an aperture rather than a diversity or completeness claim. Future
+selection should not stay inside the easiest rights category; living creators
+require appropriate permission.
 
-## Vermeer: sources verified, asset unresolved
+## Historical Vermeer acquisition note — superseded by repaired PR129 / PR132
+
+The earlier acquisition pass below is preserved because it records the route that
+failed before the later exact record-linked thumbnail was pinned and reviewed. It
+must not be read as current Vermeer status.
 
 Städel's [work record](https://sammlung.staedelmuseum.de/en/work/the-geographer)
 identifies Johannes Vermeer, The Geographer,1669, oil on canvas, inventory1149,
@@ -107,13 +144,14 @@ permits reuse and links Public Domain Mark1.0, not CC0. The
 identifies1632–1675, Delft. Sources inspected9 September2026 Europe/London.
 
 The full-image download received a non-retryable safe-open refusal. No alternative
-transport or inferred image URL bypassed it. No local original/hash or responsive
-Vermeer set is established. The accessible record-linked thumbnail is not claimed
-as an acquired full original. No placeholder or Vermeer/Explore change is published.
-English/German museum descriptions disagree about which geography appears on which
-cartographic object; that detail is not repeated.
+transport or inferred image URL bypassed it. At that stage no local original/hash
+or responsive Vermeer set was established. A later bounded pass acquired the exact
+record-linked 915×1024 thumbnail and PR129/PR132 now carry that current source
+identity plus the reviewer-observed higher-resolution viewer limit. English/German
+museum descriptions disagree about which geography appears on which cartographic
+object; that detail is not repeated.
 
-Provisional project reading: a person pauses among maps and instruments; having
-tools does not finish orientation. That association belongs to this project, not
-an intention attributed to Vermeer. A later local inset could sit beside optional
-Explore navigation without hiding the questions. The second proof is not complete.
+An earlier provisional project reading associated the painting with pausing among
+maps and instruments. The current reviewed Vermeer work page deliberately carries
+`project_response: null`: the painting does not need to become an illustration of
+this project in order to belong beside it.
