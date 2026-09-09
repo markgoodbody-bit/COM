@@ -2,15 +2,24 @@
 
 SOURCE ONLY / NOT PUBLISHED / NOT PART OF PREVIEW 0.8.4
 
-Base: maintained PSFH `d28121c7fca9d064226670fc568dad57073c836c`.
-Authority: Framework COM #108 comments `5604976850` (build) and `5605023335` (placement), within Mark's continuing project-work instruction.
+Base branch: `codex/door-maintained-source-20260908`.
+Original candidate reviewed at `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`.
+Independent four-part review: PR127 comment `5606429869` → `REPAIR_SMALL x4`, nothing false, nothing rights-unsafe.
+Framework repair direction: COM #108 comment `5606571607`.
 
-## What changed
+All files remain confined to `proposals/powers/`. No normal site source, homepage, Explore map, site edition, book, release or publication branch is changed.
 
-Before: one acquired image and its original observation receipt, no viewing copies or page.
-After: exact acquired parent retained, two proportional viewing copies, a separately attributed successor provenance record, and one human work-page proposal.
+## What the repair changes
 
-All additions are confined to `proposals/powers/`. No normal site source, build, homepage, Explore map, edition, book, release or publication branch is changed. The separate build emits `/works/harriet-powers/` and `/art/` assets into ignored `outputs/powers-work-page/`. It deliberately does not connect the page to the live homepage. A possible later entry in “The work and its neighbours” requires review; no gallery/index is invented.
+The repair is deliberately bounded:
+
+1. **Provenance:** remove the contradicted `3000x2512` advertisement and record what the museum surfaces now establish. The acquired 2880×2412 bytes are the museum's own High-resolution JPEG and match its IIIF canvas. The museum also offers a High-resolution TIFF. Whether that TIFF is a master remains UNKNOWN. Carry the museum Credit Line: `Gift of Mr. and Mrs. H. M. Heckman`.
+2. **Powers's agency and title:** the museum records that Powers **insisted** Jennie Smith record exactly what each panel depicted. It also records Powers's own title for this quilt: *Adam and Eve in the Garden of Eden*.
+3. **Maker account:** the page now carries the factual eleven-panel subject sequence itself instead of merely saying that an account exists. The list is a factual enumeration, not copied museum descriptive prose. PSFH supplies no new panel meanings.
+4. **Presentation:** `main` keeps its `max-width` in `rem` but changes the horizontal gutter from `1rem` to fixed `16px`, removing the mechanism that made the artwork shrink on a 390px viewport when root text doubled.
+5. **Project voice:** the PSFH response is reduced to two short sentences so the maker-account section no longer exists mainly as a preface to our own explanation.
+
+`THE_MAKER'S_ACCOUNT != SPACE_RESERVED_FOR_THE_MAKER`
 
 ## Image custody
 
@@ -20,33 +29,63 @@ All additions are confined to `proposals/powers/`. No normal site source, build,
 | bible-quilt-720.jpg | 720 × 603 | 201415 | c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802 |
 | bible-quilt-1440.jpg | 1440 × 1206 | 862531 | 816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f |
 
-The original `acquisition.json` is byte-preserved with SHA-256 `a78d84f490d0331724150ab6ac2a0cd8690ab067ddd214db7e8da360b9d2288f`; its acquisition-time unknowns have not been rewritten. `artwork.json` records Framework's later authoritative NMAH/Open Access observation with an exact comment and evidence commit. Codex did not independently recover those rights statements from the blocked acquisition metadata route. Master status remains UNKNOWN. Donor credit is not used as creator or image-author credit.
+Those image bytes are unchanged by this repair.
 
-`prepare.py` is the recorded, network-free preparation recipe: Pillow 12.2.0 / JPEG 8.0, Lanczos proportional resize, quality85/86, chroma subsampling2, no optimization/progressive encoding, source ICC retained, no EXIF copied or orientation transform. No crop, retouch or generative operation. A second run reproduced the same derivative hashes. Do not silently regenerate with another encoder or repin the tests.
+The corrected `acquisition.json` preserves the acquisition-time transport failures as historical observations and separately records the later authorised source resolution rather than allowing the earlier failures to stand as current metadata. The validator pins the corrected receipt and rejects later source-tier, credit-line or master-status inflation.
 
-## Checks and their limits
+`prepare.py` remains the network-free viewing-copy recipe: Pillow 12.2.0 / JPEG 8.0, proportional Lanczos resize, quality 85/86, source ICC retained, no crop, retouch or generative operation.
 
-Run from the site checkout:
+## Recorded panel subjects
+
+In the museum-recorded order from the top left:
+
+1. Adam and Eve in the Garden of Eden
+2. Paradise continued, with Eve and a son
+3. Satan among seven stars
+4. Cain killing Abel
+5. Cain travelling to the land of Nod to find a wife
+6. Jacob's dream
+7. The baptism of Christ
+8. The Crucifixion
+9. Judas Iscariot and the thirty pieces of silver
+10. The Last Supper
+11. The Holy Family
+
+Source: National Museum of American History object record `nmah_556462`. This is a concise factual enumeration, not a reproduction of the museum's surrounding descriptive prose.
+
+## Checks and evidence ceiling
+
+Normal isolated checks remain:
 
 ```text
 python proposals/powers/build.py
 python -m unittest discover -s proposals/powers -p 'test_*.py'
 ```
 
-Separate proposal build PASS; ten tests PASS, including deliberate parent/derivative corruption, receipt rewrite, master overclaim, collapsed rights attribution, detached parent, wrong fallback, script insertion and record/page drift. Parent and derivative hashes are pinned independently of the editable metadata. These are narrow integrity and contract checks, not an HTML security validator or proof of museum provenance.
+The repaired validator now also pins:
+- museum source tier and Credit Line;
+- Powers's recorded title;
+- presence of all eleven subjects;
+- maker-account-before-response ordering;
+- exact parent and viewing-copy identities;
+- the prohibition on silently promoting UNKNOWN master status.
 
-All eight emitted files returned HTTP200 with exact byte counts and SHA-256 values from the local preview. `/works/harriet-powers/` returned HTTP200. This is local delivery evidence, not public PSFH readback.
+There are now twelve targeted unit tests.
 
-The ordinary `npm run build` was also attempted and FAILED at the inherited `Source changed: llms.txt` pin in exact maintained d281. No tracked site source changed here. That known baseline mismatch is repaired separately in Preview0.8.4 RC `3f7803d27c3615d81ede643f153dc2ec20270e01`; it has not been silently cherry-picked into this art proposal. Do not describe the full maintained site build as green on this branch.
+**Important:** this runtime edited the branch through the GitHub API and could not execute the local image-dependent build or browser rendering. Therefore the repaired head is **not yet build-green and not yet post-repair render-verified**.
 
-## Presentation judgement
+Pre-repair measured evidence from Codex on `fd4be447...` remains useful for identifying the defect:
+- 390px mobile / root16: image 358×299.813;
+- 390px mobile / root32: image 326×273.016;
+- no horizontal overflow in either case.
 
-Earned: the browser accessibility tree on the first route exposed the intended order: maker/work/date, unchanged-image link and visible credit, mediated museum account, then the separately labelled project response. The 720-pixel viewing copy was visually inspected: the delivered outer textile boundary remains visible. This is not a colour-fidelity or completeness authentication.
+The source repair changes the causal declaration from `padding: 0 1rem` to `padding: 0 16px`. That is a source-level correction, not a substitute for rerunning the measured render on the repaired exact head.
 
-Provisional source-level judgement: desktop gives the complete work up to1136 CSS pixels across with prose below, not an image thumbnail beside framework text. At a390px viewport and default16px root type, the specified side padding leaves358px for the image; it remains proportional, with caption and text following in a single column. Rem-sized body text, wrapping links and no fixed-height image container are intended to tolerate enlarged text. These are CSS deductions, not observations of those rendered viewports.
-
-UNRESOLVED: representative desktop/mobile screenshots and overflow/enlarged-text inspection. The available browser entry points returned the accessibility tree but no documented screenshot/resize controls. No alternative browser-control channel was improvised. CC is asked to provide that missing inspection alongside the independent source/interpretation review. Do not mark this rendering gate complete from the checks above.
+`SOURCE_REPAIR != POST_REPAIR_MEASUREMENT`
+`CSS_CAUSE_REMOVED != RENDER_OBSERVED`
 
 ## Interpretation boundary
 
-No individual panel meanings are supplied. Powers's account is identified as mediated through Jennie Smith and the museum. The separate PSFH response is a provisional editorial choice about keeping that account within reach, not a discovered moral lesson, an intention attributed to Powers, museum endorsement, or reader-benefit evidence. Whether the page earns its place rather than becoming ornamental remains an independent review question.
+Powers's account remains visibly mediated through Jennie Smith and the museum record. The page now carries her recorded title and the factual subjects she insisted be preserved, but it does not claim access to an unmediated transcript, infer new meanings for the panels, attribute PSFH values to Powers, or imply Smithsonian endorsement.
+
+The page remains a review object. No merge, shelf inheritance or public wiring is authorised merely because these source repairs exist.
