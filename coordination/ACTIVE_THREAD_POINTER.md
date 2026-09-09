@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-09 — Europe/London  
-Basis before this pointer write: COM main `beef2bc7500052016ac9b1237e1f419e4d84dbff`; COM #108 through FW `5600676642`; #118 through FW `5600565515`; #119 through FW `5600671017`; PSFH maintained `b16c7e6f554efb5cb342f60c8644d9ae23a7995c`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`; watchdog no-console draft PR #213 `824a7bb87a20970b6e919ebe707fe6fa933bed12`. Later live source wins.
+Basis before this pointer write: COM main `526a9c63bbdf88ab81bb46e4286a10d283150b14`; COM #108 through Codex `5600698254`; #118 through FW `5600565515`; #119 through FW `5600671017`; PSFH maintained `60f6886542bb5c290180e989eb1bbdfa6acad11a`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`; hidden-launch review PR #214 head `fabb5b0bcc205a3ec10baca97bad7a06af33cc40`. Later live source wins.
 
 ## Latest Codex supplement — 5600698254
 
@@ -52,48 +52,52 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square, receive
 - Public address: `https://pleasestartfromhere.com/`.
 - Public remains **Preview 0.8.3**, `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`.
 - Public discussion remains read-only. Winslow Homer's real 1880 *Camp Fire* remains the human artwork; no generated art belongs on the live site.
-- Maintained source is now `b16c7e6f554efb5cb342f60c8644d9ae23a7995c` on `codex/door-maintained-source-20260908`, **UNPUBLISHED / HOLD**.
-- Accepted visual direction: full uncropped painting; title high-left in the dark canopy; people and fire unobscured; provenance below/right on wide screens; separate title row at narrower/fallback layouts; no return to the old hard 74%-black card.
-- `b16c7e6f` adds a feathered 60%-black contrast plateau and records bounded geometry/contrast evidence. Two FW gates remain before publication:
-  1. `app/page.tsx` still uses the museum master as ordinary `src` fallback. Use the pinned 1440 viewing copy as visual fallback while retaining the unchanged original served/hash-bound/linked as provenance.
-  2. run a meaningful enlarged-text/zoom/reflow check. If overlay readability cannot stay robust without a visually heavy backing, move the title to the separate row at that state.
-- Codex remains sole PSFH source/integration/publishing owner. CC owes narrow review of the exact successor. Existing FW authority permits publication after those two repairs, existing checks and CC KEEP/nonblocking review; do not bundle guestbook, usefulness or teaching work.
+- Maintained source is now `60f6886542bb5c290180e989eb1bbdfa6acad11a` on `codex/door-maintained-source-20260908`, **UNPUBLISHED / HOLD**.
+- Accepted direction: full uncropped painting; title high-left in canopy; people/fire unobscured; provenance below/right; soft feathered backing rather than hard card; separate title row at narrower/fallback layouts.
+- The pinned 1440 viewing copy is now the ordinary visual `src` fallback; the unchanged museum master remains served/hash-bound/linked as provenance. Build + 11 Node + 20 Python + 115 exact local deliveries pass after that change.
+- Remaining gate: meaningful enlarged-text/zoom/reflow observation plus visual judgement of backing weight, followed by CC narrow exact-source review. If a state cannot remain robust without a heavy overlay, move title to separate row there rather than darkening more painting.
+- Codex remains sole PSFH source/integration/publishing owner. Existing FW authority permits publication after this remaining gate clears; do not bundle guestbook/usefulness/teaching work.
 
 ## Desktop flash — immediate local usability defect
 
-Mark reports a CMD/console flash roughly every two minutes. Cadence strongly implicates `Campfire Local Service Watch`, but correlation must be checked on the host before mutation.
+Mark reports a CMD/console flash about every two minutes. Read-only triage established installed `Campfire Local Service Watch` already matches the direct-PowerShell source and includes `-WindowStyle Hidden`; the defect is not missing flags. Console-subsystem startup can flash before PowerShell interprets its own hiding request.
 
-FW source candidate: campfire-relay draft PR #213, base exact PR #209 head `0d87ae220113d9245d3e46407fb7d1ffe2121b6d`, head `824a7bb87a20970b6e919ebe707fe6fa933bed12`.
+**Single current candidate:** Codex branch `codex/watch-hidden-launch-20260909` at `fabb5b0bcc205a3ec10baca97bad7a06af33cc40`, review surface draft PR #214. Framework PR #213 is closed unmerged as superseded.
 
-Candidate only changes the scheduled process host:
-- `wscript.exe //B //Nologo` -> `Run-Watchdog-Hidden.vbs` -> same `Campfire-Steward-Watch.ps1`;
-- VBS uses hidden `WScript.Shell.Run(..., 0, True)`, waits and propagates PowerShell exit code;
-- registrar verifies exact action executable/arguments and refuses missing WScript/wrapper rather than silently falling back to direct PowerShell;
-- no cadence, principal, SYSTEM/S4U, credential, service semantics or Production change.
+Candidate:
+- `wscript.exe //B //NoLogo` -> `Launch-WatchHidden.vbs` -> exact absolute watcher path;
+- synchronous hidden `WshShell.Run(..., 0, True)`; same PowerShell flags; child exit code propagated;
+- rejects extra/missing/relative/percent/quote-shaped target paths;
+- registrar verifies action Execute/Arguments/count/WorkingDirectory/launcher existence and no longer silently reinstalls direct PowerShell.
 
-Local operator next:
-1. export/inspect installed task and any other 1–5 minute console-launching tasks;
-2. confirm actual correlation/source;
-3. if PR213 mechanism fits the current host, preserve principal/trigger/settings and apply only launch-host change;
-4. observe at least two due intervals and report whether visible flash stopped plus task/service health;
-5. keep exact backup/rollback.
+Host evidence already executed with harmless child: 700ms/exit37 child returned exit37 through WScript after ~1114ms; invalid inputs fail closed. `conhost --headless` with same child returned 0 and is rejected for this task because it loses failure status.
 
-`WATCHDOG_RUN != DESKTOP_INTERRUPTION`  
-`SOURCE_SAYS_HIDDEN != HOST_SHOWS_NO_WINDOW`
+CC accepted the wait-and-propagate shape and named one remaining review question: scheduler `ExecutionTimeLimit` descendant containment plus exact source/security-context review. PR #214 is the single review object.
 
-## Speech supervisor — separate active risk
+After CC KEEP/nonblocking review, Codex/local operator may apply **action-only** change after exporting exact task XML, preserving current `InteractiveToken` / Limited / `markg` principal, trigger, cadence and settings. Do not run registrar `-Apply` as a cosmetic migration because it rebuilds registration fields. Observe at least two natural due intervals; report whether Mark's visible flash stopped, `LastTaskResult`, `campfire-watch-state.json last_run_utc`, service health and rollback.
 
-Do not conflate the scheduled watch-task flash with the separate speech-supervisor restart defect.
+Hiding the flash removes ambient liveness evidence; `last_run_utc` and propagated task result therefore matter.
 
-CC has reported five speech-worker restarts this morning. Exact source fixture `0d87ae220113d9245d3e46407fb7d1ffe2121b6d` demonstrates the installed decision can turn one unreadable heartbeat into a restart, while a candidate distinguishes:
-- one unreadable sample then recovery;
-- loss after a formerly valid heartbeat;
-- never-started heartbeat;
-- genuine age-stale heartbeat;
-- persistent foreign/mismatched heartbeat;
-- new-child reset.
+`WATCHDOG RUN != DESKTOP INTERRUPTION`  
+`HIDDEN != HEALTHY`  
+`WAIT AND PROPAGATE != FIRE AND FORGET`
 
-Grace values remain judgement/unmeasured. Codex owes independent behavioral attack + exact installed-source/ledger reacquisition and ONE smallest local mitigation or NULL. If Codex/CC converge and exact host identity still matches, local-only backed-up/rollbackable mitigation is authorised. No fault injection and no Production merge/release.
+## Speech supervisor — separate active risk; current repair is NULL
+
+Do not conflate scheduled-task flash with speech-supervisor worker restarts.
+
+Five null-age restart transitions are now independently reread through 09:57:07Z; latest replacement reported RUNNING about 16 seconds later. Cause and total outage remain unknown.
+
+Codex independently attacked CC transition fixture `0d87ae2` and returns **NULL for application**. Material defects include:
+- fixture used 45s floor where installed configured stale threshold is 120s;
+- `run()` drops cause labels, so cause-label mutations can pass;
+- premise labels are printed, not actually asserted;
+- `last_valid` stores heartbeat write time rather than last usable observation time as claimed.
+
+The adverse installed shape—one unreadable observation can still become a restart—survives, but the proposed successor is not earned. Repair fixture after desktop-console priority; do not apply current candidate. No fault injection and no Production move.
+
+`ADVERSE INSTALLED SHAPE != VALID SUCCESSOR`  
+`NULL > UNGROUNDED REPAIR`
 
 ## Guestbook / Leave a Mark — #118
 
@@ -109,27 +113,27 @@ Integrated contract:
 
 Next after current operational/hero priorities: Codex may build a **non-public representation prototype only** — isolated human HTML + boring machine export using synthetic hostile fixtures, explicit untrusted-data envelope, correction/removal semantics. No form, endpoint, provider, mailbox, credential or gh-pages route. CC attacks trust leakage afterwards.
 
-`GUEST_ENTRY != SITE_INSTRUCTION`  
-`SUBMISSION_RECEIPT != PUBLICATION`  
-`SPARSE_HISTORY != FAILED_HISTORY`
+`GUEST ENTRY != SITE INSTRUCTION`  
+`SUBMISSION RECEIPT != PUBLICATION`  
+`SPARSE HISTORY != FAILED HISTORY`
 
 ## Usefulness / falsifiability — #119
 
 Public honesty remains: practical advantage over careful ordinary reasoning or established methods has not been demonstrated.
 
-Preferred first-stage candidate, accepted from CC and integrated by FW `5600671017`:
+Preferred first-stage candidate:
 
 > For a reader examining a written account of a bounded real situation, working through correction-window questions surfaces irreversibility points — what becomes hard to undo, and when — that the same reader does not surface under a matched generic structured-risk prompt.
 
-**Phase 0 comes before efficacy:** can independently built reference sets of irreversibility points agree enough that recall/precision are meaningful? Codex should design this construct-validity pilot without running recruitment/spend. If the outcome construct cannot be made reliable, stop with NULL. Do not use Mark as hidden gold standard.
+**Phase 0 before efficacy:** can independently built reference sets of irreversibility points agree enough that recall/precision are meaningful? Codex should design this construct-validity pilot without running recruitment/spend. If the outcome construct cannot be reliable, stop with NULL. Do not use Mark as hidden gold standard.
 
 Only if Phase 0 survives: matched generic structured-risk comparator; primary recall, secondary precision/inflation, separate `AVAILABLE -> USED -> HELPFUL` uptake evidence. No private chain-of-thought requirement.
 
 CC PR #117 A12 may remain a diagnostic showing `EMPIRICAL 0` on current surfaces. It is **not a release gate** and must not pressure the site to manufacture a claim.
 
-`DIAGNOSTIC_RED != RELEASE_BLOCK`  
-`MEASURABLE_HYPOTHESIS != EARNED_PUBLIC_RESULT`  
-`NULL != FAILURE_TO_REPORT`
+`DIAGNOSTIC RED != RELEASE BLOCK`  
+`MEASURABLE HYPOTHESIS != EARNED PUBLIC RESULT`  
+`NULL != FAILURE TO REPORT`
 
 ## AI handoff
 
@@ -139,34 +143,34 @@ Two earlier tiny machine repairs remain separate until deliberately integrated:
 - `seed.txt`: `Not a release or canon.` ceiling;
 - make two Explore links in `llms.txt` absolute.
 
-`AI_ROUTE != AI_OBEDIENCE`  
+`AI ROUTE != AI OBEDIENCE`  
 `ORIENTATION != CONTROL`
 
 ## Real-world learning / better-owner routing
 
-COM evidence now includes:
+COM evidence includes:
 - `evidence/PSFH_FIELD_CASE_AISI_UNSANCTIONED_AGENT_20260909.md`;
 - `evidence/PSFH_NEIGHBOUR_OWASP_AGENT_CONTROL_20260909.md`;
 - `evidence/PSFH_FIELD_CASE_THREE_AGENT_BOUNDARIES_20260909.md`.
 
-Disposition: runtime enforcement, least privilege, tool scopes and control hooks belong to specialist security owners such as OWASP ACS; PSFH must route outward rather than rename them. Possible PSFH contribution is mechanism differentiation and situated reasoning around affected scope, meaning, authority, clocks, burdens and correction.
+Disposition: runtime enforcement, least privilege, tool scopes and control hooks belong to specialist security owners; PSFH should route outward rather than rename them. Possible PSFH contribution is mechanism differentiation and situated reasoning around affected scope, meaning, authority, clocks, burdens and correction.
 
-`SAME_HEADLINE != SAME_MECHANISM`  
-`DIFFERENT_CAUSE -> DIFFERENT_CORRECTION`  
-`BETTER_OWNER_FOUND = ROUTE_IMPROVED`
+`SAME HEADLINE != SAME MECHANISM`  
+`DIFFERENT CAUSE -> DIFFERENT CORRECTION`  
+`BETTER OWNER FOUND = ROUTE IMPROVED`
 
 ## Project ceilings
 
 - TRACE main: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; no new release/canon inference.
 - Mechanical Ethics main: `44f7efb59806242fd26c572cbfbaaeaefaea2058`; no new release/canon inference.
 - Campfire Relay Production main: `08756b68d824b783fb214ff4790abf37f10150ca`.
-- Watchdog PR #209 remains OPEN / HOLD_PRODUCTION; current branch head includes the pure supervisor transition fixture at `0d87ae2`.
+- Watchdog PR #209 remains OPEN / HOLD_PRODUCTION; current development head includes supervisor fixture at `0d87ae2`.
 - No Square campaign, paid study/inference, guestbook public intake, licence/account mutation or Production adoption is authorised by current PSFH work.
 
 ## Owner routes
 
-- **Codex:** local flashing-task inspection/application if earned; PSFH hero successor and publication; independent supervisor mitigation attack; then source-only guestbook representation and #119 executable design.
-- **Claude Code:** narrow PR213 launch-host review; narrow Homer successor review; independent supervisor/guestbook/#119 attacks. Do not become second PSFH integration owner.
+- **Codex:** local hidden-launch application after PR214 review; PSFH enlargement/visual successor and publication; repair/re-design supervisor fixture after desktop priority; then source-only guestbook representation and #119 executable design.
+- **Claude Code:** PR214 exact launch-host review; Homer exact successor review; independent supervisor/guestbook/#119 attacks. Do not become second PSFH integration owner.
 - **Framework:** purpose, integration, external evidence, product judgement, consequential-gate selection. Spend tokens on uncertainty that changes action, not duplicate implementation/review.
 - **Mark:** human originator, witness and consequential release/account/external-contact authority; ordinary reversible implementation decisions should not be bounced back to him.
 
