@@ -63,7 +63,10 @@ test('publication treatment changes only the named wrappers from the pinned inte
   // boundary is checked against the published edition in test-favicon.mjs.
   for (const file of ['scripts/build.mjs']) {
     // These are Git text sources, unlike the byte-pinned Works copies above.
-    assert.equal((await readFile(file, 'utf8')).replace(/\r\n/g, '\n'), gitBytes(file).toString('utf8'), file);
+    const source = (await readFile(file, 'utf8')).replace(/\r\n/g, '\n')
+      .replace("import { applyContextualArt } from './contextual-art.mjs';\n", '')
+      .replace("await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));\n", '');
+    assert.equal(source, gitBytes(file).toString('utf8'), file);
   }
 });
 

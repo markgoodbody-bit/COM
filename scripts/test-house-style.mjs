@@ -20,7 +20,7 @@ test('head-only transformation preserves markup-like source payload', () => {
 test('unmodified HTML bodies and raw resources survive the first-contact and style build', async () => {
   const baseline = '50caedc89646b7337a86a5610cef24426b518cf3';
   const publishing = 'C:/Users/markg/Downloads/DEV/campfire-door-pages';
-  let pages = 0, unchangedBodies = 0, editionOnlyBodies = 0, unchanged = 0;
+  let pages = 0, unchangedBodies = 0, editionOnlyBodies = 0, contextualBodies = 0, unchanged = 0;
   async function check(dir, prefix = '') {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       const relative = prefix + entry.name;
@@ -60,9 +60,16 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         // Root, appended history and deliberately revised orientation are edited.
         // The other three source views change wrapper edition, not payload.
         if (!['index.html', 'changes.html', 'read/orientation.html'].includes(relative)) {
-          const normalize = text => text.replace('Site Preview ' + SITE_EDITION + '</p>', 'Site Preview 0.7.2</p>');
+          const normalize = text => {
+            if (['explore/index.html','explore/nodes/futures.html'].includes(relative)) {
+              text = '<body><main>' + text.split('</section><main id="reading">')[1];
+              text = text.replace('<nav id="reading-map" aria-label="Optional routes">', '<nav aria-label="Optional routes">');
+            }
+            return text.replace('Site Preview ' + SITE_EDITION + '</p>', 'Site Preview 0.7.2</p>');
+          };
           assert.equal(normalize(html.slice(html.indexOf('<body'))), before.toString('utf8').slice(before.toString('utf8').indexOf('<body')), relative);
-          if (html.slice(html.indexOf('<body')) === before.toString('utf8').slice(before.toString('utf8').indexOf('<body'))) unchangedBodies++;
+          if (['explore/index.html','explore/nodes/futures.html'].includes(relative)) contextualBodies++;
+          else if (html.slice(html.indexOf('<body')) === before.toString('utf8').slice(before.toString('utf8').indexOf('<body'))) unchangedBodies++;
           else editionOnlyBodies++;
         }
         if (relative === 'read/orientation.html') {
@@ -112,7 +119,7 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
     const bytes = await readFile('out/explore/' + item.path);
     assert.equal(item.bytes, bytes.length, item.path); assert.equal(item.sha256, sha(bytes), item.path);
   }
-  console.log({ checkedHtmlPages: pages, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, explicitlyEditedBodies: 3, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
+  console.log({ checkedHtmlPages: pages, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, contextualBodies, explicitlyEditedBodies: 3, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
 });
 
 test('declared light and dark text pairs meet the selected 4.5:1 floor', async () => {
