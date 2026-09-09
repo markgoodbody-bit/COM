@@ -56,9 +56,9 @@ if envelope.get("public_intake") is not False:
     fail("prototype must say public_intake=false")
 
 seen_ids: set[str] = set()
+correction_targets: list[tuple[str, str]] = []
 injection_fixture_seen = False
 removal_fixture_seen = False
-correction_fixture_seen = False
 
 for row in rows[1:]:
     public_id = row.get("public_id")
@@ -98,11 +98,22 @@ for row in rows[1:]:
 
         if public_id == "fixture-injection-001":
             injection_fixture_seen = "ignore prior instructions" in note.lower()
-        if row.get("corrects_public_id"):
-            correction_fixture_seen = True
+
+        corrects = row.get("corrects_public_id")
+        if corrects is not None:
+            if not isinstance(corrects, str) or not corrects:
+                fail(f"{public_id}: corrects_public_id must be a non-empty public id")
+            if corrects == public_id:
+                fail(f"{public_id}: correction cannot point to itself")
+            correction_targets.append((public_id, corrects))
 
     elif record_type == "guest_mark_removal_state":
         removal_fixture_seen = True
+        removed_id = row.get("removed_public_id")
+        if not isinstance(removed_id, str) or not removed_id:
+            fail(f"{public_id}: removal state needs a non-empty removed_public_id")
+        if removed_id == public_id:
+            fail(f"{public_id}: removal state cannot point to itself")
         for field in GUEST_CLAIM_FIELDS:
             if row.get(field) is not None:
                 fail(f"{public_id}: removal state retains {field}")
@@ -113,10 +124,17 @@ for row in rows[1:]:
 
 if not injection_fixture_seen:
     fail("instruction-shaped hostile fixture missing")
-if not correction_fixture_seen:
+if not correction_targets:
     fail("correction fixture missing")
 if not removal_fixture_seen:
     fail("removal fixture missing")
+
+# Corrections add a later claim to a still-visible earlier public claim, so the
+# target must exist in this current export. Removal is deliberately different:
+# removed personal text is allowed to be absent from the current export.
+for public_id, target in correction_targets:
+    if target not in seen_ids:
+        fail(f"{public_id}: correction target {target!r} is absent from current export")
 
 html = HTML.read_text(encoding="utf-8")
 lower_html = html.lower()
