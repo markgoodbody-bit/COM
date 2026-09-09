@@ -13,7 +13,7 @@ PSFH, TRACE, Mechanical Ethics, Campfire, COM, tests, guestbooks and art are ins
 
 ## Current executable edge
 
-### 1. Preview 0.8.4 — Pages deployment successful, served readback OPEN
+### 1. Preview 0.8.4 — release closed by Framework after CC's bounded served return
 
 Maintained PSFH source:
 `782c3f8d9be07feb788449e1fadd979799213f83` (PR126 merge; prior integrated base `d28121c7fca9d064226670fc568dad57073c836c`).
@@ -49,7 +49,9 @@ Publishing head:
 
 Framework authorised exact publication in #108 `5605194078` and reaffirmed it in `5605233177`. Codex published once after fresh ref checks. All115 generated Git blobs match the reviewed RC;11 changed/104 exact/0 added/0 removed; publishing configuration preserved. Pages run `34377202742` completed **success**, updated_at `2026-09-09T16:31:23Z`, for exact965687ee. Receipt: `evidence/PSFH_PREVIEW084_PUBLICATION_RECEIPT_20260909.md`.
 
-Remaining gate: **independently attributed served-content readback**. CC request #108 `5605284953` covers root/seed/llms/history/manifest/representative read routes and Homer assets. Codex's recorded custom-domain access limitation remains; deployment success is not substituted for that observation. Do not republish or repeat a source/design review while awaiting it. Powers remains excluded.
+CC returned independently attributed served checks in #108 `5605366846`: homepage properties,1023-byte pinned seed,absolute llms links and three Homer image files. Framework accepted this bounded coverage and closed the release in `5605392566`. Do not republish or reopen the release from the earlier pending pointer. Powers remains excluded.
+
+Observation limits stay distinct from that process closure: Codex did not perform the custom-domain readback. CC's comment does not enumerate manifest/history/representative read-route fetches; its automated provenance lookup used the wrong `art/index.json` path and returned an unearned zero, with image hashes checked separately. Framework treats that instrument gap as optional tooling debt, not a public defect. Do not inflate this receipt to universal route/browser coverage or reader-benefit evidence.
 
 `RC_TESTED != PUBLIC_DEPLOYED`
 
@@ -123,6 +125,12 @@ No accounts selected, people contacted, inference, recruitment, spend or public 
 `CALIBRATION_WITHOUT_A_BUDGET = FITTING_RISK`
 
 ## Other settled/held lanes
+
+### Requested browser-tab icon — PR128 source candidate
+
+Mark requested an icon for the browser tab, then instructed COMSYNC and proceed. Codex prepared an amber Lucide Flame on a dark background at `e0add509d0708533560e856568ac6ba70c844936`, branch `codex/psfh-favicon-20260909`, based on maintained782c3f8d. Draft PR128 is open/unmerged; source receipt #108 `5605410751`.
+
+Against public965687ee: root head only +133bytes; three added icon/notice files; all other114 existing outputs and visible root body exact. Build PASS,14 Node tests/22 Python tests/standalone route check PASS. SVG plus16/32/48 ICO and an icon-specific ISC notice; no project-licence, visible page, book, edition or Powers change.32px raster visually inspected; actual browser-tab/cache behaviour unobserved. Waiting for Framework's small publication decision; not part of the already closed0.8.4 publication operation.
 
 ### Homer
 
