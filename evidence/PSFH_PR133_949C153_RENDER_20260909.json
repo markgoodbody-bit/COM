@@ -1,0 +1,468 @@
+{
+  "source": "949c1538702b5b623f4ea6d4cc1ba8bbae20c69d",
+  "browser": "152.0.4191.66",
+  "instrument": "Actual committed images; DPR1; viewport1440/390 root16/32; lazy images forced eager for whole-document QA, not initial-viewport performance; localhost only",
+  "verifiedHttpRoutes": 36,
+  "results": [
+    {
+      "view": "desktop",
+      "slug": "",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 1404,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 357.328125,
+          "height": 299.25
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 321.671875,
+          "height": 359.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 303.859375,
+          "height": 359.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 155.015625,
+          "height": 359.96875
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 270,
+          "height": 360
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop",
+      "slug": "harriet-powers/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 2783,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-1440.jpg",
+          "width": 1136,
+          "height": 951.390625
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop",
+      "slug": "johannes-vermeer/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 1636,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 640,
+          "height": 716.234375
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop",
+      "slug": "anna-atkins/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 1490,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 720,
+          "height": 853
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop",
+      "slug": "shen-zhou/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 2244,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 600,
+          "height": 1393.328125
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop",
+      "slug": "edmonia-lewis/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 1400,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 577.984375,
+          "height": 770.640625
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_2-720.jpg",
+          "width": 577.984375,
+          "height": 731.296875
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "slug": "",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 2939,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 358,
+          "height": 299.8125
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 303.796875,
+          "height": 339.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 286.984375,
+          "height": 339.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 146.40625,
+          "height": 339.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 255,
+          "height": 340
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "slug": "harriet-powers/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 2697,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 358,
+          "height": 299.8125
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "slug": "johannes-vermeer/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 1433,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 358,
+          "height": 400.640625
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "slug": "anna-atkins/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 1135,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 358,
+          "height": 424.125
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "slug": "shen-zhou/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 1734,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 358,
+          "height": 831.34375
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "slug": "edmonia-lewis/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 1649,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 357.984375,
+          "height": 477.3125
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_2-720.jpg",
+          "width": 357.984375,
+          "height": 452.9375
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 2195,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 426.65625,
+          "height": 357.3125
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 321.671875,
+          "height": 359.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 303.859375,
+          "height": 359.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 155.015625,
+          "height": 359.96875
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 270,
+          "height": 360
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "harriet-powers/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 4833,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-1440.jpg",
+          "width": 1408,
+          "height": 1179.1875
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "johannes-vermeer/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 2605,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 640,
+          "height": 716.234375
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "anna-atkins/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 2168,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 720,
+          "height": 853
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "shen-zhou/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 3082,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 600,
+          "height": 1393.328125
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "edmonia-lewis/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 1912,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 577.984375,
+          "height": 770.640625
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_2-720.jpg",
+          "width": 577.984375,
+          "height": 731.296875
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 4709,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 358,
+          "height": 299.8125
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 303.796875,
+          "height": 339.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 286.984375,
+          "height": 339.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 146.40625,
+          "height": 339.984375
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 255,
+          "height": 340
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "harriet-powers/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 7914,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 358,
+          "height": 299.8125
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "johannes-vermeer/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 3239,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/staedel-1149-thumb-xl.jpg",
+          "width": 358,
+          "height": 400.640625
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "anna-atkins/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 2523,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/atkins-720.jpg",
+          "width": 358,
+          "height": 424.125
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "shen-zhou/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 3802,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/shen-720.jpg",
+          "width": 358,
+          "height": 831.34375
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "edmonia-lewis/",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 2923,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_1-720.jpg",
+          "width": 358,
+          "height": 477.328125
+        },
+        {
+          "src": "http://127.0.0.1:8834/art/SAAM-1994.17_2-720.jpg",
+          "width": 358,
+          "height": 452.96875
+        }
+      ],
+      "overflow": []
+    }
+  ]
+}
