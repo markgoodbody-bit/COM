@@ -1,6 +1,26 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.10 · 9 September 2026
+Please Start From Here · Reader change log · Edition 0.11 · 9 September 2026
+
+### D015
+
+**9 September 2026 — A concrete story before the abstractions.**
+
+**Candidate, not a publication receipt:** Prepared for site Preview 0.8.4 from the integrated maintained source. The published predecessor at preparation is Preview 0.8.3. This entry describes the candidate; it does not establish that it has been deployed. [Scope and release gate](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5604521107).
+
+**Human opening:** After the Homer composition, the page introduces Two flats, one wall before the first choices. It is explicitly a compressed Mechanical Ethics composite scene, not a documented tenant case. The short passage retains the contrast between a route reaching a person with authority and a tenant portal producing a reference number; the fuller context remains linked. Five early cards become three: Something is happening; Something could be made possible; I want to explore, question or disagree. The no-demand welcome and read-only/no-reply discussion limit remain explicit. Compact text and machine routes stay directly reachable but visually quieter.
+
+**Portable text:** The seed adds Not a release or canon. and is 1023 UTF-8 bytes, within the 1 KiB limit. The final two Explore links in the orientation use absolute addresses. The site's edition label advances; these changes do not create a TRACE or Mechanical Ethics release.
+
+**Preserved:** Homer image bytes, displayed composition and provenance are unchanged from the published predecessor. TRACE and Mechanical Ethics source editions, the Explore readings and examples, and the discussion content are unchanged. No guestbook or intake, Powers or Vermeer image, new tracking, provider, account or licence is included.
+
+**Historical clarification:** D014 below records an earlier arrangement. The already-published Homer successor uses the 1440-pixel copy as its ordinary image fallback, not the museum original; the original remains linked for inspection. Its wide-layout title uses a feathered scrim, with a separate-row fallback for constrained text/layout. These are existing predecessor changes, not new artwork changes in Preview 0.8.4. [Publication receipt](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5603125704) · [Fallback correction](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5603409521).
+
+**Evidence and limits:** The earlier content review closed the named access-mechanism, discussion-limit, no-demand and stylesheet-location findings. Regression checks retain the intended three-choice contract, historical destinations and all text blocks outside a fixed editorial exception list. This is editorial and portability work, not evidence of reader benefit or practical usefulness. Final integrated-build checks and publication readback remain separate from the earlier review. [Content closure](https://github.com/markgoodbody-bit/COM/issues/123#issuecomment-5604467485) · [Test-only repair](https://github.com/markgoodbody-bit/COM/issues/123#issuecomment-5603961071).
+
+## Previous editorial edition: 0.10
+
+Edition 0.10 adds D014. Its original account remains below; the dated clarification in D015 does not silently rewrite it.
 
 ### D014
 
