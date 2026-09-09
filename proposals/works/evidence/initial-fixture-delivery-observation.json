@@ -1,15 +1,24 @@
 {
-  "scope": "28 exact local HTTP responses; selected-image bytes from DPR1 full-document rendering, not initial-load timing/transfer or physical-device testing",
+  "scope": "36 exact local HTTP responses; selected-image bytes from DPR1 full-document rendering, not initial-load timing/transfer or physical-device testing",
   "images": [
     {
       "view": "desktop",
       "slug": "",
-      "image_bytes": 511562,
+      "image_bytes": 712977,
       "selected_images": [
+        "art/bible-quilt-720.jpg",
         "art/staedel-1149-thumb-xl.jpg",
         "art/atkins-720.jpg",
         "art/shen-720.jpg",
         "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop",
+      "slug": "harriet-powers/",
+      "image_bytes": 862531,
+      "selected_images": [
+        "art/bible-quilt-1440.jpg"
       ]
     },
     {
@@ -48,12 +57,21 @@
     {
       "view": "mobile",
       "slug": "",
-      "image_bytes": 511562,
+      "image_bytes": 712977,
       "selected_images": [
+        "art/bible-quilt-720.jpg",
         "art/staedel-1149-thumb-xl.jpg",
         "art/atkins-720.jpg",
         "art/shen-720.jpg",
         "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile",
+      "slug": "harriet-powers/",
+      "image_bytes": 201415,
+      "selected_images": [
+        "art/bible-quilt-720.jpg"
       ]
     },
     {
@@ -92,12 +110,21 @@
     {
       "view": "desktop-text200",
       "slug": "",
-      "image_bytes": 511562,
+      "image_bytes": 712977,
       "selected_images": [
+        "art/bible-quilt-720.jpg",
         "art/staedel-1149-thumb-xl.jpg",
         "art/atkins-720.jpg",
         "art/shen-720.jpg",
         "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "desktop-text200",
+      "slug": "harriet-powers/",
+      "image_bytes": 862531,
+      "selected_images": [
+        "art/bible-quilt-1440.jpg"
       ]
     },
     {
@@ -136,12 +163,21 @@
     {
       "view": "mobile-text200",
       "slug": "",
-      "image_bytes": 511562,
+      "image_bytes": 712977,
       "selected_images": [
+        "art/bible-quilt-720.jpg",
         "art/staedel-1149-thumb-xl.jpg",
         "art/atkins-720.jpg",
         "art/shen-720.jpg",
         "art/SAAM-1994.17_1-720.jpg"
+      ]
+    },
+    {
+      "view": "mobile-text200",
+      "slug": "harriet-powers/",
+      "image_bytes": 201415,
+      "selected_images": [
+        "art/bible-quilt-720.jpg"
       ]
     },
     {

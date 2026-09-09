@@ -1,6 +1,28 @@
-# Five-work collection preview
+# Works collection preview: four available, Powers held out
 
 SOURCE-ONLY / WORK IN PROGRESS / NOT FOR MERGE OR PUBLICATION
+
+## Current correction
+
+The initial local five-work fixture included unrepaired Powers. That conflicted
+with FW's explicit repair-before-inheritance direction. A WIP label did not cure
+that scope error. The current builder excludes Powers completely: no Powers
+page, image, card or record is emitted. Its partial edits remain an independent
+proposal, not a collection input. Nothing was merged or published.
+
+Current output: four work pages plus the index, 28 exact inventory routes.
+All 30 checks pass, including a negative check that no Powers/quilt route is
+emitted. The revised 20 browser states (five pages at desktop/mobile and root
+16/32) show no measured horizontal overflow. Current selected index images total
+511,562 bytes. Complete-document eager-loading and DPR1 limitations still apply.
+
+Current records: `evidence/render-measurements.json`,
+`delivery-observation.json`, `output-inventory.json`. Earlier records are retained
+with an `initial-fixture-` prefix. They are historical observations, not evidence
+for the corrected current output. The old fixture is not the handoff.
+
+The sections below describe the initial experiment and its limits. Where they
+refer to five works, 36 routes or 24 states, this correction supersedes them.
 
 Base: maintained `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.
 Commit `1aaab03dcf92d92599b32c9e12d926a05bc2cf35` copied the exact Powers
@@ -52,7 +74,7 @@ The committed parents and derived files suffice for the normal preview build.
 Pillow 12.2.0 / JPEG 8.0 produced identical variant hashes in two local runs;
 this is not a cross-version reproducibility or colour-fidelity claim.
 
-## Observed checks, 9 September 2026
+## Initial fixture checks, 9 September 2026 (superseded output)
 
 - 30 automated checks passed (10 Powers, 10 Vermeer, 10 shelf).
 - 36 inventory routes returned exact bytes and hashes over the local HTTP server.

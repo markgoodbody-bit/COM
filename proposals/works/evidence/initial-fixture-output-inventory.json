@@ -1,7 +1,39 @@
 {
+  "works/harriet-powers/index.html": {
+    "bytes": 3147,
+    "sha256": "ee4b8a8c84b378529d08e005b334345b01c6aa90a307269dfec38560cf7746e1"
+  },
+  "works/harriet-powers/work.css": {
+    "bytes": 2374,
+    "sha256": "30801461f07ce7a499ae308011479edbad6b7efcf86dd9d0bfe73abd5c14c59c"
+  },
+  "art/harriet-powers.json": {
+    "bytes": 3158,
+    "sha256": "267e278d0b2539112ad1efe7914877791634982b5379683cd80c7b48c5cf0f59"
+  },
+  "art/harriet-powers-responsive.json": {
+    "bytes": 1176,
+    "sha256": "c92839a5243f67eedda8197f47425b6c338182f09e455848a07cc6bc7a3bdc7b"
+  },
+  "art/harriet-powers-acquisition.json": {
+    "bytes": 1911,
+    "sha256": "a78d84f490d0331724150ab6ac2a0cd8690ab067ddd214db7e8da360b9d2288f"
+  },
+  "art/bible-quilt-delivered.jpg": {
+    "bytes": 2671829,
+    "sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d"
+  },
+  "art/bible-quilt-720.jpg": {
+    "bytes": 201415,
+    "sha256": "c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802"
+  },
+  "art/bible-quilt-1440.jpg": {
+    "bytes": 862531,
+    "sha256": "816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f"
+  },
   "works/johannes-vermeer/index.html": {
-    "bytes": 2705,
-    "sha256": "8a4435fc2cb74d33d8623a39111d9ed45e166e12d9ee4ec8f59eab12eb2cfaa1"
+    "bytes": 2710,
+    "sha256": "a71c9673ac10bb52b87db143c5c81e745723d983cc65ebc2b7a3e5d8753f6a9d"
   },
   "works/johannes-vermeer/work.css": {
     "bytes": 2155,
@@ -20,8 +52,8 @@
     "sha256": "2eb8819e4afe22c219d7fbd01766e41338c5fbe460d0d41c250f8c698fd39106"
   },
   "works/anna-atkins/index.html": {
-    "bytes": 1847,
-    "sha256": "4b287a3560b72bed607581a2d7865bf90e11091648ec4cc0307858995632177a"
+    "bytes": 1852,
+    "sha256": "7394d6cb6dd4fb429b9f5ba124680d5711b51f22318398137328d3ceeb60cb58"
   },
   "art/atkins.json": {
     "bytes": 907,
@@ -44,8 +76,8 @@
     "sha256": "41ac029360ed274a92d0896aeb6a86d01622e24bc510945506ca0d870c31c809"
   },
   "works/shen-zhou/index.html": {
-    "bytes": 2104,
-    "sha256": "def115614cfef6c4011ac3a35777d819d587b768ee06520dfe958936fa10e06a"
+    "bytes": 2109,
+    "sha256": "439fed9ac460cd9a6ef42f7e3a6211e766d63a00bac2f6e5c6b1022ba34b2f2c"
   },
   "art/shen.json": {
     "bytes": 1098,
@@ -68,8 +100,8 @@
     "sha256": "6b7b753c436953a694e8d46ccd06d0b6367a3b708039d773d3f8e3f74c0bc3d1"
   },
   "works/edmonia-lewis/index.html": {
-    "bytes": 2351,
-    "sha256": "b7d7f55f53c08707b8b22da5bee1004442c4824fde9189c8486c8c2141a4efac"
+    "bytes": 2356,
+    "sha256": "585a147cc58e27e2a81389773a02604ebbb2098c5ccdb88d408c11373b033040"
   },
   "art/lewis.json": {
     "bytes": 1017,
@@ -104,8 +136,8 @@
     "sha256": "b8f399f907c839543dd0c73bfcfc67184cf145c917b7c23a3e9d1341c0d3bbbd"
   },
   "works/index.html": {
-    "bytes": 1723,
-    "sha256": "dc3e4b66d15db654c5f1edf30525b95bcabbfd342df26cfbc260474f1fdb582a"
+    "bytes": 1995,
+    "sha256": "6cbc741b27677f740b6d921efa85a1f704f9c65a0cca0d96bde140e312a76a67"
   },
   "works/shelf.css": {
     "bytes": 3191,

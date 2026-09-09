@@ -67,7 +67,7 @@ def render_work(work, slug, kind, r, views):
     if work=='atkins': context=f'<section class="context"><p>From <cite>{e(r["book"])}</cite>.</p><p>The supplied photograph includes the page and book edges. They are retained here.</p></section>'
     if work=='shen': context=f'<section class="context"><h2>Painting and inscription</h2><p>{e(r["museum_account"])}</p><p><a href="{e(r["object_url"])}">Read the poem and museum account</a></p><p>The complete supplied photograph is retained, including the pictured inscriptions. It is not a claim to show every part of the physical mounting.</p></section>'
     info=f'<details><summary>Source and viewing copies</summary><p>Smaller full-frame viewing copies are shown; the unchanged museum files remain linked from the images. No crop, retouch or generated view. Museum-master status is unknown.</p><p><a href="../../art/{work}-images.json">Image identities and preparation</a> · <a href="../../art/{work}.json">Work record</a></p></details>'
-    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{e(r["title"])} · {e(r["creator"])}</title><link rel="stylesheet" href="../shelf.css"></head><body><a class="skip" href="#work">Skip to the work</a><nav class="shelf-return"><a href="../index.html">All five works</a> · Unpublished preview</nav><main id="work" class="work-page {kind}"><header><p>{e(r["creator"])}</p><h1>{e(r["title"])}</h1><p>{e(r["date"])} · {e(r["medium"])}</p></header>{art}{context}{info}</main></body></html>'
+    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{e(r["title"])} · {e(r["creator"])}</title><link rel="stylesheet" href="../shelf.css"></head><body><a class="skip" href="#work">Skip to the work</a><nav class="shelf-return"><a href="../index.html">All works</a> · Unpublished preview</nav><main id="work" class="work-page {kind}"><header><p>{e(r["creator"])}</p><h1>{e(r["title"])}</h1><p>{e(r["date"])} · {e(r["medium"])}</p></header>{art}{context}{info}</main></body></html>'
 
 
 class Routes(HTMLParser):
@@ -91,16 +91,17 @@ def build():
     def put(route,data):
         require(route not in outputs,'Route collision '+route)
         outputs[route]=data.encode('utf-8') if isinstance(data,str) else data
-    for work in ['powers','vermeer']:
+    # Powers is held out until PR127 has a repaired, reviewed head.
+    for work in ['vermeer']:
         spec=importlib.util.spec_from_file_location('proposal_'+work,PROPOSALS/work/'build.py')
         mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod);mod.validate()
         for name,route in mod.ROUTES.items():
             data=(PROPOSALS/work/name).read_bytes()
             if name=='index.html':
                 text=data.decode('utf-8').replace('</head>','<link rel="stylesheet" href="../shelf.css"></head>')
-                data=text.replace('<main ', '<nav class="shelf-return"><a href="../index.html">All five works</a></nav><main ',1).encode('utf-8')
+                data=text.replace('<main ', '<nav class="shelf-return"><a href="../index.html">All works</a></nav><main ',1).encode('utf-8')
             put(route,data)
-    entries=[dict(creator='Harriet Powers',title='Bible Quilt',date='1885–1886',medium='Quilt / textile',slug='harriet-powers',image='bible-quilt-720.jpg',width=720,height=603),dict(creator='Johannes Vermeer',title='The Geographer',date='1669',medium='Oil on canvas',slug='johannes-vermeer',image='staedel-1149-thumb-xl.jpg',width=915,height=1024)]
+    entries=[dict(creator='Johannes Vermeer',title='The Geographer',date='1669',medium='Oil on canvas',slug='johannes-vermeer',image='staedel-1149-thumb-xl.jpg',width=915,height=1024)]
     for work,slug,kind in NEW:
         r,views=check_new(work)
         put(f'works/{slug}/index.html',render_work(work,slug,kind,r,views))
@@ -112,7 +113,7 @@ def build():
         entries.append(dict(creator=r['creator'],title=r['title'],date=r['date'],medium=r['medium'],slug=slug,image=thumb['file'],width=thumb['width'],height=thumb['height']))
     cards=''.join(f'<li><a href="{x["slug"]}/index.html"><div class="image-space"><img src="../art/{x["image"]}" width="{x["width"]}" height="{x["height"]}" alt="" loading="lazy"></div><p class="maker">{e(x["creator"])}</p><h2>{e(x["title"])}</h2><p class="medium">{e(x["date"])} · {e(x["medium"])}</p></a></li>' for x in entries)
     # Linked images repeat the adjacent creator/title; avoid duplicate screen-reader text.
-    shelf=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Works · Please Start From Here</title><link rel="stylesheet" href="shelf.css"></head><body><main class="collection"><header><p>Please Start From Here · Unpublished collection preview</p><h1>Works</h1><p>Five works, with room to look. Each opens onto its own page and museum record.</p></header><ul class="shelf">{cards}</ul><footer>This is a local review collection, not a published edition. The works are not endorsements of this project.</footer></main></body></html>'
+    shelf=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Works · Please Start From Here</title><link rel="stylesheet" href="shelf.css"></head><body><main class="collection"><header><p>Please Start From Here · Unpublished collection preview</p><h1>Works</h1><p>Four works, with room to look. Each opens onto its own page and museum record.</p></header><ul class="shelf">{cards}</ul><footer>This is a local review collection, not a published edition. The works are not endorsements of this project.</footer></main></body></html>'
     put('works/index.html',shelf)
     put('works/shelf.css',(ROOT/'shelf.css').read_bytes())
     for route,data in outputs.items():
@@ -127,7 +128,7 @@ def build():
         target=OUT/route;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
     (OUT/'inventory.json').write_text(json.dumps(inventory,indent=2)+'\n',encoding='utf-8')
     require({p.relative_to(OUT).as_posix() for p in OUT.rglob('*') if p.is_file()}==set(outputs)|{'inventory.json'},'Unexpected old output')
-    print('PASS:',len(outputs),'exact outputs; five distinct work routes; local links resolve; no normal/public build touched.')
+    print('PASS:',len(outputs),'exact outputs; four distinct work routes; Powers excluded; local links resolve; no normal/public build touched.')
     return inventory
 
 
