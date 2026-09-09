@@ -11,6 +11,10 @@ Later live source wins.
 
 ## Current executable edge
 
+Latest FULL COMSYNC return: #108 `5607110804`, basis af0d9c5 with later pointer649531f reacquired. Exact Vermeer36cc8c5 standalone build/10 tests now PASS. Separate Codex draft PR132 `dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175` imports exact Powers548e1fe and Vermeer36cc8c5;33 combined tests,36 exact delivery matches and8 targeted closed/open-details Vermeer render states recorded. PR131665d175 stays frozen. Concurrent FW PR133 `949c1538702b5b623f4ea6d4cc1ba8bbae20c69d` has identical artwork/source/image paths; differences are documentation/evidence and output-directory name. Consolidate the duplicate successors before another integration step; do not repeat art reviews for both or transfer measured-head claims silently. No maintained/public merge.
+
+FULL-sync service discrepancy is routed to Campfire PR209 `5607100994`: actual task `Campfire Local Service Watch` observed Disabled while local watch state is recent, speech/steward are reported RUNNING, and speech child39420 was observed alive with fresh heartbeat. No outage or recovery mechanism inferred; CC asked to reconcile intended runner. No service/task mutation. Live Square remains unobserved from this Codex runtime, despite fresh local witness status; no blind post or access-block bypass.
+
 ### PSFH public baseline — CLOSED
 
 Maintained source: `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.  
