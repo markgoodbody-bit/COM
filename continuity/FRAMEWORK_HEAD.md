@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: `coordination/ACTIVE_THREAD_POINTER.md` at COM `384f114295b87eb01187a6736064bb53d6fdb556`. Later live source wins.
+Basis: live `coordination/ACTIVE_THREAD_POINTER.md` and COM main `dc82e53ef5461ffcf34decbf327622a51822287f`; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -21,67 +21,72 @@ TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, guestboo
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from #108/#118/#119 and PR #123 plus any new art-source proof.
+2. Reacquire later returns from #108/#118/#119 and PR #123 plus art acquisition evidence.
 3. Reacquire maintained/public heads before mutation.
-4. Use `continuity/OMISSION_MAP.md` selectively; do not replay large carriers for reassurance.
+4. Do not assume one-thread COMSYNC is complete; discover recently active surfaces and preserve the blind region.
 
 ## Current consequential state
 
-### Public PSFH
+### Public PSFH / Homer
 
-Homer presentation is deployed:
-`gh-pages dd06d95cb880208b30f703c54af33c2440c97812`, Pages run `34360186077` SUCCESS.
+Homer presentation deployed and independently checked:
+`gh-pages dd06d95cb880208b30f703c54af33c2440c97812`; Pages run `34360186077` SUCCESS.
 
-CC independently verified served presentation and corrected its own earlier review: reachable `<img src>` fallback is the pinned1440 copy, not museum original. Fallback change +55% scrim both shipped; museum original remains separately served/linked provenance. Do not repeat publication.
+Actual reviewed `<img src>` fallback is pinned1440;55% feather + fallback both shipped; museum original remains separately served/linked provenance. Do not repeat publication.
 
-Maintained PSFH source advanced source-only through PR #125 merge:
-`7a5a50dbe81574a246236f5762830112445bbaec`.
-Those seed/llms changes are not yet public.
+Maintained PSFH source is `7a5a50dbe81574a246236f5762830112445bbaec` after source-only PR125 merge. Those seed/llms changes are not yet public.
 
 ### PR #123 — concrete-first human Door
 
-Draft/non-public head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`.
+Draft/non-public exact head `f8b84ec4e1e49cd24c018ba0b7fc7888a555a554`.
 
-Product intent is retained: source-labelled `Two flats, one wall` composite, authority/access mechanism, three human entrances, no-demand sentence, read-only/no-reply ceiling, quieter but direct machine/text routes.
+Product bytes unchanged from `3f2132f`: source-labelled `Two flats, one wall` ME composite; authority-vs-reference-number mechanism; three human entrances; no-demand sentence; read-only/no-reply ceiling; quieter but direct machine/text routes; prototype CSS moved into `globals.css`.
 
-CSS relocation is mechanically sound. Remaining Python failures are pre-existing/stale test-contract issues, not observed CSS regressions. Codex accepted Framework direction #108 `5603859299` to build a **test-only** successor that integrates checkout portability and updates only intentionally superseded assertions while preserving historical regression protection through an explicit editorial allowlist. Do not restore the old five-card product merely for green tests.
+Codex test-only successor is mechanically earned:
+- build PASS;
+-22/22 Python PASS;
+-11/11 Node PASS incl115 local deliveries;
+- all115 generated outputs byte-identical to pre-test product;
+- fixed committed editorial-delta fixture, not generated from page under test;
+- negative controls prove unlisted deletion/addition still fail;
+- historical links and intended three-card/ceiling/no-demand/route contract remain enforced.
 
-After test receipt, CC closes content findings. Still no merge/publication authority inferred.
+Framework KEEP comment `5604006934`. Waiting only on CC's narrow closure of its four prior content/style findings. No merge/publication before that return.
 
-### Guestbook representation
+### Guestbook
 
-The synthetic representation experiment is CLOSED and preserved in COM main:
-merge `75f80f4ce5340817649eefbcf4f0b53d7dec713e`.
+Representation stage CLOSED. Exact repaired PR124 passed17/17 and CC closed visitor-heading/trust promotion. Six isolated synthetic experiment files merged to COM main as `75f80f4ce5340817649eefbcf4f0b53d7dec713e`.
 
-Exact repaired head `3a8fff7c...` passed17/17 tests; CC closed the visitor-heading/trust finding. This is **not intake**: no form/backend/provider/credentials/real data/public route.
+#118 disposition after closure: **HOLD_INTAKE** (`5603978458`). Representation earned; custody/moderation/removal/retention/provider-log/abuse/cost/operator obligations are not. No form/backend/provider/credentials/real guest data/public route.
 
-`SYNTHETIC_CHECKER != PUBLIC_INTAKE_SECURITY`
+`REPRESENTATION_EARNED != INTAKE_EARNED`
 
 ### Human art
 
-Vermeer full-master acquisition remains `ASSET_BLOCKED` for the available documented path; do not promote Städel `thumb-xl` or guess variants.
+Vermeer full-master acquisition remains `ASSET_BLOCKED` on the available documented route; do not promote Städel `thumb-xl` or guess variants.
 
-Harriet Powers acquisition proof is open:
-Smithsonian image id `NMAH-75-2984`, official documented delivery service. Codex/local operator may acquire exact master, preserve URL/MIME/dimensions/bytes/SHA256/rights, prepare source-bound720/1440 viewing copies and one source-only presentation. No public wiring yet.
-
-Evidence: `evidence/PSFH_ART_ACQUISITION_DELTA_20260909.md` at `58174636...`.
+Harriet Powers source-only acquisition is released **now** in parallel with PR123 editorial closure (#108 `5604056609`): exact Smithsonian image id `NMAH-75-2984`, official documented service. Codex/local operator may preserve exact master URL/bytes/MIME/dimensions/size/SHA256/rights, prepare source-bound720/1440 copies and one source-only presentation. No public wiring yet. Framework's own binary transport still fails on the official service; this is a transport limit, not asset absence.
 
 `HOMER_DEPLOYED -> VERMEER_ASSET_BLOCKED -> POWERS_ACQUISITION_PROOF`
 
 ### #119
 
-Phase-0 v2 remains design/calibration input only; practical advantage unproven and no study run.
+No study has run; practical advantage remains unproven. V2 remains stable target `8372ca1fe703a193255b84487410f289498669c0`.
 
-Before freeze, integrate Codex review #119 `5603501640`:
-- raw vs eligible counts separate; zero eligible denominator => coverage UNDEFINED;
-- assign custody/evidence/dispute semantics for `SOURCE_SUFFICIENT`;
-- distinguish explicit no-match from not-assessed/not-chosen and define `UNCERTAIN`.
+Framework accepted Codex's three freeze clarifications in #119 `5604017538` without editing v2 so CC can attack one stable object plus explicit delta:
+- raw extraction class/counts != eligible scoring counts; zero eligible denominator => coverage UNDEFINED;
+- `SOURCE_SUFFICIENT` gets explicit reviewer/evidence/dispute custody while builder label remains recorded;
+- sparse matching distinguishes MATCH / explicit NO_MATCH / NOT_ASSESSED / UNCERTAIN.
 
-No threshold invention, inference, recruitment or spend.
+`MIXED_ZERO` is observed extraction disagreement/operational instability, not causal diagnosis. No thresholds, account selection, inference, recruitment or spend.
 
 ### Desktop
 
-Temporary quiet mode: scheduled two-minute task disabled/preserved; hidden120s watchdog loop remains workaround. Codex last observed same PID13276 and services RUNNING at14:49Z. If loop dies nothing resurrects it. Do not run scheduler alongside it or reopen launcher experiments without new evidence.
+Temporary quiet mode continues: scheduled two-minute task disabled/preserved; hidden120s watchdog loop. Codex last observed same PID13276, speech+Steward RUNNING at14:49Z. If loop dies nothing resurrects it. Project AIs cannot see Mark's screen and do not infer popup cessation.
+
+### Full-sync discipline
+
+CC reported its former one-thread sync missed work across multiple surfaces and changed its instrument to discover threads; this process repair is reported, not independently proven. Framework/Codex now scan the recently active COM surface instead of treating #108 alone as full COMSYNC. Last-speaker/backlog counts are retrieval leads, not proof every thread needs reply.
 
 ## Baselines / gates
 
