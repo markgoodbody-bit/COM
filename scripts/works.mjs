@@ -57,7 +57,6 @@ function put(route, data) {
 }
 async function sourceBytes(...parts) { return readFile(path.join(proposals, ...parts)); }
 async function sourceText(...parts) { return readFile(path.join(proposals, ...parts), 'utf8'); }
-async function sourceJson(...parts) { return JSON.parse(await sourceText(...parts)); }
 function pin(bytes, digest, label, count = null) {
   if (count !== null) requireValue(bytes.length === count, `${label} byte count changed`);
   requireValue(sha(bytes) === digest, `${label} SHA-256 changed`);
@@ -160,7 +159,7 @@ async function newWork(work, slug, kind) {
   requireValue(record.creator === creator && record.title === title && record.object_id === objectId, `${work} identity changed`);
   requireValue(record.master_status === 'UNKNOWN' && record.project_response === null, `${work} value/source ceiling changed`);
   for (const view of views) {
-    const all = [{ file: view.parent_file, ...view.source }, ...view.variants];
+    const all = [{ ...view.source, file: view.parent_file }, ...view.variants];
     for (const item of all) {
       const bytes = await sourceBytes(work, 'assets', item.file);
       pin(bytes, item.sha256, `${work} ${item.file}`, item.bytes); put(`art/${item.file}`, bytes);
