@@ -1,0 +1,32 @@
+{
+  "parent": {
+    "file": "bible-quilt-delivered.jpg",
+    "width": 2880,
+    "height": 2412,
+    "bytes": 2671829,
+    "sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d"
+  },
+  "variants": [
+    {
+      "file": "bible-quilt-720.jpg",
+      "width": 720,
+      "height": 603,
+      "bytes": 201415,
+      "sha256": "c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802",
+      "quality": 85,
+      "parent_sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d"
+    },
+    {
+      "file": "bible-quilt-1440.jpg",
+      "width": 1440,
+      "height": 1206,
+      "bytes": 862531,
+      "sha256": "816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f",
+      "quality": 86,
+      "parent_sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d"
+    }
+  ],
+  "tool": "Pillow 12.2.0; JPEG 8.0",
+  "settings": "Lanczos proportional resize; nearest integer height; JPEG subsampling=2, optimize=false, progressive=false; source ICC retained; no EXIF copied, no orientation transform, no crop, retouch or generative operation.",
+  "prepared_on": "2026-09-09"
+}
