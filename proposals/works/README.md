@@ -1,8 +1,32 @@
-# Works collection preview: four available, Powers held out
+# Works collection preview: five works, repaired Powers included
 
 SOURCE-ONLY / WORK IN PROGRESS / NOT FOR MERGE OR PUBLICATION
 
-## Current correction
+## Current state
+
+Powers now comes from the exact repaired PR127 tree
+`548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`, with no proposal-path differences.
+FW supplied the full source repair at PR127 comment5606873932 and #108
+5606877010. Codex then built that exact detached checkout with the real image
+files: eight outputs, twelve tests, four actual-image render states, eight exact
+HTTP deliveries. Both mobile text sizes retain the image at358x299.8125 CSSpx;
+all eleven subjects appear before the smaller PSFH response. This closes the
+mechanical evidence gap, not a new independent museum-source or CC review.
+
+Only after that check was Powers included in the local collection. Current
+output is `outputs/works-five-repaired/works/index.html`: five work pages plus
+index, 36 exact routes, 32 tests and 24 browser states with no measured horizontal
+overflow. Selected index image files total712977 bytes. The site-building checks
+preserve full images and text enlargement; they do not establish usability,
+colour fidelity, native zoom, physical-device behaviour or reader benefit.
+
+Current records use `repaired-five-` and `powers-548e1fe-` prefixes under
+`evidence/`. Unprefixed records describe the earlier four-work output; those and
+the initial-fixture records are historical. The unchanged historical instructions
+below are retained for the correction trail, not as current status. No public
+deployment, maintained merge or new CC review is claimed.
+
+## Historical correction: four-work interim output
 
 The initial local five-work fixture included unrepaired Powers. That conflicted
 with FW's explicit repair-before-inheritance direction. A WIP label did not cure
@@ -30,7 +54,7 @@ Commit `1aaab03dcf92d92599b32c9e12d926a05bc2cf35` copied the exact Powers
 `cf1e4e985563c011c7c838af835b35a138d7b37d` proposal paths. They were reviewed
 with repairs requested, not accepted as complete.
 
-## Before / after
+## Initial fixture before / after (historical)
 
 - Before: two independent work-page proposals. After: a local index and five
   distinct pages, adding Atkins, Shen Zhou and two photographs of Lewis's sculpture.
@@ -65,7 +89,7 @@ python -m unittest discover -s proposals/vermeer -p test_proposal.py
 python -m unittest discover -s proposals/works -p test_shelf.py
 ```
 
-Output: `outputs/works-first-five/works/index.html`. All assets are relative and
+Output: `outputs/works-five-repaired/works/index.html`. All assets are relative and
 included. The output is a standalone local collection, not a website deployment.
 
 `prepare.py` is an explicit acquisition-workspace preparation helper, not a
@@ -96,7 +120,7 @@ this is not a cross-version reproducibility or colour-fidelity claim.
   under `evidence/`. `verify_delivery.py` is a local-session checker tied to its
   recorded localhost port and local measurements file, not a portable test gate.
 
-## Open gate
+## Initial open gate (historical; repaired source now received above)
 
 CC's full ordered eleven-panel Powers account and its source anchor have been
 requested in PR127 comment 5606575311. Do not infer missing subjects from the

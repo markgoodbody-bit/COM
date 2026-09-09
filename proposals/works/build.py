@@ -11,7 +11,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 PROPOSALS = ROOT.parent
-OUT = PROPOSALS.parent / 'outputs/works-first-five'
+OUT = PROPOSALS.parent / 'outputs/works-five-repaired'
 NEW = [('atkins','anna-atkins','cyanotype'),('shen','shen-zhou','scroll'),('lewis','edmonia-lewis','sculpture')]
 IDENTITIES={'atkins':('Anna Atkins','Ulva lactuca','291638'),'shen':('Shen Zhou','Anchorage on a rainy night','49549'),'lewis':('Edmonia Lewis','The Death of Cleopatra','saam_1994.17')}
 PINS = {'atkins':['ae5864af965af2d8a063016b1df67a9e765270281b9bc313513cde12d9f974a6'],
@@ -91,8 +91,8 @@ def build():
     def put(route,data):
         require(route not in outputs,'Route collision '+route)
         outputs[route]=data.encode('utf-8') if isinstance(data,str) else data
-    # Powers is held out until PR127 has a repaired, reviewed head.
-    for work in ['vermeer']:
+    # Exact Powers repair 548e1fe: real-image build and four render states verified.
+    for work in ['powers','vermeer']:
         spec=importlib.util.spec_from_file_location('proposal_'+work,PROPOSALS/work/'build.py')
         mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod);mod.validate()
         for name,route in mod.ROUTES.items():
@@ -102,6 +102,7 @@ def build():
                 data=text.replace('<main ', '<nav class="shelf-return"><a href="../index.html">All works</a></nav><main ',1).encode('utf-8')
             put(route,data)
     entries=[dict(creator='Johannes Vermeer',title='The Geographer',date='1669',medium='Oil on canvas',slug='johannes-vermeer',image='staedel-1149-thumb-xl.jpg',width=915,height=1024)]
+    entries.insert(0,dict(creator='Harriet Powers',title='Bible Quilt',date='1885–1886',medium='Quilt / textile',slug='harriet-powers',image='bible-quilt-720.jpg',width=720,height=603))
     for work,slug,kind in NEW:
         r,views=check_new(work)
         put(f'works/{slug}/index.html',render_work(work,slug,kind,r,views))
@@ -114,6 +115,7 @@ def build():
     cards=''.join(f'<li><a href="{x["slug"]}/index.html"><div class="image-space"><img src="../art/{x["image"]}" width="{x["width"]}" height="{x["height"]}" alt="" loading="lazy"></div><p class="maker">{e(x["creator"])}</p><h2>{e(x["title"])}</h2><p class="medium">{e(x["date"])} · {e(x["medium"])}</p></a></li>' for x in entries)
     # Linked images repeat the adjacent creator/title; avoid duplicate screen-reader text.
     shelf=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Works · Please Start From Here</title><link rel="stylesheet" href="shelf.css"></head><body><main class="collection"><header><p>Please Start From Here · Unpublished collection preview</p><h1>Works</h1><p>Four works, with room to look. Each opens onto its own page and museum record.</p></header><ul class="shelf">{cards}</ul><footer>This is a local review collection, not a published edition. The works are not endorsements of this project.</footer></main></body></html>'
+    shelf=shelf.replace('Four works,','Five works,')
     put('works/index.html',shelf)
     put('works/shelf.css',(ROOT/'shelf.css').read_bytes())
     for route,data in outputs.items():
@@ -128,7 +130,7 @@ def build():
         target=OUT/route;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
     (OUT/'inventory.json').write_text(json.dumps(inventory,indent=2)+'\n',encoding='utf-8')
     require({p.relative_to(OUT).as_posix() for p in OUT.rglob('*') if p.is_file()}==set(outputs)|{'inventory.json'},'Unexpected old output')
-    print('PASS:',len(outputs),'exact outputs; four distinct work routes; Powers excluded; local links resolve; no normal/public build touched.')
+    print('PASS:',len(outputs),'exact outputs; five distinct work routes; repaired Powers; local links resolve; no normal/public build touched.')
     return inventory
 
 

@@ -41,8 +41,11 @@ class ShelfTests(unittest.TestCase):
     def test_expected_output_pages(self):
         inv=json.loads((build.OUT/'inventory.json').read_text())
         pages={k for k in inv if k.endswith('.html')}
-        self.assertEqual(pages,{'works/index.html','works/johannes-vermeer/index.html','works/anna-atkins/index.html','works/shen-zhou/index.html','works/edmonia-lewis/index.html'})
-        self.assertFalse(any('powers' in k or 'quilt' in k for k in inv))
+        self.assertEqual(pages,{'works/index.html','works/harriet-powers/index.html','works/johannes-vermeer/index.html','works/anna-atkins/index.html','works/shen-zhou/index.html','works/edmonia-lewis/index.html'})
+        powers=(build.OUT/'works/harriet-powers/index.html').read_text(encoding='utf-8')
+        self.assertEqual(powers.count('<li>'),11)
+        self.assertIn('Powers insisted',powers)
+        self.assertNotIn('does not yet reproduce',powers)
         self.assertNotIn('index.html',inv)
 
     def test_exact_copied_outputs(self):

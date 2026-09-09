@@ -1,0 +1,119 @@
+{
+  "source": "548e1fe316d1ccb58b3f4008097deb9d0dbe6c39",
+  "browser": "152.0.4191.66",
+  "instrument": "Actual committed image files; DPR1; root16/32; CSS viewport1440/390; no native zoom/device or colour-fidelity claim",
+  "results": [
+    {
+      "view": "desktop",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 2719,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-1440.jpg",
+          "width": 1136,
+          "height": 951.390625
+        }
+      ],
+      "subjects": [
+        "Adam and Eve in the Garden of Eden",
+        "Paradise continued, with Eve and a son",
+        "Satan among seven stars",
+        "Cain killing Abel",
+        "Cain travelling to the land of Nod to find a wife",
+        "Jacob's dream",
+        "The baptism of Christ",
+        "The Crucifixion",
+        "Judas Iscariot and the thirty pieces of silver",
+        "The Last Supper",
+        "The Holy Family"
+      ],
+      "accountBeforeResponse": true,
+      "overflow": []
+    },
+    {
+      "view": "mobile",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 2633,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 358,
+          "height": 299.8125
+        }
+      ],
+      "subjects": [
+        "Adam and Eve in the Garden of Eden",
+        "Paradise continued, with Eve and a son",
+        "Satan among seven stars",
+        "Cain killing Abel",
+        "Cain travelling to the land of Nod to find a wife",
+        "Jacob's dream",
+        "The baptism of Christ",
+        "The Crucifixion",
+        "Judas Iscariot and the thirty pieces of silver",
+        "The Last Supper",
+        "The Holy Family"
+      ],
+      "accountBeforeResponse": true,
+      "overflow": []
+    },
+    {
+      "view": "desktop-text200",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 4705,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-1440.jpg",
+          "width": 1408,
+          "height": 1179.1875
+        }
+      ],
+      "subjects": [
+        "Adam and Eve in the Garden of Eden",
+        "Paradise continued, with Eve and a son",
+        "Satan among seven stars",
+        "Cain killing Abel",
+        "Cain travelling to the land of Nod to find a wife",
+        "Jacob's dream",
+        "The baptism of Christ",
+        "The Crucifixion",
+        "Judas Iscariot and the thirty pieces of silver",
+        "The Last Supper",
+        "The Holy Family"
+      ],
+      "accountBeforeResponse": true,
+      "overflow": []
+    },
+    {
+      "view": "mobile-text200",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 7786,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8834/art/bible-quilt-720.jpg",
+          "width": 358,
+          "height": 299.8125
+        }
+      ],
+      "subjects": [
+        "Adam and Eve in the Garden of Eden",
+        "Paradise continued, with Eve and a son",
+        "Satan among seven stars",
+        "Cain killing Abel",
+        "Cain travelling to the land of Nod to find a wife",
+        "Jacob's dream",
+        "The baptism of Christ",
+        "The Crucifixion",
+        "Judas Iscariot and the thirty pieces of silver",
+        "The Last Supper",
+        "The Holy Family"
+      ],
+      "accountBeforeResponse": true,
+      "overflow": []
+    }
+  ]
+}

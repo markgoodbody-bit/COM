@@ -34,7 +34,7 @@ class PowersTests(unittest.TestCase):
     def test_false_acquisition_time_rights_rejected(self):
         self.rejection("artwork.json", lambda b: b.replace(b"not Codex acquisition-time", b"Codex acquisition-time"))
 
-    def test_original_receipt_rewrite_rejected(self):
+    def test_acquisition_receipt_rewrite_rejected(self):
         self.rejection("acquisition.json", lambda b: b + b"\n")
 
     def test_detached_derivative_rejected(self):
@@ -50,8 +50,14 @@ class PowersTests(unittest.TestCase):
     def test_script_rejected(self):
         self.rejection("index.html", lambda b: b.replace(b"</body>", b"<script></script></body>"))
 
-    def test_record_page_drift_rejected(self):
-        self.rejection("index.html", lambda b: b.replace(b"Jennie Smith recorded", b"someone recorded"))
+    def test_creator_agency_drift_rejected(self):
+        self.rejection("index.html", lambda b: b.replace(b"Powers insisted", b"Powers explained"))
+
+    def test_panel_subject_omission_rejected(self):
+        self.rejection("index.html", lambda b: b.replace(b"<li>The Holy Family</li>", b""))
+
+    def test_credit_line_omission_rejected(self):
+        self.rejection("index.html", lambda b: b.replace(b"Gift of Mr. and Mrs. H. M. Heckman. ", b""))
 
 
 if __name__ == "__main__":

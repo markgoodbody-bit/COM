@@ -1,5 +1,5 @@
 {
-  "status": "DELIVERED_IMAGE_ACQUIRED__MASTER_AND_RIGHTS_UNVERIFIED",
+  "status": "DELIVERED_IMAGE_ACQUIRED__MUSEUM_TOP_JPEG_IDENTIFIED__TIFF_TIER_EXISTS__MASTER_UNKNOWN",
   "image_id": "NMAH-75-2984",
   "requested_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984",
   "observed_final_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984",
@@ -16,23 +16,34 @@
   "mode": "RGB",
   "embedded_icc_profile_bytes": 560,
   "alterations": "none; downloaded bytes preserved",
-  "high_resolution_advertisement": {
-    "width": 3000,
-    "height": 2512,
-    "basis": "Framework report in COM58174636e814b4d644b3545fca03d70de0a5a8a2/evidence/PSFH_ART_ACQUISITION_DELTA_20260909.md",
-    "freshly_verified_by_codex": false
-  },
-  "exact_rights_wording": null,
-  "exact_credit_wording": null,
-  "rights_observation": "Framework previously reported public-domain wording. Codex did not freshly observe exact rights or credit text on the acquisition surface.",
-  "metadata_read_failures": [
+  "acquisition_time_metadata_read_failures": [
     "si.edu object URL: web retrieval404",
     "americanhistory.si.edu object URL: web retrieval500",
     "Learning Lab: web and browser views did not expose the required metadata/download controls",
     "Learning Lab direct HTML request: explicit Cloudflare access block; no bypass or retry"
   ],
-  "master_status": "UNKNOWN; size mismatch is not proof that the delivered image is or is not a museum master",
+  "later_authoritative_resolution": {
+    "basis": "Claude Code real-browser read of the documented Smithsonian object page and IIIF manifest, COM PR127 comment 5606429869",
+    "object_url": "https://americanhistory.si.edu/collections/object/nmah_556462",
+    "rights_face": "CC0",
+    "iiif_manifest_license": "https://www.si.edu/termsofuse",
+    "iiif_manifest_attribution": "Smithsonian Institution",
+    "iiif_canvas": {
+      "width": 2880,
+      "height": 2412
+    },
+    "museum_download_panel": {
+      "acquired_tier": "High-resolution JPEG (2880x2412)",
+      "higher_tier_exists": "High-resolution TIFF"
+    },
+    "credit_line": "Gift of Mr. and Mrs. H. M. Heckman",
+    "transport_correction": "Earlier retrieval failures were transport failures, not evidence that the object record or metadata was absent."
+  },
+  "exact_rights_wording": "CC0",
+  "exact_credit_wording": "Gift of Mr. and Mrs. H. M. Heckman",
+  "rights_observation": "Later authorised browser reading resolved the acquisition-time transport gap: the acquired bytes are the museum's High-resolution JPEG and match its 2880x2412 IIIF canvas.",
+  "master_status": "UNKNOWN; a High-resolution TIFF tier exists above the acquired JPEG, but the museum surfaces read here do not establish whether that TIFF is a master.",
   "viewing_copies": [],
   "public_wiring": false,
-  "next_gate": "Resolve source/master description and exact rights/credit evidence through an authorised documented route. Do not guess URL variants or bypass access controls."
+  "next_gate": "No further gate remains for identifying the acquired JPEG tier. Preserve master status as UNKNOWN unless a documented museum source establishes what the TIFF represents."
 }

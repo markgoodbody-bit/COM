@@ -6,14 +6,14 @@ from urllib.parse import urlparse
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
-OUT=ROOT.parents[1]/'outputs/works-first-five'
+OUT=ROOT.parents[1]/'outputs/works-five-repaired'
 inventory=json.loads((OUT/'inventory.json').read_text())
 for route,pin in inventory.items():
     with urlopen('http://127.0.0.1:8834/'+route,timeout=5) as response:
         assert response.status==200
         body=response.read()
         assert len(body)==pin['bytes'] and hashlib.sha256(body).hexdigest()==pin['sha256'],route
-measures=json.loads(Path('C:/Users/markg/Downloads/PSFH-four-work-render-20260909/measurements.json').read_text())
+measures=json.loads(Path('C:/Users/markg/Downloads/PSFH-five-repaired-render-20260909/measurements.json').read_text())
 rows=[]
 for r in measures['results']:
     images=[urlparse(im['src']).path.lstrip('/') for im in r['images']]

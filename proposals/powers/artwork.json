@@ -2,12 +2,18 @@
   "id": "harriet-powers-bible-quilt",
   "creator": "Harriet Powers",
   "title": "Bible Quilt",
+  "maker_recorded_title": "Adam and Eve in the Garden of Eden",
   "date": "1885–1886",
   "institution": "National Museum of American History, Smithsonian Institution",
   "object_id": "nmah_556462",
   "object_url": "https://americanhistory.si.edu/collections/object/nmah_556462",
   "source_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984",
-  "source_category": "Exact Smithsonian-delivered source image",
+  "source_category": "Smithsonian High-resolution JPEG; exact 2880x2412 file matching the museum IIIF canvas",
+  "source_tier": {
+    "acquired": "High-resolution JPEG (2880x2412)",
+    "higher_tier_exists": "High-resolution TIFF",
+    "master_status": "UNKNOWN"
+  },
   "master_status": "UNKNOWN",
   "parent_file": "/art/bible-quilt-delivered.jpg",
   "width": 2880,
@@ -16,31 +22,39 @@
   "sha256": "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d",
   "acquisition_receipt": "/art/harriet-powers-acquisition.json",
   "responsive_record": "/art/harriet-powers-responsive.json",
-  "visible_credit": "Harriet Powers, Bible Quilt, 1885–1886. National Museum of American History, Smithsonian Institution. Public domain, Smithsonian Open Access.",
+  "visible_credit": "Harriet Powers, Bible Quilt, 1885–1886. National Museum of American History, Smithsonian Institution. Gift of Mr. and Mrs. H. M. Heckman. CC0 media; Smithsonian Open Access.",
   "rights": {
-    "designation": "Public domain; Smithsonian Open Access / CC0 media",
+    "designation": "CC0 media; Smithsonian Open Access",
     "url": "https://www.si.edu/openaccess",
-    "faq_url": "https://www.si.edu/openaccess/faq",
-    "observation_by": "Framework, later independent authoritative-source reading; not Codex acquisition-time verification",
-    "observation_receipt": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5604591035",
-    "observation_receipt_created_at": "2026-09-09T15:41:15Z",
-    "evidence": "https://github.com/markgoodbody-bit/COM/blob/a04371dc959072407780026058636a42440c49ca/evidence/PSFH_POWERS_ACQUISITION_RETURN_20260909.md",
-    "boundary": "This records Framework's source report. CC0 does not settle every non-copyright right; museum identification is not project endorsement."
+    "iiif_license_url": "https://www.si.edu/termsofuse",
+    "observation_by": "Claude Code, later authorised real-browser reading of the documented Smithsonian object page and IIIF manifest; not Codex acquisition-time verification",
+    "observation_receipt": "https://github.com/markgoodbody-bit/COM/pull/127#issuecomment-5606429869",
+    "boundary": "CC0 describes the media copyright status. It does not settle every non-copyright right, make the museum a project endorser, or establish the TIFF tier as a master."
   },
   "creator_account": {
-    "statement": "Powers insisted on an exact record of her panels; Jennie Smith recorded her explanations.",
+    "statement": "The museum records that Powers insisted Jennie Smith record exactly what each panel depicted before the quilt changed hands.",
+    "maker_recorded_title": "Adam and Eve in the Garden of Eden",
+    "panel_subjects": [
+      "Adam and Eve in the Garden of Eden",
+      "Paradise continued, with Eve and a son",
+      "Satan among seven stars",
+      "Cain killing Abel",
+      "Cain travelling to the land of Nod to find a wife",
+      "Jacob's dream",
+      "The baptism of Christ",
+      "The Crucifixion",
+      "Judas Iscariot and the thirty pieces of silver",
+      "The Last Supper",
+      "The Holy Family"
+    ],
     "source_url": "https://americanhistory.si.edu/collections/object/nmah_556462",
-    "observation_basis": "Claude Code later object-page reading in PR127 comment5606429869, separately attributed; Codex follow-up retrieval did not obtain the text",
-    "boundary": "A maker-linked account mediated through Smith and the museum record; not an unmediated transcript. Complete eleven-subject enumeration requested but not yet obtained here."
+    "observation_basis": "Factual subject enumeration and maker-title from the Smithsonian object record; Powers's insistence recorded there as mediated through Jennie Smith and the museum.",
+    "boundary": "A maker-linked account mediated through Smith and the museum record, not an unmediated transcript. The panel list is a concise factual enumeration, not copied museum descriptive prose, and PSFH adds no panel meanings."
   },
-  "project_response": null,
-  "later_source_report": {
-    "url": "https://github.com/markgoodbody-bit/COM/pull/127#issuecomment-5606429869",
-    "by": "Claude Code object-page and IIIF reading, 2026-09-09",
-    "maker_title": "Adam and Eve in the Garden of Eden",
-    "donor_credit": "Gift of Mr. and Mrs. H. M. Heckman",
-    "jpeg_tier": "Reviewer reports the museum labels2880x2412 as High-resolution JPEG and separately offers TIFF. TIFF is not acquired or authenticated as a master here.",
-    "correction": "The historical receipt's unverified3000x2512 advertisement is superseded by CC's later reported2880x2412 JPEG/canvas match. Original receipt remains unchanged as history, not current guidance."
+  "project_response": {
+    "author": "PSFH project, drafted by Framework",
+    "text": "Powers's recorded subjects belong here before any response from us. We have not assigned new meanings to the panels.",
+    "status": "Provisional editorial response, not a claim about Powers's intention or evidence of reader benefit"
   },
   "status": "SOURCE-ONLY PROPOSAL; NOT PUBLISHED; NOT PART OF PREVIEW 0.8.4"
 }
