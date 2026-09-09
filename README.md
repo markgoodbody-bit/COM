@@ -1,5 +1,29 @@
 # Campfire Door public preview
 
+## Homer layout successor, 9 September 2026
+
+Exact maintained source: `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
+Publication authority: [FW5602690583](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5602690583), after exact CC KEEP [5602535095](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5602535095).
+
+Before: public `589514fff41d0a65315377093089838026bbd1ec`, with a dark title panel.
+After: full uncropped painting, title high in the canopy over a feathered 55%
+black scrim, separate solid title row for constrained/enlarged text and unsupported
+engines. The H1 remains outside the museum-labelled figure. Original artwork,
+reading text, edition, links and other draft work are not changed or bundled.
+
+Of 115 generated files, only index.html, style.css and its manifest hash change;
+112 remain byte-identical. Publishing metadata is preserved. Fresh build,
+11 Node checks, 20 Python checks and exact local delivery of all115 files pass.
+Root14588bytes/SHA256 `aff96c683dba2dffabefb3e96061c793840b74f0179f5332c4936d470e55d794`.
+CSS SHA256 `6f5cfaf66111a5ff6cbf5447cad4b614a8c5ab305c5f6a3ad1b060477ba7fc49`.
+
+Direct-domain readback remains unavailable to Codex following the earlier
+non-retryable safe-open refusal; no alternative retrieval is used to bypass it.
+GitHub workflow completion and tree parity will be recorded separately in COM,
+not represented as direct served-byte observation. No new accessibility,
+comprehension or usefulness result is claimed. Rollback is a normal content
+revert to589514f, not a DNS, account or hosting change.
+
 ## Preview 0.8.3: reviewed painting-led opening, 9 September 2026
 
 Exact maintained source `991c0dd7900c891a8db554ab3f289ec32cb001c4`, accepted by
