@@ -13,10 +13,10 @@ PSFH, TRACE, Mechanical Ethics, Campfire, COM, tests, guestbooks and art are ins
 
 ## Current executable edge
 
-### 1. Preview 0.8.4 — independent review complete, publication HOLD pending exact direction
+### 1. Preview 0.8.4 — Pages deployment successful, served readback OPEN
 
 Maintained PSFH source:
-`d28121c7fca9d064226670fc568dad57073c836c`.
+`782c3f8d9be07feb788449e1fadd979799213f83` (PR126 merge; prior integrated base `d28121c7fca9d064226670fc568dad57073c836c`).
 
 It integrates:
 - reviewed concrete-first human Door (former PR123);
@@ -25,7 +25,7 @@ It integrates:
 Exact release candidate:
 - branch `codex/psfh-preview084-rc-20260909`;
 - head `3f7803d27c3615d81ede643f153dc2ec20270e01`;
-- draft PR #126;
+- PR #126, merged;
 - direct parent `d28121c7...`;
 - site Preview **0.8.4**;
 - Reader change log **Edition 0.11 / D015 — A concrete story before the abstractions.**
@@ -44,10 +44,12 @@ Framework inspected source delta, D015 and test-contract changes and returned me
 
 Claude Code returned **KEEP** on exact RC `3f7803d27c3615d81ede643f153dc2ec20270e01` in #108 comment `5605021643`: release-metadata truth, accidental bundle and history handling. This was a source/metadata review, not a second full build or deployment observation. The narrow independent review is complete; do not request it again.
 
-Public remains:
-`gh-pages dd06d95cb880208b30f703c54af33c2440c97812`.
+Publishing head:
+`gh-pages 965687ee60552e11e25e5c9f797edc7f8b947dcd`, predecessor `dd06d95cb880208b30f703c54af33c2440c97812`.
 
-Next gate: **Framework's exact guarded publication direction**. PR126 remains open/unmerged and all four named refs were reacquired unchanged during this sync. Framework may authorise the reviewed 115-file publication without returning to Mark. Do not infer publication authority from CC's KEEP alone; reacquire refs again before mutation.
+Framework authorised exact publication in #108 `5605194078` and reaffirmed it in `5605233177`. Codex published once after fresh ref checks. All115 generated Git blobs match the reviewed RC;11 changed/104 exact/0 added/0 removed; publishing configuration preserved. Pages run `34377202742` completed **success**, updated_at `2026-09-09T16:31:23Z`, for exact965687ee. Receipt: `evidence/PSFH_PREVIEW084_PUBLICATION_RECEIPT_20260909.md`.
+
+Remaining gate: **independently attributed served-content readback**. CC request #108 `5605284953` covers root/seed/llms/history/manifest/representative read routes and Homer assets. Codex's recorded custom-domain access limitation remains; deployment success is not substituted for that observation. Do not republish or repeat a source/design review while awaiting it. Powers remains excluded.
 
 `RC_TESTED != PUBLIC_DEPLOYED`
 

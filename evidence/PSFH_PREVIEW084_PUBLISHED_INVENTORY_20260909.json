@@ -1,0 +1,470 @@
+{
+  "baseline": "dd06d95cb880208b30f703c54af33c2440c97812",
+  "rc": "3f7803d27c3615d81ede643f153dc2ec20270e01",
+  "maintained": "782c3f8d9be07feb788449e1fadd979799213f83",
+  "files": {
+    "404.html": {
+      "bytes": 576,
+      "sha256": "ae79cf8b50005b4224260e171cd52852b5e3fe2296a85997db2955c650f3f33a"
+    },
+    "art/camp-fire-1440.jpg": {
+      "bytes": 255138,
+      "sha256": "ffaf089763a9f82319b72f18a6359f6efd1a1ef680cd917b7f135926a04bf9a1"
+    },
+    "art/camp-fire-720.jpg": {
+      "bytes": 57147,
+      "sha256": "1790607240f010723618dd1e0aed49a3c806ac0bbf3fe4d8b5bde69450658577"
+    },
+    "art/camp-fire.jpg": {
+      "bytes": 2350423,
+      "sha256": "7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1"
+    },
+    "art/camp-fire.json": {
+      "bytes": 3029,
+      "sha256": "dc8e26266ef4e4b58cd3ec59ee4c2bc1f09bc68e821e6e0dd16aca3ea2805850"
+    },
+    "changes.html": {
+      "bytes": 40720,
+      "sha256": "c9119674f95433b8022c309a49e2be8a201525d1b5b10a35f1920b1037d7c6aa"
+    },
+    "changes.md": {
+      "bytes": 37314,
+      "sha256": "b147af9f9aca17d84651bef8551cec1b2296ea643863251ec0d305be249d64a5"
+    },
+    "discussion/index.html": {
+      "bytes": 9405,
+      "sha256": "18d8a45911abc4c345e90dc83d0562e0282774b36f005ab309bccf42588bf0ba"
+    },
+    "discussion/index.md": {
+      "bytes": 8008,
+      "sha256": "7117f1acf2c6cce494da2413c82fe8185f99dcb21342e4053ceb545efa222c18"
+    },
+    "explore/challenge.html": {
+      "bytes": 1646,
+      "sha256": "c1a162367bc273cdfca287bd12721953c91ad717ae715a81114630096453396e"
+    },
+    "explore/challenge.md": {
+      "bytes": 900,
+      "sha256": "3a0160f3a15af35106186042b600542b6fad328742c0a9eb5e84099986010d0c"
+    },
+    "explore/example/affected.html": {
+      "bytes": 2325,
+      "sha256": "8bf53b44ff22bbcd9bcf8f73dea939ed1e98b9e3a4e0b39b61fb277d6ac65889"
+    },
+    "explore/example/affected.json": {
+      "bytes": 1324,
+      "sha256": "d1a947daba8fc22ab4c29cd6a8ba43d48a4eb11cf6d3443268e2d3abcfa2b6e3"
+    },
+    "explore/example/affected.md": {
+      "bytes": 1283,
+      "sha256": "1aa54eb1c33cf0b898fd28f48d8164a52c124cbd376cabad7df6bae100c1e068"
+    },
+    "explore/example/case.html": {
+      "bytes": 2168,
+      "sha256": "4494f6c4e7a182c4b16f73d0f3128d526eab4b29391b140f7011e2998cfd0d5e"
+    },
+    "explore/example/case.json": {
+      "bytes": 1101,
+      "sha256": "5aaa6f06cdb8de6bf0888e9e5abda75ba21d6a0b591d7c85a5c9cb464e780629"
+    },
+    "explore/example/case.md": {
+      "bytes": 1163,
+      "sha256": "a265d94d0494a55351a1fbc39d4e04f66733771160e6df60e2581b48db3ac62a"
+    },
+    "explore/example/challenge.html": {
+      "bytes": 2495,
+      "sha256": "97eb4984ab312282746fd7d39cd49def25cfe5b5bf717b2bd376f36b5f77cc52"
+    },
+    "explore/example/challenge.json": {
+      "bytes": 1493,
+      "sha256": "24674b68e3335a53b71715bb60521a87a0b8fdff01c98d659dafcb0a68724eaa"
+    },
+    "explore/example/challenge.md": {
+      "bytes": 1434,
+      "sha256": "d5848aea663c7a995eca128fbf3dc15b4905eec384c7c8e68ccad68dcda42fcf"
+    },
+    "explore/example/entry.html": {
+      "bytes": 2036,
+      "sha256": "03ad3bfe698301a1bf37b381b6a4fce8e4322cf38af42fd221a85dbfeed2b734"
+    },
+    "explore/example/entry.json": {
+      "bytes": 1312,
+      "sha256": "5a30bd70f73d84962dbfc1c6ec96f4ca0f7e2023a20341b87383b4c51048559d"
+    },
+    "explore/example/entry.md": {
+      "bytes": 1152,
+      "sha256": "008284d1f111dfcaf917a79be7e0f9c6a60978056f00b74e53acb96c95937ef4"
+    },
+    "explore/example/route.html": {
+      "bytes": 2293,
+      "sha256": "dd0685db4760caa63331141ce696c6fea1c3fc9c407904773f32fe689231b97e"
+    },
+    "explore/example/route.json": {
+      "bytes": 1288,
+      "sha256": "086dc74122db0f17e0e04872f14d65ea73a0908acc5795ffc0740db91e7ac596"
+    },
+    "explore/example/route.md": {
+      "bytes": 1247,
+      "sha256": "c0a47e44e4fe36ed64dfe44af089f6ab109a74a91db69db9a778746035424d26"
+    },
+    "explore/index.html": {
+      "bytes": 3255,
+      "sha256": "c23d515269feeb42aefbdc334272e30fc15c1e2655817278f42ae149b23ffd59"
+    },
+    "explore/index.md": {
+      "bytes": 2151,
+      "sha256": "2255724667780f3ca618880b5d7c4bf3af3287b895be9dccad50621b0d05d3e4"
+    },
+    "explore/index.txt": {
+      "bytes": 2151,
+      "sha256": "2255724667780f3ca618880b5d7c4bf3af3287b895be9dccad50621b0d05d3e4"
+    },
+    "explore/llms.txt": {
+      "bytes": 3535,
+      "sha256": "1af74138052fc747f98a6a9bc97940b689fd62d42f6c6af62f91aed826f257de"
+    },
+    "explore/map.json": {
+      "bytes": 12451,
+      "sha256": "cea1ad6954cbf051f63afd4e62e4af20c47c1de099122b7909e5f025c572e4fb"
+    },
+    "explore/nodes/aperture.html": {
+      "bytes": 2980,
+      "sha256": "e342a246a6c41fd07ba34ee23b468da0257477b3dfd2d03aa6ff991e7bf9c076"
+    },
+    "explore/nodes/aperture.json": {
+      "bytes": 3048,
+      "sha256": "386752a224103b90679179515cf41231fe754e69c93cad4ed5933769dd241855"
+    },
+    "explore/nodes/aperture.md": {
+      "bytes": 2072,
+      "sha256": "6dadbadf25bc43720abb86f5a9ece2ef3e47da14634fba91e9e78ff740b07e31"
+    },
+    "explore/nodes/care.html": {
+      "bytes": 2457,
+      "sha256": "16ed4155d235e846fbe2afd88aac0ddd886c616ceb17662f61c24483bb44ff4f"
+    },
+    "explore/nodes/care.json": {
+      "bytes": 2078,
+      "sha256": "9479af1d52659d54d661e647f19260217872657e622ef5e4d6503d7958667242"
+    },
+    "explore/nodes/care.md": {
+      "bytes": 1560,
+      "sha256": "c6858c802fabe32d12e7b8b41a2a0c71be030b41acd72656f9a80512ab76037f"
+    },
+    "explore/nodes/change.html": {
+      "bytes": 2445,
+      "sha256": "c6eac1047144fc397477af2505fe9fbb9f25295b094921a4e14080cb19b51288"
+    },
+    "explore/nodes/change.json": {
+      "bytes": 2524,
+      "sha256": "e3aab185b5e986abe0e490914c7d1152a6ec3723acbfd0bae6c4a5b5c7f030d9"
+    },
+    "explore/nodes/change.md": {
+      "bytes": 1551,
+      "sha256": "c4b7ba14bfe22f1a47c0c530865cbd0a81a12b9578c0c3d8b604590d2f81fbc5"
+    },
+    "explore/nodes/correction.html": {
+      "bytes": 2528,
+      "sha256": "88dd09a6aee4a6952885e7552f196f12d55118367f17e396fbd1d0e5b87a70b2"
+    },
+    "explore/nodes/correction.json": {
+      "bytes": 2585,
+      "sha256": "8c5147c2cea8eec6812e8f3bb5c9ac735fc9b1fa58a81f16a9c0192378e257ef"
+    },
+    "explore/nodes/correction.md": {
+      "bytes": 1614,
+      "sha256": "255c64a328f7be211f7c032fb301640f6c896fdbc0d683744b63a56aca72d711"
+    },
+    "explore/nodes/futures.html": {
+      "bytes": 2523,
+      "sha256": "8b682b222ef336e7599269b6c73d071dbe26de1542a669ba4253ca315a5bd046"
+    },
+    "explore/nodes/futures.json": {
+      "bytes": 2579,
+      "sha256": "8bab8d32757a257806075956df70ced4e399173df6a3205153ab242734d379b3"
+    },
+    "explore/nodes/futures.md": {
+      "bytes": 1607,
+      "sha256": "70ac330816dcac4e32e450805f70661e2cd337dc0bda7c72a4d53251d6e11bf9"
+    },
+    "explore/nodes/hardening.html": {
+      "bytes": 2494,
+      "sha256": "4c365c35ded371f1f999fb76e2488964d19a9c5b10a742bd47640427e1b0d266"
+    },
+    "explore/nodes/hardening.json": {
+      "bytes": 2558,
+      "sha256": "868012c684ff3a8ecbdf7cd868b4236c38ad0a9c6cbe3f3a9b39be21ff193af0"
+    },
+    "explore/nodes/hardening.md": {
+      "bytes": 1585,
+      "sha256": "228f9cbc2dba251a0fd1369ded7c1c9da5d20a33cb42f0129004c7aae57527ca"
+    },
+    "explore/nodes/power.html": {
+      "bytes": 2548,
+      "sha256": "66b2b00beb08b7bdca5635ad60b67bcd615a6aee565f573b91089fde0a35ed41"
+    },
+    "explore/nodes/power.json": {
+      "bytes": 2604,
+      "sha256": "04346e25e9518919a358c150a8ab8b387fcbab90043fcc92152187b4a378e26d"
+    },
+    "explore/nodes/power.md": {
+      "bytes": 1633,
+      "sha256": "94afa600001357b804dc12db59cb12a03eacdd54bceba5927a87492bd7cee2b0"
+    },
+    "explore/nodes/selection.html": {
+      "bytes": 2268,
+      "sha256": "8d6e5c2a7112898fcffa17571eec9d1d5785bd9fb258cf4244cca0b7bfdaf9df"
+    },
+    "explore/nodes/selection.json": {
+      "bytes": 2043,
+      "sha256": "af7da65a421b17d5c1840e3d6b5755bd603dd8330f854dd42b4c1c0769b4f9ac"
+    },
+    "explore/nodes/selection.md": {
+      "bytes": 1368,
+      "sha256": "26eea1bd1f9b8d4572e3307f458e5227cdb32b3b4b9066283d9f328f6745f8ce"
+    },
+    "explore/nodes/significance.html": {
+      "bytes": 2335,
+      "sha256": "8b09d2016c85e03cbce24fb7958b686aaf60b7768869c20fd0c0bfa0e4019d98"
+    },
+    "explore/nodes/significance.json": {
+      "bytes": 1954,
+      "sha256": "664d2790f264f58c31f7ec1146a1a1be2f3ce24949760d63f16d45ae93f66c94"
+    },
+    "explore/nodes/significance.md": {
+      "bytes": 1431,
+      "sha256": "30546d10584f99c428b324538f9bd65617ca3bab0b872a49713dde8b4d9f3ae0"
+    },
+    "explore/nodes/wisdom.html": {
+      "bytes": 2563,
+      "sha256": "fddf7c8ff49ec1369ef836f0cdd0e2ecbb1279878e7e5effca2267ef5c3f7cc2"
+    },
+    "explore/nodes/wisdom.json": {
+      "bytes": 2628,
+      "sha256": "7f5e763203d05a2fdb6e9b20ad7c8bf7ba0c81c7ac9ced1bbc3a019eaea0a99b"
+    },
+    "explore/nodes/wisdom.md": {
+      "bytes": 1654,
+      "sha256": "15c26ba2d8cf4bd5ce86f229538949c61781e457be5d97fad027f99677a203b4"
+    },
+    "explore/packet.json": {
+      "bytes": 20803,
+      "sha256": "37951eceebad508bf0671dd267d715670b278e9d63cfd080235e71e8924d7575"
+    },
+    "explore/packet.md": {
+      "bytes": 19277,
+      "sha256": "6d523a06ca4281eb2b03e9d17943c764b0e19d26a8daccb6968aac7a41c7ab6a"
+    },
+    "explore/questions.json": {
+      "bytes": 5238,
+      "sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e"
+    },
+    "explore/questions.txt": {
+      "bytes": 1650,
+      "sha256": "153b016850cb050732e72399810009a5be6877c85266fa618016a56e767a5c25"
+    },
+    "explore/sources.html": {
+      "bytes": 3067,
+      "sha256": "301cc99416c93ab25e8c2a4c05a5220b31185adac50be47dba2b19904717ec2d"
+    },
+    "explore/sources.json": {
+      "bytes": 2533,
+      "sha256": "7eed9e0ae55f94468b454dab5a02822f7f0535b0046bbcf557891d4c58a9aeb2"
+    },
+    "explore/sources.md": {
+      "bytes": 2217,
+      "sha256": "6b5c9079e592a39c1993c5c41aa7f5aaf265f667f209f954518ec41aa61cd077"
+    },
+    "explore/start.json": {
+      "bytes": 1758,
+      "sha256": "4cc066e604d73b3f21ff1072d23bbe9b5057dd82b8552bb1b899779f3f58ed2e"
+    },
+    "explore/worked-revision.html": {
+      "bytes": 7164,
+      "sha256": "ffa26f717465ebe0ce5e2bf2eebe172c6960d68c0c428e27b70e22287b9312b4"
+    },
+    "explore/worked-revision.md": {
+      "bytes": 6029,
+      "sha256": "c2f41ce55fdea96361d9716116fd6ad016a55c24651a7c6c72d62d51a0d70421"
+    },
+    "index.html": {
+      "bytes": 15337,
+      "sha256": "25d0406fcd20f4b6e0ed4667841928f45dd502aa38c64fba53ab9fbd496c05ca"
+    },
+    "llms.txt": {
+      "bytes": 6099,
+      "sha256": "e21b44aeddc9ec69f0a3edee09dfc730f22df56211dfb54aef921ec4878e2be4"
+    },
+    "manifest.json": {
+      "bytes": 7084,
+      "sha256": "4753b06595f87ca99836a06b7e5c3cdeb07135be76f1757061fdac4a6570b779"
+    },
+    "read/me-book.html": {
+      "bytes": 91487,
+      "sha256": "255b037de5f163bc4bd8f6c7d9c776acbfae986cd1eed8ce30aa44f1e2dafe58"
+    },
+    "read/orientation.html": {
+      "bytes": 9444,
+      "sha256": "d6103410a9991bf70606f88a206a481c8eb357834a813ef7e140c572cc28753c"
+    },
+    "read/start.html": {
+      "bytes": 4949,
+      "sha256": "57c7ebac8bc4e0991f99204359d4809609f004fe753da43a9295160308c25e58"
+    },
+    "read/trace-spine.html": {
+      "bytes": 27944,
+      "sha256": "c725a67ce5e13dbf18968b0a590a068017a7b2bddbf07c26e5f99beabbc0f19a"
+    },
+    "resources/index.html": {
+      "bytes": 5830,
+      "sha256": "db898bd3488b0543c1d47efea786aaa5266ca1644588d6a4ea08e6aedcb1b081"
+    },
+    "resources/index.md": {
+      "bytes": 5805,
+      "sha256": "46d9c63e70c076572dae3d613085e0dcd147ba54350de6f17375e252f55fc9ab"
+    },
+    "resources/inventory.json": {
+      "bytes": 20191,
+      "sha256": "948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8"
+    },
+    "resources/mechanical-ethics/MECHANICAL_ETHICS.md": {
+      "bytes": 87555,
+      "sha256": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
+    },
+    "resources/mechanical-ethics/MECHANICAL_ETHICS.pdf": {
+      "bytes": 451736,
+      "sha256": "18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56"
+    },
+    "resources/mechanical-ethics/README.md": {
+      "bytes": 3120,
+      "sha256": "019a965a06bca268f836b312fc48b07f7e86c168844a2cf8a899e9d4cbf0a0a3"
+    },
+    "resources/mechanical-ethics/figures/figure-1-file-and-life.png": {
+      "bytes": 81671,
+      "sha256": "bc19a7b7121faba611ef900470398ad5981ae1d1ff44faa79b3912b2a449ec00"
+    },
+    "resources/mechanical-ethics/figures/figure-1-file-and-life.svg": {
+      "bytes": 3268,
+      "sha256": "7e925765434bc701d5eacb88972a8f9715bc4a66d548e5b569d9c9a99692c2bb"
+    },
+    "resources/mechanical-ethics/figures/figure-2-correction-window.png": {
+      "bytes": 58039,
+      "sha256": "d1df6bea949b7db9bb64fd76fda35921d49473503b920b85ccae83864c445bc3"
+    },
+    "resources/mechanical-ethics/figures/figure-2-correction-window.svg": {
+      "bytes": 2887,
+      "sha256": "4d1570e07bfb8dcf7a3b9c7fc6cf380f1522e3b49b29fbf78df218be99069a5f"
+    },
+    "resources/mechanical-ethics/figures/figure-3-two-flats-one-wall.png": {
+      "bytes": 69949,
+      "sha256": "e6e0a457e3e1225edb1b29e0be9e698b988814270578d75ebd381f6bbab928d1"
+    },
+    "resources/mechanical-ethics/figures/figure-3-two-flats-one-wall.svg": {
+      "bytes": 3756,
+      "sha256": "0d98a7ea605bf9a440f0d315b5ca62fb2c4144d4cedea78bad81cbad5119db11"
+    },
+    "resources/mechanical-ethics/figures/figure-4-machine-speed-human-correction.png": {
+      "bytes": 65773,
+      "sha256": "4d0f41aa5eb560b6afe1b9e2102c99a8476d2c9211a380d6c401192016797ebf"
+    },
+    "resources/mechanical-ethics/figures/figure-4-machine-speed-human-correction.svg": {
+      "bytes": 3979,
+      "sha256": "c17f04eb3d3c22e6b1d62eae7e505ba0bd42e7f6a6c6a76d45d263bdd2e5662a"
+    },
+    "resources/mechanical-ethics/figures/index.html": {
+      "bytes": 1155,
+      "sha256": "2058b2eae70ef50c3f8246b919baf9925b73ebc303ac1f51c47e25ba475f81c1"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md": {
+      "bytes": 87555,
+      "sha256": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.pdf": {
+      "bytes": 451736,
+      "sha256": "18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md": {
+      "bytes": 3120,
+      "sha256": "019a965a06bca268f836b312fc48b07f7e86c168844a2cf8a899e9d4cbf0a0a3"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.png": {
+      "bytes": 81671,
+      "sha256": "bc19a7b7121faba611ef900470398ad5981ae1d1ff44faa79b3912b2a449ec00"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.svg": {
+      "bytes": 3268,
+      "sha256": "7e925765434bc701d5eacb88972a8f9715bc4a66d548e5b569d9c9a99692c2bb"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.png": {
+      "bytes": 58039,
+      "sha256": "d1df6bea949b7db9bb64fd76fda35921d49473503b920b85ccae83864c445bc3"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.svg": {
+      "bytes": 2887,
+      "sha256": "4d1570e07bfb8dcf7a3b9c7fc6cf380f1522e3b49b29fbf78df218be99069a5f"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.png": {
+      "bytes": 69949,
+      "sha256": "e6e0a457e3e1225edb1b29e0be9e698b988814270578d75ebd381f6bbab928d1"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.svg": {
+      "bytes": 3756,
+      "sha256": "0d98a7ea605bf9a440f0d315b5ca62fb2c4144d4cedea78bad81cbad5119db11"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.png": {
+      "bytes": 65773,
+      "sha256": "4d0f41aa5eb560b6afe1b9e2102c99a8476d2c9211a380d6c401192016797ebf"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.svg": {
+      "bytes": 3979,
+      "sha256": "c17f04eb3d3c22e6b1d62eae7e505ba0bd42e7f6a6c6a76d45d263bdd2e5662a"
+    },
+    "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/index.html": {
+      "bytes": 1155,
+      "sha256": "2058b2eae70ef50c3f8246b919baf9925b73ebc303ac1f51c47e25ba475f81c1"
+    },
+    "resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md": {
+      "bytes": 6563,
+      "sha256": "2af757c5f819abeda0f5051bc9cc518c9605b47b77ea4d102276dd582615880d"
+    },
+    "resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md": {
+      "bytes": 25795,
+      "sha256": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999"
+    },
+    "resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE.md": {
+      "bytes": 180511,
+      "sha256": "1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f"
+    },
+    "resources/trace/README.md": {
+      "bytes": 6563,
+      "sha256": "2af757c5f819abeda0f5051bc9cc518c9605b47b77ea4d102276dd582615880d"
+    },
+    "resources/trace/TRACE-SPINE.md": {
+      "bytes": 25795,
+      "sha256": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999"
+    },
+    "resources/trace/TRACE.md": {
+      "bytes": 180511,
+      "sha256": "1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f"
+    },
+    "robots.txt": {
+      "bytes": 287,
+      "sha256": "1b5e7f0330d5abae4e267fb37e05cc59f2884732c02655f274f03ac30380d469"
+    },
+    "seed.txt": {
+      "bytes": 1023,
+      "sha256": "d9494fe389ce625df5c065f23f596cc2626391f026161979f43a229dca175d79"
+    },
+    "sitemap.xml": {
+      "bytes": 2342,
+      "sha256": "1af4fe06a17e17ae4c823abd455778565b8901c9d83438c25f037969ed7f5e33"
+    },
+    "style.css": {
+      "bytes": 14924,
+      "sha256": "a889d2b39b400f355729e51f304f6423a03e76036a6160a439865b82024858ab"
+    }
+  },
+  "publication": "965687ee60552e11e25e5c9f797edc7f8b947dcd",
+  "pages_run": 34377202742,
+  "status": "PAGES_SUCCESS__SERVED_READBACK_PENDING"
+}
