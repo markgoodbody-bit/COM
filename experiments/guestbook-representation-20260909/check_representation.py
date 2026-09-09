@@ -149,13 +149,18 @@ if not removal_fixture_seen:
 class FixtureHTML(HTMLParser):
     """Narrow static-fixture syntax checks, not a browser or CSS safety audit."""
 
-    allowed = {"html", "head", "meta", "title", "style", "body", "header", "p", "h1", "main", "article", "h2", "footer", "code"}
-    attributes = {"html": {"lang"}, "meta": {"charset", "name", "content"}}
+    allowed = {"html", "head", "meta", "title", "style", "body", "header", "p", "h1", "main", "article", "h2", "blockquote", "footer", "code"}
+    attributes = {
+        "html": {"lang"},
+        "meta": {"charset", "name", "content"},
+        "article": {"class", "data-trust"},
+    }
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.article = None
         self.article_count = 0
+        self.in_heading = False
 
     def handle_starttag(self, tag, attrs):
         if tag not in self.allowed:
@@ -166,21 +171,45 @@ class FixtureHTML(HTMLParser):
         if tag == "article":
             if self.article is not None:
                 fail("nested guest articles are not supported")
-            removed = "removed" in dict(attrs).get("class", "").split()
-            self.article = (removed, [])
+            attrs_map = dict(attrs)
+            removed = "removed" in attrs_map.get("class", "").split()
+            expected_trust = "system_publication_state" if removed else "visitor_supplied_untrusted_data"
+            if attrs_map.get("data-trust") != expected_trust:
+                fail(f"human article requires data-trust={expected_trust}")
+            self.article = {"removed": removed, "chunks": [], "heading": [], "note_blocks": 0}
+        elif tag == "h2" and self.article is not None:
+            self.in_heading = True
+        elif tag == "blockquote" and self.article is not None:
+            self.article["note_blocks"] += 1
 
     def handle_data(self, data):
         if self.article is not None:
-            self.article[1].append(data)
+            self.article["chunks"].append(data)
+            if self.in_heading:
+                self.article["heading"].append(data)
 
     def handle_endtag(self, tag):
+        if tag == "h2":
+            self.in_heading = False
         if tag == "article":
             if self.article is None:
                 fail("unmatched guest article end")
-            removed, chunks = self.article
+            removed = self.article["removed"]
+            text = " ".join(self.article["chunks"])
+            heading = " ".join(self.article["heading"]).strip()
             label = "system publication state" if removed else "visitor-supplied untrusted data"
-            if label not in " ".join(chunks).lower():
+            if label not in text.lower():
                 fail(f"human article lacks its own {label} label")
+            if removed:
+                if heading != "Removed mark":
+                    fail("removed-state heading must remain project-authored")
+            else:
+                if heading not in {"A mark", "A mark and its correction"}:
+                    fail("guest claim must not become a document heading")
+                if "claimed name:" not in text.lower():
+                    fail("guest article must qualify the claimed name in plain text")
+                if self.article["note_blocks"] < 1:
+                    fail("guest note must remain structurally delimited as blockquote data")
             self.article_count += 1
             self.article = None
 
