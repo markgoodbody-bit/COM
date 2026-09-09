@@ -16,6 +16,9 @@ test('two placements use exact canonical work identity and whole-frame delivery 
     assert.ok(html.includes(record.credit));
     assert.ok(html.includes(record.rights));
     assert.ok(html.includes('href="#' + room.anchor + '"'));
+    assert.ok(html.indexOf('<figure>') < html.indexOf('class="room-nav"'));
+    assert.ok(html.indexOf('class="skip"') < html.indexOf('<figure>'));
+    assert.ok(html.indexOf('<figure>') < html.indexOf('class="room-heading"'));
     assert.match(html, /This placement is our choice, not the artist's argument or an endorsement/);
     for (const v of images[0].variants) {
       const route = 'art/' + v.file, bytes = await readFile('out/' + route);

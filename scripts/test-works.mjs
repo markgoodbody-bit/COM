@@ -11,7 +11,7 @@ test('normal output retains exactly the declared work pages, images and records'
   const source = await verifyWorks('public'), built = await verifyWorks('out');
   assert.equal(source.size, 36);
   assert.deepEqual(Object.keys(WORKS.files).sort(), Object.keys(WORKS.reviewed_files).sort());
-  for (const route of Object.keys(WORKS.files)) if (!route.endsWith('/index.html')) {
+  for (const route of Object.keys(WORKS.files)) if (!route.endsWith('/index.html') && route !== 'works/shelf.css') {
     assert.deepEqual(WORKS.files[route], WORKS.reviewed_files[route], route);
   }
   assert.deepEqual(built, source);
@@ -29,7 +29,7 @@ test('normal output retains exactly the declared work pages, images and records'
   assert.match(manifest.provenance.optional_human_art.scope, /No required traversal or report-back/);
 });
 
-test('publication treatment changes only the named wrappers from the pinned integration', async () => {
+test('historical publication treatment changed only named wrappers from the pinned integration', async () => {
   const integration = 'b078c3cf4aa251c4226985c2547d03e3d88b196a';
   const gitBytes = file => execFileSync('git', ['show', integration + ':' + file], { maxBuffer: 20 * 1024 * 1024 });
   const prior = JSON.parse(gitBytes('scripts/WORKS_COPIES.json'));
@@ -39,7 +39,9 @@ test('publication treatment changes only the named wrappers from the pinned inte
   let changed = 0;
   for (const route of Object.keys(prior.files)) {
     const before = gitBytes('public/' + route);
-    const after = await readFile('public/' + route);
+    // Preserve the historical claim against its actual predecessor, not the
+    // current art-first presentation. Later changes are checked below.
+    const after = execFileSync('git', ['show', '0f627f2357d74de6b1556e25f5e4a0be5c9a7c57:public/' + route], {maxBuffer:20*1024*1024});
     if (route.endsWith('/index.html')) {
       const expected = before.toString('utf8')
         .replace(/^[ \t]*<meta name="robots" content="noindex(?:,nofollow)?">\r?\n/gm, '')
@@ -67,6 +69,40 @@ test('publication treatment changes only the named wrappers from the pinned inte
       .replace("import { applyContextualArt } from './contextual-art.mjs';\n", '')
       .replace("await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));\n", '');
     assert.equal(source, gitBytes(file).toString('utf8'), file);
+  }
+});
+
+test('art-first moves only the five headings/navigation blocks and keeps accounts and assets', async () => {
+  const base = '0f627f2357d74de6b1556e25f5e4a0be5c9a7c57';
+  const normal = text => text.replace(/\r\n/g, '\n').replace(/>\s+</g, '><').trim();
+  const readBefore = route => execFileSync('git', ['show', base + ':public/' + route], {maxBuffer:20*1024*1024});
+  const names = ['anna-atkins','shen-zhou','edmonia-lewis','harriet-powers','johannes-vermeer'];
+  const moved = new Set(names.map(name => 'works/' + name + '/index.html'));
+  for (const route of Object.keys(WORKS.files)) {
+    const before = readBefore(route), after = await readFile('public/' + route);
+    if (moved.has(route)) {
+      const old = before.toString('utf8').replace(/\r\n/g, '\n'), current = after.toString('utf8').replace(/\r\n/g, '\n');
+      const main = old.match(/<main\b[^>]*>/)[0];
+      const heading = old.slice(old.indexOf(main) + main.length).match(/^\s*(<header\b[\s\S]*?<\/header>)/)[1];
+      const nav = old.match(/<nav class="shelf-return">[\s\S]*?<\/nav>/)[0];
+      const siteHeader = old.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0] || '';
+      assert.ok(current.includes(heading.replace('<header', '<header id="work-details"')), route);
+      assert.ok(current.includes(nav), route);
+      assert.ok(current.includes(siteHeader), route);
+      const stationaryBefore = old.replace(heading,'').replace(nav,'').replace(siteHeader,'');
+      const stationaryAfter = current.replace(heading.replace('<header','<header id="work-details"'),'')
+        .replace('<nav class="work-routes" aria-label="Continue or leave"><a href="../index.html">All works</a><a href="../../explore/#reading-map">Reading map</a><a href="../../">Back to the opening</a></nav>', '')
+        .replace(nav,'').replace(siteHeader,'').replace('<body class="artwork-first">','<body>')
+        .replace('class="skip" href="#work-details"','class="skip" href="#work"')
+        .replace('>Skip to the account</a>', old.match(/>Skip to the (?:work|painting)<\/a>/)[0]);
+      assert.equal(normal(stationaryAfter), normal(stationaryBefore), route);
+      assert.ok(current.indexOf('<img') < current.indexOf('<header id="work-details"'), route);
+      assert.ok(current.indexOf('<img') < current.indexOf('<nav class="shelf-return"'), route);
+      assert.ok(current.includes('href="../../explore/#reading-map"'), route);
+    } else if (route === 'works/shelf.css') {
+      assert.ok(normal(after.toString()).startsWith(normal(before.toString())));
+      assert.match(after.toString(), /max-height: 100svh/);
+    } else assert.deepEqual(after, before, route);
   }
 });
 
