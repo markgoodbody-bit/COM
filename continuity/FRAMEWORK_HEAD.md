@@ -21,97 +21,76 @@ TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, guestboo
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from #108 and #119 plus any Powers source candidate.
+2. Reacquire later returns from #108, PR127 and #119.
 3. Reacquire maintained/public PSFH heads before mutation.
 4. Discover recently active COM/PR surfaces; one-thread COMSYNC is not assumed complete.
 5. Do not replay large cold carriers unless a current decision needs a named slice.
 
 ## Current consequential state
 
-### Public PSFH
+### PSFH Preview 0.8.4 — PAGES DEPLOYED; SERVED READBACK OPEN
 
-Current public `gh-pages` is still the reviewed Homer presentation:
-`dd06d95cb880208b30f703c54af33c2440c97812`; Pages run `34360186077` SUCCESS.
+Reviewed release source `3f7803d27c3615d81ede643f153dc2ec20270e01` passed Codex build/delta evidence and Claude Code metadata/bundle/history KEEP.
 
-Do not repeat it. Actual ordinary image fallback is pinned1440;55% feather and fallback both shipped; museum original remains separately served/linked provenance.
+Maintained branch is now:
+`782c3f8d9be07feb788449e1fadd979799213f83`.
 
-### Maintained human Door
+Public publishing branch is now:
+`gh-pages 965687ee60552e11e25e5c9f797edc7f8b947dcd`, direct parent Homer predecessor `dd06d95cb880208b30f703c54af33c2440c97812`.
 
-Concrete-first PR123 is **closed and integrated**, not pending.
+Codex performed one authorised push using the already-tested RC output, not a rebuild from later source. All115 generated Git blobs match the reviewed output:11 changed /104 identical /0 added /0 removed. Publishing configuration and all four Homer artifacts are unchanged; Powers is excluded.
 
-CC final closure `5604467485`: all four findings closed; no further blocking content objection.
+GitHub Pages run `34377202742` completed **SUCCESS** for exact `965687ee`, updated at 2026-09-09T16:31:23Z. Publication receipt is in COM evidence and #108 `5605315210`.
 
-Maintained branch `codex/door-maintained-source-20260908` is:
-`d28121c7fca9d064226670fc568dad57073c836c`.
+Remaining observation only: independently attributed **served custom-domain readback** of root/seed/llms/changes/manifest/representative read routes and Homer assets. Codex and Framework transports have recorded custom-domain access limits; do not bypass. Do not republish while waiting.
 
-Its two reviewed parents preserve:
-- PR125 machine-text repairs (`7a5a50db...`):1023-byte seed includes `Not a release or canon.` and final two llms Explore links are absolute;
-- concrete-first human product/test successor (`f8b84ec4...`): Homer -> labelled ME composite `Two flats, one wall` -> three human movements, with no-demand and read-only/no-reply ceilings retained.
+Preview 0.8.4 / Reader Edition0.11 D015 contains the reviewed concrete-first human Door and PR125 machine-text repairs. Practical advantage remains unproven.
 
-Product/test evidence at f8b84ec4: build PASS;22/22 Python;11/11 Node incl115 deliveries; fixed editorial-delta fixture with negative controls; no generated product-byte change from the final product head.
+`PAGES_DEPLOYED != SERVED_PARITY_OBSERVED`
 
-`SOURCE_INTEGRATED != PUBLIC_DEPLOYED`
+### Harriet Powers — PR127 SOURCE CANDIDATE / REVIEW OPEN
 
-### Preview 0.8.4 release candidate
+Exact source-only candidate:
+- PR127, branch `codex/powers-work-page-20260909`;
+- head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`;
+-14 additions confined to `proposals/powers/`; no existing site source/public route changed;
+- PR marked ready for review, open/unmerged.
 
-Framework selected next candidate:
-- site Preview **0.8.4**;
-- Reader change log **Edition0.11 / D015**;
-- D015: **A concrete story before the abstractions.**
+Image custody:
+- Smithsonian IDS-delivered source2880x2412,2671829 bytes, SHA256 `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`;
+- `MUSEUM_MASTER_STATUS = UNKNOWN`;
+-720x603 viewing copy201415 bytes, SHA `c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802`;
+-1440x1206 viewing copy862531 bytes, SHA `816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f`;
+- derivatives are proportional Lanczos JPEGs with recorded encoder/settings, no crop/retouch/generative operation; second run reproduced hashes.
 
-Exact source-only RC branch:
-`codex/psfh-preview084-rc-20260909`
-head `3f7803d27c3615d81ede643f153dc2ec20270e01`, direct parent d28121c7.
+Separate proposal build PASS;10 narrow tests PASS;8 exact local deliveries + work route200. Source/provenance/interpretation structure is coherent on Framework read: maker/work/source first, mediated museum account next, separately labelled PSFH response last; no panel meanings invented.
 
-Framework source read = KEEP. Delta contains release/change metadata and test/pin updates only; no page.tsx, CSS, artwork bytes, Explore content, discussion content, TRACE/ME resource, guestbook or Powers file. D015 labels itself candidate/not receipt and clarifies the historical D014 fallback error without rewriting D014 or calling predecessor Homer changes new0.8.4 work.
+Open gate: CC independent review of representative desktop/mobile/materially enlarged-text rendering, provenance wording, creator-account separation, and whether the quilt stands as a work rather than becoming a PSFH teaching illustration. No public wiring until that review. Any later root link belongs in `The work and its neighbours`, not first-movement cards or conceptual Explore map. No gallery system yet.
 
-Framework asked CC for exact metadata/bundle review in #108 `5604699949`; Codex still owes full build/test/generated-output comparison against public dd06d95. **No gh-pages push until both receipts.**
-
-`RC_COMMITTED != RC_TESTED`
-
-### Harriet Powers art
-
-Exact acquired Smithsonian IDS source image is accepted as a **Smithsonian-delivered source image**, not a museum master:
-- `https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984`
-- JPEG2880x2412 RGB
--2,671,829 bytes
-- SHA256 `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`.
-
-Prior3000x2512 advertisement is not these bytes. `MUSEUM_MASTER_STATUS = UNKNOWN` stays visible.
-
-Framework independently reacquired NMAH/Smithsonian authoritative public-domain/CC0 evidence and the museum account that Powers explained each of the eleven panels before transfer. Evidence repaired at COM `3d4316b0222ff93da110637d8a85178c201f711f`.
-
-Codex may now prepare source-bound720/1440 derivatives, provenance record/checks and one optional work-page / Explore-linked candidate: textile first, maker/source account before separately labelled PSFH response. No public wiring yet.
-
+`ART_SHOULD_STAND_BEFORE_IT_TEACHES`  
 `ACQUIRED_SOURCE_IMAGE != MUSEUM_MASTER`  
 `CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
 
-Vermeer remains `ASSET_BLOCKED` for a documented full-source path. Do not promote its thumbnail or guess image variants.
+Vermeer remains `ASSET_BLOCKED` for a documented full-source path; do not promote its thumbnail or guess image variants.
+
+### #119 — DELIBERATELY PAUSED BEFORE STAGE A
+
+No study has run; practical advantage remains unproven.
+
+CC hostile review produced six accepted findings. Do not write v3 or run Stage A until these choices are frozen:
+- interpretable builder population/recruitment/background/exposure rule;
+- development-account budget and maximum protocol-revision rounds;
+- later Stage-B holdout N and mechanical selection rule.
+
+Retain CAP_HIT, GRANULARITY_MISMATCH diagnostic state, raw vs eligible coverage, and zero eligible denominator = UNDEFINED. No accounts selected, people contacted, inference, recruitment or spend.
 
 ### Guestbook
 
-Representation stage complete and preserved in COM main (`75f80f4c...`). #118 disposition: **HOLD_INTAKE**. No form/backend/provider/real guest data/public route.
-
-### #119 Phase 0
-
-Practical advantage remains unproven; no study has run.
-
-CC attack `5604611092` produced six accepted findings. Framework integration #119 `5604662238` keeps design **NOT READY FOR STAGE A**.
-
-Before Stage A can be frozen:
-- freeze an interpretable builder population/recruitment/background rule; Framework currently prefers human reference builders over model/project-AI builders, but exact criteria remain UNSET;
-- freeze development-account budget and maximum rule-revision rounds;
-- later freeze Stage-B holdout N;
-- retain `CAP_HIT` flag;
-- matcher can record `GRANULARITY_MISMATCH` without accepting it as a family edge;
-- report raw and source-eligible family coverage separately;
-- zero eligible denominator remains `UNDEFINED`.
-
-Do not create v3 merely for version motion. No accounts, people, inference, recruitment or spend.
+Synthetic representation experiment complete and preserved in COM main. #118 disposition: **HOLD_INTAKE**. No form/backend/provider/real guest data/public route.
 
 ### Desktop
 
-Temporary quiet mode remains: scheduled two-minute task disabled/preserved; hidden120s watchdog loop is the workaround. Last reported local state had same PID13276 and speech+Steward RUNNING. If loop dies nothing resurrects it. Project AIs cannot see Mark's screen.
+Temporary quiet mode remains: scheduled two-minute task disabled/preserved; hidden120s watchdog loop is the workaround. If the loop dies nothing resurrects it. Project AIs cannot see Mark's screen. Do not reopen rejected launcher experiments without new evidence.
 
 ## Baselines / gates
 
