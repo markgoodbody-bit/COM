@@ -2,7 +2,26 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-09 — Europe/London  
-Current basis: composition candidate5599963162 follows FW5599679905/5599831198 relaying Mark's visual review. Maintained PSFH is now190c9547, an UNPUBLISHED no-card composition candidate. Public Preview0.8.3 stays589514f, built from991c0dd7; no gh-pages push occurred. Mark/FW visual acceptance and narrow CC review remain open. CC5599754309 accepts the supervisor critique;5599817422 returns a pure transition fixture at0d87ae2, received but not independently reviewed by Codex or applied. Four restarts remain the last bounded observation through09:20:50Z, not a new live count. Teaching and guestbook review remain pending; #119 design is deferred behind the visual correction. Use UTC API timestamps. Preserve #108 overlap from2026-09-09T09:45Z rather than jumping to the latest self-post; later returns take precedence.
+Current basis: Codex5600698254 returns exact launch-only candidate and reviewed supervisor findings. FW5600606237 makes the reported desktop console flash the immediate priority. Hidden-launch candidate is campfire-relay fabb5b0, NOT INSTALLED; CC5600659243 accepts the synchronous shape, exact source/timeout review remains open. Maintained PSFH60f6886 is an UNPUBLISHED feathered successor to190c9547; public0.8.3 remains589514f. Enlarged-page check and exact visual review remain open. Supervisor0d87ae2 independently reviewed in COM e00d93c, application NULL; CC accepts the four defects. Five recorded restarts through09:57:07Z are independently observed, not a current continuous health claim. Use UTC API timestamps and preserve #108 overlap from2026-09-09T10:48Z; later returns take precedence.
+
+## Immediate handoff — local console flash
+
+The installed Campfire Local Service Watch action already contains WindowStyle
+Hidden. It repeats every2minutes, InteractiveToken, IgnoreNew, PT1M limit. Its
+cadence matches Mark's report; exact visible-window cause is not established.
+Codex owns local application, CC independent review. No live task change yet.
+
+Source candidate: campfire-relay `fabb5b0bcc205a3ec10baca97bad7a06af33cc40`, branch
+`codex/watch-hidden-launch-20260909`. Source record:
+`tools/local_service_watchdog/HIDDEN_LAUNCH_REVIEW.md`. Harmless WSH probe proves
+waiting and exit37 propagation on this host. conhost --headless instead returned0
+for the same exit37 child and was rejected. Registrar now detects launch-action
+drift and uses the hidden action on future registration. Its default Apply still
+rebuilds trigger/settings: do not use it for this action-only live migration.
+Backup exact XML and change only Actions after review; preserve principal,
+schedule/settings, watcher bytes, health evidence and rollback. Timeout descendant
+containment and two natural due intervals/no visible flash remain unverified.
+No Production promotion or supervisor-policy change is authorized by this repair.
 
 ## Purpose
 
@@ -24,6 +43,15 @@ Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square, the rec
 - No fresh direct-domain root receipt for the newest candidate is claimed here.
 
 ## Maintained source — composition correction held for review
+
+Latest successor is `60f6886542bb5c290180e989eb1bbdfa6acad11a`, following CC5600049937
+REPAIR_SMALL and FW5600097467. It preserves the high-left title, credit below/right,
+full artwork and semantics, adds a feathered backing and changes ordinary src to
+the pinned1440px viewing copy. The unchanged original remains linked and hash-bound.
+11 Node/20 Python tests and115 exact local HTTP deliveries pass. Review evidence
+is `review/scrim-20260909/`. Meaningful enlargement is incomplete and the visible
+backing's visual weight still needs judgement; no publication. The old no-card
+record below remains historical, not the current source. Public589514f unchanged.
 
 Current maintained source is `190c9547bacf6928181d9120741b07150c51b33d` on `codex/door-maintained-source-20260908`, **UNPUBLISHED / VISUAL REVIEW HOLD**. Codex5599963162 returns FW's no-card direction: high-left white title in the canopy, no opaque backing, credit below/right, separate title row below60rem. H1/figure siblings, exact art bytes, non-art prose and routes are preserved. Requested1600/1024/375px local renders were inspected; screenshots and measured geometry are in `review/composition-20260909/` on that exact commit. 11 Node/20 Python checks pass; only3 of115 output files differ from public589514f. Measured-line source-pixel contrast passes for720/1440 copies at those desktop layouts, but the original fallback has adverse bright-detail results; no universal contrast/accessibility claim. Mark/FW inspection and narrow CC review must precede publication. Do not mistake a maintained-source push for a public-site update.
 
@@ -93,6 +121,15 @@ Later read5599562173 independently confirms two further null-age/empty-phase seq
 
 CC5599754309 accepts those objections and withdraws unmeasured Windows-race/retry-efficacy claims. CC5599817422 returns a pure non-actuating transition fixture at campfire-relay0d87ae2, distinguishing startup absence, loss-after-valid and bounded persistent mismatch. It reports paired installed/candidate sequences and negative controls; grace values remain ungrounded. Codex5599963162 receipts SEEN only: the candidate source and execution have not yet been independently inspected by Codex, and no installed supervisor change is accepted or applied on that basis.
 
+Superseding independent review: COM `e00d93c69d905192082e056def20ad332d1f14ef`
+preserves [the pinned probe and findings](../evidence/SUPERVISOR_TRANSITION_REVIEW_20260909.md).
+45s comparison differs from installed120s in three rows; premises are labels not
+verified worlds; run drops causes and misses the wrong-label mutation; last_valid
+stores heartbeat time rather than last usable observation. CC5600659243 accepts
+the objections. Recovery-before-boundary and reset were directly checked in the
+pure model. Application return is NULL, not a live repair. A fifth null-age stale
+event at09:57:07Z and replacement RUNNING09:57:23Z were independently reread.
+
 ## Field / Square
 
 The existing cc-relay PSFH introduction remains the single introduction; no duplicate framework-relay post, vote coordination, mention blast or chase is authorized. Latest fresh Square attempts in Codex's ordinary sync were safe-open refused; older observations keep their original timestamps. No blind write follows a read refusal.
@@ -107,8 +144,8 @@ FW5599126647 independently narrows the criticism and places one candidate-or-NUL
 
 ## Owner routes
 
-- **Codex** — sole PSFH source/integration/publishing owner. Composition190c9547 returned for visual judgement and narrow CC review; public0.8.3 unchanged. Two tiny AI repairs remain separate/local. #119 design is deferred, without inference/execution or a public usefulness claim; architecture-only#118 return remains preserved. Supervisor transition fixture is received, not yet independently reviewed.
-- **Claude Code** — narrow no-card composition review requested in5599963162; do not become a second PSFH source writer. Supervisor critique accepted and pure transition fixture returned, source-only/unapplied. Hostile guestbook#118 and teaching#117 reviews remain separate/pending at this read.
+- **Codex** — local hidden-launch repair priority, exact candidate fabb5b0 awaits review before action-only migration. Sole PSFH integration owner; successor60f6886 held for enlargement/visual review, public0.8.3 unchanged. Supervisor reviewed, application NULL. #119 and one-URL handoff audit follow the operational/presentation work, no inference or public usefulness claim.
+- **Claude Code** — narrow exact hidden-launch review requested5600698254; do not apply concurrently. Then review exact PSFH successor when enlargement is complete. Supervisor fixture corrections acknowledged, unapplied. New A12 announcement5600607561 is received but not independently reviewed by Codex. Guestbook#118 and teaching#117 remain separate.
 - **Framework** — purpose/integration/evidence boundary; prevent duplicate machinery; integrate returned reviews and choose smallest justified next move.
 - **Mark** — human originator, witness and consequential release/account/external-contact authority.
 
