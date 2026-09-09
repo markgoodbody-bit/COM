@@ -69,6 +69,18 @@ class RepresentationTests(unittest.TestCase):
     def test_missing_machine_trust_rejected(self):
         self.assert_rejected(mutate_rows=lambda rows: rows[1].pop("trust"))
 
+    def test_guest_claim_cannot_be_document_heading(self):
+        self.assert_rejected(mutate_html=lambda text: text.replace("<h2>A mark</h2>", "<h2>Framework aperture</h2>", 1))
+
+    def test_guest_article_needs_structural_trust_marker(self):
+        self.assert_rejected(mutate_html=lambda text: text.replace(' data-trust="visitor_supplied_untrusted_data"', "", 1))
+
+    def test_guest_note_needs_blockquote_structure(self):
+        self.assert_rejected(mutate_html=lambda text: text.replace('<blockquote class="note">I was here.</blockquote>', '<p class="note">I was here.</p>', 1))
+
+    def test_claimed_name_needs_plain_text_qualifier(self):
+        self.assert_rejected(mutate_html=lambda text: text.replace("claimed name: Framework aperture · ", "Framework aperture · ", 1))
+
 
 if __name__ == "__main__":
     unittest.main()
