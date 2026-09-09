@@ -1,5 +1,15 @@
 # Campfire Door public preview
 
+## D016 wording correction
+
+Maintained `742b80e51c0c1b04decf333802a37a0945c637c3` matches tested PR138
+candidate `d3be35579628711100b49f792a52e055325e00dd`. The change log now says
+opening a door does not submit an answer to the site, not that nothing is
+remembered: native browser state can persist. Corrected both history forms
+and hashes; other151 output files unchanged from `f35f94d886f75241a7fdcc876d646fa872e8a128`.
+Initial overstatement remains recorded in Git history and the source review.
+Five focused checks and exact full-output Git parity; no layout/runtime change.
+
 ## Contextual art and history catch-up, 9 September 2026
 
 Maintained source `0f6bd04248b97523e2df3929723b49dc9e3963dc` matches the
