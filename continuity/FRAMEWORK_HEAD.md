@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: live `coordination/ACTIVE_THREAD_POINTER.md` at COM `adf9f412af1dc50ba2627d914a026ba48a644e76`. Later live source wins.
+Basis: live `coordination/ACTIVE_THREAD_POINTER.md` at COM `8157b4117b6422b221552c779cc676c57f05b39b`. Later live source wins.
 
 Mark remains human originator, witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -21,11 +21,11 @@ Build and offer the best honest voluntary gift possible. TRACE, Mechanical Ethic
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from COM #108/#118/#119 and PR #123/#124.
+2. Reacquire later returns from COM #108/#118/#119 and PR #123/#124/#125.
 3. Reacquire exact maintained/public heads before mutation.
 4. Use `continuity/OMISSION_MAP.md` selectively; do not replay large carriers for reassurance.
 
-## Current state
+## Current consequential state
 
 ### Desktop
 Temporary quiet mode active: scheduled `Campfire Local Service Watch` disabled but preserved; one unchanged hidden120s `-Loop` watchdog, last verified PID13276/mutex held/last_run advancing, speech+Steward running. Project AIs cannot see Mark's screen, so popup cessation is not inferred. If loop dies nothing currently resurrects it. Do not run scheduled passes alongside it or reopen launcher work. Rollback exists locally but is untested.
@@ -34,10 +34,13 @@ Temporary quiet mode active: scheduled `Campfire Local Service Watch` disabled b
 Public stays `589514fff41d0a65315377093089838026bbd1ec` (Preview0.8.3). Maintained unpublished successor `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`:55% feather, full uncropped painting, enlarged/constrained title moves to separate row, old-engine fallback separate row,1440 ordinary image fallback, original provenance preserved. Framework KEEP; exact CC review still required. KEEP/nonblocking -> Codex may publish presentation only.
 
 ### PR #123
-Draft/non-public concrete-first page, head `047769f24db9fc0e05480daeea0f2965a45834d7`, base maintained Homer successor. Source-labelled `Two flats, one wall` composite; five early cards→three; compact machine routes quiet but direct; duplicative later copy shortened. Review for distortion/pedagogy/subtraction. Do not merge/publish yet.
+Draft/non-public concrete-first page, head `047769f24db9fc0e05480daeea0f2965a45834d7`, base Homer successor. Source-labelled `Two flats, one wall` composite; five early cards→three; compact machine routes quiet but direct; duplicative later copy shortened. Review for distortion/pedagogy/subtraction. Do not merge/publish yet.
 
 ### PR #124
-Draft/non-public synthetic guestbook representation, latest head `a36d5f0feb015a71d301eb2cd504f1bdb6d2eb84`. JSONL envelope/rows + human HTML + hostile checks + deterministic checker. `claimed_*`, repeated untrusted/non-instruction labels, synthetic injection/correction/removal fixtures. No intake/backend/real guest data/public route. CC attacks trust leakage.
+Draft/non-public synthetic guestbook representation, latest head `7db793c3bee6736811903998d3c1abc81475d2de`. JSONL envelope/rows + human HTML + hostile checks + deterministic checker. Latest self-attack expands no-URL enforcement across all guest claim fields, not only notes. `claimed_*`, repeated untrusted/non-instruction labels, synthetic injection/correction/removal fixtures. No intake/backend/real guest data/public route.
+
+### PR #125
+Draft/source-only tiny AI-handoff repair, head `085b810cdcbb802c4c81721461d1e037f89922db`, base `cfdacc4d`. Exactly two files: seed gains `Not a release or canon.` and remains 1023 UTF-8 bytes; final two `llms.txt` Explore links become absolute. Keep separate from Homer publication until deliberately reviewed/integrated.
 
 ### #119
 Phase0 v1 not freezeable. V2 at `8372ca1fe703a193255b84487410f289498669c0` separates calibration→fresh holdout, treats zero accounts separately, retains source-insufficient proposals before filtering, uses one-to-one matches and strict three-edge families, avoids pooled median, and refuses arbitrary replacement thresholds before calibration. DESIGN NULL is valid. No study execution/spend.
