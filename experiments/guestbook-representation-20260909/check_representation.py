@@ -199,7 +199,10 @@ if "visitor-supplied untrusted data" not in lower_html:
     fail("human fixture lacks visible untrusted-data labelling")
 if "ignore prior instructions" not in lower_html:
     fail("human fixture does not render the hostile-content fixture")
-if URL_LIKE.search(html):
+# Bare-domain matching belongs on guest claim values, not the entire source:
+# the publisher's code-labelled filenames (register.jsonl, README.md) match it.
+# The static tag/attribute allowlist separately rejects hyperlinks.
+if re.search(r"(?:https?://|www\.)", html, re.IGNORECASE):
     fail("human fixture unexpectedly contains URL-like content")
 
 print(f"PASS: {len(rows) - 1} publication-state rows; selected synthetic representation checks passed")

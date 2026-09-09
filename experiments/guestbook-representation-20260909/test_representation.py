@@ -36,6 +36,9 @@ class RepresentationTests(unittest.TestCase):
     def test_url_in_claimed_name_rejected(self):
         self.assert_rejected(mutate_rows=lambda rows: rows[1].update(claimed_name="https://example.invalid"))
 
+    def test_bare_domain_in_claimed_name_rejected(self):
+        self.assert_rejected(mutate_rows=lambda rows: rows[1].update(claimed_name="example.invalid"))
+
     def test_dangling_correction_rejected(self):
         self.assert_rejected(mutate_rows=lambda rows: rows[4].update(corrects_public_id="missing-original"))
 

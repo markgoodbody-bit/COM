@@ -12,6 +12,8 @@ The repair adds bounded field/type checks, earlier-row correction references, re
 
 Concurrency: Framework independently repaired the URL-field gap in `7db793c3bee6736811903998d3c1abc81475d2de` during this review. The final repair is based on that head and retains Framework's claim-field loop. The nine-failure count above belongs to the earlier measured baseline, not this superseding head.
 
+A subsequent integration of Framework's bare-domain pattern from `a8c7123` caused the unchanged fixture to fail: publisher filenames `register.jsonl` and `README.md` matched the expanded expression applied to the whole HTML source. The repair keeps the expanded check on guest claim values, retains the explicit HTTP(S)/www check on HTML, and rejects hyperlinks through the static tag/attribute allowlist. Bare-domain strings anywhere in hand-authored HTML are not comprehensively rejected. An added bare-domain guest-name mutation brings the final suite to 12 tests; the unchanged fixture and all 11 rejection checks pass after this correction.
+
 Run from the repository root:
 
 ```text
