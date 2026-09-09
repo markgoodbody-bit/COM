@@ -8,7 +8,7 @@ Please Start From Here · Reader change log · Edition 0.12 · 9 September 2026
 
 The site now has a browser-tab icon and a Works library with five selected works, their dedicated pages, credits and source records. Works is an optional collection, not a ranking, representative survey or evidence for TRACE or Mechanical Ethics.
 
-The human entrance gives the complete Homer image more space and offers four optional ways in. Just give me the map bypasses the artwork and reaches the reading list directly. Nothing is submitted or remembered when a door is opened.
+The human entrance gives the complete Homer image more space and offers four optional ways in. Just give me the map bypasses the artwork and reaches the reading list directly. Opening a door does not submit an answer to the site.
 
 Explore opens with Anna Atkins's Ulva lactuca; Reachable futures opens with Shen Zhou's Anchorage on a rainy night. Complete supplied images are fitted without cropping or distortion; titles stay outside the artwork. Each encounter links to its canonical Works page. The placement is our choice, not a claim about the artist's meaning or endorsement.
 
