@@ -8,6 +8,8 @@ Before: the full-width image could extend below the opening viewport; large
 lettering and a feathered dark backing competed with it. After: image width is
 bounded by both screen dimensions, the title is small with a warm italic Here,
 the backing is removed, and the existing guiding question follows the artwork.
+The later [top-edge handoff](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5609413248)
+moves visible navigation after the artwork; the focusable skip link stays first.
 Phones do not receive a forced full-screen blank pause. Short viewports put the
 title after the image. No image bytes, source accounts or reading prose change.
 

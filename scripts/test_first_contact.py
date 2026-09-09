@@ -89,8 +89,10 @@ class FirstContactTests(unittest.TestCase):
         # Mark's composition correction puts intact provenance after the image.
         self.assertLess(self.html.index('<img'), self.html.index('<figcaption'))
         # The editorial revision moves the same art into the opening composition.
-        # Direct reading routes precede it; the concrete-first choices follow it.
-        self.assertLess(self.html.index('aria-label="Reading routes"'), self.html.index('<figure'))
+        # The artwork starts at the top edge. Navigation follows; keyboard skip
+        # remains before the painting and the optional choices follow it.
+        self.assertLess(self.html.index('class="skip"'), self.html.index('<figure'))
+        self.assertLess(self.html.index('<figure'), self.html.index('aria-label="Reading routes"'))
         self.assertLess(self.html.index('<figure'), self.html.index('class="first-movements"'))
         navigation = self.html.split('aria-label="Reading routes"')[1].split('</nav>')[0]
         for target in ['/explore/', '/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf', '/discussion/']:
@@ -161,8 +163,8 @@ class FirstContactTests(unittest.TestCase):
         self.assertNotIn('mask-image:', css)
         self.assertNotIn('background: #141b20;', css)
         self.assertNotIn('object-fit: cover', css)
-        self.assertIn('calc((100svh - 9rem) * 3801 / 2368)', css)
-        self.assertIn('.art-hero { min-height: 0; margin-block: .5rem 2rem; }', css)
+        self.assertIn('calc((100svh - 5rem) * 3801 / 2368)', css)
+        self.assertIn('.art-hero { min-height: 0; margin-block: 0 2rem; }', css)
         self.assertIn('font-size: clamp(1.125rem, 2.3vw, 2rem)', css)
         self.assertIn('.hero-heading h1 em { color: #ecd3a8;', css)
         hero = self.html.split('class="art-hero"')[1].split('class="arrival"')[0]
