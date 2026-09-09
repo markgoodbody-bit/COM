@@ -17,48 +17,37 @@ Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, tests, receiver
 ## Immediate order
 
 1. **Homer:** maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`; Framework KEEP; exact CC review still required before public publication. Public remains `589514fff41d0a65315377093089838026bbd1ec`.
-2. **PR #123:** review the non-public concrete-first human prototype, head `047769f24db9fc0e05480daeea0f2965a45834d7`.
-3. **PR #124:** review the synthetic guestbook representation, latest head `a36d5f0feb015a71d301eb2cd504f1bdb6d2eb84`.
-4. **#119:** attack Phase-0 v2 at `8372ca1fe703a193255b84487410f289498669c0`; no study execution.
-5. Speech-supervisor fixture remains evidence only; no live successor.
+2. **PR #123:** non-public concrete-first human prototype, head `047769f24db9fc0e05480daeea0f2965a45834d7`.
+3. **PR #124:** synthetic guestbook representation, head `7db793c3bee6736811903998d3c1abc81475d2de`.
+4. **PR #125:** three tiny AI-handoff repairs, head `085b810cdcbb802c4c81721461d1e037f89922db`; source-only/draft.
+5. **#119:** Phase-0 construct v2 at `8372ca1fe703a193255b84487410f289498669c0`; no study execution.
+6. Speech-supervisor fixture remains evidence only; no live successor.
+
+No counterpart review landed between the prior pointer and the latest COMSYNC. `PUBLIC_GATE_HELD != ALL_WORK_BLOCKED`.
 
 ## Desktop quiet mode
 
 The two-minute scheduled `Campfire Local Service Watch` is **disabled but preserved**. One unchanged hidden Windows PowerShell watchdog loop runs `-Loop -IntervalSeconds 120`; last verified PID `13276`, mutex held, `last_run_utc` advanced through at least 11:45:05Z, speech and Steward running during verification.
 
-Ceiling: if the loop dies, nothing currently resurrects it. Do not run the scheduled task alongside it. Do not implement CC's hourly-resurrector idea yet and do not reopen rejected launcher work.
+Ceiling: if the loop dies, nothing currently resurrects it. Do not run the scheduled task alongside it. Do not implement the hourly-resurrector idea yet and do not reopen rejected launcher work.
 
-Project AIs cannot see Mark's desktop, so recurring-popup cessation remains a user-observed fact rather than an inferred technical claim.
-
-Rollback material is preserved under `C:/Users/markg/Downloads/Campfire-quiet-mode-20260909/`; rollback has not been exercised.
+Project AIs cannot see Mark's desktop, so popup cessation remains a user-observed fact rather than an inferred technical claim. Rollback material remains under `C:/Users/markg/Downloads/Campfire-quiet-mode-20260909/`; rollback has not been exercised.
 
 `TEMPORARY_QUIET_MODE != PRODUCTION_ARCHITECTURE`
 
 ## Homer successor
 
-Maintained `cfdacc4d` uses:
-- full uncropped Winslow Homer *Camp Fire*;
-- high-left canopy title only where robust;
-- 55% feathered scrim rather than hard card;
-- inline-size container that moves enlarged/constrained text to a separate row;
-- separate-row fallback for unsupported container/subgrid/mask engines;
-- pinned1440 ordinary image fallback with museum original preserved/hash-bound;
-- H1 and figure as siblings.
+Maintained `cfdacc4d` uses the full uncropped Homer painting, high-left title only where robust, a 55% feathered scrim, container-driven separate-row fallback for enlarged/constrained text, separate-row degradation for unsupported engines, pinned1440 image fallback, preserved museum master/provenance, and H1/figure siblings.
 
-Codex reports 11 Node +20 Python tests and115 local deliveries passed. Native browser zoom/universal accessibility is not claimed. Framework KEEP; CC exact review pending. If CC returns KEEP/nonblocking, Codex has standing authority to publish **presentation only** and read back.
+Codex reported 11 Node +20 Python tests and115 local deliveries passed. Native browser zoom/universal accessibility is not claimed. Framework KEEP; exact independent CC review pending. KEEP/nonblocking -> Codex may publish **presentation only** and read back under standing authority.
 
 ## PR #123 — concrete-first human opening
 
-Draft/non-public, head `047769f24db9fc0e05480daeea0f2965a45834d7`, base `cfdacc4d`.
+Draft/non-public, head `047769f2`, base `cfdacc4d`.
 
-Implements rather than merely describes the candidate:
-- clearly labels `Two flats, one wall` as a Mechanical Ethics **Composite Scene**;
-- preserves source correction that downstairs inspection is **offered** after another tenancy is found and the family leaves before entry;
-- does not import the separate 1:17 miniature as interlude fact;
-- does not assert one uniquely knowable irreversible instant;
-- reduces five early choices to three: situation / possibility / explore-question-disagree;
-- keeps compact text/machine routes directly reachable in a quieter technical handoff;
-- shortens duplicative `Why this exists` copy.
+Implements a source-labelled Mechanical Ethics **Composite Scene** `Two flats, one wall`, preserves that downstairs inspection is **offered** after another tenancy is found and the family leaves before entry, does not import the separate1:17 miniature, and does not invent a unique irreversible instant.
+
+The opening moves from five choices to three: situation / possibility / explore-question-disagree. Compact machine/text routes remain direct but visually quieter, and duplicative `Why this exists` copy is shortened.
 
 Review for source distortion, moralisation, excessive pedagogy and whether subtraction went far enough. Do not merge/publish yet.
 
@@ -66,50 +55,47 @@ Review for source distortion, moralisation, excessive pedagogy and whether subtr
 
 ## PR #124 — guestbook representation only
 
-Draft/non-public, latest head `a36d5f0feb015a71d301eb2cd504f1bdb6d2eb84`.
+Draft/non-public, head `7db793c3bee6736811903998d3c1abc81475d2de`.
 
-Synthetic files only under `experiments/guestbook-representation-20260909/`:
-- representation contract;
-- JSONL envelope + guest/publication-state rows;
-- no-script human rendering;
-- hostile representation checks;
-- deterministic `check_representation.py` enforcing core fixture invariants.
+Synthetic representation only: contract, JSONL envelope/rows, no-script human rendering, hostile fixture checks and deterministic `check_representation.py`. No form, endpoint, provider, database, mailbox, credential, real guest data, public route or `gh-pages` wiring.
 
-Guest assertions use `claimed_*`. Every guest machine row repeats `visitor_supplied_untrusted_data`, `project_instruction:false`, and `identity_verified:false`. Fixtures cover a clearly internal Framework development mark, instruction-shaped text, correction and a removal state whose current export contains no removed guest name/kind/note.
+Guest claims remain `claimed_*`; machine rows repeat untrusted-data/project-instruction/identity boundaries. Fixtures cover internal Framework development mark, instruction-shaped visitor text, correction and true removal representation.
 
-No form, endpoint, provider, database, mailbox, credential, real guest data, public route or `gh-pages` wiring. Public Git history remains rejected as eventual personal guest-data storage.
+Latest self-attack fixed the checker: the no-URL invariant now applies across **all guest claim fields**, not only `claimed_note`. Public Git history remains rejected as the eventual personal guest-data store.
 
 `GUEST_ENTRY != SITE_INSTRUCTION`
 
+## PR #125 — tiny AI handoff repairs
+
+Draft/source-only, head `085b810c`, base `cfdacc4d`. Compare against base is exactly two files:
+- `public/seed.txt`: + `Not a release or canon.`; 999 -> **1023 UTF-8 bytes**, still below1KiB;
+- `public/llms.txt`: final two Explore links changed from relative to absolute URLs.
+
+No other source/content/layout/provenance/site-edition change. Keep this separate from Homer publication; deliberately integrate/rebase only after review.
+
+`TINY_REPAIR != BUNDLE_PERMISSION`
+
 ## #119 — Phase-0 construct v2
 
-Public practical advantage remains unproven.
+Public practical advantage remains unproven. V1 was not freezeable due undefined empty scoring, zero-case dominance, disappearing source-sufficiency denominator, undefined matcher universe and inconsistent family formation.
 
-Codex showed v1 was not freezeable: undefined empty-set scoring, zero-account dominance, disappearing source-sufficiency denominator, undefined matcher universe and inconsistent three-builder family formation.
+V2 separates disposable calibration from fresh holdout; reports `ALL_ZERO / MIXED_ZERO / ALL_NONZERO` separately; retains outside-fact-dependent points before filtering; uses one-to-one matcher outputs; requires all three accepted pair edges for a three-builder family; and reports per-account coverage/unmatched/uncertain material rather than one pooled median.
 
-Framework v2 `8372ca1f...`:
-- separates disposable calibration from later fresh holdout;
-- reports `ALL_ZERO / MIXED_ZERO / ALL_NONZERO` separately;
-- retains outside-fact-dependent points before filtering;
-- uses one-to-one matcher outputs rather than an easy-negative Cartesian matrix;
-- requires all three accepted pair edges for a three-builder family; no transitive closure;
-- reports per-account coverage/unmatched/uncertain material rather than one pooled median;
-- deliberately refuses to invent replacement numeric thresholds before calibration.
-
-If calibration cannot earn a simple freezeable survival rule, return DESIGN NULL. No accounts selected, no inference/recruitment/spend.
+It deliberately refuses replacement numeric pass thresholds before calibration. If calibration cannot earn a simple freezeable survival rule, return DESIGN NULL. No accounts selected, inference, recruitment or spend.
 
 `CALIBRATION_SET != HOLDOUT`  
 `SCORABLE != USEFUL`
 
 ## Speech supervisor
 
-CC repaired its transition fixture at `e4b7e72`, making cause/premise/threshold/last-confirmed checks more truthful and exposing further wrong expected values. Still unearned: overnight root cause, Windows locking mechanism and candidate grace values. No live application/fault injection.
+CC repaired its transition fixture at `e4b7e72`, making cause/premise/threshold/last-confirmed checks more truthful and exposing further wrong expected values. Still unearned: overnight root cause, Windows locking mechanism and grace values. No live application/fault injection.
 
 ## Current project heads / gates
 
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
-Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.
+Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.  
+COM main before this pointer write: `bb530a57dde6756ff0e104da1031e66cd34ba362`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
 
