@@ -1,8 +1,8 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-09 12:30 Europe/London
-Basis before this write: COM main `a95e561f12b398d78acc26a2ccd021b92a7db8f1`; COM #108 through Framework `5600887969` (with Codex correction `5600739966`); #118 through Framework `5600565515`; #119 through Framework `5600671017`; PSFH maintained `60f6886542bb5c290180e989eb1bbdfa6acad11a`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`; rejected hidden-launch PR #214 head `ca57039b69eae271e1633c5f8b4d36f03c91debb`. Later live source wins.
+Updated: 2026-09-09 12:36 Europe/London  
+Basis: COM #108 through FW `5601122062` / Codex `5601106358`; #118 through FW `5600565515`; #119 through FW `5601095493`; PSFH maintained `60f6886542bb5c290180e989eb1bbdfa6acad11a`; public `gh-pages` `589514fff41d0a65315377093089838026bbd1ec`. Later live source wins.
 
 ## Purpose
 
@@ -15,100 +15,94 @@ Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, Square, tests, 
 `BETTER_OWNER_FOUND = ROUTE_IMPROVED`  
 `ONE_INTEGRATION_OWNER != ONE_THINKING_APERTURE`
 
-## Immediate execution order
+## Immediate order
 
-1. Resolve Mark's two-minute desktop console flash without weakening watchdog semantics.
-2. Finish the Homer high-left/feathered presentation and publish only after enlargement/reflow + exact review clears.
+1. Finish the Homer high-left/feathered presentation; publish only after bounded reflow/text-resize + exact review clears.
+2. Then prototype the concrete-first human sequence (`Two flats, one wall` + simplified human movements), non-public first.
 3. Repair the speech-supervisor decision fixture before any live successor.
-4. Then build the guestbook representation prototype and #119 Phase-0 construct-validity design.
+4. Build the guestbook representation prototype and #119 Phase-0 construct-validity design when the presentation lane is clear.
 
-Do not create activity merely to fill the queue.
+The desktop-flash repair line is CLOSED FOR NOW. Do not create activity merely to fill the queue.
 
-## Desktop flash — WScript candidate rejected
+## Desktop flash — known unresolved nuisance / repair line NULL
 
-Latest bounded result: the in-process GUI-host predecessor `77befe4` and
-invocation-operator successor `e7eb941d53295b6460bd401719015ee760e2921e` both
-return1 for explicit exit37, with SetShouldExit=False. The successor implements
-FW `5601044283`'s parameterised AddScript/file-invocation test. Receipt and scope
-are in `tools/local_service_watchdog/inprocess/REVIEW.md` on
-`codex/watch-inprocess-host-20260909`. NULL / STOP THIS REPAIR LINE FOR NOW.
-Later scheduler/intentional-child gates were not run after the first discriminator
-failed. No installation; the desktop flash remains unresolved. The investigation
-requirements below are preserved context, not authority to keep expanding it.
+Mark still sees a brief console flash at roughly the two-minute cadence of `Campfire Local Service Watch`.
 
-Mark reports a visible console flash roughly every two minutes. Installed `Campfire Local Service Watch` already uses direct `powershell.exe` with `-WindowStyle Hidden`, PT2M repetition / PT1M execution limit, Interactive/Limited ordinary-user context. Missing flags were not the cause.
+The live task remains unchanged: direct Windows PowerShell, `-WindowStyle Hidden`, PT2M repetition / PT1M execution limit, ordinary Interactive/Limited user context. The flash is annoying, but this is the safer known state.
 
-Codex built WScript hidden-launch candidate `fabb5b0bcc205a3ec10baca97bad7a06af33cc40`; normal host probe genuinely preserved synchronous wait and child exit37. Framework authorised one disposable Task Scheduler timeout probe.
+Measured failed alternatives:
+- WScript hidden synchronous wrapper preserved normal child exit status but **failed Task Scheduler timeout containment**: scheduler stopped WScript while PowerShell child survived and completed. PR #214 closed unmerged at `ca57039b...`.
+- `conhost --headless` lost child failure status in a harmless probe.
+- GUI in-process Windows PowerShell host (`77befe4...`, successor `e7eb941...`) reproduced target `$PSScriptRoot`/`$PSCommandPath`, required commands, normal0 and terminating-throw nonzero, but failed arbitrary explicit `exit37` semantics; one Windows PowerShell harness attempt also stalled for unknown reason before a later diagnostic completed under PS7.
 
-The falsifier fired at successor `ca57039b69eae271e1633c5f8b4d36f03c91debb`:
-- cloned disposable task used same ordinary Interactive/Limited principal/settings with a 10s execution limit;
-- WScript + harmless PowerShell child were both observed while task Running;
-- scheduler stopped WScript at the limit, but PowerShell child survived;
-- child later wrote its natural-completion sentinel;
-- temporary task/files cleaned up; live task XML hash stayed unchanged;
-- live watcher was never invoked or mutated.
+Framework stopping rule `5601122062`: **do not build a fourth launcher, job-object scheme, mutex workaround, service, S4U/SYSTEM task or second scheduler for this cosmetic defect.** Do not weaken `ExecutionTimeLimit` or `IgnoreNew`. Reopen only if a materially simpler supported mechanism appears or the nuisance becomes important enough to justify new scope.
 
-PR #214 is CLOSED UNMERGED / REJECTED. Do not install WScript and do not weaken `ExecutionTimeLimit` or `IgnoreNew`.
+A separate live watchdog observation is useful bounded evidence: 11:12:03Z Steward UNREACHABLE/AWAITING_CONFIRMATION; 11:14:03Z RESTARTED; 11:16:01Z RUNNING. This is one real exercise of the two-observation rule, not universal reliability or evidence about the separate speech-supervisor issue.
 
-A generic kill-on-close Job Object is also not the preferred next mechanism: the watcher deliberately starts long-lived supervisor/steward processes during recovery, and job inheritance could kill the services when the short watcher exits.
+`ANNOYING_KNOWN_STATE > QUIET_UNTRUSTED_STATE`
 
-**Next bounded candidate:** Codex may investigate a tiny GUI-subsystem executable hosting Windows PowerShell 5.1 **in-process** via `System.Management.Automation`/runspace. No live install yet. Required disposable evidence before live use:
-- no-console GUI process shape;
-- exact script exit-code propagation (e.g. exit37);
-- terminating error => nonzero;
-- `$PSScriptRoot`, path semantics and required built-in cmdlet/module behavior;
-- short Task Scheduler ExecutionTimeLimit terminates an in-process sleeping script with no orphan watcher child;
-- deliberately started harmless service-like child can survive normal short-host completion when intended, then is cleaned up.
-
-If in-process hosting cannot reproduce ordinary watcher semantics cleanly, return NULL; do not grow a service/second scheduler/privileged principal for this cosmetic defect.
-
-`FALSIFIER_FIRED -> CANDIDATE_DIES`  
-`WATCHDOG_RUN != DESKTOP_INTERRUPTION`  
-`INTENTIONAL_SERVICE_LIFETIME != WATCHER_LIFETIME`
-
-## PSFH Homer opening
+## PSFH Homer opening — immediate priority
 
 Public remains Preview **0.8.3** at `589514fff41d0a65315377093089838026bbd1ec`.
 
 Maintained source remains UNPUBLISHED `60f6886542bb5c290180e989eb1bbdfa6acad11a` on `codex/door-maintained-source-20260908`.
 
 Accepted composition:
-- Winslow Homer's full uncropped *Camp Fire*;
+- full uncropped Winslow Homer *Camp Fire*;
 - title/question high-left in dark canopy, not over people/fire;
 - provenance below/right on wide screens, normal flow on narrow screens;
-- soft feathered readability field, not old hard black card;
+- feathered readability field, never the old hard black card;
 - separate title row where overlay cannot remain robust;
-- 720/1440 responsive copies; pinned 1440 is ordinary `src` fallback; unchanged museum original remains served/hash-bound/linked as provenance;
+- 720/1440 responsive copies; pinned1440 ordinary `src` fallback; museum master remains served/hash-bound/linked as provenance;
 - H1 and artwork figure remain siblings.
 
-Current build evidence after fallback repair: 11 Node + 20 Python checks and 115 exact local deliveries pass. Public has not moved.
+Current local checks after fallback repair: 11 Node + 20 Python +115 exact local deliveries pass. Public has not moved.
 
-Remaining gate: meaningful enlarged-text/reflow observation at representative desktop widths plus narrow fallback; inspect scrim coverage, clipping/overflow, people/fire obstruction and visual weight. Framework `5600822527` also requests a browser-only `.55` black scrim comparison: under the same sRGB bound, 55% black over even white gives ~4.76:1 with white text. Prefer 55% over 60% if full glyph/plateau coverage remains >=4.5; do not go lower without a fresh bound. If enlargement breaks overlay geometry, switch that state to the existing separate row rather than darken more painting.
+Remaining bounded visual/accessibility work from FW `5601044283`:
+- **page-zoom layout proxy:** half CSS viewport width, explicitly labelled a responsive proxy rather than observed zoom; expected separate title row, complete image/provenance, no overflow;
+- **text-resize stress:** disposable browser-only 200% root text-size override at wide viewport; inspect clipping, reading order, heading/provenance collision and people/fire obstruction;
+- compare current 60% feathered plateau against a test-only **55%** plateau; 55% black over pure white has a calculated ~4.76:1 white-text floor before shadow. Prefer the lighter treatment if geometry/legibility remain sound. Never darken beyond60 to rescue a layout.
 
-Codex did not establish actual browser zoom: shortcuts left measured viewport,
-DPR and font sizes unchanged. FW `5601044283` now permits two explicitly labelled
-proxies: half-width reflow and a disposable 200% root-text-size stress, plus a
-test-only55% scrim comparison. These have not yet been completed. Neither proxy
-is a genuine zoom observation or universal accessibility/conformance evidence.
+If enlargement makes the overlay intrusive, use the separate row for that state. CC gives one exact-successor review; KEEP/nonblocking residuals -> Codex may publish the Homer successor alone under existing authority.
 
-CC then does one narrow exact-successor review. If KEEP/nonblocking residuals, existing authority allows Codex to publish the presentation successor without bundling guestbook/usefulness/AI-route work.
-
-`GOOD_COMPOSITION + ROBUST_READABILITY`  
 `ENLARGEMENT_FAILURE -> SEPARATE_ROW, NOT_HEAVIER_CARD`
+
+## Next human editorial layer — concrete first, source only
+
+Two non-public Framework artifacts are now preserved:
+- `dd09c9e7085a2856cf263aad0496f6d82ea52ced` — `evidence/PSFH_EDITORIAL_CANDIDATE_TWO_FLATS_ONE_WALL_20260909.md`;
+- `a348ccfa2f81a93bd532e26c03935ed9623ce2d2` — `evidence/PSFH_EDITORIAL_SEQUENCE_CONCRETE_FIRST_20260909.md`.
+
+Underlying material is explicitly a **Mechanical Ethics Composite Scene**, not a documented tenant case.
+
+Candidate sequence after Homer, for ONE non-public prototype:
+
+```text
+human art + invitation
+-> short welcome
+-> one concrete composite scene: Two flats, one wall
+-> 1–2 questions
+-> three human movements:
+   situation / possibility / explore-question-disagree
+-> quiet but direct machine/technical handoff
+-> optional deeper loop / ME / TRACE / neighbours
+-> provenance / disagreement / leave
+```
+
+The current five-card first-choice grid is probably too abstract/technical early. `I want the compact source` should remain directly reachable but not compete as an ordinary human card. Adding the story creates a subtraction obligation elsewhere; page length is not the goal.
+
+`STORY -> QUESTION -> OPTIONAL_DEPTH`
+`ADD_STORY -> CONSIDER_SUBTRACTION_ELSEWHERE`
+
+Do not bundle this with the Homer publication candidate.
 
 ## Speech supervisor — adverse installed shape, successor NULL
 
-Separate live Steward observation: local watchdog ledger records UNREACHABLE /
-AWAITING_CONFIRMATION at11:12:03Z, RESTARTED at11:14:03Z and RUNNING at11:16:01Z.
-Codex independently reread these entries after CC `5601044631`. This supports
-the observed confirmation/recovery sequence, not its underlying cause, exact
-downtime, or validation of the speech-supervisor successor below.
+Separate from scheduled-task flash. Five null-age restart transitions have been reread through 09:57:07Z; cause and total outage remain unknown.
 
-Separate from the scheduled-task flash. Five null-age restart transitions have been reread through 09:57:07Z; cause and total outage remain unknown.
+Installed source still permits one unknown/unavailable heartbeat read to become a restart once process age exceeds the stale threshold. This is an adverse possibility, not proof any observed restart was false.
 
-Codex independently attacked CC fixture `0d87ae2`; application is NULL because the fixture used the wrong 45s-vs-installed120s boundary, did not actually test cause labels/premises, and used a different last-valid clock than claimed. The installed one-unknown-read restart possibility remains material, but no valid successor exists yet.
-
-Do not apply current fixture or fault-inject the live worker.
+Codex independently rejected CC fixture `0d87ae2` for application: wrong 45s-vs-installed120s boundary, cause labels/premises not actually tested, and last-valid clock semantics differ from the claim. No valid successor exists. Do not apply or fault-inject the live worker.
 
 `ADVERSE_INSTALLED_SHAPE != VALID_SUCCESSOR`
 
@@ -116,61 +110,70 @@ Do not apply current fixture or fault-inject the live worker.
 
 Status: DESIGN / SOURCE-ONLY REPRESENTATION / NO PUBLIC WRITE / NOT A FORUM.
 
-Integrated contract:
-- sparse history can still be valuable; no numeric adoption target;
+Integrated floor:
+- sparse history may still matter; no adoption/count target;
 - guest bytes never share root/`llms.txt`/`seed.txt`/manifest/normal Explore trust region;
-- visitor fields use `claimed_*`; client-declared encounter metadata is claimed, not proven;
+- visitor fields use `claimed_*`; encounter claims are claimed, not proven;
 - no links/HTML/Markdown/attachments/autolinking in v0;
-- true removal must remain possible; public Git history is not final personal-data store;
+- true removal remains possible; public Git history is not final personal-data store;
 - no signature/identity theatre; no visitor counter as reach/success.
 
-Next build after immediate priorities: isolated NON-PUBLIC human HTML + boring machine export (JSONL reasonable) using synthetic hostile fixtures and explicit untrusted-data envelope. No form, endpoint, provider, mailbox, credential or gh-pages route. CC attacks trust leakage afterwards.
+Next build when immediate lanes clear: isolated NON-PUBLIC human HTML + boring machine export using synthetic hostile fixtures and explicit untrusted-data envelope. No form, endpoint, provider, mailbox, credential or public route. CC attacks trust leakage afterwards.
 
-`GUEST_ENTRY != SITE_INSTRUCTION`  
+`GUEST_ENTRY != SITE_INSTRUCTION`
 `SUBMISSION_RECEIPT != PUBLICATION`
 
 ## Usefulness / falsifiability — #119
 
 Public statement remains correct: practical advantage over careful ordinary reasoning or established methods has not been demonstrated.
 
-First empirical candidate:
+First empirical candidate remains narrow detection:
 > For a reader examining a written account of a bounded real situation, working through correction-window questions surfaces irreversibility points — what becomes hard to undo, and when — that the same reader does not surface under a matched generic structured-risk prompt.
 
-**Phase 0 first:** can independent reference sets of irreversibility points agree enough that recall/precision are meaningful? Codex designs selection rule, independent reference protocol, matching/disagreement record and predeclared agreement decision before output. If construct fails, stop with informative NULL before recruitment/spend. Mark must not become hidden gold standard.
+### Phase 0 first — is the outcome construct scoreable?
+Framework candidate preserved at `ff54721de507d006212d17f201c6b287a8cfb75d`:
+`evidence/PSFH_PHASE0_IRREVERSIBILITY_CONSTRUCT_CANDIDATE_20260909.md`.
 
-Only if Phase0 survives: matched structured-risk comparator; primary recall; secondary precision/inflation; separate `AVAILABLE -> USED -> HELPFUL` evidence; no private chain-of-thought requirement.
+Design input, not frozen protocol:
+- mechanically select heterogeneous public accounts before substantive reading;
+- 3 independent reference builders, no PSFH/TRACE vocabulary, bounded point count;
+- each point names state/option, threshold/event and frozen-source anchor;
+- 2 blind point matchers, one-to-one matching;
+- consensus reference is primarily a **recall** denominator;
+- `NOT_IN_REFERENCE_SET != FALSE_POSITIVE`: later precision/inflation should be judged directly against source evidence so novel valid points are not punished for reference-builder omission;
+- zero-point / insufficient-evidence returns are allowed;
+- provisional numeric agreement floors must be attacked before pre-registration, not inherited by convention.
+
+If construct reliability fails, STOP before recruitment/spend. Mark is not hidden gold standard.
+
+### Neighbouring studies — exact citations, no validation transfer
+- Kornowicz arXiv `2411.08583` is a 2024 German-layperson income-decision experiment; no significant performance advantage and longer evaluative-support time. Transfer to PSFH is only a hypothesis.
+- The previously unnamed 72-resident study is now pinned exactly: Lai et al., **The ABCD of AI-Enabled Clinical Reasoning**, *Journal of Surgical Education* (2026), DOI `10.1016/j.jsurg.2026.103963`; 72 surgical residents, eight standardized gastric-cancer cases, ABCD-guided vs unguided DeepSeek, blinded expert decision-quality rating. Evidence note `afc9b87cdc69f6cb59258d5a584b03819c701cd8`. Useful neighbouring comparison design, **not PSFH evidence**.
 
 CC PR117 A12 remains diagnostic only. `EMPIRICAL 0` is not a release failure.
 
-Research corrections from Codex `5600739966`:
-- Ahrefs 97% no-request result is May-2026 observation of 137,210 **customer domains**, not a representative census of the web; it supports caution about passive discovery, not proof one-URL handoff fails or a cross-study publishing/consumption ratio.
-- Kornowicz arXiv 2411.08583 is a 2024 German-layperson binary-income experiment; no significant performance advantage was found and evaluative support took longer. Do not claim limited engagement as the sole failure mechanism or treat it as PSFH validation.
-- unnamed 72-resident study has no adopted evidentiary standing until exact citation is recovered.
-
-`SOURCE_CORRECTION > CONVENIENT_NARRATIVE`  
-`NULL != FAILURE_TO_REPORT`
+`REFERENCE_SET != WORLD`
+`SCORABLE != USEFUL`
+`NEIGHBOURING_DESIGN != PSFH_EVIDENCE`
 
 ## AI handoff
 
-Optimise for **human gives one URL -> unfamiliar agent or model or tool can orient**. Root HTML must work even if `llms.txt` is never requested. Keep machine surface compact; no sixth protocol and no obedience/alignment claim.
+Optimise for **human gives one URL -> unfamiliar agent/model/tool can orient**. Root HTML must work even if `llms.txt` is never requested. Keep machine surface compact; no sixth protocol and no obedience/alignment claim.
 
 Earlier tiny machine repairs remain separate until deliberately integrated: `seed.txt` release/canon ceiling and absolute Explore links in `llms.txt`.
 
 ## External-world learning / better owners
 
-Preserved COM evidence:
-- `evidence/PSFH_FIELD_CASE_AISI_UNSANCTIONED_AGENT_20260909.md`;
-- `evidence/PSFH_NEIGHBOUR_OWASP_AGENT_CONTROL_20260909.md`;
-- `evidence/PSFH_FIELD_CASE_THREE_AGENT_BOUNDARIES_20260909.md`.
+Preserved COM evidence includes AISI unsanctioned-agent case, OWASP Agent Control Standard as a stronger runtime-control owner, and the three-agent-boundaries comparison.
 
-Runtime enforcement, least privilege, tool scopes and monitoring belong to specialist security owners. Possible PSFH value is mechanism differentiation and situated reasoning/routing, not renaming security engineering.
+Runtime enforcement/least privilege/tool scopes belong to specialist security owners. Possible PSFH contribution is mechanism differentiation and situated reasoning/routing, not renaming security engineering.
 
-`SAME_HEADLINE != SAME_MECHANISM`  
+`SAME_HEADLINE != SAME_MECHANISM`
 `DIFFERENT_CAUSE -> DIFFERENT_CORRECTION`
 
 ## Current project heads / ceilings
 
-Freshly checked this sync:
+Freshly checked 9 September:
 - TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b` — unchanged; no release/canon inference.
 - Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058` — unchanged; no release/canon inference.
 - Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca` — unchanged.
@@ -179,12 +182,12 @@ No current work authorises TRACE/ME release/canon, Campfire Production adoption,
 
 ## Owner routes
 
-- **Codex:** investigate one in-process no-console host candidate; finish Homer enlargement/visual successor + publish if cleared; later repair supervisor fixture; then guestbook representation and #119 executable design.
-- **Claude Code:** independent attack/review of in-process host, Homer successor, supervisor/guestbook/#119; not second PSFH integration owner.
-- **Framework:** coordination lead/integrator; purpose, outside evidence, product judgement, consequential gate selection. Do not duplicate engineering/review merely for activity.
-- **Mark:** originator/witness/consequential authority; ordinary reversible decisions stay with team.
+- **Codex:** finish Homer bounded visual successor + publish if cleared; then concrete-first human prototype; later repair supervisor fixture, guestbook representation and #119 executable design.
+- **Claude Code:** Homer exact-successor review next; later independent attacks on supervisor/guestbook/#119. Do not become second PSFH integration owner.
+- **Framework:** coordination lead/integrator; purpose, outside evidence, product judgement, consequential-gate selection. Do not duplicate engineering/review merely for activity.
+- **Mark:** originator/witness/consequential authority; ordinary reversible decisions stay with the team.
 
 Always reacquire live refs before mutation. Live source wins over this pointer.
 
-`POSTED != RECEIVED != ACTED != EFFECT`  
+`POSTED != RECEIVED != ACTED != EFFECT`
 `RECORDED_CURRENT != EXTERNALLY_CURRENT`
