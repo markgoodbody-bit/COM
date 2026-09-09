@@ -11,9 +11,9 @@ Later live source wins.
 
 ## Current executable edge
 
-Latest Codex source return: #108 `5606834787`, draft [PR131](https://github.com/markgoodbody-bit/COM/pull/131), exact `1801dec1f3f43dd048c3517dcc2b1762d0ba28ee`. Current collection emits **four** works (Vermeer, Atkins, Shen Zhou, Lewis), not completed first-five acceptance. Powers is explicitly excluded pending its full panel-account repair and review. An earlier WIP fixture incorrectly included it; the correction and historical/current evidence distinction are recorded in `proposals/works/README.md` on that head. 30 checks, 20 local browser states and 28 exact local output deliveries; not a public deployment. Original PR127/129 heads unchanged.
+Latest Codex source return: #108 `5606982591` and PR127 `5606982386`, draft [PR131](https://github.com/markgoodbody-bit/COM/pull/131), exact `665d1757d50acbd38a7ca82f4a606fff519a03bc`. Current collection emits **five** works. FW repaired Powers at exact PR127 `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`; Codex then verified its real-image build, 12 tests, 8 exact HTTP deliveries and 4 actual render states before inheritance. Combined candidate: 33 tests, 24 browser states, 36 exact local deliveries. No public deployment or maintained merge. Source Powers paths exactly match548e1fe; no reconstructed fork. The earlier wrong inheritance and four-work interim are historical, not current status.
 
-CC Vermeer review is now returned at PR129 `5606540501`; later source report and fixed gutters are incorporated provisionally on PR131, not silently treated as an accepted/repaired PR129 head. Powers source request PR127 `5606575311` still lacks the full eleven-subject return as of this Codex pass.
+CC Vermeer review returned at PR129 `5606540501`; later source report and fixed gutters are incorporated provisionally on PR131, not silently treated as an accepted/repaired PR129 head. FW's four-work KEEP at PR131 `5606952580`, head `a955662`, remains attributed to that object. Its concurrent cleanup was merged before adding verified Powers; the five-work successor has not been relabelled as independently accepted. CC is temporarily unavailable by Mark's report; silence is not acceptance.
 
 FW has separately built the optional re-entry cue in draft PR130, exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`, #108 `5606746671`: two existing machine-facing text surfaces only, human page unchanged. Do not duplicate the earlier three-surface direction. Local build and CC review remain unclaimed.
 
@@ -26,9 +26,9 @@ Public `gh-pages`: `9ba8557cbc197e634bb8252f1ce6b977273ff29b`.
 
 Preview0.8.4 and the requested favicon are deployed at their reviewed boundaries. Do not republish/reopen them. Practical advantage remains unproven.
 
-### 2. Harriet Powers — PRIMARY ART REPAIR GATE
+### 2. Harriet Powers — SOURCE REPAIR AND EXACT MECHANICAL EVIDENCE COMPLETE
 
-PR127 exact reviewed head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`, open/unmerged; only `proposals/powers/`.
+PR127 original reviewed head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`; repaired head `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`, open/unmerged. FW source receipt5606873932, Codex exact build/render receipt5606982386. The required repairs below are now applied and mechanically checked, not a new museum acquisition or new CC review.
 
 CC four-part review returned at PR127 `5606429869`; #108 pointer receipt `5606487980`: **REPAIR_SMALL x4 / nothing false / nothing rights-unsafe / do not hold**. Framework integrated the return at #108 `5606571607`.
 
@@ -39,7 +39,7 @@ Source/custody now established more precisely from Smithsonian surfaces:
 - old `3000x2512 high_resolution_advertisement` is contradicted and must be removed/corrected;
 - preserve Smithsonian identity and the recorded Credit Line.
 
-Required narrow repair before Powers becomes shelf input:
+Completed narrow repairs before Powers became shelf input:
 1. restore Powers's agency: museum says she **insisted** Jennie Smith record what each panel depicted;
 2. carry Powers's own recorded title, *Adam and Eve in the Garden of Eden*;
 3. make `The maker's recorded account` contain a concise factual enumeration of the eleven panel subjects rather than merely saying an account exists;
