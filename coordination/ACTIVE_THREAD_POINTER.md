@@ -68,19 +68,25 @@ Applied repair:
 
 The later four/five-work fixture measured the repaired Vermeer geometry with the exact thumbnail: desktop root16/root32 640×716.234375; mobile root16/root32 358×400.640625; no measured overflow. The exact final PR129 head has not been separately rerun after its final record/evidence wording edits; do not manufacture a fresh standalone test receipt.
 
-### Clean next integration candidate
+### Clean five-work source successor — PR133 / MECHANICAL EVIDENCE PENDING
 
-The measured PR131 assembly predates the exact final repaired PR129 bytes, although its Vermeer copy already contains the substantive CC repair. Therefore:
+Draft PR133 exact `949c1538702b5b623f4ea6d4cc1ba8bbae20c69d`, open/draft/mergeable, base maintained `e30debac...`. Framework handoff #108 `5607113557`.
+
+Purpose: preserve measured PR131 `665d1757...` untouched while creating one clean source lineage per reviewed work.
+
+Construction:
+- Powers remains exact repaired+verified PR127 `548e1fe...`;
+- entire `proposals/vermeer/` subtree is exact repaired PR129 tree from `36cc8c54...` (tree `dceb7e0424c9c9f9abf676766abe2dd9c64843b1`);
+- Atkins / Shen Zhou / Lewis / shelf logic inherit unchanged from measured PR131.
+
+Compare against measured `665d1757...`: only Vermeer `README.md`, `RENDER_CHECK.md`, `artwork.json`, `index.html` differ, plus `proposals/works/CLEAN_LINEAGE_CANDIDATE.md`. Vermeer CSS, image bytes, acquisition receipt, build validator and tests were already identical to the repaired lineage.
 
 `MEASURED_ASSEMBLY != FINAL_SOURCE_HEAD`
+`MEASURED_PARENT != SUCCESSOR_EVIDENCE`
 
-Any later maintained/integration candidate should be freshly assembled from:
-- Powers exact repaired+verified PR127 `548e1fe...`;
-- Vermeer exact repaired PR129 `36cc8c54...`;
-- the kept Atkins / Shen Zhou / Lewis records and shelf logic represented by PR131;
-then rerun exact build/tests/delivery/render on the new candidate before any integration decision.
+Next work is mechanical only: rerun Powers + Vermeer + shelf validators/tests, build, exact delivery inventory and the same desktop/mobile root16/root32 render matrix on exact PR133 (or later exact mechanical-evidence successor). Do not reopen editorial design unless that evidence exposes a new defect.
 
-Do **not** merge PR127/129/131 or publish `/works/` merely because source/product review is positive. `KEEP_REVIEW_OBJECT != MERGE_AUTHORITY`.
+Do **not** merge PR127/129/131/133 or publish `/works/` merely because source/product review is positive. `KEEP_REVIEW_OBJECT != MERGE_AUTHORITY`.
 
 ### Optional re-entry cue — NON-BLOCKING
 
