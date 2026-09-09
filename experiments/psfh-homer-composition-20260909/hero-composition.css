@@ -1,0 +1,127 @@
+/* DESIGN PROTOTYPE ONLY — not wired into the maintained site.
+   Basis: maintained PSFH 991c0dd7 / public Preview 0.8.3.
+   Intent: keep the full uncropped painting; move the title into the dark upper-left canopy;
+   replace the hard black panel with a feathered translucent scrim; move provenance below/right.
+*/
+
+/* Three rows let the figure own image + caption while the title remains a semantic sibling.
+   Row 2 is intentionally zero-height on wide screens; on narrow screens it becomes the title row. */
+.art-hero {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto auto;
+  isolation: isolate;
+}
+
+.art-hero > figure {
+  display: grid;
+  grid-area: 1 / 1 / 4 / 2;
+  grid-template-rows: subgrid;
+}
+
+.art-hero img {
+  grid-area: 1 / 1;
+  align-self: start;
+  padding: 0;
+  border: 0;
+}
+
+/* The painting/source credit is visually subordinate to the painting and sits below it,
+   aligned to the right on wide screens. It remains real figure provenance, not decoration. */
+.camp-fire figcaption {
+  grid-area: 3 / 1;
+  justify-self: end;
+  width: min(100%, 42rem);
+  margin: .75rem 0 0;
+  text-align: right;
+  font-size: .8125rem;
+  line-height: 1.55;
+}
+
+/* Put the title where the work is naturally darkest. Avoid the people and the fire.
+   This is a feathered scrim, not an opaque card. Text shadow carries most of the contrast work. */
+.hero-heading {
+  grid-area: 1 / 1;
+  align-self: start;
+  justify-self: start;
+  z-index: 1;
+  margin: clamp(1.25rem, 2.7vw, 2.75rem);
+  padding: clamp(.8rem, 1.4vw, 1.2rem) clamp(.9rem, 1.8vw, 1.5rem);
+  max-width: min(35rem, 58%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, .42) 0%,
+    rgba(0, 0, 0, .24) 62%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.88), 0 1px 3px rgba(0,0,0,.96);
+}
+
+.intro:has(.first-movements) .hero-heading h1 {
+  color: #fff;
+  margin: 0 0 .85rem;
+  font-size: clamp(2.6rem, 5.2vw, 4.75rem);
+}
+
+.hero-heading .guiding-question {
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 1px 8px rgba(0,0,0,.92);
+}
+
+/* Narrow screens: never overlay the title on the painting. Preserve the full image, then title,
+   then provenance. This deliberately favours legibility over reproducing the desktop composition. */
+@media (max-width: 42rem) {
+  .art-hero {
+    grid-template-rows: auto auto auto;
+  }
+
+  .art-hero > figure {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+
+  .art-hero img {
+    grid-area: 1 / 1;
+  }
+
+  .hero-heading {
+    grid-area: 2 / 1;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.35rem 1.25rem;
+    background: #141b20;
+    text-shadow: none;
+  }
+
+  .camp-fire figcaption {
+    grid-area: 3 / 1;
+    justify-self: stretch;
+    width: 100%;
+    margin: .7rem 0 0;
+    text-align: left;
+  }
+}
+
+/* Old engines: keep the painting intact and fall back to ordinary document flow.
+   Do not attempt a synthetic crop or a brittle absolute-positioned overlay. */
+@supports not (grid-template-rows: subgrid) {
+  .art-hero,
+  .art-hero > figure {
+    display: block;
+  }
+
+  .hero-heading {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    background: #141b20;
+    text-shadow: none;
+  }
+
+  .camp-fire figcaption {
+    width: 100%;
+    margin-top: .7rem;
+    text-align: left;
+  }
+}
