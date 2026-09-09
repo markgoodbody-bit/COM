@@ -86,8 +86,8 @@ def validate(root=ROOT):
     require(page.images[0]["src"] == "../../art/bible-quilt-1440.jpg", "Wrong fallback")
     require(page.images[0]["srcset"] == "../../art/bible-quilt-720.jpg 720w, ../../art/bible-quilt-1440.jpg 1440w", "Wrong responsive route")
     require(bool(page.images[0].get("alt")), "Missing alt text")
-    require(html.index("The maker's recorded account") < html.index("Our response · PSFH"), "Maker account must precede response")
-    require(record["creator_account"]["statement"] in html and record["project_response"]["text"] in html, "Record/page wording differs")
+    require(html.index("</figure>") < html.index("Powers and the record"), "Work must precede account")
+    require(record["creator_account"]["statement"] in html and record["project_response"] is None and "Our response · PSFH" not in html, "Record/page wording differs")
     require(record["visible_credit"] in html.replace("<cite>", "").replace("</cite>", ""), "Visible credit drift")
     require(record["object_url"] in page.links and record["rights"]["url"] in page.links, "Source/rights route missing")
     for link in page.links:

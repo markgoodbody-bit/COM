@@ -8,7 +8,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #ac451e; outline-off
 .skip:focus { top: 1rem; z-index: 2; }
 .site-header { max-width: 64rem; margin: auto; padding: 1.5rem 1rem; display: flex; flex-wrap: wrap; gap: .75rem 2rem; justify-content: space-between; font: 1rem/1.5 system-ui, sans-serif; border-bottom: 1px solid #d7dbdb; }
 .site-header span:last-child { color: #555d5d; }
-main { max-width: 60rem; padding: 0 1rem; margin: auto; }
+main { max-width: 60rem; padding: 0 16px; margin: auto; }
 .work-heading { padding: 2rem 0 1.5rem; text-align: center; }
 .work-heading p { margin: .6rem 0 0; font-size: 1.125rem; }
 .maker { font-family: system-ui, sans-serif; }

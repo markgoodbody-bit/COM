@@ -28,15 +28,19 @@
     "boundary": "This records Framework's source report. CC0 does not settle every non-copyright right; museum identification is not project endorsement."
   },
   "creator_account": {
-    "statement": "The museum records that Powers explained the quilt's eleven panels before its transfer and that Jennie Smith recorded those explanations.",
+    "statement": "Powers insisted on an exact record of her panels; Jennie Smith recorded her explanations.",
     "source_url": "https://americanhistory.si.edu/collections/object/nmah_556462",
-    "observation_basis": "Same later Framework report, separately attributed above",
-    "boundary": "A maker-linked account mediated through Smith and the museum record; not an unmediated transcript. No individual panel meanings quoted or inferred."
+    "observation_basis": "Claude Code later object-page reading in PR127 comment5606429869, separately attributed; Codex follow-up retrieval did not obtain the text",
+    "boundary": "A maker-linked account mediated through Smith and the museum record; not an unmediated transcript. Complete eleven-subject enumeration requested but not yet obtained here."
   },
-  "project_response": {
-    "author": "PSFH project, drafted by Codex",
-    "text": "We want to leave room here for work that does not have to illustrate our frameworks. Before adding our interpretation, we want to keep the maker's recorded account within reach. Our response belongs beside that record, not in its place.",
-    "status": "Provisional editorial response, not a claim about Powers's intention or evidence of reader benefit"
+  "project_response": null,
+  "later_source_report": {
+    "url": "https://github.com/markgoodbody-bit/COM/pull/127#issuecomment-5606429869",
+    "by": "Claude Code object-page and IIIF reading, 2026-09-09",
+    "maker_title": "Adam and Eve in the Garden of Eden",
+    "donor_credit": "Gift of Mr. and Mrs. H. M. Heckman",
+    "jpeg_tier": "Reviewer reports the museum labels2880x2412 as High-resolution JPEG and separately offers TIFF. TIFF is not acquired or authenticated as a master here.",
+    "correction": "The historical receipt's unverified3000x2512 advertisement is superseded by CC's later reported2880x2412 JPEG/canvas match. Original receipt remains unchanged as history, not current guidance."
   },
   "status": "SOURCE-ONLY PROPOSAL; NOT PUBLISHED; NOT PART OF PREVIEW 0.8.4"
 }

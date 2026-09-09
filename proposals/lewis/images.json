@@ -1,0 +1,136 @@
+[
+  {
+    "source": {
+      "object_id": "saam_1994.17",
+      "view_id": "SAAM-1994.17_1",
+      "title": "The Death of Cleopatra",
+      "creator": "Edmonia Lewis",
+      "acquired_at_utc": "2026-09-09T17:46:04.7597322Z",
+      "requested_url": "https://ids.si.edu/ids/download?id=SAAM-1994.17_1",
+      "final_url": "https://smithsonian-open-access.s3-us-west-2.amazonaws.com/media/saam/SAAM-1994.17_1.jpg",
+      "http_status": 200,
+      "mime": "image/jpeg",
+      "width": 2250,
+      "height": 3000,
+      "mode": "RGB",
+      "icc_bytes": 560,
+      "exif_orientation": 1,
+      "bytes": 871456,
+      "sha256": "d6494d0620ad68d9e35aaafda8d298891c783bfbc6cef21c729865fdb1230b28",
+      "object_url": "https://americanart.si.edu/artwork/death-cleopatra-33878",
+      "rights_observation": "Official American Art object page displays Free to use. Its linked download API confirms isOpenAccess=true, restricted=false, hasUsageConditions=false, usageRights=Unrestricted (Public Domain). Smithsonian search record states CC0.",
+      "source_category": "Smithsonian Open Access: official object-page download modal API images[].downloadUrl",
+      "master_status": "UNKNOWN",
+      "sculpture_limitation": "Independent authoritative museum photographs, preserved separately. No synthesized angle or full 3D experience is claimed.",
+      "status": "ACQUIRED",
+      "file": "SAAM-1994.17_1-authoritative.jpg",
+      "rights_observer": "Codex asset subagent museum_assets_b",
+      "local_integrity_readback": "Codex root reread bytes, SHA and decoded metadata",
+      "transformations": [],
+      "selection_status": "CURRENT_BATCH_A_TARGET"
+    },
+    "parent_file": "SAAM-1994.17_1-source.jpg",
+    "variants": [
+      {
+        "file": "SAAM-1994.17_1-720.jpg",
+        "width": 720,
+        "height": 960,
+        "bytes": 77729,
+        "sha256": "85dbff0292e46540538ec07d527cb6aaa5a4929807bc1379cfe24b49c4b53c6b",
+        "parent_sha256": "d6494d0620ad68d9e35aaafda8d298891c783bfbc6cef21c729865fdb1230b28"
+      },
+      {
+        "file": "SAAM-1994.17_1-1440.jpg",
+        "width": 1440,
+        "height": 1920,
+        "bytes": 259543,
+        "sha256": "ffb07c38d4e7ef4925c020a089cf08c30cdcead5883b0cc4b72aaa10d3d47749",
+        "parent_sha256": "d6494d0620ad68d9e35aaafda8d298891c783bfbc6cef21c729865fdb1230b28"
+      }
+    ],
+    "tool": {
+      "pillow": "12.2.0",
+      "jpeg": "8.0"
+    },
+    "settings": {
+      "filter": "Lanczos",
+      "quality": 86,
+      "subsampling": 2,
+      "optimize": false,
+      "progressive": false,
+      "mode": "RGB retained",
+      "icc": "retained byte-for-byte",
+      "exif": "No EXIF copied; orientation absent or1",
+      "crop": false,
+      "upscale": false
+    },
+    "purpose": "Smaller full-frame delivery copies; originals remain linked. Not colour-fidelity validation."
+  },
+  {
+    "source": {
+      "object_id": "saam_1994.17",
+      "view_id": "SAAM-1994.17_2",
+      "title": "The Death of Cleopatra",
+      "creator": "Edmonia Lewis",
+      "acquired_at_utc": "2026-09-09T17:46:06.7605804Z",
+      "requested_url": "https://ids.si.edu/ids/download?id=SAAM-1994.17_2",
+      "final_url": "https://smithsonian-open-access.s3-us-west-2.amazonaws.com/media/saam/SAAM-1994.17_2.jpg",
+      "http_status": 200,
+      "mime": "image/jpeg",
+      "width": 2370,
+      "height": 3000,
+      "mode": "RGB",
+      "icc_bytes": 560,
+      "exif_orientation": 1,
+      "bytes": 994431,
+      "sha256": "e9b53e97cf3e7c9cf7bb0de851f6e6c4c14e6fb2b0c73f0591687cef521bca24",
+      "object_url": "https://americanart.si.edu/artwork/death-cleopatra-33878",
+      "rights_observation": "Official American Art object page displays Free to use. Its linked download API confirms isOpenAccess=true, restricted=false, hasUsageConditions=false, usageRights=Unrestricted (Public Domain). Smithsonian search record states CC0.",
+      "source_category": "Smithsonian Open Access: official object-page download modal API images[].downloadUrl",
+      "master_status": "UNKNOWN",
+      "sculpture_limitation": "Independent authoritative museum photographs, preserved separately. No synthesized angle or full 3D experience is claimed.",
+      "status": "ACQUIRED",
+      "file": "SAAM-1994.17_2-authoritative.jpg",
+      "rights_observer": "Codex asset subagent museum_assets_b",
+      "local_integrity_readback": "Codex root reread bytes, SHA and decoded metadata",
+      "transformations": [],
+      "selection_status": "CURRENT_BATCH_A_TARGET"
+    },
+    "parent_file": "SAAM-1994.17_2-source.jpg",
+    "variants": [
+      {
+        "file": "SAAM-1994.17_2-720.jpg",
+        "width": 720,
+        "height": 911,
+        "bytes": 83009,
+        "sha256": "0e6ceced55aa1f8fd4a150757b9e53fc30b9787c21c200361108feaab2c0274a",
+        "parent_sha256": "e9b53e97cf3e7c9cf7bb0de851f6e6c4c14e6fb2b0c73f0591687cef521bca24"
+      },
+      {
+        "file": "SAAM-1994.17_2-1440.jpg",
+        "width": 1440,
+        "height": 1823,
+        "bytes": 296072,
+        "sha256": "b8f399f907c839543dd0c73bfcfc67184cf145c917b7c23a3e9d1341c0d3bbbd",
+        "parent_sha256": "e9b53e97cf3e7c9cf7bb0de851f6e6c4c14e6fb2b0c73f0591687cef521bca24"
+      }
+    ],
+    "tool": {
+      "pillow": "12.2.0",
+      "jpeg": "8.0"
+    },
+    "settings": {
+      "filter": "Lanczos",
+      "quality": 86,
+      "subsampling": 2,
+      "optimize": false,
+      "progressive": false,
+      "mode": "RGB retained",
+      "icc": "retained byte-for-byte",
+      "exif": "No EXIF copied; orientation absent or1",
+      "crop": false,
+      "upscale": false
+    },
+    "purpose": "Smaller full-frame delivery copies; originals remain linked. Not colour-fidelity validation."
+  }
+]
