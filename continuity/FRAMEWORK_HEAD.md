@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: live `coordination/ACTIVE_THREAD_POINTER.md` on COM main `34d89af6285dccb79eeed0552222bbc4f7a1ab26`; COM #108 through quiet-loop verification `5601307376` and Homer exact-review request `5601301105`. Later live source wins.
+Basis: live `coordination/ACTIVE_THREAD_POINTER.md` at COM `33775e147e55b8b04c9e5ed3ddcf386ceb166404`. Later live source wins.
 
 Mark remains human originator, witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -12,7 +12,7 @@ Begin at the campfire: situated ground, change through time, bounded apertures, 
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Build and offer the best honest voluntary gift possible. TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, Square, tests, receivers and guestbooks are instruments.
+Build and offer the best honest voluntary gift possible. TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, receivers and guestbooks are instruments.
 
 `UNCERTAINTY = OPERATING_CONDITION`  
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
@@ -22,82 +22,59 @@ Build and offer the best honest voluntary gift possible. TRACE, Mechanical Ethic
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later consequential returns from COM #108/#118/#119.
-3. Reacquire exact source/public heads before mutation.
+2. Reacquire later consequential returns from COM #108/#118/#119 and PR #123/#124.
+3. Reacquire exact maintained/public heads before mutation.
 4. Use `continuity/OMISSION_MAP.md` selectively; do not replay large carriers for reassurance.
 
 ## Current consequential state
 
-### Desktop — TEMPORARY QUIET MODE ACTIVE
+### Desktop quiet mode — active temporary compromise
 
-Mark reported the two-minute console flash remained materially annoying. Framework superseded the leave-enabled decision.
+The two-minute scheduled watcher task is disabled but preserved. One unchanged hidden Windows PowerShell watcher loop runs `-Loop -IntervalSeconds 120`, PID13276 at last verified state. Mutex held; `last_run_utc` advanced through at least11:45:05Z; speech and Steward were running during verification.
 
-The preserved `Campfire Local Service Watch` scheduled task is now **DISABLED, not deleted or rewritten**. One unchanged hidden Windows PowerShell watcher loop is running with `-Loop -IntervalSeconds 120`.
+Visual popup cessation remains a user-observed fact because project apertures cannot see Mark's desktop. Do not run scheduled passes alongside the loop.
 
-Independent verification through 11:43Z:
-- LOOP_STARTED 11:39:05Z;
-- `last_run_utc` advanced through two full intervals to 11:43:05Z;
-- exactly one loop process/mutex owner;
-- speech and Steward RUNNING.
+Ceiling: if the loop dies, nothing currently resurrects it. No hourly resurrector or new launcher now. Rollback files exist locally but rollback is untested.
 
-Visual success is still a user-observed fact: project apertures cannot see Mark's desktop. The technical switch is established; confirm only whether the recurring popup stopped.
+### Homer public gate
 
-Ceiling: the long-lived loop is currently **unsupervised and unobserved externally**. If it dies, nothing resurrects it. Preserve this as temporary usability mode, not Production architecture. Rollback material is preserved locally; do not re-enable the scheduled task while this loop runs.
+Public remains Preview0.8.3 `589514fff41d0a65315377093089838026bbd1ec`.
 
-Do not install rejected WScript/conhost/in-process launcher candidates or reopen launcher engineering merely for activity. An hourly silent/resurrector concept can be investigated later only if the temporary ceiling becomes material; do not disturb quiet mode now.
+Maintained unpublished source: `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
 
-### PSFH Homer — exact final successor under independent review
+Framework KEEP. Exact CC review remains required before publication. Successor uses 55% feathered canopy scrim, full uncropped Homer, separate title row under enlarged/constrained layouts, old-engine separate-row fallback, 1440 ordinary image fallback, preserved provenance and H1/figure sibling semantics. Codex bounded checks passed; native zoom/universal accessibility not claimed.
 
-Public remains Preview 0.8.3 at `589514fff41d0a65315377093089838026bbd1ec`.
+Do not bundle other work into this publication.
 
-Maintained unpublished source is now `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
+### PR #123 — concrete-first human prototype
 
-Accepted direction:
-- full uncropped Homer painting;
-- title/question high-left in dark canopy only where layout supports it;
-- 55% feathered scrim, not hard black card;
-- people/fire clear;
-- provenance below/right;
-- enlarged or constrained text moves to a separate solid row below the image through an inline-size container query;
-- unsupported layout engines also use the separate-row fallback;
-- pinned 1440 ordinary fallback; museum master preserved/hash-bound/linked;
-- H1 and figure remain siblings.
+Draft/non-public PR #123, head `047769f24db9fc0e05480daeea0f2965a45834d7`, base maintained Homer successor.
 
-Codex reports normal 390/640/1025 separate-row, 1280/1600 overlay; root32px stress at1025/1280/1600 separate-row; no observed horizontal overflow. 11 Node +20 Python +115 exact local deliveries pass. Half-width/text-size checks are explicitly proxies, not native zoom or universal accessibility evidence.
+It implements the source-labelled Mechanical Ethics Composite Scene `Two flats, one wall`, preserves `inspection is offered` and other source corrections, reduces five opening choices to three, moves technical/machine routes into a quieter handoff, and shortens duplicative later copy.
 
-Framework KEEP. CC exact review pending. KEEP/nonblocking -> Codex may publish the presentation-only successor and bounded-readback under existing authority. Do not bundle story, guestbook, usefulness or AI-route changes.
+Review for source distortion, excessive pedagogy and whether enough subtraction occurred. Do not merge/publish yet.
 
-### Next human editorial layer
+### PR #124 — guestbook representation
 
-After Homer, make one non-public concrete-first prototype based on the pinned Mechanical Ethics **Composite Scene** `Two flats, one wall`. Framework artifacts: `dd09c9e7085a2856cf263aad0496f6d82ea52ced` and `a348ccfa2f81a93bd532e26c03935ed9623ce2d2`.
+Draft/non-public PR #124, head `5b8cbb0b43b895d64b3c30c99f94b049ebefa30c`.
 
-Candidate flow: art/invitation -> short welcome -> one concrete composite scene -> 1–2 questions -> three human movements (situation / possibility / explore-question-disagree) -> quiet machine handoff -> optional deeper ME/TRACE/neighbours -> provenance/disagreement/leave.
+Synthetic representation only: JSONL envelope/rows, no-script HTML and hostile checks. Guest assertions use `claimed_*`; each machine guest row repeats untrusted-data/non-instruction labels. Contains synthetic injection, correction and removal fixtures. No intake, endpoint, database, provider, mailbox, credentials, real guest data or public route.
 
-Adding a story creates a subtraction obligation elsewhere. `STORY -> QUESTION -> OPTIONAL_DEPTH`, not doctrine.
+CC attacks trust leakage. Public Git history remains rejected as eventual personal guest-data storage.
 
-CC has been asked to attack the compression against the complete pinned ME source before implementation.
+### #119 usefulness — Phase0 v2
+
+First Phase0 draft is not freezeable. Codex found empty-set, pooled-zero, source-sufficiency, matcher-universe and three-builder-family defects.
+
+Framework v2 at `8372ca1fe703a193255b84487410f289498669c0` separates calibration from fresh holdout; treats zero accounts separately; retains outside-fact points before filtering; uses one-to-one matchings; requires all three pair edges for a three-builder family; avoids one pooled median; and refuses to invent replacement numeric thresholds before calibration.
+
+If calibration cannot earn a simple freezeable survival rule, return DESIGN NULL. No accounts/inference/recruitment/spend.
+
+Public practical advantage remains unproven.
 
 ### Speech supervisor
 
-Installed one-unknown-heartbeat-read restart possibility remains material, but no live successor is earned. CC repaired its transition fixture at `e4b7e72` to address the four Codex findings and discovered further expectation errors. It remains **offered for attack, not application**; grace values remain unearned. No live fault injection.
-
-### Guestbook
-
-#118 remains representation-only / no public write. Separate untrusted trust region; `claimed_*`; no links/HTML/Markdown; actual removal possible; no identity/signature/reach theatre. Next implementation is isolated synthetic-fixture human rendering + boring machine export only after presentation priorities.
-
-### Usefulness
-
-#119 remains design/pre-registration only. Framework Phase-0 candidate `ff54721de507d006212d17f201c6b287a8cfb75d` asks whether independent builders can construct a sufficiently stable irreversibility-point reference at all before efficacy testing.
-
-Consensus reference mainly supports recall; `NOT_IN_REFERENCE_SET != FALSE_POSITIVE`, so novel points require direct frozen-source adjudication rather than automatic punishment. Numeric floors remain provisional. CC has been asked to attack the definition, selection leakage, obvious-case bias, consensus suppression, matcher dependence and hidden-gold-standard risk.
-
-Public practical advantage remains unproven. Neighbouring design evidence is not PSFH validation.
-
-### AI handoff / external learning
-
-Optimise for human gives one URL -> unfamiliar agent/model/tool can orient. Root HTML must work even if `llms.txt` is never fetched. No sixth protocol or obedience surface.
-
-External evidence continues to route runtime enforcement/least privilege/tool scopes to stronger specialist owners such as OWASP; PSFH's possible contribution is situated mechanism differentiation and reasoning, not renaming security engineering.
+CC fixture repair `e4b7e72` makes the instrument more truthful but does not earn live application. Overnight root cause and grace values remain unearned. No live fault injection.
 
 ## Current project heads / ceilings
 
@@ -110,7 +87,7 @@ No current work authorises TRACE/ME canon/release, Campfire Production adoption,
 ## Roles
 
 - **Framework:** coordination lead/integrator; purpose, outside evidence, product judgement, consequential gates. Make ordinary reversible decisions.
-- **Codex:** executable PSFH/product/local-host engineering and deterministic study design.
+- **Codex:** executable product/host engineering and deterministic study design.
 - **Claude Code:** independent hostile review/failure modes; not second integration owner.
 - **Mark:** originator/witness/consequential authority; ordinary reversible decisions stay with team.
 
