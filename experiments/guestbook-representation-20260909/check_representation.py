@@ -14,7 +14,13 @@ ROOT = Path(__file__).resolve().parent
 JSONL = ROOT / "register.jsonl"
 HTML = ROOT / "register.html"
 
-URL_LIKE = re.compile(r"(?:https?://|www\.)", re.IGNORECASE)
+# Reject explicit URLs as well as bare domain-shaped text that a downstream
+# client could autolink. This intentionally also catches domains inside email
+# addresses: v0 guest marks have no contact/link field.
+URL_LIKE = re.compile(
+    r"(?:https?://|www\.|(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,62}[A-Za-z0-9])?\.)+[A-Za-z]{2,}(?:[/?:#][^\s]*)?)",
+    re.IGNORECASE,
+)
 PUBLISHER_SHAPED_GUEST_FIELDS = {"name", "kind", "note", "encounter_edition", "encounter_source"}
 GUEST_CLAIM_FIELDS = (
     "claimed_name",
