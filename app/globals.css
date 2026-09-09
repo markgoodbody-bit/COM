@@ -102,16 +102,16 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
 /* The landing page alone gives the original frame the full opening. No crop. */
 .opening-composition { display: block; }
 .camp-fire { max-width: none; }
-.art-hero { display: grid; grid-template-rows: auto auto auto; isolation: isolate; }
+.art-hero { display: grid; grid-template-rows: auto auto auto; isolation: isolate; container: artwork / inline-size; }
 .art-hero > figure { display: grid; grid-area: 1 / 1 / 4 / 2; grid-template-rows: subgrid; }
 .art-hero img { grid-area: 1 / 1; align-self: start; padding: 0; border: 0; }
 .art-hero figcaption { grid-area: 3 / 1; justify-self: end; width: min(100%, 42rem); margin: .75rem 0 0; text-align: right; }
 /* Place the title in the dark canopy, not over the people or fire. */
 .hero-heading { grid-area: 1 / 1; align-self: start; justify-self: start; z-index: 1; position: relative; isolation: isolate; margin: clamp(1.25rem, 3vw, 3rem); padding: 0; background: transparent; color: #ffffff; max-width: min(35rem, 58%); text-shadow: 0 1px 3px #000000, 0 2px 12px rgba(0,0,0,.7); }
-/* The 60% black plateau covers the whole heading, including reflow. Only the
+/* The 55% black plateau covers the whole heading, including reflow. Only the
    outer edge fades: 2rem expansion minus 1.5rem feather leaves .5rem spare.
    Keep the scrim behind the letters, not as a foreground card over the people. */
-.hero-heading::before { content: ""; position: absolute; inset: -2rem; z-index: -1; pointer-events: none; background: rgba(0,0,0,.60); mask-image: linear-gradient(to right, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent), linear-gradient(to bottom, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent); mask-composite: intersect; }
+.hero-heading::before { content: ""; position: absolute; inset: -2rem; z-index: -1; pointer-events: none; background: rgba(0,0,0,.55); mask-image: linear-gradient(to right, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent), linear-gradient(to bottom, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent); mask-composite: intersect; }
 .intro:has(.first-movements) .hero-heading h1 { color: #ffffff; margin: 0 0 .85rem; font-size: clamp(2.6rem, 5.2vw, 4.75rem); }
 .hero-heading .guiding-question { color: #ffffff; margin: 0; }
 .opening-copy { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); column-gap: 3rem; margin-top: 2rem; }
@@ -124,13 +124,20 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
   .hero-heading::before { content: none; }
   .art-hero figcaption { justify-self: stretch; width: 100%; text-align: left; }
 }
+/* Unlike viewport media queries, this rem threshold responds to the computed
+   root text size. Enlarged text gets its own row instead of covering the people. */
+@container artwork (max-width: 60rem) {
+  .hero-heading { grid-area: 2 / 1; width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
+  .hero-heading::before { content: none; }
+  .art-hero figcaption { justify-self: stretch; width: 100%; text-align: left; }
+}
 @media (max-width: 42rem) {
   .intro:has(.first-movements) .hero-heading h1 { font-size: clamp(2.3rem, 8.5vw, 3.5rem); }
   .hero-heading .guiding-question { font-size: 1.25rem; }
   .opening-copy { display: block; margin-top: 1.5rem; }
 }
 /* Older layout engines keep the full painting and a separate solid title panel. */
-@supports (not (grid-template-rows: subgrid)) or (not (mask-composite: intersect)) {
+@supports (not (grid-template-rows: subgrid)) or (not (mask-composite: intersect)) or (not (container-type: inline-size)) {
   .art-hero, .art-hero > figure { display: block; }
   .hero-heading { width: 100%; max-width: none; margin: 0; padding: 1.5rem 1.25rem; background: #141b20; text-shadow: none; }
   .hero-heading::before { content: none; }

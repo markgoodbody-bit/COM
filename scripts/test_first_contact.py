@@ -134,7 +134,7 @@ class FirstContactTests(unittest.TestCase):
     def test_hero_scrim_plateau_has_a_conservative_contrast_floor(self):
         from PIL import Image
         css = (ROOT / 'app/globals.css').read_text(encoding='utf-8')
-        self.assertIn('background: rgba(0,0,0,.60);', css)
+        self.assertIn('background: rgba(0,0,0,.55);', css)
         self.assertIn('inset: -2rem;', css)
         self.assertIn('#000 1.5rem, #000 calc(100% - 1.5rem)', css)
         self.assertIn('mask-composite: intersect;', css)
@@ -147,10 +147,10 @@ class FirstContactTests(unittest.TestCase):
             value /= 255
             return value / 12.92 if value <= .04045 else ((value + .055) / 1.055) ** 2.4
 
-        # Fully opaque masks throughout the heading preserve the .60 black
+        # Fully opaque masks throughout the heading preserve the .55 black
         # alpha there. A .5rem inset margin remains before the feather begins.
         # This is an sRGB compositing bound, not a browser/glyph conformance test.
-        white_background_floor = 1.05 / (linear(255 * .40) + .05)
+        white_background_floor = 1.05 / (linear(255 * .45) + .05)
         self.assertGreaterEqual(white_background_floor, 4.5)
         print(f"Scrim plateau over white: {white_background_floor:.2f}:1")
         mobile_lum = sum(w * linear(v) for w, v in zip((.2126, .7152, .0722), (20, 27, 32)))
@@ -160,11 +160,16 @@ class FirstContactTests(unittest.TestCase):
         paths = [record['local_image']] + [v['local_image'] for v in record['responsive']['variants']]
         for path in paths:
             with Image.open(ROOT / 'out' / path.lstrip('/')) as image:
-                maxima = [upper * .40 for lower, upper in image.convert('RGB').getextrema()]
+                maxima = [upper * .45 for lower, upper in image.convert('RGB').getextrema()]
             lum = sum(w * linear(v) for w, v in zip((.2126, .7152, .0722), maxima))
             ratio = 1.05 / (lum + .05)
             self.assertGreaterEqual(ratio, 4.5, path)
             print(f"Whole-frame source-channel bound with scrim {path}: {ratio:.2f}:1")
+
+        # Source guard only; actual reflow still needs browser observation.
+        self.assertIn('container: artwork / inline-size;', css)
+        self.assertIn('@container artwork (max-width: 60rem)', css)
+        self.assertIn('(not (container-type: inline-size))', css)
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',
