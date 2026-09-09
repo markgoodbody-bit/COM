@@ -25,7 +25,7 @@ Its opening establishes:
 - a stain appears behind Mia's bed in October;
 - by November the paint has lifted and Mia wakes coughing on cold nights.
 
-Elsewhere in the same scene Leah wakes at 1:17 because Mia is coughing again, sees the damp spreading, moves the pillow, photographs it on a cracked phone and opens the landlord's online reporting portal.
+In the earlier, separately headed **Composite Scene - Leah and the Wall**, Leah wakes at 1:17 because Mia is coughing again, sees the damp spreading, moves the pillow, photographs it on a cracked phone and opens the landlord's online reporting portal. This is not part of the interlude passage itself.
 
 The later outcome is intentionally untidy rather than morally neat:
 - the upstairs wall is repaired;
@@ -63,11 +63,18 @@ For the next human editorial slice, test a small section after the opening and b
 >
 > Two homes share the same wall. Upstairs, the owner can reach repair directly. Downstairs, a family reports spreading damp through a formal route while their daughter's room keeps changing.
 >
-> The upstairs wall is repaired. The downstairs inspection arrives after the family has found somewhere else to live.
+> The upstairs wall is repaired. A downstairs inspection is offered after the family has found somewhere else to live. They leave before anyone enters the room.
 >
 > The case can close. The consequence does not necessarily close with it.
 
 That prose is **project-authored compression for a prototype**, not approved publication copy and not a quotation from Mechanical Ethics. If used, visibly label the underlying material a composite scene and link to the full current ME source/context.
+
+Source check, Codex 9 September: corrected “inspection arrives” to “inspection
+is offered” and preserved that the family leave before entry. The complete
+interlude and the earlier separately headed miniature were read from the pinned
+ME copy (SHA256 `6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93`).
+This repairs summary fidelity, not the book and not a public page. Remaining
+editorial questions are recorded in `PSFH_CONCRETE_FIRST_SOURCE_REVIEW_20260909.md`.
 
 Then ask no more than one or two questions, for example:
 - What changed while the route was working?
