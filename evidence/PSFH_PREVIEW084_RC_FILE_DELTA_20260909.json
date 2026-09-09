@@ -1,0 +1,112 @@
+{
+  "baseline": "dd06d95cb880208b30f703c54af33c2440c97812",
+  "changed": [
+    {
+      "path": "changes.html",
+      "bytes": 40720,
+      "sha256": "c9119674f95433b8022c309a49e2be8a201525d1b5b10a35f1920b1037d7c6aa",
+      "before_bytes": 37314,
+      "before_sha256": "81eb5abb5360d8cb16ff4c08266c77ad822b2c4b1f9737a7054ed4013604f903"
+    },
+    {
+      "path": "changes.md",
+      "bytes": 37314,
+      "sha256": "b147af9f9aca17d84651bef8551cec1b2296ea643863251ec0d305be249d64a5",
+      "before_bytes": 34116,
+      "before_sha256": "ae1475e7ef4cc097abf3673728b767d6307cdd74cd0a33747cdc148dc17a571b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 15337,
+      "sha256": "25d0406fcd20f4b6e0ed4667841928f45dd502aa38c64fba53ab9fbd496c05ca",
+      "before_bytes": 14588,
+      "before_sha256": "aff96c683dba2dffabefb3e96061c793840b74f0179f5332c4936d470e55d794"
+    },
+    {
+      "path": "llms.txt",
+      "bytes": 6099,
+      "sha256": "e21b44aeddc9ec69f0a3edee09dfc730f22df56211dfb54aef921ec4878e2be4",
+      "before_bytes": 6037,
+      "before_sha256": "88c7ed1777b75db008b9bd355728e38b4be06c60465e3eac026b758cb2505fb8"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 7084,
+      "sha256": "4753b06595f87ca99836a06b7e5c3cdeb07135be76f1757061fdac4a6570b779",
+      "before_bytes": 7084,
+      "before_sha256": "838b1993f5964739078bd2548c008def0f6995788a30211400eb1142dd076b81"
+    },
+    {
+      "path": "read/me-book.html",
+      "bytes": 91487,
+      "sha256": "255b037de5f163bc4bd8f6c7d9c776acbfae986cd1eed8ce30aa44f1e2dafe58",
+      "before_bytes": 91487,
+      "before_sha256": "8fcb9fce8b9d8b0613f7ce3ac81c660793a4c9099580a874b7baa44b49be6578"
+    },
+    {
+      "path": "read/orientation.html",
+      "bytes": 9444,
+      "sha256": "d6103410a9991bf70606f88a206a481c8eb357834a813ef7e140c572cc28753c",
+      "before_bytes": 9382,
+      "before_sha256": "37cb7ca754509c97e9498e3e5bd44b9e21d63a80e0791f36d01ad296909ce914"
+    },
+    {
+      "path": "read/start.html",
+      "bytes": 4949,
+      "sha256": "57c7ebac8bc4e0991f99204359d4809609f004fe753da43a9295160308c25e58",
+      "before_bytes": 4949,
+      "before_sha256": "be9674f9e43c5da9d9cec14dbc99ab4f17335317ef6559e0c12adb3e5d463004"
+    },
+    {
+      "path": "read/trace-spine.html",
+      "bytes": 27944,
+      "sha256": "c725a67ce5e13dbf18968b0a590a068017a7b2bddbf07c26e5f99beabbc0f19a",
+      "before_bytes": 27944,
+      "before_sha256": "4960e7cd16b82cc0e3eb8aecad0841afbc2e8c7550549381029847432a07d714"
+    },
+    {
+      "path": "seed.txt",
+      "bytes": 1023,
+      "sha256": "d9494fe389ce625df5c065f23f596cc2626391f026161979f43a229dca175d79",
+      "before_bytes": 999,
+      "before_sha256": "484cb0fa39471bedd8d7ad64f768b6b709d7b454890221f8d410930da73bcd8a"
+    },
+    {
+      "path": "style.css",
+      "bytes": 14924,
+      "sha256": "a889d2b39b400f355729e51f304f6423a03e76036a6160a439865b82024858ab",
+      "before_bytes": 13904,
+      "before_sha256": "6f5cfaf66111a5ff6cbf5447cad4b614a8c5ab305c5f6a3ad1b060477ba7fc49"
+    }
+  ],
+  "added": [],
+  "unchanged_count": 104,
+  "unchanged_art": [
+    "art/camp-fire-1440.jpg",
+    "art/camp-fire-720.jpg",
+    "art/camp-fire.jpg",
+    "art/camp-fire.json"
+  ],
+  "excluded_publishing_metadata": [
+    ".gitattributes",
+    ".nojekyll",
+    "CNAME",
+    "README.md"
+  ],
+  "historical_D014_tail_exact": true,
+  "rc_source": "3f7803d27c3615d81ede643f153dc2ec20270e01",
+  "status": "SOURCE_ONLY_RC_NOT_PUBLISHED",
+  "classification": {
+    "index.html": "Previously reviewed concrete-first product plus site edition0.8.4",
+    "style.css": "Previously reviewed appended concrete-story/technical-handoff rules; published CSS prefix exact",
+    "changes.md": "Edition0.11/D015 appended before preserved D014+history tail",
+    "changes.html": "Pinned renderer counterpart with existing shared house style",
+    "seed.txt": "Previously reviewed PR125 ceiling,999 to1023 bytes",
+    "llms.txt": "Previously reviewed two absolute links plus site edition0.8.4",
+    "manifest.json": "Site edition, history/orientation identities and delivered stylesheet hash",
+    "read/orientation.html": "Exact updated llms source and updated edition/hash metadata",
+    "read/start.html": "Site edition wrapper only",
+    "read/me-book.html": "Site edition wrapper only; book payload exact",
+    "read/trace-spine.html": "Site edition wrapper only; spine payload exact"
+  }
+}
