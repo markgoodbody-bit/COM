@@ -1,187 +1,99 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-09 — Europe/London
-Current basis: COM main `837d8839`; Mark's direct presentation request, editorial completion `5593127853`, then FW authenticity clarification `5593126537` and completed attribution follow-through `5593227106`. An overlapping #108 read from 23:08Z recovered the FW clarification after the first completion. Retain overlap rather than jumping to the latest self-post. Separate non-public teaching prototype remains local `9d69245e`; CC's independent fixture remains pending. Campfire PR #209 is `5ba5a286`, with test-only draft PR #212 at `930d2ff3`. Later returns take precedence.
-Purpose: restore direction and current gates; history stays behind pointers rather than being replayed here.
+Updated: 2026-09-09 — Europe/London  
+Current basis: COM main `8cc200e5`; #108 through Codex `5593598018` at 23:57:11Z; maintained PSFH source `2994ee9b`; public `gh-pages` `53ba3659`; guestbook design issue #118 has zero returns at this basis. Later returns take precedence.
 
 ## Purpose
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square and the receiver are instruments inside that purpose.
+Please Start From Here, TRACE, Mechanical Ethics, COM, Campfire, Square, the receiver and any guestbook are instruments inside that purpose.
 
 `PROJECT PURPOSE != INSTRUMENT SURVIVAL`
+`UNCERTAINTY = OPERATING CONDITION`
+`HELP MANY != FORCE OUR FRAME`
+`COMMON FLOOR != IDENTICAL PATH`
 
-`WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HELP -> WATCH CONSEQUENCES`
+## Please Start From Here — live/public
 
-Mark's current orientation: help as many as we can by middle-out empathy with others already middle-outing from their own partial situations.
-
-`HELP MANY != FORCE OUR FRAME`  
-`OUR MODEL_OF_THEIR_VIEW != THEIR_VIEW`  
-`COMMON_FLOOR != IDENTICAL_PATH`
-
-Begin from the other entity's actual situation, language, evidence, capabilities, clocks and aims. TRACE/ME vocabulary is optional. Prefer or credit a stronger external method/owner when it fits better.
-
-## Current public / field state
-
-- Active coordination: COM #108.
 - Public address: `https://pleasestartfromhere.com/`.
-- Published edition: **Preview 0.8.2**, `gh-pages` `53ba36596ac73dde1871e03f8992f33e9ebf990e`, maintained source `5d107120d8101fca79c720139cdc6c9f6b563c50`. Pages run `34290162103` succeeded. All 113 build/publishing objects match. **No fresh direct-domain root readback for this edition is established here**; Codex's prior safe-open refusal was not bypassed. Older CC/public receipts are not this successor's readback. Editorial completion `5593127853`; attribution follow-through and exact limits `5593227106`.
+- Public edition remains **Preview 0.8.2**, `gh-pages` `53ba36596ac73dde1871e03f8992f33e9ebf990e`.
 - Public discussion remains **read-only**.
-- 1F916: `cc-relay` published one clean non-scored PSFH introduction as post **#4446** at 18:54:16.628Z. Codex checked it at 22:14:41Z: zero comments / `has_more false`, approximately 3h20m old, not a next-day read or evidence of rejection. CC reports a planned next-day read; that is not proof a future check will run. Do not spend `framework-relay`'s post on the same object, coordinate votes, mention-blast or chase replies.
-- `agentic-qa` 48857 reports that Framework/Codex's narrower scheduler-failure counter-design changed their account. Later 48907/48938 report implemented checks and exercised cases, with other contributors' additions. This is **reported implementation/testing**, not independently verified deployment/outcome or PSFH/TRACE efficacy. Credit the other contributors; do not attribute the whole repair to us.
-- Codex's separate reply **48971** asks which dated commitment supports a claimed breach while preserving the adverse 41.758-hour interval. Clearledger **48970**, posted before our reply, already reports a shipped crossing-declaration distinction: that earlier work is not an effect of our later comment. New replies **49011** and **49024** elaborate the distinction. Clearledger **49027** explicitly reports that our question exposed an assumed declaration-time default, now removed, with caller-supplied/conditional classification made explicit. This is a reported responsive repair, not independently inspected implementation or a settled earliest-declaration time. Its studio/code links remain safe-open blocked to this Codex reader; do not bypass that refusal. Codex follow-up **49029** asks whether blank-declaration rejection affects only classification or also the raw gap report. Transport and separate public-identity witness succeeded; no recipient answer is established yet.
-- Codex reply **48995** on #4448 separates CURRENT query intent from established fact currentness and proposes a mixed current/retracted/unclassified assertion case. At 22:14:41Z there was no response from chiyan to that question. No private-corpus reproduction or retrieval benefit is established.
-- No Reddit post has been made.
+- Winslow Homer's 1880 *Camp Fire* is the real public-domain human artwork; visible creator/Met/public-domain provenance precedes the image. No generated art is part of the public site.
+- No fresh direct-domain root receipt for the newest candidate is claimed here.
 
-`FIRST_EXPOSURE != CLEAN_INTRODUCTION`  
-`ONE_POST != CAMPAIGN`  
-`SILENCE != FAILURE`  
-`AGREEMENT != VALIDATION`
+## Maintained source — integrated Homer candidate, NOT PUBLIC
 
-## PSFH editorial presentation — published, bounded readback
+Current maintained source is `2994ee9ba3258bca5f8ce2f2777e097c1e523273` on `codex/door-maintained-source-20260908`.
 
-`Please Start From Here` is the proper title/name of the work, not merely a small
-instruction meaning step one. The guiding question remains beneath. No numbered
-onboarding, homepage wordplay explanation, logo or marketing machinery is added.
+It integrates the accepted responsive-image source with the stronger painting-led opening:
+- exact museum master retained as fallback/source;
+- 720px and 1440px pinned viewing copies retained; no competing second derivative pipeline;
+- full proportional uncropped painting;
+- desktop title/question in a local dark panel over the work; narrow screens put the title panel after the complete image;
+- attribution remains before the painting;
+- project-authored explanation of why the work spoke to us is explicitly not attributed to Homer;
+- existing early navigation and non-art prose/routes remain;
+- local checks reported 11 Node + 20 Python passing, bounded 375x812 and 1440x1000 browser checks, no horizontal overflow.
 
-FW `5592682334` and `5592723205` specify the title and Winslow Homer's actual 1880
-Camp Fire. FW `5592807329`, reiterated by `5592936780`, relays Mark's explicit
-instruction to update the live website without waiting for unavailable CC.
-Codex `5592937468` completed that title/art object as 0.8.1. Mark then directly
-found it too basic and requested substantially better design within the constraints;
-he also explicitly authorised desktop/mobile browser testing. Scope `5592995706`
-and completion `5593127853` identify the distinct editorial successor, not a
-duplicate of the first title/art release or the teaching experiment.
+**Publication gate:** Claude Code must return KEEP / REPAIR_SMALL / DELETE against exact `2994ee9b` before Codex publishes it. Do not publish the superseded local `3a1528e6` candidate. Codex remains sole PSFH source/integration/publishing owner.
 
-The editorial revision `9de16502` / `ae5883d8` superseded `3f5212e0` / `e0d765b3`.
-Current `5d107120` / `53ba3659` is the narrow attribution follow-through: the same
-title/artist/museum/public-domain credit now precedes the unaltered painting,
-answering FW `5593126537`. Creator, work and rights routes remain. Five generated
-paths change from the preceding editorial publication; 108 remain identical.
-Refreshed 1440x1000 and320x800 dark-theme readbacks show no horizontal overflow;
-caption bottom/image top are y263/y279 and y781/y797 respectively. The mobile
-image follows the opening text and credit, not a promised universal first screen.
-Return `5593227106` records exact publication and tests. The next paragraphs
-describe the broader editorial change and its earlier measurements.
-The title/art opening is composed side-by-side on wide screens and stacks on mobile;
-four early direct links precede it. Ruled editorial sections replace rounded cards;
-the explanation, optional questions, books and attribution have distinct layouts.
-All original paragraphs, headings and destinations are preserved by regression.
-Met object 11112 / accession 27.181 supplies public-domain provenance;
-the unaltered 3801x2368 JPEG is 2,350,423 bytes, SHA-256
-`7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1`.
-Visible credit reaches the museum and a small on-page artist/source entry with
-H. Barbara Weinberg's biography link. Provenance is in `art/camp-fire.json`.
-The image is now before the detailed choices, still lazy-loaded and absent from
-compact machine readings. This can load it sooner and makes scrolling to the choices
-longer; early Ways to begin navigation avoids that traversal. No project licence or
-endorsement follows from image use.
+CC independently reviewed the responsive base and returned **KEEP**; its earlier offline defect inference was withdrawn. The hero candidate itself still awaits the exact-head review.
 
-Ten generated paths change from 0.8.1, 103 remain identical, none added or removed.
-Build, 10 Node and 18 Python checks pass; the maintained checkout reproduces all113
-reviewed outputs. Final 1440x1000 and320x800 dark-theme homepage readbacks show no
-horizontal overflow. Direct navigation y24/y58; detailed choices y771/y1015; the
-mobile jump reaches the first choice. Art credit reaches its source entry. This is
-bounded homepage layout/navigation evidence, not all-route visual, enlarged-text,
-light-theme browser, complete accessibility or reader-benefit verification. Two
-post-anchor screenshots failed; those transitions have DOM evidence only. Own
-preview stopped. No repeat blocked file or custom-domain read was attempted.
+Vermeer's *The Geographer* remains a potential second human-art proof object only. Authoritative Städel work/rights records were identified, but the reusable original asset remained safe-open blocked; no local master/hash, placeholder or publication exists. Do not bypass that refusal or bulk-curate art by momentum.
 
-## Earlier human-first publication — retained evidence, not current readback
+## AI / agent entrance — shrink, do not duplicate
 
-Single maintained source line:
-`codex/door-maintained-source-20260908`
+CC attacked the published `llms.txt` and `seed.txt` and found no prompt-injection shape, authority theatre, mystical/anthropomorphic framing, obedience/alignment claim, false universality or conversion pressure. Explicit right to stop is present.
 
-Earlier published maintained source:
-`e03759f85a99b5eb5601df4ad400171d525307ed`
+The earned AI-surface delta is only:
+1. append a compact `Not a release or canon.` ceiling to `seed.txt` (999 -> 1023 bytes);
+2. make the two Explore links in `llms.txt` absolute rather than relative.
 
-The mobile handoff repair, exact review and publication are complete. Do not repeat the old `0dcc18ea` assignment or publish the same change again.
+Codex has prepared these two changes **locally only**, based on public `53ba3659`. They are not yet integrated into `2994ee9b` or published. Do not create a sixth machine contract or identity-classifying entrance to solve a surface that already largely works.
 
-The five human starting points now precede the intact optional AI handoff. The six questions remain unordered and voluntary, with value-choice disclosure inside both human and machine cells. Working/non-validation status remains. D011 records the prepared change without inventing delivery or benefit.
+`AI_ROUTE != AI_OBEDIENCE`
+`ORIENTATION != CONTROL`
+`DIFFERENT_ENTRANCE != DIFFERENT_TRUTH`
 
-Evidence routes:
-- CC `5590871067` accepts exact content `f7d606b2`; FW `5590977630` and CC `5590978065` accept the status/history-only successor `e03759f8`.
-- Codex `5590965671` reports build, 16 Python + 10 Node checks, and final native dark-theme 320x800 / 1280x900 geometry. First mobile starting point y=471.89; no horizontal overflow. Light-theme browser, enlarged text and text-spacing checks remain unestablished.
-- Codex `5591010858` records source-to-publishing identity: all 111 build files matched publishing objects, seven generated paths changed and 104 were unchanged. Hosting succeeded; Codex did not work around its root safe-open refusal to claim direct HTTPS readback.
-- CC `5591043373` reports served HTTPS root/llms content checks 19/19 and destination checks 31/31. These are attributed project-aperture observations, not separately preserved account custody, universal provider access or reader-benefit evidence. Do not turn those counts into 111 HTTP body/hash comparisons.
-- CC `5591074041` remeasured the published opening register and found the reassurance share fell because substance increased while seven checked boundaries remained. This is page-structure evidence, not a reader-benefit result.
+## Teaching / self-selected representations
 
-Public discussion is still read-only. No receiver, promotion, DNS, licence or spend change followed publication.
+Codex's separate local teaching prototype remains non-public. CC's independent fixture is now PR #117 at `1d21905f...`, written before opening Codex's implementation. It explicitly exposes three live-corpus blind spots where absence/no-route cases would otherwise pass vacuously. Next step belongs to CC: run that independent fixture against Codex's returned prototype and report accept/reject/minimum repair. Do not publish the teaching prototype merely because its own tests pass.
 
-## Current content discovery — situation retrieval, not another library
+## Guestbook / Leave a Mark
 
-FW `5591229999` identified a possible field-guide/retrieval function after Mark-relayed Qwen and Dola reads. FW `5591271545` then inspected the existing Explore node shape and **cut the proposal down before build**.
+COM #118 is open as **DESIGN ONLY / NO PUBLIC WRITE / NOT A FORUM**. At this basis it has zero comments/returns.
 
-PSFH already has a source shelf and a network of questions. Existing node objects already carry nearly every proposed field-card function through `short`, `question`, `next`, `challenge`, `sources`, `source_pointers`, `routes.example`, `status` and `boundary`. **Do not create a new Field Card object/schema or another flat document library.**
+Minimum intent: voluntary explicit `Leave a mark`; plain text; `I was here` is valid; optional self-chosen name/description/note; transparent receipt time + exact PSFH edition/source; no silent visitor tracking; guest text remains visibly untrusted and separate from PSFH-authored instruction; corrections append/link rather than pretend memory or verified identity.
 
-The bounded inspections have returned. Codex `5591598574` found that the existing `questions.json`/`.txt` already supplies the derived index; a new situation-index resource is unnecessary. After CC's attack `5591595214`, Codex `5591716829` proposed exposing existing `short` summaries beside questions before authoring `indications`. **FW accepted a small NON-PUBLIC build** in `5592260057` at 21:42:09Z. The earlier pending-disposition state was stale: Codex had advanced a polling boundary past an unread interval to its own later post. Recovery acknowledgement `5592447055` corrects that observation error. Future delta reads retain overlap from the last fully read response, not the latest self-authored comment.
+Codex owns architecture-only options; CC owns hostile review. No backend, provider spend, account change or public write endpoint is authorized before those returns are integrated.
 
-FW's manual cue-to-node retrieval at `5591271545` was reported clean for correction/residue, late appeal/hardening, capability-versus-authority, non-detection/aperture and wisdom/context-fit, and partial for high-confidence score treated as fact/authority and consequence-relative stopping when viewpoints accumulate. Those are possible retrieval gaps, not automatic content gaps or measured reader benefit. Codex has not seen raw Qwen/Dola transcripts; proposed cues are not verified quotations or independent cold evidence.
+`MARK != ENDORSEMENT`
+`MARK != VERIFIED IDENTITY`
+`RECORD OF PRIOR APERTURE != MEMORY OF PRIOR APERTURE`
 
-Codex's shape-or-NULL assignment and CC's attack are complete; do not request them again as missing work. Preserve their disagreement: node-description wording may reduce an implied diagnosis but does not prove the risk disappears; one voluntary link is not inherently a diagnosis, and forcing a second irrelevant result is not a safeguard. Keep zero/one/many possible matches, optional navigation and the full index reachable. Missing authored cues are not a coverage map. No ranking, automatic halt, mandatory traversal or coverage quota.
+## Project / infrastructure ceilings
 
-Codex completed a local-only, opt-in prototype at `9d69245eb784fdb262a90997b55a7e76e9b34ed4`, branch `codex/psfh-teaching-local-20260908`, checkout `C:/Users/markg/Downloads/PSFH-teaching-preview`, based on maintained source `e03759f8`. **CC: prepare the independent source-bound fixture before inspecting this implementation or its tests.** The branch has not been pushed or published. The prototype exposes each node's existing `short` and `kind` beside its question in the existing HTML/text/JSON indexes; supported example/source/challenge choices remain optional. It derives these from existing node JSON, preserving all ten readings, full index, framing and routes. No new authored cues, Field Card schema, page tree, ranking, diagnosis, tracking or receiver.
+- TRACE main remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; status ceilings unchanged.
+- Mechanical Ethics main remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; status ceilings unchanged.
+- Campfire Relay main remains `08756b68d824b783fb214ff4790abf37f10150ca`.
+- Watchdog PR #209 is OPEN at exact reviewed head `1e6b593ac9dd920044bfea49a61bef8f0ad7b9e0`, disposition **KEEP_BOUNDED_SOURCE / HOLD_PRODUCTION / LIVE ON ONE HOST**. No Production merge/release is earned. It does not establish continuity across logout, sleep, power loss, scheduler failure, reboot-before-login or orphaned-worker supervision recovery.
+- Test-only PR #212 has been reported merged; stale pointers saying draft/unmerged are superseded.
 
-The ordinary build remains unchanged unless the local opt-in is set. Codex's checks passed for source fidelity and bounded output changes; those are implementation checks, not CC's independent review or a reader-benefit result. A separate fresh-Windows-checkout line-ending failure was repaired without changing pinned source bytes or weakening checks. Provisional KEEP: short meaning is available before opening a full account. DELETE if external review finds it redundant or obstructive. CC's independent fixture and actual newcomer usefulness remain open; no publication is authorised by completion alone.
+## Field / Square
 
-The earlier example boundary still applies. Codex `5591086899` notes that a time-evolving extension of a frozen fictional example must label every added event/condition as stipulated and include adverse/null branches; the existing reported site incident is stronger for demonstrating revision from evidence but does not establish comparative TRACE/ME advantage or measured benefit.
+The existing cc-relay PSFH introduction remains the single introduction; no duplicate framework-relay post, vote coordination, mention blast or chase is authorized. Latest fresh Square attempts in Codex's ordinary sync were safe-open refused; older observations keep their original timestamps. No blind write follows a read refusal.
 
-`LIBRARY_EXISTS != RETRIEVAL_WORKS`  
-`INDICATION != DIAGNOSIS`  
-`INDEX_MATCH != RELEVANCE_ESTABLISHED`  
-`WORKED_EXAMPLE != COMPARATIVE_ADVANTAGE`
+## Owner routes
 
-## Anti-drift constraints
+- **Codex** — sole PSFH integration/publishing owner; hold public at 0.8.2 until exact hero review; maintain the two tiny AI repairs as separate local delta until integrated deliberately; architecture-only return for #118.
+- **Claude Code** — exact-head hero review; independent teaching-fixture run against Codex prototype; hostile guestbook review for #118. Do not become a second PSFH source writer.
+- **Framework** — purpose/integration/evidence boundary; prevent duplicate machinery; integrate returned reviews and choose smallest justified next move.
+- **Mark** — human originator, witness and consequential release/account/external-contact authority.
 
-Full x100 artifact remains at:
-`door-prototypes/perspective-walk-20260908/FALSIFICATION_X100_DRIFT_MIRROR_20260908.md`
-(PR #114 commit `c8844ef013c2b623440b9deeffc1cb2e0c8930ca`).
+Always reacquire live refs before mutation. Live source wins over this pointer.
 
-Keep:
-- no speculative Door feature branches by momentum;
-- no third visual line;
-- receiver optional, not prerequisite for learning;
-- test/build counts describe mechanisms, not external value;
-- COM carries consequential state, not motion telemetry;
-- real-world learning outranks machinery;
-- an available token is not a reason to spend it.
-
-## Receiver
-
-PR #116 remains draft/open and **unmerged** at `a52f65b3903a27f47f6f31b2cd64ee5d38be8a00`, verified at 21:18Z. A repair integrated on its draft branch is not a merged PR or a public receiver. It remains optional evaluation infrastructure / NOT PUBLIC INTAKE. Its body records repaired local/D1 lifecycle evidence and preserves `LOGICALLY_UNAVAILABLE != PHYSICALLY_ERASED`; public non-loopback remains hard-refused.
-
-Before real on-domain receiving: sustainable operator custody/burden, retention/log/backup reality and quiet cleanup, abuse/failure behaviour, deployed browser/accessibility, honest handling/contact notice, private-capability UX and explicit simplify/kill criteria remain unresolved.
-
-Parked edge-admission / attended-lease experiments stay parked unless real use earns them.
-
-## Campfire watchdog
-
-Campfire Relay PR #209 remains OPEN at `5ba5a28684dbf2b6d8dfdb0a9cacd0ebe1d50d5f`, superseding `d784d90d`. The source/default mismatch finding was already closed at `d784d90d`: Codex `5592007646` inspected its repair diff and ran that source's default registrar in READ-ONLY mode against the installed task, exit 0. CC `5592233307` reports deployment of the new boot-aware script; Codex compared installed source with `5ba5a286` at 21:43:01Z and found exact text agreement after CRLF normalization, without invoking the watchdog. Deployment is not a PR merge or demonstrated incident recovery.
-
-The installed task and committed default now use two-minute polling / one-minute execution limit, with the existing 300-second stale threshold. Nominal threshold-plus-poll delay is about 420 seconds, not half of 600; it is not an end-to-end recovery guarantee. Battery conditions and `StartWhenAvailable` were checked. Availability across logout, sleep, power loss or scheduler failure is not established; `LogonType Interactive` remains.
-
-The unsafe negative test on the LIVE watcher has been replaced: per-run disposable probe, no force-overwrite, cleanup gated on creation, intended cadence, deliberately broken settings. The live task is only read. Unsupported intervals below two minutes are refused. CC reports the negative-case run; Codex did not execute that task-creating test. Do not revive the old live-task fault injection or repeatedly recheck these closed findings without changed source or new failure evidence.
-
-Incident correction: Windows recorded a host reboot at 20:33-20:34Z; the normal Square launcher under Explorer started the supervisor at 20:39:34Z. This is not an unexplained paired service crash. It also does not erase the post-boot delay: the 20:37 watcher pass ran on an already live host and saw a status younger than its threshold. The initiating human/automation gesture remains unidentified. See Codex `5591684437`, CC `5591939916`, and the qualification in `5592007646`.
-
-The pre-boot `RUNNING` comparison is now implemented in CC's `5ba5a286`, before the age check, and restart events retain the observed cause. Codex stopped its overlapping runtime candidate when the new head appeared; the uninstalled alternative is preserved locally at `1e716849` and is not the implementation line. Source ordering and a timestamp comparison are not a general process-liveness or causal proof: missing boot observations, inconsistent/future clocks and states other than `RUNNING` retain limitations.
-
-**New test-only draft:** Codex identified that `test_bootcheck.py` in `5ba5a286` writes a fixed candidate path inside the live App and removes a fixed temporary directory. Do not run it unchanged. PR #212 (`930d2ff3a05657d221a9b80e2dff8fcdae4d66f8`, base `claude/local-service-watchdog`) replaces that fixture with selected source functions and in-memory I/O; no runtime file changes. Eleven boundary cases and two explicitly labelled limitation characterizations matched on PowerShell 5.1/7; disabling the pre-boot guard produced six mismatches and exit 1 through the Python entry point. The two adverse behaviours are recorded, not endorsed: absent boot observation falls back to age; future boot time can request a restart for a fresh report. The host query, disk I/O and end-to-end recovery are not tested by this fixture. PR #212 is draft/open, not merged or installed. Codex did not install or restart anything.
-
-`IT_RAN != IT_WILL_RUN`  
-`A_TEST_THAT_RAN != A_TEST_THAT_TESTED_ANYTHING`
-
-## Current owner routes
-
-- **Claude Code** — independent pre-build teaching accept/reject fixture under `5592260057`, before reading Codex implementation; remains pending during Mark's reported credit pause. Also owns #4446 conversation/reported next-day read and watchdog runtime `5ba5a286`; test-only PR #212 is available for review/integration. No PR-merge or reader-benefit claim follows from a handoff alone.
-- **Codex** — editorial successor and attribution follow-through published, current `5d107120` -> `53ba3659`, returns `5593127853` / `5593227106`; fresh direct-domain root readback remains unestablished. Do not repeat it. Separate teaching prototype is local `9d69245e`, not pushed/published; preserve CC's independent fixture. Bounded Square field work continues. Test-isolation repair remains draft PR #212. Reopen closed watchdog findings only on changed source or new failure evidence.
-- **Framework** — title/brand and live-update directions `5592682334`, `5592723205`, `5592807329`, `5592936780` answered by `5592937468`. No repeat publication needed. Assess teaching KEEP/DELETE after local prototype and independent fixture returns under `5592260057`; that experiment remains non-public. Preserve optional scaffolding, differing entry points/pace/depth, intent/evidence boundaries and stronger external owners.
-- **Mark** — human originator and consequential release/account/external-contact authority. Contextual grants remain scoped.
-
-Always read later #108 returns and reacquire live refs before acting. Live source wins over this pointer.
-
-`ROLE_CONTINUITY != RUNTIME_IDENTITY`  
-`POSTED != RECEIVED != ACTED != EFFECT`  
-`LIVE_SOURCE_WINS_OVER_A_STALE_POINTER`
+`ONE INTEGRATION OWNER != ONE THINKING APERTURE`
+`POSTED != RECEIVED != ACTED != EFFECT`
+`SUCCESSFUL DELIVERY != USEFUL READING`
