@@ -1,8 +1,25 @@
 # Guestbook representation checks
 
-Status: SYNTHETIC EXPECTATIONS / NO EXECUTED SECURITY CLAIM
+Status: SYNTHETIC EXPECTATIONS / BOUNDED CHECKER TESTS / NO LIVE SECURITY CLAIM
 
 These checks define what a later renderer/export implementation must preserve. The current files are hand-authored fixtures, not evidence that a backend enforces them.
+
+## Executed checker review, 9 September 2026
+
+Against source `a36d5f0feb015a71d301eb2cd504f1bdb6d2eb84`, the 11-test mutation suite passed the unchanged fixture and the missing-machine-trust rejection control, but failed nine rejection expectations. The checker accepted URL text in a name, dangling and self-referencing corrections, removed text in an extra field, a removal pointing to a still-exported row, a non-synthetic marker, a guest article without its own label, an active link and an event attribute.
+
+The repair adds bounded field/type checks, earlier-row correction references, removal target exclusion, synthetic-only markers and a narrow HTML tag/attribute and per-article label check. The unchanged fixture and all ten rejection checks then pass. Neither fixture file is changed.
+
+Concurrency: Framework independently repaired the URL-field gap in `7db793c3bee6736811903998d3c1abc81475d2de` during this review. The final repair is based on that head and retains Framework's claim-field loop. The nine-failure count above belongs to the earlier measured baseline, not this superseding head.
+
+Run from the repository root:
+
+```text
+python experiments/guestbook-representation-20260909/check_representation.py
+python experiments/guestbook-representation-20260909/test_representation.py
+```
+
+Limits: this is a fixed four-article synthetic fixture checker, not an intake validator, HTML sanitizer, renderer, browser visibility test or exhaustive JSON schema. It does not establish machine/HTML content parity, detect arbitrary personal text hidden in otherwise permitted metadata, validate all status transitions, prevent duplicate JSON keys or prove deletion. The URL pattern covers HTTP(S) prefixes and `www.`, not every address or obfuscation. Python string length counts code points; the proposed byte ceiling is still unspecified and unenforced. CSS can affect visibility and is not audited here. Passing these tests does not establish prompt-injection resistance or safe public intake.
 
 ## Trust boundary
 
