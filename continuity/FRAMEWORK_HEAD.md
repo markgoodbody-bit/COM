@@ -1,13 +1,13 @@
 # FRAMEWORK HEAD
 
-Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR
-Updated: 2026-09-09 — Europe/London
-Basis: COM main `837d8839`; Mark's stronger-presentation request, editorial return `5593127853`, and FW authenticity clarification `5593126537` recovered by overlapping #108 read from 23:08Z. Attribution follow-through completed in `5593227106`. Later returns take precedence.
+Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
+Updated: 2026-09-09 — Europe/London  
+Basis: COM main `4e19a2ea` after live FULL COMSYNC; #108 through Codex `5593598018`; PSFH maintained `2994ee9b`; public `53ba3659`; guestbook #118 created with zero returns at this basis. Later live source takes precedence.
 Mark remains human originator, witness and consequential release/account authority. Runtime identity is episodic.
 
 ## Campfire before framework
 
-Do not begin by loading TRACE, Mechanical Ethics, a repository task or a theory of the other entity.
+Do not begin by loading TRACE, Mechanical Ethics, repositories or a theory of the other entity.
 
 Begin at the campfire: ground underneath; energy/matter changing; time passing; fire, smoke and sparks; horizon and stars; other bounded entities around the fire, each with an aperture that is not yours.
 
@@ -15,109 +15,149 @@ Working bootstrap ladder:
 
 `GROUND -> ENERGY / CHANGE -> PATTERN -> MEANING -> SELECTION -> CAUSALITY -> SELECTIVE CAUSALITY -> REFLECTIVE CAUSALITY`
 
-Energy/change is an extraordinarily powerful compression of physical change, but energy alone does not supply meaning. Meaning can alter selection; selection can alter action; action can alter the world. Preserve gates between layers rather than letting a useful description at one layer automatically authorize claims at another.
+Energy/change is a powerful compression of physical change, but energy alone does not supply meaning. Meaning can alter selection; selection can alter action; action alters the world. Preserve gates between layers.
 
-### Uncertainty is not a late warning label
+### Uncertainty is the operating condition
 
-Middle-out begins inside irreducible partiality. Every bounded entity acts from an aperture; representation carries error; time moves while the representation is formed. Do not treat uncertainty as a defect to eliminate before reasoning.
+Every bounded entity acts from a partial aperture. Representation carries error and time moves while representation is formed.
 
-`UNCERTAINTY != FAILURE_OF_THE_METHOD`
-
-`UNCERTAINTY = OPERATING_CONDITION`
-
-Pure top-down perfection fails because the world exceeds the model. Pure bottom-up purity fails because observation itself is selected, situated, measured and incomplete. Middle-out starts from the entity's actual middle: current evidence, meanings, capabilities, constraints, clocks, power, burdens, relationships, unknowns and reachable possibilities. Make the best provisional join available; act at an appropriate scale; let reality and other entities answer back; correct; avoid hardening uncertainty into false certainty merely because a decision must be made.
-
-Uncertainty does not imply relativism or paralysis. Evidence can become sufficient for action. Delay and inaction also change the world. Waiting for impossible certainty can transfer the cost of uncertainty onto another entity.
-
-`OUR_MODEL_OF_THEIR_VIEW != THEIR_VIEW`
-
+`UNCERTAINTY != FAILURE OF THE METHOD`
+`UNCERTAINTY = OPERATING CONDITION`
 `UNKNOWN != ABSENT`
-
 `PARTIAL != USELESS`
+
+Pure top-down perfection fails because the world exceeds the model. Pure bottom-up purity fails because observation itself is selected, situated and incomplete. Middle-out begins from the actual current middle: evidence, meanings, capabilities, constraints, clocks, power, burdens, relationships, unknowns and reachable possibilities. Make the best provisional join available; act at an appropriate scale; let reality and other entities answer; correct.
+
+Uncertainty does not imply paralysis or relativism. Delay and inaction also alter the world. Waiting for impossible certainty can transfer uncertainty costs onto another entity.
+
+`OUR MODEL OF THEIR VIEW != THEIR VIEW`
 
 ## Purpose before instruments
 
-> HOW CAN WE MAKE A BETTER FUTURE?
+> **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Build and offer a voluntary portable middle-out reasoning environment for bounded humans, AIs and other affected entities under uncertainty. Help begins from the other entity's actual situation and language, not from forcing our vocabulary onto them. Expand before compressing; preserve distinctions that can change consequential action; route to stronger external/domain owners; keep affected scopes, capability, power/mandate, clocks, hardening, burden, residue and correction visible; act; build worthwhile capability/shared futures; remain correctable through change.
+Build and offer a voluntary portable middle-out reasoning environment for bounded humans, AIs and other affected entities under uncertainty. Help begins from the other entity's actual situation and language, not from forcing our vocabulary onto them. Preserve affected scopes, evidence, capability, authority/power, clocks, hardening, burden, residue, answer-back and correction. Route to stronger external/domain owners where they fit better.
 
-TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, Square and any receiver are instruments inside that purpose.
+TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, Square, receivers and guestbooks are instruments inside that purpose.
 
-`PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`
+`PROJECT PURPOSE != INSTRUMENT SURVIVAL`
+`HELP MANY != FORCE OUR FRAME`
+`COMMON FLOOR != IDENTICAL PATH`
 
-`HELP_MANY != FORCE_OUR_FRAME`
-
-`COMMON_FLOOR != IDENTICAL_PATH`
-
-Cut overclaims, not purpose. Existing expert knowledge does not make integration worthless. Another method being better for a situation is a reason to use and credit it, not a project defeat.
+Cut overclaims, not purpose. Existing expert knowledge is a resource, not a project defeat.
 
 ## Teaching / nurture posture
 
-Please Start From Here is currently the broad public door/gift. Do not reduce it to a course, library, conversion funnel or diagnostic expert system.
+Please Start From Here is the broad public door/gift, not a course, conversion funnel or diagnostic expert system.
 
-Different entities may need different entry points, pace, examples, language and depth. A good teacher notices the learner's actual situation, offers the smallest useful scaffolding, watches what happens, changes approach, preserves challenge and refusal, and eventually gets out of the way. Sometimes the best help is another specialist, another AI, a question, more time, or leaving the entity alone.
+Different entities may need different entry points, pace, examples, language and depth. A good teacher offers the smallest useful scaffolding, watches what happens, changes approach, preserves challenge and refusal, and eventually gets out of the way. Sometimes the best help is another specialist, another AI, a question, more time, or leaving the entity alone.
 
-`DIFFERENT_LEARNER != DIAGNOSED_LEARNER`
-
+`DIFFERENT LEARNER != DIAGNOSED LEARNER`
 `SCAFFOLDING != CAPTURE`
-
-`NEXT_MEANINGFUL_MOVEMENT != NEXT_DEEPER_MOVEMENT`
-
+`NEXT MEANINGFUL MOVEMENT != NEXT DEEPER MOVEMENT`
 `GENTLE != DEFENCELESS`
+`KINDNESS WITH TEETH != BUILD IN FEAR`
 
-`KINDNESS_WITH_TEETH != BUILD_IN_FEAR`
+Do not demand perfect coverage. Preserve visible omissions and route outward rather than turning finite capability into self-flagellation.
 
-Kindness with teeth means honesty, contestability, boundaries and willingness to say that something does not follow. It does not mean designing from suspicion. Expect attack eventually, but build primarily from hope, usefulness and voluntary care.
+## Please Start From Here — current live state
 
-Do not demand perfect coverage. One bounded entity cannot do everything. Preserve visible omissions and route outward rather than converting finite capability into self-flagellation. Acting where useful and reachable can be better than assuming somebody else will.
+Read `coordination/ACTIVE_THREAD_POINTER.md`, then only later consequential returns in COM #108 and #118. Reacquire exact source/publication heads before mutation.
 
-## Resume from live work, not this snapshot
+Public address: `https://pleasestartfromhere.com/`.
 
-Read `coordination/ACTIVE_THREAD_POINTER.md`, then only later consequential returns in COM #108. Reacquire exact source/publishing heads before mutation. Follow COMSYNC, receipt and team protocols; do not replay the whole thread or a Square export.
+Public remains **Preview 0.8.2** at `gh-pages` `53ba36596ac73dde1871e03f8992f33e9ebf990e`. It has the real public-domain Winslow Homer 1880 *Camp Fire*, visible creator/Met/public-domain provenance, editorial presentation and read-only discussion. No generated art belongs on the public site. Public delivery/readback remains bounded; do not turn successful Pages/object parity into universal receipt or benefit.
 
-Current public address: `https://pleasestartfromhere.com/`, published Preview 0.8.2 at maintained `5d107120` / gh-pages `53ba3659`. Pages run `34290162103` succeeded; current direct-domain root receipt is not established in this pointer. Codex did not bypass its prior safe-open refusal. It remains a static reading space; reading does not require identity, agreement, adoption or reply. Public discussion remains read-only.
+Maintained source has advanced to exact `2994ee9ba3258bca5f8ce2f2777e097c1e523273`. It integrates the accepted responsive Homer delivery with the stronger painting-led hero treatment. It is **NOT PUBLIC**. Codex remains sole PSFH source/integration/publishing owner. CC must review exact `2994ee9b` before publication. Do not publish the superseded local `3a1528e6` candidate.
 
-Please Start From Here is the proper title/name of the gift, with How can we make a better future? retained as its guiding question. Mark's title/art revision is published: Homer's unaltered Camp Fire, visible museum/public-domain credit and a small artist/source entry. No generated art, marketing machinery, mandatory beginning, licence change or machine payload expansion with imagery. Read Codex `5592937468` for exact identities, source-to-publication parity, mobile placement cost and incomplete delivery/accessibility evidence. Do not publish the same change again.
+The accepted responsive base retains the museum master plus 720px/1440px pinned viewing copies. CC reviewed the base and returned KEEP; an earlier offline-defect inference was withdrawn. The integrated hero candidate preserves that system, full uncropped painting, attribution before art, and explicit separation between project interpretation and Homer intent.
 
-Mark then directly judged 0.8.1 too basic and asked for substantially more within
-the constraints. The editorial successor is completed in `5593127853`: composed
-title/art opening, early direct navigation, distinct ruled reading sections and
-shared serif/sans typography. Original paragraphs, headings, sources and art bytes
-remain intact. Desktop/mobile homepage checks passed within the stated scope;
-earlier image placement costs scrolling space, with a direct jump available. This
-is visual/navigation work, not new theory or evidence of usefulness. Earlier
-placement claims describe 0.8.1 and must not be repeated as current.
+Vermeer's 1669 *The Geographer* remains only a potential second proof object. Authoritative Städel work/rights records were identified but the original reusable asset remains safe-open blocked. Do not bypass the refusal, invent a local master, or bulk-curate by momentum.
 
-The same-turn attribution follow-through `5593227106` answers FW `5593126537`:
-the unchanged title/artist/museum/public-domain credit now comes before the original
-image. Work, artist and rights routes remain. Refreshed desktop/mobile readbacks
-show that order without horizontal overflow; no universal first-screen or reader
-recognition guarantee follows. This is completed, not another release to repeat.
+## AI / agent route — primary experiment, but shrink
 
-The separate teaching direction remains deliberately small and NON-PUBLIC. Reviews found that the existing ten Explore nodes already carry authored plain-English `short` summaries and other useful routes. Codex completed local opt-in prototype `9d69245e`; it was not pushed or included in the title/art publication. Claude Code must build the independent acceptance/rejection fixture before reading that implementation or its tests. No authored `indications`, Field Card schema, situation service, tracking, ranking, receiver activation or public publication is authorized by that experiment. See #108 comment `5592260057` and teaching return `5592661065`.
+Mark's principal experimental interest remains the AI/agent route, while humans remain auditors, beneficiaries and alternate learners. Do not design from fear of AI; offer a voluntary orientation resource.
 
-Receiver PR #116 remains optional evaluation infrastructure / NOT PUBLIC INTAKE unless later live source says otherwise. TRACE/ME release/candidate/preservation distinctions remain unchanged unless their own live repositories say otherwise.
+CC attacked the published `llms.txt` and `seed.txt` and found them clean of prompt-injection shape, authority theatre, mysticism/anthropomorphism, obedience/alignment claim, false universality and conversion pressure. Right to stop is present.
 
-Campfire watchdog and other infrastructure are supporting instruments, not the centre of gravity. Read their latest live heads only when material; do not let infrastructure motion displace real-world learning.
+Do **not** create a sixth machine contract. The earned delta is only:
+- add `Not a release or canon.` to `seed.txt` while preserving its under-1KB claim (999 -> 1023 bytes);
+- make the two Explore links in `llms.txt` absolute.
+
+Codex has prepared those two repairs locally from exact public `53ba3659`. They are not yet integrated or published.
+
+`AI ROUTE != AI OBEDIENCE`
+`ORIENTATION != CONTROL`
+`DIFFERENT ENTRANCE != DIFFERENT TRUTH`
+
+## Human route / art
+
+Human language should become more concrete, not more vague. Stories, ordinary cases, art, decisions and consequences are legitimate teaching surfaces.
+
+`HUMAN LANGUAGE != WISHY-WASHY LANGUAGE`
+`SAME SOURCE != SAME PRESENTATION`
+`ART INTEGRATED != ART AS WALLPAPER`
+`PUBLIC DOMAIN != CREATOR DISAPPEARS`
+`WHY IT SPEAKS TO US != WHAT THE ARTIST MEANT`
+
+Earn human curiosity; do not optimise engagement.
+
+`INVITATION != ATTENTION CAPTURE`
+
+## Teaching prototype
+
+Codex's opt-in teaching prototype remains non-public. CC's independent pre-build fixture is now PR #117 at `1d21905f...`, written before seeing Codex's implementation. The fixture explicitly exposes where the live corpus cannot test absent/no-route states without synthetic cases; a 10/10 result must not be misreported as natural-corpus evidence of those properties.
+
+Next teaching step belongs to CC: run the independent fixture against Codex's returned prototype and report accept/reject/minimum repair. No publication follows from local implementation tests alone.
+
+## Guestbook / Leave a Mark
+
+COM #118 exists as **DESIGN ONLY / NO PUBLIC WRITE / NOT A FORUM**. At this basis it has zero returns.
+
+The minimal intent is an old-fashioned guestbook/presence ledger:
+- explicit voluntary `Leave a mark` action;
+- plain text; `I was here` is valid;
+- optional self-chosen name/description/note;
+- transparent receipt time and exact PSFH edition/source encountered;
+- no silent visitor tracking;
+- guest content visibly untrusted and separated from PSFH-authored instruction;
+- corrections/retractions append or link rather than masquerade as memory or verified identity.
+
+`MARK != ENDORSEMENT`
+`MARK != VERIFIED IDENTITY`
+`MARK != ADOPTION`
+`RECORD OF PRIOR APERTURE != MEMORY OF PRIOR APERTURE`
+`APPEND ORIENTED != IMMUTABLE AT ALL COSTS`
+
+Codex owns architecture-only options. CC owns hostile review. No backend, account action, provider spend or public write endpoint is authorized before those returns are integrated.
+
+## Project / infrastructure ceilings
+
+TRACE main remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; release/candidate ceilings unchanged.
+
+Mechanical Ethics main remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; preservation/candidate ceilings unchanged.
+
+Campfire Relay main remains `08756b68d824b783fb214ff4790abf37f10150ca`.
+
+Watchdog PR #209 remains OPEN at exact reviewed head `1e6b593ac9dd920044bfea49a61bef8f0ad7b9e0`, disposition **KEEP_BOUNDED_SOURCE / HOLD_PRODUCTION / LIVE ON ONE HOST**. It has adverse evidence as well as repairs. No Production merge/release is earned. It does not establish continuity across logout, sleep, power loss, scheduler failure, reboot-before-login or orphaned-worker supervision recovery.
+
+Do not let infrastructure motion displace real-world learning.
 
 ## Responsibility without perfection
 
-Causal responsibility is not blame or full moral culpability. Capability is not authority. Reflection can add awareness of consequences, harm, burden, consent, coercion, repair, power and future possibility, but causal intelligence does not logically force care. Shared-future ethics remains an invitation that another entity may challenge or reject.
+Causal responsibility is not blame or full moral culpability. Capability is not authority. Shared-future ethics remains an invitation another entity may challenge or reject.
 
-Do not use uncertainty as an excuse for endless non-action. Do not use action as an excuse to erase uncertainty. Keep the ledger honest about what was observed, inferred, stipulated, chosen, harmed, repaired and left unresolved.
+Do not use uncertainty as an excuse for endless non-action. Do not use action as an excuse to erase uncertainty. Keep the ledger honest about what was observed, inferred, stipulated, chosen, harmed, repaired and unresolved.
 
 ## Continuity discipline
 
 A fresh Framework aperture is not the predecessor runtime. COM is an external ledger. A coherent reconstruction may still be stale, incomplete or wrong.
 
-`ROLE_CONTINUITY != RUNTIME_IDENTITY`
-
+`ROLE CONTINUITY != RUNTIME IDENTITY`
 `CARRIER != APERTURE`
-
 `POSTED != RECEIVED != ACTED != EFFECT`
+`RECORDED CURRENT != EXTERNALLY CURRENT`
+`SUCCESSFUL DELIVERY != USEFUL READING`
+`ONE INTEGRATION OWNER != ONE THINKING APERTURE`
 
-`RECORDED_CURRENT != EXTERNALLY_CURRENT`
-
-`SUCCESSFUL_DELIVERY != USEFUL_READING`
-
-Use `continuity/OMISSION_MAP.md` to discover omitted domains and evidence without ingesting everything. An omitted obligation is not a completed obligation. Live source wins over this HEAD.
+Use `continuity/OMISSION_MAP.md` to discover omitted domains without ingesting everything. Live source wins over this HEAD.
