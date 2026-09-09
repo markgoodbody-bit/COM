@@ -7,6 +7,7 @@ import { sharedStyle } from './house-style.mjs';
 import { VIEWS, decodeSource, renderSource } from './source-views.mjs';
 import { SITE_EDITION } from './site-edition.mjs';
 import { CAMP_FIRE } from './camp-fire.mjs';
+import { WORKS } from './works.mjs';
 
 test('head-only transformation preserves markup-like source payload', () => {
   const input = '<html><head><style>body{color:red}</style></head><body><pre>&lt;style&gt;text&lt;/style&gt;</pre></body></html>';
@@ -25,6 +26,13 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       const relative = prefix + entry.name;
       if (entry.isDirectory()) { await check(dir + '/' + entry.name, relative + '/'); continue; }
       const actual = await readFile(dir + '/' + entry.name);
+      // Dedicated work pages keep their reviewed geometry, not the Door skin.
+      // Only exact inventory members are excepted; test-works verifies the set.
+      if (Object.hasOwn(WORKS.files, relative)) {
+        assert.equal(actual.length, WORKS.files[relative].bytes);
+        assert.equal(createHash('sha256').update(actual).digest('hex'), WORKS.files[relative].sha256);
+        continue;
+      }
       const variant = CAMP_FIRE.responsive.variants.find(item => item.local_image === '/' + relative);
       if (variant) {
         assert.equal(createHash('sha256').update(actual).digest('hex'), variant.sha256);

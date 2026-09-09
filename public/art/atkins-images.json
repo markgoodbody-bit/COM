@@ -1,0 +1,67 @@
+[
+  {
+    "source": {
+      "object_id": "291638",
+      "title": "Ulva lactuca",
+      "creator": "Anna Atkins",
+      "acquired_at_utc": "2026-09-09T17:44:38.284174+00:00",
+      "requested_url": "https://images.metmuseum.org/CRDImages/ph/original/DP-17302-145.jpg",
+      "final_url": "https://images.metmuseum.org/CRDImages/ph/original/DP-17302-145.jpg",
+      "http_status": 200,
+      "mime": "image/jpeg",
+      "width": 3375,
+      "height": 4000,
+      "mode": "RGB",
+      "icc_bytes": 3136,
+      "exif_orientation": null,
+      "bytes": 4494739,
+      "sha256": "ae5864af965af2d8a063016b1df67a9e765270281b9bc313513cde12d9f974a6",
+      "object_url": "https://www.metmuseum.org/art/collection/search/291638",
+      "rights_observation": "Official object page displays Public Domain and states public domain images are available for unrestricted commercial and noncommercial use without permission or fee.",
+      "source_category": "Met Open Access API primaryImage",
+      "master_status": "UNKNOWN",
+      "status": "ACQUIRED",
+      "file": "DP-17302-145.jpg",
+      "rights_observer": "Codex asset subagent met_assets_a",
+      "local_integrity_readback": "Codex root reread bytes, SHA and decoded metadata",
+      "transformations": [],
+      "selection_status": "CURRENT_BATCH_A_TARGET"
+    },
+    "parent_file": "atkins-source.jpg",
+    "variants": [
+      {
+        "file": "atkins-720.jpg",
+        "width": 720,
+        "height": 853,
+        "bytes": 86776,
+        "sha256": "0229c3897343eb90135e9b0f98f6ed4fb29750d355f21fb9f343263b67a41f60",
+        "parent_sha256": "ae5864af965af2d8a063016b1df67a9e765270281b9bc313513cde12d9f974a6"
+      },
+      {
+        "file": "atkins-1440.jpg",
+        "width": 1440,
+        "height": 1707,
+        "bytes": 388918,
+        "sha256": "41ac029360ed274a92d0896aeb6a86d01622e24bc510945506ca0d870c31c809",
+        "parent_sha256": "ae5864af965af2d8a063016b1df67a9e765270281b9bc313513cde12d9f974a6"
+      }
+    ],
+    "tool": {
+      "pillow": "12.2.0",
+      "jpeg": "8.0"
+    },
+    "settings": {
+      "filter": "Lanczos",
+      "quality": 86,
+      "subsampling": 2,
+      "optimize": false,
+      "progressive": false,
+      "mode": "RGB retained",
+      "icc": "retained byte-for-byte",
+      "exif": "No EXIF copied; orientation absent or1",
+      "crop": false,
+      "upscale": false
+    },
+    "purpose": "Smaller full-frame delivery copies; originals remain linked. Not colour-fidelity validation."
+  }
+]

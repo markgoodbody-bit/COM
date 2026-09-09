@@ -12,7 +12,7 @@ export default function Home() {
     <a className="skip" href="#start">Skip to the introduction</a>
     <header className="masthead" id="top">
       <a className="site-name" href="#start">Please Start From Here</a>
-      <nav aria-label="Reading routes"><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
+      <nav aria-label="Reading routes"><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
       <span>Working preview · Site Preview {SITE_EDITION}</span>
     </header>
     <main id="start">
