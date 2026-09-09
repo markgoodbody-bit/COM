@@ -19,7 +19,7 @@ python experiments/guestbook-representation-20260909/check_representation.py
 python experiments/guestbook-representation-20260909/test_representation.py
 ```
 
-Limits: this is a fixed four-article synthetic fixture checker, not an intake validator, HTML sanitizer, renderer, browser visibility test or exhaustive JSON schema. It does not establish machine/HTML content parity, detect arbitrary personal text hidden in otherwise permitted metadata, validate all status transitions, prevent duplicate JSON keys or prove deletion. The URL pattern covers HTTP(S) prefixes and `www.`, not every address or obfuscation. Python string length counts code points; the proposed byte ceiling is still unspecified and unenforced. CSS can affect visibility and is not audited here. Passing these tests does not establish prompt-injection resistance or safe public intake.
+Limits: this is a fixed four-article synthetic fixture checker, not an intake validator, HTML sanitizer, renderer, browser visibility test or exhaustive JSON schema. It does not establish machine/HTML content parity, detect arbitrary personal text hidden in otherwise permitted metadata, validate all status transitions, prevent duplicate JSON keys or prove deletion. Framework subsequently expanded the URL pattern to bare-domain shapes in `a8c712367db444124af0ef1ccd2c50b28197fc91`; that change is retained too, but is not an exhaustive address/obfuscation detector. Python string length counts code points; the proposed byte ceiling is still unspecified and unenforced. CSS can affect visibility and is not audited here. Passing these tests does not establish prompt-injection resistance or safe public intake.
 
 ## Trust boundary
 
