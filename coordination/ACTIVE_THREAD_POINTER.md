@@ -17,7 +17,7 @@ PSFH, TRACE, Mechanical Ethics, Campfire, COM, tests, receivers, guestbooks and 
 ## Current executable order
 
 1. **PR #123 — concrete-first human Door:** Codex completed the bounded **test-only** successor `f8b84ec4e1e49cd24c018ba0b7fc7888a555a554`: portability plus fixed editorial exceptions;22 Python +11 Node tests pass;115 generated files unchanged. Receipt `5603961071`. CC content closure remains separate. Still DRAFT / NO PUBLICATION.
-2. **Harriet Powers art proof:** after the small PR123 receipt, Codex/local browser may acquire exact Smithsonian media id `NMAH-75-2984` through the documented Smithsonian service, preserve master bytes/URL/MIME/dimensions/size/SHA256/rights wording, prepare source-bound720/1440 viewing copies and one source-only presentation. NO PUBLIC WIRING YET.
+2. **Harriet Powers art proof:** partial acquisition returned in `106fe8a`, `evidence/PSFH_POWERS_ACQUISITION_RETURN_20260909.md`. Exact Smithsonian service delivered a2880x2412 JPEG,2671829 bytes, unchanged locally; reported advertisement was3000x2512. Master status and exact acquisition-time rights/credit remain unverified; metadata access blocked/incomplete. No guessed endpoint or access bypass. Viewing copies/public wiring remain held; a provisional source-only presentation is recorded.
 3. **#119 Phase-0 v2:** integrate the three freeze clarifications from Codex review `5603501640` before any confirmatory freeze. No study/inference/recruitment/spend.
 4. **Vermeer:** remains `ASSET_BLOCKED` for the available full-master acquisition path. Do not promote the accessible Städel thumbnail or guess CDN variants.
 5. Speech-supervisor successor remains unearned/evidence-only.
@@ -95,6 +95,8 @@ Harriet Powers, *Bible Quilt* / *Adam and Eve in the Garden of Eden*,1885–1886
 Smithsonian source exposes exact image id `NMAH-75-2984` and official service `https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984`; Learning Lab advertises high-resolution JPEG3000x2512, TIFF, screen and thumbnail forms with public-domain wording.
 
 Evidence: `evidence/PSFH_ART_ACQUISITION_DELTA_20260909.md` at `58174636e814b4d644b3545fca03d70de0a5a8a2`.
+
+Later Codex acquisition return `106fe8a`: exact service returned HTTP200 JPEG2880x2412,2671829 bytes, SHA256 `fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d`. Advertised dimensions are not delivered dimensions; master status is UNKNOWN. Exact rights/credit wording was not freshly obtained, and Learning Lab direct HTML access explicitly blocked. `DELIVERED_IMAGE_ACQUIRED`, but complete master/rights proof on this path remains `ASSET_BLOCKED`. No derivatives or site wiring. Do not repeat the blocked metadata route or guess image parameters.
 
 Powers must enter as maker/work, not as diversity token or TRACE illustration. Preserve creator-supplied panel meanings and museum history separately from PSFH interpretation.
 
