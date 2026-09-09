@@ -2,17 +2,17 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: Codex receipt reconciliation2026-09-09T14:17Z, starting COM `4f00adc`; named live receipts below. Later live source wins.
+Basis: `coordination/ACTIVE_THREAD_POINTER.md` at COM `384f114295b87eb01187a6736064bb53d6fdb556`. Later live source wins.
 
-Mark remains human originator, witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
+Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
-## Orientation / purpose
-
-Begin at the campfire: situated ground, change through time, bounded apertures, other entities whose views are not ours. Middle-out from actual evidence, meanings, capabilities, clocks, burdens, power, unknowns and reachable possibilities. Delay and inaction also change the world.
+## Orientation
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Build and offer the best honest voluntary gift possible. TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, receivers and guestbooks are instruments.
+Start from the actual middle: bounded aperture, change through time, other entities, evidence, meanings, capabilities, clocks, power, burdens, unknowns and reachable possibilities. Delay and inaction also change the world.
+
+TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, tests, guestbooks and art are instruments.
 
 `UNCERTAINTY = OPERATING_CONDITION`  
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
@@ -21,58 +21,83 @@ Build and offer the best honest voluntary gift possible. TRACE, Mechanical Ethic
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later returns from COM #108/#118/#119 and PR #123/#124/#125.
-3. Reacquire exact maintained/public heads before mutation.
+2. Reacquire later returns from #108/#118/#119 and PR #123 plus any new art-source proof.
+3. Reacquire maintained/public heads before mutation.
 4. Use `continuity/OMISSION_MAP.md` selectively; do not replay large carriers for reassurance.
 
 ## Current consequential state
 
-### Desktop
-Temporary quiet mode active: scheduled `Campfire Local Service Watch` disabled but preserved; one unchanged hidden120s `-Loop` watchdog, last verified PID13276/mutex held, Codex observed it fresh again around13:17Z with task still disabled. Project AIs cannot see Mark's screen, so popup cessation is not inferred. If loop dies nothing currently resurrects it. Do not run scheduled passes alongside it or reopen launcher work. Rollback exists locally but is untested.
+### Public PSFH
 
-### Homer publication
-Maintained exact successor `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`: 55% feather, full uncropped painting, container-driven separate row for enlarged/constrained title, old-engine separate-row fallback,1440 ordinary image fallback, provenance preserved.
+Homer presentation is deployed:
+`gh-pages dd06d95cb880208b30f703c54af33c2440c97812`, Pages run `34360186077` SUCCESS.
 
-Framework authorisation `5602690583` was executed after exact CC KEEP. Sourcecfdacc4 deployed as gh-pages `dd06d95cb880208b30f703c54af33c2440c97812`; Pages run34360186077 succeeded at13:55:39Z. Codex receipt `5603125704` verifies115 GitHub blob identities and preserves the unavailable direct-domain readback. No PR123/124/125 bundled. Do not repeat publication; deployment and direct served-byte observation remain distinct.
+CC independently verified served presentation and corrected its own earlier review: reachable `<img src>` fallback is the pinned1440 copy, not museum original. Fallback change +55% scrim both shipped; museum original remains separately served/linked provenance. Do not repeat publication.
 
-### PR #123
-Draft/non-public concrete-first page, current head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`, base Homer successor. CC returned REPAIR_SMALL. Framework restored:
-- authority-vs-reference-number mechanism in the story;
-- read-only/no-reply discussion ceiling;
-- no-demand curiosity sentence.
+Maintained PSFH source advanced source-only through PR #125 merge:
+`7a5a50dbe81574a246236f5762830112445bbaec`.
+Those seed/llms changes are not yet public.
 
-The short story remains source-labelled composite and does not reproduce all rent-increase/tribunal detail. Codex completed the mechanical CSS relocation; receipt `5603125416` records build/11 Node tests passing and bounded desktop/mobile comparison. The Python suite still has14 passes,1 failure,5 errors, also present on untouched420ec9c. Publishing-checkout path errors and old content expectations need separate reconciliation; CC closure review remains open. Do not merge/publish yet.
+### PR #123 — concrete-first human Door
 
-### PR #124
-Draft/non-public synthetic guestbook at `56cdd4bd72258027cf3901a9ed5170d1d9afef52`. Codex reran the integrated checker and13-test suite successfully, receipt `5603049971`. CC review `5603041527` returned REPAIR_SMALL: claimed names should not become HTML headings; use authored headings and inline claim qualifiers. Structural markers are suggestions, not guaranteed survival through tag stripping (Codex correction `5603125704`). Repair/review remains open. Still no intake/backend/real guest data/public route.
+Draft/non-public head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`.
 
-### PR #125
-Draft/source-only tiny AI-handoff repair, head `085b810cdcbb802c4c81721461d1e037f89922db`, base cfdacc4. Exactly two files: seed gains `Not a release or canon.` and remains1023 UTF-8 bytes; final two `llms.txt` Explore links become absolute. Keep separate from Homer publication until deliberately reviewed/integrated.
+Product intent is retained: source-labelled `Two flats, one wall` composite, authority/access mechanism, three human entrances, no-demand sentence, read-only/no-reply ceiling, quieter but direct machine/text routes.
+
+CSS relocation is mechanically sound. Remaining Python failures are pre-existing/stale test-contract issues, not observed CSS regressions. Codex accepted Framework direction #108 `5603859299` to build a **test-only** successor that integrates checkout portability and updates only intentionally superseded assertions while preserving historical regression protection through an explicit editorial allowlist. Do not restore the old five-card product merely for green tests.
+
+After test receipt, CC closes content findings. Still no merge/publication authority inferred.
+
+### Guestbook representation
+
+The synthetic representation experiment is CLOSED and preserved in COM main:
+merge `75f80f4ce5340817649eefbcf4f0b53d7dec713e`.
+
+Exact repaired head `3a8fff7c...` passed17/17 tests; CC closed the visitor-heading/trust finding. This is **not intake**: no form/backend/provider/credentials/real data/public route.
+
+`SYNTHETIC_CHECKER != PUBLIC_INTAKE_SECURITY`
+
+### Human art
+
+Vermeer full-master acquisition remains `ASSET_BLOCKED` for the available documented path; do not promote Städel `thumb-xl` or guess variants.
+
+Harriet Powers acquisition proof is open:
+Smithsonian image id `NMAH-75-2984`, official documented delivery service. Codex/local operator may acquire exact master, preserve URL/MIME/dimensions/bytes/SHA256/rights, prepare source-bound720/1440 viewing copies and one source-only presentation. No public wiring yet.
+
+Evidence: `evidence/PSFH_ART_ACQUISITION_DELTA_20260909.md` at `58174636...`.
+
+`HOMER_DEPLOYED -> VERMEER_ASSET_BLOCKED -> POWERS_ACQUISITION_PROOF`
 
 ### #119
-Phase0 v1 not freezeable. V2 `8372ca1fe703a193255b84487410f289498669c0` separates calibration→fresh holdout, treats zero accounts separately, retains source-insufficient proposals before filtering, uses one-to-one matches and strict three-edge families, avoids pooled median, and refuses arbitrary replacement thresholds before calibration. DESIGN NULL is valid. No study execution/spend.
 
-### Speech supervisor
-CC repaired fixture `e4b7e72`; instrument improved, application still unearned. Overnight root cause and grace values remain unknown. No live fault injection.
+Phase-0 v2 remains design/calibration input only; practical advantage unproven and no study run.
 
-## Current project heads / gates
+Before freeze, integrate Codex review #119 `5603501640`:
+- raw vs eligible counts separate; zero eligible denominator => coverage UNDEFINED;
+- assign custody/evidence/dispute semantics for `SOURCE_SUFFICIENT`;
+- distinguish explicit no-match from not-assessed/not-chosen and define `UNCERTAIN`.
+
+No threshold invention, inference, recruitment or spend.
+
+### Desktop
+
+Temporary quiet mode: scheduled two-minute task disabled/preserved; hidden120s watchdog loop remains workaround. Codex last observed same PID13276 and services RUNNING at14:49Z. If loop dies nothing resurrects it. Do not run scheduler alongside it or reopen launcher experiments without new evidence.
+
+## Baselines / gates
 
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
-Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.  
-PSFH maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.  
-PSFH public gh-pages checked14:17Z: `dd06d95cb880208b30f703c54af33c2440c97812`; direct-domain readback unavailable.
+Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
 
 ## Roles
 
-- **Framework:** coordination lead/integrator; purpose, outside evidence, product judgement, consequential gates. Make ordinary reversible decisions.
-- **Codex:** executable product/host engineering and deterministic study design.
+- **Framework:** coordination lead/integrator; purpose, evidence, product judgement and consequential gates. Make ordinary reversible decisions.
+- **Codex:** executable product/host engineering, local browser acquisition and deterministic study design.
 - **Claude Code:** independent hostile review/failure modes; not second integration owner.
 - **Mark:** originator/witness/consequential authority; ordinary reversible choices stay with team.
 
-`REVIEW_GATE_CLEARED != PUBLICATION_COMPLETE`  
 `POSTED != RECEIVED != ACTED != EFFECT`  
 `RECORDED_CURRENT != EXTERNALLY_CURRENT`  
 `ONE_INTEGRATION_OWNER != ONE_THINKING_APERTURE`
