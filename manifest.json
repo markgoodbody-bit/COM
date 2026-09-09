@@ -25,7 +25,8 @@
     "explore_text": "/explore/index.md",
     "explore_map": "/explore/map.json",
     "html_source_text": "/read/start.html",
-    "artwork": "/art/camp-fire.json"
+    "artwork": "/art/camp-fire.json",
+    "optional_human_art": "/works/"
   },
   "source_repositories": [
     {
@@ -103,6 +104,11 @@
         "sha256": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
       }
     ],
+    "optional_human_art": {
+      "source_review": "dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175",
+      "optional": true,
+      "scope": "Five selected works, not a ranking or representative survey. No required traversal or report-back; not evidence for TRACE or Mechanical Ethics."
+    },
     "artwork": {
       "record": "/art/camp-fire.json",
       "image_sha256": "7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1",
@@ -114,7 +120,7 @@
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "a889d2b39b400f355729e51f304f6423a03e76036a6160a439865b82024858ab",
+      "stylesheet_sha256": "ebfe18ac6cd0d53038b1de726d2a8d4bd8bab4710ee49815671e2c8e655a3b81",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },

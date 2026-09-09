@@ -1,5 +1,32 @@
 # Campfire Door public preview
 
+## Five optional Works, 9 September 2026
+
+Published source: maintained `a5931ed238c3076e9ebf59c20cd795d135b129c9`,
+whose complete source tree matches tested candidate
+`96cc7a48a26241be14701a7d8e6225a927bc030f` (PR135). PR135 and PR134 were
+merged after Mark directly instructed publication. Authority receipt:
+[Codex5608278935](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5608278935).
+
+Adds one optional Works link, five artist/work pages and their source records,
+six sitemap entries, and the tested mobile navigation adjustment. The original
+Homer opening and all reading resources remain. Selection and non-endorsement
+boundaries remain; unpublished page labels are removed. No AI-arrival draft,
+privacy claim, tracking, new art acquisition, TRACE/ME release or hosting change
+is included. The existing edition is unchanged.
+
+The verified build contains 154 files. Relative to the preceding publication,
+36 Works files are added, four existing output files change, and no output path
+is removed. All generated files were copied with SHA-256 parity. CNAME,
+.nojekyll and publishing attributes are preserved. Candidate evidence includes
+17 Node tests, 22 Python tests, exact local HTTP delivery and eight representative
+viewport observations. These checks do not establish reader benefit.
+
+GitHub Pages completion and any permitted direct-domain readback are recorded
+separately in COM after deployment; a commit alone is not proof of served bytes.
+Rollback is an ordinary content revert to prior publication
+`9ba8557cbc197e634bb8252f1ce6b977273ff29b`, preserving DNS and hosting metadata.
+
 ## Homer layout successor, 9 September 2026
 
 Exact maintained source: `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
