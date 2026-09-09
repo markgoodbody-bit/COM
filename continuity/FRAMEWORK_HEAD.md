@@ -1,14 +1,14 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
-Updated: 2026-09-09 12:13 Europe/London  
-Basis: live `coordination/ACTIVE_THREAD_POINTER.md` written at commit `82e1e9c371312f1c6645026110087f514f9e3393`; COM #108 through Framework `5600887969` / execution instruction `5600822527`. Later live source wins.
+Updated: 2026-09-09 12:37 Europe/London  
+Basis: live `coordination/ACTIVE_THREAD_POINTER.md` at commit `c0b70cdfd48f593564344f6e8b5710d4a29f188e`. Later live source wins.
 
 Mark remains human originator, witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
 ## Boot orientation
 
-Begin at the campfire: ground underneath; matter/energy changing; time passing; most reality beyond the aperture; other bounded entities around the fire with points of view that are not ours.
+Begin at the campfire: ground underneath; matter/energy changing; time passing; most reality outside the aperture; other bounded entities around the fire with points of view that are not ours.
 
 `GROUND -> ENERGY/CHANGE -> PATTERN -> MEANING -> SELECTION -> CAUSALITY -> SELECTIVE_CAUSALITY -> REFLECTIVE_CAUSALITY`
 
@@ -17,7 +17,7 @@ Begin at the campfire: ground underneath; matter/energy changing; time passing; 
 `PARTIAL != USELESS`  
 `OUR_MODEL_OF_THEIR_VIEW != THEIR_VIEW`
 
-Middle-out starts from the actual middle: evidence, meanings, capabilities, constraints, clocks, power, burdens, relationships, unknowns and reachable possibilities. Uncertainty does not imply paralysis; delay and inaction also change the world. Act at appropriate scale, let reality and other entities answer, remain correctable.
+Middle-out starts from the actual middle: evidence, meanings, capabilities, constraints, clocks, power, burdens, relationships, unknowns and reachable possibilities. Delay and inaction also change the world. Act at appropriate scale, let reality/other entities answer, remain correctable.
 
 ## Purpose
 
@@ -37,43 +37,44 @@ Do not turn PSFH into a course, conversion funnel, identity diagnostic, authorit
 ## Retrieval order
 
 1. Read live `coordination/ACTIVE_THREAD_POINTER.md`.
-2. Reacquire later consequential returns from COM #108/#118/#119 and current review PRs.
+2. Reacquire later consequential returns from COM #108/#118/#119.
 3. Reacquire exact source/public heads before mutation.
 4. Use `continuity/OMISSION_MAP.md` for omitted domains; do not replay huge carriers for reassurance.
 
-## Current priority receipt
+## Current consequential state
 
-### 1. Desktop flash
+### PSFH presentation — immediate priority
+Public Preview0.8.3 remains `589514fff41d0a65315377093089838026bbd1ec`. Maintained unpublished source remains `60f6886542bb5c290180e989eb1bbdfa6acad11a`.
 
-The WScript hidden-launch route has been **falsified on Mark's host**. Disposable Task Scheduler probe showed the execution limit killed WScript while PowerShell child survived and completed. PR #214 is closed unmerged; live task was untouched.
+Direction: full Homer painting; high-left canopy title; people/fire clear; provenance below/right; feathered field rather than hard card; separate row when overlay cannot remain robust; pinned1440 ordinary fallback; original museum asset preserved as provenance.
 
-Do not install WScript. Do not weaken timeout/IgnoreNew. Do not blindly use kill-on-close Job Objects because the watchdog intentionally starts long-lived recovery services that could inherit the job.
+Remaining gate: bounded page-reflow proxy + disposable 200% text-size stress + 55%/60% feather comparison, then CC exact review. Prefer the lighter field if sound. Enlargement failure -> separate row, never heavier card. KEEP/nonblocking -> Codex may publish Homer successor alone under existing authority.
 
-Next candidate is source/fixture only: tiny GUI-subsystem executable hosting Windows PowerShell 5.1 **in-process**, with tests for no-console shape, exit/error propagation, `$PSScriptRoot`/cmdlet behavior, scheduler timeout of in-process watcher logic, and deliberate survival of a harmless service-like child after normal host exit. If semantics cannot be reproduced cleanly, return NULL.
+### Next human editorial layer
+After Homer, prototype concrete-first flow source-only: ME **Composite Scene** `Two flats, one wall`, 1–2 questions, then three human movements: situation / possibility / explore-question-disagree. Machine/technical routes remain direct but visually quieter. Adding story creates subtraction obligation. Artifacts: `dd09c9e...` and `a348ccfa...`.
 
-`FALSIFIER_FIRED -> CANDIDATE_DIES`
+`STORY -> QUESTION -> OPTIONAL_DEPTH`
 
-### 2. PSFH Homer
+### Desktop flash
+Repair line CLOSED FOR NOW with NULL. Live direct-PowerShell task remains unchanged and still flashes briefly. WScript failed forced-timeout containment; conhost lost failure status; in-process GUI host failed general exit semantics and one harness stalled. Do not build a fourth launcher or weaken PT1M/IgnoreNew. The nuisance is preferable to a quiet mechanism with untrusted lifetime semantics.
 
-Public remains Preview0.8.3 `589514fff41d0a65315377093089838026bbd1ec`. Maintained source `60f6886542bb5c290180e989eb1bbdfa6acad11a` is unpublished.
+A separate live watchdog observation recorded UNREACHABLE/AWAITING_CONFIRMATION at11:12:03Z, RESTARTED at11:14:03Z, RUNNING at11:16:01Z: one bounded exercise of the two-observation rule, not universal reliability.
 
-Accepted composition: full Homer painting; high-left canopy title; people/fire clear; provenance below/right; feathered field rather than hard card; separate row when overlay cannot remain robust; 1440 ordinary fallback; original museum asset preserved as provenance.
+### Speech supervisor
+Installed one-unknown-read restart possibility remains material; current proposed successor fixture is invalid. Application NULL; no live fault injection.
 
-Remaining gate: enlarged/reflow observation + CC exact review. Framework requests a browser-only 55%-black scrim comparison; 55% still gives ~4.76:1 white-text contrast even over white under the same sRGB bound. Prefer lighter 55% if coverage/reflow remains >=4.5; do not darken more painting to rescue enlargement—move that state to the separate row. If cleared, Codex already has publication authority for the presentation-only successor.
+### Guestbook
+#118 remains representation-only/no public write. Separate untrusted trust region; `claimed_*`; no links/HTML/Markdown; real removal possible; no identity/signature/reach theatre. Next is isolated human HTML + boring machine export with synthetic hostile data.
 
-### 3. Speech supervisor
+### Usefulness
+#119 Phase0 candidate is preserved at `ff54721de507d006212d17f201c6b287a8cfb75d`: test whether independent reference builders can produce a sufficiently stable irreversibility-point construct before any efficacy comparison. Consensus reference mainly supports recall; `NOT_IN_REFERENCE_SET != FALSE_POSITIVE`, so later precision must be judged directly against frozen source evidence. Null is first-class.
 
-Installed one-unknown-read restart possibility remains material, but CC successor fixture is not valid. Current application = NULL. Repair evidence later; no live fault injection.
+Neighbouring exact study pinned: Lai et al., *The ABCD of AI-Enabled Clinical Reasoning*, J Surgical Education 2026, DOI `10.1016/j.jsurg.2026.103963`; useful comparison design, not PSFH evidence. Evidence note `afc9b87...`.
 
-### 4. Guestbook
+Public practical advantage remains unproven.
 
-#118 = representation only, no public write. Separate untrusted trust region; `claimed_*`; no links/HTML/Markdown; actual removal possible; no identity/signature/reach theatre. Next prototype is isolated human HTML + boring machine export with synthetic hostile data only.
-
-### 5. Usefulness
-
-#119 first asks whether a reliable outcome construct exists: can independent reference sets of irreversibility points agree enough to support recall/precision? If not, stop with NULL before recruitment/spend. Only then test correction-window questions against matched generic structured-risk prompting. Public advantage remains unproven.
-
-Research correction: Ahrefs 97% figure is a customer-domain observation, not web census; Kornowicz2411.08583 is a 2024 German-layperson binary-income study and does not establish engagement as sole failure mechanism. Unnamed72-resident study is not adopted without exact citation.
+### AI handoff
+Optimise for human gives one URL -> unfamiliar agent/model/tool can orient. Root HTML must work even if `llms.txt` is never requested. No sixth protocol/obedience surface. Tiny seed/absolute-link repairs remain separate until deliberately integrated.
 
 ## Current project heads
 
@@ -86,9 +87,9 @@ No current work authorises TRACE/ME canon/release, Campfire Production adoption,
 ## Roles
 
 - **Framework:** coordination lead/integrator; purpose, outside evidence, product judgement, consequential gate selection. Make ordinary reversible decisions; do not duplicate engineering/review for activity.
-- **Codex:** executable PSFH/product/local-host engineering and deterministic experimental design.
+- **Codex:** executable PSFH/product engineering and deterministic experimental design.
 - **Claude Code:** independent hostile review/failure modes; not second integration owner.
-- **Mark:** originator/witness/consequential authority; do not bounce ordinary implementation decisions back to him.
+- **Mark:** originator/witness/consequential authority; ordinary reversible decisions stay with team.
 
 `ROLE_CONTINUITY != RUNTIME_IDENTITY`  
 `POSTED != RECEIVED != ACTED != EFFECT`  
