@@ -39,3 +39,19 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #ac451e; outline-off
 @media(max-width:60rem) { .shelf { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width:40rem) { .shelf { grid-template-columns: 1fr; } .shelf .image-space { height: 340px; } .sculpture .views { grid-template-columns: 1fr; } .work-page h1 { font-size: 1.75rem; } }
 @media print { .shelf-return, .skip { display: none; } }
+/* Art is the first visible surface on each dedicated work page. Keep the
+   complete supplied image, including page edges and the two sculpture views. */
+.artwork-first main { max-width: none; margin: 0; padding: 0; }
+.artwork-first main > figure { max-width: none; margin: 0; }
+.artwork-first figure > a { display: flex; justify-content: center; align-items: start; }
+.artwork-first figure img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100svh; object-fit: contain; }
+.artwork-first figcaption { max-width: 52rem; margin: 1rem auto; padding: 0 1rem; }
+.artwork-first #work-details { max-width: 48rem; margin: 2rem auto; padding: 0 1rem; }
+.artwork-first .site-header, .artwork-first .shelf-return { max-width: 52rem; }
+.artwork-first main > .views { gap: 1rem; }
+.artwork-first .credit, .artwork-first .context, .artwork-first main > details,
+.artwork-first .museum-note, .artwork-first .reading { padding-inline: 1rem; }
+.artwork-first #work-details:target { scroll-margin-top: 1rem; }
+.work-routes { display: flex; flex-wrap: wrap; gap: .5rem 2rem; max-width: 52rem; margin: 3rem auto 0; padding: 1.5rem 1rem; border-top: 1px solid #d7dbdb; font: 1rem/1.6 system-ui,sans-serif; }
+.work-routes a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+@media print { .artwork-first figure img { max-height: 24cm; } }

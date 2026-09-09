@@ -1,5 +1,34 @@
 # Campfire Door public preview
 
+## Art-first journeys, 9 September 2026
+
+Maintained source `e40cfed5595923bc7f741424152044e485441362` has the same tree
+as tested PR141 head `4b15d9554697de02f76d7ef04b395ea8cddb7e9b`.
+Explore, Reachable futures and the five dedicated work pages now begin with
+their whole image. Headings and navigation follow; the keyboard skip remains
+first. Each work account ends with optional links back to the collection,
+reading map and opening. Accounts, credits, image bytes and reading text remain.
+
+Eleven of 154 generated files change from public
+`5bf3524737fd0bcfe0cecf30f92191b2b015b8ae`: the seven page HTML files, shared
+style.css, works/shelf.css, manifest.json and explore/map.json. The other 143
+outputs are byte-identical, including the homepage HTML and all artwork files.
+CNAME, .nojekyll and .gitattributes are unchanged. No AI-arrival PR130 changes.
+
+Normal build and 25 targeted checks passed. All seven pages were inspected at
+actual 1440x900 and 390x845: loaded images start at zero and no horizontal
+overflow was observed. A stale requested phone override was caught and those
+checks repeated. Vermeer's keyboard bypass and end-to-map route, and Explore's
+keyboard bypass, worked. This is bounded presentation QA, not accessibility
+conformance, independent museum verification or reader-benefit evidence.
+
+Routine publication authority: Mark's direct overnight-build request and the
+art-first direction in COM108 comment5609413248; ownership announcement5609496911.
+Pages completion and full generated-output Git parity are recorded separately
+in COM. Direct public-origin served-byte verification is not claimed. The site
+reference edition remains0.8.4. Rollback: restore these eleven generated paths
+from5bf3524 and add a dated correction here, preserving later unrelated work.
+
 ## Whole-painting, top-edge arrival — 9 September 2026
 
 Maintained source `0f627f2357d74de6b1556e25f5e4a0be5c9a7c57` matches the tested

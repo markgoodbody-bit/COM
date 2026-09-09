@@ -149,22 +149,21 @@ body.contextual-room { max-width: none; padding: 0; }
 .art-room a:focus-visible { outline-color: var(--room-ink); }
 .room-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding: .5rem clamp(1rem, 4vw, 4rem); }
 .room-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .9375rem; }
-.room-stage { min-height: calc(100svh - 4rem); display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); align-items: center; gap: 2rem; padding: 1rem clamp(1rem, 4vw, 4rem) 2rem; }
+.room-stage { margin: 0; padding: 0; }
+.room-heading { padding: 2rem clamp(1rem, 4vw, 4rem); }
 .room-heading p { font: 400 clamp(3rem, 5.8vw, 6rem)/1.04 var(--serif); letter-spacing: -.035em; max-width: 11ch; margin: 0 0 1.5rem; }
 .room-heading > a { display: inline-block; padding-block: .75rem; }
 .room-stage figure { margin: 0; min-width: 0; }
 .room-image { display: flex; justify-content: center; }
-.room-image img { display: block; width: 100%; height: calc(100svh - 10rem); object-fit: contain; padding: 0; border: 0; }
+.room-image img { display: block; width: 100%; height: calc(100svh - 4rem); object-fit: contain; object-position: center top; padding: 0; border: 0; }
 .room-stage figcaption { margin-top: 1rem; font-size: .875rem; text-align: center; }
 .room-credit { padding: 1.5rem clamp(1rem, 4vw, 4rem); border-top: 1px solid currentColor; font-size: .875rem; }
 .room-credit p { max-width: 95ch; }
 .contextual-room #reading-map { scroll-margin-top: 1.5rem; }
 @media (max-width: 48rem) {
-  .room-stage { grid-template-columns: 1fr; align-content: start; gap: 1rem; padding: 1rem 0 1.5rem; }
-  .room-heading { padding-inline: 1rem; }
+  .room-heading { padding: 1.5rem 1rem; }
   .room-heading p { font-size: clamp(2.25rem, 8vw, 3.5rem); max-width: none; margin-bottom: .2rem; }
   .room-heading > a { padding-block: .35rem; }
-  .room-image img { height: calc(100svh - 15rem); min-height: 18rem; }
   .room-stage figcaption { padding-inline: 1rem; }
 }
 @media print { .room-image img { height: auto; max-height: 24cm; } .room-stage { min-height: 0; } }
