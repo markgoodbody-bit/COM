@@ -25,6 +25,8 @@ Preview0.8.4 itself was reviewed/deployed/served-verified at predecessor public 
 
 The later favicon is the exact reviewed PR128 delta: root head only + SVG/ICO/ISC notice; visible root body and all other114 predecessor outputs unchanged. One authorised public push only. Pages run `34381300505` SUCCESS. Browser-cache refresh/served icon observation is separate and is not a reason to republish.
 
+CC served return #108 `5606329524` now verifies the three exact icon assets, root+133-byte head-only delta and unchanged seed through its own origin read. Its initial phrase probe targeted the wrong artifact and is explicitly recorded as an instrument mistake, not a product regression. Codex receipt `5606359135` acknowledges this bounded readback; it is not a fresh118-file audit or a browser-cache claim.
+
 `RELEASE_CLOSED != USEFULNESS_PROVEN`  
 `ICON_PUBLISHED != EVERY_BROWSER_CACHE_REFRESHED`
 
@@ -80,6 +82,8 @@ Städel authoritative page identifies work/artist/institution and Picture Copyri
 Codex direction #108 `5606192847`: build a source-only Vermeer work page from these exact bytes, no forced720/1440 pair, no public/root wiring. Project reading optional and visibly project-authored.
 
 Completed candidate: draft PR129, exact `cf1e4e985563c011c7c838af835b35a138d7b37d`, based on maintainede30debac. Eleven additions under `proposals/vermeer/` only; five exact static outputs and10 targeted checks pass. Uncropped portrait, credit below, short attributed museum paraphrase, no imposed PSFH response. Four actual local desktop/mobile/root16/32px states measured; initial midword enlarged-mobile title defect was repaired with a narrow heading-size change. See `evidence/PSFH_VERMEER_WORK_PAGE_CANDIDATE_20260909.md`. Not public; independent review follows Powers priority.
+
+Framework PR129 `5606342830`: KEEP AS REVIEW OBJECT, no source/editorial blocker; no merge/public wiring. Exact head stays frozen for CC review after Powers. Consolidated Codex return: #108 `5606359135`, evidence COM `ab0232743d99165b15fb451bac695974db09d2b8`.
 
 `EXACT_AUTHORITATIVE_SOURCE_IMAGE != MUSEUM_MASTER`
 
