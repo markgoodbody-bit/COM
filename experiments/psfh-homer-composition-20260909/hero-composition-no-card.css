@@ -1,0 +1,134 @@
+/* DESIGN PROTOTYPE ONLY — not wired into the maintained site.
+   Primary visual candidate after Mark's 2026-09-09 desktop review.
+   Basis: maintained PSFH 991c0dd7 / public Preview 0.8.3.
+
+   Goal: let the title sit in the naturally dark upper-left canopy without a visible
+   black card. Preserve the whole uncropped painting, keep both human figures and the
+   fire unobscured, and move compact provenance below/right on wide screens.
+
+   This file is deliberately a candidate, not a publication instruction. If measured
+   contrast over the chosen real-image region is not robust, use the feathered-scrim
+   candidate in hero-composition.css rather than increasing a hard rectangle.
+*/
+
+.art-hero {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto auto;
+  isolation: isolate;
+}
+
+.art-hero > figure {
+  display: grid;
+  grid-area: 1 / 1 / 4 / 2;
+  grid-template-rows: subgrid;
+}
+
+.art-hero img {
+  grid-area: 1 / 1;
+  align-self: start;
+  padding: 0;
+  border: 0;
+}
+
+/* Source credit remains part of the figure but no longer pushes the image downward.
+   On a wide page it acts like a quiet museum caption beneath the work. */
+.camp-fire figcaption {
+  grid-area: 3 / 1;
+  justify-self: end;
+  width: min(100%, 44rem);
+  margin: .7rem 0 0;
+  text-align: right;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+/* No card. Position high in the left canopy, away from the people and flame.
+   Text shadow is intentionally diffuse: it supports letter edges rather than
+   manufacturing another rectangle over the painting. */
+.hero-heading {
+  grid-area: 1 / 1;
+  align-self: start;
+  justify-self: start;
+  z-index: 1;
+  margin: clamp(1.35rem, 2.6vw, 2.65rem);
+  padding: .2rem;
+  max-width: min(34rem, 55%);
+  background: transparent;
+  color: #fff;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.96),
+    0 6px 18px rgba(0,0,0,.82),
+    0 14px 36px rgba(0,0,0,.58);
+}
+
+.intro:has(.first-movements) .hero-heading h1 {
+  color: #fff;
+  margin: 0 0 .8rem;
+  font-size: clamp(2.6rem, 5.1vw, 4.7rem);
+  line-height: .99;
+}
+
+.hero-heading .guiding-question {
+  color: #fff;
+  margin: 0;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.98),
+    0 5px 14px rgba(0,0,0,.86);
+}
+
+/* Narrow screens: title and provenance return to document flow. Never solve
+   a small-screen contrast problem by covering more of the painting. */
+@media (max-width: 42rem) {
+  .art-hero {
+    grid-template-rows: auto auto auto;
+  }
+
+  .art-hero > figure {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+
+  .art-hero img {
+    grid-area: 1 / 1;
+  }
+
+  .hero-heading {
+    grid-area: 2 / 1;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.35rem 1.25rem;
+    background: #141b20;
+    text-shadow: none;
+  }
+
+  .camp-fire figcaption {
+    grid-area: 3 / 1;
+    justify-self: stretch;
+    width: 100%;
+    margin: .7rem 0 0;
+    text-align: left;
+  }
+}
+
+/* Old engines: ordinary flow is preferable to a brittle overlay. */
+@supports not (grid-template-rows: subgrid) {
+  .art-hero,
+  .art-hero > figure {
+    display: block;
+  }
+
+  .hero-heading {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.35rem 1.25rem;
+    background: #141b20;
+    text-shadow: none;
+  }
+
+  .camp-fire figcaption {
+    width: 100%;
+    margin-top: .7rem;
+    text-align: left;
+  }
+}
