@@ -13,7 +13,9 @@ Later live source wins.
 
 ### PSFH public baseline — DEPLOYED
 
-Maintained source `0f6bd04248b97523e2df3929723b49dc9e3963dc`; public gh-pages `f35f94d886f75241a7fdcc876d646fa872e8a128`. PR137 merged and published under Mark's direct publish-if-ready instruction and subsequent COMSYNC/proceed. Complete source-tree parity with tested candidate `2f2a4b649effe765c4d5038c36af05ce9dc4a98c`; all154 staged public blobs matched the build. Pages run `34404828863` completed SUCCESS; API built at2026-09-09T21:04:54Z. Eight output files change from previous public `5af680b5f7016f4198b8819f2b9ed93d568eb1c3`,146 stay byte-identical. Rollback is an ordinary content revert to5af680b5, preserving hosting metadata. Direct-domain readback remains unavailable to Codex and was not bypassed.
+Maintained source `742b80e51c0c1b04decf333802a37a0945c637c3`; public gh-pages `6c1fd9847f670e4fb70cff3907a45901ac628cd0`. PR137 contextual art was published atf35f94d (Pages34404828863 SUCCESS), followed by PR138's narrow D016 wording correction. Maintained tree matches tested `d3be35579628711100b49f792a52e055325e00dd`; all154 committed public output blobs verified equal to the build. Pages run `34405139293` completed SUCCESS for6c1fd984. Three output files changed fromf35 (paired history and manifest hashes),151 unchanged; cumulatively eight differ from the prior foyer5af680b5,146 unchanged. Five focused checks passed after the19 Node/22 Python contextual-art checks. Direct-domain readback remains unavailable to Codex and was not bypassed. Rollback for the whole contextual slice remains ordinary content revert to5af680b5, preserving hosting metadata.
+
+Codex self-correction5608773438: D016 initially overclaimed that nothing was remembered when a native door opened. Now says only that opening a door does not submit an answer to the site. Native browser state may persist; no browser-storage/host-log claim follows. Both forms and hashes corrected, initial statement retained in Git history and explicitly recorded in source review.
 
 ### Contextual art completed / current coordination edge
 
