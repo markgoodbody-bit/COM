@@ -30,8 +30,8 @@ test('favicon assets, legacy sizes and source notice have exact identities', asy
   });
 });
 
-test('human foyer changes only homepage, shared CSS and its manifest hash', async () => {
-  const published = 'aed75526770de9a7c9a2aa7cef63f1167dad1669';
+test('contextual art changes only two entrances, map identities, CSS and explicit bypasses', async () => {
+  const published = '5af680b5f7016f4198b8819f2b9ed93d568eb1c3';
   let checked = 0, changed = [];
   async function walk(dir, prefix = '') {
     for (const item of await readdir(dir, {withFileTypes: true})) {
@@ -44,24 +44,55 @@ test('human foyer changes only homepage, shared CSS and its manifest hash', asyn
         const html = actual.toString();
         assert.equal(html.split(header).length, 2);
         assert.ok(html.indexOf(header) < html.indexOf('</head>'));
-        assert.match(html, /<a class="map-bypass" href="\/explore\/">Just give me the map/);
+        assert.match(html, /<a class="map-bypass" href="\/explore\/#reading-map">Just give me the map/);
         assert.match(html, /<h1>Please Start From <em>Here<\/em><\/h1>/);
-        // Paragraph/link retention and optional-door behaviour have separate
-        // fixed-delta and browser checks, not a blanket content exemption.
+        const old = before.toString();
+        assert.equal((html.match(/href="\/explore\/#reading-map"/g) ?? []).length, 4);
+        assert.equal(html.replaceAll('href="/explore/#reading-map"', 'href="/explore/"'), old);
+      } else if (['explore/index.html', 'explore/nodes/futures.html'].includes(file)) {
+        const oldBody = before.toString().split('<body>')[1];
+        const unchanged = actual.toString().split('</section><main id="reading">')[1]
+          .replace('<nav id="reading-map" aria-label="Optional routes">', '<nav aria-label="Optional routes">');
+        assert.equal('<main>' + unchanged, oldBody, file);
+        assert.doesNotMatch(actual.toString(), /<script\b|<form\b|<iframe\b/i);
+      } else if (file === 'explore/map.json') {
+        const map = JSON.parse(actual), prior = JSON.parse(before);
+        for (const item of map.resources) {
+          if (!['index.html','nodes/futures.html'].includes(item.path)) continue;
+          const bytes = await readFile('out/explore/' + item.path);
+          assert.equal(item.sha256, createHash('sha256').update(bytes).digest('hex'));
+          assert.equal(item.bytes, bytes.length);
+          Object.assign(item, prior.resources.find(p => p.path === item.path));
+        }
+        assert.deepEqual(map, prior);
       } else if (file === 'style.css') {
         assert.equal(actual.toString(), await readFile('app/globals.css', 'utf8'));
       } else if (file === 'manifest.json') {
         const map = JSON.parse(actual), oldMap = JSON.parse(before);
         assert.equal(map.provenance.presentation.stylesheet_sha256, createHash('sha256').update(await readFile('out/style.css')).digest('hex'));
         map.provenance.presentation.stylesheet_sha256 = oldMap.provenance.presentation.stylesheet_sha256;
+        for (const [field, source] of [['change_history_sha256','public/changes.md'], ['change_history_input_html_sha256','public/changes.html'], ['change_history_html_sha256','out/changes.html']]) {
+          assert.equal(map.provenance[field], createHash('sha256').update(await readFile(source)).digest('hex'));
+          map.provenance[field] = oldMap.provenance[field];
+        }
+        assert.equal(map.provenance.change_history_previous_source_commit, '55b9690d7a45a313871e1b5fbbfc64083c4b1ebd');
+        map.provenance.change_history_previous_source_commit = oldMap.provenance.change_history_previous_source_commit;
+        assert.equal(map.provenance.change_history_addendum_note, 'D016 is a manually paired Markdown/HTML entry; earlier generator identity applies to the preserved older entries.');
+        delete map.provenance.change_history_addendum_note;
         assert.deepEqual(map, oldMap);
+      } else if (['changes.md','changes.html'].includes(file)) {
+        const text = actual.toString(), old = before.toString();
+        const marker = file.endsWith('.md') ? '### D015' : '<h3 id="d015">';
+        assert.equal(text.slice(text.indexOf(marker)), old.slice(old.indexOf(marker)));
+        assert.ok(text.includes('D016'));
+        assert.ok(text.includes('5af680b5f7016f4198b8819f2b9ed93d568eb1c3'));
       } else assert.deepEqual(actual, before, file);
       checked++;
     }
   }
   await walk('out');
   assert.equal(checked, 154);
-  assert.deepEqual(changed.sort(), ['index.html', 'manifest.json', 'style.css']);
+  assert.deepEqual(changed.sort(), ['changes.html', 'changes.md', 'explore/index.html', 'explore/map.json', 'explore/nodes/futures.html', 'index.html', 'manifest.json', 'style.css']);
 });
 
 test('preview serves SVG and ICO with their image MIME types', async () => {

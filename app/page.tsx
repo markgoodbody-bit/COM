@@ -11,7 +11,7 @@ export default function Home() {
   return <>
     <a className="skip" href="#arrival">Skip the painting</a>
     <header className="masthead" id="top">
-      <a className="map-bypass" href="/explore/">Just give me the map <span aria-hidden="true">↗</span></a>
+      <a className="map-bypass" href="/explore/#reading-map">Just give me the map <span aria-hidden="true">↗</span></a>
       <details className="reading-menu"><summary>Reading routes</summary>
         <nav aria-label="Reading routes"><a href="#start">Introduction</a><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
       </details>
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="arrival-heading">
             <h2 id="arrival-question">What brought you here?</h2>
             <p>Pick a way in, or keep looking. There is no sequence to finish.</p>
-            <a href="/explore/">Just give me the map</a>
+            <a href="/explore/#reading-map">Just give me the map</a>
           </div>
           <div className="arrival-doors">
             <details><summary>I&apos;m trying to understand something</summary>
@@ -53,7 +53,7 @@ export default function Home() {
             </details>
             <details><summary>Something else / I don&apos;t know</summary>
               <p>No need to decide. Wander through the readings, or stop here.</p>
-              <p><a href="/explore/">Browse the map</a> · <a href="#reading">Go straight to the books and sources</a></p>
+              <p><a href="/explore/#reading-map">Browse the map</a> · <a href="#reading">Go straight to the books and sources</a></p>
             </details>
           </div>
         </section>
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
     </main>
     <footer>
-      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 9 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/">Go to the map</a>.</p>
+      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 9 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
       <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
