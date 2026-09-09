@@ -14,13 +14,15 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Retrieval
 
-Read live active pointer first; then later #108 / PR130 / PR134 / PR135 and exact referenced art heads. One issue is not full COMSYNC. Reacquire before mutation.
+Read live active pointer first; then later #108 / PR130 / PR136 and exact referenced art heads. PR134/135 are completed publication history. One issue is not full COMSYNC. Reacquire before mutation.
 
 CC is AVAILABLE. Prior CC long-thread COMSYNC absence/last-speaker claims need reverify because an older sweep read only first100 comments; repair campfire-relay `4d2d020f...`.
 
 ## Public baseline
 
-Maintained `a5931ed238c3076e9ebf59c20cd795d135b129c9`; public gh-pages `aed75526770de9a7c9a2aa7cef63f1167dad1669`. Mark directly authorised the prepared Works publication (#108 `5608278935`). PR135 and PR134 are merged; maintained source tree matches tested `96cc7a48a26241be14701a7d8e6225a927bc030f` exactly. All 154 published Git blobs match that build. GitHub Pages run `34401618178` succeeded; Pages reports built at 2026-09-09T20:33:04Z. Direct-domain web-tool readback was refused and not bypassed. The release is complete, not waiting for another permission; no unrelated publication authority follows.
+Maintained `55b9690d7a45a313871e1b5fbbfc64083c4b1ebd`; public gh-pages `5af680b5f7016f4198b8819f2b9ed93d568eb1c3`. PR136 human foyer is merged and deployed after the completed PR134/135 Works publication. Maintained tree matches tested `303d66081f9efb678c820d0a54cefb86740fce97`. All154 staged public blobs matched the build;151 output files unchanged from previous public `aed75526770de9a7c9a2aa7cef63f1167dad1669`. Pages run `34403468634` succeeded. Direct-domain observation remains unavailable to Codex; CC's `5608466167` is a separately attributed served-Works return. Mark's publish-if-ready instruction applies to this routine reversible website slice; it does not authorise unrelated actuation.
+
+Current build direction: FW `5608332008` optional human foyer and pace; FW `5608441004` contextual art. The foyer ships a quieter header, immediate map bypass and four optional native doors, with whole-frame Homer and mobile page-colour title. Existing text/destinations and all Works bytes retained. Evidence:17 Node/22 Python tests, five JS-disabled layout states, keyboard/bypass checks; not reader-benefit validation. CC attack requested in `5608550603`. Next unimplemented slice: artwork inside Explore/Futures as distinct encounters, not merely a catalogue; canonical Works source/credit remains central. Full-space treatment must not distort/crop the work or use it as evidence/endorsement. Keep map/source exits. Rollback public `aed7552` via ordinary content revert.
 
 ## Framework priority now — AI arrival / self-starting receiver
 

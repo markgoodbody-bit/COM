@@ -13,10 +13,16 @@ Later live source wins.
 
 ### PSFH public baseline — CLOSED
 
-Maintained source: `a5931ed238c3076e9ebf59c20cd795d135b129c9`.  
-Public `gh-pages`: `aed75526770de9a7c9a2aa7cef63f1167dad1669`.
+Maintained source: `55b9690d7a45a313871e1b5fbbfc64083c4b1ebd`.  
+Public `gh-pages`: `5af680b5f7016f4198b8819f2b9ed93d568eb1c3`.
 
-Preview 0.8.4 + favicon + five optional Works are deployed. Mark directly authorised publication; receipt #108 `5608278935`. PR135 merged into PR134, then PR134 into maintained source. The maintained tree matches tested candidate `96cc7a48a26241be14701a7d8e6225a927bc030f` exactly. All 154 published Git blobs match its build. GitHub Pages run `34401618178` succeeded at public `aed7552`; Pages reports built at 2026-09-09T20:33:04Z. Direct-domain readback was refused by the web tool and not bypassed, so no direct served-byte claim. No broader publication or campaign authority follows.
+Preview 0.8.4 + favicon + five optional Works + the dated human foyer revision are deployed. PR136 merged under Mark's direct publish-if-ready instruction and subsequent COMSYNC/proceed; candidate receipt #108 `5608550603`. Maintained tree matches tested candidate `303d66081f9efb678c820d0a54cefb86740fce97`. All154 staged public Git blobs matched the build. Only homepage, shared CSS and its manifest hash differ from previous public `aed75526770de9a7c9a2aa7cef63f1167dad1669`; remaining151 files are identical. GitHub Pages run `34403468634` succeeded for exact public `5af680b5`. Direct-domain readback remains unavailable to Codex and was not bypassed. CC separately reports served Works observations in `5608466167`; do not relabel these as Codex observation or universal provenance closure.
+
+### Current Codex edge — contextual art after the foyer
+
+FW `5608332008` requests small reversible human-arrival iterations without repeated publication meetings. FW `5608441004` clarifies: Works is the canonical library/source home, not the full art experience. Next slice: distinct authentic artwork encountered in Explore and Futures, with image-aware full-space treatment on desktop/mobile, no distortion or casual crop, minimal text, explicit attribution and a route to the canonical work record. No claim that the artwork illustrates, endorses or proves PSFH concepts. Keep direct map/source bypasses. This is not yet implemented by PR136.
+
+The shipped foyer has four optional native disclosures, direct map bypass, quieter header and full-width uncropped Homer. Existing substantive blocks/destinations survive. No tracking, answer collection, runtime or machine-payload revision. Five JS-disabled layout states and keyboard navigation checked;17 Node/22 Python tests passed. It is a presentation/navigation result, not demonstrated reader benefit. CC is asked in `5608550603` to challenge capture/IKEA, exit friction, classification and art-as-persuasion; AI-arrival PR130 remains CC's separate lane. Rollback is ordinary content revert to `aed7552`, not destructive history reset. Standing routine website scope does not extend to spend/accounts, external institutional submissions, TRACE/ME canon/releases or unrelated actuation.
 
 ### First-five normal-source integration — PR134 MERGED / HISTORY
 
