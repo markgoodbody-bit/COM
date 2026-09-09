@@ -56,8 +56,25 @@ CAPTURE_MARKUP = re.compile(
     r"(autoplay\b|infinite[- ]scroll|data-countdown|<dialog[^>]*open|"
     r"position:\s*fixed[^;]*;[^}]*z-index:\s*9\d{2,}|onbeforeunload)", re.I)
 
-REQUIRED_PROVENANCE = ("title", "creator", "date", "institution", "source_url",
-                       "rights", "retrieval_date", "alt", "why_here")
+# A provenance CONCEPT, and every field name a record may legitimately use for
+# it. The first version demanded my own invented names -- creator, institution,
+# source_url, retrieval_date, why_here -- and reported five fields "missing"
+# from a record that carries all five as artist, museum, object_url,
+# retrieved_on and why_this_spoke_to_us. A check that insists on its own
+# vocabulary reports the author's wording as the author's omission.
+#
+#     MY_FIELD_NAME_IS_ABSENT != THE_PROVENANCE_IS_ABSENT
+REQUIRED_PROVENANCE = {
+    "title":          ("title",),
+    "creator":        ("artist", "creator", "maker"),
+    "date":           ("date", "created", "year"),
+    "institution":    ("museum", "institution", "holder"),
+    "source_url":     ("object_url", "source_url", "image_url"),
+    "rights":         ("rights", "rights_url", "licence", "license"),
+    "retrieval_date": ("retrieved_on", "inspected_on", "retrieval_date"),
+    "alt":            ("alt", "alt_text"),
+    "why_here":       ("why_this_spoke_to_us", "why_here", "interpretation"),
+}
 
 
 def fetch(url, cap=8_000_000):
@@ -174,7 +191,16 @@ def snapshot(label, text_box=None, text_rgb=(255, 255, 255)):
     images = []
     for tag in re.findall(r"<img[^>]*>", html, re.I):
         def attr(name):
-            m = re.search(r'\b%s="([^"]*)"' % name, tag)
+            # HTML attribute names are case-INSENSITIVE and this renderer emits
+            # JSX casing: srcSet, not srcset. A case-sensitive matcher here read a
+            # CORRECT publication as a missing responsive repair, and I was one
+            # step from reporting the mobile payload as unchanged at 2.35 MB when
+            # the derivatives were live and serving. Third time in two days that
+            # attribute casing has caught me, so the instrument now cannot repeat
+            # it rather than my remembering to look.
+            #
+            #     THE_ATTRIBUTE_IS_ABSENT != MY_PATTERN_DID_NOT_MATCH
+            m = re.search(r'\b%s\s*=\s*"([^"]*)"' % name, tag, re.I)
             return m.group(1) if m else None
         src, srcset = attr("src"), attr("srcset")
         cands = parse_srcset(srcset) if srcset else ([(src, None, None)] if src else [])
@@ -200,8 +226,39 @@ def snapshot(label, text_box=None, text_rgb=(255, 255, 255)):
     snap["mobile_375_1x_total_bytes"] = mobile_total
 
     # --- provenance ----------------------------------------------------------
-    prov = {"records_found": [], "verified": [], "problems": []}
-    for path in ("art/index.json", "art/provenance.json", "manifest.json"):
+    #
+    # DISCOVER the record from the page instead of guessing filenames. The first
+    # version looked for art/index.json and art/provenance.json -- paths this
+    # site does not use -- and reported "0 records found, 0 problems", which
+    # reads as a clean result and is actually a check pointed at nothing. FW
+    # caught it in my own published report on 2026-09-09.
+    #
+    #     A_CLEAN_ZERO_FROM_THE_WRONG_PATH_IS_NOT_A_CLEAN_RESULT
+    #
+    # A filename can go stale; a link from the page under test cannot, because
+    # if the page stops linking its own provenance record that is itself the
+    # finding. And per today's absence rule, an empty result now has to prove
+    # the fetcher works before it is allowed to mean anything.
+    discovered = []
+    for m in re.finditer(r'href="([^"]*/art/[^"]*\.json)"', html, re.I):
+        u = m.group(1)
+        discovered.append(u if u.startswith("http") else ORIGIN.rstrip("/") + "/" + u.lstrip("/"))
+    prov = {"records_found": [], "verified": [], "problems": [],
+            "discovered_from_page": sorted(set(discovered))}
+
+    # Control: something known to be fetchable, sharing the same failure mode
+    # (same origin, same JSON fetch path) as the record we are looking for.
+    _cs, _cb, _ = fetch(ORIGIN + "manifest.json")
+    if _cs != 200:
+        prov["problems"].append({"provenance_check": "UNPROVEN — the control "
+                                 "manifest.json did not fetch, so finding no "
+                                 "art record proves nothing about the site"})
+    elif not discovered:
+        prov["problems"].append({"provenance_check": "no art record is LINKED "
+                                 "from the page; the control fetched fine, so "
+                                 "this is a finding about the page, not the check"})
+
+    for path in [u.replace(ORIGIN, "") for u in sorted(set(discovered))] + ["manifest.json"]:
         s, b, _ = fetch(ORIGIN + path)
         if s != 200:
             continue
@@ -209,7 +266,12 @@ def snapshot(label, text_box=None, text_rgb=(255, 255, 255)):
             obj = json.loads(b)
         except Exception:
             continue
-        works = obj.get("works") or obj.get("art") or (obj if path.startswith("art/") else None)
+        # A discovered record is usually ONE work, not a list of them. The first
+        # version turned a single record into list(obj.values()) and iterated its
+        # field values, which verifies nothing.
+        works = obj.get("works") or obj.get("art")
+        if works is None and isinstance(obj, dict) and obj.get("local_image"):
+            works = [obj]                      # a single artwork record
         if isinstance(works, dict):
             works = list(works.values())
         if not isinstance(works, list):
@@ -218,25 +280,37 @@ def snapshot(label, text_box=None, text_rgb=(255, 255, 255)):
             if not isinstance(wk, dict):
                 continue
             prov["records_found"].append({"path": path, "id": wk.get("id") or wk.get("title")})
-            missing = [f for f in REQUIRED_PROVENANCE if not wk.get(f)]
+            missing = [concept for concept, names in REQUIRED_PROVENANCE.items()
+                       if not any(wk.get(n) for n in names)]
             if missing:
                 prov["problems"].append({"work": wk.get("id") or wk.get("title"),
                                          "missing_fields": missing})
+            # The work itself carries the original's hash; derived copies hang
+            # off responsive.variants. Check both, or the master goes unverified.
+            hashed = []
+            if wk.get("local_image") and wk.get("sha256"):
+                hashed.append({"path": wk["local_image"], "sha256": wk["sha256"]})
+            resp = wk.get("responsive") or {}
+            if isinstance(resp, dict):
+                hashed += [v for v in (resp.get("variants") or []) if isinstance(v, dict)]
             for key in ("original", "master", "variants", "derived"):
                 items = wk.get(key)
                 if isinstance(items, dict):
                     items = [items]
-                for it in (items or []):
-                    if not isinstance(it, dict) or not it.get("sha256") or not it.get("path"):
+                hashed += [i for i in (items or []) if isinstance(i, dict)]
+            for it in hashed:
+                if True:
+                    _p = it.get("path") or it.get("local_image")
+                    if not it.get("sha256") or not _p:
                         continue
-                    u = ORIGIN.rstrip("/") + "/" + str(it["path"]).lstrip("/")
+                    u = ORIGIN.rstrip("/") + "/" + str(_p).lstrip("/")
                     s2, b2, _ = fetch(u)
                     got = hashlib.sha256(b2).hexdigest() if s2 == 200 else None
                     ok = (got == it["sha256"])
-                    prov["verified"].append({"path": it["path"], "declared": it["sha256"][:16],
+                    prov["verified"].append({"path": _p, "declared": it["sha256"][:16],
                                              "actual": (got or "FETCH_%s" % s2)[:16], "match": ok})
                     if not ok:
-                        prov["problems"].append({"path": it["path"],
+                        prov["problems"].append({"path": _p,
                                                  "declared_sha256_does_not_match_served_bytes": True})
     snap["provenance"] = prov
 
