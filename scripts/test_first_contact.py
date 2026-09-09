@@ -8,10 +8,25 @@ import hashlib
 import json
 from collections import Counter
 import re
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLISHED = ROOT.parent / 'DEV' / 'campfire-door-pages'
+# Worktrees need not share the original Downloads layout. Select the existing
+# publishing repository explicitly; keep the old default for existing callers.
+PUBLISHED = Path(os.environ.get('PSFH_PUBLISHED_CHECKOUT', str(ROOT.parent / 'DEV' / 'campfire-door-pages'))).resolve()
 BASELINE = '50caedc89646b7337a86a5610cef24426b518cf3'
+
+
+def published_text(revision, name):
+    if not PUBLISHED.is_dir():
+        raise RuntimeError(
+            f'Publishing checkout not found: {PUBLISHED}. '
+            'Set PSFH_PUBLISHED_CHECKOUT to the existing publishing repository; '
+            'the pinned historical comparisons must not be skipped.'
+        )
+    return subprocess.check_output(
+        ['git', 'show', revision + ':' + name], cwd=PUBLISHED
+    ).decode('utf-8')
 
 
 class Reading(HTMLParser):
@@ -89,7 +104,7 @@ class FirstContactTests(unittest.TestCase):
         self.assertNotIn('teaching_preview', manifest['provenance'])
 
     def test_editorial_layout_preserves_all_original_paragraphs_and_headings(self):
-        original = subprocess.check_output(['git', 'show', 'e0d765b3d203035971b5fa544eb5f5b48cc0f518:index.html'], cwd=PUBLISHED).decode('utf-8')
+        original = published_text('e0d765b3d203035971b5fa544eb5f5b48cc0f518', 'index.html')
         def blocks(html):
             # Compare substantive blocks independently of authorised relocation.
             values = []
@@ -257,7 +272,7 @@ class FirstContactTests(unittest.TestCase):
 
     def test_no_old_destination_dropped_and_history_preserved(self):
         def old(name):
-            return subprocess.check_output(['git', 'show', BASELINE + ':' + name], cwd=PUBLISHED).decode('utf-8')
+            return published_text(BASELINE, name)
         self.assertTrue(set(Reading(old('index.html')).links).issubset(self.page.links))
         original = old('changes.md')
         current = (ROOT / 'public/changes.md').read_text(encoding='utf-8')
