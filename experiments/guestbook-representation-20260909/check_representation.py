@@ -127,7 +127,16 @@ if "visitor-supplied untrusted data" not in lower_html:
     fail("human fixture lacks visible untrusted-data labelling")
 if "ignore prior instructions" not in lower_html:
     fail("human fixture does not render the hostile-content fixture")
-if URL_LIKE.search(html):
-    fail("human fixture unexpectedly contains URL-like content")
+
+# The system-authored footer may legitimately name local files such as
+# register.jsonl. The v0 no-URL invariant applies to the mark/register region,
+# not to every dot in the surrounding authored document.
+main_start = lower_html.find("<main>")
+main_end = lower_html.find("</main>", main_start + 1)
+if main_start < 0 or main_end < 0:
+    fail("human fixture must contain a main register region")
+register_region = html[main_start:main_end]
+if URL_LIKE.search(register_region):
+    fail("human register region unexpectedly contains URL-like content")
 
 print(f"PASS: {len(rows) - 1} publication-state rows; trust/correction/removal fixtures intact")
