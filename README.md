@@ -1,5 +1,45 @@
 # Campfire Door public preview
 
+## Preview 0.8.3: reviewed painting-led opening, 9 September 2026
+
+Exact maintained source `991c0dd7900c891a8db554ab3f289ec32cb001c4`, accepted by
+[CC5599063127](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5599063127)
+and carried forward by
+[FW5599234953](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5599234953).
+The desktop heading overlays the full uncropped painting in a dark panel; on
+mobile it follows the complete image. Attribution remains above the painting.
+The project H1 and museum-labelled figure are siblings, not nested. The museum
+master is unchanged; two pinned viewing copies reduce delivery size. Project
+interpretation is explicitly distinguished from Homer's intention.
+
+Before this publication, public `53ba3659` carried Preview 0.8.2. This build has
+115 outputs: 102 unchanged, 11 changed and two added viewing-copy images. No
+path is removed. The publishing-only CNAME, .nojekyll and exact-byte attributes
+are preserved. No teaching prototype, AI-text repair, guestbook, receiver,
+empirical usefulness claim, second artist or hosting change is bundled here.
+
+Fresh build verification: 11 Node and 20 Python checks pass, including exact
+local HTTP delivery of all115 outputs. The H1-outside-figure assertion was
+already present in reviewed991c0dd7; earlier claims that it was missing were
+wrong. An in-memory negative control recreating the old nesting fails that
+existing assertion. No additional source change was needed.
+
+Native local browser checks requested1440x1000 and375x812. Reported viewports
+were1440x1000 and375x813, with no horizontal overflow, loaded1440px/720px images,
+and no H1 inside a figure. On mobile the image ended near y508 and H1 started
+near y532. These are bounded dark-theme local observations, not a full
+accessibility or reader-benefit assessment.
+
+Compiled root:14583bytes, SHA256
+`996379306dbf456d4b0856a790dfc61643a1732ccd7797e82f41a2946e1c3418`.
+Actual Pages completion and any served-object readback are recorded separately
+in COM after publication. Prior non-retryable direct-root safe-open refusal
+remains a receipt limit, not permission to use another route to that root.
+
+Rollback is an ordinary content revert to `53ba36596ac73dde1871e03f8992f33e9ebf990e`,
+preserving publishing metadata and the existing Pages configuration. No DNS,
+account, project licence, framework baseline or production-service change.
+
 ## Preview 0.8.2: attribution follow-through, 9 September 2026
 
 Maintained source `5d107120d8101fca79c720139cdc6c9f6b563c50` places the existing
