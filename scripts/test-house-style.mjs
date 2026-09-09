@@ -16,10 +16,14 @@ test('head-only transformation preserves markup-like source payload', () => {
   assert.throws(() => sharedStyle('<body>no head</body>'));
 });
 
-test('unmodified HTML bodies and raw resources survive the first-contact and style build', async () => {
+test('unmodified historical HTML bodies/raw resources survive; reviewed Works additions stay exact at their source boundary', async () => {
   const baseline = '50caedc89646b7337a86a5610cef24426b518cf3';
   const publishing = 'C:/Users/markg/Downloads/DEV/campfire-door-pages';
-  let pages = 0, unchangedBodies = 0, editionOnlyBodies = 0, unchanged = 0;
+  const reviewedWorks = JSON.parse(await readFile('proposals/works/evidence/vermeer36-output-inventory.json'));
+  const worksFiles = new Set(Object.keys(reviewedWorks));
+  let pages = 0, worksPages = 0, unchangedBodies = 0, editionOnlyBodies = 0, unchanged = 0, exactWorksFiles = 0;
+  const digest = bytes => createHash('sha256').update(bytes).digest('hex');
+
   async function check(dir, prefix = '') {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       const relative = prefix + entry.name;
@@ -27,12 +31,12 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       const actual = await readFile(dir + '/' + entry.name);
       const variant = CAMP_FIRE.responsive.variants.find(item => item.local_image === '/' + relative);
       if (variant) {
-        assert.equal(createHash('sha256').update(actual).digest('hex'), variant.sha256);
+        assert.equal(digest(actual), variant.sha256);
         assert.equal(actual.length, variant.bytes);
         continue;
       }
       if (relative === 'art/camp-fire.jpg') {
-        assert.equal(createHash('sha256').update(actual).digest('hex'), CAMP_FIRE.sha256);
+        assert.equal(digest(actual), CAMP_FIRE.sha256);
         assert.equal(actual.length, CAMP_FIRE.bytes);
         continue;
       }
@@ -40,10 +44,45 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         assert.deepEqual(JSON.parse(actual), CAMP_FIRE);
         continue;
       }
+      // Works HTML is deliberately normalized from proposal-state wrappers for
+      // this ordinary-site candidate. Every non-HTML Works route remains byte-
+      // identical to the exact reviewed PR132 output inventory.
+      if (worksFiles.has(relative)) {
+        if (relative.endsWith('.html')) {
+          const html = actual.toString('utf8');
+          assert.match(html, /<link rel="stylesheet" href="[^"]+\.css">/, relative);
+          assert.doesNotMatch(html.slice(0, html.indexOf('</head>')), /<style>/, relative);
+          assert.doesNotMatch(html, /<meta name="robots" content="noindex/, relative);
+          assert.doesNotMatch(html, /\bUnpublished\b/, relative);
+          assert.doesNotMatch(html, /<(?:script|form|iframe)\b/i, relative);
+          if (relative === 'works/index.html') {
+            assert.match(html, /Five works selected for this preview\./);
+            assert.match(html, /not a ranking or representative canon/);
+          }
+          if (relative === 'works/harriet-powers/index.html') {
+            assert.ok(html.indexOf("The maker's recorded account") < html.indexOf('Our response · PSFH'));
+          }
+          if (relative === 'works/johannes-vermeer/index.html') {
+            assert.doesNotMatch(html, /Our response · PSFH/);
+            assert.match(html, /tier acquired for this preview, not a limit on what the museum offers/);
+          }
+          pages++; worksPages++;
+        } else {
+          assert.equal(actual.length, reviewedWorks[relative].bytes, relative);
+          assert.equal(digest(actual), reviewedWorks[relative].sha256, relative);
+          exactWorksFiles++;
+        }
+        continue;
+      }
       // Newly requested icon assets have no historical counterpart; exact pins
       // and header-only scope are independently asserted in test-favicon.mjs.
       if (['favicon.svg', 'favicon.ico', 'favicon-LICENSE.txt'].includes(relative)) {
         assert.deepEqual(actual, await readFile('public/' + relative));
+        continue;
+      }
+      const sourceCopiedCandidate = ['sitemap.xml', 'explore/start.json'].includes(relative);
+      if (sourceCopiedCandidate) {
+        assert.deepEqual(actual, await readFile('public/' + relative), relative);
         continue;
       }
       const before = execFileSync('git', ['show', baseline + ':' + relative], { cwd: publishing, maxBuffer: 10 * 1024 * 1024 });
@@ -79,7 +118,7 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         assert.deepEqual(Buffer.from(text.replace(ceiling, '')), before);
         assert.equal(actual.length, 1023);
         assert.ok(actual.length <= 1024);
-        assert.equal(createHash('sha256').update(actual).digest('hex'), 'd9494fe389ce625df5c065f23f596cc2626391f026161979f43a229dca175d79');
+        assert.equal(digest(actual), 'd9494fe389ce625df5c065f23f596cc2626391f026161979f43a229dca175d79');
       } else if (!['style.css', 'manifest.json', 'explore/map.json', 'changes.md'].includes(relative)) {
         assert.deepEqual(actual, before, relative); unchanged++;
       }
@@ -89,12 +128,16 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
   const manifest = JSON.parse(await readFile('out/manifest.json'));
   const sha = b => createHash('sha256').update(b).digest('hex');
   assert.equal(manifest.provenance.presentation.stylesheet_sha256, sha(await readFile('out/style.css')));
+  assert.equal(manifest.routes.works, '/works/');
+  assert.equal(manifest.provenance.works.source_review_head, 'dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175');
+  assert.equal(manifest.provenance.works.build_route_count, 36);
+  assert.equal(manifest.provenance.works.selection_ceiling, 'Project-curated starting shelf; not ranking, representative canon, completeness claim or diversity proof.');
   const map = JSON.parse(await readFile('out/explore/map.json'));
   for (const item of map.resources) {
     const bytes = await readFile('out/explore/' + item.path);
     assert.equal(item.bytes, bytes.length, item.path); assert.equal(item.sha256, sha(bytes), item.path);
   }
-  console.log({ checkedHtmlPages: pages, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, explicitlyEditedBodies: 3, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
+  console.log({ checkedHtmlPages: pages, worksPages, exactWorksFiles, unchangedHtmlBodies: unchangedBodies, editionOnlyBodies, explicitlyEditedHistoricalBodies: 3, unchangedOtherFiles: unchanged, mapEntries: map.resources.length });
 });
 
 test('declared light and dark text pairs meet the selected 4.5:1 floor', async () => {
