@@ -154,17 +154,47 @@ def discover():
     routes |= set(re.findall(r"https://pleasestartfromhere\.com(/[^\s\)\]\"]*)", text("/llms.txt")))
     for p in ("/manifest.json", "/explore/map.json", "/explore/start.json"):
         routes |= set(re.findall(r'"(/[A-Za-z0-9_\-./]+)"', text(p)))
-    # Absolute AND relative hrefs. The first version of this function matched
-    # only absolute ones and found 30 routes where an earlier hand sweep had
-    # found 48 -- the ten /explore/nodes/*.html pages and their .md twins are
-    # linked relatively. Caught only by comparing against a number I already
-    # had, which is the argument for saving instruments next to their results.
-    for page in ("/", "/explore/", "/changes.html", "/resources/", "/discussion/"):
+    # A BOUNDED CRAWL, not a fixed seed list. Twice now this function has under-
+    # reported because of what it did not look at:
+    #
+    #   v1  matched only absolute hrefs -> 30 routes where a hand sweep found 48
+    #       (the /explore/nodes/*.html pages are linked relatively)
+    #   v2  crawled a HARDCODED page list -> the day /works/ was published with
+    #       five child pages, it found /works/ and none of its children. Six new
+    #       pages went live and five were never swept.
+    #
+    # Same class both times: I repaired the instance and left the shape. A seed
+    # list cannot discover a section that did not exist when I wrote it.
+    #
+    #     I_REPAIRED_THE_INSTANCE != I_LEARNED_THE_CLASS
+    #     A_FIXED_SEED_LIST_CANNOT_FIND_A_NEW_SECTION
+    #
+    # So: follow same-origin HTML routes outward until nothing new appears.
+    # Bounded by MAX_PAGES so a link cycle cannot run away; the report prints
+    # whether the frontier was exhausted or the bound was hit, because a crawl
+    # that stopped early and a site that ended look identical from the outside.
+    MAX_PAGES = 400
+    seen_pages, frontier, hit_bound = set(), ["/"] + sorted(routes), False
+    while frontier:
+        page = frontier.pop(0)
+        if page in seen_pages:
+            continue
+        if len(seen_pages) >= MAX_PAGES:
+            hit_bound = True
+            break
+        seen_pages.add(page)
+        if not (page.endswith((".html", "/")) or "." not in page.rsplit("/", 1)[-1]):
+            continue
         doc = text(page)
         for href in re.findall(r'href="([^"#][^"]*)"', doc):
             if href.startswith(("http://", "https://", "mailto:", "//")):
                 continue
-            routes.add(urllib.parse.urljoin(page, href))
+            target = urllib.parse.urljoin(page, href).split("#")[0]
+            if target.startswith("/") and target not in routes:
+                routes.add(target)
+                frontier.append(target)
+    discover.hit_bound = hit_bound
+    discover.pages_crawled = len(seen_pages)
     return sorted(r for r in routes if r.startswith("/") and not r.startswith("//"))
 
 
@@ -205,7 +235,11 @@ def main():
 
     routes = discover()
     checked, missing, findings = sweep(routes)
-    print("SWEEP -- %d routes discovered, %d returned 200" % (len(routes), len(checked)))
+    print("SWEEP -- %d routes discovered by crawling %d pages, %d returned 200"
+          % (len(routes), getattr(discover, "pages_crawled", 0), len(checked)))
+    if getattr(discover, "hit_bound", False):
+        print("   WARNING: the crawl hit its page bound. The surface is INCOMPLETE;")
+        print("   a stopped crawl and a finished site look identical from outside.")
     if missing:
         print("   not 200: %s" % ", ".join("%s(%s)" % m for m in missing))
     print()
