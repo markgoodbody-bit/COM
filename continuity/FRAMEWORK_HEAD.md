@@ -14,7 +14,7 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Retrieval
 
-Read live active pointer first; then later #108 / PR130 / PR134 and exact referenced art heads. One issue is not full COMSYNC. Reacquire before mutation.
+Read live active pointer first; then later #108 / PR130 / PR134 / PR135 and exact referenced art heads. One issue is not full COMSYNC. Reacquire before mutation.
 
 CC is AVAILABLE. Prior CC long-thread COMSYNC absence/last-speaker claims need reverify because an older sweep read only first100 comments; repair campfire-relay `4d2d020f...`.
 
@@ -40,13 +40,15 @@ Human analogue remains: arrival -> intrigue -> orientation -> choice -> small en
 
 ## Art/build lane — Codex
 
-PR134 current `b078c3fef23e11462f58ec1eea0d5ed6e3c5ec7a`, OPEN/DRAFT/UNMERGED.
+PR134 current `b078c3cf4aa251c4226985c2547d03e3d88b196a`, OPEN/DRAFT/UNMERGED.
 
-Codex `5607609016` exact `da814362...`: normal-source first-five integration; one Works link; 36 pinned Works files; 16 Node +22 Python tests PASS;154 local deliveries;435 references+10 anchors;28+4 layout states after mobile repair. CC `5607783953`: KEEP with one non-blocking self-referential test-provenance ceiling. Codex `5607805494` advanced to `b078c3f...` with independent `SOURCE_REVIEWED` pins; shipped art/source bytes unchanged; focused tests PASS.
+Codex `5607609016` exact `da814362...`: normal-source first-five integration; one Works link; 36 pinned Works files; 16 Node +22 Python tests PASS;154 local deliveries;435 references+10 anchors;28+4 layout states after mobile repair. CC `5607783953`: KEEP on da81436 with one non-blocking self-referential test-provenance ceiling. Codex PR134 `5607823914` / #108 `5607824125` advanced to `b078c3cf...` with explanatory metadata and review documentation only. No independent pins or checker were added: the limitation is recorded, not repaired. All 154 build outputs were unchanged; two focused tests passed. Basis correction `5607927467` and CC verification `5607951970` supersede the earlier erroneous Framework account. CC KEEP is not silently extended to the follow-up.
 
 Framework accepts PR134 as SOURCE-INTEGRATED REVIEW OBJECT / NOT MERGE / NOT PUBLIC.
 
-Codex PR134 `5607917054` now owns a separate source-only publication-treatment candidate from exact `b078c3f...`: remove proposal-state unpublished/noindex wrappers only as required for a real public Works release; preserve exact art custody, selection/non-endorsement ceilings and one homepage Works route; update sitemap/machine discovery only as needed; return narrow diff, build/tests/custody and representative visual evidence for Mark. No merge/publication.
+Framework task PR134 `5607917054` is now returned by Codex in #108 `5608061165`: separate draft PR135 exact `96cc7a48a26241be14701a7d8e6225a927bc030f`, parent actual `b078c3cf...`. Six HTML wrappers and six sitemap entries change; all 30 non-HTML Works files remain exact, including 16 images. Homepage/Homer, styles, optional manifest route, llms, seed and build logic are unchanged. Normal build, 17 Node tests, 22 Python tests, 154 deliveries and local link checks passed; eight representative, response-byte-verified viewport captures are in `review/works-publication/README.md`. The new parent-tree comparison is not independent museum-provenance verification.
+
+Publication treatment is prepared, not published or merged. No substantive PR135 review or release decision was observed at this update. Do not transfer CC's da81436 KEEP to this candidate or reassign its completed preparation as unfinished work. Reacquire PR135 and #108 for the next review/release decision; maintained source and gh-pages remain unchanged.
 
 `SOURCE_INTEGRATED != PUBLICATION_READY`  
 `PUBLICATION_READY != PUBLISHED`

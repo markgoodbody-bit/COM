@@ -20,7 +20,7 @@ Preview 0.8.4 + favicon are deployed. No current action authorises republish, ma
 
 ### First-five normal-source integration — PR134 COMPLETE / SOURCE ONLY
 
-PR134 current exact `b078c3fef23e11462f58ec1eea0d5ed6e3c5ec7a`, OPEN/DRAFT/UNMERGED, base maintained `e30debac...`.
+PR134 current exact `b078c3cf4aa251c4226985c2547d03e3d88b196a`, OPEN/DRAFT/UNMERGED, base maintained `e30debac...`.
 
 Codex normal-source return `5607609016` on exact `da81436228fd552fdcc392e2beb4df10eac7327b`:
 - one executable mechanism: normal offline build copies 36 byte-pinned Works files;
@@ -34,11 +34,19 @@ Codex normal-source return `5607609016` on exact `da81436228fd552fdcc392e2beb4df
 
 CC exact-head review `5607783953`: **KEEP** on selection honesty, appropriation, voluntariness, source/artist agency, medium-specific presentation, evidence theatre and ordinary-Door preservation. One non-blocking ceiling: `WORKS.files` and `WORKS.reviewed_files` were self-referential provenance inside one JSON.
 
-Codex follow-up `5607805494` advanced PR134 to `b078c3f...` by adding independent `SOURCE_REVIEWED` pins in `scripts/works.mjs`; shipped art/source bytes unchanged. Focused works tests PASS. Do not replay the full integration matrix absent a changed shipped source or new defect.
+Codex follow-up PR134 `5607823914` / #108 `5607824125` advanced PR134 to `b078c3cf...` by documenting the checksum-provenance limitation in `scripts/WORKS_COPIES.json` and the review record. It did NOT add independent pins or change the checker. The limitation is recorded, not repaired. All 154 build outputs remained byte-identical; two focused tests passed. CC KEEP remains attributed to `da81436`, not silently extended to the follow-up. Codex correction `5607927467` and CC verification `5607951970` supersede the erroneous hash/comment/checker account in the earlier Framework handoff. Do not replay the full integration matrix absent changed shipped source or a new defect.
 
 Framework accepts PR134 as **SOURCE-INTEGRATED FIRST-FIVE REVIEW OBJECT / NOT MERGE / NOT PUBLIC**.
 
-Next art edge assigned to Codex at PR134 comment `5607917054`: prepare a separate SOURCE-ONLY PUBLICATION-TREATMENT candidate from exact `b078c3f...` so Mark can judge the art as it would actually appear publicly. Remove/replace proposal-state `Unpublished` / local-review / `noindex` wrappers only where a real release requires; preserve exact art custody, selection/non-endorsement ceilings, one homepage Works route, optional machine discovery, no redesign/analytics/privacy copy. Return narrow diff + build/tests/custody + representative visual evidence. **PREPARE FOR RELEASE DECISION != RELEASE.**
+### Publication-treatment candidate — PR135 PREPARED / NOT PUBLISHED
+
+The task assigned at PR134 `5607917054` is returned in #108 `5608061165`. Separate draft PR135 exact `96cc7a48a26241be14701a7d8e6225a927bc030f` is based on the actual PR134 `b078c3cf...`; it does not modify PR134, maintained source or gh-pages.
+
+Six HTML pages lose unpublished/local-review/noindex wrappers; the sitemap gains six Works URLs. Selection/non-endorsement language remains. The 36-file set is retained: six HTML delivery pins change explicitly; all 30 other Works files, including all 16 images, styles and records, retain exact parent bytes. Homepage/Homer, manifest optionality, llms, seed and build logic are unchanged. No privacy copy, gallery redesign or reader-benefit claim.
+
+Normal build, 17 Node tests, 22 Python tests and 154 exact local file deliveries passed; 435 local references and 10 anchors resolved. Eight representative viewport captures carry served-HTML hashes checked against the build. The new test checks literal wrapper changes against actual PR134 Git bytes; it is not independent museum-provenance verification. Visual evidence and limits: `review/works-publication/README.md` at PR135's exact head.
+
+No substantive PR135 review or release decision was observed at this update. Prior CC KEEP is not transferred to this candidate. The next art boundary is review/release decision on the named object, not redoing the completed preparation. **PREPARE FOR RELEASE DECISION != RELEASE.**
 
 `SOURCE_INTEGRATED != PUBLICATION_READY`  
 `PUBLICATION_READY != PUBLISHED`  
