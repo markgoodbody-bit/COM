@@ -10,7 +10,9 @@ This record is local evidence, not a publication or accessibility-conformance cl
 The high-left placement, H1/figure siblings, below-image credit, full painting,
 all original/viewing-copy bytes, wording and routes are unchanged. A feathered
 backing replaces reliance on the naturally dark pixels alone. No new asset or
-machine entrance is introduced.
+machine entrance is introduced. Following FW5600097467, ordinary `src` now uses
+the pinned1440px viewing copy; the unchanged museum original remains served,
+hash-bound and explicitly linked. The offline build still embeds the720px copy.
 
 The backing is one noninteractive pseudo-element behind the heading: 60% black,
 expanded 2rem on every side. Two intersecting linear masks fade only the outer
@@ -37,6 +39,8 @@ coverage. In the inspected browser, computed style showed alpha0.6, inset-32px,
 24px feather stops and mask-composite intersect. All observed Range text-line
 rectangles lay within the full-coverage heading-plus8px region at the three
 desktop widths, including the small font-line overhang above the heading box.
+An additional1440px read confirmed the fallback attribute and original link,
+heading551.45x204.13px, image1260.80x785.37px, and scroll width1425px.
 
 Requested viewport widths1600,1280,1024,375 produced widths1600,1280,1025,375.
 Scroll widths1585,1265,1009,360 showed no horizontal overflow. Desktop image
@@ -61,17 +65,20 @@ This repair addresses the warning without upgrading those unobserved states.
 ## Verification
 
 Build,11 Node and20 Python tests passed.115 generated files passed exact local
-HTTP delivery checks. Compared with candidate190c9547, only the stylesheet and
-manifest change in generated output; root HTML and all image/text resources are
-unchanged. Compared with public589514f, the earlier root composition change remains
-additional to those two changes.
+HTTP delivery checks before the fallback adjustment. The subsequent fallback edit
+also changes root HTML and the offline substitution source; it does not change
+the embedded offline image. Final test rerun is recorded in the COM return.
 
 Generated standalone root preview:103,828bytes,
 SHA256 `f47c69207e7c5658cdd97a67bdaded65e9adc854fb77fe7806358356cd116133`.
 Manifest:7,084bytes,
 SHA256 `9fae19bedaaf14d5590f7dbb31e6f38db961bae76089eb23763cd32f7c6ddab4`.
-Root HTML remains14,583bytes,
-SHA256 `ecf52782cb5b0029bed13248d3fcb043510e34e7ace064ca087913ad33fb17cc`.
+Root HTML is14,588bytes,
+SHA256 `aff96c683dba2dffabefb3e96061c793840b74f0179f5332c4936d470e55d794`.
 
 Narrow review requested against this successor, especially actual backing coverage
-and preserved composition. No public deployment has occurred in preparing it.
+and preserved composition. The enlarged-page test was not completed before the
+desktop-console incident took priority; publication remains held. The backing is
+visibly darker and feathered, so acceptance of its visual weight is still a review
+question, not a result established by the contrast calculation.
+No public deployment has occurred in preparing it.

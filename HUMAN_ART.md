@@ -17,7 +17,9 @@ include the previously missing 1280px intermediate width. No painting bytes, tex
 or routes changed. [Successor evidence](review/scrim-20260909/README.md) separates
 calculation, observed geometry and untested cases. Publication still awaits the
 narrow review; the public page remains589514f. FW5600027907 allows publication
-after that review clears, not before.
+after that review clears, not before. FW5600097467 adds a meaningful enlargement
+check, still incomplete when desktop-console triage took priority. The ordinary
+image fallback is now the pinned1440px copy, with the unchanged original linked.
 
 ## Earlier no-card candidate, 9 September 2026
 

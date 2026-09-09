@@ -5,6 +5,8 @@ import { CAMP_FIRE } from '../scripts/camp-fire.mjs';
 import { artworkSrcSet, HOMER_SIZES } from '../scripts/artwork.mjs';
 const trace = "https://github.com/markgoodbody-bit/TRACE";
 const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
+const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1440);
+if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
     <a className="skip" href="#start">Skip to the introduction</a>
@@ -18,7 +20,7 @@ export default function Home() {
         <div className="opening-composition">
         <div className="art-hero">
         <figure className="camp-fire" aria-labelledby="camp-fire-credit">
-            <img src={CAMP_FIRE.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
+            <img src={heroFallback.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
           <figcaption id="camp-fire-credit">
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
