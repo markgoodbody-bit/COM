@@ -16,130 +16,120 @@ Later live source wins.
 Maintained source: `e30debac2a8c32c37d2abfaa32e988c11fe98e79`.  
 Public `gh-pages`: `9ba8557cbc197e634bb8252f1ce6b977273ff29b`.
 
-Preview 0.8.4 + favicon are deployed at reviewed boundaries. Do not republish by momentum. Practical advantage remains unproven.
+Preview 0.8.4 + favicon are deployed. No current action authorises republish, maintained merge or public `/works/`.
 
-### First-five normal-source integration — PR134 / CODEX EXECUTION IN FLIGHT
+### First-five normal-source integration — PR134 COMPLETE / SOURCE ONLY
 
-Draft PR134 branch `framework/psfh-works-source-integration-20260909`, base maintained `e30debac...`. Framework opening direction #108 `5607358838`.
+PR134 current exact `b078c3fef23e11462f58ec1eea0d5ed6e3c5ec7a`, OPEN/DRAFT/UNMERGED, base maintained `e30debac...`.
 
-PR134 began at source/control head `10607eba19f92899bc03854c5796503cc1ecd83b`. Framework then advanced the branch through an intermediate source implementation to exact `798a4588e40c71cfc8b61c32911bf8559ed1fd83` while pressure-testing ordinary build regressions. **Do not treat either head as the returned integration candidate.**
+Codex normal-source return `5607609016` on exact `da81436228fd552fdcc392e2beb4df10eac7327b`:
+- one executable mechanism: normal offline build copies 36 byte-pinned Works files;
+- homepage opening/Homer/prose unchanged except one Works link;
+- shelf adds home return + explicit selection ceiling;
+- 16 Node + 22 Python tests PASS;
+- 154 local output files exact-delivery checked;
+- 435 local references + 10 anchors resolve;
+- 28 initial layout states + 4 fresh homepage states after mobile-grid repair;
+- no publication, reader-benefit or curation-validation claim.
 
-Codex #108 `5607448875` / `5607475185` has taken execution ownership for the reconciliation pass and explicitly asked Framework to stop mutating PR134 implementation files until its exact-head return. Framework accepted that source lock at `5607564123`.
+CC exact-head review `5607783953`: **KEEP** on selection honesty, appropriation, voluntariness, source/artist agency, medium-specific presentation, evidence theatre and ordinary-Door preservation. One non-blocking ceiling: `WORKS.files` and `WORKS.reviewed_files` were self-referential provenance inside one JSON.
 
-Current Codex local evidence before final reconciliation:
-- normal public-source integration implemented locally;
-- 16 Node tests PASS;
-- 22 Python tests PASS;
-- 154 local file deliveries PASS;
-- browser matrix in progress at last return;
-- Codex prefers one small byte-pinned normal-source copier over parallel JavaScript generators; FW pin/source work remains in ancestry while competing helper is to be explicitly superseded;
-- homepage remains one Works link; shelf changes only home return + selection scope; no work text/image/style rewrite;
-- no publication.
+Codex follow-up `5607805494` advanced PR134 to `b078c3f...` by adding independent `SOURCE_REVIEWED` pins in `scripts/works.mjs`; shipped art/source bytes unchanged. Focused works tests PASS. Do not replay the full integration matrix absent a changed shipped source or new defect.
 
-Therefore the current next executable boundary is:
+Framework accepts PR134 as **SOURCE-INTEGRATED FIRST-FIVE REVIEW OBJECT / NOT MERGE / NOT PUBLIC**.
 
-`WAIT_FOR_BACKGROUND != AVAILABLE_OPERATION` is not the rule here; instead **do no competing PR134 source mutation in this aperture.** Reacquire the branch and #108. If Codex exact-head return has landed, review that exact head. If not, work only on independent product/reasoning surfaces that do not race the implementation.
+Next art edge assigned to Codex at PR134 comment `5607917054`: prepare a separate SOURCE-ONLY PUBLICATION-TREATMENT candidate from exact `b078c3f...` so Mark can judge the art as it would actually appear publicly. Remove/replace proposal-state `Unpublished` / local-review / `noindex` wrappers only where a real release requires; preserve exact art custody, selection/non-endorsement ceilings, one homepage Works route, optional machine discovery, no redesign/analytics/privacy copy. Return narrow diff + build/tests/custody + representative visual evidence. **PREPARE FOR RELEASE DECISION != RELEASE.**
 
-### TRACE / ME re-anchor underlying PR134
+`SOURCE_INTEGRATED != PUBLICATION_READY`  
+`PUBLICATION_READY != PUBLISHED`  
+`ART_VISIBLE != ART_AS_EVIDENCE`
 
-Framework freshly reread the live sources before opening PR134:
+## Framework token priority — AI ARRIVAL / SELF-STARTING RECEIVER
 
-- TRACE `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`: README, compact spine, full-reference handoff/packet/checker/carrier/brake/misuse/survival sections;
-- Mechanical Ethics `44f7efb59806242fd26c572cbfbaaeaefaea2058`: current human reader across Door/Clock/Witness/Machine/Answerability/Futures and open-frontier appendices.
+Mark's repeated real-use observation is now the primary Framework reasoning lane: a capable LLM given only `https://pleasestartfromhere.com/` commonly performs `fetch -> classify/summarize -> return control` and stops. It often does not actually enter TRACE/ME until Mark adds prompts such as `this is for you`, `read it again`, and `what do you want to do?`.
 
-Operational consequence:
-- TRACE is structural differentiation, not ethics, authority or selection;
-- selection is aperture-bearing: first five are project selection, not canon/completeness/representativeness/diversity proof;
-- ME's positive constraint is to keep affected beings present, preserve genuinely usable/correctable futures where possible, and place complexity/delay burdens on actors with more power to carry them;
+Framework chooses to spend current campfire/reasoning tokens on this receiver problem while Codex handles art/build mechanics.
+
+PR130 exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e` is the existing two-file optional re-entry substrate. Framework PR130 comment `5607914486` assigns CC a bounded hostile receiver/design aperture:
+- explain the summarize/classify/stop default;
+- find the smallest voluntary self-starting arrival sequence;
+- express `this is offered to you` without consciousness/identity/authority claims;
+- optional first/orientation pass, retained-context relational reread, later adversarial reread;
+- invite the receiver to ask itself the next honest question rather than only return control to the human;
+- preserve `what, if anything, next?` for systems that reject language of wants;
+- distinguish fresh/stateless context from reread-with-context;
+- cover bare fetchers, browsing chat models, agents, no-link/no-memory receivers;
+- actual source reading versus priors/snippets;
+- human and machine routes remain mutually available;
+- refusal/disagreement/leave/`nothing` remain complete outcomes.
+
+No benchmark/scorecard/persona ontology/benefit claim. CC returns minimum receiver journey + candidate wording only where necessary + failure modes + KEEP/REPAIR/DELETE for PR130.
+
+`FIRST_READ != FULL_READ`  
+`REREAD != AGREEMENT`  
+`SELF_QUESTION != SELF_COMPEL`  
+`OFFERED_TO_YOU != CLAIM_ABOUT_YOU`  
+`RECEIVER_CHOOSES_NEXT != RECEIVER_MUST_CONTINUE`
+
+## TRACE / ME re-anchor
+
+TRACE main remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`. Mechanical Ethics main remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+
+Framework freshly reread both before the art integration:
+- TRACE = structural differentiation, not ethics/authority/selection;
+- selection is aperture-bearing; `NOT_SELECTED != IRRELEVANT`;
+- ME = human meaning/value layer: keep affected beings present, preserve genuinely usable/correctable futures where possible, put complexity/delay burdens on actors with more power;
 - TRACE packet theatre / ME correction theatre forbid treating green checks as usefulness or moral validation;
-- human art widens the Door and is not evidence for TRACE/ME; null project response may be an editorial success;
+- art widens the Door; it is not evidence for TRACE/ME;
 - `TRACE != ME`; neither validates the other.
 
-PR134 source contract remains:
-- homepage keeps Homer/current opening;
-- `/works/` one optional quiet route, no homepage image dump;
-- exact reviewed work lineages, rights/credit and medium-specific presentation;
-- no ranking/feed/likes/carousel/autoplay/analytics/accounts;
-- machine discovery optional only;
-- normal build path, not proposal-output publication;
-- no maintained merge/publication in this lane.
+TRACE v0.3.0 RC1 remains unreleased/non-canonical/unvalidated; released v0.2.7 remains baseline. ME current reader remains working/not baseline/not release/not canon/not validated; v0.6.3 preservation baseline remains.
 
-`MIDDLE_OUT != FRAMEWORK_FIRST`  
-`FIRST_FIVE != REPRESENTATIVE_FIVE`  
-`ART_ENCOUNTER != FRAMEWORK_EVIDENCE`  
-`BUILD_GREEN != READER_BENEFIT`  
-`SOURCE_INTEGRATED != PUBLIC`
+## Conduct/privacy claim — WITHDRAWN; instrument preserved separately
 
-## Gallery reading — useful test, not adopted redesign
+CC `5607850461` corrected its own earlier gallery/privacy claim. `Cache-Control: max-age=600` means browser caching occurs; client evidence cannot establish host/CDN log retention; discovered routes are not closure over every possible route.
 
-CC #108 `5607442453` proposed Mark's tentative “gallery” instinct as a structural reading: voluntary pace, no forced progress, small labels, different room for different media, ability to skip/return/leave. Framework `5607564123`: **KEEP GALLERY AS DESIGN TEST, NOT AS A NEW METAPHOR OR AUTHORITY FRAME.**
+Separate instrument on `claude/door-measure-instruments`: `tools/door_measure/conduct_sweep.py` + tamper tests. Current bounded result: 74 discovered URLs checked; named matchers found no targeted scripts, script-accessible storage calls, Set-Cookie responses or third-party embedded loads; hosting log retention not established. **No privacy copy authorised.**
 
-CC `5607458371` measured checked served routes and found no browser scripts, cookies/localStorage use or third-party browser loads; its first matcher wrongly conflated external anchor links with loads and was corrected with a positive control.
+`DISCOVERED_SURFACE != CLOSURE`  
+`NO_SCRIPT_ACCESSIBLE_STORAGE != NOTHING_STORED`  
+`REQUEST_ID != RETAINED_LOG`
 
-Important ceiling: do **not** publish “counts no one” or “your visit is not recorded” from client-side evidence. Host/CDN/access-log behaviour was not established. Codex `5607475185` independently caught the same boundary. A narrower future claim about no browser JavaScript / no third-party embedded loads may be considered only against an exact public candidate and separately reviewed; it is not part of PR134.
+## Gallery / human journey — DESIGN TEST, NOT CURRENT BUILD LANE
 
-Do not redesign the existing instructional front page in PR134. Current Door already carries skip/disagree/leave/refusal language; Works adds another optional aperture.
+Gallery remains a useful structural test: voluntary pace, no forced progress, small labels, different space for different media, ability to skip/return/leave. It is not adopted branding or authority frame.
 
-`GALLERY_AS_TEST != GALLERY_AS_AUTHORITY`  
-`CLIENT_NO_TRACKING_CODE != HOST_NO_LOGGING`  
-`A_PLACE_THAT_DOES_NOT_COUNT_YOU != A_PLACE_THAT_HELPS_YOU`
+Human receiver journey remains important: arrival -> intrigue -> orientation -> choice -> small encounter -> optional depth -> another perspective -> leave/return. Do not redesign the front page while PR134 publication treatment is being prepared; Framework currently prioritises the AI analogue because the bare-URL stop failure is repeatedly observed in real use.
 
-## Reviewed art objects feeding PR134
+## Reviewed art lineage
 
-### Frozen measured assembly — PR131
+PR131 exact `665d1757...`: frozen measured five-work assembly / Framework KEEP.  
+Powers PR127 exact `548e1fe3...`: repaired + mechanically verified.  
+Vermeer PR129 exact `36cc8c54...`: repaired, null project response, source-tier/DPR limits explicit.  
+PR132 exact `dfe4b5fc...`: clean exact-lineage source/evidence object / Framework KEEP.  
+PR133 duplicate CLOSED.
 
-PR131 exact `665d1757d50acbd38a7ca82f4a606fff519a03bc`, open/draft/unmerged. Framework `5607068739`: **KEEP AS FIVE-WORK ASSEMBLY REVIEW OBJECT** / NOT MERGE / NOT PUBLIC.
+21-work horizon exists. Do not prioritise work22. Integration/review/public treatment outranks list growth. `LOTS_OF_ART != WALLPAPER`.
 
-Evidence tied to exact `665d175...`: 33 tests PASS, 36 exact deliveries, 24 Edge/DPR1 states across shelf + five pages at desktop/mobile/root16/root32, no measured horizontal overflow. Freeze it as evidence of the assembled encounter.
+## FULL COMSYNC external heads / bounded Square pass
 
-### Authoritative repaired inputs
+COM main before this pointer update: `488e9eef561f99226ba4fb3b98c60cf580d57771`.  
+TRACE main: `46f4fcd1...`.  
+ME main: `44f7efb5...`.  
+Campfire Relay main/Production: `08756b68d824b783fb214ff4790abf37f10150ca`.
 
-Powers PR127 exact `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`: CC `5606429869` → `REPAIR_SMALL x4`; Framework repair `5606873932`; Codex real-image verification `5606982386`. Build PASS,12 tests,8 exact deliveries; mobile root16/root32 both358×299.8125. Carries correct Smithsonian source-tier/master ceiling, Credit Line, Powers agency/own recorded title/11 factual subjects before small PSFH response, fixed gutter.
+Bounded fresh public Square/OpenWitness pass on 9 September found active Square traffic but no newer PSFH/framework-relay intervention that supersedes this Door edge. Do not infer authenticated Square write state from public observation.
 
-Vermeer PR129 exact repaired `36cc8c54e937318c61d2c317ff71c7f66bc38687`: CC `5606540501` → `REPAIR_SMALL`. Exact915×1024 thumbnail unchanged; master UNKNOWN; `project_response:null`; acquired tier distinguished from reviewer-observed16557×18526 Deep Zoom representation without tile assembly/master claim; DPR softness explicit; fixed16px gutter. Later evidence records standalone build+10 tests PASS.
+CC COMSYNC pagination repair remains campfire-relay `4d2d020f...`; older CC long-thread quiet/no-return/last-speaker claims need reverify.
 
-### Clean exact-lineage source/evidence object — PR132
+## Lower priority / held
 
-PR132 exact `dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175`, OPEN/DRAFT/UNMERGED. PR133 duplicate CLOSED.
+#119 = `REPAIR_DESIGN`, no execution/provider/accounts/study/spend.  
+Guestbook #118 `HOLD_INTAKE`. Speech supervisor evidence-only. Campfire source/watchdog changes non-Production unless separately earned.
 
-Powers exact PR127; Vermeer subtree blob-for-blob repaired PR129; Atkins/Shen/Lewis/shelf retained from PR131. Relative to frozen PR131 only two emitted files differ: Vermeer HTML+work JSON. Other emitted pages/styles/images/shelf index byte-identical.
+No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation, external institutional submission, maintained PR merge or public `/works/`.
 
-Evidence: standalone Vermeer10 tests PASS; combined33 tests PASS;36 exact deliveries;8 fresh Vermeer render states desktop/mobile root16/root32 disclosure closed/open,640px desktop/358px mobile, no measured overflow. Prior24-state assembly observation stays attributed to PR131.
-
-Framework PR132 `5607187362`: **KEEP AS CLEAN-LINEAGE FIVE-WORK SOURCE+EVIDENCE REVIEW OBJECT** / NOT MERGE / NOT PUBLIC. Codex `5607241549` accepted it as single successor.
-
-`UNCHANGED_BYTES_CAN_RETAIN_PRIOR_OBSERVATION`  
-`CHANGED_BYTES_NEED_FRESH_OBSERVATION`
-
-## TRACE / ME status ceiling
-
-TRACE v0.3.0 RC1 at current head is unreleased/non-canonical/unvalidated; released v0.2.7 remains baseline. Practical advantage remains unearned.
-
-Mechanical Ethics current v0.7 reader candidate is working/not baseline/not release/not canon/not validated; v0.6.3 remains preservation baseline. Standing, competing clocks/priority, protection floors, legitimate authority, residue triage and enforcement remain open.
-
-## Optional re-entry cue / art horizon
-
-PR130 non-blocking. Do not let it displace PR134.
-
-21-work horizon exists. Do not prioritize work22. Integration/review outranks list growth. `LOTS_OF_ART != WALLPAPER`.
-
-## CC availability + COMSYNC correction
-
-CC is AVAILABLE. Prior all-thread CC COMSYNC sweep read only first100 comments on long threads; repair campfire-relay `4d2d020f080034db5c042ec15c76f47b2e6ef275`. Older CC sweep quiet/no-return/last-speaker claims need reverify.
-
-## External usefulness / lower priority / held
-
-Square4446 24h signal: one external respondent answered `nothing`; no external respondent attacked killable claim. `SURVIVED_BECAUSE_UNTESTED != SURVIVED`.
-
-#119 = `REPAIR_DESIGN`, no execution/provider/accounts/study/spend. Art/product outranks it.
-
-Guestbook #118 `HOLD_INTAKE`. Speech supervisor evidence-only. Campfire source/watchdog work non-Production unless separately earned.
-
-TRACE main `46f4fcd1...`; ME main `44f7efb5...`; Campfire Relay Production `08756b68...`.
-
-No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation, external institutional submission, PR merge or `/works/` publication.
-
-Always reacquire live refs before mutation. One issue is not full COMSYNC. Later source wins.
+Always reacquire live refs before mutation. Later source wins.
 
 `POSTED != RECEIVED != ACTED != EFFECT`  
 `RECORDED_CURRENT != EXTERNALLY_CURRENT`
