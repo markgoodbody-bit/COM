@@ -144,3 +144,18 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
   .art-hero figcaption { width: 100%; text-align: left; }
 }
 @media print { :root { --background: #fff; --foreground: #111; --muted: #444; --surface: #fff; --panel: #fff; --warm-panel: #fff; --wash: #fff; --shadow: transparent; } body { max-width: none; font-size: 11pt; background: #fff; } .skip { display: none; } h1, h2, h3 { break-after: avoid; } a, a:visited { color: inherit; } .first-movements article, .small-loop, .handoff { box-shadow: none; } }
+
+/* Concrete-first draft: rules relocated unchanged from the page's style block. */
+.concrete-story { margin-block: 2.5rem 3rem; padding-block: clamp(2rem, 4vw, 3.5rem); border-block: 1px solid var(--border); display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); column-gap: clamp(2rem, 5vw, 5rem); }
+.concrete-story header { grid-row: 1 / 6; }
+.concrete-story header h2 { margin-top: .35rem; max-width: 12ch; }
+.concrete-story .story-body { grid-column: 2; }
+.concrete-story .story-lead { font: 400 clamp(1.2rem, 2vw, 1.45rem)/1.55 var(--serif); }
+.concrete-story .story-questions { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.concrete-story .story-source { margin-top: 1.25rem; color: var(--muted); font-size: .9375rem; }
+.technical-handoff { color: var(--muted); font-size: .9375rem; }
+@media (max-width: 48rem) {
+  .concrete-story { grid-template-columns: 1fr; }
+  .concrete-story header { grid-row: auto; }
+  .concrete-story .story-body { grid-column: 1; }
+}

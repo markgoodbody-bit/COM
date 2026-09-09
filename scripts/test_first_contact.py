@@ -8,10 +8,25 @@ import hashlib
 import json
 from collections import Counter
 import re
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLISHED = ROOT.parent / 'DEV' / 'campfire-door-pages'
+# Worktrees need not share the original Downloads layout. Select the existing
+# publishing repository explicitly; keep the old default for existing callers.
+PUBLISHED = Path(os.environ.get('PSFH_PUBLISHED_CHECKOUT', str(ROOT.parent / 'DEV' / 'campfire-door-pages'))).resolve()
 BASELINE = '50caedc89646b7337a86a5610cef24426b518cf3'
+
+
+def published_text(revision, name):
+    if not PUBLISHED.is_dir():
+        raise RuntimeError(
+            f'Publishing checkout not found: {PUBLISHED}. '
+            'Set PSFH_PUBLISHED_CHECKOUT to the existing publishing repository; '
+            'the pinned historical comparisons must not be skipped.'
+        )
+    return subprocess.check_output(
+        ['git', 'show', revision + ':' + name], cwd=PUBLISHED
+    ).decode('utf-8')
 
 
 class Reading(HTMLParser):
@@ -74,7 +89,7 @@ class FirstContactTests(unittest.TestCase):
         # Mark's composition correction puts intact provenance after the image.
         self.assertLess(self.html.index('<img'), self.html.index('<figcaption'))
         # The editorial revision moves the same art into the opening composition.
-        # Direct reading routes precede it; the original detailed choices remain.
+        # Direct reading routes precede it; the concrete-first choices follow it.
         self.assertLess(self.html.index('aria-label="Reading routes"'), self.html.index('<figure'))
         self.assertLess(self.html.index('<figure'), self.html.index('class="first-movements"'))
         navigation = self.html.split('aria-label="Reading routes"')[1].split('</nav>')[0]
@@ -88,8 +103,8 @@ class FirstContactTests(unittest.TestCase):
         self.assertEqual(manifest['provenance']['artwork']['image_sha256'], record['sha256'])
         self.assertNotIn('teaching_preview', manifest['provenance'])
 
-    def test_editorial_layout_preserves_all_original_paragraphs_and_headings(self):
-        original = subprocess.check_output(['git', 'show', 'e0d765b3d203035971b5fa544eb5f5b48cc0f518:index.html'], cwd=PUBLISHED).decode('utf-8')
+    def assert_editorial_contract(self, html):
+        original = published_text('e0d765b3d203035971b5fa544eb5f5b48cc0f518', 'index.html')
         def blocks(html):
             # Compare substantive blocks independently of authorised relocation.
             values = []
@@ -97,19 +112,28 @@ class FirstContactTests(unittest.TestCase):
                 text = ' '.join(' '.join(Reading(block).text).split())
                 values.append(re.sub(r'Preview 0\.8(?:\.\d+)?', 'Preview [edition]', text))
             return Counter(values)
-        before, after = blocks(original), blocks(self.html)
-        # Only these explicitly reviewed art-provenance paragraphs may differ.
-        old_credit = 'The image is reproduced without cropping or alteration from The Met’s original photograph , under its Open Access policy . Image source details . Its use here does not imply endorsement by the artist or museum.'
-        new_credit = 'The painting is shown in smaller viewing copies without cropping, retouching or generative alteration. The unchanged local original comes from The Met’s original photograph , under its Open Access policy . Image source details . Its use here does not imply endorsement by the artist or museum.'
-        record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
-        interpretation = 'Why this spoke to us. ' + record['why_this_spoke_to_us']
-        self.assertEqual(before[old_credit], 1)
-        self.assertEqual(after[new_credit], 1)
-        self.assertEqual(after[interpretation], 1)
-        before.subtract([old_credit]); after.subtract([new_credit, interpretation])
-        self.assertEqual(+before, +after)
-        self.assertTrue(set(Reading(original).links).issubset(self.page.links))
-        self.assertIn('href="#situation"', self.html.split('</header>')[0])
+        before, after = blocks(original), blocks(html)
+        # Fixed editorial exceptions, inspected against PR123's source. Never
+        # regenerate from the page being tested: that would approve any loss.
+        changes = json.loads((ROOT / 'scripts/fixtures/concrete-first-editorial-delta.json').read_text(encoding='utf-8'))
+        self.assertEqual(changes['historical_revision'], 'e0d765b3d203035971b5fa544eb5f5b48cc0f518')
+        self.assertEqual(before - after, Counter(changes['removed']))
+        self.assertEqual(after - before, Counter(changes['added']))
+        self.assertTrue(set(Reading(original).links).issubset(Reading(html).links))
+        self.assertIn('href="#situation"', html.split('</header>')[0])
+
+    def test_editorial_layout_preserves_unlisted_paragraphs_headings_and_links(self):
+        self.assert_editorial_contract(self.html)
+
+    def test_editorial_contract_rejects_unlisted_loss(self):
+        target = '<p>Reading implies no adoption, obligation or consent.</p>'
+        self.assertEqual(self.html.count(target), 1)
+        with self.assertRaises(AssertionError):
+            self.assert_editorial_contract(self.html.replace(target, '', 1))
+
+    def test_editorial_contract_rejects_unlisted_addition(self):
+        with self.assertRaises(AssertionError):
+            self.assert_editorial_contract(self.html.replace('</main>', '<p>Unreviewed extra assertion.</p></main>', 1))
 
     def test_viewing_copies_and_offline_identity(self):
         from PIL import Image
@@ -173,22 +197,26 @@ class FirstContactTests(unittest.TestCase):
 
     def test_optional_movements_before_explanation_and_takeaway_before_link(self):
         headings = ['Something is happening', 'Something could be made possible',
-                    'Something here seems wrong, incomplete or worth discussing',
-                    'I want the compact source', 'I am only curious']
+                    'I want to explore, question or disagree']
         positions = [self.text.index(h) for h in headings]
         self.assertEqual(positions, sorted(positions))
         self.assertLess(positions[-1], self.text.index('Why this exists'))
-        for name in ['situation', 'possibility', 'challenge', 'source', 'curiosity']:
+        movements = self.html.split('class="first-movements"')[1].split('class="perspective-and-boundaries"')[0]
+        self.assertEqual(re.findall(r'<article id="([^"]+)">', movements), ['situation', 'possibility', 'challenge'])
+        self.assertEqual(re.findall(r'<h2>(.*?)</h2>', movements), headings)
+        self.assertLess(self.text.index('Two flats, one wall'), positions[0])
+        for name in ['situation', 'possibility', 'challenge']:
             article = self.html.split(f'<article id="{name}">')[1].split('</article>')[0]
             before_link = Reading(article.split('<a ')[0])
             self.assertGreater(len(' '.join(before_link.text)), 160, name)
 
-    def test_visible_absolute_routes_and_local_targets(self):
+    def test_absolute_route_destinations_and_local_targets(self):
         for suffix in ['/explore/', '/explore/nodes/futures.html', '/discussion/',
                        '/explore/start.json', '/read/start.html', '/changes.html']:
             url = 'https://pleasestartfromhere.com' + suffix
-            self.assertIn(url, self.text)
             self.assertIn(url, self.page.links)
+        self.assertIn('Explore futures and possibilities', self.text)
+        self.assertIn('Compact text and machine routes:', self.text)
         for href in self.page.links:
             url = urlparse(href)
             if url.netloc and url.netloc != 'pleasestartfromhere.com':
@@ -201,6 +229,7 @@ class FirstContactTests(unittest.TestCase):
     def test_meaning_changing_limits_and_no_dead_intake(self):
         for phrase in ['How can we make a better future?', 'Site Preview 0.8',
                        'No introduction or agreement is required.',
+                       'You do not need a problem, an identity category or a commitment to begin.',
                        'This is a stated value choice',
                        'You may disagree, use another method, or leave.',
                        'read-only; it does not receive replies yet.',
@@ -215,12 +244,12 @@ class FirstContactTests(unittest.TestCase):
         self.assertNotIn('not published', self.text)
         self.assertRegex(self.text, r'(You can|If it helps,) read this yourself,? or hand this address to an AI')
         self.assertIn('No special prompt is required.', self.text)
-        self.assertLess(self.text.index('I am only curious'), self.text.index('Another perspective'))
+        self.assertLess(self.text.index('I want to explore, question or disagree'), self.text.index('Another perspective'))
         self.assertLess(self.text.index('Another perspective'), self.text.index('This is a stated value choice'))
         self.assertIn('https://pleasestartfromhere.com/', self.page.links)
 
     def test_optional_small_loop_after_movements_and_in_machine_reading(self):
-        self.assertLess(self.text.index('I am only curious'), self.text.index('Take one useful step'))
+        self.assertLess(self.text.index('I want to explore, question or disagree'), self.text.index('Take one useful step'))
         self.assertLess(self.text.index('Take one useful step'), self.text.index('Why this exists'))
         cells = [s for s in self.page.sections if s['attrs'].get('aria-labelledby') == 'small-loop']
         self.assertEqual(len(cells), 1)
@@ -257,7 +286,7 @@ class FirstContactTests(unittest.TestCase):
 
     def test_no_old_destination_dropped_and_history_preserved(self):
         def old(name):
-            return subprocess.check_output(['git', 'show', BASELINE + ':' + name], cwd=PUBLISHED).decode('utf-8')
+            return published_text(BASELINE, name)
         self.assertTrue(set(Reading(old('index.html')).links).issubset(self.page.links))
         original = old('changes.md')
         current = (ROOT / 'public/changes.md').read_text(encoding='utf-8')
