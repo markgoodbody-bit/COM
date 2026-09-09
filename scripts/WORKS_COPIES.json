@@ -1,6 +1,7 @@
 {
   "source_review": "dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175",
   "status": "Source-only integration; not publication or evidence of reader benefit.",
+  "verification_ceiling": "files and reviewed_files are declarations in this same record. Their agreement and the offline copier's byte checks establish consistency with declared pins, not independent verification against source_review. Changes to source_review, either inventory or the copied assets require renewed comparison with the pinned source tree; prior review does not verify later changes.",
   "changed_from_review": [
     "works/index.html: homepage return and explicit selection scope only"
   ],

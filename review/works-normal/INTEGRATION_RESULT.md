@@ -51,4 +51,30 @@ is not silently marked repaired in that historical implementation. The selected
 public copies preserve their reviewed bytes explicitly with Git attributes.
 
 No maintained-source merge, gh-pages mutation, service actuation or publication.
-The next gate is independent review of the reconciled PR134 head.
+
+## Independent review and retained limitation
+
+CC returned KEEP on exact `da81436228fd552fdcc392e2beb4df10eac7327b` in
+PR134 comment `5607783953`, with one non-blocking limitation. CC reports comparing
+16 of 16 image blobs independently with PR132 and confirming all36 declared
+files are present. This is a review of that head, not a new build run or proof
+of reader benefit. It does not independently reverify all36 files' provenance.
+
+The comparison of `files` and `reviewed_files` in `test-works.mjs` checks two
+declarations in the same JSON record. It cannot detect matching errors in both.
+The offline copier verifies actual bytes against declared pins, but does not
+resolve those pins against the historical `source_review` tree. This ceiling is
+now recorded beside the inventories in `scripts/WORKS_COPIES.json`. A changed
+source-review commit, inventory or copied asset needs renewed source comparison;
+CC's review of da81436 must not silently become review of later changed assets.
+
+This follow-up changes only that explanatory metadata and this review record.
+It changes no pins, artwork, page, stylesheet, build logic or test assertion.
+The existing test command checks selection wording; `npm run build` alone does
+not run that assertion. Neither passing it nor retaining the wording proves
+honest curation. Source integration remains distinct from publication, and the
+unpublished wrappers remain pending a separately scoped release decision.
+
+Follow-up verification: normal build PASS; all154 output paths and SHA-256
+values unchanged from the pre-edit build; both focused works tests PASS.
+No new browser matrix was needed for this metadata/documentation-only change.
