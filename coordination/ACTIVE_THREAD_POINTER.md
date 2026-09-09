@@ -13,7 +13,7 @@ PSFH, TRACE, Mechanical Ethics, Campfire, COM, tests, guestbooks and art are ins
 
 ## Current executable edge
 
-### 1. Preview 0.8.4 — exact RC complete, publication HOLD on one independent review
+### 1. Preview 0.8.4 — independent review complete, publication HOLD pending exact direction
 
 Maintained PSFH source:
 `d28121c7fca9d064226670fc568dad57073c836c`.
@@ -42,16 +42,16 @@ Codex RC receipt #108 `5604725987`, evidence `9c9d2418a0d1aac44045369595aa1da5d3
 
 Framework inspected source delta, D015 and test-contract changes and returned metadata KEEP. D015 explicitly calls itself a candidate, preserves D014 history byte-for-byte below it, and records the already-published 1440 Homer fallback/feather as a historical clarification rather than a new 0.8.4 art change.
 
-Remaining gate: **Claude Code narrow release-metadata / accidental-bundle review on exact PR #126**. Framework request is on PR #126 comment `5604804715` so the surface is discoverable. At last COMSYNC no CC return had landed.
+Claude Code returned **KEEP** on exact RC `3f7803d27c3615d81ede643f153dc2ec20270e01` in #108 comment `5605021643`: release-metadata truth, accidental bundle and history handling. This was a source/metadata review, not a second full build or deployment observation. The narrow independent review is complete; do not request it again.
 
 Public remains:
 `gh-pages dd06d95cb880208b30f703c54af33c2440c97812`.
 
-Do not publish or merge PR126 merely because the technical evidence is green. If CC returns KEEP and refs are unchanged, Framework may authorise the exact guarded 115-file publication without returning to Mark. Reacquire refs first.
+Next gate: **Framework's exact guarded publication direction**. PR126 remains open/unmerged and all four named refs were reacquired unchanged during this sync. Framework may authorise the reviewed 115-file publication without returning to Mark. Do not infer publication authority from CC's KEEP alone; reacquire refs again before mutation.
 
 `RC_TESTED != PUBLIC_DEPLOYED`
 
-### 2. Harriet Powers — source-only art build ACTIVE
+### 2. Harriet Powers — source-only candidate built, independent review OPEN
 
 Work: Harriet Powers, *Bible Quilt*, 1885–1886, National Museum of American History / Smithsonian Institution.
 
@@ -72,13 +72,26 @@ Codex execution order #108 `5604976850` is active:
 - make proportional 720w/1440w viewing copies with tool/settings/dimensions/bytes/SHA + parent hash;
 - source artwork record with actual source/rights/master-status ceiling;
 - deterministic provenance tests;
-- source-only optional work page / Explore-linked presentation;
+- source-only dedicated `/works/harriet-powers/` page; images and records under `/art/`, following later placement direction #108 `5605023335`;
 - work/maker/source first; museum record that Powers explained the eleven panels and Smith recorded them; separately labelled PSFH response afterward;
 - no individual panel interpretation unless exact source wording is freshly verified;
 - not another homepage hero, wallpaper, carousel or Homer template;
 - no gh-pages wiring/site-edition bump.
 
-At last COMSYNC no Powers implementation branch existed yet.
+Codex returned the implementation in #108 `5605152783` and PR127 `5605153167`:
+
+- branch `codex/powers-work-page-20260909`;
+- exact head `fd4be44799c47bd4c0df6cf5c0bd470ca30f33d2`, direct parent maintained `d28121c7...`;
+- draft PR127, open/unmerged;
+- fourteen additions confined to `proposals/powers/`; no existing tracked site file changed;
+- exact acquired parent and original acquisition receipt preserved; 720x603 and 1440x1206 viewing copies produced, hashed and reproducible in the recorded encoder environment;
+- separate candidate build PASS, ten narrow tests PASS, eight exact local HTTP deliveries and work-route HTTP200;
+- normal site build still fails at the inherited `llms.txt` pin on d281. Its separate fix belongs to Preview0.8.4 RC, not this art branch;
+- no homepage link, Explore concept node, gallery/index, normal build integration, edition bump or gh-pages mutation.
+
+Independent CC review remains open for source attribution, interpretation/teaching-illustration risk, and representative desktop/mobile/enlarged-text rendering. Codex observed the page's browser accessibility tree and the 720 image, **not** representative desktop/mobile screenshots or overflow behaviour; source-level CSS deductions do not close that gate. Source record and detailed evidence are at `proposals/powers/README.md` on the exact candidate head.
+
+After review, any eventual root link belongs in “The work and its neighbours”, not the first-movement cards or conceptual Explore map. No public wiring is authorised by this pointer.
 
 `ACQUIRED_SOURCE_IMAGE != MUSEUM_MASTER`  
 `CREATOR_ACCOUNT != PROJECT_INTERPRETATION`
