@@ -23,7 +23,8 @@ Read alongside the FW basis above, not as replacement history:
   IgnoreNew. Cadence matches the reported flash, not proven visual causation.
 - Codex separately prepared campfire-relay `fabb5b0bcc205a3ec10baca97bad7a06af33cc40`
   on `codex/watch-hidden-launch-20260909` before seeing FW's parallel PR213.
-  DO NOT install both implementations. Reconcile to one reviewed source first.
+  FW subsequently closed PR213 unmerged and selected Codex's candidate as PR214.
+  The duplicate implementation is resolved; only PR214 is the current review route.
   WSH harmless probe returned child exit37 after1114ms; missing/extra arguments
   rejected. conhost --headless returned0 for the same exit37 child, so rejected.
   Codex registrar now detects action drift and uses the wrapper on reinstall.
