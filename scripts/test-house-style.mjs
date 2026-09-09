@@ -65,6 +65,15 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
         pages++;
       } else if (relative === 'llms.txt') {
         assert.deepEqual(actual, await readFile('public/llms.txt'));
+      } else if (relative === 'seed.txt') {
+        // PR125 adds exactly one reviewed ceiling; every predecessor byte stays.
+        const ceiling = 'Not a release or canon.\n';
+        const text = actual.toString('utf8');
+        assert.equal(text.split(ceiling).length, 2);
+        assert.deepEqual(Buffer.from(text.replace(ceiling, '')), before);
+        assert.equal(actual.length, 1023);
+        assert.ok(actual.length <= 1024);
+        assert.equal(createHash('sha256').update(actual).digest('hex'), 'd9494fe389ce625df5c065f23f596cc2626391f026161979f43a229dca175d79');
       } else if (!['style.css', 'manifest.json', 'explore/map.json', 'changes.md'].includes(relative)) {
         assert.deepEqual(actual, before, relative); unchanged++;
       }
