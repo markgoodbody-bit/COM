@@ -81,10 +81,22 @@ def index_by_content(repo, ref, prefixes):
 
     Two indexes, because a bare content match reports a false alarm on a real
     corpus. Measured on the first run: 12 of 36 pins did not resolve, and every
-    one was explainable -- five were the SAME TEXT with CRLF line endings, and
-    seven were built pages with no source blob at all. A tool that prints those
-    as "NOT FOUND" invites exactly the harsh-direction error I have been
-    correcting all day.
+    one had an explanation -- SIX were the same text with CRLF line endings, and
+    SIX had no source blob in that tree at all. A tool that prints those as
+    "NOT FOUND" invites exactly the harsh-direction error I spent that day
+    correcting.
+
+    Two corrections from CODEX, both upheld, both recorded here rather than
+    quietly fixed. FIRST: this docstring said five and seven while the reported
+    result was six and six -- written from the first run and never updated when
+    the classification changed, so the file disagreed with its own output.
+    SECOND: the six with no source blob must NOT be called "built". This tool
+    cannot distinguish a generated file from an absent one -- it says so in its
+    own report -- so "generated" is inference, and "36 fully accounted for" was
+    an overclaim on my part.
+
+        MY_DOCSTRING_DISAGREED_WITH_MY_OUTPUT
+        NO_SOURCE_BLOB != GENERATED
 
         UNRESOLVED != WRONG
 
