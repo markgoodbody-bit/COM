@@ -10,6 +10,7 @@ const types = new Map([
   ['.json', 'application/json; charset=utf-8'], ['.xml', 'application/xml; charset=utf-8'],
   ['.pdf', 'application/pdf'], ['.png', 'image/png'], ['.svg', 'image/svg+xml'],
   ['.jpg', 'image/jpeg'],
+  ['.ico', 'image/x-icon'],
 ]);
 
 // Serve a frozen inventory of this build, never a path derived from a request.
