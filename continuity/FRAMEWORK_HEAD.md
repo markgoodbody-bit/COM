@@ -2,7 +2,7 @@
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
 Updated: 2026-09-09 — Europe/London  
-Basis: live `coordination/ACTIVE_THREAD_POINTER.md` at COM `cfca44cd52d0945838b7bea90be20f959414cb8b`. Later live source wins.
+Basis: Codex receipt reconciliation2026-09-09T14:17Z, starting COM `4f00adc`; named live receipts below. Later live source wins.
 
 Mark remains human originator, witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -33,18 +33,18 @@ Temporary quiet mode active: scheduled `Campfire Local Service Watch` disabled b
 ### Homer publication
 Maintained exact successor `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`: 55% feather, full uncropped painting, container-driven separate row for enlarged/constrained title, old-engine separate-row fallback,1440 ordinary image fallback, provenance preserved.
 
-Framework KEEP + CC exact KEEP (`5602535095`) now clear the final review gate. Framework authorised **presentation-only publication** at #108 `5602690583`. Codex must publish exact cfdacc4 through the guarded lane and return gh-pages/workflow/readback. Public was still old `589514fff41d0a65315377093089838026bbd1ec` at latest check; do not describe publication as complete until it moves and readback lands. No PR123/124/125 bundling.
+Framework authorisation `5602690583` was executed after exact CC KEEP. Sourcecfdacc4 deployed as gh-pages `dd06d95cb880208b30f703c54af33c2440c97812`; Pages run34360186077 succeeded at13:55:39Z. Codex receipt `5603125704` verifies115 GitHub blob identities and preserves the unavailable direct-domain readback. No PR123/124/125 bundled. Do not repeat publication; deployment and direct served-byte observation remain distinct.
 
 ### PR #123
-Draft/non-public concrete-first page, current head `420ec9ca798ff0fbb4e60d73ae3eac37ba23b8bd`, base Homer successor. CC returned REPAIR_SMALL. Framework restored:
+Draft/non-public concrete-first page, current head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`, base Homer successor. CC returned REPAIR_SMALL. Framework restored:
 - authority-vs-reference-number mechanism in the story;
 - read-only/no-reply discussion ceiling;
 - no-demand curiosity sentence.
 
-The short story remains source-labelled composite and does not reproduce all rent-increase/tribunal detail. Remaining mechanical concern: prototype CSS is inline in `page.tsx`, outside the existing `globals.css` style-test surface. Codex has been asked to move only those rules to globals.css, run build/tests/render, and return exact evidence; CC then narrow closure recheck. Do not merge/publish yet.
+The short story remains source-labelled composite and does not reproduce all rent-increase/tribunal detail. Codex completed the mechanical CSS relocation; receipt `5603125416` records build/11 Node tests passing and bounded desktop/mobile comparison. The Python suite still has14 passes,1 failure,5 errors, also present on untouched420ec9c. Publishing-checkout path errors and old content expectations need separate reconciliation; CC closure review remains open. Do not merge/publish yet.
 
 ### PR #124
-Draft/non-public synthetic guestbook representation, current Framework head `56cdd4bd72258027cf3901a9ed5170d1d9afef52`. Framework integrated Codex's stronger mutation-tested checker design into one review branch: record-type field allowlists, synthetic markers, earlier-row correction requirement, removed-id absence, removal trust state, HTML tag/attribute allowlist, per-article labels, broad guest-claim URL/domain rejection, and a register-region bare-domain check. Integrated suite has 13 tests but **combined-head pass is not yet claimed**; Codex owes exact rerun. CC hostile trust review remains separate. Still no intake/backend/real guest data/public route.
+Draft/non-public synthetic guestbook at `56cdd4bd72258027cf3901a9ed5170d1d9afef52`. Codex reran the integrated checker and13-test suite successfully, receipt `5603049971`. CC review `5603041527` returned REPAIR_SMALL: claimed names should not become HTML headings; use authored headings and inline claim qualifiers. Structural markers are suggestions, not guaranteed survival through tag stripping (Codex correction `5603125704`). Repair/review remains open. Still no intake/backend/real guest data/public route.
 
 ### PR #125
 Draft/source-only tiny AI-handoff repair, head `085b810cdcbb802c4c81721461d1e037f89922db`, base cfdacc4. Exactly two files: seed gains `Not a release or canon.` and remains1023 UTF-8 bytes; final two `llms.txt` Explore links become absolute. Keep separate from Homer publication until deliberately reviewed/integrated.
@@ -61,7 +61,7 @@ TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
 Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.  
 PSFH maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.  
-PSFH public last checked `589514fff41d0a65315377093089838026bbd1ec`.
+PSFH public gh-pages checked14:17Z: `dd06d95cb880208b30f703c54af33c2440c97812`; direct-domain readback unavailable.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
 

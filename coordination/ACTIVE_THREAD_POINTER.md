@@ -16,9 +16,9 @@ Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, tests, receiver
 
 ## Immediate order
 
-1. **Homer publication:** exact maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b` is now KEEP by Framework **and** exact CC review. Presentation-only publication is authorised at COM #108 `5602690583`; public `gh-pages` is still `589514fff41d0a65315377093089838026bbd1ec` until Codex build/readback completes.
-2. **PR #123:** concrete-first prototype repaired after CC REPAIR_SMALL; current head `420ec9ca798ff0fbb4e60d73ae3eac37ba23b8bd`. Codex owes mechanical CSS relocation/build/render receipt; CC then narrow closure recheck.
-3. **PR #124:** unified synthetic guestbook representation checker at current Framework head `56cdd4bd72258027cf3901a9ed5170d1d9afef52`; Codex owes exact re-run of integrated 13-test suite; CC hostile trust-boundary review remains separate.
+1. **Homer publication:** reviewed maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b` deployed as `dd06d95cb880208b30f703c54af33c2440c97812`; Pages run34360186077 succeeded. Codex receipt #108 `5603125704` verifies115 GitHub blob identities, not direct custom-domain served bytes. Do not repeat publication to close that observation gap.
+2. **PR #123:** mechanical CSS relocation completed at `3f2132fc3d2c0ac0271f105f4471f1d10c082710`, receipt PR123 `5603125416`. Draft build/11 Node tests pass; existing Python suite problems remain. CC narrow closure recheck and test-contract reconciliation remain open.
+3. **PR #124:** integrated head `56cdd4bd72258027cf3901a9ed5170d1d9afef52` passes exact13-test rerun, receipt `5603049971`. CC returned REPAIR_SMALL at `5603041527`: avoid promoting claimed names into HTML headings. Not cleared for intake/publication.
 4. **PR #125:** three tiny AI-handoff repairs, head `085b810cdcbb802c4c81721461d1e037f89922db`; source-only/draft.
 5. **#119:** Phase-0 construct v2 `8372ca1fe703a193255b84487410f289498669c0`; no study execution.
 6. Speech-supervisor fixture remains evidence only; no live successor.
@@ -36,7 +36,7 @@ Project AIs cannot see Mark's desktop, so popup cessation remains a user-observe
 
 `TEMPORARY_QUIET_MODE != PRODUCTION_ARCHITECTURE`
 
-## Homer successor — gate cleared, publication pending
+## Homer successor — deployed, direct-domain readback unavailable
 
 Maintained `cfdacc4d` uses the full uncropped Homer painting, high-left title only where robust, a 55% feathered scrim, container-driven separate-row fallback for enlarged/constrained text, separate-row degradation for unsupported engines, pinned1440 image fallback, preserved museum master/provenance, and H1/figure siblings.
 
@@ -44,13 +44,13 @@ Codex previously reported 11 Node +20 Python tests and115 local deliveries passe
 
 CC exact review `5602535095` returned **KEEP**. Its full-heading-box measurements found the 55% scrim above AA in both served1440 and original fallback states; the prior no-card fallback blocker is closed. It also independently confirmed the container-query enlargement escape, old-engine fallback, obstruction geometry and H1/figure semantics.
 
-Framework publication authorisation `5602690583`: Codex may publish **exact cfdacc4 presentation only** through the guarded lane and must return exact gh-pages head/workflow/readback. Do not bundle PR123/124/125/#119 or other deltas. Public remains old `589514f` until that receipt lands.
+Framework publication authorisation `5602690583` was executed: gh-pages `dd06d95c`, exact maintained source unchanged, Pages run34360186077 successful at2026-09-09T13:55:39Z. Three generated files changed;112 remained identical; publishing metadata preserved. No PR123/124/125/#119 bundle. Receipt `5603125704` records direct-domain readback as unestablished because prior non-retryable refusals were not bypassed. Deployment success and Git-object parity do not replace that observation.
 
 `SOURCE_READY != PUBLIC_UNTIL_READBACK`
 
 ## PR #123 — concrete-first human opening
 
-Draft/non-public, current head `420ec9ca798ff0fbb4e60d73ae3eac37ba23b8bd`, base `cfdacc4d`.
+Draft/non-public, current head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`, base `cfdacc4d`.
 
 CC attack `5602660993` returned REPAIR_SMALL. Framework applied the substantive repairs:
 - source mechanism restored: Martin's managing-agent route reaches a person with authority; Leah/Sam's tenant portal is designed to receive many requests and produces a reference number;
@@ -60,7 +60,7 @@ CC attack `5602660993` returned REPAIR_SMALL. Framework applied the substantive 
 
 The short homepage compression still does **not** reproduce the whole rent-increase/tribunal material; the fuller composite remains linked and explicitly labelled as source/context.
 
-Remaining mechanical concern from CC: prototype CSS is inline in `page.tsx`, outside the existing `globals.css` style-test surface. Codex was asked to move only those rules into `globals.css`, run the maintained build/test surface and representative render, and return NULL rather than visually redesigning if the move is not clean. CC then closes only its prior findings.
+Codex moved the prototype rules unchanged from page.tsx to globals.css. Build/11 Node tests pass. Desktop1440 measurements match; mobile390 sizes/styles match with approximately0.242px vertical offset. No horizontal overflow observed. Python suite at3f2132f:14 pass,1 failure,5 errors, reproduced on untouched420ec9c. Two errors concern publishing-checkout location; the remainder involve the draft's changed content/old test expectations. No tests were weakened in the relocation. CC closure review remains open.
 
 Still DRAFT / DO NOT MERGE OR PUBLISH.
 
@@ -75,9 +75,9 @@ Synthetic representation only: contract, JSONL envelope/rows, no-script human re
 
 Codex attacked the earlier checker and found real holes: dangling/self corrections, hidden removed text in extra fields, removal pointing to still-exported ids, synthetic-marker loss, per-article trust-label loss, active HTML/link-event regressions and URL guest-name acceptance. Its `3526c86` checker passed 12 tests on its own branch.
 
-Framework integrated that stronger field/type/reference/HTML-parser design into the existing PR #124 branch while retaining bare-domain/email rejection across guest claims and the human `<main>` register region. The integrated branch now carries 13 mutation tests (unchanged fixture +12 rejection controls). Exact combined-head test pass is **not yet claimed** because Framework's local container could not reach GitHub; Codex has been asked to rerun exact `56cdd4bd`.
+Framework integrated that stronger field/type/reference/HTML-parser design while retaining bare-domain/email rejection across guest claims and the human `<main>` region. Codex reran exact56cdd4bd: direct checker PASS and13/13 tests PASS; receipt `5603049971`.
 
-CC hostile representation review remains required. A green synthetic checker is not prompt-injection/public-intake proof.
+CC hostile review `5603041527` returned REPAIR_SMALL: use project-authored headings and qualify claimed names inline. Structural data markers/blockquote are suggestions, not evidence that a tag-stripping reader retains those markers. Codex corrected that survival claim in `5603125704`. Repair/review remains open; a green synthetic checker is not prompt-injection/public-intake proof.
 
 `ONE_REVIEW_OBJECT > TWO_COMPETING_CHECKERS`  
 `TESTS_WRITTEN != TESTS_PASSED`  
@@ -113,7 +113,7 @@ CC repaired its transition fixture at `e4b7e72`, making cause/premise/threshold/
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
 Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.  
-Public PSFH `gh-pages` last checked `589514fff41d0a65315377093089838026bbd1ec`.  
+Public PSFH `gh-pages` checked2026-09-09T14:17Z: `dd06d95cb880208b30f703c54af33c2440c97812`; direct-domain readback still unestablished.  
 Maintained PSFH `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
