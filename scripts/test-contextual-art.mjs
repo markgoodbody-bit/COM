@@ -36,4 +36,6 @@ test('D016 has the same seven paragraphs in Markdown and HTML', async () => {
   const paragraphs = [...html.matchAll(/<p>(.*?)<\/p>/g)].map(m => m[1].replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>'));
   assert.equal(md.length, 7);
   assert.deepEqual(paragraphs, md);
+  assert.ok(html.includes('Opening a door does not submit an answer to the site.'));
+  assert.ok(!html.includes('Nothing is submitted or remembered'));
 });

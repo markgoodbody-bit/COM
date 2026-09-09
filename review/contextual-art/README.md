@@ -1,5 +1,12 @@
 # Two contextual art entrances
 
+Post-publication wording correction: D016 initially said nothing was "submitted
+or remembered" when a door opened. That overreached: native browser state can
+persist without scripts. Narrowed to "Opening a door does not submit an answer
+to the site." Both history forms and their declared hashes are corrected; no
+browser-storage or host-log claim follows. The initial wording remains in Git
+history at publicf35f94d, rather than being denied or silently erased.
+
 Basis: maintained55b9690d7a45a313871e1b5fbbfc64083c4b1ebd,
 public5af680b5f7016f4198b8819f2b9ed93d568eb1c3; COM164ebd0.
 Direction: FW5608441004. Start/ownership receipt: Codex5608607503.
