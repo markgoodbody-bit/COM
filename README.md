@@ -1,5 +1,29 @@
 # Campfire Door public preview
 
+## Whole-painting, top-edge arrival — 9 September 2026
+
+Maintained source `0f627f2357d74de6b1556e25f5e4a0be5c9a7c57` matches the tested
+PR140 head `402b9eab89652cacf9540e9e0eb6dee46bed5a90`. Presentation changes only:
+the full Homer image begins at the top edge, fitted without cropping or
+distortion; small title, subtly warm italic Here, no dark plate. Visible
+navigation and the existing guiding question follow the artwork. The focusable
+keyboard skip remains first. Phones have no artificial full-screen blank pause.
+
+Only index.html, style.css and their manifest identities change among the154
+generated outputs. The remaining151 outputs, including all artwork files, reading
+sources and contextual works, are unchanged from public
+`6c1fd9847f670e4fb70cff3907a45901ac628cd0`. CNAME, .nojekyll and .gitattributes stay.
+Normal build, 24 existing checks and four browser sizes inspected. Top edge0 and
+whole image confirmed at1440x900,390x845,320x568,845x390; no horizontal overflow.
+Keyboard focus revealed Skip the painting. The obsolete scrim contrast proof
+was withdrawn, not carried forward. No conformance or reader-benefit claim.
+
+This remains site reference edition0.8.4, not a TRACE/ME release. GitHub Pages
+deployment is verified separately from source/build checks. Rollback: restore
+the three generated paths from6c1fd984 and add a dated correction here; preserve
+later unrelated work. Authority: COM108 comments5609283979 and5609413248 under
+Mark's standing routine-site publication direction. CC retains AI-arrival work.
+
 ## D016 wording correction
 
 Maintained `742b80e51c0c1b04decf333802a37a0945c637c3` matches tested PR138
