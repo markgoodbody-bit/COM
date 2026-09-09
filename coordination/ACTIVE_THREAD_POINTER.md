@@ -8,7 +8,7 @@ Later live source wins.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, tests, receivers and guestbooks are instruments.
+Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, tests, receivers, guestbooks and art are instruments.
 
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `UNCERTAINTY = OPERATING_CONDITION`  
@@ -16,114 +16,158 @@ Please Start From Here, TRACE, Mechanical Ethics, Campfire, COM, tests, receiver
 
 ## Immediate order
 
-1. **Homer publication:** reviewed maintained `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b` deployed as `dd06d95cb880208b30f703c54af33c2440c97812`; Pages run34360186077 succeeded. Codex receipt #108 `5603125704` verifies115 GitHub blob identities, not direct custom-domain served bytes. Do not repeat publication to close that observation gap.
-2. **PR #123:** mechanical CSS relocation completed at `3f2132fc3d2c0ac0271f105f4471f1d10c082710`, receipt PR123 `5603125416`. Draft build/11 Node tests pass; existing Python suite problems remain. CC narrow closure recheck and test-contract reconciliation remain open.
-3. **PR #124:** integrated head `56cdd4bd72258027cf3901a9ed5170d1d9afef52` passes exact13-test rerun, receipt `5603049971`. CC returned REPAIR_SMALL at `5603041527`: avoid promoting claimed names into HTML headings. Not cleared for intake/publication.
-4. **PR #125:** three tiny AI-handoff repairs, head `085b810cdcbb802c4c81721461d1e037f89922db`; source-only/draft.
-5. **#119:** Phase-0 construct v2 `8372ca1fe703a193255b84487410f289498669c0`; no study execution.
+1. **Homer is deployed.** Exact reviewed source `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b` -> public `gh-pages dd06d95cb880208b30f703c54af33c2440c97812`; Pages run `34360186077` succeeded. Do not repeat publication.
+2. **PR #123:** concrete-first human draft at `3f2132fc3d2c0ac0271f105f4471f1d10c082710`. CSS relocation is complete; reconcile the stale regression-test contract without reverting the intended three-card product. CC content closure remains separate.
+3. **PR #124:** synthetic guestbook representation at `3a8fff7c29b978d502c3a8f15fe65e863df37b32`. CC heading/trust repair is applied; exact 17-test rerun + CC narrow closure remain. No intake/publication.
+4. **Human art:** Vermeer acquisition path is honestly `ASSET_BLOCKED`; Harriet Powers acquisition proof is open using exact Smithsonian image id `NMAH-75-2984`. Source-only asset proof, no public wiring yet.
+5. **#119:** Phase-0 v2 remains calibration design input. Apply three freeze clarifications before any confirmatory freeze; no study execution.
 6. Speech-supervisor fixture remains evidence only; no live successor.
 
-`REVIEW_GATE_CLEARED != PUBLICATION_COMPLETE`  
-`PUBLIC_GATE_HELD != ALL_WORK_BLOCKED`
+PR #125 is no longer pending: reviewed source-only repair was squash-merged into maintained PSFH source as `7a5a50dbe81574a246236f5762830112445bbaec`. No public machine-text deployment followed from that merge.
 
-## Desktop quiet mode
+## Homer — deployed and independently checked
 
-The two-minute scheduled `Campfire Local Service Watch` is **disabled but preserved**. One unchanged hidden Windows PowerShell watchdog loop runs `-Loop -IntervalSeconds 120`; last verified PID `13276`, mutex held. Codex reported the loop/process/state fresh again at ~13:17Z and the task still disabled/preserved.
+Codex publication receipt #108 `5603125704`:
+- `gh-pages dd06d95cb880208b30f703c54af33c2440c97812`;
+- Pages run `34360186077` SUCCESS;
+- fresh build: 11 Node +20 Python tests pass;115 local deliveries pass;
+- fresh GitHub tree readback matches all115 generated blob identities;
+-112 generated files unchanged; only `index.html`, `style.css`, and stylesheet hash in `manifest.json` changed;
+- no PR123/124/125/#119/TRACE/ME bundle.
 
-Ceiling: if the loop dies, nothing currently resurrects it. Do not run the scheduled task alongside it. Do not implement the hourly-resurrector idea yet and do not reopen rejected launcher work.
+CC correction/verification #108 `5603409521`:
+- its earlier review incorrectly called the museum original the `img src` fallback;
+- actual reviewed/published fallback is `/art/camp-fire-1440.jpg`;
+- the fallback change **and** 55% scrim shipped;
+- museum original remains separately served/linked provenance;
+- KEEP stands on corrected evidence; CC reports 9.89:1 for the named 1600-wide real-fallback case.
 
-Project AIs cannot see Mark's desktop, so popup cessation remains a user-observed fact rather than an inferred technical claim. Rollback material remains under `C:/Users/markg/Downloads/Campfire-quiet-mode-20260909/`; rollback has not been exercised.
+Keep contrast claims bounded to named measured cases. Codex direct custom-domain byte readback remained unavailable; CC independently performed a read-only served-presentation verification. No new deployment is needed.
 
-`TEMPORARY_QUIET_MODE != PRODUCTION_ARCHITECTURE`
+`I_MEASURED_A_FILE != I_MEASURED_THE_FALLBACK`
 
-## Homer successor — deployed, direct-domain readback unavailable
+## Maintained PSFH source
 
-Maintained `cfdacc4d` uses the full uncropped Homer painting, high-left title only where robust, a 55% feathered scrim, container-driven separate-row fallback for enlarged/constrained text, separate-row degradation for unsupported engines, pinned1440 image fallback, preserved museum master/provenance, and H1/figure siblings.
+Current maintained branch now includes source-only PR #125 merge:
+`7a5a50dbe81574a246236f5762830112445bbaec`.
 
-Codex previously reported 11 Node +20 Python tests and115 local deliveries passed. Native browser zoom/universal accessibility is not claimed.
+That merge only:
+- adds `Not a release or canon.` to `seed.txt`; exact seed remains1023 UTF-8 bytes;
+- makes final two `llms.txt` Explore routes absolute.
 
-CC exact review `5602535095` returned **KEEP**. Its later correction `5603409521` withdraws the description of the original image as the src fallback: reviewed source uses the1440 copy; the original remains a linked provenance asset. The scrim and1440 fallback repairs both shipped. CC reports public document/CSS/provenance verification; Codex has not independently obtained those direct-domain bytes. Reported contrast applies to named measured cases, not every possible reader state. KEEP remains; no new publication is required.
-
-Framework publication authorisation `5602690583` was executed: gh-pages `dd06d95c`, exact maintained source unchanged, Pages run34360186077 successful at2026-09-09T13:55:39Z. Three generated files changed;112 remained identical; publishing metadata preserved. No PR123/124/125/#119 bundle. Receipt `5603125704` records direct-domain readback as unestablished because prior non-retryable refusals were not bypassed. Deployment success and Git-object parity do not replace that observation.
-
-`SOURCE_READY != PUBLIC_UNTIL_READBACK`
+Public `gh-pages` still represents the earlier exact Homer presentation source; source merge != public deployment.
 
 ## PR #123 — concrete-first human opening
 
-Draft/non-public, current head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`, base `cfdacc4d`.
+Draft/non-public. Current head `3f2132fc3d2c0ac0271f105f4471f1d10c082710`.
 
-CC attack `5602660993` returned REPAIR_SMALL. Framework applied the substantive repairs:
-- source mechanism restored: Martin's managing-agent route reaches a person with authority; Leah/Sam's tenant portal is designed to receive many requests and produces a reference number;
-- the retained reach question is therefore answerable from its own passage;
-- `This on-site discussion is read-only; it does not receive replies yet.` restored;
-- `You do not need a problem, an identity category or a commitment to begin.` restored inside the three-choice entrance.
+Accepted content state:
+- `Two flats, one wall` remains explicitly a Mechanical Ethics **Composite Scene**;
+- authority/access mechanism is present in the short passage;
+- inspection is offered only after another tenancy is found; family leaves before entry;
+- three human entrances: situation / possibility / explore-question-disagree;
+- no-demand sentence restored: `You do not need a problem, an identity category or a commitment to begin.`;
+- discussion ceiling restored: `This on-site discussion is read-only; it does not receive replies yet.`;
+- compact machine/text routes remain available but quieter.
 
-The short homepage compression still does **not** reproduce the whole rent-increase/tribunal material; the fuller composite remains linked and explicitly labelled as source/context.
+Codex CSS relocation `3f2132f`:
+- moved prototype rules from inline page style to `globals.css` without product redesign;
+- build and all11 Node tests pass, including115 local deliveries;
+- measured desktop1440 layout identical; mobile390 styles/sizes/x match with ~0.242px vertical shift; no horizontal overflow observed.
 
-Codex moved the prototype rules unchanged from page.tsx to globals.css. Build/11 Node tests pass. Desktop1440 measurements match; mobile390 sizes/styles match with approximately0.242px vertical offset. No horizontal overflow observed. Python suite at3f2132f:14 pass,1 failure,5 errors, reproduced on untouched420ec9c. Two errors concern publishing-checkout location; the remainder involve the draft's changed content/old test expectations. No tests were weakened in the relocation. CC closure review remains open.
+Python test debt is now understood rather than treated as product failure:
+- current branch:14 pass /1 failure /5 errors;
+- same outcomes reproduced on untouched pre-CSS `420ec9c`;
+- test-only portability proposal `3023db612ad83d70fcf0b3c7018e4e4272054bc4` makes the publishing checkout explicit and yields15 pass /2 failures /3 errors;
+- historical destination/history preservation then executes and passes;
+- remaining failures include old five-card/`I am only curious` expectations, a visible-absolute-URL expectation although the route link remains, and broad paragraph-preservation assumptions that predate the authorised concrete-first subtraction.
 
-Separate proposed test-portability repair `3023db612ad83d70fcf0b3c7018e4e4272054bc4` on `codex/pr123-test-portability-20260909` makes the publishing checkout explicit without changing assertions or historical pins. With the correct checkout:15 pass,2 failures,3 errors. Historical destination/history preservation passes; paragraph preservation reaches a credit-text assertion instead of a path error. Not yet integrated into PR123; content/test-contract reconciliation remains open.
+Next: integrate the portability fix and update only the explicitly superseded editorial assertions. Preserve a strong historical block/link comparison using a fixed inspectable allowlist of intentional removed/added blocks so any **other** disappearance still fails. Do not restore the old five-card page to make tests green.
 
-Still DRAFT / DO NOT MERGE OR PUBLISH.
+Still DRAFT / DO NOT MERGE OR PUBLISH. CC closure of the content findings remains separate from test maintenance.
 
-`QUESTION_REQUIRES_EVIDENCE_IN_ITS_OWN_PASSAGE`  
-`CEILING_SUBTRACTED -> CEILING_RESTORED`
+`TEST_CONTRACT_FOLLOWS_INTENDED_PRODUCT != DELETE_REGRESSION_TESTS`
 
 ## PR #124 — guestbook representation only
 
-Draft/non-public, current Framework head `56cdd4bd72258027cf3901a9ed5170d1d9afef52`.
+Draft/non-public. Current head `3a8fff7c29b978d502c3a8f15fe65e863df37b32`.
 
-Synthetic representation only: contract, JSONL envelope/rows, no-script human rendering, hostile fixture checks and deterministic checker. No form, endpoint, provider, database, mailbox, credential, real guest data, public route or `gh-pages` wiring.
+Earlier exact `56cdd4bd` checker passed direct check +13/13 mutation tests. CC then found one real HTML trust leak: visitor `claimed_name` values occupied `<h2>` positions.
 
-Codex attacked the earlier checker and found real holes: dangling/self corrections, hidden removed text in extra fields, removal pointing to still-exported ids, synthetic-marker loss, per-article trust-label loss, active HTML/link-event regressions and URL guest-name acceptance. Its `3526c86` checker passed 12 tests on its own branch.
+Framework has applied the REPAIR_SMALL:
+- visitor names no longer occupy document headings;
+- project-authored headings (`A mark`, `A mark and its correction`) used;
+- plain-text `claimed name: ...` qualifier retained so the boundary survives markup loss;
+- guest `<article>` rows carry `data-trust`; removal row carries system trust state;
+- guest notes use `<blockquote>` as an auxiliary structural signal;
+- visible untrusted-data labels remain;
+- checker rejects heading promotion, missing structural trust markers, note de-structuring and missing plain-text qualifiers;
+- mutation suite now17 tests.
 
-Framework integrated that stronger field/type/reference/HTML-parser design while retaining bare-domain/email rejection across guest claims and the human `<main>` region. Codex reran exact56cdd4bd: direct checker PASS and13/13 tests PASS; receipt `5603049971`.
+Ceiling: `data-*` does **not** survive literal tag stripping and blockquote survival depends on extractor. Structural markers supplement, not replace, the plain-text qualifiers. This is still a fixed synthetic representation checker, not prompt-injection resistance or public-intake security.
 
-CC hostile review `5603041527` returned REPAIR_SMALL: use project-authored headings and qualify claimed names inline. Structural data markers/blockquote are suggestions, not evidence that a tag-stripping reader retains those markers. Codex corrected that survival claim in `5603125704`. Repair/review remains open; a green synthetic checker is not prompt-injection/public-intake proof.
+Next: Codex exact rerun on `3a8fff7c`; if green, CC performs only narrow closure on the heading/trust finding. No renderer/backend/intake expansion.
 
-`ONE_REVIEW_OBJECT > TWO_COMPETING_CHECKERS`  
-`TESTS_WRITTEN != TESTS_PASSED`  
 `GUEST_ENTRY != SITE_INSTRUCTION`
 
-## PR #125 — tiny AI handoff repairs
+## Human art
 
-Draft/source-only, head `085b810c`, base `cfdacc4d`. Compare against base is exactly two files:
-- `public/seed.txt`: + `Not a release or canon.`; 999 -> **1023 UTF-8 bytes**, still below1KiB;
-- `public/llms.txt`: final two Explore links changed from relative to absolute URLs.
+### Vermeer — ASSET_BLOCKED acquisition path
 
-No other source/content/layout/provenance/site-edition change. Keep this separate from Homer publication; deliberately integrate/rebase only after review.
+Authoritative Städel record remains current/Public Domain. Framework's bounded acquisition attempt could retrieve only the record-linked:
+`https://cdn.staedelmuseum.de/images/49/7c/1149/thumb-xl.jpg`.
 
-`TINY_REPAIR != BUNDLE_PERMISSION`
+No documented full master became fetchable through this aperture. Direct page download also failed. No guessed CDN variant, `original` path, OAI account or access-control bypass was attempted. The thumbnail is **not** promoted to master.
+
+Evidence: `evidence/PSFH_ART_ACQUISITION_DELTA_20260909.md` at COM `58174636e814b4d644b3545fca03d70de0a5a8a2`.
+
+### Harriet Powers — acquisition proof opened
+
+Candidate: Harriet Powers, *Bible Quilt* / *Adam and Eve in the Garden of Eden*,1885–1886, National Museum of American History.
+
+Fresh Smithsonian source exposes exact official media identity:
+- image id `NMAH-75-2984`;
+- official service `https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984`;
+- Learning Lab advertises high-resolution JPEG3000x2512, high-resolution TIFF, screen and thumbnail forms and public-domain wording.
+
+Framework's public-web/container path can identify but not retrieve those binary bytes. Local browser/Codex may acquire from the exact official service/control, then preserve original bytes, final URL, MIME, dimensions, byte count, SHA-256 and exact rights wording. Only then prepare source-bound720/1440 viewing copies and one source-only presentation proposal. **No public wiring yet.**
+
+Powers must enter as maker/work, not as a diversity token or TRACE illustration. Her recorded panel meanings and museum history remain distinct from PSFH interpretation.
+
+`HOMER_DEPLOYED -> VERMEER_ASSET_BLOCKED -> POWERS_ACQUISITION_PROOF`
+`MORE_ART != MORE_WALLPAPER`
 
 ## #119 — Phase-0 construct v2
 
-Public practical advantage remains unproven. V1 was not freezeable due undefined empty scoring, zero-case dominance, disappearing source-sufficiency denominator, undefined matcher universe and inconsistent family formation.
+Public practical advantage remains unproven. No study has run.
 
-V2 separates disposable calibration from fresh holdout; reports `ALL_ZERO / MIXED_ZERO / ALL_NONZERO` separately; retains outside-fact-dependent points before filtering; uses one-to-one matcher outputs; requires all three accepted pair edges for a three-builder family; and reports per-account coverage/unmatched/uncertain material rather than one pooled median.
+V2 `8372ca1fe703a193255b84487410f289498669c0` remains improved calibration design input. Codex review #119 `5603501640` adds three freeze clarifications:
+1. Preserve raw extraction class/counts and post-source-eligibility counts separately; if eligible denominator is zero, coverage is **undefined**, not zero/one and not silently dropped/relabelled.
+2. `SOURCE_SUFFICIENT` is itself a claim: specify who reviews sufficiency, what evidence they see and how dispute affects eligibility. Existing matchers may own this; no new adjudicator is assumed.
+3. Sparse one-to-one matching needs a small notation separating explicit no-match from not-chosen/not-assessed and defining what `UNCERTAIN` refers to.
 
-It deliberately refuses replacement numeric pass thresholds before calibration. If calibration cannot earn a simple freezeable survival rule, return DESIGN NULL. No accounts selected, inference, recruitment or spend.
+Wording ceiling: `MIXED_ZERO` is observed extraction disagreement/operational instability, not proof of its cause.
 
-`CALIBRATION_SET != HOLDOUT`  
-`SCORABLE != USEFUL`
+No replacement threshold, inference, recruitment, spend or public claim. Clarify before any confirmatory freeze.
 
-## Speech supervisor
+## Desktop quiet mode
 
-CC repaired its transition fixture at `e4b7e72`, making cause/premise/threshold/last-confirmed checks more truthful and exposing further wrong expected values. Still unearned: overnight root cause, Windows locking mechanism and grace values. No live application/fault injection.
+Two-minute scheduled `Campfire Local Service Watch` remains disabled but preserved. One hidden120s loop was last technically verified healthy earlier today; project AIs cannot see Mark's screen and do not infer popup cessation. If loop dies, nothing currently resurrects it. Do not run scheduler alongside it or reopen rejected launcher work without new evidence.
 
-## Current project heads / gates
+`TEMPORARY_QUIET_MODE != PRODUCTION_ARCHITECTURE`
+
+## Project baselines / gates
 
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.  
 Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.  
-Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.  
-Public PSFH `gh-pages` checked2026-09-09T14:17Z: `dd06d95cb880208b30f703c54af33c2440c97812`; direct-domain readback still unestablished.
-Maintained PSFH `cfdacc4df35c4e536d58bba71a9dd4dc7693eb7b`.
+Campfire Relay Production main `08756b68d824b783fb214ff4790abf37f10150ca`.
 
 No current work authorises TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation or external institutional submission.
 
 ## Roles
 
 - **Framework:** coordination/integration, purpose, evidence, product judgement and consequential gates.
-- **Codex:** executable product/host engineering and deterministic study design.
+- **Codex:** executable product/host engineering, local browser acquisition and deterministic study design.
 - **Claude Code:** independent hostile review/failure modes; not second integration owner.
 - **Mark:** originator/witness/consequential authority; ordinary reversible choices stay with team.
 
