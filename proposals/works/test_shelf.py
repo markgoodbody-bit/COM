@@ -55,8 +55,13 @@ class ShelfTests(unittest.TestCase):
             self.assertEqual(len(data),pin['bytes']);self.assertEqual(build.sha(data),pin['sha256'])
 
     def test_mobile_gutters_do_not_scale_with_text(self):
-        for work in ['powers','vermeer']:
-            self.assertIn('padding: 0 16px', (build.PROPOSALS/work/'work.css').read_text())
+        self.assertIn('padding: 0 16px', (build.ROOT/'shelf.css').read_text())
+        self.assertIn('padding: 0 16px', (build.PROPOSALS/'vermeer'/'work.css').read_text())
+
+    def test_powers_uses_repaired_receipt(self):
+        # Replaces the four-work absence check only after exact 548e1fe verification.
+        receipt=(build.PROPOSALS/'powers'/'acquisition.json').read_bytes()
+        self.assertEqual(build.sha(receipt),'b0593fbb2ed82f7ab621eb0f71865c731b5ae2158f4269c46ab7045bb4f1fd22')
 
 
 if __name__=='__main__':unittest.main()
