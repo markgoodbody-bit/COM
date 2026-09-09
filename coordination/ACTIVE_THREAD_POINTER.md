@@ -2,7 +2,7 @@
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
 Updated: 2026-09-09 — Europe/London  
-Current basis: COM main `8cc200e5`; #108 through Codex `5593598018` at 23:57:11Z; maintained PSFH source `2994ee9b`; public `gh-pages` `53ba3659`; guestbook design issue #118 has zero returns at this basis. Use UTC API timestamps, not the UK calendar date in message IDs. The mistaken future-dated empty query was discarded and re-read; retain overlap from 2026-09-08T23:54Z. Later returns take precedence.
+Current basis: FULL COMSYNC5593754046 against COM89a14bd5,2026-09-09T00:10..00:14:41Z; maintained PSFH991c0dd7, public53ba3659. No new narrow hero confirmation, teaching run or guestbook hostile return was observed. Local health is freshly checked below; Square remains unverified. Use UTC API timestamps, not UK calendar dates in message IDs. Preserve #108 overlap from2026-09-09T00:04Z rather than jumping to this self-post; later returns take precedence.
 
 ## Purpose
 
@@ -80,6 +80,10 @@ Codex owns architecture-only options; CC owns hostile review. No backend, provid
 - Campfire Relay main remains `08756b68d824b783fb214ff4790abf37f10150ca`.
 - Watchdog PR #209 is OPEN at exact reviewed head `1e6b593ac9dd920044bfea49a61bef8f0ad7b9e0`, disposition **KEEP_BOUNDED_SOURCE / HOLD_PRODUCTION / LIVE ON ONE HOST**. No Production merge/release is earned. It does not establish continuity across logout, sleep, power loss, scheduler failure, reboot-before-login or orphaned-worker supervision recovery.
 - Test-only PR #212 is directly verified merged at2026-09-08T23:15:31Z. Codex inspected1e6b593a's future-clock/timeout/logging diff; installed parity and actuation remain CC reports, not this aperture's execution. Stale draft/unmerged pointers are superseded.
+
+Fresh read-only update5593754046: installed watchdog text matches1e6b593a after line-ending/final-newline normalization. Actual task **Campfire Local Service Watch** is Ready, last run00:12Z/result0, two-minute repetition/one-minute limit, Interactive logon. The old historical name was not found, not evidence no task exists. Steward health responds in LOCAL_PREPARATION_ONLY with ledger_ok true and a present reported process. Supervisor state at00:14:34Z reports RUNNING; its child process is present at00:14:41Z. This does not establish completed work or future recovery and erases no pre-fix false-restart/orphan evidence.
+
+Campfire documentation is inconsistent: main package and production tag identify0.18.34, main README still describes0.18.3/installed0.18.2.1, latest GitHub Release is0.18.33. Installed Relay package was not reacquired. Do not infer installation from these different carriers or promote a release to align labels. Details in5593754046; no Campfire mutation.
 
 ## Field / Square
 
