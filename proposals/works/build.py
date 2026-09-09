@@ -11,7 +11,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 PROPOSALS = ROOT.parent
-OUT = PROPOSALS.parent / 'outputs/works-five-repaired'
+OUT = PROPOSALS.parent / 'outputs/works-exact-lineage'
 NEW = [('atkins','anna-atkins','cyanotype'),('shen','shen-zhou','scroll'),('lewis','edmonia-lewis','sculpture')]
 IDENTITIES={'atkins':('Anna Atkins','Ulva lactuca','291638'),'shen':('Shen Zhou','Anchorage on a rainy night','49549'),'lewis':('Edmonia Lewis','The Death of Cleopatra','saam_1994.17')}
 PINS = {'atkins':['ae5864af965af2d8a063016b1df67a9e765270281b9bc313513cde12d9f974a6'],

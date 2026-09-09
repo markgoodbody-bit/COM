@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
-OUT=ROOT.parents[1]/'outputs/works-five-repaired'
+OUT=ROOT.parents[1]/'outputs/works-exact-lineage'
 inventory=json.loads((OUT/'inventory.json').read_text())
 for route,pin in inventory.items():
     with urlopen('http://127.0.0.1:8834/'+route,timeout=5) as response:

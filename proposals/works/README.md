@@ -7,6 +7,10 @@ Current purpose: review the five-work discovery shelf. Powers is imported from i
 
 ## Current state
 
+Exact-lineage successor: this branch preserves PR131 `665d1757d50acbd38a7ca82f4a606fff519a03bc` as the prior measured/KEEP review object. It imports the full authoritative Vermeer directory from PR129 `36cc8c54e937318c61d2c317ff71c7f66bc38687`; Powers remains identical to PR127 `548e1fe316d1ccb58b3f4008097deb9d0dbe6c39`. FW requested this separate assembly in review5607068739. No prior KEEP verdict is relabelled acceptance of this successor.
+
+Vermeer standalone36cc8c5 build and10 tests pass. Relative to665d175, only two emitted files change: Vermeer HTML and its work JSON. Every image and stylesheet is unchanged. Eight targeted browser states check Vermeer at desktop/mobile and root16/root32, both source panel closed and open; no measured horizontal overflow, image640px desktop/358px mobile at both text sizes. All36 new output routes were delivered with exact current byte/hash pins. These observations use the `vermeer36-` evidence prefix. The earlier24-state observation remains attributable to665d175, with unchanged-output identity supporting reuse for the other pages; it is not claimed as a fresh24-state run on this successor.
+
 The current output contains five work pages plus the shelf index:
 
 1. Harriet Powers — *Bible Quilt*
@@ -62,7 +66,7 @@ python -m unittest discover -s proposals/vermeer -p test_proposal.py
 python -m unittest discover -s proposals/works -p test_shelf.py
 ```
 
-Current output: `outputs/works-five-repaired/works/index.html`.
+Current output: `outputs/works-exact-lineage/works/index.html`.
 
 The repaired five-work handoff records:
 
