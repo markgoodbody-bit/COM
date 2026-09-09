@@ -16,19 +16,19 @@ export default function Home() {
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
+        <div className="art-hero">
         <figure className="camp-fire" aria-labelledby="camp-fire-credit">
           <figcaption id="camp-fire-credit">
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
-          <div className="art-hero">
             <img src={CAMP_FIRE.local_image} srcSet={artworkSrcSet(CAMP_FIRE)} sizes={HOMER_SIZES} alt={CAMP_FIRE.alt} width={CAMP_FIRE.width} height={CAMP_FIRE.height} loading="eager" decoding="async" />
+        </figure>
             <div className="hero-heading">
               <h1>Please Start From Here</h1>
               <p className="guiding-question">How can we make a better future?</p>
             </div>
-          </div>
-        </figure>
+        </div>
         <div className="opening-copy">
           <p className="eyebrow">A starting point for humans and AIs</p>
           <p>A project by Mark, developed with AI collaborators.</p>

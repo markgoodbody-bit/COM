@@ -55,6 +55,11 @@ class FirstContactTests(unittest.TestCase):
     def test_primary_title_and_optional_attributed_artwork(self):
         self.assertEqual(self.html.count('<h1>'), 1)
         self.assertIn('<h1>Please Start From Here</h1>', self.html)
+        figures = re.findall(r'<figure\b[^>]*>.*?</figure>', self.html, re.S)
+        self.assertEqual(len(figures), 1)
+        self.assertNotIn('<h1', figures[0])
+        self.assertIn('<figcaption', figures[0])
+        self.assertIn('<img', figures[0])
         self.assertIn('<p class="guiding-question">How can we make a better future?</p>', self.html)
         record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
         image = (ROOT / 'out/art/camp-fire.jpg').read_bytes()
@@ -133,6 +138,10 @@ class FirstContactTests(unittest.TestCase):
         def linear(value):
             value /= 255
             return value / 12.92 if value <= .04045 else ((value + .055) / 1.055) ** 2.4
+        mobile_lum = sum(weight * linear(value) for weight, value in zip((.2126, .7152, .0722), (20, 27, 32)))
+        mobile_ratio = 1.05 / (mobile_lum + .05)
+        self.assertGreaterEqual(mobile_ratio, 4.5)
+        print(f"Solid mobile title contrast: {mobile_ratio:.2f}:1")
         record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
         for variant in record['responsive']['variants']:
             with Image.open(ROOT / 'out' / variant['local_image'].lstrip('/')) as image:
