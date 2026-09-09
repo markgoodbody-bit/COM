@@ -52,8 +52,11 @@ class ShelfTests(unittest.TestCase):
             self.assertEqual(len(data),pin['bytes']);self.assertEqual(build.sha(data),pin['sha256'])
 
     def test_mobile_gutters_do_not_scale_with_text(self):
-        for work in ['powers','vermeer']:
-            self.assertIn('padding: 0 16px', (build.PROPOSALS/work/'work.css').read_text())
+        self.assertIn('padding: 0 16px', (build.ROOT/'shelf.css').read_text())
+        self.assertIn('padding: 0 16px', (build.PROPOSALS/'vermeer'/'work.css').read_text())
+
+    def test_no_powers_fork_in_shelf_source(self):
+        self.assertFalse((build.PROPOSALS/'powers').exists(), 'Powers must enter only from the repaired PR127 lineage, not a shelf-local fork')
 
 
 if __name__=='__main__':unittest.main()
