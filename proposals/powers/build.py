@@ -10,7 +10,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 PARENT = "fd8280dd502f0fb21c4c030f9a018560d1928fe66a671edfccaadf9a13b0197d"
-RECEIPT = "a78d84f490d0331724150ab6ac2a0cd8690ab067ddd214db7e8da360b9d2288f"
+RECEIPT = "b0593fbb2ed82f7ab621eb0f71865c731b5ae2158f4269c46ab7045bb4f1fd22"
 PINS = {720: (603, 201415, "c424b6927b35b4546850b317a303699cad952d1852d1e9c6d77dc246e29ba802"),
         1440: (1206, 862531, "816b56a1f0f650c882fa151b7c30d0a6e5d32fe218a70bfee675004b9bb9c59f")}
 FILES = ["index.html", "work.css", "artwork.json", "responsive.json", "acquisition.json",
@@ -47,9 +47,17 @@ class Page(HTMLParser):
 def validate(root=ROOT):
     record = json.loads((root / "artwork.json").read_text(encoding="utf-8"))
     responsive = json.loads((root / "responsive.json").read_text(encoding="utf-8"))
+    acquisition = json.loads((root / "acquisition.json").read_text(encoding="utf-8"))
     require(sha((root / "acquisition.json").read_bytes()) == RECEIPT, "Acquisition receipt changed")
-    require(record["master_status"] == "UNKNOWN", "Master status overclaim")
+    require(record["master_status"] == "UNKNOWN" and record["source_tier"]["master_status"] == "UNKNOWN", "Master status overclaim")
+    require(record["source_tier"]["acquired"] == "High-resolution JPEG (2880x2412)" and
+            record["source_tier"]["higher_tier_exists"] == "High-resolution TIFF", "Museum source tier changed")
+    require(acquisition["later_authoritative_resolution"]["museum_download_panel"]["acquired_tier"] ==
+            "High-resolution JPEG (2880x2412)", "Acquisition source tier changed")
+    require(acquisition["later_authoritative_resolution"]["credit_line"] ==
+            "Gift of Mr. and Mrs. H. M. Heckman", "Museum credit line changed")
     require(record["creator"] == "Harriet Powers" and record["title"] == "Bible Quilt", "Creator/work changed")
+    require(record["maker_recorded_title"] == "Adam and Eve in the Garden of Eden", "Maker-recorded title changed")
     require(record["date"] == "1885–1886" and record["institution"] == "National Museum of American History, Smithsonian Institution", "Date/institution changed")
     require(record["acquisition_receipt"] == "/art/harriet-powers-acquisition.json" and
             record["responsive_record"] == "/art/harriet-powers-responsive.json", "Provenance route changed")
@@ -57,9 +65,10 @@ def validate(root=ROOT):
     require((record["width"], record["height"], record["bytes"]) == (2880, 2412, 2671829), "Parent record dimensions/bytes")
     require(record["source_url"] == "https://ids.si.edu/ids/deliveryService?id=NMAH-75-2984", "Source route changed")
     require(record["object_url"] == "https://americanhistory.si.edu/collections/object/nmah_556462", "Object route changed")
-    require(record["rights"]["observation_receipt"].endswith("#issuecomment-5604591035") and
+    require(record["rights"]["observation_receipt"].endswith("#issuecomment-5606429869") and
             "not Codex acquisition-time" in record["rights"]["observation_by"], "Rights attribution collapsed")
-    require(record["rights"]["url"] == "https://www.si.edu/openaccess", "Rights URL changed")
+    require(record["rights"]["url"] == "https://www.si.edu/openaccess" and
+            record["rights"]["iiif_license_url"] == "https://www.si.edu/termsofuse", "Rights route changed")
     parent = root / FILES[5]
     require(sha(parent.read_bytes()) == PARENT and parent.stat().st_size == 2671829, "Parent bytes changed")
     with Image.open(parent) as source:
@@ -88,6 +97,8 @@ def validate(root=ROOT):
     require(bool(page.images[0].get("alt")), "Missing alt text")
     require(html.index("The maker's recorded account") < html.index("Our response · PSFH"), "Maker account must precede response")
     require(record["creator_account"]["statement"] in html and record["project_response"]["text"] in html, "Record/page wording differs")
+    require(record["maker_recorded_title"] in html, "Maker-recorded title missing")
+    require(all(subject in html for subject in record["creator_account"]["panel_subjects"]), "Maker panel subject missing")
     require(record["visible_credit"] in html.replace("<cite>", "").replace("</cite>", ""), "Visible credit drift")
     require(record["object_url"] in page.links and record["rights"]["url"] in page.links, "Source/rights route missing")
     for link in page.links:
