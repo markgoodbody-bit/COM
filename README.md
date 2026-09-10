@@ -1,5 +1,24 @@
 # Campfire Door public preview
 
+## Care standing, 10 September 2026
+
+Maintained `2133cb238a177aae88f5be05aa32235fad6400c6` matches tested PR163
+head `8b50853aa5a1163923d0f0b208ecb03fa42dcd6c`. Care is the fourth enabled
+reading room. Its unchanged source kind, declared normative proposal; not derived
+from physics, uses the existing visible-standing rule. Complete paragraphs,
+recipient perspective, challenge, sources and authored routes survive.
+
+Only Care HTML, map, manifest and paired D024 history change from
+`9f89bd10ea399e676f5eb8296a24ffbb7c6b6373`; other150 of155 outputs unchanged.
+Build30 Node/16 Python checks pass. Local desktop journey and direct390px arrival,
+keyboard disclosures, Map, Not now and an authored onward edge checked.
+Desktop/narrow screenshots succeeded and were inspected. No clipping or separate
+alert treatment observed; reader noticing/usefulness and native Back unverified.
+See CARE_REVIEW_20260910.md for the bounded Wisdom exception recommendation.
+
+This is not a further rollout. No public-origin readback claimed; the separate
+Pages/Git receipt follows in COM108. Prior editions remain below and in history.
+
 ## Significance standing, 10 September 2026
 
 Maintained `d7d3920e4960cde2eb8efde3a7b23a1c2a64d735` matches tested PR161
