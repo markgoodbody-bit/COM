@@ -13,6 +13,7 @@ import { copyCampFire, CAMP_FIRE } from './camp-fire.mjs';
 import { copyWorks, verifyWorks, WORKS } from './works.mjs';
 import { applyContextualArt } from './contextual-art.mjs';
 import { writeReadingRooms } from './change-room.mjs';
+import { writeHumanMap } from './human-map.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 assertRevisionDate(JSON.parse(await readFile(path.join(root, 'public/manifest.json'))), await readFile(path.join(root, 'public/changes.md'), 'utf8'));
@@ -78,6 +79,12 @@ for (const name of machineFiles) {
       scope: 'Optional first-five-minutes navigation. Native links and CSS work without JavaScript; the enhancement adds focus management and Back. No answer submission, account, tracking or profile. Browser history retains page positions. Reader benefit is not measured.',
       script_sha256: createHash('sha256').update(journeyBytes).digest('hex'),
     };
+    manifest.provenance.human_map = {
+      direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622746591',
+      graph: '/explore/questions.json',
+      graph_sha256: createHash('sha256').update(await readFile(path.join(root, 'public/explore/questions.json'))).digest('hex'),
+      scope: 'Human view derived from the existing question index and node records. Ten equal question doors and optional authored connections, not a ranking or recommendation. Other catalogue routes preserved. No measured reader benefit.',
+    };
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }
   await writeFile(path.join(root, 'out', name), bytes);
@@ -97,6 +104,7 @@ async function copyExplore(relative = 'explore') {
   }
 }
 await copyExplore();
+await writeHumanMap(path.join(root, 'public'), path.join(root, 'out'));
 await mkdir(path.join(root, 'out/discussion'), { recursive: true });
 for (const [name, bytes] of discussionFiles) await writeFile(path.join(root, 'out/discussion', name), bytes);
 await writeViews(path.join(root, 'public'), path.join(root, 'out'));
