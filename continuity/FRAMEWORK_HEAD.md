@@ -14,13 +14,13 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Current retrieval — 10 September 2026
 
-Read the live active pointer and consequential #108 / PR209 returns. Maintained `20559a4955e965073312008bdd31a8e147585081` matches tested PR168 `d5fdd41a4d8c30957eaa2f2fd7834bfca07650ff`. Public `37e3a92dbe361811dfeae45507f53d5125db9194` reports Pages built2026-09-10T17:09:06Z,error null; all155 generated Git blobs match. [D026 receipt5622519995](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622519995).
+Read the live active pointer and consequential #108 / PR209 returns. Maintained `146d9d47a8136578c768b4005f997c16aad12d46` matches tested PR170 `a3a4df294fc058fad0096a1fd65181e2fbfbebce`. Public `89dbc4dbafb64b8af92edaed203a2a59d6311920` reports Pages built2026-09-10T17:21:58Z,error null; all155 generated Git blobs match. [D027 receipt5622689697](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622689697).
 
-Selection/Power/Hardening/Correction batch complete using FW source proof in the same PR168. Nine rooms enabled, Futures separate. All source text/graph/raw routes retained; generic kind stays in disclosed Status without extra paragraph. Eight outputs change,147 identical;33 Node/16 Python checks pass. Connected local paths, four desktop screenshots, two direct phone arrivals/disclosures/exits checked. Futures link retains loaded artwork. No native-Back, reader-comprehension or public-origin result.
+Ten readings complete. Futures now combines exact previous artwork entrance with complete source-derived reading. Stage-A35f9c41 produced155 exact D026 outputs before enablement; final D027 changes five outputs,150 exact.35 Node/16 Python checks pass. Actual desktop/phone art+reading, homepage/Power/Hardening routes, disclosures/exits/Works checked. Bypass focus failure was repaired with Futures-only tabindex=-1; reading and question skips now focus distinct targets. No reader-benefit, native-Back, curatorial or public-origin validation.
 
-Next is Futures composition with a zero-delta control before enabling; preserve both art and room contracts, attributes, anchors, image-first/credit/bypass. FW5622449021 is a proposed seam, not a proven implementation. Later map and bridge subtraction remain separate.
+Next: prepared human map, then separate homepage bridge subtraction. No more room machinery. Controlled-template wrapper is not universal HTML parsing. CC5622566796's clean internal link sweep is reported bounded evidence, not Codex's final-D027 origin check; external links excluded. Existing standing/wording questions remain.
 
-CC5622481472 reports closing script-route/hash issue; its root-llms blockquote caveat remains nonblocking. Earlier standing-presence/prominence disagreement and reader-evidence limits remain. PR209 window unchanged. Square4446 at17:08:58.8768761Z still49167/50066,has_more=false; no write. Service/account/spend/TRACE/ME/licence/crawler boundaries unchanged. Prior receipts remain in the active pointer and Git.
+Square4446 at17:21:55.3221154Z unchanged49167/50066,has_more=false; no write. PR209 window unchanged. Service/account/spend/TRACE/ME/licence/crawler boundaries preserved. Prior receipts/history remain in Git and active pointer.
 
 ## Historical orientation — 9 September 2026
 
