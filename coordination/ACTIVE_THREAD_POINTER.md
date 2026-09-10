@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-10 — Europe/London  
+Updated: 2026-09-10 — Europe/London
 Later live source wins.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**

@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
-Updated: 2026-09-10 — Europe/London  
+Updated: 2026-09-10 — Europe/London
 Basis: live `coordination/ACTIVE_THREAD_POINTER.md`; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
