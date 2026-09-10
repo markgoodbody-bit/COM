@@ -6,11 +6,11 @@ const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const localHtml = route => route.replace(/\.(?:json|md)$/, '.html');
 
-export const ENABLED_ROOMS = Object.freeze(['change', 'aperture', 'significance', 'care', 'wisdom', 'selection', 'power', 'hardening', 'correction']);
+export const ENABLED_ROOMS = Object.freeze(['change', 'aperture', 'significance', 'care', 'wisdom', 'selection', 'power', 'hardening', 'correction', 'futures']);
 
-// Nine existing nodes, not a second graph. Futures remains a separate art+room composition case.
+// Ten existing nodes, not a second graph. Contextual art wraps the rendered Futures room.
 export function renderReadingRoom(node, index, targets) {
-  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction are enabled');
+  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Unknown reading room');
   for (const key of ['title','short','detail','perspective','challenge','question','kind','status','boundary']) {
     if (typeof node[key] !== 'string' || !node[key].trim()) throw Error('Missing reading field: ' + key);
   }
@@ -37,7 +37,7 @@ export function renderReadingRoom(node, index, targets) {
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(node.title)} · Please Start From Here</title><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/markdown" href="${node.id}.md"><link rel="alternate" type="application/json" href="${node.id}.json"><link rel="describedby" href="../llms.txt"></head>
 <body style="max-width:none;padding:0"><a class="skip" href="#question">Skip to the question</a>
-<main><article class="context-window" aria-labelledby="room-title">
+<main${node.id === 'futures' ? ' tabindex="-1"' : ''}><article class="context-window" aria-labelledby="room-title">
 <header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1>${standing}<p>${escape(node.short)}</p></header>
 <h2 id="question" tabindex="-1">${escape(node.question)}</h2>
 <div aria-label="Another position and challenge">
@@ -75,10 +75,10 @@ export async function writeReadingRooms(sourceRoot, outputRoot) {
   const manifestPath = path.join(outputRoot, 'manifest.json');
   const manifest = JSON.parse(await readFile(manifestPath));
   manifest.provenance.reading_rooms = {
-    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622324649',
+    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622519905',
     nodes: rooms.map(room => ({ node: '/explore/nodes/' + room.id + '.json', node_sha256: room.node_sha256 })),
     graph: '/explore/questions.json', graph_sha256: sha(indexBytes),
-    scope: 'Nine reading presentations: Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction. Existing accounts and graph; non-generic standing is visible from the source kind field. Futures remains a separate contextual-art composition case. No new semantics or measured reader benefit. Raw sources remain directly reachable.',
+    scope: 'Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable.',
   };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 }
