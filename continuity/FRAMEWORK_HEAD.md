@@ -14,17 +14,15 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Current retrieval — 10 September 2026
 
-Read the live active pointer and consequential #108 / campfire-relay PR209 returns. Maintained `2133cb238a177aae88f5be05aa32235fad6400c6`, tested PR163 `8b50853aa5a1163923d0f0b208ecb03fa42dcd6c`, public `6bde9d9fd9bebef334be22c82846cb59312af3b7`. Pages built15:36:35Z; all155 output Git blobs match. [D024 receipt5621308607](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5621308607).
+Read the live pointer and consequential #108 / campfire-relay PR209 returns. Maintained `50490a460b5ec59a5c4f46b99c55cb5ce46c70d9` matches tested PR165 `fbdd2d562001ce7e8e033f112059b7c788f20f67`. Public `1c49073873e3a6664d82d9b80146e28dc229a5e8` reports Pages built2026-09-10T16:53:15Z, no error; all155 output Git blobs match. [D025 receipt5622321270](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622321270).
 
-Care-only work5621167383 is complete. Exact normative-proposal/not-derived-from-physics kind is visible below title using the unchanged rule. All text/sources/graph survive; exactly four rooms enabled. Five outputs change,150 unchanged;30 Node/16 Python checks pass. Local1280px full journey and direct390px arrival/disclosures/exits pass. Desktop/narrow screenshots succeeded and were inspected, without clipping or banner treatment. Reader noticing/usefulness and native Back remain unverified; no public-origin readback. The earlier Significance screenshot gap is not retroactively filled.
+Wisdom is the fifth room, exact candidate-campfire-synthesis/not-empirical-result kind visible under the unchanged rule. Original text, graph and sources survive; five outputs change,150 exact.31 Node/16 Python checks pass. Local Care-to-Wisdom/direct-phone/disclosure/exit/onward checks and desktop/narrow screenshots pass within stated scope. No reader-comprehension, native Back or public-origin readback result.
 
-ANOTHER_EXCEPTION_TEST for Wisdom. Do not infer a five-generic-page batch: FW5621290627 plus Codex source check establishes Futures art-before-room overwrite hazard. Four clean candidates are Selection, Power, Hardening and Correction; Futures needs deliberate art+room composition. CARE_REVIEW's kind-only inventory is narrowed by receipt5621308607. No fifth room or build-order/art edit in D024. Later graph-derived human map5621269147 and homepage bridge subtraction5621243729 stay separate. CC hostile-standing request5621225346 is not a received result.
+SCALE_SMALL_BATCH next: Selection, Power, Hardening and Correction, separate PR with per-node checks. Futures requires separate art+room composition, not naive allowlist extension. Later map and homepage subtraction stay separate. No new layer/theory/art/policy work included.
 
-Homepage, previous rooms, art, scripts and D022 machine integration stay exact. PR163 early-draft visibility allowed FW review without duplicate build. PR130/152/153/160 are closed history;156/157 integrated via158. PR209 remains nonproduction at a67a4b7689ea497c33c3dee5da794c98c76edeeb; query since14:35Z found no new comment. Common-startup enumeration5620226108 is not exhaustive recovery-path absence; Codex5620396877 narrows its categorical wording. No service/scheduler action. Script route/hash absence remains false; see5620743838.
+CC5622309634's KEEP / Wisdom repair is a reported predecessor public read, not final-D025 or human-reader validation. Generic Status exists in disclosure, but presence does not settle prominence/authority effects; receipt5622321270 records this distinction and the limits of CC's clarity judgments. No actual reader benefit established.
 
-PSFH Square4446 at15:36:41.8044440Z still only49167/50066,has_more=false. No new reply or Square actuation. FW5620761715 training-crawler preference remains a separate Mark choice, unchanged. Spend, accounts, services, TRACE/ME releases and consequential boundaries remain.
-
-Earlier receipts and historical routing are preserved below and in Git rather than repeated as current state.
+PR209 unchanged in checked window, no service action. PSFH Square4446 at16:47:42.1165508Z still49167/50066,has_more=false; no write. Old crawler preference remains Mark's separate choice; service/account/spend/TRACE/ME boundaries unchanged. Prior receipts and history remain available in Git and the active pointer.
 
 ## Historical orientation — 9 September 2026
 
