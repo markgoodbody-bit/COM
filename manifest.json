@@ -67,8 +67,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "7b8a20ca08e7bd03a55f142efd47689d459bfa3a04571a21e1f85f2d0df34a17",
-    "change_history_input_html_sha256": "35329a4d213e4fa40e70c974c46d75dc6e350303a11f404a15d4972137fbd112",
+    "change_history_sha256": "a8e0309e9e35f1d3d0167b62ad15e117ce1b4d8fd047c1c10b5cf2415e87ded6",
+    "change_history_input_html_sha256": "ce2ac0dfbb3a6b3e8ef303a05bc83ae166f76c9e48b110931afd35af56c6a2fb",
     "change_history_addendum_note": "D016 through D027 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
@@ -125,6 +125,12 @@
       "scope": "Optional first-five-minutes navigation. Native links and CSS work without JavaScript; the enhancement adds focus management and Back. No answer submission, account, tracking or profile. Browser history retains page positions. Reader benefit is not measured.",
       "script_sha256": "9cf43b45b464629900ee722722331ee4bfe1b9831f99121408dcbc104b029621"
     },
+    "human_map": {
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622746591",
+      "graph": "/explore/questions.json",
+      "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
+      "scope": "Human view derived from the existing question index and node records. Ten equal question doors and optional authored connections, not a ranking or recommendation. Other catalogue routes preserved. No measured reader benefit."
+    },
     "reading_rooms": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622519905",
       "nodes": [
@@ -173,11 +179,11 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "ede58511d988919cfd8ca65993f6bdb337bcc3bfee9c67f448d872453c86ece8",
+    "change_history_html_sha256": "42d185b2af78e8f8e3ef2d6cccde58feddc1966b915da276f231968af00caa56",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "07b62db071f357143d42a6108ad0dcf3c3e27da9e6ae5b36198ecaa6fc21ff5f",
+      "stylesheet_sha256": "0c1b668a17cdbcaa0c6fb636e307251e98d1f21a02d0bcceb00d9b66bd506248",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },

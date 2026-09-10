@@ -1,5 +1,26 @@
 # Campfire Door public preview
 
+## Human question map, 10 September 2026
+
+Maintained `45ec06e4ac9dceb8ec004e0a2690335ef3773895` matches PR173
+head `2708da3cd8a1d2226749cbc05ef3ec8dac064df0`. Ten question doors,
+30 optional authored connections and eight preserved Other routes. Topic labels
+are secondary; no ranking or new graph. The whole Atkins entrance remains exact.
+Both the homepage shortcut and artwork bypass focus the actual reading map.
+
+Six of155 generated outputs change from89dbc4db: Explore HTML, scoped style.css,
+manifest, paired D028 history and the existing index.html size/hash in map.json.
+Other149 outputs remain exact, including all ten room HTMLs and raw node files,
+homepage, machine reading payloads, script and art.39 Node/16 Python checks pass;
+the four map checks also passed after adding FW's malformed-extra-node cases.
+Desktop captures, ten primary routes, two cross-map edges, keyboard bypass and
+disclosures, eight auxiliary200 responses and390px geometry checked locally.
+Explicit emulated-viewport screenshots failed: no complete phone screenshot
+matrix, human-benefit or Codex public-origin verification claim.
+
+HUMAN_MAP_REVIEW_20260910.md records exact scope and corrections. The two homepage
+bridge panels are unchanged; their possible subtraction remains a separate task.
+
 ## Futures artwork and reading, 10 September 2026
 
 Maintained `146d9d47a8136578c768b4005f997c16aad12d46` matches tested PR170

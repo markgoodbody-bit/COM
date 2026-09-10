@@ -160,6 +160,15 @@ body.contextual-room { max-width: none; padding: 0; }
 .room-credit { padding: 1.5rem clamp(1rem, 4vw, 4rem); border-top: 1px solid currentColor; font-size: .875rem; }
 .room-credit p { max-width: 95ch; }
 .contextual-room #reading-map { scroll-margin-top: 1.5rem; }
+/* Derived human map only: equal question doors, optional authored connections. */
+#reading-map .reading-map-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; list-style: none; padding: 0; }
+#reading-map .reading-map-list > li { min-width: 0; margin: 0; padding-block: 1.5rem; border-top: 1px solid var(--border); }
+#reading-map .map-topic { font-size: .875rem; color: var(--muted); margin: 0 0 .5rem; }
+#reading-map .reading-map-list h3 { font-size: 1.375rem; line-height: 1.4; margin: 0 0 .75rem; text-wrap: pretty; }
+#reading-map .reading-map-list summary { min-height: 2.75rem; padding-block: .5rem; cursor: pointer; }
+#reading-map .reading-map-list details ul { padding-left: 1.25rem; }
+#reading-map .reading-map-list details a { display: inline-block; padding-block: .4rem; }
+@media (max-width: 42rem) { #reading-map .reading-map-list { grid-template-columns: 1fr; } }
 @media (max-width: 48rem) {
   .room-heading { padding: 1.5rem 1rem; }
   .room-heading p { font-size: clamp(2.25rem, 8vw, 3.5rem); max-width: none; margin-bottom: .2rem; }
