@@ -72,6 +72,10 @@ test('source, question index and node records must agree; ambiguous source fails
   const duplicateRoute = html.replace('<li><a href="questions.txt">', '<li><a href="start.json">');
   assert.throws(() => renderHumanMap(duplicateRoute, index, records), /Duplicate Explore route/);
   assert.throws(() => renderHumanMap(html.replace('nodes/change.html', 'nodes/change.html?extra'), index, records), /Unsupported Explore node/);
+  for (const route of ['nodes/change.htm','nodes/change.html?x','nodes/change/']) {
+    const withExtra = html.replace('</ul></nav>','<li><a href="'+route+'">Unexpected node</a></li></ul></nav>');
+    assert.throws(() => renderHumanMap(withExtra, index, records), /Unsupported Explore node/);
+  }
   const duplicateId = structuredClone(index);
   duplicateId.nodes[1].id = duplicateId.nodes[0].id;
   assert.throws(() => renderHumanMap(html, duplicateId, records), /duplicate graph node/);
