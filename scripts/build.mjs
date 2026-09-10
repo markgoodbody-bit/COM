@@ -122,8 +122,8 @@ const offlineHtml = previewHtml.replace(/<link\b(?=[^>]*rel="preload")(?=[^>]*as
   .replace('src="' + CAMP_FIRE.responsive.variants.find(copy => copy.width === 1440).local_image + '"', 'src="' + offlineArt + '"');
 await writeFile(path.join(root, 'downloads/Campfire-preview.html'), offlineHtml.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Please Start From Here</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="/style.css"></head><body><header class="masthead"><a href="/">Please Start From Here</a></header><main><section class="intro"><h1>Page not found</h1><p>There is no page at this address.</p><p><a href="/">Return to the introduction</a> or <a href="/explore/">explore the readings</a>.</p></section></main></body></html>\n');
-await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));
 await writeReadingRooms(path.join(root, 'public'), path.join(root, 'out'));
+await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));
 await applyHouseStyle(path.join(root, 'out'));
 // These dedicated pages retain their reviewed, medium-specific styles.
 await copyWorks(path.join(root, 'public'), path.join(root, 'out'));
