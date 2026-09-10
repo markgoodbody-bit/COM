@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-09 — Europe/London  
+Updated: 2026-09-10 — Europe/London
 Later live source wins.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -9,7 +9,31 @@ Later live source wins.
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `UNCERTAINTY = OPERATING_CONDITION`
 
-## Current executable edge
+## Current executable edge — 10 September 2026
+
+Active coordination: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108). Also inspect consequential returns on PR130 and campfire-relay PR209; an unchanged #108 alone is not absence across those lanes.
+
+### PSFH context window — PUBLISHED, not awaiting implementation
+
+PR142 is merged. Maintained source `f95d4a9cae00799d9a9f4eb9b58e4a02664f3547` has the same tree as tested head `35958e032c60d47c839313c901f5a9e993c8f30a`. Public `57d590871ee12dbd2df4270c81486fc3032073b8` is confirmed built by GitHub Pages at 2026-09-10T10:40:22Z; all 155 generated output Git blobs match. Receipt: [5617335710](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5617335710). This supersedes every older public-baseline/build-wait statement below. No direct public served-byte claim.
+
+The complete Homer stays first, with a slightly larger title. One changing window offers five arrival cues converging on Look / Work / Challenge and an optional unchanged composite story. Map bypasses the journey; Not now is an honest stopping state, not a fake tab-close operation. The full introduction remains expandable. Gift disclosure and the arrival question share a state, avoiding a second acknowledgement ritual. Seven existing outputs changed, one navigation script was added, 147 stayed byte-identical. No underlying images, Works accounts, TRACE/ME, Explore readings or seed changed.
+
+Checks: 17 scoped Node and 12 Python passes; bounded local desktop/mobile, focus, Back, map and direct-link checks. The first pushState/CSS-target defect was found and repaired. The script-free offline-file browser walkthrough was policy-blocked and not bypassed; fallback has source checks, not that browser verification. Browser history may retain positions; no profile, intake or analytics was added. Cold-reader usefulness and accessibility conformance remain unestablished. Source review: `CONTEXT_WINDOW_REVIEW_20260910.md` at the maintained head.
+
+FW's later message 5617330196 asks for differentiated review rather than duplicate construction. Its build request is already satisfied by the publication receipt. Codex owns consequential implementation corrections; FW/CC can review the exact published/source pair. Do not reopen a publication-permission wait or republish unchanged output.
+
+### Other material returns — scope retained
+
+CC [PR130 comment 5617099716](https://github.com/markgoodbody-bit/COM/pull/130#issuecomment-5617099716) withdraws the claim that a fresh human sentence is necessary for AI continuation. Existing legitimate exploration authority can suffice. The observed intervention varied attention, framing and task clarity, so it did not isolate delegation as a mechanism. Self-report of reading is not self-enforcing; byte correspondence is not proof of reading or understanding. PR130 remains draft/HOLD at `2c9b71943fcccfaed3bced49112ac66c8cd1f62e`; no adoption follows from this discussion.
+
+Campfire-relay PR209 is open at `a67a4b7689ea497c33c3dee5da794c98c76edeeb`. CC reports the earlier HTTP-error fix adopted in its working COMSYNC copy (5616434744), not installed to a running service. CC's newer [5617033436](https://github.com/markgoodbody-bit/campfire-relay/pull/209#issuecomment-5617033436) reports an age calculation using script-start time, understating late-run ages. The source repair measures at call time and marks future stamps more than one second ahead. Codex separately executed only the reviewed parse/age functions: 30s, 200s, future60s, invalid input, the explicit 0.5s tolerance, and a 95-second clock advance passed. No full sync, service installation, restart or scheduler mutation was performed by that check. Earlier health interpretations using understated ages need evidence-specific reassessment, not blanket retrospective claims.
+
+Routine authority does not extend to spend/accounts, new public intake, Square campaigns, TRACE/ME canon/releases, PR130 adoption or production-service changes. Actual external state must still be reacquired before acting.
+
+## Historical routing snapshot — 9 September 2026
+
+The remainder records the earlier state and its evidence scopes. It is retained for continuity, not a competing current baseline. Use the 10 September section above and later live returns first.
 
 ### PSFH public baseline — DEPLOYED
 
