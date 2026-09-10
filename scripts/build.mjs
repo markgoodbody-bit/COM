@@ -85,6 +85,10 @@ for (const name of machineFiles) {
       graph_sha256: createHash('sha256').update(await readFile(path.join(root, 'public/explore/questions.json'))).digest('hex'),
       scope: 'Human view derived from the existing question index and node records. Ten equal question doors and optional authored connections, not a ranking or recommendation. Other catalogue routes preserved. No measured reader benefit.',
     };
+    manifest.provenance.bridge_subtraction = {
+      direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622773558',
+      scope: 'Work choices link directly to Change and Futures. Two repeated homepage panels and the special Change return link removed; original readings, art, graph and story remain. No measured reader benefit.',
+    };
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }
   await writeFile(path.join(root, 'out', name), bytes);

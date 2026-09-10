@@ -20,14 +20,14 @@ test('only named navigation, ten-room, machine and history outputs differ from t
   assert.equal(retained,132);
 });
 
-test('explicit nine-state graph has five arrival cues, source-labelled encounters and no intake', async () => {
+test('seven-state homepage retains five arrival cues, direct Work routes and no intake', async () => {
   const html = await readFile('out/index.html','utf8');
-  assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','understand','future','challenge','story','leave']);
+  assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','challenge','story','leave']);
   const orientation = html.split('id="step-orientation"')[1].split('</section>')[0];
   assert.deepEqual([...orientation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#step-look','#step-work','#step-look','#step-challenge','#step-look']);
   assert.match(orientation,/I am here for the art, or just looking/);
   const work = html.split('id="step-work"')[1].split('</section>')[0];
-  assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#step-understand','#step-future']);
+  assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/change.html','/explore/nodes/futures.html']);
   assert.match(work,/Understand what is happening/);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size,ids.length);
@@ -55,10 +55,10 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 through D028 are paired in both formats and earlier history remains exact', async () => {
+test('D017 through D029 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
-  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027']]) {
+  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027'],['D029','D028']]) {
     const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
     const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
     const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');
@@ -71,18 +71,26 @@ test('D017 through D028 are paired in both formats and earlier history remains e
   }
 });
 
-test('first-depth encounters use exact existing source sentences and preserve full-reading routes', async () => {
+test('Work goes directly to the readings; only duplicate panels and the special Change exit disappear', async () => {
   const html = await readFile('out/index.html','utf8');
   const escape = s=>s.replaceAll('&','&amp;').replaceAll("'",'&#x27;');
-  for (const [id,name] of [['understand','change'],['future','futures']]) {
-    const source = await readFile('public/explore/nodes/'+name+'.md','utf8');
-    const panel = html.split('id="step-'+id+'"')[1].split('</section>')[0];
-    for (const section of ['Small account','Open question']) {
-      const text = source.split('## '+section)[1].split('## ')[0].trim();
-      assert.ok(panel.includes(escape(text)),id+': '+section);
-    }
-    assert.deepEqual([...panel.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/'+name+'.html','#step-story']);
+  const parent = '146758fa9911460564646bec757e01bfad26b976';
+  let expected = execFileSync('git',['show',parent+':index.html']).toString('utf8');
+  for (const [oldId,node] of [['understand','change'],['future','futures']]) {
+    expected = expected.replace('href="#step-'+oldId+'"','href="/explore/nodes/'+node+'.html"')
+      .replace(new RegExp('<section data-step="'+oldId+'"[\\s\\S]*?</section>'),'');
+    const record = JSON.parse(await readFile('public/explore/nodes/'+node+'.json'));
+    const room = await readFile('out/explore/nodes/'+node+'.html','utf8');
+    assert.ok(room.includes(escape(record.short)));
+    assert.ok(room.includes(escape(record.question)));
   }
+  assert.equal(html,expected);
+  const oldChange = execFileSync('git',['show',parent+':explore/nodes/change.html']).toString('utf8');
+  const change = await readFile('out/explore/nodes/change.html','utf8');
+  assert.equal(change,oldChange.replace('<a href="/#step-understand">Understand route</a>',''));
+  assert.doesNotMatch(html+change,/step-understand|step-future/);
+  assert.deepEqual(await readFile('out/journey.js'),execFileSync('git',['show',parent+':journey.js']));
+  assert.doesNotMatch(await readFile('downloads/Campfire-preview.html','utf8'),/step-understand|step-future|<script\b/);
   const challenge = await readFile('public/explore/challenge.md','utf8');
   const statement = challenge.split('## Challenge the content')[1].split('## ')[0].trim();
   assert.ok(html.split('id="step-challenge"')[1].split('</section>')[0].includes(escape(statement)));

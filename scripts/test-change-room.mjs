@@ -18,7 +18,7 @@ test('Change keeps all original paragraphs and source links, with challenge outs
   for (const [,url] of original.matchAll(/href="(https:[^"]+)"/g)) assert.ok(html.includes('href="'+url+'"'),url);
   const uncollapsed = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
   for (const key of ['short','question','perspective','challenge','status']) assert.ok(uncollapsed.includes(escape(node[key])),key);
-  for (const route of ['change.md','change.json','/#step-understand','/','/explore/#reading-map','/#step-leave']) assert.ok(uncollapsed.includes('href="'+route+'"'),route);
+  for (const route of ['change.md','change.json','/','/explore/#reading-map','/#step-leave']) assert.ok(uncollapsed.includes('href="'+route+'"'),route);
   assert.doesNotMatch(html,/<(?:script|img|form|input|iframe)\b/);
   assert.match(html,/<details id="full-account"><summary/);
   assert.equal((html.match(/<h1\b/g)||[]).length,1);
@@ -47,9 +47,9 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only human map, scoped stylesheet and provenance/history outputs differ from D027', async () => {
-  const revision = '89dbc4dbafb64b8af92edaed203a2a59d6311920';
-  const changed = new Set(['explore/index.html','explore/map.json','style.css','manifest.json','changes.md','changes.html']);
+test('only direct Work routing, Change exit and provenance/history outputs differ from D028', async () => {
+  const revision = '146758fa9911460564646bec757e01bfad26b976';
+  const changed = new Set(['index.html','explore/nodes/change.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -62,7 +62,7 @@ test('only human map, scoped stylesheet and provenance/history outputs differ fr
   const withoutDelivery = value => ({...value, resources: value.resources.map(({bytes,sha256,...item}) => item)});
   assert.deepEqual(withoutDelivery(map),withoutDelivery(beforeMap));
   const identityChanges = map.resources.filter((item,i)=>JSON.stringify(item)!==JSON.stringify(beforeMap.resources[i]));
-  assert.deepEqual(identityChanges.map(item=>item.path),['index.html']);
+  assert.deepEqual(identityChanges.map(item=>item.path),['nodes/change.html']);
   for (const item of map.resources) {
     const bytes = await readFile('out/explore/'+item.path);
     assert.equal(item.bytes,bytes.length,item.path);

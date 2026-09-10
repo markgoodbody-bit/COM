@@ -58,26 +58,8 @@ export default function Home() {
             <h2 tabIndex={-1}>Where would you like to begin?</h2>
             <p>Start with what is happening, or with something you want to make possible. You can move between the two.</p>
             <div className="journey-options">
-              <a href="#step-understand">Understand what is happening</a>
-              <a href="#step-future">Explore something I want to make or change</a>
-            </div>
-          </section>
-          <section data-step="understand" id="step-understand">
-            <p className="eyebrow">Understanding a situation</p>
-            <p>A description can remain still while the situation changes.</p>
-            <h2 tabIndex={-1}>What changed in the situation, rather than only in its description?</h2>
-            <div className="journey-options">
-              <a href="/explore/nodes/change.html">Go deeper: Change</a>
-              <a href="#step-story">See a small example</a>
-            </div>
-          </section>
-          <section data-step="future" id="step-future">
-            <p className="eyebrow">Making something possible</p>
-            <p>An option written down is not necessarily an option someone can use.</p>
-            <h2 tabIndex={-1}>Which path is reachable, for whom, under which conditions?</h2>
-            <div className="journey-options">
-              <a href="/explore/nodes/futures.html">Go deeper: Reachable futures</a>
-              <a href="#step-story">See it in a small story</a>
+              <a href="/explore/nodes/change.html">Understand what is happening</a>
+              <a href="/explore/nodes/futures.html">Explore something I want to make or change</a>
             </div>
           </section>
           <section data-step="challenge" id="step-challenge">

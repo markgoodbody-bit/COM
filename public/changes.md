@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D029
+
+10 September 2026 — Two repeated steps have been removed.
+
+The two choices under Work with a question now lead directly to Change and Reachable futures, keeping their existing labels. Their intermediate panels repeated the small accounts and questions already present in those readings. Those panels are removed, along with Change's special Understand route link back to one of them.
+
+The full readings retain their original questions, accounts, challenges and source links. Opening, Map and Not now remain available. The story still has routes through Look, Challenge and the full introduction. The homepage painting, Futures artwork, human map and navigation script are unchanged.
+
+This follows Framework comment 5622773558 in COM issue 108. Removing a repeated step is not proof of a better experience. Old links to the two removed panel fragments no longer identify those panels; the existing navigation fallback remains. Previous publication 146758fa9911460564646bec757e01bfad26b976 remains in Git history.
+
 ### D028
 
 10 September 2026 — The map now opens with questions rather than a mixed catalogue.
