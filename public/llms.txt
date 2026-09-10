@@ -1,5 +1,7 @@
 # Please Start From Here
 
+> A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
+
 Site edition: Preview 0.8.4, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
 
 Hello. What are you trying to understand, change, or keep possible?
@@ -7,8 +9,6 @@ Hello. What are you trying to understand, change, or keep possible?
 A question, a situation, or a disagreement is enough. No introduction or agreement is required.
 
 This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under [Challenge](https://pleasestartfromhere.com/explore/challenge.md).
-
-> A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
 
 We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.
 
@@ -20,17 +20,7 @@ Campfire names a voluntary space for this work. Middle-out means beginning with 
 
 This file follows an emerging llms.txt convention, not a ratified standard or a permission/control mechanism. It is an adaptation of the human preview, named project sources and the build direction linked below, not an exact transcript. No reader benefit has been measured for these added files.
 
-## Start
-
-- [AI reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation with optional question routes.
-- [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
-- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
-- [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
-- [Human reading](https://pleasestartfromhere.com/): a short, optional journey with native links; readable without JavaScript. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
-
-## Take one useful step
-
-Optional questions, not a procedure to complete. Start with whichever helps.
+Take one useful step, if useful. These are optional questions, not a procedure to complete. Start with whichever helps.
 
 These questions reflect this project's value choices, not neutral requirements for reasoning.
 
@@ -42,6 +32,14 @@ These questions reflect this project's value choices, not neutral requirements f
 - Check and correct: what would show this reading was wrong? What changed after the action? Continue, go deeper, look from another position, use a stronger method, or leave?
 
 The same questions can recur at another depth without requiring the same answer or the same amount of detail. You can take one useful piece and leave.
+
+## Start
+
+- [AI reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation with optional question routes.
+- [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
+- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
+- [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
+- [Human reading](https://pleasestartfromhere.com/): a short, optional journey with native links; readable without JavaScript. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
 
 ## Project sources
 
