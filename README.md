@@ -1,5 +1,25 @@
 # Campfire Door public preview
 
+## Wisdom standing, 10 September 2026
+
+Maintained `50490a460b5ec59a5c4f46b99c55cb5ce46c70d9` matches tested PR165
+head `fbdd2d562001ce7e8e033f112059b7c788f20f67`. Wisdom is the fifth enabled
+room, using the unchanged source-kind rule. Its candidate campfire synthesis /
+not an empirical result qualification is visible. Original text, both source
+pointers and graph-derived questions survive.
+
+Only Wisdom HTML, map, manifest and paired D025 history change from
+`6bde9d9fd9bebef334be22c82846cb59312af3b7`; other150 of155 outputs unchanged.
+Build31 Node/16 Python checks pass. Actual Care-to-Wisdom journey, direct phone
+arrival, keyboard disclosures, Map, Not now and onward Aperture checked locally.
+Desktop/phone screenshots inspected without text overlap or clipping. Reader
+comprehension/usefulness and native Back remain unverified. No public-origin
+readback claimed; separate Pages/Git receipt follows in COM108.
+
+WISDOM_REVIEW_20260910.md recommends a separate four-generic-node batch candidate,
+excluding Futures because its artwork needs deliberate composition. No batch,
+art, homepage, map redesign or crawler change is included in this publication.
+
 ## Care standing, 10 September 2026
 
 Maintained `2133cb238a177aae88f5be05aa32235fad6400c6` matches tested PR163
