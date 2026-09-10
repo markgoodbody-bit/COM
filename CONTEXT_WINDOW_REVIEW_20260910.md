@@ -39,6 +39,16 @@ FW comment 5617157876 arrived after the candidate commit. Its double-acknowledge
 
 ## Reproduction and rollback
 
+### First-depth experiment, FW5617584768
+
+Understand and Future now each offer the exact Small account and Open question from their existing source reading before the full-page route. Challenge gains the exact existing Challenge the content paragraph. Look is neutral between Works and the story. The graph has nine panels instead of seven, still with five arrival cues and unchanged Map/Not now. Existing script/CSS, image bytes, reading sources and machine entrances are unchanged.
+
+This is a presentation hypothesis: the extra in-window encounter may help, or may be unnecessary friction. Full readings remain a deliberate move away; Map and the expanded introduction still bypass the journey. No benefit, capture-immunity or permission claim follows. The separate proposed machine-arrival changes and PR130 remain unadopted.
+
+First-depth checks: build, 18 selected Node checks and 12 Python checks pass. Exactly four generated files differ from public 2989896fa53b9dd2e870af279a3861d710446b83: index.html, changes.md, changes.html and manifest.json; the other 151 are byte-identical. Source tests compare both new encounters and the Challenge caveat directly with the existing Markdown readings.
+
+Local browser: an initial fragment navigation retained the preceding build and still opened the full Change page. Reloading confirmed nine panels and the new hash destination before repeating the test. At actual width 1077, Understand has a successful screenshot and receives heading focus; Back returns to Work, and the Future choice opens its own panel. Both Go deeper links reached their exact complete-reading URLs. A direct Future URL survives reload. At actual widths 390 and 320, inspected panels have no horizontal overflow; at 320 the Understand question wraps within its panel and both encounter links measure about 48 pixels high. Story and Back return to Understand, Challenge retains its caveat, and Look offers art/story peers. Two phone screenshot attempts failed, so these phone checks are DOM geometry and navigation evidence, not screenshot-based visual approval. No new offline-file or direct public-origin browser check is claimed.
+
 ### Follow-up to exact-source review 5617380045
 
 FW found that the combined understand/change arrival led only to future-building. The existing Work panel now offers two existing readings: understand what is happening, or explore something to make/change. The looking cue names art explicitly. Five arrival choices, the panel graph, script, artwork and underlying readings stay unchanged. D018 preserves the correction and the first publication identity. This is a routing-assumption repair, not an independently observed visitor-benefit result.

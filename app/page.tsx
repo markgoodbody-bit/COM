@@ -47,10 +47,10 @@ export default function Home() {
           <section data-step="look" id="step-look">
             <p className="eyebrow">Take a look</p>
             <h2 tabIndex={-1}>Start with something small.</h2>
-            <p>A short story shows the kind of difference this project asks about: the distance between what a record says and what someone can actually reach.</p>
+            <p>You can begin with a work of art or one small story.</p>
             <div className="journey-options">
-              <a href="#step-story">Read the story</a>
               <a href="/works/">Spend some time with the art</a>
+              <a href="#step-story">Read the story</a>
             </div>
           </section>
           <section data-step="work" id="step-work">
@@ -58,14 +58,33 @@ export default function Home() {
             <h2 tabIndex={-1}>Where would you like to begin?</h2>
             <p>Start with what is happening, or with something you want to make possible. You can move between the two.</p>
             <div className="journey-options">
-              <a href="/explore/nodes/change.html">Understand what is happening</a>
-              <a href="/explore/nodes/futures.html">Explore something I want to make or change</a>
+              <a href="#step-understand">Understand what is happening</a>
+              <a href="#step-future">Explore something I want to make or change</a>
+            </div>
+          </section>
+          <section data-step="understand" id="step-understand">
+            <p className="eyebrow">Understanding a situation</p>
+            <p>A description can remain still while the situation changes.</p>
+            <h2 tabIndex={-1}>What changed in the situation, rather than only in its description?</h2>
+            <div className="journey-options">
+              <a href="/explore/nodes/change.html">Go deeper: Change</a>
+              <a href="#step-story">See a small example</a>
+            </div>
+          </section>
+          <section data-step="future" id="step-future">
+            <p className="eyebrow">Making something possible</p>
+            <p>An option written down is not necessarily an option someone can use.</p>
+            <h2 tabIndex={-1}>Which path is reachable, for whom, under which conditions?</h2>
+            <div className="journey-options">
+              <a href="/explore/nodes/futures.html">Go deeper: Reachable futures</a>
+              <a href="#step-story">See it in a small story</a>
             </div>
           </section>
           <section data-step="challenge" id="step-challenge">
             <p className="eyebrow">Check the work</p>
             <h2 tabIndex={-1}>You do not have to agree.</h2>
             <p>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. A useful objection does not need this project&apos;s vocabulary, or a proposed repair.</p>
+            <p>These accounts can omit people, infer too much or steer the reader. A different account may serve better. A challenge need not be expressed in this project&apos;s vocabulary.</p>
             <div className="journey-options">
               <a href="#step-story">Inspect one small example</a>
               <a href="/explore/challenge.html">Read the limits and ways to challenge</a>
