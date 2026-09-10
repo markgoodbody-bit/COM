@@ -6,11 +6,17 @@ const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const localHtml = route => route.replace(/\.(?:json|md)$/, '.html');
 
-export const ENABLED_ROOMS = Object.freeze(['change', 'aperture']);
+export const ENABLED_ROOMS = Object.freeze(['change', 'aperture', 'significance']);
 
-// Two existing nodes, not a second graph or a ten-node rollout.
+function visibleStanding(node) {
+  if (node.id !== 'significance') return '';
+  return `<p class="room-standing"><strong>Standing:</strong> ${escape(node.kind)}</p>`;
+}
+
+// Three existing nodes, not a second graph or a ten-node rollout. Significance
+// is the first proof that a shared room can preserve a different epistemic kind.
 export function renderReadingRoom(node, index, targets) {
-  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change and Aperture are enabled');
+  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change, Aperture and Significance are enabled');
   for (const key of ['title','short','detail','perspective','challenge','question','kind','status','boundary']) {
     if (typeof node[key] !== 'string' || !node[key].trim()) throw Error('Missing reading field: ' + key);
   }
@@ -36,6 +42,7 @@ export function renderReadingRoom(node, index, targets) {
 <body style="max-width:none;padding:0"><a class="skip" href="#question">Skip to the question</a>
 <main><article class="context-window" aria-labelledby="room-title">
 <header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1><p>${escape(node.short)}</p></header>
+${visibleStanding(node)}
 <h2 id="question" tabindex="-1">${escape(node.question)}</h2>
 <div aria-label="Another position and challenge">
 <h3>Another position</h3><p>${escape(node.perspective)}</p>
@@ -67,15 +74,15 @@ export async function writeReadingRooms(sourceRoot, outputRoot) {
     }
     rooms.push({ id, node_sha256: sha(nodeBytes), html: renderReadingRoom(node, index, targets) });
   }
-  // Validate both before writing either rendered room.
+  // Validate all enabled rooms before writing any rendered room.
   for (const room of rooms) await writeFile(path.join(outputRoot, 'explore/nodes', room.id + '.html'), room.html);
   const manifestPath = path.join(outputRoot, 'manifest.json');
   const manifest = JSON.parse(await readFile(manifestPath));
   manifest.provenance.reading_rooms = {
-    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618750426',
+    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5620450573',
     nodes: rooms.map(room => ({ node: '/explore/nodes/' + room.id + '.json', node_sha256: room.node_sha256 })),
     graph: '/explore/questions.json', graph_sha256: sha(indexBytes),
-    scope: 'Change and Aperture static transition proof only. Existing accounts and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable.',
+    scope: 'Change, Aperture and Significance static room proof only. Existing accounts and graph, no new semantics or measured reader benefit. Significance surfaces its existing candidate-interpretation standing; raw sources remain directly reachable.',
   };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 }
