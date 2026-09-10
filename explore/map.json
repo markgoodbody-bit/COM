@@ -181,7 +181,7 @@
     {
       "path": "llms.txt",
       "bytes": 3535,
-      "sha256": "1af74138052fc747f98a6a9bc97940b689fd62d42f6c6af62f91aed826f257de"
+      "sha256": "08dd853335f48592a7f4de442677a9b25448613f63593722b1f507b1ffd704a3"
     },
     {
       "path": "nodes/aperture.html",
@@ -370,8 +370,8 @@
     },
     {
       "path": "start.json",
-      "bytes": 1758,
-      "sha256": "4cc066e604d73b3f21ff1072d23bbe9b5057dd82b8552bb1b899779f3f58ed2e"
+      "bytes": 2079,
+      "sha256": "f0e693b82e07195df049d1f6df2c5f62b0025518f55194088fa01bc79d19fb10"
     },
     {
       "path": "worked-revision.html",

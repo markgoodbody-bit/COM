@@ -67,9 +67,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "80ce48bc76b16bb39ec79db2a20163784c4e80ae1ab4d122cb0a20ba62a7e254",
-    "change_history_input_html_sha256": "1ca652bffad3d5c239eb305bb457da78e5620d4b3a3674f93f3615e1e0c7f5b0",
-    "change_history_addendum_note": "D016 through D021 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "01ec33337d2436d3f73a71c3e6a3109f6761a35bc5a5f80f9accbae2001756c4",
+    "change_history_input_html_sha256": "10b77f09c6edaf021273cdbfebe3d4551d92f4043c420167fcaa10731a72561d",
+    "change_history_addendum_note": "D016 through D022 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -82,15 +82,15 @@
         "output": "read/start.html",
         "source": "explore/start.json",
         "title": "Start: complete JSON source text",
-        "edition": "Door Preview 0.7, publishing ba181af07ed1254c9670010574c77c8503969de3; psfh-arrival format 0.1",
-        "sha256": "4cc066e604d73b3f21ff1072d23bbe9b5057dd82b8552bb1b899779f3f58ed2e"
+        "edition": "Site Preview 0.8.4, first-arrival wording revised 10 September 2026 (D022); psfh-arrival format 0.1",
+        "sha256": "f0e693b82e07195df049d1f6df2c5f62b0025518f55194088fa01bc79d19fb10"
       },
       {
         "output": "read/orientation.html",
         "source": "llms.txt",
         "title": "Orientation: complete text source",
-        "edition": "Site Preview 0.8.4, navigation description corrected 10 September 2026; not validation",
-        "sha256": "84cffee3c2cb21fc48d861793d77780dd542aed096fa9435d56e61b54be7fa5b"
+        "edition": "Site Preview 0.8.4, concise machine index revised 10 September 2026 (D022); not validation",
+        "sha256": "b7afcebea95ccb32fe1fc072f9199bc29ade7a482beeeb8b2eb1502b46de3fcd"
       },
       {
         "output": "read/trace-spine.html",
@@ -141,7 +141,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Change and Aperture static transition proof only. Existing accounts and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "18f0bac7338a46e512f4623d52cb6db961e76ba1be2552d43190425306f9c800",
+    "change_history_html_sha256": "75682a1bb30a4562d06889d2c41a9a49301f6bb9c795b0801e97f4c797e9fd67",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

@@ -1,5 +1,26 @@
 # Campfire Door public preview
 
+## Concise machine index and first arrival, 10 September 2026
+
+Maintained `28702ed9a4f1bef55431722af61ef8ba5194e1cd` matches tested PR158
+head `e841f7815705656d88a6ce0852a5d88dafaac851`. Separate PR156/157 changes
+are integrated with both source pins intact. The machine entrance offers bounded
+use without inventing a purpose. The indexes put their summaries first; the root
+links to the existing six human prompts rather than repeating them. It is 875
+bytes smaller. Existing routes/boundaries remain, with no reader-benefit claim.
+
+Nine of155 generated paths differ from `7e6ea75c8040feb891dd725a5acad6bcaef9eb82`:
+root llms, Explore llms/start.json, read/start.html, read/orientation.html, map,
+manifest, changes.md and changes.html. Other146 unchanged. Both source-view
+edition descriptions now identify D022; the old arrival publishing label is
+not attributed to revised bytes. Homepage, two rooms, graph, art, script and
+crawler posture remain unchanged.
+
+Build,28 Node/16 Python checks pass. Owned local #small-loop arrival opens the
+full introduction and all six questions. No direct public-origin verification.
+Review: MACHINE_INTEGRATION_REVIEW_20260910.md. Pages/Git receipt is recorded
+separately in COM108. Rollback is a normal revert preserving later unrelated work.
+
 ## Change and Partial views, 10 September 2026
 
 Maintained `4bf08436a917ab2c31881a035fa223fc57bbfb6b` matches tested PR154
