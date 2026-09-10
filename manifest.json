@@ -67,9 +67,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "01ec33337d2436d3f73a71c3e6a3109f6761a35bc5a5f80f9accbae2001756c4",
-    "change_history_input_html_sha256": "10b77f09c6edaf021273cdbfebe3d4551d92f4043c420167fcaa10731a72561d",
-    "change_history_addendum_note": "D016 through D022 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "0f9d248ec2aed8f47e9dce587d486a1b87e50c213d7dc99b91802bae331036f8",
+    "change_history_input_html_sha256": "2ecf0009c58cba4cdcdc9bf3175c589c7b295e8ab543c5021014ddf22b164b2d",
+    "change_history_addendum_note": "D016 through D023 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -126,7 +126,7 @@
       "script_sha256": "9cf43b45b464629900ee722722331ee4bfe1b9831f99121408dcbc104b029621"
     },
     "reading_rooms": {
-      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618750426",
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5620450573",
       "nodes": [
         {
           "node": "/explore/nodes/change.json",
@@ -135,13 +135,17 @@
         {
           "node": "/explore/nodes/aperture.json",
           "node_sha256": "386752a224103b90679179515cf41231fe754e69c93cad4ed5933769dd241855"
+        },
+        {
+          "node": "/explore/nodes/significance.json",
+          "node_sha256": "664d2790f264f58c31f7ec1146a1a1be2f3ce24949760d63f16d45ae93f66c94"
         }
       ],
       "graph": "/explore/questions.json",
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
-      "scope": "Change and Aperture static transition proof only. Existing accounts and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable."
+      "scope": "Change, Aperture and Significance presentation only. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "75682a1bb30a4562d06889d2c41a9a49301f6bb9c795b0801e97f4c797e9fd67",
+    "change_history_html_sha256": "15d6cf2d45b6acab28a581ac09817b654691719ba1e7a7fb3b3d58f059181b19",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

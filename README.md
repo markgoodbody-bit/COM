@@ -1,5 +1,25 @@
 # Campfire Door public preview
 
+## Significance standing, 10 September 2026
+
+Maintained `d7d3920e4960cde2eb8efde3a7b23a1c2a64d735` matches tested PR161
+head `7cf7c9cf2ec7fe16eae834bdeeb62ed33f47665e`. Significance is the third
+enabled reading room. Its exact candidate-interpretation/not-a-TRACE-definition
+kind is visible below its title; full account, challenge and sources survive.
+The source kind drives the extra paragraph within the explicit allowlist.
+
+Five of155 outputs differ from `859cf9f3dba154ec99b9e2ded9ed75eeaeb849b6`:
+Significance HTML, map, manifest, changes.md and changes.html. Other150 unchanged,
+including the two earlier rooms, D022 machine surfaces, homepage, art and script.
+Build29 Node/16 Python checks pass. Actual local desktop/phone journey, direct
+arrival, keyboard disclosures, map, stop and onward route checked. Both screenshot
+attempts failed; no pixel-level visual, perceptual-continuity or reader-benefit
+claim. Details in SIGNIFICANCE_REVIEW_20260910.md at maintained source.
+
+D023 preserves prior history. Public-origin readback is not claimed; separate
+Pages/Git identity receipt follows in COM108. Roll back with a normal revert,
+preserving later unrelated work. No further room conversion is included.
+
 ## Concise machine index and first arrival, 10 September 2026
 
 Maintained `28702ed9a4f1bef55431722af61ef8ba5194e1cd` matches tested PR158
