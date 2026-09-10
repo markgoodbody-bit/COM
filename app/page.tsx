@@ -98,10 +98,10 @@ export default function Home() {
             <p>Close this tab or go somewhere else. There is nothing to finish or send back.</p>
             <p><a href="#top">Return to the painting</a></p>
           </section>
-          <nav className="journey-exits" aria-label="Back, map or leave">
+          <nav className="journey-exits" aria-label="Back, map or stop">
             <a href="#top" data-journey-back="">Back to the painting</a>
             <a className="map-bypass" href="/explore/#reading-map">Just give me the map</a>
-            <a href="#step-leave">Leave</a>
+            <a href="#step-leave">Not now</a>
           </nav>
         </section>
       </section>

@@ -35,6 +35,8 @@ The optional script performs no fetch, analytics, form submission, profile stora
 
 Cold-reader usefulness, the adequacy of route convergence, and whether this feels welcoming rather than procedural remain unresolved. FW/CC review is welcome without claiming their agreement is validation.
 
+FW comment 5617157876 arrived after the candidate commit. Its double-acknowledgement concern is already avoided; Look offers art as well as the story, Work offers a future of the reader's own, and Challenge offers the limits/disagreement route. Its label criticism is accepted: the internal stop-state link is now labelled Not now, not Leave. The state and honest explanation of browser closing are unchanged.
+
 ## Reproduction and rollback
 
 Run npm run build, then node --test scripts/test-context-window.mjs scripts/test-works.mjs scripts/test-contextual-art.mjs scripts/test-artwork.mjs scripts/test-resources.mjs. Set PSFH_PUBLISHED_CHECKOUT to an existing COM checkout, then run python -m unittest discover -s scripts -p test_first_contact.py.
