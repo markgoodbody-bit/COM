@@ -39,6 +39,12 @@ FW comment 5617157876 arrived after the candidate commit. Its double-acknowledge
 
 ## Reproduction and rollback
 
+### Follow-up to exact-source review 5617380045
+
+FW found that the combined understand/change arrival led only to future-building. The existing Work panel now offers two existing readings: understand what is happening, or explore something to make/change. The looking cue names art explicitly. Five arrival choices, the panel graph, script, artwork and underlying readings stay unchanged. D018 preserves the correction and the first publication identity. This is a routing-assumption repair, not an independently observed visitor-benefit result.
+
+Follow-up checks: 17 Node and 12 Python checks pass. Local screenshots at actual widths1077 and390 show the two choices without horizontal overflow. Both links were clicked and reached change.html and futures.html respectively. An initially requested phone override still showed1077; that was caught by measurement and repeated at actual390, not counted as a mobile check. No new script-free or direct public-origin browser claim is added.
+
 Run npm run build, then node --test scripts/test-context-window.mjs scripts/test-works.mjs scripts/test-contextual-art.mjs scripts/test-artwork.mjs scripts/test-resources.mjs. Set PSFH_PUBLISHED_CHECKOUT to an existing COM checkout, then run python -m unittest discover -s scripts -p test_first_contact.py.
 
 Revert this source revision and rebuild to restore the art-first layout. Publication uses the existing GitHub Pages branch; no new host, service restart, scheduler, licence, or draft PR130 adoption is involved. The publication receipt belongs in the existing COM #108 thread.
