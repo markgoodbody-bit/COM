@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D022
+
+10 September 2026 — A shorter machine index, and room to arrive without a task.
+
+The machine entrance now makes clear that arrival does not require inventing a purpose. One question, source, example or challenge can be a complete use; continuing, using another method and stopping remain possible. Its routes, value choice and limits are unchanged. This first-arrival wording is not an instruction to continue and does not create permission or certify understanding.
+
+The two machine-readable indexes now put their existing summaries first. The root index replaces its repeated six-question section with one link to the existing human questions at #small-loop. That destination retains the six operations and their meaning in human-facing wording, not a byte-identical copy of the removed text. The root file is 875 bytes smaller; this is a size result, not evidence of better use. The ten-node question index is a different resource. The older conversational greetings in the indexes remain unchanged; they are not silently harmonised with the machine entrance.
+
+These are separate source changes from Framework PR156 and PR157, integrated with both source checks intact. The optional HTML source views describe their revised editions. The human homepage, two reading rooms, graph, artwork, scripts and crawler policy are unchanged. Previous publication 7e6ea75c8040feb891dd725a5acad6bcaef9eb82 remains in Git history. No receiver-benefit or improved continuation result is claimed.
+
 ### D021
 
 10 September 2026 — One room can lead to another.
