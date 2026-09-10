@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { renderChangeRoom } from './change-room.mjs';
+import { renderReadingRoom, ENABLED_ROOMS } from './change-room.mjs';
+import { assertRevisionDate } from './site-edition.mjs';
 
 const node = JSON.parse(await readFile('public/explore/nodes/change.json'));
 const index = JSON.parse(await readFile('public/explore/questions.json'));
@@ -33,22 +34,22 @@ test('optional directions use original edges and exact target questions', async 
 
 test('missing challenge, disagreeing graph, and missing or unsafe targets fail closed', () => {
   for (const key of ['detail','perspective','challenge','boundary']) {
-    assert.throws(()=>renderChangeRoom({...node,[key]:''},index,targets),/Missing Change field/);
+    assert.throws(()=>renderReadingRoom({...node,[key]:''},index,targets),/Missing reading field/);
   }
   const wrongIndex = structuredClone(index);
   wrongIndex.nodes.find(n=>n.id==='change').next[0].target = 'care';
-  assert.throws(()=>renderChangeRoom(node,wrongIndex,targets),/Graph edges disagree/);
-  assert.throws(()=>renderChangeRoom(node,index,{}),/Missing edge target/);
-  assert.throws(()=>renderChangeRoom({...node,id:'care'},index,targets),/Only the Change/);
+  assert.throws(()=>renderReadingRoom(node,wrongIndex,targets),/Graph edges disagree/);
+  assert.throws(()=>renderReadingRoom(node,index,{}),/Missing edge target/);
+  assert.throws(()=>renderReadingRoom({...node,id:'care'},index,targets),/Only Change and Aperture/);
   const unsafe = structuredClone(node), unsafeIndex = structuredClone(index);
   unsafe.next[0].path = '../aperture.json';
   unsafeIndex.nodes.find(n=>n.id==='change').next[0].path = 'nodes/../aperture.json';
-  assert.throws(()=>renderChangeRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
+  assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only Change and its delivery/history records differ from the immediate published parent', async () => {
-  const revision = '1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9';
-  const changed = new Set(['explore/nodes/change.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only two rooms and delivery/history records differ from the immediate published parent', async () => {
+  const revision = 'cc13e294813446f64e130f27348c2fa4ee87d888';
+  const changed = new Set(['explore/nodes/change.html','explore/nodes/aperture.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -62,4 +63,47 @@ test('only Change and its delivery/history records differ from the immediate pub
     assert.equal(item.bytes,bytes.length,item.path);
     assert.equal(item.sha256,createHash('sha256').update(bytes).digest('hex'),item.path);
   }
+});
+
+test('both rooms preserve their own fields and raw routes without invented history', async () => {
+  assert.deepEqual(ENABLED_ROOMS,['change','aperture']);
+  for (const id of ENABLED_ROOMS) {
+    const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
+    const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
+    const old = await readFile('public/explore/nodes/'+id+'.html','utf8');
+    for (const [,p] of old.matchAll(/<p>(.*?)<\/p>/g)) assert.ok(html.includes(p),id+': '+p);
+    for (const [,url] of old.matchAll(/href="(https:[^"]+)"/g)) assert.ok(html.includes('href="'+url+'"'),url);
+    const visible = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
+    for (const key of ['short','question','perspective','challenge','status']) assert.ok(visible.includes(escape(record[key])),id+': '+key);
+    for (const key of ['detail','kind','boundary']) assert.ok(html.includes(escape(record[key])),id+': '+key);
+    for (const ext of ['md','json']) assert.ok(visible.includes('href="'+id+'.'+ext+'"'));
+    for (const route of ['/','/explore/#reading-map','/#step-leave']) assert.ok(visible.includes('href="'+route+'"'));
+    assert.doesNotMatch(html,/>Back\b|<script\b|<img\b|<form\b/);
+    if (id === 'aperture') assert.doesNotMatch(html,/href="(?:change.html|\/#step-understand)"/);
+    for (const edge of record.next) {
+      const target = JSON.parse(await readFile('public/explore/nodes/'+edge.path));
+      assert.ok(html.includes('href="'+edge.path.replace('.json','.html')+'"'));
+      assert.ok(html.includes('>'+escape(target.question)+'</a>'));
+    }
+  }
+});
+
+test('authored edge count is variable and unapproved nodes remain disabled', () => {
+  for (const count of [0,1,2,4]) {
+    const varied = structuredClone(node), variedIndex = structuredClone(index);
+    varied.next = Array.from({length:count},(_,i)=>node.next[i % node.next.length]);
+    variedIndex.nodes.find(n=>n.id==='change').next = varied.next.map(e=>({...e,path:'nodes/'+e.path}));
+    const html = renderReadingRoom(varied,variedIndex,targets);
+    assert.equal((html.match(/data-relation=/g)||[]).length,count);
+  }
+});
+
+test('manifest date follows deliberate history, not build time or linked-source dates', async () => {
+  const manifest = JSON.parse(await readFile('out/manifest.json'));
+  const history = await readFile('public/changes.md','utf8');
+  assert.equal(manifest.updated,'2026-09-10');
+  assertRevisionDate(manifest,history);
+  assert.throws(()=>assertRevisionDate({...manifest,updated:'2026-09-08'},history),/Manifest updated/);
+  assert.throws(()=>assertRevisionDate(manifest,'no declared revision'),/date missing/);
+  assertRevisionDate({updated:'2025-01-02'},'### D001\n\n2 January 2025 — A deliberate change.');
 });

@@ -4,9 +4,9 @@ import { readFile, readdir } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 
-test('only named navigation, Change presentation and history outputs differ from the art-first edition', async () => {
+test('only named navigation, two-room presentation and history outputs differ from the art-first edition', async () => {
   const revision = '7135b629b4180ad07a500e41647d203c07f80879';
-  const changed = new Set(['index.html','style.css','llms.txt','manifest.json','read/orientation.html','changes.md','changes.html','explore/nodes/change.html','explore/map.json']);
+  const changed = new Set(['index.html','style.css','llms.txt','manifest.json','read/orientation.html','changes.md','changes.html','explore/nodes/change.html','explore/nodes/aperture.html','explore/map.json']);
   const names = (await readdir('out', {recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=> (e.parentPath + '/' + e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(names.length, 155);
   let retained = 0;
@@ -17,7 +17,7 @@ test('only named navigation, Change presentation and history outputs differ from
     if (changed.has(name)) assert.notDeepEqual(after,before,name);
     else { assert.deepEqual(after,before,name); retained++; }
   }
-  assert.equal(retained,145);
+  assert.equal(retained,144);
 });
 
 test('explicit nine-state graph has five arrival cues, source-labelled encounters and no intake', async () => {
@@ -55,10 +55,10 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 through D020 are paired in both formats and earlier history remains exact', async () => {
+test('D017 through D021 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
-  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019']]) {
+  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020']]) {
     const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
     const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
     const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');

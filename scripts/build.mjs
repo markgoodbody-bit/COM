@@ -7,14 +7,15 @@ import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { copyResources } from './resources.mjs';
 import { writeViews, VIEWS } from './source-views.mjs';
-import { SITE_EDITION } from './site-edition.mjs';
+import { SITE_EDITION, assertRevisionDate } from './site-edition.mjs';
 import { applyHouseStyle } from './house-style.mjs';
 import { copyCampFire, CAMP_FIRE } from './camp-fire.mjs';
 import { copyWorks, verifyWorks, WORKS } from './works.mjs';
 import { applyContextualArt } from './contextual-art.mjs';
-import { writeChangeRoom } from './change-room.mjs';
+import { writeReadingRooms } from './change-room.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
+assertRevisionDate(JSON.parse(await readFile(path.join(root, 'public/manifest.json'))), await readFile(path.join(root, 'public/changes.md'), 'utf8'));
 await verifyWorks(path.join(root, 'public'));
 // Discussion is an accepted editorial source, not a submission or live inbox.
 const discussionPins = JSON.parse(await readFile(path.join(root, 'public/manifest.json'), 'utf8')).provenance.discussion;
@@ -122,7 +123,7 @@ const offlineHtml = previewHtml.replace(/<link\b(?=[^>]*rel="preload")(?=[^>]*as
 await writeFile(path.join(root, 'downloads/Campfire-preview.html'), offlineHtml.replace('<link rel="stylesheet" href="./style.css">', '<style>' + css + '</style>'));
 await writeFile(path.join(root, 'out/404.html'), '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Please Start From Here</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="/style.css"></head><body><header class="masthead"><a href="/">Please Start From Here</a></header><main><section class="intro"><h1>Page not found</h1><p>There is no page at this address.</p><p><a href="/">Return to the introduction</a> or <a href="/explore/">explore the readings</a>.</p></section></main></body></html>\n');
 await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));
-await writeChangeRoom(path.join(root, 'public'), path.join(root, 'out'));
+await writeReadingRooms(path.join(root, 'public'), path.join(root, 'out'));
 await applyHouseStyle(path.join(root, 'out'));
 // These dedicated pages retain their reviewed, medium-specific styles.
 await copyWorks(path.join(root, 'public'), path.join(root, 'out'));

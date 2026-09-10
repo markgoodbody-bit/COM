@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D021
+
+10 September 2026 — One room can lead to another.
+
+Partial views now uses the same question-first presentation as Change, derived from its own unchanged source and graph edges. Its own perspective, challenge, full account, standing and sources remain available. Only these two readings use this presentation. Ordinary page links remain; no new artwork, JavaScript or transition effect is added. The static Change link is now labelled Understand route, not Back to Understand: it cannot know how someone arrived.
+
+The manifest updated date now means the latest deliberate material site/manifest revision. It is checked against the newest dated change-history entry, not reset on each build or inferred from linked projects. This corrects the stale 8 September date without claiming continuous freshness. Both changes follow Framework reviews 5618750426, 5618879267 and 5619129158 in COM issue 108. Repeated questions may provide orientation or may feel like delay; the two-room experiment does not establish usefulness or authorize a ten-page rollout. Public cc13e294813446f64e130f27348c2fa4ee87d888 remains the preceding edition in Git history.
+
 ### D020
 
 10 September 2026 — One existing reading, question first.
