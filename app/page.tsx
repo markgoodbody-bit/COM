@@ -47,10 +47,10 @@ export default function Home() {
           <section data-step="look" id="step-look">
             <p className="eyebrow">Take a look</p>
             <h2 tabIndex={-1}>Start with something small.</h2>
-            <p>A short story shows the kind of difference this project asks about: the distance between what a record says and what someone can actually reach.</p>
+            <p>Choose a small encounter: spend some time with the art, or read a short story about the distance between what a record says and what someone can actually reach.</p>
             <div className="journey-options">
-              <a href="#step-story">Read the story</a>
               <a href="/works/">Spend some time with the art</a>
+              <a href="#step-story">Read the story</a>
             </div>
           </section>
           <section data-step="work" id="step-work">
@@ -58,8 +58,26 @@ export default function Home() {
             <h2 tabIndex={-1}>Where would you like to begin?</h2>
             <p>Start with what is happening, or with something you want to make possible. You can move between the two.</p>
             <div className="journey-options">
-              <a href="/explore/nodes/change.html">Understand what is happening</a>
-              <a href="/explore/nodes/futures.html">Explore something I want to make or change</a>
+              <a href="#step-understand">Understand what is happening</a>
+              <a href="#step-make">Explore something I want to make or change</a>
+            </div>
+          </section>
+          <section data-step="understand" id="step-understand">
+            <p className="eyebrow">Understand what is happening</p>
+            <h2 tabIndex={-1}>A description can remain still while the situation changes.</h2>
+            <p>What changed in the situation, rather than only in its description?</p>
+            <div className="journey-options">
+              <a href="/explore/nodes/change.html">Go deeper</a>
+              <a href="#step-story">See the question in one small story</a>
+            </div>
+          </section>
+          <section data-step="make" id="step-make">
+            <p className="eyebrow">Make or change something</p>
+            <h2 tabIndex={-1}>An option written down is not necessarily an option someone can use.</h2>
+            <p>Which path is reachable, for whom, under which conditions?</p>
+            <div className="journey-options">
+              <a href="/explore/nodes/futures.html">Go deeper</a>
+              <a href="#step-story">See the question in one small story</a>
             </div>
           </section>
           <section data-step="challenge" id="step-challenge">

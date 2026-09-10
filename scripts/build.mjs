@@ -62,6 +62,7 @@ for (const name of machineFiles) {
     manifest.provenance.html_source_text = VIEWS;
     manifest.routes.artwork = '/art/camp-fire.json';
     manifest.routes.optional_human_art = '/works/';
+    manifest.routes.navigation_enhancement = '/journey.js';
     manifest.provenance.optional_human_art = {
       source_review: WORKS.source_review,
       optional: true,
@@ -75,6 +76,8 @@ for (const name of machineFiles) {
       date: '2026-09-10',
       scope: 'Optional first-five-minutes navigation. Native links and CSS work without JavaScript; the enhancement adds focus management and Back. No answer submission, account, tracking or profile. Browser history retains page positions. Reader benefit is not measured.',
       script_sha256: createHash('sha256').update(journeyBytes).digest('hex'),
+      optional: true,
+      fallback: 'Page content and fragment routes remain available without this enhancement.',
     };
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }

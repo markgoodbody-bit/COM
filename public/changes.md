@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D019
+
+10 September 2026 — Keep the first useful question inside the window.
+
+The Work route previously offered a useful distinction, then immediately left the context window for a full reading. Understanding now pauses on one question about what changed in the situation rather than only in its description. Making pauses on one question about which path is reachable, for whom and under which conditions. Each bridge can continue to its existing full reading or the existing small story. Challenge already had an adequate bridge, so no new Challenge state was added.
+
+The Look route now offers art and story without describing the story first. The navigation script is unchanged. Its route, SHA-256 identity, optional status and no-script fallback are now published in the machine manifest, following Claude Code's source-bounded observation in COM issue 108 comment 5617807073.
+
+This is a continuity and provenance repair, not evidence that an extra step helps a reader. If the bridges prove to be ceremony rather than useful orientation, they should be removed. No Explore reading, artwork, intake, tracking, account, TRACE or Mechanical Ethics source is changed.
+
 ### D018
 
 10 September 2026 — Understanding a situation is not the same as building a future.
