@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D027
+
+10 September 2026 — The painting and the reading remain different encounters.
+
+Reachable futures now combines its existing Shen Zhou artwork entrance with the shared question-first reading layout. The whole painting remains first, with the same viewing copies, credit, rights, Works link and statement that its placement is our choice. Go straight to the reading still bypasses the art. Skip to the question has a different destination within the reading.
+
+The original account, perspective, challenge, working-synthesis status, both source pointers and raw Markdown and JSON remain intact. The onward questions still lead to Power, Time and hardening, and Correction. No new artwork, source wording or graph edge is added.
+
+The build now renders readings before applying the art wrapper, retaining body attributes rather than overwriting them. Before enabling Futures, this change produced exactly the same 155 published output files. The other nine reading pages, Explore artwork, homepage, machine surfaces and scripts remain unchanged in this revision. This follows Framework comment 5622519905 in COM issue 108; composition is not evidence of curatorial meaning, reader benefit or sound conclusions. Previous publication 37e3a92dbe361811dfeae45507f53d5125db9194 remains in Git history.
+
 ### D026
 
 10 September 2026 — Four connected readings now share the same layout.

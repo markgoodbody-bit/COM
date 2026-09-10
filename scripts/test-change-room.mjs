@@ -40,16 +40,16 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   wrongIndex.nodes.find(n=>n.id==='change').next[0].target = 'care';
   assert.throws(()=>renderReadingRoom(node,wrongIndex,targets),/Graph edges disagree/);
   assert.throws(()=>renderReadingRoom(node,index,{}),/Missing edge target/);
-  assert.throws(()=>renderReadingRoom({...node,id:'futures'},index,targets),/Only Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction/);
+  assert.throws(()=>renderReadingRoom({...node,id:'unknown'},index,targets),/Unknown reading room/);
   const unsafe = structuredClone(node), unsafeIndex = structuredClone(index);
   unsafe.next[0].path = '../aperture.json';
   unsafeIndex.nodes.find(n=>n.id==='change').next[0].path = 'nodes/../aperture.json';
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only four generic rooms and delivery/history outputs differ from the D025 public parent', async () => {
-  const revision = '1c49073873e3a6664d82d9b80146e28dc229a5e8';
-  const changed = new Set(['explore/nodes/selection.html','explore/nodes/power.html','explore/nodes/hardening.html','explore/nodes/correction.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only Futures and delivery/history outputs differ from the D026 public parent', async () => {
+  const revision = '37e3a92dbe361811dfeae45507f53d5125db9194';
+  const changed = new Set(['explore/nodes/futures.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -65,8 +65,8 @@ test('only four generic rooms and delivery/history outputs differ from the D025 
   }
 });
 
-test('all nine enabled rooms preserve their own fields, sources, routes and authored questions', async () => {
-  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance','care','wisdom','selection','power','hardening','correction']);
+test('all ten enabled rooms preserve their own fields, sources, routes and authored questions', async () => {
+  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance','care','wisdom','selection','power','hardening','correction','futures']);
   for (const id of ENABLED_ROOMS) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
@@ -79,7 +79,11 @@ test('all nine enabled rooms preserve their own fields, sources, routes and auth
     for (const key of ['detail','kind','boundary']) assert.ok(html.includes(escape(record[key])),id+': '+key);
     for (const ext of ['md','json']) assert.ok(visible.includes('href="'+id+'.'+ext+'"'),id+': '+ext);
     for (const route of ['/','/explore/#reading-map','/#step-leave']) assert.ok(visible.includes('href="'+route+'"'),id+': '+route);
-    assert.doesNotMatch(html,/>Back\b|<script\b|<img\b|<form\b/);
+    assert.doesNotMatch(html,/<script\b|<form\b/);
+    // The existing art entrance has an image and a static opening link; the
+    // reading itself must not invent history or duplicate that artwork.
+    const reading = id === 'futures' ? html.match(/<article\b[\s\S]*?<\/article>/)[0] : html;
+    assert.doesNotMatch(reading,/>Back\b|<img\b/);
     if (id === 'aperture') assert.doesNotMatch(html,/href="(?:change.html|\/#step-understand)"/);
     for (const edge of record.next) {
       const target = JSON.parse(await readFile('public/explore/nodes/'+edge.path));
@@ -90,7 +94,7 @@ test('all nine enabled rooms preserve their own fields, sources, routes and auth
 });
 
 test('generic working syntheses remain deliberately unmarked while source kind remains in full account', async () => {
-  const generic = ['change','aperture','selection','power','hardening','correction'];
+  const generic = ['change','aperture','selection','power','hardening','correction','futures'];
   for (const id of generic) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     assert.equal(record.kind,'working synthesis',id);
@@ -117,8 +121,8 @@ for (const id of ['significance','care','wisdom']) test(id + ' standing is visib
   assert.ok(renderReadingRoom({...node,kind:'candidate <interpretation>'},index,targets).includes('candidate &lt;interpretation&gt;'));
 });
 
-test('generic batch preserves authored provenance counts and real Futures edges without enabling Futures', async () => {
-  const expectedSources = {selection:1,power:2,hardening:2,correction:2};
+test('generic rooms preserve authored provenance counts and real Futures edges', async () => {
+  const expectedSources = {selection:1,power:2,hardening:2,correction:2,futures:2};
   for (const [id,count] of Object.entries(expectedSources)) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
@@ -130,10 +134,10 @@ test('generic batch preserves authored provenance counts and real Futures edges 
       assert.ok(html.includes('>'+escape(futures.question)+'</a>'),id);
     }
   }
-  assert.ok(!ENABLED_ROOMS.includes('futures'));
+  assert.ok(ENABLED_ROOMS.includes('futures'));
 });
 
-test('authored edge count is variable and Futures remains disabled in this proof', () => {
+test('authored edge count remains variable', () => {
   for (const count of [0,1,2,4]) {
     const varied = structuredClone(node), variedIndex = structuredClone(index);
     varied.next = Array.from({length:count},(_,i)=>node.next[i % node.next.length]);
