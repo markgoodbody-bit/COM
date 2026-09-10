@@ -1,5 +1,28 @@
 # Campfire Door public preview
 
+## Change: one existing graph-backed room, 10 September 2026
+
+Maintained `18736b685a5fa7339ed2c7e8205c85dd141b6159` matches tested PR150
+head `f47be52d22223643e858a32636cb9dc521d37ff1`. Change alone now leads with
+its existing account/question and leaves Another position and Challenge visible.
+Native disclosure exposes the remaining account; raw Markdown/JSON bypass it.
+The three optional links are the exact questions from their existing destination
+nodes. No graph rewrite, new art, JS, machine-arrival or other reading conversion.
+
+Five generated paths change from1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9:
+explore/nodes/change.html, explore/map.json, manifest.json, changes.md and
+changes.html. The other150 of155 files are byte-identical. D020 is paired/pinned;
+the delivery map has fresh hashes. Original reading sources stay unchanged.
+Build,22 selected Node/12 Python checks pass, with local desktop/narrow-phone
+screenshots, keyboard disclosure and graph/return/map/stop checks. Direct source
+links returned HTTP200 but were not rendered as source views by this browser;
+no such browser claim or direct public-origin verification is made.
+
+Full evidence and failed attempts: CHANGE_ROOM_REVIEW_20260910.md. This is a
+reversible presentation experiment, not reader-benefit evidence or approval
+to scale across ten nodes. Revert this publication normally for rollback,
+preserving later unrelated work. Exact Pages/Git parity receipt is in COM108.
+
 ## Navigation-script route, 10 September 2026
 
 Maintained `a075e5761a23298840dbf09c93ae0bd24ee11b42` matches tested PR147

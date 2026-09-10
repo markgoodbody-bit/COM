@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D020
+
+10 September 2026 — One existing reading, question first.
+
+The Change page now presents its existing question first, keeps Another position and Challenge visible, and offers the same three graph directions as their destination questions. Read the full account reveals the remaining detail and status; Complete text and JSON source bypass that control. Source links, Map, Opening and Not now remain available. No other reading page is converted, and no artwork or JavaScript is added.
+
+The page is derived from the existing Change node and question graph, not a second set of meanings or routes. Raw reading sources are unchanged. Delivery hashes are recomputed for the rendered page. This follows Framework review 5618521193 in COM issue 108. It is a reversible presentation experiment, not evidence that the room is more useful than the previous plain document. Public 1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9 remains the preceding edition in Git history.
+
 ### D019
 
 10 September 2026 — One small encounter before the complete reading.
