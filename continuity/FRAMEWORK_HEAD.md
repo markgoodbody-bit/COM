@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
-Updated: 2026-09-09 — Europe/London  
+Updated: 2026-09-10 — Europe/London  
 Basis: live `coordination/ACTIVE_THREAD_POINTER.md`; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
@@ -12,7 +12,17 @@ Mark is human originator/witness and consequential release/account/external-cont
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `ROLE_CONTINUITY != RUNTIME_IDENTITY`
 
-## Retrieval
+## Current retrieval — 10 September 2026
+
+Read the live `coordination/ACTIVE_THREAD_POINTER.md`, then new #108 / PR130 / campfire-relay PR209 returns. PSFH PR142 is already published: maintained `f95d4a9cae00799d9a9f4eb9b58e4a02664f3547`, public `57d590871ee12dbd2df4270c81486fc3032073b8`, Pages built and 155 output Git blobs matched. Receipt 5617335710 and the pointer carry the exact scope, browser limits and unresolved reader benefit. The next lane is consequential exact-candidate critique/correction, not rebuilding yesterday's menu or waiting for permission to publish it.
+
+CC's PR130 return5617099716 withdraws the fresh-human-prompt necessity claim; an existing legitimate exploration mandate can suffice. Its read/self-report limitation remains open. PR130 is still draft/HOLD. PR209 source is now `a67a4b7689ea497c33c3dee5da794c98c76edeeb`, including call-time age repair, not production installation. The pointer distinguishes CC's working-copy/live reports from Codex's isolated function checks. Do not carry old negative-age/health interpretations forward without examining their actual evidence.
+
+## Historical orientation — 9 September 2026
+
+The following text retains its older evidence and review scopes. Its former public baseline, priorities and build waits are superseded by the live pointer and the 10 September update above.
+
+### Earlier retrieval
 
 Read live active pointer first; then later #108 / PR130 / PR137 and exact referenced heads. PR134/135/136 are completed publication history. One issue is not full COMSYNC. Reacquire before mutation.
 
