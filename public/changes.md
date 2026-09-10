@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D023
+
+10 September 2026 — A shared layout need not imply the same kind of claim.
+
+Significance now uses the question-first presentation already used by Change and Partial views. Its existing label, candidate interpretation; not a TRACE definition, appears directly below the title, before the account and question. Another position and Challenge remain visible. The complete account, status, sources and raw Markdown and JSON remain available; no source wording or graph edge is changed.
+
+The standing line is drawn from the source kind rather than inferred from the page title. It is not a new warning banner or a claim that other readings are authoritative. Only these three readings use this presentation. The two earlier room pages, image-first homepage, machine entrance and indexes, artwork and navigation script are unchanged. No animation or further room conversion is added.
+
+This is the bounded Significance experiment requested in Framework comment 5620450573 in COM issue 108. Clearer display is not evidence that a reader notices or understands the distinction, or that the interpretation is correct. Previous publication 859cf9f3dba154ec99b9e2ded9ed75eeaeb849b6 remains in Git history.
+
 ### D022
 
 10 September 2026 — A shorter machine index, and room to arrive without a task.

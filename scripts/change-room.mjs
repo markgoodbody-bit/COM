@@ -6,11 +6,11 @@ const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const localHtml = route => route.replace(/\.(?:json|md)$/, '.html');
 
-export const ENABLED_ROOMS = Object.freeze(['change', 'aperture']);
+export const ENABLED_ROOMS = Object.freeze(['change', 'aperture', 'significance']);
 
-// Two existing nodes, not a second graph or a ten-node rollout.
+// Three existing nodes, not a second graph or a ten-node rollout.
 export function renderReadingRoom(node, index, targets) {
-  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change and Aperture are enabled');
+  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change, Aperture and Significance are enabled');
   for (const key of ['title','short','detail','perspective','challenge','question','kind','status','boundary']) {
     if (typeof node[key] !== 'string' || !node[key].trim()) throw Error('Missing reading field: ' + key);
   }
@@ -31,11 +31,14 @@ export function renderReadingRoom(node, index, targets) {
     if (!source || !source.url.startsWith('https://github.com/')) throw Error('Missing source pointer');
     return `<li><a href="${escape(source.url)}">${escape(source.label)}</a></li>`;
   }).join('\n');
+  // Keep non-generic standing visible before the account, using the source field.
+  // This does not confer authority on a generic working synthesis.
+  const standing = node.kind === 'working synthesis' ? '' : `<p data-reading-kind><strong>${escape(node.kind)}</strong></p>`;
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(node.title)} · Please Start From Here</title><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/markdown" href="${node.id}.md"><link rel="alternate" type="application/json" href="${node.id}.json"><link rel="describedby" href="../llms.txt"></head>
 <body style="max-width:none;padding:0"><a class="skip" href="#question">Skip to the question</a>
 <main><article class="context-window" aria-labelledby="room-title">
-<header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1><p>${escape(node.short)}</p></header>
+<header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1>${standing}<p>${escape(node.short)}</p></header>
 <h2 id="question" tabindex="-1">${escape(node.question)}</h2>
 <div aria-label="Another position and challenge">
 <h3>Another position</h3><p>${escape(node.perspective)}</p>
@@ -67,15 +70,15 @@ export async function writeReadingRooms(sourceRoot, outputRoot) {
     }
     rooms.push({ id, node_sha256: sha(nodeBytes), html: renderReadingRoom(node, index, targets) });
   }
-  // Validate both before writing either rendered room.
+  // Validate every enabled record before writing any rendered room.
   for (const room of rooms) await writeFile(path.join(outputRoot, 'explore/nodes', room.id + '.html'), room.html);
   const manifestPath = path.join(outputRoot, 'manifest.json');
   const manifest = JSON.parse(await readFile(manifestPath));
   manifest.provenance.reading_rooms = {
-    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618750426',
+    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5620450573',
     nodes: rooms.map(room => ({ node: '/explore/nodes/' + room.id + '.json', node_sha256: room.node_sha256 })),
     graph: '/explore/questions.json', graph_sha256: sha(indexBytes),
-    scope: 'Change and Aperture static transition proof only. Existing accounts and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable.',
+    scope: 'Change, Aperture and Significance presentation only. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics or measured reader benefit. Raw sources remain directly reachable.',
   };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 }
