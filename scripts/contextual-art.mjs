@@ -29,7 +29,7 @@ export function addArtRoom(html, room, record, images) {
   const entrance = `<a class="skip" href="#${room.anchor}">${room.bypass}</a><section class="art-room art-room-${room.key}" aria-label="${escape(room.title)} entrance"><div class="room-stage">${figure}</div><nav class="room-nav" aria-label="Bypass the artwork"><a href="#${room.anchor}">${room.bypass}</a><a href="/">Back to the opening</a></nav><div class="room-heading"><p>${escape(room.title)}</p><a href="#${room.anchor}">${room.key === 'atkins' ? 'Choose a reading' : 'Read the small account'} <span aria-hidden="true">↓</span></a></div><div class="room-credit"><p>${escape(record.institution)}. ${escape(record.credit)}. ${escape(record.rights)}. <a href="/works/${room.work}/">About the work, sources and viewing copies</a>.</p><p>This placement is our choice, not the artist's argument or an endorsement of this project. <a href="${mapAnchor}">Skip to the map</a>.</p></div></section>`;
   let result = html.replace(body, wrappedBody + entrance)
     .replace(main, main.replace(/>$/, ' id="reading">'));
-  if (room.key === 'atkins') result = result.replace('<nav aria-label="Optional routes">', '<nav id="reading-map" aria-label="Optional routes">');
+  if (room.key === 'atkins') result = result.replace('<nav aria-label="Optional routes"', '<nav id="reading-map" aria-label="Optional routes"');
   return result;
 }
 

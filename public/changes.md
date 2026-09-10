@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D028
+
+10 September 2026 — The map now opens with questions rather than a mixed catalogue.
+
+Ten existing questions are the main doors, with their topic names as smaller labels. Each has an optional From here disclosure showing the three connections already chosen in its source. There is no required order, ranking or preferred route. The eight other catalogue links remain available together under Other routes.
+
+The questions and connections come from the existing machine index and node records; they are not a second graph. The Atkins artwork remains first on a normal Explore visit, with the same image, credit, rights, Works link and placement statement. The map shortcut still bypasses it, and keyboard focus can follow that shortcut into the map.
+
+The ten reading pages, homepage, raw sources, machine graph and artwork bytes are unchanged. New styling is limited to the human map. This follows Framework comment 5622746591 and PR173 in COM. A clearer arrangement is not evidence that the questions help a reader or that the authored connections are the right ones. Previous publication 89dbc4dbafb64b8af92edaed203a2a59d6311920 remains in Git history.
+
 ### D027
 
 10 September 2026 — The painting and the reading remain different encounters.

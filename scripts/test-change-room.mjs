@@ -47,9 +47,9 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only Futures and delivery/history outputs differ from the D026 public parent', async () => {
-  const revision = '37e3a92dbe361811dfeae45507f53d5125db9194';
-  const changed = new Set(['explore/nodes/futures.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only human map, scoped stylesheet and provenance/history outputs differ from D027', async () => {
+  const revision = '89dbc4dbafb64b8af92edaed203a2a59d6311920';
+  const changed = new Set(['explore/index.html','explore/map.json','style.css','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -58,6 +58,11 @@ test('only Futures and delivery/history outputs differ from the D026 public pare
     if (changed.has(file)) assert.notDeepEqual(after,before,file); else assert.deepEqual(after,before,file);
   }
   const map = JSON.parse(await readFile('out/explore/map.json'));
+  const beforeMap = JSON.parse(execFileSync('git',['show',revision+':explore/map.json']).toString('utf8'));
+  const withoutDelivery = value => ({...value, resources: value.resources.map(({bytes,sha256,...item}) => item)});
+  assert.deepEqual(withoutDelivery(map),withoutDelivery(beforeMap));
+  const identityChanges = map.resources.filter((item,i)=>JSON.stringify(item)!==JSON.stringify(beforeMap.resources[i]));
+  assert.deepEqual(identityChanges.map(item=>item.path),['index.html']);
   for (const item of map.resources) {
     const bytes = await readFile('out/explore/'+item.path);
     assert.equal(item.bytes,bytes.length,item.path);
