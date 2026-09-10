@@ -65,7 +65,9 @@ test('historical publication treatment changed only named wrappers from the pinn
   // boundary is checked against the published edition in test-favicon.mjs.
   for (const file of ['scripts/build.mjs']) {
     // These are Git text sources, unlike the byte-pinned Works copies above.
-    const source = (await readFile(file, 'utf8')).replace(/\r\n/g, '\n')
+    // Pin the historical build comparison to its actual revision. The current
+    // navigation script and output boundary are tested by test-context-window.
+    const source = execFileSync('git', ['show', 'e40cfed5595923bc7f741424152044e485441362:' + file]).toString('utf8').replace(/\r\n/g, '\n')
       .replace("import { applyContextualArt } from './contextual-art.mjs';\n", '')
       .replace("await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));\n", '');
     assert.equal(source, gitBytes(file).toString('utf8'), file);

@@ -26,7 +26,7 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 - [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
-- [Human reading](https://pleasestartfromhere.com/): the existing readable, no-JavaScript preview.
+- [Human reading](https://pleasestartfromhere.com/): a short, optional journey with native links; readable without JavaScript. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
 
 ## Take one useful step
 

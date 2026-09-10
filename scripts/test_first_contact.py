@@ -92,9 +92,9 @@ class FirstContactTests(unittest.TestCase):
         # The artwork starts at the top edge. Navigation follows; keyboard skip
         # remains before the painting and the optional choices follow it.
         self.assertLess(self.html.index('class="skip"'), self.html.index('<figure'))
-        self.assertLess(self.html.index('<figure'), self.html.index('aria-label="Reading routes"'))
+        self.assertLess(self.html.index('<figure'), self.html.index('class="arrival context-window"'))
         self.assertLess(self.html.index('<figure'), self.html.index('class="first-movements"'))
-        navigation = self.html.split('aria-label="Reading routes"')[1].split('</nav>')[0]
+        navigation = self.html.split('id="full-introduction"')[1]
         for target in ['/explore/', '/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf', '/discussion/']:
             self.assertIn(target, navigation)
         for link in [record['object_url'], record['rights_url'], record['biography_url'], '#winslow-homer', '/art/camp-fire.json']:
@@ -117,12 +117,12 @@ class FirstContactTests(unittest.TestCase):
         before, after = blocks(original), blocks(html)
         # Fixed foyer additions, inspected against the published Works edition. Never
         # regenerate from the page being tested: that would approve any loss.
-        changes = json.loads((ROOT / 'scripts/fixtures/human-arrival-editorial-delta.json').read_text(encoding='utf-8'))
+        changes = json.loads((ROOT / 'scripts/fixtures/context-window-editorial-delta.json').read_text(encoding='utf-8'))
         self.assertEqual(changes['historical_revision'], 'aed75526770de9a7c9a2aa7cef63f1167dad1669')
         self.assertEqual(before - after, Counter(changes['removed']))
         self.assertEqual(after - before, Counter(changes['added']))
         self.assertTrue(set(Reading(original).links).issubset(Reading(html).links))
-        self.assertIn('href="#situation"', html.split('</header>')[0])
+        self.assertIn('href="#situation"', html)
 
     def test_editorial_layout_preserves_unlisted_paragraphs_headings_and_links(self):
         self.assert_editorial_contract(self.html)
@@ -167,10 +167,10 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('.art-hero { min-height: 0; margin-block: 0 2rem; }', css)
         self.assertIn('font-size: clamp(1.125rem, 2.3vw, 2rem)', css)
         self.assertIn('.hero-heading h1 em { color: #ecd3a8;', css)
-        hero = self.html.split('class="art-hero"')[1].split('class="arrival"')[0]
+        hero = self.html.split('class="art-hero"')[1].split('class="arrival context-window"')[0]
         self.assertNotIn('How can we make a better future?', hero)
         self.assertIn('<p class="guiding-question">How can we make a better future?</p>',
-                      self.html.split('class="arrival-heading"')[1])
+                      self.html.split('class="arrival context-window"')[1])
         # Source guards only. The previous scrim contrast proof no longer applies;
         # actual viewport fit, reflow and legibility require browser observation.
 
@@ -214,7 +214,10 @@ class FirstContactTests(unittest.TestCase):
                        'read-only; it does not receive replies yet.',
                        'Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.']:
             self.assertIn(phrase, self.text)
-        self.assertTrue({'script', 'form', 'iframe'}.isdisjoint(self.page.tags))
+        self.assertTrue({'form', 'iframe', 'input', 'textarea'}.isdisjoint(self.page.tags))
+        scripts = re.findall(r'<script\b.*?</script>', self.html, re.S)
+        self.assertEqual(len(scripts), 1)
+        self.assertRegex(scripts[0], r'^<script defer src="/journey.js" integrity="sha256-[A-Za-z0-9+/=]+"></script>$')
         for mime, path in [('text/plain', '/llms.txt'), ('application/json', '/explore/start.json')]:
             self.assertIn((mime, 'https://pleasestartfromhere.com' + path), self.page.alternates)
 

@@ -25,61 +25,96 @@ export default function Home() {
               <h1>Please Start From <em>Here</em></h1>
             </div>
         </div>
-        <header className="masthead">
-          <a className="map-bypass" href="/explore/#reading-map">Just give me the map <span aria-hidden="true">↗</span></a>
-          <details className="reading-menu"><summary>Reading routes</summary>
-            <nav aria-label="Reading routes"><a href="#start">Introduction</a><a href="#situation">Ways to begin</a><a href="/explore/">Explore</a><a href="/works/">Works</a><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Read the book</a><a href="https://pleasestartfromhere.com/discussion/">Discussion</a></nav>
-          </details>
-        </header>
-        <section className="arrival" id="arrival" aria-labelledby="arrival-question">
-          <div className="arrival-heading">
+        </div>
+        <section className="arrival context-window" id="arrival" aria-label="A way in">
+          <section data-step="welcome" id="step-welcome">
             <p className="guiding-question">How can we make a better future?</p>
-            <h2 id="arrival-question">What brought you here?</h2>
-            <p>Pick a way in, or keep looking. There is no sequence to finish.</p>
-            <a href="/explore/#reading-map">Just give me the map</a>
-          </div>
-          <div className="arrival-doors">
-            <details><summary>I&apos;m trying to understand something</summary>
-              <p>A situation, a decision, or something that does not quite add up.</p>
-              <p><a href="/explore/nodes/change.html">Begin with what is changing</a> · <a href="#two-flats-heading">Read one small story</a></p>
-            </details>
-            <details><summary>I want to make something possible</summary>
-              <p>Start with a future you care about, and what would make it reachable.</p>
-              <p><a href="/explore/nodes/futures.html">Explore futures and possibilities</a></p>
-            </details>
-            <details><summary>I want to question this</summary>
-              <p>You can begin with an objection. You do not owe us a repair.</p>
-              <p><a href="/explore/challenge.html">Find the challenge routes</a> · <a href="#why">See what this project claims</a></p>
-            </details>
-            <details><summary>Something else / I don&apos;t know</summary>
-              <p>No need to decide. Wander through the readings, or stop here.</p>
-              <p><a href="/explore/#reading-map">Browse the map</a> · <a href="#reading">Go straight to the books and sources</a></p>
-            </details>
-          </div>
+            <h2 tabIndex={-1}>Would you like to continue?</h2>
+            <p>Take a small look, or go straight to the material.</p>
+            <p className="journey-options"><a className="journey-primary" href="#step-orientation">Continue <span aria-hidden="true">→</span></a></p>
+          </section>
+          <section data-step="orientation" id="step-orientation">
+            <p>We think we may have something worth sharing. It is offered as a gift, with no requirement to agree, use it or continue.</p>
+            <h2 tabIndex={-1}>What brought you here?</h2>
+            <div className="journey-options">
+              <a href="#step-look">Someone sent me this</a>
+              <a href="#step-work">I have something I&apos;m trying to understand or change</a>
+              <a href="#step-look">I am curious / just looking</a>
+              <a href="#step-challenge">I want to challenge or check this</a>
+              <a href="#step-look">I don&apos;t know</a>
+            </div>
+          </section>
+          <section data-step="look" id="step-look">
+            <p className="eyebrow">Take a look</p>
+            <h2 tabIndex={-1}>Start with something small.</h2>
+            <p>A short story shows the kind of difference this project asks about: the distance between what a record says and what someone can actually reach.</p>
+            <div className="journey-options">
+              <a href="#step-story">Read the story</a>
+              <a href="/works/">Spend some time with the art</a>
+            </div>
+          </section>
+          <section data-step="work" id="step-work">
+            <p className="eyebrow">Work with a question</p>
+            <h2 tabIndex={-1}>What could become possible?</h2>
+            <p>Start with the future you have in mind. What would make it reachable, and what could the same choice close for someone else? You do not need to type an answer here.</p>
+            <div className="journey-options">
+              <a href="/explore/nodes/futures.html">Think about a possibility of your own</a>
+              <a href="#step-story">See the question in a small story first</a>
+            </div>
+          </section>
+          <section data-step="challenge" id="step-challenge">
+            <p className="eyebrow">Check the work</p>
+            <h2 tabIndex={-1}>You do not have to agree.</h2>
+            <p>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. A useful objection does not need this project&apos;s vocabulary, or a proposed repair.</p>
+            <div className="journey-options">
+              <a href="#step-story">Inspect one small example</a>
+              <a href="/explore/challenge.html">Read the limits and ways to challenge</a>
+            </div>
+          </section>
+          <article className="concrete-story" data-step="story" id="step-story" aria-labelledby="two-flats-heading">
+            <header>
+              <p className="eyebrow">One small story · Composite scene</p>
+              <h2 id="two-flats-heading" tabIndex={-1}>Two flats, one wall</h2>
+            </header>
+            <div className="story-body">
+              <p className="story-lead">Two flats share a wall. Martin owns upstairs. Leah and Sam rent downstairs with their daughter, Mia. Damp appears behind Mia&apos;s bed and spreads while both households try to reach repair.</p>
+              <p>Upstairs, Martin&apos;s managing-agent route reaches a person with authority. Downstairs, Leah and Sam enter a tenant portal designed to receive many requests; it gives them a reference number while Mia&apos;s room keeps changing.</p>
+              <p>The upstairs wall is repaired. Downstairs, an inspection is offered after Leah and Sam have found another tenancy. They leave before anyone enters the room. The case can close; the consequences do not necessarily close with it.</p>
+              <div className="story-questions" aria-label="Questions from the scene">
+                <p><strong>What had changed by the time an inspection was offered?</strong></p>
+                <p><strong>What could each household actually reach while the same wall was changing?</strong></p>
+              </div>
+              <p className="story-source">This is a compressed introduction to a <strong>composite scene</strong> in Mechanical Ethics, not a documented tenant case. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the source and its fuller context</a>.</p>
+            </div>
+            <p>What, if anything, would you like to do next?</p>
+            <div className="journey-options">
+              <a href="/explore/example/entry.html">Look at another example from different positions</a>
+              <a href="/explore/nodes/futures.html">Bring a possibility of your own</a>
+              <a href="#step-orientation">Choose another way in</a>
+            </div>
+          </article>
+          <section data-step="leave" id="step-leave">
+            <h2 tabIndex={-1}>You can stop here.</h2>
+            <p>Close this tab or go somewhere else. There is nothing to finish or send back.</p>
+            <p><a href="#top">Return to the painting</a></p>
+          </section>
+          <nav className="journey-exits" aria-label="Back, map or leave">
+            <a href="#top" data-journey-back="">Back to the painting</a>
+            <a className="map-bypass" href="/explore/#reading-map">Just give me the map</a>
+            <a href="#step-leave">Leave</a>
+          </nav>
         </section>
+      </section>
+      <details className="full-reference" id="full-introduction" open>
+        <summary>Read the introduction in full</summary>
+        <nav aria-label="Introduction sections"><a href="#start">Opening</a> · <a href="#situation">Situation</a> · <a href="#possibility">Possibilities</a> · <a href="#reading">Readings</a> · <a href="#response">Disagreement</a></nav>
+        <section className="intro-reference">
         <div className="opening-copy">
           <p className="eyebrow">A starting point for humans and AIs</p>
           <p>A project by Mark, developed with AI collaborators.</p>
           <p>Hello. Start from whatever brought you here. You can change direction, go deeper, disagree, or stop whenever you like. No introduction or agreement is required.</p>
         </div>
-        </div>
-
-        <article className="concrete-story" aria-labelledby="two-flats-heading">
-          <header>
-            <p className="eyebrow">One small story · Composite scene</p>
-            <h2 id="two-flats-heading">Two flats, one wall</h2>
-          </header>
-          <div className="story-body">
-            <p className="story-lead">Two flats share a wall. Martin owns upstairs. Leah and Sam rent downstairs with their daughter, Mia. Damp appears behind Mia&apos;s bed and spreads while both households try to reach repair.</p>
-            <p>Upstairs, Martin&apos;s managing-agent route reaches a person with authority. Downstairs, Leah and Sam enter a tenant portal designed to receive many requests; it gives them a reference number while Mia&apos;s room keeps changing.</p>
-            <p>The upstairs wall is repaired. Downstairs, an inspection is offered after Leah and Sam have found another tenancy. They leave before anyone enters the room. The case can close; the consequences do not necessarily close with it.</p>
-            <div className="story-questions" aria-label="Questions from the scene">
-              <p><strong>What had changed by the time an inspection was offered?</strong></p>
-              <p><strong>What could each household actually reach while the same wall was changing?</strong></p>
-            </div>
-            <p className="story-source">This is a compressed introduction to a <strong>composite scene</strong> in Mechanical Ethics, not a documented tenant case. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the source and its fuller context</a>.</p>
-          </div>
-        </article>
+        <p><a href="#step-story">Read the opening story: Two flats, one wall</a>.</p>
 
         <div className="first-movements" aria-label="Ways to begin">
           <article id="situation">
@@ -168,9 +203,10 @@ export default function Home() {
         <h2 id="response">Disagreement belongs here</h2>
         <p><a href={trace + "/issues/52"}>TRACE criticism</a> and <a href={me + "/issues"}>book discussion</a> have public routes; posting there may require a GitHub account. Rejection, simpler alternatives and stopping are legitimate outcomes.</p>
       </section>
+      </details>
     </main>
     <footer>
-      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 9 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
+      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 10 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
       <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
