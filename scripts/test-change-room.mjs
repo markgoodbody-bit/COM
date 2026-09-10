@@ -40,16 +40,16 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   wrongIndex.nodes.find(n=>n.id==='change').next[0].target = 'care';
   assert.throws(()=>renderReadingRoom(node,wrongIndex,targets),/Graph edges disagree/);
   assert.throws(()=>renderReadingRoom(node,index,{}),/Missing edge target/);
-  assert.throws(()=>renderReadingRoom({...node,id:'care'},index,targets),/Only Change and Aperture/);
+  assert.throws(()=>renderReadingRoom({...node,id:'care'},index,targets),/Only Change, Aperture and Significance/);
   const unsafe = structuredClone(node), unsafeIndex = structuredClone(index);
   unsafe.next[0].path = '../aperture.json';
   unsafeIndex.nodes.find(n=>n.id==='change').next[0].path = 'nodes/../aperture.json';
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only named machine and history outputs differ from the two-room published parent', async () => {
+test('only named machine, Significance and history outputs differ from the two-room published parent', async () => {
   const revision = '7e6ea75c8040feb891dd725a5acad6bcaef9eb82';
-  const changed = new Set(['llms.txt','explore/llms.txt','explore/start.json','read/start.html','read/orientation.html','explore/map.json','manifest.json','changes.md','changes.html']);
+  const changed = new Set(['llms.txt','explore/llms.txt','explore/start.json','read/start.html','read/orientation.html','explore/nodes/significance.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -65,8 +65,8 @@ test('only named machine and history outputs differ from the two-room published 
   }
 });
 
-test('both rooms preserve their own fields and raw routes without invented history', async () => {
-  assert.deepEqual(ENABLED_ROOMS,['change','aperture']);
+test('enabled rooms preserve their own fields and raw routes without invented history', async () => {
+  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance']);
   for (const id of ENABLED_ROOMS) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
@@ -80,6 +80,13 @@ test('both rooms preserve their own fields and raw routes without invented histo
     for (const route of ['/','/explore/#reading-map','/#step-leave']) assert.ok(visible.includes('href="'+route+'"'));
     assert.doesNotMatch(html,/>Back\b|<script\b|<img\b|<form\b/);
     if (id === 'aperture') assert.doesNotMatch(html,/href="(?:change.html|\/#step-understand)"/);
+    if (id === 'significance') {
+      assert.match(html,/class="room-standing"/);
+      assert.ok(visible.includes(escape(record.kind)),'Significance standing must be visible');
+      assert.equal(record.kind,'candidate interpretation; not a TRACE definition');
+    } else {
+      assert.doesNotMatch(html,/class="room-standing"/);
+    }
     for (const edge of record.next) {
       const target = JSON.parse(await readFile('public/explore/nodes/'+edge.path));
       assert.ok(html.includes('href="'+edge.path.replace('.json','.html')+'"'));
