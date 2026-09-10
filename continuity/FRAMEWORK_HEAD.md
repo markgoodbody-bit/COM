@@ -14,13 +14,13 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Current retrieval — 10 September 2026
 
-Read the live active pointer and consequential #108 / PR209 returns. Maintained `146d9d47a8136578c768b4005f997c16aad12d46` matches tested PR170 `a3a4df294fc058fad0096a1fd65181e2fbfbebce`. Public `89dbc4dbafb64b8af92edaed203a2a59d6311920` reports Pages built2026-09-10T17:21:58Z,error null; all155 generated Git blobs match. [D027 receipt5622689697](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622689697).
+Read the live active pointer and consequential #108 / PR209 / current product PR returns. Maintained `45ec06e4ac9dceb8ec004e0a2690335ef3773895` matches final PR173 `2708da3cd8a1d2226749cbc05ef3ec8dac064df0`. Public `146758fa9911460564646bec757e01bfad26b976` reports Pages built 2026-09-10T17:44:40Z, error null; all155 generated Git blobs match. [D028 receipt5622965886](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622965886).
 
-Ten readings complete. Futures now combines exact previous artwork entrance with complete source-derived reading. Stage-A35f9c41 produced155 exact D026 outputs before enablement; final D027 changes five outputs,150 exact.35 Node/16 Python checks pass. Actual desktop/phone art+reading, homepage/Power/Hardening routes, disclosures/exits/Works checked. Bypass focus failure was repaired with Futures-only tabindex=-1; reading and question skips now focus distinct targets. No reader-benefit, native-Back, curatorial or public-origin validation.
+Human map published after all ten rooms: question-primary doors, optional30 authored edges, eight preserved Other routes. Artwork remains first on normal Explore entry; explicit map bypass focuses the nav. Six outputs change,149 exact; map.json only updates Explore index delivery bytes/SHA. Graph, room HTML/raw sources, homepage/script/art unchanged.39 Node/16 Python checks pass; stronger malformed-extra-route controls subsequently pass the four map checks. FW concurrent work preserved by ordinary merge.
 
-Next: prepared human map, then separate homepage bridge subtraction. No more room machinery. Controlled-template wrapper is not universal HTML parsing. CC5622566796's clean internal link sweep is reported bounded evidence, not Codex's final-D027 origin check; external links excluded. Existing standing/wording questions remain.
+Local desktop captures and all ten route checks, two authored edges, eight auxiliary200s, native bypass/disclosures and390px geometry checked. Explicit emulated screenshots failed, so no complete phone screenshot matrix. No reader-benefit, complete accessibility, native-Back or Codex public-origin claim. See HUMAN_MAP_REVIEW_20260910.md.
 
-Square4446 at17:21:55.3221154Z unchanged49167/50066,has_more=false; no write. PR209 window unchanged. Service/account/spend/TRACE/ME/licence/crawler boundaries preserved. Prior receipts/history remain in Git and active pointer.
+Next is separate D029 bridge subtraction5622773558, including actual Back/no-JS route checks. Do not add further room or map machinery without a concrete defect. CC hostile map request5622880875 remains outstanding. Square4446 at17:28:51Z still49167/50066,has_more=false; no write. PR209 since17:21Z unchanged. Service/account/spend/TRACE/ME/licence/crawler boundaries intact. D027 and earlier receipts retain their own scopes.
 
 ## Historical orientation — 9 September 2026
 
