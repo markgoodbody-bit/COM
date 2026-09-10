@@ -6,11 +6,13 @@ const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const localHtml = route => route.replace(/\.(?:json|md)$/, '.html');
 
-// One existing node, not a second graph. Keep raw sources and every other page.
-export function renderChangeRoom(node, index, targets) {
-  if (node.id !== 'change') throw Error('Only the Change proof is enabled');
+export const ENABLED_ROOMS = Object.freeze(['change', 'aperture']);
+
+// Two existing nodes, not a second graph or a ten-node rollout.
+export function renderReadingRoom(node, index, targets) {
+  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change and Aperture are enabled');
   for (const key of ['title','short','detail','perspective','challenge','question','kind','status','boundary']) {
-    if (typeof node[key] !== 'string' || !node[key].trim()) throw Error('Missing Change field: ' + key);
+    if (typeof node[key] !== 'string' || !node[key].trim()) throw Error('Missing reading field: ' + key);
   }
   const indexed = index.nodes.filter(item => item.id === node.id);
   if (indexed.length !== 1 || indexed[0].question !== node.question) throw Error('Question index disagrees');
@@ -30,7 +32,7 @@ export function renderChangeRoom(node, index, targets) {
     return `<li><a href="${escape(source.url)}">${escape(source.label)}</a></li>`;
   }).join('\n');
   return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(node.title)} · Please Start From Here</title><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/markdown" href="change.md"><link rel="alternate" type="application/json" href="change.json"><link rel="describedby" href="../llms.txt"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(node.title)} · Please Start From Here</title><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/markdown" href="${node.id}.md"><link rel="alternate" type="application/json" href="${node.id}.json"><link rel="describedby" href="../llms.txt"></head>
 <body style="max-width:none;padding:0"><a class="skip" href="#question">Skip to the question</a>
 <main><article class="context-window" aria-labelledby="room-title">
 <header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1><p>${escape(node.short)}</p></header>
@@ -41,9 +43,9 @@ export function renderChangeRoom(node, index, targets) {
 <details id="full-account"><summary style="padding:.75rem 0;cursor:pointer">Read the full account</summary>
 <h3>Expand</h3><p>${escape(node.detail)}</p>
 <h3>Status</h3><p>${escape(node.kind)}. ${escape(node.boundary)}</p></details>
-<p><a href="change.md">Complete text</a> · <a href="change.json">JSON source</a></p>
+<p><a href="${node.id}.md">Complete text</a> · <a href="${node.id}.json">JSON source</a></p>
 <nav aria-label="Optional directions"><h3>If you want to follow this further</h3><div class="journey-options">${moves}</div></nav>
-<nav class="journey-exits" aria-label="Return or stop"><a href="/#step-understand">Back to Understand</a><a href="/">Opening</a><a href="/explore/#reading-map">Map</a><a href="/#step-leave">Not now</a></nav>
+<nav class="journey-exits" aria-label="Opening, map or stop">${node.id === 'change' ? '<a href="/#step-understand">Understand route</a>' : ''}<a href="/">Opening</a><a href="/explore/#reading-map">Map</a><a href="/#step-leave">Not now</a></nav>
 <details><summary style="padding:.75rem 0;cursor:pointer">Sources and other routes</summary><ul>${sources}
 <li><a href="${escape(localHtml(node.routes.sources))}">Source terms and snapshots</a></li>
 <li><a href="${escape(localHtml(node.routes.example))}">Same facts, different views</a></li>
@@ -52,23 +54,28 @@ export function renderChangeRoom(node, index, targets) {
 </article></main><footer style="max-width:48rem;margin-inline:auto;padding-inline:1rem">${escape(node.status)}. Same source as the machine representations. No sign-in, personal disclosure or report-back is needed.</footer></body></html>\n`;
 }
 
-export async function writeChangeRoom(sourceRoot, outputRoot) {
-  const nodeBytes = await readFile(path.join(sourceRoot, 'explore/nodes/change.json'));
+export async function writeReadingRooms(sourceRoot, outputRoot) {
   const indexBytes = await readFile(path.join(sourceRoot, 'explore/questions.json'));
-  const node = JSON.parse(nodeBytes), index = JSON.parse(indexBytes), targets = {};
-  for (const edge of node.next) {
-    if (!/^[a-z]+\.json$/.test(edge.path)) throw Error('Unsafe target path');
-    targets[edge.target] = JSON.parse(await readFile(path.join(sourceRoot, 'explore/nodes', edge.path)));
+  const index = JSON.parse(indexBytes), rooms = [];
+  for (const id of ENABLED_ROOMS) {
+    const nodeBytes = await readFile(path.join(sourceRoot, 'explore/nodes', id + '.json'));
+    const node = JSON.parse(nodeBytes), targets = {};
+    if (node.id !== id) throw Error('Node identity disagrees with file');
+    for (const edge of node.next) {
+      if (!/^[a-z]+\.json$/.test(edge.path)) throw Error('Unsafe target path');
+      targets[edge.target] = JSON.parse(await readFile(path.join(sourceRoot, 'explore/nodes', edge.path)));
+    }
+    rooms.push({ id, node_sha256: sha(nodeBytes), html: renderReadingRoom(node, index, targets) });
   }
-  const html = renderChangeRoom(node, index, targets);
-  await writeFile(path.join(outputRoot, 'explore/nodes/change.html'), html);
+  // Validate both before writing either rendered room.
+  for (const room of rooms) await writeFile(path.join(outputRoot, 'explore/nodes', room.id + '.html'), room.html);
   const manifestPath = path.join(outputRoot, 'manifest.json');
   const manifest = JSON.parse(await readFile(manifestPath));
-  manifest.provenance.change_room = {
-    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618521193',
-    node: '/explore/nodes/change.json', node_sha256: sha(nodeBytes),
+  manifest.provenance.reading_rooms = {
+    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618750426',
+    nodes: rooms.map(room => ({ node: '/explore/nodes/' + room.id + '.json', node_sha256: room.node_sha256 })),
     graph: '/explore/questions.json', graph_sha256: sha(indexBytes),
-    scope: 'Change-only presentation proof. Existing account and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable.',
+    scope: 'Change and Aperture static transition proof only. Existing accounts and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable.',
   };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 }
