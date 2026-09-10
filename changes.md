@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D026
+
+10 September 2026 — Four connected readings now share the same layout.
+
+Selection and consequences, Power and answerability, Time and hardening, and Correction and residue now put their existing questions before the full account. Each keeps its own perspective, challenge, sources and onward questions. Their working synthesis status remains in the full-account disclosure, following the existing rule for that kind of reading; this does not make them established facts.
+
+The original text, raw Markdown and JSON, source pointers and graph edges are unchanged. Selection still cites TRACE alone; the other three retain both TRACE and Mechanical Ethics sources. Opening, Map and Not now remain ordinary exits. Links to Reachable futures still reach its existing artwork and reading; Futures is not converted in this batch.
+
+This follows Framework comment 5622324649 in COM issue 108 and its source draft in PR168. The five earlier room pages, image-first homepage, artwork, machine entrance, scripts and crawler policy remain unchanged. A shared presentation is not evidence of better comprehension or valid conclusions. Previous publication 1c49073873e3a6664d82d9b80146e28dc229a5e8 remains in Git history.
+
 ### D025
 
 10 September 2026 — A working idea is not an empirical result.

@@ -230,8 +230,8 @@
     },
     {
       "path": "nodes/correction.html",
-      "bytes": 2528,
-      "sha256": "88dd09a6aee4a6952885e7552f196f12d55118367f17e396fbd1d0e5b87a70b2"
+      "bytes": 3820,
+      "sha256": "496c688c5260db969261aeb943f16bbc4fbad30b5afda7c1ede47d48637100a3"
     },
     {
       "path": "nodes/correction.json",
@@ -260,8 +260,8 @@
     },
     {
       "path": "nodes/hardening.html",
-      "bytes": 2494,
-      "sha256": "4c365c35ded371f1f999fb76e2488964d19a9c5b10a742bd47640427e1b0d266"
+      "bytes": 3795,
+      "sha256": "341aaebeb9ad468a4e013bd134e0ffc38445770987d57cec5fbe4e48309e869f"
     },
     {
       "path": "nodes/hardening.json",
@@ -275,8 +275,8 @@
     },
     {
       "path": "nodes/power.html",
-      "bytes": 2548,
-      "sha256": "66b2b00beb08b7bdca5635ad60b67bcd615a6aee565f573b91089fde0a35ed41"
+      "bytes": 3817,
+      "sha256": "c7bbd06962a74da21b6b2c407361e83792fe7af0d453720bfb6de2ad03e96999"
     },
     {
       "path": "nodes/power.json",
@@ -290,8 +290,8 @@
     },
     {
       "path": "nodes/selection.html",
-      "bytes": 2268,
-      "sha256": "8d6e5c2a7112898fcffa17571eec9d1d5785bd9fb258cf4244cca0b7bfdaf9df"
+      "bytes": 3567,
+      "sha256": "48e03b540e227b9c15a6bc49f4d99b95ed8751bd9b37d7e0f921fca3a8b2c065"
     },
     {
       "path": "nodes/selection.json",

@@ -1,5 +1,23 @@
 # Campfire Door public preview
 
+## Four connected readings, 10 September 2026
+
+Maintained `20559a4955e965073312008bdd31a8e147585081` matches tested PR168
+head `d5fdd41a4d8c30957eaa2f2fd7834bfca07650ff`. Codex completed Framework's
+source proof in the same PR. Selection, Power, Hardening and Correction join the
+five earlier rooms; their original accounts, sources, graph questions and raw
+routes survive. Generic working synthesis stays in Status, not an extra label.
+
+Eight of155 outputs change from `1c49073873e3a6664d82d9b80146e28dc229a5e8`:
+four room HTML files, map, manifest and paired D026 history. Other147 stay exact,
+including the prior five rooms, Futures artwork, homepage and machine surfaces.
+Build33 Node/16 Python checks pass. Local connected paths, four desktop views,
+two narrow direct arrivals, keyboard disclosures/exits and a Futures art arrival
+checked. No reader-benefit, native-Back or public-origin readback claim.
+
+See GENERIC_FOUR_REVIEW_20260910.md. Futures composition remains a separate next
+task; no art, map redesign, homepage subtraction or policy change is included.
+
 ## Wisdom standing, 10 September 2026
 
 Maintained `50490a460b5ec59a5c4f46b99c55cb5ce46c70d9` matches tested PR165

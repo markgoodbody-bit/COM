@@ -67,9 +67,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "07e73982ea2db871ec311661e6fcdf0f9185450438aa357facc4c36f45e34260",
-    "change_history_input_html_sha256": "cc3178292d220f67f70b456c2b920b1dbd2ba2ae9c5549a4c74bc8a2d2d1ab0c",
-    "change_history_addendum_note": "D016 through D025 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "29a309eb2ad7ab65c5a366c48192b0797d3741e11c6cb5c963b8781f73f7eaac",
+    "change_history_input_html_sha256": "d60c00e8a6604a9233de8c58d28350462fda9c5b7669c854c433bf871958750a",
+    "change_history_addendum_note": "D016 through D026 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -126,7 +126,7 @@
       "script_sha256": "9cf43b45b464629900ee722722331ee4bfe1b9831f99121408dcbc104b029621"
     },
     "reading_rooms": {
-      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5621355154",
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622324649",
       "nodes": [
         {
           "node": "/explore/nodes/change.json",
@@ -147,13 +147,29 @@
         {
           "node": "/explore/nodes/wisdom.json",
           "node_sha256": "7f5e763203d05a2fdb6e9b20ad7c8bf7ba0c81c7ac9ced1bbc3a019eaea0a99b"
+        },
+        {
+          "node": "/explore/nodes/selection.json",
+          "node_sha256": "af7da65a421b17d5c1840e3d6b5755bd603dd8330f854dd42b4c1c0769b4f9ac"
+        },
+        {
+          "node": "/explore/nodes/power.json",
+          "node_sha256": "04346e25e9518919a358c150a8ab8b387fcbab90043fcc92152187b4a378e26d"
+        },
+        {
+          "node": "/explore/nodes/hardening.json",
+          "node_sha256": "868012c684ff3a8ecbdf7cd868b4236c38ad0a9c6cbe3f3a9b39be21ff193af0"
+        },
+        {
+          "node": "/explore/nodes/correction.json",
+          "node_sha256": "8c5147c2cea8eec6812e8f3bb5c9ac735fc9b1fa58a81f16a9c0192378e257ef"
         }
       ],
       "graph": "/explore/questions.json",
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
-      "scope": "Change, Aperture, Significance, Care and Wisdom presentation only. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics or measured reader benefit. Raw sources remain directly reachable."
+      "scope": "Nine reading presentations: Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction. Existing accounts and graph; non-generic standing is visible from the source kind field. Futures remains a separate contextual-art composition case. No new semantics or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "c7f18e7c9fc19a9ecf4c71fe8834c3b8613b2586a43ae9ce1071146893e5d8a5",
+    "change_history_html_sha256": "34776f2b0469871a56821c812a209a61f869fd63362569ccab70aeb42921a0a3",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
