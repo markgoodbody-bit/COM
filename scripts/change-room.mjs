@@ -6,11 +6,11 @@ const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const localHtml = route => route.replace(/\.(?:json|md)$/, '.html');
 
-export const ENABLED_ROOMS = Object.freeze(['change', 'aperture', 'significance', 'care', 'wisdom']);
+export const ENABLED_ROOMS = Object.freeze(['change', 'aperture', 'significance', 'care', 'wisdom', 'selection', 'power', 'hardening', 'correction']);
 
-// Five existing nodes, not a second graph or a ten-node rollout.
+// Nine existing nodes, not a second graph. Futures remains a separate art+room composition case.
 export function renderReadingRoom(node, index, targets) {
-  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change, Aperture, Significance, Care and Wisdom are enabled');
+  if (!ENABLED_ROOMS.includes(node.id)) throw Error('Only Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction are enabled');
   for (const key of ['title','short','detail','perspective','challenge','question','kind','status','boundary']) {
     if (typeof node[key] !== 'string' || !node[key].trim()) throw Error('Missing reading field: ' + key);
   }
@@ -75,10 +75,10 @@ export async function writeReadingRooms(sourceRoot, outputRoot) {
   const manifestPath = path.join(outputRoot, 'manifest.json');
   const manifest = JSON.parse(await readFile(manifestPath));
   manifest.provenance.reading_rooms = {
-    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5621355154',
+    direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622324649',
     nodes: rooms.map(room => ({ node: '/explore/nodes/' + room.id + '.json', node_sha256: room.node_sha256 })),
     graph: '/explore/questions.json', graph_sha256: sha(indexBytes),
-    scope: 'Change, Aperture, Significance, Care and Wisdom presentation only. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics or measured reader benefit. Raw sources remain directly reachable.',
+    scope: 'Nine reading presentations: Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction. Existing accounts and graph; non-generic standing is visible from the source kind field. Futures remains a separate contextual-art composition case. No new semantics or measured reader benefit. Raw sources remain directly reachable.',
   };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 }
