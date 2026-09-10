@@ -47,9 +47,9 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only four generic rooms and derived delivery outputs differ from the D025 public parent', async () => {
+test('only four generic rooms and delivery/history outputs differ from the D025 public parent', async () => {
   const revision = '1c49073873e3a6664d82d9b80146e28dc229a5e8';
-  const changed = new Set(['explore/nodes/selection.html','explore/nodes/power.html','explore/nodes/hardening.html','explore/nodes/correction.html','explore/map.json','manifest.json']);
+  const changed = new Set(['explore/nodes/selection.html','explore/nodes/power.html','explore/nodes/hardening.html','explore/nodes/correction.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -96,7 +96,7 @@ test('generic working syntheses remain deliberately unmarked while source kind r
     assert.equal(record.kind,'working synthesis',id);
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
     const visible = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
-    assert.doesNotMatch(visible,/data-reading-kind/,id);
+    assert.doesNotMatch(html,/data-reading-kind/,id);
     assert.ok(html.includes('<h3>Status</h3><p>working synthesis. '),id);
   }
 });
