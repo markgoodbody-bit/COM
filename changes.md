@@ -1,6 +1,20 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.12 · 9 September 2026
+Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
+
+### D017
+
+10 September 2026 — One small context window after the painting.
+
+Before: four expandable entrance choices followed by the full introduction. This revision replaces that layout with a voluntary beginning, five arrival cues, and short routes for looking, working with a question, or challenging the material. The existing composite story is moved into the window without changing its account or source label. The title is slightly larger; the complete painting remains first.
+
+Map and Leave remain available without completing a route. The full introduction stays directly expandable. The optional navigation script changes the visible panel, moves heading focus and makes Back return to the previous local step. Without JavaScript, ordinary fragment links still select panels and the introduction is expanded; browser Back remains available. The offline preview uses this script-free fallback.
+
+Choices are navigation, not an account or submitted answer log. The script makes no requests, saves no profile and uses no analytics. The browser itself can retain visited page positions in history. Leave does not close a tab: it makes clear that there is nothing to finish or send back.
+
+The first browser check caught a defect: changing the address alone had not changed the CSS target, so the old panel stayed visible. The enhancement now explicitly updates panel visibility. This is a navigation repair, not evidence that the experience benefits a reader. The wording, route convergence and usefulness remain open to criticism; no TRACE, Mechanical Ethics, image or source-reading change is included.
+
+This entry describes the revision, not an independent deployment or accessibility-conformance certificate. Its build, publication and bounded checks are recorded in the existing COM issue 108 coordination thread. Framework's direction is addressable at comment 5616897757, with the five-choice refinement at 5617040633.
 
 ### D016
 

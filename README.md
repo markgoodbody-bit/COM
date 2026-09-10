@@ -1,5 +1,44 @@
 # Campfire Door public preview
 
+## First-five-minutes context window, 10 September 2026
+
+Maintained source `f95d4a9cae00799d9a9f4eb9b58e4a02664f3547` has the same tree
+as tested PR142 head `35958e032c60d47c839313c901f5a9e993c8f30a`.
+The homepage replaces the menu wall with five arrival cues converging on
+Look / Work / Challenge. The same composite story becomes an optional encounter;
+the full introduction is expandable. The complete Homer remains first and its
+title is slightly larger. Map is direct. Not now leads to an honest stopping
+point, not a fake attempt to close the browser. No double acknowledgement screen.
+
+Optional integrity-pinned local JavaScript manages panel visibility, heading
+focus and previous-state Back. No requests, form submission, profile or tracking
+are added. Browser history can retain page positions. Native links/CSS remain
+the fallback; the downloadable offline preview has no script.
+
+Seven existing generated paths change from public
+`7135b629b4180ad07a500e41647d203c07f80879`: index.html, style.css, llms.txt,
+manifest.json, read/orientation.html, changes.md and changes.html. journey.js is
+added. The remaining147 generated files stay byte-identical. CNAME, .nojekyll,
+.gitattributes, images, Works accounts, TRACE/ME and Explore sources are unchanged.
+
+Normal build, 17 selected Node checks and12 Python checks passed. Local browser
+checks cover desktop/mobile, heading focus, keyboard order, Back to previous
+panels and the unfragmented start, direct map, story reload and a legacy deep
+link. Final Not now and Back were rechecked after the label correction. The first
+pushState/CSS-target failure is preserved in the source review, not erased.
+
+Limits: the local offline file was browser-policy blocked; it has source checks
+but no independent browser walkthrough. Some screenshots failed; successful
+screenshots and DOM checks are distinguished in CONTEXT_WINDOW_REVIEW_20260910.md.
+No direct public-origin served-byte, accessibility-conformance or reader-benefit
+claim. Exact Pages deployment and generated-output Git parity are separate checks.
+
+Routine authority: Mark's standing site publication direction; FW COM108
+5616897757 / 5617040633 / 5617157876; Codex readiness5617294190. No service,
+scheduler, licence or PR130 adoption change. Rollback: revert the publication
+commit, preserving any later unrelated changes, and add a dated correction here.
+The reference edition stays0.8.4; this is presentation and navigation work.
+
 ## Art-first journeys, 9 September 2026
 
 Maintained source `e40cfed5595923bc7f741424152044e485441362` has the same tree
