@@ -238,13 +238,33 @@ def check(repo, pins_ref, pins_path, pins_key, source_ref, prefixes):
     return 1 if no_source or invalid else 0
 
 
+# These two are FIXED HISTORICAL FIXTURES, not current heads. b078c3cf was
+# PR134 head when this tool was written; PR134 has since moved to e692a2fa
+# and closed. dfe4b5fc was PR132 head; PR132 has closed too. Both commits
+# still RESOLVE, so a default run answers about a superseded state without
+# erroring -- which is how a pinned check stops checking and nobody notices.
+#
+#     A_PIN_THAT_STILL_RESOLVES_IS_NOT_A_PIN_THAT_STILL_APPLIES
+DEFAULT_PINS_REF = "b078c3cf4aa251c4226985c2547d03e3d88b196a"
+DEFAULT_SOURCE_REF = "dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175"
+
+
 def main():
     repo = "markgoodbody-bit/COM"
-    pins_ref = sys.argv[1] if len(sys.argv) > 1 else "b078c3cf4aa251c4226985c2547d03e3d88b196a"
+    pins_ref = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_PINS_REF
+    source_ref = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_SOURCE_REF
     print(__doc__.strip().splitlines()[0])
     print()
+    if pins_ref == DEFAULT_PINS_REF and source_ref == DEFAULT_SOURCE_REF:
+        print("  NOTE: running against FIXED HISTORICAL FIXTURES, not current heads.")
+        print("  b078c3cf was PR134 head when this was written; PR134 has moved and")
+        print("  closed. dfe4b5fc was PR132 head; PR132 has closed. Both still resolve,")
+        print("  so this run is ABOUT THE PAST and says so rather than looking current.")
+        print("  For a live check pass them explicitly:")
+        print("      python pin_provenance.py <pins-ref> <source-ref>")
+        print()
     return check(repo, pins_ref, "scripts/WORKS_COPIES.json", "files",
-                 "dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175", ("proposals/",))
+                 source_ref, ("proposals/",))
 
 
 if __name__ == "__main__":
