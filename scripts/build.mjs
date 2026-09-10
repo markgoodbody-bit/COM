@@ -87,7 +87,7 @@ for (const name of machineFiles) {
     };
     manifest.provenance.bridge_subtraction = {
       direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622773558',
-      scope: 'Work choices link directly to Change and Futures. Two repeated homepage panels and the special Change return link removed; original readings, art, graph and story remain. No measured reader benefit.',
+      scope: 'Work links directly to Change; its repeated panel and special return link are removed. The Futures bridge is retained to orient its art-first destination. Original readings, art, graph and story remain. No measured reader benefit.',
     };
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }

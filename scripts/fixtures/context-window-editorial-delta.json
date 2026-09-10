@@ -1,6 +1,6 @@
 {
   "historical_revision": "aed75526770de9a7c9a2aa7cef63f1167dad1669",
-  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the six blocks belonging to the two repeated bridge panels; their source accounts/questions remain in the readings. Story text and all pre-foyer substantive blocks remain. Navigation labels and the exact D028-to-D029 subtraction are checked separately.",
+  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the three blocks belonging to the repeated Change bridge; its source account/question remain in the reading. The Futures bridge, story text and all pre-foyer substantive blocks remain. Navigation labels and the exact D028-to-D029 subtraction are checked separately.",
   "removed": {},
   "added": {
     "Would you like to continue?": 1,
@@ -14,6 +14,9 @@
     "Work with a question": 1,
     "Where would you like to begin?": 1,
     "Start with what is happening, or with something you want to make possible. You can move between the two.": 1,
+    "Making something possible": 1,
+    "An option written down is not necessarily an option someone can use.": 1,
+    "Which path is reachable, for whom, under which conditions?": 1,
     "Check the work": 1,
     "You do not have to agree.": 1,
     "Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. A useful objection does not need this project's vocabulary, or a proposed repair.": 1,
