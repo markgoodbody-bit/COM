@@ -40,16 +40,16 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   wrongIndex.nodes.find(n=>n.id==='change').next[0].target = 'care';
   assert.throws(()=>renderReadingRoom(node,wrongIndex,targets),/Graph edges disagree/);
   assert.throws(()=>renderReadingRoom(node,index,{}),/Missing edge target/);
-  assert.throws(()=>renderReadingRoom({...node,id:'care'},index,targets),/Only Change and Aperture/);
+  assert.throws(()=>renderReadingRoom({...node,id:'care'},index,targets),/Only Change, Aperture and Significance/);
   const unsafe = structuredClone(node), unsafeIndex = structuredClone(index);
   unsafe.next[0].path = '../aperture.json';
   unsafeIndex.nodes.find(n=>n.id==='change').next[0].path = 'nodes/../aperture.json';
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only named machine and history outputs differ from the two-room published parent', async () => {
-  const revision = '7e6ea75c8040feb891dd725a5acad6bcaef9eb82';
-  const changed = new Set(['llms.txt','explore/llms.txt','explore/start.json','read/start.html','read/orientation.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only Significance and delivery/history outputs differ from the D022 published parent', async () => {
+  const revision = '859cf9f3dba154ec99b9e2ded9ed75eeaeb849b6';
+  const changed = new Set(['explore/nodes/significance.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -65,8 +65,8 @@ test('only named machine and history outputs differ from the two-room published 
   }
 });
 
-test('both rooms preserve their own fields and raw routes without invented history', async () => {
-  assert.deepEqual(ENABLED_ROOMS,['change','aperture']);
+test('all three rooms preserve their own fields and raw routes without invented history', async () => {
+  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance']);
   for (const id of ENABLED_ROOMS) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
@@ -86,6 +86,20 @@ test('both rooms preserve their own fields and raw routes without invented histo
       assert.ok(html.includes('>'+escape(target.question)+'</a>'));
     }
   }
+});
+
+test('Significance standing is visible before its question and comes from kind, not title', async () => {
+  const record = JSON.parse(await readFile('public/explore/nodes/significance.json'));
+  const html = await readFile('out/explore/nodes/significance.html','utf8');
+  const visible = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
+  const marker = '<p data-reading-kind><strong>'+escape(record.kind)+'</strong></p>';
+  assert.ok(visible.includes(marker));
+  assert.ok(visible.indexOf(marker) < visible.indexOf('<h2 id="question"'));
+  assert.doesNotMatch(visible,/href="(?:change.html|aperture.html|\/#step-understand)"/);
+  const synthetic = renderReadingRoom({...node,kind:record.kind},index,targets);
+  assert.ok(synthetic.includes(marker));
+  assert.throws(()=>renderReadingRoom({...node,kind:''},index,targets),/Missing reading field: kind/);
+  assert.ok(renderReadingRoom({...node,kind:'candidate <interpretation>'},index,targets).includes('candidate &lt;interpretation&gt;'));
 });
 
 test('authored edge count is variable and unapproved nodes remain disabled', () => {
