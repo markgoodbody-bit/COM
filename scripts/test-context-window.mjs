@@ -20,14 +20,14 @@ test('only the named navigation and history outputs differ from the published ar
   assert.equal(retained,147);
 });
 
-test('explicit seven-state graph has five arrival cues, a source-labelled encounter and no intake', async () => {
+test('explicit nine-state graph has five arrival cues, source-labelled encounters and no intake', async () => {
   const html = await readFile('out/index.html','utf8');
-  assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','challenge','story','leave']);
+  assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','understand','future','challenge','story','leave']);
   const orientation = html.split('id="step-orientation"')[1].split('</section>')[0];
   assert.deepEqual([...orientation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#step-look','#step-work','#step-look','#step-challenge','#step-look']);
   assert.match(orientation,/I am here for the art, or just looking/);
   const work = html.split('id="step-work"')[1].split('</section>')[0];
-  assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/change.html','/explore/nodes/futures.html']);
+  assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#step-understand','#step-future']);
   assert.match(work,/Understand what is happening/);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size,ids.length);
@@ -54,10 +54,10 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 and D018 are paired in both formats and earlier history remains exact', async () => {
+test('D017 through D019 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
-  for (const [id,previous] of [['D017','D016'],['D018','D017']]) {
+  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018']]) {
     const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
     const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
     const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');
@@ -68,4 +68,23 @@ test('D017 and D018 are paired in both formats and earlier history remains exact
     const after = await readFile('public/'+name,'utf8');
     assert.equal(after.slice(after.indexOf(anchor)),before.slice(before.indexOf(anchor)),name);
   }
+});
+
+test('first-depth encounters use exact existing source sentences and preserve full-reading routes', async () => {
+  const html = await readFile('out/index.html','utf8');
+  const escape = s=>s.replaceAll('&','&amp;').replaceAll("'",'&#x27;');
+  for (const [id,name] of [['understand','change'],['future','futures']]) {
+    const source = await readFile('public/explore/nodes/'+name+'.md','utf8');
+    const panel = html.split('id="step-'+id+'"')[1].split('</section>')[0];
+    for (const section of ['Small account','Open question']) {
+      const text = source.split('## '+section)[1].split('## ')[0].trim();
+      assert.ok(panel.includes(escape(text)),id+': '+section);
+    }
+    assert.deepEqual([...panel.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/'+name+'.html','#step-story']);
+  }
+  const challenge = await readFile('public/explore/challenge.md','utf8');
+  const statement = challenge.split('## Challenge the content')[1].split('## ')[0].trim();
+  assert.ok(html.split('id="step-challenge"')[1].split('</section>')[0].includes(escape(statement)));
+  const look = html.split('id="step-look"')[1].split('</section>')[0];
+  assert.deepEqual([...look.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/works/','#step-story']);
 });
