@@ -19,10 +19,10 @@ export function renderChangeRoom(node, index, targets) {
   const moves = node.next.map(edge => {
     if (!/^[a-z_]+$/.test(edge.relation) || edge.path !== edge.target + '.json' || !/^[a-z]+$/.test(edge.target)) throw Error('Unsafe graph edge');
     const target = targets[edge.target];
-    if (!target || target.id !== edge.target || typeof target.title !== 'string') throw Error('Missing edge target');
+    if (!target || target.id !== edge.target || typeof target.title !== 'string' || typeof target.question !== 'string' || !target.question.trim()) throw Error('Missing edge target');
     const verb = edge.relation.replaceAll('_', ' ');
     const label = verb[0].toUpperCase() + verb.slice(1) + ': ' + target.title;
-    return `<a data-relation="${escape(edge.relation)}" href="${escape(localHtml(edge.path))}">${escape(label)}</a>`;
+    return `<a data-relation="${escape(edge.relation)}" href="${escape(localHtml(edge.path))}" title="${escape(label)}">${escape(target.question)}</a>`;
   }).join('\n');
   const sources = node.sources.map(key => {
     const source = node.source_pointers[key];

@@ -5,7 +5,7 @@ Working presentation experiment, not new theory or evidence of usefulness.
 ## Before and after
 
 Before: the existing Change page exposed seven document sections and a list of routes.
-After: the same short account and question lead; Another position and Challenge stay visible. A native disclosure opens Expand and Status. Complete text and JSON source are direct links, not dependent on opening the disclosure. The three onward labels combine the existing relation name with the actual destination title. Sources and other routes remain in a separate native disclosure. Opening, Map, Back to Understand and Not now are explicit.
+After: the same short account and question lead; Another position and Challenge stay visible. A native disclosure opens Expand and Status. Complete text and JSON source are direct links, not dependent on opening the disclosure. The three onward labels are the exact questions from their destination nodes (FW follow-up5618572398); relation names and titles remain supplementary link titles. Sources and other routes remain in a separate native disclosure. Opening, Map, Back to Understand and Not now are explicit.
 
 Direction: FW COM108 comment5618521193. The renderer reads existing change.json, questions.json and the three target records. It rejects disagreement between node and question-index edges. It is enabled for Change only. The other nine reading pages, raw sources, homepage, shared CSS, script and artwork are unchanged. No new renderer framework, ontology, JavaScript, account or intake is added.
 
@@ -17,6 +17,8 @@ Direction: FW COM108 comment5618521193. The renderer reads existing change.json,
 - Local browser: homepage Understand enters the new page; all three graph links reached aperture.html, selection.html and hardening.html. Map reached /explore/#reading-map; Not now reached the existing stopping state; Back to Understand returned to its named homepage state. It is a named return, not a promise of browser-history traversal.
 - Keyboard Enter on the native full-account summary opened it, exposing the exact detail and boundary. A role-button selector initially failed despite the native accessibility tree naming a button; text-based keyboard selection succeeded. This was a tooling selector failure, not a site repair.
 - Final successful screenshots at actual widths1077 and320 show the question and visible challenge without horizontal overflow. An earlier390 screenshot failed; its geometry check is not counted as visual approval. Initial nested padding cramped the320 question to about201px; the page-only wrapper correction increased it to about233px without changing shared CSS. Final desktop width uses the homepage window's existing measure.
+
+FW5618572398 arrived before merge. The final graph links now use exact target questions, with relation/title retained only as supplementary link titles. Keyboard Tab moves between those questions in graph order. Subsequent successful screenshots at1077 and390 show the final labels and exits; at390, the three link boxes are about75,75 and102px high and have no horizontal overflow. Earlier clicked destinations are unchanged and reasserted from the data. This later390 screenshot succeeds without erasing the earlier capture failure.
 
 ## Limits and unresolved questions
 

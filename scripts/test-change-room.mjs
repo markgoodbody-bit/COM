@@ -23,11 +23,11 @@ test('Change keeps all original paragraphs and source links, with challenge outs
   assert.equal((html.match(/<h1\b/g)||[]).length,1);
 });
 
-test('optional directions come from the original edges and target titles', async () => {
+test('optional directions use original edges and exact target questions', async () => {
   const html = await readFile('out/explore/nodes/change.html','utf8');
-  const links = [...html.matchAll(/data-relation="([^"]+)" href="([^"]+)">([^<]+)<\/a>/g)];
+  const links = [...html.matchAll(/data-relation="([^"]+)" href="([^"]+)" title="[^"]+">([^<]+)<\/a>/g)];
   assert.deepEqual(links.map(m=>[m[1],m[2]]),node.next.map(e=>[e.relation,e.path.replace('.json','.html')]));
-  for (const [i,link] of links.entries()) assert.ok(link[3].endsWith(escape(targets[node.next[i].target].title)));
+  for (const [i,link] of links.entries()) assert.equal(link[3],escape(targets[node.next[i].target].question));
   for (const edge of node.next) await readFile('out/explore/nodes/'+edge.path.replace('.json','.html'));
 });
 
