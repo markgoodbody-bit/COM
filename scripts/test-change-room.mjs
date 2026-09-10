@@ -40,16 +40,16 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   wrongIndex.nodes.find(n=>n.id==='change').next[0].target = 'care';
   assert.throws(()=>renderReadingRoom(node,wrongIndex,targets),/Graph edges disagree/);
   assert.throws(()=>renderReadingRoom(node,index,{}),/Missing edge target/);
-  assert.throws(()=>renderReadingRoom({...node,id:'futures'},index,targets),/Only Change, Aperture, Significance, Care and Wisdom/);
+  assert.throws(()=>renderReadingRoom({...node,id:'futures'},index,targets),/Only Change, Aperture, Significance, Care, Wisdom, Selection, Power, Hardening and Correction/);
   const unsafe = structuredClone(node), unsafeIndex = structuredClone(index);
   unsafe.next[0].path = '../aperture.json';
   unsafeIndex.nodes.find(n=>n.id==='change').next[0].path = 'nodes/../aperture.json';
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only Wisdom and delivery/history outputs differ from the D024 published parent', async () => {
-  const revision = '6bde9d9fd9bebef334be22c82846cb59312af3b7';
-  const changed = new Set(['explore/nodes/wisdom.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only four generic rooms and derived delivery outputs differ from the D025 public parent', async () => {
+  const revision = '1c49073873e3a6664d82d9b80146e28dc229a5e8';
+  const changed = new Set(['explore/nodes/selection.html','explore/nodes/power.html','explore/nodes/hardening.html','explore/nodes/correction.html','explore/map.json','manifest.json']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -65,26 +65,39 @@ test('only Wisdom and delivery/history outputs differ from the D024 published pa
   }
 });
 
-test('all five rooms preserve their own fields and raw routes without invented history', async () => {
-  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance','care','wisdom']);
+test('all nine enabled rooms preserve their own fields, sources, routes and authored questions', async () => {
+  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance','care','wisdom','selection','power','hardening','correction']);
   for (const id of ENABLED_ROOMS) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
     const old = await readFile('public/explore/nodes/'+id+'.html','utf8');
     for (const [,p] of old.matchAll(/<p>(.*?)<\/p>/g)) assert.ok(html.includes(p),id+': '+p);
-    for (const [,url] of old.matchAll(/href="(https:[^"]+)"/g)) assert.ok(html.includes('href="'+url+'"'),url);
+    for (const [,url] of old.matchAll(/href="(https:[^"]+)"/g)) assert.ok(html.includes('href="'+url+'"'),id+': '+url);
+    for (const sourceKey of record.sources) assert.ok(html.includes('href="'+record.source_pointers[sourceKey].url+'"'),id+': '+sourceKey);
     const visible = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
     for (const key of ['short','question','perspective','challenge','status']) assert.ok(visible.includes(escape(record[key])),id+': '+key);
     for (const key of ['detail','kind','boundary']) assert.ok(html.includes(escape(record[key])),id+': '+key);
-    for (const ext of ['md','json']) assert.ok(visible.includes('href="'+id+'.'+ext+'"'));
-    for (const route of ['/','/explore/#reading-map','/#step-leave']) assert.ok(visible.includes('href="'+route+'"'));
+    for (const ext of ['md','json']) assert.ok(visible.includes('href="'+id+'.'+ext+'"'),id+': '+ext);
+    for (const route of ['/','/explore/#reading-map','/#step-leave']) assert.ok(visible.includes('href="'+route+'"'),id+': '+route);
     assert.doesNotMatch(html,/>Back\b|<script\b|<img\b|<form\b/);
     if (id === 'aperture') assert.doesNotMatch(html,/href="(?:change.html|\/#step-understand)"/);
     for (const edge of record.next) {
       const target = JSON.parse(await readFile('public/explore/nodes/'+edge.path));
-      assert.ok(html.includes('href="'+edge.path.replace('.json','.html')+'"'));
-      assert.ok(html.includes('>'+escape(target.question)+'</a>'));
+      assert.ok(html.includes('href="'+edge.path.replace('.json','.html')+'"'),id+': '+edge.path);
+      assert.ok(html.includes('>'+escape(target.question)+'</a>'),id+': '+target.question);
     }
+  }
+});
+
+test('generic working syntheses remain deliberately unmarked while source kind remains in full account', async () => {
+  const generic = ['change','aperture','selection','power','hardening','correction'];
+  for (const id of generic) {
+    const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
+    assert.equal(record.kind,'working synthesis',id);
+    const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
+    const visible = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
+    assert.doesNotMatch(visible,/data-reading-kind/,id);
+    assert.ok(html.includes('<h3>Status</h3><p>working synthesis. '),id);
   }
 });
 
@@ -96,7 +109,6 @@ for (const id of ['significance','care','wisdom']) test(id + ' standing is visib
   assert.ok(visible.includes(marker));
   assert.ok(visible.indexOf(marker) < visible.indexOf('<p>'+escape(record.short)+'</p>'));
   assert.ok(visible.indexOf(marker) < visible.indexOf('<h2 id="question"'));
-  // Wisdom's Aperture link is an authored edge, not invented browsing history.
   assert.doesNotMatch(visible,/href="(?:change.html|\/#step-understand)"/);
   if (id !== 'wisdom') assert.doesNotMatch(visible,/href="aperture.html"/);
   const synthetic = renderReadingRoom({...node,kind:record.kind},index,targets);
@@ -105,7 +117,23 @@ for (const id of ['significance','care','wisdom']) test(id + ' standing is visib
   assert.ok(renderReadingRoom({...node,kind:'candidate <interpretation>'},index,targets).includes('candidate &lt;interpretation&gt;'));
 });
 
-test('authored edge count is variable and unapproved nodes remain disabled', () => {
+test('generic batch preserves authored provenance counts and real Futures edges without enabling Futures', async () => {
+  const expectedSources = {selection:1,power:2,hardening:2,correction:2};
+  for (const [id,count] of Object.entries(expectedSources)) {
+    const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
+    const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
+    assert.equal(record.sources.length,count,id);
+    for (const key of record.sources) assert.ok(html.includes(record.source_pointers[key].url),id+': '+key);
+    for (const edge of record.next.filter(edge=>edge.target==='futures')) {
+      const futures = JSON.parse(await readFile('public/explore/nodes/futures.json'));
+      assert.ok(html.includes('href="futures.html"'),id);
+      assert.ok(html.includes('>'+escape(futures.question)+'</a>'),id);
+    }
+  }
+  assert.ok(!ENABLED_ROOMS.includes('futures'));
+});
+
+test('authored edge count is variable and Futures remains disabled in this proof', () => {
   for (const count of [0,1,2,4]) {
     const varied = structuredClone(node), variedIndex = structuredClone(index);
     varied.next = Array.from({length:count},(_,i)=>node.next[i % node.next.length]);
