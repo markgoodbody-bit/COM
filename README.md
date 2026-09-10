@@ -1,5 +1,29 @@
 # Campfire Door public preview
 
+## Change and Partial views, 10 September 2026
+
+Maintained `4bf08436a917ab2c31881a035fa223fc57bbfb6b` matches tested PR154
+head `1df769af1d7f3fc04c43c66b47b5a387fbf865f4`. Exactly two existing graph
+nodes now share the question-first reading layout. Complete accounts, raw sources,
+challenges and graph-derived directions are preserved. Change says Understand
+route, not Back; Partial views invents no previous-room link.
+
+Six generated paths change from `cc13e294813446f64e130f27348c2fa4ee87d888`:
+the two room HTML files, delivery map, manifest and paired D021 history.
+149 of 155 outputs are unchanged. Manifest updated now denotes the latest
+deliberate material revision and is checked against the dated history, not a clock.
+
+Build, 25 Node and 12 Python checks pass. Local desktop and 390/320px inspection
+covered the actual journey, keyboard disclosures, map, stop and onward routes.
+Native browser Back was unverified. No direct public-origin verification or
+reader-benefit claim is made. The repeated question appears useful as an arrival
+label; homepage-to-Change duplication is a stronger unresolved risk. No new art,
+JavaScript, machine surfaces, crawler posture or ten-room rollout is included.
+
+Evidence: TWO_ROOM_REVIEW_20260910.md on the maintained source. Normal revert of
+this publication is the rollback, preserving later unrelated work. Pages/Git
+delivery identity is recorded separately in COM108 after publication.
+
 ## Change: one existing graph-backed room, 10 September 2026
 
 Maintained `18736b685a5fa7339ed2c7e8205c85dd141b6159` matches tested PR150

@@ -5,7 +5,8 @@
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-08",
+  "updated": "2026-09-10",
+  "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
     "seed": "/seed.txt",
@@ -66,9 +67,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "b48efb8df587419120a0c00d4ad177ecab67500823fc0fa934305486d37a78b7",
-    "change_history_input_html_sha256": "d9371048e30fe06e10c8f18008e20ffef4c47b3ba44d60cd3ef7b9afb463f0cb",
-    "change_history_addendum_note": "D016 through D020 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "80ce48bc76b16bb39ec79db2a20163784c4e80ae1ab4d122cb0a20ba62a7e254",
+    "change_history_input_html_sha256": "1ca652bffad3d5c239eb305bb457da78e5620d4b3a3674f93f3615e1e0c7f5b0",
+    "change_history_addendum_note": "D016 through D021 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -124,15 +125,23 @@
       "scope": "Optional first-five-minutes navigation. Native links and CSS work without JavaScript; the enhancement adds focus management and Back. No answer submission, account, tracking or profile. Browser history retains page positions. Reader benefit is not measured.",
       "script_sha256": "9cf43b45b464629900ee722722331ee4bfe1b9831f99121408dcbc104b029621"
     },
-    "change_room": {
-      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618521193",
-      "node": "/explore/nodes/change.json",
-      "node_sha256": "e3aab185b5e986abe0e490914c7d1152a6ec3723acbfd0bae6c4a5b5c7f030d9",
+    "reading_rooms": {
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5618750426",
+      "nodes": [
+        {
+          "node": "/explore/nodes/change.json",
+          "node_sha256": "e3aab185b5e986abe0e490914c7d1152a6ec3723acbfd0bae6c4a5b5c7f030d9"
+        },
+        {
+          "node": "/explore/nodes/aperture.json",
+          "node_sha256": "386752a224103b90679179515cf41231fe754e69c93cad4ed5933769dd241855"
+        }
+      ],
       "graph": "/explore/questions.json",
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
-      "scope": "Change-only presentation proof. Existing account and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable."
+      "scope": "Change and Aperture static transition proof only. Existing accounts and graph, no new semantics or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "101d871d10df17007ca6b5b3c269f0a1fd46b1dda761eb2ddd7456689d78323a",
+    "change_history_html_sha256": "18f0bac7338a46e512f4623d52cb6db961e76ba1be2552d43190425306f9c800",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

@@ -185,8 +185,8 @@
     },
     {
       "path": "nodes/aperture.html",
-      "bytes": 2980,
-      "sha256": "e342a246a6c41fd07ba34ee23b468da0257477b3dfd2d03aa6ff991e7bf9c076"
+      "bytes": 4274,
+      "sha256": "db6b77d21276bab8418dfaef8cefc31278a0354e69096c717c1268776010a2c4"
     },
     {
       "path": "nodes/aperture.json",
@@ -215,8 +215,8 @@
     },
     {
       "path": "nodes/change.html",
-      "bytes": 3781,
-      "sha256": "3b3b35b56be89623d3f623327a1749aca89b7025c054d7c654f74365a33b12e7"
+      "bytes": 3785,
+      "sha256": "15b71a5ad6a677f28f3de943b8fb6bafa04e0a3253ecf3691b52329fe4fd0557"
     },
     {
       "path": "nodes/change.json",
