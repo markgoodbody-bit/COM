@@ -40,16 +40,16 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   wrongIndex.nodes.find(n=>n.id==='change').next[0].target = 'care';
   assert.throws(()=>renderReadingRoom(node,wrongIndex,targets),/Graph edges disagree/);
   assert.throws(()=>renderReadingRoom(node,index,{}),/Missing edge target/);
-  assert.throws(()=>renderReadingRoom({...node,id:'wisdom'},index,targets),/Only Change, Aperture, Significance and Care/);
+  assert.throws(()=>renderReadingRoom({...node,id:'selection'},index,targets),/Only Change, Aperture, Significance, Care and Wisdom/);
   const unsafe = structuredClone(node), unsafeIndex = structuredClone(index);
   unsafe.next[0].path = '../aperture.json';
   unsafeIndex.nodes.find(n=>n.id==='change').next[0].path = 'nodes/../aperture.json';
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only Care and delivery/history outputs differ from the D023 published parent', async () => {
-  const revision = '9f89bd10ea399e676f5eb8296a24ffbb7c6b6373';
-  const changed = new Set(['explore/nodes/care.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only Wisdom and derived delivery outputs differ from the D024 published parent', async () => {
+  const revision = '6bde9d9fd9bebef334be22c82846cb59312af3b7';
+  const changed = new Set(['explore/nodes/wisdom.html','explore/map.json','manifest.json']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -65,8 +65,8 @@ test('only Care and delivery/history outputs differ from the D023 published pare
   }
 });
 
-test('all four rooms preserve their own fields and raw routes without invented history', async () => {
-  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance','care']);
+test('all five rooms preserve their own fields and raw routes without invented history', async () => {
+  assert.deepEqual(ENABLED_ROOMS,['change','aperture','significance','care','wisdom']);
   for (const id of ENABLED_ROOMS) {
     const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
     const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
@@ -88,7 +88,7 @@ test('all four rooms preserve their own fields and raw routes without invented h
   }
 });
 
-for (const id of ['significance','care']) test(id + ' standing is visible before its account and question and comes from kind, not title', async () => {
+for (const id of ['significance','care','wisdom']) test(id + ' standing is visible before its account and question and comes from kind, not title', async () => {
   const record = JSON.parse(await readFile('public/explore/nodes/'+id+'.json'));
   const html = await readFile('out/explore/nodes/'+id+'.html','utf8');
   const visible = html.replace(/<details\b[\s\S]*?<\/details>/g,'');
