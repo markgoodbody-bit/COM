@@ -51,6 +51,7 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.doesNotMatch(offline,/<script\b/);
   assert.match(offline,/id="step-story"/);
   const manifest = JSON.parse(await readFile('out/manifest.json'));
+  assert.equal(manifest.routes.navigation_enhancement,'/journey.js');
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
