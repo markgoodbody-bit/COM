@@ -31,6 +31,7 @@ test('Futures composes one unchanged art entrance before the complete reading', 
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(ids.length,new Set(ids).size);
   assert.match(html,/<body style="max-width:none;padding:0" class="contextual-room">/);
+  assert.match(html,/<main tabindex="-1" id="reading">/);
   assert.ok(html.indexOf('<figure>') < html.indexOf('<article'));
   assert.ok(html.indexOf('>Go straight to the reading</a>') < html.indexOf('<figure>'));
   assert.ok(html.indexOf('</section>') < html.indexOf('>Skip to the question</a>'));

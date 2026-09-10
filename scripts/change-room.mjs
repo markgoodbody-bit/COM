@@ -37,7 +37,7 @@ export function renderReadingRoom(node, index, targets) {
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(node.title)} · Please Start From Here</title><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/markdown" href="${node.id}.md"><link rel="alternate" type="application/json" href="${node.id}.json"><link rel="describedby" href="../llms.txt"></head>
 <body style="max-width:none;padding:0"><a class="skip" href="#question">Skip to the question</a>
-<main><article class="context-window" aria-labelledby="room-title">
+<main${node.id === 'futures' ? ' tabindex="-1"' : ''}><article class="context-window" aria-labelledby="room-title">
 <header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1>${standing}<p>${escape(node.short)}</p></header>
 <h2 id="question" tabindex="-1">${escape(node.question)}</h2>
 <div aria-label="Another position and challenge">
