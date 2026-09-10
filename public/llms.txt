@@ -20,7 +20,9 @@ Campfire names a voluntary space for this work. Middle-out means beginning with 
 
 This file follows an emerging llms.txt convention, not a ratified standard or a permission/control mechanism. It is an adaptation of the human preview, named project sources and the build direction linked below, not an exact transcript. No reader benefit has been measured for these added files.
 
-Take one useful step, if useful. These are optional questions, not a procedure to complete. Start with whichever helps.
+Take one useful step
+
+Optional questions, not a procedure to complete. Start with whichever helps.
 
 These questions reflect this project's value choices, not neutral requirements for reasoning.
 
