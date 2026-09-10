@@ -47,9 +47,9 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only two rooms and delivery/history records differ from the immediate published parent', async () => {
-  const revision = 'cc13e294813446f64e130f27348c2fa4ee87d888';
-  const changed = new Set(['explore/nodes/change.html','explore/nodes/aperture.html','explore/map.json','manifest.json','changes.md','changes.html']);
+test('only named machine and history outputs differ from the two-room published parent', async () => {
+  const revision = '7e6ea75c8040feb891dd725a5acad6bcaef9eb82';
+  const changed = new Set(['llms.txt','explore/llms.txt','explore/start.json','read/start.html','read/orientation.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {

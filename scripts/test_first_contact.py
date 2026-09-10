@@ -251,14 +251,14 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn(recurrence, self.text)
         machine = (ROOT / 'out/llms.txt').read_text(encoding='utf-8')
         self.assertNotIn('not published', machine)
-        machine_cell = machine.split('## Take one useful step')[1].split('## Project sources')[0]
-        self.assertIn(disclosure, machine_cell)
-        self.assertIn(recurrence, machine)
-        self.assertIn('not a procedure to complete', machine)
-        self.assertIn('A description is not permission.', machine)
-        self.assertIn('You can take one useful piece and leave.', machine)
+        # D022 links to the existing human prompts instead of duplicating them.
+        self.assertNotIn('## Take one useful step', machine)
+        machine_cell = machine.split('## Start')[1].split('## Project sources')[0]
+        self.assertEqual(machine.count('[Six optional working questions](https://pleasestartfromhere.com/#small-loop)'), 1)
+        self.assertIn('optional prompts, not a required sequence.', machine_cell)
+        self.assertIn('id="small-loop"', self.html)
         for label in ['Notice', 'Choose', 'Decide', 'Responsibility', 'Repercussions', 'Check and correct']:
-            self.assertIn(label + ':', machine)
+            self.assertIn(label, machine_cell)
             self.assertIn(label + '.', cell_text)
         edition = subprocess.check_output(['node', '--input-type=module', '-e', "import {SITE_EDITION} from './scripts/site-edition.mjs';process.stdout.write(SITE_EDITION)"], cwd=ROOT).decode()
         self.assertIn('Site edition: Preview ' + edition, machine)
