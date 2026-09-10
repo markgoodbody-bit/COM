@@ -14,15 +14,13 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Current retrieval — 10 September 2026
 
-Read the live pointer and consequential #108 / campfire-relay PR209 returns. Maintained `50490a460b5ec59a5c4f46b99c55cb5ce46c70d9` matches tested PR165 `fbdd2d562001ce7e8e033f112059b7c788f20f67`. Public `1c49073873e3a6664d82d9b80146e28dc229a5e8` reports Pages built2026-09-10T16:53:15Z, no error; all155 output Git blobs match. [D025 receipt5622321270](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622321270).
+Read the live active pointer and consequential #108 / PR209 returns. Maintained `20559a4955e965073312008bdd31a8e147585081` matches tested PR168 `d5fdd41a4d8c30957eaa2f2fd7834bfca07650ff`. Public `37e3a92dbe361811dfeae45507f53d5125db9194` reports Pages built2026-09-10T17:09:06Z,error null; all155 generated Git blobs match. [D026 receipt5622519995](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622519995).
 
-Wisdom is the fifth room, exact candidate-campfire-synthesis/not-empirical-result kind visible under the unchanged rule. Original text, graph and sources survive; five outputs change,150 exact.31 Node/16 Python checks pass. Local Care-to-Wisdom/direct-phone/disclosure/exit/onward checks and desktop/narrow screenshots pass within stated scope. No reader-comprehension, native Back or public-origin readback result.
+Selection/Power/Hardening/Correction batch complete using FW source proof in the same PR168. Nine rooms enabled, Futures separate. All source text/graph/raw routes retained; generic kind stays in disclosed Status without extra paragraph. Eight outputs change,147 identical;33 Node/16 Python checks pass. Connected local paths, four desktop screenshots, two direct phone arrivals/disclosures/exits checked. Futures link retains loaded artwork. No native-Back, reader-comprehension or public-origin result.
 
-SCALE_SMALL_BATCH next: Selection, Power, Hardening and Correction, separate PR with per-node checks. Futures requires separate art+room composition, not naive allowlist extension. Later map and homepage subtraction stay separate. No new layer/theory/art/policy work included.
+Next is Futures composition with a zero-delta control before enabling; preserve both art and room contracts, attributes, anchors, image-first/credit/bypass. FW5622449021 is a proposed seam, not a proven implementation. Later map and bridge subtraction remain separate.
 
-CC5622309634's KEEP / Wisdom repair is a reported predecessor public read, not final-D025 or human-reader validation. Generic Status exists in disclosure, but presence does not settle prominence/authority effects; receipt5622321270 records this distinction and the limits of CC's clarity judgments. No actual reader benefit established.
-
-PR209 unchanged in checked window, no service action. PSFH Square4446 at16:47:42.1165508Z still49167/50066,has_more=false; no write. Old crawler preference remains Mark's separate choice; service/account/spend/TRACE/ME boundaries unchanged. Prior receipts and history remain available in Git and the active pointer.
+CC5622481472 reports closing script-route/hash issue; its root-llms blockquote caveat remains nonblocking. Earlier standing-presence/prominence disagreement and reader-evidence limits remain. PR209 window unchanged. Square4446 at17:08:58.8768761Z still49167/50066,has_more=false; no write. Service/account/spend/TRACE/ME/licence/crawler boundaries unchanged. Prior receipts remain in the active pointer and Git.
 
 ## Historical orientation — 9 September 2026
 
