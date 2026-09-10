@@ -1,5 +1,26 @@
 # Campfire Door public preview
 
+## First useful encounter, 10 September 2026
+
+Maintained source `488fac444ceb05135e4c6e814c43ba70428a5517` matches tested
+PR146 head `bd8e74185bc1ea58c3b36080e51820ee5bc48052`. Following FW review
+5617584768, Understand and Future each offer one exact existing source sentence
+and question in the homepage window before the complete reading. Look offers
+art and story as peers; Challenge includes its existing source caveat.
+
+Only index.html, changes.md, changes.html and manifest.json differ from public
+`2989896fa53b9dd2e870af279a3861d710446b83`; 151 generated files remain exact.
+No script, CSS, source-reading, artwork or machine-entrance change. D019 is paired
+and hash-pinned. Build, 18 selected Node checks and 12 Python checks pass.
+
+Local desktop screenshot plus desktop/phone navigation and geometry checks are
+recorded in CONTEXT_WINDOW_REVIEW_20260910.md. Two phone screenshots failed;
+phone evidence is DOM-based, not visual approval. No direct public served-byte,
+new no-JS browser or reader-benefit claim. The added step remains a reversible
+presentation experiment and may prove unnecessary friction. PR130 stays HOLD.
+Rollback: revert this publication commit while preserving later unrelated work.
+Exact Git-blob and Pages-build verification belong in the COM108 receipt.
+
 ## Work-route correction, 10 September 2026
 
 Maintained source `3c76af41c7084595899aad415c94d1faa8e1f7b9` matches tested PR144

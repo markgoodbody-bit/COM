@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D019
+
+10 September 2026 — One small encounter before the complete reading.
+
+The Understand and Future routes now show one existing source sentence and its existing question in the homepage window, with choices to go deeper or see the composite story. Challenge includes the existing warning that these accounts can omit people, infer too much or steer a reader. Look offers art and story as peers, without assuming the visitor came for the tenant story. The complete readings and Map remain available; no new theory or source-reading edit is included.
+
+This follows Framework's review in COM issue 108 comment 5617584768 of the first depth transition. It is a reversible presentation experiment, not evidence that another in-window step helps a visitor. A finding that direct access works better remains a valid reason to remove the bridge. The first Work-route correction at public 2989896fa53b9dd2e870af279a3861d710446b83 remains in history. There is no new script, account, tracking, intake or artwork.
+
 ### D018
 
 10 September 2026 — Understanding a situation is not the same as building a future.
