@@ -41,7 +41,11 @@ if (/<script\b|<form\b|<iframe\b/i.test(body)) throw new Error('Reader path must
 const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Please Start From Here</title><meta name="description" content="A voluntary starting point for understanding, deciding, making and correcting under uncertainty."><link rel="describedby" type="text/plain" href="https://pleasestartfromhere.com/llms.txt"><link rel="alternate" type="text/plain" href="https://pleasestartfromhere.com/llms.txt"><link rel="alternate" type="application/json" href="https://pleasestartfromhere.com/explore/start.json"><link rel="stylesheet" href="./style.css"></head><body>' + body + '</body></html>\n';
 // Browser-tab identity only; do not change the visible page or reading payloads.
 const faviconLinks = '<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">';
-await writeFile(path.join(root, 'out/index.html'), html.replace('</head>', faviconLinks + '</head>'));
+const journeyBytes = await readFile(path.join(root, 'public/journey.js'));
+const journeyIntegrity = 'sha256-' + createHash('sha256').update(journeyBytes).digest('base64');
+const journeyScript = '<script defer src="/journey.js" integrity="' + journeyIntegrity + '"></script>';
+await writeFile(path.join(root, 'out/journey.js'), journeyBytes);
+await writeFile(path.join(root, 'out/index.html'), html.replace('</head>', faviconLinks + journeyScript + '</head>'));
 for (const name of ['favicon.svg', 'favicon.ico', 'favicon-LICENSE.txt']) {
   await writeFile(path.join(root, 'out', name), await readFile(path.join(root, 'public', name)));
 }
@@ -66,6 +70,12 @@ for (const name of machineFiles) {
     manifest.provenance.artwork = { record: '/art/camp-fire.json', image_sha256: CAMP_FIRE.sha256, source: CAMP_FIRE.object_url };
     manifest.provenance.title_and_art_direction = 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329';
     manifest.provenance.editorial_revision = 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592995706';
+    manifest.provenance.context_window = {
+      direction: 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5616897757',
+      date: '2026-09-10',
+      scope: 'Optional first-five-minutes navigation. Native links and CSS work without JavaScript; the enhancement adds focus management and Back. No answer submission, account, tracking or profile. Browser history retains page positions. Reader benefit is not measured.',
+      script_sha256: createHash('sha256').update(journeyBytes).digest('hex'),
+    };
     bytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   }
   await writeFile(path.join(root, 'out', name), bytes);
@@ -114,7 +124,7 @@ await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));
 await applyHouseStyle(path.join(root, 'out'));
 // These dedicated pages retain their reviewed, medium-specific styles.
 await copyWorks(path.join(root, 'public'), path.join(root, 'out'));
-console.log('Static build: shared HTML presentation, preserved reading sources; no browser JavaScript or server runtime.');
+console.log('Static build: preserved reading sources; optional homepage navigation script, no server runtime.');
 for (const relativePath of ['out/index.html', 'out/404.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
   const bytes = await readFile(path.join(root, relativePath));
   console.log(`${relativePath}: ${bytes.length} bytes; SHA-256 ${createHash('sha256').update(bytes).digest('hex')}`);

@@ -11,6 +11,7 @@ const types = new Map([
   ['.pdf', 'application/pdf'], ['.png', 'image/png'], ['.svg', 'image/svg+xml'],
   ['.jpg', 'image/jpeg'],
   ['.ico', 'image/x-icon'],
+  ['.js', 'text/javascript; charset=utf-8'],
 ]);
 
 // Serve a frozen inventory of this build, never a path derived from a request.
@@ -49,8 +50,8 @@ export async function createPreviewServer(root = path.resolve(import.meta.dirnam
       'Content-Type': item.type, 'Cache-Control': 'no-cache', ETag: item.etag,
       'Last-Modified': item.modified, 'X-Content-Type-Options': 'nosniff',
       'Referrer-Policy': 'no-referrer',
-      // Existing generated readings use inline CSS and local diagrams, not JS.
-      'Content-Security-Policy': "default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+      // Local navigation enhancement only; no network or form submission.
+      'Content-Security-Policy': "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
     };
     if (route && req.headers['if-none-match'] === item.etag) {
       res.writeHead(304, headers).end(); return;
