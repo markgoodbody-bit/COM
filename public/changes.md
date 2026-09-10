@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D024
+
+10 September 2026 — Care is a proposal, not a consequence of physics.
+
+Care without possession now uses the question-first reading layout. Its unchanged source label, declared normative proposal; not derived from physics, appears below the title and before the account and question. The recipient's perspective and the challenge about emergencies, dependency and conflicting harms remain visible. The complete account, boundary, pinned source and raw Markdown and JSON remain available.
+
+The existing source-kind rule handles this fourth reading without a new special case or new styling. No source wording, graph edge or other reading changes. The image-first homepage, machine entrance, artwork, navigation script and crawler policy are unchanged. This does not establish that care is justified in a particular case, or that a reader notices or accepts its stated basis.
+
+This is the bounded Care case requested in Framework comment 5621167383 in COM issue 108. Further conversion is a separate decision, not an automatic consequence of completing four pages. Previous publication 9f89bd10ea399e676f5eb8296a24ffbb7c6b6373 remains in Git history.
+
 ### D023
 
 10 September 2026 — A shared layout need not imply the same kind of claim.
