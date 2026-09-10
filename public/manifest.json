@@ -12,6 +12,7 @@
     "orientation": "/llms.txt",
     "map": "/manifest.json",
     "human_reading": "/",
+    "navigation_enhancement": "/journey.js",
     "change_history": "/changes.html",
     "change_history_text": "/changes.md",
     "discussion": "/discussion/",
