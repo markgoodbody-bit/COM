@@ -25,6 +25,10 @@ test('explicit seven-state graph has five arrival cues, a source-labelled encoun
   assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','challenge','story','leave']);
   const orientation = html.split('id="step-orientation"')[1].split('</section>')[0];
   assert.deepEqual([...orientation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#step-look','#step-work','#step-look','#step-challenge','#step-look']);
+  assert.match(orientation,/I am here for the art, or just looking/);
+  const work = html.split('id="step-work"')[1].split('</section>')[0];
+  assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/change.html','/explore/nodes/futures.html']);
+  assert.match(work,/Understand what is happening/);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size,ids.length);
   for (const [,id] of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(id), id);
@@ -50,13 +54,15 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 is paired in both formats and earlier history remains exact', async () => {
+test('D017 and D018 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
-  const paragraphs = md.split('### D017')[1].split('### D016')[0].trim().split(/\n\s*\n/);
-  const rendered = html.split('<h3 id="d017">D017</h3>')[1].split('<h3 id="d016">')[0];
-  const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');
-  assert.equal(rendered,expected);
+  for (const [id,previous] of [['D017','D016'],['D018','D017']]) {
+    const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
+    const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
+    const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');
+    assert.equal(rendered,expected);
+  }
   for (const [name,anchor] of [['changes.md','### D016'],['changes.html','<h3 id="d016">']]) {
     const before = execFileSync('git',['show','e40cfed5595923bc7f741424152044e485441362:public/'+name]).toString('utf8');
     const after = await readFile('public/'+name,'utf8');

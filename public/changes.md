@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D018
+
+10 September 2026 — Understanding a situation is not the same as building a future.
+
+Framework's review of the published context window found that the work route combined understanding and changing, then offered only future-building. That route now gives a small choice between understanding what is happening and exploring something to make or change. Both lead to existing readings; no extra arrival category or new theory is added. The existing looking cue now mentions art explicitly.
+
+The first version remains in the publication history at 57d590871ee12dbd2df4270c81486fc3032073b8. The correction follows exact-source review in COM issue 108 comment 5617380045. It repairs a routing assumption, not a demonstrated failure experienced by an independent visitor. The underlying readings, artwork, navigation script, Map and Not now remain unchanged.
+
 ### D017
 
 10 September 2026 — One small context window after the painting.

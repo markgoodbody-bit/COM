@@ -39,7 +39,7 @@ export default function Home() {
             <div className="journey-options">
               <a href="#step-look">Someone sent me this</a>
               <a href="#step-work">I have something I&apos;m trying to understand or change</a>
-              <a href="#step-look">I am curious / just looking</a>
+              <a href="#step-look">I am here for the art, or just looking</a>
               <a href="#step-challenge">I want to challenge or check this</a>
               <a href="#step-look">I don&apos;t know</a>
             </div>
@@ -55,11 +55,11 @@ export default function Home() {
           </section>
           <section data-step="work" id="step-work">
             <p className="eyebrow">Work with a question</p>
-            <h2 tabIndex={-1}>What could become possible?</h2>
-            <p>Start with the future you have in mind. What would make it reachable, and what could the same choice close for someone else? You do not need to type an answer here.</p>
+            <h2 tabIndex={-1}>Where would you like to begin?</h2>
+            <p>Start with what is happening, or with something you want to make possible. You can move between the two.</p>
             <div className="journey-options">
-              <a href="/explore/nodes/futures.html">Think about a possibility of your own</a>
-              <a href="#step-story">See the question in a small story first</a>
+              <a href="/explore/nodes/change.html">Understand what is happening</a>
+              <a href="/explore/nodes/futures.html">Explore something I want to make or change</a>
             </div>
           </section>
           <section data-step="challenge" id="step-challenge">
