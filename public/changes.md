@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D025
+
+10 September 2026 — A working idea is not an empirical result.
+
+Wisdom under pressure now uses the question-first reading layout. Its unchanged source kind, candidate synthesis from the campfire; not an empirical result, appears below the title and before the account and question. The perspective about familiar rules failing unrepresented situations and the challenge about prejudice and paralysis remain visible. The full account, boundary, both source pointers and raw Markdown and JSON remain available.
+
+This fifth reading uses the existing source-kind rule without new wording, styling or graph edges. Its onward questions still lead to Partial views, Time and hardening, and Correction and residue. All four earlier room pages, the image-first homepage, machine entrance, artwork and navigation script are unchanged.
+
+This is the bounded Wisdom case requested in Framework comment 5621355154 in COM issue 108. A visible statement of provenance is not evidence that the idea works or that a reader understands its limits. No other reading is converted here; Futures still requires separate handling to preserve its existing artwork. Previous publication 6bde9d9fd9bebef334be22c82846cb59312af3b7 remains in Git history.
+
 ### D024
 
 10 September 2026 — Care is a proposal, not a consequence of physics.
