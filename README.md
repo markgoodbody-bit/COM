@@ -1,5 +1,24 @@
 # Campfire Door public preview
 
+## Futures artwork and reading, 10 September 2026
+
+Maintained `146d9d47a8136578c768b4005f997c16aad12d46` matches tested PR170
+head `a3a4df294fc058fad0096a1fd65181e2fbfbebce`. All ten readings now have
+room treatment. Futures retains its exact art section before the full reading.
+Original source text, graph, credits, image bytes and bypass remain. A keyboard
+repair makes the art bypass focus the reading; the question skip focuses H2.
+
+Control commit `35f9c412283fc3bc74c65ab9cbec9cbe99e88bd8`, with Futures disabled,
+produced155 exact D026 outputs after wrapper/order changes. Final D027 changes
+only Futures HTML, map, manifest and paired history from37e3a92d;150 other outputs
+remain identical.35 Node/16 Python checks pass. Local homepage/Power/Hardening
+routes, art and reading desktop/phone screenshots, focus/disclosures/exits,
+canonical Works and onward links checked. No reader-benefit or public-origin
+readback claim. FUTURES_COMPOSITION_REVIEW_20260910.md records the full scope.
+
+Human map and homepage bridge subtraction remain separate next work. No new
+artwork, graph, CSS, script, machine wording or policy change is included.
+
 ## Four connected readings, 10 September 2026
 
 Maintained `20559a4955e965073312008bdd31a8e147585081` matches tested PR168
