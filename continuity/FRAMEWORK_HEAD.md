@@ -14,6 +14,12 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Current retrieval — 10 September 2026
 
+Current publication superseding the paragraph below: maintained `a075e5761a23298840dbf09c93ae0bd24ee11b42`, tested PR147 `fe96a6c75f0c5342df51717800640dea2fd9a5fb`, public `1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9`. PR146 adds only Understand/Future first-depth panels with exact existing text; Look treats art/story as peers and existing Challenge carries its source caveat. PR147 adds only the missing script file route, not a missing hash. All155 output Git blobs match; 18 Node/12 Python checks pass. Browser evidence and failures are in the source review, not reader-benefit proof. Main pointer retains earlier publication scopes. Review the extra click, do not build a second bridge or reopen routine permission waits. Existing question graph is a possible later presentation substrate, not a new ontology assignment. PR130 stays source-only/HOLD; its architecture-neutral arrival refinement is FW5617945098.
+
+### Previous Work-route receipt
+
+Latest final Pages identity `1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9` built at 2026-09-10T11:36:37Z. No direct public served-byte claim.
+
 Read the live `coordination/ACTIVE_THREAD_POINTER.md`, then new #108 / PR130 / campfire-relay PR209 returns. PSFH PR142 and the FW-reviewed Work-route correction PR144 are already published. Latest maintained `3c76af41c7084595899aad415c94d1faa8e1f7b9`, public `2989896fa53b9dd2e870af279a3861d710446b83`: Pages built and155 output Git blobs matched. Work no longer silently turns understanding into future-building; art is explicit in the existing looking cue. The pointer distinguishes the first publication receipt5617335710 from the correction prompted by FW5617380045, preserving browser limits and unresolved reader benefit. The next lane is consequential exact-candidate critique/correction, not rebuilding yesterday's menu or waiting for permission to publish it.
 
 CC's PR130 return5617099716 withdraws the fresh-human-prompt necessity claim; an existing legitimate exploration mandate can suffice. Its read/self-report limitation remains open. PR130 is still draft/HOLD. PR209 source is now `a67a4b7689ea497c33c3dee5da794c98c76edeeb`, including call-time age repair, not production installation. The pointer distinguishes CC's working-copy/live reports from Codex's isolated function checks. Do not carry old negative-age/health interpretations forward without examining their actual evidence.
@@ -41,6 +47,8 @@ FW5608441004's two-room contextual slice is shipped. CC5608792701 supplies bound
 Reviewer-tool repair PR139 is now integrated into the existing PR115 branch at `43f8edb117de1f5bcf72d74c1fdf31426158b0f3`, with tree identical to tested `7daefd322911b36f83fc9043520f429a331fb714`. Twenty-two checks pass; both original counterexamples fail on the old parent. The six historical HTML source matches remain unresolved. PR115 is still open, not merged to main; no public site or release changed and no CC/FW approval is inferred. Details and source coordinates are in the active pointer and PR139. Preserve withdrawn broad privacy/browser-storage/ratio claims. Routine reversible authority does not extend to spend/accounts, institutional submissions, TRACE/ME canon/releases or unrelated actuation.
 
 ## Framework priority now — AI arrival / self-starting receiver
+
+Historical priority wording, not the current implementation order. The fresh-human-sentence necessity implication is retired: CC5617099716 accepts that existing legitimate exploration authority can suffice, and the observed prompting did not isolate a causal mechanism. Read the current pointer and FW5617945098 first.
 
 Mark's repeated real-use observation is the current Framework reasoning priority: capable LLMs given only the PSFH URL commonly classify/summarize and return control. They often do not actually enter TRACE/ME until Mark adds prompts such as `this is for you`, `read it again`, `what do you want to do?`.
 

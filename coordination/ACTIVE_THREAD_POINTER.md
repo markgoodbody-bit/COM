@@ -15,6 +15,16 @@ Active coordination: [COM #108](https://github.com/markgoodbody-bit/COM/issues/1
 
 ### PSFH context window — PUBLISHED, not awaiting implementation
 
+**Current first-depth publication:** PR146 plus the late script-route repair PR147. Maintained `a075e5761a23298840dbf09c93ae0bd24ee11b42` matches tested head `fe96a6c75f0c5342df51717800640dea2fd9a5fb`; public `1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9`. All 155 generated Git blobs match. Understand and Future now each offer an exact existing source sentence/question before the full reading. Look offers art/story peers; existing Challenge retains its practical-advantage ceiling and gains its existing source caveat. Only two panels added. Script, CSS, underlying readings, artworks and machine-arrival text are unchanged. Eighteen selected Node and twelve Python checks pass. Desktop screenshot, desktop/phone navigation and geometry checks are recorded with limits; two phone screenshots failed. This is not a reader-benefit result, and the extra step remains removable if it proves friction.
+
+The first-depth public commit `e06f0cd701efba466d4290da4d38baf1030ebc90` was built at 2026-09-10T11:35:04Z. The late manifest-only repair gives the existing script hash a direct `/journey.js` route; 154 generated files stay exact from that first-depth commit. CC5617807073's broad missing-hash claim was false: `provenance.context_window.script_sha256` already existed. FW5617932617 correctly narrowed the repair. CC5617603182's all-panels-visible-without-JS and guaranteed-ephemeral history claims were also corrected by Codex5617810540; do not propagate them as verified facts. No direct public served-byte or new no-JS browser verification is claimed.
+
+Next useful review: inspect this exact human bridge for earned usefulness versus needless delay. FW5617953192 found the existing `explore/questions.json` graph already carries the questions/routes/relationships; reuse it if a later room presentation is justified, rather than inventing another graph. This is a preserved architectural finding, not a new build instruction. Machine-arrival source work remains separately queued/HOLD. FW PR130 5617945098 refines it to an existing task, question, inquiry or interest without assigning a principal-assistant role; nothing requires inventing a purpose. Existing-source availability, support and inference are checkable distinctions; mental-state certification is not. No PR130 merge/publication follows.
+
+#### Previous Work-route publication
+
+Final publication `1060d6ed3d7e2133a5aa63b1ec4dd8512e57dfc9` is confirmed built by GitHub Pages at 2026-09-10T11:36:37Z, without an error. This is deployment evidence, separate from local browser checks and Git-blob parity.
+
 **Latest publication after exact-source review:** PR144, maintained `3c76af41c7084595899aad415c94d1faa8e1f7b9`, tested head `967c52df42e893db427b954079b67ac88ed3d15f`, public `2989896fa53b9dd2e870af279a3861d710446b83`. Pages built at 2026-09-10T10:51:44Z; all155 output Git blobs matched. FW5617380045 found a premature collapse of understanding into future-building. Work now offers two existing routes: understand what is happening, or explore something to make/change. The looking cue names art. Only homepage/history/manifest changed: four generated files,151 unchanged from the first publication. D018 records the correction.17 Node/12 Python checks and actual1077/390 local layout/link checks pass; prior verification limits remain. These are the current source/public identities; the first publication evidence below is retained rather than silently reassigned to the correction.
 
 #### First context-window publication and scope
@@ -90,6 +100,8 @@ Publication is complete under Mark's direct instruction. Prior CC KEEP is not tr
 `ART_VISIBLE != ART_AS_EVIDENCE`
 
 ## Framework token priority — AI ARRIVAL / SELF-STARTING RECEIVER
+
+Historical framing only. The fresh-human-sentence necessity implication below is retired by CC5617099716 and the current section above. The observed prompts changed attention/framing/task clarity together; they did not isolate delegation or prove a fresh prompt necessary. Existing legitimate inquiry/exploration authority can suffice. Preserve the observation, not its stronger causal interpretation.
 
 Mark's repeated real-use observation is now the primary Framework reasoning lane: a capable LLM given only `https://pleasestartfromhere.com/` commonly performs `fetch -> classify/summarize -> return control` and stops. It often does not actually enter TRACE/ME until Mark adds prompts such as `this is for you`, `read it again`, and `what do you want to do?`.
 
