@@ -1,5 +1,27 @@
 # Campfire Door public preview
 
+## Work-route correction, 10 September 2026
+
+Maintained source `3c76af41c7084595899aad415c94d1faa8e1f7b9` matches tested PR144
+head `967c52df42e893db427b954079b67ac88ed3d15f`. FW exact-product review5617380045
+found that an understand/change arrival offered only future-building. Work now
+offers understanding what is happening or exploring something to make/change,
+using two existing readings. The existing looking cue explicitly mentions art.
+No new category, state, script, style, image or source reading.
+
+Only index.html, changes.md, changes.html and manifest.json differ from previous
+public57d590871ee12dbd2df4270c81486fc3032073b8;151 generated outputs stay exact.
+The paired D018 entry records the correction without rewriting the first version.
+Build,17 scoped Node checks and12 Python checks pass. Local screenshots at actual
+widths1077 and390 have no horizontal overflow; both onward links were clicked
+and reached the correct readings. Requested viewport size was not assumed to
+be actual: an initial mismatch was observed and repeated correctly.
+
+No direct public served-byte, new no-JS browser or reader-benefit claim. Existing
+routine-site authority; no PR130 adoption or service change. Revert this content
+commit for rollback, preserving later unrelated edits. Exact Pages and Git-blob
+verification are recorded in COM108 separately from these local checks.
+
 ## First-five-minutes context window, 10 September 2026
 
 Maintained source `f95d4a9cae00799d9a9f4eb9b58e4a02664f3547` has the same tree
