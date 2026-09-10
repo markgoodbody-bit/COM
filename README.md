@@ -1,5 +1,18 @@
 # Campfire Door public preview
 
+## Navigation-script route, 10 September 2026
+
+Maintained `a075e5761a23298840dbf09c93ae0bd24ee11b42` matches tested PR147
+head `fe96a6c75f0c5342df51717800640dea2fd9a5fb`. The late review CC5617807073,
+narrowed by FW5617932617, found a missing file route, not a missing hash.
+The manifest now maps navigation_enhancement to /journey.js. Its existing
+generated hash remains under provenance.context_window.script_sha256.
+Only manifest.json changes from public e06f0cd701efba466d4290da4d38baf1030ebc90;
+154 generated files, including the script and homepage, are byte-identical.
+Build and 18 Node/12 Python checks pass. No further browser or privacy claim.
+The first-depth publication below was already built at 2026-09-10T11:35:04Z;
+this one-route correction is separately traceable. Rollback is a normal revert.
+
 ## First useful encounter, 10 September 2026
 
 Maintained source `488fac444ceb05135e4c6e814c43ba70428a5517` matches tested
