@@ -13,6 +13,7 @@ import { copyCampFire, CAMP_FIRE } from './camp-fire.mjs';
 import { copyWorks, verifyWorks, WORKS } from './works.mjs';
 import { applyContextualArt } from './contextual-art.mjs';
 import { writeReadingRooms } from './change-room.mjs';
+import { writeHumanMap } from './human-map.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 assertRevisionDate(JSON.parse(await readFile(path.join(root, 'public/manifest.json'))), await readFile(path.join(root, 'public/changes.md'), 'utf8'));
@@ -97,6 +98,7 @@ async function copyExplore(relative = 'explore') {
   }
 }
 await copyExplore();
+await writeHumanMap(path.join(root, 'public'), path.join(root, 'out'));
 await mkdir(path.join(root, 'out/discussion'), { recursive: true });
 for (const [name, bytes] of discussionFiles) await writeFile(path.join(root, 'out/discussion', name), bytes);
 await writeViews(path.join(root, 'public'), path.join(root, 'out'));
