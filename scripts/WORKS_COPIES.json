@@ -5,7 +5,8 @@
   "changed_from_review": [
     "works/index.html: homepage return, explicit selection scope, and publication wrapper treatment",
     "all six works/**/index.html pages: remove noindex and unpublished/local-review wrapper labels only",
-    "Five dedicated work pages: artwork before heading/navigation, skip-to-account target; shelf.css adds whole-frame viewport fit. Prose, source links and image bytes retained. Source basis before this rearrangement: 0f627f2357d74de6b1556e25f5e4a0be5c9a7c57. Optional end-of-account routes return to the collection, reading map or opening."
+    "Five dedicated work pages: artwork before heading/navigation, skip-to-account target; shelf.css adds whole-frame viewport fit. Prose, source links and image bytes retained. Source basis before this rearrangement: 0f627f2357d74de6b1556e25f5e4a0be5c9a7c57. Optional end-of-account routes return to the collection, reading map or opening.",
+    "works/index.html: D045 adds encounter-only no-order/revisit copy; artwork selection, routes, images and dedicated work pages remain unchanged."
   ],
   "reviewed_files": {
     "works/harriet-powers/index.html": {
@@ -291,8 +292,8 @@
       "sha256": "b8f399f907c839543dd0c73bfcfc67184cf145c917b7c23a3e9d1341c0d3bbbd"
     },
     "works/index.html": {
-      "bytes": 1937,
-      "sha256": "485b5080491112b769a4dff7c85b04b961e7ae0dd13ca8bae4926ec3c910031a"
+      "bytes": 2053,
+      "sha256": "c0bd1790a3da167470f6036fe68ecc5d7b79bcced1b57d4f88f41ebb02f0b336"
     },
     "works/shelf.css": {
       "bytes": 4554,
