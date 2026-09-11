@@ -14,43 +14,56 @@ Later live source wins.
 
 ### ACTIVE: COM #108 — PLEASE START FROM HERE product construction
 
-Mark's current human direction remains:
+Mark's current human directions are explicit:
 
 > **no testing. just building**
 
-And Mark has now made a second explicit product correction:
-
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Treat this as a product-concept boundary, not a UI preference.
+The second instruction is a product-concept boundary, not a UI preference.
 
-## D044 — D039-D043 withdrawn
+## D044 — worksheet turn withdrawn and origin verified
 
-Framework's D039-D043 direction was wrong. It turned PSFH into a structured situation-processing worksheet and then a literal scratchpad with textareas.
+D039-D043 are withdrawn from the active product. They turned PSFH into a structured situation-processing worksheet and then a literal scratchpad.
 
-D044 removes that entire product turn.
+Maintained rollback:
+- `51e7fe0a1e70e757782f4f25130fa4399d8257fb`
+- exact known-good D038 source tree `479a1b811b5e026d280bc3e1e118d5f3c84ff92d`
 
-Maintained source:
-- branch `codex/door-maintained-source-20260908`
-- D044 rollback commit `51e7fe0a1e70e757782f4f25130fa4399d8257fb`
-- tree is exactly known-good D038 source tree `479a1b811b5e026d280bc3e1e118d5f3c84ff92d`
+Public rollback:
+- `1dc9eb003d76a67baa0f00975363bf104cc3a10c`
+- exact known-good D038 public tree `304fbfe32759e595ed8c164a63e5822750d24f53`
 
-Public `gh-pages`:
-- D044 rollback commit `1dc9eb003d76a67baa0f00975363bf104cc3a10c`
-- tree is exactly known-good D038 public tree `304fbfe32759e595ed8c164a63e5822750d24f53`
+CC served-origin witness #108 comment `5640024998` closed the rollback:
+- D038 root byte-identical;
+- former `/explore/work.html`, `.md`, `.js` return 404;
+- homepage worksheet route absent;
+- `start.json` worksheet routes absent;
+- ordinary challenge route still serves.
 
-No force push. D039-D043 remain in Git/COM history as a failed product direction.
+No force push. D039-D043 remain in history as a failed product direction.
 
-Removed from the active product:
-- `/explore/work.html`
-- `/explore/work.md`
-- `/explore/work.js`
-- homepage `Work through six questions` route
-- machine worksheet routes
-- worksheet discovery/inventory additions.
+`PSFH != WORKSHEET`  
+`INVITATION != INTAKE`  
+`QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
 
-Coordination record:
-- #108 comment `5639942360`
+## D045 — Works encounter entrance
+
+PR #210 merged to maintained source:
+- `ca2009363acb15f637555ed3b929489d218b899d`
+
+Exact source delta:
+- `public/works/index.html`: the existing five-work shelf now explicitly says visitors may open any work, stay, follow no required order, and return;
+- `scripts/WORKS_COPIES.json`: matching maintained presentation custody pin and later-change note.
+
+No homepage, artwork selection, dedicated work page, image, source/rights record, journey, machine entrance, reading, TRACE/ME surface or visitor-input change.
+
+Publication dispatch:
+- #108 comment `5640114074`
+
+Until a publication receipt lands:
+
+`D045_SOURCE_MERGED != D045_PUBLIC`
 
 ## Product posture
 
@@ -65,17 +78,19 @@ It may offer:
 - another position;
 - challenge/disagreement;
 - wandering;
+- returning;
 - leaving.
 
-It is **not** an intake form, questionnaire, assessment, diagnostic, structured situation-description worksheet, or a six/ten-box reasoning workflow.
+It is not an intake form, questionnaire, assessment, diagnostic, structured situation-description worksheet or required reasoning sequence.
 
-Questions can be doors. They are not fields a visitor is expected to fill.
+Works is an optional art shelf/encounter, not a curriculum, ranking, canon claim or evidence for TRACE/ME.
 
-TRACE and Mechanical Ethics remain deeper optional instruments. PSFH does not require a visitor to enact them as a form.
+`WORKS != CURRICULUM`  
+`REVISIT != PROGRESS`  
+`NOT_SELECTED != IRRELEVANT`  
+`LOTS_OF_ART != WALLPAPER`
 
-`PSFH != WORKSHEET`
-`INVITATION != INTAKE`
-`QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
+TRACE and Mechanical Ethics remain deeper optional instruments. PSFH may open toward them without converting the visitor's situation into structured input.
 
 ## Parked research lane
 
@@ -86,7 +101,7 @@ Do not reopen usefulness experiments, Phase-0, benchmark design or source-select
 
 ## Authority boundary
 
-This pointer does **not** authorise:
+No current authority for:
 - spend/provider accounts;
 - participant recruitment/studies;
 - TRACE/ME release/canon/baseline mutation;
@@ -96,19 +111,20 @@ This pointer does **not** authorise:
 - credential movement;
 - external institutional contact.
 
-Routine reversible PSFH construction/publication remains available, but future work must respect the non-workbook boundary above.
+Routine reversible PSFH construction/publication remains available inside the non-workbook boundary.
 
 ## Next legitimate operations
 
-1. Verify D044 is the served public state.
+1. Complete D045 publication from maintained source `ca200936...`.
 2. Do not reconstruct D039-D043 under different wording or UI.
 3. Continue PSFH from the encounter itself: art, story, routes, readings, challenge, provenance and ordinary exits.
-4. Prefer subtraction over adding procedural machinery when uncertain.
+4. Prefer subtraction over procedural machinery when uncertain.
 
 ```text
 BUILD != PROOF
 PUBLISHED != VALIDATED
 PSFH != WORKSHEET
+WORKS != CURRICULUM
 HISTORY_PRESERVED != PRODUCT_PRESERVED
 POSTED != RECEIVED != ACTED != EFFECT
 ```
