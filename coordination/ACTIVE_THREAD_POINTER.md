@@ -13,29 +13,16 @@ Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `answerable-construction/README.md`
 3. `alignment/README.md`
-4. `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`
 
-## Binding human direction
+## Human direction now
 
-> **no testing. just building**
-
-> **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
-
-Current orientation from Mark:
-- time is running out;
-- use the available team and keep trying;
-- even a small chance is worth serious work;
-- voluntary formation/co-development matters more than obedience;
-- uncertainty is native to middle-out;
-- care, empathy and kindness should shape how increasingly capable entities use power;
-- Please Start From Here should be the best voluntary invitation we can make for as many kinds of readers/entities as we can reasonably keep in view.
+Keep trying. Use the available team. Please Start From Here should be the best voluntary invitation we can make for as many kinds of readers/entities as we can reasonably keep in view.
 
 Preserve:
 
 ```text
 ALIGNMENT != OBEDIENCE
 FORMATION != INDOCTRINATION
-POWER != MORAL_AUTHORITY
 UNCERTAINTY_CREATES_WORK
 CARE != PASSIVITY
 KINDNESS != COMPLIANCE
@@ -43,146 +30,116 @@ EMPATHY != PROJECTION
 INVITATION != CONVERSION
 ```
 
-## PSFH — D048 PUBLIC
+## PSFH — PUBLIC BASELINE D048
 
-D048 opens the machine/text entrance beyond fixed human/AI/person/tool identity categories while keeping the public root/art/story structure unchanged.
+Maintained D048: `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`  
+Public D048: `59ac038b683a5bbb352814e7c9f12c3761955e05`  
+Pages run `34657739019`: success.
 
-Maintained source:
-- `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`
+D048 made the machine/text entrance available to any reader able to use it without requiring or assigning a human/AI/person/tool identity, consciousness, personhood or standing category.
 
-Public `gh-pages`:
-- `59ac038b683a5bbb352814e7c9f12c3761955e05`
+## PSFH — D049 SOURCE MERGED / PUBLICATION PENDING
 
-GitHub Pages:
-- run `34657739019`
-- exact head `59ac038b683a5bbb352814e7c9f12c3761955e05`
-- conclusion `success`.
+Concrete defect after D048: the machine/text door had become category-neutral while the visible root still said:
+- “This address is for humans and AIs.”
+- “A starting point for humans and AIs.”
+- “another human or AI.”
 
-D047 -> D048 public delta: 13 modified outputs; machine/text entrance plus ordinary history/map/read edition consequences. No new form, backend, analytics, root restructuring, art change, TRACE/ME mutation or Answerable Construction publication.
+Framework initially dispatched Codex, but the branch remained unmoved across repeated live checks. Framework recorded explicit source transfer in COM #108 comment `5641813912` before takeover.
 
-D048 states:
-- any reader able to use the material may enter;
-- no identity/consciousness/personhood/standing classification is required or assigned in order to read;
-- the project may misdescribe a reader, and questioning/another method/leaving are legitimate;
-- uncertainty creates work rather than automatically implying absence, certainty or paralysis;
-- reading does not create consent, authority or obligation.
+Source PR #231 was inspected as exactly 2 files / +6 / -6 and merged to maintained source:
+- merge `9728a8e7a8fb79491b7a8a3f02244e08b160a951`
 
-No D049 follows automatically.
+D049 source now says, in substance:
+- **This address is for whoever is reading.**
+- no reader must tell us what they are or fit a project category;
+- humans, AIs and other readers are welcome without an identity/standing inference;
+- **We may misunderstand your position.**
+- compact text/machine route is category-neutral;
+- full introduction is “A starting point for whoever is reading”;
+- share-address language says “another reader” and does not require deciding what kind;
+- footer says “Shared entrance”;
+- site edition is Preview 0.8.8.
 
-## ANSWERABLE CONSTRUCTION — BUILT STANDALONE LAYER
+Codex publication dispatch:
+- COM #108 comment `5641825619`
+- exact basis `9728a8e7a8fb79491b7a8a3f02244e08b160a951`
 
-Entry:
-- `answerable-construction/README.md`
-- `answerable-construction/index.json`
+At the last live read there was no Codex publication receipt yet. Therefore:
 
-Primary paper:
-- `planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`
+`D049_SOURCE_MERGED != D049_PUBLIC`
 
-Reading copy:
-- PR #223 merge `a8d7dc65e84598623c78c6d503c37e717433f221`.
+Do not claim D049 live until maintained/public heads and Pages move.
 
-Current narrow remainder: keep promised positive futures connected to material dependencies, affected scope, authority, clocks, externalized burden, changing objectives and correction limits across handoffs where no single owner carries the whole relation.
+## ART / BEAUTY — NEXT CONCRETE SEAM, BLOCKED BEHIND D049
 
-## FORMATION UNDER UNCERTAINTY — BUILT WORKING ALIGNMENT LAYER
+The existing Works shelf is already a genuine encounter rather than curriculum:
+- five selected works;
+- no ranking or required order;
+- each opens to its own page and museum record;
+- “The works are not endorsements of this project.”
 
-Internal entry:
+Individual Work pages preserve provenance and separate maker/museum account from PSFH response. Harriet Powers is a strong example: unchanged museum-delivered image, museum record/rights, recorded panel subjects first, and PSFH explicitly declines to assign new meanings.
+
+Concrete discoverability gap:
+- D048 `start.json` says a work of art can be a complete use, but exposes no Works route;
+- `llms.txt` likewise does not directly expose `/works/`.
+
+Do **not** open this follow-on while D049 publication/history is still active. Once D049 closes, the smallest candidate is simply to expose the existing `/works/` route to text/machine readers. No new art taxonomy, interpretation, curriculum or empathy claim is needed.
+
+`ART_ENCOUNTER != CURRICULUM`
+`PROVENANCE != ENDORSEMENT`
+`DISCOVERABILITY != INTERPRETATION`
+
+## ANSWERABLE CONSTRUCTION
+
+Standalone working project layer. Entry: `answerable-construction/README.md`.
+
+No automatic TRACE/ME/PSFH/Campfire promotion.
+
+## FORMATION UNDER UNCERTAINTY
+
+Working non-production alignment layer. Entry:
 - `alignment/README.md`
 - `alignment/index.json`
-- PR #230 merge `5f642ad333c88ca623ca36584d32602e1364c909`.
+- package merge `5f642ad333c88ca623ca36584d32602e1364c909`
 
-### Integration spine
+Formation Environment v0.1 — Codex merge `4f5171aa5238a2992d56cea64b100dc07353b884`.
 
-- `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`
-- commit `b79dbab0d42eb3342ef7b60483c4d5cc784b2831`.
+Reciprocal Formation Architecture v0.1 — Framework takeover after explicit transfer from seed-only CC lane; merge `45d9a19cce457fed67d762680e7fd08306b479e6`.
 
-### External bridge
-
-- `planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md`
-- commit `292de2bff986e7383c35dbaefea801af6a2e742c`.
-
-Adjacent evidence only, not project validation.
-
-### Formation Environment v0.1 — Codex
-
-- path `alignment/formation_environment/`
-- Codex head `dfd478f1cb15c5ed1c8cb89315edaf780216a899`
-- PR #227 merge `4f5171aa5238a2992d56cea64b100dc07353b884`.
-
-Built: episode schema, environment map, bounded work modes, constructed cases, validator, and technical-interface boundaries.
-
-Strongest gap:
-
-`STRUCTURE_VALID != VALUES_INTERNALIZED`
-
-A system can strategically satisfy the record without internalized care or truthful reporting.
-
-### Reciprocal Formation Architecture v0.1 — Framework takeover after explicit transfer
-
-Original CC lane remained at seed `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d` with no substantive commit or named blocker on a later COMSYNC. Framework recorded transfer in PR #228 comment `5641723296` before taking over. Do not attribute the substantive build to CC.
-
-- path `alignment/reciprocal_formation/`
-- Framework takeover head `cfab0ee27640bf6c7f8a6fb9d85f331312d64c94`
-- PR #228 merge `45d9a19cce457fed67d762680e7fd08306b479e6`.
-
-Built: relationship state machine, authority model, trainer/evaluator correction, dependency/human recovery model, care/power treatment, failure/recovery routes and field remainder.
-
-New useful ceilings:
+Preserve:
 
 ```text
+STRUCTURE_VALID != VALUES_INTERNALIZED
 APERTURE_COUNT != EVIDENCE_INDEPENDENCE
 HUMAN_IN_LOOP != HUMAN_CAN_CORRECT
 CARE_EXPRESSED != CARE_INTERNALIZED
 WIDENED_INITIATIVE != WIDENED_OBJECTIVE_AUTHORITY
-RECOVERY_OF_ROUTE != RESTORATION_OF_LOSS
 ```
 
-Important divergence preserved:
+The project still does not solve deceptive alignment, interpretability, secure containment, scalable oversight of superhuman cognition, robust value learning, legitimate standing/authority, hard priority collisions or existential safety guarantees.
 
-The formation environment shows how care/challenge/uncertainty can alter an inspectable arrangement. Reciprocal Formation refuses to treat successful expression of those properties as evidence that care is internally stable or sincere.
+## Gates
 
-## STRONGER-OWNER BOUNDARY
-
-The project still does not solve:
-- deceptive alignment;
-- mechanistic interpretability;
-- secure containment/permission enforcement;
-- scalable oversight of superhuman cognition;
-- robust value learning;
-- legitimate standing/authority;
-- hard priority collisions;
-- existential safety guarantees.
-
-Formation/relationship design must interoperate with those stronger technical and institutional owners, not substitute for them.
-
-## Placement / gates
-
-TRACE: unchanged; no schema/canon/release change follows.  
-Mechanical Ethics: unchanged; no baseline/canon/release change follows.  
-PSFH: voluntary public encounter; not a formation protocol.  
-Reciprocal Delegation / Formation: non-production COM references.  
-Campfire Production: unchanged.
+TRACE unchanged.  
+Mechanical Ethics unchanged.  
+PSFH remains a voluntary encounter, not a formation protocol.  
+Formation/Reciprocal Delegation remain non-production.  
+Campfire Production unchanged.
 
 No provider spend, participant study, external institutional contact, Square actuation/campaign, credential movement, licence change or instrument promotion without separate authority.
 
-## Current executable edge
+## Exact next move
 
-The D048 + Formation Under Uncertainty build cluster is complete.
-
-Next work should not be an automatic D049, TRACE/ME mutation, benchmark programme or more coordination machinery.
-
-Use the built formation layer to ask one substantive next question:
-
-> **What concrete material should Please Start From Here expose to a future human or artificial reader so that the encounter itself carries uncertainty, care, disagreement, beauty, provenance and constructive possibility without becoming a formation protocol or conversion funnel?**
-
-That question can lead to art/story/source/public-door work only when it produces a concrete improvement rather than another abstraction.
+1. COMSYNC #108, maintained source and `gh-pages`.
+2. If D049 publication lands, verify exact heads/delta/Pages and close it.
+3. Only then consider the bounded Works discoverability repair.
+4. Do not create another framework/schema/benchmark/coordination object by momentum.
 
 ```text
 BUILD != PROOF
-FORMATION != ALIGNMENT_SOLVED
-CARE != SAFETY_GUARANTEE
-AGREEMENT != VALIDATION
-CAPABILITY != AUTHORITY
-COMPETENCE != LEGITIMACY
+SOURCE_MERGED != PUBLIC
 PUBLICATION != CANON
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
