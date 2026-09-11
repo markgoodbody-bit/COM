@@ -2,12 +2,14 @@
 
 Status: **SOURCE-MECHANICS BUILD / PRE-EXECUTION / NO REAL SOURCE INGESTION / NO CASE SELECTION / NO STUDY**  
 Date: 11 September 2026, Europe/London  
-Basis COM main: `e5ce9e955dfbf187992604e47109e218e7341bc1`
+Basis COM main: `e5ce9e955dfbf187992604e47109e218e7341bc1`  
+Current draft implementation: PR #200 / `framework/phase0-ico-source-validator-20260911`
 
 Related live coordination:
 - COM #119 — usefulness comparison;
 - Framework source disposition `5638466251` — `REPAIR_MECHANICS`;
 - Framework Codex browser-mechanics dispatch `5638562078`;
+- Framework validator build receipt `5638671738`;
 - Phase-0 v3.2 source object + v3.3 privacy repair on current `main`.
 
 ## Purpose
@@ -26,7 +28,7 @@ It supports three operations:
    Reads one local CSV snapshot and reports exact byte length, SHA-256, UTF-8 BOM state, ordered header row and row count.
 
 2. `validate <csv> <contract.json>`  
-   Requires a separately frozen contract containing exact snapshot identity, exact ordered headers, required field names, one closed completion-date window, the exact DN-served value and the development-exposure exclusion list. It fails closed on identity/schema/date/duplicate-reference defects and emits a deterministic **source manifest only**.
+   Requires a separately frozen contract containing exact snapshot identity, exact ordered headers, required field names, one closed completion-date window, the exact DN-served value and the development-exposure exclusion list. It fails closed on identity/schema/date/duplicate-reference defects and emits a deterministic **source manifest only**. The manifest carries the exact contract file byte length and SHA-256 as well as the source identity, so the selector contract itself remains replayable.
 
 3. `self-test`  
    Runs embedded synthetic positive and negative controls. No public source is touched.
@@ -36,7 +38,8 @@ It supports three operations:
 Current public/owner evidence supports the following propositions without selecting any case:
 
 - ICO publishes completed FOI/EIR complaints data in reusable form;
-- current ICO material describes the publication as monthly CSV;
+- the current owner page says each line represents a piece of work undertaken and describes the completed data as cases, organisations, sectors and decisions;
+- current ICO material describes publication as monthly CSV;
 - published owner material identifies `Completed Date`, `Decision`, `Decision Primary Reason`, and `Decision Detail 1`, with `Decision Detail 1` indicating when a Decision Notice was served;
 - ICO website text is reusable under OGL v3.0 except where otherwise stated, with attribution;
 - exact-reference Decision Notice lookup is plausible but is not yet established as a total stable one-to-one join;
@@ -46,13 +49,13 @@ The validator therefore does **not** invent the missing export URL or header nam
 
 ## Frozen-contract schema
 
-A later real-data contract must contain:
+A later real-data contract must contain exactly these keys:
 
 ```json
 {
   "schema_version": 1,
   "source_url": "<exact resolved completed-FOI/EIR CSV URL>",
-  "retrieval_utc": "<ISO timestamp>",
+  "retrieval_utc": "<ISO-8601 UTC timestamp>",
   "expected_byte_length": 1,
   "expected_sha256": "<64 hex chars>",
   "expected_headers": ["<exact ordered CSV header row>"],
@@ -67,36 +70,52 @@ A later real-data contract must contain:
 }
 ```
 
-Placeholders are documentation only. A real contract must carry the actual frozen values; do not create a permissive wildcard contract.
+Placeholders are documentation only. A real contract must carry the actual frozen values; do not create a permissive wildcard contract. Unknown contract keys fail closed rather than silently extending the selector.
 
 ## Fail-closed rules implemented
 
 The validator rejects:
 
 - non-UTF-8/UTF-8-BOM CSV input;
+- NUL bytes in decoded CSV input;
 - absent, empty or duplicate header names;
+- malformed CSV quoting detectable by strict parsing;
 - malformed rows with extra unnamed fields;
+- short rows with fewer fields than the header;
 - byte-length or SHA-256 mismatch;
 - any ordered-header mismatch;
 - missing required headers;
+- a contract with missing or unknown keys;
+- a non-HTTPS or non-absolute source URL;
+- a retrieval timestamp without explicit UTC or with a non-zero offset;
 - malformed or inverted date windows;
-- duplicate exclusion entries;
+- malformed contract value types / empty control strings;
+- duplicate or whitespace-drifted exclusion entries;
 - blank references on `DN served` rows;
 - blank or unparsable completion dates on `DN served` rows;
 - duplicate `DN served` references in the snapshot.
 
-The output preserves source row order. It does **not** rank references.
+The parser preserves valid quoted multiline CSV fields rather than splitting physical lines before CSV parsing.
+
+The output preserves source record order. It does **not** rank references.
+
+### Duplicate-reference ceiling
+
+Current v0.1 treats a repeated reference among rows marked `DN served` as source ambiguity and fails closed. It does **not** yet assert that every reference in the entire ICO snapshot is globally unique, because that stronger property has not been established from the owner documentation available so far.
+
+If live source inspection later shows the same reference can occur once as `DN served` and elsewhere with a different `Decision Detail 1`, that is a new source-integrity question and must be resolved explicitly before `ICO_ENUMERABLE`; do not let the validator silently choose one row.
 
 ## Output boundary
 
 A successful `validate` operation may report:
 
 - exact frozen source identity;
+- exact frozen selector-contract identity;
 - exact headers and total row count;
 - total `DN served` rows;
 - `DN served` rows inside the pre-frozen closed window;
 - development-excluded rows encountered;
-- the mechanically eligible reference universe in original source-row order.
+- the mechanically eligible reference universe in original source-record order.
 
 It explicitly does **not** establish:
 
@@ -126,9 +145,9 @@ frozen completed CSV row
 
 This validator deliberately does not implement that network join because current work has not yet established the stable live interface contract, and because combining source acquisition, search and source selection would enlarge the execution surface unnecessarily.
 
-## Local verification on this build
+## Local verification on the hardened build
 
-Performed before repository write:
+Performed before / during PR #200 construction:
 
 ```text
 python PSFH_PHASE0_ICO_SNAPSHOT_VALIDATOR_V0_1.py self-test
@@ -144,7 +163,17 @@ The self-test uses synthetic CSV bytes only. It checks:
 - one non-DN row;
 - one DN row outside the synthetic window;
 - exact-hash mismatch fails closed;
-- duplicate DN reference fails closed.
+- duplicate DN reference fails closed;
+- a valid quoted multiline field survives intact;
+- a short malformed row fails closed;
+- an unknown contract key fails closed;
+- a non-UTC retrieval timestamp fails closed.
+
+Framework self-review also corrected four concrete defects before external review:
+1. line-splitting before CSV parsing could corrupt quoted multiline fields;
+2. short CSV rows could be silently padded;
+3. permissive contract shape could allow unnoticed selector drift;
+4. the initial manifest hashed the source but not the exact selecting contract.
 
 ## Current source disposition
 
@@ -156,6 +185,7 @@ No source window, real dataset row, Decision Notice body, ranking, participant, 
 
 ```text
 CODE_EXISTS != SOURCE_FROZEN
+CONTRACT_HASHED != CONTRACT_JUSTIFIED
 SOURCE_MANIFEST != CASE_SELECTION
 MONTHLY_CSV_EXISTS != RESOLVED_EXPORT_FROZEN
 JOIN_RULE_WRITTEN != JOIN_VERIFIED
