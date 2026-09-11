@@ -76,6 +76,7 @@ export default function Home() {
             <div className="journey-options">
               <a href="/explore/nodes/change.html">Understand what is happening</a>
               <a href="#step-future">Explore something I want to make or change</a>
+              <a href="/explore/work.html">Work through six questions</a>
             </div>
           </section>
           <section data-step="future" id="step-future">
