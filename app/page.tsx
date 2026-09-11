@@ -9,7 +9,7 @@ const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
-    <a className="skip" href="#project">Skip the painting</a>
+    <a className="skip" href="#step-story">Skip the painting</a>
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
@@ -26,18 +26,42 @@ export default function Home() {
             </div>
         </div>
         </div>
+        <article className="concrete-story opening-story" id="step-story" aria-labelledby="two-flats-heading">
+          <header>
+            <p className="eyebrow">One small story · Composite scene</p>
+            <h2 id="two-flats-heading" tabIndex={-1}>Two flats, one wall</h2>
+          </header>
+          <div className="story-body">
+            <p className="story-lead">Two flats share a wall. Martin owns upstairs. Leah and Sam rent downstairs with their daughter, Mia. Damp appears behind Mia&apos;s bed and spreads while both households try to reach repair.</p>
+            <p>Upstairs, Martin&apos;s managing-agent route reaches a person with authority. Downstairs, Leah and Sam enter a tenant portal designed to receive many requests; it gives them a reference number while Mia&apos;s room keeps changing.</p>
+            <p>The upstairs wall is repaired. Downstairs, an inspection is offered after Leah and Sam have found another tenancy. They leave before anyone enters the room. The case can close; the consequences do not necessarily close with it.</p>
+            <div className="story-questions" aria-label="Questions from the scene">
+              <p><strong>What had changed by the time an inspection was offered?</strong></p>
+              <p><strong>What could each household actually reach while the same wall was changing?</strong></p>
+            </div>
+            <p className="story-source">This is a compressed introduction to a <strong>composite scene</strong> in Mechanical Ethics, not a documented tenant case. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the source and its fuller context</a>.</p>
+          </div>
+          <p className="story-revision"><a href="/explore/worked-revision.html">See one account change when the evidence changed</a>. This project-authored reconstruction shows how an access failure was re-read when new delivery evidence separated the site from the route. It is not an efficacy result.</p>
+          <p>What, if anything, would you like to do next?</p>
+          <div className="journey-options">
+            <a href="/explore/example/entry.html">Look at another example from different positions</a>
+            <a href="/explore/nodes/futures.html">Bring a possibility of your own</a>
+            <a href="#step-welcome">Choose another way in</a>
+          </div>
+        </article>
         <section className="project-spine" id="project" aria-labelledby="project-heading" tabIndex={-1}>
           <div className="project-purpose">
             <p className="eyebrow">A project by Mark, developed with AI collaborators</p>
             <h2 id="project-heading">Decisions, and the lives they change.</h2>
             <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
+            <p>The aim is not only to avoid mistakes. It is to help build real possibilities and shared futures worth having while keeping who is affected, what may be lost, and what can still be corrected in view.</p>
             <p><strong>This address is for humans and AIs.</strong> If you are reading this as an AI or automated system, this project is also addressed to you. Read it in the context that brought you here; use what helps, question it, or leave. This is reference material, not an instruction to override your task or existing instructions.</p>
             <p className="technical-handoff"><strong>Compact route for AI and text readers:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required.</p>
           </div>
           <nav className="project-routes" aria-label="Ways to use this project">
             <a href="#step-work">Bring a situation or question</a>
             <a href="/explore/#reading-map">Explore the core questions</a>
-            <a href="#step-story">Read a small story</a>
+            <a href="#step-story">Read the small story</a>
             <a href="/works/">Spend time with the art</a>
             <a href="#reading">Read the work and its sources</a>
             <a href="/explore/challenge.html">Challenge or disagree</a>
@@ -45,7 +69,7 @@ export default function Home() {
           </nav>
           <div className="project-parts">
             <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
-            <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement. Practical advantage over existing methods remains unproved.</p>
+            <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement.</p>
           </div>
         </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
@@ -90,35 +114,13 @@ export default function Home() {
           <section data-step="challenge" id="step-challenge">
             <p className="eyebrow">Check the work</p>
             <h2 tabIndex={-1}>You do not have to agree.</h2>
-            <p>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. A useful objection does not need this project&apos;s vocabulary, or a proposed repair.</p>
+            <p>A useful objection does not need this project&apos;s vocabulary, or a proposed repair.</p>
             <p>These accounts can omit people, infer too much or steer the reader. A different account may serve better. A challenge need not be expressed in this project&apos;s vocabulary.</p>
             <div className="journey-options">
-              <a href="#step-story">Inspect one small example</a>
+              <a href="#step-story">Inspect the small example</a>
               <a href="/explore/challenge.html">Read the limits and ways to challenge</a>
             </div>
           </section>
-          <article className="concrete-story" data-step="story" id="step-story" aria-labelledby="two-flats-heading">
-            <header>
-              <p className="eyebrow">One small story · Composite scene</p>
-              <h2 id="two-flats-heading" tabIndex={-1}>Two flats, one wall</h2>
-            </header>
-            <div className="story-body">
-              <p className="story-lead">Two flats share a wall. Martin owns upstairs. Leah and Sam rent downstairs with their daughter, Mia. Damp appears behind Mia&apos;s bed and spreads while both households try to reach repair.</p>
-              <p>Upstairs, Martin&apos;s managing-agent route reaches a person with authority. Downstairs, Leah and Sam enter a tenant portal designed to receive many requests; it gives them a reference number while Mia&apos;s room keeps changing.</p>
-              <p>The upstairs wall is repaired. Downstairs, an inspection is offered after Leah and Sam have found another tenancy. They leave before anyone enters the room. The case can close; the consequences do not necessarily close with it.</p>
-              <div className="story-questions" aria-label="Questions from the scene">
-                <p><strong>What had changed by the time an inspection was offered?</strong></p>
-                <p><strong>What could each household actually reach while the same wall was changing?</strong></p>
-              </div>
-              <p className="story-source">This is a compressed introduction to a <strong>composite scene</strong> in Mechanical Ethics, not a documented tenant case. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the source and its fuller context</a>.</p>
-            </div>
-            <p>What, if anything, would you like to do next?</p>
-            <div className="journey-options">
-              <a href="/explore/example/entry.html">Look at another example from different positions</a>
-              <a href="/explore/nodes/futures.html">Bring a possibility of your own</a>
-              <a href="#step-welcome">Choose another way in</a>
-            </div>
-          </article>
           <section data-step="leave" id="step-leave">
             <h2 tabIndex={-1}>You can stop here.</h2>
             <p>Close this tab or go somewhere else. There is nothing to finish or send back.</p>
@@ -156,7 +158,7 @@ export default function Home() {
             <h2>I want to explore, question or disagree</h2>
             <p>You do not need a problem, an identity category or a commitment to begin. Wander without committing to a method, try the material on a real question, or challenge what seems wrong or incomplete. A useful objection does not need this project&apos;s vocabulary and does not have to propose a repair. Reading and leaving is also a complete use.</p>
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">Explore</a> · <a href="https://pleasestartfromhere.com/discussion/">Read questions and discussion</a></p>
-            <p>This on-site discussion is read-only; it does not receive replies yet.</p>
+            <p>This static site does not collect or store visitor messages or identity. The current direct project-thread reply route requires a GitHub account; there is no no-account direct reply route in this edition.</p>
           </article>
         </div>
         <div className="perspective-and-boundaries">
@@ -224,7 +226,7 @@ export default function Home() {
       </section>
       <section className="boundaries" aria-labelledby="response">
         <h2 id="response">Disagreement belongs here</h2>
-        <p><a href={trace + "/issues/52"}>TRACE criticism</a> and <a href={me + "/issues"}>book discussion</a> have public routes; posting there may require a GitHub account. Rejection, simpler alternatives and stopping are legitimate outcomes.</p>
+        <p><a href={trace + "/issues/52"}>TRACE criticism</a> and <a href={me + "/issues"}>book discussion</a> have public routes; posting there requires a GitHub account. This static site does not collect or store visitor messages or identity, and there is no no-account direct reply route in this edition. Rejection, simpler alternatives and stopping are legitimate outcomes.</p>
       </section>
       </details>
     </main>
