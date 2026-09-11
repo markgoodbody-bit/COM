@@ -12,6 +12,7 @@
     "seed": "/seed.txt",
     "orientation": "/llms.txt",
     "map": "/manifest.json",
+    "shared_reading": "/",
     "human_reading": "/",
     "navigation_enhancement": "/journey.js",
     "change_history": "/changes.html",
@@ -85,6 +86,9 @@
     "welcome_subtraction": {
       "source_patch": "129a58d08b504016c82188cf299ecedaf0a040d4",
       "scope": "Former orientation becomes default welcome; separate Continue gate removed. Seven journey states, unchanged navigation script. No measured reader benefit."
+    },
+    "shared_root_label": {
+      "scope": "The canonical root is named as shared reading for humans and AI readers. The older human_reading route key is retained as a compatibility alias; both resolve to the same public root."
     }
   },
   "boundaries": [
