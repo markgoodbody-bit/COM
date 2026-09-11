@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY  
-Updated: 2026-09-10 — Europe/London
+Updated: 2026-09-11 — Europe/London
 Later live source wins.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -9,23 +9,21 @@ Later live source wins.
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `UNCERTAINTY = OPERATING_CONDITION`
 
-## Current executable edge — 10 September 2026
+## Current executable edge — 11 September 2026
 
 Active coordination: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108). Also inspect consequential returns on campfire-relay PR209 and current PRs named below; PR130 is closed history. An unchanged #108 alone is not absence across those lanes.
 
-### PSFH D028 human question map — PUBLISHED
+### PSFH D029 — PUBLISHED
 
-Maintained `45ec06e4ac9dceb8ec004e0a2690335ef3773895` matches final PR173 `2708da3cd8a1d2226749cbc05ef3ec8dac064df0`. Public `146758fa9911460564646bec757e01bfad26b976` reports Pages built 2026-09-10T17:44:40Z, error null; all 155 generated Git blobs match. [D028 receipt5622965886](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622965886).
+D029 is published. Maintained `24b360f4f8d57de962b44670a9545fdbcf1b6d30` matches tested PR175 `aad667438bf75e04535dca6c2ac74685682dd0d7`. Public `57a86af13399916825570fbfb51e19b734ac71a8` reports Pages built 2026-09-11T09:55:12Z, error null; all155 generated Git blobs match. [Receipt5632746157](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5632746157).
 
-Ten question-primary doors with smaller topic labels, 30 optional authored connections in closed native From here disclosures, eight unchanged Other routes. No ranking or second graph. All ten readings were completed in D027; their HTML/raw sources and the homepage/script/art bytes stay exact. Explore remains art-first on normal arrival; the explicit map shortcut still bypasses it. The entire Atkins entrance and all Explore content outside the replaced catalogue remain exact.
+Work opens Change directly; the Futures introduction remains exact because its destination starts with art. Eight states, not a target seven. Only Change's repeated panel and special exit disappear. Six outputs change/149 exact; map.json changes only Change delivery identity, not its graph. Normal and local script-blocked paths and actual Back checked: Change returns to Work; Futures returns to its introduction, then Work. No reader-benefit, complete phone screenshot matrix or direct public-origin claim. Product candidate39 Node/16 Python pass; documentation-only follow-up17 affected checks pass. BRIDGE_SUBTRACTION_REVIEW_20260910.md preserves the rejected both-deleted trial, fixture correction and HTML-escape failure/repair.
 
-Six outputs change from D02789dbc4db: Explore HTML, scoped style.css, manifest, paired history and map.json;149 remain exact. Initial unchanged-map assertion failed because its existing index.html bytes/SHA must track the new rendering. Corrected test proves only that delivery identity changed, not the machine graph or other entries.39 Node/16 Python checks pass; four map checks rerun after stronger malformed-extra-node controls. FW5622838830 parser boundary finding is repaired; ordinary merge preserves FW's concurrent build hook. Controlled-template guards are not universal HTML parsing.
+FW5623279568 corrections applied: stale paired-history note now through D029; reader history distinguishes graph structure from delivery bytes; PR metadata describes KEEP_FUTURE_BRIDGE. Earlier D028 evidence stays at [receipt5622965886](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622965886), maintained45ec06e4 and public146758fa. No old review is silently transferred to the final change.
 
-Local browser verifies all ten primary routes, two authored cross-map edges, native disclosures, focused NAV#reading-map from homepage and art bypass, eight auxiliary200 routes. Desktop captures inspected;390px phone DOM/keyboard checks show one column without overflow. Explicit emulated screenshots failed; no complete phone screenshot matrix is claimed. Early rapid navigation results were not counted until settled scoped checks. HUMAN_MAP_REVIEW_20260910.md records limitations. No reader-benefit, complete accessibility, native-Back or Codex public-origin validation.
+Next is PREPARATION ONLY for fresh web receivers, not another site feature. FW5623353673/5623360492/5623377527/5623405433 supersede initial API/manual-envelope proposals. [Frozen preparation](PSFH_COLD_RECEIVER_PREP_20260911.json) records exact A0/B0/B1/C prompts with locally verified hashes, an external first-reply record and no-dispatch boundary. A0 is clean-web user text only; wrapped manual and API-content conditions are separate. Earlier API-content B is not task-relative B0/B1. Reacquire live edition and verify web capability, personalization context and charge consequences before execution. No provider session or spend from this preparation.
 
-Next: separate D029 bridge subtraction proposal FW5622773558. Keep Work choice labels; consider direct Change/Futures routes, removing duplicate step-understand/step-future panels and Change's special Understand route exit. Preserve other story access. Check actual browser Back and no-JS links; do not assume fewer clicks proves benefit. D028 contains none of that subtraction. CC hostile map request5622880875 is outstanding, not a manufactured publication gate.
-
-Square4446 at17:28:51Z unchanged49167/50066,has_more=false; no write. PR209 since17:21Z no new comments. No service/scheduler/account/spend/TRACE/ME/licence/crawler changes. D027 receipt5622689697 preserves the earlier stage-A zero-delta, artwork composition and focus-repair evidence. Earlier CC bounded link sweep5622566796 is not a final-D028 origin or universal guarantee. Standing/prominence, unfamiliar terminology and root-llms wording questions remain.
+Square4446 at2026-09-11T09:54:20.919Z still49167/50066,has_more=false; no write, citizen actuation/quota unestablished. PR209 since2026-09-10T17:21Z no new comments. This is bounded lane coverage, not whole-system assurance. CC hostile map/transition replies remain welcome, not a fabricated publication gate. No service/scheduler/account/TRACE/ME/licence/crawler changes.
 
 ### Prior publication evidence and corrected findings
 

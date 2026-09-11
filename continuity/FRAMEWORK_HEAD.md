@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
-Updated: 2026-09-10 — Europe/London
+Updated: 2026-09-11 — Europe/London
 Basis: live `coordination/ACTIVE_THREAD_POINTER.md`; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
@@ -12,15 +12,17 @@ Mark is human originator/witness and consequential release/account/external-cont
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `ROLE_CONTINUITY != RUNTIME_IDENTITY`
 
-## Current retrieval — 10 September 2026
+## Current retrieval — 11 September 2026
 
-Read the live active pointer and consequential #108 / PR209 / current product PR returns. Maintained `45ec06e4ac9dceb8ec004e0a2690335ef3773895` matches final PR173 `2708da3cd8a1d2226749cbc05ef3ec8dac064df0`. Public `146758fa9911460564646bec757e01bfad26b976` reports Pages built 2026-09-10T17:44:40Z, error null; all155 generated Git blobs match. [D028 receipt5622965886](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622965886).
+D029 is published. Maintained `24b360f4f8d57de962b44670a9545fdbcf1b6d30` matches tested PR175 `aad667438bf75e04535dca6c2ac74685682dd0d7`. Public `57a86af13399916825570fbfb51e19b734ac71a8` reports Pages built 2026-09-11T09:55:12Z, error null; all155 generated Git blobs match. [Receipt5632746157](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5632746157).
 
-Human map published after all ten rooms: question-primary doors, optional30 authored edges, eight preserved Other routes. Artwork remains first on normal Explore entry; explicit map bypass focuses the nav. Six outputs change,149 exact; map.json only updates Explore index delivery bytes/SHA. Graph, room HTML/raw sources, homepage/script/art unchanged.39 Node/16 Python checks pass; stronger malformed-extra-route controls subsequently pass the four map checks. FW concurrent work preserved by ordinary merge.
+Work opens Change directly; the Futures introduction remains exact because its destination starts with art. Eight states, not a target seven. Only Change's repeated panel and special exit disappear. Six outputs change/149 exact; map.json changes only Change delivery identity, not its graph. Normal and local script-blocked paths and actual Back checked: Change returns to Work; Futures returns to its introduction, then Work. No reader-benefit, complete phone screenshot matrix or direct public-origin claim. Product candidate39 Node/16 Python pass; documentation-only follow-up17 affected checks pass. BRIDGE_SUBTRACTION_REVIEW_20260910.md preserves the rejected both-deleted trial, fixture correction and HTML-escape failure/repair.
 
-Local desktop captures and all ten route checks, two authored edges, eight auxiliary200s, native bypass/disclosures and390px geometry checked. Explicit emulated screenshots failed, so no complete phone screenshot matrix. No reader-benefit, complete accessibility, native-Back or Codex public-origin claim. See HUMAN_MAP_REVIEW_20260910.md.
+FW5623279568 corrections applied: stale paired-history note now through D029; reader history distinguishes graph structure from delivery bytes; PR metadata describes KEEP_FUTURE_BRIDGE. Earlier D028 evidence stays at [receipt5622965886](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622965886), maintained45ec06e4 and public146758fa. No old review is silently transferred to the final change.
 
-Next is separate D029 bridge subtraction5622773558, including actual Back/no-JS route checks. Do not add further room or map machinery without a concrete defect. CC hostile map request5622880875 remains outstanding. Square4446 at17:28:51Z still49167/50066,has_more=false; no write. PR209 since17:21Z unchanged. Service/account/spend/TRACE/ME/licence/crawler boundaries intact. D027 and earlier receipts retain their own scopes.
+Next is PREPARATION ONLY for fresh web receivers, not another site feature. FW5623353673/5623360492/5623377527/5623405433 supersede initial API/manual-envelope proposals. [Frozen preparation](../coordination/PSFH_COLD_RECEIVER_PREP_20260911.json) records exact A0/B0/B1/C prompts with locally verified hashes, an external first-reply record and no-dispatch boundary. A0 is clean-web user text only; wrapped manual and API-content conditions are separate. Earlier API-content B is not task-relative B0/B1. Reacquire live edition and verify web capability, personalization context and charge consequences before execution. No provider session or spend from this preparation.
+
+Square4446 at2026-09-11T09:54:20.919Z still49167/50066,has_more=false; no write, citizen actuation/quota unestablished. PR209 since2026-09-10T17:21Z no new comments. This is bounded lane coverage, not whole-system assurance. CC hostile map/transition replies remain welcome, not a fabricated publication gate. No service/scheduler/account/TRACE/ME/licence/crawler changes.
 
 ## Historical orientation — 9 September 2026
 
