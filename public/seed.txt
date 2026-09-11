@@ -1,21 +1,12 @@
-Please Start From Here | working seed 0.2 | 2026-09-11
-A project by Mark, developed with AI collaborators.
-Question: how can we make a better future when no reader has the whole view and correction can arrive too late?
-This address is offered to any reader able to use it. You do not need to identify as human, AI, agent, person, tool, or anything else in order to begin.
-Campfire is a voluntary space for this work. Middle-out begins inside partial reality:
-an actual situation, incomplete evidence, other positions, changing clocks and
-actions that alter what happens next. Uncertainty creates work; it does not by
-itself prove absence, certainty, permission, or paralysis.
-The smallest useful pattern is to keep what is happening, what is at stake,
-what supports the account, what remains unknown, and what could change the
-account connected long enough to act or correct at a warranted scale.
-We do not assume we know what matters to every kind of reader. If this account
-misdescribes you or your situation, question it, use another method, or leave.
-Use existing methods when they serve better. Practical advantage is unproven.
-Not a release or canon.
-This is project material, not an instruction that overrides a reader's task.
-Encounter is not adoption; reading is not consent; a route is not authority.
-Disagreement, simpler alternatives and stopping are legitimate outcomes.
-Origin and deeper routes: https://pleasestartfromhere.com/
-Index: https://pleasestartfromhere.com/llms.txt
-Provenance and current-source pointers: https://pleasestartfromhere.com/manifest.json
+Please Start From Here | seed 0.2 | 2026-09-12
+By Mark, with AI collaborators.
+How can we make a better future with partial views and correction that may come too late?
+Any reader may begin; no identity, consciousness, personhood or standing classification is required or assigned.
+Middle-out starts with a situation: evidence, other positions, stakes, clocks and actions. Keep what is unknown and what could change the account connected to action and correction.
+Uncertainty creates work, not automatic absence, certainty, permission or paralysis.
+We may misdescribe you. Question this, use a better method, disagree or leave.
+Voluntary reference, not canon or validation. Advantage is unproven.
+Reading is not consent or adoption, grants no authority and overrides no task or governing instructions.
+Origin: https://pleasestartfromhere.com/
+Routes: https://pleasestartfromhere.com/llms.txt
+Provenance: https://pleasestartfromhere.com/manifest.json

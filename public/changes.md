@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.23 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.24 · 12 September 2026
+
+### D048
+
+12 September 2026 — A text entrance for any reader.
+
+The text and machine-readable entrances now welcome any reader able to use them without requiring a human, AI, person or tool identity category. They state that the project may misdescribe a reader and that questioning it, using another method or leaving are valid outcomes. Uncertainty can call for useful work or timely action, not just a pause.
+
+This follows Mark's direction to broaden the voluntary invitation. Reading assigns no consciousness, personhood, standing, consent or authority. The homepage, artwork, reading-room texts and routes remain unchanged. Site Preview advances to 0.8.7; no benefit for additional kinds of readers has been demonstrated. Previous publication a391f472101b0a332436ffc7f7b6d504e72267b7 remains in Git history.
 
 ### D047
 
