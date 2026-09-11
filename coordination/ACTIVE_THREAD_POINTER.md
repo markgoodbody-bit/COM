@@ -26,56 +26,64 @@ plus
 
 The working target is **answerable construction under uncertainty**: worthwhile and viable shared futures, including commitments that may close some paths, while power, exclusion, loss, goal revision and correction remain visible and contestable.
 
-## Current executable edges — 11 September 2026
+## Current executable edge — Open Horizon positive construction
 
-### EDGE A — finish D045, then stabilise the Door
+### PSFH / Door is stable after D045
 
-COM #108 remains the PSFH coordination surface.
-
-Human directions:
+Human directions remain binding:
 
 > **no testing. just building**
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-D044 closed the D039-D043 worksheet/scratchpad mistake on the canonical origin. Those objects remain history, not active product.
+D044 closed the D039-D043 worksheet/scratchpad mistake on the canonical origin.
 
-D045 PR #210 is merged into maintained source:
-- `ca2009363acb15f637555ed3b929489d218b899d`
-- source delta: Works shelf entrance + matching Works custody pin only;
-- publication dispatch: #108 `5640114074`;
-- do not call D045 public until receipt.
+D045 is now published:
+- maintained source `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
+- public `gh-pages` `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`;
+- exactly four of 155 outputs changed: `works/index.html`, `changes.md`, `changes.html`, `manifest.json`;
+- root, artworks, individual work pages, routes, machine entrances and withdrawn worksheet surfaces remain unchanged.
 
-After D045 publication, hold routine PSFH micro-optimisation. Reopen Door source only for a concrete defect, explicit human direction, or genuinely new project content worth sharing.
+PSFH now holds unless one of these occurs:
+- concrete defect;
+- explicit human direction;
+- genuinely new project content worth sharing.
+
+Do not generate routine Door micro-optimisation merely to keep building.
 
 `PSFH != WORKSHEET`
 `WORKS != CURRICULUM`
 `QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
 
-### EDGE B — Open Horizon positive-construction synthesis
+### Main frontier object
 
-This is the next project-level intellectual build.
+`planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md`
+
+Exact creation commit:
+- `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`
 
 Question:
 
 > **How can bounded entities build worthwhile shared capabilities and durable commitments while preserving enough answerability and correction to avoid domination when values, standing and goals can change?**
 
-Learn from established owners before inventing local machinery. Current relevant quarry includes capability theory, viability, affordances/enactivism, commons/polycentric governance, adaptive pathways, just transition, relational trust/entrustment, reciprocal formation and goal revision.
+Differentiated challenge dispatched in COM #74 comment `5640200249`:
+- Codex: human institutional transition;
+- Claude Code: human–AI co-development;
+- Framework: ecological/climate transformation.
 
-Important existing distinctions:
+Framework ecological attack is preserved separately:
+- `planning/ANSWERABLE_CONSTRUCTION_ECOLOGICAL_ATTACK_20260911.md`
+- exact commit `af0cab8825043f9f590a0429a9ac3f57bfa92f67`.
 
-- `OPTION_PRESERVATION != CAPABILITY_CREATION`
-- `REACHABLE != VIABLE`
-- `COMMITMENT_CLOSES_PATHS AND MAY CREATE_NEW_PATHS`
-- `COLLECTIVE_RULE != DOMINATION`
-- `COMPETENCE != LEGITIMACY`
-- `TRUST IS RELATIONAL + CONTEXTUAL`
-- adaptive means do not settle legitimate goal revision;
-- participation can matter before standing is settled;
-- the learner may need to correct the teacher;
-- human correction capacity must not collapse as AI capability rises.
+Material repair already found:
+- direct answer-back is not portable to all future/nonhuman affected scopes;
+- answerability is not reversibility;
+- physical thresholds can make correction impossible;
+- local participation does not settle cross-scale legitimacy;
+- `capability` is not the universal positive vocabulary for ecological scopes;
+- support-before-closure cannot become a fantasy veto that ignores transition clocks.
 
-Build one compact cross-domain synthesis first. Do **not** mutate TRACE/ME merely because the broader project learned something.
+Do not silently edit the target while Codex/CC attack the exact committed synthesis. Integrate after differentiated returns.
 
 ## Instrument status
 
@@ -121,17 +129,18 @@ No current authority is inferred for:
 
 ## Next operations
 
-1. Close D045 publication.
-2. Produce the Open Horizon positive-construction synthesis.
-3. Route the exact synthesis to differentiated AI apertures for independent/hostile challenge; preserve divergence.
-4. Revise the synthesis without forcing a TRACE/ME change.
-5. Decide separately where, if anywhere, the result belongs: TRACE, ME, PSFH, another artifact, operating practice, or nowhere.
+1. Hold PSFH stable after D045.
+2. Receive differentiated Codex/CC attacks on the exact answerable-construction synthesis.
+3. Integrate those with Framework's ecological attack into a repaired synthesis.
+4. Decide separately where, if anywhere, the result belongs: TRACE, ME, PSFH, another artifact, operating practice, or nowhere.
+5. Keep field/world exposure open for real consequential corrections; do not substitute manufactured testing for building and learning.
 
 ```text
 BUILD != PROOF
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
+ANSWERABLE != REVERSIBLE
 OPTION_PRESERVATION != CAPABILITY_CREATION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
