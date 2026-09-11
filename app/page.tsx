@@ -50,12 +50,6 @@ export default function Home() {
         </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
           <section data-step="welcome" id="step-welcome">
-            <p className="guiding-question">How can we make a better future?</p>
-            <h2 tabIndex={-1}>Would you like to continue?</h2>
-            <p>Take a small look, or go straight to the material.</p>
-            <p className="journey-options"><a className="journey-primary" href="#step-orientation">Continue <span aria-hidden="true">→</span></a></p>
-          </section>
-          <section data-step="orientation" id="step-orientation">
             <p>We think we may have something worth sharing. It is offered as a gift, with no requirement to agree, use it or continue.</p>
             <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
@@ -122,7 +116,7 @@ export default function Home() {
             <div className="journey-options">
               <a href="/explore/example/entry.html">Look at another example from different positions</a>
               <a href="/explore/nodes/futures.html">Bring a possibility of your own</a>
-              <a href="#step-orientation">Choose another way in</a>
+              <a href="#step-welcome">Choose another way in</a>
             </div>
           </article>
           <section data-step="leave" id="step-leave">
