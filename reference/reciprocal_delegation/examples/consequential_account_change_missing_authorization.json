@@ -1,0 +1,69 @@
+{
+  "format": "reciprocal-delegation/0.1",
+  "delegation_id": "RD-EXAMPLE-CONSEQUENTIAL-FAIL-001",
+  "object": {
+    "kind": "account_setting",
+    "ref": "user/custom-instructions",
+    "base_head": "settings-snapshot-before-change"
+  },
+  "actor": {
+    "role": "operator",
+    "aperture": "example-aperture"
+  },
+  "consequence_class": "consequential",
+  "write_scope": [
+    "user/custom-instructions"
+  ],
+  "no_touch": [
+    "user/billing",
+    "user/credentials"
+  ],
+  "evidence_obligation": [
+    "before snapshot",
+    "after snapshot",
+    "restoration receipt"
+  ],
+  "closer": {
+    "kind": "human",
+    "ref": "Mark"
+  },
+  "authorization": {
+    "required": false,
+    "request_id": null,
+    "approval_token": null,
+    "approval_received": false,
+    "approval_value": "proceed",
+    "routine_phrase_is_not_authorization": true
+  },
+  "claim_binding": {
+    "target_head": "settings-snapshot-before-change",
+    "moved_head_becomes_historical": true
+  },
+  "mutation_controls": {
+    "mutates": true,
+    "claim_before_build": true,
+    "exact_head_before_push": true,
+    "single_mutator": true
+  },
+  "repair_controls": {
+    "is_repair": false,
+    "defect_id": null,
+    "matching_failure_control": null
+  },
+  "restoration": {
+    "strategy": "forward_commit",
+    "history_preserved": true
+  },
+  "witness": {
+    "required": true,
+    "name_delivery_plainly": true
+  },
+  "human_correction": {
+    "expected_max_minutes": 60
+  },
+  "initiative": {
+    "public_or_consequential": true,
+    "max_unreviewed_minutes": 30,
+    "max_unreviewed_actions": 1
+  }
+}
