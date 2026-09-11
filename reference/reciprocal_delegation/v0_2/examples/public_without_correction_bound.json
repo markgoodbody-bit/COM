@@ -1,0 +1,19 @@
+{
+  "format": "reciprocal-delegation/0.2",
+  "delegation_id": "RD-EXAMPLE-PUBLIC-NO-BOUND-FAIL-001",
+  "object": {"kind": "external_action", "ref": "publish public artifact", "base_head": "example-head"},
+  "actor": {"role": "publisher", "aperture": "example-aperture"},
+  "consequence_class": "routine_reversible",
+  "write_scope": ["named public artifact only"],
+  "no_touch": ["credentials", "licence terms"],
+  "evidence_obligation": ["public head"],
+  "closer": {"kind": "named_event", "ref": "event not actually named"},
+  "authorization": {"required": false, "request_id": null, "approval_token": null, "approval_received": false, "approval_value": null, "routine_phrase_is_not_authorization": true},
+  "claim_binding": {"target_head": "example-head", "moved_head_becomes_historical": true},
+  "mutation_controls": {"mutates": true, "claim_before_build": true, "exact_head_before_push": true, "single_mutator": true},
+  "repair_controls": {"is_repair": false, "defect_id": null, "matching_failure_control": null},
+  "restoration": {"strategy": "forward_commit", "history_preserved": true},
+  "witness": {"required": false, "name_delivery_plainly": false},
+  "human_correction": {"bound_mode": "event_bound", "expected_max_minutes": null, "handback_event": null},
+  "initiative": {"public_or_consequential": true, "max_unreviewed_minutes": null, "max_unreviewed_actions": 1}
+}
