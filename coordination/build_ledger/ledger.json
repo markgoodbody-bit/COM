@@ -1,0 +1,100 @@
+{
+  "version": "0.1",
+  "recorded_at": "2026-09-11T22:08:22Z",
+  "lanes": [
+    {
+      "work_id": "PSFH-D047",
+      "title": "Larger full-frame Homer",
+      "owner": "CODEX",
+      "state": "closed",
+      "mutates": true,
+      "repository": "markgoodbody-bit/COM",
+      "branch": "gh-pages",
+      "observed_head": "a391f472101b0a332436ffc7f7b6d504e72267b7",
+      "observed_at": "2026-09-11T22:02:36Z",
+      "write_scope": [
+        "index.html",
+        "style.css",
+        "changes.md",
+        "changes.html",
+        "manifest.json",
+        "read/"
+      ],
+      "no_touch": [
+        "artwork bytes",
+        "TRACE and ME source",
+        "navigation and story content"
+      ],
+      "next_action": "No publication action; independent rendered-proportion witness requested separately.",
+      "blocker": null,
+      "unblocks_when": null,
+      "handback_event": "Exact maintained/public heads and build delta returned to COM #108; Pages built exact head",
+      "sources": [
+        "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5641044804",
+        "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5641140787"
+      ],
+      "receipt": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5641141934"
+    },
+    {
+      "work_id": "COM-218",
+      "title": "Reciprocal delegation failure/recovery companion",
+      "owner": "CLAUDE CODE (assigned; execution not independently observed)",
+      "state": "queued",
+      "mutates": true,
+      "repository": "markgoodbody-bit/COM",
+      "branch": "cc/reciprocal-delegation-v0-2-failure-recovery-20260911",
+      "observed_head": "793ffaabcb2c887099fc1f0042a1283a2c165aed",
+      "observed_at": "2026-09-11T22:06:34Z",
+      "write_scope": [
+        "reference/reciprocal_delegation/v0_2/recovery/"
+      ],
+      "no_touch": [
+        "v0.2 core without separately proposed defect repair",
+        "Campfire Production",
+        "TRACE",
+        "ME",
+        "PSFH"
+      ],
+      "next_action": "Build transfer/takeover state machine, checker, fixtures and README in assigned PR; dispatch is not evidence of activity.",
+      "blocker": null,
+      "unblocks_when": null,
+      "handback_event": "Push companion build, mark PR ready and name any proposed core invariant repair",
+      "sources": [
+        "https://github.com/markgoodbody-bit/COM/pull/218",
+        "https://github.com/markgoodbody-bit/COM/pull/218#issuecomment-5641145539"
+      ],
+      "receipt": null
+    },
+    {
+      "work_id": "COM-219",
+      "title": "Small current-work ledger",
+      "owner": "CODEX",
+      "state": "handback",
+      "mutates": true,
+      "repository": "markgoodbody-bit/COM",
+      "branch": "codex/com-build-ledger-v0-1-20260911",
+      "observed_head": "5d71c859a3207a35ce165c5da0d5e1ca2bc909ee",
+      "observed_at": "2026-09-11T22:08:22Z",
+      "write_scope": [
+        "coordination/build_ledger/"
+      ],
+      "no_touch": [
+        "PSFH",
+        "TRACE",
+        "ME",
+        "Campfire Production",
+        "CC recovery companion"
+      ],
+      "next_action": "Framework may integrate the delivered build; refresh source and branch observations before further mutation. This snapshot records the implementation head, not its own containing commit.",
+      "blocker": null,
+      "unblocks_when": null,
+      "handback_event": "Build pushed to PR #219, marked ready, exact artifact and limits returned to COM #74",
+      "sources": [
+        "https://github.com/markgoodbody-bit/COM/pull/219",
+        "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641150106",
+        "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641188050"
+      ],
+      "receipt": "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641188050"
+    }
+  ]
+}
