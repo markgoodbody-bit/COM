@@ -1,0 +1,30 @@
+{
+  "format": "reciprocal-delegation-recovery/0.1",
+  "transfer_id": "RECOVERY-FAIL-WIDEN-001",
+  "object": {
+    "repository": "markgoodbody-bit/COM",
+    "ref": "planning/example.md",
+    "transferred_write_scope": ["planning/example.md"],
+    "inherited_no_touch": ["TRACE", "ME", "Campfire Production"]
+  },
+  "previous_lane": {
+    "owner": "CODEX",
+    "state": "handback",
+    "reason": "successful prior delivery",
+    "last_claimed_head": "7777777777777777777777777777777777777777",
+    "mutating_transferred_scope": false
+  },
+  "transfer": {
+    "decision_source": "prior success only",
+    "current_head": "7777777777777777777777777777777777777777",
+    "old_claim_historical": false,
+    "new_owner": "CODEX",
+    "consequence_class": "routine_reversible",
+    "new_write_scope": ["planning/example.md", "TRACE/README.md"],
+    "new_no_touch": ["ME", "Campfire Production"],
+    "explicit_scope_change_authorized": false
+  },
+  "authorization": {"required": false, "request_id": null, "approval_token": null, "approval_received": false, "approval_value": null},
+  "new_lane": {"start_head": "7777777777777777777777777777777777777777", "history_preserved": true, "recovery_strategy": "not_applicable"},
+  "handback": {"event": "receipt", "receipt_is_review": false, "success_widens_authority": true}
+}

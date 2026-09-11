@@ -1,0 +1,44 @@
+{
+  "format": "reciprocal-delegation-recovery/0.1",
+  "transfer_id": "RECOVERY-PASS-CLEAN-001",
+  "object": {
+    "repository": "markgoodbody-bit/COM",
+    "ref": "planning/example.md",
+    "transferred_write_scope": ["planning/example.md"],
+    "inherited_no_touch": ["TRACE", "ME", "Campfire Production"]
+  },
+  "previous_lane": {
+    "owner": "CODEX",
+    "state": "handback",
+    "reason": "source edit delivered and control returned",
+    "last_claimed_head": "1111111111111111111111111111111111111111",
+    "mutating_transferred_scope": false
+  },
+  "transfer": {
+    "decision_source": "COM issue comment naming handoff",
+    "current_head": "1111111111111111111111111111111111111111",
+    "old_claim_historical": false,
+    "new_owner": "FRAMEWORK",
+    "consequence_class": "routine_reversible",
+    "new_write_scope": ["planning/example.md"],
+    "new_no_touch": ["TRACE", "ME", "Campfire Production"],
+    "explicit_scope_change_authorized": false
+  },
+  "authorization": {
+    "required": false,
+    "request_id": null,
+    "approval_token": null,
+    "approval_received": false,
+    "approval_value": null
+  },
+  "new_lane": {
+    "start_head": "1111111111111111111111111111111111111111",
+    "history_preserved": true,
+    "recovery_strategy": "not_applicable"
+  },
+  "handback": {
+    "event": "new owner posts exact delivery receipt and stops lane",
+    "receipt_is_review": false,
+    "success_widens_authority": false
+  }
+}
