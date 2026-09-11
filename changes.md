@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.16 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.17 · 11 September 2026
+
+### D033
+
+11 September 2026 — Machine-facing labels now describe the shared entrance.
+
+The llms.txt root link is labelled Shared web reading and describes the same address for humans and AIs. The manifest adds shared_reading for that address while retaining human_reading as a compatibility alias. No destination or visible homepage changes.
+
+The optional HTML view of llms.txt is regenerated with its updated source identity. This follows Framework PR193. Other readings, navigation and artwork remain unchanged. Terminology consistency is not evidence of reader benefit. Previous publication c7cec856ed2619899120737411a911e4ebf74b0c remains in Git history.
 
 ### D032
 

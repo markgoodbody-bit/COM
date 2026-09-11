@@ -12,6 +12,7 @@
     "seed": "/seed.txt",
     "orientation": "/llms.txt",
     "map": "/manifest.json",
+    "shared_reading": "/",
     "human_reading": "/",
     "navigation_enhancement": "/journey.js",
     "change_history": "/changes.html",
@@ -67,9 +68,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "791f66457906268c8bba537bfdca63a99d4d7824cb66341508c0da88cc314bb5",
-    "change_history_input_html_sha256": "18cb196ac2048bef54dde4507f10e50f89a738f6ce22d5260d28f92d4944826a",
-    "change_history_addendum_note": "D016 through D032 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "7ffbe781b4856c59f092811f9f072486021ac46edfca7ba5398915ac2fed5b99",
+    "change_history_input_html_sha256": "3a39f2ca8be6c5a31d4906675adf1e210d541d38357e7e8fc51626576b40f17b",
+    "change_history_addendum_note": "D016 through D033 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -90,6 +91,9 @@
       "source_patch": "129a58d08b504016c82188cf299ecedaf0a040d4",
       "scope": "Former orientation becomes default welcome; separate Continue gate removed. Seven journey states, unchanged navigation script. No measured reader benefit."
     },
+    "shared_root_label": {
+      "scope": "The canonical root is named as shared reading for humans and AI readers. The older human_reading route key is retained as a compatibility alias; both resolve to the same public root."
+    },
     "html_source_text": [
       {
         "output": "read/start.html",
@@ -102,8 +106,8 @@
         "output": "read/orientation.html",
         "source": "llms.txt",
         "title": "Orientation: complete text source",
-        "edition": "Site Preview 0.8.4, concise machine index revised 10 September 2026 (D022); not validation",
-        "sha256": "b7afcebea95ccb32fe1fc072f9199bc29ade7a482beeeb8b2eb1502b46de3fcd"
+        "edition": "Site Preview 0.8.4, shared-root terminology revised 11 September 2026 (D033); not validation",
+        "sha256": "fc182abcc176e23fe12eb1c470110a1e01cf61be2874033215b84ec403ba94e0"
       },
       {
         "output": "read/trace-spine.html",
@@ -196,7 +200,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "092b445ef23826073f02b8f21c2f54ea971520266e350986d4fffb94302b983f",
+    "change_history_html_sha256": "7e81e5f6ed266e07119fc7fce5443e00e824a177ee9aa21d703b2bdeb6325464",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
