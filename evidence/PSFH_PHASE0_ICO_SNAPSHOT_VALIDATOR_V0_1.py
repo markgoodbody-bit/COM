@@ -61,6 +61,30 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def reject_duplicate_json_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ContractError(f"contract contains duplicate JSON object key: {key!r}")
+        result[key] = value
+    return result
+
+
+def reject_json_constant(value: str) -> None:
+    raise ContractError(f"contract contains non-finite JSON constant: {value}")
+
+
+def load_contract_json(text: str) -> dict[str, Any]:
+    value = json.loads(
+        text,
+        object_pairs_hook=reject_duplicate_json_keys,
+        parse_constant=reject_json_constant,
+    )
+    if not isinstance(value, dict):
+        raise ContractError("contract root must be a JSON object")
+    return value
+
+
 def load_csv(path: Path) -> tuple[bytes, list[str], list[dict[str, str]]]:
     data = path.read_bytes()
     try:
@@ -226,9 +250,7 @@ def validate_snapshot(csv_path: Path, contract_path: Path) -> dict[str, Any]:
         contract_text = contract_bytes.decode("utf-8-sig")
     except UnicodeDecodeError as exc:
         raise ContractError(f"contract is not UTF-8/UTF-8-BOM decodable: {exc}") from exc
-    contract = json.loads(contract_text)
-    if not isinstance(contract, dict):
-        raise ContractError("contract root must be a JSON object")
+    contract = load_contract_json(contract_text)
     require_contract(contract)
     contract_sha = sha256_bytes(contract_bytes)
 
@@ -486,6 +508,16 @@ def run_self_test() -> None:
             assert "must be UTC" in str(exc)
         else:
             raise AssertionError("non-UTC retrieval timestamp did not fail closed")
+
+        duplicate_key_text = json.dumps(contract)[:-1] + ', "window_start": "2026-07-01"}'
+        duplicate_key_path = base / "duplicate_key_contract.json"
+        duplicate_key_path.write_text(duplicate_key_text, encoding="utf-8")
+        try:
+            validate_snapshot(csv_path, duplicate_key_path)
+        except ContractError as exc:
+            assert "duplicate JSON object key" in str(exc)
+        else:
+            raise AssertionError("duplicate JSON key did not fail closed")
 
     print("SELF_TEST_PASS")
 
