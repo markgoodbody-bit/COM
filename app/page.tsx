@@ -53,11 +53,11 @@ export default function Home() {
             <p>We think we may have something worth sharing. It is offered as a gift, with no requirement to agree, use it or continue.</p>
             <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
-              <a href="#project">Someone sent me this</a>
+              <a href="#step-story">Someone sent me this</a>
               <a href="#step-work">I have something I&apos;m trying to understand or change</a>
               <a href="#step-look">I am here for the art, or just looking</a>
               <a href="#step-challenge">I want to challenge or check this</a>
-              <a href="#project">I don&apos;t know</a>
+              <a href="#step-look">I don&apos;t know</a>
             </div>
           </section>
           <section data-step="look" id="step-look">
@@ -212,7 +212,7 @@ export default function Home() {
           </article>
         </div>
         <p><a href="https://pleasestartfromhere.com/resources/">All local reading files, diagrams and fixed editions</a>.</p>
-        <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
+        <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods may serve a situation better than this project.</p>
         <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
         <article className="artist-source" id="winslow-homer" aria-labelledby="homer-heading">
           <h3 id="homer-heading">The painting and its maker</h3>
