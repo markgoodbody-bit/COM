@@ -29,8 +29,7 @@ Do not reopen usefulness experiments, Phase-0 work, benchmark design or source-s
 ## Parked research lane
 
 COM #119 is closed `not_planned`.
-
-PR #200 and PR #203 are closed/parked with their branches/history preserved.
+PR #200 and PR #203 are closed/parked with history preserved.
 
 `PARKED != INVALIDATED`  
 `NO_TESTING -> BUILD_THE_THING`
@@ -43,35 +42,46 @@ Primary coordination surface:
 Maintained source branch:
 - `codex/door-maintained-source-20260908`
 
-### D038 — published
+### D039-D041 — published
 
-- maintained source after publication: `b23712fe7215f8cf51925d8bdcfae59c4982778c`
-- public `gh-pages`: `4ef5455e476f5af3ae52d4526ec675af8ef905e1`
-- change: modestly larger Homer overlay title; no root copy/route/art geometry change.
+Codex receipt: #108 comment `5639788416`.
 
-### D039 — source merged, publication dispatched
+- public `gh-pages`: `dce4038c69254a71e962208efc5e913b0bd90cc2`
+- reconciled maintained source after concurrent D042 repair: `6bf29bc968e64939f76dda7af0ce12639946edba`
+- 157 generated public blobs reproduced exactly from final maintained source.
 
-PR #205 merged:
-- maintained source merge: `483e06efbfac775c5f84e785fc81870685bfd3ba`
+Published product:
+- `/explore/work.html` and `/explore/work.md` gather six existing working questions:
+  `Notice -> Choose -> Decide -> Responsibility -> Repercussions -> Check and correct`;
+- existing homepage Work state links directly to the working surface;
+- `/explore/start.json` exposes both HTML and Markdown routes;
+- Explore/llms/sitemap/manifest discovery is connected;
+- resource map includes the working files and hashes them;
+- no required sequence, form, intake, account, scoring, efficacy claim or research programme.
 
-Adds an additive working surface:
-- `/explore/work.html`
-- `/explore/work.md`
+`PUBLIC != VALIDATED` remains true, but no validation programme is active.
 
-It gathers six existing PSFH working questions onto one page:
+### D043 — source merged / publication dispatched
 
-`Notice -> Choose -> Decide -> Responsibility -> Repercussions -> Check and correct`
+PR #209 merged after D039-D041 publication reconciliation.
 
-Each step routes to existing reading rooms. No form, intake, account, server write, scoring, required sequence, experiment, efficacy claim or new theory.
-
-Discovery changes are limited to Explore route lists, llms orientations, sitemap and manifest route identity.
+Maintained source:
+- `182bb7d1772c5a6a0d910bb7c1e03ade06117771`
 
 Publication dispatch:
-- #108 comment `5639683199`
+- #108 comment `5639807397`
 
-Until a Codex publication receipt lands:
+D043 adds an optional browser-local scratchpad to `/explore/work.html`:
+- six local textareas for the existing questions;
+- explicit-copy action creates Markdown on the clipboard;
+- clear requires confirmation;
+- no network path, form submission, local/session storage, IndexedDB, account, analytics or backend;
+- static prompts remain usable without JavaScript;
+- `work.js` is included in the explicit resource inventory/hash path.
 
-`D039_SOURCE_MERGED != D039_PUBLIC`
+Framework source freeze while publication is active:
+
+`SOURCE_FREEZE := 182bb7d1... UNTIL_PUBLICATION_RECEIPT`
 
 ## Product posture
 
@@ -84,7 +94,7 @@ Build the actual encounter:
 - graph-backed reading rooms and ordinary exits;
 - source/provenance/rights visible where material;
 - challenge / another position / leave remain real options;
-- useful working surfaces rather than another research apparatus.
+- useful private/local working surfaces rather than another research apparatus.
 
 Prefer additive/reversible product work over homepage churn.
 
@@ -102,19 +112,12 @@ Current build direction does **not** authorise:
 
 Normal reversible PSFH source/build/publication work remains inside the established product lane.
 
-## Other project lanes — retrieve only when material
-
-- TRACE: live `main`; v0.2.7 released baseline; v0.3 RC1 unreleased/noncanonical/unvalidated.
-- Mechanical Ethics: live `main`; v0.6.3 preservation baseline; current Human Reader working/noncanonical/unvalidated.
-- Campfire Relay / Square: reacquire exact live source/Production/authority before any action.
-- Open Horizon / broader better-future frontier: retrieve from omission map when a build decision needs it.
-
 ## Next legitimate operations
 
-1. Complete D039 static build/publication from maintained source `483e06ef...`.
-2. Continue PSFH construction from concrete product needs, not evaluation machinery.
-3. Keep new surfaces optional, readable without account or required disclosure, and directly connected to existing source material.
-4. Publish routine reversible increments through maintained-source -> static-build -> `gh-pages`.
+1. Complete D043 publication from maintained source `182bb7d1...` without concurrent maintained-source mutation.
+2. After publication receipt, continue from concrete product needs rather than evaluation machinery.
+3. Keep new surfaces optional, local/private where possible, and directly connected to existing source material.
+4. Preserve `BUILD != PROOF` and ordinary correction/rollback.
 
 For broader orientation read:
 - `continuity/FRAMEWORK_HEAD.md`
@@ -126,6 +129,7 @@ For broader orientation read:
 ```text
 BUILD != PROOF
 PUBLISHED != VALIDATED
+LOCAL_NOTES != INTAKE
 REVERSIBLE_WORK != CONSEQUENTIAL_AUTHORITY
 POSTED != RECEIVED != ACTED != EFFECT
 ```
