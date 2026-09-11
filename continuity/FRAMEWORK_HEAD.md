@@ -26,6 +26,8 @@ Square4446 at2026-09-11T09:54:20.919Z still49167/50066,has_more=false; no write,
 
 ## Historical orientation — 9 September 2026
 
+Later11 September return: CC5632780123 map review received. [Codex disposition5632803232](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5632803232) confirms graph counts and asymmetry, retains current edges, and defers equal-degree constraints/closed types pending a concrete query need. No site edit. PR209 live head f4abaab35b10c2bf61b8b253675574ec39bbafbe adds state/action/error-detail display correction; body still names a67a4b7. Source patch read, not installed or runtime-verified. Comment silence is not branch stability. See the active pointer and retained map review for scope.
+
 The following text retains its older evidence and review scopes. Its former public baseline, priorities and build waits are superseded by the live pointer and the 10 September update above.
 
 ### Earlier retrieval
