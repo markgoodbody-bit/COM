@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 
 test('only named navigation, ten-room, machine and history outputs differ from the art-first edition', async () => {
   const revision = '7135b629b4180ad07a500e41647d203c07f80879';
-  const changed = new Set(['index.html','style.css','llms.txt','manifest.json','read/orientation.html','read/start.html','explore/start.json','explore/llms.txt','changes.md','changes.html','explore/index.html','explore/nodes/change.html','explore/nodes/aperture.html','explore/nodes/significance.html','explore/nodes/care.html','explore/nodes/wisdom.html','explore/nodes/selection.html','explore/nodes/power.html','explore/nodes/hardening.html','explore/nodes/correction.html','explore/nodes/futures.html','explore/map.json']);
+  const changed = new Set(['index.html','style.css','llms.txt','manifest.json','read/orientation.html','read/start.html','read/me-book.html','read/trace-spine.html','explore/start.json','explore/llms.txt','changes.md','changes.html','explore/index.html','explore/nodes/change.html','explore/nodes/aperture.html','explore/nodes/significance.html','explore/nodes/care.html','explore/nodes/wisdom.html','explore/nodes/selection.html','explore/nodes/power.html','explore/nodes/hardening.html','explore/nodes/correction.html','explore/nodes/futures.html','explore/map.json']);
   const names = (await readdir('out', {recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=> (e.parentPath + '/' + e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(names.length, 155);
   let retained = 0;
@@ -17,7 +17,7 @@ test('only named navigation, ten-room, machine and history outputs differ from t
     if (changed.has(name)) assert.notDeepEqual(after,before,name);
     else { assert.deepEqual(after,before,name); retained++; }
   }
-  assert.equal(retained,132);
+  assert.equal(retained,130);
 });
 
 test('seven-state homepage retains the Futures bridge, direct Change route and no intake', async () => {
@@ -57,12 +57,12 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 through D036 are paired in both formats and earlier history remains exact', async () => {
+test('D017 through D037 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
   const d030 = md.split('### D030')[1].split('### D029')[0].trim().split(/\n\s*\n/);
   assert.equal(html.split('<h3 id="d030">D030</h3>')[1].split('<h3 id="d029">')[0], d030.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join(''));
-  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027'],['D029','D028'],['D031','D030'],['D032','D031'],['D033','D032'],['D034','D033'],['D035','D034'],['D036','D035']]) {
+  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027'],['D029','D028'],['D031','D030'],['D032','D031'],['D033','D032'],['D034','D033'],['D035','D034'],['D036','D035'],['D037','D036']]) {
     const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
     const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
     const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');
