@@ -248,3 +248,10 @@ body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.125rem, 2vw, 1.5r
 body:has(.project-spine) .hero-heading h1 {
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
 }
+
+/* D047: restore visual weight to the opening painting after the story-first repair.
+   Keep the full 3801:2368 frame, but size it against the content as well as the viewport.
+   On larger screens it can approach the 76rem reading width without becoming a full-screen gate. */
+body:has(.project-spine) .art-hero {
+  width: min(100%, 64rem, calc(70svh * 3801 / 2368));
+}
