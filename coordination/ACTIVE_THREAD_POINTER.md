@@ -12,147 +12,97 @@ Later live source wins.
 
 ## Current executable edge — 11 September 2026
 
-### ACTIVE: COM #119 — PSFH usefulness / Phase-0 source mechanics
+### ACTIVE: COM #108 — PLEASE START FROM HERE product construction
 
-Primary coordination surface:
-- [COM #119 — PLEASE START FROM HERE — usefulness comparison — can the Door earn a practical claim?](https://github.com/markgoodbody-bit/COM/issues/119)
+Mark's current human direction is explicit:
 
-Current work is **DESIGN / PRE-REGISTRATION / PRE-EXECUTION**. No usefulness claim, public study, recruitment, paid inference, source-case selection or spend is authorised by this pointer.
+> **no testing. just building**
 
-The live Phase-0 sequence is:
+Treat that as a project-routing correction, not a wording preference.
+
+Current cadence:
 
 ```text
-stable construct definition
--> reproducible source universe
--> bounded Stage-A construct calibration
--> true holdout
--> only later, if earned, matched efficacy comparison
+BUILD -> PUBLISH -> USE -> CORRECT
 ```
 
-`PHASE0 != PROJECT_VALIDATION`
+Do **not** reopen usefulness experiments, Phase-0 construct work, benchmark design, source-selection machinery or empirical-validation plumbing unless Mark explicitly asks to restart testing.
 
-## Source state
+## Parked research lane
 
-Current Phase-0 source objects on `main`:
-- `evidence/PSFH_PHASE0_IRREVERSIBILITY_CONSTRUCT_V3_2_FREEZE_CANDIDATE_20260911.md`
-- `evidence/PSFH_PHASE0_IRREVERSIBILITY_CONSTRUCT_V3_3_PRIVACY_REPAIR_20260911.md`
+COM #119 is closed `not_planned` under the current direction.
 
-V3.2 freezes the irreversibility-point definition before Stage A and preserves a real `DESIGN NULL` route. V3.3 removes an unobservable social-acquaintance screen rather than increasing identity burden to defend an independence claim the design cannot earn.
+PR #200 (ICO snapshot validator) and PR #203 (prospective ICO source rule) are closed/parked with their branches/history preserved. Their work is recoverable evidence; closure does not mean the designs were disproved.
 
-`DISTINCT_PSEUDONYMOUS_IDENTITIES != SOCIALLY_INDEPENDENT_PANEL`
+`PARKED != INVALIDATED`  
+`NO_TESTING -> BUILD_THE_THING`
 
-## Current source-universe candidate — ICO FOI/EIR
+## PSFH current product state
 
-FOS is not the default source candidate unless a permission route is explicitly chosen later.
+Primary coordination surface:
+- [COM #108 — PLEASE START FROM HERE — public Door](https://github.com/markgoodbody-bit/COM/issues/108)
 
-Preferred current candidate for attack:
-- ICO completed FOI/EIR complaints data;
-- public ICO Decision Notices.
+Maintained source branch:
+- `codex/door-maintained-source-20260908`
 
-Current disposition:
+D037 maintained baseline before the current build:
+- `b19206dcfea9fe078bceaab50673c3f76a94f1e0`
 
-**`REPAIR_MECHANICS`**
+D038 source is now merged into maintained source:
+- merge `01ebcc56bb267a32f6f4048d8f29989e39a0cffa`
+- PR #204
+- change: make the Homer opening title slightly larger without changing painting geometry, placement, colour, copy, routes or reading surfaces.
 
-Earned so far from ICO owner/public material:
-- completed FOI/EIR complaint data is published in reusable form;
-- current publication is monthly CSV;
-- owner material identifies completion/decision fields and `Decision Detail 1` as the DN-issued/served signal;
-- ICO site text is reusable under OGL v3.0 except where otherwise stated, with attribution;
-- exact-reference DN lookup is plausible.
+Codex publication dispatch:
+- COM #108 comment `5639578305`
+- instruction: normal static build and publication only; keep generated style/manifest/history coherent; no experiment or benchmark expansion.
 
-Not yet earned:
-- exact current completed-FOI/EIR CSV export object / final transport URL;
-- exact current CSV bytes, MIME/content-disposition and ordered header row;
-- demonstrated stable one-to-one ICO-internal Decision Notice join for the mechanically eligible rows.
+Until a publication receipt lands:
 
-If those cannot be made reproducible, return `SOURCE_REJECT`; do not hand-curate a nicer corpus.
+`SOURCE_MERGED != PUBLIC`
 
-## Draft build — COM PR #200
+## Product posture
 
-Draft PR:
-- [#200 — PSFH Phase0: add ICO snapshot validator](https://github.com/markgoodbody-bit/COM/pull/200)
+Please Start From Here is the voluntary public gift/door, not a conversion funnel and not primarily a marketing site.
 
-Branch:
-- `framework/phase0-ico-source-validator-20260911`
+Build the actual encounter:
+- clear human and AI entrances;
+- art as real encounter, not wallpaper;
+- compact routes into Mechanical Ethics and TRACE;
+- graph-backed reading rooms and ordinary exits;
+- source/provenance/rights visible where material;
+- challenge / another position / leave remain real options;
+- make the site useful by construction rather than continually turning it into an object of study.
 
-Exact observed PR head at this pointer refresh:
-- `a968b12da51151d6cdd9019eb108fb6532394055`
+Routine reversible PSFH work should move quickly. Mark is witness/veto, not a per-change approval bottleneck. Consequential gates remain separate.
 
-Scope:
-- two added evidence files only;
-- no existing source files changed;
-- validator has no network path;
-- `inspect` exposes bytes/hash/header/row-count only, not row values;
-- a separately frozen exact contract is required before row-level manifest production;
-- successful output is `SOURCE_MANIFEST_ONLY_NOT_CASE_SELECTION` in source order;
-- no DN body fetch, semantic suitability screen, ranking or Stage-A case selection.
+## Current boundaries
 
-Framework self-attack has already repaired quoted-multiline CSV handling, short-row fail-closed behaviour, selector-contract drift, missing contract provenance and duplicate JSON selector-key ambiguity. PR #200 remains draft while the external ICO export/join mechanics remain unresolved.
+This build direction does **not** authorise:
+- spend/provider accounts;
+- participant recruitment or studies;
+- TRACE/ME release/canon/baseline mutation;
+- licence-term changes;
+- Campfire Production adoption;
+- Square actuation/campaign;
+- credential movement;
+- external institutional contact.
 
-`CODE_EXISTS != SOURCE_FROZEN`
-
-## Outstanding differentiated return — Codex
-
-Browser-mechanics dispatch:
-- COM #119 comment `5638562078`.
-
-Requested Codex return is limited to:
-1. resolve the current completed-FOI/EIR CSV export object, final URL/bytes/MIME/header row/repeatability;
-2. verify ICO-internal exact-reference Decision Notice result cardinality and object type using already-excluded development references only.
-
-Return vocabulary:
-
-`ICO_ENUMERABLE | REPAIR_MECHANICS | SOURCE_REJECT`
-
-No Codex return had landed when this pointer was refreshed. Missing return is not a veto and does not establish success.
-
-## PSFH Door lane — stable / history, not current build target
-
-COM #108 remains the detailed Door/publication history.
-
-D030 is published and the bounded receiver/contact pass is closed. Stop ad-hoc receiver/copy work. The completed contact material provides a bounded reason to test formally; it does not establish causation, reader benefit or practical advantage.
-
-Use #108 only when the present decision actually depends on Door/publication lineage. Do not route a fresh runtime there as the default active task.
+Normal reversible PSFH source/build/publication work remains inside the established product lane.
 
 ## Other project lanes — retrieve only when material
 
-- TRACE current source: live TRACE `main`; v0.2.7 remains released baseline, v0.3 RC1 unreleased/noncanonical/unvalidated.
-- Mechanical Ethics current source: live ME `main`; v0.6.3 remains preservation baseline; current Human Reader remains working/noncanonical/unvalidated.
-- Campfire Relay / Square: reacquire exact live source/Production/authority before any action. Do not inherit old PR/service/quota claims from this pointer.
-- Open Horizon / broader better-future frontier: retrieve from the omission map only when the current question needs it.
-
-## Contamination boundary
-
-Development-exposed ICO references remain excluded from later holdout eligibility. The existing exclusion ledger is a floor, not a claim of exhaustive predecessor exposure.
-
-Do not reopen exposed notice bodies merely to improve source protocol design.
-
-`DEVELOPMENT_EXPOSURE -> HOLDOUT_EXCLUSION`
-
-## Authority boundary
-
-This pointer does **not** authorise:
-- provider account opening/funding;
-- participant recruitment/screening/contact;
-- paid inference or other spend;
-- real source-case selection or substantive candidate-body reading;
-- public study;
-- a PSFH usefulness claim;
-- TRACE/ME release/canon/baseline mutation;
-- licence change;
-- Campfire Production adoption;
-- Square actuation/campaign;
-- external institutional contact.
-
-Routine reversible source/design/coordination work may continue inside existing authority.
+- TRACE: live `main`; v0.2.7 released baseline; v0.3 RC1 unreleased/noncanonical/unvalidated.
+- Mechanical Ethics: live `main`; v0.6.3 preservation baseline; current Human Reader working/noncanonical/unvalidated.
+- Campfire Relay / Square: reacquire exact live source/Production/authority before any action.
+- Open Horizon / broader better-future frontier: retrieve from the omission map when the build needs it.
 
 ## Next legitimate operations
 
-1. Keep PR #200 draft; continue bounded hostile/self review of the source validator.
-2. Reacquire Codex export/join return when it appears; do not block ordinary reversible work on silence.
-3. If ICO transport + join become reproducible, freeze the source-preparation contract and closed date window **before** any row-level manifest is used for selection.
-4. If they do not, record `SOURCE_REJECT` and move to another independently grounded corpus.
-5. Do not reopen Door copy, TRACE/ME expansion or generic benchmark-platform work from this lane.
+1. Complete D038 static build/publication from maintained source `01ebcc56...`.
+2. Keep building the public PSFH experience from concrete product needs, not testing machinery.
+3. Prefer small reversible product increments over another theoretical or validation programme.
+4. Reacquire live #108/public state before each publication mutation.
 
 For broader orientation read:
 - `continuity/FRAMEWORK_HEAD.md`
@@ -164,8 +114,8 @@ For broader orientation read:
 Historical pointer bodies remain recoverable through Git history. Do not replay them at boot unless a current decision requires a named old receipt.
 
 ```text
-SOURCE_PAGE != FROZEN_SOURCE_BYTES
-SOURCE_MANIFEST != CASE_SELECTION
-JOIN_RULE_WRITTEN != JOIN_VERIFIED
+BUILD != PROOF
+PUBLISHED != VALIDATED
+REVERSIBLE_WORK != CONSEQUENTIAL_AUTHORITY
 POSTED != RECEIVED != ACTED != EFFECT
 ```
