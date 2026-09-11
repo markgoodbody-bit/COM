@@ -175,9 +175,14 @@ def require_contract(contract: dict[str, Any]) -> None:
     if unknown:
         raise ContractError(f"contract contains unknown keys: {', '.join(unknown)}")
 
-    if contract["schema_version"] != SCHEMA_VERSION:
+    schema_version = contract["schema_version"]
+    if (
+        not isinstance(schema_version, int)
+        or isinstance(schema_version, bool)
+        or schema_version != SCHEMA_VERSION
+    ):
         raise ContractError(
-            f"contract schema_version {contract['schema_version']!r} != {SCHEMA_VERSION}"
+            f"contract schema_version must be integer {SCHEMA_VERSION}, got {schema_version!r}"
         )
 
     source_url = require_nonempty_string(contract, "source_url")
@@ -526,6 +531,20 @@ def run_self_test() -> None:
             assert "duplicate JSON object key" in str(exc)
         else:
             raise AssertionError("duplicate JSON key did not fail closed")
+
+        for invalid_schema in (True, 1.0):
+            schema_contract = dict(contract)
+            schema_contract["schema_version"] = invalid_schema
+            schema_path = base / f"schema_{type(invalid_schema).__name__}.json"
+            schema_path.write_text(json.dumps(schema_contract), encoding="utf-8")
+            try:
+                validate_snapshot(csv_path, schema_path)
+            except ContractError as exc:
+                assert "schema_version must be integer" in str(exc)
+            else:
+                raise AssertionError(
+                    f"invalid schema_version {invalid_schema!r} did not fail closed"
+                )
 
         output_path = base / "manifest.json"
         write_new_text(output_path, "first\n")
