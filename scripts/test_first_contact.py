@@ -1,7 +1,7 @@
 """Structural regression only; not a claim that a reader understands the page."""
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 import subprocess
 import unittest
 import hashlib
@@ -121,7 +121,7 @@ class FirstContactTests(unittest.TestCase):
         self.assertEqual(changes['historical_revision'], 'aed75526770de9a7c9a2aa7cef63f1167dad1669')
         self.assertEqual(before - after, Counter(changes['removed']))
         self.assertEqual(after - before, Counter(changes['added']))
-        self.assertTrue(set(Reading(original).links).issubset(Reading(html).links))
+        self.assertTrue(self.retained_destinations(Reading(original).links).issubset(self.retained_destinations(Reading(html).links)))
         self.assertIn('href="#situation"', html)
 
     def test_editorial_layout_preserves_unlisted_paragraphs_headings_and_links(self):
@@ -189,13 +189,19 @@ class FirstContactTests(unittest.TestCase):
             before_link = Reading(article.split('<a ')[0])
             self.assertGreater(len(' '.join(before_link.text)), 160, name)
 
+    @staticmethod
+    def retained_destinations(links):
+        # D031 removes one redundant HTML-source shortcut, not its resource.
+        return {urljoin('https://pleasestartfromhere.com/', link) for link in links} - {'https://pleasestartfromhere.com/read/start.html'}
+
     def test_absolute_route_destinations_and_local_targets(self):
         for suffix in ['/explore/', '/explore/nodes/futures.html', '/discussion/',
-                       '/explore/start.json', '/read/start.html', '/changes.html']:
+                       '/explore/start.json', '/changes.html']:
             url = 'https://pleasestartfromhere.com' + suffix
-            self.assertIn(url, self.page.links)
+            self.assertIn(url, {urljoin('https://pleasestartfromhere.com/', link) for link in self.page.links})
         self.assertIn('Explore futures and possibilities', self.text)
-        self.assertIn('Compact text and machine routes:', self.text)
+        self.assertIn('Compact route for AI and text readers:', self.text)
+        self.assertTrue((ROOT / 'out/read/start.html').is_file())
         for href in self.page.links:
             url = urlparse(href)
             if url.netloc and url.netloc != 'pleasestartfromhere.com':
@@ -224,10 +230,10 @@ class FirstContactTests(unittest.TestCase):
     def test_optional_handoff_survives_text_extraction(self):
         self.assertRegex(self.text, r'Visual candidate|Working preview')
         self.assertNotIn('not published', self.text)
-        self.assertRegex(self.text, r'(You can|If it helps,) read this yourself,? or hand this address to an AI')
+        self.assertIn('Read this yourself, or give the same address to another human or AI and continue in your own context.', self.text)
         self.assertIn('No special prompt is required.', self.text)
-        self.assertLess(self.text.index('I want to explore, question or disagree'), self.text.index('Another perspective'))
-        self.assertLess(self.text.index('Another perspective'), self.text.index('This is a stated value choice'))
+        self.assertLess(self.text.index('I want to explore, question or disagree'), self.text.index('Share this address'))
+        self.assertLess(self.text.index('Share this address'), self.text.index('This is a stated value choice'))
         self.assertIn('https://pleasestartfromhere.com/', self.page.links)
 
     def test_optional_small_loop_after_movements_and_in_machine_reading(self):
@@ -264,12 +270,12 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('Site edition: Preview ' + edition, machine)
         self.assertNotIn('Site edition: Preview 0.7', machine)
         self.assertIn('<title>Please Start From Here</title>', self.html)
-        self.assertIn('A voluntary starting point for understanding, deciding, making and correcting under uncertainty.', self.html)
+        self.assertIn('A voluntary starting point for humans and AIs exploring decisions, uncertainty, reachable futures and correction.', self.html)
 
     def test_no_old_destination_dropped_and_history_preserved(self):
         def old(name):
             return published_text(BASELINE, name)
-        self.assertTrue(set(Reading(old('index.html')).links).issubset(self.page.links))
+        self.assertTrue(self.retained_destinations(Reading(old('index.html')).links).issubset(self.retained_destinations(self.page.links)))
         original = old('changes.md')
         current = (ROOT / 'public/changes.md').read_text(encoding='utf-8')
         self.assertEqual(current[current.index('Edition 0.5 adds D009'):], original[original.index('Edition 0.5 adds D009'):])
