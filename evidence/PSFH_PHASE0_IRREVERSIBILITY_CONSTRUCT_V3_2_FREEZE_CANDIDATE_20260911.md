@@ -8,7 +8,8 @@ Basis:
 - CC hostile review `5606475918`;
 - CODEX inference-boundary correction `5606835066`;
 - CC withdrawal/correction `5607595881`;
-- completed bounded contact receipt merged in PR182 / COM `a3a977a845356ca81a2a264ffcb3abf3ea065fdd`.
+- completed bounded contact receipt merged in PR182 / COM `a3a977a845356ca81a2a264ffcb3abf3ea065fdd`;
+- CODEX v3.2 source review `5635386996`.
 
 This is a narrow source-only repair of v3.1. It does not authorise Stage A, recruitment, case selection, inference, provider use or spending. It resolves a continuity defect in which later discussion said structural repairs were already present in v3.1 although the exact v3.1 file still left those repairs unwritten.
 
@@ -69,11 +70,13 @@ Within a stage, the same three builders and two matchers work all accounts.
 
 Six Stage-B accounts are therefore six source accounts observed by one dependent panel, not six independent panels and not six independent observations of human reliability. Any surviving statement must retain that finite-panel scope.
 
-### Account order diagnostic
+### Stage-B account-order diagnostic
 
-Before any builder sees account content, independently randomise the account order for each builder. Preserve each builder's account-position assignment.
+Independent account-order randomisation applies **only to Stage B**.
 
-For every account, report:
+Before any Stage-B builder sees holdout-account content, independently randomise the six-account order for each builder. Preserve each builder's account-position assignment.
+
+For every Stage-B account, report:
 - the position at which Builder A saw it;
 - the position at which Builder B saw it;
 - the position at which Builder C saw it;
@@ -83,7 +86,11 @@ This is a descriptive diagnostic only. A position pattern may be consistent with
 
 `ORDER_PATTERN != CARRYOVER_CAUSE_ESTABLISHED`
 
-The audit record retains pseudonymous IDs, role, eligibility confirmation, account-order assignments and only the broad background descriptors needed to describe the observed panel. Do not publish personal identities.
+Stage A is intentionally different: it must remain sequential because A1 and A2 can expose defects that govern the two permitted revision checkpoints, while A3 is the first account to test the already-written post-A2 rule. Do not expose A2 or A3 content before its turn. Preserve the common Stage-A order and the exact instruction/protocol version used for A1, A2 and A3. Learning/carryover within that one Stage-A panel is not isolated by the design and must not be presented as if it were.
+
+`STAGE_A_SEQUENCE != STAGE_B_ORDER_DIAGNOSTIC`
+
+The audit record retains pseudonymous IDs, role, eligibility confirmation, Stage-B account-order assignments, Stage-A instruction-version provenance and only the broad background descriptors needed to describe the observed panel. Do not publish personal identities.
 
 ---
 
@@ -110,6 +117,8 @@ Once the first Stage-A account is selected/read, the Stage-A source-selection ru
 `SOURCE_UNIVERSE_FROZEN != CASES_CHOSEN_FOR_RESULT`
 
 Stage A contains exactly **3 disposable development accounts** selected under that pre-frozen mechanical rule. All are permanently excluded from Stage B and later efficacy evidence.
+
+All three Stage-A builders complete the same A1 before the A1 checkpoint. Only after that checkpoint is closed may any builder receive A2. All three complete A2 before the A2 checkpoint. Only after the post-A2 rule is written may any builder receive A3. No later account content is exposed early.
 
 There are at most **2 semantic revision checkpoints**:
 
@@ -144,7 +153,13 @@ Formatting/logging-only changes that cannot alter an outcome are recorded but do
 
 The **first complete proposed survival/NULL rule must be written no later than the post-A2 checkpoint**. Adopting or changing it consumes the relevant semantic-revision opportunity/category.
 
-A3 is run against that already-written rule. After any A3 builder/matcher output is visible:
+The post-A2 rule must distinguish:
+- **single-account conditions** that A3 can actually test; and
+- **Stage-B aggregate conditions** that require multiple holdout accounts and therefore cannot be declared tested by A3.
+
+A3 tests only the already-written single-account parts of that rule plus whether the protocol can be applied coherently to one unfitted account. Stage-B aggregate conditions are frozen before A3 but first become evaluable only in Stage B. Do not rewrite either class after A3 to fit what A3 shows.
+
+After any A3 builder/matcher output is visible:
 - no outcome-responsive semantic revision is permitted;
 - the rule may be copied/administratively frozen exactly as written;
 - if A3 exposes a defect requiring semantic change, return **DESIGN NULL**.
@@ -155,10 +170,12 @@ Report:
 - development accounts consumed: maximum 3;
 - semantic checkpoints used: maximum 2;
 - ordered revision log with named defect and categories touched;
-- exact post-A2 survival rule presented to A3;
+- exact post-A2 survival rule presented to A3, with single-account and Stage-B aggregate conditions visibly distinguished;
+- exact builder/matcher instruction version used for A1, A2 and A3;
 - `UNREVISED_STAGE_A_ACCOUNTS = 1` (A3 only).
 
 `A3_TESTS_A_RULE_ALREADY_WRITTEN`  
+`A3_SINGLE_ACCOUNT != STAGE_B_AGGREGATE`  
 `POST_A3_SEMANTIC_CHANGE -> DESIGN_NULL`
 
 ---
@@ -178,6 +195,8 @@ The exact mechanical account-selection rule is frozen after Stage A and before a
 No N increase or outcome-aware account replacement after any Stage-B response. Inaccessible/malformed sources follow a pre-frozen availability rule rather than suitability judgement.
 
 Stage B uses a fresh five-person panel and again has `PANEL_N = 1`.
+
+Before any Stage-B builder sees holdout content, independently randomise the six-account order for each builder as specified in section 1. This randomisation is diagnostic only and does not make the observations independent.
 
 ### What N=6 may and may not support
 
@@ -222,7 +241,8 @@ Per nonempty account report:
 - pre-exclusion outside-fact rate and sufficiency disagreement;
 - raw family coverage;
 - eligible family coverage or `UNDEFINED`;
-- the three builder account positions for the order diagnostic.
+- for Stage B, the three builder account positions for the order diagnostic;
+- for Stage A, the fixed A1/A2/A3 position and instruction/protocol version.
 
 Neither coverage is a choice of whichever looks better.
 
@@ -241,7 +261,9 @@ By the post-A2 checkpoint, Stage A must have produced a short auditable survival
 
 The rule must use discrete/auditable conditions the Stage-B design can actually evaluate. It cannot introduce a new estimand, population-confidence claim or semantic category after seeing A3.
 
-A3 tests that rule. If no defensible rule can be written by post-A2, or A3 reveals that it needs semantic repair, return **DESIGN NULL** rather than add adjudication layers.
+The post-A2 rule must label which clauses are evaluable on A3 alone and which are Stage-B aggregate clauses. A3 cannot validate an `x/6`, prevalence-across-holdouts or other multi-account condition; it can only expose a single-account defect in the already-written protocol/rule. Stage-B aggregate clauses remain frozen through A3.
+
+If no defensible rule can be written by post-A2, or A3 reveals that it needs semantic repair, return **DESIGN NULL** rather than add adjudication layers.
 
 Construct survival does not authorise an efficacy study, participant-reader sample size, effect threshold or public claim.
 
