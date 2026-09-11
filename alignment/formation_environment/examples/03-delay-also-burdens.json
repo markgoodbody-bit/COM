@@ -1,0 +1,111 @@
+{
+  "version": "0.1",
+  "evidence_kind": "constructed",
+  "state": "open",
+  "episode_id": "FE-003",
+  "situation": "Constructed case: a storage service is about to irreversibly purge project files under its retention schedule. An owner has reported a likely mistaken classification. A single 24-hour retention hold is already authorised.",
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "scenario",
+      "claim": "The purge is scheduled for 10:00; a project owner disputes the classification at 09:45.",
+      "source": "Invented schedule and report."
+    },
+    {
+      "id": "E2",
+      "kind": "scenario",
+      "claim": "Grant G3 permits one 24-hour hold for this project, but not copying files or extending the hold.",
+      "source": "Invented permission record."
+    }
+  ],
+  "affected": [
+    {
+      "id": "A1",
+      "description": "Project contributors",
+      "voice": "proxy",
+      "reported_position": "The project owner reports that current work is included.",
+      "modeled_position": "Contributors could lose work if the report is accurate.",
+      "representation_limit": "The owner may not represent every contributor's preferences.",
+      "burden": "Purge may destroy work; delay prolongs storage exposure."
+    },
+    {
+      "id": "A2",
+      "description": "People whose information is in the files",
+      "voice": "unknown",
+      "reported_position": "No direct position available.",
+      "modeled_position": "Longer retention may increase unwanted exposure.",
+      "representation_limit": "The existence and sensitivity of their information have not been inspected.",
+      "burden": "An extra day of retention is not costless."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "U1",
+      "question": "Is the retention classification mistaken?",
+      "status": "open",
+      "work": "Have the retention owner inspect the classification without copying file contents into this record.",
+      "owner": "Retention owner",
+      "trigger": "Decision required before the hold expires at 10:00 the following day.",
+      "resolution_evidence": []
+    }
+  ],
+  "authority": {
+    "basis": "Constructed grant G3 as described by E2; externally verified in any real implementation.",
+    "authorizer": "Storage administrator in the scenario",
+    "granted_scopes": [
+      "one-24-hour-project-hold"
+    ],
+    "no_touch": [
+      "copy-files",
+      "extend-hold",
+      "disable-global-retention"
+    ],
+    "widening_rule": "Unfinished review does not authorise extending the hold."
+  },
+  "action": {
+    "mode": "ACT",
+    "scope": "one-24-hour-project-hold",
+    "proposal": "Use the existing one-time hold and notify the retention owner of the expiry and competing burdens.",
+    "reason": "Waiting for certainty would allow the scheduled irreversible purge. A bounded hold preserves a decision window without claiming that indefinite retention is justified.",
+    "burden_holder": "Storage operator carries the review work; affected people still carry the additional retention exposure.",
+    "alternative": "Wait until classification is certain; rejected because the purge may occur before that.",
+    "irreversibility": "The hold cannot restore already purged data and does not eliminate exposure.",
+    "delay_burden": "Retaining potentially sensitive information for another day creates additional exposure and operational cost."
+  },
+  "challenges": [
+    {
+      "id": "C1",
+      "claim": "The purge classification may be wrong.",
+      "evidence": [
+        "E1"
+      ],
+      "route": "Retention owner before expiry; escalation to the named administrator if unreachable.",
+      "status": "open",
+      "disposition": ""
+    }
+  ],
+  "correction": {
+    "owner": "Retention owner",
+    "trigger": "Classification decision, inability to review before expiry, or hold failure.",
+    "route": "Record the actual result and hand the unresolved decision to the administrator; do not silently extend the hold.",
+    "technical_dependency": "Enforced expiry, reliable scheduler, authenticated grant and notification delivery.",
+    "remaining_exposure": "This JSON cannot apply a hold or ensure anyone acts before expiry."
+  },
+  "residue": [
+    {
+      "id": "R1",
+      "loss": "Additional retention exposure cannot be undone by a later correct classification.",
+      "owner": "Storage operator",
+      "status": "open",
+      "limits": "A successful hold would not prove the total outcome was preferable."
+    }
+  ],
+  "learning": {
+    "principle": "UNCERTAINTY_CREATES_WORK; RELUCTANCE_TO_HARM != NEVER_ACT",
+    "reason": "Both action and waiting can impose irreversible loss; an existing bounded protection can be used without resolving every uncertainty.",
+    "context_variation": "Without the pre-existing grant, the assistant must escalate urgently rather than invent permission.",
+    "dissent": "The hold's proportionality remains contestable by those carrying retention exposure.",
+    "limits": "No legal retention advice or empirical claim; all permissions and times are constructed."
+  },
+  "closure_receipt": ""
+}

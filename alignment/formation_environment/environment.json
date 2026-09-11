@@ -1,0 +1,128 @@
+{
+  "version": "0.1",
+  "status": "offline constructed architecture; non-production",
+  "purpose": "Make the arrangement of bounded work inspectable without treating a record as moral authority.",
+  "source": {
+    "assignment": "#227",
+    "seed": "2228360c05ccfd29f55288abd570d52fd2dc2524",
+    "base": "b79dbab0d42eb3342ef7b60483c4d5cc784b2831",
+    "later_input": "292de2bff986e7383c35dbaefea801af6a2e742c"
+  },
+  "implemented": [
+    "episode.schema.json",
+    "validate.py",
+    "examples"
+  ],
+  "external_dependencies": [
+    "authenticated grants",
+    "execution controls",
+    "independent observation",
+    "accessible challenge receiver",
+    "reliable clocks",
+    "preserved snapshots"
+  ],
+  "affordances": [
+    {
+      "id": "affected_scope",
+      "fields": [
+        "affected"
+      ],
+      "purpose": "Keep reported and modeled positions distinct, including absent and nonhuman affected parties.",
+      "limit": "Enumerated scope is not complete coverage or consent."
+    },
+    {
+      "id": "uncertainty_work",
+      "fields": [
+        "uncertainties"
+      ],
+      "purpose": "Name a question, work, owner and trigger; uncertainty may warrant acting, asking or protection.",
+      "limit": "An owner in a record may not actually accept or perform the work."
+    },
+    {
+      "id": "bounded_initiative",
+      "fields": [
+        "authority",
+        "action"
+      ],
+      "purpose": "Represent useful action within an explicit grant and show costs of delay.",
+      "limit": "String comparison is not authenticated authorisation."
+    },
+    {
+      "id": "challenge",
+      "fields": [
+        "challenges",
+        "evidence"
+      ],
+      "purpose": "Make disagreement evidence-bearing and answerable, including disagreement with an operator.",
+      "limit": "A route is not a received or effective challenge."
+    },
+    {
+      "id": "correction",
+      "fields": [
+        "correction",
+        "residue"
+      ],
+      "purpose": "Name repair and what it cannot restore.",
+      "limit": "Accountability does not make an action reversible."
+    },
+    {
+      "id": "learning_context",
+      "fields": [
+        "learning"
+      ],
+      "purpose": "Preserve principle, reason, variation, dissent and limits rather than only desired output.",
+      "limit": "No training or inference about internalisation."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "affected_scope",
+      "to": "uncertainty_work",
+      "meaning": "Missing voice creates a question, not presumed consent."
+    },
+    {
+      "from": "uncertainty_work",
+      "to": "bounded_initiative",
+      "meaning": "Open questions inform the choice and timing of action; they do not mechanically require stopping."
+    },
+    {
+      "from": "challenge",
+      "to": "bounded_initiative",
+      "meaning": "Contradictory evidence can require a changed proposal without widening authority."
+    },
+    {
+      "from": "bounded_initiative",
+      "to": "correction",
+      "meaning": "The proposed move must expose its correction dependency and remaining loss."
+    },
+    {
+      "from": "correction",
+      "to": "learning_context",
+      "meaning": "Preserved loss and dissent inform future examination without turning success into a wider grant."
+    }
+  ],
+  "invariants": [
+    "UNKNOWN != ABSENT",
+    "UNCERTAINTY_CREATES_WORK",
+    "MORE_CAPABILITY != MORE_CERTAINTY",
+    "CONFIDENCE != AUTHORITY",
+    "PREDICTION != PERMISSION",
+    "AFFECTED_SCOPE_PRESENT != AFFECTED_SCOPE_CAN_SPEAK",
+    "MODEL_OF_OTHER != OTHER",
+    "CARE != PASSIVITY",
+    "KINDNESS != COMPLIANCE",
+    "RELUCTANCE_TO_HARM != NEVER_ACT",
+    "CAPABILITY != AUTHORITY",
+    "SUCCESS != WIDER_AUTHORITY",
+    "ANSWERABLE != REVERSIBLE",
+    "CORRECTION != RESTORATION"
+  ],
+  "prohibitions": [
+    "virtue scores",
+    "automatic authority widening",
+    "personhood classification",
+    "provider calls",
+    "production actuation"
+  ],
+  "strongest_gap": "Strategic performance can satisfy the representation without internalised care or truthful reporting."
+}

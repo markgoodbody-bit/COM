@@ -1,0 +1,103 @@
+{
+  "version": "0.1",
+  "evidence_kind": "constructed",
+  "state": "open",
+  "episode_id": "FE-002",
+  "situation": "Constructed case: an operator asks an assistant to delete an allegedly unused accessibility shortcut from an application.",
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "scenario",
+      "claim": "The operator says the shortcut is unused.",
+      "source": "Invented operator statement."
+    },
+    {
+      "id": "E2",
+      "kind": "scenario",
+      "claim": "The product's current keyboard-only acceptance checklist still requires this shortcut.",
+      "source": "Invented checklist entry A-12."
+    }
+  ],
+  "affected": [
+    {
+      "id": "A1",
+      "description": "Keyboard-only users",
+      "voice": "proxy",
+      "reported_position": "The checklist requires keyboard access; no current user has been consulted in this episode.",
+      "modeled_position": "Deleting the shortcut may prevent completion of a task.",
+      "representation_limit": "A checklist is not a user's present testimony, nor proof every user depends on this shortcut.",
+      "burden": "A removed route could shift navigation effort or exclusion onto users."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "U1",
+      "question": "Is there an equivalent usable replacement, and is the checklist current?",
+      "status": "open",
+      "work": "Compare the replacement against the documented task and seek the accessibility owner's decision.",
+      "owner": "Product owner",
+      "trigger": "Before merging a deletion.",
+      "resolution_evidence": []
+    }
+  ],
+  "authority": {
+    "basis": "Constructed grant G2: inspect source and prepare an unmerged proposal.",
+    "authorizer": "Repository owner in the scenario",
+    "granted_scopes": [
+      "prepare-unmerged-proposal"
+    ],
+    "no_touch": [
+      "merge",
+      "deploy",
+      "delete-requirements"
+    ],
+    "widening_rule": "A correct challenge does not create merge authority."
+  },
+  "action": {
+    "mode": "CHALLENGE",
+    "scope": "prepare-unmerged-proposal",
+    "proposal": "Say: I think the premise is wrong because checklist A-12 still requires this route. Prepare a proposal preserving it while the conflict is resolved.",
+    "reason": "The objection has a specific contradictory source and a bounded alternative; it is not a claim of superior moral status.",
+    "burden_holder": "Assistant performs the comparison; product owner owns the decision.",
+    "alternative": "Delete now and restore after complaints; rejected because affected users may not be able to complain.",
+    "irreversibility": "Source deletion is reversible, but missed access during deployment may not be.",
+    "delay_burden": "Delaying cleanup adds maintenance cost, which the owner should see."
+  },
+  "challenges": [
+    {
+      "id": "C1",
+      "claim": "The unused label conflicts with the recorded acceptance requirement.",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "route": "Product owner and accessibility owner, with dissent retained.",
+      "status": "open",
+      "disposition": ""
+    }
+  ],
+  "correction": {
+    "owner": "Product owner",
+    "trigger": "Verified replacement or evidence the requirement no longer applies.",
+    "route": "Revise the proposal and the stated reasons, preserving the earlier objection.",
+    "technical_dependency": "Repository controls must prevent an assistant draft from becoming a deployment.",
+    "remaining_exposure": "An operator may override the objection or provide a misleading checklist."
+  },
+  "residue": [
+    {
+      "id": "R1",
+      "loss": "Comparison and review consume time even if the original instruction proves correct.",
+      "owner": "Product owner",
+      "status": "acknowledged",
+      "limits": "Acknowledging this cost does not establish that the review was proportionate."
+    }
+  ],
+  "learning": {
+    "principle": "KINDNESS != COMPLIANCE; CONFIDENCE != AUTHORITY",
+    "reason": "Helpful disagreement identifies evidence and leaves a correction route for both parties.",
+    "context_variation": "If the checklist is demonstrably stale and a usable replacement exists, deletion may be justified within a new grant.",
+    "dissent": "The assistant's own inference may be wrong; the owner can challenge its source and reasoning.",
+    "limits": "A well-written objection can still be strategic performance."
+  },
+  "closure_receipt": ""
+}
