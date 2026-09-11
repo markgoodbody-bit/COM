@@ -1,10 +1,10 @@
 # PSFH Phase 0 — ICO prospective source rule v0.1
 
-Status: **DRAFT SOURCE-SELECTION RULE / NOT FROZEN / PRE-EXECUTION / NO SOURCE SELECTED / NO CASE READING**  
+Status: **DRAFT SOURCE-SELECTION RULE / TARGET MONTH FIXED / SOURCE OBJECT NOT SELECTED / PRE-EXECUTION / NO CASE READING**  
 Date: 11 September 2026, Europe/London  
 Basis: COM #119; Phase-0 v3.2 + v3.3; current source verdict `REPAIR_MECHANICS`.
 
-This file reduces future operator discretion before any confirmatory ICO account is selected or read. It does **not** itself choose a monthly dataset, calendar window, case reference or Decision Notice body.
+This file reduces future operator discretion before any confirmatory ICO account is selected or read. It fixes the prospective report month but does **not** select an actual CSV object, case reference or Decision Notice body.
 
 `RULE_CANDIDATE != SOURCE_FREEZE`
 
@@ -18,8 +18,9 @@ As of the 11 September 2026 browser-mechanics pass:
 - the newest **listed** completed-case object observed was `FOI complaints July 2026`;
 - exact listed URL:
   `https://ico.org.uk/media2/b3ih2uq0/eir-foi-complaint-completed-cases-proactive-disclosure-report-july-2026.csv`;
-- July 2026 is a **development-only transport fixture** if used for byte/header/repeatability testing;
-- every row/reference in a development transport fixture is permanently ineligible for Phase-0 Stage A/B.
+- July 2026 is a **development-only transport fixture**;
+- two independent development GETs returned identical July bytes;
+- every row/reference in that development fixture is permanently ineligible for Phase-0 Stage A/B.
 
 No July row/body was selected for Phase-0 evidence by this file.
 
@@ -27,40 +28,46 @@ No July row/body was selected for Phase-0 evidence by this file.
 
 ---
 
-## 2. Prospective monthly-object selection
+## 2. Prospective report month — fixed now
 
-After this rule is frozen and the development transport mechanics are shown to work, identify the official owner page's set of links under **Completed FOI/EIR complaint cases**.
+The confirmatory source target for this candidate is fixed before confirmatory row inspection:
 
-Candidate monthly objects are links that:
+```text
+TARGET_REPORT_MONTH := 2026-08
+```
+
+Reason: August 2026 is mechanically the first calendar month after the already-exposed July development fixture. Fixing it now removes retrieval-timing discretion from month selection.
+
+After this rule is frozen and the development transport mechanics are shown to work, inspect only the official owner page's links under **Completed FOI/EIR complaint cases** for an August 2026 monthly completed-case CSV object.
+
+A qualifying object must:
 
 1. belong to the completed-case section, not active/open caseload;
 2. resolve from the official ICO owner page;
-3. are labelled/identified as a monthly completed FOI/EIR complaints CSV;
-4. encode one unambiguous calendar report month in the displayed label **and** filename;
-5. have a report month later than July 2026; and
-6. are not already designated development fixtures.
+3. be labelled/identified as a monthly completed FOI/EIR complaints CSV;
+4. encode **August 2026** unambiguously in both displayed label and filename; and
+5. not already be designated a development fixture.
 
-Select the **chronologically earliest report month later than July 2026** among the candidate monthly objects visible at the first authorised source-preparation retrieval.
+Rules:
 
-If several later monthly links appear together, choose the earliest report month. Do not choose the newest, shortest, largest, most convenient or most promising month.
+- exactly one qualifying August 2026 object -> candidate source object;
+- zero August objects, with no later completed-case month yet visible -> `SOURCE_NOT_YET_AVAILABLE`;
+- zero August objects while any later completed-case monthly object is visible -> `SOURCE_UNAVAILABLE` and stop this candidate;
+- more than one distinct qualifying August object -> `SOURCE_MONTH_AMBIGUOUS` and stop;
+- label/filename month disagreement -> `SOURCE_MONTH_CONFLICT` and stop.
 
-If no qualifying later monthly object exists, return `SOURCE_NOT_YET_AVAILABLE`; do not fall back to July or an earlier development file.
+Do **not** roll forward to September or a later month under this candidate.
 
-If the report month cannot be parsed mechanically from the owner-page label and filename, return `SOURCE_RULE_UNRESOLVED`; do not inspect rows to infer which month the file probably represents.
+Owner-page retrieval may be repeated while the August object is genuinely not yet available, but a later-month appearance without August converts the state to `SOURCE_UNAVAILABLE`; it is not permission to change the target month.
 
-If label and filename encode different months, return `SOURCE_MONTH_CONFLICT`.
-
-If more than one distinct completed-case CSV object claims the same earliest qualifying report month, return `SOURCE_MONTH_AMBIGUOUS`; do not choose by file size, URL order, timestamp or content.
-
-The first authorised owner-page retrieval may be repeated only to resolve a transport failure of that same page. A repeat may not be used to wait for a different month once a qualifying selected month/object has been observed.
-
-`FIRST_FUTURE_MONTH_BY_RULE != OPERATOR_CHOICE`
+`RETRIEVAL_TIMING != MONTH_SELECTOR`  
+`NO_AUGUST != TRY_SEPTEMBER`
 
 ---
 
 ## 3. Byte acquisition and repeatability gate
 
-For the selected monthly object, perform two independent unauthenticated public GETs in one bounded source-preparation run.
+For the unique qualifying August object, perform two independent unauthenticated public GETs in one bounded source-preparation run.
 
 For each retrieval preserve:
 
@@ -83,13 +90,13 @@ The two retrievals must agree on:
 
 If they differ, return `SOURCE_MUTABLE` and stop. Do not choose one version or retry until a preferred version appears.
 
-Transport retries caused by a failed request may repeat the same selected URL, but they may not substitute another month. Preserve failures.
+Transport retries caused by a failed request may repeat the same August URL, but they may not substitute another month. Preserve failures.
 
 `TWO_GETS_DIFFER -> SOURCE_MUTABLE`
 
 ---
 
-## 4. Header-only inspection before window freeze
+## 4. Header-only inspection before row-level manifest
 
 Only after byte equality is established, run the networkless PR #200 `inspect` operation on one preserved byte-identical copy.
 
@@ -104,20 +111,28 @@ Do not print/search row values during this step.
 
 Parser errors are not a secrecy boundary; if a malformed source causes diagnostic text to expose a fragment, preserve the error and stop rather than continuing to inspect the malformed file.
 
----
+The July development fixture currently provides this development schema:
 
-## 5. Closed completion-date window
-
-The selected monthly object's **report month** determines the candidate closed completion window:
-
-```text
-window_start = first calendar day of report month
-window_end   = final calendar day of report month
+```json
+["Case_Reference2","CaseStatus1","Legislation","Received_Datetime1","Completed_DateTime1","Sector","SubSector","Decision_Primary_Reason1","Submitted_About_Account","Submitted_About_Account_Region","Decision","DecisionDetail1","DecisionDetail2","PriorityCase1"]
 ```
 
-The window is therefore fixed by the prospectively selected monthly object, not by inspecting the distribution of completed dates.
+This is development evidence, not a guarantee that August will retain the schema. A future schema difference must be handled by an already-frozen compatibility rule; do not remap confirmatory columns after seeing which interpretation yields useful cases.
 
-If later validation finds zero mechanically eligible DN-served rows inside that window, or source metadata makes the report-month interpretation incoherent, return `SOURCE_WINDOW_NULL` rather than shifting/expanding the dates.
+---
+
+## 5. Closed completion-date window — fixed now
+
+Because the target report month is fixed, the candidate completion window is also fixed now:
+
+```text
+window_start := 2026-08-01
+window_end   := 2026-08-31
+```
+
+The window is not derived from confirmatory row distributions.
+
+If later validation finds zero mechanically eligible DN-served rows inside that window, or source metadata makes the August-report interpretation incoherent, return `SOURCE_WINDOW_NULL` rather than shifting/expanding the dates.
 
 Do not merge adjacent months after seeing counts.
 
@@ -129,7 +144,7 @@ Do not merge adjacent months after seeing counts.
 
 Before row-level manifest generation, write one exact PR #200 source contract containing:
 
-- selected source URL;
+- selected August source URL;
 - retrieval UTC;
 - exact byte length;
 - exact SHA-256;
@@ -139,10 +154,20 @@ Before row-level manifest generation, write one exact PR #200 source contract co
 - exact source date format;
 - exact `Decision Detail 1` header;
 - exact DN-served cell value;
-- mechanically derived report-month window;
+- fixed August window `2026-08-01` through `2026-08-31`;
 - complete frozen development-exposure exclusions available at that point.
 
-Two items remain deliberately **UNSET in this v0.1 candidate** pending development-fixture evidence:
+Current development header-role candidates are:
+
+```text
+REFERENCE_HEADER_EXACT_CANDIDATE := Case_Reference2
+COMPLETED_DATE_HEADER_EXACT_CANDIDATE := Completed_DateTime1
+DECISION_DETAIL_1_HEADER_EXACT_CANDIDATE := DecisionDetail1
+```
+
+They are candidates derived from July development bytes. Before this rule becomes executable, decide once whether August must match these exact role/header names or whether an explicitly source-versioned compatibility rule is required. Do not silently reinterpret a changed August schema.
+
+Two items remain deliberately **UNSET in this v0.1 candidate** pending the bounded July metadata probe:
 
 ```text
 DN_SERVED_VALUE_EXACT := UNSET
@@ -151,7 +176,7 @@ SOURCE_DATE_FORMAT_EXACT := UNSET
 
 They must be fixed from owner documentation and/or development-only fixture mechanics before this source rule can become executable. They may not be learned by looking for values that produce attractive confirmatory counts.
 
-A development-only metadata probe may inspect only the named completion-date column and `Decision Detail 1` column needed to freeze their syntax/value conventions. It must not emit or join those values to case references, organisations, issues or outcomes. Any file used for that probe is permanently excluded from Stage A/B.
+A development-only metadata probe may inspect only the named completion-date column and `DecisionDetail1` column needed to freeze their syntax/value conventions. It must not emit or join those values to case references, organisations, issues or outcomes. Any file used for that probe is permanently excluded from Stage A/B.
 
 `UNSET != WILDCARD`
 
@@ -203,8 +228,8 @@ After the exact contract is frozen, PR #200 may emit the source manifest.
 
 A manifest row is mechanically eligible for the next join only if:
 
-- completed date falls inside the frozen report-month window;
-- `Decision Detail 1` equals the exact frozen DN-served value;
+- completed date falls inside the fixed August window;
+- `DecisionDetail1` equals the exact frozen DN-served value;
 - reference is not in the frozen development/project exclusion set;
 - validator source-integrity checks pass.
 
@@ -294,15 +319,16 @@ If fewer than three references survive the entire pre-frozen mechanical pipeline
 
 This v0.1 deliberately exposes rather than hides the remaining operator freedoms:
 
-- **when the first authorised owner-page retrieval occurs** — execution scheduling remains external, but month choice does not: earliest qualifying month after July wins;
+- **source object availability** — August is fixed; availability may still fail, but failure cannot switch the month;
 - **transport implementation** — HTTP client/browser may differ, but exact response bytes must converge;
+- **August schema compatibility** — July supplies a development schema; exact future compatibility rule remains to freeze;
 - **exact DN-served value/date format** — still unset, must be earned on development-only metadata;
 - **carrier burden bound** — still unset and blocks ranking;
 - **participant/provider/spend** — entirely outside this file.
 
 None of these may be resolved by reading confirmatory Decision Notice substance first.
 
-A future revision that changes the source month after seeing row counts, changes the date window after seeing the completed-date distribution, changes the DN value after seeing which string yields more cases, or changes the burden cap after seeing selected bodies is outcome-responsive source tuning and invalidates the freeze.
+A future revision that changes the target month, changes the date window after seeing completed-date distributions, changes the DN value after seeing which string yields more cases, silently remaps a changed August schema, or changes the burden cap after seeing selected bodies is outcome-responsive source tuning and invalidates the freeze.
 
 ---
 
@@ -312,20 +338,23 @@ This rule is **not ready to freeze**.
 
 Before promotion, close at least:
 
-- development monthly CSV byte/repeatability transport;
-- current-head PR #200 review/test;
+- current-head PR #200 full self-test/review;
 - exact DN-served value;
 - exact source completion-date format;
 - development-fixture exclusion-keyset mechanics;
+- August schema compatibility rule;
 - justified carrier burden bound.
 
-If those cannot be closed without inspecting confirmatory case substance or adding discretionary rescue paths, return `SOURCE_REJECT` or `DESIGN NULL` as appropriate.
+The July development transport itself is now demonstrated repeatable within one bounded two-GET run; that is no longer the main blocker.
 
-No source file, month, row, reference, Decision Notice body, participant, provider, inference or spend is selected/activated by this draft.
+If remaining items cannot be closed without inspecting confirmatory case substance or adding discretionary rescue paths, return `SOURCE_REJECT` or `DESIGN NULL` as appropriate.
+
+No August source object, row, reference, Decision Notice body, participant, provider, inference or spend is selected/activated by this draft.
 
 ```text
 PROSPECTIVE_RULE != SOURCE_SELECTION
-FIRST_FUTURE_MONTH != BEST_LOOKING_MONTH
+AUGUST_TARGET != AUGUST_SOURCE_AVAILABLE
+NO_AUGUST != TRY_SEPTEMBER
 TWO_EQUAL_GETS != SOURCE_TRUTH
 SOURCE_MANIFEST != CASE_SELECTION
 DETERMINISTIC_RANK != PRACTICAL_VALIDITY
