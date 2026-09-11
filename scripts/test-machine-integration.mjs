@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto';
 import { VIEWS } from './source-views.mjs';
 
 const parent = '4bf08436a917ab2c31881a035fa223fc57bbfb6b';
+const d033 = '5d76bf62a792b6b44668c9d8fa0b9f62eb748f6e';
 const old = file => execFileSync('git',['show',parent+':public/'+file],{encoding:'utf8'});
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 
@@ -41,10 +42,19 @@ test('arrival preserves the D022 wording changes and adds only the D034 project 
     trace_compact:'../resources/trace/TRACE-SPINE.md'
   });
   for (const route of Object.values(JSON.parse(bytes).routes)) await readFile('out/explore/'+route);
+
+  const beforeMap = JSON.parse(execFileSync('git',['show',d033+':public/explore/map.json'],{encoding:'utf8'}));
   const resourceMap = JSON.parse(await readFile('public/explore/map.json'));
-  assert.deepEqual(resourceMap.resources.find(resource=>resource.path==='start.json'),{
+  const beforeStart = beforeMap.resources.find(resource=>resource.path==='start.json');
+  const afterStart = resourceMap.resources.find(resource=>resource.path==='start.json');
+  assert.deepEqual(beforeStart,{
+    path:'start.json', bytes:1758, sha256:'4cc066e604d73b3f21ff1072d23bbe9b5057dd82b8552bb1b899779f3f58ed2e'
+  });
+  assert.deepEqual(afterStart,{
     path:'start.json', bytes:2768, sha256:'3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5'
   });
+  beforeMap.resources[beforeMap.resources.findIndex(resource=>resource.path==='start.json')] = afterStart;
+  assert.deepEqual(resourceMap,beforeMap);
   assert.match(before.reading,/No automatic traversal or report-back/);
 });
 
