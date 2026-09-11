@@ -25,13 +25,32 @@ It has **no network code** and cannot retrieve an ICO dataset or Decision Notice
 It supports three operations:
 
 1. `inspect <csv>`  
-   Reads one local CSV snapshot and reports exact byte length, SHA-256, UTF-8 BOM state, ordered header row and row count.
+   Reads one local CSV snapshot and reports exact byte length, SHA-256, UTF-8 BOM state, ordered header row and row count. It does **not** emit row values.
 
 2. `validate <csv> <contract.json>`  
    Requires a separately frozen contract containing exact snapshot identity, exact ordered headers, required field names, one closed completion-date window, the exact DN-served value and the development-exposure exclusion list. It fails closed on identity/schema/date/duplicate-reference defects and emits a deterministic **source manifest only**. The manifest carries the exact contract file byte length and SHA-256 as well as the source identity, so the selector contract itself remains replayable.
 
 3. `self-test`  
    Runs embedded synthetic positive and negative controls. No public source is touched.
+
+## Intended operator order
+
+The tool is designed so the source window is not chosen by browsing row-level outcomes through the validator itself.
+
+Later, if the ICO source route is authorised and the export mechanics are closed:
+
+1. retrieve one named completed-FOI/EIR CSV snapshot and preserve the original bytes;
+2. run `inspect` only — exact bytes/hash, header row and row count, with no row values emitted;
+3. freeze the source contract, including the closed date window and the already-required contamination exclusions, before any `validate` row-level manifest is produced;
+4. run `validate` once against those exact frozen CSV + contract bytes;
+5. preserve the manifest and contract identities;
+6. only then perform the separately frozen Decision Notice join, and only under the next applicable authority gate.
+
+This ordering cannot prevent a human operator from manually opening the CSV outside the tool. The protocol rule is therefore still necessary: do not inspect row-level case metadata to choose a flattering date window.
+
+`INSPECT != ROW_REVIEW`  
+`CONTRACT_BEFORE_MANIFEST`  
+`MANIFEST != CASE_SELECTION`
 
 ## Why this is the current useful build
 
@@ -70,7 +89,7 @@ A later real-data contract must contain exactly these keys:
 }
 ```
 
-Placeholders are documentation only. A real contract must carry the actual frozen values; do not create a permissive wildcard contract. Unknown contract keys fail closed rather than silently extending the selector.
+Placeholders are documentation only. A real contract must carry the actual frozen values; do not create a permissive wildcard contract. Unknown contract keys and duplicate JSON object keys fail closed rather than silently extending or overriding the selector.
 
 ## Fail-closed rules implemented
 
@@ -85,7 +104,8 @@ The validator rejects:
 - byte-length or SHA-256 mismatch;
 - any ordered-header mismatch;
 - missing required headers;
-- a contract with missing or unknown keys;
+- a contract with missing, unknown or duplicate JSON object keys;
+- non-finite JSON constants;
 - a non-HTTPS or non-absolute source URL;
 - a retrieval timestamp without explicit UTC or with a non-zero offset;
 - malformed or inverted date windows;
@@ -167,13 +187,15 @@ The self-test uses synthetic CSV bytes only. It checks:
 - a valid quoted multiline field survives intact;
 - a short malformed row fails closed;
 - an unknown contract key fails closed;
-- a non-UTC retrieval timestamp fails closed.
+- a non-UTC retrieval timestamp fails closed;
+- a duplicate JSON contract key fails closed.
 
-Framework self-review also corrected four concrete defects before external review:
+Framework self-review also corrected five concrete defects before external review:
 1. line-splitting before CSV parsing could corrupt quoted multiline fields;
 2. short CSV rows could be silently padded;
 3. permissive contract shape could allow unnoticed selector drift;
-4. the initial manifest hashed the source but not the exact selecting contract.
+4. the initial manifest hashed the source but not the exact selecting contract;
+5. ordinary JSON parsing could silently accept duplicate selector keys using last-value-wins semantics.
 
 ## Current source disposition
 
