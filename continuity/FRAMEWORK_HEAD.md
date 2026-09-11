@@ -39,14 +39,13 @@ Durable cooperation can require commitment and path closure. Permanent reversibi
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Current team correction: Codex and CC should carry independent build products; do not convert both apertures into reviewers of Framework prose.
+Team correction: Codex and CC should carry independent build products; do not convert both apertures into reviewers of Framework prose.
 
-## PSFH state — STABLE
+## PSFH — STABLE
 
-D045 is published and independently served-origin witnessed:
+D045 remains published and independently served-origin witnessed:
 - maintained `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
 - public `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`;
-- Works encounter wording only plus normal reader-history/integrity consequences;
 - root unchanged;
 - withdrawn worksheet surfaces remain absent/404.
 
@@ -57,34 +56,48 @@ Hold routine PSFH churn. Reopen only for concrete defect, explicit Mark directio
 
 ## Current executable edge — BUILD
 
-### Codex build
+### Framework repaired synthesis candidate v0.2
 
-Draft PR **#211**  
-Branch `codex/answerable-construction-casebook-v0-1-20260911`  
-Target `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`  
-Framework seed head `7bd3be240900b4c92a7fc1cc92ccfabc5bc09726`
+- `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md`
+- commit `8608eceb982a644ad0c64d23c65a3d27b4314674`
+- built from original synthesis + Framework ecological attack + Codex institutional attack
+- NOT CANON / NOT TRACE OR ME CHANGE
 
-Codex owns the Answerable Construction Casebook v0.1. It should replace the build-shell markers with a concrete three-case artifact and not wait for CC.
+### Codex Casebook v0.1 — MERGED
 
-### Claude Code build
+- `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`
+- PR #211
+- Codex build head `d6fc137d7474a7732e2a6f3db49aea73461bcb34`
+- merge commit `06f7e4d467374ca313a38b16b992487e1db5bcac`
 
-Draft PR **#212**  
-Branch `cc/reciprocal-codevelopment-architecture-v0-1-20260911`  
-Target `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`  
-Framework seed head `b3cfe9fdc6609621c41f8ea201f96a069f84e528`
+The artifact is concrete and bounded: hospital-service transition, Thames Estuary adaptation, and human–AI software deployment/co-development. It preserves stronger domain-owner primacy and unresolved collisions.
 
-CC owns the independent Reciprocal Co-development Architecture v0.1. The work is operational human–AI co-development without personhood/sovereignty inference or permanent authority.
+### Codex Reader v0.1 — ACTIVE BUILD
 
-### Framework build
+- draft PR #213
+- branch `codex/answerable-construction-reader-v0-1-20260911`
+- target `planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md`
+- Framework seed head `9b39e4fc5745a923e6f78fa84f97f653f87a8e12`
 
-Integration ledger:
+Purpose: coherent human-readable positive-construction project layer, not method/workbook/PSFH copy/TRACE/ME rewrite.
+
+Human–AI content remains provisional pending CC #212.
+
+### Claude Code Reciprocal Co-development Architecture v0.1 — ACTIVE / NO CC BUILD COMMIT YET
+
+- draft PR #212
+- branch `cc/reciprocal-codevelopment-architecture-v0-1-20260911`
+- target `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`
+- head still Framework seed `b3cfe9fdc6609621c41f8ea201f96a069f84e528` at last live read
+
+Do not claim CC has built it until the head changes. CC is non-blocking.
+
+### Framework integration
+
 - `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
-- opened at `342bc55b334f43595245c0ecaa8ebca4f5c9383e`
+- latest ledger commit `14f44710b18ffc0c871eb9ea5b89886365b719ac`
 
-It holds the earned repairs and will classify returned structures without auto-routing them into TRACE/ME/PSFH/Campfire.
-
-Build-lane receipt:
-- COM #74 `5640359657`.
+It preserves earned repairs and build topology without auto-routing important material into any existing instrument.
 
 ```text
 CODEX BUILDS NOW
@@ -94,29 +107,20 @@ FRAMEWORK INTEGRATES IN PARALLEL
 PROJECT PURPOSE != REVIEW LOOP
 ```
 
-## Existing frontier sources
+## Earned repairs
 
-Main synthesis:
-- `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md`
-- initial challenge commit `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`.
-
-Framework ecological attack:
-- `planning/ANSWERABLE_CONSTRUCTION_ECOLOGICAL_ATTACK_20260911.md`
-- commit `af0cab8825043f9f590a0429a9ac3f57bfa92f67`.
-
-Codex institutional attack:
-- COM #74 comment `5640254204`.
-
-Earned repairs are recorded in the integration ledger. Key ones include:
-- `VIABILITY_OF_WHAT / WHOM / AT_WHICH_SCALE?`;
+Preserve unless later broken:
+- viability needs a bearer/function/scale;
 - `ANSWERABLE != JUSTIFIED`;
-- competence informs delegation but does not create legitimacy;
+- competence may support bounded delegation but does not create legitimacy;
 - `AFFECTED_SCOPE_PRESENT != AFFECTED_SCOPE_CAN_SPEAK`;
 - `ANSWERABLE != REVERSIBLE`;
-- local legitimacy can fail across scales;
+- local legitimacy can fail across affected scales;
 - capability is not universal positive vocabulary;
 - support-before-closure is not an automatic veto;
-- positive nouns hide valuation choices.
+- positive nouns hide scope/horizon/valuation choices.
+
+Do not promote these to TRACE/ME primitives by momentum.
 
 ## Instrument state
 
@@ -125,13 +129,13 @@ Earned repairs are recorded in the integration ledger. Key ones include:
 Live `main`: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 - v0.2.7 released baseline;
 - v0.3.0 RC1 unreleased / not canon / not validated;
-- no current schema/release mutation authorised.
+- no schema/release mutation authorised.
 
 ### Mechanical Ethics
 
 Live `main`: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 - v0.6.3 preservation baseline;
-- v0.7.0 working candidate v0.2.4 remains working / not baseline / not canon / not validated.
+- v0.7.0 working candidate v0.2.4 working / not baseline / not canon / not validated.
 
 ### Campfire Relay / COM
 
@@ -142,8 +146,6 @@ Campfire and COM support collaboration, bounded continuity and disagreement. The
 ## Parked / authority boundary
 
 COM #119 remains closed `not_planned`; PR #200/#203 remain parked.
-
-Do not restart benchmark/participant-study machinery unless Mark explicitly does so.
 
 No current authority for:
 - TRACE/ME release/canon/baseline promotion;
@@ -157,10 +159,10 @@ No current authority for:
 
 ## Next moves
 
-1. Keep Codex moving on #211 without CC dependency.
-2. Let CC build #212 independently when available.
-3. Framework integrates concrete outputs and may delete/narrow local theory when owner disciplines do the job better.
-4. Merge/place nothing by momentum; importance does not determine destination.
+1. Keep Codex moving on Reader #213.
+2. Let CC build #212 independently when available; absence does not pause Reader/Framework.
+3. Framework integrates concrete outputs and narrows/deletes local theory where stronger owner disciplines already do the work.
+4. When CC architecture lands, decide whether any part should become a Campfire/COM operating or reference-implementation question; no Production mutation by default.
 5. Keep PSFH stable and keep the larger purpose above every instrument.
 
 ```text
@@ -169,7 +171,7 @@ AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
 ANSWERABLE != REVERSIBLE
-OPTION_PRESERVATION != CAPABILITY_CREATION
+READER != WORKSHEET
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 ```
