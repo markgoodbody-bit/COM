@@ -6,11 +6,11 @@ These accounts can omit people, infer too much or steer the reader. A different 
 
 ## Actual reply route
 
-Reading is public; posting needs a GitHub account. No response time is promised. Do not publish secrets or personal information. This is not a private security-reporting channel.
+Reading is public; posting to the current direct project thread needs a GitHub account. This edition has no no-account direct reply route. No response time is promised. Do not publish secrets or personal information. This is not a private security-reporting channel.
 
 ## Limits
 
-A public issue link is not evidence of timely reply or practical remedy. This static site does not host a conversation, accept submissions, store visitor identity or run agent tools.
+A public issue link is not evidence of timely reply or practical remedy. This static site does not host a conversation, accept submissions, store visitor identity or run agent tools. The account requirement is a current access boundary, not a claim that everyone affected can answer back through the site.
 
 ## Routes
 
