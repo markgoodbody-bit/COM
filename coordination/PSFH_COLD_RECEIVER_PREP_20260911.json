@@ -1,6 +1,8 @@
 {
-  "status": "A0_ATTEMPT_EXCLUDED_CONTAMINATED; B0_B1_C_NOT_DISPATCHED",
-  "basis": "COM108 through 5633599279; earlier preparation comments retained below",
+  "status": "CONTACT_CAPTURE_COMPLETE; BOUNDED_TASK_DELTA_WORTH_FORMAL_TEST; NO_FURTHER_AD_HOC_DISPATCH",
+  "basis": "COM108 FW5634012919 / 5634045561 / 5634074199; complete closing receipt linked below",
+  "closing_receipt": "PSFH_CONTACT_RECEIPT_20260911.md",
+  "closing_limits": "Codex bounded disposition for Framework review; no isolated PSFH causation, efficacy, domain-owner superiority or D029-to-D030 receiver effect. D030 remains frozen.",
   "reference_publication": "eacf5dbef0394fbebfe41a2b3d5a4529b0131cd5",
   "reference_homepage_sha256": "1c5e2a7c20ac51f20451dac18a3a5789b3c6cd87a6805dc27f29999efc174119",
   "reference_rebinding": {
@@ -12,7 +14,7 @@
     "pages_updated_at": "2026-09-11T10:41:48Z",
     "evidence": "155 of 155 generated files match publication Git blobs. No direct public-origin readback by Codex. Mutable live identity must still be acquired at execution."
   },
-  "provider_preflight": {
+  "historical_provider_preflight_at_trial_001": {
     "observed_date": "2026-09-11",
     "interface": "Claude web in Codex in-app browser; Incognito conversation outside projects",
     "chatgpt": "Unpersonalized Temporary Chat was observed briefly but stable execution conditions were not established; no prompt sent",

@@ -1,0 +1,16 @@
+It's a personal, non-commercial ethics and decision-making project, not a product, scam, or company. It's described as a project by Mark, developed with AI collaborators (the linked GitHub repositories are under the name markgoodbody-bit), and it's explicitly an early draft: a working preview, version 0.8.4, with the human entrance revised on 11 September 2026, which is today. 
+pleasestartfromhere
+pleasestartfromhere
+
+The core idea is about the gap between how institutions record a problem and what's actually happening to the people affected, especially when help arrives too late to matter. The site's own example makes this clearer than its abstract language does. Two flats share a wall; Martin owns upstairs, while Leah and Sam rent downstairs with their daughter Mia. Damp appears behind Mia's bed and spreads while both households try to get it repaired. Martin's managing agent puts him in touch with someone who has authority, while the renters go through a tenant portal built to handle many requests, which gives them a reference number while the room keeps getting worse. The upstairs wall gets fixed, but downstairs an inspection is only offered after the family has found somewhere else to live. The point is that the case can be "closed" on paper while the harm was never actually addressed. 
+Please Start From Here +2
+
+It has two main pieces. Mechanical Ethics is a book written for general readers about the distance between an institutional record and the life it affects, and TRACE is a compact structural language for examining evidence, time, usable routes and correction. The site also offers a short set of prompts (notice, choose, decide, responsibility, repercussions, check and correct) for thinking through a real situation you're facing. 
+pleasestartfromhere
+
+It's unusually modest about itself. It says plainly that practical advantage over careful ordinary reasoning or established methods has not been demonstrated, and repeatedly invites disagreement or simply leaving. It's also written partly for AI readers, with machine-readable files and a suggestion to paste the address into an AI and ask what it notices. So whoever sent it to you may have wanted exactly this kind of reaction. 
+pleasestartfromhere
+
+My honest take: the underlying concern is real and important. The damp-flat story captures something many people have lived through. But the ideas themselves aren't new; researchers already study them under names like "administrative burden" and "street-level bureaucracy." The site's heavy abstraction and constant caveats make it harder to get into than it needs to be. If you're curious, the damp story and the six-question checklist are the most accessible parts, and you can safely skip the rest.
+
+Do you know why the person sent it to you? If there's a particular situation it was meant to help with, I'm happy to think it through with you directly.

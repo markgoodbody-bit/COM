@@ -1,0 +1,27 @@
+I checked it. It’s an experimental decision-making/ethics project, rather than a company, app, charity, or normal website.
+
+It calls itself “Please Start From Here”, a project by someone named Mark “developed with AI collaborators.” The site is basically the front door to two related pieces of work: Mechanical Ethics, a human-readable book about the gap between institutional records/processes and what actually happens to people, and TRACE, a more formal framework for analysing decisions involving uncertainty, evidence, deadlines, responsibility, available routes, and whether a mistake can still be corrected in time. 
+Please Start From Here
++2
+GitHub
++2
+
+A simple example captures the idea. Imagine an organisation says, “You have a right to appeal.” TRACE asks: yes, but can you actually use that appeal before the harmful decision takes effect? It deliberately distinguishes things such as “a route exists” from “the route is practically usable,” and “a correction is possible” from “the correction arrives in time.” 
+GitHub
+
+There’s also an unusual AI angle. The site is deliberately written for both humans and AI systems. It publishes machine-readable material such as llms.txt and start.json, and actually suggests giving the address to an AI and asking what it notices or disagrees with. At the same time, it repeatedly says that reading the material does not mean accepting it or giving it authority. 
+Please Start From Here
+
+Importantly, its authors are quite explicit that this is not a validated method. The TRACE repository currently labels its newer specification a release candidate and says it has no demonstrated practical advantage over good ordinary analysis or established specialist methods. 
+GitHub
+
+As for “is this dodgy?”: I don't see the usual signs of a phishing/scam site in what I inspected. There’s no payment request, account creation, credential prompt, download requirement, or demand for personal information. The site's challenge page says it is static, does not accept submissions, and does not run agent tools; most of the substantive material links to public GitHub repositories. 
+Please Start From Here
+ That doesn't mean I'd automatically trust every claim it makes—I'd treat it as somebody's experimental intellectual framework, not as established academic or professional guidance.
+
+One reason it may feel slightly mysterious is that the website itself is extremely new: the current page says “Site Preview 0.8.4,” prepared on 7 September 2026 and with its human-facing entrance revised today, 11 September 2026. 
+Please Start From Here
+
+So, in one sentence: someone has sent you a newly published philosophical/technical framework for thinking more carefully about real-world decisions—especially cases where bureaucracy says a remedy exists but reality, timing, or power makes that remedy ineffective.
+
+If you tell me the context in which they gave you the link (friend, work colleague, recruiter, random person, etc.), I can also tell you what I think they were probably trying to communicate by sending it.
