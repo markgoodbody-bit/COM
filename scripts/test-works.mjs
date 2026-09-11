@@ -16,7 +16,8 @@ test('normal output retains exactly the declared work pages, images and records'
   }
   assert.deepEqual(built, source);
   const root = await readFile('out/index.html', 'utf8');
-  assert.equal((root.match(/href="\/works\/"/g) ?? []).length, 1);
+  // D030 adds a direct overview route; the optional Look route survives.
+  assert.equal((root.match(/href="\/works\/"/g) ?? []).length, 2);
   assert.equal((root.match(/<figure\b/g) ?? []).length, 1);
   assert.match(root, /camp-fire-1440.jpg/);
   const shelf = built.get('works/index.html').toString('utf8');

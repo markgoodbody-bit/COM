@@ -1,8 +1,12 @@
 {
   "historical_revision": "aed75526770de9a7c9a2aa7cef63f1167dad1669",
-  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the three blocks belonging to the repeated Change bridge; its source account/question remain in the reading. The Futures bridge, story text and all pre-foyer substantive blocks remain. Navigation labels and the exact D028-to-D029 subtraction are checked separately.",
-  "removed": {},
+  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the repeated Change bridge. D030 moves the purpose and author line into the project spine, removes the author line's final full stop, adds a heading and two relationship paragraphs, and updates the human revision date. The Futures bridge and story remain unchanged. Navigation is checked separately.",
+  "removed": {"A project by Mark, developed with AI collaborators.": 1},
   "added": {
+    "A project by Mark, developed with AI collaborators": 1,
+    "Decisions, and the lives they change.": 1,
+    "Mechanical Ethics is the human-facing book about the distance between an institutional record and the life it affects. TRACE is the compact structural language for examining evidence, time, usable routes and correction.": 1,
+    "Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists' intentions or endorsement. Practical advantage over existing methods remains unproved.": 1,
     "Would you like to continue?": 1,
     "Take a small look, or go straight to the material.": 1,
     "Continue →": 1,
@@ -26,6 +30,6 @@
     "Close this tab or go somewhere else. There is nothing to finish or send back.": 1,
     "Return to the painting": 1,
     "Read the opening story: Two flats, one wall .": 1,
-    "Working preview · Site Preview [edition]. Human entrance revised 10 September 2026. Back to the opening · Go to the map .": 1
+    "Working preview · Site Preview [edition]. Human entrance revised 11 September 2026. Back to the opening · Go to the map .": 1
   }
 }
