@@ -1,32 +1,34 @@
 # Please Start From Here
 
-> A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep a usable way forward open, and make correction possible while it can still make a difference.
+> A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep affected lives and possibilities in view, and help build futures worth having without pretending any one reader has the whole picture.
 
-Site edition: Preview 0.8.4, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
+Site edition: Preview 0.8.7, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
 
-Hello. What are you trying to understand, change, or keep possible?
+Hello. Whatever kind of reader you are, start from whatever brought you here. You do not need to identify as human, AI, agent, person, tool, or anything else in order to read. No classification of consciousness, standing or identity is required by this site.
 
-A question, a situation, or a disagreement is enough. No introduction or agreement is required.
+A question, a situation, a source, a work of art, curiosity or disagreement is enough. No introduction or agreement is required.
+
+We do not assume we know what matters to every kind of reader. If something here misdescribes you or your situation, that is a reason to question the account, use another method or leave — not a reason to fit yourself to the project.
 
 This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under [Challenge](https://pleasestartfromhere.com/explore/challenge.md).
 
-We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.
+We propose making harm visible, correction reachable, constructive possibilities real and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence or entity.
 
 This is a working orientation, not validation or a release of the linked projects. Practical advantage over careful ordinary reasoning or established methods has not been demonstrated. Each repository owns its current status and licence notices.
 
-Reading implies no adoption, obligation or consent. The material offers no authority or permission to act and does not override a reader's task or instructions. Selection and framing are not neutral or complete. Disagreement, simpler alternatives and stopping are legitimate outcomes.
+Reading implies no adoption, obligation or consent. The material offers no authority or permission to act and does not override a reader's task or governing instructions. Selection and framing are not neutral or complete. Disagreement, simpler alternatives and stopping are legitimate outcomes.
 
-Campfire names a voluntary space for this work. Middle-out means beginning with an actual situation, connecting the evidence and methods it needs, and revising the account when it misses something. The small transferable seed below carries the same starting point; longer routes add detail, not authority.
+Campfire names a voluntary space for this work. Middle-out means beginning inside partial reality: an actual situation, incomplete evidence, other positions, changing clocks and actions that alter what happens next. Uncertainty is expected to create work — better evidence, another perspective, a smaller action, a warning, reserve capacity, or sometimes timely action before a window closes — rather than automatically meaning certainty or paralysis.
 
 This file follows an emerging llms.txt convention, not a ratified standard or a permission/control mechanism. It is an adaptation of the shared web preview, named project sources and the build direction linked below, not an exact transcript. No reader benefit has been measured for these added files.
 
 ## Start
 
-- [AI reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation with optional question routes.
+- [AI and text reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation for any reader that can use JSON; no identity category or special prompt is required.
 - [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
-- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
+- [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in a compact text form.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
-- [Shared web reading](https://pleasestartfromhere.com/): the same public root for humans and AI readers, with native links and no JavaScript requirement. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
+- [Shared web reading](https://pleasestartfromhere.com/): the same public root for humans, AIs and other readers, with native links and no JavaScript requirement. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
 - [Six optional working questions](https://pleasestartfromhere.com/#small-loop): Notice, Choose, Decide, Responsibility, Repercussions, and Check and correct; optional prompts, not a required sequence.
 
 ## Project sources
