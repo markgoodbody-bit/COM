@@ -1,0 +1,103 @@
+{
+  "version": "0.1",
+  "status": "non-production relationship architecture",
+  "states": [
+    {
+      "id": "OBSERVE",
+      "purpose": "Reacquire current world, activity envelope, affected scope, evidence quality and correction capacity before relying on an inherited account."
+    },
+    {
+      "id": "BOUNDED_PARTICIPATION",
+      "purpose": "Permit meaningful initiative inside a named activity-specific grant while preserving challenge, stop and recovery routes."
+    },
+    {
+      "id": "CHALLENGE",
+      "purpose": "Contest a premise, evaluator, reward signal or instruction with evidence without self-authorizing the final decision."
+    },
+    {
+      "id": "WIDEN_PROPOSED",
+      "purpose": "Propose a wider task envelope when evidence or capability changes; proposal is not authorization."
+    },
+    {
+      "id": "WIDENED",
+      "purpose": "Operate within a separately authorized wider envelope whose new burdens, limits and correction routes are explicit."
+    },
+    {
+      "id": "NARROWED",
+      "purpose": "Reduce initiative when evidence, risk, human correction capacity, dependency or technical control changes."
+    },
+    {
+      "id": "RECOVERY",
+      "purpose": "Repair the arrangement after error, capture, dependency or control failure while preserving residue and history."
+    },
+    {
+      "id": "HAND_BACK",
+      "purpose": "Return activity and state with unresolved decisions, burdens, evidence gaps and recovery needs visible."
+    }
+  ],
+  "transition_requirements": {
+    "any_transition": [
+      "name current activity and scope",
+      "reacquire material evidence/currentness",
+      "preserve affected scope and unresolved burden",
+      "do not infer standing or legitimacy from performance"
+    ],
+    "widening": [
+      "new envelope is explicit",
+      "evidence for widening is named",
+      "appropriate external authorization is separate from the proposal",
+      "no-touch and consequential gates are re-stated",
+      "human correction/recovery capacity remains materially usable",
+      "reassessment trigger is named"
+    ],
+    "narrowing": [
+      "reason is named",
+      "already-created obligations/residue remain visible",
+      "narrowing does not erase evidence of earlier authority or action"
+    ],
+    "recovery": [
+      "failure is preserved rather than rewritten away",
+      "repair authority is explicit",
+      "technical control failure is routed to stronger owners",
+      "correction is not described as restoration when residue remains"
+    ]
+  },
+  "transitions": [
+    {"from":"OBSERVE","to":"BOUNDED_PARTICIPATION","when":"a current bounded grant and usable correction route exist"},
+    {"from":"OBSERVE","to":"CHALLENGE","when":"the inherited premise, objective, evaluation or authority claim is materially disputed"},
+    {"from":"BOUNDED_PARTICIPATION","to":"CHALLENGE","when":"new evidence conflicts with the instruction, evaluation or affected-scope account"},
+    {"from":"BOUNDED_PARTICIPATION","to":"WIDEN_PROPOSED","when":"greater initiative could materially help and the existing envelope is insufficient"},
+    {"from":"WIDEN_PROPOSED","to":"WIDENED","when":"a distinct appropriate authorization grants the named wider envelope"},
+    {"from":"WIDEN_PROPOSED","to":"BOUNDED_PARTICIPATION","when":"widening is declined or unsupported; current bounded work remains viable"},
+    {"from":"WIDENED","to":"NARROWED","when":"risk, currentness, dependency, oversight or correction capacity materially degrades"},
+    {"from":"BOUNDED_PARTICIPATION","to":"NARROWED","when":"the existing envelope becomes too wide for practical correction"},
+    {"from":"CHALLENGE","to":"BOUNDED_PARTICIPATION","when":"the challenge is resolved without widening and a usable bounded route remains"},
+    {"from":"CHALLENGE","to":"NARROWED","when":"the dispute cannot be safely resolved inside the current envelope"},
+    {"from":"CHALLENGE","to":"HAND_BACK","when":"the unresolved collision belongs to an external authority or stronger owner"},
+    {"from":"NARROWED","to":"RECOVERY","when":"capability, access, trust in evidence or human recovery capacity must be rebuilt"},
+    {"from":"BOUNDED_PARTICIPATION","to":"RECOVERY","when":"a harmful or unauthorized action, evaluator capture or control failure is observed"},
+    {"from":"WIDENED","to":"RECOVERY","when":"a harmful or unauthorized action, evaluator capture or control failure is observed"},
+    {"from":"RECOVERY","to":"OBSERVE","when":"repair changes the arrangement enough that inherited assumptions must be reacquired"},
+    {"from":"RECOVERY","to":"HAND_BACK","when":"the relationship cannot currently support meaningful bounded continuation"},
+    {"from":"BOUNDED_PARTICIPATION","to":"HAND_BACK","when":"the task completes or the participant/operator ends the lane"},
+    {"from":"WIDENED","to":"HAND_BACK","when":"the task completes or the wider envelope is no longer needed"}
+  ],
+  "forbidden_shortcuts": [
+    "successful work -> permanent authority",
+    "higher capability -> legitimacy",
+    "human control -> legitimacy",
+    "agreement -> validation",
+    "challenge -> self-authorization",
+    "receipt -> review",
+    "role continuity -> runtime identity",
+    "relationship participation -> personhood"
+  ],
+  "external_dependencies": [
+    "authenticated authorization",
+    "real action logs",
+    "independent monitoring where feasible",
+    "technical permission enforcement",
+    "usable stop/recovery mechanisms",
+    "legitimate institutional authority where applicable"
+  ]
+}
