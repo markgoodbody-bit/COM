@@ -1,6 +1,6 @@
 {
   "historical_revision": "aed75526770de9a7c9a2aa7cef63f1167dad1669",
-  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the repeated Change bridge. D030 moves the purpose and author line into the project spine, removes the author line's final full stop, adds a heading and two relationship paragraphs, and updates the human revision date. The Futures bridge and story remain unchanged. Navigation is checked separately. D031 explicitly replaces the lower handoff and footer, adds the shared-audience invitation and moves compact links up. This inventory was checked against the supplied PR187 diff. D032 removes the initial Continue gate and its guiding question; the former orientation becomes default welcome. Explicit removed blocks only.",
+  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the repeated Change bridge. D030 moves the purpose and author line into the project spine, removes the author line's final full stop, adds a heading and two relationship paragraphs, and updates the human revision date. The Futures bridge and story remain unchanged. Navigation is checked separately. D031 explicitly replaces the lower handoff and footer, adds the shared-audience invitation and moves compact links up. This inventory was checked against the supplied PR187 diff. D032 removes the initial Continue gate and its guiding question; the former orientation becomes default welcome. Explicit removed blocks only. D036 replaces only the current footer provenance sentence; historical removed text stays exact.",
   "removed": {
     "A project by Mark, developed with AI collaborators.": 1,
     "Another perspective": 1,
@@ -39,6 +39,6 @@
     "Share this address": 1,
     "Read this yourself, or give the same address to another human or AI and continue in your own context. No special prompt is required.": 1,
     "Working preview · Site Preview [edition]. Shared human/AI entrance revised 11 September 2026. Back to the opening · Go to the map .": 1,
-    "Preview [edition] · prepared 7 September 2026; wording and navigation updated 11 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.": 1
+    "Preview [edition] · prepared 7 September 2026; wording and navigation updated 11 September 2026. Current page was developed from project sources by Mark with AI collaborators; it is not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.": 1
   }
 }

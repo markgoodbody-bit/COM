@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.19 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.20 · 11 September 2026
+
+### D036
+
+11 September 2026 — The footer now reflects collaborative development.
+
+The early draft credit is replaced by: Current page was developed from project sources by Mark with AI collaborators; it is not an independent assessment.
+
+Dates, provisional status, correction language, links and licence caveats remain unchanged. No navigation, artwork, style or reading changes. This corrects authorship wording, not the evidence for the project. Previous publication ee6dbf48175b49795990a8715d79cf2e7ce1c10b remains in Git history.
 
 ### D035
 
