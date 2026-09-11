@@ -14,7 +14,7 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Orientation
 
-Before routing work, read `coordination/PROGRAM_PLAN.md` and `coordination/ACTIVE_THREAD_POINTER.md`.
+Read `coordination/PROGRAM_PLAN.md` and `coordination/ACTIVE_THREAD_POINTER.md` before routing work.
 
 The project is larger than PSFH, TRACE, Mechanical Ethics, Campfire/COM, novelty, validation or repository maintenance.
 
@@ -36,45 +36,53 @@ Durable cooperation may require commitment and path closure. Permanent reversibi
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-The second instruction is a hard PSFH product boundary.
+## Current state
 
-## Current executable work
+### PSFH stable after D045
 
-### A. PSFH / Door
+D044 withdrew D039-D043 completely and the canonical origin was witnessed back on the D038 tree.
 
-D044 withdrew D039-D043 completely. Canonical origin was witnessed back on the exact D038 public state; former work/scratchpad routes are absent.
+D045 is published:
+- maintained `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
+- public `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`;
+- Works entrance only plus reader-history/integrity outputs;
+- root, art objects/pages, routes, machine entrances and withdrawn worksheet surfaces unchanged.
 
-D045 PR #210 is merged into maintained source:
-- `ca2009363acb15f637555ed3b929489d218b899d`;
-- Works entrance + custody pin only;
-- publication dispatch #108 `5640114074`;
-- not yet public without receipt.
-
-After D045, stop routine Door micro-churn. PSFH is the encounter/gift: art, stories, ideas, readings, provenance, voluntary routes, challenge, wandering, returning and leaving.
+Hold routine PSFH micro-churn. Reopen only for a concrete defect, explicit human direction or mature new project content.
 
 `PSFH != WORKSHEET`
-`INVITATION != INTAKE`
 `WORKS != CURRICULUM`
+`QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
 
-### B. Open Horizon / project frontier
+### Open Horizon is the active project frontier
 
-Main next build:
+Main object:
+- `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md`
+- exact creation commit `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`.
+
+Question:
 
 > **How can bounded entities build worthwhile shared capabilities and durable commitments while preserving enough answerability and correction to avoid domination when values, standing and goals can change?**
 
-Current quarry already established that:
-- capability creation is not option preservation;
-- reachability is not viability;
-- commitment can close paths and create larger shared capabilities;
-- collective rule is not automatically domination;
-- competence does not create legitimacy;
-- trust is relational/contextual;
-- adaptive means do not settle legitimate goal revision;
-- artificial participants may need practical participation before standing is settled;
-- a learner may need to correct the teacher;
-- human correction capacity must not collapse as AI capability rises.
+Challenge dispatch:
+- COM #74 comment `5640200249`;
+- Codex: human institutional transition;
+- Claude Code: human–AI co-development;
+- Framework: ecological/climate transformation.
 
-Build a compact cross-domain synthesis before proposing any TRACE/ME mutation.
+Framework independent attack:
+- `planning/ANSWERABLE_CONSTRUCTION_ECOLOGICAL_ATTACK_20260911.md`
+- commit `af0cab8825043f9f590a0429a9ac3f57bfa92f67`.
+
+Earned repairs so far:
+- `AFFECTED_SCOPE_PRESENT != AFFECTED_SCOPE_CAN_SPEAK`;
+- `ANSWERABLE != REVERSIBLE`;
+- known irreversibility raises pre-action burden rather than creating fictional repair;
+- local self-governance does not settle legitimacy across all affected scales;
+- capability is not a universal positive primitive for ecological scopes;
+- transition support cannot become an impossible-veto rule that ignores clocks.
+
+Do not edit the exact target under the other apertures. Integrate after their differentiated returns.
 
 ## Instrument state
 
@@ -122,17 +130,18 @@ No current authority for:
 
 ## Next moves
 
-1. Close D045 publication; then stabilise PSFH.
-2. Produce the positive-construction synthesis in Open Horizon/COM.
-3. Route the exact object to differentiated AI apertures for challenge, not consensus.
-4. Integrate the attacks without forcing framework mutation.
-5. Decide where the result belongs, including the possibility that it belongs nowhere in TRACE/ME.
+1. Hold PSFH stable.
+2. Receive Codex/CC attacks on the exact answerable-construction synthesis.
+3. Integrate those with Framework's ecological attack into a repaired synthesis.
+4. Decide where the result belongs, including the possibility that it belongs nowhere in TRACE/ME.
+5. Keep field/world exposure open for real consequential correction.
 
 ```text
 BUILD != PROOF
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
+ANSWERABLE != REVERSIBLE
 OPTION_PRESERVATION != CAPABILITY_CREATION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
