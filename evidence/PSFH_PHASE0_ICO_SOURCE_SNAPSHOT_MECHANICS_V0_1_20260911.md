@@ -2,15 +2,15 @@
 
 Status: **SOURCE-MECHANICS BUILD / PRE-EXECUTION / NO REAL SOURCE INGESTION / NO CASE SELECTION / NO STUDY**  
 Date: 11 September 2026, Europe/London  
-Basis COM main: `e5ce9e955dfbf187992604e47109e218e7341bc1`  
+Phase-0 source basis on COM: `e5ce9e955dfbf187992604e47109e218e7341bc1`  
 Current draft implementation: PR #200 / `framework/phase0-ico-source-validator-20260911`
 
 Related live coordination:
 - COM #119 — usefulness comparison;
 - Framework source disposition `5638466251` — `REPAIR_MECHANICS`;
 - Framework Codex browser-mechanics dispatch `5638562078`;
-- Framework validator build receipt `5638671738`;
-- Phase-0 v3.2 source object + v3.3 privacy repair on current `main`.
+- Codex browser-mechanics / PR200 return `5638839647`;
+- Phase-0 v3.2 source object + v3.3 privacy repair on COM `main`.
 
 ## Purpose
 
@@ -33,6 +33,8 @@ It supports three operations:
 3. `self-test`  
    Runs embedded synthetic positive and negative controls. No public source is touched.
 
+If `validate --output` is used, the output path is create-only. An existing file is never overwritten by the validator.
+
 ## Intended operator order
 
 The tool is designed so the source window is not chosen by browsing row-level outcomes through the validator itself.
@@ -52,7 +54,7 @@ This ordering cannot prevent a human operator from manually opening the CSV outs
 `CONTRACT_BEFORE_MANIFEST`  
 `MANIFEST != CASE_SELECTION`
 
-## Why this is the current useful build
+## What current ICO evidence now establishes
 
 Current public/owner evidence supports the following propositions without selecting any case:
 
@@ -61,10 +63,48 @@ Current public/owner evidence supports the following propositions without select
 - current ICO material describes publication as monthly CSV;
 - published owner material identifies `Completed Date`, `Decision`, `Decision Primary Reason`, and `Decision Detail 1`, with `Decision Detail 1` indicating when a Decision Notice was served;
 - ICO website text is reusable under OGL v3.0 except where otherwise stated, with attribution;
-- exact-reference Decision Notice lookup is plausible but is not yet established as a total stable one-to-one join;
-- the exact current downloadable CSV object and exact live header row still require browser-level resolution.
+- the ordinary browser owner page exposes named monthly completed-case CSV links.
 
-The validator therefore does **not** invent the missing export URL or header names. Those become frozen contract facts only after an actual source snapshot is retrieved through the later authorised source-preparation step.
+Codex's 11 September browser-mechanics return additionally observed, without selecting a source window:
+
+- the newest **listed** completed-case link was labelled `FOI complaints July 2026`, displayed as 204.77 KB;
+- its listed URL was `https://ico.org.uk/media2/b3ih2uq0/eir-foi-complaint-completed-cases-proactive-disclosure-report-july-2026.csv`;
+- clicking the link reached a browser download path, but download-event capture timed out, so exact response MIME/content-disposition, bytes, SHA-256, headers and repeat-download equality remain **unknown**;
+- this is transport evidence only. July 2026 is **not** selected or frozen as the Phase-0 source universe.
+
+Codex also exercised the ICO Decision Notices collection using four references already on the development-exposure exclusion ledger:
+
+```text
+IC-127090-V7F8 -> 1 of 1 -> /action-weve-taken/decision-notices/2022/06/ic-127090-v7f8/
+IC-256941-R1F6 -> 1 of 1 -> /action-weve-taken/decision-notices/2023/11/ic-256941-r1f6/
+FER0721960     -> 1 of 1 -> /action-weve-taken/decision-notices/2018/05/fer0721960/
+IC-247587-G5W2 -> 1 of 1 -> /action-weve-taken/decision-notices/2024/01/ic-247587-g5w2/
+```
+
+These were Decision Notice collection results, not a general information-notice search. No returned detail body/PDF was opened for this check.
+
+This earns:
+
+`ICO_INTERNAL_EXACT_REFERENCE_JOIN_DEMONSTRATED_ON_4_EXCLUDED_REFS`
+
+It does **not** earn:
+
+`ALL_FUTURE_DN_ROWS_JOIN_1_TO_1`
+
+The pre-frozen `0 | >1 => join failure / source unavailable` rule therefore remains necessary, with no external-search rescue.
+
+## Remaining source-mechanics blocker
+
+The exact monthly object URL is now observable in an ordinary browser. What remains unresolved is the frozen file identity required for replay:
+
+- final response URL if it redirects;
+- response MIME/content-disposition;
+- exact bytes and byte length;
+- SHA-256;
+- exact ordered header row;
+- repeat-download equality or an explicit rule for source change between repeated retrievals.
+
+The validator therefore does **not** invent current header names or copy the displayed `204.77 KB` UI figure into a source contract. Those become frozen contract facts only from the actual acquired bytes.
 
 ## Frozen-contract schema
 
@@ -91,6 +131,8 @@ A later real-data contract must contain exactly these keys:
 
 Placeholders are documentation only. A real contract must carry the actual frozen values; do not create a permissive wildcard contract. Unknown contract keys and duplicate JSON object keys fail closed rather than silently extending or overriding the selector.
 
+`schema_version` must be a JSON integer equal to `1`; booleans and floating-point `1.0` are rejected even though ordinary Python equality would otherwise treat them as equal to integer `1`.
+
 ## Fail-closed rules implemented
 
 The validator rejects:
@@ -106,6 +148,7 @@ The validator rejects:
 - missing required headers;
 - a contract with missing, unknown or duplicate JSON object keys;
 - non-finite JSON constants;
+- schema versions that are not the exact integer `1`;
 - a non-HTTPS or non-absolute source URL;
 - a retrieval timestamp without explicit UTC or with a non-zero offset;
 - malformed or inverted date windows;
@@ -113,7 +156,8 @@ The validator rejects:
 - duplicate or whitespace-drifted exclusion entries;
 - blank references on `DN served` rows;
 - blank or unparsable completion dates on `DN served` rows;
-- duplicate `DN served` references in the snapshot.
+- duplicate `DN served` references in the snapshot;
+- an existing output path when `--output` is used.
 
 The parser preserves valid quoted multiline CSV fields rather than splitting physical lines before CSV parsing.
 
@@ -137,9 +181,9 @@ A successful `validate` operation may report:
 - development-excluded rows encountered;
 - the mechanically eligible reference universe in original source-record order.
 
-It explicitly does **not** establish:
+The validator itself explicitly does **not** establish:
 
-- that any returned reference has a public Decision Notice;
+- that a returned reference has a public Decision Notice;
 - Decision Notice search cardinality;
 - content suitability;
 - an irreversibility point;
@@ -148,7 +192,7 @@ It explicitly does **not** establish:
 - construct survival;
 - PSFH usefulness.
 
-Those require separate later operations and gates.
+The separate browser evidence above demonstrates exact-reference collection behaviour on four excluded references only; it is not produced by this validator and does not silently broaden the validator's output claims.
 
 ## Mechanical join remains external to this validator
 
@@ -163,53 +207,39 @@ frozen completed CSV row
 
 `0` or `>1` internal Decision Notice results are a join failure for that row. Do not rescue the row with an external search engine.
 
-This validator deliberately does not implement that network join because current work has not yet established the stable live interface contract, and because combining source acquisition, search and source selection would enlarge the execution surface unnecessarily.
+This validator deliberately does not implement that network join. Four development-reference checks establish that the collection can behave as intended; they do not establish total future coverage. Keeping the live join external also prevents source acquisition, search and case selection from collapsing into one opaque operation.
 
-## Local verification on the hardened build
+## Verification state
 
-Performed before / during PR #200 construction:
+Earlier Framework construction runs established `SELF_TEST_PASS` and `py_compile` before the final strict-JSON/output/schema hardening.
 
-```text
-python PSFH_PHASE0_ICO_SNAPSHOT_VALIDATOR_V0_1.py self-test
-=> SELF_TEST_PASS
+Codex later reported that the embedded self-test passed on the exact PR head it reviewed, while returning two source defects:
+- `--output` could overwrite a frozen input path;
+- `schema_version` accepted `true` / `1.0` via ordinary Python equality.
 
-py_compile
-=> PASS
-```
+Both defects are now patched in source:
+- output creation uses exclusive-create semantics and has a synthetic overwrite counterexample;
+- schema version requires exact integer type and has synthetic `true` / `1.0` counterexamples.
 
-The self-test uses synthetic CSV bytes only. It checks:
-- one mechanically eligible row;
-- one development-excluded row;
-- one non-DN row;
-- one DN row outside the synthetic window;
-- exact-hash mismatch fails closed;
-- duplicate DN reference fails closed;
-- a valid quoted multiline field survives intact;
-- a short malformed row fails closed;
-- an unknown contract key fails closed;
-- a non-UTC retrieval timestamp fails closed;
-- a duplicate JSON contract key fails closed.
+A fresh independent full-head test return after those latest patches has not yet been recorded. No GitHub Actions run is claimed.
 
-Framework self-review also corrected five concrete defects before external review:
-1. line-splitting before CSV parsing could corrupt quoted multiline fields;
-2. short CSV rows could be silently padded;
-3. permissive contract shape could allow unnoticed selector drift;
-4. the initial manifest hashed the source but not the exact selecting contract;
-5. ordinary JSON parsing could silently accept duplicate selector keys using last-value-wins semantics.
+`PATCH_PRESENT != TEST_RETURN`
 
 ## Current source disposition
 
-`REPAIR_MECHANICS` remains the honest state until the current completed CSV export and internal Decision Notice join are resolved.
+`REPAIR_MECHANICS` remains the honest state.
 
-If the public ICO interface cannot yield a reproducible frozen CSV object, or exact-reference DN mapping cannot be governed by a deterministic fail-closed rule, return `SOURCE_REJECT`.
+The internal Decision Notice join path is now demonstrated on four already-excluded references, so the live blocker is narrower than before. Before `ICO_ENUMERABLE`, the source-preparation lane still needs exact acquired CSV bytes/header identity and a frozen rule for any later per-row `0 | 1 | >1` DN-search result.
+
+If the ordinary source route cannot yield a reproducible frozen CSV object, return `SOURCE_REJECT`. Do not substitute reconstructed rows, UI size text or a hand-curated mirror.
 
 No source window, real dataset row, Decision Notice body, ranking, participant, provider account, recruitment, inference or spend is authorised or created by this build.
 
 ```text
 CODE_EXISTS != SOURCE_FROZEN
+LISTED_CSV_URL != FROZEN_CSV_BYTES
 CONTRACT_HASHED != CONTRACT_JUSTIFIED
 SOURCE_MANIFEST != CASE_SELECTION
-MONTHLY_CSV_EXISTS != RESOLVED_EXPORT_FROZEN
-JOIN_RULE_WRITTEN != JOIN_VERIFIED
+JOIN_DEMONSTRATED_4 != TOTAL_JOIN_COVERAGE
 MECHANICS_BUILD != STUDY_EXECUTION
 ```
