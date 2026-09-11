@@ -18,7 +18,7 @@ Reading implies no adoption, obligation or consent. The material offers no autho
 
 Campfire names a voluntary space for this work. Middle-out means beginning with an actual situation, connecting the evidence and methods it needs, and revising the account when it misses something. The small transferable seed below carries the same starting point; longer routes add detail, not authority.
 
-This file follows an emerging llms.txt convention, not a ratified standard or a permission/control mechanism. It is an adaptation of the human preview, named project sources and the build direction linked below, not an exact transcript. No reader benefit has been measured for these added files.
+This file follows an emerging llms.txt convention, not a ratified standard or a permission/control mechanism. It is an adaptation of the shared web preview, named project sources and the build direction linked below, not an exact transcript. No reader benefit has been measured for these added files.
 
 ## Start
 
@@ -26,7 +26,7 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 - [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
-- [Human reading](https://pleasestartfromhere.com/): a short, optional journey with native links; readable without JavaScript. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
+- [Shared web reading](https://pleasestartfromhere.com/): the same public root for humans and AI readers, with native links and no JavaScript requirement. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
 - [Six optional working questions](https://pleasestartfromhere.com/#small-loop): Notice, Choose, Decide, Responsibility, Repercussions, and Check and correct; optional prompts, not a required sequence.
 
 ## Project sources
