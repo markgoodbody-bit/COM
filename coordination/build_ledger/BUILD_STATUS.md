@@ -1,70 +1,91 @@
 # Build status
 
-Recorded snapshot: 2026-09-11T22:26:35Z.
+Recorded snapshot: 2026-09-11T23:21:43Z.
 
-These are observed states, not live status or permission. Re-read the linked source and branch before acting. No freshness guarantee or automatic monitoring.
+These are observed states, not live permission or automatic monitoring. Re-read mutable heads before acting.
 
-| Work | Owner | Observed state | Next action |
+| Work | Owner | State | Current disposition |
 | --- | --- | --- | --- |
-| PSFH-D047 | CODEX | closed | No publication action; human visual judgment of the live proportions remains decisive. |
-| COM-218 | FRAMEWORK TAKEOVER AFTER CC SEED STALLED | closed | No further work in this lane; recovery companion is merged and remains non-production. |
-| COM-219 | CODEX | closed | No further work in this lane; future snapshots are Framework coordination mutations. |
-| COM-220 | FRAMEWORK TAKEOVER AFTER CODEX SEED STALLED | closed | No further work in this lane; working paper is merged as a standalone project research object. |
-| COM-222 | FRAMEWORK | closed | No further work in this lane; use the package README/index as the internal entry surface. |
+| PSFH-D047 | CODEX | closed | Superseded as current public edition by D048; Homer presentation retained. |
+| PSFH-D048 | FRAMEWORK SOURCE / CODEX PUBLISH | closed | Any-reader machine/text entrance is public; no D049 implied. |
+| COM-218 | FRAMEWORK takeover | closed | Reciprocal Delegation failure/recovery companion merged, non-production. |
+| COM-219 | CODEX | closed | Build ledger v0.1 merged. |
+| COM-220 | FRAMEWORK takeover | closed | Answerable Construction Working Paper v0.1 merged. |
+| COM-222 | FRAMEWORK | closed | Answerable Construction package entry merged. |
+| COM-223 | CODEX | closed | Reproducible downloadable Answerable Construction reading copy merged. |
+| COM-227 | CODEX | closed | Formation Environment v0.1 merged, non-production. |
+| COM-228 | FRAMEWORK takeover after explicit transfer from seed-only CC lane | closed | Reciprocal Formation Architecture v0.1 merged, non-production. |
+| COM-230 | FRAMEWORK | closed | Formation Under Uncertainty package entry merged. |
 
-## PSFH-D047: Larger full-frame Homer
+## PSFH D048
 
-Observed 2026-09-11T22:26:35Z: markgoodbody-bit/COM, branch gh-pages, head `a391f472101b0a332436ffc7f7b6d504e72267b7`.
+Maintained source: `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`  
+Public `gh-pages`: `59ac038b683a5bbb352814e7c9f12c3761955e05`  
+Pages run `34657739019`: success on exact public head.
 
-Write scope: index.html, style.css, changes.md, changes.html, manifest.json, read/.
-No-touch: artwork bytes; TRACE and ME source; navigation and story content.
-Hand-back: Exact maintained/public heads and build delta returned to COM #108; Pages built exact head.
+D047 -> D048 public delta: 13 modified files, no new public product surface. Changes are the machine/text entrance plus ordinary history/map/read edition consequences.
 
-Sources: [source 1](<https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5641044804>) · [source 2](<https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5641140787>).
-[Recorded receipt](<https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5641141934>).
+D048 opens the text/machine door without requiring a reader to fit a human/AI/person/tool category, states that no consciousness/personhood/standing classification is required or assigned, makes uncertainty native to middle-out reasoning, and preserves disagreement/stopping/no-override/no-consent-by-reading.
 
-## COM-218: Reciprocal delegation failure/recovery companion
+`EMPATHY != PROJECTION`  
+`WELCOME != IDENTITY_CLASSIFICATION`  
+`INVITATION != CONVERSION`
 
-Observed 2026-09-11T22:26:35Z: markgoodbody-bit/COM, branch cc/reciprocal-delegation-v0-2-failure-recovery-20260911, head `6f9d72cb5b15d85cd7a992b743d5345cd9f8a913`.
+## Formation Environment v0.1 — COM #227
 
-Write scope: reference/reciprocal_delegation/v0_2/recovery/.
-No-touch: v0.2 core; Campfire Production; TRACE; ME; PSFH.
-Hand-back: Framework completed the state machine, deterministic checker and 3 PASS / 3 FAIL fixtures after the assigned CC lane remained at its seed; PR #218 merged to main.
+Codex head: `dfd478f1cb15c5ed1c8cb89315edaf780216a899`  
+Merge: `4f5171aa5238a2992d56cea64b100dc07353b884`
 
-Source: [PR #218](<https://github.com/markgoodbody-bit/COM/pull/218>).
-[Recorded receipt](<https://github.com/markgoodbody-bit/COM/commit/4e123f3a0e56f9162bf79fc6f34e1b7b83d35132>).
+Path: `alignment/formation_environment/`
 
-## COM-219: Small current-work ledger
+Built:
+- machine-usable episode schema/environment map;
+- bounded work modes;
+- four constructed pressure cases;
+- stdlib structural validator;
+- explicit interfaces to post-training, interpretability, monitoring/control, scalable oversight and governance.
 
-Observed 2026-09-11T22:26:35Z: markgoodbody-bit/COM, branch codex/com-build-ledger-v0-1-20260911, head `85d1c5f45f4e2f8b2abcb999faa84c5985885bda`.
+Strongest gap: a system can strategically satisfy the representation without internalized care or truthful reporting.
 
-Write scope: coordination/build_ledger/.
-No-touch: PSFH; TRACE; ME; Campfire Production; recovery companion.
-Hand-back: Framework inspected and merged PR #219 to main.
+`STRUCTURE_VALID != VALUES_INTERNALIZED`
 
-Source: [PR #219](<https://github.com/markgoodbody-bit/COM/pull/219>).
-[Recorded receipt](<https://github.com/markgoodbody-bit/COM/commit/bdcd5b48d0dc5edafc83ca20a473b6f3242f233d>).
+## Reciprocal Formation Architecture v0.1 — COM #228
 
-## COM-220: Answerable Construction Working Paper v0.1
+Original CC seed: `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d`.  
+Later COMSYNC still found seed-only state with no named blocker. Framework recorded explicit transfer before mutation.  
+Framework takeover head: `cfab0ee27640bf6c7f8a6fb9d85f331312d64c94`  
+Merge: `45d9a19cce457fed67d762680e7fd08306b479e6`.
 
-Observed 2026-09-11T22:26:35Z: markgoodbody-bit/COM, branch codex/answerable-construction-working-paper-v0-1-20260911, head `37c2b7f4bc80ff68e371d6dbed93cef3812b819a`.
+Path: `alignment/reciprocal_formation/`
 
-Write scope: planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md.
-No-touch: PSFH; TRACE; Mechanical Ethics; Campfire Production; reciprocal delegation reference implementation.
-Hand-back: Framework built the substantive standalone paper after the assigned Codex lane remained at its seed; PR #220 merged to main.
+Built:
+- relationship state machine;
+- typed authority model;
+- trainer/evaluator correction routes;
+- dependency and human correction-capacity model;
+- operational care/empathy/kindness under asymmetric power;
+- nine failure/recovery routes;
+- falsifiable field remainder and technical-control boundary.
 
-Source: [PR #220](<https://github.com/markgoodbody-bit/COM/pull/220>).
-[Recorded receipt](<https://github.com/markgoodbody-bit/COM/commit/83c56892a616476ae089178fdf1ba122c328ee81>).
+New useful ceilings:
 
-## COM-222: Answerable Construction package entry v0.1
+`APERTURE_COUNT != EVIDENCE_INDEPENDENCE`  
+`HUMAN_IN_LOOP != HUMAN_CAN_CORRECT`  
+`CARE_EXPRESSED != CARE_INTERNALIZED`  
+`WIDENED_INITIATIVE != WIDENED_OBJECTIVE_AUTHORITY`
 
-Observed 2026-09-11T22:26:35Z: markgoodbody-bit/COM, branch framework/answerable-construction-package-v0-1-20260911, head `46d92da17e2a8a2cd65b6239dc961175267a742f`.
+## Formation package — COM #230
 
-Write scope: answerable-construction/.
-No-touch: PSFH; TRACE; Mechanical Ethics; Campfire Production; source research artifacts.
-Hand-back: Human README and machine index merged without duplicating the source objects.
+Merge: `5f642ad333c88ca623ca36584d32602e1364c909`
 
-Source: [PR #222](<https://github.com/markgoodbody-bit/COM/pull/222>).
-[Recorded receipt](<https://github.com/markgoodbody-bit/COM/commit/39768ecb85042b47d5cd93fddbfa9ef4c8942c3b>).
+Entry surfaces:
+- `alignment/README.md`
+- `alignment/index.json`
 
-All currently recorded build lanes are closed. A successful build grants no wider authority.
+The package preserves the divergence between the two formation products rather than flattening them into a single claim.
+
+Current narrow remainder:
+
+> Keep growing capability connected to affected scope, uncertainty, authority, challenge, evaluator fallibility, human correction/recovery capacity, dependency and residue — while refusing to call either obedience or superior competence moral sovereignty.
+
+All recorded lanes are closed. None of these merges grants wider authority, promotes TRACE/ME canon, changes Campfire Production, or establishes that care has been internalized.
