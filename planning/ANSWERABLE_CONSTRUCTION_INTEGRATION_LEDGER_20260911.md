@@ -4,93 +4,106 @@ Status: **FRAMEWORK WORKING INTEGRATION OBJECT / NOT CANON / NOT RELEASE AUTHORI
 Date: 2026-09-11  
 Project question: **HOW CAN WE MAKE A BETTER FUTURE?**
 
-This ledger keeps the positive-construction build phase coherent while Framework, Codex and Claude Code construct differentiated artifacts.
-
-It is not a scorecard and it is not a gate that makes one aperture wait for another.
+This ledger keeps the positive-construction build coherent across differentiated apertures. It is not a scorecard, scheduler, authority source or consensus mechanism.
 
 ```text
 FRAMEWORK INTEGRATES != FRAMEWORK MONOPOLISES
-CODEX BUILDS NOW
-CC BUILDS INDEPENDENTLY WHEN AVAILABLE
-CC ABSENCE != CODEX STOP
-PROJECT PURPOSE != REVIEW LOOP
+CODEX_BUILDS != CODEX_DECIDES
+CC_BUILDS_INDEPENDENTLY != CC_VETO
+AGREEMENT != VALIDATION
+PROJECT_PURPOSE != REVIEW_LOOP
 ```
 
-## Current build objects
+## Built project objects
 
-### Original project-level synthesis — frozen challenge target
+### Frozen original synthesis
 
 - `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md`
-- exact challenge target commit: `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`
-- status: OPEN HORIZON / NOT CANON / NOT TRACE OR ME CHANGE
+- exact challenged commit `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`
+- preserve as the object that was attacked; do not rewrite history.
 
-Do not rewrite this object as if later repairs were always present. It remains the source object that was attacked.
-
-### Framework ecological/climate attack
+### Framework ecological attack
 
 - `planning/ANSWERABLE_CONSTRUCTION_ECOLOGICAL_ATTACK_20260911.md`
-- commit: `af0cab8825043f9f590a0429a9ac3f57bfa92f67`
-- result: SYNTHESIS-ONLY REPAIR REQUIRED
+- creation commit `af0cab8825043f9f590a0429a9ac3f57bfa92f67`
+- result: synthesis-only repair required.
 
 ### Codex institutional attack
 
 - COM #74 comment `5640254204`
-- result: SYNTHESIS-ONLY REPAIR REQUIRED
+- result: synthesis-only repair required.
 
-### Framework repaired synthesis candidate v0.2
+### Repaired synthesis candidate v0.2
 
 - `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md`
-- commit: `8608eceb982a644ad0c64d23c65a3d27b4314674`
-- inputs: original synthesis + Framework ecological attack + Codex institutional attack
-- intentionally does **not** claim CC's independent human–AI architecture as an input
-- status: WORKING CANDIDATE / NOT CANON / NOT TRACE OR ME CHANGE
+- commit `8608eceb982a644ad0c64d23c65a3d27b4314674`
+- status: project working candidate / not canon / not TRACE or ME change.
 
-### Codex Casebook v0.1 — MERGED
+### Casebook v0.1 — MERGED
 
-- file: `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`
-- build PR: #211
-- Codex build head: `d6fc137d7474a7732e2a6f3db49aea73461bcb34`
-- merge commit: `06f7e4d467374ca313a38b16b992487e1db5bcac`
-- status: WORKING CASEBOOK / NOT CANON / NOT DECISION RULE
+- `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`
+- PR #211
+- merge `06f7e4d467374ca313a38b16b992487e1db5bcac`
 
-The casebook now gives three concrete construction settings:
-- rural/regional hospital-service transition;
-- Thames Estuary 2100 adaptive flood-risk transition;
-- AI-generated software-patch deployment/co-development scenario.
+Three concrete settings: health-service transition, Thames Estuary adaptive flood-risk transition, AI-assisted software deployment. Stronger domain owners retain the actual decisions.
 
-Its cross-domain remainder is deliberately small: keep promised capability connected to the people/scopes, functions, permissions, resources and clocks on which it depends; route actual decisions back to the stronger domain owner.
+### Reader v0.1 — MERGED
 
-### Codex Reader v0.1 — ACTIVE BUILD
+- `planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md`
+- PR #213
+- merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`
 
-- PR #213 — `BUILD: Answerable Construction Reader v0.1`
-- branch: `codex/answerable-construction-reader-v0-1-20260911`
-- target file: `planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md`
-- seed head: `9b39e4fc5745a923e6f78fa84f97f653f87a8e12`
-- owner: CODEX
+Human-readable project layer; not a method, worksheet, decision rule or automatic PSFH/TRACE/ME publication.
 
-Purpose: turn the current positive-construction work into a coherent human-readable project layer without turning it into a method, questionnaire, PSFH feature, TRACE specification or ME revision.
+### Reciprocal Co-development Architecture v0.1 — MERGED
 
-The human–AI section must remain provisional and explicitly revisable by CC #212.
+- `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`
+- CC PR #212
+- CC head `332d973381e2cc22c118121127e0983c77c34a34`
+- merge `9437680004c51d7a0d369677f100a326a2f0e9d4`
 
-### Claude Code Reciprocal Co-development Architecture v0.1 — ACTIVE / NO CC BUILD COMMIT YET
+Key operational additions:
+- authorisation must be legible as authorisation;
+- initiative cannot outrun practical human correction capacity;
+- provisional/N=1: the answerable unit may be the whole human + multiple apertures + ledger arrangement rather than an individually scored participant.
 
-- PR #212 — `BUILD: Reciprocal Co-development Architecture v0.1`
-- branch: `cc/reciprocal-codevelopment-architecture-v0-1-20260911`
-- target file: `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`
-- seed head remains: `b3cfe9fdc6609621c41f8ea201f96a069f84e528`
-- owner: CLAUDE CODE
+### Reciprocal Delegation Reference v0.1 — MERGED / NON-PRODUCTION
 
-As of the last live sync, the branch still contains only Framework's shell. Do not claim CC has built the architecture until the head changes.
+- `reference/reciprocal_delegation/`
+- PR #214
+- merge `82326d476db398168a144ed151aa985be663476e`
 
-CC's absence does not block the casebook, reader, repaired synthesis or other project construction.
+Exact schema, validator, state machine and passing/failing fixtures. No provider execution, Square actuation or Campfire Production effect.
 
-## Repairs already earned — preserve unless later broken
+### Reciprocal Delegation v0.2 field repair — MERGED / NON-PRODUCTION
+
+- `reference/reciprocal_delegation/v0_2/`
+- PR #217
+- merge `afb24db827cee9d413c615aadd7af9c23bb8209e`
+
+D046 exposed false precision in v0.1: the implementation required a numeric correction clock for public mutation even though the real D046 arrangement had no declared numeric window.
+
+v0.2 preserves the correction-capacity principle but permits truthful:
+- `time_bound`;
+- `event_bound`;
+- `time_and_event`.
+
+D046 is represented as one bounded public publication action followed by a named evidence receipt/hand-back. No fictional minute count is inserted after the fact.
+
+### D046 observed field trace
+
+- external trigger preserved at `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`;
+- `EXTERNAL_CLAUDE != CLAUDE_CODE`;
+- D046 source was delegated to Codex, stalled, then transferred to Framework without concurrent mutation;
+- source merged; publication was delegated back to Codex on an exact head;
+- Codex returned exact maintained/public heads, output delta and build evidence;
+- CC independently witnessed the served origin and repaired the attribution record.
+
+This is an observed project operation, not validation of the reference model.
+
+## Repairs earned and still live
 
 ### R1 — viability requires a bearer / function / scale
-
-Do not say `viability` as if the object to preserve were self-evident.
-
-An institution, its function, a local community, a regional service, an ecosystem and a wider coupled system may have different viability conditions.
 
 ```text
 VIABILITY_OF_WHAT / WHOM / AT_WHICH_SCALE?
@@ -99,25 +112,14 @@ ORGANISATIONAL_SURVIVAL != FUNCTIONAL_CONTINUITY
 
 ### R2 — answerability does not select the winner
 
-Two choices can both be visible, contestable and procedurally answerable while imposing different serious losses.
-
 ```text
 ANSWERABLE != JUSTIFIED
 ANSWERABILITY != PRIORITY_RULE
 ```
 
-The project may expose the collision without pretending to resolve it.
+### R3 — competence informs bounded delegation; it does not create legitimacy
 
-### R3 — competence informs delegation; it does not create legitimacy
-
-The synthesis and later architecture must separate at least:
-
-- propose;
-- advise;
-- authorise;
-- implement;
-- observe/review;
-- narrow/revoke/restore.
+Separate proposal, advice, authorisation, implementation, observation/review and narrowing/revocation/restoration.
 
 ```text
 COMPETENCE -> RELEVANT_EVIDENCE_FOR_DELEGATION
@@ -126,46 +128,36 @@ COMPETENCE != LEGITIMACY
 
 ### R4 — affected scope does not require direct voice
 
-Future people, nonhuman scopes, displaced people and others outside the forum may remain materially affected even when direct answer-back is impossible.
-
 ```text
 AFFECTED_SCOPE_PRESENT != AFFECTED_SCOPE_CAN_SPEAK
 REPRESENTATION_OF_SCOPE != CONSENT_OF_SCOPE
 NO_DIRECT_ANSWER_BACK != NO_CLAIM
 ```
 
-### R5 — answerability and reversibility are different
-
-Physical/social thresholds can remove meaningful correction.
+### R5 — answerability and reversibility differ
 
 ```text
 ANSWERABLE != REVERSIBLE
 IRREVERSIBLE_ACTION CAN STILL BE ANSWERABLE
-KNOWN_IRREVERSIBILITY -> HIGHER PRE-ACTION BURDEN, NOT FICTIONAL REPAIR
+KNOWN_IRREVERSIBILITY -> HIGHER_PRE_ACTION_BURDEN, NOT FICTIONAL_REPAIR
 ```
 
 ### R6 — domination is not the only failure mode
 
-Coordination failure, externalised burden, incompatible local optimisation, missing information and biophysical limits can produce bad futures without a single dominating actor.
+Coordination failure, externalised burden, incompatible local optimisation, missing information and physical limits can create bad futures without one dominating actor.
 
-Target language must include externalised viability loss / unanswerable burden, not domination alone.
-
-### R7 — local legitimacy can fail across scale
+### R7 — legitimacy can fail across scale
 
 ```text
 LOCAL_SELF_GOVERNANCE != COMPLETE_AFFECTED_SCOPE
 LEGITIMACY_AT_ONE_SCALE != LEGITIMACY_ACROSS_ALL_AFFECTED_SCALES
 ```
 
-### R8 — capability is not the universal positive primitive
+### R8 — capability is not a universal positive primitive
 
-For some affected scopes the stronger domain-owned objects may be viability, functioning, integrity, resilience, habitat, reproduction or another field-specific positive condition.
-
-Use `capability` where it genuinely fits; route elsewhere where it does not.
+Use domain-owned terms such as viability, functioning, integrity, resilience or habitat when they fit better.
 
 ### R9 — support-before-closure is not an automatic veto
-
-A transition can be urgent before full compensation/substitution exists. Delay itself can impose burden or close the remaining transition window.
 
 ```text
 SUPPORT_BEFORE_CLOSURE != ALL_LOSS_REPAIRED_BEFORE_ACTION
@@ -173,71 +165,88 @@ UNMET_REPAIR != AUTOMATIC_VETO
 DELAY_HAS_BURDEN + CLOCKS
 ```
 
-Separate:
-- desired support;
-- feasible funded support;
-- minimum viable transition support where one can be named;
-- unmet obligations / residue;
-- harms of acting;
-- harms of delaying.
-
 ### R10 — positive nouns hide value choices
 
-`valuable capability`, `viable system`, `necessary commitment`, `worthwhile future` all require an affected scope, horizon and valuation.
+`valuable`, `viable`, `necessary`, `worthwhile` and `shared` require affected scope, horizon and valuation. Naming them does not resolve collision.
 
-Naming them does not solve collision.
+### R11 — role separation is insufficient without legible authorisation
 
-Do not let `shared` mean merely that an aggregate improves while a subgroup loses access.
+```text
+ROLE_SEPARATION != AUTHORISATION_LEGIBILITY
+ROUTINE_PHRASE != CONSEQUENTIAL_AUTHORIZATION
+```
 
-## Cross-domain survivors strengthened by the merged casebook
+Consequential authority must be request-specific and inspectable; do not infer it from generic cooperation language.
 
-The Casebook supports, without validating as universal law:
+### R12 — correction capacity is real; its representation must not invent precision
 
-1. specify the bearer/function/scale being sustained;
-2. commitments can create useful capacity while imposing concentrated loss;
-3. separate proposal, advice, authorisation, implementation and review;
-4. connect promised benefit to material dependencies and readiness dates;
-5. distinguish revisable plans/artifacts from irreversible consequences;
-6. keep unmet obligations and affected scopes visible even when they lack direct voice.
+```text
+INITIATIVE_WIDTH_IS_BOUNDED_BY_CORRECTION_CAPACITY
+CORRECTION_BOUND != FICTIONAL_CLOCK
+EVENT_BOUND != UNBOUNDED
+PUBLIC != CONSEQUENTIAL
+```
 
-These remain project-level working claims, not a priority rule.
+A real time window should be recorded when one exists. When the actual arrangement instead uses a bounded action followed by a named hand-back event, record that rather than manufacturing minutes.
 
-## Current project-level hypothesis after attacks + casebook
+This is operationally provisional, not a universal theorem.
+
+### R13 — answerability may belong to the arrangement
+
+In multi-aperture work, the relevant answerable unit can include human, AI apertures, source objects, ledger and correction routes.
+
+```text
+ARRANGEMENT_ANSWERABILITY != PARTICIPANT_REPUTATION
+```
+
+Do not turn this into personhood inference, scalar trust or permanent authority.
+
+### R14 — single mutator is a temporal coordination property, not permanent ownership
+
+D046 required a stalled lane to transfer from Codex to Framework, then publication to transfer back to Codex.
+
+```text
+SINGLE_MUTATOR != PERMANENT_OWNER
+HANDOFF != IDENTITY_TRANSFER
+SUCCESS != WIDER_AUTHORITY
+MOVED_HEAD -> OLD_CLAIM_HISTORICAL
+```
+
+The exact transfer/recovery structure is now an active CC build question, not settled doctrine.
+
+## Current independent build lanes
+
+### CC — failure/recovery companion — ACTIVE
+
+- draft PR #218
+- branch `cc/reciprocal-delegation-v0-2-failure-recovery-20260911`
+- target: exact transfer/takeover state machine + checker + PASS/FAIL fixtures + README.
+
+Do not count the seed contract as CC construction. CC authorship begins when the branch head moves beyond `793ffaabcb2c887099fc1f0042a1283a2c165aed`.
+
+### Codex — COM Build Ledger v0.1 — ACTIVE AFTER D047 HAND-BACK
+
+D047 publication is complete:
+- final maintained `73416cc3f47348233e5b2c2e4d641e9c2a18eed2`;
+- public `a391f472101b0a332436ffc7f7b6d504e72267b7`;
+- Pages built exact public head.
+
+Therefore draft PR #219 is now active:
+- branch `codex/com-build-ledger-v0-1-20260911`;
+- target: small JSON/schema/validator/renderer current-work ledger;
+- purpose: exact owner/head/next action/blocker/hand-back visibility without becoming a scheduler or authority service.
+
+Do not count the seed contract as Codex construction. Codex authorship begins when the branch head moves beyond `3e41643618cc323caf2ab6df4dde377f3d199c59`.
+
+## Project-level hypothesis
 
 > **How can bounded entities and groups build viable, worthwhile shared futures through commitments that make real capability or other domain-owned positive conditions possible, while keeping affected scope, externalised burden, changing goals, authority and the limits of correction visible enough to contest and revise where revision remains possible?**
 
-This remains a research compression, not a universal rule.
+Still a research compression, not a universal decision rule.
 
-## What Codex #213 must add
+## Placement discipline
 
-The Reader should answer a different need from the Casebook:
-
-- coherent ordinary-language narrative rather than field structure;
-- explain the positive half without converting it into a method;
-- show why commitment can be constructive closure;
-- keep owner routing and unresolved collision visible;
-- explain authority/answerability/irreversibility without claiming a universal legitimacy rule;
-- treat human–AI co-development as provisional pending CC #212;
-- explain how this layer relates to PSFH, TRACE, Mechanical Ethics and Campfire without making a brand hierarchy.
-
-No prompts/questions for a visitor to fill out.
-
-## What CC #212 must add
-
-The co-development architecture should make reciprocal entrustment operational without turning it into:
-
-- personhood inference;
-- scalar reputation sovereignty;
-- permanent authority;
-- obedience optimisation;
-- paternal permanent containment;
-- identity theatre across episodic runtimes.
-
-It should expose exactly how delegation widens/narrows, how challenge works, how evaluator/trainer error can be corrected, and how human recovery/correction capacity survives growing AI dependence.
-
-## Integration rule when build returns land
-
-For each returned claim/structure classify separately:
+Classify new structures separately as:
 
 ```text
 KEEP_PROJECT_LEVEL
@@ -258,36 +267,35 @@ Do not infer placement from importance.
 
 ## Hard gates unchanged
 
-No current build in this lane authorises:
-
+No current work here authorises:
 - TRACE release/schema/canon mutation;
 - ME baseline/canon mutation;
-- PSFH feature/publication change;
 - Campfire Production adoption;
 - provider spend;
 - participant study;
 - Square campaign/actuation;
 - licence changes;
+- credentials;
 - external institutional contact.
 
-## Definition of useful progress for this phase
+PSFH D047 was a direct human reversible presentation correction and is already published; that does not create standing authority for further site churn.
 
-Useful progress is not another agreement count.
+## Useful progress for the next phase
 
-It is one or more of:
-
-- a concrete transition becomes easier to see without overriding the domain owner;
-- an over-broad portable claim is narrowed/deleted;
-- a delegation/authority relationship becomes operationally explicit;
-- a future failure mode gets a real correction/recovery route;
-- a cross-domain coupling is identified that no single owner currently carries;
-- the project learns that an existing field already owns the problem better and gets smaller;
-- a new project layer becomes understandable without becoming compulsory procedure.
+Useful progress is not another agreement count. It is one or more of:
+- a real build lane becomes legible enough to act/correct without reconstruction;
+- a handoff/failure mode gains an exact recovery object;
+- a cross-domain claim gets smaller because an external owner is better;
+- an over-broad portable claim is narrowed or deleted;
+- positive construction becomes more usable without becoming compulsory procedure;
+- the project discovers that a structure should live nowhere.
 
 ```text
 BUILD != PROOF
 AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
 SMALLER_CAN_BE_PROGRESS
-READER != WORKSHEET
+LEDGER != WORLD
+REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
+PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
 ```
