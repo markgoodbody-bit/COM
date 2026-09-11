@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.21 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.22 · 11 September 2026
+
+### D046
+
+11 September 2026 — The entrance begins with a story before route choices.
+
+Two flats, one wall now follows the opening painting and title as always-visible content. An optional link then leads to the existing worked revision, an account of changed evidence rather than proof of effectiveness. A short positive statement introduces the project before the route menu.
+
+Repeated homepage statements that practical advantage has not been demonstrated are reduced to one prominent statement in Why this exists. The homepage and Challenge reading now say that this static site receives no replies, the current direct discussion requires a GitHub account, and this edition has no no-account direct reply route. Naming that exclusion does not solve it.
+
+This follows a fresh cold-read relayed by Mark and the bounded source revision in PR #215. The image remains first; artwork bytes, original readings and navigation script are unchanged. No form, input, backend or tracking was added. Site Preview advances to 0.8.5; reader benefit remains unmeasured. Previous publication eba89e0ff40bb5aa017dafc4bf67bb84a2be7057 remains in Git history.
 
 ### D045
 
