@@ -231,7 +231,7 @@ export default function Home() {
     <footer>
       <p>Working preview · Site Preview {SITE_EDITION}. Shared human/AI entrance revised 11 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
-      <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 11 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
+      <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 11 September 2026. Current page was developed from project sources by Mark with AI collaborators; it is not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
     </footer>
   </>;

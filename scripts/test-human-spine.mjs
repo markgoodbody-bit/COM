@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import {readFile, readdir} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 
-test('D035 changes only homepage destinations, manifest and history', async () => {
+test('D036 changes only homepage provenance, manifest and history', async () => {
   const expected = ['changes.html','changes.md','index.html','manifest.json'];
   const changed = [];
   let count = 0;
   for (const entry of await readdir('out',{recursive:true,withFileTypes:true})) {
     if (!entry.isFile()) continue;
     const file = (entry.parentPath+'/'+entry.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,'');
-    const before = execFileSync('git',['show','1016d8b475ee8005edd0bb7e9d0f0c53f294e932:'+file],{maxBuffer:20*1024*1024});
+    const before = execFileSync('git',['show','ee6dbf48175b49795990a8715d79cf2e7ce1c10b:'+file],{maxBuffer:20*1024*1024});
     if (!(await readFile('out/'+file)).equals(before)) changed.push(file);
     count++;
   }
@@ -30,8 +30,8 @@ test('project overview and ordinary routes precede the optional state machine', 
   assert.equal(html.split('The project asks how to keep a lived situation').length-1,1);
   assert.match(html,/class="skip" href="#project"/);
   for (const [label,route] of [['Someone sent me this','#step-story'],['I don&#x27;t know','#step-look']]) assert.ok(html.includes('href="'+route+'">'+label+'</a>'));
-  const previous = execFileSync('git',['show','1016d8b475ee8005edd0bb7e9d0f0c53f294e932:index.html'],{encoding:'utf8'});
-  assert.equal(html,previous.replace('href="#project">Someone sent me this','href="#step-story">Someone sent me this').replace('href="#project">I don&#x27;t know','href="#step-look">I don&#x27;t know'));
+  const previous = execFileSync('git',['show','ee6dbf48175b49795990a8715d79cf2e7ce1c10b:index.html'],{encoding:'utf8'});
+  assert.equal(html,previous.replace('Draft prepared by Codex from project sources for Mark, not an independent assessment.','Current page was developed from project sources by Mark with AI collaborators; it is not an independent assessment.'));
 });
 
 test('shared human and AI entrance is explicit in the early project spine', async () => {
