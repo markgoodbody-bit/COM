@@ -2,6 +2,12 @@
 
 Please Start From Here · Reader change log · Edition 0.21 · 11 September 2026
 
+### D038
+
+11 September 2026 — The title over the opening painting is slightly larger.
+
+Only the homepage title size changes. The painting, its position and colours, wording, navigation and readings remain unchanged. The static publisher now includes the dedicated title stylesheet used by the page layout. Previous publication 652994e22689b2502ce9ebe2b84e59d29d0b265b remains in Git history.
+
 ### D037
 
 11 September 2026 — Repository notices are linked beside the complete readings.

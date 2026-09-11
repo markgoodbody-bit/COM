@@ -52,7 +52,10 @@ await writeFile(path.join(root, 'out/index.html'), html.replace('</head>', favic
 for (const name of ['favicon.svg', 'favicon.ico', 'favicon-LICENSE.txt']) {
   await writeFile(path.join(root, 'out', name), await readFile(path.join(root, 'public', name)));
 }
-await writeFile(path.join(root, 'out/style.css'), await readFile(path.join(root, 'app/globals.css')));
+// Match the stylesheet order in app/layout.tsx for the static publisher.
+const css = (await readFile(path.join(root, 'app/globals.css'), 'utf8')) + '\n'
+  + (await readFile(path.join(root, 'app/hero-title.css'), 'utf8'));
+await writeFile(path.join(root, 'out/style.css'), css);
 const machineFiles = ['llms.txt', 'seed.txt', 'manifest.json', 'robots.txt', 'sitemap.xml'];
 for (const name of machineFiles) {
   let bytes = await readFile(path.join(root, 'public', name));
@@ -122,7 +125,6 @@ for (const name of ['changes.md', 'changes.html']) {
   await writeFile(path.join(root, 'out', name), bytes);
 }
 await mkdir(path.join(root, 'downloads'), { recursive: true });
-const css = await readFile(path.join(root, 'app/globals.css'), 'utf8');
 // Keep the downloadable local preview outside the public indexing-policy change.
 const previewHtml = html.replace('<link rel="describedby"', '<meta name="robots" content="noindex,nofollow"><link rel="describedby"');
 const offlineVariant = CAMP_FIRE.responsive.variants[0];
