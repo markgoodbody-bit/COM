@@ -1,0 +1,27 @@
+The strongest reason not to use it as a decision-making framework is that it has not demonstrated that its extra structure improves decisions at all.
+
+That isn’t an accusation from a hostile reviewer; it is the project’s own current assessment. The homepage says, “Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.” 
+Please Start From Here
+ TRACE’s repository is even more explicit: its current candidate is “NOT VALIDATED / NO EFFICACY RESULT,” and “practical advantage over competent ordinary analysis or established methods” remains unearned. 
+GitHub
+
+That matters because TRACE adds a fairly substantial representational apparatus. The danger isn't necessarily that its ideas are wrong—I actually think several distinctions it emphasizes are sensible. The danger is false rigor: spending effort encoding a problem in a formal-looking system can make the resulting analysis feel better-founded without evidence that the machinery catches more errors, produces better decisions, or beats simpler methods.
+
+The project itself recognizes exactly this failure mode. Its standing criticism issue asks, essentially, what does TRACE add, if anything? and explicitly admits possible verdicts including REDUNDANT, FALSE PRECISION, OVERFIRE, OPERATIONAL FAILURE, and NO MATERIAL DIFFERENCE. It says the hypothesis that TRACE provides useful additional structure “is not established.” 
+GitHub
+ Mechanical Ethics likewise labels its current reader “NOT VALIDATED” and lists “usability for ordinary people without unusual reserves” among its unresolved issues. 
+GitHub
+
+So my decision rule would be:
+
+Read it? Yes. Borrow an interesting question from it? Sure. Treat TRACE/Mechanical Ethics as a methodology you should rely on for consequential decisions? Not yet.
+
+Until somebody demonstrates that it produces materially better outcomes than a good checklist, competent domain expertise, established decision-analysis methods, or simply careful prose, the complexity has not earned its keep.
+
+One separate point: if by “use” you mean copy, adapt, incorporate, or redistribute its material, there is an additional concrete reason not to: both repositories state that no general reuse licence has been granted. 
+GitHub
++1
+
+I would not use the site's earlier HTTPS/certificate problems as the strongest objection: those appeared in criticism from a few days ago, but the HTTPS site is working now and the site was revised on 11 September 2026. 
+openwitness.net
++1
