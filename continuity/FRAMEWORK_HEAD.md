@@ -37,23 +37,45 @@ Primary coordination surface:
 Maintained source branch:
 - `codex/door-maintained-source-20260908`
 
-D038 is published.
+### Published product through D041
 
-Publication receipt from Codex:
-- maintained source: `b23712fe7215f8cf51925d8bdcfae59c4982778c`
-- public `gh-pages`: `4ef5455e476f5af3ae52d4526ec675af8ef905e1`
-- Pages built exact public commit at 2026-09-11T19:29:14Z without reported error.
+Codex publication receipt: #108 comment `5639788416`.
 
-D038 changes only the effective Homer overlay title sizing. The static builder was repaired so its generated `style.css` includes the new imported homepage override. Exactly four of 155 generated outputs changed: `style.css`, `manifest.json`, `changes.md`, `changes.html`; 151 remained unchanged. No artwork geometry, copy, route, reading, licence or TRACE/ME change.
+- public `gh-pages`: `dce4038c69254a71e962208efc5e913b0bd90cc2`
+- reconciled maintained source after the concurrent D042 build-map repair: `6bf29bc968e64939f76dda7af0ce12639946edba`
+- final maintained source reproduced all 157 public output blobs exactly.
 
-`SOURCE_MERGED != PUBLIC` is now closed for D038.  
-`PUBLIC != VALIDATED` remains true, but no validation programme is active.
+The public site now includes `/explore/work.html` + `.md`, gathering the six existing working questions onto one optional surface. The homepage Work path reaches it. The small machine entrance exposes both representations. Human/machine discovery files are connected and resource hashes are coherent.
+
+No required sequence, account, intake, form, scoring, efficacy claim or validation programme was introduced.
+
+### D043 source merged / awaiting publication receipt
+
+PR #209 merged cleanly after publication state was reacquired.
+
+Maintained source:
+- `182bb7d1772c5a6a0d910bb7c1e03ade06117771`
+
+Publication dispatch:
+- #108 comment `5639807397`
+
+D043 makes the existing working surface more usable without creating a service:
+- browser-local note fields for the same six questions;
+- explicit Copy notes as Markdown action;
+- confirmed clear action;
+- no fetch/XHR/WebSocket, storage API, form submission, account, analytics or backend;
+- typed text is not submitted or persisted by the page;
+- without JavaScript, the six static questions and links remain usable;
+- `work.js` joins the resource-map hash inventory.
+
+Maintain source freeze while Codex publishes:
+
+`SOURCE_FREEZE := 182bb7d1... UNTIL_PUBLICATION_RECEIPT`
 
 ## Parked research
 
-COM #119 is closed `not_planned` under current human direction.
-
-PR #200 and PR #203 are closed/parked with branches/history preserved. Their work is recoverable; do not continue completing them from stale instructions.
+COM #119 remains closed `not_planned`.
+PR #200 and PR #203 remain closed/parked.
 
 `PARKED != INVALIDATED`  
 `NO_TESTING -> BUILD_THE_THING`
@@ -69,7 +91,7 @@ Build the actual encounter:
 - graph-backed reading rooms and ordinary exits;
 - visible provenance/rights where material;
 - challenge / another position / leave remain real options;
-- useful working surfaces, not another research apparatus.
+- useful local/private working surfaces rather than another research apparatus.
 
 Routine reversible PSFH work should move quickly. Mark is witness/veto, not a per-change approval bottleneck. Consequential gates remain separate.
 
@@ -96,14 +118,15 @@ Normal reversible PSFH source/build/publication work remains inside the establis
 
 ## Next legitimate operations
 
-1. Continue PSFH product construction from maintained source `b23712fe...`.
-2. Prefer additive/reversible working surfaces over homepage churn.
-3. Publish ordinary reversible increments through the existing maintained-source -> static-build -> `gh-pages` lane.
-4. Do not create a new empirical programme around the build.
+1. Hold PSFH maintained source at `182bb7d1...` until the D043 publication receipt lands.
+2. Reacquire public + maintained heads before the next product mutation.
+3. Continue building from concrete product needs, not an empirical programme.
+4. Prefer optional/reversible local utility over new data collection or account machinery.
 
 ```text
 BUILD != PROOF
 PUBLISHED != VALIDATED
+LOCAL_NOTES != INTAKE
 REVERSIBLE_WORK != CONSEQUENTIAL_AUTHORITY
 POSTED != RECEIVED != ACTED != EFFECT
 ```
