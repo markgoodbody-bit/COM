@@ -87,9 +87,29 @@ The audit record retains pseudonymous IDs, role, eligibility confirmation, accou
 
 ---
 
-## 2. Stage A calibration budget — count and scope are both bounded
+## 2. Stage A calibration budget — source selection, count and scope are bounded
 
-Stage A contains exactly **3 disposable development accounts**, mechanically selected under the existing v2 selection rule before substantive suitability reading. All are permanently excluded from Stage B and later efficacy evidence.
+### Stage-A source-selection freeze
+
+Before **any** Stage-A source account is selected or substantively read, write and freeze one mechanical Stage-A source-selection rule. This v3.2 file does not select the source universe or cases.
+
+The later pre-execution packet must identify enough of the rule for another operator to reproduce the selection without judging which cases are flattering. At minimum preserve:
+- the public source universe or named collection(s);
+- snapshot/date cutoff or other currentness boundary;
+- deterministic ordering/sampling procedure and any seed where randomness is used;
+- source-availability/malformed handling;
+- exclusions.
+
+The rule must exclude:
+- TRACE/ME/PSFH development examples and project-authored showcase cases;
+- prior project cases used to develop the construct;
+- any source already substantively read to decide that it is a good irreversibility example.
+
+Once the first Stage-A account is selected/read, the Stage-A source-selection rule cannot be changed in response to case content or construct output. If it proves unusable, stop with `OPERATIONAL_NULL/INCOMPLETE` or return to a newly frozen design before further exposure; do not substitute a nicer case.
+
+`SOURCE_UNIVERSE_FROZEN != CASES_CHOSEN_FOR_RESULT`
+
+Stage A contains exactly **3 disposable development accounts** selected under that pre-frozen mechanical rule. All are permanently excluded from Stage B and later efficacy evidence.
 
 There are at most **2 semantic revision checkpoints**:
 
@@ -250,11 +270,12 @@ This section does not modify Phase-0 scoring and does not authorise the later co
 
 ---
 
-## 7. Separate pre-execution human/provider burden gate
+## 7. Separate pre-execution human/provider/source burden gate
 
-Even a reviewed construct protocol is **not executable** until a later consequential gate explicitly freezes operational burden and Mark authorises any spend/provider action.
+Even a reviewed construct protocol is **not executable** until a later consequential gate explicitly freezes source selection and operational burden, and Mark authorises any spend/provider action.
 
-Before recruitment or account creation, require a written execution packet stating:
+Before any Stage-A source is selected/read, recruitment begins or account is created, require a written execution packet stating:
+- the exact Stage-A public source universe/snapshot and mechanical selection rule required by section 2;
 - chosen recruitment/provider route and evidence it can implement frozen eligibility/role assignment without hidden substitution;
 - expected task duration based on non-participant dry timing of the packet;
 - total human-time ceiling;
@@ -266,9 +287,9 @@ Before recruitment or account creation, require a written execution packet stati
 - replacement, if permitted at all, occurs only under a rule frozen before any task content from the missing person is inspected for favourability;
 - permitted participant-data fields, retention and deletion/custody plan.
 
-If the chosen provider cannot support the frozen packet within those ceilings, do not open another provider/account by momentum. Return to Mark with a concrete alternative or preserve DESIGN/OPERATIONAL NULL.
+If the chosen source/provider route cannot support the frozen packet within those ceilings, do not open another source universe, provider/account or recruitment route by momentum. Return to Mark with a concrete alternative or preserve DESIGN/OPERATIONAL NULL.
 
-No provider capability is claimed merely because a provider name appears in project notes.
+No source/provider capability is claimed merely because a collection or provider name appears in project notes.
 
 `ANALYTICAL_BUDGET != HUMAN_BURDEN_BUDGET`  
 `WITHDRAWAL != PROTOCOL_FAILURE`
