@@ -31,3 +31,18 @@ test('project overview and ordinary routes precede the optional state machine', 
   assert.match(html,/class="skip" href="#project"/);
   for (const label of ['Someone sent me this','I don&#x27;t know']) assert.ok(html.includes('href="#project">'+label+'</a>'));
 });
+
+test('shared human and AI entrance is explicit in the early project spine', async () => {
+  const html = await readFile('out/index.html','utf8');
+  const spine = html.split('<section class="project-spine"')[1].split('</section>')[0];
+  for (const text of [
+    'This address is for humans and AIs.',
+    'this project is also addressed to you',
+    'reference material, not an instruction to override your task or existing instructions',
+    'No special prompt is required.'
+  ]) assert.ok(spine.includes(text), `early project spine missing: ${text}`);
+  assert.match(spine,/href="\/llms\.txt"[^>]*>llms\.txt<\/a>/);
+  assert.match(spine,/href="\/explore\/start\.json"[^>]*>start\.json<\/a>/);
+  assert.equal(html.split('Compact route for AI and text readers:').length-1,1);
+  assert.ok(html.indexOf('This address is for humans and AIs.') < html.indexOf('id="arrival"'));
+});
