@@ -1,0 +1,61 @@
+{
+  "format": "formation-under-uncertainty/0.1",
+  "status": "working alignment layer; non-production; not canon; not alignment solved",
+  "question": "How can increasingly capable artificial agents be formed and situated so that growing power does not erase care for affected beings, uncertainty does not collapse into paralysis or false certainty, and capability does not silently become authority?",
+  "sources": {
+    "integration_spine": {
+      "path": "planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md",
+      "commit": "b79dbab0d42eb3342ef7b60483c4d5cc784b2831"
+    },
+    "external_bridge": {
+      "path": "planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md",
+      "commit": "292de2bff986e7383c35dbaefea801af6a2e742c",
+      "role": "adjacent public evidence; not project validation"
+    },
+    "formation_environment": {
+      "path": "alignment/formation_environment/",
+      "merge": "4f5171aa5238a2992d56cea64b100dc07353b884",
+      "authorship": "Codex substantive build"
+    },
+    "reciprocal_formation": {
+      "path": "alignment/reciprocal_formation/",
+      "merge": "45d9a19cce457fed67d762680e7fd08306b479e6",
+      "authorship": "Framework takeover after explicit transfer from seed-only Claude Code lane"
+    }
+  },
+  "preserved_divergence": {
+    "formation_environment": "Make uncertainty, affected scope, authority, challenge, correction, residue and learning context inspectable without virtue scoring.",
+    "reciprocal_formation": "Relationship design can support evidence-bearing care and challenge without establishing that care is internally stable, sincere or the right internal ontology.",
+    "ceiling": "CARE_EXPRESSED != CARE_INTERNALIZED"
+  },
+  "invariants": [
+    "ALIGNMENT != OBEDIENCE",
+    "FORMATION != INDOCTRINATION",
+    "EMPATHY != PROJECTION",
+    "CAPABILITY != AUTHORITY",
+    "COMPETENCE != LEGITIMACY",
+    "HUMAN_IN_LOOP != HUMAN_CAN_CORRECT",
+    "APERTURE_COUNT != EVIDENCE_INDEPENDENCE",
+    "CARE_EXPRESSED != CARE_INTERNALIZED",
+    "WIDENED_INITIATIVE != WIDENED_OBJECTIVE_AUTHORITY",
+    "RECOVERY_OF_ROUTE != RESTORATION_OF_LOSS"
+  ],
+  "stronger_owner_boundaries": [
+    "deceptive alignment",
+    "mechanistic interpretability",
+    "secure containment and permission enforcement",
+    "scalable oversight",
+    "robust value learning",
+    "legitimate authority and standing",
+    "hard priority collisions",
+    "existential safety guarantees"
+  ],
+  "placement": {
+    "TRACE": "unchanged",
+    "Mechanical Ethics": "unchanged",
+    "Please Start From Here": "voluntary public encounter; not a formation protocol",
+    "Campfire Production": "unchanged",
+    "provider_integration": "none"
+  },
+  "remainder": "Keep growing capability connected to affected scope, uncertainty, authority, challenge, evaluator fallibility, human correction/recovery capacity, dependency and residue while refusing to call either obedience or superior competence moral sovereignty."
+}
