@@ -36,7 +36,7 @@ Candidate monthly objects are links that:
 1. belong to the completed-case section, not active/open caseload;
 2. resolve from the official ICO owner page;
 3. are labelled/identified as a monthly completed FOI/EIR complaints CSV;
-4. encode one unambiguous calendar report month in the displayed label or filename;
+4. encode one unambiguous calendar report month in the displayed label **and** filename;
 5. have a report month later than July 2026; and
 6. are not already designated development fixtures.
 
@@ -46,7 +46,13 @@ If several later monthly links appear together, choose the earliest report month
 
 If no qualifying later monthly object exists, return `SOURCE_NOT_YET_AVAILABLE`; do not fall back to July or an earlier development file.
 
-If the report month cannot be parsed mechanically from the owner-page label/filename, return `SOURCE_RULE_UNRESOLVED`; do not inspect rows to infer which month the file probably represents.
+If the report month cannot be parsed mechanically from the owner-page label and filename, return `SOURCE_RULE_UNRESOLVED`; do not inspect rows to infer which month the file probably represents.
+
+If label and filename encode different months, return `SOURCE_MONTH_CONFLICT`.
+
+If more than one distinct completed-case CSV object claims the same earliest qualifying report month, return `SOURCE_MONTH_AMBIGUOUS`; do not choose by file size, URL order, timestamp or content.
+
+The first authorised owner-page retrieval may be repeated only to resolve a transport failure of that same page. A repeat may not be used to wait for a different month once a qualifying selected month/object has been observed.
 
 `FIRST_FUTURE_MONTH_BY_RULE != OPERATOR_CHOICE`
 
@@ -87,7 +93,7 @@ Transport retries caused by a failed request may repeat the same selected URL, b
 
 Only after byte equality is established, run the networkless PR #200 `inspect` operation on one preserved byte-identical copy.
 
-The permitted pre-contract output is limited to:
+The permitted successful pre-contract output is limited to:
 
 - exact byte length / SHA-256;
 - BOM state;
@@ -145,13 +151,15 @@ SOURCE_DATE_FORMAT_EXACT := UNSET
 
 They must be fixed from owner documentation and/or development-only fixture mechanics before this source rule can become executable. They may not be learned by looking for values that produce attractive confirmatory counts.
 
+A development-only metadata probe may inspect only the named completion-date column and `Decision Detail 1` column needed to freeze their syntax/value conventions. It must not emit or join those values to case references, organisations, issues or outcomes. Any file used for that probe is permanently excluded from Stage A/B.
+
 `UNSET != WILDCARD`
 
 ---
 
 ## 7. Development-fixture exclusion keyset
 
-Every reference contained in any source file used as a development transport/parser fixture is ineligible for Stage A/B, even if no substantive body was read.
+Every reference contained in any source file used as a development transport/parser/metadata fixture is ineligible for Stage A/B, even if no substantive body was read.
 
 Before confirmatory manifest generation, construct a development exclusion keyset mechanically from the **reference column only** of every development fixture whose bytes were used.
 
@@ -161,9 +169,16 @@ Permitted operation:
 fixture exact bytes
 -> frozen reference-header identity
 -> reference-column extraction only
--> exact reference set
--> set SHA-256 + count
+-> trim outer whitespace only
+-> reject blank reference
+-> exact case-sensitive reference set
+-> sort unique references by UTF-8 byte order
+-> serialize each exact reference as UTF-8 + LF
+-> SHA256(serialized exclusion keyset)
+-> preserve set count + SHA256 + contributing fixture byte hashes
 ```
+
+No case-folding, punctuation normalization, suffix stripping or fuzzy reference matching is allowed.
 
 Do not inspect accompanying issue/outcome/organisation/body fields for this exclusion operation.
 
@@ -172,7 +187,11 @@ The confirmatory contract must include the union of:
 1. the existing named project exposure ledger; and
 2. the mechanically extracted development-fixture reference set.
 
+The inline contract list remains the operative exclusion list for PR #200 v0.1. The exclusion-keyset count/hash are replay/provenance controls, not substitutes for the actual list.
+
 If the development reference header cannot be identified without semantic row inspection, stop with `EXCLUSION_KEYSET_UNRESOLVED`.
+
+If two contributing fixtures contain the same reference, union it once and preserve the duplicate-across-fixtures count separately; do not treat the duplicate as evidence that either source is invalid by itself.
 
 `FIXTURE_USED -> FIXTURE_REFERENCES_EXCLUDED`
 
@@ -197,11 +216,13 @@ Frozen future rule:
 
 ```text
 0 Decision Notice results  -> SOURCE_UNAVAILABLE_FOR_REFERENCE
-1 result with matching route reference -> JOIN_OK
+1 result whose route encodes the exact searched reference -> JOIN_OK
 >1 results -> SOURCE_AMBIGUOUS_FOR_REFERENCE
 ```
 
-No external-search rescue and no operator-chosen alternate result.
+Matching is exact after the same outer-whitespace trim used for the source reference. No case folding, approximate string match or external-search rescue.
+
+The joined Decision Notice body is still not opened at this stage.
 
 ---
 
@@ -230,11 +251,14 @@ If all prior mechanics are frozen and satisfied, eligible/joined/available refer
 ```text
 seed_material := "PSFH_PHASE0_STAGE_A_ICO_V1|e5ce9e955dfbf187992604e47109e218e7341bc1"
 seed_sha256   := 861eec5f632dbc3f2541256343dad89f0270ffdf6d44da3878b9c1bc2c063d04
-rank_key(ref) := SHA256(seed_sha256 + "|" + exact_reference)
-order         := ascending hexadecimal rank_key
+rank_input    := lowercase ASCII seed_sha256 + "|" + exact trimmed reference
+rank_key(ref) := SHA256(UTF8(rank_input))
+order         := ascending lowercase hexadecimal rank_key
 ```
 
 The seed is derived from an already-public Phase-0 source identity, not chosen after the universe is visible.
+
+If two distinct references somehow produce the same rank key, order those references by exact UTF-8 byte order as a deterministic tie-break and record the collision. Do not regenerate a seed.
 
 This v0.1 file does **not** yet authorise ranking because the exact DN value, source date format and carrier burden bound remain unset.
 
@@ -251,7 +275,8 @@ Only after every required parameter above is frozen:
 3. apply frozen carrier-availability/burden rule;
 4. compute deterministic rank keys without opening substantive bodies;
 5. choose the first three eligible ranked references as `A1`, `A2`, `A3` in rank order;
-6. only then may the separately authorised Stage-A process open A1 substantive content.
+6. freeze those three exact reference identities and their source/join provenance;
+7. only then may the separately authorised Stage-A process open A1 substantive content.
 
 No replacement for substantive unsuitability is permitted.
 
@@ -259,11 +284,29 @@ If A1/A2/A3 later prove awkward, uninteresting, negative controls, or hostile to
 
 Only pre-frozen source-unavailability/malformed/join/carrier-failure rules may advance to the next ranked reference.
 
+If fewer than three references survive the entire pre-frozen mechanical pipeline, return `SOURCE_UNIVERSE_INSUFFICIENT`; do not widen the month, relax exclusions or raise the burden cap.
+
 `AWKWARD_CASE != REPLACEMENT_REASON`
 
 ---
 
-## 12. Current disposition
+## 12. Self-attack / remaining discretion map
+
+This v0.1 deliberately exposes rather than hides the remaining operator freedoms:
+
+- **when the first authorised owner-page retrieval occurs** — execution scheduling remains external, but month choice does not: earliest qualifying month after July wins;
+- **transport implementation** — HTTP client/browser may differ, but exact response bytes must converge;
+- **exact DN-served value/date format** — still unset, must be earned on development-only metadata;
+- **carrier burden bound** — still unset and blocks ranking;
+- **participant/provider/spend** — entirely outside this file.
+
+None of these may be resolved by reading confirmatory Decision Notice substance first.
+
+A future revision that changes the source month after seeing row counts, changes the date window after seeing the completed-date distribution, changes the DN value after seeing which string yields more cases, or changes the burden cap after seeing selected bodies is outcome-responsive source tuning and invalidates the freeze.
+
+---
+
+## 13. Current disposition
 
 This rule is **not ready to freeze**.
 
