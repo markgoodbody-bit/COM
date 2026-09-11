@@ -30,9 +30,27 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 
 SCHEMA_VERSION = 1
+
+CONTRACT_KEYS = {
+    "schema_version",
+    "source_url",
+    "retrieval_utc",
+    "expected_byte_length",
+    "expected_sha256",
+    "expected_headers",
+    "reference_header",
+    "completed_date_header",
+    "completed_date_format",
+    "decision_detail_1_header",
+    "dn_served_value",
+    "window_start",
+    "window_end",
+    "excluded_references",
+}
 
 
 class ContractError(RuntimeError):
@@ -49,6 +67,8 @@ def load_csv(path: Path) -> tuple[bytes, list[str], list[dict[str, str]]]:
         text = data.decode("utf-8-sig")
     except UnicodeDecodeError as exc:
         raise ContractError(f"CSV is not UTF-8/UTF-8-BOM decodable: {exc}") from exc
+    if "\x00" in text:
+        raise ContractError("CSV contains NUL bytes")
 
     reader = csv.DictReader(io.StringIO(text, newline=""), delimiter=",", strict=True)
     if reader.fieldnames is None:
@@ -101,14 +121,73 @@ def parse_source_date(value: str, fmt: str, row_number: int, header: str) -> dat
         ) from exc
 
 
+def require_nonempty_string(contract: dict[str, Any], key: str) -> str:
+    value = contract[key]
+    if not isinstance(value, str) or not value:
+        raise ContractError(f"{key} must be a non-empty string")
+    if value != value.strip():
+        raise ContractError(f"{key} must not contain leading/trailing whitespace")
+    return value
+
+
+def parse_retrieval_utc(value: str) -> datetime:
+    normalized = value[:-1] + "+00:00" if value.endswith("Z") else value
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError as exc:
+        raise ContractError(f"retrieval_utc must be ISO-8601 UTC, got {value!r}") from exc
+    if parsed.tzinfo is None or parsed.utcoffset() is None:
+        raise ContractError("retrieval_utc must include an explicit UTC offset")
+    if parsed.utcoffset().total_seconds() != 0:
+        raise ContractError("retrieval_utc must be UTC, not a non-zero offset")
+    return parsed
+
+
 def require_contract(contract: dict[str, Any]) -> None:
-    required = [
-        "schema_version",
-        "source_url",
-        "retrieval_utc",
-        "expected_byte_length",
-        "expected_sha256",
-        "expected_headers",
+    missing = sorted(CONTRACT_KEYS - set(contract))
+    unknown = sorted(set(contract) - CONTRACT_KEYS)
+    if missing:
+        raise ContractError(f"contract missing required keys: {', '.join(missing)}")
+    if unknown:
+        raise ContractError(f"contract contains unknown keys: {', '.join(unknown)}")
+
+    if contract["schema_version"] != SCHEMA_VERSION:
+        raise ContractError(
+            f"contract schema_version {contract['schema_version']!r} != {SCHEMA_VERSION}"
+        )
+
+    source_url = require_nonempty_string(contract, "source_url")
+    parsed_url = urlparse(source_url)
+    if parsed_url.scheme != "https" or not parsed_url.netloc:
+        raise ContractError("source_url must be an absolute https URL")
+
+    retrieval_utc = require_nonempty_string(contract, "retrieval_utc")
+    parse_retrieval_utc(retrieval_utc)
+
+    if (
+        not isinstance(contract["expected_byte_length"], int)
+        or isinstance(contract["expected_byte_length"], bool)
+        or contract["expected_byte_length"] < 1
+    ):
+        raise ContractError("expected_byte_length must be a positive integer")
+
+    expected_sha = require_nonempty_string(contract, "expected_sha256")
+    if len(expected_sha) != 64:
+        raise ContractError("expected_sha256 must be a 64-character hex string")
+    try:
+        int(expected_sha, 16)
+    except ValueError as exc:
+        raise ContractError("expected_sha256 is not hexadecimal") from exc
+
+    headers = contract["expected_headers"]
+    if not isinstance(headers, list) or not headers:
+        raise ContractError("expected_headers must be a non-empty list")
+    if not all(isinstance(h, str) and h for h in headers):
+        raise ContractError("expected_headers must contain only non-empty strings")
+    if len(set(headers)) != len(headers):
+        raise ContractError("expected_headers contains duplicate column names")
+
+    for key in (
         "reference_header",
         "completed_date_header",
         "completed_date_format",
@@ -116,36 +195,22 @@ def require_contract(contract: dict[str, Any]) -> None:
         "dn_served_value",
         "window_start",
         "window_end",
-        "excluded_references",
-    ]
-    missing = [k for k in required if k not in contract]
-    if missing:
-        raise ContractError(f"contract missing required keys: {', '.join(missing)}")
+    ):
+        require_nonempty_string(contract, key)
 
-    if contract["schema_version"] != SCHEMA_VERSION:
-        raise ContractError(
-            f"contract schema_version {contract['schema_version']!r} != {SCHEMA_VERSION}"
-        )
-    if not isinstance(contract["source_url"], str) or not contract["source_url"].strip():
-        raise ContractError("source_url must be a non-empty string")
-    if not isinstance(contract["retrieval_utc"], str) or not contract["retrieval_utc"].strip():
-        raise ContractError("retrieval_utc must be a non-empty string")
-    if not isinstance(contract["expected_byte_length"], int) or contract["expected_byte_length"] < 1:
-        raise ContractError("expected_byte_length must be a positive integer")
-    if not isinstance(contract["expected_sha256"], str) or len(contract["expected_sha256"]) != 64:
-        raise ContractError("expected_sha256 must be a 64-character hex string")
-    try:
-        int(contract["expected_sha256"], 16)
-    except ValueError as exc:
-        raise ContractError("expected_sha256 is not hexadecimal") from exc
-    if not isinstance(contract["expected_headers"], list) or not contract["expected_headers"]:
-        raise ContractError("expected_headers must be a non-empty list")
-    if not all(isinstance(h, str) and h for h in contract["expected_headers"]):
-        raise ContractError("expected_headers must contain only non-empty strings")
-    if not isinstance(contract["excluded_references"], list):
+    # Validate the fixed window at contract-load time rather than waiting for row handling.
+    parse_iso_date(contract["window_start"], "window_start")
+    parse_iso_date(contract["window_end"], "window_end")
+
+    exclusions = contract["excluded_references"]
+    if not isinstance(exclusions, list):
         raise ContractError("excluded_references must be a list")
-    if not all(isinstance(r, str) and r for r in contract["excluded_references"]):
-        raise ContractError("excluded_references must contain only non-empty strings")
+    if not all(isinstance(r, str) and r and r == r.strip() for r in exclusions):
+        raise ContractError(
+            "excluded_references must contain only non-empty exact strings without outer whitespace"
+        )
+    if len(set(exclusions)) != len(exclusions):
+        raise ContractError("excluded_references contains duplicates")
 
 
 @dataclass(frozen=True)
@@ -156,10 +221,16 @@ class EligibleRow:
 
 
 def validate_snapshot(csv_path: Path, contract_path: Path) -> dict[str, Any]:
-    contract = json.loads(contract_path.read_text(encoding="utf-8"))
+    contract_bytes = contract_path.read_bytes()
+    try:
+        contract_text = contract_bytes.decode("utf-8-sig")
+    except UnicodeDecodeError as exc:
+        raise ContractError(f"contract is not UTF-8/UTF-8-BOM decodable: {exc}") from exc
+    contract = json.loads(contract_text)
     if not isinstance(contract, dict):
         raise ContractError("contract root must be a JSON object")
     require_contract(contract)
+    contract_sha = sha256_bytes(contract_bytes)
 
     data, headers, rows = load_csv(csv_path)
 
@@ -190,8 +261,6 @@ def validate_snapshot(csv_path: Path, contract_path: Path) -> dict[str, Any]:
         raise ContractError("window_end precedes window_start")
 
     excluded = set(contract["excluded_references"])
-    if len(excluded) != len(contract["excluded_references"]):
-        raise ContractError("excluded_references contains duplicates")
 
     dn_value = contract["dn_served_value"]
     date_fmt = contract["completed_date_format"]
@@ -255,6 +324,11 @@ def validate_snapshot(csv_path: Path, contract_path: Path) -> dict[str, Any]:
             "sha256": actual_sha,
             "headers": headers,
             "row_count": len(rows),
+        },
+        "contract": {
+            "file_name": contract_path.name,
+            "byte_length": len(contract_bytes),
+            "sha256": contract_sha,
         },
         "mechanical_rule": {
             "reference_header": ref_h,
@@ -390,6 +464,28 @@ def run_self_test() -> None:
             assert "fewer fields than the header" in str(exc)
         else:
             raise AssertionError("short malformed row did not fail closed")
+
+        unknown_contract = dict(contract)
+        unknown_contract["silent_extra_control"] = True
+        unknown_path = base / "unknown_contract.json"
+        unknown_path.write_text(json.dumps(unknown_contract), encoding="utf-8")
+        try:
+            validate_snapshot(csv_path, unknown_path)
+        except ContractError as exc:
+            assert "unknown keys" in str(exc)
+        else:
+            raise AssertionError("unknown contract key did not fail closed")
+
+        non_utc_contract = dict(contract)
+        non_utc_contract["retrieval_utc"] = "2026-09-11T01:00:00+01:00"
+        non_utc_path = base / "non_utc_contract.json"
+        non_utc_path.write_text(json.dumps(non_utc_contract), encoding="utf-8")
+        try:
+            validate_snapshot(csv_path, non_utc_path)
+        except ContractError as exc:
+            assert "must be UTC" in str(exc)
+        else:
+            raise AssertionError("non-UTC retrieval timestamp did not fail closed")
 
     print("SELF_TEST_PASS")
 
