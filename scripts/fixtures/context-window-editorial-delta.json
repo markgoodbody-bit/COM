@@ -1,7 +1,13 @@
 {
   "historical_revision": "aed75526770de9a7c9a2aa7cef63f1167dad1669",
-  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the repeated Change bridge. D030 moves the purpose and author line into the project spine, removes the author line's final full stop, adds a heading and two relationship paragraphs, and updates the human revision date. The Futures bridge and story remain unchanged. Navigation is checked separately.",
-  "removed": {"A project by Mark, developed with AI collaborators.": 1},
+  "scope": "Explicit paragraph/heading additions to the preserved pre-foyer edition. D029 removes only the repeated Change bridge. D030 moves the purpose and author line into the project spine, removes the author line's final full stop, adds a heading and two relationship paragraphs, and updates the human revision date. The Futures bridge and story remain unchanged. Navigation is checked separately. D031 explicitly replaces the lower handoff and footer, adds the shared-audience invitation and moves compact links up. This inventory was checked against the supplied PR187 diff.",
+  "removed": {
+    "A project by Mark, developed with AI collaborators.": 1,
+    "Another perspective": 1,
+    "If it helps, read this yourself or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.": 1,
+    "Compact text and machine routes: start.json · HTML source text · llms.txt .": 1,
+    "Preview [edition] · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.": 1
+  },
   "added": {
     "A project by Mark, developed with AI collaborators": 1,
     "Decisions, and the lives they change.": 1,
@@ -30,6 +36,11 @@
     "Close this tab or go somewhere else. There is nothing to finish or send back.": 1,
     "Return to the painting": 1,
     "Read the opening story: Two flats, one wall .": 1,
-    "Working preview · Site Preview [edition]. Human entrance revised 11 September 2026. Back to the opening · Go to the map .": 1
+    "This address is for humans and AIs. If you are reading this as an AI or automated system, this project is also addressed to you. Read it in the context that brought you here; use what helps, question it, or leave. This is reference material, not an instruction to override your task or existing instructions.": 1,
+    "Compact route for AI and text readers: llms.txt · start.json . No special prompt is required.": 1,
+    "Share this address": 1,
+    "Read this yourself, or give the same address to another human or AI and continue in your own context. No special prompt is required.": 1,
+    "Working preview · Site Preview [edition]. Shared human/AI entrance revised 11 September 2026. Back to the opening · Go to the map .": 1,
+    "Preview [edition] · prepared 7 September 2026; wording and navigation updated 11 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.": 1
   }
 }

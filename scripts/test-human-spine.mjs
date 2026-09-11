@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import {readFile, readdir} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 
-test('D030 changes only the homepage, shared CSS, manifest and paired history', async () => {
-  const expected = ['changes.html','changes.md','index.html','manifest.json','style.css'];
+test('D031 changes only the homepage, manifest and paired history from D030', async () => {
+  const expected = ['changes.html','changes.md','index.html','manifest.json'];
   const changed = [];
   let count = 0;
   for (const entry of await readdir('out',{recursive:true,withFileTypes:true})) {
     if (!entry.isFile()) continue;
     const file = (entry.parentPath+'/'+entry.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,'');
-    const before = execFileSync('git',['show','57a86af13399916825570fbfb51e19b734ac71a8:'+file],{maxBuffer:20*1024*1024});
+    const before = execFileSync('git',['show','eacf5dbef0394fbebfe41a2b3d5a4529b0131cd5:'+file],{maxBuffer:20*1024*1024});
     if (!(await readFile('out/'+file)).equals(before)) changed.push(file);
     count++;
   }
