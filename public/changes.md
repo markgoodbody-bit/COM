@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.22 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.23 · 11 September 2026
+
+### D047
+
+11 September 2026 — The opening painting is larger.
+
+Mark pointed out that the painting was too small relative to the rest of the site. The previous homepage rule limited its height to about 28 percent of the viewport. The new width rule allows a substantially larger opening, bounded by the available width, a 64rem maximum and the painting's full-frame proportions.
+
+The whole image remains uncropped, with the existing title overlay. The D046 story-first order, wording, routes, artwork bytes and provenance remain unchanged. This is a visual proportion repair, not a new reading sequence or evidence of reader benefit. Site Preview advances to 0.8.6. Previous publication d7e98da7bcf0a01ae6566de22d1e75b2a6313ccf remains in Git history.
 
 ### D046
 
