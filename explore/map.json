@@ -375,13 +375,13 @@
     },
     {
       "path": "work.html",
-      "bytes": 3658,
-      "sha256": "39f94bf80304e00392cbd46e313efc239f1e281a61c11546d8d077522e55a8cb"
+      "bytes": 3696,
+      "sha256": "85a46eeb7ac56e4038b286bd7ca08a4a95951e13858a98698366dfbec2ac7967"
     },
     {
       "path": "work.md",
-      "bytes": 2370,
-      "sha256": "8e60f65d92f41c3a6e902a61e6af1949cee4b1642aad4d7102911d9eae3155ea"
+      "bytes": 2377,
+      "sha256": "c66a5c105e16d0d0b8825740794c9843366c1aa2b82518daee888bf37e7435da"
     },
     {
       "path": "worked-revision.html",
@@ -392,6 +392,11 @@
       "path": "worked-revision.md",
       "bytes": 6029,
       "sha256": "c2f41ce55fdea96361d9716116fd6ad016a55c24651a7c6c72d62d51a0d70421"
+    },
+    {
+      "path": "work.js",
+      "bytes": 3657,
+      "sha256": "15c275a3516e4dd3e8289446059835d59bc7bfdbe4c1286904763a49e7757986"
     }
   ],
   "integrity_limit": "Hashes describe this authored build, not independent truth, safety, current deployment or custody. map.json excludes itself to avoid a self-hash claim.",
