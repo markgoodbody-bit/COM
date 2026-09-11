@@ -26,8 +26,6 @@
     "sitemap": "/sitemap.xml",
     "explore": "/explore/",
     "explore_text": "/explore/index.md",
-    "working_surface": "/explore/work.html",
-    "working_surface_text": "/explore/work.md",
     "explore_map": "/explore/map.json",
     "html_source_text": "/read/start.html",
     "artwork": "/art/camp-fire.json",
@@ -70,9 +68,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "a83140c2facaeba9e4ba38248a0cd2bfbb8652b748a950b43fad1cee7b3224a6",
-    "change_history_input_html_sha256": "aa91007bdf67d73a1874ab74f3f867e9cc19efd76adf98111ada8bdcf043c3c4",
-    "change_history_addendum_note": "D016 through D041 and D043 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries. D042 was a build-only change with identical public output.",
+    "change_history_sha256": "a1b405d6ff1f2673779def5b420cc0b5deef75b610b5dfeddc5e129dbac9fa3c",
+    "change_history_input_html_sha256": "fc165db660bdbe14a53eeb53e4d359719b34972aa97951ca9711173b17c5a267",
+    "change_history_addendum_note": "D016 through D038 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -96,24 +94,20 @@
     "shared_root_label": {
       "scope": "The canonical root is named as shared reading for humans and AI readers. The older human_reading route key is retained as a compatibility alias; both resolve to the same public root."
     },
-    "working_surface": {
-      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5639673913",
-      "scope": "One additive static page collecting six existing working questions and routing to existing reading rooms. No intake, form, scoring, account, required sequence or efficacy claim."
-    },
     "html_source_text": [
       {
         "output": "read/start.html",
         "source": "explore/start.json",
         "title": "Start: complete JSON source text",
-        "edition": "Site Preview 0.8.4, working-surface routes added 11 September 2026 (D041); psfh-arrival format 0.1",
-        "sha256": "e81ccb2c8f8c5dda567990b7f4487764db007c61174d4f7bec89d3e181eea2eb"
+        "edition": "Site Preview 0.8.4, project-part entrances added 11 September 2026 (D034); psfh-arrival format 0.1",
+        "sha256": "3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5"
       },
       {
         "output": "read/orientation.html",
         "source": "llms.txt",
         "title": "Orientation: complete text source",
-        "edition": "Site Preview 0.8.4, working-surface links added 11 September 2026 (D039); not validation",
-        "sha256": "828e4306ef8d54bc46c25109216ad1edd7ca67790018c4928902deb58eab2814"
+        "edition": "Site Preview 0.8.4, shared-root terminology revised 11 September 2026 (D033); not validation",
+        "sha256": "fc182abcc176e23fe12eb1c470110a1e01cf61be2874033215b84ec403ba94e0"
       },
       {
         "output": "read/trace-spine.html",
@@ -206,7 +200,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "e2f29e37161065150c68783e8536d5dca8e9f0127791ba2935abbe760711e583",
+    "change_history_html_sha256": "72cddba042bc7118e543d66f642ef5791ef8281b88d0363d12cddb4f5e2e6abf",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

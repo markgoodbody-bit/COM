@@ -28,7 +28,6 @@ We propose making harm visible, correction reachable and power answerable. This 
 
 - [Choose by question](questions.txt)
 - [Small machine entrance](start.json)
-- [Work with a situation](work.md)
 - [Change](nodes/change.md)
 - [Partial views](nodes/aperture.md)
 - [Significance](nodes/significance.md)

@@ -11,7 +11,6 @@ This is a bounded static extension, not a required course or agent service. The 
 ## Entry
 
 - [Small beginning](https://pleasestartfromhere.com/explore/index.md): orientation without a required identity
-- [Work with a situation](https://pleasestartfromhere.com/explore/work.md): six existing working questions on one page; use any of them, skip the rest
 - [Machine map](https://pleasestartfromhere.com/explore/map.json): individual resources and byte sizes
 
 ## Patterns

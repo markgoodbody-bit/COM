@@ -165,23 +165,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 11884,
-      "sha256": "3838c2e263a4b2630ef5a4621bfdf9fd689a01a9ce38e2006a5552d397c7aa4d"
+      "bytes": 11830,
+      "sha256": "c4efc6d6e2c094b50113fd055785ef2bd189bae75e758feb8f8f47d77864d911"
     },
     {
       "path": "index.md",
-      "bytes": 2186,
-      "sha256": "9cbbce9710ddcb0d17167183b6766122948e60e8e587f49c123cd9a1d19636af"
+      "bytes": 2151,
+      "sha256": "2255724667780f3ca618880b5d7c4bf3af3287b895be9dccad50621b0d05d3e4"
     },
     {
       "path": "index.txt",
-      "bytes": 2186,
-      "sha256": "9cbbce9710ddcb0d17167183b6766122948e60e8e587f49c123cd9a1d19636af"
+      "bytes": 2151,
+      "sha256": "2255724667780f3ca618880b5d7c4bf3af3287b895be9dccad50621b0d05d3e4"
     },
     {
       "path": "llms.txt",
-      "bytes": 3686,
-      "sha256": "cecd4b1ed2631e2360d5cf753aa5826cf17d4ae01556fd8af4940005db8d1a35"
+      "bytes": 3535,
+      "sha256": "08dd853335f48592a7f4de442677a9b25448613f63593722b1f507b1ffd704a3"
     },
     {
       "path": "nodes/aperture.html",
@@ -370,18 +370,8 @@
     },
     {
       "path": "start.json",
-      "bytes": 2809,
-      "sha256": "e81ccb2c8f8c5dda567990b7f4487764db007c61174d4f7bec89d3e181eea2eb"
-    },
-    {
-      "path": "work.html",
-      "bytes": 3696,
-      "sha256": "85a46eeb7ac56e4038b286bd7ca08a4a95951e13858a98698366dfbec2ac7967"
-    },
-    {
-      "path": "work.md",
-      "bytes": 2377,
-      "sha256": "c66a5c105e16d0d0b8825740794c9843366c1aa2b82518daee888bf37e7435da"
+      "bytes": 2768,
+      "sha256": "3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5"
     },
     {
       "path": "worked-revision.html",
@@ -392,11 +382,6 @@
       "path": "worked-revision.md",
       "bytes": 6029,
       "sha256": "c2f41ce55fdea96361d9716116fd6ad016a55c24651a7c6c72d62d51a0d70421"
-    },
-    {
-      "path": "work.js",
-      "bytes": 3657,
-      "sha256": "15c275a3516e4dd3e8289446059835d59bc7bfdbe4c1286904763a49e7757986"
     }
   ],
   "integrity_limit": "Hashes describe this authored build, not independent truth, safety, current deployment or custody. map.json excludes itself to avoid a self-hash claim.",
