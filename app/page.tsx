@@ -34,14 +34,14 @@ export default function Home() {
           <p>Stories and art are optional ways into the work. They can widen attention or offer another perspective; they are not evidence for the project, and you do not have to pass through them to reach the material.</p>
           <p>This page introduces the project for inspection. Its selection and framing can influence a reader&apos;s reasoning; it is not a neutral or complete view.</p>
           <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
-          <div className="journey-options" aria-label="Main ways to use this site">
+          <p className="journey-options">
             <a href="#step-work">Bring a question or situation</a>
             <a href="/explore/#reading-map">Explore the ten-question map</a>
             <a href="#step-story">Read one small example</a>
             <a href="/works/">Visit the art</a>
             <a href="#reading">Read TRACE, Mechanical Ethics and neighbouring work</a>
             <a href="#step-challenge">Challenge or check this</a>
-          </div>
+          </p>
           <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act. You may use another method, disagree, or leave.</p>
         </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
