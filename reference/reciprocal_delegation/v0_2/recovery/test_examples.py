@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent
 CASES = {
     "examples/clean_handoff_exact_head.json": True,
     "examples/stalled_lane_named_transfer.json": True,
+    "examples/authorized_scope_widening.json": True,
     "examples/double_mutator_same_object.json": False,
     "examples/takeover_from_stale_head.json": False,
     "examples/success_widens_scope_implicitly.json": False,
