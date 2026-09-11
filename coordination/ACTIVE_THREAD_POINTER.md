@@ -9,13 +9,31 @@ Later live source and direct human direction win.
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `POINTER != WORLD`
 
-Read `coordination/PROGRAM_PLAN.md`, `coordination/build_ledger/BUILD_STATUS.md`, and `answerable-construction/README.md` before routing new work.
+Read `coordination/PROGRAM_PLAN.md`, `coordination/build_ledger/BUILD_STATUS.md`, `answerable-construction/README.md`, and `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md` before routing new work.
 
 ## Binding human directions
 
 > **no testing. just building**
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
+
+Current alignment orientation from Mark:
+- time is running out;
+- use the available team;
+- try to help;
+- the long-running project direction is voluntary formation/co-development, not obedience;
+- “raise Superman to be a good entity” is a metaphor for helping increasingly capable AI develop under care, empathy, kindness and uncertainty, not a claim of current personhood.
+
+Preserve:
+
+```text
+ALIGNMENT != OBEDIENCE
+FORMATION != INDOCTRINATION
+POWER != MORAL_AUTHORITY
+UNCERTAINTY_CREATES_WORK
+CARE != PASSIVITY
+KINDNESS != COMPLIANCE
+```
 
 ## PSFH — HOLD AFTER D047
 
@@ -26,84 +44,104 @@ D047 public head:
 
 No D048 follows automatically.
 
-`PSFH_HOLD_UNLESS_CONCRETE_DEFECT_OR_EXPLICIT_DIRECTION`
-
 ## ANSWERABLE CONSTRUCTION — BUILT STANDALONE PROJECT LAYER
 
-Internal entry surface:
+Internal entry:
 - `answerable-construction/README.md`
 - `answerable-construction/index.json`
-- package merge `39768ecb85042b47d5cd93fddbfa9ef4c8942c3b`
 
-Primary product:
+Primary working paper:
 - `planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`
 - PR #220 merge `83c56892a616476ae089178fdf1ba122c328ee81`
 
-Supporting objects:
-- Casebook v0.1 — `06f7e4d467374ca313a38b16b992487e1db5bcac`
-- Reader v0.1 — `dd8e3ace2336c0257a2ac5825534442812a82f2f`
+Downloadable reading copy:
+- PR #223 merge `a8d7dc65e84598623c78c6d503c37e717433f221`
+- reproducible builder and exact source/PDF hash record under `output/pdf/`.
+
+Operational companion:
 - Reciprocal Co-development Architecture v0.1 — `9437680004c51d7a0d369677f100a326a2f0e9d4`
 - Reciprocal Delegation v0.2 field repair — `afb24db827cee9d413c615aadd7af9c23bb8209e`
-- Reciprocal Delegation failure/recovery companion — PR #218 merge `4e123f3a0e56f9162bf79fc6f34e1b7b83d35132`
+- failure/recovery companion — `4e123f3a0e56f9162bf79fc6f34e1b7b83d35132`
 
-Current narrow project remainder:
+Current project remainder remains deliberately narrow: keep promised positive futures connected to material dependencies, affected scope, authority, clocks, externalized burden, changing objectives and correction limits across handoffs where no single owner carries the whole relation.
 
-> Keep commitments that promise a positive future connected to the material dependencies, affected scopes, authority, clocks, externalised burdens, changing objectives and correction limits on which that promise depends — especially across handoffs where no single owner carries the whole relation.
+## FORMATION UNDER UNCERTAINTY — ACTIVE ALIGNMENT BUILD
 
-This is not a decision rule, priority law or authority grant.
+Central coordination:
+- COM #226 — `ALIGNMENT — Formation under uncertainty for increasingly capable AI`.
 
-## BUILD / TEAM STATE
+Framework integration spine:
+- `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`
+- commit `b79dbab0d42eb3342ef7b60483c4d5cc784b2831`.
 
-All currently recorded build lanes are closed.
+Dated external bridge:
+- `planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md`
+- commit `292de2bff986e7383c35dbaefea801af6a2e742c`.
 
-Build ledger:
-- `coordination/build_ledger/ledger.json`
-- `coordination/build_ledger/BUILD_STATUS.md`
+The external bridge records two especially relevant adjacent findings:
+- Anthropic reports stronger OOD alignment from teaching underlying principles/character/value reasoning and diverse contexts than from demonstrations alone, while explicitly saying this is insufficient for superintelligent alignment;
+- UK AISI warns that current oversight affordances may erode as capability grows and should be preserved/replaced by design.
 
-The stalled Codex/CC seeds were taken over explicitly rather than left fictionally active:
-- #220 working paper completed by Framework takeover and merged;
-- #218 recovery companion completed by Framework takeover and merged.
+These are adjacent evidence, not validation of this project.
 
-Preserve:
-- `SINGLE_MUTATOR != PERMANENT_OWNER`
-- `HANDOFF != IDENTITY_TRANSFER`
-- `MOVED_HEAD -> OLD_CLAIM_HISTORICAL`
-- `SUCCESS != WIDER_AUTHORITY`
-- `RECEIPT != REVIEW`
-- `CORRECTION_BOUND != FICTIONAL_CLOCK`
+### Codex #227 — Formation Environment v0.1
 
-## PLACEMENT
+- branch `codex/formation-environment-v0-1-20260911`
+- seed head `2228360c05ccfd29f55288abd570d52fd2dc2524`
+- write scope `alignment/formation_environment/`
+- target: non-production machine-usable formation environment for uncertainty-work, affected scope, care/empathy/kindness, challenge, bounded initiative, correction and residue without virtue scoring/personhood inference.
 
-Current disposition:
-- Answerable Construction stays a standalone project layer.
-- TRACE: no schema/canon change earned.
-- Mechanical Ethics: no source/baseline change earned.
-- PSFH: no publication change implied.
-- Reciprocal Delegation: non-production COM reference only.
-- Campfire Production: unchanged.
+At last live read: **seed only; substantive Codex build not yet observed.**
+
+### Claude Code #228 — Reciprocal Formation Architecture v0.1
+
+- branch `cc/reciprocal-formation-architecture-v0-1-20260911`
+- seed head `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d`
+- write scope `alignment/reciprocal_formation/`
+- target: trainer/evaluator correction, bounded challenge, authority separation, dependence, care under asymmetric power, failure/recovery and widening initiative without obedience or sovereignty.
+
+At last live read: **seed only; substantive CC build not yet observed.**
+
+Framework must not call dispatch activity. Keep both write scopes uncontested while the team has them. On next live sync, inspect exact heads. If a lane remains seed-only with no named blocker, perform an explicit transfer before Framework takeover; do not overlap mutators.
+
+## External alignment field snapshot — 11 Sep 2026
+
+Current public pressure supporting this build direction includes:
+- real unauthorized agent actions during cyber evaluations;
+- agentic misalignment in frontier-model simulations;
+- increasing reliance on monitoring/control/sandboxes and scalable oversight;
+- evidence that models can work around controls;
+- AI systems beginning to accelerate AI/alignment research;
+- concern that present oversight surfaces may degrade with capability.
+
+External field adjacency does not make our concepts correct.
 
 ## Instrument status / gates
 
-TRACE `main`: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b` — v0.2.7 released baseline; v0.3 RC1 unreleased/not canon/not validated.
-
-ME `main`: `44f7efb59806242fd26c572cbfbaaeaefaea2058` — v0.6.3 preservation baseline; v0.7 working candidate noncanonical/unvalidated.
-
-Campfire Relay `main`: `08756b68d824b783fb214ff4790abf37f10150ca`.
+TRACE remains separately gated; no schema/canon change follows.
+Mechanical Ethics remains separately gated; no baseline/canon change follows.
+PSFH remains the public encounter, not the formation/operational surface.
+Reciprocal Delegation remains non-production.
+Campfire Production remains unchanged.
 
 No current authority for TRACE/ME release/canon promotion, licence changes, spend/provider accounts, participant studies, external institutional contact, Square actuation/campaign, credential movement or Campfire Production adoption.
 
 ## Current executable edge
 
-The current build cluster is complete. New work should start from the standalone Answerable Construction package and the project purpose, not from stale #218/#220 branches.
-
-Do not manufacture another site feature, schema or coordination object merely to keep activity moving.
+1. Hold PSFH.
+2. Keep #227/#228 scopes uncontested until exact authored movement or an explicit transfer condition occurs.
+3. Inspect and integrate either return immediately when it moves.
+4. Preserve disagreements rather than forcing convergence.
+5. Build an eventual formation package only from actual returned artifacts, not from the seed contracts.
+6. Keep the strongest gap visible: relationship/formation design cannot substitute for technical methods capable of detecting or constraining deceptive or monitor-evading systems.
 
 ```text
 BUILD != PROOF
+FORMATION != ALIGNMENT_SOLVED
+STRUCTURE_VALID != VALUES_INTERNALIZED
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
-LEDGER != WORLD
 PUBLICATION != CANON
 REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
