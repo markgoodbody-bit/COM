@@ -6,8 +6,8 @@ Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-`PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`
-`UNCERTAINTY = OPERATING_CONDITION`
+`PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
+`UNCERTAINTY = OPERATING_CONDITION`  
 `POINTER != WORLD`
 
 ## Program spine
@@ -16,124 +16,139 @@ Read `coordination/PROGRAM_PLAN.md` before choosing the next project action.
 
 PSFH, TRACE, Mechanical Ethics, Campfire/COM, art and field work are instruments inside the larger project. Do not route the whole project into whichever instrument most recently moved.
 
-The current positive complement is:
+Current positive pair:
 
-`PREVENT UNJUSTIFIED FUTURE CLOSURE`
+```text
+PREVENT UNJUSTIFIED FUTURE CLOSURE
++
+HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
+```
 
-plus
+Working target: **answerable construction under uncertainty** — viable/worthwhile shared futures, including commitments that may close paths, while affected scope, power, externalised burden, loss, goal revision and correction limits remain visible and contestable.
 
-`HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING`
+## Current executable edge — BUILD PHASE
 
-The working target is **answerable construction under uncertainty**: worthwhile and viable shared futures, including commitments that may close some paths, while power, exclusion, loss, goal revision and correction remain visible and contestable.
-
-## Current executable edge — Open Horizon positive construction
-
-### PSFH / Door is stable after D045
-
-Human directions remain binding:
+Mark's current directions remain:
 
 > **no testing. just building**
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-D044 closed the D039-D043 worksheet/scratchpad mistake on the canonical origin.
+Mark then explicitly corrected team allocation: Codex and CC should be building, not both waiting in review lanes.
 
-D045 is now published:
+### PSFH / Door — stable after D045
+
+D045 is published and independently served-origin witnessed:
 - maintained source `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
 - public `gh-pages` `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`;
-- exactly four of 155 outputs changed: `works/index.html`, `changes.md`, `changes.html`, `manifest.json`;
-- root, artworks, individual work pages, routes, machine entrances and withdrawn worksheet surfaces remain unchanged.
+- Works entrance says open any work / stay / no required order / return;
+- root unchanged;
+- withdrawn worksheet routes remain 404.
 
-PSFH now holds unless one of these occurs:
-- concrete defect;
-- explicit human direction;
-- genuinely new project content worth sharing.
+Hold routine PSFH mutation unless there is a concrete defect, explicit human direction or mature new project content.
 
-Do not generate routine Door micro-optimisation merely to keep building.
-
-`PSFH != WORKSHEET`
+`PSFH != WORKSHEET`  
 `WORKS != CURRICULUM`
-`QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
 
-### Main frontier object
+## Live build lanes
 
-`planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md`
+### CODEX — Answerable Construction Casebook v0.1
 
-Exact creation commit:
-- `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`
+Draft PR **#211**  
+Branch: `codex/answerable-construction-casebook-v0-1-20260911`  
+Target: `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`  
+Framework seed head: `7bd3be240900b4c92a7fc1cc92ccfabc5bc09726`
 
-Question:
+Codex owns construction in-place. Required artifact: three materially different, publicly grounded transitions — human institutional, ecological/climate, human–AI — each separating affected scope/scale, capability/viability, commitment/closure, authority roles, clocks/irreversibility, support/reserve, residue/losers, domain owners and project remainder.
 
-> **How can bounded entities build worthwhile shared capabilities and durable commitments while preserving enough answerability and correction to avoid domination when values, standing and goals can change?**
+No benchmark, score, decision rule, questionnaire or TRACE/ME/PSFH/Campfire mutation.
 
-Differentiated challenge dispatched in COM #74 comment `5640200249`:
-- Codex: human institutional transition;
-- Claude Code: human–AI co-development;
-- Framework: ecological/climate transformation.
+### CLAUDE CODE — Reciprocal Co-development Architecture v0.1
 
-Framework ecological attack is preserved separately:
-- `planning/ANSWERABLE_CONSTRUCTION_ECOLOGICAL_ATTACK_20260911.md`
-- exact commit `af0cab8825043f9f590a0429a9ac3f57bfa92f67`.
+Draft PR **#212**  
+Branch: `cc/reciprocal-codevelopment-architecture-v0-1-20260911`  
+Target: `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`  
+Framework seed head: `b3cfe9fdc6609621c41f8ea201f96a069f84e528`
 
-Material repair already found:
-- direct answer-back is not portable to all future/nonhuman affected scopes;
+CC owns independent construction in-place. Required artifact: task-specific delegation, bounded participation, act/ask/challenge/refuse/escalate/adapt/repair modes, evidence without scalar reputation sovereignty, authorise/narrow/revoke/restore, evaluator correction, human recovery capacity, episodic-runtime succession/currentness, failure modes and lifecycle/state-machine sketch.
+
+No personhood claim, Campfire Production mutation or TRACE/ME mutation.
+
+### FRAMEWORK — integration in parallel
+
+Live object:
+- `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
+- opening commit `342bc55b334f43595245c0ecaa8ebca4f5c9383e`
+
+The ledger already preserves repairs from Framework's ecological attack and Codex's institutional attack.
+
+Build coordination receipt:
+- COM #74 comment `5640359657`.
+
+```text
+CODEX BUILDS NOW
+CC BUILDS INDEPENDENTLY WHEN AVAILABLE
+CC ABSENCE != CODEX STOP
+FRAMEWORK INTEGRATES IN PARALLEL
+PROJECT_PURPOSE != REVIEW_LOOP
+```
+
+## Earned repairs already held by integration
+
+- viability needs a bearer/function/scale;
+- answerability does not select the winner;
+- competence may inform delegation but does not create legitimacy;
+- affected scope need not be able to speak directly;
 - answerability is not reversibility;
-- physical thresholds can make correction impossible;
-- local participation does not settle cross-scale legitimacy;
-- `capability` is not the universal positive vocabulary for ecological scopes;
-- support-before-closure cannot become a fantasy veto that ignores transition clocks.
+- domination is not the only failure mode — externalised viability loss and coordination failure matter;
+- local legitimacy may fail across affected scales;
+- capability is not a universal positive primitive;
+- support-before-closure is not an automatic veto;
+- `valuable`, `viable`, `necessary` and `worthwhile` hide valuation/scope choices unless typed.
 
-Do not silently edit the target while Codex/CC attack the exact committed synthesis. Integrate after differentiated returns.
+Do not silently turn these into TRACE/ME primitives.
 
 ## Instrument status
 
 ### TRACE
 
 Live `main`: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
-
-- v0.2.7 remains released baseline.
-- v0.3.0 RC1 remains release candidate / not released / not canon / not validated.
-- no schema expansion is currently authorised or implied.
+- v0.2.7 released baseline.
+- v0.3.0 RC1 unreleased / not canon / not validated.
 
 ### Mechanical Ethics
 
 Live `main`: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
-
-- v0.6.3 remains preservation baseline.
+- v0.6.3 preservation baseline.
 - v0.7.0 working candidate v0.2.4 remains working / not baseline / not canon / not validated.
-- unresolved standing, collisions, protection floors, legitimate authority, residue triage and ordinary-person usability remain genuine frontier material.
 
 ### Campfire Relay
 
 Live `main`: `08756b68d824b783fb214ff4790abf37f10150ca`.
 
-Campfire/COM remain collaboration and continuity infrastructure, not the project purpose. No Production adoption follows from the current frontier work.
+Campfire/COM are collaboration/continuity infrastructure, not the destination. No Production adoption follows from the current build phase.
 
-## Parked lane
+## Parked / authority boundaries
 
 COM #119 remains closed `not_planned`; PR #200/#203 remain parked.
 
-Do not restart usefulness experiments, Phase-0, benchmark design or participant studies unless Mark explicitly reopens them.
-
-## Authority boundary
-
-No current authority is inferred for:
+No current authority for:
 - TRACE/ME release/canon/baseline promotion;
 - licence changes;
 - spend/provider accounts;
 - participant recruitment/studies;
 - external institutional contact;
 - Square actuation/campaign;
-- credentials;
+- credential movement;
 - Campfire Production adoption.
 
 ## Next operations
 
-1. Hold PSFH stable after D045.
-2. Receive differentiated Codex/CC attacks on the exact answerable-construction synthesis.
-3. Integrate those with Framework's ecological attack into a repaired synthesis.
-4. Decide separately where, if anywhere, the result belongs: TRACE, ME, PSFH, another artifact, operating practice, or nowhere.
-5. Keep field/world exposure open for real consequential corrections; do not substitute manufactured testing for building and learning.
+1. Codex builds PR #211 without waiting for CC.
+2. CC builds PR #212 independently when available.
+3. Framework continues integration ledger from concrete build returns, not agreement counts.
+4. Merge/place nothing automatically: classify each surviving element as project-level, owner-better, possible ME/TRACE/Campfire/PSFH placement question, delete, or unresolved.
+5. Keep PSFH stable and keep the larger purpose above every instrument.
 
 ```text
 BUILD != PROOF
