@@ -1,0 +1,51 @@
+{
+  "format": "answerable-construction-index/0.1",
+  "status": "working-project-layer-not-canon",
+  "project_question": "HOW CAN WE MAKE A BETTER FUTURE?",
+  "entry": {
+    "human": "answerable-construction/README.md",
+    "working_paper": {
+      "path": "planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md",
+      "merge_commit": "83c56892a616476ae089178fdf1ba122c328ee81"
+    }
+  },
+  "artifacts": [
+    {
+      "kind": "casebook",
+      "path": "planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md",
+      "merge_commit": "06f7e4d467374ca313a38b16b992487e1db5bcac"
+    },
+    {
+      "kind": "reader",
+      "path": "planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md",
+      "merge_commit": "dd8e3ace2336c0257a2ac5825534442812a82f2f"
+    },
+    {
+      "kind": "human_ai_architecture",
+      "path": "planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md",
+      "merge_commit": "9437680004c51d7a0d369677f100a326a2f0e9d4"
+    },
+    {
+      "kind": "reciprocal_delegation_reference",
+      "path": "reference/reciprocal_delegation/v0_2/",
+      "field_repair_merge": "afb24db827cee9d413c615aadd7af9c23bb8209e",
+      "recovery_companion_merge": "4e123f3a0e56f9162bf79fc6f34e1b7b83d35132",
+      "production": false
+    },
+    {
+      "kind": "synthesis_candidate",
+      "path": "planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md",
+      "commit": "8608eceb982a644ad0c64d23c65a3d27b4314674"
+    }
+  ],
+  "current_remainder": "Keep commitments that promise a positive future connected to the material dependencies, affected scopes, authority, clocks, externalised burdens, changing objectives and correction limits on which that promise depends, especially across handoffs where no single owner carries the whole relation.",
+  "limits": [
+    "not a decision rule",
+    "not a universal priority law",
+    "not empirical efficacy evidence",
+    "not TRACE canon",
+    "not Mechanical Ethics canon",
+    "not PSFH workflow",
+    "not Campfire Production adoption"
+  ]
+}
