@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.17 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.18 · 11 September 2026
+
+### D034
+
+11 September 2026 — The compact AI entrance now names both frameworks.
+
+The start.json entry gives short descriptions of Mechanical Ethics and TRACE, explains their relationship, and links directly to their introductions and the compact TRACE spine. Existing choices and limits remain unchanged; this is not a compulsory combined workflow.
+
+Its readable HTML copy includes the same content and links. The resource map now records the actual start.json bytes, correcting a stale entry. The homepage, artwork, styles, journey and other readings are unchanged. This follows Framework PR194. Better discovery is not demonstrated reader benefit. Previous publication 1aa0bfaba1f624519496b94d15b879a779c040da remains in Git history.
 
 ### D033
 
