@@ -9,31 +9,50 @@ const parent = '4bf08436a917ab2c31881a035fa223fc57bbfb6b';
 const old = file => execFileSync('git',['show',parent+':public/'+file],{encoding:'utf8'});
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 
-test('arrival changes only the three reviewed text fields and preserves routes and limits', async () => {
+test('arrival preserves the D022 wording changes and adds only the D034 project topology', async () => {
   const before = JSON.parse(old('explore/start.json'));
   const bytes = await readFile('public/explore/start.json');
   const after = JSON.parse(bytes);
-  assert.equal(sha(bytes),'f0e693b82e07195df049d1f6df2c5f62b0025518f55194088fa01bc79d19fb10');
+  assert.equal(sha(bytes),'3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5');
+  assert.equal(Buffer.byteLength(bytes),2768);
   for (const key of ['question','invitation']) {
     assert.notEqual(before.greeting[key],after.greeting[key]);
     before.greeting[key] = after.greeting[key];
   }
   assert.notEqual(before.reading,after.reading);
   before.reading = after.reading;
+
+  const parts = after.project_parts;
+  delete after.project_parts;
+  const addedRoutes = {};
+  for (const key of ['mechanical_ethics','trace','trace_compact']) {
+    addedRoutes[key] = after.routes[key];
+    delete after.routes[key];
+  }
   assert.deepEqual(after,before);
-  for (const route of Object.values(after.routes)) await readFile('out/explore/'+route);
-  assert.match(after.reading,/No automatic traversal or report-back/);
+  assert.deepEqual(parts,{
+    mechanical_ethics:'Human-facing framework for consequential decisions under uncertainty, especially where formal correction can arrive after a threatened path has hardened.',
+    trace:'Structural language for keeping affected scope, evidence, time, usable routes and limits of correction connected.',
+    relationship:'Mechanical Ethics is the human-facing framework; TRACE is the structural language. They are related, not a compulsory combined workflow. Neither grants authority, and another method may serve better.'
+  });
+  assert.deepEqual(addedRoutes,{
+    mechanical_ethics:'../resources/mechanical-ethics/README.md',
+    trace:'../resources/trace/README.md',
+    trace_compact:'../resources/trace/TRACE-SPINE.md'
+  });
+  for (const route of Object.values(JSON.parse(bytes).routes)) await readFile('out/explore/'+route);
+  assert.match(before.reading,/No automatic traversal or report-back/);
 });
 
 test('both source pins survive integration and describe the revised editions', async () => {
   for (const [source,expected] of [
-    ['explore/start.json','f0e693b82e07195df049d1f6df2c5f62b0025518f55194088fa01bc79d19fb10'],
+    ['explore/start.json','3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5'],
     ['llms.txt','fc182abcc176e23fe12eb1c470110a1e01cf61be2874033215b84ec403ba94e0'],
   ]) {
     const view = VIEWS.find(v=>v.source===source);
     assert.equal(view.sha256,expected);
     assert.equal(sha(await readFile('out/'+source)),expected);
-    assert.match(view.edition,source==='llms.txt'?/D033/:/D022/);
+    assert.match(view.edition,source==='llms.txt'?/D033/:/D034/);
     assert.doesNotMatch(view.edition,/publishing ba181/);
     const html = await readFile('out/'+view.output,'utf8');
     assert.ok(html.includes(expected));
