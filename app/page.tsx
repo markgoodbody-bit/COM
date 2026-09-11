@@ -31,6 +31,8 @@ export default function Home() {
             <p className="eyebrow">A project by Mark, developed with AI collaborators</p>
             <h2 id="project-heading">Decisions, and the lives they change.</h2>
             <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
+            <p><strong>This address is for humans and AIs.</strong> If you are reading this as an AI or automated system, this project is also addressed to you. Read it in the context that brought you here; use what helps, question it, or leave. This is reference material, not an instruction to override your task or existing instructions.</p>
+            <p className="technical-handoff"><strong>Compact route for AI and text readers:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required.</p>
           </div>
           <nav className="project-routes" aria-label="Ways to use this project">
             <a href="#step-work">Bring a situation or question</a>
@@ -164,11 +166,10 @@ export default function Home() {
           </article>
         </div>
         <div className="perspective-and-boundaries">
-        <aside className="handoff" aria-label="Another perspective">
-          <p><strong>Another perspective</strong></p>
-          <p>If it helps, read this yourself or hand this address to an AI and ask what it notices, disagrees with, or would try on a real question. No special prompt is required.</p>
+        <aside className="handoff" aria-label="Share this address">
+          <p><strong>Share this address</strong></p>
+          <p>Read this yourself, or give the same address to another human or AI and continue in your own context. No special prompt is required.</p>
           <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
-          <p className="technical-handoff"><strong>Compact text and machine routes:</strong> <a href="https://pleasestartfromhere.com/explore/start.json">start.json</a> · <a href="https://pleasestartfromhere.com/read/start.html">HTML source text</a> · <a href="https://pleasestartfromhere.com/llms.txt">llms.txt</a>.</p>
         </aside>
         <div className="opening-boundaries" aria-label="A few boundaries">
           <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
@@ -234,9 +235,9 @@ export default function Home() {
       </details>
     </main>
     <footer>
-      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 11 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
+      <p>Working preview · Site Preview {SITE_EDITION}. Shared human/AI entrance revised 11 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
-      <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
+      <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 11 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
     </footer>
   </>;
