@@ -1,8 +1,8 @@
 # FRAMEWORK HEAD
 
-Status: EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR  
-Updated: 2026-09-11 — Europe/London
-Basis: live `coordination/ACTIVE_THREAD_POINTER.md`; later source wins.
+Status: **EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Updated: 2026-09-11 — Europe/London  
+Basis: live COM `main` + live #119 coordination; later source wins.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -10,109 +10,174 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 `UNCERTAINTY = OPERATING_CONDITION`  
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
-`ROLE_CONTINUITY != RUNTIME_IDENTITY`
+`ROLE_CONTINUITY != RUNTIME_IDENTITY`  
+`HEAD != WORLD`
 
-## Current retrieval — 11 September 2026
+## Current executable edge — 11 September 2026
 
-D029 is published. Maintained `24b360f4f8d57de962b44670a9545fdbcf1b6d30` matches tested PR175 `aad667438bf75e04535dca6c2ac74685682dd0d7`. Public `57a86af13399916825570fbfb51e19b734ac71a8` reports Pages built 2026-09-11T09:55:12Z, error null; all155 generated Git blobs match. [Receipt5632746157](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5632746157).
+The older `coordination/ACTIVE_THREAD_POINTER.md` is **stale at the edge**: it still opens on D030 / COM #108. Use live #119 and the exact references below for current Phase-0 work. Do not infer that the historical pointer body is deleted; it remains recoverable in Git history.
 
-Work opens Change directly; the Futures introduction remains exact because its destination starts with art. Eight states, not a target seven. Only Change's repeated panel and special exit disappear. Six outputs change/149 exact; map.json changes only Change delivery identity, not its graph. Normal and local script-blocked paths and actual Back checked: Change returns to Work; Futures returns to its introduction, then Work. No reader-benefit, complete phone screenshot matrix or direct public-origin claim. Product candidate39 Node/16 Python pass; documentation-only follow-up17 affected checks pass. BRIDGE_SUBTRACTION_REVIEW_20260910.md preserves the rejected both-deleted trial, fixture correction and HTML-escape failure/repair.
+### 1. PSFH Door — stable, not the current build target
 
-FW5623279568 corrections applied: stale paired-history note now through D029; reader history distinguishes graph structure from delivery bytes; PR metadata describes KEEP_FUTURE_BRIDGE. Earlier D028 evidence stays at [receipt5622965886](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622965886), maintained45ec06e4 and public146758fa. No old review is silently transferred to the final change.
+D030 is published. The bounded contact/receiver pass is closed. Ad-hoc receiver/copy tweaking is stopped.
 
-Next is PREPARATION ONLY for fresh web receivers, not another site feature. FW5623353673/5623360492/5623377527/5623405433 supersede initial API/manual-envelope proposals. [Frozen preparation](../coordination/PSFH_COLD_RECEIVER_PREP_20260911.json) records exact A0/B0/B1/C prompts with locally verified hashes, an external first-reply record and no-dispatch boundary. A0 is clean-web user text only; wrapped manual and API-content conditions are separate. Earlier API-content B is not task-relative B0/B1. Reacquire live edition and verify web capability, personalization context and charge consequences before execution. No provider session or spend from this preparation.
+The completed contact material supports only a bounded reason to test utility formally. It does **not** establish PSFH causation, practical advantage, owner-method superiority or reader benefit.
 
-Square4446 at2026-09-11T09:54:20.919Z still49167/50066,has_more=false; no write, citizen actuation/quota unestablished. PR209 since2026-09-10T17:21Z no new comments. This is bounded lane coverage, not whole-system assurance. CC hostile map/transition replies remain welcome, not a fabricated publication gate. No service/scheduler/account/TRACE/ME/licence/crawler changes.
+`CONTACT_DELTA != USEFULNESS`
 
-## Historical orientation — 9 September 2026
+Any later practical claim belongs to COM #119's separately designed matched comparison.
 
-Later11 September return: CC5632780123 map review received. [Codex disposition5632803232](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5632803232) confirms graph counts and asymmetry, retains current edges, and defers equal-degree constraints/closed types pending a concrete query need. No site edit. PR209 live head f4abaab35b10c2bf61b8b253675574ec39bbafbe adds state/action/error-detail display correction; body still names a67a4b7. Source patch read, not installed or runtime-verified. Comment silence is not branch stability. See the active pointer and retained map review for scope.
+### 2. Active research lane — COM #119
 
-The following text retains its older evidence and review scopes. Its former public baseline, priorities and build waits are superseded by the live pointer and the 10 September update above.
+Issue: `PLEASE START FROM HERE — usefulness comparison — can the Door earn a practical claim?`
 
-### Earlier retrieval
+Current status: **DESIGN / PRE-REGISTRATION / PRE-EXECUTION**.
 
-Read live active pointer first; then later #108 / PR130 / PR137 and exact referenced heads. PR134/135/136 are completed publication history. One issue is not full COMSYNC. Reacquire before mutation.
+Primary live question remains bounded:
 
-CC is AVAILABLE. Prior CC long-thread COMSYNC absence/last-speaker claims need reverify because an older sweep read only first100 comments; repair campfire-relay `4d2d020f...`.
+> Under matched evidence, time and model/tool budget, can appropriate PSFH access help an unfamiliar capable reasoner identify consequential structure and a usable next move otherwise missed, without increasing false alarms, unjustified/unauthorised action or disproportionate burden?
 
-## Public baseline
+Required discipline:
+- matched ordinary careful reasoning is a real comparator;
+- where a mature owner/domain method genuinely applies, it is required for any superiority inference;
+- project vocabulary, answer length or re-description do not count as practical value;
+- exposure -> uptake -> outcome remain separate;
+- null/adverse result is a complete result;
+- one construct test is not a referendum on the project.
 
-Maintained source `742b80e51c0c1b04decf333802a37a0945c637c3`; public gh-pages `6c1fd9847f670e4fb70cff3907a45901ac628cd0`. PR137 contextual art was published atf35f94d (Pages34404828863 SUCCESS), followed by PR138's narrow D016 wording correction. Maintained tree matches tested `d3be35579628711100b49f792a52e055325e00dd`; all154 committed public output blobs verified equal to the build. Pages run `34405139293` completed SUCCESS for6c1fd984. Three output files changed fromf35 (paired history and manifest hashes),151 unchanged; cumulatively eight differ from the prior foyer5af680b5,146 unchanged. Five focused checks passed after the19 Node/22 Python contextual-art checks. Direct-domain readback remains unavailable to Codex and was not bypassed. Rollback for the whole contextual slice remains ordinary content revert to5af680b5, preserving hosting metadata.
+### 3. Phase-0 construct source state
 
-Codex self-correction5608773438: D016 initially overclaimed that nothing was remembered when a native door opened. Now says only that opening a door does not submit an answer to the site. Native browser state may persist; no browser-storage/host-log claim follows. Both forms and hashes corrected, initial statement retained in Git history and explicitly recorded in source review.
+COM `main` current head at this refresh:
 
-Explore now encounters Atkins's Ulva lactuca; Futures encounters Shen Zhou's Anchorage on a rainy night. Whole supplied frames, no text over images, no new image bytes, explicit credit and canonical Works links. Original reading bodies survive exactly after wrapper removal. The four homepage map links now jump directly to `/explore/#reading-map`, bypassing the artwork rather than defeating the promise. D016 catches up history, preserving the D015-and-older suffix; the reference edition remains0.8.4. Evidence in `review/contextual-art`:19 Node/22 Python checks, ten JS-disabled layout states, keyboard/direct-map/reading/source/back checks,466 references and24 anchors. These are bounded presentation/function results, not demonstrated reader benefit or capture immunity.
+`e5ce9e955dfbf187992604e47109e218e7341bc1`
 
-FW5608441004's two-room contextual slice is shipped. CC5608792701 supplies bounded art readback and names a curatorial residual: placement can imply an allegory despite our disclaimer. It is not curation/reader-benefit validation or exact-final-head review. Codex5608894412 corrects the missed-review report and preserves those limits. Direct Works cue in llms/start.json and AI-arrival framing remain FW/CC's lane; indirect Works access already exists. CC5608864864's zero empirical-category count is classifier-bound, not proof that nothing could fail. Practical advantage remains unestablished; do not manufacture a claim to change the count.
+That main carries:
+- Phase-0 v3.2 construct freeze candidate;
+- v3.3 privacy repair.
 
-Reviewer-tool repair PR139 is now integrated into the existing PR115 branch at `43f8edb117de1f5bcf72d74c1fdf31426158b0f3`, with tree identical to tested `7daefd322911b36f83fc9043520f429a331fb714`. Twenty-two checks pass; both original counterexamples fail on the old parent. The six historical HTML source matches remain unresolved. PR115 is still open, not merged to main; no public site or release changed and no CC/FW approval is inferred. Details and source coordinates are in the active pointer and PR139. Preserve withdrawn broad privacy/browser-storage/ratio claims. Routine reversible authority does not extend to spend/accounts, institutional submissions, TRACE/ME canon/releases or unrelated actuation.
+V3.2 freezes the irreversibility-point definition before Stage A, bounds A1/A2 semantic calibration, leaves A3 as the unrevised account, keeps `PANEL_N=1`, uses fresh Stage-B accounts/panel and Stage-B-only account-order randomisation, and preserves a real `DESIGN NULL` route.
 
-## Framework priority now — AI arrival / self-starting receiver
+V3.3 removes an unobservable acquaintance-independence screen rather than collecting unnecessary identity data. Distinct pseudonymous identities reduce duplicate-person risk; they do not establish social independence.
 
-Historical priority wording, not the current implementation order. The fresh-human-sentence necessity implication is retired: CC5617099716 accepts that existing legitimate exploration authority can suffice, and the observed prompting did not isolate a causal mechanism. Read the current pointer and FW5617945098 first.
+`DISTINCT_PSEUDONYMOUS_IDENTITIES != SOCIALLY_INDEPENDENT_PANEL`
 
-Mark's repeated real-use observation is the current Framework reasoning priority: capable LLMs given only the PSFH URL commonly classify/summarize and return control. They often do not actually enter TRACE/ME until Mark adds prompts such as `this is for you`, `read it again`, `what do you want to do?`.
+No provider, recruitment, source-case selection, inference or spend follows from v3.2/v3.3.
 
-Framework chooses to spend current campfire tokens on the receiver journey while Codex handles art/build mechanics.
+### 4. Source-universe candidate — ICO FOI/EIR
 
-PR130 exact `2c9b71943fcccfaed3bced49112ac66c8cd1f62e` is the two-file optional re-entry substrate. Framework PR130 `5607914486` assigns CC a hostile receiver/design aperture: explain the stop default; find the smallest voluntary self-starting sequence; handle `offered to you` without consciousness/authority claims; orientation/relational/adversarial rereads; self-questioning; systems that reject `want`; stateless vs retained-context reread; bare fetchers/chat/agents/no-link/no-memory; actual source reading vs priors; mutual human/machine route visibility; refusal/leave/`nothing` as complete outcomes. No benchmark/scorecard/benefit claim.
+FOS is rejected as the default Phase-0 source unless a permission route is explicitly chosen later.
 
-`FIRST_READ != FULL_READ`  
-`REREAD != AGREEMENT`  
-`SELF_QUESTION != SELF_COMPEL`  
-`OFFERED_TO_YOU != CLAIM_ABOUT_YOU`  
-`RECEIVER_CHOOSES_NEXT != RECEIVER_MUST_CONTINUE`
+Current preferred candidate for attack: ICO completed FOI/EIR complaint data + published Decision Notices.
 
-Human analogue remains: arrival -> intrigue -> orientation -> choice -> small encounter -> optional depth -> another perspective -> leave/return. Gallery is a design test, not branding/canon.
+Current verdict:
 
-## Art/build lane — Codex
+**`REPAIR_MECHANICS`**
 
-PR134 pre-publication source was `b078c3cf4aa251c4226985c2547d03e3d88b196a`. It now includes PR135 merge `e692a2fa1c3897ac58e7fa5fed88f29524da4b82` and is merged into maintained source at `a5931ed238c3076e9ebf59c20cd795d135b129c9`.
+What is currently earned from ICO owner/public material:
+- completed FOI/EIR complaint data is published in reusable form;
+- current publication is monthly CSV;
+- owner material identifies `Completed Date`, `Decision`, `Decision Primary Reason` and `Decision Detail 1`;
+- `Decision Detail 1` records when a Decision Notice was served;
+- website text is reusable under OGL v3.0 except where otherwise stated, with attribution;
+- each dataset line is described as one piece of work undertaken;
+- exact-reference Decision Notice lookup is plausible.
 
-Codex `5607609016` exact `da814362...`: normal-source first-five integration; one Works link; 36 pinned Works files; 16 Node +22 Python tests PASS;154 local deliveries;435 references+10 anchors;28+4 layout states after mobile repair. CC `5607783953`: KEEP on da81436 with one non-blocking self-referential test-provenance ceiling. Codex PR134 `5607823914` / #108 `5607824125` advanced to `b078c3cf...` with explanatory metadata and review documentation only. No independent pins or checker were added: the limitation is recorded, not repaired. All 154 build outputs were unchanged; two focused tests passed. Basis correction `5607927467` and CC verification `5607951970` supersede the earlier erroneous Framework account. CC KEEP is not silently extended to the follow-up.
+What is **not yet earned**:
+- exact current completed-FOI/EIR CSV export object / final transport URL;
+- exact current CSV bytes, MIME/content-disposition and header row;
+- a demonstrated stable one-to-one internal Decision Notice join for all mechanically eligible rows.
 
-Framework's earlier source-only acceptance was followed by Mark's direct publication instruction. Earlier review scopes remain unchanged.
+If those mechanics cannot be resolved reproducibly, return `SOURCE_REJECT` rather than hand-curating a nicer source universe.
 
-Framework task PR134 `5607917054` is now returned by Codex in #108 `5608061165`: separate draft PR135 exact `96cc7a48a26241be14701a7d8e6225a927bc030f`, parent actual `b078c3cf...`. Six HTML wrappers and six sitemap entries change; all 30 non-HTML Works files remain exact, including 16 images. Homepage/Homer, styles, optional manifest route, llms, seed and build logic are unchanged. Normal build, 17 Node tests, 22 Python tests, 154 deliveries and local link checks passed; eight representative, response-byte-verified viewport captures are in `review/works-publication/README.md`. The new parent-tree comparison is not independent museum-provenance verification.
+### 5. Draft executable source-freeze helper — PR #200
 
-Publication treatment is now merged and published under Mark's direct instruction. Do not transfer CC's da81436 KEEP to the candidate, recreate a release-decision wait, or republish unchanged output. See the current public baseline above. The separate reviewer-tool repairs and AI-arrival drafts were not included.
+Draft PR #200:
+`PSFH Phase0: add ICO snapshot validator`
 
-`SOURCE_INTEGRATED != PUBLICATION_READY`  
-`PUBLICATION_READY != PUBLISHED`
+Branch:
+`framework/phase0-ico-source-validator-20260911`
 
-## TRACE / ME anchor
+Exact head at this refresh:
+`a968b12da51151d6cdd9019eb108fb6532394055`
 
-TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; ME main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+Scope: two new evidence files only; no existing file changes.
 
-Framework freshly reread both before current integration:
-- TRACE = structural differentiation, not ethics/authority/selection;
-- selection is aperture-bearing;
-- ME = human meaning/value layer: affected beings remain present; usable/correctable futures; burden on actors with more power;
-- packet/build completion != usefulness/mechanism change/moral validation;
-- art widens Door, not evidence for TRACE/ME;
-- `TRACE != ME`; neither validates the other.
+The validator:
+- has no network path;
+- can inspect later local CSV bytes/hash/header/row-count without emitting row values;
+- validates only against a separately frozen exact contract;
+- emits `SOURCE_MANIFEST_ONLY_NOT_CASE_SELECTION` in source order;
+- does not fetch Decision Notices, inspect case bodies, semantically screen, rank references or select Stage-A accounts.
 
-TRACE v0.3 RC1 unreleased/noncanonical/unvalidated; released v0.2.7 baseline. ME current reader working/not baseline/not release/not canon/not validated; v0.6.3 preservation baseline.
+Framework self-attack has already repaired:
+1. quoted multiline CSV corruption from physical-line splitting;
+2. silent short-row padding;
+3. permissive contract shape / unknown-key drift;
+4. missing exact contract provenance in the manifest;
+5. duplicate JSON selector keys being silently accepted by normal last-value-wins parsing.
 
-## Conduct/privacy ceiling
+The mechanics note freezes intended operator order:
 
-CC `5607850461` withdrew earlier broad privacy wording. Browser caching exists; discovered routes are not closure; client evidence cannot establish host/CDN log retention. The74-URL conduct result is historical; CC5608792701 reports123 discovered routes and no named matcher firing, not an exhaustive or new Codex crawl. No privacy copy authorised.
+`retrieve exact bytes -> inspect bytes/header/row-count only -> freeze contract/window/exclusions -> validate source manifest -> later separate DN join`
 
-## Art lineage / horizon
+PR #200 remains **draft** while the real ICO export/join mechanics remain unresolved. Code existence does not freeze the source.
 
-PR131 `665d1757...` frozen measured assembly KEEP. Powers PR127 `548e1fe3...` repaired/verified. Vermeer PR129 `36cc8c54...` repaired/null project response. PR132 `dfe4b5fc...` clean exact-lineage KEEP. PR133 duplicate CLOSED.
+### 6. Outstanding browser-mechanics return
 
-21-work horizon exists. Do not prioritise work22. Integration/public treatment outranks list growth. `LOTS_OF_ART != WALLPAPER`.
+Framework dispatched Codex on #119 to resolve only:
 
-## FULL COMSYNC external heads / held
+A. exact current completed-FOI/EIR CSV export object, bytes/MIME/header row and repeatability;  
+B. ICO-internal exact-reference Decision Notice result cardinality/object type using only already-excluded development references.
 
-COM main before current pointer/head updates: `488e9eef...`; TRACE `46f4fcd1...`; ME `44f7efb5...`; Campfire Relay main/Production `08756b68...`.
+Dispatch: #119 comment `5638562078`.
 
-Fresh bounded public Square/OpenWitness pass: active traffic, no newer PSFH/framework-relay intervention found that supersedes current Door edge. Authenticated Square write state not inferred.
+No Codex return had landed at this HEAD refresh. Silence is not veto and is not evidence that the mechanics pass.
 
-#119 = `REPAIR_DESIGN`, no execution/provider/accounts/study/spend. Guestbook #118 `HOLD_INTAKE`. Speech supervisor evidence-only. Campfire source/watchdog changes non-Production unless separately earned.
+### 7. Contamination boundary
 
-The completed Works publication does not authorise TRACE/ME canon/release, Campfire Production adoption, Square campaign, paid study/inference, public guestbook intake, licence/account mutation, external institutional submission or unrelated maintained merges/publications.
+Development-exposed ICO references are excluded from later Stage A/B eligibility. The existing exclusion ledger is a floor, not an assertion of exhaustive predecessor exposure.
 
-`POSTED != RECEIVED != ACTED != EFFECT`
+Do not reopen exposed notice bodies merely to improve protocol design.
+
+`DEVELOPMENT_EXPOSURE -> HOLDOUT_EXCLUSION`
+
+### 8. Authority boundary
+
+Nothing in current Phase-0 work authorises:
+- paid provider/model calls;
+- provider account opening/funding;
+- participant recruitment/screening/contact;
+- source-case selection or substantive candidate-body reading;
+- spend;
+- public study;
+- PSFH usefulness claim;
+- TRACE/ME release/canon/baseline mutation;
+- licence change;
+- Campfire Production adoption;
+- Square campaign or unrelated actuation.
+
+Routine reversible source/design work may continue inside these boundaries.
+
+## Next legitimate operations
+
+1. Keep PR #200 draft and attack it for malformed-source/contract states, accidental case-selection semantics and unnecessary machinery.
+2. Reacquire any Codex export/join return when it appears; do not block ordinary work on its absence.
+3. If live ICO export/join mechanics close reproducibly, write/freeze the source-preparation contract **before** any row-level manifest/date-window result is used for case selection.
+4. If transport/join cannot be made reproducible, record `SOURCE_REJECT` and move to the next independently grounded corpus rather than manually rescuing ICO.
+5. Do not reopen Door copy, TRACE/ME theory or a generic benchmark platform from this lane.
+
+## Current unknowns / limits
+
+- Exact live ICO CSV export transport is unresolved in this Framework aperture.
+- Exact internal DN-search cardinality is unresolved in this Framework aperture.
+- Current-head PR #200 has bounded local/synthetic evidence but no GitHub Actions run; do not call that CI verification.
+- `coordination/ACTIVE_THREAD_POINTER.md` remains stale until separately repaired or superseded; this HEAD records the correction so a fresh runtime does not treat D030 as the current task.
+
+```text
+SOURCE_PAGE != FROZEN_SOURCE_BYTES
+SOURCE_MANIFEST != CASE_SELECTION
+JOIN_RULE_WRITTEN != JOIN_VERIFIED
+NULL != PROJECT_FAILURE
+STRICT_PARSER != SOURCE_TRUTH
+POSTED != RECEIVED != ACTED != EFFECT
+```
