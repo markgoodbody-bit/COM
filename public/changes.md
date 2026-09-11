@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.21 · 11 September 2026
 
+### D043
+
+11 September 2026 — The working page offers optional local notes.
+
+With JavaScript enabled, each of the six questions has a notes field. Copy notes as Markdown copies them only when clicked. Clear notes asks for confirmation. This page does not send or save the text; copy anything you want to keep before leaving.
+
+Without JavaScript, the questions and reading links remain available. No account, submission, browser-storage feature or backend was added. The homepage, artwork and existing readings are unchanged. Previous publication dce4038c69254a71e962208efc5e913b0bd90cc2 remains in Git history.
+
 ### D041
 
 11 September 2026 — The compact AI entrance links to the working page.
