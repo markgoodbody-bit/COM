@@ -42,9 +42,9 @@ export async function applyHouseStyle(root) {
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
   const mapPath = path.join(root, 'explore/map.json');
   const map = JSON.parse(await readFile(mapPath));
-  // D039 adds a human/text working surface. Keep the explicit resource map honest
-  // without making the new route part of the ten-node graph or required traversal.
-  for (const resourcePath of ['work.html', 'work.md']) {
+  // D039/D043 add a working surface plus a local-only enhancement. Keep the
+  // explicit resource map honest without making either part of the ten-node graph.
+  for (const resourcePath of ['work.html', 'work.md', 'work.js']) {
     if (!map.resources.some(item => item.path === resourcePath)) {
       map.resources.push({ path: resourcePath, bytes: 0, sha256: '' });
     }
