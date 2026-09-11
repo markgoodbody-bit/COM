@@ -165,23 +165,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 11830,
-      "sha256": "c4efc6d6e2c094b50113fd055785ef2bd189bae75e758feb8f8f47d77864d911"
+      "bytes": 11884,
+      "sha256": "3838c2e263a4b2630ef5a4621bfdf9fd689a01a9ce38e2006a5552d397c7aa4d"
     },
     {
       "path": "index.md",
-      "bytes": 2151,
-      "sha256": "2255724667780f3ca618880b5d7c4bf3af3287b895be9dccad50621b0d05d3e4"
+      "bytes": 2186,
+      "sha256": "9cbbce9710ddcb0d17167183b6766122948e60e8e587f49c123cd9a1d19636af"
     },
     {
       "path": "index.txt",
-      "bytes": 2151,
-      "sha256": "2255724667780f3ca618880b5d7c4bf3af3287b895be9dccad50621b0d05d3e4"
+      "bytes": 2186,
+      "sha256": "9cbbce9710ddcb0d17167183b6766122948e60e8e587f49c123cd9a1d19636af"
     },
     {
       "path": "llms.txt",
-      "bytes": 3535,
-      "sha256": "08dd853335f48592a7f4de442677a9b25448613f63593722b1f507b1ffd704a3"
+      "bytes": 3686,
+      "sha256": "cecd4b1ed2631e2360d5cf753aa5826cf17d4ae01556fd8af4940005db8d1a35"
     },
     {
       "path": "nodes/aperture.html",
@@ -370,8 +370,18 @@
     },
     {
       "path": "start.json",
-      "bytes": 2768,
-      "sha256": "3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5"
+      "bytes": 2809,
+      "sha256": "e81ccb2c8f8c5dda567990b7f4487764db007c61174d4f7bec89d3e181eea2eb"
+    },
+    {
+      "path": "work.html",
+      "bytes": 3658,
+      "sha256": "39f94bf80304e00392cbd46e313efc239f1e281a61c11546d8d077522e55a8cb"
+    },
+    {
+      "path": "work.md",
+      "bytes": 2370,
+      "sha256": "8e60f65d92f41c3a6e902a61e6af1949cee4b1642aad4d7102911d9eae3155ea"
     },
     {
       "path": "worked-revision.html",
