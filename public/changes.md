@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.15 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.16 · 11 September 2026
+
+### D032
+
+11 September 2026 — One less gate before choosing a way in.
+
+After the shared project introduction, the optional journey now opens directly on What brought you here? The separate Would you like to continue? screen, its guiding question and Continue link are removed. The existing orientation choices become the default welcome state; Choose another way in returns there.
+
+The painting, shared human/AI invitation, seven project routes, story, readings, artwork and machine payloads remain unchanged. No new script or stylesheet is needed. Older step-orientation fragments no longer identify a separate panel; the default welcome remains the fallback. This is a navigation subtraction, not measured reader benefit.
+
+This follows Framework source PR190, based on completed D031. Previous publication fcd217c9162af1ba79070ad1c128020296f708b2 remains in Git history.
 
 ### D031
 

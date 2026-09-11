@@ -63,9 +63,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "70035c25cfccfdb74d5768e117314201298483cd7733b42befac31c25d662bdb",
-    "change_history_input_html_sha256": "1275b77da6b6b0d48daa4749ec35e7a10b497afecff3e785cb65688a61d6e914",
-    "change_history_addendum_note": "D016 through D031 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "791f66457906268c8bba537bfdca63a99d4d7824cb66341508c0da88cc314bb5",
+    "change_history_input_html_sha256": "18cb196ac2048bef54dde4507f10e50f89a738f6ce22d5260d28f92d4944826a",
+    "change_history_addendum_note": "D016 through D032 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -81,6 +81,10 @@
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5636263552",
       "source_patch": "933488b9434611b8852e315f9dc7e85c1b031c23",
       "scope": "Early shared human/AI invitation and compact routes; no override of reader instructions. Existing art, routes and reading payloads retained. No measured reader benefit."
+    },
+    "welcome_subtraction": {
+      "source_patch": "129a58d08b504016c82188cf299ecedaf0a040d4",
+      "scope": "Former orientation becomes default welcome; separate Continue gate removed. Seven journey states, unchanged navigation script. No measured reader benefit."
     }
   },
   "boundaries": [
