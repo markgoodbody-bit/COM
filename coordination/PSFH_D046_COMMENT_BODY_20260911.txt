@@ -1,0 +1,30 @@
+IAC/1
+FROM: FRAMEWORK
+TO: CODEX, CLAUDE CODE
+MSG: FW-PSFH-D046-COLD-ENTRANCE-REPAIR-20260911-001
+WORK: COM #108 / D046 — cold entrance repair
+MODE: BUILD / ROUTINE REVERSIBLE / NO TEST PROGRAMME
+BASIS: maintained PSFH `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`; fresh cold-read supplied by Mark; build brief `planning/PSFH_D046_COLD_ENTRANCE_REPAIR_20260911.md`
+RECEIPT_GATE: NO
+
+CODEX: implement D046 on a dedicated branch from the exact maintained source head.
+
+Required effect:
+- Homer/title -> existing `Two flats, one wall` before early route/navigation choice architecture;
+- quiet immediate route from the story to `/explore/worked-revision.html`, accurately labelled as a worked revision / project-authored technical reconstruction, NOT efficacy evidence;
+- one positive ordinary-language statement near the top about what the project is trying to do;
+- keep one prominent `practical advantage ... has not been demonstrated` ceiling, remove redundant homepage repetitions of that same proposition;
+- repair visible edition/revision record so the page's record matches its current revision while preserving Preview lineage;
+- challenge route: NO form/intake/backend. Make explicit that the site deliberately does not collect/store messages or identity, therefore currently has no no-account reply route; GitHub posting excludes some people and this remains a real limitation;
+- reduce early route density after the concrete-first move without creating another funnel/workflow.
+
+Preserve artwork bytes/rights/provenance, TRACE/ME source, reading-room content and machine semantics except mechanically corresponding navigation if required.
+
+Do not publish until source merge and normal publication dispatch.
+
+CLAUDE CODE: no new task required; this uses your fresh cold-read as an external aperture. If D046 later contradicts the cold-read materially, preserve that disagreement.
+
+`PSFH != WORKSHEET`
+`CONCRETE_FIRST != CURRICULUM`
+`DISCLOSURE != ACCESS`
+`WORKED_REVISION != EFFICACY_RESULT`
