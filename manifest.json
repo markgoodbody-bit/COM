@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.4",
+  "site_edition": "0.8.5",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
@@ -68,9 +68,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "b1159031d3e8913204f3c259495df01d153e04d5cff440f05e56d1db1058072a",
-    "change_history_input_html_sha256": "d2b08b5f036e514527a2379c6475b38e12019fda4eb1e7ae58599655383cbf68",
-    "change_history_addendum_note": "D016 through D038 and D045 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "1e8a14126c44bab5248c348a1b2276520cc3f92eedb37129d191c087cea0c8fe",
+    "change_history_input_html_sha256": "1732056122562586d7b9fd8cdd07b8d6f22e9eb5db5f006a9418814c581a3afd",
+    "change_history_addendum_note": "D016 through D038 and D045-D046 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -200,7 +200,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "fccadb928ec003f2699ecdfc4a31a203cbf1f149138283aa30f12266659f353c",
+    "change_history_html_sha256": "9910cf9808dcbe35736f11e22974c1dce7a83784fec182b8e36bd62569518b52",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
