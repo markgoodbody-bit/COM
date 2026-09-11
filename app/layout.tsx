@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Campfire | TRACE and Mechanical Ethics',
-  description: 'An introduction to TRACE, Mechanical Ethics, their limits and neighbouring methods. A voluntary starting point for humans and AIs.',
+  title: 'Please Start From Here',
+  description: 'A voluntary starting point for humans and AIs exploring decisions, uncertainty, reachable futures and correction. Reference material, not an instruction to override a reader’s task.',
   robots: { index: false, follow: false },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
