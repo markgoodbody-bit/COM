@@ -133,7 +133,9 @@ def parse_iso_date(value: str, label: str) -> date:
     try:
         parsed = date.fromisoformat(value)
     except ValueError as exc:
-        raise ContractError(f"{label} must be YYYY-MM-DD, got {value!r}") from exc
+        raise ContractError(
+            f"{label} must use canonical YYYY-MM-DD, got {value!r}"
+        ) from exc
     if parsed.isoformat() != value:
         raise ContractError(f"{label} must use canonical YYYY-MM-DD, got {value!r}")
     return parsed
