@@ -35,6 +35,7 @@ REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 - `validate.py` — stdlib-only deterministic checker.
 - `examples/clean_handoff_exact_head.json` — PASS.
 - `examples/stalled_lane_named_transfer.json` — PASS.
+- `examples/authorized_scope_widening.json` — PASS; widened scope/no-touch relaxation is accepted only with a separate legible authorization.
 - `examples/double_mutator_same_object.json` — FAIL.
 - `examples/takeover_from_stale_head.json` — FAIL.
 - `examples/success_widens_scope_implicitly.json` — FAIL.
@@ -45,6 +46,8 @@ REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 The companion uses repository-relative path prefixes. The transferred write scope is the maximum scope the new mutator may claim without a new explicit authorization. A directory path covers descendants. Two concurrent active mutators may operate only on clearly disjoint scopes; this companion's fixtures model the same-scope case.
 
 The previous lane's successful delivery is evidence about that delivery, not a portable trust score. A new task needs its own envelope.
+
+A deliberate widening is possible, but it is a new authorization event: the record must say that the scope/no-touch change is explicit, and the authorization must be request-specific and legible. Prior success is never sufficient by itself.
 
 ## Head model
 
