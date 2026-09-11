@@ -28,12 +28,12 @@ test('arrival changes only the three reviewed text fields and preserves routes a
 test('both source pins survive integration and describe the revised editions', async () => {
   for (const [source,expected] of [
     ['explore/start.json','f0e693b82e07195df049d1f6df2c5f62b0025518f55194088fa01bc79d19fb10'],
-    ['llms.txt','b7afcebea95ccb32fe1fc072f9199bc29ade7a482beeeb8b2eb1502b46de3fcd'],
+    ['llms.txt','fc182abcc176e23fe12eb1c470110a1e01cf61be2874033215b84ec403ba94e0'],
   ]) {
     const view = VIEWS.find(v=>v.source===source);
     assert.equal(view.sha256,expected);
     assert.equal(sha(await readFile('out/'+source)),expected);
-    assert.match(view.edition,/D022/);
+    assert.match(view.edition,source==='llms.txt'?/D033/:/D022/);
     assert.doesNotMatch(view.edition,/publishing ba181/);
     const html = await readFile('out/'+view.output,'utf8');
     assert.ok(html.includes(expected));
@@ -55,12 +55,18 @@ test('indexes retain existing links, expose summaries first and route six prompt
     }
   }
   const root = await readFile('out/llms.txt','utf8');
-  assert.equal(Buffer.byteLength(root),5383);
-  assert.equal(root.split('## Start')[0].trim().split(/\s+/).length,305);
+  assert.equal(Buffer.byteLength(root),5416);
+  assert.equal(root.split('## Start')[0].trim().split(/\s+/).length,306);
   const home = await readFile('out/index.html','utf8');
   const cell = home.split('id="small-loop"')[1].split('</section>')[0];
   for (const label of ['Notice','Choose','Decide','Responsibility','Repercussions','Check and correct']) {
     assert.ok(cell.includes('<strong>'+label+'.</strong>'));
   }
   assert.equal((cell.match(/<li>/g)||[]).length,6);
+});
+
+test('shared root keeps compatibility without adding a destination', async()=>{
+ const m=JSON.parse(await readFile('out/manifest.json'));
+ assert.equal(m.routes.shared_reading,'/'); assert.equal(m.routes.human_reading,'/');
+ assert.match(await readFile('out/llms.txt','utf8'),/\[Shared web reading\]\(https:\/\/pleasestartfromhere.com\/\)/);
 });
