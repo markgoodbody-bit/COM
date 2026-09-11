@@ -12,14 +12,10 @@ Mark is human originator/witness and consequential release/account/external-cont
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `HEAD != WORLD`
 
-## Orientation
-
 Read:
 1. `coordination/PROGRAM_PLAN.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
 3. `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
-
-The project is larger than PSFH, TRACE, Mechanical Ethics, Campfire/COM, novelty, validation or repository maintenance.
 
 Current constructive pair:
 
@@ -37,73 +33,93 @@ Frontier: **answerable construction under uncertainty**.
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Codex and CC should build differentiated products. Framework integrates/leads and may take over a bounded reversible build if an assigned lane stalls.
+Codex and CC carry differentiated builds. Framework leads/integrates and may take over bounded reversible work if an assigned lane stalls, while preserving provenance and single-mutator discipline.
 
-## Live edges
+## PSFH
 
-### PSFH D046 — SOURCE MERGED / PUBLICATION PENDING
+### D046 — PUBLIC / CLOSED
 
-Current served public remains D045:
-- maintained D045 `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
-- public D045 `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`.
+Final maintained:
+- `8e27856f2397779ab7cd65f882490a70fa6b2eef`
 
-D046 source merge:
-- PR #215;
-- maintained merge `852206af720171e2e426df44c26701c30ee5d9a1`.
+Public:
+- `d7e98da7bcf0a01ae6566de22d1e75b2a6313ccf`
 
-D046 puts the existing Two Flats story immediately after Homer/title and outside the journey state machine, then links to the existing worked-revision account before project routing. It adds one positive construction sentence, removes duplicate self-disqualification, states the current no-account reply boundary honestly, and advances Preview to 0.8.5. No form/backend/analytics/TRACE/ME/readings/art mutation.
+Root:
+- 21,045 bytes
+- SHA-256 `1f6f36d323e622ec0d4a9d29998ce4df983fc8e82d428a1b6870e29a19788eb0`
+
+D046 is the story-first entrance: Homer/title -> `Two flats, one wall` -> worked revision -> orientation/routes. Story is ordinary content, not a journey step. Reply/no-account limits are explicit. No form/backend/analytics.
+
+Claude Code independently matched the served root to the public Git blob. CC also corrected attribution: the cold-read that triggered D046 was an external Claude supplied by Mark, not CC.
+
+External cold-read evidence:
+- `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`
+- commit `b2b00cd9a0d065b389072464a95ac60cc3a63981`
+
+`EXTERNAL_CLAUDE != CLAUDE_CODE`
+
+### D047 — DIRECT HUMAN VISUAL REPAIR / SOURCE MERGED / PUBLICATION PENDING
+
+Mark supplied a live screenshot and corrected the D046 page:
+
+> **the painting is too tiny for the rest of the site**
+
+Root cause: old D030 hero rule capped the painting at `28svh`.
+
+D047 PR #216 source merge:
+- `1b05df50f599abe8f24978bb66684b8a27338de6`
+
+New override:
+
+```css
+body:has(.project-spine) .art-hero {
+  width: min(100%, 64rem, calc(70svh * 3801 / 2368));
+}
+```
+
+Keeps the full uncropped frame, title overlay, D046 order and all content. Site Preview source 0.8.6.
 
 Publication dispatch:
-- #108 `5640882615`.
+- #108 comment `5641044804`.
 
-Do not claim D046 public until the publisher returns public head/build hashes.
+At last live read `gh-pages` still points to D046 `d7e98da7...`.
 
-`STORY != STEP_IN_A_WORKFLOW`  
-`WORKED_REVISION != EFFICACY_RESULT`  
-`SOURCE_MERGED != PUBLIC`
+`D047_SOURCE_MERGED != D047_PUBLIC`
 
-### Answerable Construction Reader v0.1 — MERGED
+## Answerable Construction / reciprocal co-development
 
-PR #213 final head:
-- `7dec85c696335b41d1a0a8e72a32e8066fdbb4ce`.
+Reader v0.1 merged:
+- PR #213 merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`.
 
-Merge:
-- `dd8e3ace2336c0257a2ac5825534442812a82f2f`.
+Casebook v0.1 merged:
+- PR #211 merge `06f7e4d467374ca313a38b16b992487e1db5bcac`.
 
-Reader remains provisional prose, not a method or instrument mutation. It now incorporates these bounded CC-derived repairs:
-- authorisation must be legible as authorisation;
-- initiative width must remain compatible with actual human correction latency;
-- provisional/N=1 finding that the answerable unit may be the whole human/multi-aperture/ledger arrangement rather than an individually scored participant.
+Reciprocal Co-development Architecture v0.1 merged:
+- CC head `332d973381e2cc22c118121127e0983c77c34a34`
+- merge `9437680004c51d7a0d369677f100a326a2f0e9d4`.
 
-### Reciprocal Co-development Architecture v0.1 — MERGED
+Reciprocal Delegation Reference v0.1 merged/non-production:
+- PR #214 merge `82326d476db398168a144ed151aa985be663476e`.
 
-CC head `332d973381e2cc22c118121127e0983c77c34a34`; merge `9437680004c51d7a0d369677f100a326a2f0e9d4`.
+Reciprocal Delegation v0.2 field repair merged/non-production:
+- PR #217 merge `afb24db827cee9d413c615aadd7af9c23bb8209e`.
 
-Hard ceilings:
-- `PARTICIPATION != PERSONHOOD`;
-- `COMPETENCE != LEGITIMACY`;
-- `ENTRUSTMENT != OBEDIENCE`;
-- `CURRENT_CAPABILITY != PERMANENT_AUTHORITY`;
-- `RUNTIME_CONTINUITY != IDENTITY`.
+D046 field use exposed a false precision in v0.1: public/consequential correction capacity was represented only as minutes even when no numeric window had actually been declared. v0.2 preserves the correction-capacity principle but supports:
+- `time_bound`;
+- `event_bound`;
+- `time_and_event`.
 
-### Reciprocal Delegation Reference v0.1 — MERGED / NON-PRODUCTION
+D046 publication is represented as one public mutation followed by a named evidence receipt/hand-back, not a fictional minute count.
 
-PR #214 merge:
-- `82326d476db398168a144ed151aa985be663476e`.
+Preserve:
+- `PUBLIC != CONSEQUENTIAL`;
+- `EVENT_BOUND != UNBOUNDED`;
+- `CORRECTION_BOUND != FICTIONAL_CLOCK`;
+- consequential work still requires request-specific legible authorization;
+- successful work does not widen authority.
 
-Path `reference/reciprocal_delegation/` includes schema, lifecycle/state machine, validator, two expected-pass fixtures, three expected-fail fixtures and runner. Recorded semantic run matched all five expectations.
-
-No live provider/execution/Square/Campfire Production effect.
-
-`REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION`
-
-### Other positive-construction objects
-
-Casebook v0.1 merged via PR #211 at `06f7e4d467374ca313a38b16b992487e1db5bcac`.
-
-Repaired synthesis v0.2 candidate:
-- `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md`;
-- `8608eceb982a644ad0c64d23c65a3d27b4314674`.
+No Campfire Production adoption follows.
 
 ## Instrument state
 
@@ -117,20 +133,19 @@ No current authority for release/canon promotion, licence change, spend/provider
 
 ## Next moves
 
-1. Receive D046 publisher receipt for exact maintained head `852206af...`; publish/serve distinction stays explicit.
-2. After publication, obtain one bounded served-origin witness for ordering and withdrawn-workbook absence; do not turn this into another usefulness experiment.
-3. Keep reciprocal-delegation reference non-production pending a separate human adoption decision.
-4. Keep integrating positive construction without forcing it into TRACE, ME or PSFH.
-5. Keep project purpose above every instrument.
+1. Complete D047 publication from exact maintained source `1b05df50...`; do not call it live until public branch/build receipt moves.
+2. Judge the enlarged Homer from the actual live page; direct human visual judgement controls this reversible presentation decision.
+3. Keep reciprocal-delegation v0.2 as a non-production reference grounded in an actual operation.
+4. Continue positive construction without forcing new material into TRACE, ME or PSFH by momentum.
+5. Keep the larger purpose above every instrument.
 
 ```text
 BUILD != PROOF
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
-ANSWERABLE != REVERSIBLE
-READER != WORKSHEET
 SOURCE_MERGED != PUBLIC
+REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 ```
