@@ -1,0 +1,19 @@
+{
+  "format": "reciprocal-delegation/0.2",
+  "delegation_id": "RD-FIELD-D046-PUBLISH-20260911",
+  "object": {"kind": "external_action", "ref": "publish PSFH D046 static edition", "base_head": "852206af720171e2e426df44c26701c30ee5d9a1"},
+  "actor": {"role": "publisher", "aperture": "Codex"},
+  "consequence_class": "routine_reversible",
+  "write_scope": ["publish exact maintained PSFH D046 head through established gh-pages lane"],
+  "no_touch": ["TRACE", "Mechanical Ethics", "Campfire Production", "credentials", "licence terms", "challenge backend"],
+  "evidence_obligation": ["final maintained head", "public gh-pages head", "exact output delta", "static build result", "root SHA-256 and bytes"],
+  "closer": {"kind": "named_event", "ref": "publication receipt posted to COM #108"},
+  "authorization": {"required": false, "request_id": null, "approval_token": null, "approval_received": false, "approval_value": null, "routine_phrase_is_not_authorization": true},
+  "claim_binding": {"target_head": "852206af720171e2e426df44c26701c30ee5d9a1", "moved_head_becomes_historical": true},
+  "mutation_controls": {"mutates": true, "claim_before_build": true, "exact_head_before_push": true, "single_mutator": true},
+  "repair_controls": {"is_repair": true, "defect_id": "D046 cold-entrance repair", "matching_failure_control": "compare pinned D045 and D046 roots for story ordering, reply-limit text and duplicate disavowal"},
+  "restoration": {"strategy": "forward_commit", "history_preserved": true},
+  "witness": {"required": true, "name_delivery_plainly": true},
+  "human_correction": {"bound_mode": "event_bound", "expected_max_minutes": null, "handback_event": "post publication receipt to COM #108 with exact maintained/public heads and output delta, then stop the publication lane"},
+  "initiative": {"public_or_consequential": true, "max_unreviewed_minutes": null, "max_unreviewed_actions": 1}
+}
