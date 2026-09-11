@@ -1,6 +1,6 @@
 # Work with a situation
 
-Use one question or all six. There is no required order and nothing to submit here. If you want to write, copy the questions into your own notes or continue in the context that brought you here.
+Use one question or all six. There is no required order and nothing to submit here. The HTML view also offers an optional local scratchpad in your browser; the page does not send or save what you type.
 
 ## 1. Notice
 
