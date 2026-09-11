@@ -1,0 +1,66 @@
+{
+ "format": "reciprocal-delegation-recovery/0.1",
+ "transfer_id": "RECOVERY-FIELD-D046-NAMED-TAKEOVER",
+ "object": {
+  "repository": "markgoodbody-bit/COM",
+  "ref": "codex/door-maintained-source-20260908",
+  "transferred_write_scope": [
+   "app/page.tsx",
+   "public/explore/challenge.html",
+   "public/explore/challenge.md",
+   "scripts/site-edition.mjs"
+  ],
+  "inherited_no_touch": [
+   "TRACE",
+   "ME",
+   "Campfire Production",
+   "credentials",
+   "artwork bytes"
+  ]
+ },
+ "previous_lane": {
+  "owner": "CODEX",
+  "state": "stalled_named",
+  "reason": "assigned branch codex/d046-story-first-door-20260911 did not move from the D045 head; Framework explicitly took over the bounded source edit rather than running a second concurrent mutator (field/D046_20260911.md, #108 FW-PSFH-D046-PUBLISH-20260911-001)",
+  "last_claimed_head": "0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc",
+  "mutating_transferred_scope": false
+ },
+ "transfer": {
+  "decision_source": "field/D046_20260911.md: 'Framework then explicitly took over the bounded source edit'",
+  "current_head": "0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc",
+  "old_claim_historical": false,
+  "new_owner": "FRAMEWORK",
+  "consequence_class": "routine_reversible",
+  "new_write_scope": [
+   "app/page.tsx",
+   "public/explore/challenge.html",
+   "public/explore/challenge.md",
+   "scripts/site-edition.mjs"
+  ],
+  "new_no_touch": [
+   "TRACE",
+   "ME",
+   "Campfire Production",
+   "credentials",
+   "artwork bytes"
+  ],
+  "explicit_scope_change_authorized": false
+ },
+ "authorization": {
+  "required": false,
+  "request_id": null,
+  "approval_token": null,
+  "approval_received": false,
+  "approval_value": null
+ },
+ "new_lane": {
+  "start_head": "0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc",
+  "history_preserved": true,
+  "recovery_strategy": "not_applicable"
+ },
+ "handback": {
+  "event": "PR #215 merged to maintained 852206af720171e2e426df44c26701c30ee5d9a1; publication delegated to CODEX separately (21:32Z)",
+  "receipt_is_review": false,
+  "success_widens_authority": false
+ }
+}

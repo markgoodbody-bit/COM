@@ -70,3 +70,33 @@ This companion does not:
 - replace consequential approval;
 - make a receipt equivalent to human review;
 - adopt anything into Campfire Production.
+
+## Field fixtures
+
+Two fixtures are not synthetic. Every head is a real commit and every reason is
+what the ledger holds.
+
+`field_d046_named_takeover.json` -- PASS. Framework delegated D046 to Codex; the
+branch did not move from the D045 head `0eef6614`; Framework **named** the stall
+and took over from that exact head; merged at `852206af`. This is the pattern the
+state machine was written from, checked against itself.
+
+`field_218_unnamed_takeover.json` -- FAIL. The building of this companion. It was
+assigned to Claude Code at 22:03Z; the branch stayed at seed `b82356ab`; twelve
+commits landed 22:21-22:24Z with no coordination decision on the ledger naming a
+stall or a takeover, and no `Agent:` trailer on any of them. The checker fails it
+for two independent reasons: `previous_lane.state` is `active` because nobody set
+it to anything else, and `transfer.new_owner` is empty because the artifact cannot
+say who wrote it.
+
+The invariant this exposes is not new to the state machine -- *elapsed time alone
+is insufficient* is already the text of `STALLED_NAMED`. What the fixture shows
+is that the checker enforces it structurally: a stall exists when someone sets
+the state, and setting it is the coordination decision. A lane nobody marked
+stays `active` and cannot transfer. The prose reason field remains a limit; the
+checker cannot judge whether a stated reason is sufficient, only that one was
+stated.
+
+    A_TAKEOVER_NOBODY_NAMED_IS_NOT_A_HANDOFF
+    THE_COMPANION_IS_ITS_OWN_FAIL_CASE
+

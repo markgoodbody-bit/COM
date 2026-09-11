@@ -13,6 +13,9 @@ CASES = {
     "examples/double_mutator_same_object.json": False,
     "examples/takeover_from_stale_head.json": False,
     "examples/success_widens_scope_implicitly.json": False,
+    # Field-derived, real heads, from the ledger. See README "Field fixtures".
+    "examples/field_d046_named_takeover.json": True,
+    "examples/field_218_unnamed_takeover.json": False,
 }
 
 def main() -> int:
