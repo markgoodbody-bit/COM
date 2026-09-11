@@ -41,6 +41,10 @@ test('arrival preserves the D022 wording changes and adds only the D034 project 
     trace_compact:'../resources/trace/TRACE-SPINE.md'
   });
   for (const route of Object.values(JSON.parse(bytes).routes)) await readFile('out/explore/'+route);
+  const resourceMap = JSON.parse(await readFile('public/explore/map.json'));
+  assert.deepEqual(resourceMap.resources.find(resource=>resource.path==='start.json'),{
+    path:'start.json', bytes:2768, sha256:'3073bc5014c289ac7959c6f7a8b0e92047d87b99b01e5e89baa4b964f555a3a5'
+  });
   assert.match(before.reading,/No automatic traversal or report-back/);
 });
 
