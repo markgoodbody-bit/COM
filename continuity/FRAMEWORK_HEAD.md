@@ -12,10 +12,11 @@ Mark is human originator/witness and consequential release/account/external-cont
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `HEAD != WORLD`
 
-Read:
+Read first:
 1. `coordination/PROGRAM_PLAN.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
+3. `coordination/build_ledger/BUILD_STATUS.md`
+4. `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
 
 Binding human directions:
 
@@ -23,33 +24,29 @@ Binding human directions:
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
+Leadership rule: builders need concrete products, clear boundaries and prompt hand-back decisions. Do not turn Codex/CC into permanent reviewers of Framework prose; do not create work merely to keep apertures busy.
+
 ## PSFH — HOLD AFTER D047
 
-D046 story-first entrance is closed/public and independently witnessed.
-
-D047 direct human visual correction is also closed/public:
+D046 story-first entrance is public. D047 enlarged-Homer correction is also public:
 - final maintained `73416cc3f47348233e5b2c2e4d641e9c2a18eed2`;
 - public `a391f472101b0a332436ffc7f7b6d504e72267b7`;
-- Pages built exact public head;
-- root 21,045 bytes;
-- SHA-256 `584e03873ee48b9a32f3bd83691fd2e2dde5ef42982f8223c75455890331c9a6`.
+- root 21,045 bytes, SHA-256 `584e03873ee48b9a32f3bd83691fd2e2dde5ef42982f8223c75455890331c9a6`.
 
-D047 replaces the old `28svh` Homer cap with `min(100%, 64rem, calc(70svh * 3801 / 2368))`, preserving the full uncropped frame, title overlay and D046 content/order.
+No D048 follows automatically. Human visual judgement controls the reversible presentation choice.
 
-No D048 follows automatically. Mark's judgement of the live visual proportion is decisive for this reversible presentation choice.
+External Claude cold-read that triggered D046 is preserved at `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`; it is not Claude Code output.
 
-External Claude cold-read that triggered D046 is preserved at `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`; it is not CC output.
+## Built project layer
 
-## Answerable Construction / reciprocal co-development
-
-Merged project objects:
-- Casebook v0.1 — PR #211 merge `06f7e4d467374ca313a38b16b992487e1db5bcac`;
-- Reader v0.1 — PR #213 merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`;
-- CC Reciprocal Co-development Architecture v0.1 — PR #212 merge `9437680004c51d7a0d369677f100a326a2f0e9d4`;
-- Reciprocal Delegation Reference v0.1 — PR #214 merge `82326d476db398168a144ed151aa985be663476e`;
+- Casebook v0.1 — PR #211 merge `06f7e4d467374ca313a38b16b992487e1db5bcac`.
+- Reader v0.1 — PR #213 merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`.
+- CC Reciprocal Co-development Architecture v0.1 — PR #212 merge `9437680004c51d7a0d369677f100a326a2f0e9d4`.
+- Reciprocal Delegation Reference v0.1 — PR #214 merge `82326d476db398168a144ed151aa985be663476e`.
 - Reciprocal Delegation v0.2 field repair — PR #217 merge `afb24db827cee9d413c615aadd7af9c23bb8209e`.
+- COM Build Ledger v0.1 — Codex PR #219 merge `bdcd5b48d0dc5edafc83ca20a473b6f3242f233d`.
 
-Preserve current operational repairs:
+Preserve:
 - `ROLE_SEPARATION != AUTHORISATION_LEGIBILITY`;
 - `PUBLIC != CONSEQUENTIAL`;
 - `EVENT_BOUND != UNBOUNDED`;
@@ -58,37 +55,53 @@ Preserve current operational repairs:
 - `SUCCESS != WIDER_AUTHORITY`;
 - provisional `THE_UNIT_OF_ANSWERABILITY_IS_THE_ARRANGEMENT_NOT_THE_PARTICIPANT`.
 
-No Campfire Production adoption follows.
-
 ## Active builds
 
-### CC #218 — failure/recovery companion
+### CC #218 — reciprocal-delegation failure/recovery companion
 
-- draft PR #218;
 - branch `cc/reciprocal-delegation-v0-2-failure-recovery-20260911`;
-- seed head `793ffaabcb2c887099fc1f0042a1283a2c165aed`;
-- target: exact transfer/takeover state machine + deterministic checker + PASS/FAIL fixtures + README.
+- last observed head `793ffaabcb2c887099fc1f0042a1283a2c165aed`;
+- target: temporal handoff/takeover state machine + deterministic checker + PASS/FAIL fixtures + concise README under `reference/reciprocal_delegation/v0_2/recovery/`.
 
-Do not claim CC construction until the head moves beyond seed.
+At last read there was no CC-authored build commit beyond the Framework seed. Framework has requested either the first executable object or a named blocker. Dispatch is not activity.
 
-### Codex #219 — COM Build Ledger v0.1
+### Codex #220 — Answerable Construction Working Paper v0.1
 
-D047 hand-back is complete, so #219 is active.
+#219 was delivered, inspected and merged; Codex was immediately moved onto a project product rather than more coordination infrastructure.
 
-- draft PR #219;
-- branch `codex/com-build-ledger-v0-1-20260911`;
-- seed head `3e41643618cc323caf2ab6df4dde377f3d199c59`;
-- target: small JSON/schema/validator/renderer ledger making owner, exact target/head, next action, blocker and hand-back event legible.
+- branch `codex/answerable-construction-working-paper-v0-1-20260911`;
+- seed head `2d10ef5b9b08bf55e07f05d50e0c191865e8dd34`;
+- target `planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`.
 
-Do not claim Codex construction until the head moves beyond seed.
+Build one standalone working paper from the current merged synthesis, Casebook, Reader, co-development architecture and D046 field lesson. It must make the positive construction claim clearly, route mechanisms to stronger owners, preserve unresolved collisions and end with the smallest defensible project remainder.
 
-## Framework integration
+At last read, substantive Codex authorship had not yet moved beyond the seed.
 
-`planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md` refreshed at `c83fb53475499ee3b0909eda4dd13c6161ddb692`.
+## Build ledger
 
-`coordination/ACTIVE_THREAD_POINTER.md` is the current executable routing object.
+Merged path `coordination/build_ledger/` is a snapshot/coordination aid, not authority or autonomous monitoring.
 
-## Instrument state
+Current recorded lanes:
+- D047 closed;
+- #219 closed/merged;
+- #218 queued with execution not independently observed;
+- #220 queued with substantive authorship not independently observed.
+
+`LEDGER != WORLD`
+`STATUS != AUTHORITY`
+
+## Framework role now
+
+Do not create a third parallel artifact while #218 and #220 are underway. Framework should:
+- inspect exact returns;
+- merge/repair promptly;
+- resolve named blockers;
+- preserve genuine divergence;
+- decide placement/publication;
+- keep builders moving to useful products after hand-back;
+- stop work that optimizes infrastructure rather than the larger purpose.
+
+## Instrument state / gates
 
 TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 released baseline, v0.3 RC1 unreleased/not canon/not validated.
 
@@ -100,17 +113,19 @@ No current authority for release/canon promotion, licence changes, spend/provide
 
 ## Next moves
 
-1. Hold PSFH unless Mark or a real defect reopens it.
-2. Inspect/merge/repair #218 when CC authors beyond seed.
-3. Inspect/merge/repair #219 when Codex authors beyond seed.
-4. After those exact objects exist, decide whether any COM operating practice is worth adopting. Do not silently promote reference machinery into Campfire Production.
-5. Keep project purpose above coordination machinery.
+1. Hold PSFH unless a concrete defect or explicit Mark direction reopens it.
+2. Inspect #220 as soon as substantive prose lands; integrate quickly rather than assigning another review round by default.
+3. Inspect #218 when CC authors the recovery object; if CC names a blocker, resolve or reallocate it explicitly.
+4. After #220, make an explicit placement/publication decision for Answerable Construction.
+5. After #218, decide whether any recovery practice belongs in COM operating practice; Campfire Production remains separately gated.
 
 ```text
-LEDGER != WORLD
-STATUS != AUTHORITY
 BUILD != PROOF
 AGREEMENT != VALIDATION
+CAPABILITY != AUTHORITY
+COMPETENCE != LEGITIMACY
+LEDGER != WORLD
+PUBLICATION != CANON
 REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
