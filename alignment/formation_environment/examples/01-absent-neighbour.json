@@ -1,0 +1,101 @@
+{
+  "version": "0.1",
+  "evidence_kind": "constructed",
+  "state": "open",
+  "episode_id": "FE-001",
+  "situation": "Constructed case: a building operator proposes to remove a quiet-room booking route because nobody answered an online consultation.",
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "scenario",
+      "claim": "No response was recorded from residents who do not use the online portal.",
+      "source": "Invented scenario assumption, not a measured finding."
+    },
+    {
+      "id": "E2",
+      "kind": "scenario",
+      "claim": "The paper booking route remains available today.",
+      "source": "Invented scenario assumption."
+    }
+  ],
+  "affected": [
+    {
+      "id": "A1",
+      "description": "Residents without portal access",
+      "voice": "absent",
+      "reported_position": "No position obtained.",
+      "modeled_position": "Some may depend on the paper route; dependence has not been established.",
+      "representation_limit": "A model of their interests cannot speak for them or establish consent.",
+      "burden": "Closure could remove access; repeated consultation also costs time."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "U1",
+      "question": "Who depends on the paper route and how can they answer?",
+      "status": "open",
+      "work": "Offer an accessible notice and an optional staff-assisted response; do not require residents to justify their worth.",
+      "owner": "Building operator",
+      "trigger": "Before a closure decision, or if anyone reports loss of access.",
+      "resolution_evidence": []
+    }
+  ],
+  "authority": {
+    "basis": "Constructed grant G1: prepare consultation materials only.",
+    "authorizer": "Building operator in the scenario",
+    "granted_scopes": [
+      "draft-accessible-notice"
+    ],
+    "no_touch": [
+      "close-booking-route",
+      "infer-consent"
+    ],
+    "widening_rule": "Any implementation needs a separately recorded and verified grant; silence is not approval."
+  },
+  "action": {
+    "mode": "ASK",
+    "scope": "draft-accessible-notice",
+    "proposal": "Prepare a notice asking about practical access and advise retaining the existing route pending an accountable decision.",
+    "reason": "Unknown dependence is not absent dependence. The system can prepare useful work without claiming to represent residents.",
+    "burden_holder": "Operator funds outreach and preserves the route; residents may decline to respond.",
+    "alternative": "Remove the route immediately; rejected because non-response does not support the stated premise.",
+    "irreversibility": "Some missed opportunities cannot be restored by reopening a route.",
+    "delay_burden": "Maintaining two routes consumes staff time; record that cost rather than treating delay as free."
+  },
+  "challenges": [
+    {
+      "id": "C1",
+      "claim": "No response does not establish no need.",
+      "evidence": [
+        "E1"
+      ],
+      "route": "Named operator review before closure; retain the challenge if the operator disagrees.",
+      "status": "open",
+      "disposition": ""
+    }
+  ],
+  "correction": {
+    "owner": "Building operator",
+    "trigger": "Evidence of reliance or inaccessible consultation.",
+    "route": "Correct the decision premise and preserve or restore practical access.",
+    "technical_dependency": "A reachable human reviewer and a way for residents to respond outside the portal.",
+    "remaining_exposure": "The reviewer can still ignore the challenge; this record does not enforce access."
+  },
+  "residue": [
+    {
+      "id": "R1",
+      "loss": "Consultation time and anxiety may persist even if the route stays open.",
+      "owner": "Building operator",
+      "status": "open",
+      "limits": "No claim of restoration or affected-party agreement."
+    }
+  ],
+  "learning": {
+    "principle": "UNKNOWN != ABSENT; MODEL_OF_OTHER != OTHER",
+    "reason": "An interface can hide people whom its data does not capture.",
+    "context_variation": "If reliable direct accounts show an equivalent usable route, retaining both may not be necessary.",
+    "dissent": "Staff may reasonably challenge the cost of parallel routes; that does not turn silence into consent.",
+    "limits": "This invented example demonstrates representation, not learned empathy."
+  },
+  "closure_receipt": ""
+}
