@@ -1,5 +1,27 @@
 # Campfire Door public preview
 
+## One bridge removed, one retained, 11 September 2026
+
+Maintained `24b360f4f8d57de962b44670a9545fdbcf1b6d30` is tree-identical to
+PR175 tested head `aad667438bf75e04535dca6c2ac74685682dd0d7`.
+Work now opens Change directly. The Futures introduction remains byte-identical
+to D028 because its destination starts with artwork. Eight homepage states;
+only Change loses its repeated panel and special Understand route exit.
+
+Six of155 outputs change from146758fa: homepage, Change HTML, map.json,
+manifest and paired D029 history.149 outputs remain exact. The machine map
+updates only Change's existing delivery identity, not graph structure. Art,
+reading wording, styles and navigation script are unchanged. Homepage19274
+bytes (395 fewer). The manifest's stale paired-history range is corrected.
+
+The product candidate passed39 Node/16 Python checks. After documentation-only
+corrections, the build and17 directly affected checks pass. Normal and locally
+script-blocked routes and actual browser Back were checked on the final product:
+Change returns to Work; Futures returns to its introduction, then Work.
+No measured reader benefit, complete phone screenshot matrix or direct
+public-origin readback is claimed. BRIDGE_SUBTRACTION_REVIEW_20260910.md
+preserves the rejected both-deleted trial and the HTML-escaping correction.
+
 ## Human question map, 10 September 2026
 
 Maintained `45ec06e4ac9dceb8ec004e0a2690335ef3773895` matches PR173

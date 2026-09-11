@@ -215,8 +215,8 @@
     },
     {
       "path": "nodes/change.html",
-      "bytes": 3785,
-      "sha256": "15b71a5ad6a677f28f3de943b8fb6bafa04e0a3253ecf3691b52329fe4fd0557"
+      "bytes": 3737,
+      "sha256": "c61b6bb9f9b89b0dc1b53227206d777d552cf0a8fbd2f798863c310b6422b447"
     },
     {
       "path": "nodes/change.json",

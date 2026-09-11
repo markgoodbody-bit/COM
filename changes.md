@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
 
+### D029
+
+10 September 2026 — One repeated step has been removed; one still has a job.
+
+Understand what is happening now leads directly from Work with a question to the Change reading. The intermediate panel repeated the small account and question already there, so it is removed along with Change's special Understand route link back to it. Opening, Map and Not now remain available.
+
+The Futures introduction is retained unchanged. Its destination begins with the Shen Zhou painting before the reading, so the introduction still gives the visitor a question to carry into that different encounter. The two routes need not have the same number of steps. The story remains reachable through Futures, Look, Challenge and the full introduction.
+
+This follows Framework comments 5622773558 and 5623175818 in COM issue 108. Both deletions were tried locally; only the Change deletion was kept. This is a design judgement, not evidence of reader benefit. Art, reading text, the human question-map structure, stylesheet and navigation script are unchanged. The Explore machine map updates only Change's existing delivery identity; its graph structure and other resource entries remain unchanged. Old links to the removed Change panel no longer identify that panel; the existing fallback remains. Previous publication 146758fa9911460564646bec757e01bfad26b976 remains in Git history.
+
 ### D028
 
 10 September 2026 — The map now opens with questions rather than a mixed catalogue.
