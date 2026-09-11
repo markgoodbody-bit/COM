@@ -1,5 +1,33 @@
 # Campfire Door public preview
 
+## Project orientation before the journey, 11 September 2026
+
+D030 maintained source `882c9c257ff1872093c0799b42bee6f21a2b87a9`
+is tree-identical to tested PR179 head
+`c453d47a4e36a5f60d33017f5e12eb3043055243`.
+The whole Homer painting remains first, at a smaller displayed size. Existing
+purpose and authorship move immediately below it with seven ordinary routes
+and short ME/TRACE/art explanations. Neutral arrival choices reach the project
+overview, not the art route. Optional art and the D029 Futures bridge remain.
+
+Only five of 155 output files change from public
+`57a86af13399916825570fbfb51e19b734ac71a8`: index.html, style.css,
+manifest.json and paired change history. The other 150 remain exact. Homepage
+20,502 bytes; SHA-256
+`1c5e2a7c20ac51f20451dac18a3a5789b3c6cd87a6805dc27f29999efc174119`.
+The shared site edition remains 0.8.4; D030 and the explicit revision date
+identify this change without changing machine payload/wrapper editions.
+
+33 relevant Node checks and 12 first-contact Python checks pass. Desktop and
+390px screenshots, 320px reflow, keyboard entry, neutral arrival, Futures Back,
+and native routes under script-blocking CSP were checked locally. Two older
+whole-glob tests still expect pre-context-window/map shapes; the source report
+records them without claiming a fully green historical suite. No measured
+reader benefit or direct public-origin verification by Codex is claimed.
+FW's overlapping PR178 is preserved as an unbuilt alternative; no wording was
+combined merely to reconcile authorship. HUMAN_SPINE_REVIEW_20260911.md records
+the comparison and limits. No receiver prompt has been dispatched.
+
 ## One bridge removed, one retained, 11 September 2026
 
 Maintained `24b360f4f8d57de962b44670a9545fdbcf1b6d30` is tree-identical to
