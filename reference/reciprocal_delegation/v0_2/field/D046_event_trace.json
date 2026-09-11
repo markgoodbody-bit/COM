@@ -1,0 +1,93 @@
+{
+  "format": "reciprocal-delegation-field-trace/0.2",
+  "trace_id": "D046-20260911",
+  "status": "observed-project-operation-not-validation",
+  "events": [
+    {
+      "seq": 1,
+      "kind": "external_challenge_received",
+      "actor": "external Claude supplied by Mark",
+      "object": "live PSFH D045 entrance",
+      "evidence": "evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md"
+    },
+    {
+      "seq": 2,
+      "kind": "bounded_build_delegated",
+      "actor": "Framework -> Codex",
+      "object": "codex/d046-story-first-door-20260911",
+      "base_head": "0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc",
+      "scope": "story-first entrance repair only"
+    },
+    {
+      "seq": 3,
+      "kind": "lane_not_moving",
+      "actor": "Framework observation",
+      "object": "D046 source branch",
+      "claim": "branch remained at delegated base head when re-read"
+    },
+    {
+      "seq": 4,
+      "kind": "single_mutator_handoff",
+      "actor": "Framework",
+      "object": "D046 source lane",
+      "effect": "Framework took source mutation ownership; Codex was not asked to mutate concurrently"
+    },
+    {
+      "seq": 5,
+      "kind": "source_merged",
+      "actor": "Framework",
+      "object": "maintained PSFH source",
+      "head": "852206af720171e2e426df44c26701c30ee5d9a1",
+      "pr": 215
+    },
+    {
+      "seq": 6,
+      "kind": "publication_delegated",
+      "actor": "Framework -> Codex",
+      "object": "publish exact maintained D046 head through established static lane",
+      "base_head": "852206af720171e2e426df44c26701c30ee5d9a1",
+      "max_unreviewed_actions": 1,
+      "handback_event": "publication receipt to COM #108 with exact heads and output delta"
+    },
+    {
+      "seq": 7,
+      "kind": "publication_receipt",
+      "actor": "Codex",
+      "final_maintained_head": "8e27856f2397779ab7cd65f882490a70fa6b2eef",
+      "public_head": "d7e98da7bcf0a01ae6566de22d1e75b2a6313ccf",
+      "root_sha256": "1f6f36d323e622ec0d4a9d29998ce4df983fc8e82d428a1b6870e29a19788eb0",
+      "root_bytes": 21045,
+      "changed_outputs": 11,
+      "byte_identical_outputs": 144
+    },
+    {
+      "seq": 8,
+      "kind": "independent_served_witness",
+      "actor": "Claude Code",
+      "object": "canonical PSFH origin",
+      "result": "served root matched public Git blob byte-for-byte; D046 story ordering and reply-boundary repairs observed"
+    },
+    {
+      "seq": 9,
+      "kind": "attribution_repair",
+      "actor": "Claude Code + Framework",
+      "object": "cold-read provenance",
+      "result": "external Claude cold-read preserved separately; not attributed to Claude Code"
+    },
+    {
+      "seq": 10,
+      "kind": "hand_back",
+      "actor": "arrangement",
+      "object": "D046 lane",
+      "result": "publication closed; no authority widened from successful delivery"
+    }
+  ],
+  "invariants": [
+    "single_mutator can be preserved by temporal handoff",
+    "public does not automatically mean consequential",
+    "successful delivery does not widen authority",
+    "receipt is not human agreement",
+    "witness claim binds to the witnessed public head",
+    "external Claude is not Claude Code"
+  ]
+}
