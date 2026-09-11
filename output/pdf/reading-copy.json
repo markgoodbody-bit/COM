@@ -1,0 +1,9 @@
+{
+  "source_path": "planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md",
+  "source_revision": "37c2b7f4bc80ff68e371d6dbed93cef3812b819a",
+  "source_sha256": "e3ccd1c8d359c924069576adf24999407a77db9894e4d790a9331b9be9e68bf8",
+  "pdf_path": "output/pdf/Answerable_Construction_Working_Paper_v0_1.pdf",
+  "pdf_sha256": "25fd012a566104fb3a201478f0bf85893962dc6a09778cd9cb95bdd31ab3b525",
+  "status": "derived reading copy; not formal release or canon",
+  "typesetting": "ASCII dash normalisation; Markdown emphasis and links rendered; added source-provenance note"
+}

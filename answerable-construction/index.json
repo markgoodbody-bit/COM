@@ -6,7 +6,9 @@
     "human": "answerable-construction/README.md",
     "working_paper": {
       "path": "planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md",
-      "merge_commit": "83c56892a616476ae089178fdf1ba122c328ee81"
+      "merge_commit": "83c56892a616476ae089178fdf1ba122c328ee81",
+      "reading_copy": "output/pdf/Answerable_Construction_Working_Paper_v0_1.pdf",
+      "reading_copy_record": "output/pdf/reading-copy.json"
     }
   },
   "artifacts": [

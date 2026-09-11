@@ -12,11 +12,17 @@ Answerable Construction is the current project-level attempt to hold together a 
 
 This directory is a **front door to the existing work**, not another copy of it. The authoritative project objects remain at their source paths and commits.
 
+## Read or download
+
+[Download the working paper as a PDF](../output/pdf/Answerable_Construction_Working_Paper_v0_1.pdf?raw=true). This is a typeset reading copy of the existing Markdown, not a formal release or new evidence. The source revision and file hashes are in [the reading-copy record](../output/pdf/reading-copy.json).
+
+To regenerate after a committed source update: `python answerable-construction/build_reading_copy.py` (requires ReportLab). The builder rejects uncommitted source changes. PDF metadata uses a fixed date for reproducibility; the paper's printed date and source revision describe its editorial basis. Inspect the rendered pages before committing an updated copy.
+
 ## Start here
 
 ### 1. Working Paper v0.1
 
-`planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`
+[ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md](../planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md)
 
 Merge commit: `83c56892a616476ae089178fdf1ba122c328ee81`
 
@@ -24,7 +30,7 @@ This is the shortest coherent standalone account. Start here if you want the arg
 
 ### 2. Casebook v0.1
 
-`planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`
+[ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md](../planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md)
 
 Merge commit: `06f7e4d467374ca313a38b16b992487e1db5bcac`
 
@@ -37,7 +43,7 @@ Use it to see where the argument breaks, where stronger domain owners take over,
 
 ### 3. Reader v0.1
 
-`planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md`
+[ANSWERABLE_CONSTRUCTION_READER_v0_1.md](../planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md)
 
 Merge commit: `dd8e3ace2336c0257a2ac5825534442812a82f2f`
 
@@ -47,7 +53,7 @@ Human-readable prose layer. It is not a worksheet, visitor workflow or public-si
 
 ### Reciprocal Co-development Architecture v0.1
 
-`planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`
+[RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md](../planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md)
 
 Merge commit: `9437680004c51d7a0d369677f100a326a2f0e9d4`
 
@@ -55,7 +61,7 @@ A bounded human–AI operating architecture derived from one project day. It doe
 
 ### Reciprocal Delegation v0.2
 
-`reference/reciprocal_delegation/v0_2/`
+[v0_2](../reference/reciprocal_delegation/v0_2/)
 
 Field-repair merge: `afb24db827cee9d413c615aadd7af9c23bb8209e`
 
@@ -65,10 +71,10 @@ The reference makes task-specific delegation, correction bounds, transfer/takeov
 
 ## Earlier synthesis / build evidence
 
-- repaired synthesis candidate: `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md` — `8608eceb982a644ad0c64d23c65a3d27b4314674`
-- integration ledger: `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
-- D046 field trace: `reference/reciprocal_delegation/v0_2/field/D046_20260911.md`
-- external Claude cold-read that triggered D046: `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`
+- repaired synthesis candidate: [ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md](../planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md) — `8608eceb982a644ad0c64d23c65a3d27b4314674`
+- integration ledger: [ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md](../planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md)
+- D046 field trace: [D046_20260911.md](../reference/reciprocal_delegation/v0_2/field/D046_20260911.md)
+- external Claude cold-read that triggered D046: [PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md](../evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md)
 
 These remain useful for provenance and disagreement. They are not required reading before the working paper.
 
