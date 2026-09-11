@@ -24,7 +24,7 @@ test('eight-state homepage retains the Futures bridge, direct Change route and n
   const html = await readFile('out/index.html','utf8');
   assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','future','challenge','story','leave']);
   const orientation = html.split('id="step-orientation"')[1].split('</section>')[0];
-  assert.deepEqual([...orientation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#step-look','#step-work','#step-look','#step-challenge','#step-look']);
+  assert.deepEqual([...orientation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#project','#step-work','#step-look','#step-challenge','#project']);
   assert.match(orientation,/I am here for the art, or just looking/);
   const work = html.split('id="step-work"')[1].split('</section>')[0];
   assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/change.html','#step-future']);
@@ -55,9 +55,11 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 through D029 are paired in both formats and earlier history remains exact', async () => {
+test('D017 through D030 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
+  const d030 = md.split('### D030')[1].split('### D029')[0].trim().split(/\n\s*\n/);
+  assert.equal(html.split('<h3 id="d030">D030</h3>')[1].split('<h3 id="d029">')[0], d030.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join(''));
   for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027'],['D029','D028']]) {
     const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
     const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
@@ -84,7 +86,8 @@ test('only the duplicate Change panel and special exit disappear; the Futures br
     assert.ok(room.includes(escape(record.short)));
     assert.ok(room.includes(escape(record.question)));
   }
-  assert.equal(html,expected);
+  // The exact D029 subtraction is historical; D030 adds an orientation spine.
+  assert.equal(execFileSync('git',['show','57a86af13399916825570fbfb51e19b734ac71a8:index.html']).toString('utf8'),expected);
   const oldChange = execFileSync('git',['show',parent+':explore/nodes/change.html']).toString('utf8');
   const change = await readFile('out/explore/nodes/change.html','utf8');
   assert.equal(change,oldChange.replace('<a href="/#step-understand">Understand route</a>',''));

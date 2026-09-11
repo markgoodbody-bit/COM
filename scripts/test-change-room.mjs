@@ -47,9 +47,9 @@ test('missing challenge, disagreeing graph, and missing or unsafe targets fail c
   assert.throws(()=>renderReadingRoom(unsafe,unsafeIndex,targets),/Unsafe graph edge/);
 });
 
-test('only direct Work routing, Change exit and provenance/history outputs differ from D028', async () => {
+test('D029 routing plus the D030 homepage presentation are the only changes from D028', async () => {
   const revision = '146758fa9911460564646bec757e01bfad26b976';
-  const changed = new Set(['index.html','explore/nodes/change.html','explore/map.json','manifest.json','changes.md','changes.html']);
+  const changed = new Set(['index.html','style.css','explore/nodes/change.html','explore/map.json','manifest.json','changes.md','changes.html']);
   const files = (await readdir('out',{recursive:true,withFileTypes:true})).filter(e=>e.isFile()).map(e=>(e.parentPath+'/'+e.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,''));
   assert.equal(files.length,155);
   for (const file of files) {
@@ -155,7 +155,7 @@ test('authored edge count remains variable', () => {
 test('manifest date follows deliberate history, not build time or linked-source dates', async () => {
   const manifest = JSON.parse(await readFile('out/manifest.json'));
   const history = await readFile('public/changes.md','utf8');
-  assert.equal(manifest.updated,'2026-09-10');
+  assert.equal(manifest.updated,'2026-09-11');
   assertRevisionDate(manifest,history);
   assert.throws(()=>assertRevisionDate({...manifest,updated:'2026-09-08'},history),/Manifest updated/);
   assert.throws(()=>assertRevisionDate(manifest,'no declared revision'),/date missing/);

@@ -5,7 +5,7 @@
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -63,16 +63,20 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "d4dad03cbd502f74aaa17766a8770f15a0c7fbbd0e20b599848d89590c8aaa2e",
-    "change_history_input_html_sha256": "e2bc08b9e007fa37992f4dd8c2bff80f2faeecb699d64522d2608295e032b0b4",
-    "change_history_addendum_note": "D016 through D029 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "03f7758fc6c29909b5e3c79d0526d6fa17a9d7e746f416179ce524ba44c6f7c2",
+    "change_history_input_html_sha256": "628e07adf208e747ca32fa7e8f5b957a3fbd3166407248aca3d336b22507b605",
+    "change_history_addendum_note": "D016 through D030 are manually paired Markdown/HTML entries; earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
     "resource_inventory_sha256": "948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8",
     "worked_revision_source_commit": "730ece48c96fae27d66c797c2fc8fe96a61e8d39",
     "worked_revision_source_path": "door-prototypes/perspective-walk-20260908/WORKED_REVISION.md",
-    "explore_source_path": "door-prototypes/perspective-walk-20260908/"
+    "explore_source_path": "door-prototypes/perspective-walk-20260908/",
+    "human_orientation": {
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5633063139",
+      "scope": "Project purpose and ordinary routes before the optional journey; whole artwork remains first. A response to one human observation, not measured reader benefit."
+    }
   },
   "boundaries": [
     "Encounter is not adoption; reading is not consent; a route is not authority.",

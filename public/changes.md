@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.13 · 10 September 2026
+Please Start From Here · Reader change log · Edition 0.14 · 11 September 2026
+
+### D030
+
+11 September 2026 — The project is introduced before the optional journey.
+
+The whole Homer painting remains first, at a smaller displayed size. Immediately below it, the existing purpose now sits beside direct routes to a situation, core questions, story, art, sources, challenge and stopping. A short explanation distinguishes the Mechanical Ethics book, TRACE language and optional art. The purpose paragraph is moved out of the longer introduction, not repeated.
+
+Someone sent me this and I don't know now lead to that project overview rather than into the art-and-story route. The explicit art route remains. The Change link, Futures introduction, story, ten readings, question graph, artwork files, credits and rights are unchanged. The navigation script and machine reading payloads are unchanged; the manifest records this revision.
+
+This responds to Mark's observation, relayed by Framework in COM comment 5633063139, that the site felt random and more like an art project than a coherent project. It is a bounded hierarchy and wording change, not measured general preference or demonstrated reader benefit. Cold-receiver dispatch was held before any prompts were sent. Previous publication 57a86af13399916825570fbfb51e19b734ac71a8 remains in Git history.
 
 ### D029
 

@@ -9,7 +9,7 @@ const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
-    <a className="skip" href="#arrival">Skip the painting</a>
+    <a className="skip" href="#project">Skip the painting</a>
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
@@ -26,6 +26,26 @@ export default function Home() {
             </div>
         </div>
         </div>
+        <section className="project-spine" id="project" aria-labelledby="project-heading" tabIndex={-1}>
+          <div className="project-purpose">
+            <p className="eyebrow">A project by Mark, developed with AI collaborators</p>
+            <h2 id="project-heading">Decisions, and the lives they change.</h2>
+            <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
+          </div>
+          <nav className="project-routes" aria-label="Ways to use this project">
+            <a href="#step-work">Bring a situation or question</a>
+            <a href="/explore/#reading-map">Explore the core questions</a>
+            <a href="#step-story">Read a small story</a>
+            <a href="/works/">Spend time with the art</a>
+            <a href="#reading">Read the work and its sources</a>
+            <a href="/explore/challenge.html">Challenge or disagree</a>
+            <a href="#step-leave">Not now</a>
+          </nav>
+          <div className="project-parts">
+            <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
+            <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement. Practical advantage over existing methods remains unproved.</p>
+          </div>
+        </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
           <section data-step="welcome" id="step-welcome">
             <p className="guiding-question">How can we make a better future?</p>
@@ -37,11 +57,11 @@ export default function Home() {
             <p>We think we may have something worth sharing. It is offered as a gift, with no requirement to agree, use it or continue.</p>
             <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
-              <a href="#step-look">Someone sent me this</a>
+              <a href="#project">Someone sent me this</a>
               <a href="#step-work">I have something I&apos;m trying to understand or change</a>
               <a href="#step-look">I am here for the art, or just looking</a>
               <a href="#step-challenge">I want to challenge or check this</a>
-              <a href="#step-look">I don&apos;t know</a>
+              <a href="#project">I don&apos;t know</a>
             </div>
           </section>
           <section data-step="look" id="step-look">
@@ -121,7 +141,6 @@ export default function Home() {
         <section className="intro-reference">
         <div className="opening-copy">
           <p className="eyebrow">A starting point for humans and AIs</p>
-          <p>A project by Mark, developed with AI collaborators.</p>
           <p>Hello. Start from whatever brought you here. You can change direction, go deeper, disagree, or stop whenever you like. No introduction or agreement is required.</p>
         </div>
         <p><a href="#step-story">Read the opening story: Two flats, one wall</a>.</p>
@@ -175,7 +194,6 @@ export default function Home() {
       </section>
       <section className="context-reading" aria-labelledby="why">
         <h2 id="why">Why this exists</h2>
-        <p className="lead">The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
         <p>This page introduces the project for inspection. Its selection and framing can influence a reader&apos;s reasoning; it is not a neutral or complete view.</p>
         <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
         <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
@@ -216,7 +234,7 @@ export default function Home() {
       </details>
     </main>
     <footer>
-      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 10 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
+      <p>Working preview · Site Preview {SITE_EDITION}. Human entrance revised 11 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
       <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 8 September 2026. Draft prepared by Codex from project sources for Mark, not an independent assessment. Wording is provisional, pending content integration and cold-reader feedback. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
       <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
