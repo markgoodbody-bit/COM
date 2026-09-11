@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import json
 import sys
 import tempfile
@@ -49,7 +50,7 @@ def load_csv(path: Path) -> tuple[bytes, list[str], list[dict[str, str]]]:
     except UnicodeDecodeError as exc:
         raise ContractError(f"CSV is not UTF-8/UTF-8-BOM decodable: {exc}") from exc
 
-    reader = csv.DictReader(text.splitlines(), delimiter=",")
+    reader = csv.DictReader(io.StringIO(text, newline=""), delimiter=",", strict=True)
     if reader.fieldnames is None:
         raise ContractError("CSV has no header row")
     headers = list(reader.fieldnames)
@@ -62,8 +63,12 @@ def load_csv(path: Path) -> tuple[bytes, list[str], list[dict[str, str]]]:
     for idx, row in enumerate(reader, start=2):
         if None in row:
             raise ContractError(f"row {idx} has extra unnamed fields")
-        normalized = {k: (v if v is not None else "") for k, v in row.items()}
-        rows.append(normalized)
+        missing = [k for k, v in row.items() if v is None]
+        if missing:
+            raise ContractError(
+                f"row {idx} has fewer fields than the header; missing: {', '.join(missing)}"
+            )
+        rows.append(dict(row))
     return data, headers, rows
 
 
@@ -361,6 +366,31 @@ def run_self_test() -> None:
         else:
             raise AssertionError("duplicate DN reference did not fail closed")
 
+        multiline_bytes = (
+            b"Case Ref,Completed Date,Decision Detail 1,Decision,Notes\r\n"
+            b'IC-M,05/08/2026,DN served,Regulatory action taken,"line one\nline two, with comma"\r\n'
+        )
+        multiline_path = base / "multiline.csv"
+        multiline_path.write_bytes(multiline_bytes)
+        multiline_data, multiline_headers, multiline_rows = load_csv(multiline_path)
+        assert multiline_data == multiline_bytes
+        assert multiline_headers[-1] == "Notes"
+        assert len(multiline_rows) == 1
+        assert multiline_rows[0]["Notes"] == "line one\nline two, with comma"
+
+        short_bytes = (
+            b"Case Ref,Completed Date,Decision Detail 1,Decision\r\n"
+            b"IC-S,06/08/2026,DN served\r\n"
+        )
+        short_path = base / "short.csv"
+        short_path.write_bytes(short_bytes)
+        try:
+            load_csv(short_path)
+        except ContractError as exc:
+            assert "fewer fields than the header" in str(exc)
+        else:
+            raise AssertionError("short malformed row did not fail closed")
+
     print("SELF_TEST_PASS")
 
 
@@ -399,7 +429,7 @@ def main() -> int:
             return 0
         else:
             raise AssertionError(args.command)
-    except (ContractError, OSError, json.JSONDecodeError) as exc:
+    except (ContractError, OSError, json.JSONDecodeError, csv.Error) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 
