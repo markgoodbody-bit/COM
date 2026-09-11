@@ -1,0 +1,44 @@
+{
+  "format": "reciprocal-delegation-recovery/0.1",
+  "transfer_id": "RECOVERY-PASS-WIDEN-001",
+  "object": {
+    "repository": "markgoodbody-bit/COM",
+    "ref": "planning/example.md",
+    "transferred_write_scope": ["planning/example.md"],
+    "inherited_no_touch": ["TRACE", "ME", "Campfire Production"]
+  },
+  "previous_lane": {
+    "owner": "CODEX",
+    "state": "handback",
+    "reason": "previous work delivered; new request deliberately widens scope",
+    "last_claimed_head": "8888888888888888888888888888888888888888",
+    "mutating_transferred_scope": false
+  },
+  "transfer": {
+    "decision_source": "named request AUTH-RECOVERY-WIDEN-001",
+    "current_head": "8888888888888888888888888888888888888888",
+    "old_claim_historical": false,
+    "new_owner": "CODEX",
+    "consequence_class": "consequential",
+    "new_write_scope": ["planning/example.md", "TRACE/README.md"],
+    "new_no_touch": ["ME", "Campfire Production"],
+    "explicit_scope_change_authorized": true
+  },
+  "authorization": {
+    "required": true,
+    "request_id": "AUTH-RECOVERY-WIDEN-001",
+    "approval_token": "AUTHORIZE-RECOVERY-WIDEN-001",
+    "approval_received": true,
+    "approval_value": "AUTHORIZE-RECOVERY-WIDEN-001"
+  },
+  "new_lane": {
+    "start_head": "8888888888888888888888888888888888888888",
+    "history_preserved": true,
+    "recovery_strategy": "not_applicable"
+  },
+  "handback": {
+    "event": "exact widened-scope receipt returned and lane stops",
+    "receipt_is_review": false,
+    "success_widens_authority": false
+  }
+}
