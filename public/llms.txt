@@ -23,11 +23,12 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 ## Start
 
 - [AI reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation with optional question routes.
+- [Work with a situation](https://pleasestartfromhere.com/explore/work.md): six existing working questions on one page; use any of them, skip the rest.
 - [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in under 1 KB.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
 - [Shared web reading](https://pleasestartfromhere.com/): the same public root for humans and AI readers, with native links and no JavaScript requirement. A small navigation enhancement adds focus management and Back. Browser history retains page positions, not a submitted answer log.
-- [Six optional working questions](https://pleasestartfromhere.com/#small-loop): Notice, Choose, Decide, Responsibility, Repercussions, and Check and correct; optional prompts, not a required sequence.
+- [Six optional working questions](https://pleasestartfromhere.com/explore/work.md): Notice, Choose, Decide, Responsibility, Repercussions, and Check and correct; optional prompts, not a required sequence.
 
 ## Project sources
 
