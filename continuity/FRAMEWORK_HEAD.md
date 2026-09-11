@@ -17,46 +17,61 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ### ACTIVE: COM #108 — PLEASE START FROM HERE product construction
 
-Human direction:
+Human directions:
 
 > **no testing. just building**
 
-Human correction after D039-D043:
-
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-This is a hard product boundary.
+The second instruction is a hard product boundary.
 
-## D044 correction
+## D044 — correction complete
 
-Framework made a product-level mistake by turning the PSFH invitation into a situation-processing worksheet, culminating in D043 browser textareas. Mark rejected that direction.
+D039-D043 are withdrawn from the active product. Framework incorrectly converted PSFH into a situation-processing worksheet and literal scratchpad.
 
-D039-D043 are withdrawn from the active product, not iterated.
-
-Maintained source:
+Maintained rollback:
 - `51e7fe0a1e70e757782f4f25130fa4399d8257fb`
 - exact D038 source tree `479a1b811b5e026d280bc3e1e118d5f3c84ff92d`
 
-Public `gh-pages`:
+Public rollback:
 - `1dc9eb003d76a67baa0f00975363bf104cc3a10c`
 - exact D038 public tree `304fbfe32759e595ed8c164a63e5822750d24f53`
 
-No force push or history deletion. D039-D043 remain recoverable as the wrong turn.
+CC canonical-origin witness #108 `5640024998` verified the D038 root, three withdrawn worksheet URLs 404, removed homepage/machine routes absent and an ordinary retained route still serving.
 
-Withdrawn active surfaces/routes:
-- `explore/work.html`
-- `explore/work.md`
-- `explore/work.js`
-- homepage worksheet route
-- machine worksheet routes
-- worksheet discovery/resource-map additions.
+`PSFH != WORKSHEET`  
+`INVITATION != INTAKE`  
+`QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
 
-Primary correction receipt:
-- #108 comment `5639942360`
+## D045 — current build
+
+PR #210 merged into maintained source:
+- `ca2009363acb15f637555ed3b929489d218b899d`
+
+D045 changes only the Works shelf entrance and its custody pin. The five-work shelf now explicitly communicates encounter conduct: open any work, stay, no required order, return if wanted.
+
+Unchanged:
+- homepage;
+- all five artworks and selection;
+- dedicated work pages;
+- images and source/rights records;
+- journey and machine entrances;
+- readings and TRACE/ME surfaces;
+- visitor-input behaviour.
+
+Publication dispatch:
+- #108 `5640114074`
+
+Do not call D045 public until a publication receipt lands.
+
+`WORKS != CURRICULUM`  
+`REVISIT != PROGRESS`  
+`NOT_SELECTED != IRRELEVANT`  
+`LOTS_OF_ART != WALLPAPER`
 
 ## Product meaning
 
-Please Start From Here is a voluntary encounter/door, not an interactive intake tool.
+Please Start From Here is a voluntary encounter/door.
 
 Keep available:
 - art as encounter;
@@ -66,15 +81,11 @@ Keep available:
 - sources/provenance;
 - another position;
 - challenge/disagreement;
-- wandering and stopping.
+- wandering, returning and stopping.
 
-Do not turn those questions into fields, assessment steps, diagnostic prompts, forms, worksheets or a required reasoning sequence.
+Do not turn questions into fields, assessment steps, diagnostic prompts, forms, worksheets or required reasoning sequences.
 
-TRACE / Mechanical Ethics can remain deeper optional instruments. PSFH may open toward them without converting the visitor's situation into structured input.
-
-`PSFH != WORKSHEET`
-`INVITATION != INTAKE`
-`QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
+TRACE / Mechanical Ethics remain deeper optional instruments. PSFH may open toward them without converting a visitor's situation into structured input.
 
 ## Parked research
 
@@ -99,15 +110,16 @@ Routine reversible PSFH construction remains allowed within the non-workbook bou
 
 ## Next legitimate operations
 
-1. Verify the served site has converged to D044.
-2. Do not recreate D039-D043 in another visual form.
-3. Continue building the encounter itself rather than machinery for processing visitors.
-4. When uncertain, subtract procedural structure before adding it.
+1. Complete D045 publication from maintained `ca200936...`.
+2. Reacquire public + maintained heads before the next product mutation.
+3. Continue building the encounter, not machinery for processing visitors.
+4. Prefer optional/subtractive changes over procedural structure when uncertain.
 
 ```text
 BUILD != PROOF
 PUBLISHED != VALIDATED
 PSFH != WORKSHEET
+WORKS != CURRICULUM
 HISTORY_PRESERVED != PRODUCT_PRESERVED
 POSTED != RECEIVED != ACTED != EFFECT
 ```
