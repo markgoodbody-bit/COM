@@ -59,7 +59,18 @@ class SourceViewTests(unittest.TestCase):
             self.assertIn(ORIGIN + '/' + view['source'], parser.links)
             self.assertFalse(set(parser.tags) & {'script', 'iframe', 'form', 'object', 'embed'})
             self.assertEqual(parser.ids.count('source-text'), 1)
+            notices = {
+                'read/trace-spine.html': 'https://github.com/markgoodbody-bit/TRACE/blob/main/README.md#review-history-and-licence',
+                'read/me-book.html': 'https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/README.md#review-history-and-licence',
+            }
+            expected_notice = notices.get(view['output'])
+            external = [href for href in parser.links if urlsplit(href).netloc == 'github.com']
+            self.assertEqual(external, [expected_notice] if expected_notice else [])
+            if expected_notice:
+                self.assertLess(page.index(expected_notice), page.index('<code id="source-text">'))
             for href in parser.links:
+                if href == expected_notice:
+                    continue
                 url = urlsplit(href)
                 self.assertIn(url.scheme, ('', 'https'))
                 self.assertIn(url.netloc, ('', 'pleasestartfromhere.com'))

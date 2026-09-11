@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import {readFile, readdir} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 
-test('D036 changes only homepage provenance, manifest and history', async () => {
-  const expected = ['changes.html','changes.md','index.html','manifest.json'];
+test('D037 changes only two source-view notice links, manifest and history', async () => {
+  const expected = ['changes.html','changes.md','manifest.json','read/me-book.html','read/trace-spine.html'];
   const changed = [];
   let count = 0;
   for (const entry of await readdir('out',{recursive:true,withFileTypes:true})) {
     if (!entry.isFile()) continue;
     const file = (entry.parentPath+'/'+entry.name).replaceAll('\\','/').split('/out/').pop().replace(/^out\//,'');
-    const before = execFileSync('git',['show','ee6dbf48175b49795990a8715d79cf2e7ce1c10b:'+file],{maxBuffer:20*1024*1024});
+    const before = execFileSync('git',['show','4c1fb0fb84b8354f10a51c8480b261af38f28b34:'+file],{maxBuffer:20*1024*1024});
     if (!(await readFile('out/'+file)).equals(before)) changed.push(file);
     count++;
   }
@@ -30,7 +30,7 @@ test('project overview and ordinary routes precede the optional state machine', 
   assert.equal(html.split('The project asks how to keep a lived situation').length-1,1);
   assert.match(html,/class="skip" href="#project"/);
   for (const [label,route] of [['Someone sent me this','#step-story'],['I don&#x27;t know','#step-look']]) assert.ok(html.includes('href="'+route+'">'+label+'</a>'));
-  const previous = execFileSync('git',['show','ee6dbf48175b49795990a8715d79cf2e7ce1c10b:index.html'],{encoding:'utf8'});
+  const previous = execFileSync('git',['show','4c1fb0fb84b8354f10a51c8480b261af38f28b34:index.html'],{encoding:'utf8'});
   assert.equal(html,previous.replace('Draft prepared by Codex from project sources for Mark, not an independent assessment.','Current page was developed from project sources by Mark with AI collaborators; it is not an independent assessment.'));
 });
 

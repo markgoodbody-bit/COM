@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.20 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.21 · 11 September 2026
+
+### D037
+
+11 September 2026 — Repository notices are linked beside the complete readings.
+
+The complete TRACE spine and Mechanical Ethics HTML source views now each link to their own repository’s Review, history and licence section. The existing terms are not restated, combined or changed.
+
+The carried texts and their hashes remain unchanged, as do the homepage, navigation, artwork and other reading views. This is notice placement authorised by Mark, not a new licence or permission grant. Previous publication 4c1fb0fb84b8354f10a51c8480b261af38f28b34 remains in Git history.
 
 ### D036
 
