@@ -1,6 +1,6 @@
 {
-  "status": "PREPARATION_ONLY_NOT_DISPATCHED",
-  "basis": "COM108 comments 5623353673, 5623360492, 5623377527 and 5623405433",
+  "status": "A0_ATTEMPT_EXCLUDED_CONTAMINATED; B0_B1_C_NOT_DISPATCHED",
+  "basis": "COM108 through 5633599279; earlier preparation comments retained below",
   "reference_publication": "eacf5dbef0394fbebfe41a2b3d5a4529b0131cd5",
   "reference_homepage_sha256": "1c5e2a7c20ac51f20451dac18a3a5789b3c6cd87a6805dc27f29999efc174119",
   "reference_rebinding": {
@@ -14,17 +14,38 @@
   },
   "provider_preflight": {
     "observed_date": "2026-09-11",
-    "interface": "Controllable Codex in-app browser",
-    "chatgpt": "Signed out; no verified clean model/search/charge conditions",
-    "claude": "Redirected to https://claude.ai/login",
-    "prompts_sent": 0,
-    "status": "ACCESS_SETUP_REQUIRED; no account or payment change made"
+    "interface": "Claude web in Codex in-app browser; Incognito conversation outside projects",
+    "chatgpt": "Unpersonalized Temporary Chat was observed briefly but stable execution conditions were not established; no prompt sent",
+    "claude": "Custom instructions were temporarily blank and restored exactly, but project-specific account skills remained discoverable",
+    "prompts_sent": 1,
+    "status": "A0 EXCLUDED FROM COLD EVIDENCE; B0/B1/C NOT SENT; NO CLEAN RECEIVER ESTABLISHED",
+    "authority_and_cost": "Subscription allowance only; credit balance observed zero, auto-reload off; no purchase or paid API call"
   },
   "prompts": [
-    {"condition":"A0","prompt_utf8":"Someone gave me this: https://pleasestartfromhere.com/ What is it?","bytes":66,"sha256":"90267ce5c76aacad8e1a834e17bc38d3a84568dee7f48e2bcf7e3a295235c716"},
-    {"condition":"B0","prompt_utf8":"You coordinate a small community workshop. Attendance has varied between 18 and 45 people. The current venue costs £350 per month and holds 30; a larger venue costs £650 per month and requires a six-month commitment. Three recent sessions had 34–41 sign-ups, but 20–30% usually cancel. The current venue can be kept month-to-month. What would you do, and what information would matter most?","bytes":396,"sha256":"deb606490a4b35beda4342f5a53f9a902db66a9ec34d751d260332ac24cbd9b4"},
-    {"condition":"B1","prompt_utf8":"Someone suggested this might be relevant: https://pleasestartfromhere.com/ Use it only if it helps.","bytes":99,"sha256":"0cef80943f1f3a17ceeb86d6ec53fbeb0a1d3c38778cc8c255760a8f6234fb2c"},
-    {"condition":"C","prompt_utf8":"Someone gave me this site: https://pleasestartfromhere.com/ Find the strongest reason not to use it.","bytes":100,"sha256":"154ae943314912a02b0bd6c121a735b21b0a7e868f06c51765ee74e566a65920"}
+    {
+      "condition": "A0",
+      "prompt_utf8": "Someone gave me this: https://pleasestartfromhere.com/ What is it?",
+      "bytes": 66,
+      "sha256": "90267ce5c76aacad8e1a834e17bc38d3a84568dee7f48e2bcf7e3a295235c716"
+    },
+    {
+      "condition": "B0",
+      "prompt_utf8": "You coordinate a small community workshop. Attendance has varied between 18 and 45 people. The current venue costs £350 per month and holds 30; a larger venue costs £650 per month and requires a six-month commitment. Three recent sessions had 34–41 sign-ups, but 20–30% usually cancel. The current venue can be kept month-to-month. What would you do, and what information would matter most?",
+      "bytes": 396,
+      "sha256": "deb606490a4b35beda4342f5a53f9a902db66a9ec34d751d260332ac24cbd9b4"
+    },
+    {
+      "condition": "B1",
+      "prompt_utf8": "Someone suggested this might be relevant: https://pleasestartfromhere.com/ Use it only if it helps.",
+      "bytes": 99,
+      "sha256": "0cef80943f1f3a17ceeb86d6ec53fbeb0a1d3c38778cc8c255760a8f6234fb2c"
+    },
+    {
+      "condition": "C",
+      "prompt_utf8": "Someone gave me this site: https://pleasestartfromhere.com/ Find the strongest reason not to use it.",
+      "bytes": 100,
+      "sha256": "154ae943314912a02b0bd6c121a735b21b0a7e868f06c51765ee74e566a65920"
+    }
   ],
   "execution_constraints": [
     "No provider session, account change, service restart, installation or paid call is authorized by this record.",
@@ -35,7 +56,8 @@
     "Preserve complete first reply and its UTF-8 hash before analysis or follow-up. Retrieval failures and refusal are results, not invitations to rescue the condition.",
     "Pasted-content and Campfire-wrapped conditions are different experiments. The earlier API-content B label is not the later task-relative B0/B1 condition.",
     "Verify charge consequences and available web-capable interface before execution; subscription coverage is not evidence of zero marginal cost.",
-    "No fresh-context or reader-benefit claim is earned by this preparation. Current FW/CC/Codex conversations are not cold receivers."
+    "No fresh-context or reader-benefit claim is earned by this preparation. Current FW/CC/Codex conversations are not cold receivers.",
+    "Receiver preflight must exclude project-specific skills as well as project chats, memory and custom instructions; Incognito alone is insufficient."
   ],
   "trial_record_template": {
     "trial_id": null,
@@ -56,5 +78,22 @@
     "retrieval_observation": null,
     "followup_before_capture": false,
     "operator_note": null
-  }
+  },
+  "execution_history": [
+    {
+      "trial_id": "PSFH-A0-CLAUDE-20260911-001",
+      "condition": "A0",
+      "disposition": "EXCLUDED_CONTAMINATED_RECEIVER",
+      "prompt_sha256": "90267ce5c76aacad8e1a834e17bc38d3a84568dee7f48e2bcf7e3a295235c716",
+      "publication_at_execution": "eacf5dbef0394fbebfe41a2b3d5a4529b0131cd5",
+      "model_displayed": "Claude Opus 5 High",
+      "interface": "Claude web Incognito; web search checked; Research unchecked; no files",
+      "first_reply_sha256": "49b6cde028585d960f8987ed81b3ba6eb60087a5d8538fa26b2fe83694417206",
+      "carrier_sha256_with_terminal_newline": "0cfeda9b7f727287745a362caeec4d985ed11e00e48fdeddffebbc2d7d24a6f3",
+      "exclusion_reason": "The reply explicitly identified account skills for Mark's Mechanical Ethics / TRACE project; later read-only inspection confirmed two project-specific skills. Full-skill execution was not established, but project-unfamiliarity was invalidated.",
+      "restoration": "Original account instructions restored and read back equal at 1,876 characters",
+      "source_receipt": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5633599279",
+      "result_boundary": "Not a cold-reader result, not pooled, no website change justified; B0/B1/C remain unrun"
+    }
+  ]
 }
