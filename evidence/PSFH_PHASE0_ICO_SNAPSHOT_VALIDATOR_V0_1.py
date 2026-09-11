@@ -131,9 +131,12 @@ def inspect_snapshot(path: Path) -> dict[str, Any]:
 
 def parse_iso_date(value: str, label: str) -> date:
     try:
-        return date.fromisoformat(value)
+        parsed = date.fromisoformat(value)
     except ValueError as exc:
         raise ContractError(f"{label} must be YYYY-MM-DD, got {value!r}") from exc
+    if parsed.isoformat() != value:
+        raise ContractError(f"{label} must use canonical YYYY-MM-DD, got {value!r}")
+    return parsed
 
 
 def parse_source_date(value: str, fmt: str, row_number: int, header: str) -> date:
@@ -226,6 +229,16 @@ def require_contract(contract: dict[str, Any]) -> None:
         "window_end",
     ):
         require_nonempty_string(contract, key)
+
+    role_headers = [
+        contract["reference_header"],
+        contract["completed_date_header"],
+        contract["decision_detail_1_header"],
+    ]
+    if len(set(role_headers)) != len(role_headers):
+        raise ContractError(
+            "reference_header, completed_date_header and decision_detail_1_header must name distinct columns"
+        )
 
     # Validate the fixed window at contract-load time rather than waiting for row handling.
     parse_iso_date(contract["window_start"], "window_start")
@@ -545,6 +558,28 @@ def run_self_test() -> None:
                 raise AssertionError(
                     f"invalid schema_version {invalid_schema!r} did not fail closed"
                 )
+
+        compact_date_contract = dict(contract)
+        compact_date_contract["window_start"] = "20260801"
+        compact_date_path = base / "compact_date_contract.json"
+        compact_date_path.write_text(json.dumps(compact_date_contract), encoding="utf-8")
+        try:
+            validate_snapshot(csv_path, compact_date_path)
+        except ContractError as exc:
+            assert "canonical YYYY-MM-DD" in str(exc)
+        else:
+            raise AssertionError("non-canonical window date did not fail closed")
+
+        aliased_header_contract = dict(contract)
+        aliased_header_contract["completed_date_header"] = "Case Ref"
+        aliased_header_path = base / "aliased_header_contract.json"
+        aliased_header_path.write_text(json.dumps(aliased_header_contract), encoding="utf-8")
+        try:
+            validate_snapshot(csv_path, aliased_header_path)
+        except ContractError as exc:
+            assert "must name distinct columns" in str(exc)
+        else:
+            raise AssertionError("aliased semantic header roles did not fail closed")
 
         output_path = base / "manifest.json"
         write_new_text(output_path, "first\n")
