@@ -4,9 +4,9 @@ Status: **FRAMEWORK WORKING INTEGRATION OBJECT / NOT CANON / NOT RELEASE AUTHORI
 Date: 2026-09-11  
 Project question: **HOW CAN WE MAKE A BETTER FUTURE?**
 
-This ledger keeps the positive-construction build phase coherent while Codex and Claude Code construct independent artifacts.
+This ledger keeps the positive-construction build phase coherent while Framework, Codex and Claude Code construct differentiated artifacts.
 
-It is not a scorecard and it is not a gate that makes either aperture wait for the other.
+It is not a scorecard and it is not a gate that makes one aperture wait for another.
 
 ```text
 FRAMEWORK INTEGRATES != FRAMEWORK MONOPOLISES
@@ -18,15 +18,18 @@ PROJECT PURPOSE != REVIEW LOOP
 
 ## Current build objects
 
-### Project-level synthesis
+### Original project-level synthesis — frozen challenge target
 
 - `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md`
-- synthesis commit at initial challenge: `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`
+- exact challenge target commit: `aee65a9f6b064b7a221c3f8a66dc35a5a9cc6f6e`
 - status: OPEN HORIZON / NOT CANON / NOT TRACE OR ME CHANGE
+
+Do not rewrite this object as if later repairs were always present. It remains the source object that was attacked.
 
 ### Framework ecological/climate attack
 
 - `planning/ANSWERABLE_CONSTRUCTION_ECOLOGICAL_ATTACK_20260911.md`
+- commit: `af0cab8825043f9f590a0429a9ac3f57bfa92f67`
 - result: SYNTHESIS-ONLY REPAIR REQUIRED
 
 ### Codex institutional attack
@@ -34,21 +37,52 @@ PROJECT PURPOSE != REVIEW LOOP
 - COM #74 comment `5640254204`
 - result: SYNTHESIS-ONLY REPAIR REQUIRED
 
-### Codex build lane
+### Framework repaired synthesis candidate v0.2
 
-- PR #211 — `BUILD: Answerable Construction Casebook v0.1`
-- branch: `codex/answerable-construction-casebook-v0-1-20260911`
-- seeded file: `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`
-- seed head: `7bd3be240900b4c92a7fc1cc92ccfabc5bc09726`
+- `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md`
+- commit: `8608eceb982a644ad0c64d23c65a3d27b4314674`
+- inputs: original synthesis + Framework ecological attack + Codex institutional attack
+- intentionally does **not** claim CC's independent human–AI architecture as an input
+- status: WORKING CANDIDATE / NOT CANON / NOT TRACE OR ME CHANGE
+
+### Codex Casebook v0.1 — MERGED
+
+- file: `planning/ANSWERABLE_CONSTRUCTION_CASEBOOK_v0_1.md`
+- build PR: #211
+- Codex build head: `d6fc137d7474a7732e2a6f3db49aea73461bcb34`
+- merge commit: `06f7e4d467374ca313a38b16b992487e1db5bcac`
+- status: WORKING CASEBOOK / NOT CANON / NOT DECISION RULE
+
+The casebook now gives three concrete construction settings:
+- rural/regional hospital-service transition;
+- Thames Estuary 2100 adaptive flood-risk transition;
+- AI-generated software-patch deployment/co-development scenario.
+
+Its cross-domain remainder is deliberately small: keep promised capability connected to the people/scopes, functions, permissions, resources and clocks on which it depends; route actual decisions back to the stronger domain owner.
+
+### Codex Reader v0.1 — ACTIVE BUILD
+
+- PR #213 — `BUILD: Answerable Construction Reader v0.1`
+- branch: `codex/answerable-construction-reader-v0-1-20260911`
+- target file: `planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md`
+- seed head: `9b39e4fc5745a923e6f78fa84f97f653f87a8e12`
 - owner: CODEX
 
-### Claude Code build lane
+Purpose: turn the current positive-construction work into a coherent human-readable project layer without turning it into a method, questionnaire, PSFH feature, TRACE specification or ME revision.
+
+The human–AI section must remain provisional and explicitly revisable by CC #212.
+
+### Claude Code Reciprocal Co-development Architecture v0.1 — ACTIVE / NO CC BUILD COMMIT YET
 
 - PR #212 — `BUILD: Reciprocal Co-development Architecture v0.1`
 - branch: `cc/reciprocal-codevelopment-architecture-v0-1-20260911`
-- seeded file: `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`
-- seed head: `b3cfe9fdc6609621c41f8ea201f96a069f84e528`
+- target file: `planning/RECIPROCAL_CODEVELOPMENT_ARCHITECTURE_v0_1.md`
+- seed head remains: `b3cfe9fdc6609621c41f8ea201f96a069f84e528`
 - owner: CLAUDE CODE
+
+As of the last live sync, the branch still contains only Framework's shell. Do not claim CC has built the architecture until the head changes.
+
+CC's absence does not block the casebook, reader, repaired synthesis or other project construction.
 
 ## Repairs already earned — preserve unless later broken
 
@@ -76,7 +110,7 @@ The project may expose the collision without pretending to resolve it.
 
 ### R3 — competence informs delegation; it does not create legitimacy
 
-The synthesis must separate at least:
+The synthesis and later architecture must separate at least:
 
 - propose;
 - advise;
@@ -155,25 +189,38 @@ Naming them does not solve collision.
 
 Do not let `shared` mean merely that an aggregate improves while a subgroup loses access.
 
-## Current project-level hypothesis after attacks
+## Cross-domain survivors strengthened by the merged casebook
 
-A narrower candidate than the initial synthesis question:
+The Casebook supports, without validating as universal law:
+
+1. specify the bearer/function/scale being sustained;
+2. commitments can create useful capacity while imposing concentrated loss;
+3. separate proposal, advice, authorisation, implementation and review;
+4. connect promised benefit to material dependencies and readiness dates;
+5. distinguish revisable plans/artifacts from irreversible consequences;
+6. keep unmet obligations and affected scopes visible even when they lack direct voice.
+
+These remain project-level working claims, not a priority rule.
+
+## Current project-level hypothesis after attacks + casebook
 
 > **How can bounded entities and groups build viable, worthwhile shared futures through commitments that make real capability or other domain-owned positive conditions possible, while keeping affected scope, externalised burden, changing goals, authority and the limits of correction visible enough to contest and revise where revision remains possible?**
 
 This remains a research compression, not a universal rule.
 
-## What Codex #211 must add
+## What Codex #213 must add
 
-The casebook should make the abstractions concrete across three real/publicly grounded transitions and show:
+The Reader should answer a different need from the Casebook:
 
-- where domain owners are sufficient;
-- where owner handoff is the correct result;
-- where cross-domain coupling still matters;
-- where apparently portable language fails;
-- what, if anything, the project contributes after those deductions.
+- coherent ordinary-language narrative rather than field structure;
+- explain the positive half without converting it into a method;
+- show why commitment can be constructive closure;
+- keep owner routing and unresolved collision visible;
+- explain authority/answerability/irreversibility without claiming a universal legitimacy rule;
+- treat human–AI co-development as provisional pending CC #212;
+- explain how this layer relates to PSFH, TRACE, Mechanical Ethics and Campfire without making a brand hierarchy.
 
-Framework should resist adding theory merely because a case produces an empty field.
+No prompts/questions for a visitor to fill out.
 
 ## What CC #212 must add
 
@@ -234,11 +281,13 @@ It is one or more of:
 - a delegation/authority relationship becomes operationally explicit;
 - a future failure mode gets a real correction/recovery route;
 - a cross-domain coupling is identified that no single owner currently carries;
-- the project learns that an existing field already owns the problem better and gets smaller.
+- the project learns that an existing field already owns the problem better and gets smaller;
+- a new project layer becomes understandable without becoming compulsory procedure.
 
 ```text
 BUILD != PROOF
 AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
 SMALLER_CAN_BE_PROGRESS
+READER != WORKSHEET
 ```
