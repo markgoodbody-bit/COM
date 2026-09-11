@@ -157,21 +157,19 @@ def validate(doc: Any) -> list[str]:
         else:
             norm_new.append(n)
 
-    widening = False
-    for child in norm_new:
-        if not any(covers(parent, child) for parent in norm_transferred):
-            widening = True
-            errors.append(f"transfer.new_write_scope: {child!r} exceeds transferred scope without separately authorized widening")
+    widened_paths = [child for child in norm_new if not any(covers(parent, child) for parent in norm_transferred)]
     missing_no_touch = sorted(set(old_no_touch) - set(new_no_touch))
-    if missing_no_touch:
-        widening = True
-        errors.append("transfer.new_no_touch: inherited no-touch constraints removed without separately authorized change: " + ", ".join(missing_no_touch))
+    widening = bool(widened_paths or missing_no_touch)
 
     explicit_scope_change = transfer.get("explicit_scope_change_authorized")
     if not isinstance(explicit_scope_change, bool):
         errors.append("transfer.explicit_scope_change_authorized: must be boolean")
         explicit_scope_change = False
     if widening and explicit_scope_change is not True:
+        if widened_paths:
+            errors.append("transfer.new_write_scope: exceeds transferred scope without separately authorized widening: " + ", ".join(widened_paths))
+        if missing_no_touch:
+            errors.append("transfer.new_no_touch: inherited no-touch constraints removed without separately authorized change: " + ", ".join(missing_no_touch))
         errors.append("transfer.explicit_scope_change_authorized: must be true for widening/no-touch relaxation")
 
     errors.extend(authorization_errors(doc.get("authorization"), consequence == "consequential", widening))
