@@ -57,6 +57,12 @@ test('both source pins survive integration and describe the revised editions', a
     const html = await readFile('out/'+view.output,'utf8');
     assert.ok(html.includes(expected));
   }
+  const startView = await readFile('out/read/start.html','utf8');
+  for (const href of [
+    'https://pleasestartfromhere.com/resources/mechanical-ethics/README.md',
+    'https://pleasestartfromhere.com/resources/trace/README.md',
+    'https://pleasestartfromhere.com/read/trace-spine.html'
+  ]) assert.ok(startView.includes('href="'+href+'"'), href);
 });
 
 test('indexes retain existing links, expose summaries first and route six prompts separately', async () => {
