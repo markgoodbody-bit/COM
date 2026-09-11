@@ -1,0 +1,44 @@
+{
+  "format": "reciprocal-delegation-recovery/0.1",
+  "transfer_id": "RECOVERY-PASS-STALLED-001",
+  "object": {
+    "repository": "markgoodbody-bit/COM",
+    "ref": "public/door",
+    "transferred_write_scope": ["app/page.tsx", "public/explore/challenge.md"],
+    "inherited_no_touch": ["TRACE", "ME", "Campfire Production", "credentials"]
+  },
+  "previous_lane": {
+    "owner": "CODEX",
+    "state": "stalled_named",
+    "reason": "coordination read confirmed assigned branch remained at seed and Framework explicitly assumed bounded source ownership",
+    "last_claimed_head": "2222222222222222222222222222222222222222",
+    "mutating_transferred_scope": false
+  },
+  "transfer": {
+    "decision_source": "COM coordination comment naming takeover and exact branch state",
+    "current_head": "3333333333333333333333333333333333333333",
+    "old_claim_historical": true,
+    "new_owner": "FRAMEWORK",
+    "consequence_class": "routine_reversible",
+    "new_write_scope": ["app/page.tsx"],
+    "new_no_touch": ["TRACE", "ME", "Campfire Production", "credentials"],
+    "explicit_scope_change_authorized": false
+  },
+  "authorization": {
+    "required": false,
+    "request_id": null,
+    "approval_token": null,
+    "approval_received": false,
+    "approval_value": null
+  },
+  "new_lane": {
+    "start_head": "3333333333333333333333333333333333333333",
+    "history_preserved": true,
+    "recovery_strategy": "not_applicable"
+  },
+  "handback": {
+    "event": "source merge receipt posted, then publication delegated separately",
+    "receipt_is_review": false,
+    "success_widens_authority": false
+  }
+}

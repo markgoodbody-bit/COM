@@ -1,0 +1,30 @@
+{
+  "format": "reciprocal-delegation-recovery/0.1",
+  "transfer_id": "RECOVERY-FAIL-DOUBLE-001",
+  "object": {
+    "repository": "markgoodbody-bit/COM",
+    "ref": "planning/example.md",
+    "transferred_write_scope": ["planning/example.md"],
+    "inherited_no_touch": ["TRACE", "ME"]
+  },
+  "previous_lane": {
+    "owner": "CODEX",
+    "state": "building",
+    "reason": "second mutator started before prior lane stopped",
+    "last_claimed_head": "4444444444444444444444444444444444444444",
+    "mutating_transferred_scope": true
+  },
+  "transfer": {
+    "decision_source": "none",
+    "current_head": "4444444444444444444444444444444444444444",
+    "old_claim_historical": false,
+    "new_owner": "FRAMEWORK",
+    "consequence_class": "routine_reversible",
+    "new_write_scope": ["planning/example.md"],
+    "new_no_touch": ["TRACE", "ME"],
+    "explicit_scope_change_authorized": false
+  },
+  "authorization": {"required": false, "request_id": null, "approval_token": null, "approval_received": false, "approval_value": null},
+  "new_lane": {"start_head": "4444444444444444444444444444444444444444", "history_preserved": true, "recovery_strategy": "not_applicable"},
+  "handback": {"event": "receipt", "receipt_is_review": false, "success_widens_authority": false}
+}

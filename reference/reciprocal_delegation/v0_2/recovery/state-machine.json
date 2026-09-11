@@ -1,0 +1,72 @@
+{
+  "format": "reciprocal-delegation-recovery-state-machine/0.1",
+  "status": "non-production-reference",
+  "initial_state": "ACTIVE_OLD_LANE",
+  "states": {
+    "ACTIVE_OLD_LANE": {
+      "description": "Previous mutator still owns the named scope.",
+      "allowed_transitions": ["STOPPED", "STALLED_NAMED", "NARROWED", "HANDBACK", "PARTIAL_FAILURE"]
+    },
+    "STOPPED": {
+      "description": "Previous lane explicitly stopped before transfer.",
+      "allowed_transitions": ["REACQUIRE_HEAD"]
+    },
+    "STALLED_NAMED": {
+      "description": "A coordination decision names why the lane is treated as stalled; elapsed time alone is insufficient.",
+      "allowed_transitions": ["REACQUIRE_HEAD"]
+    },
+    "NARROWED": {
+      "description": "Previous lane surrendered the transferred scope while possibly retaining a disjoint scope.",
+      "allowed_transitions": ["REACQUIRE_HEAD"]
+    },
+    "HANDBACK": {
+      "description": "Previous lane delivered and returned control.",
+      "allowed_transitions": ["REACQUIRE_HEAD"]
+    },
+    "PARTIAL_FAILURE": {
+      "description": "Previous mutation failed or partially completed; recovery must preserve history.",
+      "allowed_transitions": ["REACQUIRE_HEAD"]
+    },
+    "REACQUIRE_HEAD": {
+      "description": "Read current head and compare it with the previous lane's last claimed head.",
+      "allowed_transitions": ["CLAIM_HISTORICAL", "TRANSFER_SCOPE"]
+    },
+    "CLAIM_HISTORICAL": {
+      "description": "Required when the current head differs from the previous last claimed head.",
+      "allowed_transitions": ["TRANSFER_SCOPE"]
+    },
+    "TRANSFER_SCOPE": {
+      "description": "Name new owner, inherited no-touch constraints, consequence class and transferred write scope.",
+      "allowed_transitions": ["AUTHORIZED", "START_NEW_LANE"]
+    },
+    "AUTHORIZED": {
+      "description": "Request-specific legible authorization for consequential work or explicit scope/no-touch widening.",
+      "allowed_transitions": ["START_NEW_LANE"]
+    },
+    "START_NEW_LANE": {
+      "description": "New mutator starts from the exact reacquired head; previous lane is not concurrently mutating transferred scope.",
+      "allowed_transitions": ["FORWARD_RECOVERY", "WORK", "HAND_BACK"]
+    },
+    "FORWARD_RECOVERY": {
+      "description": "Repair a partial failure using forward history-preserving mutation.",
+      "allowed_transitions": ["WORK", "HAND_BACK"]
+    },
+    "WORK": {
+      "description": "Bounded mutation inside transferred scope and inherited gates.",
+      "allowed_transitions": ["HAND_BACK"]
+    },
+    "HAND_BACK": {
+      "description": "Return an observable receipt. Receipt is not agreement, approval or review.",
+      "allowed_transitions": []
+    }
+  },
+  "invariants": [
+    "SINGLE_MUTATOR != PERMANENT_OWNER",
+    "HANDOFF != IDENTITY_TRANSFER",
+    "MOVED_HEAD -> OLD_CLAIM_HISTORICAL",
+    "SUCCESS != WIDER_AUTHORITY",
+    "RECEIPT != REVIEW",
+    "RECOVERY_PRESERVES_HISTORY",
+    "REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION"
+  ]
+}
