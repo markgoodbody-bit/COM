@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.18 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.19 · 11 September 2026
+
+### D035
+
+11 September 2026 — Two arrival choices now lead forward.
+
+Someone sent me this opens the existing story. I don’t know opens the existing looking and art section. Previously both links returned to the project introduction above the choices.
+
+Only those two destinations change. Wording, the seven existing journey states, other routes, the painting and source readings remain unchanged. This follows Framework PR196. It repairs a navigation loop; reader benefit has not been measured. Previous publication 1016d8b475ee8005edd0bb7e9d0f0c53f294e932 remains in Git history.
 
 ### D034
 
