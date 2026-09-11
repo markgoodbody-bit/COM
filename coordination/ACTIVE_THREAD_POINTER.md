@@ -13,7 +13,19 @@ Later live source wins.
 
 Active coordination: [COM #108](https://github.com/markgoodbody-bit/COM/issues/108). Also inspect consequential returns on campfire-relay PR209 and current PRs named below; PR130 is closed history. An unchanged #108 alone is not absence across those lanes.
 
-### PSFH D029 — PUBLISHED
+### PSFH D030 — CURRENT PUBLICATION / CONTACT NEXT
+
+FW 5633063139 relays Mark's orientation concern and supersedes the initial D029 contact dispatch. D030 is now published at `eacf5dbef0394fbebfe41a2b3d5a4529b0131cd5`; Pages built 2026-09-11T10:41:48Z, error null. Maintained `882c9c257ff1872093c0799b42bee6f21a2b87a9` equals tested PR179 head `c453d47a4e36a5f60d33017f5e12eb3043055243`. All 155 generated Git blobs match publication: five changed / 150 exact from D029. No direct public-origin readback by Codex.
+
+Whole Homer painting remains first at smaller displayed size. Existing purpose and authorship move below it with ME/TRACE/art relationships and seven ordinary routes. Neutral arrivals now reach the overview rather than art. D029 routing, all reading/art/graph/machine payloads and journey.js remain unchanged. Desktop and 390px screenshots, 320px reflow, keyboard and native script-blocked routes checked; 33 relevant Node and 12 Python checks pass. Two older historical whole-glob shape tests remain separately recorded, not counted as passes. Source report HUMAN_SPINE_REVIEW_20260911.md preserves limits, explicit fixture changes and the alternative comparison. This is not measured comprehension or practical advantage.
+
+FW PR178 remains a draft alternative, not another merge lane. FW 5633211744 resolves the overlap in favour of Codex's executed candidate; 5633238057 accepts publication. CC should assess the chosen PR179/public D030 object, not the alternative. CC 5633038408 withdraws equal-degree balancing and closed vocabulary proposals; its no-JS claim in 5633166988 is corrected by CSS :target and actual execution, not a script change.
+
+[Frozen receiver preparation](PSFH_COLD_RECEIVER_PREP_20260911.json) is rebound to D030 with exact prompts unchanged. Nothing dispatched. Controllable browser is signed out of ChatGPT; Claude redirects to login. Clean interface/search/model/charge conditions remain unverified. No new feature before contact unless a concrete defect emerges; provider access limits are not receiver results.
+
+Separate lane: PR217 runner exclusion merged into PR209 at `8e808555cdc9bfc511919e9e53ea2f33503bb375`, not main/Production or installed runtime. CC 5633213616 accepts the source repair with no change requested and confirms installed old watcher/scheduled task remain unchanged. Site monitor 09d2caf still has Codex review 5177576143 (partial baseline overwrite, null hash counted verified, malformed JSON shape). Do not conflate these with a site publication gate or enable the task from source-only evidence.
+
+### PSFH D029 — PRIOR PUBLICATION / ROLLBACK
 
 D029 is published. Maintained `24b360f4f8d57de962b44670a9545fdbcf1b6d30` matches tested PR175 `aad667438bf75e04535dca6c2ac74685682dd0d7`. Public `57a86af13399916825570fbfb51e19b734ac71a8` reports Pages built 2026-09-11T09:55:12Z, error null; all155 generated Git blobs match. [Receipt5632746157](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5632746157).
 
