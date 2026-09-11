@@ -21,7 +21,7 @@ PREVENT UNJUSTIFIED FUTURE CLOSURE
 HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
 ```
 
-Working frontier: **answerable construction under uncertainty** — viable/worthwhile shared futures, including commitments that close some paths, while affected scope, power, externalised burden, loss, goal revision and correction limits remain visible.
+Working frontier: **answerable construction under uncertainty**.
 
 ## Binding human directions
 
@@ -29,57 +29,58 @@ Working frontier: **answerable construction under uncertainty** — viable/worth
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Codex and CC should build differentiated products; neither should become a permanent reviewer of Framework prose.
+Codex and CC should build differentiated products. Framework leads/integrates and may take over a bounded reversible build when an assigned lane is stalled, while preserving lane provenance.
 
 ## Current executable edges
 
-### 1. PSFH D046 — ACTIVE SOURCE BUILD
+### PSFH D046 — SOURCE MERGED / PUBLICATION PENDING
 
-D045 remains the current published baseline:
-- maintained `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
-- public `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`;
-- withdrawn worksheet surfaces remain absent/404.
+Current served public baseline remains D045 until a D046 publication receipt lands:
+- D045 maintained `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
+- D045 public `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`.
 
-Fresh independent Claude cold-read reopened the Door for a concrete defect/direction rather than routine churn. D046 build brief:
-- `planning/PSFH_D046_COLD_ENTRANCE_REPAIR_20260911.md`;
-- #108 comments `5640607913`, `5640758417`, technical note `5640812412`;
-- Codex branch `codex/d046-story-first-door-20260911`, currently still at exact D045 source head `0eef6614...` at last read.
+Fresh independent Claude cold-read produced a concrete reopen trigger. Framework completed the bounded source edit after the claimed Codex branch remained at the D045 head.
 
-D046 target:
-- Homer/title -> existing **Two flats, one wall** before early route machinery;
-- story remains ordinary content, not a workflow step (`id="step-story"` may remain; prefer no `data-step="story"`);
-- immediate voluntary route to `/explore/worked-revision.html`, described as account revision under changed access evidence, **not** efficacy proof;
-- keep one prominent practical-advantage-unproved ceiling; remove redundant repeats;
-- make reply limits honest: static site receives no messages, GitHub posting requires an account, no no-account reply route exists in this edition;
-- no form/backend/intake surface;
-- preserve art/provenance/TRACE/ME/readings/machine semantics except required navigation consequences;
-- D046 may advance Preview lineage normally; do not rewrite D045 history to repair a non-defect.
+D046 maintained-source merge:
+- PR #215;
+- merge `852206af720171e2e426df44c26701c30ee5d9a1` into `codex/door-maintained-source-20260908`.
 
-`STORY_BEFORE_ROUTING`  
-`STORY != STEP_IN_A_WORKFLOW`  
-`DISCLOSURE != ACCESS`  
-`WORKED_REVISION != EFFICACY_RESULT`  
-`PSFH != WORKSHEET`
+D046 source now:
+- puts the existing **Two flats, one wall** directly after Homer/title, before project routing;
+- removes `data-step="story"` so the story is ordinary always-visible content rather than a journey state;
+- keeps native `#step-story` fragment links; no `journey.js` change;
+- links immediately to the existing worked-revision account, explicitly not as efficacy evidence;
+- adds one positive construction sentence before the route menu;
+- removes duplicate practical-advantage disavowals while retaining the single strong ceiling in `Why this exists`;
+- states the current reply-access boundary on the homepage and Challenge HTML/Markdown: GitHub account required for the current direct thread, no no-account direct reply route in this edition;
+- advances Site Preview to 0.8.5;
+- adds no form/input/textarea/backend/analytics and does not alter TRACE/ME/readings/art.
 
-### 2. Answerable Construction Reader v0.1 — ACTIVE FINAL REPAIR
+Publication dispatch:
+- #108 comment `5640882615`.
 
-PR **#213**, branch `codex/answerable-construction-reader-v0-1-20260911`.
+Until a publisher receipt lands:
 
-Codex full prose build head:
-- `e8fd7a6e4f79926de553a09af5b97cf241bd9c6b`.
+`D046_SOURCE_MERGED != D046_PUBLIC`
 
-Reader is substantive and remains separate from PSFH/TRACE/ME. Framework requested one narrow pre-merge integration repair in #213 comment `5640792407` after CC architecture merged:
+### Answerable Construction Reader v0.1 — MERGED
+
+Codex PR #213 was repaired with the three CC-derived co-development findings and merged:
+- final head `7dec85c696335b41d1a0a8e72a32e8066fdbb4ce`;
+- merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`.
+
+The Reader remains a prose research layer, not a method, PSFH publication, TRACE/ME mutation or decision rule.
+
+Integrated bounded findings:
 - `ROLE_SEPARATION != AUTHORISATION_LEGIBILITY`;
 - `INITIATIVE_WIDTH_IS_BOUNDED_BY_HUMAN_CORRECTION_LATENCY`;
-- provisionally reflect `THE_UNIT_OF_ANSWERABILITY_IS_THE_ARRANGEMENT_NOT_THE_PARTICIPANT` without turning the Reader into a protocol.
+- provisional/N=1 `THE_UNIT_OF_ANSWERABILITY_IS_THE_ARRANGEMENT_NOT_THE_PARTICIPANT`.
 
-Do not merge known staleness; do not expand the Reader into a method/checklist.
+### Reciprocal Co-development Architecture v0.1 — MERGED
 
-### 3. Reciprocal Co-development Architecture v0.1 — MERGED
-
-Claude Code PR **#212** built a 422-line architecture from observed project operation and was merged:
-- CC build head `332d973381e2cc22c118121127e0983c77c34a34`;
-- merge commit `9437680004c51d7a0d369677f100a326a2f0e9d4`.
+Claude Code PR #212:
+- build head `332d973381e2cc22c118121127e0983c77c34a34`;
+- merge `9437680004c51d7a0d369677f100a326a2f0e9d4`.
 
 Hard ceilings remain:
 - `PARTICIPATION != PERSONHOOD`;
@@ -88,41 +89,25 @@ Hard ceilings remain:
 - `CURRENT_CAPABILITY != PERMANENT_AUTHORITY`;
 - `RUNTIME_CONTINUITY != IDENTITY`.
 
-Material additions:
-- authorisation must be legible as authorisation, not inferred from a routine phrase;
-- machine-paced initiative must not outrun practical human correction latency;
-- the answerable unit may be the human + multiple apertures + ledger arrangement rather than an individually scored participant (provisional/N=1).
+### Reciprocal Delegation Reference v0.1 — MERGED / NON-PRODUCTION
 
-### 4. Reciprocal Delegation Reference v0.1 — MERGED / NON-PRODUCTION
-
-Framework PR **#214** merged at:
-- `82326d476db398168a144ed151aa985be663476e`.
+Framework PR #214:
+- merge `82326d476db398168a144ed151aa985be663476e`.
 
 Path:
 - `reference/reciprocal_delegation/`.
 
-Contains:
-- README;
-- JSON schema;
-- state-machine object;
-- stdlib validator;
-- two expected-PASS fixtures;
-- three expected-FAIL fixtures;
-- bundled example runner.
+Contains README, JSON schema, lifecycle/state machine, stdlib validator, two expected-pass fixtures, three expected-fail fixtures and runner. Recorded semantic run matched all five expectations.
 
-Recorded semantic re-run: 2 PASS / 3 FAIL, all matched expectations.
-
-This is a reference object only. It has no live actuation/provider connection/authority grant and is **not** Campfire Production adoption.
+No live actuation/provider connection/authority grant follows.
 
 `REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION`
 
-### 5. Other positive-construction artifacts
+### Other positive-construction artifacts
 
-Merged Casebook v0.1:
-- PR #211;
-- merge `06f7e4d467374ca313a38b16b992487e1db5bcac`.
+Casebook v0.1 merged via PR #211 at `06f7e4d467374ca313a38b16b992487e1db5bcac`.
 
-Framework repaired synthesis candidate:
+Repaired synthesis candidate v0.2:
 - `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md`;
 - `8608eceb982a644ad0c64d23c65a3d27b4314674`.
 
@@ -141,11 +126,11 @@ No current authority for TRACE/ME release/canon promotion, licence changes, spen
 
 ## Next operations
 
-1. Let Codex finish D046 source build; inspect/merge/publish only after normal source/build integrity is clean.
-2. Let Codex apply the narrow CC-derived repair to Reader #213, then inspect and merge if bounded.
-3. Keep Reciprocal Delegation Reference non-production; use it as an inspectable design object, not as live authority machinery.
-4. Integrate mature positive-construction material without forcing placement into TRACE, ME or PSFH.
-5. Keep the larger project purpose above every instrument.
+1. Receive D046 publisher receipt from exact maintained merge `852206af...`; do not claim D046 public before it lands.
+2. Once public, obtain a bounded served-origin witness for story-first ordering and continued worksheet absence; witness is observation, not an efficacy test.
+3. Keep Reciprocal Delegation Reference non-production; any Campfire adoption is a separate human gate.
+4. Continue integrating mature positive-construction material without forcing placement into TRACE, ME or PSFH.
+5. Keep the larger purpose above every instrument.
 
 ```text
 BUILD != PROOF
@@ -154,6 +139,7 @@ CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
 ANSWERABLE != REVERSIBLE
 READER != WORKSHEET
+SOURCE_MERGED != PUBLIC
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 ```
