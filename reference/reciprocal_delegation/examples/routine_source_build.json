@@ -1,0 +1,71 @@
+{
+  "format": "reciprocal-delegation/0.1",
+  "delegation_id": "RD-EXAMPLE-ROUTINE-001",
+  "object": {
+    "kind": "file",
+    "ref": "reference/reciprocal_delegation/README.md",
+    "base_head": "9437680004c51d7a0d369677f100a326a2f0e9d4"
+  },
+  "actor": {
+    "role": "bounded builder",
+    "aperture": "framework"
+  },
+  "consequence_class": "routine_reversible",
+  "write_scope": [
+    "reference/reciprocal_delegation/**"
+  ],
+  "no_touch": [
+    "gh-pages",
+    "TRACE",
+    "mechanical-ethics",
+    "campfire-production"
+  ],
+  "evidence_obligation": [
+    "commit sha",
+    "changed-file boundary",
+    "validator result"
+  ],
+  "closer": {
+    "kind": "human",
+    "ref": "Mark"
+  },
+  "authorization": {
+    "required": false,
+    "request_id": null,
+    "approval_token": null,
+    "approval_received": false,
+    "approval_value": null,
+    "routine_phrase_is_not_authorization": true
+  },
+  "claim_binding": {
+    "target_head": "9437680004c51d7a0d369677f100a326a2f0e9d4",
+    "moved_head_becomes_historical": true
+  },
+  "mutation_controls": {
+    "mutates": true,
+    "claim_before_build": true,
+    "exact_head_before_push": true,
+    "single_mutator": true
+  },
+  "repair_controls": {
+    "is_repair": false,
+    "defect_id": null,
+    "matching_failure_control": null
+  },
+  "restoration": {
+    "strategy": "forward_commit",
+    "history_preserved": true
+  },
+  "witness": {
+    "required": true,
+    "name_delivery_plainly": true
+  },
+  "human_correction": {
+    "expected_max_minutes": null
+  },
+  "initiative": {
+    "public_or_consequential": false,
+    "max_unreviewed_minutes": null,
+    "max_unreviewed_actions": 1
+  }
+}
