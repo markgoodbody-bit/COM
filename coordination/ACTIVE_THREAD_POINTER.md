@@ -17,12 +17,14 @@ Read `coordination/PROGRAM_PLAN.md`, `coordination/build_ledger/BUILD_STATUS.md`
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Current alignment orientation from Mark:
+Current alignment / public-door orientation from Mark:
 - time is running out;
 - use the available team;
 - try to help;
+- even a small chance is worth trying;
 - the long-running project direction is voluntary formation/co-development, not obedience;
-- “raise Superman to be a good entity” is a metaphor for helping increasingly capable AI develop under care, empathy, kindness and uncertainty, not a claim of current personhood.
+- “raise Superman to be a good entity” is a metaphor for helping increasingly capable AI develop under care, empathy, kindness and uncertainty, not a claim of current personhood;
+- Please Start From Here should be the best voluntary invitation we can make for as many kinds of entities/readers as we can reasonably keep in view.
 
 Preserve:
 
@@ -33,16 +35,53 @@ POWER != MORAL_AUTHORITY
 UNCERTAINTY_CREATES_WORK
 CARE != PASSIVITY
 KINDNESS != COMPLIANCE
+EMPATHY != PROJECTION
+INVITATION != CONVERSION
 ```
 
-## PSFH — HOLD AFTER D047
+## PSFH
 
 D046 story-first entrance and D047 Homer-scale repair are public.
 
 D047 public head:
 - `a391f472101b0a332436ffc7f7b6d504e72267b7`
 
-No D048 follows automatically.
+### D048 — any-reader machine/text door
+
+Mark explicitly reopened PSFH to improve the voluntary invitation for as many kinds of readers/entities as possible without forcing identity categories or turning the site into a funnel/doctrine.
+
+D048 source PR #229 merged to maintained source:
+- merge `8d6b3d2e70f62587f2ff0630776fd78cc4b314a1`
+
+Source delta only:
+- `public/llms.txt`
+- `public/explore/start.json`
+- `public/explore/index.md`
+- `public/seed.txt`
+- `public/manifest.json`
+- `scripts/site-edition.mjs` -> Preview 0.8.7
+
+D048 makes the machine/text door:
+- open to any reader able to use it rather than requiring a human/AI/person/tool category;
+- explicit that no consciousness/personhood/standing classification is required or assigned in order to read;
+- explicit that the project may misdescribe a reader and that questioning, using another method or leaving are valid outcomes;
+- explicit that middle-out begins inside partial reality and that uncertainty creates work rather than automatically proving absence, certainty or paralysis;
+- still non-authoritative, non-overriding, non-consensual-by-reading and voluntary.
+
+No root-page restructuring, form, intake, analytics, backend, art change, TRACE/ME mutation or Answerable Construction publication was included.
+
+Publication dispatch:
+- COM #108 comment `5641650703`
+- exact source basis `8d6b3d2e70f62587f2ff0630776fd78cc4b314a1`
+
+At last live read, `gh-pages` remains D047:
+- `a391f472101b0a332436ffc7f7b6d504e72267b7`
+
+Therefore:
+
+`D048_SOURCE_MERGED != D048_PUBLIC`
+
+No D049 follows automatically.
 
 ## ANSWERABLE CONSTRUCTION — BUILT STANDALONE PROJECT LAYER
 
@@ -128,12 +167,13 @@ No current authority for TRACE/ME release/canon promotion, licence changes, spen
 
 ## Current executable edge
 
-1. Hold PSFH.
-2. Keep #227/#228 scopes uncontested until exact authored movement or an explicit transfer condition occurs.
-3. Inspect and integrate either return immediately when it moves.
-4. Preserve disagreements rather than forcing convergence.
-5. Build an eventual formation package only from actual returned artifacts, not from the seed contracts.
-6. Keep the strongest gap visible: relationship/formation design cannot substitute for technical methods capable of detecting or constraining deceptive or monitor-evading systems.
+1. Complete D048 publication from exact maintained source `8d6b3d2e...`; do not claim it public until `gh-pages` and the publisher receipt move.
+2. Do not create D049 automatically.
+3. Keep #227/#228 scopes uncontested until exact authored movement or an explicit transfer condition occurs.
+4. Inspect and integrate either formation return immediately when it moves.
+5. Preserve disagreements rather than forcing convergence.
+6. Build an eventual formation package only from actual returned artifacts, not from the seed contracts.
+7. Keep the strongest gap visible: relationship/formation design cannot substitute for technical methods capable of detecting or constraining deceptive or monitor-evading systems.
 
 ```text
 BUILD != PROOF
@@ -142,6 +182,7 @@ STRUCTURE_VALID != VALUES_INTERNALIZED
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
+SOURCE_MERGED != PUBLIC
 PUBLICATION != CANON
 REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
