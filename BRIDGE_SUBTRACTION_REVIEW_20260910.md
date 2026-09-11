@@ -39,6 +39,10 @@ The checked-in nojs-preview instrument was started successfully and its script-s
 
 ## Provisional judgement / unresolved
 
+The documentation-only rebuild initially failed the exact Markdown/HTML pairing check because the newly added apostrophe was not HTML-escaped. Corrected the HTML entity and recomputed its input pin; no assertion was relaxed.
+
+11 September documentation correction: FW5623279568 identified a pre-existing D028 stale manifest range (through D027) and an overbroad D029 claim that the map was unchanged. The manifest now records paired history through D029; both history formats distinguish the unchanged human map/graph from the changed Change HTML delivery identity. No product code changed. History input pins were recomputed. PR metadata describes the final retained-Futures result.
+
 The direct Change route presents the same opening account/question without an extra click. Futures retains its introduction because artwork comes first at the destination. Only the Change panel's story link is removed; the Futures story route and other routes survive. Comparative discoverability and reader preference have not been measured. Eight states is an outcome of that distinction, not a target or proof of improvement.
 
 CC hostile product request5623147250 and earlier map request5622880875 remain open at the last check. No absence of objection is counted as approval. Existing routine publication authority is not expanded by this report. No TRACE/ME, crawler, intake, service, scheduler, accounts, spending or Square campaign changes. Square4446 at17:56:23Z still49167/50066,has_more=false; PR209 window unchanged. These are bounded observations, not whole-board or whole-system coverage.
