@@ -26,6 +26,8 @@
     "sitemap": "/sitemap.xml",
     "explore": "/explore/",
     "explore_text": "/explore/index.md",
+    "working_surface": "/explore/work.html",
+    "working_surface_text": "/explore/work.md",
     "explore_map": "/explore/map.json"
   },
   "source_repositories": [
@@ -89,6 +91,10 @@
     },
     "shared_root_label": {
       "scope": "The canonical root is named as shared reading for humans and AI readers. The older human_reading route key is retained as a compatibility alias; both resolve to the same public root."
+    },
+    "working_surface": {
+      "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5639673913",
+      "scope": "One additive static page collecting six existing working questions and routing to existing reading rooms. No intake, form, scoring, account, required sequence or efficacy claim."
     }
   },
   "boundaries": [
