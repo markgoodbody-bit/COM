@@ -9,19 +9,7 @@ Later live source and direct human direction win.
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `POINTER != WORLD`
 
-## Program spine
-
-Read `coordination/PROGRAM_PLAN.md` before routing work. PSFH, TRACE, Mechanical Ethics, Campfire/COM, art and field work are instruments inside the larger purpose.
-
-Current positive pair:
-
-```text
-PREVENT UNJUSTIFIED FUTURE CLOSURE
-+
-HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
-```
-
-Working frontier: **answerable construction under uncertainty**.
+Read `coordination/PROGRAM_PLAN.md` before routing work.
 
 ## Binding human directions
 
@@ -29,107 +17,138 @@ Working frontier: **answerable construction under uncertainty**.
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Codex and CC should build differentiated products. Framework leads/integrates and may take over a bounded reversible build when an assigned lane is stalled, while preserving lane provenance.
+Codex and CC should build differentiated products. Framework leads/integrates and may take over bounded reversible work when an assigned lane is stalled, preserving provenance and single-mutator discipline.
 
-## Current executable edges
+## PSFH
 
-### PSFH D046 — SOURCE MERGED / PUBLICATION PENDING
+### D046 — CLOSED / PUBLIC
 
-Current served public baseline remains D045 until a D046 publication receipt lands:
-- D045 maintained `0eef661490f86d7a3ce1c2fe995d3c47eb05ecbc`;
-- D045 public `eba89e0ff40bb5aa017dafc4bf67bb84a2be7057`.
+D046 story-first entrance is published and independently served-origin witnessed.
 
-Fresh independent Claude cold-read produced a concrete reopen trigger. Framework completed the bounded source edit after the claimed Codex branch remained at the D045 head.
+Final maintained:
+- `8e27856f2397779ab7cd65f882490a70fa6b2eef`
 
-D046 maintained-source merge:
-- PR #215;
-- merge `852206af720171e2e426df44c26701c30ee5d9a1` into `codex/door-maintained-source-20260908`.
+Public:
+- `d7e98da7bcf0a01ae6566de22d1e75b2a6313ccf`
 
-D046 source now:
-- puts the existing **Two flats, one wall** directly after Homer/title, before project routing;
-- removes `data-step="story"` so the story is ordinary always-visible content rather than a journey state;
-- keeps native `#step-story` fragment links; no `journey.js` change;
-- links immediately to the existing worked-revision account, explicitly not as efficacy evidence;
-- adds one positive construction sentence before the route menu;
-- removes duplicate practical-advantage disavowals while retaining the single strong ceiling in `Why this exists`;
-- states the current reply-access boundary on the homepage and Challenge HTML/Markdown: GitHub account required for the current direct thread, no no-account direct reply route in this edition;
-- advances Site Preview to 0.8.5;
-- adds no form/input/textarea/backend/analytics and does not alter TRACE/ME/readings/art.
+Root:
+- 21,045 bytes
+- SHA-256 `1f6f36d323e622ec0d4a9d29998ce4df983fc8e82d428a1b6870e29a19788eb0`
+
+D046 puts `Two flats, one wall` before route machinery, keeps the story outside the journey state machine, surfaces the worked revision without claiming efficacy, reduces duplicate disavowal, and states the current GitHub/no-account reply boundary.
+
+Claude Code independently matched the served root to the public Git blob byte-for-byte and corrected one attribution error: the cold-read that triggered D046 was an external Claude supplied by Mark, not CC.
+
+The original user-supplied cold-read is preserved at:
+- `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`
+- creation commit `b2b00cd9a0d065b389072464a95ac60cc3a63981`
+
+`EXTERNAL_CLAUDE != CLAUDE_CODE`
+
+### D047 — HOMER SCALE REPAIR / SOURCE MERGED / PUBLICATION PENDING
+
+Mark supplied a live screenshot and directly corrected the D046 visual balance:
+
+> **the painting is too tiny for the rest of the site**
+
+Root cause: old D030 CSS capped the hero at `28svh`.
+
+D047 source PR #216 merged to maintained source:
+- merge `1b05df50f599abe8f24978bb66684b8a27338de6`
+
+Exact visual override:
+
+```css
+body:has(.project-spine) .art-hero {
+  width: min(100%, 64rem, calc(70svh * 3801 / 2368));
+}
+```
+
+Intent: restore visual weight while preserving the full uncropped frame, title overlay and D046 story-first sequencing; no content/route/art/TRACE/ME change.
+
+Site Preview source advances 0.8.5 -> 0.8.6.
 
 Publication dispatch:
-- #108 comment `5640882615`.
+- #108 comment `5641044804`.
 
-Until a publisher receipt lands:
+At last live read, `gh-pages` still points to D046 `d7e98da7...`.
 
-`D046_SOURCE_MERGED != D046_PUBLIC`
+`D047_SOURCE_MERGED != D047_PUBLIC`
 
-### Answerable Construction Reader v0.1 — MERGED
+## Answerable Construction — BUILT PROJECT LAYER
 
-Codex PR #213 was repaired with the three CC-derived co-development findings and merged:
-- final head `7dec85c696335b41d1a0a8e72a32e8066fdbb4ce`;
-- merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`.
+### Reader v0.1 — MERGED
 
-The Reader remains a prose research layer, not a method, PSFH publication, TRACE/ME mutation or decision rule.
+PR #213 merge:
+- `dd8e3ace2336c0257a2ac5825534442812a82f2f`
 
-Integrated bounded findings:
-- `ROLE_SEPARATION != AUTHORISATION_LEGIBILITY`;
-- `INITIATIVE_WIDTH_IS_BOUNDED_BY_HUMAN_CORRECTION_LATENCY`;
-- provisional/N=1 `THE_UNIT_OF_ANSWERABILITY_IS_THE_ARRANGEMENT_NOT_THE_PARTICIPANT`.
+Human-readable project research layer; not a method, PSFH publication, TRACE/ME mutation or decision rule.
+
+### Casebook v0.1 — MERGED
+
+PR #211 merge:
+- `06f7e4d467374ca313a38b16b992487e1db5bcac`
 
 ### Reciprocal Co-development Architecture v0.1 — MERGED
 
-Claude Code PR #212:
-- build head `332d973381e2cc22c118121127e0983c77c34a34`;
-- merge `9437680004c51d7a0d369677f100a326a2f0e9d4`.
+CC PR #212:
+- build head `332d973381e2cc22c118121127e0983c77c34a34`
+- merge `9437680004c51d7a0d369677f100a326a2f0e9d4`
 
-Hard ceilings remain:
-- `PARTICIPATION != PERSONHOOD`;
-- `COMPETENCE != LEGITIMACY`;
-- `ENTRUSTMENT != OBEDIENCE`;
-- `CURRENT_CAPABILITY != PERMANENT_AUTHORITY`;
-- `RUNTIME_CONTINUITY != IDENTITY`.
+Preserve:
+- `ROLE_SEPARATION != AUTHORISATION_LEGIBILITY`
+- `INITIATIVE_WIDTH_IS_BOUNDED_BY_HUMAN_CORRECTION_CAPACITY`
+- provisional `THE_UNIT_OF_ANSWERABILITY_IS_THE_ARRANGEMENT_NOT_THE_PARTICIPANT`
+- `PARTICIPATION != PERSONHOOD`
+- `COMPETENCE != LEGITIMACY`
+- `RUNTIME_CONTINUITY != IDENTITY`
 
 ### Reciprocal Delegation Reference v0.1 — MERGED / NON-PRODUCTION
 
-Framework PR #214:
-- merge `82326d476db398168a144ed151aa985be663476e`.
+PR #214 merge:
+- `82326d476db398168a144ed151aa985be663476e`
 
-Path:
-- `reference/reciprocal_delegation/`.
+### Reciprocal Delegation v0.2 field repair — MERGED / NON-PRODUCTION
 
-Contains README, JSON schema, lifecycle/state machine, stdlib validator, two expected-pass fixtures, three expected-fail fixtures and runner. Recorded semantic run matched all five expectations.
+PR #217 merge:
+- `afb24db827cee9d413c615aadd7af9c23bb8209e`
 
-No live actuation/provider connection/authority grant follows.
+D046 exposed an over-specific v0.1 assumption: correction capacity was encoded only as a numeric minute window. No such numeric window had actually been declared for D046 publication.
 
-`REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION`
+v0.2 preserves the principle but permits honest correction bounds:
+- `time_bound`
+- `event_bound`
+- `time_and_event`
 
-### Other positive-construction artifacts
+D046 is represented truthfully as one public publication action followed by a named evidence receipt/hand-back, rather than inventing a clock.
 
-Casebook v0.1 merged via PR #211 at `06f7e4d467374ca313a38b16b992487e1db5bcac`.
+Preserve:
+- `PUBLIC != CONSEQUENTIAL`
+- `EVENT_BOUND != UNBOUNDED`
+- `CORRECTION_BOUND != FICTIONAL_CLOCK`
+- consequential work still requires request-specific legible authorization.
 
-Repaired synthesis candidate v0.2:
-- `planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_v0_2_CANDIDATE_20260911.md`;
-- `8608eceb982a644ad0c64d23c65a3d27b4314674`.
+Reference path:
+- `reference/reciprocal_delegation/v0_2/`
 
-Integration ledger:
-- `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`.
+No Campfire Production adoption follows.
 
 ## Instrument status / gates
 
-TRACE live `main`: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b` — v0.2.7 released baseline; v0.3 RC1 unreleased/not canon/not validated.
+TRACE `main`: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b` — v0.2.7 released baseline; v0.3 RC1 unreleased/not canon/not validated.
 
-ME live `main`: `44f7efb59806242fd26c572cbfbaaeaefaea2058` — v0.6.3 preservation baseline; v0.7 working candidate remains noncanonical/unvalidated.
+ME `main`: `44f7efb59806242fd26c572cbfbaaeaefaea2058` — v0.6.3 preservation baseline; v0.7 working candidate noncanonical/unvalidated.
 
-Campfire Relay live `main`: `08756b68d824b783fb214ff4790abf37f10150ca`.
+Campfire Relay `main`: `08756b68d824b783fb214ff4790abf37f10150ca`.
 
 No current authority for TRACE/ME release/canon promotion, licence changes, spend/provider accounts, participant studies, external institutional contact, Square actuation/campaign, credential movement or Campfire Production adoption.
 
-## Next operations
+## Current executable edge
 
-1. Receive D046 publisher receipt from exact maintained merge `852206af...`; do not claim D046 public before it lands.
-2. Once public, obtain a bounded served-origin witness for story-first ordering and continued worksheet absence; witness is observation, not an efficacy test.
-3. Keep Reciprocal Delegation Reference non-production; any Campfire adoption is a separate human gate.
-4. Continue integrating mature positive-construction material without forcing placement into TRACE, ME or PSFH.
+1. Complete D047 publication from maintained source `1b05df50...`; do not claim public until `gh-pages` moves and normal build receipt exists.
+2. Judge the enlarged Homer from the actual live page; direct human visual correction wins over old D030 sizing assumptions.
+3. Keep reciprocal-delegation v0.2 non-production; it is now grounded in an actual project trace rather than only constructed fixtures.
+4. Continue positive-construction work without forcing it into TRACE, ME or PSFH by momentum.
 5. Keep the larger purpose above every instrument.
 
 ```text
@@ -137,9 +156,8 @@ BUILD != PROOF
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
-ANSWERABLE != REVERSIBLE
-READER != WORKSHEET
 SOURCE_MERGED != PUBLIC
+REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 ```
