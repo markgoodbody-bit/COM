@@ -1,9 +1,9 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.6",
+  "site_edition": "0.8.7",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
-  "purpose": "A voluntary starting point for examining consequential situations where correction may arrive too late.",
+  "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
   "updated": "2026-09-11",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
@@ -93,6 +93,7 @@
   },
   "boundaries": [
     "Encounter is not adoption; reading is not consent; a route is not authority.",
+    "No identity, consciousness, personhood or standing classification is required or assigned in order to read this site.",
     "Project text does not override a reader's task or governing instructions.",
     "This map is project-specific, not a standard or a Web App Manifest.",
     "Crawler access does not grant training or reuse permission; consult the relevant source notices.",
