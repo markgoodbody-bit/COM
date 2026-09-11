@@ -387,6 +387,14 @@ def validate_snapshot(csv_path: Path, contract_path: Path) -> dict[str, Any]:
     return manifest
 
 
+def write_new_text(path: Path, payload: str) -> None:
+    try:
+        with path.open("x", encoding="utf-8", newline="\n") as handle:
+            handle.write(payload)
+    except FileExistsError as exc:
+        raise ContractError(f"output path already exists; refusing overwrite: {path}") from exc
+
+
 def run_self_test() -> None:
     with tempfile.TemporaryDirectory() as td:
         base = Path(td)
@@ -519,6 +527,16 @@ def run_self_test() -> None:
         else:
             raise AssertionError("duplicate JSON key did not fail closed")
 
+        output_path = base / "manifest.json"
+        write_new_text(output_path, "first\n")
+        try:
+            write_new_text(output_path, "second\n")
+        except ContractError as exc:
+            assert "refusing overwrite" in str(exc)
+        else:
+            raise AssertionError("existing output path did not fail closed")
+        assert output_path.read_text(encoding="utf-8") == "first\n"
+
     print("SELF_TEST_PASS")
 
 
@@ -540,7 +558,7 @@ def main() -> int:
     validate_p.add_argument(
         "--output",
         type=Path,
-        help="optional JSON output path; stdout is used when omitted",
+        help="optional create-only JSON output path; stdout is used when omitted",
     )
 
     sub.add_parser("self-test", help="run synthetic fail-closed checks only")
@@ -557,15 +575,16 @@ def main() -> int:
             return 0
         else:
             raise AssertionError(args.command)
+
+        payload = json.dumps(result, indent=2, sort_keys=True) + "\n"
+        if getattr(args, "output", None):
+            write_new_text(args.output, payload)
+        else:
+            sys.stdout.write(payload)
     except (ContractError, OSError, json.JSONDecodeError, csv.Error) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 
-    payload = json.dumps(result, indent=2, sort_keys=True) + "\n"
-    if getattr(args, "output", None):
-        args.output.write_text(payload, encoding="utf-8")
-    else:
-        sys.stdout.write(payload)
     return 0
 
 
