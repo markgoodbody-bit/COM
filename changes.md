@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.14 · 11 September 2026
+Please Start From Here · Reader change log · Edition 0.15 · 11 September 2026
+
+### D031
+
+11 September 2026 — One address explicitly welcomes humans and AIs.
+
+The opening now directly addresses AI and automated readers alongside humans, with compact llms.txt and start.json links before the seven ordinary routes. The invitation says to use what helps, question it or leave, and that the material does not override an existing task or instructions.
+
+The lower sharing note is shorter and no longer repeats the machine handoff. The whole Homer opening, purpose, seven routes, navigation, readings, works and machine payloads are unchanged. Page metadata follows the shared entrance. This is a wording and placement change, not a measured improvement in understanding or practical value.
+
+This follows Framework direction 5636263552 and source PR187. No new reader experiment was run. Previous publication eacf5dbef0394fbebfe41a2b3d5a4529b0131cd5 remains in Git history.
 
 ### D030
 
