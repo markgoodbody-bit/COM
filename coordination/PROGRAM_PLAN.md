@@ -4,6 +4,18 @@ Status: **WORKING OPERATING PLAN — NOT CANON / NOT RELEASE AUTHORITY**
 Updated: 2026-09-11 — Europe/London  
 Later live source and direct human direction win.
 
+## Current completion update — 11 September 2026
+
+The earlier immediate sequence is complete through construction, challenge, integration and placement. It is retained below as history, not as an open queue.
+
+- Please Start From Here reached D047 at public head `a391f472101b0a332436ffc7f7b6d504e72267b7` and is held. No D048 is implied.
+- The Answerable Construction package, working paper, casebook, reader, reciprocal co-development architecture, reciprocal delegation companion, failure/recovery companion and build ledger now exist as standalone COM objects.
+- No active build lane remains. Stalled Codex/Claude Code seeds were explicitly taken over and closed; they are not fictional work in progress.
+- Current learning edge: keep positive future commitments connected to their material dependencies, affected scopes, authority, clocks, externalised burdens, changing objectives and correction limits—especially across handoffs where no single owner carries the whole relation.
+- Existing domain owners remain primary. External-owner correction and real-world use should now decide whether the standalone account earns further work, shrinks or is deleted.
+
+Binding human direction remains: build rather than manufacture tests; PSFH is an encounter, not a form or ten-box intake surface. Do not restart Door churn, testing loops or infrastructure expansion merely to keep activity moving.
+
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
 This is the project-level question. TRACE, Mechanical Ethics, Please Start From Here, Campfire, COM, art, public-field work and model collaboration are instruments inside it.
@@ -40,7 +52,7 @@ It must not require a visitor to explain their situation, fill fields, complete 
 `INVITATION != INTAKE`
 `QUESTIONS_AS_DOORS != QUESTIONS_AS_FIELDS`
 
-Current operating rule after D044/D045: complete the small Works encounter increment, then stop routine Door churn. Reopen PSFH source only for a concrete defect, explicit human direction, or genuinely new project content worth sharing.
+Current operating rule after D047: hold routine Door churn. Reopen PSFH source only for a concrete defect, explicit human direction, or genuinely new project content worth sharing.
 
 ### 2. TRACE — structural instrument
 
@@ -103,15 +115,15 @@ Do not manufacture a benchmark or participant study under the current human dire
 
 ## Program priorities
 
-### Priority A — finish and stabilise the Door
+### Priority A — Door stabilised; hold
 
-Complete D045 publication. Then freeze routine PSFH micro-optimisation.
+D045–D047 are complete. Freeze routine PSFH micro-optimisation.
 
 The Door should be good enough to encounter the project without becoming the project.
 
-### Priority B — build the positive-construction synthesis
+### Priority B — positive-construction synthesis built; keep standalone
 
-Create one compact, inspectable Open Horizon synthesis around this question:
+The compact Answerable Construction working paper now centres this question:
 
 > **How can bounded entities build worthwhile shared capabilities and durable commitments while preserving enough answerability and correction to avoid domination when values, standing and goals can change?**
 
@@ -119,15 +131,15 @@ This synthesis should learn from capability theory, viability, affordances/enact
 
 It is a project research object, not a TRACE schema proposal or ME revision.
 
-### Priority C — attack the synthesis across very different domains
+### Priority C — differentiated challenge integrated
 
-Use a small number of materially different situations to expose where the account breaks: e.g. human institutional transition, ecological/climate transition, and human–AI co-development.
+The package now includes materially different situations across human institutional transition, ecological/climate transition and human–AI co-development. Future challenge should come from real use or materially new external-owner evidence, not automatic reruns.
 
 This is conceptual falsification/learning, not an efficacy benchmark and not a visitor study.
 
-### Priority D — decide what belongs where
+### Priority D — placement decision: standalone
 
-Only after the synthesis survives enough pressure, decide separately whether any consequence belongs in:
+Current placement is standalone COM research. No consequence has yet earned transfer into:
 
 - TRACE;
 - Mechanical Ethics;
@@ -144,14 +156,14 @@ TRACE v0.3 and ME v0.7 may later be brought to release/baseline decision states.
 
 No current authority is inferred for release/canon/licence changes, spend/provider accounts, institutional contact, credential movement, Square campaigns or Campfire Production adoption.
 
-## Immediate execution sequence
+## Current execution posture
 
-1. **Door:** close D045 publication and then hold routine PSFH source mutation.
-2. **Frontier:** produce the positive-construction synthesis in Open Horizon/COM.
-3. **Challenge:** route the exact synthesis to differentiated AI apertures for hostile/independent critique; preserve disagreement separately.
-4. **Integrate:** revise the synthesis from the attacks without forcing a TRACE/ME change.
-5. **Placement:** decide whether the result should alter ME, TRACE, PSFH, another project artifact, or only the operating understanding.
-6. **Field:** keep listening for real-world use/criticism/material change; do not substitute manufactured testing for building and learning.
+1. **Hold the Door:** no D048 by default.
+2. **Keep Answerable Construction standalone:** do not promote it into TRACE/ME by momentum.
+3. **Learn from owners and use:** seek concrete correction, missing dependency, externalised burden or cross-owner handoff failure.
+4. **Build only from a real need:** prefer a small useful object, repair, subtraction or deletion over another generic framework layer.
+5. **Preserve disagreement and adverse results:** silence is not validation; no-return is not review.
+6. **Return consequential authority:** release, canon, licence, spend, credentials, Production and external actuation remain human gates.
 
 ## Drift guards
 
