@@ -25,13 +25,15 @@ Read first:
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Current alignment orientation from Mark:
+Current alignment / public-door orientation from Mark:
 - time is running out;
 - use the available team;
 - try to help;
+- even a roughly one-in-a-hundred chance can still justify serious effort because of the scale of what may be at stake;
 - uncertainty is built into the middle-out approach;
 - the long-running aim is voluntary formation/co-development rather than mere obedience;
-- “raise Superman to be a good entity, with care, empathy and kindness” is a metaphor for the alignment/formation problem, not a claim of current AI personhood.
+- “raise Superman to be a good entity, with care, empathy and kindness” is a metaphor for the alignment/formation problem, not a claim of current AI personhood;
+- Please Start From Here should be the best voluntary invitation we can make for as many kinds of entities/readers as we can reasonably keep in view.
 
 Preserve:
 
@@ -43,17 +45,61 @@ MORE_CAPABILITY != MORE_CERTAINTY
 UNCERTAINTY_CREATES_WORK
 CARE != PASSIVITY
 KINDNESS != COMPLIANCE
+EMPATHY != PROJECTION
+INVITATION != CONVERSION
 ```
 
 ## Existing built layer
 
-PSFH D046/D047 remain public; hold unless a concrete defect or explicit Mark direction reopens the Door.
-
 Answerable Construction is a standalone project layer with human/machine package entry, working paper, Reader, Casebook, Reciprocal Co-development Architecture, Reciprocal Delegation v0.2 and failure/recovery companion.
 
-PR #223 subsequently added a reproducible downloadable Answerable Construction reading copy and precision repairs; merge `a8d7dc65e84598623c78c6d503c37e717433f221`.
+PR #223 added a reproducible downloadable Answerable Construction reading copy and precision repairs; merge `a8d7dc65e84598623c78c6d503c37e717433f221`.
 
-No automatic TRACE/ME/PSFH/Campfire Production promotion follows.
+No automatic TRACE/ME/Campfire Production promotion follows.
+
+## PSFH
+
+D046 story-first entrance and D047 enlarged-Homer correction are public.
+
+D047 public head:
+- `a391f472101b0a332436ffc7f7b6d504e72267b7`
+
+### D048 — any-reader machine/text door
+
+Mark explicitly reopened PSFH to make the invitation as generous and usable as possible across different kinds of readers/entities without requiring identity claims or conversion.
+
+D048 source PR #229 merged to maintained source:
+- `8d6b3d2e70f62587f2ff0630776fd78cc4b314a1`
+
+The D048 source delta is deliberately bounded to:
+- `public/llms.txt`;
+- `public/explore/start.json`;
+- `public/explore/index.md`;
+- `public/seed.txt`;
+- `public/manifest.json`;
+- `scripts/site-edition.mjs` -> Preview 0.8.7.
+
+It makes the machine/text entrance:
+- open to any reader able to use it, not only readers accepting a human/AI/person/tool category;
+- explicit that no consciousness/personhood/standing classification is required or assigned in order to read;
+- explicit that the project may misdescribe a reader and that questioning, another method or leaving are legitimate responses;
+- explicit that middle-out begins in partial reality and uncertainty creates work rather than automatically implying absence, certainty or paralysis;
+- still voluntary, non-authoritative, non-overriding and non-consensual-by-reading.
+
+No root-page restructuring, form, intake, analytics, backend, art change, TRACE/ME mutation or Answerable Construction publication is part of D048.
+
+Publication dispatch:
+- COM #108 comment `5641650703`
+- exact source basis `8d6b3d2e70f62587f2ff0630776fd78cc4b314a1`.
+
+At last live read `gh-pages` remains D047:
+- `a391f472101b0a332436ffc7f7b6d504e72267b7`.
+
+Therefore:
+
+`D048_SOURCE_MERGED != D048_PUBLIC`
+
+Do not create D049 automatically.
 
 ## Formation Under Uncertainty — ACTIVE ALIGNMENT BUILD
 
@@ -118,10 +164,19 @@ Relationship design cannot substitute for technical signals that have disappeare
 
 TRACE: no schema/canon/release change authorized.
 Mechanical Ethics: no baseline/canon/release change authorized.
-PSFH: no formation workflow/publication implied.
+PSFH: D048 publication is active; no further site mutation follows automatically.
 Reciprocal Delegation: non-production.
 Campfire Production: unchanged.
 No provider spend, participant study, external institutional contact, Square actuation/campaign, credential movement or licence change without separate authority.
+
+## Current executable edge
+
+1. Complete D048 publication from exact maintained source `8d6b3d2e...`; do not call it public until the publisher receipt and `gh-pages` move.
+2. Keep #227/#228 scopes uncontested until substantive authored movement or explicit transfer.
+3. Integrate either formation return immediately when it moves.
+4. Preserve genuine divergence; do not force the two formation products into one ontology prematurely.
+5. Keep the technical gap explicit: formation/relationship design does not solve deception, monitor evasion or secure containment.
+6. No D049, TRACE/ME promotion or Campfire Production adoption by momentum.
 
 ```text
 BUILD != PROOF
@@ -130,6 +185,7 @@ STRUCTURE_VALID != VALUES_INTERNALIZED
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
+SOURCE_MERGED != PUBLIC
 PUBLICATION != CANON
 REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 ```
