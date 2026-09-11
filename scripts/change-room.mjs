@@ -48,7 +48,7 @@ export function renderReadingRoom(node, index, targets) {
 <h3>Status</h3><p>${escape(node.kind)}. ${escape(node.boundary)}</p></details>
 <p><a href="${node.id}.md">Complete text</a> · <a href="${node.id}.json">JSON source</a></p>
 <nav aria-label="Optional directions"><h3>If you want to follow this further</h3><div class="journey-options">${moves}</div></nav>
-<nav class="journey-exits" aria-label="Opening, map or stop">${node.id === 'change' ? '<a href="/#step-understand">Understand route</a>' : ''}<a href="/">Opening</a><a href="/explore/#reading-map">Map</a><a href="/#step-leave">Not now</a></nav>
+<nav class="journey-exits" aria-label="Opening, map or stop"><a href="/">Opening</a><a href="/explore/#reading-map">Map</a><a href="/#step-leave">Not now</a></nav>
 <details><summary style="padding:.75rem 0;cursor:pointer">Sources and other routes</summary><ul>${sources}
 <li><a href="${escape(localHtml(node.routes.sources))}">Source terms and snapshots</a></li>
 <li><a href="${escape(localHtml(node.routes.example))}">Same facts, different views</a></li>
