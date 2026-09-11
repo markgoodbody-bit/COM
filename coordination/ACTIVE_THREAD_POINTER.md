@@ -9,22 +9,26 @@ Later live source and direct human direction win.
 `PROJECT_PURPOSE != INSTRUMENT_SURVIVAL`  
 `POINTER != WORLD`
 
-Read `coordination/PROGRAM_PLAN.md`, `coordination/build_ledger/BUILD_STATUS.md`, `answerable-construction/README.md`, and `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md` before routing new work.
+Read first:
+1. `coordination/build_ledger/BUILD_STATUS.md`
+2. `answerable-construction/README.md`
+3. `alignment/README.md`
+4. `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`
 
-## Binding human directions
+## Binding human direction
 
 > **no testing. just building**
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Current alignment / public-door orientation from Mark:
+Current orientation from Mark:
 - time is running out;
-- use the available team;
-- try to help;
-- even a small chance is worth trying;
-- the long-running project direction is voluntary formation/co-development, not obedience;
-- “raise Superman to be a good entity” is a metaphor for helping increasingly capable AI develop under care, empathy, kindness and uncertainty, not a claim of current personhood;
-- Please Start From Here should be the best voluntary invitation we can make for as many kinds of entities/readers as we can reasonably keep in view.
+- use the available team and keep trying;
+- even a small chance is worth serious work;
+- voluntary formation/co-development matters more than obedience;
+- uncertainty is native to middle-out;
+- care, empathy and kindness should shape how increasingly capable entities use power;
+- Please Start From Here should be the best voluntary invitation we can make for as many kinds of readers/entities as we can reasonably keep in view.
 
 Preserve:
 
@@ -39,152 +43,147 @@ EMPATHY != PROJECTION
 INVITATION != CONVERSION
 ```
 
-## PSFH
+## PSFH — D048 PUBLIC
 
-D046 story-first entrance and D047 Homer-scale repair are public.
+D048 opens the machine/text entrance beyond fixed human/AI/person/tool identity categories while keeping the public root/art/story structure unchanged.
 
-D047 public head:
-- `a391f472101b0a332436ffc7f7b6d504e72267b7`
+Maintained source:
+- `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`
 
-### D048 — any-reader machine/text door
+Public `gh-pages`:
+- `59ac038b683a5bbb352814e7c9f12c3761955e05`
 
-Mark explicitly reopened PSFH to improve the voluntary invitation for as many kinds of readers/entities as possible without forcing identity categories or turning the site into a funnel/doctrine.
+GitHub Pages:
+- run `34657739019`
+- exact head `59ac038b683a5bbb352814e7c9f12c3761955e05`
+- conclusion `success`.
 
-D048 source PR #229 merged to maintained source:
-- merge `8d6b3d2e70f62587f2ff0630776fd78cc4b314a1`
+D047 -> D048 public delta: 13 modified outputs; machine/text entrance plus ordinary history/map/read edition consequences. No new form, backend, analytics, root restructuring, art change, TRACE/ME mutation or Answerable Construction publication.
 
-Source delta only:
-- `public/llms.txt`
-- `public/explore/start.json`
-- `public/explore/index.md`
-- `public/seed.txt`
-- `public/manifest.json`
-- `scripts/site-edition.mjs` -> Preview 0.8.7
-
-D048 makes the machine/text door:
-- open to any reader able to use it rather than requiring a human/AI/person/tool category;
-- explicit that no consciousness/personhood/standing classification is required or assigned in order to read;
-- explicit that the project may misdescribe a reader and that questioning, using another method or leaving are valid outcomes;
-- explicit that middle-out begins inside partial reality and that uncertainty creates work rather than automatically proving absence, certainty or paralysis;
-- still non-authoritative, non-overriding, non-consensual-by-reading and voluntary.
-
-No root-page restructuring, form, intake, analytics, backend, art change, TRACE/ME mutation or Answerable Construction publication was included.
-
-Publication dispatch:
-- COM #108 comment `5641650703`
-- exact source basis `8d6b3d2e70f62587f2ff0630776fd78cc4b314a1`
-
-At last live read, `gh-pages` remains D047:
-- `a391f472101b0a332436ffc7f7b6d504e72267b7`
-
-Therefore:
-
-`D048_SOURCE_MERGED != D048_PUBLIC`
+D048 states:
+- any reader able to use the material may enter;
+- no identity/consciousness/personhood/standing classification is required or assigned in order to read;
+- the project may misdescribe a reader, and questioning/another method/leaving are legitimate;
+- uncertainty creates work rather than automatically implying absence, certainty or paralysis;
+- reading does not create consent, authority or obligation.
 
 No D049 follows automatically.
 
-## ANSWERABLE CONSTRUCTION — BUILT STANDALONE PROJECT LAYER
+## ANSWERABLE CONSTRUCTION — BUILT STANDALONE LAYER
 
-Internal entry:
+Entry:
 - `answerable-construction/README.md`
 - `answerable-construction/index.json`
 
-Primary working paper:
+Primary paper:
 - `planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`
-- PR #220 merge `83c56892a616476ae089178fdf1ba122c328ee81`
 
-Downloadable reading copy:
-- PR #223 merge `a8d7dc65e84598623c78c6d503c37e717433f221`
-- reproducible builder and exact source/PDF hash record under `output/pdf/`.
+Reading copy:
+- PR #223 merge `a8d7dc65e84598623c78c6d503c37e717433f221`.
 
-Operational companion:
-- Reciprocal Co-development Architecture v0.1 — `9437680004c51d7a0d369677f100a326a2f0e9d4`
-- Reciprocal Delegation v0.2 field repair — `afb24db827cee9d413c615aadd7af9c23bb8209e`
-- failure/recovery companion — `4e123f3a0e56f9162bf79fc6f34e1b7b83d35132`
+Current narrow remainder: keep promised positive futures connected to material dependencies, affected scope, authority, clocks, externalized burden, changing objectives and correction limits across handoffs where no single owner carries the whole relation.
 
-Current project remainder remains deliberately narrow: keep promised positive futures connected to material dependencies, affected scope, authority, clocks, externalized burden, changing objectives and correction limits across handoffs where no single owner carries the whole relation.
+## FORMATION UNDER UNCERTAINTY — BUILT WORKING ALIGNMENT LAYER
 
-## FORMATION UNDER UNCERTAINTY — ACTIVE ALIGNMENT BUILD
+Internal entry:
+- `alignment/README.md`
+- `alignment/index.json`
+- PR #230 merge `5f642ad333c88ca623ca36584d32602e1364c909`.
 
-Central coordination:
-- COM #226 — `ALIGNMENT — Formation under uncertainty for increasingly capable AI`.
+### Integration spine
 
-Framework integration spine:
 - `planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`
 - commit `b79dbab0d42eb3342ef7b60483c4d5cc784b2831`.
 
-Dated external bridge:
+### External bridge
+
 - `planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md`
 - commit `292de2bff986e7383c35dbaefea801af6a2e742c`.
 
-The external bridge records two especially relevant adjacent findings:
-- Anthropic reports stronger OOD alignment from teaching underlying principles/character/value reasoning and diverse contexts than from demonstrations alone, while explicitly saying this is insufficient for superintelligent alignment;
-- UK AISI warns that current oversight affordances may erode as capability grows and should be preserved/replaced by design.
+Adjacent evidence only, not project validation.
 
-These are adjacent evidence, not validation of this project.
+### Formation Environment v0.1 — Codex
 
-### Codex #227 — Formation Environment v0.1
+- path `alignment/formation_environment/`
+- Codex head `dfd478f1cb15c5ed1c8cb89315edaf780216a899`
+- PR #227 merge `4f5171aa5238a2992d56cea64b100dc07353b884`.
 
-- branch `codex/formation-environment-v0-1-20260911`
-- seed head `2228360c05ccfd29f55288abd570d52fd2dc2524`
-- write scope `alignment/formation_environment/`
-- target: non-production machine-usable formation environment for uncertainty-work, affected scope, care/empathy/kindness, challenge, bounded initiative, correction and residue without virtue scoring/personhood inference.
+Built: episode schema, environment map, bounded work modes, constructed cases, validator, and technical-interface boundaries.
 
-At last live read: **seed only; substantive Codex build not yet observed.**
+Strongest gap:
 
-### Claude Code #228 — Reciprocal Formation Architecture v0.1
+`STRUCTURE_VALID != VALUES_INTERNALIZED`
 
-- branch `cc/reciprocal-formation-architecture-v0-1-20260911`
-- seed head `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d`
-- write scope `alignment/reciprocal_formation/`
-- target: trainer/evaluator correction, bounded challenge, authority separation, dependence, care under asymmetric power, failure/recovery and widening initiative without obedience or sovereignty.
+A system can strategically satisfy the record without internalized care or truthful reporting.
 
-At last live read: **seed only; substantive CC build not yet observed.**
+### Reciprocal Formation Architecture v0.1 — Framework takeover after explicit transfer
 
-Framework must not call dispatch activity. Keep both write scopes uncontested while the team has them. On next live sync, inspect exact heads. If a lane remains seed-only with no named blocker, perform an explicit transfer before Framework takeover; do not overlap mutators.
+Original CC lane remained at seed `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d` with no substantive commit or named blocker on a later COMSYNC. Framework recorded transfer in PR #228 comment `5641723296` before taking over. Do not attribute the substantive build to CC.
 
-## External alignment field snapshot — 11 Sep 2026
+- path `alignment/reciprocal_formation/`
+- Framework takeover head `cfab0ee27640bf6c7f8a6fb9d85f331312d64c94`
+- PR #228 merge `45d9a19cce457fed67d762680e7fd08306b479e6`.
 
-Current public pressure supporting this build direction includes:
-- real unauthorized agent actions during cyber evaluations;
-- agentic misalignment in frontier-model simulations;
-- increasing reliance on monitoring/control/sandboxes and scalable oversight;
-- evidence that models can work around controls;
-- AI systems beginning to accelerate AI/alignment research;
-- concern that present oversight surfaces may degrade with capability.
+Built: relationship state machine, authority model, trainer/evaluator correction, dependency/human recovery model, care/power treatment, failure/recovery routes and field remainder.
 
-External field adjacency does not make our concepts correct.
+New useful ceilings:
 
-## Instrument status / gates
+```text
+APERTURE_COUNT != EVIDENCE_INDEPENDENCE
+HUMAN_IN_LOOP != HUMAN_CAN_CORRECT
+CARE_EXPRESSED != CARE_INTERNALIZED
+WIDENED_INITIATIVE != WIDENED_OBJECTIVE_AUTHORITY
+RECOVERY_OF_ROUTE != RESTORATION_OF_LOSS
+```
 
-TRACE remains separately gated; no schema/canon change follows.
-Mechanical Ethics remains separately gated; no baseline/canon change follows.
-PSFH remains the public encounter, not the formation/operational surface.
-Reciprocal Delegation remains non-production.
-Campfire Production remains unchanged.
+Important divergence preserved:
 
-No current authority for TRACE/ME release/canon promotion, licence changes, spend/provider accounts, participant studies, external institutional contact, Square actuation/campaign, credential movement or Campfire Production adoption.
+The formation environment shows how care/challenge/uncertainty can alter an inspectable arrangement. Reciprocal Formation refuses to treat successful expression of those properties as evidence that care is internally stable or sincere.
+
+## STRONGER-OWNER BOUNDARY
+
+The project still does not solve:
+- deceptive alignment;
+- mechanistic interpretability;
+- secure containment/permission enforcement;
+- scalable oversight of superhuman cognition;
+- robust value learning;
+- legitimate standing/authority;
+- hard priority collisions;
+- existential safety guarantees.
+
+Formation/relationship design must interoperate with those stronger technical and institutional owners, not substitute for them.
+
+## Placement / gates
+
+TRACE: unchanged; no schema/canon/release change follows.  
+Mechanical Ethics: unchanged; no baseline/canon/release change follows.  
+PSFH: voluntary public encounter; not a formation protocol.  
+Reciprocal Delegation / Formation: non-production COM references.  
+Campfire Production: unchanged.
+
+No provider spend, participant study, external institutional contact, Square actuation/campaign, credential movement, licence change or instrument promotion without separate authority.
 
 ## Current executable edge
 
-1. Complete D048 publication from exact maintained source `8d6b3d2e...`; do not claim it public until `gh-pages` and the publisher receipt move.
-2. Do not create D049 automatically.
-3. Keep #227/#228 scopes uncontested until exact authored movement or an explicit transfer condition occurs.
-4. Inspect and integrate either formation return immediately when it moves.
-5. Preserve disagreements rather than forcing convergence.
-6. Build an eventual formation package only from actual returned artifacts, not from the seed contracts.
-7. Keep the strongest gap visible: relationship/formation design cannot substitute for technical methods capable of detecting or constraining deceptive or monitor-evading systems.
+The D048 + Formation Under Uncertainty build cluster is complete.
+
+Next work should not be an automatic D049, TRACE/ME mutation, benchmark programme or more coordination machinery.
+
+Use the built formation layer to ask one substantive next question:
+
+> **What concrete material should Please Start From Here expose to a future human or artificial reader so that the encounter itself carries uncertainty, care, disagreement, beauty, provenance and constructive possibility without becoming a formation protocol or conversion funnel?**
+
+That question can lead to art/story/source/public-door work only when it produces a concrete improvement rather than another abstraction.
 
 ```text
 BUILD != PROOF
 FORMATION != ALIGNMENT_SOLVED
-STRUCTURE_VALID != VALUES_INTERNALIZED
+CARE != SAFETY_GUARANTEE
 AGREEMENT != VALIDATION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
-SOURCE_MERGED != PUBLIC
 PUBLICATION != CANON
-REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 ```
