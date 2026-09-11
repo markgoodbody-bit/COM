@@ -75,7 +75,7 @@ class FirstContactTests(unittest.TestCase):
         self.assertNotIn('<h1', figures[0])
         self.assertIn('<figcaption', figures[0])
         self.assertIn('<img', figures[0])
-        self.assertIn('<p class="guiding-question">How can we make a better future?</p>', self.html)
+        self.assertIn('What brought you here?', self.text)
         record = json.loads((ROOT / 'out/art/camp-fire.json').read_text(encoding='utf-8'))
         image = (ROOT / 'out/art/camp-fire.jpg').read_bytes()
         self.assertEqual(hashlib.sha256(image).hexdigest(), record['sha256'])
@@ -169,7 +169,7 @@ class FirstContactTests(unittest.TestCase):
         self.assertIn('.hero-heading h1 em { color: #ecd3a8;', css)
         hero = self.html.split('class="art-hero"')[1].split('class="arrival context-window"')[0]
         self.assertNotIn('How can we make a better future?', hero)
-        self.assertIn('<p class="guiding-question">How can we make a better future?</p>',
+        self.assertIn('What brought you here?',
                       self.html.split('class="arrival context-window"')[1])
         # Source guards only. The previous scrim contrast proof no longer applies;
         # actual viewport fit, reflow and legibility require browser observation.
@@ -212,7 +212,7 @@ class FirstContactTests(unittest.TestCase):
             self.assertTrue((ROOT / 'out' / name).is_file(), href)
 
     def test_meaning_changing_limits_and_no_dead_intake(self):
-        for phrase in ['How can we make a better future?', 'Site Preview 0.8',
+        for phrase in ['What brought you here?', 'Site Preview 0.8',
                        'No introduction or agreement is required.',
                        'You do not need a problem, an identity category or a commitment to begin.',
                        'This is a stated value choice',

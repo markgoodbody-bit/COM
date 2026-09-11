@@ -20,11 +20,13 @@ test('only named navigation, ten-room, machine and history outputs differ from t
   assert.equal(retained,132);
 });
 
-test('eight-state homepage retains the Futures bridge, direct Change route and no intake', async () => {
+test('seven-state homepage retains the Futures bridge, direct Change route and no intake', async () => {
   const html = await readFile('out/index.html','utf8');
-  assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','orientation','look','work','future','challenge','story','leave']);
-  const orientation = html.split('id="step-orientation"')[1].split('</section>')[0];
+  assert.deepEqual([...html.matchAll(/data-step="([^"]+)"/g)].map(m=>m[1]), ['welcome','look','work','future','challenge','story','leave']);
+  const orientation = html.split('id="step-welcome"')[1].split('</section>')[0];
   assert.deepEqual([...orientation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['#project','#step-work','#step-look','#step-challenge','#project']);
+  assert.match(orientation,/What brought you here\?/);
+  assert.doesNotMatch(html,/step-orientation|Would you like to continue\?/);
   assert.match(orientation,/I am here for the art, or just looking/);
   const work = html.split('id="step-work"')[1].split('</section>')[0];
   assert.deepEqual([...work.matchAll(/href="([^"]+)"/g)].map(m=>m[1]),['/explore/nodes/change.html','#step-future']);
@@ -55,12 +57,12 @@ test('only the local integrity-pinned enhancement ships; offline fallback contai
   assert.equal(manifest.provenance.context_window.script_sha256,createHash('sha256').update(bytes).digest('hex'));
 });
 
-test('D017 through D031 are paired in both formats and earlier history remains exact', async () => {
+test('D017 through D032 are paired in both formats and earlier history remains exact', async () => {
   const md = await readFile('public/changes.md','utf8');
   const html = await readFile('public/changes.html','utf8');
   const d030 = md.split('### D030')[1].split('### D029')[0].trim().split(/\n\s*\n/);
   assert.equal(html.split('<h3 id="d030">D030</h3>')[1].split('<h3 id="d029">')[0], d030.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join(''));
-  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027'],['D029','D028'],['D031','D030']]) {
+  for (const [id,previous] of [['D017','D016'],['D018','D017'],['D019','D018'],['D020','D019'],['D021','D020'],['D022','D021'],['D023','D022'],['D024','D023'],['D025','D024'],['D026','D025'],['D027','D026'],['D028','D027'],['D029','D028'],['D031','D030'],['D032','D031']]) {
     const paragraphs = md.split('### '+id)[1].split('### '+previous)[0].trim().split(/\n\s*\n/);
     const rendered = html.split('<h3 id="'+id.toLowerCase()+'">'+id+'</h3>')[1].split('<h3 id="'+previous.toLowerCase()+'">')[0];
     const expected = paragraphs.map(p=>'<p>'+p.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll("'",'&#x27;')+'</p>').join('');
