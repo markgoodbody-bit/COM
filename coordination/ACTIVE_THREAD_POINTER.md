@@ -18,26 +18,24 @@ Mark's current human direction is explicit:
 
 > **no testing. just building**
 
-Treat that as a project-routing correction, not a wording preference.
-
 Current cadence:
 
 ```text
 BUILD -> PUBLISH -> USE -> CORRECT
 ```
 
-Do **not** reopen usefulness experiments, Phase-0 construct work, benchmark design, source-selection machinery or empirical-validation plumbing unless Mark explicitly asks to restart testing.
+Do not reopen usefulness experiments, Phase-0 work, benchmark design or source-selection machinery unless Mark explicitly asks to restart testing.
 
 ## Parked research lane
 
-COM #119 is closed `not_planned` under the current direction.
+COM #119 is closed `not_planned`.
 
-PR #200 (ICO snapshot validator) and PR #203 (prospective ICO source rule) are closed/parked with their branches/history preserved. Their work is recoverable evidence; closure does not mean the designs were disproved.
+PR #200 and PR #203 are closed/parked with their branches/history preserved.
 
 `PARKED != INVALIDATED`  
 `NO_TESTING -> BUILD_THE_THING`
 
-## PSFH current product state
+## PSFH product state
 
 Primary coordination surface:
 - [COM #108 — PLEASE START FROM HERE — public Door](https://github.com/markgoodbody-bit/COM/issues/108)
@@ -45,21 +43,35 @@ Primary coordination surface:
 Maintained source branch:
 - `codex/door-maintained-source-20260908`
 
-D037 maintained baseline before the current build:
-- `b19206dcfea9fe078bceaab50673c3f76a94f1e0`
+### D038 — published
 
-D038 source is now merged into maintained source:
-- merge `01ebcc56bb267a32f6f4048d8f29989e39a0cffa`
-- PR #204
-- change: make the Homer opening title slightly larger without changing painting geometry, placement, colour, copy, routes or reading surfaces.
+- maintained source after publication: `b23712fe7215f8cf51925d8bdcfae59c4982778c`
+- public `gh-pages`: `4ef5455e476f5af3ae52d4526ec675af8ef905e1`
+- change: modestly larger Homer overlay title; no root copy/route/art geometry change.
 
-Codex publication dispatch:
-- COM #108 comment `5639578305`
-- instruction: normal static build and publication only; keep generated style/manifest/history coherent; no experiment or benchmark expansion.
+### D039 — source merged, publication dispatched
 
-Until a publication receipt lands:
+PR #205 merged:
+- maintained source merge: `483e06efbfac775c5f84e785fc81870685bfd3ba`
 
-`SOURCE_MERGED != PUBLIC`
+Adds an additive working surface:
+- `/explore/work.html`
+- `/explore/work.md`
+
+It gathers six existing PSFH working questions onto one page:
+
+`Notice -> Choose -> Decide -> Responsibility -> Repercussions -> Check and correct`
+
+Each step routes to existing reading rooms. No form, intake, account, server write, scoring, required sequence, experiment, efficacy claim or new theory.
+
+Discovery changes are limited to Explore route lists, llms orientations, sitemap and manifest route identity.
+
+Publication dispatch:
+- #108 comment `5639683199`
+
+Until a Codex publication receipt lands:
+
+`D039_SOURCE_MERGED != D039_PUBLIC`
 
 ## Product posture
 
@@ -67,18 +79,18 @@ Please Start From Here is the voluntary public gift/door, not a conversion funne
 
 Build the actual encounter:
 - clear human and AI entrances;
-- art as real encounter, not wallpaper;
+- art as encounter, not decoration;
 - compact routes into Mechanical Ethics and TRACE;
 - graph-backed reading rooms and ordinary exits;
 - source/provenance/rights visible where material;
 - challenge / another position / leave remain real options;
-- make the site useful by construction rather than continually turning it into an object of study.
+- useful working surfaces rather than another research apparatus.
 
-Routine reversible PSFH work should move quickly. Mark is witness/veto, not a per-change approval bottleneck. Consequential gates remain separate.
+Prefer additive/reversible product work over homepage churn.
 
 ## Current boundaries
 
-This build direction does **not** authorise:
+Current build direction does **not** authorise:
 - spend/provider accounts;
 - participant recruitment or studies;
 - TRACE/ME release/canon/baseline mutation;
@@ -95,14 +107,14 @@ Normal reversible PSFH source/build/publication work remains inside the establis
 - TRACE: live `main`; v0.2.7 released baseline; v0.3 RC1 unreleased/noncanonical/unvalidated.
 - Mechanical Ethics: live `main`; v0.6.3 preservation baseline; current Human Reader working/noncanonical/unvalidated.
 - Campfire Relay / Square: reacquire exact live source/Production/authority before any action.
-- Open Horizon / broader better-future frontier: retrieve from the omission map when the build needs it.
+- Open Horizon / broader better-future frontier: retrieve from omission map when a build decision needs it.
 
 ## Next legitimate operations
 
-1. Complete D038 static build/publication from maintained source `01ebcc56...`.
-2. Keep building the public PSFH experience from concrete product needs, not testing machinery.
-3. Prefer small reversible product increments over another theoretical or validation programme.
-4. Reacquire live #108/public state before each publication mutation.
+1. Complete D039 static build/publication from maintained source `483e06ef...`.
+2. Continue PSFH construction from concrete product needs, not evaluation machinery.
+3. Keep new surfaces optional, readable without account or required disclosure, and directly connected to existing source material.
+4. Publish routine reversible increments through maintained-source -> static-build -> `gh-pages`.
 
 For broader orientation read:
 - `continuity/FRAMEWORK_HEAD.md`
@@ -110,8 +122,6 @@ For broader orientation read:
 - `continuity/COMSYNC_PROTOCOL.md`
 - `continuity/TEAM_OPERATING_MODEL.md`
 - `continuity/OMISSION_MAP.md` only where material.
-
-Historical pointer bodies remain recoverable through Git history. Do not replay them at boot unless a current decision requires a named old receipt.
 
 ```text
 BUILD != PROOF
