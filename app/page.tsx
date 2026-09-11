@@ -32,6 +32,7 @@ export default function Home() {
           <p className="lead">The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
           <p>A project by Mark, developed with AI collaborators. <strong>Mechanical Ethics</strong> is the human-facing ethical and meaning account. <strong>TRACE</strong> is the structural language for keeping affected scope, evidence, time, usable routes and the limits of correction connected.</p>
           <p>Stories and art are optional ways into the work. They can widen attention or offer another perspective; they are not evidence for the project, and you do not have to pass through them to reach the material.</p>
+          <p>This page introduces the project for inspection. Its selection and framing can influence a reader&apos;s reasoning; it is not a neutral or complete view.</p>
           <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
           <div className="journey-options" aria-label="Main ways to use this site">
             <a href="#step-work">Bring a question or situation</a>
