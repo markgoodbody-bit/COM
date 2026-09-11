@@ -9,7 +9,7 @@ const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
-    <a className="skip" href="#arrival">Skip the painting</a>
+    <a className="skip" href="#project-spine">Skip the painting</a>
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
@@ -26,22 +26,39 @@ export default function Home() {
             </div>
         </div>
         </div>
+        <section className="context-reading" id="project-spine" aria-labelledby="why">
+          <p className="eyebrow">What this is</p>
+          <h2 id="why">A project about keeping correction possible</h2>
+          <p className="lead">The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
+          <p>A project by Mark, developed with AI collaborators. <strong>Mechanical Ethics</strong> is the human-facing ethical and meaning account. <strong>TRACE</strong> is the structural language for keeping affected scope, evidence, time, usable routes and the limits of correction connected.</p>
+          <p>Stories and art are optional ways into the work. They can widen attention or offer another perspective; they are not evidence for the project, and you do not have to pass through them to reach the material.</p>
+          <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
+          <div className="journey-options" aria-label="Main ways to use this site">
+            <a href="#step-work">Bring a question or situation</a>
+            <a href="/explore/#reading-map">Explore the ten-question map</a>
+            <a href="#step-story">Read one small example</a>
+            <a href="/works/">Visit the art</a>
+            <a href="#reading">Read TRACE, Mechanical Ethics and neighbouring work</a>
+            <a href="#step-challenge">Challenge or check this</a>
+          </div>
+          <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act. You may use another method, disagree, or leave.</p>
+        </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
           <section data-step="welcome" id="step-welcome">
             <p className="guiding-question">How can we make a better future?</p>
             <h2 tabIndex={-1}>Would you like to continue?</h2>
-            <p>Take a small look, or go straight to the material.</p>
+            <p>Take a small look, bring a question, or go straight to the material.</p>
             <p className="journey-options"><a className="journey-primary" href="#step-orientation">Continue <span aria-hidden="true">→</span></a></p>
           </section>
           <section data-step="orientation" id="step-orientation">
             <p>We think we may have something worth sharing. It is offered as a gift, with no requirement to agree, use it or continue.</p>
             <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
-              <a href="#step-look">Someone sent me this</a>
+              <a href="#project-spine">Someone sent me this</a>
               <a href="#step-work">I have something I&apos;m trying to understand or change</a>
               <a href="#step-look">I am here for the art, or just looking</a>
               <a href="#step-challenge">I want to challenge or check this</a>
-              <a href="#step-look">I don&apos;t know</a>
+              <a href="#project-spine">I don&apos;t know</a>
             </div>
           </section>
           <section data-step="look" id="step-look">
@@ -172,13 +189,6 @@ export default function Home() {
           <li><strong>Check and correct.</strong> What would show this reading was wrong? What changed after the action? Continue, go deeper, look from another position, use a stronger method, or leave?</li>
         </ul>
         <p className="loop-note">The same questions can recur at another depth without requiring the same answer or the same amount of detail. Take one useful piece and leave if that is enough.</p>
-      </section>
-      <section className="context-reading" aria-labelledby="why">
-        <h2 id="why">Why this exists</h2>
-        <p className="lead">The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
-        <p>This page introduces the project for inspection. Its selection and framing can influence a reader&apos;s reasoning; it is not a neutral or complete view.</p>
-        <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
-        <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
       </section>
       <section className="library" aria-labelledby="reading">
         <h2 id="reading">The work and its neighbours</h2>
