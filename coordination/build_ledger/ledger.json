@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "recorded_at": "2026-09-11T22:06:34Z",
+  "recorded_at": "2026-09-11T22:08:22Z",
   "lanes": [
     {
       "work_id": "PSFH-D047",
@@ -69,12 +69,12 @@
       "work_id": "COM-219",
       "title": "Small current-work ledger",
       "owner": "CODEX",
-      "state": "building",
+      "state": "handback",
       "mutates": true,
       "repository": "markgoodbody-bit/COM",
       "branch": "codex/com-build-ledger-v0-1-20260911",
-      "observed_head": "3e41643618cc323caf2ab6df4dde377f3d199c59",
-      "observed_at": "2026-09-11T22:06:34Z",
+      "observed_head": "5d71c859a3207a35ce165c5da0d5e1ca2bc909ee",
+      "observed_at": "2026-09-11T22:08:22Z",
       "write_scope": [
         "coordination/build_ledger/"
       ],
@@ -85,15 +85,16 @@
         "Campfire Production",
         "CC recovery companion"
       ],
-      "next_action": "Finish JSON, schema, validator, renderer and generated status; commit and return exact artifact.",
+      "next_action": "Framework may integrate the delivered build; refresh source and branch observations before further mutation. This snapshot records the implementation head, not its own containing commit.",
       "blocker": null,
       "unblocks_when": null,
       "handback_event": "Build pushed to PR #219, marked ready, exact artifact and limits returned to COM #74",
       "sources": [
         "https://github.com/markgoodbody-bit/COM/pull/219",
-        "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641150106"
+        "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641150106",
+        "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641188050"
       ],
-      "receipt": null
+      "receipt": "https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641188050"
     }
   ]
 }

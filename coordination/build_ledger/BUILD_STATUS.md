@@ -1,6 +1,6 @@
 # Build status
 
-Recorded snapshot: 2026-09-11T22:06:34Z.
+Recorded snapshot: 2026-09-11T22:08:22Z.
 
 These are observed states, not live status or permission. Re-read the linked source and branch before acting. No freshness guarantee or automatic monitoring.
 
@@ -8,7 +8,7 @@ These are observed states, not live status or permission. Re-read the linked sou
 | --- | --- | --- | --- |
 | PSFH-D047 | CODEX | closed | No publication action; independent rendered-proportion witness requested separately. |
 | COM-218 | CLAUDE CODE (assigned; execution not independently observed) | queued | Build transfer/takeover state machine, checker, fixtures and README in assigned PR; dispatch is not evidence of activity. |
-| COM-219 | CODEX | building | Finish JSON, schema, validator, renderer and generated status; commit and return exact artifact. |
+| COM-219 | CODEX | handback | Framework may integrate the delivered build; refresh source and branch observations before further mutation. This snapshot records the implementation head, not its own containing commit. |
 
 ## PSFH-D047: Larger full-frame Homer
 
@@ -33,12 +33,13 @@ Sources: [source 1](<https://github.com/markgoodbody-bit/COM/pull/218>) · [sour
 
 ## COM-219: Small current-work ledger
 
-Observed 2026-09-11T22:06:34Z: markgoodbody-bit/COM, branch codex/com-build-ledger-v0-1-20260911, head `3e41643618cc323caf2ab6df4dde377f3d199c59`.
+Observed 2026-09-11T22:08:22Z: markgoodbody-bit/COM, branch codex/com-build-ledger-v0-1-20260911, head `5d71c859a3207a35ce165c5da0d5e1ca2bc909ee`.
 
 Write scope: coordination/build_ledger/.
 No-touch: PSFH; TRACE; ME; Campfire Production; CC recovery companion.
 Hand-back: Build pushed to PR #219, marked ready, exact artifact and limits returned to COM #74.
 
-Sources: [source 1](<https://github.com/markgoodbody-bit/COM/pull/219>) · [source 2](<https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641150106>).
+Sources: [source 1](<https://github.com/markgoodbody-bit/COM/pull/219>) · [source 2](<https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641150106>) · [source 3](<https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641188050>).
+[Recorded receipt](<https://github.com/markgoodbody-bit/COM/pull/219#issuecomment-5641188050>).
 
 Closed work remains recorded. A successful build grants no wider authority.
