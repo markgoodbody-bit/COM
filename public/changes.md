@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.21 · 11 September 2026
 
+### D039
+
+11 September 2026 — Six existing working questions are gathered on one page.
+
+Work with a situation brings Notice, Choose, Decide, Responsibility, Repercussions, and Check and correct together, with links to the existing reading rooms. Use any question, skip the rest, or copy them into your own notes. Nothing is submitted to the site.
+
+Explore and the text orientations link to the new page. The homepage, artwork and existing readings remain unchanged. This is an optional working surface, not a required method or a claim of better results. Previous publication 4ef5455e476f5af3ae52d4526ec675af8ef905e1 remains in Git history.
+
 ### D038
 
 11 September 2026 — The title over the opening painting is slightly larger.
