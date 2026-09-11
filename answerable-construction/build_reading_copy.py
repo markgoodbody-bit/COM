@@ -22,9 +22,16 @@ def typography(text):
     return text.replace('\u2014', '-').replace('\u2013', '-').replace('\u2011', '-')
 
 
-def inline(text):
+def inline(text, revision):
     text = html.escape(typography(text))
-    text = re.sub(r'\[([^\]]+)\]\((https://[^\s)]+)\)', r'<link href="\2" color="#865126">\1</link>', text)
+    def link(match):
+        label, url = match.groups()
+        if not url.startswith('https://'):
+            if not re.fullmatch(r'[A-Za-z0-9_.-]+\.md', url):
+                raise ValueError('Unsupported relative source link: ' + url)
+            url = 'https://github.com/markgoodbody-bit/COM/blob/' + revision + '/planning/' + url
+        return '<link href="' + url + '" color="#865126">' + label + '</link>'
+    text = re.sub(r'\[([^\]]+)\]\(([^\s)]+)\)', link, text)
     text = re.sub(r'`([^`]+)`', r'<font name="Courier" size="8">\1</font>', text)
     text = re.sub(r'\*\*([^*]+)\*\*', r'<b>\1</b>', text)
     return re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<i>\1</i>', text)
@@ -37,6 +44,7 @@ def build():
     if SOURCE.read_bytes().replace(b'\r\n', b'\n') != raw.replace(b'\r\n', b'\n'):
         raise ValueError('Commit source edits before generating a revision-pinned reading copy')
     digest = hashlib.sha256(raw).hexdigest()
+    fmt = lambda text: inline(text, revision)
     styles = {
         'body': ParagraphStyle('body', fontName='Times-Roman', fontSize=11, leading=15.5, spaceAfter=8),
         'title': ParagraphStyle('title', fontName='Times-Bold', fontSize=23, leading=28, spaceAfter=17),
@@ -51,7 +59,7 @@ def build():
 
     def flush():
         if para:
-            story.append(Paragraph(inline(' '.join(para)), styles['body']))
+            story.append(Paragraph(fmt(' '.join(para)), styles['body']))
             para.clear()
 
     for line in raw.decode('utf-8').splitlines():
@@ -70,19 +78,19 @@ def build():
             flush()
         elif line.startswith('# '):
             flush()
-            story.append(Paragraph(inline(line[2:]), styles['title']))
+            story.append(Paragraph(fmt(line[2:]), styles['title']))
         elif line.startswith('## '):
             flush()
-            story.append(Paragraph(inline(line[3:]), styles['h2']))
+            story.append(Paragraph(fmt(line[3:]), styles['h2']))
         elif line.startswith('### '):
             flush()
-            story.append(Paragraph(inline(line[4:]), styles['h3']))
+            story.append(Paragraph(fmt(line[4:]), styles['h3']))
         elif line.startswith('> '):
             flush()
-            story.append(Paragraph(inline(line[2:]), styles['quote']))
+            story.append(Paragraph(fmt(line[2:]), styles['quote']))
         elif line.startswith('- ') or re.match(r'^\d+\. ', line):
             flush()
-            story.append(Paragraph(inline(line), styles['bullet']))
+            story.append(Paragraph(fmt(line), styles['bullet']))
         else:
             para.append(line.strip())
             if line.endswith('  '):
