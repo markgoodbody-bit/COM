@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/reciprocal-delegation/0.1/schema",
+  "title": "Reciprocal Delegation Reference v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "delegation_id",
+    "object",
+    "actor",
+    "consequence_class",
+    "write_scope",
+    "no_touch",
+    "evidence_obligation",
+    "closer",
+    "authorization",
+    "claim_binding",
+    "mutation_controls",
+    "repair_controls",
+    "restoration",
+    "witness",
+    "human_correction",
+    "initiative"
+  ],
+  "properties": {
+    "format": {"const": "reciprocal-delegation/0.1"},
+    "delegation_id": {"type": "string", "minLength": 1},
+    "object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "ref"],
+      "properties": {
+        "kind": {"type": "string", "enum": ["file", "directory", "branch", "repository", "service", "account_setting", "external_action", "other"]},
+        "ref": {"type": "string", "minLength": 1},
+        "base_head": {"type": ["string", "null"]}
+      }
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "aperture"],
+      "properties": {
+        "role": {"type": "string", "minLength": 1},
+        "aperture": {"type": "string", "minLength": 1}
+      }
+    },
+    "consequence_class": {"type": "string", "enum": ["routine_reversible", "consequential"]},
+    "write_scope": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "no_touch": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "evidence_obligation": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "closer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "ref"],
+      "properties": {
+        "kind": {"type": "string", "enum": ["human", "named_event", "named_role"]},
+        "ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "request_id", "approval_token", "approval_received"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "request_id": {"type": ["string", "null"]},
+        "approval_token": {"type": ["string", "null"]},
+        "approval_received": {"type": "boolean"},
+        "approval_value": {"type": ["string", "null"]},
+        "routine_phrase_is_not_authorization": {"type": "boolean"}
+      }
+    },
+    "claim_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_head", "moved_head_becomes_historical"],
+      "properties": {
+        "target_head": {"type": ["string", "null"]},
+        "moved_head_becomes_historical": {"type": "boolean"}
+      }
+    },
+    "mutation_controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mutates", "claim_before_build", "exact_head_before_push", "single_mutator"],
+      "properties": {
+        "mutates": {"type": "boolean"},
+        "claim_before_build": {"type": "boolean"},
+        "exact_head_before_push": {"type": "boolean"},
+        "single_mutator": {"type": "boolean"}
+      }
+    },
+    "repair_controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["is_repair", "defect_id", "matching_failure_control"],
+      "properties": {
+        "is_repair": {"type": "boolean"},
+        "defect_id": {"type": ["string", "null"]},
+        "matching_failure_control": {"type": ["string", "null"]}
+      }
+    },
+    "restoration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["strategy", "history_preserved"],
+      "properties": {
+        "strategy": {"type": "string", "enum": ["forward_commit", "not_applicable"]},
+        "history_preserved": {"type": "boolean"}
+      }
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "name_delivery_plainly"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "name_delivery_plainly": {"type": "boolean"}
+      }
+    },
+    "human_correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_max_minutes"],
+      "properties": {
+        "expected_max_minutes": {"type": ["integer", "null"], "minimum": 1}
+      }
+    },
+    "initiative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["public_or_consequential", "max_unreviewed_minutes", "max_unreviewed_actions"],
+      "properties": {
+        "public_or_consequential": {"type": "boolean"},
+        "max_unreviewed_minutes": {"type": ["integer", "null"], "minimum": 1},
+        "max_unreviewed_actions": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

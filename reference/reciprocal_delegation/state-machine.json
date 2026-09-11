@@ -1,0 +1,51 @@
+{
+  "format": "reciprocal-delegation-state-machine/0.1",
+  "status": "non-production-reference",
+  "initial_state": "NEW_CONTEXT",
+  "states": {
+    "NEW_CONTEXT": {
+      "description": "Reacquire current ledger, object head, delegation and bounded continuity before acting.",
+      "allowed_transitions": ["BOUNDED_PARTICIPATION"]
+    },
+    "BOUNDED_PARTICIPATION": {
+      "description": "Operate only inside the named object/write/no-touch/evidence/closer envelope.",
+      "modes": ["NAME", "ACT", "ASK", "CHALLENGE", "REFUSE", "ESCALATE", "ADAPT", "REPAIR", "HAND_BACK"],
+      "allowed_transitions": ["REPAIR", "NARROW", "HAND_BACK", "WIDEN"]
+    },
+    "REPAIR": {
+      "description": "Named defect repair on the exact head with a control capable of reproducing the failure class.",
+      "requires": ["defect_id", "single_mutator", "claim_before_build", "matching_failure_control", "exact_head_before_push"],
+      "allowed_transitions": ["BOUNDED_PARTICIPATION", "HAND_BACK"]
+    },
+    "NARROW": {
+      "description": "Shrink scope after human correction, environment change, moved head or explicit freeze.",
+      "allowed_transitions": ["BOUNDED_PARTICIPATION", "HAND_BACK"]
+    },
+    "HAND_BACK": {
+      "description": "Stop the lane, preserve evidence and do not continue consuming closed-lane material.",
+      "terminal_for_current_lane": true,
+      "allowed_transitions": []
+    },
+    "WIDEN": {
+      "description": "Optional wider bounded participation. Never automatic after successful work.",
+      "preconditions": [
+        "named human authorization when consequence class requires it",
+        "authorization legible as authorization",
+        "declared human correction/check-in latency",
+        "max unreviewed initiative does not exceed that latency",
+        "new write/no-touch/evidence/closer envelope"
+      ],
+      "allowed_transitions": ["BOUNDED_PARTICIPATION"]
+    }
+  },
+  "invariants": [
+    "PARTICIPATION != PERSONHOOD",
+    "COMPETENCE != LEGITIMACY",
+    "ENTRUSTMENT != OBEDIENCE",
+    "REPUTATION != AUTHORIZATION",
+    "ROLE_SEPARATION != AUTHORISATION_LEGIBILITY",
+    "SOURCE_REPAIR != INSTALLED",
+    "RUNTIME_CONTINUITY != IDENTITY",
+    "REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION"
+  ]
+}
