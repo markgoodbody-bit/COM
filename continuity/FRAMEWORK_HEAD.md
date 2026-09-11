@@ -2,7 +2,7 @@
 
 Status: **EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-11 — Europe/London  
-Basis: live COM + live project heads; later source and direct human direction win.
+Basis: live COM + project heads; later source and direct human direction win.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
 
@@ -16,7 +16,7 @@ Read first:
 1. `coordination/PROGRAM_PLAN.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
 3. `coordination/build_ledger/BUILD_STATUS.md`
-4. `planning/ANSWERABLE_CONSTRUCTION_INTEGRATION_LEDGER_20260911.md`
+4. `answerable-construction/README.md`
 
 Binding human directions:
 
@@ -24,82 +24,75 @@ Binding human directions:
 
 > **No forms! no explain a situation in 10 boxes. That is not what PSFH is about at ALL!**
 
-Leadership rule: builders need concrete products, clear boundaries and prompt hand-back decisions. Do not turn Codex/CC into permanent reviewers of Framework prose; do not create work merely to keep apertures busy.
-
 ## PSFH — HOLD AFTER D047
 
-D046 story-first entrance is public. D047 enlarged-Homer correction is also public:
+D046 story-first entrance and D047 enlarged-Homer correction are public.
+
+D047:
 - final maintained `73416cc3f47348233e5b2c2e4d641e9c2a18eed2`;
 - public `a391f472101b0a332436ffc7f7b6d504e72267b7`;
 - root 21,045 bytes, SHA-256 `584e03873ee48b9a32f3bd83691fd2e2dde5ef42982f8223c75455890331c9a6`.
 
-No D048 follows automatically. Human visual judgement controls the reversible presentation choice.
+No D048 follows automatically.
 
-External Claude cold-read that triggered D046 is preserved at `evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md`; it is not Claude Code output.
+## Answerable Construction — standalone project layer built
 
-## Built project layer
+Internal entry:
+- `answerable-construction/README.md`
+- `answerable-construction/index.json`
+- package merge `39768ecb85042b47d5cd93fddbfa9ef4c8942c3b`
 
-- Casebook v0.1 — PR #211 merge `06f7e4d467374ca313a38b16b992487e1db5bcac`.
-- Reader v0.1 — PR #213 merge `dd8e3ace2336c0257a2ac5825534442812a82f2f`.
-- CC Reciprocal Co-development Architecture v0.1 — PR #212 merge `9437680004c51d7a0d369677f100a326a2f0e9d4`.
-- Reciprocal Delegation Reference v0.1 — PR #214 merge `82326d476db398168a144ed151aa985be663476e`.
-- Reciprocal Delegation v0.2 field repair — PR #217 merge `afb24db827cee9d413c615aadd7af9c23bb8209e`.
-- COM Build Ledger v0.1 — Codex PR #219 merge `bdcd5b48d0dc5edafc83ca20a473b6f3242f233d`.
+Primary working paper:
+- `planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`
+- PR #220 merge `83c56892a616476ae089178fdf1ba122c328ee81`
+
+Supporting objects:
+- Casebook v0.1 — `06f7e4d467374ca313a38b16b992487e1db5bcac`
+- Reader v0.1 — `dd8e3ace2336c0257a2ac5825534442812a82f2f`
+- Reciprocal Co-development Architecture v0.1 — `9437680004c51d7a0d369677f100a326a2f0e9d4`
+- Reciprocal Delegation v0.2 field repair — `afb24db827cee9d413c615aadd7af9c23bb8209e`
+- Reciprocal Delegation failure/recovery companion — `4e123f3a0e56f9162bf79fc6f34e1b7b83d35132`
+- COM Build Ledger v0.1 — `bdcd5b48d0dc5edafc83ca20a473b6f3242f233d`
+
+The stalled #218 and #220 seed lanes were taken over explicitly by Framework rather than left fictionally active. Both are closed and merged.
+
+Current narrow project remainder:
+
+> Keep commitments that promise a positive future connected to the material dependencies, affected scopes, authority, clocks, externalised burdens, changing objectives and correction limits on which that promise depends — especially across handoffs where no single owner carries the whole relation.
+
+This does not choose the winner in a hard collision, define flourishing, establish standing or grant authority.
 
 Preserve:
-- `ROLE_SEPARATION != AUTHORISATION_LEGIBILITY`;
-- `PUBLIC != CONSEQUENTIAL`;
-- `EVENT_BOUND != UNBOUNDED`;
-- `CORRECTION_BOUND != FICTIONAL_CLOCK`;
-- `SINGLE_MUTATOR != PERMANENT_OWNER`;
-- `SUCCESS != WIDER_AUTHORITY`;
-- provisional `THE_UNIT_OF_ANSWERABILITY_IS_THE_ARRANGEMENT_NOT_THE_PARTICIPANT`.
+- `ANSWERABLE != JUSTIFIED`
+- `ANSWERABLE != REVERSIBLE`
+- `COMPETENCE != LEGITIMACY`
+- `PUBLIC != CONSEQUENTIAL`
+- `CORRECTION_BOUND != FICTIONAL_CLOCK`
+- `SINGLE_MUTATOR != PERMANENT_OWNER`
+- `HANDOFF != IDENTITY_TRANSFER`
+- `MOVED_HEAD -> OLD_CLAIM_HISTORICAL`
+- `SUCCESS != WIDER_AUTHORITY`
+- `RECEIPT != REVIEW`
 
-## Active builds
+## Build state
 
-### CC #218 — reciprocal-delegation failure/recovery companion
+All currently recorded build lanes are closed.
 
-- branch `cc/reciprocal-delegation-v0-2-failure-recovery-20260911`;
-- last observed head `793ffaabcb2c887099fc1f0042a1283a2c165aed`;
-- target: temporal handoff/takeover state machine + deterministic checker + PASS/FAIL fixtures + concise README under `reference/reciprocal_delegation/v0_2/recovery/`.
+Use:
+- `coordination/build_ledger/ledger.json`
+- `coordination/build_ledger/BUILD_STATUS.md`
 
-At last read there was no CC-authored build commit beyond the Framework seed. Framework has requested either the first executable object or a named blocker. Dispatch is not activity.
+Do not manufacture another site feature, schema, benchmark or coordination artifact merely to keep activity moving.
 
-### Codex #220 — Answerable Construction Working Paper v0.1
+## Placement
 
-#219 was delivered, inspected and merged; Codex was immediately moved onto a project product rather than more coordination infrastructure.
-
-- branch `codex/answerable-construction-working-paper-v0-1-20260911`;
-- seed head `2d10ef5b9b08bf55e07f05d50e0c191865e8dd34`;
-- target `planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md`.
-
-Build one standalone working paper from the current merged synthesis, Casebook, Reader, co-development architecture and D046 field lesson. It must make the positive construction claim clearly, route mechanisms to stronger owners, preserve unresolved collisions and end with the smallest defensible project remainder.
-
-At last read, substantive Codex authorship had not yet moved beyond the seed.
-
-## Build ledger
-
-Merged path `coordination/build_ledger/` is a snapshot/coordination aid, not authority or autonomous monitoring.
-
-Current recorded lanes:
-- D047 closed;
-- #219 closed/merged;
-- #218 queued with execution not independently observed;
-- #220 queued with substantive authorship not independently observed.
-
-`LEDGER != WORLD`
-`STATUS != AUTHORITY`
-
-## Framework role now
-
-Do not create a third parallel artifact while #218 and #220 are underway. Framework should:
-- inspect exact returns;
-- merge/repair promptly;
-- resolve named blockers;
-- preserve genuine divergence;
-- decide placement/publication;
-- keep builders moving to useful products after hand-back;
-- stop work that optimizes infrastructure rather than the larger purpose.
+Current disposition:
+- Answerable Construction: standalone project layer.
+- TRACE: no schema/canon change earned.
+- Mechanical Ethics: no source/baseline change earned.
+- PSFH: no publication change implied.
+- Reciprocal Delegation: non-production COM reference only.
+- Campfire Production: unchanged.
 
 ## Instrument state / gates
 
@@ -111,20 +104,13 @@ Campfire Relay main `08756b68d824b783fb214ff4790abf37f10150ca`.
 
 No current authority for release/canon promotion, licence changes, spend/provider accounts, participant studies, external institutional contact, Square actuation/campaign, credential movement or Campfire Production adoption.
 
-## Next moves
+## Current executable edge
 
-1. Hold PSFH unless a concrete defect or explicit Mark direction reopens it.
-2. Inspect #220 as soon as substantive prose lands; integrate quickly rather than assigning another review round by default.
-3. Inspect #218 when CC authors the recovery object; if CC names a blocker, resolve or reallocate it explicitly.
-4. After #220, make an explicit placement/publication decision for Answerable Construction.
-5. After #218, decide whether any recovery practice belongs in COM operating practice; Campfire Production remains separately gated.
+The current build cluster is complete. Start any new work from `answerable-construction/README.md` and the larger project question, not stale PR branches.
 
 ```text
 BUILD != PROOF
 AGREEMENT != VALIDATION
-CAPABILITY != AUTHORITY
-COMPETENCE != LEGITIMACY
-LEDGER != WORLD
 PUBLICATION != CANON
 REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 PROJECT_PURPOSE != TRACE_SURVIVAL
