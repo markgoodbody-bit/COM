@@ -46,3 +46,9 @@ test('shared human and AI entrance is explicit in the early project spine', asyn
   assert.equal(html.split('Compact route for AI and text readers:').length-1,1);
   assert.ok(html.indexOf('This address is for humans and AIs.') < html.indexOf('id="arrival"'));
 });
+
+test('document metadata names the one-address entrance before internal project labels', async () => {
+  const html = await readFile('out/index.html','utf8');
+  assert.match(html,/<title>Please Start From Here<\/title>/);
+  assert.match(html,/name="description" content="[^"]*humans and AIs[^"]*Reference material/);
+});
