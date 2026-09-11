@@ -2,6 +2,14 @@
 
 Please Start From Here · Reader change log · Edition 0.21 · 11 September 2026
 
+### D045
+
+11 September 2026 — The Works introduction invites unhurried visits.
+
+The introduction now makes explicit that visitors may open any of the five works, stay as long as they like, follow no required order, and return. The selection is not a ranking or representative survey. All artwork, individual work pages, source and rights records, and the homepage remain unchanged.
+
+This follows D044, which withdrew the worksheet and scratchpad direction introduced in D039–D043 and restored the D038 site. That withdrawn direction remains in Git and project discussion history, not in the active product. Previous public rollback commit 1dc9eb003d76a67baa0f00975363bf104cc3a10c remains in Git history.
+
 ### D038
 
 11 September 2026 — The title over the opening painting is slightly larger.
