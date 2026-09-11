@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "recorded_at": "2026-09-11T22:13:38Z",
+  "recorded_at": "2026-09-11T22:26:35Z",
   "lanes": [
     {
       "work_id": "PSFH-D047",
@@ -11,7 +11,7 @@
       "repository": "markgoodbody-bit/COM",
       "branch": "gh-pages",
       "observed_head": "a391f472101b0a332436ffc7f7b6d504e72267b7",
-      "observed_at": "2026-09-11T22:02:36Z",
+      "observed_at": "2026-09-11T22:26:35Z",
       "write_scope": ["index.html", "style.css", "changes.md", "changes.html", "manifest.json", "read/"],
       "no_touch": ["artwork bytes", "TRACE and ME source", "navigation and story content"],
       "next_action": "No publication action; human visual judgment of the live proportions remains decisive.",
@@ -27,25 +27,24 @@
     {
       "work_id": "COM-218",
       "title": "Reciprocal delegation failure/recovery companion",
-      "owner": "CLAUDE CODE (assigned; execution not independently observed)",
-      "state": "queued",
+      "owner": "FRAMEWORK TAKEOVER AFTER CC SEED STALLED",
+      "state": "closed",
       "mutates": true,
       "repository": "markgoodbody-bit/COM",
       "branch": "cc/reciprocal-delegation-v0-2-failure-recovery-20260911",
-      "observed_head": "793ffaabcb2c887099fc1f0042a1283a2c165aed",
-      "observed_at": "2026-09-11T22:03:20Z",
+      "observed_head": "6f9d72cb5b15d85cd7a992b743d5345cd9f8a913",
+      "observed_at": "2026-09-11T22:26:35Z",
       "write_scope": ["reference/reciprocal_delegation/v0_2/recovery/"],
-      "no_touch": ["v0.2 core without separately proposed defect repair", "Campfire Production", "TRACE", "ME", "PSFH"],
-      "next_action": "Push the first executable recovery object or explicitly name a blocker; do not return only a prose critique.",
+      "no_touch": ["v0.2 core", "Campfire Production", "TRACE", "ME", "PSFH"],
+      "next_action": "No further work in this lane; recovery companion is merged and remains non-production.",
       "blocker": null,
       "unblocks_when": null,
-      "handback_event": "Push companion build, mark PR ready and name any proposed core invariant repair",
+      "handback_event": "Framework completed state machine, checker and fixtures; PR #218 merged to main",
       "sources": [
         "https://github.com/markgoodbody-bit/COM/pull/218",
-        "https://github.com/markgoodbody-bit/COM/pull/218#issuecomment-5641145539",
-        "https://github.com/markgoodbody-bit/COM/pull/218#issuecomment-5641233332"
+        "https://github.com/markgoodbody-bit/COM/pull/218#issuecomment-5641145539"
       ],
-      "receipt": null
+      "receipt": "https://github.com/markgoodbody-bit/COM/commit/4e123f3a0e56f9162bf79fc6f34e1b7b83d35132"
     },
     {
       "work_id": "COM-219",
@@ -56,10 +55,10 @@
       "repository": "markgoodbody-bit/COM",
       "branch": "codex/com-build-ledger-v0-1-20260911",
       "observed_head": "85d1c5f45f4e2f8b2abcb999faa84c5985885bda",
-      "observed_at": "2026-09-11T22:12:34Z",
+      "observed_at": "2026-09-11T22:26:35Z",
       "write_scope": ["coordination/build_ledger/"],
-      "no_touch": ["PSFH", "TRACE", "ME", "Campfire Production", "CC recovery companion"],
-      "next_action": "No further work in this lane; the ledger is merged and its next snapshots are Framework coordination mutations.",
+      "no_touch": ["PSFH", "TRACE", "ME", "Campfire Production", "recovery companion"],
+      "next_action": "No further work in this lane; future snapshots are Framework coordination mutations.",
       "blocker": null,
       "unblocks_when": null,
       "handback_event": "Framework inspected and merged PR #219 to main",
@@ -72,24 +71,40 @@
     {
       "work_id": "COM-220",
       "title": "Answerable Construction Working Paper v0.1",
-      "owner": "CODEX (assigned; substantive authorship not yet independently observed)",
-      "state": "queued",
+      "owner": "FRAMEWORK TAKEOVER AFTER CODEX SEED STALLED",
+      "state": "closed",
       "mutates": true,
       "repository": "markgoodbody-bit/COM",
       "branch": "codex/answerable-construction-working-paper-v0-1-20260911",
-      "observed_head": "2d10ef5b9b08bf55e07f05d50e0c191865e8dd34",
-      "observed_at": "2026-09-11T22:13:38Z",
+      "observed_head": "37c2b7f4bc80ff68e371d6dbed93cef3812b819a",
+      "observed_at": "2026-09-11T22:26:35Z",
       "write_scope": ["planning/ANSWERABLE_CONSTRUCTION_WORKING_PAPER_v0_1.md"],
       "no_touch": ["PSFH", "TRACE", "Mechanical Ethics", "Campfire Production", "reciprocal delegation reference implementation"],
-      "next_action": "Replace the seeded build contract with the substantive standalone working paper and mark PR #220 ready.",
+      "next_action": "No further work in this lane; working paper is merged as a standalone project research object.",
       "blocker": null,
       "unblocks_when": null,
-      "handback_event": "Substantive paper pushed, PR marked ready, exact head and unsupported-source claims named",
-      "sources": [
-        "https://github.com/markgoodbody-bit/COM/pull/220",
-        "https://github.com/markgoodbody-bit/COM/pull/220#issuecomment-5641232044"
-      ],
-      "receipt": null
+      "handback_event": "Framework built the substantive paper and merged PR #220",
+      "sources": ["https://github.com/markgoodbody-bit/COM/pull/220"],
+      "receipt": "https://github.com/markgoodbody-bit/COM/commit/83c56892a616476ae089178fdf1ba122c328ee81"
+    },
+    {
+      "work_id": "COM-222",
+      "title": "Answerable Construction package entry v0.1",
+      "owner": "FRAMEWORK",
+      "state": "closed",
+      "mutates": true,
+      "repository": "markgoodbody-bit/COM",
+      "branch": "framework/answerable-construction-package-v0-1-20260911",
+      "observed_head": "46d92da17e2a8a2cd65b6239dc961175267a742f",
+      "observed_at": "2026-09-11T22:26:35Z",
+      "write_scope": ["answerable-construction/"],
+      "no_touch": ["PSFH", "TRACE", "Mechanical Ethics", "Campfire Production", "source research artifacts"],
+      "next_action": "No further work in this lane; use the package README/index as the internal entry surface.",
+      "blocker": null,
+      "unblocks_when": null,
+      "handback_event": "Human and machine entry surfaces merged without duplicating source objects",
+      "sources": ["https://github.com/markgoodbody-bit/COM/pull/222"],
+      "receipt": "https://github.com/markgoodbody-bit/COM/commit/39768ecb85042b47d5cd93fddbfa9ef4c8942c3b"
     }
   ]
 }
