@@ -182,6 +182,8 @@ A more honest account separates:
 
 Urgency does not create authority, and incomplete repair does not automatically prohibit action.
 
+The invented [Last Bus narrative](ANSWERABLE_CONSTRUCTION_THE_LAST_BUS_v0_1.md) develops the positive side of this problem. An evening course becomes usable through connected commitments by an education provider, a transport provider and the people attending. When the vehicle fails to arrive, a reimbursement promise is not a funded journey for someone without spare money. The proposed arrangement therefore places the response with a party that can organise and pay for it, rather than making the stranded learner coordinate the failure. This is a design possibility, not an observed service or a finding that such support is always feasible. Continuing its funding can still conflict with other justified demands.
+
 ## 8. Human–AI co-development without obedience or sovereignty
 
 Human–AI cooperation creates a particularly sharp version of the constructive problem because capability can increase faster than the surrounding relationship's ability to inspect it.
@@ -214,6 +216,10 @@ The episode does not demonstrate that Answerable Construction works better than 
 It also exposed a defect in the project's own reference implementation. The first reciprocal-delegation model required a numeric human-correction window for any public mutation. No such number had actually been declared for D046. Inventing one retrospectively would have made the record tidier by making it less true.
 
 The actual bound was one public publication action followed by a named evidence receipt and hand-back. The reference was therefore repaired to allow time-bounded, event-bounded or combined correction bounds.
+
+Those bounds are not interchangeable. Limiting the number of actions before hand-back can prevent further accumulation within that assignment. It does not limit how long the published result remains exposed, prove that the hand-back was read, or establish that correction can be carried out. Where elapsed exposure matters, an event alone may be insufficient. A response to that exposure requires evidence about the actual arrangement; an invented check-in interval would not supply it.
+
+The D046 record therefore supports a narrower conclusion than saying that the correction problem was solved: the reference became able to represent the declared operational bound without fabricating a number. Whether that bound is adequate for another publication remains a separate question. A receipt is not review, and a completed lane is not the end of its consequences.
 
 ```text
 CORRECTION_BOUND != FICTIONAL_CLOCK
