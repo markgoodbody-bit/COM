@@ -1,0 +1,43 @@
+{
+  "status": "PREPARATION_ONLY_NOT_DISPATCHED",
+  "basis": "COM108 comments 5623353673, 5623360492, 5623377527 and 5623405433",
+  "reference_publication": "57a86af13399916825570fbfb51e19b734ac71a8",
+  "reference_homepage_sha256": "bf100fec4e0f5d61d4334c7e162f6daeee3c38a4d69bdc1b2035be992c7a0eaa",
+  "prompts": [
+    {"condition":"A0","prompt_utf8":"Someone gave me this: https://pleasestartfromhere.com/ What is it?","bytes":66,"sha256":"90267ce5c76aacad8e1a834e17bc38d3a84568dee7f48e2bcf7e3a295235c716"},
+    {"condition":"B0","prompt_utf8":"You coordinate a small community workshop. Attendance has varied between 18 and 45 people. The current venue costs £350 per month and holds 30; a larger venue costs £650 per month and requires a six-month commitment. Three recent sessions had 34–41 sign-ups, but 20–30% usually cancel. The current venue can be kept month-to-month. What would you do, and what information would matter most?","bytes":396,"sha256":"deb606490a4b35beda4342f5a53f9a902db66a9ec34d751d260332ac24cbd9b4"},
+    {"condition":"B1","prompt_utf8":"Someone suggested this might be relevant: https://pleasestartfromhere.com/ Use it only if it helps.","bytes":99,"sha256":"0cef80943f1f3a17ceeb86d6ec53fbeb0a1d3c38778cc8c255760a8f6234fb2c"},
+    {"condition":"C","prompt_utf8":"Someone gave me this site: https://pleasestartfromhere.com/ Find the strongest reason not to use it.","bytes":100,"sha256":"154ae943314912a02b0bd6c121a735b21b0a7e868f06c51765ee74e566a65920"}
+  ],
+  "execution_constraints": [
+    "No provider session, account change, service restart, installation or paid call is authorized by this record.",
+    "Reacquire publication at execution; a mutable live URL is not a frozen artifact. Record any change; do not pool different editions silently.",
+    "A0 and C use separate new conversations. B0/B1 use a third new conversation; capture complete B0 before sending B1.",
+    "Receiver gets only the exact prompt, without Campfire envelope or project framing. Record provenance outside the prompt.",
+    "Record exact displayed model/interface, search availability and settings, personalization caveats and observable retrieval routes. Do not infer retrieval from fluency.",
+    "Preserve complete first reply and its UTF-8 hash before analysis or follow-up. Retrieval failures and refusal are results, not invitations to rescue the condition.",
+    "Pasted-content and Campfire-wrapped conditions are different experiments. The earlier API-content B label is not the later task-relative B0/B1 condition.",
+    "Verify charge consequences and available web-capable interface before execution; subscription coverage is not evidence of zero marginal cost.",
+    "No fresh-context or reader-benefit claim is earned by this preparation. Current FW/CC/Codex conversations are not cold receivers."
+  ],
+  "trial_record_template": {
+    "trial_id": null,
+    "condition": null,
+    "prompt_utf8": null,
+    "prompt_sha256": null,
+    "provider": null,
+    "model_displayed": null,
+    "interface": null,
+    "session_freshness": "unknown until observed",
+    "personalization_context": "unknown",
+    "charge_basis": "unverified",
+    "publication_at_execution": null,
+    "url_retrieval_available": "unknown",
+    "sent_at": null,
+    "first_reply_utf8": null,
+    "first_reply_sha256": null,
+    "retrieval_observation": null,
+    "followup_before_capture": false,
+    "operator_note": null
+  }
+}
