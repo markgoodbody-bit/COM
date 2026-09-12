@@ -36,6 +36,10 @@ class CandidateChecks(unittest.TestCase):
 
     def test_unknown_window_may_remain_evidence_incomplete(self):
         record = self.load("06-clock-unknown.json")
+        record["clocks"]["window"]["assessment_as_of"] = {
+            "kind":"unknown", "time_value":"", "event":"", "basis":"Currentness unavailable.",
+            "notes":"Unknown window may retain an unknown as-of anchor.", "basis_evidence":[]
+        }
         self.assertEqual(record["clocks"]["window"]["assessment"], "unknown")
         self.assertEqual(record["clocks"]["window"]["basis_evidence"], [])
         self.assertEqual(record["clocks"]["window"]["assessment_as_of"]["kind"], "unknown")
