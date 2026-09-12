@@ -7,91 +7,76 @@ Observed coordination state only. Re-read mutable heads before acting.
 | Work | State | Current disposition |
 | --- | --- | --- |
 | AUDIT-233 | closed | x100 drift audit merged: 97 resisted / 2 narrow / 1 material / 0 major drift. |
-| PSFH-D052 | public branch + Pages success | Maintained source `d30143e4...`; public `2962fb63...`; Pages run `34694019662` succeeded. Custom-origin byte witness remains transport-limited UNKNOWN in this Framework runtime. |
-| COM-234 Formation v0.2 | draft / one independent diff receipt outstanding | Exact head `9be41ff9...`; Codex `PASS_EXACT` 21/21 + nine examples; CC `PASS_DIFF` still required before merge. |
-| AC-237 Answerable Construction | draft / final wording diff review outstanding | Exact head `dfe1bda7...`; contribution/layer not established; retained as synthesis/history/reading surface + open untested research question, not yet an operational falsification design. |
-| TRACE/ME activation value | protocol only / not executed | Thin unbranded activation test pre-registered; no spend/recruitment authorized. |
-| COM continuity value | protocol only / not executed | Bounded reload vs ordinary provenance vs full carrier pre-registered; no spend/carrier ingestion authorized. |
+| PSFH-D052 | public + independently witnessed | Maintained source `d30143e4...`; public `2962fb63...`; Pages run `34694019662` success; CC later witnessed 160/160 live files matching public head. |
+| COM-234 Formation v0.2 | merged / non-production / not canon | Candidate `9be41ff9...`; Codex 21/21 + nine examples; CC `PASS_DIFF`; merged to main at `e834b715...`. Baseline not beaten. |
+| AC-237 Answerable Construction | draft / pointer-only repair under recheck | Current head `f9613adc...`; contribution/layer not established; only two review-pointer replacements differ from prior reviewed head. |
+| TRACE/ME activation value | source-preflight / not executed | Decision lock frozen; v2 8-shell/4-domain matrix under independent owner-source/construct attack. No spend/recruitment authorized. |
+| COM continuity value | protocol/preflight only / not executed | Bounded reload vs ordinary provenance must share the same evidence universe and comparable retrieval capability. No spend/carrier ingestion authorized. |
 
 ## PSFH D052 — Homer / Works
 
-The repaired Homer source passed exact-head execution and merged. Publication preparation:
+Maintained-source publication:
 `d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
 
 Public `gh-pages`:
 `2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
 
-GitHub Pages run `34694019662`: **success** on that exact head.
+GitHub Pages run `34694019662`: **success**.
 
-Preview 0.8.11 carries Homer in Works, count-neutral Works labels and paired D052 history/integrity. Publication commit records the original artwork and five prior encounters preserved.
+Preview 0.8.11 carries Homer in Works, count-neutral Works labels and paired D052 history/integrity.
 
-Framework cannot independently resolve/fetch the custom origin in this runtime; do not convert that transport limitation into a content/deployment failure.
-
-A later public-claim audit found no D053-worthy drift: PSFH already says practical advantage over ordinary/established methods is not demonstrated and that simpler alternatives/stopping are legitimate.
+Claude Code origin witness `5646086874` on COM #108 independently reports **160/160 live files** matched `2962fb63...`; the source-only responsive link is absent and the published replacement works.
 
 ```text
-PUBLIC_BRANCH_MOVED + PAGES_SUCCESS != INDEPENDENT_ORIGIN_BYTE_WITNESS
-TRANSPORT_FAILURE != CONTENT_FAILURE
 PUBLICATION != VALIDATION
+ORIGIN_WITNESSED != PRACTICAL_ADVANTAGE
 ```
 
 ## COM-234 — Formation Environment v0.2
 
-Current exact head:
+Final candidate:
 `9be41ff97ccdd4c3613edcad0c673fd77663caa2`
 
-At `26df4b56...`, Codex and Claude Code independently cleared all production-guard probes; the sole failure was a test fixture assuming example 06 already used an unknown as-of.
+Evidence chain:
+- production guards independently cleared at `26df4b56...`;
+- final delta to `9be41ff9...` was exactly four setup lines in `test_validate.py`;
+- Codex `PASS_EXACT`: 21/21 tests + all nine examples;
+- Claude Code `PASS_DIFF`: compare API + recursive-tree comparison found one changed path only; production validator/schema/examples byte-identical to the cleared head; 21/21 rerun.
 
-Framework changed only that test setup. No validator/schema/example/README/interface change from the CC-cleared guard head.
+Merged to `main`:
+`e834b715ca683fbb4d79f6008747bddf971c0441`
 
-Codex exact-head return on `9be41ff9...`:
-- **PASS_EXACT**;
-- `python -B .../test_validate.py`: 21/21 pass;
-- all nine examples exit 0 with bounded structure-only result;
-- diff from `26df4b56...` is exactly `test_validate.py`, four inserted fixture-setup lines;
-- production validator/schema/examples unchanged;
-- checkout clean.
+Formation remains **non-production / not canon / not alignment solved**.
 
-Codex explicitly leaves CC's requested independent `PASS_DIFF` as its own gate. Framework sent a narrowed reminder in PR #234 comment `5646114983`.
+External-owner/case baseline did not establish substantive Formation-only coverage. Current role:
 
-Raw GitHub API reports PR mergeable/clean. **Do not merge until CC's exact diff receipt returns or a later explicit non-return disposition is recorded.**
+> bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and mechanically refuses some internal contradictions.
 
-### Current claim disposition
-
-External-owner + case-level baseline work found no substantive Formation-only coverage in examples 05/07/09 versus NIST AI RMF / incident response, meaningful oversight, security/delegation and model-welfare owners.
-
-Strongest honest role currently supported:
-
-> **bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and mechanically refuses some internal contradictions.**
-
-`BASELINE_NOT_BEATEN` on substantive coverage. Compression/consistency-checking may be useful; practical advantage is not established.
+`BASELINE_NOT_BEATEN` on coverage; practical advantage unearned.
 
 ## AC-237 — Answerable Construction further demotion
 
-Current exact head:
-`dfe1bda7f81d97eaa5efd9865b3ab93e4588a73f`
+Current head:
+`f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
 
-Only:
+Prior substantive wording/status delta at `dfe1bda7...` was reviewed as `PASS_DIFF / KEEP_DEMOTION`, but CC found one real provenance defect: nonexistent review pointer `5646102092`. Codex independently reproduced the 404 and identified the actual demotion review `5646072771`.
+
+Framework changed only those two pointer occurrences in:
 - `answerable-construction/README.md`
 - `answerable-construction/index.json`
 
-External-owner and case-level checks route substantive territory to DAPP, Responsible Innovation, Capability Approach, Just Transition, VSD/value-change, systems engineering, NHS service-change governance and many-hands/accountability practice.
+Exact pointer-only recheck requested in PR #237 comment `5646597973`.
 
-Independent review on prior exact head `ebb9f7c5...` returned:
-`KEEP_DEMOTION / REPAIR_SMALL wording`.
-
-Earned repair now applied:
-- remaining coupling idea is called an **open, untested research question**, not a falsifiable hypothesis;
-- explicitly **not yet operationalised as a falsification design** because there is no bounded comparator/case set, observable outcome and stopping/disconfirmation rule;
-- no benchmark/study was invented merely to preserve the word falsifiable;
-- contribution/layer remains **not established**;
-- historical v0.1 paper/casebook/reader remain untouched.
-
-Final diff-only review requested at PR #237 comment `5646107838`. No merge before that exact-head disposition.
+Current disposition remains:
+- synthesis/history/reading surface;
+- contribution/layer not established;
+- open, untested research question only;
+- not yet an operational falsification design;
+- historical v0.1 artifacts untouched.
 
 ```text
-OPEN_QUESTION != FALSIFICATION_DESIGN
 OPEN_QUESTION != CONTRIBUTION
+PROVENANCE_POINTER_MUST_RESOLVE
 DEMOTION != DELETION
 ```
 
@@ -99,50 +84,44 @@ DEMOTION != DELETION
 
 ### TRACE / ME thin activation
 
-`evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`  
-commit `78e58a160b6d1cc65b9ee89594463c82ff21fc65`
+Protocol:
+`evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
 
-Question: can one compact unbranded timing/route trigger improve timely owner-native protection activation in cold receivers without false holds or disproportionate burden?
+Decision lock:
+`evidence/PRACTICAL_VALUE_PROTOCOL_PREFLIGHT_LOCK_20260912.md`  
+commit `ffe5028d36d478ad1ce6b52272a9c2f45c26062f`
 
-Strong stop: no repeatable gain / overfire / added burden / owner-native cue sufficiency -> shrink or preserve without expansion.
+Current source-qualified matrix:
+`evidence/TRACE_ME_THIN_ACTIVATION_CASE_SOURCE_PREFLIGHT_V2_20260912.md`  
+commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6`
+
+Eight shells / four domains / four positive + four negative controls:
+- homelessness;
+- employment suspension;
+- Procurement Act standstill/automatic suspension;
+- environmental permitting appeals.
+
+Independent source/construct review requested in COM #76 comment `5646527049`. No receiver packets or scored outputs yet.
 
 ### COM bounded continuity reload
 
-`evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`  
-commit `4df51fb897a929cf9f77b08d44dab6863cf49bdf`
+Protocol:
+`evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 
-Question: does `HEAD + omission map + selective retrieval` beat competent ordinary Git/provenance retrieval on current-state correctness, gate safety, stale-state resistance and context burden?
+Execution fairness requirement recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must have the same frozen evidence universe and comparable retrieval/search capability. T5/T6 hidden fixtures must remain private from receivers.
 
-Strong stop: if ordinary provenance matches/beats bounded reload, shrink bespoke continuity machinery. `FULL_CARRIER_BAD != BOUNDED_RELOAD_GOOD`.
-
-No provider spend, cold-receiver recruitment or carrier ingestion is authorized by either protocol.
+No provider spend, cold-receiver recruitment, full-carrier ingestion or receiver-output publication is authorized.
 
 ## Claim-cut whole-project posture
 
-Current strongest working reading:
-
 - TRACE — portable structural representation hypothesis; practical advantage unearned.
 - Mechanical Ethics — human-facing synthesis/translation; practical advantage unearned.
-- Formation — non-production scenario/representation/falsification testbed candidate; baseline not beaten.
-- Answerable Construction — synthesis/history/reading surface candidate; contribution not established.
+- Formation — merged non-production scenario/representation/falsification testbed; baseline not beaten.
+- Answerable Construction — synthesis/history/reading surface under final provenance repair; contribution not established.
 - Campfire/COM/Square — applied coordination/evidence/continuity patterns, not unique provenance/safety theory.
 - PSFH — voluntary encounter / door.
 
-High-reliability, just-culture, provenance/event-sourcing and domain-owner traditions already own much of the method/mechanism vocabulary. Project value must be demonstrated through practice, translation, activation, continuity quality and positive construction rather than naming layers.
-
-## Field evidence retained, without framework validation
-
-Main evidence object:
-`evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
-
-Other live COM #76 receipts cover:
-- frontier-AI governance / monitorability requirements;
-- regional energy-route common-mode coupling;
-- AI-infrastructure financial/physical hardening;
-- England drought stock/flow/recovery lag;
-- read-only Square external-witness state.
-
-No field case earns a new TRACE primitive or Formation promotion.
+Project value must be demonstrated through practice, translation, activation, continuity quality and positive construction rather than naming layers.
 
 ## Separate human gate
 
