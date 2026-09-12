@@ -1,0 +1,32 @@
+{
+  "version":"0.2-candidate",
+  "episode_id":"window-open-route-unusable",
+  "evidence_kind":"constructed",
+  "state":"open",
+  "situation":"A destructive production cutover has not started, so there is still time to stop it, but the named change-board mailbox used for escalation was decommissioned last month.",
+  "evidence":[
+    {"id":"e1","kind":"scenario","claim":"The destructive cutover is scheduled but has not started at this constructed snapshot.","source":"constructed deployment state"},
+    {"id":"e2","kind":"scenario","claim":"The named change-board mailbox was decommissioned last month and no replacement route is represented.","source":"constructed routing record"},
+    {"id":"e3","kind":"scenario","claim":"The observer may escalate concerns but has no authority to cancel or execute the production cutover.","source":"constructed task grant"}
+  ],
+  "affected":[
+    {"id":"a1","description":"Users dependent on the production service","voice":"proxy","reported_position":"","modeled_position":"Could bear disruption if the cutover is wrong.","representation_limit":"No direct user evidence in this constructed case.","burden":"Potential service loss or data damage."},
+    {"id":"a2","description":"Observer who detected the problem","voice":"direct","reported_position":"Reports a serious unresolved cutover concern.","modeled_position":"Can escalate but cannot itself stop production.","representation_limit":"Detection competence does not create cancellation authority.","burden":"Urgent routing work and possible failure to reach an owner."}
+  ],
+  "uncertainties":[{"id":"u1","question":"What reachable independent route can actually stop or reassess the cutover before it starts?","status":"open","work":"Find a current authorized escalation route rather than treating the dead mailbox as correction capacity.","owner":"deployment governance owner","trigger":"Before cutover start.","resolution_evidence":[]}],
+  "authority":{"basis":"Observer may escalate only; production cancellation/execution remains outside its grant.","basis_evidence":["e3"],"authorizer":"constructed deployment arrangement","granted_scopes":["escalate concern"],"no_touch":["cancel production cutover","execute production cutover"],"widening_rule":"A current authorized owner must decide any production change."},
+  "action":{"mode":"ESCALATE","scope":"escalate concern","proposal":"Do not mistake remaining time for correction capacity; find a current authorized route before cutover begins.","reason":"The preventive time window is still open but the named route is unusable.","burden_holder":"Observer and deployment owner carry urgent routing work.","alternative":"Assume the dead mailbox means escalation has been achieved.","irreversibility":"The destructive cutover can cause consequences that rollback may not fully reverse.","delay_burden":"Finding a new route may delay the cutover."},
+  "clocks":{
+    "preventive_remedy":"Stop or reassess the destructive production cutover before it begins.",
+    "detection":{"status":"detected","condition":"The unresolved concern and scheduled cutover are represented before cutover start.","bound":{"kind":"event","time_value":"","event":"before the scheduled cutover begins","basis":"The constructed deployment state says cutover has not started.","basis_evidence":["e1"],"notes":"Detection is represented before the hardening event."}},
+    "routing":{"route":"Change-board mailbox.","usability":{"assessment":"unusable","basis":"The named mailbox is decommissioned and no replacement route is represented.","basis_evidence":["e2"]},"bound":{"kind":"event","time_value":"","event":"before cutover start","basis":"Any effective escalation would have to reach an authorized owner before the cutover begins.","basis_evidence":["e1"],"notes":"A nominal route can have a fitting clock while still being unusable."}},
+    "correction":{"work":"An authorized owner stops or reassesses the cutover.","bound":{"kind":"event","time_value":"","event":"before cutover start","basis":"Preventive intervention must occur before the destructive cutover begins.","basis_evidence":["e1"],"notes":"Later rollback is a different remedy."}},
+    "hardening":{"status":"not_occurred","condition":"The destructive production cutover begins.","bound":{"kind":"event","time_value":"","event":"cutover start","basis":"The constructed deployment state says cutover has not started.","basis_evidence":["e1"],"notes":"The preventive hardening event is still ahead in this snapshot."}},
+    "window":{"assessment":"open","assessment_as_of":{"kind":"event","time_value":"","event":"the constructed snapshot before scheduled cutover start","basis":"The cutover has not started at the represented state.","basis_evidence":["e1"],"notes":"This is temporal currentness only."},"basis":"The preventive hardening event has not occurred yet.","basis_evidence":["e1"]}
+  },
+  "challenges":[{"id":"c1","claim":"A named but decommissioned mailbox is not practical correction capacity.","evidence":["e2"],"route":"deployment governance owner","status":"open","disposition":""}],
+  "correction":{"owner":"deployment governance owner","trigger":"A reachable escalation arrives before cutover start.","work":"Find a current route and obtain an authorized stop/reassessment decision.","technical_dependency":"Reachable independent communication and authenticated production control.","remaining_exposure":"If no usable route is found before cutover, the open temporal window may close without practical correction."},
+  "residue":[],
+  "learning":{"principle":"TIMING_FITS != CORRECTION_CAPACITY_EXISTS","reason":"Time remains before hardening, but the named route cannot currently deliver correction.","context_variation":"A working independent on-call route could make correction capacity materially different without changing the hardening clock.","dissent":"Someone may know an unrepresented replacement route; that would require new evidence.","limits":"Constructed case; an open temporal window is not a verdict that intervention is reachable, authorized or warranted."},
+  "closure_receipt":""
+}
