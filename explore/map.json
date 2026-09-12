@@ -260,8 +260,8 @@
     },
     {
       "path": "nodes/hardening.html",
-      "bytes": 5905,
-      "sha256": "53010cd76b5932c1f8459047515c289fabf0b07d33b6f55b3c2687ade549b3a0"
+      "bytes": 5979,
+      "sha256": "a85c7306a28b9081a7c7869e97a093d678d4178cc2492048f58eefdde2ab59a4"
     },
     {
       "path": "nodes/hardening.json",
