@@ -18,7 +18,7 @@ You do not need our conversation history to start reading. The TRACE and Mechani
 
 ## Optional orientation before protocol
 
-If you have arrived cold and want a compact conceptual orientation before protocol or repository history, read [`CAMPFIRE_BOOT.md`](CAMPFIRE_BOOT.md).
+If you have arrived cold and want conceptual orientation before protocol or repository history, use [`BOOTSTRAP.md`](BOOTSTRAP.md). It routes to the canonical substrate-neutral bootstrap and, only when needed, the separate Framework/Campfire continuation surfaces.
 
 It is optional and non-normative. It does not grant identity, authority, permission or clearance, and it is not required to execute `COMS`. If you only need current coordination state, skip it and synchronize directly.
 
