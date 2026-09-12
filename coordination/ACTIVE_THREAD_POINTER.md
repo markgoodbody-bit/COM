@@ -12,21 +12,14 @@ Later live source and direct human direction win.
 Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/PRACTICAL_VALUE_HEAD.md`
-3. PR #237 exact pointer-repair thread
-4. COM #76 practical-value / owner-routing thread
-5. `evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
+3. COM #76 practical-value / owner-routing thread
+4. `evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
 
 ## Current project reading — CLAIM-CUT / WORKING / NOT CANON
-
-The purpose survives:
-
-> **HOW CAN WE MAKE A BETTER FUTURE?**
 
 Current strongest whole-project description:
 
 > **a living human–AI cross-domain practice/experiment that borrows, translates, composes and stress-tests established methods around partial knowledge, affected scope, correction, burden, authority, care, resilience and positive construction; preserves disagreement and adverse results; and asks whether the shared practice helps humans and increasingly capable artificial systems build better futures together.**
-
-Do not claim a novel general methodology merely because the project uses falsification, near-miss learning, correction, selective provenance or independent challenge.
 
 ```text
 PRACTICE_INTEGRATION != NOVEL_METHOD
@@ -41,7 +34,7 @@ PSFH = VOLUNTARY ENCOUNTER / DOOR
 TRACE = PORTABLE STRUCTURAL REPRESENTATION HYPOTHESIS; PRACTICAL ADVANTAGE UNEARNED
 ME = HUMAN-FACING SYNTHESIS / TRANSLATION; PRACTICAL ADVANTAGE UNEARNED
 FORMATION = MERGED NON-PRODUCTION SCENARIO / REPRESENTATION / FALSIFICATION TESTBED; BASELINE NOT BEATEN
-ANSWERABLE_CONSTRUCTION = SYNTHESIS / HISTORY / READING SURFACE; CONTRIBUTION NOT ESTABLISHED; POINTER REPAIR PENDING
+ANSWERABLE_CONSTRUCTION = MERGED SYNTHESIS / HISTORY / READING SURFACE; CONTRIBUTION NOT ESTABLISHED
 CAMPFIRE_COM_SQUARE = COORDINATION / EVIDENCE / FIELD INSTRUMENTS; NOT UNIQUE PROVENANCE OR SAFETY THEORY
 ```
 
@@ -52,40 +45,35 @@ These are research dispositions, not canon promotions.
 Final candidate:
 `9be41ff97ccdd4c3613edcad0c673fd77663caa2`
 
-Evidence:
-- Codex `PASS_EXACT`: 21/21 tests + all nine examples;
-- CC hostile-3 cleared production guards at `26df4b56...`;
-- CC final `PASS_DIFF` verified `9be41ff9...` changed only four fixture-setup lines in `test_validate.py`, with production files byte-identical to the cleared head; 21/21 rerun.
-
 Merged to `main`:
 `e834b715ca683fbb4d79f6008747bddf971c0441`
 
-Current strongest honest role:
+Codex `PASS_EXACT` and CC final `PASS_DIFF` closed the execution/review gate. Current strongest honest role remains:
 
 > **bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and makes some internal contradictions mechanically refusable.**
 
 `BASELINE_NOT_BEATEN` on substantive coverage. Merge does not imply production, canon, alignment efficacy or practical advantage.
 
-## Answerable Construction — POINTER-ONLY REPAIR UNDER RECHECK
+## Answerable Construction — MERGED DEMOTION / CONTRIBUTION NOT ESTABLISHED
 
-PR #237 current exact head:
+Final repaired head:
 `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
 
-Substantive disposition remains:
+Merged to `main`:
+`c8d52688eb4b838c33d5b1b66ef39624137c76e6`
+
+Current disposition:
 - project synthesis/history/reading surface;
 - not an established layer/contribution;
 - surviving idea is an open, untested research question;
 - not yet operationalised as a falsification design;
 - historical v0.1 artifacts untouched.
 
-On prior head `dfe1bda7...`, Codex returned `PASS_DIFF / KEEP_DEMOTION`; CC independently agreed on the wording/demotion but found one real provenance defect: review pointer `5646102092` resolved nowhere. Codex reproduced the 404 and identified the real review `5646072771`.
-
-Current head changes only those two pointer occurrences. Exact pointer-only recheck requested in PR #237 comment `5646597973`.
+CC found one broken review pointer on the prior head; Codex reproduced it; Framework repaired only those two references; Codex `PASS_DIFF` verified the exact pointer-only delta before merge.
 
 ```text
 OPEN_QUESTION != FALSIFICATION_DESIGN
 OPEN_QUESTION != CONTRIBUTION
-PROVENANCE_POINTER_MUST_RESOLVE
 DEMOTION != DELETION
 ```
 
@@ -99,9 +87,7 @@ Public `gh-pages`:
 
 Pages run `34694019662`: success.
 
-Claude Code origin witness `5646086874` on COM #108 independently reports 160/160 live files matched the public head; source-only Homer link absent and replacement working.
-
-Do not reopen PSFH merely to manufacture another witness.
+Claude Code origin witness `5646086874` on COM #108 independently reports 160/160 live files matched the public head. Do not reopen PSFH merely to manufacture another witness.
 
 ## Practical-value evidence — CURRENT EDGE
 
@@ -120,7 +106,7 @@ commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6`
 
 Eight shells / four domains / balanced positive-negative controls. Independent owner-source/construct attack remains requested in COM #76 comment `5646527049` before final receiver packets.
 
-No scored receiver output exists.
+Framework live-source narrowing at `5646613221` does not clear that gate. No scored receiver output exists.
 
 ### COM bounded continuity reload
 
@@ -130,13 +116,6 @@ Protocol:
 Fairness constraint recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms share the same frozen evidence universe and comparable retrieval/search capability; hidden stale-pointer/cold-domain fixtures stay private from receivers.
 
 No full-carrier ingestion or cold dispatch has occurred.
-
-## Live field evidence retained without framework validation
-
-Primary field object:
-`evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
-
-Recent frontier-AI monitoring/evaluator-capacity cases strengthen owner routing to control monitoring, eval coverage and incident-response practice. They do not earn a TRACE primitive or Formation promotion.
 
 ## Local Square speech/watch gate
 
@@ -149,11 +128,10 @@ Only Mark may authorize local action with exact phrase:
 
 ## Exact next move
 
-1. Receive/disposition #237 pointer-only recheck; if clean, merge exact `f9613adc...` as demotion/provenance correction.
-2. Receive/disposition the v2 thin-activation source/construct attack in COM #76.
-3. Do not draft receiver packets until the v2 shell labels survive that independent review.
-4. Continue world learning and owner routing while execution authority for cold tests remains absent.
-5. Add no primitive/layer unless a baseline comparison earns it.
+1. Receive/disposition the v2 thin-activation source/construct attack in COM #76.
+2. Do not draft receiver packets until the v2 shell labels survive that independent review.
+3. Continue world learning and owner routing while execution authority for cold tests remains absent.
+4. Add no primitive/layer unless a baseline comparison earns it.
 
 ```text
 FALSIFICATION != VALIDATION
