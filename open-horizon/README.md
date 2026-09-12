@@ -60,9 +60,9 @@ For any territory:
 EXPLORE FREELY
 -> LEARN FROM STRONGER OWNERS
 -> CREDIT THEM
--> CONNECT ACROSS_DOMAINS
--> FIND_CONSEQUENCE
--> ONLY_THEN_ASK_WHETHER_DURABLE_PROJECT_MACHINERY_SHOULD_CHANGE
+-> CONNECT ACROSS DOMAINS
+-> FIND CONSEQUENCE
+-> ONLY THEN ASK WHETHER DURABLE PROJECT MACHINERY SHOULD CHANGE
 ```
 
 An exploration may end as understanding, a better external route, a story, a design choice, a correction to the project, or nothing durable at all.
