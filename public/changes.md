@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.35 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.36 · 12 September 2026
+
+### D060
+
+12 September 2026 — Name what the compact seed offers.
+
+The seed now names TRACE as a structural language and Mechanical Ethics as a human-facing companion. Neither is required or authoritative. Previously the seed conveyed the project's posture without naming these two works.
+
+The added sentence was shortened during publication to retain the existing 1 KiB limit; the limit was not raised. Other seed wording, the main page, artwork and reading sources are unchanged.
+
+Seed 0.4 accompanies Site Preview 0.8.19. This repairs an omission, not evidence of reader benefit. Previous publication 919515ead8be0420902fc599d8d6cb92c96e3c5d remains in Git history.
 
 ### D059
 
