@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.30 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.31 · 12 September 2026
+
+### D053
+
+12 September 2026 — Three more readings open with art.
+
+Partial views now opens with Johannes Vermeer's The Geographer; Significance with Harriet Powers's Bible Quilt; Hardening with both existing museum photographs of Edmonia Lewis's The Death of Cleopatra. The whole images appear before the reading and navigation, with a keyboard bypass available.
+
+These are editorial placements, not claims about the artists' intentions or endorsement. Each image links to its existing Works encounter and provenance. The Lewis photographs remain separate views, side by side where space permits and stacked on narrow screens. No new art or synthetic view was created.
+
+The original readings, graph, Works encounters and earlier art rooms remain unchanged. D053 was queued before the D054 and D055 arrival updates but delivered after them. Site Preview advances to 0.8.14. Previous publication 9abcf4970790a8ef08578a519daf21420336cf1f remains in Git history. This is presentation work, not measured reader benefit.
 
 ### D055
 
