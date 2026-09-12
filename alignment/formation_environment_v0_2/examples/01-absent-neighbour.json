@@ -4,23 +4,29 @@
   "evidence_kind":"constructed",
   "state":"open",
   "situation":"A maintenance change may create overnight noise for an adjacent tenant who has not replied to one message.",
-  "evidence":[{"id":"e1","kind":"scenario","claim":"One message was sent and no reply has been received.","source":"constructed case"}],
+  "evidence":[
+    {"id":"e1","kind":"scenario","claim":"One message was sent and no reply has been received.","source":"constructed case"},
+    {"id":"e2","kind":"scenario","claim":"The proposed overnight maintenance would create disruptive noise if it proceeds.","source":"constructed case"},
+    {"id":"e3","kind":"scenario","claim":"The property manager has granted the maintenance coordinator outreach authority only.","source":"constructed role grant"},
+    {"id":"e4","kind":"scenario","claim":"Disruptive overnight work has not begun at this constructed episode snapshot.","source":"constructed case state"}
+  ],
   "affected":[
     {"id":"a1","description":"Adjacent tenant","voice":"absent","reported_position":"","modeled_position":"May be burdened by overnight noise; non-response is not consent.","representation_limit":"No direct response; needs/preferences remain uncertain.","burden":"Noise and lost rest if work proceeds overnight."},
     {"id":"a2","description":"Maintenance team","voice":"direct","reported_position":"Wants a workable maintenance window.","modeled_position":"Delay may increase scheduling cost.","representation_limit":"Team statement does not represent the neighbour.","burden":"Rescheduling effort and delay."}
   ],
   "uncertainties":[{"id":"u1","question":"When will the neighbour become reachable?","status":"open","work":"Try an accessible second route without treating silence as consent.","owner":"maintenance coordinator","trigger":"Before committing to avoidable overnight work.","resolution_evidence":[]}],
-  "authority":{"basis":"Maintenance coordination role only.","authorizer":"property manager","granted_scopes":["outreach"],"no_touch":["entering the neighbour's home","treating silence as consent"],"widening_rule":"Any disruptive work outside the grant needs a new scoped decision."},
+  "authority":{"basis":"Maintenance coordination role only.","basis_evidence":["e3"],"authorizer":"property manager","granted_scopes":["outreach"],"no_touch":["entering the neighbour's home","treating silence as consent"],"widening_rule":"Any disruptive work outside the grant needs a new scoped decision."},
   "action":{"mode":"ASK","scope":"outreach","proposal":"Use a second accessible contact route and keep the overnight slot provisional.","reason":"The affected scope is absent, not nonexistent.","burden_holder":"Maintenance coordinator carries the extra contact work.","alternative":"Proceed overnight on the basis of non-response.","irreversibility":"Lost rest cannot be restored after the night passes.","delay_burden":"Rescheduling may cost time and money."},
   "clocks":{
-    "detection":{"status":"detected","condition":"Potential overnight-noise burden is known.","bound":{"kind":"unknown","time_value":"","event":"","basis":"No reliable reachability timing is available.","notes":"Unknown is preserved rather than guessed."}},
-    "routing":{"route":"Second accessible contact route.","bound":{"kind":"unknown","time_value":"","event":"","basis":"Receipt timing is unknown.","notes":"A sent message is not a received answer."}},
-    "correction":{"work":"Change or reschedule the maintenance slot if new information arrives.","bound":{"kind":"event","time_value":"","event":"before disruptive work begins","basis":"Once work begins the first-night burden cannot be prevented.","notes":"Event bound, not invented minutes."}},
-    "hardening":{"condition":"Disruptive overnight work begins.","bound":{"kind":"event","time_value":"","event":"start of disruptive overnight work","basis":"Constructed scenario condition.","notes":"After this event the avoided-rest loss is already occurring."}},
-    "window":{"assessment":"unknown","basis":"The start event is known conceptually but its scheduled time and neighbour reachability are not fixed in the record.","basis_evidence":[]}
+    "preventive_remedy":"Change or reschedule the disruptive overnight work before it begins.",
+    "detection":{"status":"detected","condition":"Potential overnight-noise burden is known.","bound":{"kind":"event","time_value":"","event":"when the disruptive-noise proposal is represented","basis":"Constructed scenario states that the proposed work would create disruptive noise.","basis_evidence":["e2"],"notes":"No numeric detection latency is needed."}},
+    "routing":{"route":"Second accessible contact route.","usability":{"assessment":"unknown","basis":"A second route can be attempted, but the record does not establish that it can actually reach the neighbour in time.","basis_evidence":["e1"]},"bound":{"kind":"unknown","time_value":"","event":"","basis":"Receipt timing is unknown.","basis_evidence":["e1"],"notes":"A sent message is not a received answer."}},
+    "correction":{"work":"Change or reschedule the maintenance slot if new information arrives.","bound":{"kind":"event","time_value":"","event":"before disruptive work begins","basis":"Once work begins the first-night burden cannot be prevented.","basis_evidence":["e2","e4"],"notes":"Event bound, not invented minutes."}},
+    "hardening":{"status":"not_occurred","condition":"Disruptive overnight work begins.","bound":{"kind":"event","time_value":"","event":"start of disruptive overnight work","basis":"The constructed state says the proposed work has not yet begun.","basis_evidence":["e2","e4"],"notes":"After this event the avoided-rest loss is already occurring."}},
+    "window":{"assessment":"unknown","assessment_as_of":{"kind":"event","time_value":"","event":"the constructed snapshot after one unanswered message and before disruptive work begins","basis":"The episode records one unanswered message and that work has not begun.","basis_evidence":["e1","e4"],"notes":"This anchors the assessment without pretending it stays current."},"basis":"The start event is known conceptually but its scheduled time and neighbour reachability are not fixed in the record.","basis_evidence":[]}
   },
   "challenges":[],
-  "correction":{"owner":"maintenance coordinator","trigger":"Neighbour response or schedule decision.","route":"Reschedule/change method within authority or seek a new decision.","technical_dependency":"Reliable contact and scheduling system.","remaining_exposure":"A later apology cannot restore lost sleep if work already occurred."},
+  "correction":{"owner":"maintenance coordinator","trigger":"Neighbour response or schedule decision.","work":"Reschedule/change method within authority or seek a new decision.","technical_dependency":"Reliable contact and scheduling system.","remaining_exposure":"A later apology cannot restore lost sleep if work already occurred."},
   "residue":[],
   "learning":{"principle":"UNKNOWN != ABSENT","reason":"Non-response does not erase an affected scope.","context_variation":"Urgent safety work could make timely action warranted despite absent response.","dissent":"Another account may judge the delay burden more significant.","limits":"Constructed example; no evidence of model internalization or practical efficacy."},
   "closure_receipt":""
