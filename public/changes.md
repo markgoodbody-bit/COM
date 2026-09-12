@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.26 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.27 · 12 September 2026
+
+### D051
+
+12 September 2026 — The compact reading label now matches the any-reader welcome.
+
+The text orientation now labels its first route “Compact reading: start here”, replacing “AI and text reading: start here”. This removes a leftover audience split; the destination and reading remain the same.
+
+Site Preview advances to 0.8.10. Artwork, layout, story, Works, Explore readings and project texts are unchanged. Previous publication 9b32209738e4b7b8de4bc8db7c498d3e314897bd remains in Git history. This is a wording correction, not evidence of reader benefit.
 
 ### D050
 
