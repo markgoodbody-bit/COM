@@ -11,6 +11,7 @@
   "routes": {
     "seed": "/seed.txt",
     "orientation": "/llms.txt",
+    "reader_start": "/explore/start.json",
     "map": "/manifest.json",
     "shared_reading": "/",
     "human_reading": "/",
