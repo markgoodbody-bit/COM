@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.25 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.26 · 12 September 2026
+
+### D050
+
+12 September 2026 — The text entrance now links directly to Works.
+
+The text orientation, compact machine entrance, Explore text index and manifest now expose the existing Works collection. A work of art can be a complete visit; there is no ranking or required order. Each selected work retains its own page and museum record, and the works are not endorsements of this project.
+
+This repairs a discovery gap, not the artworks or their interpretation. All artwork bytes, Works pages, layout and order, homepage story, navigation and Explore readings remain unchanged. Site Preview advances to 0.8.9. Previous publication 738bd4798e7b8d8d9031e4cae8a2a0475128b6cb remains in Git history. Easier discovery is not evidence of reader benefit.
 
 ### D049
 
