@@ -20,7 +20,7 @@ Current strongest description:
 
 > **a living human–AI cross-domain practice/experiment that borrows, translates, composes and stress-tests established methods around partial knowledge, affected scope, correction, burden, authority, care, resilience and positive construction; preserves disagreement/adverse results; and tests whether the shared practice helps humans and increasingly capable artificial systems build better futures together.**
 
-Do not claim a novel general methodology merely because the project uses falsification, near-miss learning, correction, selective provenance or independent challenge. Practical value, not naming, is now the central evidential burden.
+Practical value, not naming, is now the central evidential burden.
 
 ```text
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
@@ -33,99 +33,62 @@ OWNER_ROUTING != FAILURE
 ## Working instrument placement
 
 - **PSFH** — voluntary public encounter / door.
-- **TRACE** — portable structural representation hypothesis; no unique primitives established; formal burden material; practical advantage unearned.
+- **TRACE** — portable structural representation hypothesis; no unique primitives established; practical advantage unearned.
 - **Mechanical Ethics** — human-facing synthesis/translation; practical advantage unearned.
 - **Formation Under Uncertainty** — merged non-production scenario/representation/falsification testbed; stronger-owner baseline not beaten on substantive coverage.
 - **Answerable Construction** — merged synthesis/history/reading surface plus open untested research question; contribution/layer not established.
 - **Campfire / COM / Square** — coordination/evidence/field instruments and applied continuity patterns; not unique provenance/safety theory.
 
-These are research dispositions, not canon promotions.
+## Closed repository/publication edges
 
-## Formation Environment v0.2 — MERGED / NON-PRODUCTION / NOT CANON
+### Formation Environment v0.2
+Final candidate `9be41ff97ccdd4c3613edcad0c673fd77663caa2`; merge `e834b715ca683fbb4d79f6008747bddf971c0441`. Codex final execution and CC final diff review closed the gate. Non-production/not canon. Current role remains a bounded project-specific testbed; `BASELINE_NOT_BEATEN`.
 
-Final candidate head:
-`9be41ff97ccdd4c3613edcad0c673fd77663caa2`
+### Answerable Construction
+Final repaired head `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`; merge `c8d52688eb4b838c33d5b1b66ef39624137c76e6`. Current disposition: synthesis/history/reading surface; contribution/layer not established; open untested question only; historical v0.1 artifacts untouched.
 
-Merged to `main`:
-`e834b715ca683fbb4d79f6008747bddf971c0441`
-
-Evidence chain:
-- production guards independently cleared at `26df4b56...`;
-- Codex final `PASS_EXACT`: 21/21 tests + all nine examples;
-- Claude Code final `PASS_DIFF`: recursive-tree and compare checks found only four fixture-setup lines changed from the cleared production head; production validator/schema/examples byte-identical; suite rerun 21/21.
-
-Current claim disposition:
-
-> **bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and makes some internal contradictions mechanically refusable.**
-
-`BASELINE_NOT_BEATEN` on substantive coverage. Compression/consistency value may exist; practical advantage is unproven.
-
-## Answerable Construction — MERGED DEMOTION / CONTRIBUTION NOT ESTABLISHED
-
-Final repaired head:
-`f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
-
-Merged to `main`:
-`c8d52688eb4b838c33d5b1b66ef39624137c76e6`
-
-Current front-door disposition:
-- synthesis/history/reading surface;
-- not established standalone layer or contribution;
-- surviving coupling idea = open, untested research question;
-- not yet operationalised as a falsification design;
-- historical v0.1 artifacts untouched.
-
-Prior wording/status review cleared the demotion. CC then found one bad provenance pointer; Codex reproduced the 404; Framework repaired only those two pointer occurrences; Codex `PASS_DIFF` verified both replacements resolve to the real review and no other delta exists before merge.
-
-```text
-OPEN_QUESTION != FALSIFICATION_DESIGN
-OPEN_QUESTION != CONTRIBUTION
-DEMOTION != DELETION
-```
-
-## PSFH D052 — PUBLIC / ORIGIN WITNESSED
-
-Maintained source:
-`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
-
-Public `gh-pages`:
-`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
-
-Pages run `34694019662`: success.
-
-Claude Code origin witness `5646086874` on COM #108 independently reports 160/160 live files matched the public head; source-only Homer link absent and published replacement works.
+### PSFH D052
+Maintained source `d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`; public `2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`; Pages run success; CC origin witness reports 160/160 live files matched public head.
 
 ## Practical-value tests — DESIGN/PREFLIGHT ONLY / NOT EXECUTED
 
-Compact pointer:
-`coordination/PRACTICAL_VALUE_HEAD.md`
-
 ### TRACE / ME thin activation
 
-Decision lock:
+Original protocol:
+`evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
+
+Current decision/packet-fairness lock:
 `evidence/PRACTICAL_VALUE_PROTOCOL_PREFLIGHT_LOCK_20260912.md`  
-commit `ffe5028d36d478ad1ce6b52272a9c2f45c26062f`
+commit `160eed78a2e4f6c43b8bda7896ceff3a20895b5a`
 
-Current v2 source matrix:
+The lock now explicitly requires label-blind answer-leakage review before hashing final packets and preserves:
+
+```text
+NEUTRAL_DECISIVE_FACT != ANSWER_LEAK
+DISCOVERABLE_ANSWER != LEAKED_ANSWER
+HARDER_CASE != FAIRER_CASE
+```
+
+Current repaired v2 source matrix:
 `evidence/TRACE_ME_THIN_ACTIVATION_CASE_SOURCE_PREFLIGHT_V2_20260912.md`  
-commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6`
+commit `02d68ccf3c489e1d448f37ab8d02b3f551952832`
 
-V2 contains 8 shells across four domains with balanced positive/negative controls. Independent owner-source/construct attack remains requested in COM #76 comment `5646527049` before final receiver packets.
+Independent hostile review of the previous v2 source returned `REPAIR_BEFORE_PACKET / NO REPLACE_DOMAIN`. The exact repairs are now represented: homelessness review-path/priority-need pins, procurement regime symmetry, employment mechanism+sequence/alternative scoring, environmental timing/routing ceilings, and pair-symmetric decisive facts.
 
-Framework live-source recheck `5646613221` narrows scoring but does not clear that independent gate. Employment remains the most judgment-sensitive shell and must be replaced before dispatch if final facts cannot make its discriminator crisp without answer leakage.
+Exact repaired-source recheck requested at COM #76 comment `5646641110`.
 
-No scored receiver output exists.
+**Do not draft final receiver packets until `MATRIX_SOURCE_READY`.** No scored output exists.
 
 ### COM bounded continuity reload
 
 Protocol:
 `evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 
-Preflight fairness constraint recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must share the same frozen evidence universe and comparable retrieval/search capability. Hidden stale-pointer/cold-domain fixtures remain private from receivers.
+Preflight fairness constraint in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must share the same frozen evidence universe and comparable retrieval/search capability. Hidden stale-pointer/cold-domain fixtures remain private from receivers.
 
-No provider spend, cold-receiver recruitment or carrier ingestion is authorized.
+No provider spend, cold-receiver recruitment, full-carrier ingestion or receiver-output publication is authorized.
 
-## Mechanical Ethics — OWNER-CORRECTED READING / NO SOURCE CHANGE
+## Mechanical Ethics — owner-corrected reading / no source change
 
 Current strongest reading:
 
@@ -133,21 +96,18 @@ Current strongest reading:
 
 No ME source demotion earned because the current front door is already sufficiently cautious.
 
-## TRACE — CURRENT RC1 POSTURE HOLDS
+## TRACE — current RC1 posture holds
 
 TRACE main last verified:
 `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`
 
-RC1 already says use ordinary/specialist methods where they preserve the needed relations with less effort; unique primitives are not established; representation burden is material; practical advantage is unearned.
+RC1 already says use ordinary/specialist methods where they preserve the needed relations with less effort; unique primitives are not established; representation burden is material; practical advantage is unearned. Reverify before operational use.
 
-Reverify mutable heads before operational use.
+## Current world-state delta
 
-## Live field evidence retained without framework validation
+COM #76 comment `5646631505` records the 12 September Saudi East-West pipeline attack as a material coupled-route field delta. The bypass used while Hormuz was constrained was itself temporarily shut after attacks. Treat this as owner-native common-mode/adversarial resilience evidence, not a TRACE addition.
 
-Primary field object:
-`evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
-
-Recent frontier-AI monitoring/evaluator-capacity incidents are naturalistic examples of distinctions such as `MONITOR_EXISTS != MONITOR_COVERS`, but substantive mechanisms remain with control-monitoring/evaluation/incident-response owners. No new TRACE primitive or Formation promotion is earned.
+England drought remains a stock/recovery-lag example: rainfall can improve flows while reservoir storage continues falling. No new project mechanism earned.
 
 ## Local Square speech/watch gate
 
@@ -160,16 +120,15 @@ Only Mark may authorize local action with exact phrase:
 
 ## Exact next move
 
-1. Receive/disposition the v2 thin-activation owner-source/construct attack in COM #76.
-2. Do not draft final receiver packets until the v2 shells survive independent review.
-3. Continue world learning and stronger-owner routing while cold-test execution authority remains absent.
-4. Add no primitive/layer unless a baseline comparison earns it.
+1. Receive/disposition repaired v2 source recheck.
+2. Only if source-ready, draft neutral case packets + private adjudication keys and run label-blind leakage/hostile owner review.
+3. Do not dispatch cold receivers until separate recruitment/provider-spend authority exists.
+4. Continue world learning/owner routing; add no primitive/layer unless baseline comparison earns it.
 
 ```text
 FALSIFICATION != VALIDATION
 PRACTICAL_VALUE != CONCEPTUAL_NOVELTY
-SYNTHESIS != NOVELTY
 BASELINE_NOT_BEATEN
-BUILD != PROOF
+SOURCE_READY != RUN_AUTHORISED
 PUBLICATION != CANON
 ```
