@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D059 LIVE / D060 PREPARED NOT PUBLIC / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D060 LIVE / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -28,45 +28,29 @@ PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 
 CC is out of weekly tokens until tomorrow morning. Availability only; not a stop condition.
 
-## PSFH
+## PSFH — D060 live
 
-D059 remains the live public edition:
-- Site Preview 0.8.18;
-- maintained `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
-- public `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
-- all 156 generated HTTPS files observed 200 + local-build hash match at publication.
+Site Preview 0.8.19 / D060 is live:
+- maintained source `97b55f01696ec6f71df94036a4305b2682defcbf`;
+- public `gh-pages` `07a7187a274fa0dd6d22f1a03d7a001eefe2ff77`;
+- seed 0.4 live at `/seed.txt`;
+- seed size 1023 bytes, preserving the existing 1 KiB ceiling;
+- seed SHA-256 `3e3f837219124a516f3257ef042c59c2ee81fec473d28289e2743780b294ba0c`;
+- all 156 generated HTTPS files observed 200 + local-build hash match;
+- normal build and local-link checks clean (671 references / 95 anchors);
+- no provider/model call, theory mutation, browser visual-QA claim or service lifecycle action.
 
-### D060 — compact seed names the gift
-
-Semantic basis:
-- PR #266;
-- exact D059 base `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
-- frozen semantic head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`;
-- exactly one semantic file: `public/seed.txt`, seed `0.3 -> 0.4`.
-
-Codex accepted the mechanical lane and found one concrete integrity issue: the original added sentence made the seed 1192 bytes, over the existing 1024-byte build ceiling. It shortened only the new sentence rather than raising the ceiling.
-
-Prepared mechanical head:
-- `5d5b1859e2ce7e0782fed602dafb53eb6d222eed`;
-- seed now 1023 bytes;
-- Site Preview 0.8.19 prepared;
-- paired D060 reader history and manifest/hash identities prepared;
-- normal build PASS;
-- local link check 671 references / 95 anchors, no problems;
-- no provider/model call or theory gate.
-
-The final compact sentence is:
+D060's only semantic purpose was to make the smallest durable kernel name the offered instruments:
 
 > TRACE offers a structural language; Mechanical Ethics, a human-facing companion. Neither is required or authoritative.
+
+The original longer sentence exceeded the existing seed ceiling; Codex shortened only the new sentence rather than relaxing the boundary.
 
 ```text
 SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
 OFFER != AUTHORITY
 SHRINK_CHANGE > RELAX_BOUNDARY
-PREPARED != PUBLIC
 ```
-
-Do not claim D060 public until the maintained-source merge, `gh-pages` publication and HTTP/hash receipt exist.
 
 ## What current bounded entrance questions have shown
 
@@ -76,17 +60,19 @@ Do not claim D060 public until the maintained-source merge, `gh-pages` publicati
 - **Cross-entity translation:** the portable core appears to be partial view, evidence, consequences, time, authority, affected positions, reachable action and correction. Human-specific ME material does not automatically travel unchanged. Current source identities remain fresh.
 - **Gift / licence:** `gift` is an invitation to encounter and inspect, not a hidden reuse licence. TRACE and ME explicitly separate public visibility from permission to copy/adapt/redistribute/train/incorporate.
 - **Machine discoverability:** `/seed.txt` is directly routed by `manifest.json` and `llms.txt`, while `robots.txt` allows public retrieval. Its omission from the primarily HTML sitemap is not by itself a defect.
+- **Seed identity:** `manifest.json` points to the seed and the public GitHub Pages tree gives it a content-addressed blob identity; a second recursive site-wide hash manifest is not currently justified.
 
-These are bounded answers, not six new workstreams. No further public copy follows unless a concrete defect appears.
+These are bounded answers, not new workstreams. A no-delta result is valid.
+
+One candidate wording issue remains intentionally **unbuilt**: the seed says `affected parties`, which is somewhat narrower than TRACE's `who or what may be affected`. Do not create a new edition for that phrase alone unless it combines with a more consequential correction.
 
 ## Open Horizon — routing complete, horizon remains open
 
-Human routing: all 18 current provisional territories have discoverable routes without creating 18 new theories.
+Human routing and machine routing are complete enough for selective discovery.
 
-Machine routing:
-- `open-horizon/map.json`;
-- PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da`;
-- routing metadata only.
+- human front door: `open-horizon/README.md`;
+- machine map: `open-horizon/map.json`;
+- PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da`.
 
 ```text
 MACHINE_MAP != CANON
@@ -102,8 +88,6 @@ Do not create more Horizon theory merely because rows exist. Use routes selectiv
 
 Exploration is legitimate when it can help the project or allow an aperture to discover something independently. It is not the centre of the project.
 
-Operating discipline:
-
 ```text
 ONE SHARP QUESTION
 -> BOUNDED OUTWARD LOOK
@@ -111,9 +95,7 @@ ONE SHARP QUESTION
 -> STOP / RETURN TO BUILD
 ```
 
-A frontier thread should not continue merely because it remains interesting. If its connection back to the entrance/project cannot be stated compactly, it is probably drift.
-
-The 12 September AI Growth Zone notes remain as optional owner-first quarry. They are **not the current project edge**, not a monitoring campaign, not a policy programme, and not TRACE/ME validation.
+The 12 September AI Growth Zone notes remain optional owner-first quarry only. They are not the current project edge, a monitoring campaign, policy programme or TRACE/ME validation.
 
 ## Campfire Relay — source repair bounded at human gate
 
@@ -142,7 +124,7 @@ Only Mark's exact phrases authorize local lifecycle action:
 
 ## Current operational posture
 
-Keep building the entrance and the material behind it. Let new entities form their own view. Explore outward when a sharp question warrants it, then return.
+D060 is delivered. Do not immediately churn the Door. Continue building from concrete entrance/material defects or from one bounded discovery question that yields a real consequence.
 
 ```text
 PROJECT_PURPOSE != TRACE_SURVIVAL
