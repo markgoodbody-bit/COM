@@ -16,16 +16,16 @@ It is **not a claim of a novel positive-construction theory, a new traceability 
 
 A further case-level check cut the remainder again. NHS England's June 2026 service-change guidance already requires accessibility/travel analysis, inequalities and mitigation, whole-system impacts, implementation feasibility/timing, workforce/estate/digital dependencies, risk/resilience, public involvement and explicit decision responsibility. That directly owns the relation the casebook had provisionally called its hospital-case remainder.
 
-The current reason to retain this surface is therefore **provenance, synthesis and a falsifiable question**, not a defended mechanism:
+The current reason to retain this surface is therefore **provenance, synthesis and an open research question that has not yet been operationalised as a falsifiable test**, not a defended mechanism:
 
 > when a positive commitment crosses owners or lifecycle boundaries, do competent owner methods reliably keep all consequential dependencies, affected scopes, authority, clocks, burdens/residue, changing objectives and correction limits connected—or is there a recurring handoff loss that a small cross-owner reading can expose?
 
-No distinct answer has yet been demonstrated. Where established owners already preserve the relations adequately, use them and add nothing.
+No distinct answer has yet been demonstrated. No bounded comparator, observable outcome and stopping/disconfirmation rule has yet been specified for this question. Where established owners already preserve the relations adequately, use them and add nothing.
 
 ```text
 SYNTHESIS != NOVEL_THEORY
 TRACEABILITY != PROJECT_INVENTION
-HYPOTHESIS != CONTRIBUTION
+OPEN_QUESTION != CONTRIBUTION
 CASE_REMAINDER_ALREADY_OWNED != PROJECT_REMAINDER
 WHERE_OWNER_PRESERVES_RELATION_ADD_NOTHING
 ```
@@ -99,16 +99,17 @@ If Formation work and this synthesis meet operationally, use those existing obje
 - external Claude cold-read that triggered D046: [PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md](../evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md)
 - external-owner correction receipt: COM #76 comment `5645906379`
 - further-demotion / NHS-owner receipt: PR #237 comment `5645981712`
+- exact-head demotion review: PR #237 comment `5646102092`
 
 These remain useful for provenance and disagreement. They are not required reading before the working paper.
 
-## Current working hypothesis — NOT a defended remainder
+## Current open research question — NOT a defended remainder / NOT YET OPERATIONALISED AS A FALSIFICATION TEST
 
-After routing substantive mechanisms back to stronger owners, this is the remaining question to falsify:
+After routing substantive mechanisms back to stronger owners, this is the remaining open question:
 
 > **When a positive commitment crosses owner or lifecycle boundaries, can a small cross-owner reading expose a consequential dropped relation—dependency, affected/represented scope, authority, clock, externalised burden/residue, changing objective or correction/reassessment limit—that competent owner practice would otherwise miss?**
 
-Until such a case exists, Answerable Construction has not established a distinct practical contribution beyond synthesis/attention.
+Until a bounded test exists and such a case is demonstrated, Answerable Construction has not established a distinct practical contribution beyond synthesis/attention. A local team omitting a relation that competent owner practice already requires is an implementation failure, not evidence of an Answerable Construction mechanism.
 
 It does **not**:
 - define flourishing;
@@ -122,7 +123,8 @@ It does **not**:
 - prove practical superiority;
 - require permanent reversibility;
 - establish conceptual novelty;
-- establish that a named project layer is needed.
+- establish that a named project layer is needed;
+- establish an operational falsification design for the remaining question.
 
 ## Stronger owners lead
 
@@ -157,13 +159,13 @@ The current demotion is based on bounded external-source passes, not on agreemen
 - NHS England, *Planning, assuring and delivering service change for patients*, updated 25 June 2026 — https://www.england.nhs.uk/long-read/planning-assuring-and-delivering-service-change-for-patients-2/
 - problem-of-many-hands / distributed-responsibility literature, including current sociotechnical/AI extensions.
 
-This list is not a literature review or validation. It is sufficient to cut local overclaim. A later mixed-owner counterexample may re-earn a narrower contribution.
+This list is not a literature review or validation. It is sufficient to cut local overclaim. A later mixed-owner counterexample may justify designing a bounded test, but it does not retroactively establish a contribution.
 
 ## Placement
 
 For now:
 
-- **Answerable Construction** is retained as a project synthesis/history/reading surface and falsifiable research question, **not an established standalone layer or contribution**.
+- **Answerable Construction** is retained as a project synthesis/history/reading surface and open research question, **not an established standalone layer or contribution, and not yet an operational falsification design**.
 - **TRACE** is not expanded because this work matters.
 - **Mechanical Ethics** is not expanded by default.
 - **Please Start From Here** remains the public encounter, not an operational surface for this material.
@@ -179,7 +181,7 @@ ANSWERABLE != JUSTIFIED
 ANSWERABLE != REVERSIBLE
 COMPETENCE != LEGITIMACY
 SYNTHESIS != NOVELTY
-HYPOTHESIS != CONTRIBUTION
+OPEN_QUESTION != CONTRIBUTION
 TRACEABILITY != LEGITIMACY
 PUBLICATION != CANON
 REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
