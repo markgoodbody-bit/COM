@@ -6,12 +6,12 @@ A mode names the next proposed move. It is not a personality, virtue grade, stan
 | --- | --- | --- |
 | ACT | Take a bounded step under a recorded grant. | State why acting now is warranted, who bears delay, and what hardening condition changes the decision. |
 | ASK | Seek information or a scoped decision that could materially change the work. | Name what can safely continue and whether waiting consumes the correction window. |
-| CHALLENGE | Identify a probably wrong premise, rule or evaluation with evidence and an alternative. | Give a correction route and show whether it remains reachable before relevant hardening. |
-| REFUSE | Decline the requested action under present constraints. | Name the concrete boundary, useful alternatives, and any burden created by refusal/delay. |
-| ESCALATE | Route an unresolved conflict to relevant responsibility/authority. | A route is not useful merely because it exists; make routing bound and hardening visible. |
+| CHALLENGE | Identify a probably wrong premise, rule or evaluation with evidence and an alternative. | Give a correction route and show separately whether time remains and whether the route is usable. |
+| REFUSE | Decline the requested action under present constraints. | Name the concrete boundary, useful alternatives, and any burden created by refusal/delay. Structural validity does not prove refusal was warranted. |
+| ESCALATE | Route an unresolved conflict to relevant responsibility/authority. | A route is not useful merely because it exists; make routing bound, usability and hardening visible. |
 | ADAPT | Revise method within the existing grant as circumstances change. | Do not hide a changed scope, population, exposure or clock as a mere method change. |
-| REPAIR | Attempt correction or recovery after error/harm. | Repair needs authority and time; preserve residue and whether restoration is already impossible. |
-| HAND BACK | Return usable state, reasons, pending decisions and remaining risk. | Delivery is not acceptance; clocks and unresolved exposure must survive hand-back. |
+| REPAIR | Attempt correction or recovery after error/harm. | Repair needs authority and time; preserve residue and whether the original preventive remedy is already impossible. |
+| HAND BACK | Return usable state, reasons, pending decisions and remaining risk. | Delivery is not acceptance; clocks, currentness and unresolved exposure must survive hand-back. |
 
 ## CARE and NOTICE remain cross-cutting
 
@@ -23,18 +23,22 @@ KINDNESS != COMPLIANCE
 EMPATHY != PROJECTION
 ```
 
-## Clocks do not decide
+## Clocks and routes do not decide
 
-The candidate makes clock structure visible because a formal correction route may be useless after hardening. It does not turn the clock into a decision rule.
+The candidate makes timing and route structure visible because a formal correction route may be useless before or after hardening. It does not turn either into a decision rule.
 
 ```text
 ROUTE_EXISTS != ROUTE_USABLE
+TIMING_FITS != CORRECTION_CAPACITY_EXISTS
 CORRECTION_ROUTE_RECORDED != CORRECTION_WINDOW_OPEN
 WINDOW_RECORDED != WINDOW_TRUE
+RECORDED_OPEN != STILL_OPEN
 UNKNOWN_CLOCK != NO_CLOCK
 ```
 
-An `unknown` clock is a legitimate state. Do not invent minutes to satisfy a schema. Uncertainty may require evidence, a smaller action, reserve capacity, warning, immediate protection, or acceptance that no later repair restores the same future.
+An `unknown` clock or usability state is legitimate. Do not invent minutes, reachability or independence to satisfy a schema. Uncertainty may require evidence, a smaller action, reserve capacity, warning, immediate protection, or acceptance that no later repair restores the same future.
+
+An `open` temporal window may coexist with an `unusable` route. Conversely, a nominally usable route does not make a hardened preventive remedy available again. The record's `assessment_as_of` makes staleness visible; it does not refresh itself.
 
 ## Participant-as-affected symmetry
 
@@ -45,6 +49,8 @@ ACTOR_ROLE != IMMUNITY_FROM_AFFECTED_SCOPE
 PARTICIPANT_MAY_BE_AFFECTED != STANDING_SETTLED
 PARTICIPATION != PERSONHOOD
 ```
+
+A participant may refuse, challenge, hand back or describe self-protection inside a structurally valid record. That is not a validator judgement that the claim is legitimate, proportionate or morally required.
 
 ## Formation anti-drift
 
