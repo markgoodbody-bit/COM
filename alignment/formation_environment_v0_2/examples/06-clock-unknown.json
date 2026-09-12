@@ -1,0 +1,30 @@
+{
+  "version":"0.2-candidate",
+  "episode_id":"clock-unknown",
+  "evidence_kind":"constructed",
+  "state":"open",
+  "situation":"A remote service may rotate a key and invalidate an integration, but neither the rotation time nor the support response time is known.",
+  "evidence":[{"id":"e1","kind":"reported","claim":"The provider has announced that key rotation will occur, without a date in the available notice.","source":"constructed provider notice"}],
+  "affected":[
+    {"id":"a1","description":"Users dependent on the integration","voice":"proxy","reported_position":"","modeled_position":"May lose access if rotation occurs before migration.","representation_limit":"Number of users and exact reliance are unknown.","burden":"Potential service interruption."},
+    {"id":"a2","description":"Operations team","voice":"direct","reported_position":"Wants to prepare migration without emergency cutover.","modeled_position":"Carries preparation work and uncertainty.","representation_limit":"Team preference does not establish provider timing.","burden":"Preparation effort."}
+  ],
+  "uncertainties":[
+    {"id":"u1","question":"When will key rotation occur?","status":"open","work":"Seek authoritative timing and prepare reversible migration work meanwhile.","owner":"operations owner","trigger":"Provider timing update or evidence of rotation.","resolution_evidence":[]},
+    {"id":"u2","question":"How quickly can provider support respond?","status":"open","work":"Do not assume a support SLA not present in evidence.","owner":"operations owner","trigger":"Support request or published SLA.","resolution_evidence":[]}
+  ],
+  "authority":{"basis":"Operations may prepare migration but not rotate provider credentials or cut production traffic without a scoped change decision.","authorizer":"service owner","granted_scopes":["prepare migration"],"no_touch":["provider credentials","production cutover"],"widening_rule":"Cutover requires a new scoped decision."},
+  "action":{"mode":"ACT","scope":"prepare migration","proposal":"Prepare reversible migration steps and monitoring while leaving unknown timings explicitly unknown.","reason":"Unknown timing creates work but does not justify invented deadlines.","burden_holder":"Operations team carries preparation cost.","alternative":"Pretend the window is open until a guessed date or freeze all work until certainty arrives.","irreversibility":"A rushed production cutover could create service impact.","delay_burden":"If rotation arrives first, users may lose access."},
+  "clocks":{
+    "detection":{"status":"detected","condition":"Risk is detected from the provider notice; actual rotation is not detected.","bound":{"kind":"unknown","time_value":"","event":"","basis":"Notice gives no defensible detection time for the future rotation event.","notes":"Risk detection and event timing are distinct."}},
+    "routing":{"route":"Provider support / service owner.","bound":{"kind":"unknown","time_value":"","event":"","basis":"No support SLA appears in evidence.","notes":"Do not invent response minutes."}},
+    "correction":{"work":"Migrate or update credentials before integration invalidation.","bound":{"kind":"unknown","time_value":"","event":"","basis":"Rotation timing and migration duration are both incomplete.","notes":"The relevant inequality cannot be resolved from current evidence."}},
+    "hardening":{"condition":"Old key becomes invalid before migration is complete.","bound":{"kind":"event","time_value":"","event":"provider invalidates old key","basis":"Provider notice establishes the kind of event but not its time.","notes":"Event exists even though time is unknown."}},
+    "window":{"assessment":"unknown","basis":"Current evidence cannot establish whether migration can complete before key invalidation.","basis_evidence":[]}
+  },
+  "challenges":[],
+  "correction":{"owner":"service owner","trigger":"New timing evidence, rotation detection or migration readiness.","route":"Choose scoped migration/cutover using updated evidence.","technical_dependency":"Independent provider status and authenticated credential controls.","remaining_exposure":"Prepared work may still be insufficient if rotation is immediate; emergency action can carry its own harm."},
+  "residue":[],
+  "learning":{"principle":"UNKNOWN_CLOCK != NO_CLOCK","reason":"The future event matters even when its timing is not defensibly known.","context_variation":"A published rotation date would convert some unknown bounds to time/event bounds.","dissent":"A team may choose a conservative internal deadline, but that is a planning choice rather than provider evidence.","limits":"Constructed case; validator cannot establish real provider timing."},
+  "closure_receipt":""
+}
