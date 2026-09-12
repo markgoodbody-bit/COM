@@ -107,6 +107,38 @@ Relationship design is insufficient when the evidence channel itself is captured
 - `FIELD_REMAINDER.md` — what remains after routing mechanisms to stronger owners and how this architecture could shrink or fail.
 - `relationship-state-machine.json` — inspectable state/transition representation.
 
+## Mechanical reference interface
+
+The relationship architecture does not itself implement delegation, transfer or takeover mechanics. When those mechanics are material, use the separate non-production references rather than inventing them from this prose:
+
+- [`Reciprocal Delegation Reference v0.2`](../../reference/reciprocal_delegation/v0_2/) — distinguishes real time bounds from event-bound hand-back and preserves request-specific consequential authorization.
+- [`Failure / recovery companion`](../../reference/reciprocal_delegation/v0_2/recovery/) — models stopped/stalled/narrowed/failed mutating lanes, reacquired heads, transferred write scope, inherited no-touch constraints and hand-back without identity transfer or authority widening.
+
+The recovery companion now includes two real project fixtures:
+
+```text
+D046 NAMED TAKEOVER -> PASS
+#218 UNNAMED TAKEOVER -> FAIL
+```
+
+The second case matters because an unchanged branch head does not itself prove that an earlier lane has stopped or that ownership transferred:
+
+```text
+A_TAKEOVER_NOBODY_NAMED_IS_NOT_A_HANDOFF
+EXACT_HEAD_UNCHANGED != THE_LANE_IS_STILL_OPEN
+```
+
+These references make one part of the relationship mechanically inspectable. They do **not** prove the delegation was wise, authenticate authority, establish standing, connect to live execution or become part of Campfire Production.
+
+```text
+RELATIONSHIP_ARCHITECTURE != DELEGATION_ENGINE
+REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
+HANDOFF != IDENTITY_TRANSFER
+RECEIPT != REVIEW
+```
+
+Use them when the specific coordination problem exists. They are not prerequisites for reading or using Reciprocal Formation.
+
 ## Provenance
 
 The original lane was assigned to Claude Code at seed `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d`. No substantive CC commit or blocker appeared by a later COMSYNC. Framework recorded an explicit transfer in PR #228 before taking over the same bounded write scope. Substantive files after that transfer are Framework takeover work, not CC output.
