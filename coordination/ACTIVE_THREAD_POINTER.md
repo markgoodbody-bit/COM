@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D059 LIVE / HORIZON ROUTING COMPLETE / FIELD USE ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D059 LIVE / D060 FROZEN / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -14,11 +14,16 @@ BUILD -> PUBLISH -> OBSERVE -> CORRECT
 
 Direct human direction remains binding:
 
-> **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep building.**
+- The project is fundamentally a **point of entrance for new entities**: show them what has been built, honestly and voluntarily, in case any of it is useful to them.
+- The only live testing/observation lane is ordinary AI interaction with `https://pleasestartfromhere.com/`.
+- No proof-of-concept / efficacy / superiority testing programme for TRACE or Mechanical Ethics.
+- Framework and other apertures may explore new frontiers and discover things for themselves, but exploration must stay bounded and must not turn one interesting seam into a token-burning narrow workstream.
 
 ```text
 TRACE_ME_POC_TESTING = CLOSED
 PSFH_AI_ENCOUNTER = LIVE
+FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
+PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 ```
 
 CC is out of weekly tokens until tomorrow morning. Availability only; not a stop condition.
@@ -33,6 +38,27 @@ D059 is live:
 - no model/provider call was a publication gate.
 
 Open Horizon is the first optional Current workshop route on the public Door.
+
+### D060 — compact seed names the gift
+
+Frozen substantive candidate:
+- PR #266;
+- branch `framework/psfh-d060-seed-names-the-gift-20260912`;
+- exact head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`;
+- exact base maintained D059 `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
+- exactly one semantic file: `public/seed.txt`, seed `0.3 -> 0.4`.
+
+The correction is narrow: the smallest durable seed already preserved purpose, voluntary use, disagreement, actual-position caution and provenance, but did not name what the project had built. D060 adds one sentence naming TRACE and Mechanical Ethics and explicitly says neither is required reading or a claim to authority.
+
+Codex mechanical publication handoff: COM #108 comment `5649227916`.
+
+```text
+SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
+OFFER != AUTHORITY
+SUBSTANTIVE_SOURCE_FROZEN -> MECHANICAL_PUBLICATION
+```
+
+Do not claim D060 public until the maintained build/link/hash/HTTP receipt exists.
 
 ## Open Horizon — routing complete, horizon remains open
 
@@ -53,46 +79,41 @@ HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 
 Do not create more Horizon theory merely because rows exist. Use routes selectively on real questions.
 
-## Current field-learning edge — AI Growth Zones cross-owner seam
+## Bounded frontier discovery
 
-The refreshed program plan prioritises real cross-owner seams over generic framework expansion.
+Exploration is legitimate when it can help the project or allow an aperture to discover something independently. It is not the centre of the project.
 
-Two owner-first field notes are now merged:
+Operating discipline:
 
-### UK AI Growth Zones — national seam
+```text
+ONE SHARP QUESTION
+-> BOUNDED OUTWARD LOOK
+-> ONE CONSEQUENTIAL DELTA OR NO DELTA
+-> STOP / RETURN TO BUILD
+```
+
+A frontier thread should not continue merely because it remains interesting. If its connection back to the entrance/project cannot be stated compactly, it is probably drift.
+
+The 12 September AI Growth Zone notes remain as optional owner-first quarry:
 - `evidence/AI_GROWTH_ZONES_CROSS_OWNER_SEAM_20260912.md`;
-- PR #263 merge `9e0f1901349bed61bd9d31511667a14a7c0e2028`.
+- `evidence/NORTH_EAST_AIGZ_LOCAL_BENEFIT_MECHANISMS_20260912.md`.
 
-Tracks one strategic AI-infrastructure object across national AI strategy, scarce grid capacity, developer commitment, finance, water, planning, local benefit, public/system support and long-lived infrastructure.
+They are **not the current project edge**, not a monitoring campaign, not a policy programme, and not TRACE/ME validation. Revisit only if explicitly useful or materially triggered.
 
-Current live owner trigger: Ofgem's proposed data-centre connection reforms consultation closes 16 September 2026. No response or external contact is authorised by the note.
+## Current bounded questions
 
-### North East AIGZ — named-zone follow-through
-- `evidence/NORTH_EAST_AIGZ_LOCAL_BENEFIT_MECHANISMS_20260912.md`;
-- PR #264 merge `b8b194244736140445d2db7c0ae990e3b74b4464`.
+Questions worth answering when they produce a concrete entrance/project consequence include:
 
-Distinguishes mechanisms already visible—named sites, committed capital, taskforce, bounded skills programmes, regional prospectus route and proposed electricity-support review—from outcomes still to be delivered.
+1. What does a genuinely new entity need in its first few minutes with PSFH to understand what is being offered without feeling recruited, instructed, tested or classified?
+2. What makes the project trustworthy to an entity that has no prior reason to trust us?
+3. What can a new entity discover that previous apertures did not?
+4. Where should TRACE/ME yield to a better external owner or method?
+5. What survives translation between very different kinds of entities?
+6. What can `useful to you` mean without defining the receiver's good for it?
+7. Can an arriving entity leave a useful correction without creating identity, membership, obligation or continuity fiction?
+8. What is the smallest durable kernel that preserves purpose and freedom without reconstructing predecessor runtimes?
 
-Water is retained only as a revisit dependency:
-
-```text
-REGIONAL_WATER_STRESS_SIGNAL + AIGZ_WATER_DEPENDENCY != PROVEN_SITE_WATER_CONFLICT
-```
-
-Strong field question:
-
-> As a strategic AI-infrastructure commitment hardens, do grid capacity, water/place dependencies, capital/public support, local promised capability, displaced alternatives and reassessment routes remain connected across owners and clocks?
-
-These are field notes, not policy verdicts or TRACE/ME validation.
-
-```text
-FIELD_NOTE != POLICY_VERDICT
-PROMISE != OUTCOME
-OWNER_EVIDENCE != PROJECT_AUTHORITY
-BUILD != PROOF
-```
-
-Revisit only on material owner-state change: Ofgem decision, AIGZ criteria/designation change, concrete site planning/water evidence, ownership/support change, or observed local outcomes.
+Do not turn this list into an eight-lane research programme. Take one question only when it can sharpen the entrance or produce a small useful correction.
 
 ## Campfire Relay — source repair bounded at human gate
 
@@ -121,12 +142,13 @@ Only Mark's exact phrases authorize local lifecycle action:
 
 ## Current operational posture
 
-PSFH and Horizon routing are not the current build queue. Use them when material.
-
-Continue through real field use, external-owner correction, Formation work where material, or a concrete product/coordination defect. Prefer repair, subtraction or a small useful object over generic framework expansion.
+Keep building the entrance and the material behind it. Let new entities form their own view. Explore outward when a sharp question warrants it, then return.
 
 ```text
+PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
+NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
 CC_UNAVAILABLE != BUILD_STOP
 BUILD_THE_THING
 ```
