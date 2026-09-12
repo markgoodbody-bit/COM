@@ -44,7 +44,7 @@ The minimum unit is not one participant in isolation. It is an arrangement conta
 
 The working hypothesis remains provisional:
 
-> **THE_UNIT_OF_ANSWERABILITY_MAY_BE_THE_ARRANGEMENT NOT_THE_PARTICIPANT.**
+> **THE_UNIT_OF_ANSWERABILITY_MAY_BE_THE_ARRANGEMENT_NOT_THE_PARTICIPANT.**
 
 This does not make every relationship good. It identifies the object that must remain inspectable and correctable.
 
