@@ -92,9 +92,43 @@ Those two facts create a **revisit dependency**, not a demonstrated Cambois/Coba
 
 This note has not found owner evidence showing that either named North East AIGZ site currently lacks the required water capacity or that AI infrastructure caused the July water situation.
 
+A later bounded read of the Cambois planning record does, however, supply site-specific design evidence that narrows the dependency. Northumberland County Council's March 2025 committee report records an outline design using air-cooled chillers with free cooling and zero water for heat rejection, low-flow domestic fixtures, rainwater harvesting for welfare/dust suppression, and a SuDS drainage strategy. It also says the detailed equipment specification would be determined later. QTS's current Cambois page describes the design as closed-loop cooling that significantly reduces demand on local supplies.
+
+This supports a **low direct cooling-water design claim for Cambois at outline stage**. It does not establish zero total site water use, the final detailed design, indirect water use through electricity generation, sufficient water/discharge capacity for every phase, or conditions at Cobalt Park.
+
 Sources:
 - DSIT, *AI Growth Zones: open for applications*: https://www.gov.uk/government/publications/ai-growth-zones/ai-growth-zones-open-for-applications
 - Environment Agency, *North East water situation: July 2026 summary*: https://www.gov.uk/government/publications/water-situation-local-area-reports/north-east-water-situation-july-2026-summary
+- Northumberland County Council Strategic Planning Committee report, application `24/04112/OUTES`, paragraphs 8.58–8.62 and applicant response: https://northumberland.moderngov.co.uk/documents/s24991/2404112OUTES%2B-%2BLand%2BAt%2BFormer%2BPower%2BStation%2BSite%2BOn%2BNorthern%2BSide%2BOf%2BCambois.pdf
+- QTS, *Cambois*: https://q.com/data-centers/cambois/
+
+### 7. Planning has begun to bind local benefit to delivery
+
+The March 2025 committee did more than welcome employment and skills promises. It resolved to grant outline permission subject to conditions and completion of a Section 106 agreement securing:
+
+- an Education, Employment and Training Plan covering construction and operation;
+- a Local Supplier Strategy;
+- a separate ecological contribution.
+
+The report describes possible work experience, apprenticeships, work trials, supported internships, employment opportunities for Northumberland residents, and a supplier cascade beginning in Northumberland. The applicant had agreed to use the Section 106 route.
+
+That is a stronger delivery mechanism than an announcement, but the evidence boundary matters:
+
+```text
+APPROVAL_SUBJECT_TO_S106
+!=
+EXECUTED_S106
+!=
+OBLIGATION_DELIVERED
+!=
+LOCAL_OUTCOME_ACHIEVED
+```
+
+This note has not independently retrieved the completed agreement or measured delivery against it.
+
+Sources:
+- Northumberland County Council Strategic Planning Committee minutes, 4 March 2025, item 48: https://northumberland.moderngov.co.uk/mgAi.aspx?ID=15877
+- Northumberland County Council committee report, paragraphs 8.204–8.211 and recommendation: https://northumberland.moderngov.co.uk/documents/s24991/2404112OUTES%2B-%2BLand%2BAt%2BFormer%2BPower%2BStation%2BSite%2BOn%2BNorthern%2BSide%2BOf%2BCambois.pdf
 
 ## What has moved from promise toward mechanism
 
@@ -107,7 +141,9 @@ The zone already shows several different maturity levels.
 - a cross-owner taskforce;
 - identified skills programmes with bounded participant numbers;
 - public consultation on the regional prospectus;
-- an identified national electricity-price-support design with a future start/review point.
+- an identified national electricity-price-support design with a future start/review point;
+- Cambois outline approval subject to a Section 106 route for construction/operation education, employment and training plus a Local Supplier Strategy;
+- an outline Cambois cooling/drainage design intended to keep direct cooling-water demand low, with detailed equipment still to be fixed.
 
 ### Still partly outcome claim / future delivery
 
@@ -280,17 +316,19 @@ AIGZ_WATER_DEPENDENCY
 PROVEN_SITE_WATER_CONFLICT
 ```
 
-The next useful evidence would be site/developer/water-company/environmental documentation showing:
+Site-level owner evidence now supports a Cambois design intended to use no water for heat rejection and to reduce direct demand on local supplies. That is a real correction to the earlier evidence boundary; it weakens any simple inference from regional stress to a Cambois cooling-water conflict.
+
+The next useful evidence would show:
 
 - expected abstraction or potable-water need;
-- cooling architecture;
-- discharge route;
+- final cooling architecture and equipment rather than the outline design;
+- total potable/process demand and discharge capacity;
 - drought resilience;
 - reuse/recycling arrangements;
 - infrastructure investment;
 - any effects on other users or environmental limits.
 
-Until then, this is a retrieval/revisit trigger rather than a verdict.
+Until then, the remaining dependency is a retrieval/revisit trigger rather than a verdict.
 
 ## Current field reading
 
@@ -301,7 +339,9 @@ The North East case is useful because several pieces of “local benefit” have
 - a delivery/taskforce structure exists;
 - bounded skills programmes exist;
 - a regional prospectus is open to public input;
-- an energy-support mechanism has a proposed amount, date and review point.
+- an energy-support mechanism has a proposed amount, date and review point;
+- Cambois planning approval is conditional on a Section 106 route for education, employment, training and local suppliers;
+- the Cambois outline design contains low-direct-water cooling and drainage measures, while detailed equipment and total demand remain open.
 
 That is real construction.
 
@@ -341,8 +381,9 @@ BUILD != PROOF
 Re-check this case when any of the following becomes available or changes materially:
 
 - final North East AIGZ prospectus after public feedback;
+- completion/publication of the Cambois Section 106 agreement and delivery plans made under it;
 - project-level planning/consent documentation for Cambois or Cobalt expansion;
-- site-specific water/cooling/discharge evidence;
+- Cambois reserved-matters evidence fixing cooling equipment, total water demand and discharge capacity, or equivalent Cobalt evidence;
 - final electricity-price-support legislation/design and its 2030 review criteria;
 - material changes in committed investment or ownership;
 - evidence on actual local employment, skills progression, supplier participation or public-service adoption;
