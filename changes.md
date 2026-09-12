@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.31 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.32 · 12 September 2026
+
+### D056
+
+12 September 2026 — Less empty space beneath art on phones.
+
+Looking at the published Hardening room at phone width exposed a large blank area between each sculpture photograph and its caption. The image box was forced to nearly the height of the screen even when the whole image needed less space.
+
+On narrow screens, contextual art-room images now use their natural height, capped for tall works. Whole-image containment remains; desktop styling, artwork bytes, readings, graph, links and Works encounters are unchanged. This shared presentation repair also applies to the other contextual art rooms.
+
+Site Preview advances to 0.8.15. This corrects an observed layout issue, not a measured reader outcome. Previous publication fbcd75948fa78cc0724311a172116b8f05e40061 remains in Git history.
 
 ### D053
 
