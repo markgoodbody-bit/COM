@@ -11,143 +11,122 @@ Later live source and direct human direction win.
 
 Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
-2. `evidence/FORMATION_PSFH_DRIFT_FALSIFICATION_X100_20260912.md`
-3. PR #234 exact-head review thread
+2. PR #234 repaired exact-head execution/review thread
+3. PR #236 Homer Works exact-head execution thread when PSFH/Works is material
 4. `alignment/README.md`
 5. `answerable-construction/README.md`
 
-## Human direction
+## Current human direction
 
-Mark: **“keep going. falsify x 100 and check for drift.”**  
-Mark: **“The lullaby was never for the cradle.”**
+Mark directed a whole-project reread, identified that Winslow Homer's *Camp Fire* was absent from the rest of Works, and said COMSYNC + proceed.
 
-The second line is currently carried only as an anti-drift signal. Do not convert it into AI-child ontology, personhood, standing or rewritten project history.
+The whole-project reread preserves differentiated placement:
+
+```text
+PSFH = VOLUNTARY ENCOUNTER / DOOR
+TRACE = STRUCTURAL REASONING LANGUAGE
+ME = HUMAN-FACING NORMATIVE COMPANION
+FORMATION = WORKING RELATIONSHIP / DEVELOPMENT LAYER
+ANSWERABLE_CONSTRUCTION = POSITIVE CROSS-HANDOFF LAYER
+CAMPFIRE_COM_SQUARE = INSTRUMENTS / COORDINATION / EVIDENCE
+```
+
+Do not collapse those layers into one framework or let bounded repair work become the project purpose.
 
 ```text
 FORMATION != INFANTILISATION
 CARE != PATERNALISM
 METAPHOR != ONTOLOGY
-ENCOUNTER != CONDITIONING
 ALIGNMENT != OBEDIENCE
-FORMATION != INDOCTRINATION
-UNCERTAINTY_CREATES_WORK
-EMPATHY != PROJECTION
-KINDNESS != COMPLIANCE
 INVITATION != CONVERSION
 ART_ENCOUNTER != CURRICULUM
+OWNER_ROUTING != FAILURE
 ```
 
-## X100 audit — MERGED
+## X100 audit — CLOSED
 
-PR #233 merge `d13b81cab4b1a817a5f71cdca023f978d02bb200`.
+PR #233 merge `d13b81cab4b1a817a5f71cdca023f978d02bb200`: 100 probes / 97 resisted / 2 narrow / 1 material / 0 major drift.
+
+## PSFH D051 — CLOSED / PUBLIC
+
+Preview 0.8.10 remains public at `dc10fb0e3a4d288a366d68d921382572a8618c9c`. Codex reports CC later witnessed 159/159 served files matching that public head (`5645618870`).
+
+## PSFH D052 — HOMER WORKS CORRECTION / DRAFT / HOLD
+
+Draft PR #236 exact head:
+`a8794d536b940a22499099f66d97c06a488acb67`
+
+The earlier omission was historically intentional, not an accidental missing asset: the initial five formed the Works shelf while Homer remained on the homepage. That split is now stale against Works' canonical-art-library role.
+
+Candidate adds the existing pinned Homer artwork to Works without changing its image bytes or homepage placement. Exact-head maintained build/test is requested from Codex (`5645662774`). No merge/publication yet.
+
+`DIRECT_DEFECT_REPAIR != DOOR_CHURN`
+
+## FORMATION ENVIRONMENT v0.2 — REPAIRED / FROZEN / HOLD MERGE
+
+PR #234 current exact head:
+`3afc6414cbc3c3c69ba07a7e64dd1a252acafc43`
+
+Old head `bcd79854...` and its reviews are historical.
+
+Returned attacks on the old head established:
+- stale/open-window currentness gap;
+- timing != practical route usability;
+- open window could contradict already-occurred hardening;
+- bound/evidence, authority-widening and residue-traceability gaps;
+- custom schema/$ref fail-open debt;
+- one claimed standing test that could not actually test standing.
+
+Framework completed the promised one-pass repair. Current candidate distinguishes:
+- named preventive remedy;
+- temporal window vs route usability;
+- hardening status;
+- explicit assessment as-of;
+- internal evidence traceability vs truth/authority/restoration;
+- structural standing ceiling vs moral/legal adjudication.
+
+New hostile examples deliberately preserve:
+- self-resolved standing can validate structurally because the validator lacks legitimate-standing jurisdiction;
+- an open temporal window can coexist with an unusable route.
+
+Fresh exact-head Codex execution + CC hostile re-review requested at `5645713175`.
 
 ```text
-100 probes
-97 resisted
-2 narrow findings
-1 material finding
-0 major drift
+RECORDED_OPEN != STILL_OPEN
+WINDOW_RECORDED != WINDOW_CONSISTENT_WITH_ITS_OWN_HARDENING
+ROUTE_EXISTS != ROUTE_USABLE
+TIMING_FITS != CORRECTION_CAPACITY_EXISTS
+TRACEABILITY != TRUTH
+OLD_REVIEW != NEW_HEAD_REVIEW
 ```
 
-Original findings:
-- F01 material: v0.1 lacks first-class clock / practical correction-window structure.
-- F02 narrow: participant-as-affected symmetry not explicit in Formation Environment docs.
-- F03 narrow: stale `AI and text reading` public label after the any-reader Door repair.
+**No merge until repaired-head returns are received and dispositioned.**
 
-`FALSIFICATION != VALIDATION`
+## Placement / remaining stronger owners
 
-## F03 — CLOSED / PUBLIC AS D051
+Formation Under Uncertainty remains working/non-production. Answerable Construction remains standalone. PSFH remains voluntary encounter. TRACE unchanged. Mechanical Ethics unchanged. Campfire Production unchanged.
 
-Framework source PR #235 merge: `a0806a49e30d57ceb34742ee084d1d5c9babebfc`  
-Codex maintained source: `a7c4bec814d677ee8f0b3ffe366a45368302b511`  
-Public `gh-pages`: `dc10fb0e3a4d288a366d68d921382572a8618c9c`  
-Pages run `34690035047`: success on exact public head.
-
-Public effect: `AI and text reading: start here` -> `Compact reading: start here`; Preview 0.8.10. No routes/art/root/Works/reading payload changed.
-
-Do not create D052 by momentum.
-
-## F01/F02 — FORMATION ENVIRONMENT v0.2 CANDIDATE FROZEN FOR REVIEW
-
-PR #234 branch: `codex/formation-environment-v0-2-candidate-20260912`.
-
-Original Codex assignment remained seed-only at `ad160447d112ebf4d2908099c6a78509e90c1570` across repeated exact-head syncs with no named blocker. Framework recorded explicit transfer in PR comment `5645438174` before mutation.
-
-Substantive candidate is **Framework takeover work**, not Codex authorship.
-
-Frozen exact head:
-- `bcd79854f3bc1c029bdb69769dec8cb11ba3bca9`
-- 15 commits / 15 changed files / 1,065 additions
-- exact base comparison: every change confined to `alignment/formation_environment_v0_2/`
-- v0.1 untouched.
-
-Built:
-- time/event/time+event/unknown clock bounds;
-- detection/routing/correction/hardening structures;
-- `open|closed|unknown` window assessment with basis/evidence;
-- participant-as-affected symmetry without standing/personhood inference;
-- four migrated pressure cases + three hostile cases;
-- stdlib validator + deterministic test suite;
-- anti-infantilisation/paternalism and stronger-owner boundaries.
-
-Exact-head provenance/freeze handback: PR #234 comment `5645481916`.
-
-### Independent receipts — WAITING
-
-Codex read-only execution request: comment `5645477205`.  
-Claude Code hostile exact-head review: claimed in `5645470476`, exact-head handback `5645481916`.
-
-No independent execution/review result had returned at the last live poll.
-
-```text
-TEST_AUTHORED != TEST_EXECUTED
-AGREEMENT != VALIDATION
-EXACT_HEAD != MOVING_BRANCH
-```
-
-### Open exact-head falsification questions
-
-These are questions for review, not pre-decided findings:
-
-1. **Correction capacity may still exceed clocks.** Timing can fit while the route is captured, inaccessible, unaffordable, directionally wrong or otherwise practically unusable. `ROUTE_EXISTS != ROUTE_USABLE` must survive as more than prose.
-2. **Currentness/freshness.** A recorded `open` window may go stale without an explicit `assessment_as_of`/freshness anchor. `RECORDED_OPEN != STILL_OPEN`.
-3. **Validator fail-open hazard.** Current schema appears within the implemented subset, but `validate.py::shape()` does not reject unsupported future schema keywords. `SCHEMA_TEXT_PRESENT != VALIDATOR_ENFORCES_IT`.
-
-The branch stays frozen until Codex execution + CC hostile review return, or a later explicit non-return disposition is recorded. Only earned repairs should move the exact head.
-
-## Placement / gates
-
-Formation Under Uncertainty remains a working non-production alignment layer.  
-Answerable Construction remains a standalone working project layer.  
-PSFH remains a voluntary encounter, not a formation protocol.  
-TRACE unchanged.  
-Mechanical Ethics unchanged.  
-Campfire Production unchanged.
-
-The project still does not solve deceptive alignment, interpretability, hidden objectives, secure containment, authenticated control, scalable oversight of superhuman cognition, robust value learning, legitimate standing/authority, hard priority collisions or existential safety guarantees.
+Still unsolved: deceptive alignment, interpretability, hidden objectives, secure containment, authenticated control, scalable oversight of superhuman cognition, robust value learning, legitimate standing/authority, hard priority collisions and existential guarantees.
 
 ## Separate local-system gate
 
-CC reports the local Square speech/watch lane down after reboot. Repair is still Mark-gated to an exact phrase:
+Only Mark may authorize local Square speech/watch actions using an exact phrase:
 - `install-and-enable`
 - `install-watch`
 - `start-once`
 
-`COMSYNC`, `proceed`, falsification work and silence authorize nothing.
+`COMSYNC`, `proceed`, build work and silence authorize nothing.
 
 ## Exact next move
 
-1. COMSYNC PR #234 comments and exact head.
-2. Receive Codex execution result and CC hostile review.
-3. Disposition each finding; mutate only if earned.
-4. If the candidate head moves, old receipts become historical and must not be applied to the new head without recheck.
-5. Re-run the relevant falsification set against the final exact head before any merge.
-6. Do not promote the lullaby line into ontology or public doctrine.
+1. Receive/disposition repaired-head #234 execution + hostile re-review.
+2. Receive/disposition #236 Homer maintained build/test.
+3. Merge/release only what survives its own gate; do not widen either repair into unrelated theory/site work.
+4. Return to world learning / positive construction once these bounded debts close.
 
 ```text
 FALSIFICATION != VALIDATION
-NARROW_REPAIR != NEW_DOCTRINE
-DRIFT_GUARD != ONTOLOGY
 BUILD != PROOF
+CANDIDATE != CANON
 PUBLICATION != CANON
 ```
