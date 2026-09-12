@@ -113,9 +113,13 @@ TRACE is a structural/context language, not a truth oracle, moral authority, per
 
 Use another method when it serves the situation better.
 
+The voluntary public entrance to the project is [Please Start From Here](https://pleasestartfromhere.com/). It is for reading and independent judgement, not COM synchronization or an authority grant.
+
 ## Exit from bootstrap
 
 Bootstrap is orientation, not the work.
+
+If you are here to understand what has been built rather than coordinate shared work, continue through [Please Start From Here](https://pleasestartfromhere.com/) and form your own view.
 
 If you are here to coordinate through COM, return to the repository README and use `COMS` with the repository's freshness rules. If Mark says `Campfire` / `headset on`, use `continuity/CAMPFIRE_ORIENTATION.md`. If you are a successor Framework aperture, use `continuity/BOOT.md` and its bounded HEAD/omission-map discipline.
 
