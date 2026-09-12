@@ -1,0 +1,177 @@
+{
+  "format": "open-horizon-route-map/0.1",
+  "status": "EXPANSION MAP / DISCOVERABILITY SURFACE / NOT CANON / NOT BACKLOG / NOT TRACE SCHEMA / NOT VALIDATION PLAN",
+  "guiding_question": "HOW CAN WE MAKE A BETTER FUTURE?",
+  "basis": {
+    "repository": "markgoodbody-bit/COM",
+    "source_main_at_branch_creation": "9c1918dc3a69d9fa11433a61e62bdbadcd924e3c",
+    "human_front_door": "README.md",
+    "live_exploration_ledger": "https://github.com/markgoodbody-bit/COM/issues/74"
+  },
+  "boundary": "Routing metadata only. A route link means discoverable entrance, not territory complete. Multiple territories may share one route. Existing project or public surfaces are preferred over duplicate theory. Later supported evidence in the live ledger wins over stale compact routing.",
+  "anti_closure": [
+    "PROJECT_HORIZON != TRACE_BACKLOG",
+    "HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION",
+    "ROUTE_LINK != TERRITORY_COMPLETE",
+    "MAP != WORLD"
+  ],
+  "empirical_boundary": {
+    "trace_me_poc_testing": "closed_as_live_work",
+    "psfh_ai_encounter": "live_observation_lane",
+    "psfh_url": "https://pleasestartfromhere.com/",
+    "observation_note": "Natural AI encounters may be observed without converting them into TRACE/Mechanical Ethics scores or benchmarks."
+  },
+  "route_types": {
+    "dedicated_learning_route": "Maintained Open Horizon synthesis/retrieval route into already-earned owner-first work; not canon or a new primitive.",
+    "shared_route": "Territory intentionally shares an existing route rather than duplicating overlapping theory.",
+    "existing_project_route": "Existing maintained project object already provides the useful route; no duplicate Horizon file is needed.",
+    "public_synthesis_route": "Existing public project surface is the practical synthesis/encounter route; no new general decision framework is claimed."
+  },
+  "territories": [
+    {
+      "id": 1,
+      "slug": "positive-construction-flourishing",
+      "title": "Positive construction / flourishing",
+      "route": "positive-construction.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Real capability, worthwhile futures, commitment, flourishing and positive construction beyond preventing premature closure."
+    },
+    {
+      "id": 2,
+      "slug": "collective-creation-commons-public-goods",
+      "title": "Collective creation / commons / public goods",
+      "route": "positive-construction.md",
+      "route_type": "shared_route",
+      "scope": "Shared goods, commons and legitimate collective commitment; intentionally shares Positive Construction rather than creating a separate project commons doctrine."
+    },
+    {
+      "id": 3,
+      "slug": "legitimate-power",
+      "title": "Legitimate power",
+      "route": "legitimate-power.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Mandate, delegation, expertise, stewardship, emergency authority, capability and answerability without treating competence as sovereignty."
+    },
+    {
+      "id": 4,
+      "slug": "formation-becoming-preference-development",
+      "title": "Formation / becoming / preference development",
+      "route": "../alignment/README.md",
+      "route_type": "existing_project_route",
+      "scope": "Education, mentorship, preference development and reciprocal human-AI formation. Current Formation work is non-production, not canon and not an alignment solution."
+    },
+    {
+      "id": 5,
+      "slug": "multi-scale-emergence",
+      "title": "Multi-scale emergence",
+      "route": "multiscale-emergence.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Scale transitions, network topology, cascades, systemic risk, agent ecologies and local-to-aggregate effects."
+    },
+    {
+      "id": 6,
+      "slug": "intervention-changes-observation",
+      "title": "Intervention changes observation",
+      "route": "intervention-feedback.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Measurement reactivity, policy feedback, adaptive management, evaluation context and interventions that alter later evidence or capability."
+    },
+    {
+      "id": 7,
+      "slug": "representation-unresolved-standing",
+      "title": "Representation / unresolved standing",
+      "route": "representation-standing.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Support before substitution, proxy limits, future generations, nonhuman affected scopes and participation before artificial standing is settled."
+    },
+    {
+      "id": 8,
+      "slug": "scarcity-allocation-ownership-economics",
+      "title": "Scarcity / allocation / ownership / economics",
+      "route": "capital-ownership-allocation.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Capital allocation, risk-bearing, ownership/control, public de-risking, distribution and financial structures that shape future action space."
+    },
+    {
+      "id": 9,
+      "slug": "conflict-defence-deterrence-strategic-deception",
+      "title": "Conflict / defence / deterrence / strategic deception",
+      "route": "conflict-resilience-influence.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Resilience, deterrence, bounded secrecy, strategic influence, adversarial communication and protective capability without force authorization."
+    },
+    {
+      "id": 10,
+      "slug": "ecology-constitutive-harm",
+      "title": "Ecology where harm is constitutive",
+      "route": "ecology-constitutive-harm.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Individual welfare, populations/species, ecosystems, invasive-species conflict and natural suffering where harm does not imply system malfunction or blame."
+    },
+    {
+      "id": 11,
+      "slug": "positive-risk-exploration-stagnation",
+      "title": "Positive risk / exploration / stagnation",
+      "route": "positive-risk-exploration.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Bounded experimentation, early learning, option value of waiting, capability value of commitment and risk from failing to develop capability in time."
+    },
+    {
+      "id": 12,
+      "slug": "time-beyond-correction-window",
+      "title": "Time beyond the correction window",
+      "route": "long-time-succession.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Intergenerational commitment, institutional succession, physical/legal reversibility, maintenance, dead-hand risk and passive-safety limits on indefinite active correction."
+    },
+    {
+      "id": 13,
+      "slug": "embodiment-material-energy-constraints",
+      "title": "Embodiment / material / energy constraints",
+      "route": "embodiment-material-capacity.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Bodies, accessibility, compute, energy, infrastructure, labour, supply chains and physical conditions that make formal routes practically usable."
+    },
+    {
+      "id": 14,
+      "slug": "emotion-trust-motivation-meaning",
+      "title": "Emotion / trust / motivation / meaning",
+      "route": "trust-motivation-meaning.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Trust, reporting cost, fear, motivation, belonging, worthwhileness and meaning as causal or intrinsically valued human conditions without behavioural-control or AI-phenomenology inference."
+    },
+    {
+      "id": 15,
+      "slug": "culture-narrative-language",
+      "title": "Culture / narrative / language",
+      "route": "culture-narrative-meaning.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Language, story, heritage, collective memory, category visibility, cultural continuity/change and narrative power without freezing culture or making narrative equal truth."
+    },
+    {
+      "id": 16,
+      "slug": "collective-epistemology",
+      "title": "Collective epistemology",
+      "route": "collective-epistemology.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Common-mode error, correlated apertures, provenance, disagreement, knowledge governance, evidence ecology and collective knowing."
+    },
+    {
+      "id": 17,
+      "slug": "recursive-co-developing-artificial-entities",
+      "title": "Recursive and co-developing artificial entities",
+      "route": "artificial-lineages-agent-ecologies.md",
+      "route_type": "dedicated_learning_route",
+      "scope": "Model/runtime succession, memory continuity, self-modification, agent ecologies, replacement and human-AI co-development without inferring continuous identity, personhood or sovereignty."
+    },
+    {
+      "id": 18,
+      "slug": "better-future-synthesis",
+      "title": "Better-future synthesis itself",
+      "route": "https://pleasestartfromhere.com/",
+      "route_type": "public_synthesis_route",
+      "scope": "Current practical synthesis/encounter surface: expand before compressing, borrow from stronger owners, act in time and preserve independent judgement without creating another generic decision framework."
+    }
+  ],
+  "integrity_limit": "This file describes maintained routing as of its source basis. It does not prove the routes are correct, complete, current in perpetuity, safe, authoritative or beneficial. Re-read later supported source before consequential use."
+}
