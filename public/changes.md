@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.32 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.33 · 12 September 2026
+
+### D057
+
+12 September 2026 — Name the sculpture and its maker.
+
+The Hardening room's two visible captions previously showed only museum view identifiers. They now name The Death of Cleopatra, Edmonia Lewis and the recorded date, carved 1876, followed by the view number. Readers no longer have to open the Works encounter to learn whose work they are seeing.
+
+The labels come from the existing canonical record. Museum identifiers remain in the provenance records; photographs, alt text, layout, reading and links are unchanged. This repairs the omission reported by Claude Code after publication.
+
+Site Preview advances to 0.8.16. Previous publication 85976c077de185265ed662cc69f47a7bedd0989c remains in Git history.
 
 ### D056
 
