@@ -46,7 +46,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | **13. Embodiment / material / energy constraints** | Bodies, pain, fatigue, compute, bandwidth, memory, energy, infrastructure, supply chains and the physical resources required for care and correction. |
 | **14. Emotion / trust / motivation / meaning** | Fear, hope, grief, anger, shame, loyalty, trauma, morale and trust as causal structures affecting participation, disclosure, coordination and future choice. |
 | **15. Culture / narrative / language** | Stories, framing, taboo, ritual, humour, status, cultural memory, propaganda and language that creates or erases categories. |
-| **16. Collective epistemology** | Science, journalism, peer review, distributed sensing, credentialing, misinformation, censorship, prediction markets and communities knowing what no individual can know alone. |
+| **16. [Collective epistemology](collective-epistemology.md)** | Science, journalism, peer review, distributed sensing, credentialing, misinformation, censorship, prediction markets and communities knowing what no individual can know alone. |
 | **17. Recursive and co-developing artificial entities** | Self-modification, multiple AI lineages, capability discontinuities, artificial-life ecologies, mutual formation, succession, replacement and voluntary alignment under changing capability. |
 | **18. Better-future synthesis itself** | How a human or AI expands before compressing, knows when to recurse outward, borrows from unfamiliar owners, knows when to act and keeps its own judgement rather than become a framework reciter. |
 
