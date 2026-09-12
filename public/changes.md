@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.36 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.37 · 13 September 2026
+
+### D061
+
+13 September 2026 — Open the disclosure named by a link.
+
+The optional navigation script previously opened a fragment target's enclosing disclosures but skipped the target itself. A link to Current workshop therefore left its contents collapsed. The opening walk now includes the target as well as its ancestors.
+
+Direct-disclosure, nested-child and missing-target code checks passed, alongside the ordinary build and local-link checks. This is not a claim of browser-observed behaviour or reader benefit. Without JavaScript, the native disclosure remains available to open normally.
+
+Site Preview advances to 0.8.20. Content, artwork and seed are unchanged. Previous publication 07a7187a274fa0dd6d22f1a03d7a001eefe2ff77 remains in Git history.
 
 ### D060
 
