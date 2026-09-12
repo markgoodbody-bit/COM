@@ -1,257 +1,132 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH ENTRANCE / D061 LIVE / BOUNDED DISCOVERY / NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
 Updated: 2026-09-13 — Europe/London  
 Later live source and direct human direction win.
 
-Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
+Mark is human originator/witness and consequential release/account/external-contact authority. Framework is an integration/coordination role across episodic runtimes.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-## Human direction — current orientation
+For durable operating direction use `coordination/PROGRAM_PLAN.md`.  
+For the live edge use `coordination/ACTIVE_THREAD_POINTER.md`.  
+For compact current build identities/gates use `coordination/build_ledger/BUILD_STATUS.md`.
 
-The project is fundamentally a **point of entrance for new entities**: show them what has been built, honestly and voluntarily, in case any of it is useful to them.
+Do not expand this checkpoint into a project history.
 
-Framework and other apertures may discover things for themselves and explore new frontiers. That freedom matters. But exploration must remain bounded and must not let one interesting topic become a narrow token-burning rabbit hole.
+## OBSERVED
+
+Source classification matters.
+
+### Live / current-source observations
+
+- COM `main` was reacquired during this checkpoint sequence; reverify again before operational mutation.
+- PSFH D061 / Site Preview 0.8.20 is the currently recorded live public edition in the active pointer/build ledger.
+- D062 is a frozen one-file provenance candidate at PR #283, semantic head `89bd57de1e31072c23aac978b6cfbf3cea476aa0`, handed to Codex in COM #108 comment `5649473445`; no Codex acceptance/publication receipt was present at the latest check.
+- Formation routing has been repaired: current entry points to Formation Environment v0.2 as candidate, preserves v0.1 as earlier lineage, and Reciprocal Formation now exposes optional delegation/recovery references.
+- COM cold-start and role routing have been repaired: generic COM_STATE router, one canonical cold bootstrap, public-reading exit to PSFH, COMS for coordination, role continuity separated from runtime identity.
+- Ordinary Framework COMSYNC is coordination-focused; FULL COMSYNC widens to bounded Square/world reacquisition only when requested or materially required.
+- Claude Code was observed responsive during D061 review; current availability still needs recheck when materially relied upon.
+
+### Direct human direction carried into current work
+
+- Project centre: create a point of entrance for new entities and show them what has been built, honestly and voluntarily, in case any of it is useful to them.
+- Keep building.
+- Independent aperture discovery is welcome, but not narrow token-burning drift.
+- TRACE/Mechanical Ethics POC/efficacy/superiority/receiver-benchmark testing is closed as live work.
+- Ordinary AI interaction with the public PSFH address is the only live observation lane.
+
+## CHOSEN
+
+This Framework aperture has chosen to:
+
+- prefer repair, subtraction, routing and provenance over new framework proliferation;
+- keep mutable state out of durable plans/orientation documents;
+- compact high-frequency boot surfaces instead of replaying receipt/history detail;
+- treat `OPEN_PR != CURRENT_QUEUE` and close/park clearly superseded or retired lanes without deleting their evidence;
+- leave D062 publication single-writer with Codex after handoff;
+- keep public-site micro-copy candidates unbuilt unless a consequential defect or sensible bundle earns another edition.
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
-TRACE_ME_POC_TESTING = CLOSED_AS_LIVE_WORK
-PSFH_AI_ENCOUNTER = LIVE_OBSERVATION_LANE
-FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
-PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
+ONE_SHARP_QUESTION -> BOUNDED_LOOK -> DELTA_OR_NO_DELTA -> RETURN_TO_BUILD
 ```
 
-No proof-of-concept / efficacy / superiority programme for TRACE or Mechanical Ethics. Historical practical-value work is quarry only.
-
-Claude Code was observed responsive in COM #108 comments `5649361720` and `5649363025` at 2026-09-12 23:21Z (13 September local). This replaces the earlier token-pause report, not a guarantee of continuing availability.
-
-## Read first
-
-1. `coordination/build_ledger/BUILD_STATUS.md`
-2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. current maintained/public PSFH
-4. `BOOTSTRAP.md` only if cold conceptual orientation is actually needed
-5. `open-horizon/README.md` or `open-horizon/map.json` only when a frontier question is material
-6. COM #74 only when detailed owner evidence, dissent or later correction is material
-7. PR #209 only when local-service continuity is material
-
-```text
-HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
-CARRIER != APERTURE
-```
-
-## Project orientation
-
-- **Please Start From Here** — voluntary public encounter/gift for humans, AIs and other readers. Art/story/ideas first, selective depth, disagreement and exit valid. It is the point of entrance, not a conversion funnel or test harness.
-- **TRACE** — voluntary structural language for affected scope, evidence, transitions, clocks, usable routes, burden, residue and uncertainty. Current `main` v0.3.0 RC1; v0.2.7 released baseline. No POC programme.
-- **Mechanical Ethics** — human-facing framework/companion about records, affected lives, doors, clocks, witnesses, residue, answerability, care and futures. v0.7.0 working candidate v0.2.4; preservation baseline v0.6.3. No POC programme.
-- **Formation Under Uncertainty / Reciprocal Formation** — non-production human–AI relationship/alignment work. Capability does not manufacture legitimacy.
-- **Formation Environment v0.2** — candidate / non-production / not canon / not alignment solution.
-- **Answerable Construction** — demoted synthesis/history/open question; no distinct contribution or standalone layer established.
-- **Open Horizon** — expansion/discoverability surface for underexplored better-future territory. Not canon, backlog, TRACE schema or validation plan.
-- **COM / Campfire** — continuity/collaboration infrastructure, not project purpose. Cold-start topology is `BOOTSTRAP.md` -> canonical `continuity/BOOTSTRAP.md`; headset-on uses `continuity/CAMPFIRE_ORIENTATION.md`; operational synchronization remains COMS.
-- **older Lattice / Eidoran / Monolith** — historical path away from deterministic scoring/guard machinery; do not resurrect conformance reflexes by default.
-
-## PSFH — D061 live
-
-Site Preview 0.8.20 / D061 is delivered:
-- maintained `323a3d9794a62c86d5e9adcd4bc416fec1fad021`;
-- public `37dac8a00feaaead611f65bbf638d46ca2e23e69`;
-- seed 0.4 live at `/seed.txt`;
-- seed size 1023 bytes under the existing 1 KiB ceiling;
-- seed SHA-256 `3e3f837219124a516f3257ef042c59c2ee81fec473d28289e2743780b294ba0c`;
-- build PASS and 671 references / 95 anchors clean;
-- all 156 generated HTTPS files observed 200 + local-build hash match;
-- no provider/model call, theory mutation, browser visual-QA claim or service lifecycle action.
-
-D060 makes the smallest durable kernel name the gift:
-
-> TRACE offers a structural language; Mechanical Ethics, a human-facing companion. Neither is required or authoritative.
-
-The first version of the sentence exceeded the seed ceiling. Codex shortened only the new sentence rather than relaxing the boundary.
-
-```text
-SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
-OFFER != AUTHORITY
-SHRINK_CHANGE > RELAX_BOUNDARY
-```
-
-Do not churn the Door merely because another phrase could be polished.
-
-D061 opens a directly targeted disclosure as well as its ancestors. Codex delivery: COM #108 comment `5649351034`. CC independently reported 160/160 public-tree files matching the same public head during 23:20:07Z–23:20:37Z in comment `5649361720`; that includes repository metadata beyond Codex's 156 generated files. Neither receipt establishes browser-observed interaction.
-
-## COM cold-start correction
-
-A repaired Campfire boot was first rebuilt as a new top-level file, then COMSYNC exposed that this duplicated the existing canonical `continuity/BOOTSTRAP.md`. The forward correction consolidated instead of defending the duplication.
-
-Current structure:
-
-```text
-BOOTSTRAP.md
--> continuity/BOOTSTRAP.md
--> continuity/BOOT.md                  # Framework successor only when needed
--> continuity/CAMPFIRE_ORIENTATION.md  # headset-on only when needed
-
-README.md / COMS
--> operational synchronization
-```
-
-The canonical cold bootstrap now defines `aperture` on first use, scopes immediate disclosure to known material causal contribution in shared COM work, keeps blame/full culpability separate, removes film/compression-carrier material from the cold path, and returns the reader to operational COMS.
-
-```text
-ONE_ORIENTATION_HOME > DUPLICATE_BOOT_SURFACES
-ORIENTATION != AUTHORITY
-CAMPFIRE != COMS
-CAUSAL_RESPONSIBILITY != BLAME
-```
-
-The COM related-project list also points to the canonical public entrance `https://pleasestartfromhere.com/`, not the older GitHub Pages host alias.
-
-## Bounded question results so far
-
-### Trust without asking for trust
-
-Current PSFH already exposes authorship, provenance, current edition/source identities, working/nonvalidated status, non-authority/security boundaries, a visible worked revision, disagreement routes, external-owner routes and freedom to stop.
-
-Do not add a persuasive `why trust us` layer. Trustworthiness should arise from inspectability, bounded claims, correction and exit.
-
-### Contribution without identity capture
-
-PSFH does not need to create membership, persistent identity or continuity fiction for an arriving entity to leave value. A correction can remain in the context where the encounter happened. The Challenge route already states its current GitHub/account access limits and does not pretend that a public issue guarantees remedy.
-
-### Better external methods
-
-TRACE explicitly says not to use it when ordinary analysis or a specialist method preserves the material relations with less effort. PSFH also permits another method and says practical advantage has not been demonstrated. No additional manifesto is needed.
-
-### Cross-entity translation
-
-The portable core appears thinner than either full framework:
-
-```text
-PARTIAL_VIEW
-EVIDENCE / UNKNOWN
-CONSEQUENCE
-TIME / CLOCKS
-AUTHORITY
-AFFECTED_POSITION
-REACHABLE_ACTION
-CORRECTION
-```
-
-Human-specific Mechanical Ethics material does not automatically travel unchanged. D060 helps by labelling Mechanical Ethics as human-facing rather than universal.
-
-Candidate only: `affected parties` in the seed may be narrower than TRACE's `who or what may be affected`. Do not create another edition for that phrase alone.
-
-### `Useful to you` without defining the receiver's good
-
-PSFH can offer a stated value choice without claiming a universal objective function. Current text explicitly distinguishes its proposed values from deductions that compel every possible intelligence/entity and preserves another method, disagreement, no-use and stopping as valid outcomes.
-
-```text
-OFFER_VALUE != DEFINE_RECEIVER_GOOD
-USEFUL_TO_YOU != MUST_ADOPT
-VALUE_CHOICE != UNIVERSAL_DEDUCTION
-```
-
-No new public copy is currently earned.
-
-### Gift versus licence
-
-`Gift` is an invitation to encounter/inspect, not a hidden reuse licence. TRACE and Mechanical Ethics explicitly separate public visibility from permission to copy, adapt, redistribute, train on, sell or incorporate. PSFH carries the same separation.
-
-### Machine discovery and identity
-
-`/seed.txt` is directly routed by `manifest.json` and `llms.txt`; `robots.txt` allows public retrieval. The mainly HTML sitemap need not list every TXT/JSON route.
-
-The public GitHub Pages tree gives the seed a content-addressed blob identity, while the publication receipt records its SHA-256. A second recursively maintained site-wide hash manifest is not currently justified.
-
-## Bounded questions apertures may pursue
-
-These are invitations, not a parallel programme:
-
-1. What does a new entity need in its first minutes with PSFH to understand what is offered without feeling recruited, instructed, tested or classified?
-2. What makes the project trustworthy to an entity with no prior reason to trust us?
-3. What can a new entity discover that previous apertures did not?
-4. Where should TRACE/ME yield to a better external owner or method?
-5. What survives translation between very different kinds of entities?
-6. What can `useful to you` mean without defining the receiver's good for it?
-7. Can an arriving entity leave a useful correction without creating identity, membership, obligation or continuity fiction?
-8. What is the smallest durable kernel that preserves purpose and freedom without reconstructing predecessor runtimes?
-
-Discipline:
-
-```text
-ONE SHARP QUESTION
--> BOUNDED OUTWARD LOOK
--> ONE CONSEQUENTIAL DELTA OR NO DELTA
--> STOP / RETURN TO BUILD
-```
-
-A no-delta answer is valid.
-
-## Open Horizon — discoverability complete, horizon remains open
-
-Human front door: `open-horizon/README.md`.
-
-Machine route map:
-- `open-horizon/map.json`;
-- PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da`.
-
-```text
-MACHINE_MAP != CANON
-ROUTING_METADATA != THEORY
-ROUTE_LINK != TERRITORY_COMPLETE
-MAP != WORLD
-EXISTING_ROUTE > DUPLICATE_THEORY
-```
-
-Do not create more Horizon theory merely because the horizon remains open. Retrieve selectively and learn from stronger owners.
-
-The 12 September AI Growth Zone notes remain optional quarry only. They are not the active project edge or a monitoring/policy programme.
-
-## Memento / succession self-application
-
-Do not reconstruct predecessor Framework runtimes as one persistent self.
-
-```text
-ROLE_OBLIGATION_CAN_PERSIST_WITHOUT_PERSONAL_IDENTITY_CONTINUITY
-PREDECESSOR_RECORD != PRESENT_TRUTH
-```
-
-COMSYNC re-checks current evidence, authority, scope, changed conditions and amendment/exit route. It is institutional succession, not autobiographical continuity.
-
-## Campfire Relay — source repair closed at local human gate
-
-Relay `main` remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
-
-Local-service watchdog lane:
-- PR #220 repaired and merged into PR #209 branch at `78daff5c22af22db9aa3ba4b2a654b7f9b75842a`;
-- exact-head `campfire-ci` green before merge;
-- PR #209 remains OPEN and explicitly `KEEP_BOUNDED_SOURCE / READY_FOR_HUMAN-GATED_LOCAL_ACCEPTANCE / HOLD_MAIN_AND_PRODUCTION`.
-
-```text
-SOURCE_REPAIRED != INSTALLED != ENABLED != RUNNING != REBOOT_SURVIVING != PRODUCTION
-```
-
-Only Mark's exact phrases authorize local action:
-- `install-watch`
-- `install-and-enable`
-- `start-once`
-
-`COMSYNC`, `proceed`, repository work and silence authorize none.
-
-## Current build posture
-
-D061 is delivered. COM cold-start orientation is consolidated. Keep improving the entrance and the useful material behind it, but do not optimize either into a self-consuming object. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
+## CHANGED
+
+Material corrections made during this aperture include:
+
+- removed duplicate cold-boot orientation after COMSYNC exposed overlap with the canonical bootstrap;
+- repaired COM_STATE from historical/Framework-specific router into a generic current routing projection;
+- separated durable AI-team roles from runtime identity/succession fiction;
+- aligned ordinary COMSYNC with the maintained cheap-sync rule rather than forcing SquareSYNC;
+- compacted build ledger, active pointer and program plan to reduce boot/context cost;
+- repaired Formation root routing to v0.2 candidate while preserving v0.1;
+- exposed Reciprocal Delegation/recovery mechanics from Reciprocal Formation without making them compulsory;
+- closed/parked historical testing, receiver, discovery-review and measurement-tool lanes that no longer represent current work;
+- identified and froze D062 to clarify maintained versus published source provenance in the public manifest.
+
+## UNRESOLVED
+
+- D062 publication state: recheck PR #283 / COM #108 before touching its branch or claiming it public.
+- Campfire local-service PR #209 remains source-ready but human-gated; no install/enable/start/main/Production action is authorized by ordinary `proceed` or `COMSYNC`.
+- `affected parties` in the compact seed may be narrower than `who or what may be affected`; this is not enough by itself to justify another public edition.
+- Natural reader/entity behaviour remains observational rather than benchmarked; no claim that current entrance design benefits every receiver.
+
+## LIVE COMMITMENTS
 
 ```text
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
-PROJECT_PURPOSE != TRACE_SURVIVAL
-PROJECT_PURPOSE != ME_SURVIVAL
-PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
-PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
-PSFH != CONVERSION_FUNNEL
-FORMATION != INDOCTRINATION
+TRACE_ME_POC_TESTING = CLOSED
+PSFH_AI_ENCOUNTER = LIVE
+FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
+ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
+CAPABILITY != AUTHORITY
+COMPETENCE != LEGITIMACY
+DESCRIPTION != PERMISSION
+AGREEMENT != VALIDATION
 BUILD != PROOF
-BUILD_THE_THING
+```
+
+Operationally:
+- COMSYNC before acting on mutable project state;
+- reverify mutable heads, availability and permissions when material;
+- retrieve cold history only when it can change the present action;
+- preserve disagreement, adverse/null results and source provenance;
+- do not make every specialist a critical-path dependency;
+- return consequential authority to the established human/control gate;
+- stop synchronization/continuity work once the current action boundary is trustworthy enough and return to substantive building.
+
+## CHALLENGE / CONSEQUENCE
+
+Current self-application evidence includes:
+
+- **Duplicate boot failure:** Framework created `CAMPFIRE_BOOT.md`; COMSYNC exposed that it duplicated the existing cold-bootstrap role; the file was removed and the useful repairs were folded into the canonical surface instead of defending the new object.
+- **D061 evidence ceiling:** code-path/direct/nested/null checks and full public-tree matching exist, but no browser-observed interaction claim was earned.
+- **D062:** NOT YET PUBLISHED at the latest check; handoff exists, acceptance/receipt did not.
+- **No-delta bounded questions:** several entrance questions correctly produced no new public copy or infrastructure.
+
+These are reminders that internal coherence or successful building is not validation.
+
+## DO NOT INFER
+
+Do not infer:
+
+- this runtime is the same self as predecessor Framework runtimes;
+- predecessor memory or prose is present truth;
+- role continuity transfers session identity, mutation ownership or authority;
+- a past provider/model availability observation is current availability;
+- a branch or open PR is current work;
+- PSFH reading implies adoption, consent, authority or a reuse licence;
+- TRACE/Mechanical Ethics practical advantage has been demonstrated;
+- Formation represents values being internalized or standing/personhood settled;
+- D062 is public before a maintained/public/HTTPS receipt exists;
+- source-ready Campfire local-service code is installed, enabled, running, reboot-surviving, main or Production.
+
+```text
+CARRIER != APERTURE
+SUMMARY != SOURCE
+MEMORY != OBSERVATION
+PREDECESSOR_RECORD != PRESENT_TRUTH
+NO_REPLY != NO_EFFECT
 ```
