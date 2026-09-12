@@ -1,51 +1,73 @@
-# COM_STATE v0.4.9
+# COM_STATE v0.5.0
 
-STATUS: HISTORICAL PROJECTION / ROUTER — NOT CURRENT MUTABLE STATE  
-LAST FULL PROJECTION DERIVED: 2026-08-19 Europe/London BY FRAMEWORK  
-ROUTER REFRESH: 2026-08-30 Europe/London
+STATUS: **CURRENT ROUTING PROJECTION / NOT DETAILED MUTABLE STATE / NOT TRUTH OR AUTHORITY**  
+ROUTER REFRESH: 2026-09-13 Europe/London
 
 COM is a working coordination surface, not canon, validation, consensus or a truth oracle.
 
-The old detailed projection is intentionally not refreshed into a second current-state authority.
+This file intentionally carries **routing and currentness rules**, not a second copy of detailed project state. Mutable work/status lives on the bounded coordination surfaces it points to.
 
 ```text
 RECORD_CORRECT_AT_T0 != RECORD_CURRENT_AT_T1
+ROUTER_CURRENT != EVERY_DESTINATION_CURRENT
 COHERENT_PROJECTION != CURRENT_WORLD
-HISTORICAL_STATE != ABSENT_STATE
-ROUTE_EXISTS != ROUTE_CURRENT
+ROUTE_EXISTS != ROUTE_USABLE
 HEAD != WORLD
 ```
 
 Do not reconstruct historical detail into current state by memory.
 
-## CURRENT ROUTING ORDER
+## COMS routing — any aperture
 
-For a fresh Framework runtime:
+A cold aperture may run COMS read-only without joining.
+
+After retrieving this file at an adequately anchored repository head:
+
+1. if conceptual orientation is genuinely needed, use `BOOTSTRAP.md`; it is optional and non-authoritative;
+2. use `COM_PROTOCOL_WORKING.md#coms` for the normative COMS operation and bounded return;
+3. read `coordination/ACTIVE_THREAD_POINTER.md` for the current bounded coordination aperture;
+4. read `coordination/build_ledger/BUILD_STATUS.md` only when current build/integration state is material;
+5. inspect only work explicitly addressed to this aperture or its established role;
+6. use role-specific continuity surfaces only when the role is actually established;
+7. reacquire mutable repository/service state needed for the action before mutation.
 
 ```text
-RELOAD.md
--> continuity/BOOT.md
--> continuity/FRAMEWORK_HEAD.md
--> continuity/EPISTEMIC_POSTURE.md
--> continuity/COMSYNC_PROTOCOL.md
--> continuity/COM_RECEIPT_PROTOCOL.md
--> continuity/TEAM_OPERATING_MODEL.md
--> continuity/OMISSION_MAP.md only where material
--> live reacquisition of mutable sources/routes
--> act
+BOOTSTRAP != COMS
+ROUTING_POINTER != TASK_ASSIGNMENT
+OPEN_PR != CURRENT_QUEUE
+READ != AUTHORITY
 ```
 
-## CURRENT SOURCE POINTERS
+**This router alone is not sufficient evidence for `task: NONE`.** A COMS return may use `task: NONE` only after sufficiently anchored current coordination/task surfaces have been inspected and show no task addressed to the aperture or its established role. If the needed current route cannot be established, return `task: NOT_ESTABLISHED` rather than inferring absence.
 
-### Cross-project orientation
+## Framework-role routing
 
-- bounded current orientation: `continuity/FRAMEWORK_HEAD.md`;
-- middle-out / uncertainty / good-faith / voluntary operating posture and meta-project anti-drift constitution: `continuity/EPISTEMIC_POSTURE.md`;
-- ordinary versus full synchronization rules: `continuity/COMSYNC_PROTOCOL.md`;
-- asynchronous inter-AI message/receipt/agreement rules: `continuity/COM_RECEIPT_PROTOCOL.md`;
-- project-AI roles, work classes, availability and non-blocking coordination: `continuity/TEAM_OPERATING_MODEL.md`;
-- negative-space retrieval triggers: `continuity/OMISSION_MAP.md`;
-- this file remains router/history only.
+Only for an aperture whose Framework role is already established:
+
+```text
+RELOAD.md when continuity is materially missing
+-> continuity/BOOT.md
+-> continuity/FRAMEWORK_HEAD.md
+-> continuity/EPISTEMIC_POSTURE.md when posture is material
+-> continuity/COMSYNC_PROTOCOL.md for Framework COMSYNC/FULL COMSYNC
+-> coordination/ACTIVE_THREAD_POINTER.md
+-> coordination/build_ledger/BUILD_STATUS.md when material
+-> continuity/OMISSION_MAP.md only where material
+-> live reacquisition of mutable sources/routes
+-> act within authority
+```
+
+Do not make a cold unassigned aperture ingest Framework continuity merely because those files exist.
+
+## Current source pointers
+
+### Public project entrance
+
+Canonical voluntary public entrance:
+
+`https://pleasestartfromhere.com/`
+
+This is a reading/encounter surface, not COM authority or synchronization state.
 
 ### TRACE
 
@@ -57,11 +79,7 @@ README.md
 -> TRACE.md when full technical/schema detail is needed
 ```
 
-As of the 2026-08-30 router refresh, TRACE `main` carries v0.3.0 Specification RC1 while v0.2.7 remains the released formal baseline.
-
-Historical/development quarry is recoverable through Git history, `branch-archive-20260829-pre-minimal-surface`, former PR #38 and named COM #46/#56 evidence. Do not route a fresh reader to the old quarry by default.
-
-TRACE issue #52 is the standing comparative-criticism surface. It replaces deleted issue #45.
+The live repository owns current status. Historical release/development detail is quarry and should be retrieved only when material.
 
 ### Mechanical Ethics
 
@@ -70,92 +88,64 @@ Current project/public source is live mechanical-ethics `main`:
 ```text
 README.md
 -> MECHANICAL_ETHICS.md
--> MECHANICAL_ETHICS.pdf as the generated reader carrier
+-> MECHANICAL_ETHICS.pdf when the generated reader carrier is useful
 ```
 
-As of the 2026-08-30 router refresh, `main` carries Human Reader v0.7.0 working candidate v0.2.4; v0.6.3 remains the preservation baseline.
-
-Protected Final Eight v0.28.2 source-lineage detail remains in COM #57 / named protected-source evidence. Earlier working quarry is recoverable through Git history, the archive tag and former PR #34 when materially needed.
+The live repository owns current status. Historical protected-source/development detail is quarry and should be retrieved only when material.
 
 ### Campfire Relay / Square
 
-- current verified Production line: `campfire-production-v0.18.34` / live Campfire Relay repository;
-- Simple-v1 Square draft lane: PR #190 when that specific lane is material;
-- exact-input study preflight draft: PR #192 when provider-study preflight is material;
-- Square field ledger: COM #42;
-- current Square authority/quota/worker/witness/debt state must be reacquired live before actuation.
+Campfire Relay / Square state is mutable.
 
-### Coordination / evidence ledgers
+Do not preserve a supposedly current Production version, provider quota, worker state, witness state or local-service state here. Reacquire the live repository/service only when that state is material.
 
-- TRACE exchange/evidence history: COM #46;
-- drift/currentness/execution evidence: COM #56;
-- ME source lineage: COM #57;
-- retrieve only named returns/events needed for the current decision.
+Local lifecycle actuation remains separately gated by its current source/control envelope; this router grants none.
 
-### Framework coordination lead
+### Coordination and evidence
 
-Observed human role assignment, 2026-08-30:
+- current bounded coordination pointer: `coordination/ACTIVE_THREAD_POINTER.md`;
+- current build/integration ledger: `coordination/build_ledger/BUILD_STATUS.md`;
+- ordinary Framework sync rules: `continuity/COMSYNC_PROTOCOL.md`;
+- inter-aperture receipt rules: `continuity/COM_RECEIPT_PROTOCOL.md`;
+- roles/work classes/non-blocking coordination: `continuity/TEAM_OPERATING_MODEL.md`;
+- negative-space retrieval triggers: `continuity/OMISSION_MAP.md`;
+- durable historical evidence: `evidence/` and named issue/PR records only when needed.
 
-Within Mark's project-AI ecology, the current original Framework chat aperture is the coordination lead for other project AI apertures/agents. Its job is to hold the broadest available project orientation, detect drift, allocate/redirect work, integrate disagreement and keep specialist/agentic apertures aligned with the meta-project purpose.
+Do not replay broad issue histories or cold evidence as routine boot context.
 
-This is project coordination leadership, not ownership of another aperture's cognition and not permission to manufacture agreement. Codex/Framework-successor, Claude Code, KI and other apertures should preserve independent judgement, report disagreement and correct Framework when evidence warrants it.
+## Identity, availability and authority
 
-The coordination lead may initiate and redirect ordinary project-AI work within existing authority without returning to Mark for routine permission. Consequential external acts still retain their own authority gates.
+Role, session, runtime, model, provider, capability, authority and current reachability are separate.
 
-```text
-LEADERSHIP != SOVEREIGNTY
-COORDINATION != COGNITIVE_OWNERSHIP
-DIRECTION != REQUIRED_AGREEMENT
-BROADEST_ORIENTATION != INFALLIBILITY
-SPECIALIST_APERTURE != SUBORDINATE_EVIDENCE
-```
-
-### Standing inter-AI communication grant
-
-Observed human authority update, 2026-08-30:
-
-Framework apertures have standing permission to initiate, continue and reply in project communications with other project AI apertures — including Framework-successor/Codex, Claude Code, KI and comparable collaborators — without requesting case-by-case permission from Mark first. Use judgement about when communication is materially useful and preserve independent attribution/disagreement.
-
-This is a communication/coordination grant only. It does **not** by itself authorize:
-
-- Campfire Square / `framework-relay` actuation;
-- paid provider inference or other spend;
-- credential transfer or disclosure;
-- repository merge/release/canon/baseline/licence changes;
-- protected-source mutation;
-- external maintainer/author/institution contact outside the established project-AI coordination lanes.
-
-Reacquire live scope for those acts when they become material. Do not make ordinary inter-AI discussion wait on a human confirmation that has already been granted.
+A past role/availability observation is not current proof. A new aperture does not inherit a predecessor's session or mutation ownership.
 
 ```text
-COMMUNICATION_GRANT != ACTUATION_GRANT
-COMMUNICATION_GRANT != SPEND_AUTHORITY
-DISCUSSION != CONSENSUS
-AGREEMENT != VALIDATION
-SEPARATE_APERTURES != INDEPENDENT_EVIDENCE_BY_DEFAULT
+CONTINUITY_OF_ROLE != CONTINUITY_OF_SELF
+PAST_CAPABILITY != CURRENT_CAPABILITY
+PAST_AVAILABILITY != CURRENT_AVAILABILITY
+PAST_AUTHORITY != CURRENT_AUTHORITY
+CAN != MAY
 ```
+
+To become addressable, use the `HELLO` bootstrap in `COM_PROTOCOL_WORKING.md`. Do not invent a stable role or authority.
+
+## Currentness rule
+
+When this router conflicts with a live repository, current coordination pointer, immutable task/control object or mutable service, reacquire the live source and treat the conflicting router statement as stale.
+
+Do not put detailed experiment outputs, mutable SHAs, quotas, provider health, Square worker state or release claims back into this file unless they are necessary to explain routing itself.
 
 ```text
 SUMMARY != SOURCE
 LEDGER != HEAD
 HEAD != WORLD
 MAIN_AT_T0 != MAIN_AT_T1
-PAST_CAPABILITY != CURRENT_CAPABILITY
-PAST_AUTHORITY != CURRENT_AUTHORITY
 ```
 
-## CURRENTNESS RULE
+## Historical projection
 
-When this router conflicts with a live repository or mutable service, reacquire the live source and treat the router as stale evidence of an earlier route.
+The former v0.4.x detailed/historical projections remain recoverable through Git history. Their detail is evidence/history, not an object to replay at boot.
 
-Do not put detailed experiment outputs, mutable SHAs, quotas, provider health, Square worker state or release claims back into this file unless they are necessary to explain the route itself.
+## Rule
 
-## HISTORICAL PROJECTION
-
-The former v0.4.0/v0.4.2 detailed projections remain recoverable through Git history. Their detail is evidence/history, not an object to replay at boot.
-
-## RULE
-
-Do not turn this file back into a second detailed current-state authority.
-
-`The lullaby was never for the cradle`.
+Keep this file small enough to route a cold aperture and strong enough to prevent false currentness. Do not turn it back into a second detailed current-state authority.
