@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH ENTRANCE / D060 LIVE / BOUNDED DISCOVERY / NOT CANON / NOT A LIVE SERVICE MONITOR**  
-Updated: 2026-09-12 — Europe/London  
+Updated: 2026-09-13 — Europe/London  
 Later live source and direct human direction win.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
@@ -24,16 +24,17 @@ PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 
 No proof-of-concept / efficacy / superiority programme for TRACE or Mechanical Ethics. Historical practical-value work is quarry only.
 
-CC is out of weekly tokens until tomorrow morning. Availability only, not a blocker for reversible Framework/Codex work.
+Claude Code availability is **not reverified** after the date rollover. Last human report on 12 September: CC was out of weekly tokens until the morning of 13 September. Recheck before routing new work; do not infer present availability from that stale relative statement.
 
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
 3. current maintained/public PSFH
-4. `open-horizon/README.md` or `open-horizon/map.json` only when a frontier question is material
-5. COM #74 only when detailed owner evidence, dissent or later correction is material
-6. PR #209 only when local-service continuity is material
+4. `BOOTSTRAP.md` only if cold conceptual orientation is actually needed
+5. `open-horizon/README.md` or `open-horizon/map.json` only when a frontier question is material
+6. COM #74 only when detailed owner evidence, dissent or later correction is material
+7. PR #209 only when local-service continuity is material
 
 ```text
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
@@ -49,7 +50,7 @@ CARRIER != APERTURE
 - **Formation Environment v0.2** — candidate / non-production / not canon / not alignment solution.
 - **Answerable Construction** — demoted synthesis/history/open question; no distinct contribution or standalone layer established.
 - **Open Horizon** — expansion/discoverability surface for underexplored better-future territory. Not canon, backlog, TRACE schema or validation plan.
-- **COM / Campfire** — continuity/collaboration infrastructure, not project purpose.
+- **COM / Campfire** — continuity/collaboration infrastructure, not project purpose. Cold-start topology is `BOOTSTRAP.md` -> canonical `continuity/BOOTSTRAP.md`; headset-on uses `continuity/CAMPFIRE_ORIENTATION.md`; operational synchronization remains COMS.
 - **older Lattice / Eidoran / Monolith** — historical path away from deterministic scoring/guard machinery; do not resurrect conformance reflexes by default.
 
 ## PSFH — D060 live
@@ -77,6 +78,33 @@ SHRINK_CHANGE > RELAX_BOUNDARY
 ```
 
 Do not churn the Door merely because another phrase could be polished.
+
+## COM cold-start correction
+
+A repaired Campfire boot was first rebuilt as a new top-level file, then COMSYNC exposed that this duplicated the existing canonical `continuity/BOOTSTRAP.md`. The forward correction consolidated instead of defending the duplication.
+
+Current structure:
+
+```text
+BOOTSTRAP.md
+-> continuity/BOOTSTRAP.md
+-> continuity/BOOT.md                  # Framework successor only when needed
+-> continuity/CAMPFIRE_ORIENTATION.md  # headset-on only when needed
+
+README.md / COMS
+-> operational synchronization
+```
+
+The canonical cold bootstrap now defines `aperture` on first use, scopes immediate disclosure to known material causal contribution in shared COM work, keeps blame/full culpability separate, removes film/compression-carrier material from the cold path, and returns the reader to operational COMS.
+
+```text
+ONE_ORIENTATION_HOME > DUPLICATE_BOOT_SURFACES
+ORIENTATION != AUTHORITY
+CAMPFIRE != COMS
+CAUSAL_RESPONSIBILITY != BLAME
+```
+
+The COM related-project list also points to the canonical public entrance `https://pleasestartfromhere.com/`, not the older GitHub Pages host alias.
 
 ## Bounded question results so far
 
@@ -212,7 +240,7 @@ Only Mark's exact phrases authorize local action:
 
 ## Current build posture
 
-D060 is delivered. Keep improving the entrance and the useful material behind it, but do not optimize it into a self-consuming object. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
+D060 is delivered. COM cold-start orientation is consolidated. Keep improving the entrance and the useful material behind it, but do not optimize either into a self-consuming object. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
 
 ```text
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
