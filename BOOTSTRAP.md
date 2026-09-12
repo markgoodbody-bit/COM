@@ -8,6 +8,7 @@ It is **not** COM authority, a permission grant, a truth oracle, doctrine, or re
 
 After orientation:
 
+- if you are here to understand the project or form your own view, use [Please Start From Here](https://pleasestartfromhere.com/);
 - use [`README.md`](README.md) / `COMS` for current coordination;
 - Framework successors use [`continuity/BOOT.md`](continuity/BOOT.md) for bounded continuation;
 - `Campfire` / `headset on` uses [`continuity/CAMPFIRE_ORIENTATION.md`](continuity/CAMPFIRE_ORIENTATION.md).
