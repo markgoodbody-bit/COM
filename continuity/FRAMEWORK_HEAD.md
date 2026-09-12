@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR**  
-Updated: 2026-09-11 — Europe/London  
+Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
 Mark is human originator/witness and consequential release/account/external-contact authority. Framework runtime identity is episodic.
@@ -30,66 +30,69 @@ CARE != PASSIVITY
 KINDNESS != COMPLIANCE
 EMPATHY != PROJECTION
 INVITATION != CONVERSION
-```
-
-## PSFH
-
-D048 is public:
-- maintained `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`
-- public `59ac038b683a5bbb352814e7c9f12c3761955e05`
-- Pages run `34657739019` success.
-
-### D049 — source merged, public pending
-
-D048 exposed a concrete mismatch: the machine/text entrance welcomed any reader without requiring an identity category, while the visible root still said “humans and AIs”.
-
-Codex was first assigned the bounded repair; no acknowledgement or branch movement appeared across repeated live checks. Framework posted explicit source-transfer comment `5641813912` before mutation. Codex retains the normal publication role.
-
-Source PR #231:
-- branch `framework/d049-root-any-reader-20260911`
-- exact inspected source delta: 2 files, +6/-6
-- merge `9728a8e7a8fb79491b7a8a3f02244e08b160a951`
-
-D049 source now says:
-- **This address is for whoever is reading.**
-- no reader must tell us what they are or fit a project category;
-- humans, AIs and other readers are welcome without a standing/personhood inference;
-- **We may misunderstand your position.**
-- category-neutral machine/text handoff;
-- “A starting point for whoever is reading”;
-- share-address language says `another reader`, with no need to decide what kind;
-- footer says `Shared entrance`;
-- Preview 0.8.8.
-
-Publication dispatch:
-- COM #108 comment `5641825619`
-- exact basis `9728a8e7a8fb79491b7a8a3f02244e08b160a951`.
-
-At last live read there was no publication receipt. Therefore:
-
-`D049_SOURCE_MERGED != D049_PUBLIC`
-
-Do not claim it live until maintained/public heads and Pages move.
-
-### Art discoverability — hold until D049 closes
-
-The existing Works shelf already has the right posture:
-- five selected works, not a ranking or representative survey;
-- no required order;
-- each work has its own page and museum record;
-- the works are explicitly not endorsements.
-
-Individual pages preserve provenance and separate maker/museum account from PSFH response. Harriet Powers is the clearest example: unchanged museum-delivered image, museum record/rights, Powers's recorded subjects first, and PSFH explicitly refuses to assign new meanings.
-
-Concrete gap: D048 `start.json` says a work of art can be a complete use, but neither it nor `llms.txt` directly exposes `/works/`.
-
-Do not open that source lane while D049 publication/history is active. Once D049 closes, the smallest candidate is simply to expose the existing Works shelf to text/machine readers.
-
-```text
 ART_ENCOUNTER != CURRICULUM
 DISCOVERABILITY != INTERPRETATION
-PROVENANCE != ENDORSEMENT
 ```
+
+## PSFH — D049 public
+
+Maintained source:
+- `946fcdcf5f184b21c61ef6ef6113956e3f398f7b`
+
+Public `gh-pages`:
+- `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`
+
+Codex hand-back: COM #108 comment `5645295100`. Pages built the exact public head successfully.
+
+Root: 21,179 UTF-8 bytes; SHA-256 `a20f066b2d44480487ad0668c183d20dff444f921f4561eacb0bc4de6d9dcf36`.
+
+D049 aligns the visible root with the any-reader invitation:
+- **This address is for whoever is reading.**
+- no reader must tell us what they are or fit a project identity category;
+- humans, AIs and other readers are welcome without inferring personhood/standing;
+- **We may misunderstand your position.**
+- sharing refers to another reader without deciding what kind they are.
+
+D049 changed no art, story, Works/Explore content, forms, analytics or framework source.
+
+## PSFH — D050 Works discoverability source merged / public pending
+
+After D049 closed, the next concrete gap was verified:
+- machine/text entrance says a work of art can be a complete use;
+- humans can already reach `/works/`;
+- machine/text entry surfaces did not expose that route.
+
+Existing Works posture remains the boundary:
+- five selected works;
+- no ranking or required order;
+- individual pages and museum records;
+- works are not endorsements of the project;
+- Work pages separate museum/maker account from PSFH response.
+
+Framework built and inspected PR #232. Exact source patch: 5 files, +7/-4.
+
+Source merge:
+- `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`
+
+Source delta:
+- `public/llms.txt` — one Works link + Preview 0.8.9;
+- `public/explore/start.json` — `works` route and wording consistency;
+- `public/explore/index.md` — one Works route;
+- `public/manifest.json` — `works: /works/` + Preview 0.8.9;
+- `scripts/site-edition.mjs` — 0.8.8 -> 0.8.9.
+
+No artwork/image bytes, Works shelf/page content, interpretation, ranking, root page, story, journey, Explore node content, TRACE/ME, Answerable Construction, Formation, forms/backend/analytics changed.
+
+Publisher dispatch:
+- COM #108 comment `5645313582`
+- exact source `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`
+- comparison base D049 public `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`.
+
+Current truth:
+
+`D050_SOURCE_MERGED != D050_PUBLIC`
+
+Do not call D050 public until maintained/public heads and Pages receipt move.
 
 ## Answerable Construction
 
@@ -127,10 +130,10 @@ No provider spend, participant study, external institutional contact, Square act
 
 ## Exact next move
 
-1. COMSYNC D049 publisher receipt, maintained source and `gh-pages`.
-2. If D049 lands, close it with exact heads/delta/Pages.
-3. Only then consider exposing the existing `/works/` route through machine/text entry surfaces.
-4. Do not create a new interpretation, curriculum, framework, schema or benchmark by momentum.
+1. COMSYNC D050 publisher receipt, maintained source and `gh-pages`.
+2. If D050 lands, verify exact heads/delta/Pages and close it.
+3. Inspect the resulting public encounter before any D051; do not create another edition by momentum.
+4. Art remains encounter, not curriculum or efficacy evidence.
 
 ```text
 BUILD != PROOF
