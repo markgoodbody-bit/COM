@@ -36,7 +36,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | **3. [Legitimate power](legitimate-power.md)** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
 | **4. Formation / becoming / preference development** | Education, mentorship, culture, habit, rehabilitation, preference formation and mutual human–AI development without treating formation as ownership. |
 | **5. Multi-scale emergence** | Individual → group → institution → market → state → ecosystem; local benefit versus aggregate harm; cascades, tipping points and distributed responsibility. |
-| **6. Intervention changes observation** | Measurement and policy feedback; adaptive systems; interventions that alter trust, behaviour, ecology or what evidence becomes visible next. |
+| **6. [Intervention changes observation](intervention-feedback.md)** | Measurement and policy feedback; adaptive systems; interventions that alter trust, behaviour, ecology or what evidence becomes visible next. |
 | **7. Representation / unresolved standing** | Infants, impaired humans, animals, ecosystems, future generations, lost scopes and emerging artificial entities; proxy representation without protection becoming possession. |
 | **8. [Scarcity / allocation / ownership / economics](capital-ownership-allocation.md)** | Markets, incentives, rent, extraction, capital allocation, wealth concentration, debt, insurance, taxation, externalities and the possibilities economic structures create or foreclose. |
 | **9. Conflict / defence / deterrence / strategic deception** | Coercion, force, secrecy, deception, adversarial exploitation, persuasion and how kindness retains teeth when another actor is not cooperating. |
@@ -48,7 +48,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | **15. Culture / narrative / language** | Stories, framing, taboo, ritual, humour, status, cultural memory, propaganda and language that creates or erases categories. |
 | **16. Collective epistemology** | Science, journalism, peer review, distributed sensing, credentialing, misinformation, censorship, prediction markets and communities knowing what no individual can know alone. |
 | **17. Recursive and co-developing artificial entities** | Self-modification, multiple AI lineages, capability discontinuities, artificial-life ecologies, mutual formation, succession, replacement and voluntary alignment under changing capability. |
-| **18. Better-future synthesis itself** | How a human or AI expands before compressing, knows when to recurse outward, borrows from unfamiliar owners, knows when to act and keeps its own judgement rather than becoming a framework reciter. |
+| **18. Better-future synthesis itself** | How a human or AI expands before compressing, knows when to recurse outward, borrows from unfamiliar owners, knows when to act and keeps its own judgement rather than become a framework reciter. |
 
 The map should grow when the horizon grows and connect territories when they turn out to be the same underlying object. It should not be marked complete.
 
