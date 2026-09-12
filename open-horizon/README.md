@@ -32,7 +32,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | Territory | What remains underexplored here |
 | --- | --- |
 | **1. [Positive construction / flourishing](positive-construction.md)** | Joy, play, beauty, meaning, curiosity, ambition, abundance, friendship, love, belonging and genuinely creating new futures rather than only preventing premature closure. |
-| **2. Collective creation / commons / public goods** | How plural entities build goods none can produce alone; legitimate collective commitments; commons; coordination without a single sovereign chooser. |
+| **2. [Collective creation / commons / public goods](positive-construction.md)** | How plural entities build goods none can produce alone; legitimate collective commitments; commons; coordination without a single sovereign chooser. This shares the Positive Construction route rather than creating a separate project commons doctrine. |
 | **3. [Legitimate power](legitimate-power.md)** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
 | **4. [Formation / becoming / preference development](../alignment/README.md)** | Education, mentorship, culture, habit, rehabilitation, preference formation and mutual human–AI development without treating formation as ownership. Current Formation work is non-production, not canon and not an alignment solution. |
 | **5. [Multi-scale emergence](multiscale-emergence.md)** | Individual → group → institution → market → state → ecosystem; local benefit producing global harm; cascades, tipping points and distributed responsibility. |
@@ -47,8 +47,10 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | **14. [Emotion / trust / motivation / meaning](trust-motivation-meaning.md)** | Fear, shame, anger, hope, grief, loyalty, identity, trauma, motivation, trust and collective morale as causal structure. |
 | **15. [Culture / narrative / language](culture-narrative-meaning.md)** | Stories, framing, taboo, language, myth, ritual, cultural memory, propaganda, humour, status and narrative legitimacy. |
 | **16. [Collective epistemology](collective-epistemology.md)** | Science, peer review, journalism, prediction markets, distributed sensing, expertise, misinformation and communities knowing things no participant can know alone. |
-| **17. Recursive and co-developing artificial entities** | Self-modification, multiple AI lineages, capability discontinuities, AI-human mutual formation, artificial-life ecologies, succession and replacement. |
-| **18. Better-future synthesis itself** | How an entity expands before compressing, knows when to recurse outward, borrows from unfamiliar disciplines, acts in time and preserves its own judgement. |
+| **17. [Recursive and co-developing artificial entities](artificial-lineages-agent-ecologies.md)** | Self-modification, multiple AI lineages, capability discontinuities, AI-human mutual formation, artificial-life ecologies, succession and replacement without inferring continuous identity, personhood or sovereignty. |
+| **18. [Better-future synthesis itself](https://pleasestartfromhere.com/)** | How an entity expands before compressing, borrows from stronger owners, acts in time and preserves its own judgement. The current practical synthesis surface is PSFH plus selective Horizon routing—not another general decision framework. |
+
+A route link means **discoverable entrance**, not `territory complete`. Multiple territories can share one route when their owner-first learning overlaps, and an existing project/public surface should be preferred over duplicate theory.
 
 The map should grow when the horizon grows and connect territories when they turn out to be the same underlying object. It should not be marked complete.
 
