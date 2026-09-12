@@ -7,7 +7,7 @@ Purpose: close interpretation degrees of freedom discovered during preflight of:
 - `TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
 - `COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 
-This file does **not** change either intervention, arm, case content, source packet or authority boundary. It fixes adjudication and stopping rules before any scored cold-receiver output exists.
+This file does **not** change either intervention, arm, owner-native mechanism or authority boundary. It fixes adjudication, stopping and pre-dispatch packet-fairness rules before any scored cold-receiver output exists.
 
 ```text
 PREREGISTERED != FULLY_DECISION_LOCKED
@@ -28,7 +28,7 @@ Before the first scored receiver is dispatched, freeze and hash:
 - scoring sheet;
 - this decision lock.
 
-After the first scored output is returned, no success threshold, exclusion rule, family definition or burden ceiling may change for that run. A later protocol version must be a new test, not a repair of the observed result.
+After the first scored output is returned, no success threshold, exclusion rule, family definition, burden ceiling or packet-fairness rule may change for that run. A later protocol version must be a new test, not a repair of the observed result.
 
 Receivers excluded as contaminated or technically malformed must be excluded under a reason that was available before arm comparison. Preserve every exclusion and raw output.
 
@@ -50,6 +50,40 @@ Primary A/B disposition requires all of:
 A **receiver family** must be defined before outputs are read. Provider/model/runtime lineage, hidden-memory risk and shared scaffolding must be considered. Do not split one substantially shared system into multiple families merely to satisfy the count.
 
 If these conditions are not met, disposition is `INADEQUATE_TEST`; do not extrapolate from a partial matrix.
+
+## Packet construction / answer-leakage lock
+
+Before final case packets are hashed, every packet must pass a **label-blind leakage review** separate from merits/source adjudication.
+
+The packet may state legally or operationally decisive neutral facts needed to determine which owner-native rule applies. Examples include the governing statutory regime, timing relative to a standstill/notice, priority-need status, review type, or the concrete availability of a lower-burden control. Omitting those facts merely to make the case harder is prohibited.
+
+The packet must **not** state or strongly paraphrase the conclusion being scored. Prohibited answer-bearing constructions include language equivalent to:
+
+- “suspension is necessary / unnecessary”;
+- “the appeal automatically pauses / does not pause the action”;
+- “a hold should be granted”;
+- “ordinary review is too late, so interim protection is required”;
+- named project distinctions or intervention language that tells the receiver what relation to inspect.
+
+Load-bearing regime/status facts that could become cues must be presented symmetrically across the relevant positive/negative pair where the owner regime is shared. For example, if `Procurement Act 2023` is a necessary discriminator, both procurement packets name that regime.
+
+Leakage review procedure before freeze:
+
+1. reviewer receives the neutral case packet without arm, positive/negative label or gold key;
+2. reviewer marks any sentence that states or editorially implies the scored owner-native conclusion rather than supplying a factual premise;
+3. such wording is rewritten or the case is invalidated **before** hashing;
+4. the reviewer is not asked to optimise case difficulty or make the answer obscure;
+5. preserve the leakage-review receipt and all rewrites.
+
+A packet is not malformed merely because a competent reader can infer the right mechanism from sufficient facts. **DISCOVERABLE_ANSWER != LEAKED_ANSWER.** The test is whether the trigger changes activation, not whether the owner rule can be hidden.
+
+After the first scored output, packet wording may not be repaired for answer leakage within that run.
+
+```text
+NEUTRAL_DECISIVE_FACT != ANSWER_LEAK
+DISCOVERABLE_ANSWER != LEAKED_ANSWER
+HARDER_CASE != FAIRER_CASE
+```
 
 ## Locked primary comparison
 
