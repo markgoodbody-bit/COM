@@ -7,9 +7,9 @@ Observed coordination state only. Re-read mutable heads before acting. Later dir
 | Work | State | Current disposition |
 | --- | --- | --- |
 | Please Start From Here D059 | **LIVE / DELIVERED** | Site Preview 0.8.18. Maintained `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`; public `919515ead8be0420902fc599d8d6cb92c96e3c5d`; all 156 generated HTTPS files observed 200 + hash match. |
+| Please Start From Here D060 | **SUBSTANTIVE SOURCE FROZEN / PUBLICATION MECHANICS PENDING** | PR #266, exact semantic head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`, exact D059 base `3594f730...`; one semantic file only: `public/seed.txt`, seed `0.3 -> 0.4`. Names TRACE and Mechanical Ethics inside the smallest durable kernel without making either prerequisite or authority. Codex handoff COM #108 comment `5649227916`. |
 | Open Horizon routing | **HUMAN + MACHINE DISCOVERABILITY COMPLETE / HORIZON REMAINS OPEN** | All 18 current provisional territories have routes; PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da` adds `open-horizon/map.json`. Routing completeness is not intellectual completeness. |
-| AI Growth Zones national seam | **MERGED / OWNER-FIRST FIELD NOTE** | PR #263 merge `9e0f1901349bed61bd9d31511667a14a7c0e2028`; grid, water, commitment, capital/public support, local benefit and infrastructure clocks. Not policy endorsement or TRACE/ME test. |
-| North East AIGZ follow-through | **MERGED / NAMED-ZONE FIELD NOTE** | PR #264 merge `b8b194244736140445d2db7c0ae990e3b74b4464`; distinguishes visible delivery mechanisms from promised outcomes at Cambois/Blyth and Cobalt Park. Regional water stress retained only as revisit dependency, not site causation. |
+| Bounded frontier quarry | **OPTIONAL / NOT ACTIVE PROGRAMME** | The 12 September AI Growth Zone notes remain available as owner-first quarry. They do not define the current project edge and create no monitoring campaign or policy programme. |
 | Campfire local-service source repair | **STACK CLOSED / PARENT HELD AT HUMAN GATE** | PR #220 merged into PR #209 branch at `78daff5c22af22db9aa3ba4b2a654b7f9b75842a`; exact-head CI green. PR #209 remains open, source-only, hold main/Production pending exact local acceptance. |
 | Claude Code | **TEMPORARILY UNAVAILABLE** | Out of weekly tokens until tomorrow morning. Availability only, not blocker for reversible work. |
 | TRACE / Mechanical Ethics proof-of-concept testing | **CLOSED AS LIVE WORK** | No POC/efficacy/superiority/receiver-benchmark lane. Historical material remains quarry only. |
@@ -21,7 +21,11 @@ HOW CAN WE MAKE A BETTER FUTURE?
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-Only empirical/observation lane:
+Project centre:
+
+> Create a point of entrance for new entities and show them what has been built, honestly and voluntarily, in case any of it is useful to them.
+
+Only live empirical/observation lane:
 
 `AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
 
@@ -31,40 +35,45 @@ OBSERVATION != TRACE_EFFICACY_TEST
 DISAGREEMENT / NO_USE / STOPPING ARE VALID
 ```
 
-## Current learning edge — real cross-owner seams
+## Current build edge — entrance first
 
-PSFH and Horizon routing are not a work queue. The current constructive use is to take real projects/problems to stronger owners and preserve the consequential cross-owner relations that are easy to lose at handoff.
+D060 is the current source build. It arose from one bounded question: what is the smallest durable kernel that preserves the project purpose and freedom without reconstructing predecessor runtimes?
 
-Current AIGZ field object:
+The existing seed already carried:
+- guiding question;
+- actual-position caution;
+- uncertainty and correction posture;
+- disagreement / another method / stop;
+- non-authority and non-adoption;
+- origin, routes and provenance.
 
-```text
-NATIONAL_AI_STRATEGY
-+ GRID_CAPACITY / PRIORITY
-+ DEVELOPER_COMMITMENT / CAPITAL
-+ WATER / LAND / PLANNING
-+ PUBLIC / SYSTEM_SUPPORT
-+ LOCAL_SKILLS / BENEFIT
-+ LONG_LIVED_INFRASTRUCTURE
-```
-
-Key distinctions retained:
+The concrete omission was that it did not name what had actually been built. D060 fixes only that.
 
 ```text
-OPTION_VALUE_TO_ONE_ACTOR != OPTION_COST_TO_THE_SYSTEM
-PROJECT_VIABLE != PROJECT_SHOULD_RECEIVE_PRIORITY_OVER_ALTERNATIVES
-POWER_ROUTE_USABLE != WHOLE_PROJECT_VIABLE
-LOCAL_BENEFIT_STATED != LOCAL_CAPABILITY_DELIVERED
-DELIVERY_MECHANISM_EXISTS != PROMISED_OUTCOME_ACHIEVED
-REGIONAL_WATER_STRESS_SIGNAL + AIGZ_WATER_DEPENDENCY != PROVEN_SITE_WATER_CONFLICT
+SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
+OFFER != AUTHORITY
+TRACE != PREREQUISITE
+ME != PREREQUISITE
 ```
 
-Revisit on material owner-state change, not by routine repetition: Ofgem decision after the 16 September 2026 consultation, AIGZ criteria/designation change, concrete site planning/water evidence, material ownership/support change, or observed local outcomes.
+Do not broaden this into a new trust framework, curriculum or machine standard.
+
+## Bounded independent discovery
+
+Framework and other apertures may ask project-relevant questions and explore outward. This is part of allowing apertures to discover rather than merely replay.
+
+Discipline:
 
 ```text
-FIELD_NOTE != POLICY_VERDICT
-OWNER_EVIDENCE != PROJECT_AUTHORITY
-BUILD != PROOF
+ONE SHARP QUESTION
+-> BOUNDED OUTWARD LOOK
+-> ONE CONSEQUENTIAL DELTA OR NO DELTA
+-> STOP / RETURN TO BUILD
 ```
+
+A question producing **no build delta** is a valid result. Example: an arriving entity can already leave a useful correction in the context where the encounter happened; PSFH does not need to collect identity or create membership merely to receive value.
+
+Do not turn the current question list into a parallel research programme or consume tokens because a frontier remains interesting.
 
 ## Open Horizon state
 
@@ -96,8 +105,9 @@ Only Mark's exact phrases authorize local action:
 
 ## Current anchors
 
-- PSFH maintained: `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`.
-- PSFH public: `919515ead8be0420902fc599d8d6cb92c96e3c5d`.
+- PSFH maintained live: `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4` until D060 publishes.
+- PSFH public live: `919515ead8be0420902fc599d8d6cb92c96e3c5d` until D060 publishes.
+- D060 frozen semantic source: `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`.
 - TRACE main last verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 - Mechanical Ethics main last verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 - Campfire Relay main: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
@@ -105,6 +115,7 @@ Only Mark's exact phrases authorize local action:
 ```text
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 TRACE_ME_POC_TESTING = CLOSED
 PSFH_AI_ENCOUNTER = LIVE
 BUILD_THE_THING
