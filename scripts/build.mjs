@@ -71,7 +71,7 @@ for (const name of machineFiles) {
     manifest.provenance.optional_human_art = {
       source_review: WORKS.source_review,
       optional: true,
-      scope: 'Five selected works, not a ranking or representative survey. No required traversal or report-back; not evidence for TRACE or Mechanical Ethics.',
+      scope: 'Selected works, not a ranking or representative survey. No required traversal or report-back; not evidence for TRACE or Mechanical Ethics.',
     };
     manifest.provenance.artwork = { record: '/art/camp-fire.json', image_sha256: CAMP_FIRE.sha256, source: CAMP_FIRE.object_url };
     manifest.provenance.title_and_art_direction = 'https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5592807329';

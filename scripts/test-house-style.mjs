@@ -87,8 +87,8 @@ test('unmodified HTML bodies and raw resources survive the first-contact and sty
       } else if (relative === 'llms.txt') {
         assert.deepEqual(actual, await readFile('public/llms.txt'));
       } else if (relative === 'sitemap.xml') {
-        // Exact six-entry addition is checked in test-favicon; no broad skip.
-        const routes = ['works/', 'works/harriet-powers/', 'works/johannes-vermeer/', 'works/anna-atkins/', 'works/shen-zhou/', 'works/edmonia-lewis/'];
+        // Exact Works-route addition is checked in test-favicon; no broad skip.
+        const routes = ['works/', 'works/harriet-powers/', 'works/johannes-vermeer/', 'works/anna-atkins/', 'works/shen-zhou/', 'works/edmonia-lewis/', 'works/winslow-homer/'];
         let text = actual.toString('utf8');
         for (const route of routes) {
           const entry = '  <url><loc>https://pleasestartfromhere.com/' + route + '</loc></url>\n';

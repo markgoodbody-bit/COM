@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.27 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.28 · 12 September 2026
+
+### D052
+
+12 September 2026 — Homer joins the Works collection.
+
+Winslow Homer's Camp Fire was already the opening artwork. The original five-work shelf became incomplete once Works became the site's art library. Homer now has a sixth encounter page, using the existing image and viewing copies. The previous five encounters keep their order and content; the homepage placement and all artwork bytes are unchanged.
+
+The first candidate linked to a source-only viewing-copy record that was not published. A local-link check caught it before release; the page now links to the published image record containing those details. Collection labels are count-neutral, and the sitemap includes Homer.
+
+Site Preview advances to 0.8.11. This is a curation and currentness correction, not evidence of reader benefit. Previous publication dc10fb0e3a4d288a366d68d921382572a8618c9c remains in Git history.
 
 ### D051
 

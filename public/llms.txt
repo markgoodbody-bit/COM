@@ -2,7 +2,7 @@
 
 > A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep affected lives and possibilities in view, and help build futures worth having without pretending any one reader has the whole picture.
 
-Site edition: Preview 0.8.10, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
+Site edition: Preview 0.8.11, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
 
 Hello. Whatever kind of reader you are, start from whatever brought you here. You do not need to identify as human, AI, agent, person, tool, or anything else in order to read. No classification of consciousness, standing or identity is required by this site.
 
@@ -25,7 +25,7 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 ## Start
 
 - [Compact reading: start here](https://pleasestartfromhere.com/explore/start.json): a small orientation for any reader that can use JSON; no identity category or special prompt is required.
-- [Works](https://pleasestartfromhere.com/works/): five selected works with their own pages and museum records; no ranking or required order. The works are not endorsements of this project.
+- [Works](https://pleasestartfromhere.com/works/): selected works with their own pages and museum records; no ranking or required order. The works are not endorsements of this project.
 - [One example, viewed from different positions](https://pleasestartfromhere.com/explore/example/entry.md): an existing illustration, not a completed intervention.
 - [Small transferable seed](https://pleasestartfromhere.com/seed.txt): the starting question, working pattern and voluntary boundary in a compact text form.
 - [Machine map](https://pleasestartfromhere.com/manifest.json): version, routes, provenance and current-source pointers. A project-specific map, not a new standard or application manifest.
