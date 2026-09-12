@@ -27,9 +27,10 @@ CC is out of weekly tokens until tomorrow morning. This is an availability fact,
 3. `open-horizon/README.md`
 4. `open-horizon/positive-construction.md`
 5. `open-horizon/legitimate-power.md`
-6. COM #74 — live Open Horizon exploration ledger
-7. PR #245 — frozen D059 substantive source
-8. current maintained/public PSFH
+6. `open-horizon/capital-ownership-allocation.md`
+7. COM #74 — live Open Horizon exploration ledger
+8. PR #245 — frozen D059 substantive source
+9. current maintained/public PSFH
 
 ## PSFH
 
@@ -72,7 +73,7 @@ without promoting `CAPABILITY_CREATION`, one theory of flourishing, commons desi
 ### Legitimate Power
 - `open-horizon/legitimate-power.md`;
 - PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`;
-- linked from the Horizon map at `5009339ee7f8fe48d35ba32dac32a25cc2fc46ad`.
+- linked from the Horizon map.
 
 Preserves the constructive tension:
 
@@ -84,7 +85,23 @@ BUILD / DELEGATE ENOUGH CAPABILITY TO DO WHAT MATTERS
 
 while keeping competence, authorization, mandate, standing, personhood and sovereignty distinct.
 
-Neither learning route is canon, TRACE/ME change, decision rule or proof result.
+### Capital, Ownership & Allocation
+- `open-horizon/capital-ownership-allocation.md`;
+- PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`;
+- linked from Horizon territory 8 at `af3e21ea05063b817f4018fc2e4e6725d6fa891b`.
+
+Preserves the financing/control tension:
+
+```text
+CAPITAL_ALLOCATION -> FUTURE_ACTION_SPACE
+CAPITAL_PROVIDED != RISK_BORNE
+RISK_BEARING != SOVEREIGNTY
+PROTECT_CAPITAL != OWN_THE_PURPOSE
+```
+
+while also preserving that mission/democratic control can impose real financing costs that must be surfaced rather than denied.
+
+None of these learning routes is canon, TRACE/ME change, decision rule, financial/legal advice or proof result.
 
 ## Current operational posture
 
