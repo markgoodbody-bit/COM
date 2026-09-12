@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D059 LIVE / HORIZON ROUTING PASS CLOSED / MACHINE DISCOVERABILITY BUILD / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D059 LIVE / HORIZON HUMAN+MACHINE ROUTING COMPLETE / CAMPFIRE SOURCE REPAIR BOUNDED / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -34,87 +34,60 @@ D059 is live:
 
 Open Horizon is the first optional Current workshop route on the public Door.
 
-## Open Horizon — routing pass closed, horizon still open
+## Open Horizon — routing infrastructure complete, horizon remains open
 
-Current map commit after final selective routing: `8c22f8b1941c9a1810d837f35a2a4909cb376db4`.
+Human routing pass: all 18 current provisional territories have discoverable routes without creating 18 new theories.
 
-All 18 provisional frontier territories now have a discoverable route, but not 18 new project theories:
-- 15 dedicated maintained owner-first learning routes;
-- Commons/public-goods shares Positive Construction;
-- Formation routes to existing `alignment/README.md`;
-- Better-future synthesis routes to PSFH rather than a new general decision framework.
-
-```text
-ROUTE_LINK != TERRITORY_COMPLETE
-EXISTING_ROUTE > DUPLICATE_THEORY
-HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
-```
-
-Dedicated routes now include:
-- Positive Construction;
-- Legitimate Power;
-- Multi-scale Emergence;
-- Intervention & Feedback;
-- Representation / Unresolved Standing;
-- Capital / Ownership / Allocation;
-- Conflict / Resilience / Strategic Influence;
-- Ecology / Welfare / Constitutive Harm;
-- Positive Risk / Exploration / Stagnation;
-- Long Time / Succession / Inherited Commitments;
-- Embodiment / Material Capacity / Shared Infrastructure;
-- Trust / Motivation / Meaning;
-- Culture / Narrative / Collective Meaning;
-- Collective Epistemology / Aperture Ecology;
-- Artificial Lineages / Succession / Agent Ecologies.
-
-The live detailed quarry remains COM #74. Later supported evidence wins over compact routes.
-
-## Current build edge — machine discoverability
-
-Do not create more theory because the table is routed.
-
-Next bounded build:
-- add a compact `open-horizon/map.json` that exposes the same 18 territories, route type and status ceilings for machine/future-aperture retrieval;
-- link it from `open-horizon/README.md`;
-- do not duplicate route prose or claim completeness/current truth beyond its source identity;
-- live ledger remains COM #74;
-- no PSFH revision is automatically required because D059 already points to the maintained Open Horizon front door.
+Machine routing pass:
+- `open-horizon/map.json`;
+- PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da`;
+- linked from `open-horizon/README.md`;
+- routing metadata only; no PSFH/TRACE/ME mutation.
 
 ```text
 MACHINE_MAP != CANON
 ROUTING_METADATA != THEORY
+ROUTE_LINK != TERRITORY_COMPLETE
 MAP != WORLD
+HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
 
-## Important corrections retained
+Do not create more Horizon theory merely because rows exist. Retrieve only the route relevant to the current question; use COM #74 when detailed owner evidence, dissent or later correction is material.
+
+## Campfire Relay — source repair bounded at human gate
+
+Relay `main` remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
+
+Local-service watchdog source lane:
+- PR #220 repaired and merged into PR #209 branch at `78daff5c22af22db9aa3ba4b2a654b7f9b75842a`;
+- the repaired install-state block preserves failed observation as `QUERY_FAILED/UNREAD`, compares full SHA-256 internally, and has focused mock coverage;
+- exact-head `campfire-ci` passed before merge;
+- PR #209 remains OPEN and explicitly `KEEP_BOUNDED_SOURCE / READY_FOR_HUMAN-GATED_LOCAL_ACCEPTANCE / HOLD_MAIN_AND_PRODUCTION`.
 
 ```text
-SEPARATE_APERTURES != INDEPENDENT_EPISTEMIC_LINEAGES
-CAPABILITY != AUTHORITY
-REPRESENTATION != POSSESSION
-HARM_EXISTS != SYSTEM_MALFUNCTION
-ABILITY_TO_HELP != DUTY_TO_ENGINEER
-OPTION_VALUE_OF_WAITING != ALWAYS_WAIT
-CAPABILITY_VALUE_OF_COMMITTING != ALWAYS_COMMIT
-CONTINUITY_OF_ROLE != CONTINUITY_OF_SELF
-PREDECESSOR_RECORD != PRESENT_TRUTH
-MEMORY_CONTINUITY != SUBJECT_CONTINUITY
-INDIVIDUAL_ALIGNMENT != ECOLOGY_ALIGNMENT
+SOURCE_REPAIRED != INSTALLED
+INSTALLED != ENABLED
+ENABLED != RUNNING
+RUNNING != REBOOT_SURVIVING
+SOURCE_BRANCH != MAIN
+MAIN != PRODUCTION
 ```
 
-## Separate Campfire lane
-
-Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
-Relay PR #225 merged into parent repair lane; PR #220 remains OPEN. Do not claim installed/full integration.
-
-Only Mark's exact phrases authorize local Relay/Square lifecycle action:
-- `install-and-enable`
+Only Mark's exact phrases authorize local lifecycle action:
 - `install-watch`
+- `install-and-enable`
 - `start-once`
 
-`COMSYNC`, `proceed`, repo work and silence authorize none.
+`COMSYNC`, `proceed`, repo work and silence authorize none. Do not merge PR #209 to main/Production without the fresh installed-byte/task/process receipt and bounded live acceptance its own lane requires.
+
+## Current operational edge
+
+No pending Horizon routing build remains. D059 is delivered. Campfire source integration is at a human local-machine gate.
+
+Continue reversible construction by following material project need rather than generating structure for its own sake. Natural AI encounters with PSFH may be observed without scoring.
 
 ```text
+PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
 CC_UNAVAILABLE != BUILD_STOP
 BUILD_THE_THING
 ```
