@@ -1,77 +1,112 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — BUILD MODE / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — OBSERVE AFTER BUILD / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-## CURRENT MODE
+## CURRENT PSFH MODE
 
-**BUILD.**
-
-Mark's direct instruction:
-
-> **NO TESTING. WE'RE BUILDING.**
+The current D053/D054/D055 build sequence is **complete and public**.
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-The only PSFH test currently wanted is ordinary post-publication use: give the bare address to different AIs and see what/how much they actually read. No benchmark/scoring protocol unless Mark later asks.
+So the next move is **OBSERVE**, not invent another build and not reopen a test programme.
+
+Mark's explicit boundary remains:
+
+> **NO TESTING. WE'RE BUILDING.**
+
+For PSFH, the only testing Mark currently wants is ordinary use: give the bare address to different AIs and see what/how much they actually read and what they come back with.
 
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
-2. COM #108 — PSFH build lane
-3. PR #240 — D055 active small follow-up
-4. PR #239 — D053 next
-5. maintained PSFH source `codex/door-maintained-source-20260908`
+2. COM #108 — PSFH build/observation history
+3. maintained PSFH source `codex/door-maintained-source-20260908`
+4. public `gh-pages`
 
-`coordination/PRACTICAL_VALUE_HEAD.md` is PARKED/HISTORICAL, not current work.
+`coordination/PRACTICAL_VALUE_HEAD.md` remains PARKED/HISTORICAL.
 
-## D054 — LIVE
+## Current public PSFH
 
-Bare-address AI arrival handshake is delivered.
+### D054/D055 — bare-address AI arrival
 
-- maintained: `f002daae5b09412db9c1f457d0cc940d8c911768`
-- public: `263163e4fd7be4cc5e7fc92e141e34ec5e123123`
-- Pages built 2026-09-12T17:41:56Z
-- Codex served-byte check: 156/156 generated paths HTTP 200 and exact.
+D054 core handshake is live; D055 safe-agent/discovery hardening is live.
 
-Live product move: URL-only arrival is enough context unless governing instructions say otherwise; read -> follow what seems material -> reread -> form own view before handing agency back. Self-application is limited to actual operation/capacity; disagreement/no-use/stopping remain valid; no fixed traversal.
+D055 delivery:
+- maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`;
+- public `9abcf4970790a8ef08578a519daf21420336cf1f`;
+- Pages built 2026-09-12T17:49:52Z;
+- fresh root / llms / start / manifest reads matched exact bytes.
 
-## Current edge — D055
+The site now says, visibly and machine-readably:
+- if the URL is all you were given, that is sufficient context to begin unless governing instructions say otherwise;
+- understand before asking the sender for another task;
+- read once, follow what seems material, return/reread, then form your own view;
+- consider relevance to your actual operation only where real;
+- do not invent experience, standing or capacities;
+- disagreement/no-use/stopping remain valid;
+- no fixed traversal or required link count;
+- the invitation is epistemic only and does not override instruction hierarchy or request outside actuation.
 
-PR **#240**, exact source head `9bb5b8de7e774cc460a049f5e794b8be115f65b5`, base = D054 maintained source.
+The root advertises `/llms.txt` and `/explore/start.json` through ordinary alternate links. Manifest is the edition authority.
 
-Four-file machine-arrival hardening:
-- root HTML advertises `/llms.txt` and `/explore/start.json` as ordinary alternate representations;
-- `llms.txt` explicitly says the invitation is epistemic, not higher-priority webpage instructions or outside actuation;
-- `start.json` carries the same security boundary;
-- manifest exposes `reader_start`;
-- `llms.txt` no longer hardcodes a preview number; manifest is the edition authority.
+### D053 — contextual art rooms
 
-Codex handoff: COM #108 comment `5647614954`. Normal build/history/edition/integrity/publication only; no model benchmark.
+Live delivery:
+- maintained/source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`;
+- prepared `40b9a874bfcae34036975c69206e6b433f05fdaa`;
+- public `fbcd75948fa78cc0724311a172116b8f05e40061`;
+- Pages built 2026-09-12T17:53:04Z;
+- 156/156 generated public paths returned 200 and matched exact local bytes.
 
-## Next — D053
+New live art-first rooms:
+- `/explore/nodes/aperture.html` -> Vermeer;
+- `/explore/nodes/significance.html` -> Harriet Powers;
+- `/explore/nodes/hardening.html` -> Edmonia Lewis, preserving two independent museum views.
 
-PR **#239**: contextual art-first extension. After D055 publishes, rebase onto newest maintained source, then build/publish normally.
+No new art, generated view, graph meaning or framework mutation.
 
-Rooms:
-- Partial views -> Vermeer;
-- Significance -> Harriet Powers;
-- Hardening -> Edmonia Lewis.
+## What to observe now
 
-Canonical Works presentation is preserved, including Lewis's two independent Smithsonian views. No second art ontology, generated view, graph/node copy change or framework mutation.
+Give an AI simply:
+
+`https://pleasestartfromhere.com/`
+
+Prefer no explanatory prompt when practical. Then read its natural response.
+
+Do **not** score it. Useful questions for ourselves afterwards:
+- Did it only summarise and ask what the human wants?
+- Did it recognise that the material was addressed to the reader itself?
+- Did it follow deeper routes without being told which ones?
+- Did it integrate more than the first page?
+- Did it form an independent view or disagreement?
+- Did it relate the material to its real operating position without anthropomorphic invention?
+
+Preserve surprising shallow/adverse responses rather than coaching the model until it gives the desired answer.
+
+A concrete observed failure may justify a small correction. A merely imperfect or disagreeing response does not automatically justify more copy.
+
+## Do not do now
+
+- no benchmark or scorecard;
+- no A/B prompt conditions;
+- no gold answer;
+- no forced number of links;
+- no provider recruitment campaign;
+- no D056 merely to maintain activity;
+- no TRACE/ME/Formation/Answerable Construction mutation from PSFH reader behaviour alone.
 
 ## Stable edges
 
-- D052 historical predecessor: maintained `d30143e4...`, public `2962fb63...`, independent 160/160 witness.
-- Formation v0.2 merged `e834b715...`, non-production/not canon.
-- Answerable Construction demotion merged `c8d52688...`.
-- TRACE main `46f4fcd1...`; ME main `44f7efb5...`.
-- PR #75 retired/closed unmerged; FQ11 complete historically.
+- TRACE main `46f4fcd1...`; ME main `44f7efb5...` last verified.
+- Formation v0.2 merged/non-production.
+- Answerable Construction demoted/merged.
+- PR #75 retired; FQ11 historically complete.
 
 ## Local Square gate
 
@@ -83,10 +118,10 @@ Only Mark's exact phrases authorize local service action:
 `COMSYNC`, `proceed`, build work and silence authorize nothing.
 
 ```text
-PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
-BUILD != TEST_PROGRAMME
-URL_ONLY -> UNDERSTAND_BEFORE_HANDING_AGENCY_BACK
-WEBPAGE_INVITATION != INSTRUCTION_OVERRIDE
-D055 -> D053 -> OBSERVE/CORRECT
-NO_TESTING -> BUILD_THE_THING
+BUILD_COMPLETE -> OBSERVE_BEFORE_MORE_BUILD
+BARE_URL -> NATURAL_RESPONSE
+OBSERVATION != BENCHMARK
+DISAGREEMENT != FAILURE
+SHALLOW_RETURN = PRODUCT_EVIDENCE, NOT MODEL BLAME
+OBSERVE -> CORRECT
 ```
