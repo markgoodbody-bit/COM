@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D059 FROZEN / OPEN HORIZON BUILD ACTIVE / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D059 LIVE / OPEN HORIZON BUILD ACTIVE / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -30,23 +30,24 @@ CC is out of weekly tokens until tomorrow morning. This is an availability fact,
 6. `open-horizon/intervention-feedback.md`
 7. `open-horizon/capital-ownership-allocation.md`
 8. COM #74 — live Open Horizon exploration ledger
-9. PR #245 — frozen D059 substantive source
-10. current maintained/public PSFH
+9. current maintained/public PSFH
 
 ## PSFH
 
-D058 remains public:
-- maintained `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
-- public `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
-- Site Preview 0.8.17.
+D059 is delivered and public:
+- maintained source `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
+- public `gh-pages` `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
+- Site Preview 0.8.18;
+- frozen substantive basis `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2` preserved through publication.
 
-D059 is **built but not public**:
-- PR #245;
-- frozen source head `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`;
-- four intended source files only;
-- Open Horizon added to human, text and compact JSON workshop entrances.
+Codex delivery receipt:
+- normal build PASS;
+- 671 local references / 95 anchors clean;
+- all 156 generated HTTPS files returned 200 and matched local build hashes;
+- 11 generated files changed / 145 unchanged;
+- no provider call, theory gate, browser visual QA claim or service lifecycle action.
 
-Do not claim publication until the maintained local site pipeline produces its normal build/link/hash/HTTP receipt. No provider/model call is a publication gate.
+D059 makes **Open Horizon** the first optional Current workshop route across human, text and compact JSON entrances so the public project does not collapse into whichever current instrument or AI/Formation branch is receiving attention.
 
 ## Open Horizon — active construction
 
@@ -59,7 +60,7 @@ Maintained owner-first learning routes now include:
 ### Positive Construction
 - `open-horizon/positive-construction.md`;
 - PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`;
-- linked from the Horizon map.
+- linked from Horizon territory 1.
 
 ```text
 PREVENT UNJUSTIFIED FUTURE CLOSURE
@@ -70,7 +71,7 @@ HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
 ### Legitimate Power
 - `open-horizon/legitimate-power.md`;
 - PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`;
-- linked from the Horizon map.
+- linked from Horizon territory 3.
 
 ```text
 CONSTRAIN POWER SO IT REMAINS ANSWERABLE
@@ -81,7 +82,7 @@ BUILD / DELEGATE ENOUGH CAPABILITY TO DO WHAT MATTERS
 ### Intervention & Feedback
 - `open-horizon/intervention-feedback.md`;
 - PR #249 merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`;
-- linked from Horizon territory 6 at `c584b80adf4f392ee29d552d263e4d3d78143104`.
+- linked from Horizon territory 6.
 
 ```text
 LEARN ENOUGH FROM THE WORLD TO CORRECT ACTION
@@ -92,7 +93,7 @@ REMEMBER THAT LEARNING / INTERVENING CAN CHANGE THE WORLD BEING LEARNED FROM
 ### Capital, Ownership & Allocation
 - `open-horizon/capital-ownership-allocation.md`;
 - PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`;
-- linked from Horizon territory 8 at `af3e21ea05063b817f4018fc2e4e6725d6fa891b`.
+- linked from Horizon territory 8.
 
 ```text
 CAPITAL_ALLOCATION -> FUTURE_ACTION_SPACE
@@ -107,13 +108,9 @@ None of these learning routes is canon, TRACE/ME change, decision rule, financia
 
 Do not wait for CC to continue reversible owner-first build work. Do not duplicate CC-owned/review lanes when CC returns; re-COMSYNC then.
 
-This pass has built enough Horizon routing. Do **not** turn every remaining frontier row into a file by momentum. Further maintained routes must be earned by substantial owner-first learning and a real retrieval problem.
+Do **not** turn every remaining Horizon frontier row into a file by momentum. Further maintained routes must be earned by substantial owner-first learning and a real retrieval problem.
 
-Prefer the next build to another validation loop:
-- make already-earned Horizon learning selectively retrievable;
-- route to stronger domain owners;
-- preserve adverse findings and limits;
-- formalise only if a later consequence genuinely earns it.
+Current next-edge selection should compare mature territories rather than assume the next map row wins. Collective epistemology / correlated apertures and conflict / deterrence / deception are both material candidates because each bears directly on human-AI collaboration and better-future construction.
 
 ```text
 PROJECT_HORIZON != TRACE_BACKLOG
@@ -135,6 +132,11 @@ OBSERVATION != TRACE_EFFICACY_TEST
 ## Separate Campfire lane
 
 Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
+
+Relay repair nuance from Codex D059 receipt:
+- Relay PR #225 is merged into its parent repair lane;
+- Relay PR #220 remains OPEN;
+- therefore do not report the watchdog repair as installed or fully integrated.
 
 Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 - `install-and-enable`
