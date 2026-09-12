@@ -5,6 +5,10 @@ import { CAMP_FIRE } from '../scripts/camp-fire.mjs';
 import { artworkSrcSet, HOMER_SIZES } from '../scripts/artwork.mjs';
 const trace = "https://github.com/markgoodbody-bit/TRACE";
 const me = "https://github.com/markgoodbody-bit/mechanical-ethics";
+const formation = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/README.md";
+const formationV02 = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/formation_environment_v0_2/README.md";
+const reciprocalFormation = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/reciprocal_formation/README.md";
+const answerableConstruction = "https://github.com/markgoodbody-bit/COM/blob/main/answerable-construction/README.md";
 const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1440);
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
@@ -66,11 +70,19 @@ export default function Home() {
             <a href="#step-story">Read the small story</a>
             <a href="/works/">Spend time with the art</a>
             <a href="#reading">Read the work and its sources</a>
+            <a href="#current-work">See what is being built now</a>
             <a href="/explore/challenge.html">Challenge or disagree</a>
             <a href="#step-leave">Not now</a>
           </nav>
           <div className="project-parts">
             <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
+            <details id="current-work" className="current-work">
+              <summary>Current workshop — optional work in progress</summary>
+              <p><a href={formation}>Formation Under Uncertainty</a> asks how human–AI relationships and surrounding arrangements can develop as capability changes without turning competence into sovereignty or challenge into disobedience. It is working, non-production material: not canon and not an alignment solution.</p>
+              <p><a href={formationV02}>Formation Environment v0.2</a> makes correction windows and affected-participant scope more explicit. <a href={reciprocalFormation}>Reciprocal Formation</a> develops the relationship side: bounded initiative, trainer correction, dependence, recovery, care and power. Neither is a personhood claim or a proof that care has been internalised.</p>
+              <p><a href={answerableConstruction}>Answerable Construction</a> is preserved as synthesis, history and an open question after stronger neighbouring work cut down its contribution claim. It is not an established standalone layer.</p>
+              <p>These are optional routes into the live workshop, not prerequisites for TRACE, Mechanical Ethics or this site. They may change, shrink or disappear as the project learns.</p>
+            </details>
             <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement.</p>
           </div>
         </section>
