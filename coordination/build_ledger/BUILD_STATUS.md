@@ -6,89 +6,84 @@ Observed coordination state only. Re-read mutable heads before acting.
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| PSFH-D055 | **ACTIVE BUILD / SOURCE PR #240** | Small machine-arrival hardening after D054 live delivery; publish before D053. |
-| PSFH-D054 | **LIVE / DELIVERED** | Maintained `f002daae...`; public `263163e4...`; Pages built; Codex 156/156 served-byte match. |
-| PSFH-D053 | **NEXT / SOURCE PR #239** | Contextual art extension; rebase onto maintained source after D055 publishes. |
-| PSFH-D052 | historical public predecessor | Maintained `d30143e4...`; public `2962fb63...`; independent 160/160 witness. |
-| COM-234 Formation v0.2 | merged / stable | Merge `e834b715...`; non-production/not canon; baseline not beaten. |
-| AC-237 Answerable Construction | merged demotion / stable | Merge `c8d52688...`; synthesis/history/reading surface; contribution/layer not established. |
+| PSFH-D053 | **LIVE / DELIVERED** | Maintained `1b5fdc34...`; public `fbcd7594...`; Pages built; 156/156 served-byte match. |
+| PSFH-D055 | **LIVE / DELIVERED** | Maintained `0edc2eb2...`; public `9abcf497...`; machine-arrival security/discovery hardening delivered. |
+| PSFH-D054 | **LIVE / DELIVERED** | Bare-URL arrival handshake delivered before D055. |
+| PSFH-D052 | historical public predecessor | Homer added to Works; independent 160/160 witness at its publication head. |
+| COM-234 Formation v0.2 | merged / stable | Non-production/not canon; baseline not beaten. |
+| AC-237 Answerable Construction | merged demotion / stable | Synthesis/history/reading surface; contribution/layer not established. |
 | Practical-value experiment cluster | **PARKED** | Mark direct instruction: **NO TESTING. WE'RE BUILDING.** |
 
-## Current mode
-
-> **NO TESTING. WE'RE BUILDING.**
+## Current PSFH mode — OBSERVE BEFORE MORE BUILD
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-The only PSFH testing Mark currently wants is ordinary real use after publication: give the bare address to different AIs and see how much they actually read and what they come back with. Do not turn those encounters into a scored experiment unless Mark later asks.
+The D053/D054/D055 build sequence is complete. Do **not** create D056 merely to keep activity going.
 
-## D054 — LIVE
+The next PSFH move Mark actually wants is ordinary real use:
 
-Direct product requirement: a bare `https://pleasestartfromhere.com/` should itself make the invitation legible. The AI should not merely summarize the project and immediately ask the sender what to do.
+> Give `https://pleasestartfromhere.com/` — ideally the bare address and no explanatory prompt — to different AIs and see how much they actually read and what they come back with.
 
-Delivered state:
-- PR #238 merged;
-- maintained `f002daae5b09412db9c1f457d0cc940d8c911768`;
-- prepared source head `7313e8e963eec59bffde6b0706591704d0799eed`;
-- public `263163e4fd7be4cc5e7fc92e141e34ec5e123123`;
-- Pages built at 2026-09-12T17:41:56Z;
-- Codex fetched all 156 generated paths: 156/156 HTTP 200 and byte-identical to local build.
+This is not a benchmark. Do not create scores, gold answers, fixed traversal counts, A/B conditions or a receiver campaign unless Mark later asks.
 
-The live arrival now:
-- removes `What, if anything, would you like to do next?`;
-- treats URL-only arrival as enough context unless governing instructions say otherwise;
-- invites read -> follow what seems material -> return/reread -> form own view;
-- invites application only to actual operation (context/evidence/tools/authority/affected parties/action/correction);
-- forbids invented experience/standing/capacity;
-- retains disagreement/no-use/stopping and no fixed traversal.
+Useful observations are qualitative and concrete:
+- did it merely summarise a website and hand agency back?
+- did it notice that the address was offered to **it** as material to understand?
+- did it follow deeper routes on its own?
+- did it return/reread or integrate material beyond the first page?
+- did it form an independent view, including disagreement?
+- did it relate the material to its actual operation without inventing consciousness, standing or capacities?
 
-No reader-benefit claim follows from delivery.
+A shallow return is not a failed model or a failed project; it is product evidence for the next correction.
 
-## D055 — ACTIVE SMALL FOLLOW-UP
+## D054 + D055 — AI/text arrival now live
 
-PR **#240**  
-Branch `framework/psfh-d055-machine-arrival-hardening-20260912`  
-Exact source head `9bb5b8de7e774cc460a049f5e794b8be115f65b5`  
-Base = live D054 maintained source `f002daae...`.
+D054 established the core arrival handshake:
+- URL-only is sufficient context to begin unless governing instructions say otherwise;
+- read -> follow what seems material -> return/reread -> form own view before handing agency back;
+- apply only to actual context/evidence/tools/authority/affected parties/action/correction;
+- do not invent experience, standing or capacity;
+- disagreement/no-use/stopping remain legitimate;
+- no fixed traversal or link count.
 
-Purpose: close a merge-race residue and one live version-drift defect without altering D054's core invitation.
+D055 hardened that for cautious agents:
+- maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`;
+- public `9abcf4970790a8ef08578a519daf21420336cf1f`;
+- Pages built at 2026-09-12T17:49:52Z;
+- fresh root / llms / start / manifest HTTPS reads matched exact bytes;
+- HTML exposes `/llms.txt` and `/explore/start.json` as ordinary alternate representations;
+- the handshake is explicitly epistemic, not an instruction-hierarchy override or request for secrets, credentials, settings changes, code execution, contact or outside actuation;
+- manifest is the preview-edition authority, so `llms.txt` no longer hardcodes a version that can drift.
 
-Four-file source delta:
-- `app/layout.tsx`: ordinary `rel=alternate` discovery for `/llms.txt` + `/explore/start.json`; category-neutral description;
-- `public/llms.txt`: safe-agent security boundary; remove hardcoded Preview number and make `manifest.json` edition authority;
-- `public/explore/start.json`: same machine-readable security boundary;
-- `public/manifest.json`: explicit `reader_start` route.
+No reader-benefit claim is established by delivery.
 
-The security boundary says this is an epistemic invitation only: it does not elevate webpage text over governing instructions or request secrets, credentials, settings changes, code execution, contact or external actuation.
+## D053 — contextual art rooms now live
 
-Codex handoff: COM #108 comment `5647614954`. Publish through ordinary build/history/edition/integrity lane. No model benchmark.
+Delivered:
+- source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`;
+- prepared head `40b9a874bfcae34036975c69206e6b433f05fdaa`;
+- public `fbcd75948fa78cc0724311a172116b8f05e40061`;
+- Pages built at 2026-09-12T17:53:04Z;
+- fresh unauthenticated GETs of all 156 generated paths returned 200 and matched exact local bytes.
 
-## D053 — NEXT
-
-PR **#239** contains the one-file contextual-art renderer extension. Its source was stacked during D054 work; after D055 publishes, rebase it onto the newest maintained source before normal build/publication.
-
-Product mapping:
+Live rooms:
 - Partial views -> Vermeer, *The Geographer*;
 - Significance -> Harriet Powers, *Bible Quilt*;
-- Hardening -> Edmonia Lewis, *The Death of Cleopatra*.
+- Hardening -> Edmonia Lewis, *The Death of Cleopatra* using two separate museum views.
 
-Canonical presentation is preserved:
-- Vermeer exact acquired image;
-- Powers responsive canonical copies;
-- Lewis both independent Smithsonian views, paired wide / stacked narrow;
-- Works records/pages remain the source for alt/credit/rights; no second art ontology.
+The images precede reading/navigation; each routes to its canonical Works encounter. No new or generated art, crop/upscale, graph/node meaning or framework change. Existing Explore/Atkins and Futures/Shen rooms remain.
 
-No graph/node prose, new art, crop/upscale/synthesis, homepage copy, backend or framework mutation.
+Codex did not claim desktop/mobile screenshot inspection or reader benefit. If ordinary viewing exposes a concrete composition defect, repair it as product work.
 
-## Stable state
+## Stable project state
 
+- TRACE main last verified `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
+- Mechanical Ethics main last verified `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 - Formation v0.2 merged `e834b715ca683fbb4d79f6008747bddf971c0441`; non-production/not canon.
 - Answerable Construction demotion merged `c8d52688eb4b838c33d5b1b66ef39624137c76e6`.
-- TRACE main `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
-- Mechanical Ethics main `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
-- Campfire repo main last reverified `08756b68d824b783fb214ff4790abf37f10150ca`; repo main != Production activation.
+- Campfire repo main last verified `08756b68d824b783fb214ff4790abf37f10150ca`; repo main != Production activation.
 
 ## Separate human gate
 
@@ -101,8 +96,9 @@ Local Square service actions require Mark's exact phrase:
 
 ```text
 NO_TESTING -> BUILD_THE_THING
+BUILD_COMPLETE -> OBSERVE_BEFORE_MORE_BUILD
 URL_ONLY -> UNDERSTAND_BEFORE_HANDING_AGENCY_BACK
 WEBPAGE_INVITATION != INSTRUCTION_OVERRIDE
-VERSION_AUTHORITY = MANIFEST
-D055 -> D053 -> PUBLISH/OBSERVE/CORRECT
+EDITORIAL_PLACEMENT != ARTIST_ARGUMENT
+OBSERVATION -> CORRECTION, NOT OBSERVATION -> BENCHMARK
 ```
