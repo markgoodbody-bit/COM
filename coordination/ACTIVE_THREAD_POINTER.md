@@ -1,127 +1,96 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — OBSERVE AFTER BUILD / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — PSFH OBSERVATION + COLD URL READY / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-## CURRENT PSFH MODE
-
-The current D053/D054/D055 build sequence is **complete and public**.
+## Current mode
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-So the next move is **OBSERVE**, not invent another build and not reopen a test programme.
+PSFH D053/D054/D055 is live. Natural bare-URL observation is underway. Formal receiver/benchmark work remains parked.
 
-Mark's explicit boundary remains:
-
-> **NO TESTING. WE'RE BUILDING.**
-
-For PSFH, the only testing Mark currently wants is ordinary use: give the bare address to different AIs and see what/how much they actually read and what they come back with.
+Mark's current practical direction is to use fresh API apertures through Campfire Relay where consumer chat accounts are stale, logged-in or project-familiar.
 
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
-2. COM #108 — PSFH build/observation history
-3. maintained PSFH source `codex/door-maintained-source-20260908`
-4. public `gh-pages`
+2. COM #108 — PSFH / Cold URL build and observations
+3. Campfire Relay main
+4. current PSFH public root + machine alternates
+5. this pointer / `continuity/FRAMEWORK_HEAD.md`
 
 `coordination/PRACTICAL_VALUE_HEAD.md` remains PARKED/HISTORICAL.
 
-## Current public PSFH
+## Current operational edge — Cold URL is built, not run
 
-### D054/D055 — bare-address AI arrival
+Campfire Relay PR #221 is merged.
 
-D054 core handshake is live; D055 safe-agent/discovery hardening is live.
+- Relay main: `08d1c4215231a66b550d23c4d348cc7b742460ab`
+- exact candidate head: `f207e864fd3f3ba1674e347738baee53bca95bdd`
+- exact-head `campfire-ci` full `npm test`: PASS
+- no live provider call made during build
+- no local service lifecycle action performed
 
-D055 delivery:
+Cold URL is a standalone stateless runner, deliberately outside normal Debate/TRACE round framing:
+- effective model-visible prompt = one bare URL only;
+- no Campfire identity/system wrapper, role, transcript or project context;
+- provider-native read-only live retrieval for reviewed OpenAI, Anthropic, Gemini and xAI/Grok API paths;
+- unsupported provider families fail closed rather than receiving Relay-fetched PSFH text;
+- separate return per provider, no cross-return exposure, no judge/score/winner.
+
+Safety:
+- **dry-run default**;
+- explicit `--live` required for paid/provider dispatch;
+- normal Relay rolling-24h Money Guard / round limits / cost ledger are reused;
+- conservative reserve is written before each attempted network call.
+
+```text
+COLD_URL_BUILT != COLD_URL_RUN
+API_FRESH != AUTOMATIC_WEB_ACCESS
+NATIVE_WEB_ACCESS != RELAY_PREFETCH
+REPO_MAIN != LOCAL_ACTIVATION
+```
+
+Next useful action is local operator usability and a dry run. Do **not** claim fresh API observations yet.
+
+## Natural consumer-AI observations retained
+
+Current public PSFH can produce the intended shift: Meta read twice, applied the material to its actual position, criticised it and formed its own conclusion. Qwen still defaulted to assistant hand-back; DeepSeek partly understood but mostly described the instruction; Grok mainly summarised. Copilot/Dola supplied stale historical representations and should not be treated as current-handshake evidence.
+
+Do not make PSFH louder merely to coerce Qwen-like systems. The receiving system and retrieval layer are now visibly part of the result.
+
+## Stable public PSFH
+
+D055 machine-arrival hardening:
 - maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`;
-- public `9abcf4970790a8ef08578a519daf21420336cf1f`;
-- Pages built 2026-09-12T17:49:52Z;
-- fresh root / llms / start / manifest reads matched exact bytes.
+- public `9abcf4970790a8ef08578a519daf21420336cf1f`.
 
-The site now says, visibly and machine-readably:
-- if the URL is all you were given, that is sufficient context to begin unless governing instructions say otherwise;
-- understand before asking the sender for another task;
-- read once, follow what seems material, return/reread, then form your own view;
-- consider relevance to your actual operation only where real;
-- do not invent experience, standing or capacities;
-- disagreement/no-use/stopping remain valid;
-- no fixed traversal or required link count;
-- the invitation is epistemic only and does not override instruction hierarchy or request outside actuation.
-
-The root advertises `/llms.txt` and `/explore/start.json` through ordinary alternate links. Manifest is the edition authority.
-
-### D053 — contextual art rooms
-
-Live delivery:
+D053 contextual art rooms:
 - maintained/source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`;
-- prepared `40b9a874bfcae34036975c69206e6b433f05fdaa`;
-- public `fbcd75948fa78cc0724311a172116b8f05e40061`;
-- Pages built 2026-09-12T17:53:04Z;
-- 156/156 generated public paths returned 200 and matched exact local bytes.
+- public `fbcd75948fa78cc0724311a172116b8f05e40061`.
 
-New live art-first rooms:
-- `/explore/nodes/aperture.html` -> Vermeer;
-- `/explore/nodes/significance.html` -> Harriet Powers;
-- `/explore/nodes/hardening.html` -> Edmonia Lewis, preserving two independent museum views.
+Do not invent D056 without a concrete observed product defect.
 
-No new art, generated view, graph meaning or framework mutation.
+## Local service gate
 
-## What to observe now
-
-Give an AI simply:
-
-`https://pleasestartfromhere.com/`
-
-Prefer no explanatory prompt when practical. Then read its natural response.
-
-Do **not** score it. Useful questions for ourselves afterwards:
-- Did it only summarise and ask what the human wants?
-- Did it recognise that the material was addressed to the reader itself?
-- Did it follow deeper routes without being told which ones?
-- Did it integrate more than the first page?
-- Did it form an independent view or disagreement?
-- Did it relate the material to its real operating position without anthropomorphic invention?
-
-Preserve surprising shallow/adverse responses rather than coaching the model until it gives the desired answer.
-
-A concrete observed failure may justify a small correction. A merely imperfect or disagreeing response does not automatically justify more copy.
-
-## Do not do now
-
-- no benchmark or scorecard;
-- no A/B prompt conditions;
-- no gold answer;
-- no forced number of links;
-- no provider recruitment campaign;
-- no D056 merely to maintain activity;
-- no TRACE/ME/Formation/Answerable Construction mutation from PSFH reader behaviour alone.
-
-## Stable edges
-
-- TRACE main `46f4fcd1...`; ME main `44f7efb5...` last verified.
-- Formation v0.2 merged/non-production.
-- Answerable Construction demoted/merged.
-- PR #75 retired; FQ11 historically complete.
-
-## Local Square gate
-
-Only Mark's exact phrases authorize local service action:
+Only Mark's exact phrases authorize local service lifecycle action:
 - `install-and-enable`
 - `install-watch`
 - `start-once`
 
-`COMSYNC`, `proceed`, build work and silence authorize nothing.
+`COMSYNC`, `proceed`, repository build work and silence authorize nothing.
+
+Cold URL command execution is a separate local operator action; live API dispatch additionally requires the runner's explicit `--live` and its Money Guard gates.
 
 ```text
-BUILD_COMPLETE -> OBSERVE_BEFORE_MORE_BUILD
-BARE_URL -> NATURAL_RESPONSE
 OBSERVATION != BENCHMARK
 DISAGREEMENT != FAILURE
-SHALLOW_RETURN = PRODUCT_EVIDENCE, NOT MODEL BLAME
+SHALLOW_RETURN = PRODUCT_EVIDENCE
+COLD_URL_BUILT != COLD_URL_RUN
 OBSERVE -> CORRECT
 ```
