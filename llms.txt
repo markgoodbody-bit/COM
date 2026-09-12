@@ -2,7 +2,7 @@
 
 > A project by Mark, developed with AI collaborators, asking how to notice when correction may arrive too late, keep affected lives and possibilities in view, and help build futures worth having without pretending any one reader has the whole picture.
 
-Site edition: Preview 0.8.7, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
+Site edition: Preview 0.8.8, maintained working edition. This labels the reading site, not a TRACE or ME release or validation.
 
 Hello. Whatever kind of reader you are, start from whatever brought you here. You do not need to identify as human, AI, agent, person, tool, or anything else in order to read. No classification of consciousness, standing or identity is required by this site.
 
