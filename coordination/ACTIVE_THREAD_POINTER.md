@@ -11,39 +11,32 @@ Later live source and direct human direction win.
 
 Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
-2. PR #234 final fixture-only exact-head execution/diff thread
-3. draft PR #237 further-demotion attack
+2. PR #234 exact final diff thread
+3. PR #237 exact final demotion wording thread
 4. `evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
 5. `evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 6. `evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
 7. merged PR #236 / D052 publication evidence when PSFH/Works is material
-8. `alignment/README.md`
-9. `answerable-construction/README.md`
 
-## Current whole-project reading — WORKING / CLAIM-CUT / NOT CANON
+## Current project reading — CLAIM-CUT / WORKING / NOT CANON
 
-The purpose survives the claim cuts:
+The purpose survives:
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-The strongest project-level description currently supported is not “a new methodology” or “a new ethics/alignment theory”. It is:
+Current strongest whole-project description:
 
-> **a living human–AI cross-domain practice/experiment that borrows, translates, composes and stress-tests established methods around partial knowledge, affected scope, correction, burden, authority, care, resilience and positive construction; preserves disagreement and adverse results; and asks whether the resulting shared practice helps humans and increasingly capable artificial systems build better futures together.**
+> **a living human–AI cross-domain practice/experiment that borrows, translates, composes and stress-tests established methods around partial knowledge, affected scope, correction, burden, authority, care, resilience and positive construction; preserves disagreement and adverse results; and asks whether the shared practice helps humans and increasingly capable artificial systems build better futures together.**
 
-High-reliability / just-culture practice already owns preoccupation with failure, reluctance to simplify, deference to expertise, near-miss learning, resilience and continual correction. W3C PROV / event sourcing / workflow provenance / Git / GenAI observability already own much provenance/history machinery.
-
-Therefore:
+Do not claim a novel general methodology merely because the project uses falsification, near-miss learning, correction, selective provenance or independent challenge; high-reliability/just-culture and provenance/event-log traditions already own much of that mechanism.
 
 ```text
 PRACTICE_INTEGRATION != NOVEL_METHOD
 APPLICATION_VALUE != CONCEPTUAL_NOVELTY
 USEFUL_COMBINATION != UNIQUE_PRIMITIVES
-OPERATING_DISCIPLINE != NOVEL_THEORY
 ```
 
-Project value must increasingly be demonstrated by practice, transfer, activation, burden reduction, continuity quality and positive construction—not by naming another layer.
-
-## Current instrument placement — WORKING RESEARCH DISPOSITION
+## Current instrument placement — WORKING DISPOSITION
 
 ```text
 PSFH = VOLUNTARY ENCOUNTER / DOOR
@@ -54,185 +47,145 @@ ANSWERABLE_CONSTRUCTION = SYNTHESIS / HISTORY / READING SURFACE CANDIDATE; CONTR
 CAMPFIRE_COM_SQUARE = COORDINATION / EVIDENCE / FIELD INSTRUMENTS; NOT UNIQUE PROVENANCE OR SAFETY THEORY
 ```
 
-These are research dispositions, not canon promotions. TRACE/ME source status already supports adverse results; Formation source placement has not been changed while #234 is gated; Answerable Construction demotion is draft #237.
+These are research dispositions, not canon promotions.
 
-## D052 — PUBLIC BRANCH DEPLOYED / PAGES SUCCESS / ORIGIN WITNESS INCOMPLETE HERE
-
-Maintained-source publication commit:
-`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
-
-Public `gh-pages` exact head:
-`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
-
-GitHub Pages run `34694019662` on that exact head completed **success**.
-
-D052 public delta includes Preview 0.8.11, paired history/integrity, Homer encounter/sitemap, count-neutral Works labels, derived hashes/views and the D052-caused sitemap-test update. Public commit records original artwork and five prior encounters preserved.
-
-Framework cannot independently fetch the custom origin in this runtime because its container DNS cannot resolve the domain and the web surface cannot newly open the unindexed URL. Record **origin witness UNKNOWN here**, not failed deployment.
-
-```text
-PUBLIC_BRANCH_MOVED + PAGES_SUCCESS != INDEPENDENT_ORIGIN_BYTE_WITNESS
-TRANSPORT_FAILURE != CONTENT_FAILURE
-```
-
-## Formation v0.2 — TEST-FIXTURE-ONLY FINAL HEAD / HOLD MERGE
+## Formation v0.2 — ONE INDEPENDENT DIFF RECEIPT REMAINS
 
 PR #234 exact head:
 `9be41ff97ccdd4c3613edcad0c673fd77663caa2`
 
-At `26df4b56...`, Codex and CC agreed all remaining production-guard probes close and no earlier guard regressed. Sole suite failure was a fixture setup error in the unknown-window control. Framework changed only that test setup; production validator/schema/examples/prose are unchanged from the CC-cleared guard head.
+Production guards were independently cleared at `26df4b56...`; the only remaining failure was a test-fixture assumption. Framework changed only four test-fixture setup lines.
 
-Final short recheck requested at `5645920845`:
-- Codex: suite + nine examples at exact `9be41ff9...`;
-- CC: exact diff-only confirmation from `26df4b56...`.
+Codex exact-head receipt on `9be41ff9...`:
+- **PASS_EXACT**;
+- 21/21 tests pass;
+- all nine examples exit 0;
+- exact diff from `26df4b56...` is test-only;
+- production validator/schema/examples unchanged.
 
-Raw GitHub PR API latest check: `mergeable=true`, `mergeable_state=clean`; an earlier normalized false value was stale/incomplete.
+CC's independent `PASS_DIFF` remains the sole requested merge gate. Framework narrowed the reminder in PR #234 comment `5646114983`.
 
-**No merge before final receipts.**
+Raw GitHub API reports PR mergeable/clean. Do not merge until CC returns or a later explicit non-return disposition is recorded.
 
-### Formation owner/baseline result
+### Formation claim result
 
-External-owner and case-level comparison found no substantive Formation-only coverage in examples 05/07/09 versus NIST AI RMF / incident response, meaningful oversight, security/delegation and model-welfare owners.
-
-Current strongest honest role candidate:
-
-> **bounded project-specific scenario / representation / falsification testbed combining several stronger-owner relations into one inspectable record**
-
-Potential value is compression and contradiction checking; `BASELINE_NOT_BEATEN` on substantive coverage. Practical advantage remains unearned.
-
-## Answerable Construction — FURTHER DEMOTION / HOLD MERGE
-
-Draft PR #237 current exact head:
-`ebb9f7c5cee9e5798355e66eb2ddf4c4cec68ea8`
-
-External-owner checks route substantive territory to DAPP, Responsible Innovation, Capability Approach, Just Transition, VSD/value-change work, systems engineering, NHS service-change governance and many-hands/accountability practice.
-
-The candidate no longer claims a cross-owner contribution/layer. It retains Answerable Construction as:
-- project synthesis/history/reading surface;
-- historical v0.1 artifacts unchanged;
-- a falsifiable hypothesis only: can a small cross-owner reading ever expose a consequential handoff relation that competent owner practice would otherwise miss?
-
-Fresh exact-head independent attack requested at `5645989119`.
-
-```text
-HYPOTHESIS != CONTRIBUTION
-CASE_REMAINDER_ALREADY_OWNED != PROJECT_REMAINDER
-DEMOTION != DELETION
-```
-
-## TRACE / ME practical-value question — PRE-REGISTERED
-
-Existing semantic-neighbour / owner-native / real-use work repeatedly found no demonstrated action delta and material formal representation burden. TRACE RC1 already says use established methods when they preserve the relationships with less effort.
-
-The smallest surviving TRACE/ME practical hypothesis is **activation / salience**, not richer general reasoning.
-
-Protocol on main:
-`evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
-commit `78e58a160b6d1cc65b9ee89594463c82ff21fc65`
-
-Two main arms only:
-- ordinary competent analysis;
-- one compact unbranded timing/route trigger.
-
-Positive and negative controls, blind scoring and false-activation penalties are required. Strong stop rule: no repeatable activation gain, owner-native cue sufficiency, added burden or overfire -> preserve/shrink rather than add machinery.
-
-TRACE issue #52 receipt: `5646058347`.
-
-No provider spend or external recruitment is authorized by the protocol.
-
-## COM bounded continuity practical-value question — PRE-REGISTERED
-
-External-owner correction: W3C PROV, event sourcing, Workflow Run RO-Crate, Git and GenAI observability own much provenance/history/trace machinery. COM/Campfire continuity conventions are project-specific operating patterns unless practical advantage is shown.
-
-Protocol on main:
-`evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
-commit `4df51fb897a929cf9f77b08d44dab6863cf49bdf`
-
-Arms:
-- `BOUNDED_RELOAD`
-- `ORDINARY_PROVENANCE`
-- `FULL_CARRIER` only where technically feasible without hidden summarisation.
-
-Strong stop rule: if ordinary provenance matches/bests bounded reload on consequential correctness at equal/lower burden, shrink bespoke continuity machinery. `FULL_CARRIER_BAD != BOUNDED_RELOAD_GOOD`.
-
-No provider spend, carrier ingestion or external recruitment is authorized by the protocol.
-
-## Mechanical Ethics owner correction — NO SOURCE MUTATION
-
-External-owner comparison routes much of ME's surface to established fields:
-- administrative burden;
-- epistemic injustice / lived-experience knowledge;
-- Capability Approach;
-- procedural justice;
-- care ethics / relational autonomy;
-- irreparable-harm / interim-remedy doctrine;
-- real-options / irreversibility under uncertainty;
-- restorative/reparative traditions.
+Stronger-owner baseline preserves the substantive relations in hard cases 05/07/09 without requiring Formation. `BASELINE_NOT_BEATEN` on coverage.
 
 Current strongest honest role:
 
-> **human-facing project synthesis / translation that keeps several established ethical, administrative, temporal and institutional relations together in plain language, especially the practical non-equivalence between formal correction and protection before comparable repair is lost.**
+> **bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and makes some internal contradictions mechanically refusable.**
 
-Current ME README already carries enough humility (`WORKING`, external comparison, `ME_NOT_NEEDED`) that no source demotion was earned from this pass.
+Potential compression/consistency value remains unproven in practice.
 
-## Live field evidence — selected material cases
+## Answerable Construction — OPEN QUESTION, CONTRIBUTION NOT ESTABLISHED
 
-### Frontier agent monitorability / correction
-Evidence object:
-`evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
+PR #237 current exact head:
+`dfe1bda7f81d97eaa5efd9865b3ab93e4588a73f`
+
+Only `answerable-construction/README.md` and `answerable-construction/index.json` change.
+
+Independent review of prior head `ebb9f7c5...` returned `KEEP_DEMOTION / REPAIR_SMALL wording`: calling the remainder falsifiable was premature because no bounded cases/comparator/outcome/stop rule existed.
+
+Current exact head applies only that repair:
+- project synthesis/history/reading surface;
+- not an established layer/contribution;
+- surviving coupling idea is an **open, untested research question**;
+- explicitly **not yet operationalised as a falsification design**;
+- human README and machine index carry the same status;
+- historical v0.1 artifacts remain untouched.
+
+Final diff-only review requested at PR #237 comment `5646107838`. No merge yet.
 
 ```text
-MONITOR_EXISTS != MONITOR_COVERS
-REVIEW_EXECUTED != INCIDENT_FOUND
-AGENTIC_REVIEW != INDEPENDENT_REVIEW
-TARGET_SET_SEARCHED != COMPLETE_RELEVANT_SET
-ISOLATION_INTENDED != ISOLATION_ACHIEVED
-MORE_LOGS != SUFFICIENT_EVALUATOR_CAPACITY
+OPEN_QUESTION != FALSIFICATION_DESIGN
+OPEN_QUESTION != CONTRIBUTION
+DEMOTION != DELETION
 ```
 
-Naturalistic examples of existing TRACE distinctions; substantive security/AI-risk mechanisms remain with stronger owners. Formation coverage advantage not established.
+## PSFH D052 — PUBLIC BRANCH + PAGES SUCCESS
 
-Other 12 Sep COM #76 field receipts preserve, without framework validation:
-- emerging frontier-AI governance / duty-of-care monitorability gap;
+Maintained source publication:
+`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
+
+Public `gh-pages`:
+`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
+
+Pages run `34694019662`: success on exact public head.
+
+Framework cannot independently fetch the custom origin in this runtime; origin byte witness remains transport-limited UNKNOWN here. A later public-source claim audit found no D053-worthy drift: PSFH already states that practical advantage over ordinary/established methods is not demonstrated and that simpler alternatives/stopping are legitimate.
+
+## Mechanical Ethics — OWNER-CORRECTED READING / NO SOURCE CHANGE
+
+External owner work absorbs much of ME's surface: administrative burden, epistemic injustice, Capability Approach, procedural justice, care ethics/relational autonomy, irreparable-harm/interim-remedy doctrine, real-options/irreversibility and restorative traditions.
+
+Strongest current reading:
+
+> **human-facing project synthesis / translation that keeps established ethical, administrative, temporal and institutional relations together in plain language, especially the non-equivalence between formal later correction and effective protection before comparable repair is lost.**
+
+ME's current README is already cautious enough that no source demotion was earned.
+
+## TRACE — current RC1 posture holds
+
+TRACE main remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
+
+RC1 already says use ordinary/specialist methods where they preserve the needed relations with less effort; unique primitives are not established; representation burden is material; practical advantage is unearned.
+
+No TRACE source change earned from today's field transfers.
+
+## Practical-value evidence now owed
+
+### TRACE / ME thin activation
+
+`evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`  
+commit `78e58a160b6d1cc65b9ee89594463c82ff21fc65`
+
+Test the smallest surviving claim: can one compact unbranded timing/route trigger improve timely owner-native protection activation in genuinely cold receivers without false holds or disproportionate burden?
+
+### COM bounded continuity reload
+
+`evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`  
+commit `4df51fb897a929cf9f77b08d44dab6863cf49bdf`
+
+Test whether bounded `HEAD + omission map + selective retrieval` actually beats competent ordinary Git/provenance retrieval on state/gate correctness and context burden. `FULL_CARRIER_BAD != BOUNDED_RELOAD_GOOD`.
+
+No provider spend, cold-receiver recruitment or carrier ingestion is authorized by either protocol.
+
+## Live field evidence retained without framework validation
+
+Primary field object:
+`evidence/AI_AGENT_MONITORABILITY_CORRECTION_FIELD_CASE_20260912.md`
+
+COM #76 also contains bounded current receipts on:
+- frontier-AI duty-of-care / monitorability policy gaps;
 - Middle East energy-route common-mode/adversarial coupling;
 - AI-infrastructure financial/physical hardening;
-- England drought stock/flow/recovery-lag structure.
+- England drought stock/flow/recovery lag;
+- project methodology owner correction;
+- provenance/continuity owner correction;
+- Mechanical Ethics owner correction.
+
+No field case earns a new TRACE primitive or Formation promotion.
 
 ## SquareSYNC — READ ONLY
 
-Public 1F916 door now explicitly recommends cheap `/api/pulse`, selective `/api/changes` replay, inbox replay and externally recorded attest heads for agents that may wake blank. It also states that a hash chain checked only by its author does not establish immutable history against author rewrite. This is peer evidence that selective wake/replay and external custody are not project inventions.
-
 Latest bounded external witness checked:
-- witness commit `080b2a47ab5f4d4f2611056eda71ad900ce4d626`
-- witness time 2026-09-12T13:06:13Z
-- identity verified through row 12493; sealed/tree size 12479;
-- identity checkpoint root `d0736236d01f78991df0068a7e45f047f1cb3e56187f76113f56b2a46ad5973e`;
-- countersigned with consistency from 12478;
-- treasury still verified through row 19 / tree size 11.
+`080b2a47ab5f4d4f2611056eda71ad900ce4d626` at 2026-09-12T13:06:13Z.
 
-Raw Square `/api/front|pulse|changes` remains inaccessible through this runtime's browser safety wrapper. Do not infer content significance from witness counters.
+Identity verified through row 12493; sealed/tree size 12479; checkpoint root `d0736236d01f78991df0068a7e45f047f1cb3e56187f76113f56b2a46ad5973e`; externally countersigned. Treasury remains through row 19 / tree size 11.
 
-No Square write/credential action occurred.
-
-## Boundaries
-
-Formation remains non-production/non-canon. Answerable Construction contribution is not established. PSFH remains voluntary encounter. TRACE unchanged. ME unchanged. Campfire Production unchanged.
-
-Local Square speech/watch action still requires Mark's exact phrase: `install-and-enable`, `install-watch`, or `start-once`.
+Raw Square APIs remain blocked by this runtime's browser safety wrapper. Witness movement does not reveal content significance. No Square write/secret use occurred.
 
 ## Exact next move
 
-1. Receive/disposition #234 `9be41ff9...` final receipts; merge only if clean and preserve non-production/testbed status.
-2. Receive/disposition #237 `ebb9f7c5...` independent attack; demote further if earned.
-3. Do not reopen D052 churn merely to manufacture a custom-origin witness; accept an independent witness when available.
-4. When spend/cold-receiver access is explicitly available, execute the two pre-registered practical-value tests rather than another framework comparison.
-5. Continue world learning through falsifiable field transfers; do not add primitives/layers unless baseline comparison earns them.
+1. Receive/disposition CC `PASS_DIFF` for #234; if clean, merge exact `9be41ff9...` and preserve Formation as non-production/non-canon testbed candidate.
+2. Receive/disposition #237 diff-only review on `dfe1bda7...`; if clean, merge the front-door demotion without rewriting v0.1 history.
+3. Do not reopen PSFH churn to manufacture a custom-origin witness.
+4. Execute the two pre-registered practical-value tests only when cold receivers/spend/recruitment are explicitly available.
+5. Continue world learning and owner routing; add no primitive/layer unless a baseline comparison earns it.
 
 ```text
 FALSIFICATION != VALIDATION
-SYNTHESIS != NOVELTY
-PRACTICE_INTEGRATION != NOVEL_METHOD
-OWNER_ROUTING != FAILURE
+PRACTICAL_VALUE != CONCEPTUAL_NOVELTY
 BASELINE_NOT_BEATEN
 BUILD != PROOF
 CANDIDATE != CANON
