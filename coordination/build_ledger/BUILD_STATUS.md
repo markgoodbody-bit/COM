@@ -9,8 +9,9 @@ Observed coordination state only. Re-read mutable heads before acting. Later dir
 | Please Start From Here D058 | **LIVE / DELIVERED** | Maintained source `67c821d5b1f029339739a4aac1ee7af45371bfe1`; public `gh-pages` `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`; Site Preview 0.8.17. Optional Current workshop exposes Formation, Formation Environment v0.2, Reciprocal Formation and demoted Answerable Construction with status ceilings. |
 | Please Start From Here D059 | **SUBSTANTIVE SOURCE FROZEN / NOT PUBLIC** | PR #245, exact head `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`, exact D058 base `67c821d5...`; four intended files only. Open Horizon is added across human/text/JSON entrances. Local publisher/build/HTTP receipt still required before merge/publication. |
 | Open Horizon front door | **MERGED / DISCOVERABILITY ROUTE** | PR #244 merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`; `open-horizon/README.md` compresses the existing 18-territory map and owner-first use rule. Live detailed exploration remains COM #74. Not canon/backlog/TRACE schema/validation plan. |
-| Positive Construction route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`; linked from Open Horizon at `c16642161967e4fc8b1e300e98c2bb10436e47c8`. Not a TRACE/ME primitive or universal theory of flourishing. |
-| Legitimate Power route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`; linked from Open Horizon at `5009339ee7f8fe48d35ba32dac32a25cc2fc46ad`. Not an authority-clearance rule; competence, mandate, authorization, standing and sovereignty remain distinct. |
+| Positive Construction route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`; linked from Open Horizon. Not a TRACE/ME primitive or universal theory of flourishing. |
+| Legitimate Power route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`; linked from Open Horizon. Not an authority-clearance rule; competence, mandate, authorization, standing and sovereignty remain distinct. |
+| Capital, Ownership & Allocation route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`; linked from Horizon territory 8 at `af3e21ea05063b817f4018fc2e4e6725d6fa891b`. Not a project economics doctrine or financial/legal advice; preserves financing capability, risk, control and distribution distinctions. |
 | Claude Code | **TEMPORARILY UNAVAILABLE** | CC is out of weekly tokens until tomorrow morning. Availability fact only; not removed from the project and not a blocker for reversible Framework/Codex build work. |
 | Campfire Cold URL | **LIVE OBSERVATION LANE / NO SCORECARD** | Natural PSFH AI encounters may be observed. Do not turn them into TRACE/ME efficacy evidence or a provider league table. |
 | Formation Environment v0.2 | **MERGED / NON-PRODUCTION / NOT CANON** | Merge `e834b715...`; build artifact, not proof that alignment is solved. |
@@ -46,6 +47,7 @@ While D059 remains frozen, Framework continued the broader project rather than w
 
 1. `open-horizon/positive-construction.md` makes existing owner-first learning on substantive capability, commitment, commons, reserve capability and positive construction selectively retrievable.
 2. `open-horizon/legitimate-power.md` makes existing owner-first learning on mandate + capacity, differentiated authority functions, deliberation, fiduciary stewardship, delegation, entrustment and multi-scale coordination selectively retrievable.
+3. `open-horizon/capital-ownership-allocation.md` makes existing owner-first learning on capital allocation, risk-bearing, ownership/control, public de-risking, exit clocks and financing constraints selectively retrievable.
 
 These routes compress learning; they do not claim novelty, authority or formal project promotion.
 
@@ -54,13 +56,13 @@ PROJECT_HORIZON != TRACE_BACKLOG
 LEARNING_FROM_OWNER != OWNERSHIP
 USEFUL_SYNTHESIS != NEW_PRIMITIVE
 COMPETENCE != LEGITIMACY
+RISK_BEARING != SOVEREIGNTY
 BUILD != PROOF
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
 
 ## Current source anchors
 
-- COM main after Horizon linking: `5009339ee7f8fe48d35ba32dac32a25cc2fc46ad` before this coordination refresh.
 - PSFH maintained source: `67c821d5b1f029339739a4aac1ee7af45371bfe1` until D059 publishes.
 - PSFH public: `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a` until D059 publishes.
 - D059 frozen source: `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`.
