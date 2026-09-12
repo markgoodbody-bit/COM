@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.34 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.35 · 12 September 2026
+
+### D059
+
+12 September 2026 — A wider horizon for the workshop.
+
+The optional Current workshop now begins with Open Horizon, a short route into the project's broader exploration of better futures. The same link appears in the text orientation and compact JSON entrance. It leads to a maintained introduction rather than requiring readers to work through the detailed exploration ledger.
+
+Open Horizon is a discoverability map, not canon, a backlog, a TRACE schema or a validation plan. It does not claim ownership of neighbouring fields. The existing art, stories, readings and other workshop links are unchanged.
+
+Site Preview advances to 0.8.18. This widens visible discovery, not the project's demonstrated results. Previous publication 63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a remains in Git history.
 
 ### D058
 
