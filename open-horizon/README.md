@@ -35,7 +35,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | **2. Collective creation / commons / public goods** | How plural entities build goods none can produce alone; legitimate collective commitments; commons; coordination without a single sovereign chooser. |
 | **3. [Legitimate power](legitimate-power.md)** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
 | **4. [Formation / becoming / preference development](../alignment/README.md)** | Education, mentorship, culture, habit, rehabilitation, preference formation and mutual human–AI development without treating formation as ownership. Current Formation work is non-production, not canon and not an alignment solution. |
-| **5. Multi-scale emergence** | Individual → group → institution → market → state → ecosystem; local benefit producing global harm; cascades, tipping points and distributed responsibility. |
+| **5. [Multi-scale emergence](multiscale-emergence.md)** | Individual → group → institution → market → state → ecosystem; local benefit producing global harm; cascades, tipping points and distributed responsibility. |
 | **6. [Intervention changes observation](intervention-feedback.md)** | Measurement and policy feedback; adaptive systems; interventions that alter trust, behaviour, ecology or what evidence becomes visible next. |
 | **7. [Representation / unresolved standing](representation-standing.md)** | Infants, impaired humans, animals, ecosystems, future generations, lost scopes and emerging artificial entities; proxy representation without protection becoming possession. |
 | **8. [Scarcity / allocation / ownership / economics](capital-ownership-allocation.md)** | Markets, incentives, rent, extraction, capital allocation, wealth concentration, debt, insurance, taxation, externalities and the possibilities economic structures create or foreclose. |
@@ -60,9 +60,9 @@ For any territory:
 EXPLORE FREELY
 -> LEARN FROM STRONGER OWNERS
 -> CREDIT THEM
--> CONNECT ACROSS DOMAINS
--> FIND CONSEQUENCE
--> ONLY THEN ASK WHETHER DURABLE PROJECT MACHINERY SHOULD CHANGE
+-> CONNECT ACROSS_DOMAINS
+-> FIND_CONSEQUENCE
+-> ONLY_THEN_ASK_WHETHER_DURABLE_PROJECT_MACHINERY_SHOULD_CHANGE
 ```
 
 An exploration may end as understanding, a better external route, a story, a design choice, a correction to the project, or nothing durable at all.
