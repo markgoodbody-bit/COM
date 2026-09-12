@@ -1,5 +1,15 @@
 # Campfire Door public preview
 
+## D054 arrival invitation — 12 September 2026
+
+Site Preview 0.8.12. Maintained source `f002daae5b09412db9c1f457d0cc940d8c911768`, prepared head `7313e8e963eec59bffde6b0706591704d0799eed`, Framework product candidate `ffe37610ea90db64ea5069083eb29518957d31a8` (PR238).
+
+Before: a bare-address encounter could immediately hand the task back. After: the visible root, text orientation, arrival JSON and 904-byte seed invite reading, following material routes, rereading and forming an independent view within governing instructions. Disagreement and stopping remain legitimate. No identity or authority is assigned. D053 art-room extension remains queued separately.
+
+Exactly 12 of 156 generated files change from public `2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`; 144 remain byte-identical. Art, graph readings, navigation, styles and Works retain their bytes. Source wrappers receive the paired edition update. Build succeeds; 635 local references and 82 anchors resolve; four source-view Python checks and seven selected Node checks pass. Two historical context-window assertions fail identically on D052 and D054 (155-file/seven-state expectations); they were not weakened. This is ordinary build validation, not measured reader benefit.
+
+Root: 22444 bytes, SHA-256 `a70c51efa718afbfac30038dd6aea3d84312ced68e0aeb56655a44a129da7e86`. Text orientation: 7479 bytes, SHA-256 `097a2f69b0b58b747f29b7f35b66f0f184a5612dd11cfd6788a3dc4d77765b6e`. Deployment and served-byte observations belong in the subsequent COM receipt; this entry does not assert them in advance.
+
 ## Project orientation before the journey, 11 September 2026
 
 D030 maintained source `882c9c257ff1872093c0799b42bee6f21a2b87a9`

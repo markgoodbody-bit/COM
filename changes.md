@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.28 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.29 · 12 September 2026
+
+### D054
+
+12 September 2026 — An address can be the invitation.
+
+Before, the opening could lead a reader to summarize the project and immediately ask the sender what to do. It now invites a first reading, following what seems material, and a return to the opening before forming an independent view. The same invitation appears in the text orientation, arrival JSON and compact seed.
+
+It applies only within the reader's actual role and governing instructions. Disagreement, another method and stopping remain legitimate; no identity, experience, standing or authority is assigned. There is no required link count. The seed remains under 1 KiB.
+
+Site Preview advances to 0.8.12. Artwork, reading nodes, graph, Works and navigation are unchanged. D053's contextual-art work remains queued separately. This is an editorial invitation, not evidence that readers engage more deeply. Previous publication 2962fb63253758cd046a65b4fd0eeeccdb7f3e5b remains in Git history.
 
 ### D052
 
