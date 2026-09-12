@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.19",
+  "site_edition": "0.8.20",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -71,9 +71,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "c8466f9c2c6518497e015f1ca1f0040f9f04ec2c0eb59b94ac2487ef7e455afa",
-    "change_history_input_html_sha256": "bf33d32e07095e3fe32c35ffb591112a44ddaa9e1e0d27b1c2ab85364149a764",
-    "change_history_addendum_note": "D016 through D038, D045-D060 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "771080031db093d9b7b77e4cd13edeccf14307992d05ff2f9f38a6ec07fb791d",
+    "change_history_input_html_sha256": "2dea929efccd4c17deca60d7bf58bbe44a55dddcfc91514ac12e4f3943e99f55",
+    "change_history_addendum_note": "D016 through D038, D045-D061 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -148,7 +148,7 @@
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5616897757",
       "date": "2026-09-10",
       "scope": "Optional first-five-minutes navigation. Native links and CSS work without JavaScript; the enhancement adds focus management and Back. No answer submission, account, tracking or profile. Browser history retains page positions. Reader benefit is not measured.",
-      "script_sha256": "9cf43b45b464629900ee722722331ee4bfe1b9831f99121408dcbc104b029621"
+      "script_sha256": "0e33be2d2c84c200c399089bbe5108ac641daca05c19b9b3158f92ed0817ee3c"
     },
     "human_map": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5622746591",
@@ -208,7 +208,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "78590677c44665f4a6aa254ddc36403ab68a3e7c8b646a4c640ffa3eb9f59b28",
+    "change_history_html_sha256": "cc3e61552dc8082b790e256fe8fe5748e362f99976386112c7fe548593ccac20",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

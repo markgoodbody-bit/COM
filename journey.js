@@ -11,7 +11,7 @@
   }
   function step(hash) { return target(hash)?.closest('[data-step]'); }
   function revealReference(element) {
-    for (let parent = element?.parentElement; parent; parent = parent.parentElement) {
+    for (let parent = element; parent; parent = parent.parentElement) {
       if (parent.tagName === 'DETAILS') parent.open = true;
     }
   }
