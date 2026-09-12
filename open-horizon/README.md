@@ -2,6 +2,7 @@
 
 Status: **EXPANSION MAP / DISCOVERABILITY FRONT DOOR / NOT CANON / NOT BACKLOG / NOT TRACE SCHEMA / NOT VALIDATION PLAN**  
 Maintained route: this file  
+Machine route map: [map.json](map.json) — routing metadata only, not canon  
 Live exploration ledger: [COM #74 — OPEN HORIZON](https://github.com/markgoodbody-bit/COM/issues/74)
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
