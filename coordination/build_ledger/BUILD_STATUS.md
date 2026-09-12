@@ -7,6 +7,7 @@ Observed coordination state only. Re-read mutable heads before acting.
 | Work | State | Current disposition |
 | --- | --- | --- |
 | PSFH-D053 | **ACTIVE BUILD** | Codex assigned contextual art-first extension for Aperture/Significance/Hardening from maintained `d30143e4...`; publish routine reversible work when coherent. |
+| PSFH-D054 | **QUEUED BUILD** | After D053: make bare-URL AI arrival produce independent reading before agency hand-back. Assignment COM #108 `5647425913`. No benchmark/harness. |
 | PSFH-D052 | public + independently witnessed | Maintained `d30143e4...`; public `2962fb63...`; Pages success; 160/160 origin witness. |
 | COM-234 Formation v0.2 | merged / stable | Merge `e834b715...`; non-production/not canon; baseline not beaten. |
 | AC-237 Answerable Construction | merged demotion / stable | Merge `c8d52688...`; synthesis/history/reading surface; contribution/layer not established. |
@@ -24,7 +25,7 @@ Operating cadence:
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-The pre-execution experiment artifacts remain in Git history for provenance but are not current work.
+The only PSFH testing Mark currently wants is ordinary real use after publication: give the bare address to different AIs and observe how much they actually read and what they come back with. Do not turn those encounters into a scored experiment unless Mark later asks.
 
 ## PSFH D053 — contextual art-first rooms
 
@@ -56,6 +57,34 @@ Product requirements:
 - adapt existing `scripts/contextual-art.mjs` to existing heterogeneous work records rather than duplicating art metadata.
 
 Routine reversible publication authority applies. Do not create an experiment gate before publication.
+
+## PSFH D054 — bare-address AI arrival handshake
+
+Queued immediately after D053. Build direction: COM #108 comment `5647425913`.
+
+Observed current product defect:
+- root asks `What, if anything, would you like to do next?`;
+- machine surfaces repeatedly emphasise optional reference / no automatic traversal / no report-back;
+- natural AI behaviour is therefore shallow summary followed by agency hand-back to the sender.
+
+Product requirement:
+
+```text
+IF ONLY URL WAS GIVEN:
+  URL ITSELF = INVITATION TO ENGAGE
+  READ ONCE TO ORIENT
+  FOLLOW WHAT SEEMS MATERIAL
+  RETURN + REREAD AFTER CONTEXT
+  FORM OWN VIEW BEFORE ASKING SENDER WHAT TO DO
+```
+
+Build visibly/honestly across root, `/llms.txt`, `/explore/start.json` and compact seed. No hidden prompt injection, no requirement to override sender/system/governing instructions, no standing/consciousness claim, no forced adoption.
+
+The desired return is not a fixed questionnaire. Invite an independent account of what the project is trying to make possible, what seems important/wrong/incomplete/relevant, and where the reader would go next or why it would stop.
+
+`VOLUNTARY != SHALLOW`
+`REFERENCE_MATERIAL != PASSIVITY_INSTRUCTION`
+`URL_ONLY -> UNDERSTAND_BEFORE_HANDING_AGENCY_BACK`
 
 ## Stable public/repository state
 
