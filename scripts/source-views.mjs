@@ -4,8 +4,8 @@ import path from 'node:path';
 import { SITE_EDITION } from './site-edition.mjs';
 const ORIGIN = 'https://pleasestartfromhere.com';
 export const VIEWS = [
-  { output: 'read/start.html', source: 'explore/start.json', title: 'Start: complete JSON source text', edition: 'Site Preview 0.8.12, arrival invitation (D054); not validation', sha256: 'dcf0302224c3e15ddf36a4bedd68c599111a2fbab679e37d7252ae722bde3272' },
-  { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.12, arrival invitation (D054); not validation', sha256: '097a2f69b0b58b747f29b7f35b66f0f184a5612dd11cfd6788a3dc4d77765b6e' },
+  { output: 'read/start.html', source: 'explore/start.json', title: 'Start: complete JSON source text', edition: 'Site Preview 0.8.13, arrival boundaries (D055); not validation', sha256: '6ba61ef658eb0f52e807645c546cbac30935b143f2b75ff32c4def6cebf01506' },
+  { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.13, arrival boundaries (D055); not validation', sha256: '066358669ee0e3673f184ffb1cf5a9633c6c2bd245c8902a307c800a8600c54a' },
   { output: 'read/trace-spine.html', source: 'resources/trace/TRACE-SPINE.md', title: 'TRACE compact spine: complete Markdown source text', edition: 'TRACE RC1, source 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b; not a new TRACE release', sha256: '9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999' },
   { output: 'read/me-book.html', source: 'resources/mechanical-ethics/MECHANICAL_ETHICS.md', title: 'Mechanical Ethics: complete Markdown source text', edition: 'ME v0.7.0 working candidate v0.2.4, source 44f7efb59806242fd26c572cbfbaaeaefaea2058; not a new ME release', sha256: '6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93' },
 ];
