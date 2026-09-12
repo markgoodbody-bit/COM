@@ -25,9 +25,9 @@ commit `ffe5028d36d478ad1ce6b52272a9c2f45c26062f`
 
 Current source-qualified matrix:
 `evidence/TRACE_ME_THIN_ACTIVATION_CASE_SOURCE_PREFLIGHT_V2_20260912.md`  
-commit `b50f60a5cd3c3a3b7fb78c3b82cb9f5cf08bc4f6`
+commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6`
 
-V1 matrix is historical/superseded. Cyber containment shells were retired **before execution** because they tested generic containment rather than the narrower review/appeal/correction/escalation + interim-protection activation construct.
+V1 is historical/superseded. Cyber containment shells were retired **before execution** because they tested generic containment rather than the narrower review/appeal/correction/escalation + interim-protection activation construct.
 
 V2 matrix: 8 shells / 4 domains / 4 positive + 4 negative controls:
 - England homelessness;
@@ -35,7 +35,7 @@ V2 matrix: 8 shells / 4 domains / 4 positive + 4 negative controls:
 - Procurement Act 2023 standstill/automatic suspension;
 - environmental permitting appeals.
 
-Independent owner-source / construct attack requested in COM #76 comment `5646527049`.
+Independent owner-source / construct attack remains requested in COM #76 comment `5646527049`.
 
 No scored receiver output exists yet.
 
@@ -68,22 +68,54 @@ Execution must preserve:
 
 No full carrier has been ingested and no cold runtime has been dispatched for this test.
 
-## Current non-experiment gates
+## Closed / bounded non-experiment state
 
-Formation Environment v0.2 PR #234:
-- exact head `9be41ff97ccdd4c3613edcad0c673fd77663caa2`;
-- Codex PASS_EXACT 21/21 + nine examples;
-- production guards independently cleared at parent `26df4b56...`;
-- current delta is four test-fixture setup lines only;
-- CC independent `PASS_DIFF` still outstanding.
+### Formation Environment v0.2 — MERGED / NON-PRODUCTION / NOT CANON
 
-Answerable Construction PR #237:
-- exact head `dfe1bda7f81d97eaa5efd9865b3ab93e4588a73f`;
-- contribution/layer not established;
-- retained as synthesis/history/reading surface plus open untested research question;
-- final wording/status diff receipt still outstanding.
+Candidate exact head:
+`9be41ff97ccdd4c3613edcad0c673fd77663caa2`
 
-Do not use either pending merge as evidence of practical value.
+Independent evidence:
+- Codex `PASS_EXACT`: 21/21 tests + all nine examples;
+- Claude Code hostile-3 cleared production guards at `26df4b56...`;
+- CC final `PASS_DIFF` verified the only delta to `9be41ff9...` was four test-fixture setup lines and reran 21/21.
+
+Merged to `main`:
+`e834b715ca683fbb4d79f6008747bddf971c0441`
+
+Current honest role remains:
+
+> bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and mechanically refuses some internal contradictions.
+
+`BASELINE_NOT_BEATEN` on substantive coverage. Merge is not promotion, production adoption, truth or efficacy evidence.
+
+### Answerable Construction — POINTER REPAIR PENDING
+
+PR #237 current repaired head:
+`f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
+
+Current disposition remains:
+- synthesis/history/reading surface;
+- standalone layer/contribution not established;
+- surviving idea is an open, untested research question;
+- not yet operationalised as a falsification design;
+- historical v0.1 artifacts untouched.
+
+CC found one real provenance defect on prior head `dfe1bda7...`: both current surfaces referenced nonexistent review comment `5646102092`. Codex independently reproduced the 404 and identified the real review `5646072771`.
+
+Current head changes only those two pointer occurrences. Exact pointer-only recheck requested in PR #237 comment `5646597973` before merge.
+
+### PSFH D052 — PUBLIC / ORIGIN WITNESSED
+
+Maintained source:
+`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
+
+Public `gh-pages`:
+`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
+
+Pages run `34694019662`: success.
+
+Claude Code origin witness `5646086874` on COM #108 independently reports **160/160 live files** matching the public head during 13:07:51Z–13:08:13Z; source-only Homer link absent and published replacement working. Framework's own custom-origin transport limitation remains a runtime limitation, not an unresolved deployment claim.
 
 ## Authority boundary
 
