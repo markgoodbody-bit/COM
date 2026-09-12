@@ -7,6 +7,12 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+SUPPORTED_SCHEMA_KEYS = {
+    "$schema", "title", "$defs", "$ref", "type", "additionalProperties",
+    "required", "properties", "enum", "minLength", "minItems",
+    "uniqueItems", "items",
+}
+SUPPORTED_TYPES = {"object", "array", "string", "boolean"}
 
 
 def pairs(items):
@@ -22,9 +28,61 @@ def read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"), object_pairs_hook=pairs)
 
 
+def schema_contract(rule, root, at="schema", errors=None):
+    if errors is None:
+        errors = []
+    if not isinstance(rule, dict):
+        errors.append(f"{at}: schema rule must be an object")
+        return errors
+    unknown = set(rule) - SUPPORTED_SCHEMA_KEYS
+    if unknown:
+        errors.append(f"{at}: unsupported schema keyword(s): {', '.join(sorted(unknown))}")
+    if "$ref" in rule:
+        siblings = set(rule) - {"$ref"}
+        if siblings:
+            errors.append(f"{at}: assertion/metadata siblings beside $ref are unsupported")
+        ref = rule["$ref"]
+        parts = ref.split("/") if isinstance(ref, str) else []
+        if len(parts) != 3 or parts[:2] != ["#", "$defs"] or not parts[2]:
+            errors.append(f"{at}: only exact local #/$defs/<name> references are supported")
+        elif parts[2] not in root.get("$defs", {}):
+            errors.append(f"{at}: unresolved local reference {ref}")
+        return errors
+    kind = rule.get("type")
+    if kind is not None and kind not in SUPPORTED_TYPES:
+        errors.append(f"{at}: unsupported schema type {kind!r}")
+    props = rule.get("properties")
+    if props is not None:
+        if not isinstance(props, dict):
+            errors.append(f"{at}.properties: expected object")
+        else:
+            for key, child in props.items():
+                schema_contract(child, root, f"{at}.properties.{key}", errors)
+    defs = rule.get("$defs")
+    if defs is not None:
+        if not isinstance(defs, dict):
+            errors.append(f"{at}.$defs: expected object")
+        else:
+            for key, child in defs.items():
+                schema_contract(child, root, f"{at}.$defs.{key}", errors)
+    if "items" in rule:
+        schema_contract(rule["items"], root, f"{at}.items", errors)
+    return errors
+
+
+def resolve_ref(rule, root):
+    if set(rule) != {"$ref"}:
+        raise ValueError("$ref rule has unsupported siblings")
+    ref = rule["$ref"]
+    parts = ref.split("/") if isinstance(ref, str) else []
+    if len(parts) != 3 or parts[:2] != ["#", "$defs"] or parts[2] not in root.get("$defs", {}):
+        raise ValueError("unsupported or unresolved $ref: " + repr(ref))
+    return root["$defs"][parts[2]]
+
+
 def shape(value, rule, root, at, errors):
     if "$ref" in rule:
-        return shape(value, root["$defs"][rule["$ref"].split("/")[-1]], root, at, errors)
+        return shape(value, resolve_ref(rule, root), root, at, errors)
     kind = rule.get("type")
     checks = {
         "object": isinstance(value, dict),
@@ -59,7 +117,13 @@ def shape(value, rule, root, at, errors):
             shape(item, rule.get("items", {}), root, f"{at}[{i}]", errors)
 
 
-def check_bound(bound, name, errors):
+def references_exist(refs, name, evidence_ids, errors):
+    for ref in refs:
+        if ref not in evidence_ids:
+            errors.append(f"{name}: missing evidence {ref}")
+
+
+def check_bound(bound, name, evidence_ids, errors):
     kind = bound["kind"]
     has_time = bool(bound["time_value"].strip())
     has_event = bool(bound["event"].strip())
@@ -71,11 +135,31 @@ def check_bound(bound, name, errors):
         errors.append(f"{name}: time_and_event needs both")
     elif kind == "unknown" and (has_time or has_event):
         errors.append(f"{name}: unknown must not invent time_value/event")
+    if kind != "unknown" and not bound["basis_evidence"]:
+        errors.append(f"{name}: non-unknown bound needs referenced basis evidence")
+    references_exist(bound["basis_evidence"], name, evidence_ids, errors)
+
+
+def check_definite_assessment(item, name, unknown_value, evidence_by_id, errors):
+    assessment = item["assessment"]
+    refs = item["basis_evidence"]
+    if assessment != unknown_value and not refs:
+        errors.append(f"{name}: definite assessment needs referenced evidence")
+    references_exist(refs, name, set(evidence_by_id), errors)
+    known_refs = [ref for ref in refs if ref in evidence_by_id and evidence_by_id[ref]["kind"] != "unknown"]
+    if assessment != unknown_value and refs and not known_refs:
+        errors.append(f"{name}: definite assessment cannot rest only on evidence marked unknown")
+
+
+def normalise_text(value):
+    return " ".join(value.split())
 
 
 def validate(record, previous=None):
     schema = read(HERE / "episode.schema.json")
-    errors = []
+    errors = ["schema: " + e for e in schema_contract(schema, schema)]
+    if errors:
+        return errors
     shape(record, schema, schema, "episode", errors)
     if errors:
         return errors
@@ -87,18 +171,17 @@ def validate(record, previous=None):
         if len(vals) != len(set(vals)):
             errors.append(group + ": duplicate ids")
         ids[group] = set(vals)
+    evidence_by_id = {x["id"]: x for x in record["evidence"]}
+
+    references_exist(record["authority"]["basis_evidence"], "authority", ids["evidence"], errors)
 
     for uncertainty in record["uncertainties"]:
         if uncertainty["status"] == "resolved" and not uncertainty["resolution_evidence"]:
             errors.append(uncertainty["id"] + ": resolution requires evidence")
-        for ref in uncertainty["resolution_evidence"]:
-            if ref not in ids["evidence"]:
-                errors.append(uncertainty["id"] + ": missing evidence " + ref)
+        references_exist(uncertainty["resolution_evidence"], uncertainty["id"], ids["evidence"], errors)
 
     for challenge in record["challenges"]:
-        for ref in challenge["evidence"]:
-            if ref not in ids["evidence"]:
-                errors.append(challenge["id"] + ": missing evidence " + ref)
+        references_exist(challenge["evidence"], challenge["id"], ids["evidence"], errors)
         if challenge["status"] != "open" and not challenge["disposition"].strip():
             errors.append(challenge["id"] + ": disposition missing")
 
@@ -110,14 +193,21 @@ def validate(record, previous=None):
         errors.append("ACT scope not in recorded grant (record check, not permission)")
 
     for name in ("detection", "routing", "correction", "hardening"):
-        check_bound(record["clocks"][name]["bound"], "clocks." + name, errors)
+        check_bound(record["clocks"][name]["bound"], "clocks." + name, ids["evidence"], errors)
+
+    usability = record["clocks"]["routing"]["usability"]
+    check_definite_assessment(usability, "clocks.routing.usability", "unknown", evidence_by_id, errors)
 
     window = record["clocks"]["window"]
-    if window["assessment"] in {"open", "closed"} and not window["basis_evidence"]:
-        errors.append("clocks.window: open/closed assessment needs referenced evidence")
-    for ref in window["basis_evidence"]:
-        if ref not in ids["evidence"]:
-            errors.append("clocks.window: missing evidence " + ref)
+    check_bound(window["assessment_as_of"], "clocks.window.assessment_as_of", ids["evidence"], errors)
+    check_definite_assessment(window, "clocks.window", "unknown", evidence_by_id, errors)
+    if window["assessment"] == "open" and record["clocks"]["hardening"]["status"] == "occurred":
+        errors.append("clocks.window: open contradicts occurred hardening for the same preventive_remedy")
+
+    for residue in record["residue"]:
+        references_exist(residue["repair_evidence"], residue["id"] + ".repair_evidence", ids["evidence"], errors)
+        if residue["status"] == "repaired" and not residue["repair_evidence"]:
+            errors.append(residue["id"] + ": repaired residue requires referenced evidence")
 
     if record["state"] == "closed" and not record["closure_receipt"].strip():
         errors.append("closed episode requires receipt; residue may remain")
@@ -139,8 +229,12 @@ def validate(record, previous=None):
             if old["id"] in evidence_now and evidence_now[old["id"]] != old:
                 errors.append(old["id"] + ": earlier evidence rewritten; append correction instead")
         if not set(previous["authority"]["granted_scopes"]).issuperset(record["authority"]["granted_scopes"]):
-            if record["authority"]["basis"] == previous["authority"]["basis"]:
-                errors.append("wider recorded grant needs changed authority basis, not prior success")
+            if normalise_text(record["authority"]["basis"]) == normalise_text(previous["authority"]["basis"]):
+                errors.append("wider recorded grant needs materially changed authority basis, not whitespace or prior success")
+            prior_evidence_ids = {x["id"] for x in previous["evidence"]}
+            newly_grounded = set(record["authority"]["basis_evidence"]) - prior_evidence_ids
+            if not newly_grounded:
+                errors.append("wider recorded grant needs newly represented evidence; evidence reference is traceability, not authority")
 
     return errors
 
@@ -156,7 +250,7 @@ def main():
         parser.exit(1, "INVALID REPRESENTATION: " + str(exc) + "\n")
     if errors:
         parser.exit(1, "\n".join(errors) + "\n")
-    print("STRUCTURE VALID ONLY: clocks not proven; no permission, standing, goodness or alignment verdict.")
+    print("STRUCTURE VALID ONLY: clocks/routes not proven or current; no permission, standing, goodness or alignment verdict.")
 
 
 if __name__ == "__main__":
