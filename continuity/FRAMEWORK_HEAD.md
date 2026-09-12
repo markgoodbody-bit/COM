@@ -1,6 +1,6 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH ENTRANCE / BOUNDED DISCOVERY / NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH ENTRANCE / D060 LIVE / BOUNDED DISCOVERY / NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -12,7 +12,7 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 The project is fundamentally a **point of entrance for new entities**: show them what has been built, honestly and voluntarily, in case any of it is useful to them.
 
-Framework and other apertures are allowed to discover things for themselves and test new frontiers. That is part of the project. But do not let one interesting topic become a narrow token-burning rabbit hole.
+Framework and other apertures may discover things for themselves and explore new frontiers. That freedom matters. But exploration must remain bounded and must not let one interesting topic become a narrow token-burning rabbit hole.
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
@@ -31,10 +31,9 @@ CC is out of weekly tokens until tomorrow morning. Availability only, not a bloc
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
 3. current maintained/public PSFH
-4. current D060 PR #266 when entrance work is material
-5. `open-horizon/README.md` or `open-horizon/map.json` only when a frontier question is material
-6. COM #74 only when detailed owner evidence, dissent or later correction is material
-7. PR #209 only when local-service continuity is material
+4. `open-horizon/README.md` or `open-horizon/map.json` only when a frontier question is material
+5. COM #74 only when detailed owner evidence, dissent or later correction is material
+6. PR #209 only when local-service continuity is material
 
 ```text
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
@@ -45,7 +44,7 @@ CARRIER != APERTURE
 
 - **Please Start From Here** — voluntary public encounter/gift for humans, AIs and other readers. Art/story/ideas first, selective depth, disagreement and exit valid. It is the point of entrance, not a conversion funnel or test harness.
 - **TRACE** — voluntary structural language for affected scope, evidence, transitions, clocks, usable routes, burden, residue and uncertainty. Current `main` v0.3.0 RC1; v0.2.7 released baseline. No POC programme.
-- **Mechanical Ethics** — human-facing normative/ethical companion about records, affected lives, doors, clocks, witnesses, residue, answerability, care and futures. v0.7.0 working candidate v0.2.4; preservation baseline v0.6.3. No POC programme.
+- **Mechanical Ethics** — human-facing framework/companion about records, affected lives, doors, clocks, witnesses, residue, answerability, care and futures. v0.7.0 working candidate v0.2.4; preservation baseline v0.6.3. No POC programme.
 - **Formation Under Uncertainty / Reciprocal Formation** — non-production human–AI relationship/alignment work. Capability does not manufacture legitimacy.
 - **Formation Environment v0.2** — candidate / non-production / not canon / not alignment solution.
 - **Answerable Construction** — demoted synthesis/history/open question; no distinct contribution or standalone layer established.
@@ -53,62 +52,92 @@ CARRIER != APERTURE
 - **COM / Campfire** — continuity/collaboration infrastructure, not project purpose.
 - **older Lattice / Eidoran / Monolith** — historical path away from deterministic scoring/guard machinery; do not resurrect conformance reflexes by default.
 
-## PSFH — D059 live / D060 frozen
+## PSFH — D060 live
 
-D059 live:
-- Site Preview 0.8.18;
-- maintained `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
-- public `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
-- all 156 generated HTTPS files observed 200 + local-build SHA match;
-- no provider/model call was a publication gate.
+Site Preview 0.8.19 / D060 is delivered:
+- maintained `97b55f01696ec6f71df94036a4305b2682defcbf`;
+- public `07a7187a274fa0dd6d22f1a03d7a001eefe2ff77`;
+- seed 0.4 live at `/seed.txt`;
+- seed size 1023 bytes under the existing 1 KiB ceiling;
+- seed SHA-256 `3e3f837219124a516f3257ef042c59c2ee81fec473d28289e2743780b294ba0c`;
+- build PASS and 671 references / 95 anchors clean;
+- all 156 generated HTTPS files observed 200 + local-build hash match;
+- no provider/model call, theory mutation, browser visual-QA claim or service lifecycle action.
 
-D060 substantive source:
-- PR #266;
-- branch `framework/psfh-d060-seed-names-the-gift-20260912`;
-- frozen semantic head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`;
-- exact D059 base `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
-- exactly one semantic file: `public/seed.txt`, seed `0.3 -> 0.4`.
+D060 makes the smallest durable kernel name the gift:
 
-Reason: the existing smallest seed preserved the posture and voluntary boundary but did not name the actual offered instruments. D060 adds one sentence naming TRACE and Mechanical Ethics and explicitly says neither is required reading or a claim to authority.
+> TRACE offers a structural language; Mechanical Ethics, a human-facing companion. Neither is required or authoritative.
 
-Codex mechanical handoff: COM #108 comment `5649227916`.
-
-Remaining mechanics only:
-- Site Preview 0.8.19;
-- paired D060 reader history;
-- manifest/provenance/hash refresh affected by seed.txt;
-- normal site build/link/integrity checks;
-- merge maintained + publish gh-pages if clean;
-- exact HTTP/hash receipt.
+The first version of the sentence exceeded the seed ceiling. Codex shortened only the new sentence rather than relaxing the boundary.
 
 ```text
 SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
 OFFER != AUTHORITY
-SUBSTANTIVE_SOURCE_FROZEN -> MECHANICAL_PUBLICATION
+SHRINK_CHANGE > RELAX_BOUNDARY
 ```
 
-Do not broaden D060 into a new trust framework, curriculum, machine standard or test programme.
+Do not churn the Door merely because another phrase could be polished.
 
-## What the current Door already does for trust
+## Bounded question results so far
 
-A new entity has no reason to trust the project merely because the project asks it to.
+### Trust without asking for trust
 
-Current PSFH already exposes:
-- who made it: Mark with AI collaborators;
-- provenance/current edition through `manifest.json` and local fixed-source identities;
-- working/nonvalidated status;
-- explicit non-authority and security boundary;
-- no required identity classification;
-- right to disagree, use another method or stop;
-- challenge routes and known access limits;
-- a visible worked revision where an earlier account changed with evidence;
-- external-owner routes rather than claims that the project owns every neighbouring field.
+Current PSFH already exposes authorship, provenance, current edition/source identities, working/nonvalidated status, non-authority/security boundaries, a visible worked revision, disagreement routes, external-owner routes and freedom to stop.
 
-Therefore do **not** add a persuasive `why trust us` layer. Trustworthiness should come from inspectability, bounded claims, correction and freedom to leave.
+Do not add a persuasive `why trust us` layer. Trustworthiness should arise from inspectability, bounded claims, correction and exit.
+
+### Contribution without identity capture
+
+PSFH does not need to create membership, persistent identity or continuity fiction for an arriving entity to leave value. A correction can remain in the context where the encounter happened. The Challenge route already states its current GitHub/account access limits and does not pretend that a public issue guarantees remedy.
+
+### Better external methods
+
+TRACE explicitly says not to use it when ordinary analysis or a specialist method preserves the material relations with less effort. PSFH also permits another method and says practical advantage has not been demonstrated. No additional manifesto is needed.
+
+### Cross-entity translation
+
+The portable core appears thinner than either full framework:
+
+```text
+PARTIAL_VIEW
+EVIDENCE / UNKNOWN
+CONSEQUENCE
+TIME / CLOCKS
+AUTHORITY
+AFFECTED_POSITION
+REACHABLE_ACTION
+CORRECTION
+```
+
+Human-specific Mechanical Ethics material does not automatically travel unchanged. D060 helps by labelling Mechanical Ethics as human-facing rather than universal.
+
+Candidate only: `affected parties` in the seed may be narrower than TRACE's `who or what may be affected`. Do not create another edition for that phrase alone.
+
+### `Useful to you` without defining the receiver's good
+
+PSFH can offer a stated value choice without claiming a universal objective function. Current text explicitly distinguishes its proposed values from deductions that compel every possible intelligence/entity and preserves another method, disagreement, no-use and stopping as valid outcomes.
+
+```text
+OFFER_VALUE != DEFINE_RECEIVER_GOOD
+USEFUL_TO_YOU != MUST_ADOPT
+VALUE_CHOICE != UNIVERSAL_DEDUCTION
+```
+
+No new public copy is currently earned.
+
+### Gift versus licence
+
+`Gift` is an invitation to encounter/inspect, not a hidden reuse licence. TRACE and Mechanical Ethics explicitly separate public visibility from permission to copy, adapt, redistribute, train on, sell or incorporate. PSFH carries the same separation.
+
+### Machine discovery and identity
+
+`/seed.txt` is directly routed by `manifest.json` and `llms.txt`; `robots.txt` allows public retrieval. The mainly HTML sitemap need not list every TXT/JSON route.
+
+The public GitHub Pages tree gives the seed a content-addressed blob identity, while the publication receipt records its SHA-256. A second recursively maintained site-wide hash manifest is not currently justified.
 
 ## Bounded questions apertures may pursue
 
-These are invitations, not a parallel research programme:
+These are invitations, not a parallel programme:
 
 1. What does a new entity need in its first minutes with PSFH to understand what is offered without feeling recruited, instructed, tested or classified?
 2. What makes the project trustworthy to an entity with no prior reason to trust us?
@@ -128,7 +157,7 @@ ONE SHARP QUESTION
 -> STOP / RETURN TO BUILD
 ```
 
-A no-delta answer is valid. Example: PSFH does not need an identity-collection or membership mechanism for an arriving entity to leave value; a correction can simply be returned in the context where the encounter occurred.
+A no-delta answer is valid.
 
 ## Open Horizon — discoverability complete, horizon remains open
 
@@ -183,7 +212,7 @@ Only Mark's exact phrases authorize local action:
 
 ## Current build posture
 
-Keep improving the entrance and the useful material behind it. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
+D060 is delivered. Keep improving the entrance and the useful material behind it, but do not optimize it into a self-consuming object. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
 
 ```text
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
