@@ -4,13 +4,16 @@ import { readFile, mkdtemp, cp, writeFile, readdir, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { WORKS, verifyWorks, copyWorks } from './works.mjs';
+import { WORKS, WORKS_D052, verifyWorks, copyWorks } from './works.mjs';
+
+const homerRoute = 'works/winslow-homer/index.html';
 
 test('normal output retains exactly the declared work pages, images and records', async () => {
   assert.equal(WORKS.source_review, 'dfe4b5fcfa279ef08a1d5aac5d3c3a1c59494175');
+  assert.equal(WORKS_D052.basis, 'a7c4bec814d677ee8f0b3ffe366a45368302b511');
   const source = await verifyWorks('public'), built = await verifyWorks('out');
-  assert.equal(source.size, 36);
-  assert.deepEqual(Object.keys(WORKS.files).sort(), Object.keys(WORKS.reviewed_files).sort());
+  assert.equal(source.size, 37);
+  assert.deepEqual(Object.keys(WORKS.files).filter(route => route !== homerRoute).sort(), Object.keys(WORKS.reviewed_files).sort());
   for (const route of Object.keys(WORKS.files)) if (!route.endsWith('/index.html') && route !== 'works/shelf.css') {
     assert.deepEqual(WORKS.files[route], WORKS.reviewed_files[route], route);
   }
@@ -23,7 +26,18 @@ test('normal output retains exactly the declared work pages, images and records'
   const shelf = built.get('works/index.html').toString('utf8');
   assert.match(shelf, /not a ranking or representative survey/);
   assert.match(shelf, /href="\.\.\/"/);
-  assert.equal((shelf.match(/<li>/g) ?? []).length, 5);
+  assert.equal((shelf.match(/<li>/g) ?? []).length, 6);
+  assert.match(shelf, /href="winslow-homer\/index\.html"/);
+  assert.match(shelf, /<h2>Camp Fire<\/h2>/);
+  const homer = built.get(homerRoute).toString('utf8');
+  assert.match(homer, /<h1>Camp Fire<\/h1>/);
+  assert.match(homer, /Project response, not artist intention/);
+  assert.match(homer, /metmuseum\.org\/art\/collection\/search\/11112/);
+  assert.match(homer, /href="\.\.\/\.\.\/art\/camp-fire\.json">Image source and viewing-copy details<\/a>/);
+  assert.doesNotMatch(homer, /camp-fire-responsive\.json/);
+  await readFile('out/art/camp-fire.json');
+  const sitemap = await readFile('out/sitemap.xml', 'utf8');
+  assert.equal((sitemap.match(/https:\/\/pleasestartfromhere\.com\/works\/winslow-homer\//g) ?? []).length, 1);
   const manifest = JSON.parse(await readFile('out/manifest.json'));
   assert.equal(manifest.routes.optional_human_art, '/works/');
   assert.equal(manifest.provenance.optional_human_art.optional, true);
@@ -36,7 +50,8 @@ test('historical publication treatment changed only named wrappers from the pinn
   const prior = JSON.parse(gitBytes('scripts/WORKS_COPIES.json'));
   assert.deepEqual(WORKS.reviewed_files, prior.reviewed_files);
   assert.equal(WORKS.source_review, prior.source_review);
-  assert.deepEqual(Object.keys(WORKS.files).sort(), Object.keys(prior.files).sort());
+  assert.deepEqual(Object.keys(WORKS.files).filter(route => route !== homerRoute).sort(), Object.keys(prior.files).sort());
+  assert.deepEqual(WORKS.files[homerRoute], WORKS_D052.files[homerRoute]);
   let changed = 0;
   for (const route of Object.keys(prior.files)) {
     const before = gitBytes('public/' + route);
@@ -75,14 +90,34 @@ test('historical publication treatment changed only named wrappers from the pinn
   }
 });
 
-test('art-first moves only the five headings/navigation blocks and keeps accounts and assets', async () => {
+test('art-first preserves the five prior encounters and adds Homer without changing his image source', async () => {
   const base = '0f627f2357d74de6b1556e25f5e4a0be5c9a7c57';
   const normal = text => text.replace(/\r\n/g, '\n').replace(/>\s+</g, '><').trim();
   const readBefore = route => execFileSync('git', ['show', base + ':public/' + route], {maxBuffer:20*1024*1024});
   const names = ['anna-atkins','shen-zhou','edmonia-lewis','harriet-powers','johannes-vermeer'];
   const moved = new Set(names.map(name => 'works/' + name + '/index.html'));
   for (const route of Object.keys(WORKS.files)) {
-    const before = readBefore(route), after = await readFile('public/' + route);
+    const after = await readFile('public/' + route);
+    if (route === homerRoute) {
+      const current = after.toString('utf8');
+      assert.ok(current.indexOf('<img') < current.indexOf('<header id="work-details"'), route);
+      assert.ok(current.indexOf('<img') < current.indexOf('<nav class="shelf-return"'), route);
+      assert.match(current, /href="\.\.\/\.\.\/art\/camp-fire\.jpg"/);
+      assert.match(current, /camp-fire-720\.jpg 720w/);
+      assert.match(current, /camp-fire-1440\.jpg 1440w/);
+      assert.match(current, /camp-fire\.jpg 3801w/);
+      assert.match(current, /Project response, not artist intention/);
+      assert.match(current, /our reading|invitation to begin together without assuming the same view/i);
+      continue;
+    }
+    if (route === 'works/index.html') {
+      const current = after.toString('utf8');
+      assert.equal((current.match(/<li>/g) ?? []).length, 6);
+      assert.match(current, /winslow-homer\/index\.html/);
+      assert.doesNotMatch(current, /Five selected works/);
+      continue;
+    }
+    const before = readBefore(route);
     if (moved.has(route)) {
       const old = before.toString('utf8').replace(/\r\n/g, '\n'), current = after.toString('utf8').replace(/\r\n/g, '\n');
       const main = old.match(/<main\b[^>]*>/)[0];

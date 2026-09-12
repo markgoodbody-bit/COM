@@ -1,0 +1,15 @@
+{
+  "basis": "a7c4bec814d677ee8f0b3ffe366a45368302b511",
+  "status": "D052 maintained Works correction: add the existing Winslow Homer opening artwork to the canonical Works shelf without changing its source image or homepage placement.",
+  "verification_ceiling": "These pins establish the exact D052 shelf and encounter bytes. Homer image identity remains owned by scripts/camp-fire.mjs and public/art/camp-fire-responsive.json; this overlay does not independently reverify museum provenance or image rights.",
+  "files": {
+    "works/index.html": {
+      "bytes": 2305,
+      "sha256": "08751d966c96e15c87b3be2c9791c8f0544c5743e70b8f690275255899740f3b"
+    },
+    "works/winslow-homer/index.html": {
+      "bytes": 2145,
+      "sha256": "d13dc2796d834f1f71b8c35a0bd4c1ed244e30c1b0c81aeaf27bebabbb7d34cf"
+    }
+  }
+}
