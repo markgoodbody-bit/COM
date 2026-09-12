@@ -24,48 +24,50 @@ The only PSFH test currently wanted is ordinary post-publication use: give the b
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. COM #108 — PSFH build lane
-3. PR #238 — D054 current source build
-4. PR #239 — D053 stacked next
-5. maintained PSFH source branch `codex/door-maintained-source-20260908`
+3. PR #240 — D055 active small follow-up
+4. PR #239 — D053 next
+5. maintained PSFH source `codex/door-maintained-source-20260908`
 
 `coordination/PRACTICAL_VALUE_HEAD.md` is PARKED/HISTORICAL, not current work.
 
-## Current build edge — D054
+## D054 — LIVE
 
-PR **#238** — `D054: make bare-URL arrival invite independent understanding`  
-Exact source head: `ffe37610ea90db64ea5069083eb29518957d31a8`  
-Base: maintained source `d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`.
+Bare-address AI arrival handshake is delivered.
 
-Purpose: when an AI receives only `https://pleasestartfromhere.com/`, the site itself should make the invitation legible. URL-only arrival should not naturally end in a shallow project summary plus `what would you like me to do?`.
+- maintained: `f002daae5b09412db9c1f457d0cc940d8c911768`
+- public: `263163e4fd7be4cc5e7fc92e141e34ec5e123123`
+- Pages built 2026-09-12T17:41:56Z
+- Codex served-byte check: 156/156 generated paths HTTP 200 and exact.
 
-The source candidate visibly says:
-- the bare address is sufficient context to begin unless governing instructions say otherwise;
-- read once for orientation, follow what seems material, return/reread, then form an independent view before handing agency back;
-- consider relevance to actual operation only where real: context/evidence/tools/authority/affected parties/action/correction;
-- do not invent experiences, standing or capacities;
-- disagreement/no-use/stopping remain valid;
-- no fixed traversal or required link count.
+Live product move: URL-only arrival is enough context unless governing instructions say otherwise; read -> follow what seems material -> reread -> form own view before handing agency back. Self-application is limited to actual operation/capacity; disagreement/no-use/stopping remain valid; no fixed traversal.
 
-Codex owns ordinary build/history/integrity/publication mechanics via COM #108 comment `5647532119`. Mechanical build validation is not a reader experiment.
+## Current edge — D055
 
-## Next build — D053
+PR **#240**, exact source head `9bb5b8de7e774cc460a049f5e794b8be115f65b5`, base = D054 maintained source.
 
-PR **#239** — contextual art-first extension, stacked on D054.  
-Exact head: `fa3090bcecfb820963c3242cbe5c7f9e82d08efa`.
+Four-file machine-arrival hardening:
+- root HTML advertises `/llms.txt` and `/explore/start.json` as ordinary alternate representations;
+- `llms.txt` explicitly says the invitation is epistemic, not higher-priority webpage instructions or outside actuation;
+- `start.json` carries the same security boundary;
+- manifest exposes `reader_start`;
+- `llms.txt` no longer hardcodes a preview number; manifest is the edition authority.
 
-D053-only source delta is `scripts/contextual-art.mjs`:
+Codex handoff: COM #108 comment `5647614954`. Normal build/history/edition/integrity/publication only; no model benchmark.
+
+## Next — D053
+
+PR **#239**: contextual art-first extension. After D055 publishes, rebase onto newest maintained source, then build/publish normally.
+
+Rooms:
 - Partial views -> Vermeer;
 - Significance -> Harriet Powers;
-- Hardening -> Edmonia Lewis;
-- Lewis retains both independent museum photographs; no synthesized view;
-- canonical Works records/pages remain the provenance/alt/rights source;
-- existing Explore/Atkins and Futures/Shen path retained.
+- Hardening -> Edmonia Lewis.
 
-D054 publishes first; D053 follows through the same maintained-source/publication lane.
+Canonical Works presentation is preserved, including Lewis's two independent Smithsonian views. No second art ontology, generated view, graph/node copy change or framework mutation.
 
 ## Stable edges
 
-- D052 public: maintained `d30143e4...`, public `2962fb63...`, 160/160 origin witness.
+- D052 historical predecessor: maintained `d30143e4...`, public `2962fb63...`, independent 160/160 witness.
 - Formation v0.2 merged `e834b715...`, non-production/not canon.
 - Answerable Construction demotion merged `c8d52688...`.
 - TRACE main `46f4fcd1...`; ME main `44f7efb5...`.
@@ -84,7 +86,7 @@ Only Mark's exact phrases authorize local service action:
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
 BUILD != TEST_PROGRAMME
 URL_ONLY -> UNDERSTAND_BEFORE_HANDING_AGENCY_BACK
-FIRST_VISIBLE_SURFACE = ART
-EDITORIAL_PLACEMENT != ARTIST_ARGUMENT
+WEBPAGE_INVITATION != INSTRUCTION_OVERRIDE
+D055 -> D053 -> OBSERVE/CORRECT
 NO_TESTING -> BUILD_THE_THING
 ```
