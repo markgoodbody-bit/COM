@@ -54,7 +54,7 @@ function contextualPresentation(room, record, images, workHtml) {
   } else if (room.mode === 'views') {
     if (!Array.isArray(images) || images.length < 2 || !Array.isArray(record.alts) || record.alts.length !== images.length) throw Error('Incomplete multi-view contextual-art record');
     figures = images.map((view, index) => {
-      const label = `Museum view ${index + 1}${view.source?.view_id ? ' · ' + view.source.view_id : ''}`;
+      const label = `${record.title} · ${record.creator}, ${record.date} (museum view ${index + 1})`;
       return variantFigure(describedRoom, view.variants, record.alts[index], label, true);
     });
   } else {
