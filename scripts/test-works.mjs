@@ -33,6 +33,11 @@ test('normal output retains exactly the declared work pages, images and records'
   assert.match(homer, /<h1>Camp Fire<\/h1>/);
   assert.match(homer, /Project response, not artist intention/);
   assert.match(homer, /metmuseum\.org\/art\/collection\/search\/11112/);
+  assert.match(homer, /href="\.\.\/\.\.\/art\/camp-fire\.json">Image source and viewing-copy details<\/a>/);
+  assert.doesNotMatch(homer, /camp-fire-responsive\.json/);
+  await readFile('out/art/camp-fire.json');
+  const sitemap = await readFile('out/sitemap.xml', 'utf8');
+  assert.equal((sitemap.match(/https:\/\/pleasestartfromhere\.com\/works\/winslow-homer\//g) ?? []).length, 1);
   const manifest = JSON.parse(await readFile('out/manifest.json'));
   assert.equal(manifest.routes.optional_human_art, '/works/');
   assert.equal(manifest.provenance.optional_human_art.optional, true);
