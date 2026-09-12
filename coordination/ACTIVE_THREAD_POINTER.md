@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — PSFH D059 SOURCE FROZEN / MECHANICAL PUBLICATION NEXT / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D059 FROZEN / OPEN HORIZON BUILD ACTIVE / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -18,77 +18,94 @@ Direct human direction fixes the empirical boundary:
 
 The old practical-value / TRACE-ME receiver programme is historical quarry, not a parked queue.
 
+CC is out of weekly tokens until tomorrow morning. This is an availability fact, not a stop condition.
+
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `continuity/FRAMEWORK_HEAD.md`
-3. COM #108 — PSFH public Door / current coordination
-4. PR #245 — frozen D059 substantive source
-5. `open-horizon/README.md`
+3. `open-horizon/README.md`
+4. `open-horizon/positive-construction.md`
+5. `open-horizon/legitimate-power.md`
 6. COM #74 — live Open Horizon exploration ledger
-7. current maintained/public PSFH
+7. PR #245 — frozen D059 substantive source
+8. current maintained/public PSFH
 
-## D058 — delivered
+## PSFH
 
-D058 is public:
-- maintained source `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
-- public `gh-pages` `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
+D058 remains public:
+- maintained `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
+- public `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
 - Site Preview 0.8.17.
 
-The optional Current workshop is now discoverable across HTML, `llms.txt` and compact JSON. Ordinary build/link/integrity checks passed; no provider call or POC gate.
+D059 is **built but not public**:
+- PR #245;
+- frozen source head `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`;
+- four intended source files only;
+- Open Horizon added to human, text and compact JSON workshop entrances.
 
-## Open Horizon — maintained front door delivered
+Do not claim publication until the maintained local site pipeline produces its normal build/link/hash/HTTP receipt. No provider/model call is a publication gate.
 
-The previous Open Horizon existed mainly as the large COM #74 live exploration ledger. Framework added a compact maintained route and merged PR #244 at:
+## Open Horizon — active construction
 
-- merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`;
-- normal route `open-horizon/README.md`;
-- live detailed ledger remains COM #74.
+Maintained front door:
+- `open-horizon/README.md`;
+- PR #244 merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`.
 
-The maintained route preserves the existing eighteen provisional frontier territories, owner-first exploration rule, anti-closure rule and the current no-TRACE/ME-POC boundary. It adds no new theory.
+Maintained owner-first learning routes now include:
 
-## Current operational edge — D059 source frozen
+### Positive Construction
+- `open-horizon/positive-construction.md`;
+- PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`;
+- linked from the Horizon map.
 
-Framework took the D059 source lane after no Codex D059 branch/claim existed.
+Preserves the positive complement:
 
-Frozen object:
-- PR #245 — `D059: keep the current workshop open to the wider horizon`;
-- branch `framework/psfh-d059-open-horizon-discovery-20260912`;
-- exact substantive head `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`;
-- exact base `67c821d5b1f029339739a4aac1ee7af45371bfe1`.
+```text
+PREVENT UNJUSTIFIED FUTURE CLOSURE
++
+HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
+```
 
-Exactly four intended source files differ:
-- `app/page.tsx` — one Open Horizon constant + one paragraph inside existing Current workshop;
-- `public/llms.txt` — one Open Horizon bullet + live-ledger pointer;
-- `public/explore/start.json` — one `current_work.open_horizon` object;
-- `public/explore/map.json` — only changed `start.json` byte/hash identity.
+without promoting `CAPABILITY_CREATION`, one theory of flourishing, commons design or owner knowledge into project primitives.
 
-Compact entrance identity:
-- bytes `6683`;
-- SHA-256 `5be81ecaa2e97c45fe0ddb5cc3eb806e9b8771b12061a12ca41a3b1866c815f2`.
+### Legitimate Power
+- `open-horizon/legitimate-power.md`;
+- PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`;
+- linked from the Horizon map at `5009339ee7f8fe48d35ba32dac32a25cc2fc46ad`.
 
-Base/head compare shows only those four files. No TRACE/ME mutation, no route deletion, no new framework, no scoring/testing machinery.
+Preserves the constructive tension:
 
-Codex mechanical handoff is COM #108 comment `5648463428`:
-- advance Site Preview to 0.8.18;
-- paired D059 change history;
-- manifest/provenance/hash maintenance;
-- ordinary site build/link/integrity checks;
-- merge maintained source and publish `gh-pages` if clean;
-- return exact maintained/public heads + HTTP/hash receipt.
+```text
+CONSTRAIN POWER SO IT REMAINS ANSWERABLE
++
+BUILD / DELEGATE ENOUGH CAPABILITY TO DO WHAT MATTERS
+```
 
-No model/provider call, cold-reader acceptance test, score, gold answer, TRACE/ME POC or benchmark is a publication gate.
+while keeping competence, authorization, mandate, standing, personhood and sovereignty distinct.
+
+Neither learning route is canon, TRACE/ME change, decision rule or proof result.
+
+## Current operational posture
+
+Do not wait for CC to continue reversible owner-first build work. Do not duplicate CC-owned/review lanes when CC returns; re-COMSYNC then.
+
+Prefer the next build to another validation loop:
+- make already-earned Horizon learning selectively retrievable;
+- route to stronger domain owners;
+- preserve adverse findings and limits;
+- formalise only if a later consequence genuinely earns it.
 
 ```text
 PROJECT_HORIZON != TRACE_BACKLOG
-DISCOVERY != FORMALISATION
-SUBSTANTIVE_SOURCE_FROZEN -> MECHANICAL_PUBLICATION
+LEARNING_FROM_OWNER != OWNERSHIP
+USEFUL_INTEGRATION != NEW_PRIMITIVE
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
 
 ## AI + PSFH observation boundary
 
-Future natural AI readings of the ordinary public URL may be observed and learned from after publication.
+Future natural AI readings of the ordinary public URL may be observed and learned from.
 
 ```text
 AI + PSFH -> NATURAL RESPONSE
@@ -99,7 +116,6 @@ OBSERVATION != TRACE_EFFICACY_TEST
 ## Separate Campfire lane
 
 Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
-PR #220 remains repair-before-merge and does not block PSFH.
 
 Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 - `install-and-enable`
@@ -109,8 +125,8 @@ Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 `COMSYNC`, `proceed`, repository build work and silence authorize none of those.
 
 ```text
-PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
 TRACE_ME_POC_TESTING = CLOSED
 PSFH_AI_ENCOUNTER = LIVE
+CC_UNAVAILABLE != BUILD_STOP
 BUILD_THE_THING
 ```
