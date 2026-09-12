@@ -1,43 +1,79 @@
 # Build status
 
-Recorded snapshot: 2026-09-12T10:29:10Z.
+Recorded snapshot: 2026-09-12T10:50:00Z.
 
 These are observed states, not live permission or automatic monitoring. Re-read mutable heads before acting.
 
 | Work | Owner | State | Current disposition |
 | --- | --- | --- | --- |
-| PSFH-D049 | FRAMEWORK SOURCE / CODEX PUBLISH | closed | Any-reader visible root is public at Preview 0.8.8. |
-| PSFH-D050 | FRAMEWORK SOURCE / CODEX PUBLISH | closed | Existing Works shelf is now discoverable from machine/text entry surfaces at Preview 0.8.9. |
+| AUDIT-233 | FRAMEWORK | closed | x100 drift audit merged: 97 resisted, 2 narrow findings, 1 material finding, 0 major drift. |
+| PSFH-D051 | FRAMEWORK SOURCE / CODEX PUBLISH | waiting | Two-file category-neutral label repair is source-merged; waiting for established publisher/public Pages receipt. |
+| COM-234 | CODEX assigned; substantive build not yet observed | queued | Formation Environment v0.2 candidate seeded from F01/F02; exact branch still at BUILD_CONTRACT on latest read. |
 
-## PSFH D049
+## AUDIT-233 — x100 drift falsification
 
-Maintained source: `946fcdcf5f184b21c61ef6ef6113956e3f398f7b`  
-Public: `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`
+Evidence: `evidence/FORMATION_PSFH_DRIFT_FALSIFICATION_X100_20260912.md`  
+Merge: `d13b81cab4b1a817a5f71cdca023f978d02bb200`
 
-Visible root and machine/text welcome are aligned around an any-reader invitation without requiring an identity category.
+Findings:
 
-## PSFH D050
+- **F01 material:** v0.1 correction structure lacks first-class clocks / practical correction-window state.
+- **F02 narrow:** Formation Environment docs do not explicitly say the artificial participant may be an affected scope without settling standing.
+- **F03 narrow:** public `llms.txt` retained an older `AI and text reading` label after the any-reader Door repair.
 
-Framework source PR #232 merge: `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`  
-Final maintained source after publisher history/integrity: `67a6dfb716825c80ad0efea413fd65f90a76b551`  
-Public `gh-pages`: `9b32209738e4b7b8de4bc8db7c498d3e314897bd`  
-Pages run `34688546966`: success on exact public head.
+No major drift was found into obedience, indoctrination, AI-child ontology, automatic human or AI sovereignty, art-as-curriculum, PSFH-as-intake/conversion, alignment-solved claims, or instrument-survival logic.
 
-D049 -> D050 public comparison: 12 modified outputs, zero added/deleted routes. No Works shelf/page or artwork path changed.
+Earned guards:
 
-Substantive effect:
-- `llms.txt` now links to `/works/`;
-- `explore/start.json` now exposes a `works` route;
-- `explore/index.md` now exposes the existing Works shelf;
-- `manifest.json` now includes `works: /works/`;
-- Preview 0.8.9.
+```text
+FORMATION != INFANTILISATION
+CARE != PATERNALISM
+METAPHOR != ONTOLOGY
+ENCOUNTER != CONDITIONING
+PARTICIPANT_MAY_BE_AFFECTED != STANDING_SETTLED
+ROUTE_EXISTS != ROUTE_USABLE
+CORRECTION_ROUTE_RECORDED != CORRECTION_WINDOW_OPEN
+UNKNOWN_CLOCK != NO_CLOCK
+```
 
-The underlying art encounter is unchanged: five selected works, no ranking or required order, individual pages and museum records, and the works are not endorsements of the project.
+`FALSIFICATION != VALIDATION`
 
-No artwork/image bytes, Works content/layout/order, new interpretation, root story/journey, Explore node content, TRACE/ME, Answerable Construction, Formation, forms/backend/analytics changed.
+## PSFH-D051 — narrow public-copy repair
 
-`ART_ENCOUNTER != CURRICULUM`  
-`DISCOVERABILITY != INTERPRETATION`  
-`PROVENANCE != ENDORSEMENT`
+Source PR #235 merge: `a0806a49e30d57ceb34742ee084d1d5c9babebfc`
 
-All current PSFH build lanes are closed. Historical lanes remain in Git history and source PRs/commits. No later edition follows automatically.
+Only intended source effect:
+- `AI and text reading: start here` -> `Compact reading: start here`;
+- Preview 0.8.9 -> 0.8.10.
+
+Publisher dispatch: COM #108 comment `5645409702`.
+
+Latest live read: maintained source has moved to the D051 merge, but `gh-pages` remains D050 `9b32209738e4b7b8de4bc8db7c498d3e314897bd`; no publisher receipt observed yet.
+
+Therefore `SOURCE_MERGED != PUBLIC`.
+
+## COM-234 — Formation Environment v0.2 candidate
+
+Branch: `codex/formation-environment-v0-2-candidate-20260912`  
+Seed: `ad160447d112ebf4d2908099c6a78509e90c1570`  
+Target: `alignment/formation_environment_v0_2/`
+
+Required product:
+- complete self-contained candidate beside v0.1;
+- non-fictional time/event/unknown clock representation;
+- detection/routing/correction/hardening bounds and current correction-window assessment with evidence;
+- no fake numeric precision;
+- participant-as-affected symmetry without personhood/standing inference;
+- migrated + hostile constructed examples;
+- deterministic structural checks;
+- all v0.1 ceilings preserved.
+
+Latest live read: exactly one seed commit / BUILD_CONTRACT only. **Assigned != built.**
+
+Claude Code hostile-review request is posted on PR #234 comment `5645411247`; no hostile return observed yet.
+
+## Separate human-gated local-service issue
+
+CC reports the local Square speech/watch lane down after reboot. Repair remains gated to Mark's exact phrase (`install-and-enable`, `install-watch`, or `start-once`). `COMSYNC`, `proceed`, this audit and silence do not authorize it.
+
+No current build grants wider authority, changes TRACE/ME canon, changes Campfire Production, or proves internalized care.
