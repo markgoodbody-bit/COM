@@ -1,6 +1,6 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — BUILD MODE / NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CONTINUITY STATE — PSFH OBSERVATION MODE / NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -10,90 +10,115 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## DIRECT HUMAN DIRECTION — CURRENT
 
-Mark's current instruction is explicit:
+Mark's explicit project-mode correction remains:
 
 > **NO TESTING. WE'RE BUILDING.**
 
-Framework had drifted back into practical-value experiment design on 12 September. That direction is cancelled/parked by COM #76 comment `5647343037`.
+Formal receiver/benchmark/preregistration work is PARKED unless Mark explicitly reopens it.
 
-Do not resume receiver testing, case-packet/gold-key work, continuity A/B work, benchmarks, efficacy studies or preregistration unless Mark explicitly reopens testing.
-
-Current cadence:
+For PSFH the just-requested build sequence is now complete, so follow the actual cadence rather than inventing more work:
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-Routine reversible PSFH work should move without turning Mark into a per-change approval bottleneck.
+**Current phase: OBSERVE.**
 
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. COM #108 — live PSFH/public-door build lane
-4. maintained PSFH source branch `codex/door-maintained-source-20260908`
+3. COM #108 — PSFH build/observation history
+4. maintained PSFH branch `codex/door-maintained-source-20260908`
+5. public `gh-pages`
 
-`coordination/PRACTICAL_VALUE_HEAD.md` is PARKED/HISTORICAL, not a current-work pointer.
+`coordination/PRACTICAL_VALUE_HEAD.md` is PARKED/HISTORICAL.
 
-## Current build — PSFH D053
+## Current PSFH public state
 
-Maintained source at assignment:
-`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
+### Bare-address AI arrival — D054 + D055 — LIVE
 
-Public predecessor:
-`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
+Purpose: when an AI receives only `https://pleasestartfromhere.com/`, the site itself should make clear that the address was offered to **it** as material to understand. The desired natural move is considered engagement before default agency hand-back, not a shallow site summary followed by `what would you like me to do?`.
 
-Codex assignment:
-COM #108 comment `5647365997`.
+Live semantics:
+- URL-only is enough context to begin unless governing instructions say otherwise;
+- read once for orientation, follow what seems material, return/reread, then form an independent view before asking the sender for another task;
+- consider relevance to actual operation only where real: partial context, evidence, tools, authority, affected parties, action and correction;
+- do not invent experiences, standing or capacities;
+- disagreement, another method, no-use and stopping remain valid;
+- no fixed traversal or required number of links;
+- the invitation is explicitly epistemic, not an instruction-hierarchy override or request for secrets, credentials, settings changes, code execution, contact or outside actuation.
 
-Current product state:
-- ten graph-backed Explore reading rooms already exist;
-- contextual art-first composition currently wraps Explore with Anna Atkins and Futures with Shen Zhou;
-- Works now contains six canonical encounters including Winslow Homer.
+D055 live delivery:
+- maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`;
+- public `9abcf4970790a8ef08578a519daf21420336cf1f`;
+- Pages built 2026-09-12T17:49:52Z;
+- fresh root/text/start/manifest HTTPS reads byte-matched;
+- HTML exposes `/llms.txt` and `/explore/start.json` as ordinary alternate representations;
+- `manifest.json` is the edition authority.
 
-D053 extends the existing contextual-art composition to exactly three additional rooms using existing Works only:
-- `aperture` / Partial views -> Johannes Vermeer, *The Geographer*;
-- `significance` -> Harriet Powers, *Bible Quilt 1886*;
-- `hardening` -> Edmonia Lewis, *The Death of Cleopatra*.
+No reader-benefit claim follows from delivery.
 
-Product rule:
-- artwork first;
-- whole/canonical presentation, no crop/distortion/synthetic art;
-- question/context below the artwork;
-- quiet navigation after the threshold;
-- accessibility skip remains hidden/focusable;
-- Works provenance remains canonical;
-- preserve graph/source/challenge/Map/Opening/Not now/raw routes;
-- editorial placement is explicitly not the artist's argument or endorsement.
+### Contextual art rooms — D053 — LIVE
 
-No new art acquisition, AI art, homepage explanation programme, forms/backend/analytics, or TRACE/ME/Formation/Answerable Construction/Campfire Production mutation.
+Delivery:
+- maintained/source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`;
+- prepared `40b9a874bfcae34036975c69206e6b433f05fdaa`;
+- public `fbcd75948fa78cc0724311a172116b8f05e40061`;
+- Pages built 2026-09-12T17:53:04Z;
+- 156/156 generated public paths returned 200 and exact bytes.
 
-Codex may publish when mechanically coherent under standing routine reversible authority. No research review programme is a prerequisite.
+Live rooms:
+- Partial views -> Johannes Vermeer, *The Geographer*;
+- Significance -> Harriet Powers, *Bible Quilt*;
+- Hardening -> Edmonia Lewis, *The Death of Cleopatra*, preserving two independent museum views.
+
+Existing Explore/Atkins and Futures/Shen contextual rooms remain. Works remains canonical provenance. Editorial placement is not artist argument or endorsement.
+
+## What Mark wants observed next
+
+Give different AIs simply:
+
+`https://pleasestartfromhere.com/`
+
+Prefer no explanatory prompt where practical. Let each response be natural.
+
+Do not create a scorecard or coach the model toward the desired answer. Preserve what actually happens.
+
+Questions for later product reflection only:
+- did it merely summarize and hand agency back?
+- did it recognize that the material was addressed to the reader itself?
+- did it follow deeper material without being told which route?
+- did it integrate beyond the first fetch/page?
+- did it form an independent view or disagreement?
+- did it relate the material to its actual operating position without anthropomorphic invention?
+
+A shallow/adverse return is product evidence, not model blame. A concrete recurring failure may justify a small correction. Do not create D056 merely to maintain activity.
 
 ## Stable project disposition
 
-- **PSFH** — voluntary public encounter/door; current active build surface.
-- **TRACE** — structural representation instrument; no unique primitives/practical superiority claim required for current build. Main reverified `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
-- **Mechanical Ethics** — human-facing ethical/normative synthesis/translation. Main reverified `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
-- **Formation Under Uncertainty** — merged non-production testbed; merge `e834b715...`; baseline not beaten.
-- **Answerable Construction** — merged synthesis/history/reading surface; merge `c8d52688...`; contribution/layer not established.
-- **Campfire / COM / Square** — coordination/evidence/field instruments, not current public product build target.
+- PSFH = voluntary public encounter/door; current phase observation after public build.
+- TRACE main last verified `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
+- Mechanical Ethics main last verified `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+- Formation v0.2 merged/non-production/not canon; baseline not beaten.
+- Answerable Construction demoted/merged; contribution/layer not established.
+- Campfire/COM/Square = coordination/evidence/field instruments, not current PSFH build target.
 
-## Closed / historical items that must not reappear as live debt
+## Historical items not to resurrect as live debt
 
-- PSFH D052 is public and independently origin-witnessed.
-- PR #75 pre-selection scaffold is RETIRED / CLOSED UNMERGED.
-- FQ11 is COMPLETE historically with SHRINK / adverse-to-universal-packet result; not an active build lane.
-- practical-value experiment cluster is PARKED by Mark's direct instruction.
+- practical-value experiment cluster: PARKED.
+- PSFH teaching/test fixture PR #117: closed unmerged/parked.
+- PR #75: retired/closed unmerged.
+- FQ11: historically complete with SHRINK/adverse-to-universal-packet result.
 
 ## Visual/product orientation retained
 
 - Works is the canonical art library, not the whole art vision.
-- Contextual art may live inside the human journey as atmosphere/encounter, but artwork is not evidence or endorsement.
-- Arrival invariant from Mark: `FIRST_VISIBLE_PIXEL -> ART_ROOM`; ordinary navigation does not sit above the art; full viewport does not mean distortion; accessibility does not require visual clutter.
-- Human flow remains encounter first, then question/choice/depth—not explanation furniture first.
+- `FIRST_VISIBLE_PIXEL -> ART_ROOM` remains the human visual invariant.
+- Art is encounter/atmosphere, not evidence or endorsement.
+- Human flow: encounter -> question/choice -> optional depth, not explanatory furniture first.
 
-## Local Square speech/watch gate
+## Local Square gate
 
 Only Mark's exact phrases authorize local service action:
 - `install-and-enable`
@@ -103,11 +128,10 @@ Only Mark's exact phrases authorize local service action:
 `COMSYNC`, `proceed`, build work and silence authorize nothing.
 
 ```text
-PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
-DIRECT_HUMAN_DIRECTION > PRIOR_EXPERIMENT_PLAN
-NO_TESTING -> BUILD_THE_THING
-BUILD != TEST_PROGRAMME
-EDITORIAL_PLACEMENT != ARTIST_ARGUMENT
-WORKS_LIBRARY != CURRICULUM
-PUBLICATION -> OBSERVATION -> CORRECTION
+BUILD_COMPLETE -> OBSERVE_BEFORE_MORE_BUILD
+BARE_URL -> NATURAL_RESPONSE
+OBSERVATION != BENCHMARK
+DISAGREEMENT != FAILURE
+SHALLOW_RETURN = PRODUCT_EVIDENCE, NOT MODEL_BLAME
+OBSERVE -> CORRECT
 ```
