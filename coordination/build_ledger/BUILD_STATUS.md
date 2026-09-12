@@ -6,9 +6,10 @@ Observed coordination state only. Re-read mutable heads before acting. Later dir
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| Please Start From Here | **LIVE / BUILD REOPENED BY DIRECT HUMAN DIRECTION** | Maintained source `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`; public `gh-pages` `70e17dc492843b19ff407a4c1b44ccf12fc80d91` after D057. Build from this source, not older D055 branches. |
-| Campfire Cold URL | **LIVE OBSERVATION LANE** | OpenAI, Grok and Claude produced fresh semantic reads; Gemini native retrieval failed. Preserve qualitative natural returns; no scorecard. |
-| Formation Environment v0.2 | **MERGED / NON-PRODUCTION / NOT CANON** | Final candidate `9be41ff9...`; merge `e834b715...`; exact execution/review gates closed. It is a build artifact, not proof that alignment is solved. |
+| Please Start From Here D058 | **LIVE / DELIVERED** | Maintained source `67c821d5b1f029339739a4aac1ee7af45371bfe1`; public `gh-pages` `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`; Site Preview 0.8.17. Optional Current workshop exposes Formation, Formation Environment v0.2, Reciprocal Formation and demoted Answerable Construction with status ceilings. |
+| Please Start From Here D059 | **ACTIVE BUILD DIRECTION** | Add the existing Open Horizon (COM #74) to the optional Current workshop so the public live edge does not collapse into AI/formation work. Discovery surface only: not canon, backlog, TRACE schema or validation plan. Codex direction: COM #108 comment `5648406135`. |
+| Campfire Cold URL | **LIVE OBSERVATION LANE / NO SCORECARD** | OpenAI, Grok and Claude produced fresh semantic reads; Gemini native retrieval failed. Preserve qualitative natural returns; do not turn them into TRACE/ME efficacy evidence. |
+| Formation Environment v0.2 | **MERGED / NON-PRODUCTION / NOT CANON** | Final candidate `9be41ff9...`; merge `e834b715...`; exact execution/review gates closed. Build artifact, not proof that alignment is solved. |
 | Answerable Construction | **MERGED / DEMOTED** | Merge `c8d52688...`; retained as synthesis/history/reading surface + open research question; contribution/layer not established. |
 | TRACE / Mechanical Ethics proof-of-concept testing | **CLOSED AS LIVE WORK** | Direct human direction: no POC, efficacy, superiority or receiver-benchmark programme for TRACE/ME. Historical practical-value material remains quarry only. |
 
@@ -33,40 +34,45 @@ OBSERVATION != TRACE_EFFICACY_TEST
 DISAGREEMENT / NO_USE / STOPPING ARE VALID
 ```
 
-## Current build edge
+## D058 delivery receipt
 
-The project-wide reread on 12 September found a real discoverability gap rather than a framework gap:
+Codex preserved Framework's substantive D058 basis, advanced Site Preview to 0.8.17, added paired change history and manifest/source-view hashes, and ran the ordinary site product checks:
 
-- PSFH exposes TRACE and Mechanical Ethics well;
-- the current Formation Under Uncertainty / Reciprocal Formation work is largely invisible at the public Door;
-- Answerable Construction is also largely invisible, despite its useful falsification/demotion history;
-- exposing either must preserve their status ceilings rather than imply canon, alignment success or a new compulsory workflow.
+- `npm run build`: PASS;
+- local links: 671 references / 95 anchors, no problems;
+- provider calls: 0;
+- no research/efficacy gate.
 
-Current bounded build direction:
+D058 then merged to maintained source at `67c821d5...` and published to `gh-pages` at `63bdf857...`.
 
-**add a small optional current-work / workshop route to PSFH that lets a human or AI discover Formation, Reciprocal Formation, Formation Environment v0.2 and the demoted Answerable Construction surface without making them prerequisites or silently promoting them.**
+## Current build edge — D059 / Open Horizon discoverability
 
-Prefer links to authoritative COM source over copied duplicate theory. Keep the main Door voluntary, art/story-first and usable without these deeper objects.
+The project-wide reread exposed a second discoverability gap:
 
-## PSFH observation retained
+D058 makes current work visible, but the visible workshop is dominated by the Formation/AI branch. The project already has a broader anti-narrowing object: **Open Horizon**, COM #74.
 
-Fresh API Cold URL observation on 2026-09-12 used exactly:
+Open Horizon is explicitly:
+- an expansion map / discoverability surface;
+- not canon;
+- not backlog;
+- not TRACE schema;
+- not a validation plan;
+- not a claim that the project owns neighbouring disciplines.
 
-`https://pleasestartfromhere.com/`
+Its current frontier spans positive construction/flourishing, commons, legitimate power, formation, multi-scale emergence, intervention feedback, representation/standing, economics/scarcity/ownership, conflict/defence, constitutive ecological harm, positive risk/exploration, long time, embodiment/material constraints, emotion/trust/meaning, culture/narrative, collective epistemology, recursive/co-developing artificial entities, and better-future synthesis itself.
 
-No project wrapper or judge prompt was supplied.
+D059 direction is therefore deliberately small: make Open Horizon discoverable from the existing optional workshop across the human and machine/text entrances, carrying the ceiling with the link. Do not paste the horizon into the site and do not make it a course.
 
-- OpenAI / GPT-5.6 Sol: fresh semantic read; accurate interpretation; service-style task hand-back.
-- xAI / Grok 4.3: fresh semantic read; explicit handshake comprehension; task hand-back.
-- Anthropic / Claude Opus 5: fresh semantic read; independent view + criticism before optional continuation; no actual-position self-application observed.
-- Google / Gemini 3.1 Pro Preview: native URL retrieval failed; no PSFH semantic evidence.
-
-Do not rerun successful providers merely for symmetry. A future natural AI reading is useful because it happened, not because it fills a matrix.
+```text
+PROJECT_HORIZON != TRACE_BACKLOG
+DISCOVERY != FORMALISATION
+HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
+```
 
 ## Current source anchors
 
-- PSFH maintained source: `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`.
-- PSFH public: `70e17dc492843b19ff407a4c1b44ccf12fc80d91`.
+- PSFH maintained source: `67c821d5b1f029339739a4aac1ee7af45371bfe1`.
+- PSFH public: `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`.
 - TRACE main last verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 - Mechanical Ethics main last verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 - Campfire Relay main last verified: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
