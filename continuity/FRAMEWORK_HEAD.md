@@ -1,6 +1,6 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH ENTRANCE / D060 LIVE / BOUNDED DISCOVERY / NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH ENTRANCE / D061 LIVE / BOUNDED DISCOVERY / NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-13 — Europe/London  
 Later live source and direct human direction win.
 
@@ -24,7 +24,7 @@ PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 
 No proof-of-concept / efficacy / superiority programme for TRACE or Mechanical Ethics. Historical practical-value work is quarry only.
 
-Claude Code availability is **not reverified** after the date rollover. Last human report on 12 September: CC was out of weekly tokens until the morning of 13 September. Recheck before routing new work; do not infer present availability from that stale relative statement.
+Claude Code was observed responsive in COM #108 comments `5649361720` and `5649363025` at 2026-09-12 23:21Z (13 September local). This replaces the earlier token-pause report, not a guarantee of continuing availability.
 
 ## Read first
 
@@ -53,11 +53,11 @@ CARRIER != APERTURE
 - **COM / Campfire** — continuity/collaboration infrastructure, not project purpose. Cold-start topology is `BOOTSTRAP.md` -> canonical `continuity/BOOTSTRAP.md`; headset-on uses `continuity/CAMPFIRE_ORIENTATION.md`; operational synchronization remains COMS.
 - **older Lattice / Eidoran / Monolith** — historical path away from deterministic scoring/guard machinery; do not resurrect conformance reflexes by default.
 
-## PSFH — D060 live
+## PSFH — D061 live
 
-Site Preview 0.8.19 / D060 is delivered:
-- maintained `97b55f01696ec6f71df94036a4305b2682defcbf`;
-- public `07a7187a274fa0dd6d22f1a03d7a001eefe2ff77`;
+Site Preview 0.8.20 / D061 is delivered:
+- maintained `323a3d9794a62c86d5e9adcd4bc416fec1fad021`;
+- public `37dac8a00feaaead611f65bbf638d46ca2e23e69`;
 - seed 0.4 live at `/seed.txt`;
 - seed size 1023 bytes under the existing 1 KiB ceiling;
 - seed SHA-256 `3e3f837219124a516f3257ef042c59c2ee81fec473d28289e2743780b294ba0c`;
@@ -78,6 +78,8 @@ SHRINK_CHANGE > RELAX_BOUNDARY
 ```
 
 Do not churn the Door merely because another phrase could be polished.
+
+D061 opens a directly targeted disclosure as well as its ancestors. Codex delivery: COM #108 comment `5649351034`. CC independently reported 160/160 public-tree files matching the same public head during 23:20:07Z–23:20:37Z in comment `5649361720`; that includes repository metadata beyond Codex's 156 generated files. Neither receipt establishes browser-observed interaction.
 
 ## COM cold-start correction
 
@@ -240,7 +242,7 @@ Only Mark's exact phrases authorize local action:
 
 ## Current build posture
 
-D060 is delivered. COM cold-start orientation is consolidated. Keep improving the entrance and the useful material behind it, but do not optimize either into a self-consuming object. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
+D061 is delivered. COM cold-start orientation is consolidated. Keep improving the entrance and the useful material behind it, but do not optimize either into a self-consuming object. Let arriving entities form their own views. Explore outward when a sharp project question warrants it, then return.
 
 ```text
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW

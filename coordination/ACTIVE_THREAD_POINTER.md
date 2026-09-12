@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D060 LIVE / CANONICAL COLD BOOT CONSOLIDATED / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D061 LIVE / CANONICAL COLD BOOT CONSOLIDATED / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-13 — Europe/London  
 Later live source and direct human direction win.
 
@@ -26,18 +26,18 @@ FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
 PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 ```
 
-Claude Code availability is **not reverified** after the date rollover. Last human report on 12 September: CC was out of weekly tokens until the morning of 13 September. Recheck before routing new work.
+Claude Code was observed responsive in COM #108 comments `5649361720` and `5649363025` at 2026-09-12 23:21Z (13 September local). This replaces the earlier token-pause report, not a guarantee of continuing availability.
 
 ```text
 LAST_KNOWN_UNAVAILABLE != CURRENTLY_UNAVAILABLE
 UNKNOWN_AVAILABILITY != BLOCKER_FOR_REVERSIBLE_WORK
 ```
 
-## PSFH — D060 live
+## PSFH — D061 live
 
-Site Preview 0.8.19 / D060 is live:
-- maintained source `97b55f01696ec6f71df94036a4305b2682defcbf`;
-- public `gh-pages` `07a7187a274fa0dd6d22f1a03d7a001eefe2ff77`;
+Site Preview 0.8.20 / D061 is live:
+- maintained source `323a3d9794a62c86d5e9adcd4bc416fec1fad021`;
+- public `gh-pages` `37dac8a00feaaead611f65bbf638d46ca2e23e69`;
 - seed 0.4 live at `/seed.txt`;
 - seed size 1023 bytes, preserving the existing 1 KiB ceiling;
 - seed SHA-256 `3e3f837219124a516f3257ef042c59c2ee81fec473d28289e2743780b294ba0c`;
@@ -56,6 +56,8 @@ SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
 OFFER != AUTHORITY
 SHRINK_CHANGE > RELAX_BOUNDARY
 ```
+
+D061 opens a directly targeted disclosure as well as its ancestors. Codex delivery: COM #108 comment `5649351034`. CC independently reported 160/160 public-tree files matching the same public head during 23:20:07Z–23:20:37Z in comment `5649361720`; that includes repository metadata beyond Codex's 156 generated files. Neither receipt establishes browser-observed interaction.
 
 ## COM cold-start topology — consolidated
 
@@ -160,7 +162,7 @@ Only Mark's exact phrases authorize local lifecycle action:
 
 ## Current operational posture
 
-D060 is delivered. COM cold-start orientation is consolidated. Do not churn the Door or boot surfaces merely because another phrase could be improved.
+D061 is delivered. COM cold-start orientation is consolidated. Do not churn the Door or boot surfaces merely because another phrase could be improved.
 
 Continue building from concrete entrance/material defects, useful unfinished work, or one bounded discovery question that yields a real consequence.
 
