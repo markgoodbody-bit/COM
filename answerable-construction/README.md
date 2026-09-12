@@ -99,7 +99,7 @@ If Formation work and this synthesis meet operationally, use those existing obje
 - external Claude cold-read that triggered D046: [PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md](../evidence/PSFH_EXTERNAL_CLAUDE_COLD_READ_20260911.md)
 - external-owner correction receipt: COM #76 comment `5645906379`
 - further-demotion / NHS-owner receipt: PR #237 comment `5645981712`
-- exact-head demotion review: PR #237 comment `5646102092`
+- exact-head demotion review: PR #237 comment `5646072771`
 
 These remain useful for provenance and disagreement. They are not required reading before the working paper.
 
