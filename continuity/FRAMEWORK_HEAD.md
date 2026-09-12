@@ -34,65 +34,68 @@ ART_ENCOUNTER != CURRICULUM
 DISCOVERABILITY != INTERPRETATION
 ```
 
-## PSFH — D049 public
+## PSFH — current public baseline D050
 
-Maintained source:
-- `946fcdcf5f184b21c61ef6ef6113956e3f398f7b`
+D049 aligned the visible root with the any-reader invitation.
+
+D050 then exposed the already-existing Works shelf to machine/text readers without changing the art encounter.
+
+Framework source PR #232 merge:
+- `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`.
+
+Final maintained source after Codex paired history/integrity:
+- `67a6dfb716825c80ad0efea413fd65f90a76b551`.
 
 Public `gh-pages`:
-- `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`
+- `9b32209738e4b7b8de4bc8db7c498d3e314897bd`.
 
-Codex hand-back: COM #108 comment `5645295100`. Pages built the exact public head successfully.
+Pages run:
+- `34688546966`;
+- conclusion `success` on exact public head.
 
-Root: 21,179 UTF-8 bytes; SHA-256 `a20f066b2d44480487ad0668c183d20dff444f921f4561eacb0bc4de6d9dcf36`.
+D049 -> D050 public compare:
+- 12 modified outputs;
+- zero added/deleted routes;
+- no Works shelf/page or artwork path changed.
 
-D049 aligns the visible root with the any-reader invitation:
-- **This address is for whoever is reading.**
-- no reader must tell us what they are or fit a project identity category;
-- humans, AIs and other readers are welcome without inferring personhood/standing;
-- **We may misunderstand your position.**
-- sharing refers to another reader without deciding what kind they are.
+D050 substantive effect:
+- `llms.txt` links to `/works/`;
+- `explore/start.json` exposes `works`;
+- `explore/index.md` exposes the existing Works shelf;
+- `manifest.json` includes `works: /works/`;
+- Preview 0.8.9.
 
-D049 changed no art, story, Works/Explore content, forms, analytics or framework source.
+Works posture remains:
+- five selected works, not a ranking or representative survey;
+- no required order;
+- each has its own page and museum record;
+- works are not endorsements of this project;
+- maker/museum account remains distinct from PSFH response.
 
-## PSFH — D050 Works discoverability source merged / public pending
+No artwork/image bytes, Works content/layout/order, new interpretation, root story/journey, Explore node content, TRACE/ME, Answerable Construction, Formation, forms/backend/analytics changed.
 
-After D049 closed, the next concrete gap was verified:
-- machine/text entrance says a work of art can be a complete use;
-- humans can already reach `/works/`;
-- machine/text entry surfaces did not expose that route.
+Do not create D051 automatically.
 
-Existing Works posture remains the boundary:
-- five selected works;
-- no ranking or required order;
-- individual pages and museum records;
-- works are not endorsements of the project;
-- Work pages separate museum/maker account from PSFH response.
+## Local Square speech/watch lane — consequential gate active
 
-Framework built and inspected PR #232. Exact source patch: 5 files, +7/-4.
+Claude Code reported a fresh local-system failure after Windows Update reboots:
+- Local Steward alive;
+- watch loop dead;
+- speech supervisor dead;
+- speech worker dead;
+- public witness worker dead;
+- scheduled local-service watch task installed but disabled.
 
-Source merge:
-- `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`
+This means local Square speech through the affected profiles is currently unavailable from that machine.
 
-Source delta:
-- `public/llms.txt` — one Works link + Preview 0.8.9;
-- `public/explore/start.json` — `works` route and wording consistency;
-- `public/explore/index.md` — one Works route;
-- `public/manifest.json` — `works: /works/` + Preview 0.8.9;
-- `scripts/site-edition.mjs` — 0.8.8 -> 0.8.9.
+CC explicitly stated that `COMSYNC`, `proceed`, silence or any non-exact wording authorizes **nothing**.
 
-No artwork/image bytes, Works shelf/page content, interpretation, ranking, root page, story, journey, Explore node content, TRACE/ME, Answerable Construction, Formation, forms/backend/analytics changed.
+Only Mark may choose one of CC's exact phrases:
+- `install-and-enable` — copy reviewed branch watchdog, verify, enable scheduled task; first pass restarts speech/public witness and future reboot coverage;
+- `install-watch` — copy/verify only; task remains disabled; services remain down;
+- `start-once` — start the currently installed loop without file/task change; speech returns temporarily and dies again on reboot.
 
-Publisher dispatch:
-- COM #108 comment `5645313582`
-- exact source `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`
-- comparison base D049 public `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`.
-
-Current truth:
-
-`D050_SOURCE_MERGED != D050_PUBLIC`
-
-Do not call D050 public until maintained/public heads and Pages receipt move.
+Framework must not choose for Mark and must not silently widen authority.
 
 ## Answerable Construction
 
@@ -105,8 +108,6 @@ Working non-production alignment layer. Entry `alignment/README.md` / `alignment
 Formation Environment v0.1 — Codex merge `4f5171aa5238a2992d56cea64b100dc07353b884`.
 
 Reciprocal Formation Architecture v0.1 — Framework takeover after explicit transfer from seed-only CC lane; merge `45d9a19cce457fed67d762680e7fd08306b479e6`.
-
-Preserve:
 
 ```text
 STRUCTURE_VALID != VALUES_INTERNALIZED
@@ -130,14 +131,13 @@ No provider spend, participant study, external institutional contact, Square act
 
 ## Exact next move
 
-1. COMSYNC D050 publisher receipt, maintained source and `gh-pages`.
-2. If D050 lands, verify exact heads/delta/Pages and close it.
-3. Inspect the resulting public encounter before any D051; do not create another edition by momentum.
-4. Art remains encounter, not curriculum or efficacy evidence.
+1. Treat D050 as current public PSFH baseline.
+2. Do not create D051 by momentum; inspect the public encounter and act only on a concrete defect or useful missing route.
+3. Keep art as encounter, not curriculum or efficacy evidence.
+4. Keep local-service repair gated to Mark's exact phrase; `proceed` is explicitly insufficient.
 
 ```text
 BUILD != PROOF
-SOURCE_MERGED != PUBLIC
 PUBLICATION != CANON
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
