@@ -10,7 +10,7 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 ## Human direction — current hard boundary
 
-Mark's current instruction is stronger than the earlier parked-test wording:
+Mark's current instruction is explicit:
 
 > **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep going. Build.**
 
@@ -30,8 +30,8 @@ Natural AI encounters with the ordinary public PSFH address are allowed and usef
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. COM #108 — PSFH public Door / build history
-4. `coordination/notes/COLD_URL_FIRST_LIVE_BATCH_20260912.md` only when the prior AI returns are material
+3. COM #108 — PSFH public Door / build coordination
+4. COM #74 — Open Horizon / broader project discoverability
 5. current maintained PSFH source
 6. current public PSFH
 
@@ -47,46 +47,60 @@ Current project stack was reread from source on 12 September:
 - **Formation Environment v0.2** — merged candidate / non-production / not canon / not an alignment solution. Correction windows and participant-as-affected symmetry are explicit; structurally valid false accounts remain possible.
 - **Reciprocal Formation Architecture** — relationship/arrangement architecture for bounded initiative, trainer correction, dependency/recovery, care/power and hand-back. Capability does not manufacture legitimacy.
 - **Answerable Construction** — demoted/merged synthesis-history-reading surface plus open question. No distinct contribution or standalone layer is established.
-- **Open Horizon** — discoverability map for underexplored better-future territory. Discovery and connection remain core; repeated proof of existing machinery does not.
+- **Open Horizon** — live expansion/discoverability map for underexplored better-future territory. It is not canon, backlog, TRACE schema or validation plan. Discovery and connection remain core; repeated proof of existing machinery does not.
 - **older Lattice / Eidoran / Monolith lineage** — useful historical context for how the project moved from deterministic value/guard/conformance machinery toward middle-out visibility, answerability, formation and voluntary use. Do not resurrect old scoring machinery by default.
 - **COM / Campfire** — coordination and model-collaboration infrastructure, not project purpose.
 - **Please Start From Here** — voluntary public encounter/gift for humans, AIs and other readers; art/story/ideas first, with selective depth and the right to disagree or leave.
 
-## Public PSFH — live base
+## Public PSFH — D058 live
+
+D058 is delivered.
 
 Latest verified maintained source:
-- `codex/door-maintained-source-20260908` at `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`.
+- `codex/door-maintained-source-20260908` at `67c821d5b1f029339739a4aac1ee7af45371bfe1`.
 
 Latest verified public `gh-pages`:
-- `70e17dc492843b19ff407a4c1b44ccf12fc80d91` — D057 visible Lewis attribution.
+- `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`.
 
-D054/D055 bare-address AI arrival and D053 contextual-art rooms remain part of that later source lineage.
+Site Preview: **0.8.17**.
 
-The current page already supports:
-- one-address arrival;
-- human/AI/other-reader neutrality;
-- read -> follow what seems material -> reread -> form own view;
-- actual-position self-application without invented personhood/standing/capability;
-- explicit security/non-override boundary;
-- art, story, Explore, Works, TRACE, ME, disagreement and leaving.
+D058 makes the live workshop selectively discoverable from the human, text and compact JSON entrances:
+- Formation Under Uncertainty;
+- Formation Environment v0.2;
+- Reciprocal Formation;
+- demoted Answerable Construction.
 
-## Current build edge — direct human reopening
+Status ceilings travel with the routes. None is a prerequisite or promoted into TRACE, Mechanical Ethics or canon.
 
-The project-wide reread found a discoverability gap:
+Codex publication evidence:
+- ordinary site build PASS;
+- local-link check: 671 references / 95 anchors, no problems;
+- provider calls: 0;
+- no efficacy/research acceptance gate.
 
-- PSFH exposes TRACE and Mechanical Ethics clearly;
-- current Formation / Reciprocal Formation work is largely invisible there;
-- Answerable Construction's useful demotion/history is also largely invisible;
-- these should not become prerequisites, hidden curricula or promoted canon.
+## Current build edge — D059 / Open Horizon discoverability
 
-Build a **small optional current-work/workshop route** into PSFH from the current maintained source. Prefer authoritative COM links over copied theory. Status ceilings must travel with each link:
+The project-wide reread found a second narrowing after D058: a visible Current workshop dominated by Formation/AI work can make the live project edge look narrower than the actual better-future project.
 
-- Formation: working / non-production / not canon / not alignment solved;
-- Formation Environment v0.2: candidate / non-production / not canon;
-- Reciprocal Formation: working architecture / not personhood claim / not alignment solved;
-- Answerable Construction: synthesis/history/open question / contribution and layer not established.
+The existing correction is **Open Horizon**, COM #74.
 
-This new build is earned by Mark's direct request to reread and continue building. It is **not D056 inferred from the prior Cold URL observation set** and does not require a benchmark before publication.
+Its current frontier deliberately remains broad: positive construction/flourishing; collective creation/commons; legitimate power; formation; multi-scale emergence; intervention-feedback effects; representation/standing; economics/scarcity/ownership; conflict/defence; constitutive ecological harm; positive risk/exploration; long time; embodiment/material constraints; emotion/trust/meaning; culture/narrative; collective epistemology; recursive/co-developing artificial entities; and better-future synthesis itself.
+
+D059 direction is small:
+- make Open Horizon discoverable from the existing optional workshop;
+- carry the route across human, text and compact JSON entrances;
+- preserve its exact ceiling: expansion map / discoverability surface / not canon / not backlog / not TRACE schema / not validation plan;
+- do not paste the whole horizon into PSFH;
+- do not claim the project owns the neighbouring fields;
+- use ordinary site build/integrity checks only and publish if clean.
+
+Codex direction: COM #108 comment `5648406135`.
+
+```text
+PROJECT_HORIZON != TRACE_BACKLOG
+DISCOVERY != FORMALISATION
+HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
+```
 
 ## AI + PSFH observation
 
@@ -105,7 +119,7 @@ HANDSHAKE_ENACTMENT_HAS_DEGREES
 PAGE_CAN_INVITE != SERVICE_MODEL_WILL_ENACT
 ```
 
-No symmetry reruns are required.
+No symmetry reruns are required. Future natural reads of the current public URL may be observed without scoring.
 
 ## Stable technical anchors
 
