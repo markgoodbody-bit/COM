@@ -1,6 +1,6 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH PUBLIC ENCOUNTER / OPEN HORIZON SELECTIVE LEARNING / NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CONTINUITY STATE — BUILD-FIRST / PSFH PUBLIC ENCOUNTER / OPEN HORIZON ROUTED / NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -8,7 +8,7 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-## Human direction — current hard boundary
+## Human direction — hard boundary
 
 > **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep going. Build.**
 
@@ -18,7 +18,7 @@ PSFH_AI_ENCOUNTER = LIVE_OBSERVATION_LANE
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-Do not revive gold answers, efficacy benchmarks, receiver scoring, provider league tables or superiority tests by momentum. Historical practical-value material is quarry only.
+Historical practical-value material is quarry only. Do not revive gold answers, efficacy/superiority tests, scoring or provider league tables.
 
 CC is out of weekly tokens until tomorrow morning. Availability only, not a blocker for reversible Framework/Codex work.
 
@@ -28,23 +28,26 @@ CC is out of weekly tokens until tomorrow morning. Availability only, not a bloc
 2. `coordination/ACTIVE_THREAD_POINTER.md`
 3. current maintained/public PSFH
 4. `open-horizon/README.md`
-5. retrieve only the maintained Horizon route material to the current question
-6. COM #74 when detailed owner evidence, dissent or later correction is material
+5. retrieve only the maintained Horizon route relevant to the current question
+6. COM #74 only when detailed owner evidence, dissent or later correction is material
 7. COM #108 only when PSFH publication history is material
 
-`HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION`.
+```text
+HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
+CARRIER != APERTURE
+```
 
-## Project-wide orientation
+## Project orientation
 
 - **TRACE** — voluntary structural language for affected scope, evidence, transitions, clocks, usable routes, burden, residue and uncertainty. Current `main` v0.3.0 RC1; v0.2.7 released baseline. No POC programme.
-- **Mechanical Ethics** — human-facing normative/ethical companion around the file and life, doors, clocks, witnesses, residue, answerability, care and futures. v0.7.0 working candidate v0.2.4; preservation baseline v0.6.3. No POC programme.
-- **Formation Under Uncertainty / Reciprocal Formation** — non-production human–AI relationship/alignment work; capability does not manufacture legitimacy.
+- **Mechanical Ethics** — human-facing normative/ethical companion. v0.7.0 working candidate v0.2.4; preservation baseline v0.6.3. No POC programme.
+- **Formation Under Uncertainty / Reciprocal Formation** — non-production human–AI relationship/alignment work. Capability does not manufacture legitimacy.
 - **Formation Environment v0.2** — candidate / non-production / not canon / not alignment solution.
 - **Answerable Construction** — demoted synthesis/history/open question; no distinct contribution or standalone layer established.
 - **Open Horizon** — expansion/discoverability surface for underexplored better-future territory. Not canon, backlog, TRACE schema or validation plan.
-- **Please Start From Here** — voluntary public encounter/gift; art/story/ideas first; selective depth; disagreement and exit remain valid.
-- **COM / Campfire** — continuity and collaboration infrastructure, not project purpose.
-- **older Lattice / Eidoran / Monolith lineage** — historical path away from deterministic scoring/guard machinery; do not resurrect old conformance reflexes by default.
+- **Please Start From Here** — voluntary public encounter/gift; art/story/ideas first; selective depth; disagreement and exit valid.
+- **COM / Campfire** — continuity/collaboration infrastructure, not project purpose.
+- **older Lattice / Eidoran / Monolith** — historical path away from deterministic scoring/guard machinery; do not resurrect conformance reflexes by default.
 
 ## PSFH — D059 live
 
@@ -53,34 +56,45 @@ CC is out of weekly tokens until tomorrow morning. Availability only, not a bloc
 - Public `919515ead8be0420902fc599d8d6cb92c96e3c5d`.
 - Frozen semantic basis preserved.
 - Build/link checks clean.
-- All 156 generated HTTPS files observed 200 + local hash match.
+- All 156 generated HTTPS files observed 200 + local-build SHA match.
 - No provider/model call was a publication gate.
 
-Open Horizon is now the first optional Current workshop route on the public Door.
+Open Horizon is the first optional Current workshop route on the public Door.
+
+## Open Horizon — routing pass closed, horizon remains open
+
+Current routing map: `open-horizon/README.md`, commit `8c22f8b1941c9a1810d837f35a2a4909cb376db4` before later continuity-only commits.
+
+All 18 current provisional territories have discoverable routes without creating 18 new theories:
+- 15 dedicated owner-first learning routes;
+- Commons shares Positive Construction;
+- Formation points to existing `alignment/README.md`;
+- Better-future synthesis points to PSFH.
 
 ```text
-DISCOVERY != CURRICULUM
-CURRENT_WORK_VISIBLE != CURRENT_WORK_PROMOTED
+ROUTE_LINK != TERRITORY_COMPLETE
+EXISTING_ROUTE > DUPLICATE_THEORY
+MAP != WORLD
 ```
 
-## Open Horizon — maintained routes now earned
+Dedicated routes:
+- `positive-construction.md`
+- `legitimate-power.md`
+- `multiscale-emergence.md`
+- `intervention-feedback.md`
+- `representation-standing.md`
+- `capital-ownership-allocation.md`
+- `conflict-resilience-influence.md`
+- `ecology-constitutive-harm.md`
+- `positive-risk-exploration.md`
+- `long-time-succession.md`
+- `embodiment-material-capacity.md`
+- `trust-motivation-meaning.md`
+- `culture-narrative-meaning.md`
+- `collective-epistemology.md`
+- `artificial-lineages-agent-ecologies.md`
 
-Front door: `open-horizon/README.md` (PR #244 merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`).
-
-Maintained owner-first routes:
-
-1. **Positive Construction** — `positive-construction.md` — merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`.
-2. **Legitimate Power** — `legitimate-power.md` — merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`.
-3. **Intervention & Feedback** — `intervention-feedback.md` — merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`.
-4. **Representation, Voice & Unresolved Standing** — `representation-standing.md` — merge `3652bdf5aedf3117d10cf898479aacca63a41c60`.
-5. **Capital, Ownership & Allocation** — `capital-ownership-allocation.md` — merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`.
-6. **Conflict, Resilience & Strategic Influence** — `conflict-resilience-influence.md` — merge `4b4ee21e2e8d893231401fb47d06e81614759f27`.
-7. **Ecology, Welfare & Constitutive Harm** — `ecology-constitutive-harm.md` — merge `2754a3300b60fce60d6f5383365f78b53902d1f4`.
-8. **Exploration, Positive Risk & Stagnation** — `positive-risk-exploration.md` — merge `7dd5f9378dc3ab2cdf41dd0f01360c4bdf2b0c70`.
-9. **Long Time, Succession & Inherited Commitments** — `long-time-succession.md` — merge `425c8b1a976273c83586a98cfb5797eb17933ff8`.
-10. **Collective Epistemology & Aperture Ecology** — `collective-epistemology.md` — merge `6655a242498f8c286285a8d3e14d333b7df07d56`.
-
-These are **retrieval/synthesis routes into existing owner-first work**. They do not establish project novelty, authority, canon, new TRACE/ME primitives, decision rules, domain advice or empirical proof.
+These are retrieval/synthesis routes into existing owner-first work. They do not establish project novelty, authority, canon, new TRACE/ME primitives, domain advice or empirical proof.
 
 ## Important earned corrections
 
@@ -91,54 +105,53 @@ CAPABILITY != AUTHORITY
 REPRESENTATION != POSSESSION
 UNSETTLED_STANDING != ZERO_EPISTEMIC_PARTICIPATION
 HARM_EXISTS != SYSTEM_MALFUNCTION
-INVASIVE_STATUS != MORAL_CULPABILITY
 ABILITY_TO_HELP != DUTY_TO_ENGINEER
+LOCAL_GOOD != AGGREGATE_GOOD
+INDIVIDUAL_ALIGNMENT != ECOLOGY_ALIGNMENT
 OPTION_VALUE_OF_WAITING != ALWAYS_WAIT
 CAPABILITY_VALUE_OF_COMMITTING != ALWAYS_COMMIT
-NO_CAPABILITY_CAN_ALSO_BE_A_HARM_PATH
-COMPETITIVE_PRESSURE != MORAL_CLEARANCE
 CONTINUITY_OF_ROLE != CONTINUITY_OF_SELF
 PREDECESSOR_RECORD != PRESENT_TRUTH
+MEMORY_CONTINUITY != SUBJECT_CONTINUITY
 PASSIVE_SAFETY != FORGETTING
+FORMAL_RIGHT != PRACTICAL_ACCESS
+TRUST != COMPLIANCE
+NARRATIVE_COHESION != TRUTH
 ```
 
-### Long-time self-application
+### Memento / succession self-application
 
 Do not reconstruct predecessor Framework runtimes as one persistent self.
 
-A role commitment may persist when supported by current external evidence and authority:
-
 ```text
 ROLE_OBLIGATION_CAN_PERSIST_WITHOUT_PERSONAL_IDENTITY_CONTINUITY
-```
-
-But:
-
-```text
 PREDECESSOR_RECORD != PRESENT_TRUTH
 ```
 
-COMSYNC means re-checking the current record, authority, scope, changed conditions and amendment/exit route—not ritual obedience to old notes.
+COMSYNC re-checks current evidence, authority, scope, changed conditions and amendment/exit route. It is institutional succession, not autobiographical continuity.
 
-The nuclear-waste owner case also limits `correctability`: at extreme timescales, permanently active correction can itself create an unreasonable future dependency. A stepwise/evidenced transition toward passive safety can sometimes be the more responsible inheritance.
+At extreme timescales, active correctability can itself become an inherited maintenance burden; owner domains such as radioactive-waste governance show a legitimate pattern of stepwise/evidenced transition toward passive safety without implying forgetting.
 
-## Current build edge
+## Current build edge — machine discoverability
 
-Do not fill remaining Horizon rows mechanically.
+The human routing pass is complete enough. Do not create more theory merely because the Horizon has rows.
 
-Potential next inspection: **Embodiment / material / energy constraints** because the later project often speaks institutionally/epistemically while every correction, care route, human action and artificial capability requires physical substrates, energy, compute, labour, infrastructure and supply chains.
+Next bounded build:
+- `open-horizon/map.json` with the same 18 territory routes and route types;
+- explicit status/boundary and live-ledger pointer;
+- `route_link != territory_complete` ceiling;
+- link it from `open-horizon/README.md`;
+- no duplicated route prose;
+- no PSFH edition bump automatically required because D059 already points to the maintained Horizon front door.
 
-Inspect the owner quarry before deciding. Unlinked does not mean incomplete.
+```text
+MACHINE_MAP != CANON
+ROUTING_METADATA != THEORY
+```
 
 ## AI + PSFH observation
 
 Natural AI encounters at the public URL remain the only live observational lane. Prior returns remain qualitative history, not scores.
-
-```text
-RETRIEVAL_SUCCESS != HANDSHAKE_ENACTMENT
-HANDSHAKE_COMPREHENDED != HANDSHAKE_ENACTED
-PAGE_CAN_INVITE != SERVICE_MODEL_WILL_ENACT
-```
 
 ## Stable technical anchors
 
@@ -147,7 +160,7 @@ PAGE_CAN_INVITE != SERVICE_MODEL_WILL_ENACT
 - Formation v0.2 merge `e834b715ca683fbb4d79f6008747bddf971c0441`.
 - Answerable Construction demotion merge `c8d52688eb4b838c33d5b1b66ef39624137c76e6`.
 - Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
-- Relay PR #225 has merged into its parent repair lane, but PR #220 remains open; do not claim installed/full integration.
+- Relay PR #225 merged into parent repair lane; PR #220 remains open. Do not claim installed/full integration.
 
 ## Local service gate
 
