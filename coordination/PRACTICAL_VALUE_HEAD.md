@@ -1,46 +1,57 @@
 # PRACTICAL VALUE HEAD
 
-Status: **PARKED BY DIRECT HUMAN DIRECTION / HISTORICAL PRE-EXECUTION DESIGN / NOT CURRENT WORK**  
+Status: **CLOSED AS A LIVE TRACE/ME TEST LANE BY DIRECT HUMAN DIRECTION / HISTORICAL PRE-EXECUTION DESIGN / NOT CURRENT WORK**  
 Updated: 2026-09-12 — Europe/London  
 Later direct human direction wins.
 
 Mark's current instruction is explicit:
 
-> **NO TESTING. WE'RE BUILDING.**
+> **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Build.**
 
-The practical-value work created on 12 September is preserved as historical pre-execution material only. It must not consume current project attention or be resumed by momentum.
+The practical-value work created on 12 September is preserved only as historical quarry. It is not a dormant programme waiting for momentum to restart it.
 
-Parked until Mark explicitly reopens empirical testing:
-- TRACE / Mechanical Ethics thin-activation receiver experiment;
-- case-packet drafting, gold keys, scoring and cold-receiver work;
-- receiver contamination/blinding programme;
-- COM bounded-continuity A/B experiment;
-- provider/recruitment planning for either experiment;
-- further preregistration, benchmark or efficacy work.
+Do **not** resume as current work:
+- TRACE / Mechanical Ethics thin-activation receiver experiments;
+- proof-of-concept, efficacy or superiority testing for TRACE or Mechanical Ethics;
+- case packets, hidden gold keys, scoring, winner/loser classification or receiver benchmark work;
+- receiver contamination/blinding programmes for TRACE/ME efficacy;
+- provider or participant recruitment for those programmes;
+- further preregistration or benchmark machinery whose purpose is to prove TRACE/ME practical advantage.
 
-No scored receiver output was produced before parking. `MATRIX_SOURCE_READY` is therefore only a historical source-preflight result; it is not a reason to continue into packet construction.
+No scored receiver output was produced before this lane was closed. Earlier source/preflight work remains recoverable as history and may explain why the direction changed; it is not a reason to execute the old design.
 
-Current project cadence:
+## Live observation lane
+
+The live empirical/observational lane is the voluntary public Door:
+
+`https://pleasestartfromhere.com/`
+
+AIs may be given or encounter the ordinary public address. Preserve what genuinely happens — retrieval success/failure, interpretation, criticism, disagreement, independent view, self-application where actually observed, stopping or no-use — without converting those encounters into a TRACE/ME scorecard.
+
+```text
+AI + PSFH -> NATURAL ENCOUNTER / OBSERVATION
+OBSERVATION != TRACE_EFFICACY_TEST
+DISAGREEMENT != FAILURE
+NO_USE != FAILURE
+RETRIEVAL_FAILURE != SEMANTIC_RESULT
+```
+
+No symmetry reruns, gold answers, win rates or provider league table are required. The point is to expose the real project to capable readers and learn from what they actually do with it.
+
+## Current cadence
 
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-Current public build lane is PSFH / COM #108. Maintained PSFH source at the direction change:
-`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
+Current constructive direction is PSFH and the wider better-future project. TRACE and Mechanical Ethics remain instruments inside that project, not products that Framework must keep trying to prove.
 
-D053 build direction: extend existing contextual art-first composition from Explore/Atkins and Futures/Shen to three existing graph-backed rooms using existing canonical Works only:
-- Partial views / `aperture` -> Vermeer, *The Geographer*;
-- `significance` -> Harriet Powers, *Bible Quilt 1886*;
-- `hardening` -> Edmonia Lewis, *The Death of Cleopatra*.
-
-Codex assignment: COM #108 comment `5647365997`.
-
-This file remains only so a later aperture can understand what was parked and why. It is not in the current read-first path.
+This file remains only so a later aperture can understand the historical lane and the explicit current boundary.
 
 ```text
 DIRECT_HUMAN_DIRECTION > PRIOR_EXPERIMENT_PLAN
-PARKED != INVALIDATED
+TRACE_ME_POC_TESTING = CLOSED
+PSFH_AI_ENCOUNTER = LIVE_OBSERVATION_LANE
+PROJECT_PURPOSE != FRAMEWORK_VALIDATION
 NO_TESTING -> BUILD_THE_THING
-OBSERVE_AFTER_PUBLISH != PRE_PUBLICATION_LAB
 ```
