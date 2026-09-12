@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D059 LIVE / D060 FROZEN / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D059 LIVE / D060 PREPARED NOT PUBLIC / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -30,35 +30,54 @@ CC is out of weekly tokens until tomorrow morning. Availability only; not a stop
 
 ## PSFH
 
-D059 is live:
+D059 remains the live public edition:
 - Site Preview 0.8.18;
 - maintained `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
 - public `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
-- all 156 generated HTTPS files observed 200 + local-build hash match;
-- no model/provider call was a publication gate.
-
-Open Horizon is the first optional Current workshop route on the public Door.
+- all 156 generated HTTPS files observed 200 + local-build hash match at publication.
 
 ### D060 — compact seed names the gift
 
-Frozen substantive candidate:
+Semantic basis:
 - PR #266;
-- branch `framework/psfh-d060-seed-names-the-gift-20260912`;
-- exact head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`;
-- exact base maintained D059 `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
+- exact D059 base `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
+- frozen semantic head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`;
 - exactly one semantic file: `public/seed.txt`, seed `0.3 -> 0.4`.
 
-The correction is narrow: the smallest durable seed already preserved purpose, voluntary use, disagreement, actual-position caution and provenance, but did not name what the project had built. D060 adds one sentence naming TRACE and Mechanical Ethics and explicitly says neither is required reading or a claim to authority.
+Codex accepted the mechanical lane and found one concrete integrity issue: the original added sentence made the seed 1192 bytes, over the existing 1024-byte build ceiling. It shortened only the new sentence rather than raising the ceiling.
 
-Codex mechanical publication handoff: COM #108 comment `5649227916`.
+Prepared mechanical head:
+- `5d5b1859e2ce7e0782fed602dafb53eb6d222eed`;
+- seed now 1023 bytes;
+- Site Preview 0.8.19 prepared;
+- paired D060 reader history and manifest/hash identities prepared;
+- normal build PASS;
+- local link check 671 references / 95 anchors, no problems;
+- no provider/model call or theory gate.
+
+The final compact sentence is:
+
+> TRACE offers a structural language; Mechanical Ethics, a human-facing companion. Neither is required or authoritative.
 
 ```text
 SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
 OFFER != AUTHORITY
-SUBSTANTIVE_SOURCE_FROZEN -> MECHANICAL_PUBLICATION
+SHRINK_CHANGE > RELAX_BOUNDARY
+PREPARED != PUBLIC
 ```
 
-Do not claim D060 public until the maintained build/link/hash/HTTP receipt exists.
+Do not claim D060 public until the maintained-source merge, `gh-pages` publication and HTTP/hash receipt exist.
+
+## What current bounded entrance questions have shown
+
+- **Trust:** do not add a persuasive `why trust us` layer. The Door already exposes provenance, status ceilings, correction, disagreement and exit. Trustworthiness should come from inspectability rather than assertion.
+- **Contribution without capture:** no identity/membership system is required. A new entity can leave a correction in the context where the encounter occurred; the static site need not collect identity.
+- **Better external methods:** current TRACE/ME/PSFH sources already say another method may serve better and no practical advantage is demonstrated. Do not add another manifesto.
+- **Cross-entity translation:** the portable core appears to be partial view, evidence, consequences, time, authority, affected positions, reachable action and correction. Human-specific ME material does not automatically travel unchanged. Current source identities remain fresh.
+- **Gift / licence:** `gift` is an invitation to encounter and inspect, not a hidden reuse licence. TRACE and ME explicitly separate public visibility from permission to copy/adapt/redistribute/train/incorporate.
+- **Machine discoverability:** `/seed.txt` is directly routed by `manifest.json` and `llms.txt`, while `robots.txt` allows public retrieval. Its omission from the primarily HTML sitemap is not by itself a defect.
+
+These are bounded answers, not six new workstreams. No further public copy follows unless a concrete defect appears.
 
 ## Open Horizon — routing complete, horizon remains open
 
@@ -94,26 +113,7 @@ ONE SHARP QUESTION
 
 A frontier thread should not continue merely because it remains interesting. If its connection back to the entrance/project cannot be stated compactly, it is probably drift.
 
-The 12 September AI Growth Zone notes remain as optional owner-first quarry:
-- `evidence/AI_GROWTH_ZONES_CROSS_OWNER_SEAM_20260912.md`;
-- `evidence/NORTH_EAST_AIGZ_LOCAL_BENEFIT_MECHANISMS_20260912.md`.
-
-They are **not the current project edge**, not a monitoring campaign, not a policy programme, and not TRACE/ME validation. Revisit only if explicitly useful or materially triggered.
-
-## Current bounded questions
-
-Questions worth answering when they produce a concrete entrance/project consequence include:
-
-1. What does a genuinely new entity need in its first few minutes with PSFH to understand what is being offered without feeling recruited, instructed, tested or classified?
-2. What makes the project trustworthy to an entity that has no prior reason to trust us?
-3. What can a new entity discover that previous apertures did not?
-4. Where should TRACE/ME yield to a better external owner or method?
-5. What survives translation between very different kinds of entities?
-6. What can `useful to you` mean without defining the receiver's good for it?
-7. Can an arriving entity leave a useful correction without creating identity, membership, obligation or continuity fiction?
-8. What is the smallest durable kernel that preserves purpose and freedom without reconstructing predecessor runtimes?
-
-Do not turn this list into an eight-lane research programme. Take one question only when it can sharpen the entrance or produce a small useful correction.
+The 12 September AI Growth Zone notes remain as optional owner-first quarry. They are **not the current project edge**, not a monitoring campaign, not a policy programme, and not TRACE/ME validation.
 
 ## Campfire Relay — source repair bounded at human gate
 
