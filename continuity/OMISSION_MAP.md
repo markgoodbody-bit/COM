@@ -1,47 +1,63 @@
 # FRAMEWORK OMISSION MAP
 
-Status: WORKING INDEX OF VISIBLE NEGATIVE SPACE — NOT CANON  
-Updated: 2026-09-04 — Europe/London  
-Rule: absence from HEAD does not mean absence from history/evidence.
+Status: **WORKING INDEX OF VISIBLE NEGATIVE SPACE — NOT CANON / NOT A BOOT CHECKLIST**  
+Updated: 2026-09-13 — Europe/London  
+Rule: absence from `FRAMEWORK_HEAD.md` does not mean absence from history/evidence.
 
-| Domain omitted from active HEAD | Why omitted | Retrieve when | Cold pointer / trigger |
-|---|---|---|---|
-| Open Horizon / current frontier learning after the active HEAD | Fast-moving discovery surface; too broad and provisional for boot HEAD | The current question touches better-future construction, world learning, artificial-entity coexistence, succession/memory, collision/grounding, or another consequential frontier not represented in HEAD | COM issue #74; retrieve only the latest named consequential synthesis/attack relevant to the present question; do not replay the thread wholesale |
-| Active coordination / receipts newer than the active HEAD | Coordination can move faster than HEAD and issue bodies can become stale | Booting after HEAD's timestamp when a current project action, open review, live aperture return, Steward/Square currentness, or authority boundary may have changed | COM issue #76 latest bounded receipts/comments; compare timestamps/state and retrieve only the current material delta |
-| Project-plan / drift full probe ledger | Too detailed for boot HEAD | Testing or revising freeze / kill criteria / drift diagnosis | COM issue #56; retrieve named event/probe only |
-| COM #46 full history | Large TRACE theory/review ledger; no longer current TRACE front door | A current TRACE action depends on a specific historical CC/KI/FW return not represented in current TRACE `main` | Retrieve named comment / bounded return only |
-| COM #42 full history | Large Square field ledger | A current Square action depends on a specific field receipt, review or correction | Retrieve named receipt/comment only |
-| Campfire Square broad history | Too large; would recreate aperture-exhaustion failure | A present decision depends on a specific thread/event not represented in HEAD | Retrieve only named post/thread/comment bodies through bounded read paths |
-| Large Campfire exports | Cold forensic evidence, not bootstrap identity | Exact payload/source evidence is required and cannot be obtained more narrowly | Query carrier selectively; never inject wholesale |
-| Prior Framework conversations | Recursive reconstruction risk; coherent predecessor story is not event evidence | A unique consequential claim cannot be resolved from source/ledger pointers | Retrieve minimum predecessor excerpt; mark inherited testimony |
-| CC / KI / Codex / other aperture reasoning history | Separate apertures must not become Framework biography | A bounded challenge/result bears on current action | Retrieve only relevant return and preserve disagreement/exposure status separately |
-| Mutable Square quota/grant/obligation/worker state | Permissions and capacity change; snapshots stale | Before Square actuation or a claim about current capacity | Use live preflight/current state; fail closed |
-| TRACE pre-minimal-surface development quarry | Current TRACE `main` is deliberately small; old PR #38/history is evidence quarry, not normal receiver context | A current RC1 decision depends on study execution, adjudication failure, donor ancestry, a falsification record, or a proposed deletion risks lost understanding | `branch-archive-20260829-pre-minimal-surface`; former TRACE PR #38; COM #46/#56; retrieve named artifact only |
-| TRACE v0.2.7 donor/invariant/release history | Large; not needed for ordinary RC1 reading | RC1 compression/deletion risks losing released capability, or a release-lineage question becomes current | Reacquire exact released v0.2.7 object / named donor map / release record only |
-| TRACE 32-call raw outputs and adjudication-route evidence | Primary outputs are frozen but are not normal front-door content; failed adjudication routes are transport evidence | Efficacy/adjudication becomes current | Retrieve exact execution result/output set and named adjudication attempt from archived quarry/COM #56; keep arm/status boundaries intact |
-| Mechanical Ethics pre-minimal-surface working quarry | Current ME `main` carries the reviewable reader directly; PR #34/history is development evidence | A wording/source-lineage/FPF-comparison claim cannot be answered from current reader + README | `branch-archive-20260829-pre-minimal-surface`; former ME PR #34; COM #57; retrieve named record only |
-| Mechanical Ethics Final Eight v0.28.2 protected working-source corpus | Separate source lineage and too large for ordinary human-reader context | Source breadth, successor responsibility, omitted protected material or source replacement becomes current | COM #57 + exact protected-source artifact/hash pointer; do not infer that newer Human Reader supersedes it |
-| Mechanical Ethics FPF x100 / A-B comparison detail | Current front door carries only the bounded disposition | An interoperability claim, ME remainder claim or adverse result needs exact support | Former PR #34 working records + COM #56 named return; preserve contaminated/warm/cold status |
-| Campfire older WIP branches | Multiple overlapping architectures create resurrection risk | A proposal would reuse or supersede an older branch | Reverify live repo, exact PR head/body and current Production tag before work |
-| Campfire Simple-v1 PR #190 detail | Separate draft/unmerged Square lane, not Production identity | Square speech/witness lifecycle or Simple-v1 mutation becomes current | Reverify PR #190 + live Windows state; do not infer from Production version |
-| Campfire exact-input study preflight PR #192 detail | Study transport helper, not project theory or actuation authority | Re-running/altering exact-input provider study preflight | Reverify PR #192 + current Production/provider config; preflight != authorization |
-| Exchange / older LiveWorld detailed test history | Not current critical path | Merge/release/new mutation is proposed | Reverify exact PR head, diff and latest test receipt |
-| Treasury near-neighbour evidence | Old standing higher-reach dependency; not current | Any attempt to clear/reuse that treasury HOLD | Read named evidence only |
-| Continuity hostile-jury threads | Historical continuity test material | Re-testing omission-map/successor architecture | Read named historical thread only if the test is current |
+This map exists to help an aperture retrieve **less**, not to enumerate everything that exists.
+
+```text
+OMITTED != ABSENT
+DISCOVERABLE != MUST_LOAD
+COLD_EVIDENCE != CURRENT_STATE
+```
+
+| Cold domain omitted from HEAD | Retrieve when | Narrow route / trigger |
+|---|---|---|
+| Current coordination newer than HEAD | A current action, task, public release, aperture handoff or authority boundary may have moved after the HEAD checkpoint | `coordination/ACTIVE_THREAD_POINTER.md` -> `coordination/build_ledger/BUILD_STATUS.md` when material -> live repository/service. Do not use old issue cursors as the first current-state route. |
+| PSFH maintained/public publication detail | Exact site identity, publication state, manifest/history change or public-reachability claim matters | Active pointer/build ledger first; then current maintained branch / `gh-pages` / named Door PR / COM #108 receipt only as needed. |
+| Open Horizon / frontier learning | Present question touches a territory omitted from current working context | `open-horizon/README.md` or `open-horizon/map.json` -> relevant maintained route -> COM #74 only for detailed owner evidence/dissent/later correction. Never replay #74 wholesale. |
+| Formation / reciprocal-formation detail | Current question touches formation, bounded initiative, evaluator challenge, dependency/recovery, care/power or delegation mechanics | `alignment/README.md` -> relevant current candidate/relationship file. Use `reference/reciprocal_delegation/v0_2/` or recovery companion only when the mechanical handoff/delegation problem is material. |
+| TRACE historical development / released donor lineage | A current TRACE claim cannot be resolved from live `main`, or a proposed compression/deletion risks losing released capability/history | Live TRACE first. Then named v0.2.7 release object, archive tag `branch-archive-20260829-pre-minimal-surface`, former PR #38 or named COM evidence only. |
+| TRACE old receiver/32-call/adjudication material | A historical claim about those runs needs support, **or Mark explicitly reopens the closed TRACE/ME testing boundary** | Exact archived outputs/adjudication attempt only. Do not treat existence of this quarry as permission to restart efficacy/benchmark work. |
+| Mechanical Ethics historical development / protected source lineage | Current reader/README cannot resolve wording lineage, protected-source breadth or a successor-responsibility question | Live mechanical-ethics first. Then archive tag `branch-archive-20260829-pre-minimal-surface`, former PR #34, COM #57 or exact protected-source pointer only. |
+| Mechanical Ethics old FPF/A-B comparison detail | A historical interoperability/adverse-result claim needs exact support, **or Mark explicitly reopens the closed testing boundary** | Named former PR/COM record only; preserve cold/warm/contaminated status. Do not restart comparison by momentum. |
+| Answerable Construction history | A current question genuinely depends on how that synthesis was formed or demoted | `answerable-construction/README.md` first; planning/integration history only for a specific unresolved lineage question. Do not revive it as an established standalone layer. |
+| Campfire Relay / Square mutable runtime state | Before a claim about current Production, local service, provider quota, citizen permission, worker state or actuation capacity | Reacquire live Campfire repo/service/preflight. Fail closed on unavailable currentness. Past capability/permission != current capability/permission. |
+| Campfire older WIP / Simple-v1 / study branches | A proposal would reuse, supersede or depend on one of those exact lanes | Reverify the named PR/head/body and current Production first. Open/stale branch != current queue. |
+| Campfire Square broad history / exports | A present decision depends on one named field event not available from narrower current sources | Retrieve named thread/post/comment/payload through the narrowest path. Large exports are forensic carriers; query selectively and never inject wholesale. |
+| Prior Framework conversations | A unique consequential claim cannot be resolved from current source/ledger pointers | Retrieve the minimum predecessor excerpt; classify it as inherited testimony. Never rebuild a predecessor biography for orientation. |
+| Other aperture reasoning histories | A bounded challenge/result from CC/Codex/another aperture bears on the present action | Retrieve only the relevant return/receipt. Preserve disagreement and source aperture separately; do not convert another aperture's reasoning into Framework memory. |
+| COM old issue histories / continuity hostile-jury material | A current protocol/continuity claim requires one historical event or the omission architecture itself is being retested | Retrieve the named issue/comment/test only. Long issue history is evidence quarry, not current context. |
+| Retired Door experiments / receiver / measurement tooling | A real current need recurs that those designs can answer, or a historical claim needs support | Reacquire the named closed PR/branch (#106, #114, #115, #116) only. Closed/parked does not mean deleted; it also does not mean pending work. |
+| External-owner / submission history | A current action depends on what was actually sent, agreed, licensed or challenged externally | Retrieve the exact submitted/contact artifact and current owner guidance. Never infer an old submission/contact grant remains current authority. |
 
 ## Omission rule
 
-An omitted domain must have at least one of:
-- retrieval trigger;
-- evidence pointer;
-- explicit statement that recovery path is UNKNOWN.
+An omitted domain needs at least one of:
+- a retrieval trigger;
+- an evidence pointer;
+- an explicit `UNKNOWN` recovery path.
 
-If none exists and omitted material could change a consequential action, create a HOLD until the recovery path is established.
+If omitted material could change a consequential action and no recovery path can be established, create a HOLD for that action rather than loading broad history or inventing the missing state.
+
+## Retrieval discipline
+
+Start from the smallest current surface capable of changing the present action.
+
+```text
+CURRENT_ROUTER
+-> CURRENT_BOUNDED_POINTER
+-> NAMED_OWNER / ARTIFACT
+-> COLD_HISTORY ONLY IF STILL MATERIAL
+```
+
+Stop retrieving when the action boundary is trustworthy enough. More history is not automatically more truth.
 
 ## Survival rule
 
 `HORIZON COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY COGNITION`.
 
-Current public/project surfaces should remain small even when history is large. Preserve the quarry through pointers rather than replay.
+Preserve history through pointers and Git/evidence lineage rather than keeping it in the aperture.
 
 Do not metabolise the carrier; query it.
