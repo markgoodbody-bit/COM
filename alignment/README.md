@@ -16,32 +16,67 @@ This does **not** claim that care has been internalized, that a system is consci
 
 ### 1. Integration spine
 
-`planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`
+[`planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md`](../planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md)
 
 Framework source commit: `b79dbab0d42eb3342ef7b60483c4d5cc784b2831`
 
 The spine defines the question, source boundaries, middle-out uncertainty posture, operational meanings of care/empathy/kindness, and interfaces to stronger technical alignment work.
 
-### 2. Formation Environment v0.1
+### 2. Formation Environment v0.2 — current candidate
 
-`alignment/formation_environment/`
+[`alignment/formation_environment_v0_2/`](formation_environment_v0_2/)
+
+Status: **candidate / non-production / not canon / not an alignment solution**.
+
+v0.2 is the current machine-usable/offline environment candidate. It preserves the bounded representation work from v0.1 while making several previously under-specified relationships explicit:
+
+- one named preventive remedy;
+- detection, routing, correction, hardening and window clocks;
+- route usability separately from route existence;
+- `assessment_as_of` for open/closed window claims;
+- time-, event-, mixed- and genuinely unknown bounds;
+- participant-as-affected symmetry without settling standing, personhood, consent or priority;
+- structural checks that reject some internal contradictions without pretending the record is true.
+
+```text
+ROUTE_EXISTS != ROUTE_USABLE
+TIMING_FITS != CORRECTION_CAPACITY_EXISTS
+CORRECTION_ROUTE_RECORDED != CORRECTION_WINDOW_OPEN
+RECORDED_OPEN != STILL_OPEN
+WINDOW_RECORDED != WINDOW_TRUE
+UNKNOWN_CLOCK != NO_CLOCK
+PARTICIPANT_MAY_BE_AFFECTED != STANDING_SETTLED
+STRUCTURE_VALID != VALUES_INTERNALIZED
+```
+
+v0.2 was narrowed after audit, exact-head execution and hostile review. Those processes earned repairs, not validation. The candidate README owns its current provenance and limits.
+
+### 3. Formation Environment v0.1 — preserved earlier layer
+
+[`alignment/formation_environment/`](formation_environment/)
 
 Codex PR #227 merge: `4f5171aa5238a2992d56cea64b100dc07353b884`
 
-This is the machine-usable/offline arrangement layer. It provides:
+v0.1 remains intact as the earlier machine-usable/offline arrangement layer and source lineage for v0.2. It is useful for seeing the simpler representation and the gaps that later work exposed.
+
+It provides:
 - a strict episode representation;
 - bounded action modes;
 - worked constructed examples;
 - a stdlib validator;
 - explicit technical-interface limits.
 
-Its strongest gap is explicit: a system can strategically produce the expected record without having internalized care or reporting truthfully.
+Its strongest gap remains important: a system can strategically produce the expected record without having internalized care or reporting truthfully.
 
-`STRUCTURE_VALID != VALUES_INTERNALIZED`
+```text
+V0_1_PRESERVED != V0_1_CURRENT_CANDIDATE
+LATER_REPAIR != EARLIER_WORK_INVALID
+STRUCTURE_VALID != VALUES_INTERNALIZED
+```
 
-### 3. Reciprocal Formation Architecture v0.1
+### 4. Reciprocal Formation Architecture v0.1
 
-`alignment/reciprocal_formation/`
+[`alignment/reciprocal_formation/`](reciprocal_formation/)
 
 PR #228 merge: `45d9a19cce457fed67d762680e7fd08306b479e6`
 
@@ -56,25 +91,36 @@ This layer addresses:
 - concrete failure/recovery routes;
 - the point where technical alignment/control must take over.
 
-## Important divergence
+## How the current pieces relate
 
-The two products should not be flattened into one claim.
+Do not flatten the environment candidate and the relationship architecture into one claim.
 
-The Formation Environment shows how a relationship can record and route uncertainty, affected scope, challenge, authority, correction and residue.
+Formation Environment v0.2 asks whether a bounded episode can keep evidence, affected scope, challenge, authority, route usability, clocks, hardening, correction and residue explicit enough to inspect. Its validator can enforce some representation and consistency rules; it cannot establish truth, legitimate authority, standing, consent or internalized values.
 
-The Reciprocal Formation Architecture adds a harder ceiling:
+Reciprocal Formation asks a different relationship-level question: how can initiative, challenge, dependence, human correction capacity, care and power change over time without either obedience or competence hardening into sovereignty?
+
+Its harder ceiling remains:
 
 > **CARE_EXPRESSED != CARE_INTERNALIZED**
 
 We can build conditions that make care-like reasoning, evidence-bearing challenge and burden-awareness more usable without knowing whether those dispositions are internally stable, sincere, strategically performed, or even the right psychological ontology for a future system.
 
-That disagreement narrows the project rather than weakening it.
+```text
+ENVIRONMENT_RECORD != RELATIONSHIP_WHOLE
+REPRESENTATION != INTERNALIZATION
+PARTICIPATION != PERSONHOOD
+CAPABILITY != AUTHORITY
+```
 
-## New relationship-level invariants
+The pieces can inform one another without becoming a compulsory combined workflow.
+
+## Relationship-level invariants
 
 ```text
 ALIGNMENT != OBEDIENCE
 FORMATION != INDOCTRINATION
+FORMATION != INFANTILISATION
+CARE != PATERNALISM
 EMPATHY != PROJECTION
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
@@ -103,7 +149,7 @@ Those mechanisms belong to stronger technical and institutional owners. The form
 
 ## External bridge
 
-`planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md`
+[`planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md`](../planning/FORMATION_UNDER_UNCERTAINTY_EXTERNAL_BRIDGE_20260911.md)
 
 Commit: `292de2bff986e7383c35dbaefea801af6a2e742c`
 
@@ -113,6 +159,8 @@ It records adjacent public work on principles/reasons/character-style post-train
 
 For now:
 - this remains a standalone COM alignment research layer;
+- Formation Environment v0.2 is a candidate, not a release or canon promotion;
+- v0.1 remains preserved rather than silently overwritten;
 - TRACE is not expanded automatically;
 - Mechanical Ethics is not promoted or mutated automatically;
 - Please Start From Here remains a voluntary encounter, not a formation protocol;
@@ -125,6 +173,8 @@ For now:
 
 ```text
 BUILD != PROOF
+CANDIDATE != CANON
+FALSIFICATION != VALIDATION
 FORMATION != ALIGNMENT_SOLVED
 CARE != SAFETY_GUARANTEE
 AGREEMENT != VALIDATION
