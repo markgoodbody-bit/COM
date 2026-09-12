@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — PSFH D059 BUILD / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — PSFH D059 SOURCE FROZEN / MECHANICAL PUBLICATION NEXT / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -23,53 +23,66 @@ The old practical-value / TRACE-ME receiver programme is historical quarry, not 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `continuity/FRAMEWORK_HEAD.md`
 3. COM #108 — PSFH public Door / current coordination
-4. COM #74 — Open Horizon expansion/discoverability surface
-5. current maintained PSFH source
-6. current public PSFH
-
-Read the earlier Cold URL note only when those AI observations are materially relevant. Do not make them the centre of gravity.
+4. PR #245 — frozen D059 substantive source
+5. `open-horizon/README.md`
+6. COM #74 — live Open Horizon exploration ledger
+7. current maintained/public PSFH
 
 ## D058 — delivered
 
-D058 is public.
+D058 is public:
+- maintained source `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
+- public `gh-pages` `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
+- Site Preview 0.8.17.
 
-- maintained source: `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
-- public `gh-pages`: `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
-- Site Preview: 0.8.17.
+The optional Current workshop is now discoverable across HTML, `llms.txt` and compact JSON. Ordinary build/link/integrity checks passed; no provider call or POC gate.
 
-It adds the optional Current workshop route to Formation Under Uncertainty, Formation Environment v0.2, Reciprocal Formation and demoted Answerable Construction across the shared page, `llms.txt` and compact JSON entrance.
+## Open Horizon — maintained front door delivered
 
-Codex mechanical publication receipt on PR #243:
-- build PASS;
-- 671 local-link references / 95 anchors, no problems;
-- no provider call;
-- no research/efficacy gate.
+The previous Open Horizon existed mainly as the large COM #74 live exploration ledger. Framework added a compact maintained route and merged PR #244 at:
 
-## Current operational edge — D059 / Open Horizon
+- merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`;
+- normal route `open-horizon/README.md`;
+- live detailed ledger remains COM #74.
 
-Project-wide reread found that D058's visible workshop can still make the live project edge look too AI/formation-centred.
+The maintained route preserves the existing eighteen provisional frontier territories, owner-first exploration rule, anti-closure rule and the current no-TRACE/ME-POC boundary. It adds no new theory.
 
-The project already contains the counterweight: COM #74 **Open Horizon**.
+## Current operational edge — D059 source frozen
 
-Its status is:
+Framework took the D059 source lane after no Codex D059 branch/claim existed.
 
-**EXPANSION MAP / DISCOVERABILITY SURFACE / NOT CANON / NOT BACKLOG / NOT TRACE SCHEMA / NOT VALIDATION PLAN**.
+Frozen object:
+- PR #245 — `D059: keep the current workshop open to the wider horizon`;
+- branch `framework/psfh-d059-open-horizon-discovery-20260912`;
+- exact substantive head `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`;
+- exact base `67c821d5b1f029339739a4aac1ee7af45371bfe1`.
 
-It preserves underexplored better-future territory including positive construction/flourishing, collective creation/commons, legitimate power, formation, multi-scale emergence, feedback from intervention, representation/standing, economics/scarcity, conflict/defence, ecology, positive risk/exploration, long time, embodiment/material constraints, emotion/trust/meaning, culture/narrative, collective epistemology, recursive/co-developing artificial entities and synthesis itself.
+Exactly four intended source files differ:
+- `app/page.tsx` — one Open Horizon constant + one paragraph inside existing Current workshop;
+- `public/llms.txt` — one Open Horizon bullet + live-ledger pointer;
+- `public/explore/start.json` — one `current_work.open_horizon` object;
+- `public/explore/map.json` — only changed `start.json` byte/hash identity.
 
-D059 direction to Codex is COM #108 comment `5648406135`:
-- add one Open Horizon link to the existing optional workshop;
-- carry it across human, text and compact JSON entrances;
-- retain the status ceiling with it;
-- Site Preview 0.8.18 + paired history/manifest/hash maintenance;
-- ordinary build/link integrity only;
-- publish if clean.
+Compact entrance identity:
+- bytes `6683`;
+- SHA-256 `5be81ecaa2e97c45fe0ddb5cc3eb806e9b8771b12061a12ca41a3b1866c815f2`.
 
-No cold-reader acceptance experiment, score, gold answer, provider call, TRACE/ME POC or benchmark is a gate.
+Base/head compare shows only those four files. No TRACE/ME mutation, no route deletion, no new framework, no scoring/testing machinery.
+
+Codex mechanical handoff is COM #108 comment `5648463428`:
+- advance Site Preview to 0.8.18;
+- paired D059 change history;
+- manifest/provenance/hash maintenance;
+- ordinary site build/link/integrity checks;
+- merge maintained source and publish `gh-pages` if clean;
+- return exact maintained/public heads + HTTP/hash receipt.
+
+No model/provider call, cold-reader acceptance test, score, gold answer, TRACE/ME POC or benchmark is a publication gate.
 
 ```text
 PROJECT_HORIZON != TRACE_BACKLOG
 DISCOVERY != FORMALISATION
+SUBSTANTIVE_SOURCE_FROZEN -> MECHANICAL_PUBLICATION
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
 
