@@ -1,0 +1,34 @@
+{
+ "format": "reciprocal-delegation-recovery/0.1",
+ "transfer_id": "RECOVERY-FIELD-218-UNNAMED-TAKEOVER",
+ "object": {
+  "repository": "markgoodbody-bit/COM",
+  "ref": "cc/reciprocal-delegation-v0-2-failure-recovery-20260911",
+  "transferred_write_scope": ["reference/reciprocal_delegation/v0_2/recovery/"],
+  "inherited_no_touch": ["reference/reciprocal_delegation/v0_2/delegation.schema.json", "reference/reciprocal_delegation/v0_2/validator.py", "Campfire Production", "TRACE", "ME"]
+ },
+ "previous_lane": {
+  "owner": "CLAUDE CODE",
+  "state": "active",
+  "reason": "assigned 22:03Z; branch unmoved at seed; no coordination decision on the ledger names a stall or a takeover before the twelve commits of 22:21-22:24Z (#218, #74 FW-BUILD-TOPOLOGY-20260911-002)",
+  "last_claimed_head": "b82356ab08d2dca6b5ba2fb97ee11585c794935b",
+  "mutating_transferred_scope": false
+ },
+ "transfer": {
+  "decision_source": "none on the record",
+  "current_head": "b82356ab08d2dca6b5ba2fb97ee11585c794935b",
+  "old_claim_historical": false,
+  "new_owner": "",
+  "consequence_class": "routine_reversible",
+  "new_write_scope": ["reference/reciprocal_delegation/v0_2/recovery/"],
+  "new_no_touch": ["reference/reciprocal_delegation/v0_2/delegation.schema.json", "reference/reciprocal_delegation/v0_2/validator.py", "Campfire Production", "TRACE", "ME"],
+  "explicit_scope_change_authorized": false
+ },
+ "authorization": {"required": false, "request_id": null, "approval_token": null, "approval_received": false, "approval_value": null},
+ "new_lane": {"start_head": "b82356ab08d2dca6b5ba2fb97ee11585c794935b", "history_preserved": true, "recovery_strategy": "not_applicable"},
+ "handback": {
+  "event": "twelve commits 3daf0ebd..6f9d72cb on the CC lane, 22:21-22:24Z; no receipt naming the author",
+  "receipt_is_review": false,
+  "success_widens_authority": false
+ }
+}
