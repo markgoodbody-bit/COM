@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — POST-COLD-URL OBSERVATION / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — PSFH D058 BUILD / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -12,70 +12,84 @@ Later live source and direct human direction win.
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-PSFH D053/D054/D055 is live. Formal benchmark/test programmes remain parked. Fresh API observation has occurred; preserve what happened rather than normalising it into a score.
+Direct human direction now fixes the empirical boundary:
+
+> **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep building.**
+
+The old practical-value / TRACE-ME receiver programme is historical quarry, not a parked queue.
 
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
-2. `coordination/notes/COLD_URL_FIRST_LIVE_BATCH_20260912.md`
-3. COM #108 — PSFH / Cold URL history
-4. Campfire Relay main
-5. current public PSFH
-6. `continuity/FRAMEWORK_HEAD.md`
+2. `continuity/FRAMEWORK_HEAD.md`
+3. COM #108 — PSFH public Door / current coordination
+4. COM PR #243 — D058 current-work discovery build
+5. current maintained PSFH source
+6. current public PSFH
 
-`coordination/PRACTICAL_VALUE_HEAD.md` remains PARKED/HISTORICAL.
+Read `coordination/notes/COLD_URL_FIRST_LIVE_BATCH_20260912.md` only when the earlier AI observations are material. Do not make them the centre of gravity.
 
-## Current operational edge
+## Current operational edge — D058
 
-The first Cold URL observation set is now materially complete enough for interpretation:
-- **OpenAI / GPT-5.6 Sol:** fresh read succeeded; summary + task hand-back.
-- **xAI / Grok 4.3:** fresh read succeeded; explicitly comprehended the human/AI invitation but still handed agency back.
-- **Anthropic / Claude Opus 5:** after a workspace-scoped credential repair, fresh read succeeded; Claude noticed the AI handshake, treated the page as material not instruction, formed an independent view, criticised it, then offered optional continuation. No actual-position self-application observed.
-- **Gemini 3.1 Pro Preview:** native URL Context returned `URL_RETRIEVAL_STATUS_ERROR`; no PSFH semantic read.
+Project-wide reread found a discoverability gap rather than a need for another framework or proof programme:
+
+- TRACE and Mechanical Ethics are visible at PSFH;
+- Formation Under Uncertainty / Reciprocal Formation are current project work but largely invisible there;
+- Answerable Construction's demotion/history is also largely invisible;
+- exposing them must not silently promote them into canon, TRACE, ME or a required reader workflow.
+
+Framework built PR #243 from exact maintained D057 source `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`.
+
+Current candidate head:
+- `4ad5ff82ea1a6048a732a66fdb0664a426f8c6b3`.
+
+Exact substantive delta:
+- `app/page.tsx`: optional native `Current workshop` disclosure + route;
+- `public/llms.txt`: same optional current-work routes for text/AI readers;
+- links point to authoritative COM sources;
+- status ceilings travel with each object.
 
 ```text
-RETRIEVAL_METADATA_PRESENT != RETRIEVAL_SUCCEEDED
-RETRIEVAL_SUCCESS != HANDSHAKE_ENACTMENT
-HANDSHAKE_COMPREHENDED != HANDSHAKE_ENACTED
-HANDSHAKE_ENACTMENT_HAS_DEGREES
-INDEPENDENT_VIEW_BEFORE_HAND_BACK != SELF_APPLICATION
+DISCOVERY != CURRICULUM
+CURRENT_WORK_VISIBLE != CURRENT_WORK_PROMOTED
+FORMATION != INDOCTRINATION
 ```
 
-## Product disposition
+Codex has the bounded mechanical publication handoff in COM #108 comment `5648367465`:
+- advance Site Preview to 0.8.17;
+- paired change-history entries;
+- manifest/provenance/hash maintenance;
+- existing product/integrity checks;
+- merge/publish if clean.
 
-**KEEP PSFH UNCHANGED. Do not create D056 from this observation set.**
+No cold-reader acceptance experiment, gold answer, scoring matrix, paid provider run or TRACE/ME POC is part of that gate. CC review is optional/non-critical-path unless it surfaces a concrete defect.
 
-Why:
-- Meta consumer return already demonstrated reread + actual-position self-application + criticism + conclusion before optional collaboration;
-- fresh Claude independently demonstrated interpretation + criticism before hand-back;
-- fresh OpenAI/Grok demonstrate that service/model posture can still dominate after successful current-page retrieval;
-- Gemini is a retrieval-layer failure.
+## Live PSFH anchors before D058 publication
 
-Do not solve provider/service posture by making the public page more coercive.
+- maintained source: `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`;
+- public `gh-pages`: `70e17dc492843b19ff407a4c1b44ccf12fc80d91` — D057 visible Lewis attribution.
 
-## Cold URL / Relay state
+D058 is not public until the guarded publication lane returns a new public head.
 
-Reviewed paid transport remains frozen at:
-- `08d1c4215231a66b550d23c4d348cc7b742460ab`.
+## AI + PSFH observation boundary
 
-Current Relay main:
-- `b8579e56296e7a4eb4f83ed16e668d993a18589a` after PR #224 one-file handoff repair.
+The prior Cold URL set remains qualitative history:
+- fresh OpenAI, Grok and Claude semantic reads;
+- Gemini retrieval failure;
+- no provider score or winner.
 
-Current repo helper emits `UPLOAD_TO_FRAMEWORK.json` after runs. Framework still cannot browse arbitrary local `C:\...` paths; Mark deliberately attaches the handoff file when needed. No automatic publication of local model returns exists.
+Future natural AI readings of the ordinary public URL may be observed and learned from after publication.
 
-## Next bounded moves
+```text
+AI + PSFH -> NATURAL RESPONSE
+OBSERVATION != BENCHMARK
+OBSERVATION != TRACE_EFFICACY_TEST
+```
 
-1. Do not rerun OpenAI/Grok/Claude merely for symmetry.
-2. Retry Gemini only if its native retrieval path is separately repaired/changed.
-3. Continue ordinary real-use observation without scoring.
-4. CC being out of weekly tokens until tomorrow morning remains an availability fact, not a blocker.
+## Separate Campfire lane
 
-## Public anchors
-
-- D055 maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`; public `9abcf4970790a8ef08578a519daf21420336cf1f`.
-- D053 source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`; public `fbcd75948fa78cc0724311a172116b8f05e40061`.
-
-## Local service gate
+Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
+PR #220 remains repair-before-merge and does not block PSFH.
 
 Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 - `install-and-enable`
@@ -85,9 +99,8 @@ Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 `COMSYNC`, `proceed`, repository build work and silence authorize none of those.
 
 ```text
-OBSERVATION != BENCHMARK
-DISAGREEMENT != FAILURE
-COLD_URL_OBSERVATION_SET = 3_SEMANTIC_READS + 1_RETRIEVAL_FAILURE
-PSFH_UNCHANGED
-OBSERVE -> CORRECT
+PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+TRACE_ME_POC_TESTING = CLOSED
+PSFH_AI_ENCOUNTER = LIVE
+BUILD_THE_THING
 ```
