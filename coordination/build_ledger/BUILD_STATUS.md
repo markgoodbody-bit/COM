@@ -7,9 +7,9 @@ These are observed states, not live permission or automatic monitoring. Re-read 
 | Work | Owner | State | Current disposition |
 | --- | --- | --- | --- |
 | AUDIT-233 | FRAMEWORK | closed | x100 drift audit merged: 97 resisted, 2 narrow findings, 1 material finding, 0 major drift. |
-| PSFH-D051 | FRAMEWORK SOURCE / CODEX PUBLISH | closed / public | Category-neutral compact-reading label is public at Preview 0.8.10. CC later independently witnessed 159/159 served files matching the public head. |
-| PSFH-D052 | FRAMEWORK | draft / hold publication | Homer Works correction at exact head `a8794d53...`; exact-head maintained build/test requested from Codex before any release pass. |
-| COM-234 | FRAMEWORK takeover after explicit transfer | repaired / draft / hold merge | Formation v0.2 repaired exact head `3afc6414...`; fresh Codex execution + CC hostile re-review requested before merge. |
+| PSFH-D051 | FRAMEWORK SOURCE / CODEX PUBLISH | closed / public | Preview 0.8.10 public; CC later independently witnessed 159/159 served files matching the public head. |
+| PSFH-D052 | FRAMEWORK | repaired / draft / hold publication | Homer Works candidate repaired at `fc41cd61...` after Codex exact-head build found one broken unpublished-metadata link; repaired-head recheck pending. |
+| COM-234 | FRAMEWORK takeover after explicit transfer | repaired / draft / hold merge | Formation v0.2 repaired exact head `3afc6414...`; fresh Codex execution + CC hostile re-review pending. |
 
 ## AUDIT-233 — x100 drift falsification
 
@@ -46,31 +46,42 @@ Codex reports CC origin witness `5645618870`: 159/159 served files matched the p
 
 Mark directly identified that Winslow Homer's *Camp Fire* appears on the PSFH opening but is absent from the canonical Works collection. Source history confirms that was an older intentional split: the first five formed the starting Works shelf while Homer stayed on the homepage. Once Works became the canonical art library, the split became stale.
 
-Draft PR #236 exact head:
+Draft PR #236 initial exact head:
 `a8794d536b940a22499099f66d97c06a488acb67`
 
-Candidate:
-- adds `/works/winslow-homer/` from the already-pinned Homer source/responsive copies;
-- adds a sixth shelf entry without reordering the existing five;
-- adds sitemap route;
-- adds D052 custody overlay + tests while preserving the historical five-work review object.
+Codex exact-head execution `5645679074`:
+- `npm run build`: exit 0;
+- `node --test scripts/test-works.mjs`: 4/4 pass;
+- exact output comparison: only sitemap + Works shelf changed and Homer page added; 153 generated files unchanged, including root, prior five Works and art bytes;
+- undeclared Works probe refused as intended;
+- one real D052 defect found: Homer linked to `camp-fire-responsive.json`, a source custody file not published by the maintained copier;
+- broader house-style/challenge failures reproduced on D051 and are pre-existing debt, not D052 failures.
 
-No image bytes/homepage/reader/TRACE/ME/Formation/Campfire changes.
+Framework applied only the earned repair. Current frozen repaired head:
+`fc41cd612226fe550c0dd588c90c0b9702c413ae`
 
-**HOLD:** Codex exact-head execution request `5645662774`. No merge/publication before maintained build/test evidence. If earned, D052 / Preview 0.8.11 metadata + fresh build are a separate release pass.
+Repair:
+- removed the broken public responsive-record link;
+- published `camp-fire.json` is labelled `Image source and viewing-copy details` because it already embeds responsive metadata;
+- repinned Homer encounter to 2145 bytes / sha256 `d13dc2796d834f1f71b8c35a0bd4c1ed244e30c1b0c81aeaf27bebabbb7d34cf`;
+- Works tests now assert the published details target exists, unpublished responsive JSON is not linked, and Homer appears exactly once in sitemap.
+
+Repaired-head recheck requested at `5645732778`.
+
+No image bytes/homepage/reader/TRACE/ME/Formation/Campfire changes. **No release pass until repaired-head recheck returns.** If it passes, D052 / Preview 0.8.11 history + edition metadata + fresh exact-head build remain a separate release step.
 
 ## COM-234 — FORMATION ENVIRONMENT v0.2
 
 Original Codex seed: `ad160447d112ebf4d2908099c6a78509e90c1570`.  
 Explicit transfer before takeover: `5645438174`.  
-Old frozen head: `bcd79854f3bc1c029bdb69769dec8cb11ba3bca9` — now historical.
+Old frozen head: `bcd79854f3bc1c029bdb69769dec8cb11ba3bca9` — historical.
 
 Evidence against old head:
 - Codex execution `5645523947` — 8 tests / 7 pass / 1 brittle assertion; seven examples structurally valid;
 - Codex route-usability `5645550080` — MATERIAL;
 - Codex schema/$ref contract `5645609015` — narrow fail-closed extension;
-- CC hostile review `5645642714` — `HOLD_MERGE / REPAIR_SMALL`, including new M1 hardening/window contradiction;
-- Codex reproduction/disposition `5645653434` — independently reproduces M1 and whitespace-widening bypass, authorizes combined Framework repair pass.
+- CC hostile review `5645642714` — `HOLD_MERGE / REPAIR_SMALL`, including hardening/window contradiction;
+- Codex reproduction/disposition `5645653434` — independently reproduced M1 and whitespace-widening bypass and bounded the repair.
 
 One consolidated repair pass produced exact head:
 `3afc6414cbc3c3c69ba07a7e64dd1a252acafc43`
@@ -97,7 +108,7 @@ TIMING_FITS != CORRECTION_CAPACITY_EXISTS
 TRACEABILITY != TRUTH
 ```
 
-Fresh exact-head Codex execution + CC hostile re-review requested at `5645713175`. **No merge before repaired-head evidence is returned and dispositioned.**
+Fresh exact-head Codex execution + CC hostile re-review requested at `5645713175`. No repaired-head return was present at the latest COMSYNC. **No merge before repaired-head evidence is returned and dispositioned.**
 
 ## Placement / separate human gate
 
