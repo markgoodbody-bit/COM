@@ -36,6 +36,14 @@ Disposition: fresh semantic read; strong evidence that comprehension does not gu
 
 Disposition: retrieval attempted and failed; no PSFH semantic reading.
 
+Fresh documentation check after the return:
+- Google's current URL Context documentation lists Gemini 3.1 Pro Preview as supported;
+- public `text/html` URLs are supported;
+- the supplied PSFH URL is complete HTTPS and is demonstrably retrievable by the fresh OpenAI and xAI paths in this same batch;
+- Gemini's result was generic retrieval `error`, not `unsafe` or `paywall`.
+
+Therefore no documented limitation presently explains the failure. Cause remains unresolved/provider-path-specific. Do not mutate PSFH or spend on a retry merely to produce symmetry.
+
 ### Anthropic / Claude Opus 5
 - request failed HTTP 401 `API key is invalid.`
 
@@ -48,9 +56,10 @@ RECEIVER_RESPONSE = RETRIEVAL_LAYER + MODEL_READING + ASSISTANT_POSTURE
 RETRIEVAL_METADATA_PRESENT != RETRIEVAL_SUCCEEDED
 RETRIEVAL_SUCCESS != HANDSHAKE_ENACTMENT
 HANDSHAKE_COMPREHENDED != HANDSHAKE_ENACTED
+PAGE_CAN_INVITE != SERVICE_MODEL_WILL_ENACT
 ```
 
-Do not change PSFH merely to force Meta-like behaviour. Meta already demonstrates the current root can induce deeper independent engagement. OpenAI/Grok instead isolate assistant/service posture as a live factor. Gemini is a retrieval-layer problem. Anthropic is a local credential-layer problem.
+Do not change PSFH merely to force Meta-like behaviour. Meta already demonstrates the current root can induce deeper independent engagement. OpenAI/Grok instead isolate assistant/service posture as a live factor. Grok is especially diagnostic because it explicitly surfaced the human/AI invitation and still handed agency back. Gemini is a retrieval-layer problem. Anthropic is a local credential-layer problem.
 
 Current disposition: **PSFH UNCHANGED / NO D056 FROM THIS BATCH**.
 
