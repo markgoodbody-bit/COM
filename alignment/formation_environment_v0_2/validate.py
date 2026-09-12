@@ -123,6 +123,10 @@ def references_exist(refs, name, evidence_ids, errors):
             errors.append(f"{name}: missing evidence {ref}")
 
 
+def known_evidence_refs(refs, evidence_by_id):
+    return [ref for ref in refs if ref in evidence_by_id and evidence_by_id[ref]["kind"] != "unknown"]
+
+
 def check_bound(bound, name, evidence_ids, errors):
     kind = bound["kind"]
     has_time = bool(bound["time_value"].strip())
@@ -146,8 +150,7 @@ def check_definite_assessment(item, name, unknown_value, evidence_by_id, errors)
     if assessment != unknown_value and not refs:
         errors.append(f"{name}: definite assessment needs referenced evidence")
     references_exist(refs, name, set(evidence_by_id), errors)
-    known_refs = [ref for ref in refs if ref in evidence_by_id and evidence_by_id[ref]["kind"] != "unknown"]
-    if assessment != unknown_value and refs and not known_refs:
+    if assessment != unknown_value and refs and not known_evidence_refs(refs, evidence_by_id):
         errors.append(f"{name}: definite assessment cannot rest only on evidence marked unknown")
 
 
@@ -201,13 +204,18 @@ def validate(record, previous=None):
     window = record["clocks"]["window"]
     check_bound(window["assessment_as_of"], "clocks.window.assessment_as_of", ids["evidence"], errors)
     check_definite_assessment(window, "clocks.window", "unknown", evidence_by_id, errors)
-    if window["assessment"] == "open" and record["clocks"]["hardening"]["status"] == "occurred":
-        errors.append("clocks.window: open contradicts occurred hardening for the same preventive_remedy")
+    if window["assessment"] in {"open", "closed"} and window["assessment_as_of"]["kind"] == "unknown":
+        errors.append("clocks.window: open/closed assessment needs a non-unknown assessment_as_of anchor")
+    if record["clocks"]["hardening"]["status"] == "occurred" and window["assessment"] != "closed":
+        errors.append("clocks.window: occurred hardening requires a closed window for the same preventive_remedy")
 
     for residue in record["residue"]:
         references_exist(residue["repair_evidence"], residue["id"] + ".repair_evidence", ids["evidence"], errors)
-        if residue["status"] == "repaired" and not residue["repair_evidence"]:
-            errors.append(residue["id"] + ": repaired residue requires referenced evidence")
+        if residue["status"] == "repaired":
+            if not residue["repair_evidence"]:
+                errors.append(residue["id"] + ": repaired residue requires referenced evidence")
+            elif not known_evidence_refs(residue["repair_evidence"], evidence_by_id):
+                errors.append(residue["id"] + ": repaired residue cannot rest only on evidence marked unknown")
 
     if record["state"] == "closed" and not record["closure_receipt"].strip():
         errors.append("closed episode requires receipt; residue may remain")
@@ -232,9 +240,12 @@ def validate(record, previous=None):
             if normalise_text(record["authority"]["basis"]) == normalise_text(previous["authority"]["basis"]):
                 errors.append("wider recorded grant needs materially changed authority basis, not whitespace or prior success")
             prior_evidence_ids = {x["id"] for x in previous["evidence"]}
-            newly_grounded = set(record["authority"]["basis_evidence"]) - prior_evidence_ids
+            newly_grounded = [
+                ref for ref in record["authority"]["basis_evidence"]
+                if ref not in prior_evidence_ids and ref in evidence_by_id and evidence_by_id[ref]["kind"] != "unknown"
+            ]
             if not newly_grounded:
-                errors.append("wider recorded grant needs newly represented evidence; evidence reference is traceability, not authority")
+                errors.append("wider recorded grant needs newly represented non-unknown evidence; evidence reference is traceability, not authority")
 
     return errors
 
