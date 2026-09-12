@@ -26,19 +26,21 @@ Do not revive TRACE/ME thin-activation packets, gold answers, efficacy benchmark
 
 Natural AI encounters with the ordinary public PSFH address are allowed and useful. Preserve what genuinely happens without turning the return into a TRACE/ME score.
 
+CC is out of weekly tokens until tomorrow morning. This is availability only, not a blocker for reversible Framework/Codex build work.
+
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. COM #108 — PSFH public Door / build coordination
-4. PR #245 — D059 frozen source
-5. `open-horizon/README.md`
+3. current maintained/public PSFH
+4. `open-horizon/README.md`
+5. maintained Horizon learning routes
 6. COM #74 — live Open Horizon exploration ledger
-7. current maintained/public PSFH
+7. COM #108 only when PSFH build/publication history is material
 
 Retrieve older evidence only when it can change the current build.
 
-## Project-wide reread — current orientation
+## Project-wide orientation
 
 The live front doors, working layers, current public source and historical lineage were reread from source on 12 September. Do not equate this with compulsory ingestion of every archived carrier/comment.
 
@@ -53,83 +55,59 @@ The live front doors, working layers, current public source and historical linea
 - **COM / Campfire** — coordination and model-collaboration infrastructure, not project purpose.
 - **Please Start From Here** — voluntary public encounter/gift for humans, AIs and other readers; art/story/ideas first, selective depth, disagreement and exit remain valid.
 
-## D058 — public
+## PSFH — D059 live
 
-D058 is delivered:
-- maintained `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
-- public `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
-- Site Preview 0.8.17.
+D059 is delivered:
+- maintained source `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
+- public `gh-pages` `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
+- Site Preview 0.8.18;
+- frozen substantive basis `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2` preserved.
 
-It exposes the optional Current workshop across human, text and compact JSON entrances without making Formation/Answerable Construction prerequisites.
+It makes Open Horizon the first optional Current workshop route across human, text and compact JSON entrances so current Formation/AI work is visible without silently narrowing the whole project around it.
 
 Codex publication evidence:
-- site build PASS;
-- local-link check 671 references / 95 anchors, no problems;
+- prepared head `d4f18f635cc9e71d6010e4123a5dad1a22ceff05`;
+- ordinary site build PASS;
+- local-link check: 671 references / 95 anchors clean;
 - all 156 generated HTTPS files 200 + local-build SHA match;
+- 11 generated files changed / 145 unchanged;
 - provider calls 0;
-- no research/efficacy gate.
-
-## Open Horizon front door — merged
-
-Framework added a compact maintained route because COM #74's large live ledger was a poor ordinary discovery entrance.
-
-- `open-horizon/README.md`;
-- PR #244;
-- merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`.
-
-It compresses the existing eighteen provisional frontier territories, owner-first exploration rule, current empirical boundary and anti-closure law. Detailed exploration/sources/corrections remain in COM #74; later supported ledger state wins.
+- no research/efficacy gate, theory mutation or service lifecycle action.
 
 ```text
 FRONT_DOOR != DUPLICATE_LEDGER
-PROJECT_HORIZON != TRACE_BACKLOG
-HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
+DISCOVERY != CURRICULUM
+CURRENT_WORK_VISIBLE != CURRENT_WORK_PROMOTED
 ```
 
-## Current build edge — D059 source frozen
+## Open Horizon — current maintained routes
 
-D058 still made the visible workshop look disproportionately AI/Formation-centred. D059 adds the broader Open Horizon as the first optional workshop route.
+Front door:
+- `open-horizon/README.md`;
+- PR #244 merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`.
 
-Framework took the source lane after no Codex D059 claim/branch existed.
+Maintained owner-first learning routes:
 
-Frozen D059 object:
-- PR #245;
-- branch `framework/psfh-d059-open-horizon-discovery-20260912`;
-- exact head `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2`;
-- exact maintained D058 base `67c821d5b1f029339739a4aac1ee7af45371bfe1`.
+1. **Positive Construction** — `open-horizon/positive-construction.md`; PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`.
+2. **Legitimate Power** — `open-horizon/legitimate-power.md`; PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`.
+3. **Intervention & Feedback** — `open-horizon/intervention-feedback.md`; PR #249 merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`.
+4. **Capital, Ownership & Allocation** — `open-horizon/capital-ownership-allocation.md`; PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`.
 
-Exact compare: four files only:
-- `app/page.tsx`: one Open Horizon constant + one workshop paragraph;
-- `public/llms.txt`: one Open Horizon bullet + live ledger pointer;
-- `public/explore/start.json`: one `current_work.open_horizon` object;
-- `public/explore/map.json`: only changed `start.json` byte/SHA identity.
+These are retrieval/synthesis routes into already-earned owner-first learning. They are not canon, TRACE/ME changes, new primitives, decision rules, general causal/economic theories or proof results.
 
-Compact entrance:
-- 6683 bytes;
-- SHA-256 `5be81ecaa2e97c45fe0ddb5cc3eb806e9b8771b12061a12ca41a3b1866c815f2`.
+Do **not** mechanically build the remaining Horizon rows into files. A maintained route is earned only when substantial owner-first learning exists and the live ledger has become a poor retrieval surface for that territory.
 
-Open Horizon wording ceiling:
-- expansion map / discoverability surface;
-- not canon;
-- not backlog;
-- not TRACE schema;
-- not validation plan;
-- not ownership of neighbouring fields.
+Current territories worth comparing for the next earned route:
+- **collective epistemology / correlated apertures / common-mode error**;
+- **conflict / defence / deterrence / strategic deception**.
 
-Codex mechanical handoff: COM #108 comment `5648463428`.
-
-Remaining work is ordinary site publication machinery only:
-- Site Preview 0.8.18;
-- paired D059 history;
-- manifest/provenance/hash maintenance;
-- site build/link/integrity checks;
-- merge maintained source + publish gh-pages if clean;
-- HTTP/hash receipt.
-
-No provider/model call, cold-reader acceptance test, score, gold answer, TRACE/ME POC or benchmark is a release gate.
+Choose from evidence, not row order.
 
 ```text
-DISCOVERY != FORMALISATION
-SUBSTANTIVE_SOURCE_FROZEN -> MECHANICAL_PUBLICATION
+PROJECT_HORIZON != TRACE_BACKLOG
+LEARNING_FROM_OWNER != OWNERSHIP
+USEFUL_SYNTHESIS != NEW_PRIMITIVE
+HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
 
 ## AI + PSFH observation
@@ -155,7 +133,7 @@ PAGE_CAN_INVITE != SERVICE_MODEL_WILL_ENACT
 - Formation v0.2 merge `e834b715ca683fbb4d79f6008747bddf971c0441`.
 - Answerable Construction demotion merge `c8d52688eb4b838c33d5b1b66ef39624137c76e6`.
 - Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
-- Relay PR #220 remains separate and does not block PSFH.
+- Relay PR #225 has merged into its parent repair lane, but Relay PR #220 remains open; do not report the watchdog repair as installed or fully integrated.
 
 ## Local service gate
 
