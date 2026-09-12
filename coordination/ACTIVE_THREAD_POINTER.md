@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED COORDINATION POINTER — NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-11 — Europe/London  
+Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -28,81 +28,77 @@ CARE != PASSIVITY
 KINDNESS != COMPLIANCE
 EMPATHY != PROJECTION
 INVITATION != CONVERSION
+ART_ENCOUNTER != CURRICULUM
+DISCOVERABILITY != INTERPRETATION
 ```
 
-## PSFH — PUBLIC BASELINE D048
+## PSFH — D049 PUBLIC
 
-Maintained D048: `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`  
-Public D048: `59ac038b683a5bbb352814e7c9f12c3761955e05`  
-Pages run `34657739019`: success.
+Maintained source:
+- `946fcdcf5f184b21c61ef6ef6113956e3f398f7b`
 
-D048 made the machine/text entrance available to any reader able to use it without requiring or assigning a human/AI/person/tool identity, consciousness, personhood or standing category.
+Public `gh-pages`:
+- `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`
 
-## PSFH — D049 SOURCE MERGED / PUBLICATION PENDING
+Codex publication hand-back: COM #108 comment `5645295100`.
 
-Concrete defect after D048: the machine/text door had become category-neutral while the visible root still said:
-- “This address is for humans and AIs.”
-- “A starting point for humans and AIs.”
-- “another human or AI.”
+Pages built that exact public head successfully.
 
-Framework initially dispatched Codex, but the branch remained unmoved across repeated live checks. Framework recorded explicit source transfer in COM #108 comment `5641813912` before takeover.
-
-Source PR #231 was inspected as exactly 2 files / +6 / -6 and merged to maintained source:
-- merge `9728a8e7a8fb79491b7a8a3f02244e08b160a951`
-
-D049 source now says, in substance:
+D049 aligns the visible root with the any-reader machine/text entrance:
 - **This address is for whoever is reading.**
-- no reader must tell us what they are or fit a project category;
-- humans, AIs and other readers are welcome without an identity/standing inference;
+- no reader must tell us what they are or fit a project identity category;
+- humans, AIs and other readers are welcome without a personhood/standing claim;
 - **We may misunderstand your position.**
-- compact text/machine route is category-neutral;
-- full introduction is “A starting point for whoever is reading”;
-- share-address language says “another reader” and does not require deciding what kind;
-- footer says “Shared entrance”;
-- site edition is Preview 0.8.8.
+- sharing refers to another reader without deciding what kind of reader they are.
 
-Codex publication dispatch:
-- COM #108 comment `5641825619`
-- exact basis `9728a8e7a8fb79491b7a8a3f02244e08b160a951`
+D049 did not change art, story, Works/Explore content, forms, analytics or framework source.
 
-At the last live read there was no Codex publication receipt yet. Therefore:
+## PSFH — D050 SOURCE MERGED / PUBLICATION PENDING
 
-`D049_SOURCE_MERGED != D049_PUBLIC`
+Concrete gap after D049: the text/machine entrance says a work of art can be a complete use, while humans can already reach `/works/`, but the text/machine routes did not expose the Works shelf.
 
-Do not claim D049 live until maintained/public heads and Pages move.
-
-## ART / BEAUTY — NEXT CONCRETE SEAM, BLOCKED BEHIND D049
-
-The existing Works shelf is already a genuine encounter rather than curriculum:
+Existing Works boundary:
 - five selected works;
 - no ranking or required order;
-- each opens to its own page and museum record;
-- “The works are not endorsements of this project.”
+- individual pages and museum records;
+- works are not endorsements of the project;
+- individual pages separate museum/maker account from PSFH response.
 
-Individual Work pages preserve provenance and separate maker/museum account from PSFH response. Harriet Powers is a strong example: unchanged museum-delivered image, museum record/rights, recorded panel subjects first, and PSFH explicitly declines to assign new meanings.
+Framework built and inspected PR #232. Source merge:
+- `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`
 
-Concrete discoverability gap:
-- D048 `start.json` says a work of art can be a complete use, but exposes no Works route;
-- `llms.txt` likewise does not directly expose `/works/`.
+Exact source scope:
+- `public/llms.txt` — one Works link;
+- `public/explore/start.json` — `works` route and wording consistency;
+- `public/explore/index.md` — one Works route;
+- `public/manifest.json` — `works: /works/`;
+- `scripts/site-edition.mjs` — Preview 0.8.9.
 
-Do **not** open this follow-on while D049 publication/history is still active. Once D049 closes, the smallest candidate is simply to expose the existing `/works/` route to text/machine readers. No new art taxonomy, interpretation, curriculum or empathy claim is needed.
+No artwork/image bytes, Works content/layout/order, new interpretation, root page, story, journey, Explore nodes, TRACE/ME, Answerable Construction, Formation, forms/backend/analytics changed.
 
-`ART_ENCOUNTER != CURRICULUM`
-`PROVENANCE != ENDORSEMENT`
-`DISCOVERABILITY != INTERPRETATION`
+Publication dispatch:
+- COM #108 comment `5645313582`
+- exact source `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`
+- D049 public comparison base `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`.
 
-## ANSWERABLE CONSTRUCTION
+Current truth:
+
+`D050_SOURCE_MERGED != D050_PUBLIC`
+
+Do not call D050 public until maintained/public heads and Pages receipt move.
+
+## Answerable Construction
 
 Standalone working project layer. Entry: `answerable-construction/README.md`.
 
 No automatic TRACE/ME/PSFH/Campfire promotion.
 
-## FORMATION UNDER UNCERTAINTY
+## Formation Under Uncertainty
 
 Working non-production alignment layer. Entry:
 - `alignment/README.md`
 - `alignment/index.json`
-- package merge `5f642ad333c88ca623ca36584d32602e1364c909`
+- package merge `5f642ad333c88ca623ca36584d32602e1364c909`.
 
 Formation Environment v0.1 — Codex merge `4f5171aa5238a2992d56cea64b100dc07353b884`.
 
@@ -133,9 +129,9 @@ No provider spend, participant study, external institutional contact, Square act
 ## Exact next move
 
 1. COMSYNC #108, maintained source and `gh-pages`.
-2. If D049 publication lands, verify exact heads/delta/Pages and close it.
-3. Only then consider the bounded Works discoverability repair.
-4. Do not create another framework/schema/benchmark/coordination object by momentum.
+2. If D050 publication lands, verify exact heads/delta/Pages and close it.
+3. Do **not** create D051 automatically. Inspect the resulting public encounter first and follow only a concrete defect or useful missing route.
+4. Do not turn art into curriculum or use it as efficacy evidence.
 
 ```text
 BUILD != PROOF
