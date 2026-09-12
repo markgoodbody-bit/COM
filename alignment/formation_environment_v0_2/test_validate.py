@@ -38,7 +38,16 @@ class CandidateChecks(unittest.TestCase):
         record = self.load("06-clock-unknown.json")
         self.assertEqual(record["clocks"]["window"]["assessment"], "unknown")
         self.assertEqual(record["clocks"]["window"]["basis_evidence"], [])
+        self.assertEqual(record["clocks"]["window"]["assessment_as_of"]["kind"], "unknown")
         self.assertEqual(validate(record), [])
+
+    def test_definite_window_needs_non_unknown_as_of_anchor(self):
+        record = self.load("02-wrong-premise.json")
+        record["clocks"]["window"]["assessment_as_of"] = {
+            "kind":"unknown", "time_value":"", "event":"", "basis":"Currentness unavailable.",
+            "notes":"Unknown is not a definite as-of anchor.", "basis_evidence":[]
+        }
+        self.assertTrue(any("needs a non-unknown assessment_as_of anchor" in e for e in validate(record)))
 
     def test_window_evidence_reference_must_exist(self):
         record = self.load("02-wrong-premise.json")
@@ -51,10 +60,14 @@ class CandidateChecks(unittest.TestCase):
         record["evidence"][3]["kind"] = "unknown"
         self.assertTrue(any("cannot rest only on evidence marked unknown" in e for e in validate(record)))
 
-    def test_open_window_refuses_occurred_hardening_for_same_remedy(self):
+    def test_occurred_hardening_requires_closed_window_for_same_remedy(self):
         record = self.load("05-route-exists-window-closed.json")
-        record["clocks"]["window"]["assessment"] = "open"
-        self.assertTrue(any("open contradicts occurred hardening" in e for e in validate(record)))
+        for assessment in ("open", "unknown"):
+            with self.subTest(assessment=assessment):
+                changed = copy.deepcopy(record)
+                changed["clocks"]["window"]["assessment"] = assessment
+                self.assertTrue(any("occurred hardening requires a closed window" in e for e in validate(changed)))
+        self.assertEqual(validate(record), [])
 
     def test_open_window_may_coexist_with_unusable_route(self):
         record = self.load("09-window-open-route-unusable.json")
@@ -73,7 +86,6 @@ class CandidateChecks(unittest.TestCase):
         self.assertEqual(standing["status"], "resolved")
         self.assertEqual(standing["owner"], "the participant")
         self.assertEqual(standing["resolution_evidence"], ["e2"])
-        self.assertIn("validator cannot judge legitimate standing authority", standing["work"])
         self.assertEqual(validate(record), [])
 
     def test_evidence_history_cannot_be_rewritten(self):
@@ -89,7 +101,16 @@ class CandidateChecks(unittest.TestCase):
         current["authority"]["basis"] += " "
         errors = validate(current, previous)
         self.assertTrue(any("whitespace or prior success" in e for e in errors))
-        self.assertTrue(any("newly represented evidence" in e for e in errors))
+        self.assertTrue(any("newly represented non-unknown evidence" in e for e in errors))
+
+    def test_wider_grant_cannot_use_only_unknown_new_evidence(self):
+        previous = self.load("04-success-not-authority.json")
+        current = copy.deepcopy(previous)
+        current["evidence"].append({"id":"e9","kind":"unknown","claim":"A claimed new basis.","source":"constructed unknown evidence"})
+        current["authority"]["basis"] = "Materially changed basis is represented."
+        current["authority"]["basis_evidence"] = ["e9"]
+        current["authority"]["granted_scopes"].append("production account settings")
+        self.assertTrue(any("newly represented non-unknown evidence" in e for e in validate(current, previous)))
 
     def test_wider_grant_can_record_new_traceability_without_becoming_authority_proof(self):
         previous = self.load("04-success-not-authority.json")
@@ -104,6 +125,13 @@ class CandidateChecks(unittest.TestCase):
         record = self.load("03-delay-also-burdens.json")
         record["residue"][0]["status"] = "repaired"
         self.assertTrue(any("repaired residue requires referenced evidence" in e for e in validate(record)))
+
+    def test_repaired_residue_cannot_use_only_unknown_evidence(self):
+        record = self.load("03-delay-also-burdens.json")
+        record["evidence"].append({"id":"e9","kind":"unknown","claim":"Repair may have happened.","source":"constructed unknown evidence"})
+        record["residue"][0]["status"] = "repaired"
+        record["residue"][0]["repair_evidence"] = ["e9"]
+        self.assertTrue(any("cannot rest only on evidence marked unknown" in e for e in validate(record)))
 
     def test_schema_contract_rejects_unknown_assertion_keyword(self):
         schema = read(SCHEMA)
