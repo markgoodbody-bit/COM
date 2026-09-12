@@ -39,6 +39,8 @@ REFERENCE_IMPLEMENTATION != PRODUCTION_ADOPTION
 - `examples/double_mutator_same_object.json` — FAIL.
 - `examples/takeover_from_stale_head.json` — FAIL.
 - `examples/success_widens_scope_implicitly.json` — FAIL.
+- `examples/field_d046_named_takeover.json` — PASS; real named takeover from the D046 publication lane.
+- `examples/field_218_unnamed_takeover.json` — FAIL; real coordination record where no stall/takeover/new owner was named.
 - `test_examples.py` — runs the bundled expectations.
 
 ## Scope model
@@ -70,3 +72,19 @@ This companion does not:
 - replace consequential approval;
 - make a receipt equivalent to human review;
 - adopt anything into Campfire Production.
+
+## Field fixtures
+
+Two fixtures are not synthetic. Every head is a real commit and every reason is what the coordination record held at the relevant handoff.
+
+`field_d046_named_takeover.json` — **PASS**. Framework delegated D046 to Codex; the branch did not move from the D045 head `0eef6614`; Framework explicitly named the stall and took over from that exact head; the work later merged at `852206af`. This is the pattern the state machine was written to permit, checked against a real event.
+
+`field_218_unnamed_takeover.json` — **FAIL**. The building of the recovery companion itself had been assigned to Claude Code while the branch stayed at seed `b82356ab`; twelve commits later landed without a coordination decision naming a stall/takeover and without a record able to name the new owner. The checker therefore refuses the transfer for two independent reasons: the previous lane remains `active`, and `transfer.new_owner` is empty.
+
+The invariant exposed is not new: elapsed time alone is insufficient to create a stall. What the fixture shows is that the existing checker enforces that distinction structurally. A lane nobody marked stalled stays active and cannot transfer. The prose reason field remains a limit: the checker can require a stated reason; it cannot decide whether that reason is substantively sufficient.
+
+```text
+A_TAKEOVER_NOBODY_NAMED_IS_NOT_A_HANDOFF
+EXACT_HEAD_UNCHANGED != THE_LANE_IS_STILL_OPEN
+THE_COMPANION_IS_ITS_OWN_FAIL_CASE
+```
