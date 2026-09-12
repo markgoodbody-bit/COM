@@ -1,6 +1,6 @@
 {
   "format": "answerable-construction-index/0.1",
-  "status": "working-project-layer-not-canon",
+  "status": "working-project-synthesis-history-reading-surface-contribution-not-established",
   "project_question": "HOW CAN WE MAKE A BETTER FUTURE?",
   "entry": {
     "human": "answerable-construction/README.md",
@@ -40,11 +40,38 @@
       "commit": "8608eceb982a644ad0c64d23c65a3d27b4314674"
     }
   ],
-  "current_remainder": "Keep commitments that promise a positive future connected to the material dependencies, affected scopes, authority, clocks, externalised burdens, changing objectives and correction limits on which that promise depends, especially across handoffs where no single owner carries the whole relation.",
+  "current_open_question": "When a positive commitment crosses owner or lifecycle boundaries, can a small cross-owner reading expose a consequential dropped relation—dependency, affected or represented scope, authority, clock, externalised burden or residue, changing objective, or correction or reassessment limit—that competent owner practice would otherwise miss?",
+  "question_status": "open and untested; not yet operationalised as a falsifiable design with bounded cases, comparator execution, observable outcome and stop rule",
+  "current_contribution_status": "not established; retained as synthesis/history/reading surface and open research question",
+  "owner_correction": {
+    "date": "2026-09-12",
+    "coordination_receipts": [
+      "COM#76 issuecomment-5645906379",
+      "PR#237 issuecomment-5645981712",
+      "PR#237 issuecomment-5646072771"
+    ],
+    "disposition": "demote from possible positive-construction theory or cross-owner contribution to project synthesis/history/reading surface with an open, untested coupling question",
+    "not_novel_mechanisms": [
+      "adaptive planning under deep uncertainty",
+      "responsible innovation",
+      "substantive capability and conversion factors",
+      "just-transition burden/governance",
+      "value change over a system lifecycle",
+      "systems-engineering lifecycle traceability and change impact",
+      "clinical service-change access/inequality/dependency coupling",
+      "distributed responsibility / many-hands accountability"
+    ]
+  },
   "limits": [
     "not a decision rule",
     "not a universal priority law",
     "not empirical efficacy evidence",
+    "not a novel traceability mechanism",
+    "not an established cross-owner contribution",
+    "not a claim of conceptual novelty",
+    "not a replacement for stronger domain owners",
+    "not an established standalone project layer",
+    "not yet an operationalised falsification design for the open question",
     "not TRACE canon",
     "not Mechanical Ethics canon",
     "not PSFH workflow",
