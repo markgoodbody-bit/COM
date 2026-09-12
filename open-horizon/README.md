@@ -33,7 +33,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 | --- | --- |
 | **1. [Positive construction / flourishing](positive-construction.md)** | Joy, play, beauty, meaning, curiosity, ambition, abundance, friendship, love, belonging and genuinely creating new futures rather than only preventing premature closure. |
 | **2. Collective creation / commons / public goods** | How plural entities build goods none can produce alone; legitimate collective commitments; commons; coordination without a single sovereign chooser. |
-| **3. Legitimate power** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
+| **3. [Legitimate power](legitimate-power.md)** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
 | **4. Formation / becoming / preference development** | Education, mentorship, culture, habit, rehabilitation, preference formation and mutual human–AI development without treating formation as ownership. |
 | **5. Multi-scale emergence** | Individual → group → institution → market → state → ecosystem; local benefit versus aggregate harm; cascades, tipping points and distributed responsibility. |
 | **6. Intervention changes observation** | Measurement and policy feedback; adaptive systems; interventions that alter trust, behaviour, ecology or what evidence becomes visible next. |
