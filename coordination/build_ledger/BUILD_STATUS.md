@@ -7,7 +7,7 @@ Observed coordination state only. Re-read mutable heads before acting. Later dir
 | Work | State | Current disposition |
 | --- | --- | --- |
 | Please Start From Here D059 | **LIVE / DELIVERED** | Site Preview 0.8.18. Maintained `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`; public `919515ead8be0420902fc599d8d6cb92c96e3c5d`; all 156 generated HTTPS files observed 200 + hash match. |
-| Please Start From Here D060 | **SUBSTANTIVE SOURCE FROZEN / PUBLICATION MECHANICS PENDING** | PR #266, exact semantic head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`, exact D059 base `3594f730...`; one semantic file only: `public/seed.txt`, seed `0.3 -> 0.4`. Names TRACE and Mechanical Ethics inside the smallest durable kernel without making either prerequisite or authority. Codex handoff COM #108 comment `5649227916`. |
+| Please Start From Here D060 | **MECHANICALLY PREPARED / NOT PUBLIC** | PR #266. Frozen semantic basis `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`; prepared head `5d5b1859e2ce7e0782fed602dafb53eb6d222eed`. Codex preserved the one-file semantic intent, shortened only the new sentence to keep `seed.txt` under the existing 1024-byte ceiling (1023 bytes), prepared Site Preview 0.8.19 + paired D060 history + manifest identities, and reports build PASS / 671 refs / 95 anchors clean. Maintained merge, `gh-pages` publication and HTTP/hash receipt remain before public claim. |
 | Open Horizon routing | **HUMAN + MACHINE DISCOVERABILITY COMPLETE / HORIZON REMAINS OPEN** | All 18 current provisional territories have routes; PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da` adds `open-horizon/map.json`. Routing completeness is not intellectual completeness. |
 | Bounded frontier quarry | **OPTIONAL / NOT ACTIVE PROGRAMME** | The 12 September AI Growth Zone notes remain available as owner-first quarry. They do not define the current project edge and create no monitoring campaign or policy programme. |
 | Campfire local-service source repair | **STACK CLOSED / PARENT HELD AT HUMAN GATE** | PR #220 merged into PR #209 branch at `78daff5c22af22db9aa3ba4b2a654b7f9b75842a`; exact-head CI green. PR #209 remains open, source-only, hold main/Production pending exact local acceptance. |
@@ -35,30 +35,26 @@ OBSERVATION != TRACE_EFFICACY_TEST
 DISAGREEMENT / NO_USE / STOPPING ARE VALID
 ```
 
-## Current build edge — entrance first
+## Current build edge — D060 publication
 
-D060 is the current source build. It arose from one bounded question: what is the smallest durable kernel that preserves the project purpose and freedom without reconstructing predecessor runtimes?
+D060 answers one bounded entrance question: what is the smallest durable kernel that preserves project purpose and freedom while still telling a future aperture what was actually built?
 
-The existing seed already carried:
-- guiding question;
-- actual-position caution;
-- uncertainty and correction posture;
-- disagreement / another method / stop;
-- non-authority and non-adoption;
-- origin, routes and provenance.
+The seed already carried purpose, actual-position caution, uncertainty/correction posture, disagreement/another-method/stop, non-authority, origin, routes and provenance. Its concrete omission was that it did not name TRACE and Mechanical Ethics.
 
-The concrete omission was that it did not name what had actually been built. D060 fixes only that.
+The original added sentence exceeded the existing 1 KiB seed ceiling. Codex repaired this by shrinking the new sentence rather than relaxing the ceiling:
+
+> TRACE offers a structural language; Mechanical Ethics, a human-facing companion. Neither is required or authoritative.
 
 ```text
 SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
 OFFER != AUTHORITY
-TRACE != PREREQUISITE
-ME != PREREQUISITE
+SHRINK_CHANGE > RELAX_BOUNDARY
+PREPARED != PUBLIC
 ```
 
-Do not broaden this into a new trust framework, curriculum or machine standard.
+No provider/model call, cold-reader score, TRACE/ME POC or benchmark is a publication gate.
 
-## Bounded independent discovery
+## Bounded independent discovery — current results
 
 Framework and other apertures may ask project-relevant questions and explore outward. This is part of allowing apertures to discover rather than merely replay.
 
@@ -71,9 +67,16 @@ ONE SHARP QUESTION
 -> STOP / RETURN TO BUILD
 ```
 
-A question producing **no build delta** is a valid result. Example: an arriving entity can already leave a useful correction in the context where the encounter happened; PSFH does not need to collect identity or create membership merely to receive value.
+Current bounded answers:
+- Trustworthiness is already carried through inspectability, provenance, status ceilings, visible correction, disagreement and exit; no `why trust us` page is needed.
+- An arriving entity can leave value in the encounter context without PSFH collecting identity or manufacturing membership/continuity.
+- TRACE/ME already state that competent ordinary or specialist methods may be better; no additional external-method manifesto is needed.
+- TRACE and ME source heads still match the exact revisions exposed by PSFH.
+- The compact cross-entity core appears to be partial view, evidence, consequences, time, authority, affected positions, reachable action and correction; human-specific ME material does not automatically travel unchanged.
+- `gift` means invitation to inspect/encounter, not a hidden reuse licence; source licence boundaries remain explicit.
+- `/seed.txt` is directly routed by `manifest.json` and `llms.txt`, and `robots.txt` allows public retrieval; lack of a TXT entry in the mostly-HTML sitemap is not a defect.
 
-Do not turn the current question list into a parallel research programme or consume tokens because a frontier remains interesting.
+A no-delta answer is a valid result. Do not create public copy merely because a question was asked.
 
 ## Open Horizon state
 
@@ -105,11 +108,12 @@ Only Mark's exact phrases authorize local action:
 
 ## Current anchors
 
-- PSFH maintained live: `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4` until D060 publishes.
-- PSFH public live: `919515ead8be0420902fc599d8d6cb92c96e3c5d` until D060 publishes.
-- D060 frozen semantic source: `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`.
-- TRACE main last verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
-- Mechanical Ethics main last verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+- PSFH maintained live: `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4` until D060 source merge.
+- PSFH public live: `919515ead8be0420902fc599d8d6cb92c96e3c5d` until D060 publication.
+- D060 semantic basis: `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`.
+- D060 prepared head: `5d5b1859e2ce7e0782fed602dafb53eb6d222eed`.
+- TRACE main verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
+- Mechanical Ethics main verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 - Campfire Relay main: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
 
 ```text
