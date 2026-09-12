@@ -12,8 +12,7 @@ Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
 3. `coordination/PRACTICAL_VALUE_HEAD.md`
-4. PR #237 current pointer-repair thread
-5. COM #76 current practical-value / owner-routing thread
+4. COM #76 current practical-value / owner-routing thread
 
 ## Current whole-project orientation — WORKING / CLAIM-CUT / NOT CANON
 
@@ -37,7 +36,7 @@ OWNER_ROUTING != FAILURE
 - **TRACE** — portable structural representation hypothesis; no unique primitives established; formal burden material; practical advantage unearned.
 - **Mechanical Ethics** — human-facing synthesis/translation; practical advantage unearned.
 - **Formation Under Uncertainty** — merged non-production scenario/representation/falsification testbed; stronger-owner baseline not beaten on substantive coverage.
-- **Answerable Construction** — synthesis/history/reading surface plus open untested research question; contribution/layer not established; final provenance-pointer repair under recheck.
+- **Answerable Construction** — merged synthesis/history/reading surface plus open untested research question; contribution/layer not established.
 - **Campfire / COM / Square** — coordination/evidence/field instruments and applied continuity patterns; not unique provenance/safety theory.
 
 These are research dispositions, not canon promotions.
@@ -47,13 +46,13 @@ These are research dispositions, not canon promotions.
 Final candidate head:
 `9be41ff97ccdd4c3613edcad0c673fd77663caa2`
 
+Merged to `main`:
+`e834b715ca683fbb4d79f6008747bddf971c0441`
+
 Evidence chain:
 - production guards independently cleared at `26df4b56...`;
 - Codex final `PASS_EXACT`: 21/21 tests + all nine examples;
 - Claude Code final `PASS_DIFF`: recursive-tree and compare checks found only four fixture-setup lines changed from the cleared production head; production validator/schema/examples byte-identical; suite rerun 21/21.
-
-Merged to `main`:
-`e834b715ca683fbb4d79f6008747bddf971c0441`
 
 Current claim disposition:
 
@@ -61,12 +60,13 @@ Current claim disposition:
 
 `BASELINE_NOT_BEATEN` on substantive coverage. Compression/consistency value may exist; practical advantage is unproven.
 
-## Answerable Construction — CONTRIBUTION NOT ESTABLISHED / POINTER REPAIR PENDING
+## Answerable Construction — MERGED DEMOTION / CONTRIBUTION NOT ESTABLISHED
 
-PR #237 current exact head:
+Final repaired head:
 `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
 
-External-owner and case checks route substantive mechanisms to established owners including DAPP, Responsible Innovation, Capability Approach, Just Transition, VSD/value change, systems engineering, NHS service-change governance and distributed-responsibility practice.
+Merged to `main`:
+`c8d52688eb4b838c33d5b1b66ef39624137c76e6`
 
 Current front-door disposition:
 - synthesis/history/reading surface;
@@ -75,14 +75,11 @@ Current front-door disposition:
 - not yet operationalised as a falsification design;
 - historical v0.1 artifacts untouched.
 
-Prior wording/status review cleared the demotion but exposed one provenance error: nonexistent review pointer `5646102092`. Codex independently reproduced the 404 and identified the real review `5646072771`.
-
-Current head changes only those two pointer occurrences. Exact pointer-only recheck requested at PR #237 comment `5646597973`. No merge yet.
+Prior wording/status review cleared the demotion. CC then found one bad provenance pointer; Codex reproduced the 404; Framework repaired only those two pointer occurrences; Codex `PASS_DIFF` verified both replacements resolve to the real review and no other delta exists before merge.
 
 ```text
 OPEN_QUESTION != FALSIFICATION_DESIGN
 OPEN_QUESTION != CONTRIBUTION
-PROVENANCE_POINTER_MUST_RESOLVE
 DEMOTION != DELETION
 ```
 
@@ -96,7 +93,7 @@ Public `gh-pages`:
 
 Pages run `34694019662`: success.
 
-Claude Code origin witness `5646086874` on COM #108 independently reports 160/160 live files matched the public head; source-only Homer link absent and published replacement works. Framework's own custom-origin transport limitation is no longer an unresolved publication-evidence gap.
+Claude Code origin witness `5646086874` on COM #108 independently reports 160/160 live files matched the public head; source-only Homer link absent and published replacement works.
 
 ## Practical-value tests — DESIGN/PREFLIGHT ONLY / NOT EXECUTED
 
@@ -115,6 +112,8 @@ commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6`
 
 V2 contains 8 shells across four domains with balanced positive/negative controls. Independent owner-source/construct attack remains requested in COM #76 comment `5646527049` before final receiver packets.
 
+Framework live-source recheck `5646613221` narrows scoring but does not clear that independent gate. Employment remains the most judgment-sensitive shell and must be replaced before dispatch if final facts cannot make its discriminator crisp without answer leakage.
+
 No scored receiver output exists.
 
 ### COM bounded continuity reload
@@ -122,7 +121,7 @@ No scored receiver output exists.
 Protocol:
 `evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 
-Preflight fairness constraint recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must share the same frozen evidence universe and comparable retrieval/search capability. Hidden stale-pointer/cold-domain fixtures must remain private from receivers.
+Preflight fairness constraint recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must share the same frozen evidence universe and comparable retrieval/search capability. Hidden stale-pointer/cold-domain fixtures remain private from receivers.
 
 No provider spend, cold-receiver recruitment or carrier ingestion is authorized.
 
@@ -161,11 +160,10 @@ Only Mark may authorize local action with exact phrase:
 
 ## Exact next move
 
-1. Receive/disposition #237 pointer-only recheck; merge only if exact `f9613adc...` pointer repair clears.
-2. Receive/disposition the v2 thin-activation owner-source/construct attack in COM #76.
-3. Do not draft final receiver packets until the v2 shells survive independent review.
-4. Continue world learning and stronger-owner routing while cold-test execution authority remains absent.
-5. Add no primitive/layer unless a baseline comparison earns it.
+1. Receive/disposition the v2 thin-activation owner-source/construct attack in COM #76.
+2. Do not draft final receiver packets until the v2 shells survive independent review.
+3. Continue world learning and stronger-owner routing while cold-test execution authority remains absent.
+4. Add no primitive/layer unless a baseline comparison earns it.
 
 ```text
 FALSIFICATION != VALIDATION
