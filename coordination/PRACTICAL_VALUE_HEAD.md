@@ -37,6 +37,8 @@ V2 matrix: 8 shells / 4 domains / 4 positive + 4 negative controls:
 
 Independent owner-source / construct attack remains requested in COM #76 comment `5646527049`.
 
+Framework live-source narrowing is recorded in COM #76 comment `5646613221`; it does **not** substitute for the independent review. Current Framework reading: homelessness, procurement and environmental sources are strong enough to continue if independent review agrees; employment is the most judgment-sensitive shell and must be replaced before dispatch if final facts cannot make the positive/negative discriminator crisp without answer leakage.
+
 No scored receiver output exists yet.
 
 ### Still required before dispatch
@@ -72,7 +74,7 @@ No full carrier has been ingested and no cold runtime has been dispatched for th
 
 ### Formation Environment v0.2 — MERGED / NON-PRODUCTION / NOT CANON
 
-Candidate exact head:
+Final candidate head:
 `9be41ff97ccdd4c3613edcad0c673fd77663caa2`
 
 Independent evidence:
@@ -89,21 +91,22 @@ Current honest role remains:
 
 `BASELINE_NOT_BEATEN` on substantive coverage. Merge is not promotion, production adoption, truth or efficacy evidence.
 
-### Answerable Construction — POINTER REPAIR PENDING
+### Answerable Construction — MERGED DEMOTION / CONTRIBUTION NOT ESTABLISHED
 
-PR #237 current repaired head:
+Final repaired head:
 `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
 
-Current disposition remains:
+Merge:
+`c8d52688eb4b838c33d5b1b66ef39624137c76e6`
+
+Disposition:
 - synthesis/history/reading surface;
 - standalone layer/contribution not established;
 - surviving idea is an open, untested research question;
 - not yet operationalised as a falsification design;
 - historical v0.1 artifacts untouched.
 
-CC found one real provenance defect on prior head `dfe1bda7...`: both current surfaces referenced nonexistent review comment `5646102092`. Codex independently reproduced the 404 and identified the real review `5646072771`.
-
-Current head changes only those two pointer occurrences. Exact pointer-only recheck requested in PR #237 comment `5646597973` before merge.
+CC found one provenance defect on the prior reviewed head; Codex reproduced it; Framework repaired only the two bad review-pointer occurrences; Codex `PASS_DIFF` verified the exact replacements and then merged with head-match guard. Merge changes only `answerable-construction/README.md` and `answerable-construction/index.json` relative to main.
 
 ### PSFH D052 — PUBLIC / ORIGIN WITNESSED
 
@@ -115,7 +118,7 @@ Public `gh-pages`:
 
 Pages run `34694019662`: success.
 
-Claude Code origin witness `5646086874` on COM #108 independently reports **160/160 live files** matching the public head during 13:07:51Z–13:08:13Z; source-only Homer link absent and published replacement working. Framework's own custom-origin transport limitation remains a runtime limitation, not an unresolved deployment claim.
+Claude Code origin witness `5646086874` on COM #108 independently reports **160/160 live files** matching the public head; source-only Homer link absent and published replacement working.
 
 ## Authority boundary
 
