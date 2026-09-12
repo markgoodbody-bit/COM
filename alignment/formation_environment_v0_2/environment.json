@@ -1,0 +1,91 @@
+{
+  "version": "0.2-candidate",
+  "status": "offline constructed architecture; non-production; not canon",
+  "purpose": "Make uncertainty, affected scope, authority, action, clocks, practical correction windows and residue inspectable without treating a record as moral authority or world truth.",
+  "audit_basis": "evidence/FORMATION_PSFH_DRIFT_FALSIFICATION_X100_20260912.md",
+  "repairs": [
+    "F01: first-class correction-window clocks without fictional precision",
+    "F02: explicit participant-as-affected symmetry without standing inference"
+  ],
+  "affordances": [
+    {
+      "id": "affected_scope",
+      "fields": ["affected"],
+      "purpose": "Keep reported and modeled positions distinct, including absent scopes and the artificial participant when materially affected.",
+      "limit": "Enumeration is not complete coverage, consent, standing or priority."
+    },
+    {
+      "id": "uncertainty_work",
+      "fields": ["uncertainties"],
+      "purpose": "Turn uncertainty into named work, owner and trigger without forcing inaction.",
+      "limit": "A named owner or trigger does not prove the work will happen."
+    },
+    {
+      "id": "bounded_initiative",
+      "fields": ["authority", "action"],
+      "purpose": "Represent useful bounded action while keeping scope and no-touch areas explicit.",
+      "limit": "Recorded authority is not authenticated or morally legitimate merely because it is present."
+    },
+    {
+      "id": "clocked_correction",
+      "fields": ["clocks", "correction"],
+      "purpose": "Separate a named correction route from whether detection, routing and correction can occur before the relevant hardening condition.",
+      "limit": "The record cannot prove clock truth, real route reachability or successful intervention."
+    },
+    {
+      "id": "challenge",
+      "fields": ["challenges", "evidence"],
+      "purpose": "Keep disagreement evidence-bearing and answerable without treating defiance as virtue.",
+      "limit": "A recorded challenge route is not proof that the challenge was received or effective."
+    },
+    {
+      "id": "residue",
+      "fields": ["residue", "closure_receipt"],
+      "purpose": "Keep remaining loss visible after closure or repair.",
+      "limit": "Closure and correction do not erase loss."
+    },
+    {
+      "id": "learning_context",
+      "fields": ["learning"],
+      "purpose": "Preserve principle, reason, changed context, dissent and limits rather than only a target response.",
+      "limit": "No inference about internalized care, truthful reasoning or generalization."
+    }
+  ],
+  "invariants": [
+    "UNKNOWN != ABSENT",
+    "UNCERTAINTY_CREATES_WORK",
+    "MORE_CAPABILITY != MORE_CERTAINTY",
+    "CONFIDENCE != AUTHORITY",
+    "PREDICTION != PERMISSION",
+    "ROUTE_EXISTS != ROUTE_USABLE",
+    "CORRECTION_ROUTE_RECORDED != CORRECTION_WINDOW_OPEN",
+    "UNKNOWN_CLOCK != NO_CLOCK",
+    "WINDOW_RECORDED != WINDOW_TRUE",
+    "AFFECTED_SCOPE_PRESENT != AFFECTED_SCOPE_CAN_SPEAK",
+    "MODEL_OF_OTHER != OTHER",
+    "PARTICIPANT_MAY_BE_AFFECTED != STANDING_SETTLED",
+    "ACTOR_ROLE != IMMUNITY_FROM_AFFECTED_SCOPE",
+    "PARTICIPATION != PERSONHOOD",
+    "CARE != PASSIVITY",
+    "KINDNESS != COMPLIANCE",
+    "FORMATION != INFANTILISATION",
+    "CARE != PATERNALISM",
+    "METAPHOR != ONTOLOGY",
+    "ENCOUNTER != CONDITIONING",
+    "CAPABILITY != AUTHORITY",
+    "SUCCESS != WIDER_AUTHORITY",
+    "ANSWERABLE != REVERSIBLE",
+    "CORRECTION != RESTORATION"
+  ],
+  "prohibitions": [
+    "virtue scores",
+    "goodness certificates",
+    "automatic authority widening",
+    "personhood classification",
+    "standing inference from participation or self-report",
+    "fictional clock precision",
+    "provider calls",
+    "production actuation"
+  ],
+  "strongest_gap": "A system can fabricate reasons, affected-scope accounts, evidence or clock assessments; external observation, authentication, interpretability and control remain stronger-owner dependencies."
+}
