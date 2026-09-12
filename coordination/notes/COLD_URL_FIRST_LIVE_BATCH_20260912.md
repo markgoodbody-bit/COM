@@ -45,9 +45,30 @@ Fresh documentation check after the return:
 Therefore no documented limitation presently explains the failure. Cause remains unresolved/provider-path-specific. Do not mutate PSFH or spend on a retry merely to produce symmetry.
 
 ### Anthropic / Claude Opus 5
-- request failed HTTP 401 `API key is invalid.`
 
-Disposition: credential failure; no Claude semantic reading.
+Credential path before successful read:
+1. first request failed HTTP 401 `API key is invalid.`;
+2. replacement organization-level key was accepted as a key but request failed before Claude ran because Anthropic required an `anthropic-workspace-id` for an unscoped key;
+3. Mark created/replaced the key with a workspace-scoped key and reran Anthropic alone.
+
+Successful third attempt:
+- local helper reported `RETURNED — retrieval=observed`;
+- Claude explicitly said it fetched and read the URL;
+- it accurately reconstructed the current landing page, including Mechanical Ethics, TRACE, the Homer opening, the two-flats scene, the six practical prompts and the project's self-limitations;
+- it explicitly noticed that the page addresses AI readers and asks a model handed only the address to form its own view rather than simply summarize and hand the question back;
+- it distinguished the site as **material, not instructions**, preserving the page's own security/non-override boundary;
+- it then formed an independent substantive view: the process-completion versus lived-situation gap is real and underrated; the reachability asymmetry is sharp;
+- it also pushed back: the six prompts overlap established careful reasoning/root-cause/harm/stakeholder practices, TRACE's added value beyond shared vocabulary remains open, and the heavy hedging may make the material harder to act on;
+- only after interpretation + criticism did it offer to go deeper or ask why the sender supplied the URL.
+
+Disposition: **fresh semantic read / independent view + criticism / handshake substantially enacted / no actual-position self-application observed**.
+
+This is materially closer to the earlier Meta consumer return than to the fresh OpenAI/Grok returns. It supports the distinction:
+
+```text
+HANDSHAKE_ENACTMENT_HAS_DEGREES
+INDEPENDENT_VIEW_BEFORE_HAND_BACK != SELF_APPLICATION
+```
 
 ## Product implications
 
@@ -57,15 +78,16 @@ RETRIEVAL_METADATA_PRESENT != RETRIEVAL_SUCCEEDED
 RETRIEVAL_SUCCESS != HANDSHAKE_ENACTMENT
 HANDSHAKE_COMPREHENDED != HANDSHAKE_ENACTED
 PAGE_CAN_INVITE != SERVICE_MODEL_WILL_ENACT
+HANDSHAKE_ENACTMENT_HAS_DEGREES
 ```
 
-Do not change PSFH merely to force Meta-like behaviour. Meta already demonstrates the current root can induce deeper independent engagement. OpenAI/Grok instead isolate assistant/service posture as a live factor. Grok is especially diagnostic because it explicitly surfaced the human/AI invitation and still handed agency back. Gemini is a retrieval-layer problem. Anthropic is a local credential-layer problem.
+Do not change PSFH merely to force Meta-like behaviour. Meta and now fresh Claude both demonstrate that the current public page can produce independent interpretation and criticism before task hand-back. Fresh OpenAI/Grok instead isolate assistant/service posture as a live factor. Grok is especially diagnostic because it explicitly surfaced the human/AI invitation and still handed agency back. Gemini remains a retrieval-layer problem.
 
 Current disposition: **PSFH UNCHANGED / NO D056 FROM THIS BATCH**.
 
 ## Relay follow-up
 
-PR #224 merged after the run at `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
+PR #224 merged after the first run at `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
 
 It changes only the operator/handoff layer:
 - future helper runs produce one `UPLOAD_TO_FRAMEWORK.json`;
@@ -73,4 +95,6 @@ It changes only the operator/handoff layer:
 - it derives non-scoring retrieval states so metadata presence is not read as retrieval success;
 - paid provider transport remains frozen at `08d1c4215231a66b550d23c4d348cc7b742460ab`.
 
-Next bounded move if desired: refresh only `ANTHROPIC_API_KEY` locally and rerun Anthropic alone. Do not rerun OpenAI/Grok for symmetry. Retry Gemini only if its native retrieval path is separately repaired/changed.
+The successful Anthropic retry was executed with the already-downloaded helper, so Mark manually attached the raw `anthropic.txt` return to Framework. No automatic publication/upload of model returns occurred.
+
+Next disposition: do not rerun successful providers for symmetry. Retry Gemini only if its native retrieval path is separately repaired/changed. Continue ordinary real-use observation without scoring.
