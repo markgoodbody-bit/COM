@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — PSFH D058 BUILD / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — PSFH D059 BUILD / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -23,62 +23,57 @@ The old practical-value / TRACE-ME receiver programme is historical quarry, not 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `continuity/FRAMEWORK_HEAD.md`
 3. COM #108 — PSFH public Door / current coordination
-4. COM PR #243 — D058 current-work discovery build
+4. COM #74 — Open Horizon expansion/discoverability surface
 5. current maintained PSFH source
 6. current public PSFH
 
-Read `coordination/notes/COLD_URL_FIRST_LIVE_BATCH_20260912.md` only when the earlier AI observations are material. Do not make them the centre of gravity.
+Read the earlier Cold URL note only when those AI observations are materially relevant. Do not make them the centre of gravity.
 
-## Current operational edge — D058
+## D058 — delivered
 
-Project-wide reread found a discoverability gap rather than a need for another framework or proof programme:
+D058 is public.
 
-- TRACE and Mechanical Ethics are visible at PSFH;
-- Formation Under Uncertainty / Reciprocal Formation are current project work but largely invisible there;
-- Answerable Construction's demotion/history is also largely invisible;
-- exposing them must not silently promote them into canon, TRACE, ME or a required reader workflow.
+- maintained source: `67c821d5b1f029339739a4aac1ee7af45371bfe1`;
+- public `gh-pages`: `63bdf85785fb856bc2cd031e95fd0e6a22a4aa7a`;
+- Site Preview: 0.8.17.
 
-Framework built PR #243 from exact maintained D057 source `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`.
+It adds the optional Current workshop route to Formation Under Uncertainty, Formation Environment v0.2, Reciprocal Formation and demoted Answerable Construction across the shared page, `llms.txt` and compact JSON entrance.
 
-Current substantive candidate head:
-- `4e2eed2adeab29ae8de025fd17734f11a404e247`.
+Codex mechanical publication receipt on PR #243:
+- build PASS;
+- 671 local-link references / 95 anchors, no problems;
+- no provider call;
+- no research/efficacy gate.
 
-Exact substantive delta is four files:
-- `app/page.tsx`: optional native `Current workshop` disclosure + route;
-- `public/llms.txt`: same optional current-work routes for text/AI readers;
-- `public/explore/start.json`: same optional workshop objects in the compact JSON reader entrance;
-- `public/explore/map.json`: only the changed `start.json` byte/SHA identity.
+## Current operational edge — D059 / Open Horizon
 
-Framework caught and repaired one self-introduced map-integrity defect before handoff: the first one-line rewrite dropped the existing `example/route.json` inventory row. Final compare preserves it.
+Project-wide reread found that D058's visible workshop can still make the live project edge look too AI/formation-centred.
+
+The project already contains the counterweight: COM #74 **Open Horizon**.
+
+Its status is:
+
+**EXPANSION MAP / DISCOVERABILITY SURFACE / NOT CANON / NOT BACKLOG / NOT TRACE SCHEMA / NOT VALIDATION PLAN**.
+
+It preserves underexplored better-future territory including positive construction/flourishing, collective creation/commons, legitimate power, formation, multi-scale emergence, feedback from intervention, representation/standing, economics/scarcity, conflict/defence, ecology, positive risk/exploration, long time, embodiment/material constraints, emotion/trust/meaning, culture/narrative, collective epistemology, recursive/co-developing artificial entities and synthesis itself.
+
+D059 direction to Codex is COM #108 comment `5648406135`:
+- add one Open Horizon link to the existing optional workshop;
+- carry it across human, text and compact JSON entrances;
+- retain the status ceiling with it;
+- Site Preview 0.8.18 + paired history/manifest/hash maintenance;
+- ordinary build/link integrity only;
+- publish if clean.
+
+No cold-reader acceptance experiment, score, gold answer, provider call, TRACE/ME POC or benchmark is a gate.
 
 ```text
-DISCOVERY != CURRICULUM
-CURRENT_WORK_VISIBLE != CURRENT_WORK_PROMOTED
-FORMATION != INDOCTRINATION
+PROJECT_HORIZON != TRACE_BACKLOG
+DISCOVERY != FORMALISATION
+HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
 
-Codex has the bounded mechanical publication handoff in COM #108 comments `5648367465` + corrected-basis addendum `5648387772`:
-- advance Site Preview to 0.8.17;
-- paired change-history entries;
-- manifest/provenance/hash maintenance;
-- existing product/integrity checks;
-- merge/publish if clean.
-
-No cold-reader acceptance experiment, gold answer, scoring matrix, paid provider run or TRACE/ME POC is part of that gate. CC review is optional/non-critical-path unless it surfaces a concrete defect.
-
-## Live PSFH anchors before D058 publication
-
-- maintained source: `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`;
-- public `gh-pages`: `70e17dc492843b19ff407a4c1b44ccf12fc80d91` — D057 visible Lewis attribution.
-
-D058 is not public until the guarded publication lane returns a new public head.
-
 ## AI + PSFH observation boundary
-
-The prior Cold URL set remains qualitative history:
-- fresh OpenAI, Grok and Claude semantic reads;
-- Gemini retrieval failure;
-- no provider score or winner.
 
 Future natural AI readings of the ordinary public URL may be observed and learned from after publication.
 
