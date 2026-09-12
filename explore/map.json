@@ -370,8 +370,8 @@
     },
     {
       "path": "start.json",
-      "bytes": 4903,
-      "sha256": "6ba61ef658eb0f52e807645c546cbac30935b143f2b75ff32c4def6cebf01506"
+      "bytes": 6289,
+      "sha256": "9502a0a3fabaede112a0112c4b67fdfb2f2e7b989765f21eb0526fd068360e3e"
     },
     {
       "path": "worked-revision.html",

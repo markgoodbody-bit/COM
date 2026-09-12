@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.33 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.34 · 12 September 2026
+
+### D058
+
+12 September 2026 — An optional window into the workshop.
+
+The project section now offers a Current workshop route to Formation Under Uncertainty, Formation Environment v0.2, Reciprocal Formation and Answerable Construction. The text orientation and compact JSON entrance carry the same optional routes and working-status limits.
+
+The links point to maintained COM sources instead of duplicating their theory. They are optional reading, not prerequisites or claims that alignment has been solved. Answerable Construction remains synthesis, history and an open question, not an established standalone layer.
+
+The art-first opening, stories and core readings are unchanged. Site Preview advances to 0.8.17. This improves discoverability; it does not establish reader benefit. Previous publication 70e17dc492843b19ff407a4c1b44ccf12fc80d91 remains in Git history.
 
 ### D057
 

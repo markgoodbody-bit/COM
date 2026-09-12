@@ -52,6 +52,17 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 - [Mechanical Ethics book](https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md): the human-facing account of the distance between an institutional record and the life it affects.
 - [Local reading catalogue](https://pleasestartfromhere.com/resources/index.md): the full reference, ME PDF, diagrams, fixed editions and source identities. These are byte-exact selected copies, not continuously refreshed heads. Original repository links remain provenance and contribution routes; third-party references remain external.
 
+## Current workshop — optional work in progress
+
+These are live project working objects, not prerequisites for TRACE, Mechanical Ethics or this site. They are linked to their maintained COM sources rather than copied into a second public theory. Their status ceilings matter.
+
+- [Formation Under Uncertainty](https://github.com/markgoodbody-bit/COM/blob/main/alignment/README.md): working, non-production material about how human–AI relationships and surrounding arrangements may develop as capability changes without collapsing into obedience or sovereignty. Not canon and not an alignment solution.
+- [Formation Environment v0.2](https://github.com/markgoodbody-bit/COM/blob/main/alignment/formation_environment_v0_2/README.md): candidate representation of correction windows, route usability, hardening and affected-participant scope. Non-production, not canon, and not proof that its recorded claims are true.
+- [Reciprocal Formation Architecture](https://github.com/markgoodbody-bit/COM/blob/main/alignment/reciprocal_formation/README.md): working relationship architecture for bounded initiative, trainer correction, dependence, recovery, care and power. Not a personhood claim and not alignment solved.
+- [Answerable Construction](https://github.com/markgoodbody-bit/COM/blob/main/answerable-construction/README.md): preserved synthesis, history and open research question after stronger neighbouring work cut down its contribution claim. Not an established standalone layer or contribution.
+
+These objects may change, shrink or disappear as the project learns. Their presence here is a route into the workshop, not a promotion into TRACE, Mechanical Ethics or project canon.
+
 ## Optional
 
 - [What changed and why](https://pleasestartfromhere.com/changes.md): dated reader-facing changes, source-built proposals and limits; not a live status feed.
