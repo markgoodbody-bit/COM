@@ -5,7 +5,7 @@ import { SITE_EDITION } from './site-edition.mjs';
 const ORIGIN = 'https://pleasestartfromhere.com';
 export const VIEWS = [
   { output: 'read/start.html', source: 'explore/start.json', title: 'Start: complete JSON source text', edition: 'Site Preview 0.8.7, any-reader entrance (D048); not validation', sha256: '2ecab54e07db56cb714218c2b8eec2b28e6ff71da28484d5d1464aa8b20eef20' },
-  { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.7, any-reader entrance (D048); not validation', sha256: '816c24d85147fbc151c76d6fdd0f231b14fa231896144b40f3e97fd5a3c58131' },
+  { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.8, edition label updated with D049; D048 orientation retained; not validation', sha256: '0e5542475c692a1aab81c82a8d273e491c1a8e4d604a4b199eddc437cf7f5e9d' },
   { output: 'read/trace-spine.html', source: 'resources/trace/TRACE-SPINE.md', title: 'TRACE compact spine: complete Markdown source text', edition: 'TRACE RC1, source 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b; not a new TRACE release', sha256: '9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999' },
   { output: 'read/me-book.html', source: 'resources/mechanical-ethics/MECHANICAL_ETHICS.md', title: 'Mechanical Ethics: complete Markdown source text', edition: 'ME v0.7.0 working candidate v0.2.4, source 44f7efb59806242fd26c572cbfbaaeaefaea2058; not a new ME release', sha256: '6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93' },
 ];

@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.24 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.25 · 12 September 2026
+
+### D049
+
+12 September 2026 — The visible welcome now matches the any-reader text entrance.
+
+The homepage now says this address is for whoever is reading. It no longer asks a reader to fit a human or AI category, and explicitly allows that the project may misunderstand their position. The introduction, compact-route label, sharing sentence and footer follow the same wording.
+
+This corrects the mismatch left after D048, following Mark's direction and Framework's source edit. The painting, its scale and layout, Two flats story and order, navigation, Works and Explore content remain unchanged. No identity, personhood, consciousness or standing claim is made. Site Preview advances to 0.8.8. Previous publication 59ac038b683a5bbb352814e7c9f12c3761955e05 remains in Git history.
 
 ### D048
 
