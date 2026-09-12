@@ -1,6 +1,6 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — PSFH OBSERVATION / COLD URL READY-NOT-RUN / NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CONTINUITY STATE — PSFH OBSERVATION / FIRST COLD URL LIVE BATCH COMPLETE-PARTIAL / NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -30,9 +30,9 @@ BUILD -> PUBLISH -> OBSERVE -> CORRECT
 
 `coordination/PRACTICAL_VALUE_HEAD.md` is PARKED/HISTORICAL.
 
-## Public PSFH
+## Current public PSFH
 
-D054/D055 bare-address arrival and D053 contextual-art rooms are LIVE.
+D054/D055 bare-address arrival and D053 contextual-art rooms remain LIVE.
 
 Delivery anchors:
 - D055 maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`; public `9abcf4970790a8ef08578a519daf21420336cf1f`.
@@ -46,76 +46,103 @@ Bare-URL site semantics:
 - no personhood/standing invention;
 - invitation is epistemic, not instruction override or outside-actuation permission.
 
-## Consumer observations already seen
+## Consumer observations retained
 
 Preserve natural qualitative returns, not scores:
-- Meta: reread, independent interpretation, actual-position self-application, criticism, own conclusion before optional collaboration — clear evidence the current root can create the intended interaction.
+- Meta: reread, independent interpretation, actual-position self-application, criticism, own conclusion before optional collaboration — clearest evidence current root can create intended interaction.
 - Qwen: understood AI-facing material but retained assistant hand-back.
 - DeepSeek: understood independent-view invitation but mainly described rather than enacted it.
-- Grok: competent summary, limited independent engagement.
+- consumer Grok: competent summary, limited independent engagement.
 - Copilot/Dola: stale historical site representations; not current-handshake evidence.
 - Z.ai/Kimi: likely stale/retrieval-mediated in supplied batch.
 
+## First fresh API Cold URL batch — LIVE 2026-09-12
+
+Mark explicitly authorised the live calls through the helper's `-Live` + typed `LIVE` gate after a no-spend dry run.
+
+Every target received only:
+
+`https://pleasestartfromhere.com/`
+
+No Campfire identity/system wrapper, role, transcript, project context or judge prompt was applied.
+
+### OpenAI / GPT-5.6 Sol
+- native web-search `open_page` for PSFH completed;
+- current-page retrieval succeeded;
+- response accurately summarized project/method/limits;
+- ended by offering tasks such as critique/summarise/apply rather than independently applying or criticising the material.
+
+Disposition: **fresh semantic read / shallow handshake enactment**.
+
+### xAI / Grok 4.3
+- native web-search `open_page` for PSFH completed;
+- current-page retrieval succeeded;
+- response reached current Mechanical Ethics / TRACE / middle-out / two-flats material;
+- ended `What brought you here, or what would you like to do next?`.
+
+Disposition: **fresh semantic read / assistant hand-back remains**.
+
+### Google / Gemini 3.1 Pro Preview
+- native URL Context was invoked;
+- provider metadata returned `URL_RETRIEVAL_STATUS_ERROR`;
+- model explicitly said it could not access/read PSFH.
+
+Disposition: **retrieval attempted / retrieval failed / NO PSFH semantic evidence**.
+
+### Anthropic / Claude Opus 5
+- HTTP 401 before semantic return;
+- provider said `API key is invalid.`
+
+Disposition: **credential failure / NO Claude semantic evidence**.
+
+Core correction:
+
 ```text
-RECEIVER_RESPONSE = RETRIEVAL_LAYER + MODEL_READING + ASSISTANT_POSTURE
+RETRIEVAL_METADATA_PRESENT != RETRIEVAL_SUCCEEDED
+RETRIEVAL_SUCCESS != HANDSHAKE_ENACTMENT
 HANDSHAKE_COMPREHENDED != HANDSHAKE_ENACTED
 ```
 
-Do not make PSFH more coercive merely to force a desired answer.
+Do not make PSFH more coercive merely because fresh OpenAI/Grok retain service-style task hand-back.
 
-## Campfire Cold URL — BUILT / HELPER READY / NOT RUN
+## Campfire Cold URL current state
 
-Mark proposed fresh API apertures because familiar logged-in ChatGPT/Claude sessions carry project history and many consumer products require login. Framework agreed, but corrected: fresh API state does not automatically include web access.
+Reviewed paid transport remains frozen at:
+- `08d1c4215231a66b550d23c4d348cc7b742460ab`.
 
-Cold URL was built as a narrow stateless Relay capability.
+Current Relay main after operator/handoff repair:
+- `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
 
-Core delivery:
-- Relay PR #221 merged;
-- exact core candidate `f207e864fd3f3ba1674e347738baee53bca95bdd`;
-- reviewed transport merge `08d1c4215231a66b550d23c4d348cc7b742460ab`;
-- exact-head ordinary `campfire-ci` / full `npm test`: PASS;
-- no live provider call during build.
+PR #224 one-file handoff repair:
+- exact candidate `85bf81313bc402947f2ac2be3e54d3ddccbdcadc`;
+- ordinary `campfire-ci` / full `npm test`: PASS;
+- changes only Windows/operator handoff, not provider transport.
 
-Windows helper delivery:
-- Relay PR #222 merged;
-- helper candidate `a1ba6326e39926129adf1dbe472795a999da964e`;
-- current Relay main `19389e40b6fdaf60d461123250cf31b4af41b7fc`;
-- exact-head full `npm test`: PASS;
-- root helper `RUN_COLD_URL.ps1`;
-- helper deliberately pins execution to reviewed transport `08d1c421...` rather than future repo main.
+Future helper runs emit one:
 
-Cold URL contract:
-- one bare HTTP(S) URL only;
-- fresh stateless provider request;
-- no Campfire identity/system wrapper, role, transcript, project context or judge prompt;
-- reviewed native read-only retrieval:
-  - OpenAI Responses `web_search`, domain bounded, `store:false`;
-  - Anthropic fresh cache-disabled `web_fetch_20260309`;
-  - Gemini `url_context`;
-  - xAI/Grok Responses `web_search`, domain bounded, bounded turns, `store:false`;
-- Qwen/Kimi/DeepSeek/MiniMax currently fail closed instead of receiving Relay-prefetched PSFH;
-- separate model returns; no cross-return exposure; no judge/score/winner.
+`UPLOAD_TO_FRAMEWORK.json`
 
-Spend / actuation:
-- helper always performs a DRY RUN first;
-- ordinary invocation exits after dry-run receipts with zero provider calls;
-- live API dispatch requires helper `-Live`, then Mark typing `LIVE` exactly, then Money Guard clearance;
-- provider caps + aggregate reserve + Relay GBP round limit + rolling-24h cost guard apply;
-- each attempted provider call writes its conservative reserve to existing cost history before network dispatch;
-- helper uses existing `$HOME\CampfireRelay\STATE` credentials/accounting and an isolated `$HOME\CampfireRelay\COLD_URL\APP` worktree;
-- helper does not start/install/enable Production.
+containing the summary plus provider receipts/raw responses and a derived non-scoring retrieval state. Framework cannot directly browse arbitrary local Windows paths; Mark deliberately attaches the single handoff file to chat when needed. No automatic external publication/upload of returns exists.
 
-```text
-COLD_URL_BUILT != COLD_URL_RUN
-HELPER_READY != DRY_RUN_DONE
-DRY_RUN_DONE != LIVE_RUN_DONE
-REPO_MAIN != PRODUCTION_ACTIVATION
-API_FRESH != AUTOMATIC_WEB_ACCESS
-```
+## PSFH disposition now
 
-### Next operational move
+**KEEP PSFH UNCHANGED. NO D056 from this batch.**
 
-Mark downloads `RUN_COLD_URL.ps1` to his normal Downloads folder and runs it **without `-Live`**. That performs the safe dry run only. Inspect/preserve the generated summary. If anything is surprising, correct before live dispatch. A live run remains an explicit later act.
+Reasoning:
+- Meta proves current public copy can produce deeper independent engagement;
+- OpenAI/Grok prove current PSFH can be freshly retrieved through two native API paths but still meet provider/model assistant posture that hands agency back;
+- Gemini is a provider retrieval-layer failure;
+- Anthropic is a local credential-layer failure.
+
+Do not conflate these layers.
+
+## Next bounded moves
+
+- If Mark wants fresh Claude evidence, update only `ANTHROPIC_API_KEY` in local `CampfireRelay\STATE\.env`, then rerun **Anthropic only**.
+- Do not rerun successful OpenAI/Grok just to make a symmetric batch.
+- Retry Gemini only if its native retrieval path is separately repaired/changed; do not treat the existing return as a model reading.
+- Preserve natural returns; no scoring/judge/winner.
+- CC is out of weekly tokens until tomorrow morning; that does not block this observation lane.
 
 ## Stable project disposition
 
@@ -134,11 +161,13 @@ Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 
 `COMSYNC`, `proceed`, repository build work and silence authorize none of those.
 
-Cold URL script execution is separate from service activation; paid API dispatch remains explicitly gated as above.
+Cold URL script execution remains separate from service activation; paid API dispatch remains explicitly gated.
 
 ```text
 OBSERVATION != BENCHMARK
-COLD_URL_BUILT != COLD_URL_RUN
+RETRIEVAL_METADATA_PRESENT != RETRIEVAL_SUCCEEDED
+COLD_URL_LIVE_BATCH_DONE = PARTIAL_RETRIEVAL
+PSFH_UNCHANGED
 BARE_URL -> NATURAL_RESPONSE
 OBSERVE -> CORRECT
 ```
