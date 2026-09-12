@@ -7,9 +7,9 @@ Observed coordination state only. Re-read mutable heads before acting.
 | Work | State | Current disposition |
 | --- | --- | --- |
 | AUDIT-233 | closed | x100 drift audit merged: 97 resisted / 2 narrow / 1 material / 0 major drift. |
-| PSFH-D052 | public + independently witnessed | Maintained source `d30143e4...`; public `2962fb63...`; Pages run `34694019662` success; CC later witnessed 160/160 live files matching public head. |
-| COM-234 Formation v0.2 | merged / non-production / not canon | Candidate `9be41ff9...`; Codex 21/21 + nine examples; CC `PASS_DIFF`; merged to main at `e834b715...`. Baseline not beaten. |
-| AC-237 Answerable Construction | draft / pointer-only repair under recheck | Current head `f9613adc...`; contribution/layer not established; only two review-pointer replacements differ from prior reviewed head. |
+| PSFH-D052 | public + independently witnessed | Maintained source `d30143e4...`; public `2962fb63...`; Pages run `34694019662` success; CC witnessed 160/160 live files matching public head. |
+| COM-234 Formation v0.2 | merged / non-production / not canon | Candidate `9be41ff9...`; Codex 21/21 + nine examples; CC `PASS_DIFF`; merged at `e834b715...`. Baseline not beaten. |
+| AC-237 Answerable Construction | merged demotion / contribution not established | Final repaired head `f9613adc...`; exact pointer repair verified; merged at `c8d52688...`; historical v0.1 untouched. |
 | TRACE/ME activation value | source-preflight / not executed | Decision lock frozen; v2 8-shell/4-domain matrix under independent owner-source/construct attack. No spend/recruitment authorized. |
 | COM continuity value | protocol/preflight only / not executed | Bounded reload vs ordinary provenance must share the same evidence universe and comparable retrieval capability. No spend/carrier ingestion authorized. |
 
@@ -23,9 +23,7 @@ Public `gh-pages`:
 
 GitHub Pages run `34694019662`: **success**.
 
-Preview 0.8.11 carries Homer in Works, count-neutral Works labels and paired D052 history/integrity.
-
-Claude Code origin witness `5646086874` on COM #108 independently reports **160/160 live files** matched `2962fb63...`; the source-only responsive link is absent and the published replacement works.
+Claude Code origin witness `5646086874` on COM #108 independently reports **160/160 live files** matched `2962fb63...`; source-only responsive link absent and published replacement working.
 
 ```text
 PUBLICATION != VALIDATION
@@ -54,25 +52,22 @@ External-owner/case baseline did not establish substantive Formation-only covera
 
 `BASELINE_NOT_BEATEN` on coverage; practical advantage unearned.
 
-## AC-237 — Answerable Construction further demotion
+## AC-237 — Answerable Construction demotion
 
-Current head:
+Final repaired candidate:
 `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
 
-Prior substantive wording/status delta at `dfe1bda7...` was reviewed as `PASS_DIFF / KEEP_DEMOTION`, but CC found one real provenance defect: nonexistent review pointer `5646102092`. Codex independently reproduced the 404 and identified the actual demotion review `5646072771`.
+Merge:
+`c8d52688eb4b838c33d5b1b66ef39624137c76e6`
 
-Framework changed only those two pointer occurrences in:
-- `answerable-construction/README.md`
-- `answerable-construction/index.json`
-
-Exact pointer-only recheck requested in PR #237 comment `5646597973`.
-
-Current disposition remains:
+Substantive owner/case work demoted the surface to:
 - synthesis/history/reading surface;
 - contribution/layer not established;
 - open, untested research question only;
 - not yet an operational falsification design;
-- historical v0.1 artifacts untouched.
+- historical v0.1 paper/casebook/reader preserved unchanged.
+
+On prior reviewed head, CC found one broken provenance pointer (`5646102092`); Codex independently reproduced the 404 and identified the real review (`5646072771`). Framework changed only those two pointer occurrences; Codex `PASS_DIFF` verified both replacements resolve and no other delta exists, then merged exact head with head-match guard.
 
 ```text
 OPEN_QUESTION != CONTRIBUTION
@@ -101,14 +96,14 @@ Eight shells / four domains / four positive + four negative controls:
 - Procurement Act standstill/automatic suspension;
 - environmental permitting appeals.
 
-Independent source/construct review requested in COM #76 comment `5646527049`. No receiver packets or scored outputs yet.
+Independent source/construct review requested in COM #76 comment `5646527049`. Framework live-source narrowing at `5646613221` does not substitute for that review. No receiver packets or scored outputs yet.
 
 ### COM bounded continuity reload
 
 Protocol:
 `evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 
-Execution fairness requirement recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must have the same frozen evidence universe and comparable retrieval/search capability. T5/T6 hidden fixtures must remain private from receivers.
+Execution fairness requirement recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must have the same frozen evidence universe and comparable retrieval/search capability. T5/T6 hidden fixtures remain private from receivers.
 
 No provider spend, cold-receiver recruitment, full-carrier ingestion or receiver-output publication is authorized.
 
@@ -117,7 +112,7 @@ No provider spend, cold-receiver recruitment, full-carrier ingestion or receiver
 - TRACE — portable structural representation hypothesis; practical advantage unearned.
 - Mechanical Ethics — human-facing synthesis/translation; practical advantage unearned.
 - Formation — merged non-production scenario/representation/falsification testbed; baseline not beaten.
-- Answerable Construction — synthesis/history/reading surface under final provenance repair; contribution not established.
+- Answerable Construction — merged synthesis/history/reading surface; contribution not established.
 - Campfire/COM/Square — applied coordination/evidence/continuity patterns, not unique provenance/safety theory.
 - PSFH — voluntary encounter / door.
 
