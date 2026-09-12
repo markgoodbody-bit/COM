@@ -69,16 +69,15 @@ Dedicated routes now include:
 
 The live detailed quarry remains COM #74. Later supported evidence wins over compact routes.
 
-## Current build edge — machine discoverability
+## Machine discoverability — delivered
 
 Do not create more theory because the table is routed.
 
-Next bounded build:
-- add a compact `open-horizon/map.json` that exposes the same 18 territories, route type and status ceilings for machine/future-aperture retrieval;
-- link it from `open-horizon/README.md`;
-- do not duplicate route prose or claim completeness/current truth beyond its source identity;
-- live ledger remains COM #74;
-- no PSFH revision is automatically required because D059 already points to the maintained Open Horizon front door.
+PR #261 merged at `56536500c3a5de40c6b6f4c776e2d8308dbec8da`. The JSON map and README link already exist; this is not an outstanding build assignment.
+
+Codex checked all 18 identifiers, titles and routes against the human table, declared route types and local target existence. Routing consistency is not evidence that the territories are complete or the linked claims are true.
+
+Completion receipt: COM #74 comment `5648898372`. Further routing changes should follow new owner learning or a real retrieval failure, not table completeness. No PSFH revision is required for this continuity correction.
 
 ```text
 MACHINE_MAP != CANON

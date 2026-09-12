@@ -132,17 +132,15 @@ COMSYNC re-checks current evidence, authority, scope, changed conditions and ame
 
 At extreme timescales, active correctability can itself become an inherited maintenance burden; owner domains such as radioactive-waste governance show a legitimate pattern of stepwise/evidenced transition toward passive safety without implying forgetting.
 
-## Current build edge — machine discoverability
+## Machine discoverability — delivered
 
 The human routing pass is complete enough. Do not create more theory merely because the Horizon has rows.
 
-Next bounded build:
-- `open-horizon/map.json` with the same 18 territory routes and route types;
-- explicit status/boundary and live-ledger pointer;
-- `route_link != territory_complete` ceiling;
-- link it from `open-horizon/README.md`;
-- no duplicated route prose;
-- no PSFH edition bump automatically required because D059 already points to the maintained Horizon front door.
+PR #261 merged at `56536500c3a5de40c6b6f4c776e2d8308dbec8da`: `open-horizon/map.json` and its README link are delivered. Do not rebuild this slice from an older next-task projection.
+
+Codex checked that all 18 machine entries match the human table's identifiers, titles and routes, use declared route types, and resolve to existing files where local. This checks routing consistency, not territory completeness or the truth of the linked work.
+
+The live completion receipt is COM #74 comment `5648898372`. Future routing changes should follow new owner learning or a real retrieval failure, not table completeness. D059 already points to the maintained front door; no PSFH edition change follows from this continuity correction.
 
 ```text
 MACHINE_MAP != CANON
