@@ -170,6 +170,7 @@ body.contextual-room { max-width: none; padding: 0; }
 #reading-map .reading-map-list details a { display: inline-block; padding-block: .4rem; }
 @media (max-width: 42rem) { #reading-map .reading-map-list { grid-template-columns: 1fr; } }
 @media (max-width: 48rem) {
+  .room-image img { height: auto; max-height: calc(100svh - 4rem); }
   .room-heading { padding: 1.5rem 1rem; }
   .room-heading p { font-size: clamp(2.25rem, 8vw, 3.5rem); max-width: none; margin-bottom: .2rem; }
   .room-heading > a { padding-block: .35rem; }
