@@ -3,7 +3,13 @@ import { readFile, lstat, readdir, mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 
-export const WORKS = JSON.parse(await readFile(new URL('./WORKS_COPIES.json', import.meta.url)));
+const baseWorks = JSON.parse(await readFile(new URL('./WORKS_COPIES.json', import.meta.url)));
+export const WORKS_D052 = JSON.parse(await readFile(new URL('./WORKS_D052.json', import.meta.url)));
+export const WORKS = {
+  ...baseWorks,
+  files: { ...baseWorks.files, ...WORKS_D052.files },
+  maintained_overlays: [...(baseWorks.maintained_overlays ?? []), 'WORKS_D052.json'],
+};
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const safe = route => /^(works|art)\/[a-zA-Z0-9._/-]+$/.test(route)
   && !route.split('/').some(part => ['', '.', '..'].includes(part))
