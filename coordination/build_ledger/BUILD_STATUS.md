@@ -6,7 +6,7 @@ Observed coordination state only. Re-read mutable heads before acting.
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| Campfire Cold URL | **BUILT / MERGED / NOT RUN** | Relay main `08d1c421...`; fresh API bare-URL aperture exists for OpenAI/Anthropic/Gemini/Grok; no provider dispatch yet. |
+| Campfire Cold URL | **BUILT / MERGED / HELPER READY / NOT RUN** | Relay main `19389e40...`; reviewed runner pinned at `08d1c421...`; no provider dispatch yet. |
 | PSFH-D053 | **LIVE / DELIVERED** | Maintained `1b5fdc34...`; public `fbcd7594...`; three additional art-first rooms live. |
 | PSFH-D055 | **LIVE / DELIVERED** | Maintained `0edc2eb2...`; public `9abcf497...`; machine-arrival security/discovery hardening delivered. |
 | PSFH-D054 | **LIVE / DELIVERED** | Bare-URL arrival handshake delivered before D055. |
@@ -18,88 +18,80 @@ Observed coordination state only. Re-read mutable heads before acting.
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-PSFH public build sequence D053/D054/D055 is complete. Consumer-AI observation has begun naturally. Do not create D056 merely to maintain activity and do not turn these encounters into a benchmark.
+PSFH public build sequence is complete. Consumer-AI observation has begun. Do not create D056 merely to maintain activity and do not turn natural responses into a benchmark.
 
-## Natural bare-URL observations so far
+## Natural bare-URL observations
 
 Mark has handed only `https://pleasestartfromhere.com/` to several consumer AI products.
 
-Useful observed split:
-- Meta: clear target behaviour — explicitly said it read twice, formed its own interpretation, applied the material to its actual operating position, criticised a weakness, then offered optional collaboration.
+Observed qualitative split:
+- Meta: read twice, formed its own interpretation, applied the material to its actual operating position, criticised a weakness, then offered optional collaboration — clear evidence the current root can produce the intended shift.
 - Qwen: recognised the AI-facing project but still defaulted to `how would you like to proceed?`.
-- DeepSeek: understood the invitation to form an independent view but mostly described the invitation rather than enacting it.
-- Grok: competent project summary, limited independent engagement.
-- Copilot/Dola samples were visibly stale historical site representations and are not evidence about current D054/D055 behaviour.
-- Z.ai/Kimi also appeared stale or retrieval-mediated in the supplied batch.
-
-Working distinctions only, not metrics:
+- DeepSeek: understood the invitation to form an independent view but mostly described it rather than enacting it.
+- Grok: competent summary, limited independent engagement.
+- Copilot/Dola samples were stale historical site representations; do not use them as current-handshake evidence.
+- Z.ai/Kimi also appeared stale/retrieval-mediated in the supplied batch.
 
 ```text
 RECEIVER_RESPONSE = RETRIEVAL_LAYER + MODEL_READING + ASSISTANT_POSTURE
 HANDSHAKE_COMPREHENDED != HANDSHAKE_ENACTED
 ```
 
-Do not respond by making PSFH more coercive. Meta demonstrates that the current public root can produce the intended qualitative shift.
+Do not make PSFH more coercive merely to force the target behaviour.
 
-## Campfire Relay — Cold URL capability
+## Campfire Relay — Cold URL
 
-Mark proposed using API apertures because ordinary logged-in ChatGPT/Claude sessions carry project familiarity and many consumer products require accounts. Framework agreed that fresh API calls are cleaner apertures **if** they can retrieve the live URL without Relay pre-chewing it.
+Cold URL core:
+- PR #221 merged;
+- reviewed transport merge `08d1c4215231a66b550d23c4d348cc7b742460ab`;
+- exact candidate `f207e864fd3f3ba1674e347738baee53bca95bdd`;
+- exact-head full `npm test`: PASS;
+- no live provider call during build.
 
-Campfire Relay PR #221 merged:
-- candidate exact head `f207e864fd3f3ba1674e347738baee53bca95bdd`;
-- main merge head `08d1c4215231a66b550d23c4d348cc7b742460ab`;
-- exact-head ordinary `campfire-ci` / full `npm test`: PASS;
-- no live provider request was made while building;
-- no local install/start/enable action occurred.
+Windows helper:
+- PR #222 merged;
+- helper candidate `a1ba6326e39926129adf1dbe472795a999da964e`;
+- current Relay main `19389e40b6fdaf60d461123250cf31b4af41b7fc`;
+- exact-head full `npm test`: PASS;
+- helper file: `RUN_COLD_URL.ps1`;
+- helper deliberately executes the pinned reviewed transport `08d1c421...` from an isolated `$HOME\CampfireRelay\COLD_URL\APP` worktree rather than whatever future repo main becomes;
+- it uses existing `$HOME\CampfireRelay\STATE\.env` and `STATE\data` and does not start/replace installed Production.
 
-Cold URL behaviour:
-- one bare HTTP(S) URL only; prompt prose around it is refused;
-- no Campfire identity block, role instruction, transcript, project context, judge prompt or system wrapper;
-- fresh stateless provider call;
-- native read-only retrieval only:
-  - OpenAI Responses -> domain-bounded `web_search`, `store:false`;
-  - Anthropic Messages -> fresh cache-disabled `web_fetch_20260309`;
-  - Gemini -> `url_context`;
-  - xAI/Grok Responses -> domain-bounded `web_search`, bounded turns, `store:false`;
-- Qwen/Kimi/DeepSeek/MiniMax fail closed in Cold URL rather than receiving a Relay-prefetched page;
-- each return is preserved separately; no model sees another return; no judge/scoring/winner.
+Cold URL contract:
+- one bare HTTP(S) URL only;
+- fresh stateless API request;
+- no Campfire identity/system wrapper, role, transcript, project context or judge prompt;
+- provider-native read-only retrieval for reviewed OpenAI, Anthropic, Gemini and xAI/Grok paths;
+- Qwen/Kimi/DeepSeek/MiniMax currently fail closed rather than receiving Relay-prefetched PSFH;
+- each return separate; no judge/score/winner.
 
-Spend / actuation boundaries:
-- command defaults to **DRY RUN**;
-- live provider dispatch requires explicit `--live`;
-- reviewed pricing, provider per-call caps, aggregate run reserve, existing Relay GBP round limit, rolling-24h Money Guard and current FX evidence all gate live dispatch;
-- each attempted provider call writes its conservative unconfirmed reserve to the existing cost ledger **before** network dispatch, so a crash cannot erase possible exposure;
-- repository merge does **not** install, activate or run the local Relay.
+Spend / actuation:
+- helper always runs **DRY RUN first**;
+- without `-Live`, exits with zero provider calls;
+- `-Live` still requires Mark to type `LIVE` exactly before dispatch;
+- provider caps + aggregate reserve + normal Relay GBP round limit + rolling-24h Money Guard apply;
+- conservative reserve enters existing spend history before each attempted network call;
+- repository main movement is not local service activation.
 
 ```text
 COLD_URL_BUILT != COLD_URL_RUN
-REPO_MAIN != LOCAL_ACTIVATION
-API_FRESH != AUTOMATIC_WEB_ACCESS
-NATIVE_WEB_ACCESS != RELAY_PREFETCH
+HELPER_READY != DRY_RUN_DONE
+DRY_RUN_DONE != LIVE_RUN_DONE
+REPO_MAIN != PRODUCTION_ACTIVATION
 ```
 
-Next useful operational move is a local Cold URL **dry run** against Mark's configured provider environment, then a separately explicit live dispatch if Mark chooses to spend. Do not claim API observations until that happens.
+Next move: Mark runs the downloaded `RUN_COLD_URL.ps1` normally for a no-spend dry run. Bring the output back before any live dispatch if anything is surprising. Live API use remains separately explicit.
 
-## Current PSFH delivery anchors
+## Public PSFH anchors
 
-D055 live:
-- maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`;
-- public `9abcf4970790a8ef08578a519daf21420336cf1f`.
-
-D053 live:
-- source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`;
-- prepared `40b9a874bfcae34036975c69206e6b433f05fdaa`;
-- public `fbcd75948fa78cc0724311a172116b8f05e40061`.
-
-Stable project anchors:
+- D055 maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`; public `9abcf4970790a8ef08578a519daf21420336cf1f`.
+- D053 source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`; public `fbcd75948fa78cc0724311a172116b8f05e40061`.
 - TRACE main last verified `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 - Mechanical Ethics main last verified `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
-- Formation v0.2 merged/non-production/not canon.
-- Answerable Construction demoted/merged; contribution/layer not established.
 
 ## Separate local service gate
 
-Only Mark's exact phrases authorize local Square/Relay service lifecycle action:
+Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
 - `install-and-enable`
 - `install-watch`
 - `start-once`
@@ -108,7 +100,6 @@ Only Mark's exact phrases authorize local Square/Relay service lifecycle action:
 
 ```text
 NO_TESTING -> BUILD_THE_THING
-BUILD_COMPLETE -> OBSERVE
 OBSERVATION != BENCHMARK
 BARE_URL -> NATURAL_RESPONSE
 COLD_URL_BUILT != COLD_URL_RUN
