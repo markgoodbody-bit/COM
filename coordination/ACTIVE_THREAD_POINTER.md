@@ -12,7 +12,7 @@ Later live source and direct human direction win.
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-Direct human direction now fixes the empirical boundary:
+Direct human direction fixes the empirical boundary:
 
 > **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep building.**
 
@@ -40,14 +40,16 @@ Project-wide reread found a discoverability gap rather than a need for another f
 
 Framework built PR #243 from exact maintained D057 source `1e7ac477403d2337c1a0d0514e2416cc9e41b32f`.
 
-Current candidate head:
-- `4ad5ff82ea1a6048a732a66fdb0664a426f8c6b3`.
+Current substantive candidate head:
+- `4e2eed2adeab29ae8de025fd17734f11a404e247`.
 
-Exact substantive delta:
+Exact substantive delta is four files:
 - `app/page.tsx`: optional native `Current workshop` disclosure + route;
 - `public/llms.txt`: same optional current-work routes for text/AI readers;
-- links point to authoritative COM sources;
-- status ceilings travel with each object.
+- `public/explore/start.json`: same optional workshop objects in the compact JSON reader entrance;
+- `public/explore/map.json`: only the changed `start.json` byte/SHA identity.
+
+Framework caught and repaired one self-introduced map-integrity defect before handoff: the first one-line rewrite dropped the existing `example/route.json` inventory row. Final compare preserves it.
 
 ```text
 DISCOVERY != CURRICULUM
@@ -55,7 +57,7 @@ CURRENT_WORK_VISIBLE != CURRENT_WORK_PROMOTED
 FORMATION != INDOCTRINATION
 ```
 
-Codex has the bounded mechanical publication handoff in COM #108 comment `5648367465`:
+Codex has the bounded mechanical publication handoff in COM #108 comments `5648367465` + corrected-basis addendum `5648387772`:
 - advance Site Preview to 0.8.17;
 - paired change-history entries;
 - manifest/provenance/hash maintenance;
