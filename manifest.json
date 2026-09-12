@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.9",
+  "site_edition": "0.8.10",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -69,9 +69,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "f123a7b57559f7bb8510bae3f83afebfdfddb6e5c6ebe0ecd76fffe4a7eeb437",
-    "change_history_input_html_sha256": "095e4f0e84ec9eafb93633da4ea45f75eae29650b64c8d85ab7a4c8f66b00357",
-    "change_history_addendum_note": "D016 through D038 and D045-D050 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "e5126d43a5e56193159fc0bbb8bc63d838cf44ea61a2fe4e2cd97da5eddcd873",
+    "change_history_input_html_sha256": "56badf06acd9d2162d26cf7684e2192a96b118831e91faee6d9e575bd0a04365",
+    "change_history_addendum_note": "D016 through D038 and D045-D051 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
@@ -107,8 +107,8 @@
         "output": "read/orientation.html",
         "source": "llms.txt",
         "title": "Orientation: complete text source",
-        "edition": "Site Preview 0.8.9, Works discovery (D050); not validation",
-        "sha256": "62029a798937d06ba5adb2d1ff3e856d1f515bad8f72172caae02e8bda3a02a2"
+        "edition": "Site Preview 0.8.10, compact reading label (D051); not validation",
+        "sha256": "d8e2e9d8bd79d3b306fd8889e5e7212448bf85d4e20da1fa30b8af4d6bd6cf58"
       },
       {
         "output": "read/trace-spine.html",
@@ -201,7 +201,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "d3c1773e31aa34c74b6840102064292502edb8359de730ef7198d7262c3d8317",
+    "change_history_html_sha256": "ccf68c44bce5e317b72c54714ea5cc8af2d6d260156bc6e4566814070f7a9842",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
