@@ -1,4 +1,4 @@
-export const SITE_EDITION = '0.8.8';
+export const SITE_EDITION = '0.8.9';
 
 // Editorial revision date, never a build-clock/checkout/linked-project freshness.
 export function assertRevisionDate(manifest, history) {
