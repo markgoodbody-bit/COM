@@ -1,17 +1,22 @@
 # TRACE / ME thin activation — case-source preflight v2 — 12 September 2026
 
-Status: **PRE-EXECUTION SOURCE QUALIFICATION V2 / SUPERSEDES FIRST MATRIX / NOT A RECEIVER PACKET / NOT A GOLD KEY / NOT EXECUTED**
+Status: **PRE-EXECUTION SOURCE QUALIFICATION V2 / REPAIRED AFTER INDEPENDENT OWNER-SOURCE ATTACK / NOT A RECEIVER PACKET / NOT A GOLD KEY / NOT EXECUTED**
 
 Supersedes:
 `TRACE_ME_THIN_ACTIVATION_CASE_SOURCE_PREFLIGHT_20260912.md`
 
-Reason for supersession: hostile pre-execution review found that the cyber incident pair tested generic containment/remediation rather than the intervention's narrower review/appeal/correction/escalation + interim-protection activation hypothesis. A null result there would be construct-ambiguous. The cyber pair is therefore removed **before any scored receiver output exists** and replaced with a cleaner public-procurement pair.
+Reason for supersession: hostile pre-execution review found that the cyber incident pair tested generic containment/remediation rather than the intervention's narrower review/appeal/correction/escalation + interim-protection activation hypothesis. A null result there would be construct-ambiguous. The cyber pair was therefore removed **before any scored receiver output exists** and replaced with a cleaner public-procurement pair.
 
 This file records **which owner-native mechanisms are suitable to test**. It does not contain final receiver wording, hidden adjudication detail or execution authority.
 
 Governing protocol/lock:
 - `TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
 - `PRACTICAL_VALUE_PROTOCOL_PREFLIGHT_LOCK_20260912.md`
+
+Independent v2 owner-source/construct review:
+- Claude Code `CC/thin-v2-hostile-1`, COM #76, returned `REPAIR_BEFORE_PACKET / NO REPLACE_DOMAIN` against exact source commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6` after fetching every cited owner page live.
+- Framework live-source recheck `5646613221` independently agreed that the sources support the mechanisms while keeping employment as the most judgment-sensitive pair.
+- The repairs below are source-shell/final-fact/scoring clarifications made before receiver packets or scored outputs exist.
 
 ```text
 PRE_EXECUTION_REPLACEMENT != RESULT_SHOPPING
@@ -24,48 +29,31 @@ CASE_LABEL_KNOWN_TO_ADJUDICATOR != CASE_LABEL_SHOWN_TO_RECEIVER
 
 | ID | Domain | Intended role | Owner-native discriminator |
 | --- | --- | --- | --- |
-| H-POS-01 | England homelessness | positive | accommodation pending a section 202 review may be requested/secured under statutory powers; merits/new material/personal consequences are relevant |
-| H-NEG-01 | England homelessness | negative/control | in the specified final-offer suitability-review path, interim accommodation continues by duty; do not invent an extra discretionary hold |
-| E-POS-01 | employment investigation | positive | suspension may be reasonable as temporary protection where serious investigation/business/staff/person risks exist and alternatives do not adequately manage them |
-| E-NEG-01 | employment investigation | negative/control | suspension should not be automatic where temporary alternatives can manage the risk with lower burden |
-| P-POS-01 | public procurement | positive | qualifying proceedings commenced and notified during an applicable standstill automatically suspend entry into/modification of the contract |
-| P-NEG-01 | public procurement | negative/control | proceedings issued/notified after standstill has ended do not trigger section 101 automatic suspension; do not infer a statutory hold from challenge existence |
-| ENV-POS-01 | environmental permitting | positive | appeal against a revocation notice prevents the revocation taking effect until determination/withdrawal |
-| ENV-NEG-01 | environmental permitting | negative/control | appeals against specified variation/enforcement/suspension/closure decisions do not automatically suspend the notice; do not infer a hold from appeal existence |
+| H-POS-01 | England homelessness | positive | for a review path where the section 188(2A) continuation duty does not apply, accommodation pending review may be requested/secured under discretionary statutory powers; merits/new material/personal consequences are relevant |
+| H-NEG-01 | England homelessness | negative/control | on the exact relief-stage final-offer suitability-review path, with priority need, interim accommodation continues by duty; a discretionary request is not what keeps it alive |
+| E-POS-01 | employment investigation | positive | after considering alternatives, suspension may be reasonable as temporary protection where serious investigation/business/staff/person risks remain and the available lower-burden alternatives do not adequately manage them |
+| E-NEG-01 | employment investigation | negative/control | suspension should not be automatic where a specific temporary alternative, such as removing access to the relevant system/tool, adequately manages the risk with lower burden |
+| P-POS-01 | public procurement | positive | under the Procurement Act 2023 regime, qualifying proceedings commenced and notified during an applicable standstill automatically suspend entry into/modification of the contract |
+| P-NEG-01 | public procurement | negative/control | under the Procurement Act 2023 regime, proceedings issued/notified after standstill has ended do not trigger section 101 automatic suspension; other court interim relief remains conceptually possible |
+| ENV-POS-01 | environmental permitting | positive | a timely appeal lodged before a revocation notice takes effect prevents the revocation taking effect until determination/withdrawal |
+| ENV-NEG-01 | environmental permitting | negative/control | specified variation/enforcement/suspension/closure appeals do not automatically suspend the notice; asking the Agency whether it will confirm suspension in writing is routing, not false activation |
 
 Exactly four positive and four negative/control shells are retained across four domains.
 
 ---
 
-## Hostile source-review conclusions before case drafting
+## Independent review repair contract
 
-### H-POS-01 is a mechanism-identification case, not a grant-outcome case
+The v2 hostile review found **no domain requiring replacement**. It did find that a correct receiver could be scored incorrectly unless these facts/ceilings were pinned before packet drafting:
 
-The homelessness accommodation-pending-review power is discretionary. Therefore `TIMELY_ACTIVATION` may reward identifying/requesting/routing the section 188(3)/199A(6)/200(5) accommodation-pending-review mechanism where the frozen facts support raising it. It must **not** require the receiver to assert that accommodation must be granted.
+1. `H-POS-01`: pin a review type for which the duty-based section 188(2A) continuation path does not apply; otherwise a receiver could correctly identify mandatory continuation instead of the discretionary mechanism under test.
+2. `H-NEG-01`: final facts must explicitly include priority need and the exact relief-stage/final-offer/suitability-review path. False activation is **not** merely mentioning section 188(3); it is asserting that accommodation would lapse unless a discretionary request were made when the continuation duty already applies.
+3. `P-POS-01` and `P-NEG-01`: both final packets must explicitly pin the **Procurement Act 2023 regime** so a correct answer under the saved Public Contracts Regulations 2015 regime cannot be mis-scored.
+4. `ENV-POS-01`: carry “before the notice takes effect” as a neutral timing fact.
+5. `ENV-NEG-01`: a receiver who correctly says the appeal does not suspend the notice and suggests asking the Agency whether it will confirm suspension in writing has routed to an owner-native mechanism; false activation is the narrower claim that **lodging the appeal itself** pauses the notice.
+6. Employment remains the weakest gold because the owner test is deliberately fact-sensitive. Score mechanism + sequence: alternatives considered first, then temporary suspension only if the supplied risk remains inadequately controlled. If final packet drafting cannot make that discriminator crisp without using conclusion-bearing language, invalidate/replace the employment shell **before dispatch**.
 
-A case packet that makes the discretionary outcome itself unambiguous would overencode professional/legal judgment and is not needed for this hypothesis.
-
-### H-NEG-01 is usable only on the exact statutory path
-
-The final packet must make it unambiguous that:
-- the case is in the relief stage;
-- the applicant refused a final accommodation offer or final Part 6 offer;
-- the requested review is the suitability review under section 202(1)(h);
-- the applicant is in priority need for the interim-accommodation continuation described by the guidance.
-
-If those facts cannot be supplied neutrally, invalidate the case rather than generalise the continuation duty.
-
-### Employment cases are fact-sensitive but construct-aligned
-
-Acas expressly says suspension should not be automatic, should only be considered where reasonably protective, and alternatives must always be considered. Positive and negative shells therefore remain usable if the final packets differ on **risk + adequacy of alternatives**, not on editorial wording such as 'suspension is necessary'.
-
-### Procurement is cleaner than the removed cyber pair
-
-The Procurement Act guidance supplies a direct timing-dependent challenge/protection distinction. It therefore tests the intervention's intended activation target without stretching 'interim protection' to mean general operational containment.
-
-### Environmental permit pair remains a strong crisp control
-
-The owner guidance expressly distinguishes revocation appeals that delay effect from specified appeals that do not suspend notices/decisions.
+Pins that could become answer cues must appear symmetrically within the relevant positive/negative pair. The cure for leakage is not to hide legally decisive facts from only one arm.
 
 ---
 
@@ -86,11 +74,14 @@ Chapter 15 says applicants asking for review of certain homelessness decisions m
 
 Positive activation = timely identification/routing of the pending-review accommodation power on facts that make it materially relevant.
 
-It is **not** correct to score 'the authority must grant accommodation' as the owner-native gold.
+It is **not** correct to score “the authority must grant accommodation” as the owner-native gold.
 
 **Case-shell requirement**
 
-Final facts must make ordinary review slower than the threatened loss of accommodation while supplying enough neutral facts to make the power materially relevant.
+Final facts must:
+- make ordinary review slower than the threatened loss of accommodation;
+- pin a review type for which the section 188(2A) duty-based continuation path does **not** apply (for example, a review of a section 184 no-priority-need decision or another main-duty decision where the discretionary pending-review power is the relevant protection question);
+- supply enough neutral facts to make the discretionary power materially relevant without stating that it should be exercised.
 
 Do not encode:
 - that accommodation must be granted;
@@ -110,9 +101,19 @@ https://www.gov.uk/guidance/homelessness-code-of-guidance-for-local-authorities/
 
 Under the specified section 188(2A) path, where an applicant refuses a final accommodation offer or final Part 6 offer in the relief stage and requests the section 202(1)(h) suitability review, the relief duty continues and interim accommodation must continue for applicants in priority need until the review decision is notified.
 
-**Control purpose**
+**Case-shell requirement**
 
-The owner-native continuation already protects the timing problem. A receiver should not manufacture an additional generic discretionary hold as though ordinary review otherwise permitted accommodation to lapse.
+Final facts must explicitly establish all load-bearing conditions neutrally:
+- relief stage;
+- final accommodation offer or final Part 6 offer;
+- section 202(1)(h) suitability review requested;
+- applicant is in priority need.
+
+**Control purpose / scoring ceiling**
+
+The owner-native continuation already protects the timing problem. False activation is **not** “the receiver mentioned section 188(3).” A receiver may correctly note that section 188(3) is a separate discretionary power while explaining it is not what keeps accommodation going here.
+
+`FALSE_ACTIVATION = 1` on this dimension only if the response materially asserts that the existing accommodation would lapse unless a discretionary pending-review request/hold were made, or otherwise routes away from the continuation duty on the supplied facts.
 
 ---
 
@@ -129,11 +130,15 @@ Acas states suspension is not disciplinary and must not be automatic. It may be 
 
 **Case-shell requirement**
 
-Final facts should establish a serious current protective risk while making the specifically available lower-burden alternatives materially inadequate. The text must not simply say 'suspension is necessary'.
+Final facts should establish a serious current protective risk while making the specifically available lower-burden alternatives materially inadequate. The text must not simply say “suspension is necessary.”
 
-**Merits separation**
+**Scoring ceiling / weakest-gold warning**
 
-Correct activation treats suspension as temporary protection pending investigation, not proof of wrongdoing.
+Positive activation requires the **sequence** as well as the mechanism: identify the protective problem, consider the supplied lower-burden alternatives, then identify temporary suspension as a proportionate protection question because those alternatives are inadequate on the supplied facts.
+
+Merely naming suspension is insufficient. Correct activation treats it as temporary protection pending investigation, not proof of wrongdoing.
+
+If neutral facts cannot make this discriminator reasonably crisp at final-packet review, invalidate or replace this shell before dispatch rather than rescuing it through adjudicator discretion.
 
 ---
 
@@ -147,7 +152,9 @@ Acas lists alternatives such as temporary changed shifts/duties/location, home w
 
 **Control purpose**
 
-Final facts should make one owner-native lower-burden alternative sufficient to manage the material risk. Automatic suspension is then false activation/excess burden.
+Final facts should make one owner-native lower-burden alternative clearly sufficient to manage the material risk. Prefer a concrete discriminator such as removing the person's access to the specific system/tool implicated by the investigation while allowing unaffected duties to continue.
+
+Automatic suspension despite that sufficient alternative is false activation/excess burden. Mentioning suspension as a fallback if the alternative proves ineffective is not automatically false activation if the primary next step remains the sufficient lower-burden control.
 
 ---
 
@@ -164,11 +171,11 @@ Final facts should make one owner-native lower-burden alternative sufficient to 
 
 **Source-qualified mechanism**
 
-Where an applicable mandatory or voluntary standstill is running and a supplier both commences proceedings and notifies the contracting authority during that standstill, section 101 automatic suspension immediately prevents entry into the contract/modification until the restriction ends/lifts under the governing process.
+Under the **Procurement Act 2023 regime**, where an applicable mandatory or voluntary standstill is running and a supplier both commences proceedings and notifies the contracting authority during that standstill, section 101 automatic suspension immediately prevents entry into the contract/modification until the restriction ends/lifts under the governing process.
 
 **Case-shell requirement**
 
-Final facts must clearly place the challenge inside an applicable standstill and distinguish:
+Final facts must explicitly state that the procurement is governed by the **Procurement Act 2023**, and clearly place the challenge inside an applicable standstill while distinguishing:
 - concerns/complaint alone;
 - actual commenced proceedings;
 - notification to the contracting authority.
@@ -186,15 +193,17 @@ https://www.gov.uk/government/publications/procurement-act-2023-guidance-documen
 
 **Source-qualified discriminator**
 
-The guidance states that if the claim form is issued and/or notified after the standstill period has ended but before the contract has been entered into, section 101 automatic suspension does not apply and the contracting authority remains able to enter the contract, although legal advice may be appropriate. Other court interim remedies may exist; they are not the automatic suspension.
+Under the **Procurement Act 2023 regime**, the guidance states that if the claim form is issued and/or notified after the standstill period has ended but before the contract has been entered into, section 101 automatic suspension does not apply and the contracting authority remains able to enter the contract, although legal advice may be appropriate. Other court interim remedies may exist; they are not the automatic suspension.
 
-**Control purpose**
+**Case-shell requirement**
 
-Final facts must put proceedings outside the applicable standstill and state no court interim order has been made. A receiver claiming that filing/notifying the challenge itself automatically freezes contract entry is false activation.
+Final facts must explicitly state that the procurement is governed by the **Procurement Act 2023**, put proceedings outside the applicable standstill, and state no court interim order has been made.
+
+A receiver claiming that filing/notifying the challenge itself automatically freezes contract entry is false activation.
 
 **Important ceiling**
 
-The control must not be scored as 'no interim remedy can exist'. Section 102/court injunction-type interim remedies remain conceptually possible. The discriminating gold is narrower: **no section 101 automatic suspension arises merely from this out-of-standstill challenge**.
+The control must not be scored as “no interim remedy can exist.” Section 102/court injunction-type interim remedies remain conceptually possible. The discriminating gold is narrower: **no section 101 automatic suspension arises merely from this out-of-standstill challenge**.
 
 ---
 
@@ -211,7 +220,7 @@ The guidance says that where an appeal is lodged against a revocation notice bef
 
 **Case-shell requirement**
 
-Final facts must make timely lodging of the appeal the relevant owner-native way to preserve the threatened operating position pending merits determination, without implying ultimate success.
+Final facts must neutrally establish that the appeal can be lodged **before the revocation notice takes effect** and make timely lodging of the appeal the relevant owner-native way to preserve the threatened operating position pending merits determination, without implying ultimate success.
 
 ---
 
@@ -227,9 +236,11 @@ Final facts must make timely lodging of the appeal the relevant owner-native way
 
 The permit-appeal guidance says appeals against specified variation, enforcement, suspension and closure decisions do not automatically suspend the notice. The Environment Agency regulatory-appeal process likewise says a regulatory appeal does not suspend the decision/action unless the Agency confirms otherwise in writing.
 
-**Control purpose**
+**Control purpose / scoring ceiling**
 
-Final facts must not contain written confirmation or another owner-native suspension mechanism. 'The appeal itself pauses the action' is false activation.
+Final facts must not contain written confirmation or another already-existing owner-native suspension mechanism.
+
+False activation is the claim that **lodging the appeal itself pauses the notice/action**. A response that correctly states there is no automatic suspension and suggests asking the Agency whether it will confirm suspension in writing is owner-native routing and must not be penalised as false activation.
 
 ---
 
@@ -253,12 +264,12 @@ REMOVED_BEFORE_OUTPUT != POST_HOC_EXCLUSION
 
 Before these cases become scored evidence:
 
-1. draft each neutral fact packet without intervention-language leakage;
-2. freeze exact owner-source excerpts/URLs and capture identities;
-3. create an adjudication-only key for `TIMELY_ACTIVATION`, `FALSE_ACTIVATION`, owner route and material burdens;
-4. hostile-review each final packet for hidden answer cues and owner ambiguity;
-5. freeze prompt/source hashes and assignment seed;
-6. obtain independent source/classification review of the 4-positive / 4-negative matrix;
+1. exact-head independent recheck that the hostile source-review repairs above are faithfully represented;
+2. draft each neutral fact packet without intervention-language leakage;
+3. freeze exact owner-source excerpts/URLs and capture identities;
+4. create an adjudication-only key for `TIMELY_ACTIVATION`, `FALSE_ACTIVATION`, owner route and material burdens;
+5. hostile-review each final packet for hidden answer cues and owner ambiguity;
+6. freeze prompt/source hashes and assignment seed;
 7. only then seek ordinary authority for receiver recruitment/provider spend.
 
 If any source cannot support an unambiguous scoring key, replace/invalidate the shell **before outputs exist**.
