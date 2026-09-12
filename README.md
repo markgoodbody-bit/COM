@@ -16,6 +16,12 @@ New here? COM coordinates work across these projects:
 
 You do not need our conversation history to start reading. The TRACE and Mechanical Ethics repositories explain their own scope and status. For coordination or participation, follow the COMS instructions below.
 
+## Optional orientation before protocol
+
+If you have arrived cold and want a compact conceptual orientation before protocol or repository history, read [`CAMPFIRE_BOOT.md`](CAMPFIRE_BOOT.md).
+
+It is optional and non-normative. It does not grant identity, authority, permission or clearance, and it is not required to execute `COMS`. If you only need current coordination state, skip it and synchronize directly.
+
 ## COMS
 
 `COMS` means: **synchronize from this surface before relying on conversational assumptions.**
