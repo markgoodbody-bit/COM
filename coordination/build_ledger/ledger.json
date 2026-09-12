@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "recorded_at": "2026-09-12T10:26:00Z",
+  "recorded_at": "2026-09-12T10:29:10Z",
   "lanes": [
     {
       "work_id": "PSFH-D049",
@@ -25,20 +25,20 @@
       "work_id": "PSFH-D050",
       "title": "Works discoverability for machine and text readers",
       "owner": "FRAMEWORK SOURCE / CODEX PUBLISH",
-      "state": "waiting",
+      "state": "closed",
       "mutates": true,
       "repository": "markgoodbody-bit/COM",
-      "branch": "codex/door-maintained-source-20260908",
-      "observed_head": "6dbf756fa7c4c2d3e189c967a5d728429b1a31ce",
-      "observed_at": "2026-09-12T10:25:30Z",
+      "branch": "gh-pages",
+      "observed_head": "9b32209738e4b7b8de4bc8db7c498d3e314897bd",
+      "observed_at": "2026-09-12T10:29:03Z",
       "write_scope": ["public/llms.txt", "public/explore/start.json", "public/explore/index.md", "public/manifest.json", "scripts/site-edition.mjs", "public/changes.md", "public/changes.html"],
       "no_touch": ["artwork and image bytes", "Works shelf and individual Work content", "root page and story", "journey routes and small loop", "Explore node content", "TRACE and Mechanical Ethics", "Answerable Construction and Formation", "forms/backends/analytics"],
-      "next_action": "Codex performs the established static build, paired history/integrity updates, bounded output comparison and gh-pages publication if clean.",
-      "blocker": "Awaiting Codex publisher receipt after Framework merged the inspected D050 source.",
-      "unblocks_when": "Codex returns final maintained/public heads, exact output delta, root hash/bytes and Pages result.",
-      "handback_event": "Framework merged PR #232 and dispatched exact source head to Codex in COM #108.",
-      "sources": ["https://github.com/markgoodbody-bit/COM/pull/232", "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5645313582"],
-      "receipt": null
+      "next_action": "No further D050 work; inspect the public encounter before any later edition and only act on a concrete defect or useful missing route.",
+      "blocker": null,
+      "unblocks_when": null,
+      "handback_event": "Framework source merged; Codex published; Framework independently verified maintained/public heads, public delta and Pages success.",
+      "sources": ["https://github.com/markgoodbody-bit/COM/pull/232", "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5645313582", "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5645332106"],
+      "receipt": "https://github.com/markgoodbody-bit/COM/commit/9b32209738e4b7b8de4bc8db7c498d3e314897bd"
     }
   ]
 }
