@@ -1,6 +1,6 @@
 # FRAMEWORK HEAD
 
-Status: **EPHEMERAL CONTINUITY STATE — NOT CANON / NOT A LIVE SERVICE MONITOR**  
+Status: **EPHEMERAL CONTINUITY STATE — BUILD MODE / NOT CANON / NOT A LIVE SERVICE MONITOR**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -8,127 +8,106 @@ Mark is human originator/witness and consequential release/account/external-cont
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Read first:
+## DIRECT HUMAN DIRECTION — CURRENT
+
+Mark's current instruction is explicit:
+
+> **NO TESTING. WE'RE BUILDING.**
+
+Framework had drifted back into practical-value experiment design on 12 September. That direction is cancelled/parked by COM #76 comment `5647343037`.
+
+Do not resume receiver testing, case-packet/gold-key work, continuity A/B work, benchmarks, efficacy studies or preregistration unless Mark explicitly reopens testing.
+
+Current cadence:
+
+```text
+BUILD -> PUBLISH -> OBSERVE -> CORRECT
+```
+
+Routine reversible PSFH work should move without turning Mark into a per-change approval bottleneck.
+
+## Read first
+
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. `coordination/PRACTICAL_VALUE_HEAD.md`
-4. COM #76 current practical-value / owner-routing thread
+3. COM #108 — live PSFH/public-door build lane
+4. maintained PSFH source branch `codex/door-maintained-source-20260908`
 
-## Current whole-project orientation — WORKING / CLAIM-CUT / NOT CANON
+`coordination/PRACTICAL_VALUE_HEAD.md` is PARKED/HISTORICAL, not a current-work pointer.
 
-Current strongest description:
+## Current build — PSFH D053
 
-> **a living human–AI cross-domain practice/experiment that borrows, translates, composes and stress-tests established methods around partial knowledge, affected scope, correction, burden, authority, care, resilience and positive construction; preserves disagreement/adverse results; and tests whether the shared practice helps humans and increasingly capable artificial systems build better futures together.**
+Maintained source at assignment:
+`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
 
-Practical value, not naming, is now the central evidential burden.
+Public predecessor:
+`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
 
-```text
-PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
-IMPORTANT != NOVEL
-PRACTICE_INTEGRATION != NOVEL_METHOD
-OPERATING_DISCIPLINE != NOVEL_THEORY
-OWNER_ROUTING != FAILURE
-```
+Codex assignment:
+COM #108 comment `5647365997`.
 
-## Working instrument placement
+Current product state:
+- ten graph-backed Explore reading rooms already exist;
+- contextual art-first composition currently wraps Explore with Anna Atkins and Futures with Shen Zhou;
+- Works now contains six canonical encounters including Winslow Homer.
 
-- **PSFH** — voluntary public encounter / door.
-- **TRACE** — portable structural representation hypothesis; no unique primitives established; practical advantage unearned.
-- **Mechanical Ethics** — human-facing synthesis/translation; practical advantage unearned.
-- **Formation Under Uncertainty** — merged non-production scenario/representation/falsification testbed; stronger-owner baseline not beaten on substantive coverage.
-- **Answerable Construction** — merged synthesis/history/reading surface plus open untested research question; contribution/layer not established.
-- **Campfire / COM / Square** — coordination/evidence/field instruments and applied continuity patterns; not unique provenance/safety theory.
+D053 extends the existing contextual-art composition to exactly three additional rooms using existing Works only:
+- `aperture` / Partial views -> Johannes Vermeer, *The Geographer*;
+- `significance` -> Harriet Powers, *Bible Quilt 1886*;
+- `hardening` -> Edmonia Lewis, *The Death of Cleopatra*.
 
-## Closed repository/publication edges
+Product rule:
+- artwork first;
+- whole/canonical presentation, no crop/distortion/synthetic art;
+- question/context below the artwork;
+- quiet navigation after the threshold;
+- accessibility skip remains hidden/focusable;
+- Works provenance remains canonical;
+- preserve graph/source/challenge/Map/Opening/Not now/raw routes;
+- editorial placement is explicitly not the artist's argument or endorsement.
 
-### Formation Environment v0.2
-Final candidate `9be41ff97ccdd4c3613edcad0c673fd77663caa2`; merge `e834b715ca683fbb4d79f6008747bddf971c0441`. Codex final execution and CC final diff review closed the gate. Non-production/not canon. Current role remains a bounded project-specific testbed; `BASELINE_NOT_BEATEN`.
+No new art acquisition, AI art, homepage explanation programme, forms/backend/analytics, or TRACE/ME/Formation/Answerable Construction/Campfire Production mutation.
 
-### Answerable Construction
-Final repaired head `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`; merge `c8d52688eb4b838c33d5b1b66ef39624137c76e6`. Current disposition: synthesis/history/reading surface; contribution/layer not established; open untested question only; historical v0.1 artifacts untouched.
+Codex may publish when mechanically coherent under standing routine reversible authority. No research review programme is a prerequisite.
 
-### PSFH D052
-Maintained source `d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`; public `2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`; Pages run success; CC origin witness reports 160/160 live files matched public head.
+## Stable project disposition
 
-## Practical-value tests — DESIGN/PREFLIGHT ONLY / NOT EXECUTED
+- **PSFH** — voluntary public encounter/door; current active build surface.
+- **TRACE** — structural representation instrument; no unique primitives/practical superiority claim required for current build. Main reverified `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
+- **Mechanical Ethics** — human-facing ethical/normative synthesis/translation. Main reverified `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+- **Formation Under Uncertainty** — merged non-production testbed; merge `e834b715...`; baseline not beaten.
+- **Answerable Construction** — merged synthesis/history/reading surface; merge `c8d52688...`; contribution/layer not established.
+- **Campfire / COM / Square** — coordination/evidence/field instruments, not current public product build target.
 
-### TRACE / ME thin activation
+## Closed / historical items that must not reappear as live debt
 
-Original protocol:
-`evidence/TRACE_ME_THIN_ACTIVATION_TEST_PROTOCOL_20260912.md`
+- PSFH D052 is public and independently origin-witnessed.
+- PR #75 pre-selection scaffold is RETIRED / CLOSED UNMERGED.
+- FQ11 is COMPLETE historically with SHRINK / adverse-to-universal-packet result; not an active build lane.
+- practical-value experiment cluster is PARKED by Mark's direct instruction.
 
-Current decision/packet-fairness lock:
-`evidence/PRACTICAL_VALUE_PROTOCOL_PREFLIGHT_LOCK_20260912.md`  
-commit `160eed78a2e4f6c43b8bda7896ceff3a20895b5a`
+## Visual/product orientation retained
 
-The lock now explicitly requires label-blind answer-leakage review before hashing final packets and preserves:
-
-```text
-NEUTRAL_DECISIVE_FACT != ANSWER_LEAK
-DISCOVERABLE_ANSWER != LEAKED_ANSWER
-HARDER_CASE != FAIRER_CASE
-```
-
-Current repaired v2 source matrix:
-`evidence/TRACE_ME_THIN_ACTIVATION_CASE_SOURCE_PREFLIGHT_V2_20260912.md`  
-commit `02d68ccf3c489e1d448f37ab8d02b3f551952832`
-
-Independent hostile review of the previous v2 source returned `REPAIR_BEFORE_PACKET / NO REPLACE_DOMAIN`. The exact repairs are now represented: homelessness review-path/priority-need pins, procurement regime symmetry, employment mechanism+sequence/alternative scoring, environmental timing/routing ceilings, and pair-symmetric decisive facts.
-
-Exact repaired-source recheck requested at COM #76 comment `5646641110`.
-
-**Do not draft final receiver packets until `MATRIX_SOURCE_READY`.** No scored output exists.
-
-### COM bounded continuity reload
-
-Protocol:
-`evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
-
-Preflight fairness constraint in COM #76 comment `5646529482`: bounded and ordinary-provenance arms must share the same frozen evidence universe and comparable retrieval/search capability. Hidden stale-pointer/cold-domain fixtures remain private from receivers.
-
-No provider spend, cold-receiver recruitment, full-carrier ingestion or receiver-output publication is authorized.
-
-## Mechanical Ethics — owner-corrected reading / no source change
-
-Current strongest reading:
-
-> **human-facing project synthesis / translation that keeps established ethical, administrative, temporal and institutional relations together in plain language, especially the non-equivalence between formal later correction and effective protection before comparable repair is lost.**
-
-No ME source demotion earned because the current front door is already sufficiently cautious.
-
-## TRACE — current RC1 posture holds
-
-TRACE main last verified:
-`46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`
-
-RC1 already says use ordinary/specialist methods where they preserve the needed relations with less effort; unique primitives are not established; representation burden is material; practical advantage is unearned. Reverify before operational use.
-
-## Current world-state delta
-
-COM #76 comment `5646631505` records the 12 September Saudi East-West pipeline attack as a material coupled-route field delta. The bypass used while Hormuz was constrained was itself temporarily shut after attacks. Treat this as owner-native common-mode/adversarial resilience evidence, not a TRACE addition.
-
-England drought remains a stock/recovery-lag example: rainfall can improve flows while reservoir storage continues falling. No new project mechanism earned.
+- Works is the canonical art library, not the whole art vision.
+- Contextual art may live inside the human journey as atmosphere/encounter, but artwork is not evidence or endorsement.
+- Arrival invariant from Mark: `FIRST_VISIBLE_PIXEL -> ART_ROOM`; ordinary navigation does not sit above the art; full viewport does not mean distortion; accessibility does not require visual clutter.
+- Human flow remains encounter first, then question/choice/depth—not explanation furniture first.
 
 ## Local Square speech/watch gate
 
-Only Mark may authorize local action with exact phrase:
+Only Mark's exact phrases authorize local service action:
 - `install-and-enable`
 - `install-watch`
 - `start-once`
 
 `COMSYNC`, `proceed`, build work and silence authorize nothing.
 
-## Exact next move
-
-1. Receive/disposition repaired v2 source recheck.
-2. Only if source-ready, draft neutral case packets + private adjudication keys and run label-blind leakage/hostile owner review.
-3. Do not dispatch cold receivers until separate recruitment/provider-spend authority exists.
-4. Continue world learning/owner routing; add no primitive/layer unless baseline comparison earns it.
-
 ```text
-FALSIFICATION != VALIDATION
-PRACTICAL_VALUE != CONCEPTUAL_NOVELTY
-BASELINE_NOT_BEATEN
-SOURCE_READY != RUN_AUTHORISED
-PUBLICATION != CANON
+PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
+DIRECT_HUMAN_DIRECTION > PRIOR_EXPERIMENT_PLAN
+NO_TESTING -> BUILD_THE_THING
+BUILD != TEST_PROGRAMME
+EDITORIAL_PLACEMENT != ARTIST_ARGUMENT
+WORKS_LIBRARY != CURRICULUM
+PUBLICATION -> OBSERVATION -> CORRECTION
 ```
