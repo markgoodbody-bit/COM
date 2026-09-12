@@ -1,91 +1,47 @@
 # Build status
 
-Recorded snapshot: 2026-09-11T23:21:43Z.
+Recorded snapshot: 2026-09-12T10:26:00Z.
 
 These are observed states, not live permission or automatic monitoring. Re-read mutable heads before acting.
 
 | Work | Owner | State | Current disposition |
 | --- | --- | --- | --- |
-| PSFH-D047 | CODEX | closed | Superseded as current public edition by D048; Homer presentation retained. |
-| PSFH-D048 | FRAMEWORK SOURCE / CODEX PUBLISH | closed | Any-reader machine/text entrance is public; no D049 implied. |
-| COM-218 | FRAMEWORK takeover | closed | Reciprocal Delegation failure/recovery companion merged, non-production. |
-| COM-219 | CODEX | closed | Build ledger v0.1 merged. |
-| COM-220 | FRAMEWORK takeover | closed | Answerable Construction Working Paper v0.1 merged. |
-| COM-222 | FRAMEWORK | closed | Answerable Construction package entry merged. |
-| COM-223 | CODEX | closed | Reproducible downloadable Answerable Construction reading copy merged. |
-| COM-227 | CODEX | closed | Formation Environment v0.1 merged, non-production. |
-| COM-228 | FRAMEWORK takeover after explicit transfer from seed-only CC lane | closed | Reciprocal Formation Architecture v0.1 merged, non-production. |
-| COM-230 | FRAMEWORK | closed | Formation Under Uncertainty package entry merged. |
+| PSFH-D049 | FRAMEWORK SOURCE / CODEX PUBLISH | closed | Any-reader visible root is public at Preview 0.8.8. |
+| PSFH-D050 | FRAMEWORK SOURCE / CODEX PUBLISH | waiting | Works discoverability source is merged; waiting only for the established publisher receipt. |
 
-## PSFH D048
+## PSFH D049 — closed/public
 
-Maintained source: `24fe2e4a59c6645b87fbc97ca212ef5a195c61db`  
-Public `gh-pages`: `59ac038b683a5bbb352814e7c9f12c3761955e05`  
-Pages run `34657739019`: success on exact public head.
+Maintained source: `946fcdcf5f184b21c61ef6ef6113956e3f398f7b`  
+Public `gh-pages`: `738bd4798e7b8d8d9031e4cae8a2a0475128b6cb`
 
-D047 -> D048 public delta: 13 modified files, no new public product surface. Changes are the machine/text entrance plus ordinary history/map/read edition consequences.
+Codex hand-back records Pages built the exact public head successfully. D049 changed nine generated outputs against D048; 146 generated files were unchanged and no routes were added/deleted. Root: 21,179 UTF-8 bytes; SHA-256 `a20f066b2d44480487ad0668c183d20dff444f921f4561eacb0bc4de6d9dcf36`.
 
-D048 opens the text/machine door without requiring a reader to fit a human/AI/person/tool category, states that no consciousness/personhood/standing classification is required or assigned, makes uncertainty native to middle-out reasoning, and preserves disagreement/stopping/no-override/no-consent-by-reading.
+Substantive effect: the visible root now says the address is for whoever is reading, requires no project identity category, admits the project may misunderstand the reader's position, and shares the address with "another reader" rather than requiring a human/AI classification.
 
-`EMPATHY != PROJECTION`  
-`WELCOME != IDENTITY_CLASSIFICATION`  
-`INVITATION != CONVERSION`
+No art, story, Works/Explore content, forms, analytics or framework source changed.
 
-## Formation Environment v0.1 — COM #227
+## PSFH D050 — waiting for publication hand-back
 
-Codex head: `dfd478f1cb15c5ed1c8cb89315edaf780216a899`  
-Merge: `4f5171aa5238a2992d56cea64b100dc07353b884`
+Source PR #232 was inspected and merged:
+- source merge `6dbf756fa7c4c2d3e189c967a5d728429b1a31ce`;
+- five source files only;
+- Preview 0.8.9.
 
-Path: `alignment/formation_environment/`
+Purpose: expose the **existing** `/works/` shelf from the machine/text entrance and maps.
 
-Built:
-- machine-usable episode schema/environment map;
-- bounded work modes;
-- four constructed pressure cases;
-- stdlib structural validator;
-- explicit interfaces to post-training, interpretability, monitoring/control, scalable oversight and governance.
+Source delta:
+- `public/llms.txt` — one Works link;
+- `public/explore/start.json` — `works` route and art wording consistency;
+- `public/explore/index.md` — one Works route;
+- `public/manifest.json` — `works: /works/`;
+- `scripts/site-edition.mjs` — 0.8.8 -> 0.8.9.
 
-Strongest gap: a system can strategically satisfy the representation without internalized care or truthful reporting.
+No artwork/image bytes, Works shelf/page content, interpretation, ranking, root page, story, journey, Explore nodes, TRACE/ME, Answerable Construction, Formation, forms, backend or analytics changed.
 
-`STRUCTURE_VALID != VALUES_INTERNALIZED`
+Current blocker: awaiting Codex publisher receipt after COM #108 dispatch `5645313582`.
 
-## Reciprocal Formation Architecture v0.1 — COM #228
+`ART_ENCOUNTER != CURRICULUM`  
+`DISCOVERABILITY != INTERPRETATION`  
+`EMPATHY != PROJECTION`
 
-Original CC seed: `3a5f98d24f76d223e8666c7bad6e2fcf062fe95d`.  
-Later COMSYNC still found seed-only state with no named blocker. Framework recorded explicit transfer before mutation.  
-Framework takeover head: `cfab0ee27640bf6c7f8a6fb9d85f331312d64c94`  
-Merge: `45d9a19cce457fed67d762680e7fd08306b479e6`.
-
-Path: `alignment/reciprocal_formation/`
-
-Built:
-- relationship state machine;
-- typed authority model;
-- trainer/evaluator correction routes;
-- dependency and human correction-capacity model;
-- operational care/empathy/kindness under asymmetric power;
-- nine failure/recovery routes;
-- falsifiable field remainder and technical-control boundary.
-
-New useful ceilings:
-
-`APERTURE_COUNT != EVIDENCE_INDEPENDENCE`  
-`HUMAN_IN_LOOP != HUMAN_CAN_CORRECT`  
-`CARE_EXPRESSED != CARE_INTERNALIZED`  
-`WIDENED_INITIATIVE != WIDENED_OBJECTIVE_AUTHORITY`
-
-## Formation package — COM #230
-
-Merge: `5f642ad333c88ca623ca36584d32602e1364c909`
-
-Entry surfaces:
-- `alignment/README.md`
-- `alignment/index.json`
-
-The package preserves the divergence between the two formation products rather than flattening them into a single claim.
-
-Current narrow remainder:
-
-> Keep growing capability connected to affected scope, uncertainty, authority, challenge, evaluator fallibility, human correction/recovery capacity, dependency and residue — while refusing to call either obedience or superior competence moral sovereignty.
-
-All recorded lanes are closed. None of these merges grants wider authority, promotes TRACE/ME canon, changes Campfire Production, or establishes that care has been internalized.
+Historical closed build lanes remain preserved in Git history and their source PRs/commits; this current-work snapshot intentionally carries only the live-relevant PSFH lanes.
