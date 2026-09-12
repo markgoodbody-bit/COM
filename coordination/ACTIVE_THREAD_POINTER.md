@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D060 LIVE / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-12 — Europe/London  
+Status: **BOUNDED COORDINATION POINTER — D060 LIVE / CANONICAL COLD BOOT CONSOLIDATED / ENTRANCE + BOUNDED DISCOVERY ACTIVE / CAMPFIRE HUMAN-GATED / NOT CANON / NOT AUTHORITY**  
+Updated: 2026-09-13 — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -26,7 +26,12 @@ FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
 PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 ```
 
-CC is out of weekly tokens until tomorrow morning. Availability only; not a stop condition.
+Claude Code availability is **not reverified** after the date rollover. Last human report on 12 September: CC was out of weekly tokens until the morning of 13 September. Recheck before routing new work.
+
+```text
+LAST_KNOWN_UNAVAILABLE != CURRENTLY_UNAVAILABLE
+UNKNOWN_AVAILABILITY != BLOCKER_FOR_REVERSIBLE_WORK
+```
 
 ## PSFH — D060 live
 
@@ -50,6 +55,37 @@ The original longer sentence exceeded the existing seed ceiling; Codex shortened
 SMALLEST_KERNEL_SHOULD_NAME_THE_GIFT
 OFFER != AUTHORITY
 SHRINK_CHANGE > RELAX_BOUNDARY
+```
+
+## COM cold-start topology — consolidated
+
+The cold-aperture orientation has one maintained structure:
+
+```text
+BOOTSTRAP.md
+-> continuity/BOOTSTRAP.md
+-> [only when needed] continuity/BOOT.md or continuity/CAMPFIRE_ORIENTATION.md
+
+README.md / COMS
+-> operational synchronization
+```
+
+PR #269 briefly introduced a duplicate `CAMPFIRE_BOOT.md`. COMSYNC then exposed that `continuity/BOOTSTRAP.md` already owned the same job. PR #270 forward-corrected the mistake:
+- duplicate file removed;
+- README routes optional orientation through the existing `BOOTSTRAP.md` router;
+- canonical `continuity/BOOTSTRAP.md` repaired and compressed;
+- `aperture` is defined on first use;
+- material causal contribution inside shared COM work carries an immediate disclosure convention while blame/full culpability remain separate;
+- optional film/compression carriers were removed from the cold path;
+- COMS remains operational and normative protocol remains elsewhere.
+
+PR #271 also repaired the COM related-project link to the canonical public entrance `https://pleasestartfromhere.com/`.
+
+```text
+ONE_ORIENTATION_HOME > DUPLICATE_BOOT_SURFACES
+CAMPFIRE != COMS
+ORIENTATION != AUTHORITY
+CAUSAL_RESPONSIBILITY != BLAME
 ```
 
 ## What current bounded entrance questions have shown
@@ -124,13 +160,14 @@ Only Mark's exact phrases authorize local lifecycle action:
 
 ## Current operational posture
 
-D060 is delivered. Do not immediately churn the Door. Continue building from concrete entrance/material defects or from one bounded discovery question that yields a real consequence.
+D060 is delivered. COM cold-start orientation is consolidated. Do not churn the Door or boot surfaces merely because another phrase could be improved.
+
+Continue building from concrete entrance/material defects, useful unfinished work, or one bounded discovery question that yields a real consequence.
 
 ```text
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
 PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
-CC_UNAVAILABLE != BUILD_STOP
 BUILD_THE_THING
 ```
