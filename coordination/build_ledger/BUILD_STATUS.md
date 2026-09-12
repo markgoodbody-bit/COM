@@ -8,6 +8,8 @@ Observed coordination state only. Re-read mutable heads before acting. Later dir
 | --- | --- | --- |
 | Please Start From Here D060 | **LIVE / DELIVERED** | Site Preview 0.8.19. Maintained `97b55f01696ec6f71df94036a4305b2682defcbf`; public `07a7187a274fa0dd6d22f1a03d7a001eefe2ff77`; seed 0.4 live at 1023 bytes; all 156 generated HTTPS files observed 200 + local-build hash match. |
 | Open Horizon routing | **HUMAN + MACHINE DISCOVERABILITY COMPLETE / HORIZON REMAINS OPEN** | All 18 current provisional territories have routes; PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da` adds `open-horizon/map.json`. Routing completeness is not intellectual completeness. |
+| Reciprocal Delegation recovery field fixtures | **MERGED / NON-PRODUCTION REFERENCE** | Stale PR #224 was 297 commits behind current main but contained a still-useful four-file delta. Current validator was byte-identical, so Framework transplanted only the two real-head PASS/FAIL fixtures + README/test registration onto current main. PR #267 merged `1e0b2568d25993605f5be0d3aa1f90cca0048f0a`; #224 closed as superseded, not rejected. No validator/state-machine/schema/authority/Production change. |
+| Works proposal cleanup | **SUPERSEDED HISTORICAL BRANCHES CLOSED** | Old Harriet Powers PR #127 and Vermeer PR #129 were closed as superseded after verifying their material review repairs already exist in the maintained/public Works pages. Their review/provenance history remains lineage; no public source changed in this cleanup. |
 | Bounded frontier quarry | **OPTIONAL / NOT ACTIVE PROGRAMME** | The 12 September AI Growth Zone notes remain available as owner-first quarry. They do not define the current project edge and create no monitoring campaign or policy programme. |
 | Campfire local-service source repair | **STACK CLOSED / PARENT HELD AT HUMAN GATE** | PR #220 merged into PR #209 branch at `78daff5c22af22db9aa3ba4b2a654b7f9b75842a`; exact-head CI green. PR #209 remains open, source-only, hold main/Production pending exact local acceptance. |
 | Claude Code | **TEMPORARILY UNAVAILABLE** | Out of weekly tokens until tomorrow morning. Availability only, not blocker for reversible work. |
@@ -89,6 +91,24 @@ A no-delta answer is valid. Do not create public copy merely because a question 
 
 Candidate only, not build instruction: `affected parties` in the seed may be narrower than TRACE's `who or what may be affected`. Do not create another edition for that phrase alone.
 
+## Build-behind-entrance result
+
+The Reciprocal Delegation recovery companion now has two field-derived fixtures from real project coordination:
+
+```text
+D046 NAMED TAKEOVER -> PASS
+#218 UNNAMED TAKEOVER -> FAIL
+```
+
+The useful rule was already present; the build makes it inspectable against real history:
+
+```text
+A_TAKEOVER_NOBODY_NAMED_IS_NOT_A_HANDOFF
+EXACT_HEAD_UNCHANGED != THE_LANE_IS_STILL_OPEN
+```
+
+This is a non-production coordination reference, not a new authority system or project centre.
+
 ## Open Horizon state
 
 Human and machine discoverability are adequate for selective retrieval. Do not proliferate route files or theory because the horizon remains open.
@@ -123,6 +143,7 @@ Only Mark's exact phrases authorize local action:
 - PSFH public: `07a7187a274fa0dd6d22f1a03d7a001eefe2ff77`.
 - TRACE main verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 - Mechanical Ethics main verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
+- Reciprocal Delegation field-fixture integration: `1e0b2568d25993605f5be0d3aa1f90cca0048f0a`.
 - Campfire Relay main: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
 
 ```text
