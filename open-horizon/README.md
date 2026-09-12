@@ -31,7 +31,7 @@ The frontier is provisional and intentionally incomplete. These are territories 
 
 | Territory | What remains underexplored here |
 | --- | --- |
-| **1. Positive construction / flourishing** | Joy, play, beauty, meaning, curiosity, ambition, abundance, friendship, love, belonging and genuinely creating new futures rather than only preventing premature closure. |
+| **1. [Positive construction / flourishing](positive-construction.md)** | Joy, play, beauty, meaning, curiosity, ambition, abundance, friendship, love, belonging and genuinely creating new futures rather than only preventing premature closure. |
 | **2. Collective creation / commons / public goods** | How plural entities build goods none can produce alone; legitimate collective commitments; commons; coordination without a single sovereign chooser. |
 | **3. Legitimate power** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
 | **4. Formation / becoming / preference development** | Education, mentorship, culture, habit, rehabilitation, preference formation and mutual human–AI development without treating formation as ownership. |
