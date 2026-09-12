@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.29 · 12 September 2026
+Please Start From Here · Reader change log · Edition 0.30 · 12 September 2026
+
+### D055
+
+12 September 2026 — Clearer boundaries for the reading invitation.
+
+The text and JSON orientations now explicitly separate an invitation to understand from permission to act outside the reader's governing instructions. They request no secrets, credentials, code execution or outside contact. The invitation to form an independent view remains.
+
+The text orientation no longer repeats a version number that can go stale; the manifest holds the current edition. The manifest names the compact reader-start route, and source-layout discovery links match those already in the static publication. The static description now addresses whoever is reading.
+
+Site Preview advances to 0.8.13. Artwork, reading nodes, graph, Works, seed and navigation are unchanged. This is a clarity and discovery repair, not evidence of reader benefit. Previous publication 263163e4fd7be4cc5e7fc92e141e34ec5e123123 remains in Git history.
 
 ### D054
 
