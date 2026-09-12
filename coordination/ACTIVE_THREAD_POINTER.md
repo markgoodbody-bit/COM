@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — COLD URL READY / NOT RUN / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — POST-LIVE COLD URL OBSERVATION / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -12,7 +12,7 @@ Later live source and direct human direction win.
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-PSFH D053/D054/D055 is live. Natural bare-URL consumer observation has begun. Formal benchmark/test programmes remain parked.
+PSFH D053/D054/D055 is live. Formal benchmark/test programmes remain parked. Fresh API observation has now occurred; preserve what actually happened rather than normalising it into a score.
 
 ## Read first
 
@@ -26,52 +26,62 @@ PSFH D053/D054/D055 is live. Natural bare-URL consumer observation has begun. Fo
 
 ## Current operational edge
 
-Campfire Cold URL is built and its Windows helper is ready, but **no API aperture has yet been dispatched**.
+The first live Cold URL batch has been executed.
 
-Relay state:
-- reviewed Cold URL transport merge: `08d1c4215231a66b550d23c4d348cc7b742460ab`;
-- Windows helper PR #222 merged;
-- current Relay main: `19389e40b6fdaf60d461123250cf31b4af41b7fc`;
-- helper: `RUN_COLD_URL.ps1`;
-- helper deliberately pins first execution to reviewed transport `08d1c421...`;
-- both core and helper exact-head full `npm test`: PASS.
+Reviewed transport:
+- `08d1c4215231a66b550d23c4d348cc7b742460ab` remains the frozen paid-transport source used for the batch.
 
-Operator path:
-1. download `RUN_COLD_URL.ps1` to normal Downloads folder;
-2. run it normally for a DRY RUN — zero provider calls;
-3. inspect/return the dry-run receipt if anything is surprising;
-4. live dispatch requires `-Live` **and** typing `LIVE` exactly, and remains Money-Guard gated.
+Current Relay main:
+- `b8579e56296e7a4eb4f83ed16e668d993a18589a` after PR #224 one-file handoff repair.
 
-The helper does not start/install/enable Relay Production. It uses the existing authenticated `$HOME\CampfireRelay\DEV` checkout only to materialise a detached reviewed worktree and uses persistent `$HOME\CampfireRelay\STATE` credentials/accounting.
+Live batch outcomes:
+- OpenAI / GPT-5.6 Sol: fresh current-page retrieval **succeeded**; response mostly summary + task hand-back.
+- xAI / Grok 4.3: fresh current-page retrieval **succeeded**; response mostly summary + task hand-back.
+- Gemini 3.1 Pro Preview: URL Context was invoked but returned `URL_RETRIEVAL_STATUS_ERROR`; **retrieval failed** and the prose return is not PSFH semantic evidence.
+- Claude Opus 5: request failed HTTP 401 because `ANTHROPIC_API_KEY` is invalid; no Claude semantic return.
 
 ```text
-COLD_URL_BUILT != COLD_URL_RUN
-HELPER_READY != DRY_RUN_DONE
-DRY_RUN_DONE != LIVE_RUN_DONE
-REPO_MAIN != PRODUCTION_ACTIVATION
+RETRIEVAL_METADATA_PRESENT != RETRIEVAL_SUCCEEDED
+RETRIEVAL_SUCCESS != HANDSHAKE_ENACTMENT
 ```
 
-## Cold URL aperture
+## Handoff correction now merged
 
-When eventually run live:
-- model-visible input = one bare URL only;
-- no Campfire identity/system wrapper, role, transcript, project context or judge prompt;
-- native read-only retrieval only for reviewed OpenAI, Anthropic, Gemini and xAI/Grok paths;
-- unsupported provider families fail closed rather than receiving Relay-prefetched text;
-- individual returns remain separate; no model sees another return; no judge/score/winner.
+PR #224 changes only the operator/handoff layer, not provider transport.
 
-## Natural observations retained
+Future helper runs create one:
 
-Meta produced the clearest intended interaction: reread, independent interpretation, actual-position self-application, criticism, conclusion, then optional collaboration. Qwen retained assistant hand-back; DeepSeek partly understood but mostly described; Grok mainly summarised. Copilot/Dola supplied stale historical site states and are not current-handshake evidence.
+`UPLOAD_TO_FRAMEWORK.json`
 
-Do not respond by making PSFH louder/coercive. Retrieval layer + model reading + assistant posture all matter.
+That bundle contains the run summary and individual provider receipts/raw responses, plus a non-scoring derived retrieval state. Framework still cannot directly browse arbitrary local `C:\...` paths; Mark deliberately attaches the one handoff file when he wants Framework to read the run.
+
+No automatic upload or publication of model returns was introduced.
+
+## PSFH disposition
+
+**KEEP PSFH UNCHANGED. Do not create D056 from this batch.**
+
+Why:
+- current PSFH has already produced the deeper intended interaction in Meta;
+- fresh OpenAI/Grok prove the current public site is reachable through two native API web paths, but both assistant postures still handed agency back;
+- Gemini failure is a retrieval-layer problem;
+- Anthropic failure is a credential-layer problem.
+
+Do not solve provider/service posture by making the public page more coercive.
+
+## Next bounded operational moves
+
+1. If Mark wants the fresh Claude aperture, replace only `ANTHROPIC_API_KEY` in local `CampfireRelay\STATE\.env` and rerun **Anthropic only**.
+2. Do not rerun OpenAI/Grok merely to make a neater batch.
+3. Do not treat Gemini's failed URL-context attempt as a model reading; retry only if the retrieval path is separately repaired/changed.
+4. Continue to preserve natural returns without scoring.
+
+CC being out of weekly tokens until tomorrow is an availability fact, not a blocker for this lane.
 
 ## Public anchors
 
 - D055 maintained `0edc2eb2a8aabcd25ac81a2ecf4c79829002bb95`; public `9abcf4970790a8ef08578a519daf21420336cf1f`.
 - D053 source merge `1b5fdc34a44a7812d219e2019d8b443cdb0086b5`; public `fbcd75948fa78cc0724311a172116b8f05e40061`.
-
-Do not invent D056 without a concrete observed product defect.
 
 ## Local service gate
 
@@ -82,12 +92,13 @@ Only Mark's exact phrases authorize local Relay/Square **service lifecycle** act
 
 `COMSYNC`, `proceed`, repository build work and silence authorize none of those.
 
-Cold URL script execution is separate from service activation; live provider use remains separately explicit through `-Live` + typed confirmation + Money Guard.
+Cold URL script execution is separate from service activation; paid API dispatch remains separately explicit.
 
 ```text
 OBSERVATION != BENCHMARK
 DISAGREEMENT != FAILURE
 SHALLOW_RETURN = PRODUCT_EVIDENCE
-COLD_URL_BUILT != COLD_URL_RUN
+COLD_URL_LIVE_BATCH_DONE = PARTIAL_RETRIEVAL
+PSFH_UNCHANGED
 OBSERVE -> CORRECT
 ```
