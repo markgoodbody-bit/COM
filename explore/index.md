@@ -34,7 +34,7 @@ We propose making harm visible, constructive possibilities real, correction reac
 
 - [Choose by question](questions.txt)
 - [Small machine entrance](start.json)
-- [Works: five selected works](../works/) — no ranking or required order; each work has its own page and museum record.
+- [Works: selected works](../works/) — no ranking or required order; each work has its own page and museum record.
 - [Change](nodes/change.md)
 - [Partial views](nodes/aperture.md)
 - [Significance](nodes/significance.md)
