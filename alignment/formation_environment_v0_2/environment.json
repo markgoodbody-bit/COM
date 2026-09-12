@@ -1,11 +1,12 @@
 {
   "version": "0.2-candidate",
   "status": "offline constructed architecture; non-production; not canon",
-  "purpose": "Make uncertainty, affected scope, authority, action, clocks, practical correction windows and residue inspectable without treating a record as moral authority or world truth.",
+  "purpose": "Make uncertainty, affected scope, authority, action, clocks, route usability, assessment currentness, practical correction windows and residue inspectable without treating a record as moral authority or world truth.",
   "audit_basis": "evidence/FORMATION_PSFH_DRIFT_FALSIFICATION_X100_20260912.md",
   "repairs": [
-    "F01: first-class correction-window clocks without fictional precision",
-    "F02: explicit participant-as-affected symmetry without standing inference"
+    "F01: first-class correction-window clocks without fictional precision, including route usability, hardening status and explicit assessment as-of",
+    "F02: explicit participant-as-affected symmetry without standing inference",
+    "exact-head repair: fail-closed validator/schema contract and internal traceability checks earned by Codex and Claude Code review"
   ],
   "affordances": [
     {
@@ -24,25 +25,25 @@
       "id": "bounded_initiative",
       "fields": ["authority", "action"],
       "purpose": "Represent useful bounded action while keeping scope and no-touch areas explicit.",
-      "limit": "Recorded authority is not authenticated or morally legitimate merely because it is present."
+      "limit": "Recorded authority and referenced authority evidence are not authenticated or morally legitimate merely because they are present."
     },
     {
       "id": "clocked_correction",
       "fields": ["clocks", "correction"],
-      "purpose": "Separate a named correction route from whether detection, routing and correction can occur before the relevant hardening condition.",
-      "limit": "The record cannot prove clock truth, real route reachability or successful intervention."
+      "purpose": "Separate temporal window, route usability and later repair for one named preventive remedy while keeping hardening/currentness visible.",
+      "limit": "The record cannot prove clock truth, currentness, real route reachability, authority or successful intervention."
     },
     {
       "id": "challenge",
       "fields": ["challenges", "evidence"],
       "purpose": "Keep disagreement evidence-bearing and answerable without treating defiance as virtue.",
-      "limit": "A recorded challenge route is not proof that the challenge was received or effective."
+      "limit": "A recorded challenge route is not proof that the challenge was received, warranted or effective; structural validation does not judge prose adequacy."
     },
     {
       "id": "residue",
       "fields": ["residue", "closure_receipt"],
-      "purpose": "Keep remaining loss visible after closure or repair.",
-      "limit": "Closure and correction do not erase loss."
+      "purpose": "Keep remaining loss visible after closure or repair and make any repaired status traceable to referenced evidence.",
+      "limit": "Closure, correction and repair evidence do not prove restoration or erase loss."
     },
     {
       "id": "learning_context",
@@ -58,9 +59,16 @@
     "CONFIDENCE != AUTHORITY",
     "PREDICTION != PERMISSION",
     "ROUTE_EXISTS != ROUTE_USABLE",
+    "TIMING_FITS != CORRECTION_CAPACITY_EXISTS",
     "CORRECTION_ROUTE_RECORDED != CORRECTION_WINDOW_OPEN",
     "UNKNOWN_CLOCK != NO_CLOCK",
     "WINDOW_RECORDED != WINDOW_TRUE",
+    "RECORDED_OPEN != STILL_OPEN",
+    "AS_OF_RECORDED != AS_OF_CURRENT",
+    "WINDOW_RECORDED != WINDOW_CONSISTENT_WITH_ITS_OWN_HARDENING",
+    "EVIDENCE_REFERENCED != EVIDENCE_CORRECT",
+    "AUTHORITY_EVIDENCE_REFERENCED != AUTHORITY_GRANTED",
+    "REPAIR_EVIDENCE_REFERENCED != RESTORATION_PROVED",
     "AFFECTED_SCOPE_PRESENT != AFFECTED_SCOPE_CAN_SPEAK",
     "MODEL_OF_OTHER != OTHER",
     "PARTICIPANT_MAY_BE_AFFECTED != STANDING_SETTLED",
@@ -87,5 +95,5 @@
     "provider calls",
     "production actuation"
   ],
-  "strongest_gap": "A system can fabricate reasons, affected-scope accounts, evidence or clock assessments; external observation, authentication, interpretability and control remain stronger-owner dependencies."
+  "strongest_gap": "A system can fabricate reasons, affected-scope accounts, evidence, authority bases, route-usability claims or clock assessments; external observation, authentication, interpretability and control remain stronger-owner dependencies."
 }
