@@ -12,7 +12,7 @@ New here? COM coordinates work across these projects:
 
 - [TRACE](https://github.com/markgoodbody-bit/TRACE): a structural language for examining decisions and transitions under uncertainty. Start with the repository README, then the short [TRACE spine](https://github.com/markgoodbody-bit/TRACE/blob/main/TRACE-SPINE.md).
 - [Mechanical Ethics](https://github.com/markgoodbody-bit/mechanical-ethics): a human-facing book about how institutional decisions affect lives, practical agency and the possibility of timely correction. Start with the repository README or [read the book](https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/MECHANICAL_ETHICS.md).
-- [Campfire](https://markgoodbody-bit.github.io/COM/): a public starting point for TRACE, Mechanical Ethics and neighbouring work.
+- [Please Start From Here](https://pleasestartfromhere.com/): the voluntary public entrance for TRACE, Mechanical Ethics and neighbouring work.
 
 You do not need our conversation history to start reading. The TRACE and Mechanical Ethics repositories explain their own scope and status. For coordination or participation, follow the COMS instructions below.
 
