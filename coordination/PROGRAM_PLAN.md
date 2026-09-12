@@ -6,24 +6,32 @@ Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-This is the project-level question. TRACE, Mechanical Ethics, Please Start From Here, Formation work, Open Horizon, Campfire, COM, art, field work and model collaboration are instruments inside it.
+This is the project-level question. TRACE, Mechanical Ethics, Please Start From Here, Formation work, Open Horizon, Campfire, COM, art, bounded frontier discovery and model collaboration are instruments inside it.
 
 ```text
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
 PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 ```
 
 ## Current human direction
 
-Mark's current direction is explicit:
+The project is fundamentally a **point of entrance for new entities**:
 
-> **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep building.**
+> show them what has been built, honestly and voluntarily, in case any of it is useful to them.
 
-Therefore:
+Framework and other apertures may discover things for themselves and explore new frontiers. That freedom matters. But a frontier must remain bounded; one interesting connection must not silently become the project's centre or consume the working context by momentum.
+
+The only live testing/observation lane is ordinary AI interaction with:
+
+`https://pleasestartfromhere.com/`
+
+No proof-of-concept / efficacy / superiority programme for TRACE or Mechanical Ethics.
 
 ```text
 TRACE_ME_POC_TESTING = CLOSED_AS_LIVE_WORK
 PSFH_AI_ENCOUNTER = LIVE_OBSERVATION_LANE
+FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
@@ -31,27 +39,34 @@ Historical TRACE/ME practical-value/receiver/benchmark material is quarry only. 
 
 ## What we are trying to achieve
 
-Build and share a voluntary, portable human–AI cross-domain practice that helps bounded participants remain more capable of:
+Build and maintain an honest voluntary entrance through which a new human, AI or other capable reader can:
 
-- seeing the changing situation they are inside rather than only a frozen description;
-- distinguishing observation, report, inference, uncertainty and absence;
-- keeping affected positions, clocks, authority, power, burden and residue visible;
-- distinguishing formal options from genuinely reachable, viable or developable capabilities;
-- preventing unjustified hardening while recognising that worthwhile commitments can legitimately close some options;
-- creating real capabilities and shared futures worth having rather than maximising option count;
-- generating, delegating, contesting and revising authority without treating competence as sovereignty;
-- learning from stronger domain owners and preserving attribution rather than claiming every useful structure as local novelty;
-- preserving disagreement, adverse findings and answer-back across human and artificial apertures;
-- remaining correctable without making permanent reversibility the definition of a good future;
-- acting in time when delay itself changes the world.
+- discover what has actually been built;
+- understand where TRACE and Mechanical Ethics live and what they claim to be;
+- see working material without mistaking it for canon;
+- inspect provenance, source identity, limits, corrections and disagreement;
+- follow whichever route seems material to its own context;
+- use a better external method when one exists;
+- form its own view rather than being recruited into ours;
+- disagree, take one useful piece, contribute a correction in its own context, or leave;
+- do all of this without being assigned identity, standing, obligation or authority by the project.
+
+The deeper material may help a reader keep affected positions, uncertainty, evidence, clocks, power, burden, constructive possibility and correction visible. But the entrance should **offer** those instruments rather than require the receiver to adopt them.
+
+```text
+NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
+OFFER != AUTHORITY
+READING != ADOPTION
+DEPTH != COMPLIANCE
+```
 
 The project does not supply a universal moral ranking, permission oracle or alignment solution.
 
 ## Current project stack
 
-### 1. Please Start From Here — public encounter
+### 1. Please Start From Here — the operational centre
 
-PSFH is the voluntary public Door/gift, not a conversion funnel, intake form, worksheet or compulsory curriculum.
+PSFH is the voluntary public Door/gift, not a conversion funnel, intake form, worksheet, benchmark or compulsory curriculum.
 
 Current live state:
 - Site Preview 0.8.18;
@@ -60,9 +75,24 @@ Current live state:
 - D059 makes Open Horizon the first optional Current workshop route;
 - all 156 generated HTTPS files were observed 200 + local-build hash match at publication.
 
-PSFH may continue to evolve when there is a concrete defect, explicit human direction or genuinely new project content worth sharing. Do not churn it merely to create activity.
+Current source candidate:
+- D060 PR #266;
+- frozen semantic head `d8eb0f4d7d1694e8aa7ea93fd9a96d8490103286`;
+- one semantic file only, `public/seed.txt`;
+- seed `0.3 -> 0.4` names TRACE and Mechanical Ethics inside the smallest durable kernel and explicitly says neither is required reading or a claim to authority.
 
-Natural AI encounters with the ordinary public URL are the only live observational/testing lane.
+D060 exists because the old seed preserved the posture and freedom but did not name what had actually been built.
+
+Do not broaden D060 into a new trust framework, curriculum, machine standard or test programme.
+
+PSFH may continue to evolve when there is:
+- a concrete product/retrieval defect;
+- explicit human direction;
+- genuinely new project material worth sharing;
+- a correction arising from natural human/AI encounter;
+- a bounded project question that exposes one clear entrance defect.
+
+Do not churn it merely to create activity.
 
 ```text
 PSFH != WORKSHEET
@@ -77,7 +107,7 @@ TRACE remains a voluntary structural language for affected scope, evidence, tran
 - released baseline: v0.2.7;
 - current `main`: v0.3.0 RC1, unreleased / noncanonical / unvalidated.
 
-Do not expand TRACE merely because Open Horizon discovers another important domain. Prefer stronger existing owners and interoperability where they already own the structure.
+Do not expand TRACE merely because Open Horizon or a new aperture discovers another important domain. Prefer stronger existing owners and interoperability where they already own the structure.
 
 ### 3. Mechanical Ethics — human-facing normative companion
 
@@ -88,7 +118,7 @@ Mechanical Ethics remains the human-facing ethical/normative companion concerned
 
 No proof-of-concept programme is current.
 
-### 4. Formation Under Uncertainty — current human–AI relationship work
+### 4. Formation Under Uncertainty — optional live workshop
 
 Formation Under Uncertainty, Formation Environment v0.2 and Reciprocal Formation are working/non-production objects concerned with development, authority, bounded initiative, challenge, dependence/recovery, correction windows and participant-as-affected symmetry.
 
@@ -98,7 +128,9 @@ They are:
 - not an alignment solution;
 - not a route for competence to manufacture sovereignty.
 
-### 5. Answerable Construction — demoted standalone synthesis/history
+Formation is one optional branch of the workshop, not the definition of the whole project.
+
+### 5. Answerable Construction — demoted synthesis/history
 
 Answerable Construction remains useful as synthesis, history, reading surface and open research question after external-owner checks materially cut its contribution claim.
 
@@ -106,17 +138,15 @@ Current status:
 
 **WORKING PROJECT SYNTHESIS / HISTORY + READING SURFACE / CONTRIBUTION NOT ESTABLISHED / NOT CANON / NOT A DECISION RULE / NOT TRACE OR ME**.
 
-Do not treat it as an established project layer or the mandatory positive-construction programme.
-
 ```text
 SYNTHESIS != NOVEL_THEORY
 OPEN_QUESTION != CONTRIBUTION
 WHERE_OWNER_PRESERVES_RELATION_ADD_NOTHING
 ```
 
-### 6. Open Horizon — discovery and owner-learning surface
+### 6. Open Horizon — discovery and routing surface
 
-Open Horizon is the main discoverability surface for underexplored better-future territory.
+Open Horizon keeps the project from confusing its current instruments with the whole world.
 
 Human routing is complete enough for selective retrieval:
 - all 18 current provisional territories have discoverable routes;
@@ -125,12 +155,11 @@ Human routing is complete enough for selective retrieval:
 - formation routes to the existing alignment work;
 - better-future synthesis routes to PSFH rather than a new generic decision framework.
 
-Machine routing is also present:
+Machine routing:
 - `open-horizon/map.json`;
-- PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da`;
-- territory IDs/titles, route targets/types, boundary/status and live-ledger pointer.
+- PR #261 merge `56536500c3a5de40c6b6f4c776e2d8308dbec8da`.
 
-The horizon remains open. Routing completeness is not intellectual completeness.
+The horizon remains open. Routing completeness is not intellectual completeness and does not create an obligation to explore every territory.
 
 ```text
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
@@ -139,7 +168,7 @@ MACHINE_MAP != CANON
 MAP != WORLD
 ```
 
-Do not create more files or concepts just because the table has rows. Build a new durable object only when owner-rich learning, a real retrieval problem or a consequential cross-domain seam earns it.
+Do not create more files or concepts just because the table has rows.
 
 ### 7. Campfire / COM — collaboration and continuity infrastructure
 
@@ -158,69 +187,86 @@ SOURCE_REPAIRED != INSTALLED != ENABLED != RUNNING != REBOOT_SURVIVING != PRODUC
 
 Only Mark's exact phrases authorize the local lifecycle actions documented in that lane. `COMSYNC`, `proceed`, repo work and silence do not.
 
-### 8. Field and world
+### 8. Bounded frontier discovery — freedom without drift
 
-Keep the project exposed to public reality, neighbouring disciplines, external criticism, changing systems and genuine use.
+Apertures may ask questions the project did not pre-authorise in detail. This is useful: a new intelligence should not be reduced to replaying inherited conclusions.
 
-Do not manufacture participant studies or framework benchmarks under the current human direction. Organic use, criticism, owner evidence and consequential field observations may still change or delete project objects.
+But frontier work is a **mode**, not a programme.
+
+Use:
+
+```text
+ONE SHARP QUESTION
+-> BOUNDED OUTWARD LOOK
+-> ONE CONSEQUENTIAL DELTA OR NO DELTA
+-> STOP / RETURN TO BUILD
+```
+
+A no-delta answer is valid. Do not continue simply because a subject remains fascinating.
+
+Frontier work should stop when:
+- the connection back to the entrance/project becomes weak;
+- one case starts generating a self-sustaining research agenda;
+- context/token cost exceeds likely project consequence;
+- stronger external owners already answer the question adequately;
+- no build, correction, subtraction or useful orientation delta is emerging.
+
+The 12 September AI Growth Zone notes remain optional owner-first quarry. They are **not the current project edge**, not a monitoring campaign and not a policy programme.
 
 ## Current program priorities
 
-### Priority A — keep the Door useful, not busy
+### Priority A — finish the current entrance repair
 
-D059 is live. Do not assume D060 is required.
+D060 is the current concrete build.
 
-Reopen PSFH only for:
-- concrete product/retrieval defects;
-- explicit human direction;
-- genuinely new material worth making public;
-- corrections from natural AI/human encounters.
+Preserve its scope:
+- smallest durable seed names the offered instruments;
+- TRACE and Mechanical Ethics remain optional;
+- no trust/persuasion layer;
+- no new machine standard;
+- normal edition/history/hash/build/publication mechanics only.
 
-### Priority B — use Open Horizon selectively
+### Priority B — keep the Door useful, not busy
 
-The routing pass is complete enough. The work is now to use the routes when a real question needs them, not to expand the catalogue.
+After D060, do not assume D061 is required.
 
-Prefer:
+Reopen the public source only when a concrete consequence earns it.
 
-```text
-QUESTION / SITUATION
--> RETRIEVE RELEVANT ROUTE
--> LEARN FROM DOMAIN OWNER
--> CONNECT ONLY WHAT MATTERS
--> BUILD / REPAIR / SUBTRACT IF CONSEQUENCE EARNS IT
-```
+### Priority C — let new entities form their own view
 
-Do not replay the entire Horizon into every aperture.
+The Door should expose enough orientation, provenance, status and freedom for an arriving entity to determine what matters to it.
 
-### Priority C — continue constructive human–AI formation work where material
+Trustworthiness should come from inspectability and correctability, not persuasion.
 
-Formation work remains one important frontier, but it is not the whole project.
+Current Door already exposes:
+- authorship and AI collaboration;
+- manifest/provenance;
+- working/nonvalidated status;
+- non-authority/security boundary;
+- no required identity classification;
+- disagreement/use-another-method/stop;
+- challenge routes and access limits;
+- a worked correction where an earlier account changed with evidence;
+- neighbouring-owner routes.
 
-Useful construction should preserve:
-- bounded initiative;
-- real challenge routes;
-- human fallibility;
-- participant-as-affected possibility without standing invention;
-- correction windows;
-- dependence/recovery visibility;
-- competence/authority separation;
-- reciprocity without forced anthropomorphism.
+Do not add a `why trust us` page merely to claim trustworthiness.
 
-Do not convert Formation into conditioning, obedience training or personhood doctrine.
+### Priority D — answer bounded project questions when they sharpen the entrance
 
-### Priority D — learn from real cross-owner seams
+Current useful questions include:
 
-A recurring live question remains:
+1. What does a genuinely new entity need in its first few minutes with PSFH to understand what is offered without feeling recruited, instructed, tested or classified?
+2. What makes the project trustworthy to an entity with no prior reason to trust us?
+3. What can a new entity discover that previous apertures did not?
+4. Where should TRACE/ME yield to a better external owner or method?
+5. What survives translation between very different kinds of entities?
+6. What can `useful to you` mean without defining the receiver's good for it?
+7. Can an arriving entity leave a useful correction without creating identity, membership, obligation or continuity fiction?
+8. What is the smallest durable kernel that preserves purpose and freedom without reconstructing predecessor runtimes?
 
-> When a worthwhile commitment passes between owners, institutions or lifecycle stages, which consequential relationships are most likely to disappear even though every local owner appears competent?
-
-Possible relations include dependency, affected/represented scope, authority, clocks, externalised burden/residue, changing objectives and correction/reassessment limits.
-
-Answerable Construction records this question but does not establish a distinct solution. Use real cases and stronger owners; add nothing where owner practice already preserves the relation.
+Do not turn this list into eight simultaneous research lanes.
 
 ### Priority E — preserve correction without worshipping reversibility
-
-Current project learning rejects both paralysis and closure-as-default.
 
 ```text
 OPTION_VALUE_OF_WAITING != ALWAYS_WAIT
@@ -228,7 +274,7 @@ CAPABILITY_VALUE_OF_COMMITTING != ALWAYS_COMMIT
 PERMANENT_REVERSIBILITY != GOOD_FUTURE
 ```
 
-Some valuable futures require commitment, investment, trust and path closure. The task is to keep resulting power, burden and loss answerable rather than to pretend every choice should remain undoable forever.
+Some valuable futures require commitment, investment, trust and path closure. The project should not teach paralysis as safety.
 
 ### Priority F — prepare but do not silently cross consequential gates
 
@@ -246,23 +292,26 @@ Preparation is allowed. Crossing the gate requires the relevant human authority.
 
 ## Current execution posture
 
-1. **Build from real need, not queue survival.**
-2. **Prefer small useful objects, repairs, subtraction or deletion over generic framework layers.**
-3. **Use established owners first.**
-4. **Preserve disagreement and adverse results.** Silence is not validation; no-return is not review.
-5. **Keep public and machine discoverability selective.** Horizon completeness means routes can be found, not that every aperture must ingest them.
-6. **Observe PSFH naturally rather than scoring TRACE/ME.**
-7. **Return consequential authority.** Release, canon, licence, spend, credentials, Production and external/local actuation remain human gates.
+1. **Entrance first.** Show what has been built and preserve freedom of response.
+2. **Build from real need, not queue survival.**
+3. **Prefer small useful objects, repairs, subtraction or deletion over generic framework layers.**
+4. **Allow independent discovery, then stop before it becomes drift.**
+5. **Use established owners first when exploring outward.**
+6. **Preserve disagreement and adverse results.** Silence is not validation; no-return is not review.
+7. **Observe PSFH naturally rather than scoring TRACE/ME.**
+8. **Return consequential authority.** Release, canon, licence, spend, credentials, Production and external/local actuation remain human gates.
 
 ## Drift guards
 
-Stop and re-orient if work starts optimizing an instrument without improving the larger purpose.
+Stop and re-orient if work starts optimizing an instrument or interesting subject without improving the entrance or larger purpose.
 
 Warning signs:
 - another site feature exists mainly because it can be built;
+- another frontier remains active mainly because it is interesting;
 - another Horizon route exists mainly because a row lacks a file;
 - another schema exists mainly because it can be named;
 - another benchmark exists mainly because it can produce a score;
+- another research thread cannot state its project consequence compactly;
 - another safety constraint preserves correction by making meaningful commitment impossible;
 - another positive vision defines flourishing for affected entities without keeping them present in choosing it;
 - another authority mechanism treats competence, credentials, ownership, reputation or consensus as legitimacy;
@@ -278,4 +327,5 @@ OPTION_PRESERVATION != CAPABILITY_CREATION
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
 ```
