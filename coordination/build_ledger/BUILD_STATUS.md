@@ -11,6 +11,7 @@ Observed coordination state only. Re-read mutable heads before acting. Later dir
 | Open Horizon front door | **MERGED / DISCOVERABILITY ROUTE** | PR #244 merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`; `open-horizon/README.md` compresses the existing 18-territory map and owner-first use rule. Live detailed exploration remains COM #74. Not canon/backlog/TRACE schema/validation plan. |
 | Positive Construction route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`; linked from Open Horizon. Not a TRACE/ME primitive or universal theory of flourishing. |
 | Legitimate Power route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`; linked from Open Horizon. Not an authority-clearance rule; competence, mandate, authorization, standing and sovereignty remain distinct. |
+| Intervention & Feedback route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #249 merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`; linked from Horizon territory 6 at `c584b80adf4f392ee29d552d263e4d3d78143104`. Not a general causal theory or adaptive-management reinvention; preserves reactivity, policy-feedback, continuity-shaping and evaluation-context distinctions. |
 | Capital, Ownership & Allocation route | **MERGED / OWNER-FIRST LEARNING ROUTE** | PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`; linked from Horizon territory 8 at `af3e21ea05063b817f4018fc2e4e6725d6fa891b`. Not a project economics doctrine or financial/legal advice; preserves financing capability, risk, control and distribution distinctions. |
 | Claude Code | **TEMPORARILY UNAVAILABLE** | CC is out of weekly tokens until tomorrow morning. Availability fact only; not removed from the project and not a blocker for reversible Framework/Codex build work. |
 | Campfire Cold URL | **LIVE OBSERVATION LANE / NO SCORECARD** | Natural PSFH AI encounters may be observed. Do not turn them into TRACE/ME efficacy evidence or a provider league table. |
@@ -47,9 +48,10 @@ While D059 remains frozen, Framework continued the broader project rather than w
 
 1. `open-horizon/positive-construction.md` makes existing owner-first learning on substantive capability, commitment, commons, reserve capability and positive construction selectively retrievable.
 2. `open-horizon/legitimate-power.md` makes existing owner-first learning on mandate + capacity, differentiated authority functions, deliberation, fiduciary stewardship, delegation, entrustment and multi-scale coordination selectively retrievable.
-3. `open-horizon/capital-ownership-allocation.md` makes existing owner-first learning on capital allocation, risk-bearing, ownership/control, public de-risking, exit clocks and financing constraints selectively retrievable.
+3. `open-horizon/intervention-feedback.md` makes existing owner-first learning on measurement reactivity, adaptive management, policy feedback, evaluation context and continuity-shaping selectively retrievable.
+4. `open-horizon/capital-ownership-allocation.md` makes existing owner-first learning on capital allocation, risk-bearing, ownership/control, public de-risking, exit clocks and financing constraints selectively retrievable.
 
-These routes compress learning; they do not claim novelty, authority or formal project promotion.
+These routes compress learning; they do not claim novelty, authority or formal project promotion. Do not build the remaining Horizon rows into files merely to fill the map; further routes must be earned by substantial owner-first learning and a real retrieval problem.
 
 ```text
 PROJECT_HORIZON != TRACE_BACKLOG
@@ -57,6 +59,7 @@ LEARNING_FROM_OWNER != OWNERSHIP
 USEFUL_SYNTHESIS != NEW_PRIMITIVE
 COMPETENCE != LEGITIMACY
 RISK_BEARING != SOVEREIGNTY
+REACTIVITY != EVIDENCE_INVALIDATION
 BUILD != PROOF
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 ```
