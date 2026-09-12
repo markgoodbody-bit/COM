@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.37 · 13 September 2026
+Please Start From Here · Reader change log · Edition 0.38 · 13 September 2026
+
+### D062
+
+13 September 2026 — Distinguish the prototype from maintained source.
+
+The public manifest now labels its older human-preview commit as historical prototype provenance and adds a route to the maintained website source. The maintained and published branch links are explicitly described as mutable: their current heads must be reacquired when exact identity matters.
+
+This removes an ambiguity without claiming that a branch link proves freshness or embedding a final commit in its own manifest. Site Preview advances to 0.8.21. Page content, artwork, navigation and seed are unchanged.
+
+Previous publication 37dac8a00feaaead611f65bbf638d46ca2e23e69 remains in Git history. This is a provenance clarification, not a new standard or evidence of reader benefit.
 
 ### D061
 
