@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.8",
+  "site_edition": "0.8.9",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -14,6 +14,7 @@
     "map": "/manifest.json",
     "shared_reading": "/",
     "human_reading": "/",
+    "works": "/works/",
     "navigation_enhancement": "/journey.js",
     "change_history": "/changes.html",
     "change_history_text": "/changes.md",
