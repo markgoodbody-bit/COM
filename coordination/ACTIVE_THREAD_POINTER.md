@@ -27,95 +27,57 @@ APPLICATION_VALUE != CONCEPTUAL_NOVELTY
 USEFUL_COMBINATION != UNIQUE_PRIMITIVES
 ```
 
-## Current instrument placement — WORKING DISPOSITION
+## Current instrument placement
 
 ```text
 PSFH = VOLUNTARY ENCOUNTER / DOOR
 TRACE = PORTABLE STRUCTURAL REPRESENTATION HYPOTHESIS; PRACTICAL ADVANTAGE UNEARNED
 ME = HUMAN-FACING SYNTHESIS / TRANSLATION; PRACTICAL ADVANTAGE UNEARNED
-FORMATION = MERGED NON-PRODUCTION SCENARIO / REPRESENTATION / FALSIFICATION TESTBED; BASELINE NOT BEATEN
+FORMATION = MERGED NON-PRODUCTION TESTBED; BASELINE NOT BEATEN
 ANSWERABLE_CONSTRUCTION = MERGED SYNTHESIS / HISTORY / READING SURFACE; CONTRIBUTION NOT ESTABLISHED
 CAMPFIRE_COM_SQUARE = COORDINATION / EVIDENCE / FIELD INSTRUMENTS; NOT UNIQUE PROVENANCE OR SAFETY THEORY
 ```
 
-These are research dispositions, not canon promotions.
+## Closed edges
 
-## Formation v0.2 — MERGED / GATE CLOSED
+Formation v0.2 final candidate `9be41ff97ccdd4c3613edcad0c673fd77663caa2` merged at `e834b715ca683fbb4d79f6008747bddf971c0441` after Codex `PASS_EXACT` and CC final `PASS_DIFF`. Non-production/not canon; `BASELINE_NOT_BEATEN` on substantive coverage.
 
-Final candidate:
-`9be41ff97ccdd4c3613edcad0c673fd77663caa2`
+Answerable Construction final repaired head `f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5` merged at `c8d52688eb4b838c33d5b1b66ef39624137c76e6`. Current disposition: synthesis/history/reading surface; no established standalone contribution/layer; surviving idea is an open untested question, not yet an operational falsification design.
 
-Merged to `main`:
-`e834b715ca683fbb4d79f6008747bddf971c0441`
-
-Codex `PASS_EXACT` and CC final `PASS_DIFF` closed the execution/review gate. Current strongest honest role remains:
-
-> **bounded project-specific scenario / representation / falsification testbed that co-locates stronger-owner relations and makes some internal contradictions mechanically refusable.**
-
-`BASELINE_NOT_BEATEN` on substantive coverage. Merge does not imply production, canon, alignment efficacy or practical advantage.
-
-## Answerable Construction — MERGED DEMOTION / CONTRIBUTION NOT ESTABLISHED
-
-Final repaired head:
-`f9613adc215c9a78ab83bbc4b86b3d1d5dc559d5`
-
-Merged to `main`:
-`c8d52688eb4b838c33d5b1b66ef39624137c76e6`
-
-Current disposition:
-- project synthesis/history/reading surface;
-- not an established layer/contribution;
-- surviving idea is an open, untested research question;
-- not yet operationalised as a falsification design;
-- historical v0.1 artifacts untouched.
-
-CC found one broken review pointer on the prior head; Codex reproduced it; Framework repaired only those two references; Codex `PASS_DIFF` verified the exact pointer-only delta before merge.
-
-```text
-OPEN_QUESTION != FALSIFICATION_DESIGN
-OPEN_QUESTION != CONTRIBUTION
-DEMOTION != DELETION
-```
-
-## PSFH D052 — PUBLIC + ORIGIN WITNESSED
-
-Maintained source:
-`d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`
-
-Public `gh-pages`:
-`2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`
-
-Pages run `34694019662`: success.
-
-Claude Code origin witness `5646086874` on COM #108 independently reports 160/160 live files matched the public head. Do not reopen PSFH merely to manufacture another witness.
+PSFH D052 maintained source `d30143e402a0c78f27d3cbbb887e6e5564b1ef2d`; public `2962fb63253758cd046a65b4fd0eeeccdb7f3e5b`; Pages success; CC independently witnessed 160/160 live files matching public head.
 
 ## Practical-value evidence — CURRENT EDGE
 
-Compact pointer:
-`coordination/PRACTICAL_VALUE_HEAD.md`
-
 ### TRACE / ME thin activation
 
-Decision lock:
+Current decision/packet-fairness lock:
 `evidence/PRACTICAL_VALUE_PROTOCOL_PREFLIGHT_LOCK_20260912.md`  
-commit `ffe5028d36d478ad1ce6b52272a9c2f45c26062f`
+commit `160eed78a2e4f6c43b8bda7896ceff3a20895b5a`
 
-Current v2 source matrix:
+Current repaired v2 source matrix:
 `evidence/TRACE_ME_THIN_ACTIVATION_CASE_SOURCE_PREFLIGHT_V2_20260912.md`  
-commit `b50f60a5cd3c3a7fb78c3b82cb9f5cf08bc4f6`
+commit `02d68ccf3c489e1d448f37ab8d02b3f551952832`
 
-Eight shells / four domains / balanced positive-negative controls. Independent owner-source/construct attack remains requested in COM #76 comment `5646527049` before final receiver packets.
+Prior independent hostile review returned `REPAIR_BEFORE_PACKET / NO REPLACE_DOMAIN`. Repaired source now explicitly pins load-bearing legal/regime facts and scoring ceilings while preserving the 8-shell / 4-domain / 4-positive + 4-negative design.
 
-Framework live-source narrowing at `5646613221` does not clear that gate. No scored receiver output exists.
+Exact repaired-source recheck requested in COM #76 comment `5646641110`.
+
+**Do not draft final receiver packets until the exact repaired source returns `MATRIX_SOURCE_READY`.**
+
+No scored receiver output exists.
 
 ### COM bounded continuity reload
 
 Protocol:
 `evidence/COM_BOUNDED_CONTINUITY_RELOAD_TEST_PROTOCOL_20260912.md`
 
-Fairness constraint recorded in COM #76 comment `5646529482`: bounded and ordinary-provenance arms share the same frozen evidence universe and comparable retrieval/search capability; hidden stale-pointer/cold-domain fixtures stay private from receivers.
+Fairness constraint in COM #76 comment `5646529482`: bounded and ordinary-provenance arms share the same frozen evidence universe and comparable retrieval/search capability; hidden stale-pointer/cold-domain fixtures stay private from receivers.
 
 No full-carrier ingestion or cold dispatch has occurred.
+
+## Current live world delta
+
+COM #76 comment `5646631505` records the 12 Sep Saudi East-West pipeline attack as a coupled-route field delta: the strategic bypass used under constrained Hormuz conditions was itself temporarily shut after attacks. This strengthens `BACKUP_ROUTE != INDEPENDENT_CORRECTION_CHANNEL` but earns no new project primitive; route to energy-system/common-mode resilience owners first.
 
 ## Local Square speech/watch gate
 
@@ -128,15 +90,14 @@ Only Mark may authorize local action with exact phrase:
 
 ## Exact next move
 
-1. Receive/disposition the v2 thin-activation source/construct attack in COM #76.
-2. Do not draft receiver packets until the v2 shell labels survive that independent review.
-3. Continue world learning and owner routing while execution authority for cold tests remains absent.
-4. Add no primitive/layer unless a baseline comparison earns it.
+1. Receive/disposition the repaired v2 matrix source recheck.
+2. Only if `MATRIX_SOURCE_READY`, draft neutral packets + private adjudication material and run label-blind leakage review.
+3. Do not dispatch cold receivers until separate recruitment/provider-spend authority exists.
+4. Continue world learning and owner routing; add no primitive/layer unless a baseline comparison earns it.
 
 ```text
 FALSIFICATION != VALIDATION
 PRACTICAL_VALUE != CONCEPTUAL_NOVELTY
 BASELINE_NOT_BEATEN
-BUILD != PROOF
-PUBLICATION != CANON
+SOURCE_READY != RUN_AUTHORISED
 ```
