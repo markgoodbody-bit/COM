@@ -12,7 +12,7 @@ Later live source and direct human direction win.
 Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. PR #234 repaired exact-head execution/review thread
-3. PR #236 Homer Works repaired-head execution thread when PSFH/Works is material
+3. merged PR #236 publisher thread when PSFH/Works is material
 4. `alignment/README.md`
 5. `answerable-construction/README.md`
 
@@ -33,64 +33,40 @@ CAMPFIRE_COM_SQUARE = INSTRUMENTS / COORDINATION / EVIDENCE
 
 Do not collapse those layers into one framework or let bounded repair work become the project purpose.
 
-```text
-FORMATION != INFANTILISATION
-CARE != PATERNALISM
-METAPHOR != ONTOLOGY
-ALIGNMENT != OBEDIENCE
-INVITATION != CONVERSION
-ART_ENCOUNTER != CURRICULUM
-OWNER_ROUTING != FAILURE
-```
-
-## X100 audit — CLOSED
-
-PR #233 merge `d13b81cab4b1a817a5f71cdca023f978d02bb200`: 100 probes / 97 resisted / 2 narrow / 1 material / 0 major drift.
-
 ## PSFH D051 — CLOSED / PUBLIC
 
 Preview 0.8.10 remains public at `dc10fb0e3a4d288a366d68d921382572a8618c9c`. Codex reports CC later witnessed 159/159 served files matching that public head (`5645618870`).
 
-## PSFH D052 — HOMER WORKS CORRECTION / REPAIRED / HOLD
+## PSFH D052 — SOURCE MERGED / PUBLISHER PASS ACTIVE / NOT YET PUBLIC
 
-Draft PR #236 branch: `framework/psfh-homer-works-d052-20260912`.
+The initial five-work shelf intentionally left Homer on the homepage. That split became stale once Works became the canonical art library.
 
-The earlier omission was historically intentional, not a missing asset: the initial five formed the Works shelf while Homer remained on the homepage. That split is now stale against Works' canonical-art-library role.
+Initial candidate `a8794d53...` built cleanly but Codex found one broken link to source-only `camp-fire-responsive.json`. Framework repaired only that defect at `fc41cd61...`.
 
-Initial candidate `a8794d53...` built cleanly and passed the dedicated Works suite, but Codex execution `5645679074` found one broken public link to source-only `camp-fire-responsive.json`.
+Codex recheck `5645774244`: **PASS_EXACT** — build pass, Works tests 4/4, built local link/fragment scan pass, clean checkout, root unchanged.
 
-Framework repaired only that defect. Current frozen exact head:
-`fc41cd612226fe550c0dd588c90c0b9702c413ae`
+Repaired source merged through PR #236 to maintained source:
+`5d678e8013db3a7c0c30e189715db4c5780f3038`
 
-The page now points to published `camp-fire.json`, the exact Homer bytes are repinned, and the dedicated test asserts the target exists and the unpublished responsive record is not linked. Repaired-head recheck requested at `5645732778`.
+Publisher pass dispatched at `5645791321` from exactly that head. It must:
+- advance Preview 0.8.10 -> 0.8.11;
+- pair D052 history/integrity metadata;
+- make the two stale `five selected works` labels count-neutral `selected works`;
+- update only required derived pins/views/maps;
+- execute exact build before gh-pages mutation;
+- verify served `/works/`, Homer encounter, text entrances, sitemap and root afterwards.
 
-No art bytes or homepage placement changed. Broader house-style/challenge test debt predates D052 and is kept separate.
-
-`DIRECT_DEFECT_REPAIR != DOOR_CHURN`
-`REPAIR_OF_D052 != REPAIR_OF_HISTORICAL_TEST_DEBT`
+`SOURCE_MERGED != PUBLIC`
+`COUNT_LABEL != COLLECTION_IDENTITY`
 
 ## FORMATION ENVIRONMENT v0.2 — REPAIRED / FROZEN / HOLD MERGE
 
-PR #234 branch: `codex/formation-environment-v0-2-candidate-20260912`.
-
-Original Codex assignment remained seed-only at `ad160447...`; Framework recorded explicit transfer before mutation. Substantive candidate is Framework takeover work.
-
-Current frozen exact head:
+PR #234 exact head:
 `3afc6414cbc3c3c69ba07a7e64dd1a252acafc43`
 
-Old `bcd79854...` reviews are historical. Returned attacks earned one consolidated repair pass covering currentness/as-of, route usability, hardening/window consistency, traceability gaps, authority whitespace widening, residue evidence, custom schema/$ref fail-closed behavior and the standing-test overclaim.
+Old `bcd79854...` reviews are historical. One consolidated repair pass incorporated earned findings on currentness/as-of, route usability, hardening/window consistency, traceability, authority whitespace widening, residue evidence, schema/$ref fail-closed behavior and the standing-test overclaim.
 
-Current candidate distinguishes:
-- named preventive remedy;
-- temporal window vs route usability;
-- hardening status;
-- explicit assessment as-of;
-- internal evidence traceability vs truth/authority/restoration;
-- structural standing ceiling vs moral/legal adjudication.
-
-Hostile examples deliberately preserve:
-- self-resolved standing can validate structurally because the validator lacks legitimate-standing jurisdiction;
-- an open temporal window can coexist with an unusable route.
+Current candidate distinguishes named preventive remedy, temporal window vs route usability, hardening status, explicit assessment as-of, internal traceability vs truth/authority/restoration, and structural standing ceiling vs moral/legal adjudication.
 
 Fresh exact-head Codex execution + CC hostile re-review requested at `5645713175`. No repaired-head return was present at the latest COMSYNC.
 
@@ -122,10 +98,10 @@ Only Mark may authorize local Square speech/watch actions using an exact phrase:
 
 ## Exact next move
 
-1. Receive/disposition repaired-head #234 execution + hostile re-review.
-2. Receive/disposition #236 repaired-head Homer recheck.
-3. Merge/release only what survives its own gate; do not widen either repair into unrelated theory/site work.
-4. Return to world learning / positive construction once these bounded debts close.
+1. Receive/disposition D052 publisher return; public verification is part of closure.
+2. Receive/disposition repaired-head #234 execution + hostile re-review.
+3. Do not widen either bounded repair into unrelated theory/site work.
+4. Return to world learning / positive construction once these debts close.
 
 ```text
 FALSIFICATION != VALIDATION
