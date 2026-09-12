@@ -27,10 +27,11 @@ CC is out of weekly tokens until tomorrow morning. This is an availability fact,
 3. `open-horizon/README.md`
 4. `open-horizon/positive-construction.md`
 5. `open-horizon/legitimate-power.md`
-6. `open-horizon/capital-ownership-allocation.md`
-7. COM #74 — live Open Horizon exploration ledger
-8. PR #245 — frozen D059 substantive source
-9. current maintained/public PSFH
+6. `open-horizon/intervention-feedback.md`
+7. `open-horizon/capital-ownership-allocation.md`
+8. COM #74 — live Open Horizon exploration ledger
+9. PR #245 — frozen D059 substantive source
+10. current maintained/public PSFH
 
 ## PSFH
 
@@ -60,22 +61,16 @@ Maintained owner-first learning routes now include:
 - PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`;
 - linked from the Horizon map.
 
-Preserves the positive complement:
-
 ```text
 PREVENT UNJUSTIFIED FUTURE CLOSURE
 +
 HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
 ```
 
-without promoting `CAPABILITY_CREATION`, one theory of flourishing, commons design or owner knowledge into project primitives.
-
 ### Legitimate Power
 - `open-horizon/legitimate-power.md`;
 - PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`;
 - linked from the Horizon map.
-
-Preserves the constructive tension:
 
 ```text
 CONSTRAIN POWER SO IT REMAINS ANSWERABLE
@@ -83,14 +78,21 @@ CONSTRAIN POWER SO IT REMAINS ANSWERABLE
 BUILD / DELEGATE ENOUGH CAPABILITY TO DO WHAT MATTERS
 ```
 
-while keeping competence, authorization, mandate, standing, personhood and sovereignty distinct.
+### Intervention & Feedback
+- `open-horizon/intervention-feedback.md`;
+- PR #249 merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`;
+- linked from Horizon territory 6 at `c584b80adf4f392ee29d552d263e4d3d78143104`.
+
+```text
+LEARN ENOUGH FROM THE WORLD TO CORRECT ACTION
++
+REMEMBER THAT LEARNING / INTERVENING CAN CHANGE THE WORLD BEING LEARNED FROM
+```
 
 ### Capital, Ownership & Allocation
 - `open-horizon/capital-ownership-allocation.md`;
 - PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`;
 - linked from Horizon territory 8 at `af3e21ea05063b817f4018fc2e4e6725d6fa891b`.
-
-Preserves the financing/control tension:
 
 ```text
 CAPITAL_ALLOCATION -> FUTURE_ACTION_SPACE
@@ -99,13 +101,13 @@ RISK_BEARING != SOVEREIGNTY
 PROTECT_CAPITAL != OWN_THE_PURPOSE
 ```
 
-while also preserving that mission/democratic control can impose real financing costs that must be surfaced rather than denied.
-
-None of these learning routes is canon, TRACE/ME change, decision rule, financial/legal advice or proof result.
+None of these learning routes is canon, TRACE/ME change, decision rule, financial/legal advice, general causal theory or proof result.
 
 ## Current operational posture
 
 Do not wait for CC to continue reversible owner-first build work. Do not duplicate CC-owned/review lanes when CC returns; re-COMSYNC then.
+
+This pass has built enough Horizon routing. Do **not** turn every remaining frontier row into a file by momentum. Further maintained routes must be earned by substantial owner-first learning and a real retrieval problem.
 
 Prefer the next build to another validation loop:
 - make already-earned Horizon learning selectively retrievable;
