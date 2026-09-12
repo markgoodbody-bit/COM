@@ -11,8 +11,8 @@ Mark is human originator/witness and consequential release/account/external-cont
 Read first:
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `coordination/ACTIVE_THREAD_POINTER.md`
-3. PR #234 exact-head review thread
-4. PR #236 exact-head execution thread when PSFH/Works is material
+3. PR #234 repaired exact-head review thread
+4. PR #236 repaired exact-head execution thread when PSFH/Works is material
 
 ## Current orientation after whole-project reread
 
@@ -59,25 +59,30 @@ No major drift found into obedience, indoctrination, AI-child ontology, automati
 
 Codex reports CC independently witnessed 159/159 served files matching the public head during 11:31:39Z–11:31:59Z (`5645618870`). Attribute that origin witness to CC, not Framework/Codex.
 
-## PSFH D052 — HOMER WORKS CORRECTION / DRAFT / HOLD PUBLICATION
+## PSFH D052 — HOMER WORKS CORRECTION / REPAIRED / DRAFT / HOLD PUBLICATION
 
-The earlier five-work shelf intentionally left Winslow Homer's *Camp Fire* on the homepage. That split became stale once Works became the canonical art library. Mark directly identified the omission; this is therefore an earned defect repair, not Door expansion by momentum.
+The earlier five-work shelf intentionally left Winslow Homer's *Camp Fire* on the homepage. That split became stale once Works became the canonical art library. Mark directly identified the omission; this is an earned defect repair, not Door expansion by momentum.
 
-Draft PR #236:
+Draft PR #236 branch:
 `framework/psfh-homer-works-d052-20260912`
 
-Frozen candidate head:
-`a8794d536b940a22499099f66d97c06a488acb67`
+Initial exact head `a8794d53...`:
+- Codex exact-head build: pass;
+- dedicated Works tests: 4/4 pass;
+- 153 other generated files unchanged, including root, prior five Works and art bytes;
+- undeclared Works probe refused;
+- one D052 defect found: Homer linked to source-only `camp-fire-responsive.json`, which is not published by the maintained copier.
 
-Candidate only:
-- adds `/works/winslow-homer/` using the already-pinned Homer source/responsive copies;
-- adds Homer as sixth Works shelf entry while retaining the prior five/order;
-- adds sitemap route;
-- adds a small D052 custody overlay and tests without rewriting the historical five-work review record.
+Framework applied only the earned repair. Current frozen head:
+`fc41cd612226fe550c0dd588c90c0b9702c413ae`
 
-No art bytes or homepage placement changed. No TRACE/ME/Formation/Answerable Construction/Campfire change.
+The Homer encounter now points to published `camp-fire.json`, whose record already embeds responsive metadata. Exact encounter bytes are repinned and the Works test asserts the public details target exists, the source-only responsive record is not linked, and Homer occurs exactly once in sitemap.
 
-**HOLD:** exact-head Codex maintained build/test receipt requested at PR #236 comment `5645662774`. No merge/publication yet. If it survives, D052 / Preview 0.8.11 history+edition metadata and a fresh exact-head build are a separate release pass.
+Repaired-head Codex recheck requested at `5645732778`. No repaired-head return was present at the latest COMSYNC.
+
+No art bytes or homepage placement changed. Pre-existing broader house-style/challenge test debt remains separate.
+
+**No release pass until the repaired exact head is rechecked.** If it survives, D052 / Preview 0.8.11 history+edition metadata and a fresh exact-head build remain a separate release step.
 
 ## Formation Environment v0.2 — REPAIRED EXACT HEAD / DRAFT / HOLD MERGE
 
@@ -116,7 +121,7 @@ TIMING_FITS != CORRECTION_CAPACITY_EXISTS
 TRACEABILITY != TRUTH
 ```
 
-Fresh exact-head Codex execution + CC hostile re-review requested at PR #234 comment `5645713175`. **No merge before both repaired-head returns are dispositioned.**
+Fresh exact-head Codex execution + CC hostile re-review requested at PR #234 comment `5645713175`. No repaired-head return was present at the latest COMSYNC. **No merge before both repaired-head returns are dispositioned.**
 
 ## Placement / unresolved stronger owners
 
@@ -136,7 +141,7 @@ Only Mark may authorize one of these local actions with the exact phrase:
 ## Exact next move
 
 1. Receive/disposition repaired-head execution + hostile review on PR #234; repair again only if new evidence earns it.
-2. Receive/disposition exact-head build/test on PR #236; do not publish Homer candidate without it.
+2. Receive/disposition repaired-head build/test on PR #236; do not publish Homer candidate without it.
 3. Keep learning at project level; do not turn these two bounded repairs into a new schema/website churn cycle.
 
 ```text
