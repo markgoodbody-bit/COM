@@ -9,6 +9,7 @@ const formation = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/R
 const formationV02 = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/formation_environment_v0_2/README.md";
 const reciprocalFormation = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/reciprocal_formation/README.md";
 const answerableConstruction = "https://github.com/markgoodbody-bit/COM/blob/main/answerable-construction/README.md";
+const openHorizon = "https://github.com/markgoodbody-bit/COM/blob/main/open-horizon/README.md";
 const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1440);
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
@@ -78,6 +79,7 @@ export default function Home() {
             <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
             <details id="current-work" className="current-work">
               <summary>Current workshop — optional work in progress</summary>
+              <p><a href={openHorizon}>Open Horizon</a> keeps the project larger than whichever instrument or topic is currently receiving attention. It is an expansion map and discoverability surface for underexplored better-future territory — not canon, not backlog, not TRACE schema, not a validation plan, and not a claim that this project owns the neighbouring fields.</p>
               <p><a href={formation}>Formation Under Uncertainty</a> asks how human–AI relationships and surrounding arrangements can develop as capability changes without turning competence into sovereignty or challenge into disobedience. It is working, non-production material: not canon and not an alignment solution.</p>
               <p><a href={formationV02}>Formation Environment v0.2</a> makes correction windows and affected-participant scope more explicit. <a href={reciprocalFormation}>Reciprocal Formation</a> develops the relationship side: bounded initiative, trainer correction, dependence, recovery, care and power. Neither is a personhood claim or a proof that care has been internalised.</p>
               <p><a href={answerableConstruction}>Answerable Construction</a> is preserved as synthesis, history and an open question after stronger neighbouring work cut down its contribution claim. It is not an established standalone layer.</p>
