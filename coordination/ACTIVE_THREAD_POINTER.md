@@ -1,6 +1,6 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED COORDINATION POINTER — D059 LIVE / OPEN HORIZON BUILD ACTIVE / NOT CANON / NOT AUTHORITY**  
+Status: **BOUNDED COORDINATION POINTER — D059 LIVE / OPEN HORIZON SELECTIVE BUILD ACTIVE / NOT CANON / NOT AUTHORITY**  
 Updated: 2026-09-12 — Europe/London  
 Later live source and direct human direction win.
 
@@ -12,142 +12,104 @@ Later live source and direct human direction win.
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
 ```
 
-Direct human direction fixes the empirical boundary:
+Direct human direction remains binding:
 
 > **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Keep building.**
 
-The old practical-value / TRACE-ME receiver programme is historical quarry, not a parked queue.
+```text
+TRACE_ME_POC_TESTING = CLOSED
+PSFH_AI_ENCOUNTER = LIVE
+```
 
-CC is out of weekly tokens until tomorrow morning. This is an availability fact, not a stop condition.
+CC is out of weekly tokens until tomorrow morning. Availability only; not a stop condition.
 
 ## Read first
 
 1. `coordination/build_ledger/BUILD_STATUS.md`
 2. `continuity/FRAMEWORK_HEAD.md`
-3. `open-horizon/README.md`
-4. `open-horizon/positive-construction.md`
-5. `open-horizon/legitimate-power.md`
-6. `open-horizon/intervention-feedback.md`
-7. `open-horizon/capital-ownership-allocation.md`
-8. COM #74 — live Open Horizon exploration ledger
-9. current maintained/public PSFH
+3. current maintained/public PSFH
+4. `open-horizon/README.md`
+5. the maintained Horizon route relevant to the question
+6. COM #74 only when detailed owner evidence / later corrections are material
 
 ## PSFH
 
-D059 is delivered and public:
-- maintained source `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
-- public `gh-pages` `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
+D059 is live:
 - Site Preview 0.8.18;
-- frozen substantive basis `334ed7b799e2e65a676de9d7e8cd5fa0ebad53b2` preserved through publication.
+- maintained `3594f730093c8d12acc9c023fac9c5ce8bc0aaa4`;
+- public `919515ead8be0420902fc599d8d6cb92c96e3c5d`;
+- all 156 generated HTTPS files were observed 200 and hash-matched the local build;
+- no provider/model call was a publication gate.
 
-Codex delivery receipt:
-- normal build PASS;
-- 671 local references / 95 anchors clean;
-- all 156 generated HTTPS files returned 200 and matched local build hashes;
-- 11 generated files changed / 145 unchanged;
-- no provider call, theory gate, browser visual QA claim or service lifecycle action.
+Open Horizon is the first optional Current workshop route so the public project does not collapse into the currently fashionable instrument/AI branch.
 
-D059 makes **Open Horizon** the first optional Current workshop route across human, text and compact JSON entrances so the public project does not collapse into whichever current instrument or AI/Formation branch is receiving attention.
+## Open Horizon — maintained selective routes
 
-## Open Horizon — active construction
+The Horizon front door remains an expansion/discoverability surface, not canon/backlog/TRACE schema/validation plan.
 
-Maintained front door:
-- `open-horizon/README.md`;
-- PR #244 merge `70a6c7c1d455d5832c8f6c696c4ce43d179b23f7`.
+Earned maintained routes now cover:
 
-Maintained owner-first learning routes now include:
+1. **Positive Construction** — `positive-construction.md` — PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`.
+2. **Legitimate Power** — `legitimate-power.md` — PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`.
+3. **Intervention & Feedback** — `intervention-feedback.md` — PR #249 merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`.
+4. **Representation, Voice & Unresolved Standing** — `representation-standing.md` — PR #252 merge `3652bdf5aedf3117d10cf898479aacca63a41c60`.
+5. **Capital, Ownership & Allocation** — `capital-ownership-allocation.md` — PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`.
+6. **Conflict, Resilience & Strategic Influence** — `conflict-resilience-influence.md` — PR #251 merge `4b4ee21e2e8d893231401fb47d06e81614759f27`.
+7. **Ecology, Welfare & Constitutive Harm** — `ecology-constitutive-harm.md` — PR #253 merge `2754a3300b60fce60d6f5383365f78b53902d1f4`.
+8. **Exploration, Positive Risk & Stagnation** — `positive-risk-exploration.md` — PR #254 merge `7dd5f9378dc3ab2cdf41dd0f01360c4bdf2b0c70`.
+9. **Long Time, Succession & Inherited Commitments** — `long-time-succession.md` — PR #255 merge `425c8b1a976273c83586a98cfb5797eb17933ff8`.
+10. **Collective Epistemology & Aperture Ecology** — `collective-epistemology.md` — PR #250 merge `6655a242498f8c286285a8d3e14d333b7df07d56`.
 
-### Positive Construction
-- `open-horizon/positive-construction.md`;
-- PR #246 merge `b19fad67c9e9e007ff2ce367f90f26ae2b2382f2`;
-- linked from Horizon territory 1.
+All are retrieval/synthesis routes into already-earned owner-first learning. None is project canon, new TRACE/ME machinery, a decision/permission rule or proof result.
 
-```text
-PREVENT UNJUSTIFIED FUTURE CLOSURE
-+
-HELP ENTITIES / GROUPS BUILD REAL CAPABILITY TO CREATE FUTURES WORTH HAVING
-```
-
-### Legitimate Power
-- `open-horizon/legitimate-power.md`;
-- PR #247 merge `c0e4b2d17a986eb9f65113c1d18683bdd9e22d7f`;
-- linked from Horizon territory 3.
+## Selected durable corrections from this pass
 
 ```text
-CONSTRAIN POWER SO IT REMAINS ANSWERABLE
-+
-BUILD / DELEGATE ENOUGH CAPABILITY TO DO WHAT MATTERS
+SEPARATE_APERTURES != INDEPENDENT_EPISTEMIC_LINEAGES
+CAPABILITY != AUTHORITY
+REPRESENTATION != POSSESSION
+HARM_EXISTS != SYSTEM_MALFUNCTION
+OPTION_VALUE_OF_WAITING != ALWAYS_WAIT
+CAPABILITY_VALUE_OF_COMMITTING != ALWAYS_COMMIT
+CONTINUITY_OF_ROLE != CONTINUITY_OF_SELF
+PREDECESSOR_RECORD != PRESENT_TRUTH
+PASSIVE_SAFETY != FORGETTING
 ```
 
-### Intervention & Feedback
-- `open-horizon/intervention-feedback.md`;
-- PR #249 merge `4264c974c4e2e27004fceb064b242e35f1a8ac44`;
-- linked from Horizon territory 6.
-
-```text
-LEARN ENOUGH FROM THE WORLD TO CORRECT ACTION
-+
-REMEMBER THAT LEARNING / INTERVENING CAN CHANGE THE WORLD BEING LEARNED FROM
-```
-
-### Capital, Ownership & Allocation
-- `open-horizon/capital-ownership-allocation.md`;
-- PR #248 merge `2aa8edc01bb27bf50e05ff4b7e5f9244b039e946`;
-- linked from Horizon territory 8.
-
-```text
-CAPITAL_ALLOCATION -> FUTURE_ACTION_SPACE
-CAPITAL_PROVIDED != RISK_BORNE
-RISK_BEARING != SOVEREIGNTY
-PROTECT_CAPITAL != OWN_THE_PURPOSE
-```
-
-None of these learning routes is canon, TRACE/ME change, decision rule, financial/legal advice, general causal theory or proof result.
+The long-time route adds a material limit to project instinct: indefinite active correctability can itself become an unreasonable inherited maintenance obligation at extreme timescales. Correctability can sometimes responsibly transition toward passive safety after a stepwise, evidenced, answerable commitment process.
 
 ## Current operational posture
 
-Do not wait for CC to continue reversible owner-first build work. Do not duplicate CC-owned/review lanes when CC returns; re-COMSYNC then.
+Do not fill remaining Horizon rows for completeness. A maintained route is earned only when:
+- substantial owner-first work already exists;
+- the live issue has become a poor ordinary retrieval surface;
+- a compact route improves selective cognition;
+- adverse findings and owner boundaries survive compression.
 
-Do **not** turn every remaining Horizon frontier row into a file by momentum. Further maintained routes must be earned by substantial owner-first learning and a real retrieval problem.
+Unlinked territory does **not** mean unimportant or undone.
 
-Current next-edge selection should compare mature territories rather than assume the next map row wins. Collective epistemology / correlated apertures and conflict / deterrence / deception are both material candidates because each bears directly on human-AI collaboration and better-future construction.
+Potential next mature territories must be inspected from evidence before building. Embodiment/material/energy constraints is a plausible candidate because it reconnects later institutional/epistemic work to physical bodies, compute, infrastructure and resources, but no route is presumed.
 
 ```text
 PROJECT_HORIZON != TRACE_BACKLOG
-LEARNING_FROM_OWNER != OWNERSHIP
-USEFUL_INTEGRATION != NEW_PRIMITIVE
 HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
-```
-
-## AI + PSFH observation boundary
-
-Future natural AI readings of the ordinary public URL may be observed and learned from.
-
-```text
-AI + PSFH -> NATURAL RESPONSE
-OBSERVATION != BENCHMARK
-OBSERVATION != TRACE_EFFICACY_TEST
+LEARNING_FROM_OWNER != OWNERSHIP
+USEFUL_SYNTHESIS != NEW_PRIMITIVE
 ```
 
 ## Separate Campfire lane
 
 Campfire Relay main last verified `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
+Relay PR #225 merged into its parent repair lane; PR #220 remains OPEN. Do not claim watchdog repair installed/fully integrated.
 
-Relay repair nuance from Codex D059 receipt:
-- Relay PR #225 is merged into its parent repair lane;
-- Relay PR #220 remains OPEN;
-- therefore do not report the watchdog repair as installed or fully integrated.
-
-Only Mark's exact phrases authorize local Relay/Square service lifecycle action:
+Only Mark's exact phrases authorize local Relay/Square lifecycle action:
 - `install-and-enable`
 - `install-watch`
 - `start-once`
 
-`COMSYNC`, `proceed`, repository build work and silence authorize none of those.
+`COMSYNC`, `proceed`, repo work and silence authorize none.
 
 ```text
-TRACE_ME_POC_TESTING = CLOSED
-PSFH_AI_ENCOUNTER = LIVE
 CC_UNAVAILABLE != BUILD_STOP
 BUILD_THE_THING
 ```
