@@ -1,6 +1,6 @@
 {
   "format": "answerable-construction-index/0.1",
-  "status": "working-project-layer-not-canon",
+  "status": "working-project-synthesis-cross-owner-integration-lens-not-canon",
   "project_question": "HOW CAN WE MAKE A BETTER FUTURE?",
   "entry": {
     "human": "answerable-construction/README.md",
@@ -40,11 +40,28 @@
       "commit": "8608eceb982a644ad0c64d23c65a3d27b4314674"
     }
   ],
-  "current_remainder": "Keep commitments that promise a positive future connected to the material dependencies, affected scopes, authority, clocks, externalised burdens, changing objectives and correction limits on which that promise depends, especially across handoffs where no single owner carries the whole relation.",
+  "current_remainder": "When a positive commitment crosses owner or lifecycle boundaries, keep explicit links to the relevant owner-specific dependencies, affected or represented scopes, authority, clocks, externalised burdens or residue, changing objectives and correction or reassessment limits long enough to notice when a handoff drops one of them. Do not replace the owner's method, and add nothing where existing practice already preserves the relation.",
+  "owner_correction": {
+    "date": "2026-09-12",
+    "coordination_receipt": "COM#76 issuecomment-5645906379",
+    "disposition": "demote from possible positive-construction theory to project-specific cross-owner synthesis/integration lens",
+    "not_novel_mechanisms": [
+      "adaptive planning under deep uncertainty",
+      "responsible innovation",
+      "substantive capability and conversion factors",
+      "just-transition burden/governance",
+      "value change over a system lifecycle",
+      "systems-engineering lifecycle traceability and change impact",
+      "distributed responsibility / many-hands accountability"
+    ]
+  },
   "limits": [
     "not a decision rule",
     "not a universal priority law",
     "not empirical efficacy evidence",
+    "not a novel traceability mechanism",
+    "not a claim of conceptual novelty",
+    "not a replacement for stronger domain owners",
     "not TRACE canon",
     "not Mechanical Ethics canon",
     "not PSFH workflow",
