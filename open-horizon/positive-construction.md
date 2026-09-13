@@ -190,6 +190,7 @@ BUILD != PROOF
 
 ## Where to continue
 
+- [Worked Positive Construction — The Heat Hub](POSITIVE_CONSTRUCTION_WORKED_SCENE.md) — a constructed scene showing how physical capacity, practical access, reserve, commitment, collective rule, relationships, maintenance and correction can combine into a new shared capability; an illustration, not a policy recommendation or test.
 - [Open Horizon](README.md) — the broader expansion map.
 - [Trust, Motivation & Meaning](trust-motivation-meaning.md) — trustworthiness, cooperation, meaning and the danger of behavioural-control framing.
 - [Reciprocal Formation: Care and Power](../alignment/reciprocal_formation/CARE_AND_POWER.md) — non-possessive care, power asymmetry and kindness without imposed debt.
