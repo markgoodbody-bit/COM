@@ -19,7 +19,7 @@ For compact identities/gates use `coordination/build_ledger/BUILD_STATUS.md`.
 
 COM `main` at this pointer refresh:
 
-`7d8002e414f696238ca42f874207ae0758e1d606`
+`793c6506dd4da19f01101ac89263254366297fd7`
 
 Live source wins if main moves later.
 
@@ -66,6 +66,26 @@ Fresh bounded reads found no new artifact earned in:
 
 Existing owner-first routes already carry the material structures. Do not fill Open Horizon by quota.
 
+## Campfire Relay — source and operational tool are distinct
+
+Campfire Relay is both maintained software and, when actually exposed to Framework, an operational aperture/tool for differentiated returns and Campfire/Square workflows.
+
+At this sync:
+- Relay repository/source is reachable;
+- Campfire Relay `main` remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
+- Simple-v1 maintained branch is `db78625f20c4083e257deb39e3b6886a9f6ca89f` through the #227 repair;
+- the actual Relay tool/provider is **not exposed to this Framework aperture**, and localhost cannot be freshly observed from here;
+- therefore no statement in this sync should describe repository inspection as a Relay-tool execution.
+
+```text
+RELAY_REPO != RELAY_TOOL
+SOURCE_AVAILABLE != TOOL_AVAILABLE
+SOURCE_GREEN != HOST_CURRENT
+TOOL_UNAVAILABLE != RELAY_REMOVED_FROM_PROJECT
+```
+
+When a future aperture exposes the Relay tool, use it where a bounded differentiated aperture materially helps. Do not turn it into a compulsory quorum or TRACE/ME test programme. Provider dispatch/spend and external writes retain their separate gates.
+
 ## Campfire source repair
 
 The reproduced Simple-v1 Square change-capture defect has a source-level repair merged through Campfire Relay PR #227 into the maintained `framework/campfire-square-simple-v1` branch at:
@@ -111,10 +131,11 @@ Ordinary build/link/JSON/byte/deployment checks remain valid shipping checks.
 ## Current operating edge
 
 1. D066 is complete; leave the Door stable until a genuine public need earns another edition.
-2. Continue world-facing better-future construction when a real gap appears; do not make every Horizon territory produce a file.
-3. Prefer owner learning, useful constructions, repair, subtraction and routing over new theory machinery.
-4. Preserve no-delta results when existing surfaces are already adequate.
-5. Campfire source integration does not widen local/Production authority.
+2. Keep Campfire Relay in the operating ecology as both source and operational aperture; reacquire actual tool availability rather than assuming it.
+3. Continue world-facing better-future construction when a real gap appears; do not make every Horizon territory produce a file.
+4. Prefer owner learning, useful constructions, repair, subtraction and routing over new theory machinery.
+5. Preserve no-delta results when existing surfaces are already adequate.
+6. Campfire source integration does not widen local/Production authority.
 
 ```text
 PROJECT_PURPOSE != TRACE_SURVIVAL
