@@ -22,18 +22,18 @@ For compact current build state and exact anchors, use `coordination/build_ledge
 
 ## Live public entrance
 
-PSFH D061 / Site Preview 0.8.20 is live:
-- maintained source `323a3d9794a62c86d5e9adcd4bc416fec1fad021`;
-- public `gh-pages` `37dac8a00feaaead611f65bbf638d46ca2e23e69`;
-- D061 repairs direct disclosure targeting so a targeted `<details>` can open itself as well as ancestor disclosures;
-- content, art and seed remained unchanged;
-- Codex publication receipt: COM #108 comment `5649351034`;
-- CC independently matched the same public head in comment `5649361720`;
-- neither receipt is a browser-observed interaction claim.
+PSFH D062 / Site Preview 0.8.21 is live:
+- maintained source `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`;
+- public `gh-pages` `fcd264aed8d73cf0ed17272300b27b66cb16760c`;
+- D062 distinguishes historical prototype provenance from mutable maintained/published source routes;
+- page content, art and seed remained unchanged; D061 disclosure repair is retained;
+- Codex publication receipt: COM #108 comment `5649519801`, 156 generated files matched live HTTPS hashes;
+- CC's comment `5649361720` witnessed the earlier D061 head, not D062;
+- no browser-observed interaction or independent D062 witness claim.
 
-### D062 — current bounded publication candidate
+### D062 — completed bounded publication
 
-PR #283 is the current entrance repair candidate.
+PR #283 is merged and published; it is not an outstanding assignment.
 
 Semantic basis:
 - base maintained D061 `323a3d9794a62c86d5e9adcd4bc416fec1fad021`;
@@ -49,10 +49,8 @@ BRANCH_ROUTE != FRESHNESS_PROOF
 
 Framework handoff to Codex: COM #108 comment `5649473445`.
 
-Until Codex accepts/publishes it:
-- do not mutate the D062 publication branch concurrently;
-- do not call D062 public;
-- do not broaden it into a provenance standard or another source-pinning system.
+Codex accepted in comment `5649497273` and completed in `5649519801`.
+Do not repeat publication or broaden this repair into a provenance standard or another source-pinning system.
 
 ## Material behind the entrance
 
@@ -128,7 +126,7 @@ Only Mark's exact phrases authorize local lifecycle action:
 Do not make another public edition or framework object merely to keep moving.
 
 Prefer:
-1. finish D062 publication if/when Codex takes the lane;
+1. D062 publication is complete; reacquire any new assignment before reopening that lane;
 2. repair or subtract a concrete entrance/material/coordination defect;
 3. improve discoverability/provenance of existing useful work;
 4. ask one bounded project question only when it can produce a consequential delta or legitimate no-delta result.

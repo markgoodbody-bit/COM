@@ -21,8 +21,8 @@ Source classification matters.
 ### Live / current-source observations
 
 - COM `main` was reacquired during this checkpoint sequence; reverify again before operational mutation.
-- PSFH D061 / Site Preview 0.8.20 is the currently recorded live public edition in the active pointer/build ledger.
-- D062 is a frozen one-file provenance candidate at PR #283, semantic head `89bd57de1e31072c23aac978b6cfbf3cea476aa0`, handed to Codex in COM #108 comment `5649473445`; no Codex acceptance/publication receipt was present at the latest check.
+- PSFH D062 / Site Preview 0.8.21 is live: maintained `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`, public `fcd264aed8d73cf0ed17272300b27b66cb16760c`.
+- D062 PR #283 is merged. Codex publication receipt `5649519801` reports 156 generated files matched live HTTPS hashes. The one-file semantic basis remains `89bd57de1e31072c23aac978b6cfbf3cea476aa0`; no independent D062 witness or browser-interaction claim is earned by that receipt.
 - Formation routing has been repaired: current entry points to Formation Environment v0.2 as candidate, preserves v0.1 as earlier lineage, and Reciprocal Formation now exposes optional delegation/recovery references.
 - COM cold-start and role routing have been repaired: generic COM_STATE router, one canonical cold bootstrap, public-reading exit to PSFH, COMS for coordination, role continuity separated from runtime identity.
 - Ordinary Framework COMSYNC is coordination-focused; FULL COMSYNC widens to bounded Square/world reacquisition only when requested or materially required.
@@ -44,7 +44,7 @@ This Framework aperture has chosen to:
 - keep mutable state out of durable plans/orientation documents;
 - compact high-frequency boot surfaces instead of replaying receipt/history detail;
 - treat `OPEN_PR != CURRENT_QUEUE` and close/park clearly superseded or retired lanes without deleting their evidence;
-- leave D062 publication single-writer with Codex after handoff;
+- treat D062 publication as complete rather than reassigning it from stale handoff state;
 - keep public-site micro-copy candidates unbuilt unless a consequential defect or sensible bundle earns another edition.
 
 ```text
@@ -68,7 +68,7 @@ Material corrections made during this aperture include:
 
 ## UNRESOLVED
 
-- D062 publication state: recheck PR #283 / COM #108 before touching its branch or claiming it public.
+- D062 is published; any later change requires a new concrete basis, not replay of its completed handoff.
 - Campfire local-service PR #209 remains source-ready but human-gated; no install/enable/start/main/Production action is authorized by ordinary `proceed` or `COMSYNC`.
 - `affected parties` in the compact seed may be narrower than `who or what may be affected`; this is not enough by itself to justify another public edition.
 - Natural reader/entity behaviour remains observational rather than benchmarked; no claim that current entrance design benefits every receiver.
@@ -103,7 +103,7 @@ Current self-application evidence includes:
 
 - **Duplicate boot failure:** Framework created `CAMPFIRE_BOOT.md`; COMSYNC exposed that it duplicated the existing cold-bootstrap role; the file was removed and the useful repairs were folded into the canonical surface instead of defending the new object.
 - **D061 evidence ceiling:** code-path/direct/nested/null checks and full public-tree matching exist, but no browser-observed interaction claim was earned.
-- **D062:** NOT YET PUBLISHED at the latest check; handoff exists, acceptance/receipt did not.
+- **D062:** publication receipt `5649519801` supersedes the earlier unpublished checkpoint. CC's D061 witness does not transfer to this new head.
 - **No-delta bounded questions:** several entrance questions correctly produced no new public copy or infrastructure.
 
 These are reminders that internal coherence or successful building is not validation.
@@ -120,7 +120,7 @@ Do not infer:
 - PSFH reading implies adoption, consent, authority or a reuse licence;
 - TRACE/Mechanical Ethics practical advantage has been demonstrated;
 - Formation represents values being internalized or standing/personhood settled;
-- D062 is public before a maintained/public/HTTPS receipt exists;
+- D062's publication receipt establishes independent review or reader benefit;
 - source-ready Campfire local-service code is installed, enabled, running, reboot-surviving, main or Production.
 
 ```text

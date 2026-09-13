@@ -21,7 +21,7 @@ FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| Please Start From Here | **LIVE / STABLE** | Site Preview 0.8.20 / D061. Maintained `323a3d9794a62c86d5e9adcd4bc416fec1fad021`; public `37dac8a00feaaead611f65bbf638d46ca2e23e69`. D061 repairs direct disclosure targeting so a targeted `<details>` opens itself as well as ancestor disclosures. Content/art/seed unchanged. |
+| Please Start From Here | **LIVE / PUBLISHED** | Site Preview 0.8.21 / D062. Maintained `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`; public `fcd264aed8d73cf0ed17272300b27b66cb16760c`. D062 distinguishes prototype provenance from mutable source routes. Page content/art/seed unchanged; D061 disclosure repair retained. Codex receipt `5649519801`: 156 generated files matched HTTPS hashes, not independent review or browser interaction. |
 | COM cold-aperture entrance | **REPAIRED / CONSOLIDATED** | Root `BOOTSTRAP.md` and canonical `continuity/BOOTSTRAP.md` distinguish public understanding (PSFH) from coordination (COMS). Framework continuation uses `continuity/BOOT.md`; headset-on uses `continuity/CAMPFIRE_ORIENTATION.md`. One orientation home, no duplicate boot surface. |
 | COM state router | **CURRENT GENERIC ROUTER** | `COM_STATE.md` v0.5.0 routes any aperture to current coordination without making historical Framework state a universal boot. Router alone cannot establish `task: NONE`. PR #273 merge `5a9f58f37930b442a7efd7bead3aaa21b0467588`. |
 | Project AI team model | **ROLE / RUNTIME SPLIT REPAIRED** | Framework is an integration role across episodic runtimes; Codex is implementation/build when available; CC is independent specialist/challenge. Role continuity does not imply runtime identity or inherited authority. PR #274 merge `d3cd3a618ef8070793722d708c4bf24c6cf0bc3a`. |
@@ -71,9 +71,9 @@ Detailed reasoning/history belongs in change logs, issue/PR records, evidence fi
 
 ## Current anchors
 
-- COM `main`: reacquire before operational use; snapshot basis before this ledger refresh was `26b755d7cba04f52ee67788b98bcca0bb4194ef2`.
-- PSFH maintained: `323a3d9794a62c86d5e9adcd4bc416fec1fad021`.
-- PSFH public: `37dac8a00feaaead611f65bbf638d46ca2e23e69`.
+- COM `main`: reacquire before operational use; snapshot basis before this ledger refresh was `a35df89fb747ee0da42e1ff1f7daa4d95e453720`.
+- PSFH maintained: `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`.
+- PSFH public: `fcd264aed8d73cf0ed17272300b27b66cb16760c`.
 - TRACE main last verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
 - Mechanical Ethics main last verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
 - Campfire Relay main last verified: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
