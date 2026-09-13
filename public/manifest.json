@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.22",
+  "site_edition": "0.8.23",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -29,7 +29,8 @@
     "sitemap": "/sitemap.xml",
     "explore": "/explore/",
     "explore_text": "/explore/index.md",
-    "explore_map": "/explore/map.json"
+    "explore_map": "/explore/map.json",
+    "project_packet": "/packet.md"
   },
   "source_repositories": [
     {
@@ -71,9 +72,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "27d1f5e585b3e5ddbbf241fc823d2bbef4c90c428fea6f7ae28ba2277fa86111",
-    "change_history_input_html_sha256": "98cea0861f7642c9103b468ade7583e4775276393967c063eb7d8476e9ce23ce",
-    "change_history_addendum_note": "D016 through D038, D045-D063 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "811834150b99e268310a7d2429c0fbee9872167eeaf8263111f1ecc2e60d206b",
+    "change_history_input_html_sha256": "403c1dbe6ee5916de33113f73fc40e5c49e68e2b44fec082f0f7c74d4d4f8c78",
+    "change_history_addendum_note": "D016 through D038, D045-D064 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
