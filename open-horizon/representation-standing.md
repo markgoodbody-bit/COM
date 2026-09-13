@@ -326,6 +326,7 @@ BUILD != PROOF
 
 ## Where to continue
 
+- [Worked Representation — The Riverbank Plan](REPRESENTATION_WORKED_SCENE.md) — a constructed civic/ecological scene showing direct voice, support before substitution, proxy advocacy, ecological condition evidence, future interests without fabricated consent and decision authority kept distinct; an illustration, not a standing or planning rule.
 - [Open Horizon](README.md) — the broader expansion map.
 - [Positive Construction](positive-construction.md) — capability creation and relational agency.
 - [Legitimate Power](legitimate-power.md) — authority, mandate and answerability.
