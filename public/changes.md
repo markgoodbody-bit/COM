@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.40 · 13 September 2026
+Please Start From Here · Reader change log · Edition 0.41 · 13 September 2026
+
+### D065
+
+13 September 2026 — Make the invitation voluntary across the entrance.
+
+The root page, seed, text entrance, JSON entrance and project packet now make unknown usefulness explicit. Reading further, forming a view or replying are invitations, not requirements. Asking for context, finding no use, disagreeing and leaving remain legitimate.
+
+A short cue identifies the journey panels as alternative ways in. The packet's compact orientation is an unordered set of distinctions and questions, not a sequence to complete. Existing safety boundaries, art, navigation and source routes remain.
+
+Site Preview advances to 0.8.24, with seed 0.6. Previous publication 6488268e2b8c4f47fc4867d0529768d31e5b5dfe remains in Git history. This wording change does not establish reader benefit or settle standing. The preceding D064 line-ending repair left its words unchanged and restored exact committed-source byte identity.
 
 ### D064
 
