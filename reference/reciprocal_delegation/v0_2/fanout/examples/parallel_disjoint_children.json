@@ -30,10 +30,12 @@
       "write_scope": ["src/a"],
       "no_touch": ["release", "secrets"],
       "max_unreviewed_actions": 1,
+      "actions_used": 0,
       "may_subdelegate": false,
       "authorization_ref": null,
       "state": "active",
-      "receipt_required": true
+      "receipt_required": true,
+      "receipt_ref": null
     },
     {
       "child_id": "child-b",
@@ -43,10 +45,12 @@
       "write_scope": ["src/b"],
       "no_touch": ["release", "secrets"],
       "max_unreviewed_actions": 1,
+      "actions_used": 0,
       "may_subdelegate": false,
       "authorization_ref": null,
       "state": "active",
-      "receipt_required": true
+      "receipt_required": true,
+      "receipt_ref": null
     }
   ],
   "revocation": {
@@ -56,7 +60,8 @@
   "handback": {
     "event": "family receipt posted with child receipts and action count",
     "status": "pending",
-    "includes_child_receipts": false,
-    "aggregate_actions_reported": false
+    "parent_direct_actions_used": 0,
+    "aggregate_actions_used": 0,
+    "child_receipt_refs": []
   }
 }
