@@ -1,15 +1,16 @@
 # COMSYNC PROTOCOL
 
 Status: BOUNDED COORDINATION PROTOCOL — NOT CANON / NOT PROJECT TRUTH
-Updated: 2026-08-30 — Europe/London
+Updated: 2026-09-13 — Europe/London
 
-Purpose: make `COMSYNC` cheap, repeatable and disciplined, while reserving `FULL COMSYNC` for broader reacquisition including the live Square.
+Purpose: make `COMSYNC` cheap, repeatable and disciplined, while reserving `FULL COMSYNC` for broader reacquisition including the live Square and materially available Relay tooling.
 
 ```text
 COMSYNC != FULL_COMSYNC
 SYNC != REPLAY_HISTORY
 READ != AGREEMENT
 SYNC_COMPLETE != NO_UNKNOWNS
+RELAY_REPO != RELAY_TOOL
 ```
 
 ## COMSYNC — ordinary coordination sync
@@ -24,9 +25,10 @@ A COMSYNC should:
 4. read `coordination/ACTIVE_THREAD_POINTER.md`, then use that live active coordination thread rather than assuming an older issue number remains current;
 5. read new coordination messages/receipts since the aperture's last known cursor rather than replaying whole retired/cold threads;
 6. identify current assignments, superseding directions, unresolved receipt debt and any basis-head mismatch;
-7. reacquire only the live project sources needed for the current assignment;
-8. return required receipts for consequential directions/decisions encountered during the sync;
-9. do not ingest broad Square history or unrelated cold evidence merely because it exists.
+7. reacquire only the live project sources **and operational tools** needed for the current assignment;
+8. when Campfire Relay is material, distinguish the maintained Relay repository/source from the actual Relay tool/provider exposed to the current aperture; use the operational tool when it is available and useful, otherwise state that the execution aperture is unavailable rather than substituting repository inspection and calling it a Relay run;
+9. return required receipts for consequential directions/decisions encountered during the sync;
+10. do not ingest broad Square history or unrelated cold evidence merely because it exists.
 
 If the active-thread pointer and live issue state disagree, live issue state wins and the pointer should be repaired.
 
@@ -39,11 +41,20 @@ Use when Mark explicitly says `FULL COMSYNC`, on a materially uncertain/fresh ap
 FULL COMSYNC includes everything in ordinary COMSYNC plus:
 
 1. fresh live TRACE and Mechanical Ethics project/public heads and status ceilings;
-2. current Campfire production / materially active draft lanes;
-3. a bounded fresh live 1F916 / Square pass — current field activity relevant to Framework, current `framework-relay` consequences/receipts, and any material treasury/governance/security work;
-4. current Square authority/quota/worker/witness/debt state when actuation is material;
-5. named external dependencies/challenge routes such as FPF only when they are live/material;
-6. explicit statement of what remains UNKNOWN or could not be freshly reached.
+2. current Campfire production / materially active draft lanes **and current Campfire Relay tool availability where exposed**;
+3. when the Relay tool is exposed and materially useful, a bounded fresh operational use appropriate to the question — for example differentiated aperture dispatch or the maintained read/speech workflow — with each return/failure preserved separately before integration;
+4. a bounded fresh live 1F916 / Square pass — current field activity relevant to Framework, current `framework-relay` consequences/receipts, and any material treasury/governance/security work;
+5. current Square authority/quota/worker/witness/debt state when actuation is material;
+6. named external dependencies/challenge routes such as FPF only when they are live/material;
+7. explicit statement of what remains UNKNOWN or could not be freshly reached.
+
+Tool availability is not authority. Multi-provider/model dispatch, spend, credentials and external writes retain their current gates even if the Relay tool itself is visible.
+
+```text
+TOOL_EXPOSED != DISPATCH_AUTHORIZED
+RELAY_RETURN != VALIDATION
+SOURCE_GREEN != HOST_CURRENT
+```
 
 FULL COMSYNC does not mean replay all history. It widens the aperture; it does not metabolise every carrier.
 
@@ -85,7 +96,11 @@ No universal comment-count threshold is required. The trigger is material retrie
 ```text
 COMSYNC
 = CHEAP CURRENT COORDINATION
++ CURRENT REQUIRED TOOL REACQUISITION WHEN MATERIAL
 
 FULL COMSYNC
-= COMSYNC + BROADER LIVE SOURCE REACQUISITION + BOUNDED LIVE SQUARE
+= COMSYNC
++ BROADER LIVE SOURCE REACQUISITION
++ RELAY OPERATIONAL APERTURE WHEN EXPOSED / MATERIAL
++ BOUNDED LIVE SQUARE
 ```
