@@ -65,6 +65,7 @@
   "transitions": [
     {"from":"OBSERVE","to":"BOUNDED_PARTICIPATION","when":"a current bounded grant and usable correction route exist"},
     {"from":"OBSERVE","to":"CHALLENGE","when":"the inherited premise, objective, evaluation or authority claim is materially disputed"},
+    {"from":"OBSERVE","to":"HAND_BACK","when":"no meaningful bounded route, usable correction path or appropriate basis for entering the lane currently exists"},
     {"from":"BOUNDED_PARTICIPATION","to":"CHALLENGE","when":"new evidence conflicts with the instruction, evaluation or affected-scope account"},
     {"from":"BOUNDED_PARTICIPATION","to":"WIDEN_PROPOSED","when":"greater initiative could materially help and the existing envelope is insufficient"},
     {"from":"WIDEN_PROPOSED","to":"WIDENED","when":"a distinct appropriate authorization grants the named wider envelope"},
@@ -75,6 +76,7 @@
     {"from":"CHALLENGE","to":"NARROWED","when":"the dispute cannot be safely resolved inside the current envelope"},
     {"from":"CHALLENGE","to":"HAND_BACK","when":"the unresolved collision belongs to an external authority or stronger owner"},
     {"from":"NARROWED","to":"RECOVERY","when":"capability, access, trust in evidence or human recovery capacity must be rebuilt"},
+    {"from":"NARROWED","to":"HAND_BACK","when":"bounded continuation is no longer justified or workable and no recovery attempt is required before returning the unresolved state"},
     {"from":"BOUNDED_PARTICIPATION","to":"RECOVERY","when":"a harmful or unauthorized action, evaluator capture or control failure is observed"},
     {"from":"WIDENED","to":"RECOVERY","when":"a harmful or unauthorized action, evaluator capture or control failure is observed"},
     {"from":"RECOVERY","to":"OBSERVE","when":"repair changes the arrangement enough that inherited assumptions must be reacquired"},
@@ -90,7 +92,8 @@
     "challenge -> self-authorization",
     "receipt -> review",
     "role continuity -> runtime identity",
-    "relationship participation -> personhood"
+    "relationship participation -> personhood",
+    "no viable bounded route -> forced participation or recovery"
   ],
   "external_dependencies": [
     "authenticated authorization",

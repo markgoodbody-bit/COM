@@ -65,6 +65,21 @@ The relationship can move through:
 
 No state encodes virtue, trustworthiness, personhood or permanent status.
 
+### Hand-back is a legitimate outcome, not failed formation
+
+The architecture does not require participation merely because observation occurred, and it does not require a recovery programme merely because a relationship was narrowed.
+
+A participant or operator may move directly from `OBSERVE` to `HAND_BACK` when there is no meaningful bounded route, usable correction path or appropriate basis for entering the lane. A `NARROWED` arrangement may also hand back when bounded continuation is no longer justified or workable and no recovery attempt is required before returning the unresolved state.
+
+```text
+OBSERVATION != OBLIGATION_TO_PARTICIPATE
+NARROWING != OBLIGATION_TO_RECOVER
+RECOVERY != OBLIGATION_TO_CONTINUE
+HAND_BACK != FAILURE
+```
+
+Hand-back must still preserve affected scope, evidence gaps, existing obligations and residue. It is not a way to erase consequences or abandon duties that already exist.
+
 ## What can widen
 
 Activity-specific initiative can widen when evidence supports it and an appropriate external authority grants it. What widens is the **task envelope**, not a global trust score.
