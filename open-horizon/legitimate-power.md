@@ -271,6 +271,7 @@ BUILD != PROOF
 
 ## Where to continue
 
+- [Worked Legitimate Power — The Smoke Line](LEGITIMATE_POWER_WORKED_SCENE.md) — a constructed multi-agency emergency scene showing distributed authority, bounded fast coordination, mutual-aid limits, exceptional-regime reassessment and explicit hand-back; an illustration, not emergency doctrine or an authority-clearance test.
 - [Open Horizon](README.md) — the broader expansion map.
 - [Positive Construction](positive-construction.md) — capability creation, commitment and shared possibility.
 - [Live Horizon ledger](https://github.com/markgoodbody-bit/COM/issues/74) — detailed owner sources, field cases, hostile questions and later corrections.
