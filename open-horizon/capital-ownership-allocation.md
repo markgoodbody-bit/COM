@@ -218,6 +218,7 @@ BUILD != PROOF
 
 ## Where to continue
 
+- [Worked Scarce Allocation — Four Generators](SCARCE_ALLOCATION_WORKED_SCENE.md) — a constructed shared-capacity scene showing multiple valid claims, prior reservation, stale priority classifications, dynamic evidence, sequencing, contest and loser residue; an illustration, not a universal allocation or emergency rule.
 - [Open Horizon](README.md) — the broader expansion map.
 - [Positive Construction](positive-construction.md) — capability creation, commitment and real possibility.
 - [Legitimate Power](legitimate-power.md) — mandate, capability, delegation, entrustment and answerability.
