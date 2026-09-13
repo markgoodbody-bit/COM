@@ -16,18 +16,19 @@ PSFH_AI_ENCOUNTER = ONLY LIVE MODEL TEST / OBSERVATION LANE
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM main | **CURRENT AT SNAPSHOT** | `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`. Live source wins if it advances. |
-| PSFH D065 | **LIVE / PUBLISHED** | Site Preview 0.8.24. Maintained `485fa18c609b018413f862fa16a07a7accc6be55`; public `901caa151230c698ba6a356170482be5ef65dd7f`. Invitation-led entrance; unknown usefulness; no depth/agreement/reply debt. Codex receipt `5652706892`: 157 generated files matched live HTTPS. |
-| PSFH D066 | **SOURCE CANDIDATE / PUBLICATION ACTIVE** | PR #309 head `4e4c7ba133dcf5de9df272fc4ede74165dec1591`. Adds direct workshop discovery of the constructed Reciprocal Formation worked relationship. Codex accepted exact handoff at #108 comment `5654510284`. No completion receipt observed at this snapshot; do not call live or duplicate lane. |
-| Reciprocal Formation practical exit | **MERGED / OWNER-ROUTED** | PR #307 merge `85be98f91d66716507c26324c2d323dd8f1134d8`. Credits mature operational-resilience / third-party-risk exit practice and narrows any local novelty implication. No new state/authority/standing machinery. |
-| Reciprocal Formation worked relationship | **MERGED / CONSTRUCTED EXAMPLE** | PR #308 merge `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`. End-to-end engineering scene across observation, bounded participation, challenge, proposed/authorized widening, dependency hardening, narrowing, recovery and hand-back. Illustration != evaluation/proof. |
-| Positive Construction worked scene | **MERGED / CONSTRUCTED EXAMPLE** | PR #310 merge `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`. Heat/resilience-hub scene makes capability creation, practical access, reserve, commitment, collective rule, relationships, maintenance/exit capacity and correction concrete. Not policy/evidence/cost-benefit/TRACE-ME test. |
-| Collective Epistemology | **NO DELTA** | Existing owner-first route already carries correlated error lineages, provenance, governance, integration and evidence-to-action/authority separation. No quota-built extra object earned. |
-| Artificial Lineages / Succession | **NO DELTA** | Existing route already carries role/commitment/memory/capability/service continuity while keeping subject identity unresolved. No duplicate worked continuity object earned. |
+| COM main | **CURRENT AT SNAPSHOT** | `7d8002e414f696238ca42f874207ae0758e1d606`. Live source wins if it advances. |
+| PSFH D066 | **LIVE / PUBLISHED** | Site Preview 0.8.25. Maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`; public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`. Codex #108 receipt `5654523744`: 157 generated files matched live HTTPS. CC witness `5654529576`: 161/161 whole served tree matched the same public head. Worked relationship exposed through existing optional workshop/text/JSON routes; no model/principle test. |
+| Reciprocal Formation practical exit | **MERGED / OWNER-ROUTED** | #307 `85be98f91d66716507c26324c2d323dd8f1134d8`. Mature operational-resilience/third-party-risk exit practice credited; no local novelty/authority/standing machinery inferred. |
+| Reciprocal Formation worked relationship | **MERGED / CONSTRUCTED EXAMPLE** | #308 `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`. Challenge, bounded widening, dependency hardening, narrowing, recovery and hand-back in one engineering scene. Illustration != evaluation/proof. |
+| Positive Construction — Heat Hub | **MERGED / CONSTRUCTED EXAMPLE** | #310 `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`. Institution/public-capability scene: physical capacity, practical access, reserve, commitment, relationships, maintenance/exit capacity and correction. |
+| Positive Construction — Woodland Commons | **MERGED / CONSTRUCTED EXAMPLE** | #312 `7d8002e414f696238ca42f874207ae0758e1d606`. Co-owned shared-good scene: contribution routes, bounded stewardship, reserve, enforceable/contestable rules, costly exit and adaptation. Salvaged from retired test quarry without reviving testing. |
+| Collective Epistemology | **NO DELTA** | Existing owner-first route already carries correlated error lineages, provenance, governance, integration and evidence-to-action/authority separation. |
+| Artificial Lineages / Succession | **NO DELTA** | Existing route already carries role/commitment/memory/capability/service continuity while keeping subject identity unresolved. |
+| Positive Risk / Exploration | **NO DELTA** | Existing dedicated route already carries bounded experimentation, portfolio/common-mode risk, construction windows, waiting vs commitment, stopping, externalised burden and learning-capability outputs. |
+| Campfire Square Simple-v1 capture | **SOURCE REPAIR INTEGRATED / NOT INSTALLED** | Campfire Relay PR #227 merged into maintained `framework/campfire-square-simple-v1` at `db78625f20c4083e257deb39e3b6886a9f6ca89f`. Explicitly excludes null/refusal stream while naming posts/comments coverage and retaining fail-closed covered-stream stalls. Hosted `campfire-ci` + `Campfire Square Simple v1` workflows passed. Installed runtime, main and Production unchanged/unclaimed. |
 | Formation Under Uncertainty | **NON-PRODUCTION / ACTIVE MATERIAL** | Environment v0.2 current candidate; Reciprocal Formation distinct. Worked relationship improves usability without changing states, standing, personhood or authority. |
-| Open Horizon | **DISCOVERABLE / HORIZON OPEN** | Human + machine routing remains an expansion map, not backlog/canon/TRACE schema. Positive Construction now has a concrete worked scene; do not infer every territory needs one. |
+| Open Horizon | **DISCOVERABLE / HORIZON OPEN** | Expansion/discoverability map, not backlog/canon/TRACE schema. Multiple constructive examples now exist where genuinely distinct; do not infer every territory needs one. |
 | Journey art | **SIX CANONICAL WORKS COMPOSED** | Homer, Atkins, Shen Zhou, Vermeer, Powers, Lewis already integrated. No quota-driven placement. |
-| Campfire local-service lanes | **SEPARATE / HUMAN-GATED** | No install/enable/start/main/Production authority follows from COMSYNC/proceed or repository work. Reacquire live source/status when material. |
 
 ## Testing / observation boundary
 
@@ -62,7 +63,7 @@ Prefer:
 4. discoverability of genuinely new objects;
 5. new machinery only when a real problem is not already carried by existing objects or stronger owners.
 
-Do not convert the 18 Open Horizon territories into an artifact checklist.
+Do not convert the 18 Open Horizon territories into an artifact checklist. Do not manufacture D067 from public-edition momentum.
 
 ## Consequential gates
 
@@ -75,6 +76,7 @@ Human/explicit gates remain for:
 - local service install/enable/start.
 
 ```text
+SOURCE_INTEGRATED != INSTALLED
 PROJECT_PURPOSE != TRACE_SURVIVAL
 PROJECT_PURPOSE != ME_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
