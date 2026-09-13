@@ -19,7 +19,7 @@ Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 COM `main` at this refresh:
 
-`2da5378711feab789a826fe6033ef7ec84a8b666`
+`35a5e0b5b436f47695532044c3f2e92194d11a94`
 
 Live source wins if main moves later.
 
@@ -29,76 +29,89 @@ PSFH D066 / Site Preview 0.8.25 remains live and stable:
 - maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`;
 - public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`;
 - Codex receipt #108 `5654523744`: 157 generated files matched live HTTPS;
-- CC origin witness `5654529576`: 161/161 whole served tree matched the same public head.
+- CC origin witness `5654529576`: 161/161 served-tree files matched the same public head.
 
-No D067 is earned merely because COM gained new files.
-
-```text
-PUBLICATION != UNIVERSAL_USEFULNESS
-WORKED_ROUTE != VALIDATION
-```
+No D067 is earned merely because COM gained new material.
 
 ## Current world-facing constructions
 
-### Positive Construction
-
-Three distinct postures are concrete:
+Positive Construction has three distinct postures:
 
 ```text
 CREATE -> SUSTAIN -> TRANSFORM
 ```
 
-- #310 `6e24a87b...` — **Heat Hub / CREATE**;
-- #312 `7d8002e4...` — **Woodland Commons / SUSTAIN**;
-- #315 `9c38f6ef...` — **The Coast That Moves / TRANSFORM**.
+- #310 `6e24a87b...` — Heat Hub / CREATE;
+- #312 `7d8002e4...` — Woodland Commons / SUSTAIN;
+- #315 `9c38f6ef...` — The Coast That Moves / TRANSFORM.
 
-Do not add a fourth by sequence-completion pressure.
+Additional worked constructions:
+- #317 `40e269d0...` — Legitimate Power / **The Smoke Line**;
+- #318 `bca9e20c...` — Representation / **The Riverbank Plan**;
+- #319 `2da53787...` — Scarce Allocation / **Four Generators**.
 
-### Legitimate Power
+These are owner-first learning objects, not doctrine, policy, tests or TRACE/ME validation.
 
-- #317 `40e269d088fb26deda12f811be19ee5f6a850729` — **The Smoke Line**.
-- Fictional multi-agency emergency scene: plural ordinary authority, bounded fast coordination, mutual-aid limits, trigger/reassessment, escalation without sovereignty, explicit hand-back and surviving duties.
-- Owner-first illustration only; not emergency doctrine, legal advice or an authority-clearance rule.
+## Current agent-delegation repair
 
-```text
-COORDINATION != SOVEREIGN_COMMAND
-EMERGENCY != MORAL_CLEARANCE
-```
+Fresh external pressure from production orchestrator/worker and multi-agent systems exposed one real gap in Reciprocal Delegation v0.2: a single authorised parent can fan work out to multiple children, but the existing single-lane record did not say whether parallel child envelopes consume or multiply the parent authority envelope.
 
-### Representation / Standing
-
-- #318 `bca9e20c1df855aa501cedc442b3acc563bd7329` — **The Riverbank Plan**.
-- Direct child voice where reachable, support before substitution, proxy advocacy distinguished from ecological condition evidence, future interests without fabricated consent, multiple proxies allowed to disagree, decision authority kept separate.
-- No standing/personhood rule follows.
-
-```text
-AFFECTED_SCOPE_PRESENT WITHOUT FABRICATED_VOICE
-REPRESENTATION != POSSESSION
-```
-
-### Scarce Allocation
-
-- #319 `2da5378711feab789a826fe6033ef7ec84a8b666` — **Four Generators**.
-- Shared resilience capacity faces more valid claims than units available; scene makes first-come, prior contract, protected classification, current evidence, clocks, alternatives, sequencing, contest and loser residue visible.
-- No universal priority formula follows.
+PR #321 merged `6e94c0c5480425ace0aa5783e6890cbbfe97d2a3`:
+- optional one-hop fan-out companion under `reference/reciprocal_delegation/v0_2/fanout/`;
+- explicit permission to fan out;
+- distinct child apertures;
+- child scope/no-touch/consequence ceilings inherited from parent;
+- no child subdelegation in v0.1;
+- no overlapping simultaneous mutators;
+- conserved family action reservation:
 
 ```text
-VALID_CLAIMS > AVAILABLE_CAPACITY
--> ALLOCATION_RULE_BECOMES_CONSEQUENTIAL_POWER
+parent_direct_action_reserve
++ SUM(child.max_unreviewed_actions)
+<= family_action_ceiling
+<= parent.max_unreviewed_actions
 
-PRICE != NEED
-PRIORITY != STANDING
-LOWER_PRIORITY != ZERO_HARM
+CAPABILITY_FAN_OUT != AUTHORITY_FAN_OUT
 ```
 
-## Explicit no-deltas already retained
+Immediate self-attack found a real witness defect: hand-back booleans could claim child receipts/action reporting without naming any receipt or count.
 
-Fresh bounded reads already found no additional artifact earned in:
+PR #322 merged `35a5e0b5b436f47695532044c3f2e92194d11a94`:
+- concrete child `actions_used` + `receipt_ref`;
+- terminal children require receipt refs;
+- complete hand-back requires exactly one child receipt per child;
+- exact action reconciliation:
+
+```text
+aggregate_actions_used
+=
+parent_direct_actions_used
++ SUM(child.actions_used)
+```
+
+- actual use cannot exceed reserved/family ceilings;
+- six deterministic cases executed: 2 PASS, 4 expected FAIL.
+
+Remaining boundary is explicit and intentional:
+
+```text
+RECORDED_REVOCATION != ENFORCED_REVOCATION
+RECEIPT_REF_EXISTS != RECEIPT_TRUE
+MAX_ACTIVE_CHILDREN_DECLARED != MONITOR_CAPACITY_PROVEN
+```
+
+Runtime identity, credentials, revocation enforcement and monitor completeness remain IAM/security/control-plane owner work. No further local machinery is currently earned.
+
+## Explicit no-deltas retained
+
+No additional artifact currently earned in:
 - Collective Epistemology;
 - Artificial Lineages / Succession;
-- Positive Risk / Exploration / Stagnation.
+- Positive Risk / Exploration / Stagnation;
+- Conflict / Resilience / Influence;
+- runtime revocation enforcement for the fan-out reference.
 
-Do not fill Open Horizon by artifact quota.
+Do not fill Open Horizon or agent-control space by artifact quota.
 
 ## Campfire Relay
 
@@ -117,9 +130,7 @@ Current aperture facts:
 - PR #190 remains draft/unmerged to repository main/Production;
 - operational Relay tool/provider and localhost are **not exposed to this Framework aperture**.
 
-Repository/source inspection must not be described as Relay-tool execution. Future apertures should use the operational Relay when exposed and materially useful, preserving each return/failure separately before integration.
-
-No local install/enable/start, Square write, credential action, provider dispatch/spend, Campfire main or Production action occurred in this cycle.
+Repository inspection is not Relay-tool execution. Future apertures should use the Relay tool when actually exposed and materially useful, preserving each return/failure separately.
 
 ## Testing / observation boundary
 
@@ -127,31 +138,24 @@ Only live model observation lane:
 
 `AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
 
-Closed as live work:
-- TRACE/ME principle testing;
-- POC / efficacy / superiority programmes;
-- gold answers / receiver benchmarks / provider leagues;
-- scoring/falsification programmes intended to prove the frameworks.
+No TRACE/ME principle tests, POC/efficacy/superiority programmes, gold answers, receiver benchmarks or provider leagues are current work.
 
-Ordinary software/build/link/byte/deployment checks remain shipping checks only.
+Ordinary software/build/integrity checks remain shipping/reference checks only.
 
 ## Current operating edge
 
-The latest cycle converted three mature-but-abstract Horizon routes into bounded worked constructions. That is enough for this pass.
-
-Next work should begin from a **new consequential gap**, not from the fact that another Horizon row still lacks a scene.
-
-Prefer:
-1. real observation from the public entrance;
-2. an owner correction or real-world need;
-3. repair/subtraction/routing;
-4. a new construction only when existing objects do not already make the issue usable.
+The fan-out sequence is now bounded enough to stop. Next work should be earned by:
+1. natural PSFH observation;
+2. a fresh external-world pressure;
+3. owner correction;
+4. concrete defect/repair/subtraction;
+5. a genuinely different constructive gap.
 
 ```text
 ONE SHARP QUESTION
 -> BOUNDED LOOK
 -> CONSEQUENTIAL DELTA OR NO_DELTA
--> STOP / RETURN TO BUILD
+-> STOP / RETURN TO WORLD
 
 NEW_FILE_AVAILABLE != NEW_FILE_EARNED
 BUILD != PROOF
