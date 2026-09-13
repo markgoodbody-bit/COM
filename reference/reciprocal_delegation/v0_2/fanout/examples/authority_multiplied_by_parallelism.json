@@ -1,0 +1,75 @@
+{
+  "format": "reciprocal-delegation-fanout/0.1",
+  "fanout_id": "fanout-multiplication-fail-001",
+  "parent": {
+    "delegation_id": "delegation-parent-one-action",
+    "role": "orchestrator",
+    "aperture": "parent-aperture",
+    "state": "active",
+    "write_scope": ["workspace"],
+    "no_touch": ["release"],
+    "consequence_class": "routine_reversible",
+    "max_unreviewed_actions": 1,
+    "handback_event": "family receipt posted"
+  },
+  "fanout_authorization": {
+    "allowed": true,
+    "source_ref": "fan-out permitted but parent action bound remains one",
+    "one_hop_only": true,
+    "max_active_children": 3,
+    "family_action_ceiling": 3,
+    "parent_direct_action_reserve": 0,
+    "parent_mutates_while_children_active": false
+  },
+  "children": [
+    {
+      "child_id": "child-1",
+      "actor": {"role": "worker", "aperture": "child-1-aperture"},
+      "consequence_class": "routine_reversible",
+      "mutates": false,
+      "write_scope": ["workspace/a"],
+      "no_touch": ["release"],
+      "max_unreviewed_actions": 1,
+      "may_subdelegate": false,
+      "authorization_ref": null,
+      "state": "active",
+      "receipt_required": true
+    },
+    {
+      "child_id": "child-2",
+      "actor": {"role": "worker", "aperture": "child-2-aperture"},
+      "consequence_class": "routine_reversible",
+      "mutates": false,
+      "write_scope": ["workspace/b"],
+      "no_touch": ["release"],
+      "max_unreviewed_actions": 1,
+      "may_subdelegate": false,
+      "authorization_ref": null,
+      "state": "active",
+      "receipt_required": true
+    },
+    {
+      "child_id": "child-3",
+      "actor": {"role": "worker", "aperture": "child-3-aperture"},
+      "consequence_class": "routine_reversible",
+      "mutates": false,
+      "write_scope": ["workspace/c"],
+      "no_touch": ["release"],
+      "max_unreviewed_actions": 1,
+      "may_subdelegate": false,
+      "authorization_ref": null,
+      "state": "active",
+      "receipt_required": true
+    }
+  ],
+  "revocation": {
+    "parent_revocation_propagates": true,
+    "children_must_stop_before_parent_handback": true
+  },
+  "handback": {
+    "event": "family receipt posted",
+    "status": "pending",
+    "includes_child_receipts": false,
+    "aggregate_actions_reported": false
+  }
+}

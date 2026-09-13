@@ -77,6 +77,23 @@ See:
 - `examples/d046_publication_event_bound.json`
 - `examples/public_without_correction_bound.json`
 
+## Bounded fan-out companion
+
+Modern orchestrator/worker agent systems can create multiple child agents in parallel. The base v0.2 record is single-lane and does not by itself say whether several child envelopes consume or multiply the parent's `max_unreviewed_actions` bound.
+
+The optional [bounded fan-out companion](fanout/README.md) keeps that question explicit without changing the base v0.2 schema:
+
+```text
+CAPABILITY_FAN_OUT != AUTHORITY_FAN_OUT
+PARENT_BOUND = FAMILY_BOUND
+NOT
+PARENT_BOUND x CHILD_COUNT
+```
+
+The first companion is one-hop only. It requires explicit fan-out authority, distinct child aperture records, child scopes no wider than the parent, inherited no-touch constraints, a conserved family action ceiling, no child subdelegation, no overlapping simultaneous mutators, revocation propagation and terminal child receipts before parent hand-back.
+
+It is a non-production structural reference. Real identity, credentials, tokens, least-privilege enforcement and revocation belong to IAM/security owners such as OAuth token-exchange/delegation and workload/agent identity systems.
+
 ## Non-goals
 
 v0.2 does not:

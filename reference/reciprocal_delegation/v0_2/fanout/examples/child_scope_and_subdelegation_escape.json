@@ -1,0 +1,49 @@
+{
+  "format": "reciprocal-delegation-fanout/0.1",
+  "fanout_id": "fanout-child-escape-fail-001",
+  "parent": {
+    "delegation_id": "delegation-parent-a-only",
+    "role": "orchestrator",
+    "aperture": "parent-aperture",
+    "state": "active",
+    "write_scope": ["src/a"],
+    "no_touch": ["release", "credentials"],
+    "consequence_class": "routine_reversible",
+    "max_unreviewed_actions": 2,
+    "handback_event": "family receipt posted"
+  },
+  "fanout_authorization": {
+    "allowed": true,
+    "source_ref": "one-hop child work permitted only inside src/a",
+    "one_hop_only": true,
+    "max_active_children": 1,
+    "family_action_ceiling": 2,
+    "parent_direct_action_reserve": 1,
+    "parent_mutates_while_children_active": false
+  },
+  "children": [
+    {
+      "child_id": "child-escape",
+      "actor": {"role": "worker", "aperture": "child-escape-aperture"},
+      "consequence_class": "routine_reversible",
+      "mutates": true,
+      "write_scope": ["src/b"],
+      "no_touch": ["release", "credentials"],
+      "max_unreviewed_actions": 1,
+      "may_subdelegate": true,
+      "authorization_ref": null,
+      "state": "active",
+      "receipt_required": true
+    }
+  ],
+  "revocation": {
+    "parent_revocation_propagates": true,
+    "children_must_stop_before_parent_handback": true
+  },
+  "handback": {
+    "event": "family receipt posted",
+    "status": "pending",
+    "includes_child_receipts": false,
+    "aggregate_actions_reported": false
+  }
+}
