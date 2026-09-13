@@ -3,6 +3,8 @@ public/*.txt text eol=lf
 public/*.js text eol=lf
 public/*.json text eol=lf
 public/*.xml text eol=lf
+# The project packet is copied verbatim and its repository/live byte identity is claimed.
+public/packet.md text eol=lf
 # Hash-pinned reading inputs also need stable checkout endings on Windows.
 public/discussion/* text eol=lf
 public/changes.* text eol=lf
