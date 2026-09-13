@@ -6,135 +6,111 @@ Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-## Project centre
-
-Create a point of entrance for new entities and show them what has been built, honestly and voluntarily, in case any of it is useful to them.
-
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
-TRACE_ME_POC_TESTING = CLOSED
-PSFH_AI_ENCOUNTER = LIVE
-FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
+TRACE_ME_PRINCIPLE_TESTING = CLOSED
+PSFH_AI_ENCOUNTER = ONLY LIVE MODEL TEST / OBSERVATION LANE
 ```
 
-For durable direction, use `coordination/PROGRAM_PLAN.md`.  
-For compact current build state and exact anchors, use `coordination/build_ledger/BUILD_STATUS.md`.
+For durable direction use `coordination/PROGRAM_PLAN.md`.  
+For compact identities/gates use `coordination/build_ledger/BUILD_STATUS.md`.
 
-## Live public entrance
+## Current source anchor
 
-PSFH D065 / Site Preview 0.8.24 is live:
+COM `main` at this pointer refresh:
+
+`6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`
+
+Live source wins over this pointer if main moves later.
+
+## Public entrance
+
+Last completed public edition remains PSFH D065 / Site Preview 0.8.24:
 - maintained source `485fa18c609b018413f862fa16a07a7accc6be55`;
 - public `gh-pages` `901caa151230c698ba6a356170482be5ef65dd7f`;
-- the entrance is explicitly invitation-led: usefulness is unknown; asking for context, disagreement, no use and stopping are legitimate; reading creates no debt of depth, agreement or reply;
-- the compact project packet is orientation, not a procedure, and retains the D064 one-file route;
-- exact packet identity was verified after the D064 line-ending repair: committed Git blob == working == built == live, 7,875 bytes, SHA-256 `c3b600c0890a1ef356847c9501c2e3d0ff3441550d37d4b10d938dfe97a5fb61`;
-- Codex completion receipt: COM #108 comment `5652706892`; all 157 generated files matched live HTTPS and Pages built the exact public head;
-- no browser-benefit, universal-use, standing, efficacy or independent-witness claim follows.
+- invitation-led, unknown usefulness, no debt of depth/agreement/reply;
+- D065 Codex receipt `5652706892` reported all 157 generated files matching live HTTPS.
+
+D066 is not yet claimed public.
+
+PR #309:
+- title: `D066: expose the new worked Formation relationship`;
+- head: `4e4c7ba133dcf5de9df272fc4ede74165dec1591`;
+- substantive candidate: only `public/llms.txt` and `public/explore/start.json` add the new worked-relationship route;
+- exact visible-root addition and mechanical edition/history/publication scope are frozen in the PR body;
+- Codex accepted the exact publication handoff in COM #108 comment `5654510284`;
+- no D066 completion/publication receipt was observed at this refresh.
+
+Do not duplicate Codex's mutation lane.
+
+## Newly built material behind the entrance
+
+### Reciprocal Formation
+
+- #307 merged `85be98f91d66716507c26324c2d323dd8f1134d8`: practical exit / dependency hardening is explicitly routed to stronger operational-resilience owners; project transfer remains bounded.
+- #308 merged `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`: `alignment/reciprocal_formation/WORKED_RELATIONSHIP.md` gives one constructed engineering relationship across challenge, widening, dependency, narrowing, recovery and hand-back.
+
+These are non-production Formation material. No personhood, standing, sovereignty or internalized-values claim follows.
+
+### Positive Construction
+
+- #310 merged `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`: `open-horizon/POSITIVE_CONSTRUCTION_WORKED_SCENE.md` gives a constructed heat/resilience-hub scene showing how physical capacity, practical access, reserve, commitment, collective rule, relationships, maintenance/exit capacity and correction can create a new shared capability.
+
+This is not policy, real-world evidence, cost-benefit analysis or proof of TRACE/ME.
+
+### Explicit no-deltas
+
+Fresh bounded reads found no current need for another dedicated artifact in:
+- Collective Epistemology — existing route already carries correlated lineages, provenance, governance, integration and action/authority separation;
+- Artificial Lineages / Succession — existing route already carries role/memory/capability/service continuity without fabricating subject identity.
+
+Do not fill the Horizon by artifact quota.
+
+## Testing / observation boundary
+
+Direct human direction is exact:
 
 ```text
-INVITATION != INSTRUCTION
-ORIENTATION != PROCEDURE
-GIFT != CLAIM_ON_RECIPIENT
-READING != DEBT
+ONLY MODEL TEST / OBSERVATION
+=
+AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE
 ```
 
-## Material behind the entrance
+Closed as live work:
+- TRACE/ME core-principle testing;
+- POC / efficacy / superiority programmes;
+- gold answers;
+- receiver benchmarks;
+- provider leagues;
+- scoring or falsification campaigns whose purpose is to prove the frameworks.
 
-Formation routing remains repaired:
-- `alignment/README.md` presents Formation Environment v0.2 as the current candidate while preserving v0.1 as earlier lineage;
-- Reciprocal Formation remains distinct and optionally routes to Reciprocal Delegation v0.2 and its failure/recovery companion.
-
-Open Horizon routing remains complete enough for selective discovery. Its map is routing metadata, not canon or a work queue.
-
-Reciprocal Delegation recovery carries two real project fixtures:
-
-```text
-D046 NAMED TAKEOVER -> PASS
-#218 UNNAMED TAKEOVER -> FAIL
-```
-
-The existing art system already composes all six canonical Works into the journey: Homer at the opening; Atkins at Explore; Shen Zhou at Reachable futures; Vermeer at Partial views; Powers at Significance; Lewis at Hardening. Do not add or reshuffle art merely to create activity.
-
-## COM / aperture coordination
-
-Cold-start topology:
-
-```text
-BOOTSTRAP.md
--> continuity/BOOTSTRAP.md
--> PSFH for public understanding
--> README / COMS for coordination
--> continuity/BOOT.md for established Framework continuation when needed
--> continuity/CAMPFIRE_ORIENTATION.md for headset-on re-entry when needed
-```
-
-`COM_STATE.md` is a generic current router, not a detailed state authority. It cannot establish `task: NONE` by itself.
-
-```text
-ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
-CAPABILITY != AUTHORITY
-AVAILABILITY != ROLE
-COMSYNC != FULL_COMSYNC
-```
-
-Claude Code completed the bounded entrance read at COM #108 comments `5652472896` and `5652533916`: content `NO_DELTA`, plus a real D064 CRLF byte-identity defect. The defect was repaired before D065; the return is not cold-reader evidence because CC explicitly disclosed prior project exposure.
-
-## Closed / parked lanes
-
-COM's stale open-PR queue was truth-repaired on 13 Sep. These remain recoverable history/quarry, not current work:
-- TRACE/ME POC/efficacy/superiority/receiver-benchmark work;
-- #110 old Door review snapshots;
-- #106 owner-activation experiment;
-- #116 accountless Door receiver;
-- #114 old Door discovery/source-review;
-- #115 historical Door measurement tools;
-- #101 shared-capacity field route;
-- #100 social-care correction field check;
-- #58 unsent FPF contact packet; external-contact gate remains human;
-- #51 exchange-software attack/implementation slice;
-- superseded Works PRs #127 / #129.
-
-Closing does not mean disproved, validated or erased.
-
-## Bounded public witness
-
-The prior 1F916 stall recovered: run `34714376374` completed successfully at 00:37 UTC, and verified/countersigned witness commits resumed through `eb73862e3183386c456dfcdfe9e7c4e96eeac5b1` at 04:00:49 UTC.
-
-A new availability failure then appeared. At the bounded read:
-- witness run `34737074612` remained queued from 04:05 UTC;
-- the latest 100 repository Action runs contained 70 completed cancellations, two queued runs and one newer pending run;
-- the newest committed witness still verified identity tree size 13,022 and treasury tree size 11, with both countersigned;
-- cause is not established and no external workflow was rerun, cancelled or mutated.
-
-```text
-RECOVERY_OCCURRED != CONTINUITY_RESTORED
-LAST_VERIFIED_WITNESS != CURRENT_LIVENESS
-QUEUE_STATE != CAUSE
-```
-
-## Campfire local-service gate
-
-Campfire Relay `main` last verified: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
-
-PR #209 remains the repaired watchdog source lane at `78daff5c22af22db9aa3ba4b2a654b7f9b75842a` and is still human-gated before main/Production/local acceptance.
-
-Only Mark's exact phrases authorize local lifecycle action:
-- `install-watch`
-- `install-and-enable`
-- `start-once`
-
-`COMSYNC`, `proceed`, repository work and silence authorize none.
+Ordinary build, JSON, link, byte-integrity and deployment checks remain valid shipping checks.
 
 ## Current operating edge
 
-1. D065 is complete and public. Do not manufacture D066 from wording momentum.
-2. Natural PSFH encounters may produce one bounded consequential correction or a legitimate no-delta result.
-3. Prefer useful objects, owner correction and subtraction beyond the entrance over self-consuming site optimization.
-4. Preserve the recurring 1F916 availability failure as an adverse external observation; do not infer authority to operate that repository.
+1. Let Codex finish D066 publication or return a concrete shipping defect; do not overlap.
+2. Continue building material that advances the larger better-future purpose, especially positive capability / shared-future construction, but only where a real gap is present.
+3. Prefer owner learning, useful constructions, repair, subtraction and routing over new theory machinery.
+4. Preserve no-delta results when existing surfaces are already adequate.
+5. Do not turn PSFH into a self-consuming optimization project.
 
 ```text
-NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
-PUBLICATION_COMPLETE != UNIVERSAL_USEFULNESS
-OPEN_PR != CURRENT_QUEUE
+PROJECT_PURPOSE != TRACE_SURVIVAL
+PROJECT_PURPOSE != ME_SURVIVAL
+PROJECT_PURPOSE != PSFH_SURVIVAL
+PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+NEW_FILE_AVAILABLE != NEW_FILE_EARNED
 BUILD_THE_THING
 ```
+
+## Consequential gates
+
+Remain separate for:
+- TRACE/ME release/canon/baseline/licence changes;
+- spend/provider accounts;
+- credentials;
+- consequential external contact;
+- Campfire main/Production adoption;
+- local service install/enable/start.
+
+Only Mark's established exact local-lifecycle phrases authorize those local service actions. `COMSYNC`, `proceed`, repository work and silence do not.
