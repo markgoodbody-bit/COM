@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.41 · 13 September 2026
+Please Start From Here · Reader change log · Edition 0.42 · 13 September 2026
+
+### D066
+
+13 September 2026 — Link to the worked Formation relationship.
+
+The optional workshop now links directly to a newly built Reciprocal Formation example from the root page, text entrance and JSON entrance. It is labelled as a constructed engineering scene, not evidence, evaluation or proof.
+
+Site Preview advances to 0.8.25. The opening, art, navigation, seed, project packet and framework sources are unchanged. Previous publication 901caa151230c698ba6a356170482be5ef65dd7f remains in Git history. Discoverability does not establish the example's practical value.
 
 ### D065
 
