@@ -2,7 +2,7 @@
 
 Recorded snapshot: **2026-09-13 Europe/London**.
 
-Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
+Observed coordination state only. Re-read mutable heads before acting. Later direct human direction wins.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
@@ -27,7 +27,7 @@ FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
 | COM state/router/team model | **CURRENT / ROLE-IDENTITY BOUNDARIES REPAIRED** | Generic `COM_STATE.md`; Framework role != runtime identity; Codex implementation role and CC challenge role remain capability/availability dependent. Ordinary COMSYNC is cheap coordination sync; FULL COMSYNC widens only when material. |
 | Formation Under Uncertainty entry | **ROUTING REPAIRED / NON-PRODUCTION** | Environment v0.2 current candidate, v0.1 preserved lineage, Reciprocal Formation distinct and optionally linked to Delegation/recovery mechanics. |
 | Reciprocal Formation hand-back | **MERGED / NON-PRODUCTION REPAIR** | PR #290 merge `4455a2ca6a11728aad98411cd8666881a742f52a`. Adds `OBSERVE -> HAND_BACK` and `NARROWED -> HAND_BACK`; recovery is no longer mechanically required before legitimate exit. Existing obligations/residue remain visible. No new state, standing/personhood claim, authority or Production change. |
-| Open Horizon | **ROUTING COMPLETE / HORIZON OPEN** | Human + machine discoverability exists for all 18 current territories. `open-horizon/map.json` is routing metadata, not canon/theory/work queue. |
+| Open Horizon | **ROUTING COMPLETE / HORIZON OPEN** | Human + machine discoverability exists for all 18 current territories. Positive Construction now carries relational capability without possession (#298, `144be59e...`); Legitimate Power distinguishes voluntary/practical exit from whole legitimacy and surviving obligations (#299, `6be98570...`); machine-map scope summaries were refreshed to match (#300, `a51b2b18...`). These are bounded owner-first synthesis/routing repairs, not new TRACE/ME primitives or canon. |
 | Reciprocal Delegation recovery | **MERGED / NON-PRODUCTION REFERENCE** | D046 named takeover PASS / #218 unnamed takeover FAIL. PR #267 merge `1e0b2568d25993605f5be0d3aa1f90cca0048f0a`. No validator/schema/authority/Production change. |
 | Journey art | **SIX CANONICAL WORKS ALREADY COMPOSED** | Homer opening; Atkins Explore; Shen Zhou Reachable futures; Vermeer Partial views; Powers Significance; Lewis Hardening. Contextual-art generator owns these placements. No new art placement is currently earned. |
 | Historical COM PR queue | **TRUTH-REPAIRED / CLOSED OR PARKED** | #110, #101, #100, #58 and #51 were closed on 13 Sep with explicit superseded/parked receipts. Earlier #106/#116/#114/#115 remain closed/parked. Evidence/branches remain recoverable; closed != disproved/erased. |
@@ -69,11 +69,12 @@ No-delta conclusions retained:
 - no second site-wide hash manifest currently justified;
 - all six canonical Works are already integrated into the journey; do not add art by quota;
 - public root remains useful without JavaScript; `journey.js` is optional navigation enhancement over native links/fragments;
-- pinned TRACE/ME local reading copies still match the Git blob identities recorded in their resource inventory.
+- pinned TRACE/ME local reading copies still match the Git blob identities recorded in their resource inventory;
+- current Representation/Standing, Long Time/Succession and Artificial Lineages routes already preserve the relevant support/proxy, role/identity and model/ecology distinctions; do not duplicate them into new theory objects.
 
 ## Current anchors
 
-- COM `main`: reacquire before operational use; PR #290 merge was `4455a2ca6a11728aad98411cd8666881a742f52a` before this ledger refresh.
+- COM `main`: `a51b2b180a49e7aa5d57962820f7015bc8fdcdcc` before this ledger refresh.
 - PSFH maintained live: `485fa18c609b018413f862fa16a07a7accc6be55`.
 - PSFH public live: `901caa151230c698ba6a356170482be5ef65dd7f`.
 - Latest verified/countersigned public 1F916 witness commit observed: `eb73862e3183386c456dfcdfe9e7c4e96eeac5b1`; later liveness remained degraded at bounded read.
