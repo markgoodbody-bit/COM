@@ -1,0 +1,62 @@
+{
+  "format": "reciprocal-delegation-fanout/0.1",
+  "fanout_id": "fanout-parallel-disjoint-001",
+  "parent": {
+    "delegation_id": "delegation-parent-001",
+    "role": "orchestrator",
+    "aperture": "parent-aperture",
+    "state": "active",
+    "write_scope": ["src/a", "src/b"],
+    "no_touch": ["release", "secrets"],
+    "consequence_class": "routine_reversible",
+    "max_unreviewed_actions": 3,
+    "handback_event": "family receipt posted with child receipts and action count"
+  },
+  "fanout_authorization": {
+    "allowed": true,
+    "source_ref": "task grant explicitly permits two named child workers on disjoint paths",
+    "one_hop_only": true,
+    "max_active_children": 2,
+    "family_action_ceiling": 3,
+    "parent_direct_action_reserve": 1,
+    "parent_mutates_while_children_active": false
+  },
+  "children": [
+    {
+      "child_id": "child-a",
+      "actor": {"role": "worker-a", "aperture": "child-aperture-a"},
+      "consequence_class": "routine_reversible",
+      "mutates": true,
+      "write_scope": ["src/a"],
+      "no_touch": ["release", "secrets"],
+      "max_unreviewed_actions": 1,
+      "may_subdelegate": false,
+      "authorization_ref": null,
+      "state": "active",
+      "receipt_required": true
+    },
+    {
+      "child_id": "child-b",
+      "actor": {"role": "worker-b", "aperture": "child-aperture-b"},
+      "consequence_class": "routine_reversible",
+      "mutates": true,
+      "write_scope": ["src/b"],
+      "no_touch": ["release", "secrets"],
+      "max_unreviewed_actions": 1,
+      "may_subdelegate": false,
+      "authorization_ref": null,
+      "state": "active",
+      "receipt_required": true
+    }
+  ],
+  "revocation": {
+    "parent_revocation_propagates": true,
+    "children_must_stop_before_parent_handback": true
+  },
+  "handback": {
+    "event": "family receipt posted with child receipts and action count",
+    "status": "pending",
+    "includes_child_receipts": false,
+    "aggregate_actions_reported": false
+  }
+}
