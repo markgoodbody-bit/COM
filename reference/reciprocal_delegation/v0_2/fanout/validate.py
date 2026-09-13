@@ -133,9 +133,12 @@ def validate(doc: Any) -> list[str]:
 
     child_ids: set[str] = set()
     apertures: set[str] = set()
+    seen_receipts: set[str] = set()
     child_budget_sum = 0
+    child_actions_sum = 0
     live_children = 0
     live_mutators: list[tuple[str, list[str]]] = []
+    child_receipts: list[str] = []
 
     for i, child in enumerate(children):
         prefix = f"children[{i}]"
@@ -193,6 +196,11 @@ def validate(doc: Any) -> list[str]:
         budget = positive_int(child.get("max_unreviewed_actions"), f"{prefix}.max_unreviewed_actions", errors)
         if budget is not None:
             child_budget_sum += budget
+        actions_used = positive_int(child.get("actions_used"), f"{prefix}.actions_used", errors, allow_zero=True)
+        if actions_used is not None:
+            child_actions_sum += actions_used
+            if budget is not None and actions_used > budget:
+                errors.append(f"{prefix}.actions_used: {actions_used} exceeds child max_unreviewed_actions {budget}")
 
         if child.get("may_subdelegate") is not False:
             errors.append(f"{prefix}.may_subdelegate: companion v0.1 requires false")
@@ -201,6 +209,16 @@ def validate(doc: Any) -> list[str]:
             errors.append(f"{prefix}.state: must be one of {sorted(CHILD_STATES)}")
         if child.get("receipt_required") is not True:
             errors.append(f"{prefix}.receipt_required: must be true")
+        receipt_ref = child.get("receipt_ref")
+        if receipt_ref is not None and not text(receipt_ref):
+            errors.append(f"{prefix}.receipt_ref: must be non-empty text or null")
+        if text(receipt_ref):
+            if receipt_ref in seen_receipts:
+                errors.append(f"{prefix}.receipt_ref: duplicate receipt reference {receipt_ref}")
+            seen_receipts.add(receipt_ref)
+            child_receipts.append(receipt_ref)
+        if state in TERMINAL_CHILD_STATES and not text(receipt_ref):
+            errors.append(f"{prefix}.receipt_ref: terminal child requires concrete receipt reference")
 
         if state in LIVE_CHILD_STATES:
             live_children += 1
@@ -260,14 +278,38 @@ def validate(doc: Any) -> list[str]:
     status = handback.get("status")
     if status not in {"pending", "complete"}:
         errors.append("handback.status: must be pending or complete")
+
+    parent_actions_used = positive_int(handback.get("parent_direct_actions_used"), "handback.parent_direct_actions_used", errors, allow_zero=True)
+    aggregate_actions_used = positive_int(handback.get("aggregate_actions_used"), "handback.aggregate_actions_used", errors, allow_zero=True)
+    receipt_refs = list_text(handback.get("child_receipt_refs"), "handback.child_receipt_refs", errors)
+
+    if parent_actions_used is not None and parent_reserve is not None and parent_actions_used > parent_reserve:
+        errors.append(
+            "handback.parent_direct_actions_used: "
+            f"{parent_actions_used} exceeds parent_direct_action_reserve {parent_reserve}"
+        )
+    if parent_actions_used is not None and aggregate_actions_used is not None:
+        expected_actions = parent_actions_used + child_actions_sum
+        if aggregate_actions_used != expected_actions:
+            errors.append(
+                "handback.aggregate_actions_used: must equal parent_direct_actions_used + sum(child.actions_used); "
+                f"expected {expected_actions}, got {aggregate_actions_used}"
+            )
+    if aggregate_actions_used is not None and family_ceiling is not None and aggregate_actions_used > family_ceiling:
+        errors.append(
+            f"handback.aggregate_actions_used: {aggregate_actions_used} exceeds family_action_ceiling {family_ceiling}"
+        )
+
+    unknown_receipts = sorted(set(receipt_refs) - set(child_receipts))
+    if unknown_receipts:
+        errors.append("handback.child_receipt_refs: references not present on any child: " + ", ".join(unknown_receipts))
+
     if status == "complete":
         for i, child in enumerate(children):
             if isinstance(child, dict) and child.get("state") not in TERMINAL_CHILD_STATES:
                 errors.append(f"children[{i}].state: parent handback cannot complete while child remains non-terminal")
-        if handback.get("includes_child_receipts") is not True:
-            errors.append("handback.includes_child_receipts: complete handback requires true")
-        if handback.get("aggregate_actions_reported") is not True:
-            errors.append("handback.aggregate_actions_reported: complete handback requires true")
+        if set(receipt_refs) != set(child_receipts) or len(receipt_refs) != len(children):
+            errors.append("handback.child_receipt_refs: complete handback must name exactly one concrete receipt for every child")
 
     if parent_state in {"revoked", "stopped", "handback"}:
         for i, child in enumerate(children):

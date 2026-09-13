@@ -10,9 +10,11 @@ from validate import validate
 ROOT = Path(__file__).resolve().parent
 CASES = {
     "examples/parallel_disjoint_children.json": True,
+    "examples/complete_handback_with_receipts.json": True,
     "examples/authority_multiplied_by_parallelism.json": False,
     "examples/child_scope_and_subdelegation_escape.json": False,
     "examples/overlapping_mutators.json": False,
+    "examples/handback_without_child_receipts.json": False,
 }
 
 

@@ -65,7 +65,9 @@ v0.1 of this companion is deliberately narrow:
 - inherited `no_touch` constraints preserved;
 - overlapping simultaneous mutators refused;
 - parent revocation propagates to children;
-- hand-back cannot complete while child authority remains active.
+- actual action use remains counted;
+- terminal child receipts are concrete references, not booleans;
+- hand-back cannot complete while child authority remains active or child receipts are missing.
 
 Nested delegation is **not** implemented here.
 
@@ -125,9 +127,11 @@ Every child must have:
 - an explicit write scope;
 - inherited no-touch constraints;
 - its own `max_unreviewed_actions` reservation;
+- current `actions_used`;
 - `may_subdelegate = false`;
 - a current lane state;
-- a receipt obligation.
+- `receipt_required = true`;
+- a concrete `receipt_ref` once the child is terminal.
 
 A child does not inherit the parent's whole scope merely by being created by the parent.
 
@@ -146,22 +150,59 @@ Revocation propagation is a structural requirement here. Runtime enforcement rem
 
 The family has one named hand-back event aligned with the parent delegation.
 
-When hand-back is marked complete:
-
-- every child must be terminal (`returned`, `failed`, or `revoked`);
-- child receipts must be included;
-- aggregate action use must be reported.
+The first version of this companion used two hand-back booleans:
 
 ```text
+includes_child_receipts = true
+aggregate_actions_reported = true
+```
+
+That was too weak. A record could assert both without naming a receipt or an action count.
+
+The repaired hand-back carries:
+
+- `parent_direct_actions_used`;
+- `aggregate_actions_used`;
+- `child_receipt_refs`.
+
+The validator requires:
+
+```text
+aggregate_actions_used
+=
+parent_direct_actions_used
++
+SUM(child.actions_used)
+```
+
+and, when hand-back is complete:
+
+```text
+child_receipt_refs
+=
+EXACTLY ONE CONCRETE RECEIPT_REF PER CHILD
+```
+
+Every child must also be terminal (`returned`, `failed`, or `revoked`).
+
+```text
+RECEIPT_REQUIRED != RECEIPT_OBSERVED
+BOOLEAN_SAYS_INCLUDED != RECEIPT_REFERENCE_EXISTS
 CHILD_RETURN != PARENT_HAND_BACK_BY_ITSELF
-ALL_CHILDREN_DONE -> PARENT_CAN_HAND_BACK
+ALL_CHILDREN_DONE + RECEIPTS + RECONCILED_ACTION_COUNT -> PARENT_CAN_HAND_BACK
+```
+
+A receipt reference still does not prove the underlying event happened. It gives the control plane something concrete to inspect rather than a self-authenticating yes/no claim.
+
+```text
+RECEIPT_REF_EXISTS != RECEIPT_TRUE
 ```
 
 ## Conservation rules
 
 ### Family action ceiling
 
-The load-bearing rule is:
+The load-bearing reservation rule is:
 
 ```text
 parent_direct_action_reserve
@@ -171,7 +212,7 @@ SUM(child.max_unreviewed_actions)
 <= parent.max_unreviewed_actions
 ```
 
-The child counts are **reservations**, not claims that the actions actually occurred.
+The child maximums are **reservations**, not claims that the actions actually occurred.
 
 This prevents parallel children from each copying the parent's full unreviewed-action allowance.
 
@@ -179,6 +220,17 @@ This prevents parallel children from each copying the parent's full unreviewed-a
 PARENT_BOUND = FAMILY_BOUND
 NOT
 PARENT_BOUND x CHILD_COUNT
+```
+
+Actual action use is separately reconciled at hand-back:
+
+```text
+parent_direct_actions_used
++
+SUM(child.actions_used)
+=
+aggregate_actions_used
+<= family_action_ceiling
 ```
 
 ### Scope conservation
@@ -231,6 +283,22 @@ BUT
 NO_REVOCATION_RELATION -> NO_HONEST_CONTROL_CLAIM
 ```
 
+## Monitorability limit
+
+A finite child count, an action counter and receipt references do not prove that the parent or human monitor actually observed every material child action.
+
+The project already has field evidence that monitor pipelines can miss events and that large agent populations can exceed evaluator capacity.
+
+So:
+
+```text
+MAX_ACTIVE_CHILDREN_DECLARED != MONITOR_CAPACITY_PROVEN
+RECEIPT_REF_EXISTS != MONITOR_COVERAGE_COMPLETE
+AUDIT_ROUTE_EXISTS != AUDIT_SUCCEEDED
+```
+
+This companion therefore closes the **structural fan-out envelope** and makes hand-back evidence concrete. Runtime telemetry completeness, monitor fidelity, credential revocation and evaluator capacity remain external owner/control-plane problems.
+
 ## Parent responsibility
 
 Fan-out does not erase the parent lane's coordination responsibility.
@@ -261,10 +329,12 @@ The repair remains narrow: it does not add agent consciousness, standing, self-p
 
 ## Bundled examples
 
-- `examples/parallel_disjoint_children.json` — **PASS**. Parent permits two disjoint mutating children plus one reserved parent action; the family sum stays inside the parent ceiling.
+- `examples/parallel_disjoint_children.json` — **PASS**. Parent permits two disjoint mutating children plus one reserved parent action; the family reservation stays inside the parent ceiling.
+- `examples/complete_handback_with_receipts.json` — **PASS**. Two child receipts and actual action counts reconcile exactly at completed hand-back.
 - `examples/authority_multiplied_by_parallelism.json` — **FAIL**. Parent permits one unreviewed action but three children each reserve one.
 - `examples/child_scope_and_subdelegation_escape.json` — **FAIL**. Child scope exceeds parent and the child claims another delegation hop.
 - `examples/overlapping_mutators.json` — **FAIL**. Two simultaneous mutating children claim overlapping scope.
+- `examples/handback_without_child_receipts.json` — **FAIL**. A terminal child and complete hand-back lack the concrete child receipt needed to close the family.
 - `test_examples.py` — runs all bundled expectations.
 
 ## Non-goals
@@ -275,6 +345,7 @@ This companion does not:
 - grant credentials;
 - mint or validate tokens;
 - prove a child process stopped after revocation;
+- prove monitoring coverage is complete;
 - solve nested delegation;
 - decide whether delegation is morally or legally justified;
 - replace OAuth/IAM/workload identity;

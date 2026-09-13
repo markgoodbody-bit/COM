@@ -44,7 +44,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["child_id", "actor", "consequence_class", "mutates", "write_scope", "no_touch", "max_unreviewed_actions", "may_subdelegate", "authorization_ref", "state", "receipt_required"],
+        "required": ["child_id", "actor", "consequence_class", "mutates", "write_scope", "no_touch", "max_unreviewed_actions", "actions_used", "may_subdelegate", "authorization_ref", "state", "receipt_required", "receipt_ref"],
         "properties": {
           "child_id": {"type": "string", "minLength": 1},
           "actor": {
@@ -61,10 +61,12 @@
           "write_scope": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
           "no_touch": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
           "max_unreviewed_actions": {"type": "integer", "minimum": 1},
+          "actions_used": {"type": "integer", "minimum": 0},
           "may_subdelegate": {"type": "boolean"},
           "authorization_ref": {"type": ["string", "null"]},
           "state": {"type": "string", "enum": ["planned", "active", "returned", "failed", "revoked"]},
-          "receipt_required": {"type": "boolean"}
+          "receipt_required": {"type": "boolean"},
+          "receipt_ref": {"type": ["string", "null"]}
         }
       }
     },
@@ -80,12 +82,13 @@
     "handback": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["event", "status", "includes_child_receipts", "aggregate_actions_reported"],
+      "required": ["event", "status", "parent_direct_actions_used", "aggregate_actions_used", "child_receipt_refs"],
       "properties": {
         "event": {"type": "string", "minLength": 1},
         "status": {"type": "string", "enum": ["pending", "complete"]},
-        "includes_child_receipts": {"type": "boolean"},
-        "aggregate_actions_reported": {"type": "boolean"}
+        "parent_direct_actions_used": {"type": "integer", "minimum": 0},
+        "aggregate_actions_used": {"type": "integer", "minimum": 0},
+        "child_receipt_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
       }
     }
   }

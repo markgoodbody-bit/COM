@@ -1,20 +1,20 @@
 {
   "format": "reciprocal-delegation-fanout/0.1",
-  "fanout_id": "fanout-parallel-disjoint-001",
+  "fanout_id": "fanout-complete-handback-pass-001",
   "parent": {
-    "delegation_id": "delegation-parent-001",
+    "delegation_id": "delegation-parent-complete",
     "role": "orchestrator",
     "aperture": "parent-aperture",
-    "state": "active",
+    "state": "handback",
     "write_scope": ["src/a", "src/b"],
-    "no_touch": ["release", "secrets"],
+    "no_touch": ["release"],
     "consequence_class": "routine_reversible",
     "max_unreviewed_actions": 3,
-    "handback_event": "family receipt posted with child receipts and action count"
+    "handback_event": "family receipt posted"
   },
   "fanout_authorization": {
     "allowed": true,
-    "source_ref": "task grant explicitly permits two named child workers on disjoint paths",
+    "source_ref": "two bounded child workers plus one direct parent action permitted",
     "one_hop_only": true,
     "max_active_children": 2,
     "family_action_ceiling": 3,
@@ -24,33 +24,33 @@
   "children": [
     {
       "child_id": "child-a",
-      "actor": {"role": "worker-a", "aperture": "child-aperture-a"},
+      "actor": {"role": "worker-a", "aperture": "child-complete-a"},
       "consequence_class": "routine_reversible",
       "mutates": true,
       "write_scope": ["src/a"],
-      "no_touch": ["release", "secrets"],
+      "no_touch": ["release"],
       "max_unreviewed_actions": 1,
-      "actions_used": 0,
+      "actions_used": 1,
       "may_subdelegate": false,
       "authorization_ref": null,
-      "state": "active",
+      "state": "returned",
       "receipt_required": true,
-      "receipt_ref": null
+      "receipt_ref": "receipt-child-a-001"
     },
     {
       "child_id": "child-b",
-      "actor": {"role": "worker-b", "aperture": "child-aperture-b"},
+      "actor": {"role": "worker-b", "aperture": "child-complete-b"},
       "consequence_class": "routine_reversible",
       "mutates": true,
       "write_scope": ["src/b"],
-      "no_touch": ["release", "secrets"],
+      "no_touch": ["release"],
       "max_unreviewed_actions": 1,
-      "actions_used": 0,
+      "actions_used": 1,
       "may_subdelegate": false,
       "authorization_ref": null,
-      "state": "active",
+      "state": "returned",
       "receipt_required": true,
-      "receipt_ref": null
+      "receipt_ref": "receipt-child-b-001"
     }
   ],
   "revocation": {
@@ -58,10 +58,10 @@
     "children_must_stop_before_parent_handback": true
   },
   "handback": {
-    "event": "family receipt posted with child receipts and action count",
-    "status": "pending",
-    "parent_direct_actions_used": 0,
-    "aggregate_actions_used": 0,
-    "child_receipt_refs": []
+    "event": "family receipt posted",
+    "status": "complete",
+    "parent_direct_actions_used": 1,
+    "aggregate_actions_used": 3,
+    "child_receipt_refs": ["receipt-child-a-001", "receipt-child-b-001"]
   }
 }
