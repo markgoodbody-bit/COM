@@ -60,6 +60,25 @@ Where practical exit matters, inspect at least:
 
 A relationship can therefore become less voluntary in practice without any single decision explicitly choosing permanent dependence. That is a reason to preserve alternatives and answerability before they are needed, not a universal rule that every dependency is illegitimate.
 
+## Stronger owner practice already treats exit as a capability
+
+This distinction is not a new project discovery. Mature operational-resilience and third-party-risk practice already treats a formal termination right as weaker than an exit that can actually be executed.
+
+Two owner examples make the overlap concrete:
+
+- the Bank of England's [Outsourcing and third party risk management Code of Practice](https://www.bankofengland.co.uk/paper/2023/outsourcing-and-third-party-risk-management-code-of-practice) requires business continuity plans and documented exit strategies that distinguish stressed from planned exits and are maintained and tested;
+- the EU's [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) requires exit strategies for ICT services supporting critical or important functions, including documented and tested exit plans, transition periods, and the ability to migrate to another provider or an in-house solution without unacceptable service disruption.
+
+Related supervisory practice goes further into the mechanics: identify alternative providers, determine which data must be accessed or transferred, estimate time/cost/resource implications, preserve the assets and skills needed for exit, define triggers, and test stressed exit before it is needed.
+
+The project should therefore learn from and route to these owners rather than imply that practical exit or dependency hardening is locally novel. The transfer into Reciprocal Formation is structural and bounded: financial-sector rules do not settle AI standing, consent, welfare, legitimate authority or the ethics of a particular relationship. They do show that dependency, switching capacity and exit can be treated as operational capabilities that are built and tested before failure.
+
+```text
+OWNER_PRACTICE != PROJECT_DISCOVERY
+FORMAL_TERMINATION_RIGHT != TESTED_EXIT_CAPABILITY
+DOMAIN_TRANSFER != DOMAIN_EQUIVALENCE
+```
+
 ## Widening check
 
 Before widening initiative, ask what changes on both sides:
