@@ -16,14 +16,15 @@ Do not reconstruct predecessor runtime identity and do not expand this checkpoin
 
 ## CURRENT OBSERVED STATE
 
-- COM `main` at this refresh: `7d8002e414f696238ca42f874207ae0758e1d606`.
-- PSFH D066 / Site Preview 0.8.25 is live: maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`; public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`. Codex receipt COM #108 `5654523744` reports all 157 generated files matching live HTTPS; CC witness `5654529576` independently matched the full served tree 161/161 at the same public head. The new worked-relationship route is optional workshop discovery, not evidence/evaluation/proof.
-- Reciprocal Formation owner-routing #307 merged `85be98f91d66716507c26324c2d323dd8f1134d8`.
-- Reciprocal Formation worked relationship #308 merged `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`.
-- Positive Construction Heat Hub #310 merged `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`.
-- Positive Construction Woodland Commons #312 merged `7d8002e414f696238ca42f874207ae0758e1d606`; it salvages one constructive commons scene from the retired transfer harness while leaving testing dead.
-- Bounded reads of Collective Epistemology, Artificial Lineages and Positive Risk / Exploration produced `NO_DELTA`: existing owner-first routes already carry the material structure; no quota-driven artifact was earned.
-- Campfire Relay PR #227 merged source repair into maintained Simple-v1 development branch at `db78625f20c4083e257deb39e3b6886a9f6ca89f`. It explicitly declines the unconsumed null/refusal stream and names posts/comments coverage. Hosted `campfire-ci` and `Campfire Square Simple v1` workflows passed. `SOURCE_INTEGRATED != INSTALLED / MAIN / PRODUCTION`.
+- COM `main` at this refresh: `141953ba3bb637e2c755e396f9f094e27e1d5100`.
+- PSFH D066 / Site Preview 0.8.25 is live: maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`; public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`. Codex receipt COM #108 `5654523744` reports all 157 generated files matching live HTTPS; CC witness `5654529576` independently matched the full served tree 161/161 at the same public head. The worked-relationship route is optional workshop discovery, not evidence/evaluation/proof.
+- Positive constructions now include Heat Hub / CREATE (#310), Woodland Commons / SUSTAIN (#312), and Coast That Moves / TRANSFORM (#315).
+- Three additional world scenes are integrated: Legitimate Power / The Smoke Line (#317), Representation / The Riverbank Plan (#318), and Scarce Allocation / Four Generators (#319). Each remains owner-first and bounded; none supplies doctrine, a universal priority rule, standing, sovereignty, or validation.
+- Reciprocal Formation one-hop fan-out (#321) permits only explicit, distinct, non-recursive child assignments under inherited ceilings, disjoint simultaneous mutation, and a conserved family action budget. The handback repair (#322) requires concrete child action counts and receipt references and reconciles aggregate use. This is a worked construction, not a generic multi-agent framework.
+- Fan-out's residual is deliberately external: a structural record cannot enforce runtime credential isolation, revocation delivery, or monitoring completeness. Those belong to IAM/security/control-plane owners.
+- Bounded reads of Collective Epistemology, Artificial Lineages / Succession, Positive Risk / Exploration, and Conflict / Resilience / Influence produced `NO_DELTA`. Existing owner-first routes already carry the material structure; no quota-driven artifact was earned.
+- Campfire Relay is both maintained source and, only when exposed, an operational tool. In this aperture the repository was inspectable but the Relay tool/provider was not exposed: `RELAY_REPO != RELAY_TOOL`.
+- Campfire Relay PR #227 merged a source repair into maintained Simple-v1 development at `db78625f20c4083e257deb39e3b6886a9f6ca89f`. It explicitly declines the unconsumed null/refusal stream and names posts/comments coverage. `SOURCE_INTEGRATED != INSTALLED / MAIN / PRODUCTION`.
 
 ## DIRECT HUMAN DIRECTION
 
@@ -66,9 +67,11 @@ Positive construction means more than preventing harm or preserving optionality.
 
 ## UNRESOLVED / ACTIVE
 
+- The current fan-out construction is complete enough to stop. Do not grow vocabulary, recursion, dispatcher infrastructure, credentials, monitoring, or control-plane machinery without a concrete use.
 - D066 is complete; do not manufacture D067 from edition momentum. New public routing should be earned by a genuine new public need, not because COM gained another file.
 - Natural PSFH usefulness remains observational and receiver-specific; no universal usefulness follows from publication or byte witness.
 - Campfire PR #227 is source-integrated into Simple-v1 only. No local install/enable/start or main/Production action is authorized or implied.
+- Campfire watchdog PR #209 remains source-only and human-gated; source readiness does not authorize installation or enabling.
 - Consequential release/canon/licence, spend, credentials and external institutional contact remain human/explicitly gated.
 - Mutable service / external-world state must be freshly reacquired when it changes the action.
 
@@ -87,6 +90,7 @@ AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
 SYNTHESIS != NOVELTY
 SOURCE_INTEGRATED != INSTALLED
+RELAY_REPO != RELAY_TOOL
 ```
 
 Operationally:
