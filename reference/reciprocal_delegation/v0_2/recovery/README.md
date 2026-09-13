@@ -8,7 +8,7 @@ It does not decide whether the underlying action is justified. It does not infer
 
 ## Core rules
 
-A takeover is valid only when:
+A recovery/takeover record passes this structural reference only when:
 
 1. the previous lane is no longer actively mutating the same scope;
 2. a reason for transfer is named;
@@ -21,6 +21,7 @@ A takeover is valid only when:
 9. hand-back is observable delivery, not agreement, approval or review.
 
 ```text
+STRUCTURE_VALID != TAKEOVER_AUTHORIZED
 SINGLE_MUTATOR != PERMANENT_OWNER
 HANDOFF != IDENTITY_TRANSFER
 MOVED_HEAD -> OLD_CLAIM_HISTORICAL
