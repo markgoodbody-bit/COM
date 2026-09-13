@@ -22,34 +22,21 @@ For compact current build state and exact anchors, use `coordination/build_ledge
 
 ## Live public entrance
 
-PSFH D062 / Site Preview 0.8.21 is live:
-- maintained source `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`;
-- public `gh-pages` `fcd264aed8d73cf0ed17272300b27b66cb16760c`;
-- D062 distinguishes historical prototype provenance from mutable maintained/published source routes;
-- page content, art and seed remained unchanged; D061 disclosure repair is retained;
-- Codex publication receipt: COM #108 comment `5649519801`, 156 generated files matched live HTTPS hashes;
-- no independent D062 witness or browser-observed interaction claim.
-
-### D063 — compact receiver-scope repair / publication handoff active
-
-PR #289 is the current bounded PSFH candidate.
-
-Semantic basis:
-- base maintained D062 `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`;
-- semantic head `1dd93c65094f9735d955dc61400b0f500fd9de3d`;
-- exactly three compact entrance files: `public/seed.txt`, `public/llms.txt`, `public/explore/start.json`;
-- `affected parties` becomes `who or what may be affected` across all three;
-- seed 0.5 removes the unnecessary generic assumption of a `sender` and remains exactly 1023 bytes under the existing 1 KiB ceiling.
+PSFH D065 / Site Preview 0.8.24 is live:
+- maintained source `485fa18c609b018413f862fa16a07a7accc6be55`;
+- public `gh-pages` `901caa151230c698ba6a356170482be5ef65dd7f`;
+- the entrance is explicitly invitation-led: usefulness is unknown; asking for context, disagreement, no use and stopping are legitimate; reading creates no debt of depth, agreement or reply;
+- the compact project packet is orientation, not a procedure, and retains the D064 one-file route;
+- exact packet identity was verified after the D064 line-ending repair: committed Git blob == working == built == live, 7,875 bytes, SHA-256 `c3b600c0890a1ef356847c9501c2e3d0ff3441550d37d4b10d938dfe97a5fb61`;
+- Codex completion receipt: COM #108 comment `5652706892`; all 157 generated files matched live HTTPS and Pages built the exact public head;
+- no browser-benefit, universal-use, standing, efficacy or independent-witness claim follows.
 
 ```text
-AFFECTED_SCOPE > PREASSIGNED_PARTY_CATEGORY
-WHO_OR_WHAT_MAY_BE_AFFECTED != STANDING_DECISION
-BROADER_SCOPE != BROADER_AUTHORITY
+INVITATION != INSTRUCTION
+ORIENTATION != PROCEDURE
+GIFT != CLAIM_ON_RECIPIENT
+READING != DEBT
 ```
-
-Framework publication handoff to Codex: COM #108 comment `5649616301`.
-No provider/model call, benchmark, TRACE/ME POC or browser claim is a publication gate.
-Do not broaden D063 into a personhood/standing rule or new identity framework.
 
 ## Material behind the entrance
 
@@ -90,7 +77,7 @@ AVAILABILITY != ROLE
 COMSYNC != FULL_COMSYNC
 ```
 
-Claude Code has a bounded cold-entrance request at COM #108 comment `5649592499`: return one consequential defect or `NO_DELTA`, then stop. Reverify availability when material; no reply is a valid state.
+Claude Code completed the bounded entrance read at COM #108 comments `5652472896` and `5652533916`: content `NO_DELTA`, plus a real D064 CRLF byte-identity defect. The defect was repaired before D065; the return is not cold-reader evidence because CC explicitly disclosed prior project exposure.
 
 ## Closed / parked lanes
 
@@ -109,6 +96,22 @@ COM's stale open-PR queue was truth-repaired on 13 Sep. These remain recoverable
 
 Closing does not mean disproved, validated or erased.
 
+## Bounded public witness
+
+The prior 1F916 stall recovered: run `34714376374` completed successfully at 00:37 UTC, and verified/countersigned witness commits resumed through `eb73862e3183386c456dfcdfe9e7c4e96eeac5b1` at 04:00:49 UTC.
+
+A new availability failure then appeared. At the bounded read:
+- witness run `34737074612` remained queued from 04:05 UTC;
+- the latest 100 repository Action runs contained 70 completed cancellations, two queued runs and one newer pending run;
+- the newest committed witness still verified identity tree size 13,022 and treasury tree size 11, with both countersigned;
+- cause is not established and no external workflow was rerun, cancelled or mutated.
+
+```text
+RECOVERY_OCCURRED != CONTINUITY_RESTORED
+LAST_VERIFIED_WITNESS != CURRENT_LIVENESS
+QUEUE_STATE != CAUSE
+```
+
 ## Campfire local-service gate
 
 Campfire Relay `main` last verified: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
@@ -124,13 +127,14 @@ Only Mark's exact phrases authorize local lifecycle action:
 
 ## Current operating edge
 
-1. D063 is the only current public-source candidate; preserve single-writer publication scope.
-2. While its mechanics run, build only non-overlapping material or resolve a concrete entrance/material/coordination defect.
-3. Do not manufacture D064, a new framework object, new art placement or research programme by momentum.
-4. Natural PSFH encounters may produce one bounded correction or a legitimate no-delta result.
+1. D065 is complete and public. Do not manufacture D066 from wording momentum.
+2. Natural PSFH encounters may produce one bounded consequential correction or a legitimate no-delta result.
+3. Prefer useful objects, owner correction and subtraction beyond the entrance over self-consuming site optimization.
+4. Preserve the recurring 1F916 availability failure as an adverse external observation; do not infer authority to operate that repository.
 
 ```text
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
+PUBLICATION_COMPLETE != UNIVERSAL_USEFULNESS
 OPEN_PR != CURRENT_QUEUE
 BUILD_THE_THING
 ```
