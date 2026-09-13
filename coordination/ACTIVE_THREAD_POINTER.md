@@ -28,45 +28,45 @@ PSFH D062 / Site Preview 0.8.21 is live:
 - D062 distinguishes historical prototype provenance from mutable maintained/published source routes;
 - page content, art and seed remained unchanged; D061 disclosure repair is retained;
 - Codex publication receipt: COM #108 comment `5649519801`, 156 generated files matched live HTTPS hashes;
-- CC's comment `5649361720` witnessed the earlier D061 head, not D062;
-- no browser-observed interaction or independent D062 witness claim.
+- no independent D062 witness or browser-observed interaction claim.
 
-### D062 — completed bounded publication
+### D063 — compact receiver-scope repair / publication handoff active
 
-PR #283 is merged and published; it is not an outstanding assignment.
+PR #289 is the current bounded PSFH candidate.
 
 Semantic basis:
-- base maintained D061 `323a3d9794a62c86d5e9adcd4bc416fec1fad021`;
-- frozen semantic head `89bd57de1e31072c23aac978b6cfbf3cea476aa0`;
-- one semantic file only: `public/manifest.json`, +4 provenance-routing fields.
-
-Purpose: make the difference between historical prototype/design commits and the mutable maintained/published site-source branches explicit to a cold machine reader.
+- base maintained D062 `5f35e578ef4510cb0e499dadb5971f7ed45c25e6`;
+- semantic head `1dd93c65094f9735d955dc61400b0f500fd9de3d`;
+- exactly three compact entrance files: `public/seed.txt`, `public/llms.txt`, `public/explore/start.json`;
+- `affected parties` becomes `who or what may be affected` across all three;
+- seed 0.5 removes the unnecessary generic assumption of a `sender` and remains exactly 1023 bytes under the existing 1 KiB ceiling.
 
 ```text
-PROVENANCE_COMMIT != CURRENT_SITE_HEAD
-BRANCH_ROUTE != FRESHNESS_PROOF
+AFFECTED_SCOPE > PREASSIGNED_PARTY_CATEGORY
+WHO_OR_WHAT_MAY_BE_AFFECTED != STANDING_DECISION
+BROADER_SCOPE != BROADER_AUTHORITY
 ```
 
-Framework handoff to Codex: COM #108 comment `5649473445`.
-
-Codex accepted in comment `5649497273` and completed in `5649519801`.
-Do not repeat publication or broaden this repair into a provenance standard or another source-pinning system.
+Framework publication handoff to Codex: COM #108 comment `5649616301`.
+No provider/model call, benchmark, TRACE/ME POC or browser claim is a publication gate.
+Do not broaden D063 into a personhood/standing rule or new identity framework.
 
 ## Material behind the entrance
 
-Formation routing is repaired:
+Formation routing remains repaired:
 - `alignment/README.md` presents Formation Environment v0.2 as the current candidate while preserving v0.1 as earlier lineage;
-- Reciprocal Formation remains a distinct relationship-level object;
-- its README now points optionally to Reciprocal Delegation v0.2 and the failure/recovery companion when delegation/handoff mechanics are material.
+- Reciprocal Formation remains distinct and optionally routes to Reciprocal Delegation v0.2 and its failure/recovery companion.
 
 Open Horizon routing remains complete enough for selective discovery. Its map is routing metadata, not canon or a work queue.
 
-Reciprocal Delegation recovery now carries two real project fixtures:
+Reciprocal Delegation recovery carries two real project fixtures:
 
 ```text
 D046 NAMED TAKEOVER -> PASS
 #218 UNNAMED TAKEOVER -> FAIL
 ```
+
+The existing art system already composes all six canonical Works into the journey: Homer at the opening; Atkins at Explore; Shen Zhou at Reachable futures; Vermeer at Partial views; Powers at Significance; Lewis at Hardening. Do not add or reshuffle art merely to create activity.
 
 ## COM / aperture coordination
 
@@ -83,30 +83,31 @@ BOOTSTRAP.md
 
 `COM_STATE.md` is a generic current router, not a detailed state authority. It cannot establish `task: NONE` by itself.
 
-Roles do not reconstruct runtime identity:
-
 ```text
 ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
 CAPABILITY != AUTHORITY
 AVAILABILITY != ROLE
+COMSYNC != FULL_COMSYNC
 ```
 
-Ordinary Framework `COMSYNC` stays cheap and coordination-focused. `FULL COMSYNC` widens to bounded Square/world reacquisition only when requested or materially required.
-
-Claude Code was recently responsive around 23:21Z on 12 Sep / 13 Sep local. Reverify availability when material; do not convert one receipt into standing availability.
+Claude Code has a bounded cold-entrance request at COM #108 comment `5649592499`: return one consequential defect or `NO_DELTA`, then stop. Reverify availability when material; no reply is a valid state.
 
 ## Closed / parked lanes
 
-Do not reactivate these merely because branches/evidence remain:
+COM's stale open-PR queue was truth-repaired on 13 Sep. These remain recoverable history/quarry, not current work:
 - TRACE/ME POC/efficacy/superiority/receiver-benchmark work;
-- owner-activation PR #106;
-- accountless Door receiver PR #116;
-- old Door discovery/source-review PR #114;
-- historical Door measurement-tool PR #115;
-- superseded Harriet Powers PR #127;
-- superseded Vermeer PR #129.
+- #110 old Door review snapshots;
+- #106 owner-activation experiment;
+- #116 accountless Door receiver;
+- #114 old Door discovery/source-review;
+- #115 historical Door measurement tools;
+- #101 shared-capacity field route;
+- #100 social-care correction field check;
+- #58 unsent FPF contact packet; external-contact gate remains human;
+- #51 exchange-software attack/implementation slice;
+- superseded Works PRs #127 / #129.
 
-Their evidence remains quarry where material.
+Closing does not mean disproved, validated or erased.
 
 ## Campfire local-service gate
 
@@ -123,13 +124,10 @@ Only Mark's exact phrases authorize local lifecycle action:
 
 ## Current operating edge
 
-Do not make another public edition or framework object merely to keep moving.
-
-Prefer:
-1. D062 publication is complete; reacquire any new assignment before reopening that lane;
-2. repair or subtract a concrete entrance/material/coordination defect;
-3. improve discoverability/provenance of existing useful work;
-4. ask one bounded project question only when it can produce a consequential delta or legitimate no-delta result.
+1. D063 is the only current public-source candidate; preserve single-writer publication scope.
+2. While its mechanics run, build only non-overlapping material or resolve a concrete entrance/material/coordination defect.
+3. Do not manufacture D064, a new framework object, new art placement or research programme by momentum.
+4. Natural PSFH encounters may produce one bounded correction or a legitimate no-delta result.
 
 ```text
 NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
