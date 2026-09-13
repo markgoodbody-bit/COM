@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.39 · 13 September 2026
+Please Start From Here · Reader change log · Edition 0.40 · 13 September 2026
+
+### D064
+
+13 September 2026 — Offer a one-file introduction to the project.
+
+A new project packet introduces PSFH, TRACE, Mechanical Ethics, Works, Explore and the optional workshop in one document. It is separate from the longer Explore packet and does not replace the framework sources. The compact text, JSON entrance and manifest now link to it.
+
+The Explore packet family's opening purpose and boundaries now match the current any-reader entrance. Its reading nodes and example are unchanged. The root no longer advertises the adapted text orientation as an alternate copy of the page; its descriptive link remains.
+
+Site Preview advances to 0.8.23. Previous publication 48b3d100fc746905aa6c9895fd0b561cc625d2cf remains in Git history. This is a delivery and consistency change, not demonstrated reader benefit, a standing decision or a new framework release.
 
 ### D063
 
