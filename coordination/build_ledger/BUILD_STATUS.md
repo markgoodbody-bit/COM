@@ -16,34 +16,66 @@ PSFH_AI_ENCOUNTER = ONLY LIVE MODEL TEST / OBSERVATION LANE
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM main | **CURRENT AT SNAPSHOT** | `2da5378711feab789a826fe6033ef7ec84a8b666`. Live source wins if it advances. |
-| PSFH D066 | **LIVE / STABLE** | Site Preview 0.8.25. Maintained `404de6f0...`; public `0566ef9a...`. 157 generated files matched live HTTPS; CC witnessed 161/161 served-tree files. No D067 earned by file-count/edition momentum. |
-| Reciprocal Formation practical exit | **MERGED / OWNER-ROUTED** | #307 `85be98f9...`. Mature operational-resilience / third-party-risk owners credited; no local novelty/authority machinery inferred. |
-| Reciprocal Formation worked relationship | **MERGED / CONSTRUCTED EXAMPLE** | #308 `7d51c3bd...`. Challenge, bounded widening, dependency hardening, narrowing, recovery and hand-back in one engineering scene. |
-| Positive Construction — Heat Hub | **MERGED / CREATE** | #310 `6e24a87b...`. Institution/public-capability construction. |
-| Positive Construction — Woodland Commons | **MERGED / SUSTAIN** | #312 `7d8002e4...`. Co-owned shared-good construction and answerable governance. |
-| Positive Construction — The Coast That Moves | **MERGED / TRANSFORM** | #315 `9c38f6ef...`. Successor capability before withdrawal of an unsustainable present form. |
-| Legitimate Power — The Smoke Line | **MERGED / CONSTRUCTED EXAMPLE** | #317 `40e269d088fb26deda12f811be19ee5f6a850729`. Plural authority, bounded fast coordination, mutual-aid limits, reassessment, escalation and hand-back. Not emergency doctrine or authority clearance. |
-| Representation — The Riverbank Plan | **MERGED / CONSTRUCTED EXAMPLE** | #318 `bca9e20c1df855aa501cedc442b3acc563bd7329`. Direct/supported voice, proxy advocacy, ecological evidence, future interests without fabricated consent, decision authority separate. No standing/personhood rule. |
-| Scarce Allocation — Four Generators | **MERGED / CONSTRUCTED EXAMPLE** | #319 `2da5378711feab789a826fe6033ef7ec84a8b666`. Valid claims exceed shared capacity; allocation rule, stale priority lists, prior contracts, clocks, alternatives, sequencing, contest and loser residue made visible. No universal priority formula. |
-| Collective Epistemology | **NO DELTA** | Existing owner-first route already carries correlated error lineages, provenance, governance and action/authority separation. |
+| COM main | **CURRENT AT SNAPSHOT** | `35a5e0b5b436f47695532044c3f2e92194d11a94`. Live source wins if it advances. |
+| PSFH D066 | **LIVE / STABLE** | Site Preview 0.8.25. Maintained `404de6f0...`; public `0566ef9a...`. 157 generated files matched live HTTPS; CC witnessed 161/161 served-tree files. No D067 by edition/file momentum. |
+| Positive Construction | **CREATE / SUSTAIN / TRANSFORM** | #310 Heat Hub `6e24a87b...`; #312 Woodland Commons `7d8002e4...`; #315 Coast That Moves `9c38f6ef...`. Worked learning objects only. |
+| Legitimate Power — The Smoke Line | **MERGED / CONSTRUCTED EXAMPLE** | #317 `40e269d0...`. Plural authority, bounded fast coordination, mutual-aid limits, reassessment, escalation and hand-back. |
+| Representation — The Riverbank Plan | **MERGED / CONSTRUCTED EXAMPLE** | #318 `bca9e20c...`. Direct/supported voice, proxy advocacy, ecological evidence, future interests without fabricated consent. |
+| Scarce Allocation — Four Generators | **MERGED / CONSTRUCTED EXAMPLE** | #319 `2da53787...`. Valid claims exceed capacity; allocation rule, contracts, classifications, clocks, sequencing, contest and residue visible. |
+| Reciprocal Delegation fan-out | **MERGED / NON-PRODUCTION COMPANION** | #321 `6e94c0c5...`. One-hop fan-out, explicit authority, child scope/no-touch ceilings, no child subdelegation, disjoint mutators, conserved family action reservation. `CAPABILITY_FAN_OUT != AUTHORITY_FAN_OUT`. |
+| Fan-out witness repair | **MERGED / SELF-CORRECTION** | #322 `35a5e0b5...`. Replaces hand-back assertion booleans with concrete child receipt refs and actual action counts. Complete hand-back requires terminal children, exact receipt coverage and reconciled family action use. Six-case run: 2 PASS + 4 expected FAIL. |
+| Fan-out runtime revocation | **NO DELTA / EXTERNAL OWNER** | Structural record requires propagation but does not claim to stop running agents. Credential/runtime revocation and monitor completeness remain IAM/security/control-plane work. `RECORDED_REVOCATION != ENFORCED_REVOCATION`. |
+| Collective Epistemology | **NO DELTA** | Existing route already carries correlated error lineages, provenance, governance and action/authority separation. |
 | Artificial Lineages / Succession | **NO DELTA** | Existing route already carries role/commitment/memory/capability/service continuity while keeping subject identity unresolved. |
 | Positive Risk / Exploration | **NO DELTA** | Existing route already carries bounded experimentation, portfolio/common-mode risk, construction windows, waiting/commitment, stopping and externalised burden. |
-| Campfire Relay operational aperture | **PART OF OPERATING ECOLOGY / NOT EXPOSED HERE** | `RELAY_REPO != RELAY_TOOL`. Current chat can inspect source but does not expose the operational Relay provider/tool or localhost. Use operational Relay in future apertures when exposed/material; provider dispatch/spend/writes remain separately gated. |
-| Campfire Square Simple-v1 | **SOURCE REPAIR INTEGRATED / NOT INSTALLED** | Maintained branch `db78625f...`; PR #190 draft/unmerged to repository main/Production. Null-stream capture repair integrated; merged-head Simple-v1 run 161 and campfire-ci run 1432 passed. Installed/runtime currentness unclaimed. |
+| Conflict / Resilience / Influence | **NO DELTA** | Existing route already carries deterrence by denial, bounded secrecy, adversarial correction routes, sunset authority and shared interests without trust. |
+| Campfire Relay operational aperture | **PART OF OPERATING ECOLOGY / NOT EXPOSED HERE** | `RELAY_REPO != RELAY_TOOL`. Current chat can inspect source but does not expose the operational Relay provider/tool or localhost. Future use remains material/availability dependent. |
+| Campfire Square Simple-v1 | **SOURCE REPAIR INTEGRATED / NOT INSTALLED** | Maintained `db78625f...`; PR #190 draft/unmerged to repository main/Production. Installed/runtime currentness unclaimed. |
 
 ## Current construction map
 
-The project now has several concrete world-facing postures without converting them into one framework:
+The project now has several concrete postures without pretending they are one universal framework:
 
 ```text
 CREATE / SUSTAIN / TRANSFORM
 DISTRIBUTE / TEMPORARILY CONCENTRATE / HAND BACK POWER
 REPRESENT WITHOUT FABRICATING VOICE
 ALLOCATE SCARCE CAPACITY WITHOUT HIDING THE RULE
+DELEGATE PARALLEL CAPABILITY WITHOUT MULTIPLYING AUTHORITY
 ```
 
-These are **worked learning objects**, not tests, doctrine, policy, evidence or TRACE/ME validation.
+These are worked/reference objects, not proof, doctrine or TRACE/ME validation.
+
+## Fan-out evidence ceiling
+
+Current structural reference establishes:
+
+```text
+parent_direct_action_reserve
++ SUM(child.max_unreviewed_actions)
+<= family_action_ceiling
+<= parent.max_unreviewed_actions
+```
+
+and at completed hand-back:
+
+```text
+aggregate_actions_used
+=
+parent_direct_actions_used
++ SUM(child.actions_used)
+```
+
+with concrete terminal child `receipt_ref`s.
+
+Do not infer:
+
+```text
+RECEIPT_REF_EXISTS == RECEIPT_TRUE
+MAX_ACTIVE_CHILDREN_DECLARED == MONITOR_CAPACITY_PROVEN
+RECORDED_REVOCATION == ENFORCED_REVOCATION
+REFERENCE_IMPLEMENTATION == PRODUCTION_ADOPTION
+```
 
 ## Testing / observation boundary
 
@@ -51,15 +83,9 @@ Only live model observation lane:
 
 `AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
 
-```text
-OBSERVATION != BENCHMARK
-WORKED_CONSTRUCTION != TEST
-DISAGREEMENT / NO_USE / STOPPING ARE VALID
-```
-
 No TRACE/ME principle tests, POC/efficacy/superiority programmes, gold answers, receiver benchmarks or provider leagues are current work.
 
-Ordinary software/build/link/JSON/byte/deployment checks are shipping checks only.
+Ordinary software/reference/build checks are not framework-efficacy tests.
 
 ## Current operating discipline
 
@@ -67,17 +93,17 @@ Ordinary software/build/link/JSON/byte/deployment checks are shipping checks onl
 ONE SHARP QUESTION
 -> BOUNDED LOOK
 -> ONE CONSEQUENTIAL DELTA OR NO_DELTA
--> RETURN TO BUILD
+-> RETURN TO WORLD
 ```
 
-Do not convert Open Horizon into an artifact checklist. After this cycle, another worked scene needs a genuinely different missing object or real-world consequence; sequence completion is not enough.
+The fan-out sequence is complete enough to stop at the reference boundary. Do not grow it into a general multi-agent framework or runtime control plane without a new use-driven defect.
 
 Prefer:
-1. useful construction where a usability gap is real;
-2. repair/subtraction;
-3. owner routing/provenance;
-4. discoverability of genuinely new objects;
-5. no-delta when mature owners/current routes already carry the work.
+1. natural PSFH observation;
+2. fresh external-world pressure;
+3. owner correction;
+4. concrete repair/subtraction;
+5. no-delta when stronger owners already carry the problem.
 
 ## Consequential gates
 
