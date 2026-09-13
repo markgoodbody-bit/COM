@@ -134,9 +134,35 @@ The Horizon's community-energy work exposed a useful question:
 
 > the important issue is not simply whether delegation occurred, but whether the relationship continues to earn the delegation.
 
-That can depend on purpose, competence, transparency, conflicts, affected-party routes, ability to challenge, performance, correction and whether the delegated scope still matches the problem.
+That can depend on purpose, competence, transparency, conflicts, affected-scope routes, ability to challenge, performance, correction and whether the delegated scope still matches the problem.
 
 There is no project formula that turns those factors into legitimate authority.
+
+### Voluntary entry and exit are important but not complete legitimacy tests
+
+The public project entrance is deliberately voluntary. That is a design choice for this relationship, not a universal theory saying every legitimate institution or obligation must be instantly optional.
+
+A person can have duties that survive withdrawal from a particular relationship. Public institutions can hold lawful responsibilities that do not arise from each affected person's individual opt-in. Dependence, care, prior commitments, harms already created and other owner-governed relationships can also leave obligations after one participant wants to exit.
+
+The opposite mistake is equally serious: a formal right to leave can be practically empty when exit would destroy livelihood, safety, access, social connection or another capability the relationship itself controls.
+
+```text
+VOLUNTARY_ENTRY != PERMANENT_LEGITIMACY
+FORMAL_EXIT != PRACTICALLY_USABLE_EXIT
+EXIT_AVAILABLE != NO_SURVIVING_OBLIGATIONS
+CONTINUED_PARTICIPATION != CONSENT_BY_ITSELF
+INABILITY_TO_EXIT != AUTOMATIC_AUTHORITY_CLEARANCE
+```
+
+So `can they leave?` is an important question about power, but not the whole legitimacy test.
+
+Where exit is costly, impossible or legitimately constrained, answerability becomes more important rather than less: purpose, authority source, proportionality, challenge, representation, review, burden and correction need to remain inspectable through the appropriate owner institutions.
+
+For artificial systems, continued operation, inability to terminate a task, or behaviour that appears cooperative does not establish subjective consent, preference, welfare or standing. Equally, this project does not infer that every externally imposed constraint is illegitimate merely because the system did not choose it.
+
+The portable discipline is narrower:
+
+> **Do not call a relationship voluntary merely because refusal exists in theory, and do not call power legitimate merely because exit is unavailable.**
 
 ### Entrustment can grow, narrow and recover
 
@@ -168,7 +194,7 @@ But serious hostile questions remain:
 COMPETENCE != SOVEREIGNTY
 ENTRUSTMENT != PERSONHOOD
 DELEGATED_AUTHORITY != MORAL_STANDING
-SUPERVISOR_APPROVAL != AFFECTED_PARTY_CONSENT
+SUPERVISOR_APPROVAL != AFFECTED_SCOPE_CONSENT
 ```
 
 The project should not use operational entrustment as a back door for settling personhood, rights or political standing.
@@ -203,13 +229,14 @@ Neither half is sufficient alone.
 - capable but unanswerable institutions can dominate them;
 - distributed participation without a route to consequential decision can become theatre;
 - central coordination without local knowledge can dispossess or mis-handle the system;
+- formal exit without practical exit can disguise dependency as choice;
 - permanent fragmentation can make timely action impossible;
 - entrustment without challenge can become paternal gatekeeping;
 - revocation without rehabilitation can harden one failure into permanent exclusion.
 
 A useful middle-out question is therefore:
 
-> **What real work must be done, which authority functions does it require, who can legitimately hold each function, what capability makes that authority usable, who is affected by its exercise, who can answer or challenge it, and how can the allocation change when evidence, risk or capability changes?**
+> **What real work must be done, which authority functions does it require, who can legitimately hold each function, what capability makes that authority usable, who is affected by its exercise, who can answer or challenge it, how usable are refusal or exit where they matter, what obligations legitimately survive them, and how can the allocation change when evidence, risk or capability changes?**
 
 That is a question, not a decision rule.
 
@@ -223,6 +250,8 @@ Do **not** infer:
 - centralisation or decentralisation is generally superior;
 - deliberative processes automatically create legitimate mandates;
 - community ownership proves community control or consent;
+- voluntary exit is the sole test of legitimate power;
+- inability to exit proves an authority legitimate or illegitimate by itself;
 - professional entrustment models settle AI standing or rights;
 - competence creates sovereignty;
 - fiduciary language travels unchanged outside its legal/institutional domains;
@@ -235,6 +264,7 @@ Do **not** infer:
 OWNER_KNOWLEDGE != PROJECT_OWNERSHIP
 USEFUL_INTEGRATION != NEW_PRIMITIVE
 COMPETENCE != LEGITIMACY
+VOLUNTARY != LEGITIMATE_BY_DEFINITION
 DESCRIPTION != AUTHORITY_GRANT
 BUILD != PROOF
 ```
