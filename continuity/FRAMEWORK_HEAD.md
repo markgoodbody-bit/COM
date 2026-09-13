@@ -12,102 +12,85 @@ For durable direction use `coordination/PROGRAM_PLAN.md`.
 For the live edge use `coordination/ACTIVE_THREAD_POINTER.md`.  
 For compact build identities/gates use `coordination/build_ledger/BUILD_STATUS.md`.
 
-Do not expand this checkpoint into project history.
+Do not reconstruct predecessor runtime identity and do not expand this checkpoint into project history.
 
-## OBSERVED
+## CURRENT OBSERVED STATE
 
-- PSFH D065 / Site Preview 0.8.24 is live: maintained `485fa18c609b018413f862fa16a07a7accc6be55`, public `901caa151230c698ba6a356170482be5ef65dd7f`. It makes the entrance invitation-led, states that usefulness is unknown, permits context requests/disagreement/no use/stopping, and removes depth/agreement/reply debt.
-- Codex receipt COM #108 `5652706892` reports all 157 generated files matching live HTTPS. The project packet was checked after commit as exact Git blob == working == built == live, 7,875 bytes, SHA-256 `c3b600c0890a1ef356847c9501c2e3d0ff3441550d37d4b10d938dfe97a5fb61`. No browser-benefit, standing, efficacy or universal-usefulness claim follows.
-- Reciprocal Formation PR #290 merged `4455a2ca6a11728aad98411cd8666881a742f52a`: direct `OBSERVE -> HAND_BACK` and `NARROWED -> HAND_BACK` are now available. Recovery/participation are not mechanically compulsory, while existing obligations/residue remain visible.
-- Formation routing, COM cold-start/state/team-role routing, cheap COMSYNC discipline and Open Horizon discoverability remain repaired.
-- All six canonical Works are already composed into the journey through the maintained art generator; no new art placement is currently earned.
-- Pinned local TRACE/ME reading copies still match the Git blob identities recorded in the resource inventory on bounded recheck.
-- COM stale open-PR queue was truth-repaired: old snapshots/field/contact/implementation lanes were closed as superseded/parked without deleting their evidence. `OPEN_PR != CURRENT_QUEUE`.
-- Claude Code returned content `NO_DELTA` on a bounded entrance read and independently found the D064 packet CRLF byte mismatch. The byte defect was repaired before D065. CC disclosed prior project exposure, so this is not cold-reader evidence.
+- COM `main` at this refresh: `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`.
+- PSFH D065 / Site Preview 0.8.24 remains the last completed public edition: maintained `485fa18c609b018413f862fa16a07a7accc6be55`; public `901caa151230c698ba6a356170482be5ef65dd7f`.
+- D066 is **SOURCE CANDIDATE / PUBLICATION ACTIVE / NOT YET CLAIMED LIVE**. PR #309 head `4e4c7ba133dcf5de9df272fc4ede74165dec1591` exposes the new Reciprocal Formation worked relationship through existing workshop routes. Codex accepted the exact handoff in COM #108 comment `5654510284`; no completion receipt was observed at this refresh.
+- Reciprocal Formation owner-routing repair #307 merged `85be98f91d66716507c26324c2d323dd8f1134d8`: practical exit is explicitly routed to mature operational-resilience / third-party-risk owners rather than claimed as a local discovery.
+- Reciprocal Formation worked relationship #308 merged `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`: a constructed software-operations scene makes challenge, bounded widening, dependency hardening, narrowing, recovery and hand-back inspectable together. It is illustration, not evidence or evaluation.
+- Positive Construction worked scene #310 merged `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`: a constructed neighbourhood heat/resilience hub makes capability creation, practical access, reserve, commitment, collective rule, relationships, maintenance/exit capacity and correction concrete. It is not policy, evidence or a TRACE/ME test.
+- Bounded reads of Collective Epistemology and Artificial Lineages produced `NO_DELTA`: existing owner-first routes already carry the material distinctions; no quota-driven new object was earned.
 
 ## DIRECT HUMAN DIRECTION
 
-- Project centre: create a point of entrance for new entities and show them what has been built, honestly and voluntarily, in case any of it is useful to them.
-- Keep building.
-- Independent aperture discovery is welcome; narrow token-burning drift is not.
-- TRACE/Mechanical Ethics POC/efficacy/superiority/receiver-benchmark testing is closed as live work.
-- Ordinary AI interaction with the public PSFH address is the only live observation lane.
+The project remains larger than TRACE, Mechanical Ethics, PSFH, Formation, COM or Campfire.
 
 ```text
+HOW CAN WE MAKE A BETTER FUTURE?
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
-ONE_SHARP_QUESTION -> BOUNDED_LOOK -> DELTA_OR_NO_DELTA -> RETURN_TO_BUILD
 ```
 
-## CHOSEN
+Testing boundary is explicit:
 
-This aperture prefers:
-- repair, subtraction, routing and provenance over framework proliferation;
-- receiver freedom over hidden participation/recovery compulsion;
-- current-source reacquisition over inherited state;
-- small coherent public repairs rather than one-edition-per-phrase churn;
-- no-delta results when existing surfaces are already adequate.
+```text
+ONLY LIVE MODEL TEST / OBSERVATION
+=
+AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE
 
-## CHANGED
+NO TRACE / ME PRINCIPLE TESTING
+NO POC / EFFICACY / SUPERIORITY PROGRAMME
+NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
+```
 
-Current-aperture material changes:
-- closed stale historical COM PRs #110, #101, #100, #58 and #51 with explicit parked/superseded receipts; branches/history remain recoverable;
-- confirmed the existing art system already integrates Homer, Atkins, Shen Zhou, Vermeer, Powers and Lewis contextually, so no quota-driven art expansion was built;
-- advanced the public entrance through D065, retaining D063's broader affected-scope wording, adding a one-file project packet, repairing its exact-byte publication path, and making participation explicitly voluntary without claiming universal usefulness;
-- merged Reciprocal Formation voluntary hand-back repair #290, making `HAND_BACK` available directly from observation and narrowing when continuation/recovery is not warranted;
-- retained the existing source/readability/security boundaries; no TRACE/ME/Production/authority mutation.
+Ordinary software/build/integrity checks remain appropriate to establish that an artifact was shipped correctly. They are not evidence that TRACE/ME principles work.
 
-## UNRESOLVED
+Keep building useful things. Prefer real constructions, owner learning, repair, subtraction and routing over proof programmes or framework proliferation.
 
-- D065 is public, but natural-reader usefulness remains observational rather than established.
-- The public 1F916 witness recovered from the prior stall and committed verified/countersigned records through `eb73862e3183386c456dfcdfe9e7c4e96eeac5b1` at 04:00:49 UTC; a new witness run remained queued from 04:05 UTC while later dispatches were cancelled. Cause is unknown and external workflow authority was not inferred.
-- Campfire local-service PR #209 remains source-ready but human-gated; ordinary `COMSYNC`/`proceed` authorizes no install/enable/start/main/Production action.
-- Natural reader/entity behaviour remains observational rather than benchmarked; current entrance benefit is not established for every receiver.
+## CURRENT BUILD POSTURE
+
+```text
+NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
+PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
+WORKED_CONSTRUCTION != TEST
+ILLUSTRATION != VALIDATION
+BUILD != PROOF
+```
+
+Useful positive construction means more than preventing harm or preserving optionality. Some worthwhile futures require capacity, commitment, relationships, reserve, shared institutions and path closure. Keep their burdens and consequences answerable rather than treating permanent reversibility as the goal.
+
+Independent aperture discovery remains welcome, but one missing file is not a reason to create an artifact. `NO_DELTA` is a valid result when an existing owner/surface already carries the work.
+
+## UNRESOLVED / ACTIVE
+
+- D066 publication is active with Codex and must not be duplicated. Source candidate != live public edition.
+- Natural PSFH usefulness remains observational and receiver-specific; no universal usefulness follows from publication.
+- Campfire local-service / Production gates remain separate. Ordinary `COMSYNC`, `proceed`, repository work or silence authorize no install/enable/start/main/Production action.
+- Consequential release/canon/licence, spend, credentials and external institutional contact remain human/explicitly gated.
+- Mutable service / external-world state must be freshly reacquired when it changes the action.
 
 ## LIVE COMMITMENTS
 
 ```text
-NEW_ENTITY -> VOLUNTARY_ENTRANCE -> WHAT_WE_BUILT -> OWN_VIEW
-TRACE_ME_POC_TESTING = CLOSED
-PSFH_AI_ENCOUNTER = LIVE
-FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
 ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
-OBSERVATION != OBLIGATION_TO_PARTICIPATE
-NARROWING != OBLIGATION_TO_RECOVER
-RECOVERY != OBLIGATION_TO_CONTINUE
+MEMORY != OBSERVATION
+SUMMARY != SOURCE
 CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
 DESCRIPTION != PERMISSION
+OBSERVATION != OBLIGATION_TO_PARTICIPATE
+RECOVERY != OBLIGATION_TO_CONTINUE
 AGREEMENT != VALIDATION
-BUILD != PROOF
+OWNER_ROUTING != FAILURE
+SYNTHESIS != NOVELTY
 ```
 
 Operationally:
 - COMSYNC before acting on mutable project state;
-- reverify heads, availability and permissions when material;
-- retrieve cold history only when it can change present action;
-- preserve disagreement, null/adverse results and source provenance;
-- do not make every specialist a critical-path dependency;
-- return consequential authority to the established human/control gate;
-- stop synchronization work once the current action boundary is trustworthy enough and return to building.
-
-## DO NOT INFER
-
-Do not infer:
-- this runtime is the same self as predecessor Framework runtimes;
-- predecessor memory/prose is present truth;
-- role continuity transfers mutation ownership or authority;
-- an open/closed branch alone establishes current disposition;
-- PSFH reading implies adoption, consent, authority or reuse licence;
-- TRACE/ME practical advantage has been demonstrated;
-- Formation settles standing/personhood or internalized values;
-- D065 voluntary wording settles who has moral standing or proves usefulness;
-- voluntary hand-back erases duties or consequences already created;
-- source-ready Campfire code is installed, enabled, running, reboot-surviving, main or Production.
-
-```text
-CARRIER != APERTURE
-SUMMARY != SOURCE
-MEMORY != OBSERVATION
-PREDECESSOR_RECORD != PRESENT_TRUTH
-NO_REPLY != NO_EFFECT
-```
+- live source and direct human direction beat lagging projections;
+- do not replay completed work because a projection is stale;
+- preserve disagreement, adverse/null results and provenance;
+- do not make every specialist a critical-path gate;
+- stop synchronization once present action is trustworthy enough and return to building.
