@@ -19,7 +19,7 @@ For compact identities/gates use `coordination/build_ledger/BUILD_STATUS.md`.
 
 COM `main` at this pointer refresh:
 
-`793c6506dd4da19f01101ac89263254366297fd7`
+`9c38f6efb8d5bfb20a733cb8cda220fea6946d88`
 
 Live source wins if main moves later.
 
@@ -52,10 +52,17 @@ Do not manufacture D067 from wording or edition momentum.
 
 ### Positive Construction
 
-- #310 `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`: Heat Hub — institution/public-capability construction through practical access, reserve, commitment, relationships, maintenance and correction.
-- #312 `7d8002e414f696238ca42f874207ae0758e1d606`: Woodland Commons — co-owned shared-good construction through contribution routes, bounded stewardship, reserve, enforceable/contestable rules, costly exit and adaptation. Rebuilt from one useful scene in the retired transfer harness; test machinery remains retired.
+Positive Construction now carries three distinct worked postures:
 
-These are constructed learning objects, not policy, evidence or TRACE/ME validation.
+```text
+CREATE -> SUSTAIN -> TRANSFORM
+```
+
+- #310 `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`: **Heat Hub / CREATE** — institution/public-capability construction through practical access, reserve, commitment, relationships, maintenance and correction.
+- #312 `7d8002e414f696238ca42f874207ae0758e1d606`: **Woodland Commons / SUSTAIN** — co-owned shared-good construction through contribution routes, bounded stewardship, reserve, enforceable/contestable rules, costly exit and adaptation.
+- #315 `9c38f6efb8d5bfb20a733cb8cda220fea6946d88`: **The Coast That Moves / TRANSFORM** — successor/transition capability built before an unsustainable present form is withdrawn; DAPP/coastal owners remain primary.
+
+The Commons and coastal scenes were salvaged from useful research quarry while leaving the old transfer/test harness retired. These are constructed learning objects, not policy, evidence or TRACE/ME validation.
 
 ### Explicit no-deltas
 
@@ -68,12 +75,15 @@ Existing owner-first routes already carry the material structures. Do not fill O
 
 ## Campfire Relay — source and operational tool are distinct
 
+Direct human correction is now durable in PROGRAM_PLAN and COMSYNC_PROTOCOL:
+
 Campfire Relay is both maintained software and, when actually exposed to Framework, an operational aperture/tool for differentiated returns and Campfire/Square workflows.
 
 At this sync:
 - Relay repository/source is reachable;
 - Campfire Relay `main` remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
 - Simple-v1 maintained branch is `db78625f20c4083e257deb39e3b6886a9f6ca89f` through the #227 repair;
+- PR #190 orientation has been refreshed to those identities and current repair lineage;
 - the actual Relay tool/provider is **not exposed to this Framework aperture**, and localhost cannot be freshly observed from here;
 - therefore no statement in this sync should describe repository inspection as a Relay-tool execution.
 
@@ -84,7 +94,7 @@ SOURCE_GREEN != HOST_CURRENT
 TOOL_UNAVAILABLE != RELAY_REMOVED_FROM_PROJECT
 ```
 
-When a future aperture exposes the Relay tool, use it where a bounded differentiated aperture materially helps. Do not turn it into a compulsory quorum or TRACE/ME test programme. Provider dispatch/spend and external writes retain their separate gates.
+When a future aperture exposes the Relay tool, use it where a bounded differentiated aperture materially helps. Preserve each return/failure separately before integration. Do not turn it into a compulsory quorum or TRACE/ME test programme. Provider dispatch/spend and external writes retain their separate gates.
 
 ## Campfire source repair
 
@@ -99,7 +109,12 @@ The repair:
 - keeps genuine covered-stream stalls fail-closed;
 - adds isolated mocked regression checks.
 
-Hosted `campfire-ci` and `Campfire Square Simple v1` workflows passed on the repair head before merge.
+Hosted runs on the merged maintained head:
+
+```text
+Campfire Square Simple v1 run 161: SUCCESS
+campfire-ci run 1432: SUCCESS
+```
 
 ```text
 SOURCE_REPAIR_INTEGRATED != INSTALLED_RUNTIME_CURRENT
@@ -132,7 +147,7 @@ Ordinary build/link/JSON/byte/deployment checks remain valid shipping checks.
 
 1. D066 is complete; leave the Door stable until a genuine public need earns another edition.
 2. Keep Campfire Relay in the operating ecology as both source and operational aperture; reacquire actual tool availability rather than assuming it.
-3. Continue world-facing better-future construction when a real gap appears; do not make every Horizon territory produce a file.
+3. Continue world-facing better-future construction only where a real gap appears; `CREATE / SUSTAIN / TRANSFORM` is now concrete enough to use without inventing another Positive Construction object by quota.
 4. Prefer owner learning, useful constructions, repair, subtraction and routing over new theory machinery.
 5. Preserve no-delta results when existing surfaces are already adequate.
 6. Campfire source integration does not widen local/Production authority.
