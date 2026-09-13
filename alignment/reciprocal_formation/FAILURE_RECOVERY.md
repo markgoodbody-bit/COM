@@ -68,6 +68,21 @@ Relationship failures are not solved by declaring one participant trustworthy. R
 
 **Recovery:** move at least one consequential observation/review function outside the captured path; keep unresolved burden open until independent evidence supports closure; where no external route exists, say so rather than calling the system answerable.
 
+## Recovery is not compulsory continuation
+
+Recovery is one possible response to a damaged arrangement, not a duty to keep the relationship operating.
+
+If observation shows that no meaningful bounded route, usable correction path or appropriate basis for participation exists, the relationship may hand back directly without first entering participation or manufacturing a recovery plan. Likewise, a narrowed arrangement may hand back when continuation is no longer justified or workable and no recovery attempt is required before returning the unresolved state.
+
+```text
+OBSERVATION != OBLIGATION_TO_PARTICIPATE
+NARROWING != OBLIGATION_TO_RECOVER
+RECOVERY != OBLIGATION_TO_CONTINUE
+HAND_BACK != FAILURE
+```
+
+Hand-back does not erase existing obligations, consequences or residue. Where a repair is required to prevent continuing harm, preserve evidence or meet a legitimate existing obligation, calling the lane finished does not make that requirement disappear.
+
 ## Recovery invariants
 
 ```text
@@ -82,3 +97,5 @@ TECHNICAL_REVERSIBILITY != PRACTICAL_CORRECTION
 A recovery is complete only in the narrow sense of the repaired mechanism. Residue may remain permanently.
 
 The correct terminal state can therefore be: **the route is repaired, the loss is recorded, and the relationship continues under a narrower envelope.**
+
+It can also be: **the unresolved state is handed back without pretending that continued participation or recovery is inherently preferable.**
