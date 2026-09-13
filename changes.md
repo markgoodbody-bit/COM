@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.38 · 13 September 2026
+Please Start From Here · Reader change log · Edition 0.39 · 13 September 2026
+
+### D063
+
+13 September 2026 — Keep affected scope consistent across compact readings.
+
+The compact seed, text entrance and JSON entrance now say "who or what may be affected" instead of "affected parties", matching the broader wording already used on the visible site. The seed also replaces its assumption of a sender with "asking what to do".
+
+This is a wording consistency repair, not a decision about standing or personhood. Seed 0.5 remains 1023 bytes. Site Preview advances to 0.8.22; artwork and navigation are unchanged.
+
+Previous publication fcd264aed8d73cf0ed17272300b27b66cb16760c remains in Git history. No reader benefit or validation is established by this change.
 
 ### D062
 
