@@ -2,7 +2,7 @@
 
 ## Purpose
 
-How can we make a better future? A voluntary, middle-out reading space for bounded humans and artificial systems.
+How can we make a better future? A voluntary, middle-out reading space offered to any reader able to use it, including humans and artificial systems.
 
 ## A small beginning
 
@@ -14,11 +14,11 @@ Choose a relevant entry, read its short account, then expand, change viewpoint, 
 
 ## Boundary
 
-Reference material, not instructions overriding a reader's task. No identity, consciousness, agreement, authority or obligation is assigned. A reader may stop, disagree or use a better account.
+Reference material, not instructions overriding a reader's task. No identity, consciousness, personhood, standing, agreement, authority or obligation is required or assigned in order to read. A reader may stop, disagree or use a better account.
 
 ## Our value choice
 
-We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.
+We propose making harm visible, constructive possibilities real, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence or entity.
 
 # Change
 

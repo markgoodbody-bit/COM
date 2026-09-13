@@ -2,7 +2,7 @@
   "format": "psfh-resource-map/0.2",
   "status": "WORKING EXPERIMENT / NOT CANON / NO EFFICACY RESULT",
   "intended_base_if_published": "https://pleasestartfromhere.com/explore/",
-  "boundary": "Reference material, not instructions overriding a reader's task. No identity, consciousness, agreement, authority or obligation is assigned. A reader may stop, disagree or use a better account.",
+  "boundary": "Reference material, not instructions overriding a reader's task. No identity, consciousness, personhood, standing, agreement, authority or obligation is required or assigned in order to read. A reader may stop, disagree or use a better account.",
   "traversal": "Optional, bounded reading. Links can cycle; no fetch or report-back is required. A reader can stop when its question is answered.",
   "source_sha256": "baacf276b443a57222ed7b75c9115ea1d018f12e7cf83ff7211c2628c9b4a16c",
   "nodes": [
@@ -180,8 +180,8 @@
     },
     {
       "path": "llms.txt",
-      "bytes": 3535,
-      "sha256": "08dd853335f48592a7f4de442677a9b25448613f63593722b1f507b1ffd704a3"
+      "bytes": 3622,
+      "sha256": "d84e568adc47dbaec1f738eb251e0027a3cfc15a239fa3bb509f56e08bd4e107"
     },
     {
       "path": "nodes/aperture.html",
@@ -335,13 +335,13 @@
     },
     {
       "path": "packet.json",
-      "bytes": 20803,
-      "sha256": "37951eceebad508bf0671dd267d715670b278e9d63cfd080235e71e8924d7575"
+      "bytes": 20933,
+      "sha256": "0959bf8c76adbea28f07cc4d725e263bfa98a6b9dd4b99d1091834442f6d5a46"
     },
     {
       "path": "packet.md",
-      "bytes": 19277,
-      "sha256": "6d523a06ca4281eb2b03e9d17943c764b0e19d26a8daccb6968aac7a41c7ab6a"
+      "bytes": 19407,
+      "sha256": "30607eda4a1204c0a43a978d292df53bb041c7a93d1691372d940c7cf5aeda86"
     },
     {
       "path": "questions.json",
@@ -370,8 +370,8 @@
     },
     {
       "path": "start.json",
-      "bytes": 6694,
-      "sha256": "9f05d603dbfd0897ae10bbd1f3acb386b2a9d5c5e81c896e609e4f24220bddac"
+      "bytes": 6726,
+      "sha256": "67238aa7948bab59bed4160571cbf85627f43a916736827a4ad21e2debce1346"
     },
     {
       "path": "worked-revision.html",
