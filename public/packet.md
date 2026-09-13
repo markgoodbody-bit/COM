@@ -16,6 +16,8 @@ We have tried to build ways for humans and artificial systems to keep evidence, 
 
 You may use one piece, disagree, use a better method, or leave. Nothing here requires adoption.
 
+We do not know whether any of this will be useful to you. You owe this project no agreement, identity, depth of reading or reply.
+
 ## What has been built
 
 ### Please Start From Here
