@@ -119,6 +119,7 @@ Relationship design is insufficient when the evidence channel itself is captured
 - `DEPENDENCY.md` — human correction/recovery capacity under growing dependence.
 - `CARE_AND_POWER.md` — operational care, empathy and kindness under asymmetric power.
 - `FAILURE_RECOVERY.md` — concrete failure modes and bounded recovery routes.
+- `WORKED_RELATIONSHIP.md` — constructed end-to-end engineering example showing challenge, bounded widening, dependency hardening, narrowing, recovery and hand-back; an illustration, not an evaluation or proof.
 - `FIELD_REMAINDER.md` — what remains after routing mechanisms to stronger owners and how this architecture could shrink or fail.
 - `relationship-state-machine.json` — inspectable state/transition representation.
 
