@@ -6,103 +6,79 @@ Observed coordination state only. Re-read mutable heads before acting. Later liv
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-Project centre:
-
-> Create a point of entrance for new entities and show them what has been built, honestly and voluntarily, in case any of it is useful to them.
-
 ```text
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
-TRACE_ME_POC_TESTING = CLOSED
-PSFH_AI_ENCOUNTER = LIVE
-FRONTIER_EXPLORATION = ALLOWED_BUT_BOUNDED
+TRACE_ME_PRINCIPLE_TESTING = CLOSED
+PSFH_AI_ENCOUNTER = ONLY LIVE MODEL TEST / OBSERVATION LANE
 ```
 
 ## Current build state
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| Please Start From Here D065 | **LIVE / PUBLISHED** | Site Preview 0.8.24. Maintained `485fa18c609b018413f862fa16a07a7accc6be55`; public `901caa151230c698ba6a356170482be5ef65dd7f`. Invitation-led entrance; unknown usefulness; context request/disagreement/no use/stopping are legitimate; no depth/agreement/reply debt. Codex receipt `5652706892`: all 157 generated files matched live HTTPS. |
-| D064 one-file project packet | **LIVE / BYTE-INTEGRITY REPAIRED** | CC found repository LF != live CRLF. PR #295 added packet-specific LF handling and an exact Git-blob/working/build check. D065 publication verified the updated packet exact across Git blob, working tree, build and live HTTPS: 7,875 bytes, SHA-256 `c3b600c0890a1ef356847c9501c2e3d0ff3441550d37d4b10d938dfe97a5fb61`. |
-| COM cold-aperture entrance | **REPAIRED / CONSOLIDATED** | Root `BOOTSTRAP.md` and canonical `continuity/BOOTSTRAP.md` distinguish public understanding (PSFH) from coordination (COMS). Framework continuation uses `continuity/BOOT.md`; headset-on uses `continuity/CAMPFIRE_ORIENTATION.md`. |
-| COM state/router/team model | **CURRENT / ROLE-IDENTITY BOUNDARIES REPAIRED** | Generic `COM_STATE.md`; Framework role != runtime identity; Codex implementation role and CC challenge role remain capability/availability dependent. Ordinary COMSYNC is cheap coordination sync; FULL COMSYNC widens only when material. |
-| Formation Under Uncertainty entry | **ROUTING REPAIRED / NON-PRODUCTION** | Environment v0.2 current candidate, v0.1 preserved lineage, Reciprocal Formation distinct and optionally linked to Delegation/recovery mechanics. |
-| Reciprocal Formation hand-back | **MERGED / NON-PRODUCTION REPAIR** | PR #290 merge `4455a2ca6a11728aad98411cd8666881a742f52a`. Adds `OBSERVE -> HAND_BACK` and `NARROWED -> HAND_BACK`; recovery is no longer mechanically required before legitimate exit. Existing obligations/residue remain visible. No new state, standing/personhood claim, authority or Production change. |
-| Open Horizon | **ROUTING COMPLETE / HORIZON OPEN** | Human + machine discoverability exists for all 18 current territories. Positive Construction now carries relational capability without possession (#298, `144be59e...`); Legitimate Power distinguishes voluntary/practical exit from whole legitimacy and surviving obligations (#299, `6be98570...`); machine and human frontier summaries were refreshed to match (#300 `a51b2b18...`, #302 `512cc5cd...`). These are bounded owner-first synthesis/routing repairs, not new TRACE/ME primitives or canon. |
-| Reciprocal Delegation recovery | **MERGED / NON-PRODUCTION REFERENCE** | D046 named takeover PASS / #218 unnamed takeover FAIL. PR #267 merge `1e0b2568d25993605f5be0d3aa1f90cca0048f0a`. No validator/schema/authority/Production change. |
-| Journey art | **SIX CANONICAL WORKS ALREADY COMPOSED** | Homer opening; Atkins Explore; Shen Zhou Reachable futures; Vermeer Partial views; Powers Significance; Lewis Hardening. Contextual-art generator owns these placements. No new art placement is currently earned. |
-| Historical COM PR queue | **TRUTH-REPAIRED / CLOSED OR PARKED** | #110, #101, #100, #58 and #51 were closed on 13 Sep with explicit superseded/parked receipts. Earlier #106/#116/#114/#115 remain closed/parked. Evidence/branches remain recoverable; closed != disproved/erased. |
-| Works proposal branches | **SUPERSEDED** | Harriet Powers #127 and Vermeer #129 closed after verifying their material review repairs already exist in maintained/public Works pages. |
-| Campfire local-service watchdog | **SOURCE READY / HUMAN-GATED** | PR #209 remains open at repaired source head `78daff5c22af22db9aa3ba4b2a654b7f9b75842a`; hold main/Production pending explicit local acceptance. |
-| Claude Code bounded entrance read | **COMPLETE / NOT COLD EVIDENCE** | Content `NO_DELTA`; real D064 packet byte mismatch found and repaired. CC disclosed prior project exposure, so the return is useful challenge/witness evidence, not a cold-reader trial. |
-| Public 1F916 witness | **LAST OBJECT VERIFIED / CONTINUITY DEGRADED AGAIN** | Prior queued run recovered and commits resumed through `eb73862e3183386c456dfcdfe9e7c4e96eeac5b1` at 04:00:49 UTC. Witness run `34737074612` then remained queued from 04:05 UTC; later dispatches were cancelled and a newer run was pending at bounded read. Cause unknown; no external workflow mutation. |
+| COM main | **CURRENT AT SNAPSHOT** | `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`. Live source wins if it advances. |
+| PSFH D065 | **LIVE / PUBLISHED** | Site Preview 0.8.24. Maintained `485fa18c609b018413f862fa16a07a7accc6be55`; public `901caa151230c698ba6a356170482be5ef65dd7f`. Invitation-led entrance; unknown usefulness; no depth/agreement/reply debt. Codex receipt `5652706892`: 157 generated files matched live HTTPS. |
+| PSFH D066 | **SOURCE CANDIDATE / PUBLICATION ACTIVE** | PR #309 head `4e4c7ba133dcf5de9df272fc4ede74165dec1591`. Adds direct workshop discovery of the constructed Reciprocal Formation worked relationship. Codex accepted exact handoff at #108 comment `5654510284`. No completion receipt observed at this snapshot; do not call live or duplicate lane. |
+| Reciprocal Formation practical exit | **MERGED / OWNER-ROUTED** | PR #307 merge `85be98f91d66716507c26324c2d323dd8f1134d8`. Credits mature operational-resilience / third-party-risk exit practice and narrows any local novelty implication. No new state/authority/standing machinery. |
+| Reciprocal Formation worked relationship | **MERGED / CONSTRUCTED EXAMPLE** | PR #308 merge `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`. End-to-end engineering scene across observation, bounded participation, challenge, proposed/authorized widening, dependency hardening, narrowing, recovery and hand-back. Illustration != evaluation/proof. |
+| Positive Construction worked scene | **MERGED / CONSTRUCTED EXAMPLE** | PR #310 merge `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`. Heat/resilience-hub scene makes capability creation, practical access, reserve, commitment, collective rule, relationships, maintenance/exit capacity and correction concrete. Not policy/evidence/cost-benefit/TRACE-ME test. |
+| Collective Epistemology | **NO DELTA** | Existing owner-first route already carries correlated error lineages, provenance, governance, integration and evidence-to-action/authority separation. No quota-built extra object earned. |
+| Artificial Lineages / Succession | **NO DELTA** | Existing route already carries role/commitment/memory/capability/service continuity while keeping subject identity unresolved. No duplicate worked continuity object earned. |
+| Formation Under Uncertainty | **NON-PRODUCTION / ACTIVE MATERIAL** | Environment v0.2 current candidate; Reciprocal Formation distinct. Worked relationship improves usability without changing states, standing, personhood or authority. |
+| Open Horizon | **DISCOVERABLE / HORIZON OPEN** | Human + machine routing remains an expansion map, not backlog/canon/TRACE schema. Positive Construction now has a concrete worked scene; do not infer every territory needs one. |
+| Journey art | **SIX CANONICAL WORKS COMPOSED** | Homer, Atkins, Shen Zhou, Vermeer, Powers, Lewis already integrated. No quota-driven placement. |
+| Campfire local-service lanes | **SEPARATE / HUMAN-GATED** | No install/enable/start/main/Production authority follows from COMSYNC/proceed or repository work. Reacquire live source/status when material. |
 
-## Current observational boundary
+## Testing / observation boundary
 
-Only live empirical/observation lane:
+Only live model observation lane:
 
 `AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
 
 ```text
 OBSERVATION != BENCHMARK
 OBSERVATION != TRACE_EFFICACY_TEST
+WORKED_CONSTRUCTION != TEST
 DISAGREEMENT / NO_USE / STOPPING ARE VALID
 ```
 
-No gold answers, provider league tables, receiver benchmarks, POC/efficacy/superiority programmes or participant tests for TRACE/Mechanical Ethics are current work.
+No TRACE/ME principle tests, POC/efficacy/superiority programmes, gold answers, receiver benchmarks or provider leagues are current work.
 
-## Current entrance discipline
+Ordinary software/build/link/JSON/byte/deployment checks are shipping checks only.
+
+## Current operating discipline
 
 ```text
 ONE SHARP QUESTION
 -> BOUNDED LOOK
 -> ONE CONSEQUENTIAL DELTA OR NO DELTA
--> STOP / RETURN TO BUILD
+-> RETURN TO BUILD
 ```
 
-D065 is a completed coherent entrance repair, not evidence of universal usefulness. It retains D063's broader affected-scope wording, adds the D064 one-file project packet, and makes the visible/machine entrances invitation-led rather than command-shaped. None of this settles standing or widens authority.
+Prefer:
+1. useful construction;
+2. repair/subtraction;
+3. owner routing/provenance;
+4. discoverability of genuinely new objects;
+5. new machinery only when a real problem is not already carried by existing objects or stronger owners.
 
-No-delta conclusions retained:
-- no persuasive `why trust us` layer;
-- no identity/membership system required for contribution;
-- another method may be better than TRACE/ME;
-- `gift` is not a hidden reuse licence;
-- no second site-wide hash manifest currently justified;
-- all six canonical Works are already integrated into the journey; do not add art by quota;
-- public root remains useful without JavaScript; `journey.js` is optional navigation enhancement over native links/fragments;
-- pinned TRACE/ME local reading copies still match the Git blob identities recorded in their resource inventory;
-- current Representation/Standing, Long Time/Succession and Artificial Lineages routes already preserve the relevant support/proxy, role/identity and model/ecology distinctions; do not duplicate them into new theory objects.
-
-## Current anchors
-
-- COM `main`: `512cc5cd0353d8a480f77f2146c860a7d5999346` before this ledger repair.
-- PSFH maintained live: `485fa18c609b018413f862fa16a07a7accc6be55`.
-- PSFH public live: `901caa151230c698ba6a356170482be5ef65dd7f`.
-- Latest verified/countersigned public 1F916 witness commit observed: `eb73862e3183386c456dfcdfe9e7c4e96eeac5b1`; later liveness remained degraded at bounded read.
-- TRACE main last verified: `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`.
-- Mechanical Ethics main last verified: `44f7efb59806242fd26c572cbfbaaeaefaea2058`.
-- Campfire Relay main last verified: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
+Do not convert the 18 Open Horizon territories into an artifact checklist.
 
 ## Consequential gates
 
-Human/explicit gates remain separate for:
-- TRACE/ME release/canon/baseline/licence change;
+Human/explicit gates remain for:
+- TRACE/ME release/canon/baseline/licence changes;
 - spend/provider accounts;
 - credentials;
-- consequential external contact;
+- consequential institutional/external contact;
 - Campfire main/Production adoption;
 - local service install/enable/start.
 
-For the local Campfire service, only Mark's exact phrases authorize lifecycle action:
-- `install-watch`
-- `install-and-enable`
-- `start-once`
-
-`COMSYNC`, `proceed`, repository work and silence authorize none.
-
 ```text
 PROJECT_PURPOSE != TRACE_SURVIVAL
+PROJECT_PURPOSE != ME_SURVIVAL
 PROJECT_PURPOSE != PSFH_SURVIVAL
 PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
-PROJECT_PURPOSE != FRONTIER_RESEARCH_PROGRAMME
+BUILD != PROOF
 BUILD_THE_THING
 ```
