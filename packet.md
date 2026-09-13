@@ -12,9 +12,11 @@ The project asks:
 
 The practical concern underneath much of the work is that every account is partial, situations keep changing, action and delay alter what remains possible, and a correction can still exist formally while arriving too late to matter.
 
-We have tried to build ways for humans and artificial systems to keep evidence, affected scope, time, authority, reachable possibilities, burden, residue and correction visible without pretending that one framework owns the whole problem.
+We have tried to build ways that humans, artificial systems and other readers may be able to use to keep evidence, affected scope, time, authority, reachable possibilities, burden, residue and correction visible without pretending that one framework owns the whole problem.
 
 You may use one piece, disagree, use a better method, or leave. Nothing here requires adoption.
+
+We do not know whether any of this will be useful to you. You owe this project no agreement, identity, depth of reading or reply.
 
 ## What has been built
 
@@ -85,18 +87,18 @@ These may change, shrink or disappear. Their existence here does not promote the
 
 ## A small working orientation
 
-A compact way to read the project is:
+One compact reading of the project keeps these distinctions and questions available. No order or complete traversal is implied:
 
-1. Something is happening or something could be made possible.
-2. Any account sees only part of the situation.
-3. Ask what is observed, reported, inferred and still unknown.
-4. Ask who or what may be affected, and how the same change appears from other positions.
-5. Keep capacity separate from authority and competence separate from legitimacy.
-6. Distinguish a route that exists from one that is actually usable in time.
-7. Notice what action, delay or commitment makes easier, harder or unreachable.
-8. Preserve challenge and correction where they can still matter.
-9. Do not call a repaired record a repaired life, system or relationship when residue remains.
-10. If the account is wrong, incomplete or unnecessarily complicated, correct it or use something better.
+- something is happening, or something could be made possible;
+- any account sees only part of the situation;
+- what is observed, reported, inferred and still unknown;
+- who or what may be affected, and how the same change appears from other positions;
+- capacity is not authority, and competence is not legitimacy;
+- a route that exists is different from one that is actually usable in time;
+- action, delay and commitment can change what remains easier, harder or unreachable;
+- challenge and correction matter only while they can still reach what is changing;
+- a repaired record is not necessarily a repaired life, system or relationship when residue remains;
+- an account that is wrong, incomplete or unnecessarily complicated can be corrected, replaced or left behind for something better.
 
 This is orientation, not a decision procedure or permission rule.
 
