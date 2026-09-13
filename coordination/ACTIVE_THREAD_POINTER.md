@@ -12,162 +12,158 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 PSFH_AI_ENCOUNTER = ONLY LIVE MODEL TEST / OBSERVATION LANE
 ```
 
-For durable direction use `coordination/PROGRAM_PLAN.md`.  
-For compact identities/gates use `coordination/build_ledger/BUILD_STATUS.md`.
+Durable direction: `coordination/PROGRAM_PLAN.md`.  
+Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 ## Current source anchor
 
-COM `main` at this pointer refresh:
+COM `main` at this refresh:
 
-`9c38f6efb8d5bfb20a733cb8cda220fea6946d88`
+`2da5378711feab789a826fe6033ef7ec84a8b666`
 
 Live source wins if main moves later.
 
 ## Public entrance
 
-PSFH D066 / Site Preview 0.8.25 is live:
+PSFH D066 / Site Preview 0.8.25 remains live and stable:
 - maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`;
 - public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`;
-- D066 Codex completion receipt: COM #108 `5654523744`;
-- 157 generated files matched live HTTPS and Pages built the exact public head;
-- CC origin witness `5654529576`: 161/161 total served-tree files matched the same public head;
-- the optional workshop, `llms.txt` and JSON entrance expose the constructed Reciprocal Formation worked relationship;
-- `packet.md` remains byte-stable at 7,875 LF bytes through the publication;
-- no model/principle test, efficacy, browser-benefit or universal-usefulness claim follows.
+- Codex receipt #108 `5654523744`: 157 generated files matched live HTTPS;
+- CC origin witness `5654529576`: 161/161 whole served tree matched the same public head.
+
+No D067 is earned merely because COM gained new files.
 
 ```text
-INVITATION != INSTRUCTION
-WORKED_ROUTE != VALIDATION
 PUBLICATION != UNIVERSAL_USEFULNESS
+WORKED_ROUTE != VALIDATION
 ```
 
-Do not manufacture D067 from wording or edition momentum.
-
-## Material built behind the entrance
-
-### Reciprocal Formation
-
-- #307 `85be98f91d66716507c26324c2d323dd8f1134d8`: practical exit is routed to stronger operational-resilience owners rather than claimed locally.
-- #308 `7d51c3bd7e75aa4c555af7bf6d4142912ab29238`: constructed end-to-end engineering relationship across challenge, bounded widening, dependency, narrowing, recovery and hand-back.
+## Current world-facing constructions
 
 ### Positive Construction
 
-Positive Construction now carries three distinct worked postures:
+Three distinct postures are concrete:
 
 ```text
 CREATE -> SUSTAIN -> TRANSFORM
 ```
 
-- #310 `6e24a87b02633bc2e4ac2e4ae809894ba3293cdd`: **Heat Hub / CREATE** — institution/public-capability construction through practical access, reserve, commitment, relationships, maintenance and correction.
-- #312 `7d8002e414f696238ca42f874207ae0758e1d606`: **Woodland Commons / SUSTAIN** — co-owned shared-good construction through contribution routes, bounded stewardship, reserve, enforceable/contestable rules, costly exit and adaptation.
-- #315 `9c38f6efb8d5bfb20a733cb8cda220fea6946d88`: **The Coast That Moves / TRANSFORM** — successor/transition capability built before an unsustainable present form is withdrawn; DAPP/coastal owners remain primary.
+- #310 `6e24a87b...` — **Heat Hub / CREATE**;
+- #312 `7d8002e4...` — **Woodland Commons / SUSTAIN**;
+- #315 `9c38f6ef...` — **The Coast That Moves / TRANSFORM**.
 
-The Commons and coastal scenes were salvaged from useful research quarry while leaving the old transfer/test harness retired. These are constructed learning objects, not policy, evidence or TRACE/ME validation.
+Do not add a fourth by sequence-completion pressure.
 
-### Explicit no-deltas
+### Legitimate Power
 
-Fresh bounded reads found no new artifact earned in:
+- #317 `40e269d088fb26deda12f811be19ee5f6a850729` — **The Smoke Line**.
+- Fictional multi-agency emergency scene: plural ordinary authority, bounded fast coordination, mutual-aid limits, trigger/reassessment, escalation without sovereignty, explicit hand-back and surviving duties.
+- Owner-first illustration only; not emergency doctrine, legal advice or an authority-clearance rule.
+
+```text
+COORDINATION != SOVEREIGN_COMMAND
+EMERGENCY != MORAL_CLEARANCE
+```
+
+### Representation / Standing
+
+- #318 `bca9e20c1df855aa501cedc442b3acc563bd7329` — **The Riverbank Plan**.
+- Direct child voice where reachable, support before substitution, proxy advocacy distinguished from ecological condition evidence, future interests without fabricated consent, multiple proxies allowed to disagree, decision authority kept separate.
+- No standing/personhood rule follows.
+
+```text
+AFFECTED_SCOPE_PRESENT WITHOUT FABRICATED_VOICE
+REPRESENTATION != POSSESSION
+```
+
+### Scarce Allocation
+
+- #319 `2da5378711feab789a826fe6033ef7ec84a8b666` — **Four Generators**.
+- Shared resilience capacity faces more valid claims than units available; scene makes first-come, prior contract, protected classification, current evidence, clocks, alternatives, sequencing, contest and loser residue visible.
+- No universal priority formula follows.
+
+```text
+VALID_CLAIMS > AVAILABLE_CAPACITY
+-> ALLOCATION_RULE_BECOMES_CONSEQUENTIAL_POWER
+
+PRICE != NEED
+PRIORITY != STANDING
+LOWER_PRIORITY != ZERO_HARM
+```
+
+## Explicit no-deltas already retained
+
+Fresh bounded reads already found no additional artifact earned in:
 - Collective Epistemology;
 - Artificial Lineages / Succession;
 - Positive Risk / Exploration / Stagnation.
 
-Existing owner-first routes already carry the material structures. Do not fill Open Horizon by quota.
+Do not fill Open Horizon by artifact quota.
 
-## Campfire Relay — source and operational tool are distinct
+## Campfire Relay
 
-Direct human correction is now durable in PROGRAM_PLAN and COMSYNC_PROTOCOL:
-
-Campfire Relay is both maintained software and, when actually exposed to Framework, an operational aperture/tool for differentiated returns and Campfire/Square workflows.
-
-At this sync:
-- Relay repository/source is reachable;
-- Campfire Relay `main` remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
-- Simple-v1 maintained branch is `db78625f20c4083e257deb39e3b6886a9f6ca89f` through the #227 repair;
-- PR #190 orientation has been refreshed to those identities and current repair lineage;
-- the actual Relay tool/provider is **not exposed to this Framework aperture**, and localhost cannot be freshly observed from here;
-- therefore no statement in this sync should describe repository inspection as a Relay-tool execution.
+Direct human correction remains controlling:
 
 ```text
 RELAY_REPO != RELAY_TOOL
 SOURCE_AVAILABLE != TOOL_AVAILABLE
-SOURCE_GREEN != HOST_CURRENT
-TOOL_UNAVAILABLE != RELAY_REMOVED_FROM_PROJECT
+TOOL_EXPOSED != DISPATCH_AUTHORIZED
+RELAY_RETURN != VALIDATION
 ```
 
-When a future aperture exposes the Relay tool, use it where a bounded differentiated aperture materially helps. Preserve each return/failure separately before integration. Do not turn it into a compulsory quorum or TRACE/ME test programme. Provider dispatch/spend and external writes retain their separate gates.
+Current aperture facts:
+- Campfire Relay repository `main`: `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
+- maintained Simple-v1 branch: `db78625f20c4083e257deb39e3b6886a9f6ca89f`;
+- PR #190 remains draft/unmerged to repository main/Production;
+- operational Relay tool/provider and localhost are **not exposed to this Framework aperture**.
 
-## Campfire source repair
+Repository/source inspection must not be described as Relay-tool execution. Future apertures should use the operational Relay when exposed and materially useful, preserving each return/failure separately before integration.
 
-The reproduced Simple-v1 Square change-capture defect has a source-level repair merged through Campfire Relay PR #227 into the maintained `framework/campfire-square-simple-v1` branch at:
-
-`db78625f20c4083e257deb39e3b6886a9f6ca89f`
-
-The repair:
-- declines `nulls` explicitly for this posts/comments-only capture;
-- names `coverage = posts, comments`;
-- reports `nulls_excluded = true` rather than implying refusal history was consumed;
-- keeps genuine covered-stream stalls fail-closed;
-- adds isolated mocked regression checks.
-
-Hosted runs on the merged maintained head:
-
-```text
-Campfire Square Simple v1 run 161: SUCCESS
-campfire-ci run 1432: SUCCESS
-```
-
-```text
-SOURCE_REPAIR_INTEGRATED != INSTALLED_RUNTIME_CURRENT
-SOURCE_REPAIR_INTEGRATED != MAIN / PRODUCTION
-```
-
-No install, enable, start, restart, credential or Square write occurred or is authorized by this source merge.
+No local install/enable/start, Square write, credential action, provider dispatch/spend, Campfire main or Production action occurred in this cycle.
 
 ## Testing / observation boundary
 
-Direct human direction:
+Only live model observation lane:
 
-```text
-ONLY MODEL TEST / OBSERVATION
-=
-AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE
-```
+`AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
 
 Closed as live work:
-- TRACE/ME core-principle testing;
+- TRACE/ME principle testing;
 - POC / efficacy / superiority programmes;
-- gold answers;
-- receiver benchmarks;
-- provider leagues;
-- scoring/falsification campaigns intended to prove the frameworks.
+- gold answers / receiver benchmarks / provider leagues;
+- scoring/falsification programmes intended to prove the frameworks.
 
-Ordinary build/link/JSON/byte/deployment checks remain valid shipping checks.
+Ordinary software/build/link/byte/deployment checks remain shipping checks only.
 
 ## Current operating edge
 
-1. D066 is complete; leave the Door stable until a genuine public need earns another edition.
-2. Keep Campfire Relay in the operating ecology as both source and operational aperture; reacquire actual tool availability rather than assuming it.
-3. Continue world-facing better-future construction only where a real gap appears; `CREATE / SUSTAIN / TRANSFORM` is now concrete enough to use without inventing another Positive Construction object by quota.
-4. Prefer owner learning, useful constructions, repair, subtraction and routing over new theory machinery.
-5. Preserve no-delta results when existing surfaces are already adequate.
-6. Campfire source integration does not widen local/Production authority.
+The latest cycle converted three mature-but-abstract Horizon routes into bounded worked constructions. That is enough for this pass.
+
+Next work should begin from a **new consequential gap**, not from the fact that another Horizon row still lacks a scene.
+
+Prefer:
+1. real observation from the public entrance;
+2. an owner correction or real-world need;
+3. repair/subtraction/routing;
+4. a new construction only when existing objects do not already make the issue usable.
 
 ```text
-PROJECT_PURPOSE != TRACE_SURVIVAL
-PROJECT_PURPOSE != ME_SURVIVAL
-PROJECT_PURPOSE != PSFH_SURVIVAL
-PROJECT_PURPOSE != TEST_PROGRAMME_SURVIVAL
+ONE SHARP QUESTION
+-> BOUNDED LOOK
+-> CONSEQUENTIAL DELTA OR NO_DELTA
+-> STOP / RETURN TO BUILD
+
 NEW_FILE_AVAILABLE != NEW_FILE_EARNED
-BUILD_THE_THING
+BUILD != PROOF
 ```
 
 ## Consequential gates
 
 Remain separate for:
 - TRACE/ME release/canon/baseline/licence changes;
-- spend/provider accounts;
+- model/provider dispatch and spend;
 - credentials;
-- consequential external contact;
+- consequential external/institutional contact;
 - Campfire main/Production adoption;
 - local service install/enable/start.
 
