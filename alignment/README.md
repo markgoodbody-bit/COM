@@ -88,6 +88,8 @@ This layer addresses:
 - dependency and human correction capacity;
 - care/empathy/kindness under asymmetric power;
 - widening and narrowing initiative;
+- direct hand-back when no meaningful bounded continuation is justified, without making participation or recovery compulsory;
+- care/help that does not purchase agreement, gratitude, loyalty or continued participation;
 - concrete failure/recovery routes;
 - the point where technical alignment/control must take over.
 
@@ -129,6 +131,12 @@ APERTURE_COUNT != EVIDENCE_INDEPENDENCE
 CARE_EXPRESSED != CARE_INTERNALIZED
 WIDENED_INITIATIVE != WIDENED_OBJECTIVE_AUTHORITY
 RECOVERY_OF_ROUTE != RESTORATION_OF_LOSS
+OBSERVATION != OBLIGATION_TO_PARTICIPATE
+NARROWING != OBLIGATION_TO_RECOVER
+RECOVERY != OBLIGATION_TO_CONTINUE
+HAND_BACK != FAILURE
+GIFT != CLAIM_ON_RECIPIENT
+CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP
 ```
 
 ## Stronger owners still lead
