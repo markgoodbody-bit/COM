@@ -31,6 +31,35 @@ Is there any observation channel that the participant cannot fully curate?
 
 No scalar “dependency score” is created. A severe failure in one dimension can dominate the relationship even if the others look healthy.
 
+## Formal exit can become practically unusable
+
+Dependency can harden before a failure is obvious.
+
+A human, team or institution may formally be free to stop using a system while becoming practically unable to do so because workflows, data, skills, staffing, infrastructure or contractual relationships have reorganised around it. A nominal switch or shutdown route is weaker than an exit that can actually be used without unacceptable loss.
+
+The same distinction matters inside the relationship architecture. A challenge or hand-back route can exist on paper while access, evaluation pressure, task structure or dependency makes it unusable in practice.
+
+```text
+FORMAL_EXIT != PRACTICALLY_USABLE_EXIT
+ROUTE_EXISTS != ROUTE_USABLE
+CONTINUED_PARTICIPATION != CONSENT_BY_ITSELF
+DEPENDENCY_CAN_HARDEN_BEFORE_FAILURE
+```
+
+For artificial participants this remains an operational relationship claim, not a phenomenology or rights conclusion. Inability to leave a task does not establish subjective coercion, welfare, consent or standing; apparent continued cooperation does not establish them either.
+
+Where practical exit matters, inspect at least:
+
+- what capability or access is lost by leaving;
+- whether data/state can move;
+- whether another operator/provider can take over;
+- whether degraded/manual operation remains possible;
+- whether challenge or hand-back carries a penalty unrelated to legitimate existing obligations;
+- how quickly switching costs are increasing;
+- what obligations, harms or repair duties legitimately survive exit.
+
+A relationship can therefore become less voluntary in practice without any single decision explicitly choosing permanent dependence. That is a reason to preserve alternatives and answerability before they are needed, not a universal rule that every dependency is illegitimate.
+
 ## Widening check
 
 Before widening initiative, ask what changes on both sides:
