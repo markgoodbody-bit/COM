@@ -32,9 +32,9 @@ The frontier is provisional and intentionally incomplete. These are territories 
 
 | Territory | What remains underexplored here |
 | --- | --- |
-| **1. [Positive construction / flourishing](positive-construction.md)** | Joy, play, beauty, meaning, curiosity, ambition, abundance, friendship, love, belonging and genuinely creating new futures rather than only preventing premature closure. |
+| **1. [Positive construction / flourishing](positive-construction.md)** | Joy, play, beauty, meaning, curiosity, ambition, abundance, friendship, love, belonging, relational capability without possession and genuinely creating new futures rather than only preventing premature closure. |
 | **2. [Collective creation / commons / public goods](positive-construction.md)** | How plural entities build goods none can produce alone; legitimate collective commitments; commons; coordination without a single sovereign chooser. This shares the Positive Construction route rather than creating a separate project commons doctrine. |
-| **3. [Legitimate power](legitimate-power.md)** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority and justified decisive action—not only how power is constrained. |
+| **3. [Legitimate power](legitimate-power.md)** | How authority is generated and earned; delegation, expertise, stewardship, emergency authority, practical exit, surviving obligations and justified decisive action—not only how power is constrained. |
 | **4. [Formation / becoming / preference development](../alignment/README.md)** | Education, mentorship, culture, habit, rehabilitation, preference formation and mutual human–AI development without treating formation as ownership. Current Formation work is non-production, not canon and not an alignment solution. |
 | **5. [Multi-scale emergence](multiscale-emergence.md)** | Individual → group → institution → market → state → ecosystem; local benefit producing global harm; cascades, tipping points and distributed responsibility. |
 | **6. [Intervention changes observation](intervention-feedback.md)** | Measurement and policy feedback; adaptive systems; interventions that alter trust, behaviour, ecology or what evidence becomes visible next. |
