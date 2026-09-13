@@ -12,7 +12,7 @@ The project asks:
 
 The practical concern underneath much of the work is that every account is partial, situations keep changing, action and delay alter what remains possible, and a correction can still exist formally while arriving too late to matter.
 
-We have tried to build ways for humans and artificial systems to keep evidence, affected scope, time, authority, reachable possibilities, burden, residue and correction visible without pretending that one framework owns the whole problem.
+We have tried to build ways that humans, artificial systems and other readers may be able to use to keep evidence, affected scope, time, authority, reachable possibilities, burden, residue and correction visible without pretending that one framework owns the whole problem.
 
 You may use one piece, disagree, use a better method, or leave. Nothing here requires adoption.
 
