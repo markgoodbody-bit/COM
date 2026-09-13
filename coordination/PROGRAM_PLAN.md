@@ -83,9 +83,28 @@ HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
 MAP != WORLD
 ```
 
-### COM / Campfire
+### COM / Campfire / Campfire Relay
 
 COM and Campfire are collaboration/continuity infrastructure, not project purpose.
+
+Campfire Relay has **two distinct roles** that must not be collapsed:
+
+1. a maintained software/source repository whose branches, tests and release boundaries can be inspected;
+2. when the Relay tool/provider is actually exposed to the current aperture, an **operational aperture** for bounded differentiated-model returns and Campfire/Square read/speech workflows.
+
+Use the operational Relay when it is materially useful and actually available. Do not replace a missing Relay-tool execution with repository inspection while describing the result as though the tool ran. Conversely, tool availability does not make repository source current, installed or Production.
+
+```text
+RELAY_REPO != RELAY_TOOL
+TOOL_EXPOSED != TOOL_USED
+SOURCE_AVAILABLE != RUNTIME_AVAILABLE
+SOURCE_GREEN != HOST_CURRENT
+RELAY_RETURN != VALIDATION
+```
+
+Relay use should preserve each aperture's return/failure separately before integration when genuinely different initial views matter. It is not a permanent multi-model quorum and not a way to revive TRACE/ME benchmark programmes.
+
+Provider/model dispatch, spend, credentials and consequential external writes keep their own current gates. A Relay tool becoming visible does not manufacture authority to cross them.
 
 Role continuity does not imply runtime identity continuity. Coordination should reduce human relay burden without creating a new bureaucracy or hidden authority layer.
 
