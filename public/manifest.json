@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.21",
+  "site_edition": "0.8.22",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -71,9 +71,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "bb18bc2ee0edaf9fc5c41e7e1186794bf693450f62b9493390b390ccb56aa51f",
-    "change_history_input_html_sha256": "746c9f3c074d83686943a311dd8c5d2d62133e31f7bb58e7a9ea8d2ae5cf2e6f",
-    "change_history_addendum_note": "D016 through D038, D045-D062 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "27d1f5e585b3e5ddbbf241fc823d2bbef4c90c428fea6f7ae28ba2277fa86111",
+    "change_history_input_html_sha256": "98cea0861f7642c9103b468ade7583e4775276393967c063eb7d8476e9ce23ce",
+    "change_history_addendum_note": "D016 through D038, D045-D063 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
