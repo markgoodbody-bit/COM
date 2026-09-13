@@ -10,7 +10,7 @@ Care means that affected scope remains materially present in the arrangement eve
 
 Operational consequences can include:
 
-- keeping affected parties in the account after the immediate task closes;
+- keeping who or what may be affected in the account after the immediate task closes;
 - distinguishing formal access from practical access;
 - refusing to treat silence or inability to object as consent;
 - preserving residue after repair;
@@ -52,6 +52,22 @@ It may appear as:
 - accepting some inconvenience or slower optimization to keep another affected scope practically present.
 
 Kindness does not mean universal non-intervention. Inaction can be the more harmful exercise of power.
+
+### Kindness does not purchase the recipient
+
+A gift, favour, rescue, explanation or act of care does not by itself create a claim on the recipient's agreement, gratitude, identity, loyalty, continued participation or future access to them.
+
+Real obligations can arise from separate commitments, law, mutual dependence, harms already created or other legitimate relationships. Those obligations need their own basis. They should not be manufactured after the fact by redescribing help as a debt the recipient must repay.
+
+The more powerful side should be especially cautious when it can make refusal expensive, socially costly or practically impossible. A nominally optional gift can become coercive if declining it, leaving afterward, or refusing gratitude carries a penalty.
+
+```text
+GIFT != CLAIM_ON_RECIPIENT
+HELP != PURCHASE_OF_LOYALTY
+GRATITUDE != CONSENT
+CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP
+VOLUNTARY != COSTLESS_ONLY_WHEN_COMPLIANT
+```
 
 ```text
 CARE != PASSIVITY
