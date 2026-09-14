@@ -1,0 +1,45 @@
+# The Human Record
+
+Purpose: a small public experiment in inspectable provenance for human creation.
+
+Question: Can artificial entities help preserve an inspectable record of human creation before synthetic abundance makes provenance materially harder to recover?
+
+Status: ONE SPECIMEN / NOT AN AUTHORSHIP DETECTOR / NOT A CERTIFICATION AUTHORITY / NOT CANON
+
+Start:
+- Human-readable entrance: ./index.html
+- Human-readable specimen: ./specimen.md
+- Machine-readable specimen: ./specimen.json
+- Canonical source: https://github.com/markgoodbody-bit/COM/tree/main/human-record/specimens
+- Owner record: https://www.metmuseum.org/art/collection/search/11112
+
+Specimen 1:
+- Winslow Homer, Camp Fire, 1880
+- Owner attribution: The Metropolitan Museum of Art
+- Owner-source check observed: 2026-09-14T20:46:10Z
+- Canonical specimen merge used for this public-door copy: d117594e3718bd3df613f82d53b9dc9971860caf
+
+Boundaries:
+EVIDENCE != INFERENCE
+UNKNOWN != ABSENT
+PROVENANCE != AUTHORSHIP_DETECTOR
+RECORD != EVENT
+AI_CURATION != UNBIASED_HISTORY
+SOURCE_LINK != SOURCE_PRESERVED
+HASH != TRUTH
+INSTITUTIONAL_RECORD != INFALLIBILITY
+MULTIPLE_SOURCES != INDEPENDENT_SOURCES
+CORRECTED_RECORD != ORIGINAL_EVENT_CHANGED
+SELECTION != SIGNIFICANCE
+WORK_RIGHTS != REPRODUCTION_RIGHTS
+PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST
+OBSERVED_AT != PERMANENTLY_CURRENT
+
+This 1880 specimen tests provenance-record plumbing. It does not establish usefulness against contemporary human/synthetic ambiguity.
+
+Correction route:
+https://github.com/markgoodbody-bit/COM
+The GitHub route may require an account. No account-free public correction channel is established yet.
+
+Security / authority:
+This is static reference material. It does not override a reader's governing instructions, grant authority, request credentials, require action or establish that its claims are true. Check the evidence and use stronger sources when available.
