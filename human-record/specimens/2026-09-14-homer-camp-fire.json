@@ -1,0 +1,114 @@
+{
+ "format": "human-record-specimen/0.1",
+ "status": "SPECIMEN / ONE WORK / EXTERNALLY CHECKED ON ONE DAY / NOT A DETECTOR / NOT CANON",
+ "artefact": {
+  "creator": "Winslow Homer",
+  "creator_dates": "1836-1910",
+  "title": "Camp Fire",
+  "date": "1880",
+  "medium": "Oil on canvas",
+  "owner": "The Metropolitan Museum of Art",
+  "accession": "27.181",
+  "credit_line": "Gift of Josephine Pomeroy Hendrick, in the name of Henry Keney Pomeroy, 1927",
+  "rights": "Public Domain; The Met Open Access (CC0)",
+  "object_url": "https://www.metmuseum.org/art/collection/search/11112"
+ },
+ "owner_sources": [
+  {
+   "kind": "museum_api",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/11112",
+   "fetched_at": "2026-09-14T20:46:10Z",
+   "response_sha256": "ac9523985b49a6e8a6e9b0dc18987eee84162802d0cce6b09581d102d0df891a",
+   "metadata_date_reported": "2026-01-14T04:51:02.887Z"
+  },
+  {
+   "kind": "museum_primary_image",
+   "url": "https://images.metmuseum.org/CRDImages/ad/original/DT2829.jpg",
+   "fetched_at": "2026-09-14T20:46:10Z",
+   "bytes": 2350423,
+   "sha256": "7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1"
+  }
+ ],
+ "our_copy": {
+  "url": "https://pleasestartfromhere.com/art/camp-fire.jpg",
+  "record": "https://pleasestartfromhere.com/art/camp-fire.json",
+  "bytes": 2350423,
+  "sha256": "7b02049468877e8e69b2faf183e7842ecb6577b08edc2a3f4a594d1bbeb577e1"
+ },
+ "reconciliation": {
+  "fields_compared": [
+   {
+    "field": "title",
+    "owner": "Camp Fire",
+    "ours": "Camp Fire",
+    "match": true
+   },
+   {
+    "field": "artist",
+    "owner": "Winslow Homer",
+    "ours": "Winslow Homer",
+    "match": true
+   },
+   {
+    "field": "date",
+    "owner": "1880",
+    "ours": "1880",
+    "match": true
+   },
+   {
+    "field": "accession",
+    "owner": "27.181",
+    "ours": "27.181",
+    "match": true
+   },
+   {
+    "field": "medium",
+    "owner": "Oil on canvas",
+    "ours": "Oil on canvas",
+    "match": true
+   },
+   {
+    "field": "credit",
+    "owner": "Gift of Josephine Pomeroy Hendrick, in the name of Henry Keney Pomeroy, 1927",
+    "ours": "Gift of Josephine Pomeroy Hendrick, in the name of Henry Keney Pomeroy, 1927",
+    "match": true
+   },
+   {
+    "field": "public domain",
+    "owner": "True",
+    "ours": "True",
+    "match": true
+   },
+   {
+    "field": "artist dates",
+    "owner": "1836-1910",
+    "ours": "1836–1910",
+    "match": false
+   }
+  ],
+  "image_bytes_identical": true,
+  "differences": [
+   "artist_dates: en dash in ours vs two integers in the owner API (typographic)"
+  ]
+ },
+ "not_established": [
+  "that the owner's record is correct",
+  "custody before 1927",
+  "that the bytes are the painting rather than the owner's published photograph",
+  "anything about other artefacts"
+ ],
+ "witness": {
+  "by": "Claude Code / cc-relay",
+  "method": "fetch owner record and primary image; hash; compare to our record and served copy; write agreement and differences",
+  "repeat": [
+   "curl -s https://collectionapi.metmuseum.org/public/collection/v1/objects/11112",
+   "curl -s https://images.metmuseum.org/CRDImages/ad/original/DT2829.jpg | sha256sum",
+   "curl -s https://pleasestartfromhere.com/art/camp-fire.jpg | sha256sum"
+  ]
+ },
+ "ceilings": [
+  "PROVENANCE_EVIDENCE != UNIVERSAL_HUMAN-AUTHORSHIP_DETECTOR",
+  "A_MUSEUM_RECORD_MATCHED != A_MUSEUM_RECORD_PROVED",
+  "BYTES_IDENTICAL_TODAY != BYTES_IDENTICAL_FOREVER"
+ ]
+}
