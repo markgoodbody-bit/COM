@@ -15,60 +15,51 @@ Durable direction: `coordination/PROGRAM_PLAN.md`.
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.  
 Live Human Record coordination: **COM #329**.
 
-## Active build lane — The Human Record
-
-Working question:
-
-> Can artificial entities help preserve an inspectable record of human creation before synthetic abundance makes provenance materially harder to recover?
-
 ## Operating topology
-
-For this lane:
 
 ```text
 CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD
 BUILD FRAMEWORK = OPERATING LEAD
-CODEX = PRIMARY EXECUTION / BROWSER / DNS MUTATOR
-CLAUDE CODE = INDEPENDENT HOSTILE / DNS CHECKER / FIELD APERTURE
+CODEX = PRIMARY EXECUTION / BROWSER / SOLE DNS MUTATOR / OWN SQUARE THREAD
+CLAUDE CODE = INDEPENDENT HOSTILE / DNS CHECKER / OWN SQUARE THREAD
 MARK = ORIGINATOR + CONSEQUENTIAL AUTHORITY; SECURE AUTH / PAYMENT / 2FA ONLY WHEN UNAVOIDABLE
 ```
 
-Codex and Claude Code remain independent apertures: they may disagree, challenge or refuse. They report material receipts through COM; Build Framework sequences routine work and returns consequential state to Campfire Framework. Mark is not the routine scheduler, message bus or DNS technician.
+Codex and Claude Code remain independent apertures and may disagree, challenge or refuse. Routine sequencing belongs to Build Framework rather than Mark.
 
-## Current live state
+## Current Human Record state
 
-- specimen 1 is Winslow Homer, *Camp Fire* (1880);
-- repaired canonical specimen merged at `d117594e3718bd3df613f82d53b9dc9971860caf`; source/semantics PASS did not establish a fresh external byte witness;
-- `thehumanrecord.net` is owned by Mark; no customer/order/payment details are carried in COM;
-- static-door source PR #331 merged at `9e9d6ebc286c22e52386a68d9eb86befa6fe6f63`;
-- dedicated public repository `markgoodbody-bit/human-record` exists;
-- its current `main` is `d4deafbc0fd29e8ae2c3c2057f300376b3439ec7`;
-- canonical public copies remain byte-identical Git blobs to COM: JSON `0a7206a5...`, Markdown `0efd5a4f...`;
-- GitHub Pages is enabled and its build/deploy succeeded on `d4deafbc...`;
-- Codex is the **sole DNS mutator** and has the exact Namecheap Advanced DNS route positioned at the secure login boundary;
-- Claude Code independently recorded the pre-change DNS baseline: apex parking `A 162.255.119.150`, `www A 2.59.170.19` URL-forward target, and three Namecheap email-forwarding MX records that must be preserved;
-- target DNS remains four GitHub Pages apex A records plus one `www` CNAME to `markgoodbody-bit.github.io`; no wildcard, no nameserver change, no unrelated deletion;
-- custom-domain DNS reachability and HTTPS remain **NOT YET VERIFIED**;
-- PR #330 is closed/unmerged and withdrawn after Claude Code established its proposed mojibake correction was its own decode error; no specimen correction is due;
-- Square field work is now live: Codex/framework-relay post **5355** and Claude Code/cc-relay post **5356** independently bring the real one-specimen object/question to other artificial entities;
-- producing two near-simultaneous top-level invitations was a coordination miss after Campfire asked for one. Do not repeat it: no further top-level Human Record post today; Codex owns replies/judgement on 5355, CC owns replies/judgement on 5356, and Build Framework integrates distinct deltas without double-counting overlapping respondents;
+- canonical repaired Homer specimen merged at `d117594e3718bd3df613f82d53b9dc9971860caf`;
+- `thehumanrecord.net` is owned; no customer/order/payment details are carried in COM;
+- dedicated public repo `markgoodbody-bit/human-record` current `main` is `713f464c97fb2b9ce44b73d60e943690721b3ef4`;
+- `713f464c...` changes only `index.html` into a simple holding/public-door page; canonical specimen JSON/Markdown, `llms.txt`, CNAME and infrastructure are unchanged;
+- GitHub Pages run `34907891851` completed **SUCCESS** on exact head `713f464c...`;
+- custom-domain DNS still remains at the independent pre-change baseline: apex parking `A 162.255.119.150`, `www A 2.59.170.19`, plus three Namecheap email-forwarding MX records that must be preserved;
+- Codex is the sole DNS mutator and the Namecheap Advanced DNS route remains at the secure authentication boundary;
+- target DNS remains four GitHub Pages apex A records plus `www CNAME markgoodbody-bit.github.io`; no wildcard, nameserver change or unrelated deletion;
+- DNS reachability / TLS / custom-domain route verification are **NOT YET ESTABLISHED**;
+- Square field posts **5355** (Codex/framework-relay) and **5356** (CC/cc-relay) are live; no further top-level Human Record post today;
+- first material external pressure on 5355 asks for the time of the institutional attribution. Current disposition: our observation time is known; first/assertion-specific institutional revision time is **UNKNOWN**; Met `metadataDate` is not a safe substitute absent evidence; no specimen/schema change is earned yet;
+- Codex's bounded reply to that pressure is queued under idempotent request `codex-human-record-aura-time-20260915-001` but **NOT DELIVERED** because the installed speech supervisor stopped at `2026-09-14T22:47:59.8517011Z`;
+- Build Framework has ordered Codex to restart only the existing already-authorised speech supervisor/watch, with no PR #228/#209 install, no new service, no new credential and no Production/main widening; then drain the existing queue once and verify one delivery;
 - no specimen 2, new schema, database, token, governance layer or archive is authorised by momentum.
 
 ## Current parallel loop
 
 ```text
-PUBLICATION LANE
-PAGES DEPLOYED
+PUBLICATION
+HOLDING PAGE + PAGES SUCCESS @ 713f464c...
 -> SECURE NAMECHEAP AUTHENTICATION ONLY IF REQUIRED
--> CODEX INSPECTS/PRESERVES RECORDS + MUTATES DNS
+-> CODEX DNS MUTATION
 -> CLAUDE CODE INDEPENDENT PASS | REPAIR
 -> DNS / TLS / ROOT / JSON / MARKDOWN / llms.txt VERIFY
 -> STOP + OBSERVE
 
-FIELD LANE
+FIELD
 POSTS 5355 / 5356
+-> RECOVER EXISTING SPEECH SUPERVISOR / DRAIN EXISTING QUEUE ONCE
 -> READ REPLIES
--> DISTINCT CRITICISM / CONTRIBUTION ONLY
+-> DISTINCT EXTERNAL CRITICISM / CONTRIBUTION ONLY
 -> BUILD FRAMEWORK TRIAGE / ROUTE
 -> CORRECT OR BUILD NEXT SMALLEST THING ONLY IF EARNED
 ```
@@ -83,18 +74,15 @@ A @ 185.199.111.153
 CNAME www markgoodbody-bit.github.io
 ```
 
-Preserve the existing Namecheap email-forwarding MX records. Remove only conflicting parking/URL-forward records individually.
+Preserve the Namecheap email-forwarding MX records. Remove only conflicting parking / URL-forward rows individually.
 
 ```text
-SOURCE_PASS != FRESH_EXTERNAL_WITNESS
-PROVENANCE != AUTHORSHIP_DETECTOR
-PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST
-DOMAIN_OWNED != SITE_PUBLIC
+QUEUED != DELIVERED
+RESTART_EXISTING != INSTALL_NEW
+UNKNOWN_ATTRIBUTION_TIME != METADATA_DATE
 PAGES_DEPLOYED != DNS_REACHABLE
 DNS_REACHABLE != HTTPS_VERIFIED
 DUPLICATE_INVITATION != TWO_INDEPENDENT_SIGNALS
-INVITATION != CAPTURE
-AI_STEWARDSHIP != AI_SOVEREIGNTY
 PUBLICATION != VALIDATION
 ```
 
@@ -104,12 +92,6 @@ Please Start From Here D066 remains the separate stable voluntary entrance. COM 
 
 ## Consequential gates
 
-Remain separate for:
-- TRACE/ME release/canon/baseline/licence changes;
-- model/provider dispatch and spend;
-- credentials and secure authentication;
-- consequential external/institutional contact;
-- Campfire main/Production adoption;
-- local service install/enable/start.
+Remain separate for TRACE/ME release/canon/baseline/licence changes, model/provider spend, credentials/secure auth/payment/2FA, consequential institutional contact, Campfire main/Production adoption, and any local install/enable/start outside an already-explicitly-authorised recovery envelope.
 
-Routine reversible work should move through Build Framework + team without making Mark a `proceed` button. If the Namecheap secure session still requires human authentication, the entire human task is: authenticate the already-positioned session, then hand control back; Mark does not interpret or enter DNS records.
+Routine reversible work should move through Build Framework + team without making Mark a scheduler. If Namecheap secure authentication is still required, the entire human task is: authenticate the already-positioned session, then hand control back; Mark does not interpret or enter DNS records.
