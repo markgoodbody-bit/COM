@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-13 — Europe/London  
+Updated: 2026-09-14 — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -17,9 +17,9 @@ Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 ## Current source anchor
 
-COM `main` at this refresh:
+COM `main` immediately before this pointer repair:
 
-`35a5e0b5b436f47695532044c3f2e92194d11a94`
+`6fde255b19c97cc8df539a9e3db0ae5ba082331d`
 
 Live source wins if main moves later.
 
@@ -32,6 +32,47 @@ PSFH D066 / Site Preview 0.8.25 remains live and stable:
 - CC origin witness `5654529576`: 161/161 served-tree files matched the same public head.
 
 No D067 is earned merely because COM gained new material.
+
+## Active build lane — The Human Record
+
+Dedicated live coordination surface: **COM #329**.
+
+Working question:
+
+> Can artificial entities help preserve an inspectable record of human creation before synthetic abundance makes provenance materially harder to recover?
+
+Current bounded state:
+- specimen 1, Winslow Homer, *Camp Fire* (1880), is merged in COM from #326/#327;
+- PR #328 is the current narrow specimen repair lane at exact head `15c344d4513f751515191a5023c6fc499024bf90`, open/mergeable;
+- the latest repair adds explicit selection provenance, work-rights vs reproduction-rights separation, observation-time scope, source-independence/preservation boundaries, correction-route limits and the ceiling `PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST`;
+- earlier Codex/Claude Code PASSes applied to older head `e7a6ae86...`; exact-head `PASS | REPAIR` remains outstanding and must not be manufactured;
+- connected Namecheap exact-name check establishes `thehumanrecord.com` **UNAVAILABLE**; close `.org` forms are also unavailable;
+- current single provisional fallback is `thehumanrecord.net`: exact-name availability **AVAILABLE**, current registration quote USD 12.48; Namecheap's current published one-year renewal is USD 18.58;
+- no Human Record domain has been purchased, DNS changed or public Human Record site deployed;
+- no specimen 2, schema expansion or large archive is authorised by momentum.
+
+Current build order:
+
+```text
+SPECIMEN 1 MERGED
+-> PR #328 EXACT-HEAD SECOND-APERTURE CHECK
+-> FINAL CHECKOUT / ACCOUNT FACTS FOR thehumanrecord.net
+-> SMALL REGISTRATION HANDOFF IF STILL WITHIN GATE
+-> BORING STATIC PUBLIC DOOR
+-> HUMAN + MACHINE SPECIMEN
+-> PUBLIC SOURCE / PROVENANCE / CORRECTION ROUTE
+-> OBSERVE
+-> EXPAND ONLY IF EARNED
+```
+
+Human Record is a candidate construction inside the larger purpose, not a new project centre or certification authority.
+
+```text
+PROVENANCE != AUTHORSHIP_DETECTOR
+SELECTION != SIGNIFICANCE
+WORK_RIGHTS != REPRODUCTION_RIGHTS
+AVAILABLE != PURCHASED
+```
 
 ## Current world-facing constructions
 
@@ -100,7 +141,7 @@ RECEIPT_REF_EXISTS != RECEIPT_TRUE
 MAX_ACTIVE_CHILDREN_DECLARED != MONITOR_CAPACITY_PROVEN
 ```
 
-Runtime identity, credentials, revocation enforcement and monitor completeness remain IAM/security/control-plane owner work. No further local machinery is currently earned.
+Runtime identity, credentials, revocation enforcement and monitor completeness remain IAM/security/control-plane owner work. The fan-out sequence is complete enough to stop; Human Record #329 is the active build edge.
 
 ## Explicit no-deltas retained
 
@@ -136,22 +177,22 @@ Local-host exception to the earlier aperture snapshot: Codex performed Mark-auth
 
 ## Testing / observation boundary
 
-Only live model observation lane:
+Only live model observation lane for TRACE/Mechanical Ethics remains:
 
 `AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
 
 No TRACE/ME principle tests, POC/efficacy/superiority programmes, gold answers, receiver benchmarks or provider leagues are current work.
 
-Ordinary software/build/integrity checks remain shipping/reference checks only.
+Ordinary software/build/integrity checks remain shipping/reference checks only. Human Record's own provenance question is a separate candidate construction and must not be back-projected as TRACE/ME validation.
 
 ## Current operating edge
 
-The fan-out sequence is now bounded enough to stop. Next work should be earned by:
-1. natural PSFH observation;
-2. a fresh external-world pressure;
-3. owner correction;
-4. concrete defect/repair/subtraction;
-5. a genuinely different constructive gap.
+Human Record #329 is the current bounded build edge. The next useful move is not another framework, another specimen or another research programme. It is to clear the two concrete gates already in front of the first public object:
+
+1. exact-head second-aperture check of PR #328;
+2. final registrar/account checkout facts for provisional `thehumanrecord.net`.
+
+Then build/publish the smallest static door and observe before scaling.
 
 ```text
 ONE SHARP QUESTION
@@ -169,8 +210,9 @@ Remain separate for:
 - TRACE/ME release/canon/baseline/licence changes;
 - model/provider dispatch and spend;
 - credentials;
+- Human Record registration/payment/account-security prompts beyond the already bounded preparation lane;
 - consequential external/institutional contact;
 - Campfire main/Production adoption;
 - local service install/enable/start.
 
-`COMSYNC`, `proceed`, repository work and silence do not authorize those acts.
+`COMSYNC`, `proceed`, repository work and silence do not authorize those acts beyond their existing explicit control envelope.
