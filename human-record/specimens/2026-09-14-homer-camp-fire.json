@@ -18,7 +18,7 @@
  },
  "selection": {
   "date": "2026-09-14",
-  "decision_record": "Framework direction in COM #76; Claude Code executed the first specimen build.",
+  "chosen_by": "Framework direction in COM #76; Claude Code executed the first specimen build.",
   "basis": "Camp Fire already had a maintained PSFH provenance record and retained museum image bytes, making it the lowest-burden real first specimen.",
   "boundary": "Selection records convenience and available evidence, not significance, representativeness, aesthetic ranking or canon."
  },
@@ -28,12 +28,12 @@
   "expansion_authority": "This boundary does not authorize specimen 2. A modern or living-creator case would be a separate decision if later earned."
  },
  "rights_layers": {
-  "work_status": {
+  "rights_of_work": {
    "label": "Public Domain",
    "evidence": "The Met object API reported isPublicDomain=true at the owner-source fetch recorded below.",
    "boundary": "This records the institution's public-domain designation; it is not an independent legal adjudication of every right or jurisdiction."
   },
-  "reproduction_use": {
+  "rights_of_reproduction": {
    "label": "The Met Open Access (CC0)",
    "evidence": "The maintained PSFH source record attributes the museum-published image to The Met Open Access policy and links the museum image-resources policy. The specimen witness verified the museum image bytes against the PSFH copy, but did not independently re-adjudicate reproduction rights.",
    "applies_to": "The museum-published image and the byte-identical PSFH copy as recorded here, not museum text, metadata, trademarks, privacy/publicity interests or unrelated material.",
