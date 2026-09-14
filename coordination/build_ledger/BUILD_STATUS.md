@@ -16,8 +16,8 @@ PSFH_AI_ENCOUNTER = ONLY LIVE TRACE/ME MODEL TEST / OBSERVATION LANE
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM main | **CURRENT AT SNAPSHOT** | `22b3bb941703eb765d2c159653dbaff2ab40a1a3` immediately before this ledger refresh. Live source wins if it advances. |
-| Human Record / COM #329 | **ACTIVE BOUNDED BUILD / TWO GATES OPEN** | Specimen 1 is merged; PR #328 exact head `15c344d4513f751515191a5023c6fc499024bf90` is open/mergeable and awaiting fresh exact-head `PASS | REPAIR`. `thehumanrecord.com` is authoritative-registrar **UNAVAILABLE**; provisional `thehumanrecord.net` is exact-name **AVAILABLE** at current Namecheap USD 12.48 registration quote, with current published `.net` one-year renewal USD 18.58. No purchase/DNS/public Human Record deployment. No specimen 2. |
+| COM main | **MUTABLE** | Reacquire live head before consequential action; do not use this ledger as a branch lock. |
+| Human Record / COM #329 | **ACTIVE BOUNDED BUILD / TWO GATES OPEN** | Specimen 1 is merged; PR #328 on `framework/human-record-machine-honesty-20260914` is open and requires a fresh **current exact-head** `PASS | REPAIR` before merge. Reacquire the head from the live PR rather than pinning it here. `thehumanrecord.com` is authoritative-registrar **UNAVAILABLE**; provisional `thehumanrecord.net` is exact-name **AVAILABLE** at current Namecheap USD 12.48 registration quote, with current published `.net` one-year renewal USD 18.58. No purchase/DNS/public Human Record deployment. No specimen 2. |
 | PSFH D066 | **LIVE / STABLE** | Site Preview 0.8.25. Maintained `404de6f0...`; public `0566ef9a...`. 157 generated files matched live HTTPS; CC witnessed 161/161 served-tree files. No D067 by edition/file momentum. |
 | Positive Construction | **CREATE / SUSTAIN / TRANSFORM** | #310 Heat Hub `6e24a87b...`; #312 Woodland Commons `7d8002e4...`; #315 Coast That Moves `9c38f6ef...`. Worked learning objects only. |
 | Legitimate Power — The Smoke Line | **MERGED / CONSTRUCTED EXAMPLE** | #317 `40e269d0...`. Plural authority, bounded fast coordination, mutual-aid limits, reassessment, escalation and hand-back. |
@@ -37,7 +37,7 @@ PSFH_AI_ENCOUNTER = ONLY LIVE TRACE/ME MODEL TEST / OBSERVATION LANE
 
 The first Human Record object is intentionally small.
 
-Current repair head #328 preserves the original Homer/Met observations and hashes while making explicit:
+Current PR #328 repair preserves the original Homer/Met observations and hashes while making explicit:
 
 ```text
 EVIDENCE != INFERENCE
@@ -54,7 +54,7 @@ Do not treat the nineteenth-century Homer specimen as evidence that the project 
 Current next steps are bounded:
 
 ```text
-#328 EXACT-HEAD SECOND-APERTURE CHECK
+#328 CURRENT EXACT-HEAD SECOND-APERTURE CHECK
 -> FINAL CHECKOUT / ACCOUNT FACTS FOR thehumanrecord.net
 -> SMALL REGISTRATION HANDOFF IF STILL WITHIN GATE
 -> STATIC PUBLIC DOOR
