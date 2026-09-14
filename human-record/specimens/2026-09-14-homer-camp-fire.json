@@ -11,7 +11,34 @@
   "accession": "27.181",
   "credit_line": "Gift of Josephine Pomeroy Hendrick, in the name of Henry Keney Pomeroy, 1927",
   "rights": "Public Domain; The Met Open Access (CC0)",
-  "object_url": "https://www.metmuseum.org/art/collection/search/11112"
+  "rights_field_status": "legacy combined label; see rights_layers for separated scopes",
+  "object_url": "https://www.metmuseum.org/art/collection/search/11112",
+  "identity_assertions_observed_at": "2026-09-14T20:46:10Z",
+  "identity_assertions_basis": "The identity fields in this specimen were reconciled against The Met public object API at this time; the timestamp does not make them permanently current."
+ },
+ "selection": {
+  "date": "2026-09-14",
+  "decision_record": "Framework direction in COM #76; Claude Code executed the first specimen build.",
+  "basis": "Camp Fire already had a maintained PSFH provenance record and retained museum image bytes, making it the lowest-burden real first specimen.",
+  "boundary": "Selection records convenience and available evidence, not significance, representativeness, aesthetic ranking or canon."
+ },
+ "purpose_boundary": {
+  "tested_here": "Provenance-record plumbing: owner-source reconciliation, digital byte identity, explicit unknowns, repeatability, machine/human readability and correction.",
+  "not_tested_here": "Whether the Human Record can materially help with contemporaneous human-creation provenance when synthetic and human outputs are genuinely ambiguous. An 1880 work predates that ambiguity and cannot falsify that motivating claim.",
+  "expansion_authority": "This boundary does not authorize specimen 2. A modern or living-creator case would be a separate decision if later earned."
+ },
+ "rights_layers": {
+  "work_status": {
+   "label": "Public Domain",
+   "evidence": "The Met object API reported isPublicDomain=true at the owner-source fetch recorded below.",
+   "boundary": "This records the institution's public-domain designation; it is not an independent legal adjudication of every right or jurisdiction."
+  },
+  "reproduction_use": {
+   "label": "The Met Open Access (CC0)",
+   "evidence": "The maintained PSFH source record attributes the museum-published image to The Met Open Access policy and links the museum image-resources policy. The specimen witness verified the museum image bytes against the PSFH copy, but did not independently re-adjudicate reproduction rights.",
+   "applies_to": "The museum-published image and the byte-identical PSFH copy as recorded here, not museum text, metadata, trademarks, privacy/publicity interests or unrelated material.",
+   "boundary": "Rights in the historical work and permission/status for a particular digital reproduction are different layers."
+  }
  },
  "owner_sources": [
   {
@@ -115,7 +142,8 @@
   "that the owner's record is correct",
   "custody before 1927",
   "that the bytes are the painting rather than the owner's published photograph",
-  "anything about other artefacts"
+  "anything about other artefacts",
+  "that this nineteenth-century specimen demonstrates usefulness against synthetic-era provenance ambiguity"
  ],
  "witness": {
   "by": "Claude Code / cc-relay",
@@ -134,13 +162,23 @@
    "change": "Added HTTP/pipeline failure handling and narrowed hash mismatch from an asserted cause to an observed byte difference with cause unresolved.",
    "original_observation_changed": false,
    "fresh_external_witness": false
+  },
+  {
+   "date": "2026-09-14",
+   "by": "Build Framework",
+   "kind": "machine_readable_epistemic_and_scope_repair",
+   "change_reference": "COM PR #328",
+   "change": "Made source independence, source-preservation, record/event, selection, rights-layer, purpose-test and correction-route boundaries explicit without changing the original observation values or hashes.",
+   "original_observation_changed": false,
+   "fresh_external_witness": false
   }
  ],
  "correction_route": {
   "repository": "https://github.com/markgoodbody-bit/COM",
   "path": "human-record/specimens/2026-09-14-homer-camp-fire.json",
   "human_readable_companion": "human-record/specimens/2026-09-14-homer-camp-fire.md",
-  "practice": "Propose a dated correction or a fresh recheck; preserve the original observation and hashes unless evidence shows they were recorded incorrectly."
+  "practice": "Propose a dated correction or a fresh recheck; preserve the original observation and hashes unless evidence shows they were recorded incorrectly.",
+  "access_limit": "The current proposal route is GitHub-based and may require a GitHub account. This specimen does not establish an account-free public correction channel."
  },
  "ceilings": [
   "EVIDENCE != INFERENCE",
@@ -153,6 +191,10 @@
   "INSTITUTIONAL_RECORD != INFALLIBILITY",
   "MULTIPLE_SOURCES != INDEPENDENT_SOURCES",
   "CORRECTED_RECORD != ORIGINAL_EVENT_CHANGED",
+  "SELECTION != SIGNIFICANCE",
+  "WORK_RIGHTS != REPRODUCTION_RIGHTS",
+  "PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST",
+  "OBSERVED_AT != PERMANENTLY_CURRENT",
   "A_MUSEUM_RECORD_MATCHED != A_MUSEUM_RECORD_PROVED",
   "BYTES_IDENTICAL_TODAY != BYTES_IDENTICAL_FOREVER"
  ]
