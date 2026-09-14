@@ -126,11 +126,13 @@ RELAY_RETURN != VALIDATION
 
 Current aperture facts:
 - Campfire Relay repository `main`: `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
-- maintained Simple-v1 branch: `db78625f20c4083e257deb39e3b6886a9f6ca89f`;
+- maintained Simple-v1 branch at the 2026-09-14 recovery follow-up: `166ff62bdad2f115216d2f9b6f645d5b736f9e08` (PR #228 terminal failure evidence);
 - PR #190 remains draft/unmerged to repository main/Production;
 - operational Relay tool/provider and localhost are **not exposed to this Framework aperture**.
 
 Repository inspection is not Relay-tool execution. Future apertures should use the Relay tool when actually exposed and materially useful, preserving each return/failure separately.
+
+Local-host exception to the earlier aperture snapshot: Codex performed Mark-authorized recovery on 2026-09-14. PR #227 capture logic was patched into the installed Core, the existing Steward task and speech supervisor started, and the existing service watch enabled. PR #209 watchdog code and PR #228 supervisor code were not installed. The original witness process still had unverified module currentness after a blocked restart. Receipts: [recovery](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670291219), [reconciliation](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670378513), [source integration](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670561960). This does not make localhost or Relay tools available to every aperture, or authorize main/Production adoption. Reacquire current health rather than replaying recovery.
 
 ## Testing / observation boundary
 

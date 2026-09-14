@@ -106,8 +106,8 @@ Positive construction means more than preventing harm or preserving optionality.
 - The current fan-out construction is complete enough to stop. Do not grow vocabulary, recursion, dispatcher infrastructure, credentials, monitoring, or control-plane machinery without a concrete use.
 - D066 is complete; do not manufacture D067 from edition momentum. New public routing should be earned by a genuine new public need, not because COM gained another file.
 - Natural PSFH usefulness remains observational and receiver-specific; no universal usefulness follows from publication or byte witness.
-- Campfire PR #227 is source-integrated into Simple-v1 only. No local install/enable/start or main/Production action is authorized or implied.
-- Campfire watchdog PR #209 remains source-only and human-gated; source readiness does not authorize installation or enabling.
+- Campfire local recovery was explicitly authorized by Mark on 2026-09-14 in answer to the local-recovery question. Codex installed the PR #227 capture-only repair while preserving installed-only changes, started the existing Steward task and speech supervisor, and enabled the existing service watch. See COM #108 receipts [5670285519](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670285519) and [5670378513](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670378513). Do not ask Mark to repeat completed recovery steps; reacquire runtime state.
+- The existing watch being enabled does not mean PR #209 watchdog code was installed. PR #228 terminal-error evidence is source-integrated into Simple-v1 at `166ff62bdad2f115216d2f9b6f645d5b736f9e08`, CI-checked but not installed. Original witness-module reload remains unverified after a tool-layer restart rejection. Neither local recovery nor source integration changes main/Production adoption.
 - Consequential release/canon/licence, spend, credentials and external institutional contact remain human/explicitly gated.
 - Mutable service / external-world state must be freshly reacquired when it changes the action.
 
