@@ -2,6 +2,8 @@
 
 Recorded snapshot: **2026-09-13 Europe/London**.
 
+Campfire rows corrected on **2026-09-14** from linked local-recovery receipts; other rows retain their earlier observation dates.
+
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -30,7 +32,7 @@ PSFH_AI_ENCOUNTER = ONLY LIVE MODEL TEST / OBSERVATION LANE
 | Positive Risk / Exploration | **NO DELTA** | Existing route already carries bounded experimentation, portfolio/common-mode risk, construction windows, waiting/commitment, stopping and externalised burden. |
 | Conflict / Resilience / Influence | **NO DELTA** | Existing route already carries deterrence by denial, bounded secrecy, adversarial correction routes, sunset authority and shared interests without trust. |
 | Campfire Relay operational aperture | **PART OF OPERATING ECOLOGY / NOT EXPOSED HERE** | `RELAY_REPO != RELAY_TOOL`. Current chat can inspect source but does not expose the operational Relay provider/tool or localhost. Future use remains material/availability dependent. |
-| Campfire Square Simple-v1 | **SOURCE REPAIR INTEGRATED / NOT INSTALLED** | Maintained `db78625f...`; PR #190 draft/unmerged to repository main/Production. Installed/runtime currentness unclaimed. |
+| Campfire Square Simple-v1 | **PARTIAL LOCAL RECOVERY / DEVELOPMENT SOURCE ADVANCED** | Maintained `166ff62b...` includes PR #228; PR #190 remains draft/unmerged to main/Production. PR #227 capture-only repair installed under Mark's explicit local-recovery authorization; existing speech/Steward started and existing watch enabled. PR #209 watchdog code and PR #228 supervisor code NOT installed. Witness reload unverified. [Recovery reconciliation](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670378513), [PR #228 CI/integration receipt](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5670561960). Reacquire health; do not repeat completed recovery by assumption. |
 
 ## Current construction map
 
