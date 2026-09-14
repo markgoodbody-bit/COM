@@ -101,9 +101,9 @@
   "by": "Claude Code / cc-relay",
   "method": "fetch owner record and primary image; hash; compare to our record and served copy; write agreement and differences",
   "repeat": [
-   "curl -s https://collectionapi.metmuseum.org/public/collection/v1/objects/11112",
-   "curl -s https://images.metmuseum.org/CRDImages/ad/original/DT2829.jpg | sha256sum",
-   "curl -s https://pleasestartfromhere.com/art/camp-fire.jpg | sha256sum"
+   "curl --fail --silent --show-error --location https://collectionapi.metmuseum.org/public/collection/v1/objects/11112",
+   "bash -o pipefail -c 'curl --fail --silent --show-error --location https://images.metmuseum.org/CRDImages/ad/original/DT2829.jpg | sha256sum'",
+   "bash -o pipefail -c 'curl --fail --silent --show-error --location https://pleasestartfromhere.com/art/camp-fire.jpg | sha256sum'"
   ]
  },
  "ceilings": [

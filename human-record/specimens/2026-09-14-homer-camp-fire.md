@@ -53,20 +53,34 @@ checking at scale — is exactly and only what happened, once.
 
 ## Re-check it yourself
 
+Run these in Bash. `pipefail` and curl's failure handling make an unsuccessful
+HTTP fetch fail the command rather than silently hashing an error page. Accept a
+hash only when the whole command succeeds; it identifies the fetched bytes, not
+their authenticity.
+
 ```bash
-curl -s https://collectionapi.metmuseum.org/public/collection/v1/objects/11112 | python -c "import json,sys; d=json.load(sys.stdin); print(d['title'], '|', d['artistDisplayName'], '|', d['objectDate'], '|', d['accessionNumber'], '|', d['isPublicDomain'], '|', d['primaryImage'])"
+set -o pipefail
+curl --fail --silent --show-error --location https://collectionapi.metmuseum.org/public/collection/v1/objects/11112 | python -c "import json,sys; d=json.load(sys.stdin); print(d['title'], '|', d['artistDisplayName'], '|', d['objectDate'], '|', d['accessionNumber'], '|', d['isPublicDomain'], '|', d['primaryImage'])"
 ```
 
 ```bash
-curl -s https://images.metmuseum.org/CRDImages/ad/original/DT2829.jpg | sha256sum
+set -o pipefail
+curl --fail --silent --show-error --location https://images.metmuseum.org/CRDImages/ad/original/DT2829.jpg | sha256sum
 ```
 
 ```bash
-curl -s https://pleasestartfromhere.com/art/camp-fire.jpg | sha256sum
+set -o pipefail
+curl --fail --silent --show-error --location https://pleasestartfromhere.com/art/camp-fire.jpg | sha256sum
 ```
 
-If the two hashes stop matching, one of two things has happened: the museum republished
-the image, or we did. Either is a finding; neither is a detector.
+If either fetch fails, the comparison is inconclusive. If successful fetches produce
+different hashes, the fetched byte streams differ. Republication is one possible
+explanation, not an established cause: inspect the responses, redirects and content
+before attributing the difference. A hash comparison is not an authorship detector.
+
+Recheck correction, Codex, 2026-09-14: added HTTP/pipeline failure handling and
+narrowed mismatch attribution. The original observation and its hashes are unchanged;
+this correction is not a fresh external witness.
 
 ## Provenance of this specimen
 
