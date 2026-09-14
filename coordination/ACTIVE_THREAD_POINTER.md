@@ -17,11 +17,7 @@ Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 ## Current source anchor
 
-COM `main` immediately before this pointer repair:
-
-`6fde255b19c97cc8df539a9e3db0ae5ba082331d`
-
-Live source wins if main moves later.
+COM `main` is mutable. Reacquire it before consequential action; do not treat the embedded state in this pointer as a branch lock.
 
 ## Public entrance
 
@@ -43,9 +39,9 @@ Working question:
 
 Current bounded state:
 - specimen 1, Winslow Homer, *Camp Fire* (1880), is merged in COM from #326/#327;
-- PR #328 is the current narrow specimen repair lane at exact head `15c344d4513f751515191a5023c6fc499024bf90`, open/mergeable;
-- the latest repair adds explicit selection provenance, work-rights vs reproduction-rights separation, observation-time scope, source-independence/preservation boundaries, correction-route limits and the ceiling `PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST`;
-- earlier Codex/Claude Code PASSes applied to older head `e7a6ae86...`; exact-head `PASS | REPAIR` remains outstanding and must not be manufactured;
+- PR #328 on branch `framework/human-record-machine-honesty-20260914` is the current narrow specimen repair lane; **reacquire its exact head from the live PR before review/merge** rather than pinning it here;
+- the latest repair content adds explicit selection provenance, work-rights vs reproduction-rights separation, observation-time scope, source-independence/preservation boundaries, correction-route limits and the ceiling `PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST`;
+- earlier Codex/Claude Code PASSes applied to an older head; a current exact-head `PASS | REPAIR` remains required and must not be manufactured;
 - connected Namecheap exact-name check establishes `thehumanrecord.com` **UNAVAILABLE**; close `.org` forms are also unavailable;
 - current single provisional fallback is `thehumanrecord.net`: exact-name availability **AVAILABLE**, current registration quote USD 12.48; Namecheap's current published one-year renewal is USD 18.58;
 - no Human Record domain has been purchased, DNS changed or public Human Record site deployed;
@@ -55,7 +51,7 @@ Current build order:
 
 ```text
 SPECIMEN 1 MERGED
--> PR #328 EXACT-HEAD SECOND-APERTURE CHECK
+-> PR #328 CURRENT EXACT-HEAD SECOND-APERTURE CHECK
 -> FINAL CHECKOUT / ACCOUNT FACTS FOR thehumanrecord.net
 -> SMALL REGISTRATION HANDOFF IF STILL WITHIN GATE
 -> BORING STATIC PUBLIC DOOR
@@ -189,7 +185,7 @@ Ordinary software/build/integrity checks remain shipping/reference checks only. 
 
 Human Record #329 is the current bounded build edge. The next useful move is not another framework, another specimen or another research programme. It is to clear the two concrete gates already in front of the first public object:
 
-1. exact-head second-aperture check of PR #328;
+1. current exact-head second-aperture check of PR #328;
 2. final registrar/account checkout facts for provisional `thehumanrecord.net`.
 
 Then build/publish the smallest static door and observe before scaling.
