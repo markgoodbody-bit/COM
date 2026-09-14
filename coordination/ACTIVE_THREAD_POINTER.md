@@ -24,13 +24,14 @@ Working question:
 
 Current state:
 - specimen 1 is Winslow Homer, *Camp Fire* (1880);
-- repaired specimen merged at `d117594e3718bd3df613f82d53b9dc9971860caf` after independent exact-head Codex PASS; that PASS was source/semantics review, not a fresh external byte witness;
-- Mark completed the secure Namecheap purchase of `thehumanrecord.net`; a fresh registrar recheck immediately afterwards reports the exact name unavailable, consistent with completed registration;
+- repaired specimen merged at `d117594e3718bd3df613f82d53b9dc9971860caf` after independent exact-head Codex PASS; source/semantics PASS did not establish a fresh external byte witness;
+- Mark completed the secure Namecheap purchase of `thehumanrecord.net`; fresh registrar recheck immediately afterwards reports the exact name unavailable, consistent with registration;
 - no customer/order/payment details are carried in COM;
-- COM `gh-pages` remains the separate live Please Start From Here publication at `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`; do not repurpose it for Human Record;
-- PR #331 is the current Human Record public-door source lane: one static HTML entrance, exact canonical Markdown + JSON specimen copies, `llms.txt`, `CNAME`, `.nojekyll`, and deployment README; reacquire its live head before merge;
-- the copied JSON and Markdown have the same Git blob SHAs as the canonical specimen: `0a7206a5...` and `0efd5a4f...` respectively;
-- the current GitHub connector can write existing repositories but does not expose repository creation, so a separate empty public repository is the remaining hosting-account boundary unless another operational aperture can create it;
+- COM `gh-pages` remains the separate Please Start From Here publication at `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`; do not repurpose it;
+- PR #331 static public-door source passed bounded Codex review and merged at `9e9d6ebc286c22e52386a68d9eb86befa6fe6f63`;
+- the public payload contains one HTML entrance, exact canonical Markdown + JSON specimen copies, `llms.txt`, `CNAME`, `.nojekyll`, and deployment README; copied JSON/Markdown blob identities match canonical source;
+- Codex created the separate public `markgoodbody-bit/human-record` repository and owns the active publication mutator lane; at the last live check the repository was still empty and no Pages/DNS/live-site claim had been made;
+- Build Framework should verify Codex's publication receipt rather than race the same repository/DNS mutation;
 - PR #330 is **HELD**: its claimed historical mojibake value is not established by the retrievable original #326 head or #326 diff, both of which show the proper en dash;
 - no specimen 2, new schema, database, token, governance layer or large archive is authorised by momentum.
 
@@ -38,10 +39,10 @@ Current build order:
 
 ```text
 DOMAIN OWNED
--> PR #331 PUBLIC-INFORMATION-ARCHITECTURE CHECK / MERGE
--> SEPARATE PUBLIC GITHUB REPOSITORY
--> COPY STATIC PAYLOAD TO REPO ROOT
--> GITHUB PAGES
+-> STATIC SOURCE MERGED
+-> SEPARATE PUBLIC REPOSITORY CREATED
+-> CODEX COPY PAYLOAD TO REPO ROOT
+-> ENABLE GITHUB PAGES
 -> NAMECHEAP DNS FOR thehumanrecord.net
 -> HTTPS + ROUTE VERIFY
 -> OBSERVE
@@ -57,6 +58,7 @@ PLUMBING_SPECIMEN != SYNTHETIC_ERA_PURPOSE_TEST
 DOMAIN_OWNED != SITE_PUBLIC
 PSFH_PAGES != HUMAN_RECORD_PAGES
 CLAIMED_CORRECTION != ESTABLISHED_CORRECTION
+MUTATOR_ASSIGNED != MUTATOR_COMPLETE
 ```
 
 ## Public entrance
@@ -87,9 +89,9 @@ Remain separate for:
 - TRACE/ME release/canon/baseline/licence changes;
 - model/provider dispatch and spend;
 - credentials;
-- new account/repository creation or secure DNS/account actions not exposed to the current tool lane;
+- secure DNS/account actions not already assigned to an operational aperture;
 - consequential external/institutional contact;
 - Campfire main/Production adoption;
 - local service install/enable/start.
 
-Routine reversible source/coordination work should move without making Mark a `proceed` button.
+Routine reversible source/coordination work should move without making Mark a `proceed` button. No manual GitHub repository-creation step is currently owed by Mark.
