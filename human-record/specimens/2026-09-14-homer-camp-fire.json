@@ -91,6 +91,26 @@
    "artist_dates: en dash in ours vs two integers in the owner API (typographic)"
   ]
  },
+ "epistemic_boundaries": {
+  "human_lineage_basis": {
+   "kind": "owner_attribution_plus_present_day_reconciliation",
+   "claim": "The Met attributes this physical artwork to Winslow Homer and dates it 1880; this specimen records that attribution and a present-day reconciliation.",
+   "not_established": "Independent observation or proof of the 1880 creation event."
+  },
+  "source_independence": {
+   "endpoint_count": 2,
+   "independence_group_count": 1,
+   "independence_group": "The Metropolitan Museum of Art",
+   "cross_endpoint_independent": false,
+   "reason": "The API record and primary-image endpoint are two endpoints controlled by the same institution; they are not independent witnesses."
+  },
+  "source_preservation": {
+   "museum_api_response": "SHA-256 recorded; response bytes are not preserved by this specimen.",
+   "museum_primary_image": "A byte-identical copy was observed at the PSFH URL at fetch time; the source URL itself is not preserved or made immutable by this record.",
+   "warning": "A recorded source link or hash does not by itself preserve the source or prove its truth."
+  },
+  "record_event_separation": "This record documents observations made on 2026-09-14. It is not the 1880 creation event and does not change that event."
+ },
  "not_established": [
   "that the owner's record is correct",
   "custody before 1927",
@@ -106,8 +126,27 @@
    "bash -o pipefail -c 'curl --fail --silent --show-error --location https://pleasestartfromhere.com/art/camp-fire.jpg | sha256sum'"
   ]
  },
+ "corrections": [
+  {
+   "date": "2026-09-14",
+   "by": "Codex",
+   "kind": "recheck_procedure_and_attribution_repair",
+   "change": "Added HTTP/pipeline failure handling and narrowed hash mismatch from an asserted cause to an observed byte difference with cause unresolved.",
+   "original_observation_changed": false,
+   "fresh_external_witness": false
+  }
+ ],
  "ceilings": [
-  "PROVENANCE_EVIDENCE != UNIVERSAL_HUMAN-AUTHORSHIP_DETECTOR",
+  "EVIDENCE != INFERENCE",
+  "UNKNOWN != ABSENT",
+  "PROVENANCE != AUTHORSHIP_DETECTOR",
+  "RECORD != EVENT",
+  "AI_CURATION != UNBIASED_HISTORY",
+  "SOURCE_LINK != SOURCE_PRESERVED",
+  "HASH != TRUTH",
+  "INSTITUTIONAL_RECORD != INFALLIBILITY",
+  "MULTIPLE_SOURCES != INDEPENDENT_SOURCES",
+  "CORRECTED_RECORD != ORIGINAL_EVENT_CHANGED",
   "A_MUSEUM_RECORD_MATCHED != A_MUSEUM_RECORD_PROVED",
   "BYTES_IDENTICAL_TODAY != BYTES_IDENTICAL_FOREVER"
  ]
