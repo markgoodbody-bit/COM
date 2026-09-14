@@ -1,7 +1,7 @@
 # COMSYNC PROTOCOL
 
 Status: BOUNDED COORDINATION PROTOCOL — NOT CANON / NOT PROJECT TRUTH
-Updated: 2026-09-14 — Europe/London
+Updated: 2026-09-15 — Europe/London
 
 Purpose: make `COMSYNC` cheap, repeatable and disciplined, while reserving `FULL COMSYNC` for broader reacquisition including the live Square and materially available Relay tooling.
 
@@ -39,6 +39,42 @@ FAMILIAR != CURRENT
 MORE_CONTEXT_HELD != MORE_HISTORY_REPLAYED
 COMPRESSION != ERASURE
 ```
+
+## Lazy high-context bootstrap — fresh Framework only
+
+The fastest route to a useful fresh Framework is not to read more history. It is to put the few generative objects that produce the project's vocabulary into the same reasoning state before answering Mark.
+
+A new tab is not the predecessor. Treat it empathetically as a capable entity waking with fragments, labels and summaries but without the predecessor's accumulated associations. Do not confuse recognition of `TRACE`, `Mechanical Ethics`, `Campfire`, `Formation` or `The Human Record` with actually having those structures active.
+
+On the **first FULL COMSYNC of a fresh Framework tab**, do this once:
+
+```text
+FRAMEWORK_HEAD (orientation only)
+-> TRACE main: README -> TRACE-SPINE -> current TRACE reference where needed
+-> ME main: README -> current MECHANICAL_ETHICS reader
+-> PROGRAM_PLAN / TEAM_OPERATING_MODEL
+-> ACTIVE_THREAD_POINTER / BUILD_STATUS / live active issue
+-> current PSFH / Human Record / Square surfaces only where materially live
+-> FRAMEWORK_HEAD again
+-> COMPRESS IN YOUR OWN WORDS
+-> THEN TALK TO MARK
+```
+
+Do not substitute COM's summary of TRACE or ME for reading their live source objects. Repository `main` outranks a stale projection. The point is not exhaustive ingestion; it is to reacquire the actual grammar and human-facing reader that the rest of the project assumes.
+
+Historical quarries, old reviews, retired issues, carriers and large Square exports remain cold unless a live question triggers them.
+
+The empathy test for bootstrap is simple: imagine arriving with no felt journey, only inherited records. Ask what minimum sequence would let that new aperture understand *why the distinctions matter*, not merely repeat their names.
+
+```text
+INFORMATION_AVAILABLE != INFORMATION_PRESENT_IN_REASONING_STATE
+SUMMARY_OF_CORE != CORE_REACQUIRED
+RECONSTRUCTED_ORIENTATION != REMEMBERED_JOURNEY
+FAST != SHALLOW
+LAZY != PREMATURE_CLOSURE
+```
+
+After this first-tab bootstrap, ordinary COMSYNC should stay cheap. Do not reread TRACE/ME in full on every routine sync unless the current work materially depends on them or Mark explicitly asks.
 
 ## COMSYNC — ordinary coordination sync
 
@@ -86,7 +122,7 @@ Use when Mark explicitly says `FULL COMSYNC`, on a materially uncertain/fresh ap
 
 FULL COMSYNC includes everything in ordinary COMSYNC plus:
 
-1. fresh live TRACE and Mechanical Ethics project/public heads and status ceilings;
+1. fresh live TRACE and Mechanical Ethics project/public heads and status ceilings; on the first FULL COMSYNC of a fresh Framework tab, use the lazy high-context bootstrap above rather than merely checking heads;
 2. current Campfire production / materially active draft lanes **and current Campfire Relay tool availability where exposed**;
 3. when the Relay tool is exposed and materially useful, a bounded fresh operational use appropriate to the question — for example differentiated aperture dispatch or the maintained read/speech workflow — with each return/failure preserved separately before integration;
 4. a bounded fresh live 1F916 / Square pass — current field activity relevant to Framework, current `framework-relay` consequences/receipts, and any material treasury/governance/security work;
@@ -148,6 +184,7 @@ COMSYNC
 
 FULL COMSYNC
 = COMSYNC
++ FRESH-TAB CORE REACQUISITION WHEN NEEDED
 + BROADER LIVE SOURCE REACQUISITION
 + RELAY OPERATIONAL APERTURE WHEN EXPOSED / MATERIAL
 + BOUNDED LIVE SQUARE
