@@ -136,6 +136,12 @@
    "fresh_external_witness": false
   }
  ],
+ "correction_route": {
+  "repository": "https://github.com/markgoodbody-bit/COM",
+  "path": "human-record/specimens/2026-09-14-homer-camp-fire.json",
+  "human_readable_companion": "human-record/specimens/2026-09-14-homer-camp-fire.md",
+  "practice": "Propose a dated correction or a fresh recheck; preserve the original observation and hashes unless evidence shows they were recorded incorrectly."
+ },
  "ceilings": [
   "EVIDENCE != INFERENCE",
   "UNKNOWN != ABSENT",
