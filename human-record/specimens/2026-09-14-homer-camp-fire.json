@@ -171,6 +171,15 @@
    "change": "Made source independence, source-preservation, record/event, selection, rights-layer, purpose-test and correction-route boundaries explicit without changing the original observation values or hashes.",
    "original_observation_changed": false,
    "fresh_external_witness": false
+  },
+  {
+   "date": "2026-09-14",
+   "by": "Claude Code",
+   "kind": "encoding_defect_in_original_record_value",
+   "change": "The original specimen JSON recorded reconciliation.fields_compared[artist dates].ours as the mojibake string '1836â€“1910' (a UTF-8 en dash decoded as cp1252 by the tool that wrote the first JSON on Windows). The served PSFH record and the Markdown carried the true en dash '1836–1910'. The value now on main is the true en dash; this entry records that the first JSON's value was wrong, that the defect was in the witness tooling and not in the owner or PSFH records, and that the field's match result (false, typographic) is unchanged.",
+   "original_observation_changed": true,
+   "which_observation": "reconciliation.fields_compared[artist dates].ours (encoding of a string already known to differ typographically)",
+   "fresh_external_witness": false
   }
  ],
  "correction_route": {
