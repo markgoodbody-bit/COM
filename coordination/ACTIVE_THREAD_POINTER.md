@@ -15,7 +15,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 
 Current routes:
 - **COM #336 — ACTIVE / EARNED DISCOVERABILITY**
-- PR #338 — **CLOSED MERGED / PSFH INDEXNOW SOURCE INTEGRATED / PUBLICATION PENDING**
+- PR #338 — **CLOSED MERGED / PSFH INDEXNOW DEPLOYED / FINAL HOST BYTE READBACK PENDING**
 - PR #337 — CLOSED MERGED / PSFH D067 LIVE
 - COM #335 — CLOSED COMPLETED / Listing 23 submission 490 / owner-result watch
 - COM #332 — Human Record stewardship EXTERNAL-EVIDENCE HOLD
@@ -28,61 +28,53 @@ Direct human direction remains:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-First-party discovery hygiene is live for both objects. One owner-invited directory/registry pass closed `NO_EARNED_OWNER_ROUTE`; do not repeat it by momentum.
+First-party discovery hygiene is now live for both public objects. One owner-invited directory/registry pass closed `NO_EARNED_OWNER_ROUTE`; do not repeat it by momentum.
 
 ### PSFH D067 — LIVE
 
-- Site Preview 0.8.26;
-- maintained source `6bd72899ab3ab4812da35cdd563313ecfd12cd58` before IndexNow source merge;
-- public `gh-pages` `288f76a37fcd49f7682117b328a51d86938925ab`;
-- Pages `34988050250` SUCCESS;
-- custom-domain readback complete;
-- one visible bounded Human Record route and canonical/OpenGraph metadata.
+Site Preview 0.8.26 remains the reader-facing edition. D067 delivery/readback is established; indexing/reach/usefulness are not.
 
-Delivery is established. Indexing/reach/usefulness are not.
+### PSFH IndexNow — DEPLOYED / FINAL READBACK PENDING
 
-### PSFH IndexNow — SOURCE INTEGRATED / PUBLICATION PENDING
+Maintained source PR #338 head `0285a3623b78e8a42a80314174c8772bb0cd26e4` was merged at `4869bf42373d163f1e2f073ab51dc5cc37f97971`.
 
-PR #338 exact head `0285a3623b78e8a42a80314174c8772bb0cd26e4` merged into maintained source at:
-`4869bf42373d163f1e2f073ab51dc5cc37f97971`.
+Public `gh-pages` is now:
+`956a0803c69a4bcbc388f68a53f08b4f73f107f3`.
 
-Source delta:
-- root key source `public/352408ff99c5e8531fe80000b491b08b.txt`;
-- fail-closed `scripts/copy-indexnow-key.mjs`;
-- build/dev invoke the copier after the normal build;
-- no reader-content, edition, crawler-policy, analytics, account, provider, credential or spend change.
+That publication commit changes **exactly one file**:
+`352408ff99c5e8531fe80000b491b08b.txt`
+with body `352408ff99c5e8531fe80000b491b08b` plus LF.
 
-Claude Code hostile review `5683186893` = PASS after one notifier repair. The default-main workflow `.github/workflows/psfh-indexnow.yml` now gates on:
+GitHub Pages run `34991033843` completed **SUCCESS** for exact public head `956a0803...`.
+
+Default-main notifier `.github/workflows/psfh-indexnow.yml` carries the CC repair:
 
 ```text
 github.event.build.status == 'built'
 ```
 
-Workflow repair commit: `62da57ea365363fa41277d5c54150c8efe956299`.
-
-Build independently reproduced the new copier: exact 33-byte key is copied and no other file is written by that step. This was enough for reversible source integration, but **not** a public deployment claim.
-
-Codex publication order: PR #338 comment `5683295398`.
-
-Required closure:
+Notifier run `34991145623` completed **SUCCESS**. Its log records:
 
 ```text
-BUILD/PUBLISH FROM MAINTAINED 4869bf42...
--> NORMAL GENERATED gh-pages PATH
--> PUBLIC DELTA = ROOT KEY FILE ONLY
--> CUSTOM-DOMAIN KEY HTTP 200 + EXACT BYTES
--> page_build INDEXNOW RECEIPT
--> THEN STOP / OBSERVE
+IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)
 ```
 
+This establishes notification acceptance only:
+
 ```text
-SOURCE_INTEGRATED != PUBLISHED
-INDEXNOW_ACCEPTED != INDEXED
+INDEXNOW_202 != INDEXED
 INDEXED != READ
-DISCOVERY_INFRASTRUCTURE != VALIDATION
+READ != USEFUL
 ```
 
-Public `gh-pages` remains `288f76a3...` at this pointer update; therefore the PSFH IndexNow key is **not yet claimed public**.
+One explicit evidence item remains before calling the infrastructure sub-lane fully closed: ordinary custom-domain HTTPS readback of the key file with HTTP status + exact 33 bytes. Final read-only order is PR #338 comment `5683433376`. No mutation is authorized by that check.
+
+```text
+PAGES_SUCCESS + GH_PAGES_FILE != CUSTOM_DOMAIN_READBACK
+THIS_IS_READ_ONLY_VERIFICATION
+```
+
+If `HOST_PASS` returns, record it and STOP/OBSERVE. Do not create another discovery mechanism by momentum.
 
 ## Human Record
 
