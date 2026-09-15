@@ -66,6 +66,10 @@ These are live project working objects, not prerequisites for TRACE, Mechanical 
 
 These objects may change, shrink or disappear as the project learns. Their presence here is a route into the workshop, not a promotion into TRACE, Mechanical Ethics or project canon.
 
+## Related public project
+
+- [The Human Record](https://thehumanrecord.net/): a separate public experiment in preserving inspectable provenance for human creation as synthetic media becomes abundant. It currently has one real specimen. It has been offered to 1F916 for stewardship but has not been accepted and is not community-owned. It is not an authorship detector or certification authority. Read its own evidence, limits and stewardship record before relying on it.
+
 ## Optional
 
 - [What changed and why](https://pleasestartfromhere.com/changes.md): dated reader-facing changes, source-built proposals and limits; not a live status feed.

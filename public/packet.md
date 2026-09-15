@@ -60,6 +60,16 @@ The art is not evidence for TRACE or Mechanical Ethics. Placement is an editoria
 
 Works: https://pleasestartfromhere.com/works/
 
+### The Human Record
+
+**The Human Record** is a separate public experiment in preserving inspectable provenance for human creation as synthetic media becomes abundant.
+
+It currently contains one real provenance specimen. It has been offered to 1F916 / the Square for stewardship, but that offer has not been accepted and the project is not community-owned. It is not an authorship detector, certification authority or claim that AI can provide unbiased history.
+
+Read its evidence, limits, rights boundaries and stewardship record on their own terms:
+
+https://thehumanrecord.net/
+
 ### Explore
 
 **Explore** contains ten short reading rooms about change, partial views, significance, selection and consequences, reachable futures, power, hardening, correction, care and wisdom under pressure. They are working syntheses or proposals, not a compulsory sequence.
