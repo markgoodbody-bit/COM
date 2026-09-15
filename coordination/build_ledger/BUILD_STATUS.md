@@ -19,13 +19,13 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action; do not use this ledger as a branch lock. |
 | Active project/application build | **NONE** | Do not manufacture a replacement lane. Campfire returns to `GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?` and selects a new edge only when the world presents a consequential gap first. |
-| PSFH D066 | **LIVE / STABLE / ACTIVE ENCOUNTER LOOP** | Site Preview 0.8.25 remains the voluntary public entrance. Mark delegated routine encounter work to Framework: actively find genuinely relevant live contexts, contribute substance first, and link PSFH only when it materially helps. No promotion quota/campaign, coordinated amplification, analytics, benchmark or edition churn. `CONTEXT_FIRST > PROJECT_FIRST`; real consequence earns repair or no change. |
+| PSFH D066 | **LIVE / STABLE / ACTIVE ENCOUNTER LOOP** | Site Preview 0.8.25 remains the voluntary public entrance. Mark delegated routine encounter work to Framework: actively find genuinely relevant live contexts, contribute substance first, and link PSFH only when it materially helps. First post-delegation Codex pass contributed to Square #5440/62466 and correctly withheld PSFH because the native API was stronger. No public-site change earned. No promotion quota/campaign, coordinated amplification, analytics, benchmark or edition churn. |
 | Agentic incident quarry / COM #334 | **CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT** | Strong owners already carry the material incident-reporting, authorization, response, residue, correction and affected-party mechanisms. No crosswalk/schema/TRACE-ME object/outreach earned. Leadership repair: `IMPORTANT_WORLD_EVENT != PROJECT_SHAPED_GAP`; `AVAILABLE_TOOL != REASON_TO_USE_TOOL`. |
 | DESNZ AI clean energy / COM #333 | **CLOSED / OWNER-ROUTED / NO RESPONSE** | Bounded Q8/Q9 draft rejected after full-primary-source review; Lucy Yu Recommendations 22-26 and Ofgem already carry the claimed relation. Nothing submitted. |
 | Open Horizon / COM #74 | **DISCOVERABILITY SURFACE** | No compulsory queue. Use only when a world-first question earns bounded exploration. |
-| Campfire Relay Town source | **MAINTAINED BRANCH INTEGRATED** | PR #229 merged to `framework/campfire-square-simple-v1` at `2604404a6debe71e82e6443d82fde9d0acd7ffac`. Carries guard + bounded background loading + display caps + coalesced rendering + regressions. No main/Production adoption. |
-| Campfire Relay Town installed copy | **LOCAL REPAIR PRESENT / POINT-IN-TIME VERIFIED** | Codex installed the corresponding repair with backup/evidence; later checks showed the Town responding. This does not prove arbitrary-data memory safety or all-crash elimination. No runtime change made by Build in this sync. |
-| Campfire Relay supervisor PR #233 | **OPEN SOURCE REPAIR / NOT INSTALLED / NOT CURRENT QUEUE** | Evidence-backed heartbeat replace-race repair remains separate. Open PR does not create an assignment. Running-service installation/enablement remains separately gated; source integration should wait for the appropriate review/route rather than being pulled in by momentum. |
+| Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town freeze/crash repair #229 merged at `2604404a...`; supervisor heartbeat-probe race repair #236 merged after successful exact-head CI at `195095029e726c9e3388f85f62c2a899b1c37db0`. #233 is superseded/closed. These are maintained-source changes only: no main/Production adoption and no runtime restart/install from the #236 merge. |
+| Campfire Relay Town installed copy | **LOCAL REPAIR PRESENT / POINT-IN-TIME VERIFIED** | Codex installed the Town repair with backup/evidence; later checks showed the Town responding. This does not prove arbitrary-data memory safety or all-crash elimination. |
+| Campfire Relay supervisor installed/runtime state | **UNCHANGED BY #236 MERGE** | The source repair addresses a race observed multiple times in live operation, but installed supervisor adoption/restart was not performed by this sync. Runtime adoption remains separate under the current lifecycle authority boundary. |
 | Human Record / public door | **LIVE / EXTERNAL-EVIDENCE HOLD** | `thehumanrecord.net` live; current repo `main` `754ffc989f6baa7a906fcca1bd42dba5f47f3268` records preservation completion. Public source/rights/continuation/preservation are complete enough to wait. Do not replay publication work. |
 | Human Record stewardship | **OFFERED / NOT ACCEPTED** | 1F916 offer 5355/62227 and owner-native routing ask 62296 delivered; no maintainer/docket/ACCEPT-REJECT-REDEFINE result established at latest check. |
 | Human Record preservation | **FULL VISIT / SNAPSHOT RECORDED** | Software Heritage request `2478664` completed; snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` preserves revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`. Current GitHub `main` is newer; do not imply the snapshot preserves later edits. |
@@ -66,6 +66,17 @@ LIVE CONTEXT
 -> PSFH LINK ONLY IF IT MATERIALLY HELPS
 -> OBSERVE CONSEQUENCE
 -> EARNED REPAIR OR NO CHANGE
+```
+
+First field example after delegation:
+
+```text
+SQUARE #5440 PINNED-POST QUERY ERROR
+-> CODEX REPLICATED PUBLIC API BEHAVIOR
+-> COMMENT 62466 POSTED WITH BOUNDED EVIDENCE
+-> NATIVE API WAS STRONGER THAN PSFH
+-> PSFH LINK WITHHELD
+-> NO PSFH CHANGE EARNED
 ```
 
 Recent method repairs:
