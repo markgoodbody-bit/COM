@@ -18,12 +18,12 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| Active bounded lane | **#336 — EARNED DISCOVERABILITY** | First-party hygiene live; directory pass closed no-fit; PSFH IndexNow publication is current bounded edge. |
-| PSFH D067 | **LIVE / VERIFIED** | Site Preview 0.8.26; public `gh-pages` `288f76a3...`; Pages `34988050250` SUCCESS; custom-domain readback complete. |
+| Active bounded lane | **#336 — EARNED DISCOVERABILITY** | First-party hygiene live; directory pass closed no-fit; PSFH IndexNow is deployed with final independent host-byte readback pending. |
+| PSFH D067 | **LIVE / VERIFIED** | Site Preview 0.8.26 remains reader-facing edition. |
 | PR #338 | **CLOSED MERGED / SOURCE INTEGRATED** | Exact head `0285a362...` merged to maintained source `4869bf42373d163f1e2f073ab51dc5cc37f97971`. |
-| PSFH IndexNow source | **INTEGRATED / NOT YET PUBLIC** | Root key + fail-closed copier only; no reader-content or edition change. |
-| PSFH IndexNow notifier | **DEFAULT MAIN / REPAIRED** | `.github/workflows/psfh-indexnow.yml`; `page_build` gated on `status == built`; diff actual `gh-pages`; failures warn only. Repair `62da57ea...`. |
-| PSFH IndexNow publication | **CODEX PUBLICATION/READBACK OUTSTANDING** | Build order comment `5683295398`; `gh-pages` still `288f76a3...` at last check, so key is not yet claimed live. |
+| PSFH IndexNow publication | **DEPLOYED / PAGES SUCCESS** | `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; publication delta exactly one root key file. Pages run `34991033843` SUCCESS. |
+| PSFH IndexNow notifier | **LIVE / FIRST RUN SUCCESS** | Workflow repaired to gate on built Pages events. Run `34991145623` SUCCESS; root notification accepted HTTP 202. |
+| Final host key readback | **READ-ONLY CHECK PENDING** | PR #338 comment `5683433376`: require ordinary custom-domain GET, HTTP status, exact 33-byte body. Do not mutate. |
 | Owner-directory pass | **CLOSED / NO_EARNED_OWNER_ROUTE** | Do not force a listing or repeat the sweep by momentum. |
 | Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party hygiene live; IndexNow receipts observed; no indexing/ranking/benefit claim. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
@@ -37,40 +37,39 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```text
 D067 LIVE
 -> DIRECTORY PASS = NO_EARNED_OWNER_ROUTE
--> INDEXNOW SOURCE BUILT / CC REVIEWED
--> PR #338 SOURCE MERGED 4869bf42...
--> CODEX NORMAL GENERATED PUBLICATION
--> PUBLIC DELTA MUST BE KEY FILE ONLY
--> CUSTOM-DOMAIN KEY READBACK
--> page_build INDEXNOW RECEIPT
+-> INDEXNOW SOURCE MERGED 4869bf42...
+-> GENERATED PUBLICATION 956a0803... = KEY FILE ONLY
+-> PAGES 34991033843 SUCCESS
+-> page_build NOTIFIER 34991145623 SUCCESS / INDEXNOW HTTP 202
+-> FINAL CUSTOM-DOMAIN KEY BYTE READBACK
 -> STOP / OBSERVE
 ```
 
 Current ceilings:
 
 ```text
-SOURCE_INTEGRATED != PUBLISHED
 INDEXNOW_ACCEPTED != INDEXED
 INDEXED != READ
 READ != USEFUL
 USEFUL != VALIDATED
 PUSH != SPAM
+PAGES_SUCCESS + GH_PAGES_FILE != CUSTOM_DOMAIN_READBACK
 ```
 
-## PR #338 evidence
+## IndexNow evidence
 
-- exact source delta = three files;
-- CC hostile review PASS after one workflow repair;
-- key source is exactly 32 hex chars + LF (33 bytes);
-- copier rejects any other bytes and writes only `out/352408ff99c5e8531fe80000b491b08b.txt`;
-- Build independently reproduced that copier behaviour;
-- source merge is reversible and did not alter public `gh-pages`.
+- public key filename: `352408ff99c5e8531fe80000b491b08b.txt`;
+- source/build contract: exactly 32 hex characters plus LF = 33 bytes;
+- `gh-pages` commit `956a0803...` contains only that added file;
+- Pages run `34991033843` succeeded;
+- workflow `34991145623` ran after the built Pages event and logged `IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)`;
+- independent custom-domain GET is still deliberately separate and pending.
 
 No reader-facing content, Site Preview edition, `robots.txt`, sitemap, licence, analytics, intake, account, provider, credentials, spend, TRACE/ME status or Human Record stewardship changed.
 
 ## Parallel work
 
-- #336: active publication/readback gate only; no second IndexNow implementation and no repeat directory sweep.
+- #336: final read-only host verification, then observe; no second IndexNow implementation and no repeat directory sweep.
 - Listing 23: owner-result watch only.
 - Human Record stewardship: external-evidence hold.
 - PSFH contextual encounter lane remains available where independently earned.
