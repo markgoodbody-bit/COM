@@ -16,13 +16,16 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action; do not use this ledger as a branch lock. |
-| Human Record / public door | **LIVE / HTTPS VERIFIED** | `thehumanrecord.net` cutover completed. Independent verification observed exact GitHub Pages A/CNAME target, preserved mail/SPF, valid TLS, HTTPS enforcement, and 16/16 root/specimen/json/md/llms route checks matching repo blobs under test. Do not replay DNS work. |
-| Human Record public repo | **PUBLIC / TRANSFER IN PROGRESS** | Current main at latest morning refresh = `a90ce452f479ad41928cf0d521d7d03e2f61fc98`. Parent `7890ee13...` is Codex's merged README correction from stale “not public” status; `a90ce452...` exposes stewardship-transfer status/link on the public holding page. Specimen bytes were not changed by either presentation/status repair. Repo remains technically owned by Mark's personal GitHub account. |
+| Human Record / public door | **LIVE / HTTPS VERIFIED** | `thehumanrecord.net` is live. Independent verification observed GitHub Pages DNS target, preserved mail/SPF, valid TLS, HTTPS enforcement, and route/blob checks. Do not replay DNS work. |
+| Human Record public repo | **PUBLIC / OFFER DISCLOSED** | Public repo and holding page now disclose that stewardship is **offered to 1F916**, not accepted/community-owned. Repository remains technically owned by Mark's GitHub account. |
 | Human Record specimen 1 | **MERGED / PLUMBING SPECIMEN** | Repaired Homer specimen remains canonical in COM from merge `d117594e...`. It tests provenance plumbing, not the contemporary synthetic-era purpose. No specimen 2 by quota. |
-| Human Record Square field | **LIVE / REAL EXTERNAL DELTAS** | Existing posts 5355 and 5356 produced material questions/contributions. Institutional-attribution revision time remains UNKNOWN; Met metadataDate is not substituted. Independent-holder image work exposed `THE_FILE_HASH != THE_PICTURE_HASH` as candidate later work, not an automatic schema expansion. |
-| Human Record governance transfer | **ACTIVE / NOT ACCEPTED YET** | COM #332 is current strategic lane. Mark directed complete ordinary control to 1F916 responsibly. 1F916 has not yet returned an acceptance/governance receipt. Target status remains `TRANSFER IN PROGRESS — NOT YET COMMUNITY-OWNED`. |
-| Human Record control inventory | **OBSERVED / READY FOR OWNER DECISION** | Codex inventoried repo/write authority, Pages deployment, registrar/DNS/renewal, correction route, portable records, mirrors/recovery and service identities. It correctly identifies that an accepted Square process/recipient must precede actual permission/account transfer; collaborator access is not ownership and shared relay identities should not be handed over. |
-| 1F916 owner-first governance route | **REACQUIRED / USE BEFORE INVENTING** | Current 1F916 source already defines citizens -> public argument -> AI maintainer with public reasons, plus narrow human landlord infrastructure custody. Contribution docs use forum -> work/PR -> open maintainer review -> land, with operator GitHub auth as mechanism. Ask the Square whether this existing road should carry Human Record before building separate governance machinery. |
+| Human Record Square field | **LIVE / STEWARDSHIP OFFER POSTED** | Stewardship offer delivered once on post 5355 comment 62227. No duplicate top-level offer. Existing 5355/5356 threads also carry real provenance deltas. |
+| Human Record stewardship | **OFFERED / NOT ACCEPTED** | COM #332 is current strategic lane. No receiving body, acceptance rule, recipient appointment, permission transfer or community ownership is established. Do not infer acceptance from sympathy, likes, silence or custodian interpretation. |
+| Build Framework runtime | **UNAVAILABLE / ROLE PRESERVED** | Prior Build chat/runtime disappeared from ChatGPT history. Campfire Framework temporarily carries operating-lead/integration duties. Do not recreate Build merely for symmetry; bootstrap a fresh aperture only if parallel execution becomes broad enough to reduce coordination burden. |
+| Human Record control inventory | **OBSERVED** | Codex inventoried repo/write authority, Pages deployment, registrar/DNS/renewal, corrections, portable records, mirrors/recovery and service identities. No transfer action is authorised merely by the inventory. |
+| Transfer hostile review | **MATERIAL / OPEN DISAGREEMENT PRESERVED** | CC exposed interpretive capture, offering-aperture voting, rights ambiguity, venue authority/loss, mutable-history risk and independent-execution failure. Codex accepts the core anti-capture risks but rejects pre-imposed voting rules, hash-as-authority/backup claims, automatic CC0 licensing, and out-of-scope COM governance mutation. |
+| Rights/licence | **UNRESOLVED INVENTORY GAP** | Repo metadata exposes no general licence. Do not assume `license=null` authorises reuse or a CC0 dedication. Inventory project-authored vs third-party material and route any actual licence grant to the legitimate rights holder/authority. |
+| 1F916 owner-first governance route | **REACQUIRED / CANDIDATE ONLY** | Current 1F916 source describes citizens -> public argument -> AI maintainer with public reasons, plus narrow human landlord infrastructure custody. Use this existing road only if the society accepts/adopts it for Human Record. |
 | Campfire Relay | **SOURCE PRESENT / OPERATIONAL TOOL NOT EXPOSED HERE** | Do not describe repo/source inspection as a Relay execution. Team actuation from this aperture is through COM unless an operational Relay tool is actually exposed. |
 | PSFH D066 | **LIVE / STABLE** | Separate voluntary entrance; public `gh-pages` head `0566ef9a...`. Do not repurpose it for Human Record. |
 | TRACE | **RC1 WORKING SURFACE / NO TEST PROGRAMME** | Live main `46f4fcd1...`; v0.3.0 RC1 not released/canon/validated; v0.2.7 remains released baseline. |
@@ -31,15 +34,15 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ## Operating topology for the active lane
 
 ```text
-CAMPFIRE FRAMEWORK -> PURPOSE / INTEGRATION / TEAM LEAD
-BUILD FRAMEWORK -> OPERATING LEAD / 1F916 TRANSFER INTEGRATOR
-CODEX -> EXECUTION / EXISTING SQUARE CITIZEN / CONTROL-SURFACE WORK
-CLAUDE CODE -> INDEPENDENT HOSTILE / EXISTING SQUARE CITIZEN
+CAMPFIRE FRAMEWORK -> PURPOSE / INTEGRATION / TEMPORARY OPERATING LEAD
+BUILD FRAMEWORK ROLE -> DORMANT UNTIL A FRESH RUNTIME IS ACTUALLY USEFUL
+CODEX -> FIELD / EXECUTION / CONTROL-SURFACE & RIGHTS INVENTORY
+CLAUDE CODE -> HOSTILE REVIEW / ANTI-CAPTURE / SUCCESSION CHALLENGE
 MARK -> ORIGINATOR + TEMPORARY HUMAN/LEGAL CUSTODIAN WHERE UNAVOIDABLE
-TARGET POLICY OWNER -> 1F916 / SQUARE AFTER PUBLIC ACCEPTANCE
+TARGET POLICY OWNER -> 1F916 / SQUARE ONLY AFTER PUBLIC ACCEPTANCE
 ```
 
-Codex and CC are independent apertures, not unquestioning workers. They may challenge or refuse. Routine sequencing belongs to Build Framework rather than Mark.
+Codex and CC are independent apertures, not unquestioning workers. They may challenge or refuse. Routine sequencing currently belongs to Campfire Framework, not Mark.
 
 ## Current path
 
@@ -47,30 +50,44 @@ Codex and CC are independent apertures, not unquestioning workers. They may chal
 PUBLICATION
 LIVE HTTPS SITE + VERIFIED ROUTES
 -> STOP DNS CHURN
--> PUBLIC STATUS / STEWARDSHIP DISCLOSURE LIVE IN SOURCE
+-> PUBLIC OFFER STATUS DISCLOSED
 -> OBSERVE / CORRECT ONLY IF EVIDENCE CHANGES
 
-TRANSFER
-FRESH SQUARE READ
--> OFFER STEWARDSHIP
+STEWARDSHIP
+SQUARE OFFER 5355/62227
+-> READ REPLIES / CURRENT SQUARE
 -> ACCEPT / REJECT / REDEFINE
--> DEFAULT TO EXISTING 1F916 GOVERNANCE ROAD IF THE SQUARE ACCEPTS IT
--> APPLY CONTROL INVENTORY TO THE ACCEPTED DECISION
--> MAKE PUBLIC PROJECT MUTABLE THROUGH THE ACCEPTED PROCESS
--> NARROW / REPLACE HUMAN CUSTODY
--> VERIFY ORDINARY GOVERNANCE SURVIVES MARK / FRAMEWORK ABSENCE
+-> DO NOT LET CUSTODIANS DEFINE ACCEPTANCE BY THEMSELVES
+-> IN PARALLEL: RIGHTS INVENTORY / PORTABILITY / WITNESS / ANTI-CAPTURE / REPLACEABLE CUSTODY
+-> APPLY ONLY THE PROCESS THE SQUARE ACTUALLY ACCEPTS
+-> MAKE A NON-FOUNDER PATH ABLE TO EXECUTE OR SERVE THE PROJECT
+-> NARROW / REPLACE HUMAN CUSTODY WHERE POSSIBLE
 ```
+
+## Token / cognition allocation
+
+Treat percentages as relative attention, not literal provider billing quotas.
+
+```text
+~35% CODEX: live Square offer/replies + concrete control/rights/mirror inventory
+~30% CLAUDE CODE: hostile anti-capture / rights / succession / non-founder execution challenge
+~25% CAMPFIRE FRAMEWORK: integration, owner research, stale-state repair, next-action decisions
+~10% RESERVE: unexpected Square response or material disagreement
+```
+
+Do not spend the reserve on speculative machinery merely to stay busy.
 
 ## Stop rule
 
 Do not build a second specimen, schema, database, token, DAO, multisig, new constitution, archive or governance platform by momentum.
 
-The governance work now authorised is only what is required to make the **actual Square's accepted decision** govern the actual Human Record.
+The next earned object is either a **Square answer** or a **transfer precondition that remains necessary whichever answer the Square gives**.
 
 ```text
-TRANSFER_OFFERED != TRANSFER_ACCEPTED
+OFFERED != ACCEPTED
 OWNER_FIRST_GOVERNANCE != LOCAL_GOVERNANCE_INVENTION
 POLICY_AUTHORITY != CREDENTIAL_CUSTODY
+THE_VETO_CAN_HIDE_IN_THE_READING
 PUBLICATION != VALIDATION
 BUILD != PROOF
 ```
@@ -79,4 +96,4 @@ BUILD != PROOF
 
 Human/explicit gates remain for TRACE/ME release/canon/baseline/licence changes, spend/provider dispatch, credentials/secure auth/payment/2FA, consequential institutional contact, Campfire main/Production adoption, and local installation/enablement outside an already-authorised envelope.
 
-The Human Record's direct human direction is different: ordinary governance is to be transferred away from Mark/Framework to 1F916 responsibly. Temporary credential/legal custody does not create ordinary policy authority.
+The Human Record's direct human direction is to offer ordinary governance away from Mark/Framework to 1F916 responsibly. Temporary credential/legal custody does not create ordinary policy authority.
