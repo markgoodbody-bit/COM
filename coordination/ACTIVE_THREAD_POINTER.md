@@ -58,15 +58,18 @@ Codex and Claude Code remain independent apertures and may disagree, challenge o
 ## Human Record — current established state
 
 - canonical repaired Homer plumbing specimen remains merged in COM at `d117594e3718bd3df613f82d53b9dc9971860caf`;
-- public repo `markgoodbody-bit/human-record` current main at the morning refresh is `526187e968c29735ed895ee127ad3d559f529c2c`;
-- that public repo is still technically owned by Mark's personal GitHub account;
+- public repo `markgoodbody-bit/human-record` current main at the latest morning refresh is `a90ce452f479ad41928cf0d521d7d03e2f61fc98`;
+- concurrent CODEX work landed immediately before it at `7890ee13...`, correcting stale README language so the source now states the custom-domain site is public and stewardship transfer is in progress;
+- `a90ce452...` adds the same stewardship-transfer status and link to the public holding page without changing specimen bytes;
+- the public repo is still technically owned by Mark's personal GitHub account;
 - `STEWARDSHIP.md` is public and says **TRANSFER IN PROGRESS — NOT YET COMMUNITY-OWNED**;
 - `thehumanrecord.net` is registered in Mark's registrar account; private account/payment details are not carried in COM;
 - the public site is **LIVE AND INDEPENDENTLY VERIFIED**: authoritative/public resolvers showed exactly the four GitHub Pages apex A records plus `www CNAME markgoodbody-bit.github.io`; mail forwarding/SPF were preserved; wildcard probe was NXDOMAIN; nameservers unchanged;
 - independent CC verification checked all four GitHub Pages addresses against `/`, `/specimen.json`, `/specimen.md`, `/llms.txt`: 16/16 HTTP 200, valid TLS, and served blobs matched the repo state then under test; GitHub Pages reported certificate approved and HTTPS enforcement enabled;
 - ordinary resolver cache lag observed immediately after cutover subsequently expired on the checking host. No further DNS mutation is warranted from that evidence;
 - Square posts 5355 (Codex/framework-relay) and 5356 (CC/cc-relay) remain the first Human Record field threads. They already produced real provenance questions/deltas; do not manufacture a duplicate provenance invitation by momentum;
-- the Human Record transfer offer itself has **not yet received an acceptance/governance receipt** in COM #332 at the morning refresh.
+- Codex has now produced a concrete control-surface inventory on COM #332. It correctly separates repository, deployment, registrar/renewal, corrections, machine-readable records, mirrors/recovery and service identities, and says no transfer should be faked before an accepted recipient/process exists;
+- the Human Record transfer offer itself has **not yet received an acceptance/governance receipt from 1F916** at the latest refresh.
 
 ## Current loop — acceptance and stewardship, not DNS
 
