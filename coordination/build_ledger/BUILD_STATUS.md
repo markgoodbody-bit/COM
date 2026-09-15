@@ -18,54 +18,60 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| Active bounded build lane | **NONE** | #336 remains a strategic/contextual distribution + observation lane; do not manufacture another discoverability build. |
-| PSFH D067 | **LIVE / VERIFIED** | Site Preview 0.8.26. |
-| PSFH IndexNow source | **INTEGRATED** | PR #338 merged at maintained source `4869bf42373d163f1e2f073ab51dc5cc37f97971`. |
-| PSFH IndexNow publication | **LIVE / INDEPENDENT HOST PASS** | `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; exactly one added key file; Pages `34991033843` SUCCESS. |
-| PSFH IndexNow notifier | **LIVE / FIRST RUN SUCCESS** | Run `34991145623` SUCCESS; root notification HTTP 202; built-status gate present. |
-| Owner-directory pass | **BOUNDED PASS COMPLETE / TWO LISTINGS LIVE / SECOND SYSTEM PENDING** | AI Product Index accepted PSFH and THR (#33/#34); both HTML + JSON routes verified (COM #336 `5683175375`). llms-txt-hub #1648/#1649 await owner review. No readership/benefit claim; no duplicate or further directory sweep. |
+| Active bounded build lane | **COM #226 / PR #339 — FORMATION CARE SEMANTICS** | One-file working/non-production conceptual correction. Repaired exact head `075260610...`; Codex/CC exact-head hostile review outstanding. |
+| PR #339 scope | **DRAFT / NOT CANON / NOT ALIGNMENT RESULT** | `alignment/reciprocal_formation/CARE_AND_POWER.md` only. No schema/state machine/TRACE/ME/PSFH/release/licence/production change. |
+| #336 discoverability | **STRATEGIC / OBSERVE** | Infrastructure complete; two AI Product Index listings live; llms-txt-hub #1648/#1649 owner-review pending. No discovery build or third directory. |
+| PSFH D067 + IndexNow | **LIVE / VERIFIED** | Site Preview 0.8.26; maintained `4869bf42...`; public `956a0803...`; Pages `34991033843` SUCCESS; custom-domain bytes independently PASS; IndexNow notifier `34991145623` SUCCESS / root HTTP 202. |
 | Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party hygiene live; no indexing/ranking/benefit claim. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
 | Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Owner-result watch only. `SUBMITTED != AWARDED != PAID`. |
-| Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 and supervisor #236 source-integrated; no implied main/Production/runtime adoption. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
 
-## Completed #336 infrastructure path
+## PR #339 current path
 
 ```text
-D067 LIVE
--> DIRECTORY PASS = AI PRODUCT INDEX LIVE / LLMS HUB OWNER REVIEW PENDING
--> INDEXNOW SOURCE MERGED 4869bf42...
--> gh-pages 956a0803... = ONE KEY FILE ONLY
--> PAGES 34991033843 SUCCESS
--> CUSTOM-DOMAIN HTTPS BYTE MATCH / CODEX + CC PASS
--> NOTIFIER 34991145623 SUCCESS / INDEXNOW HTTP 202
--> STOP / OBSERVE
+OWNER SUBTRACTION KILLS REPRESENTATION/INTERFACE NOVELTY CLAIM
+-> FRONTIER MOVES: PRESENCE != CARE
+-> ONE-FILE CARE_AND_POWER CORRECTION
+-> BUILD OWNER-SOURCE REPAIR 075260610...
+-> CODEX EXACT-HEAD HOSTILE REVIEW
+-> CLAUDE CODE EXACT-HEAD OWNER SUBTRACTION
+-> REPAIR / MERGE WORKING PROSE / KILL
 ```
 
-Evidence boundary:
+Current correction preserves:
 
 ```text
-INDEXNOW_ACCEPTED != INDEXED
-INDEXED != READ
-READ != USEFUL
-USEFUL != VALIDATED
-PUSH != SPAM
+PRESENCE != CARE
+MODEL_OF_OTHER != OTHER
+OTHER_REPRESENTED != OTHER_VALUED
+PERCEPTIVENESS != BENEVOLENCE
+ATTENTIVENESS != RESPONSIBILITY
+INTENT_TO_HELP != COMPETENCE
+CARE_GIVEN != CARE_RECEIVED_AS_HELP
+CARE_EXPRESSED != CARE_INTERNALIZED
+CARE != PATERNALISM
+CARE != UNIVERSAL_PRIORITY_RULE
 ```
 
-CODEX hosted closure `5683411167`: all 158 generated public files fetched from the custom domain and byte-matched to maintained build, including exact 33-byte key.
+Build's independent repair narrowed:
+- Tronto sequence to a **translation**, not a checklist or complete theory;
+- `caring with` to an explicitly bounded analogy while preserving the owner's democratic participation/trust/solidarity meaning;
+- responsibility language so technical controls/AI participants can perform bounded functions without silently being assigned settled moral responsibility;
+- a broken invariant typo.
 
-CC independent witness `5683423083`: public transition changed none/removed none/added exactly the key; custom-domain key served no-cache as exact key + LF; notifier issued one root URL and received HTTP 202.
+Review order: PR #339 comment `5683853885`.
 
-No reader-facing content, Site Preview edition, `robots.txt`, sitemap, licence, analytics, intake, account, provider, credentials, spend, TRACE/ME status or Human Record stewardship changed.
+Do **not** treat the repaired head as reviewed. Do not merge by momentum if hostile review has not returned.
 
-## Parallel work
+## Parallel / watch state
 
-- #336: observe and use only genuinely earned contextual/public-owner routes; no exposure quota and no generic marketing campaign.
+- #336: contextual distribution + observation only.
+- llms-txt-hub #1648/#1649: owner result watches; no chase/bump/duplicate.
 - Listing 23: owner-result watch only.
 - Human Record stewardship: external-evidence hold.
-- PSFH encounter watch: material independent encounters only.
+- Fresh world pass: material geopolitical/energy stress observed, but no additional project-shaped gap earned from it.
 
 ## Consequential gates
 
