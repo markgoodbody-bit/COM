@@ -67,7 +67,7 @@ No behavioral probe establishes internal care. No new framework/schema/benchmark
 
 ## PSFH / HUMAN RECORD DISCOVERY — COMPLETE INFRASTRUCTURE, OBSERVE
 
-PSFH D067 / Site Preview 0.8.26 is live. Maintained IndexNow source `4869bf42373d163f1e2f073ab51dc5cc37f97971`; public `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; Pages `34991033843` SUCCESS. Codex + CC independently verified custom-domain bytes. Notifier `34991145623` SUCCESS with root IndexNow HTTP 202.
+PSFH D068 is live. Maintained source `2caa14f3beeedcb910e50342fec26f7da9ffb887`; public `gh-pages` `5ce14d5b94e092b3e11ceb1cb0116b4b76be1401`; exact custom-domain bytes were independently witnessed. D068 reduces repeated exit language and adds a bounded worked bridge while explicitly refusing efficacy/counterfactual proof. Reader benefit remains unestablished; first-party IndexNow and crawler policy are unchanged.
 
 ```text
 FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
@@ -77,13 +77,19 @@ READ != USEFUL
 USEFUL != VALIDATED
 ```
 
-Human Record first-party discovery + IndexNow are live. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Software Heritage request `2478664` remains complete.
+Human Record first-party discovery, contribution routing and IndexNow are live at `1b4273409f69493ab813243a0d3014a25d991773`. Software Heritage save request `2479839` succeeded at 2026-09-15 19:48:40Z. This does not establish independent participation, survivability or governance transfer. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
 
 Owner-invited external distribution:
 - AI Product Index PSFH + THR registrations are accepted/live;
 - `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain owner-review watches unless live source changes.
 
 Do not chase, duplicate, bump, open a third directory or treat listing/review as endorsement.
+
+## CURRENT COORDINATION DELTA
+
+- COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`.
+- The exact-head review covered the text/diff. Fresh-aperture execution and `NO_MARK_POKING` remain untested; do not report them as passed.
+- #341 and #342 completed their bounded build/publication phases. Observation and useful field participation are not active build lanes.
 
 ## OTHER ESTABLISHED STATE
 
