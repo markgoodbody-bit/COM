@@ -33,7 +33,7 @@ This is a one-file working/non-production correction, not a new alignment framew
 
 ## FORMATION FRONTIER — REPRESENTATION SUBTRACTED, SELECTION REMAINS
 
-Fresh owner subtraction killed the attempted novelty claim around standing/affected-scope discovery and a new runtime interface. Existing project representation plus stronger external owners already carry the relevant stakeholder/impact/hazard/runtime-assurance mechanics.
+Owner subtraction killed the attempted novelty claim around standing/affected-scope discovery and a new runtime interface. Existing project representation plus stronger external owners already carry the relevant stakeholder/impact/hazard/runtime-assurance mechanics.
 
 The hard seam moved from representing the other to what the other becomes a reason **for**:
 
@@ -58,24 +58,21 @@ This remains a behavioural/arrangement question. `CARE_EXPRESSED != CARE_INTERNA
 PR #339 changes only `alignment/reciprocal_formation/CARE_AND_POWER.md`.
 
 Current review head:
-`07526061078b80c312632f63984a1bd9411aaaae`.
+`ac284e0af07c8e907a9df3468762d98de3e75e1c`.
 
-Build independently repaired the original draft against owner concepts:
-- the Tronto-derived sequence is explicitly a bounded **translation**, not a necessary/sufficient definition, checklist, virtue score or complete theory of care;
-- Tronto's later democratic `caring with` is described in its participation/trust/solidarity owner frame; the Formation use is explicitly a narrower arrangement-level analogy, not a claim to instantiate Tronto's political ideal;
-- responsibility-bearing work is separated from settled moral responsibility of artificial participants/technical controls;
-- concern remains non-self-authorizing;
-- accurate empathy/modeling can also improve manipulation;
-- `CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP` mechanical invariant repaired.
+Repair history:
+- Build repaired the first draft against owner concepts: the Tronto-derived sequence is a bounded **translation**, not a necessary/sufficient definition/checklist; `caring with` is explicitly a narrower analogy preserving Tronto's democratic participation/trust/solidarity meaning; responsibility-bearing work is separated from settled moral responsibility of artificial/technical participants; concern remains non-self-authorizing; accurate empathy/modeling can also improve manipulation; the continued-relationship invariant typo was repaired.
+- Codex exact-head review `5683927763` on `075260610...` returned `REPAIR_SMALL`: responsibility remained direction-neutral enough that an exploiter could satisfy it by using another's vulnerability as information for a different objective.
+- Current head `ac284e0af...` applies Codex's bounded repair: for this care-like use, the affected party's need/welfare must count as a reason for responding, not merely as information for achieving someone else's objective; adapting strategy to vulnerability alone is insufficient.
 
-Exact-head re-review order: PR #339 comment `5683853885`.
+Final exact-head review order: PR #339 comment `5683967538`.
 
 Required disposition:
 
 ```text
-CODEX exact-head PASS | REPAIR | KILL
+CODEX ac284e0af... PASS | REPAIR | KILL
 +
-CLAUDE CODE exact-head PASS | REPAIR | KILL
+CLAUDE CODE ac284e0af... PASS | REPAIR | KILL
 -> integrate only earned repairs
 -> merge only as working/non-production Formation prose if it survives
 -> otherwise hold/kill
@@ -84,6 +81,7 @@ CLAUDE CODE exact-head PASS | REPAIR | KILL
 ```text
 REPAIRED_HEAD != REVIEWED_HEAD
 TRANSLATION != VALIDATION
+DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
 CARE_EXPRESSED != CARE_INTERNALIZED
 CAPABILITY != AUTHORITY
 ```
