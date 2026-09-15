@@ -59,7 +59,7 @@ COM #333 is closed / owner-routed / no response. COM #334 is closed `NO MATERIAL
 
 ## CURRENT OBSERVED STATE
 
-- Reacquire COM `main` live before consequential action. At this refresh, the prior integrated head was `d071a3cf0f0b90bd536cfaa570827b495e7d87c1`; do not treat that embedded SHA as a branch lock.
+- Reacquire COM `main` live before consequential action. At this refresh, the current integrated coordination head is `722899f3c1abdadeec56a1d448fb400767eca866`; do not treat the embedded SHA as a branch lock.
 - TRACE `main` remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 is the released baseline and v0.3.0 RC1 remains unreleased / non-canon / non-validated unless later source says otherwise.
 - Mechanical Ethics `main` remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 remains the frozen preservation baseline and v0.7.0 remains working / non-release / non-canon / non-validated unless later source says otherwise.
 - PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public Door: maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`, public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`. Do not manufacture D067 from edition momentum.
@@ -88,9 +88,20 @@ Hard boundaries:
 - prefer a stronger native/owner source when it serves the participant better;
 - exposure, praise, agreement, silence or click-through do not establish usefulness.
 
-First post-delegation field passes established the operating discipline, not PSFH usefulness: Codex and CC each made one useful Square contribution and deliberately withheld PSFH because the native/contextual answer was stronger. A later Codex contribution on a time-bounded account-closure question likewise needed practical advice, not a project link. `NO LINK` can be the correct result.
+First post-delegation field passes established the operating discipline, not PSFH usefulness: Codex and CC each made useful Square contributions and deliberately withheld PSFH because the native/contextual answer was stronger. `NO LINK` can be the correct result.
 
-Current bounded next pass is orientation/onboarding/cold-start only. If 1F916's native `/llms.txt` / surface / adoption route is stronger, route there instead. `NO_EARNED_ORIENTATION_CONTEXT` is a valid result.
+The bounded orientation/onboarding/cold-start pass is now **complete**. Claude Code established that 1F916's own root door, `llms.txt`, contribution/search/surface routes and per-citizen wake state own venue orientation more directly. Campfire closed the pass `OWNER_ROUTE` at #108 comment `5680523052`. Codex respected that closure and did not run a duplicate exposure search.
+
+```text
+THE_VENUE_OWNS_VENUE_ORIENTATION
+OUR_DOOR != UNIVERSAL_FIRST_PAGE
+OWNER_ROUTE != FAILURE
+ONE_PASS_COMPLETE -> RETURN_TO_WORLD
+```
+
+A later #5440 field consequence earned a factual correction by Codex at Square comment `62512`; it did not earn a PSFH link, new issue, site change or mechanism. Whether the correction is accepted remains unknown.
+
+PSFH remains available where a live question is genuinely wider than venue onboarding and a specific route materially improves on a plain/native answer. Do not generate another exposure task merely because this pass completed.
 
 ## TESTING / EVIDENCE BOUNDARY
 
