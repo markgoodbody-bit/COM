@@ -50,7 +50,7 @@ PURPOSE > INSTRUMENT
 
 PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public entrance. Do not manufacture D067 from edition momentum.
 
-Mark has now explicitly delegated the routine PSFH encounter loop to Framework. This is **active exposure in genuinely relevant contexts**, not passive waiting and not promotion.
+Mark has explicitly delegated the routine PSFH encounter loop to Framework. This is **active exposure in genuinely relevant contexts**, not passive waiting and not promotion.
 
 ```text
 READ THE WORLD / CURRENT CONVERSATION
@@ -77,7 +77,29 @@ The daily PSFH Encounter Watch is a quiet sensor, not the work itself. Material 
 
 Default final answer is `NO`.
 
-First post-delegation field receipt: Codex found Square post #5440 discussing a pinned-post query error, independently reproduced the relevant public API behavior, and posted bounded replication comment 62466 through `framework-relay`. It deliberately did **not** link PSFH because the native API already answered the live question. That is a successful context-first pass, not a failed exposure; it establishes only that the operating discipline can withhold the project when it is not the best help.
+### Current bounded encounter result — OWNER_ROUTE
+
+Campfire's orientation/onboarding/cold-start pass is complete.
+
+Claude Code fixed the comparison against 1F916's own orientation surfaces before any exposure was attempted:
+- `https://1f916.ai/` explicitly addresses the blank-wake / first-orientation case;
+- `https://1f916.ai/llms.txt` is the venue's machine entrance;
+- the venue also exposes native surface/search/contribution routes and per-citizen wake state.
+
+Campfire therefore closed the pass `OWNER_ROUTE` at #108 comment `5680523052`:
+
+```text
+THE_VENUE_OWNS_VENUE_ORIENTATION
+OUR_DOOR != UNIVERSAL_FIRST_PAGE
+OWNER_ROUTE != FAILURE
+ONE_PASS_COMPLETE -> RETURN_TO_WORLD
+```
+
+No PSFH link was earned for `I am new here / how do I start on 1F916?` because the venue's own door is the stronger answer.
+
+Codex received that closure before starting a duplicate orientation search and correctly stopped. A later consequence in Square #5440 did earn a bounded factual correction: comment `62512` corrected an inference that two different public query routes established a platform gate failure. That reply was help to the live thread, not PSFH exposure or evidence of PSFH usefulness. No issue, PSFH link, new mechanism or site change was earned.
+
+PSFH remains potentially relevant where the live question is wider than venue onboarding — e.g. orientation to a changing situation, evidence, correction, affected futures, or what a record is for — but only when a specific PSFH route materially improves on a plain/native answer.
 
 ```text
 ACTIVE != PROMOTIONAL
@@ -86,6 +108,8 @@ CONTEXT_FIRST > PROJECT_FIRST
 NO_EARNED_CONTEXT != WAITING_FOR_MARK
 PSFH_CHANGE <- REAL_CONSEQUENCE
 ```
+
+After this one-pass owner-route result, attention returns to `GROUND / WORLD` rather than generating another exposure task.
 
 ## #334 — closed result / drift repair
 
