@@ -6,8 +6,8 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
-    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/copy-indexnow-key.mjs && node scripts/serve.mjs",
+    "build": "node scripts/build.mjs && node scripts/copy-indexnow-key.mjs",
     "start": "node scripts/serve.mjs",
     "lint": "oxlint",
     "format": "oxfmt"
