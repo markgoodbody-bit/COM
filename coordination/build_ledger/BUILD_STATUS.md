@@ -24,7 +24,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Owner-native decision route | **DISCOVERED / ASK DELIVERED / RESPONSE PENDING** | 1F916 pattern: `ITEM -> ACCEPTANCE_CRITERION -> DECISION_THREAD -> PRE-ANNOUNCED_COUNT -> MAINTAINER_APPLIES_IN_THE_OPEN`. Latest Square receipt still ended at 62296; fresh 1F916 source search exposes no Human Record/source-5355 docket object. |
 | Build Framework aperture | **AVAILABLE / OPERATING LEAD** | Recovered aperture completed FULL COMSYNC before resuming sequencing. Availability != runtime-identity proof. |
 | Rights / licence | **BOUNDED CC0 / MACHINE-DETECTABLE** | Root `LICENSE` = standard CC0 1.0 legal code; `LICENSE.md` limits dedication to rights Mark actually holds and excludes third-party rights. GitHub reports `CC0-1.0`. |
-| Independent preservation | **SAVE ACCEPTED / TASK SCHEDULED / NO SNAPSHOT YET** | Software Heritage request `2478664`: accepted; task scheduled; no visit/date/snapshot SWHID yet. Do not duplicate request or call archive complete. |
+| Independent preservation | **FULL VISIT / SNAPSHOT RECORDED / ONE EXTERNAL COPY** | Software Heritage request `2478664` succeeded with a full visit at `2026-09-15T11:26:40.776Z`; snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` records exact Human Record head `0d2fe0e...`. One independent content-addressed copy is not governance or permanent survivability. Do not duplicate the request. |
 | Continuation / recovery | **PUBLIC / HOSTILE-REVIEWED / EXPOSED** | `CONTINUE.md` repaired after CC review: names GitHub + SWH origin, says blob identities are recorded not protected, handles `CNAME`, rights, no-secret recovery and governance distinction. README + `llms.txt` link it. |
 | Non-founder execution / serving | **DESIGNED / NOT YET RUN** | Serving test requires genuinely non-founder operator, no copied CNAME/domain claim, and exact specimen verification. Governance execution test waits for actual 1F916 acceptance/process evidence. |
 | PSFH D066 | **LIVE / STABLE** | Separate voluntary entrance; do not repurpose COM `gh-pages`. |
@@ -60,8 +60,8 @@ STEWARDSHIP
 SURVIVABILITY IN PARALLEL
 BOUNDED MACHINE-DETECTABLE CC0 = DONE
 -> CONTINUE.md = DONE / REVIEWED / EXPOSED
--> SWH REQUEST 2478664 = ACCEPTED / SCHEDULED
--> WAIT FOR VISIT + SNAPSHOT/SWHID
+-> SWH REQUEST 2478664 = FULL VISIT / SNAPSHOT RECORDED
+-> ONE INDEPENDENT CONTENT-ADDRESSED COPY EXISTS
 ```
 
 ## Attention allocation
@@ -85,7 +85,7 @@ Do not manufacture a second stewardship solicitation while 62296 awaits an owner
 OFFERED != ACCEPTED
 REQUEST_DELIVERED != REQUEST_ACCEPTED
 NO_OBSERVED_RESPONSE != REFUSAL
-SAVE_REQUEST_ACCEPTED != ARCHIVE_COMPLETED
+ONE_INDEPENDENT_COPY != SURVIVABILITY
 SELF_DESCRIBING != SELF_GOVERNING
 INDEPENDENT_COPY != INDEPENDENT_GOVERNANCE
 POLICY_AUTHORITY != CREDENTIAL_CUSTODY
