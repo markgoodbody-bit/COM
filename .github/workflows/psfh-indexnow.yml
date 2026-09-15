@@ -12,6 +12,7 @@ concurrency:
 
 jobs:
   notify:
+    if: github.event.build.status == 'built'
     runs-on: ubuntu-latest
     steps:
       - name: Check out coordination source
