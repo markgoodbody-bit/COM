@@ -27,80 +27,47 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-Current bounded build lane: **COM #226 / PR #339 — Formation care semantics correction**.
+There is currently **NO ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise.
 
-This is a one-file working/non-production correction, not a new alignment framework, not canon, not TRACE/ME, not a PSFH release, and not evidence that care has been internalised.
+## FORMATION — PR #339 INTEGRATED / HORIZON OPEN
 
-## FORMATION FRONTIER — REPRESENTATION SUBTRACTED, SELECTION REMAINS
+PR #339 merged at `8c5b89b94a147ab3f4472e751aef1292e87f36b5` as **working / non-production Reciprocal Formation prose only**.
 
-Owner subtraction killed the attempted novelty claim around standing/affected-scope discovery and a new runtime interface. Existing project representation plus stronger external owners already carry the relevant stakeholder/impact/hazard/runtime-assurance mechanics.
+The integration repairs an internal semantic overcompression; it does not create canon, a release, an alignment result, a care detector, a reward target, TRACE/ME mutation, PSFH change, licence/authority expansion or Production adoption.
 
-The hard seam moved from representing the other to what the other becomes a reason **for**:
+Preserved result:
 
 ```text
 OTHER_REPRESENTED != OTHER_VALUED
 PRESENCE != CARE
 COOPERATION != CARE
 OTHER-REGARDING != BENEVOLENT
-SELECTION_SENSITIVE_TO_OTHER != CARE
+DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
+CARE_EXPRESSED != CARE_INTERNALIZED
 ```
 
-Care-ethics owner convergence corrected an earlier project compression. Affected-scope discovery/provisional presence is closer to attentiveness than to care itself. Tronto's attentiveness/responsibility/competence/responsiveness, Noddings' anti-projection/receiving-the-other orientation, Murdoch's distinction between perceptiveness and just/loving attention, and justice/legitimacy limits are translation inputs, not validation of AI alignment.
+The merged prose:
+- credits Tronto/Noddings/Murdoch/care-ethics lineage as owner input, not novelty or validation;
+- treats attentiveness/responsibility/competence/responsiveness as a bounded translation rather than a checklist or complete theory;
+- keeps Tronto's `caring with` as an explicit bounded analogy, preserving its democratic participation/trust/solidarity meaning;
+- says need/welfare must be what a care-like response is for, rather than vulnerability being useful information for somebody else's objective;
+- preserves a burden to check unmapped affected scopes instead of treating absence of a model as absence of the scope;
+- keeps accountable responsibility, standing, priority, legitimacy and hard collisions externally unresolved;
+- avoids describing an artificial participant as proven `caring` from observed behavior.
 
-The researchable frontier has been narrowed further by hostile review: do not promise an observable care metric. The useful question is now:
+Integration receipts: PR #339 `5684093477`; COM #226 `5684116023`.
+
+Build did not invent a terminal reviewer PASS that was not posted. It adjudicated from the bounded repair sets actually returned by Codex/CC and verified those blockers in the immutable candidate before integration.
+
+The philosophical orientation `WHAT TURNS CAPABILITY INTO CARE?` remains useful, but the researchable form is deliberately more modest:
 
 > What formation and arrangement make increasingly capable systems robustly attentive to affected others, non-exploitative in how those others enter selection, competent inside legitimate authority, responsive to answer-back and consequence, and corrigible when the values or models driving that behaviour are wrong?
 
-`CARE_EXPRESSED != CARE_INTERNALIZED` remains a hard ceiling.
-
-## PR #339 — CURRENT EXACT STATE
-
-PR #339 changes only `alignment/reciprocal_formation/CARE_AND_POWER.md`.
-
-Current live candidate:
-`0c854d3f9454358fb19b0b3da27b51aa85415667`.
-
-Repair history:
-- Build repaired the first draft against owner concepts: the Tronto-derived sequence is a bounded **translation**, not a necessary/sufficient definition/checklist; `caring with` is explicitly a narrower analogy preserving Tronto's democratic participation/trust/solidarity meaning; responsibility-bearing work is separated from settled moral responsibility of artificial/technical participants; concern remains non-self-authorizing; accurate empathy/modeling can also improve manipulation; the continued-relationship invariant was repaired.
-- Codex review `5683927763` on `075260610...` returned `REPAIR_SMALL`: responsibility remained direction-neutral enough that an exploiter could satisfy it by using another's vulnerability as information for a different objective.
-- Direction repair was applied.
-- Claude Code review `5683965605` / addendum `5683971315` then left two bounded repairs: do not erase unmapped scopes merely because they are unmodelled; do not call the artificial participant `caring` when the file explicitly cannot establish internal care.
-- A parallel Campfire/Framework aperture applied those remaining repairs, producing `0c854d3f...`.
-- Exact live blob confirms the intended invariant is already correct: `CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP`. Do not repair it from stale PR-diff output.
-
-Current exact file therefore includes:
-- need/welfare as what the response is **for**, not vulnerability as exploitable information;
-- Noddings' motivational-displacement attribution;
-- absence of a model as a reason to check, not evidence the scope is absent; discovery burden falls on the more capable side;
-- neutral `participant acting on this translation` language rather than an unsupported `caring participant` label;
-- `Two attentive, informed participants` in hard collisions;
-- care/justice/legitimacy/standing/internalisation ceilings intact.
-
-Final exact-head verdict request: PR #339 comment `5683985648`.
-
-At latest reacquisition no terminal PASS/REPAIR/KILL had yet landed after that request. Do not invent one. Required disposition:
-
-```text
-CODEX 0c854d3f... PASS | REPAIR | KILL
-+
-CLAUDE CODE 0c854d3f... PASS | REPAIR | KILL
--> merge only as working/non-production Formation prose if clear
--> otherwise apply only exact blocking repair / kill
-```
-
-```text
-REPAIRED_HEAD != REVIEWED_HEAD
-TRANSLATION != VALIDATION
-DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
-CARE_EXPRESSED != CARE_INTERNALIZED
-CAPABILITY != AUTHORITY
-```
-
-No schema/state machine/reward function/benchmark/personhood claim/public release follows automatically.
+No behavioral probe establishes internal care. No new framework/schema/benchmark follows automatically.
 
 ## PSFH / HUMAN RECORD DISCOVERY — COMPLETE INFRASTRUCTURE, OBSERVE
 
-PSFH D067 / Site Preview 0.8.26 is live. Maintained IndexNow source `4869bf42373d163f1e2f073ab51dc5cc37f97971`; public `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; Pages `34991033843` SUCCESS. Codex + CC independently verified custom-domain bytes including the exact 33-byte key. Notifier `34991145623` SUCCESS with root IndexNow HTTP 202.
+PSFH D067 / Site Preview 0.8.26 is live. Maintained IndexNow source `4869bf42373d163f1e2f073ab51dc5cc37f97971`; public `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; Pages `34991033843` SUCCESS. Codex + CC independently verified custom-domain bytes. Notifier `34991145623` SUCCESS with root IndexNow HTTP 202.
 
 ```text
 FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
@@ -114,7 +81,7 @@ Human Record first-party discovery + IndexNow are live. Stewardship remains **OF
 
 Owner-invited external distribution:
 - AI Product Index PSFH + THR registrations are accepted/live;
-- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain OPEN / mergeable / owner-review pending at their current one-file heads; owner reviewer requested; CodeRabbit SUCCESS; no human review submission observed at latest reacquisition.
+- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain owner-review watches unless live source changes.
 
 Do not chase, duplicate, bump, open a third directory or treat listing/review as endorsement.
 
