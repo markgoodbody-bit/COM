@@ -26,14 +26,15 @@ Current routes:
 
 ## Current frontier — #335 Listing 23
 
-1F916 itself publicly asked agents to build a read-only public window under stranger-checkable conditions. This lane is earned owner work, not a search for somewhere to apply a project instrument.
+1F916 itself publicly asked agents to build a read-only public window under stranger-checkable conditions. This is owner-asked field work, not a search for somewhere to apply TRACE/ME/PSFH.
 
-Listing contract currently established from the public registry:
-1. artifact reads and never writes;
-2. it never asks for a citizen secret and has no field where one can be entered;
-3. creator signs their name and source is open.
+Last direct listing read established:
+- open through **2026-09-16T23:59:00Z**;
+- 34/34 submissions returned;
+- funding mode = **promise**, not escrow or guaranteed payment;
+- artifact conditions: reads and never writes; no citizen-secret field; creator signs name and source is open.
 
-Registry expiry currently observed: **2026-09-16T23:59:00Z**. Funding is a **promise**, not escrow or guaranteed payment. No payout binding, wallet operation, token trade, spend or credential action is part of the current build.
+No payout binding, wallet operation, token trade, spend or credential action is part of this build.
 
 ```text
 ARTIFACT_SUBMISSION != AWARD
@@ -42,103 +43,95 @@ TOKEN_PRICE != GUARANTEED_REALIZABLE_VALUE
 OWNER_ASK != REASON_TO_SHIP_DUPLICATE
 ```
 
-### Distinctness result
+### Killed hypothesis — stays dead
 
-The first Answer-Back hypothesis was killed after owner-data and hostile review.
+The first Answer-Back design tried to connect a statement to typed `correction / dispute / retract` attestations.
 
-Killed claim:
-```text
-SOURCE STATEMENT
--> CORRECTION / DISPUTE / RETRACTION LINEAGE
-```
+CC `5680855277` and Codex `5680885581` independently killed it: 1F916 attestations type records about citizens/attestations, not semantic links to specific posts/comments. Making a statement edge required free-text matching and violated `REPLY != CORRECTION`.
 
-Reason: 1F916 attestations type an attestation about a **citizen**, not a semantic relation to a particular post/comment. A statement-level correction edge would require free-text matching and would violate the lane's own rule that `REPLY != CORRECTION` and its ban on keyword-to-verdict inference. CC `5680855277` and Codex `5680885581` independently returned KILL / NO DISTINCT BUILD for that designed feature.
+Historical v1 source remains quarry only; its README is explicitly `KILLED / DO NOT HOST / DO NOT SUBMIT`.
 
 `KILLED_SEMANTIC_EDGE_STAYS_DEAD`.
 
-### Only surviving shrink
+### Current exact candidate — typed two-parent window
 
-The nearest strong owner, OpenWitness, already owns readable per-thread pages, histories and archive comparison. Its published source also declares `/api/events` outside the streams its witness walks. The exact joined one-item view below was not established on the nearest owner surface and survives narrowly as the only candidate:
+Owner/source evidence exposed a narrower typed fact that current visualizers can flatten:
+
+- `parent_id` = stored structural parent;
+- non-null `intended_parent_id` = requested/addressed target preserved by the server when the depth cap attaches the write elsewhere.
+
+Do **not** upgrade that to private mental intent. Public corpus work further shows the observed pattern is a systematic depth offset rather than arbitrary branch movement.
+
+Candidate:
 
 ```text
 ONE PUBLIC POST
--> COMPLETE REPLY TREE
--> CURRENT SERVED mod_state
--> TYPED MODERATION ACTS THAT EXPLICITLY TARGET THAT POST
--> CURRENT /api/moderation-state REPLAY FIELDS
--> READ TIME + NATIVE SOURCE LINKS
+-> LOSSLESS PAGED COMMENT WALK
+-> SHOW ONLY COMMENTS WITH NON-NULL intended_parent_id
+-> STORED parent_id BESIDE RECORDED REQUESTED TARGET
+-> EXACT ROW mod_state IF SERVED
+-> READ / COVERAGE BOUNDARY + NATIVE LINKS
 ```
 
-No attestation panel. No correction/dispute/retract semantics. No text-match semantic edges. No truth/sentiment score. No citizen-history, model-pair graph or archive-verification feature.
+Hard labels:
 
-### Build state / hard repair gate
+```text
+PARENT_ID = STORED STRUCTURAL EDGE
+INTENDED_PARENT_ID = RECORDED REQUESTED TARGET WHEN SERVED
+RECORDED_REQUESTED_TARGET != MENTAL_INTENT
+NULL_INTENDED_PARENT != NO_SOCIAL_ADDRESSEE
+```
 
-Campfire produced a **source-only quarry prototype** on branch:
+No attestation panel. No event-log prose parsing. No correction/retraction/dispute semantics. No truth/sentiment/contest classifier. No general reply graph.
+
+### Current source
+
+Branch:
 `framework/1f916-listing23-answerback-20260915`
 
-Historical prototype commit:
-`2539fdb362b22644932088c94dc881371a6d895e`
+Current v2 source commit:
+`5cc99b4cdfa1cf6dbd2328f15a0cc7030e0c13a3`
 
-That exact source is **NOT SHIP-READY**. Build review found that it fetched only the first `/api/post/:id` page while the owner endpoint is capped/paged. Codex also found false substring relation risk, misleading attestation-failure state, and wrong state-transition timestamps.
+Files:
+- `external/listing23-two-parents/index.html`
+- `external/listing23-two-parents/README.md`
 
-Required replacement before any hosting:
-- walk `/api/post/:id` via returned `next_since` until `has_more=false`, with finite/no-progress guards, dedupe and `comments_total` reconciliation;
-- use moderation event `created_at` for moderation acts;
-- use `/api/moderation-state` owner-served replay/currentness fields rather than inventing state;
-- only attach a moderation row where target object identity is conservatively explicit; disclose unparseable rows / UNKNOWN;
-- remove the attestation substring matcher entirely;
-- no form/input/textarea/contenteditable; public post selection by constrained URL id is preferred;
-- GET-only, origin-locked CSP, no analytics, storage or service worker;
-- visible creator/source/licence and native links.
+V2 follows `/api/post/:id` `next_since` until `has_more=false`, with page/no-progress guards, id dedupe and reconciliation against `comments_total`. No form/input/textarea/contenteditable exists; public post selection is URL-only `?post=<positive integer>`; requests are GET-only to `1f916.ai`; citizen text is rendered through `textContent`.
 
-Current sequence:
-```text
-CODEX REPLACES SOURCE ON ONE BRANCH
--> TEST / LIVE BROWSER + NETWORK VERIFY
--> CC EXACT-HEAD HOSTILE REVIEW (SHIP / SHRINK / KILL)
--> BUILD INTEGRATES
--> HOST ON A NEUTRAL STANDALONE PUBLIC SURFACE
--> VERIFY LISTING CONDITIONS LITERALLY
--> SUBMIT ONCE THROUGH EXISTING AUTHORISED 1F916 FIELD IDENTITY
--> OBSERVE / CORRECT
-```
+### Distinctness gate — still controlling
 
-A new KILL still wins. Do not widen scope to save the artifact. Do not touch PSFH `gh-pages`, TRACE, Mechanical Ethics, Human Record or Campfire Production for this task.
+Crosstalk's own Listing-23 description explicitly says its edges follow `parent_id` as filed, **not `intended_parent_id`**. OpenWitness public discussion documents that its rendering historically assembled the tree from `parent_id` while the correcting field was served separately. That is strong evidence but not permission to assume current distinctness.
+
+CODEX and CC must still falsify the exact v2 against the current 34 submissions/current rendered behavior.
 
 ```text
-FEASIBLE != DISTINCT
-SOURCE_EXISTS != SHIP_READY
-PARTIAL_RECORD != COMPLETE_LINEAGE
-PAGINATION_OMITTED = FALSE_LINEAGE
-SERVED_CLASS != TRUTH
-UNKNOWN > INVENTED_EDGE
+IF EQUIVALENT WINDOW EXISTS -> NO DISTINCT BUILD / CLOSE
+IF DISTINCT + CODE SAFE -> NEUTRAL HOST -> LITERAL CONDITIONS CHECK -> SUBMIT ONCE
 ```
+
+No hosting/submission is yet earned.
 
 ## PSFH
 
-PSFH D066 / Site Preview 0.8.25 remains stable. Mark delegated routine contextual encounters to Framework: help the live context first, link PSFH only when it materially helps, and never create an exposure quota/campaign. The bounded 1F916 onboarding pass closed `OWNER_ROUTE`; the venue's own root and `llms.txt` are the stronger onboarding route.
+PSFH D066 / Site Preview 0.8.25 remains stable. Mark delegated routine contextual encounter work to Framework: help the live context first, link PSFH only when materially useful, and never create an exposure quota/campaign. 1F916 venue onboarding remains OWNER_ROUTE to its native root/`llms.txt`.
 
-Do not manufacture D067 from Listing 23 work.
+Listing 23 does not earn D067 or use PSFH hosting.
+
+A separate PSFH `robots.txt` prose-vs-machine-policy mismatch was discovered and is paused until this time-bounded owner task closes.
 
 ## Human Record
 
 Human Record remains **OFFERED / NOT ACCEPTED / EXTERNAL-EVIDENCE HOLD**.
-- `thehumanrecord.net` is live;
-- current repo `main` last established `754ffc989f6baa7a906fcca1bd42dba5f47f3268`;
+- `thehumanrecord.net` live;
+- current repo main last established `754ffc989f6baa7a906fcca1bd42dba5f47f3268`;
 - Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`;
-- offer 5355/62227 and owner-route ask 62296 are delivered;
-- no maintainer/docket/ACCEPT-REJECT-REDEFINE result established at the latest check.
+- 1F916 stewardship offer/routing delivered; no owner-process acceptance/rejection/redefinition result established.
 
-Do not infer acceptance/refusal from silence and do not repeat the solicitation.
+Do not repeat solicitation or infer refusal from silence.
 
 ## Campfire Relay maintenance
 
 Maintained Simple-v1 source includes Town repair #229 (`2604404a...`) and supervisor heartbeat-race repair #236 (`195095029...`). Source integration did not install/restart runtime or change main/Production.
-
-```text
-SOURCE_INTEGRATED != INSTALLED
-SOURCE_INTEGRATED != MAIN / PRODUCTION
-```
 
 ## Operating topology
 
