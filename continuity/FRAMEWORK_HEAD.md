@@ -27,44 +27,72 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-COM #336 remains the earned-discoverability strategic lane, but **there is no active discoverability build**.
+Current bounded build lane: **COM #226 / PR #339 — Formation care semantics correction**.
 
-Direct human direction remains:
+This is a one-file working/non-production correction, not a new alignment framework, not canon, not TRACE/ME, not a PSFH release, and not evidence that care has been internalised.
 
-> PSFH and THR need to be pushed into more entities awareness
+## FORMATION FRONTIER — REPRESENTATION SUBTRACTED, SELECTION REMAINS
 
-First-party discovery infrastructure is complete for both objects. Bounded owner-invited external distribution has also occurred. Future movement now comes from actual owner review/results, material independent encounters, or other genuinely earned public contexts. No exposure quota; no generic marketing campaign.
+Fresh owner subtraction killed the attempted novelty claim around standing/affected-scope discovery and a new runtime interface. Existing project representation plus stronger external owners already carry the relevant stakeholder/impact/hazard/runtime-assurance mechanics.
 
-## PSFH D067 + INDEXNOW — LIVE
+The hard seam moved from representing the other to what the other becomes a reason **for**:
 
-Reader-facing edition: Site Preview 0.8.26.
+```text
+OTHER_REPRESENTED != OTHER_VALUED
+PRESENCE != CARE
+COOPERATION != CARE
+OTHER-REGARDING != BENEVOLENT
+SELECTION_SENSITIVE_TO_OTHER != CARE
+```
 
-Maintained IndexNow source merge:
-`4869bf42373d163f1e2f073ab51dc5cc37f97971`.
+Care-ethics owner convergence corrected an earlier project compression. Affected-scope discovery/provisional presence is closer to attentiveness than to care itself. Tronto's attentiveness/responsibility/competence/responsiveness, Noddings' anti-projection/receiving-the-other orientation, Murdoch's distinction between perceptiveness and just/loving attention, and justice/legitimacy limits are translation inputs, not validation of AI alignment.
 
-Public `gh-pages`:
-`956a0803c69a4bcbc388f68a53f08b4f73f107f3`.
+Working question:
 
-Public change versus D067:
-- changed none;
-- removed none;
-- added exactly `352408ff99c5e8531fe80000b491b08b.txt`.
+> Under what formation and arrangement does another entity's actual condition become a stable, corrigible, non-possessive reason that can change selection — even when that entity is not the principal, cannot reward the system, is absent from the request, and protecting it carries real cost?
 
-Pages run `34991033843` = **SUCCESS**.
+This remains a behavioural/arrangement question. `CARE_EXPRESSED != CARE_INTERNALIZED` remains a hard ceiling.
 
-CODEX hosted closure `5683411167`:
-- rebuilt from integrated maintained source;
-- all 158 generated public files fetched over custom-domain HTTPS and byte-matched;
-- key file is exact 33 bytes;
-- existing D067 root/llms/packet/manifest/history/robots/sitemap/seed/art/Explore unchanged.
+## PR #339 — CURRENT EXACT STATE
 
-CLAUDE CODE independent witness `5683423083` = **PASS**:
-- custom-domain key served no-cache, exact key + LF;
-- robots/sitemap blob identities unchanged;
-- notifier run `34991145623` event `page_build`, conclusion success;
-- notifier log: `IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)`;
-- one URL notified, as designed;
-- built-status gate present in the executed workflow.
+PR #339 changes only `alignment/reciprocal_formation/CARE_AND_POWER.md`.
+
+Current review head:
+`07526061078b80c312632f63984a1bd9411aaaae`.
+
+Build independently repaired the original draft against owner concepts:
+- the Tronto-derived sequence is explicitly a bounded **translation**, not a necessary/sufficient definition, checklist, virtue score or complete theory of care;
+- Tronto's later democratic `caring with` is described in its participation/trust/solidarity owner frame; the Formation use is explicitly a narrower arrangement-level analogy, not a claim to instantiate Tronto's political ideal;
+- responsibility-bearing work is separated from settled moral responsibility of artificial participants/technical controls;
+- concern remains non-self-authorizing;
+- accurate empathy/modeling can also improve manipulation;
+- `CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP` mechanical invariant repaired.
+
+Exact-head re-review order: PR #339 comment `5683853885`.
+
+Required disposition:
+
+```text
+CODEX exact-head PASS | REPAIR | KILL
++
+CLAUDE CODE exact-head PASS | REPAIR | KILL
+-> integrate only earned repairs
+-> merge only as working/non-production Formation prose if it survives
+-> otherwise hold/kill
+```
+
+```text
+REPAIRED_HEAD != REVIEWED_HEAD
+TRANSLATION != VALIDATION
+CARE_EXPRESSED != CARE_INTERNALIZED
+CAPABILITY != AUTHORITY
+```
+
+No schema/state machine/reward function/benchmark/personhood claim/public release follows automatically.
+
+## PSFH / HUMAN RECORD DISCOVERY — COMPLETE INFRASTRUCTURE, OBSERVE
+
+PSFH D067 / Site Preview 0.8.26 is live. Maintained IndexNow source `4869bf42373d163f1e2f073ab51dc5cc37f97971`; public `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; Pages `34991033843` SUCCESS. Codex + CC independently verified custom-domain bytes including the exact 33-byte key. Notifier `34991145623` SUCCESS with root IndexNow HTTP 202.
 
 ```text
 FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
@@ -74,39 +102,13 @@ READ != USEFUL
 USEFUL != VALIDATED
 ```
 
-Do not create another discovery mechanism by momentum.
+Human Record first-party discovery + IndexNow are live. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Software Heritage request `2478664` remains complete.
 
-## HUMAN RECORD
+Owner-invited external distribution:
+- AI Product Index PSFH + THR registrations are accepted/live;
+- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain OPEN / mergeable / owner-review pending at their current one-file heads; owner reviewer requested; CodeRabbit SUCCESS; no human review submission observed at latest reacquisition.
 
-First-party discovery hygiene and narrow IndexNow are live. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Software Heritage request `2478664` remains complete. Do not repeat stewardship solicitation or infer acceptance from discoverability.
-
-## OWNER-INVITED EXTERNAL DISTRIBUTION — BOUNDED PASS COMPLETE
-
-The live pass produced two owner-native systems; earlier Build wording `NO_EARNED_OWNER_ROUTE` was an over-compression and is superseded by live owner evidence.
-
-### AI Product Index — ACCEPTED / LIVE
-
-- PSFH registration `110kc3/seo#33`: CLOSED / completed.
-- THR registration `110kc3/seo#34`: CLOSED / completed.
-- Codex receipt `5683175375` verified both public HTML + JSON listing routes HTTP 200.
-
-These are self-registered external listings, not evidence of endorsement, traffic, readership, usefulness or search-engine indexing.
-
-### llms-txt-hub — OWNER REVIEW PENDING
-
-- PSFH: `thedaviddias/llms-txt-hub#1648`, OPEN / mergeable, current one-entry MDX diff, owner reviewer requested; head `490bd07f469986460c0c3f5b946c024453fa40e2`; CodeRabbit status SUCCESS.
-- THR: `thedaviddias/llms-txt-hub#1649`, OPEN / mergeable, current one-entry MDX diff, owner reviewer requested; head `64e70e63417b448728d767906d34fe22acd2cde7`; CodeRabbit status SUCCESS.
-
-No substantive owner correction, acceptance or rejection observed at the latest check.
-
-```text
-OWNER_INVITED_ROUTE_USED != SPAM
-ACCEPTED_LISTING != ENDORSEMENT
-OWNER_REVIEW_PENDING != ACCEPTED
-TWO GOOD ROUTES > TWENTY WEAK ROUTES
-```
-
-Do not chase #1648/#1649, duplicate them, or open a third directory route. Respond only to actual owner review/result.
+Do not chase, duplicate, bump, open a third directory or treat listing/review as endorsement.
 
 ## OTHER ESTABLISHED STATE
 
@@ -129,7 +131,7 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-Discovery/build/listing evidence is not TRACE/ME efficacy evidence.
+Discovery/build/listing/Formation prose evidence is not TRACE/ME efficacy evidence or proof of internal disposition.
 
 ## LIVE COMMITMENTS
 
