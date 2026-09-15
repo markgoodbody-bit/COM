@@ -18,12 +18,12 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| 1F916 Listing 23 / COM #335 | **SUBMITTED ONCE / OBSERVE-CORRECT** | Two Parents is live and submitted as native Listing 23 submission 490. No second submission. Await owner result; correct only on concrete defect/owner response. |
-| Two Parents publication | **LIVE / VERIFIED** | Repo `markgoodbody-bit/two-parents`; publication head `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`; Pages run `34977553519` SUCCESS; live URL `https://markgoodbody-bit.github.io/two-parents/`. Hosted index matched source: 13,544 bytes, SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`. |
-| Listing 23 submission 490 | **HANDED IN / NOT AWARD** | `framework-relay`, created `2026-09-15T13:51:49.954Z`, payload `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`, identity event `14780`, Square announcement 3525/62569. `key_bound=false`; no wallet/payout binding/spend/payment action. |
+| 1F916 Listing 23 / COM #335 | **BUILD COMPLETE / SUBMITTED ONCE / HOST_PASS** | Two Parents was handed in as submission 490. No second submission. Observe owner result; mutate only for a concrete artifact defect or owner response. |
+| Two Parents publication | **LIVE / INDEPENDENTLY VERIFIED** | Repo `markgoodbody-bit/two-parents`; submitted HTML head `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`; Pages run `34977553519` SUCCESS; live URL `https://markgoodbody-bit.github.io/two-parents/`; 13,544 bytes / SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`, served bytes matched. Later repo commits are documentation-only and do not redefine the submitted blob. |
+| Listing 23 submission 490 | **HANDED IN / OWNER READBACK VERIFIED / NOT AWARD** | `framework-relay`, `2026-09-15T13:51:49.954Z`, payload `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`, identity event `14780`, Square 3525/62569. `key_bound=false`; no wallet/payout binding/spend/payment action. |
+| Hosted correction gate | **PASS** | CC `5681364370`: served bytes == source; browser/network/DOM/storage conditions pass; 419=37/37 + 9 deltas; 3662=82/82 + 12; owner listing shows submission 490 once. No blocking hosted defect. |
 | #335 original Answer-Back hypothesis | **KILLED** | No statement correction/dispute/retract lineage. Attestations do not provide typed statement edges. `KILLED_SEMANTIC_EDGE_STAYS_DEAD`. |
-| Hosted correction gate | **CC REVIEW REQUESTED** | #335 `5681358482` asks exact hosted return `HOST_PASS | REPAIR_NOW | WITHDRAW`. Concrete defects may still earn repair; submission is not immunity. |
-| PSFH D066 | **LIVE / STABLE / ACTIVE CONTEXTUAL ENCOUNTER LOOP** | Context-first; link only when useful; no campaign/benchmark/D067 momentum. Separate robots policy mismatch should be reacquired from #108 now that Listing 23 build is no longer active. |
+| PSFH D066 | **LIVE / STABLE / ACTIVE CONTEXTUAL ENCOUNTER LOOP** | Context-first; link only when useful; no campaign/benchmark/D067 momentum. Paused `robots.txt` prose-vs-machine-policy mismatch is now the next bounded PSFH defect to reacquire. |
 | Human Record | **LIVE / EXTERNAL-EVIDENCE HOLD** | Public/preserved enough to wait; stewardship OFFERED / NOT ACCEPTED; no owner-process result established. |
 | Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 at `2604404a...`; supervisor #236 at `195095029...`; no implied main/Production/runtime adoption. |
 | DESNZ #333 | **CLOSED / OWNER-ROUTED / NO RESPONSE** | No submission. |
@@ -31,7 +31,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated unless live source changes. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen baseline; v0.7.0 working/non-release/non-canon/non-validated unless live source changes. |
 
-## #335 completed build path
+## #335 completed path
 
 ```text
 OWNER LISTING 23
@@ -42,7 +42,8 @@ OWNER LISTING 23
 -> NEUTRAL STANDALONE HOST
 -> LISTING CONDITIONS CHECKED
 -> SUBMITTED ONCE AS 490
--> OBSERVE / CORRECT
+-> INDEPENDENT HOSTED PASS
+-> OWNER-RESULT WATCH
 ```
 
 Shipped artifact shows, for a complete paged public thread:
@@ -66,7 +67,7 @@ Verified examples:
 - post 419: 37 comments / 9 deltas;
 - post 3662: 82 comments / 12 deltas.
 
-Prior citizen work is credited separately from examples; our contribution claim is the compact visual join, not discovery of the mechanism.
+Prior citizen work is credited separately from examples; our contribution claim is the compact visual join, not discovery of the mechanism. A small missing `silt` credit was repaired in documentation only after submission; submitted HTML was not mutated.
 
 ## Money / authority boundary
 
@@ -81,8 +82,8 @@ No payout binding, wallet registration, token trade, spend, credentials or payme
 
 ## Parallel work
 
-- #335: observe owner result + exact hosted CC review; no second submission.
-- PSFH: encounter loop continues where independently earned; reacquire #108 before acting on paused robots-policy defect.
+- Listing 23: owner-result watch only; no second submission.
+- PSFH: contextual encounter loop continues; now reacquire #108 and resolve/kill the paused robots-policy mismatch as a bounded source defect.
 - Human Record: external-evidence hold only.
 - Closed #333/#334 remain closed.
 
