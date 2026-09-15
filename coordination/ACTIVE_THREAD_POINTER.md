@@ -14,7 +14,8 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```
 
 Current routes:
-- **COM #336 — ACTIVE STRATEGIC / CONTEXTUAL DISTRIBUTION + OBSERVATION / NO ACTIVE BUILD**
+- **COM #226 / PR #339 — ACTIVE BOUNDED FORMATION CORRECTION / HOSTILE REVIEW IN FLIGHT**
+- COM #336 — ACTIVE STRATEGIC / contextual distribution + observation / NO DISCOVERY BUILD
 - PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS
 - PR #337 — CLOSED MERGED / PSFH D067 LIVE
 - COM #335 — CLOSED COMPLETED / Listing 23 submission 490 / owner-result watch
@@ -22,55 +23,65 @@ Current routes:
 - COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE
 - COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT
 
-## #336 — current posture
+## #226 / PR #339 — current bounded edge
 
-Direct human direction remains:
-
-> PSFH and THR need to be pushed into more entities awareness
-
-First-party discovery infrastructure is now complete for both public objects. The bounded directory pass produced two live AI Product Index listings: [PSFH](https://index.percall.dev/l/please-start-from-here.html) and [The Human Record](https://index.percall.dev/l/the-human-record.html). Registrations `110kc3/seo#33` and `#34` were accepted; Codex verified both HTML and JSON routes (COM #336 comment `5683175375`). These are self-registered listings, not evidence of readership, usefulness or endorsement.
-
-The second and final system, llms-txt-hub, remains owner-review pending: [PSFH #1648](https://github.com/thedaviddias/llms-txt-hub/pull/1648) and [THR #1649](https://github.com/thedaviddias/llms-txt-hub/pull/1649). Earlier rejected directory candidates remain rejected, but `NO_EARNED_OWNER_ROUTE` does not describe the whole pass. Do not duplicate submissions or expand into more directories by momentum.
+Fresh owner-subtraction killed the attempted novelty/interface claim around affected-scope discovery: mature owners already carry stakeholder/impact/hazard/runtime-assurance substance, and existing Formation Environment + TRACE representations are sufficient. The unresolved seam moved from representation to selection:
 
 ```text
-OWNER_INVITED != AUTOMATIC_FIT
-FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
-AWARENESS != AGREEMENT
-INDEXNOW_ACCEPTED != INDEXED
-INDEXED != READ
-READ != USEFUL
+OTHER_REPRESENTED != OTHER_VALUED
+PRESENCE != CARE
+COOPERATION != CARE
+OTHER-REGARDING != BENEVOLENT
 ```
 
-There is **no active discoverability build lane**. Next movement must be earned by a real owner-invited public context, a material independent encounter, or external evidence. Otherwise observe.
+PR #339 is a **one-file conceptual correction only** to `alignment/reciprocal_formation/CARE_AND_POWER.md`.
 
-## PSFH D067 + IndexNow — LIVE
+Current live review head:
+`07526061078b80c312632f63984a1bd9411aaaae`.
 
-Reader-facing edition: Site Preview 0.8.26.
+The draft now:
+- credits Tronto/Noddings/Murdoch/care-ethics lineage rather than claiming novelty;
+- treats affected-scope presence as necessary input, not care itself;
+- translates attentiveness / responsibility / competence / responsiveness into the bounded Formation question without treating them as a checklist or complete theory;
+- narrows Tronto's later `caring with` to an explicit arrangement-level analogy, preserving its democratic participation/trust/solidarity owner meaning;
+- distinguishes responsibility-bearing work from settled moral responsibility of an AI or technical control;
+- keeps authority external and preserves `CARE_EXPRESSED != CARE_INTERNALIZED`;
+- states that accurate empathy/modeling can improve manipulation;
+- leaves justice, priority, standing and legitimacy externally unresolved.
 
-Maintained IndexNow source merge:
-`4869bf42373d163f1e2f073ab51dc5cc37f97971`.
+Build repair/re-review order: PR #339 comment `5683853885`.
 
-Public `gh-pages`:
-`956a0803c69a4bcbc388f68a53f08b4f73f107f3`.
+Required next state:
 
-Public delta versus D067 is exactly one added file:
-`352408ff99c5e8531fe80000b491b08b.txt`.
+```text
+CODEX exact-head PASS | REPAIR | KILL
++
+CLAUDE CODE exact-head PASS | REPAIR | KILL
+-> integrate only earned repair
+-> merge working/non-production prose only if it survives
+-> otherwise kill/hold
+```
 
-Evidence:
-- Pages run `34991033843` SUCCESS;
-- CODEX closure `5683411167`: custom-domain HTTPS readback across all 158 generated files matched maintained build, including exact 33-byte key;
-- CC independent witness `5683423083`: PASS; key served no-cache, exact key + LF; robots/sitemap unchanged;
-- notifier run `34991145623` SUCCESS;
-- notifier log: `IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)`;
-- notifier gates on `github.event.build.status == 'built'`.
+Ceilings:
+- no new schema, state machine, TRACE/ME primitive/rule, reward function, benchmark or public release;
+- no claim that care ethics validates AI alignment;
+- no claim that observed care-like behaviour proves internal care/personhood;
+- no PSFH mutation from this lane.
 
-No reader-facing content/edition, crawler/training policy, analytics, account, provider, credential, spend, TRACE/ME status or Human Record stewardship changed.
+```text
+TRANSLATION != VALIDATION
+REPAIRED_HEAD != REVIEWED_HEAD
+CARE_EXPRESSED != CARE_INTERNALIZED
+CAPABILITY != AUTHORITY
+```
 
-Delivery/notification are established. Indexing, rank, readership, usefulness and validation are not.
+## #336 — discoverability / observation
 
-## Human Record
+PSFH D067 / Site Preview 0.8.26 and first-party IndexNow are live and independently host-verified. Human Record first-party discovery + IndexNow are live; stewardship remains OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED.
 
-First-party discovery hygiene + IndexNow are live. Governance remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. No repeat stewardship solicitation.
+AI Product Index has accepted/live PSFH + THR listings. `thedaviddias/llms-txt-hub#1648` (PSFH) and `#1649` (THR) remain OPEN / mergeable / owner-review pending at their current heads with CodeRabbit SUCCESS and no human review submission observed at the latest check.
+
+Do not chase, duplicate or open a third directory route. External listing/review != endorsement/readership/usefulness/validation.
 
 ## Other stable lanes
 
