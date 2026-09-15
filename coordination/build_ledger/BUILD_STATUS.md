@@ -23,7 +23,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | PSFH IndexNow source | **INTEGRATED** | PR #338 merged at maintained source `4869bf42373d163f1e2f073ab51dc5cc37f97971`. |
 | PSFH IndexNow publication | **LIVE / INDEPENDENT HOST PASS** | `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; exactly one added key file; Pages `34991033843` SUCCESS. |
 | PSFH IndexNow notifier | **LIVE / FIRST RUN SUCCESS** | Run `34991145623` SUCCESS; root notification HTTP 202; built-status gate present. |
-| Owner-directory pass | **CLOSED / NO_EARNED_OWNER_ROUTE** | Do not force a listing or repeat the sweep by momentum. |
+| Owner-directory pass | **BOUNDED PASS COMPLETE / TWO LISTINGS LIVE / SECOND SYSTEM PENDING** | AI Product Index accepted PSFH and THR (#33/#34); both HTML + JSON routes verified (COM #336 `5683175375`). llms-txt-hub #1648/#1649 await owner review. No readership/benefit claim; no duplicate or further directory sweep. |
 | Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party hygiene live; no indexing/ranking/benefit claim. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
 | Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Owner-result watch only. `SUBMITTED != AWARDED != PAID`. |
@@ -35,7 +35,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 
 ```text
 D067 LIVE
--> DIRECTORY PASS = NO_EARNED_OWNER_ROUTE
+-> DIRECTORY PASS = AI PRODUCT INDEX LIVE / LLMS HUB OWNER REVIEW PENDING
 -> INDEXNOW SOURCE MERGED 4869bf42...
 -> gh-pages 956a0803... = ONE KEY FILE ONLY
 -> PAGES 34991033843 SUCCESS

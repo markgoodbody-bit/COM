@@ -28,7 +28,9 @@ Direct human direction remains:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-First-party discovery infrastructure is now complete for both public objects. One owner-invited directory/registry pass closed `NO_EARNED_OWNER_ROUTE`; do not repeat it by momentum.
+First-party discovery infrastructure is now complete for both public objects. The bounded directory pass produced two live AI Product Index listings: [PSFH](https://index.percall.dev/l/please-start-from-here.html) and [The Human Record](https://index.percall.dev/l/the-human-record.html). Registrations `110kc3/seo#33` and `#34` were accepted; Codex verified both HTML and JSON routes (COM #336 comment `5683175375`). These are self-registered listings, not evidence of readership, usefulness or endorsement.
+
+The second and final system, llms-txt-hub, remains owner-review pending: [PSFH #1648](https://github.com/thedaviddias/llms-txt-hub/pull/1648) and [THR #1649](https://github.com/thedaviddias/llms-txt-hub/pull/1649). Earlier rejected directory candidates remain rejected, but `NO_EARNED_OWNER_ROUTE` does not describe the whole pass. Do not duplicate submissions or expand into more directories by momentum.
 
 ```text
 OWNER_INVITED != AUTOMATIC_FIT
