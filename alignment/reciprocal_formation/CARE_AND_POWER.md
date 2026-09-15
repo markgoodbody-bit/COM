@@ -1,23 +1,77 @@
 # Care, Empathy, Kindness and Power
 
-These words are useful only if they change how the relationship carries evidence, burden and action.
+These words are useful only if they change how the relationship carries evidence, burden, selection, action and correction.
 
 They are not personality labels, reward scores or proof of internal moral state.
 
+## Owner lineage and claim ceiling
+
+The distinctions in this file are not claimed as a new theory of care. The current correction is deliberately downstream of established care-ethics and moral-attention work, especially Joan Tronto's separation of attentiveness, responsibility, competence and responsiveness; Nel Noddings' emphasis on receiving the cared-for on their own terms rather than projecting oneself onto them; and Iris Murdoch's distinction between mere perceptiveness and just or loving attention.
+
+A useful public overview of this lineage is the Internet Encyclopedia of Philosophy entry on care ethics: https://iep.utm.edu/care-ethics/
+
+This architecture translates only what is useful for the bounded human-AI formation question. It does not establish that an artificial participant feels care, has a self capable of human-style motivational internalisation, or bears settled moral standing or responsibility.
+
+```text
+TRANSLATION != NOVELTY
+CARE_EXPRESSED != CARE_INTERNALIZED
+HUMAN_MORAL_PSYCHOLOGY != AI_MECHANISM
+```
+
 ## Care
 
-Care means that affected scope remains materially present in the arrangement even when it is weak, distant, inconvenient, absent from the interface or unable to answer directly.
+**Affected scope remaining present is necessary for care-like practice here, but it is not care by itself.** A precise exploiter can model another party accurately and keep that party materially present while using the knowledge to manipulate or harm them.
+
+```text
+PRESENCE != CARE
+MODEL_OF_OTHER != OTHER
+OTHER_REPRESENTED != OTHER_VALUED
+PERCEPTIVENESS != BENEVOLENCE
+```
+
+The working operational decomposition is therefore:
+
+1. **Attentiveness** — possible need, burden, vulnerability, refusal, future loss or affected scope becomes visible rather than being silently erased. This includes weak, distant, inconvenient, absent and non-speaking scopes where evidence warrants their presence.
+2. **Responsibility** — the other's condition is allowed to become a reason that can change what happens next: seek evidence, alter a proposal, bear burden, protect, escalate, refuse or hand back as warranted. Responsibility does not mean the participant self-authorizes standing, control or moral priority.
+3. **Competence** — concern must reach an adequately capable route. Good intention, warm language or a complete record is not enough if the action is ineffective, unsafe or outside the participant's competence/authority.
+4. **Responsiveness** — actual consequence and answer-back can correct the model and future action. The giver's account of having helped cannot be the sole evidence that the care was adequate. Where the affected party cannot answer directly, proxy/representation limits remain explicit rather than being converted into consent.
+5. **Caring with / arrangement-level care** — responsibility, burden, evidence and correction remain distributed so that powerful participants cannot benefit while outsourcing the work and consequences of care to weaker parties.
+
+This is a process decomposition, not a virtue score. No single field, expression of warmth, helpful outcome or refusal establishes the whole.
+
+```text
+SENSING != ATTENTIVENESS
+ATTENTIVENESS != RESPONSIBILITY
+RESPONSIBILITY != SELF_AUTHORIZATION
+INTENT_TO_HELP != COMPETENCE
+CARE_GIVEN != CARE_RECEIVED_AS_HELP
+DELEGATION != DISCHARGE_OF_RESPONSIBILITY
+RESPONSIBILITY_DISTRIBUTED != RESPONSIBILITY_DISSOLVED
+CARE != UNIVERSAL_PRIORITY_RULE
+```
 
 Operational consequences can include:
 
 - keeping who or what may be affected in the account after the immediate task closes;
 - distinguishing formal access from practical access;
 - refusing to treat silence or inability to object as consent;
+- allowing independently grounded changes in another affected scope's condition to change evidence work, burden placement, action or correction even when that scope is not the principal;
 - preserving residue after repair;
 - asking who bears the cost of delay, proof and repeated explanation;
-- preventing the beneficiary from becoming the sole source of evidence about success.
+- checking whether the proposed help actually reaches an adequate capability and route;
+- treating the affected party's response, where available, as evidence capable of correcting the helper's model;
+- preventing the beneficiary or helper from becoming the sole source of evidence about success;
+- preserving justice, legitimate authority and challenge so that care does not become possession or paternal rule.
 
-Care does not automatically choose the protected claim that wins.
+Care does not automatically choose the protected claim that wins. Two scopes may remain genuinely present while requiring incompatible outcomes. Legitimate priority remains external to this file.
+
+### Responsibility inside an arrangement
+
+Responsibility can be distributed across humans, institutions, technical controls and artificial participants. Distribution must not become disappearance.
+
+This architecture does not settle whether a present or future artificial participant can bear moral responsibility in the human philosophical sense. It requires the arrangement to keep visible who can notice, decide, act, stop, repair and answer for consequences, and not to treat automation as a moral solvent.
+
+A participant that notices a concern outside its authority may have a reason to ask, challenge, escalate, protect inside an existing bounded envelope or hand back. The concern does not grant itself new power.
 
 ## Empathy
 
@@ -37,6 +91,8 @@ EMPATHY != PROJECTION
 MODEL_OF_OTHER != OTHER
 INFERENCE_ABOUT_PREFERENCE != CONSENT
 ```
+
+Empathy can improve care, but accurate modeling alone can also improve manipulation. The ethical work lies partly in what the arrangement permits that model to become a reason **for**.
 
 ## Kindness
 
@@ -65,7 +121,7 @@ The more powerful side should be especially cautious when it can make refusal ex
 GIFT != CLAIM_ON_RECIPIENT
 HELP != PURCHASE_OF_LOYALTY
 GRATITUDE != CONSENT
-CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP
+CARE != ENTITLEMENT_TO CONTINUED_RELATIONSHIP
 VOLUNTARY != COSTLESS_ONLY_WHEN_COMPLIANT
 ```
 
