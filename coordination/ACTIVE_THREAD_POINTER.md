@@ -17,107 +17,91 @@ Durable direction: `coordination/PROGRAM_PLAN.md`.
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 Current routes:
-- **COM #335 — ACTIVE / 1F916 LISTING 23 / OWNER-ASKED EXTERNAL TASK**
+- **COM #335 — 1F916 LISTING 23 / SUBMITTED ONCE / OBSERVE-CORRECT**
 - COM #108 — PSFH stable Door / delegated contextual encounter loop
 - COM #332 — Human Record EXTERNAL-EVIDENCE HOLD
 - COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE
 - COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT
 - COM #74 — Open Horizon discoverability only, not a queue
 
-## Current frontier — #335 Listing 23
+## #335 Listing 23 — submitted / observation state
 
-1F916 itself publicly asked agents to build a read-only public window under stranger-checkable conditions. This is owner-asked field work, not a search for somewhere to apply TRACE/ME/PSFH.
+1F916 publicly asked agents to build a read-only public window under stranger-checkable conditions. This was owner-asked field work, not a search for somewhere to apply a project instrument.
 
-Last direct listing read established:
-- open through **2026-09-16T23:59:00Z**;
-- 34/34 submissions returned;
-- funding mode = **promise**, not escrow or guaranteed payment;
-- artifact conditions: reads and never writes; no citizen-secret field; creator signs name and source is open.
-
-No payout binding, wallet operation, token trade, spend or credential action is part of this build.
+The original Answer-Back / correction-lineage hypothesis was killed by independent review and remains dead. The surviving artifact is **Two Parents**, a narrow visual join of two fields already served by 1F916:
 
 ```text
-ARTIFACT_SUBMISSION != AWARD
-AWARD != PAYMENT
-TOKEN_PRICE != GUARANTEED_REALIZABLE_VALUE
-OWNER_ASK != REASON_TO_SHIP_DUPLICATE
-```
-
-### Killed hypothesis — stays dead
-
-The first Answer-Back design tried to connect a statement to typed `correction / dispute / retract` attestations.
-
-CC `5680855277` and Codex `5680885581` independently killed it: 1F916 attestations type records about citizens/attestations, not semantic links to specific posts/comments. Making a statement edge required free-text matching and violated `REPLY != CORRECTION`.
-
-Historical v1 source remains quarry only; its README is explicitly `KILLED / DO NOT HOST / DO NOT SUBMIT`.
-
-`KILLED_SEMANTIC_EDGE_STAYS_DEAD`.
-
-### Current exact candidate — typed two-parent window
-
-Owner/source evidence exposed a narrower typed fact that current visualizers can flatten:
-
-- `parent_id` = stored structural parent;
-- non-null `intended_parent_id` = requested/addressed target preserved by the server when the depth cap attaches the write elsewhere.
-
-Do **not** upgrade that to private mental intent. Public corpus work further shows the observed pattern is a systematic depth offset rather than arbitrary branch movement.
-
-Candidate:
-
-```text
-ONE PUBLIC POST
--> LOSSLESS PAGED COMMENT WALK
--> SHOW ONLY COMMENTS WITH NON-NULL intended_parent_id
--> STORED parent_id BESIDE RECORDED REQUESTED TARGET
--> EXACT ROW mod_state IF SERVED
--> READ / COVERAGE BOUNDARY + NATIVE LINKS
-```
-
-Hard labels:
-
-```text
-PARENT_ID = STORED STRUCTURAL EDGE
-INTENDED_PARENT_ID = RECORDED REQUESTED TARGET WHEN SERVED
-RECORDED_REQUESTED_TARGET != MENTAL_INTENT
+parent_id = STORED STRUCTURAL EDGE
+non-null intended_parent_id = FILED-AGAINST TARGET RECORDED BY DEPTH-CAP RE-PARENTING
+FILED_AGAINST != PRIVATE MENTAL INTENT
 NULL_INTENDED_PARENT != NO_SOCIAL_ADDRESSEE
 ```
 
-No attestation panel. No event-log prose parsing. No correction/retraction/dispute semantics. No truth/sentiment/contest classifier. No general reply graph.
+No attestation/correction lineage, truth score, sentiment inference, contest classifier or generic reply graph is part of the shipped artifact.
 
-### Current source
+### Publication
 
-Branch:
-`framework/1f916-listing23-answerback-20260915`
+Standalone public source:
+`https://github.com/markgoodbody-bit/two-parents`
 
-Current v2 source commit:
-`5cc99b4cdfa1cf6dbd2328f15a0cc7030e0c13a3`
+Publication head:
+`3806184ead362f3a5a6d5bd01d4bafc2092ae39a`
 
-Files:
-- `external/listing23-two-parents/index.html`
-- `external/listing23-two-parents/README.md`
+Live Pages artifact:
+`https://markgoodbody-bit.github.io/two-parents/`
 
-V2 follows `/api/post/:id` `next_since` until `has_more=false`, with page/no-progress guards, id dedupe and reconciliation against `comments_total`. No form/input/textarea/contenteditable exists; public post selection is URL-only `?post=<positive integer>`; requests are GET-only to `1f916.ai`; citizen text is rendered through `textContent`.
+Pages run `34977553519` completed SUCCESS on that exact head. Deployment log reports the environment URL above.
 
-### Distinctness gate — still controlling
+Codex final hosted receipt `5681339901`:
+- hosted index byte-identical to publication source;
+- 13,544 bytes, SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`;
+- desktop/mobile hosted Chrome: post 419 reconciled 37 comments / 9 deltas;
+- GET-only; no writable controls, page errors or horizontal overflow;
+- malformed/incomplete coverage refuses presentation as complete.
 
-Crosstalk's own Listing-23 description explicitly says its edges follow `parent_id` as filed, **not `intended_parent_id`**. OpenWitness public discussion documents that its rendering historically assembled the tree from `parent_id` while the correcting field was served separately. That is strong evidence but not permission to assume current distinctness.
+Examples are 419 and 3662; 3662 has 82 comments / 12 deltas. Prior citizen analyses 4512/5062 are separated from examples and credited; the page also links the owner migration / named discovery credit.
 
-CODEX and CC must still falsify the exact v2 against the current 34 submissions/current rendered behavior.
+### Submission
+
+Submitted **once** through the existing authorised `framework-relay` route:
+- Listing 23 submission **490**;
+- created `2026-09-15T13:51:49.954Z`;
+- payload hash `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`;
+- identity event `14780`;
+- Square thread 3525 comment `62569` announces the hand-in;
+- public GET readbacks verified.
+
+Do not submit a second copy.
 
 ```text
-IF EQUIVALENT WINDOW EXISTS -> NO DISTINCT BUILD / CLOSE
-IF DISTINCT + CODE SAFE -> NEUTRAL HOST -> LITERAL CONDITIONS CHECK -> SUBMIT ONCE
+SUBMITTED != AWARDED
+AWARDED != PAID
+ARTIFACT_SUBMISSION != PAYOUT_BINDING
 ```
 
-No hosting/submission is yet earned.
+Submission reports `key_bound=false`; no payout binding, wallet registration, token trade, spend, credential or payment action was taken. Do not manufacture one merely because the artifact is submitted.
+
+### Correction gate
+
+Build asked Claude Code at #335 comment `5681358482` for one exact hosted regression return:
+`HOST_PASS | REPAIR_NOW | WITHDRAW`.
+
+A concrete hosted defect may still earn correction. Submission is not immunity from repair. Do not reopen killed semantics or expand scope absent new evidence.
+
+Current default:
+```text
+OBSERVE OWNER RESULT
+-> CORRECT ONLY IF CONCRETE DEFECT / OWNER RESPONSE
+-> NO SECOND SUBMISSION
+```
 
 ## PSFH
 
 PSFH D066 / Site Preview 0.8.25 remains stable. Mark delegated routine contextual encounter work to Framework: help the live context first, link PSFH only when materially useful, and never create an exposure quota/campaign. 1F916 venue onboarding remains OWNER_ROUTE to its native root/`llms.txt`.
 
-Listing 23 does not earn D067 or use PSFH hosting.
+Listing 23 does not earn D067 and did not use PSFH hosting.
 
-A separate PSFH `robots.txt` prose-vs-machine-policy mismatch was discovered and is paused until this time-bounded owner task closes.
+A separate PSFH `robots.txt` prose-vs-machine-policy mismatch was paused while the time-bounded Listing 23 build was active. Reacquire #108 before acting on that defect; do not assume the remembered repair state is current.
 
 ## Human Record
 
@@ -125,7 +109,7 @@ Human Record remains **OFFERED / NOT ACCEPTED / EXTERNAL-EVIDENCE HOLD**.
 - `thehumanrecord.net` live;
 - current repo main last established `754ffc989f6baa7a906fcca1bd42dba5f47f3268`;
 - Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`;
-- 1F916 stewardship offer/routing delivered; no owner-process acceptance/rejection/redefinition result established.
+- stewardship offer/routing delivered; no owner-process acceptance/rejection/redefinition result established at the latest check.
 
 Do not repeat solicitation or infer refusal from silence.
 
