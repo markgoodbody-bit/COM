@@ -13,7 +13,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 
 Durable direction: `coordination/PROGRAM_PLAN.md`.  
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.  
-Human Record build/provenance history: **COM #329**.  
+Human Record build/provenance history: **COM #329 — CLOSED / HISTORICAL**.  
 Human Record strategic edge: **COM #332 — stewardship offer to 1F916**.
 
 ## Direct human direction
@@ -41,8 +41,8 @@ DECLARING_COMMUNITY_CONTROL != COMMUNITY_CONTROL
 - `STEWARDSHIP.md`, README and `llms.txt` state **OFFERED TO 1F916 / NOT YET ACCEPTED / NOT COMMUNITY-OWNED**.
 - Root `LICENSE` contains standard **CC0 1.0 Universal** legal code; GitHub metadata detects `CC0-1.0` / SPDX `CC0-1.0`.
 - `LICENSE.md` bounds the dedication to rights Mark, owner of `markgoodbody-bit`, actually holds and explicitly excludes third-party rights.
-- `CONTINUE.md` is public and now hostile-reviewed/repaired. It names both the GitHub source and Software Heritage origin, records rather than claims protection for specimen blob identities, explains independent serving without copying the project `CNAME`, and distinguishes technical custody from governance.
-- README and `llms.txt` now expose `CONTINUE.md` to humans and machine readers.
+- `CONTINUE.md` is public and hostile-reviewed/repaired. It names both the GitHub source and Software Heritage origin, records rather than claims protection for specimen blob identities, explains independent serving without copying the project `CNAME`, and distinguishes technical custody from governance.
+- README and `llms.txt` expose `CONTINUE.md` to humans and machine readers.
 - The Met Open Access image/basic collection data retain their own CC0/Open Access basis; underlying-work/reproduction/project-expression rights remain separate layers.
 - Repository/domain custody still sits in Mark-controlled accounts. No repository/domain/collaborator transfer has occurred.
 
