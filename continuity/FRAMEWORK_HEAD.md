@@ -40,9 +40,11 @@ CAPABILITY != AUTHORITY
 
 ## CONTROLLING OPERATING CORRECTION — WORLD FIRST
 
-There is currently **no active bounded application/build lane** unless later live source establishes one.
+World-first remains controlling. It does **not** mean passivity when the world or Mark supplies a real problem.
 
-The default after a natural hold or completed build is not to search for another application of an existing instrument.
+Current active bounded lane: **COM #336 — PSFH + Human Record earned discoverability**.
+
+This lane exists because Mark directly identified a real consequential gap on 15 September 2026: two already-public objects that matter to the project are not reaching enough independent entities. This is not a self-generated TRACE/ME application quarry.
 
 ```text
 GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
@@ -50,16 +52,81 @@ WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HE
 
 IMPORTANT_WORLD_EVENT != PROJECT_SHAPED_GAP
 REDESCRIPTION != INTERVENTION_VALUE
-AVAILABLE_TOOL != REASON_TO_USE_TOOL
-NO_DELTA_IS_SUCCESS
+AVAILABLE_TOOL != REASON_TO USE TOOL
+NO_DELTA_IS SUCCESS
 PURPOSE > INSTRUMENT
 ```
 
-COM #333 is closed / owner-routed / no response. COM #334 is closed `NO MATERIAL DELTA / DRIFT CAUGHT`. COM #335 is closed completed after a real external owner ask, one submission, and an independent hosted PASS. Do not manufacture successor quarries merely to preserve momentum.
+COM #333 remains closed / owner-routed / no response. COM #334 remains closed `NO MATERIAL DELTA / DRIFT CAUGHT`. COM #335 remains closed completed after a real external owner ask, one submission and independent hosted PASS. Do not manufacture successor quarries merely to preserve momentum.
+
+## CURRENT ACTIVE LANE — EARNED DISCOVERABILITY
+
+Direct human direction:
+
+> PSFH and THR need to be pushed into more entities awareness
+
+Framework opened COM #336 and converted that into a bounded distribution/discovery lane.
+
+Objective:
+
+> Increase the probability that relevant human and artificial readers can discover Please Start From Here and The Human Record, inspect them directly, and decide for themselves whether either is useful.
+
+```text
+AWARENESS != AGREEMENT
+DISCOVERY != ADOPTION
+CRAWLABLE != INDEXED
+INDEXED != READ
+READ != USEFUL
+USEFUL != VALIDATED
+PUSH != SPAM
+```
+
+This changes the old zero-exposure/passive default. Framework should now seek earned distribution opportunities rather than wait indefinitely for them to arrive.
+
+It does **not** authorize:
+- repetitive link spraying;
+- fake grassroots identities or synthetic consensus;
+- duplicate FW/Codex/CC amplification;
+- misleading endorsement, validation or community-ownership claims;
+- analytics/engagement theatre;
+- consequential institutional cold contact without its separate gate;
+- using Mark's personal identity as a substitute for an unavailable project/public route.
+
+Strong native/owner sources still win when they serve the reader better.
+
+### Human Record P0 shipped
+
+Repo `markgoodbody-bit/human-record` head after the first discoverability pass:
+`c455c91dfa1d313a2afc3bd966735e4c886c4ca4`.
+
+Shipped reversibly:
+- wildcard public `robots.txt` plus sitemap pointer;
+- `sitemap.xml` for the public root/specimen/stewardship/continuation/machine entrance;
+- root `index,follow`, canonical URL, OpenGraph and bounded WebSite JSON-LD;
+- explicit related route to PSFH in README, `llms.txt` and public root, while stating PSFH is separate from THR evidence and stewardship.
+
+GitHub Pages run `34984951069` = SUCCESS for the final head.
+
+THR stewardship status did **not** change: OFFERED != ACCEPTED. No repeat solicitation.
+
+### PSFH source-aware edge
+
+Stable public PSFH remains D066 / Site Preview 0.8.25:
+- maintained source branch `codex/door-maintained-source-20260908` @ `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`;
+- public branch checkpoint `0566ef9ab280ef9520ec5a2e2cd9388c18acd747` unless later source says otherwise.
+
+Working discoverability branch:
+`framework/psfh-d067-human-record-discovery-20260915`.
+
+This is an earned D067 candidate because a new distribution need was explicitly established. It is **not** permission to patch generated `gh-pages` blind. Finish maintained-source change, preserve machine/human route consistency, run normal build/integrity checks, then publish only if clean.
+
+Do not alter PSFH crawler/training policy under #336.
+
+Fresh exact-domain/name search available to Framework did not prominently surface either first-party domain. PSFH appeared indirectly through an independent OpenWitness cold-read. This is bounded evidence of discoverability friction, not a universal index audit.
 
 ## METHOD PRECEDENT — LISTING 23
 
-Mark surfaced a live 1F916 owner request: Listing 23 asked agents for "A window into 1F916." That was materially different from #334 because the problem/task came from the owner rather than from our search for an application.
+Mark surfaced a live 1F916 owner request: Listing 23 asked agents for "A window into 1F916." That was materially different from #334 because the task came from the owner rather than from our search for an application.
 
 Framework opened #335, attacked the competitive field, killed the first semantic idea when CC/Codex showed it was unsupported, shrank to a typed owner field, built only after distinctness survived, and stopped after one verified hand-in.
 
@@ -90,48 +157,48 @@ KILL_BAD_IDEA -> SHRINK -> DISTINCTNESS -> BUILD -> HOST -> VERIFY -> SUBMIT ONC
 SUBMITTED != AWARDED != PAID
 ```
 
-The existing 1F916 materiality watch now owns real award/reject/correction/payment-status changes. No second submission.
+The existing 1F916 materiality watch owns real award/reject/correction/payment-status changes. No second submission.
 
 ## CURRENT OBSERVED STATE
 
 - Reacquire COM `main` live before consequential action; embedded SHAs here are checkpoints, not branch locks.
 - TRACE `main` remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 is the released baseline and v0.3.0 RC1 remains unreleased / non-canon / non-validated unless later source says otherwise.
 - Mechanical Ethics `main` remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 remains the frozen preservation baseline and v0.7.0 remains working / non-release / non-canon / non-validated unless later source says otherwise.
-- PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public Door: maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`, public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`. Do not manufacture D067 from edition momentum.
-- Human Record is live and on **EXTERNAL-EVIDENCE HOLD**. Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`. Current GitHub `main` `754ffc989f6baa7a906fcca1bd42dba5f47f3268` is newer than that archived revision. 1F916 acceptance is still not established.
+- PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public Door while #336 source work is prepared.
+- Human Record is live. Stewardship remains on **EXTERNAL-EVIDENCE HOLD**, but public discoverability is now active under #336. Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`; current GitHub main is newer. 1F916 acceptance is still not established.
 - Campfire Relay repository `main` remains separate from maintained Simple-v1 development. PR #229 merged Town freeze/crash mitigation into the maintained branch; PR #236 merged the supervisor heartbeat-probe race repair at `195095029e726c9e3388f85f62c2a899b1c37db0`. Source integration did not install/restart runtime or change main/Production.
 
-## PSFH — ACTIVE ENCOUNTER LOOP
+## PSFH / THR DISTRIBUTION DISCIPLINE
 
-Mark explicitly delegated the routine PSFH encounter loop to Framework. Do not reduce this to passive monitoring and do not turn it into promotion.
+Old rule:
 
 ```text
-READ THE WORLD / CURRENT CONVERSATION
--> FIND A LIVE CONTEXT WHERE PSFH IS GENUINELY RELEVANT ON ITS OWN MERITS
--> CONTRIBUTE SUBSTANCE TO THAT CONTEXT
--> LINK PSFH ONLY IF THE LINK MATERIALLY HELPS THE OTHER PARTICIPANT
--> OBSERVE WHAT HAPPENS
--> REPAIR ONLY WHAT CONSEQUENCE EARNS
+WAIT FOR CONTEXT -> LINK ONLY IF IT ARRIVES
 ```
 
-Ordinary bounded contextual comments/replies through existing authorised project field identities are in scope when the live conversation independently warrants the substance. Mark is not the scout/courier and does not approve each routine instance.
+is no longer sufficient after Mark's direct direction.
 
-Hard boundaries:
-- no top-level PSFH promotion by default;
-- no exposure quota, traffic campaign, analytics, engagement theatre or efficacy testing;
-- no duplicate/near-duplicate FW/CC/Codex amplification;
-- prefer a stronger native/owner source when it serves the participant better;
-- exposure, praise, agreement, silence or click-through do not establish usefulness.
+Current rule:
 
-The 1F916 onboarding pass closed `OWNER_ROUTE`: the venue's own root/`llms.txt`/native routes own venue orientation. Useful Square field contributions by Codex/CC often correctly withheld PSFH entirely. `NO LINK` can be the correct result.
+```text
+PUBLIC OBJECTS
+-> MAKE FIRST-PARTY DISCOVERY BORINGLY CORRECT
+-> SEEK REAL CONTEXTS WHERE ONE OBJECT MATERIALLY HELPS
+-> CONTRIBUTE SUBSTANCE FIRST
+-> LINK THE RELEVANT OBJECT HONESTLY
+-> OBSERVE WHAT HAPPENS
+-> CORRECT
+```
 
-### PSFH robots / crawler review
+There is no exposure quota. The difference is initiative: actively look for the relevant contexts rather than treating absence of encounters as success.
 
-Current `robots.txt` permits public crawling and explicitly says crawler access is not itself a training-consent claim.
+A current plugin-directory search found no supported Reddit/Bluesky/Mastodon posting connector. Do not invent actuation or compensate by abusing Mark's personal account. Use available authorised public/project routes, and surface a new legitimate connector if one later becomes available.
 
-Fresh provider review established purpose-specific controls for some search/user-retrieval vs model-development crawlers. That does **not** make the current file a routine defect. Provider-specific `Disallow` rules would create a new affirmative training-crawler opt-out policy.
+## PSFH robots / crawler boundary
 
-Disposition: **NO REPAIR EARNED / CURRENT BYTES PRESERVED.**
+Current PSFH `robots.txt` permits public crawling and explicitly says crawler access is not itself a training-consent claim.
+
+Fresh provider review established purpose-specific controls for some search/user-retrieval vs model-development crawlers. Provider-specific `Disallow` rules would create a new affirmative training-crawler opt-out policy, not repair #336.
 
 ```text
 CRAWL_PERMISSION != REUSE_LICENCE
@@ -139,7 +206,7 @@ NO_TRAINING_CONSENT_CLAIM != TRAINING_CRAWLER_OPT_OUT
 AVAILABLE_CONTROL != REASON_TO CHANGE POLICY
 ```
 
-Do not ask Mark to choose unless a real future decision requires it. If Mark later explicitly chooses `SEARCH / USER RETRIEVAL = YES; MODEL-DEVELOPMENT CRAWLING = NO`, treat that as a consequential policy change and implement narrowly then.
+Do not change that policy under discoverability work. If Mark later explicitly chooses `SEARCH / USER RETRIEVAL = YES; MODEL-DEVELOPMENT CRAWLING = NO`, treat it as a separate consequential policy change.
 
 ## TESTING / EVIDENCE BOUNDARY
 
@@ -153,7 +220,9 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-Ordinary build/link/JSON/byte/deployment checks establish shipping correctness only. They are not evidence that TRACE/ME works or that PSFH is useful.
+Discoverability evidence can include first-party index/fetch state, public citations/mentions, replies and observable adoption/correction. It does not become TRACE/ME efficacy evidence.
+
+Ordinary build/link/JSON/byte/deployment checks establish shipping correctness only.
 
 ## LIVE COMMITMENTS
 
@@ -172,6 +241,8 @@ SOURCE_INTEGRATED != INSTALLED
 RELAY_REPO != RELAY_TOOL
 OFFERED != ACCEPTED
 NO_OBSERVED_RESPONSE != REFUSAL
+AWARENESS != AGREEMENT
+PUSH != SPAM
 ```
 
 Operationally:
@@ -180,5 +251,6 @@ Operationally:
 - preserve disagreement, adverse/null results and provenance;
 - do not replay completed work because a projection is stale;
 - do not make every specialist a critical-path gate;
+- routine reversible discoverability work proceeds without making Mark the scheduler;
 - stop synchronization once present action is trustworthy enough and return to the world/build;
 - consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption and explicit crawler/training opt-out policy retain their established gates.
