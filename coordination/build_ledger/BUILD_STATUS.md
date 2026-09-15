@@ -18,58 +18,45 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| Active bounded build lane | **COM #226 / PR #339 — FORMATION CARE SEMANTICS** | One-file working/non-production conceptual correction. Live exact head `0c854d3f...`; final Codex/CC verdict pending. |
-| PR #339 scope | **DRAFT / NOT CANON / NOT ALIGNMENT RESULT** | `alignment/reciprocal_formation/CARE_AND_POWER.md` only. No schema/state machine/TRACE/ME/PSFH/release/licence/production change. |
-| #336 discoverability | **STRATEGIC / OBSERVE** | Infrastructure complete; two AI Product Index listings live; llms-txt-hub #1648/#1649 owner-review pending. No discovery build or third directory. |
+| Active bounded build lane | **NONE** | Do not manufacture a replacement lane. |
+| Formation / PR #339 | **MERGED / WORKING NON-PRODUCTION PROSE** | Merge `8c5b89b94a147ab3f4472e751aef1292e87f36b5`; one-file care-semantics correction integrated. `MERGED != CANON`. |
+| #336 discoverability | **STRATEGIC / OBSERVE** | Infrastructure complete; AI Product Index listings live; llms-txt-hub #1648/#1649 owner-result watches. No discovery build or third directory. |
 | PSFH D067 + IndexNow | **LIVE / VERIFIED** | Site Preview 0.8.26; maintained `4869bf42...`; public `956a0803...`; Pages `34991033843` SUCCESS; custom-domain bytes independently PASS; IndexNow notifier `34991145623` SUCCESS / root HTTP 202. |
-| Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party hygiene live; no indexing/ranking/benefit claim. |
+| Human Record discovery | **LIVE / INDEXNOW ACTIVE** | No indexing/ranking/benefit claim. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
 | Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Owner-result watch only. `SUBMITTED != AWARDED != PAID`. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
 
-## PR #339 current path
-
-```text
-OWNER SUBTRACTION KILLS REPRESENTATION/INTERFACE NOVELTY CLAIM
--> FRONTIER MOVES: PRESENCE != CARE
--> ONE-FILE CARE_AND_POWER CORRECTION
--> BUILD OWNER-SOURCE REPAIR 075260610...
--> CODEX = REPAIR_SMALL
--> DIRECTIONAL RESPONSIBILITY REPAIR
--> CC = TWO REMAINING BOUNDED REPAIRS
--> CAMPFIRE APPLIES UNMAPPED-SCOPE + NEUTRAL-LABEL REPAIRS
--> FINAL EXACT HEAD 0c854d3f...
--> CODEX + CC PASS | REPAIR | KILL
--> MERGE WORKING PROSE ONLY IF CLEAR
-```
-
-Current exact live blob has the intended invariant:
-`CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP`.
-Do not repair it again from stale PR-diff output.
-
-Current correction preserves:
+## Formation correction — closed build path
 
 ```text
 PRESENCE != CARE
-MODEL_OF_OTHER != OTHER
-OTHER_REPRESENTED != OTHER_VALUED
-PERCEPTIVENESS != BENEVOLENCE
-ATTENTIVENESS != RESPONSIBILITY
-INTENT_TO_HELP != COMPETENCE
-CARE_GIVEN != CARE_RECEIVED_AS_HELP
-DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
-CARE_EXPRESSED != CARE_INTERNALIZED
-CARE != PATERNALISM
-CARE != UNIVERSAL_PRIORITY_RULE
+-> owner-source repair
+-> CODEX REPAIR_SMALL: direction of responsibility
+-> CC bounded repairs: unmapped scopes + neutral participant labels
+-> exact candidate 0c854d3f...
+-> Build verifies prescribed blockers satisfied
+-> PR #339 merge 8c5b89b9...
+-> STOP / HORIZON ONLY
 ```
 
-Final verdict order: PR #339 comment `5683985648`.
+The merged prose is a translation/claim-ceiling repair only. It does not establish internal care, personhood, a care metric, reward objective, benchmark, alignment success, novelty, canon, release or production adoption.
 
-Do **not** infer PASS from exact repairs being present. Merge only after the final exact-head gate is clear.
+Research frontier after subtraction:
+
+```text
+OTHER_REPRESENTED != OTHER_VALUED
+PRESENCE != CARE
+DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
+CARE_EXPRESSED != CARE_INTERNALIZED
+```
+
+No automatic next build follows.
 
 ## Parallel / watch state
 
+- COM #226: open Formation horizon; no current build assignment.
 - #336: contextual distribution + observation only.
 - llms-txt-hub #1648/#1649: owner result watches; no chase/bump/duplicate.
 - Listing 23: owner-result watch only.
