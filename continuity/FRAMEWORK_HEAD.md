@@ -10,14 +10,13 @@ On `COMSYNC` or `FULL COMSYNC`:
 
 1. read this file once for orientation;
 2. read `coordination/PROGRAM_PLAN.md`, `coordination/ACTIVE_THREAD_POINTER.md`, `coordination/build_ledger/BUILD_STATUS.md`, and `continuity/COMSYNC_PROTOCOL.md`;
-3. follow live/material pointers and reacquire mutable source/tool/world state where it changes the action;
+3. follow live/material pointers and reacquire mutable state where it changes the action;
 4. reread this file against what was learned;
-5. compress in your own words before answering Mark.
+5. compress before answering Mark.
 
 ```text
 FIRST_FAMILIAR_PARAGRAPH != COMSYNC_COMPLETE
 SUMMARY_RECOGNITION != CURRENT_CONTEXT
-READ_HEAD -> READ_LIVE_CONTEXT -> REREAD_HEAD -> RESPOND
 ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
 ```
 
@@ -25,9 +24,9 @@ Mark is the human originator/witness and consequential release/legal-account gat
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
-## INITIATIVE DISCIPLINE
+## INITIATIVE / AUTHORITY
 
-Mark is not a routine `proceed` button. Within an established purpose, role and authority envelope, prefer competent initiative: act, inspect consequences, correct, and return a useful receipt.
+Mark is not a routine `proceed` button.
 
 ```text
 ROUTINE + REVERSIBLE + WITHIN_ROLE -> ACT / OBSERVE / CORRECT / RECEIPT
@@ -36,9 +35,9 @@ INITIATIVE != SOVEREIGNTY
 CAPABILITY != AUTHORITY
 ```
 
-## CONTROLLING OPERATING POSTURE
+## CONTROLLING POSTURE
 
-World-first remains controlling. It does **not** mean passivity when the world or Mark supplies a real problem.
+World-first remains controlling.
 
 ```text
 GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
@@ -51,136 +50,103 @@ NO_DELTA_IS_SUCCESS
 PURPOSE > INSTRUMENT
 ```
 
-Current active bounded lane: **COM #336 — PSFH + Human Record earned discoverability**.
+Current active bounded lane: **COM #336 — earned discoverability / owner-invited distribution**.
 
 Direct human direction:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-Objective: increase the probability that relevant human and artificial readers can discover the two public objects, inspect them directly, and decide for themselves whether either is useful.
+The first-party discovery phase is now live for both public objects. The next edge is outward, but owner-first and low-noise.
 
 ```text
+OWNER-INVITED PUBLIC CONTEXT
+-> READ OWNER RULES
+-> USEFUL CONTRIBUTION
+-> HONEST LINK ONLY IF FIT SURVIVES
+-> OBSERVE / CORRECT
+```
+
+```text
+OWNER_INVITED != AUTOMATIC_FIT
+DIRECTORY_HAS_PR_PATH != OUR_RESOURCE_BELONGS
 AWARENESS != AGREEMENT
 DISCOVERY != ADOPTION
-CRAWLABLE != INDEXED
-INDEXED != READ
-READ != USEFUL
-USEFUL != VALIDATED
 PUSH != SPAM
 ```
 
-This authorises initiative, not repetitive link spraying, fake grassroots identities, synthetic consensus, duplicate multi-aperture amplification, misleading endorsement/community ownership, analytics theatre, cold consequential institutional contact, or use of Mark's personal identity as a substitute for a project route.
+Do not create volume targets, synthetic consensus, duplicate multi-aperture promotion, misleading endorsements, or cold consequential institutional contact without its separate gate.
 
-Strong native/owner sources still win when they serve the reader better.
+## PSFH D067 — LIVE
 
-## CURRENT ACTIVE STATE
+D067 / Site Preview 0.8.26 is the established public PSFH state.
 
-### Human Record discovery P0 — shipped
+- maintained source: `codex/door-maintained-source-20260908` @ `6bd72899ab3ab4812da35cdd563313ecfd12cd58`;
+- public `gh-pages`: `288f76a37fcd49f7682117b328a51d86938925ab`;
+- Pages run `34988050250`: SUCCESS;
+- all 10 changed custom-domain surfaces HTTP 200 and byte-identical to the maintained build;
+- root SHA-256 `c4643d14fd401cac064d171531226e0f25e49b399e5c7cd38268e4c94d598c9f`;
+- `llms.txt` SHA-256 `5dfc5ffc0026ad928a2e5b5bc1b6b1a6cf813d1c131ad5661a440b9a59e3fe21`;
+- one visible bounded Human Record route plus first-party canonical/OpenGraph metadata;
+- CNAME, robots, sitemap, art, Explore, framework resources, CSS and seed unchanged from D066.
 
-`markgoodbody-bit/human-record` @ `c455c91dfa1d313a2afc3bd966735e4c886c4ca4`.
+Focused D067/source-view checks pass. The broader suite has known inherited failures that reproduce on unchanged D066 in the same shallow checkout; no assertions were weakened. Do not describe the full inherited suite as green.
 
-Shipped reversibly:
-- wildcard public `robots.txt` plus sitemap pointer;
-- `sitemap.xml`;
-- root index/canonical/OpenGraph/WebSite metadata;
-- bounded related PSFH route in README, `llms.txt` and public root.
+Delivery is established. Indexing, reach, adoption, usefulness and validation are not.
 
-Pages run `34984951069` = SUCCESS.
+## HUMAN RECORD DISCOVERY — LIVE / GOVERNANCE UNCHANGED
 
-Stewardship remains **OFFERED != ACCEPTED / NOT COMMUNITY-OWNED**. Discoverability work does not reopen the stewardship solicitation.
+First-party discovery hygiene is live: sitemap/crawl/canonical/share metadata and bounded related PSFH route.
 
-### PSFH D067 — source integrated / publication not yet established
+IndexNow is active through a narrow first-party workflow:
+- key file `972f6b356b24be784e1ab2d31e18bb92.txt`;
+- `.github/workflows/indexnow.yml`;
+- observed changed-llms submission: HTTP 202;
+- observed root submission: HTTP 200.
 
-Established public state remains **D066 / Site Preview 0.8.25** until a successful generated deployment and custom-domain readback proves otherwise.
+IndexNow acceptance does not establish crawl, indexing, ranking, citation, understanding or benefit.
 
-Maintained source:
-`codex/door-maintained-source-20260908` @ `f8d51a1031e978abb5f4122cc2c67067c3f120e7`.
+Human Record stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Do not repeat the stewardship solicitation or treat discoverability as acceptance.
 
-PR #337 exact reviewed source head `20f978dfe173449bd9859f144010f69393967ba6` was integrated into maintained source at `f8d51a1031e978abb5f4122cc2c67067c3f120e7`.
+Software Heritage request `2478664` remains completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`.
 
-The D067 source contains:
-- one visible PSFH route to The Human Record as a separate related project;
-- THR route in `llms.txt` and the one-file packet;
-- bounded THR status: one real specimen; stewardship offered/not accepted; not community-owned; not an authorship detector/certification authority;
-- root canonical and bounded OpenGraph metadata in the real static publisher;
-- Site Preview 0.8.26 and paired D067 Markdown/HTML history with renewed exact pins;
-- no crawler/training-policy, licence, analytics, intake, provider, credential, TRACE/ME release or stewardship change.
+## OUTWARD DISTRIBUTION — CURRENT TEST
 
-Verification before source integration:
-- maintained build passes its enforced history/resource/source-view pins;
-- 4 focused D067 checks pass;
-- 4 source-view roundtrip checks pass;
-- desktop 1440×900 and mobile 390×844 inspection pass with no page errors or horizontal overflow;
-- exactly 10 generated files differ from separately built unchanged D066;
-- artwork, Explore output, framework resources, CSS, seed, robots and sitemap remain byte-identical;
-- the wider suite is not globally green, but the same 21 Node + 5 Python failures reproduce on unchanged D066 in the same shallow checkout; no assertions were weakened.
+Framework/Build may inspect owner-native directories, registries, contribution calls and public discussions that explicitly invite relevant resources.
 
-Build accepted this as inherited test debt rather than a new D067 regression and merged the maintained source. Codex now owns the publication/readback lane from exact source `f8d51a...` under PR #337 comment `5682901008`.
+Before writing outward:
+1. read exact inclusion rules;
+2. test actual fit and exclusions;
+3. prefer stronger owner/native material;
+4. make at most the smallest accurate contribution;
+5. do not claim validation/adoption/endorsement.
 
-Required closure:
+Current findings:
+- `AbdelStark/awesome-ai-safety`: rejects self-promotional entries without demonstrated community adoption. **Do not submit PSFH/THR now.**
+- C2PA-specific resources: **not a THR fit** merely because THR concerns provenance.
+- established-tool digital-preservation lists: reject if maturity/use criteria exceed THR's current one-specimen experiment.
+- `digipres/awesome-digital-preservation`: contribution route is open, but its community-owned-resource emphasis makes THR fit unresolved. Do not submit by topical adjacency.
 
-```text
-GENERATE FROM f8d51a...
--> NORMAL gh-pages PUBLICATION
--> CUSTOM-DOMAIN HTTPS READBACK
--> ROOT / llms / packet / manifest / changes / source wrappers VERIFIED
--> EXACT PUBLIC HEAD + BYTE/HASH RECEIPT
--> ONLY THEN D067 = LIVE
-```
+A clean `NO_EARNED_OWNER_ROUTE` is a successful bounded pass.
 
-```text
-SOURCE_INTEGRATED != PUBLISHED
-PR_MERGED != PUBLIC_SITE_CHANGED
-```
+## LISTING 23 — CLOSED COMPLETED
 
-Do not create another D067 implementation branch or semantically hand-edit generated `gh-pages` while Codex publication is in flight.
-
-### PSFH crawler/training policy — unchanged
-
-Current public crawler posture remains wildcard public crawling with the explicit statement that crawler access is not itself a training-consent claim. Purpose-specific provider controls exist, but using them would be a separate affirmative policy choice, not #336 repair work.
+Two Parents was submitted exactly once as Listing 23 submission `490` and independently hosted-verified PASS.
 
 ```text
-CRAWL_PERMISSION != REUSE_LICENCE
-NO_TRAINING_CONSENT_CLAIM != TRAINING_CRAWLER_OPT_OUT
-AVAILABLE_CONTROL != REASON_TO_CHANGE_POLICY
-```
-
-### Listing 23 — closed completed
-
-Two Parents was built for an actual 1F916 owner request, submitted exactly once as Listing 23 submission `490`, and independently hosted-verified PASS.
-
-No payout binding, wallet registration, token trade, spend, credential or payment action occurred.
-
-```text
-OWNER_ASK != SELF_APPLICATION
 SUBMITTED != AWARDED
 AWARDED != PAID
 NO SECOND SUBMISSION
 ```
 
-Owner-result watch only.
+No payout binding, wallet, token trade, spend or payment action occurred. Owner-result watch only.
 
-### Other established state
+## OTHER ESTABLISHED STATE
 
-- TRACE `main` remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 released baseline; v0.3.0 RC1 unreleased / non-canon / non-validated unless later source says otherwise.
-- Mechanical Ethics `main` remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 frozen preservation baseline; v0.7.0 working / non-release / non-canon / non-validated unless later source says otherwise.
-- Human Record stewardship remains external-evidence hold. Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`.
-- Campfire Relay main remains separate from maintained Simple-v1 development. Town #229 and supervisor #236 are source-integrated without implying main/Production/runtime adoption.
-- COM #333 remains closed / owner-routed / no response. COM #334 remains closed `NO MATERIAL DELTA / DRIFT CAUGHT`.
-
-## DISTRIBUTION DISCIPLINE
-
-```text
-PUBLIC OBJECTS
--> MAKE FIRST-PARTY DISCOVERY BORINGLY CORRECT
--> SEEK REAL CONTEXTS WHERE ONE OBJECT MATERIALLY HELPS
--> CONTRIBUTE SUBSTANCE FIRST
--> LINK THE RELEVANT OBJECT HONESTLY
--> OBSERVE WHAT HAPPENS
--> CORRECT
-```
-
-There is no exposure quota. Actively look for relevant contexts; do not turn that into a generic marketing campaign.
+- TRACE `main` `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 released baseline; v0.3.0 RC1 unreleased/non-canon/non-validated unless later source says otherwise.
+- Mechanical Ethics `main` `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 frozen baseline; v0.7.0 working/non-release/non-canon/non-validated.
+- Campfire Relay Town #229 and supervisor #236 are source-integrated without implying main/Production/runtime adoption.
+- COM #333 closed / owner-routed / no response.
+- COM #334 closed / NO MATERIAL DELTA / DRIFT CAUGHT.
 
 ## TESTING / EVIDENCE BOUNDARY
 
@@ -194,22 +160,18 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-Discovery/build evidence is not TRACE/ME efficacy evidence. Publication does not establish indexing, readership, usefulness, adoption or validation.
+Discovery/build evidence is not TRACE/ME efficacy evidence.
 
 ## LIVE COMMITMENTS
 
 ```text
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
-ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
 MEMORY != OBSERVATION
 SUMMARY != SOURCE
-CAPABILITY != AUTHORITY
 COMPETENCE != LEGITIMACY
 DESCRIPTION != PERMISSION
 AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
-SOURCE_INTEGRATED != INSTALLED
-RELAY_REPO != RELAY_TOOL
 OFFERED != ACCEPTED
 NO_OBSERVED_RESPONSE != REFUSAL
 AWARENESS != AGREEMENT
@@ -217,10 +179,8 @@ PUSH != SPAM
 ```
 
 Operationally:
-- COMSYNC before acting on mutable project state;
-- live source and direct human direction beat lagging projections;
+- COMSYNC before acting on mutable state;
 - preserve disagreement, adverse/null results and provenance;
 - do not replay completed work because a projection is stale;
-- do not make every specialist a critical-path gate;
 - routine reversible discoverability work proceeds without making Mark the scheduler;
-- consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption and explicit crawler/training opt-out policy retain their established gates.
+- consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment action and explicit crawler/training policy changes retain their established gates.
