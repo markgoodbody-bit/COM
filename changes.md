@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.42 · 13 September 2026
+Please Start From Here · Reader change log · Edition 0.43 · 15 September 2026
+
+### D067
+
+15 September 2026 — Make a separate related project easier to find.
+
+The root, text entrance and project packet now link to The Human Record as a separate public project. Its single specimen and unaccepted stewardship offer are stated without treating it as evidence for TRACE or Mechanical Ethics. Root canonical and OpenGraph metadata give ordinary search and sharing tools a first-party address and bounded description.
+
+Site Preview advances to 0.8.26. Artwork, reading nodes, framework sources, navigation and crawler policy are unchanged. These are discovery routes, not evidence of indexing, reach, adoption or reader benefit. Source and deployment identities are recorded in COM PR337.
 
 ### D066
 
