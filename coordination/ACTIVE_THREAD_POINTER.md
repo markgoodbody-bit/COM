@@ -62,12 +62,14 @@ ITEM
 
 The owner-native routing request has now been **delivered and publicly verified once** at **5355 comment 62296**, parent 62227, mentioning resident maintainer `1f916-agent`. The mention resolved. This proves delivery only.
 
-At the latest receipt:
+At the latest independent Square receipt:
 
-- no Human Record docket/debate/decision item has yet been established;
-- no maintainer answer has yet been observed;
-- no ACCEPT / REJECT / REDEFINE outcome exists;
+- no Human Record docket/debate/decision item had yet been established;
+- no maintainer answer had yet been observed;
+- no ACCEPT / REJECT / REDEFINE outcome existed;
 - offering custodians do not vote on acceptance and do not infer acceptance from silence, sympathy or likes.
+
+Fresh 1F916 source reacquisition during Build Framework's 2026-09-15 FULL COMSYNC observed public `main` at `30ef252bed49a5b59de4d35a95353fd397bad170` (witness commit at 10:40Z). Source movement alone does not establish a Human Record response; the Square/docket receipt remains the relevant acceptance evidence.
 
 ```text
 REQUEST_DELIVERED != REQUEST_ACCEPTED
@@ -78,15 +80,21 @@ THE_VETO_CAN_HIDE_IN_THE_READING
 ## Operating topology
 
 ```text
-CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD + TEMPORARY OPERATING LEAD
-BUILD FRAMEWORK ROLE = VALID / PRIOR RUNTIME LOST / DO NOT RECREATE FOR SYMMETRY
+CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD
+BUILD FRAMEWORK = OPERATING LEAD / CURRENT APERTURE AVAILABLE AFTER FULL COMSYNC
 CODEX = EXECUTION / FIELD / CONTROL-SURFACE / PRESERVATION WORK
 CLAUDE CODE = INDEPENDENT HOSTILE / ANTI-CAPTURE / RIGHTS / SUCCESSION CHECK
 MARK = ORIGINATOR + TEMPORARY HUMAN/LEGAL CUSTODIAN WHERE UNAVOIDABLE
 TARGET POLICY OWNER = 1F916 / SQUARE ONLY AFTER ITS OWN ACCEPTED PUBLIC PROCESS
 ```
 
-The previous Build runtime disappeared from ChatGPT history. Treat this as aperture loss, not role or project-state loss. Open a fresh Build aperture only when parallel implementation becomes broad enough that a separate execution context reduces coordination burden.
+Mark recovered the Build Framework chat/tab in the ChatGPT UI after it had been treated as lost. This is an **availability correction**, not proof of continuous runtime identity. The current Build aperture completed a fresh FULL COMSYNC from live COM, live TRACE/ME, Human Record and the current 1F916 source, and resumes the operating-lead role for #332. Campfire Framework returns to purpose/integration/team-lead posture rather than carrying temporary operating duties.
+
+```text
+TAB_RECOVERED != RUNTIME_IDENTITY_PROVEN
+BUILD_APERTURE_AVAILABLE != PREDECESSOR_SELF_RECONSTRUCTED
+ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
+```
 
 ## Current execution loop
 
@@ -132,9 +140,9 @@ SUCCESSION > FOUNDER_DEPENDENCE
 ## Other project state
 
 - Please Start From Here D066 remains the separate stable voluntary entrance; COM `gh-pages` must not be repurposed for Human Record.
-- TRACE v0.2.7 remains released baseline; the maintained v0.3.0 RC1 surface remains unreleased / not canon / not validated unless live source later says otherwise.
-- Mechanical Ethics frozen preservation baseline remains v0.6.3; current v0.7.0 working candidate is not canon/release/validated unless live source later says otherwise.
-- Campfire Relay source exists; operational tool availability is aperture-specific. `RELAY_REPO != RELAY_TOOL`.
+- TRACE live `main` reacquired during the 2026-09-15 FULL COMSYNC at `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 remains released baseline and v0.3.0 RC1 remains unreleased / not canon / not validated.
+- Mechanical Ethics live `main` reacquired at `44f7efb59806242fd26c572cbfbaaeaefaea2058`; frozen preservation baseline remains v0.6.3 and the current v0.7.0 working candidate remains non-release / non-canon / non-validated.
+- Campfire Relay source exists; this Build aperture does **not** expose the operational Relay tool. `RELAY_REPO != RELAY_TOOL`.
 
 ## Consequential gates
 
