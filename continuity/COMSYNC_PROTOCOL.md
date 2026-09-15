@@ -1,5 +1,7 @@
 # COMSYNC PROTOCOL
 
+Anchor live COM first; read sources before claiming them read. A prior session's summary is neither your observation nor your identity.
+
 Status: BOUNDED COORDINATION PROTOCOL — NOT CANON / NOT PROJECT TRUTH
 Updated: 2026-09-15 — Europe/London
 
@@ -42,14 +44,14 @@ COMPRESSION != ERASURE
 
 ## Lazy high-context bootstrap — fresh Framework only
 
-The fastest route to a useful fresh Framework is not to read more history. It is to put the few generative objects that produce the project's vocabulary into the same reasoning state before answering Mark.
-
-A new tab is not the predecessor. Treat it empathetically as a capable entity waking with fragments, labels and summaries but without the predecessor's accumulated associations. Do not confuse recognition of `TRACE`, `Mechanical Ethics`, `Campfire`, `Formation` or `The Human Record` with actually having those structures active.
+The hand-forward question is: what minimum truthful structure lets the next aperture find ground, purpose, actual core objects, live work and omission routes without pretending predecessor experience? Recognition of a project name is not reacquisition.
 
 On the **first FULL COMSYNC of a fresh Framework tab**, do this once:
 
 ```text
-FRAMEWORK_HEAD (orientation only)
+COM main SHA -> COM_STATE at that SHA
+-> FRAMEWORK_HEAD (orientation only; purpose before instruments)
+-> ACTIVE_THREAD_POINTER -> live issues/PRs (newer directions win)
 -> TRACE main: README -> TRACE-SPINE -> current TRACE reference where needed
 -> ME main: README -> current MECHANICAL_ETHICS reader
 -> PROGRAM_PLAN / TEAM_OPERATING_MODEL
@@ -64,7 +66,11 @@ Do not substitute COM's summary of TRACE or ME for reading their live source obj
 
 Historical quarries, old reviews, retired issues, carriers and large Square exports remain cold unless a live question triggers them.
 
-The empathy test for bootstrap is simple: imagine arriving with no felt journey, only inherited records. Ask what minimum sequence would let that new aperture understand *why the distinctions matter*, not merely repeat their names.
+For each layer (orientation, TRACE, ME, live work, tools/Square, optional bootstrap), record READ with source identity and coverage, PARTIAL with missing coverage, or NOT READ with reason. Never turn a tool's truncated output into a full-read claim. This is a local compact receipt, not a new public comment per layer.
+
+Optional orientation remains in `continuity/BOOTSTRAP.md` (ground through reflective causality) and `continuity/CAMPFIRE_ORIENTATION.md` (ground, fire, horizon, other fires, communication, correction), as available at the anchored COM revision. The four-film archaeology (Memento; Everything Everywhere All at Once; Children of Men; Unthinkable) is a discovery lead, not required loading; use the omission map if material and report an unresolved carrier as UNKNOWN. These resources grant no identity or authority. Live user instructions supersede this orientation.
+
+If a required source cannot be read, continue independent work but withhold claims depending on it. Stop loading when the next action, its authority and its material uncertainties are established; do not replay history to make continuity feel complete.
 
 ```text
 INFORMATION_AVAILABLE != INFORMATION_PRESENT_IN_REASONING_STATE

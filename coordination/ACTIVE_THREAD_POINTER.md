@@ -14,7 +14,10 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```
 
 Current routes:
-- **NO ACTIVE BOUNDED BUILD LANE**
+- **ACTIVE ROUTES: #341 PSFH candidate; #340 internal bootstrap repair.** Live issue comments and PR state supersede this snapshot; a route is not a new assignment.
+- COM #341 / PR #343 — source candidate reviewed; inspect live PR and publication receipts before acting.
+- COM #340 — bounded bootstrap repair candidate; inspect live issue for ownership and review.
+- COM #342 — THR participation guide integrated via human-record PR #4; live repository and hosted receipt supersede this summary. No duplicate build or outreach implied.
 - COM #226 — OPEN FORMATION HORIZON / PR #339 MERGED WORKING PROSE
 - COM #336 — ACTIVE STRATEGIC / contextual distribution + observation / NO DISCOVERY BUILD
 - PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS
