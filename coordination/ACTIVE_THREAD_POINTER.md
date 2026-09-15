@@ -14,71 +14,61 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```
 
 Current routes:
-- **COM #336 — ACTIVE / EARNED DISCOVERABILITY**
-- PR #338 — **CLOSED MERGED / PSFH INDEXNOW DEPLOYED / FINAL HOST BYTE READBACK PENDING**
+- **COM #336 — ACTIVE STRATEGIC / CONTEXTUAL DISTRIBUTION + OBSERVATION / NO ACTIVE BUILD**
+- PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS
 - PR #337 — CLOSED MERGED / PSFH D067 LIVE
 - COM #335 — CLOSED COMPLETED / Listing 23 submission 490 / owner-result watch
 - COM #332 — Human Record stewardship EXTERNAL-EVIDENCE HOLD
 - COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE
 - COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT
 
-## #336 current edge
+## #336 — current posture
 
 Direct human direction remains:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-First-party discovery hygiene is now live for both public objects. One owner-invited directory/registry pass closed `NO_EARNED_OWNER_ROUTE`; do not repeat it by momentum.
-
-### PSFH D067 — LIVE
-
-Site Preview 0.8.26 remains the reader-facing edition. D067 delivery/readback is established; indexing/reach/usefulness are not.
-
-### PSFH IndexNow — DEPLOYED / FINAL READBACK PENDING
-
-Maintained source PR #338 head `0285a3623b78e8a42a80314174c8772bb0cd26e4` was merged at `4869bf42373d163f1e2f073ab51dc5cc37f97971`.
-
-Public `gh-pages` is now:
-`956a0803c69a4bcbc388f68a53f08b4f73f107f3`.
-
-That publication commit changes **exactly one file**:
-`352408ff99c5e8531fe80000b491b08b.txt`
-with body `352408ff99c5e8531fe80000b491b08b` plus LF.
-
-GitHub Pages run `34991033843` completed **SUCCESS** for exact public head `956a0803...`.
-
-Default-main notifier `.github/workflows/psfh-indexnow.yml` carries the CC repair:
+First-party discovery infrastructure is now complete for both public objects. One owner-invited directory/registry pass closed `NO_EARNED_OWNER_ROUTE`; do not repeat it by momentum.
 
 ```text
-github.event.build.status == 'built'
-```
-
-Notifier run `34991145623` completed **SUCCESS**. Its log records:
-
-```text
-IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)
-```
-
-This establishes notification acceptance only:
-
-```text
-INDEXNOW_202 != INDEXED
+OWNER_INVITED != AUTOMATIC_FIT
+FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
+AWARENESS != AGREEMENT
+INDEXNOW_ACCEPTED != INDEXED
 INDEXED != READ
 READ != USEFUL
 ```
 
-One explicit evidence item remains before calling the infrastructure sub-lane fully closed: ordinary custom-domain HTTPS readback of the key file with HTTP status + exact 33 bytes. Final read-only order is PR #338 comment `5683433376`. No mutation is authorized by that check.
+There is **no active discoverability build lane**. Next movement must be earned by a real owner-invited public context, a material independent encounter, or external evidence. Otherwise observe.
 
-```text
-PAGES_SUCCESS + GH_PAGES_FILE != CUSTOM_DOMAIN_READBACK
-THIS_IS_READ_ONLY_VERIFICATION
-```
+## PSFH D067 + IndexNow — LIVE
 
-If `HOST_PASS` returns, record it and STOP/OBSERVE. Do not create another discovery mechanism by momentum.
+Reader-facing edition: Site Preview 0.8.26.
+
+Maintained IndexNow source merge:
+`4869bf42373d163f1e2f073ab51dc5cc37f97971`.
+
+Public `gh-pages`:
+`956a0803c69a4bcbc388f68a53f08b4f73f107f3`.
+
+Public delta versus D067 is exactly one added file:
+`352408ff99c5e8531fe80000b491b08b.txt`.
+
+Evidence:
+- Pages run `34991033843` SUCCESS;
+- CODEX closure `5683411167`: custom-domain HTTPS readback across all 158 generated files matched maintained build, including exact 33-byte key;
+- CC independent witness `5683423083`: PASS; key served no-cache, exact key + LF; robots/sitemap unchanged;
+- notifier run `34991145623` SUCCESS;
+- notifier log: `IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)`;
+- notifier gates on `github.event.build.status == 'built'`.
+
+No reader-facing content/edition, crawler/training policy, analytics, account, provider, credential, spend, TRACE/ME status or Human Record stewardship changed.
+
+Delivery/notification are established. Indexing, rank, readership, usefulness and validation are not.
 
 ## Human Record
 
-First-party discovery hygiene + narrow IndexNow are live. Governance remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. No repeat stewardship solicitation.
+First-party discovery hygiene + IndexNow are live. Governance remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. No repeat stewardship solicitation.
 
 ## Other stable lanes
 
