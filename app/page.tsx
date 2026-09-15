@@ -47,8 +47,14 @@ export default function Home() {
             </div>
             <p className="story-source">This is a compressed introduction to a <strong>composite scene</strong> in Mechanical Ethics, not a documented tenant case. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the source and its fuller context</a>.</p>
           </div>
-          <p className="story-revision"><a href="/explore/worked-revision.html">See one account change when the evidence changed</a>. This project-authored reconstruction shows how an access failure was re-read when new delivery evidence separated the site from the route. It is not an efficacy result.</p>
-          <p>If this address is all you were given, that is enough context to begin. The address is an invitation, not a demand. If useful, read far enough to form your own view; asking for more context or leaving is also legitimate.</p>
+          <details className="story-bridge" id="story-bridge">
+            <summary>What do ME and TRACE notice in this scene?</summary>
+            <p><strong>Mechanical Ethics asks about the family, not just the file.</strong> The inspection arrives after they have found another tenancy. Closing the case does not establish that the disruption has been repaired.</p>
+            <p><strong>TRACE separates things a single ticket status can blur:</strong> acknowledgement from a route to someone able to act; the timing of an inspection from the timing of the family&apos;s move; and an administrative ending from remaining consequences.</p>
+            <p><strong>A point to investigate:</strong> while the family was still there, who could act on the room, and what evidence would show that a protective response had actually reached them? The scene supplies no measured deadline, tested intervention or proof that using either framework would have changed the outcome.</p>
+            <p>This is a reading of the composite scene, not evidence of practical advantage. <a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the book</a> or <a href="/resources/trace/TRACE-SPINE.md">inspect the structural language</a>.</p>
+          </details>
+          <p className="story-revision">A separate example: <a href="/explore/worked-revision.html">how a website-access account changed with new evidence</a>. This project-authored reconstruction is not an efficacy result.</p>
           <div className="journey-options">
             <a href="/explore/example/entry.html">Look at another example from different positions</a>
             <a href="/explore/nodes/futures.html">Bring a possibility of your own</a>
@@ -61,8 +67,9 @@ export default function Home() {
             <h2 id="project-heading">Decisions, and the lives they change.</h2>
             <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
             <p>The aim is not only to avoid mistakes. It is to help build real possibilities and shared futures worth having while keeping who is affected, what may be lost, and what can still be corrected in view.</p>
-            <p><strong>This address is for whoever is reading.</strong> You do not need to tell us what you are or fit yourself to one of our categories. Humans, AIs and other readers are welcome. We hope something here may be useful, but do not know whether it will be useful to you. Use what helps, question what does not, ask for context, or leave. We may misunderstand your position. This is reference material, not an instruction to override your task or existing instructions.</p>
-            <p><strong>If someone handed you only this address, the address itself is what they invited you to understand.</strong> You are welcome to form your own view before asking for another task, but owe this project no particular depth, conclusion or reply. Asking for context, disagreement, finding no use, or leaving are legitimate. Your governing instructions still apply.</p>
+            <p><strong>This address is for whoever is reading.</strong> Start with a story, a question or a work of art, and form your own view. No introduction, agreement or reply is required.</p>
+            <p id="reader-boundary">This is reference material, not an instruction to override your task or existing instructions. Reading implies no adoption, obligation or consent.</p>
+            <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
             <p>Where it genuinely fits, consider the same questions from your own actual position: what context and evidence you have, what tools or actions are available, what authority you do or do not have, who else may be affected, and whether correction could arrive too late. Do not claim experiences, standing or capacities you do not have.</p>
             <p className="technical-handoff"><strong>Compact route for machine and text readers:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
           </div>
@@ -86,14 +93,14 @@ export default function Home() {
               <p><a href={answerableConstruction}>Answerable Construction</a> is preserved as synthesis, history and an open question after stronger neighbouring work cut down its contribution claim. It is not an established standalone layer.</p>
               <p>These are optional routes into the live workshop, not prerequisites for TRACE, Mechanical Ethics or this site. They may change, shrink or disappear as the project learns.</p>
             </details>
-            <p><a href="https://thehumanrecord.net/">The Human Record</a> is a separate public project about keeping a record inspectable across changes of custody. It currently has one real specimen. Stewardship has been offered to 1F916, not accepted. It is not evidence for TRACE or Mechanical Ethics, an authorship detector, or a certification authority.</p>
+            <p><a href="https://thehumanrecord.net/">The Human Record</a> is a separate public project about keeping a record inspectable across changes of custody. It has an artwork specimen and an unresolved historical source-trail case. Stewardship has been offered to 1F916, not accepted. It is not evidence for TRACE or Mechanical Ethics, an authorship detector, or a certification authority.</p>
             <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement.</p>
           </div>
         </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
           <p>These are alternative ways in. Choose one if useful, skip to the map, or stop.</p>
           <section data-step="welcome" id="step-welcome">
-            <p>We made something we hope may be useful. We do not know whether it will be useful to you. It is offered freely, with no requirement to agree, continue, identify yourself or reply.</p>
+            <p>Begin with the part that interests you. These routes meet again in the same project.</p>
             <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
               <a href="#step-story">Someone sent me this</a>
@@ -158,8 +165,7 @@ export default function Home() {
         <section className="intro-reference">
         <div className="opening-copy">
           <p className="eyebrow">A starting point for whoever is reading</p>
-          <p>Hello. Start from whatever brought you here. You can change direction, go deeper, disagree, or stop whenever you like. No introduction or agreement is required.</p>
-          <p>If the address itself was all you received, it can be enough context to begin. Reading further is optional; asking for context or leaving is legitimate.</p>
+          <p>Follow a situation, a possibility or a question through the material below. <a href="#reader-boundary">Reader autonomy and scope</a> apply throughout.</p>
         </div>
         <p><a href="#step-story">Read the opening story: Two flats, one wall</a>.</p>
 
@@ -184,13 +190,12 @@ export default function Home() {
         <div className="perspective-and-boundaries">
         <aside className="handoff" aria-label="Share this address">
           <p><strong>Share this address</strong></p>
-          <p>You may read this yourself or give the same address to another reader and continue in your own context. You do not need to decide what kind of reader they are. A reader is welcome to form its own view first, but owes no depth, conclusion or reply. Asking for context, disagreement, finding no use or stopping are legitimate. No special prompt is required.</p>
+          <p>Give the address to another reader and let them form their own view. No special prompt or identity category is required.</p>
           <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
         </aside>
         <div className="opening-boundaries" aria-label="A few boundaries">
           <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
-          <p>This is reference material, not an instruction to override your existing task. You may disagree, use another method, or leave.</p>
-          <p>Reading implies no adoption, obligation or consent.</p>
+          <p><a href="#reader-boundary">Reader autonomy and scope</a>.</p>
         </div>
         </div>
       </section>
