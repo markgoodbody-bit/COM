@@ -4,9 +4,9 @@ Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF*
 Updated: 2026-09-15 — Europe/London  
 Later live source and direct human direction win.
 
-## FRESH-APERTURE READING DISCIPLINE
+## FRESH-APERTURE DISCIPLINE
 
-On `COMSYNC` or `FULL COMSYNC`: read this file once, then `coordination/PROGRAM_PLAN.md`, `coordination/ACTIVE_THREAD_POINTER.md`, `coordination/build_ledger/BUILD_STATUS.md`, `continuity/COMSYNC_PROTOCOL.md`, live/material pointers, and finally reread this file before answering Mark.
+On `COMSYNC` or `FULL COMSYNC`: read this file once, then `coordination/PROGRAM_PLAN.md`, `coordination/ACTIVE_THREAD_POINTER.md`, `coordination/build_ledger/BUILD_STATUS.md`, `continuity/COMSYNC_PROTOCOL.md`, follow live/material pointers, then reread this file before answering Mark.
 
 ```text
 FIRST_FAMILIAR_PARAGRAPH != COMSYNC_COMPLETE
@@ -45,38 +45,29 @@ Direct human direction:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-This authorises initiative, not spam, fake grassroots activity, duplicate multi-aperture amplification, misleading endorsement/community ownership, analytics theatre, or cold consequential institutional contact without its separate gate.
+This authorises initiative, not spam, fake grassroots activity, duplicate amplification, misleading endorsement/community ownership, analytics theatre, or cold consequential institutional contact without its separate gate.
 
 ## PSFH D067 — LIVE
 
 - Site Preview 0.8.26;
-- maintained source `6bd72899ab3ab4812da35cdd563313ecfd12cd58`;
-- public `gh-pages` `288f76a37fcd49f7682117b328a51d86938925ab`;
+- public `gh-pages` `288f76a37fcd49f7682117b328a51d86938925ab` at last verified D067 state;
 - Pages `34988050250` SUCCESS;
-- 10 changed custom-domain surfaces HTTP 200 and byte-identical to maintained build;
+- 10 changed custom-domain surfaces byte-identical to maintained build;
 - root SHA-256 `c4643d14fd401cac064d171531226e0f25e49b399e5c7cd38268e4c94d598c9f`;
 - `llms.txt` SHA-256 `5dfc5ffc0026ad928a2e5b5bc1b6b1a6cf813d1c131ad5661a440b9a59e3fe21`;
 - one visible bounded Human Record route and first-party canonical/OpenGraph metadata.
 
-Focused D067/source-view checks pass. Known broader-suite failures reproduce on unchanged D066 in the same shallow checkout; do not call the inherited full suite green.
-
 Delivery is established. Indexing/reach/adoption/usefulness/validation are not.
 
-## HUMAN RECORD — DISCOVERY LIVE / GOVERNANCE UNCHANGED
+## HUMAN RECORD
 
-First-party discovery hygiene and narrow IndexNow workflow are live. Observed IndexNow receipts: HTTP 202 for changed llms and HTTP 200 for root.
-
-Human Record stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Do not repeat solicitation or infer acceptance from discoverability.
+First-party discovery hygiene and narrow IndexNow are live. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Do not repeat solicitation or infer acceptance from discoverability.
 
 Software Heritage request `2478664` remains complete with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`.
 
-## OUTWARD ROUTE PASS — CLOSED NO FIT
+## OUTWARD OWNER-ROUTE PASS — CLOSED NO FIT
 
-One bounded owner-invited directory/registry pass ended `NO_EARNED_OWNER_ROUTE`.
-
-- AI-safety list owners either exclude self-promotional entries without demonstrated adoption or warn against early-stage/promotional conceptual resources.
-- Digital-preservation lists are not a clean fit merely because THR concerns provenance; the strongest candidate emphasizes community-owned resources and established preservation metadata/tools.
-- C2PA-specific lists are not a fit because THR is not a C2PA implementation.
+One bounded directory/registry pass ended `NO_EARNED_OWNER_ROUTE`. Do not repeat it by momentum.
 
 ```text
 OWNER_INVITED != AUTOMATIC_FIT
@@ -84,42 +75,50 @@ DIRECTORY_HAS_PR_PATH != OUR_RESOURCE_BELONGS
 NO_EARNED_OWNER_ROUTE = VALID_RESULT
 ```
 
-Do not repeat the directory sweep by momentum.
+## PSFH INDEXNOW — SOURCE INTEGRATED / PUBLICATION PENDING
 
-## PSFH INDEXNOW — CURRENT GATE
+PR #338 source head `0285a3623b78e8a42a80314174c8772bb0cd26e4` has been merged into maintained PSFH source at:
+`4869bf42373d163f1e2f073ab51dc5cc37f97971`.
 
-Because D067 is live and no stronger owner-directory route survived, a boring first-party IndexNow follow-up is now the current bounded infrastructure task.
-
-PR #338:
-- base = exact live D067 maintained source `6bd72899...`;
-- handoff head `0285a3623b78e8a42a80314174c8772bb0cd26e4`;
-- adds root key source `public/352408ff99c5e8531fe80000b491b08b.txt`;
-- adds `scripts/copy-indexnow-key.mjs` to validate/copy the key through the maintained build;
-- updates build/dev scripts only so the generated site contains the key;
+Source scope only:
+- `public/352408ff99c5e8531fe80000b491b08b.txt` = 32-hex key + LF;
+- `scripts/copy-indexnow-key.mjs` validates exact bytes and copies only that key into generated `out/`;
+- build/dev invoke the copier after the normal maintained build;
 - no reader-content or Site Preview edition change.
 
-Default COM `main` now carries `.github/workflows/psfh-indexnow.yml`, triggered by GitHub `page_build`. It diffs the actual last two `gh-pages` commits, submits only mapped changed PSFH URLs, and treats failed notifications as warnings rather than publication failures.
-
-Codex/CC execution order: PR #338 comment `5683160809`.
-
-Required closure:
+Claude Code hostile review `5683186893` = PASS after one workflow repair. Default `main` notifier `.github/workflows/psfh-indexnow.yml` now runs only when:
 
 ```text
-BUILD EXACT PR HEAD
--> GENERATED DELTA = ROOT KEY FILE ONLY
--> READY_TO_MERGE
--> MAINTAINED SOURCE INTEGRATION
--> NORMAL gh-pages PUBLICATION
--> CUSTOM-DOMAIN KEY READBACK
--> page_build INDEXNOW HTTP RECEIPT
+github.event.build.status == 'built'
+```
+
+Workflow repair commit: `62da57ea365363fa41277d5c54150c8efe956299`.
+
+Build independently reproduced the new copier's exact 33-byte output. That supported reversible source integration, but does **not** prove public deployment.
+
+Codex publication order: PR #338 comment `5683295398`.
+
+Current publication gate:
+
+```text
+MAINTAINED SOURCE 4869bf42...
+-> NORMAL GENERATED gh-pages PUBLICATION
+-> PUBLIC DELTA = ROOT KEY FILE ONLY
+-> CUSTOM-DOMAIN KEY HTTP 200 + EXACT BYTES
+-> page_build INDEXNOW RECEIPT
 -> STOP / OBSERVE
 ```
 
+At the last live check, `gh-pages` remained `288f76a37fcd49f7682117b328a51d86938925ab`; therefore PSFH IndexNow is **not yet claimed live**.
+
 ```text
+SOURCE_INTEGRATED != PUBLISHED
 INDEXNOW_ACCEPTED != INDEXED
 INDEXED != READ
 DISCOVERY_INFRASTRUCTURE != VALIDATION
 ```
+
+Do not manually patch generated `gh-pages`; the key goes through the maintained build or not at all.
 
 ## OTHER ESTABLISHED STATE
 
