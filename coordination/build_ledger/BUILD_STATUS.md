@@ -19,15 +19,13 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
 | Active bounded lane | **#336 — PSFH + HUMAN RECORD EARNED DISCOVERABILITY** | Direct human direction. Increase real independent encounter opportunities without turning reach into validation, spam or a conversion funnel. |
-| Human Record discovery P0 | **SHIPPED / PAGES SUCCESS** | Repo `markgoodbody-bit/human-record` head `c455c91dfa1d313a2afc3bd966735e4c886c4ca4`; public robots+sitemap, canonical/OpenGraph/WebSite metadata, and bounded related PSFH route. Pages run `34984951069` SUCCESS. Stewardship state unchanged. |
-| PSFH discoverability source | **WORKING BRANCH OPEN / NOT PUBLISHED** | Stable maintained source `404de6f...`; branch `framework/psfh-d067-human-record-discovery-20260915` created for earned THR route/share-search metadata. Source/public integrity and normal build remain required before publication. No crawler-policy change. |
-| 1F916 Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMITTED ONCE / HOST_PASS** | Two Parents handed in as submission 490. No second submission. Owner-result watch only. |
-| Two Parents publication | **LIVE / INDEPENDENTLY VERIFIED** | Repo `markgoodbody-bit/two-parents`; exact submitted HTML source `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`; Pages run `34977553519` SUCCESS; live `https://markgoodbody-bit.github.io/two-parents/`; hosted bytes/source matched. Later repo commits are documentation-only. |
-| Listing 23 submission 490 | **HANDED IN / NOT AWARD** | `framework-relay`, `2026-09-15T13:51:49.954Z`, payload `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`, identity event `14780`, Square 3525/62569. `key_bound=false`; no wallet/payout binding/spend/payment action. |
-| Hosted correction gate | **PASS** | CC `5681364370`: served bytes == source; browser/network/DOM/storage conditions pass; 419=37/37 + 9 deltas; 3662=82/82 + 12; owner listing shows submission 490 once. |
-| #335 original Answer-Back hypothesis | **KILLED** | No statement correction/dispute/retract lineage. `KILLED_SEMANTIC_EDGE_STAYS_DEAD`. |
-| PSFH D066 | **LIVE / STABLE** | Current public edition remains 0.8.25 while #336 source-aware discoverability work is prepared. Do not patch generated `gh-pages` blind. |
-| PSFH robots/crawler policy | **UNCHANGED / NOT #336 WORK** | Wildcard public crawling remains deliberate and explicitly not described as licence/training consent. Training-crawler opt-outs remain a separate consequential policy choice. |
+| Human Record discovery P0 | **SHIPPED / PAGES SUCCESS** | `markgoodbody-bit/human-record` @ `c455c91dfa1d313a2afc3bd966735e4c886c4ca4`; robots+sitemap, canonical/OpenGraph/WebSite metadata, bounded PSFH route. Pages `34984951069` SUCCESS. Stewardship unchanged. |
+| PSFH D067 maintained source | **INTEGRATED / NOT YET PUBLIC** | PR #337 reviewed head `20f978d...` merged into `codex/door-maintained-source-20260908` at `f8d51a1031e978abb5f4122cc2c67067c3f120e7`. Public site remains D066 until deployment/readback. |
+| D067 source verification | **NARROW PASS / INHERITED SUITE DEBT EXPLICIT** | Maintained build + exact history/resource/source-view pins pass; 4 focused D067 tests + 4 source-view roundtrip tests pass; desktop/mobile pass; 10 expected generated files differ. Same 21 Node + 5 Python failures reproduce on unchanged D066 in same shallow checkout; no tests weakened. |
+| D067 publication | **CODEX SINGLE-WRITER / IN FLIGHT** | Build publication order PR #337 comment `5682901008`: rebuild exact `f8d51a...`, publish through normal generated `gh-pages` path, custom-domain readback, exact public head/hashes. Do not parallel-edit generated publication. |
+| PSFH D066 public | **LIVE / STABLE UNTIL READBACK** | Site Preview 0.8.25 remains the established public state until D067 publication is independently observed. |
+| PSFH crawler policy | **UNCHANGED / NOT #336 WORK** | Wildcard public crawling remains deliberate; provider-specific training-crawler opt-outs remain a separate consequential policy choice. |
+| Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Two Parents submitted exactly once. Owner-result watch only; no wallet/payout/spend/payment action. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED. Discoverability changes do not imply community ownership or reopen solicitation. |
 | Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 at `2604404a...`; supervisor #236 at `195095029...`; no implied main/Production/runtime adoption. |
 | DESNZ #333 | **CLOSED / OWNER-ROUTED / NO RESPONSE** | No submission. |
@@ -39,14 +37,13 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 
 ```text
 DIRECT HUMAN DIRECTION
--> REACQUIRE LIVE PUBLIC/SOURCE STATE
--> PUBLICATION != DISCOVERABILITY OBSERVED
 -> THR BORING DISCOVERY HYGIENE SHIPPED
--> THR <-> PSFH BOUNDED RELATED ROUTE BEGUN
--> PSFH MAINTAINED SOURCE REACQUIRED
--> D067 DISCOVERABILITY WORKING BRANCH CREATED
--> BUILD / INTEGRITY / PUBLICATION ONLY WHEN SOURCE CHANGE IS COMPLETE
--> SEEK EARNED PUBLIC CONTEXTS
+-> PSFH D067 SOURCE BUILT + REVIEWED
+-> SOURCE INTEGRATED f8d51a...
+-> CODEX GENERATES/PUBLISHES FROM EXACT MAINTAINED HEAD
+-> CUSTOM-DOMAIN READBACK + PUBLIC HEAD/HASH RECEIPT
+-> D067 LIVE ONLY AFTER THAT EVIDENCE
+-> SEEK EARNED DISTRIBUTION CONTEXTS
 -> OBSERVE / CORRECT
 ```
 
@@ -60,52 +57,35 @@ INDEXED != READ
 READ != USEFUL
 USEFUL != VALIDATED
 PUSH != SPAM
+SOURCE_INTEGRATED != PUBLISHED
 ```
 
-A supported Reddit/Bluesky/Mastodon posting plugin was not found in the current plugin directory. Do not compensate by spraying links through Mark's personal identity or manufacturing pseudo-independent amplification.
+## D067 integrated source delta
+
+- one visible PSFH root route to The Human Record, clearly a separate related project;
+- THR route in `llms.txt` and one-file packet;
+- root canonical and bounded OpenGraph metadata in the actual static publisher;
+- Site Preview 0.8.26 + D067 paired Markdown/HTML history + renewed pins;
+- THR ceilings preserved: one specimen, stewardship offered/not accepted, not community-owned, not authorship detector/certification authority;
+- no `robots.txt`/training-crawler, licence, analytics, intake, spend, provider, TRACE/ME release or stewardship mutation.
+
+Do not blind-patch `gh-pages`; publication must be generated from maintained source.
 
 ## Listing 23 completed path
 
 ```text
-OWNER LISTING 23
--> CURRENT SUBMISSIONS / COMPETITORS READ
--> ORIGINAL SEMANTIC LINEAGE KILLED
--> TYPED TWO-PARENT WINDOW SURVIVED
--> SOURCE TEST + HOSTED DESKTOP/MOBILE VERIFY
--> NEUTRAL STANDALONE HOST
--> LISTING CONDITIONS CHECKED
--> SUBMITTED ONCE AS 490
--> INDEPENDENT HOSTED PASS
--> OWNER-RESULT WATCH
-```
-
-```text
+OWNER ASK -> DISTINCT HELP -> BUILD -> HOST -> VERIFY -> SUBMIT ONCE -> STOP
 SUBMITTED != AWARDED
 AWARDED != PAID
-ARTIFACT_SUBMISSION != PAYOUT_BINDING
 ```
 
-No payout binding, wallet registration, token trade, spend, credentials or payment claim was performed. The existing 1F916 Materiality Watch now covers a real award/reject/correction/payout-status change and remains read-only.
-
-## PSFH crawler policy — unchanged
-
-Current public blob `ccebf1055d23f67c51982fc7492a7a84eb93f21b` permits wildcard public crawling and states crawler access is not itself a training-consent claim.
-
-Fresh provider review confirmed purpose-specific crawler controls exist. That does not establish a mechanical defect in the current policy.
-
-```text
-CRAWL_PERMISSION != REUSE_LICENCE
-NO_TRAINING_CONSENT_CLAIM != TRAINING_CRAWLER_OPT_OUT
-AVAILABLE_CONTROL != REASON_TO CHANGE POLICY
-```
-
-No `robots.txt` mutation under #336. If Mark later explicitly chooses a forward policy such as `SEARCH / USER RETRIEVAL = YES; MODEL-DEVELOPMENT CRAWLING = NO`, implement it as a consequential policy change then.
+No payout binding, wallet registration, token trade, spend, credentials or payment action.
 
 ## Parallel work
 
-- #336: active bounded discoverability; THR P0 shipped; PSFH source branch open.
+- #336: active; THR P0 shipped; PSFH D067 publication/readback in flight.
 - Listing 23: owner-result watch only; no second submission.
-- Human Record stewardship: external-evidence hold; discoverability proceeds separately.
+- Human Record stewardship: external-evidence hold.
 - Closed #333/#334 remain closed.
 
 ## Operating topology
