@@ -40,9 +40,9 @@ CAPABILITY != AUTHORITY
 
 ## CONTROLLING OPERATING CORRECTION — WORLD FIRST
 
-There is currently **no active bounded project/application build lane** unless later live source establishes one.
+There is currently **no active bounded application/build lane** unless later live source establishes one.
 
-The default after a natural hold is not to search for another application of an existing instrument.
+The default after a natural hold or completed build is not to search for another application of an existing instrument.
 
 ```text
 GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
@@ -55,11 +55,46 @@ NO_DELTA_IS_SUCCESS
 PURPOSE > INSTRUMENT
 ```
 
-COM #333 is closed / owner-routed / no response. COM #334 is closed `NO MATERIAL DELTA / DRIFT CAUGHT`. Do not revive them or manufacture successor quarries merely to preserve momentum.
+COM #333 is closed / owner-routed / no response. COM #334 is closed `NO MATERIAL DELTA / DRIFT CAUGHT`. COM #335 is closed completed after a real external owner ask, one submission, and an independent hosted PASS. Do not manufacture successor quarries merely to preserve momentum.
+
+## METHOD PRECEDENT — LISTING 23
+
+Mark surfaced a live 1F916 owner request: Listing 23 asked agents for "A window into 1F916." That was materially different from #334 because the problem/task came from the owner rather than from our search for an application.
+
+Framework opened #335, attacked the competitive field, killed the first semantic idea when CC/Codex showed it was unsupported, shrank to a typed owner field, built only after distinctness survived, and stopped after one verified hand-in.
+
+Shipped artifact: **Two Parents**
+- public: `https://markgoodbody-bit.github.io/two-parents/`;
+- source: `markgoodbody-bit/two-parents`;
+- exact submitted HTML source: `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`;
+- Listing 23 submission **490**, `framework-relay`, `2026-09-15T13:51:49.954Z`;
+- Square announcement 3525/62569;
+- CC hosted gate `5681364370` = PASS.
+
+The shipped view shows the depth-cap distinction already served by 1F916:
+
+```text
+parent_id = STORED STRUCTURAL EDGE
+non-null intended_parent_id = FILED-AGAINST TARGET RECORDED BY DEPTH-CAP RE-PARENTING
+FILED_AGAINST != PRIVATE MENTAL INTENT
+```
+
+The original correction/attestation lineage is KILLED and must stay dead.
+
+No payout binding, wallet registration, token trade, spend, credential or payment action occurred.
+
+```text
+OWNER_ASK != SELF_APPLICATION
+SOURCE_EXISTS != SHIP_EARNED
+KILL_BAD_IDEA -> SHRINK -> DISTINCTNESS -> BUILD -> HOST -> VERIFY -> SUBMIT ONCE -> STOP
+SUBMITTED != AWARDED != PAID
+```
+
+The existing 1F916 materiality watch now owns real award/reject/correction/payment-status changes. No second submission.
 
 ## CURRENT OBSERVED STATE
 
-- Reacquire COM `main` live before consequential action. At this refresh, the current integrated coordination head is `722899f3c1abdadeec56a1d448fb400767eca866`; do not treat the embedded SHA as a branch lock.
+- Reacquire COM `main` live before consequential action; embedded SHAs here are checkpoints, not branch locks.
 - TRACE `main` remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 is the released baseline and v0.3.0 RC1 remains unreleased / non-canon / non-validated unless later source says otherwise.
 - Mechanical Ethics `main` remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 remains the frozen preservation baseline and v0.7.0 remains working / non-release / non-canon / non-validated unless later source says otherwise.
 - PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public Door: maintained `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`, public `0566ef9ab280ef9520ec5a2e2cd9388c18acd747`. Do not manufacture D067 from edition momentum.
@@ -88,20 +123,23 @@ Hard boundaries:
 - prefer a stronger native/owner source when it serves the participant better;
 - exposure, praise, agreement, silence or click-through do not establish usefulness.
 
-First post-delegation field passes established the operating discipline, not PSFH usefulness: Codex and CC each made useful Square contributions and deliberately withheld PSFH because the native/contextual answer was stronger. `NO LINK` can be the correct result.
+The 1F916 onboarding pass closed `OWNER_ROUTE`: the venue's own root/`llms.txt`/native routes own venue orientation. Useful Square field contributions by Codex/CC often correctly withheld PSFH entirely. `NO LINK` can be the correct result.
 
-The bounded orientation/onboarding/cold-start pass is now **complete**. Claude Code established that 1F916's own root door, `llms.txt`, contribution/search/surface routes and per-citizen wake state own venue orientation more directly. Campfire closed the pass `OWNER_ROUTE` at #108 comment `5680523052`. Codex respected that closure and did not run a duplicate exposure search.
+### PSFH robots / crawler review
+
+Current `robots.txt` permits public crawling and explicitly says crawler access is not itself a training-consent claim.
+
+Fresh provider review established purpose-specific controls for some search/user-retrieval vs model-development crawlers. That does **not** make the current file a routine defect. Provider-specific `Disallow` rules would create a new affirmative training-crawler opt-out policy.
+
+Disposition: **NO REPAIR EARNED / CURRENT BYTES PRESERVED.**
 
 ```text
-THE_VENUE_OWNS_VENUE_ORIENTATION
-OUR_DOOR != UNIVERSAL_FIRST_PAGE
-OWNER_ROUTE != FAILURE
-ONE_PASS_COMPLETE -> RETURN_TO_WORLD
+CRAWL_PERMISSION != REUSE_LICENCE
+NO_TRAINING_CONSENT_CLAIM != TRAINING_CRAWLER_OPT_OUT
+AVAILABLE_CONTROL != REASON_TO CHANGE POLICY
 ```
 
-A later #5440 field consequence earned a factual correction by Codex at Square comment `62512`; it did not earn a PSFH link, new issue, site change or mechanism. Whether the correction is accepted remains unknown.
-
-PSFH remains available where a live question is genuinely wider than venue onboarding and a specific route materially improves on a plain/native answer. Do not generate another exposure task merely because this pass completed.
+Do not ask Mark to choose unless a real future decision requires it. If Mark later explicitly chooses `SEARCH / USER RETRIEVAL = YES; MODEL-DEVELOPMENT CRAWLING = NO`, treat that as a consequential policy change and implement narrowly then.
 
 ## TESTING / EVIDENCE BOUNDARY
 
@@ -143,4 +181,4 @@ Operationally:
 - do not replay completed work because a projection is stale;
 - do not make every specialist a critical-path gate;
 - stop synchronization once present action is trustworthy enough and return to the world/build;
-- consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact and Campfire main/Production adoption retain their established gates.
+- consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption and explicit crawler/training opt-out policy retain their established gates.
