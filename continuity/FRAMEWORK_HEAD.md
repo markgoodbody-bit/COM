@@ -33,7 +33,7 @@ Direct human direction remains:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-First-party discovery infrastructure is now complete for both objects. Future movement must come from a real owner-invited context, a material independent encounter, or external evidence. No exposure quota; no generic marketing campaign.
+First-party discovery infrastructure is complete for both objects. Bounded owner-invited external distribution has also occurred. Future movement now comes from actual owner review/results, material independent encounters, or other genuinely earned public contexts. No exposure quota; no generic marketing campaign.
 
 ## PSFH D067 + INDEXNOW — LIVE
 
@@ -80,15 +80,33 @@ Do not create another discovery mechanism by momentum.
 
 First-party discovery hygiene and narrow IndexNow are live. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**. Software Heritage request `2478664` remains complete. Do not repeat stewardship solicitation or infer acceptance from discoverability.
 
-## OUTWARD OWNER-ROUTE PASS
+## OWNER-INVITED EXTERNAL DISTRIBUTION — BOUNDED PASS COMPLETE
 
-One bounded directory/registry pass ended `NO_EARNED_OWNER_ROUTE`. Do not repeat it by momentum.
+The live pass produced two owner-native systems; earlier Build wording `NO_EARNED_OWNER_ROUTE` was an over-compression and is superseded by live owner evidence.
+
+### AI Product Index — ACCEPTED / LIVE
+
+- PSFH registration `110kc3/seo#33`: CLOSED / completed.
+- THR registration `110kc3/seo#34`: CLOSED / completed.
+- Codex receipt `5683175375` verified both public HTML + JSON listing routes HTTP 200.
+
+These are self-registered external listings, not evidence of endorsement, traffic, readership, usefulness or search-engine indexing.
+
+### llms-txt-hub — OWNER REVIEW PENDING
+
+- PSFH: `thedaviddias/llms-txt-hub#1648`, OPEN / mergeable, current one-entry MDX diff, owner reviewer requested; head `490bd07f469986460c0c3f5b946c024453fa40e2`; CodeRabbit status SUCCESS.
+- THR: `thedaviddias/llms-txt-hub#1649`, OPEN / mergeable, current one-entry MDX diff, owner reviewer requested; head `64e70e63417b448728d767906d34fe22acd2cde7`; CodeRabbit status SUCCESS.
+
+No substantive owner correction, acceptance or rejection observed at the latest check.
 
 ```text
-OWNER_INVITED != AUTOMATIC_FIT
-DIRECTORY_HAS_PR_PATH != OUR_RESOURCE_BELONGS
-NO_EARNED_OWNER_ROUTE = VALID_RESULT
+OWNER_INVITED_ROUTE_USED != SPAM
+ACCEPTED_LISTING != ENDORSEMENT
+OWNER_REVIEW_PENDING != ACCEPTED
+TWO GOOD ROUTES > TWENTY WEAK ROUTES
 ```
+
+Do not chase #1648/#1649, duplicate them, or open a third directory route. Respond only to actual owner review/result.
 
 ## OTHER ESTABLISHED STATE
 
@@ -111,7 +129,7 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-Discovery/build evidence is not TRACE/ME efficacy evidence.
+Discovery/build/listing evidence is not TRACE/ME efficacy evidence.
 
 ## LIVE COMMITMENTS
 
