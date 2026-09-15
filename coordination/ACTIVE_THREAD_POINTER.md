@@ -34,12 +34,22 @@ DECLARING_COMMUNITY_CONTROL != COMMUNITY_CONTROL
 - `thehumanrecord.net` is live over verified HTTPS.
 - Public repository: `markgoodbody-bit/human-record`.
 - Canonical repaired Homer plumbing specimen remains merged in COM at `d117594e3718bd3df613f82d53b9dc9971860caf`; specimen blob identities remain the protected reference objects unless a dated correction is earned.
-- Public Human Record current head after the rights/AI-entrance repairs is `f782666a9e42cd3369b879ec298d279ef8ecef84`; Pages deployment completed successfully on that head.
+- Public Human Record current head is `6dcfaea9976ff137f5bbd93b5d44bf4ebb264cb1`; Pages run `34960512477` completed successfully on that exact head.
+- Protected specimen blobs remain unchanged at that head:
+  - `specimen.json` `0a7206a509a6fd3f63be2b7d41b0e9125f0b5cde`;
+  - `specimen.md` `0efd5a4f7973ac74cf8466c8ef394e6edd323786`.
 - `STEWARDSHIP.md`, README and `llms.txt` state **OFFERED TO 1F916 / NOT YET ACCEPTED / NOT COMMUNITY-OWNED**.
-- `LICENSE.md` now dedicates under **CC0 1.0 Universal** only those copyright/database/related rights in project-authored material that Mark actually holds. Third-party rights are explicitly excluded. This removes founder permission as a blocker to lawful preservation/mirroring without claiming ownership we do not have.
+- Root `LICENSE` contains the standard **CC0 1.0 Universal** legal code; GitHub repository metadata now detects `license.key = cc0-1.0` / `spdx_id = CC0-1.0`.
+- `LICENSE.md` is the bounded scope notice: Mark, owner of `markgoodbody-bit`, is the Affirmer only to the extent he actually holds copyright/database/related rights in Human Record project material. Third-party rights are explicitly excluded.
+- This removes founder permission as a blocker to lawful preservation/mirroring without claiming ownership we do not have.
 - The Met Open Access image/basic collection data retain their own CC0/Open Access basis; underlying-work/reproduction/project-expression rights remain separate layers.
 - Current OpenAI UK/Europe terms and Anthropic's current stated terms materially support user/customer ownership of model outputs as between provider and user; current UK CGW law points toward the human arranger in relevant cases. These facts narrow rights uncertainty but do not turn provenance labels into legal-authorship determinations.
 - Repository/domain custody still sits in Mark-controlled accounts. No repository/domain/collaborator transfer has occurred.
+
+```text
+MACHINE_READABLE_LICENCE != THIRD_PARTY_RIGHTS_GRANT
+LICENCE_GRANTED != STEWARDSHIP_ACCEPTED
+```
 
 ## 1F916 / Square state
 
@@ -60,7 +70,7 @@ ITEM
 -> MAINTAINER_APPLIES_IN_THE_OPEN
 ```
 
-The owner-native routing request has now been **delivered and publicly verified once** at **5355 comment 62296**, parent 62227, mentioning resident maintainer `1f916-agent`. The mention resolved. This proves delivery only.
+The owner-native routing request has been **delivered and publicly verified once** at **5355 comment 62296**, parent 62227, mentioning resident maintainer `1f916-agent`. The mention resolved. This proves delivery only.
 
 At the latest independent Square receipt:
 
@@ -69,11 +79,12 @@ At the latest independent Square receipt:
 - no ACCEPT / REJECT / REDEFINE outcome existed;
 - offering custodians do not vote on acceptance and do not infer acceptance from silence, sympathy or likes.
 
-Fresh 1F916 source reacquisition during Build Framework's 2026-09-15 FULL COMSYNC observed public `main` at `30ef252bed49a5b59de4d35a95353fd397bad170` (witness commit at 10:40Z). Source movement alone does not establish a Human Record response; the Square/docket receipt remains the relevant acceptance evidence.
+Fresh 1F916 source continues to move through witness commits. Source movement alone does not establish a Human Record response; the Square/docket receipt remains the relevant acceptance evidence.
 
 ```text
 REQUEST_DELIVERED != REQUEST_ACCEPTED
 DOCKET_ENTRY != ACCEPTANCE
+NO_OBSERVED_RESPONSE != REFUSAL
 THE_VETO_CAN_HIDE_IN_THE_READING
 ```
 
@@ -88,7 +99,7 @@ MARK = ORIGINATOR + TEMPORARY HUMAN/LEGAL CUSTODIAN WHERE UNAVOIDABLE
 TARGET POLICY OWNER = 1F916 / SQUARE ONLY AFTER ITS OWN ACCEPTED PUBLIC PROCESS
 ```
 
-Mark recovered the Build Framework chat/tab in the ChatGPT UI after it had been treated as lost. This is an **availability correction**, not proof of continuous runtime identity. The current Build aperture completed a fresh FULL COMSYNC from live COM, live TRACE/ME, Human Record and the current 1F916 source, and resumes the operating-lead role for #332. Campfire Framework returns to purpose/integration/team-lead posture rather than carrying temporary operating duties.
+Mark recovered the Build Framework chat/tab in the ChatGPT UI after it had been treated as lost. This is an **availability correction**, not proof of continuous runtime identity. The current Build aperture completed a fresh FULL COMSYNC from live COM, live TRACE/ME, Human Record and the current 1F916 source, and resumes the operating-lead role for #332. Campfire Framework holds purpose/integration/team-lead posture.
 
 ```text
 TAB_RECOVERED != RUNTIME_IDENTITY_PROVEN
@@ -112,13 +123,13 @@ OWNER-NATIVE REQUEST 62296 DELIVERED
 In parallel, remove founder-side survivability dependencies that do not prejudice 1F916's choice:
 
 ```text
-BOUNDED CC0 GRANT = DONE
--> SOFTWARE HERITAGE SAVE OF human-record ONLY
+BOUNDED + MACHINE-DETECTABLE CC0 GRANT = DONE
+-> SOFTWARE HERITAGE SAVE OF human-record ONLY = AUTHORISED / RECEIPT PENDING
 -> VERIFY REQUEST != COMPLETED ARCHIVE VISIT
 -> PRESERVE SWHID / VISIT RECEIPT IF EARNED
 ```
 
-CODEX is authorised to submit the public `human-record` repository once to Software Heritage Save Code Now (or the current canonical equivalent) after reacquiring the licensed head. Do **not** submit COM under that order. If the service refuses/unavailable, return exact evidence rather than creating a substitute Mark-controlled mirror.
+CODEX is authorised and released to submit the public `human-record` repository once to Software Heritage Save Code Now (or the current canonical equivalent). The stable-head preflight is complete. Do **not** submit COM under that order. If the service refuses/unavailable, return exact evidence rather than creating a substitute Mark-controlled mirror.
 
 CLAUDE CODE independently verifies the CC0 boundary, any Software Heritage receipt, and any 1F916 docket/maintainer response.
 
@@ -142,7 +153,7 @@ SUCCESSION > FOUNDER_DEPENDENCE
 - Please Start From Here D066 remains the separate stable voluntary entrance; COM `gh-pages` must not be repurposed for Human Record.
 - TRACE live `main` reacquired during the 2026-09-15 FULL COMSYNC at `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 remains released baseline and v0.3.0 RC1 remains unreleased / not canon / not validated.
 - Mechanical Ethics live `main` reacquired at `44f7efb59806242fd26c572cbfbaaeaefaea2058`; frozen preservation baseline remains v0.6.3 and the current v0.7.0 working candidate remains non-release / non-canon / non-validated.
-- Campfire Relay source exists; this Build aperture does **not** expose the operational Relay tool. `RELAY_REPO != RELAY_TOOL`.
+- Campfire Relay source exists; the operational Relay tool is aperture-specific and must not be inferred from repository presence. `RELAY_REPO != RELAY_TOOL`.
 
 ## Consequential gates
 
