@@ -18,16 +18,16 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| Active bounded lane | **#336 — PSFH + HUMAN RECORD EARNED DISCOVERABILITY** | Direct human direction. Increase real independent encounter opportunities without turning reach into validation, spam or a conversion funnel. |
-| Human Record discovery P0 | **SHIPPED / PAGES SUCCESS** | `markgoodbody-bit/human-record` @ `c455c91dfa1d313a2afc3bd966735e4c886c4ca4`; robots+sitemap, canonical/OpenGraph/WebSite metadata, bounded PSFH route. Pages `34984951069` SUCCESS. Stewardship unchanged. |
-| PSFH D067 maintained source | **INTEGRATED / NOT YET PUBLIC** | PR #337 reviewed head `20f978d...` merged into `codex/door-maintained-source-20260908` at `f8d51a1031e978abb5f4122cc2c67067c3f120e7`. Public site remains D066 until deployment/readback. |
-| D067 source verification | **NARROW PASS / INHERITED SUITE DEBT EXPLICIT** | Maintained build + exact history/resource/source-view pins pass; 4 focused D067 tests + 4 source-view roundtrip tests pass; desktop/mobile pass; 10 expected generated files differ. Same 21 Node + 5 Python failures reproduce on unchanged D066 in same shallow checkout; no tests weakened. |
-| D067 publication | **CODEX SINGLE-WRITER / IN FLIGHT** | Build publication order PR #337 comment `5682901008`: rebuild exact `f8d51a...`, publish through normal generated `gh-pages` path, custom-domain readback, exact public head/hashes. Do not parallel-edit generated publication. |
-| PSFH D066 public | **LIVE / STABLE UNTIL READBACK** | Site Preview 0.8.25 remains the established public state until D067 publication is independently observed. |
-| PSFH crawler policy | **UNCHANGED / NOT #336 WORK** | Wildcard public crawling remains deliberate; provider-specific training-crawler opt-outs remain a separate consequential policy choice. |
-| Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Two Parents submitted exactly once. Owner-result watch only; no wallet/payout/spend/payment action. |
-| Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED. Discoverability changes do not imply community ownership or reopen solicitation. |
-| Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 at `2604404a...`; supervisor #236 at `195095029...`; no implied main/Production/runtime adoption. |
+| Active bounded lane | **#336 — EARNED DISCOVERABILITY / OWNER-INVITED DISTRIBUTION** | First-party hygiene is live. Test only genuine owner-invited public contexts; no generic marketing queue. |
+| PSFH D067 | **LIVE / VERIFIED** | Site Preview 0.8.26; maintained `6bd72899...`; public `288f76a3...`; Pages `34988050250` SUCCESS; 10 changed HTTPS surfaces byte-identical; one visible bounded THR route; canonical/OG present. |
+| PSFH D067 inherited suite debt | **DISCLOSED / NOT NEW REGRESSION** | Focused D067/source-view checks pass. Same 21 Node + 5 Python failures reproduce on unchanged D066 in the shallow checkout; no tests weakened. |
+| Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party crawl/sitemap/canonical/share hygiene live; narrow IndexNow workflow observed HTTP 202 for changed llms and HTTP 200 for root. No indexing/ranking/benefit claim. |
+| Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. Discoverability does not imply acceptance. |
+| Owner-route search | **BOUNDED PASS ACTIVE** | Read exact inclusion rules before any contribution. Reject weak/self-promotional/out-of-scope fits. `NO_EARNED_OWNER_ROUTE` is valid. |
+| awesome-ai-safety candidate | **REJECT FOR NOW** | Owner excludes self-promotional entries without demonstrated community adoption. Do not submit PSFH/THR merely because educational resources are accepted. |
+| digipres awesome digital preservation | **FIT UNRESOLVED** | Open PR route and preservation-metadata category exist, but emphasis on community-owned resources makes THR's one-specimen experiment an uncertain fit. Do not submit by adjacency. |
+| Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Two Parents submitted once; owner-result watch only. `SUBMITTED != AWARDED != PAID`. |
+| Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 and supervisor #236 source-integrated; no implied main/Production/runtime adoption. |
 | DESNZ #333 | **CLOSED / OWNER-ROUTED / NO RESPONSE** | No submission. |
 | Agent incident #334 | **CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT** | No project object/outreach. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated unless live source changes. |
@@ -37,55 +37,57 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 
 ```text
 DIRECT HUMAN DIRECTION
--> THR BORING DISCOVERY HYGIENE SHIPPED
--> PSFH D067 SOURCE BUILT + REVIEWED
--> SOURCE INTEGRATED f8d51a...
--> CODEX GENERATES/PUBLISHES FROM EXACT MAINTAINED HEAD
--> CUSTOM-DOMAIN READBACK + PUBLIC HEAD/HASH RECEIPT
--> D067 LIVE ONLY AFTER THAT EVIDENCE
--> SEEK EARNED DISTRIBUTION CONTEXTS
+-> THR FIRST-PARTY DISCOVERY LIVE
+-> PSFH D067 LIVE
+-> FIRST-PARTY HYGIENE COMPLETE ENOUGH
+-> OWNER-INVITED PUBLIC CONTEXT
+-> EXACT OWNER RULES
+-> USEFUL CONTRIBUTION + HONEST LINK ONLY IF FIT SURVIVES
 -> OBSERVE / CORRECT
 ```
 
 Current ceilings:
 
 ```text
+OWNER_INVITED != AUTOMATIC_FIT
+DIRECTORY_HAS_PR_PATH != OUR_RESOURCE_BELONGS
 AWARENESS != AGREEMENT
 DISCOVERY != ADOPTION
-CRAWLABLE != INDEXED
-INDEXED != READ
+INDEXNOW_ACCEPTED != INDEXED
 READ != USEFUL
 USEFUL != VALIDATED
 PUSH != SPAM
-SOURCE_INTEGRATED != PUBLISHED
 ```
 
-## D067 integrated source delta
+## PSFH D067 live identities
 
-- one visible PSFH root route to The Human Record, clearly a separate related project;
-- THR route in `llms.txt` and one-file packet;
-- root canonical and bounded OpenGraph metadata in the actual static publisher;
-- Site Preview 0.8.26 + D067 paired Markdown/HTML history + renewed pins;
-- THR ceilings preserved: one specimen, stewardship offered/not accepted, not community-owned, not authorship detector/certification authority;
-- no `robots.txt`/training-crawler, licence, analytics, intake, spend, provider, TRACE/ME release or stewardship mutation.
+- maintained source: `6bd72899ab3ab4812da35cdd563313ecfd12cd58`;
+- public `gh-pages`: `288f76a37fcd49f7682117b328a51d86938925ab`;
+- Pages run: `34988050250` SUCCESS;
+- root SHA-256: `c4643d14fd401cac064d171531226e0f25e49b399e5c7cd38268e4c94d598c9f`;
+- llms SHA-256: `5dfc5ffc0026ad928a2e5b5bc1b6b1a6cf813d1c131ad5661a440b9a59e3fe21`.
 
-Do not blind-patch `gh-pages`; publication must be generated from maintained source.
+No crawler/training-policy, licence, analytics, intake, account, TRACE/ME release or stewardship mutation occurred.
 
-## Listing 23 completed path
+## Distribution discipline
 
 ```text
-OWNER ASK -> DISTINCT HELP -> BUILD -> HOST -> VERIFY -> SUBMIT ONCE -> STOP
-SUBMITTED != AWARDED
-AWARDED != PAID
+OWNER INVITES RESOURCES/LINKS
+-> READ SCOPE + EXCLUSIONS
+-> TEST ACTUAL FIT
+-> PREFER STRONGER OWNER MATERIAL
+-> ONE SMALL ACCURATE CONTRIBUTION IF EARNED
+-> NO VALIDATION/ADOPTION CLAIM
 ```
 
-No payout binding, wallet registration, token trade, spend, credentials or payment action.
+Do not create outreach volume targets. Do not force THR into preservation lists because it mentions provenance, or PSFH into safety lists because it discusses AI/human futures.
 
 ## Parallel work
 
-- #336: active; THR P0 shipped; PSFH D067 publication/readback in flight.
+- #336: active outward distribution pass.
 - Listing 23: owner-result watch only; no second submission.
 - Human Record stewardship: external-evidence hold.
+- PSFH contextual encounter loop remains available where independently earned.
 - Closed #333/#334 remain closed.
 
 ## Operating topology
@@ -102,4 +104,4 @@ Mark is not the scheduler. Routine reversible work moves without asking him to r
 
 ## Consequential gates
 
-Human/explicit gates remain for TRACE/ME release/canon/baseline/licence changes, spend/provider commitments, credentials/secure auth/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, and any future explicit PSFH crawler/training opt-out policy.
+Human/explicit gates remain for TRACE/ME release/canon/baseline/licence changes, spend/provider commitments, credentials/secure auth/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions, and any explicit PSFH crawler/training policy change.
