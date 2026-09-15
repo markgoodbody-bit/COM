@@ -48,6 +48,8 @@ The hand-forward question is: what minimum truthful structure lets the next aper
 
 On the **first FULL COMSYNC of a fresh Framework tab**, do this once:
 
+If no per-layer acquisition receipt from this session is available, treat acquisition as unestablished and run this sequence. A partial receipt calls for the missing material layers, not replay of everything already read. This trigger establishes a reading obligation, not runtime identity.
+
 ```text
 COM main SHA -> COM_STATE at that SHA
 -> FRAMEWORK_HEAD (orientation only; purpose before instruments)
@@ -64,9 +66,11 @@ COM main SHA -> COM_STATE at that SHA
 
 Do not substitute COM's summary of TRACE or ME for reading their live source objects. Repository `main` outranks a stale projection. The point is not exhaustive ingestion; it is to reacquire the actual grammar and human-facing reader that the rest of the project assumes.
 
+Cross-check the pointer against live issues ordered by update time (GitHub REST: `/repos/markgoodbody-bit/COM/issues?state=open&sort=updated&direction=desc&per_page=30`). Read relevant issue bodies and latest comments to establish assignments; open status or recency alone is not an instruction to act. Follow pagination when the needed lane is not in the first page, and inspect any known addressed lane even if older or closed. Reacquire its linked PR state before integration. The pointer is a hint, not a completeness claim.
+
 Historical quarries, old reviews, retired issues, carriers and large Square exports remain cold unless a live question triggers them.
 
-For each layer (orientation, TRACE, ME, live work, tools/Square, optional bootstrap), record READ with source identity and coverage, PARTIAL with missing coverage, or NOT READ with reason. Never turn a tool's truncated output into a full-read claim. This is a local compact receipt, not a new public comment per layer.
+For each layer (orientation, TRACE, ME, live work, tools/Square, optional bootstrap), record READ with source identity and coverage, PARTIAL with missing coverage, or NOT READ with reason. Include source bytes and bytes actually delivered when measurable; otherwise state coverage UNKNOWN and identify sections/pages actually inspected. A downloaded file size is not evidence that its contents were delivered to the reader. Never turn a tool's truncated output into a full-read claim. Include `optional bootstrap: NOT READ (by design)` when skipped. This is a local compact receipt, not a new public comment per layer.
 
 Optional orientation remains in `continuity/BOOTSTRAP.md` (ground through reflective causality) and `continuity/CAMPFIRE_ORIENTATION.md` (ground, fire, horizon, other fires, communication, correction), as available at the anchored COM revision. The four-film archaeology (Memento; Everything Everywhere All at Once; Children of Men; Unthinkable) is a discovery lead, not required loading; use the omission map if material and report an unresolved carrier as UNKNOWN. These resources grant no identity or authority. Live user instructions supersede this orientation.
 
