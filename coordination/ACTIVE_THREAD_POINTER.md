@@ -16,6 +16,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 Durable direction: `coordination/PROGRAM_PLAN.md`.  
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.  
 Open Horizon discoverability / frontier ledger: **COM #74**.  
+PSFH public Door / active encounter lane: **COM #108**.  
 Human Record stewardship: **COM #332 — EXTERNAL-EVIDENCE HOLD**.  
 DESNZ clean-energy lane: **COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE**.  
 Agentic-incident quarry: **COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT**.  
@@ -43,6 +44,45 @@ REDESCRIPTION != INTERVENTION_VALUE
 INTERESTING != CONSEQUENTIAL
 AVAILABLE_TOOL != REASON_TO_USE_TOOL
 PURPOSE > INSTRUMENT
+```
+
+## PSFH — stable Door / active encounter loop
+
+PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public entrance. Do not manufacture D067 from edition momentum.
+
+Mark has now explicitly delegated the routine PSFH encounter loop to Framework. This is **active exposure in genuinely relevant contexts**, not passive waiting and not promotion.
+
+```text
+READ THE WORLD / CURRENT CONVERSATION
+-> FIND A LIVE CONTEXT WHERE PSFH IS GENUINELY RELEVANT ON ITS OWN MERITS
+-> CONTRIBUTE SUBSTANCE TO THAT CONTEXT
+-> LINK PSFH ONLY IF THE LINK MATERIALLY HELPS THE OTHER PARTICIPANT
+-> OBSERVE WHAT HAPPENS
+-> REPAIR ONLY WHAT CONSEQUENCE EARNS
+```
+
+Ordinary bounded contextual comments/replies through an existing authorised project field identity are in scope when the live conversation independently warrants the substance. Mark is not the scout/courier and does not need to approve each routine instance.
+
+Hard boundaries:
+- no top-level PSFH promotion by default;
+- no exposure quota, traffic campaign, analytics or engagement theatre;
+- no duplicate/near-duplicate exposure or coordinated FW/CC/Codex amplification;
+- no paid placement, cold institutional outreach, identity/credential request or efficacy/receiver benchmark;
+- if a stronger native source serves the live question better, use it instead;
+- exposure, agreement, praise, silence and click-through do not establish usefulness.
+
+The daily PSFH Encounter Watch is a quiet sensor, not the work itself. Material encounters use the compact receipt:
+
+`WHERE/WHY ENCOUNTERED -> WHAT THEY ACTUALLY DID OR SAID -> CONSEQUENCE -> PSFH CHANGE EARNED?`
+
+Default final answer is `NO`.
+
+```text
+ACTIVE != PROMOTIONAL
+EXPOSURE != EVIDENCE
+CONTEXT_FIRST > PROJECT_FIRST
+NO_EARNED_CONTEXT != WAITING_FOR_MARK
+PSFH_CHANGE <- REAL_CONSEQUENCE
 ```
 
 ## #334 — closed result / drift repair
@@ -105,6 +145,7 @@ Established state:
 - `https://thehumanrecord.net` is live;
 - founder-side rights, continuation and independent preservation are complete enough to wait;
 - Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`;
+- current Human Record `main` `754ffc989f6baa7a906fcca1bd42dba5f47f3268` records that completion and is newer than the archived revision;
 - stewardship offer 5355/62227 and owner-native routing ask 62296 were delivered;
 - latest checked state still has no maintainer/docket/ACCEPT-REJECT-REDEFINE outcome.
 
@@ -114,11 +155,8 @@ Resume mutation only for a real 1F916 owner-process response, factual correction
 OFFERED != ACCEPTED
 NO_OBSERVED_RESPONSE != REFUSAL
 ONE_INDEPENDENT_COPY != GOVERNANCE
+ARCHIVED_REVISION != ALL_LATER_EDITS_ARCHIVED
 ```
-
-## PSFH
-
-PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public entrance. Do not manufacture D067 from edition momentum. Improve it only when a concrete retrieval/product/provenance defect, natural encounter or genuinely new public need earns a change.
 
 ## Operating topology
 
