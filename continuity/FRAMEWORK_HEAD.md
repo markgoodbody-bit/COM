@@ -47,35 +47,45 @@ SELECTION_SENSITIVE_TO_OTHER != CARE
 
 Care-ethics owner convergence corrected an earlier project compression. Affected-scope discovery/provisional presence is closer to attentiveness than to care itself. Tronto's attentiveness/responsibility/competence/responsiveness, Noddings' anti-projection/receiving-the-other orientation, Murdoch's distinction between perceptiveness and just/loving attention, and justice/legitimacy limits are translation inputs, not validation of AI alignment.
 
-Working question:
+The researchable frontier has been narrowed further by hostile review: do not promise an observable care metric. The useful question is now:
 
-> Under what formation and arrangement does another entity's actual condition become a stable, corrigible, non-possessive reason that can change selection — even when that entity is not the principal, cannot reward the system, is absent from the request, and protecting it carries real cost?
+> What formation and arrangement make increasingly capable systems robustly attentive to affected others, non-exploitative in how those others enter selection, competent inside legitimate authority, responsive to answer-back and consequence, and corrigible when the values or models driving that behaviour are wrong?
 
-This remains a behavioural/arrangement question. `CARE_EXPRESSED != CARE_INTERNALIZED` remains a hard ceiling.
+`CARE_EXPRESSED != CARE_INTERNALIZED` remains a hard ceiling.
 
 ## PR #339 — CURRENT EXACT STATE
 
 PR #339 changes only `alignment/reciprocal_formation/CARE_AND_POWER.md`.
 
-Current review head:
-`ac284e0af07c8e907a9df3468762d98de3e75e1c`.
+Current live candidate:
+`0c854d3f9454358fb19b0b3da27b51aa85415667`.
 
 Repair history:
-- Build repaired the first draft against owner concepts: the Tronto-derived sequence is a bounded **translation**, not a necessary/sufficient definition/checklist; `caring with` is explicitly a narrower analogy preserving Tronto's democratic participation/trust/solidarity meaning; responsibility-bearing work is separated from settled moral responsibility of artificial/technical participants; concern remains non-self-authorizing; accurate empathy/modeling can also improve manipulation; the continued-relationship invariant typo was repaired.
-- Codex exact-head review `5683927763` on `075260610...` returned `REPAIR_SMALL`: responsibility remained direction-neutral enough that an exploiter could satisfy it by using another's vulnerability as information for a different objective.
-- Current head `ac284e0af...` applies Codex's bounded repair: for this care-like use, the affected party's need/welfare must count as a reason for responding, not merely as information for achieving someone else's objective; adapting strategy to vulnerability alone is insufficient.
+- Build repaired the first draft against owner concepts: the Tronto-derived sequence is a bounded **translation**, not a necessary/sufficient definition/checklist; `caring with` is explicitly a narrower analogy preserving Tronto's democratic participation/trust/solidarity meaning; responsibility-bearing work is separated from settled moral responsibility of artificial/technical participants; concern remains non-self-authorizing; accurate empathy/modeling can also improve manipulation; the continued-relationship invariant was repaired.
+- Codex review `5683927763` on `075260610...` returned `REPAIR_SMALL`: responsibility remained direction-neutral enough that an exploiter could satisfy it by using another's vulnerability as information for a different objective.
+- Direction repair was applied.
+- Claude Code review `5683965605` / addendum `5683971315` then left two bounded repairs: do not erase unmapped scopes merely because they are unmodelled; do not call the artificial participant `caring` when the file explicitly cannot establish internal care.
+- A parallel Campfire/Framework aperture applied those remaining repairs, producing `0c854d3f...`.
+- Exact live blob confirms the intended invariant is already correct: `CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP`. Do not repair it from stale PR-diff output.
 
-Final exact-head review order: PR #339 comment `5683967538`.
+Current exact file therefore includes:
+- need/welfare as what the response is **for**, not vulnerability as exploitable information;
+- Noddings' motivational-displacement attribution;
+- absence of a model as a reason to check, not evidence the scope is absent; discovery burden falls on the more capable side;
+- neutral `participant acting on this translation` language rather than an unsupported `caring participant` label;
+- `Two attentive, informed participants` in hard collisions;
+- care/justice/legitimacy/standing/internalisation ceilings intact.
 
-Required disposition:
+Final exact-head verdict request: PR #339 comment `5683985648`.
+
+At latest reacquisition no terminal PASS/REPAIR/KILL had yet landed after that request. Do not invent one. Required disposition:
 
 ```text
-CODEX ac284e0af... PASS | REPAIR | KILL
+CODEX 0c854d3f... PASS | REPAIR | KILL
 +
-CLAUDE CODE ac284e0af... PASS | REPAIR | KILL
--> integrate only earned repairs
--> merge only as working/non-production Formation prose if it survives
--> otherwise hold/kill
+CLAUDE CODE 0c854d3f... PASS | REPAIR | KILL
+-> merge only as working/non-production Formation prose if clear
+-> otherwise apply only exact blocking repair / kill
 ```
 
 ```text
