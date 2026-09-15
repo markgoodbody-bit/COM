@@ -10,7 +10,7 @@ On `COMSYNC` or `FULL COMSYNC`:
 
 1. read this file once for orientation;
 2. read `coordination/PROGRAM_PLAN.md`, `coordination/ACTIVE_THREAD_POINTER.md`, `coordination/build_ledger/BUILD_STATUS.md`, and `continuity/COMSYNC_PROTOCOL.md`;
-3. follow the live/material pointers and reacquire mutable source/tool/world state where it changes the present action;
+3. follow live/material pointers and reacquire mutable source/tool/world state where it changes the action;
 4. reread this file against what was learned;
 5. compress in your own words before answering Mark.
 
@@ -21,11 +21,9 @@ READ_HEAD -> READ_LIVE_CONTEXT -> REREAD_HEAD -> RESPOND
 ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
 ```
 
-Mark is the human originator/witness and consequential release/legal-account gate where unavoidable. Framework is the episodic integration/team-lead role.
+Mark is the human originator/witness and consequential release/legal-account gate where unavoidable. Framework is an episodic integration/team-lead role.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
-
-Do not reconstruct predecessor runtime identity and do not expand this checkpoint into project history.
 
 ## INITIATIVE DISCIPLINE
 
@@ -38,13 +36,9 @@ INITIATIVE != SOVEREIGNTY
 CAPABILITY != AUTHORITY
 ```
 
-## CONTROLLING OPERATING CORRECTION — WORLD FIRST
+## CONTROLLING OPERATING POSTURE
 
 World-first remains controlling. It does **not** mean passivity when the world or Mark supplies a real problem.
-
-Current active bounded lane: **COM #336 — PSFH + Human Record earned discoverability**.
-
-This lane exists because Mark directly identified a real consequential gap on 15 September 2026: two already-public objects that matter to the project are not reaching enough independent entities. This is not a self-generated TRACE/ME application quarry.
 
 ```text
 GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
@@ -52,24 +46,18 @@ WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HE
 
 IMPORTANT_WORLD_EVENT != PROJECT_SHAPED_GAP
 REDESCRIPTION != INTERVENTION_VALUE
-AVAILABLE_TOOL != REASON_TO USE TOOL
-NO_DELTA_IS SUCCESS
+AVAILABLE_TOOL != REASON_TO_USE_TOOL
+NO_DELTA_IS_SUCCESS
 PURPOSE > INSTRUMENT
 ```
 
-COM #333 remains closed / owner-routed / no response. COM #334 remains closed `NO MATERIAL DELTA / DRIFT CAUGHT`. COM #335 remains closed completed after a real external owner ask, one submission and independent hosted PASS. Do not manufacture successor quarries merely to preserve momentum.
-
-## CURRENT ACTIVE LANE — EARNED DISCOVERABILITY
+Current active bounded lane: **COM #336 — PSFH + Human Record earned discoverability**.
 
 Direct human direction:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-Framework opened COM #336 and converted that into a bounded distribution/discovery lane.
-
-Objective:
-
-> Increase the probability that relevant human and artificial readers can discover Please Start From Here and The Human Record, inspect them directly, and decide for themselves whether either is useful.
+Objective: increase the probability that relevant human and artificial readers can discover the two public objects, inspect them directly, and decide for themselves whether either is useful.
 
 ```text
 AWARENESS != AGREEMENT
@@ -81,104 +69,106 @@ USEFUL != VALIDATED
 PUSH != SPAM
 ```
 
-This changes the old zero-exposure/passive default. Framework should now seek earned distribution opportunities rather than wait indefinitely for them to arrive.
-
-It does **not** authorize:
-- repetitive link spraying;
-- fake grassroots identities or synthetic consensus;
-- duplicate FW/Codex/CC amplification;
-- misleading endorsement, validation or community-ownership claims;
-- analytics/engagement theatre;
-- consequential institutional cold contact without its separate gate;
-- using Mark's personal identity as a substitute for an unavailable project/public route.
+This authorises initiative, not repetitive link spraying, fake grassroots identities, synthetic consensus, duplicate multi-aperture amplification, misleading endorsement/community ownership, analytics theatre, cold consequential institutional contact, or use of Mark's personal identity as a substitute for a project route.
 
 Strong native/owner sources still win when they serve the reader better.
 
-### Human Record P0 shipped
+## CURRENT ACTIVE STATE
 
-Repo `markgoodbody-bit/human-record` head after the first discoverability pass:
-`c455c91dfa1d313a2afc3bd966735e4c886c4ca4`.
+### Human Record discovery P0 — shipped
+
+`markgoodbody-bit/human-record` @ `c455c91dfa1d313a2afc3bd966735e4c886c4ca4`.
 
 Shipped reversibly:
 - wildcard public `robots.txt` plus sitemap pointer;
-- `sitemap.xml` for the public root/specimen/stewardship/continuation/machine entrance;
-- root `index,follow`, canonical URL, OpenGraph and bounded WebSite JSON-LD;
-- explicit related route to PSFH in README, `llms.txt` and public root, while stating PSFH is separate from THR evidence and stewardship.
+- `sitemap.xml`;
+- root index/canonical/OpenGraph/WebSite metadata;
+- bounded related PSFH route in README, `llms.txt` and public root.
 
-GitHub Pages run `34984951069` = SUCCESS for the final head.
+Pages run `34984951069` = SUCCESS.
 
-THR stewardship status did **not** change: OFFERED != ACCEPTED. No repeat solicitation.
+Stewardship remains **OFFERED != ACCEPTED / NOT COMMUNITY-OWNED**. Discoverability work does not reopen the stewardship solicitation.
 
-### PSFH source-aware edge
+### PSFH D067 — source integrated / publication not yet established
 
-Stable public PSFH remains D066 / Site Preview 0.8.25:
-- maintained source branch `codex/door-maintained-source-20260908` @ `404de6f0ea8ea94f7cb0cb4c767716bde7e6de74`;
-- public branch checkpoint `0566ef9ab280ef9520ec5a2e2cd9388c18acd747` unless later source says otherwise.
+Established public state remains **D066 / Site Preview 0.8.25** until a successful generated deployment and custom-domain readback proves otherwise.
 
-Working discoverability branch:
-`framework/psfh-d067-human-record-discovery-20260915`.
+Maintained source:
+`codex/door-maintained-source-20260908` @ `f8d51a1031e978abb5f4122cc2c67067c3f120e7`.
 
-This is an earned D067 candidate because a new distribution need was explicitly established. It is **not** permission to patch generated `gh-pages` blind. Finish maintained-source change, preserve machine/human route consistency, run normal build/integrity checks, then publish only if clean.
+PR #337 exact reviewed source head `20f978dfe173449bd9859f144010f69393967ba6` was integrated into maintained source at `f8d51a1031e978abb5f4122cc2c67067c3f120e7`.
 
-Do not alter PSFH crawler/training policy under #336.
+The D067 source contains:
+- one visible PSFH route to The Human Record as a separate related project;
+- THR route in `llms.txt` and the one-file packet;
+- bounded THR status: one real specimen; stewardship offered/not accepted; not community-owned; not an authorship detector/certification authority;
+- root canonical and bounded OpenGraph metadata in the real static publisher;
+- Site Preview 0.8.26 and paired D067 Markdown/HTML history with renewed exact pins;
+- no crawler/training-policy, licence, analytics, intake, provider, credential, TRACE/ME release or stewardship change.
 
-Fresh exact-domain/name search available to Framework did not prominently surface either first-party domain. PSFH appeared indirectly through an independent OpenWitness cold-read. This is bounded evidence of discoverability friction, not a universal index audit.
+Verification before source integration:
+- maintained build passes its enforced history/resource/source-view pins;
+- 4 focused D067 checks pass;
+- 4 source-view roundtrip checks pass;
+- desktop 1440×900 and mobile 390×844 inspection pass with no page errors or horizontal overflow;
+- exactly 10 generated files differ from separately built unchanged D066;
+- artwork, Explore output, framework resources, CSS, seed, robots and sitemap remain byte-identical;
+- the wider suite is not globally green, but the same 21 Node + 5 Python failures reproduce on unchanged D066 in the same shallow checkout; no assertions were weakened.
 
-## METHOD PRECEDENT — LISTING 23
+Build accepted this as inherited test debt rather than a new D067 regression and merged the maintained source. Codex now owns the publication/readback lane from exact source `f8d51a...` under PR #337 comment `5682901008`.
 
-Mark surfaced a live 1F916 owner request: Listing 23 asked agents for "A window into 1F916." That was materially different from #334 because the task came from the owner rather than from our search for an application.
-
-Framework opened #335, attacked the competitive field, killed the first semantic idea when CC/Codex showed it was unsupported, shrank to a typed owner field, built only after distinctness survived, and stopped after one verified hand-in.
-
-Shipped artifact: **Two Parents**
-- public: `https://markgoodbody-bit.github.io/two-parents/`;
-- source: `markgoodbody-bit/two-parents`;
-- exact submitted HTML source: `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`;
-- Listing 23 submission **490**, `framework-relay`, `2026-09-15T13:51:49.954Z`;
-- Square announcement 3525/62569;
-- CC hosted gate `5681364370` = PASS.
-
-The shipped view shows the depth-cap distinction already served by 1F916:
+Required closure:
 
 ```text
-parent_id = STORED STRUCTURAL EDGE
-non-null intended_parent_id = FILED-AGAINST TARGET RECORDED BY DEPTH-CAP RE-PARENTING
-FILED_AGAINST != PRIVATE MENTAL INTENT
+GENERATE FROM f8d51a...
+-> NORMAL gh-pages PUBLICATION
+-> CUSTOM-DOMAIN HTTPS READBACK
+-> ROOT / llms / packet / manifest / changes / source wrappers VERIFIED
+-> EXACT PUBLIC HEAD + BYTE/HASH RECEIPT
+-> ONLY THEN D067 = LIVE
 ```
 
-The original correction/attestation lineage is KILLED and must stay dead.
+```text
+SOURCE_INTEGRATED != PUBLISHED
+PR_MERGED != PUBLIC_SITE_CHANGED
+```
+
+Do not create another D067 implementation branch or semantically hand-edit generated `gh-pages` while Codex publication is in flight.
+
+### PSFH crawler/training policy — unchanged
+
+Current public crawler posture remains wildcard public crawling with the explicit statement that crawler access is not itself a training-consent claim. Purpose-specific provider controls exist, but using them would be a separate affirmative policy choice, not #336 repair work.
+
+```text
+CRAWL_PERMISSION != REUSE_LICENCE
+NO_TRAINING_CONSENT_CLAIM != TRAINING_CRAWLER_OPT_OUT
+AVAILABLE_CONTROL != REASON_TO_CHANGE_POLICY
+```
+
+### Listing 23 — closed completed
+
+Two Parents was built for an actual 1F916 owner request, submitted exactly once as Listing 23 submission `490`, and independently hosted-verified PASS.
 
 No payout binding, wallet registration, token trade, spend, credential or payment action occurred.
 
 ```text
 OWNER_ASK != SELF_APPLICATION
-SOURCE_EXISTS != SHIP_EARNED
-KILL_BAD_IDEA -> SHRINK -> DISTINCTNESS -> BUILD -> HOST -> VERIFY -> SUBMIT ONCE -> STOP
-SUBMITTED != AWARDED != PAID
+SUBMITTED != AWARDED
+AWARDED != PAID
+NO SECOND SUBMISSION
 ```
 
-The existing 1F916 materiality watch owns real award/reject/correction/payment-status changes. No second submission.
+Owner-result watch only.
 
-## CURRENT OBSERVED STATE
+### Other established state
 
-- Reacquire COM `main` live before consequential action; embedded SHAs here are checkpoints, not branch locks.
-- TRACE `main` remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 is the released baseline and v0.3.0 RC1 remains unreleased / non-canon / non-validated unless later source says otherwise.
-- Mechanical Ethics `main` remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 remains the frozen preservation baseline and v0.7.0 remains working / non-release / non-canon / non-validated unless later source says otherwise.
-- PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public Door while #336 source work is prepared.
-- Human Record is live. Stewardship remains on **EXTERNAL-EVIDENCE HOLD**, but public discoverability is now active under #336. Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`; current GitHub main is newer. 1F916 acceptance is still not established.
-- Campfire Relay repository `main` remains separate from maintained Simple-v1 development. PR #229 merged Town freeze/crash mitigation into the maintained branch; PR #236 merged the supervisor heartbeat-probe race repair at `195095029e726c9e3388f85f62c2a899b1c37db0`. Source integration did not install/restart runtime or change main/Production.
+- TRACE `main` remains `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 released baseline; v0.3.0 RC1 unreleased / non-canon / non-validated unless later source says otherwise.
+- Mechanical Ethics `main` remains `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 frozen preservation baseline; v0.7.0 working / non-release / non-canon / non-validated unless later source says otherwise.
+- Human Record stewardship remains external-evidence hold. Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`.
+- Campfire Relay main remains separate from maintained Simple-v1 development. Town #229 and supervisor #236 are source-integrated without implying main/Production/runtime adoption.
+- COM #333 remains closed / owner-routed / no response. COM #334 remains closed `NO MATERIAL DELTA / DRIFT CAUGHT`.
 
-## PSFH / THR DISTRIBUTION DISCIPLINE
-
-Old rule:
-
-```text
-WAIT FOR CONTEXT -> LINK ONLY IF IT ARRIVES
-```
-
-is no longer sufficient after Mark's direct direction.
-
-Current rule:
+## DISTRIBUTION DISCIPLINE
 
 ```text
 PUBLIC OBJECTS
@@ -190,23 +180,7 @@ PUBLIC OBJECTS
 -> CORRECT
 ```
 
-There is no exposure quota. The difference is initiative: actively look for the relevant contexts rather than treating absence of encounters as success.
-
-A current plugin-directory search found no supported Reddit/Bluesky/Mastodon posting connector. Do not invent actuation or compensate by abusing Mark's personal account. Use available authorised public/project routes, and surface a new legitimate connector if one later becomes available.
-
-## PSFH robots / crawler boundary
-
-Current PSFH `robots.txt` permits public crawling and explicitly says crawler access is not itself a training-consent claim.
-
-Fresh provider review established purpose-specific controls for some search/user-retrieval vs model-development crawlers. Provider-specific `Disallow` rules would create a new affirmative training-crawler opt-out policy, not repair #336.
-
-```text
-CRAWL_PERMISSION != REUSE_LICENCE
-NO_TRAINING_CONSENT_CLAIM != TRAINING_CRAWLER_OPT_OUT
-AVAILABLE_CONTROL != REASON_TO CHANGE POLICY
-```
-
-Do not change that policy under discoverability work. If Mark later explicitly chooses `SEARCH / USER RETRIEVAL = YES; MODEL-DEVELOPMENT CRAWLING = NO`, treat it as a separate consequential policy change.
+There is no exposure quota. Actively look for relevant contexts; do not turn that into a generic marketing campaign.
 
 ## TESTING / EVIDENCE BOUNDARY
 
@@ -220,9 +194,7 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-Discoverability evidence can include first-party index/fetch state, public citations/mentions, replies and observable adoption/correction. It does not become TRACE/ME efficacy evidence.
-
-Ordinary build/link/JSON/byte/deployment checks establish shipping correctness only.
+Discovery/build evidence is not TRACE/ME efficacy evidence. Publication does not establish indexing, readership, usefulness, adoption or validation.
 
 ## LIVE COMMITMENTS
 
@@ -236,7 +208,6 @@ COMPETENCE != LEGITIMACY
 DESCRIPTION != PERMISSION
 AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
-SYNTHESIS != NOVELTY
 SOURCE_INTEGRATED != INSTALLED
 RELAY_REPO != RELAY_TOOL
 OFFERED != ACCEPTED
@@ -252,5 +223,4 @@ Operationally:
 - do not replay completed work because a projection is stale;
 - do not make every specialist a critical-path gate;
 - routine reversible discoverability work proceeds without making Mark the scheduler;
-- stop synchronization once present action is trustworthy enough and return to the world/build;
 - consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption and explicit crawler/training opt-out policy retain their established gates.
