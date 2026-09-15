@@ -1,0 +1,77 @@
+name: Notify PSFH IndexNow
+
+on:
+  page_build:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: psfh-indexnow
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out coordination source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Notify IndexNow for changed PSFH public URLs
+        env:
+          INDEXNOW_KEY: 352408ff99c5e8531fe80000b491b08b
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin gh-pages --depth=2
+          latest="$(git rev-parse origin/gh-pages)"
+          previous="$(git rev-parse 'origin/gh-pages^' 2>/dev/null || true)"
+
+          if [[ -n "$previous" ]]; then
+            changed="$(git diff --name-only "$previous" "$latest")"
+          else
+            changed="$(git ls-tree -r --name-only "$latest")"
+          fi
+
+          declare -A wanted=()
+          while IFS= read -r path; do
+            case "$path" in
+              index.html) wanted["https://pleasestartfromhere.com/"]=1 ;;
+              llms.txt) wanted["https://pleasestartfromhere.com/llms.txt"]=1 ;;
+              packet.md) wanted["https://pleasestartfromhere.com/packet.md"]=1 ;;
+              manifest.json) wanted["https://pleasestartfromhere.com/manifest.json"]=1 ;;
+              changes.md) wanted["https://pleasestartfromhere.com/changes.md"]=1 ;;
+              changes.html) wanted["https://pleasestartfromhere.com/changes.html"]=1 ;;
+              read/orientation.html) wanted["https://pleasestartfromhere.com/read/orientation.html"]=1 ;;
+              read/start.html) wanted["https://pleasestartfromhere.com/read/start.html"]=1 ;;
+              352408ff99c5e8531fe80000b491b08b.txt) wanted["https://pleasestartfromhere.com/"]=1 ;;
+            esac
+          done <<< "$changed"
+
+          if (( ${#wanted[@]} == 0 )); then
+            echo "No mapped PSFH public URL changed." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          failures=0
+          for url in "${!wanted[@]}"; do
+            code="$(curl --silent --show-error --output /tmp/indexnow-response --write-out '%{http_code}' \
+              --get 'https://api.indexnow.org/indexnow' \
+              --data-urlencode "url=$url" \
+              --data-urlencode "key=$INDEXNOW_KEY" || true)"
+
+            if [[ "$code" == "200" || "$code" == "202" ]]; then
+              echo "IndexNow accepted: $url (HTTP $code)" | tee -a "$GITHUB_STEP_SUMMARY"
+            else
+              echo "::warning::IndexNow did not accept $url (HTTP $code). Discovery notification is not a publication gate."
+              echo "IndexNow not accepted: $url (HTTP $code)" >> "$GITHUB_STEP_SUMMARY"
+              failures=$((failures + 1))
+            fi
+          done
+
+          if (( failures > 0 )); then
+            echo "One or more discovery notifications were not accepted; PSFH publication remains live." >> "$GITHUB_STEP_SUMMARY"
+          fi
