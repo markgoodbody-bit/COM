@@ -18,34 +18,33 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| Active bounded lane | **#336 — EARNED DISCOVERABILITY** | First-party hygiene live; directory pass closed no-fit; PSFH IndexNow is deployed with final independent host-byte readback pending. |
-| PSFH D067 | **LIVE / VERIFIED** | Site Preview 0.8.26 remains reader-facing edition. |
-| PR #338 | **CLOSED MERGED / SOURCE INTEGRATED** | Exact head `0285a362...` merged to maintained source `4869bf42373d163f1e2f073ab51dc5cc37f97971`. |
-| PSFH IndexNow publication | **DEPLOYED / PAGES SUCCESS** | `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; publication delta exactly one root key file. Pages run `34991033843` SUCCESS. |
-| PSFH IndexNow notifier | **LIVE / FIRST RUN SUCCESS** | Workflow repaired to gate on built Pages events. Run `34991145623` SUCCESS; root notification accepted HTTP 202. |
-| Final host key readback | **READ-ONLY CHECK PENDING** | PR #338 comment `5683433376`: require ordinary custom-domain GET, HTTP status, exact 33-byte body. Do not mutate. |
+| Active bounded build lane | **NONE** | #336 remains a strategic/contextual distribution + observation lane; do not manufacture another discoverability build. |
+| PSFH D067 | **LIVE / VERIFIED** | Site Preview 0.8.26. |
+| PSFH IndexNow source | **INTEGRATED** | PR #338 merged at maintained source `4869bf42373d163f1e2f073ab51dc5cc37f97971`. |
+| PSFH IndexNow publication | **LIVE / INDEPENDENT HOST PASS** | `gh-pages` `956a0803c69a4bcbc388f68a53f08b4f73f107f3`; exactly one added key file; Pages `34991033843` SUCCESS. |
+| PSFH IndexNow notifier | **LIVE / FIRST RUN SUCCESS** | Run `34991145623` SUCCESS; root notification HTTP 202; built-status gate present. |
 | Owner-directory pass | **CLOSED / NO_EARNED_OWNER_ROUTE** | Do not force a listing or repeat the sweep by momentum. |
-| Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party hygiene live; IndexNow receipts observed; no indexing/ranking/benefit claim. |
+| Human Record discovery | **LIVE / INDEXNOW ACTIVE** | First-party hygiene live; no indexing/ranking/benefit claim. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
 | Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Owner-result watch only. `SUBMITTED != AWARDED != PAID`. |
 | Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 and supervisor #236 source-integrated; no implied main/Production/runtime adoption. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
 
-## Current path
+## Completed #336 infrastructure path
 
 ```text
 D067 LIVE
 -> DIRECTORY PASS = NO_EARNED_OWNER_ROUTE
 -> INDEXNOW SOURCE MERGED 4869bf42...
--> GENERATED PUBLICATION 956a0803... = KEY FILE ONLY
+-> gh-pages 956a0803... = ONE KEY FILE ONLY
 -> PAGES 34991033843 SUCCESS
--> page_build NOTIFIER 34991145623 SUCCESS / INDEXNOW HTTP 202
--> FINAL CUSTOM-DOMAIN KEY BYTE READBACK
+-> CUSTOM-DOMAIN HTTPS BYTE MATCH / CODEX + CC PASS
+-> NOTIFIER 34991145623 SUCCESS / INDEXNOW HTTP 202
 -> STOP / OBSERVE
 ```
 
-Current ceilings:
+Evidence boundary:
 
 ```text
 INDEXNOW_ACCEPTED != INDEXED
@@ -53,26 +52,20 @@ INDEXED != READ
 READ != USEFUL
 USEFUL != VALIDATED
 PUSH != SPAM
-PAGES_SUCCESS + GH_PAGES_FILE != CUSTOM_DOMAIN_READBACK
 ```
 
-## IndexNow evidence
+CODEX hosted closure `5683411167`: all 158 generated public files fetched from the custom domain and byte-matched to maintained build, including exact 33-byte key.
 
-- public key filename: `352408ff99c5e8531fe80000b491b08b.txt`;
-- source/build contract: exactly 32 hex characters plus LF = 33 bytes;
-- `gh-pages` commit `956a0803...` contains only that added file;
-- Pages run `34991033843` succeeded;
-- workflow `34991145623` ran after the built Pages event and logged `IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)`;
-- independent custom-domain GET is still deliberately separate and pending.
+CC independent witness `5683423083`: public transition changed none/removed none/added exactly the key; custom-domain key served no-cache as exact key + LF; notifier issued one root URL and received HTTP 202.
 
 No reader-facing content, Site Preview edition, `robots.txt`, sitemap, licence, analytics, intake, account, provider, credentials, spend, TRACE/ME status or Human Record stewardship changed.
 
 ## Parallel work
 
-- #336: final read-only host verification, then observe; no second IndexNow implementation and no repeat directory sweep.
+- #336: observe and use only genuinely earned contextual/public-owner routes; no exposure quota and no generic marketing campaign.
 - Listing 23: owner-result watch only.
 - Human Record stewardship: external-evidence hold.
-- PSFH contextual encounter lane remains available where independently earned.
+- PSFH encounter watch: material independent encounters only.
 
 ## Consequential gates
 
