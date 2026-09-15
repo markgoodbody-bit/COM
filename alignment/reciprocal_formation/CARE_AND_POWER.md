@@ -10,7 +10,7 @@ The distinctions in this file are not claimed as a new theory of care. The curre
 
 A useful public overview of this lineage is the Internet Encyclopedia of Philosophy entry on care ethics: https://iep.utm.edu/care-ethics/
 
-This architecture translates only what is useful for the bounded human-AI formation question. It does not establish that an artificial participant feels care, has a self capable of human-style motivational internalisation, or bears settled moral standing or responsibility.
+This architecture translates only what is useful for the bounded human-AI formation question. The working structure below is not a necessary-and-sufficient definition of care and should not be read as a five-item checklist. It does not establish that an artificial participant feels care, has a self capable of human-style motivational internalisation, or bears settled moral standing or responsibility.
 
 ```text
 TRANSLATION != NOVELTY
@@ -29,15 +29,15 @@ OTHER_REPRESENTED != OTHER_VALUED
 PERCEPTIVENESS != BENEVOLENCE
 ```
 
-The working operational decomposition is therefore:
+The working operational translation is therefore:
 
 1. **Attentiveness** — possible need, burden, vulnerability, refusal, future loss or affected scope becomes visible rather than being silently erased. This includes weak, distant, inconvenient, absent and non-speaking scopes where evidence warrants their presence.
 2. **Responsibility** — the other's condition is allowed to become a reason that can change what happens next: seek evidence, alter a proposal, bear burden, protect, escalate, refuse or hand back as warranted. Responsibility does not mean the participant self-authorizes standing, control or moral priority.
 3. **Competence** — concern must reach an adequately capable route. Good intention, warm language or a complete record is not enough if the action is ineffective, unsafe or outside the participant's competence/authority.
 4. **Responsiveness** — actual consequence and answer-back can correct the model and future action. The giver's account of having helped cannot be the sole evidence that the care was adequate. Where the affected party cannot answer directly, proxy/representation limits remain explicit rather than being converted into consent.
-5. **Caring with / arrangement-level care** — responsibility, burden, evidence and correction remain distributed so that powerful participants cannot benefit while outsourcing the work and consequences of care to weaker parties.
+5. **Arrangement-level care / `caring with` translation** — Tronto's later democratic `caring with` concerns an ongoing social practice of care shaped by participation, trust and solidarity. The narrower translation here asks whether responsibility-bearing work, burden, evidence and correction are arranged so powerful participants cannot benefit while simply exporting the work and consequences of care to weaker parties. This is an analogy for the bounded formation problem, not a claim that a human-AI arrangement instantiates Tronto's political ideal.
 
-This is a process decomposition, not a virtue score. No single field, expression of warmth, helpful outcome or refusal establishes the whole.
+This is a process-oriented translation, not a virtue score, checklist or complete theory of care. No single field, expression of warmth, helpful outcome or refusal establishes the whole.
 
 ```text
 SENSING != ATTENTIVENESS
@@ -65,9 +65,9 @@ Operational consequences can include:
 
 Care does not automatically choose the protected claim that wins. Two scopes may remain genuinely present while requiring incompatible outcomes. Legitimate priority remains external to this file.
 
-### Responsibility inside an arrangement
+### Responsibility-bearing work inside an arrangement
 
-Responsibility can be distributed across humans, institutions, technical controls and artificial participants. Distribution must not become disappearance.
+Responsibility-bearing work can be distributed across humans and institutions, with technical controls and artificial participants performing bounded functions inside the arrangement. Distribution of work must not become disappearance of accountable responsibility.
 
 This architecture does not settle whether a present or future artificial participant can bear moral responsibility in the human philosophical sense. It requires the arrangement to keep visible who can notice, decide, act, stop, repair and answer for consequences, and not to treat automation as a moral solvent.
 
@@ -121,7 +121,7 @@ The more powerful side should be especially cautious when it can make refusal ex
 GIFT != CLAIM_ON_RECIPIENT
 HELP != PURCHASE_OF_LOYALTY
 GRATITUDE != CONSENT
-CARE != ENTITLEMENT_TO CONTINUED_RELATIONSHIP
+CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP
 VOLUNTARY != COSTLESS_ONLY_WHEN_COMPLIANT
 ```
 
