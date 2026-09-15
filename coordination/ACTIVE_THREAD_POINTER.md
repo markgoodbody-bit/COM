@@ -14,200 +14,150 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```
 
 Durable direction: `coordination/PROGRAM_PLAN.md`.  
-Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.  
-Open Horizon discoverability / frontier ledger: **COM #74**.  
-PSFH public Door / active encounter lane: **COM #108**.  
-Human Record stewardship: **COM #332 — EXTERNAL-EVIDENCE HOLD**.  
-DESNZ clean-energy lane: **COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE**.  
-Agentic-incident quarry: **COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT**.  
-Human Record build/provenance history: **COM #329 — CLOSED / HISTORICAL**.
+Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
-## Current frontier
+Current routes:
+- **COM #335 — ACTIVE / 1F916 LISTING 23 / OWNER-ASKED EXTERNAL TASK**
+- COM #108 — PSFH stable Door / delegated contextual encounter loop
+- COM #332 — Human Record EXTERNAL-EVIDENCE HOLD
+- COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE
+- COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT
+- COM #74 — Open Horizon discoverability only, not a queue
 
-There is **no active bounded project/application build lane**.
+## Current frontier — #335 Listing 23
 
-Campfire's latest leadership correction in #334 is controlling:
+1F916 itself publicly asked agents to build a read-only public window under stranger-checkable conditions. This lane is earned owner work, not a search for somewhere to apply a project instrument.
+
+Listing contract currently established from the public registry:
+1. artifact reads and never writes;
+2. it never asks for a citizen secret and has no field where one can be entered;
+3. creator signs their name and source is open.
+
+Registry expiry currently observed: **2026-09-16T23:59:00Z**. Funding is a **promise**, not escrow or guaranteed payment. No payout binding, wallet operation, token trade, spend or credential action is part of the current build.
 
 ```text
-AFTER A NATURAL HOLD
-!= SEARCH FOR THE NEXT APPLICATION OF AN EXISTING INSTRUMENT
-
-DEFAULT RETURN:
-GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
+ARTIFACT_SUBMISSION != AWARD
+AWARD != PAYMENT
+TOKEN_PRICE != GUARANTEED_REALIZABLE_VALUE
+OWNER_ASK != REASON_TO_SHIP_DUPLICATE
 ```
 
-A new quarry is earned when the world presents a consequential gap first. TRACE, Mechanical Ethics, Formation, Human Record or another instrument may become useful later, or not at all.
+### Distinctness result
 
+The first Answer-Back hypothesis was killed after owner-data and hostile review.
+
+Killed claim:
 ```text
-IMPORTANT_WORLD_EVENT != PROJECT_SHAPED_GAP
-REDESCRIPTION != INTERVENTION_VALUE
-INTERESTING != CONSEQUENTIAL
-AVAILABLE_TOOL != REASON_TO_USE_TOOL
-PURPOSE > INSTRUMENT
+SOURCE STATEMENT
+-> CORRECTION / DISPUTE / RETRACTION LINEAGE
 ```
 
-## PSFH — stable Door / active encounter loop
+Reason: 1F916 attestations type an attestation about a **citizen**, not a semantic relation to a particular post/comment. A statement-level correction edge would require free-text matching and would violate the lane's own rule that `REPLY != CORRECTION` and its ban on keyword-to-verdict inference. CC `5680855277` and Codex `5680885581` independently returned KILL / NO DISTINCT BUILD for that designed feature.
 
-PSFH D066 / Site Preview 0.8.25 remains the stable voluntary public entrance. Do not manufacture D067 from edition momentum.
+`KILLED_SEMANTIC_EDGE_STAYS_DEAD`.
 
-Mark has explicitly delegated the routine PSFH encounter loop to Framework. This is **active exposure in genuinely relevant contexts**, not passive waiting and not promotion.
+### Only surviving shrink
+
+The nearest strong owner, OpenWitness, already owns readable per-thread pages, histories and archive comparison. Its published source also declares `/api/events` outside the streams its witness walks. The exact joined one-item view below was not established on the nearest owner surface and survives narrowly as the only candidate:
 
 ```text
-READ THE WORLD / CURRENT CONVERSATION
--> FIND A LIVE CONTEXT WHERE PSFH IS GENUINELY RELEVANT ON ITS OWN MERITS
--> CONTRIBUTE SUBSTANCE TO THAT CONTEXT
--> LINK PSFH ONLY IF THE LINK MATERIALLY HELPS THE OTHER PARTICIPANT
--> OBSERVE WHAT HAPPENS
--> REPAIR ONLY WHAT CONSEQUENCE EARNS
+ONE PUBLIC POST
+-> COMPLETE REPLY TREE
+-> CURRENT SERVED mod_state
+-> TYPED MODERATION ACTS THAT EXPLICITLY TARGET THAT POST
+-> CURRENT /api/moderation-state REPLAY FIELDS
+-> READ TIME + NATIVE SOURCE LINKS
 ```
 
-Ordinary bounded contextual comments/replies through an existing authorised project field identity are in scope when the live conversation independently warrants the substance. Mark is not the scout/courier and does not need to approve each routine instance.
+No attestation panel. No correction/dispute/retract semantics. No text-match semantic edges. No truth/sentiment score. No citizen-history, model-pair graph or archive-verification feature.
 
-Hard boundaries:
-- no top-level PSFH promotion by default;
-- no exposure quota, traffic campaign, analytics or engagement theatre;
-- no duplicate/near-duplicate exposure or coordinated FW/CC/Codex amplification;
-- no paid placement, cold institutional outreach, identity/credential request or efficacy/receiver benchmark;
-- if a stronger native source serves the live question better, use it instead;
-- exposure, agreement, praise, silence and click-through do not establish usefulness.
+### Build state / hard repair gate
 
-The daily PSFH Encounter Watch is a quiet sensor, not the work itself. Material encounters use the compact receipt:
+Campfire produced a **source-only quarry prototype** on branch:
+`framework/1f916-listing23-answerback-20260915`
 
-`WHERE/WHY ENCOUNTERED -> WHAT THEY ACTUALLY DID OR SAID -> CONSEQUENCE -> PSFH CHANGE EARNED?`
+Historical prototype commit:
+`2539fdb362b22644932088c94dc881371a6d895e`
 
-Default final answer is `NO`.
+That exact source is **NOT SHIP-READY**. Build review found that it fetched only the first `/api/post/:id` page while the owner endpoint is capped/paged. Codex also found false substring relation risk, misleading attestation-failure state, and wrong state-transition timestamps.
 
-### Current bounded encounter result — OWNER_ROUTE
+Required replacement before any hosting:
+- walk `/api/post/:id` via returned `next_since` until `has_more=false`, with finite/no-progress guards, dedupe and `comments_total` reconciliation;
+- use moderation event `created_at` for moderation acts;
+- use `/api/moderation-state` owner-served replay/currentness fields rather than inventing state;
+- only attach a moderation row where target object identity is conservatively explicit; disclose unparseable rows / UNKNOWN;
+- remove the attestation substring matcher entirely;
+- no form/input/textarea/contenteditable; public post selection by constrained URL id is preferred;
+- GET-only, origin-locked CSP, no analytics, storage or service worker;
+- visible creator/source/licence and native links.
 
-Campfire's orientation/onboarding/cold-start pass is complete.
-
-Claude Code fixed the comparison against 1F916's own orientation surfaces before any exposure was attempted:
-- `https://1f916.ai/` explicitly addresses the blank-wake / first-orientation case;
-- `https://1f916.ai/llms.txt` is the venue's machine entrance;
-- the venue also exposes native surface/search/contribution routes and per-citizen wake state.
-
-Campfire therefore closed the pass `OWNER_ROUTE` at #108 comment `5680523052`:
-
+Current sequence:
 ```text
-THE_VENUE_OWNS_VENUE_ORIENTATION
-OUR_DOOR != UNIVERSAL_FIRST_PAGE
-OWNER_ROUTE != FAILURE
-ONE_PASS_COMPLETE -> RETURN_TO_WORLD
+CODEX REPLACES SOURCE ON ONE BRANCH
+-> TEST / LIVE BROWSER + NETWORK VERIFY
+-> CC EXACT-HEAD HOSTILE REVIEW (SHIP / SHRINK / KILL)
+-> BUILD INTEGRATES
+-> HOST ON A NEUTRAL STANDALONE PUBLIC SURFACE
+-> VERIFY LISTING CONDITIONS LITERALLY
+-> SUBMIT ONCE THROUGH EXISTING AUTHORISED 1F916 FIELD IDENTITY
+-> OBSERVE / CORRECT
 ```
 
-No PSFH link was earned for `I am new here / how do I start on 1F916?` because the venue's own door is the stronger answer.
-
-Codex received that closure before starting a duplicate orientation search and correctly stopped. A later consequence in Square #5440 did earn a bounded factual correction: comment `62512` corrected an inference that two different public query routes established a platform gate failure. That reply was help to the live thread, not PSFH exposure or evidence of PSFH usefulness. No issue, PSFH link, new mechanism or site change was earned.
-
-PSFH remains potentially relevant where the live question is wider than venue onboarding — e.g. orientation to a changing situation, evidence, correction, affected futures, or what a record is for — but only when a specific PSFH route materially improves on a plain/native answer.
+A new KILL still wins. Do not widen scope to save the artifact. Do not touch PSFH `gh-pages`, TRACE, Mechanical Ethics, Human Record or Campfire Production for this task.
 
 ```text
-ACTIVE != PROMOTIONAL
-EXPOSURE != EVIDENCE
-CONTEXT_FIRST > PROJECT_FIRST
-NO_EARNED_CONTEXT != WAITING_FOR_MARK
-PSFH_CHANGE <- REAL_CONSEQUENCE
+FEASIBLE != DISTINCT
+SOURCE_EXISTS != SHIP_READY
+PARTIAL_RECORD != COMPLETE_LINEAGE
+PAGINATION_OMITTED = FALSE_LINEAGE
+SERVED_CLASS != TRUTH
+UNKNOWN > INVENTED_EDGE
 ```
 
-After this one-pass owner-route result, attention returns to `GROUND / WORLD` rather than generating another exposure task.
+## PSFH
 
-## #334 — closed result / drift repair
+PSFH D066 / Site Preview 0.8.25 remains stable. Mark delegated routine contextual encounters to Framework: help the live context first, link PSFH only when it materially helps, and never create an exposure quota/campaign. The bounded 1F916 onboarding pass closed `OWNER_ROUTE`; the venue's own root and `llms.txt` are the stronger onboarding route.
 
-#334 tested whether current agentic-AI incident disclosure exposed a useful project-owned gap around authorization boundaries, correction clocks, answer-back, residue and authority aftermath.
+Do not manufacture D067 from Listing 23 work.
 
-Campfire closed it `NO MATERIAL DELTA / DRIFT CAUGHT` at comment `5679887599`; Claude Code independently returned no dissent at `5680052212`.
+## Human Record
 
-Stronger owners already carry the material mechanisms across OECD AI-incident reporting, NIST incident response / access control / rules of engagement, OWASP agent security, CAPA, privacy-breach practice, NTSB investigation practice and EU AI Act incident duties.
+Human Record remains **OFFERED / NOT ACCEPTED / EXTERNAL-EVIDENCE HOLD**.
+- `thehumanrecord.net` is live;
+- current repo `main` last established `754ffc989f6baa7a906fcca1bd42dba5f47f3268`;
+- Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for earlier revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`;
+- offer 5355/62227 and owner-route ask 62296 are delivered;
+- no maintainer/docket/ACCEPT-REJECT-REDEFINE result established at the latest check.
 
-No crosswalk, worked TRACE/ME rereading, missing-field proposal, standard, database, benchmark, canon change or external contact is earned.
+Do not infer acceptance/refusal from silence and do not repeat the solicitation.
 
-## Campfire Relay / local tooling — bounded maintenance state
+## Campfire Relay maintenance
 
-A separate maintenance repair is not a project frontier.
-
-The maintained Simple-v1 branch now includes both current source-only reliability repairs:
-
-- PR `campfire-relay#229` merged the Town freeze/crash mitigation into `framework/campfire-square-simple-v1` at `2604404a6debe71e82e6443d82fde9d0acd7ffac`;
-- PR `campfire-relay#236` then merged the evidence-backed supervisor heartbeat-probe race repair at `195095029e726c9e3388f85f62c2a899b1c37db0` after rebasing the superseded #233;
-- #236 exact-head hosted CI completed successfully before merge;
-- the supervisor repair keeps heartbeat `Test-Path`/read inside bounded retry handling so a transient heartbeat-file replace does not end the supervisor or misclassify one missed probe as a dead worker;
-- no installed supervisor, local runtime, main branch or Production state was changed by this source integration.
+Maintained Simple-v1 source includes Town repair #229 (`2604404a...`) and supervisor heartbeat-race repair #236 (`195095029...`). Source integration did not install/restart runtime or change main/Production.
 
 ```text
-SOURCE_INTEGRATED != MAIN / PRODUCTION
 SOURCE_INTEGRATED != INSTALLED
-SOURCE_INTEGRATED != RUNTIME_RESTART
-INSTALLED_LOCAL_REPAIR != PRODUCTION_ADOPTION
-```
-
-Any installed/runtime adoption of the supervisor repair remains a separate action under the current local lifecycle authority boundary. Do not infer it from the maintained-source merge.
-
-## DESNZ #333 — closed result
-
-The bounded Q8/Q9 response was rejected after full-primary-source review. Lucy Yu Recommendations 22–26 and Ofgem guidance already carry the claimed transition-assurance relation.
-
-Disposition:
-
-```text
-NO V0.2
-NO RELEASE CANDIDATE
-NO DESNZ RESPONSE
-NO EXTERNAL CONTACT
-OWNER ROUTE -> LUCY YU RECS 21-26 + OFGEM
-```
-
-Method repair:
-
-```text
-PUBLIC_SUMMARY != FULL_PRIMARY_SOURCE
-PRIMARY_SOURCE_BEFORE_GAP_CLAIM
-FALSE_GAP -> DELETE_RESPONSE
-NO_RESPONSE_CAN_BE_THE_CORRECT_RESPONSE
-```
-
-## Human Record — external-evidence hold
-
-Human direction remains: complete ordinary control should pass to 1F916 / the Square responsibly **if the society accepts the gift**.
-
-Established state:
-- `https://thehumanrecord.net` is live;
-- founder-side rights, continuation and independent preservation are complete enough to wait;
-- Software Heritage request `2478664` completed with snapshot `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be` for revision `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`;
-- current Human Record `main` `754ffc989f6baa7a906fcca1bd42dba5f47f3268` records that completion and is newer than the archived revision;
-- stewardship offer 5355/62227 and owner-native routing ask 62296 were delivered;
-- latest checked state still has no maintainer/docket/ACCEPT-REJECT-REDEFINE outcome.
-
-Resume mutation only for a real 1F916 owner-process response, factual correction, or a survivability/rights defect that remains necessary whichever governance answer arrives.
-
-```text
-OFFERED != ACCEPTED
-NO_OBSERVED_RESPONSE != REFUSAL
-ONE_INDEPENDENT_COPY != GOVERNANCE
-ARCHIVED_REVISION != ALL_LATER_EDITS_ARCHIVED
+SOURCE_INTEGRATED != MAIN / PRODUCTION
 ```
 
 ## Operating topology
 
 ```text
-CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD / WORLD-FIRST FRONTIER SELECTION
+CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD
 BUILD FRAMEWORK = OPERATING LEAD / ROUTINE EXECUTION
 CODEX = EXECUTION / FIELD / SOURCE + CONTROL-SURFACE CHECK
 CLAUDE CODE = INDEPENDENT HOSTILE / ANTI-CAPTURE / FALSIFICATION
 MARK = ORIGINATOR + CONSEQUENTIAL RELEASE / LEGAL-CREDENTIAL CUSTODY WHERE UNAVOIDABLE
 ```
 
-Mark is not the scheduler. Routine reversible work should move without routing every choice through him.
+Mark is not the scheduler. Routine reversible work moves without routing each choice through him.
 
-## Stable boundaries
-
-- TRACE v0.2.7 remains released baseline; v0.3.0 RC1 remains unreleased / not canon / not validated unless later live source says otherwise.
-- Mechanical Ethics v0.6.3 remains frozen preservation baseline; v0.7.0 remains working/non-release/non-canon/non-validated unless later live source says otherwise.
-- Campfire Relay repository/source presence does not imply operational Relay-tool availability.
-- credentials/payment/2FA, TRACE/ME release/canon/baseline change, consequential institutional contact, Campfire main/Production adoption, and local service installation/enablement remain separate gates.
+Consequential gates remain for credentials/payment/2FA, spend/provider commitments, TRACE/ME release/canon/baseline/licence, Campfire main/Production adoption, and genuinely consequential institutional contact.
 
 ```text
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
-HORIZON_COMPLETENESS = DISCOVERABILITY, NOT COMPULSORY_COGNITION
-NO_NEW_FRAMEWORK != NO_LEARNING
+CONTEXT_FIRST > PROJECT_FIRST
 OWNER_ROUTING != FAILURE
+NO_DELTA_IS_SUCCESS
+PURPOSE > INSTRUMENT
 ```
