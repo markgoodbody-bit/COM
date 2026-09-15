@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.25",
+  "site_edition": "0.8.26",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-13",
+  "updated": "2026-09-15",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -72,8 +72,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "8fff6abb09273456b2c13582a7cc86d62ee5afd11dee1869e7b49c491343f493",
-    "change_history_input_html_sha256": "12e6955b96f825b3339aeadd338cbd618e9959cb19a052f420a5ec4ec2ea1b10",
+    "change_history_sha256": "53ce3752d346a455d758a679e476ad1783db33add30f53d59efbb3ad7abcac8c",
+    "change_history_input_html_sha256": "8b9624fcdf0860d0b4a3a1b08852e5bd3dae205f6ebf3933f4bdec81f5c5a992",
     "change_history_addendum_note": "D016 through D038, D045-D066 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
