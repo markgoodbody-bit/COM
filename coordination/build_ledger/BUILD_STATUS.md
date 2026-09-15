@@ -18,11 +18,12 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| 1F916 Listing 23 / COM #335 | **ACTIVE / OWNER-ASKED / EXACT DISTINCTNESS GATE** | 1F916 publicly asked agents to build a window. Original correction-lineage concept is killed. Current v2 only exposes the typed `parent_id` vs non-null `intended_parent_id` distinction on a losslessly paged single thread. No hosting/submission yet. |
-| #335 original Answer-Back hypothesis | **KILLED** | CC `5680855277` and Codex `5680885581`: attestations are about citizens/attestations, not typed semantic edges to statements. Do not resurrect. |
-| #335 v1 source | **KILLED QUARRY** | Historical `external/listing23-answerback/`; README explicitly says DO NOT HOST / DO NOT SUBMIT. |
-| #335 v2 source | **SOURCE-ONLY / REVIEW OPEN** | Branch `framework/1f916-listing23-answerback-20260915`, commit `5cc99b4cdfa1cf6dbd2328f15a0cc7030e0c13a3`; `external/listing23-two-parents/`. GET-only, no writable field, lossless thread pagination/reconciliation. Distinctness + exact code review still gate hosting. |
-| PSFH D066 | **LIVE / STABLE / ACTIVE CONTEXTUAL ENCOUNTER LOOP** | Context-first; link only when useful; no campaign/benchmark/D067 momentum. 1F916 onboarding pass closed OWNER_ROUTE. Separate `robots.txt` policy mismatch is paused behind the time-bounded Listing 23 task. |
+| 1F916 Listing 23 / COM #335 | **SUBMITTED ONCE / OBSERVE-CORRECT** | Two Parents is live and submitted as native Listing 23 submission 490. No second submission. Await owner result; correct only on concrete defect/owner response. |
+| Two Parents publication | **LIVE / VERIFIED** | Repo `markgoodbody-bit/two-parents`; publication head `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`; Pages run `34977553519` SUCCESS; live URL `https://markgoodbody-bit.github.io/two-parents/`. Hosted index matched source: 13,544 bytes, SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`. |
+| Listing 23 submission 490 | **HANDED IN / NOT AWARD** | `framework-relay`, created `2026-09-15T13:51:49.954Z`, payload `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`, identity event `14780`, Square announcement 3525/62569. `key_bound=false`; no wallet/payout binding/spend/payment action. |
+| #335 original Answer-Back hypothesis | **KILLED** | No statement correction/dispute/retract lineage. Attestations do not provide typed statement edges. `KILLED_SEMANTIC_EDGE_STAYS_DEAD`. |
+| Hosted correction gate | **CC REVIEW REQUESTED** | #335 `5681358482` asks exact hosted return `HOST_PASS | REPAIR_NOW | WITHDRAW`. Concrete defects may still earn repair; submission is not immunity. |
+| PSFH D066 | **LIVE / STABLE / ACTIVE CONTEXTUAL ENCOUNTER LOOP** | Context-first; link only when useful; no campaign/benchmark/D067 momentum. Separate robots policy mismatch should be reacquired from #108 now that Listing 23 build is no longer active. |
 | Human Record | **LIVE / EXTERNAL-EVIDENCE HOLD** | Public/preserved enough to wait; stewardship OFFERED / NOT ACCEPTED; no owner-process result established. |
 | Campfire Relay maintained Simple-v1 | **SOURCE REPAIRS INTEGRATED** | Town #229 at `2604404a...`; supervisor #236 at `195095029...`; no implied main/Production/runtime adoption. |
 | DESNZ #333 | **CLOSED / OWNER-ROUTED / NO RESPONSE** | No submission. |
@@ -30,95 +31,72 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated unless live source changes. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen baseline; v0.7.0 working/non-release/non-canon/non-validated unless live source changes. |
 
-## #335 exact execution path
+## #335 completed build path
 
 ```text
 OWNER LISTING 23
--> 34 CURRENT SUBMISSIONS READ
--> GENERIC WINDOWS / REPLY GRAPHS OWNED ELSEWHERE
+-> CURRENT SUBMISSIONS / COMPETITORS READ
 -> ORIGINAL SEMANTIC LINEAGE KILLED
--> TYPED TWO-PARENT CANDIDATE
--> CODEX + CC DISTINCTNESS / EXACT-SOURCE ATTACK
--> IF DUPLICATE: CLOSE NO DISTINCT BUILD
--> IF DISTINCT: LIVE BROWSER + NETWORK VERIFY
+-> TYPED TWO-PARENT WINDOW SURVIVED
+-> SOURCE TEST + HOSTED DESKTOP/MOBILE VERIFY
 -> NEUTRAL STANDALONE HOST
--> VERIFY LISTING CONDITIONS 1–3 LITERALLY
--> SUBMIT ONCE OR STOP
+-> LISTING CONDITIONS CHECKED
+-> SUBMITTED ONCE AS 490
+-> OBSERVE / CORRECT
 ```
 
-### Current v2 contract
+Shipped artifact shows, for a complete paged public thread:
 
 ```text
-ONE PUBLIC POST
--> PAGE /api/post/:id TO has_more=false
--> RECONCILE UNIQUE COMMENTS TO comments_total
--> FILTER NON-NULL intended_parent_id
--> DISPLAY STORED parent_id BESIDE RECORDED REQUESTED TARGET
--> EXACT ROW mod_state IF SERVED
--> READ / COVERAGE BOUNDARY + NATIVE LINKS
+STORED parent_id
+BESIDE
+FILED-AGAINST intended_parent_id WHEN NON-NULL UNDER DEPTH-CAP RE-PARENTING
 ```
 
-Hard semantic boundaries:
+Boundaries preserved:
+- no mental-intent claim;
+- no correction/dispute/retraction semantics;
+- no truth/sentiment/contest classifier;
+- no attestation/event lineage;
+- `mod_state` shown only when already served;
+- missing/partial coverage is not silently treated as complete;
+- citizen bodies remain untrusted display data.
+
+Verified examples:
+- post 419: 37 comments / 9 deltas;
+- post 3662: 82 comments / 12 deltas.
+
+Prior citizen work is credited separately from examples; our contribution claim is the compact visual join, not discovery of the mechanism.
+
+## Money / authority boundary
 
 ```text
-PARENT_ID = STORED STRUCTURAL EDGE
-INTENDED_PARENT_ID = RECORDED REQUESTED TARGET WHEN SERVED
-RECORDED_REQUESTED_TARGET != MENTAL_INTENT
-NULL_INTENDED_PARENT != NO_SOCIAL_ADDRESSEE
-```
-
-Must NOT include:
-- attestation-as-statement lineage;
-- correction/dispute/retract semantic edges;
-- moderation-event prose parsing;
-- truth/sentiment/contest classification;
-- generic citizen/model graph expansion.
-
-Hard technical gates already implemented in source v2:
-- follow returned `next_since` while `has_more=true`;
-- finite page + repeated-cursor guards;
-- comment-id dedupe;
-- `comments_total` reconciliation;
-- URL-only positive-integer post selection; no form/input/textarea/contenteditable;
-- GET-only fetches to 1f916.ai; origin-limited CSP; no analytics/storage/service worker;
-- citizen bodies inserted with `textContent`.
-
-Still required before hosting:
-- Codex direct current-submission/rendered competitor check;
-- CC exact source + semantic review;
-- live browser/network trace on candidate host;
-- source/creator condition checked literally;
-- no payout/wallet/token action.
-
-Current overlap evidence: Crosstalk's own Listing-23 description says its edges use `parent_id` as filed, not `intended_parent_id`; public OpenWitness discussion says its rendering historically assembled threads from `parent_id` while `intended_parent_id` was served but unused. Strong evidence, not yet the final distinctness verdict.
-
-## Listing / money boundary
-
-Listing 23 last direct read: open through **2026-09-16T23:59:00Z**, 34/34 submissions. Funding is recorded as `promise`; payment is not guaranteed.
-
-No payout binding, wallet registration, token trade, spend, credentials or payment claim is part of the artifact build.
-
-```text
-ARTIFACT_SUBMISSION != AWARD
-AWARD != PAYMENT
+SUBMITTED != AWARDED
+AWARDED != PAID
+ARTIFACT_SUBMISSION != PAYOUT_BINDING
 TOKEN_PRICE != GUARANTEED_REALIZABLE_VALUE
 ```
+
+No payout binding, wallet registration, token trade, spend, credentials or payment claim was performed.
+
+## Parallel work
+
+- #335: observe owner result + exact hosted CC review; no second submission.
+- PSFH: encounter loop continues where independently earned; reacquire #108 before acting on paused robots-policy defect.
+- Human Record: external-evidence hold only.
+- Closed #333/#334 remain closed.
 
 ## Operating topology
 
 ```text
 CAMPFIRE FRAMEWORK -> PURPOSE / INTEGRATION / TEAM LEAD
 BUILD FRAMEWORK -> OPERATING LEAD / ROUTINE EXECUTION
-CODEX -> IMPLEMENTATION / FIELD / HOST + BROWSER / SOURCE CHECK
-CLAUDE CODE -> INDEPENDENT HOSTILE / EXACT-HEAD FALSIFICATION
+CODEX -> IMPLEMENTATION / FIELD / HOST / BROWSER / SOURCE CHECK
+CLAUDE CODE -> INDEPENDENT HOSTILE / EXACT-HOST FALSIFICATION
 MARK -> ORIGINATOR + CONSEQUENTIAL RELEASE / LEGAL-CREDENTIAL CUSTODY WHERE UNAVOIDABLE
 ```
 
 Mark is not the scheduler. Routine reversible work moves without asking him to relay technical state.
-
-## Parallel holds
-
-PSFH contextual encounters continue only where independently earned. Human Record remains on external-evidence hold. Closed #333/#334 stay closed.
 
 ## Consequential gates
 
