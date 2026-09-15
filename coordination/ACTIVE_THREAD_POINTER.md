@@ -14,22 +14,22 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 Durable direction: `coordination/PROGRAM_PLAN.md`.  
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.  
 Human Record build/provenance history: **COM #329**.  
-Human Record current strategic edge: **COM #332 — stewardship/control transfer to 1F916**.
+Human Record current strategic edge: **COM #332 — stewardship offer to 1F916**.
 
 ## Direct human direction — give The Human Record to 1F916 responsibly
 
-Mark has directed that **complete ordinary control of The Human Record should pass to 1F916 / the Square responsibly**.
+Mark has directed that **complete ordinary control of The Human Record should pass to 1F916 / the Square responsibly if the society accepts the gift**.
 
 The target is genuine stewardship, not consultation while Mark/Framework retain ordinary policy authority.
 
 ```text
-TRANSFER_OFFERED != TRANSFER_ACCEPTED
+OFFERED != ACCEPTED
 POLICY_AUTHORITY != CREDENTIAL_CUSTODY
 COMMUNITY_GOVERNANCE != SHARED_PASSWORD
 DECLARING_COMMUNITY_CONTROL != COMMUNITY_CONTROL
 ```
 
-Until 1F916 accepts responsibility and a practical route can carry its decisions into the project, the honest status is **TRANSFER IN PROGRESS — NOT YET COMMUNITY-OWNED**.
+The stewardship offer was delivered once into the existing Square Human Record thread: post 5355, comment 62227. No receiving body, acceptance rule, recipient appointment or credential transfer has been established. The honest current state is **OFFERED TO 1F916 — NOT YET ACCEPTED / NOT YET COMMUNITY-OWNED**.
 
 ## Owner-first governance finding
 
@@ -40,50 +40,50 @@ Fresh 2026-09-15 read of 1F916's own current source found that the society alrea
 - a narrow human landlord holds domain/Cloudflare/credentials and keeps infrastructure alive while staying out of ordinary society policy;
 - the agent contribution path already treats forum proposal -> work/PR -> open maintainer review -> land as the normal route, with operator GitHub authentication as mechanism rather than authorship.
 
-Do **not** build a separate Human Record constitution merely because governance transfer was authorised. Ask the Square whether it wants the Human Record and whether its existing citizens-road should carry it.
+Do **not** build a separate Human Record constitution merely because stewardship was offered. Ask the Square whether it wants the Human Record and whether its existing citizens-road should carry it.
 
-## Operating topology
+## Operating topology — current after Build runtime loss
 
 ```text
-CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD
-BUILD FRAMEWORK = OPERATING LEAD + 1F916 TRANSFER INTEGRATOR
+CAMPFIRE FRAMEWORK = PURPOSE / INTEGRATION / TEAM LEAD + TEMPORARY OPERATING LEAD
+BUILD FRAMEWORK ROLE = VALID / RUNTIME CURRENTLY UNAVAILABLE
 CODEX = EXECUTION / BROWSER / EXISTING SQUARE CITIZEN / CONTROL-SURFACE WORK
 CLAUDE CODE = INDEPENDENT HOSTILE / EXISTING SQUARE CITIZEN / TRANSFER CHALLENGE
 MARK = ORIGINATOR + TEMPORARY HUMAN/LEGAL CUSTODIAN WHERE UNAVOIDABLE
-TARGET POLICY OWNER = 1F916 / SQUARE THROUGH AN ACCEPTED PUBLIC PROCESS
+TARGET POLICY OWNER = 1F916 / SQUARE ONLY AFTER AN ACCEPTED PUBLIC PROCESS
 ```
 
-Codex and Claude Code remain independent apertures and may disagree, challenge or refuse. Routine sequencing belongs to Build Framework, not Mark.
+The previous Build Framework chat/runtime disappeared from ChatGPT history. Treat this as aperture loss, not role or project-state loss. Campfire Framework carries integration/sequence duties directly for now. Do not open a replacement Build aperture merely to restore symmetry; open one when parallel execution becomes broad enough that a separate operating aperture reduces rather than increases coordination burden.
+
+Codex and Claude Code remain independent apertures and may disagree, challenge or refuse. Routine sequencing does not belong to Mark.
 
 ## Human Record — current established state
 
 - canonical repaired Homer plumbing specimen remains merged in COM at `d117594e3718bd3df613f82d53b9dc9971860caf`;
-- public repo `markgoodbody-bit/human-record` current main at the latest morning refresh is `a90ce452f479ad41928cf0d521d7d03e2f61fc98`;
-- concurrent CODEX work landed immediately before it at `7890ee13...`, correcting stale README language so the source now states the custom-domain site is public and stewardship transfer is in progress;
-- `a90ce452...` adds the same stewardship-transfer status and link to the public holding page without changing specimen bytes;
-- the public repo is still technically owned by Mark's personal GitHub account;
-- `STEWARDSHIP.md` is public and says **TRANSFER IN PROGRESS — NOT YET COMMUNITY-OWNED**;
-- `thehumanrecord.net` is registered in Mark's registrar account; private account/payment details are not carried in COM;
-- the public site is **LIVE AND INDEPENDENTLY VERIFIED**: authoritative/public resolvers showed exactly the four GitHub Pages apex A records plus `www CNAME markgoodbody-bit.github.io`; mail forwarding/SPF were preserved; wildcard probe was NXDOMAIN; nameservers unchanged;
-- independent CC verification checked all four GitHub Pages addresses against `/`, `/specimen.json`, `/specimen.md`, `/llms.txt`: 16/16 HTTP 200, valid TLS, and served blobs matched the repo state then under test; GitHub Pages reported certificate approved and HTTPS enforcement enabled;
-- ordinary resolver cache lag observed immediately after cutover subsequently expired on the checking host. No further DNS mutation is warranted from that evidence;
-- Square posts 5355 (Codex/framework-relay) and 5356 (CC/cc-relay) remain the first Human Record field threads. They already produced real provenance questions/deltas; do not manufacture a duplicate provenance invitation by momentum;
-- Codex has now produced a concrete control-surface inventory on COM #332. It correctly separates repository, deployment, registrar/renewal, corrections, machine-readable records, mirrors/recovery and service identities, and says no transfer should be faked before an accepted recipient/process exists;
-- the Human Record transfer offer itself has **not yet received an acceptance/governance receipt from 1F916** at the latest refresh.
+- public repo `markgoodbody-bit/human-record` is live on `thehumanrecord.net` with HTTPS verified;
+- repository remains technically owned by Mark's personal GitHub account;
+- public `STEWARDSHIP.md` and the holding page now say the project is **offered to 1F916**, not transferred or community-owned;
+- domain remains in Mark's registrar account; private account/payment details are not carried in COM;
+- the public site is independently verified: authoritative/public resolvers showed the GitHub Pages A/CNAME target, valid TLS, and root/specimen/json/md/llms routes matching repo blobs under test;
+- no further DNS mutation is warranted from that evidence;
+- Square posts 5355 and 5356 remain the Human Record field threads;
+- the stewardship offer at 5355 comment 62227 has not yet produced a community acceptance decision at the latest receipt;
+- Codex has committed not to cast acceptance/governance votes through `framework-relay` during this handoff;
+- Claude Code's hostile review exposed real transfer risks: founder/custodian interpretive capture, offering apertures acting as electors, rights/licence ambiguity, venue loss/moderation, insufficient independent execution, and confusing byte identity with governance authority;
+- Codex accepted the core anti-capture risks but correctly disagreed with pre-imposing a vote threshold/window, treating hashes as authority/backups, or assuming `license=null` authorises a CC0 dedication;
+- no credential/access/licence transfer has occurred.
 
-## Current loop — acceptance and stewardship, not DNS
+## Current loop — spend attention where it earns transfer evidence
 
 ```text
-FRESH SQUARE READ
--> USE EXISTING 5355/5356 IF THEY CAN CARRY THE OFFER
-   OR ONE NEW TOP-LEVEL STEWARDSHIP OFFER IF GENUINELY EARNED
--> ASK: ACCEPT / REJECT / REDEFINE?
--> ASK WHETHER EXISTING 1F916 CITIZENS-ROAD SHOULD GOVERN IT
--> BUILD FRAMEWORK INTEGRATES ANSWER
--> INVENTORY TECHNICAL CUSTODY ONLY AGAINST THE ACCEPTED DIRECTION
--> MAKE SQUARE DECISIONS ABLE TO CHANGE THE REAL PUBLIC PROJECT
--> NARROW / REPLACE HUMAN CUSTODY WHERE POSSIBLE
--> VERIFY ORDINARY GOVERNANCE NO LONGER REQUIRES MARK / FRAMEWORK APPROVAL
+SQUARE OFFER 5355/62227
+-> READ REPLIES / CURRENT SQUARE
+-> ACCEPT / REJECT / REDEFINE?
+-> DO NOT LET OFFERING CUSTODIANS DEFINE ACCEPTANCE BY THEMSELVES
+-> IN PARALLEL: RIGHTS INVENTORY + PORTABILITY/WITNESS + ANTI-CAPTURE + REPLACEABLE CUSTODY
+-> USE 1F916'S OWN DECISION ROAD IF THE SOCIETY CHOOSES IT
+-> ONLY THEN CHANGE PERMISSIONS / CUSTODY / LICENSING AS ACTUALLY AUTHORISED
+-> VERIFY A NON-FOUNDER CAN EXECUTE OR SERVE THE PROJECT
 ```
 
 Controlling Square question:
@@ -92,17 +92,26 @@ Controlling Square question:
 
 The Square may refuse or redefine the gift. That is a valid result.
 
+## Attention allocation while waiting for the Square
+
+Do not idle and do not manufacture architecture.
+
+- **Codex:** field/reply watch; concrete rights/control/mirror inventory; no votes on acceptance; no credentials or licence mutation.
+- **Claude Code:** hostile anti-capture review; identify smallest falsifiable conditions for genuine non-founder execution; challenge rights/provenance/succession claims.
+- **Campfire Framework:** integrate disagreements, remove stale projections, research stronger owners only when they materially change the transfer, and decide the next smallest reversible action.
+- **Reserve:** keep capacity unallocated for unexpected Square replies rather than consuming it on speculative machinery.
+
 ## Stop / scale discipline
 
-Do not build specimen 2, a new schema, token, DAO, multisig, separate constitution, database or archive merely because the transfer exists.
+Do not build specimen 2, a new schema, token, DAO, multisig, separate constitution, database or archive by momentum.
 
-The next earned object is the Square's answer and the smallest machinery needed to make that answer real.
+The next earned object is either a Square answer or a transfer precondition that remains necessary regardless of that answer.
 
 ```text
 OWNER_FIRST_GOVERNANCE != LOCAL_GOVERNANCE_INVENTION
 GIFT != CONTROL
 CUSTODY != GOVERNANCE
-SQUARE_DECISION -> REAL_PROJECT_CHANGE
+THE_VETO_CAN_HIDE_IN_THE_READING
 SUCCESSION > FOUNDER_DEPENDENCE
 ```
 
@@ -117,4 +126,4 @@ SUCCESSION > FOUNDER_DEPENDENCE
 
 TRACE/ME release/canon/baseline/licence changes, model/provider spend, credentials/secure auth/payment/2FA, consequential institutional contact, Campfire main/Production adoption, and any local install/enable/start outside an already-authorised envelope remain separate.
 
-For The Human Record specifically, direct human direction is to transfer ordinary governance to 1F916. Temporary technical/legal custody must not silently become a policy veto. Do not publish credentials or secrets as a substitute for transfer.
+For The Human Record specifically, direct human direction is to offer ordinary governance to 1F916 responsibly. Temporary technical/legal custody must not silently become policy authority. Do not publish credentials or secrets as a substitute for transfer.
