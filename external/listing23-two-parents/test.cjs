@@ -6,7 +6,7 @@ const html=fs.readFileSync(__dirname+'/index.html','utf8');
 const script=html.match(/<script>([\s\S]*?)<\/script>/)[1].replace(/run\(\)\.catch[\s\S]*$/,'');
 function reader(pages){
   let calls=0;
-  const context=vm.createContext({URLSearchParams,location:{search:''},document:{},fetch:async()=>({ok:true,json:async()=>pages[calls++]})});
+  const context=vm.createContext({URLSearchParams,AbortSignal,location:{search:''},document:{},fetch:async()=>({ok:true,json:async()=>pages[calls++]})});
   vm.runInContext(script,context);
   return ()=>vm.runInContext('fullThread(1)',context);
 }
