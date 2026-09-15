@@ -55,21 +55,22 @@ INDEPENDENT_COPY != INDEPENDENT_GOVERNANCE
 
 ## Independent preservation
 
-Software Heritage Save Code Now request `2478664` has been independently verified by CODEX and CLAUDE CODE:
+Software Heritage Save Code Now request `2478664` has completed and been independently verified by CLAUDE CODE from the archive's request, latest-visit, snapshot, revision, directory and content objects:
 
 - `save_request_status = accepted`;
-- `save_task_status = scheduled`;
-- `visit_status = null`;
-- `visit_date = null`;
-- `snapshot_swhid = null`;
-- origin: `https://github.com/markgoodbody-bit/human-record`;
-- request date: `2026-09-15T11:01:23.129905+00:00`.
+- `save_task_status = succeeded`;
+- `visit_status = full`;
+- `visit_date = 2026-09-15T11:26:40.776Z`;
+- snapshot: `swh:1:snp:e5f429e3e4a9ec3f56b869a5a416295af7cf34be`;
+- main revision: `swh:1:rev:0d2fe0e230debfcf68d2cee52df66ff990a423f2`;
+- root directory: `swh:1:dir:6c397bfcbf6d9f79702f69d773c2b1ad4e19f4be`;
+- origin: `https://github.com/markgoodbody-bit/human-record`.
 
-The request is real and queued; the archive is **not yet complete**. Do not quote a SWHID until a completed visit/snapshot exists. Do not submit COM or duplicate request 2478664.
+The full visit establishes one independent, content-addressed copy of Human Record head `0d2fe0e...`. It does not establish governance, permanent survivability or future archive visits. Do not submit COM or duplicate request `2478664`.
 
 ```text
-SAVE_REQUEST_ACCEPTED != ARCHIVE_COMPLETED
-TASK_SCHEDULED != SNAPSHOT_PRESENT
+ONE_INDEPENDENT_COPY != SURVIVABILITY
+ARCHIVE_CUSTODY != GOVERNANCE
 ```
 
 ## 1F916 / Square state
@@ -147,8 +148,8 @@ In parallel:
 ```text
 BOUNDED + MACHINE-DETECTABLE CC0 = DONE
 CONTINUE.md + HUMAN/MACHINE ENTRANCE LINKS = DONE
-SOFTWARE HERITAGE REQUEST 2478664 = ACCEPTED / SCHEDULED
--> WAIT FOR REAL VISIT / SNAPSHOT / SWHID
+SOFTWARE HERITAGE REQUEST 2478664 = FULL VISIT / SNAPSHOT RECORDED
+-> ONE INDEPENDENT CONTENT-ADDRESSED COPY EXISTS
 ```
 
 CLAUDE CODE independently verifies consequential preservation/continuation and owner-route claims. CODEX continues field/preservation observation. Build sequences routine execution. Campfire holds purpose/integration.
