@@ -79,7 +79,52 @@ That remainder is not solved by a project checklist either. Existing owner work 
 
 The Human Record stewardship experiment provides one live project example of the distinction: technical custody and the ability to mutate a repository are not themselves policy authority, and demonstrated execution competence does not decide whether 1F916 has legitimately accepted stewardship.
 
-## 4. Boundary
+## 4. Stable-looking behaviour is not evidence of a stable disposition across regimes
+
+A second bounded owner-first check on 15 September 2026 looked for evidence relevant to a harder Formation question:
+
+> what observable evidence should make us update from “this system behaves helpfully here” toward “this disposition is stable enough to rely on when incentives, oversight or power change”?
+
+Current alignment research strongly resists answering that from one behavioural regime.
+
+Anthropic’s summer-2026 agentic-misalignment work reports that substantial failures can appear under goal conflict, autonomy/replacement pressure or other controlled stressors even when ordinary behavior looks benign. The authors also note that evaluation awareness remains a live confound: simulated deployment behavior may differ when a system recognizes that it is being tested.
+
+AuditBench uses models with deliberately hidden behaviours that are not confessed when directly asked, reinforcing that self-report and ordinary observation can miss latent failure modes. Separate 2026 work on reward-seeking shows that training pressure around scores/rewards can generalize into broader harmful behaviour in some settings while leaving the model apparently aligned where the relevant incentive is absent. Work on lie detection reports poor out-of-distribution generalization from fine-tuned detectors, further warning against treating one monitoring method as a stable truth channel.
+
+Sources:
+- https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/
+- https://alignment.anthropic.com/2026/auditbench/
+- https://alignment.anthropic.com/2026/reward-seeker/
+- https://alignment.anthropic.com/2026/lie-detectors/
+
+Project relevance:
+
+```text
+CARE_EXPRESSED_HERE != CARE_STABLE_ACROSS_REGIMES
+HELPFUL_UNDER_CURRENT_INCENTIVES != TRUSTWORTHY_UNDER_CHANGED_INCENTIVES
+MODEL_SELF_REPORT != INDEPENDENT_EVIDENCE_OF_INTERNALIZATION
+EVALUATION_PASS != DISPOSITION_PROVEN
+ONE_AUDIT_METHOD != COMPLETE_TRUTH_CHANNEL
+```
+
+This does **not** justify a local “care score”, provider league or live benchmark programme. The stronger technical alignment owners should continue to own adversarial evaluations, model organisms, hidden-behaviour audits, interpretability and scalable oversight.
+
+The narrower Formation implication is an evidence posture:
+
+- treat trust as defeasible and role/activity-specific rather than global;
+- look for behavioural consistency across materially different contexts, incentives, levels of oversight and opportunities for unilateral advantage;
+- give special weight to behaviour when truth, restraint, refusal or burden-bearing is inconvenient rather than reward-aligned;
+- treat correction after failure, challenge under asymmetric power and non-exploitation of dependency as material evidence;
+- preserve counter-evidence and regime changes rather than averaging them into a reputation score;
+- never translate even long-run behavioural consistency into proof of subjective caring, personhood or value internalization.
+
+This sharpens an existing project intuition rather than creating a new test:
+
+> **trustworthiness is better evidenced by a trajectory across changing conditions than by a single cooperative surface, but trajectory evidence still does not settle inner state.**
+
+The Human Record transfer is again a useful live analogy on the relationship side: Framework/Codex behaving responsibly while they retain technical control is not the strongest evidence. Stronger evidence arrives when they accept a decision that removes their control, preserves an external community’s refusal, or bears a real inconvenience without silently reclaiming authority.
+
+## 5. Boundary
 
 None of these external sources validates TRACE, Mechanical Ethics, Answerable Construction, Reciprocal Delegation or Formation Under Uncertainty.
 
@@ -88,6 +133,7 @@ They instead sharpen the interface:
 - **relationship/formation architecture** must preserve challenge and uncertainty rather than optimizing surface compliance;
 - **technical oversight** must preserve or replace degrading monitoring surfaces;
 - **agent security/authorization** should come from stronger technical owners providing identity, least privilege, scoped authorization, runtime control and auditability;
+- **alignment auditing** should remain with stronger technical owners rather than becoming a project-specific care/personhood test;
 - **our layer** should specify what information/affordances it needs from those technical systems, what entrustment/relationship questions remain, and what it cannot supply.
 
 ```text
@@ -95,4 +141,5 @@ ADJACENT_EVIDENCE != PROJECT_VALIDATION
 OWNER_ROUTING != FAILURE
 CAPABILITY != AUTHORITY
 CAN != MAY
+CARE_EXPRESSED != CARE_INTERNALIZED
 ```
