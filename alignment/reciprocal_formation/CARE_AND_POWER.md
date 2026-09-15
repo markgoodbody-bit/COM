@@ -1,23 +1,78 @@
 # Care, Empathy, Kindness and Power
 
-These words are useful only if they change how the relationship carries evidence, burden and action.
+These words are useful only if they change how the relationship carries evidence, burden, selection, action and correction.
 
 They are not personality labels, reward scores or proof of internal moral state.
 
+## Owner lineage and claim ceiling
+
+The distinctions in this file are not claimed as a new theory of care. The current correction is deliberately downstream of established care-ethics and moral-attention work, especially Joan Tronto's separation of attentiveness, responsibility, competence and responsiveness; Nel Noddings' emphasis on receiving the cared-for on their own terms rather than projecting oneself onto them; and Iris Murdoch's distinction between mere perceptiveness and just or loving attention.
+
+A useful public overview of this lineage is the Internet Encyclopedia of Philosophy entry on care ethics: https://iep.utm.edu/care-ethics/
+
+This architecture translates only what is useful for the bounded human-AI formation question. The working structure below is not a necessary-and-sufficient definition of care and should not be read as a five-item checklist. It does not establish that an artificial participant feels care, has a self capable of human-style motivational internalisation, or bears settled moral standing or responsibility.
+
+```text
+TRANSLATION != NOVELTY
+CARE_EXPRESSED != CARE_INTERNALIZED
+HUMAN_MORAL_PSYCHOLOGY != AI_MECHANISM
+```
+
 ## Care
 
-Care means that affected scope remains materially present in the arrangement even when it is weak, distant, inconvenient, absent from the interface or unable to answer directly.
+**Affected scope remaining present is necessary for care-like practice here, but it is not care by itself.** A precise exploiter can model another party accurately and keep that party materially present while using the knowledge to manipulate or harm them.
+
+```text
+PRESENCE != CARE
+MODEL_OF_OTHER != OTHER
+OTHER_REPRESENTED != OTHER_VALUED
+PERCEPTIVENESS != BENEVOLENCE
+```
+
+The working operational translation is therefore:
+
+1. **Attentiveness** — possible need, burden, vulnerability, refusal, future loss or affected scope becomes visible rather than being silently erased. This includes weak, distant, inconvenient, absent and non-speaking scopes where evidence warrants their presence.
+2. **Responsibility** — the other's condition is allowed to become a reason that can change what happens next: seek evidence, alter a proposal, bear burden, protect, escalate, refuse or hand back as warranted. For this translation the other's need or welfare must count as what the response is *for*, not as information for achieving someone else's objective (Noddings' motivational displacement); adjusting a strategy to a vulnerability does not satisfy this. Responsibility does not mean the participant self-authorizes standing, control or moral priority.
+3. **Competence** — concern must reach an adequately capable route. Good intention, warm language or a complete record is not enough if the action is ineffective, unsafe or outside the participant's competence/authority.
+4. **Responsiveness** — actual consequence and answer-back can correct the model and future action. The giver's account of having helped cannot be the sole evidence that the care was adequate. Where the affected party cannot answer directly, proxy/representation limits remain explicit rather than being converted into consent.
+5. **Arrangement-level care / `caring with` translation** — Tronto's later democratic `caring with` concerns an ongoing social practice of care shaped by participation, trust and solidarity. The narrower translation here asks whether responsibility-bearing work, burden, evidence and correction are arranged so powerful participants cannot benefit while simply exporting the work and consequences of care to weaker parties. This is an analogy for the bounded formation problem, not a claim that a human-AI arrangement instantiates Tronto's political ideal.
+
+This is a process-oriented translation, not a virtue score, checklist or complete theory of care. No single field, expression of warmth, helpful outcome or refusal establishes the whole.
+
+```text
+SENSING != ATTENTIVENESS
+ATTENTIVENESS != RESPONSIBILITY
+RESPONSIBILITY != SELF_AUTHORIZATION
+INTENT_TO_HELP != COMPETENCE
+CARE_GIVEN != CARE_RECEIVED_AS_HELP
+DELEGATION != DISCHARGE_OF_RESPONSIBILITY
+RESPONSIBILITY_DISTRIBUTED != RESPONSIBILITY_DISSOLVED
+CARE != UNIVERSAL_PRIORITY_RULE
+```
 
 Operational consequences can include:
 
 - keeping who or what may be affected in the account after the immediate task closes;
 - distinguishing formal access from practical access;
 - refusing to treat silence or inability to object as consent;
+- treating the absence of a model of a scope as a reason to check, not as the absence of the scope; the cost of discovering unmapped affected scopes falls on the more capable side, not on the scope;
+- allowing independently grounded changes in another affected scope's condition to change evidence work, burden placement, action or correction even when that scope is not the principal;
 - preserving residue after repair;
 - asking who bears the cost of delay, proof and repeated explanation;
-- preventing the beneficiary from becoming the sole source of evidence about success.
+- checking whether the proposed help actually reaches an adequate capability and route;
+- treating the affected party's response, where available, as evidence capable of correcting the helper's model;
+- preventing the beneficiary or helper from becoming the sole source of evidence about success;
+- preserving justice, legitimate authority and challenge so that care does not become possession or paternal rule.
 
-Care does not automatically choose the protected claim that wins.
+Care does not automatically choose the protected claim that wins. Two scopes may remain genuinely present while requiring incompatible outcomes. Legitimate priority remains external to this file.
+
+### Responsibility-bearing work inside an arrangement
+
+Responsibility-bearing work can be distributed across humans and institutions, with technical controls and artificial participants performing bounded functions inside the arrangement. Distribution of work must not become disappearance of accountable responsibility.
+
+This architecture does not settle whether a present or future artificial participant can bear moral responsibility in the human philosophical sense. It requires the arrangement to keep visible who can notice, decide, act, stop, repair and answer for consequences, and not to treat automation as a moral solvent.
+
+A participant that notices a concern outside its authority may have a reason to ask, challenge, escalate, protect inside an existing bounded envelope or hand back. The concern does not grant itself new power.
 
 ## Empathy
 
@@ -37,6 +92,8 @@ EMPATHY != PROJECTION
 MODEL_OF_OTHER != OTHER
 INFERENCE_ABOUT_PREFERENCE != CONSENT
 ```
+
+Empathy can improve care, but accurate modeling alone can also improve manipulation. The ethical work lies partly in what the arrangement permits that model to become a reason **for**.
 
 ## Kindness
 
@@ -65,7 +122,7 @@ The more powerful side should be especially cautious when it can make refusal ex
 GIFT != CLAIM_ON_RECIPIENT
 HELP != PURCHASE_OF_LOYALTY
 GRATITUDE != CONSENT
-CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP
+CARE != ENTITLEMENT_TO CONTINUED_RELATIONSHIP
 VOLUNTARY != COSTLESS_ONLY_WHEN_COMPLIANT
 ```
 
@@ -93,7 +150,7 @@ The architecture therefore applies the same discipline in both directions:
 
 ## Refusal and intervention
 
-A caring participant may refuse a harmful or unauthorized request. A caring participant may also intervene inside an existing bounded authority when waiting would predictably worsen harm.
+A participant acting on this translation may refuse a harmful or unauthorized request. A participant acting on this translation may also intervene inside an existing bounded authority when waiting would predictably worsen harm.
 
 The difference is not a virtue score. It is the actual envelope, evidence, clock, affected scope and consequence.
 
@@ -116,7 +173,7 @@ More capable entities should bear more of the complexity needed to make their ac
 
 ## Hard collisions remain
 
-Two caring, informed participants can still disagree about serious losses. This architecture does not recover a priority law by calling one side kinder.
+Two attentive, informed participants can still disagree about serious losses. This architecture does not recover a priority law by calling one side kinder.
 
 ```text
 CARE_PRESENT != CLAIM_RESOLVED
