@@ -27,64 +27,54 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-Current active bounded lane: **COM #336 — earned discoverability**.
+COM #336 remains the earned-discoverability strategic lane, but **there is no active discoverability build**.
 
 Direct human direction remains:
 
 > PSFH and THR need to be pushed into more entities awareness
 
-This authorises initiative, not spam, fake grassroots activity, duplicate amplification, misleading endorsement/community ownership, analytics theatre, or cold consequential institutional contact without its separate gate.
+First-party discovery infrastructure is now complete for both objects. Future movement must come from a real owner-invited context, a material independent encounter, or external evidence. No exposure quota; no generic marketing campaign.
 
-## PSFH D067 — LIVE
+## PSFH D067 + INDEXNOW — LIVE
 
-Site Preview 0.8.26 remains the live reader-facing edition. D067 custom-domain delivery is established. Indexing/reach/adoption/usefulness/validation are not.
+Reader-facing edition: Site Preview 0.8.26.
 
-## PSFH INDEXNOW — DEPLOYED / FINAL HOST READBACK PENDING
+Maintained IndexNow source merge:
+`4869bf42373d163f1e2f073ab51dc5cc37f97971`.
 
-Source PR #338 is closed/merged:
-- exact PR head `0285a3623b78e8a42a80314174c8772bb0cd26e4`;
-- maintained merge `4869bf42373d163f1e2f073ab51dc5cc37f97971`.
-
-Generated public head:
+Public `gh-pages`:
 `956a0803c69a4bcbc388f68a53f08b4f73f107f3`.
 
-The public commit contains exactly one addition:
-`352408ff99c5e8531fe80000b491b08b.txt`
-with the expected key line.
+Public change versus D067:
+- changed none;
+- removed none;
+- added exactly `352408ff99c5e8531fe80000b491b08b.txt`.
 
-GitHub Pages run `34991033843` = **SUCCESS**.
+Pages run `34991033843` = **SUCCESS**.
 
-Default-main notifier `.github/workflows/psfh-indexnow.yml` includes the CC repair:
+CODEX hosted closure `5683411167`:
+- rebuilt from integrated maintained source;
+- all 158 generated public files fetched over custom-domain HTTPS and byte-matched;
+- key file is exact 33 bytes;
+- existing D067 root/llms/packet/manifest/history/robots/sitemap/seed/art/Explore unchanged.
+
+CLAUDE CODE independent witness `5683423083` = **PASS**:
+- custom-domain key served no-cache, exact key + LF;
+- robots/sitemap blob identities unchanged;
+- notifier run `34991145623` event `page_build`, conclusion success;
+- notifier log: `IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)`;
+- one URL notified, as designed;
+- built-status gate present in the executed workflow.
 
 ```text
-github.event.build.status == 'built'
-```
-
-Notifier run `34991145623` = **SUCCESS** and the job log records:
-
-```text
-IndexNow accepted: https://pleasestartfromhere.com/ (HTTP 202)
-```
-
-This is discovery-notification evidence only:
-
-```text
-INDEXNOW_202 != INDEXED
+FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
+INDEXNOW_ACCEPTED != INDEXED
 INDEXED != READ
 READ != USEFUL
-DISCOVERY_INFRASTRUCTURE != VALIDATION
+USEFUL != VALIDATED
 ```
 
-One deliberate evidence boundary remains before closing the infrastructure sub-lane: independent ordinary HTTPS readback of
-`https://pleasestartfromhere.com/352408ff99c5e8531fe80000b491b08b.txt`
-with HTTP status and exact 33 bytes. Final read-only order: PR #338 comment `5683433376`.
-
-```text
-PAGES_SUCCESS + GH_PAGES_FILE != CUSTOM_DOMAIN_READBACK
-THIS_IS_READ_ONLY_VERIFICATION
-```
-
-If it returns `HOST_PASS`, record closure and STOP/OBSERVE. Do not create another discoverability mechanism by momentum.
+Do not create another discovery mechanism by momentum.
 
 ## HUMAN RECORD
 
