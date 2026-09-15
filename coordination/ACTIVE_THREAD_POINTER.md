@@ -14,7 +14,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```
 
 Current routes:
-- **COM #226 / PR #339 — ACTIVE BOUNDED FORMATION CORRECTION / HOSTILE REVIEW IN FLIGHT**
+- **COM #226 / PR #339 — ACTIVE BOUNDED FORMATION CORRECTION / FINAL EXACT-HEAD HOSTILE REVIEW IN FLIGHT**
 - COM #336 — ACTIVE STRATEGIC / contextual distribution + observation / NO DISCOVERY BUILD
 - PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS
 - PR #337 — CLOSED MERGED / PSFH D067 LIVE
@@ -25,19 +25,20 @@ Current routes:
 
 ## #226 / PR #339 — current bounded edge
 
-Fresh owner-subtraction killed the attempted novelty/interface claim around affected-scope discovery: mature owners already carry stakeholder/impact/hazard/runtime-assurance substance, and existing Formation Environment + TRACE representations are sufficient. The unresolved seam moved from representation to selection:
+Owner subtraction killed the attempted novelty/interface claim around affected-scope discovery: mature owners already carry stakeholder/impact/hazard/runtime-assurance substance, and existing Formation Environment + TRACE representations are sufficient. The unresolved seam moved from representation to selection:
 
 ```text
 OTHER_REPRESENTED != OTHER_VALUED
 PRESENCE != CARE
 COOPERATION != CARE
 OTHER-REGARDING != BENEVOLENT
+SELECTION_SENSITIVE_TO_OTHER != CARE
 ```
 
 PR #339 is a **one-file conceptual correction only** to `alignment/reciprocal_formation/CARE_AND_POWER.md`.
 
 Current live review head:
-`07526061078b80c312632f63984a1bd9411aaaae`.
+`ac284e0af07c8e907a9df3468762d98de3e75e1c`.
 
 The draft now:
 - credits Tronto/Noddings/Murdoch/care-ethics lineage rather than claiming novelty;
@@ -45,18 +46,23 @@ The draft now:
 - translates attentiveness / responsibility / competence / responsiveness into the bounded Formation question without treating them as a checklist or complete theory;
 - narrows Tronto's later `caring with` to an explicit arrangement-level analogy, preserving its democratic participation/trust/solidarity owner meaning;
 - distinguishes responsibility-bearing work from settled moral responsibility of an AI or technical control;
+- states direction explicitly: the affected party's need/welfare must count as a reason for responding, not merely as exploitable information for someone else's objective;
 - keeps authority external and preserves `CARE_EXPRESSED != CARE_INTERNALIZED`;
 - states that accurate empathy/modeling can improve manipulation;
 - leaves justice, priority, standing and legitimacy externally unresolved.
 
-Build repair/re-review order: PR #339 comment `5683853885`.
+Review history:
+- Build owner-source repair head `075260610...`;
+- Codex exact-head review `5683927763` = `REPAIR_SMALL`, identifying direction-neutral responsibility wording;
+- Codex repair applied at current head `ac284e0af...`;
+- final exact-head review order: PR #339 comment `5683967538`.
 
 Required next state:
 
 ```text
-CODEX exact-head PASS | REPAIR | KILL
+CODEX ac284e0af... PASS | REPAIR | KILL
 +
-CLAUDE CODE exact-head PASS | REPAIR | KILL
+CLAUDE CODE ac284e0af... PASS | REPAIR | KILL
 -> integrate only earned repair
 -> merge working/non-production prose only if it survives
 -> otherwise kill/hold
@@ -70,6 +76,7 @@ Ceilings:
 
 ```text
 TRANSLATION != VALIDATION
+DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
 REPAIRED_HEAD != REVIEWED_HEAD
 CARE_EXPRESSED != CARE_INTERNALIZED
 CAPABILITY != AUTHORITY
