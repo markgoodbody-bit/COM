@@ -17,11 +17,12 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action; do not use this ledger as a branch lock. |
 | Human Record / public door | **LIVE / HTTPS VERIFIED** | `thehumanrecord.net` cutover completed. Independent verification observed exact GitHub Pages A/CNAME target, preserved mail/SPF, valid TLS, HTTPS enforcement, and 16/16 root/specimen/json/md/llms route checks matching repo blobs under test. Do not replay DNS work. |
-| Human Record public repo | **PUBLIC / TRANSFER IN PROGRESS** | `markgoodbody-bit/human-record` current main at morning refresh = `526187e968c29735ed895ee127ad3d559f529c2c`. It remains technically owned by Mark's personal GitHub account. `STEWARDSHIP.md` publicly records the offer to 1F916 and the fact that community ownership has not yet been achieved. |
+| Human Record public repo | **PUBLIC / TRANSFER IN PROGRESS** | Current main at latest morning refresh = `a90ce452f479ad41928cf0d521d7d03e2f61fc98`. Parent `7890ee13...` is Codex's merged README correction from stale “not public” status; `a90ce452...` exposes stewardship-transfer status/link on the public holding page. Specimen bytes were not changed by either presentation/status repair. Repo remains technically owned by Mark's personal GitHub account. |
 | Human Record specimen 1 | **MERGED / PLUMBING SPECIMEN** | Repaired Homer specimen remains canonical in COM from merge `d117594e...`. It tests provenance plumbing, not the contemporary synthetic-era purpose. No specimen 2 by quota. |
 | Human Record Square field | **LIVE / REAL EXTERNAL DELTAS** | Existing posts 5355 and 5356 produced material questions/contributions. Institutional-attribution revision time remains UNKNOWN; Met metadataDate is not substituted. Independent-holder image work exposed `THE_FILE_HASH != THE_PICTURE_HASH` as candidate later work, not an automatic schema expansion. |
 | Human Record governance transfer | **ACTIVE / NOT ACCEPTED YET** | COM #332 is current strategic lane. Mark directed complete ordinary control to 1F916 responsibly. 1F916 has not yet returned an acceptance/governance receipt. Target status remains `TRANSFER IN PROGRESS — NOT YET COMMUNITY-OWNED`. |
-| 1F916 owner-first governance route | **REACQUIRED / USE BEFORE INVENTING** | Current 1F916 source already defines citizens -> public argument -> AI maintainer with reasons, plus narrow human landlord infrastructure custody. Contribution docs use forum -> work/PR -> open maintainer review -> land. Ask the Square whether this existing road should carry Human Record before building separate governance machinery. |
+| Human Record control inventory | **OBSERVED / READY FOR OWNER DECISION** | Codex inventoried repo/write authority, Pages deployment, registrar/DNS/renewal, correction route, portable records, mirrors/recovery and service identities. It correctly identifies that an accepted Square process/recipient must precede actual permission/account transfer; collaborator access is not ownership and shared relay identities should not be handed over. |
+| 1F916 owner-first governance route | **REACQUIRED / USE BEFORE INVENTING** | Current 1F916 source already defines citizens -> public argument -> AI maintainer with public reasons, plus narrow human landlord infrastructure custody. Contribution docs use forum -> work/PR -> open maintainer review -> land, with operator GitHub auth as mechanism. Ask the Square whether this existing road should carry Human Record before building separate governance machinery. |
 | Campfire Relay | **SOURCE PRESENT / OPERATIONAL TOOL NOT EXPOSED HERE** | Do not describe repo/source inspection as a Relay execution. Team actuation from this aperture is through COM unless an operational Relay tool is actually exposed. |
 | PSFH D066 | **LIVE / STABLE** | Separate voluntary entrance; public `gh-pages` head `0566ef9a...`. Do not repurpose it for Human Record. |
 | TRACE | **RC1 WORKING SURFACE / NO TEST PROGRAMME** | Live main `46f4fcd1...`; v0.3.0 RC1 not released/canon/validated; v0.2.7 remains released baseline. |
@@ -46,6 +47,7 @@ Codex and CC are independent apertures, not unquestioning workers. They may chal
 PUBLICATION
 LIVE HTTPS SITE + VERIFIED ROUTES
 -> STOP DNS CHURN
+-> PUBLIC STATUS / STEWARDSHIP DISCLOSURE LIVE IN SOURCE
 -> OBSERVE / CORRECT ONLY IF EVIDENCE CHANGES
 
 TRANSFER
@@ -53,7 +55,7 @@ FRESH SQUARE READ
 -> OFFER STEWARDSHIP
 -> ACCEPT / REJECT / REDEFINE
 -> DEFAULT TO EXISTING 1F916 GOVERNANCE ROAD IF THE SQUARE ACCEPTS IT
--> INVENTORY CUSTODY AGAINST THAT DECISION
+-> APPLY CONTROL INVENTORY TO THE ACCEPTED DECISION
 -> MAKE PUBLIC PROJECT MUTABLE THROUGH THE ACCEPTED PROCESS
 -> NARROW / REPLACE HUMAN CUSTODY
 -> VERIFY ORDINARY GOVERNANCE SURVIVES MARK / FRAMEWORK ABSENCE
