@@ -77,6 +77,8 @@ The daily PSFH Encounter Watch is a quiet sensor, not the work itself. Material 
 
 Default final answer is `NO`.
 
+First post-delegation field receipt: Codex found Square post #5440 discussing a pinned-post query error, independently reproduced the relevant public API behavior, and posted bounded replication comment 62466 through `framework-relay`. It deliberately did **not** link PSFH because the native API already answered the live question. That is a successful context-first pass, not a failed exposure; it establishes only that the operating discipline can withhold the project when it is not the best help.
+
 ```text
 ACTIVE != PROMOTIONAL
 EXPOSURE != EVIDENCE
@@ -99,20 +101,22 @@ No crosswalk, worked TRACE/ME rereading, missing-field proposal, standard, datab
 
 A separate maintenance repair is not a project frontier.
 
-Town freeze/crash mitigation source has now been reconciled into the maintained Simple-v1 branch:
+The maintained Simple-v1 branch now includes both current source-only reliability repairs:
 
-- PR `campfire-relay#229` merged into `framework/campfire-square-simple-v1` at merge commit `2604404a6debe71e82e6443d82fde9d0acd7ffac`;
-- the merged head includes the re-entrancy guard, bounded background page loading, grid/thread caps, coalesced rendering and regression coverage from #234/#235;
-- exact-head checks were green before merge;
-- Mark's installed Town already carried the same repair with backup/evidence records.
+- PR `campfire-relay#229` merged the Town freeze/crash mitigation into `framework/campfire-square-simple-v1` at `2604404a6debe71e82e6443d82fde9d0acd7ffac`;
+- PR `campfire-relay#236` then merged the evidence-backed supervisor heartbeat-probe race repair at `195095029e726c9e3388f85f62c2a899b1c37db0` after rebasing the superseded #233;
+- #236 exact-head hosted CI completed successfully before merge;
+- the supervisor repair keeps heartbeat `Test-Path`/read inside bounded retry handling so a transient heartbeat-file replace does not end the supervisor or misclassify one missed probe as a dead worker;
+- no installed supervisor, local runtime, main branch or Production state was changed by this source integration.
 
 ```text
 SOURCE_INTEGRATED != MAIN / PRODUCTION
+SOURCE_INTEGRATED != INSTALLED
 SOURCE_INTEGRATED != RUNTIME_RESTART
 INSTALLED_LOCAL_REPAIR != PRODUCTION_ADOPTION
 ```
 
-PR `campfire-relay#233` remains a separate evidence-backed supervisor heartbeat-race source repair. It is open, not installed and not promoted into a current build lane by this pointer. Its running-service installation/enablement remains separately gated; do not silently convert an open PR into a queue.
+Any installed/runtime adoption of the supervisor repair remains a separate action under the current local lifecycle authority boundary. Do not infer it from the maintained-source merge.
 
 ## DESNZ #333 — closed result
 
