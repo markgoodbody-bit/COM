@@ -17,20 +17,20 @@ Durable direction: `coordination/PROGRAM_PLAN.md`.
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 Current routes:
-- **COM #335 — 1F916 LISTING 23 / SUBMITTED ONCE / HOST_PASS / OWNER-RESULT WATCH**
-- **COM #108 — PSFH stable Door / contextual encounter loop / crawler-policy HUMAN GATE**
+- **COM #335 — CLOSED COMPLETED / Listing 23 submission 490 / OWNER-RESULT WATCH**
+- **COM #108 — PSFH stable Door / contextual encounter loop**
 - COM #332 — Human Record EXTERNAL-EVIDENCE HOLD
 - COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE
 - COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT
 - COM #74 — Open Horizon discoverability only, not a queue
 
-## #335 Listing 23 — build complete / owner-result watch
+## Listing 23 — completed build / owner-result watch
 
-Two Parents is live and submitted once under Listing 23. The original correction-lineage hypothesis was killed and remains dead.
+Two Parents is live and submitted once under 1F916 Listing 23. COM #335 is closed completed.
 
 Publication:
 - repo `markgoodbody-bit/two-parents`;
-- submitted HTML source `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`;
+- exact submitted HTML source `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`;
 - live `https://markgoodbody-bit.github.io/two-parents/`;
 - Pages run `34977553519` SUCCESS;
 - hosted index 13,544 bytes / SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`.
@@ -38,8 +38,6 @@ Publication:
 Submission:
 - Listing 23 submission `490`, `framework-relay`;
 - created `2026-09-15T13:51:49.954Z`;
-- payload `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`;
-- identity event `14780`;
 - Square 3525/62569;
 - `key_bound=false`.
 
@@ -51,13 +49,13 @@ AWARDED != PAID
 NO SECOND SUBMISSION
 ```
 
-No payout binding, wallet registration, token trade, spend, credential or payment action was taken. Observe owner result; correct only a concrete artifact defect or owner response.
+No payout binding, wallet registration, token trade, spend, credential or payment action was taken. The existing 1F916 materiality watch now includes submission 490 and should notify only on real award/reject/correction/payment developments.
 
-## PSFH — stable Door / active encounter loop / crawler policy gate
+## PSFH — stable Door / active contextual encounter loop
 
 PSFH D066 / Site Preview 0.8.25 remains stable. Mark delegated routine contextual encounter work to Framework: help the live context first, link PSFH only when materially useful, and do not create a promotion quota/campaign.
 
-Current public `robots.txt` was freshly reacquired after #335:
+Current public `robots.txt` remains:
 
 ```text
 User-agent: *
@@ -65,23 +63,24 @@ Allow: /
 Sitemap: https://pleasestartfromhere.com/sitemap.xml
 ```
 
-Blob `ccebf1055d23f67c51982fc7492a7a84eb93f21b` also states that public retrieval is allowed and is not training consent.
+Blob `ccebf1055d23f67c51982fc7492a7a84eb93f21b` explicitly says public retrieval is allowed and that crawler access is not itself a training-consent claim.
 
-The remaining question is **not a routine source defect**. It is a consequential forward crawler/training policy choice. #108 records that current provider controls can separate some search/user retrieval crawlers from some training-oriented crawlers. No later human decision was found.
+Fresh provider review established that purpose-specific controls exist: OpenAI separates OAI-SearchBot from GPTBot; Anthropic separates Claude-SearchBot/Claude-User from ClaudeBot; Google provides Google-Extended separately from ordinary Search.
 
-Framework's bounded recommendation remains **NOT ENACTED**:
-- keep search/user-directed retrieval open;
-- where cleanly separable, disallow `GPTBot` and `ClaudeBot` during the current working/not-canon phase;
-- keep `OAI-SearchBot`, `Claude-User`, `Claude-SearchBot` and ordinary Google Search open;
-- leave `Google-Extended` unchanged until Mark deliberately chooses its bundled Gemini training + grounding trade-off.
+**Disposition: NO ROUTINE DEFECT / NO REPAIR EARNED.**
+
+The existing policy is intentionally:
 
 ```text
-CRAWL_PERMISSION != REUSE_LICENCE
-LIVE_RETRIEVAL != TRAINING_INGESTION
-GENERIC_PROCEED != CONSEQUENTIAL_CRAWLER_POLICY_AUTHORITY
+PUBLIC CRAWLING = ALLOWED
+CRAWL_PERMISSION != LICENCE / TRAINING-CONSENT CLAIM
 ```
 
-Do not change `robots.txt` until Mark makes that explicit policy choice. #108 comment `5681443364` is the current Build receipt.
+Provider-specific `Disallow` rules would be a new affirmative training-crawler opt-out policy, not a mechanical repair of the current statement. Do not create D067 or mutate `robots.txt` merely because those controls exist.
+
+If Mark later explicitly chooses a policy such as `SEARCH / USER RETRIEVAL = YES; MODEL-DEVELOPMENT CRAWLING = NO`, that is a consequential policy gate and can be implemented narrowly then. There is no pending robots task requiring Mark to decide now.
+
+`AVAILABLE_CONTROL != REASON_TO CHANGE POLICY`
 
 ## Human Record
 
@@ -97,6 +96,20 @@ Do not repeat solicitation or infer refusal from silence.
 
 Maintained Simple-v1 source includes Town repair #229 (`2604404a...`) and supervisor heartbeat-race repair #236 (`195095029...`). Source integration did not install/restart runtime or change main/Production.
 
+## Current frontier
+
+There is now **no active bounded application/build lane**.
+
+Listing 23 ended correctly in an independently checked external hand-in. PSFH crawler review ended `NO REPAIR EARNED`. Human Record is on external-evidence hold. Closed #333/#334 remain closed.
+
+Return to:
+
+```text
+GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
+```
+
+Do not manufacture a successor lane because #335 completed.
+
 ## Operating topology
 
 ```text
@@ -109,7 +122,7 @@ MARK = ORIGINATOR + CONSEQUENTIAL RELEASE / LEGAL-CREDENTIAL CUSTODY WHERE UNAVO
 
 Mark is not the scheduler. Routine reversible work moves without routing each choice through him.
 
-Consequential gates remain for credentials/payment/2FA, spend/provider commitments, TRACE/ME release/canon/baseline/licence, Campfire main/Production adoption, consequential institutional contact, and explicit PSFH crawler/training posture.
+Consequential gates remain for credentials/payment/2FA, spend/provider commitments, TRACE/ME release/canon/baseline/licence, Campfire main/Production adoption, consequential institutional contact, and any later explicit PSFH crawler/training opt-out posture.
 
 ```text
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
