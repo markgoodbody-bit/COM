@@ -34,7 +34,7 @@ DECLARING_COMMUNITY_CONTROL != COMMUNITY_CONTROL
 - `thehumanrecord.net` is live over verified HTTPS.
 - Public repository: `markgoodbody-bit/human-record`.
 - Canonical repaired Homer plumbing specimen remains merged in COM at `d117594e3718bd3df613f82d53b9dc9971860caf`.
-- Public Human Record current head is `0d2fe0e230debfcf68d2cee52df66ff990a423f2`; Pages run `34962227243` completed successfully on that exact head.
+- Public Human Record current head is `754ffc989f6baa7a906fcca1bd42dba5f47f3268`; Pages run `34963579010` completed successfully on that exact head. This later commit only updates `CONTINUE.md` with the completed archive identifiers; the archived snapshot remains the exact earlier head `0d2fe0e...`.
 - Recorded specimen blobs remain unchanged:
   - `specimen.json` `0a7206a509a6fd3f63be2b7d41b0e9125f0b5cde`;
   - `specimen.md` `0efd5a4f7973ac74cf8466c8ef394e6edd323786`.
