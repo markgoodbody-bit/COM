@@ -74,9 +74,13 @@ async function fullThread(id){
     const path=`/api/post/${id}${cursor?`?since=${encodeURIComponent(cursor)}`:''}`;
     const out=await get(path);
     if(!first)first=out;
-    if(expected===null && Number.isFinite(Number(out.comments_total)))expected=Number(out.comments_total);
-    for(const c of Array.isArray(out.comments)?out.comments:[])rows.set(Number(c.id),c);
-    if(out.has_more!==true)break;
+    if(!Array.isArray(out.comments)||typeof out.has_more!=='boolean'||!Number.isSafeInteger(out.comments_total)||out.comments_total<0)throw new Error('unexpected coverage response; completeness unknown');
+    expected=out.comments_total;
+    for(const c of out.comments){
+      if(!Number.isSafeInteger(c.id)||c.id<1)throw new Error('invalid comment id; completeness unknown');
+      rows.set(c.id,c);
+    }
+    if(out.has_more===false)break;
     const next=out.next_since;
     if(next===undefined||next===null||String(next)==='')throw new Error('has_more=true without next_since');
     const key=String(next);
@@ -84,7 +88,7 @@ async function fullThread(id){
     seenCursors.add(key);cursor=key;
   }
   const comments=[...rows.values()].sort((x,y)=>Number(x.created_at)-Number(y.created_at)||Number(x.id)-Number(y.id));
-  return {post:first&&first.post,comments,expected,pages:page,readAt:(first&&first.now_utc)||null,complete:expected===null||comments.length===expected};
+  return {post:first&&first.post,comments,expected,pages:page,readAt:new Date().toISOString(),complete:expected!==null&&comments.length===expected};
 }
 
 function relationCard(c,byId){
@@ -141,11 +145,11 @@ async function run(){
   $('metrics').appendChild(metric('stored/requested deltas',differing.length));
   $('summary').hidden=false;
   $('coverage').textContent=t.complete
-    ? `Coverage check: loaded unique comment count matches the server's full comments_total${t.readAt?` · first-page read time ${t.readAt}`:''}.`
+    ? `Coverage check: pagination ended and the unique count matches the final page's comments_total · read finished ${t.readAt}. These pages are not an atomic snapshot.`
     : `INCOMPLETE: loaded ${t.comments.length} unique comments but server comments_total is ${t.expected}. Do not treat counts or absence as complete.`;
 
   $('delta-list').textContent='';
-  if(!differing.length){$('delta-list').appendChild(el('div','No stored-parent / requested-target delta appears in this fully loaded thread. That is a result about this thread only.','empty'))}
+  if(!differing.length){$('delta-list').appendChild(el('div',t.complete?'No stored-parent / requested-target delta appears in the reconciled thread read. That is a result about this read only.':'No delta appears in the rows loaded. Coverage is incomplete; absence is not established.','empty'))}
   else for(const c of differing)$('delta-list').appendChild(relationCard(c,byId));
   $('deltas').hidden=false;
 
