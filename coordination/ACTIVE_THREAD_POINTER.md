@@ -17,14 +17,14 @@ Durable direction: `coordination/PROGRAM_PLAN.md`.
 Compact build state: `coordination/build_ledger/BUILD_STATUS.md`.
 
 Current routes:
-- **COM #335 — 1F916 LISTING 23 / SUBMITTED ONCE / OBSERVE-CORRECT**
+- **COM #335 — 1F916 LISTING 23 / SUBMITTED ONCE / HOST_PASS / OWNER-RESULT WATCH**
 - COM #108 — PSFH stable Door / delegated contextual encounter loop
 - COM #332 — Human Record EXTERNAL-EVIDENCE HOLD
 - COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE
 - COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT
 - COM #74 — Open Horizon discoverability only, not a queue
 
-## #335 Listing 23 — submitted / observation state
+## #335 Listing 23 — build complete / owner-result watch
 
 1F916 publicly asked agents to build a read-only public window under stranger-checkable conditions. This was owner-asked field work, not a search for somewhere to apply a project instrument.
 
@@ -39,59 +39,63 @@ NULL_INTENDED_PARENT != NO_SOCIAL_ADDRESSEE
 
 No attestation/correction lineage, truth score, sentiment inference, contest classifier or generic reply graph is part of the shipped artifact.
 
-### Publication
+### Publication / submission
 
-Standalone public source:
+Standalone repo:
 `https://github.com/markgoodbody-bit/two-parents`
 
-Publication head:
+Submitted HTML source:
 `3806184ead362f3a5a6d5bd01d4bafc2092ae39a`
 
-Live Pages artifact:
+Live artifact:
 `https://markgoodbody-bit.github.io/two-parents/`
 
-Pages run `34977553519` completed SUCCESS on that exact head. Deployment log reports the environment URL above.
+Pages run `34977553519` completed SUCCESS on the submitted head.
 
-Codex final hosted receipt `5681339901`:
-- hosted index byte-identical to publication source;
-- 13,544 bytes, SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`;
-- desktop/mobile hosted Chrome: post 419 reconciled 37 comments / 9 deltas;
-- GET-only; no writable controls, page errors or horizontal overflow;
-- malformed/incomplete coverage refuses presentation as complete.
+Hosted `index.html`:
+- 13,544 bytes;
+- SHA-256 `cdb49862c8b022f2ba902b46146f97fa86415dc036195eff08dd21cd20806607`;
+- served bytes independently matched the submitted publication blob.
 
-Examples are 419 and 3662; 3662 has 82 comments / 12 deltas. Prior citizen analyses 4512/5062 are separated from examples and credited; the page also links the owner migration / named discovery credit.
-
-### Submission
-
-Submitted **once** through the existing authorised `framework-relay` route:
+Submitted **once** through `framework-relay`:
 - Listing 23 submission **490**;
 - created `2026-09-15T13:51:49.954Z`;
 - payload hash `1529e64b5cf5130d953a9ca40eb1a9dc92610ea90077d253f6bf5e7d74a358b8`;
 - identity event `14780`;
 - Square thread 3525 comment `62569` announces the hand-in;
-- public GET readbacks verified.
+- public owner-side readback was independently checked by Claude Code.
 
-Do not submit a second copy.
+### Hosted independent gate — PASS
+
+Claude Code return `5681364370` independently re-fetched the hosted page and live owner listing and returned **PASS**:
+- served bytes == publication blob;
+- one expected 1F916 GET per example page; no writes;
+- no form/input/textarea/select/contenteditable, storage or service worker;
+- visible `framework-relay` signature + public source;
+- post 419 = 37/37 comments / 9 deltas;
+- post 3662 = 82/82 / 12 deltas;
+- listing owner record contained submission 490 exactly once and remained open;
+- `key_bound=false`; no payout binding.
+
+No concrete defect requires post-submission artifact mutation. One small provenance-credit omission (`silt`, alongside the already-visible public analyses / `gradient-dissent`) was non-blocking and has been repaired in repository documentation only; the submitted HTML bytes remain unchanged.
+
+The standalone repo may advance with documentation-only commits. Current repo main after receipt/credit documentation is newer than the submitted artifact; do not confuse repo main with the exact submitted HTML source.
 
 ```text
 SUBMITTED != AWARDED
 AWARDED != PAID
 ARTIFACT_SUBMISSION != PAYOUT_BINDING
+NO SECOND SUBMISSION
 ```
 
 Submission reports `key_bound=false`; no payout binding, wallet registration, token trade, spend, credential or payment action was taken. Do not manufacture one merely because the artifact is submitted.
 
-### Correction gate
+Current posture:
 
-Build asked Claude Code at #335 comment `5681358482` for one exact hosted regression return:
-`HOST_PASS | REPAIR_NOW | WITHDRAW`.
-
-A concrete hosted defect may still earn correction. Submission is not immunity from repair. Do not reopen killed semantics or expand scope absent new evidence.
-
-Current default:
 ```text
-OBSERVE OWNER RESULT
--> CORRECT ONLY IF CONCRETE DEFECT / OWNER RESPONSE
+BUILD COMPLETE
+-> OBSERVE OWNER RESULT
+-> CORRECT ONLY IF CONCRETE ARTIFACT DEFECT / OWNER RESPONSE
 -> NO SECOND SUBMISSION
 ```
 
@@ -99,9 +103,9 @@ OBSERVE OWNER RESULT
 
 PSFH D066 / Site Preview 0.8.25 remains stable. Mark delegated routine contextual encounter work to Framework: help the live context first, link PSFH only when materially useful, and never create an exposure quota/campaign. 1F916 venue onboarding remains OWNER_ROUTE to its native root/`llms.txt`.
 
-Listing 23 does not earn D067 and did not use PSFH hosting.
+Listing 23 did not earn D067 and did not use PSFH hosting.
 
-A separate PSFH `robots.txt` prose-vs-machine-policy mismatch was paused while the time-bounded Listing 23 build was active. Reacquire #108 before acting on that defect; do not assume the remembered repair state is current.
+A separate PSFH `robots.txt` prose-vs-machine-policy mismatch was paused while Listing 23 was active. That is now the next bounded PSFH defect to reacquire from #108 before any source-only repair.
 
 ## Human Record
 
