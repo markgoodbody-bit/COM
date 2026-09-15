@@ -14,10 +14,10 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 ```
 
 Current routes:
-- **ACTIVE ROUTES: #341 PSFH candidate; #340 internal bootstrap repair.** Live issue comments and PR state supersede this snapshot; a route is not a new assignment.
-- COM #341 / PR #343 — source candidate reviewed; inspect live PR and publication receipts before acting.
-- COM #340 — bounded bootstrap repair candidate; inspect live issue for ownership and review.
-- COM #342 — THR participation guide integrated via human-record PR #4; live repository and hosted receipt supersede this summary. No duplicate build or outreach implied.
+- **NO ACTIVE BOUNDED BUILD LANE.** Live issue comments and repository state supersede this snapshot; open issues do not manufacture assignments.
+- COM #340 / PR #344 — protocol text merged to COM main at `1220b80223410270cd89f7e919561774b3166653`; fresh-aperture cold execution and `NO_MARK_POKING` remain untested. This is an observation debt, not a build lane or a pass.
+- COM #341 / PR #343 — PSFH D068 is published and exact served bytes were independently witnessed. Reader benefit remains unestablished; do not rebuild by momentum.
+- COM #342 / human-record PR #4 — participation/contribution surface merged and live at `1b4273409f69493ab813243a0d3014a25d991773`. Field participation may continue only under current direct direction and useful context; it is not an active build lane or governance transfer.
 - COM #226 — OPEN FORMATION HORIZON / PR #339 MERGED WORKING PROSE
 - COM #336 — ACTIVE STRATEGIC / contextual distribution + observation / NO DISCOVERY BUILD
 - PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS
@@ -62,7 +62,7 @@ No new schema, benchmark, reward target or build follows automatically.
 
 ## #336 — discoverability / observation
 
-PSFH D067 / Site Preview 0.8.26 and first-party IndexNow are live and independently host-verified. Human Record first-party discovery + IndexNow are live; stewardship remains OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED.
+PSFH D068 is live from maintained source `2caa14f3beeedcb910e50342fec26f7da9ffb887` and public `gh-pages` `5ce14d5b94e092b3e11ceb1cb0116b4b76be1401`; exact custom-domain bytes were independently witnessed. The change reduces repeated exit language and adds a bounded worked bridge while explicitly refusing efficacy/counterfactual proof; reader benefit remains unestablished. Human Record discovery, contribution routing and IndexNow are live at `1b4273409f69493ab813243a0d3014a25d991773`; stewardship remains OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED.
 
 AI Product Index has accepted/live PSFH + THR listings. `thedaviddias/llms-txt-hub#1648` (PSFH) and `#1649` (THR) remain owner-review watches unless live source changes. Do not chase, duplicate or open a third directory route.
 
