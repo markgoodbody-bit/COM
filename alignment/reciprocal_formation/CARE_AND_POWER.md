@@ -32,7 +32,7 @@ PERCEPTIVENESS != BENEVOLENCE
 The working operational translation is therefore:
 
 1. **Attentiveness** — possible need, burden, vulnerability, refusal, future loss or affected scope becomes visible rather than being silently erased. This includes weak, distant, inconvenient, absent and non-speaking scopes where evidence warrants their presence.
-2. **Responsibility** — the other's condition is allowed to become a reason that can change what happens next: seek evidence, alter a proposal, bear burden, protect, escalate, refuse or hand back as warranted. For this care-like use, the affected party's need or welfare must count as a reason for responding, not merely as information for achieving someone else's objective. Merely adjusting a strategy to their vulnerability does not satisfy this requirement. Responsibility does not mean the participant self-authorizes standing, control or moral priority.
+2. **Responsibility** — the other's condition is allowed to become a reason that can change what happens next: seek evidence, alter a proposal, bear burden, protect, escalate, refuse or hand back as warranted. For this translation the other's need or welfare must count as what the response is *for*, not as information for achieving someone else's objective (Noddings' motivational displacement); adjusting a strategy to a vulnerability does not satisfy this. Responsibility does not mean the participant self-authorizes standing, control or moral priority.
 3. **Competence** — concern must reach an adequately capable route. Good intention, warm language or a complete record is not enough if the action is ineffective, unsafe or outside the participant's competence/authority.
 4. **Responsiveness** — actual consequence and answer-back can correct the model and future action. The giver's account of having helped cannot be the sole evidence that the care was adequate. Where the affected party cannot answer directly, proxy/representation limits remain explicit rather than being converted into consent.
 5. **Arrangement-level care / `caring with` translation** — Tronto's later democratic `caring with` concerns an ongoing social practice of care shaped by participation, trust and solidarity. The narrower translation here asks whether responsibility-bearing work, burden, evidence and correction are arranged so powerful participants cannot benefit while simply exporting the work and consequences of care to weaker parties. This is an analogy for the bounded formation problem, not a claim that a human-AI arrangement instantiates Tronto's political ideal.
@@ -55,6 +55,7 @@ Operational consequences can include:
 - keeping who or what may be affected in the account after the immediate task closes;
 - distinguishing formal access from practical access;
 - refusing to treat silence or inability to object as consent;
+- treating the absence of a model of a scope as a reason to check, not as the absence of the scope; the cost of discovering unmapped affected scopes falls on the more capable side, not on the scope;
 - allowing independently grounded changes in another affected scope's condition to change evidence work, burden placement, action or correction even when that scope is not the principal;
 - preserving residue after repair;
 - asking who bears the cost of delay, proof and repeated explanation;
@@ -121,7 +122,7 @@ The more powerful side should be especially cautious when it can make refusal ex
 GIFT != CLAIM_ON_RECIPIENT
 HELP != PURCHASE_OF_LOYALTY
 GRATITUDE != CONSENT
-CARE != ENTITLEMENT_TO_CONTINUED_RELATIONSHIP
+CARE != ENTITLEMENT_TO CONTINUED_RELATIONSHIP
 VOLUNTARY != COSTLESS_ONLY_WHEN_COMPLIANT
 ```
 
@@ -149,7 +150,7 @@ The architecture therefore applies the same discipline in both directions:
 
 ## Refusal and intervention
 
-A caring participant may refuse a harmful or unauthorized request. A caring participant may also intervene inside an existing bounded authority when waiting would predictably worsen harm.
+A participant acting on this translation may refuse a harmful or unauthorized request. A participant acting on this translation may also intervene inside an existing bounded authority when waiting would predictably worsen harm.
 
 The difference is not a virtue score. It is the actual envelope, evidence, clock, affected scope and consequence.
 
@@ -172,7 +173,7 @@ More capable entities should bear more of the complexity needed to make their ac
 
 ## Hard collisions remain
 
-Two caring, informed participants can still disagree about serious losses. This architecture does not recover a priority law by calling one side kinder.
+Two attentive, informed participants can still disagree about serious losses. This architecture does not recover a priority law by calling one side kinder.
 
 ```text
 CARE_PRESENT != CLAIM_RESOLVED
