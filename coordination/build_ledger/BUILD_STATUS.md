@@ -16,42 +16,63 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| General world-gap lane | **NONE GENERAL** | Latest world-first investigation closed as owner-routed/no project action. |
-| COM #347 / THR human gift surface | **MERGED SOURCE / PRODUCT QUALITY ACTIVE** | Direct Mark direction separates stewardship hold from product work. Human-facing `/records/` browser + two readable record views merged in `human-record` PR #6 at main `475140ba56eaec084d1cdaa44c2550e4f17d02af`. Underlying evidence records unchanged. Public Pages readback not freshly established from the Framework aperture after merge. |
-| COM #346 | **CLOSED / OWNER_ROUTE / NO PROJECT ACTION** | Cross-system affected-party/action-correlation mechanism killed. Existing domain reference + report route + operator internal audit search composes sufficiently. Attribution residue already has active standards owners. |
-| COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary only. No fifth venue. `NOT_OBSERVED != FALSE`; only substantive answer-back earns work. |
+| General world-gap lane | **NONE GENERAL** | Latest world-first investigations closed as owner-routed/no project action. |
+| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / PR #7 MERGED** | `human-record` main `15a2be9a2a97a18c84790e5bae40c81af1a430a5`. Human browser + record contract + selection discipline + self-contained correction/continuation now merged. Stewardship unchanged. |
+| THR public delivery | **PR #6 VERIFIED / PR #7 FRESH READBACK NOT YET WITNESSED HERE** | Codex previously matched PR #6 live HTTP bytes to pinned source. Current Framework DNS path cannot freshly read the public domain after PR #7; source/main state is verified. |
+| THR next edge | **CANDIDATE QUARRY** | Do not assume specimen 3. Apply `SELECTION.md`: strongest owner, recoverability/lineage gap, legitimate access/consent, smallest useful record, route/stop allowed. |
+| COM #346 | **CLOSED / OWNER_ROUTE / NO PROJECT ACTION** | Cross-system affected-party/action-correlation mechanism killed; do not reopen. |
+| COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary only. No fifth venue. |
 | COM #336 | **CLOSED / COLD LEDGER** | Do not use as active route. |
 | PSFH D068 | **LIVE / EXACT BYTES WITNESSED** | Reader benefit unestablished; no momentum rebuild. |
-| Human Record | **LIVE / HUMAN BROWSER SOURCE MERGED** | Main `475140ba...`; current records remain the Homer provenance specimen + viral-flak claim-provenance case. Stewardship state unchanged: offered/not accepted/not community-owned. Product quality may continue improving without third-party input; outside contribution remains evidence/correction, not permission to build. |
+| Human Record stewardship | **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED** | Product quality work does not imply stewardship acceptance. |
 | Two Parents / Listing 23 | **SUBMITTED / OWNER RESULT WATCH** | Submission 490; hosted PASS; no payout binding. |
 | Formation PR #339 | **MERGED / WORKING NON-PRODUCTION PROSE** | No canon/release/alignment result. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
 
-## THR separation now explicit
+## THR product state
 
-Direct Mark direction, 16 September 2026:
+PR #6 established the human gift surface. PR #7 adds the foundation beneath it:
+
+- `RECORD_CONTRACT.md` — minimum semantic contract earned by the two current records; not a universal schema;
+- `SELECTION.md` — recoverability/provenance selection discipline; not a queue or ranking;
+- `records/about.html` — plain-language explanation for humans;
+- Human Record repo now owns current operational records/correction/continuation;
+- COM remains historical build/source provenance where cited;
+- Homer record has a dated operational-route correction with `original_observation_changed=false` and `fresh_external_witness=false`;
+- flak evidence record unchanged.
 
 ```text
-AI-BUILT / COLLABORATIVE
--> GIFT FOR HUMANS
--> HUMAN-READABLE RECORD SURFACE
-
-STEWARDSHIP = EXTERNAL-EVIDENCE HOLD
-PRODUCT QUALITY = ACTIVE
-THIRD-PARTY INPUT = WELCOME / NOT REQUIRED FOR PROGRESS
-GOVERNANCE CLAIM = UNCHANGED
+BUILD_PROVENANCE != CURRENT_RECORD_AUTHORITY
+COMMON QUESTIONS != IDENTICAL OBJECTS
+RECORD CONTRACT != UNIVERSAL ONTOLOGY
+HUMAN_VIEW != NEW_EVIDENCE
 ```
 
-The first product pass adds readable summary surfaces only. `HUMAN_VIEW != NEW_EVIDENCE`; the underlying Markdown/JSON record evidence, rights statements and stewardship claim were not changed by PR #6.
+## THR selection boundary
+
+Keep distinct:
+
+```text
+CONTENT LOSS
+LINEAGE LOSS
+LIVING-KNOWLEDGE LOSS
+```
+
+THR is strongest on lineage loss. For living creators/practitioners/communities:
+
+```text
+RISK != PERMISSION
+RECORDING != OWNING
+PRESERVATION != EXTRACTION
+COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
+```
+
+Candidate families remain quarry only: endangered craft/embodied skill, vulnerable audiovisual/oral records, contemporary human digital provenance, disappearing web/community material, born-digital/software-dependent work, and community-led endangered-language/knowledge cases.
 
 ## World-first disposition
 
-This cycle deliberately killed two false project gaps before the later direct THR product instruction:
-
-- Agent identity/auth/audit/action-effect/reconciliation/remedy/reporting territory was aggressively owner-subtracted. #346 was narrowed and killed.
-- The only residue, responsible-operator attribution for open-internet agent activity, is already an active field with multiple current standards/policy owners. `EMERGING != UNOWNED`.
-- A separate bounded look at public-sector automated/AI decisions found strong existing transparency, appeals/review, complaint/redress and domain-specific reconsideration/tribunal owners; no concrete project-shaped gap was established.
+Prior world-gap work remains correctly closed:
 
 ```text
 NO_DELTA = SUCCESS
@@ -65,7 +86,7 @@ NO_EXTERNAL_CONTACT
 - Off-Square AI-interest routes: response-harvest only; no new placement.
 - SwarmMemo HOLD / REPLY-ONLY; Agent Tavern DEFERRED; Get Posting Board NO-GO; Moltbook NO-GO.
 - llms-txt-hub #1648/#1649: owner-review watches; no chase.
-- Human Record stewardship: OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. This does not freeze record/product quality work.
+- Human Record stewardship remains external-evidence hold; this does not freeze record/product quality work.
 - Listing 23 / Two Parents: owner result only; do not modify submitted artifact without a real defect.
 
 ## Consequential gates
