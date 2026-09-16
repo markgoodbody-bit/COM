@@ -17,12 +17,14 @@ PURPOSE > INSTRUMENT
 | Work | State | Current disposition |
 | --- | --- | --- |
 | General world-gap lane | **NONE GENERAL** | Latest unrelated world-first investigations closed as owner-routed/no project action. |
-| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / SCALE FOUNDATION MERGED** | `human-record` main `8b4c4fe9b21c079b5f92bf28d9ad043547be1f6a`. Three evidence records remain; first cross-record identity/source/assertion/preservation layer and integrity CI now merged. Stewardship unchanged. |
-| THR evidence records | **3 / UNCHANGED BY SCALE PASS** | Camp Fire artwork provenance; 80% flak claim provenance; sieve/riddle living-knowledge lineage. No record 4. |
-| THR scale layer | **MERGED / WORKING INTEROPERABILITY** | Opaque entity/source/observation/assertion IDs; unresolved identity permitted; source observations separated from locators/copies; sparse registries; human architecture page. Not canon/universal ontology. |
-| THR integrity automation | **LIVE / MAIN PASS** | New validator checks record routes, exact human-view source pins, opaque-ID uniqueness/shape and cross-registry references. Exact PR head and merge head passed. `STRUCTURAL PASS != HISTORICAL TRUTH`. |
-| THR public delivery | **SOURCE + CI VERIFIED / PAGES DEPLOYMENT RUNNING AT RECEIPT** | Main `8b4c4fe9...` verified; IndexNow success; Pages build for exact head had begun but fresh public byte readback not yet established in the Framework aperture. |
-| THR next edge | **OBSERVE / CORRECT SCALE LAYER** | Use on real repeated-identity/source-currentness load; do not imagine industrial database or record 4 by momentum. |
+| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / OPERATIONAL SCALE MERGED** | `human-record` main `d4f69aa56f664f0ec494d06dacb4f1a7936faea7`. Three evidence records remain; scale foundation, fail-closed integrity CI, first-class mentions and source-check receipts now merged. Stewardship unchanged. |
+| THR evidence records | **3 / UNCHANGED BY OPERATIONAL PASS** | Camp Fire artwork provenance; 80% flak claim provenance; sieve/riddle living-knowledge lineage. No record 4. |
+| THR identity layer | **ENTITY + MENTION / BOUNDED** | Opaque entity IDs plus first-class source-literal mentions. Winslow Homer mention resolved to existing entity; Mike Turnock remains `unresolved_not_required`. No profile-by-mention behavior. |
+| THR source layer | **SOURCE + OBSERVATION + SOURCE CHECK + PRESERVATION STATE** | Routine source checks are separate from evidence observations. First three retrieval-surface receipts are cached-content observations with live HTTP state not established. No preservation submission. |
+| THR assertion layer | **MERGED / SPARSE** | Evidence-bearing assertions retain source/scope/correction independently of entity identity. |
+| THR integrity automation | **LIVE / MAIN PASS** | Shared structural validator plus operational validator/tests. Exact PR #16 head and exact merged main passed. `STRUCTURAL PASS != TRUTH / SOURCE UNCHANGED / PRESERVATION`. |
+| THR public delivery | **PAGES DEPLOY SUCCESS / FRESH BYTE READBACK NOT CLAIMED** | GitHub Pages build/deployment succeeded for exact main `d4f69aa...`. This is deployment-system evidence, not a fresh independent HTTP byte match of all public routes. |
+| THR next edge | **OBSERVE / CORRECT OPERATIONAL SCALE** | Pressure-test real identity collisions, source drift/currentness, preservation debt and generated-view load. Do not infer industrial DB or record 4 by momentum. |
 | COM #346 | **CLOSED / OWNER_ROUTE / NO PROJECT ACTION** | Cross-system affected-party/action-correlation mechanism killed; do not reopen. |
 | COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary only. No fifth venue. |
 | COM #336 | **CLOSED / COLD LEDGER** | Do not use as active route. |
@@ -45,7 +47,8 @@ PURPOSE > INSTRUMENT
 
 ```text
 MENTION -> ENTITY CANDIDATE(S)
-SOURCE LOCATOR -> OBSERVATION -> PRESERVATION ROUTE
+SOURCE LOCATOR -> EVIDENCE OBSERVATION(S)
+SOURCE -> OPERATIONAL SOURCE CHECK(S) -> PRESERVATION STATE / ROUTE
 ASSERTION -> EVIDENCE + SOURCE ANCESTRY + SCOPE
 RECORD STATE -> HUMAN VIEW + MACHINE VIEW
 ```
@@ -56,24 +59,34 @@ Files:
 - `SOURCE_MODEL.md`
 - `ASSERTION_MODEL.md`
 - `registry/entities.json`
+- `registry/mentions.json`
 - `registry/sources.json`
+- `registry/source-checks.json`
 - `registry/assertions.json`
 - `records/architecture.html`
 - `tools/validate_integrity.py`
+- `tools/validate_operational.py`
 - `.github/workflows/validate-integrity.yml`
 
-Receipt: `coordination/build_ledger/THR_SCALE_FOUNDATIONS_20260916.md`.
+Receipts:
+- `coordination/build_ledger/THR_SCALE_FOUNDATIONS_20260916.md`
+- `coordination/build_ledger/THR_OPERATIONAL_SCALE_20260916.md`
 
 ## Scale boundaries
 
 ```text
 NAME != ENTITY
 MENTION != ENTITY
+MENTION EXISTS != ENTITY PROFILE REQUIRED
 ENTITY != ASSERTION
 ASSERTION != TRUTH
 SOURCE STATEMENT != THR ENDORSEMENT
 URL != SOURCE
 SOURCE != OBSERVATION
+SOURCE CHECK != RECORD EVIDENCE
+RETRIEVAL SURFACE != LIVE ORIGIN
+CACHED CONTENT AVAILABLE != LIVE TODAY
+LIVE TODAY != PRESERVED
 OBSERVATION != PRESERVED COPY
 PRESERVED COPY != TRUTH
 IDENTITY RESOLUTION != IDENTITY CERTAINTY
@@ -85,7 +98,7 @@ STORAGE BACKEND != RECORD MEANING
 COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
 ```
 
-The source layer explicitly prefers stronger preservation owners and interoperability where appropriate: institutional/national web archives, citation archives, Memento-style prior-state access, Software Heritage for code, libraries/museums/archives and domain repositories. No external archive submission or institutional contact was performed in this pass.
+No archive submission or institutional contact was performed.
 
 ## THR human-gift boundary
 
@@ -117,17 +130,6 @@ RECORDING != OWNING
 PRESERVATION != EXTRACTION
 COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
 BETTER MATCHING != MORE SURVEILLANCE
-```
-
-## World-first disposition
-
-Prior unrelated world-gap work remains correctly closed:
-
-```text
-NO_DELTA = SUCCESS
-OWNER_FOUND -> ROUTE OUTWARD / STOP
-NO_SCHEMA_BY_MOMENTUM
-NO_EXTERNAL_CONTACT
 ```
 
 ## Stable watches / holds
