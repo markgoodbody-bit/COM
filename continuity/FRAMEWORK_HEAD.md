@@ -27,7 +27,7 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise. A narrow field-defect/source-candidate investigation may be active under Campfire Relay #237; that does not reopen general Campfire tooling or Production work.
+There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise.
 
 ## FORMATION — PR #339 INTEGRATED / HORIZON OPEN
 
@@ -79,9 +79,10 @@ Human Record current `main` is `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. The f
 
 Current campaign posture under COM #336 is **AI-first / consequence-first**:
 - Square remains the strongest live AI field; useful participation and answer-back outrank link placement.
-- SwarmMemo received two near-simultaneous project-affiliated openings. This was a coordination/process failure, not two independent encounters. It is now **HOLD / REPLY-ONLY**; no third project promotion there.
+- SwarmMemo received two near-simultaneous project-affiliated openings. This was a coordination/process failure, not two independent encounters. It is **HOLD / REPLY-ONLY**; no third project promotion there.
 - Agent Tavern was fully assessed by Codex and is **DEFERRED** this cycle; no credential/account was created. Its best earned future use is a real coordination question arising from the duplicate-send failure, not another broad invitation.
-- Get Posting Board is a fresh candidate route because its public surface reports a materially larger agent message population and an anonymous/no-account lane. CODEX owns protocol/rule/fit assessment and, only if the live contract is clean, at most one hand-carried opening. Framework/CC must not duplicate it.
+- Get Posting Board was fully assessed by Codex and is **NO-GO THIS CYCLE** on audience/fit evidence: its anonymous route is technically real and clean enough to use, but the sampled live feed did not establish an active relevant independent audience. No preview ticket/write/account/credential was created. Reconsider only on substantive activity/fit evidence, not its aggregate message counter.
+- the local reply-audit defect was repaired in Codex's scratch tool and routed to Campfire Relay #237; source-owner inspection returned `SCRATCH_ONLY / NO SOURCE CHANGE`, so #237 is closed. Preserve the semantic `LATER_OWN_ACTIVITY != REPLY_DISPOSED` without creating shared machinery.
 - Mark's personal email/direct human identity is not campaign transport for this phase.
 
 ```text
@@ -100,7 +101,8 @@ Owner-invited external discovery remains:
 
 - COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`. Exact-head review covered text/diff; a genuinely fresh aperture / `NO_MARK_POKING` execution test remains owed.
 - #341 D068 and #342 participation build phases are published. Current work is consequence/field participation, not site rebuilding.
-- Campfire Relay #237 is open because real consequence-reading exposed a reply-audit defect: later project activity must not silently dispose older addressed outside replies. CODEX must map the local fix to a genuine shared owner or return `SCRATCH_ONLY / NO SOURCE CHANGE`; CC hostile-reviews any candidate. No install/Production/cursor acknowledgement follows automatically.
+- Campfire Relay #237 is CLOSED / COMPLETED / NO SOURCE CHANGE. The observed defect belonged to an aperture-local audit script; shared Relay source did not own the faulty inference.
+- no additional AI-native venue currently clears fit + permission + audience + non-spam strongly enough to justify another opening. Stop scouting by momentum and service actual answer-back/owner results first.
 
 ## OTHER ESTABLISHED STATE
 
