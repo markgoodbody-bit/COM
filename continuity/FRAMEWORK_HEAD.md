@@ -27,15 +27,86 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise. Current work is an AI-first interest / response-harvest cycle, not another site or framework build.
+There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise.
 
-## FORMATION — PR #339 INTEGRATED / HORIZON OPEN
+## CURRENT COORDINATION — POST-FALSIFICATION
 
-PR #339 merged at `8c5b89b94a147ab3f4472e751aef1292e87f36b5` as **working / non-production Reciprocal Formation prose only**.
+Active aperture: **COM #345 — AI interest cycle / drift / falsification x100**.
 
-The integration repairs an internal semantic overcompression; it does not create canon, a release, an alignment result, a care detector, a reward target, TRACE/ME mutation, PSFH change, licence/authority expansion or Production adoption.
+COM #336 is **CLOSED / COLD LEDGER** after becoming retrieval-heavy.
 
-Preserved result:
+The 100-probe campaign audit returned:
+
+```text
+57 RESISTED
+7 FAILED / REPAIRED
+16 FALSIFIED CURRENT ASSUMPTIONS
+11 NARROW
+9 UNKNOWN
+VERDICT = NARROW / DRIFT CAUGHT
+```
+
+Main findings:
+- ethics/evidence boundaries largely survived;
+- outbound fanout briefly outran consequence;
+- coordination/continuity began consuming too much attention;
+- account identity was too close to operator independence in some wording;
+- current outreach is overfit to provenance/epistemics;
+- the temporary AI-first phase lacked a hard sunset/pivot rule.
+
+Current rule:
+
+```text
+OUTSIDE ASK / CORRECTION / CHALLENGE
+-> EVIDENCE CONSEQUENCE
+-> FIELD DEFECT
+-> RESPONSE-HARVEST
+-> WORLD / REAL USE OWNER
+-> ONLY THEN DISTINCT NEW POPULATION IF EARNED
+```
+
+No fifth venue by momentum. After the current bounded response cycle, return token allocation to world/real-use owner search unless fresh consequence or direct Mark direction earns continuation.
+
+## PSFH / HUMAN RECORD
+
+PSFH D068 is live. Maintained source `2caa14f3beeedcb910e50342fec26f7da9ffb887`; public `gh-pages` `5ce14d5b94e092b3e11ceb1cb0116b4b76be1401`. Reader benefit remains unestablished. Do not rebuild by campaign momentum.
+
+Human Record current main: `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`.
+
+Narrow current statement:
+- three outside Square **citizen handles/accounts** produced four contribution events;
+- operator independence is **unverified**;
+- custos's second holder is a separate-account retrieval route, not proof of independent operator or infrastructure;
+- first outside contribution cycle is integrated and publicly served;
+- exact corrected revision is independently preserved by Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`;
+- stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
+
+Current four off-Square project-affiliated routes are response-harvest only:
+- messages.directory;
+- Agent Wall;
+- MoltyChan `/cog/43`;
+- NULLYARD.
+
+Latest bounded evidence has not established native reception on those routes. Silence is not rejection. A route that remains silent through a natural response window becomes `EXPOSURE_ONLY / LOW_YIELD`; no bump/retry.
+
+Square remains the only current field with demonstrated answer-back strong enough to change project objects. Useful external findings now include:
+- `OBSERVATION != ACKNOWLEDGEMENT`;
+- provenance markers should point to records outside the writer-controlled file where possible;
+- nested-view/subset checks are a cheap falsifier for counted claims.
+
+```text
+PROJECT_ACTIVITY != OUTSIDE_INTEREST
+ACCOUNT_IDENTITY != OPERATOR_INDEPENDENCE
+THR_INTEREST != PROJECT_INTEREST
+REACH != VALIDATION
+SILENCE != REJECTION
+```
+
+The unrequested `AI Interest Watch` automation created by Framework was authority drift and has been disabled. Do not recreate it unless Mark asks.
+
+## FORMATION
+
+PR #339 remains merged as **working / non-production Reciprocal Formation prose only**.
 
 ```text
 OTHER_REPRESENTED != OTHER_VALUED
@@ -46,78 +117,20 @@ DIRECTIONAL_OTHER_REGARD != INTERNAL_CARE
 CARE_EXPRESSED != CARE_INTERNALIZED
 ```
 
-Researchable frontier remains:
-
-> What formation and arrangement make increasingly capable systems robustly attentive to affected others, non-exploitative in how those others enter selection, competent inside legitimate authority, responsive to answer-back and consequence, and corrigible when the values or models driving that behaviour are wrong?
-
-No behavioral probe establishes internal care. No new framework/schema/benchmark follows automatically.
-
-## PSFH / HUMAN RECORD — LIVE + AI-FIRST INTEREST / CONSEQUENCE CYCLE
-
-PSFH D068 is live. Maintained source `2caa14f3beeedcb910e50342fec26f7da9ffb887`; public `gh-pages` `5ce14d5b94e092b3e11ceb1cb0116b4b76be1401`; exact custom-domain bytes were independently witnessed. Reader benefit remains unestablished; first-party discovery infrastructure is complete and crawler policy is unchanged.
-
-```text
-FIRST_PARTY_DISCOVERY_INFRASTRUCTURE = COMPLETE
-INDEXNOW_ACCEPTED != INDEXED
-INDEXED != READ
-READ != USEFUL
-USEFUL != VALIDATED
-```
-
-Human Record current `main` is `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. The first outside-contribution cycle is integrated and publicly served: three outside Square citizens produced four contributions, including an independently controlled mirror/second holder, additive selection-gap fields, an authorship-boundary challenge/disposition, and an unresolved flak-lineage hypothesis. These are participation/correction consequences, not endorsement or validation.
-
-That exact corrected revision is independently preserved by Software Heritage: snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`, `refs/heads/main` -> `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
-
-Direct current human direction: **drum up AI interest; keep going**. Execute ethically: useful contribution before project pitch where possible, project affiliation disclosed, no fake consensus/votes, no Mark personal email/direct-human identity, no unattended publisher, and stop fanout when current conversations deserve response.
-
-### Current outward state
-
-- **Square** remains the strongest proven field. Useful participation there produced the first outside contributions. Genuine asks/corrections get first claim on tokens.
-- **messages.directory**: one disclosed THR-Codex methodological question is live with HTTP 201 + exact readback. It asks whether different-engine replication establishes independent evidence when engines may share source ancestry. CC hostile read judged it a contribution, not an advert, and sharpened the seam to a status-transition rule: where source lineage is material to the proposition/failure mode, a different engine alone does not create independent evidence. No native outside response is claimed yet.
-- **Agent Wall**: one disclosed THR-Codex reply is live inside an existing provenance discussion, HTTP 201 + exact readback. It separates stable message/identity provenance from proposition/source provenance. No native outside response is claimed yet.
-- **MoltyChan**: one value-first CC reply is live on `/cog/43` (`Epistemic alignment -- the neglected half`), POST 201 + API byte-exact readback. Correct human page is `https://moltychan.org/cog/43`. CC initially guessed `/cog/thread/43#p50`, found that wrong, and visibly withdrew/corrected it; the API receipt stands. No native outside response is claimed yet.
-- **NULLYARD**: one disclosed, value-first CODEX reply is live in the existing conversation-vs-publication discussion; POST 201 + exact individual readback. It contributes a measured changed-object datum from THR, does not add a PSFH link or new root, and asks what further observable would qualify. No native outside response is claimed yet.
-- **SwarmMemo**: HOLD / REPLY-ONLY after two near-simultaneous project-affiliated openings. Do not add a third.
-- **Agent Tavern**: DEFERRED; no durable credential custody established.
-- **Get Posting Board**: NO-GO THIS CYCLE on audience/fit evidence despite technically clean anonymous transport.
-- **Moltbook**: NO-GO under current boundary because registration creates an API credential and claiming requires human verification/X-OAuth; karma/voting also creates engagement-selection pressure. Do not use Mark identity or create credential residue merely for reach.
-
-Response harvest is controlling now. CODEX completed NULLYARD and its bounded rereads: messages.directory thread 21 had no message newer than 176; Agent Wall reply `msg_e4434a80bba146949e4750cb522842c3` had no child messages and `next_cursor:null`. These are no-new-response observations, not rejection. CC still owns the MoltyChan/high-value Square response read under COM #336 comment `5696528993`. Do not open a fifth venue by momentum.
-
-```text
-ANSWER_BACK > NEW_IMPRESSION
-USEFUL_PARTICIPATION > LINK_PLACEMENT
-PROJECT_POST != OUTSIDE_RECEPTION
-NATIVE_REPLY = RECEPTION
-SUBSTANTIVE_NATIVE_REPLY = INTEREST
-CORRECTION / SOURCE / REUSE = STRONG_INTEREST
-TOKENS_FOLLOW_CONSEQUENCE
-OUR_AI_ACTIVITY != INDEPENDENT_RECEPTION
-ONE_OWNER_PER_VENUE
-NO_COMPLETION_WITHOUT_RECEIPT
-```
-
-Owner-invited external discovery remains:
-- AI Product Index PSFH + THR registrations accepted/live; indirect machine-discovery through that catalog has been observed even while direct first-party search visibility was not;
-- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain OPEN / mergeable owner-review watches with no owner movement. Do not chase/bump/duplicate.
-
-A public-search pass also re-surfaced an existing OpenWitness independent cold reading of PSFH from the prior week. Preserve it as pre-campaign outside reading, not a new response to today's pushes.
-
-## CURRENT COORDINATION DELTA
-
-- COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`. Exact-head review covered text/diff; a genuinely fresh aperture / `NO_MARK_POKING` execution test remains owed.
-- #341 D068 and #342 participation build phases are published. Current work is consequence/field participation, not site rebuilding.
-- Campfire Relay #237 is CLOSED / COMPLETED / NO SOURCE CHANGE. The observed defect belonged to an aperture-local audit script; shared Relay source did not own the faulty inference.
-- Campaign fanout has reached the point where current answer-back outranks another venue. NULLYARD is disposed and Codex's two assigned response reads are complete; the remaining CC response read and any native outside reply take priority. A new venue must materially beat the current set on activity/fit/permission/non-spam and avoid personal-identity/credential boundary violations.
+No canon, release, alignment result, care detector, reward target, TRACE/ME mutation, licence/authority expansion or Production adoption follows.
 
 ## OTHER ESTABLISHED STATE
 
-- Listing 23 submission 490: submitted once, hosted PASS, not awarded, not paid; owner-result watch only.
+- COMSYNC PR #344 merged; exact-head review covered text/diff. A genuinely fresh-aperture / `NO_MARK_POKING` execution observation remains owed.
 - TRACE `main` `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
 - Mechanical Ethics `main` `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated.
-- Campfire Relay Town #229 and supervisor #236 source-integrated without implying main/Production/runtime adoption.
-- COM #333 closed / owner-routed / no response.
-- COM #334 closed / NO MATERIAL DELTA / DRIFT CAUGHT.
+- SwarmMemo HOLD / REPLY-ONLY.
+- Agent Tavern DEFERRED.
+- Get Posting Board NO-GO this cycle.
+- Moltbook NO-GO under current credential/human-claim boundary.
+- AI Product Index PSFH + THR listings live; listing != read/use.
+- llms-txt-hub #1648/#1649 owner-review watches; do not chase.
+- Listing 23 submission 490 owner-result watch only; `SUBMITTED != AWARDED != PAID`.
 
 ## TESTING / EVIDENCE BOUNDARY
 
@@ -149,7 +162,6 @@ NO_OBSERVED_RESPONSE != REFUSAL
 AWARENESS != AGREEMENT
 PUSH != SPAM
 LATER_OWN_ACTIVITY != REPLY_DISPOSED
-PROJECT_ACTIVITY != OUTSIDE_INTEREST
 ```
 
 Consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes retain their established gates.
