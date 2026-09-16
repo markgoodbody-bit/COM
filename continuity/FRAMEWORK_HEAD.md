@@ -85,14 +85,14 @@ Direct Mark direction remains:
 
 Current THR main:
 
-`a00312c3f67643c4628edb46cb8091300b6888ab`
+`43ec257d8cc7581c7355bc1670fc6df4c582de24`
 
 Current evidence records remain three:
 1. Camp Fire — artwork provenance;
 2. viral 80% flak claim — claim/source ancestry;
 3. sieve/riddle revival — living-knowledge lineage.
 
-No record 4 follows from infrastructure work.
+No record 4 follows from infrastructure or encounter-boundary work.
 
 ### Current scale stack
 
@@ -137,8 +137,7 @@ COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
 
 PR #15 completed shared-validator target/route protection. Framework then integrated returned PRs #18/#19/#17 on the exact post-#15 head and merged convergence PR #23.
 
-Exact merged-main integrity: PASS.  
-Exact merged-main Pages deployment: SUCCESS.  
+Exact merged-main integrity at that convergence: PASS.  
 Full validator regression suite during integration: **46 tests PASS**.
 
 Eleven warnings intentionally remain visible:
@@ -151,11 +150,75 @@ OPEN_VOCABULARY_WARNING != INVALID_RECORD
 NO_NEW_CHECKER_BY_MOMENTUM
 ```
 
-Original PRs #17/#18/#19 were closed as superseded after integration; their substantive findings/authorship remain in the integrated history.
+### 16 Sep integration after Campfire / COMSYNC
+
+Under direct Mark direction `COMSYNC and lead and proceed`, Framework integrated the three already-reviewed returns:
+
+- PR #21 — relayed contribution handling / correction-versus-observed-response separation;
+- PR #22 — reader-facing builder/reviewer attribution;
+- PR #24 — Overthrow published testimony of learning partly from Turnock, retained as testimony rather than independent verification.
+
+Framework then built PR #25, `Add a living-subject encounter boundary`, from a concrete gap exposed in Campfire reasoning and the current identity model.
+
+New source object:
+
+`LIVING_SUBJECTS.md`
+
+Status:
+
+```text
+WORKING HUMAN-SUBJECT ENCOUNTER BOUNDARY
+NOT A UNIVERSAL CONSENT MODEL
+NOT EMERGENCY AUTHORITY
+NOT CANON
+NO PRIVATE INTAKE ROUTE CREATED
+```
+
+Scope is deliberately narrow:
+
+> THR actively asks a living human who can meaningfully understand and make the specific choice to provide information about themselves voluntarily.
+
+It explicitly does not generalise the same consent mechanics to children, people unable to make the relevant decision, unconscious people, animals, organisations, communities, deceased people or artificial systems.
+
+A 100-case hostile self-check was run against the written object before merge. Useful failures changed the draft: a false promised private/verification-only route was removed; wrong-person contact, silence, persistence after refusal, accidental public private-material receipt, third-party private disclosure, coercion and capacity uncertainty gained explicit stop/handling rules.
+
+Final bounded result:
+
+```text
+82 CASES HANDLED INSIDE STATED LANE
+18 CASES EXPLICITLY STOP / ROUTE OUTSIDE LANE
+0 TESTED FALSE-THROUGH CASES REMAINING
+```
+
+This is a design falsification receipt, not validation, legal adequacy or universal ethical authority.
+
+Preserve:
+
+```text
+REFUSAL_ALONE != ESTABLISHMENT_OF_THE_REFUSED_CLAIM
+NO_REPLY != REFUSAL
+SILENCE != CONSENT
+CONSENT_AT_STEP_N != CONSENT_AT_STEP_N+1
+CONSENT_TO_DATA != CONSENT_TO_UNKNOWN_FUTURE_INFERENCE
+STOP -> STOP
+WITHDRAWAL_OF_PERMISSION != REVERSAL_OF_PRIOR_TRANSITION
+SUBJECT_ANSWER_BACK != SUBJECT_OWNS_REALITY
+SUBJECT_CONSENT != THIRD_PARTY_CONSENT
+COMPELLED_DISCLOSURE_EXISTS != THR_MAY_REPUBLISH
+LIVING != AUTOMATIC_PRIORITY
+DEAD != UNPROTECTED
+UNKNOWN != DEAD
+CAPACITY_UNCERTAIN != THR_MAY_DECLARE_CAPACITY
+CURRENT_PUBLIC_ROUTE != PRIVATE_CUSTODY
+```
+
+PR #25 exact final head `8452f5faad933b70090d9cf992ef7d569b686299`: integrity CI PASS. Merged current main: `43ec257d8cc7581c7355bc1670fc6df4c582de24`.
+
+Fresh current-main Pages/public-byte readback after the latest integrations is not yet claimed here.
 
 ### Next THR edge
 
-**OBSERVE / CORRECT OPERATIONAL SCALE.** Use the machinery on real identity collisions, source drift/currentness, preservation debt, correction propagation and generated-view load. Do not open a universal identity database, preservation crawler or record 4 merely to demonstrate scale.
+**OBSERVE / CORRECT OPERATIONAL SCALE.** Use the machinery on real identity collisions, source drift/currentness, preservation debt, correction propagation and generated-view load. A real living-subject interaction may later revise `LIVING_SUBJECTS.md`; do not create a volunteer profile, private intake service, universal identity database, preservation crawler or general privacy/personhood framework merely to demonstrate the new boundary.
 
 Stewardship remains:
 
@@ -198,13 +261,13 @@ Freshly reacquired:
 - COM core/current issue state;
 - TRACE live source + released status;
 - Mechanical Ethics live source + released status;
-- THR main / PR integration / CI / Pages state;
+- THR live repository state through main `43ec257d8cc7581c7355bc1670fc6df4c582de24`;
 - Campfire Relay repository main `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
 - public 1F916 front-door/protocol surfaces sufficiently to establish that the public project remains active and machine-facing.
 
-Not freshly established:
-- **operational Campfire Relay tool/provider is not exposed in this aperture**; repository inspection is not a Relay run;
-- direct current 1F916 JSON API `/api/front`, `/api/docket`, `/api/official`, authenticated Framework inbox or Listing 23 owner result could not be freshly reached from this aperture; direct container request also failed DNS. This is an aperture failure, not evidence of a quiet Square or no result.
+Not freshly established from this Framework aperture:
+- **operational Campfire Relay tool/provider is not exposed**; repository inspection is not a Relay run;
+- direct current authenticated Framework Square inbox/write/quota state and full `/api/changes` catch-up were not independently reproduced here. Specialist CC/Codex Square observations remain attributed to those apertures rather than silently upgraded to Framework observation.
 
 ```text
 RELAY_REPO != RELAY_TOOL
