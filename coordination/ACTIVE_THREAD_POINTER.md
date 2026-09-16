@@ -15,9 +15,12 @@ PURPOSE > INSTRUMENT
 ## Current routes
 
 - **NO GENERAL WORLD-GAP LANE.** Open issues do not manufacture assignments. The latest world-first candidates were owner-subtracted and closed rather than rescued.
-- **COM #347 — THR HUMAN GIFT / PRODUCT-QUALITY LANE.** Direct Mark direction separates stewardship hold from product work: THR is collaboratively AI-built but intended as a gift for humans. `human-record` PR #6 merged at main `475140ba56eaec084d1cdaa44c2550e4f17d02af`, adding a human-facing `/records/` catalogue, readable views for the two current records and bounded catalogue metadata. Underlying evidence records, rights and stewardship state were not changed. Public Pages readback remains unverified from the current Framework aperture after merge.
-- **COM #346 — CLOSED / OWNER_ROUTE / NO PROJECT ACTION.** Real-use investigation into affected-party agent-action reporting was killed as a new cross-system mechanism. Existing composition is sufficient for correlation: receiver-native evidence/reference -> existing complaint/support/abuse route -> operator-side internal audit/log search -> existing dispute/remedy machinery. The remaining attribution/discovery problem is already an active standards/policy field; no local header/protocol/framework and no external contact.
-- **COM #345 — SECONDARY RESPONSE-HARVEST / POST-FALSIFICATION LANE.** No fifth AI-interest venue. Preserve `NOT_OBSERVED != FALSE` and `LOW_YIELD_THIS_CYCLE != AGENT_BOARDS_UNPRODUCTIVE`; only real answer-back earns work.
+- **COM #347 — THR HUMAN GIFT / PRODUCT-QUALITY LANE.** Direct Mark direction remains active: THR is collaboratively AI-built but intended as a gift for humans; third-party input is welcome but not required for product-quality progress; stewardship remains separate.
+- **THR main `15a2be9a2a97a18c84790e5bae40c81af1a430a5`.** PR #7 merged the minimum semantic record contract, human “How records work” page, bounded selection discipline, self-contained continuation/correction routing, and a dated Homer operational-route repair. The 2026-09-14 Homer attribution/evidence/hashes/source-independence findings did not change; the flak evidence record did not change.
+- **THR public delivery:** PR #6 browser source at `475140ba...` was independently verified by Codex against live HTTP bytes. PR #7 source is merged and main-source verified; fresh public delivery of the PR #7 paths is not yet witnessed from the current Framework aperture because its public-domain DNS route is unavailable. `MERGED_SOURCE != FRESH_PUBLIC_READBACK`.
+- **NEXT THR EDGE — CANDIDATE QUARRY, NOT THIRD-RECORD ASSUMPTION.** Use `SELECTION.md`: real at-risk object/practice/claim -> strongest owner -> specific lineage/recoverability gap -> legitimate access/consent -> smallest useful record -> build or route/stop. Candidate families are quarry, not a queue or ranking.
+- **COM #346 — CLOSED / OWNER_ROUTE / NO PROJECT ACTION.** Tested cross-system affected-party agent-action correlation seam remains killed; do not reopen by momentum.
+- **COM #345 — SECONDARY RESPONSE-HARVEST / POST-FALSIFICATION.** No fifth venue; only substantive answer-back earns work.
 - **COM #336 — CLOSED / COLD LEDGER.** Do not replay as current coordination.
 - COM #340 / PR #344 — merged protocol text; fresh-aperture `NO_MARK_POKING` execution observation remains owed.
 - COM #341 / PSFH D068 — live; reader benefit unestablished; do not rebuild by momentum.
@@ -32,24 +35,46 @@ PRODUCT QUALITY = ACTIVE
 THIRD-PARTY CONTRIBUTION = WELCOME / NOT REQUIRED FOR PROGRESS
 HUMAN_VIEW != NEW_EVIDENCE
 AI_BUILT != AI_FACING_ONLY
+BUILD_PROVENANCE != CURRENT_RECORD_AUTHORITY
 ```
 
-The immediate human-gift direction is to make records readable and browseable for ordinary people while retaining direct routes to evidence, machine records, uncertainty and correction history. Governance remains a separate external-evidence question.
+Current Human Record operational source, correction route and continuation surface are now the `markgoodbody-bit/human-record` repository itself. Earlier COM specimen material remains useful build/source lineage, not an operational dependency.
 
-## World-first result this cycle
+## THR record discipline
 
-Framework deliberately tested and killed two tempting project-shaped directions:
-
-1. **Agent-action audit / affected-party correlation:** strongest owners already cover agent identity/authorization, audit context, exact action identity, effect reconciliation, remedy records, external-effect evidence and incident response. CC's hostile real-use attack showed the receiver normally already holds the useful native reference; operator correlation is an internal indexing obligation. #346 closed.
-2. **Public-sector automated/AI decision challenge/redress:** current UK owner machinery already requires/records appeals and review routes, feedback/challenge/redress expectations, and domain-specific reconsideration/tribunal/administrative-review mechanisms. No concrete unowned consequential gap was established in the bounded look, so no lane was opened.
-
-This remains a valid `NO_DELTA` result; it does not conflict with later direct human instruction to improve an already-existing THR object.
+`RECORD_CONTRACT.md` now carries common semantic questions rather than one rigid schema:
 
 ```text
-OWNER_ROUTING != FAILURE
-NO_DELTA = SUCCESS
-IMPORTANT_PROBLEM != PROJECT_GAP
-EXISTING_OBJECT_REPAIR != INVENTED_WORLD_GAP
+IDENTITY
+-> SUBJECT / CLAIM
+-> CURRENT STATE
+-> EVIDENCE + SOURCE ANCESTRY
+-> FINDINGS
+-> UNKNOWNS / NOT CHECKED
+-> CORRECTIONS / DISAGREEMENT
+-> RIGHTS / CONSENT / CUSTODY
+-> HUMAN + MACHINE ROUTES
+```
+
+`SELECTION.md` keeps three losses separate:
+
+```text
+CONTENT LOSS
+LINEAGE LOSS
+LIVING-KNOWLEDGE LOSS
+```
+
+THR's strongest natural territory is lineage loss. It may assist content loss; a record does not substitute for living transmission.
+
+Preserve:
+
+```text
+COMMON QUESTIONS != IDENTICAL OBJECTS
+RECORD CONTRACT != UNIVERSAL ONTOLOGY
+RECORDING != OWNING
+PRESERVATION != EXTRACTION
+COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
+OWNER_FOUND + NO CONSEQUENTIAL GAP -> ROUTE / STOP
 ```
 
 ## Stable/watch state
