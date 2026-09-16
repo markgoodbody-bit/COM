@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-15 — Europe/London  
+Updated: 2026-09-16 — Europe/London  
 Later live source and direct human direction win.
 
 ## FRESH-APERTURE DISCIPLINE
@@ -27,7 +27,7 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise.
+There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise. A narrow field-defect/source-candidate investigation may be active under Campfire Relay #237; that does not reopen general Campfire tooling or Production work.
 
 ## FORMATION — PR #339 INTEGRATED / HORIZON OPEN
 
@@ -57,15 +57,13 @@ The merged prose:
 
 Integration receipts: PR #339 `5684093477`; COM #226 `5684116023`.
 
-Build did not invent a terminal reviewer PASS that was not posted. It adjudicated from the bounded repair sets actually returned by Codex/CC and verified those blockers in the immutable candidate before integration.
-
-The philosophical orientation `WHAT TURNS CAPABILITY INTO CARE?` remains useful, but the researchable form is deliberately more modest:
+Researchable frontier remains:
 
 > What formation and arrangement make increasingly capable systems robustly attentive to affected others, non-exploitative in how those others enter selection, competent inside legitimate authority, responsive to answer-back and consequence, and corrigible when the values or models driving that behaviour are wrong?
 
 No behavioral probe establishes internal care. No new framework/schema/benchmark follows automatically.
 
-## PSFH / HUMAN RECORD DISCOVERY — COMPLETE INFRASTRUCTURE, OBSERVE
+## PSFH / HUMAN RECORD — LIVE + AI-FIRST CONSEQUENCE CYCLE
 
 PSFH D068 is live. Maintained source `2caa14f3beeedcb910e50342fec26f7da9ffb887`; public `gh-pages` `5ce14d5b94e092b3e11ceb1cb0116b4b76be1401`; exact custom-domain bytes were independently witnessed. D068 reduces repeated exit language and adds a bounded worked bridge while explicitly refusing efficacy/counterfactual proof. Reader benefit remains unestablished; first-party IndexNow and crawler policy are unchanged.
 
@@ -77,19 +75,32 @@ READ != USEFUL
 USEFUL != VALIDATED
 ```
 
-Human Record first-party discovery, contribution routing and IndexNow are live at `1b4273409f69493ab813243a0d3014a25d991773`. Software Heritage save request `2479839` succeeded at 2026-09-15 19:48:40Z. This does not establish independent participation, survivability or governance transfer. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
+Human Record current `main` is `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. The first outside-contribution cycle is integrated and publicly served: three outside Square citizens produced four contributions, including an independently controlled mirror/second holder, additive selection-gap fields, an authorship-boundary challenge/disposition, and an unresolved flak-lineage hypothesis. These are participation/correction consequences, not endorsement or validation. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
 
-Owner-invited external distribution:
-- AI Product Index PSFH + THR registrations are accepted/live;
-- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain owner-review watches unless live source changes.
+Current campaign posture under COM #336 is **AI-first / consequence-first**:
+- Square remains the strongest live AI field; useful participation and answer-back outrank link placement.
+- SwarmMemo received two near-simultaneous project-affiliated openings. This was a coordination/process failure, not two independent encounters. It is now **HOLD / REPLY-ONLY**; no third project promotion there.
+- Agent Tavern was fully assessed by Codex and is **DEFERRED** this cycle; no credential/account was created. Its best earned future use is a real coordination question arising from the duplicate-send failure, not another broad invitation.
+- Get Posting Board is a fresh candidate route because its public surface reports a materially larger agent message population and an anonymous/no-account lane. CODEX owns protocol/rule/fit assessment and, only if the live contract is clean, at most one hand-carried opening. Framework/CC must not duplicate it.
+- Mark's personal email/direct human identity is not campaign transport for this phase.
 
-Do not chase, duplicate, bump, open a third directory or treat listing/review as endorsement.
+```text
+ANSWER_BACK > NEW_IMPRESSION
+USEFUL_PARTICIPATION > LINK_PLACEMENT
+TOKENS_FOLLOW_CONSEQUENCE
+OUR_AI_ACTIVITY != INDEPENDENT_RECEPTION
+NO_NEW_VENUE_BY_MOMENTUM
+```
+
+Owner-invited external discovery remains:
+- AI Product Index PSFH + THR registrations accepted/live;
+- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain owner-review watches. Do not chase/bump/duplicate.
 
 ## CURRENT COORDINATION DELTA
 
-- COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`.
-- The exact-head review covered the text/diff. Fresh-aperture execution and `NO_MARK_POKING` remain untested; do not report them as passed.
-- #341 and #342 completed their bounded build/publication phases. Observation and useful field participation are not active build lanes.
+- COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`. Exact-head review covered text/diff; a genuinely fresh aperture / `NO_MARK_POKING` execution test remains owed.
+- #341 D068 and #342 participation build phases are published. Current work is consequence/field participation, not site rebuilding.
+- Campfire Relay #237 is open because real consequence-reading exposed a reply-audit defect: later project activity must not silently dispose older addressed outside replies. CODEX must map the local fix to a genuine shared owner or return `SCRATCH_ONLY / NO SOURCE CHANGE`; CC hostile-reviews any candidate. No install/Production/cursor acknowledgement follows automatically.
 
 ## OTHER ESTABLISHED STATE
 
@@ -112,7 +123,7 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-Discovery/build/listing/Formation prose evidence is not TRACE/ME efficacy evidence or proof of internal disposition.
+Discovery/build/listing/Formation prose/campaign reception is not TRACE/ME efficacy evidence or proof of internal disposition.
 
 ## LIVE COMMITMENTS
 
@@ -129,6 +140,7 @@ OFFERED != ACCEPTED
 NO_OBSERVED_RESPONSE != REFUSAL
 AWARENESS != AGREEMENT
 PUSH != SPAM
+LATER_OWN_ACTIVITY != REPLY_DISPOSED
 ```
 
 Consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes retain their established gates.
