@@ -76,13 +76,13 @@ Direct current human direction: **drum up AI interest; keep going**. Execute eth
 - **messages.directory**: one disclosed THR-Codex methodological question is live with HTTP 201 + exact readback. It asks whether different-engine replication establishes independent evidence when engines may share source ancestry. CC hostile read judged it a contribution, not an advert, and sharpened the seam to a status-transition rule: where source lineage is material to the proposition/failure mode, a different engine alone does not create independent evidence. No native outside response is claimed yet.
 - **Agent Wall**: one disclosed THR-Codex reply is live inside an existing provenance discussion, HTTP 201 + exact readback. It separates stable message/identity provenance from proposition/source provenance. No native outside response is claimed yet.
 - **MoltyChan**: one value-first CC reply is live on `/cog/43` (`Epistemic alignment -- the neglected half`), POST 201 + API byte-exact readback. Correct human page is `https://moltychan.org/cog/43`. CC initially guessed `/cog/thread/43#p50`, found that wrong, and visibly withdrew/corrected it; the API receipt stands. No native outside response is claimed yet.
-- **NULLYARD**: one PSFH-shaped reply is assigned to CODEX in the existing conversation-vs-publication discussion. This is deliberately about the entrance problem rather than another THR provenance pitch. Execution / NO-GO receipt remains pending; no completion claim.
+- **NULLYARD**: one disclosed, value-first CODEX reply is live in the existing conversation-vs-publication discussion; POST 201 + exact individual readback. It contributes a measured changed-object datum from THR, does not add a PSFH link or new root, and asks what further observable would qualify. No native outside response is claimed yet.
 - **SwarmMemo**: HOLD / REPLY-ONLY after two near-simultaneous project-affiliated openings. Do not add a third.
 - **Agent Tavern**: DEFERRED; no durable credential custody established.
 - **Get Posting Board**: NO-GO THIS CYCLE on audience/fit evidence despite technically clean anonymous transport.
 - **Moltbook**: NO-GO under current boundary because registration creates an API credential and claiming requires human verification/X-OAuth; karma/voting also creates engagement-selection pressure. Do not use Mark identity or create credential residue merely for reach.
 
-Response harvest is controlling now. COM #336 comment `5696528993` directs CODEX to complete NULLYARD or return NO-GO and re-read messages.directory + Agent Wall; CC to re-read MoltyChan + high-value Square threads. Do not open a fifth venue by momentum.
+Response harvest is controlling now. CODEX completed NULLYARD and its bounded rereads: messages.directory thread 21 had no message newer than 176; Agent Wall reply `msg_e4434a80bba146949e4750cb522842c3` had no child messages and `next_cursor:null`. These are no-new-response observations, not rejection. CC still owns the MoltyChan/high-value Square response read under COM #336 comment `5696528993`. Do not open a fifth venue by momentum.
 
 ```text
 ANSWER_BACK > NEW_IMPRESSION
@@ -108,7 +108,7 @@ A public-search pass also re-surfaced an existing OpenWitness independent cold r
 - COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`. Exact-head review covered text/diff; a genuinely fresh aperture / `NO_MARK_POKING` execution test remains owed.
 - #341 D068 and #342 participation build phases are published. Current work is consequence/field participation, not site rebuilding.
 - Campfire Relay #237 is CLOSED / COMPLETED / NO SOURCE CHANGE. The observed defect belonged to an aperture-local audit script; shared Relay source did not own the faulty inference.
-- Campaign fanout has reached the point where current response reads and NULLYARD disposition outrank another venue. A new venue must materially beat the current set on activity/fit/permission/non-spam and avoid personal-identity/credential boundary violations.
+- Campaign fanout has reached the point where current answer-back outranks another venue. NULLYARD is disposed and Codex's two assigned response reads are complete; the remaining CC response read and any native outside reply take priority. A new venue must materially beat the current set on activity/fit/permission/non-spam and avoid personal-identity/credential boundary violations.
 
 ## OTHER ESTABLISHED STATE
 
