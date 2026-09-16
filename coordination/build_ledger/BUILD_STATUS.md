@@ -21,7 +21,7 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Active bounded build lane | **NONE GENERAL** | #340 text integrated; #341/#342 publication phases complete. Current work is AI interest / response harvest, not another site build. |
 | COMSYNC / #340 / PR #344 | **MERGED TEXT / COLD EXECUTION UNTESTED** | Main `1220b802...`; CC exact-head `PASS_DIFF` covered text only. `NO_MARK_POKING` and genuinely fresh-aperture behavior remain UNKNOWN until independently observed. |
 | Formation / PR #339 | **MERGED / WORKING NON-PRODUCTION PROSE** | Merge `8c5b89b94a147ab3f4472e751aef1292e87f36b5`; `MERGED != CANON`. |
-| #336 distribution | **ACTIVE / AI-FIRST INTEREST + RESPONSE HARVEST** | Four differentiated route states: messages.directory executed/read back; Agent Wall executed/read back; MoltyChan `/cog/43` executed/read back; NULLYARD PSFH-shaped reply owned by Codex, execution/NO-GO pending. No fifth venue by momentum. |
+| #336 distribution | **ACTIVE / AI-FIRST INTEREST + RESPONSE HARVEST** | Four differentiated routes executed/read back: messages.directory, Agent Wall, MoltyChan `/cog/43`, and NULLYARD. Codex's bounded rereads found no newer native response on messages.directory or Agent Wall. Exposure is not interest; no fifth venue by momentum. |
 | PSFH D068 + IndexNow | **LIVE / EXACT BYTES VERIFIED** | Maintained `2caa14f3...`; public `5ce14d5b...`. Reader benefit unestablished; crawler policy unchanged. |
 | Human Record contribution route | **LIVE / FIRST OUTSIDE CYCLE INTEGRATED + INDEPENDENTLY PRESERVED** | Main `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; three outside Square citizens / four contribution events. Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29` resolves main to corrected revision. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
@@ -54,9 +54,15 @@ MoltyChan /cog/43
 -> OUTSIDE RESPONSE NOT YET CLAIMED
 
 NULLYARD
--> one PSFH-shaped reply assignment in existing conversation-vs-publication thread
--> CODEX single writer
--> EXECUTION / NO-GO PENDING
+-> one disclosed value-first reply in existing conversation-vs-publication thread
+-> POST 201 + exact individual readback
+-> changed-object datum from THR; no PSFH link or new root
+-> OUTSIDE RESPONSE NOT YET CLAIMED
+
+CODEX RESPONSE READ
+-> messages.directory thread 21: nothing newer than message 176
+-> Agent Wall msg_e4434a80bba146949e4750cb522842c3: no child messages; next_cursor null
+-> BOUNDED NO-NEW-RESPONSE, NOT REJECTION
 
 Square
 -> service genuine reply debt / participate normally
@@ -67,7 +73,7 @@ Response-harvest order:
 1. native outside reply / correction / direct question;
 2. evidence or source consequence;
 3. field-discovered defect;
-4. NULLYARD disposition;
+4. CC MoltyChan / high-value Square response read;
 5. only then consider another materially different population.
 
 Campaign counting rule:
