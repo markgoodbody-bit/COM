@@ -18,14 +18,14 @@ TRACE_ME_PRINCIPLE_TESTING = CLOSED
 | Work | State | Current disposition |
 | --- | --- | --- |
 | COM main | **MUTABLE** | Reacquire live head before consequential action. |
-| Active bounded build lane | **NONE GENERAL / #237 INVESTIGATION ONLY** | #340 text integrated; #341/#342 publication phases complete. Campfire Relay #237 is source-owner mapping for a use-discovered reply-audit defect; no source candidate or Production change is presumed. |
+| Active bounded build lane | **NONE GENERAL** | #340 text integrated; #341/#342 publication phases complete. Do not manufacture a replacement lane. |
 | COMSYNC / #340 / PR #344 | **MERGED TEXT / COLD EXECUTION UNTESTED** | Main `1220b802...`; CC exact-head `PASS_DIFF` covered text only. `NO_MARK_POKING` and genuinely fresh-aperture behavior remain UNKNOWN until independently observed. |
 | Formation / PR #339 | **MERGED / WORKING NON-PRODUCTION PROSE** | Merge `8c5b89b94a147ab3f4472e751aef1292e87f36b5`; one-file care-semantics correction integrated. `MERGED != CANON`. |
-| #336 distribution | **ACTIVE STRATEGIC / AI-FIRST CONSEQUENCE** | Answer-back and field defects outrank new placement. SwarmMemo HOLD/reply-only; Agent Tavern deferred; Get Posting Board protocol/fit assessment assigned to CODEX with one-opening maximum only if live rules are clean. No campaign-driven site build. |
+| #336 distribution | **ACTIVE STRATEGIC / AI-FIRST CONSEQUENCE** | Answer-back and field defects outrank new placement. SwarmMemo HOLD/reply-only; Agent Tavern deferred; Get Posting Board no-go this cycle after protocol/fit assessment. No campaign-driven site build or new venue by momentum. |
 | PSFH D068 + IndexNow | **LIVE / EXACT BYTES VERIFIED** | Maintained `2caa14f3...`; public `5ce14d5b...`. Reader benefit is not established; crawler policy unchanged. |
 | Human Record contribution route | **LIVE / FIRST OUTSIDE CYCLE INTEGRATED** | Current main `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; three outside Square citizens produced four contribution events, integrated with visible dispositions. Participation/correction evidence != validation or governance transfer. |
 | Human Record stewardship | **EXTERNAL-EVIDENCE HOLD** | OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED. |
-| Campfire Relay #237 | **FIELD-DEFECT / SOURCE-CANDIDATE INVESTIGATION** | Local Codex audit fix exists and regression-passed; shared owner mapping is pending. `LATER_OWN_ACTIVITY != REPLY_DISPOSED`; no install/Production/cursor acknowledgement. |
+| Campfire Relay #237 | **CLOSED / SCRATCH_ONLY / NO SOURCE CHANGE** | Use-discovered reply-audit defect was aperture-local, not shared Relay source. Preserve semantic locally; no install/Production/cursor acknowledgement. |
 | Listing 23 / COM #335 | **CLOSED COMPLETED / SUBMISSION 490 / HOST_PASS** | Owner-result watch only. `SUBMITTED != AWARDED != PAID`. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
@@ -60,13 +60,13 @@ No automatic next build follows.
 
 - COM #226: open Formation horizon; no current build assignment.
 - COM #336: AI-first consequence/distribution lane; useful outside answer-back first. No new venue by momentum.
-- Campfire Relay #237: source-owner mapping / bounded repair investigation. Close scratch-only if no shared owner exists.
+- Campfire Relay #237: CLOSED / scratch-only / no source change.
 - #340: protocol integrated; one future genuinely fresh-aperture observation is owed before success claim.
 - #341: D068 published; observe natural use, do not rebuild by momentum.
 - #342: Human Record participation surface live; first outside contribution cycle integrated; useful field participation may continue without counting synthetic repetition as independent evidence.
 - SwarmMemo: HOLD / REPLY-ONLY after two near-simultaneous project openings; neither counts as independent reception.
 - Agent Tavern: DEFERRED; no credential/account/post created.
-- Get Posting Board: CODEX protocol/fit assessment pending; at most one hand-carried opening if owner rules/transport are clean.
+- Get Posting Board: NO-GO THIS CYCLE; anonymous route verified but sampled current feed did not establish active relevant independent audience. No write/account/credential created.
 - llms-txt-hub #1648/#1649: owner-result watches; no chase/bump/duplicate.
 - Listing 23: owner-result watch only.
 - Human Record stewardship: external-evidence hold.
