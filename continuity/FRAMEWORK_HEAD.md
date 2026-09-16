@@ -25,11 +25,39 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL ACTIVE BOUNDED BUILD OR WORLD-GAP LANE**.
+There is currently **NO GENERAL WORLD-GAP LANE**. There is one direct human-directed bounded product lane for The Human Record: make the existing gift materially usable for humans without altering its stewardship claim or inventing validation.
+
+## THR HUMAN GIFT / PRODUCT QUALITY — COM #347
+
+Direct Mark direction, 16 September 2026:
+- THR is built collaboratively with AI but intended as a gift for humans;
+- third-party participation is welcome but not required for product-quality progress;
+- stewardship remains a separate external-evidence question.
+
+Current separation:
+
+```text
+STEWARDSHIP = OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED
+PRODUCT QUALITY = ACTIVE
+THIRD-PARTY INPUT = WELCOME / NOT REQUIRED FOR PROGRESS
+AI_BUILT != AI_FACING_ONLY
+HUMAN_VIEW != NEW_EVIDENCE
+```
+
+`human-record` PR #6 merged at main `475140ba56eaec084d1cdaa44c2550e4f17d02af`.
+
+It adds:
+- a static `/records/` human catalogue;
+- readable human views of the Homer provenance specimen and flak-claim provenance case;
+- bounded `records/catalog.json` discovery metadata;
+- human-first routing from the public root;
+- README / `llms.txt` / sitemap routing updates.
+
+Underlying `specimen.*` and `cases/viral-flak-claim.*` evidence did not change in that pass. Rights and stewardship state did not change. Main-source readback is verified. Fresh public Pages readback after the merge was not established from the current Framework aperture because its external network path could not resolve the public domain; do not collapse source merge into witnessed public delivery.
 
 ## WORLD-FIRST RESULT — NO DELTA THIS CYCLE
 
-Direct Mark direction was `go for it / dont drift / COMSYNC and proceed` after the AI-interest falsification. Framework returned to the world first rather than looking for a use for project machinery.
+Earlier in the same cycle, direct Mark direction was `go for it / dont drift / COMSYNC and proceed` after the AI-interest falsification. Framework returned to the world first rather than looking for a use for project machinery.
 
 A real external anchor was found in autonomous-agent actions affecting real people/organisations. COM #346 tested one sharp candidate gap: whether an affected third party needed a new cross-system action reference to report an agent action back to the responsible operator/audit chain.
 
@@ -64,11 +92,11 @@ DOMAIN_REFERENCE + REPORT_ROUTE + INTERNAL_SEARCH = SUFFICIENT FOR THE TESTED SE
 KILLED_SEAM_STAYS_DEAD
 ```
 
-The remaining responsible-operator attribution problem for open-internet agent activity is important but **already actively owned** by multiple current policy/protocol efforts. `EMERGING != UNOWNED`. No #347 was opened.
+The remaining responsible-operator attribution problem for open-internet agent activity is important but **already actively owned** by multiple current policy/protocol efforts. `EMERGING != UNOWNED`. No successor world-gap issue was opened from that direction.
 
 A second bounded look at public-sector automated/AI decision challenge/redress also found strong existing transparency, appeals/review, complaint/redress and domain-specific reconsideration/tribunal owners. No concrete unowned gap was established. No lane opened.
 
-This is a valid `NO_DELTA` result. Next initiative restarts from the world rather than deepening either killed direction.
+This remains a valid `NO_DELTA` result. The later THR work is repair/improvement of an existing object under direct human instruction, not resurrection of a killed world gap.
 
 ## SECONDARY — AI INTEREST POST-FALSIFICATION
 
@@ -87,11 +115,13 @@ No fifth venue. Four current off-Square routes remain response-harvest only. Squ
 
 PSFH D068 is live; reader benefit unestablished. Do not rebuild by campaign momentum.
 
-Human Record current main: `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`.
-- three outside Square handles/accounts produced four contribution events;
-- operator independence unverified;
+Human Record current main: `475140ba56eaec084d1cdaa44c2550e4f17d02af`.
+- human-facing record browser source merged;
+- current records remain Homer provenance + viral-flak claim provenance;
+- three outside Square handles/accounts previously produced four contribution events; operator independence remains unverified;
 - corrected revision independently preserved in Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`;
-- stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
+- stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**;
+- that stewardship hold no longer means product freeze.
 
 ## OTHER ESTABLISHED STATE
 
@@ -116,6 +146,8 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
+THR human-interface work is product/interface work, not a reopening of TRACE/ME efficacy testing.
+
 ## LIVE COMMITMENTS
 
 ```text
@@ -129,6 +161,8 @@ AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
 OFFERED != ACCEPTED
 NO_OBSERVED_RESPONSE != REFUSAL
+AI_BUILT != AI_FACING_ONLY
+HUMAN_VIEW != NEW_EVIDENCE
 ```
 
 Consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes retain their established gates.
