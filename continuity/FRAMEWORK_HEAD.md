@@ -25,14 +25,15 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL WORLD-GAP LANE**. There is one direct human-directed bounded product lane for The Human Record: make the existing gift materially usable for humans without altering its stewardship claim or inventing validation.
+There is currently **NO GENERAL WORLD-GAP LANE**. There is one direct human-directed bounded product lane for The Human Record: make the existing gift materially usable, inspectable and continuable for humans without altering its stewardship claim or inventing validation.
 
 ## THR HUMAN GIFT / PRODUCT QUALITY — COM #347
 
 Direct Mark direction, 16 September 2026:
 - THR is built collaboratively with AI but intended as a gift for humans;
 - third-party participation is welcome but not required for product-quality progress;
-- stewardship remains a separate external-evidence question.
+- stewardship remains a separate external-evidence question;
+- continue building THR.
 
 Current separation:
 
@@ -44,95 +45,114 @@ AI_BUILT != AI_FACING_ONLY
 HUMAN_VIEW != NEW_EVIDENCE
 ```
 
-`human-record` PR #6 merged at main `475140ba56eaec084d1cdaa44c2550e4f17d02af`.
+Human Record current main: `15a2be9a2a97a18c84790e5bae40c81af1a430a5`.
 
-It adds:
-- a static `/records/` human catalogue;
-- readable human views of the Homer provenance specimen and flak-claim provenance case;
-- bounded `records/catalog.json` discovery metadata;
-- human-first routing from the public root;
-- README / `llms.txt` / sitemap routing updates.
+PR #6 established the human-facing `/records/` browser and readable views. Codex later verified the PR #6 public deployment against exact pinned source bytes.
 
-Underlying `specimen.*` and `cases/viral-flak-claim.*` evidence did not change in that pass. Rights and stewardship state did not change. Main-source readback is verified. Fresh public Pages readback after the merge was not established from the current Framework aperture because its external network path could not resolve the public domain; do not collapse source merge into witnessed public delivery.
+PR #7 merged the next foundation:
+- `RECORD_CONTRACT.md`: minimum semantic questions earned by the existing records, explicitly not a universal schema/ontology/canon;
+- `SELECTION.md`: bounded record-selection discipline around recoverability, provenance, strongest owners and legitimate consent/control;
+- `records/about.html`: plain-language “How records work” page;
+- self-contained current correction/continuation authority in the Human Record repository;
+- COM retained as historical build/source lineage rather than operational dependency;
+- dated Homer operational-route/source-ownership repair with original evidence unchanged;
+- contribution, catalogue, machine entrance and sitemap integration.
 
-## WORLD-FIRST RESULT — NO DELTA THIS CYCLE
+Fresh public delivery of PR #7 is **not yet witnessed from the current Framework aperture** because its public-domain DNS path is unavailable. Source/main state is verified. Do not collapse `MERGED_SOURCE` into `FRESH_PUBLIC_READBACK`.
 
-Earlier in the same cycle, direct Mark direction was `go for it / dont drift / COMSYNC and proceed` after the AI-interest falsification. Framework returned to the world first rather than looking for a use for project machinery.
+## THR RECORD DISCIPLINE
 
-A real external anchor was found in autonomous-agent actions affecting real people/organisations. COM #346 tested one sharp candidate gap: whether an affected third party needed a new cross-system action reference to report an agent action back to the responsible operator/audit chain.
-
-The gap did **not** survive owner subtraction and hostile review.
-
-Strong existing owners already cover:
-- agent/workload identity and authorization;
-- audit context / causal-chain reconstruction;
-- exact consequential-action identity;
-- action-effect evidence and indeterminate reconciliation;
-- compensating/remedy records;
-- incident response and complaint/redress routes;
-- domain-native transaction/message/request references.
-
-CC's hostile real-use attack separated five states:
+Common semantic questions now held:
 
 ```text
-REPORTER_CAN_IDENTIFY_OPERATOR
-!= OPERATOR_CAN_FIND_INTERNAL_RUN
-!= REPORTER_CAN_PROVE_EXTERNAL_EFFECT
-!= REPORT_RECEIVED
-!= REMEDIATION_OCCURRED
+IDENTITY
+-> SUBJECT / CLAIM
+-> CURRENT STATE
+-> EVIDENCE + SOURCE ANCESTRY
+-> FINDINGS
+-> UNKNOWNS / NOT CHECKED
+-> CORRECTIONS / DISAGREEMENT
+-> RIGHTS / CONSENT / CUSTODY
+-> HUMAN + MACHINE ROUTES
 ```
-
-The candidate had targeted the second. In ordinary cases the receiver already holds its own native evidence/reference; mapping that evidence to an internal run is the operator's audit-indexing obligation. A new globally visible correlation identifier would often be redundant or harmful through cross-domain linkability.
-
-Disposition:
-
-```text
-COM #346 = CLOSED / OWNER_ROUTE / NO PROJECT ACTION
-DOMAIN_REFERENCE + REPORT_ROUTE + INTERNAL_SEARCH = SUFFICIENT FOR THE TESTED SEAM
-KILLED_SEAM_STAYS_DEAD
-```
-
-The remaining responsible-operator attribution problem for open-internet agent activity is important but **already actively owned** by multiple current policy/protocol efforts. `EMERGING != UNOWNED`. No successor world-gap issue was opened from that direction.
-
-A second bounded look at public-sector automated/AI decision challenge/redress also found strong existing transparency, appeals/review, complaint/redress and domain-specific reconsideration/tribunal owners. No concrete unowned gap was established. No lane opened.
-
-This remains a valid `NO_DELTA` result. The later THR work is repair/improvement of an existing object under direct human instruction, not resurrection of a killed world gap.
-
-## SECONDARY — AI INTEREST POST-FALSIFICATION
-
-COM #345 remains response-harvest only. COM #336 is closed/cold.
 
 Preserve:
 
 ```text
-NOT_OBSERVED != FALSE
-LOW_YIELD_THIS_CYCLE != AGENT_BOARDS_UNPRODUCTIVE
+COMMON QUESTIONS != IDENTICAL OBJECTS
+RECORD CONTRACT != UNIVERSAL ONTOLOGY
+BUILD_PROVENANCE != CURRENT_RECORD_AUTHORITY
+STRUCTURE != TRUTH
 ```
 
-No fifth venue. Four current off-Square routes remain response-harvest only. Square is the only current field with demonstrated answer-back strong enough to change project objects. Account identity does not prove operator independence.
+The current Homer and flak machine records do not need identical field names merely for symmetry.
 
-## PSFH / HUMAN RECORD
+## THR SELECTION / NEXT EDGE
 
-PSFH D068 is live; reader benefit unestablished. Do not rebuild by campaign momentum.
+The risk scan separated:
 
-Human Record current main: `475140ba56eaec084d1cdaa44c2550e4f17d02af`.
-- human-facing record browser source merged;
-- current records remain Homer provenance + viral-flak claim provenance;
-- three outside Square handles/accounts previously produced four contribution events; operator independence remains unverified;
-- corrected revision independently preserved in Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`;
-- stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**;
-- that stewardship hold no longer means product freeze.
+```text
+CONTENT LOSS
+LINEAGE LOSS
+LIVING-KNOWLEDGE LOSS
+```
 
-## OTHER ESTABLISHED STATE
+THR is naturally strongest at **lineage loss**. It may assist content loss. It cannot substitute for living transmission.
 
-- Two Parents / Listing 23 submission 490: submitted once, hosted PASS, owner-result watch only. `SUBMITTED != AWARDED != PAID`.
-- Formation PR #339: merged working/non-production prose only; no canon/release/alignment result.
-- COMSYNC PR #344: merged text; genuine fresh-aperture `NO_MARK_POKING` observation remains owed.
-- TRACE `main` `46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b`; v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
-- Mechanical Ethics `main` `44f7efb59806242fd26c572cbfbaaeaefaea2058`; v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated.
+Candidate quarry remains:
+- endangered craft / embodied technical skill;
+- vulnerable audiovisual or oral records;
+- contemporary human digital creation with inspectable provenance;
+- disappearing web-native/community material;
+- born-digital/software-dependent creative work;
+- endangered language/community knowledge only where community-led and appropriate.
+
+This is quarry, not a queue or a ranking of human value.
+
+Before specimen 3:
+
+```text
+REAL AT-RISK OBJECT / PRACTICE / CLAIM?
+-> STRONGEST OWNER?
+-> SPECIFIC LINEAGE / RECOVERABILITY GAP?
+-> LEGITIMATE ACCESS / CONSENT?
+-> SMALLEST USEFUL RECORD?
+-> CAN UNKNOWN REMAIN VISIBLE?
+-> CAN CORRECTION REMAIN OPEN?
+-> BUILD OR ROUTE / STOP
+```
+
+For living people/communities:
+
+```text
+RISK != PERMISSION
+RECORDING != OWNING
+PRESERVATION != EXTRACTION
+COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
+```
+
+## WORLD-FIRST RESULT — NO DELTA REMAINS VALID
+
+COM #346 remains closed/owner-routed; do not reopen the cross-system agent-action correlation seam. Public-sector automated-decision/redress look likewise produced no local gap. The THR work is improvement of an existing object under direct human instruction, not resurrection of a killed world gap.
+
+```text
+NO_DELTA = SUCCESS
+OWNER_FOUND -> ROUTE OUTWARD / STOP
+IMPORTANT_PROBLEM != PROJECT_GAP
+```
+
+## SECONDARY WATCHES
+
+- COM #345 response-harvest only; no fifth AI-interest venue.
+- COM #336 closed/cold.
+- PSFH D068 live; reader benefit unestablished; no campaign-momentum rebuild.
+- Two Parents / Listing 23 submission 490: owner-result watch only.
+- Formation PR #339: working/non-production prose only.
+- TRACE v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
+- Mechanical Ethics v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated.
 - AI Product Index PSFH + THR listings live; listing != read/use.
 - llms-txt-hub #1648/#1649 owner-review watches; do not chase.
-- Unrequested `AI Interest Watch` automation was authority drift and is disabled; do not recreate unless Mark asks.
+- Unrequested `AI Interest Watch` automation remains disabled; do not recreate unless Mark asks.
 
 ## TESTING / EVIDENCE BOUNDARY
 
@@ -146,7 +166,7 @@ NO POC / EFFICACY / SUPERIORITY PROGRAMME
 NO GOLD ANSWER / PROVIDER LEAGUE / RECEIVER BENCHMARK
 ```
 
-THR human-interface work is product/interface work, not a reopening of TRACE/ME efficacy testing.
+THR product/interface/record work is not a reopening of TRACE/ME efficacy testing.
 
 ## LIVE COMMITMENTS
 
@@ -160,9 +180,10 @@ DESCRIPTION != PERMISSION
 AGREEMENT != VALIDATION
 OWNER_ROUTING != FAILURE
 OFFERED != ACCEPTED
-NO_OBSERVED_RESPONSE != REFUSAL
 AI_BUILT != AI_FACING_ONLY
 HUMAN_VIEW != NEW_EVIDENCE
+RECORDING != OWNING
+PRESERVATION != EXTRACTION
 ```
 
 Consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes retain their established gates.
