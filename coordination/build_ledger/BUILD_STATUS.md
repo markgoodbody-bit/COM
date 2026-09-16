@@ -16,9 +16,9 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| Active bounded build lane | **NONE GENERAL** | No new site/framework/protocol build. |
-| COM #346 | **ACTIVE OWNER-SUBTRACTION / WORLD-FIRST** | Real-use question around externally reportable agent actions and operator-side audit correlation. Kill first against existing standards/practice. No external contact authorised. |
-| COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary. No fifth venue. Several prior `F` items are `NOT_OBSERVED`, not general falsifications. |
+| Active bounded build/world-gap lane | **NONE GENERAL** | Latest world-first investigation closed as owner-routed/no project action. |
+| COM #346 | **CLOSED / OWNER_ROUTE / NO PROJECT ACTION** | Cross-system affected-party/action-correlation mechanism killed. Existing domain reference + report route + operator internal audit search composes sufficiently. Attribution residue already has active standards owners. |
+| COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary only. No fifth venue. `NOT_OBSERVED != FALSE`; only substantive answer-back earns work. |
 | COM #336 | **CLOSED / COLD LEDGER** | Do not use as active route. |
 | PSFH D068 | **LIVE / EXACT BYTES WITNESSED** | Reader benefit unestablished; no momentum rebuild. |
 | Human Record | **LIVE / FIRST OUTSIDE CYCLE INTEGRATED + PRESERVED** | Main `6ab6dff6...`; three outside Square handles/accounts / four events; operator independence unverified. |
@@ -27,24 +27,22 @@ PURPOSE > INSTRUMENT
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
 
-## #346 execution ceiling
+## World-first disposition
 
-Current strongest-owner set includes NIST/NCCoE, IETF agent audit/authorization work, OpenID AuthZEN, NCSC, CMA/ICO, Agent Attribution headers and existing abuse/security contact mechanisms.
+This cycle deliberately produced **NO NEW PROJECT OBJECT**.
 
-Current candidate seam is **not established**. It is only the question whether an affected external receiver can report one exact agent action using a privacy-safe reference that the responsible operator can correlate to its private audit chain.
+- Agent identity/auth/audit/action-effect/reconciliation/remedy/reporting territory was aggressively owner-subtracted. #346 was narrowed and killed.
+- The only residue, responsible-operator attribution for open-internet agent activity, is already an active field with multiple current standards/policy owners. `EMERGING != UNOWNED`.
+- A separate bounded look at public-sector automated/AI decisions found strong existing transparency, appeals/review, complaint/redress and domain-specific reconsideration/tribunal owners; no concrete project-shaped gap was established.
 
 ```text
-COMPONENTS_EXIST != JOIN_MISSING
-OWNER_FOUND -> CLOSE
 NO_DELTA = SUCCESS
-NO CODE
-NO SCHEMA
-NO EXTERNAL CONTACT
+OWNER_FOUND -> ROUTE OUTWARD / STOP
+NO_SCHEMA_BY_MOMENTUM
+NO_EXTERNAL_CONTACT
 ```
 
-CODEX: owner/primitive composition audit.  
-Claude Code: hostile real-use and privacy attack.  
-Framework: integrate first hard return.
+Next substantial token spend should restart from a fresh world/real-use question, not deepen either killed direction by inertia.
 
 ## Stable watches / holds
 
@@ -52,6 +50,7 @@ Framework: integrate first hard return.
 - SwarmMemo HOLD / REPLY-ONLY; Agent Tavern DEFERRED; Get Posting Board NO-GO; Moltbook NO-GO.
 - llms-txt-hub #1648/#1649: owner-review watches; no chase.
 - Human Record stewardship: OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED.
+- Listing 23 / Two Parents: owner result only; do not modify submitted artifact without a real defect.
 
 ## Consequential gates
 
