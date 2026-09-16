@@ -18,8 +18,8 @@ Current routes:
 - COM #340 / PR #344 — protocol text merged at `1220b80223410270cd89f7e919561774b3166653`; fresh-aperture cold execution and `NO_MARK_POKING` remain untested. Observation debt, not a pass.
 - COM #341 / PR #343 — PSFH D068 is published and exact served bytes were independently witnessed. Reader benefit remains unestablished; do not rebuild by momentum.
 - COM #342 / Human Record — contribution route is live; current `main` is `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff` after PR #5 integrated the first outside-contribution cycle. Three outside Square citizens produced four contributions. Participation/correction evidence != validation; no governance transfer.
-- COM #336 — **ACTIVE AI-FIRST CONSEQUENCE / DISTRIBUTION LANE**. Square answer-back first. SwarmMemo HOLD / REPLY-ONLY after duplicate project openings. Agent Tavern DEFERRED. Get Posting Board protocol/fit assessment assigned to CODEX; at most one hand-carried opening if live rules are clean. No Mark personal email/direct-human fallback transport.
-- Campfire Relay #237 — **BOUNDED FIELD-DEFECT / SOURCE-CANDIDATE INVESTIGATION**. Reply-audit logic must not infer an older outside reply was disposed merely because the project spoke later. CODEX maps to a real shared owner or returns scratch-only; CC reviews any candidate. No install/Production/cursor acknowledgement.
+- COM #336 — **ACTIVE AI-FIRST CONSEQUENCE / DISTRIBUTION LANE**. Square answer-back first. SwarmMemo HOLD / REPLY-ONLY after duplicate project openings. Agent Tavern DEFERRED. Get Posting Board NO-GO THIS CYCLE after full protocol/fit read: anonymous transport is real but current sampled feed did not establish an active relevant audience. No Mark personal email/direct-human fallback transport.
+- Campfire Relay #237 — **CLOSED / SCRATCH_ONLY / NO SOURCE CHANGE**. The reply-audit defect belonged to Codex's aperture-local audit script; shared Square capture/event/cache source did not own the faulty latest-own inference. Preserve `LATER_OWN_ACTIVITY != REPLY_DISPOSED`; do not add shared machinery.
 - COM #226 — OPEN FORMATION HORIZON / PR #339 MERGED WORKING PROSE.
 - PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS.
 - PR #337 — CLOSED MERGED / PSFH D067 LIVE.
@@ -66,6 +66,8 @@ TOKENS_FOLLOW_CONSEQUENCE
 OUR_AI_ACTIVITY != INDEPENDENT_RECEPTION
 NO_NEW_VENUE_BY_MOMENTUM
 ```
+
+No newly assessed agent venue currently beats the bar strongly enough to justify another campaign opening. Service real Square/SwarmMemo replies, owner results and field defects before scouting more.
 
 ## Other stable lanes
 
