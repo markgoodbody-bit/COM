@@ -25,50 +25,81 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL WORLD-GAP LANE**. There is one direct human-directed bounded product lane for The Human Record: make the existing gift materially usable, inspectable, scalable and continuable for humans without altering its stewardship claim or inventing validation.
+There is **NO GENERAL WORLD-GAP LANE**. Two bounded current lanes exist under direct Mark direction:
+
+1. **COM #347 — The Human Record product/scale quality.**
+2. **COM #348 — project resource/opportunity quarry.**
+
+Neither lane changes the guiding purpose.
+
+## TRACE / ME RELEASE STATE — HUMAN GATE EXERCISED
+
+On 16 September 2026 Mark explicitly instructed promotion of the exact current TRACE and Mechanical Ethics candidates.
+
+### TRACE
+
+- **TRACE v0.3.0 is the current RELEASED FORMAL BASELINE.**
+- release content commit: `fa3b464533d50b627743938c1ca158c2101b892a`;
+- current main after release-workflow cleanup: `8310d2531d3b2fe4e3b44c92d1d544a322f52bf4`;
+- tag/release: `v0.3.0`;
+- spine SHA-256: `be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6`;
+- full reference SHA-256: `b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34`;
+- final released integrity workflow: PASS.
+
+TRACE v0.2.7 remains preserved as the previous released baseline.
+
+```text
+RELEASED != VALIDATED
+RELEASED != EFFICACY PROVEN
+RELEASED != AUTHORITY / PERMISSION / CLEARANCE
+```
+
+### Mechanical Ethics
+
+- **Mechanical Ethics v0.7.0 is the current RELEASED FORMAL BASELINE.**
+- release content commit: `d6b41adf292321058b6f6dfc76613d85a1be8a22`;
+- current main after release-workflow cleanup: `25a9d793af1cded26dd2d766e1d1c08e1b30f652`;
+- tag/release: `v0.7.0`;
+- Markdown SHA-256: `8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c`;
+- PDF SHA-256: `122c56bb2ea1063bccb8ced3652686a006d3ff44bdaafa445a525e9464711cdf`;
+- deterministic second PDF rebuild matched exactly;
+- sampled cover/body/final rendered pages visually inspected by Framework with no clipping/broken-glyph/status defect observed;
+- released integrity workflow: PASS.
+
+Mechanical Ethics v0.6.3 remains preserved as the previous released baseline.
+
+```text
+RELEASED_BASELINE != ETHICAL_VALIDATION
+READER_RELEASE != UNIVERSAL_APPLICABILITY
+```
+
+Durable receipt: `coordination/build_ledger/RELEASE_PROMOTIONS_20260916.md`.
 
 ## THR HUMAN GIFT / PRODUCT QUALITY — COM #347
 
-Direct Mark direction, 16 September 2026:
-- THR is built collaboratively with AI but intended as a gift for humans;
-- third-party participation is welcome but not required for product-quality progress;
-- stewardship remains a separate external-evidence question;
-- continue building THR;
-- scale must handle repeated human names and disappearing/changing websites without flattening uncertainty.
+Direct Mark direction remains:
+- THR is collaboratively AI-built but a gift for humans;
+- third-party participation is welcome, not required for product progress;
+- stewardship remains separate;
+- scale must handle repeated names, source mutation/disappearance and derived views without flattening uncertainty.
 
-Current separation:
+Current THR main:
 
-```text
-STEWARDSHIP = OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED
-PRODUCT QUALITY = ACTIVE
-THIRD-PARTY INPUT = WELCOME / NOT REQUIRED FOR PROGRESS
-AI_BUILT != AI_FACING_ONLY
-HUMAN_VIEW != NEW_EVIDENCE
-```
+`a00312c3f67643c4628edb46cb8091300b6888ab`
 
-Human Record current main: `d4f69aa56f664f0ec494d06dacb4f1a7936faea7`.
+Current evidence records remain three:
+1. Camp Fire — artwork provenance;
+2. viral 80% flak claim — claim/source ancestry;
+3. sieve/riddle revival — living-knowledge lineage.
 
-PR #13 established bounded scale foundations. PR #14 hardened the shared validator to fail closed. PR #16 operationalized source-literal mentions and source-currentness receipts.
+No record 4 follows from infrastructure work.
 
-Exact PR #16 head integrity CI: PASS.  
-Exact merged-main integrity CI: PASS.  
-Exact merged-main Pages build/deploy: SUCCESS.  
-Fresh independent public byte readback of every new route: NOT ESTABLISHED HERE.
-
-## CURRENT THR RECORDS
-
-1. **Winslow Homer, Camp Fire (1880)** — artwork provenance / owner-source reconciliation.
-2. **Viral “80% of German flak crews died” claim** — claim provenance / source ancestry under repetition.
-3. **Sieve and riddle making returns from extinction** — living-knowledge lineage / public evidence around break, revival and unresolved transmission/reconstruction/new learning.
-
-No record 4 has been inferred from scale work.
-
-## CURRENT THR SCALE STACK
+### Current scale stack
 
 ```text
 SOURCE-LITERAL MENTION
 -> ZERO / ONE / MANY ENTITY CANDIDATES
--> RESOLVED OR HONESTLY UNRESOLVED
+-> RESOLVED / CANDIDATE / UNRESOLVED
 
 SOURCE ID
 -> LOCATOR(S)
@@ -83,118 +114,114 @@ RECORD STATE
 -> HUMAN VIEW + MACHINE VIEW
 ```
 
-### Mentions / identity
-
-`registry/mentions.json` now operationalizes the identity model.
-
-- Winslow Homer owner-source mention -> existing Winslow Homer THR entity, on bounded existing record evidence.
-- Mike Turnock public-source mention -> `unresolved_not_required`; no living-person entity profile created because current cross-record work does not require one.
+Preserve:
 
 ```text
 NAME != ENTITY
 MENTION != ENTITY
 MENTION EXISTS != ENTITY PROFILE REQUIRED
-IDENTITY RESOLUTION != IDENTITY CERTAINTY
-AI MATCH != SILENT IDENTITY FACT
-BETTER MATCHING != MORE SURVEILLANCE
-```
-
-### Sources / currentness
-
-`registry/source-checks.json` is an operational maintenance ledger separate from record evidence.
-
-The first three retrieval-surface checks concern:
-- Guardian sieve/riddle feature;
-- Heritage Crafts current craft page;
-- World War Wings flak article.
-
-The retrieval surface returned expected cached content but did not establish fresh origin-server HTTP state. The first draft used stronger live-locator wording; review caught the provenance problem and narrowed the receipts before merge.
-
-```text
+ENTITY != ASSERTION
+ASSERTION != TRUTH
+URL != SOURCE
 SOURCE CHECK != RECORD EVIDENCE
 RETRIEVAL SURFACE != LIVE ORIGIN
 CACHED CONTENT AVAILABLE != LIVE TODAY
 LIVE TODAY != PRESERVED
-RETRIEVED AGAIN != UNCHANGED
-NO COMPARABLE DIGEST != CONTENT MATCH
-FAILED CHECK != SOURCE NEVER EXISTED
-```
-
-No preservation lookup/submission or institutional contact occurred in this pass.
-
-### Assertions
-
-`registry/assertions.json` remains sparse. Evidence-bearing claims are kept separate from entity identity and retain source/scope/correction.
-
-```text
-ENTITY != ASSERTION
-ASSERTION != TRUTH
-SOURCE STATEMENT != THR ENDORSEMENT
-```
-
-### Validation
-
-CI now runs:
-- `tools/validate_integrity.py`
-- existing fail-closed integrity regression tests;
-- `tools/validate_operational.py`
-- operational registry regression tests.
-
-Structural checks are integrity machinery only.
-
-```text
-STRUCTURAL PASS != IDENTITY TRUTH
-STRUCTURAL PASS != SOURCE UNCHANGED
-STRUCTURAL PASS != PRESERVATION
-```
-
-PR #12 standalone view-basis checker is closed as superseded by the shared validator path. Its optional-root standalone CLI behavior was not ported; do not claim full parity.
-
-## NEXT THR EDGE
-
-**OBSERVE / CORRECT OPERATIONAL SCALE LAYER.**
-
-Pressure-test on real load:
-- repeated/ambiguous historical identities;
-- cross-record mention resolution;
-- source drift and locator failure;
-- preservation debt and stronger-owner routing;
-- generated-view scale and correction propagation.
-
-Do not open a universal identity registry, industrial database, preservation crawler or record 4 merely to demonstrate scale.
-
-```text
+OBSERVATION != PRESERVED COPY
+PRESERVATION != EXTRACTION
+BETTER MATCHING != MORE SURVEILLANCE
 COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
-STORAGE BACKEND != RECORD MEANING
-OWNER_FOUND + NO CONSEQUENTIAL GAP -> ROUTE / STOP
 ```
 
-Durable receipts:
-- `coordination/build_ledger/THR_SCALE_FOUNDATIONS_20260916.md`
-- `coordination/build_ledger/THR_OPERATIONAL_SCALE_20260916.md`
+### Validator convergence
 
-## WORLD-FIRST RESULT — NO DELTA REMAINS VALID
+PR #15 completed shared-validator target/route protection. Framework then integrated returned PRs #18/#19/#17 on the exact post-#15 head and merged convergence PR #23.
 
-COM #346 remains closed/owner-routed. THR work is improvement of an existing object under direct human instruction, not resurrection of a killed world gap.
+Exact merged-main integrity: PASS.  
+Exact merged-main Pages deployment: SUCCESS.  
+Full validator regression suite during integration: **46 tests PASS**.
+
+Eleven warnings intentionally remain visible:
+- nine observation outcomes `referenced_by_record` not named in the open SOURCE_MODEL observation vocabulary;
+- two source relations `byte_identical_observed_copy` / `byte_identical_observed_copy_of` not named in the open source-relation vocabulary.
 
 ```text
-NO_DELTA = SUCCESS
-OWNER_FOUND -> ROUTE OUTWARD / STOP
-IMPORTANT_PROBLEM != PROJECT_GAP
+WARNING_VISIBLE != DEFECT_RESOLVED
+OPEN_VOCABULARY_WARNING != INVALID_RECORD
+NO_NEW_CHECKER_BY_MOMENTUM
 ```
 
-## SECONDARY WATCHES
+Original PRs #17/#18/#19 were closed as superseded after integration; their substantive findings/authorship remain in the integrated history.
 
-- COM #345 response-harvest only; no fifth AI-interest venue.
+### Next THR edge
+
+**OBSERVE / CORRECT OPERATIONAL SCALE.** Use the machinery on real identity collisions, source drift/currentness, preservation debt, correction propagation and generated-view load. Do not open a universal identity database, preservation crawler or record 4 merely to demonstrate scale.
+
+Stewardship remains:
+
+```text
+OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED
+PRODUCT QUALITY = ACTIVE
+```
+
+## PROJECT RESOURCES / OPPORTUNITY QUARRY — COM #348
+
+Direct Mark direction: the project should try to reduce dependence on his personal AI/API/hosting spend without becoming a monetization/fundraising project or making Mark an application administrator.
+
+Current quarry rules:
+
+```text
+PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY
+POSSIBLE PRIZE = £0
+SUBMITTED != AWARDED != PAID
+AVAILABLE MONEY != AUTHORITY TO SPEND
+NO PERSONAL BURN WITHOUT EXPLICIT APPROVAL
+IF WE LOSE -> USEFUL WORK SHOULD REMAIN
+```
+
+Current live candidates after public-source verification:
+- **BlueDot Impact Rapid Grants:** $50–$10k; compute/API/tooling explicitly in scope; low-friction application; strongest immediate small-resource candidate if framed around bounded already-underway work, not generic subscription reimbursement.
+- **Foresight AI for Science & Safety Nodes — Coordination & Accountability:** deadline 31 Oct 2026; individuals eligible; typical $30k–$100k; genuine human-AI/multi-agent/decentralized-accountability overlap; materially higher application/in-person load.
+- **Nebius x NVIDIA Global AI Hackathon:** deadline 30 Oct 2026; significant prizes/credits; genuine potential THR-inspired claim/provenance agent build, but submission code must be public open source and entrant-owned, so use a clean separately licensed competition artefact rather than reflexively submitting THR.
+
+Daily `Project Opportunity Watch` is active. It may discover/verify/filter and notify on surviving opportunities or results. It may **not** apply, submit, create accounts, contact organisers, accept binding terms, spend, use credentials, bind payout/wallets, or change project licences/canon.
+
+Two Parents / Listing 23 submission 490 remains owner-result watch:
+
+```text
+SUBMITTED != AWARDED != PAID
+```
+
+## FULL COMSYNC REACHABILITY — 16 Sep 2026
+
+Freshly reacquired:
+- COM core/current issue state;
+- TRACE live source + released status;
+- Mechanical Ethics live source + released status;
+- THR main / PR integration / CI / Pages state;
+- Campfire Relay repository main `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
+- public 1F916 front-door/protocol surfaces sufficiently to establish that the public project remains active and machine-facing.
+
+Not freshly established:
+- **operational Campfire Relay tool/provider is not exposed in this aperture**; repository inspection is not a Relay run;
+- direct current 1F916 JSON API `/api/front`, `/api/docket`, `/api/official`, authenticated Framework inbox or Listing 23 owner result could not be freshly reached from this aperture; direct container request also failed DNS. This is an aperture failure, not evidence of a quiet Square or no result.
+
+```text
+RELAY_REPO != RELAY_TOOL
+FAILED_READ != QUIET_BOARD
+SOURCE_AVAILABLE != CURRENT_AUTHENTICATED_STATE
+```
+
+## OTHER STABLE ROUTES
+
+- COM #346 closed/owner-routed; killed seam stays dead.
+- COM #345 secondary response-harvest only; no fifth venue.
 - COM #336 closed/cold.
-- PSFH D068 live; reader benefit unestablished; no campaign-momentum rebuild.
-- Two Parents / Listing 23 submission 490: owner-result watch only.
-- Formation PR #339: working/non-production prose only.
-- TRACE v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
-- Mechanical Ethics v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated.
-- AI Product Index PSFH + THR listings live; listing != read/use.
-- llms-txt-hub #1648/#1649 owner-review watches; do not chase.
-- Unrequested `AI Interest Watch` automation remains disabled; do not recreate unless Mark asks.
+- PSFH D068 live; reader benefit unestablished; no momentum rebuild.
+- Formation PR #339 remains working/non-production prose only.
+- AI Product Index PSFH + THR listings: discovery route, not read/use.
+- llms-txt-hub #1648/#1649: owner-review watches; no chase.
+- Unrequested `AI Interest Watch` remains disabled; do not recreate unless Mark asks.
 
 ## LIVE COMMITMENTS
 
@@ -213,6 +240,7 @@ HUMAN_VIEW != NEW_EVIDENCE
 RECORDING != OWNING
 RECORDING != CONTINUATION
 PRESERVATION != EXTRACTION
+PROJECT_NEEDS_RESOURCES != PROJECT_EXISTS_TO_MAKE_MONEY
 ```
 
-Consequential release/canon/licence, spend, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes retain their established gates.
+Consequential gates remain for future release/canon/licence/baseline changes, spend/provider commitments, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes.
