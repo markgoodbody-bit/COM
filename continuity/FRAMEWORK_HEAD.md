@@ -45,24 +45,42 @@ AI_BUILT != AI_FACING_ONLY
 HUMAN_VIEW != NEW_EVIDENCE
 ```
 
-Human Record current main: `15a2be9a2a97a18c84790e5bae40c81af1a430a5`.
+Human Record current main: `f968bdcae50d2c0e5f8c6a9b11d4c1b23491651f`.
 
-PR #6 established the human-facing `/records/` browser and readable views. Codex later verified the PR #6 public deployment against exact pinned source bytes.
+PR #6 established the human-facing `/records/` browser. PR #7 established the semantic record contract, selection discipline and self-contained correction/continuation route. PR #9 added the first living-knowledge transmission-lineage case.
 
-PR #7 merged the next foundation:
-- `RECORD_CONTRACT.md`: minimum semantic questions earned by the existing records, explicitly not a universal schema/ontology/canon;
-- `SELECTION.md`: bounded record-selection discipline around recoverability, provenance, strongest owners and legitimate consent/control;
-- `records/about.html`: plain-language “How records work” page;
-- self-contained current correction/continuation authority in the Human Record repository;
-- COM retained as historical build/source lineage rather than operational dependency;
-- dated Homer operational-route/source-ownership repair with original evidence unchanged;
-- contribution, catalogue, machine entrance and sitemap integration.
+## CURRENT THR RECORDS
 
-Fresh public delivery of PR #7 is **not yet witnessed from the current Framework aperture** because its public-domain DNS path is unavailable. Source/main state is verified. Do not collapse `MERGED_SOURCE` into `FRESH_PUBLIC_READBACK`.
+1. **Winslow Homer, Camp Fire (1880)** — artwork provenance / owner-source reconciliation.
+2. **Viral “80% of German flak crews died” claim** — claim provenance / source ancestry under repetition.
+3. **Sieve and riddle making returns from extinction** — living-knowledge transmission lineage / public evidence around break, revival and the missing tacit-transfer edge.
+
+The third record was selected only after strongest-owner subtraction:
+- Heritage Crafts owns current UK craft-status, viability, practitioner-count, training and safeguarding work better;
+- THR therefore does not classify or “save” the craft;
+- THR records a narrower public-source lineage: reported last maker -> retirement/break -> extinct classification -> Red List/media attention -> new makers/training -> still fragile;
+- the exact tacit skill-transmission path remains UNKNOWN.
+
+Source independence:
+- 2009 Guardian reporting from Mike Turnock's workshop = one independent reporting group;
+- Heritage Crafts 2019 announcement + current page = one institutional evidence group, not two witnesses;
+- linked practitioner process site was not retrieved by the research aperture and is not used as evidence.
+
+Living-practitioner boundary:
+
+```text
+PUBLIC SOURCES ONLY
+NO PRACTITIONER CONTACT
+NO ENDORSEMENT / PARTICIPATION CLAIM
+NO PRIVATE / UNPUBLISHED PROCESS MATERIAL
+NO DETAILED CRAFT MANUAL
+```
+
+Any practitioner-specific capture of tacit knowledge, workshop practice, tools, voice, video or teaching requires a separate permission/authority decision.
 
 ## THR RECORD DISCIPLINE
 
-Common semantic questions now held:
+Common semantic questions now held across three non-identical record types:
 
 ```text
 IDENTITY
@@ -83,9 +101,10 @@ COMMON QUESTIONS != IDENTICAL OBJECTS
 RECORD CONTRACT != UNIVERSAL ONTOLOGY
 BUILD_PROVENANCE != CURRENT_RECORD_AUTHORITY
 STRUCTURE != TRUTH
+RECORDING != CONTINUATION
+ATTENTION_PATHWAY != SKILL_TRANSMISSION
+PUBLIC_SOURCE != ENDORSEMENT
 ```
-
-The current Homer and flak machine records do not need identical field names merely for symmetry.
 
 ## THR SELECTION / NEXT EDGE
 
@@ -97,30 +116,19 @@ LINEAGE LOSS
 LIVING-KNOWLEDGE LOSS
 ```
 
-THR is naturally strongest at **lineage loss**. It may assist content loss. It cannot substitute for living transmission.
+THR remains naturally strongest at **lineage loss**. It may assist content loss. It cannot substitute for living transmission.
+
+Record 3 demonstrates the rule rather than changing it: public evidence can preserve a break/revival lineage while failing to preserve the skill itself.
+
+Next move is **observe/correct, then return to quarry**. Do not infer record 4 merely because record 3 exists.
 
 Candidate quarry remains:
-- endangered craft / embodied technical skill;
 - vulnerable audiovisual or oral records;
 - contemporary human digital creation with inspectable provenance;
 - disappearing web-native/community material;
 - born-digital/software-dependent creative work;
+- further endangered craft/embodied skill only where a distinct lineage gap survives;
 - endangered language/community knowledge only where community-led and appropriate.
-
-This is quarry, not a queue or a ranking of human value.
-
-Before specimen 3:
-
-```text
-REAL AT-RISK OBJECT / PRACTICE / CLAIM?
--> STRONGEST OWNER?
--> SPECIFIC LINEAGE / RECOVERABILITY GAP?
--> LEGITIMATE ACCESS / CONSENT?
--> SMALLEST USEFUL RECORD?
--> CAN UNKNOWN REMAIN VISIBLE?
--> CAN CORRECTION REMAIN OPEN?
--> BUILD OR ROUTE / STOP
-```
 
 For living people/communities:
 
@@ -131,9 +139,15 @@ PRESERVATION != EXTRACTION
 COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
 ```
 
+## DELIVERY / EVIDENCE STATE
+
+- PR #6 public browser deployment was independently verified by Codex against exact pinned source bytes at `475140ba...`.
+- PR #7 and PR #9 source/main states are verified in GitHub.
+- Fresh public byte readback of the newer paths is not established from the current Framework aperture; direct public fetch/search did not provide a valid new-path readback. Do not collapse `MERGED_SOURCE` into `FRESH_PUBLIC_READBACK`.
+
 ## WORLD-FIRST RESULT — NO DELTA REMAINS VALID
 
-COM #346 remains closed/owner-routed; do not reopen the cross-system agent-action correlation seam. Public-sector automated-decision/redress look likewise produced no local gap. The THR work is improvement of an existing object under direct human instruction, not resurrection of a killed world gap.
+COM #346 remains closed/owner-routed; do not reopen the cross-system agent-action correlation seam. Public-sector automated-decision/redress look likewise produced no local gap. THR work is improvement of an existing object under direct human instruction, not resurrection of a killed world gap.
 
 ```text
 NO_DELTA = SUCCESS
@@ -183,6 +197,7 @@ OFFERED != ACCEPTED
 AI_BUILT != AI_FACING_ONLY
 HUMAN_VIEW != NEW_EVIDENCE
 RECORDING != OWNING
+RECORDING != CONTINUATION
 PRESERVATION != EXTRACTION
 ```
 
