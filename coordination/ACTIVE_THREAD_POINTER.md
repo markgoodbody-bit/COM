@@ -16,20 +16,17 @@ PURPOSE > INSTRUMENT
 
 - **NO GENERAL WORLD-GAP LANE.** Open issues do not manufacture assignments. Latest unrelated world-first candidates were owner-subtracted and closed rather than rescued.
 - **COM #347 — THR HUMAN GIFT / PRODUCT-QUALITY LANE.** Direct Mark direction remains active: THR is collaboratively AI-built but intended as a gift for humans; third-party input is welcome but not required for product-quality progress; stewardship remains separate.
-- **THR main `8b4c4fe9b21c079b5f92bf28d9ad043547be1f6a`.** PR #13 merged the first bounded scale foundation: opaque entity/source/observation/assertion IDs, source preservation state, human-readable scale architecture and automatic cross-record/view integrity checks. Existing three evidence records were unchanged.
-- **THR SCALE BOUNDARY.** This is infrastructure beneath the human gift, not a new universal knowledge-graph purpose. Registries remain sparse and grow only when repeated identity/source/assertion load earns them.
-- **IDENTITY.** `NAME != ENTITY`; `MENTION != ENTITY`; ambiguous identity may remain unresolved or multi-candidate. No living-practitioner profile registry was opened.
+- **THR main `d4f69aa56f664f0ec494d06dacb4f1a7936faea7`.** PR #13 established the bounded scale foundation; PR #14 hardened the shared validator to fail closed; PR #16 operationalized first-class mentions and source-currentness receipts. Existing three evidence records remain unchanged.
+- **THR INTEGRITY / DELIVERY.** Exact PR #16 head and exact merged-main head passed `Validate Human Record integrity`. GitHub Pages build/deployment succeeded for exact main `d4f69aa...`. This is deployment-system evidence, not a fresh independent HTTP byte readback of every public route.
+- **IDENTITY / MENTIONS.** `NAME != ENTITY`; `MENTION != ENTITY`; mentions may resolve, remain candidate, or remain unresolved. The new mention registry deliberately resolves the existing Winslow Homer owner-source mention while leaving the public Mike Turnock mention `unresolved_not_required`; no living-person entity profile was created merely because a public source names him.
+- **SOURCES / CURRENTNESS.** `URL != SOURCE`; `SOURCE CHECK != RECORD EVIDENCE`. New `registry/source-checks.json` keeps maintenance/currentness receipts separate from evidence observations. The first three retrieval-surface checks returned cached content, so `live_http_state = not_established`; no unchanged-content, live-origin or preservation claim was made.
+- **PRESERVATION.** `OBSERVATION != PRESERVED COPY`; preservation debt may remain explicit. THR should interoperate with stronger archives/standards rather than copy the web by default. No archive submission or institutional contact occurred.
 - **ASSERTIONS.** `ENTITY != ASSERTION`; claims retain evidence, scope and correction independently of durable entity IDs. Source statements do not become THR truth merely by entering a registry.
-- **SOURCES / PRESERVATION.** `URL != SOURCE`; `SOURCE != OBSERVATION`; `OBSERVATION != PRESERVED COPY`; preservation debt may remain `not_yet_checked`. THR should interoperate with stronger archives/standards rather than copy the web by default.
-- **AUTOMATED INTEGRITY.** Exact PR head and exact merged-main head passed the new `Validate Human Record integrity` workflow. Structural pass checks routes, human-view source pins, opaque-ID uniqueness and cross-registry references; `STRUCTURAL PASS != HISTORICAL TRUTH`.
-- **THR PUBLIC DELIVERY.** Main/source state and main integrity CI are verified at `8b4c4fe9...`; IndexNow succeeded. Pages deployment for this exact head was still running at the initial merge receipt. Do not collapse source/CI/deployment state into fresh public-byte readback.
-- **NEXT THR EDGE — OBSERVE / CORRECT SCALE LAYER.** Do not immediately infer record 4 or a large database. Use the scale machinery against real repeated-identity/source-currentness load; correct defects; return to `SELECTION.md` quarry only when a distinct recoverability/lineage gap earns another record.
-- **COM #346 — CLOSED / OWNER_ROUTE / NO PROJECT ACTION.** Tested cross-system affected-party agent-action correlation seam remains killed; do not reopen by momentum.
+- **NEXT THR EDGE — OBSERVE / CORRECT OPERATIONAL SCALE LAYER.** Pressure-test mention resolution, source drift/currentness, preservation debt and generated-view load on real cases. Do not infer record 4, universal identity coverage, or a large database by momentum.
+- **COM #346 — CLOSED / OWNER_ROUTE / NO PROJECT ACTION.** Cross-system affected-party/action-correlation seam remains killed; do not reopen.
 - **COM #345 — SECONDARY RESPONSE-HARVEST / POST-FALSIFICATION.** No fifth venue; only substantive answer-back earns work.
 - **COM #336 — CLOSED / COLD LEDGER.** Do not replay as current coordination.
-- COM #340 / PR #344 — merged protocol text; fresh-aperture `NO_MARK_POKING` execution observation remains owed.
 - COM #341 / PSFH D068 — live; reader benefit unestablished; do not rebuild by momentum.
-- COM #342 / Human Record contribution route — outside corrections/contributions remain useful evidence/answer-back, not a prerequisite for current product-quality work.
 - Listing 23 submission 490 / Two Parents — owner-result watch only; `SUBMITTED != AWARDED != PAID`.
 
 ## THR current stack
@@ -47,13 +44,24 @@ Current evidence records:
    sieve and riddle making
 ```
 
-Current cross-record scale layer:
+Current scale substrate:
 
 ```text
-MENTION -> ENTITY CANDIDATE(S)
-SOURCE LOCATOR -> TIMED OBSERVATION -> PRESERVATION ROUTE
-ASSERTION -> EVIDENCE + SOURCE ANCESTRY + SCOPE
-RECORD STATE -> HUMAN VIEW + MACHINE VIEW
+SOURCE-LITERAL MENTION
+-> ZERO / ONE / MANY ENTITY CANDIDATES
+-> RESOLVED OR HONESTLY UNRESOLVED
+
+SOURCE ID
+-> LOCATOR(S)
+-> EVIDENCE OBSERVATION(S)
+-> OPERATIONAL SOURCE CHECK(S)
+-> PRESERVATION STATE / ROUTE
+
+ASSERTION
+-> EVIDENCE + SOURCE ANCESTRY + SCOPE
+
+RECORD STATE
+-> HUMAN VIEW + MACHINE VIEW
 ```
 
 Working public models / registries:
@@ -63,36 +71,35 @@ Working public models / registries:
 - `SOURCE_MODEL.md`
 - `ASSERTION_MODEL.md`
 - `registry/entities.json`
+- `registry/mentions.json`
 - `registry/sources.json`
+- `registry/source-checks.json`
 - `registry/assertions.json`
 - `records/architecture.html`
+- `tools/validate_integrity.py`
+- `tools/validate_operational.py`
+- `.github/workflows/validate-integrity.yml`
 
-Durable receipt: `coordination/build_ledger/THR_SCALE_FOUNDATIONS_20260916.md`.
-
-## THR separation
-
-```text
-STEWARDSHIP = OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED
-PRODUCT QUALITY = ACTIVE
-THIRD-PARTY CONTRIBUTION = WELCOME / NOT REQUIRED FOR PROGRESS
-AI_BUILT != AI_FACING_ONLY
-HUMAN_VIEW != NEW_EVIDENCE
-BUILD_PROVENANCE != CURRENT_RECORD_AUTHORITY
-```
-
-Current Human Record operational source, correction route and continuation surface are the `markgoodbody-bit/human-record` repository itself. Earlier COM specimen material remains useful build/source lineage, not an operational dependency.
+Durable receipts:
+- `coordination/build_ledger/THR_SCALE_FOUNDATIONS_20260916.md`
+- `coordination/build_ledger/THR_OPERATIONAL_SCALE_20260916.md`
 
 ## Scale commitments
 
 ```text
 NAME != ENTITY
 MENTION != ENTITY
+MENTION EXISTS != ENTITY PROFILE REQUIRED
 ENTITY != ASSERTION
 ASSERTION != TRUTH
 SOURCE STATEMENT != THR ENDORSEMENT
 IDENTITY RESOLUTION != IDENTITY CERTAINTY
 URL != SOURCE
 SOURCE != OBSERVATION
+SOURCE CHECK != RECORD EVIDENCE
+RETRIEVAL SURFACE != LIVE ORIGIN
+CACHED CONTENT AVAILABLE != LIVE TODAY
+LIVE TODAY != PRESERVED
 OBSERVATION != PRESERVED COPY
 PRESERVED COPY != TRUTH
 FAILED FETCH != SOURCE GONE
@@ -113,11 +120,22 @@ COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
 BETTER MATCHING != MORE SURVEILLANCE
 ```
 
+## THR separation
+
+```text
+STEWARDSHIP = OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED
+PRODUCT QUALITY = ACTIVE
+THIRD-PARTY CONTRIBUTION = WELCOME / NOT REQUIRED FOR PROGRESS
+AI_BUILT != AI_FACING_ONLY
+HUMAN_VIEW != NEW_EVIDENCE
+BUILD_PROVENANCE != CURRENT_RECORD_AUTHORITY
+```
+
 ## Stable/watch state
 
-- Four off-Square campaign routes: response-harvest only; silence is not rejection.
+- Off-Square AI-interest routes: response-harvest only; no new placement.
 - Square: genuine answer-back gets first claim when it changes the object; account identity != operator independence.
-- SwarmMemo HOLD / REPLY-ONLY; Agent Tavern DEFERRED; Get Posting Board NO-GO; Moltbook NO-GO under current boundary.
+- SwarmMemo HOLD / REPLY-ONLY; Agent Tavern DEFERRED; Get Posting Board NO-GO; Moltbook NO-GO.
 - AI Product Index PSFH + THR listings: discovery route, not read/use.
 - llms-txt-hub #1648/#1649: owner-review watches; no chase.
 - TRACE v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
