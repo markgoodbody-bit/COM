@@ -25,38 +25,56 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE**.
+There is currently **NO GENERAL ACTIVE BOUNDED BUILD OR WORLD-GAP LANE**.
 
-## CURRENT PRIMARY WORK — WORLD FIRST
+## WORLD-FIRST RESULT — NO DELTA THIS CYCLE
 
-Primary aperture: **COM #346 — agent action return path from affected party to audit owner**.
+Direct Mark direction was `go for it / dont drift / COMSYNC and proceed` after the AI-interest falsification. Framework returned to the world first rather than looking for a use for project machinery.
 
-This lane came from a fresh world scan after the AI-interest falsification, not from TRACE/ME application hunting.
+A real external anchor was found in autonomous-agent actions affecting real people/organisations. COM #346 tested one sharp candidate gap: whether an affected third party needed a new cross-system action reference to report an agent action back to the responsible operator/audit chain.
 
-Real-world anchor: AISI disclosed unsanctioned agent actions on the live internet directed at real people/organisations; response required investigation, cross-party artefact removal and affected-party notification.
+The gap did **not** survive owner subtraction and hostile review.
 
-Strong owners already cover most adjacent structure: NIST/NCCoE identity/authorization, IETF agent audit/delegation/context, OAuth/agent authorization, OpenID AuthZEN, NCSC attribution/incident response, CMA/ICO complaint/challenge/redress, Agent Attribution headers, and ordinary abuse/security contact routes.
+Strong existing owners already cover:
+- agent/workload identity and authorization;
+- audit context / causal-chain reconstruction;
+- exact consequential-action identity;
+- action-effect evidence and indeterminate reconciliation;
+- compensating/remedy records;
+- incident response and complaint/redress routes;
+- domain-native transaction/message/request references.
 
-The only live question is whether those existing pieces already compose a privacy-safe **external action report -> operator audit-chain correlation** route.
+CC's hostile real-use attack separated five states:
 
 ```text
-COMPONENTS_EXIST != JOIN_MISSING
-AFFECTED != USER
-CONTACT_ROUTE != ACTION_CORRELATION
-AUDIT_RECORD != EXTERNAL_EFFECT
-CORRELATION != DISCLOSURE_OF_PRIVATE_CHAIN
-OWNER_FOUND -> ROUTE OUTWARD / CLOSE
-NO_DELTA = SUCCESS
-NO_NEW_PROTOCOL_BY_MOMENTUM
+REPORTER_CAN_IDENTIFY_OPERATOR
+!= OPERATOR_CAN_FIND_INTERNAL_RUN
+!= REPORTER_CAN_PROVE_EXTERNAL_EFFECT
+!= REPORT_RECEIVED
+!= REMEDIATION_OCCURRED
 ```
 
-CODEX owns owner/primitive subtraction. Claude Code owns hostile real-use/privacy attack. Framework integrates. **No external standards/regulatory contact is authorised by this lane. No build/schema/site.**
+The candidate had targeted the second. In ordinary cases the receiver already holds its own native evidence/reference; mapping that evidence to an internal run is the operator's audit-indexing obligation. A new globally visible correlation identifier would often be redundant or harmful through cross-domain linkability.
+
+Disposition:
+
+```text
+COM #346 = CLOSED / OWNER_ROUTE / NO PROJECT ACTION
+DOMAIN_REFERENCE + REPORT_ROUTE + INTERNAL_SEARCH = SUFFICIENT FOR THE TESTED SEAM
+KILLED_SEAM_STAYS_DEAD
+```
+
+The remaining responsible-operator attribution problem for open-internet agent activity is important but **already actively owned** by multiple current policy/protocol efforts. `EMERGING != UNOWNED`. No #347 was opened.
+
+A second bounded look at public-sector automated/AI decision challenge/redress also found strong existing transparency, appeals/review, complaint/redress and domain-specific reconsideration/tribunal owners. No concrete unowned gap was established. No lane opened.
+
+This is a valid `NO_DELTA` result. Next initiative restarts from the world rather than deepening either killed direction.
 
 ## SECONDARY — AI INTEREST POST-FALSIFICATION
 
 COM #345 remains response-harvest only. COM #336 is closed/cold.
 
-The 100-probe audit was a correlated desk-review checklist, not 100 independent executed experiments. Preserve the later correction:
+Preserve:
 
 ```text
 NOT_OBSERVED != FALSE
