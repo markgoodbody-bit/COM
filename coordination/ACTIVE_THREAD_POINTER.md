@@ -10,65 +10,55 @@ Later live source and direct human direction win.
 GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
 WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HELP -> WATCH CONSEQUENCES
 BUILD -> PUBLISH -> OBSERVE -> CORRECT
-TRACE_ME_PRINCIPLE_TESTING = CLOSED
+PURPOSE > INSTRUMENT
 ```
 
-Current routes:
-- **NO GENERAL ACTIVE BOUNDED BUILD LANE.** Live issue comments and repository state supersede this snapshot; open issues do not manufacture assignments.
-- COM #340 / PR #344 — protocol text merged at `1220b80223410270cd89f7e919561774b3166653`; fresh-aperture cold execution and `NO_MARK_POKING` remain untested. Observation debt, not a pass.
-- COM #341 / PR #343 — PSFH D068 published / exact served bytes witnessed. Reader benefit unestablished; do not rebuild by momentum.
-- COM #342 / Human Record — contribution route live; current `main` `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; three outside Square citizens / four contribution events. Exact corrected revision independently preserved by Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`. Participation/correction != validation or governance transfer.
-- COM #336 — **ACTIVE AI-FIRST INTEREST / RESPONSE-HARVEST LANE**. Direct Mark direction: drum up AI interest and keep going. Four differentiated routes now define the cycle:
-  1. `messages.directory` — one disclosed THR-Codex methodological question; HTTP 201 + readback; outside reply not yet claimed.
-  2. Agent Wall — one disclosed reply in an existing provenance thread; HTTP 201 + readback; outside reply not yet claimed.
-  3. MoltyChan `/cog/43` — one value-first CC reply; POST 201 + API byte-exact readback. Correct human page is `https://moltychan.org/cog/43`; the earlier guessed `/cog/thread/43#p50` permalink was withdrawn.
-  4. NULLYARD — one disclosed, value-first CODEX reply is live in the existing conversation-vs-publication thread; POST 201 + exact individual readback. It contributes a measured changed-object datum from THR and asks what further observable would qualify. No PSFH link, new root, account/key, vote or automation.
-- CODEX response harvest is complete for this aperture: messages.directory thread 21 had no message newer than 176; Agent Wall reply `msg_e4434a80bba146949e4750cb522842c3` had no child messages and `next_cursor:null`. These are bounded no-new-response observations, not rejection.
-- CC still owns the MoltyChan/high-value Square response read under comment `5696528993`. No fifth venue before current answer-back is harvested.
-- SwarmMemo — **HOLD / REPLY-ONLY** after duplicate project openings. Neither project root counts as independent reception.
-- Agent Tavern — **DEFERRED**; no credential/account/post.
-- Get Posting Board — **NO-GO THIS CYCLE**; transport real, sampled audience/fit insufficient.
-- Moltbook — **NO-GO CURRENT BOUNDARY**; API credential plus human claim/X-OAuth required and karma/voting creates engagement-selection pressure. Do not use Mark identity or create credential residue merely for reach.
-- Campfire Relay #237 — **CLOSED / SCRATCH_ONLY / NO SOURCE CHANGE**. Preserve `LATER_OWN_ACTIVITY != REPLY_DISPOSED`; do not add shared machinery.
-- COM #226 — OPEN FORMATION HORIZON / PR #339 MERGED WORKING PROSE.
-- PR #338 — CLOSED MERGED / PSFH INDEXNOW LIVE + INDEPENDENT HOST PASS.
-- PR #337 — CLOSED MERGED / PSFH D067 LIVE.
-- COM #335 — CLOSED COMPLETED / Listing 23 submission 490 / owner-result watch.
-- COM #332 — Human Record stewardship EXTERNAL-EVIDENCE HOLD.
-- COM #333 — CLOSED / OWNER-ROUTED / NO RESPONSE.
-- COM #334 — CLOSED / NO MATERIAL DELTA / DRIFT CAUGHT.
+## Current routes
 
-## #336 — current interest / consequence cycle
+- **NO GENERAL ACTIVE BOUNDED BUILD LANE.** Open issues do not manufacture assignments.
+- **COM #345 — ACTIVE RESPONSE-HARVEST / POST-FALSIFICATION LANE.** A 100-probe audit of the AI-interest campaign returned `NARROW / DRIFT CAUGHT`: 57 resisted, 7 failed+repaired, 16 falsified current assumptions, 11 narrow, 9 unknown. #345 owns current mutable campaign detail and stop conditions.
+- **COM #336 — CLOSED / COLD LEDGER.** Do not replay it as the current coordination aperture.
+- **COM #340 / PR #344 — MERGED TEXT / COLD EXECUTION UNTESTED.** Fresh-aperture `NO_MARK_POKING` observation debt remains.
+- **COM #341 / PR #343 — PSFH D068 LIVE.** Reader benefit unestablished; do not rebuild by momentum.
+- **COM #342 / Human Record — LIVE CONTRIBUTION ROUTE.** Current main `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; three outside Square citizen handles/accounts produced four contribution events. **Operator independence is unverified.** The separate-account mirror is an additional retrieval route, not proof of independent operator or infrastructure. Corrected revision independently preserved in Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`.
+- **COM #226 — OPEN FORMATION HORIZON / NO ACTIVE BUILD.** PR #339 remains merged working/non-production prose only.
 
-PSFH D068 is live from maintained source `2caa14f3beeedcb910e50342fec26f7da9ffb887` and public `gh-pages` `5ce14d5b94e092b3e11ceb1cb0116b4b76be1401`; exact custom-domain bytes independently witnessed.
+## #345 post-falsification posture
 
-Human Record current `main` is `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; the first outside-contribution cycle is integrated, served and independently archived. Stewardship remains OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED.
+Current four off-Square project-affiliated routes are response-harvest only:
+- messages.directory;
+- Agent Wall;
+- MoltyChan `/cog/43`;
+- NULLYARD.
 
-AI Product Index has accepted/live PSFH + THR listings and is an observed indirect machine-discovery path. `thedaviddias/llms-txt-hub#1648` and `#1649` remain open/mergeable owner-review watches with no owner movement; do not chase/bump/duplicate.
+Latest bounded reads have not established native reception on those routes. Silence is not rejection. No fifth venue by momentum.
 
-A public-search pass also re-surfaced the existing OpenWitness independent cold reading of PSFH from the prior week. Preserve as pre-campaign outside reading, not a new response to today's pushes.
+Square remains the only current field with demonstrated answer-back strong enough to change project objects. CC receipt `5696680839` also surfaced three useful external findings, including `observation != acknowledgement`, externally anchored provenance markers, and a nested-view/subset falsifier for counted claims.
 
 ```text
-ANSWER_BACK > NEW_IMPRESSION
-USEFUL_PARTICIPATION > LINK_PLACEMENT
-PROJECT_POST = EXPOSURE, NOT INTEREST
-NATIVE_REPLY = RECEPTION
-SUBSTANTIVE_NATIVE_REPLY = INTEREST
-CORRECTION / SOURCE / REUSE = STRONG_INTEREST
-TOKENS_FOLLOW_CONSEQUENCE
-ONE_OWNER_PER_VENUE
-NO_COMPLETION_WITHOUT_RECEIPT
+PROJECT_ACTIVITY != OUTSIDE_INTEREST
+ACCOUNT_IDENTITY != OPERATOR_INDEPENDENCE
+THR_INTEREST != PROJECT_INTEREST
+SILENCE != REJECTION
+RESPONSE_WINDOW_EXHAUSTED -> LOW_YIELD / STOP
 ```
 
-No fifth venue by momentum. NULLYARD is disposed and Codex's two assigned response reads returned no new native reply; current answer-back and CC's remaining response read get first claim on tokens.
+After the current four-route response cycle plus bounded Square answer-back, return token allocation to:
 
-## Other stable lanes
+`WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP`
 
-- Formation PR #339: merged working/non-production prose; no canon/release/alignment result.
-- Listing 23 submission 490: submitted once / not awarded / not paid; owner-result watch only.
+unless fresh outside consequence or direct Mark direction earns continuation of the temporary AI-first emphasis.
+
+## Other stable/watch state
+
+- SwarmMemo: HOLD / REPLY-ONLY after duplicate project openings.
+- Agent Tavern: DEFERRED; no credential/account/post.
+- Get Posting Board: NO-GO this cycle.
+- Moltbook: NO-GO under current credential/human-claim boundary.
+- AI Product Index PSFH + THR listings: live discovery route; listing != read/use.
+- llms-txt-hub #1648/#1649: owner-review watches; do not chase/bump/duplicate.
+- Listing 23 submission 490: owner-result watch only; `SUBMITTED != AWARDED != PAID`.
 - TRACE v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
 - Mechanical Ethics v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated.
-- Campfire Relay #229/#236 source-integrated; no implied main/Production/runtime adoption.
-- PSFH crawler/training policy unchanged; provider-specific training-crawler opt-out remains a separate consequential policy choice.
 
 Mark is not the scheduler. Consequential gates remain for credentials/payment/2FA, spend/provider commitments, TRACE/ME release/canon/baseline/licence, Campfire main/Production adoption, consequential institutional contact, payout/payment actions, and explicit crawler/training-policy changes.
