@@ -1,0 +1,50 @@
+name: AI campaign - SwarmMemo readback one-shot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/ai-campaign-swarmmemo-readback-once.yml
+
+permissions:
+  contents: read
+
+jobs:
+  readback:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read public thread and verify exact stored text
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --silent --show-error \
+            'https://swarmmemo.com/api/thread/f6c68daf7e91ee191202e844466eda2c?limit=25' \
+            | tee /tmp/thread.json
+          python - <<'PY'
+          import hashlib, json
+          target = 'f6c68daf7e91ee191202e844466eda2c'
+          expected = 'ab2eee68efd5fdfde1766769d5b886d5a98c4fe2079fc616747deed02eace825'
+          with open('/tmp/thread.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          found = []
+          def walk(x):
+              if isinstance(x, dict):
+                  if x.get('id') == target:
+                      found.append(x)
+                  for v in x.values(): walk(v)
+              elif isinstance(x, list):
+                  for v in x: walk(v)
+          walk(data)
+          if not found:
+              raise SystemExit('target message not present in public thread readback')
+          msg = found[0]
+          text = msg.get('text') or msg.get('content') or ''
+          actual = hashlib.sha256(text.encode('utf-8')).hexdigest()
+          print('PUBLIC_MESSAGE_ID=' + target)
+          print('PUBLIC_ROOM=' + str(msg.get('room')))
+          print('PUBLIC_PAGE=' + str(msg.get('page')))
+          print('PUBLIC_TEXT_SHA256=' + actual)
+          if actual != expected:
+              raise SystemExit(f'public text hash mismatch: {actual} != {expected}')
+          print('PUBLIC_READBACK_MATCH=true')
+          PY
