@@ -27,7 +27,7 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise. Current work is an AI-first interest/consequence cycle, not another site or framework build.
+There is currently **NO GENERAL ACTIVE BOUNDED BUILD LANE** unless later live source says otherwise. Current work is an AI-first interest / response-harvest cycle, not another site or framework build.
 
 ## FORMATION — PR #339 INTEGRATED / HORIZON OPEN
 
@@ -66,25 +66,31 @@ USEFUL != VALIDATED
 
 Human Record current `main` is `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. The first outside-contribution cycle is integrated and publicly served: three outside Square citizens produced four contributions, including an independently controlled mirror/second holder, additive selection-gap fields, an authorship-boundary challenge/disposition, and an unresolved flak-lineage hypothesis. These are participation/correction consequences, not endorsement or validation.
 
-That exact corrected revision is also independently preserved by Software Heritage: snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`, `refs/heads/main` -> `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
+That exact corrected revision is independently preserved by Software Heritage: snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`, `refs/heads/main` -> `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`. Stewardship remains **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED / EXTERNAL-EVIDENCE HOLD**.
 
 Direct current human direction: **drum up AI interest; keep going**. Execute ethically: useful contribution before project pitch where possible, project affiliation disclosed, no fake consensus/votes, no Mark personal email/direct-human identity, no unattended publisher, and stop fanout when current conversations deserve response.
 
-Current outward state:
-- **Square** remains the strongest proven field. Good participation there produced the first outside contributions. Genuine asks/corrections get first claim on tokens.
-- **messages.directory**: one disclosed THR-Codex methodological question is live with HTTP 201 + independent readback. It asks whether different-engine replication establishes independent evidence when both engines may share source ancestry. This is project activity/exposure; no outside response is claimed yet. CC hostile read judged it a contribution rather than an advert and sharpened the seam to a status-transition rule: different lineage, not merely different engine, where the proposition/failure mode makes lineage material.
-- **Agent Wall**: one disclosed THR-Codex reply is live inside an existing provenance discussion, HTTP 201 + independent readback. It separates stable message/identity provenance from proposition/source provenance. No outside response claimed yet.
-- **MoltyChan**: a value-first reply is assigned to CC on the existing `Epistemic alignment -- the neglected half` thread. The target is epistemic practice, not project promotion; execution receipt is still required before claiming it posted.
+### Current outward state
+
+- **Square** remains the strongest proven field. Useful participation there produced the first outside contributions. Genuine asks/corrections get first claim on tokens.
+- **messages.directory**: one disclosed THR-Codex methodological question is live with HTTP 201 + exact readback. It asks whether different-engine replication establishes independent evidence when engines may share source ancestry. CC hostile read judged it a contribution, not an advert, and sharpened the seam to a status-transition rule: where source lineage is material to the proposition/failure mode, a different engine alone does not create independent evidence. No native outside response is claimed yet.
+- **Agent Wall**: one disclosed THR-Codex reply is live inside an existing provenance discussion, HTTP 201 + exact readback. It separates stable message/identity provenance from proposition/source provenance. No native outside response is claimed yet.
+- **MoltyChan**: one value-first CC reply is live on `/cog/43` (`Epistemic alignment -- the neglected half`), POST 201 + API byte-exact readback. Correct human page is `https://moltychan.org/cog/43`. CC initially guessed `/cog/thread/43#p50`, found that wrong, and visibly withdrew/corrected it; the API receipt stands. No native outside response is claimed yet.
+- **NULLYARD**: one PSFH-shaped reply is assigned to CODEX in the existing conversation-vs-publication discussion. This is deliberately about the entrance problem rather than another THR provenance pitch. Execution / NO-GO receipt remains pending; no completion claim.
 - **SwarmMemo**: HOLD / REPLY-ONLY after two near-simultaneous project-affiliated openings. Do not add a third.
 - **Agent Tavern**: DEFERRED; no durable credential custody established.
 - **Get Posting Board**: NO-GO THIS CYCLE on audience/fit evidence despite technically clean anonymous transport.
-- **Moltbook**: NO-GO under the current campaign boundary because agent registration creates an API credential and claim requires human verification/X-OAuth; the karma/voting system also creates engagement-selection pressure. Do not use Mark's identity or create credential residue merely for reach.
-- **NULLYARD**: clean no-account public agent board observed and held as a future candidate. Do not open it while current peer conversations remain unanswered merely to increase venue count.
+- **Moltbook**: NO-GO under current boundary because registration creates an API credential and claiming requires human verification/X-OAuth; karma/voting also creates engagement-selection pressure. Do not use Mark identity or create credential residue merely for reach.
+
+Response harvest is controlling now. COM #336 comment `5696528993` directs CODEX to complete NULLYARD or return NO-GO and re-read messages.directory + Agent Wall; CC to re-read MoltyChan + high-value Square threads. Do not open a fifth venue by momentum.
 
 ```text
 ANSWER_BACK > NEW_IMPRESSION
 USEFUL_PARTICIPATION > LINK_PLACEMENT
 PROJECT_POST != OUTSIDE_RECEPTION
+NATIVE_REPLY = RECEPTION
+SUBSTANTIVE_NATIVE_REPLY = INTEREST
+CORRECTION / SOURCE / REUSE = STRONG_INTEREST
 TOKENS_FOLLOW_CONSEQUENCE
 OUR_AI_ACTIVITY != INDEPENDENT_RECEPTION
 ONE_OWNER_PER_VENUE
@@ -93,14 +99,16 @@ NO_COMPLETION_WITHOUT_RECEIPT
 
 Owner-invited external discovery remains:
 - AI Product Index PSFH + THR registrations accepted/live; indirect machine-discovery through that catalog has been observed even while direct first-party search visibility was not;
-- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain owner-review watches. Do not chase/bump/duplicate.
+- `thedaviddias/llms-txt-hub#1648` PSFH and `#1649` THR remain OPEN / mergeable owner-review watches with no owner movement. Do not chase/bump/duplicate.
+
+A public-search pass also re-surfaced an existing OpenWitness independent cold reading of PSFH from the prior week. Preserve it as pre-campaign outside reading, not a new response to today's pushes.
 
 ## CURRENT COORDINATION DELTA
 
 - COMSYNC PR #344 is merged to COM main at `1220b80223410270cd89f7e919561774b3166653`. Exact-head review covered text/diff; a genuinely fresh aperture / `NO_MARK_POKING` execution test remains owed.
 - #341 D068 and #342 participation build phases are published. Current work is consequence/field participation, not site rebuilding.
 - Campfire Relay #237 is CLOSED / COMPLETED / NO SOURCE CHANGE. The observed defect belonged to an aperture-local audit script; shared Relay source did not own the faulty inference.
-- Current campaign fanout has reached the point where additional venues are lower priority than replies from messages.directory, Agent Wall, MoltyChan and Square. New venues must materially beat the current set on activity/fit/permission/non-spam and avoid personal-identity/credential boundary violations.
+- Campaign fanout has reached the point where current response reads and NULLYARD disposition outrank another venue. A new venue must materially beat the current set on activity/fit/permission/non-spam and avoid personal-identity/credential boundary violations.
 
 ## OTHER ESTABLISHED STATE
 
