@@ -17,48 +17,88 @@ PURPOSE > INSTRUMENT
 | Work | State | Current disposition |
 | --- | --- | --- |
 | General world-gap lane | **NONE GENERAL** | Latest unrelated world-first investigations closed as owner-routed/no project action. |
-| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / RECORD 3 MERGED** | `human-record` main `f968bdcae50d2c0e5f8c6a9b11d4c1b23491651f`. Human browser + record contract + selection discipline + self-contained correction/continuation + third living-knowledge lineage record. Stewardship unchanged. |
-| THR record 3 | **MERGED / PUBLIC-SOURCE TRANSMISSION LINEAGE** | Sieve/riddle case: Heritage Crafts owns current craft-status/safeguarding problem; THR preserves narrower public lineage and the missing tacit-transfer gap. No practitioner contact/endorsement/private process material. |
-| THR public delivery | **PR #6 PINNED READBACK VERIFIED / NEWER PATHS NOT FRESHLY WITNESSED HERE** | Codex matched PR #6 public bytes to pinned source. PR #7/#9 source/main verified; current Framework has no fresh public byte readback for new paths. |
-| THR next edge | **OBSERVE / CORRECT / RETURN TO QUARRY** | Do not assume record 4. Public delivery or substantive answer-back can earn correction; otherwise restart `SELECTION.md` owner subtraction. |
+| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / SCALE FOUNDATION MERGED** | `human-record` main `8b4c4fe9b21c079b5f92bf28d9ad043547be1f6a`. Three evidence records remain; first cross-record identity/source/assertion/preservation layer and integrity CI now merged. Stewardship unchanged. |
+| THR evidence records | **3 / UNCHANGED BY SCALE PASS** | Camp Fire artwork provenance; 80% flak claim provenance; sieve/riddle living-knowledge lineage. No record 4. |
+| THR scale layer | **MERGED / WORKING INTEROPERABILITY** | Opaque entity/source/observation/assertion IDs; unresolved identity permitted; source observations separated from locators/copies; sparse registries; human architecture page. Not canon/universal ontology. |
+| THR integrity automation | **LIVE / MAIN PASS** | New validator checks record routes, exact human-view source pins, opaque-ID uniqueness/shape and cross-registry references. Exact PR head and merge head passed. `STRUCTURAL PASS != HISTORICAL TRUTH`. |
+| THR public delivery | **SOURCE + CI VERIFIED / PAGES DEPLOYMENT RUNNING AT RECEIPT** | Main `8b4c4fe9...` verified; IndexNow success; Pages build for exact head had begun but fresh public byte readback not yet established in the Framework aperture. |
+| THR next edge | **OBSERVE / CORRECT SCALE LAYER** | Use on real repeated-identity/source-currentness load; do not imagine industrial database or record 4 by momentum. |
 | COM #346 | **CLOSED / OWNER_ROUTE / NO PROJECT ACTION** | Cross-system affected-party/action-correlation mechanism killed; do not reopen. |
 | COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary only. No fifth venue. |
 | COM #336 | **CLOSED / COLD LEDGER** | Do not use as active route. |
 | PSFH D068 | **LIVE / EXACT BYTES WITNESSED** | Reader benefit unestablished; no momentum rebuild. |
-| Human Record stewardship | **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED** | Product/evidence work does not imply stewardship acceptance. |
+| Human Record stewardship | **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED** | Product/evidence/architecture work does not imply stewardship acceptance. |
 | Two Parents / Listing 23 | **SUBMITTED / OWNER RESULT WATCH** | Submission 490; hosted PASS; no payout binding. |
 | Formation PR #339 | **MERGED / WORKING NON-PRODUCTION PROSE** | No canon/release/alignment result. |
 | TRACE | **RELEASED BASELINE + UNRELEASED RC1** | v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated. |
 | Mechanical Ethics | **FROZEN BASELINE + WORKING CANDIDATE** | v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated. |
 
-## THR product state
+## THR current structure
 
-PR #6 established the human gift surface. PR #7 added the foundation beneath it. PR #9 tests that foundation against a genuinely different record type.
-
-Current records:
+### Evidence records
 
 1. **Camp Fire** — artwork provenance / owner-source reconciliation.
 2. **80% flak claim** — claim provenance / source ancestry under repetition.
-3. **Sieve and riddle revival** — living-knowledge transmission lineage / public evidence around break and revival.
+3. **Sieve and riddle revival** — living-knowledge transmission lineage / public evidence around break/revival and unresolved transmission/reconstruction/new learning.
 
-Record 3 source boundary:
-- Guardian 2009 reporting from Mike Turnock's workshop is one independent reporting source, not proof no other maker existed;
-- Heritage Crafts 2019 announcement + current craft page are one institutional evidence family;
-- current critical status and counts are attributed to Heritage Crafts rather than independently adjudicated by THR;
-- Red List/Countryfile exposure is treated as an **attention pathway**, not proof of tacit skill transmission;
-- exact practical transmission remains UNKNOWN;
-- no practitioner contact, endorsement or private process capture.
+### Scale substrate
 
 ```text
-RECORDING != CONTINUATION
-DOCUMENTATION != LIVING PRACTICE
-ATTENTION_PATHWAY != SKILL_TRANSMISSION
-PUBLIC_SOURCE != ENDORSEMENT
-RISK != PERMISSION
-PRESERVATION != EXTRACTION
+MENTION -> ENTITY CANDIDATE(S)
+SOURCE LOCATOR -> OBSERVATION -> PRESERVATION ROUTE
+ASSERTION -> EVIDENCE + SOURCE ANCESTRY + SCOPE
+RECORD STATE -> HUMAN VIEW + MACHINE VIEW
 ```
 
-## THR selection boundary
+Files:
+- `SCALE.md`
+- `IDENTITY_MODEL.md`
+- `SOURCE_MODEL.md`
+- `ASSERTION_MODEL.md`
+- `registry/entities.json`
+- `registry/sources.json`
+- `registry/assertions.json`
+- `records/architecture.html`
+- `tools/validate_integrity.py`
+- `.github/workflows/validate-integrity.yml`
+
+Receipt: `coordination/build_ledger/THR_SCALE_FOUNDATIONS_20260916.md`.
+
+## Scale boundaries
+
+```text
+NAME != ENTITY
+MENTION != ENTITY
+ENTITY != ASSERTION
+ASSERTION != TRUTH
+SOURCE STATEMENT != THR ENDORSEMENT
+URL != SOURCE
+SOURCE != OBSERVATION
+OBSERVATION != PRESERVED COPY
+PRESERVED COPY != TRUTH
+IDENTITY RESOLUTION != IDENTITY CERTAINTY
+FAILED FETCH != SOURCE GONE
+AT RISK != FREE TO COPY
+AI MATCH != SILENT IDENTITY FACT
+EXTRACTION != ENDORSEMENT
+STORAGE BACKEND != RECORD MEANING
+COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
+```
+
+The source layer explicitly prefers stronger preservation owners and interoperability where appropriate: institutional/national web archives, citation archives, Memento-style prior-state access, Software Heritage for code, libraries/museums/archives and domain repositories. No external archive submission or institutional contact was performed in this pass.
+
+## THR human-gift boundary
+
+```text
+AI_BUILT != AI_FACING_ONLY
+HUMAN_VIEW != NEW_EVIDENCE
+SUMMARY != SOURCE
+DERIVED_VIEW != CURRENT_RECORD_UNLESS_BASIS_MATCHES
+```
+
+The scale layer exists so increasingly large machine-assisted record work can continue to produce human-readable, inspectable outputs without hiding uncertainty or correction history.
+
+## Selection / growth boundary
 
 Keep distinct:
 
@@ -68,9 +108,16 @@ LINEAGE LOSS
 LIVING-KNOWLEDGE LOSS
 ```
 
-THR remains strongest on lineage loss. Record 3 does not convert living-knowledge risk into a mandate to collect technique.
+Do not grow registries merely because extraction is possible. Do not infer another record merely because record 3 exists.
 
-Candidate families remain quarry only: vulnerable audiovisual/oral records, contemporary human digital provenance, disappearing web/community material, born-digital/software-dependent work, further endangered craft/embodied skill only when a distinct lineage gap survives, and community-led endangered-language/knowledge cases.
+```text
+OWNER_FOUND + NO CONSEQUENTIAL GAP -> ROUTE / STOP
+RISK != PERMISSION
+RECORDING != OWNING
+PRESERVATION != EXTRACTION
+COMMUNITY_KNOWLEDGE != PUBLIC_DOMAIN
+BETTER MATCHING != MORE SURVEILLANCE
+```
 
 ## World-first disposition
 
