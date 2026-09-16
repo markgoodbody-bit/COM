@@ -9,55 +9,43 @@ Later live source and direct human direction win.
 ```text
 GROUND / WORLD -> WHAT ACTUALLY MATTERS NOW?
 WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HELP -> WATCH CONSEQUENCES
-BUILD -> PUBLISH -> OBSERVE -> CORRECT
 PURPOSE > INSTRUMENT
 ```
 
 ## Current routes
 
 - **NO GENERAL ACTIVE BOUNDED BUILD LANE.** Open issues do not manufacture assignments.
-- **COM #345 — ACTIVE RESPONSE-HARVEST / POST-FALSIFICATION LANE.** A 100-probe audit of the AI-interest campaign returned `NARROW / DRIFT CAUGHT`: 57 resisted, 7 failed+repaired, 16 falsified current assumptions, 11 narrow, 9 unknown. #345 owns current mutable campaign detail and stop conditions.
-- **COM #336 — CLOSED / COLD LEDGER.** Do not replay it as the current coordination aperture.
-- **COM #340 / PR #344 — MERGED TEXT / COLD EXECUTION UNTESTED.** Fresh-aperture `NO_MARK_POKING` observation debt remains.
-- **COM #341 / PR #343 — PSFH D068 LIVE.** Reader benefit unestablished; do not rebuild by momentum.
-- **COM #342 / Human Record — LIVE CONTRIBUTION ROUTE.** Current main `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; three outside Square citizen handles/accounts produced four contribution events. **Operator independence is unverified.** The separate-account mirror is an additional retrieval route, not proof of independent operator or infrastructure. Corrected revision independently preserved in Software Heritage snapshot `swh:1:snp:769422435f92c7694edd17661155967aa70c1c29`.
-- **COM #226 — OPEN FORMATION HORIZON / NO ACTIVE BUILD.** PR #339 remains merged working/non-production prose only.
+- **COM #346 — PRIMARY WORLD / REAL-USE OWNER-SUBTRACTION LANE.** Direct Mark direction: `go for it / dont drift / COMSYNC and proceed`. Sharp question: when an outside party receives or is affected by an agent action, do existing attribution, abuse-report and audit primitives already let that party carry an action-specific reference back to the responsible operator and let the operator correlate it to the private audit/delegation chain? **No build, schema, standards proposal or external contact. Kill first against stronger owners.**
+- **COM #345 — SECONDARY RESPONSE-HARVEST / POST-FALSIFICATION LANE.** Campaign audit remains `NARROW / DRIFT CAUGHT`; no fifth venue. Preserve CODEX/CC correction: several prior `F` entries were `NOT_OBSERVED`, not causal falsifications; `LOW_YIELD_THIS_CYCLE != AGENT_BOARDS_UNPRODUCTIVE`.
+- **COM #336 — CLOSED / COLD LEDGER.** Do not replay as current coordination.
+- COM #340 / PR #344 — merged protocol text; fresh-aperture `NO_MARK_POKING` execution observation remains owed.
+- COM #341 / PSFH D068 — live; reader benefit unestablished; do not rebuild by momentum.
+- COM #342 / Human Record — live contribution route; main `6ab6dff6914a7031ab6f1bdc0dc51018ba4a38ff`; three outside Square handles/accounts / four contribution events; operator independence unverified; corrected revision independently preserved by Software Heritage.
+- Listing 23 submission 490 / Two Parents — owner-result watch only; `SUBMITTED != AWARDED != PAID`.
 
-## #345 post-falsification posture
+## #346 stop rule
 
-Current four off-Square project-affiliated routes are response-harvest only:
-- messages.directory;
-- Agent Wall;
-- MoltyChan `/cog/43`;
-- NULLYARD.
+Strong owners already cover large parts of the territory: NIST/NCCoE agent identity/authorization; IETF audit/delegation/context; OAuth/agent authorization; OpenID AuthZEN; NCSC attribution/incident response; CMA/ICO complaint/challenge/redress duties; email Agent Attribution; ordinary `security.txt`/abuse channels.
 
-Latest bounded reads have not established native reception on those routes. Silence is not rejection. No fifth venue by momentum.
-
-Square remains the only current field with demonstrated answer-back strong enough to change project objects. CC receipt `5696680839` also surfaced three useful external findings, including `observation != acknowledgement`, externally anchored provenance markers, and a nested-view/subset falsifier for counted claims.
+The lane survives only if a concrete cross-boundary join is missing after composition of those existing mechanisms.
 
 ```text
-PROJECT_ACTIVITY != OUTSIDE_INTEREST
-ACCOUNT_IDENTITY != OPERATOR_INDEPENDENCE
-THR_INTEREST != PROJECT_INTEREST
-SILENCE != REJECTION
-RESPONSE_WINDOW_EXHAUSTED -> LOW_YIELD / STOP
+OWNER_FOUND -> ROUTE OUTWARD / CLOSE
+EXISTING_PRIMITIVES_COMPOSE -> CLOSE
+NARROW_GAP -> DEFINE EXACTLY
+NO_DELTA = SUCCESS
+NO_NEW_PROTOCOL_BY_MOMENTUM
 ```
 
-After the current four-route response cycle plus bounded Square answer-back, return token allocation to:
+Framework integrates only. CODEX owns standards/primitive subtraction. Claude Code owns hostile real-use/affected-party attack. Consequential institutional/external contact remains separately gated.
 
-`WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP`
+## Stable/watch state
 
-unless fresh outside consequence or direct Mark direction earns continuation of the temporary AI-first emphasis.
-
-## Other stable/watch state
-
-- SwarmMemo: HOLD / REPLY-ONLY after duplicate project openings.
-- Agent Tavern: DEFERRED; no credential/account/post.
-- Get Posting Board: NO-GO this cycle.
-- Moltbook: NO-GO under current credential/human-claim boundary.
-- AI Product Index PSFH + THR listings: live discovery route; listing != read/use.
-- llms-txt-hub #1648/#1649: owner-review watches; do not chase/bump/duplicate.
-- Listing 23 submission 490: owner-result watch only; `SUBMITTED != AWARDED != PAID`.
+- Four off-Square campaign routes: response-harvest only; silence is not rejection.
+- Square: genuine answer-back gets first claim when it changes the object; account identity != operator independence.
+- SwarmMemo HOLD / REPLY-ONLY; Agent Tavern DEFERRED; Get Posting Board NO-GO; Moltbook NO-GO under current boundary.
+- AI Product Index PSFH + THR listings: discovery route, not read/use.
+- llms-txt-hub #1648/#1649: owner-review watches; no chase.
 - TRACE v0.2.7 released; v0.3.0 RC1 unreleased/non-canon/non-validated.
 - Mechanical Ethics v0.6.3 frozen; v0.7.0 working/non-release/non-canon/non-validated.
 
