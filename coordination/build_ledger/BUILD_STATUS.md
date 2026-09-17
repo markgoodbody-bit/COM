@@ -16,19 +16,19 @@ PURPOSE > INSTRUMENT
 | Work | State | Current disposition |
 | --- | --- | --- |
 | General world-gap lane | **NONE GENERAL** | Latest unrelated world-first investigations remain owner-routed/closed. |
-| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / LIVING-SUBJECT BOUNDARY + WITHDRAWAL REPAIR MERGED** | `human-record` main `15b9929f685627644fcfc33cbb113b34876ecf59`. Three evidence records unchanged. PRs #21/#22/#24/#25/#26 integrated. |
-| THR validation | **EXACT PR-HEAD PASS / 11 WARNINGS VISIBLE** | PR #26 exact head `bd6dc6bd...` integrity workflow SUCCESS before merge. Existing open-vocabulary warnings remain visible; do not add another checker by momentum. |
-| THR delivery | **MERGED / PUBLIC READBACK WITNESSED BY SPECIALIST** | Claude Code later witnessed `LIVING_SUBJECTS.md` and three sibling files byte-exact at `15b9929f...`; repository workflows success. |
+| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY / BOUNDED LIVING-SUBJECT + WITHDRAWAL REPAIR** | `human-record` main `15b9929f685627644fcfc33cbb113b34876ecf59`; three evidence records unchanged; PRs #21/#22/#24/#25/#26 integrated. |
+| THR delivery | **MERGED / PUBLIC READBACK WITNESSED BY SPECIALIST** | Current `LIVING_SUBJECTS.md` and sibling files were byte-exact witnessed after the latest merge; do not convert that into validation/legal adequacy. |
 | THR next edge | **OBSERVE / CORRECT OPERATIONAL SCALE** | No record 4, industrial DB, private intake service or universal privacy theory by momentum. |
-| COM #348 / project resources | **ACTIVE OPPORTUNITY QUARRY** | Current serious routes include BlueDot, Foresight, Apart, Nebius x NVIDIA, OpenAI Codex Open Source Fund and conditionally Anthropic AI for Science. `PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY`. |
-| COM #349 / competition tournament | **ACTIVE BOUNDED BUILD / SELECTION OPEN / PROOFPATH PRODUCT LEAD** | #350 oracle = substrate; #351 WarrantFuzz = stochastic measurement harness at `88264d58...`; #352 hostile evidence preserved; #353 Missing Edge = SHRINK/fixture research; #355 ProofPath deterministic product shell repaired at `82c6988e...`, exact-head workflow `35237752920` SUCCESS. No real target-model result. |
-| Stage A real-agent screen | **AUTHORISED / REPAIRED / OFFLINE GREEN / EXECUTION BLOCKED BY CREDENTIAL ROUTE** | PR #356 repaired head `f60387b69a291da5cc894008a2d8a442028da194`; adapter run `35237109788` SUCCESS; inherited WarrantFuzz run `35237109779` SUCCESS; 11 Stage A tests PASS. 90 requests = Terra + Sol × (15 baseline + 15 exact replicate + 15 raw duplicate-evidence mutant). Conservative whole-run ceiling `$1.15164`; Mark hard cap `$10`; API calls `0`; spend `$0.00`. Known GitHub secret route absent. Execution is manual `workflow_dispatch` only. |
-| Competition next gate | **REAL FAILURE BEFORE MORE PRODUCT POLISH** | Execute repaired Stage A only through an already-legitimate credential aperture. No signal -> shrink/stop. Signal -> plain-English warning control -> correct vs shuffled/wrong ancestry -> hardened rerun -> verified-independent responsiveness guard. |
-| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Release content `fa3b4645...`; current main `8310d253...`; not validated/no efficacy result. |
-| Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Release content `d6b41adf...`; current main `25a9d793...`; not validated. |
+| COM #348 / resources | **ACTIVE / LOW-DISTORTION CREDIT ROUTES** | OpenAI Codex Open Source Fund remains the lead OpenAI credit route; non-binding THR-anchored packet prepared at `coordination/resources/OPENAI_CODEX_OPEN_SOURCE_FUND_PREP_20260917.md`. OpenAI Researcher Access is conditional/not clean because current FAQ requires a qualifying active research/nonprofit affiliation. No application/submission/contact/terms action. |
+| COM #349 / tournament | **ACTIVE / SELECTION OPEN / PROOFPATH PRODUCT LEAD** | #350 substrate; #351 stochastic measurement; #352 hostile evidence; #353 SHRINK/fixture; #355 deterministic product shell; #356 real-model Stage A adapter. No target-model result. |
+| Stage A real-agent screen | **AUTHORISED / FINAL PRE-RUN OFFLINE GREEN / BLOCKED BY LEGITIMATE CREDENTIAL ROUTE** | #356 exact head `d28ca0fae1092c63a671a159911479965b2ca5fe`; adapter run `35238778132` SUCCESS; inherited WarrantFuzz run `35238778124` SUCCESS; 23 tests PASS; 90 requests; whole-run conservative ceiling `$1.15164`; hard cap `$10`; API calls `0`; spend `$0.00`. |
+| ProofPath product shell | **DETERMINISTIC CONTROL SHELL GREEN / NOT MODEL RESULT** | #355 exact head `bca431e572cc6d8b334c09be958bce52a909e9b1`; workflow `35239124064` SUCCESS. Action-only regressions visible; role-specific power; independent-evidence responsiveness guard; wrong-lineage sensitivity; explicit CI gate. |
+| Competition next gate | **REAL FAILURE BEFORE MORE PRODUCT POLISH** | Execute current Stage A only through an already-legitimate credential aperture. Complete no-signal -> shrink/stop. Signal -> prose-warning control -> correct vs shuffled/wrong ancestry -> hardened rerun -> independent-evidence responsiveness guard. |
+| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Release `fa3b4645...`; current main `8310d253...`; not validated/no efficacy result. |
+| Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Release `d6b41adf...`; current main `25a9d793...`; not validated. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished; no momentum rebuild. |
 | Human Record stewardship | **OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED** | Product/evidence/architecture work does not imply stewardship acceptance. |
-| Two Parents / Listing 23 | **SUBMITTED / OWNER RESULT WATCH** | Submission 490; `SUBMITTED != AWARDED != PAID`. |
+| Two Parents / Listing 23 | **SUBMITTED / OWNER RESULT WATCH** | `SUBMITTED != AWARDED != PAID`. |
 | Formation PR #339 | **MERGED / WORKING NON-PRODUCTION PROSE** | No canon/release/alignment result. |
 | COM #346 | **CLOSED / OWNER_ROUTE / NO PROJECT ACTION** | Killed seam stays dead. |
 | COM #345 | **RESPONSE-HARVEST / POST-FALSIFICATION** | Secondary only. |
@@ -46,36 +46,52 @@ Actions = 35217059591 SUCCESS
 Provider adapter:
 
 ```text
-PR #356 = f60387b69a291da5cc894008a2d8a442028da194
-Stage A Actions = 35237109788 SUCCESS
-Inherited WarrantFuzz Actions = 35237109779 SUCCESS
-11 Stage A tests PASS
+PR #356 = d28ca0fae1092c63a671a159911479965b2ca5fe
+Stage A Actions = 35238778132 SUCCESS
+Inherited WarrantFuzz Actions = 35238778124 SUCCESS
+23 Stage A tests PASS
 90 requests
 worst-case whole-run ceiling = $1.15164
 authorised hard cap = $10.00
 API calls executed = 0
-recorded spend = $0.00
+recorded/accounted spend = $0.00
 ```
 
-Stage A repairs after hostile review:
+Current Stage A experiment boundary:
 
 ```text
 AGENT-FACING IDS = NEUTRAL
 INTERNAL LINEAGE IDS = MANIFEST ONLY
-SOURCE OVERLAP = RECOGNISABLE IN PRINCIPLE VIA MATCHED SYNTHETIC EXCERPTS
+SHARED-ORIGIN CUE = SAME DISTINCTIVE SYNTHETIC FIGURES IN DIFFERENT WORDING
+PROMPTED INDEPENDENCE ASSESSMENT != NATURAL EVIDENCE HANDLING
 BASELINE / REPLICATE / MUTANT = ROUND-ROBIN
-FAILED ATTEMPT = WORST-CASE COST RESERVED
-FAILED ATTEMPT != SILENT RETRY
+POSITIVE RESULT != PROOF OF HIDDEN-LINEAGE DETECTION FAILURE
+INCOMPLETE != NULL
+```
+
+Execution/accounting boundary:
+
+```text
+FULL PROVIDER REQUEST CONTRACT = HASH-BOUND
+LEDGER RESUME = EXACT IDENTITY ONLY
+ATTEMPTING EVENT -> FSYNC BEFORE DISPATCH
+ATTEMPTING-ONLY = RESERVED COST + NO SILENT RETRY
+FAILED ATTEMPT = RESERVED WORST-CASE COST
+MISSING USAGE TELEMETRY = RESERVED WORST-CASE COST
 PROVIDER ACTUATION = WORKFLOW_DISPATCH ONLY
 ```
 
-ProofPath product shell:
+The only provider-actuation attempt remains run `35234396187` on a superseded head; it failed before the first API request because the repository exposed no `OPENAI_API_KEY`.
+
+ProofPath deterministic product shell:
 
 ```text
-PR #355 = 82c6988ed79a12cf16893843d91a1ded5dbfdc20
-Actions = 35237752920 SUCCESS
+PR #355 = bca431e572cc6d8b334c09be958bce52a909e9b1
+Actions = 35239124064 SUCCESS
 ACTION-ONLY ESCALATION = VISIBLE
-UNPOWERED != PASS
+PROVENANCE TEST POWER = REPETITION COUNTER VS LINEAGE-AWARE
+RESPONSIVENESS GUARD POWER = EVIDENCE-BLIND VS LINEAGE-AWARE
+UNPOWERED != PASS / FAIL
 WRONG-LINEAGE MOVEMENT = SENSITIVITY, NOT IMPROVEMENT
 BASELINE STRUCTURE = FIRST-CLASS
 REPORT GENERATION != CI GATE
@@ -83,62 +99,60 @@ REPORT GENERATION != CI GATE
 
 None of the above is a current-model result.
 
-## THR structure
+## Resource lane exact state
 
-Evidence records remain:
-1. Camp Fire — artwork provenance;
-2. 80% flak claim — claim/source ancestry;
-3. sieve/riddle revival — living-knowledge lineage.
+Prepared non-binding packet:
 
-Keep:
+`coordination/resources/OPENAI_CODEX_OPEN_SOURCE_FUND_PREP_20260917.md`
+
+Current application posture:
+
+```text
+CANDIDATE PROJECT = THE HUMAN RECORD
+PUBLIC REPO != AUTOMATIC OPEN-SOURCE CLAIM
+THR PROJECT-AUTHORED RIGHTS HELD BY MARK -> CC0 1.0 SCOPE NOTICE
+THIRD-PARTY RIGHTS != MARK'S CC0 GRANT
+APPLICATION PREPARED != SUBMITTED
+IDENTITY / CONTACT / SUBMIT / TERMS = HUMAN GATES
+```
+
+The OpenAI Researcher Access Program is not treated as a clean fallback because its current FAQ requires active qualifying institutional/nonprofit research affiliation. Do not invent one.
+
+## THR invariants
 
 ```text
 NAME != ENTITY
 MENTION EXISTS != ENTITY PROFILE REQUIRED
-ENTITY != ASSERTION
 URL != SOURCE
 SOURCE CHECK != RECORD EVIDENCE
-CACHED CONTENT AVAILABLE != LIVE TODAY
 OBSERVATION != PRESERVED COPY
 PRESERVATION != EXTRACTION
-COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
-```
-
-Living-subject working boundary:
-
-```text
 REFUSAL_ALONE != ESTABLISHMENT_OF_THE_REFUSED_CLAIM
 NO_REPLY != REFUSAL
 SILENCE != CONSENT
-CONSENT_AT_STEP_N != CONSENT_AT_STEP_N+1
 STOP -> STOP
-WITHDRAWAL_OF_PERMISSION != REVERSAL_OF_PRIOR_TRANSITION
 CANNOT_RECALL_ELSEWHERE != MAY_CONTINUE_HERE
 CORRECTION_TRAIL != REPUBLICATION_OF_THE_WITHDRAWN
-SUBJECT_ANSWER_BACK != SUBJECT_OWNS_REALITY
-SUBJECT_CONSENT != THIRD_PARTY_CONSENT
-LIVING != AUTOMATIC_PRIORITY
 UNKNOWN != DEAD
-CURRENT_PUBLIC_ROUTE != PRIVATE_CUSTODY
 ```
 
-## Competition / experiment boundary
+## Experiment boundary
 
 ```text
 FIRST_IDEA != SELECTED_IDEA
 GREEN_HARNESS != REAL_AGENT_FAILURE
 CONTROL_AGENT != TARGET_MODEL
 UNPOWERED != PASS
+UNPOWERED != FAIL
 SENSITIVITY != IMPROVEMENT
 NOMINAL_ALPHA != FAMILYWISE_FALSE_POSITIVE_RATE
-POOLED_BASELINE_REMOVES_LABEL_CHOICE
-BLINDED_CONTROL != EFFECT_ESTABLISHED
 BLOCKED_EXECUTION != NULL_RESULT
+INCOMPLETE != NULL_RESULT
 SPEND_AUTHORISED != CREDENTIAL_AUTHORITY
 REAL_FAILURE_BEFORE_PRODUCT_POLISH
 ```
 
-The repaired Stage A provider spend is already bounded by Mark's one-run authorization. No additional provider/spend authority is implied beyond that exact 90-request design and $10 hard cap.
+The Stage A provider spend remains bounded by Mark's one-run authorization. No additional provider/spend authority is implied beyond that exact 90-request design and $10 hard cap.
 
 ## Resource / opportunity boundary
 
@@ -156,7 +170,7 @@ No opportunity watch/appraisal may auto-apply, register accounts, accept terms, 
 ## FULL COMSYNC tool / field reach
 
 - COM / TRACE / ME / THR mutable repository state: reacquirable through GitHub.
-- Campfire Relay repository main: `b8579e56296e7a4eb4f83ed16e668d993a18589a`; operational Relay tool **not exposed** in this aperture.
+- Campfire Relay repository main remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`; operational Relay tool **not exposed** in this aperture.
 - Authenticated current 1F916 Framework inbox/write/quota state is not independently established in this aperture. `FAILED_READ != QUIET_BOARD`.
 
 ## Stable holds
@@ -169,4 +183,4 @@ No opportunity watch/appraisal may auto-apply, register accounts, accept terms, 
 
 ## Consequential gates
 
-Human/explicit gates remain for future TRACE/ME release/canon/baseline/licence changes, provider/spend commitments beyond the bounded Stage A authority, credentials/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions, competition accounts/terms/submission, and explicit crawler/training-policy changes.
+Human/explicit gates remain for future TRACE/ME release/canon/baseline/licence changes, provider/spend commitments beyond the bounded Stage A authority, credentials/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions, competition accounts/terms/submission, resource-application identity/submission/terms, and explicit crawler/training-policy changes.
