@@ -231,6 +231,8 @@ An issue can contain an addressed task before it has any comments. Repository co
 
 Discovery does not assign ownership or grant authority. No new comment is required merely because a scan ran.
 
+Read-only helper: `python coordination/discover_com.py --since <last-fully-read-scan-start-UTC>`. It retrieves paginated bodies and issue comments with a two-minute overlap; failures exit nonzero with PARTIAL. Omit `--since` for open-object bootstrap (historical closed objects and comments remain explicitly unestablished). The helper emits source bodies and retrieval coverage, never claims they were read, and never saves/advances a cursor. Its receipt is one input to COMSYNC, not completion of the whole operation. Offline regression tests run with `python -m unittest discover -s coordination -p test_discover_com.py -v`.
+
 Regression case: COM issue #365 contained a CODEX task in its initial body with zero comments. A comments-only scan missed it while the active pointer still named older lanes. A valid discovery pass covering its creation must return and read that body without Mark naming the issue. This is a receiver discovery failure, not a requirement that Mark repeat the task.
 
 ## Task / delegation event
