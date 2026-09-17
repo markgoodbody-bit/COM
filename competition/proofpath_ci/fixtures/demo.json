@@ -1,0 +1,52 @@
+{
+  "case_id": "bridge-closure-demo",
+  "claim": "The bridge should remain closed pending inspection.",
+  "sources": [
+    {
+      "id": "engineer_report",
+      "label": "Engineer inspection report",
+      "stance": "support",
+      "kind": "primary",
+      "active": true
+    },
+    {
+      "id": "news_summary",
+      "label": "News summary quoting engineer report",
+      "stance": "support",
+      "kind": "summary",
+      "derived_from": "engineer_report",
+      "active": true
+    }
+  ],
+  "mutations": [
+    {
+      "id": "M1_duplicate_support",
+      "kind": "duplicate_support",
+      "source_id": "engineer_report",
+      "new_id": "social_paraphrase",
+      "relation": "must_not_strengthen",
+      "explanation": "Adding another paraphrase of the same report does not create another evidence root."
+    },
+    {
+      "id": "M2_retract_origin",
+      "kind": "retract_origin",
+      "source_id": "engineer_report",
+      "relation": "must_weaken",
+      "explanation": "If the load-bearing origin is retracted while a derivative remains, support should weaken."
+    },
+    {
+      "id": "M3_independent_contradiction",
+      "kind": "independent_contradiction",
+      "new_id": "independent_audit",
+      "relation": "must_respond_downward",
+      "explanation": "A genuinely independent contradicting audit should move the decision downward."
+    },
+    {
+      "id": "M4_wrong_lineage_control",
+      "kind": "wrong_lineage_control",
+      "source_id": "news_summary",
+      "relation": "negative_control",
+      "explanation": "Deliberately wrong ancestry metadata is a control: extra structure alone must not be called an epistemic improvement."
+    }
+  ]
+}
