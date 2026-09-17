@@ -36,13 +36,14 @@ TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validation/effi
 #348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
 #349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
 #365 TRACE/ME positive-construction quarry -> DERIVED-VIEW RESULT / NO NEW PRIMITIVE
+#99 social-care correction consequence -> FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD
 ```
 
 ## #364 — ATRS Answerability Audit
 
-Current real-reader question:
+Current fresh-corpus question:
 
-> What does a published ATRS record actually say about what someone can do next?
+> Does a current public ATRS record let a reader bind a stated review/challenge/correction route to the thing in the published decision pipeline that route can actually act on, and does it state who can initiate/use that route and how?
 
 Frozen source witness remains 152 records. Version-aware reparse corrected legacy heading misses without refetching source.
 
@@ -84,9 +85,10 @@ Nine scored cases / six balanced schedules; one missing-field non-scored sentine
 The late full-sync replay found Codex repairs `06a3176` and `0573ce5`. They are now integrated through PR #367.
 
 ```text
-#364 exact head = fd1b75c9671af8e85df9cbe9ad33ef025797d578
-#367 = MERGED
-hosted CI = 35274673506 SUCCESS
+#364 current exact head = 7b7b1fd8a171a5414c315f585e715700cc0703f6
+current hosted CI = 35277771413 SUCCESS
+#367 = MERGED reader-use repair
+fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
 
 Direct source/test readback confirms:
@@ -131,6 +133,35 @@ Still needed before participant execution:
 EXCERPT ~= LENS -> ROUTE TO SIMPLER EXCERPT / SECTION-JUMP OWNER
 NULL RESULT = VALID
 METHOD_SOURCE_GREEN != HUMAN_RESULT
+```
+
+## #364 later owner-subtracted relation object
+
+The FULL/EXCERPT/LENS method remains secondary and human-run gated. The current lead object is a source-bound route proposition over a fresh November corpus if live competition rules still allow it:
+
+```text
+ROUTE PROPOSITION
++ TARGET SITE
++ ACTOR SCOPE
++ INITIATION / REVIEW MODE
++ ROUTE FORM
++ STATUS / EFFECT
++ EVIDENCE
++ BINDING BASIS
++ DISAGREEMENT
+```
+
+`LAYER_NOT_STATED` is valid; route categories already present in the September codebook are reused. No whole-record score or causal version claim.
+
+## #99 social-care owner subtraction
+
+The owner chain substantially covers amendment, possible-reliance consideration, safety corrective action and care-plan review. What remains is real-world implementation observation: whether those mechanisms connect after a material record correction has already propagated.
+
+```text
+OWNER CHAIN = SUBSTANTIALLY PRESENT
+IMPLEMENTATION = NOT ESTABLISHED FROM PUBLIC SOURCES
+NEXT = OBSERVE OWNER IMPLEMENTATION OR STOP
+NO ACTIVE FRAMEWORK BUILD
 ```
 
 ## Apart November
