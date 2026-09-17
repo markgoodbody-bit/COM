@@ -1,0 +1,18 @@
+name: COM discovery regression
+on:
+  pull_request:
+    paths: ['coordination/discover_com.py', 'coordination/test_discover_com.py', '.github/workflows/com-discovery.yml']
+  push:
+    branches: [main]
+    paths: ['coordination/discover_com.py', 'coordination/test_discover_com.py', '.github/workflows/com-discovery.yml']
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s coordination -p test_discover_com.py -v

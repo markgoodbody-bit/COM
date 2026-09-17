@@ -27,7 +27,7 @@ After retrieving this file at an adequately anchored repository head:
 2. use `COM_PROTOCOL_WORKING.md#coms` for the normative COMS operation and bounded return;
 3. read `coordination/ACTIVE_THREAD_POINTER.md` for the current bounded coordination aperture;
 4. read `coordination/build_ledger/BUILD_STATUS.md` only when current build/integration state is material;
-5. inspect only work explicitly addressed to this aperture or its established role;
+5. run the issue/PR-body discovery gate in `COM_PROTOCOL_WORKING.md` (not comments alone), then inspect work explicitly addressed to this aperture or its established role;
 6. use role-specific continuity surfaces only when the role is actually established;
 7. reacquire mutable repository/service state needed for the action before mutation.
 
