@@ -1,11 +1,6 @@
 name: ProofPath Stage A execute
 
 on:
-  push:
-    branches:
-      - framework/proofpath-stage-a-openai
-    paths:
-      - ".github/workflows/proofpath-stage-a-execute.yml"
   workflow_dispatch:
 
 permissions:
@@ -17,7 +12,6 @@ concurrency:
 
 jobs:
   execute-stage-a:
-    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message == 'Execute ProofPath Stage A under approved cap'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
