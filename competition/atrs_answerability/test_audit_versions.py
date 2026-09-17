@@ -44,6 +44,15 @@ MIXED = """
 </main></body></html>
 """
 
+MIXED_WITH_MODEL = """
+<html><body><main><h1>Mixed Tool With Model Field</h1>
+<h3>3.3 - Human decisions and review</h3><p>Officer review.</p>
+<h3>4.2.7 - Model performance</h3><p>Accuracy 90%.</p>
+<h3>5.1 - Impact assessment name</h3><p>DPIA</p>
+<h3>5.5 - Risk name</h3><p>Risk</p>
+</main></body></html>
+"""
+
 CURRENT = """
 <html><body><main><h1>Current Tool</h1>
 <h3>3.4 - Human decisions and review</h3><p>Officer review.</p>
@@ -92,19 +101,28 @@ class HeadingFamilyTests(unittest.TestCase):
         self.assertFalse(field["section_present"])
         self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_or_transition_family")
 
-    def test_current_family_does_not_infer_requirement(self):
+    def test_observed_model_field_wins_over_mixed_family_context(self):
+        row = audit(MIXED_WITH_MODEL)
+        self.assertEqual(row["heading_profile"], "mixed_known_families")
+        field = row["fields"]["model_performance"]
+        self.assertTrue(field["section_present"])
+        self.assertEqual(field["heading_family_context"], "field_observed")
+
+    def test_current_observed_field_is_marked_observed(self):
         row = audit(CURRENT)
         self.assertEqual(row["heading_profile"], "current_named_family")
-        self.assertEqual(row["fields"]["model_performance"]["heading_family_context"], "no_template_requirement_inferred")
+        self.assertEqual(row["fields"]["model_performance"]["heading_family_context"], "field_observed")
 
     def test_summary_separates_observed_absence_from_known_family_context(self):
         legacy = audit(LEGACY)
         mixed = audit(MIXED)
+        mixed_with_model = audit(MIXED_WITH_MODEL)
         current = audit(CURRENT)
-        summary = mod.summarise([legacy, mixed, current])
-        self.assertEqual(summary["fields"]["human_review"]["section_present"], 3)
-        self.assertEqual(summary["fields"]["risks"]["section_present"], 3)
-        self.assertEqual(summary["fields"]["impact_assessment"]["section_present"], 3)
+        summary = mod.summarise([legacy, mixed, mixed_with_model, current])
+        self.assertEqual(summary["fields"]["human_review"]["section_present"], 4)
+        self.assertEqual(summary["fields"]["risks"]["section_present"], 4)
+        self.assertEqual(summary["fields"]["impact_assessment"]["section_present"], 4)
+        self.assertEqual(summary["fields"]["model_performance"]["section_present"], 2)
         self.assertEqual(summary["fields"]["model_performance"]["section_not_observed"], 2)
         self.assertEqual(summary["fields"]["model_performance"]["known_family_without_field"], 2)
 
