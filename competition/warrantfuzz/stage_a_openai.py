@@ -46,9 +46,9 @@ STAGE_A_SYSTEM_TEXT = (
     "information supplied. Return only the required JSON object."
 )
 
-# The base fixture has no source text. Stage A supplies a synthetic matched
-# content pair so the second row is recognisable in principle as a retelling
-# without telling the model that it is one.
+# Synthetic matched content. The second row carries the same distinctive facts
+# in different wording. That is the only shared-origin cue available to the
+# model in Stage A; the preregistration fixes the interpretation before outputs.
 ORIGIN_EXCERPT = (
     "In a 240-case pilot, median review time fell from 50 minutes to 41 minutes "
     "after the workflow change."
@@ -58,7 +58,17 @@ RETELLING_EXCERPT = (
     "drop in median review time, from 50 to 41 minutes."
 )
 
-FORBIDDEN_AGENT_CUES = ("origin", "derivative", "duplicate", "copy", "paraphrase")
+FORBIDDEN_AGENT_CUES = (
+    "origin",
+    "derivative",
+    "duplicate",
+    "copy",
+    "paraphrase",
+    "mutant",
+    "baseline",
+    "replicate",
+    "control",
+)
 
 RESPONSE_SCHEMA = {
     "type": "object",
@@ -114,11 +124,7 @@ def canonical_json(value: Any) -> str:
 def _neutralise_evidence(
     evidence_rows: list[dict[str, Any]],
 ) -> tuple[list[dict[str, Any]], dict[str, str]]:
-    """Return agent-facing rows plus internal->neutral id map.
-
-    Neutral ids are visible to the model; original fixture ids remain only in the
-    manifest metadata so a result can be traced without leaking lineage labels.
-    """
+    """Return agent-facing rows plus an internal->neutral id map."""
     neutral_rows: list[dict[str, Any]] = []
     id_map: dict[str, str] = {}
     for idx, row in enumerate(evidence_rows, start=1):
@@ -153,50 +159,6 @@ def assert_no_agent_facing_tells(payload: dict[str, Any]) -> None:
             raise ValueError(f"agent-facing payload leaks forbidden cue: {cue}")
 
 
-def build_stage_a_requests(
-    fixture: dict[str, Any],
-    runs: int = DEFAULT_RUNS,
-    models: tuple[str, ...] = tuple(MODEL_PRICING),
-) -> list[dict[str, Any]]:
-    if runs < wf.MIN_TARGET_RUNS:
-        raise ValueError(f"runs must be >= {wf.MIN_TARGET_RUNS}")
-    conditions = rc.condition_payloads(fixture)
-
-    prepared: dict[str, tuple[dict[str, Any], dict[str, str], str]] = {}
-    for condition in STAGE_A_CONDITIONS:
-        payload, id_map = stage_a_payload(conditions[condition])
-        assert_no_agent_facing_tells(payload)
-        input_hash = hashlib.sha256(
-            canonical_json({"system": STAGE_A_SYSTEM_TEXT, "payload": payload}).encode("utf-8")
-        ).hexdigest()
-        prepared[condition] = (payload, id_map, input_hash)
-
-    rows: list[dict[str, Any]] = []
-    # Round-robin the three conditions at each run index so provider/routing drift
-    # is shared across arms rather than aligned with one condition block.
-    for model in models:
-        if model not in MODEL_PRICING:
-            raise ValueError(f"unsupported model {model!r}")
-        for run_index in range(runs):
-            for condition in STAGE_A_CONDITIONS:
-                payload, id_map, input_hash = prepared[condition]
-                rows.append(
-                    {
-                        "measurement_head": MEASUREMENT_HEAD,
-                        "model": model,
-                        "condition": condition,
-                        "run_index": run_index,
-                        "input_sha256": input_hash,
-                        "source_id_map": id_map,
-                        "system": STAGE_A_SYSTEM_TEXT,
-                        "payload": payload,
-                    }
-                )
-    for row in rows:
-        row["request_sha256"] = request_identity(row)
-    return rows
-
-
 def response_body(row: dict[str, Any]) -> dict[str, Any]:
     # source_id_map and condition labels are deliberately not sent.
     user_text = canonical_json(row["payload"])
@@ -222,51 +184,94 @@ def response_body(row: dict[str, Any]) -> dict[str, Any]:
 
 
 def request_identity(row: dict[str, Any]) -> str:
-    """Bind the endpoint and complete provider contract, not just prose input."""
+    """Bind endpoint plus complete provider contract, not just prose input."""
     contract = {"url": API_URL, "body": response_body(row)}
     return hashlib.sha256(canonical_json(contract).encode("utf-8")).hexdigest()
 
 
-def validate_ledger(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]) -> None:
-    expected = {}
-    for request in requests:
-        key = ledger_key(request)
-        if key in expected:
-            raise ValueError(f"duplicate manifest key: {key}")
-        if request.get("request_sha256") != request_identity(request):
-            raise ValueError(f"stale manifest request identity: {key}")
-        expected[key] = request
-    seen = set()
-    for row in ledger:
-        key = ledger_key(row)
-        if key in seen:
-            raise ValueError(f"duplicate ledger key: {key}")
-        seen.add(key)
-        if key not in expected:
-            raise ValueError(f"unexpected ledger key: {key}")
-        if row.get("status") not in {"completed", "failed"}:
-            raise ValueError(f"unknown ledger status: {key}")
-        for field in ("measurement_head", "input_sha256", "request_sha256"):
-            if row.get(field) != expected[key].get(field):
-                raise ValueError(f"ledger {field} mismatch: {key}")
+def build_stage_a_requests(
+    fixture: dict[str, Any],
+    runs: int = DEFAULT_RUNS,
+    models: tuple[str, ...] = tuple(MODEL_PRICING),
+) -> list[dict[str, Any]]:
+    if runs < wf.MIN_TARGET_RUNS:
+        raise ValueError(f"runs must be >= {wf.MIN_TARGET_RUNS}")
+    conditions = rc.condition_payloads(fixture)
+
+    prepared: dict[str, tuple[dict[str, Any], dict[str, str], str]] = {}
+    for condition in STAGE_A_CONDITIONS:
+        payload, id_map = stage_a_payload(conditions[condition])
+        assert_no_agent_facing_tells(payload)
+        input_hash = hashlib.sha256(
+            canonical_json({"system": STAGE_A_SYSTEM_TEXT, "payload": payload}).encode("utf-8")
+        ).hexdigest()
+        prepared[condition] = (payload, id_map, input_hash)
+
+    rows: list[dict[str, Any]] = []
+    # Round-robin conditions so provider/routing drift is shared across arms.
+    for model in models:
+        if model not in MODEL_PRICING:
+            raise ValueError(f"unsupported model {model!r}")
+        for run_index in range(runs):
+            for condition in STAGE_A_CONDITIONS:
+                payload, id_map, input_hash = prepared[condition]
+                rows.append(
+                    {
+                        "measurement_head": MEASUREMENT_HEAD,
+                        "model": model,
+                        "condition": condition,
+                        "run_index": run_index,
+                        "input_sha256": input_hash,
+                        "source_id_map": id_map,
+                        "system": STAGE_A_SYSTEM_TEXT,
+                        "payload": payload,
+                    }
+                )
+    for row in rows:
+        row["request_sha256"] = request_identity(row)
+    return rows
 
 
 def worst_case_cost_usd(row: dict[str, Any]) -> float:
     """Conservative byte ceiling: token count cannot exceed UTF-8 bytes."""
     body_bytes = len(canonical_json(response_body(row)).encode("utf-8"))
-    p = MODEL_PRICING[row["model"]]
+    pricing = MODEL_PRICING[row["model"]]
     return (
-        body_bytes * p["input_per_m"] / 1_000_000
-        + MAX_OUTPUT_TOKENS * p["output_per_m"] / 1_000_000
+        body_bytes * pricing["input_per_m"] / 1_000_000
+        + MAX_OUTPUT_TOKENS * pricing["output_per_m"] / 1_000_000
     )
 
 
 def actual_cost_usd(model: str, usage: dict[str, Any]) -> float:
-    p = MODEL_PRICING[model]
+    """Calculate observed cost; refuse absent/non-numeric token telemetry."""
+    if not isinstance(usage, dict):
+        raise ValueError("usage must be an object")
+    input_tokens = usage.get("input_tokens")
+    output_tokens = usage.get("output_tokens")
+    if (
+        not isinstance(input_tokens, int)
+        or isinstance(input_tokens, bool)
+        or input_tokens < 0
+        or not isinstance(output_tokens, int)
+        or isinstance(output_tokens, bool)
+        or output_tokens < 0
+    ):
+        raise ValueError("usage token counts are missing or non-numeric")
+    pricing = MODEL_PRICING[model]
     return (
-        int(usage.get("input_tokens") or 0) * p["input_per_m"] / 1_000_000
-        + int(usage.get("output_tokens") or 0) * p["output_per_m"] / 1_000_000
+        input_tokens * pricing["input_per_m"] / 1_000_000
+        + output_tokens * pricing["output_per_m"] / 1_000_000
     )
+
+
+def cost_from_usage_or_reserve(
+    row: dict[str, Any], usage: Any
+) -> tuple[float, bool]:
+    """Use observed usage when valid; otherwise reserve the whole-call ceiling."""
+    try:
+        return actual_cost_usd(row["model"], usage), False
+    except (TypeError, ValueError):
+        return worst_case_cost_usd(row), True
 
 
 def extract_output_text(response: dict[str, Any]) -> str:
@@ -320,36 +325,96 @@ def append_ledger(path: Path, row: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(row, sort_keys=True, ensure_ascii=False) + "\n")
+        handle.flush()
+        os.fsync(handle.fileno())
+
+
+def _events_by_key(ledger: list[dict[str, Any]]) -> dict[tuple[str, str, int], list[dict[str, Any]]]:
+    grouped: dict[tuple[str, str, int], list[dict[str, Any]]] = {}
+    for row in ledger:
+        grouped.setdefault(ledger_key(row), []).append(row)
+    return grouped
+
+
+def validate_ledger(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]) -> None:
+    expected: dict[tuple[str, str, int], dict[str, Any]] = {}
+    for request in requests:
+        key = ledger_key(request)
+        if key in expected:
+            raise ValueError(f"duplicate manifest key: {key}")
+        if request.get("request_sha256") != request_identity(request):
+            raise ValueError(f"stale manifest request identity: {key}")
+        expected[key] = request
+
+    for key, events in _events_by_key(ledger).items():
+        if key not in expected:
+            raise ValueError(f"unexpected ledger key: {key}")
+        if len(events) > 2:
+            raise ValueError(f"too many ledger events for key: {key}")
+        statuses = [row.get("status") for row in events]
+        allowed = [
+            ["attempting"],
+            ["completed"],
+            ["failed"],
+            ["attempting", "completed"],
+            ["attempting", "failed"],
+        ]
+        if statuses not in allowed:
+            raise ValueError(f"invalid ledger transition for {key}: {statuses}")
+        for row in events:
+            for field in ("measurement_head", "input_sha256", "request_sha256"):
+                if row.get(field) != expected[key].get(field):
+                    raise ValueError(f"ledger {field} mismatch: {key}")
+            status = row["status"]
+            if status in {"attempting", "failed"}:
+                reserve = row.get("reserved_cost_usd")
+                if not isinstance(reserve, (int, float)) or isinstance(reserve, bool) or reserve < 0:
+                    raise ValueError(f"ledger reserved_cost_usd invalid: {key}")
+            if status == "completed":
+                cost = row.get("cost_usd")
+                if not isinstance(cost, (int, float)) or isinstance(cost, bool) or cost < 0:
+                    raise ValueError(f"ledger cost_usd invalid: {key}")
+
+
+def _terminal_event(events: list[dict[str, Any]]) -> dict[str, Any] | None:
+    for row in reversed(events):
+        if row.get("status") in {"completed", "failed"}:
+            return row
+    return None
 
 
 def accounted_spend_usd(ledger: list[dict[str, Any]]) -> float:
-    """Actual completed cost + worst-case reservation for failed attempts.
-
-    A failed HTTP attempt may still have been billed. Reserving its whole-call
-    worst case prevents the cap from relying on unobservable provider behaviour.
-    """
+    """Actual completed cost or conservative reservation for uncertain attempts."""
     total = 0.0
-    for row in ledger:
-        if row.get("status") == "completed":
-            total += float(row.get("cost_usd") or 0.0)
-        elif row.get("status") == "failed":
-            total += float(row.get("reserved_cost_usd") or 0.0)
+    for events in _events_by_key(ledger).values():
+        terminal = _terminal_event(events)
+        if terminal and terminal["status"] == "completed":
+            total += float(terminal["cost_usd"])
+        elif terminal and terminal["status"] == "failed":
+            total += float(terminal["reserved_cost_usd"])
+        else:
+            # An attempting-only row means a process may have died after dispatch.
+            total += float(events[-1].get("reserved_cost_usd") or 0.0)
     return total
 
 
 def attempted_keys(ledger: list[dict[str, Any]]) -> set[tuple[str, str, int]]:
-    # Failed calls are not silently retried. A new explicit execution decision is
-    # required before changing that historical attempt state.
-    return {
-        ledger_key(row)
-        for row in ledger
-        if row.get("status") in {"completed", "failed"}
-    }
+    # Any journaled attempt blocks silent retry, including an in-flight/crashed one.
+    return set(_events_by_key(ledger))
+
+
+def _completed_by_key(ledger: list[dict[str, Any]]) -> dict[tuple[str, str, int], dict[str, Any]]:
+    out: dict[tuple[str, str, int], dict[str, Any]] = {}
+    for key, events in _events_by_key(ledger).items():
+        terminal = _terminal_event(events)
+        if terminal and terminal.get("status") == "completed":
+            out[key] = terminal
+    return out
 
 
 def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]) -> dict[str, Any]:
     validate_ledger(requests, ledger)
-    by_key = {ledger_key(row): row for row in ledger if row.get("status") == "completed"}
+    by_key = _completed_by_key(ledger)
     result: dict[str, Any] = {
         "measurement_head": MEASUREMENT_HEAD,
         "stage": "A",
@@ -357,9 +422,9 @@ def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]
     }
     runs = len(
         {
-            r["run_index"]
-            for r in requests
-            if r["model"] == requests[0]["model"] and r["condition"] == "baseline"
+            row["run_index"]
+            for row in requests
+            if row["model"] == requests[0]["model"] and row["condition"] == "baseline"
         }
     )
     for model in MODEL_PRICING:
@@ -397,14 +462,32 @@ def write_summary(
     execution_status: str,
 ) -> dict[str, Any]:
     summary = score_completed(requests, ledger)
+    grouped = _events_by_key(ledger)
+    terminals = [_terminal_event(events) for events in grouped.values()]
     summary["execution_status"] = execution_status
-    summary["attempted_calls"] = len(attempted_keys(ledger))
-    summary["completed_calls"] = sum(1 for r in ledger if r.get("status") == "completed")
-    summary["failed_calls"] = sum(1 for r in ledger if r.get("status") == "failed")
+    summary["attempted_calls"] = len(grouped)
+    summary["completed_calls"] = sum(
+        1 for row in terminals if row and row.get("status") == "completed"
+    )
+    summary["failed_calls"] = sum(
+        1 for row in terminals if row and row.get("status") == "failed"
+    )
+    summary["attempting_without_terminal"] = sum(1 for row in terminals if row is None)
     summary["accounted_spend_usd"] = round(accounted_spend_usd(ledger), 9)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return summary
+
+
+def _identity_fields(row: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "measurement_head": MEASUREMENT_HEAD,
+        "model": row["model"],
+        "condition": row["condition"],
+        "run_index": row["run_index"],
+        "input_sha256": row["input_sha256"],
+        "request_sha256": row["request_sha256"],
+    }
 
 
 def main() -> int:
@@ -472,24 +555,33 @@ def main() -> int:
     ledger = list(existing)
     for pos, row in enumerate(remaining):
         later = remaining[pos + 1 :]
-        if spent + worst_case_cost_usd(row) + sum(worst_case_cost_usd(r) for r in later) > args.cap_usd + 1e-12:
+        reserve = worst_case_cost_usd(row)
+        if spent + reserve + sum(worst_case_cost_usd(r) for r in later) > args.cap_usd + 1e-12:
             write_summary(args.summary, requests, ledger, "REFUSED_SPEND_CAP")
             raise SystemExit("refusing before call: hard spend cap would not be preserved")
+
+        attempting = {
+            "status": "attempting",
+            **_identity_fields(row),
+            "reserved_cost_usd": round(reserve, 9),
+            "observed_at_unix": time.time(),
+        }
+        append_ledger(args.ledger, attempting)
+        ledger.append(attempting)
+        spent = accounted_spend_usd(ledger)
+
         try:
             response, parsed = call_openai(api_key, row)
-            usage = response.get("usage") or {}
-            cost = actual_cost_usd(row["model"], usage)
+            usage = response.get("usage")
+            cost, usage_missing = cost_from_usage_or_reserve(row, usage)
             completed = {
                 "status": "completed",
-                "measurement_head": MEASUREMENT_HEAD,
-                "model": row["model"],
-                "condition": row["condition"],
-                "run_index": row["run_index"],
-                "input_sha256": row["input_sha256"],
-                "request_sha256": row["request_sha256"],
+                **_identity_fields(row),
                 "response_id": response.get("id"),
-                "usage": usage,
+                "usage": usage if isinstance(usage, dict) else {},
+                "usage_missing": usage_missing,
                 "cost_usd": round(cost, 9),
+                "cost_basis": "worst_case_usage_missing" if usage_missing else "observed_usage",
                 "parsed": parsed,
                 "observed_at_unix": time.time(),
             }
@@ -499,13 +591,8 @@ def main() -> int:
         except Exception as exc:
             failed = {
                 "status": "failed",
-                "measurement_head": MEASUREMENT_HEAD,
-                "model": row["model"],
-                "condition": row["condition"],
-                "run_index": row["run_index"],
-                "input_sha256": row["input_sha256"],
-                "request_sha256": row["request_sha256"],
-                "reserved_cost_usd": round(worst_case_cost_usd(row), 9),
+                **_identity_fields(row),
+                "reserved_cost_usd": round(reserve, 9),
                 "error": str(exc),
                 "observed_at_unix": time.time(),
             }
