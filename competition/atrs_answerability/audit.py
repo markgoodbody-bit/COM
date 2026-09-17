@@ -51,10 +51,10 @@ FIELD_PATTERNS = {
 # negation or declare the whole field inapplicable.
 NONE_PHRASE_PATTERNS = (
     r"\bnot applicable\b",
-    r"(?:^|[.!?]\s*)n/?a(?:\s*[.!?]|\s*$)",
+    r"\bn/?a\b",
     r"(?:^|[.!?]\s*)none(?:\s*[.!?]|\s*$)",
     r"\bno human review\b",
-    r"\bno (?:specific )?(?:appeal|complaint|review)(?:s| procedures?| processes?)?\b",
+    r"\bno (?:specific |formal |separate |dedicated |direct )?(?:appeals?|complaints?|reviews?)(?:\s+(?:procedures?|process(?:es)?|routes?))?\b",
 )
 
 EMAIL_RE = re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I)
@@ -175,8 +175,6 @@ def parse_sections(page_html: str) -> list[Section]:
     parser.close()
     if parser.saw_main:
         return parser.sections
-    # Synthetic fixtures and any legacy page without <main> retain a bounded
-    # fallback so parser behaviour remains explicit and testable.
     fallback = SectionParser(main_only=False)
     fallback.feed(page_html)
     fallback.close()
