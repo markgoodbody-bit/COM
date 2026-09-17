@@ -1,0 +1,53 @@
+name: ATRS Answerability Audit v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/atrs_answerability/**'
+      - '.github/workflows/atrs-answerability.yml'
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/**'
+      - '.github/workflows/atrs-answerability.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-live-sample:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile competition/atrs_answerability/audit.py competition/atrs_answerability/test_audit.py
+      - name: Parser tests
+        run: python -m unittest competition/atrs_answerability/test_audit.py -v
+      - name: Bounded live GOV.UK sample
+        run: |
+          python competition/atrs_answerability/audit.py \
+            --limit 5 \
+            --delay 0.1 \
+            --json-out /tmp/atrs_sample.json \
+            --csv-out /tmp/atrs_sample.csv
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/atrs_sample.json'))
+          assert r['summary']['records'] == 5
+          for row in r['records']:
+              assert row['url'].startswith('https://www.gov.uk/algorithmic-transparency-records/')
+              assert row['section_count'] > 0
+          print(json.dumps(r['summary'], indent=2))
+          PY
+      - name: Preserve live sample for manual readback
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-live-sample-${{ github.run_id }}
+          path: |
+            /tmp/atrs_sample.json
+            /tmp/atrs_sample.csv
+          retention-days: 30
