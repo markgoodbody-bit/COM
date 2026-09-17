@@ -2,8 +2,7 @@
 """Compare the public ATRS finder membership with GOV.UK generic Search API pages.
 
 The public finder is the authority for the current visible register. The generic
-Search API is useful for discovery but may expose legacy or otherwise excluded
-ATRS content. This tool records the difference rather than assuming equivalence.
+Search API is useful for discovery but is checked rather than assumed equivalent.
 """
 from __future__ import annotations
 
@@ -19,12 +18,13 @@ from typing import Any
 FINDER_URL = "https://www.gov.uk/algorithmic-transparency-records"
 SEARCH_URL = "https://www.gov.uk/api/search.json"
 BASE_URL = "https://www.gov.uk"
-USER_AGENT = "framework-atrs-membership-audit/0.1 (public research)"
+USER_AGENT = "framework-atrs-membership-audit/0.2 (public research)"
 
 RECORD_HREF = re.compile(
     r'href=["\'](?P<path>/algorithmic-transparency-records/(?P<slug>[^"\'?#/]+))["\']',
     re.I,
 )
+NON_RECORD_SLUGS = {"email-signup"}
 COUNT_PATTERNS = (
     re.compile(r'<h3[^>]*>\s*(\d+)\s+records\s*</h3>', re.I),
     re.compile(r'<h2[^>]*>\s*(\d+)\s+records\s*</h2>', re.I),
@@ -46,20 +46,23 @@ def parse_finder_page(page_html: str) -> tuple[list[str], int | None, int | None
     urls: list[str] = []
     seen: set[str] = set()
     for match in RECORD_HREF.finditer(page_html):
+        slug = html.unescape(match.group("slug"))
+        if slug in NON_RECORD_SLUGS:
+            continue
         url = BASE_URL + html.unescape(match.group("path"))
         if url not in seen:
             seen.add(url)
             urls.append(url)
     count = None
     for pattern in COUNT_PATTERNS:
-        m = pattern.search(page_html)
-        if m:
-            count = int(m.group(1))
+        match = pattern.search(page_html)
+        if match:
+            count = int(match.group(1))
             break
     next_page = None
-    m = NEXT_PAGE.search(page_html)
-    if m:
-        next_page = int(m.group(2))
+    match = NEXT_PAGE.search(page_html)
+    if match:
+        next_page = int(match.group(2))
     return urls, count, next_page
 
 
@@ -75,6 +78,8 @@ def enumerate_finder() -> dict[str, Any]:
         urls, count, next_page = parse_finder_page(body)
         if declared_count is None:
             declared_count = count
+        elif count != declared_count:
+            raise RuntimeError(f"finder count changed during pagination: {declared_count} -> {count}")
         pages.append({"page": page, "url": url, "record_urls": len(urls), "declared_count": count})
         for record_url in urls:
             if record_url not in seen:
@@ -115,7 +120,7 @@ def compare_membership() -> dict[str, Any]:
     finder_set = set(finder["urls"])
     search_set = set(search_urls)
     return {
-        "authority": "public ATRS finder membership",
+        "authority": "live public ATRS finder membership",
         "finder_declared_count": finder["declared_count"],
         "finder_enumerated_count": len(finder_set),
         "search_api_count": len(search_set),
@@ -135,9 +140,11 @@ def main() -> int:
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(text, encoding="utf-8")
-    print(json.dumps({k: v for k, v in report.items() if k not in {"finder_urls"}}, indent=2))
+    print(json.dumps({k: v for k, v in report.items() if k != "finder_urls"}, indent=2))
     if report["finder_declared_count"] != report["finder_enumerated_count"]:
         raise SystemExit("finder declared/enumerated membership mismatch")
+    if report["search_api_not_in_finder"] or report["finder_not_in_search_api"]:
+        raise SystemExit("finder/Search API membership mismatch")
     return 0
 
 
