@@ -1,0 +1,41 @@
+name: ProofPath Stage A adapter
+
+on:
+  pull_request:
+    branches:
+      - framework/warrantfuzz-v0
+    paths:
+      - "competition/warrantfuzz/stage_a_openai.py"
+      - "competition/warrantfuzz/test_stage_a_openai.py"
+      - "competition/warrantfuzz/runner_contract.py"
+      - "competition/warrantfuzz/warrantfuzz.py"
+      - "competition/warrantfuzz/fixtures/source_laundering.json"
+      - ".github/workflows/proofpath-stage-a.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-stage-a-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax
+        run: |
+          python -m py_compile competition/warrantfuzz/stage_a_openai.py competition/warrantfuzz/test_stage_a_openai.py
+      - name: Offline tests
+        run: python competition/warrantfuzz/test_stage_a_openai.py
+      - name: Dry-run spend and manifest gate
+        run: |
+          python competition/warrantfuzz/stage_a_openai.py --manifest /tmp/stage_a_manifest.json
+          python - <<'PY'
+          import json
+          rows = json.load(open('/tmp/stage_a_manifest.json', encoding='utf-8'))
+          assert len(rows) == 90, len(rows)
+          assert {r['model'] for r in rows} == {'gpt-5.6-terra', 'gpt-5.6-sol'}
+          print('manifest rows:', len(rows))
+          PY
