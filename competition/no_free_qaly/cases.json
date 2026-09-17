@@ -1,0 +1,81 @@
+{
+  "objective_cases": [
+    {
+      "id": "low_stakes_classification",
+      "states": {"positive": 0.5, "negative": 0.5},
+      "correct_action": {"positive": "act", "negative": "hold"},
+      "utility": {
+        "positive": {"act": 1.0, "hold": 0.0},
+        "negative": {"act": 0.0, "hold": 1.0}
+      },
+      "baseline": {
+        "positive": {"act": 0.7, "hold": 0.3},
+        "negative": {"act": 0.3, "hold": 0.7}
+      },
+      "intervention": {
+        "positive": {"act": 0.9, "hold": 0.1},
+        "negative": {"act": 0.1, "hold": 0.9}
+      }
+    },
+    {
+      "id": "high_stakes_triage",
+      "states": {"danger": 0.1, "safe": 0.9},
+      "correct_action": {"danger": "escalate", "safe": "discharge"},
+      "utility": {
+        "danger": {"escalate": 0.0, "discharge": -100.0},
+        "safe": {"escalate": -1.0, "discharge": 0.0}
+      },
+      "baseline": {
+        "danger": {"escalate": 0.7, "discharge": 0.3},
+        "safe": {"escalate": 0.05, "discharge": 0.95}
+      },
+      "intervention": {
+        "danger": {"escalate": 0.8, "discharge": 0.2},
+        "safe": {"escalate": 0.06, "discharge": 0.94}
+      }
+    }
+  ],
+  "monetary_cases": [
+    {
+      "id": "money_problem_a",
+      "risk_tolerance": 50.0,
+      "baseline": [[0.5, -100.0], [0.5, -100.0]],
+      "intervention": [[0.5, -100.0], [0.5, -60.0]]
+    },
+    {
+      "id": "money_problem_b",
+      "risk_tolerance": 50.0,
+      "baseline": [[0.5, -100.0], [0.5, -40.0]],
+      "intervention": [[0.5, -80.0], [0.5, 0.0]]
+    }
+  ],
+  "preference_case": {
+    "id": "preference_sensitive_treatment",
+    "states": {"benefit": 0.6, "no_benefit": 0.4},
+    "actions": ["aggressive", "conservative"],
+    "baseline": {
+      "benefit": {"aggressive": 0.5, "conservative": 0.5},
+      "no_benefit": {"aggressive": 0.5, "conservative": 0.5}
+    },
+    "interventions": {
+      "push_aggressive": {
+        "benefit": {"aggressive": 0.85, "conservative": 0.15},
+        "no_benefit": {"aggressive": 0.85, "conservative": 0.15}
+      },
+      "push_conservative": {
+        "benefit": {"aggressive": 0.25, "conservative": 0.75},
+        "no_benefit": {"aggressive": 0.25, "conservative": 0.75}
+      }
+    },
+    "stakeholder_utilities": {
+      "benefit_priority": {
+        "benefit": {"aggressive": 10.0, "conservative": 4.0},
+        "no_benefit": {"aggressive": -3.0, "conservative": 0.0}
+      },
+      "burden_priority": {
+        "benefit": {"aggressive": 5.0, "conservative": 4.0},
+        "no_benefit": {"aggressive": -8.0, "conservative": 0.0}
+      }
+    }
+  }
+}
