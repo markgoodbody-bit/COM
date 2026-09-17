@@ -1,0 +1,17 @@
+{
+  "title": "Unknown lineage must remain unknown",
+  "sources": [
+    {"id": "s1", "label": "Known primary report", "locator": "fixture://known-primary", "lineage_state": "primary"},
+    {"id": "s2", "label": "Unresolved web article", "locator": "fixture://unresolved", "lineage_state": "unknown"}
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The two URLs are independent corroboration.",
+      "evidence_state": "unresolved",
+      "source_ids": ["s1", "s2"],
+      "notes": ["No ancestry relation was established for s2. Missing lineage evidence must not become independence."]
+    }
+  ],
+  "relations": []
+}
