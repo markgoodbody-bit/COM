@@ -31,6 +31,7 @@ jobs:
             competition/atrs_answerability/membership.py \
             competition/atrs_answerability/select_adjudication.py \
             competition/atrs_answerability/exploratory_semantic_census.py \
+            competition/atrs_answerability/falsify_100.py \
             competition/atrs_answerability/test_audit.py \
             competition/atrs_answerability/test_membership.py \
             competition/atrs_answerability/test_select_adjudication.py \
@@ -41,6 +42,8 @@ jobs:
           python -m unittest competition/atrs_answerability/test_membership.py -v
           python -m unittest competition/atrs_answerability/test_select_adjudication.py -v
           python -m unittest competition/atrs_answerability/test_exploratory_semantic_census.py -v
+      - name: Falsify x100
+        run: python competition/atrs_answerability/falsify_100.py
 
 # Live membership and corpus retrieval are intentionally separate explicit
 # workflows. Ordinary source edits must not refetch GOV.UK by momentum.
