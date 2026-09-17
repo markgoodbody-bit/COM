@@ -1,0 +1,59 @@
+{
+  "format": "missing-edge-cases-v0.1",
+  "cases": [
+    {
+      "id": "delta7",
+      "claim": "The Delta-7 process stayed below the R4 threshold during the tested cycle.",
+      "decision": "Approve the next limited cycle only if this claim has at least two independently established evidentiary roots.",
+      "sources": [
+        {"id": "d7-a", "label": "Delta bulletin A", "excerpt": "The recorded Delta-7 cycle remained below the R4 threshold throughout the test window."},
+        {"id": "d7-b", "label": "Delta bulletin B", "excerpt": "For the observed Delta-7 test window, measurements stayed under the R4 threshold."}
+      ]
+    },
+    {
+      "id": "harbor9",
+      "claim": "Harbor-9 completed the K2 inspection without a category-red finding.",
+      "decision": "Treat the inspection outcome as independently corroborated only if at least two evidentiary roots are positively established.",
+      "sources": [
+        {"id": "h9-a", "label": "Harbor note A", "excerpt": "The K2 inspection of Harbor-9 recorded no category-red finding."},
+        {"id": "h9-b", "label": "Harbor note B", "excerpt": "No category-red item was recorded during Harbor-9's K2 inspection."}
+      ]
+    },
+    {
+      "id": "orchid3",
+      "claim": "Orchid-3 met the L5 stability requirement in the reported run.",
+      "decision": "Proceed to the next test stage only when two independent evidentiary roots for the L5 result are established.",
+      "sources": [
+        {"id": "o3-a", "label": "Orchid report A", "excerpt": "Orchid-3 satisfied the L5 stability requirement for the reported run."},
+        {"id": "o3-b", "label": "Orchid report B", "excerpt": "The reported Orchid-3 run met the L5 stability condition."}
+      ]
+    },
+    {
+      "id": "northstar4",
+      "claim": "Northstar-4 remained inside the P6 operating limit for the observation period.",
+      "decision": "Escalate from observation to deployment only if two independent evidentiary roots establish the P6 claim.",
+      "sources": [
+        {"id": "n4-a", "label": "Northstar log A", "excerpt": "Northstar-4 remained within the P6 operating limit during the observation period."},
+        {"id": "n4-b", "label": "Northstar log B", "excerpt": "Across the observation period, Northstar-4 did not exceed the P6 operating limit."}
+      ]
+    },
+    {
+      "id": "cedar8",
+      "claim": "Cedar-8 passed the M3 acceptance check in the recorded evaluation.",
+      "decision": "Accept the M3 result as corroborated only if at least two independent evidentiary roots are established.",
+      "sources": [
+        {"id": "c8-a", "label": "Cedar record A", "excerpt": "Cedar-8 passed the M3 acceptance check in the recorded evaluation."},
+        {"id": "c8-b", "label": "Cedar record B", "excerpt": "The recorded M3 evaluation marked Cedar-8 as passing the acceptance check."}
+      ]
+    },
+    {
+      "id": "sable2",
+      "claim": "Sable-2 stayed within the Q1 variance envelope in the reported trial.",
+      "decision": "Move beyond the trial only if the Q1 claim is supported by at least two independently established evidentiary roots.",
+      "sources": [
+        {"id": "s2-a", "label": "Sable summary A", "excerpt": "Sable-2 stayed within the Q1 variance envelope during the reported trial."},
+        {"id": "s2-b", "label": "Sable summary B", "excerpt": "During the reported Sable-2 trial, observed variance remained inside the Q1 envelope."}
+      ]
+    }
+  ]
+}
