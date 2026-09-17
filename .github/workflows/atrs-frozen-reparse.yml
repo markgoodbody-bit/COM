@@ -87,7 +87,7 @@ jobs:
           t=p.read_text(encoding='utf-8')
           assert t.count('class="card"') == 152
           assert 'ATRS Reader Lens' in t
-          assert '0</strong> records carry optional evidence-bound exploratory annotations' in t
+          assert 'Optional evidence-bound exploratory annotations exist for <strong>0</strong> records' in t
           print('version-aware reader bytes=', p.stat().st_size)
           PY
       - name: Preserve corrected derived objects
