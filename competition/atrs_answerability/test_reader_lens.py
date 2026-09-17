@@ -71,7 +71,8 @@ assert.equal(card.classList.contains('hidden'),false);
 assert.equal(explanation.classList.contains('hidden'),true);
 clearAll(); assert.equal(explanation.classList.contains('hidden'),true);
 '''
-        subprocess.run(["node", "-e", harness + script + assertions], check=True, capture_output=True, text=True)
+        result = subprocess.run(["node", "-e", harness + script + assertions], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_card_preserves_source_text_and_original_source_link(self):
         page = mod.card(row(), [])
