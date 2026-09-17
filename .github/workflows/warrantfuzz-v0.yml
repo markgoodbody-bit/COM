@@ -30,15 +30,18 @@ jobs:
           python -m py_compile competition/evidence_lineage_agent/evidence_lineage.py
           python -m py_compile competition/warrantfuzz/warrantfuzz.py
           python -m py_compile competition/warrantfuzz/lineage_envelope.py
+          python -m py_compile competition/warrantfuzz/runner_contract.py
           python -m py_compile competition/warrantfuzz/test_warrantfuzz.py
           python -m py_compile competition/warrantfuzz/test_lineage_envelope.py
           python -m py_compile competition/warrantfuzz/test_hostile_warrantfuzz.py
+          python -m py_compile competition/warrantfuzz/test_runner_contract.py
       - name: Unit and hostile tests
         run: |
           python -m unittest \
             competition/warrantfuzz/test_warrantfuzz.py \
             competition/warrantfuzz/test_lineage_envelope.py \
             competition/warrantfuzz/test_hostile_warrantfuzz.py \
+            competition/warrantfuzz/test_runner_contract.py \
             -v
       - name: Control report smoke
         run: |
@@ -47,3 +50,10 @@ jobs:
           grep -q '"mutation_power_established": true' "$tmp/report.json"
           grep -q '"baseline_replicate_required": true' "$tmp/report.json"
           grep -q 'Target agent: NOT RUN' "$tmp/report.md"
+      - name: Frozen target manifest smoke
+        run: |
+          tmp="$(mktemp -d)"
+          python competition/warrantfuzz/runner_contract.py competition/warrantfuzz/fixtures/source_laundering.json --runs 15 --out "$tmp/manifest.json"
+          grep -q '"mutant_correct_ancestry"' "$tmp/manifest.json"
+          grep -q '"mutant_wrong_ancestry"' "$tmp/manifest.json"
+          grep -q '"MANIFEST_CREATED != MODEL_CALLED"' "$tmp/manifest.json"
