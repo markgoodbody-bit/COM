@@ -24,9 +24,10 @@ NO SEPARATE PROCESS CAN BE A VALID DISCLOSURE
 ## Strong-owner boundary
 
 - GOV.UK / Government Digital Service owns the ATRS standard, template, guidance and repository.
+- BritainThinks/CDEI already owns foundational UK public-engagement findings around clear/simple/layered transparency, contact details and appeal information.
 - Fabio Rovai / Tesseract Academy owns an independent ATRS metadata corpus/harvester.
 - Public Law Project's Tracking Automated Government register independently catalogues public-sector automated decision tools and owns much of the broader transparency/redress/public-law framing.
-- existing qualitative/governance research already studies ATRS and public-sector algorithmic transparency.
+- existing algorithm-register usability and sociotechnical-governance research already owns much of the generic claim that registers can be difficult to use or omit accountability context.
 
 See `OWNER_MAP.md`.
 
@@ -58,7 +59,9 @@ SAME_REGEX + SAME_BYTES -> SAME_MISS
 
 ## Version-aware correction over the same source bytes
 
-Codex found seven records using an older/transition ATRS heading family that the original parser did not fully recognise. The affected headings included:
+**Claude Code identified the legacy-heading misses. Codex independently confirmed them against the frozen witness.** Discovery and independent confirmation are preserved as different contributions.
+
+Seven records use an older/transition ATRS heading family that the original parser did not fully recognise. The affected headings include:
 - `Human decision` / `Human decisions`;
 - `Impact assessment name / description / date / link`;
 - `Risk name / description / mitigation`;
@@ -70,7 +73,6 @@ Corrected derived run:
 
 ```text
 workflow = 35266542167 SUCCESS
-parser branch head = 363ba74d7f38aacd87d4fd7fd08d26c13ef9f8fa
 source refetch = FALSE
 heading profiles:
   current_named_family = 145
@@ -128,24 +130,31 @@ Reconciled bounded labels:
   PLAIN_TEXT_LOCATOR_MISSED = 0
 ```
 
-The 20 token-negative records are a sample, not a population estimate. `NO_CONTACT_TOKEN != NO_ROUTE`.
+The 20 token-negative records are a **sample, not a population estimate**. **Token absence also does not mean no reader action exists**: in-channel handoff and process references can occur without a URL/email/phone token.
+
+The exploratory semantic annotations/classifications are post-pilot work and **do not establish classification validity**. They remain provisional even when evidence-bound.
 
 ## Reader Lens
 
 `reader_lens.py` builds a static, source-linked reader centred on one practical question:
 
-> What does this published record actually say about what someone can do next?
+> What does this published record actually say about review, challenge, correction, complaint, clarification or help?
 
-The corrected Reader Lens is generated from the version-aware derived report and defaults to source evidence only. It:
-- links each card to GOV.UK;
+The current interface:
+- links each record to GOV.UK;
 - shows exact published `Appeals and review` text;
-- exposes published URL/email/phone/link tokens without calling them rights or remedies;
+- makes safely representable http/https/mailto evidence actionable without relabelling it as an appeal;
+- leaves phone-like detection as visible heuristic evidence rather than manufacturing a phone action;
 - shows human-review and responsible-owner disclosure;
-- produces no scalar score;
-- does not infer hidden/internal practice;
-- does not claim legal advice or route effectiveness.
+- moves source hashes/extraction metadata behind Evidence details;
+- separates source search from optional exploratory-annotation search;
+- uses visible labels, a live results status and reset/no-match guidance;
+- keeps cards compact by default with full evidence retained in HTML details;
+- produces **No scalar score is produced** by the audit or Reader Lens.
 
-Exploratory semantic annotations from the historical pilot are **not silently carried across the parser-version boundary**. They may be reconciled later only through an explicit evidence-identity step.
+A syntactic contact token is **not called a review route** by the automated layer. Semantic relevance requires source readback.
+
+Exploratory semantic annotations are not silently carried across parser-version boundaries. They may be attached only through an explicit evidence-identity step and remain optional/not validated.
 
 ```text
 SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
@@ -159,20 +168,54 @@ The candidate finding remains narrower than a generic transparency critique:
 
 > `Appeals and review` field presence can be high while the reader-visible challenge/review object remains heterogeneous. Field completion alone therefore loses distinctions about what can be challenged, by whom, through what route, and at which layer of the decision process.
 
-Only retain this at the strength earned by a fresh/full semantic census and a real reader-use test.
+**Only retain that finding at the strength earned** by a fresh/full semantic census and a real reader-use test.
 
 If the result reduces to **"free-text fields vary"**, shrink #364 to a demo.
 
+`READER_USE_PROTOCOL.md` defines a future bounded A/B task on actual ATRS records. No human reader benefit has been demonstrated yet.
+
 ## Falsification status
 
-A 100-probe regression/falsification harness covers evidence binding, parser/extraction, bounded codebook regressions and claim/drift ceilings.
+A 100-probe regression/falsification harness covers evidence binding, parser/extraction, bounded codebook regressions and documentation/claim ceilings.
 
-The first run was `55/100`; substantive failures were repaired. The same structure later ran `100/100` on the then-known falsifiers. The subsequent heading-family defect demonstrates why this cannot be treated as validation.
+The first run was `55/100`; substantive failures were repaired. The same known structure later ran `100/100`. The subsequent legacy-heading discovery demonstrates why this cannot be treated as validation.
 
 ```text
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
 GREEN_TESTS != COMPLETE_MODEL_OF_THE_SOURCE
 REPRODUCIBILITY != CORRECTNESS
+```
+
+## Stable anti-drift / claim-ceiling block
+
+The following statements are intentionally stable regression targets for documentation checks. They are ceilings, not research results:
+
+```text
+CURRENT COMPETITION LEAD
+NOT SELECTED ENTRY
+NOT A POLICY OR COMPLIANCE SCORE
+published record
+not hidden/internal system reality
+GOV.UK / Government Digital Service owns
+Tesseract Academy
+NOT_FOUND_IN_BOUNDED_SEARCH != NOVEL
+does not establish classification validity
+No scalar score is produced
+not called a review route
+sample, not a population estimate
+Token absence also does not mean no reader action exists
+Only retain that finding at the strength earned
+Re-read live competition Guidelines/terms
+FIELD_PRESENT != PRACTICAL_NAVIGABILITY
+SECTION_PRESENT != PRACTICALLY_EFFECTIVE_REMEDY
+SYNTACTIC_CONTACT_TOKEN_PRESENT != RELEVANT_APPEAL_ROUTE
+CONCRETE_ROUTE_OBSERVED != ROUTE_EFFECTIVE
+HUMAN_HANDOFF != FORMAL_APPEAL
+ROUTE_DESCRIBED_WITHOUT_LOCATOR != NO_ROUTE_EXISTS
+DISCLOSURE_ABSENT != PRACTICE_ABSENT
+PUBLIC_RECORD_AUDIT != COMPLIANCE_AUDIT
+PUBLIC_RECORD_AUDIT != POLICY_VERDICT
+No registration, organiser contact, model/provider spend, terms acceptance or submission
 ```
 
 ## November core-work posture
@@ -187,7 +230,7 @@ If live Apart rules permit/require fresh core work during the November sprint:
 - test reader-use value rather than assuming it;
 - optionally compare changed records against the September content-addressed baseline.
 
-Re-read live competition Guidelines/terms before registration/submission.
+**Re-read live competition Guidelines/terms** before registration/submission.
 
 ## Critical ceilings
 
@@ -197,12 +240,13 @@ SECTION_PRESENT != PRACTICALLY_EFFECTIVE_REMEDY
 SYNTACTIC_CONTACT_TOKEN_PRESENT != RELEVANT_APPEAL_ROUTE
 CONCRETE_ROUTE_OBSERVED != ROUTE_EFFECTIVE
 HUMAN_HANDOFF != FORMAL_APPEAL
+ROUTE_DESCRIBED_WITHOUT_LOCATOR != NO_ROUTE_EXISTS
 DISCLOSURE_ABSENT != PRACTICE_ABSENT
 ATRS_RECORD != COMPLETE_SYSTEM_REALITY
 PUBLIC_RECORD_AUDIT != COMPLIANCE_AUDIT
 PUBLIC_RECORD_AUDIT != POLICY_VERDICT
 ```
 
-#364 remains the **current competition lead**, not a selected or submitted entry.
+#364 remains the **CURRENT COMPETITION LEAD**, **NOT SELECTED ENTRY**.
 
-No registration, organiser contact, model/provider spend, terms acceptance or submission is implied by this branch.
+**No registration, organiser contact, model/provider spend, terms acceptance or submission** is implied by this branch.
