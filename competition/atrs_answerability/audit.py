@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""ATRS answerability coverage audit.
+"""ATRS answerability disclosure audit.
 
 Enumerates current UK Algorithmic Transparency Recording Standard records from
 the official GOV.UK Search API, fetches each public record page, and extracts a
-small set of answerability-relevant sections.
+small set of answerability-relevant fields.
 
 This reports observable disclosure properties, not a transparency/ethics score.
 GOV.UK public-sector information is reused under the Open Government Licence
 v3.0. No third-party harvester code is copied.
 """
-
 from __future__ import annotations
 
 import argparse
@@ -27,10 +26,10 @@ from typing import Any
 
 SEARCH_URL = "https://www.gov.uk/api/search.json"
 BASE_URL = "https://www.gov.uk"
-USER_AGENT = "framework-atrs-answerability-audit/0.2 (public research)"
+USER_AGENT = "framework-atrs-answerability-audit/0.3 (public research)"
 
-# Match field headings, not Tier/category headings. ATRS numbering shifted across
-# versions, so names carry more authority than one fixed number.
+# Names carry more authority than fixed numbering because ATRS headings moved
+# between versions. Match actual field headings, never Tier/category headings.
 FIELD_PATTERNS = {
     "human_review": (
         r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?human review$",
@@ -58,15 +57,11 @@ NONE_PATTERNS = (
     r"\bno (?:specific )?(?:appeal|complaint|review)(?:s| procedures?| processes?)?\b",
 )
 
-PUBLIC_ROUTE_PATTERNS = (
-    r"mailto:",
-    r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
-    r"https?://",
-    r"\bcontact(?: us)?\b",
-    r"\bcomplaints? (?:procedure|process|route|page|team)\b",
-    r"\breview request\b",
-    r"\bqueries? (?:line|team|email)\b",
-)
+# A public route locator is deliberately narrower than "a process is described".
+# It requires something a reader could actually use or follow from the record.
+EMAIL_RE = re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I)
+PHONE_RE = re.compile(r"(?<!\d)(?:\+44\s?\d(?:[\s-]?\d){8,10}|0\d{2,4}(?:[\s-]?\d){6,10})(?!\d)")
+HREF_RE = re.compile(r'href="[^"]+"', re.I)
 
 
 @dataclass
@@ -95,9 +90,7 @@ class SectionParser(HTMLParser):
         if self.current_heading is None or self.current_level is None:
             return
         text = re.sub(r"\s+", " ", " ".join(self.current_text)).strip()
-        self.sections.append(
-            Section(self.current_level, self.current_heading, text, " ".join(self.current_html))
-        )
+        self.sections.append(Section(self.current_level, self.current_heading, text, " ".join(self.current_html)))
         self.current_text = []
         self.current_html = []
 
@@ -136,9 +129,7 @@ class SectionParser(HTMLParser):
 
 
 def _request(url: str):
-    return urllib.request.urlopen(
-        urllib.request.Request(url, headers={"User-Agent": USER_AGENT}), timeout=45
-    )
+    return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": USER_AGENT}), timeout=45)
 
 
 def request_json(url: str) -> dict[str, Any]:
@@ -189,19 +180,25 @@ def normalize_heading(value: str) -> str:
 
 
 def find_section(sections: list[Section], patterns: tuple[str, ...]) -> Section | None:
-    # Field values are h3s on current records. Prefer them. Fall back to any
-    # exact field-name match for older renderings, but never match a "Tier 2" h2.
     ordered = [s for s in sections if s.level == "h3"] + [s for s in sections if s.level != "h3"]
     for section in ordered:
-        h = normalize_heading(section.heading)
-        if h.startswith("tier "):
+        heading = normalize_heading(section.heading)
+        if heading.startswith("tier "):
             continue
-        if any(re.fullmatch(p, h, flags=re.I) for p in patterns):
+        if any(re.fullmatch(pattern, heading, flags=re.I) for pattern in patterns):
             return section
     return None
 
 
-def classify_section(section: Section | None) -> dict[str, Any]:
+def has_public_route_locator(section: Section | None) -> bool:
+    if section is None:
+        return False
+    # An actual href, explicit email address, or phone number counts as a locator.
+    # Generic words such as "contact", "advisor" or "complaints process" do not.
+    return bool(HREF_RE.search(section.html_fragment) or EMAIL_RE.search(section.text) or PHONE_RE.search(section.text))
+
+
+def classify_section(section: Section | None, *, detect_public_route: bool = False) -> dict[str, Any]:
     if section is None:
         return {
             "section_present": False,
@@ -210,19 +207,23 @@ def classify_section(section: Section | None) -> dict[str, Any]:
             "states_none_or_not_applicable": False,
             "public_route_locator": False,
         }
-    combined = f"{section.text} {section.html_fragment}"
     return {
         "section_present": True,
         "heading": section.heading,
         "characters": len(section.text),
         "states_none_or_not_applicable": any(re.search(p, section.text, flags=re.I) for p in NONE_PATTERNS),
-        "public_route_locator": any(re.search(p, combined, flags=re.I) for p in PUBLIC_ROUTE_PATTERNS),
+        "public_route_locator": has_public_route_locator(section) if detect_public_route else False,
     }
 
 
 def audit_record(record: dict[str, Any], page_html: str) -> dict[str, Any]:
     sections = parse_sections(page_html)
-    fields = {name: classify_section(find_section(sections, patterns)) for name, patterns in FIELD_PATTERNS.items()}
+    fields: dict[str, dict[str, Any]] = {}
+    for name, patterns in FIELD_PATTERNS.items():
+        fields[name] = classify_section(
+            find_section(sections, patterns),
+            detect_public_route=(name == "appeals_review"),
+        )
     return {**record, "fields": fields, "section_count": len(sections)}
 
 
@@ -230,11 +231,13 @@ def summarise(rows: list[dict[str, Any]]) -> dict[str, Any]:
     summary: dict[str, Any] = {"records": len(rows), "fields": {}}
     for name in FIELD_PATTERNS:
         values = [r["fields"][name] for r in rows]
-        summary["fields"][name] = {
+        item = {
             "section_present": sum(v["section_present"] for v in values),
             "states_none_or_not_applicable": sum(v["states_none_or_not_applicable"] for v in values),
-            "public_route_locator": sum(v["public_route_locator"] for v in values),
         }
+        if name == "appeals_review":
+            item["public_route_locator"] = sum(v["public_route_locator"] for v in values)
+        summary["fields"][name] = item
     return summary
 
 
@@ -242,17 +245,20 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = ["title", "url", "published", "section_count"]
     for field in FIELD_PATTERNS:
-        fieldnames += [f"{field}_present", f"{field}_none_or_na", f"{field}_route_locator"]
+        fieldnames += [f"{field}_present", f"{field}_none_or_na"]
+        if field == "appeals_review":
+            fieldnames.append("appeals_review_public_route_locator")
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
             flat: dict[str, Any] = {k: row.get(k) for k in ["title", "url", "published", "section_count"]}
             for field in FIELD_PATTERNS:
-                v = row["fields"][field]
-                flat[f"{field}_present"] = v["section_present"]
-                flat[f"{field}_none_or_na"] = v["states_none_or_not_applicable"]
-                flat[f"{field}_route_locator"] = v["public_route_locator"]
+                value = row["fields"][field]
+                flat[f"{field}_present"] = value["section_present"]
+                flat[f"{field}_none_or_na"] = value["states_none_or_not_applicable"]
+                if field == "appeals_review":
+                    flat["appeals_review_public_route_locator"] = value["public_route_locator"]
             writer.writerow(flat)
 
 
@@ -269,9 +275,9 @@ def main() -> int:
         records = records[: args.limit]
 
     audited: list[dict[str, Any]] = []
-    for idx, record in enumerate(records):
+    for index, record in enumerate(records):
         audited.append(audit_record(record, request_text(record["url"])))
-        if idx + 1 < len(records):
+        if index + 1 < len(records):
             time.sleep(args.delay)
 
     report = {
@@ -282,7 +288,8 @@ def main() -> int:
         "summary": summarise(audited),
         "ceilings": [
             "SECTION_PRESENT != PRACTICALLY_EFFECTIVE_REMEDY",
-            "ROUTE_LOCATOR_PRESENT != ROUTE_WORKS",
+            "PUBLIC_ROUTE_LOCATOR_PRESENT != ROUTE_WORKS",
+            "PUBLIC_ROUTE_MENTIONED != PUBLIC_ROUTE_LOCATOR_PRESENT",
             "DISCLOSURE_ABSENT != PRACTICE_ABSENT",
             "ATRS_RECORD != COMPLETE_SYSTEM_REALITY",
             "PUBLIC_RECORD_AUDIT != POLICY_VERDICT",
