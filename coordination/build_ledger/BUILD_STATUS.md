@@ -18,8 +18,9 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS** | Hannibal candidates remain draft; no public record 4. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Researcher Access HOLD; ARIA seam only. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **OPEN / METHOD SOURCE REPAIRED / NOT HUMAN-RUN READY** | #367 integrated final Codex cue/key repairs at exact head `fd1b75c...`; hosted CI green. |
+| #364 ATRS | **CURRENT LEAD / FRESH-CORPUS ROUTE-RELATION QUESTION / NOT RESULT** | Current exact head `7b7b1fd8...`; hosted CI `35277771413` green. Reader-use pilot is secondary and human-run gated. `LAYER_NOT_STATED` is valid; no whole-record score or causal version claim. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
+| COM #99 / social-care correction consequence | **FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD** | Normative owner chain substantially present; operational connection after post-use correction is not established from public sources. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
@@ -70,10 +71,10 @@ Nine scored cases use six position/condition-balanced schedules; the missing-fie
 The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
 
 ```text
-#364 exact head = fd1b75c9671af8e85df9cbe9ad33ef025797d578
-#367 = MERGED
-hosted CI = 35274673506 SUCCESS
-job = 105382239776 SUCCESS
+#364 current exact head = 7b7b1fd8a171a5414c315f585e715700cc0703f6
+current hosted CI = 35277771413 SUCCESS
+#367 = MERGED reader-use repair
+fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
 
 At that head:
