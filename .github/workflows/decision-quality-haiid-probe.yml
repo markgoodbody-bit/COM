@@ -1,0 +1,43 @@
+name: Decision Quality HAIID feasibility probe
+
+on:
+  push:
+    branches:
+      - framework/decision-quality-haiid-probe
+    paths:
+      - "competition/decision_quality_metric_stress_test/probe_haiid.py"
+      - "competition/decision_quality_metric_stress_test/test_probe_haiid.py"
+      - ".github/workflows/decision-quality-haiid-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  feasibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax
+        run: |
+          python -m py_compile \
+            competition/decision_quality_metric_stress_test/probe_haiid.py \
+            competition/decision_quality_metric_stress_test/test_probe_haiid.py
+      - name: Pre-data sanity tests
+        run: python competition/decision_quality_metric_stress_test/test_probe_haiid.py
+      - name: Run pinned public-data feasibility probe
+        run: |
+          python competition/decision_quality_metric_stress_test/probe_haiid.py \
+            --download \
+            --data /tmp/haiid_dataset.csv \
+            --json-out /tmp/haiid_probe.json
+      - name: Preserve result
+        uses: actions/upload-artifact@v4
+        with:
+          name: decision-quality-haiid-${{ github.run_id }}
+          path: /tmp/haiid_probe.json
+          if-no-files-found: error
+          retention-days: 30
