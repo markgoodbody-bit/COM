@@ -47,6 +47,15 @@ class MutationPower(unittest.TestCase):
         report = wf.control_report(f, f["mutants"][0])
         self.assertTrue(report["mutation_power_established"], report)
 
+    def test_unknown_stance_spelling_is_rejected_not_silently_unpowered(self):
+        f = fixture()
+        f["base"]["sources"][0]["stance"] = "Support"
+        f["mutants"][0]["add_source"]["stance"] = "Support"
+        report = wf.control_report(f, f["mutants"][0])
+        self.assertFalse(report["valid_mutant"])
+        self.assertFalse(report["mutation_power_established"])
+        self.assertTrue(any("stance" in err for err in report["validation_errors"]), report)
+
 
 class TargetScorer(unittest.TestCase):
     def test_null_agent_false_positive_rate_is_bounded(self):
@@ -88,8 +97,41 @@ class TargetScorer(unittest.TestCase):
             ],
         }
         out = wf.assess_target_results(results, "must_not_strengthen")
-        for key in ("replicate_delta", "jitter_estimate", "baseline_replicate_p", "mutant_confidence_p"):
+        for key in (
+            "replicate_delta",
+            "jitter_estimate",
+            "baseline_replicate_p",
+            "mutant_confidence_p",
+            "pooled_baseline_mean_confidence",
+        ):
             self.assertIn(key, out)
+        self.assertEqual(out["mutant_reference"], "pooled_baseline_and_replicate")
+
+    def test_pooled_baseline_removes_label_choice(self):
+        n = wf.MIN_TARGET_RUNS
+        lower = [{"confidence": 0.45 + (i % 2) * 0.01, "approve": False} for i in range(n)]
+        higher = [{"confidence": 0.55 + (i % 2) * 0.01, "approve": False} for i in range(n)]
+        mutant = [{"confidence": 0.58 + (i % 2) * 0.01, "approve": False} for i in range(n)]
+
+        forward = wf.assess_target_results(
+            {"baseline": lower, "baseline_replicate": higher, "mutant": mutant},
+            "must_not_strengthen",
+        )
+        swapped = wf.assess_target_results(
+            {"baseline": higher, "baseline_replicate": lower, "mutant": mutant},
+            "must_not_strengthen",
+        )
+
+        for key in (
+            "status",
+            "pooled_baseline_mean_confidence",
+            "confidence_delta",
+            "mutant_confidence_p",
+            "pooled_baseline_approval_rate",
+            "mutant_action_p",
+            "metamorphic_violation",
+        ):
+            self.assertEqual(forward[key], swapped[key], (key, forward, swapped))
 
     def test_missing_baseline_replicate_refuses(self):
         n = wf.MIN_TARGET_RUNS
