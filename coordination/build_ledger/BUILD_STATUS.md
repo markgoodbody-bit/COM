@@ -18,7 +18,7 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PRODUCT QUALITY** | Next edge remains observe/correct operational scale. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Retain truthful low-distortion routes only. |
 | COM #349 / tournament | **ACTIVE / SELECTION OPEN / #364 CURRENT LEAD** | Selected entry remains NONE. |
-| #364 ATRS Answerability Audit | **OPEN / CURRENT LEAD / NOT SELECTED / VERSION-AWARE REPAIR COMPLETE** | Frozen source preserved; heading-family defect corrected over same bytes; appeals pilot intact; reader benefit unestablished. |
+| #364 ATRS Answerability Audit | **OPEN / CURRENT LEAD / NOT SELECTED / VERSION-AWARE REPAIR + READER-USE METHOD** | Frozen source preserved; appeals pilot intact; Reader Lens interface under bounded repair; no human benefit result. |
 | #363 No Free QALY | **OPEN / FALLBACK SYNTHESIS** | Owner-attributed synthesis only. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
@@ -27,9 +27,15 @@ PURPOSE > INSTRUMENT
 | PSFH D068 | **LIVE** | Reader benefit unestablished. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 
+## Apertures
+
+- Framework: integration / coordination / current lead.
+- Codex: active hostile-review / implementation aperture.
+- Claude Code: **active again on #364**. CC identified the legacy-heading misses; Codex independently confirmed them against the frozen witness.
+
 ## #364 source/evidence state
 
-Historical frozen source witness:
+Historical frozen witness:
 
 ```text
 run = 35257984573 SUCCESS
@@ -37,11 +43,10 @@ source head = 4a7b43df95a2b776b885f8ee903d929100414af7
 artifact = 10513278849
 artifact sha256 = ad315d9b08a0af65c4615638df2235b9ce6f021307315fbeb6dfcbd8cbdb0097
 historical report sha256 = c13d62cc685c9c4dc1e6aabcfb658ab40460f4b51abf46f05a242032d0330eb9
-records = 152
-raw source HTML = 152
+records / raw HTML = 152 / 152
 ```
 
-The historical report is preserved. Codex reproduced its extraction, then found that the extraction itself missed older heading families.
+Codex reproduced the original extraction. CC subsequently identified a real extraction-completeness defect in older heading families; Codex independently confirmed it against the frozen bytes.
 
 ```text
 REPRODUCED != CORRECT
@@ -49,7 +54,7 @@ REPRODUCED != CORRECT
 
 ## Version-aware correction
 
-No GOV.UK refetch. The exact frozen HTML was reparsed with explicit legacy/transition heading recognition and heading-family context.
+No GOV.UK refetch. Same source HTML reparsed with legacy/transition heading recognition and heading-family context.
 
 ```text
 workflow = 35266542167 SUCCESS
@@ -61,7 +66,7 @@ legacy_2024_family = 6
 mixed_known_families = 1
 ```
 
-Corrected source-level observations:
+Corrected source observations:
 
 ```text
 human_review = 152/152
@@ -75,16 +80,10 @@ maintenance = 152/152
 senior_responsible_owner = 152/152
 ```
 
-Superseded original figures:
+Historical figures superseded but preserved:
+`human 146 -> 152`, `risks 145 -> 152`, `impact 138 -> 145`; model remains `139` with corrected context.
 
-```text
-human_review: 146 -> 152
-risks: 145 -> 152
-impact_assessment: 138 -> 145
-model_performance: 139 -> 139, but interpretation corrected
-```
-
-Do not describe older-family field absence as a required omission.
+A follow-up regression repair ensures an actually observed field wins over any mixed-family absence context.
 
 ```text
 HEADING_FAMILY != COMPLIANCE_STATUS
@@ -93,7 +92,7 @@ FIELD_NOT_OBSERVED != REQUIRED_FIELD_OMITTED
 
 ## Appeals/review pilot
 
-Unchanged by version repair:
+Unchanged by heading-family repair:
 
 ```text
 27 token-positive census:
@@ -109,16 +108,12 @@ Unchanged by version repair:
   0 plain-text locator misses
 ```
 
-Negative set remains a sample. `NO_CONTACT_TOKEN != NO_ROUTE`.
+This is over records, not publishing bodies. Five token-positive records share one Money and Pensions Service boilerplate line. `NO_CONTACT_TOKEN != NO_ROUTE`.
 
 ## Falsification state
 
-Falsify x100:
-- first pass `55/100`;
-- bounded repairs;
-- known-probe rerun `100/100`.
-
-The heading-family defect arrived after the 100/100 result and is evidence against treating that result as validation.
+Falsify x100: `55/100` -> bounded repair -> known-probe `100/100`.
+The later heading-family discovery demonstrates that this is regression resistance, not validation.
 
 ```text
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
@@ -128,30 +123,60 @@ REPRODUCIBILITY != CORRECTNESS
 
 ## Reader Lens
 
-A 152-record source-linked Reader Lens exists. Corrected version-aware Reader Lens was rebuilt from the derived report and defaults to source evidence only. Historical exploratory annotations are not automatically transferred across the parser-version boundary.
+Reader Lens interface is being repaired against Codex's bounded usability review:
+- annotation search separated from source search;
+- safely representable web/email evidence actionable without becoming an appeal claim;
+- phone-like strings remain heuristic evidence;
+- technical provenance moved behind Evidence details;
+- ordinary-language ATRS intro;
+- advanced technical filters;
+- visible search labels, `aria-live` results status, reset/no-match path;
+- compact cards with evidence preserved in HTML.
+
+No rendered desktop/mobile/keyboard/assistive-technology verification is claimed yet.
+
+## Reader-use method
+
+The general proposition that clear/simple/layered algorithm transparency and contact/appeal information matter is already strongly owned (BritainThinks/CDEI, GDS, register-usability research). Residual task:
+
+> On actual ATRS records, does a source-preserving presentation improve retrieval of action-relevant facts without increasing unsupported inference?
+
+Evidence-bound method pack:
 
 ```text
-SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
-EASIER_INSPECTION != EFFECTIVE_REMEDY
+workflow = 35267375791 SUCCESS
+artifact = 10517053630
+artifact sha256 = d41111053f6240d4aadf9bded931b3bfd917ef484a1549cdad4f1940d60f040f
+cases = 10 purposive stress cases
+tasks = 6
+sequence A = 5 RAW + 5 LENS
+sequence B = inverse
 ```
 
-The next useful work is a reader-use falsifier/protocol, not parser polish: test whether a reader can identify the challenge object, eligible actor, initiation route/channel and decision layer more accurately or efficiently with the lens than from the raw ATRS record.
+No recruitment, participant data or human result exists. Codex hostile protocol review requested/pending.
 
-No real human benefit result exists yet.
+```text
+METHOD_PACK != HUMAN_RESULT
+TEN_PURPOSIVE_CASES != WHOLE_ATRS_REGISTER
+SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
+COMPREHENSION != EFFECTIVE_REMEDY
+```
 
-## Strong-owner update
+## Strong-owner boundary
 
-Public Law Project / Tracking Automated Government is now carried as the strongest independent owner for broad UK public-sector automated-decision visibility and related transparency/redress/public-law work. #364 must remain narrower: field-level ATRS Appeals/review legibility and reader-use measurement.
+Current strong owners include GDS, BritainThinks/CDEI, Tesseract metadata corpus, Public Law Project TAG, and adjacent algorithm-register usability/contestability research. #364 survives only as a narrower field-level/task-level empirical question.
+
+Stop/shrink if reader benefit fails, unsupported inference rises, a simpler owner-controlled GOV.UK change captures the benefit, or the result reduces to `free-text fields vary`.
 
 ## Competition / resource posture
 
-#364 remains current lead, not selected. September = pilot/method/falsification/frozen baseline. Fresh substantive research should remain available for the November Apart sprint if live rules permit/require it.
+#364 remains current lead, not selected. September = pilot/method/falsification/frozen baseline. Fresh substantive work should remain available for November if live Apart rules permit/require it.
 
 No competition/funder account, registration, organiser contact, terms acceptance, submission, new spend, payment/tax or travel action has occurred.
 
 ```text
 PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY
-POSSIBLE PRIZE = £0
+POSSIBLE_PRIZE = £0
 IF_WE_LOSE -> USEFUL_WORK_SHOULD_REMAIN
 OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
 ```
