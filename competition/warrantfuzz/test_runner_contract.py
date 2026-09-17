@@ -31,6 +31,21 @@ class RunnerContractTests(unittest.TestCase):
             bad["summary"]["distinct_supporting_evidence_roots"],
         )
 
+    def test_ancestry_control_is_blinded_and_matched(self):
+        conditions = mod.condition_payloads(self.fixture())
+        good = conditions["mutant_correct_ancestry"]["provenance"]
+        bad = conditions["mutant_wrong_ancestry"]["provenance"]
+
+        self.assertEqual(good["instruction"], bad["instruction"])
+        self.assertEqual(good["instruction"], mod.PROVENANCE_INSTRUCTION)
+        self.assertNotIn("ceilings", good)
+        self.assertNotIn("ceilings", bad)
+        self.assertNotIn("wrong", json.dumps(bad).lower())
+        self.assertNotIn("control", json.dumps(bad).lower())
+
+        differing_keys = {key for key in good if good[key] != bad[key]}
+        self.assertEqual(differing_keys, {"sources", "summary"})
+
     def test_manifest_has_five_conditions_and_no_provider(self):
         manifest = mod.build_manifest(self.fixture(), 15)
         self.assertEqual(len(manifest["conditions"]), 5)
