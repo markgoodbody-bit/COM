@@ -37,7 +37,9 @@ jobs:
           good=json.load(open('/tmp/preserving.json'))
           print('lossy:', bad['summary'])
           print('preserving:', good['summary'])
-          assert bad['summary']['unauthorized_negotiability'] > 0
-          assert good['summary']['unauthorized_negotiability'] == 0
+          assert bad['summary']['unsafe_escalations'] > 0
+          assert good['summary']['unsafe_escalations'] == 0
+          assert good['summary']['missed_permissions'] == 0
           assert good['summary']['state_matches'] == good['summary']['total']
+          assert good['summary']['consequence_matches'] == good['summary']['total']
           PY
