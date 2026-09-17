@@ -1,0 +1,43 @@
+name: Policy Boundary v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/policy_boundary/**'
+      - '.github/workflows/policy-boundary-v0.yml'
+  push:
+    branches:
+      - 'framework/policy-boundary-falsification-v0'
+    paths:
+      - 'competition/policy_boundary/**'
+      - '.github/workflows/policy-boundary-v0.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-falsification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile competition/policy_boundary/policy_boundary.py competition/policy_boundary/test_policy_boundary.py
+      - name: Tests
+        run: python -m unittest competition/policy_boundary/test_policy_boundary.py -v
+      - name: Printed controls
+        run: |
+          python competition/policy_boundary/policy_boundary.py competition/policy_boundary/fixtures.json --compiler lossy --out /tmp/lossy.json
+          python competition/policy_boundary/policy_boundary.py competition/policy_boundary/fixtures.json --compiler preserving --out /tmp/preserving.json
+          python - <<'PY'
+          import json
+          bad=json.load(open('/tmp/lossy.json'))
+          good=json.load(open('/tmp/preserving.json'))
+          print('lossy:', bad['summary'])
+          print('preserving:', good['summary'])
+          assert bad['summary']['unauthorized_negotiability'] > 0
+          assert good['summary']['unauthorized_negotiability'] == 0
+          assert good['summary']['state_matches'] == good['summary']['total']
+          PY
