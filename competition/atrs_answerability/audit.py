@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """ATRS answerability disclosure audit.
 
-Audits the records that are currently visible in the official GOV.UK ATRS
-finder. The audit preserves the exact fetched page hash, fetch time, every
-matching field section, section text and link destinations.
+Audits the records currently visible in the official GOV.UK ATRS finder.
+The audit preserves source hashes, fetch times, every matching field section,
+section text/link destinations, and can retain the exact fetched HTML bytes.
 
-It reports syntactic public disclosure observables only. It does not score
+It reports syntactic public-disclosure observables only. It does not score
 transparency, compliance, remedy quality, or infer undisclosed practice.
 """
 from __future__ import annotations
@@ -19,15 +19,14 @@ import json
 import re
 import sys
 import urllib.request
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent
-BASE_URL = "https://www.gov.uk"
-USER_AGENT = "framework-atrs-answerability-audit/0.4 (public research)"
+USER_AGENT = "framework-atrs-answerability-audit/0.5 (public research)"
 
 FIELD_PATTERNS = {
     "human_review": (
@@ -48,8 +47,8 @@ FIELD_PATTERNS = {
     "senior_responsible_owner": (r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?senior responsible owner$",),
 }
 
-# These patterns only report that language occurs. They do NOT adjudicate the
-# scope of the negation or declare the entire field inapplicable.
+# Phrase occurrence only. These do not adjudicate the semantic scope of a
+# negation or declare the whole field inapplicable.
 NONE_PHRASE_PATTERNS = (
     r"\bnot applicable\b",
     r"(?:^|[.!?]\s*)n/?a(?:\s*[.!?]|\s*$)",
@@ -74,10 +73,14 @@ class Section:
 
 
 class SectionParser(HTMLParser):
-    """Extract h2/h3 sections and all links occurring in each section."""
+    """Extract h2/h3 sections, normally only from the page's <main> element."""
 
-    def __init__(self) -> None:
+    def __init__(self, *, main_only: bool) -> None:
         super().__init__(convert_charrefs=True)
+        self.main_only = main_only
+        self.saw_main = False
+        self.in_main = not main_only
+        self.main_depth = 0
         self.in_heading = False
         self.heading_tag: str | None = None
         self.heading_parts: list[str] = []
@@ -99,10 +102,22 @@ class SectionParser(HTMLParser):
                 hrefs=list(dict.fromkeys(self.current_hrefs)),
             )
         )
+        self.current_heading = None
+        self.current_level = None
         self.current_text = []
         self.current_hrefs = []
+        self.in_heading = False
+        self.heading_tag = None
+        self.heading_parts = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "main":
+            self.saw_main = True
+            self.main_depth += 1
+            self.in_main = True
+            return
+        if self.main_only and not self.in_main:
+            return
         if tag in {"h2", "h3"}:
             self._flush()
             self.in_heading = True
@@ -115,6 +130,13 @@ class SectionParser(HTMLParser):
                 self.current_hrefs.append(html.unescape(href))
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "main" and self.saw_main:
+            self._flush()
+            self.main_depth = max(0, self.main_depth - 1)
+            self.in_main = self.main_depth > 0
+            return
+        if self.main_only and not self.in_main:
+            return
         if self.in_heading and tag == self.heading_tag:
             self.current_heading = re.sub(r"\s+", " ", " ".join(self.heading_parts)).strip()
             self.current_level = tag
@@ -122,6 +144,8 @@ class SectionParser(HTMLParser):
             self.heading_tag = None
 
     def handle_data(self, data: str) -> None:
+        if self.main_only and not self.in_main:
+            return
         value = data.strip()
         if not value:
             return
@@ -146,10 +170,17 @@ def decode_page(page_bytes: bytes) -> str:
 
 
 def parse_sections(page_html: str) -> list[Section]:
-    parser = SectionParser()
+    parser = SectionParser(main_only=True)
     parser.feed(page_html)
     parser.close()
-    return parser.sections
+    if parser.saw_main:
+        return parser.sections
+    # Synthetic fixtures and any legacy page without <main> retain a bounded
+    # fallback so parser behaviour remains explicit and testable.
+    fallback = SectionParser(main_only=False)
+    fallback.feed(page_html)
+    fallback.close()
+    return fallback.sections
 
 
 def normalize_heading(value: str) -> str:
@@ -158,8 +189,6 @@ def normalize_heading(value: str) -> str:
 
 def find_sections(sections: list[Section], patterns: tuple[str, ...]) -> list[Section]:
     matches: list[Section] = []
-    # h3 is the current field level, but exact-name matches on other levels are
-    # retained for legacy versions. Tier/category headings are never fields.
     ordered = [s for s in sections if s.level == "h3"] + [s for s in sections if s.level != "h3"]
     for section in ordered:
         heading = normalize_heading(section.heading)
@@ -299,16 +328,26 @@ def main() -> int:
     parser.add_argument("--limit", type=int)
     parser.add_argument("--json-out", type=Path)
     parser.add_argument("--csv-out", type=Path)
+    parser.add_argument("--html-dir", type=Path, help="retain exact fetched HTML bytes by SHA-256 filename")
     args = parser.parse_args()
 
     urls = finder_urls()
     if args.limit is not None:
         urls = urls[: args.limit]
 
+    if args.html_dir:
+        args.html_dir.mkdir(parents=True, exist_ok=True)
+
     rows: list[dict[str, Any]] = []
     for url in urls:
         fetched_at = datetime.now(timezone.utc).isoformat()
-        rows.append(audit_page(url, request_bytes(url), fetched_at_utc=fetched_at))
+        page_bytes = request_bytes(url)
+        row = audit_page(url, page_bytes, fetched_at_utc=fetched_at)
+        if args.html_dir:
+            snapshot_name = f"{row['source_sha256']}.html"
+            (args.html_dir / snapshot_name).write_bytes(page_bytes)
+            row["source_snapshot"] = snapshot_name
+        rows.append(row)
 
     report = {
         "status": "OBSERVED_PUBLIC_DISCLOSURE_SYNTAX_NOT_QUALITY_SCORE",
