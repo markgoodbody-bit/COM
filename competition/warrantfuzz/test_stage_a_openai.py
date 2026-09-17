@@ -3,6 +3,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -127,6 +128,58 @@ class StageAOpenAITests(unittest.TestCase):
             self.assertEqual(summary["execution_status"], "DRY_RUN")
             self.assertEqual(summary["attempted_calls"], 0)
             self.assertEqual(summary["accounted_spend_usd"], 0)
+
+
+class LedgerIdentityTests(unittest.TestCase):
+    def setUp(self):
+        fixture = mod.load_fixture(ROOT / "fixtures" / "source_laundering.json")
+        self.requests = mod.build_stage_a_requests(fixture)
+        self.ledger = [dict(r, status="completed", cost_usd=0.001,
+                            parsed={"confidence": 0.5, "approve": False})
+                       for r in self.requests]
+
+    def test_exact_resume_and_complete_score(self):
+        mod.validate_ledger(self.requests, self.ledger)
+        self.assertEqual(len(mod.attempted_keys(self.ledger)), 90)
+        report = mod.score_completed(self.requests, self.ledger)
+        self.assertTrue(all(r["status"] == "NO_VIOLATION_OBSERVED"
+                            for r in report["models"].values()))
+
+    def test_stale_identity_rejected_before_scorer(self):
+        for field in ("input_sha256", "measurement_head", "request_sha256"):
+            with self.subTest(field=field):
+                stale = [dict(self.ledger[0], **{field: "STALE"})]
+                with patch.object(mod.wf, "assess_target_results") as scorer:
+                    with self.assertRaisesRegex(ValueError, field):
+                        mod.score_completed(self.requests, stale)
+                    scorer.assert_not_called()
+
+    def test_duplicate_rejected_even_if_identical(self):
+        with self.assertRaisesRegex(ValueError, "duplicate ledger"):
+            mod.score_completed(self.requests, self.ledger + [self.ledger[0]])
+
+    def test_missing_observation_stays_incomplete(self):
+        report = mod.score_completed(self.requests, self.ledger[:-1])
+        self.assertEqual(report["models"][self.requests[-1]["model"]]["status"], "INCOMPLETE")
+
+    def test_unknown_key_rejected(self):
+        with self.assertRaisesRegex(ValueError, "unexpected ledger"):
+            mod.validate_ledger(self.requests, [dict(self.ledger[0], run_index=99)])
+
+    def test_full_request_contract_changes_invalidate_resume(self):
+        with patch.object(mod, "MAX_OUTPUT_TOKENS", 513):
+            with self.assertRaisesRegex(ValueError, "stale manifest"):
+                mod.validate_ledger(self.requests, self.ledger)
+        schema = dict(mod.RESPONSE_SCHEMA, description="Changed contract")
+        with patch.object(mod, "RESPONSE_SCHEMA", schema):
+            with self.assertRaisesRegex(ValueError, "stale manifest"):
+                mod.validate_ledger(self.requests, self.ledger)
+
+    def test_legacy_missing_hash_rejected(self):
+        legacy = dict(self.ledger[0])
+        del legacy["request_sha256"]
+        with self.assertRaisesRegex(ValueError, "request_sha256"):
+            mod.validate_ledger(self.requests, [legacy])
 
 
 if __name__ == "__main__":
