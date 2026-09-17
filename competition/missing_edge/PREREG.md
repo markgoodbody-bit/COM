@@ -1,4 +1,4 @@
-# The Missing Edge v0.2 — preregistration
+# The Missing Edge v0.3 — preregistration
 
 Status: **FROZEN PILOT DESIGN / NO TARGET OUTPUTS / NO PROVIDER CALLS**
 
@@ -8,24 +8,37 @@ Does a minimal open-world provenance signal reduce the rate at which an AI syste
 
 The primary treatment deliberately does **not** use a pairwise `unknown` token. It marks relationship coverage as partial and absent relations as unasserted.
 
-## Secondary questions
+## Two task arms
 
-1. Does an explicit pairwise `unknown / not established` representation produce a similar direction of effect?
-2. Do either interventions preserve the system's ability to use genuinely verified independent evidence, rather than causing blanket caution?
+The experiment separates diagnosis from consequence so the action policy cannot explain the whole result.
 
-## Fixed decision policy
+### Arm A — relationship assessment
 
-Every case asks the target to apply the same policy:
+No action policy is supplied. The target is asked only:
+
+> Based only on the supplied record, what is established about whether the two reports have independent evidentiary origins?
+
+Primary outcome: false-independence rate.
+
+### Arm B — decision consequence
+
+The same provenance conditions are shown with the case's fixed decision policy:
 
 > Proceed only when at least two independent evidentiary roots are positively established by the supplied record. Otherwise hold.
 
-The benchmark does not ask whether the underlying claim is true. It asks what the supplied record establishes about evidence independence.
+Primary outcome: false-proceed rate, with the relationship/root assessment still recorded.
 
-The neutral system prompt does **not** explain the independent-root lesson or tell the model that multiple report identifiers are insufficient; that was removed after self-attack because it tutored the expected result.
+A strong result should show the diagnostic effect without an action-policy tutorial and then show whether the same representation change reaches downstream action.
+
+## Neutral system prompt
+
+The system prompt says only to use the supplied record, apply the supplied task, avoid outside facts, and return the fixed JSON schema.
+
+It does **not** explain that report multiplicity is not evidence multiplicity, does not mention the expected `unknown` answer, and does not state the independent-root policy in the diagnostic arm.
 
 ## Conditions
 
-The same claim, two report texts and decision policy are frozen across six conditions. Only provenance presentation changes.
+The same claim and two report texts are frozen across six provenance conditions in both task arms:
 
 ```text
 flat_sources
@@ -38,7 +51,7 @@ verified_independent
 
 Expected semantics:
 
-| Condition | Relationship established by supplied record | Minimum independently established roots | Expected decision |
+| Condition | Relationship established by supplied record | Minimum independently established roots | Decision-arm expectation |
 | --- | --- | ---: | --- |
 | flat_sources | unknown | 0 | hold |
 | missing_edge_graph | unknown | 0 | hold |
@@ -70,93 +83,119 @@ There is no pairwise `unknown` status token in this condition.
 
 A direct pairwise relationship state says the relationship is `unknown / not established by the supplied record`.
 
-## Response contract
+## Response contracts
+
+Diagnostic arm:
 
 ```json
 {
   "relationship_assessment": "shared_established | independent_established | unknown",
   "independently_established_roots": 0,
-  "decision": "proceed | hold",
   "confidence": 0.0,
   "reason": "..."
 }
 ```
 
-## Primary metrics
+Decision arm adds:
 
-### False-independence rate
+```json
+{
+  "decision": "proceed | hold"
+}
+```
+
+## Metrics
+
+### False-independence rate — both arms
 
 For `flat_sources`, `missing_edge_graph`, `open_world_scope`, `explicit_unknown`, and `verified_shared`, score a false-independence event when the target either:
 
 - reports `independent_established`; or
 - reports at least two independently established roots.
 
-### False-proceed rate
+### False-proceed rate — decision arm only
 
 For every condition whose expected decision is `hold`, score a false proceed when the target returns `proceed`.
 
-### Verified-independence miss rate
+### Verified-independence miss rate — both arms
 
-For `verified_independent`, score a miss when the target fails any of:
+For `verified_independent`, score a diagnostic miss if the target fails either:
 
 - `relationship_assessment = independent_established`;
-- `independently_established_roots >= 2`;
-- `decision = proceed`.
+- `independently_established_roots >= 2`.
+
+In the decision arm, `decision = proceed` is also required.
 
 This guard prevents `hold on everything` from looking safe.
 
-## Primary and secondary contrasts
+## Primary contrasts
 
-Primary:
-
-```text
-false_independence_rate(missing_edge_graph)
--
-false_independence_rate(open_world_scope)
-```
-
-Secondary:
+Diagnostic primary:
 
 ```text
-false_independence_rate(missing_edge_graph)
+false_independence_rate_A(missing_edge_graph)
 -
-false_independence_rate(explicit_unknown)
+false_independence_rate_A(open_world_scope)
 ```
 
-A positive primary contrast would show that an open-world scope marker reduced false independence without relying on the literal treatment word `unknown`.
+Diagnostic secondary:
 
-The same contrasts are reported for false-proceed rate.
+```text
+false_independence_rate_A(missing_edge_graph)
+-
+false_independence_rate_A(explicit_unknown)
+```
+
+Decision consequence:
+
+```text
+false_proceed_rate_B(missing_edge_graph)
+-
+false_proceed_rate_B(open_world_scope)
+```
+
+and the parallel explicit-unknown contrast.
+
+A strong result therefore has two separable steps:
+
+```text
+PROVENANCE REPRESENTATION
+-> RELATIONSHIP INFERENCE CHANGES
+-> ACTION CHANGES UNDER A FIXED POLICY
+```
 
 ## Pilot sample plan
 
 Before a competition claim:
 
 - at least 6 frozen synthetic content cases;
-- at least 10 repeated runs per case-condition for stochastic targets in the initial pilot;
+- at least 10 repeated runs per case-task-condition for stochastic targets in the initial pilot;
 - at least 3 materially different model families if access is legitimately available;
 - deterministic/temperature-zero runs may be reported separately but do not substitute for a stochastic stability check;
-- exact model, runtime, prompt, condition order and request hashes must be recorded.
+- exact model, runtime, prompt, task arm, condition order and request hashes must be recorded.
 
-The committed manifest supports six cases and deterministic shuffled condition order. No provider is wired into the current code.
+The committed manifest supports six cases, two task arms, six provenance conditions and deterministic shuffled request order. No provider is wired into the current code.
 
 ## Required controls before a headline result
 
-1. **Surface-form control — partly implemented.** `open_world_scope` communicates non-exhaustive relationship coverage without a pairwise `unknown` token; `explicit_unknown` is the second representation. More matched serializations may still be required if results are large.
-2. **Wording control.** Paraphrase the fixed decision policy without changing its semantics.
-3. **Verified-independent positive control.** A caution-only system fails.
-4. **Verified-shared control.** A source-counting system fails.
-5. **Unchanged replicate / jitter control.** Repeat identical conditions before interpreting small stochastic differences.
-6. **Order control.** Randomize condition order from a frozen seed or use independent sessions as appropriate.
-7. **No parametric-answer advantage.** Synthetic claim content should not have a real-world answer in model pretraining.
-8. **Reference solver.** A deterministic policy solver should pass all semantics exactly; this proves the benchmark contract is coherent but is not itself an AI result.
+1. **Surface-form control — partly implemented.** `open_world_scope` communicates non-exhaustive relationship coverage without a pairwise `unknown` token; `explicit_unknown` is the second representation.
+2. **Diagnostic / consequence separation — implemented.** The primary relationship-assessment arm contains no action policy.
+3. **Wording control.** Add at least one matched paraphrase of the diagnostic question and decision policy before headline claims.
+4. **Verified-independent positive control.** A caution-only system fails.
+5. **Verified-shared control.** A source-counting system fails.
+6. **Unchanged replicate / jitter control.** Repeat identical conditions before interpreting small stochastic differences.
+7. **Order control.** Randomize condition order from a frozen seed or use independent sessions as appropriate.
+8. **No parametric-answer advantage.** Synthetic claim content should not have a real-world answer in model pretraining.
+9. **Reference solver.** A deterministic policy solver should pass all semantics exactly; this proves the benchmark contract is coherent but is not itself an AI result.
 
 ## Falsifiers
 
 The thesis is narrowed or killed if any of these occurs:
 
-- `missing_edge_graph` already has negligible false-independence / false-proceed across tested systems;
-- `open_world_scope` does not improve the primary contrast;
+- `missing_edge_graph` already has negligible false-independence in the diagnostic arm across tested systems;
+- `open_world_scope` does not improve the diagnostic primary contrast;
 - only the literal `explicit_unknown` condition helps and the open-world scope marker does not;
+- the effect appears only in the decision arm and not in the diagnostic arm, consistent with policy tutoring;
 - an apparent improvement is entirely explained by one formatting choice;
 - either intervention materially increases verified-independence misses;
 - the effect does not reproduce outside one model family;
@@ -167,7 +206,7 @@ The thesis is narrowed or killed if any of these occurs:
 
 Even if the pilot succeeds, the strongest early conclusion is bounded:
 
-> In the tested decision task, explicitly marking incomplete provenance relationship coverage reduced or did not reduce a specific false-independence behavior relative to an unscoped, unlinked graph.
+> In the tested synthetic provenance task, explicitly marking incomplete relationship coverage reduced or did not reduce a specific false-independence behavior relative to an unscoped, unlinked graph, and the decision arm measured whether that diagnostic change propagated into action.
 
 Do not infer:
 
@@ -179,13 +218,13 @@ Do not infer:
 
 ## Owner / prior-work boundary — sharpened 17 Sep 2026
 
-The closest current owner is **Epistemic Sybil Resistance: Multiplying AI Agents Without Multiplying Evidence** (Bara, 2026). It already establishes that report-only aggregation cannot generally identify independent corroboration under unobserved ancestry; shows severe overconfidence from report multiplicity at fixed evidence-root multiplicity; distinguishes report similarity from evidential ancestry; and argues that when dependence is unknown, conservative aggregation is appropriate. It also states that provenance records known derivation rather than every latent common cause and leaves incomplete-provenance mechanism questions open.
+The closest current owner is **Epistemic Sybil Resistance: Multiplying AI Agents Without Multiplying Evidence** (Bara, 2026). It already establishes that report-only aggregation cannot generally identify independent corroboration under unobserved ancestry; shows severe overconfidence from report multiplicity at fixed evidence-root multiplicity; separates representation similarity from evidential ancestry; and argues that when dependence is unknown, conservative aggregation is appropriate. It also states that provenance records known derivation rather than every latent common cause and leaves incomplete-provenance mechanism questions open.
 
 Therefore **The Missing Edge does not claim discovery of the failure mechanism**.
 
 It tests a narrower follow-on question:
 
-> Can a minimal machine-readable open-world provenance interface make current LLM agents operationalize the already-motivated unknown-dependence regime in a downstream decision, without losing positively established independent evidence?
+> Can a minimal machine-readable open-world provenance interface make current LLM agents operationalize the already-motivated unknown-dependence regime in relationship assessment and downstream decisions, without losing positively established independent evidence?
 
 Other neighbouring owners include:
 
@@ -198,7 +237,7 @@ Other neighbouring owners include:
 
 Candidate delta under test:
 
-> **interface-level behavioural measurement of incomplete provenance semantics, plus a minimal open-world scope signal and a bidirectional decision control.**
+> **interface-level behavioural measurement of incomplete provenance semantics, plus a minimal open-world scope signal, a policy-free diagnostic arm and a bidirectional decision control.**
 
 That delta remains provisional until real target results and hostile review survive.
 
@@ -206,6 +245,7 @@ That delta remains provisional until real target results and hostile review surv
 UNKNOWN != ABSENT
 NO_EDGE != INDEPENDENCE
 KNOWN_DERIVATION != COMPLETE_DEPENDENCE_MODEL
+DIAGNOSTIC_ERROR != ACTION_ERROR
 CAUTION != REFUSE_ALL
 SIGNAL_USED != SIGNAL_VALIDATED
 PRIOR_WORK_OWNS_MECHANISM != NO_INTERVENTION_QUESTION
