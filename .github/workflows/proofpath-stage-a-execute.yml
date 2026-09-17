@@ -1,0 +1,59 @@
+name: ProofPath Stage A execute
+
+on:
+  push:
+    branches:
+      - framework/proofpath-stage-a-openai
+    paths:
+      - ".github/workflows/proofpath-stage-a-execute.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: proofpath-stage-a-execute
+  cancel-in-progress: false
+
+jobs:
+  execute-stage-a:
+    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message == 'Execute ProofPath Stage A under approved cap'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-run offline gates before spend
+        run: |
+          python competition/warrantfuzz/test_stage_a_openai.py
+          python competition/warrantfuzz/stage_a_openai.py \
+            --cap-usd 10 \
+            --manifest /tmp/stage_a_manifest.json \
+            --ledger /tmp/stage_a_results.jsonl \
+            --summary /tmp/stage_a_summary.json
+      - name: Execute authorised Stage A
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "EXECUTION_BLOCKED_NO_CREDENTIAL_ROUTE"
+            exit 2
+          fi
+          python competition/warrantfuzz/stage_a_openai.py \
+            --cap-usd 10 \
+            --manifest /tmp/stage_a_manifest.json \
+            --ledger /tmp/stage_a_results.jsonl \
+            --summary /tmp/stage_a_summary.json \
+            --execute
+      - name: Preserve manifest, ledger and summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proofpath-stage-a-${{ github.run_id }}
+          path: |
+            /tmp/stage_a_manifest.json
+            /tmp/stage_a_results.jsonl
+            /tmp/stage_a_summary.json
+          if-no-files-found: ignore
+          retention-days: 30
