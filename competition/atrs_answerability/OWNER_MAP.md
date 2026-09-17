@@ -49,25 +49,50 @@ Residual distinction:
 REGISTER METADATA != FULL TIER-2 DISCLOSURE CONTENT
 ```
 
-## 3. Existing qualitative / governance research
+## 3. Public Law Project — Tracking Automated Government / public-sector ADM visibility
+
+Owner surface:
+https://trackautomatedgovernment.org.uk/
+
+Current Public Law Project material describes its Tracking Automated Government (TAG) register as an independent register of automated/algorithmic tools used by UK public bodies. PLP reported 55 tools on TAG in 2025 and uses the register in wider work on transparency, review/redress, public law litigation and access to justice around automated government.
+
+What this owner absorbs:
+- the broad proposition that the public needs visibility into government automated decision-making;
+- independent cataloguing of public-sector ADM beyond the official ATRS repository;
+- much of the wider transparency/redress/public-law framing.
+
+Residual distinction under test here:
+
+```text
+INDEPENDENT ADM REGISTER != FIELD-LEVEL ATRS APPEALS/REVIEW LEGIBILITY AUDIT
+```
+
+Do not imply that ATRS is the only public-government-algorithm visibility surface. Do not claim novelty from discovering undisclosed or non-ATRS tools.
+
+## 4. Existing qualitative / governance research
 
 Existing work has studied ATRS policy, practitioner perspectives and how public-sector transparency should improve. This project does not claim that evaluating ATRS, public-sector AI transparency or contestability is new.
 
 A bounded September 2026 search did not locate the same current full-register semantic census of the `Appeals and review` field. Search absence is not novelty evidence.
 
-## 4. What the September pilot actually established
+## 5. What the September pilot actually established
 
 Earned engineering/evidence result:
 - exact current-finder membership can be frozen and independently checked;
 - exact GOV.UK source pages can be content-addressed and preserved;
-- full-record field extraction can be reproduced from the evidence bundle;
+- the `Appeals and review` extraction/pilot can be reproduced from the evidence bundle;
 - a preregistered manual pilot finds materially different reader-visible actions/process descriptions behind the same field heading.
 
-Codex independently reproduced all 152 frozen extractions with zero field differences and challenged the manual classification, producing real disagreements that were preserved.
+Important repair: reproducing the same extraction over the same bytes did **not** establish that every other field-name mapping was correct. Codex found older ATRS heading families that the original parser missed. A version-aware reparse over the same 152 frozen HTML files corrected those mappings without refetching source.
+
+```text
+REPRODUCED != CORRECT
+SOURCE_BYTES_FIXED != PARSER_SEMANTICS_FIXED
+```
 
 That establishes a usable measurement substrate and pilot, not the field-level research answer.
 
-## 5. Residual research question
+## 6. Residual research question
 
 The surviving question is **not**:
 
@@ -77,24 +102,13 @@ They are expected to differ.
 
 The narrower unresolved question is:
 
-> Across the current public register, what does the `Appeals and review` field make legible about **how a member of the public can initiate or reach review/challenge of the relevant tool output or broader decision process**, and how often is the disclosure instead an internal review description, general feedback/help, data-rights route, explanation-only record, explicit no-separate-process statement, or ambiguous reference?
+> Across the current public register, what does the `Appeals and review` field make legible about **how a member of the public can initiate or reach review/challenge of the relevant tool output or broader decision process**, and how often is the disclosure instead an internal review description, general feedback/help, data-rights route, explanation-only record, explicit no-separate-process statement, planned-but-not-operating process, or ambiguous reference?
 
 This is a distribution/legibility question anchored to the official field semantics.
 
-Candidate observable distinctions:
-- concrete public reconsideration/complaint/appeal locator;
-- in-channel human handoff;
-- existing review/appeal process referenced without initiation detail;
-- internal human review only;
-- general help/feedback route;
-- explicit no separate process / tool does not make relevant decision;
-- data-rights action not clearly tied to output reconsideration;
-- explanation/audit trail without recovery;
-- ambiguous scope.
+Candidate observable distinctions may co-occur. Do not force them into a moral score.
 
-These may co-occur. Do not force them into a moral score.
-
-## 6. Kill criteria
+## 7. Kill criteria
 
 Kill or shrink the lead if:
 - an existing owner supplies the same current full-register semantic census;
