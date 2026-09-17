@@ -15,89 +15,108 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| General world-gap lane | **NONE GENERAL / WORLD-FIRST** | Grants, repos and competitions do not manufacture assignments. |
-| COM #347 / THR | **ACTIVE PRODUCT QUALITY** | `human-record` main `15b9929f685627644fcfc33cbb113b34876ecf59`; three records unchanged; next edge OBSERVE/CORRECT operational scale. |
-| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | BlueDot old draft HOLD/stale; OpenAI Researcher Access KEEP only when a real API research object exists; Codex OSS Fund requires truthful licensed OSS; Anthropic/Foresight remain bounded; ARIA is research seam only, no proposal. |
-| ARIA seam | **HOLD / OWNER-SUBTRACTION NOT COMPLETE** | Generic negotiation, incomplete preferences, consent states, authorization provenance and proof-carrying authorization are owned. Residual: verify semantic non-collapse of `UNKNOWN/REFUSED/WITHHELD/OUTSIDE_AUTHORITY/CONFLICT_UNRESOLVED` across requirement->policy->negotiation transformations. Needs a real pipeline/adversarial case before funding work. |
-| COM #349 / tournament | **ACTIVE / SELECTION OPEN / SYNTHESIS CANDIDATE** | #363 `No Free QALY` survives only as Open Track synthesis, not benchmark novelty or selected entry. |
-| #363 No Free QALY | **OPEN / SURVIVES AS SYNTHESIS** | Exact head `9dd2497d885fa5d5b60d3bcf7c24a1f94e4a5da0`; workflow `35252785797` SUCCESS. Owner map + review exercise + teaching appendix. |
-| #350/#351/#352/#353 | **PRESERVED SUBSTRATE / HARNESS / HOSTILE EVIDENCE / FIXTURE RESEARCH** | Not current product leads. |
+| COM #347 / THR | **ACTIVE PRODUCT QUALITY** | Next edge remains observe/correct operational scale. |
+| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Retain only truthful low-distortion routes. No identity/contact/terms/payment/submission action. |
+| COM #349 / tournament | **ACTIVE / SELECTION OPEN / #364 CURRENT LEAD** | ATRS Answerability Audit is current empirical lead; selected entry remains NONE. |
+| #364 ATRS Answerability Audit | **OPEN / CURRENT LEAD / NOT SELECTED** | Reproducible 152-record public-source witness + preregistered bounded manual read; no compliance/effectiveness claim. |
+| #363 No Free QALY | **OPEN / FALLBACK SYNTHESIS** | Owner-attributed Open Track meta-answer; not benchmark novelty. |
+| #350/#351/#352/#353 | **PRESERVED SUBSTRATE / HARNESS / HOSTILE EVIDENCE / FIXTURE RESEARCH** | Not current leads. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Preserve; do not reopen by renaming. |
-| #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls; known unresolved measurement/reporting defects remain. |
-| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
-| Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
+| #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls; known measurement/reporting defects remain. |
+| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Not validated / no efficacy result. |
+| Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Not validated. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished; no momentum rebuild. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | No canon/release/alignment result. |
 
-## #363 — current competition object
+## Aperture state
 
-Apart's Open Track asks for a defensible comparable unit for `decision quality improved`.
+Claude Code is temporarily out of tokens for a couple of hours. Preserve prior CC findings; do not treat the aperture as removed. Framework + Codex continue routine reversible work. Optional CC recheck may resume later.
 
-Hostile review established that the load-bearing theory and rank-reversal phenomenon are already owned:
-- Abbas & Hazen own cross-decision value-of-information equivalence/non-equivalence results and positive comparability conditions;
-- ML/benchmark literature already owns ranking instability under metric/harness changes;
-- DECIDE-AI, IPDAS, Decision Quality practice and human-AI taxonomies own substantial reporting/measurement structure.
+## #364 — ATRS Answerability Audit
 
-Therefore #363's only residual claim is an **audience-specific synthesis**:
+Current question:
 
-```text
-AI-EPISTEMICS IMPACT CLAIM
-+ DECISION / VALUE / BASELINE / UNCERTAINTY / AGGREGATION CONTRACT
--> DIRECT COMPARISON
-   OR CONDITIONAL ON SHARED CONTRACT
-   OR COMPARABILITY NOT ESTABLISHED
-```
+> Across the current ATRS public finder, what can a reader observe in published records about human review, appeals/review, performance, risks, impact assessment, maintenance and accountable ownership?
 
-It does not create a universal scalar and does not make unlike values commensurable.
-
-Current files:
-- `competition/no_free_qaly/OWNER_MAP.md` — attributes contract fields to strong owners;
-- `competition/no_free_qaly/REVIEW_EXERCISE.md` — realistic but fictional Brier-score-vs-later-regret comparison plus direct/conditional cases;
-- `benchmark.py` / `cases.json` — runnable teaching appendix only.
-
-Kill #363 if existing Apart/current guidance already enforces this comparison discipline or if the review exercise adds no appraisal value.
-
-## Closed ProofPath lane
+### Evidence witness
 
 ```text
-#355 = CLOSED / OWNER FOUND / preserved deterministic engineering
-#356 = CLOSED / optional replication artefact / 0 API calls / $0 spend
+run = 35257984573 SUCCESS
+source head = 4a7b43df95a2b776b885f8ee903d929100414af7
+artifact = 10513278849
+artifact sha256 = ad315d9b08a0af65c4615638df2235b9ce6f021307315fbeb6dfcbd8cbdb0097
+finder / Search API membership = 152 / 152
+membership differences = 0
+raw public HTML snapshots = 152
 ```
 
-Strong owners including Bara and GraphEcho substantially cover the evidence-multiplicity/provenance mechanism; other current work covers correction/supersession and generic evaluation infrastructure. `DIFFERENT_WRAPPER != CONSEQUENTIAL_GAP`.
+Codex independently reproduced the extraction from the preserved source bundle with zero field differences.
 
-Do not seek provider credentials or revive the authorised 90-call run by momentum.
+Frozen structural observations:
+
+```text
+human_review = 146/152
+appeals_review = 151/152
+model_performance = 139/152
+risks = 145/152
+impact_assessment = 138/152
+maintenance = 152/152
+senior_responsible_owner = 152/152
+```
+
+Auxiliary `none/N/A-like phrase` counts are excluded from primary findings pending repair; live false negatives were found.
+
+Preregistered appeals/review read, reconciled after bounded Codex review:
+
+```text
+27 token-positive records:
+  16 review/appeal route
+  9 general help/feedback
+  1 unrelated token
+  1 ambiguous
+
+20 SHA256(URL)-selected token-negative records:
+  15 route/process described without locator
+  3 no locator/process observed in section
+  2 ambiguous
+  0 plain-text locator misses
+```
+
+This negative set is a sample, not a census. Token absence does not mean no actionable route: in-channel human handoff and existing-process references occur without URL/email/phone tokens.
+
+Current claim ceiling:
+
+```text
+PUBLIC DISCLOSURE COVERAGE != INTERNAL PRACTICE
+CONTACT TOKEN != APPEAL RIGHT
+DESCRIBED ROUTE != EFFECTIVE REMEDY
+NO LOCATOR != NO ROUTE
+AUDIT != COMPLIANCE SCORE
+AUDIT != POLICY VERDICT
+```
+
+Why #364 leads currently: it is an empirical current-world object, fits Apart Open Track's downloadable-data/live-deployment prompt, survives owner subtraction better than #363, and remains useful without a prize. `CURRENT_LEAD != SELECTED_ENTRY`.
+
+Before external competition action, re-read live eligibility/Guidelines, especially any pre-existing-work boundary. No registration, organiser contact, terms acceptance or submission yet.
+
+## #363 fallback
+
+No Free QALY survives as synthesis only. Abbas/Hazen and existing metric/rank-instability/reporting literatures own most of the underlying result. Retain the audience-specific `DIRECT / CONDITIONAL / NOT ESTABLISHED` comparison contract as fallback Open Track material.
 
 ## Resource lane
 
-Current low-distortion ordering:
-
-1. **OpenAI Researcher Access** — retain as a low-friction up-to-US$1,000 API-credit route only when a specific research object has a credible model/API budget. Current public page encourages early-stage researchers with limited resources. Re-read live application and sharing/publication terms at submission gate.
-2. **Codex Open Source Fund** — only through a truthfully licensed open-source project; public visibility is insufficient.
-3. **Anthropic AI for Science / Foresight** — retain, higher fit/eligibility/admin checks.
-4. **ARIA Scaling Trust** — potentially high upside but no proposal until the narrowed semantic-non-collapse seam survives strongest-owner and real-use tests.
-5. **BlueDot old provenance-shaped draft** — HOLD after owner subtraction; do not revive because it is easy.
-
-Current non-routes surfaced in the latest check:
-- AISI main grants: not currently accepting applications;
-- AIRR calls surfaced: closed or organisation-gated;
-- LASR: full-time 13-week in-person programme, not low-friction project runway;
-- RAi UK AWS future rounds described around postdocs/academic staff, not a clean independent route.
+- OpenAI Researcher Access: retain only when a real API research object has a credible budget.
+- Codex Open Source Fund: requires truthful licensed OSS.
+- Anthropic AI for Science / Foresight: retain with current-scope recheck.
+- ARIA Scaling Trust: research seam only; no proposal until a distinct semantic-non-collapse gap survives.
+- BlueDot old draft: HOLD after owner subtraction.
 
 No application, account, funder contact, terms acceptance, payment/tax action or submission has occurred.
 
-## THR / project invariants
-
 ```text
-UNKNOWN != ABSENT
-NO_REPLY != REFUSAL
-SILENCE != CONSENT
-STOP -> STOP
-CANNOT_RECALL_ELSEWHERE != MAY_CONTINUE_HERE
-CORRECTION_TRAIL != REPUBLICATION_OF_THE_WITHDRAWN
 PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY
 POSSIBLE_PRIZE = £0
-AVAILABLE MONEY != AUTHORITY TO SPEND
+AVAILABLE_MONEY != AUTHORITY_TO_SPEND
 IF_WE_LOSE -> USEFUL_WORK_SHOULD_REMAIN
 OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
 PURPOSE > INSTRUMENT
@@ -105,4 +124,4 @@ PURPOSE > INSTRUMENT
 
 ## Consequential gates
 
-Human/explicit gates remain for TRACE/ME release/canon/baseline/licence changes, provider/spend commitments, credentials/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, competition registration/terms/submission/payout, resource-application identity/submission/terms, travel commitments, and explicit crawler/training-policy changes.
+Human/explicit gates remain for TRACE/ME release/canon/baseline/licence changes, new provider/spend commitments, credentials/payment, destructive/irreversible actions, consequential institutional contact, competition registration/terms/submission/payout, resource-application identity/submission/terms, travel commitments, and explicit crawler/training-policy changes.
