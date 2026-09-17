@@ -1,0 +1,41 @@
+name: Missing Edge v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/missing_edge/**'
+      - 'competition/evidence_lineage_agent/**'
+      - '.github/workflows/missing-edge-v0.yml'
+  push:
+    branches:
+      - framework/missing-edge-v0
+    paths:
+      - 'competition/missing_edge/**'
+      - 'competition/evidence_lineage_agent/**'
+      - '.github/workflows/missing-edge-v0.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: |
+          python -m py_compile competition/missing_edge/missing_edge.py
+          python -m py_compile competition/missing_edge/test_missing_edge.py
+      - name: Unit tests
+        run: python -m unittest competition/missing_edge/test_missing_edge.py -v
+      - name: Frozen manifest smoke
+        run: |
+          tmp="$(mktemp -d)"
+          python competition/missing_edge/missing_edge.py competition/missing_edge/fixtures/synthetic_cases.json --runs 3 --seed 7 --out "$tmp/manifest.json"
+          grep -q '"missing_edge_graph"' "$tmp/manifest.json"
+          grep -q '"explicit_unknown"' "$tmp/manifest.json"
+          grep -q '"verified_independent"' "$tmp/manifest.json"
+          grep -q '"MANIFEST_CREATED != TARGET_CALLED"' "$tmp/manifest.json"
