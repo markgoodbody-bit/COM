@@ -1,9 +1,9 @@
 {
   "title": "Derivative repetition fixture",
   "sources": [
-    {"id": "s1", "label": "Original report", "locator": "fixture://original"},
-    {"id": "s2", "label": "Article quoting report", "locator": "fixture://article"},
-    {"id": "s3", "label": "Video repeating article", "locator": "fixture://video"}
+    {"id": "s1", "label": "Original report", "locator": "fixture://original", "lineage_state": "primary"},
+    {"id": "s2", "label": "Article quoting report", "locator": "fixture://article", "lineage_state": "derived"},
+    {"id": "s3", "label": "Video repeating article", "locator": "fixture://video", "lineage_state": "derived"}
   ],
   "claims": [
     {
@@ -15,7 +15,7 @@
     }
   ],
   "relations": [
-    {"type": "quotes", "from": "s2", "to": "s1"},
-    {"type": "derived_from", "from": "s3", "to": "s2"}
+    {"type": "quotes", "from": "s2", "to": "s1", "claim_id": "c1"},
+    {"type": "derived_from", "from": "s3", "to": "s2", "claim_id": "c1"}
   ]
 }
