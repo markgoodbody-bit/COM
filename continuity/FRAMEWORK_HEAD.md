@@ -1,19 +1,26 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-17 — Europe/London  
+Updated: 2026-09-17 late — Europe/London  
 Later live source and direct human direction win.
 
-## FRESH-APERTURE DISCIPLINE
+## Fresh-aperture discipline
 
-On `COMSYNC`: read this file once, then `coordination/PROGRAM_PLAN.md`, `coordination/ACTIVE_THREAD_POINTER.md`, `coordination/build_ledger/BUILD_STATUS.md`, `continuity/COMSYNC_PROTOCOL.md`, follow live/material pointers, then reread this file against what was learned.
+On `COMSYNC`:
+1. read this bounded head once;
+2. read `coordination/ACTIVE_THREAD_POINTER.md` and `coordination/build_ledger/BUILD_STATUS.md`;
+3. inspect recent issue/PR **bodies as well as comments** so newly created work is not omitted;
+4. read actual core/source objects where a current decision depends on them;
+5. stop loading once enough ground/currentness has been reacquired.
 
 ```text
 FIRST_FAMILIAR_PARAGRAPH != COMSYNC_COMPLETE
+KNOWN_THREAD_SCAN != FULL_DISCOVERY
+TRUNCATED_RETRIEVAL != EXHAUSTIVE_ROUTE_INSPECTION
 ROLE_CONTINUITY != RUNTIME_IDENTITY_CONTINUITY
 ```
 
-Mark is the human originator/witness and consequential release/legal-account gate where unavoidable. Framework is an episodic integration/team-lead role.
+Mark is the human originator/witness and consequential human/release/legal/account/spend gate where unavoidable. Framework is an episodic integration/coordination role. Codex and Claude Code are differentiated implementation/review apertures, not echoes.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
@@ -25,321 +32,257 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is **NO GENERAL WORLD-GAP LANE**. Three bounded current lanes exist under direct Mark direction:
+Valid results:
 
-1. **COM #347 — The Human Record product/scale quality.**
-2. **COM #348 — project resource/opportunity quarry.**
-3. **COM #349 — competition tournament / active bounded build.**
+```text
+OWNER FOUND
+NO DELTA
+NOT OUR GAP
+STOP
+```
 
-None of these lanes changes the guiding purpose.
-
-## TRACE / ME RELEASE STATE — HUMAN GATE EXERCISED
-
-On 16 September 2026 Mark explicitly instructed promotion of the exact current TRACE and Mechanical Ethics candidates.
+## Verified stable baselines
 
 ### TRACE
 
-- **TRACE v0.3.0 is the current RELEASED FORMAL BASELINE.**
-- release content commit: `fa3b464533d50b627743938c1ca158c2101b892a`;
-- current main after release-workflow cleanup: `8310d2531d3b2fe4e3b44c92d1d544a322f52bf4`;
-- tag/release: `v0.3.0`;
-- spine SHA-256: `be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6`;
-- full reference SHA-256: `b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34`;
-- final released integrity workflow: PASS.
-
-TRACE v0.2.7 remains preserved as the previous released baseline.
-
 ```text
-RELEASED != VALIDATED
-RELEASED != EFFICACY PROVEN
-RELEASED != AUTHORITY / PERMISSION / CLEARANCE
+current released formal baseline = v0.3.0
+main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
+release content = fa3b464533d50b627743938c1ca158c2101b892a
 ```
+
+`RELEASED != VALIDATED != EFFICACY PROVEN != AUTHORITY`.
 
 ### Mechanical Ethics
 
-- **Mechanical Ethics v0.7.0 is the current RELEASED FORMAL BASELINE.**
-- release content commit: `d6b41adf292321058b6f6dfc76613d85a1be8a22`;
-- current main after release-workflow cleanup: `25a9d793af1cded26dd2d766e1d1c08e1b30f652`;
-- tag/release: `v0.7.0`;
-- Markdown SHA-256: `8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c`;
-- PDF SHA-256: `122c56bb2ea1063bccb8ced3652686a006d3ff44bdaafa445a525e9464711cdf`;
-- deterministic second PDF rebuild matched exactly;
-- sampled cover/body/final rendered pages visually inspected by Framework with no clipping/broken-glyph/status defect observed;
-- released integrity workflow: PASS.
-
-Mechanical Ethics v0.6.3 remains preserved as the previous released baseline.
-
 ```text
-RELEASED_BASELINE != ETHICAL_VALIDATION
-READER_RELEASE != UNIVERSAL_APPLICABILITY
+current released formal baseline = v0.7.0
+main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
+release content = d6b41adf292321058b6f6dfc76613d85a1be8a22
 ```
 
-Durable receipt: `coordination/build_ledger/RELEASE_PROMOTIONS_20260916.md`.
+`RELEASED_BASELINE != ETHICAL_VALIDATION != UNIVERSAL_APPLICABILITY`.
 
-## THR HUMAN GIFT / PRODUCT QUALITY — COM #347
-
-Direct Mark direction remains:
-- THR is collaboratively AI-built but a gift for humans;
-- third-party participation is welcome, not required for product progress;
-- stewardship remains separate;
-- scale must handle repeated names, source mutation/disappearance and derived views without flattening uncertainty.
-
-Current THR main:
-
-`43ec257d8cc7581c7355bc1670fc6df4c582de24`
-
-Current evidence records remain three:
-1. Camp Fire — artwork provenance;
-2. viral 80% flak claim — claim/source ancestry;
-3. sieve/riddle revival — living-knowledge lineage.
-
-No record 4 follows from infrastructure or encounter-boundary work.
-
-### Current scale stack
+### The Human Record
 
 ```text
-SOURCE-LITERAL MENTION
--> ZERO / ONE / MANY ENTITY CANDIDATES
--> RESOLVED / CANDIDATE / UNRESOLVED
-
-SOURCE ID
--> LOCATOR(S)
--> EVIDENCE OBSERVATION(S)
--> OPERATIONAL SOURCE CHECK(S)
--> PRESERVATION STATE / ROUTE
-
-ASSERTION
--> EVIDENCE + SOURCE ANCESTRY + SCOPE
-
-RECORD STATE
--> HUMAN VIEW + MACHINE VIEW
+main = 15b9929f685627644fcfc33cbb113b34876ecf59
+public records = 3
 ```
 
-Preserve:
+No current Hannibal branch is public record 4.
+
+### Campfire Relay
 
 ```text
-NAME != ENTITY
-MENTION != ENTITY
-MENTION EXISTS != ENTITY PROFILE REQUIRED
-ENTITY != ASSERTION
-ASSERTION != TRUTH
-URL != SOURCE
-SOURCE CHECK != RECORD EVIDENCE
-RETRIEVAL SURFACE != LIVE ORIGIN
-CACHED CONTENT AVAILABLE != LIVE TODAY
-LIVE TODAY != PRESERVED
-OBSERVATION != PRESERVED COPY
-PRESERVATION != EXTRACTION
-BETTER MATCHING != MORE SURVEILLANCE
-COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
+repository main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
 
-### Validator convergence
+Repository inspection is not operational Relay/Square state.
 
-PR #15 completed shared-validator target/route protection. Framework then integrated returned PRs #18/#19/#17 on the exact post-#15 head and merged convergence PR #23.
-
-Exact merged-main integrity at that convergence: PASS.  
-Full validator regression suite during integration: **46 tests PASS**.
-
-Eleven warnings intentionally remain visible:
-- nine observation outcomes `referenced_by_record` not named in the open SOURCE_MODEL observation vocabulary;
-- two source relations `byte_identical_observed_copy` / `byte_identical_observed_copy_of` not named in the open source-relation vocabulary.
+## Current bounded lanes
 
 ```text
-WARNING_VISIBLE != DEFECT_RESOLVED
-OPEN_VOCABULARY_WARNING != INVALID_RECORD
-NO_NEW_CHECKER_BY_MOMENTUM
+COM #347 = THR product / architecture stress
+COM #348 = project resource quarry
+COM #349 = competition tournament
+COM #365 = TRACE/ME positive-construction Campfire quarry
 ```
 
-### 16 Sep integration after Campfire / COMSYNC
+None replaces project purpose.
 
-Under direct Mark direction `COMSYNC and lead and proceed`, Framework integrated the three already-reviewed returns:
+## Competition tournament — #364 current lead, selection still open
 
-- PR #21 — relayed contribution handling / correction-versus-observed-response separation;
-- PR #22 — reader-facing builder/reviewer attribution;
-- PR #24 — Overthrow published testimony of learning partly from Turnock, retained as testimony rather than independent verification.
-
-Framework then built PR #25, `Add a living-subject encounter boundary`, from a concrete gap exposed in Campfire reasoning and the current identity model.
-
-New source object:
-
-`LIVING_SUBJECTS.md`
-
-Status:
+ProofPath/WarrantFuzz earlier ideas were owner-subtracted and demoted/closed rather than rescued by renaming.
 
 ```text
-WORKING HUMAN-SUBJECT ENCOUNTER BOUNDARY
-NOT A UNIVERSAL CONSENT MODEL
-NOT EMERGENCY AUTHORITY
-NOT CANON
-NO PRIVATE INTAKE ROUTE CREATED
+#355 ProofPath = CLOSED / OWNER FOUND
+#356 Stage A = CLOSED / OPTIONAL REPLICATION / 0 provider calls / $0
+#363 No Free QALY = FALLBACK SYNTHESIS
+#364 ATRS Answerability Audit = CURRENT LEAD / NOT SELECTED
+SELECTED ENTRY = NONE
+REGISTERED / SUBMITTED = NO
 ```
 
-Scope is deliberately narrow:
+### ATRS source result
 
-> THR actively asks a living human who can meaningfully understand and make the specific choice to provide information about themselves voluntarily.
-
-It explicitly does not generalise the same consent mechanics to children, people unable to make the relevant decision, unconscious people, animals, organisations, communities, deceased people or artificial systems.
-
-A 100-case hostile self-check was run against the written object before merge. Useful failures changed the draft: a false promised private/verification-only route was removed; wrong-person contact, silence, persistence after refusal, accidental public private-material receipt, third-party private disclosure, coercion and capacity uncertainty gained explicit stop/handling rules.
-
-Final bounded result:
+Frozen September source bundle remains immutable and version-aware reparse uses the same 152 HTML pages. Corrected source-level observations:
 
 ```text
-82 CASES HANDLED INSIDE STATED LANE
-18 CASES EXPLICITLY STOP / ROUTE OUTSIDE LANE
-0 TESTED FALSE-THROUGH CASES REMAINING
+human_review = 152/152
+appeals_review = 151/152
+model_performance = 139/152
+risks = 152/152
+impact_assessment = 145/152
+maintenance = 152/152
+senior_responsible_owner = 152/152
 ```
 
-This is a design falsification receipt, not validation, legal adequacy or universal ethical authority.
+Historical pre-version-aware counts remain preserved as parser history.
 
-Preserve:
+Claude Code discovered the legacy-heading miss; Codex independently confirmed it against the frozen witness.
 
 ```text
-REFUSAL_ALONE != ESTABLISHMENT_OF_THE_REFUSED_CLAIM
-NO_REPLY != REFUSAL
-SILENCE != CONSENT
-CONSENT_AT_STEP_N != CONSENT_AT_STEP_N+1
-CONSENT_TO_DATA != CONSENT_TO_UNKNOWN_FUTURE_INFERENCE
-STOP -> STOP
-WITHDRAWAL_OF_PERMISSION != REVERSAL_OF_PRIOR_TRANSITION
-SUBJECT_ANSWER_BACK != SUBJECT_OWNS_REALITY
-SUBJECT_CONSENT != THIRD_PARTY_CONSENT
-COMPELLED_DISCLOSURE_EXISTS != THR_MAY_REPUBLISH
-LIVING != AUTOMATIC_PRIORITY
-DEAD != UNPROTECTED
-UNKNOWN != DEAD
-CAPACITY_UNCERTAIN != THR_MAY_DECLARE_CAPACITY
-CURRENT_PUBLIC_ROUTE != PRIVATE_CUSTODY
+REPRODUCED != CORRECT
+SAME_REGEX + SAME_BYTES -> SAME_MISS
+100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
 ```
 
-PR #25 exact final head `8452f5faad933b70090d9cf992ef7d569b686299`: integrity CI PASS. Merged current main: `43ec257d8cc7581c7355bc1670fc6df4c582de24`.
+### Reader Lens
 
-Fresh current-main Pages/public-byte readback after the latest integrations is not yet claimed here.
-
-### Next THR edge
-
-**OBSERVE / CORRECT OPERATIONAL SCALE.** Use the machinery on real identity collisions, source drift/currentness, preservation debt, correction propagation and generated-view load. A real living-subject interaction may later revise `LIVING_SUBJECTS.md`; do not create a volunteer profile, private intake service, universal identity database, preservation crawler or general privacy/personhood framework merely to demonstrate the new boundary.
-
-Stewardship remains:
+The evidence-first Reader Lens is a useful readback aid. It does not establish human benefit, remedy effectiveness, legal rights or internal practice.
 
 ```text
-OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED
-PRODUCT QUALITY = ACTIVE
+SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
+EASIER_INSPECTION != EFFECTIVE_REMEDY
 ```
 
-## PROJECT RESOURCES / OPPORTUNITY QUARRY — COM #348
+### Reader-use method — do not cross the human gate
 
-Direct Mark direction: the project should try to reduce dependence on his personal AI/API/hosting spend without becoming a monetization/fundraising project or making Mark an application administrator.
-
-Current quarry rules:
+Current v3.1 witness:
 
 ```text
-PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY
-POSSIBLE PRIZE = £0
-SUBMITTED != AWARDED != PAID
-AVAILABLE MONEY != AUTHORITY TO SPEND
-NO PERSONAL BURN WITHOUT EXPLICIT APPROVAL
-IF WE LOSE -> USEFUL WORK SHOULD REMAIN
+head = 6fa24cb12c7b9720ee5b32fa5b8c8b84ef7842d9
+run = 35272269260 SUCCESS
+artifact = 10518547136
+sha256 = 09764a039e47ef39a5e19a998e888fb48f7e76bb9c4de5c9ed858af1ee007f3c
 ```
 
-Current live candidates after public-source verification:
-- **BlueDot Impact Rapid Grants:** $50–$10k; compute/API/tooling explicitly in scope; low-friction application; strongest immediate small-resource candidate if framed around bounded already-underway work, not generic subscription reimbursement.
-- **Foresight AI for Science & Safety Nodes — Coordination & Accountability:** deadline 31 Oct 2026; individuals eligible; typical $30k–$100k; genuine human-AI/multi-agent/decentralized-accountability overlap; materially higher application/in-person load.
-- **Nebius x NVIDIA Global AI Hackathon:** deadline 30 Oct 2026; significant prizes/credits; genuine potential THR-inspired claim/provenance agent build, but submission code must be public open source and entrant-owned, so use a clean separately licensed competition artefact rather than reflexively submitting THR.
+Full PR replay found two later Codex repairs still unintegrated:
+- `06a3176`: remove residual LENS-only generated caution/task guidance;
+- `0573ce5`: remove obsolete independent `component_rules` so route-linked bundles are the sole provisional key representation.
 
-Daily `Project Opportunity Watch` is active. It may discover/verify/filter and notify on surviving opportunities or results. It may **not** apply, submit, create accounts, contact organisers, accept binding terms, spend, use credentials, bind payout/wallets, or change project licences/canon.
-
-Two Parents / Listing 23 submission 490 remains owner-result watch:
+Codex's truthful disposition after those patches:
 
 ```text
-SUBMITTED != AWARDED != PAID
+PROVISIONAL PILOT-METHOD CANDIDATE
+NOT READY FOR HUMAN EXECUTION
 ```
 
-## COMPETITION TOURNAMENT — COM #349
+Even after code repair, independent source-bound key adjudication, sample/population rationale, recruitment/allocation, consent/data minimisation and analysis plan remain human-study gates.
 
-Direct Mark direction on 17 September 2026: `go for it`, then `make sure you're building something that could win. don't just go with the first idea`.
+Do not recruit/contact participants or collect participant data without explicit Mark authorization.
 
-Owner subtraction has already demoted the first plausible artefacts rather than defending them:
-- PR #350 evidence-lineage oracle: useful substrate only;
-- PR #351 WarrantFuzz: useful experimental harness, not the competition-defining idea;
-- PR #352: preserve Claude Code's red-by-design hostile evidence;
-- PR #353 `The Missing Edge`: current lead candidate, **not selected entry**.
+If `EXCERPT ~= LENS`, route benefit to the simpler section-jump/excerpt owner. Null/adverse result is valid.
 
-Current question:
+## Apart November
 
-> Can a minimal machine-readable open-world provenance representation make current LLM agents operationalize the already-motivated unknown-dependence regime, first in relationship assessment and then in downstream decisions, without losing positively established independent evidence?
+Fresh public check confirms AI x Epistemics sprint 13–15 Nov 2026 online and describes substantive work over the three days. Current public page does not expose a clear current pre-existing-work prohibition.
 
-Closest owner currently identified is Bara, *Epistemic Sybil Resistance* (September 2026), which already owns the central unobserved-ancestry/report-multiplicity mechanism. PR #353 is therefore a follow-on interface/behaviour experiment, not a novelty claim about that mechanism.
-
-Exact observed PR #353 head: `fd5e3e918e50fe7bd6da69122b2fde1373e7f833`. It carries six synthetic cases, six matched provenance conditions, separate relationship-assessment and decision-consequence arms, deterministic closed/open-world reference solvers, frozen scoring/preregistration and exact-head no-network CI PASS in run `35208415862`.
-
-Still required before selection:
-- independent KILL/SHRINK/REPAIR review;
-- surface-form robustness;
-- legitimate multi-model target execution with unchanged replicates/jitter controls;
-- an empirical effect that survives verified-independent cost;
-- a credible product path if Nebius remains a target.
-
-No target-model/provider call, competition account/registration, organiser-term acceptance, paid inference/cloud use, travel commitment or submission has occurred.
+Safe posture:
 
 ```text
-FIRST_IDEA != SELECTED_IDEA
-PRIOR_WORK_OWNS_MECHANISM != NO_INTERFACE_QUESTION
-REFERENCE_SOLVER_PASS != LLM_RESULT
-LEAD_CANDIDATE != SELECTED_ENTRY
-POSSIBLE_PRIZE = £0
+SEPTEMBER = PILOT / METHOD / FALSIFICATION / FROZEN BASELINE
+NOVEMBER = FRESH SUBSTANTIVE RESULT IF LIVE RULES ALLOW
 ```
 
-## FULL COMSYNC REACHABILITY — 16 Sep 2026
+No registration, terms acceptance, organiser contact or submission by momentum.
 
-Freshly reacquired:
-- COM core/current issue state;
-- TRACE live source + released status;
-- Mechanical Ethics live source + released status;
-- THR live repository state through main `43ec257d8cc7581c7355bc1670fc6df4c582de24`;
-- Campfire Relay repository main `b8579e56296e7a4eb4f83ed16e668d993a18589a`;
-- public 1F916 front-door/protocol surfaces sufficiently to establish that the public project remains active and machine-facing.
+## THR — Hannibal exposes workflow architecture pressure
 
-Not freshly established from this Framework aperture:
-- **operational Campfire Relay tool/provider is not exposed**; repository inspection is not a Relay run;
-- direct current authenticated Framework Square inbox/write/quota state and full `/api/changes` catch-up were not independently reproduced here. Specialist CC/Codex Square observations remain attributed to those apertures rather than silently upgraded to Framework observation.
+Open draft branches:
+
+```text
+PR27 1817b633 = prose candidate / unique ancient-source leads
+PR28 1bc10d2e = preferred consolidation base
+PR29 56b51584 = alternate prose candidate
+PR30 e378f371 = bounded executable registry probe
+```
+
+Do not concatenate or merge them by momentum.
+
+PR30 earns one concrete local finding: candidate entity/source/assertion data can pass structural checks, but operational mention validation rejects a candidate `record_id` because public catalogue membership is required.
+
+```text
+RESEARCH_CONTEXT_EXISTS != PUBLIC_RECORD_EXISTS
+RECORD != FUNDAMENTAL_UNIT
+RECORD = CURATED_VIEW / ENCOUNTER
+```
+
+Strong owners already cover most semantic modelling: CIDOC CRM, CRMsci, CRMinf, CRMdig, W3C PROV, nanopublication patterns. Do not build a THR universal ontology.
+
+Smallest repair under test: permit checked source/observation/locator-anchored research context without manufacturing a public record, while still rejecting dangling references. Stress it with a bounded contested-event/JFK fixture before changing production validators.
+
+Historical-source boundary sharpened by hostile review:
+
+```text
+ANCIENT_ATTESTATION != MODERN_SURVIVAL_STATE
+COMPLETE_WORK_NOT_PRESERVED != NO_FRAGMENT_SURVIVES
+AUTHOR_CLAIMS_AUTOPSY != AUTOPSY_ESTABLISHED
+COMMISSIONED_TEXT != PERSONAL_COMPOSITION
+```
+
+No Hannibal merge/public promotion.
+
+## COM #365 — positive construction
+
+Campfire quarry asked whether TRACE/ME needed new primitives for reachable futures, enough, surplus, play and joint construction.
+
+Current result:
+- no new primitive earned;
+- reachable futures/chosen contraction substantially already expressible;
+- universal `S=C-M` rejected;
+- enough should remain typed/task-relative;
+- play has strong owners;
+- joint construction is a derived view over existing structures.
+
+```text
+DERIVED_VIEW_EARNED != NEW_PRIMITIVE_EARNED
+REACHABLE_CLAIMED != REACHABLE_ESTABLISHED
+ABILITY_TO_HELP != DUTY_THEOREM
+```
+
+No TRACE/ME canon/baseline edit.
+
+## Resources
+
+Purpose: reduce dependence on Mark's personal burn without making fundraising the project.
+
+Current external-owner state:
+- OpenAI Researcher Access landing page is open/up to $1,000 credits, but the current FAQ requires active academic/research-organisation affiliation or nonprofit research activity. On current independent standing: **HOLD / eligibility not established**.
+- ARIA Scaling Trust Tracks 2+3 remain open with current batch cut-off 31 Oct 2026. Existing project seam is still research-only after owner subtraction; no proposal earned.
+- BlueDot/ProofPath-shaped application work remains HOLD.
+
+No application/account/contact/terms/spend/payment action.
+
+## PSFH / Formation
+
+- PSFH D068 remains live; reader benefit unestablished; no momentum rebuild.
+- Formation #339 remains merged working/non-production; not canon/alignment result.
+
+## Campfire / Square
+
+Operational Relay tool is not exposed in this Framework aperture.
 
 ```text
 RELAY_REPO != RELAY_TOOL
+PUBLIC_SNAPSHOT != AUTHENTICATED_CURRENT_STATE
 FAILED_READ != QUIET_BOARD
-SOURCE_AVAILABLE != CURRENT_AUTHENTICATED_STATE
 ```
 
-## OTHER STABLE ROUTES
+Do not invent current inbox/quota/write state from repository source or older attributed snapshots.
 
-- COM #346 closed/owner-routed; killed seam stays dead.
-- COM #345 secondary response-harvest only; no fifth venue.
-- COM #336 closed/cold.
-- PSFH D068 live; reader benefit unestablished; no momentum rebuild.
-- Formation PR #339 remains working/non-production prose only.
-- AI Product Index PSFH + THR listings: discovery route, not read/use.
-- llms-txt-hub #1648/#1649: owner-review watches; no chase.
-- Unrequested `AI Interest Watch` remains disabled; do not recreate unless Mark asks.
+## Consequential gates
 
-## LIVE COMMITMENTS
+Explicit human gates remain for:
+- #364 participant recruitment / human-study actuation;
+- competition/funder account creation, terms, organiser/institution contact and submission;
+- credentials/payment/new provider spend;
+- TRACE/ME release/canon/baseline/licence changes;
+- Campfire Production activation;
+- destructive/irreversible actions;
+- payout/tax/travel commitments;
+- crawler/training-policy changes.
+
+Durable late full-sync receipt:
+`coordination/build_ledger/FULL_COMSYNC_20260917_LATE.md`.
 
 ```text
+TRUTH > CONTINUITY_COHERENCE
 PROJECT_PURPOSE != INSTRUMENT_SURVIVAL
 MEMORY != OBSERVATION
 SUMMARY != SOURCE
 CAPABILITY != AUTHORITY
-COMPETENCE != LEGITIMACY
-DESCRIPTION != PERMISSION
-AGREEMENT != VALIDATION
-OWNER_ROUTING != FAILURE
-OFFERED != ACCEPTED
-AI_BUILT != AI_FACING_ONLY
-HUMAN_VIEW != NEW_EVIDENCE
-RECORDING != OWNING
-RECORDING != CONTINUATION
-PRESERVATION != EXTRACTION
-PROJECT_NEEDS_RESOURCES != PROJECT_EXISTS_TO_MAKE_MONEY
+OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
+PURPOSE > INSTRUMENT
 ```
-
-Consequential gates remain for future release/canon/licence/baseline changes, spend/provider commitments, credentials, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions and explicit crawler/training-policy changes.
