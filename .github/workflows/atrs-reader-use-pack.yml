@@ -29,8 +29,22 @@ jobs:
           python -m py_compile \
             competition/atrs_answerability/reader_use_pack.py \
             competition/atrs_answerability/reader_use_pack_v3.py \
+            competition/atrs_answerability/reader_use_pack_v3_1.py \
             competition/atrs_answerability/test_reader_use_pack_v3.py
           python -m unittest competition/atrs_answerability/test_reader_use_pack_v3.py -v
+          python - <<'PY'
+          import importlib.util, sys
+          from pathlib import Path
+          p=Path('competition/atrs_answerability/reader_use_pack_v3_1.py')
+          spec=importlib.util.spec_from_file_location('v31',p)
+          m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
+          hra=m.v3.ROUTE_BUNDLES['hra-proportionate-review']
+          wilton=m.v3.ROUTE_BUNDLES['wilton-data-cleaning']
+          assert hra[0]['channel'] == 'queries@hra.nhs.uk'
+          assert hra[1]['channel'] == 'NOT STATED'
+          assert wilton[0]['actor'] == 'individual'
+          print('v3.1 source-key narrowing PASS')
+          PY
       - name: Download corrected derived report
         uses: actions/download-artifact@v4
         with:
@@ -47,9 +61,9 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: markgoodbody-bit/COM
           run-id: 35257984573
-      - name: Build v3 evidence-bound three-condition pack
+      - name: Build v3.1 evidence-bound three-condition pack
         run: |
-          python competition/atrs_answerability/reader_use_pack_v3.py \
+          python competition/atrs_answerability/reader_use_pack_v3_1.py \
             /tmp/derived/atrs_full_version_aware.json \
             /tmp/source/atrs_html \
             --out-dir /tmp/reader-use-pack-v3
@@ -92,14 +106,18 @@ jobs:
           scored=[c for c in k['cases'] if c['primary_scored']]
           assert len(scored) == 9
           assert all(c['route_bundles'] for c in scored)
-          assert all('arbitrary cross-products are invalid' in k['route_bundle_rule'] for _ in [0])
+          assert 'arbitrary cross-products are invalid' in k['route_bundle_rule']
+          hra=next(c for c in scored if c['case_id']=='hra-proportionate-review')
+          assert hra['route_bundles'][1]['channel'] == 'NOT STATED'
+          wilton=next(c for c in scored if c['case_id']=='wilton-data-cleaning')
+          assert wilton['route_bundles'][0]['actor'] == 'individual'
           # Participant surfaces must never contain the private answer key.
           assert not any('route_bundles' in f.read_text(errors='ignore') for f in participant.rglob('*') if f.is_file() and f.suffix in {'.html','.json','.txt','.csv'})
-          print('v3 three-condition method gate PASS')
+          print('v3.1 three-condition method gate PASS')
           PY
-      - name: Preserve v3 method pack
+      - name: Preserve v3.1 method pack
         uses: actions/upload-artifact@v4
         with:
-          name: atrs-reader-use-pack-v3-${{ github.run_id }}
+          name: atrs-reader-use-pack-v3-1-${{ github.run_id }}
           path: /tmp/reader-use-pack-v3
           retention-days: 30
