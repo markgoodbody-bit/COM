@@ -18,7 +18,7 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PRODUCT QUALITY** | Next edge remains observe/correct operational scale. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Retain only truthful low-distortion routes. No identity/contact/terms/payment/submission action. |
 | COM #349 / tournament | **ACTIVE / SELECTION OPEN / #364 CURRENT LEAD** | ATRS Answerability Audit is current empirical lead; selected entry remains NONE. |
-| #364 ATRS Answerability Audit | **OPEN / CURRENT LEAD / NOT SELECTED** | Reproducible 152-record public-source witness + preregistered bounded manual read; no compliance/effectiveness claim. |
+| #364 ATRS Answerability Audit | **OPEN / CURRENT LEAD / NOT SELECTED / FALSIFY-100 REPAIRED** | Reproducible 152-record public-source witness + preregistered bounded manual read; known four-layer falsifiers now 100/100 resisted after an initial 55/100 red run. This is not validation. |
 | #363 No Free QALY | **OPEN / FALLBACK SYNTHESIS** | Owner-attributed Open Track meta-answer; not benchmark novelty. |
 | #350/#351/#352/#353 | **PRESERVED SUBSTRATE / HARNESS / HOSTILE EVIDENCE / FIXTURE RESEARCH** | Not current leads. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Preserve; do not reopen by renaming. |
@@ -64,7 +64,7 @@ maintenance = 152/152
 senior_responsible_owner = 152/152
 ```
 
-Auxiliary `none/N/A-like phrase` counts are excluded from primary findings pending repair; live false negatives were found.
+Auxiliary `none/N/A-like phrase` counts are excluded from primary findings; live false negatives were found. The post-pilot exploratory 151-record semantic census remains exploratory and is not validated ground truth.
 
 Preregistered appeals/review read, reconciled after bounded Codex review:
 
@@ -95,7 +95,60 @@ AUDIT != COMPLIANCE SCORE
 AUDIT != POLICY VERDICT
 ```
 
-Why #364 leads currently: it is an empirical current-world object, fits Apart Open Track's downloadable-data/live-deployment prompt, survives owner subtraction better than #363, and remains useful without a prize. `CURRENT_LEAD != SELECTED_ENTRY`.
+### Falsify x100 / drift pass
+
+Full receipt: `coordination/build_ledger/ATRS_FALSIFY_100_20260917.md`.
+
+Direct Mark instruction: `Falsify x 100 and check for drift / Middle out / COMSYNC and proceed`.
+
+Same four-layer gate before/after bounded repair:
+
+```text
+25 evidence/provenance binding
+25 parser/extraction
+25 semantic/codebook
+25 anti-drift / claim ceilings
+```
+
+First run `35262895884`:
+
+```text
+55 PASS / 45 FAIL
+```
+
+Substantive failures: 25 evidence-binding + 19 semantic/codebook. Parser layer 25/25 passed. Drift was substantively intact; one textual check failed only because Markdown interrupted an already-present sentence.
+
+Repairs were limited to those earned reds. The primary September source witness was not changed or refetched. Exploratory coding now binds its actual evidence bytes/identity, uses proposition-level labels, preserves actor scope, distinguishes concrete public initiation from mere process reference, preserves planned-not-operating state, and carries the bounded reviewed label corrections.
+
+Exact repaired branch head at the successful rerun: `04c0f9599e232822d6e01b2cf33118edc98b09f0`.
+
+Second run `35263306818`, job `105344137352`: **SUCCESS**.
+
+```text
+100 PASS / 0 FAIL
+```
+
+This means only that the known/red falsifiers are now resisted. It does **not** validate the 151 exploratory classifications, prove reader benefit, establish novelty, or select the entry.
+
+```text
+100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
+GREEN_TESTS != READER_BENEFIT
+CURRENT_LEAD != SELECTED_ENTRY
+```
+
+### Middle-out drift status
+
+Ground remains legitimate: a real public register, a real published field, and a concrete reader question — what can someone do next, as described in the record?
+
+Active drift risks:
+- competition gravity becoming project purpose;
+- taxonomy/codebook construction becoming an end in itself;
+- project vocabulary being mistaken for evidence;
+- parser/test perfection replacing the public-use question.
+
+Stop/shrink rule: if the surviving result is only `free-text fields vary`, #364 shrinks to demo. It retains research-lead status only if a consequential disclosure distinction/distribution or reader-use question survives strongest-owner subtraction.
+
+Why #364 still leads currently: it is an empirical current-world object, fits Apart Open Track's downloadable-data/live-deployment prompt, survives owner subtraction better than #363, and remains useful without a prize. `CURRENT_LEAD != SELECTED_ENTRY`.
 
 Before external competition action, re-read live eligibility/Guidelines, especially any pre-existing-work boundary. No registration, organiser contact, terms acceptance or submission yet.
 
