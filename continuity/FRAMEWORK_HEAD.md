@@ -118,7 +118,7 @@ Nine scored purposive cases use six position/condition-balanced schedules. One m
 
 The late full replay found two Codex repairs absent from the then-active branch: `06a3176` and `0573ce5`. Framework integrated them through bounded PR #367.
 
-Current exact #364 source head:
+Last exact reader-use repair head:
 
 ```text
 fd1b75c9671af8e85df9cbe9ad33ef025797d578
@@ -172,6 +172,35 @@ NULL RESULT = VALID
 METHOD_SOURCE_GREEN != HUMAN_RESULT
 ```
 
+### Later wide-pass correction — current #364 research spine
+
+The subsequent world/owner pass moved #364's lead question beyond the secondary FULL/EXCERPT/LENS pilot without crossing its human-study gate.
+
+Current exact PR #364 head:
+
+```text
+7b7b1fd8a171a5414c315f585e715700cc0703f6
+hosted CI 35277771413 = SUCCESS
+```
+
+Current fresh-corpus question:
+
+> Does a current public ATRS record let a reader bind a stated review/challenge/correction route to the thing in the published decision pipeline that route can actually act on, and does it state who can initiate/use that route and how?
+
+The unit is a source-supported route proposition, not a whole-record score. Existing September initiation/route categories are reused. New coding is limited to binding the published route to its stated target site, actor, initiation/review mode, route form, status/effect and evidence. `LAYER_NOT_STATED` is a valid result; coders must not complete the graph from unstated assumptions.
+
+GDS owns ATRS semantics and has announced an intended-impact assessment. Current project work is a narrower fresh-corpus implementation measurement, not a novelty claim. Version remains descriptive metadata only.
+
+```text
+PUBLIC_DISCLOSURE_LEGIBILITY != INTERNAL_CONTROL
+ROUTE_RELATION != RECORD_SCORE
+CODER_CAN_INFER != RECORD_MAKES_LEGIBLE
+VERSION_ASSOCIATION != VERSION_CAUSED_CHANGE
+FRESH_CORPUS QUESTION != RESULT
+```
+
+The reader-use method remains secondary and not ready for participant execution.
+
 ## Apart November
 
 Fresh public check: AI x Epistemics Research Sprint is 13–15 Nov 2026, online. Current page advertises $2,000 total cash prizes ($1,000 first) and its Open Track explicitly invites measurement of a live epistemic deployment using weekend-downloadable data.
@@ -210,6 +239,22 @@ REACHABLE_CLAIMED != REACHABLE_ESTABLISHED
 ```
 
 No TRACE/ME canon/baseline edit.
+
+## Social-care field seam — COM #99
+
+Final owner subtraction for this pass found the generic normative chain substantially present: record amendment/audit history, consideration of possible reliance, DCB0160 post-deployment safety review/corrective action, and Care Act plan-review triggers.
+
+Current disposition:
+
+```text
+#99 = FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION
+THEORY GAP = NOT EARNED
+NEW RIGHT / DUTY / FRAMEWORK = NOT EARNED
+OPERATIONAL HANDOFF = NOT ESTABLISHED FROM PUBLIC SOURCES
+NO ACTIVE BUILD
+```
+
+Wake only for real operational evidence, an owner request or a material observed failure. `NOT_ESTABLISHED_IMPLEMENTATION != MISSING_RULE`.
 
 ## Resources
 
