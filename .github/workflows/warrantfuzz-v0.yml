@@ -30,7 +30,9 @@ jobs:
           python -m py_compile competition/warrantfuzz/warrantfuzz.py
           python -m py_compile competition/warrantfuzz/test_warrantfuzz.py
       - name: Unit tests
-        run: python -m unittest competition/warrantfuzz/test_warrantfuzz.py -v
+        run: python -m unittest competition/warrantfuzz/test_warrantfuzz.py competition/warrantfuzz/test_lineage_envelope.py -v
+      - name: Hostile tests (red until the harness repairs; see COM PR #351 review)
+        run: python -m unittest competition/warrantfuzz/test_hostile_warrantfuzz.py -v
       - name: Control report smoke
         run: |
           tmp="$(mktemp -d)"
