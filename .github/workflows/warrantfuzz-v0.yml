@@ -1,0 +1,39 @@
+name: WarrantFuzz v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/warrantfuzz/**'
+      - 'competition/evidence_lineage_agent/**'
+      - '.github/workflows/warrantfuzz-v0.yml'
+  push:
+    branches:
+      - framework/warrantfuzz-v0
+    paths:
+      - 'competition/warrantfuzz/**'
+      - 'competition/evidence_lineage_agent/**'
+      - '.github/workflows/warrantfuzz-v0.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: |
+          python -m py_compile competition/warrantfuzz/warrantfuzz.py
+          python -m py_compile competition/warrantfuzz/test_warrantfuzz.py
+      - name: Unit tests
+        run: python -m unittest competition/warrantfuzz/test_warrantfuzz.py -v
+      - name: Control report smoke
+        run: |
+          tmp="$(mktemp -d)"
+          python competition/warrantfuzz/warrantfuzz.py competition/warrantfuzz/fixtures/source_laundering.json --json "$tmp/report.json" --markdown "$tmp/report.md"
+          grep -q '"mutation_power_established": true' "$tmp/report.json"
+          grep -q 'Target agent: NOT RUN' "$tmp/report.md"
