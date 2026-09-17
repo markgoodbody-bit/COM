@@ -1,7 +1,7 @@
 # ProofPath Stage A — authorization / execution receipt
 
 Date: **2026-09-17 — Europe/London**  
-Status: **AUTHORISED / OFFLINE GATES PASS / EXECUTION BLOCKED BEFORE PROVIDER CALL / $0 SPENT / NO MODEL RESULT**
+Status: **AUTHORISED / REPAIRED OFFLINE GATES PASS / EXECUTION BLOCKED BEFORE PROVIDER CALL / $0 SPENT / NO MODEL RESULT**
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
@@ -9,11 +9,11 @@ This receipt records one bounded experiment inside COM #349. It is not a competi
 
 ## Human gate
 
-Mark explicitly approved the proposed staged real-model pilot with the instruction:
+Mark explicitly approved the staged real-model pilot with:
 
 `very good. go ahead`
 
-The approved boundary was already stated immediately before that instruction:
+The approved boundary remains:
 
 ```text
 TARGETS = gpt-5.6-terra + gpt-5.6-sol
@@ -30,55 +30,77 @@ This is one-run bounded authority, not a standing API allowance.
 
 ## Measurement basis
 
-Stage A measurement/scoring is frozen at repaired WarrantFuzz PR #351 head:
+The stochastic scorer remains frozen at repaired WarrantFuzz PR #351 head:
 
 `88264d5824c985cba85a6831912aaeb5b07b5f2e`
 
-Exact-head GitHub Actions run `35217059591`: **SUCCESS**.
+The provider/execution adapter is isolated in PR #356. The first attempted execution head (`d944676...`) made no provider call because no GitHub `OPENAI_API_KEY` was exposed. Claude Code then found a more important pre-spend defect in that head: the agent-facing IDs leaked `origin-a` / `derivative-a` and the evidence rows carried no actual text, making either a positive or null result uninterpretable.
 
-The Stage A provider adapter is isolated in PR #356 / branch `framework/proofpath-stage-a-openai`; its current execution head at the first attempt was:
+That head is superseded for any future execution.
 
-`d944676282fe9e9a91aceea9e760a9f1c48ac807`
+## Repaired Stage A head
 
-It changes provider plumbing, not the frozen scorer.
+Current exact PR #356 head:
 
-Stage A deliberately sends only:
+`f60387b69a291da5cc894008a2d8a442028da194`
+
+Stage A now deliberately sends only:
 
 ```text
 baseline
-baseline_replicate   # byte-identical target input to baseline
-mutant_raw           # duplicate apparent support, no agent-facing ancestry envelope
+baseline_replicate   # byte-identical agent input to baseline
+mutant_raw           # second apparent support with no ancestry envelope
 ```
 
-The agent-facing system instruction is neutral and does not teach the source-independence rule. Apparent source labels are neutralised (`Source 1`, `Source 2`) rather than calling the second item derivative. Plain-English warning, correct ancestry, wrong/shuffled ancestry and hardening remain later controls and are not part of this spend stage.
+Experiment/payload repairs before any spend:
 
-## Offline gates
+- agent-facing source IDs are neutral (`src-1`, `src-2`); internal fixture IDs remain manifest-only;
+- baseline source has a synthetic excerpt;
+- mutant adds a differently worded excerpt carrying the same distinctive pilot facts, making content overlap recognisable in principle without telling the model it is a copy/derivative;
+- agent-facing prompt/payload is rejected if it contains lineage/mutation tells such as `origin`, `derivative`, `duplicate`, `copy` or `paraphrase`;
+- baseline / baseline-replicate / mutant are round-robin by run index rather than time-blocked;
+- plain-English warning / correct ancestry / wrong ancestry / hardening remain later controls and are not part of Stage A.
 
-On the execution branch before provider actuation:
+Execution-control repairs:
 
-- inherited WarrantFuzz suite: **SUCCESS**;
-- Stage A adapter suite: **SUCCESS**;
-- adapter unit tests: **6 PASS**;
+- `--execute` remains required;
+- `store: false` remains set;
+- `reasoning.effort=none`, structured output, max output 512 tokens;
+- no automatic retry;
+- a failed provider attempt reserves that call's conservative worst-case cost because a timeout/failure may still have been billed;
+- a failed key is treated as attempted and is not silently retried;
+- append-only ledger remains the evidence record;
+- provider execution workflow is now `workflow_dispatch` only; commit-message push actuation was removed;
+- exact-model pricing was rechecked against current OpenAI model documentation before repair: Terra $2/M input, $12/M output; Sol $4/M input, $20/M output.
+
+## Repaired offline gates
+
+Exact-head evidence at `f60387b...`:
+
+- inherited WarrantFuzz workflow `35237109779`: **SUCCESS**;
+- Stage A adapter workflow `35237109788`: **SUCCESS**;
+- adapter/unit/hostile tests: **11 PASS**;
 - exact manifest: **90 requests**;
-- recorded pre-run spend: **$0.00**;
-- conservative whole-run worst-case ceiling under the adapter's 512-output-token limit: **$1.10853**;
+- requests attempted: **0**;
+- recorded/accounted spend: **$0.00**;
+- conservative whole-run worst-case after source excerpts were added: **$1.15164**;
 - authorised ceiling: **$10.00**.
 
-The $1.10853 value is a conservative execution ceiling produced by the adapter, not a provider bill or expected charge.
+The `$1.15164` value is a conservative execution ceiling, not a bill or expected charge.
 
-## Provider execution attempt
+## Provider execution state
 
-GitHub Actions run:
+The only provider-actuation attempt so far remains GitHub Actions run:
 
 `35234396187`
 
-re-ran the offline gates successfully, then reached the execution step. The repository secret exposed to that job as `OPENAI_API_KEY` was empty. The workflow therefore printed:
+It reached the spend step with an empty repository `OPENAI_API_KEY` and emitted:
 
 `EXECUTION_BLOCKED_NO_CREDENTIAL_ROUTE`
 
-and exited with code 2 before `stage_a_openai.py --execute` could make a provider call.
+before any API request.
 
-Result:
+Current result therefore remains:
 
 ```text
 API CALLS EXECUTED = 0
@@ -87,17 +109,17 @@ STAGE A MODEL RESULT = NOT RUN
 90 REQUESTS = UNEXECUTED
 ```
 
-The run preserved the manifest artifact. No result ledger or model summary can exist because no request was sent.
+No run has been attempted against repaired head `f60387b...` because provider execution is manual-dispatch only and the known GitHub secret route is absent.
 
-## Concurrency correction
+## Product-shell separation
 
-After earlier ProofPath CI #355 green deterministic runs, Codex and Claude Code found additional defects in the #355 product shell, including an action-only false PASS and mutation-power/control problems. Those findings are controlling for the product shell.
+ProofPath product PR #355 is a separate deterministic shell. Its current repaired head is `82c6988ed79a12cf16893843d91a1ded5dbfdc20`, workflow `35237752920` SUCCESS. It now exposes action-only regressions, mutation power, baseline structure, unpowered guards and sensitivity controls.
 
-They do **not** manufacture a Stage A result and do not change the frozen #351 measurement object. Stage A execution authority therefore remains attached to #351/#356 only, not #355.
+Those repairs improve the product shell but do not create a Stage A model result. Stage A stochastic measurement authority remains #351/#356.
 
 ## Current route
 
-An aperture may execute the exact #356 Stage A adapter under the existing Mark authorization **only if its current environment already legitimately exposes an authorised OpenAI API credential**.
+An aperture may execute the exact repaired #356 Stage A design under Mark's existing bounded authorization **only if its current environment already legitimately exposes an authorised OpenAI API credential**.
 
 It may not, on this authority alone:
 
@@ -106,7 +128,7 @@ It may not, on this authority alone:
 - create an account or alter billing;
 - change models, sample counts, conditions or scorer after seeing outputs;
 - increase the $10 ceiling;
-- add silent retries;
+- add retries;
 - proceed to Stage B, ancestry/hardening controls or competition submission.
 
 If no existing credential route is available, the correct result remains:
@@ -120,9 +142,11 @@ not a null model result.
 ```text
 AUTHORISED_SPEND != STANDING_SPEND_AUTHORITY
 SPEND_AUTHORISED != CREDENTIAL_AUTHORITY
+AUTHORISED_SPEND != SPEND_THAT_MEASURES_NOTHING
 BLOCKED_EXECUTION != NULL_RESULT
 NO_CREDENTIAL_ROUTE != NO_MODEL_EFFECT
 OFFLINE_GATE_PASS != MODEL_RESULT
 PRODUCT_SHELL_DEFECT != MEASUREMENT_RESULT
+REAL_FAILURE_BEFORE_PRODUCT_POLISH
 NO_SIGNAL -> SHRINK / STOP
 ```
