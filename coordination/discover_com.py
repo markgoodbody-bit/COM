@@ -20,7 +20,7 @@ def fetch_pages(endpoint):
     if result.returncode:
         raise RuntimeError(result.stderr.strip() or "GitHub retrieval failed")
     pages = json.loads(result.stdout)
-    if not isinstance(pages, list) or any(not isinstance(p, list) for p in pages):
+    if not isinstance(pages, list) or not pages or any(not isinstance(p, list) for p in pages):
         raise ValueError("Expected paginated arrays, not a partial/error response")
     return pages
 
@@ -50,7 +50,7 @@ def discover(repo, since=None, fetch=fetch_pages):
         if boundary:
             query["since"] = boundary
         elif surface == "issues/comments":
-            # Bootstrap comments of open objects below, not all historical comments.
+            # Bootstrap callers must retrieve relevant comments separately.
             continue
         endpoint = f"repos/{repo}/{surface}?{urlencode(query)}"
         try:

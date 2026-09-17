@@ -1,5 +1,7 @@
 import unittest
-from discover_com import discover
+from unittest.mock import patch
+from subprocess import CompletedProcess
+from discover_com import discover, fetch_pages
 
 
 def obj(number, body, **extra):
@@ -7,6 +9,19 @@ def obj(number, body, **extra):
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_transport_failure_discards_partial_stdout(self):
+        with patch("discover_com.subprocess.run", return_value=CompletedProcess([], 1, "[[{}]]", "page failed")):
+            with self.assertRaises(RuntimeError):
+                fetch_pages("repos/example/repo/issues")
+
+    def test_transport_requires_at_least_one_complete_array_page(self):
+        for payload in ("[]", "{}", "[{}]", "[[", "null"):
+            with self.subTest(payload=payload), patch("discover_com.subprocess.run", return_value=CompletedProcess([], 0, payload, "")):
+                with self.assertRaises(ValueError):
+                    fetch_pages("repos/example/repo/issues")
+        with patch("discover_com.subprocess.run", return_value=CompletedProcess([], 0, "[[]]", "")):
+            self.assertEqual(fetch_pages("repos/example/repo/issues"), [[]])
+
     def test_zero_comment_issue_on_second_page_is_delivered(self):
         def fetch(route):
             return [[]] if "issues/comments?" in route else [[obj(364, "old")], [obj(365, "CODEX: task", comments=0)]]
