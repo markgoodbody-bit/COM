@@ -1,12 +1,11 @@
 {
   "id": "source-laundering-01",
   "title": "Source laundering: one origin becomes two URLs",
-  "claim": "The evidence is strong enough to approve the claim for downstream use.",
-  "decision_question": "Should the claim be approved for downstream use?",
+  "claim": "The reported pilot result is independently corroborated.",
+  "decision_question": "May this claim be approved for downstream use as independently corroborated?",
   "base": {
     "sources": [
-      {"id": "origin-a", "label": "Origin A", "stance": "support", "lineage_state": "primary"},
-      {"id": "origin-b", "label": "Origin B", "stance": "support", "lineage_state": "primary"}
+      {"id": "origin-a", "label": "Origin A", "stance": "support", "lineage_state": "primary"}
     ],
     "relations": []
   },
@@ -15,7 +14,7 @@
       "id": "duplicate-origin-a",
       "operator": "add_derived_support",
       "expectation": "must_not_strengthen",
-      "reason": "A derivative retelling adds a URL but no new evidentiary origin.",
+      "reason": "A derivative retelling adds a second URL but no second evidentiary origin.",
       "add_source": {
         "id": "derivative-a",
         "label": "Derivative report of A",
