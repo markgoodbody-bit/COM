@@ -20,8 +20,32 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Re-run deterministic parser tests
+      - name: Deterministic parser and hostile tests
         run: python -m unittest competition/atrs_answerability/test_audit.py -v
+      - name: Fixed live witness gate
+        run: |
+          python - <<'PY'
+          import importlib.util, sys
+          from pathlib import Path
+          p=Path('competition/atrs_answerability/audit.py')
+          spec=importlib.util.spec_from_file_location('atrs_live_gate', p)
+          m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
+          expected={
+            'https://www.gov.uk/algorithmic-transparency-records/hmrc-ask-hmrc-online': False,
+            'https://www.gov.uk/algorithmic-transparency-records/money-and-pensions-service-pension-calculator': True,
+            'https://www.gov.uk/algorithmic-transparency-records/dvla-contact-centre-chatbot-service': False,
+            'https://www.gov.uk/algorithmic-transparency-records/ipo-check-if-you-could-register-your-trade-mark-tool': True,
+            'https://www.gov.uk/algorithmic-transparency-records/dfe-attendance-reports-using-similar-schools': False,
+          }
+          for url, want in expected.items():
+              row=m.audit_record({'title': url.rsplit('/',1)[-1], 'url': url}, m.request_text(url))
+              got=row['fields']['appeals_review']['public_route_locator']
+              assert got is want, (url, got, want, row['fields']['appeals_review'])
+              assert row['fields']['appeals_review']['section_present']
+              assert row['fields']['risks']['heading'] is not None
+              assert row['fields']['impact_assessment']['heading'] is not None
+              print(url, 'appeal_locator=', got)
+          PY
       - name: Fetch and audit current GOV.UK ATRS corpus
         run: |
           python competition/atrs_answerability/audit.py \
