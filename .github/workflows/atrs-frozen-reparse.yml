@@ -1,0 +1,101 @@
+name: ATRS frozen witness version-aware reparse
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/audit.py'
+      - 'competition/atrs_answerability/audit_core.py'
+      - 'competition/atrs_answerability/reparse_frozen.py'
+      - 'competition/atrs_answerability/test_audit.py'
+      - 'competition/atrs_answerability/test_audit_versions.py'
+      - 'competition/atrs_answerability/reader_lens.py'
+      - '.github/workflows/atrs-frozen-reparse.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  reparse-frozen-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Version-aware parser tests
+        run: |
+          python -m unittest competition/atrs_answerability/test_audit.py -v
+          python -m unittest competition/atrs_answerability/test_audit_versions.py -v
+      - name: Download pinned September evidence bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: atrs-reproducible-corpus-35257984573
+          path: /tmp/atrs-source
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: markgoodbody-bit/COM
+          run-id: 35257984573
+      - name: Reparse exact frozen HTML without network fetch
+        run: |
+          python competition/atrs_answerability/reparse_frozen.py \
+            /tmp/atrs-source/atrs_full.json \
+            /tmp/atrs-source/atrs_html \
+            --parser-head '${{ github.sha }}' \
+            --json-out /tmp/atrs_full_version_aware.json \
+            --csv-out /tmp/atrs_full_version_aware.csv
+      - name: Assert corrected source-level observations
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/atrs_full_version_aware.json'))
+          s=r['summary']
+          assert s['records'] == 152
+          assert s['heading_profiles'] == {
+            'current_named_family': 145,
+            'legacy_2024_family': 6,
+            'mixed_known_families': 1,
+          }, s['heading_profiles']
+          expected={
+            'human_review': 152,
+            'appeals_review': 151,
+            'model_performance': 139,
+            'risks': 152,
+            'impact_assessment': 145,
+            'maintenance': 152,
+            'senior_responsible_owner': 152,
+          }
+          for field, want in expected.items():
+            got=s['fields'][field]['section_present']
+            assert got == want, (field, got, want)
+          assert s['fields']['model_performance']['section_not_observed'] == 13
+          assert s['fields']['model_performance']['known_family_without_field'] == 7
+          assert r['derived_from']['refetch_performed'] is False
+          print(json.dumps(s, indent=2))
+          PY
+      - name: Build source-only corrected Reader Lens
+        run: |
+          python competition/atrs_answerability/reader_lens.py \
+            /tmp/atrs_full_version_aware.json \
+            --out /tmp/ATRS_READER_LENS_VERSION_AWARE_20260917.html
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('/tmp/ATRS_READER_LENS_VERSION_AWARE_20260917.html')
+          t=p.read_text(encoding='utf-8')
+          assert t.count('class="card"') == 152
+          assert 'ATRS Reader Lens' in t
+          assert '0</strong> records carry optional evidence-bound exploratory annotations' in t
+          print('version-aware reader bytes=', p.stat().st_size)
+          PY
+      - name: Preserve corrected derived objects
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-version-aware-derived-${{ github.run_id }}
+          path: |
+            /tmp/atrs_full_version_aware.json
+            /tmp/atrs_full_version_aware.csv
+            /tmp/ATRS_READER_LENS_VERSION_AWARE_20260917.html
+          retention-days: 30
