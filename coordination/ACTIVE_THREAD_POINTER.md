@@ -16,12 +16,12 @@ PURPOSE > INSTRUMENT
 - Mark: human originator / witness / consequential human gate; not routine scheduler.
 - Framework: episodic integration / coordination / continuity role.
 - Codex: active implementation / hostile-review aperture.
-- Claude Code: **temporarily out of tokens for a couple of hours; not removed**. Preserve prior CC findings and do not block routine work waiting for it.
+- Claude Code: last known temporarily out of tokens; not removed. Reverify before relying on a new CC review.
 
 ## Current routes
 
 - **#347 THR:** active product quality; next edge remains observe/correct operational scale.
-- **#348 resources:** active quarry; no application live. Do not revive stale funding-shaped work after owner subtraction. Identity, contact, terms, payment/tax and submission remain human gates.
+- **#348 resources:** active quarry; no application live.
 - **#349 competition tournament:** active; selection open.
 
 ## Competition state
@@ -29,7 +29,6 @@ PURPOSE > INSTRUMENT
 ```text
 #350 evidence-lineage -> substrate/reference
 #351 WarrantFuzz -> experimental harness
-#352 hostile evidence -> preserve
 #353 Missing Edge -> fixture research / shrink
 #355 ProofPath -> closed / owner found
 #356 Stage A -> closed / optional replication / 0 provider calls / $0 spend
@@ -39,43 +38,90 @@ SELECTED ENTRY -> NONE
 REGISTERED / SUBMITTED -> NO
 ```
 
-### #364 current lead
+## #364 — current lead
 
-Question: across the current UK Algorithmic Transparency Recording Standard public finder, what can a reader actually observe in published records about human review, appeals/review, performance, risks, impact assessment, maintenance and accountable ownership?
+Reader question:
 
-Why it currently leads:
-- real current public-record object rather than mainly synthesis;
-- direct fit to Apart AI x Epistemics Open Track's live-deployment / downloadable-data research prompt;
-- useful without a prize;
-- strongest-owner search found the official standard, an existing metadata corpus and qualitative ATRS work, but no exact current full-record answerability-disclosure audit in a bounded search. `NOT_FOUND != NOVEL`.
+> What does a published ATRS record actually say about what someone can do next?
 
-Pinned reproducible witness:
+Why it still leads:
+- real public-record object rather than mainly synthesis;
+- direct fit to Apart AI x Epistemics Open Track's live-deployment/downloadable-data prompt;
+- useful without prize/submission;
+- survives owner subtraction better than #363.
+
+Strong owners now explicit:
+- GOV.UK / GDS: ATRS standard, semantics, guidance, repository;
+- Fabio Rovai / Tesseract Academy: ATRS metadata corpus;
+- Public Law Project / Tracking Automated Government: independent public-sector ADM visibility and much broader transparency/redress/public-law framing.
+
+`NOT_FOUND != NOVEL`.
+
+### Frozen September source witness
 
 ```text
 run = 35257984573 SUCCESS
 source head = 4a7b43df95a2b776b885f8ee903d929100414af7
 artifact = 10513278849
 artifact sha256 = ad315d9b08a0af65c4615638df2235b9ce6f021307315fbeb6dfcbd8cbdb0097
-finder = 152
-Search API = 152
-membership differences = 0
+historical report sha256 = c13d62cc685c9c4dc1e6aabcfb658ab40460f4b51abf46f05a242032d0330eb9
+finder / Search API membership = 152 / 152
 raw source snapshots = 152
 ```
 
-Codex independently verified the artifact digest and stored source hashes and re-executed the exact parser across all 152 preserved pages with zero extraction differences.
+Codex independently verified bundle/source identity and reproduced the original extraction. Later hostile review found an important parser-semantic defect:
 
-Primary structural observations from the frozen witness:
-- human-review field observed 146/152;
-- appeals/review 151/152;
-- model performance 139/152;
-- risks 145/152;
-- impact assessment 138/152;
-- maintenance 152/152;
-- senior responsible owner 152/152.
+```text
+REPRODUCED != CORRECT
+SAME_REGEX + SAME_BYTES -> SAME_MISS
+```
 
-Do not use the frozen auxiliary `none/N/A-like phrase` totals as primary findings; Codex found two live misses in that detector.
+Seven records use older/transition ATRS heading families the original parser did not fully recognise. The historical source/report remains preserved rather than rewritten.
 
-Preregistered appeals/review read, reconciled after Framework first pass + bounded Codex review:
+### Version-aware correction — same 152 source bytes, no refetch
+
+Corrected derived run:
+
+```text
+workflow = 35266542167 SUCCESS
+source refetch = FALSE
+derived artifact = 10516044636
+artifact sha256 = 530f5f52f280b9cf1da4786f101bdd5b80874bf62af43db8e60d6e167fdd575f
+heading profiles:
+  current_named_family = 145
+  legacy_2024_family = 6
+  mixed_known_families = 1
+```
+
+Corrected source-level observations:
+
+```text
+human_review = 152/152 observed
+appeals_review = 151/152 observed
+model_performance = 139/152 observed
+  13 not observed on page
+  7 of those belong to the known legacy/transition family where the field is not present
+risks = 152/152 observed
+impact_assessment = 145/152 observed
+maintenance = 152/152 observed
+senior_responsible_owner = 152/152 observed
+```
+
+Superseded historical presence figures:
+- human_review `146/152` -> `152/152`;
+- risks `145/152` -> `152/152`;
+- impact_assessment `138/152` -> `145/152`.
+- model_performance remains numerically `139/152`, but its interpretation is corrected by heading-family context.
+
+```text
+HISTORICAL_REPORT != DELETED
+HEADING_FAMILY != COMPLIANCE_STATUS
+FIELD_NOT_OBSERVED != REQUIRED_FIELD_OMITTED
+```
+
+### Appeals/review pilot — unchanged
+
+The heading-family defect did not affect the `Appeals and review` extraction.
 
 ```text
 TOKEN-POSITIVE CENSUS = 27
@@ -91,69 +137,38 @@ SHA256(URL)-SELECTED TOKEN-NEGATIVE SAMPLE = 20
   PLAIN_TEXT_LOCATOR_MISSED = 0
 ```
 
-Important: token-negative records can still describe in-channel human handoff or an existing review process. `NO_CONTACT_TOKEN != NO_ROUTE`.
+`NO_CONTACT_TOKEN != NO_ROUTE`.
 
-### Falsify x100 / drift check
+### Falsification / drift ceiling
 
-Direct Mark instruction: `Falsify x 100 and check for drift / Middle out / COMSYNC and proceed`.
-
-Receipt: `coordination/build_ledger/ATRS_FALSIFY_100_20260917.md`.
-
-Same four-layer gate:
-
-```text
-25 evidence/provenance binding
-25 parser/extraction
-25 bounded semantic/codebook
-25 anti-drift / claim ceilings
-```
-
-First run `35262895884`: `55 PASS / 45 FAIL`. Parser was 25/25 green; substantive reds concentrated in evidence identity and unreconciled bounded codebook findings.
-
-Bounded repair did **not** refetch or replace the frozen September witness. The exploratory semantic object now binds ordered title + URL + source hash + complete appeals field; uses proposition-level labels; preserves actor scope; distinguishes concrete initiation from process reference; adds planned/not-operating; and incorporates only the bounded reviewed record corrections.
-
-Exact repaired branch head: `04c0f9599e232822d6e01b2cf33118edc98b09f0`.
-
-Second run `35263306818`: `100 PASS / 0 FAIL`; ordinary offline tests also PASS. Codex separately confirmed the genuine frozen report passes the new evidence binding and the prior altered-text counterexample now fails closed.
-
-Ceiling:
+Falsify x100 first ran `55/100`, then `100/100` after bounded repair. The later heading-family defect is direct evidence that this was regression/falsifier resistance, not validation.
 
 ```text
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
-GREEN_TESTS != READER_BENEFIT
+GREEN_TESTS != COMPLETE_MODEL_OF_THE_SOURCE
+REPRODUCIBILITY != CORRECTNESS
 CURRENT_LEAD != SELECTED_ENTRY
 ```
 
-The x100 gate contains regression-style probes as well as falsifiers; do not describe it as 100 independent proofs of validity or zero conceptual drift.
+### Reader Lens
 
-### Middle-out drift status
-
-Ground remains legitimate: a real public register, a real published field, and a concrete reader question — **what can someone do next, as described in the record?**
-
-Active drift risks:
-- competition gravity becoming project purpose;
-- taxonomy/codebook construction becoming an end in itself;
-- project vocabulary (`answerability`) being mistaken for a finding;
-- parser/test perfection replacing the public-use question.
-
-Stop/shrink rule: if the surviving result is only `free-text fields vary`, #364 shrinks to demo. Research-lead status requires a consequential disclosure distinction/distribution or reader-use question to survive strongest-owner subtraction.
-
-Ceilings:
+A static source-linked Reader Lens exists. The corrected version-aware build is generated from the repaired derived report and defaults to public source evidence only. Exploratory semantic annotations are **not** silently carried across the parser-version boundary.
 
 ```text
-SECTION_PRESENT != PRACTICALLY_EFFECTIVE_REMEDY
-CONTACT_TOKEN != APPEAL_RIGHT
-CONCRETE_ROUTE_OBSERVED != ROUTE_EFFECTIVE
-ROUTE_DESCRIBED_WITHOUT_LOCATOR != NO_ROUTE_EXISTS
-DISCLOSURE_ABSENT != PRACTICE_ABSENT
-PUBLIC_RECORD_AUDIT != COMPLIANCE_AUDIT
+SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
+EASIER_INSPECTION != EFFECTIVE_REMEDY
+READER_LENS != REPLACEMENT_FOR_GOV.UK
 ```
 
-#364 is **CURRENT LEAD != SELECTED ENTRY**. Re-read live Apart eligibility / pre-existing-work rules before any registration or submission. Organiser contact remains a human gate.
+Next useful falsifier is reader use, not more parser polish: can a person accurately extract what can be challenged, by whom, through what route and at which layer more reliably from the lens than from the raw record?
 
-### #363 fallback
+Stop/shrink rule: if the surviving result is only `free-text fields vary`, #364 shrinks to demo.
 
-`No Free QALY` survives only as attributed synthesis: `DIRECT / CONDITIONAL ON SHARED CONTRACT / NOT ESTABLISHED` comparison discipline. Its load-bearing theory and metric-rank-instability phenomenon are already strongly owned. Keep as fallback/companion, not current lead.
+No competition registration, organiser contact, provider spend, terms acceptance or submission.
+
+## #363 fallback
+
+`No Free QALY` survives only as attributed synthesis: `DIRECT / CONDITIONAL ON SHARED CONTRACT / NOT ESTABLISHED` comparison discipline.
 
 ## Stable project state
 
@@ -171,4 +186,4 @@ OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
 PURPOSE > INSTRUMENT
 ```
 
-Routine reversible work inside named lanes may continue. Explicit human gates remain for external accounts/terms/submissions, new spend/provider commitments, credentials/payment, consequential institutional contact, and future TRACE/ME release/canon/licence changes.
+Routine reversible work may continue. Explicit human gates remain for accounts/terms/submissions, new spend/provider commitments, credentials/payment, consequential institutional contact, and future TRACE/ME release/canon/licence changes.
