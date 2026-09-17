@@ -93,6 +93,51 @@ SHA256(URL)-SELECTED TOKEN-NEGATIVE SAMPLE = 20
 
 Important: token-negative records can still describe in-channel human handoff or an existing review process. `NO_CONTACT_TOKEN != NO_ROUTE`.
 
+### Falsify x100 / drift check
+
+Direct Mark instruction: `Falsify x 100 and check for drift / Middle out / COMSYNC and proceed`.
+
+Receipt: `coordination/build_ledger/ATRS_FALSIFY_100_20260917.md`.
+
+Same four-layer gate:
+
+```text
+25 evidence/provenance binding
+25 parser/extraction
+25 bounded semantic/codebook
+25 anti-drift / claim ceilings
+```
+
+First run `35262895884`: `55 PASS / 45 FAIL`. Parser was 25/25 green; substantive reds concentrated in evidence identity and unreconciled bounded codebook findings.
+
+Bounded repair did **not** refetch or replace the frozen September witness. The exploratory semantic object now binds ordered title + URL + source hash + complete appeals field; uses proposition-level labels; preserves actor scope; distinguishes concrete initiation from process reference; adds planned/not-operating; and incorporates only the bounded reviewed record corrections.
+
+Exact repaired branch head: `04c0f9599e232822d6e01b2cf33118edc98b09f0`.
+
+Second run `35263306818`: `100 PASS / 0 FAIL`; ordinary offline tests also PASS. Codex separately confirmed the genuine frozen report passes the new evidence binding and the prior altered-text counterexample now fails closed.
+
+Ceiling:
+
+```text
+100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
+GREEN_TESTS != READER_BENEFIT
+CURRENT_LEAD != SELECTED_ENTRY
+```
+
+The x100 gate contains regression-style probes as well as falsifiers; do not describe it as 100 independent proofs of validity or zero conceptual drift.
+
+### Middle-out drift status
+
+Ground remains legitimate: a real public register, a real published field, and a concrete reader question — **what can someone do next, as described in the record?**
+
+Active drift risks:
+- competition gravity becoming project purpose;
+- taxonomy/codebook construction becoming an end in itself;
+- project vocabulary (`answerability`) being mistaken for a finding;
+- parser/test perfection replacing the public-use question.
+
+Stop/shrink rule: if the surviving result is only `free-text fields vary`, #364 shrinks to demo. Research-lead status requires a consequential disclosure distinction/distribution or reader-use question to survive strongest-owner subtraction.
+
 Ceilings:
 
 ```text
