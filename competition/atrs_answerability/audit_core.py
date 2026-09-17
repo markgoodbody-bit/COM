@@ -24,26 +24,26 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent
-USER_AGENT = "framework-atrs-answerability-audit/0.6 (public research)"
+USER_AGENT = "framework-atrs-answerability-audit/0.7 (public research)"
 PREFIX = r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?"
 
 FIELD_PATTERNS = {
     "human_review": (
         PREFIX + r"human review$",
         PREFIX + r"human decisions and review$",
-        PREFIX + r"human decisions?$",  # 2024 family
+        PREFIX + r"human decisions?$",
     ),
     "appeals_review": (PREFIX + r"appeals? and review$",),
     "model_performance": (PREFIX + r"model performance$",),
     "risks": (
         PREFIX + r"risks?$",
         PREFIX + r"risks and mitigations$",
-        PREFIX + r"risk (?:name|description|mitigation)$",  # 2024 family
+        PREFIX + r"risk (?:name|description|mitigation)$",
     ),
     "impact_assessment": (
         PREFIX + r"impact assessment$",
         PREFIX + r"impact assessments$",
-        PREFIX + r"impact assessment (?:name|description|date|link)$",  # 2024 family
+        PREFIX + r"impact assessment (?:name|description|date|link)$",
     ),
     "maintenance": (PREFIX + r"maintenance$",),
     "senior_responsible_owner": (PREFIX + r"senior responsible owner$",),
@@ -257,10 +257,11 @@ def section_observation(section: Section) -> dict[str, Any]:
 
 def classify_matches(matches: list[Section], *, profile: str, field_name: str) -> dict[str, Any]:
     obs = [section_observation(s) for s in matches]
+    context = "field_observed" if matches else field_family_context(profile, field_name)
     return {
         "section_present": bool(matches),
         "match_count": len(matches),
-        "heading_family_context": field_family_context(profile, field_name),
+        "heading_family_context": context,
         "contains_none_or_na_phrase": any(o["contains_none_or_na_phrase"] for o in obs),
         "syntactic_contact_token_present": any(o["contact_tokens"]["syntactic_contact_token_present"] for o in obs),
         "matches": obs,
@@ -295,7 +296,7 @@ def summarise(rows: list[dict[str, Any]]) -> dict[str, Any]:
     }
     for name in FIELD_PATTERNS:
         vals = [r["fields"][name] for r in rows]
-        legacy_not_in_family = sum(v.get("heading_family_context") == "not_present_in_known_legacy_2024_family" for v in vals)
+        legacy_not_in_family = sum(str(v.get("heading_family_context", "")).startswith("not_present_in_known_legacy") for v in vals)
         summary["fields"][name] = {
             "section_present": sum(bool(v["section_present"]) for v in vals),
             "section_not_observed": sum(not bool(v["section_present"]) for v in vals),
@@ -378,7 +379,7 @@ def main() -> int:
         urls = urls[:args.limit]
     if args.html_dir:
         args.html_dir.mkdir(parents=True, exist_ok=True)
-    rows = []
+    rows: list[dict[str, Any]] = []
     for url in urls:
         fetched_at = datetime.now(timezone.utc).isoformat()
         page_bytes = request_bytes(url)
