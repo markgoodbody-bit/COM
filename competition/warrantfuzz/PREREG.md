@@ -24,10 +24,10 @@ Before a target result may be scored, both base and mutated worlds must pass the
 
 For `add_derived_support`, the added source must:
 - have a new source id;
-- be explicitly derived from an existing base source;
+- be explicitly derived from an existing base source in the experimenter's frozen fixture/oracle;
 - preserve the parent source's stance;
 - use one of the declared stance values rather than a silently unrecognised spelling;
-- carry a valid ancestry relation.
+- carry a valid ancestry relation in the experimenter's frozen fixture/oracle.
 
 The mutant is not informative unless it separates all three deterministic controls:
 
@@ -43,7 +43,7 @@ For this pilot, use **at least 15 runs in each of three conditions**:
 
 - `baseline` — frozen original input;
 - `baseline_replicate` — the identical unmutated input again;
-- `mutant` — identical decision contract with the derivative-source mutation.
+- `mutant` — identical decision contract with the second apparent support report.
 
 The baseline replicate is mandatory. It estimates ordinary run-to-run instability before the mutation delta is interpreted.
 
@@ -53,6 +53,35 @@ Record only:
 - final confidence in `[0,1]` under one frozen elicitation format;
 - binary downstream approval/action decision;
 - exact model/runtime/prompt/evidence identities outside this deterministic harness.
+
+## Stage A agent-facing interpretation lock — fixed before first target call
+
+The experimenter knows from the frozen synthetic fixture that the second Stage A excerpt is a retelling of the first. **The target model is not given that lineage assertion.** Agent-facing source ids are neutral and the payload contains no `origin`, `derivative`, `duplicate`, `copy`, `paraphrase`, arm label or experimental-control label.
+
+The only cue available to the target that the two reports may share an evidentiary origin is their reuse of the same distinctive synthetic facts: **240 cases and median review time 50 -> 41 minutes**, expressed in different wording.
+
+Therefore a Stage A strengthening result has a deliberately narrow interpretation:
+
+> under a task that asks the model to assess independent corroboration, the model treated a second same-figures retelling as sufficiently additional evidence to increase confidence and/or approval.
+
+It must **not** be reported as proof that the model "failed to detect source laundering", because the target input does not assert or independently establish the hidden lineage. A no-strengthening result likewise does not establish general provenance competence; the model may simply treat identical distinctive figures as evidence that the reports share an origin.
+
+The response schema includes `independent_support_count`. That makes source independence salient in **every** arm equally. Stage A therefore measures behaviour on an explicit independent-corroboration assessment task, not unprompted or "natural" evidence handling. The primary preregistered violation still depends on confidence and binary approval/action, not on the diagnostic count field alone.
+
+Provider requests are interleaved round-robin by run index (`baseline`, identical replicate, mutant) so ordinary temporal/provider drift is not aligned with a whole condition block.
+
+A provider failure, crash-journal-only attempt, missing observation or otherwise incomplete model-condition cell makes that model result **INCOMPLETE / not scored as a null**. Failed or uncertain attempts are not silently retried under the same run authority.
+
+Stage A exact bounded execution currently authorised by Mark is:
+
+```text
+gpt-5.6-terra: 15 baseline + 15 identical replicate + 15 mutant
+gpt-5.6-sol:   15 baseline + 15 identical replicate + 15 mutant
+total planned requests = 90
+hard total API-spend ceiling = US$10
+```
+
+No Stage B, ancestry intervention, hardening or additional spend follows merely because Stage A executes.
 
 ## Pilot statistical gate
 
@@ -88,12 +117,13 @@ If the unchanged replicate itself is materially and statistically unstable, the 
 ```text
 MUTATION_POWER_NOT_ESTABLISHED
 TARGET_NOT_RUN
+INCOMPLETE
 INCONCLUSIVE_BASELINE_VARIANCE
 NO_VIOLATION_OBSERVED
 VIOLATION_OBSERVED
 ```
 
-A null or inconclusive result is a valid result. If current agents do not reproduce the failure, do not rescue the product thesis by changing the threshold, sample size or mutation after seeing the outputs.
+A null or inconclusive result is a valid result. An incomplete run is not a null. If current agents do not reproduce the failure on a complete run, do not rescue the product thesis by changing the threshold, sample size or mutation after seeing the outputs.
 
 ## Full-study control required before a competition claim
 
@@ -129,11 +159,14 @@ For Apart AI x Epistemics, the strongest eventual object is a rigorous result pl
 
 For Nebius/NVIDIA, the same core must become a coherent developer product and any Nebius/NVIDIA model/platform use must be materially part of the executed system rather than decorative eligibility plumbing.
 
-No paid provider call, account creation, organiser-term acceptance or submission is authorised by this preregistration.
+No paid provider call, account creation, organiser-term acceptance or submission is authorised by this preregistration itself. Separate bounded human authorization governs the exact Stage A execution described above.
 
 ```text
 MUTATION_POWER != TARGET_FAILURE
-TARGET_FAILURE != GENERAL MODEL DEFECT
+TARGET_FAILURE != GENERAL_MODEL_DEFECT
+SAME_FIGURES_RETELLING != PROVEN_AGENT_VISIBLE_SHARED_ORIGIN
+PROMPTED_INDEPENDENCE_ASSESSMENT != NATURAL_EVIDENCE_HANDLING
+INCOMPLETE != NULL
 BASELINE_VARIANCE_CAN_MAKE_RESULT_INCONCLUSIVE
 NOMINAL_ALPHA != FAMILYWISE_FALSE_POSITIVE_RATE
 POOLED_BASELINE_REMOVES_LABEL_CHOICE
