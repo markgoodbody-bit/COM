@@ -11,9 +11,21 @@ if str(ROOT) not in sys.path:
 import audit_core as _core
 
 
+MISSING_MODEL_CONTEXTS = {
+    "not_present_in_known_legacy_2024_family",
+    "not_observed_on_mixed_known_family_record",
+}
+
+
 def _field_family_context(profile: str, field_name: str) -> str:
-    if profile in {"legacy_2024_family", "mixed_known_families"} and field_name == "model_performance":
-        return "not_present_in_known_legacy_or_transition_family"
+    if field_name != "model_performance":
+        return "no_template_requirement_inferred"
+    if profile == "legacy_2024_family":
+        return "not_present_in_known_legacy_2024_family"
+    if profile == "mixed_known_families":
+        # One frozen mixed-family record lacks this heading. Preserve that
+        # observation without generalising from n=1 to a transition family.
+        return "not_observed_on_mixed_known_family_record"
     return "no_template_requirement_inferred"
 
 
@@ -28,7 +40,7 @@ def _summarise(rows):
         summary["fields"][name] = {
             "section_present": sum(bool(v["section_present"]) for v in vals),
             "section_not_observed": sum(not bool(v["section_present"]) for v in vals),
-            "known_family_without_field": sum(str(v.get("heading_family_context", "")).startswith("not_present_in_known_legacy") for v in vals),
+            "known_family_without_field": sum(v.get("heading_family_context") in MISSING_MODEL_CONTEXTS for v in vals),
             "records_with_multiple_matches": sum(v["match_count"] > 1 for v in vals),
             "contains_none_or_na_phrase": sum(bool(v["contains_none_or_na_phrase"]) for v in vals),
             "syntactic_contact_token_present": sum(bool(v["syntactic_contact_token_present"]) for v in vals),
