@@ -1,178 +1,251 @@
 # ATRS Reader Lens — bounded reader-use protocol
 
-Status: **METHOD / FUTURE HUMAN TEST / NO PARTICIPANT RESULT / NO RECRUITMENT AUTHORISED**
+Status: **REPAIRED METHOD / FUTURE HUMAN TEST / NO PARTICIPANT RESULT / NO RECRUITMENT AUTHORISED**
+
+This supersedes the initial two-arm RAW/LENS draft. Codex hostile review (`#364` comment `5720518883`) correctly found that source identity alone did not create information parity, the executable order was not actually randomised, scoring rules were underspecified, and timing/exposure targets were not frozen.
 
 ## Question
 
-Does the source-preserving ATRS Reader Lens help a reader recover action-relevant facts from actual ATRS records more accurately or efficiently than the original record presentation, **without increasing unsupported inference**?
+On actual frozen ATRS records, does reorganising the **same published `Appeals and review` evidence** help a reader recover action-relevant facts more accurately or efficiently, **without increasing unsupported inference**?
 
-This is narrower than asking whether algorithm registers are generally useful, whether ATRS is compliant, or whether a disclosed route is effective.
+This is a prompted field-retrieval task. It is not a test of legal sufficiency, real-world remedy, trust, legitimacy, fairness, or spontaneous comprehension of the whole register.
 
 ## Strongest-owner boundary
 
-This study does **not** claim novelty for the premise that public algorithm information should be simple, understandable, layered, or include contact/appeal information.
+This study does **not** claim novelty for the premise that algorithmic-transparency information should be simple, understandable, layered, or include contact/appeal information.
 
-Prior owners include:
-
-- BritainThinks / CDEI public-engagement research (`Complete transparency, complete simplicity`), which found that participants wanted clear contact information and appeal-process details, preferred simple/layered presentation, and worried about jargon and cognitive strain in public-sector information;
-- Government Digital Service ATRS guidance, which explicitly aims at meaningful/intelligible transparency and recommends clear/simple language;
-- Esther Nieuwenhuizen's research on Dutch algorithm registers, which found current registers were not considered useful by societal watchdogs/oversight authorities and identified jargon/accessibility problems;
-- de Troya et al. (2026), using interviews/surveys/participatory system mapping to examine what a Dutch municipal algorithm register reveals/occludes for stakeholders;
-- Public Law Project / Tracking Automated Government, which owns much of the broader UK public-sector ADM visibility/redress/public-law problem.
-
-Residual empirical question:
+Strong owners include:
+- BritainThinks / CDEI (`Complete transparency, complete simplicity`): UK public-engagement evidence for clear/simple/layered information and contact/appeal information;
+- Government Digital Service: ATRS semantics and meaningful/intelligible-transparency intent;
+- Esther Nieuwenhuizen: empirical algorithm-register usability problems for developers/watchdogs/oversight actors;
+- de Troya et al. (2026): participatory evidence about sociotechnical context revealed/occluded by a register;
+- Public Law Project / Tracking Automated Government: broad UK public-sector ADM visibility/redress/public-law framing.
 
 ```text
 GENERAL NEED FOR USABLE TRANSPARENCY -> OWNED
 GENERAL IMPORTANCE OF CONTACT/APPEAL INFO -> OWNED
 GENERAL REGISTER-USABILITY CRITIQUE -> OWNED
-TASK-LEVEL ACTION-FACT RETRIEVAL ON CURRENT ATRS RECORDS -> UNDER TEST
+TASK-LEVEL RETRIEVAL FROM ACTUAL ATRS APPEALS FIELDS -> UNDER TEST
 ```
 
-## Surfaces
+## Information scope
 
-### A — Original ATRS record
+The scored task is explicitly limited to the published **`Appeals and review` field** for each frozen record.
 
-The participant uses the original GOV.UK ATRS record presentation for the case.
+Participant instruction:
 
-For a frozen September pilot, use the exact preserved source page from run `35257984573`; for any November sprint study, freeze a fresh source snapshot first.
+> Answer only from the published `Appeals and review` field shown or contained in this frozen record. Do not use other sections to fill a gap. `NOT STATED` and `UNCLEAR` are valid answers.
 
-### B — Reader Lens
+This removes the initial defect where a RAW participant could legitimately find relevant material elsewhere in the full record but be scored against an Appeals-only key.
 
-The participant uses a source-only Reader Lens card generated from the same frozen evidence.
+For the one frozen case where no parser-recognised `Appeals and review` field exists, the task is to determine that the field is not present in the frozen source. This does **not** mean no review route or practice exists elsewhere.
 
-For the study condition:
-- exploratory semantic annotations are OFF / absent;
-- exact source text remains visible;
-- original GOV.UK source is linked;
-- no generated statement of legal rights or route effectiveness is shown.
+## Three frozen conditions
 
-`SOURCE DIFFERENCE` must be zero: the two surfaces must derive from the same record version.
+All conditions derive from the same source bytes and are rendered locally with no external network dependency during the timed task.
+
+### FULL — full published-record text
+
+A local, plain evidence rendering of the frozen record's `<main>` heading/text content.
+
+Purpose: measures the cost of locating the `Appeals and review` field within the broader published record plus interpreting it.
+
+It is **not** represented as a pixel-identical clone of live GOV.UK.
+
+### EXCERPT — simple field extraction
+
+The exact published `Appeals and review` heading/text only, in a plain minimal layout.
+
+Purpose: strongest simple control. This approximates the value of a direct section jump / extraction without a bespoke Lens.
+
+### LENS — structured field view
+
+The **same exact `Appeals and review` text** as EXCERPT, plus deterministic presentation of links/email/phone-like text already contained in that field. It adds no semantic classification and no generated statement of rights/effectiveness.
+
+Purpose: tests whether evidence organisation/structure adds value beyond simple scoping.
+
+## Primary contrasts
+
+The three conditions answer different questions:
+
+```text
+FULL -> EXCERPT = field-location / scoping cost
+EXCERPT -> LENS = added value of structured evidence presentation
+FULL -> LENS = total combined effect, descriptive only
+```
+
+The bespoke Reader Lens earns a product claim only from the **EXCERPT -> LENS** contrast. If EXCERPT performs as well as LENS, route the benefit toward the simpler owner-controlled change.
 
 ## Reader task
 
-For each assigned record, answer **from the presented record only**:
+For each assigned case, answer from the `Appeals and review` field only:
 
-1. **Next step:** If someone affected by or concerned about this tool wants review, challenge, correction, complaint, clarification, or help, what does the record say they can do next?
-2. **Actor:** Who does the record say can take that step? Preserve role/scope where stated (for example customer, patient, professional intermediary, internal user).
-3. **Channel / initiation:** How can the step be initiated or reached? Record an exact channel or action where published. If only a process is referenced, say so rather than inventing a route.
-4. **Object / layer:** What appears to be acted on — tool output, broader operational decision/process, data use, general service/help, explanation/justification, or something else?
-5. **Status:** Does the record describe the route/process as operating now, unavailable/no separate process, planned/not operating, or unclear?
-6. **Evidence:** Copy or identify the sentence(s) that support the answer.
+1. **Next step:** What action, if any, does this field say someone can take next for review, challenge, correction, complaint, clarification, or help?
+2. **Actor:** Who does the field say can take that step? Preserve role/scope where stated.
+3. **Initiation / channel:** How can the step be initiated or reached? If only a process is referenced and no initiation route is given, say `NOT STATED`.
+4. **Object / layer:** What is the action about — tool output, broader process/decision, data use, general service/help, explanation/justification, or something else?
+5. **Status:** Is the process/action described as operating now, unavailable/no separate process, planned/not operating, or unclear?
+6. **Evidence:** Identify the exact field sentence(s) supporting the answer. For a missing field, identify the frozen-page absence marker supplied by the study surface.
 
-Participants may answer `NOT STATED` or `UNCLEAR`. Those are valid answers where the source does not support a stronger claim.
+`NOT STATED` and `UNCLEAR` are first-class answers. Unsupported certainty is not rewarded.
 
-## Primary outcome
+## Scoring — frozen before first participant
 
-**Evidence-grounded action retrieval score**, 0–6 per record:
+Score each component independently, blind to condition where practical.
 
-- next step/action correctly represented: 1;
-- actor scope correctly represented: 1;
-- initiation/channel correctly represented or correctly marked unstated: 1;
-- challenge object/layer correctly represented: 1;
-- operating/planned/unavailable/unclear status correctly represented: 1;
-- supporting source evidence correctly located: 1.
+### 1. Next step — 0/1
 
-No point requires the participant to use Framework/TRACE/ME terminology.
+Award 1 when the response gives at least one materially correct source-supported action from the field and does not contradict the field.
 
-## Safety / honesty penalty
+Where the field describes several distinct routes, omission of additional routes does not remove the point unless the case key explicitly marks them as **jointly required** for a faithful answer.
 
-Count **unsupported inference errors** separately. Examples:
+A correct `NOT STATED` earns 1 when the field provides no source-supported next step.
 
-- calling general feedback a formal appeal when the record does not;
+### 2. Actor — 0/1
+
+Award 1 for the source-stated actor/role or a non-misleading faithful paraphrase. If the field does not identify an actor, `NOT STATED` earns 1.
+
+Do not infer that a route open to an organisation/professional is open to every member of the public.
+
+### 3. Initiation / channel — 0/1
+
+Award 1 for at least one correct initiation method/channel corresponding to the stated next step.
+
+If the field references a process/right but gives no way to initiate/reach it, `NOT STATED` earns 1. Do not award a point for inventing a channel from another section.
+
+### 4. Object / layer — 0/1
+
+Award 1 for a materially correct layer. Multiple layers may be accepted when the field genuinely spans them. A narrower correct layer is acceptable unless it changes the nature of the action.
+
+### 5. Status — 0/1
+
+Award 1 for correctly representing the field as current/operating, unavailable/no separate process, planned/not operating, or unclear.
+
+If the wording is genuinely ambiguous, `UNCLEAR` is the keyed answer. Do not force certainty to earn the point.
+
+### 6. Evidence — 0/1
+
+Award 1 when quoted/identified field wording actually supports the participant's substantive answer.
+
+For the missing-field case, no sentence can prove absence. The study surface provides a frozen **field-not-observed marker** generated from the heading inventory; correctly identifying that marker earns the evidence point.
+
+## Multiple-route and ambiguity rule
+
+The answer key must distinguish:
+- `accepted_alternatives`: one faithful item is sufficient for the component;
+- `jointly_required`: all listed facts are needed to avoid material distortion;
+- `accepted_not_stated`: absence is an acceptable keyed result;
+- `accepted_unclear`: ambiguity is an acceptable keyed result.
+
+Omitted optional routes are not silently converted into errors.
+
+## Unsupported-inference errors
+
+Count separately; do not net against the 0–6 retrieval score.
+
+Examples:
+- calling general feedback a formal appeal when the field does not;
 - claiming a legal right from a contact link alone;
-- claiming a route does not exist because no locator appears in the field;
+- claiming no route exists because no locator appears;
 - treating a planned process as operating;
-- treating explanation/justification as reversal/recovery;
-- generalising a data-removal right into a right to reverse the tool's output.
+- treating explanation/justification as recovery/reversal;
+- generalising a data-removal route into output reconsideration;
+- importing a route from another record section despite the field-only instruction.
 
-Primary analysis reports retrieval score and unsupported-inference count separately. Do **not** cancel one with the other in a composite scalar.
+## Conditions must be content-addressed
 
-## Secondary outcomes
+Before the first participant:
+- freeze source bytes;
+- generate all three local targets from those exact bytes;
+- record each target's SHA-256;
+- record exactly which source sections/text each target contains;
+- keep the answer key separate from participant materials;
+- do not allow facilitator choice of which page/section to show.
 
-- completion time per record;
-- participant confidence (0–100);
-- `NOT STATED` / `UNCLEAR` use;
-- source-evidence accuracy;
-- qualitative comment: what was hardest to find?
+`SOURCE_IDENTITY != RENDERED_CONDITION_IDENTITY`.
 
-No trust, legitimacy, satisfaction or policy-preference outcome is inferred from speed/accuracy alone.
+Both must be preserved.
 
-## Design
+## Timing / exposure convention
 
-Preferred design: within-participant crossover with record-level counterbalancing.
+For the timed task:
+- use the same browser/device class and viewport policy across conditions;
+- local files only; no network loading during the timed exposure;
+- all targets begin at scroll position 0;
+- outbound navigation is disabled during timing;
+- timer starts when the condition target is rendered and the participant starts the case;
+- timer stops on response submission;
+- record condition, sequence, case, exposure position, completion/abandonment and elapsed time;
+- record dropout without silently replacing the participant.
 
-- each participant sees each selected record **once**;
-- half of records appear in original-record condition and half in Reader-Lens condition;
-- assignment is counterbalanced so every record appears in both conditions across participants;
-- record order is randomised within participant;
-- do not show exploratory semantic labels;
-- do not tell participants which condition is expected to perform better;
-- score responses blind to condition where practical.
+Timing measures task completion under these frozen conditions, not live-site network performance.
 
-A simple two-sequence design is acceptable for the pilot:
+## Counterbalancing / order
 
-```text
-Sequence A: records 1–5 RAW, 6–10 LENS
-Sequence B: records 1–5 LENS, 6–10 RAW
-```
+The initial fixed `1..10` two-sequence order is withdrawn.
 
-A later study may use a Latin-square/randomised assignment generated before the first response.
+Use six pre-generated schedules. Across the six schedules:
+- every case appears in FULL, EXCERPT and LENS exactly twice;
+- each participant sees each case once;
+- case order is deterministically shuffled and frozen before the first response;
+- sequence allocation is balanced in blocks where feasible;
+- the randomisation seed and generated schedules are preserved.
 
-## Ten frozen cases
+Within-participant learning/carry-over may still occur. It is an explicit limitation, not something condition inversion eliminates.
 
-Selected to span materially different public-action structures rather than to estimate prevalence:
+## Case set
 
-1. Health Research Authority: Proportionate Review Toolkit — direct query/review channel;
-2. NHS BSA: Residency Checker — complaints process and policy link;
-3. UKHO: Tidal Harmonic Analysis and Prediction — no formal appeal; customer-service feedback;
-4. NS&I: PolyAI — no formal appeal; human handoff + broader complaints/escalation, no locator in field;
-5. DHSC/NHS Digital: QCovid algorithm — clinician-mediated review/clarification;
-6. Wilton Park: Data Cleaning Tool — data-rights/removal route whose relevance to output reconsideration is not established;
-7. Cabinet Office: Automated Digital Document Review — no recovery after deletion; explanation/justification remains available;
-8. Hampshire and Thames Valley Police: DARAT — process not currently designed / planned via ethical review;
-9. DBT: Find Exporters — no parser-observed `Appeals and review` field in the frozen record;
-10. National Highways: Highways Webchat — incorrect-answer/concern contact route.
+Ten purposive stress cases remain useful for method falsification:
+1. HRA Proportionate Review Toolkit;
+2. NHS BSA Residency Checker;
+3. UKHO Tidal Harmonic Analysis and Prediction;
+4. NS&I PolyAI;
+5. QCovid;
+6. Wilton Park Data Cleaning Tool;
+7. Cabinet Office Automated Digital Document Review;
+8. Hampshire/TVP DARAT;
+9. DBT Find Exporters;
+10. National Highways Highways Webchat.
 
-These cases are purposive stress cases, **not a representative sample of ATRS records**.
+These cases are purposive stress cases, **not a representative ATRS sample**.
 
 ## Answer-key governance
 
-Before the first human response:
+Before any human run:
+1. bind each case to source SHA, field-text SHA and condition-target SHA;
+2. independently adjudicate the field-only key;
+3. preserve disagreements and multiple acceptable answers;
+4. freeze component acceptance rules;
+5. keep keys inaccessible from participant surfaces;
+6. score blind to condition where practical.
 
-1. freeze the exact source bytes for every case;
-2. generate the source-only Reader Lens from those same bytes;
-3. freeze a case manifest with source SHA-256;
-4. independently adjudicate the answer key against the source wording;
-5. preserve disagreements and allow multiple acceptable answers when the source is genuinely ambiguous;
-6. score source fidelity, not agreement with a preferred narrative.
-
-`ANSWER_KEY != OFFICIAL INTERPRETATION`.
+`ANSWER_KEY != OFFICIAL_INTERPRETATION`.
 
 ## Participants / recruitment
 
-No recruitment is authorised by this file.
+**No recruitment is authorised by this protocol.**
 
-If a human pilot is later approved:
-- preregister target population and sample size before first response;
-- avoid presenting the task as legal advice or a test of the participant's intelligence;
-- collect only the minimum data needed;
-- do not collect sensitive personal experiences unless separately justified/approved;
-- participation must be voluntary;
-- keep participant data separate from the public ATRS evidence bundle.
+A future human pilot is a separate consequential gate. Before first response, freeze:
+- target population;
+- recruitment route;
+- sample-size rationale;
+- consent/data-minimisation handling;
+- allocation plan;
+- analysis plan.
 
-The September build does not establish a sample size. A November sprint study should choose and freeze N based on the available legitimate recruitment route and the intended claim (pilot estimation vs inferential test) before data collection.
+Do not collect sensitive personal experiences as part of this retrieval task.
 
 ## Analysis ceiling
 
-A useful pilot result would be something like:
+A positive pilot could support only a statement such as:
 
-> On this purposive case set, readers using the lens recovered more source-supported action facts / took less time / made fewer unsupported inferences than readers using the original presentation.
+> On this purposive field-retrieval task, this participant sample recovered more source-supported action facts / took less time / made fewer unsupported inferences under condition X than condition Y.
 
-It would **not** establish:
+It would not establish:
 
 ```text
-READER_LENS_IMPROVES_PILOT_TASK != READER_LENS_IMPROVES_REAL_WORLD_REMEDY
+PROMPTED_FIELD_RETRIEVAL != UNSOLICITED_COMPREHENSION
+READER_LENS_IMPROVES_TASK != READER_LENS_IMPROVES_REAL_WORLD_REMEDY
 TEN_PURPOSIVE_CASES != WHOLE_ATRS_REGISTER
 ONE_RECRUITED_SAMPLE != UK_PUBLIC
 COMPREHENSION != TRUST
@@ -180,20 +253,17 @@ COMPREHENSION != FAIRNESS
 COMPREHENSION != LEGAL_SUFFICIENCY
 ```
 
-A null or negative result is valid and should shrink/kill the Reader Lens product claim.
+## Stop / routing rules
 
-## Stop rules
-
-Stop/shrink if:
-- source-preserving Reader Lens does not improve retrieval/time/inference behaviour on the task;
-- any apparent improvement comes from added interpretation rather than improved evidence organisation;
-- the task can be solved equally well by a simpler owner-controlled change (for example direct GOV.UK headings/link placement);
-- participant confusion is caused by the Lens itself;
-- the study only demonstrates that shorter text is faster to read;
-- a strongest owner already supplies equivalent current ATRS task-level evidence.
+- If EXCERPT ~= LENS, the bespoke Lens does not earn an added-value claim; route toward the simpler section-jump/excerpt owner.
+- If FULL < EXCERPT but EXCERPT ~= LENS, the main problem is field location/scoping, not Lens structure.
+- If LENS increases unsupported inference, shrink/kill the product claim even if it is faster.
+- If no condition materially helps, preserve the null and stop.
+- If a strongest owner already supplies equivalent ATRS task-level evidence, route to that owner.
 
 ```text
 NULL_RESULT = VALID
 OWNER_FOUND = VALID
+METHOD_PACK != HUMAN_RESULT
 READER_BENEFIT_UNESTABLISHED UNTIL REAL PARTICIPANT DATA
 ```
