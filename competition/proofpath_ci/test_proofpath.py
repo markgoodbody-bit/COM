@@ -1,12 +1,14 @@
 import importlib.util
 import json
 from pathlib import Path
+import sys
 import unittest
 
 HERE = Path(__file__).resolve().parent
 SPEC = importlib.util.spec_from_file_location("proofpath", HERE / "proofpath.py")
 proofpath = importlib.util.module_from_spec(SPEC)
 assert SPEC and SPEC.loader
+sys.modules[SPEC.name] = proofpath
 SPEC.loader.exec_module(proofpath)
 
 
