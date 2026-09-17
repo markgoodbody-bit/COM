@@ -94,12 +94,12 @@ class HeadingFamilyTests(unittest.TestCase):
     def test_model_performance_absence_is_contextualised_for_legacy_family(self):
         field = audit(LEGACY)["fields"]["model_performance"]
         self.assertFalse(field["section_present"])
-        self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_or_transition_family")
+        self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_2024_family")
 
-    def test_model_performance_absence_is_contextualised_for_transition_family(self):
+    def test_model_performance_absence_on_mixed_record_is_record_scoped(self):
         field = audit(MIXED)["fields"]["model_performance"]
         self.assertFalse(field["section_present"])
-        self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_or_transition_family")
+        self.assertEqual(field["heading_family_context"], "not_observed_on_mixed_known_family_record")
 
     def test_observed_model_field_wins_over_mixed_family_context(self):
         row = audit(MIXED_WITH_MODEL)
@@ -113,7 +113,7 @@ class HeadingFamilyTests(unittest.TestCase):
         self.assertEqual(row["heading_profile"], "current_named_family")
         self.assertEqual(row["fields"]["model_performance"]["heading_family_context"], "field_observed")
 
-    def test_summary_separates_observed_absence_from_known_family_context(self):
+    def test_summary_separates_observed_absence_from_known_context(self):
         legacy = audit(LEGACY)
         mixed = audit(MIXED)
         mixed_with_model = audit(MIXED_WITH_MODEL)
