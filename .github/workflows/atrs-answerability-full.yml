@@ -1,0 +1,44 @@
+name: ATRS Answerability Full Corpus
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - '.github/workflows/atrs-answerability-full.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-current-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Re-run deterministic parser tests
+        run: python -m unittest competition/atrs_answerability/test_audit.py -v
+      - name: Fetch and audit current GOV.UK ATRS corpus
+        run: |
+          python competition/atrs_answerability/audit.py \
+            --delay 0.05 \
+            --json-out /tmp/atrs_full.json \
+            --csv-out /tmp/atrs_full.csv
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/atrs_full.json'))
+          assert r['summary']['records'] >= 100, r['summary']['records']
+          print(json.dumps(r['summary'], indent=2))
+          PY
+      - name: Preserve raw current-corpus audit for hostile review
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-full-corpus-${{ github.run_id }}
+          path: |
+            /tmp/atrs_full.json
+            /tmp/atrs_full.csv
+          retention-days: 30
