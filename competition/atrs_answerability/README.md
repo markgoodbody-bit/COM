@@ -71,7 +71,7 @@ Current section families:
 
 No scalar score is produced.
 
-A syntactic contact token is **not** called a review route by the automated layer. Semantic relevance requires readback.
+A syntactic contact token is not called a review route by the automated layer. Semantic relevance requires readback.
 
 ## Frozen structural observations
 
@@ -132,6 +132,8 @@ Candidate field-level finding:
 > `Appeals and review` field presence can be high while the reader-visible public challenge/review object remains heterogeneous. Measuring field completion alone therefore loses distinctions about **what can be challenged, by whom, through what route, and at which layer of the decision process**.
 
 Only retain that finding at the strength earned by a fresh/full semantic census.
+
+The post-pilot exploratory 151-record semantic coding is not validated ground truth. Hostile review showed that its codebook needed proposition-level scope, explicit actor scope, a planned/not-operating state, and content-bound evidence identity. Those repairs are falsifiers for the exploratory object; they do not upgrade it into a primary result.
 
 ## November core-work posture
 
