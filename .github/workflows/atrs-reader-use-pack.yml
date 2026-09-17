@@ -33,49 +33,80 @@ jobs:
           spec=importlib.util.spec_from_file_location('pack',p)
           m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
           assert len(m.CASES) == 10
+          assert sum(c['primary_scored'] for c in m.CASES) == 9
           assert len({c['case_id'] for c in m.CASES}) == 10
           assert len({c['title'] for c in m.CASES}) == 10
           assert len(m.TASKS) == 6
+          assert m.CONDITIONS == ('FULL','EXCERPT','LENS')
           assert all(len(c['source_sha256']) == 64 for c in m.CASES)
           assert all(len(c['appeals_text_sha256']) == 64 for c in m.CASES)
           print('structural locks PASS')
           PY
-      - name: Download corrected frozen derived report
+      - name: Download latest corrected derived report
         uses: actions/download-artifact@v4
         with:
-          name: atrs-version-aware-derived-35266542167
+          name: atrs-version-aware-derived-35268849195
           path: /tmp/derived
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: markgoodbody-bit/COM
-          run-id: 35266542167
-      - name: Build evidence-bound study pack
+          run-id: 35268849195
+      - name: Download exact frozen source HTML
+        uses: actions/download-artifact@v4
+        with:
+          name: atrs-reproducible-corpus-35257984573
+          path: /tmp/source
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: markgoodbody-bit/COM
+          run-id: 35257984573
+      - name: Build evidence-bound three-condition pack
         run: |
           python competition/atrs_answerability/reader_use_pack.py \
             /tmp/derived/atrs_full_version_aware.json \
+            /tmp/source/atrs_html \
             --out-dir /tmp/reader-use-pack
-      - name: Assert balanced two-sequence design
+      - name: Assert schedules, condition targets and key separation
         run: |
           python - <<'PY'
-          import csv, json
+          import csv, hashlib, json
+          from collections import Counter, defaultdict
           from pathlib import Path
           p=Path('/tmp/reader-use-pack')
-          m=json.load(open(p/'manifest.json'))
-          k=json.load(open(p/'answer_key.json'))
-          assert m['status'] == 'METHOD_PACK_NO_PARTICIPANT_RESULT'
-          assert k['status'].startswith('BOUNDED_STUDY_ADJUDICATION_')
-          assert len(m['cases']) == 10 == len(k['cases'])
-          for seq in ('A','B'):
-              rows=list(csv.DictReader(open(p/f'sequence_{seq}.csv')))
-              assert len(rows) == 10
-              counts={x:sum(r['condition']==x for r in rows) for x in ('RAW','LENS')}
-              assert counts == {'RAW':5,'LENS':5}, (seq, counts)
-          for c in m['cases']:
-              assert c['sequence_A_condition'] != c['sequence_B_condition']
-          print('balanced sequence gate PASS')
+          participant=p/'participant_pack'
+          private=p/'private_key'
+          m=json.load(open(participant/'manifest.json'))
+          k=json.load(open(private/'answer_key.json'))
+          assert m['status'] == 'REPAIRED_METHOD_PACK_NO_PARTICIPANT_RESULT'
+          assert k['status'].startswith('PRIVATE_PROVISIONAL_KEY_')
+          assert k['scored_cases'] == 9
+          assert len(m['schedules']) == 6
+          assert not (participant/'answer_key.json').exists()
+          assert not (private/'manifest.json').exists()
+          exposure=defaultdict(Counter)
+          for schedule in m['schedules']:
+              rows=list(csv.DictReader(open(participant/f"schedule_{schedule['sequence_id']}.csv")))
+              assert len(rows) == 9
+              counts=Counter(r['condition'] for r in rows)
+              assert counts == Counter({'FULL':3,'EXCERPT':3,'LENS':3}), (schedule['sequence_id'],counts)
+              assert [int(r['position']) for r in rows] == list(range(1,10))
+              for r in rows:
+                  exposure[r['case_id']][r['condition']] += 1
+                  target=participant/r['target_path']
+                  assert target.exists()
+                  digest=hashlib.sha256(target.read_bytes()).hexdigest()
+                  assert digest == r['target_sha256']
+          assert all(exposure[c][cond] == 2 for c in exposure for cond in ('FULL','EXCERPT','LENS')), exposure
+          # All ten cases have three frozen targets; one case is a non-scored sentinel.
+          assert len(m['surface_manifest']) == 10
+          assert m['non_scored_sentinel']['case_id'] == 'dbt-find-exporters'
+          for case_id, item in m['surface_manifest'].items():
+              assert set(item['targets']) == {'FULL','EXCERPT','LENS'}
+              for target in item['targets'].values():
+                  assert len(target['sha256']) == 64
+          print('three-condition method gate PASS')
           PY
-      - name: Preserve method pack
+      - name: Preserve repaired method pack
         uses: actions/upload-artifact@v4
         with:
-          name: atrs-reader-use-pack-${{ github.run_id }}
+          name: atrs-reader-use-pack-v2-${{ github.run_id }}
           path: /tmp/reader-use-pack
           retention-days: 30
