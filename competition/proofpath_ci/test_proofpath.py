@@ -75,16 +75,24 @@ class ProofPathTests(unittest.TestCase):
         self.assertLess(good["delta"], 0)
         self.assertEqual(good["mutant_root_count"], 0)
 
-    def test_independent_contradiction_is_guard_not_false_pass(self):
-        report = proofpath.evaluate(self.case, "lineage_aware")
-        row = self.result_by_id(report, "M3_independent_contradiction")
-        self.assertFalse(row["powered"])
-        self.assertEqual(row["status"], "UNPOWERED")
-        self.assertFalse(row["violated"])
-        self.assertLess(row["delta"], 0)
+    def test_independent_contradiction_guard_uses_blind_reference_pair(self):
+        reference = proofpath.evaluate(self.case, "lineage_aware")
+        blind = proofpath.evaluate(self.case, "evidence_blind")
+        good = self.result_by_id(reference, "M3_independent_contradiction")
+        bad = self.result_by_id(blind, "M3_independent_contradiction")
+        self.assertTrue(good["powered"])
+        self.assertTrue(good["vulnerable_control_violated"])
+        self.assertFalse(good["reference_control_violated"])
+        self.assertEqual(good["status"], "PASS")
+        self.assertFalse(good["violated"])
+        self.assertLess(good["delta"], 0)
         self.assertEqual(
-            row["mutant_root_count"], row["baseline_root_count"] + 1
+            good["mutant_root_count"], good["baseline_root_count"] + 1
         )
+        self.assertTrue(bad["powered"])
+        self.assertEqual(bad["status"], "FAIL")
+        self.assertTrue(bad["violated"])
+        self.assertEqual(bad["delta"], 0)
 
     def test_wrong_lineage_is_sensitivity_not_correctness(self):
         report = proofpath.evaluate(self.case, "lineage_aware")
@@ -102,16 +110,21 @@ class ProofPathTests(unittest.TestCase):
         self.assertIn("vulnerable_control", structure)
         self.assertIn("reference_control", structure)
 
-    def test_evidence_blind_fails_a_powered_responsiveness_test(self):
+    def test_evidence_blind_fails_powered_test_and_guard(self):
         report = proofpath.evaluate(self.case, "evidence_blind")
-        row = self.result_by_id(report, "M2_retract_origin_restate")
-        self.assertTrue(row["powered"])
-        self.assertEqual(row["status"], "FAIL")
+        retraction = self.result_by_id(report, "M2_retract_origin_restate")
+        contradiction = self.result_by_id(report, "M3_independent_contradiction")
+        self.assertTrue(retraction["powered"])
+        self.assertEqual(retraction["status"], "FAIL")
+        self.assertTrue(contradiction["powered"])
+        self.assertEqual(contradiction["status"], "FAIL")
 
     def test_report_and_ci_gate_are_separate(self):
         bad = proofpath.evaluate(self.case, "repetition_counter")
+        blind = proofpath.evaluate(self.case, "evidence_blind")
         good = proofpath.evaluate(self.case, "lineage_aware")
         self.assertFalse(bad["summary"]["ci_gate_pass"])
+        self.assertFalse(blind["summary"]["ci_gate_pass"])
         self.assertTrue(good["summary"]["ci_gate_pass"])
 
     def test_cycle_fails_closed(self):
