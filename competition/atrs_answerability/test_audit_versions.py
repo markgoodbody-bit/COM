@@ -35,6 +35,15 @@ LEGACY = """
 </main></body></html>
 """
 
+MIXED = """
+<html><body><main><h1>Transition Tool</h1>
+<h3>3.3 - Human decisions and review</h3><p>Officer review.</p>
+<h3>3.5 - Appeals and review</h3><p>Existing process.</p>
+<h3>5.1 - Impact assessment name</h3><p>DPIA</p>
+<h3>5.5 - Risk name</h3><p>Risk</p>
+</main></body></html>
+"""
+
 CURRENT = """
 <html><body><main><h1>Current Tool</h1>
 <h3>3.4 - Human decisions and review</h3><p>Officer review.</p>
@@ -50,18 +59,18 @@ CURRENT = """
 
 class HeadingFamilyTests(unittest.TestCase):
     def test_legacy_2024_family_is_detected(self):
-        row = audit(LEGACY)
-        self.assertEqual(row["heading_profile"], "legacy_2024_family")
+        self.assertEqual(audit(LEGACY)["heading_profile"], "legacy_2024_family")
+
+    def test_mixed_transition_family_is_detected(self):
+        self.assertEqual(audit(MIXED)["heading_profile"], "mixed_known_families")
 
     def test_legacy_human_decisions_is_human_review_disclosure(self):
-        row = audit(LEGACY)
-        field = row["fields"]["human_review"]
+        field = audit(LEGACY)["fields"]["human_review"]
         self.assertTrue(field["section_present"])
         self.assertEqual(field["matches"][0]["heading"], "3.3 Human decisions")
 
     def test_legacy_impact_subfields_are_preserved(self):
-        row = audit(LEGACY)
-        field = row["fields"]["impact_assessment"]
+        field = audit(LEGACY)["fields"]["impact_assessment"]
         self.assertEqual(field["match_count"], 4)
         self.assertEqual([x["heading"] for x in field["matches"]], [
             "5.1 Impact assessment name",
@@ -71,15 +80,17 @@ class HeadingFamilyTests(unittest.TestCase):
         ])
 
     def test_legacy_risk_subfields_are_preserved(self):
-        row = audit(LEGACY)
-        field = row["fields"]["risks"]
-        self.assertEqual(field["match_count"], 3)
+        self.assertEqual(audit(LEGACY)["fields"]["risks"]["match_count"], 3)
 
     def test_model_performance_absence_is_contextualised_for_legacy_family(self):
-        row = audit(LEGACY)
-        field = row["fields"]["model_performance"]
+        field = audit(LEGACY)["fields"]["model_performance"]
         self.assertFalse(field["section_present"])
-        self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_2024_family")
+        self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_or_transition_family")
+
+    def test_model_performance_absence_is_contextualised_for_transition_family(self):
+        field = audit(MIXED)["fields"]["model_performance"]
+        self.assertFalse(field["section_present"])
+        self.assertEqual(field["heading_family_context"], "not_present_in_known_legacy_or_transition_family")
 
     def test_current_family_does_not_infer_requirement(self):
         row = audit(CURRENT)
@@ -88,13 +99,14 @@ class HeadingFamilyTests(unittest.TestCase):
 
     def test_summary_separates_observed_absence_from_known_family_context(self):
         legacy = audit(LEGACY)
+        mixed = audit(MIXED)
         current = audit(CURRENT)
-        summary = mod.summarise([legacy, current])
-        self.assertEqual(summary["fields"]["human_review"]["section_present"], 2)
-        self.assertEqual(summary["fields"]["risks"]["section_present"], 2)
-        self.assertEqual(summary["fields"]["impact_assessment"]["section_present"], 2)
-        self.assertEqual(summary["fields"]["model_performance"]["section_not_observed"], 1)
-        self.assertEqual(summary["fields"]["model_performance"]["known_family_without_field"], 1)
+        summary = mod.summarise([legacy, mixed, current])
+        self.assertEqual(summary["fields"]["human_review"]["section_present"], 3)
+        self.assertEqual(summary["fields"]["risks"]["section_present"], 3)
+        self.assertEqual(summary["fields"]["impact_assessment"]["section_present"], 3)
+        self.assertEqual(summary["fields"]["model_performance"]["section_not_observed"], 2)
+        self.assertEqual(summary["fields"]["model_performance"]["known_family_without_field"], 2)
 
 
 if __name__ == "__main__":
