@@ -4,7 +4,7 @@ Status: **CURRENT COMPETITION LEAD / EMPIRICAL OPEN-TRACK CANDIDATE / NOT SELECT
 
 Question:
 
-> Across the current UK Algorithmic Transparency Recording Standard (ATRS) public finder, what can a reader actually observe in published records about human review, appeals/review, model performance, risks, impact assessment, maintenance and accountable ownership?
+> Across the UK Algorithmic Transparency Recording Standard (ATRS) public finder, what can a reader actually observe in published records about human review, appeals/review, model performance, risks, impact assessment, maintenance and accountable ownership?
 
 This audits the **published record**, not hidden/internal system reality.
 
@@ -12,27 +12,27 @@ This audits the **published record**, not hidden/internal system reality.
 
 The audit's central field is not an invented project concept.
 
-The ATRS standard defines `appeals_and_review` as the mechanisms in place for review or appeal of the decision available to the general public. Current GDS guidance says publishers should consider both:
-- outputs of the algorithmic tool itself and whether they can be challenged/appealed; and
-- outputs of the broader operational process and whether they can be challenged/appealed.
+The ATRS standard defines `appeals_and_review` as mechanisms for review or appeal of the decision available to the general public. Current GDS guidance asks publishers to consider both challenge to the algorithmic-tool output and challenge to the broader operational-process output. A public appeal/contact link is an example, not the only valid representation; where no process is relevant the guidance asks for an explanation.
 
-The guidance says this may involve a link to a public appeal or contact form and asks for an explanation where no appeals/review process is necessary or relevant.
-
-That makes the public disclosure itself a concrete empirical object.
+```text
+FREE-TEXT VARIATION != DISCOVERED DEFECT
+LINK ABSENCE != FAILURE TO COMPLETE GUIDANCE
+BROADER PROCESS APPEAL != TOOL-OUTPUT APPEAL
+NO SEPARATE PROCESS CAN BE A VALID DISCLOSURE
+```
 
 ## Strong-owner boundary
 
 - GOV.UK / Government Digital Service owns the ATRS standard, template, guidance and repository.
-- Fabio Rovai / Tesseract Academy already provides an independent ATRS **metadata** corpus (publishing body, tool, description, date). This project does not copy that code.
-- existing research includes qualitative work on ATRS/practitioner perspectives.
+- Fabio Rovai / Tesseract Academy owns an independent ATRS metadata corpus/harvester.
+- Public Law Project's Tracking Automated Government register independently catalogues public-sector automated decision tools and owns much of the broader transparency/redress/public-law framing.
+- existing qualitative/governance research already studies ATRS and public-sector algorithmic transparency.
 
-Residual question under test:
-
-> What do the **full published fields** actually make legible about public challenge/review relationships, beyond register/index metadata and beyond field-completion counts?
+See `OWNER_MAP.md`.
 
 `NOT_FOUND_IN_BOUNDED_SEARCH != NOVEL`.
 
-## Reproducible September witness
+## Frozen September source witness
 
 Pinned evidence bundle:
 
@@ -47,46 +47,63 @@ membership differences = 0
 content-addressed source HTML pages = 152
 ```
 
-Codex independently downloaded the evidence bundle, verified its digest and all 152 stored source hashes, confirmed finder URL set == audit URL set, and re-executed the exact parser on all preserved source pages with **zero extracted-field differences**.
+The exact source bytes remain the historical witness. They were not replaced during later parser repairs.
 
-This establishes bounded extraction reproducibility inside the evidence bundle. It does not establish classification validity, remedy quality or internal practice.
+Codex independently verified the original bundle digest, all 152 source hashes, membership identity and deterministic reproduction of the original extraction. That reproduction established repeatability, **not correctness of every field-name mapping**.
 
-## Automated layer
+```text
+REPRODUCED != CORRECT
+SAME_REGEX + SAME_BYTES -> SAME_MISS
+```
 
-The parser preserves deterministic public-record observables:
-- every matching section rather than first match only;
-- exact heading and section text;
-- hrefs, plain-text URLs, emails and phone-like tokens;
-- source SHA-256 and fetch time;
-- optionally the exact source HTML bytes by content hash.
+## Version-aware correction over the same source bytes
 
-Current section families:
-- human review;
-- appeals and review;
-- model performance;
-- risks;
-- impact assessment;
-- maintenance;
-- senior responsible owner.
+Codex found seven records using an older/transition ATRS heading family that the original parser did not fully recognise. The affected headings included:
+- `Human decision` / `Human decisions`;
+- `Impact assessment name / description / date / link`;
+- `Risk name / description / mitigation`;
+- an older/transition family without a `Model performance` field.
 
-No scalar score is produced.
+The repair added version-aware heading patterns and heading-family context, then reparsed the **same 152 frozen HTML files with no GOV.UK refetch**.
 
-A syntactic contact token is not called a review route by the automated layer. Semantic relevance requires readback.
+Corrected derived run:
 
-## Frozen structural observations
+```text
+workflow = 35266542167 SUCCESS
+parser branch head = 363ba74d7f38aacd87d4fd7fd08d26c13ef9f8fa
+source refetch = FALSE
+heading profiles:
+  current_named_family = 145
+  legacy_2024_family = 6
+  mixed_known_families = 1
+```
 
-From the September 152-record witness:
-- human-review field observed `146/152`;
-- appeals/review `151/152`;
-- model performance `139/152` (12 records have repeated matching model-performance sections);
-- risks `145/152`;
-- impact assessment `138/152`;
-- maintenance `152/152`;
-- senior responsible owner `152/152`.
+Corrected source-level observations:
 
-Auxiliary `none/N/A-like phrase` totals from the frozen witness are not treated as primary findings. Two live false negatives were later found; the detector was repaired offline and regression-tested without refetching/replacing the historical corpus witness.
+```text
+human_review = 152/152 observed
+appeals_review = 151/152 observed
+model_performance = 139/152 observed
+  - 13 not observed on page
+  - 7 of those are in the known legacy/transition family where this field is not present
+risks = 152/152 observed
+impact_assessment = 145/152 observed
+maintenance = 152/152 observed
+senior_responsible_owner = 152/152 observed
+```
 
-## Preregistered appeals/review pilot
+The original historical report's `146/152` human-review, `145/152` risks and `138/152` impact-assessment figures are **superseded**. The old `139/152` model-performance number remains numerically the same but its interpretation is corrected by template-family context.
+
+```text
+HISTORICAL_REPORT != DELETED
+HISTORICAL_COUNT != CURRENT_INTERPRETATION
+HEADING_FAMILY != COMPLIANCE_STATUS
+FIELD_NOT_OBSERVED != REQUIRED_FIELD_OMITTED
+```
+
+## Appeals/review pilot — still intact
+
+The parser-version defect did not affect the `Appeals and review` field extraction.
 
 `ADJUDICATION_PLAN.md` fixed the manual review set before the repaired corpus output was read:
 - census all 27 appeals/review records with a syntactic contact token;
@@ -111,41 +128,66 @@ Reconciled bounded labels:
   PLAIN_TEXT_LOCATOR_MISSED = 0
 ```
 
-The 20-record token-negative set is a sample, not a population estimate. Token absence also does not mean no reader action exists: records can describe in-channel human handoff or existing complaints/review processes without a URL/email/phone token.
+The 20 token-negative records are a sample, not a population estimate. `NO_CONTACT_TOKEN != NO_ROUTE`.
+
+## Reader Lens
+
+`reader_lens.py` builds a static, source-linked reader centred on one practical question:
+
+> What does this published record actually say about what someone can do next?
+
+The corrected Reader Lens is generated from the version-aware derived report and defaults to source evidence only. It:
+- links each card to GOV.UK;
+- shows exact published `Appeals and review` text;
+- exposes published URL/email/phone/link tokens without calling them rights or remedies;
+- shows human-review and responsible-owner disclosure;
+- produces no scalar score;
+- does not infer hidden/internal practice;
+- does not claim legal advice or route effectiveness.
+
+Exploratory semantic annotations from the historical pilot are **not silently carried across the parser-version boundary**. They may be reconciled later only through an explicit evidence-identity step.
+
+```text
+SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
+EASIER_INSPECTION != EFFECTIVE_REMEDY
+READER_LENS != REPLACEMENT_FOR_GOV.UK
+```
 
 ## Reader-facing result under test
 
-`READER_WALKTHROUGH.md` demonstrates from exact frozen source examples that the same standardized field can disclose materially different layers/objects:
-- concrete reconsideration/review route;
-- broader complaints/appeal process;
-- general help or feedback;
-- in-channel human handoff;
-- clinician-mediated review;
-- data-rights action;
-- internal review;
-- explanation/audit trail without recovery;
-- explicit no-separate-process/no-decision statements;
-- ambiguous scope.
+The candidate finding remains narrower than a generic transparency critique:
 
-Candidate field-level finding:
+> `Appeals and review` field presence can be high while the reader-visible challenge/review object remains heterogeneous. Field completion alone therefore loses distinctions about what can be challenged, by whom, through what route, and at which layer of the decision process.
 
-> `Appeals and review` field presence can be high while the reader-visible public challenge/review object remains heterogeneous. Measuring field completion alone therefore loses distinctions about **what can be challenged, by whom, through what route, and at which layer of the decision process**.
+Only retain this at the strength earned by a fresh/full semantic census and a real reader-use test.
 
-Only retain that finding at the strength earned by a fresh/full semantic census.
+If the result reduces to **"free-text fields vary"**, shrink #364 to a demo.
 
-The post-pilot exploratory 151-record semantic coding is not validated ground truth. Hostile review showed that its codebook needed proposition-level scope, explicit actor scope, a planned/not-operating state, and content-bound evidence identity. Those repairs are falsifiers for the exploratory object; they do not upgrade it into a primary result.
+## Falsification status
+
+A 100-probe regression/falsification harness covers evidence binding, parser/extraction, bounded codebook regressions and claim/drift ceilings.
+
+The first run was `55/100`; substantive failures were repaired. The same structure later ran `100/100` on the then-known falsifiers. The subsequent heading-family defect demonstrates why this cannot be treated as validation.
+
+```text
+100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
+GREEN_TESTS != COMPLETE_MODEL_OF_THE_SOURCE
+REPRODUCIBILITY != CORRECTNESS
+```
 
 ## November core-work posture
 
-`SPRINT_EXECUTION_PLAN.md` keeps September material as pilot/methodology infrastructure and preserves a fresh sprint-time research object if live Apart rules require core work during the event:
+September material remains pilot / methodology / falsification / frozen baseline.
+
+If live Apart rules permit/require fresh core work during the November sprint:
 - fetch a new current-finder corpus;
 - freeze membership and source bytes;
-- freeze a multi-label semantic codebook;
-- conduct full appeals/review census with independent aperture reads and explicit disagreement;
-- test robustness and negative controls;
+- freeze a version-aware semantic codebook;
+- conduct the full appeals/review census with independent reads and explicit disagreement;
+- test reader-use value rather than assuming it;
 - optionally compare changed records against the September content-addressed baseline.
 
-Re-read live competition Guidelines/terms before registration/submission. Historical Apart rules are not assumed to govern November 2026.
+Re-read live competition Guidelines/terms before registration/submission.
 
 ## Critical ceilings
 
@@ -155,17 +197,12 @@ SECTION_PRESENT != PRACTICALLY_EFFECTIVE_REMEDY
 SYNTACTIC_CONTACT_TOKEN_PRESENT != RELEVANT_APPEAL_ROUTE
 CONCRETE_ROUTE_OBSERVED != ROUTE_EFFECTIVE
 HUMAN_HANDOFF != FORMAL_APPEAL
-ROUTE_DESCRIBED_WITHOUT_LOCATOR != NO_ROUTE_EXISTS
 DISCLOSURE_ABSENT != PRACTICE_ABSENT
 ATRS_RECORD != COMPLETE_SYSTEM_REALITY
 PUBLIC_RECORD_AUDIT != COMPLIANCE_AUDIT
 PUBLIC_RECORD_AUDIT != POLICY_VERDICT
 ```
 
-## Competition fit
-
-Apart AI x Epistemics Open Track currently asks what can be measured about a live epistemic deployment using data downloadable over a weekend and says deployment/impact projects may look more like investigative research than software.
-
-#364 is therefore the **current competition lead**, not a selected or submitted entry.
+#364 remains the **current competition lead**, not a selected or submitted entry.
 
 No registration, organiser contact, model/provider spend, terms acceptance or submission is implied by this branch.
