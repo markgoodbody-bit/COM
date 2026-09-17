@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-17 — Europe/London  
+Updated: 2026-09-17 late — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -16,256 +16,203 @@ PURPOSE > INSTRUMENT
 - Mark: human originator / witness / consequential human gate; not routine scheduler.
 - Framework: episodic integration / coordination / continuity role.
 - Codex: active implementation / hostile-review aperture.
-- Claude Code: **ACTIVE AGAIN on #364**. CC identified the legacy-heading misses; Codex independently confirmed them against the frozen witness. Preserve discovery and confirmation as distinct contributions.
+- Claude Code: active independent hostile-review aperture.
+
+## Verified stable baselines
+
+```text
+TRACE main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
+Mechanical Ethics main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
+THR main = 15b9929f685627644fcfc33cbb113b34876ecf59
+Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
+```
+
+TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validated/efficacy/authority results.
 
 ## Current routes
 
-- **#347 THR:** active product quality; next edge remains observe/correct operational scale.
-- **#348 resources:** active quarry; no application live.
-- **#349 competition tournament:** active; selection open.
-
-## Competition state
-
 ```text
-#350 evidence-lineage -> substrate/reference
-#351 WarrantFuzz -> experimental harness
-#353 Missing Edge -> fixture research / shrink
-#355 ProofPath -> closed / owner found
-#356 Stage A -> closed / optional replication / 0 provider calls / $0 spend
-#363 No Free QALY -> fallback Open Track synthesis
-#364 ATRS Answerability Audit -> CURRENT COMPETITION LEAD / empirical Open Track candidate
-SELECTED ENTRY -> NONE
-REGISTERED / SUBMITTED -> NO
+#347 THR -> ACTIVE PRODUCT / ARCHITECTURE STRESS; NO PUBLIC RECORD 4
+#348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
+#349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
+#365 TRACE/ME positive-construction quarry -> DERIVED-VIEW RESULT / NO NEW PRIMITIVE
 ```
 
-## #364 — current lead
+## #364 — ATRS Answerability Audit
 
-Reader question:
+Current reader question:
 
 > What does a published ATRS record actually say about what someone can do next?
 
-Why it still leads:
-- real public-record object rather than mainly synthesis;
-- direct Apart AI x Epistemics Open Track fit;
-- useful without prize/submission;
-- survives owner subtraction better than #363.
-
-Strong owners explicitly carried:
-- GOV.UK / GDS: ATRS standard, semantics, guidance, repository;
-- BritainThinks / CDEI: foundational UK public-engagement findings about simple/layered information, contact and appeal information;
-- Fabio Rovai / Tesseract Academy: ATRS metadata corpus;
-- Public Law Project / Tracking Automated Government: independent public-sector ADM visibility and broader transparency/redress/public-law framing;
-- adjacent algorithm-register usability/contestability research.
-
-`NOT_FOUND != NOVEL`.
-
-### Frozen September source witness
+Frozen source witness and version-aware correction remain valid. Current corrected frozen-source observations:
 
 ```text
-run = 35257984573 SUCCESS
-source head = 4a7b43df95a2b776b885f8ee903d929100414af7
-artifact = 10513278849
-artifact sha256 = ad315d9b08a0af65c4615638df2235b9ce6f021307315fbeb6dfcbd8cbdb0097
-historical report sha256 = c13d62cc685c9c4dc1e6aabcfb658ab40460f4b51abf46f05a242032d0330eb9
-finder / Search API membership = 152 / 152
-raw source snapshots = 152
-```
-
-Codex independently verified bundle/source identity and reproduced the original extraction. **Claude Code later identified the legacy-heading miss; Codex independently confirmed it against the frozen bytes.**
-
-```text
-REPRODUCED != CORRECT
-SAME_REGEX + SAME_BYTES -> SAME_MISS
-```
-
-### Version-aware correction — same 152 source bytes, no refetch
-
-Latest evidence-scoped frozen-source reparse:
-
-```text
-workflow = 35268849195 SUCCESS
-source refetch = FALSE
-derived artifact = 10518431036
-artifact sha256 = d846b7c79bd21cb2abd96d99080d1b10416bd2afdf703dbd07c6a5938b58dace
-heading profiles:
-  current_named_family = 145
-  legacy_2024_family = 6
-  mixed_known_families = 1
-```
-
-Corrected source-level observations:
-
-```text
+records = 152
 human_review = 152/152 observed
 appeals_review = 151/152 observed
 model_performance = 139/152 observed
-  13 not observed on page
-  6 belong to the known legacy_2024 family where this field is not present
-  1 additional mixed-family record also does not expose the field; n=1 is kept record-scoped, not generalised into a transition-family rule
 risks = 152/152 observed
 impact_assessment = 145/152 observed
 maintenance = 152/152 observed
 senior_responsible_owner = 152/152 observed
 ```
 
-Superseded historical presence figures remain preserved:
-- human_review `146/152` -> `152/152`;
-- risks `145/152` -> `152/152`;
-- impact_assessment `138/152` -> `145/152`;
-- model_performance remains numerically `139/152`, interpretation corrected.
+Historical pre-version-aware counts remain preserved as historical parser output.
 
 ```text
-HISTORICAL_REPORT != DELETED
-HEADING_FAMILY != COMPLIANCE_STATUS
+REPRODUCED != CORRECT
 FIELD_NOT_OBSERVED != REQUIRED_FIELD_OMITTED
-```
-
-An actually observed field now always wins over family-level absence context.
-
-### Appeals/review pilot — unchanged
-
-```text
-TOKEN-POSITIVE CENSUS = 27
-  REVIEW_OR_APPEAL_ROUTE = 16
-  GENERAL_HELP_OR_FEEDBACK = 9
-  UNRELATED_TOKEN = 1
-  AMBIGUOUS = 1
-
-SHA256(URL)-SELECTED TOKEN-NEGATIVE SAMPLE = 20
-  ROUTE_DESCRIBED_WITHOUT_LOCATOR = 15
-  NO_LOCATOR_IN_SECTION = 3
-  AMBIGUOUS = 2
-  PLAIN_TEXT_LOCATOR_MISSED = 0
-```
-
-Counts are records, not publishing bodies. `NO_CONTACT_TOKEN != NO_ROUTE`.
-
-### Falsification / drift ceiling
-
-Falsify x100 first ran `55/100`, then `100/100` after bounded repair. The later heading-family defect proves that this was regression/falsifier resistance, not validation.
-
-```text
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
-GREEN_TESTS != COMPLETE_MODEL_OF_THE_SOURCE
-REPRODUCIBILITY != CORRECTNESS
-CURRENT_LEAD != SELECTED_ENTRY
 ```
 
-### Current Reader Lens
+### Reader Lens
 
-Current evidence-first Reader Lens:
-
-```text
-workflow = 35269489098 SUCCESS
-artifact = 10517358287
-artifact sha256 = 88670ad2c236c6c8353c702634181f43134635d358bd0b86f4adcb3af8ab4db3
-source report = latest version-aware frozen derived report
-exploratory annotations = absent/off by default
-```
-
-Bounded interface repairs:
-- source search separated from optional annotation search;
-- safe http/https/mailto evidence actionable without relabelling it as appeal;
-- phone-like strings remain heuristic evidence;
-- technical provenance moved behind Evidence details;
-- ordinary-language ATRS intro + advanced evidence filters;
-- visible labels, `aria-live` result status, reset/no-match path;
-- compact cards with full evidence retained in HTML;
-- Codex runtime fix integrated so annotation-only search matches actually become visible.
-
-No rendered desktop/mobile/keyboard/assistive-technology validation is claimed.
+Evidence-first Lens remains a useful source-readback aid. No rendered accessibility/usability validation and no human reader-benefit result are claimed.
 
 ```text
 SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
 EASIER_INSPECTION != EFFECTIVE_REMEDY
-READER_LENS != REPLACEMENT_FOR_GOV.UK
 ```
 
-### Reader-use method v2
+### Reader-use method — true current state
 
-Codex hostile review of the first two-arm method returned **REPAIR before human run** because information scope, order, scoring and timing were not sufficiently controlled.
-
-The repaired method decomposes the question into three frozen local conditions:
+The v3.1 witness exists and is green:
 
 ```text
-FULL = full frozen record section text; participant must locate Appeals and review
-EXCERPT = exact Appeals field evidence isolated plainly
-LENS = same Appeals field evidence with deterministic token grouping
+head = 6fa24cb12c7b9720ee5b32fa5b8c8b84ef7842d9
+run = 35272269260 SUCCESS
+artifact = 10518547136
+sha256 = 09764a039e47ef39a5e19a998e888fb48f7e76bb9c4de5c9ed858af1ee007f3c
 ```
 
-Primary contrasts:
+But full PR replay found Codex's later narrow review still requires two small repairs before the method survives even as a provisional pilot candidate:
+
+- integrate `06a3176`: remove remaining LENS-only generated caution/task guidance;
+- integrate `0573ce5`: remove obsolete independent `component_rules` so route-linked bundles are the sole provisional private-key representation.
+
+Codex disposition after those repairs:
 
 ```text
-FULL -> EXCERPT = field-location/scoping cost
-EXCERPT -> LENS = added value of structured presentation
-FULL -> LENS = combined descriptive contrast
+PROVISIONAL PILOT-METHOD CANDIDATE
+NOT READY FOR HUMAN EXECUTION
 ```
 
-If `EXCERPT ~= LENS`, the bespoke Lens does not earn added value; route toward the simpler section-jump/excerpt owner.
+Further gates remain independent source-bound answer-key adjudication, target population/sample rationale, recruitment/allocation, consent/data minimisation and analysis plan.
 
-Executable v2 witness:
-
-```text
-workflow = 35269962306 SUCCESS
-artifact = 10517424080
-artifact sha256 = 1b67669f86b4214ff9df41b0934ca073213084c47b0ac8ee747b9da07d19ccb6
-scored cases = 9 purposive stress cases
-non-scored sentinel = DBT Find Exporters missing-field case
-conditions = FULL / EXCERPT / LENS
-schedules = 6
-per participant schedule = 3 FULL + 3 EXCERPT + 3 LENS
-per scored case across schedules = each condition exactly twice
-all condition targets = local/content-addressed
-answer key = physically separated from participant pack
-```
-
-Scoring now explicitly preserves accepted alternatives, `NOT STATED`, `UNCLEAR`, component-specific rules and unsupported-inference errors separately.
-
-No recruitment or human data exists. Codex/CC v2 hostile recheck requested in #364 comment `5720678926`.
+**Do not recruit or run participants.**
 
 ```text
 METHOD_PACK != HUMAN_RESULT
-PROMPTED_FIELD_RETRIEVAL != UNSOLICITED_COMPREHENSION
-TEN_PURPOSIVE_CASES != ATRS_POPULATION
-COMPREHENSION != EFFECTIVE_REMEDY
+GREEN_CI != HUMAN_RUN_READY
+EXCERPT ~= LENS -> ROUTE_TO_SIMPLER_OWNER
 NULL_RESULT = VALID
 ```
 
-### Current boundary
+Apart posture: current Nov 13–15 sprint page describes three-day substantive work but exposes no clear current prior-work prohibition. Treat September as pilot/method/frozen baseline and reserve a fresh substantive result for November if live rules permit. No organiser contact by momentum.
 
-Further internal polishing without a new concrete defect is drift.
+## THR / Hannibal architecture pressure
 
-The next material evidence for the Reader Lens is **human participant task data**. Recruitment, consent/data handling and running that study are consequential external/human actions and require an explicit Mark gate.
+THR main remains unchanged with three public records.
 
-Until that gate:
-- preserve the September method/evidence;
-- accept hostile-review repairs if concrete;
-- do not recruit/contact participants;
-- do not claim reader benefit;
-- do not select/submit a competition entry by momentum.
+Open draft branches overlap:
 
-Stop/shrink rule: if the result reduces to `free-text fields vary`, if `EXCERPT ~= LENS`, or if Lens increases unsupported inference, shrink #364 to a demo / route to the simpler owner.
+```text
+PR27 = prose candidate / unique ancient-source leads
+PR28 = preferred consolidation base
+PR29 = alternate prose candidate
+PR30 = bounded executable registry probe
+```
 
-No competition registration, organiser contact, provider spend, terms acceptance or submission.
+Do not concatenate or merge by momentum.
 
-## #363 fallback
+PR30's earned failure:
+- candidate person/source/assertion fixture passes local structural checks;
+- operational mention validation rejects `record_id = hannibal-candidate-not-published` because `record_id` must already exist in public `records/catalog.json`.
 
-`No Free QALY` survives only as attributed synthesis: `DIRECT / CONDITIONAL ON SHARED CONTRACT / NOT ESTABLISHED` comparison discipline.
+This exposes a local workflow/reference coupling rather than a missing universal ontology.
 
-## Stable project state
+Owner mapping routes semantic machinery toward CIDOC CRM, CRMsci, CRMinf, CRMdig, W3C PROV and nanopublication patterns.
 
-- TRACE v0.3.0 released formal baseline; not validated/no efficacy result.
-- Mechanical Ethics v0.7.0 released formal baseline; not validated.
-- PSFH D068 live; reader benefit unestablished.
-- Formation #339 merged working non-production; not canon.
+Candidate centre:
+
+```text
+WORLD -> PARTIAL OBSERVATION / SURVIVING EVIDENCE
+-> SOURCE / OBSERVATION
+-> ASSERTION
+-> RELATION / TRANSITION
+-> PROVISIONAL EVIDENCE GRAPH
+-> CURATED ENCOUNTER / VIEW
+
+RECORD != FUNDAMENTAL_UNIT
+RECORD = CURATED_VIEW / ENCOUNTER
+GRAPH != WORLD
+```
+
+Smallest repair under test: permit checked research/source context without manufacturing a public catalogue entry, while still rejecting dangling references. Test this against a bounded contested-event/JFK fixture before changing production validators.
+
+Historical-source correction: ancient attestation of Silenus/Sosylus, modern survival state and any surviving fragment/testimonium route must remain separate. `COMPLETE_WORK_NOT_PRESERVED != NO_FRAGMENT_SURVIVES`.
+
+No Hannibal PR is merged. `CANDIDATE != RECORD_4`.
+
+## #365 — TRACE/ME positive-construction quarry
+
+Owner subtraction did not earn a new TRACE/ME primitive.
+
+- reachable futures / voluntary contraction substantially already present;
+- universal scalar `S=C-M` rejected;
+- `enough` must be typed/task-relative if used;
+- play has strong existing owners;
+- joint construction can be a derived view over existing TRACE objects.
+
+Worked construction encoding is useful, but the strongest surviving question is evidential:
+
+```text
+REACHABLE_CLAIMED != REACHABLE_ESTABLISHED
+DERIVED_VIEW_EARNED != NEW_PRIMITIVE_EARNED
+```
+
+No baseline/canon edit.
+
+## Resources
+
+No application live.
+
+- OpenAI Researcher Access: current FAQ requires active academic/research-organisation affiliation or nonprofit research status. On the project's current independent standing: **HOLD / eligibility not established**.
+- ARIA Scaling Trust Tracks 2+3: funding open; current batch cutoff 31 Oct 2026. Existing project result remains **research seam only / no proposal earned**.
+- BlueDot/old ProofPath-shaped application work: HOLD after owner subtraction.
 
 ```text
 PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY
-BUILD_IF_USEFUL_WITHOUT_PRIZE
-POSSIBLE_PRIZE = £0
-AVAILABLE_MONEY != AUTHORITY_TO_SPEND
+AVAILABLE_MONEY != AUTHORITY_TO_APPLY_OR_SPEND
+```
+
+## Campfire / Square
+
+Campfire Relay repository source is current at `b8579e56...`, but the operational Relay tool is not exposed in this Framework aperture.
+
+Do not infer current authenticated Square inbox/quota/write state from repository inspection or older public snapshots.
+
+```text
+RELAY_REPO != RELAY_TOOL
+PUBLIC_SNAPSHOT != AUTHENTICATED_CURRENT_STATE
+```
+
+## Stable surfaces
+
+- #355 ProofPath: closed / owner found.
+- #356 Stage A: closed / optional replication / 0 provider calls / $0.
+- #363 No Free QALY: fallback synthesis only.
+- PSFH D068: live; reader benefit unestablished; no momentum rebuild.
+- Formation #339: merged working/non-production; not canon.
+
+Full-sync receipt: `coordination/build_ledger/FULL_COMSYNC_20260917_LATE.md`.
+
+## Consequential gates
+
+Human/explicit gates remain for participant recruitment/human-study actuation, competition/funder registration/terms/submission, new provider/spend commitments, credentials/payment, consequential institutional contact, TRACE/ME release/canon/baseline/licence changes, Campfire Production activation, destructive actions, travel/payout/tax, and crawler/training-policy changes.
+
+```text
+TRUTH > CONTINUITY_COHERENCE
 OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
 PURPOSE > INSTRUMENT
 ```
-
-Routine reversible work may continue. Explicit human gates remain for participant recruitment/human-study actuation, accounts/terms/submissions, new spend/provider commitments, credentials/payment, consequential institutional contact, and future TRACE/ME release/canon/licence changes.
