@@ -5,8 +5,9 @@ on:
     branches:
       - 'framework/atrs-answerability-audit-v0'
     paths:
-      - 'competition/atrs_answerability/READER_USE_PROTOCOL.md'
-      - 'competition/atrs_answerability/reader_use_pack.py'
+      - 'competition/atrs_answerability/READER_USE_PROTOCOL*.md'
+      - 'competition/atrs_answerability/reader_use_pack*.py'
+      - 'competition/atrs_answerability/test_reader_use_pack_v3.py'
       - '.github/workflows/atrs-reader-use-pack.yml'
   workflow_dispatch:
 
@@ -23,26 +24,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Syntax and structural locks
+      - name: Syntax and v3 regression locks
         run: |
-          python -m py_compile competition/atrs_answerability/reader_use_pack.py
-          python - <<'PY'
-          import importlib.util, sys
-          from pathlib import Path
-          p=Path('competition/atrs_answerability/reader_use_pack.py')
-          spec=importlib.util.spec_from_file_location('pack',p)
-          m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
-          assert len(m.CASES) == 10
-          assert sum(c['primary_scored'] for c in m.CASES) == 9
-          assert len({c['case_id'] for c in m.CASES}) == 10
-          assert len({c['title'] for c in m.CASES}) == 10
-          assert len(m.TASKS) == 6
-          assert m.CONDITIONS == ('FULL','EXCERPT','LENS')
-          assert all(len(c['source_sha256']) == 64 for c in m.CASES)
-          assert all(len(c['appeals_text_sha256']) == 64 for c in m.CASES)
-          print('structural locks PASS')
-          PY
-      - name: Download latest corrected derived report
+          python -m py_compile \
+            competition/atrs_answerability/reader_use_pack.py \
+            competition/atrs_answerability/reader_use_pack_v3.py \
+            competition/atrs_answerability/test_reader_use_pack_v3.py
+          python -m unittest competition/atrs_answerability/test_reader_use_pack_v3.py -v
+      - name: Download corrected derived report
         uses: actions/download-artifact@v4
         with:
           name: atrs-version-aware-derived-35268849195
@@ -58,30 +47,32 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: markgoodbody-bit/COM
           run-id: 35257984573
-      - name: Build evidence-bound three-condition pack
+      - name: Build v3 evidence-bound three-condition pack
         run: |
-          python competition/atrs_answerability/reader_use_pack.py \
+          python competition/atrs_answerability/reader_use_pack_v3.py \
             /tmp/derived/atrs_full_version_aware.json \
             /tmp/source/atrs_html \
-            --out-dir /tmp/reader-use-pack
-      - name: Assert schedules, condition targets and key separation
+            --out-dir /tmp/reader-use-pack-v3
+      - name: Assert v3 schedules, parity, route keys and separation
         run: |
           python - <<'PY'
           import csv, hashlib, json
           from collections import Counter, defaultdict
           from pathlib import Path
-          p=Path('/tmp/reader-use-pack')
+          p=Path('/tmp/reader-use-pack-v3')
           participant=p/'participant_pack'
           private=p/'private_key'
           m=json.load(open(participant/'manifest.json'))
           k=json.load(open(private/'answer_key.json'))
-          assert m['status'] == 'REPAIRED_METHOD_PACK_NO_PARTICIPANT_RESULT'
-          assert k['status'].startswith('PRIVATE_PROVISIONAL_KEY_')
+          assert m['status'] == 'V3_METHOD_PACK_NO_PARTICIPANT_RESULT'
+          assert k['status'].startswith('PRIVATE_PROVISIONAL_ROUTE_LINKED_KEY_')
           assert k['scored_cases'] == 9
           assert len(m['schedules']) == 6
           assert not (participant/'answer_key.json').exists()
           assert not (private/'manifest.json').exists()
+          assert 'same published Appeals-field passage' in m['information_parity']
           exposure=defaultdict(Counter)
+          positions=defaultdict(Counter)
           for schedule in m['schedules']:
               rows=list(csv.DictReader(open(participant/f"schedule_{schedule['sequence_id']}.csv")))
               assert len(rows) == 9
@@ -90,23 +81,25 @@ jobs:
               assert [int(r['position']) for r in rows] == list(range(1,10))
               for r in rows:
                   exposure[r['case_id']][r['condition']] += 1
+                  positions[int(r['position'])][r['condition']] += 1
                   target=participant/r['target_path']
                   assert target.exists()
-                  digest=hashlib.sha256(target.read_bytes()).hexdigest()
-                  assert digest == r['target_sha256']
+                  assert hashlib.sha256(target.read_bytes()).hexdigest() == r['target_sha256']
           assert all(exposure[c][cond] == 2 for c in exposure for cond in ('FULL','EXCERPT','LENS')), exposure
-          # All ten cases have three frozen targets; one case is a non-scored sentinel.
+          assert all(positions[pos][cond] == 2 for pos in positions for cond in ('FULL','EXCERPT','LENS')), positions
           assert len(m['surface_manifest']) == 10
           assert m['non_scored_sentinel']['case_id'] == 'dbt-find-exporters'
-          for case_id, item in m['surface_manifest'].items():
-              assert set(item['targets']) == {'FULL','EXCERPT','LENS'}
-              for target in item['targets'].values():
-                  assert len(target['sha256']) == 64
-          print('three-condition method gate PASS')
+          scored=[c for c in k['cases'] if c['primary_scored']]
+          assert len(scored) == 9
+          assert all(c['route_bundles'] for c in scored)
+          assert all('arbitrary cross-products are invalid' in k['route_bundle_rule'] for _ in [0])
+          # Participant surfaces must never contain the private answer key.
+          assert not any('route_bundles' in f.read_text(errors='ignore') for f in participant.rglob('*') if f.is_file() and f.suffix in {'.html','.json','.txt','.csv'})
+          print('v3 three-condition method gate PASS')
           PY
-      - name: Preserve repaired method pack
+      - name: Preserve v3 method pack
         uses: actions/upload-artifact@v4
         with:
-          name: atrs-reader-use-pack-v2-${{ github.run_id }}
-          path: /tmp/reader-use-pack
+          name: atrs-reader-use-pack-v3-${{ github.run_id }}
+          path: /tmp/reader-use-pack-v3
           retention-days: 30
