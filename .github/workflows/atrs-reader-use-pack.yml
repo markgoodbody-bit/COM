@@ -7,6 +7,7 @@ on:
     paths:
       - 'competition/atrs_answerability/READER_USE_PROTOCOL.md'
       - 'competition/atrs_answerability/reader_use_pack.py'
+      - 'competition/atrs_answerability/test_reader_use_pack.py'
       - '.github/workflows/atrs-reader-use-pack.yml'
   workflow_dispatch:
 
@@ -26,6 +27,7 @@ jobs:
       - name: Syntax and structural locks
         run: |
           python -m py_compile competition/atrs_answerability/reader_use_pack.py
+          python -m unittest discover -s competition/atrs_answerability -p test_reader_use_pack.py -v
           python - <<'PY'
           import importlib.util, sys
           from pathlib import Path

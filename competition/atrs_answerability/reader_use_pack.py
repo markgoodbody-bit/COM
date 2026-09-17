@@ -146,8 +146,11 @@ def build_schedules(scored_cases):
     schedules=[]
     for seq in range(6):
         rotation=seq%3; assignments={c["case_id"]:CONDITIONS[(i+rotation)%3] for i,c in enumerate(scored_cases)}
-        order=[c["case_id"] for c in scored_cases]; random.Random(SEED+seq).shuffle(order)
-        schedules.append({"sequence_id":f"S{seq+1}","seed":SEED+seq,"cases":[{"position":p,"case_id":cid,"condition":assignments[cid]} for p,cid in enumerate(order,1)]})
+        # Rotate conditions over each of two fixed shuffled orders. Independent
+        # shuffles per sequence balance cases but need not balance exposure position.
+        order_seed=SEED+seq//3
+        order=[c["case_id"] for c in scored_cases]; random.Random(order_seed).shuffle(order)
+        schedules.append({"sequence_id":f"S{seq+1}","seed":order_seed,"cases":[{"position":p,"case_id":cid,"condition":assignments[cid]} for p,cid in enumerate(order,1)]})
     return schedules
 
 
