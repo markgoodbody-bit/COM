@@ -91,7 +91,6 @@ def lens_surface(case: dict[str, Any], row: dict[str, Any]) -> bytes:
                 f"<li><strong>{base.esc(kind)}</strong>: <code>{base.esc(value)}</code></li>"
                 for kind, value in toks
             ) + "</ul>"
-        body += "<p class='note'>Grouping is deterministic presentation of published field evidence; it is not an appeal-right or route-effectiveness classification.</p>"
     return base.page_shell(case["title"], body)
 
 
@@ -169,11 +168,6 @@ def build(report: dict[str, Any], html_dir: Path, out_dir: Path):
             "primary_scored": case["primary_scored"],
             "published_appeals_text": base.appeals_text(row),
             "route_bundles": ROUTE_BUNDLES.get(case["case_id"], []),
-            "component_rules": {
-                key: base.case_rules(values)
-                for key, values in case["key"].items()
-                if key != "limits"
-            },
             "limits": case["key"]["limits"],
             "scoring_rule": (
                 "Choose one source-supported route bundle where a route is stated; "
