@@ -1,0 +1,81 @@
+name: ATRS Reader Lens task pack
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/READER_USE_PROTOCOL.md'
+      - 'competition/atrs_answerability/reader_use_pack.py'
+      - '.github/workflows/atrs-reader-use-pack.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  build-task-pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax and structural locks
+        run: |
+          python -m py_compile competition/atrs_answerability/reader_use_pack.py
+          python - <<'PY'
+          import importlib.util, sys
+          from pathlib import Path
+          p=Path('competition/atrs_answerability/reader_use_pack.py')
+          spec=importlib.util.spec_from_file_location('pack',p)
+          m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
+          assert len(m.CASES) == 10
+          assert len({c['case_id'] for c in m.CASES}) == 10
+          assert len({c['title'] for c in m.CASES}) == 10
+          assert len(m.TASKS) == 6
+          assert all(len(c['source_sha256']) == 64 for c in m.CASES)
+          assert all(len(c['appeals_text_sha256']) == 64 for c in m.CASES)
+          print('structural locks PASS')
+          PY
+      - name: Download corrected frozen derived report
+        uses: actions/download-artifact@v4
+        with:
+          name: atrs-version-aware-derived-35266542167
+          path: /tmp/derived
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: markgoodbody-bit/COM
+          run-id: 35266542167
+      - name: Build evidence-bound study pack
+        run: |
+          python competition/atrs_answerability/reader_use_pack.py \
+            /tmp/derived/atrs_full_version_aware.json \
+            --out-dir /tmp/reader-use-pack
+      - name: Assert balanced two-sequence design
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          p=Path('/tmp/reader-use-pack')
+          m=json.load(open(p/'manifest.json'))
+          k=json.load(open(p/'answer_key.json'))
+          assert m['status'] == 'METHOD_PACK_NO_PARTICIPANT_RESULT'
+          assert k['status'].startswith('BOUNDED_STUDY_ADJUDICATION_')
+          assert len(m['cases']) == 10 == len(k['cases'])
+          for seq in ('A','B'):
+              rows=list(csv.DictReader(open(p/f'sequence_{seq}.csv')))
+              assert len(rows) == 10
+              counts={x:sum(r['condition']==x for r in rows) for x in ('RAW','LENS')}
+              assert counts == {'RAW':5,'LENS':5}, (seq, counts)
+          for c in m['cases']:
+              assert c['sequence_A_condition'] != c['sequence_B_condition']
+          print('balanced sequence gate PASS')
+          PY
+      - name: Preserve method pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-reader-use-pack-${{ github.run_id }}
+          path: /tmp/reader-use-pack
+          retention-days: 30
