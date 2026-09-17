@@ -7,7 +7,6 @@ on:
     paths:
       - 'competition/atrs_answerability/reader_lens.py'
       - 'competition/atrs_answerability/test_reader_lens.py'
-      - 'competition/atrs_answerability/exploratory_semantic_census.py'
       - '.github/workflows/atrs-reader-lens.yml'
   workflow_dispatch:
 
@@ -24,28 +23,36 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Download pinned September evidence bundle
+      - name: Reader Lens tests
+        run: python -m unittest competition/atrs_answerability/test_reader_lens.py -v
+      - name: Download latest evidence-scoped derived report
         uses: actions/download-artifact@v4
         with:
-          name: atrs-reproducible-corpus-35257984573
-          path: /tmp/atrs-source
+          name: atrs-version-aware-derived-35268849195
+          path: /tmp/derived
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: markgoodbody-bit/COM
-          run-id: 35257984573
-      - name: Verify pinned report identity
+          run-id: 35268849195
+      - name: Verify derived report source boundary
         run: |
-          test -f /tmp/atrs-source/atrs_full.json
-          echo 'c13d62cc685c9c4dc1e6aabcfb658ab40460f4b51abf46f05a242032d0330eb9  /tmp/atrs-source/atrs_full.json' | sha256sum -c -
-      - name: Build evidence-bound exploratory annotations
-        run: |
-          python competition/atrs_answerability/exploratory_semantic_census.py \
-            /tmp/atrs-source/atrs_full.json \
-            --json-out /tmp/atrs-semantic.json
-      - name: Build static reader lens
+          test -f /tmp/derived/atrs_full_version_aware.json
+          python - <<'PY'
+          import json
+          p='/tmp/derived/atrs_full_version_aware.json'
+          r=json.load(open(p))
+          assert r['summary']['records'] == 152
+          assert r['derived_from']['source_run'] == 35257984573
+          assert r['derived_from']['refetch_performed'] is False
+          assert r['summary']['fields']['human_review']['section_present'] == 152
+          assert r['summary']['fields']['appeals_review']['section_present'] == 151
+          assert r['summary']['fields']['risks']['section_present'] == 152
+          assert r['summary']['fields']['impact_assessment']['section_present'] == 145
+          print('derived source boundary PASS')
+          PY
+      - name: Build source-only Reader Lens
         run: |
           python competition/atrs_answerability/reader_lens.py \
-            /tmp/atrs-source/atrs_full.json \
-            --semantic /tmp/atrs-semantic.json \
+            /tmp/derived/atrs_full_version_aware.json \
             --out /tmp/ATRS_READER_LENS_20260917.html
           python - <<'PY'
           from pathlib import Path
@@ -53,14 +60,22 @@ jobs:
           t=p.read_text(encoding='utf-8')
           assert t.count('class="card"') == 152, t.count('class="card"')
           assert 'ATRS Reader Lens' in t
-          assert 'not a transparency score' in t
+          assert 'Optional evidence-bound exploratory annotations exist for <strong>0</strong> records' in t
+          assert 'data-source-search=' in t
+          assert 'data-annotation-search=' in t
+          assert 'id="annotations" type="checkbox"' in t
+          assert 'role="status" aria-live="polite"' in t
+          assert 'Evidence details' in t
+          assert '<details class="record-details">' in t
+          assert 'mailto:' in t
+          assert 'href="tel:' not in t
           assert 'Do not infer route effectiveness' in t
           print('reader cards=152 bytes=', p.stat().st_size)
           PY
           sha256sum /tmp/ATRS_READER_LENS_20260917.html
-      - name: Preserve reader demo
+      - name: Preserve current reader demo
         uses: actions/upload-artifact@v4
         with:
-          name: atrs-reader-lens-20260917-${{ github.run_id }}
+          name: atrs-reader-lens-current-${{ github.run_id }}
           path: /tmp/ATRS_READER_LENS_20260917.html
           retention-days: 30
