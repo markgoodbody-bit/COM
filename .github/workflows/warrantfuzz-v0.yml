@@ -27,13 +27,23 @@ jobs:
           python-version: '3.12'
       - name: Syntax
         run: |
+          python -m py_compile competition/evidence_lineage_agent/evidence_lineage.py
           python -m py_compile competition/warrantfuzz/warrantfuzz.py
+          python -m py_compile competition/warrantfuzz/lineage_envelope.py
           python -m py_compile competition/warrantfuzz/test_warrantfuzz.py
-      - name: Unit tests
-        run: python -m unittest competition/warrantfuzz/test_warrantfuzz.py -v
+          python -m py_compile competition/warrantfuzz/test_lineage_envelope.py
+          python -m py_compile competition/warrantfuzz/test_hostile_warrantfuzz.py
+      - name: Unit and hostile tests
+        run: |
+          python -m unittest \
+            competition/warrantfuzz/test_warrantfuzz.py \
+            competition/warrantfuzz/test_lineage_envelope.py \
+            competition/warrantfuzz/test_hostile_warrantfuzz.py \
+            -v
       - name: Control report smoke
         run: |
           tmp="$(mktemp -d)"
           python competition/warrantfuzz/warrantfuzz.py competition/warrantfuzz/fixtures/source_laundering.json --json "$tmp/report.json" --markdown "$tmp/report.md"
           grep -q '"mutation_power_established": true' "$tmp/report.json"
+          grep -q '"baseline_replicate_required": true' "$tmp/report.json"
           grep -q 'Target agent: NOT RUN' "$tmp/report.md"
