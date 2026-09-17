@@ -1,8 +1,10 @@
-"""Offline schedule checks; these do not establish human reader benefit."""
+"""Offline method checks; these do not establish human reader benefit."""
+import re
 import unittest
 from collections import Counter, defaultdict
+from html import unescape
 
-from reader_use_pack import CASES, CONDITIONS, build_schedules
+from reader_use_pack import CASES, CONDITIONS, build_schedules, excerpt_surface, lens_surface
 
 
 class ScheduleTests(unittest.TestCase):
@@ -43,6 +45,39 @@ class ScheduleTests(unittest.TestCase):
         before = [case["case_id"] for case in self.cases]
         self.assertEqual(self.schedules, build_schedules(self.cases))
         self.assertEqual(before, [case["case_id"] for case in self.cases])
+
+
+class SurfaceParityTests(unittest.TestCase):
+    def surfaces(self, tokens):
+        case = {"title": "Synthetic field-only fixture"}
+        row = {"fields": {"appeals_review": {
+            "section_present": True,
+            "matches": [{"text": "Ask your clinician for review; a route need not be a URL.",
+                         "contact_tokens": tokens}],
+        }}}
+        return [render(case, row).decode("utf-8")
+                for render in (excerpt_surface, lens_surface)]
+
+    def test_no_lens_only_absence_or_interpretation_cues(self):
+        excerpt, lens = self.surfaces({})
+        for cue in ("No link, URL, email or phone-like token was observed",
+                    "This does not mean no route exists",
+                    "it is not an appeal-right or route-effectiveness classification"):
+            self.assertNotIn(cue, lens)
+        # All prose paragraphs, including the common instruction, must be equal.
+        paragraphs = lambda doc: re.findall(r"<p\b[^>]*>(.*?)</p>", doc, re.S)
+        self.assertEqual(paragraphs(excerpt), paragraphs(lens))
+
+    def test_source_passage_and_contact_values_preserved(self):
+        tokens = {"hrefs": ["https://example.org/help?a=1&b=2"],
+                  "urls_in_text": ["https://example.org/help"],
+                  "emails": ["help@example.org"], "phones": ["01234 567890"]}
+        excerpt, lens = self.surfaces(tokens)
+        source = lambda doc: re.findall(r"<p class='source'>(.*?)</p>", doc, re.S)
+        values = lambda doc: [unescape(v) for v in re.findall(r"<code>(.*?)</code>", doc)]
+        self.assertEqual(source(excerpt), source(lens))
+        self.assertEqual(values(excerpt), values(lens))
+        self.assertEqual(values(lens), [v for group in tokens.values() for v in group])
 
 
 if __name__ == "__main__":

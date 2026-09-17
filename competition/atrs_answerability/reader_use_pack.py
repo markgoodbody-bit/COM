@@ -133,8 +133,6 @@ def lens_surface(case,row):
     else:
         body=f"<h2>Published Appeals and review passage</h2><p class='source'>{esc(text)}</p><h2>Published link and contact-like evidence in that passage</h2>"; toks=field_tokens(row)
         if toks: body += "<ul class='token-list'>"+"".join(f"<li><strong>{esc(k)}</strong>: <code>{esc(v)}</code></li>" for k,v in toks)+"</ul>"
-        else: body += "<p class='note'>No link, URL, email or phone-like token was observed in this field. This does not mean no route exists.</p>"
-        body += "<p class='note'>Token grouping is deterministic presentation of the same published field evidence; it is not an appeal-right or route-effectiveness classification.</p>"
     return page_shell(case["title"],body)
 
 
