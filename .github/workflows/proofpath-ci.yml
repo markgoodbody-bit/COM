@@ -36,16 +36,33 @@ jobs:
           guard=next(x for x in p['mutations'] if x['mutation_id']=='M3_independent_contradiction')
           assert duplicate['status']=='FAIL' and duplicate['powered'] is True
           assert retract['status']=='FAIL' and retract['powered'] is True
-          assert guard['status']=='UNPOWERED' and guard['powered'] is False
+          assert guard['status']=='PASS' and guard['powered'] is True
           assert p['summary']['ci_gate_pass'] is False
           PY
-      - name: Explicit CI gate fails vulnerable control and passes reference
+      - name: Explicit CI gate fails vulnerable and blind controls and passes reference
         run: |
           if python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent repetition_counter --ci-gate >/tmp/proofpath/bad.txt; then
             echo 'expected vulnerable control CI gate to fail'
             exit 1
           fi
+          if python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent evidence_blind --ci-gate >/tmp/proofpath/blind.txt; then
+            echo 'expected evidence-blind CI gate to fail'
+            exit 1
+          fi
           python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent lineage_aware --ci-gate >/tmp/proofpath/good.txt
+      - name: Responsiveness guard catches evidence-blind and passes reference
+        run: |
+          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent evidence_blind --json-out /tmp/proofpath/blind.json
+          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent lineage_aware --json-out /tmp/proofpath/reference.json
+          python - <<'PY'
+          import json
+          blind=json.load(open('/tmp/proofpath/blind.json'))
+          reference=json.load(open('/tmp/proofpath/reference.json'))
+          b=next(x for x in blind['mutations'] if x['mutation_id']=='M3_independent_contradiction')
+          r=next(x for x in reference['mutations'] if x['mutation_id']=='M3_independent_contradiction')
+          assert b['powered'] is True and b['status']=='FAIL' and b['violated'] is True
+          assert r['powered'] is True and r['status']=='PASS' and r['violated'] is False
+          PY
       - name: Action-only escalation is visible
         run: |
           python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent action_only_escalator --json-out /tmp/proofpath/action.json
