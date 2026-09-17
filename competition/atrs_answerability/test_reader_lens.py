@@ -1,6 +1,7 @@
 import importlib.util
 import json
 import sys
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -41,6 +42,37 @@ def row(title="Example tool", url="https://www.gov.uk/algorithmic-transparency-r
 
 
 class ReaderLensTests(unittest.TestCase):
+    def test_annotation_match_explanation_visibility_tracks_search(self):
+        page = mod.build_html({"records": [row()]}, {row()["url"]: ["PUBLIC_INITIATION"]})
+        script = page.split("<script>", 1)[1].split("</script>", 1)[0]
+        harness = r'''
+const assert = require('node:assert/strict');
+function classes(initial=[]) {
+  const values = new Set(initial);
+  return {toggle(k,on) { if(on) values.add(k); else values.delete(k); }, contains(k) {return values.has(k);}};
+}
+function control() {return {value:'',checked:false,classList:classes(),addEventListener(){},focus(){}};}
+const explanation = {classList:classes(['hidden']),setAttribute(k,v){this[k]=v;}};
+const card = {dataset:{sourceSearch:'source evidence',annotationSearch:'public_initiation',appeals:'yes',contact:'yes'},classList:classes(),querySelector(){return explanation;}};
+const ids = Object.fromEntries(['q','appeals','contact','annotations','reset','reset-empty','count','no-results'].map(k=>[k,control()]));
+global.document = {getElementById(k){return ids[k];},querySelectorAll(){return [card];},body:{classList:classes()}};
+'''
+        assertions = r'''
+ids.q.value='public_initiation'; ids.annotations.checked=true; apply();
+assert.equal(card.classList.contains('hidden'),false);
+assert.equal(explanation.classList.contains('hidden'),false);
+assert.equal(explanation['aria-hidden'],'false');
+ids.annotations.checked=false; apply();
+assert.equal(card.classList.contains('hidden'),true);
+assert.equal(explanation.classList.contains('hidden'),true);
+assert.equal(explanation['aria-hidden'],'true');
+ids.annotations.checked=true; ids.q.value='source'; apply();
+assert.equal(card.classList.contains('hidden'),false);
+assert.equal(explanation.classList.contains('hidden'),true);
+clearAll(); assert.equal(explanation.classList.contains('hidden'),true);
+'''
+        subprocess.run(["node", "-e", harness + script + assertions], check=True, capture_output=True, text=True)
+
     def test_card_preserves_source_text_and_original_source_link(self):
         page = mod.card(row(), [])
         self.assertIn("A person may request review", page)
