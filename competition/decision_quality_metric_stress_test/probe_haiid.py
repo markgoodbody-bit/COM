@@ -154,20 +154,26 @@ def rank_conditions(metrics: dict[str, dict[str, Any]], metric: str, direction: 
 
 
 def pairwise_disagreement(rank_a: list[tuple[str, float]], rank_b: list[tuple[str, float]]) -> dict[str, Any]:
-    """Simple order-disagreement count; ties are excluded, not broken arbitrarily."""
-    a = dict(rank_a)
-    b = dict(rank_b)
-    common = sorted(set(a) & set(b))
+    """Order-disagreement count from already direction-aware rankings.
+
+    Lower rank position means better in both lists. Numeric ties in either metric
+    are excluded rather than broken by condition name.
+    """
+    values_a = dict(rank_a)
+    values_b = dict(rank_b)
+    pos_a = {condition: i for i, (condition, _) in enumerate(rank_a)}
+    pos_b = {condition: i for i, (condition, _) in enumerate(rank_b)}
+    common = sorted(set(pos_a) & set(pos_b))
     comparable = 0
     discordant = 0
     for i, x in enumerate(common):
         for y in common[i + 1 :]:
-            da = a[x] - a[y]
-            db = b[x] - b[y]
-            if abs(da) <= 1e-12 or abs(db) <= 1e-12:
+            if abs(values_a[x] - values_a[y]) <= 1e-12 or abs(values_b[x] - values_b[y]) <= 1e-12:
                 continue
             comparable += 1
-            discordant += int((da > 0) != (db > 0))
+            order_a = pos_a[x] < pos_a[y]
+            order_b = pos_b[x] < pos_b[y]
+            discordant += int(order_a != order_b)
     return {
         "comparable_pairs": comparable,
         "discordant_pairs": discordant,
@@ -240,7 +246,6 @@ def analyze(path: Path) -> dict[str, Any]:
 def print_summary(result: dict[str, Any]) -> None:
     print(f"raw_rows={result['raw_rows']} used_rows={result['used_rows']} tasks={','.join(result['tasks'])}")
     for scope, data in result["scopes"].items():
-        tops = data["top_condition"]
         print(f"\n[{scope}] distinct_top_conditions={data['top_condition_count']}")
         for metric in QUALITY_DIRECTIONS:
             ranking = data["rankings"][metric]
