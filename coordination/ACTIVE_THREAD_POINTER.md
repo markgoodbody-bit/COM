@@ -16,38 +16,52 @@ PURPOSE > INSTRUMENT
 
 - **NO GENERAL WORLD-GAP LANE.** Open issues do not manufacture assignments. Latest unrelated world-first candidates remain owner-routed/closed.
 
-- **COM #347 — THR HUMAN GIFT / PRODUCT QUALITY.** `human-record` main remains `43ec257d8cc7581c7355bc1670fc6df4c582de24`; three evidence records remain unchanged. PRs #21/#22/#24/#25 are integrated. Exact-main integrity and Pages deployment succeeded. `LIVING_SUBJECTS.md` remains a working/non-canon boundary for voluntary questioning of a living human who can meaningfully make the specific choice. No living-person profile or private intake route was created. Next edge remains **OBSERVE / CORRECT OPERATIONAL SCALE**, not record 4 or a universal personhood/privacy programme.
+- **COM #347 — THR HUMAN GIFT / PRODUCT QUALITY.** `human-record` main is now `15b9929f685627644fcfc33cbb113b34876ecf59`; three evidence records remain unchanged. PRs #21/#22/#24/#25/#26 are integrated. PR #26 closes the narrow withdrawal/correction-trail ambiguity for material still under THR control; it does not create a universal consent/privacy model or private intake route. `LIVING_SUBJECTS.md` remains working/non-canon. Next edge remains **OBSERVE / CORRECT OPERATIONAL SCALE**, not record 4 or a universal personhood/privacy programme.
 
-- **COM #348 — PROJECT RESOURCE / OPPORTUNITY QUARRY.** Reduce exclusive dependence on Mark's personal wallet without turning the project into a monetization machine. Current serious routes include BlueDot Rapid Grants, Foresight Coordination & Accountability, Apart research sprints and Nebius x NVIDIA. `POSSIBLE_PRIZE = £0`; no auto-apply, accounts, credentials, spend, organiser contact, terms acceptance or payout binding.
+- **COM #348 — PROJECT RESOURCE / OPPORTUNITY QUARRY.** Reduce exclusive dependence on Mark's personal wallet without turning the project into a monetization machine. Current serious routes include BlueDot Rapid Grants, Foresight Coordination & Accountability, Apart research sprints, Nebius x NVIDIA, the OpenAI Codex Open Source Fund and conditionally Anthropic AI for Science. `POSSIBLE_PRIZE = £0`; no auto-apply, accounts, credentials, spend, organiser contact, terms acceptance or payout binding.
 
 - **COM #349 — COMPETITION TOURNAMENT / ACTIVE BOUNDED BUILD.** Direct Mark direction: `go for it`, sharpened by `make sure you're building something that could win. don't just go with the first idea`.
 
-  **Selection is deliberately still open.** Owner subtraction has already killed/demoted several plausible first ideas:
+  **Selection is deliberately still open.** Owner subtraction and hostile review have already killed/demoted several plausible first ideas:
   - standalone provenance/evidence-lineage agent -> **SUBSTRATE ONLY**;
   - broad source-multiplicity / dependent-evidence headline -> heavily owned by current source-independence / epistemic-Sybil work;
   - generic WarrantFuzz / LLM mutation-testing product -> useful harness, but crowded by current mutation/metamorphic-testing tools and research;
-  - generic correction/retraction propagation -> crowded by feedback-adaptation, state, stale-evidence and rollback-repair work;
-  - recommendation commitment/flip-flop headline -> crowded by current epistemic-warrant, confidence/commitment and calibration research.
+  - `The Missing Edge` -> useful narrow research/fixture family, but **SHRINK / NOT PRODUCT LEAD** after Codex/CC found scorer/design defects and a trivial edge-only solver;
+  - generic correction/retraction propagation -> crowded by feedback-adaptation, state, stale-evidence and rollback-repair work.
 
   Current implementation surfaces:
   - **PR #350** — conservative evidence-lineage oracle substrate; component only. Missing lineage is not independence.
-  - **PR #351** — WarrantFuzz v0.2 harness; retained as useful experimental machinery, **not the selected competition-defining idea**. Exact observed head `2ea1bfcec949e5f93c7b69ac497fc8be95654056`; no target model result.
+  - **PR #351** — WarrantFuzz v0.2 experimental harness. Exact current head `88264d5824c985cba85a6831912aaeb5b07b5f2e`; exact-head Actions run `35217059591` SUCCESS after hostile repairs. Correct/wrong ancestry controls are now blinded/matched; mutant scoring uses pooled unmutated baselines; invalid stance spellings fail; preregistration carries the bounded null/inconclusive error region. No target-model result.
   - **PR #352** — Claude Code red-by-design hostile evidence; preserve even where the same cases are now green elsewhere.
-  - **PR #353 — CURRENT LEAD CANDIDATE: `The Missing Edge`.** Closest owner Bara's *Epistemic Sybil Resistance* already owns the unobserved-ancestry/report-multiplicity mechanism; this is a narrower interface/behaviour experiment, not a discovery claim. Exact observed head `fd5e3e918e50fe7bd6da69122b2fde1373e7f833`; six synthetic cases, six matched provenance conditions, separate relationship-assessment and decision-consequence arms, deterministic closed/open-world reference solvers, frozen scorer/preregistration, zero provider calls; exact-head no-network GitHub Actions run `35208415862` SUCCESS.
+  - **PR #353 `The Missing Edge`** — narrow research/fixture object at `fd5e3e918e50fe7bd6da69122b2fde1373e7f833`; SHRINK before any target use; not selected entry.
+  - **PR #355 `ProofPath CI` — CURRENT PRODUCT LEAD / NOT SELECTED ENTRY.** Exact current head `1794c69547a75be33e6b83b9d8fed9b7fcecc7a3`; deterministic control machinery + JSON/HTML demo path are green after a real retraction-lineage semantic defect was caught and repaired. This establishes control-system behaviour only, not a current LLM failure or hardening effect.
 
-  `The Missing Edge` currently survives the strongest-owner pass better than the earlier candidates because open-world provenance semantics are established but current search has not yet found an AI-decision benchmark measuring the behavioural consequence of the **missing relationship edge itself**. That is a provisional gap, not a novelty claim. PR #353 is under explicit hostile review with instructions to kill it if the treatment is a wording artefact, scientifically trivial, already owned or only a prompt trick.
+  Current consequential gate:
+
+  ```text
+  REAL CURRENT AGENT
+  -> BASELINE + IDENTICAL REPLICATE
+  -> POWERED PROVENANCE MUTATION
+  -> NULL / JITTER CONTROL
+  -> PLAIN-ENGLISH WARNING CONTROL
+  -> CORRECT VS SHUFFLED/WRONG ANCESTRY
+  -> SAME AGENT HARDENED RERUN
+  ```
+
+  Keep ProofPath only if a reproducible real-agent failure survives the controls and the hardening reduces it without suppressing response to genuinely independent evidence.
 
   Competition bars:
   - **Apart AI x Epistemics** = strongest research proving ground. Winning shape: sharp failure + true null/control + measured effect + reusable minimal intervention + honest negative result path.
   - **Nebius x NVIDIA** = productisation bar. Required platform/model use must be material, plus strong implementation, coherent product design, credible impact and idea quality. Do not bolt platform calls on for eligibility.
 
-  No target-model experiment, competition registration, organiser-term acceptance, paid inference/cloud use or submission has occurred.
+  No target-model/provider experiment, competition registration, organiser-term acceptance, paid inference/cloud use or submission has occurred.
 
   ```text
   FIRST_IDEA != SELECTED_IDEA
   OWNER_SUBTRACTION_CAN_KILL_OUR_FAVOURITE
-  CI_PASS != WIN_CANDIDATE
-  NO_TARGET_RUN != EMPIRICAL_RESULT
+  GREEN_HARNESS != REAL_AGENT_FAILURE
+  CONTROL_AGENT != TARGET_MODEL
+  REAL_FAILURE_BEFORE_PRODUCT_POLISH
   BUILD_IF_USEFUL_WITHOUT_PRIZE
   ```
 
@@ -72,6 +86,8 @@ SILENCE != CONSENT
 CONSENT_AT_STEP_N != CONSENT_AT_STEP_N+1
 STOP -> STOP
 SUBJECT_CONSENT != THIRD_PARTY_CONSENT
+CANNOT_RECALL_ELSEWHERE != MAY_CONTINUE_HERE
+CORRECTION_TRAIL != REPUBLICATION_OF_THE_WITHDRAWN
 CURRENT_PUBLIC_ROUTE != PRIVATE_CUSTODY
 ```
 
@@ -92,6 +108,7 @@ IF_WE_LOSE -> USEFUL_WORK_SHOULD_REMAIN
 - COM / TRACE / ME / THR repository state is reacquirable through GitHub.
 - Campfire Relay repository main remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`; operational Relay tool is not exposed in this Framework aperture.
 - 1F916 is demonstrably live through its independent public witness, but authenticated Framework inbox/write/quota state and a full `/api/changes` catch-up are not established here. `FAILED_READ != QUIET_BOARD`.
+- This Framework aperture's container DNS route to GitHub failed during an attempted independent branch test; exact #351 execution is therefore witnessed by GitHub Actions, not a second container run.
 
 ## Consequential gates
 
