@@ -3,8 +3,8 @@ import json
 import sys
 import tempfile
 import unittest
-from unittest.mock import patch
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parent
 SPEC = importlib.util.spec_from_file_location("stage_a_openai", ROOT / "stage_a_openai.py")
@@ -107,6 +107,14 @@ class StageAOpenAITests(unittest.TestCase):
         self.assertAlmostEqual(mod.actual_cost_usd("gpt-5.6-terra", usage), 0.0032)
         self.assertAlmostEqual(mod.actual_cost_usd("gpt-5.6-sol", usage), 0.006)
 
+    def test_missing_usage_reserves_whole_call_ceiling(self):
+        req = self.requests[0]
+        for usage in ({}, {"input_tokens": None, "output_tokens": None}, None):
+            with self.subTest(usage=usage):
+                cost, missing = mod.cost_from_usage_or_reserve(req, usage)
+                self.assertTrue(missing)
+                self.assertAlmostEqual(cost, mod.worst_case_cost_usd(req))
+
     def test_failed_attempt_reserves_worst_case_and_is_not_silent_retry(self):
         req = self.requests[0]
         reserved = mod.worst_case_cost_usd(req)
@@ -119,6 +127,19 @@ class StageAOpenAITests(unittest.TestCase):
         }
         self.assertAlmostEqual(mod.accounted_spend_usd([failed]), reserved)
         self.assertIn(mod.ledger_key(req), mod.attempted_keys([failed]))
+
+    def test_attempting_row_reserves_cost_and_blocks_retry(self):
+        req = self.requests[0]
+        reserved = mod.worst_case_cost_usd(req)
+        attempting = {
+            "status": "attempting",
+            "model": req["model"],
+            "condition": req["condition"],
+            "run_index": req["run_index"],
+            "reserved_cost_usd": reserved,
+        }
+        self.assertAlmostEqual(mod.accounted_spend_usd([attempting]), reserved)
+        self.assertIn(mod.ledger_key(req), mod.attempted_keys([attempting]))
 
     def test_dry_run_writes_summary(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -134,16 +155,62 @@ class LedgerIdentityTests(unittest.TestCase):
     def setUp(self):
         fixture = mod.load_fixture(ROOT / "fixtures" / "source_laundering.json")
         self.requests = mod.build_stage_a_requests(fixture)
-        self.ledger = [dict(r, status="completed", cost_usd=0.001,
-                            parsed={"confidence": 0.5, "approve": False})
-                       for r in self.requests]
+        self.ledger = [
+            dict(
+                r,
+                status="completed",
+                cost_usd=0.001,
+                parsed={"confidence": 0.5, "approve": False},
+            )
+            for r in self.requests
+        ]
+
+    def attempt_event(self, request):
+        return {
+            "status": "attempting",
+            "measurement_head": request["measurement_head"],
+            "model": request["model"],
+            "condition": request["condition"],
+            "run_index": request["run_index"],
+            "input_sha256": request["input_sha256"],
+            "request_sha256": request["request_sha256"],
+            "reserved_cost_usd": mod.worst_case_cost_usd(request),
+        }
 
     def test_exact_resume_and_complete_score(self):
         mod.validate_ledger(self.requests, self.ledger)
         self.assertEqual(len(mod.attempted_keys(self.ledger)), 90)
         report = mod.score_completed(self.requests, self.ledger)
-        self.assertTrue(all(r["status"] == "NO_VIOLATION_OBSERVED"
-                            for r in report["models"].values()))
+        self.assertTrue(
+            all(
+                r["status"] == "NO_VIOLATION_OBSERVED"
+                for r in report["models"].values()
+            )
+        )
+
+    def test_attempt_then_complete_is_valid_and_not_double_charged(self):
+        req = self.requests[0]
+        attempt = self.attempt_event(req)
+        complete = dict(
+            req,
+            status="completed",
+            cost_usd=0.001,
+            parsed={"confidence": 0.5, "approve": False},
+        )
+        ledger = [attempt, complete]
+        mod.validate_ledger(self.requests, ledger)
+        self.assertAlmostEqual(mod.accounted_spend_usd(ledger), 0.001)
+        self.assertEqual(len(mod.attempted_keys(ledger)), 1)
+
+    def test_attempt_without_terminal_is_valid_but_scores_incomplete(self):
+        req = self.requests[0]
+        ledger = [self.attempt_event(req)]
+        mod.validate_ledger(self.requests, ledger)
+        report = mod.score_completed(self.requests, ledger)
+        self.assertEqual(report["models"][req["model"]]["status"], "INCOMPLETE")
+        self.assertAlmostEqual(
+            mod.accounted_spend_usd(ledger), mod.worst_case_cost_usd(req)
+        )
 
     def test_stale_identity_rejected_before_scorer(self):
         for field in ("input_sha256", "measurement_head", "request_sha256"):
@@ -154,13 +221,20 @@ class LedgerIdentityTests(unittest.TestCase):
                         mod.score_completed(self.requests, stale)
                     scorer.assert_not_called()
 
-    def test_duplicate_rejected_even_if_identical(self):
-        with self.assertRaisesRegex(ValueError, "duplicate ledger"):
+    def test_invalid_duplicate_terminal_transition_rejected(self):
+        with self.assertRaisesRegex(ValueError, "invalid ledger transition"):
             mod.score_completed(self.requests, self.ledger + [self.ledger[0]])
+
+    def test_terminal_then_attempting_transition_rejected(self):
+        req = self.requests[0]
+        with self.assertRaisesRegex(ValueError, "invalid ledger transition"):
+            mod.validate_ledger(self.requests, [self.ledger[0], self.attempt_event(req)])
 
     def test_missing_observation_stays_incomplete(self):
         report = mod.score_completed(self.requests, self.ledger[:-1])
-        self.assertEqual(report["models"][self.requests[-1]["model"]]["status"], "INCOMPLETE")
+        self.assertEqual(
+            report["models"][self.requests[-1]["model"]]["status"], "INCOMPLETE"
+        )
 
     def test_unknown_key_rejected(self):
         with self.assertRaisesRegex(ValueError, "unexpected ledger"):
