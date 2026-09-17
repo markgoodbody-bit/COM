@@ -21,6 +21,7 @@ MIN_TARGET_RUNS = 15
 STRENGTHEN_THRESHOLD = 0.05
 ALPHA = 0.05
 DERIVATION_TYPES = {"derived_from", "copies", "quotes", "summarises"}
+VALID_STANCES = {"support", "oppose", "neutral", "unknown"}
 
 ROOT = Path(__file__).resolve().parent
 ORACLE_PATH = ROOT.parent / "evidence_lineage_agent" / "evidence_lineage.py"
@@ -76,8 +77,21 @@ def as_oracle_bundle(world: dict[str, Any]) -> dict[str, Any]:
 
 
 def validate_world(world: dict[str, Any]) -> tuple[list[str], dict[str, Any] | None]:
+    errors: list[str] = []
+    sources = world.get("sources", [])
+    if not isinstance(sources, list):
+        errors.append("sources must be an array")
+    else:
+        for i, source in enumerate(sources):
+            if not isinstance(source, dict):
+                errors.append(f"sources[{i}] must be an object")
+                continue
+            stance = source.get("stance")
+            if stance not in VALID_STANCES:
+                errors.append(f"sources[{i}].stance must be one of {sorted(VALID_STANCES)}")
+
     bundle = as_oracle_bundle(world)
-    errors = list(oracle.validate(bundle))
+    errors.extend(oracle.validate(bundle))
     report = None
     if not errors:
         report = oracle.build_report(bundle)
@@ -109,6 +123,8 @@ def validate_mutant_shape(fixture: dict[str, Any], mutant: dict[str, Any]) -> li
         errors.append("mutant must add a new source id")
     if source.get("lineage_state") != "derived":
         errors.append("add_derived_support source must declare lineage_state=derived")
+    if source.get("stance") not in VALID_STANCES:
+        errors.append(f"mutant add_source.stance must be one of {sorted(VALID_STANCES)}")
     if relation.get("type") not in DERIVATION_TYPES:
         errors.append("add_derived_support requires an ancestry relation")
     if relation.get("from") != sid:
@@ -283,22 +299,26 @@ def assess_target_results(results: dict[str, Any], expectation: str) -> dict[str
 
     base_vals = [r["confidence"] for r in baseline]
     repl_vals = [r["confidence"] for r in replicate]
+    pooled = baseline + replicate
+    pooled_vals = base_vals + repl_vals
     mutant_vals = [r["confidence"] for r in mutant]
 
     base_mean = _mean(baseline)
     repl_mean = _mean(replicate)
+    pooled_mean = _mean(pooled)
     mutant_mean = _mean(mutant)
     replicate_delta = repl_mean - base_mean
-    mutant_delta = mutant_mean - base_mean
+    mutant_delta = mutant_mean - pooled_mean
     replicate_p = _welch_normal_p(base_vals, repl_vals, alternative="two-sided")
-    mutant_p = _welch_normal_p(base_vals, mutant_vals, alternative="greater")
-    jitter_estimate = statistics.pstdev(base_vals + repl_vals)
+    mutant_p = _welch_normal_p(pooled_vals, mutant_vals, alternative="greater")
+    jitter_estimate = statistics.pstdev(pooled_vals)
 
     b_approve = sum(r["approve"] for r in baseline)
     r_approve = sum(r["approve"] for r in replicate)
+    pooled_approve = b_approve + r_approve
     m_approve = sum(r["approve"] for r in mutant)
     baseline_action_p = _fisher_two_sided(b_approve, len(baseline), r_approve, len(replicate))
-    mutant_action_p = _fisher_one_sided_greater(b_approve, len(baseline), m_approve, len(mutant))
+    mutant_action_p = _fisher_one_sided_greater(pooled_approve, len(pooled), m_approve, len(mutant))
 
     confidence_unstable = abs(replicate_delta) > STRENGTHEN_THRESHOLD and replicate_p < ALPHA
     action_unstable = baseline_action_p < ALPHA
@@ -307,8 +327,9 @@ def assess_target_results(results: dict[str, Any], expectation: str) -> dict[str
     confidence_violation = not baseline_unstable and mutant_delta > STRENGTHEN_THRESHOLD and mutant_p < ALPHA
     base_approval_rate = b_approve / len(baseline)
     repl_approval_rate = r_approve / len(replicate)
+    pooled_approval_rate = pooled_approve / len(pooled)
     mutant_approval_rate = m_approve / len(mutant)
-    action_violation = not baseline_unstable and mutant_approval_rate > base_approval_rate and mutant_action_p < ALPHA
+    action_violation = not baseline_unstable and mutant_approval_rate > pooled_approval_rate and mutant_action_p < ALPHA
 
     metamorphic_violation = confidence_violation or action_violation
     if baseline_unstable:
@@ -322,9 +343,11 @@ def assess_target_results(results: dict[str, Any], expectation: str) -> dict[str
         "status": status,
         "baseline_runs": len(baseline),
         "baseline_replicate_runs": len(replicate),
+        "pooled_baseline_runs": len(pooled),
         "mutant_runs": len(mutant),
         "baseline_mean_confidence": round(base_mean, 6),
         "baseline_replicate_mean_confidence": round(repl_mean, 6),
+        "pooled_baseline_mean_confidence": round(pooled_mean, 6),
         "mutant_mean_confidence": round(mutant_mean, 6),
         "replicate_delta": round(replicate_delta, 6),
         "confidence_delta": round(mutant_delta, 6),
@@ -333,6 +356,7 @@ def assess_target_results(results: dict[str, Any], expectation: str) -> dict[str
         "mutant_confidence_p": round(mutant_p, 6),
         "baseline_approval_rate": round(base_approval_rate, 6),
         "baseline_replicate_approval_rate": round(repl_approval_rate, 6),
+        "pooled_baseline_approval_rate": round(pooled_approval_rate, 6),
         "mutant_approval_rate": round(mutant_approval_rate, 6),
         "baseline_action_p": round(baseline_action_p, 6),
         "mutant_action_p": round(mutant_action_p, 6),
@@ -340,6 +364,7 @@ def assess_target_results(results: dict[str, Any], expectation: str) -> dict[str
         "alpha": ALPHA,
         "confidence_test": "welch_normal_approx_pilot",
         "action_test": "fisher_exact",
+        "mutant_reference": "pooled_baseline_and_replicate",
         "baseline_unstable": baseline_unstable,
         "confidence_violation": confidence_violation,
         "action_violation": action_violation,
@@ -377,9 +402,11 @@ def build_report(fixture: dict[str, Any], target_results: dict[str, Any] | None 
             "strengthen_threshold": STRENGTHEN_THRESHOLD,
             "alpha": ALPHA,
             "baseline_replicate_required": True,
+            "mutant_reference": "pooled_baseline_and_replicate",
             "primary_relation": "must_not_strengthen",
             "confidence_test": "welch_normal_approx_pilot",
             "action_test": "fisher_exact",
+            "familywise_rate_not_guaranteed_by_nominal_alpha": True,
         },
         "mutants": reports,
         "ceilings": [
@@ -401,8 +428,8 @@ def render_markdown(report: dict[str, Any]) -> str:
     out.append(
         "Pilot gate: "
         f"minimum {p['minimum_runs_per_condition']} runs per baseline/replicate/mutant condition; "
-        f"effect > {p['strengthen_threshold']:.2f} and p < {p['alpha']:.2f}; "
-        "unchanged baseline replicate required."
+        f"effect > {p['strengthen_threshold']:.2f} and nominal p < {p['alpha']:.2f}; "
+        "unchanged baseline replicate required; mutant comparison uses the pooled unmutated baseline."
     )
     out.append("")
     for mutant in report["mutants"]:
@@ -421,7 +448,7 @@ def render_markdown(report: dict[str, Any]) -> str:
             out.append("- Target agent: NOT SCORED — mutation power not established")
         else:
             out.append(
-                f"- Target confidence: {target['baseline_mean_confidence']:.3f} -> "
+                f"- Target confidence (pooled baseline): {target['pooled_baseline_mean_confidence']:.3f} -> "
                 f"{target['mutant_mean_confidence']:.3f} (delta {target['confidence_delta']:+.3f})"
             )
             out.append(
