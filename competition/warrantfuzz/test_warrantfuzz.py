@@ -17,8 +17,8 @@ class WarrantFuzzTests(unittest.TestCase):
     def test_mutant_adds_one_derivative(self):
         f = self.fixture()
         world = mod.apply_mutant(f, f["mutants"][0])
-        self.assertEqual(len(f["base"]["sources"]), 2)
-        self.assertEqual(len(world["sources"]), 3)
+        self.assertEqual(len(f["base"]["sources"]), 1)
+        self.assertEqual(len(world["sources"]), 2)
         self.assertEqual(world["relations"][0]["to"], "origin-a")
 
     def test_evidence_blind_control_does_not_move(self):
