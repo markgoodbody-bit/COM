@@ -2,12 +2,12 @@
 """ATRS answerability coverage audit.
 
 Enumerates current UK Algorithmic Transparency Recording Standard records from
-the official GOV.UK Search API, fetches the public record pages, and extracts a
+the official GOV.UK Search API, fetches each public record page, and extracts a
 small set of answerability-relevant sections.
 
-This deliberately reports observable disclosure properties, not a transparency
-or ethics score. GOV.UK public-sector information is reused under the Open
-Government Licence v3.0. No code from third-party ATRS harvesters is copied.
+This reports observable disclosure properties, not a transparency/ethics score.
+GOV.UK public-sector information is reused under the Open Government Licence
+v3.0. No third-party harvester code is copied.
 """
 
 from __future__ import annotations
@@ -27,47 +27,58 @@ from typing import Any
 
 SEARCH_URL = "https://www.gov.uk/api/search.json"
 BASE_URL = "https://www.gov.uk"
-USER_AGENT = "framework-atrs-answerability-audit/0.1 (public research)"
+USER_AGENT = "framework-atrs-answerability-audit/0.2 (public research)"
 
+# Match field headings, not Tier/category headings. ATRS numbering shifted across
+# versions, so names carry more authority than one fixed number.
 FIELD_PATTERNS = {
-    "human_review": (r"\bhuman (?:decisions and )?review\b", r"\bhuman decisions and review\b"),
-    "appeals_review": (r"\bappeals? and review\b",),
-    "model_performance": (r"\bmodel performance\b", r"\bperformance metrics?\b"),
-    "risks": (r"\brisks?\b",),
-    "impact_assessment": (r"\bimpact assessment\b",),
-    "maintenance": (r"\bmaintenance\b",),
-    "senior_responsible_owner": (r"\bsenior responsible owner\b",),
+    "human_review": (
+        r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?human review$",
+        r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?human decisions and review$",
+    ),
+    "appeals_review": (r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?appeals? and review$",),
+    "model_performance": (r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?model performance$",),
+    "risks": (
+        r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?risks$",
+        r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?risks and mitigations$",
+    ),
+    "impact_assessment": (
+        r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?impact assessment$",
+        r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?impact assessments$",
+    ),
+    "maintenance": (r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?maintenance$",),
+    "senior_responsible_owner": (r"^(?:\d+(?:\.\d+)*\s*[-.]?\s*)?senior responsible owner$",),
 }
 
 NONE_PATTERNS = (
     r"\bnot applicable\b",
-    r"\bn/?a\b",
-    r"\bnone\b",
+    r"^\s*n/?a\s*[.!]?$",
+    r"^\s*none\s*[.!]?$",
     r"\bno human review\b",
-    r"\bno (?:specific )?(?:appeal|complaint|review)\b",
+    r"\bno (?:specific )?(?:appeal|complaint|review)(?:s| procedures?| processes?)?\b",
 )
 
 PUBLIC_ROUTE_PATTERNS = (
     r"mailto:",
     r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
+    r"https?://",
     r"\bcontact(?: us)?\b",
     r"\bcomplaints? (?:procedure|process|route|page|team)\b",
     r"\breview request\b",
-    r"\bappeal(?:s| process| procedure| route)?\b",
     r"\bqueries? (?:line|team|email)\b",
-    r"https?://",
 )
 
 
 @dataclass
 class Section:
+    level: str
     heading: str
     text: str
     html_fragment: str
 
 
 class SectionParser(HTMLParser):
-    """Extract h2/h3 sections while preserving links as visible href markers."""
+    """Extract h2/h3 sections while preserving link destinations as markers."""
 
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -75,17 +86,18 @@ class SectionParser(HTMLParser):
         self.heading_tag: str | None = None
         self.heading_parts: list[str] = []
         self.current_heading: str | None = None
+        self.current_level: str | None = None
         self.current_text: list[str] = []
         self.current_html: list[str] = []
         self.sections: list[Section] = []
-        self.capture = False
 
     def _flush(self) -> None:
-        if self.current_heading is None:
+        if self.current_heading is None or self.current_level is None:
             return
         text = re.sub(r"\s+", " ", " ".join(self.current_text)).strip()
-        fragment = " ".join(self.current_html)
-        self.sections.append(Section(self.current_heading, text, fragment))
+        self.sections.append(
+            Section(self.current_level, self.current_heading, text, " ".join(self.current_html))
+        )
         self.current_text = []
         self.current_html = []
 
@@ -95,21 +107,18 @@ class SectionParser(HTMLParser):
             self.in_heading = True
             self.heading_tag = tag
             self.heading_parts = []
-            self.capture = False
             return
-        if self.current_heading is not None:
-            self.capture = True
-            if tag == "a":
-                href = dict(attrs).get("href")
-                if href:
-                    self.current_html.append(f'href="{html.escape(href)}"')
+        if self.current_heading is not None and tag == "a":
+            href = dict(attrs).get("href")
+            if href:
+                self.current_html.append(f'href="{html.escape(href)}"')
 
     def handle_endtag(self, tag: str) -> None:
         if self.in_heading and tag == self.heading_tag:
             self.current_heading = re.sub(r"\s+", " ", " ".join(self.heading_parts)).strip()
+            self.current_level = tag
             self.in_heading = False
             self.heading_tag = None
-            self.capture = True
 
     def handle_data(self, data: str) -> None:
         s = data.strip()
@@ -117,7 +126,7 @@ class SectionParser(HTMLParser):
             return
         if self.in_heading:
             self.heading_parts.append(s)
-        elif self.current_heading is not None and self.capture:
+        elif self.current_heading is not None:
             self.current_text.append(s)
             self.current_html.append(html.escape(s))
 
@@ -126,15 +135,19 @@ class SectionParser(HTMLParser):
         self._flush()
 
 
+def _request(url: str):
+    return urllib.request.urlopen(
+        urllib.request.Request(url, headers={"User-Agent": USER_AGENT}), timeout=45
+    )
+
+
 def request_json(url: str) -> dict[str, Any]:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=45) as response:
+    with _request(url) as response:
         return json.load(response)
 
 
 def request_text(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=45) as response:
+    with _request(url) as response:
         return response.read().decode("utf-8", errors="replace")
 
 
@@ -171,10 +184,19 @@ def parse_sections(page_html: str) -> list[Section]:
     return parser.sections
 
 
+def normalize_heading(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip().lower()
+
+
 def find_section(sections: list[Section], patterns: tuple[str, ...]) -> Section | None:
-    for section in sections:
-        h = section.heading.lower()
-        if any(re.search(p, h, flags=re.I) for p in patterns):
+    # Field values are h3s on current records. Prefer them. Fall back to any
+    # exact field-name match for older renderings, but never match a "Tier 2" h2.
+    ordered = [s for s in sections if s.level == "h3"] + [s for s in sections if s.level != "h3"]
+    for section in ordered:
+        h = normalize_heading(section.heading)
+        if h.startswith("tier "):
+            continue
+        if any(re.fullmatch(p, h, flags=re.I) for p in patterns):
             return section
     return None
 
@@ -200,10 +222,7 @@ def classify_section(section: Section | None) -> dict[str, Any]:
 
 def audit_record(record: dict[str, Any], page_html: str) -> dict[str, Any]:
     sections = parse_sections(page_html)
-    fields = {
-        name: classify_section(find_section(sections, patterns))
-        for name, patterns in FIELD_PATTERNS.items()
-    }
+    fields = {name: classify_section(find_section(sections, patterns)) for name, patterns in FIELD_PATTERNS.items()}
     return {**record, "fields": fields, "section_count": len(sections)}
 
 
