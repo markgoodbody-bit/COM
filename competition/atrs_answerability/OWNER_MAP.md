@@ -132,7 +132,7 @@ Earned engineering/evidence result:
 - the `Appeals and review` extraction/pilot can be reproduced from the evidence bundle;
 - a preregistered manual pilot finds materially different reader-visible actions/process descriptions behind the same field heading.
 
-Important repair: reproducing the same extraction over the same bytes did **not** establish that every other field-name mapping was correct. Codex found older ATRS heading families that the original parser missed. A version-aware reparse over the same 152 frozen HTML files corrected those mappings without refetching source.
+Important repair: reproducing the same extraction over the same bytes did **not** establish that every other field-name mapping was correct. **Claude Code identified the legacy-heading misses; Codex independently confirmed them against the frozen witness.** A version-aware reparse over the same 152 frozen HTML files corrected those mappings without refetching source.
 
 ```text
 REPRODUCED != CORRECT
