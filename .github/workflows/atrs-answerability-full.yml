@@ -1,10 +1,12 @@
-name: ATRS Answerability Full Corpus
+name: ATRS Answerability Membership Gate
 
 on:
   push:
     branches:
       - 'framework/atrs-answerability-audit-v0'
     paths:
+      - 'competition/atrs_answerability/membership.py'
+      - 'competition/atrs_answerability/test_membership.py'
       - '.github/workflows/atrs-answerability-full.yml'
   workflow_dispatch:
 
@@ -12,57 +14,22 @@ permissions:
   contents: read
 
 jobs:
-  full-current-corpus:
+  current-register-membership:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Deterministic parser and hostile tests
-        run: python -m unittest competition/atrs_answerability/test_audit.py -v
-      - name: Fixed live witness gate
+      - name: Membership parser tests
+        run: python -m unittest competition/atrs_answerability/test_membership.py -v
+      - name: Compare official finder with generic Search API
         run: |
-          python - <<'PY'
-          import importlib.util, sys
-          from pathlib import Path
-          p=Path('competition/atrs_answerability/audit.py')
-          spec=importlib.util.spec_from_file_location('atrs_live_gate', p)
-          m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
-          expected={
-            'https://www.gov.uk/algorithmic-transparency-records/hmrc-ask-hmrc-online': False,
-            'https://www.gov.uk/algorithmic-transparency-records/money-and-pensions-service-pension-calculator': True,
-            'https://www.gov.uk/algorithmic-transparency-records/dvla-contact-centre-chatbot-service': False,
-            'https://www.gov.uk/algorithmic-transparency-records/ipo-check-if-you-could-register-your-trade-mark-tool': True,
-            'https://www.gov.uk/algorithmic-transparency-records/dfe-attendance-reports-using-similar-schools': False,
-          }
-          for url, want in expected.items():
-              row=m.audit_record({'title': url.rsplit('/',1)[-1], 'url': url}, m.request_text(url))
-              got=row['fields']['appeals_review']['public_route_locator']
-              assert got is want, (url, got, want, row['fields']['appeals_review'])
-              assert row['fields']['appeals_review']['section_present']
-              assert row['fields']['risks']['heading'] is not None
-              assert row['fields']['impact_assessment']['heading'] is not None
-              print(url, 'appeal_locator=', got)
-          PY
-      - name: Fetch and audit current GOV.UK ATRS corpus
-        run: |
-          python competition/atrs_answerability/audit.py \
-            --delay 0.05 \
-            --json-out /tmp/atrs_full.json \
-            --csv-out /tmp/atrs_full.csv
-          python - <<'PY'
-          import json
-          r=json.load(open('/tmp/atrs_full.json'))
-          assert r['summary']['records'] >= 100, r['summary']['records']
-          print(json.dumps(r['summary'], indent=2))
-          PY
-      - name: Preserve raw current-corpus audit for hostile review
+          python competition/atrs_answerability/membership.py --out /tmp/atrs_membership.json
+      - name: Preserve exact membership comparison
         uses: actions/upload-artifact@v4
         with:
-          name: atrs-full-corpus-${{ github.run_id }}
-          path: |
-            /tmp/atrs_full.json
-            /tmp/atrs_full.csv
+          name: atrs-membership-${{ github.run_id }}
+          path: /tmp/atrs_membership.json
           retention-days: 30
