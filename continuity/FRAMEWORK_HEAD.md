@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-16 — Europe/London  
+Updated: 2026-09-17 — Europe/London  
 Later live source and direct human direction win.
 
 ## FRESH-APERTURE DISCIPLINE
@@ -25,12 +25,13 @@ CONSEQUENTIAL_OR_AUTHORITY_AMBIGUOUS -> ASK / HAND_BACK
 PURPOSE > INSTRUMENT
 ```
 
-There is **NO GENERAL WORLD-GAP LANE**. Two bounded current lanes exist under direct Mark direction:
+There is **NO GENERAL WORLD-GAP LANE**. Three bounded current lanes exist under direct Mark direction:
 
 1. **COM #347 — The Human Record product/scale quality.**
 2. **COM #348 — project resource/opportunity quarry.**
+3. **COM #349 — competition tournament / active bounded build.**
 
-Neither lane changes the guiding purpose.
+None of these lanes changes the guiding purpose.
 
 ## TRACE / ME RELEASE STATE — HUMAN GATE EXERCISED
 
@@ -253,6 +254,41 @@ Two Parents / Listing 23 submission 490 remains owner-result watch:
 
 ```text
 SUBMITTED != AWARDED != PAID
+```
+
+## COMPETITION TOURNAMENT — COM #349
+
+Direct Mark direction on 17 September 2026: `go for it`, then `make sure you're building something that could win. don't just go with the first idea`.
+
+Owner subtraction has already demoted the first plausible artefacts rather than defending them:
+- PR #350 evidence-lineage oracle: useful substrate only;
+- PR #351 WarrantFuzz: useful experimental harness, not the competition-defining idea;
+- PR #352: preserve Claude Code's red-by-design hostile evidence;
+- PR #353 `The Missing Edge`: current lead candidate, **not selected entry**.
+
+Current question:
+
+> Can a minimal machine-readable open-world provenance representation make current LLM agents operationalize the already-motivated unknown-dependence regime, first in relationship assessment and then in downstream decisions, without losing positively established independent evidence?
+
+Closest owner currently identified is Bara, *Epistemic Sybil Resistance* (September 2026), which already owns the central unobserved-ancestry/report-multiplicity mechanism. PR #353 is therefore a follow-on interface/behaviour experiment, not a novelty claim about that mechanism.
+
+Exact observed PR #353 head: `fd5e3e918e50fe7bd6da69122b2fde1373e7f833`. It carries six synthetic cases, six matched provenance conditions, separate relationship-assessment and decision-consequence arms, deterministic closed/open-world reference solvers, frozen scoring/preregistration and exact-head no-network CI PASS in run `35208415862`.
+
+Still required before selection:
+- independent KILL/SHRINK/REPAIR review;
+- surface-form robustness;
+- legitimate multi-model target execution with unchanged replicates/jitter controls;
+- an empirical effect that survives verified-independent cost;
+- a credible product path if Nebius remains a target.
+
+No target-model/provider call, competition account/registration, organiser-term acceptance, paid inference/cloud use, travel commitment or submission has occurred.
+
+```text
+FIRST_IDEA != SELECTED_IDEA
+PRIOR_WORK_OWNS_MECHANISM != NO_INTERFACE_QUESTION
+REFERENCE_SOLVER_PASS != LLM_RESULT
+LEAD_CANDIDATE != SELECTED_ENTRY
+POSSIBLE_PRIZE = £0
 ```
 
 ## FULL COMSYNC REACHABILITY — 16 Sep 2026
