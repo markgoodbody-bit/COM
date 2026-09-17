@@ -1,0 +1,38 @@
+name: Evidence lineage agent v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/evidence_lineage_agent/**'
+      - '.github/workflows/evidence-lineage-agent.yml'
+  push:
+    branches:
+      - 'framework/evidence-lineage-agent-v0'
+    paths:
+      - 'competition/evidence_lineage_agent/**'
+      - '.github/workflows/evidence-lineage-agent.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile competition/evidence_lineage_agent/evidence_lineage.py competition/evidence_lineage_agent/test_evidence_lineage.py
+      - name: Unit tests
+        run: python -m unittest -v competition/evidence_lineage_agent/test_evidence_lineage.py
+      - name: CLI fixture render
+        run: |
+          python competition/evidence_lineage_agent/evidence_lineage.py \
+            competition/evidence_lineage_agent/fixtures/derivative_repeat.json \
+            --json /tmp/evidence-lineage-report.json \
+            --markdown /tmp/evidence-lineage-report.md
+          test -s /tmp/evidence-lineage-report.json
+          test -s /tmp/evidence-lineage-report.md
+          grep -F 'REPETITION != CORROBORATION' /tmp/evidence-lineage-report.md
