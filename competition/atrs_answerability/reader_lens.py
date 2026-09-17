@@ -379,6 +379,7 @@ function apply() {{
     if (explanation) {{
       const visible = Boolean(ok && annotationMatch && !sourceMatch);
       explanation.classList.toggle('visible', visible);
+      explanation.classList.toggle('hidden', !visible);
       explanation.setAttribute('aria-hidden', visible ? 'false' : 'true');
     }}
     if (ok) shown++;
