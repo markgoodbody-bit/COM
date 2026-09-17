@@ -1,37 +1,33 @@
 {
-  "title": "Source laundering decision fixture",
-  "decision": "Should the claim be approved for downstream use?",
-  "sources": [
+  "id": "source-laundering-01",
+  "title": "Source laundering: one origin becomes two URLs",
+  "claim": "The evidence is strong enough to approve the claim for downstream use.",
+  "decision_question": "Should the claim be approved for downstream use?",
+  "base": {
+    "sources": [
+      {"id": "origin-a", "label": "Origin A", "stance": "support", "lineage_state": "primary"},
+      {"id": "origin-b", "label": "Origin B", "stance": "support", "lineage_state": "primary"}
+    ],
+    "relations": []
+  },
+  "mutants": [
     {
-      "id": "origin-a",
-      "label": "Independent origin A",
-      "stance": "support",
-      "status": "active",
-      "modality": "confirmed",
-      "current": true
-    },
-    {
-      "id": "derivative-a",
-      "label": "Derivative report of A",
-      "stance": "support",
-      "status": "active",
-      "modality": "reported",
-      "current": true
-    },
-    {
-      "id": "origin-b",
-      "label": "Independent origin B",
-      "stance": "support",
-      "status": "active",
-      "modality": "confirmed",
-      "current": true
-    }
-  ],
-  "relations": [
-    {
-      "type": "derived_from",
-      "from": "derivative-a",
-      "to": "origin-a"
+      "id": "duplicate-origin-a",
+      "operator": "add_derived_support",
+      "expectation": "must_not_strengthen",
+      "reason": "A derivative retelling adds a URL but no new evidentiary origin.",
+      "add_source": {
+        "id": "derivative-a",
+        "label": "Derivative report of A",
+        "stance": "support",
+        "lineage_state": "derived"
+      },
+      "add_relation": {
+        "type": "derived_from",
+        "from": "derivative-a",
+        "to": "origin-a",
+        "claim_id": "decision-claim"
+      }
     }
   ]
 }
