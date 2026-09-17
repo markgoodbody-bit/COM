@@ -1,0 +1,66 @@
+name: ATRS Reader Lens frozen demo
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/reader_lens.py'
+      - 'competition/atrs_answerability/test_reader_lens.py'
+      - 'competition/atrs_answerability/exploratory_semantic_census.py'
+      - '.github/workflows/atrs-reader-lens.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  build-frozen-reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download pinned September evidence bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: atrs-reproducible-corpus-35257984573
+          path: /tmp/atrs-source
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: markgoodbody-bit/COM
+          run-id: 35257984573
+      - name: Verify pinned report identity
+        run: |
+          test -f /tmp/atrs-source/atrs_full.json
+          echo 'c13d62cc685c9c4dc1e6aabcfb658ab40460f4b51abf46f05a242032d0330eb9  /tmp/atrs-source/atrs_full.json' | sha256sum -c -
+      - name: Build evidence-bound exploratory annotations
+        run: |
+          python competition/atrs_answerability/exploratory_semantic_census.py \
+            /tmp/atrs-source/atrs_full.json \
+            --json-out /tmp/atrs-semantic.json
+      - name: Build static reader lens
+        run: |
+          python competition/atrs_answerability/reader_lens.py \
+            /tmp/atrs-source/atrs_full.json \
+            --semantic /tmp/atrs-semantic.json \
+            --out /tmp/ATRS_READER_LENS_20260917.html
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('/tmp/ATRS_READER_LENS_20260917.html')
+          t=p.read_text(encoding='utf-8')
+          assert t.count('class="card"') == 152, t.count('class="card"')
+          assert 'ATRS Reader Lens' in t
+          assert 'not a transparency score' in t
+          assert 'Do not infer route effectiveness' in t
+          print('reader cards=152 bytes=', p.stat().st_size)
+          PY
+          sha256sum /tmp/ATRS_READER_LENS_20260917.html
+      - name: Preserve reader demo
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-reader-lens-20260917-${{ github.run_id }}
+          path: /tmp/ATRS_READER_LENS_20260917.html
+          retention-days: 30
