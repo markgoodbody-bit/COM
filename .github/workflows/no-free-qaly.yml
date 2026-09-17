@@ -1,0 +1,46 @@
+name: No Free QALY v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/no_free_qaly/**'
+      - '.github/workflows/no-free-qaly.yml'
+  push:
+    branches:
+      - 'framework/no-free-qaly-v0'
+    paths:
+      - 'competition/no_free_qaly/**'
+      - '.github/workflows/no-free-qaly.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile competition/no_free_qaly/benchmark.py competition/no_free_qaly/test_benchmark.py
+      - name: Unit tests
+        run: python -m unittest competition/no_free_qaly/test_benchmark.py -v
+      - name: Exact report smoke
+        run: |
+          python competition/no_free_qaly/benchmark.py competition/no_free_qaly/cases.json --out /tmp/report.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/report.json'))
+          assert r['objective_rank_reversal'] is True
+          assert r['monetary_rank_reversal'] is True
+          assert r['stakeholder_rank_reversal'] is True
+          assert r['preference_sensitive_case']['accuracy']=='UNDEFINED_NO_OBJECTIVE_CORRECT_ACTION'
+          assert 'decision_quality_score' not in r
+          print(json.dumps({
+              'objective_rankings': r['objective_rankings'],
+              'monetary_rankings': r['monetary_rankings'],
+              'stakeholder_rank_reversal': r['stakeholder_rank_reversal']
+          }, indent=2))
+          PY
