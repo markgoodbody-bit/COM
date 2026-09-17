@@ -10,106 +10,89 @@ assert SPEC and SPEC.loader
 sys.modules[SPEC.name] = mod
 SPEC.loader.exec_module(mod)
 
+
+def audit(body: str):
+    return mod.audit_page("https://www.gov.uk/algorithmic-transparency-records/example", body.encode("utf-8"), fetched_at_utc="2026-09-17T00:00:00+00:00")
+
+
 SAMPLE = """
-<html><body>
-<h2>Tier 2 - Decision-making Processes</h2>
-<p>Context only.</p>
-<h3>3.2 - Human review</h3>
-<p>If confidence is low, an officer checks the result before any decision.</p>
-<h3>3.5 - Appeals and review</h3>
-<p>Users can submit a review request at <a href="https://example.gov.uk/review">the public review page</a>.</p>
+<html><body><h1>Example Tool</h1>
+<h2>Tier 2 - Decision-making Processes</h2><p>Context only.</p>
+<h3>3.2 - Human review</h3><p>If confidence is low, an officer checks the result.</p>
+<h3>3.5 - Appeals and review</h3><p>Users can submit a review at <a href="https://example.gov.uk/review">the review page</a>.</p>
 <h2>Tier 2 - Technical Specification and Data</h2>
-<h3>4.2.7 - Model performance</h3>
-<p>Precision and recall are monitored quarterly.</p>
+<h3>4.2.7 - Model performance</h3><p>Precision and recall are monitored quarterly.</p>
 <h2>Tier 2 - Risks, Mitigations and Impact Assessments</h2>
-<p>This category heading is not itself a risk disclosure.</p>
-<h3>5.1 - Impact assessments</h3>
-<p>A DPIA was completed.</p>
-<h3>5.2 - Risks and mitigations</h3>
-<p>Known risk: false positives; mitigation: manual check.</p>
-</body></html>
-"""
-
-SAMPLE_NONE = """
-<html><body>
-<h3>3.2 - Human review</h3><p>No human review as no decision making capability.</p>
-<h3>3.5 - Appeals and review</h3><p>Not applicable.</p>
-</body></html>
-"""
-
-SAMPLE_CONTACT_WORD_ONLY = """
-<html><body>
-<h3>3.5 - Appeals and review</h3>
-<p>The Contact Centre team reviews routing and may transfer a user to an advisor or email channel.</p>
-</body></html>
-"""
-
-SAMPLE_PHONE = """
-<html><body>
-<h3>3.5 - Appeals and review</h3>
-<p>Users can call 0800 011 3797 for help.</p>
+<h3>5.1 - Impact assessments</h3><p>A DPIA was completed.</p>
+<h3>5.2 - Risks and mitigations</h3><p>Known risk: false positives.</p>
 </body></html>
 """
 
 
 class ATRSAuditTests(unittest.TestCase):
-    def test_sections_extract_by_heading(self):
-        sections = mod.parse_sections(SAMPLE)
-        human = mod.find_section(sections, mod.FIELD_PATTERNS["human_review"])
-        appeals = mod.find_section(sections, mod.FIELD_PATTERNS["appeals_review"])
-        self.assertIsNotNone(human)
-        self.assertIsNotNone(appeals)
-        self.assertIn("officer checks", human.text)
-
-    def test_category_heading_is_not_mistaken_for_risk_field(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
+    def test_exact_field_heading_does_not_match_tier_heading(self):
+        row = audit(SAMPLE)
         risk = row["fields"]["risks"]
-        self.assertEqual(risk["heading"], "5.2 - Risks and mitigations")
-        self.assertGreater(risk["characters"], 0)
+        self.assertEqual(risk["match_count"], 1)
+        self.assertEqual(risk["matches"][0]["heading"], "5.2 - Risks and mitigations")
 
     def test_plural_impact_assessments_is_recognised(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
-        impact = row["fields"]["impact_assessment"]
-        self.assertTrue(impact["section_present"])
-        self.assertEqual(impact["heading"], "5.1 - Impact assessments")
+        row = audit(SAMPLE)
+        self.assertEqual(row["fields"]["impact_assessment"]["match_count"], 1)
 
-    def test_appeal_href_is_public_route_locator(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
-        self.assertTrue(row["fields"]["appeals_review"]["public_route_locator"])
+    def test_source_evidence_is_preserved(self):
+        row = audit(SAMPLE)
+        self.assertEqual(row["title"], "Example Tool")
+        self.assertEqual(len(row["source_sha256"]), 64)
+        self.assertEqual(row["fetched_at_utc"], "2026-09-17T00:00:00+00:00")
+        appeal = row["fields"]["appeals_review"]["matches"][0]
+        self.assertIn("Users can submit", appeal["text"])
+        self.assertEqual(appeal["contact_tokens"]["hrefs"], ["https://example.gov.uk/review"])
 
-    def test_phone_is_public_route_locator(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE_PHONE)
-        self.assertTrue(row["fields"]["appeals_review"]["public_route_locator"])
+    def test_unrelated_href_is_only_a_syntactic_token_not_a_route_claim(self):
+        body = '''<html><h3>3.5 - Appeals and review</h3><p>No appeals are available. Read <a href="https://example.org/privacy">our privacy policy</a>.</p></html>'''
+        row = audit(body)
+        field = row["fields"]["appeals_review"]
+        self.assertTrue(field["syntactic_contact_token_present"])
+        self.assertNotIn("public_route_locator", field)
+        self.assertTrue(field["contains_none_or_na_phrase"])
 
-    def test_generic_contact_word_is_not_public_route_locator(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE_CONTACT_WORD_ONLY)
-        self.assertFalse(row["fields"]["appeals_review"]["public_route_locator"])
+    def test_plain_text_url_is_preserved_as_syntactic_token(self):
+        body = '''<html><h3>3.5 - Appeals and review</h3><p>Request review at https://example.gov.uk/appeal</p></html>'''
+        row = audit(body)
+        token = row["fields"]["appeals_review"]["matches"][0]["contact_tokens"]
+        self.assertEqual(token["urls_in_text"], ["https://example.gov.uk/appeal"])
+        self.assertTrue(token["syntactic_contact_token_present"])
 
-    def test_route_locator_is_only_interpreted_for_appeals_field(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
-        self.assertFalse(row["fields"]["human_review"]["public_route_locator"])
-        self.assertFalse(row["fields"]["risks"]["public_route_locator"])
+    def test_repeated_sections_are_all_preserved(self):
+        body = '''
+        <html><h3>4.2.7 - Model performance</h3><p>None.</p>
+        <h3>4.2.7 - Model performance</h3><p>Model B accuracy is 95 percent.</p></html>'''
+        row = audit(body)
+        field = row["fields"]["model_performance"]
+        self.assertEqual(field["match_count"], 2)
+        self.assertEqual([x["text"] for x in field["matches"]], ["None.", "Model B accuracy is 95 percent."])
+        self.assertTrue(field["contains_none_or_na_phrase"])
 
-    def test_explicit_none_is_preserved(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE_NONE)
-        self.assertTrue(row["fields"]["human_review"]["states_none_or_not_applicable"])
-        self.assertTrue(row["fields"]["appeals_review"]["states_none_or_not_applicable"])
+    def test_none_phrase_is_not_promoted_to_field_semantics(self):
+        body = '''<html><h3>3.5 - Appeals and review</h3><p>The old process is not applicable. Request review at <a href="/appeal">current route</a>.</p></html>'''
+        row = audit(body)
+        field = row["fields"]["appeals_review"]
+        self.assertTrue(field["contains_none_or_na_phrase"])
+        self.assertNotIn("states_none_or_not_applicable", field)
+        self.assertTrue(field["syntactic_contact_token_present"])
 
-    def test_missing_field_is_not_inferred_absent_in_reality(self):
-        row = mod.audit_record({"title": "x", "url": "u"}, "<html><body><h2>Tier 1</h2><p>Hello</p></body></html>")
+    def test_missing_disclosure_is_only_missing_disclosure(self):
+        row = audit("<html><h2>Tier 1</h2><p>Hello</p></html>")
         self.assertFalse(row["fields"]["appeals_review"]["section_present"])
+        self.assertEqual(row["fields"]["appeals_review"]["match_count"], 0)
 
-    def test_summary_counts_observations_only(self):
-        rows = [
-            mod.audit_record({"title": "a", "url": "a"}, SAMPLE),
-            mod.audit_record({"title": "b", "url": "b"}, SAMPLE_NONE),
-        ]
-        summary = mod.summarise(rows)
+    def test_summary_counts_multiple_matches_separately(self):
+        repeated = audit('''<html><h3>4.2.7 - Model performance</h3><p>None.</p><h3>4.2.7 - Model performance</h3><p>Accuracy 95%.</p></html>''')
+        ordinary = audit(SAMPLE)
+        summary = mod.summarise([repeated, ordinary])
         self.assertEqual(summary["records"], 2)
-        self.assertEqual(summary["fields"]["appeals_review"]["section_present"], 2)
-        self.assertEqual(summary["fields"]["appeals_review"]["states_none_or_not_applicable"], 1)
-        self.assertEqual(summary["fields"]["appeals_review"]["public_route_locator"], 1)
-        self.assertNotIn("public_route_locator", summary["fields"]["risks"])
+        self.assertEqual(summary["fields"]["model_performance"]["records_with_multiple_matches"], 1)
 
 
 if __name__ == "__main__":
