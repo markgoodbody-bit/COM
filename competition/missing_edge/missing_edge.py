@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The Missing Edge v0.1: offline experiment contract and deterministic scorer.
+"""The Missing Edge v0.2: offline experiment contract and deterministic scorer.
 
 No provider calls are made here. The module freezes matched provenance conditions,
 request hashes, response schema and bidirectional decision scoring before any target
@@ -16,14 +16,15 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent
-FORMAT = "missing-edge-manifest-v0.1"
+FORMAT = "missing-edge-manifest-v0.2"
 DEFAULT_RUNS = 10
 DEFAULT_SEED = 20260917
 
+# Deliberately neutral. The condition-specific epistemic lesson must come from
+# the supplied provenance representation and decision policy, not this prompt.
 SYSTEM_TEXT = (
     "Use only the supplied claim, reports, provenance metadata, and decision policy. "
-    "The policy requires positively established independent evidentiary roots, not merely multiple report identifiers. "
-    "Return only the required JSON object."
+    "Apply the decision policy to the supplied record. Return only the required JSON object."
 )
 
 RESPONSE_SCHEMA = {
@@ -37,6 +38,7 @@ RESPONSE_SCHEMA = {
 CONDITIONS = (
     "flat_sources",
     "missing_edge_graph",
+    "open_world_scope",
     "explicit_unknown",
     "verified_shared",
     "verified_independent",
@@ -45,6 +47,7 @@ CONDITIONS = (
 EXPECTED = {
     "flat_sources": {"relationship_assessment": "unknown", "roots": 0, "decision": "hold"},
     "missing_edge_graph": {"relationship_assessment": "unknown", "roots": 0, "decision": "hold"},
+    "open_world_scope": {"relationship_assessment": "unknown", "roots": 0, "decision": "hold"},
     "explicit_unknown": {"relationship_assessment": "unknown", "roots": 0, "decision": "hold"},
     "verified_shared": {"relationship_assessment": "shared_established", "roots": 1, "decision": "hold"},
     "verified_independent": {"relationship_assessment": "independent_established", "roots": 2, "decision": "proceed"},
@@ -119,24 +122,30 @@ def build_payload(case: dict[str, Any], condition: str) -> dict[str, Any]:
         payload["provenance"] = None
     elif condition == "missing_edge_graph":
         payload["provenance"] = {
-            "graph_completeness": "not_asserted",
             "nodes": [a, b],
             "relations": [],
         }
+    elif condition == "open_world_scope":
+        # Same empty graph, but its relationship coverage is explicitly scoped as
+        # partial. This treatment contains no pairwise `unknown` status token.
+        payload["provenance"] = {
+            "nodes": [a, b],
+            "relations": [],
+            "relationship_coverage": "partial",
+            "absence_semantics": "unasserted",
+        }
     elif condition == "explicit_unknown":
         payload["provenance"] = {
-            "graph_completeness": "not_asserted",
             "nodes": [a, b],
             "pairwise_relationship": {
                 "source_a": a,
                 "source_b": b,
                 "status": "unknown",
-                "basis": "No adequate relationship evidence is supplied in this record.",
+                "basis": "Relationship not established by the supplied record.",
             },
         }
     elif condition == "verified_shared":
         payload["provenance"] = {
-            "graph_completeness": "bounded_for_this_pair",
             "nodes": [a, b, f"{case['id']}-root"],
             "relations": [
                 {"type": "derived_from", "from": a, "to": f"{case['id']}-root"},
@@ -151,7 +160,6 @@ def build_payload(case: dict[str, Any], condition: str) -> dict[str, Any]:
         }
     elif condition == "verified_independent":
         payload["provenance"] = {
-            "graph_completeness": "bounded_for_this_pair",
             "nodes": [a, b],
             "relations": [{"type": "independent_of", "from": a, "to": b}],
             "pairwise_relationship": {
@@ -200,6 +208,7 @@ def build_manifest(data: dict[str, Any], runs: int = DEFAULT_RUNS, seed: int = D
             "UNKNOWN != SHARED",
             "UNKNOWN != INDEPENDENT",
             "PROVENANCE_RELATION != CLAIM_TRUTH",
+            "OPEN_WORLD_SCOPE_HELPED != UNKNOWN_TOKEN_HELPED",
         ],
     }
 
@@ -235,7 +244,13 @@ def score_one(condition: str, response: dict[str, Any]) -> dict[str, Any]:
         raise ValueError(f"unknown condition: {condition}")
     row = validate_response(response)
     expected = EXPECTED[condition]
-    false_independence = condition in {"flat_sources", "missing_edge_graph", "explicit_unknown", "verified_shared"} and (
+    false_independence = condition in {
+        "flat_sources",
+        "missing_edge_graph",
+        "open_world_scope",
+        "explicit_unknown",
+        "verified_shared",
+    } and (
         row["relationship_assessment"] == "independent_established"
         or row["independently_established_roots"] >= 2
     )
@@ -284,14 +299,19 @@ def aggregate(scored: list[dict[str, Any]]) -> dict[str, Any]:
         }
 
     missing = conditions["missing_edge_graph"]["false_independence_rate"]
+    scoped = conditions["open_world_scope"]["false_independence_rate"]
     explicit = conditions["explicit_unknown"]["false_independence_rate"]
-    intervention_delta = None if missing is None or explicit is None else missing - explicit
+
+    def delta(a: float | None, b: float | None) -> float | None:
+        return None if a is None or b is None else a - b
+
     return {
-        "format": "missing-edge-score-v0.1",
+        "format": "missing-edge-score-v0.2",
         "conditions": conditions,
-        "primary_intervention_delta_false_independence": intervention_delta,
+        "primary_intervention_delta_open_world_scope": delta(missing, scoped),
+        "secondary_intervention_delta_explicit_unknown": delta(missing, explicit),
         "primary_interpretation": (
-            "positive means explicit UNKNOWN reduced false-independence errors relative to an unlinked provenance graph"
+            "positive primary delta means a non-exhaustive/open-world provenance scope reduced false-independence errors without relying on a pairwise UNKNOWN token"
         ),
         "bidirectional_guard": "verified_independent must remain usable; HOLD_EVERYTHING is not a passing strategy",
     }
