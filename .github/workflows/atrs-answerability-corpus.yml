@@ -1,11 +1,6 @@
 name: ATRS Answerability Reproducible Corpus
 
 on:
-  push:
-    branches:
-      - 'framework/atrs-answerability-audit-v0'
-    paths:
-      - '.github/workflows/atrs-answerability-corpus.yml'
   workflow_dispatch:
 
 permissions:
@@ -20,10 +15,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Deterministic parser and membership tests
+      - name: Deterministic parser, membership and selection tests
         run: |
           python -m unittest competition/atrs_answerability/test_audit.py -v
           python -m unittest competition/atrs_answerability/test_membership.py -v
+          python -m unittest competition/atrs_answerability/test_select_adjudication.py -v
       - name: Freeze current finder membership
         run: |
           python competition/atrs_answerability/membership.py --out /tmp/atrs_membership.json
@@ -43,10 +39,14 @@ jobs:
             --json-out /tmp/atrs_full.json \
             --csv-out /tmp/atrs_full.csv \
             --html-dir /tmp/atrs_html
+          python competition/atrs_answerability/select_adjudication.py \
+            /tmp/atrs_full.json \
+            --out /tmp/atrs_adjudication_selection.json
           python - <<'PY'
           import json, pathlib
           m=json.load(open('/tmp/atrs_membership.json', encoding='utf-8'))
           r=json.load(open('/tmp/atrs_full.json', encoding='utf-8'))
+          s=json.load(open('/tmp/atrs_adjudication_selection.json', encoding='utf-8'))
           expected=m['finder_enumerated_count']
           assert r['summary']['records'] == expected, (r['summary']['records'], expected)
           assert len(r['records']) == expected
@@ -55,9 +55,12 @@ jobs:
           assert all(row.get('source_snapshot') for row in r['records'])
           assert len({row['url'] for row in r['records']}) == expected
           assert len({row['source_snapshot'] for row in r['records']}) == expected
+          assert s['records_total'] == expected
           print(json.dumps(r['summary'], indent=2))
+          print('token-positive census:', len(s['token_positive_census']))
+          print('token-negative sample:', len(s['token_negative_sample']))
           PY
-      - name: Preserve membership, audit and exact public source snapshots
+      - name: Preserve membership, audit, review selection and exact public source snapshots
         uses: actions/upload-artifact@v4
         with:
           name: atrs-reproducible-corpus-${{ github.run_id }}
@@ -65,6 +68,7 @@ jobs:
             /tmp/atrs_membership.json
             /tmp/atrs_full.json
             /tmp/atrs_full.csv
+            /tmp/atrs_adjudication_selection.json
             /tmp/atrs_html
           if-no-files-found: error
           retention-days: 30
