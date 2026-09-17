@@ -1,4 +1,5 @@
 import importlib.util
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -72,6 +73,9 @@ class ReaderUsePackV3Tests(unittest.TestCase):
         self.assertIn("A customer may ask for a human adviser.", lens)
         self.assertIn("A customer may ask for a human adviser.", excerpt)
         self.assertNotIn("No link, URL, email or phone-like token was observed", lens)
+        # An arm-specific warning also changes the task, even without an absence claim.
+        paragraphs = lambda page: re.findall(r"<p\b[^>]*>(.*?)</p>", page, re.S)
+        self.assertEqual(paragraphs(excerpt), paragraphs(lens))
 
     def test_lens_and_excerpt_expose_same_token_values(self):
         row = {

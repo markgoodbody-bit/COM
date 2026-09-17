@@ -91,7 +91,6 @@ def lens_surface(case: dict[str, Any], row: dict[str, Any]) -> bytes:
                 f"<li><strong>{base.esc(kind)}</strong>: <code>{base.esc(value)}</code></li>"
                 for kind, value in toks
             ) + "</ul>"
-        body += "<p class='note'>Grouping is deterministic presentation of published field evidence; it is not an appeal-right or route-effectiveness classification.</p>"
     return base.page_shell(case["title"], body)
 
 
