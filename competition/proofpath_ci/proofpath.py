@@ -13,7 +13,7 @@ import html
 import json
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Tuple
+from typing import Any, Dict, List, Tuple
 
 
 @dataclass(frozen=True)
@@ -38,9 +38,6 @@ class MutationResult:
     explanation: str
 
 
-DERIVED_KINDS = {"derived", "copy", "summary", "quotation", "paraphrase"}
-
-
 def _active_sources(case: Dict[str, Any]) -> List[Dict[str, Any]]:
     return [s for s in case["sources"] if s.get("active", True)]
 
@@ -62,12 +59,21 @@ def _root_for(source_id: str, sources: Dict[str, Dict[str, Any]], trail: Tuple[s
 
 
 def _roots(case: Dict[str, Any], stance: str | None = None) -> set[str]:
+    """Return currently usable evidence roots.
+
+    A derivative can remain visible after its origin is retracted, but it does not
+    resurrect that origin as a live evidence root. In v0, `active=false` means
+    epistemically withdrawn/retracted for this fixture, not merely unavailable.
+    """
     sources = _source_map(case)
     roots: set[str] = set()
     for s in _active_sources(case):
         if stance is not None and s["stance"] != stance:
             continue
-        roots.add(_root_for(s["id"], sources))
+        root_id = _root_for(s["id"], sources)
+        if not sources[root_id].get("active", True):
+            continue
+        roots.add(root_id)
     return roots
 
 
@@ -95,7 +101,7 @@ def lineage_aware(case: Dict[str, Any]) -> Decision:
     net = support_roots - oppose_roots
     strength = max(0.0, min(1.0, 0.50 + 0.18 * net))
     action = "proceed" if strength >= 0.60 else "hold"
-    return Decision(strength, action, f"Reference control: evidence-root net={net}.")
+    return Decision(strength, action, f"Reference control: live evidence-root net={net}.")
 
 
 AGENTS = {
