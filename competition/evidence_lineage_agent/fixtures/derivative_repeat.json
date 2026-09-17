@@ -1,0 +1,21 @@
+{
+  "title": "Derivative repetition fixture",
+  "sources": [
+    {"id": "s1", "label": "Original report", "locator": "fixture://original"},
+    {"id": "s2", "label": "Article quoting report", "locator": "fixture://article"},
+    {"id": "s3", "label": "Video repeating article", "locator": "fixture://video"}
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "A repeated statistic is supported by three independent sources.",
+      "evidence_state": "unresolved",
+      "source_ids": ["s1", "s2", "s3"],
+      "notes": ["The fixture should expose shared ancestry rather than count three witnesses."]
+    }
+  ],
+  "relations": [
+    {"type": "quotes", "from": "s2", "to": "s1"},
+    {"type": "derived_from", "from": "s3", "to": "s2"}
+  ]
+}

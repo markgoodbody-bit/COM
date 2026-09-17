@@ -1,0 +1,26 @@
+{
+  "title": "Partial living-knowledge lineage fixture",
+  "sources": [
+    {"id": "s1", "label": "Older practitioner interview", "locator": "fixture://interview"},
+    {"id": "s2", "label": "Later heritage summary", "locator": "fixture://heritage"},
+    {"id": "s3", "label": "Later maker testimony", "locator": "fixture://maker"}
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The later maker learned directly from the older practitioner.",
+      "evidence_state": "unresolved",
+      "source_ids": ["s2", "s3"],
+      "notes": ["Attention, inspiration and direct tacit transmission must remain distinct."]
+    },
+    {
+      "id": "c2",
+      "text": "The later maker publicly attributes part of their learning to the older practitioner.",
+      "evidence_state": "source_stated",
+      "source_ids": ["s3"]
+    }
+  ],
+  "relations": [
+    {"type": "summarises", "from": "s2", "to": "s1"}
+  ]
+}
