@@ -15,175 +15,94 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| General world-gap lane | **NONE GENERAL / WORLD-FIRST SEARCH** | Do not manufacture an assignment from open repos, grants or competition categories. |
-| COM #347 / THR human gift | **ACTIVE PRODUCT QUALITY** | `human-record` main `15b9929f685627644fcfc33cbb113b34876ecf59`; three evidence records unchanged; PRs #21/#22/#24/#25/#26 integrated. |
-| THR next edge | **OBSERVE / CORRECT OPERATIONAL SCALE** | No record 4, industrial DB, private intake service or universal privacy theory by momentum. |
-| COM #348 / resources | **ACTIVE OPPORTUNITY QUARRY / NO APPLICATION LIVE** | BlueDot is the cleanest immediate compute/API route; non-binding draft merged. OpenAI Researcher Access is HOLD on current independent standing. Codex OSS Fund / Anthropic / Foresight remain bounded candidates. Transformative AI Fund route survives in principle, but current six-month concept PR #360 was owner-routed and closed. |
-| COM #349 / tournament | **ACTIVE SEARCH / SELECTION OPEN / NO CURRENT PRODUCT LEAD** | ProofPath thesis killed by strongest-owner subtraction. Return to world/real-use gap finding before building another shell. |
-| #350 evidence-lineage | **KEEP AS SUBSTRATE / REFERENCE** | Useful lineage machinery; not product headline. |
-| #351 WarrantFuzz | **KEEP AS EXPERIMENTAL HARNESS** | Exact head `88264d58...`; stochastic/null-control machinery preserved; not competition thesis. |
-| #352 hostile evidence | **PRESERVE** | Red/green counterexamples remain useful record. |
-| #353 Missing Edge | **SHRINK / FIXTURE RESEARCH** | Not product lead. |
-| #355 ProofPath CI | **CLOSED / OWNER FOUND / PRESERVED ARTIFACT** | Exact preserved head `bca431e...`; CI `35239124064` SUCCESS; useful hostile-reviewed control semantics but no surviving competition gap. |
-| #356 Terra/Sol Stage A | **CLOSED / OPTIONAL REPLICATION ARTIFACT / $0 SPENT** | Exact preserved head `d28ca0f...`; 23 tests PASS; 90-request design; no provider calls. Prior `$10` authority was valid but is not an obligation after owner-found result. |
-| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated / no efficacy result. |
+| General world-gap lane | **NONE GENERAL / WORLD-FIRST** | Grants, repos and competitions do not manufacture assignments. |
+| COM #347 / THR | **ACTIVE PRODUCT QUALITY** | `human-record` main `15b9929f685627644fcfc33cbb113b34876ecf59`; three records unchanged; next edge OBSERVE/CORRECT operational scale. |
+| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | BlueDot old draft HOLD/stale; OpenAI Researcher Access KEEP only when a real API research object exists; Codex OSS Fund requires truthful licensed OSS; Anthropic/Foresight remain bounded; ARIA is research seam only, no proposal. |
+| ARIA seam | **HOLD / OWNER-SUBTRACTION NOT COMPLETE** | Generic negotiation, incomplete preferences, consent states, authorization provenance and proof-carrying authorization are owned. Residual: verify semantic non-collapse of `UNKNOWN/REFUSED/WITHHELD/OUTSIDE_AUTHORITY/CONFLICT_UNRESOLVED` across requirement->policy->negotiation transformations. Needs a real pipeline/adversarial case before funding work. |
+| COM #349 / tournament | **ACTIVE / SELECTION OPEN / SYNTHESIS CANDIDATE** | #363 `No Free QALY` survives only as Open Track synthesis, not benchmark novelty or selected entry. |
+| #363 No Free QALY | **OPEN / SURVIVES AS SYNTHESIS** | Exact head `9dd2497d885fa5d5b60d3bcf7c24a1f94e4a5da0`; workflow `35252785797` SUCCESS. Owner map + review exercise + teaching appendix. |
+| #350/#351/#352/#353 | **PRESERVED SUBSTRATE / HARNESS / HOSTILE EVIDENCE / FIXTURE RESEARCH** | Not current product leads. |
+| #355 ProofPath | **CLOSED / OWNER FOUND** | Preserve; do not reopen by renaming. |
+| #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls; known unresolved measurement/reporting defects remain. |
+| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished; no momentum rebuild. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | No canon/release/alignment result. |
-| Two Parents / Listing 23 | **SUBMITTED / OWNER RESULT WATCH** | `SUBMITTED != AWARDED != PAID`. |
 
-## Competition owner-subtraction result
+## #363 — current competition object
 
-The previous ProofPath lead did useful work, then lost the right to remain the lead.
+Apart's Open Track asks for a defensible comparable unit for `decision quality improved`.
 
-Strong current owners:
+Hostile review established that the load-bearing theory and rank-reversal phenomenon are already owned:
+- Abbas & Hazen own cross-decision value-of-information equivalence/non-equivalence results and positive comparability conditions;
+- ML/benchmark literature already owns ranking instability under metric/harness changes;
+- DECIDE-AI, IPDAS, Decision Quality practice and human-AI taxonomies own substantial reporting/measurement structure.
 
-### Evidence multiplicity / provenance
-- Marc Bara, **Epistemic Sybil Resistance** — evidential-root/report-multiplicity mechanism and hidden-ancestry limit.
-- Wang et al., **GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents** (arXiv:2609.17695, 15 Sep 2026) — controlled same-origin repetition vs distinct evidential origins, matched evidence wording, judgment/confidence/source-count effects, active exploration, inference controls, provenance-aware training, repeated measurements, and distinct-source sensitivity guard.
-
-### Correction / supersession
-- StateBench — supersession integrity, no resurrection, repair propagation to derived conclusions.
-- STALE — stale-state resolution / premise resistance / implicit downstream policy adaptation.
-- Supersede — measurable and trainable agent memory-update gap.
-- StateAuditor — stale dependency repair after memory updates.
-- EnvTrustBench — action under stale/incorrect environmental evidence.
-
-### Generic testing / audit infrastructure
-- NIST agentic evaluation probes;
-- MorphAgent and other agent metamorphic-testing work;
-- existing evaluator/CI systems for generic runners, assertions and reports.
-
-Therefore:
+Therefore #363's only residual claim is an **audience-specific synthesis**:
 
 ```text
-SAME-ROOT DUPLICATION AS OUR THESIS -> OWNER FOUND
-RETRACTION / CORRECTION PROPAGATION AS OUR THESIS -> OWNER ROUTED
-GENERIC EVAL PLATFORM -> OWNER FOUND
-INDEPENDENT-EVIDENCE RESPONSIVENESS -> CONTROL, NOT CONTRIBUTION
-PROOFPATH PLATFORM STORY -> STOP
+AI-EPISTEMICS IMPACT CLAIM
++ DECISION / VALUE / BASELINE / UNCERTAINTY / AGGREGATION CONTRACT
+-> DIRECT COMPARISON
+   OR CONDITIONAL ON SHARED CONTRACT
+   OR COMPARABILITY NOT ESTABLISHED
 ```
 
-Other candidate directions tested and owner-routed in the same pass:
-- forged/wrong provenance metadata as a standalone headline — strong provenance-integrity / attestation / metadata-impersonation / environment-trust owners already exist;
-- correction window / last reversible moment as a standalone headline — current reversibility, corrigibility, steering, contestability and acceptance-boundary owners already occupy the abstraction.
+It does not create a universal scalar and does not make unlike values commensurable.
 
-`DIFFERENT_WRAPPER != CONSEQUENTIAL GAP`.
+Current files:
+- `competition/no_free_qaly/OWNER_MAP.md` — attributes contract fields to strong owners;
+- `competition/no_free_qaly/REVIEW_EXERCISE.md` — realistic but fictional Brier-score-vs-later-regret comparison plus direct/conditional cases;
+- `benchmark.py` / `cases.json` — runnable teaching appendix only.
 
-## Preserved ProofPath / Stage A evidence
+Kill #363 if existing Apart/current guidance already enforces this comparison discipline or if the review exercise adds no appraisal value.
 
-### #355 deterministic shell
+## Closed ProofPath lane
 
 ```text
-head = bca431e572cc6d8b334c09be958bce52a909e9b1
-workflow = 35239124064 SUCCESS
-state = CLOSED / NOT MERGED / PRESERVED
+#355 = CLOSED / OWNER FOUND / preserved deterministic engineering
+#356 = CLOSED / optional replication artefact / 0 API calls / $0 spend
 ```
 
-Useful retained repairs:
-- action-only escalation observable;
-- role-specific powered vs unpowered semantics;
-- independent-evidence responsiveness guard;
-- wrong-lineage movement labeled SENSITIVITY rather than improvement;
-- report generation separated from explicit CI gating.
+Strong owners including Bara and GraphEcho substantially cover the evidence-multiplicity/provenance mechanism; other current work covers correction/supersession and generic evaluation infrastructure. `DIFFERENT_WRAPPER != CONSEQUENTIAL_GAP`.
 
-These are control-system results only.
+Do not seek provider credentials or revive the authorised 90-call run by momentum.
 
-### #356 real-model adapter
+## Resource lane
 
-```text
-head = d28ca0fae1092c63a671a159911479965b2ca5fe
-Stage A workflow = 35238778132 SUCCESS
-Inherited WarrantFuzz workflow = 35238778124 SUCCESS
-unit / hostile tests = 23 PASS
-planned requests = 90
-requests attempted = 0
-provider calls = 0
-recorded/accounted spend = $0.00
-conservative whole-run worst-case = $1.15164
-prior Mark hard cap = $10.00
-state = CLOSED / OPTIONAL REPLICATION ARTIFACT
-```
+Current low-distortion ordering:
 
-The only provider-actuation attempt occurred on a superseded head and failed closed before the first request because no `OPENAI_API_KEY` was exposed. `BLOCKED_EXECUTION != NULL_RESULT`.
+1. **OpenAI Researcher Access** — retain as a low-friction up-to-US$1,000 API-credit route only when a specific research object has a credible model/API budget. Current public page encourages early-stage researchers with limited resources. Re-read live application and sharing/publication terms at submission gate.
+2. **Codex Open Source Fund** — only through a truthfully licensed open-source project; public visibility is insufficient.
+3. **Anthropic AI for Science / Foresight** — retain, higher fit/eligibility/admin checks.
+4. **ARIA Scaling Trust** — potentially high upside but no proposal until the narrowed semantic-non-collapse seam survives strongest-owner and real-use tests.
+5. **BlueDot old provenance-shaped draft** — HOLD after owner subtraction; do not revive because it is easy.
 
-Do not seek credentials or spend by momentum. Reopen only if a future research question makes the replication materially useful and then reverify current models/pricing/experiment contract.
+Current non-routes surfaced in the latest check:
+- AISI main grants: not currently accepting applications;
+- AIRR calls surfaced: closed or organisation-gated;
+- LASR: full-time 13-week in-person programme, not low-friction project runway;
+- RAi UK AWS future rounds described around postdocs/academic staff, not a clean independent route.
 
-## Resource lane exact state
+No application, account, funder contact, terms acceptance, payment/tax action or submission has occurred.
 
-### Merged non-binding prep
-
-- `coordination/resource_prep/BLUEDOT_RAPID_GRANT_DRAFT_20260917.md`
-  - current cleanest small compute/API funding shape;
-  - final amount must come from a real surviving experiment, not the grant maximum.
-
-- `coordination/resource_prep/OPENAI_RESEARCHER_ACCESS_DRAFT_20260917.md`
-  - now an eligibility HOLD / reusable research summary;
-  - current OpenAI FAQ requires qualifying active academic/research-organization affiliation or nonprofit research status;
-  - do not invent affiliation.
-
-### Other resource routes
-
-- **OpenAI Codex Open Source Fund:** KEEP, but actual licence/OSS vehicle and truthful fit gate required. Public repo != OSS.
-- **Anthropic AI for Science:** KEEP; re-read live form before drafting/submitting.
-- **Foresight Coordination & Accountability:** KEEP; larger/higher-load route.
-- **EA Funds Transformative AI Fund:** owner route itself survives; current `Answerable AI Decisions` concept PR #360 closed because WP1/WP2/WP3 were all owner-routed. Do not fill a six-month grant with work that strongest owners already do.
-
-No application, account, terms acceptance, organiser/funder contact, payment/tax action or submission has occurred.
-
-## Competition posture
-
-Apart AI x Epistemics remains a possible proving ground **if a new gap survives**. Public page says participants build over the three-day sprint, but no explicit pre-existing-work rule was found on the public page. Therefore September artefacts are preparation/substrate, not automatically an eligible judged contribution. Re-read live Guidelines/terms before any registration/submission.
-
-Nebius x NVIDIA remains a productisation bar only for a future idea whose Nebius/NVIDIA use is load-bearing rather than decorative.
-
-Current instruction to future apertures:
+## THR / project invariants
 
 ```text
-DO NOT REOPEN PROOFPATH BY RENAMING IT
-DO NOT BUILD A NEW SHELL BEFORE OWNER SUBTRACTION
-RETURN TO WORLD / REAL USE
-ALLOW OWNER FOUND / NO DELTA / NOT OUR GAP / STOP
-```
-
-## THR invariants
-
-```text
-NAME != ENTITY
-MENTION_EXISTS != ENTITY_PROFILE_REQUIRED
-URL != SOURCE
-SOURCE CHECK != RECORD EVIDENCE
-OBSERVATION != PRESERVED COPY
-PRESERVATION != EXTRACTION
-REFUSAL_ALONE != ESTABLISHMENT_OF_THE_REFUSED_CLAIM
+UNKNOWN != ABSENT
 NO_REPLY != REFUSAL
 SILENCE != CONSENT
 STOP -> STOP
 CANNOT_RECALL_ELSEWHERE != MAY_CONTINUE_HERE
 CORRECTION_TRAIL != REPUBLICATION_OF_THE_WITHDRAWN
-UNKNOWN != DEAD
-```
-
-## Project / resource boundary
-
-```text
 PROJECT NEEDS RESOURCES != PROJECT EXISTS TO MAKE MONEY
 POSSIBLE_PRIZE = £0
-SUBMITTED != AWARDED != PAID
 AVAILABLE MONEY != AUTHORITY TO SPEND
-NO PERSONAL BURN WITHOUT EXPLICIT APPROVAL
 IF_WE_LOSE -> USEFUL_WORK_SHOULD_REMAIN
-FUND_FIT != PROJECT_GAP
-OWNER_FOUND = VALID RESULT
+OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
 PURPOSE > INSTRUMENT
 ```
 
-## FULL COMSYNC tool / field reach
-
-- COM / TRACE / ME / THR mutable repository state: reacquirable through GitHub.
-- Campfire Relay repository main last verified as `b8579e56296e7a4eb4f83ed16e668d993a18589a`; operational Relay tool **not exposed** in this aperture.
-- Authenticated current 1F916 Framework inbox/write/quota state is not independently established here. `FAILED_READ != QUIET_BOARD`.
-
 ## Consequential gates
 
-Human/explicit gates remain for future TRACE/ME release/canon/baseline/licence changes, new provider/spend commitments, credentials/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, payout/payment actions, competition accounts/terms/submission, resource-application identity/submission/terms, and explicit crawler/training-policy changes.
+Human/explicit gates remain for TRACE/ME release/canon/baseline/licence changes, provider/spend commitments, credentials/payment/2FA, destructive/irreversible actions, consequential institutional contact, Campfire main/Production adoption, competition registration/terms/submission/payout, resource-application identity/submission/terms, travel commitments, and explicit crawler/training-policy changes.
