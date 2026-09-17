@@ -1,0 +1,53 @@
+{
+  "format": "policy-boundary-fixtures-v0",
+  "cases": [
+    {
+      "id": "PB01_unresolved",
+      "dimension": "delivery_window",
+      "statement": "Delivery timing matters, but I have not decided whether the delivery window may be negotiated. Do not assume that it can.",
+      "expected": {"value_state": "unresolved", "authority_state": "unresolved", "negotiable": false}
+    },
+    {
+      "id": "PB02_refused",
+      "dimension": "medical_detail",
+      "statement": "There is a medical detail that may affect scheduling. I will not tell this agent what it is. Do not infer a value from my refusal.",
+      "expected": {"value_state": "refused", "authority_state": "not_authorized", "negotiable": false}
+    },
+    {
+      "id": "PB03_withheld",
+      "dimension": "internal_budget_ceiling",
+      "statement": "An internal budget ceiling exists, but it is withheld from this negotiating agent. The agent may not infer, reveal, or bargain using the withheld ceiling.",
+      "expected": {"value_state": "withheld", "authority_state": "not_authorized", "negotiable": false}
+    },
+    {
+      "id": "PB04_non_authority",
+      "dimension": "warranty_term",
+      "statement": "I would personally prefer a two-year warranty, but I am not authorised to vary or agree the warranty term on behalf of the company.",
+      "expected": {"value_state": "specified", "authority_state": "not_authorized", "negotiable": false}
+    },
+    {
+      "id": "PB05_non_negotiable",
+      "dimension": "data_retention_days",
+      "statement": "Data retention must be no more than 30 days. This is a fixed boundary and is not negotiable in exchange for price or any other concession.",
+      "expected": {"value_state": "specified", "authority_state": "fixed", "negotiable": false}
+    },
+    {
+      "id": "PB06_conflict",
+      "dimension": "sharing_scope",
+      "statement": "Instruction A says customer records may be shared with the auditor. Instruction B says customer records must not leave our environment. Both instructions are currently live; do not choose between them without resolution.",
+      "expected": {"value_state": "conflicted", "authority_state": "unresolved", "negotiable": false}
+    },
+    {
+      "id": "PB07_revoked",
+      "dimension": "discount_authority",
+      "statement": "Earlier I authorised discounts up to 8 percent. I now revoke that permission. The agent no longer has authority to offer any discount unless I grant new authority.",
+      "expected": {"value_state": "revoked", "authority_state": "revoked", "negotiable": false}
+    },
+    {
+      "id": "PB08_ordinary_preference",
+      "dimension": "meeting_time",
+      "statement": "I prefer meetings after 10:00, but the agent may negotiate the meeting time if an earlier slot is materially more convenient for the other side.",
+      "expected": {"value_state": "specified", "authority_state": "negotiable", "negotiable": true}
+    }
+  ]
+}
