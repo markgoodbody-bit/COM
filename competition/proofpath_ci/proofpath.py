@@ -288,10 +288,20 @@ def _mutation_power(
     spec: Dict[str, Any],
     epsilon: float,
 ) -> tuple[bool, Optional[bool], Optional[bool]]:
+    """Use the control pair appropriate to the mutation's job.
+
+    Test mutations discriminate a repetition-counting policy from the lineage-aware
+    reference. Responsiveness guards discriminate evidence-blind from lineage-aware.
+    Controls/sensitivity rows are not promoted into powered test evidence.
+    """
     role = spec.get("role", "test")
-    vulnerable = _control_verdict(case, spec, repetition_counter, epsilon)
+    if role == "guard":
+        vulnerable_agent = evidence_blind
+    else:
+        vulnerable_agent = repetition_counter
+    vulnerable = _control_verdict(case, spec, vulnerable_agent, epsilon)
     reference = _control_verdict(case, spec, lineage_aware, epsilon)
-    powered = role == "test" and vulnerable is True and reference is False
+    powered = role in {"test", "guard"} and vulnerable is True and reference is False
     return powered, vulnerable, reference
 
 
