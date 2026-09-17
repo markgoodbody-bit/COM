@@ -86,6 +86,16 @@ class ATRSAuditTests(unittest.TestCase):
         self.assertNotIn("states_none_or_not_applicable", field)
         self.assertTrue(field["syntactic_contact_token_present"])
 
+    def test_na_phrase_is_detected_with_following_text(self):
+        body = '''<html><main><h3>3.5 - Appeals and review</h3><p>N/A no decisions.</p></main></html>'''
+        row = audit(body)
+        self.assertTrue(row["fields"]["appeals_review"]["contains_none_or_na_phrase"])
+
+    def test_no_formal_appeals_process_phrase_is_detected(self):
+        body = '''<html><main><h3>3.5 - Appeals and review</h3><p>There is no formal appeals process, as the tool does not make decisions.</p></main></html>'''
+        row = audit(body)
+        self.assertTrue(row["fields"]["appeals_review"]["contains_none_or_na_phrase"])
+
     def test_footer_content_does_not_bleed_into_last_main_section(self):
         body = '''<html><body><main><h3>3.5 - Appeals and review</h3><p>None.</p></main><footer><a href="https://example.org/privacy">Privacy</a></footer></body></html>'''
         row = audit(body)
