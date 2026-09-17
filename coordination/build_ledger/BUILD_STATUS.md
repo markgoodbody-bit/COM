@@ -1,6 +1,6 @@
 # Build status
 
-Recorded snapshot: **2026-09-17 late — Europe/London**.
+Recorded snapshot: **2026-09-17 Build reacquire — Europe/London**.
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
@@ -15,10 +15,10 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS** | Hannibal candidates remain draft; PR28 consolidation base, PR30 executable probe; no public record 4. |
-| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Researcher Access HOLD on current affiliation rule; ARIA research seam only. |
+| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS** | Hannibal candidates remain draft; no public record 4. |
+| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Researcher Access HOLD; ARIA seam only. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **OPEN / REPAIR PENDING / NOT HUMAN-RUN READY** | v3.1 green exists, but two later Codex method repairs remain unintegrated. |
+| #364 ATRS | **OPEN / METHOD SOURCE REPAIRED / NOT HUMAN-RUN READY** | #367 integrated final Codex cue/key repairs at exact head `fd1b75c...`; hosted CI green. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
@@ -28,53 +28,13 @@ PURPOSE > INSTRUMENT
 | THR main | **STABLE** | `15b9929f...`; three public records unchanged. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
-| Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; operational Relay/Square state not freshly established here. |
+| Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
 
-## #364 — true current method state
+## #364 — current source/method state
 
-Frozen ATRS source/evidence work remains intact. Version-aware correction over the same 152 HTML pages corrected the legacy-heading miss; historical reports remain preserved.
+Frozen ATRS source/evidence work remains intact. Version-aware correction over the same 152 HTML pages corrected legacy-heading misses without refetching.
 
-Current v3.1 witness:
-
-```text
-head = 6fa24cb12c7b9720ee5b32fa5b8c8b84ef7842d9
-reader-use run = 35272269260 SUCCESS
-artifact = 10518547136
-artifact sha256 = 09764a039e47ef39a5e19a998e888fb48f7e76bb9c4de5c9ed858af1ee007f3c
-ordinary CI = 35272275933 SUCCESS
-```
-
-Full PR-thread replay found a later Codex method verdict not reflected in the previous pointer:
-
-```text
-06a3176 -> remove remaining LENS-only generated caution/task guidance
-0573ce5 -> remove obsolete independent component_rules from private key
-```
-
-Codex disposition after those repairs:
-
-```text
-SURVIVES AS PROVISIONAL PILOT-METHOD CANDIDATE
-NOT READY FOR HUMAN EXECUTION
-```
-
-Framework v3.1 narrowed two private answer-key claims but did not incorporate `06a3176` / `0573ce5`.
-
-Remaining gates after integration: independent source-bound answer-key adjudication, target population/sample rationale, recruitment/allocation, consent/data handling and analysis plan.
-
-```text
-METHOD_PACK != HUMAN_RESULT
-GREEN_CI != HUMAN_RUN_READY
-READER_LENS != DEMONSTRATED_READER_BENEFIT
-EXCERPT ~= LENS -> ROUTE_TO_SIMPLER_OWNER
-NULL_RESULT = VALID
-```
-
-No recruitment, participant contact/data or human result exists.
-
-## #364 source-level state
-
-Corrected frozen-source observations remain:
+Corrected source-level observations:
 
 ```text
 records = 152
@@ -87,93 +47,128 @@ maintenance = 152/152
 senior_responsible_owner = 152/152
 ```
 
-Historical pre-version-aware counts remain as historical parser output.
+Historical pre-version-aware counts remain historical parser output.
+
+The reader-use method is three-condition:
 
 ```text
-REPRODUCED != CORRECT
-FIELD_NOT_OBSERVED != REQUIRED_FIELD_OMITTED
+FULL    = full frozen record
+EXCERPT = exact Appeals field isolated plainly
+LENS    = same field evidence with deterministic grouping only
+```
+
+```text
+FULL -> EXCERPT = field-location/scoping effect
+EXCERPT -> LENS = added grouping effect, if any
+EXCERPT ~= LENS -> ROUTE TO SIMPLER OWNER
+```
+
+Nine scored cases use six position/condition-balanced schedules; the missing-field case is a non-scored sentinel. Private scoring is route-linked rather than an arbitrary cross-product.
+
+### Final code-repair receipt
+
+The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
+
+```text
+#364 exact head = fd1b75c9671af8e85df9cbe9ad33ef025797d578
+#367 = MERGED
+hosted CI = 35274673506 SUCCESS
+job = 105382239776 SUCCESS
+```
+
+At that head:
+- residual LENS-only caution/task prose is removed;
+- EXCERPT/LENS paragraph parity is regression-tested where no grouping exists;
+- emitted private-key cases no longer contain obsolete `component_rules`;
+- route bundles are the sole emitted provisional scoring representation;
+- v3.1 HRA/Wilton source-key narrowings remain active.
+
+The previous preserved v3.1 built artifact still predates #367:
+
+```text
+reader-use run = 35272269260 SUCCESS
+artifact = 10518547136
+sha256 = 09764a039e47ef39a5e19a998e888fb48f7e76bb9c4de5c9ed858af1ee007f3c
+```
+
+Do not relabel that older artifact as an exact-head witness.
+
+```text
+GREEN_SOURCE_HEAD != EXACT_HEAD_ARTIFACT_WITNESS
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
 ```
 
-## THR / Hannibal
+## #364 — human-study gate remains closed
 
-Four open draft branches are overlapping work, not four validations:
-
-```text
-PR27 1817b633 -> prose candidate / ancient-source leads
-PR28 1bc10d2e -> preferred consolidation base
-PR29 56b51584 -> alternate prose candidate
-PR30 e378f371 -> executable registry probe
-```
-
-PR30's concrete result: candidate entity/source/assertion structure is accepted, but operational mention validation fails because `record_id` must already be present in the public catalogue. The failure is preserved.
-
-Owner map: CIDOC CRM/CRMsci/CRMinf/CRMdig/W3C PROV/nanopublications already own most semantic categories. No universal THR ontology is earned.
-
-Smallest repair under test: decouple checked research/source context from mandatory public catalogue identity while preserving dangling-reference rejection. Test against the bounded JFK/contested-event fixture before changing production validators.
-
-Historical-source boundary also sharpened:
+Method status after the concrete repairs:
 
 ```text
-ANCIENT_ATTESTATION != MODERN_SURVIVAL_STATE
-COMPLETE_WORK_NOT_PRESERVED != NO_FRAGMENT_SURVIVES
-AUTHOR_CLAIMS_AUTOPSY != AUTOPSY_ESTABLISHED
+PROVISIONAL PILOT-METHOD CANDIDATE
+NOT READY FOR HUMAN EXECUTION
+METHOD_SOURCE_GREEN != HUMAN_RESULT
 ```
 
-No Hannibal merge/publication.
+Still required before participant execution:
+- independent source-bound answer-key adjudication;
+- target population / sample rationale;
+- recruitment and allocation plan;
+- consent / data minimisation;
+- analysis plan, including unsupported inference and null/adverse results.
 
-## COM #365
-
-Positive-construction quarry yielded no new TRACE/ME primitive.
-
-- reachable futures/chosen contraction: substantially already expressible;
-- `S=C-M`: rejected as universal scalar;
-- enough: typed/task-relative only if useful;
-- play: strong owners;
-- joint construction: derived view over existing structures.
-
-```text
-DERIVED_VIEW_EARNED != NEW_PRIMITIVE_EARNED
-REACHABLE_CLAIMED != REACHABLE_ESTABLISHED
-```
-
-No baseline/canon change.
-
-## Resources
-
-Fresh owner check:
-- OpenAI Researcher Access remains open and offers up to $1,000 credits, but current FAQ requires active academic/research-organisation affiliation or nonprofit research activity. **HOLD on current independent standing.**
-- ARIA Scaling Trust Tracks 2+3 remain open; current batch cut-off 31 Oct 2026. Existing project seam is still too owner-subtracted/narrow for a proposal.
-- No application/contact/account/terms/spend/payment action.
+No participant recruitment/contact/data exists or is authorised.
 
 ## Competition
 
-Apart AI x Epistemics remains 13–15 Nov 2026 online. Current page describes substantive work during the three sprint days but exposes no clear current pre-existing-work prohibition.
+Current Apart AI x Epistemics public page: 13–15 Nov 2026, online; $2,000 total cash prizes, $1,000 first. Open Track explicitly welcomes investigation of a live epistemic deployment using weekend-downloadable data.
+
+#364 is a plausible fit, not a winning claim or selected entry.
 
 ```text
 SEPTEMBER = PILOT / METHOD / FALSIFICATION / FROZEN BASELINE
 NOVEMBER = FRESH SUBSTANTIVE RESULT IF LIVE RULES ALLOW
+SELECTED ENTRY = NONE
+REGISTERED / SUBMITTED = NO
+POSSIBLE_PRIZE != MONEY_OWNED
 ```
 
-#364 remains current lead, not selected. No registration/organiser contact/submission.
+No registration, organiser contact, terms acceptance or submission.
 
-## Campfire / Square
+## Other active lanes
 
-Campfire Relay repository main is `b8579e56...`. Operational Relay tool is not exposed in this Framework aperture; current authenticated Square inbox/quota/write state is not freshly established here.
+### THR / Hannibal
 
-## Gates
+PR27/28/29/30 remain overlapping draft/research probes. Strong external owners cover most ontology machinery. No Hannibal merge and no public record 4.
+
+### COM #365
+
+Positive-construction quarry earned a derived view, not a new TRACE/ME primitive. `S=C-M` remains rejected as a universal scalar; reachability claims still need witnesses.
+
+### Resources
+
+No application live. OpenAI Researcher Access remains HOLD on the project's current independent standing; ARIA Scaling Trust remains a research seam, not an earned proposal. No contact/account/terms/spend/payment action.
+
+### Campfire / Square
+
+Public 1F916 door is reachable and current protocol is visible. This aperture has no authenticated `framework-relay` inbox/quota/write state and no operational Relay tool.
+
+```text
+PUBLIC_SNAPSHOT != AUTHENTICATED_CURRENT_STATE
+RELAY_REPO != RELAY_TOOL
+```
+
+## Consequential gates
 
 Explicit human gates remain for:
-- #364 participant recruitment / human-study actuation;
-- competition/funder accounts, terms, contact and submission;
-- new provider/spend/credentials/payment;
+- #364 participant recruitment / human-study execution;
+- competition/funder accounts, terms, organiser contact and submission;
+- credentials/payment/new spend;
 - TRACE/ME release/canon/baseline/licence changes;
 - Campfire Production activation;
 - destructive/irreversible actions;
 - travel/payout/tax;
 - crawler/training-policy changes.
 
-Full receipt: `coordination/build_ledger/FULL_COMSYNC_20260917_LATE.md`.
+Current receipt: `coordination/build_ledger/FULL_COMSYNC_20260917_BUILD_REACQUIRE.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
