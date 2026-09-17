@@ -17,7 +17,7 @@ SAMPLE = """
 <h3>3.2 - Human review</h3>
 <p>If confidence is low, an officer checks the result before any decision.</p>
 <h3>3.5 - Appeals and review</h3>
-<p>Users can submit a review request to the service team at <a href="mailto:review@example.gov.uk">review@example.gov.uk</a>.</p>
+<p>Users can submit a review request at <a href="https://example.gov.uk/review">the public review page</a>.</p>
 <h2>Tier 2 - Technical Specification and Data</h2>
 <h3>4.2.7 - Model performance</h3>
 <p>Precision and recall are monitored quarterly.</p>
@@ -34,6 +34,20 @@ SAMPLE_NONE = """
 <html><body>
 <h3>3.2 - Human review</h3><p>No human review as no decision making capability.</p>
 <h3>3.5 - Appeals and review</h3><p>Not applicable.</p>
+</body></html>
+"""
+
+SAMPLE_CONTACT_WORD_ONLY = """
+<html><body>
+<h3>3.5 - Appeals and review</h3>
+<p>The Contact Centre team reviews routing and may transfer a user to an advisor or email channel.</p>
+</body></html>
+"""
+
+SAMPLE_PHONE = """
+<html><body>
+<h3>3.5 - Appeals and review</h3>
+<p>Users can call 0800 011 3797 for help.</p>
 </body></html>
 """
 
@@ -59,12 +73,22 @@ class ATRSAuditTests(unittest.TestCase):
         self.assertTrue(impact["section_present"])
         self.assertEqual(impact["heading"], "5.1 - Impact assessments")
 
-    def test_appeal_route_locator_is_observable_not_quality_score(self):
+    def test_appeal_href_is_public_route_locator(self):
         row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
-        a = row["fields"]["appeals_review"]
-        self.assertTrue(a["section_present"])
-        self.assertTrue(a["public_route_locator"])
-        self.assertFalse(a["states_none_or_not_applicable"])
+        self.assertTrue(row["fields"]["appeals_review"]["public_route_locator"])
+
+    def test_phone_is_public_route_locator(self):
+        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE_PHONE)
+        self.assertTrue(row["fields"]["appeals_review"]["public_route_locator"])
+
+    def test_generic_contact_word_is_not_public_route_locator(self):
+        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE_CONTACT_WORD_ONLY)
+        self.assertFalse(row["fields"]["appeals_review"]["public_route_locator"])
+
+    def test_route_locator_is_only_interpreted_for_appeals_field(self):
+        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
+        self.assertFalse(row["fields"]["human_review"]["public_route_locator"])
+        self.assertFalse(row["fields"]["risks"]["public_route_locator"])
 
     def test_explicit_none_is_preserved(self):
         row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE_NONE)
@@ -80,11 +104,12 @@ class ATRSAuditTests(unittest.TestCase):
             mod.audit_record({"title": "a", "url": "a"}, SAMPLE),
             mod.audit_record({"title": "b", "url": "b"}, SAMPLE_NONE),
         ]
-        s = mod.summarise(rows)
-        self.assertEqual(s["records"], 2)
-        self.assertEqual(s["fields"]["appeals_review"]["section_present"], 2)
-        self.assertEqual(s["fields"]["appeals_review"]["states_none_or_not_applicable"], 1)
-        self.assertEqual(s["fields"]["appeals_review"]["public_route_locator"], 1)
+        summary = mod.summarise(rows)
+        self.assertEqual(summary["records"], 2)
+        self.assertEqual(summary["fields"]["appeals_review"]["section_present"], 2)
+        self.assertEqual(summary["fields"]["appeals_review"]["states_none_or_not_applicable"], 1)
+        self.assertEqual(summary["fields"]["appeals_review"]["public_route_locator"], 1)
+        self.assertNotIn("public_route_locator", summary["fields"]["risks"])
 
 
 if __name__ == "__main__":
