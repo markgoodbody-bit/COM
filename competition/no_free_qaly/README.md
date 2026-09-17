@@ -1,33 +1,44 @@
-# No Free QALY — stress-testing cross-domain claims that “decision quality improved”
+# No Free QALY — a measurement contract for claims that “decision quality improved”
 
-Status: **COMPETITION INCUBATOR / SYNTHETIC BENCHMARK / NOT A UNIVERSAL SCORE / NOT A SUBMISSION**
+Status: **OPEN-TRACK SYNTHESIS CANDIDATE / RUNNABLE TEACHING APPENDIX / NOT A NEW THEOREM / NOT A UNIVERSAL SCORE / NOT A SUBMISSION**
 
 Apart AI x Epistemics asks in its Open Track for the field's equivalent of a QALY: a defensible, comparable unit for `decision quality improved`.
 
-This candidate does **not** propose such a unit. It tests a narrower and potentially negative claim:
+This candidate's answer is conditional rather than absolute:
 
-> Cross-domain comparison is not defensible until the value/utility contract, counterfactual baseline, uncertainty model and aggregation rule are explicit.
+> Existing decision-analysis results identify restrictive conditions under which some improvement measures are comparable across decision problems. Outside those conditions, cross-project comparison is not established unless the value/utility contract, counterfactual baseline, uncertainty model and aggregation rule are explicit.
 
-The benchmark is intentionally tiny. Its purpose is to make three failure modes executable rather than rhetorical:
+This repository does **not** claim to discover metric rank reversal. The executable examples are a teaching appendix that makes established measurement problems visible in an AI-epistemics setting.
 
-1. **Accuracy gain and expected-utility gain can rank improvements across decision problems in opposite orders** when stakes differ.
-2. **Expected-utility increase and certainty-equivalent gain can rank improvements across monetary decision problems in opposite orders** under a declared nonlinear utility function.
-3. **Preference-sensitive decisions may have no objective accuracy metric at all**, and different stakeholder utility contracts can reverse which intervention looks better.
+They illustrate three bounded cases:
 
-None of those observations is claimed as a new theorem. They are a compact bridge from mature decision-analysis results to the practical measurement question posed by the sprint.
+1. accuracy gain and expected-utility gain can order two improvements differently when the declared stakes differ;
+2. expected-utility increase and certainty-equivalent gain can order monetary improvements differently under a declared nonlinear utility setting;
+3. preference-sensitive decisions can lack an objective accuracy target, while alternative stakeholder value contracts can order interventions differently.
 
 ## Strong owners / boundary
 
-- Abbas & Hazen, *On the Value of Information Across Decision Problems* (Decision Analysis, 2024; Vol. 22 in 2025), already establishes strong non-equivalence results for value-of-information measures across decision problems under broad utility conditions. This benchmark must not claim that discovery.
-- Human–AI measurement work such as Lee (CHI EA 2026), *From Accuracy to Readiness*, uses a taxonomy spanning outcome, reliance, safety/harm and learning metrics rather than one universal scalar.
-- Decision Quality practice treats frame, alternatives, information, values/tradeoffs, reasoning and commitment as jointly necessary process elements; it is not a cross-domain outcome currency.
-- Clinical shared-decision measurement is often decision- and preference-specific, which is precisely why the benchmark marks objective accuracy undefined where no objective correct action is declared.
+- **Abbas & Hazen, _On the Value of Information Across Decision Problems_** owns the load-bearing decision-analysis theory. It also gives positive comparability conditions; this synthesis must not imply that cross-problem comparison is always impossible.
+- **Metric / benchmark rank-instability research** already owns the broader phenomenon that evaluation choices can reverse system rankings. The runnable appendix is not offered as novelty.
+- **DECIDE-AI** provides an established minimum-reporting checklist for early live clinical AI decision-support evaluations. It is an important owner for intended use, decision-maker/workflow, outcomes, analysis, errors, safety and human factors. It is a reporting guideline, not a theorem that unlike cross-domain value functions are commensurable.
+- **IPDAS / preference-sensitive decision-quality instruments** already establish that decision quality can be decision- and preference-specific.
+- **Human–AI evaluation taxonomies** already separate outcome, reliance, safety and learning measures rather than reducing them to one scalar.
 
-Residual contribution under test:
+The residual contribution under test is therefore only:
 
-> Can a very small executable rank-reversal benchmark plus a minimum reporting contract give AI-epistemics projects a practical way to state what must be declared before comparing `decision quality improved` across different decisions?
+> a short, attributed synthesis for AI-epistemics projects that says which assumptions must travel with a `decision quality improved` claim before cross-project comparison is meaningful, plus a runnable appendix showing why those disclosures matter.
 
-## Run
+## Identified reader / comparison task
+
+The target reader is not an abstract metric designer. It is an AI-epistemics researcher, reviewer or judge confronted with two projects that both claim to improve decisions but report unlike objects — for example accuracy, regret, expected utility, calibration, process quality or preference concordance.
+
+The immediate question is:
+
+> Which comparisons are direct, which are conditional on an explicit common value/utility contract, and which are simply not established from the reported numbers?
+
+The contract does **not** make unlike values commensurable. It exposes when the basis for comparison is missing.
+
+## Run the teaching appendix
 
 ```bash
 python competition/no_free_qaly/benchmark.py \
@@ -37,7 +48,7 @@ python competition/no_free_qaly/benchmark.py \
 
 ## Minimum Decision-Improvement Measurement Contract
 
-A cross-project decision-improvement claim should disclose at least:
+Before a cross-project decision-improvement comparison is asserted, disclose at least:
 
 - decision owner / affected scope;
 - alternatives;
@@ -50,25 +61,26 @@ A cross-project decision-improvement claim should disclose at least:
 - distribution / aggregation rule across people or cases;
 - correction / irreversibility handling where material.
 
-This is a reporting contract, not a score.
+This is a synthesis/reporting contract, not a score or new reporting standard. `OWNER_MAP.md` records where these fields are inherited from or extend beyond nearby owners.
 
 ## Kill / shrink criteria
 
-Kill or shrink if hostile review finds:
+Kill or shrink further if:
 
-- an existing AI or decision-support benchmark already performs the same cross-domain metric-ranking stress test;
-- the examples only restate `stakes matter` without adding a useful measurement boundary;
-- the monetary reversal depends on a malformed or incomparable utility definition;
-- the preference-sensitive example quietly hardcodes a moral ranking rather than exposing alternative value contracts;
-- the contract fields do not change how an Apart-style project would report or compare impact.
+- an existing cross-domain AI decision-support reporting/comparison standard already supplies the same contract at the same level;
+- applying existing guidance to realistic AI-epistemics project claims leaves no material comparison ambiguity;
+- the contract only restates mature guidance without improving appraisal of an actual comparison;
+- the teaching appendix is mistaken for empirical prevalence or a new rank-reversal result;
+- the surviving synthesis is too weak to justify competition effort relative to another owner-subtracted candidate.
 
 ## Claim ceilings
 
 ```text
+OWNER_THEORY != OUR_NOVELTY
+TEACHING_APPENDIX != BENCHMARK_CONTRIBUTION
+REPORTING_CONTRACT != UNIVERSAL_SCORE
+REPORTING_COMPLETENESS != METHODOLOGICAL_QUALITY
 ONE_NUMBER != COMPARABILITY
 VALUE_FUNCTION_HIDDEN != VALUE_NEUTRAL
-SYNTHETIC_COUNTEREXAMPLE != EMPIRICAL_PREVALENCE
-PROCESS_QUALITY != OUTCOME_LUCK
 UNDEFINED_METRIC != ZERO_IMPROVEMENT
-OWNER_THEORY != OUR_NOVELTY
 ```
