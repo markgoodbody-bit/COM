@@ -168,11 +168,6 @@ def build(report: dict[str, Any], html_dir: Path, out_dir: Path):
             "primary_scored": case["primary_scored"],
             "published_appeals_text": base.appeals_text(row),
             "route_bundles": ROUTE_BUNDLES.get(case["case_id"], []),
-            "component_rules": {
-                key: base.case_rules(values)
-                for key, values in case["key"].items()
-                if key != "limits"
-            },
             "limits": case["key"]["limits"],
             "scoring_rule": (
                 "Choose one source-supported route bundle where a route is stated; "

@@ -1,8 +1,10 @@
 import importlib.util
 import re
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parent
 SPEC = importlib.util.spec_from_file_location("reader_use_v3", ROOT / "reader_use_pack_v3.py")
@@ -54,6 +56,23 @@ class ReaderUsePackV3Tests(unittest.TestCase):
         complaint = next(b for b in bundles if "complaints process" in b["next_step"])
         self.assertEqual(complaint["channel"], "NOT STATED")
         self.assertNotEqual(complaint["channel"], "in-channel human-agent request")
+
+    def test_emitted_key_has_one_route_linked_scoring_source(self):
+        # Exercise serialization, not just the ROUTE_BUNDLES constant. Synthetic
+        # validated rows avoid network/source dependencies in this regression.
+        rows = [(case, {"fields": {"appeals_review": {
+            "section_present": case["primary_scored"], "matches": []
+        }}}, b"") for case in mod.base.CASES]
+        with tempfile.TemporaryDirectory() as directory:
+            with patch.object(mod.base, "validate", return_value=rows), \
+                 patch.object(mod.base, "full_surface", return_value=b"fixture"):
+                _, key = mod.build({}, Path(directory), Path(directory))
+        for case in key["cases"]:
+            self.assertNotIn("component_rules", case)
+        nsi = next(case for case in key["cases"] if case["case_id"] == "nsi-polyai")
+        complaints = next(bundle for bundle in nsi["route_bundles"]
+                          if "complaints process" in bundle["next_step"])
+        self.assertEqual(complaints["channel"], "NOT STATED")
 
     def test_lens_no_longer_generates_negative_token_evidence(self):
         row = {
