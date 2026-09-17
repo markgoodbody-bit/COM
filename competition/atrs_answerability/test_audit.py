@@ -19,13 +19,14 @@ SAMPLE = """
 <h3>3.5 - Appeals and review</h3>
 <p>Users can submit a review request to the service team at <a href="mailto:review@example.gov.uk">review@example.gov.uk</a>.</p>
 <h2>Tier 2 - Technical Specification and Data</h2>
-<h3>4.5 - Model performance</h3>
+<h3>4.2.7 - Model performance</h3>
 <p>Precision and recall are monitored quarterly.</p>
 <h2>Tier 2 - Risks, Mitigations and Impact Assessments</h2>
-<h3>5.1 - Impact assessment</h3>
+<p>This category heading is not itself a risk disclosure.</p>
+<h3>5.1 - Impact assessments</h3>
 <p>A DPIA was completed.</p>
-<h3>5.2 - Risks</h3>
-<p>Known risk: false positives.</p>
+<h3>5.2 - Risks and mitigations</h3>
+<p>Known risk: false positives; mitigation: manual check.</p>
 </body></html>
 """
 
@@ -45,6 +46,18 @@ class ATRSAuditTests(unittest.TestCase):
         self.assertIsNotNone(human)
         self.assertIsNotNone(appeals)
         self.assertIn("officer checks", human.text)
+
+    def test_category_heading_is_not_mistaken_for_risk_field(self):
+        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
+        risk = row["fields"]["risks"]
+        self.assertEqual(risk["heading"], "5.2 - Risks and mitigations")
+        self.assertGreater(risk["characters"], 0)
+
+    def test_plural_impact_assessments_is_recognised(self):
+        row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
+        impact = row["fields"]["impact_assessment"]
+        self.assertTrue(impact["section_present"])
+        self.assertEqual(impact["heading"], "5.1 - Impact assessments")
 
     def test_appeal_route_locator_is_observable_not_quality_score(self):
         row = mod.audit_record({"title": "x", "url": "u"}, SAMPLE)
