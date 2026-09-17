@@ -188,7 +188,7 @@ If the cold aperture has no writable COM route, it may emit its `HELLO` through 
 2. establish the strongest honest freshness anchor for that retrieval; if freshness is `UNKNOWN` or `DEGRADED`, do not take state-dependent mutation from it;
 3. establish role/runtime/model/provider/session honestly;
 4. if this is first participation and the aperture is not established, use the `HELLO` rule before expecting to be addressed or authorized;
-5. locate only tasks addressed to this aperture or role on sufficiently anchored state;
+5. discover new and updated issue/PR bodies as well as comments, then locate only tasks addressed to this aperture or role on sufficiently anchored state; use the discovery gate below rather than relying only on remembered threads or the active pointer;
 6. if delegated work is shown as active and this aperture owns integration/status, inspect the declared `reply_route` before reporting `WAIT` or `IDLE`; if the route cannot be inspected, report bounded `NOT_OBSERVED` rather than assuming work is still running;
 7. verify authority and control before any write;
 8. follow the task body or an immutable route object named by state — do not depend on a long issue transcript as the sole carrier of an active instruction;
@@ -218,6 +218,20 @@ A correct explanation of COM or COMS is not evidence that synchronization occurr
 The bounded COMS result does not replace a required `HELLO`, task return, or other event. If the result is produced off-route, it remains part of that transport; when relayed into COM, preserve its source and relay modality rather than pretending it originated on the COM route.
 
 Normal `COMS` should be cheap. It is a synchronization operation, not an instruction to generate protocol commentary.
+
+### Discovery gate — every COMS / COMSYNC, including FULL COMSYNC
+
+An issue can contain an addressed task before it has any comments. Repository commits and the comments feed do not establish issue/PR-body coverage. The active pointer is navigation, not a complete inbox.
+
+- Enumerate live issues **and PRs**, including their bodies, created or updated since the last successfully covered discovery boundary. Include closed objects in this changed-object pass so a newly closed or edited task is not silently missed. GitHub's repository issues endpoint includes PRs: `/repos/markgoodbody-bit/COM/issues?state=all&sort=updated&direction=asc&since=<UTC-boundary>&per_page=100`.
+- Follow pagination to completion; inspect the discovered bodies for assignments, superseding directions and material new lanes. Retrieve relevant comments separately. A title-only list, comments-only query or fixed first page is not a complete discovery pass.
+- Without an established boundary, enumerate current open issues/PRs with pagination, plus known unresolved/closed addressed lanes; report that historical closed-object discovery is not established. Do not invent a cursor from memory.
+- Record a compact local receipt: repository, query/boundary, scan start time, pages covered, relevant objects read and unresolved retrieval gaps. Advance the boundary only after successful coverage, to the scan's **start** time with an overlap on the next pass, not its end. Deduplicate overlap by object identity and update time. Concurrent pagination is not a transactional snapshot; recheck relevant objects before acting.
+- A failed/truncated retrieval or unread relevant body means discovery is PARTIAL. Do not report an unqualified `COMSYNC complete`, `FULL COMSYNC complete`, `task: NONE` or `IDLE` from it. Continue independent work while stating the actual coverage.
+
+Discovery does not assign ownership or grant authority. No new comment is required merely because a scan ran.
+
+Regression case: COM issue #365 contained a CODEX task in its initial body with zero comments. A comments-only scan missed it while the active pointer still named older lanes. A valid discovery pass covering its creation must return and read that body without Mark naming the issue. This is a receiver discovery failure, not a requirement that Mark repeat the task.
 
 ## Task / delegation event
 

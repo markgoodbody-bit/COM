@@ -97,7 +97,7 @@ A COMSYNC should:
 3. read `continuity/FRAMEWORK_HEAD.md` once for orientation;
 4. read the bounded `EPISTEMIC_POSTURE`, `TEAM_OPERATING_MODEL`, `COM_RECEIPT_PROTOCOL`, and omission map only where material;
 5. read `coordination/PROGRAM_PLAN.md`, `coordination/ACTIVE_THREAD_POINTER.md`, and `coordination/build_ledger/BUILD_STATUS.md`, then use the live active coordination thread rather than assuming an older issue number remains current;
-6. read new coordination messages/receipts since the aperture's last known cursor rather than replaying whole retired/cold threads;
+6. apply `COM_PROTOCOL_WORKING.md`'s discovery gate on every sync: enumerate new/updated issue and PR bodies with pagination separately from new comments/receipts; do not let a comments cursor stand in for body discovery or rely only on already-known threads;
 7. identify current assignments, superseding directions, unresolved receipt debt and any basis-head mismatch;
 8. reacquire only the live project sources **and operational tools** needed for the current assignment;
 9. when Campfire Relay is material, distinguish the maintained Relay repository/source from the actual Relay tool/provider exposed to the current aperture; use the operational tool when it is available and useful, otherwise state that the execution aperture is unavailable rather than substituting repository inspection and calling it a Relay run;
@@ -106,6 +106,8 @@ A COMSYNC should:
 12. do not ingest broad Square history or unrelated cold evidence merely because it exists.
 
 If the active-thread pointer and live issue state disagree, live issue state wins and the pointer should be repaired.
+
+The discovery gate applies to ordinary and FULL COMSYNC, not only fresh-tab bootstrap. Carry its local coverage receipt and report PARTIAL when relevant retrieval is incomplete. A new issue with zero comments can already contain an addressed task; COM #365 is the regression case.
 
 COMSYNC is designed to be cheap enough to run frequently, but `cheap` does not mean `stop at the first familiar summary`.
 
