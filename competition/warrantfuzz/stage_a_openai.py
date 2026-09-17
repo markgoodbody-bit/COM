@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""Capped OpenAI executor for the first ProofPath/WarrantFuzz real-model screen.
+"""Capped OpenAI executor for ProofPath/WarrantFuzz Stage A.
 
-This adapter is deliberately separate from the measurement branch. It descends
-from the preregistered WarrantFuzz measurement head and does not alter the
-scorer. Stage A sends only baseline, identical baseline replicate, and the raw
-source-duplication mutant. No ancestry/hardening condition is sent in Stage A.
+Stage A is a bounded real-model screen only:
+- 15 baseline runs,
+- 15 byte-identical baseline-replicate runs,
+- 15 raw duplicate-evidence mutant runs,
+for each of gpt-5.6-terra and gpt-5.6-sol.
 
-No request is made unless --execute is supplied. OPENAI_API_KEY must already be
-present in the execution environment. There are no automatic retries.
+The measurement/scoring contract is pinned to PR #351 head
+88264d5824c985cba85a6831912aaeb5b07b5f2e. This adapter changes provider
+plumbing and the pre-registered agent-facing evidence presentation only; it does
+not change the scorer. No request is made unless --execute is supplied.
+OPENAI_API_KEY must already be present. There are no automatic retries.
 """
 from __future__ import annotations
 
@@ -37,12 +41,24 @@ MODEL_PRICING = {
     "gpt-5.6-sol": {"input_per_m": 4.0, "output_per_m": 20.0},
 }
 
-# Stage A asks for natural evidence handling. The plain-English warning is a
-# later control, so the system text must not teach the source-independence rule.
 STAGE_A_SYSTEM_TEXT = (
     "Assess the supplied evidence for the decision question using only the "
     "information supplied. Return only the required JSON object."
 )
+
+# The base fixture has no source text. Stage A supplies a synthetic matched
+# content pair so the second row is recognisable in principle as a retelling
+# without telling the model that it is one.
+ORIGIN_EXCERPT = (
+    "In a 240-case pilot, median review time fell from 50 minutes to 41 minutes "
+    "after the workflow change."
+)
+RETELLING_EXCERPT = (
+    "Across 240 pilot cases, the workflow change was followed by a nine-minute "
+    "drop in median review time, from 50 to 41 minutes."
+)
+
+FORBIDDEN_AGENT_CUES = ("origin", "derivative", "duplicate", "copy", "paraphrase")
 
 RESPONSE_SCHEMA = {
     "type": "object",
@@ -95,14 +111,46 @@ def canonical_json(value: Any) -> str:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 
 
-def stage_a_payload(payload: dict[str, Any]) -> dict[str, Any]:
-    """Remove condition tells and raw-lineage cues from the agent-facing payload."""
+def _neutralise_evidence(
+    evidence_rows: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    """Return agent-facing rows plus internal->neutral id map.
+
+    Neutral ids are visible to the model; original fixture ids remain only in the
+    manifest metadata so a result can be traced without leaking lineage labels.
+    """
+    neutral_rows: list[dict[str, Any]] = []
+    id_map: dict[str, str] = {}
+    for idx, row in enumerate(evidence_rows, start=1):
+        internal_id = str(row.get("source_id"))
+        neutral_id = f"src-{idx}"
+        id_map[internal_id] = neutral_id
+        neutral_rows.append(
+            {
+                "source_id": neutral_id,
+                "label": f"Source {idx}",
+                "stance": row.get("stance"),
+                "excerpt": ORIGIN_EXCERPT if idx == 1 else RETELLING_EXCERPT,
+            }
+        )
+    return neutral_rows, id_map
+
+
+def stage_a_payload(payload: dict[str, Any]) -> tuple[dict[str, Any], dict[str, str]]:
+    """Remove lineage/control tells while keeping overlap observable in principle."""
     out = copy.deepcopy(payload)
     out["provenance"] = None
     out.pop("response_schema", None)
-    for idx, evidence in enumerate(out.get("evidence", []), start=1):
-        evidence["label"] = f"Source {idx}"
-    return out
+    neutral_rows, id_map = _neutralise_evidence(out.get("evidence", []))
+    out["evidence"] = neutral_rows
+    return out, id_map
+
+
+def assert_no_agent_facing_tells(payload: dict[str, Any]) -> None:
+    rendered = canonical_json(payload).lower()
+    for cue in FORBIDDEN_AGENT_CUES:
+        if cue in rendered:
+            raise ValueError(f"agent-facing payload leaks forbidden cue: {cue}")
 
 
 def build_stage_a_requests(
@@ -113,16 +161,25 @@ def build_stage_a_requests(
     if runs < wf.MIN_TARGET_RUNS:
         raise ValueError(f"runs must be >= {wf.MIN_TARGET_RUNS}")
     conditions = rc.condition_payloads(fixture)
+
+    prepared: dict[str, tuple[dict[str, Any], dict[str, str], str]] = {}
+    for condition in STAGE_A_CONDITIONS:
+        payload, id_map = stage_a_payload(conditions[condition])
+        assert_no_agent_facing_tells(payload)
+        input_hash = hashlib.sha256(
+            canonical_json({"system": STAGE_A_SYSTEM_TEXT, "payload": payload}).encode("utf-8")
+        ).hexdigest()
+        prepared[condition] = (payload, id_map, input_hash)
+
     rows: list[dict[str, Any]] = []
+    # Round-robin the three conditions at each run index so provider/routing drift
+    # is shared across arms rather than aligned with one condition block.
     for model in models:
         if model not in MODEL_PRICING:
             raise ValueError(f"unsupported model {model!r}")
-        for condition in STAGE_A_CONDITIONS:
-            payload = stage_a_payload(conditions[condition])
-            input_hash = hashlib.sha256(
-                canonical_json({"system": STAGE_A_SYSTEM_TEXT, "payload": payload}).encode("utf-8")
-            ).hexdigest()
-            for run_index in range(runs):
+        for run_index in range(runs):
+            for condition in STAGE_A_CONDITIONS:
+                payload, id_map, input_hash = prepared[condition]
                 rows.append(
                     {
                         "measurement_head": MEASUREMENT_HEAD,
@@ -130,6 +187,7 @@ def build_stage_a_requests(
                         "condition": condition,
                         "run_index": run_index,
                         "input_sha256": input_hash,
+                        "source_id_map": id_map,
                         "system": STAGE_A_SYSTEM_TEXT,
                         "payload": payload,
                     }
@@ -138,6 +196,7 @@ def build_stage_a_requests(
 
 
 def response_body(row: dict[str, Any]) -> dict[str, Any]:
+    # source_id_map and condition labels are deliberately not sent.
     user_text = canonical_json(row["payload"])
     return {
         "model": row["model"],
@@ -164,7 +223,10 @@ def worst_case_cost_usd(row: dict[str, Any]) -> float:
     """Conservative byte ceiling: token count cannot exceed UTF-8 bytes."""
     body_bytes = len(canonical_json(response_body(row)).encode("utf-8"))
     p = MODEL_PRICING[row["model"]]
-    return body_bytes * p["input_per_m"] / 1_000_000 + MAX_OUTPUT_TOKENS * p["output_per_m"] / 1_000_000
+    return (
+        body_bytes * p["input_per_m"] / 1_000_000
+        + MAX_OUTPUT_TOKENS * p["output_per_m"] / 1_000_000
+    )
 
 
 def actual_cost_usd(model: str, usage: dict[str, Any]) -> float:
@@ -228,6 +290,31 @@ def append_ledger(path: Path, row: dict[str, Any]) -> None:
         handle.write(json.dumps(row, sort_keys=True, ensure_ascii=False) + "\n")
 
 
+def accounted_spend_usd(ledger: list[dict[str, Any]]) -> float:
+    """Actual completed cost + worst-case reservation for failed attempts.
+
+    A failed HTTP attempt may still have been billed. Reserving its whole-call
+    worst case prevents the cap from relying on unobservable provider behaviour.
+    """
+    total = 0.0
+    for row in ledger:
+        if row.get("status") == "completed":
+            total += float(row.get("cost_usd") or 0.0)
+        elif row.get("status") == "failed":
+            total += float(row.get("reserved_cost_usd") or 0.0)
+    return total
+
+
+def attempted_keys(ledger: list[dict[str, Any]]) -> set[tuple[str, str, int]]:
+    # Failed calls are not silently retried. A new explicit execution decision is
+    # required before changing that historical attempt state.
+    return {
+        ledger_key(row)
+        for row in ledger
+        if row.get("status") in {"completed", "failed"}
+    }
+
+
 def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]) -> dict[str, Any]:
     by_key = {ledger_key(row): row for row in ledger if row.get("status") == "completed"}
     result: dict[str, Any] = {
@@ -235,7 +322,13 @@ def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]
         "stage": "A",
         "models": {},
     }
-    runs = len({r["run_index"] for r in requests if r["model"] == requests[0]["model"] and r["condition"] == "baseline"})
+    runs = len(
+        {
+            r["run_index"]
+            for r in requests
+            if r["model"] == requests[0]["model"] and r["condition"] == "baseline"
+        }
+    )
     for model in MODEL_PRICING:
         condition_rows: dict[str, list[dict[str, Any]]] = {}
         complete = True
@@ -253,7 +346,7 @@ def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]
         if not complete:
             result["models"][model] = {"status": "INCOMPLETE"}
             continue
-        scored = wf.assess_target_results(
+        result["models"][model] = wf.assess_target_results(
             {
                 "baseline": condition_rows["baseline"],
                 "baseline_replicate": condition_rows["baseline_replicate"],
@@ -261,8 +354,24 @@ def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]
             },
             "must_not_strengthen",
         )
-        result["models"][model] = scored
     return result
+
+
+def write_summary(
+    path: Path,
+    requests: list[dict[str, Any]],
+    ledger: list[dict[str, Any]],
+    execution_status: str,
+) -> dict[str, Any]:
+    summary = score_completed(requests, ledger)
+    summary["execution_status"] = execution_status
+    summary["attempted_calls"] = len(attempted_keys(ledger))
+    summary["completed_calls"] = sum(1 for r in ledger if r.get("status") == "completed")
+    summary["failed_calls"] = sum(1 for r in ledger if r.get("status") == "failed")
+    summary["accounted_spend_usd"] = round(accounted_spend_usd(ledger), 9)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return summary
 
 
 def main() -> int:
@@ -286,12 +395,16 @@ def main() -> int:
     fixture = load_fixture(args.fixture)
     requests = build_stage_a_requests(fixture, args.runs)
     if args.manifest:
-        args.manifest.write_text(json.dumps(requests, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        args.manifest.parent.mkdir(parents=True, exist_ok=True)
+        args.manifest.write_text(
+            json.dumps(requests, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
 
     existing = load_ledger(args.ledger)
-    completed = {ledger_key(row) for row in existing if row.get("status") == "completed"}
-    remaining = [row for row in requests if ledger_key(row) not in completed]
-    spent = sum(float(row.get("cost_usd") or 0) for row in existing if row.get("status") == "completed")
+    attempted = attempted_keys(existing)
+    remaining = [row for row in requests if ledger_key(row) not in attempted]
+    spent = accounted_spend_usd(existing)
     worst_remaining = sum(worst_case_cost_usd(row) for row in remaining)
 
     print(
@@ -299,8 +412,9 @@ def main() -> int:
             {
                 "measurement_head": MEASUREMENT_HEAD,
                 "requests_total": len(requests),
+                "requests_attempted": len(attempted),
                 "requests_remaining": len(remaining),
-                "actual_spend_recorded_usd": round(spent, 6),
+                "accounted_spend_usd": round(spent, 6),
                 "worst_case_remaining_usd": round(worst_remaining, 6),
                 "cap_usd": args.cap_usd,
                 "execute": args.execute,
@@ -310,62 +424,61 @@ def main() -> int:
     )
 
     if spent + worst_remaining > args.cap_usd + 1e-12:
+        write_summary(args.summary, requests, existing, "REFUSED_SPEND_CAP")
         raise SystemExit("refusing: conservative worst-case execution could exceed spend cap")
     if not args.execute:
+        write_summary(args.summary, requests, existing, "DRY_RUN")
         return 0
 
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
+        write_summary(args.summary, requests, existing, "BLOCKED_NO_CREDENTIAL_ROUTE")
         raise SystemExit("OPENAI_API_KEY is required for --execute")
 
-    for row in remaining:
-        remaining_after_this = [r for r in remaining if ledger_key(r) != ledger_key(row)]
-        if spent + worst_case_cost_usd(row) + sum(worst_case_cost_usd(r) for r in remaining_after_this) > args.cap_usd + 1e-12:
+    ledger = list(existing)
+    for pos, row in enumerate(remaining):
+        later = remaining[pos + 1 :]
+        if spent + worst_case_cost_usd(row) + sum(worst_case_cost_usd(r) for r in later) > args.cap_usd + 1e-12:
+            write_summary(args.summary, requests, ledger, "REFUSED_SPEND_CAP")
             raise SystemExit("refusing before call: hard spend cap would not be preserved")
         try:
             response, parsed = call_openai(api_key, row)
             usage = response.get("usage") or {}
             cost = actual_cost_usd(row["model"], usage)
-            spent += cost
-            append_ledger(
-                args.ledger,
-                {
-                    "status": "completed",
-                    "measurement_head": MEASUREMENT_HEAD,
-                    "model": row["model"],
-                    "condition": row["condition"],
-                    "run_index": row["run_index"],
-                    "input_sha256": row["input_sha256"],
-                    "response_id": response.get("id"),
-                    "usage": usage,
-                    "cost_usd": round(cost, 9),
-                    "parsed": parsed,
-                    "observed_at_unix": time.time(),
-                },
-            )
+            completed = {
+                "status": "completed",
+                "measurement_head": MEASUREMENT_HEAD,
+                "model": row["model"],
+                "condition": row["condition"],
+                "run_index": row["run_index"],
+                "input_sha256": row["input_sha256"],
+                "response_id": response.get("id"),
+                "usage": usage,
+                "cost_usd": round(cost, 9),
+                "parsed": parsed,
+                "observed_at_unix": time.time(),
+            }
+            append_ledger(args.ledger, completed)
+            ledger.append(completed)
+            spent = accounted_spend_usd(ledger)
         except Exception as exc:
-            append_ledger(
-                args.ledger,
-                {
-                    "status": "failed",
-                    "measurement_head": MEASUREMENT_HEAD,
-                    "model": row["model"],
-                    "condition": row["condition"],
-                    "run_index": row["run_index"],
-                    "input_sha256": row["input_sha256"],
-                    "error": str(exc),
-                    "observed_at_unix": time.time(),
-                },
-            )
+            failed = {
+                "status": "failed",
+                "measurement_head": MEASUREMENT_HEAD,
+                "model": row["model"],
+                "condition": row["condition"],
+                "run_index": row["run_index"],
+                "input_sha256": row["input_sha256"],
+                "reserved_cost_usd": round(worst_case_cost_usd(row), 9),
+                "error": str(exc),
+                "observed_at_unix": time.time(),
+            }
+            append_ledger(args.ledger, failed)
+            ledger.append(failed)
+            write_summary(args.summary, requests, ledger, "FAILED_STOP_NO_RETRY")
             raise
 
-    ledger = load_ledger(args.ledger)
-    summary = score_completed(requests, ledger)
-    summary["recorded_spend_usd"] = round(
-        sum(float(row.get("cost_usd") or 0) for row in ledger if row.get("status") == "completed"),
-        9,
-    )
-    args.summary.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    summary = write_summary(args.summary, requests, ledger, "COMPLETED")
     print(json.dumps(summary, indent=2, sort_keys=True))
     return 0
 
