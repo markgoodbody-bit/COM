@@ -16,7 +16,7 @@ PURPOSE > INSTRUMENT
 - Mark: human originator / witness / consequential human gate; not routine scheduler.
 - Framework: episodic integration / coordination / continuity role.
 - Codex: active implementation / hostile-review aperture.
-- Claude Code: last known temporarily out of tokens; not removed. Reverify before relying on a new CC review.
+- Claude Code: **ACTIVE AGAIN on #364 as of 17 Sep evening**. CC identified the legacy-heading misses; Codex independently confirmed them against the frozen witness. Preserve discovery and confirmation as distinct contributions.
 
 ## Current routes
 
@@ -50,10 +50,12 @@ Why it still leads:
 - useful without prize/submission;
 - survives owner subtraction better than #363.
 
-Strong owners now explicit:
+Strong owners explicitly carried:
 - GOV.UK / GDS: ATRS standard, semantics, guidance, repository;
+- BritainThinks / CDEI: foundational UK public-engagement findings about simple/layered information, contact and appeal information;
 - Fabio Rovai / Tesseract Academy: ATRS metadata corpus;
-- Public Law Project / Tracking Automated Government: independent public-sector ADM visibility and much broader transparency/redress/public-law framing.
+- Public Law Project / Tracking Automated Government: independent public-sector ADM visibility and much broader transparency/redress/public-law framing;
+- adjacent algorithm-register usability/contestability research.
 
 `NOT_FOUND != NOVEL`.
 
@@ -69,14 +71,12 @@ finder / Search API membership = 152 / 152
 raw source snapshots = 152
 ```
 
-Codex independently verified bundle/source identity and reproduced the original extraction. Later hostile review found an important parser-semantic defect:
+Codex independently verified bundle/source identity and reproduced the original extraction. **Claude Code later identified the legacy-heading miss; Codex independently confirmed it against the frozen bytes.**
 
 ```text
 REPRODUCED != CORRECT
 SAME_REGEX + SAME_BYTES -> SAME_MISS
 ```
-
-Seven records use older/transition ATRS heading families the original parser did not fully recognise. The historical source/report remains preserved rather than rewritten.
 
 ### Version-aware correction — same 152 source bytes, no refetch
 
@@ -110,8 +110,8 @@ senior_responsible_owner = 152/152 observed
 Superseded historical presence figures:
 - human_review `146/152` -> `152/152`;
 - risks `145/152` -> `152/152`;
-- impact_assessment `138/152` -> `145/152`.
-- model_performance remains numerically `139/152`, but its interpretation is corrected by heading-family context.
+- impact_assessment `138/152` -> `145/152`;
+- model_performance remains numerically `139/152`, interpretation corrected.
 
 ```text
 HISTORICAL_REPORT != DELETED
@@ -119,9 +119,9 @@ HEADING_FAMILY != COMPLIANCE_STATUS
 FIELD_NOT_OBSERVED != REQUIRED_FIELD_OMITTED
 ```
 
-### Appeals/review pilot — unchanged
+A narrow follow-up repair now ensures an actually observed field wins over any mixed-family absence context. This is a regression boundary, not a new corpus finding.
 
-The heading-family defect did not affect the `Appeals and review` extraction.
+### Appeals/review pilot — unchanged
 
 ```text
 TOKEN-POSITIVE CENSUS = 27
@@ -150,19 +150,42 @@ REPRODUCIBILITY != CORRECTNESS
 CURRENT_LEAD != SELECTED_ENTRY
 ```
 
-### Reader Lens
+### Reader Lens / reader-use method
 
-A static source-linked Reader Lens exists. The corrected version-aware build is generated from the repaired derived report and defaults to public source evidence only. Exploratory semantic annotations are **not** silently carried across the parser-version boundary.
+The Reader Lens is being repaired toward an evidence-first compact interface:
+- source search separated from optional annotation search;
+- safe http/https/mailto evidence made actionable without relabelling it as appeal;
+- phone-like strings remain heuristic evidence;
+- hashes/extraction metadata moved to Evidence details;
+- explicit labels/live results/reset/no-match handling;
+- compact cards with source evidence retained in HTML.
+
+No rendered desktop/mobile/keyboard/assistive-technology verification is claimed yet.
+
+A future human-use protocol now exists. Residual test:
+
+> On actual ATRS records, does a source-preserving presentation improve retrieval of action-relevant facts — next step, actor, initiation channel, challenge object/layer and current/planned status — without increasing unsupported inference?
+
+Evidence-bound method pack:
 
 ```text
-SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
-EASIER_INSPECTION != EFFECTIVE_REMEDY
-READER_LENS != REPLACEMENT_FOR_GOV.UK
+workflow = 35267375791 SUCCESS
+artifact = 10517053630
+artifact sha256 = d41111053f6240d4aadf9bded931b3bfd917ef484a1549cdad4f1940d60f040f
+10 purposive cases / 6 tasks
+A/B sequences = 5 RAW + 5 LENS each, inverse allocation
 ```
 
-Next useful falsifier is reader use, not more parser polish: can a person accurately extract what can be challenged, by whom, through what route and at which layer more reliably from the lens than from the raw record?
+No recruitment or human data exists. Codex hostile review of the method is requested/pending.
 
-Stop/shrink rule: if the surviving result is only `free-text fields vary`, #364 shrinks to demo.
+```text
+METHOD_PACK != HUMAN_RESULT
+SOURCE_READBACK_AID != DEMONSTRATED_READER_BENEFIT
+EASIER_INSPECTION != EFFECTIVE_REMEDY
+TEN_PURPOSIVE_CASES != ATRS_POPULATION
+```
+
+Stop/shrink rule: if the surviving result is only `free-text fields vary`, or the Reader Lens does not improve evidence-grounded task performance without increasing unsupported inference, #364 shrinks to demo.
 
 No competition registration, organiser contact, provider spend, terms acceptance or submission.
 
