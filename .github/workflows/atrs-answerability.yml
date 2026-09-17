@@ -31,17 +31,20 @@ jobs:
             competition/atrs_answerability/membership.py \
             competition/atrs_answerability/select_adjudication.py \
             competition/atrs_answerability/exploratory_semantic_census.py \
+            competition/atrs_answerability/reader_lens.py \
             competition/atrs_answerability/falsify_100.py \
             competition/atrs_answerability/test_audit.py \
             competition/atrs_answerability/test_membership.py \
             competition/atrs_answerability/test_select_adjudication.py \
-            competition/atrs_answerability/test_exploratory_semantic_census.py
-      - name: Offline parser, selection and coding tests
+            competition/atrs_answerability/test_exploratory_semantic_census.py \
+            competition/atrs_answerability/test_reader_lens.py
+      - name: Offline parser, selection, coding and reader tests
         run: |
           python -m unittest competition/atrs_answerability/test_audit.py -v
           python -m unittest competition/atrs_answerability/test_membership.py -v
           python -m unittest competition/atrs_answerability/test_select_adjudication.py -v
           python -m unittest competition/atrs_answerability/test_exploratory_semantic_census.py -v
+          python -m unittest competition/atrs_answerability/test_reader_lens.py -v
       - name: Falsify x100
         run: python competition/atrs_answerability/falsify_100.py
 
