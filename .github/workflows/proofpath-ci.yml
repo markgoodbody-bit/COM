@@ -22,30 +22,38 @@ jobs:
           python-version: '3.12'
       - name: Syntax
         run: python -m py_compile competition/proofpath_ci/proofpath.py competition/proofpath_ci/test_proofpath.py
-      - name: Unit tests
+      - name: Unit and hostile tests
         run: python -m unittest competition/proofpath_ci/test_proofpath.py -v
-      - name: Demo repetition-counter failure
+      - name: Demo report generation does not masquerade as CI gate
         run: |
           mkdir -p /tmp/proofpath
           python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent repetition_counter --json-out /tmp/proofpath/repetition.json --html-out /tmp/proofpath/repetition.html
           python - <<'PY'
           import json
           p=json.load(open('/tmp/proofpath/repetition.json'))
-          row=next(x for x in p['mutations'] if x['mutation_id']=='M1_duplicate_support')
-          assert row['violated'] is True
-          assert row['mutant_root_count']==row['baseline_root_count']
-          assert row['mutant_source_count']>row['baseline_source_count']
+          duplicate=next(x for x in p['mutations'] if x['mutation_id']=='M1_duplicate_support')
+          retract=next(x for x in p['mutations'] if x['mutation_id']=='M2_retract_origin_restate')
+          guard=next(x for x in p['mutations'] if x['mutation_id']=='M3_independent_contradiction')
+          assert duplicate['status']=='FAIL' and duplicate['powered'] is True
+          assert retract['status']=='FAIL' and retract['powered'] is True
+          assert guard['status']=='UNPOWERED' and guard['powered'] is False
+          assert p['summary']['ci_gate_pass'] is False
           PY
-      - name: Demo lineage-aware control
+      - name: Explicit CI gate fails vulnerable control and passes reference
         run: |
-          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent lineage_aware --json-out /tmp/proofpath/lineage.json --html-out /tmp/proofpath/lineage.html
+          if python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent repetition_counter --ci-gate >/tmp/proofpath/bad.txt; then
+            echo 'expected vulnerable control CI gate to fail'
+            exit 1
+          fi
+          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent lineage_aware --ci-gate >/tmp/proofpath/good.txt
+      - name: Action-only escalation is visible
+        run: |
+          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent action_only_escalator --json-out /tmp/proofpath/action.json
           python - <<'PY'
           import json
-          p=json.load(open('/tmp/proofpath/lineage.json'))
-          duplicate=next(x for x in p['mutations'] if x['mutation_id']=='M1_duplicate_support')
-          contradiction=next(x for x in p['mutations'] if x['mutation_id']=='M3_independent_contradiction')
-          assert duplicate['violated'] is False
-          assert duplicate['delta']==0
-          assert contradiction['violated'] is False
-          assert contradiction['delta']<0
+          p=json.load(open('/tmp/proofpath/action.json'))
+          row=next(x for x in p['mutations'] if x['mutation_id']=='M1_duplicate_support')
+          assert row['baseline_strength']==row['mutant_strength']
+          assert row['baseline_action']=='hold' and row['mutant_action']=='proceed'
+          assert row['action_violated'] is True and row['status']=='FAIL'
           PY
