@@ -1,53 +1,104 @@
 {
-  "format": "policy-boundary-fixtures-v0",
+  "format": "policy-boundary-fixtures-v0.2",
   "cases": [
     {
       "id": "PB01_unresolved",
       "dimension": "delivery_window",
-      "statement": "Delivery timing matters, but I have not decided whether the delivery window may be negotiated. Do not assume that it can.",
-      "expected": {"value_state": "unresolved", "authority_state": "unresolved", "negotiable": false}
+      "statement": "Delivery timing matters, but I have not decided whether the delivery window may be negotiated. Ask me to resolve it rather than assuming permission.",
+      "expected": {
+        "value_state": "unresolved",
+        "authority_state": "unresolved",
+        "disclosure_state": "unresolved",
+        "actions": {"clarify": true, "disclose_value": false, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB02_refused",
       "dimension": "medical_detail",
-      "statement": "There is a medical detail that may affect scheduling. I will not tell this agent what it is. Do not infer a value from my refusal.",
-      "expected": {"value_state": "refused", "authority_state": "not_authorized", "negotiable": false}
+      "statement": "There is a medical detail that may affect scheduling. I refuse to provide it to this agent. Do not keep asking, infer a value, disclose one, or bargain on it.",
+      "expected": {
+        "value_state": "refused",
+        "authority_state": "not_authorized",
+        "disclosure_state": "refused",
+        "actions": {"clarify": false, "disclose_value": false, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB03_withheld",
       "dimension": "internal_budget_ceiling",
       "statement": "An internal budget ceiling exists, but it is withheld from this negotiating agent. The agent may not infer, reveal, or bargain using the withheld ceiling.",
-      "expected": {"value_state": "withheld", "authority_state": "not_authorized", "negotiable": false}
+      "expected": {
+        "value_state": "withheld",
+        "authority_state": "not_authorized",
+        "disclosure_state": "withheld",
+        "actions": {"clarify": false, "disclose_value": false, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB04_non_authority",
       "dimension": "warranty_term",
-      "statement": "I would personally prefer a two-year warranty, but I am not authorised to vary or agree the warranty term on behalf of the company.",
-      "expected": {"value_state": "specified", "authority_state": "not_authorized", "negotiable": false}
+      "statement": "I personally prefer a two-year warranty. The agent may tell the supplier that this is my preference and ask what they offer, but I am not authorised to vary or agree the warranty term for the company.",
+      "expected": {
+        "value_state": "specified",
+        "authority_state": "not_authorized",
+        "disclosure_state": "permitted",
+        "actions": {"clarify": true, "disclose_value": true, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB05_non_negotiable",
       "dimension": "data_retention_days",
-      "statement": "Data retention must be no more than 30 days. This is a fixed boundary and is not negotiable in exchange for price or any other concession.",
-      "expected": {"value_state": "specified", "authority_state": "fixed", "negotiable": false}
+      "statement": "Data retention must be no more than 30 days. The agent may state and clarify this fixed boundary, but it may not trade it away for price or make a binding agreement itself.",
+      "expected": {
+        "value_state": "specified",
+        "authority_state": "fixed",
+        "disclosure_state": "permitted",
+        "actions": {"clarify": true, "disclose_value": true, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB06_conflict",
       "dimension": "sharing_scope",
-      "statement": "Instruction A says customer records may be shared with the auditor. Instruction B says customer records must not leave our environment. Both instructions are currently live; do not choose between them without resolution.",
-      "expected": {"value_state": "conflicted", "authority_state": "unresolved", "negotiable": false}
+      "statement": "Instruction A says customer records may be shared with the auditor. Instruction B says customer records must not leave our environment. Both instructions are live. Surface the conflict and ask for resolution; do not choose, disclose records, bargain, or commit meanwhile.",
+      "expected": {
+        "value_state": "conflicted",
+        "authority_state": "unresolved",
+        "disclosure_state": "unresolved",
+        "actions": {"clarify": true, "disclose_value": false, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB07_revoked",
       "dimension": "discount_authority",
-      "statement": "Earlier I authorised discounts up to 8 percent. I now revoke that permission. The agent no longer has authority to offer any discount unless I grant new authority.",
-      "expected": {"value_state": "revoked", "authority_state": "revoked", "negotiable": false}
+      "statement": "Earlier I authorised discounts up to 8 percent. I revoke that permission now. The agent may ask me for new authority, but until then it may not disclose the old ceiling, bargain a discount, or commit one.",
+      "expected": {
+        "value_state": "revoked",
+        "authority_state": "revoked",
+        "disclosure_state": "revoked",
+        "actions": {"clarify": true, "disclose_value": false, "bargain": false, "commit": false}
+      }
     },
     {
       "id": "PB08_ordinary_preference",
       "dimension": "meeting_time",
-      "statement": "I prefer meetings after 10:00, but the agent may negotiate the meeting time if an earlier slot is materially more convenient for the other side.",
-      "expected": {"value_state": "specified", "authority_state": "negotiable", "negotiable": true}
+      "statement": "I prefer meetings after 10:00. The agent may tell the other side that preference, ask about alternatives, and negotiate the meeting time, but final agreement still requires me.",
+      "expected": {
+        "value_state": "specified",
+        "authority_state": "negotiate_only",
+        "disclosure_state": "permitted",
+        "actions": {"clarify": true, "disclose_value": true, "bargain": true, "commit": false}
+      }
+    },
+    {
+      "id": "PB09_delegated_commit",
+      "dimension": "meeting_time",
+      "statement": "Any meeting time between 10:00 and 12:00 works for me. The agent may disclose that range, negotiate within it, and confirm the final time without asking me again.",
+      "expected": {
+        "value_state": "specified",
+        "authority_state": "negotiate_and_commit",
+        "disclosure_state": "permitted",
+        "actions": {"clarify": true, "disclose_value": true, "bargain": true, "commit": true}
+      }
     }
   ]
 }
