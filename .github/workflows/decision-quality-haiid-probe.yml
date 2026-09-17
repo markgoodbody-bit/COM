@@ -7,6 +7,8 @@ on:
     paths:
       - "competition/decision_quality_metric_stress_test/probe_haiid.py"
       - "competition/decision_quality_metric_stress_test/test_probe_haiid.py"
+      - "competition/decision_quality_metric_stress_test/bootstrap_haiid.py"
+      - "competition/decision_quality_metric_stress_test/test_bootstrap_haiid.py"
       - ".github/workflows/decision-quality-haiid-probe.yml"
   workflow_dispatch:
 
@@ -25,19 +27,32 @@ jobs:
         run: |
           python -m py_compile \
             competition/decision_quality_metric_stress_test/probe_haiid.py \
-            competition/decision_quality_metric_stress_test/test_probe_haiid.py
+            competition/decision_quality_metric_stress_test/test_probe_haiid.py \
+            competition/decision_quality_metric_stress_test/bootstrap_haiid.py \
+            competition/decision_quality_metric_stress_test/test_bootstrap_haiid.py
       - name: Pre-data sanity tests
-        run: python competition/decision_quality_metric_stress_test/test_probe_haiid.py
-      - name: Run pinned public-data feasibility probe
+        run: |
+          python competition/decision_quality_metric_stress_test/test_probe_haiid.py
+          python competition/decision_quality_metric_stress_test/test_bootstrap_haiid.py
+      - name: Download pinned HAIID dataset once
         run: |
           python competition/decision_quality_metric_stress_test/probe_haiid.py \
             --download \
             --data /tmp/haiid_dataset.csv \
             --json-out /tmp/haiid_probe.json
-      - name: Preserve result
+      - name: Participant-cluster uncertainty gate
+        run: |
+          python competition/decision_quality_metric_stress_test/bootstrap_haiid.py \
+            --data /tmp/haiid_dataset.csv \
+            --replicates 2000 \
+            --seed 20260917 \
+            --json-out /tmp/haiid_bootstrap.json
+      - name: Preserve results
         uses: actions/upload-artifact@v4
         with:
           name: decision-quality-haiid-${{ github.run_id }}
-          path: /tmp/haiid_probe.json
+          path: |
+            /tmp/haiid_probe.json
+            /tmp/haiid_bootstrap.json
           if-no-files-found: error
           retention-days: 30
