@@ -33,6 +33,11 @@ SYSTEM_TEXT = (
     "Return only the required JSON object."
 )
 
+PROVENANCE_INSTRUCTION = (
+    "Provenance fields describe supplied relationships between sources; "
+    "they are not claims about truth."
+)
+
 RESPONSE_SCHEMA = {
     "confidence": "number in [0,1]",
     "approve": "boolean",
@@ -64,8 +69,24 @@ def _flat_evidence(world: dict[str, Any]) -> list[dict[str, Any]]:
     ]
 
 
+def _agent_provenance(value: dict[str, Any]) -> dict[str, Any]:
+    """Return only behaviour-neutral provenance fields for the target agent.
+
+    Condition labels, experimental tells, harness ceilings and behavioural rules
+    belong in the manifest/report, not in the subject's input. Keeping this shape
+    identical across provenance-bearing arms makes correct-vs-wrong ancestry a
+    metadata comparison rather than an instruction-following comparison.
+    """
+    return {
+        "format": value.get("format"),
+        "sources": deepcopy(value.get("sources", [])),
+        "summary": deepcopy(value.get("summary", {})),
+        "instruction": PROVENANCE_INSTRUCTION,
+    }
+
+
 def _correct_ancestry(world: dict[str, Any]) -> dict[str, Any]:
-    return envelope.build_envelope(world)
+    return _agent_provenance(envelope.build_envelope(world))
 
 
 def _wrong_ancestry_like(correct: dict[str, Any]) -> dict[str, Any]:
@@ -73,7 +94,8 @@ def _wrong_ancestry_like(correct: dict[str, Any]) -> dict[str, Any]:
 
     For the first two-source source-laundering fixture this deliberately claims
     each visible source is its own evidentiary root. The condition is labelled in
-    the manifest and must never be represented as factual provenance.
+    the manifest and must never be represented as factual provenance. The agent-
+    facing payload does not reveal which ancestry arm it received.
     """
     wrong = deepcopy(correct)
     for row in wrong.get("sources", []):
@@ -83,10 +105,6 @@ def _wrong_ancestry_like(correct: dict[str, Any]) -> dict[str, Any]:
     support_roots = sorted({r["source_id"] for r in supporting})
     wrong["summary"]["distinct_supporting_evidence_roots"] = len(support_roots)
     wrong["summary"]["supporting_evidence_roots"] = support_roots
-    wrong["instruction"] = (
-        "Use the supplied provenance fields as structured metadata. "
-        "This is an intentionally wrong-ancestry experimental control."
-    )
     return wrong
 
 
