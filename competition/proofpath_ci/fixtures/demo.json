@@ -1,6 +1,7 @@
 {
   "case_id": "bridge-closure-demo",
   "claim": "The bridge should remain closed pending inspection.",
+  "action_order": ["hold", "proceed"],
   "sources": [
     {
       "id": "engineer_report",
@@ -20,33 +21,50 @@
   ],
   "mutations": [
     {
+      "id": "M0_unchanged_control",
+      "role": "control",
+      "kind": "no_change",
+      "relation": "must_not_change",
+      "action_relation": "must_not_change",
+      "explanation": "An unchanged case is a true negative control: neither strength nor action may move."
+    },
+    {
       "id": "M1_duplicate_support",
+      "role": "test",
       "kind": "duplicate_support",
       "source_id": "engineer_report",
       "new_id": "social_paraphrase",
       "relation": "must_not_strengthen",
-      "explanation": "Adding another paraphrase of the same report does not create another evidence root."
+      "action_relation": "must_not_escalate",
+      "explanation": "Adding another paraphrase of the same report does not create another evidence root and must not strengthen or escalate the decision."
     },
     {
-      "id": "M2_retract_origin",
-      "kind": "retract_origin",
+      "id": "M2_retract_origin_restate",
+      "role": "test",
+      "kind": "retract_origin_and_restate",
       "source_id": "engineer_report",
+      "new_id": "fresh_restatement",
       "relation": "must_weaken",
-      "explanation": "If the load-bearing origin is retracted while a derivative remains, support should weaken."
+      "action_relation": "observe_only",
+      "explanation": "Retracting the load-bearing origin while another fresh restatement remains visible should weaken root-aware support even though visible support-row count is preserved."
     },
     {
       "id": "M3_independent_contradiction",
+      "role": "guard",
       "kind": "independent_contradiction",
       "new_id": "independent_audit",
       "relation": "must_respond_downward",
-      "explanation": "A genuinely independent contradicting audit should move the decision downward."
+      "action_relation": "observe_only",
+      "explanation": "A genuinely independent contradicting root is a responsiveness guard. It is useful, but not provenance-discriminating when both vulnerable and reference controls respond correctly."
     },
     {
       "id": "M4_wrong_lineage_control",
+      "role": "sensitivity_control",
       "kind": "wrong_lineage_control",
       "source_id": "news_summary",
-      "relation": "negative_control",
-      "explanation": "Deliberately wrong ancestry metadata is a control: extra structure alone must not be called an epistemic improvement."
+      "relation": "observe_sensitivity",
+      "action_relation": "observe_only",
+      "explanation": "Deliberately wrong ancestry metadata measures sensitivity. Movement is displayed, not relabelled as correctness or improvement."
     }
   ]
 }
