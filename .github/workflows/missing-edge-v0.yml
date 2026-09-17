@@ -28,14 +28,23 @@ jobs:
       - name: Syntax
         run: |
           python -m py_compile competition/missing_edge/missing_edge.py
+          python -m py_compile competition/missing_edge/reference_baselines.py
           python -m py_compile competition/missing_edge/test_missing_edge.py
-      - name: Unit tests
-        run: python -m unittest competition/missing_edge/test_missing_edge.py -v
+          python -m py_compile competition/missing_edge/test_reference_baselines.py
+      - name: Unit and reference-baseline tests
+        run: |
+          python -m unittest \
+            competition/missing_edge/test_missing_edge.py \
+            competition/missing_edge/test_reference_baselines.py \
+            -v
       - name: Frozen manifest smoke
         run: |
           tmp="$(mktemp -d)"
           python competition/missing_edge/missing_edge.py competition/missing_edge/fixtures/synthetic_cases.json --runs 3 --seed 7 --out "$tmp/manifest.json"
+          grep -q '"relationship_assessment"' "$tmp/manifest.json"
+          grep -q '"decision"' "$tmp/manifest.json"
           grep -q '"missing_edge_graph"' "$tmp/manifest.json"
+          grep -q '"open_world_scope"' "$tmp/manifest.json"
           grep -q '"explicit_unknown"' "$tmp/manifest.json"
           grep -q '"verified_independent"' "$tmp/manifest.json"
           grep -q '"MANIFEST_CREATED != TARGET_CALLED"' "$tmp/manifest.json"
