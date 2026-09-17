@@ -107,6 +107,31 @@ class StageAOpenAITests(unittest.TestCase):
         self.assertAlmostEqual(mod.actual_cost_usd("gpt-5.6-terra", usage), 0.0032)
         self.assertAlmostEqual(mod.actual_cost_usd("gpt-5.6-sol", usage), 0.006)
 
+    def test_missing_or_malformed_usage_is_not_free(self):
+        for usage in (None, {}, {"input_tokens": None, "output_tokens": None},
+                      {"input_tokens": True, "output_tokens": 1},
+                      {"input_tokens": -1, "output_tokens": 1},
+                      {"input_tokens": "100", "output_tokens": 1}):
+            with self.subTest(usage=usage), self.assertRaises(ValueError):
+                mod.actual_cost_usd("gpt-5.6-terra", usage)
+
+    def test_missing_usage_completed_call_reserves_cost(self):
+        request = self.requests[0]
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = Path(tmp) / "ledger.jsonl"
+            args = ["stage_a", "--execute", "--ledger", str(ledger),
+                    "--summary", str(Path(tmp) / "summary.json")]
+            with patch.object(sys, "argv", args), \
+                 patch.object(mod, "build_stage_a_requests", return_value=[request]), \
+                 patch.object(mod.os, "environ", {"OPENAI_API_KEY": "offline-test-only"}), \
+                 patch.object(mod, "call_openai", return_value=({}, {"confidence": .5, "approve": False})), \
+                 patch.object(mod, "write_summary", return_value={}):
+                self.assertEqual(mod.main(), 0)
+            rows = mod.load_ledger(ledger)
+            self.assertEqual(rows[0]["cost_basis"], "worst_case_usage_unavailable")
+            self.assertTrue(rows[0]["usage_missing_or_invalid"])
+            self.assertAlmostEqual(mod.accounted_spend_usd(rows), mod.worst_case_cost_usd(request), places=8)
+
     def test_failed_attempt_reserves_worst_case_and_is_not_silent_retry(self):
         req = self.requests[0]
         reserved = mod.worst_case_cost_usd(req)

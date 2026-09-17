@@ -262,6 +262,11 @@ def worst_case_cost_usd(row: dict[str, Any]) -> float:
 
 
 def actual_cost_usd(model: str, usage: dict[str, Any]) -> float:
+    if not isinstance(usage, dict) or any(
+        type(usage.get(key)) is not int or usage[key] < 0
+        for key in ("input_tokens", "output_tokens")
+    ):
+        raise ValueError("missing or invalid token usage")
     p = MODEL_PRICING[model]
     return (
         int(usage.get("input_tokens") or 0) * p["input_per_m"] / 1_000_000
@@ -477,8 +482,13 @@ def main() -> int:
             raise SystemExit("refusing before call: hard spend cap would not be preserved")
         try:
             response, parsed = call_openai(api_key, row)
-            usage = response.get("usage") or {}
-            cost = actual_cost_usd(row["model"], usage)
+            usage = response.get("usage")
+            try:
+                cost = actual_cost_usd(row["model"], usage)
+                cost_basis = "reported_usage"
+            except ValueError:
+                cost = worst_case_cost_usd(row)
+                cost_basis = "worst_case_usage_unavailable"
             completed = {
                 "status": "completed",
                 "measurement_head": MEASUREMENT_HEAD,
@@ -490,6 +500,8 @@ def main() -> int:
                 "response_id": response.get("id"),
                 "usage": usage,
                 "cost_usd": round(cost, 9),
+                "cost_basis": cost_basis,
+                "usage_missing_or_invalid": cost_basis != "reported_usage",
                 "parsed": parsed,
                 "observed_at_unix": time.time(),
             }
