@@ -1,6 +1,6 @@
 # Build status
 
-Recorded snapshot: **2026-09-16 Europe/London**.
+Recorded snapshot: **2026-09-17 Europe/London**.
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
@@ -22,6 +22,7 @@ PURPOSE > INSTRUMENT
 | THR living-subject boundary | **MERGED / WORKING / NON-CANON / NO PRIVATE INTAKE** | `LIVING_SUBJECTS.md`; voluntary competent-choice human lane only. Current GitHub/Square routes are public. No living-person profile, universal consent model or emergency-authority rule created. |
 | THR next edge | **OBSERVE / CORRECT OPERATIONAL SCALE** | Real identity/source/preservation/view/correction load only; use a living-subject encounter only if a real deliberate case earns it. No record 4, industrial DB, private intake service or universal privacy theory by momentum. |
 | COM #348 / project resources | **ACTIVE OPPORTUNITY QUARRY** | Filter for legitimate grants/prizes/credits that reduce Mark's personal burn without purpose distortion or application-admin burden. BlueDot / Foresight / Nebius currently survive with different load/rights constraints. Daily low-noise Opportunity Watch active. |
+| COM #349 / competition tournament | **ACTIVE BOUNDED BUILD / SELECTION OPEN** | PR #350 oracle and #351 WarrantFuzz remain useful substrate/harness; #352 preserves hostile evidence. PR #353 `The Missing Edge` is the current lead candidate, not selected entry: exact observed head `fd5e3e91...`, six matched provenance conditions, two task arms, reference solvers and no-network CI PASS. No target-model result, spend, registration, terms acceptance or submission. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Release content `fa3b4645...`; current main `8310d253...`; tag/release `v0.3.0`; final integrity PASS. v0.2.7 preserved as previous baseline. Not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Release content `d6b41adf...`; current main `25a9d793...`; tag/release `v0.7.0`; deterministic PDF + sampled visual check + released integrity PASS. v0.6.3 preserved as previous baseline. Not validated. |
 | PSFH D068 | **LIVE / EXACT BYTES PREVIOUSLY WITNESSED** | Reader benefit unestablished; no momentum rebuild. |
