@@ -192,6 +192,8 @@ def build_stage_a_requests(
                         "payload": payload,
                     }
                 )
+    for row in rows:
+        row["request_sha256"] = request_identity(row)
     return rows
 
 
@@ -217,6 +219,36 @@ def response_body(row: dict[str, Any]) -> dict[str, Any]:
             }
         },
     }
+
+
+def request_identity(row: dict[str, Any]) -> str:
+    """Bind the endpoint and complete provider contract, not just prose input."""
+    contract = {"url": API_URL, "body": response_body(row)}
+    return hashlib.sha256(canonical_json(contract).encode("utf-8")).hexdigest()
+
+
+def validate_ledger(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]) -> None:
+    expected = {}
+    for request in requests:
+        key = ledger_key(request)
+        if key in expected:
+            raise ValueError(f"duplicate manifest key: {key}")
+        if request.get("request_sha256") != request_identity(request):
+            raise ValueError(f"stale manifest request identity: {key}")
+        expected[key] = request
+    seen = set()
+    for row in ledger:
+        key = ledger_key(row)
+        if key in seen:
+            raise ValueError(f"duplicate ledger key: {key}")
+        seen.add(key)
+        if key not in expected:
+            raise ValueError(f"unexpected ledger key: {key}")
+        if row.get("status") not in {"completed", "failed"}:
+            raise ValueError(f"unknown ledger status: {key}")
+        for field in ("measurement_head", "input_sha256", "request_sha256"):
+            if row.get(field) != expected[key].get(field):
+                raise ValueError(f"ledger {field} mismatch: {key}")
 
 
 def worst_case_cost_usd(row: dict[str, Any]) -> float:
@@ -316,6 +348,7 @@ def attempted_keys(ledger: list[dict[str, Any]]) -> set[tuple[str, str, int]]:
 
 
 def score_completed(requests: list[dict[str, Any]], ledger: list[dict[str, Any]]) -> dict[str, Any]:
+    validate_ledger(requests, ledger)
     by_key = {ledger_key(row): row for row in ledger if row.get("status") == "completed"}
     result: dict[str, Any] = {
         "measurement_head": MEASUREMENT_HEAD,
@@ -402,6 +435,7 @@ def main() -> int:
         )
 
     existing = load_ledger(args.ledger)
+    validate_ledger(requests, existing)
     attempted = attempted_keys(existing)
     remaining = [row for row in requests if ledger_key(row) not in attempted]
     spent = accounted_spend_usd(existing)
@@ -452,6 +486,7 @@ def main() -> int:
                 "condition": row["condition"],
                 "run_index": row["run_index"],
                 "input_sha256": row["input_sha256"],
+                "request_sha256": row["request_sha256"],
                 "response_id": response.get("id"),
                 "usage": usage,
                 "cost_usd": round(cost, 9),
@@ -469,6 +504,7 @@ def main() -> int:
                 "condition": row["condition"],
                 "run_index": row["run_index"],
                 "input_sha256": row["input_sha256"],
+                "request_sha256": row["request_sha256"],
                 "reserved_cost_usd": round(worst_case_cost_usd(row), 9),
                 "error": str(exc),
                 "observed_at_unix": time.time(),
