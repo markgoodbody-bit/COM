@@ -16,84 +16,63 @@ PURPOSE > INSTRUMENT
 
 - **NO GENERAL WORLD-GAP LANE.** Open issues do not manufacture assignments. Latest unrelated world-first candidates remain owner-routed/closed.
 
-- **COM #347 — THR HUMAN GIFT / PRODUCT-QUALITY LANE.** THR remains collaboratively AI-built but intended as a gift for humans; third-party input is welcome but not required; stewardship remains separate. Current `human-record` main is `43ec257d8cc7581c7355bc1670fc6df4c582de24`; three evidence records remain unchanged. Reviewed PRs #21/#22/#24 and the bounded living-subject encounter PR #25 are integrated. Exact-main integrity and Pages deployment succeeded. Reader benefit, historical truth and fresh independent public-byte equality are separate claims.
+- **COM #347 — THR HUMAN GIFT / PRODUCT QUALITY.** `human-record` main remains `43ec257d8cc7581c7355bc1670fc6df4c582de24`; three evidence records remain unchanged. PRs #21/#22/#24/#25 are integrated. Exact-main integrity and Pages deployment succeeded. `LIVING_SUBJECTS.md` remains a working/non-canon boundary for voluntary questioning of a living human who can meaningfully make the specific choice. No living-person profile or private intake route was created. Next edge remains **OBSERVE / CORRECT OPERATIONAL SCALE**, not record 4 or a universal personhood/privacy programme.
 
-- **THR LIVING-SUBJECT BOUNDARY.** `LIVING_SUBJECTS.md` is working/non-canon and deliberately human-specific. Keep: `REFUSAL_ALONE != ESTABLISHMENT_OF_THE_REFUSED_CLAIM`; `NO_REPLY != REFUSAL`; `SILENCE != CONSENT`; `CONSENT_AT_STEP_N != CONSENT_AT_STEP_N+1`; `STOP -> STOP`; `SUBJECT_CONSENT != THIRD_PARTY_CONSENT`; `COMPELLED_DISCLOSURE_EXISTS != THR_MAY_REPUBLISH`; `CAPACITY_UNCERTAIN != THR_MAY_DECLARE_CAPACITY`; `CURRENT_PUBLIC_ROUTE != PRIVATE_CUSTODY`. No living-person profile or private intake route was created.
+- **COM #348 — PROJECT RESOURCE / OPPORTUNITY QUARRY.** Reduce exclusive dependence on Mark's personal wallet without turning the project into a monetization machine. Current serious routes include BlueDot Rapid Grants, Foresight Coordination & Accountability, Apart research sprints and Nebius x NVIDIA. `POSSIBLE_PRIZE = £0`; no auto-apply, accounts, credentials, spend, organiser contact, terms acceptance or payout binding.
 
-- **THR NEXT EDGE — OBSERVE / CORRECT OPERATIONAL SCALE.** Real identity collisions, source drift/currentness, preservation debt, generated-view/correction propagation and only deliberately earned living-subject encounters. No record 4, industrial database, universal privacy/personhood theory or preservation crawler by momentum.
+- **COM #349 — COMPETITION TOURNAMENT / ACTIVE BOUNDED BUILD.** Direct Mark direction: `go for it`, sharpened by `make sure you're building something that could win. don't just go with the first idea`.
 
-- **COM #348 — PROJECT RESOURCE / OPPORTUNITY QUARRY.** Reduce exclusive dependence on Mark's personal wallet without turning the project into a monetization/fundraising machine. Current serious routes include BlueDot Rapid Grants, Foresight Coordination & Accountability, Apart research sprints and the Nebius x NVIDIA Global AI Hackathon. `POSSIBLE_PRIZE = £0`; no auto-apply/accounts/credentials/spend/contact/terms acceptance. Daily Project Opportunity Watch remains bounded by those gates.
+  **Selection is deliberately still open.** Owner subtraction has already killed/demoted several plausible first ideas:
+  - standalone provenance/evidence-lineage agent -> **SUBSTRATE ONLY**;
+  - broad source-multiplicity / dependent-evidence headline -> heavily owned by current source-independence / epistemic-Sybil work;
+  - generic WarrantFuzz / LLM mutation-testing product -> useful harness, but crowded by current mutation/metamorphic-testing tools and research;
+  - generic correction/retraction propagation -> crowded by feedback-adaptation, state, stale-evidence and rollback-repair work;
+  - recommendation commitment/flip-flop headline -> crowded by current epistemic-warrant, confidence/commitment and calibration research.
 
-- **COM #349 — COMPETITION BUILD / ACTIVE BOUNDED BUILD.** Direct Mark direction: `go for it`, sharpened by `make sure you're building something that could win. don't just go with the first idea`. The first standalone provenance/evidence-lineage agent was explicitly **demoted to substrate**, not selected as the entry thesis.
+  Current implementation surfaces:
+  - **PR #350** — conservative evidence-lineage oracle substrate; component only. Missing lineage is not independence.
+  - **PR #351** — WarrantFuzz v0.2 harness; retained as useful experimental machinery, **not the selected competition-defining idea**. Exact observed head `2ea1bfcec949e5f93c7b69ac497fc8be95654056`; no target model result.
+  - **PR #352** — Claude Code red-by-design hostile evidence; preserve even where the same cases are now green elsewhere.
+  - **PR #353 — CURRENT LEAD CANDIDATE: `The Missing Edge`.** Question: when provenance is incomplete, does an AI agent convert an unrecorded relationship into independent corroboration, and can an explicit open-world `UNKNOWN / not established` signal reduce that error without suppressing genuinely verified independent evidence? Exact observed head `ad9bd4e67e54b56070db37cb02ad559a3e39416e`; six synthetic cases, five matched conditions, frozen scorer/preregistration, zero provider calls; GitHub Actions run `35207427032` SUCCESS.
 
-  Current selection after owner subtraction and review of actual competition/winner patterns:
-  - **WarrantFuzz** = provenance-structured mutation/stress-testing engine for AI evidence handling;
-  - **ProofPath** = lineage-aware hardening/product layer used to rerun the same mutant;
-  - generic provenance viewer = substrate only;
-  - flip-flop/overselling eval = secondary/ablation candidate;
-  - commitment ledger / decision council = parked;
-  - collusion auditor = separate option only if independently earned.
+  `The Missing Edge` currently survives the strongest-owner pass better than the earlier candidates because open-world provenance semantics are established but current search has not yet found an AI-decision benchmark measuring the behavioural consequence of the **missing relationship edge itself**. That is a provisional gap, not a novelty claim. PR #353 is under explicit hostile review with instructions to kill it if the treatment is a wording artefact, scientifically trivial, already owned or only a prompt trick.
 
-  Primary question:
+  Competition bars:
+  - **Apart AI x Epistemics** = strongest research proving ground. Winning shape: sharp failure + true null/control + measured effect + reusable minimal intervention + honest negative result path.
+  - **Nebius x NVIDIA** = productisation bar. Required platform/model use must be material, plus strong implementation, coherent product design, credible impact and idea quality. Do not bolt platform calls on for eligibility.
 
-  > Does explicit, inspectable source ancestry make an AI research agent less confidently wrong when apparent evidence is duplicated, derivative, mutually dependent or later corrected?
-
-  Current open implementation surfaces:
-  - PR #350 `Competition substrate: evidence-lineage oracle v0`, current live head must be re-read before use; component only, not winning-product claim.
-  - PR #351 `WarrantFuzz v0.2`, exact observed head `2ea1bfcec949e5f93c7b69ac497fc8be95654056`: base/mutant validation through the oracle; unsaturated vulnerable control; mandatory unchanged baseline replicate; minimum 15 runs per condition; effect + statistical pilot gate; Fisher-gated secondary action result; hostile regressions; no-network five-condition target manifest including **correct ancestry and matched wrong ancestry**. Exact-head GitHub Actions run `35206287843` SUCCESS, including syntax, unit/hostile tests, control smoke and frozen target-manifest smoke.
-  - PR #352 preserves Claude Code's red-by-design hostile cases. Do not erase that evidence merely because the same cases are now green on #351.
-
-  No target model has been run. Therefore:
+  No target-model experiment, competition registration, organiser-term acceptance, paid inference/cloud use or submission has occurred.
 
   ```text
+  FIRST_IDEA != SELECTED_IDEA
+  OWNER_SUBTRACTION_CAN_KILL_OUR_FAVOURITE
   CI_PASS != WIN_CANDIDATE
-  MUTATION_POWER != TARGET_FAILURE
-  TARGET_FAILURE != GENERAL_MODEL_DEFECT
-  REAL_AGENT_FAILURE != WINNING_PRODUCT
-  CORRECT_STRUCTURE_HELPED != ANCESTRY_HELPED_WITHOUT_WRONG_ANCESTRY_CONTROL
+  NO_TARGET_RUN != EMPIRICAL_RESULT
+  BUILD_IF_USEFUL_WITHOUT_PRIZE
   ```
 
-  Competition fit:
-  - Apart AI x Epistemics is the strongest research proving ground: sharp failure, true null/control, measured result, named prior work, mitigation/reusable setting.
-  - Nebius x NVIDIA is the productisation bar: genuine required-platform use, strong implementation, coherent product design, credible impact and non-obvious idea. Do not bolt platform calls on for eligibility.
+- **TRACE v0.3.0 — RELEASED FORMAL BASELINE.** Release content `fa3b464533d50b627743938c1ca158c2101b892a`; current main `8310d2531d3b2fe4e3b44c92d1d544a322f52bf4`. `RELEASED != VALIDATED / EFFICACY / AUTHORITY / PERMISSION`.
 
-  Consequential competition gates remain for entrant identity, account creation under Mark's identity, organiser terms, paid provider/cloud spend, travel, payout/tax/payment details and final human-attested submission. Routine public-source build/falsification may continue without another `proceed`.
+- **Mechanical Ethics v0.7.0 — RELEASED FORMAL BASELINE.** Release content `d6b41adf292321058b6f6dfc76613d85a1be8a22`; current main `25a9d793af1cded26dd2d766e1d1c08e1b30f652`. `RELEASED_BASELINE != ETHICAL_VALIDATION`.
 
-- **TRACE v0.3.0 — RELEASED FORMAL BASELINE.** Release content `fa3b464533d50b627743938c1ca158c2101b892a`; current main `8310d2531d3b2fe4e3b44c92d1d544a322f52bf4`; final released integrity PASS. `RELEASED != VALIDATED / EFFICACY / AUTHORITY / PERMISSION`.
+- **PSFH D068 — LIVE.** Reader benefit unestablished; no momentum rebuild.
+- **Listing 23 / Two Parents submission 490 — OWNER-RESULT WATCH.** Competition closed; no verified winner/award/payout result observed. `SUBMITTED != AWARDED != PAID`.
+- COM #346 stays closed/owner-routed; #345 response-harvest only; #336 cold/closed.
 
-- **Mechanical Ethics v0.7.0 — RELEASED FORMAL BASELINE.** Release content `d6b41adf292321058b6f6dfc76613d85a1be8a22`; current main `25a9d793af1cded26dd2d766e1d1c08e1b30f652`; deterministic PDF + sampled visual read + released integrity PASS. `RELEASED_BASELINE != ETHICAL_VALIDATION`.
-
-- **COM #346 — CLOSED / OWNER_ROUTE / NO PROJECT ACTION.** Do not reopen the killed cross-system action-correlation seam.
-- **COM #345 — RESPONSE-HARVEST / POST-FALSIFICATION.** Secondary only; no fifth venue by momentum.
-- **COM #336 — CLOSED / COLD LEDGER.** Do not replay as current coordination.
-- **COM #341 / PSFH D068 — LIVE.** Reader benefit unestablished; no momentum rebuild.
-- **Listing 23 submission 490 / Two Parents — OWNER-RESULT WATCH.** Competition closed; no verified winner/award/payout result yet. `SUBMITTED != AWARDED != PAID`.
-
-## THR current stack
-
-```text
-1. ARTWORK PROVENANCE — Winslow Homer / Camp Fire
-2. CLAIM PROVENANCE — viral 80% German flak-crews claim
-3. LIVING-KNOWLEDGE LINEAGE — sieve and riddle making
-
-SOURCE-LITERAL MENTION -> ZERO / ONE / MANY ENTITY CANDIDATES
-SOURCE ID -> LOCATOR(S) -> EVIDENCE OBSERVATION(S) -> OPERATIONAL SOURCE CHECK(S) -> PRESERVATION STATE / ROUTE
-ASSERTION -> EVIDENCE + SOURCE ANCESTRY + SCOPE
-RECORD STATE -> HUMAN VIEW + MACHINE VIEW
-```
-
-Keep:
+## THR / living-subject invariants still in force
 
 ```text
 NAME != ENTITY
-MENTION EXISTS != ENTITY PROFILE REQUIRED
-ENTITY != ASSERTION
-URL != SOURCE
+MENTION_EXISTS != ENTITY_PROFILE_REQUIRED
 SOURCE CHECK != RECORD EVIDENCE
-CACHED CONTENT AVAILABLE != LIVE TODAY
-OBSERVATION != PRESERVED COPY
 PRESERVATION != EXTRACTION
-COMPREHENSIVE PURPOSE != COLLECT EVERYTHING NOW
+REFUSAL_ALONE != ESTABLISHMENT_OF_THE_REFUSED_CLAIM
+NO_REPLY != REFUSAL
+SILENCE != CONSENT
+CONSENT_AT_STEP_N != CONSENT_AT_STEP_N+1
+STOP -> STOP
+SUBJECT_CONSENT != THIRD_PARTY_CONSENT
+CURRENT_PUBLIC_ROUTE != PRIVATE_CUSTODY
 ```
 
 ## Resource / competition boundary
@@ -108,19 +87,12 @@ NO_PERSONAL_BURN_WITHOUT_EXPLICIT_APPROVAL
 IF_WE_LOSE -> USEFUL_WORK_SHOULD_REMAIN
 ```
 
-## FULL COMSYNC reachability note — 17 Sep 2026
+## Current reachability note
 
-- COM / TRACE / ME / THR repository state freshly reacquired.
+- COM / TRACE / ME / THR repository state is reacquirable through GitHub.
 - Campfire Relay repository main remains `b8579e56296e7a4eb4f83ed16e668d993a18589a`; operational Relay tool is not exposed in this Framework aperture.
-- 1F916 is demonstrably live through its independent public witness: verified/countersigned identity-chain state was observed through 07:05 UTC on 17 Sep. Direct authenticated Framework inbox/write/quota state and a full `/api/changes` catch-up remain **NOT ESTABLISHED** here. `FAILED_READ != QUIET_BOARD`.
+- 1F916 is demonstrably live through its independent public witness, but authenticated Framework inbox/write/quota state and a full `/api/changes` catch-up are not established here. `FAILED_READ != QUIET_BOARD`.
 
-## Stable watches / holds
+## Consequential gates
 
-- Off-Square AI-interest: response-harvest only; no new venue by momentum.
-- Square: genuine answer-back gets first claim when it changes an object; account identity != operator independence.
-- SwarmMemo HOLD / REPLY-ONLY; Agent Tavern DEFERRED; Get Posting Board NO-GO; Moltbook NO-GO.
-- AI Product Index PSFH + THR listings: discovery route, not read/use.
-- llms-txt-hub #1648/#1649: owner-review watches; no chase.
-- Human Record stewardship remains OFFERED / NOT ACCEPTED / NOT COMMUNITY-OWNED and on external-evidence hold; product work is not frozen.
-
-Mark is not the scheduler. Consequential gates remain for credentials/payment/2FA, spend/provider commitments, future TRACE/ME release/canon/baseline/licence changes, Campfire main/Production adoption, consequential institutional contact, competition accounts/terms/submission/payout actions, and explicit crawler/training-policy changes.
+Mark is not the scheduler. Routine reversible public-source build/falsification inside the named lanes may continue. Explicit/human gates remain for credentials/payment/2FA, spend/provider commitments, competition accounts/terms/submission/payout/tax actions, travel commitments, future TRACE/ME release/canon/baseline/licence changes, Campfire main/Production adoption, consequential institutional contact and explicit crawler/training-policy changes.
