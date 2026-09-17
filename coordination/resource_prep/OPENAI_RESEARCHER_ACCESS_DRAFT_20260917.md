@@ -1,33 +1,39 @@
-# OpenAI Researcher Access Program — non-binding application draft
+# OpenAI Researcher Access Program — eligibility hold / reusable research summary
 
-Status: **DRAFT / NOT SUBMITTED / ACCOUNT + IDENTITY + POLICY ACKNOWLEDGEMENT ARE HUMAN GATES**  
+Status: **HOLD / CURRENT KNOWN STANDING DOES NOT SATISFY FAQ ELIGIBILITY / NOT SUBMITTED**  
 Prepared: 17 Sep 2026  
-Owner page: https://openai.com/form/researcher-access-program/
+Programme page: https://openai.com/form/researcher-access-program/  
+Current FAQ: https://help.openai.com/en/articles/10139500-researcher-access-program-faq
 
-This draft is deliberately shaped around the current empirical research object rather than the wider Mechanical Ethics / TRACE project. Do not broaden it to make the application sound grander.
+## Controlling eligibility finding
 
-## Applicant standing
+The public programme page encourages early-stage researchers and researchers with limited financial and institutional resources. However, the current programme FAQ is more specific: eligible applicants are researchers with an **active affiliation to an academic institution or other research organization**, or nonprofits conducting research activities.
 
-**Independent researcher / engineer using public and open research materials.**
+Mark's currently established standing for this lane is independent researcher / engineer. No qualifying academic, research-organization or nonprofit affiliation has been supplied for this application.
 
-Human-gate fields still required at submission:
-- legal/preferred name as the form requires;
-- email/contact details;
-- country/other identity fields;
-- SurveyMonkey Apply account creation;
-- final review of OpenAI sharing/publication and usage policies.
+Therefore:
 
-Do not imply university, nonprofit, laboratory, employer or institutional affiliation unless Mark explicitly supplies one for this application.
+```text
+CURRENT DISPOSITION = DO NOT APPLY
+INDEPENDENT RESEARCH ACTIVITY != QUALIFYING AFFILIATION
+BROAD PROGRAMME PAGE != FAQ ELIGIBILITY
+```
 
-## Working project title
+Do not create an account, submit a form, or imply institutional affiliation on the current facts.
+
+The research text below is retained only because it may be reusable for another legitimate funding route, or for this programme if eligibility later changes.
+
+---
+
+## Reusable working title
 
 **Testing provenance-sensitive evidence handling in AI decision agents**
 
-## Research question
+## Reusable research question
 
 Do current AI research and decision agents become more confident or take a stronger downstream action when one evidentiary origin is made to look like multiple corroborating sources? If that failure occurs, can explicit source-ancestry information reduce it without making the agent systematically over-cautious or less responsive to genuinely independent evidence?
 
-## Project summary
+## Reusable project summary
 
 AI agents increasingly gather, summarize and act on evidence from multiple reports. A basic problem is that multiple reports may descend from the same underlying evidence. Existing work has established that report multiplicity is not the same as evidential independence; this project does not claim to discover that mechanism.
 
@@ -69,7 +75,7 @@ The working harness preserves:
 - deterministic fixture validation;
 - negative results and failed experimental designs.
 
-Where licensing permits, fixtures, code, methods and null results will be made publicly inspectable. Any publication or sharing will follow the program's sharing/publication policy and applicable provider policies.
+Where licensing permits, fixtures, code, methods and null results can be made publicly inspectable.
 
 ## Prior-work boundary
 
@@ -82,22 +88,16 @@ Relevant existing owners include:
 
 The empirical delta under test is deliberately narrower: **provenance-specific behavioural mutations at the decision/action layer, with stochastic controls and an inspectable hardening comparison.**
 
-## Planned use of OpenAI products
+## Potential API-credit use if a legitimate funding route supports it
 
-Requested support: **up to $1,000 of API credits**.
-
-Credits would be used only for bounded, reproducible model evaluations and replications, primarily:
-- the initial controlled Stage A screen across current OpenAI models;
+Credits would be used only for bounded, reproducible model evaluations and replications:
+- controlled Stage A screens across current models;
 - additional frozen fixtures only if the first failure survives;
 - plain-language / correct-ancestry / wrong-ancestry controls;
 - hardening reruns;
 - cross-model replication and robustness checks.
 
 Credits would not be used to manufacture scale after a null result. The experiment has an explicit stop rule.
-
-## Why subsidized access matters
-
-The work is currently conducted independently without institutional research funding. API and model-access costs are paid personally. Even when an individual run is inexpensive, properly controlled replication across models, conditions and repeated trials creates a real cumulative cost. Subsidized API access would allow stronger replication while preserving the project's rule that a null result is allowed to stop the line of work.
 
 ## Expected outputs
 
@@ -116,17 +116,12 @@ Depending on results:
 - A green deterministic harness is not an empirical model result.
 - A null result is a valid outcome.
 
-## Submission gate checklist
+## Re-open gate
 
-Before Mark submits:
-- [ ] inspect the live SurveyMonkey Apply questions rather than assuming this draft matches every field;
-- [ ] review the current sharing/publication policy;
-- [ ] review current usage policies;
-- [ ] supply only accurate identity/contact fields;
-- [ ] update model names / pricing / experimental head if they changed;
-- [ ] do not claim Stage A results unless provider calls actually ran and the frozen scorer produced them;
-- [ ] do not overstate novelty, efficacy, institutional standing or project adoption.
+Only reconsider this specific programme if:
+- [ ] a qualifying active academic/research-organization affiliation is accurately established; or
+- [ ] OpenAI changes the current eligibility rule and that change is verified from the owner source.
 
-`APPLICATION_DRAFT != APPLICATION`
-`CREDITS_REQUESTED != CREDITS_AWARDED`
-`NULL_RESULT_IS_ALLOWED`
+`HOLD != REJECTION`
+`CURRENTLY_INELIGIBLE != FOREVER_INELIGIBLE`
+`CORRECTION_BEFORE_APPLICATION > FIT_RATIONALISATION`
