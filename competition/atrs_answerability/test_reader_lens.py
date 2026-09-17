@@ -40,16 +40,16 @@ def row(title="Example tool", url="https://www.gov.uk/algorithmic-transparency-r
 
 class ReaderLensTests(unittest.TestCase):
     def test_card_preserves_source_text_and_link(self):
-        html = mod.card(row(), [])
-        self.assertIn("A person may request review", html)
-        self.assertIn("https://example.gov.uk/review", html)
-        self.assertIn("Open GOV.UK source", html)
-        self.assertIn("Do not infer route effectiveness", html)
+        page = mod.card(row(), [])
+        self.assertIn("A person may request review", page)
+        self.assertIn("https://example.gov.uk/review", page)
+        self.assertIn("Open GOV.UK source", page)
+        self.assertIn("Do not infer route effectiveness", page)
 
     def test_card_does_not_call_contact_token_an_appeal_right(self):
-        html = mod.card(row(), [])
-        self.assertNotIn("appeal right established", html.lower())
-        self.assertIn("Published contact / link tokens", html)
+        page = mod.card(row(), [])
+        self.assertNotIn("appeal right established", page.lower())
+        self.assertIn("Published contact / link tokens", page)
 
     def test_missing_appeals_field_is_bounded_to_disclosure(self):
         r = row()
@@ -58,31 +58,41 @@ class ReaderLensTests(unittest.TestCase):
             "syntactic_contact_token_present": False,
             "matches": [],
         }
-        html = mod.card(r, [])
-        self.assertIn("No parser-recognised Appeals and review field was observed", html)
-        self.assertIn("does not mean no route exists", html)
+        page = mod.card(r, [])
+        self.assertIn("No parser-recognised Appeals and review field was observed", page)
+        self.assertIn("does not mean no route exists", page)
 
     def test_html_escapes_published_text(self):
         r = row(title="<script>alert(1)</script>")
         r["fields"]["appeals_review"]["matches"][0]["text"] = "<b>published</b>"
-        html = mod.card(r, [])
-        self.assertNotIn("<script>alert(1)</script>", html)
-        self.assertIn("&lt;script&gt;", html)
-        self.assertIn("&lt;b&gt;published&lt;/b&gt;", html)
+        page = mod.card(r, [])
+        self.assertNotIn("<script>alert(1)</script>", page)
+        self.assertIn("&lt;script&gt;", page)
+        self.assertIn("&lt;b&gt;published&lt;/b&gt;", page)
 
     def test_semantic_annotations_are_explicitly_exploratory(self):
-        html = mod.card(row(), ["PUBLIC_INITIATION"])
-        self.assertIn("Concrete initiation described", html)
-        self.assertIn("Exploratory annotation; not validated classification", html)
+        page = mod.card(row(), ["PUBLIC_INITIATION"])
+        self.assertIn("Concrete initiation described", page)
+        self.assertIn("Exploratory annotations — post-pilot; not validated", page)
+        self.assertIn("Exploratory annotation; not validated classification", page)
+
+    def test_exploratory_annotations_are_hidden_by_default(self):
+        report = {"records": [row()]}
+        page = mod.build_html(report, {row()["url"]: ["PUBLIC_INITIATION"]})
+        self.assertIn(".annotations { display: none", page)
+        self.assertIn(".show-annotations .annotations { display: block", page)
+        self.assertIn('id="annotations" type="checkbox"', page)
+        self.assertIn("hidden by default", page)
 
     def test_build_html_has_search_filters_and_claim_ceilings(self):
         report = {"records": [row()]}
         page = mod.build_html(report, {})
         self.assertIn("ATRS Reader Lens", page)
-        self.assertIn("Search tool / organisation", page)
+        self.assertIn("Search tool, organisation or disclosed text", page)
         self.assertIn("Appeals field: any", page)
+        self.assertIn("Contact token: any", page)
         self.assertIn("not a transparency score", page)
-        self.assertIn("1 of ${cards.length}", page.replace("shown", "")) if False else None
+        self.assertIn("data-search=", page)
 
     def test_semantic_map_rejects_unbound_annotations(self):
         report = {"records": [row()]}
