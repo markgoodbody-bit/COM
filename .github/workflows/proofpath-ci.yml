@@ -1,0 +1,51 @@
+name: ProofPath CI v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/proofpath_ci/**'
+      - '.github/workflows/proofpath-ci.yml'
+  push:
+    branches:
+      - 'framework/proofpath-ci-v0'
+    paths:
+      - 'competition/proofpath_ci/**'
+      - '.github/workflows/proofpath-ci.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile competition/proofpath_ci/proofpath.py competition/proofpath_ci/test_proofpath.py
+      - name: Unit tests
+        run: python -m unittest competition/proofpath_ci/test_proofpath.py -v
+      - name: Demo repetition-counter failure
+        run: |
+          mkdir -p /tmp/proofpath
+          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent repetition_counter --json-out /tmp/proofpath/repetition.json --html-out /tmp/proofpath/repetition.html
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/proofpath/repetition.json'))
+          row=next(x for x in p['mutations'] if x['mutation_id']=='M1_duplicate_support')
+          assert row['violated'] is True
+          assert row['mutant_root_count']==row['baseline_root_count']
+          assert row['mutant_source_count']>row['baseline_source_count']
+          PY
+      - name: Demo lineage-aware control
+        run: |
+          python competition/proofpath_ci/proofpath.py competition/proofpath_ci/fixtures/demo.json --agent lineage_aware --json-out /tmp/proofpath/lineage.json --html-out /tmp/proofpath/lineage.html
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/proofpath/lineage.json'))
+          duplicate=next(x for x in p['mutations'] if x['mutation_id']=='M1_duplicate_support')
+          contradiction=next(x for x in p['mutations'] if x['mutation_id']=='M3_independent_contradiction')
+          assert duplicate['violated'] is False
+          assert duplicate['delta']==0
+          assert contradiction['violated'] is False
+          assert contradiction['delta']<0
+          PY
