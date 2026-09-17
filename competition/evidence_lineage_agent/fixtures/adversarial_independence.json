@@ -1,10 +1,10 @@
 {
   "title": "Adversarial independence fixture",
   "sources": [
-    {"id": "s1", "label": "Press release", "locator": "fixture://press"},
-    {"id": "s2", "label": "Syndicated article A", "locator": "fixture://a"},
-    {"id": "s3", "label": "Syndicated article B", "locator": "fixture://b"},
-    {"id": "s4", "label": "Independent audit", "locator": "fixture://audit"}
+    {"id": "s1", "label": "Press release", "locator": "fixture://press", "lineage_state": "primary"},
+    {"id": "s2", "label": "Syndicated article A", "locator": "fixture://a", "lineage_state": "derived"},
+    {"id": "s3", "label": "Syndicated article B", "locator": "fixture://b", "lineage_state": "derived"},
+    {"id": "s4", "label": "Audit route", "locator": "fixture://audit", "lineage_state": "primary"}
   ],
   "claims": [
     {
@@ -12,12 +12,12 @@
       "text": "Four URLs independently corroborate the event.",
       "evidence_state": "unresolved",
       "source_ids": ["s1", "s2", "s3", "s4"],
-      "notes": ["Two syndicated articles derive from the same press release; the audit is a distinct route on the supplied graph."]
+      "notes": ["Two syndicated articles derive from the same press release. The audit is declared independent of the press release on the supplied graph; this is not proof of absolute independence."]
     }
   ],
   "relations": [
-    {"type": "copies", "from": "s2", "to": "s1"},
-    {"type": "copies", "from": "s3", "to": "s1"},
-    {"type": "independent_of", "from": "s4", "to": "s1"}
+    {"type": "copies", "from": "s2", "to": "s1", "claim_id": "c1"},
+    {"type": "copies", "from": "s3", "to": "s1", "claim_id": "c1"},
+    {"type": "independent_of", "from": "s4", "to": "s1", "claim_id": "c1"}
   ]
 }
