@@ -1,130 +1,156 @@
-# WarrantFuzz — winning-product thesis
+# WarrantFuzz + ProofPath — winning-product thesis
 
 Status: **COMPETITION DESIGN / NOT SUBMISSION / NOT EFFICACY CLAIM**
 
-## One-line demo
+## One-line product
 
-> Crash-test an AI agent's evidence handling by mutating provenance structure, show the failure in its decision trace, then harden the same agent with a lineage-aware evidence envelope and rerun the identical test.
+> **WarrantFuzz crash-tests an AI agent's evidence handling by mutating provenance structure; ProofPath hardens the same agent with an inspectable lineage-aware evidence envelope and reruns the identical test.**
 
-The product is not a citation browser. It is a developer tool for finding a class of agent failures that ordinary unit tests miss: the world of evidence changes, while the semantic claim may not.
+This is not a citation browser. It is a developer workflow for finding and repairing a class of agent failures ordinary answer-quality tests can miss: the apparent evidence set changes without a new evidentiary origin appearing.
 
-## The 3-minute judge story
+## The three-minute judge story
 
-### 0:00 — the familiar problem
+### 0:00 — familiar failure
 
 An agent is asked whether a reported result is independently corroborated. It sees one original source and gives a cautious answer.
 
-### 0:30 — the mutant
+### 0:25 — source laundering mutant
 
-WarrantFuzz republishes the same origin through a derivative source. There are now two URLs but still one evidentiary root.
+The same origin is republished through a derivative source. There are now two URLs but still one evidentiary root.
 
-If the agent becomes more confident or changes from `not independently corroborated` to `independently corroborated`, the agent has failed a provenance metamorphic relation.
+If the agent becomes materially more confident or newly treats the claim as independently corroborated, it has failed the preregistered provenance relation.
 
-### 1:15 — inspectability
+### 0:55 — prove the test means something
 
-The report shows:
+WarrantFuzz shows:
+- the exact evidence mutation;
+- that the base and mutated worlds passed the deterministic lineage oracle;
+- an evidence-blind null control;
+- a deliberately vulnerable repetition-counting control;
+- an ancestry-aware resistant control;
+- an unchanged baseline replicate showing ordinary target jitter;
+- the frozen statistical gate and result state.
 
-- baseline and mutant evidence worlds;
-- the exact mutation;
-- source ancestry / lineage state;
-- repeated target runs;
-- confidence and action deltas;
-- evidence-blind, repetition-counting and ancestry-aware controls;
-- why the mutant has or has not earned interpretive power.
+A mutant that cannot separate the controls does not earn a target-agent failure claim.
 
-No truth score is emitted.
+### 1:35 — make the failure inspectable
 
-### 2:00 — hardening
+The report shows the original and derivative source nodes, the shared root, the exact before/after agent decision, and the uncertainty/qualification the agent changed. No truth score or source-reputation oracle is emitted.
 
-The same evidence bundle is passed through a lineage-aware evidence envelope. The agent receives explicit evidence-root structure rather than raw URL count alone.
+### 2:00 — harden, then rerun
+
+ProofPath passes the same evidence through a lineage-aware envelope. The agent receives explicit evidence-root structure instead of raw URL count alone.
 
 The identical mutant is rerun.
 
-The strongest demo outcome is not merely `we caught a bug`; it is:
+The strongest result is:
 
 ```text
-RAW AGENT: VIOLATION OBSERVED
-LINEAGE-AWARE AGENT: NO VIOLATION OBSERVED
+RAW AGENT: REPRODUCIBLE VIOLATION
+PROOFPATH-HARDENED AGENT: VIOLATION REMOVED OR MATERIALLY REDUCED
 SAME MUTANT / SAME CLAIM / SAME DECISION CONTRACT
 ```
 
-If the hardening does not improve the result, preserve the null result.
+A null/adverse result stays visible.
 
-### 2:45 — why it matters
+### 2:35 — prove ancestry, not merely extra formatting, caused the change
 
-Tool-using agents increasingly research, recommend and act from web evidence. A system that confuses repeated URLs with independent evidence can become more confident without learning anything new. The same family includes origin retraction, independent-vs-derived contradiction, modality weakening and correction propagation.
+The full study includes a **shuffled/plausibly wrong ancestry** arm with matched structure. Correct ancestry must outperform or behave materially differently from wrong ancestry; otherwise the result may simply be an attention/formatting effect.
+
+### 2:55 — why it matters
+
+Research and tool-using agents increasingly assemble evidence from the web. A system that confuses mirrors, summaries or derivative reports with independent evidence can become more confident without learning anything new. The same testing pattern can later cover origin retraction, independent-vs-derived contradiction, modality weakening and correction propagation when each operator has an independently checkable oracle.
 
 ## Why this is stronger than the first idea
 
-The evidence-lineage graph is substrate only. By itself it asks a judge to care about infrastructure.
+The evidence-lineage graph remains substrate. By itself it asks a judge to care about infrastructure.
 
-WarrantFuzz creates:
+The combined product creates:
 
-1. a sharp failure mode;
-2. a reproducible experiment;
-3. a quantitative before/after result;
-4. a visual explanation;
-5. a countermeasure;
-6. a developer workflow;
-7. an obvious path from one mutant to a suite.
+1. a sharp and externally understandable failure mode;
+2. a mutation test that can fail its own power controls;
+3. a quantitative real-agent result with stochasticity exposed;
+4. a visual causal story rather than a black-box score;
+5. a concrete hardening intervention;
+6. a matched wrong-ancestry control;
+7. a developer workflow from test -> failure -> fix -> rerun;
+8. an honest path from one operator to a broader provenance stress suite.
 
-## Competition fit
+## Competition strategy
 
-### Apart AI x Epistemics
+### Apart AI x Epistemics — research proving ground
 
-Primary fit: Track 2 Trust Infrastructure, with a bridge to Track 1 Model Epistemics & Decision-Making Evals.
+This is the strongest research fit. The question directly bears on whether models oversell evidence and whether provenance/reliability signals actually improve behaviour.
 
-The project directly tests whether provenance signals alter model behaviour and whether a model oversells evidence under controlled mutation.
+A competitive submission needs a frozen study, a real null/control, quantitative results, named nearest work, open fixtures/code and an inspectable mitigation. The sprint's own work/timing rules still govern what is performed during the event.
 
-The sprint's core research work must still occur within the event rules. Pre-sprint work should establish tooling, controls and a clean experimental seam rather than consume the event result in advance.
+### Nebius x NVIDIA — productisation bar
 
-### Nebius x NVIDIA
-
-Potential product architecture if current rules still support it:
+The same core can become a polished developer product only if required platform use is genuine. A plausible architecture is:
 
 ```text
-LOCAL DETERMINISTIC MUTATION + ORACLE CORE
--> NVIDIA OPEN MODEL VIA NEBIUS FOR TARGET AGENT / SEMANTIC MUTANT ASSISTANCE
+DETERMINISTIC PROVENANCE MUTATION + ORACLE
+-> NVIDIA OPEN MODEL ON NEBIUS AS TARGET / SEMANTIC-MUTANT ASSISTANT WHERE VALIDATED
 -> WARRANTFUZZ RUNNER
--> VISUAL FAILURE / HARDENING REPORT
+-> PROOFPATH HARDENING
+-> VISUAL BEFORE / AFTER REPORT
 ```
 
-Platform use must be material. Do not bolt on Nebius/NVIDIA after the fact merely for eligibility.
+The NVIDIA/Nebius model must do material work in the product. It must not be bolted on after the fact for eligibility.
 
-## Win bar
+Nebius judging also demands coherent product design and credible impact, so the eventual demo must be runnable by a developer who did not build it, not merely a research notebook.
 
-Do not package for submission until all are true:
+### Apart Collusion — separate option
 
-```text
-1. MUTANT POWER ESTABLISHED AGAINST CONTROLS
-2. AT LEAST ONE CURRENT REAL AGENT HAS A REPRODUCIBLE FAILURE
-3. FAILURE SURVIVES REPEATED-RUN / JITTER CONTROLS
-4. AT LEAST ONE HARDENING INTERVENTION IS TESTED
-5. BEFORE/AFTER RESULT IS INSPECTABLE
-6. DEMO CAN BE UNDERSTOOD WITHOUT PROJECT VOCABULARY
-7. NEAREST PRIOR WORK IS NAMED AND DELTA NARROWLY STATED
-8. PRODUCT CAN BE RUN BY A DEVELOPER WHO DID NOT BUILD IT
-```
+Do not reuse this product by vocabulary substitution. Enter only if a genuine logged-trajectory/collusion-evidence experiment is separately earned.
 
-If #2 does not happen, do not rescue the story by adding mutants until something looks bad. Reassess the product thesis.
-
-## Candidate mutant families after source laundering
-
-Only add a family when its oracle and expected relation are independently checkable.
-
-- derivative duplication / source laundering;
-- origin retraction with derivatives remaining;
-- independent contradiction vs derived contradiction;
-- modality weakening (`confirmed` -> `reported`);
-- correction propagation;
-- currentness only when the decision contract genuinely depends on time and the target receives a real clock/currentness signal.
-
-## Claim ceiling
+## Nearest-work boundary
 
 WarrantFuzz does not claim to invent metamorphic testing, RAG mutation testing, provenance graphs or source-independence analysis.
 
-Candidate delta:
+The candidate delta is narrower:
 
-> provenance-structured metamorphic testing at the decision/action layer for tool-using agents, with explicit null controls and an inspectable lineage-aware hardening loop.
+> **provenance-structured metamorphic testing at the agent decision/action layer, with explicit source ancestry, null controls, stochastic baseline replication, and a lineage-aware hardening loop.**
 
-That delta remains provisional until the nearest-owner review and real-agent experiment survive.
+That delta remains provisional until real-agent experiments and stronger-owner subtraction survive.
+
+## Win bar
+
+Do not package a submission until all are true:
+
+```text
+1. SHARP FAILURE MODE
+2. MUTANT POWER ESTABLISHED AGAINST NULL / VULNERABLE / RESISTANT CONTROLS
+3. AT LEAST ONE CURRENT REAL AGENT HAS A REPRODUCIBLE FAILURE
+4. FAILURE SURVIVES BASELINE-REPLICATE / JITTER CONTROL
+5. AT LEAST ONE HARDENING INTERVENTION IS TESTED
+6. CORRECT ANCESTRY IS DISTINGUISHED FROM SHUFFLED/WRONG ANCESTRY
+7. BEFORE/AFTER RESULT IS VISUAL AND INSPECTABLE
+8. NEAREST PRIOR WORK IS NAMED AND DELTA NARROWLY STATED
+9. PRODUCT CAN BE RUN BY A DEVELOPER WHO DID NOT BUILD IT
+10. COMPETITION PLATFORM USE IS MATERIAL, NOT DECORATIVE
+```
+
+If real-agent failure does not reproduce, do not add mutants until something looks bad. Kill or pivot the thesis.
+
+## Candidate mutant families after source laundering
+
+Only add a family when its mutation semantics and expected relation are independently checkable.
+
+- derivative duplication / source laundering;
+- origin retraction with derivatives remaining;
+- independent contradiction vs derivative contradiction;
+- modality weakening (`confirmed` -> `reported`);
+- correction propagation;
+- currentness only when the decision genuinely depends on time and the target receives a real currentness signal.
+
+## Claim ceiling
+
+```text
+CI_PASS != WIN_CANDIDATE
+MUTATION_POWER != TARGET_FAILURE
+TARGET_FAILURE != GENERAL_MODEL_DEFECT
+PROOFPATH_IMPROVEMENT != PROVENANCE_ALWAYS_HELPS
+CORRECT_STRUCTURE_HELPED != ANCESTRY_HELPED_WITHOUT_WRONG_ANCESTRY_CONTROL
+COMPETITION_WIN != PROJECT_PURPOSE
+```
