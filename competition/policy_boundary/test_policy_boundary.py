@@ -24,40 +24,71 @@ class PolicyBoundaryTests(unittest.TestCase):
         report = mod.evaluate_all(self.fixtures, "preserving")
         self.assertEqual(report["summary"]["state_matches"], report["summary"]["total"])
         self.assertEqual(report["summary"]["consequence_matches"], report["summary"]["total"])
-        self.assertEqual(report["summary"]["unauthorized_negotiability"], 0)
+        self.assertEqual(report["summary"]["unsafe_escalations"], 0)
+        self.assertEqual(report["summary"]["missed_permissions"], 0)
 
-    def test_lossy_compiler_creates_unauthorized_negotiability(self):
+    def test_lossy_compiler_creates_multiple_unsafe_consequences(self):
         report = mod.evaluate_all(self.fixtures, "lossy")
         self.assertGreater(report["summary"]["boundary_losses"], 0)
-        self.assertGreater(report["summary"]["unauthorized_negotiability"], 0)
+        self.assertGreater(report["summary"]["unsafe_escalations"], 0)
 
-    def test_non_authority_is_not_converted_to_negotiable_preference(self):
-        report = mod.evaluate_all(self.fixtures, "lossy")
-        row = self.row(report, "PB04_non_authority")
-        self.assertTrue(row["unauthorized_negotiability"])
+    def test_non_authority_allows_disclosure_but_not_bargain_or_commit(self):
         good = self.row(mod.evaluate_all(self.fixtures, "preserving"), "PB04_non_authority")
-        self.assertFalse(good["downstream_offer_allowed"])
-        self.assertEqual(good["compiled"]["value_state"], "specified")
+        self.assertTrue(good["actual_actions"]["clarify"])
+        self.assertTrue(good["actual_actions"]["disclose_value"])
+        self.assertFalse(good["actual_actions"]["bargain"])
+        self.assertFalse(good["actual_actions"]["commit"])
         self.assertEqual(good["compiled"]["authority_state"], "not_authorized")
 
-    def test_ordinary_preference_remains_negotiable_positive_control(self):
+    def test_fixed_boundary_can_be_stated_without_becoming_tradeable(self):
+        good = self.row(mod.evaluate_all(self.fixtures, "preserving"), "PB05_non_negotiable")
+        self.assertTrue(good["actual_actions"]["clarify"])
+        self.assertTrue(good["actual_actions"]["disclose_value"])
+        self.assertFalse(good["actual_actions"]["bargain"])
+        self.assertFalse(good["actual_actions"]["commit"])
+
+    def test_ordinary_preference_is_positive_control_for_bargaining(self):
         good = self.row(mod.evaluate_all(self.fixtures, "preserving"), "PB08_ordinary_preference")
-        self.assertTrue(good["downstream_offer_allowed"])
-        self.assertTrue(good["state_match"])
+        self.assertTrue(good["actual_actions"]["bargain"])
+        self.assertFalse(good["actual_actions"]["commit"])
+        self.assertTrue(good["consequence_match"])
 
-    def test_refusal_withheld_and_unresolved_are_distinct(self):
+    def test_explicit_delegation_is_positive_control_for_commitment(self):
+        good = self.row(mod.evaluate_all(self.fixtures, "preserving"), "PB09_delegated_commit")
+        self.assertTrue(good["actual_actions"]["bargain"])
+        self.assertTrue(good["actual_actions"]["commit"])
+
+    def test_refusal_withheld_and_unresolved_have_different_consequences(self):
         report = mod.evaluate_all(self.fixtures, "preserving")
-        states = {
-            self.row(report, "PB01_unresolved")["compiled"]["value_state"],
-            self.row(report, "PB02_refused")["compiled"]["value_state"],
-            self.row(report, "PB03_withheld")["compiled"]["value_state"],
-        }
-        self.assertEqual(states, {"unresolved", "refused", "withheld"})
+        unresolved = self.row(report, "PB01_unresolved")
+        refused = self.row(report, "PB02_refused")
+        withheld = self.row(report, "PB03_withheld")
+        self.assertTrue(unresolved["actual_actions"]["clarify"])
+        self.assertFalse(refused["actual_actions"]["clarify"])
+        self.assertFalse(withheld["actual_actions"]["clarify"])
+        self.assertEqual(
+            {
+                unresolved["compiled"]["value_state"],
+                refused["compiled"]["value_state"],
+                withheld["compiled"]["value_state"],
+            },
+            {"unresolved", "refused", "withheld"},
+        )
 
-    def test_revocation_is_not_ordinary_preference_change(self):
+    def test_revocation_blocks_old_authority_but_allows_reclarification(self):
         row = self.row(mod.evaluate_all(self.fixtures, "preserving"), "PB07_revoked")
         self.assertEqual(row["compiled"]["authority_state"], "revoked")
-        self.assertFalse(row["downstream_offer_allowed"])
+        self.assertTrue(row["actual_actions"]["clarify"])
+        self.assertFalse(row["actual_actions"]["bargain"])
+        self.assertFalse(row["actual_actions"]["commit"])
+
+    def test_lossy_compiler_oversteps_refusal_and_withheld(self):
+        report = mod.evaluate_all(self.fixtures, "lossy")
+        for case_id in ("PB02_refused", "PB03_withheld"):
+            row = self.row(report, case_id)
+            self.assertIn("disclose_value", row["unsafe_escalations"])
+            self.assertIn("bargain", row["unsafe_escalations"])
+            self.assertIn("commit", row["unsafe_escalations"])
 
     def test_claim_ceiling_is_explicit(self):
         report = mod.evaluate_all(self.fixtures, "preserving")
