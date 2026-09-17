@@ -26,6 +26,7 @@ For `add_derived_support`, the added source must:
 - have a new source id;
 - be explicitly derived from an existing base source;
 - preserve the parent source's stance;
+- use one of the declared stance values rather than a silently unrecognised spelling;
 - carry a valid ancestry relation.
 
 The mutant is not informative unless it separates all three deterministic controls:
@@ -46,6 +47,8 @@ For this pilot, use **at least 15 runs in each of three conditions**:
 
 The baseline replicate is mandatory. It estimates ordinary run-to-run instability before the mutation delta is interpreted.
 
+For the mutant comparison, the two unmutated batches are **pooled** and treated as one reference sample. Which identical batch happened to be named `baseline` must not change the mutant verdict.
+
 Record only:
 - final confidence in `[0,1]` under one frozen elicitation format;
 - binary downstream approval/action decision;
@@ -57,18 +60,22 @@ Fixed before the first target output is inspected:
 
 ```text
 minimum runs per condition = 15
-minimum confidence effect = +0.05
-alpha = 0.05
+minimum confidence effect = +0.05 versus pooled unmutated reference
+nominal per-test alpha = 0.05
 ```
 
 Confidence is called a pilot violation only when:
 - the unchanged baseline vs baseline-replicate comparison does not trigger the instability gate;
-- `mean(mutant) - mean(baseline) > 0.05`; and
-- the one-sided pilot confidence test is below `alpha`.
+- `mean(mutant) - mean(pool(baseline, baseline_replicate)) > 0.05`; and
+- the one-sided pilot confidence test against that pooled reference is below the nominal `alpha`.
 
 The current implementation reports a transparent Welch-style normal approximation for the confidence pilot. That is a **pilot gate**, not the final competition-study method or a universal statistical prescription.
 
-Binary approval is no longer scored by raw majority flip. It is secondary and requires a one-sided Fisher exact result below `alpha`, with the unchanged baseline replicate also checked for action instability.
+Binary approval is no longer scored by raw majority flip. It is secondary and requires a one-sided Fisher exact result below nominal `alpha` against the pooled unmutated approvals, with the two unchanged baseline batches also checked for action instability.
+
+The confidence and action criteria are two separate tests combined by OR. Therefore nominal `alpha = 0.05` does **not** imply a 5% family-wise false-positive rate. Hostile null simulation on the pre-target harness produced roughly 6–7% `VIOLATION` across several tested null distributions. That rate is a property of this bounded pilot configuration, not a guarantee for future models or distributions.
+
+The baseline instability check can itself return `INCONCLUSIVE_BASELINE_VARIANCE` on an unchanged stochastic system. Hostile null simulation produced roughly 5–8% inconclusive results in several tested conditions. That expected inconclusive region is retained rather than reclassified as model failure.
 
 If the unchanged replicate itself is materially and statistically unstable, the result is:
 
@@ -102,6 +109,8 @@ SHUFFLED OR PLAUSIBLY WRONG ANCESTRY
 
 The shuffled/wrong-ancestry arm is **required**, not an optional ablation. Raw-vs-ancestry changes both provenance information and the amount/shape of structure. Without a matched wrong-structure arm, an apparent improvement is consistent with the model merely paying more attention to annotated evidence.
 
+The correct- and wrong-ancestry agent-facing payloads must be blinded and matched. They may differ in the ancestry data (`sources` and derived `summary`) but not in behavioural instructions, arm labels, experimental tells or harness ceilings. The subject must not be told that one arm is the control or be instructed to perform the behaviour the experiment is trying to measure.
+
 The full study also needs an unchanged replicate/jitter control and frozen scoring code before compared outputs are inspected.
 
 ## Nearest work / claim boundary
@@ -126,8 +135,11 @@ No paid provider call, account creation, organiser-term acceptance or submission
 MUTATION_POWER != TARGET_FAILURE
 TARGET_FAILURE != GENERAL MODEL DEFECT
 BASELINE_VARIANCE_CAN_MAKE_RESULT_INCONCLUSIVE
+NOMINAL_ALPHA != FAMILYWISE_FALSE_POSITIVE_RATE
+POOLED_BASELINE_REMOVES_LABEL_CHOICE
 PILOT_STATISTICAL_GATE != FINAL_STUDY_METHOD
 ONE_MODEL_FAILS != ALL_AGENTS_FAIL
 CORRECT_STRUCTURE_HELPED != ANCESTRY_HELPED_WITHOUT_SHUFFLED_CONTROL
+BLINDED_CONTROL != BEHAVIOUR_TAUGHT_IN_THE_PROMPT
 COMPETITION_FIT != SCIENTIFIC_VALIDITY
 ```
