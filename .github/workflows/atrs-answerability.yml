@@ -18,20 +18,24 @@ permissions:
 jobs:
   test-and-live-sample:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Syntax
-        run: python -m py_compile competition/atrs_answerability/audit.py competition/atrs_answerability/test_audit.py
-      - name: Parser tests
-        run: python -m unittest competition/atrs_answerability/test_audit.py -v
-      - name: Bounded live GOV.UK sample
+        run: python -m py_compile competition/atrs_answerability/audit.py competition/atrs_answerability/membership.py competition/atrs_answerability/test_audit.py competition/atrs_answerability/test_membership.py
+      - name: Hostile and membership parser tests
+        run: |
+          python -m unittest competition/atrs_answerability/test_audit.py -v
+          python -m unittest competition/atrs_answerability/test_membership.py -v
+      - name: Live finder membership must reconcile
+        run: python competition/atrs_answerability/membership.py --out /tmp/atrs_membership.json
+      - name: Bounded live GOV.UK finder sample
         run: |
           python competition/atrs_answerability/audit.py \
             --limit 5 \
-            --delay 0.1 \
             --json-out /tmp/atrs_sample.json \
             --csv-out /tmp/atrs_sample.csv
           python - <<'PY'
@@ -41,13 +45,18 @@ jobs:
           for row in r['records']:
               assert row['url'].startswith('https://www.gov.uk/algorithmic-transparency-records/')
               assert row['section_count'] > 0
+              assert len(row['source_sha256']) == 64
+              for field in row['fields'].values():
+                  for match in field['matches']:
+                      assert 'text' in match and 'contact_tokens' in match
           print(json.dumps(r['summary'], indent=2))
           PY
-      - name: Preserve live sample for manual readback
+      - name: Preserve live sample and membership evidence
         uses: actions/upload-artifact@v4
         with:
           name: atrs-live-sample-${{ github.run_id }}
           path: |
+            /tmp/atrs_membership.json
             /tmp/atrs_sample.json
             /tmp/atrs_sample.csv
           retention-days: 30
