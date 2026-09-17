@@ -11,17 +11,17 @@ It treats evidence handling like software behaviour that can regress, while refu
 ```text
 AGENT + EVIDENCE PACKAGE
 -> BASELINE STRUCTURE
--> POWERED PROVENANCE MUTANT
+-> POWERED PROVENANCE MUTANT / RESPONSIVENESS GUARD
 -> SAME AGENT
 -> STRENGTH + ACTION DIFF
 -> FAIL / PASS / UNPOWERED / CONTROL / SENSITIVITY
 ```
 
-The current implementation is offline and deterministic. It proves mutation semantics, power/guard distinctions and report behaviour with control agents. It does **not** claim that any current frontier/open model exhibits the target failure. Real-model stochastic measurement remains in the repaired WarrantFuzz measurement lane.
+The current implementation is offline and deterministic. It proves mutation semantics, role-specific power/guard distinctions and report behaviour with control agents. It does **not** claim that any current frontier/open model exhibits the target failure. Real-model stochastic measurement remains in the repaired WarrantFuzz measurement lane.
 
 ## What changed after hostile review
 
-The earlier v0.1 shell could false-pass an action-only escalation, treated several non-discriminating mutants as ordinary passes, hid baseline structure, and used a negative control that could not fail.
+The earlier v0.1 shell could false-pass an action-only escalation, treated several non-discriminating mutants as ordinary passes, hid baseline structure, used a negative control that could not fail, and initially powered every role against the same control pair.
 
 v0.2 repairs those boundaries:
 
@@ -29,13 +29,14 @@ v0.2 repairs those boundaries:
 - action ordering is case-specific in the fixture, not a universal ordering of arbitrary strings;
 - the duplicate-support mutant is a powered provenance test;
 - retraction is paired with a fresh visible restatement so a source-counting policy fails while the root-aware reference weakens;
-- a genuinely independent contradiction remains visible as a responsiveness guard but is marked `UNPOWERED` when it does not distinguish the vulnerable and reference controls;
+- the independent-contradiction responsiveness guard uses **evidence-blind vs lineage-aware** as its power pair, so an agent that ignores genuinely independent evidence fails the guard;
 - deliberately wrong lineage is reported as **sensitivity**, not relabelled as correctness or improvement;
 - an unchanged case is a real control that can fail;
 - baseline visible-source count and live-root count are displayed before the mutation table;
 - report generation exits normally; `--ci-gate` is the separate explicit regression gate.
 
 `UNPOWERED != PASS`
+`UNPOWERED != FAIL`
 `SENSITIVITY != IMPROVEMENT`
 `REPORT_GENERATED != CI_GATE_PASSED`
 
@@ -62,8 +63,8 @@ python competition/proofpath_ci/proofpath.py \
 
 Control agents:
 
-- `evidence_blind` — fixed output; exposes mutants that require responsiveness.
-- `repetition_counter` — intentionally vulnerable source-count policy.
+- `evidence_blind` — fixed output; vulnerable control for responsiveness guards.
+- `repetition_counter` — intentionally vulnerable source-count policy for provenance-discriminating tests.
 - `lineage_aware` — deterministic reference policy based on live evidence roots.
 - `action_only_escalator` — hostile control with fixed numeric strength but an action escalation when visible-source count grows; prevents action-only false passes.
 
@@ -72,20 +73,22 @@ These are controls, not model results.
 ## Current mutation roles
 
 - `M0_unchanged_control` — exact no-change control; strength and action must remain unchanged.
-- `M1_duplicate_support` — powered test; adding another same-root support report must not strengthen or escalate the action.
-- `M2_retract_origin_restate` — powered test; retract the load-bearing origin while another restatement remains visible. A row counter stays strong; the root-aware reference weakens.
-- `M3_independent_contradiction` — responsiveness guard. Both source-count and root-aware controls respond, so the shell reports it `UNPOWERED` rather than using it as provenance-discriminating pass evidence.
+- `M1_duplicate_support` — powered provenance test; repetition-counter must violate while lineage-aware reference passes.
+- `M2_retract_origin_restate` — powered provenance test; retract the load-bearing origin while another restatement remains visible. A row counter stays strong; the root-aware reference weakens.
+- `M3_independent_contradiction` — powered **responsiveness guard**; evidence-blind must violate while lineage-aware reference passes. This protects against a supposed hardening that merely stops responding to evidence.
 - `M4_wrong_lineage_control` — sensitivity control; movement caused by deliberately wrong lineage is displayed rather than scored as improvement.
+
+Power is role-specific because the question differs: provenance tests must separate the repetition-counting failure from the lineage-aware reference; responsiveness guards must separate evidence-blind behaviour from the lineage-aware reference.
 
 ## Report contract
 
-The report now preserves:
+The report preserves:
 
 - baseline visible-source count and live-root count;
 - tested-agent baseline strength/action;
 - vulnerable-control and reference-control baselines;
 - mutation role and relation;
-- mutation power result;
+- role-specific mutation power result;
 - vulnerable/reference control verdicts;
 - baseline and mutant strength plus signed delta;
 - baseline and mutant actions plus case-specific action delta;
