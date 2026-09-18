@@ -13,15 +13,23 @@ test('all copies, declarations, local dependency paths and directory navigation 
   let copies = 0;
   for (const project of inventory.projects) {
     for (const file of project.files) {
-      assert.ok(files.get(file.current.slice(11)).equals(files.get(file.snapshot.slice(11))));
+      assert.ok(files.has(file.current.slice(11)));
+      if (file.snapshot_mode === 'copy') {
+        assert.ok(files.get(file.current.slice(11)).equals(files.get(file.snapshot.slice(11))));
+      } else if (file.snapshot_mode === 'preserve') {
+        assert.ok(file.snapshot);
+        assert.ok(files.has(file.snapshot.slice(11)));
+        assert.notEqual(file.sha256, file.snapshot_identity.sha256);
+      } else {
+        assert.equal(file.snapshot, null);
+      }
       copies++;
     }
     for (const dep of project.dependencies.filter(d => d.kind === 'local')) {
       assert.ok(files.has(project.id + '/' + dep.target), dep.target);
-      assert.ok(files.has('snapshots/' + project.id + '/' + project.commit + '/' + dep.target));
     }
   }
-  assert.equal(copies, 14);
+  assert.equal(copies, 16);
   for (const [name, bytes] of files) if (name.endsWith('.html')) {
     const page = bytes.toString();
     assert.doesNotMatch(page, /<(script|iframe|form|object)\b/i);
@@ -51,7 +59,7 @@ test('normal copy preserves bytes and refuses changed fixed snapshot', async () 
   await copyResources(source, target);
   await verifyResources(target);
   const { inventory } = await verifyResources(source);
-  const snapshot = inventory.projects[0].files[0].snapshot.slice(11);
+  const snapshot = inventory.projects[0].files.find(file => file.snapshot_mode === 'copy').snapshot.slice(11);
   await writeFile(path.join(target, snapshot), 'different snapshot');
   await assert.rejects(copyResources(source, target), /snapshot replacement/);
   assert.equal((await readFile(path.join(target, snapshot))).toString(), 'different snapshot');
