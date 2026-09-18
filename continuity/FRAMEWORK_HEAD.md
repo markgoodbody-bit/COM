@@ -4,6 +4,21 @@ Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## Mechanical Ethics reader-test delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/ME_ROUTE_PRESERVATION_READER_TEST_20260918.md`.
+
+- ME main = `714907a4d0af7bd702b0ab92786aa858213812b4` after merging a **reader-test harness only**.
+- released reader blob remains `e232a29c5b6492930ff5b94b005c948f67ba6067`; v0.7.0 wording is unchanged.
+- issue #47 remains open as a hard-collision clarity/defeasibility question.
+- initial forced-choice protocol was self-falsified for priming before any return was accepted.
+- v0.1 uses open-ended first-pass questions, post-response classification, exact source binding, local/no-telemetry A/B presentation and local result validation.
+- exact prep CI `35392490769 SUCCESS`.
+- cold Condition-B result = **NOT YET OBTAINED**.
+
+`TEST READY != WORDING DEFECT PROVEN`
+`NO CHANGE = VALID RESULT`
+
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
 ## Operating direction
@@ -28,7 +43,7 @@ Mutable heads must be reacquired before consequential work.
 
 Last verified linked heads:
 - TRACE main: `e7d46398dc00ead931b0d5cae98518c1bcf304a3`;
-- Mechanical Ethics main: `45b4a303b5bb970a89854953a20c35dc4bc1e56c`;
+- Mechanical Ethics main: `714907a4d0af7bd702b0ab92786aa858213812b4`;
 - The Human Record main: `217f89c10a60f02b7d39785d531b2cb47cab7337`;
 - Campfire Relay last verified main: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
 
