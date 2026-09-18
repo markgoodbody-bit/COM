@@ -4,6 +4,26 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## #365 positive-transition owner-subtraction delta — 18 September 2026
+
+Evidence: `evidence/POSITIVE_TRANSITION_REFUSAL_EXIT_OWNER_SUBTRACTION_20260918.md`.
+
+The previously retained refusability/exit/unchosen-maintenance question is **not established as project-specific residue**. Strong owners cover its components:
+- participatory/evaluation practice -> affected people, power, unintended/negative effects;
+- procedural/distributive/recognition justice -> participation + benefit/burden distribution;
+- exit/voice literature -> leave vs answer-back;
+- infrastructure literature -> imposed/community maintenance burden.
+
+```text
+PROJECT-SPECIFIC POSITIVE-TRANSITION RESIDUE = NOT ESTABLISHED
+RESULT = OWNER CONVERGENCE / SHRINK AGAIN
+NEW TRACE PRIMITIVE = NO
+NEW ME DOCTRINE = NO
+NO MORE POSITIVE-CONSTRUCTION THEORY BUILD FROM CURRENT CASES
+```
+
+Useful remainder is a non-proprietary reading discipline only: positive framing must not hide participation, burden, exit/voice, imposed maintenance or unintended effects.
+
 ## THR record 4 publication delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_RECORD4_PUBLICATION_20260918.md`.
@@ -114,7 +134,7 @@ TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validation/effi
 #347 THR -> RECORD 4 MERGED / THREE OUTSIDE-CASE REPAIRS INTEGRATED / V5 HISTORY BOUNDARY WAKE-ONLY
 #348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
 #349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
-#365 TRACE/ME quarry -> POSITIVE VIEW SHRUNK TO REFUSABILITY/EXIT/UNCHOSEN CONTINUATION QUESTION / NO NEW PRIMITIVE
+#365 TRACE/ME quarry -> POSITIVE RESIDUE OWNER-SUBTRACTED / NO FURTHER THEORY BUILD EARNED / NO NEW PRIMITIVE
 #99 social-care correction consequence -> FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD
 ```
 
