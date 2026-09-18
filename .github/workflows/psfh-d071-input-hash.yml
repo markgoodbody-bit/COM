@@ -7,6 +7,10 @@ on:
     paths:
       - 'scripts/RESOURCE_COPIES.json'
       - '.github/workflows/psfh-d071-input-hash.yml'
+  pull_request:
+    paths:
+      - 'scripts/RESOURCE_COPIES.json'
+      - '.github/workflows/psfh-d071-input-hash.yml'
 
 permissions:
   contents: read
