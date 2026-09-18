@@ -1,15 +1,15 @@
-name: PSFH D070 one-shot publish
+name: PSFH D071 one-shot publish
 
 on:
   push:
     branches:
-      - framework/psfh-d070-readme-repair-trigger
+      - framework/psfh-d071-release-trigger
 
 permissions:
   contents: write
 
 jobs:
-  publish-d070:
+  publish-d071:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +34,7 @@ jobs:
           python scripts/check-local-links.py
       - name: Verify publication base
         env:
-          EXPECTED_GH_PAGES: 428340c82a09470bb5515f3d0efce24a3d04aa02
+          EXPECTED_GH_PAGES: c0a830bfd14ca76052a1ee5913d302952485f57c
         run: |
           git fetch origin gh-pages
           actual="$(git rev-parse origin/gh-pages)"
@@ -63,7 +63,7 @@ jobs:
           test "$(git -C /tmp/psfh-publish hash-object README.md)" = "$readme_blob"
           node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-publish/resources');"
           git -C /tmp/psfh-publish status --short
-      - name: Commit and publish D070
+      - name: Commit and publish D071
         run: |
           git -C /tmp/psfh-publish config user.name "PSFH release publisher"
           git -C /tmp/psfh-publish config user.email "actions@users.noreply.github.com"
@@ -72,15 +72,15 @@ jobs:
             echo "No publication delta" >&2
             exit 1
           fi
-          git -C /tmp/psfh-publish commit -m "Publish PSFH D070 released-core currentness sync"
+          git -C /tmp/psfh-publish commit -m "Publish PSFH D071 scoped AI training permission sync"
           git -C /tmp/psfh-publish push origin HEAD:gh-pages
-      - name: Verify D070 reached the live Door
+      - name: Verify D071 reached the live Door
         env:
           PSFH_VERIFY_ATTEMPTS: 18
           PSFH_VERIFY_DELAY_MS: 5000
         run: node scripts/verify-live-d070.mjs out/resources/inventory.json
 
-# One-shot D070 repair publisher. The dedicated trigger branch is disposable.
+# One-shot D071 publisher. The dedicated trigger branch is disposable.
 # SOURCE_CI_GREEN != PUBLICATION
 # PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
 # EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
