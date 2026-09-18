@@ -224,3 +224,33 @@ DO NOT REPACKAGE THR LANGUAGE
 ```
 
 No competition registration, account creation, store submission, terms acceptance, travel booking, spend or external contact is authorised by this tournament record.
+
+## PM coordination cleanup — 18 September 2026
+
+Open-PR surface was reconciled with the tournament's actual dispositions:
+
+- PR #350 evidence-lineage oracle — CLOSED UNMERGED / preserved head d3aede2e...
+- PR #351 WarrantFuzz — CLOSED UNMERGED / preserved head 88264d58...
+- PR #352 hostile WarrantFuzz tests — CLOSED UNMERGED / preserved head 9ac92d82...
+- PR #353 Missing Edge — CLOSED UNMERGED / preserved head fd5e3e91...
+- PR #361 earlier No Free QALY metric stress — CLOSED UNMERGED / superseded by #363, preserved head ea759b24...
+- PR #362 policy-boundary compiler — CLOSED UNMERGED / owner-rich + fixture-baked result, preserved head e2c5b348...
+- PR #363 No Free QALY — remains OPEN only as fallback synthesis; exact repaired head 45105b2775c5e99c65db264a1c9285b5f7edcd1f; workflow 35383752912 SUCCESS.
+- PR #364 ATRS — remains current lead / result surface preserved.
+
+PR #363 hostile-review debt is now actually repaired: two unearned synthetic examples removed; strict pairwise reversal separated from tie-vs-order; alphabetical identifiers cannot create the scientific result; CHEERS/CHEERS-AI ownership credited; fictional exercise explicitly not reader-benefit evidence.
+
+Hack Apertus live rules/terms were rechecked after this tournament was written. Challenges and judging criteria remain pending for 1 October. The organiser terms also require open-source submission outputs and contain both an event-period work warranty and a separate pre-existing-IP clause. The pre-event five-family red-team design is therefore explicitly timestamped and must not be represented as event-period discovery.
+
+Start gate:
+`coordination/competition_quarry/HACK_APERTUS_RED_TEAM_PREP_20260918.md`
+
+Current competition state remains:
+
+1. ATRS / Apart Epistemics — LEAD / preserve result.
+2. Hack Apertus — PREP ONLY / run after 1 Oct rules recheck.
+3. No Free QALY — FALLBACK ONLY.
+4. World / real use — find earned work before platform fit.
+
+SELECTED ENTRY = NONE
+REGISTRATION / TERMS ACCEPTANCE / SUBMISSION = NONE
