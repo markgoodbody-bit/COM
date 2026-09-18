@@ -147,3 +147,32 @@ Kill this candidate if:
 - evidence typing becomes another way for the deciding agent to encode its desired verdict;
 - owner adapters are so bespoke that the "reusable" layer disappears;
 - the tool becomes generic competitive-research prose with a CLI.
+
+
+## First executable owner adapter
+
+The branch now has one real owner-execution path rather than only recorded trial labels.
+
+CI runs the pinned upstream action:
+
+```text
+alsoleg89/doubt@647482d536e8c3fdda573699426b7dc5673f9905  # v0.8.0
+```
+
+against the four existing THR interoperability maps.
+
+For that CI path:
+1. the recorded Doubt PASS results are removed from a temporary copy of the calibration data;
+2. upstream Doubt runs unchanged;
+3. only after the owner action succeeds, CI emits a machine owner receipt containing the four PASS results;
+4. the decision core overlays that receipt;
+5. the result must still be `INTEROPERATE`;
+6. semantic-loss assessment remains separate human/reviewer evidence and cannot be overwritten by the execution receipt.
+
+```text
+OWNER ACTION SUCCESS != SOURCE TRUTH
+VALIDATION PASS != ZERO SEMANTIC LOSS
+MACHINE RECEIPT != REVIEW
+```
+
+This is one adapter, not evidence that arbitrary owners are easy to execute. Adapter cost/reusability remains a central kill test.
