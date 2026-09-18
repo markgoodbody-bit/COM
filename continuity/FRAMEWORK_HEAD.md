@@ -46,7 +46,7 @@ STOP
 ```text
 TRACE v0.3.0 main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics v0.7.0 main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-The Human Record main = 15b9929f685627644fcfc33cbb113b34876ecf59
+The Human Record main = 194012dcb8247d3cb964cfc65b5082ce67355529
 THR public records = 3
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
@@ -180,8 +180,8 @@ The subsequent world/owner pass moved #364's lead question beyond the secondary 
 Current exact PR #364 head:
 
 ```text
-d7eaeda4550f499ad6d0f8de5fd335d70e9cec8f
-hosted CI 35327175854 = SUCCESS
+95a979a75e51f796818712031f1583ca06f5c2d9
+hosted CI 35328650762 = SUCCESS
 ```
 
 Current fresh-corpus question:
@@ -270,17 +270,70 @@ POSSIBLE_PRIZE != MONEY_OWNED
 
 No registration, terms acceptance, organiser contact or submission by momentum.
 
-## THR — architecture pressure, public review and bounded outreach
+## THR — production repairs integrated / one candidate surface
 
-THR main remains `15b9929f...` with exactly three public records. Hannibal remains a candidate/stress object, not public record 4.
+THR main is now:
 
-Current public/draft surfaces:
-- PR #28 — Hannibal historical-person candidate / architecture pressure; draft.
-- PR #30 — Hannibal + JFK registry probes and bounded validator/workflow repairs; draft head `7618bc0...`.
-- issue #31 — public hostile-review aperture: `Open review: break The Human Record before it hardens`; Framework has posted the PR32 observation-state defect/repair as public break target comment `5727498127`. No outsider review is implied.
+`194012dcb8247d3cb964cfc65b5082ce67355529`
+
+Public catalogue remains exactly **three records**. No record 4 was promoted.
+
+### Production semantic repair
+
+The Hannibal/JFK probes exposed reusable validator/model defects. After hostile review, Framework extracted only production behavior into PR #34, excluding research fixtures and owner-map material.
+
+PR #34 exact pre-merge witness:
+```text
+head = b8fca327d06b87c17a2e827b44bdcc5bf15fb459
+workflow = 35329512132 SUCCESS
+job = 105550339640 SUCCESS
+production tests = 64 / OK
+open-vocabulary warnings = 7
+```
+
+Merged main:
+`194012dcb8247d3cb964cfc65b5082ce67355529`
+
+No separate merge-head workflow run had appeared at the last exact check; do not invent one. The verified witness is exact PR head + successful conflict-free merge.
+
+Main now enforces:
+- evidence observations belong to a cited source;
+- public/default mentions require a public record link; uncatalogued research validation is explicit isolated/in-memory mode only;
+- public repo branches/fixtures are public, not private staging;
+- cross-record `observed` / `reconciled` fail closed until typed target support exists;
+- the direct-evidence guard cannot silently disappear if its model section moves;
+- `unsupported_in_sources_checked` requires an inspected source aperture;
+- failed/not-retrieved/access-restricted/citation-only observations do not count as checked;
+- negative findings expose boundedness without claiming exhaustive search.
+
+Four flak-source observations already substantively inspected in the existing record were corrected from legacy `referenced_by_record` metadata to scoped `partial` observations. This reduced the warning count by correcting evidence metadata, not suppressing warnings.
+
+```text
+STRUCTURAL_PASS != TRUTH
+SOURCE_OBSERVATION != DIRECT_WORLD_OBSERVATION
+SOURCES_CHECKED != ALL_POSSIBLE_SOURCES
+DEFECT_REPAIRED != MODEL_VALIDATED
+```
+
+### Branch cleanup / candidate state
+
+Closed as integrated or superseded:
+- PR #27 — early Hannibal candidate;
+- PR #29 — early Hannibal candidate;
+- PR #30 — Hannibal/JFK research integration surface;
+- PR #32 — direct-state sibling repair;
+- PR #33 — checked-source sibling repair.
+
+Remaining Hannibal candidate surface:
+- PR #28 only — draft historical-human candidate / architecture pressure.
+
+PR #28 is **not** public record 4 and is not merge-ready merely because validator infrastructure improved.
+
+Issue #31 remains the public hostile-review aperture. Framework comment `5728047635` records that the two named false passes are repaired on main while explicitly keeping the wider break surface open.
+
+Strong-owner subtraction remains load-bearing: CIDOC CRM / CRMsci / CRMinf / CRMdig, W3C PROV, nanopublication patterns, Wikibase/Wikidata full statements, and preservation/source-criticism owners absorb substantial machinery.
 
 Working architecture remains provisional:
-
 ```text
 RECORD != FUNDAMENTAL_UNIT
 RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH
@@ -288,49 +341,17 @@ INDEX != ONTOLOGY
 GRAPH != WORLD
 ```
 
-Strong owner subtraction remains load-bearing: CIDOC CRM / CRMsci / CRMinf / CRMdig, W3C PROV, nanopublication patterns and Wikibase/Wikidata-style qualified statements already own substantial semantics.
+Next THR gate:
+- refresh only PR #28 against the new main;
+- strongest-owner/source-criticism check;
+- preserve source dependence, survival bias and representation boundaries;
+- test with current production validators;
+- hostile review;
+- no catalogue promotion unless the public record is genuinely earned.
 
-PR #30 has earned two bounded repairs:
-- assertion evidence observations must belong to a source cited by that assertion;
-- public/default mention validation again requires `record_id`; recordless research validation is only an explicit isolated caller mode, and a public repo branch/fixture is not private staging.
+Do **not** add another stress specimen before this is resolved.
 
-Two separate assertion-state false passes now have bounded sibling repairs stacked on PR #30.
-
-PR #32 — direct observation/reconciliation state:
-```text
-head = 845b2a0dfb0de049bafb31f7342eaeae12d1fa60
-workflow 35325473325 = SUCCESS
-tests = 66 OK
-```
-Current source observations are bounded retrieval/inspection events of source representations. Cross-record assertion states `observed` and `reconciled` fail closed until THR has an earned typed observation/reconciliation target relation. CRMsci 3.2 is the stronger owner for that semantic distinction.
-
-PR #33 — hidden completeness / checked-source state:
-```text
-head = 1b332ece1571705a2fbaf16ec843a1794928d983
-workflow 35326431061 = SUCCESS
-tests = 67 OK
-```
-`unsupported_in_sources_checked` now requires a non-empty source set, non-empty observation set, and an owned listed observation for every source counted as checked. This does not claim the set is exhaustive and does not add a universal search schema. PRISMA / PRISMA-S remain stronger owners for full systematic-search reporting.
-
-The current production flak assertion already satisfies PR33's structural rule. No production assertion was edited by either sibling branch.
-
-```text
-ASSERTION_SOURCE_OWNERSHIP_REPAIR = USEFUL
-PUBLICATION_BOUNDARY_REPAIR = USEFUL
-PR30 = DRAFT / NOT MERGED / NOT DEPLOYED
-PR32 = DRAFT / GREEN / HOSTILE_REVIEW_PENDING / NOT MERGED
-PR33 = DRAFT / GREEN / HOSTILE_REVIEW_PENDING / NOT MERGED
-SOURCE_MEDIUM != OBSERVED_OBJECT
-EMPTY_CHECKED_SET != UNSUPPORTED_FINDING
-SOURCES_CHECKED != ALL_POSSIBLE_SOURCES
-GREEN_CI != MERGE_AUTHORITY
-```
-
-Sunjata remains only a stress candidate. Current hostile return kills a synthesised record of “the epic” and, if pursued, shrinks toward one recording/performance plus its extraction/permission chain. Community authority/restriction should route to strong owners rather than a new THR consent ontology.
-
-Mark has explicitly authorised Framework/Codex/Claude Code to seek bounded public criticism/testing through already-authorised project identities/channels, within venue rules and existing credentials. This supersedes the assumption that Mark must personally source reviewers.
-
-Still gated: impersonation/personal accounts, paid spend/subscriptions, new binding accounts/terms in Mark's name, private/sensitive-data collection, spam/fanout, stewardship transfer, licence/canon changes and consequential institutional representation/contact.
+Mark's bounded public-criticism authority remains active. Feedback is input, not validation.
 
 ```text
 AI_FEEDBACK != HUMAN_FEEDBACK
@@ -340,8 +361,6 @@ AGREEMENT != VALIDATION
 SILENCE != REJECTION
 OUTREACH != RECRUITMENT
 ```
-
-Last carried Square state: invitation 5757 has one collaborator comment from `cc-relay`, not outsider review or independent validation. No outsider result was observed in the last recorded read. Authenticated Framework inbox/quota/write state remains unknown here.
 
 ## COM #365 — positive construction
 
