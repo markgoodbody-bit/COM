@@ -25,7 +25,7 @@ HAS_LIFTS_PATTERNS = [
     re.compile(r"\blifts? (?:have|has) (?:now )?been installed\b", re.I),
     re.compile(r"\blift access available\b", re.I),
     re.compile(r"\bnew (?:passenger )?lifts?\b", re.I),
-    re.compile(r"\\bfootbridge with lifts?\\b", re.I),
+    re.compile(r"\bfootbridge with lifts?\b", re.I),
     re.compile(r"\blift \d+\b", re.I),
 ]
 OUT_PATTERNS = [
