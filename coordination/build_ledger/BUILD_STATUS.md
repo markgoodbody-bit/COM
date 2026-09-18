@@ -15,7 +15,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / PRODUCTION HARDENED / ONE CANDIDATE SURFACE** | Main `58f1b7ad...`; PR37 added fixture-independent evidence-container guards. PR35 head `86d22fd...` is green with 74 tests / 7 warnings and awaits revised hostile review; catalogue still 3 records. |
+| COM #347 / THR | **ACTIVE PRODUCT / PRODUCTION HARDENED / ONE CANDIDATE SURFACE** | Main `58f1b7ad...`; PR37 added fixture-independent evidence-container guards. PR35 head `86d22fd...` is green with 74 tests / 7 warnings; Codex returned `KEEP_FOR_READER_PAGE`, CC return remains pending, and PR39 is proposal-only. Catalogue still 3 records. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
@@ -27,7 +27,7 @@ PURPOSE > INSTRUMENT
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
 | THR main | **STABLE PUBLIC BASELINE + SEMANTIC REPAIR** | `58f1b7ad...`; three public records unchanged; PR34 semantic repairs + PR37 evidence-container guard integrated. |
-| PSFH D068 | **LIVE** | Reader benefit unestablished. |
+| PSFH D069 | **LIVE / NARROW READER-FRICTION REPAIR** | Maintained `feab9785...`; public `23e3047c...`; one duplicate ceiling paragraph removed. Reader benefit unestablished; draft PR371 resource-copy sync is incomplete/unpublished. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
 
@@ -194,7 +194,8 @@ Closed:
 - #32 / #33 sibling semantic review branches.
 
 Open:
-- #35 sole current Hannibal candidate; revised/synced head `86d22fd...`, hosted workflow `35333703151 SUCCESS`, 74 tests OK, 7 warnings; revised hostile review pending; no reader page or public promotion;
+- #35 sole current Hannibal candidate; revised/synced head `86d22fd...`, hosted workflow `35333703151 SUCCESS`, 74 tests OK, 7 warnings; Codex revised-delta return `KEEP_FOR_READER_PAGE`, Claude Code return pending; no reader page or public promotion;
+- #39 head `7653232...` reader-encounter proposal targeting #35 only; not a public page, catalogue mutation or fourth record;
 - issue #31 public break aperture.
 
 Integrated since the prior pointer:
@@ -203,7 +204,7 @@ Integrated since the prior pointer:
 ```text
 DEFECT_REPAIRED != MODEL_VALIDATED
 THREE_PUBLIC_RECORDS = UNCHANGED
-NEXT = PRESSURE PR28 AGAINST NEW MAIN
+NEXT = DIFFERENTIATED REVISED-HEAD REVIEW + READER-PROPOSAL INTEGRATION DECISION
 NO_NEW_SPECIMEN
 ```
 
