@@ -1,8 +1,74 @@
 # ACTIVE THREAD POINTER
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-18 19:42 BST FULL COMSYNC — Europe/London  
+Updated: 2026-09-18 PM — core reread / rail completion / world owner-subtraction pass  
 Later live source and direct human direction win.
+
+## CORE REREAD + PROCEED delta — 18 September 2026 PM
+
+Detailed receipts:
+- `coordination/build_ledger/RAIL_ACCESSIBILITY_CURRENTNESS_RESULT_20260918.md`
+- `coordination/build_ledger/WORLD_OWNER_SUBTRACTION_PASS_20260918_PM.md`
+
+Core reread from live TRACE v0.3.0, Mechanical Ethics v0.7.0 and THR current source re-anchors the project around:
+- bounded perception and incomplete information;
+- affected scope and provisional boundaries;
+- usable routes rather than paper routes;
+- correction before material hardening;
+- burden placement under unequal power;
+- witness/currentness without collapsing record into world;
+- answerability: affected outcomes reaching and changing future action;
+- future viability without choosing a universal best life;
+- owner subtraction and stop/handoff where stronger domain machinery already carries the distinction.
+
+```text
+PURPOSE = HOW CAN WE MAKE A BETTER FUTURE?
+FRAMEWORK VALUE = PORTABLE STRUCTURAL VISIBILITY / CORRECTION ROUTING / ANSWERABILITY
+PROJECT PURPOSE != NOVELTY
+PROJECT PURPOSE != MORE MACHINERY
+OWNER FOUND != FAILURE
+CUT OVERCLAIM, NOT PURPOSE
+```
+
+The previous tab's last active build was rail accessibility currentness PR #383 after EvidenceBridge had already been killed in favour of Doubt interoperability and PSFH D072 had repaired THR four-record currentness.
+
+Rail now completed:
+- hostile reread found the station-level operational classifier overclaimed mixed/multi-lift status;
+- operational layer deleted;
+- local-negation and failed-fetch guards added;
+- exact final branch head `f8a95125fee58cf7bfa6458ea30618e424186542`;
+- merge-ref workflow `35382364633 SUCCESS`;
+- 7/7 regression tests PASS;
+- fresh live run preserved HIR/IRL/DSY contradictions and BIW/AGV/LLE controls;
+- PR #383 merged as `4630b07d6c9f9844cba862ef297cddafd9c11698`;
+- owner correction packet remains **UNSENT**;
+- no new TRACE primitive or ME doctrine earned.
+
+```text
+HOSTILE RESULT = SHRINK -> KEEP_OWNER_ROUTABLE
+LIFT_EXISTS != LIFT_WORKING_NOW != STEP_FREE_ROUTE_USABLE
+PUBLIC_METADATA_CONTRADICTION != OPERATOR_BLAME
+```
+
+Fresh WORLD / REAL USE owner subtraction after rail:
+- PIP correction/appeal learning -> DWP Timms Review owner active;
+- pensions-dashboard value accuracy/currentness -> TPR owner active;
+- housing data/complaint/systemic learning -> Housing Ombudsman owner active;
+- electronic-monitoring governance/data/capacity risk -> MoJ/HMPPS + NAO owner-rich;
+- no specific consequential project residue established from those cases.
+
+Internal PSFH currentness check:
+- maintained source already carries TRACE/ME explicit AI-training permission language and both permission files;
+- no D073 currentness repair earned from that check.
+
+```text
+NEW PRODUCT = NO
+NEW THEORY = NO
+NEW THR RECORD = NO
+PSFH REPAIR = NO DELTA
+WORLD QUARRY = ACTIVE
+NEXT = FOLLOW REAL CONSEQUENTIAL GAP, NOT SIMILARITY
+```
 
 ## FULL COMSYNC live delta — 18 September 2026 19:42 BST
 
