@@ -15,42 +15,54 @@ class RailAccessibilityCurrentnessTests(unittest.TestCase):
         self.assertEqual(audits["AGV"].result, "CONSISTENT_EXISTS")
         self.assertEqual(audits["LLE"].result, "CONSISTENT_EXISTS")
 
-    def test_out_of_order_is_not_no_lift(self):
+    def test_outage_is_existence_evidence_not_operational_claim(self):
         audit = check.classify(
-            "Example", "XXX", "There are lifts",
+            "Example",
+            "XXX",
+            "There are no lifts",
             ["The lifts are out of order between platform 1 and the subway"],
-            "The lifts are out of order",
-        )
-        self.assertEqual(audit.result, "CONSISTENT_EXISTS")
-        self.assertEqual(audit.operational, "OUT_OF_SERVICE")
-
-    def test_no_lifts_plus_outage_is_contradiction(self):
-        audit = check.classify(
-            "Example", "XXX", "There are no lifts",
-            ["The lifts are out of order between platform 1 and the subway"],
-            "The lifts are out of order",
         )
         self.assertEqual(audit.result, "CONTRADICTION")
-        self.assertEqual(audit.operational, "OUT_OF_SERVICE")
+        self.assertTrue(audit.corroborating_existence)
+        self.assertFalse(hasattr(audit, "operational"))
 
     def test_step_free_alone_does_not_invent_lift(self):
         audit = check.classify(
-            "Example", "XXX",
+            "Example",
+            "XXX",
             "Step-free category A: there is step-free access to all platforms",
             ["There is step-free access by a ramp"],
-            None,
         )
         self.assertEqual(audit.result, "NO_EXISTENCE_COMPARISON")
         self.assertFalse(audit.corroborating_existence)
 
-    def test_missing_lift_status_does_not_negate_installed_lifts(self):
+    def test_installed_lifts_survive_missing_status(self):
         audit = check.classify(
-            "Example", "XXX", "There are no lifts",
-            ["Lifts have been installed with access to an overbridge"],
-            "No lift information available",
+            "Example",
+            "XXX",
+            "There are no lifts",
+            ["Lifts have been installed with access to an overbridge. No lift information available."],
         )
         self.assertEqual(audit.result, "CONTRADICTION")
-        self.assertEqual(audit.operational, "UNKNOWN")
+
+    def test_negated_positive_phrases_do_not_invent_lift(self):
+        for text in (
+            "There is no lift access available.",
+            "No lifts have been installed at this station.",
+            "Access is provided without a lift 1 connection.",
+        ):
+            with self.subTest(text=text):
+                self.assertFalse(check.existence_signal(text))
+
+    def test_partial_fetch_without_positive_evidence_is_unknown(self):
+        audit = check.classify(
+            "Example",
+            "XXX",
+            "There are no lifts",
+            [],
+            corroborating_fetch_complete=False,
+        )
+        self.assertEqual(audit.result, "FETCH_UNKNOWN")
 
     def test_control_can_flip_when_summary_regresses(self):
         data = check.load_cases()
