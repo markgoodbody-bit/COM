@@ -59,16 +59,25 @@ class BeforeBuildTests(unittest.TestCase):
         case["candidates"][0]["trial"]["hard_case_results"] = {}
         self.assertEqual(mod.decide(case)["verdict"], "SHRINK")
 
+    def test_partial_relevant_trial_shrinks_instead_of_stopping(self):
+        case = self.case("rail-accessibility-currentness")
+        case["id"] = "partial-owner"
+        case["candidates"][0]["trial"]["hard_case_results"] = {
+            h["id"]: ("PASS" if h["id"] in {"BIW", "AGV"} else "NOT_TESTED")
+            for h in case["hard_cases"]
+        }
+        self.assertEqual(mod.decide(case)["verdict"], "SHRINK")
+
     def test_clean_full_owner_returns_use_owner(self):
         case = self.case("evidencebridge-vs-doubt")
         case["id"] = "clean-owner"
-        case["candidates"][0]["trial"]["material_losses"] = []
+        case["candidates"][0]["review_losses"] = []
         self.assertEqual(mod.decide(case)["verdict"], "USE_OWNER")
 
-    def test_consequential_loss_after_full_pass_forces_contract_repair(self):
+    def test_consequential_review_loss_after_full_pass_forces_contract_repair(self):
         case = self.case("evidencebridge-vs-doubt")
         case["id"] = "consequential-loss"
-        case["candidates"][0]["trial"]["material_losses"][0]["consequential_failure_observed"] = True
+        case["candidates"][0]["review_losses"][0]["consequential_failure_observed"] = True
         self.assertEqual(mod.decide(case)["verdict"], "SHRINK")
 
     def test_unbounded_probe_does_not_earn_build_probe(self):
@@ -83,17 +92,11 @@ class BeforeBuildTests(unittest.TestCase):
         case["candidates"][0]["relevance"] = "adjacent"
         self.assertEqual(mod.decide(case)["verdict"], "STOP")
 
-    def test_failed_relevant_trial_is_required_for_build_probe(self):
-        case = self.case("rail-accessibility-currentness")
-        case["id"] = "no-failed-hard-case"
-        case["candidates"][0]["trial"]["hard_case_results"] = {h["id"]: "NOT_TESTED" for h in case["hard_cases"]}
-        self.assertEqual(mod.decide(case)["verdict"], "STOP")
-
-    def test_machine_receipt_can_supply_owner_execution_without_rewriting_loss(self):
+    def test_machine_receipt_supplies_execution_without_rewriting_review_loss(self):
         data = copy.deepcopy(self.data)
         case = next(c for c in data["cases"] if c["id"] == "evidencebridge-vs-doubt")
         candidate = case["candidates"][0]
-        original_losses = copy.deepcopy(candidate["trial"]["material_losses"])
+        original_losses = copy.deepcopy(candidate["review_losses"])
         candidate["trial"]["executed"] = False
         candidate["trial"]["hard_case_results"] = {}
 
@@ -114,13 +117,10 @@ class BeforeBuildTests(unittest.TestCase):
         }
         overlaid = mod.apply_receipts(data, [receipts])
         row = next(c for c in overlaid["cases"] if c["id"] == "evidencebridge-vs-doubt")
-        self.assertEqual(row["candidates"][0]["trial"]["material_losses"], original_losses)
+        self.assertEqual(row["candidates"][0]["review_losses"], original_losses)
         result = mod.decide(row)
         self.assertEqual(result["verdict"], "INTEROPERATE")
-        self.assertEqual(
-            result["candidate_coverage"][0]["receipt_source"],
-            "test-owner-adapter",
-        )
+        self.assertEqual(result["candidate_coverage"][0]["receipt_source"], "test-owner-adapter")
 
     def test_receipt_cannot_reference_unknown_candidate(self):
         receipts = {
