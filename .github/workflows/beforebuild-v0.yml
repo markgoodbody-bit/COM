@@ -449,6 +449,102 @@ jobs:
           print(json.dumps({"hard_case_results": results, "notes": notes}, indent=2))
           PY
 
+      - name: Complete rich-content hard case in a fresh owner instance
+        env:
+          REMARK_IMAGE: ghcr.io/umputun/remark42:v1.16.4@sha256:980e0e76a6f241cd181f44c5b4d686f0d8cd7f552e11deb3bdcba223b2c3b866
+        run: |
+          docker rm -f beforebuild-remark42 || true
+          mkdir -p /tmp/beforebuild-remark-var-markdown
+          chmod 0777 /tmp/beforebuild-remark-var-markdown
+          docker run -d --name beforebuild-remark42-markdown             -p 127.0.0.1:8081:8080             -v /tmp/beforebuild-remark-var-markdown:/srv/var             -e REMARK_URL=http://127.0.0.1:8081             -e SITE=psfh             -e SECRET=beforebuild-markdown-secret-0123456789abcdef             -e AUTH_ANON=true             "$REMARK_IMAGE"
+
+          ready=0
+          for i in $(seq 1 25); do
+            if curl -fsS http://127.0.0.1:8081/ping >/dev/null; then
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" -ne 1 ]; then
+            docker logs beforebuild-remark42-markdown || true
+            exit 1
+          fi
+
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+
+          base="http://127.0.0.1:8081"
+          cookies="/tmp/remark-md-cookies.txt"
+          login=subprocess.run([
+              "curl","-sS","-o","/tmp/remark-md-login","-D","/tmp/remark-md-headers",
+              "-c",cookies,"-w","%{http_code}",
+              f"{base}/auth/anonymous/login?user=markdown_user&aud=psfh",
+          ],text=True,capture_output=True)
+
+          xsrf=""
+          if Path(cookies).exists():
+              for line in Path(cookies).read_text(encoding="utf-8").splitlines():
+                  if not line or line.startswith("#"):
+                      continue
+                  parts=line.split("\t")
+                  if len(parts)>=7 and parts[5]=="XSRF-TOKEN":
+                      xsrf=parts[6]
+
+          payload=json.dumps({
+              "text":"[x](https://example.com)",
+              "locator":{"site":"psfh","url":"https://psfh.invalid/guestbook"},
+          })
+          args=[
+              "curl","-sS","-o","/tmp/remark-md-comment.json","-w","%{http_code}",
+              "-b",cookies,"-H","Content-Type: application/json",
+          ]
+          if xsrf:
+              args += ["-H", f"X-XSRF-TOKEN: {xsrf}"]
+          args += ["-X","POST",f"{base}/api/v1/comment?site=psfh","-d",payload]
+          posted=subprocess.run(args,text=True,capture_output=True)
+          try:
+              status=int(posted.stdout.strip())
+          except Exception:
+              status=0
+
+          verdict="NOT_TESTED"
+          observed={}
+          if status==201:
+              observed=json.load(open("/tmp/remark-md-comment.json"))
+              rendered=str(observed.get("text",""))
+              original=str(observed.get("orig",""))
+              verdict=(
+                  "FAIL"
+                  if ("https://example.com" in original or "<a " in rendered or "https://example.com" in rendered)
+                  else "PASS"
+              )
+
+          receipt=json.load(open("/tmp/remark-receipt.json"))
+          row=receipt["receipts"][0]
+          row["hard_case_results"]["plain-small-mark"]=verdict
+          row["source"] += "+fresh-first-comment-markdown-probe"
+          json.dump(receipt,open("/tmp/remark-receipt.json","w"),indent=2)
+
+          probe=json.load(open("/tmp/remark-probe.json"))
+          probe["hard_case_results"]["plain-small-mark"]=verdict
+          probe["notes"]["markdown_fresh_login_status"]=login.stdout.strip()
+          probe["notes"]["markdown_fresh_post_status"]=status
+          probe["notes"]["markdown_fresh_observed_orig"]=observed.get("orig")
+          probe["notes"]["markdown_fresh_observed_text"]=observed.get("text")
+          json.dump(probe,open("/tmp/remark-probe.json","w"),indent=2)
+
+          print(json.dumps({
+              "login_status":login.stdout.strip(),
+              "post_status":status,
+              "plain_small_mark":verdict,
+              "observed_orig":observed.get("orig"),
+              "observed_text":observed.get("text"),
+          },indent=2))
+          PY
+
       - name: Evaluate prospective decision from actual owner trial
         run: |
           python experiments/beforebuild-v0/beforebuild.py             experiments/beforebuild-v0/prospective_guestbook.json             --receipt /tmp/remark-receipt.json             --out /tmp/guestbook-owner-result.json
@@ -481,4 +577,6 @@ jobs:
         if: always()
         run: |
           docker logs beforebuild-remark42 || true
+          docker logs beforebuild-remark42-markdown || true
           docker rm -f beforebuild-remark42 || true
+          docker rm -f beforebuild-remark42-markdown || true
