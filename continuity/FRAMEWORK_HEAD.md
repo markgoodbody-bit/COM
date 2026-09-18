@@ -4,6 +4,25 @@ Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF*
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR issue #40 repair delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
+
+- THR production main advanced to `38fff7a864d3acb3caf417ee830ecb284fa67139` through PR #41.
+- Exact PR-head witness: `90b07a1015fd0f36c66f0ed7e4193505bc7395be`; workflow `35355805237 SUCCESS`; 73 tests / OK. No separate merge-head workflow is visible through the current route.
+- Public catalogue re-read at the merge head remains exactly **3 records**.
+- Repair closes only the first outside R. Vale break: assertions may now address an existing unresolved mention through typed `mention_id`; opaque-ID shape, uniqueness and existence fail closed.
+- Preserve `MENTION_REFERENCE != ENTITY_RESOLUTION`.
+- Issue #40 candidate-decision provenance/history seam remains open. Do **not** add `candidate.evidence_state` by momentum; owner subtraction points toward testing a resolution decision that references an evidence-bearing assertion/history instead.
+- Hannibal PR #35 remains held/non-public.
+
+```text
+OUTSIDE_CASE -> CONCRETE_REPAIR = OBSERVED
+OUTSIDE_CASE != OUTSIDE_VALIDATION
+PR41_MERGED != ISSUE40_CLOSED
+ASSERTION_REFERENCE != IDENTITY_RESOLUTION
+```
+
 ## FULL COMSYNC live delta — 18 September 2026 15:08 BST
 
 This block supersedes later stale wording in this file where the two conflict. Detailed receipt:
@@ -64,7 +83,7 @@ STOP
 ```text
 TRACE v0.3.0 main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics v0.7.0 main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-The Human Record main = 58f1b7ade96ea2a5524bb6d36fdba193f8c016db
+The Human Record main = 38fff7a864d3acb3caf417ee830ecb284fa67139
 THR public records = 3
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
@@ -76,7 +95,7 @@ No current Hannibal branch is public record 4. Repository inspection is not oper
 ## Current bounded lanes
 
 ```text
-COM #347 = THR product / issue #40 outside identity-model break + Hannibal candidate held non-public
+COM #347 = THR product / issue #40 repair-1 integrated; candidate-decision provenance seam open; Hannibal held non-public
 COM #348 = project resource quarry
 COM #349 = competition tournament
 COM #365 = TRACE/ME real-use quarry / positive-construction view SHRUNK to refusability-exit-continuation residue
