@@ -40,6 +40,7 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md`](CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md) | Self-application: Campfire is research transport/evidence, not a claimed whistleblower system; continuous monitoring is unestablished but no consequential missed-reply failure is reproduced. |
 | [`PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md`](PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md) | External owner convergence: interactive/executable derived view can remain distinct from source/evidence; no THR build or new primitive earned. |
 | [`INFECTED_BLOOD_SUCCESSION_ACTIVATION_20260918.md`](INFECTED_BLOOD_SUCCESSION_ACTIVATION_20260918.md) | Real inherited repair obligation across changing mechanisms/bodies; **successor non-culpability != institutional obligation erased**. |
+| [`GB_DATA_CENTRE_MATERIAL_CAPACITY_ACTIVATION_20260918.md`](GB_DATA_CENTRE_MATERIAL_CAPACITY_ACTIVATION_20260918.md) | Real material reachability witness: **compute demand != reachable grid connection**; owner-rich, no new primitive. |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
