@@ -118,10 +118,14 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaises(mod.MarkRejected):
             mod.remark42_comment_to_psfh_row(owner_comment(name="https://bad.example"))
 
-    def test_plain_find_parser_only_accepts_list(self):
+    def test_plain_find_parser_accepts_bare_and_wrapped_shapes(self):
         self.assertEqual(len(mod.parse_remark42_find([owner_comment()])), 1)
+        self.assertEqual(
+            len(mod.parse_remark42_find({"comments": [owner_comment()], "info": {}})),
+            1,
+        )
         with self.assertRaises(ValueError):
-            mod.parse_remark42_find({"comments": []})
+            mod.parse_remark42_find({"unexpected": []})
 
 
 if __name__ == "__main__":
