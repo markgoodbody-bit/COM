@@ -41,6 +41,9 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md`](PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md) | External owner convergence: interactive/executable derived view can remain distinct from source/evidence; no THR build or new primitive earned. |
 | [`INFECTED_BLOOD_SUCCESSION_ACTIVATION_20260918.md`](INFECTED_BLOOD_SUCCESSION_ACTIVATION_20260918.md) | Real inherited repair obligation across changing mechanisms/bodies; **successor non-culpability != institutional obligation erased**. |
 | [`GB_DATA_CENTRE_MATERIAL_CAPACITY_ACTIVATION_20260918.md`](GB_DATA_CENTRE_MATERIAL_CAPACITY_ACTIVATION_20260918.md) | Real material reachability witness: **compute demand != reachable grid connection**; owner-rich, no new primitive. |
+| [`CORRECTION_PROPAGATION_RAIL_BRADFORD_20260918.md`](CORRECTION_PROPAGATION_RAIL_BRADFORD_20260918.md) | Rail + Bradford: one thin relation crosses unlike domains — correction/new state exists != correction reached every consequential target; portability only. |
+| [`AI_ASSISTANCE_SKILL_FORMATION_OWNER_PASS_20260918.md`](AI_ASSISTANCE_SKILL_FORMATION_OWNER_PASS_20260918.md) | External 2026 learning/workforce evidence grounds Formation's existing skill-retention/dependency dimension: assisted performance != independent capability. |
+| [`MARION_ECOLOGICAL_HARD_COLLISION_ME_PRESSURE_20260918.md`](MARION_ECOLOGICAL_HARD_COLLISION_ME_PRESSURE_20260918.md) | Real ecological eradication collision pressures a universal reading of route preservation; **clarity/defeasibility review earned, no priority law or v0.7.0 mutation.** |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
