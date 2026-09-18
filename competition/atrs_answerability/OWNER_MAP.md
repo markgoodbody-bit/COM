@@ -118,11 +118,60 @@ REGISTERS_CAN_OMIT_ACCOUNTABILITY_CONTEXT -> OWNED
 VISIBILITY != CONTESTABILITY -> OWNED
 ```
 
-Residual reader-use question under test:
+Reader Lens is now secondary. The current research spine is the route-relation implementation measurement.
 
-> On actual ATRS records, does a source-preserving presentation help a reader retrieve action-relevant facts — actor, challenge object, initiation route/channel, decision layer and current/planned status — more accurately or efficiently, without increasing unsupported inference?
+Residual primary question:
 
-That is the purpose of `READER_USE_PROTOCOL.md`.
+> Across the live UK ATRS register, does the public record bind stated review/challenge/correction routes to the thing they can act on, the eligible actor and the initiation/channel — or does the relationship remain publicly unstated?
+
+Reader-use remains a separate optional question in `READER_USE_PROTOCOL.md`; it is not required for the relation result.
+
+## 5A. 2026 complete-register / external-audit work — competition-critical prior work
+
+These owners now materially constrain the #364 novelty story.
+
+### Das et al. — Canadian federal register
+
+`Bureaucratic Silences: What the Canadian AI Register Reveals, Omits, and Obscures`  
+FAccT 2026. DOI: https://doi.org/10.1145/3805689.3812336
+
+The authors analyze the complete Canadian federal AI Register (409 systems) using ADMAPS plus deductive qualitative coding and explicitly frame the result as visibility without contestability / sociotechnical context being obscured.
+
+This owns much of:
+
+```text
+FULL-REGISTER EMPIRICAL AUDIT = NOT NEW BY ITSELF
+VISIBILITY != CONTESTABILITY = OWNED
+REGISTER DISCLOSURE CAN OBSCURE SOCIOTECHNICAL CONTEXT = OWNED
+```
+
+### Peljto, Heilmann & Cerrato — German initiatives
+
+`Are Algorithm Registers Transparent? Perspectives from Germany` (2026).
+
+The paper turns transparency goals into structured audit checklists and applies them to two German initiatives, deriving concrete improvement actions.
+
+This owns much of:
+
+```text
+REGISTER AUDIT AGAINST EXPLICIT TRANSPARENCY GOALS = OWNED
+STRUCTURED CHECKLIST AUDIT = NOT OUR GENERAL NOVELTY
+```
+
+### Consequence for #364
+
+The competition delta is **not** a general register critique.
+
+The narrower surviving question is implementation-specific to GDS's own ATRS guidance:
+
+> Does the live UK register publicly bind each stated review/challenge/correction route to its target site, eligible actor and initiation path, while leaving unstated relations unstated?
+
+See `PRIOR_WORK_PRESSURE_20260918.md`.
+
+```text
+GENERAL PROBLEM OWNER FOUND != EXACT UK IMPLEMENTATION MEASURE OWNER FOUND
+NOT_FOUND_EXACT_OWNER != NOVELTY_PROVED
+```
 
 ## 6. What the September pilot actually established
 
