@@ -90,17 +90,71 @@ These are the actual go/no-go variables:
 7. Can we produce a real icon, screenshot and <=2 minute device demo without cutting corners?
 8. Does the Peace Prize permit/like this exact interpretation of social good?
 
+## Exact spike witness
+
+Draft PR: **#374**
+
+Exact validated head:
+
+`999e5666873937266ffef5084057ff1857ed8c31`
+
+Hosted workflow:
+
+`35365682252 SUCCESS`
+
+Validated:
+- dependency install;
+- TypeScript compilation;
+- Expo public config resolution.
+
+This establishes that the selected Expo 57 / React Native 0.86 / RevenueCat 10.x skeleton is internally buildable enough to continue. It does **not** establish a native store build or purchase transaction.
+
+## Store-path pressure found after the spike
+
+### Google Play
+
+Current Google policy is fatal for a **new personal Play developer account** on this deadline:
+- personal accounts created after 13 November 2023 need a closed test;
+- at least 12 testers must remain opted in continuously for 14 days;
+- only then can the developer apply for production access;
+- Google says that production-access review usually takes seven days or less but may take longer.
+
+So:
+
+```text
+NEW PERSONAL GOOGLE PLAY ACCOUNT -> SHIPATON BY 30 SEP = NOT CREDIBLE
+```
+
+An older / already production-enabled Play account is a different case.
+
+### Apple
+
+Apple currently states that 90% of App Store submissions are reviewed in less than 24 hours, while warning that incomplete or unusual submissions can take longer.
+
+That makes iOS the credible fast path **only if an active Apple Developer Program/App Store Connect account is already available or enrollment completes very quickly**.
+
+Apple membership is a paid human/account gate; individual seller identity is the member's legal name.
+
+### Shipaton itself
+
+Shipaton requires the app to be fully published, not merely TestFlight/closed testing, and its own FAQ recommends submitting to stores at least one week before the deadline.
+
+The deadline is therefore already inside the organiser's recommended store-review buffer.
+
 ## Current disposition
 
 ```text
 APP CONCEPT = VIABLE ENOUGH TO CONTINUE TESTING
 CODE VOLUME = SMALL
-REVENUECAT SEAM = STRAIGHTFORWARD
-STORE PATH = UNKNOWN / LOAD-BEARING
-DEADLINE RISK = HIGH
+EXPO / REVENUECAT SKELETON = GREEN
+REVENUECAT REAL PURCHASE = NOT TESTED
+NEW GOOGLE PERSONAL ACCOUNT PATH = EFFECTIVELY DEAD
+APPLE PATH = PLAUSIBLE ONLY WITH ACCOUNT READINESS
+STORE ACCOUNT STATE = UNKNOWN / LOAD-BEARING
+DEADLINE RISK = VERY HIGH
 PURPOSE DISTORTION = CONTAINABLE IF CORE REMAINS FREE
 ```
 
 Next useful action is **not more UI**.
 
-Next useful action is to establish the store/account path. If no store route can credibly reach public release in time, stop immediately and keep this spike as a reusable mobile prototype.
+Next useful action is to establish whether a production-capable store account already exists. If not, this should probably stop as a Shipaton entry and remain a reusable PSFH mobile prototype rather than consume the project in a store-enrollment race.
