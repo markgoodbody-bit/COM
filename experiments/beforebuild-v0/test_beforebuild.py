@@ -68,6 +68,19 @@ class BeforeBuildTests(unittest.TestCase):
         }
         self.assertEqual(mod.decide(case)["verdict"], "SHRINK")
 
+    def test_fail_plus_not_tested_still_shrinks(self):
+        case = self.case("rail-accessibility-currentness")
+        case["id"] = "fail-and-incomplete"
+        case["candidates"][0]["trial"]["hard_case_results"] = {
+            "HIR": "FAIL",
+            "IRL": "NOT_TESTED",
+            "DSY": "NOT_TESTED",
+            "BIW": "PASS",
+            "AGV": "PASS",
+            "LLE": "PASS",
+        }
+        self.assertEqual(mod.decide(case)["verdict"], "SHRINK")
+
     def test_clean_full_owner_returns_use_owner(self):
         case = self.case("evidencebridge-vs-doubt")
         case["id"] = "clean-owner"
