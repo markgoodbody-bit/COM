@@ -61,8 +61,9 @@ observer
 subject: event | route | state | claim
 observation
 locus / route
-route_visibility  # PUBLIC | RESTRICTED:<scope> | PRIVATE | UNKNOWN, when consequential
-visibility_basis  # how that visibility was established, when route_visibility is used
+route_visibility  # PUBLIC | RESTRICTED | PRIVATE | UNKNOWN, when consequential
+visible_to         # bounded audience/scope actually established, when useful
+visibility_basis   # how route_visibility / visible_to were established
 anchor            # observation window/object, where relevant
 evidence or evidence_ref
 uncertainty / claim_status
@@ -102,12 +103,12 @@ When who can inspect a route materially affects the claim, preserve route visibi
 
 ```text
 PUBLIC             observed route is openly readable at the stated boundary
-RESTRICTED:<scope> observed route is limited to a named group/account/context
+RESTRICTED         observed route is access-limited at the stated boundary; name only the audience/scope actually established in `visible_to`
 PRIVATE            observed route is non-public at the stated boundary
 UNKNOWN            current audience/visibility was not established
 ```
 
-Visibility needs a basis (for example repository visibility returned by the carrier, access-control configuration, or a bounded retrieval test). Do not infer `PRIVATE` from one failed read, or `PUBLIC` from one successful authenticated read. A later public copy is a new publication/event; it does not retroactively make the original private route public.
+Visibility needs a basis (for example repository visibility returned by the carrier, access-control configuration, or a bounded retrieval test). `visible_to` is descriptive, not an entitlement list: record only the audience/scope the evidence actually establishes. Do not infer `PRIVATE` from one failed read, `RESTRICTED` from one denied identity, or `PUBLIC` from one successful authenticated read. A later public copy is a new publication/event; it does not retroactively make the original private route public.
 
 ```text
 PUBLIC != AUTHORITATIVE
