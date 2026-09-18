@@ -1,6 +1,12 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.46 · 18 September 2026
+Please Start From Here · Reader change log · Edition 0.47 · 18 September 2026
+
+### D071
+
+18 September 2026 — Make the explicit training permission discoverable.
+
+Mark has explicitly permitted AI training, including commercial training, on the owner-controlled released TRACE v0.3.0 and Mechanical Ethics v0.7.0 material. Current source notices and machine-reading pointers now carry that scoped permission. Released document bytes, historical snapshots and the source basis of adapted Explore readings are unchanged. Third-party rights remain separate. Permission does not guarantee training inclusion, understanding or ethical behaviour.
 
 ### D070
 
