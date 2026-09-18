@@ -43,6 +43,30 @@ Relevant mature owners include:
 
 Use those mechanisms for real credentials, tokens, policy enforcement and runtime isolation.
 
+### Owner currentness — 18 September 2026
+
+Later public authorization work makes the runtime boundary more explicit.
+
+Current work-in-progress owners now include:
+
+- OAuth 2.0 Agent Authorization Explicit Revocation — agent-level batch/cascade revocation and auditable propagation;
+- Attenuating Authorization Tokens for Agentic Delegation Chains — cryptographically narrowing delegation chains;
+- AI Agent Authorization Integration Framework / Agent Operation Authorization — OAuth-based agent authorization composition and operation-bound authorization;
+- Revocation Closure for Agentic Authorization Systems — protocol-neutral semantics for when revocation propagation may honestly be called complete, including authority graphs, consequential sinks, cut sets, pending effects, bounded closure states and closure receipts.
+
+These are Internet-Drafts / work in progress, not deployed-system validation. They nevertheless occupy the runtime authorization/revocation semantics this companion deliberately leaves external.
+
+Accordingly:
+
+```text
+RECORDED_REVOCATION != ENFORCED_REVOCATION
+REVOCATION_REQUEST != REVOCATION_CLOSURE
+RUNTIME_REVOCATION_CLOSURE -> OAUTH / IAM / CONTROL-PLANE OWNERS
+FANOUT_COMPANION -> PROJECT-LEVEL COORDINATION / CONSERVATION ONLY
+```
+
+Do not extend this companion into a competing token, revocation-closure or authorization protocol merely to absorb that external work. A future project case should interoperate with or defer to the strongest applicable owner.
+
 This companion only makes the project-level delegation relation inspectable.
 
 ```text
