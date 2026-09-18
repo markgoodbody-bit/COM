@@ -89,6 +89,53 @@ class BeforeBuildTests(unittest.TestCase):
         case["candidates"][0]["trial"]["hard_case_results"] = {h["id"]: "NOT_TESTED" for h in case["hard_cases"]}
         self.assertEqual(mod.decide(case)["verdict"], "STOP")
 
+    def test_machine_receipt_can_supply_owner_execution_without_rewriting_loss(self):
+        data = copy.deepcopy(self.data)
+        case = next(c for c in data["cases"] if c["id"] == "evidencebridge-vs-doubt")
+        candidate = case["candidates"][0]
+        original_losses = copy.deepcopy(candidate["trial"]["material_losses"])
+        candidate["trial"]["executed"] = False
+        candidate["trial"]["hard_case_results"] = {}
+
+        receipts = {
+            "format": "beforebuild-owner-receipts-v0.1",
+            "receipts": [{
+                "case_id": "evidencebridge-vs-doubt",
+                "candidate_id": "doubt-v0.8.0",
+                "executed": True,
+                "hard_case_results": {
+                    "flak": "PASS",
+                    "hannibal": "PASS",
+                    "r-vale": "PASS",
+                    "sieve-riddle": "PASS",
+                },
+                "source": "test-owner-adapter",
+            }],
+        }
+        overlaid = mod.apply_receipts(data, [receipts])
+        row = next(c for c in overlaid["cases"] if c["id"] == "evidencebridge-vs-doubt")
+        self.assertEqual(row["candidates"][0]["trial"]["material_losses"], original_losses)
+        result = mod.decide(row)
+        self.assertEqual(result["verdict"], "INTEROPERATE")
+        self.assertEqual(
+            result["candidate_coverage"][0]["receipt_source"],
+            "test-owner-adapter",
+        )
+
+    def test_receipt_cannot_reference_unknown_candidate(self):
+        receipts = {
+            "format": "beforebuild-owner-receipts-v0.1",
+            "receipts": [{
+                "case_id": "evidencebridge-vs-doubt",
+                "candidate_id": "invented-owner",
+                "executed": True,
+                "hard_case_results": {},
+                "source": "bad",
+            }],
+        }
+        with self.assertRaises(ValueError):
+            mod.apply_receipts(self.data, [receipts])
+
     def test_claim_ceiling_marks_typed_evidence_as_unverified(self):
         self.assertIn("typed evidence is not source verification", self.report["claim_ceiling"])
 
