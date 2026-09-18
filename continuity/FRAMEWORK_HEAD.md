@@ -4,6 +4,27 @@ Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF*
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR issue #40 candidate-boundary delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_ISSUE40_CANDIDATE_BOUNDARY_20260918.md`.
+
+- THR main = `708b9f5f0691e93d052a81431e3c7de9a63a947e`.
+- PR #43 exact head `a564814...`: workflow `35357048111 SUCCESS`, 76 tests / OK, Codex exact-head `KEEP_SHRINK`.
+- Public catalogue remains exactly **3 records**.
+- Candidate links now require a non-empty inspectable `basis`.
+- Candidate-local `evidence`, `evidence_state`, `history` fail closed as unmodelled semantics.
+- Source-attributed propositions may address unresolved mention A -> mention B through assertions without entity resolution.
+- The proposed `basis_assertion_ids` bridge was not earned; probe PR #42 is closed unmerged.
+- Remaining issue #40 debt: prior candidate uncertainty/history is **not machine-typed**; an exclusion with ordinary basis and erased prior candidate state can still structurally pass. Issue #40 remains open on this boundary.
+- Hannibal remains non-public pending fresh rebase/review against the new production main.
+
+```text
+OUTSIDE_CASE -> TWO_CONCRETE_PRODUCTION_REPAIRS
+PARTIAL_REPAIR != OUTSIDE_VALIDATION
+CANDIDATE_BASIS != IDENTITY_TRUTH
+NO_TYPED_HISTORY_YET != HISTORY_IRRELEVANT
+```
+
 ## THR issue #40 repair delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
@@ -83,7 +104,7 @@ STOP
 ```text
 TRACE v0.3.0 main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics v0.7.0 main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-The Human Record main = 38fff7a864d3acb3caf417ee830ecb284fa67139
+The Human Record main = 708b9f5f0691e93d052a81431e3c7de9a63a947e
 THR public records = 3
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
@@ -95,7 +116,7 @@ No current Hannibal branch is public record 4. Repository inspection is not oper
 ## Current bounded lanes
 
 ```text
-COM #347 = THR product / issue #40 repair-1 integrated; candidate-decision provenance seam open; Hannibal held non-public
+COM #347 = THR product / issue #40 two bounded repairs integrated; typed candidate-history still open; Hannibal held non-public
 COM #348 = project resource quarry
 COM #349 = competition tournament
 COM #365 = TRACE/ME real-use quarry / positive-construction view SHRUNK to refusability-exit-continuation residue
