@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate all THR interoperability maps with upstream Doubt
-        uses: alsoleg89/doubt@v0.8.0
+        uses: alsoleg89/doubt@647482d536e8c3fdda573699426b7dc5673f9905 # v0.8.0
         with:
           path: experiments/doubt-thr-interop-20260918
           require-maps: 'true'
