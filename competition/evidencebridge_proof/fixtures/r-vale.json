@@ -1,0 +1,21 @@
+{
+  "format":"evidencebridge/0.1","case_id":"r-vale-identity","title":"R. Vale — identical strings, unresolved identity",
+  "case_note":"Synthetic outside case supplied by tidemark and preserved in human-record issue #40. It tests whether unresolved identity and source-attributed correction survive.",
+  "origin":{"repository":"markgoodbody-bit/human-record","issue":40,"source":"tidemark / Square 5757 c67746"},
+  "claims":[{"id":"c-same-maker","text":"Programme A and catalogue B refer to the same maker."}],
+  "sources":[
+    {"id":"s-programme","label":"Programme A","locator":"synthetic: Programme A","kind":"synthetic_programme","independence_group":"programme-a","derived_from":[]},
+    {"id":"s-catalogue","label":"Catalogue B","locator":"synthetic: Catalogue B","kind":"synthetic_catalogue","independence_group":"catalogue-b","derived_from":[]},
+    {"id":"s-statement-c","label":"Source C statement","locator":"synthetic: Source C","kind":"synthetic_statement","independence_group":"statement-c","derived_from":[]}
+  ],
+  "propositions":[
+    {"id":"p-programme-string","source_id":"s-programme","claim_id":"c-same-maker","state":"OBSERVED","relation":"NEARBY_NOT_SUPPORT","text":"Programme A contains the string 'R. Vale — Harbour Study, 2024'.","scope_note":"A matching name/title string does not establish referent identity."},
+    {"id":"p-catalogue-string","source_id":"s-catalogue","claim_id":"c-same-maker","state":"OBSERVED","relation":"NEARBY_NOT_SUPPORT","text":"Catalogue B contains the identical string 'R. Vale — Harbour Study, 2024'.","scope_note":"The hidden world may contain one maker or two makers sharing name/title."},
+    {"id":"p-source-c-distinct","source_id":"s-statement-c","claim_id":"c-same-maker","state":"REPORTED","relation":"CONTRADICTS","text":"Source C states that the R. Vale in programme A is not the maker in catalogue B.","scope_note":"This is an attributable statement, not a directly observed identity fact."}
+  ],
+  "corrections":[],
+  "unknowns":[
+    {"claim_ids":["c-same-maker"],"text":"Whether the two original mentions refer to one maker or two."},
+    {"claim_ids":["c-same-maker"],"text":"Whether Source C's reported distinction is correct."}
+  ]
+}
