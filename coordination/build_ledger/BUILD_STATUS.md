@@ -1,15 +1,13 @@
 # Build status
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-QUARRY PRIMARY / ONE PRESERVED OPEN PR**  
-Updated: **18 September 2026 PM — post drift/falsification x100**
+Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**
 
 Observed status only. Re-read mutable heads before acting.
 
 ## Active build
 
 **None.**
-
-There is no justified always-on build queue.
 
 The next build must be earned by a fresh WORLD / REAL USE gap after owner subtraction.
 
@@ -31,28 +29,27 @@ Do not merge/census/polish by momentum.
 
 ### Hack Apertus
 
-Prep exists; no competitive result exists.
+No competitive result exists.
 
 Start gate on/after 1 October:
-- re-read live challenge/rules/judging;
-- record pre-existing material honestly;
+- re-read challenge/rules/judging;
+- disclose pre-existing material honestly;
 - verify rights/open-source compatibility;
 - search existing reports;
 - predeclare expected behaviour;
-- run only event-admissible fixtures;
 - preserve all attempts;
 - reduce failures to smallest reproducers.
 
-Valid result includes STOP.
+STOP remains valid.
 
 ## Recently completed
 
-### Drift / falsification x100
+### Project drift / falsification x100
 
-Audit:
+Pre-repair audit:
 `falsification/PROJECT_DRIFT_FALSIFY_X100_20260918_PM.md`
 
-Pre-repair:
+At audit time:
 ```text
 R 73
 F 12
@@ -61,54 +58,39 @@ U 3
 ```
 
 Repairs:
-- WORLD / REAL USE restored above competition in tournament priority;
-- #345 closed;
-- #349 closed;
-- #363 closed unmerged as preserved fallback;
-- continuity compaction replaces historical-bus pattern.
+- world-first priority restored;
+- stale #345 / #349 closed;
+- #363 closed unmerged;
+- current continuity surfaces compacted;
+- selection aperture deliberately widened.
 
-### Rail accessibility currentness
+Post-repair:
+`coordination/build_ledger/PROJECT_DRIFT_X100_REPAIR_RESULT_20260918_PM.md`
 
-PR #383 merged as:
-`4630b07d6c9f9844cba862ef297cddafd9c11698`
+### Counter-aperture world passes
 
-Result:
-- HIR / IRL / DSY existence contradictions;
-- BIW / AGV / LLE controls;
-- operational-status classifier deleted after hostile review;
-- owner packet unsent.
+**Ngardara/Borroloola microgrid**
+- non-UK;
+- positive/material;
+- cooperative/First Nations ownership;
+- strong domain-owner convergence;
+- no project-specific delta.
 
-### Bradford correction propagation
+**AI assistance / human skill formation**
+- real empirical pressure on human correction capacity;
+- existing Formation `Skill retention` representation survives;
+- owner evidence linked into `alignment/reciprocal_formation/DEPENDENCY.md`;
+- no new Formation concept.
 
-Field note:
-`field/BRADFORD_CHILDRENS_RECORD_CORRECTION_PROPAGATION_20260720.md`
+### Rail / Bradford
 
-Result:
-```text
-formal correction recommendation != timely implementation
-downstream consequence-review failure = NOT ESTABLISHED
-AI-specific delta = NO
-```
+Existing bounded correction-propagation witnesses remain as field evidence only.
 
-### Cross-domain correction propagation
+### THR
 
-`evidence/CORRECTION_PROPAGATION_RAIL_BRADFORD_20260918.md`
+Exactly four public records. Record 5 remains unearned.
 
-Result:
-```text
-portable description = observed across two domains
-operational advantage = not demonstrated
-new TRACE primitive = no
-new ME doctrine = no
-```
-
-### THR record-5 quarry II
-
-Four candidates / four stronger owner routes / zero records.
-
-Record 5 remains unearned.
-
-## Stable project baselines
+## Stable baselines
 
 ```text
 TRACE formal baseline = v0.3.0
@@ -131,8 +113,6 @@ new credentials = NONE
 
 ## Next build condition
 
-The next repository build should satisfy:
-
 ```text
 REAL CURRENT CASE
 + STRONGEST OWNER CHECKED
@@ -141,7 +121,6 @@ REAL CURRENT CASE
 + CLEAR KILL / ROUTE CONDITION
 ```
 
-Selection correction from x100:
-prefer the next quarry to be materially different from the recent UK/public-sector correction cluster.
+No category quota. Follow materiality.
 
 History belongs in dated build-ledger receipts and Git, not this file.
