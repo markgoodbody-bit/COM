@@ -1,6 +1,6 @@
 # NHS Single Patient Record — rectification propagation implementation seam — 18 September 2026
 
-Status: **REAL IMPLEMENTATION WATCH / OWNER-RICH / PUBLIC MECHANISM NOT ESTABLISHED / NO POLICY PROPOSAL**
+Status: **REAL IMPLEMENTATION WATCH / REQUIREMENT + TECHNICAL PRIMITIVES OWNER-FOUND / FINAL SPR CONVERGENCE DESIGN STILL UNDER DEVELOPMENT / NO POLICY PROPOSAL**
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
@@ -52,6 +52,62 @@ For Personal Demographics Service data, NHS already publishes explicit local-syn
 
 This shows that explicit source/local synchronisation and repair semantics are an existing NHS owner capability. It does not establish that the future SPR clinical-data rectification path will use the same mechanism.
 
+
+
+### SPR design requirement already names update convergence
+
+NHS England's current public/market-feedback summary says data ownership/stewardship needs clarity about where data is held and mastered, who can access it and who is responsible for updates. It also states, under working seamlessly with existing systems, that when information is updated in one place it should be automatically updated everywhere it is needed.
+
+Owner:
+https://www.england.nhs.uk/blog/single-patient-record-insights-from-public-and-market-feedback/
+
+This owner statement materially narrows the seam:
+
+`CROSS-SYSTEM UPDATE CONVERGENCE AS A REQUIREMENT = OWNER FOUND`
+
+It is no longer accurate even to frame automatic propagation as a missing design principle.
+
+### SPR architecture is still being defined
+
+NHS England Data Transformation Check and Challenge Group minutes from 19 June 2026 say the SPR programme had moved into mobilisation/delivery after Full Business Case approval, while further work was still underway to define:
+- technical architecture;
+- scope;
+- delivery model;
+- software-engineering/system-integration capability.
+
+The same minutes describe SPR as a consolidated view while maintaining existing systems.
+
+Owner:
+https://www.england.nhs.uk/long-read/data-transformation-check-and-challenge-group-meeting-minutes-19-june-2026/
+
+Earlier April 2026 minutes describe an approved hybrid "emergent architecture" intended for iterative/co-productive development and adaptability.
+
+Therefore:
+
+```text
+ARCHITECTURE DIRECTION = OWNER FOUND
+FINAL IMPLEMENTATION DETAIL = STILL DEVELOPING
+PUBLIC ABSENCE OF WRITE-BACK MECHANISM != MECHANISM REJECTED
+```
+
+### Existing GP-record update capability
+
+NHS England Digital's current IM1 Transaction API standards already permit authorised applications, in real time and subject to the relevant permissions/provider implementation, to:
+- retrieve/update demographics;
+- retrieve the full medical record;
+- file data to a patient record;
+- create consultation records;
+- add/file documents;
+- delete data from a patient record.
+
+Owners:
+https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards
+https://digital.nhs.uk/services/digital-services-for-integrated-care/im1-pairing-integration/interface-mechanisms-guidance
+
+This does not prove SPR will use IM1 for rectification. It establishes that write/update capability into current GP record systems is not a novel technical concept introduced by this project.
+
+`WRITE / UPDATE TECHNICAL CAPABILITY = OWNER FOUND`
+
 ## Live parliamentary implementation question
 
 Primary public question:
@@ -85,8 +141,11 @@ That is a systems implementation / data-governance question.
 
 `SPR RECTIFICATION RIGHT = OWNER FOUND`
 `SOURCE SYSTEM RESPONSIBILITY = OWNER FOUND`
+`CROSS-SYSTEM UPDATE CONVERGENCE REQUIREMENT = OWNER FOUND`
 `LOCAL SYNCHRONISATION PATTERN IN NHS = OWNER FOUND (PDS)`
-`SPR CLINICAL RECTIFICATION WRITE-BACK / CONVERGENCE MECHANISM = NOT ESTABLISHED FROM PUBLIC SOURCES CHECKED`
+`GP RECORD WRITE / UPDATE CAPABILITY = OWNER FOUND (IM1)`
+`SPR TECHNICAL ARCHITECTURE / DELIVERY MODEL = STILL UNDER DEVELOPMENT`
+`SPR CLINICAL RECTIFICATION WRITE-BACK / ACKNOWLEDGED CONVERGENCE MECHANISM = NOT YET PUBLICLY ESTABLISHED IN SOURCES CHECKED`
 `OPERATIONAL FAILURE = NOT OBSERVED`
 `POLICY GAP = NOT CLAIMED`
 `NEW TRACE / ME / THR OBJECT = NO`
