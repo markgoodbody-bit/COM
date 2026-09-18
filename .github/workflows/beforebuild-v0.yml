@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  decision-core:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,4 +41,61 @@ jobs:
           }, got
           assert 'typed evidence is not source verification' in r['claim_ceiling']
           print(json.dumps(got, indent=2, sort_keys=True))
+          PY
+
+  live-doubt-owner-adapter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute pinned upstream Doubt owner on four THR hard cases
+        uses: alsoleg89/doubt@647482d536e8c3fdda573699426b7dc5673f9905 # v0.8.0
+        with:
+          path: experiments/doubt-thr-interop-20260918
+          require-maps: 'true'
+      - name: Remove recorded Doubt execution and emit machine owner receipt
+        run: |
+          python - <<'PY'
+          import json
+          src='experiments/beforebuild-v0/calibration_cases.json'
+          data=json.load(open(src))
+          case=next(c for c in data['cases'] if c['id']=='evidencebridge-vs-doubt')
+          owner=next(c for c in case['candidates'] if c['id']=='doubt-v0.8.0')
+          owner['trial']['executed']=False
+          owner['trial']['hard_case_results']={}
+          json.dump(data, open('/tmp/cases.json','w'), indent=2)
+
+          receipt={
+            'format':'beforebuild-owner-receipts-v0.1',
+            'receipts':[{
+              'case_id':'evidencebridge-vs-doubt',
+              'candidate_id':'doubt-v0.8.0',
+              'executed':True,
+              'hard_case_results':{
+                'flak':'PASS',
+                'hannibal':'PASS',
+                'r-vale':'PASS',
+                'sieve-riddle':'PASS',
+              },
+              'source':'github-action:alsoleg89/doubt@647482d536e8c3fdda573699426b7dc5673f9905'
+            }]
+          }
+          json.dump(receipt, open('/tmp/doubt-receipt.json','w'), indent=2)
+          PY
+      - name: Require owner receipt to reproduce INTEROPERATE
+        run: |
+          python experiments/beforebuild-v0/beforebuild.py /tmp/cases.json             --receipt /tmp/doubt-receipt.json             --out /tmp/live-owner-report.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/live-owner-report.json'))
+          row=next(x for x in r['results'] if x['case_id']=='evidencebridge-vs-doubt')
+          assert row['verdict']=='INTEROPERATE', row
+          cov=next(x for x in row['candidate_coverage'] if x['candidate_id']=='doubt-v0.8.0')
+          assert cov['receipt_source'].startswith('github-action:alsoleg89/doubt@')
+          print(json.dumps({
+            'verdict':row['verdict'],
+            'receipt_source':cov['receipt_source'],
+            'hard_cases_passed':cov['pass'],
+            'material_loss_ids':cov['material_loss_ids'],
+          }, indent=2))
           PY
