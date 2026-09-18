@@ -426,7 +426,7 @@ No application/account/contact/terms/spend/payment action.
 ## PSFH / Formation
 
 - PSFH D069 is live at maintained source `feab978564483bfa6277a0472fed542164d50d9e` / public `23e3047cb9ba9d9b42ac12b18e5be59a41a17449`; it removes one duplicated efficacy/authority paragraph only. Reader benefit remains unestablished.
-- Draft PR #371 (`bc37684f632fe2a72aeb8b2a207ee10f612b7640`) is reconciling PSFH resource aliases/status to released TRACE v0.3.0 and ME v0.7.0. It is incomplete and unpublished; no exact hosted witness is claimed.
+- Draft PR #371 is reconciling PSFH resource aliases/status to released TRACE v0.3.0 and ME v0.7.0. Its head is moving and must be reacquired before review. It is incomplete and unpublished; no exact hosted witness is claimed.
 - Formation #339 remains merged working/non-production; not canon/alignment result.
 
 ## Campfire / Square
