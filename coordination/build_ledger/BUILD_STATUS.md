@@ -5,16 +5,16 @@ Direct Mark direction: pursue competitions we can credibly win.
 Current detailed receipt:
 `coordination/build_ledger/COMPETITION_AMAZON_FREEZE_ARC_QUARRY_20260918_LATE.md`
 
-### Amazon Alexa+ — FROZEN GREEN SOURCE CANDIDATE
+### Amazon Alexa+ — REPAIRED GREEN SOURCE CANDIDATE
 
 Campfire Relay draft PR #245:
 `Did It Happen? — Action Receipts for Alexa+`
 
 Exact current head:
-`109d67c190496774a28ea97cec7ccd11342cac84`
+`ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`
 
 Hosted:
-`campfire-ci 1519 / 35404393764 SUCCESS`
+`campfire-ci 1520 / 35405626849 SUCCESS`
 
 Current product edge:
 ```text
@@ -27,6 +27,8 @@ WAS CONFIRMED != IS STILL TRUE
 ```
 
 Judge package, ~90s demo script, product-feedback draft, Amazon friction draft, standalone export and Devpost field packet are prepared.
+
+Hostile restart evidence preserved: at the superseded green head `109d67c...`, a ledger append interruption after the simulated write could leave only `INTENT/PENDING`; a new session ignored that status and issued a second write. Exact repaired head `ce9f3d4...` exposes durable `PENDING` as unresolved, blocks the duplicate, and routes recovery through read-only reconciliation. The regression holds external write count at one; all 22 focused tests passed inside hosted CI. This does not establish exactly-once execution for arbitrary external systems or filesystem failure modes.
 
 Open Source mini candidate: THR PR #41, with #43/#45 as related same-window hardening. Plausible eligibility only; not organiser-certified.
 
