@@ -4,6 +4,68 @@ Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## Late 18 September Framework delta — PSFH decision gate + hard field witnesses
+
+### PSFH #118
+
+Decision packet:
+`coordination/PSFH_LEAVE_A_MARK_DECISION_PACKET_20260918.md`
+commit `9081853ca4a194f977ec2f00b58e8bb182a184d7`.
+
+Current technical result remains:
+`Remark42 + small PSFH adapter + restore guard = technically plausible`.
+
+Fresh security correction:
+- checked email-sanitization fix `3e18681...` is an ancestor of Remark42 v1.16.4;
+- checked trusted-proxy/rate-limit fixes `b150280...` / `e62b3c8...` are ancestors of v1.16.4;
+- therefore advisory publication dates after the release do **not** imply the pinned release lacked those fixes.
+
+Framework recommended, **not adopted**:
+- public marks may persist while the register purpose remains, subject to correction/removal;
+- owner-default bounded automatic backups (max 10 daily) are a plausible v0 candidate;
+- no routine manual/off-host guest-data copies;
+- text-free removal receipt retained only across the backup-resurrection window + verification;
+- quiesce -> restore -> replay removals -> verify -> reopen;
+- no analytics/tracking.
+
+Still explicit human/controller/legal gates:
+retention adoption, operator/controller, lawful basis, privacy wording, production host/proxy/log topology.
+
+`PUBLIC INTAKE = NOT YET EARNED`.
+
+### Mechanical Ethics #47
+
+Cold-reader test remains READY but no uncontaminated Condition-B result exists.
+Codex correctly returned `EXPOSURE_CONTAMINATED`.
+This Framework aperture is also exposed.
+No v0.7.0 wording change is earned.
+
+### New hard field witnesses
+
+Thirlwall:
+`field/THIRLWALL_SAFEGUARDING_ESCALATION_20260918.md`
+commit `f6b897d4032537454736add80071e9c0f3308a31`.
+
+Field relation:
+`FINAL / GUILT ADJUDICATION THRESHOLD != PROTECTIVE SAFEGUARDING ACTION THRESHOLD`.
+Domain owner convergence is strong; no new TRACE/ME rule.
+
+ORR signalling-power:
+`field/ORR_SIGNALLING_POWER_OVERSIGHT_WATCH_20260918.md`
+commit `b391c8a938a320ed07e0c960dac4202245805696`.
+
+Field relation:
+`INCIDENT REVIEWED != CROSS-DISCIPLINE SYSTEMIC GAP CLOSED != RECURRENCE RISK CLOSED`.
+ORR owns the assurance requirement; bounded public search did not find the September assurance return, which is **not** evidence of owner failure.
+Implementation watch only.
+
+```text
+FIELD EVIDENCE != NOVELTY
+OWNER FOUND -> ABSORB / WATCH / STOP
+HUMAN GATE != ENGINEERING GAP
+FRESH READER REQUIRED != USE AVAILABLE CONTAMINATED READER
+```
+
 ## PSFH #118 Remark42 restore/custody delta — 18 September 2026 late
 
 - prior backup probe proved current delete != backup erasure;
