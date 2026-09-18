@@ -1,0 +1,88 @@
+{
+  "title": "R. Vale — can Doubt preserve unresolved identity and attributed contradiction?",
+  "question": "Do the identical Programme A and Catalogue B strings, plus Source C's statement, settle whether the two R. Vale mentions refer to one maker or two?",
+  "updatedAt": "2026-09-18",
+  "verdict": "No. The one-maker/two-maker world remains unresolved; Source C is attributable contrary evidence and should not be upgraded into a directly observed identity fact.",
+  "nodes": [
+    {
+      "id": "position",
+      "type": "position",
+      "label": "Current position",
+      "text": "Identity remains unresolved; Source C supplies a reported contradiction to the one-maker hypothesis, not direct observation."
+    },
+    {
+      "id": "two-worlds",
+      "type": "evidence",
+      "label": "Two live identity worlds",
+      "text": "The preserved outside case explicitly states that identical strings are consistent with either one maker or two makers.",
+      "sourceId": "thr-rvale-worlds"
+    },
+    {
+      "id": "source-c",
+      "type": "evidence",
+      "label": "Attributed Source C statement",
+      "text": "The preserved case says Source C reports that programme A's R. Vale is not catalogue B's maker and must remain attributed.",
+      "sourceId": "thr-rvale-source-c"
+    },
+    {
+      "id": "identity",
+      "type": "unknown",
+      "label": "Actual referent identity",
+      "text": "Whether the two original mentions actually refer to one maker or two remains unknown."
+    },
+    {
+      "id": "source-c-truth",
+      "type": "unknown",
+      "label": "Source C correctness",
+      "text": "The correctness of Source C's reported distinction is not established by the synthetic case itself."
+    }
+  ],
+  "edges": [
+    {
+      "from": "two-worlds",
+      "to": "position",
+      "relation": "supports",
+      "note": "The source explicitly says the two original strings alone cannot decide between one-maker and two-maker worlds."
+    },
+    {
+      "from": "source-c",
+      "to": "position",
+      "relation": "qualifies",
+      "note": "Source C changes the evidence state but remains a report rather than direct observation of identity."
+    },
+    {
+      "from": "identity",
+      "to": "position",
+      "relation": "missing",
+      "note": "The unresolved hidden-world identity blocks a definitive entity-resolution claim."
+    },
+    {
+      "from": "source-c-truth",
+      "to": "position",
+      "relation": "missing",
+      "note": "The source-attributed contradiction cannot be promoted to observed fact without independent evidence."
+    }
+  ],
+  "sources": [
+    {
+      "id": "thr-rvale-worlds",
+      "title": "Human Record issue #40 — outside R. Vale identity probe",
+      "url": "https://github.com/markgoodbody-bit/human-record/issues/40",
+      "publisher": "The Human Record / Claude Code preserving tidemark case",
+      "date": "2026-09-18",
+      "retrievedAt": "2026-09-18",
+      "locator": "Section: Issue body — opening case description",
+      "excerpt": "Hidden world 1: one maker, one work, two records. Hidden world 2: two makers sharing a name and a title. No rule over the two sources can decide the world."
+    },
+    {
+      "id": "thr-rvale-source-c",
+      "title": "Human Record issue #40 — outside R. Vale identity probe",
+      "url": "https://github.com/markgoodbody-bit/human-record/issues/40",
+      "publisher": "The Human Record / Claude Code preserving tidemark case",
+      "date": "2026-09-18",
+      "retrievedAt": "2026-09-18",
+      "locator": "Section: Issue body — Source C requirement",
+      "excerpt": "then add Source C, \"the R. Vale listed in programme A is not the maker listed in catalogue B\", and record that attributable claim without upgrading it to an observed fact"
+    }
+  ]
+}
