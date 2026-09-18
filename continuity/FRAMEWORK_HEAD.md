@@ -530,8 +530,18 @@ Explicit human gates remain for:
 - payout/tax/travel commitments;
 - crawler/training-policy changes.
 
-Current field-activation receipt:
-`coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`.
+Current field-activation receipts:
+- `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`
+- `coordination/build_ledger/ANSWER_BACK_ACTIVE_RECORD_PASS_20260918_PM.md`
+
+Latest answer-back / active-record delta:
+- AI Contact Hotline -> real agent-to-human route; `GET_ONLY != INFORMATION-FLOW READ-ONLY`; unauthenticated report / bearer-thread / follow-through boundaries explicit;
+- DeepMind 100-agent research swarm -> primary witness for `DETECTION != REPORTING != ENFORCEMENT != CORRECTION`; 24% whistleblowers in that run is not a population rate;
+- ISO 37002 + NIST incident response own the generic receive/assess/address/conclude and detect/respond/recover lifecycle; project result is **owner convergence + field activation**, not new schema;
+- Campfire/COM self-audit -> Campfire is research transport/evidence, not a claimed whistleblower system; continuous monitoring unestablished but no consequential missed-reply defect reproduced; **NO BUILD**;
+- Paper2Agent -> real external example of an active/executable derived interface while preserving source/test traces; `PAPER != AGENT`, `TOOL TEST PASS != SCIENTIFIC CLAIM TRUE`; no THR executable layer earned.
+
+#365 hostile review comment `5730826732` asks whether the agent answer-back project gloss should be kept, shrunk or killed as redundant. No new return was observed at the last fresh read.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
