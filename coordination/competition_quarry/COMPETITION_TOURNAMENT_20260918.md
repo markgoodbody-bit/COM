@@ -74,213 +74,69 @@ NO REGISTRATION YET
 NO CLAIM OF NOVEL BENCHMARK
 ```
 
-## 3. RevenueCat Shipaton — HIGH UPSIDE / URGENT CONDITIONAL GATE
+## 3. RevenueCat Shipaton — STOP / 2026 STORE PATH NOT VIABLE
 
-Deadline: 30 Sep 2026 11:45 PM PDT.
-Owner:
-https://www.shipaton.com/
-https://revenuecat-shipaton-2026.devpost.com/
+Deadline: 30 Sep 2026.
 
-Relevant category:
-**RevenueCat Peace Prize**.
+A bounded PSFH mobile spike was built on draft PR #374 and passed Expo/TypeScript/config CI. The small local-first app concept was technically viable.
 
-Cash:
-- 1st: $20,000
-- 2nd: $10,000
-- 3rd: $5,000
+Mark then confirmed he has **no existing Apple / Google Play / Samsung developer-store infrastructure**.
 
-Peace Prize criteria:
-- impact;
-- feasibility.
+Current store constraints make the 2026 competition route disproportionate:
+- a new Google Play personal account cannot credibly reach production in time because of the mandatory pre-production testing path;
+- fresh Apple enrollment adds identity/payment/store uncertainty inside the organiser's already-recommended review buffer;
+- Shipaton requires a live public store listing and a RevenueCat-powered purchase path.
 
-Eligibility/product requirements:
-- new iOS/iPadOS/macOS/Android app whose first public store release is during the Shipaton window;
-- fully published in Apple App Store, Google Play or Samsung Galaxy Store before deadline;
-- RevenueCat SDK must power at least one purchase;
-- judges need a free trial or promo code to unlock the purchase;
-- demo video <= 2 min;
-- app icon/screenshot requirements.
+SHIPATON 2026 = STOP
+CODE FAILURE = NO
+STORE / ACCOUNT BOTTLENECK = YES
+PR #374 = PRESERVE REUSABLE MOBILE SPIKE / CLOSE UNMERGED
+DO NOT TURN PSFH INTO A STORE-ENROLLMENT RACE
 
-Important owner FAQ:
-a project that previously existed only as a web app may qualify as a new app-store version.
+The mobile concept may be revisited later on its own merits.
 
-### Candidate: Please Start From Here mobile front door
-
-Possible product:
-a privacy-first, local-first orientation app that helps a person facing a difficult/overwhelming situation:
-- state what is happening;
-- separate known / reported / unknown;
-- name what matters now;
-- see what is reachable;
-- identify what is hardening with time;
-- choose one small next action;
-- keep a private witness note;
-- optionally enter PSFH rooms / human works / THR records.
-
-No moral score. No diagnostic/medical claim. No account required.
-
-The existing PSFH web project can remain the public gift. Competition app could keep all core functionality free and use a genuinely optional digital supporter/cosmetic purchase to satisfy RevenueCat without paywalling the gift.
-
-### Critical feasibility gate
-
-This route is **time-critical** and may die on store infrastructure rather than code.
-
-Before committing a build, establish:
-- whether Mark already has a usable Apple / Google Play / Samsung seller/developer account;
-- exact store review/testing lead time for that account;
-- acceptable purchase shape and store policy;
-- any developer/account fee;
-- whether the voluntary-purchase model is ethically acceptable for PSFH.
-
-Those are human/account/spend/terms gates.
-
-Current disposition:
-```text
-HIGH UPSIDE
-REAL PEACE-PRIZE FIT
-URGENT FEASIBILITY GATE
-DO NOT SILENTLY TURN PSFH INTO MONETISATION
-NO ACCOUNT / STORE / TERMS / SPEND ACTION WITHOUT MARK
-```
-
-If store publication cannot be credibly achieved in time, kill immediately.
-
-## 4. Open Agent Hackathon 2026 — RETAIN / STRONG PRODUCT BUILD ROUTE
+## 4. Open Agent Hackathon 2026 — HOLD / NO EARNED PRODUCT YET
 
 Dates: 15–20 Oct 2026, online.
-Registration closes: 13 Oct UTC on the current organiser page.
 Owner:
 https://hackathon.genai.works/
 
-Current organiser FAQ says public hackathons are open worldwide to developers, researchers and builders.
-A current NCSA partner announcement advertises a **$20,000 prize pool**.
+The earlier candidate was EvidenceBridge.
 
-Brief:
-**Build an agent that does real work.**
+A bounded deterministic EvidenceBridge proof was built and passed CI, then deliberately owner-subtracted. Current strong owners — especially Doubt, plus source-lineage / provenance tools — already cover the generic object:
 
-This is a stronger natural fit than converting ATRS into an agent.
+CLAIM + SOURCES -> SOURCE-GROUNDED EVIDENCE MAP -> SUPPORT / CONTRADICTION / UNKNOWNS -> INSPECTABLE TRACE
 
-### Candidate: EvidenceBridge
+The project then encoded four THR pressure cases in **unmodified Doubt v0.8.0**:
+- flak source dependence;
+- Hannibal translation / attribution;
+- R. Vale unresolved identity;
+- unseen sieve/riddle transmission case.
 
-A real working research/public-interest agent:
+All four passed the pinned upstream contract. Current result: **OWNER SUFFICIENT WITH LOSS**. Dedicated THR machine semantics are richer, but no consequential product failure from that compression has been observed.
 
-Input:
-- claim/question;
-- source URLs/documents.
+EVIDENCEBRIDGE OPEN-AGENT ENTRY = NOT EARNED
+OPEN AGENT = RETAIN AS OPPORTUNITY / NO CURRENT OBJECT
+DO NOT REBUILD DOUBT UNDER A NEW NAME
 
-Agent work:
-- inspect sources;
-- extract propositions;
-- distinguish reported / observed / inferred / disputed / unknown;
-- identify source ancestry/dependence;
-- flag duplicate-source false corroboration;
-- preserve corrections;
-- expose exact evidence behind conclusions;
-- refuse to manufacture a living-person profile or unsupported relation.
+Reopen only when a real project need produces work that current owners cannot already perform.
 
-Output:
-- concise answer;
-- inspectable evidence graph/table;
-- correction/unknown state;
-- machine-readable export.
-
-This can be useful for:
-- researchers;
-- journalists;
-- public-interest investigators;
-- THR contributors;
-- policy/governance readers.
-
-It is not “TRACE as an app”.
-
-### Two-competition path
-
-If EvidenceBridge proves useful during Open Agent:
-
-```text
-OPEN AGENT (15–20 OCT)
--> BUILD CORE PRODUCT DURING EVENT
--> REAL USER / JUDGE BREAKAGE
--> REPAIR
--> THEN
-NEBIUS/NVIDIA (DEADLINE 30 OCT)
--> SIGNIFICANT NEMOTRON / NEBIUS UPDATE
--> SCALE / HOST / POLISH
--> OPTIONAL TAVILY DISCOVERY IF EARNED
-```
-
-Nebius explicitly allows existing projects that are significantly updated during its submission period, so this sequencing may be compatible; live rules for both must be re-read before any dual submission.
-
-Current disposition:
-```text
-RETAIN / STRONG
-BUILD ONLY IF PRODUCT IS USEFUL WITHOUT PRIZE
-NO REGISTRATION YET
-```
-
-## 5. Nebius x NVIDIA Global AI Hackathon — RETAIN / SERIOUS PRODUCT ROUTE
+## 5. Nebius x NVIDIA Global AI Hackathon — HOLD / HIGH UPSIDE, NO EARNED OBJECT
 
 Deadline: 30 Oct 2026, 10:00 PDT.
 Owner:
 https://nebiusglobalaihackathon.devpost.com/
 
-Cash:
-- grand: $20,000
-- 2nd: $10,000
-- 3rd: $6,000
-- Tavily bonus: $3,000
-- city awards: $500
-- other track prizes.
+Cash remains materially larger than the Apart routes, but prize size does not create a product gap.
 
-Requirements:
-- working application on Nebius Token Factory or Nebius AI Cloud;
-- at least one NVIDIA open-source model;
-- working hosted demo/test build;
-- <=3-minute public YouTube demo;
-- public open-source repository with an open-source licence;
-- existing project must have been significantly updated during the submission period.
+The previous EvidenceBridge/Nemotron path is now owner-subtracted and must not be revived by adding platform inference to an already-owned evidence-map object.
 
-Judging:
-- technological implementation;
-- design;
-- potential impact;
-- quality/creativity of idea.
+NEBIUS = RETAIN / HIGH UPSIDE
+EVIDENCEBRIDGE FOLLOW-ON = NOT EARNED
+NEMOTRON / TAVILY THEATRE = NO
+NEW OBJECT MUST BE USEFUL BEFORE PLATFORM FIT
 
-### Candidate product — evidence/claim answerability tool
-
-Only pursue if it becomes useful independently.
-
-Possible new clean open-source product:
-`EvidenceBridge` / working name.
-
-Input:
-- source URLs/documents + a claim/question.
-
-Output:
-- source-grounded claim/proposition table;
-- source ancestry/dependence;
-- reported vs observed/inferred state;
-- unknowns;
-- conflicting/corrected claims;
-- link from summary conclusions back to source evidence;
-- no living-person graph by momentum.
-
-Nebius/Nemotron could naturally do bounded extraction/reasoning; deterministic code would enforce evidence relationships and fail closed.
-
-Tavily could be used only if it materially improves source discovery/currentness, which could make the $3k bonus natural rather than decorative.
-
-This would be useful to THR/research/journalism even if it loses.
-
-Risk:
-7,000+ public participants. A shallow wrapper will not compete.
-
-Current disposition:
-```text
-RETAIN / HIGH UPSIDE
-PRODUCT MUST EARN IT
-NEW CLEAN OSS REPO IF BUILT
-NO NEMOTRON THEATRE
-```
+If a genuinely new product emerges from world/real-use work, re-check the live Nebius rules then.
 
 ## 6. Since AI 2026 — CONDITIONAL / HIGH LOAD
 
@@ -358,12 +214,13 @@ DO NOT REPACKAGE THR LANGUAGE
 
 ```text
 1. ATRS / Apart Epistemics = PRESERVE RESULT
-2. Hack Apertus = PREP NOW, RUN IN WINDOW
-3. Shipaton Peace Prize = URGENT FEASIBILITY GATE
-4. Open Agent = STRONG PRODUCT BUILD ROUTE
-5. Nebius/NVIDIA = FOLLOW-ON PRODUCT / HIGH UPSIDE
+2. Hack Apertus = PREP FROZEN / RUN IN WINDOW
+3. WORLD / REAL USE = FIND NEXT EARNED GAP
+4. Open Agent = HOLD / NO CURRENT PRODUCT
+5. Nebius/NVIDIA = HOLD / NO CURRENT PRODUCT
 6. Since AI = WATCH CHALLENGES / HUMAN LOAD
 7. Apart Collusion = HOLD UNTIL REAL DELTA
+8. Shipaton 2026 = STOP
 ```
 
 No competition registration, account creation, store submission, terms acceptance, travel booking, spend or external contact is authorised by this tournament record.
