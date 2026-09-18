@@ -1,8 +1,33 @@
 # Build status
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-18 PM — core reread / rail completion / world owner-subtraction pass  
+Updated: 2026-09-18 PM — token-allocation / repair / field / opportunity pass  
 Later live source and direct human direction win.
+
+## TOKEN ALLOCATION / PROCEED delta — 18 September 2026 PM
+
+Detailed receipt: coordination/build_ledger/FRAMEWORK_TOKEN_ALLOCATION_PROCEED_20260918_PM.md
+
+- Competition false-active surface reduced: #350/#351/#352/#353/#361/#362 closed unmerged with evidence/branches preserved.
+- #362 received a fresh hostile review and was killed as an empirical pilot: fixture-authored states + deterministic consequence mapping did not establish a real policy-compiler failure; owner coverage is strong.
+- #363 fallback repaired at exact head 45105b2775c5e99c65db264a1c9285b5f7edcd1f; workflow 35383752912 SUCCESS. It remains fallback-only and unmerged by momentum.
+- #364 ATRS remains current competition lead; fresh November result surface remains uncomputed.
+- Bradford LGSCO 25 023 288 now supplies one generic correction-implementation witness for #99; downstream consequence-review failure remains unestablished; AI-specific delta = no.
+- Rail + Bradford cross-domain note shows one thin existing relation can carry both: correction/new state exists != correction reached every consequential target. Portability witness only; no new TRACE primitive/ME doctrine.
+- THR record-5 quarry II tested ELIZA, 1860 phonautogram, Kilroy and BBC Domesday; stronger owners found for all four; record 5 remains unearned.
+- Hack Apertus pre-event prep now has a 1 Oct rules/rights/pre-existing-work start gate. No model result, registration or terms acceptance consumed.
+- Resource lane re-read: no current paid-compute blocker and no application earned today.
+
+Current centre:
+TRACE/ME = stable released baselines / real-use pressure
+THR = 4 records / record 5 not earned
+ATRS #364 = lead / preserve November result
+Hack Apertus = prep only / start gate 1 Oct
+#363 = green fallback only
+WORLD / REAL USE = active / owner subtraction first
+
+PURPOSE > INSTRUMENT
+OWNER FOUND / NO DELTA / NOT OUR GAP / STOP = VALID
 
 ## CORE REREAD + PROCEED delta — 18 September 2026 PM
 
