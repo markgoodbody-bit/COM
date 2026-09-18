@@ -358,3 +358,65 @@ ADVERTISED VALUE != LIQUID CASH
 NO PRIZE-SHAPED PRODUCT PIVOT
 STOP / LOW PRIORITY
 ```
+
+
+## 17. Hack-Nation 7th Global AI Hackathon — URGENT APPLICATION GATE
+
+Official:
+- https://hack-nation.ai/hackathon
+- https://luma.com/z3za7zow
+
+Current public state:
+- 3–4 Oct 2026;
+- hybrid / online + global hubs including London and Cambridge;
+- application-based;
+- current official page reports $35k+ in cash & credits;
+- Luma reports ~$30k+ across approximately 6–8 AI challenges plus $200k+ tools/credits;
+- no idea/team required before the event;
+- challenge tracks are provided at kickoff;
+- current application schedule shows the next batch deadline **19 Sep 2026**, with a later final batch deadline 26 Sep.
+
+This is a good route precisely because it does **not** require prize-shaped prebuilding.
+
+Correct posture:
+- apply as a technical builder;
+- do not present Amazon / TRACE / THR as the hackathon idea before the brief;
+- at kickoff, owner-subtract the actual challenge and build the smallest strong product in 24h;
+- preserve existing failure/reconciliation patterns as reusable engineering, not a preselected solution.
+
+Disposition:
+
+```text
+APPLY URGENTLY THROUGH HUMAN GATE
+NO TRACK-SPECIFIC BUILD BEFORE KICKOFF
+ONLINE PARTICIPATION AVAILABLE
+```
+
+## 18. VAST Real-Time Video Agents Hack — STRONG LONDON HARDWARE PRIZE / HUMAN GATE
+
+Official:
+- https://luma.com/vastlondon
+
+Current public state:
+- London, 17 Oct 2026;
+- application required;
+- registration closes 9 Oct;
+- supplied stack includes NVIDIA Cosmos video understanding, semantic search, YOLO, VAST data layer and CoreWeave-hosted model infrastructure;
+- 1st prize: NVIDIA DGX Spark;
+- additional Hugging Face / Cursor / cash-gift-card prizes;
+- projects are built against organizer-provided videos / stack on the day.
+
+Possible project-facing strengths:
+- evidence / provenance / carrier integrity;
+- visual state change and verification;
+- multimodal exception handling.
+
+Do **not** preselect a THR/provenance product merely because video tooling exists. Wait for supplied data/problem and strongest owner.
+
+Disposition:
+
+```text
+STRONG HARDWARE PRIZE
+APPLY THROUGH HUMAN GATE
+DAY-OF BUILD / NO PREBAKED THR PITCH
+```
