@@ -15,8 +15,8 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records; issue #31 open public review; PR30 draft at `7618bc0...` with observation-target semantics unresolved; bounded outreach authorised. |nnibal candidates remain draft; no public record 4. |
-| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Researcher Access HOLD; ARIA seam only. |
+| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records; issue #31 open public review; PR30 draft at `7618bc0...` with observation-target semantics unresolved; bounded outreach authorised. |
+| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / FRESH-CORPUS ROUTE-RELATION QUESTION / NOT RESULT** | Current exact head `7b7b1fd8...`; hosted CI `35277771413` green. Reader-use pilot is secondary and human-run gated. `LAYER_NOT_STATED` is valid; no whole-record score or causal version claim. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
@@ -26,7 +26,7 @@ PURPOSE > INSTRUMENT
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **STABLE PUBLIC BASELINE** | `15b9929f...`; three public records unchanged. |nchanged. |
+| THR main | **STABLE PUBLIC BASELINE** | `15b9929f...`; three public records unchanged. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
