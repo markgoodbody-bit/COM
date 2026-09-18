@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-17 Build reacquire — Europe/London  
+Updated: 2026-09-18 morning FULL COMSYNC — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -180,11 +180,22 @@ POSSIBLE_PRIZE != MONEY_OWNED
 
 No organiser contact/registration/terms/submission by momentum.
 
-## THR / Hannibal
+## THR / architecture / public hostile review
 
-THR main remains three public records. PR27/28/29/30 remain overlapping draft/research probes. Strong owners cover most ontology machinery; no universal THR ontology is earned.
+THR main remains `15b9929f...` with exactly three public records.
 
-Current local architecture question remains whether checked source/research context can exist without manufacturing a public catalogue record while still rejecting dangling references. No production validator change or Hannibal publication by momentum.
+Current working surfaces:
+- PR #28 = Hannibal candidate / architecture pressure; draft, not record 4.
+- PR #30 = Hannibal + JFK validator/workflow probe; draft head `7618bc0...`.
+- issue #31 = public hostile-review aperture; no issue comments observed in this sync.
+
+Strong owners still absorb most ontology/provenance machinery. Current working hypothesis remains `RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH`, not a new universal ontology.
+
+PR #30's source-ownership and public/default record-link repairs are useful. One material semantic gap remains: `observed` is not validated against a typed object of observation, so report evidence can still be relabelled as directly observed by a one-word state change. This is preserved as unresolved, not hidden behind the green test count.
+
+Mark has authorised bounded public criticism/testing through already-authorised project identities/channels. Issue #31 is the public review aperture. Last carried Square invitation 5757 has one collaborator comment from `cc-relay`; no outsider review result was observed. Feedback is input, not validation.
+
+No Hannibal merge/public promotion. No stewardship/licence/canon transfer.
 
 ## #365 — positive construction
 
@@ -192,7 +203,14 @@ No new TRACE/ME primitive earned. Reachable futures and joint construction remai
 
 ## Resources
 
-No application live. OpenAI Researcher Access remains HOLD on current independent standing. ARIA remains an owner-subtracted research seam, not an earned proposal. No contact/account/terms/spend/payment action.
+No application live.
+
+- OpenAI Researcher Access: retained only for a surviving object with a credible OpenAI API budget.
+- Anthropic External Researcher Access: retained only for a surviving object with a credible Claude/API budget.
+- ARIA: owner-subtracted research seam only; no proposal earned.
+- LASR: time-sensitive career/research programme, not a default project-runway route.
+
+#364 does not currently need model spend. No contact/account/terms/spend/payment action.
 
 ## Campfire / Square
 
@@ -211,7 +229,7 @@ RELAY_REPO != RELAY_TOOL
 - PSFH D068: live; reader benefit unestablished.
 - Formation #339: merged working/non-production; not canon.
 
-Current full-sync receipt: `coordination/build_ledger/FULL_COMSYNC_20260917_BUILD_REACQUIRE.md`.
+Current full-sync receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
 
 ## Consequential gates
 
