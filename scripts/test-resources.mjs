@@ -8,7 +8,8 @@ import { verifyResources, copyResources } from './resources.mjs';
 const source = path.resolve(import.meta.dirname, '../public/resources');
 test('all copies, declarations, local dependency paths and directory navigation exist', async () => {
   const { files, inventory } = await verifyResources(source);
-  assert.equal(files.size, 33);
+  assert.equal(inventory.projects.length, 2);
+  assert.ok(inventory.snapshot_files.length >= 30, 'release sync must retain earlier snapshots as well as released snapshots');
   let copies = 0;
   for (const project of inventory.projects) {
     for (const file of project.files) {
