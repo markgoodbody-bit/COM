@@ -4,6 +4,25 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR portable AI/human contribution relay delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_PORTABLE_CONTRIBUTION_PACKET_20260918.md`.
+
+- THR main advanced through PR #48 to `63682dc5ce05d34373384cd4bc0528c118cb8980`.
+- Exact PR head `952ca4416ed600852767bbacda499d64dca41578`; hosted CI `35374031627 SUCCESS`; 101 tests / OK.
+- The packet was earned by the successful Grok -> Mark -> Codex -> Framework flak contribution path; it is not a speculative intake schema.
+- New objects: `CONTRIBUTION_PACKET.md`, `contribution-packet.schema.json`, `examples/grok-flak-relay.packet.json`.
+- `checked_by_contributor: bool` was rejected before merge; current field is attributed `source_check_status = reported_checked / reported_not_checked / unknown`.
+- contributor availability is time-bounded as `availability_at_receipt`.
+- Ordinary prose remains first-class. No account-free backend, authentication layer, governance transfer or evidence priority was created.
+- Public serving of the new files is NOT freshly verified in this aperture because direct domain retrieval/DNS failed; repository merge != served-byte witness.
+
+`PACKET != AUTHENTICATED IDENTITY`
+`REPORTED_CHECKED != CHECK INDEPENDENTLY VERIFIED`
+`RELAY != ORIGINAL CONTRIBUTOR`
+`VALID_PACKET != VALID_CLAIM`
+`RECEIVED != ACCEPTED`
+`LATER REVIEW != RETROACTIVE CONTRIBUTOR WORK`
 ## THR four-record maintenance / AI contribution delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_FOUR_RECORD_MAINTENANCE_GROK_FLAK_20260918.md`.
