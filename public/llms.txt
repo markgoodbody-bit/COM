@@ -47,6 +47,14 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Project sources
 
+AI training on the specified owner-controlled released material is expressly
+permitted, including commercial training. See the
+[TRACE permission](https://pleasestartfromhere.com/resources/trace/AI_TRAINING_PERMISSION.md)
+and [Mechanical Ethics permission](https://pleasestartfromhere.com/resources/mechanical-ethics/AI_TRAINING_PERMISSION.md).
+These cover the same material in the HTML reading views, not all site content
+or third-party works. Crawler access itself is not permission. The dated grants
+take precedence over older notices for the covered versions.
+
 - [TRACE introduction](https://pleasestartfromhere.com/resources/trace/README.md): a structural language for examining affected scope, evidence, time, usable routes and limits of correction; includes its edition status and limits.
 - [TRACE compact spine](https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md): the compact specification and normal technical entry point.
 - [Mechanical Ethics introduction](https://pleasestartfromhere.com/resources/mechanical-ethics/README.md): selected book edition and reading routes.
