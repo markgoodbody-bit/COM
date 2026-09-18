@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""No Free QALY v0: tiny executable stress-test for decision-improvement metrics.
+"""No Free QALY: bounded teaching appendix for decision-improvement comparability.
 
-This is not a universal decision-quality score. It deliberately demonstrates
-where plausible existing metric families disagree, become undefined, or depend
-on an explicit value/risk contract.
+This is not a universal decision-quality score and not a benchmark contribution.
+The executable example illustrates an existing decision-analysis result: even
+under one declared CARA utility family, different value-of-information measures
+need not preserve one ordering across decision problems.
+
+Identifier order is never treated as scientific preference. Ties are preserved.
 """
 
 from __future__ import annotations
@@ -11,42 +14,15 @@ from __future__ import annotations
 import argparse
 import json
 import math
+from itertools import combinations
 from pathlib import Path
 from typing import Any
+
+DEFAULT_TOLERANCE = 1e-12
 
 
 def load_cases(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
-
-
-def _expected_policy_value(case: dict[str, Any], policy: dict[str, Any], utility: dict[str, Any]) -> float:
-    total = 0.0
-    for state, p_state in case["states"].items():
-        for action, p_action in policy[state].items():
-            total += p_state * p_action * utility[state][action]
-    return total
-
-
-def _accuracy(case: dict[str, Any], policy: dict[str, Any]) -> float:
-    correct = case.get("correct_action")
-    if correct is None:
-        raise ValueError("accuracy undefined: no objective correct_action contract")
-    return sum(case["states"][s] * policy[s][a] for s, a in correct.items())
-
-
-def objective_case_metrics(case: dict[str, Any]) -> dict[str, float]:
-    b_acc = _accuracy(case, case["baseline"])
-    i_acc = _accuracy(case, case["intervention"])
-    b_u = _expected_policy_value(case, case["baseline"], case["utility"])
-    i_u = _expected_policy_value(case, case["intervention"], case["utility"])
-    return {
-        "baseline_accuracy": b_acc,
-        "intervention_accuracy": i_acc,
-        "accuracy_gain": i_acc - b_acc,
-        "baseline_expected_utility": b_u,
-        "intervention_expected_utility": i_u,
-        "expected_utility_gain": i_u - b_u,
-    }
 
 
 def cara_utility(x: float, risk_tolerance: float) -> float:
@@ -74,56 +50,87 @@ def monetary_case_metrics(case: dict[str, Any]) -> dict[str, float]:
     }
 
 
-def preference_case_metrics(case: dict[str, Any]) -> dict[str, Any]:
-    out: dict[str, Any] = {"accuracy": "UNDEFINED_NO_OBJECTIVE_CORRECT_ACTION", "stakeholders": {}}
-    for stakeholder, utility in case["stakeholder_utilities"].items():
-        baseline = _expected_policy_value(case, case["baseline"], utility)
-        interventions = {
-            name: _expected_policy_value(case, policy, utility)
-            for name, policy in case["interventions"].items()
-        }
-        gains = {name: value - baseline for name, value in interventions.items()}
-        ranking = sorted(gains, key=lambda name: (-gains[name], name))
-        out["stakeholders"][stakeholder] = {
-            "baseline_expected_utility": baseline,
-            "intervention_gains": gains,
-            "ranking": ranking,
-        }
+def _cmp(a: float, b: float, tolerance: float = DEFAULT_TOLERANCE) -> int:
+    if a > b + tolerance:
+        return 1
+    if b > a + tolerance:
+        return -1
+    return 0
+
+
+def pairwise_metric_relations(
+    rows: dict[str, dict[str, float]],
+    metric: str,
+    tolerance: float = DEFAULT_TOLERANCE,
+) -> dict[str, int]:
+    out: dict[str, int] = {}
+    for left, right in combinations(sorted(rows), 2):
+        out[f"{left}::{right}"] = _cmp(rows[left][metric], rows[right][metric], tolerance)
     return out
 
 
-def _rank(rows: dict[str, dict[str, float]], metric: str) -> list[str]:
-    return sorted(rows, key=lambda k: (-rows[k][metric], k))
+def compare_metric_orderings(
+    rows: dict[str, dict[str, float]],
+    metric_a: str,
+    metric_b: str,
+    tolerance: float = DEFAULT_TOLERANCE,
+) -> dict[str, Any]:
+    a = pairwise_metric_relations(rows, metric_a, tolerance)
+    b = pairwise_metric_relations(rows, metric_b, tolerance)
+    strict_reversals = [pair for pair in a if a[pair] * b[pair] < 0]
+    resolution_differences = [
+        pair for pair in a if (a[pair] == 0) != (b[pair] == 0)
+    ]
+    return {
+        "metric_a": metric_a,
+        "metric_b": metric_b,
+        "tolerance": tolerance,
+        "metric_a_pairwise": a,
+        "metric_b_pairwise": b,
+        "strict_reversal_pairs": strict_reversals,
+        "tie_vs_order_pairs": resolution_differences,
+        "strict_rank_reversal": bool(strict_reversals),
+        "same_pairwise_order": a == b,
+    }
+
+
+def display_ranking(
+    rows: dict[str, dict[str, float]],
+    metric: str,
+    tolerance: float = DEFAULT_TOLERANCE,
+) -> list[list[str]]:
+    """Return rank groups. IDs inside a tie group are display order only."""
+    ordered = sorted(rows, key=lambda k: (-rows[k][metric], k))
+    groups: list[list[str]] = []
+    for item in ordered:
+        if not groups:
+            groups.append([item])
+            continue
+        representative = groups[-1][0]
+        if _cmp(rows[item][metric], rows[representative][metric], tolerance) == 0:
+            groups[-1].append(item)
+        else:
+            groups.append([item])
+    return groups
 
 
 def build_report(cases: dict[str, Any]) -> dict[str, Any]:
-    objective = {case["id"]: objective_case_metrics(case) for case in cases["objective_cases"]}
     monetary = {case["id"]: monetary_case_metrics(case) for case in cases["monetary_cases"]}
-    preference = preference_case_metrics(cases["preference_case"])
-
-    objective_rankings = {
-        "accuracy_gain": _rank(objective, "accuracy_gain"),
-        "expected_utility_gain": _rank(objective, "expected_utility_gain"),
-    }
-    monetary_rankings = {
-        "expected_utility_increase": _rank(monetary, "expected_utility_increase"),
-        "certainty_equivalent_gain": _rank(monetary, "certainty_equivalent_gain"),
-    }
-
-    stakeholder_rankings = {
-        s: row["ranking"] for s, row in preference["stakeholders"].items()
-    }
+    comparison = compare_metric_orderings(
+        monetary,
+        "expected_utility_increase",
+        "certainty_equivalent_gain",
+    )
 
     return {
-        "status": "SYNTHETIC_STRESS_TEST_NOT_UNIVERSAL_METRIC",
-        "objective_cases": objective,
-        "objective_rankings": objective_rankings,
-        "objective_rank_reversal": objective_rankings["accuracy_gain"] != objective_rankings["expected_utility_gain"],
+        "status": "TEACHING_APPENDIX_OWNER_THEORY_NOT_BENCHMARK",
         "monetary_cases": monetary,
-        "monetary_rankings": monetary_rankings,
-        "monetary_rank_reversal": monetary_rankings["expected_utility_increase"] != monetary_rankings["certainty_equivalent_gain"],
-        "preference_sensitive_case": preference,
-        "stakeholder_rank_reversal": len({tuple(v) for v in stakeholder_rankings.values()}) > 1,
+        "monetary_rank_groups": {
+            "expected_utility_increase": display_ranking(monetary, "expected_utility_increase"),
+            "certainty_equivalent_gain": display_ranking(monetary, "certainty_equivalent_gain"),
+        },
+        "monetary_order_comparison": comparison,
+        "monetary_rank_reversal": comparison["strict_rank_reversal"],
         "minimum_measurement_contract": [
             "decision_owner_or_affected_scope",
             "alternatives",
@@ -137,11 +144,11 @@ def build_report(cases: dict[str, Any]) -> dict[str, Any]:
             "correction_or_irreversibility_handling_when_material",
         ],
         "ceilings": [
-            "ONE_NUMBER != COMPARABILITY",
-            "METRIC_RANKING != VALUE_NEUTRALITY",
-            "SYNTHETIC_COUNTEREXAMPLE != EMPIRICAL_PREVALENCE",
-            "PROCESS_QUALITY != OUTCOME_LUCK",
-            "UNDEFINED_METRIC != ZERO_IMPROVEMENT",
+            "OWNER_THEORY != OUR_NOVELTY",
+            "TEACHING_APPENDIX != BENCHMARK_CONTRIBUTION",
+            "TIE != STRICT_PREFERENCE",
+            "IDENTIFIER_ORDER != SCIENTIFIC_ORDER",
+            "REPORTING_CONTRACT != UNIVERSAL_SCORE",
         ],
     }
 
