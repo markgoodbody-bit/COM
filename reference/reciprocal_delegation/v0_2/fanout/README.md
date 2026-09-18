@@ -53,15 +53,18 @@ Current work-in-progress owners now include:
 - Attenuating Authorization Tokens for Agentic Delegation Chains — cryptographically narrowing delegation chains;
 - AI Agent Authorization Integration Framework / Agent Operation Authorization — OAuth-based agent authorization composition and operation-bound authorization;
 - Revocation Closure for Agentic Authorization Systems — protocol-neutral semantics for when revocation propagation may honestly be called complete, including authority graphs, consequential sinks, cut sets, pending effects, bounded closure states and closure receipts.
+- Execution Finality / Finality-Bound Revocation individual Internet-Drafts (10–16 September 2026) — candidate acts held non-effective until an effectuation/finality sink verifies act-specific authority/current protected state; finality-bound revocation makes authoritative revocation, suspension, narrowing or superseding state load-bearing again at the protected commit boundary; related Execution Handle drafts bind a scoped non-bearer handle to an exact act/sink and use atomic verify/consume semantics.
 
-These are Internet-Drafts / work in progress, not deployed-system validation. They nevertheless occupy the runtime authorization/revocation semantics this companion deliberately leaves external.
+These are Internet-Drafts / work in progress. Several execution-finality documents are individual submissions rather than IETF Working Group products, and none of this constitutes adoption, deployment validation or endorsement. They nevertheless make the external owner landscape materially denser around runtime authorization, act-specific effectuation and revocation semantics that this companion deliberately leaves outside its scope.
 
 Accordingly:
 
 ```text
 RECORDED_REVOCATION != ENFORCED_REVOCATION
 REVOCATION_REQUEST != REVOCATION_CLOSURE
-RUNTIME_REVOCATION_CLOSURE -> OAUTH / IAM / CONTROL-PLANE OWNERS
+DECLARED_NO_TOUCH != FINALITY_PREDICATE_ENFORCED
+COMPUTED_ACT != AUTHORITY_FOR_EXTERNAL_EFFECT
+RUNTIME_REVOCATION / EFFECTUATION CONTROL -> OAUTH / IAM / POLICY / FINALITY-SINK OWNERS
 FANOUT_COMPANION -> PROJECT-LEVEL COORDINATION / CONSERVATION ONLY
 ```
 
