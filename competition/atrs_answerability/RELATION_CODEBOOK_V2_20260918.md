@@ -10,13 +10,24 @@ Owner boundary remains:
 - contestability literature owns sites/actors/lifecycle framing;
 - this project measures current public-record implementation.
 
-## 1. Primary unit
+## 1. Relation inventory and primary unit
 
-One primary row is one published proposition that states:
+First build a **bounded relation inventory** of explicit published route propositions. Preserve a proposition even when its target cannot be bound from the record.
+
+Then separate the primary confirmed-target table.
+
+One primary confirmed-target row is one published proposition that states:
 - a route/action by which a person or actor can review, challenge, correct, override, reconsider, complain/appeal, hand off, opt out, supply alternative evidence, obtain explanation, or self-correct in relation to a specific TOOL_OUTPUT or BROADER_OPERATIONAL_PROCESS outcome; or
 - an explicit source-supported proposition that no such route is relevant, with a stated reason.
 
+Explicit route propositions with `LAYER_NOT_STATED` or an `OTHER_STATED_TARGET` are retained in the relation inventory and reported separately. They are not counted as confirmed tool-output/broader-process routes.
+
 Keep actor/action/channel/target/form/status/evidence together.
+
+```text
+ROUTE_PROPOSITION_OBSERVED != PRIMARY_TARGET_CONFIRMED
+UNKNOWN_TARGET != DROP_THE_PROPOSITION
+```
 
 ## 2. Primary stopping rule
 
@@ -191,13 +202,12 @@ For future coding:
 - linked-site inspection, if later done, is a separate observation scope;
 - no domain/process knowledge may be used to fill target/channel/effect.
 
-## 14. Primary report shape
+## 14. Report shape
 
-A fresh corpus may describe:
-- public/affected routes to tool output;
-- public/affected routes to broader process;
+A fresh corpus should separate:
+- **confirmed-target primary rows**: public/affected routes to tool output and broader process;
+- **candidate/unknown-target inventory**: explicit route propositions with `LAYER_NOT_STATED` or `OTHER_STATED_TARGET` that cannot honestly enter confirmed target counts;
 - internal review separately;
-- route propositions with layer not stated;
 - explicit no-separate-route propositions with reason;
 - affected actors with no route stated in the record;
 - unexplained N/A fields;
