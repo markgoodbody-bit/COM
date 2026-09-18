@@ -15,9 +15,12 @@ export async function verifyResources(root) {
   const inventory = JSON.parse(raw);
   const expected = new Map();
   for (const project of inventory.projects) for (const file of project.files) {
-    for (const url of [file.current, file.snapshot]) {
-      if (!url.startsWith('/resources/')) throw new Error('Resource prefix mismatch');
-      expected.set(safe(url.slice('/resources/'.length)), file);
+    if (!file.current.startsWith('/resources/')) throw new Error('Resource prefix mismatch');
+    expected.set(safe(file.current.slice('/resources/'.length)), file);
+    if (file.snapshot) {
+      if (!file.snapshot.startsWith('/resources/')) throw new Error('Resource prefix mismatch');
+      const snapshotRule = file.snapshot_identity || file;
+      expected.set(safe(file.snapshot.slice('/resources/'.length)), snapshotRule);
     }
   }
   for (const file of [...inventory.generated_files, ...inventory.snapshot_files]) {
