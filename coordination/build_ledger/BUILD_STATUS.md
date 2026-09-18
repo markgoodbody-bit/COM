@@ -18,7 +18,7 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records; issue #31 open public review; PR30 draft at `7618bc0...` with observation-target semantics unresolved; bounded outreach authorised. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **CURRENT LEAD / FRESH-CORPUS ROUTE-RELATION QUESTION / NOT RESULT** | Current exact head `7b7b1fd8...`; hosted CI `35277771413` green. Reader-use pilot is secondary and human-run gated. `LAYER_NOT_STATED` is valid; no whole-record score or causal version claim. |
+| #364 ATRS | **CURRENT LEAD / RELATION CALIBRATION IN PROGRESS / NOT RESULT** | Exact head `e582b709...`; hosted CI `35324172751` green. Deterministic 16-case independent coding gate is frozen; Reader Lens remains secondary/human-run gated. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
 | COM #99 / social-care correction consequence | **FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD** | Normative owner chain substantially present; operational connection after post-use correction is not established from public sources. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
@@ -71,8 +71,8 @@ Nine scored cases use six position/condition-balanced schedules; the missing-fie
 The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
 
 ```text
-#364 current exact head = 7b7b1fd8a171a5414c315f585e715700cc0703f6
-current hosted CI = 35277771413 SUCCESS
+#364 current exact head = e582b709e025f2907bb850cb2b3c681101504aef
+current hosted CI = 35324172751 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -97,6 +97,23 @@ Do not relabel that older artifact as an exact-head witness.
 ```text
 GREEN_SOURCE_HEAD != EXACT_HEAD_ARTIFACT_WITNESS
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
+```
+
+## #364 — frozen relation calibration
+
+The current non-human decision gate is now frozen before any new result:
+- deterministic 16-record sample over frozen run 35257984573;
+- sample identity `c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54`;
+- independent first-pass requests to Codex + Claude Code;
+- pre-return adjudication rules frozen by Framework;
+- no outside process knowledge / live refetch / linked-site inspection allowed in first pass.
+
+No independent first-pass return had landed at the exact sync check carried here.
+
+```text
+IF CALIBRATION FAILS -> SHRINK/KILL BEFORE NOVEMBER
+CALIBRATION != POPULATION RESULT
+AGREEMENT != VALIDATION
 ```
 
 ## #364 — human-study gate remains closed
