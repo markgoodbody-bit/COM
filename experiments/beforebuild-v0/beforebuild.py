@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""BeforeBuild v0.2: deterministic pre-build owner-trial decision core.
+"""BeforeBuild v0.3: deterministic pre-build owner-trial decision core.
 
-This module does not discover owners, browse the web, decide novelty, or verify
-that a cited observation is true. It consumes an explicit evidence contract.
+The core does not discover owners, browse the web, decide novelty, or verify
+source truth. It consumes:
+- typed world evidence;
+- explicit hard cases;
+- candidate owner relevance;
+- machine/recorded trial results;
+- separately reviewed semantic/functional losses;
+- an optional bounded probe.
 
-v0.2 derives the two most dangerous decision inputs:
-- whether a current-world need is evidenced;
-- whether a relevant owner/candidate leaves hard cases uncovered.
-
-Owner trial execution can arrive through a machine receipt. The receipt may
-override only execution status and hard-case results; semantic-loss assessment
-remains explicit review evidence.
+Review losses are separated from trial failures so a fresh execution can change
+when the world or owner changes without erasing durable semantic review.
 """
 from __future__ import annotations
 
@@ -41,7 +42,7 @@ RECEIPT_FORMAT = "beforebuild-owner-receipts-v0.1"
 
 def load_cases(path: Path) -> dict[str, Any]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if data.get("format") != "beforebuild-calibration-v0.2":
+    if data.get("format") != "beforebuild-calibration-v0.3":
         raise ValueError("unexpected calibration format")
     if not isinstance(data.get("cases"), list) or not data["cases"]:
         raise ValueError("cases must be a non-empty list")
@@ -85,6 +86,13 @@ def validate_case(case: dict[str, Any]) -> None:
     for candidate in case["candidates"]:
         if candidate.get("relevance") not in RELEVANCE:
             raise ValueError(f"{case['id']}: invalid candidate relevance")
+        losses = candidate.get("review_losses")
+        if not isinstance(losses, list):
+            raise ValueError(f"{case['id']}: review_losses must be list")
+        for loss in losses:
+            if not isinstance(loss.get("consequential_failure_observed"), bool):
+                raise ValueError(f"{case['id']}: review loss consequential flag must be bool")
+
         trial = candidate.get("trial") or {}
         if not isinstance(trial.get("executed"), bool):
             raise ValueError(f"{case['id']}: candidate trial.executed must be bool")
@@ -96,12 +104,6 @@ def validate_case(case: dict[str, Any]) -> None:
             raise ValueError(f"{case['id']}: trial references unknown hard cases {sorted(unknown)}")
         if any(value not in HARD_RESULTS for value in results.values()):
             raise ValueError(f"{case['id']}: invalid hard-case result")
-        losses = trial.get("material_losses")
-        if not isinstance(losses, list):
-            raise ValueError(f"{case['id']}: material_losses must be list")
-        for loss in losses:
-            if not isinstance(loss.get("consequential_failure_observed"), bool):
-                raise ValueError(f"{case['id']}: loss consequential flag must be bool")
         if not isinstance(trial.get("semantic_cheating_observed"), bool):
             raise ValueError(f"{case['id']}: semantic_cheating_observed must be bool")
         if "receipt_source" in trial and (
@@ -118,19 +120,7 @@ def validate_case(case: dict[str, Any]) -> None:
 
 
 def apply_receipts(data: dict[str, Any], receipt_sets: list[dict[str, Any]]) -> dict[str, Any]:
-    """Overlay machine owner-execution receipts onto a case contract.
-
-    Receipts can only set:
-    - trial.executed
-    - trial.hard_case_results
-    - trial.receipt_source
-
-    They cannot alter:
-    - world evidence
-    - candidate relevance
-    - semantic/material loss assessment
-    - probe scope/kill conditions
-    """
+    """Overlay owner-execution receipts without altering review judgments."""
     out = copy.deepcopy(data)
     cases = {case["id"]: case for case in out["cases"]}
 
@@ -145,9 +135,7 @@ def apply_receipts(data: dict[str, Any], receipt_sets: list[dict[str, Any]]) -> 
             case = cases[case_id]
             candidates = {candidate["id"]: candidate for candidate in case["candidates"]}
             if candidate_id not in candidates:
-                raise ValueError(
-                    f"receipt references unknown candidate {candidate_id!r} in {case_id}"
-                )
+                raise ValueError(f"receipt references unknown candidate {candidate_id!r} in {case_id}")
 
             hard_ids = {row["id"] for row in case["hard_cases"]}
             results = receipt.get("hard_case_results")
@@ -188,7 +176,7 @@ def candidate_coverage(case: dict[str, Any], candidate: dict[str, Any]) -> dict[
     passed = [hid for hid in hard_ids if results.get(hid) == "PASS"]
     failed = [hid for hid in hard_ids if results.get(hid) == "FAIL"]
     not_tested = [hid for hid in hard_ids if results.get(hid, "NOT_TESTED") == "NOT_TESTED"]
-    losses = trial["material_losses"]
+    losses = candidate["review_losses"]
     consequential = [loss["id"] for loss in losses if loss["consequential_failure_observed"]]
 
     return {
@@ -206,8 +194,8 @@ def candidate_coverage(case: dict[str, Any], candidate: dict[str, Any]) -> dict[
             and not not_tested
             and not trial["semantic_cheating_observed"]
         ),
-        "material_loss_ids": [loss["id"] for loss in losses],
-        "consequential_loss_ids": consequential,
+        "review_loss_ids": [loss["id"] for loss in losses],
+        "consequential_review_loss_ids": consequential,
         "semantic_cheating_observed": trial["semantic_cheating_observed"],
     }
 
@@ -221,7 +209,7 @@ def decide(case: dict[str, Any]) -> dict[str, Any]:
         return {
             "case_id": case["id"],
             "verdict": "STOP",
-            "reason": "No qualifying current-world need evidence is present. Synthetic/conceptual structure alone cannot earn a custom build.",
+            "reason": "No qualifying current-world need evidence is present. Synthetic/conceptual structure alone cannot earn custom work.",
             "world_need": world,
             "candidate_coverage": coverage,
         }
@@ -230,22 +218,25 @@ def decide(case: dict[str, Any]) -> dict[str, Any]:
 
     full = [row for row in relevant if row["all_hard_cases_pass"]]
     if full:
-        clean = [row for row in full if not row["material_loss_ids"]]
+        clean = [row for row in full if not row["review_loss_ids"]]
         if clean:
             return {
                 "case_id": case["id"],
                 "verdict": "USE_OWNER",
-                "reason": f"Relevant candidate {clean[0]['candidate_id']} passes every declared hard case with no material loss recorded.",
+                "reason": f"Relevant candidate {clean[0]['candidate_id']} passes every declared hard case with no review loss recorded.",
                 "world_need": world,
                 "candidate_coverage": coverage,
             }
 
-        nonconsequential = [row for row in full if row["material_loss_ids"] and not row["consequential_loss_ids"]]
+        nonconsequential = [
+            row for row in full
+            if row["review_loss_ids"] and not row["consequential_review_loss_ids"]
+        ]
         if nonconsequential:
             return {
                 "case_id": case["id"],
                 "verdict": "INTEROPERATE",
-                "reason": f"Relevant candidate {nonconsequential[0]['candidate_id']} passes every hard case. Loss is visible, but no consequential use failure from that loss is observed.",
+                "reason": f"Relevant candidate {nonconsequential[0]['candidate_id']} passes every hard case. Review loss is visible, but no consequential use failure from that loss is observed.",
                 "world_need": world,
                 "candidate_coverage": coverage,
             }
@@ -253,7 +244,7 @@ def decide(case: dict[str, Any]) -> dict[str, Any]:
         return {
             "case_id": case["id"],
             "verdict": "SHRINK",
-            "reason": "A relevant candidate passes the current hard cases but a consequential loss is also observed. The hard-case contract is incomplete; add the lost consequence before choosing custom work.",
+            "reason": "A relevant candidate passes the current hard cases but a consequential review loss is also observed. The hard-case contract is incomplete; add the lost consequence before choosing custom work.",
             "world_need": world,
             "candidate_coverage": coverage,
         }
@@ -264,6 +255,19 @@ def decide(case: dict[str, Any]) -> dict[str, Any]:
             "case_id": case["id"],
             "verdict": "SHRINK",
             "reason": f"Relevant candidate {untested_relevant[0]['candidate_id']} has not been executed against the hard cases. Test it before custom work.",
+            "world_need": world,
+            "candidate_coverage": coverage,
+        }
+
+    partial_relevant = [
+        row for row in relevant
+        if row["executed"] and row["not_tested"] and not row["fail"]
+    ]
+    if partial_relevant:
+        return {
+            "case_id": case["id"],
+            "verdict": "SHRINK",
+            "reason": f"Relevant candidate {partial_relevant[0]['candidate_id']} was executed but material hard cases remain NOT_TESTED. Improve the trial before custom work.",
             "world_need": world,
             "candidate_coverage": coverage,
         }
@@ -294,7 +298,7 @@ def decide(case: dict[str, Any]) -> dict[str, Any]:
 def evaluate_all(data: dict[str, Any]) -> dict[str, Any]:
     rows = [decide(case) for case in data["cases"]]
     return {
-        "format": "beforebuild-report-v0.2",
+        "format": "beforebuild-report-v0.3",
         "claim_ceiling": "historical calibration only; typed evidence is not source verification; not prospective validation or novelty evidence",
         "results": rows,
         "summary": {verdict: sum(row["verdict"] == verdict for row in rows) for verdict in sorted(VERDICTS)},
