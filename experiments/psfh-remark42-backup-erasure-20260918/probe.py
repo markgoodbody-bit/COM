@@ -17,6 +17,7 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
+import uuid
 from pathlib import Path
 
 THREAD = "https://psfh.invalid/guestbook"
@@ -64,7 +65,8 @@ def main() -> int:
     parser.add_argument("--port", type=int, default=8083)
     args = parser.parse_args()
 
-    container = "psfh-remark42-backup-erasure"
+    # Cleanup is scoped to this invocation, never a shared fixed-name container.
+    container = f"psfh-remark42-backup-erasure-{uuid.uuid4().hex}"
     base = f"http://127.0.0.1:{args.port}"
     result = {
         "format": "psfh-remark42-backup-erasure-probe/0.1",
@@ -78,7 +80,6 @@ def main() -> int:
         "real_person_data": False,
     }
 
-    run(["docker", "rm", "-f", container], check=False)
     with tempfile.TemporaryDirectory(prefix="psfh-remark42-erasure-") as td:
         os.chmod(td, 0o777)
         try:
