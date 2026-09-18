@@ -1,3 +1,25 @@
+## Competition push — 18 September 2026 late
+
+Current bounded competition thread:
+
+1. **Amazon Alexa+** — active draft build in Campfire Relay PR #245; exact green head `26ca1046...`; product = verified action receipts / explicit unknown / no ambiguous-write retry / read-only reconciliation. Mechanism novelty not claimed.
+2. **Hack Apertus** — hold until 1 October live challenge/rules gate.
+3. **London applications** — Dwelly / Stripe / No.10 are human application/attendance gates; no application or travel commitment made.
+4. **Open Agent / Nebius** — no generic clone by momentum; reopen only on track-specific or stack-native fit.
+5. **ATRS / Apart Epistemics** — preserve September work for fresh November result.
+
+Detailed current source:
+`coordination/competition_quarry/COMPETITION_LIVE_SCAN_20260918_LATE.md`
+
+Build receipt:
+`coordination/build_ledger/COMPETITION_BUILD_PASS_20260918_LATE.md`
+
+```text
+WINNING ATTEMPT = USEFUL WORK + RULE FIT + HONEST CLAIMS
+PRIZE AVAILABILITY != PRODUCT GAP
+REGISTRATION / TERMS / TRAVEL / SUBMISSION = HUMAN GATES
+```
+
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
