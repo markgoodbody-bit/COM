@@ -1,0 +1,43 @@
+name: EvidenceBridge proof
+
+on:
+  push:
+    branches:
+      - framework/evidencebridge-proof-20260918
+    paths:
+      - 'competition/evidencebridge_proof/**'
+      - '.github/workflows/evidencebridge-proof.yml'
+  pull_request:
+    paths:
+      - 'competition/evidencebridge_proof/**'
+      - '.github/workflows/evidencebridge-proof.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    defaults:
+      run:
+        working-directory: competition/evidencebridge_proof
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile evidencebridge.py build_examples.py test_evidencebridge.py
+      - name: Proof contract tests
+        run: python -m unittest -v
+      - name: Build inspectable examples
+        run: python build_examples.py
+      - name: Smoke each bounded case
+        run: |
+          python evidencebridge.py fixtures/flak.json --format text > /tmp/flak.txt
+          python evidencebridge.py fixtures/hannibal.json --format text > /tmp/hannibal.txt
+          python evidencebridge.py fixtures/r-vale.json --format text > /tmp/r-vale.txt
+          grep -q 'ASSERTED_BUT_UNSUPPORTED_IN_CHECKED_SOURCES' /tmp/flak.txt
+          grep -q 'UNRESOLVED' /tmp/hannibal.txt
+          grep -q 'UNRESOLVED_WITH_REPORTED_CONTRADICTION' /tmp/r-vale.txt
