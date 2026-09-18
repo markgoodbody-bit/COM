@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-18 late-morning build/currentness pass — Europe/London  
+Updated: 2026-09-18 afternoon field-activation pass — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -235,21 +235,56 @@ NO_NEW_SPECIMEN
 
 Detailed receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
-## #365 — positive construction
+## #365 / real-use activation
 
-No new TRACE/ME primitive earned. Reachable futures and joint construction remain derived views; `S=C-M` rejected as universal scalar; reachability claims still need witnesses.
+No new TRACE/ME primitive or baseline edit.
+
+Current real-use evidence:
+- Awaab/L&Q 202524733 -> **NO DOMAIN DELTA / COMPRESSION ONLY**;
+- Awaab + Hackney benefit review -> **two-case representation portability survived; practical advantage unproven**;
+- sieve/riddle revival -> **real positive-construction witness using existing structures; revival still fragile**;
+- England drought 2026 -> **hard-collision boundary activation; no project allocation rule**.
+
+```text
+DOMAIN DELTA = NONE SO FAR
+PORTABLE COMPRESSION = REAL TWO-DOMAIN WITNESS
+POSITIVE CONSTRUCTION = REAL FIELD WITNESS
+HARD COLLISION = HANDOFF / NO UNIVERSAL PRIORITY
+NEW PRIMITIVE = NO
+```
+
+One-way hostile-review prompts are live on #365. No response is treated as agreement.
+
+## #99 / implementation watch only
+
+Owner chain is now stronger: current NHS ambient-scribe guidance explicitly requires correctability/flagging of inaccurate output and correction of other records containing propagated incorrect information.
+
+```text
+THEORY GAP = NOT EARNED
+NORMATIVE PROPAGATION PRINCIPLE = OWNER FOUND
+IMPLEMENTATION FAILURE = NOT OBSERVED
+NEXT = REAL IMPLEMENTATION EVIDENCE OR STOP
+```
+
+## Carer's Allowance / correction-capacity watch
+
+>200k-case reassessment underway; ~25k expected reductions/cancellations/refunds. Official current throughput not yet established.
+
+Next evidence gate: **14 Oct 2026 DWP management information**.
 
 ## Resources
 
-No application live.
+No application live and none earned in today's pass.
 
-- Corrigibility Research Fund: KEEP as funding owner; no proposal thesis earned after owner subtraction. Generic correction propagation and generic non-obedience/multi-principal framing are owner-occupied; residual authority-ambiguity/non-collapse question remains HOLD.
-- Arcee Trinity Builders: only with a real live token budget.
-- OpenAI Researcher Access: HOLD on currently known affiliation standing.
-- Anthropic credits: only with a real Claude budget.
-- ARIA: owner-subtracted research seam only; no proposal earned.
+```text
+BLUEDOT = KEEP FOR REAL COMPUTE/API BOTTLENECK
+CRF = OWNER PRESENT / NO CONCEPT NOTE
+ARIA = OWNER PRESENT / THESIS NOT EARNED
+LASR = HIGH PERSONAL-TIME COMMITMENT / NOT DEFAULT RUNWAY
+APPLICATION EARNED TODAY = NO
+```
 
-No contact/account/terms/application/spend/payment action.
+No account/contact/terms/application/spend/payment action.
 
 ## Campfire / Square
 
@@ -275,7 +310,7 @@ RELAY_REPO != RELAY_TOOL
 - D070 preserves the older historical preview-source basis while current aliases point to released TRACE/ME. The publisher now verifies the staged resource tree and served bytes after a recursive README-exclusion defect was caught and repaired.
 - Formation #339: merged working/non-production; not canon.
 
-Current full-sync receipt remains `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`; later build/currentness delta is in `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
+Current field-activation receipt: `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`. Earlier THR/PSFH delivery receipt remains `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ## Consequential gates
 
