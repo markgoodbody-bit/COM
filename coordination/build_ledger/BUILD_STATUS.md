@@ -12,7 +12,7 @@ Detailed receipt: `coordination/build_ledger/ATRS_COMPETITION_READINESS_20260918
 - Live Apart Open Track fit is unusually direct: live epistemic deployment + weekend-downloadable data + measurement/investigative research.
 - Stronger 2026 register research owner-subtracts broad novelty. `TRANSPARENCY != CONTESTABILITY`, generic register-accountability critique and complete-register auditing are not #364's contribution.
 - Surviving delta is the live UK ATRS implementation measurement: **route -> target site -> eligible actor -> initiation/channel**, source-bound to GDS's own two-site Appeals/review guidance.
-- Branch prep head = `e50bfa9...`; current preparation includes rewritten README/owner map, sprint plan, competition-readiness assessment, prior-work pressure, frozen November result contract and empty report shell.
+- Branch prep head = `d2bea526...`; hosted CI `35363721949 SUCCESS`; current preparation includes rewritten README/owner map, sprint plan, competition-readiness assessment, prior-work pressure, frozen November result contract and empty report shell.
 - The full population relation result remains deliberately **uncomputed**.
 - Preserve: **DO NOT full-code the remaining population or compute headline counts before the sprint.**
 
