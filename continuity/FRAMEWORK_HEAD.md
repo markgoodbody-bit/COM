@@ -347,7 +347,7 @@ Production main also received PR #37 independently:
 - malformed assertion evidence ID containers now fail structurally;
 - the repair is fixture-independent and does not depend on Hannibal remaining a candidate.
 
-PR #35 is **not** public record 4. Its next gate is the revised-head hostile review asking `KEEP_FOR_READER_PAGE / REPAIR_SMALL / KILL_AS_PUBLIC_ENCOUNTER`. Green structure does not authorise a reader page or catalogue promotion.
+PR #35 is **not** public record 4. Codex returned `KEEP_FOR_READER_PAGE` on the revised delta; Claude Code's differentiated revised-head return remains outstanding. PR #39 (`765323222c141225d4abcc8e290f880bc0baa16d`) is a reader-encounter proposal targeting the candidate branch only. No reader page or catalogue promotion has occurred, and green structure/editorial preference does not establish reader benefit.
 
 Issue #31 remains the public hostile-review aperture. Framework comment `5728047635` records that the two named false passes are repaired on main while explicitly keeping the wider break surface open.
 
@@ -425,7 +425,8 @@ No application/account/contact/terms/spend/payment action.
 
 ## PSFH / Formation
 
-- PSFH D068 remains live; reader benefit unestablished; no momentum rebuild.
+- PSFH D069 is live at maintained source `feab978564483bfa6277a0472fed542164d50d9e` / public `23e3047cb9ba9d9b42ac12b18e5be59a41a17449`; it removes one duplicated efficacy/authority paragraph only. Reader benefit remains unestablished.
+- Draft PR #371 (`bc37684f632fe2a72aeb8b2a207ee10f612b7640`) is reconciling PSFH resource aliases/status to released TRACE v0.3.0 and ME v0.7.0. It is incomplete and unpublished; no exact hosted witness is claimed.
 - Formation #339 remains merged working/non-production; not canon/alignment result.
 
 ## Campfire / Square
