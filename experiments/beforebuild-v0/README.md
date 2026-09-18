@@ -1,89 +1,129 @@
-# BeforeBuild v0 — executable owner-trial falsifier
+# BeforeBuild v0.2 — executable owner-trial falsifier
 
-Status: **BOUNDED PRODUCT FALSIFIER / DECISION CORE ONLY / NOT A SEARCH ENGINE / NOT A COMPETITION ENTRY / NOT A NOVELTY CLAIM**
+Status: **BOUNDED PRODUCT FALSIFIER / OWNER-TRIAL DECISION CORE / NOT A SEARCH ENGINE / NOT A COMPETITION ENTRY / NOT A NOVELTY CLAIM**
 
 ## Question
 
-Can a small evidence contract distinguish three materially different pre-build outcomes without being told the answer?
+Can a small evidence contract strengthen a pre-build decision by forcing a plausible owner to face the same hard cases before custom work is earned?
 
 ```text
-OWNER SEARCH
--> OWNER / CANDIDATE EVIDENCE
--> REAL HARD CASES
--> RUNNABLE OWNER TRIAL WHERE POSSIBLE
--> COVERAGE + LOSS
--> USE OWNER / INTEROPERATE / SHRINK / BUILD / STOP
+OWNER DISCOVERY                    # use existing search/build-vs-buy owners
+-> REAL-WORLD NEED EVIDENCE
+-> EXPLICIT HARD CASES
+-> RUN RELEVANT OWNER / CANDIDATE WHERE POSSIBLE
+-> PASS / FAIL / NOT_TESTED + LOSS
+-> USE_OWNER / INTEROPERATE / SHRINK / BUILD_PROBE / STOP
 ```
 
-v0 deliberately does **not** implement owner discovery.
+v0.2 deliberately does **not** implement owner discovery.
 
-Current adjacent owners already cover substantial build-vs-buy / prior-art search:
-- `AdirD/agent-shell-hamelech` — `melech-buy-vs-build` performs verified adopt-vs-build research across OSS/tools/services.
-- `Puss-M/Never-Reinvent-the-Wheel` — GitHub-first multi-platform adopt / fork-compose / build decision workflow.
-- `berwinsingh/oldhand` — researches permissive prior art before minimal implementation and verifies the implemented result end to end.
+Current adjacent owners already cover much of search-first / build-vs-buy:
+- `AdirD/agent-shell-hamelech` — `melech-buy-vs-build` performs verified adopt-vs-build research and records what no shortlisted option gives you.
+- `Puss-M/Never-Reinvent-the-Wheel` — GitHub-first multi-platform adopt / fork-compose / build review with implementation-file inspection.
+- `berwinsingh/oldhand` — researches permissive prior art before minimal implementation and verifies the delivered path end to end.
 
-The remaining product hypothesis is narrower:
+The candidate therefore shrinks to one possible reusable seam:
 
-> after discovery identifies a plausible owner, can an agent make the build decision materially stronger by executing that owner against the user's hard cases, preserving exact losses, and refusing to build when no consequential gap has been observed?
+> **pre-build owner trial** — bind the proposed need to explicit hard cases, run a plausible owner/candidate against those cases where possible, preserve semantic/functional loss, and make STOP/INTEROPERATE first-class successful outcomes.
 
-This is common good build-vs-buy practice in manual form. v0 tests whether packaging it as a reusable evidence-bearing agent step is useful, not whether the idea is novel.
+This is established good engineering practice in manual form. v0.2 tests whether a small explicit contract is useful and robust enough to automate; it does not claim the idea is new.
 
-## Decision contract
+## Why v0.1 was repaired before promotion
 
-Each case declares:
+The first branch version accepted authored booleans:
+- `world_need.observed`;
+- `uncovered_requirement.observed`.
 
-- whether a **real current need/failure** was observed;
-- the hard cases that matter;
-- candidate owners and what was actually tested;
-- any semantic/functional losses observed;
-- whether a remaining requirement is **observed**, material, and uncovered;
-- the smallest proposed build and its kill condition, if any.
+Those fields had too much verdict power. An enthusiastic agent could set them and manufacture `BUILD`.
 
-The decision core applies these rules in order:
+v0.2 removes both.
 
-1. **No observed real need/failure -> STOP.**
-   A synthetic harness or attractive theory cannot manufacture a product gap.
+### World need is now derived from evidence kind
 
-2. **One owner passes every declared hard case:**
-   - no material loss -> `USE_OWNER`;
-   - losses remain but none has produced a consequential use failure -> `INTEROPERATE`;
-   - a consequential loss is observed outside the current hard-case set -> `SHRINK` and repair the test contract before choosing build.
+Each field observation must be typed and source-bound.
 
-3. **A plausible exact owner exists but has not been tested -> SHRINK.**
-   Test the owner before rebuilding it.
+Qualifying current-world evidence:
+- `reproduced_failure`;
+- `owner_source_contradiction`;
+- `current_user_need`.
 
-4. **Observed material requirement remains uncovered + smallest build is bounded with a kill condition -> BUILD.**
+Non-qualifying by itself:
+- `synthetic_only`;
+- `conceptual_only`.
 
-5. Otherwise -> **STOP**.
+The classifier derives whether a real need is observed.
 
-The core cannot prove that owner search was complete. It can only refuse to upgrade missing search evidence into novelty.
+### Uncovered need is now derived from trials
 
-## Calibration cases
+There is no `uncovered_requirement` boolean.
 
-`calibration_cases.json` contains three historical decisions reached before BeforeBuild existed:
+A build probe can be earned only when:
+1. qualifying current-world evidence exists;
+2. no tested relevant owner passes all hard cases;
+3. no exact/near owner remains untested;
+4. an **executed exact/near candidate fails at least one declared hard case**;
+5. a smallest probe is bounded and has an explicit kill condition.
+
+Even then the verdict is only:
+
+```text
+BUILD_PROBE
+```
+
+not `BUILD PRODUCT`.
+
+This is deliberately conservative.
+
+## Candidate relevance
+
+Owner/candidate relevance is explicit:
+
+- `exact` — claims essentially the same function;
+- `near` — plausibly carries the function or the owner system whose failure defines the gap;
+- `adjacent` — informative but not sufficient to block a probe.
+
+An untested `exact` or `near` candidate forces `SHRINK`: test it before custom work.
+
+## Owner-trial rules
+
+For an executed relevant candidate:
+
+- passes every hard case, no material loss -> `USE_OWNER`;
+- passes every hard case, visible losses but no consequential failure from those losses -> `INTEROPERATE`;
+- passes current hard cases but a consequential loss is observed -> `SHRINK` because the acceptance set is incomplete;
+- fails one or more hard cases -> may support `BUILD_PROBE`, but only with qualifying world evidence and a bounded falsifiable probe.
+
+A failed **adjacent** tool does not earn a build.
+
+## Historical calibration
+
+`calibration_cases.json` contains no expected-verdict field.
 
 ### EvidenceBridge -> Doubt
 
-Unmodified Doubt v0.8.0 was actually run against four THR pressure cases. All validated. Richer THR machine semantics were compressed, but no consequential use failure from that compression was observed.
+Unmodified Doubt v0.8.0 was actually run against four THR pressure cases. All passed. Richer THR machine semantics were compressed, but no consequential use failure from that compression was observed.
 
-Historical disposition: owner sufficient with loss; do not rebuild.
+Historical result should derive: `INTEROPERATE`.
 
 ### Policy-boundary compiler
 
-A deterministic synthetic harness could encode its own authored taxonomy, but no real requirement->policy compiler failure was observed. Strong standards/authorization owners already covered much of the semantic space.
+Only a synthetic authored compiler/harness demonstrated the distinction. No real requirement->policy failure causing a material wrong outcome was observed.
 
-Historical disposition: gap not established; stop.
+Historical result should derive: `STOP`.
 
 ### Rail accessibility currentness
 
-A real public contradiction was observed across owner-controlled passenger/accessibility surfaces for three stations, with three controls. Strong owners handled live operation, but no owner surface/tool resolved the exact cross-surface existence/currentness inconsistency. The smallest useful checker was bounded and falsifiable.
+Three current owner-surface contradictions were observed with three controls. The owner system itself failed the contradiction hard cases; no current owner tool found in the bounded pass exposed the exact cross-surface consistency failure. A tiny checker with a kill condition was available.
 
-Historical disposition: build the small checker, then shrink after hostile review.
+Historical pre-build result should derive: `BUILD_PROBE`.
+
+The later checker was hostile-reviewed and shrunk; that later success is not input to the pre-build calibration.
 
 ## Run
 
 ```bash
-python experiments/beforebuild-v0/beforebuild.py   experiments/beforebuild-v0/calibration_cases.json
+python experiments/beforebuild-v0/beforebuild.py \
+  experiments/beforebuild-v0/calibration_cases.json
 
 python -m unittest experiments/beforebuild-v0/test_beforebuild.py -v
 ```
@@ -95,9 +135,15 @@ SEARCH RESULT != OWNER SUFFICIENCY
 OWNER FOUND != OWNER TESTED
 HARD CASE PASS != UNIVERSAL FIT
 NO OWNER FOUND != NOVEL
-BUILD RETURNED != PRODUCT WORTH BUILDING
+TYPED EVIDENCE != VERIFIED EVIDENCE
+BUILD_PROBE != PRODUCT EARNED
 CALIBRATION MATCH != PROSPECTIVE VALIDATION
 THREE HISTORICAL CASES != GENERAL DECISION QUALITY
 ```
 
-Kill this candidate if the decision core only restates labels supplied by the fixture, if existing tools already perform the same executable owner trial/loss report, or if prospective cases do not improve on ordinary engineering judgment.
+Kill this candidate if:
+- existing tools already perform the same reusable pre-build owner trial/loss report;
+- prospective use adds no value over ordinary disciplined engineering;
+- evidence typing becomes another way for the deciding agent to encode its desired verdict;
+- owner adapters are so bespoke that the "reusable" layer disappears;
+- the tool becomes generic competitive-research prose with a CLI.
