@@ -266,26 +266,36 @@ PR #30 has earned two bounded repairs:
 - assertion evidence observations must belong to a source cited by that assertion;
 - public/default mention validation again requires `record_id`; recordless research validation is only an explicit isolated caller mode, and a public repo branch/fixture is not private staging.
 
-The remaining observation-state false pass now has a bounded stacked repair in draft PR #32:
+Two separate assertion-state false passes now have bounded sibling repairs stacked on PR #30.
 
+PR #32 — direct observation/reconciliation state:
 ```text
-PR32 head = 845b2a0dfb0de049bafb31f7342eaeae12d1fa60
+head = 845b2a0dfb0de049bafb31f7342eaeae12d1fa60
 workflow 35325473325 = SUCCESS
 tests = 66 OK
 ```
+Current source observations are bounded retrieval/inspection events of source representations. Cross-record assertion states `observed` and `reconciled` fail closed until THR has an earned typed observation/reconciliation target relation. CRMsci 3.2 is the stronger owner for that semantic distinction.
 
-The repair does not invent an observation ontology. Current source observations are treated as bounded retrieval/inspection events of source representations. Cross-record assertion states `observed` and `reconciled` fail closed until THR has an earned typed observation/reconciliation target relation. CRMsci 3.2 is the stronger owner for that semantic distinction. Existing `reported_by_source` use remains valid.
+PR #33 — hidden completeness / checked-source state:
+```text
+head = 1b332ece1571705a2fbaf16ec843a1794928d983
+workflow 35326431061 = SUCCESS
+tests = 67 OK
+```
+`unsupported_in_sources_checked` now requires a non-empty source set, non-empty observation set, and an owned listed observation for every source counted as checked. This does not claim the set is exhaustive and does not add a universal search schema. PRISMA / PRISMA-S remain stronger owners for full systematic-search reporting.
 
-Repository-wide search found legitimate narrative/record-local uses of observed/reconciled but no production cross-record assertion currently using those states.
+The current production flak assertion already satisfies PR33's structural rule. No production assertion was edited by either sibling branch.
 
 ```text
 ASSERTION_SOURCE_OWNERSHIP_REPAIR = USEFUL
 PUBLICATION_BOUNDARY_REPAIR = USEFUL
-OBSERVATION_STATE_FALSE_PASS = REPAIRED_ON_DRAFT_BRANCH
 PR30 = DRAFT / NOT MERGED / NOT DEPLOYED
 PR32 = DRAFT / GREEN / HOSTILE_REVIEW_PENDING / NOT MERGED
+PR33 = DRAFT / GREEN / HOSTILE_REVIEW_PENDING / NOT MERGED
 SOURCE_MEDIUM != OBSERVED_OBJECT
-FAIL_CLOSED_NOW != PERMANENT_SCHEMA_DECISION
+EMPTY_CHECKED_SET != UNSUPPORTED_FINDING
+SOURCES_CHECKED != ALL_POSSIBLE_SOURCES
+GREEN_CI != MERGE_AUTHORITY
 ```
 
 Sunjata remains only a stress candidate. Current hostile return kills a synthesised record of “the epic” and, if pursued, shrinks toward one recording/performance plus its extraction/permission chain. Community authority/restriction should route to strong owners rather than a new THR consent ontology.
