@@ -85,7 +85,7 @@ No more September recoding is earned.
 ## Current pre-sprint branch state
 
 Current #364 branch head after readiness work:
-`e50bfa9bfd1f9931b0c01077c982675dc5be389c`
+`d2bea526feced78750d1bbb4c45e686f3e4c6446`
 
 New/repaired preparation objects:
 - `SPRINT_EXECUTION_PLAN.md` — rewritten around fresh relation census;
@@ -96,7 +96,7 @@ New/repaired preparation objects:
 - `README.md` — cold-reader spine rewritten around current question;
 - `OWNER_MAP.md` — current strong owners added.
 
-Hosted CI was running on the latest documentation/preparation head at the last check; prior readiness head `91db39f...` was green.
+Hosted CI on the exact current head: `35363721949 SUCCESS`. All offline parser/selection/coding/reader tests and the 100-probe falsification harness passed.
 
 ## Preservation boundary
 
