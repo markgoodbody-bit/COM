@@ -1,0 +1,44 @@
+name: BeforeBuild v0
+
+on:
+  pull_request:
+    paths:
+      - 'experiments/beforebuild-v0/**'
+      - '.github/workflows/beforebuild-v0.yml'
+  push:
+    branches:
+      - 'framework/beforebuild-v0-falsifier'
+    paths:
+      - 'experiments/beforebuild-v0/**'
+      - '.github/workflows/beforebuild-v0.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile experiments/beforebuild-v0/beforebuild.py experiments/beforebuild-v0/test_beforebuild.py
+      - name: Unit tests
+        run: python -m unittest experiments/beforebuild-v0/test_beforebuild.py -v
+      - name: Historical calibration smoke
+        run: |
+          python experiments/beforebuild-v0/beforebuild.py experiments/beforebuild-v0/calibration_cases.json --out /tmp/beforebuild.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/beforebuild.json'))
+          got={x['case_id']:x['verdict'] for x in r['results']}
+          assert got == {
+              'evidencebridge-vs-doubt': 'INTEROPERATE',
+              'policy-boundary-compiler': 'STOP',
+              'rail-accessibility-currentness': 'BUILD',
+          }, got
+          assert 'prospective validation' in r['claim_ceiling']
+          print(json.dumps(got, indent=2, sort_keys=True))
+          PY
