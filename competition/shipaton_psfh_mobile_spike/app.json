@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Please Start From Here",
+    "slug": "psfh-mobile-shipaton-spike",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pleasestartfromhere.spike"
+    },
+    "android": {
+      "package": "com.pleasestartfromhere.spike"
+    },
+    "extra": {
+      "shipatonSpike": true
+    }
+  }
+}
