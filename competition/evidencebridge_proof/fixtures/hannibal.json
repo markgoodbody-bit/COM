@@ -1,0 +1,24 @@
+{
+  "format":"evidencebridge/0.1","case_id":"hannibal-source-boundary","title":"Hannibal: translation and source-attribution boundaries",
+  "case_note":"Bounded extract from The Human Record record 4. It tests whether a translation rendering or ancient author's judgement gets silently upgraded.",
+  "origin":{"repository":"markgoodbody-bit/human-record","path":"cases/hannibal-barca.json","source_blob":"51863ad611808f217b179b4624c41e9bbfeb7238"},
+  "claims":[
+    {"id":"c-greek-literal","text":"The checked Greek source text of Polybius literally contains the string 'Hannibal'."},
+    {"id":"c-sosylus","text":"The checked evidence establishes that Sosylus was an unreliable historian."}
+  ],
+  "sources":[
+    {"id":"s-nepos","label":"Dickinson College Commentaries: Nepos, Hannibal 13","url":"https://dcc.dickinson.edu/nepos-hannibal/chapter-13","kind":"ancient_text_plus_modern_commentary","independence_group":"nepos","derived_from":[]},
+    {"id":"s-polybius-en","label":"Polybius Book 3 — 1922 Loeb English reading surface","url":"https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/3*.html","kind":"translation_reading_surface","independence_group":"polybius-paton","derived_from":[]}
+  ],
+  "propositions":[
+    {"id":"p-translation-renders","source_id":"s-polybius-en","claim_id":"c-greek-literal","state":"OBSERVED","relation":"NEARBY_NOT_SUPPORT","text":"The checked 1922 Loeb English reading surface renders the campaign subject as 'Hannibal'.","scope_note":"The Greek source literal was not inspected in this record; an English rendering cannot establish the literal string in Greek."},
+    {"id":"p-greek-uninspected","source_id":"s-polybius-en","claim_id":"c-greek-literal","state":"UNKNOWN","relation":"LIMITS","text":"The underlying Greek source literal was not inspected.","scope_note":"Unknown is preserved rather than inferred from the translation."},
+    {"id":"p-polybius-criticises","source_id":"s-polybius-en","claim_id":"c-sosylus","state":"REPORTED","relation":"NEARBY_NOT_SUPPORT","text":"Polybius dismisses the authority of Sosylus and Chaereas.","scope_note":"This is Polybius' evaluation of another historian, not EvidenceBridge's adjudication of Sosylus."},
+    {"id":"p-nepos-companion","source_id":"s-nepos","claim_id":"c-sosylus","state":"REPORTED","relation":"NEARBY_NOT_SUPPORT","text":"Nepos reports that Sosylus and Silenus were with Hannibal and wrote about the war.","scope_note":"Their complete works were not inspected by the bounded THR record."}
+  ],
+  "corrections":[],
+  "unknowns":[
+    {"claim_ids":["c-greek-literal"],"text":"The exact Greek source literal on the underlying text represented by the checked English reading surface."},
+    {"claim_ids":["c-sosylus"],"text":"An independent adjudication of Sosylus' reliability from the bounded sources checked here."}
+  ]
+}
