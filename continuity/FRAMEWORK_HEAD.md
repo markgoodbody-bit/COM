@@ -89,6 +89,10 @@ portable contribution route = LIVE
 
 Two bounded record-5 quarries returned stronger owners / zero records.
 
+### Mechanical Ethics reader pressure
+
+Mechanical Ethics issue #47 is open as a **future-reader clarity/defeasibility test** from the Marion Island hard ecological collision. v0.7.0 remains unchanged; no priority law or immediate patch is earned.
+
 ### Formation
 
 External 2026 empirical evidence now grounds the existing `Skill retention` dependency dimension.
@@ -155,6 +159,7 @@ Routine reversible repository research/build/repair may proceed within current d
 - `field/NGARDARA_COMMUNITY_MICROGRID_POSITIVE_CONSTRUCTION_20260918.md`
 - `evidence/AI_ASSISTANCE_SKILL_FORMATION_OWNER_PASS_20260918.md`
 - `coordination/competition_quarry/COMPETITION_TOURNAMENT_20260918.md`
+- `coordination/build_ledger/WORLD_OUTWARD_SEQUENCE_20260918_LATE.md`
 
 ```text
 CURRENT POINTER = COMPACT
