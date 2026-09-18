@@ -216,14 +216,39 @@ def assemble(root, output, previous=None):
             bodies[file['path']] = raw
             current = project['current_prefix'] + file['path']
             snapshot = project['snapshot_prefix'] + file['path']
-            for url in (current, snapshot):
-                key = safe_path(url.removeprefix('/resources/'))
-                if key in files:
+            snapshot_mode = file.get('snapshot_mode', 'copy')
+            if snapshot_mode not in ('copy', 'preserve', 'none'):
+                raise ValueError('Unexpected snapshot mode: ' + file['path'])
+            current_key = safe_path(current.removeprefix('/resources/'))
+            if current_key in files:
+                raise ValueError('Duplicate output')
+            files[current_key] = raw
+            snapshot_identity = None
+            if snapshot_mode == 'copy':
+                snapshot_key = safe_path(snapshot.removeprefix('/resources/'))
+                if snapshot_key in files:
                     raise ValueError('Duplicate output')
-                files[key] = raw
-            rows.append(dict(file, sha256=sha(raw), current=current, snapshot=snapshot,
-                             source_url='https://github.com/' + project['repository'] + '/blob/' + project['commit'] + '/' + file['path'],
-                             inspection=inspection))
+                files[snapshot_key] = raw
+                snapshot_identity = {
+                    'bytes': len(raw),
+                    'sha256': sha(raw),
+                    'git_blob_sha1': file['git_blob_sha1'],
+                }
+            elif snapshot_mode == 'preserve':
+                snapshot_identity = {
+                    'bytes': file['snapshot_bytes'],
+                    'sha256': file['snapshot_sha256'],
+                    'git_blob_sha1': file['snapshot_git_blob_sha1'],
+                }
+            else:
+                snapshot = None
+            row = dict(file, sha256=sha(raw), current=current, snapshot=snapshot,
+                       snapshot_mode=snapshot_mode, snapshot_identity=snapshot_identity,
+                       source_url='https://github.com/' + project['repository'] + '/blob/' + project['commit'] + '/' + file['path'],
+                       inspection=inspection)
+            for config_key in ('snapshot_bytes', 'snapshot_sha256', 'snapshot_git_blob_sha1'):
+                row.pop(config_key, None)
+            rows.append(row)
         # The preserved ME README links to figures/. Supply an index at both prefixes.
         directories = sorted({str(PurePosixPath(p).parent) for p in bodies if '/' in p})
         for directory in directories:
@@ -231,15 +256,15 @@ def assemble(root, output, previous=None):
             page = ('<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mechanical Ethics diagrams</title><link rel="stylesheet" href="/style.css"></head><body><main><h1>Mechanical Ethics diagrams</h1><p>Explanatory carriers, not evidence. <a href="../README.md">Edition and original notices</a>.</p><ul>' + links + '</ul><p><a href="/resources/">Reading catalogue</a></p></main></body></html>\n').encode()
             for prefix in (project['current_prefix'], project['snapshot_prefix']):
                 files[safe_path((prefix + directory + '/index.html').removeprefix('/resources/'))] = page
-        projects.append({k: project[k] for k in ('id', 'repository', 'commit', 'status_at_source', 'baseline_distinction', 'notice_path')} |
+        projects.append({k: project[k] for k in ('id', 'repository', 'commit', 'release_commit', 'status_at_source', 'baseline_distinction', 'notice_path')} |
                         {'files': rows, 'dependencies': dependencies(project, bodies)})
-    inventory = {'format': 'psfh-resource-copies/0.1', 'input_sha256': INPUT_SHA,
+    inventory = {'format': 'psfh-resource-copies/0.2', 'input_sha256': INPUT_SHA,
                  'input_source': 'scripts/RESOURCE_COPIES.json in maintained PSFH source; exact input_sha256 is the reviewed identity',
-                 'boundary': 'Pinned project-controlled reading copies, not a whole ecosystem mirror, validation result or new reuse/training licence. Current aliases name the released editions below. Snapshot paths preserve immutable earlier/release identities and must not be overwritten. These aliases are not continuously checked heads.',
+                 'boundary': 'Pinned project-controlled reading copies, not a whole ecosystem mirror or validation result. Current aliases carry the released documents plus the current owner-issued training permission notices. Snapshot paths preserve immutable earlier/release identities and must not be overwritten. Crawler access remains separate from training permission; third-party rights remain outside the grants.',
                  'projects': projects}
     title = 'Read TRACE and Mechanical Ethics'
     intro = 'The documents are here on this site as exact local copies of the current released TRACE v0.3.0 and Mechanical Ethics v0.7.0 baselines. Release changes status, not validation or demonstrated practical advantage. Earlier published candidate editions remain at fixed snapshot paths.'
-    limit = 'GitHub remains the place for source history, criticism and discussion. FPF and other third-party references remain elsewhere. This is not a self-contained copy of every linked source, and it does not grant new copying, adaptation or training rights.'
+    limit = 'GitHub remains the place for source history, criticism and discussion. FPF and other third-party references remain elsewhere. This is not a self-contained copy of every linked source. AI training on the owner-controlled released TRACE v0.3.0 and Mechanical Ethics v0.7.0 material is permitted under each project\'s current AI_TRAINING_PERMISSION.md; those grants do not extend to third-party material or create a general reuse licence.'
     text = '# ' + title + '\n\n' + intro + '\n\n' + limit + '\n'
     body = '<h1>' + title + '</h1><p>' + intro + '</p>'
     body += '<p>Optional HTML source-text views: <a href="/read/trace-spine.html">TRACE compact spine</a> · <a href="/read/me-book.html">ME book</a> · <a href="/read/start.html">Start</a> · <a href="/read/orientation.html">Orientation</a>. Complete source text, not a new formatted edition.</p>'
@@ -250,11 +275,14 @@ def assemble(root, output, previous=None):
         text += '\n## ' + name + '\n\n' + project['status_at_source'] + '. ' + project['baseline_distinction'] + '.\n\n'
         for file in project['files']:
             label = file['path']
-            body += '<li><a href="' + file['current'] + '">' + html.escape(label) + '</a> (' + str(file['bytes']) + ' bytes) · <a href="' + file['snapshot'] + '">fixed edition</a></li>'
-            text += '- [' + label + '](' + BASE + file['current'] + ') · [fixed edition](' + BASE + file['snapshot'] + ') · ' + str(file['bytes']) + ' bytes\n'
+            fixed_html = (' · <a href="' + file['snapshot'] + '">fixed released edition</a>') if file.get('snapshot') else ''
+            fixed_md = (' · [fixed released edition](' + BASE + file['snapshot'] + ')') if file.get('snapshot') else ''
+            body += '<li><a href="' + file['current'] + '">' + html.escape(label) + '</a> (' + str(file['bytes']) + ' bytes)' + fixed_html + '</li>'
+            text += '- [' + label + '](' + BASE + file['current'] + ')' + fixed_md + ' · ' + str(file['bytes']) + ' bytes\n'
         repo = 'https://github.com/' + project['repository'] + '/tree/' + project['commit']
-        body += '</ul><p>Source edition: <a href="' + repo + '">' + project['commit'] + '</a>.</p></section>'
-        text += '\n[Source edition ' + project['commit'] + '](' + repo + ').\n'
+        release = 'https://github.com/' + project['repository'] + '/tree/' + project['release_commit']
+        body += '</ul><p>Current rights/status source: <a href="' + repo + '">' + project['commit'] + '</a>. Released document identity: <a href="' + release + '">' + project['release_commit'] + '</a>.</p></section>'
+        text += '\n[Current rights/status source ' + project['commit'] + '](' + repo + ') · [released document identity ' + project['release_commit'] + '](' + release + ').\n'
     body += '<p>' + limit + '</p><p><a href="inventory.json">File hashes, source identities and remaining external links</a> · <a href="index.md">Markdown catalogue</a> · <a href="/">Return or stop</a></p>'
     text += '\n[Hashes, identities and remaining external links](' + BASE + '/resources/inventory.json) · [Return or stop](' + BASE + '/).\n'
     files['index.md'] = text.encode()
@@ -274,7 +302,7 @@ def assemble(root, output, previous=None):
             if path in files and files[path] != raw:
                 raise ValueError('Refusing snapshot replacement')
             files[path] = raw
-    raw_paths = {url.removeprefix('/resources/') for p in projects for f in p['files'] for url in (f['current'], f['snapshot'])}
+    raw_paths = {url.removeprefix('/resources/') for p in projects for f in p['files'] for url in ([f['current']] + ([f['snapshot']] if f.get('snapshot') and f.get('snapshot_mode') == 'copy' else []))}
     describe = lambda p, b: {'path': p, 'bytes': len(b), 'sha256': sha(b)}
     inventory['generated_files'] = [describe(p, b) for p, b in files.items() if p not in raw_paths and not p.startswith('snapshots/')]
     inventory['snapshot_files'] = [describe(p, b) for p, b in files.items() if p.startswith('snapshots/')]
