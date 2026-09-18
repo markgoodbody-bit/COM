@@ -4,6 +4,25 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR issue #40 repair delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
+
+- THR production main advanced to `38fff7a864d3acb3caf417ee830ecb284fa67139` through PR #41.
+- Exact PR-head witness: `90b07a1015fd0f36c66f0ed7e4193505bc7395be`; workflow `35355805237 SUCCESS`; 73 tests / OK. No separate merge-head workflow is visible through the current route.
+- Public catalogue re-read at the merge head remains exactly **3 records**.
+- Repair closes only the first outside R. Vale break: assertions may now address an existing unresolved mention through typed `mention_id`; opaque-ID shape, uniqueness and existence fail closed.
+- Preserve `MENTION_REFERENCE != ENTITY_RESOLUTION`.
+- Issue #40 candidate-decision provenance/history seam remains open. Do **not** add `candidate.evidence_state` by momentum; owner subtraction points toward testing a resolution decision that references an evidence-bearing assertion/history instead.
+- Hannibal PR #35 remains held/non-public.
+
+```text
+OUTSIDE_CASE -> CONCRETE_REPAIR = OBSERVED
+OUTSIDE_CASE != OUTSIDE_VALIDATION
+PR41_MERGED != ISSUE40_CLOSED
+ASSERTION_REFERENCE != IDENTITY_RESOLUTION
+```
+
 ## FULL COMSYNC live delta — 18 September 2026 15:08 BST
 
 This block supersedes later stale wording in this file where the two conflict. Detailed receipt:
@@ -41,7 +60,7 @@ PURPOSE > INSTRUMENT
 ```text
 TRACE main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-THR main = 58f1b7ade96ea2a5524bb6d36fdba193f8c016db
+THR main = 38fff7a864d3acb3caf417ee830ecb284fa67139
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
 
@@ -50,7 +69,7 @@ TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validation/effi
 ## Current routes
 
 ```text
-#347 THR -> ACTIVE PRODUCT / OUTSIDE ISSUE #40 DEFECT; HANNIBAL HELD; NO PUBLIC RECORD 4
+#347 THR -> REPAIR-1 INTEGRATED / CANDIDATE-DECISION PROVENANCE SEAM OPEN; HANNIBAL HELD; NO PUBLIC RECORD 4
 #348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
 #349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
 #365 TRACE/ME quarry -> POSITIVE VIEW SHRUNK TO REFUSABILITY/EXIT/UNCHOSEN CONTINUATION QUESTION / NO NEW PRIMITIVE
