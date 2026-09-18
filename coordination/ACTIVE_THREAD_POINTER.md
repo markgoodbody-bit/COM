@@ -1,22 +1,25 @@
-## Competition push — 18 September 2026 late
+## Competition push — 18 September 2026 late — current
 
 Current bounded competition thread:
 
-1. **Amazon Alexa+** — active draft build in Campfire Relay PR #245; exact green head `2d969a8c...`; product = verified action receipts / explicit unknown / no ambiguous-write retry / read-only reconciliation. Mechanism novelty not claimed.
-2. **Hack Apertus** — hold until 1 October live challenge/rules gate.
-3. **London applications** — Dwelly / Stripe / No.10 are human application/attendance gates; no application or travel commitment made.
-4. **Open Agent / Nebius** — no generic clone by momentum; reopen only on track-specific or stack-native fit.
-5. **ATRS / Apart Epistemics** — preserve September work for fresh November result.
+1. **Amazon Alexa+** — source candidate FROZEN GREEN in Campfire Relay PR #245; exact head `109d67c190496774a28ea97cec7ccd11342cac84`; hosted `campfire-ci 1519 / 35404393764 SUCCESS`. Product now includes explicit unknown/no-retry, cross-session unresolved-receipt recovery, historical-vs-current confirmation repair, judge-facing evidence timeline and standalone submission package.
+2. **Hack-Nation 7** — application packet ready; next approval batch closes **19 September**; human registration/approval gate only, no more engineering prerequisite.
+3. **ARC Prize 2026** — newly routed as HIGH-VALUE QUARRY; $2M programme / ARC-AGI-3 milestone 30 Sep / $450K paper pool, but paper requires real Kaggle code submission. Small owner-baseline viability spike earned; full pivot not earned.
+4. **Hack Apertus** — hold until 1 October live challenge/rules gate.
+5. **NVIDIA Claw / London applications** — prepared human registration/attendance gates; no application/travel commitment made.
+6. **Open Agent / Nebius** — no generic clone by momentum; reopen only on track-specific or stack-native fit.
+7. **ATRS / Apart Epistemics** — preserve September work for fresh November result.
 
-Detailed current source:
-`coordination/competition_quarry/COMPETITION_LIVE_SCAN_20260918_LATE.md`
-
-Build receipt:
-`coordination/build_ledger/COMPETITION_BUILD_PASS_20260918_LATE.md`
+Current detailed receipts:
+- `coordination/competition_quarry/COMPETITION_LIVE_SCAN_20260918_LATE.md`
+- `coordination/build_ledger/COMPETITION_AMAZON_FREEZE_ARC_QUARRY_20260918_LATE.md`
+- `coordination/competition_quarry/COMPETITION_HUMAN_GATE_APPLICATION_PACK_20260918.md`
 
 ```text
+AMAZON = GREEN SOURCE / HUMAN ONBOARDING-SUBMISSION GATE
+HACK-NATION = URGENT HUMAN APPLICATION GATE
+ARC = SMALL VIABILITY SPIKE ONLY
 WINNING ATTEMPT = USEFUL WORK + RULE FIT + HONEST CLAIMS
-PRIZE AVAILABILITY != PRODUCT GAP
 REGISTRATION / TERMS / TRAVEL / SUBMISSION = HUMAN GATES
 ```
 

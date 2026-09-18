@@ -1,49 +1,51 @@
-## Competition push — 18 September 2026 late
+## Competition push — 18 September 2026 late — current
 
 Direct Mark direction: pursue competitions we can credibly win.
 
-Detailed receipts:
-- `coordination/competition_quarry/COMPETITION_LIVE_SCAN_20260918_LATE.md`
-- `coordination/build_ledger/COMPETITION_BUILD_PASS_20260918_LATE.md`
-- `coordination/competition_quarry/LONDON_COMPETITION_APPLICATION_GATE_20260918.md`
+Current detailed receipt:
+`coordination/build_ledger/COMPETITION_AMAZON_FREEZE_ARC_QUARRY_20260918_LATE.md`
 
-### Active reversible build — Amazon Alexa+
+### Amazon Alexa+ — FROZEN GREEN SOURCE CANDIDATE
 
 Campfire Relay draft PR #245:
 `Did It Happen? — Action Receipts for Alexa+`
 
-Exact current green head:
-`2d969a8c2362c8d255534103763e6876427380fc`
+Exact current head:
+`109d67c190496774a28ea97cec7ccd11342cac84`
 
 Hosted:
-`campfire-ci 35401867356 SUCCESS`
+`campfire-ci 1519 / 35404393764 SUCCESS`
 
 Current product edge:
 ```text
-TOOL RETURN != WORLD EFFECT
+TOOL RESPONSE != WORLD EFFECT
 AMBIGUOUS WRITE -> NO AUTOMATIC RETRY
-UNRESOLVED SAME ACTION -> SECOND WRITE BLOCKED
-READ-ONLY RECONCILIATION -> CONFIRMED OR STILL UNKNOWN
+SEPARATE POSTCONDITION READ -> DONE CLEARANCE
+UNRESOLVED RECEIPT -> LATER SESSION DISCOVERY
+RECOVERY -> READ-ONLY RECONCILIATION
+WAS CONFIRMED != IS STILL TRUE
 ```
 
-Mechanism novelty is **not** claimed. MCP, durable execution/idempotency, postcondition/effect verification and action receipts have stronger existing owners. Candidate value is the Alexa+ customer interaction around verified / rejected / unknown / reconcile.
+Judge package, ~90s demo script, product-feedback draft, Amazon friction draft, standalone export and Devpost field packet are prepared.
 
-No Amazon/Devpost registration, terms acceptance, account/credit action, public deployment, organiser contact or submission has occurred.
+Open Source mini candidate: THR PR #41, with #43/#45 as related same-window hardening. Plausible eligibility only; not organiser-certified.
 
-### Time / human gates
+No Amazon/Devpost registration, terms acceptance, account/credit action, public deployment, organiser contact, video upload or submission has occurred.
 
-- Hack Apertus: wake 1 Oct; no judged result pre-run.
-- Dwelly London 10 Oct: strong fit / application + attendance gate.
-- Stripe x Briefcase London 15 Oct: strong short-form fit / registration + attendance gate.
-- Future States / No.10 5–6 Oct: strong real-owner fit / approval + attendance gate.
-- Open Agent: hold until live track brief.
-- Nebius/NVIDIA: hold until a product naturally needs the required stack.
-- ATRS/Apart Epistemics: preserve September method for fresh November result.
+### Next competition allocations
+
+- **Hack-Nation 7:** public-safe application packet ready; next application batch ends 19 Sep; human application gate.
+- **ARC Prize 2026:** HIGH-VALUE QUARRY only. Small public-baseline viability spike earned; no Kaggle terms/submission and no TRACE/ME-to-ARC transplant.
+- **Hack Apertus:** wake 1 Oct; no judged result pre-run.
+- **NVIDIA Claw / Dwelly / Stripe / No.10 / VAST:** prepared human registration/attendance gates.
+- **Open Agent / Nebius:** hold for exact track/stack fit.
+- **ATRS/Apart Epistemics:** preserve September method for fresh November result.
 
 ```text
 COMPETITION PUSH != PROJECT PURPOSE CHANGE
-GREEN SPIKE != REGISTERED
+GREEN SOURCE != REGISTERED
 HUMAN GATE != ENGINEERING TODO
+PRIZE SIZE != PRODUCT GAP
 ```
 
 ## Late 18 September Framework delta — PSFH decision gate + hard field witnesses
