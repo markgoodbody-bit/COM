@@ -53,6 +53,10 @@ Do not pre-run judged work.
 - no schema/checker growth by momentum;
 - wake on concrete source/currentness/identity/correction failure or legitimate contribution.
 
+### Mechanical Ethics #47 — FUTURE READER TEST / NO PATCH NOW
+
+Hard ecological collision pressure from Marion Island. Reopen on the next ME reader pass or a stronger hard-collision falsifier; first test whether cold readers actually infer a universal `one viable route per affected being` rule.
+
 ### Formation — OBSERVE / OWNER-GROUNDED
 
 2026 skill-formation evidence now grounds existing dependency/skill-retention structure.
@@ -105,3 +109,6 @@ STOP
 
 Current repair receipt:
 `coordination/build_ledger/PROJECT_DRIFT_X100_REPAIR_RESULT_20260918_PM.md`
+
+Latest outward sequence:
+`coordination/build_ledger/WORLD_OUTWARD_SEQUENCE_20260918_LATE.md`
