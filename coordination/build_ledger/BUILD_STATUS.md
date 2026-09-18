@@ -4,6 +4,27 @@ Recorded snapshot: **2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europ
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
+## THR record 4 publication delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_RECORD4_PUBLICATION_20260918.md`.
+
+- THR main = `ad9035055ce1e8f507919d40208bc3563ce1ab77`.
+- Repository catalogue = exactly **4 records**.
+- `hannibal-source-survival` is merged as record 4 after issue #40 repairs and hostile public-shape review.
+- PR #45 correction-reference floor is integrated at `b1a5344...`.
+- Final Hannibal PR head `1def7bc...`; hosted PR CI `35361247775 SUCCESS`.
+- Exact source blobs: MD `eaecb940...`; JSON `51863ad6...`; catalogue pins match.
+- Claude Code's translated-literal defect was repaired: Nepos Latin `Hannibal` is distinguished from the Polybius English rendering; Greek source literal remains uninspected.
+- Issue #40 V5 machine-typed prior-candidate-history boundary remains open but unearned as a new model.
+- Served website bytes were **not** freshly verified from this aperture; do not collapse repository merge into served verification.
+
+```text
+OUTSIDE_CASE -> THREE_BOUNDED_REPAIRS -> RECORD_4
+PUBLICATION != VALIDATION
+REPOSITORY_MERGED != SERVED_BYTES_VERIFIED
+NO_REAL_V5_FAILURE -> NO_NEW_HISTORY_MODEL
+```
+
 ## FULL COMSYNC live delta — 18 September 2026 15:08 BST
 
 This block supersedes later stale wording in this file where the two conflict. Detailed receipt:
@@ -73,7 +94,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / TWO OUTSIDE-CASE REPAIRS INTEGRATED / HISTORY LIMIT OPEN** | Main `708b9f5...`; catalogue still 3. PR41 adds typed assertion→mention references; PR43 requires candidate basis and rejects unmodelled candidate evidence/history semantics. Machine-readable prior candidate-state preservation remains unresolved. PR35 Hannibal stays draft/non-public. |
+| COM #347 / THR | **ACTIVE PUBLIC PRODUCT / RECORD 4 MERGED / HISTORY LIMIT WAKE-ONLY** | Main `ad903505...`; repository catalogue now 4. PR41 + PR43 + PR45 are integrated. Hannibal record 4 survived bounded hostile review and translated-literal repair. Served-byte verification is not fresh in this aperture. V5 typed candidate-history remains unmodelled until a real use failure earns it. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
@@ -84,7 +105,7 @@ PURPOSE > INSTRUMENT
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **STABLE PUBLIC BASELINE + ISSUE-40 BOUNDARY REPAIRS** | `708b9f5...`; three public records unchanged; PR41 adds typed assertion→mention referents and PR43 bounds candidate semantics. Typed prior candidate-history remains open. |
+| THR main | **FOUR-RECORD PUBLIC REPOSITORY BASELINE** | `ad903505...`; catalogue = 4. Hannibal is the fourth source-survival encounter. Publication is not validation; served-site bytes were not freshly verified in this aperture. |
 | PSFH D070 | **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED** | Maintained `7ef97775...`; public `c0a830bf...`; CI `35340308124` green, publisher `35340379133` green, Pages `35340423410` green, live verifier passed 33 targets. First publication exposed and repaired recursive nested-README omission. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
