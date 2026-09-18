@@ -42,6 +42,7 @@ PROJECT COMPLETED != BENEFITS REALISED
 COMMUNITY BENEFIT SOCIETY != EVERY RESIDENT CONSENTED
 FUTURE SHARE OFFER != CURRENT BROAD OWNERSHIP
 JOINT CONSTRUCTION != EQUAL CONTROL
+JOINT DELIVERY OBSERVED != JOINT-ONLY OUTCOME PROVED
 EXPECTED SAVINGS != OBSERVED SAVINGS
 ```
 
@@ -49,7 +50,7 @@ EXPECTED SAVINGS != OBSERVED SAVINGS
 
 The case strengthens the existing derived positive-construction view:
 
-- cooperation can create a reachable state unavailable to any one party under the same local constraints;
+- the observed project was delivered through cooperation among actors with differentiated roles; this record does **not** establish that the outcome was impossible for every actor under all alternative arrangements;
 - role separation can persist through cooperation;
 - participation/ownership can be layered rather than binary;
 - maintenance and governance remain part of the constructed future, not afterthoughts.
