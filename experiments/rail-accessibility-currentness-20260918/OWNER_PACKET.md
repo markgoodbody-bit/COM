@@ -53,3 +53,24 @@ Please reconcile the passenger-facing lift-existence summary with the current st
 This packet does not claim the stations are currently accessible or inaccessible. Lift existence, operational lift status and an actually usable step-free route are separate questions.
 
 No root cause or responsible organisation is asserted from the public evidence.
+
+
+## Current owner routes — not used
+
+National Rail's current Contact Us page says:
+- station accessibility/facility comments can be directed to the station operator;
+- inaccuracies in National Rail website/services can be reported to National Rail Enquiries;
+- the site specifically asks people who notice inaccuracies to include the affected URL.
+
+Primary first route for this packet:
+National Rail Contact Us / website accuracy route:
+https://www.nationalrail.co.uk/help-and-assistance/contact-us/
+
+Northern accessibility/customer route is a possible second route for Northern-managed station content:
+https://www.northernrailway.co.uk/help/contact
+
+Regulatory context / escalation owner:
+Office of Rail and Road passenger accessibility:
+https://www.orr.gov.uk/monitoring-regulation/rail/passengers/passenger-assistance/passengers-disabilities
+
+No message has been sent through any of these routes.
