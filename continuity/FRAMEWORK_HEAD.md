@@ -4,6 +4,20 @@ Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## THR direct contribution-packet regression delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_DIRECT_PACKET_REGRESSION_20260918.md`.
+
+- THR main = `1f5a5919938f385f43f1e2383bdfbb52807b206e`.
+- PR #51 exact head `205405846...`; integrity workflow `35392744131 SUCCESS`.
+- existing cold-use guide/schema repair now has a direct `no_delta` ten-key fixture and regression for `relay.relayed=false` with null relay details.
+- existing public-delivery verifier includes the new direct example.
+- no schema, record, backend, authentication or intake change.
+- live direct-example bytes were **not freshly verified in this Framework aperture** because public retrieval failed and the available GitHub route did not expose the main-push verifier run.
+
+`REAL USE BREAK -> SMALL REGRESSION = OBSERVED`
+`MERGED != SERVED_BYTES_VERIFIED`
+
 ## Mechanical Ethics reader-test delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/ME_ROUTE_PRESERVATION_READER_TEST_20260918.md`.
@@ -44,7 +58,7 @@ Mutable heads must be reacquired before consequential work.
 Last verified linked heads:
 - TRACE main: `e7d46398dc00ead931b0d5cae98518c1bcf304a3`;
 - Mechanical Ethics main: `714907a4d0af7bd702b0ab92786aa858213812b4`;
-- The Human Record main: `217f89c10a60f02b7d39785d531b2cb47cab7337`;
+- The Human Record main: `1f5a5919938f385f43f1e2383bdfbb52807b206e`;
 - Campfire Relay last verified main: `b8579e56296e7a4eb4f83ed16e668d993a18589a`.
 
 Formal released baselines:
