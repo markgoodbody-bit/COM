@@ -261,7 +261,7 @@ def decide(case: dict[str, Any]) -> dict[str, Any]:
 
     partial_relevant = [
         row for row in relevant
-        if row["executed"] and row["not_tested"] and not row["fail"]
+        if row["executed"] and row["not_tested"]
     ]
     if partial_relevant:
         return {
