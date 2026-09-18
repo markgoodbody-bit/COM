@@ -148,3 +148,27 @@ jobs:
           assert row['verdict'] in {'BUILD_PROBE','USE_OWNER','SHRINK'}, row
           print(json.dumps({'current_verdict':row['verdict'],'coverage':row['candidate_coverage']}, indent=2))
           PY
+
+
+  prospective-guestbook-observation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run pre-existing PSFH guestbook decision without expected verdict
+        run: |
+          python experiments/beforebuild-v0/beforebuild.py             experiments/beforebuild-v0/prospective_guestbook.json             --out /tmp/guestbook-beforebuild.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/guestbook-beforebuild.json'))
+          assert len(r['results']) == 1
+          row=r['results'][0]
+          print(json.dumps({
+              'case_id': row['case_id'],
+              'observed_verdict': row['verdict'],
+              'reason': row['reason'],
+              'candidate_coverage': row['candidate_coverage'],
+          }, indent=2))
+          PY
