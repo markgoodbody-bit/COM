@@ -1,5 +1,5 @@
 {
-  "format": "beforebuild-calibration-v0.2",
+  "format": "beforebuild-calibration-v0.3",
   "cases": [
     {
       "id": "evidencebridge-vs-doubt",
@@ -35,6 +35,13 @@
           "id": "doubt-v0.8.0",
           "relevance": "exact",
           "evidence": "Unmodified alsoleg89/doubt v0.8.0 validator pinned in COM PR #376.",
+          "review_losses": [
+            {
+              "id": "richer-thr-machine-semantics",
+              "description": "Dedicated THR ancestry/reported-state/supersession semantics are compressed in Doubt's smaller contract.",
+              "consequential_failure_observed": false
+            }
+          ],
           "trial": {
             "executed": true,
             "hard_case_results": {
@@ -43,13 +50,6 @@
               "r-vale": "PASS",
               "sieve-riddle": "PASS"
             },
-            "material_losses": [
-              {
-                "id": "richer-thr-machine-semantics",
-                "description": "Dedicated THR ancestry/reported-state/supersession semantics are compressed in Doubt's smaller contract.",
-                "consequential_failure_observed": false
-              }
-            ],
             "semantic_cheating_observed": false
           }
         }
@@ -90,10 +90,10 @@
           "id": "authorization-standards-cluster",
           "relevance": "adjacent",
           "evidence": "DPV/ISO 27560, XACML, Cedar, ODRL and current agent-authorization work preserve substantial status/reason/context/delegation semantics.",
+          "review_losses": [],
           "trial": {
             "executed": false,
             "hard_case_results": {},
-            "material_losses": [],
             "semantic_cheating_observed": false
           }
         }
@@ -146,6 +146,7 @@
           "id": "national-rail-owner-system",
           "relevance": "near",
           "evidence": "National Rail Accessibility Map/live lift data and station/operator passenger/accessibility surfaces are the current owner system for the underlying information.",
+          "review_losses": [],
           "trial": {
             "executed": true,
             "hard_case_results": {
@@ -156,13 +157,6 @@
               "AGV": "PASS",
               "LLE": "PASS"
             },
-            "material_losses": [
-              {
-                "id": "cross-surface-currentness-consistency",
-                "description": "The bounded owner-system observation did not itself expose/repair the passenger-summary versus lift-existence contradiction.",
-                "consequential_failure_observed": true
-              }
-            ],
             "semantic_cheating_observed": false
           }
         }
