@@ -1,73 +1,73 @@
 {
   "format": "psfh-resource-copy-input/0.1",
   "edition": "0.1",
-  "prepared": "2026-09-08",
+  "prepared": "2026-09-18",
   "status": "BUILD INPUT / NOT A PUBLIC DELIVERY RECEIPT",
   "purpose": "Publish the current first-party reading resources as actual same-domain files, not redirects or runtime GitHub fetches.",
   "authority_basis": "Mark explicitly requested first-party resource copies on pleasestartfromhere.com in this conversation. No downstream licence, training right, private-data publication or new spend is granted by this inventory.",
-  "source_observation": "Current main refs, complete non-truncated repository trees and README notices were read through the GitHub connector on 8 September 2026. Byte bodies and dependencies must be verified by the maintained importer before publication.",
+  "source_observation": "Released TRACE v0.3.0 and Mechanical Ethics v0.7.0 source commits and exact selected file identities were re-read through the GitHub connector on 18 September 2026. Earlier published candidate snapshots remain immutable history; current aliases advance only through this reviewed release-sync input.",
   "projects": [
     {
       "id": "trace",
       "repository": "markgoodbody-bit/TRACE",
-      "commit": "46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b",
-      "status_at_source": "v0.3.0 specification RC1 / NOT RELEASED / NOT CANON / NOT VALIDATED / NO EFFICACY RESULT",
-      "baseline_distinction": "v0.2.7 remains released formal baseline; not substituted by this copy",
+      "commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
+      "status_at_source": "v0.3.0 / RELEASED / FORMAL BASELINE / CURRENT SPECIFICATION / NOT VALIDATED / NO EFFICACY RESULT",
+      "baseline_distinction": "v0.3.0 is the current released formal baseline; v0.2.7 remains the previous released formal baseline",
       "notice_path": "README.md",
       "current_prefix": "/resources/trace/",
-      "snapshot_prefix": "/resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/",
+      "snapshot_prefix": "/resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/",
       "files": [
         {
           "path": "README.md",
-          "git_blob_sha1": "0df1a46a33eb63fa47a3cdc4a3b145115f2ccfc1",
-          "bytes": 6563,
+          "git_blob_sha1": "a6f95cf2bac4558e4b5b56b0b38d6e498541d3d0",
+          "bytes": 6827,
           "media_type": "text/markdown; charset=utf-8"
         },
         {
           "path": "TRACE-SPINE.md",
-          "git_blob_sha1": "488989cef87e47adc6df8407382717ebf58e10a6",
-          "bytes": 25795,
+          "git_blob_sha1": "2e5afe78d0033d47582af9ffaa94f0d0e5a51bc7",
+          "bytes": 25838,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256_declared_by_source_readme": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999"
+          "sha256_declared_by_source_readme": "be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6"
         },
         {
           "path": "TRACE.md",
-          "git_blob_sha1": "3f7011abb2f453ef250990e6e30cbd787db683c7",
-          "bytes": 180511,
+          "git_blob_sha1": "e9c0a9906c663ac4f9887ee42f8595edc74d2f92",
+          "bytes": 180619,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256_declared_by_source_readme": "1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f"
+          "sha256_declared_by_source_readme": "b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34"
         }
       ]
     },
     {
       "id": "mechanical-ethics",
       "repository": "markgoodbody-bit/mechanical-ethics",
-      "commit": "44f7efb59806242fd26c572cbfbaaeaefaea2058",
-      "status_at_source": "v0.7.0 working candidate v0.2.4 / NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED",
-      "baseline_distinction": "v0.6.3 remains preservation baseline; not substituted by this copy",
+      "commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
+      "status_at_source": "v0.7.0 / RELEASED / FORMAL BASELINE / CURRENT READER / NOT VALIDATED",
+      "baseline_distinction": "v0.7.0 is the current released formal baseline; v0.6.3 remains the previous released baseline",
       "notice_path": "README.md",
       "current_prefix": "/resources/mechanical-ethics/",
-      "snapshot_prefix": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/",
+      "snapshot_prefix": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/",
       "files": [
         {
           "path": "README.md",
-          "git_blob_sha1": "3bdc070a79bef1835250b81f7fb1f9c764382555",
-          "bytes": 3120,
+          "git_blob_sha1": "735e91055adbbc2a45faec6f7c7f36a83710e727",
+          "bytes": 3459,
           "media_type": "text/markdown; charset=utf-8"
         },
         {
           "path": "MECHANICAL_ETHICS.md",
-          "git_blob_sha1": "cc6f5195b3d71d29f6bfbc8062ef9623f6f2dcb2",
-          "bytes": 87555,
+          "git_blob_sha1": "e232a29c5b6492930ff5b94b005c948f67ba6067",
+          "bytes": 87543,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256_declared_by_source_readme": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93"
+          "sha256_declared_by_source_readme": "8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c"
         },
         {
           "path": "MECHANICAL_ETHICS.pdf",
-          "git_blob_sha1": "874f5311a49e962d8b50005f74ed11ed41f27700",
-          "bytes": 451736,
+          "git_blob_sha1": "b7579079bbeb32912b8b280ce444e0b41d330a7f",
+          "bytes": 451840,
           "media_type": "application/pdf",
-          "sha256_declared_by_source_readme": "18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56"
+          "sha256_declared_by_source_readme": "122c56bb2ea1063bccb8ced3652686a006d3ff44bdaafa445a525e9464711cdf"
         },
         {
           "path": "figures/figure-1-file-and-life.png",
@@ -121,9 +121,9 @@
     }
   ],
   "byte_totals": {
-    "source_files": 1044602,
+    "source_files": 1045448,
     "source_file_count": 14,
-    "current_plus_one_snapshot": 2089204,
+    "current_plus_one_snapshot": 2090896,
     "scope": "Raw selected bodies only; excludes HTML renderings, catalogue, existing site, future editions and transfer overhead."
   },
   "exclude": [
