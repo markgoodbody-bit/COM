@@ -1,0 +1,26 @@
+{
+  "format":"evidencebridge/0.1","case_id":"flak-80-percent","title":"The '80% of German flak crews died' claim",
+  "case_note":"Bounded extract from The Human Record flak provenance case. It tests source ancestry, repeated claims and nearby-but-different evidence.",
+  "origin":{"repository":"markgoodbody-bit/human-record","path":"cases/viral-flak-claim.json","source_blob":"9ce2f825b4b928d8d408af830793ab7220ac3d5f"},
+  "claims":[{"id":"c1","text":"Roughly 80% of German anti-aircraft crew members died during the Second World War."}],
+  "sources":[
+    {"id":"s-video","label":"Viral YouTube video (Aug 2025)","url":"https://www.youtube.com/watch?v=v9-k2DMNHFg","kind":"video","independence_group":"viral-chain-a","derived_from":[]},
+    {"id":"s-article","label":"World War Wings article","url":"https://worldwarwings.com/wwii-flak-gun-crews-casualties/","kind":"article","independence_group":"viral-chain-a","derived_from":["s-video"]},
+    {"id":"s-summary","label":"Automated video summary","url":"https://youtubesummary.com/summary/v9-k2DMNHFg","kind":"summary","independence_group":"viral-chain-a","derived_from":["s-video"]},
+    {"id":"s-later-video","label":"Historical Notes later video","url":"https://www.youtube.com/watch?v=7KSKZyJ3nZw","kind":"video","independence_group":"later-video-b","derived_from":[]},
+    {"id":"s-army","label":"US Army Medical Department flak casualty chapter","url":"https://achh.army.mil/history/book-wwii-woundblstcs-chapter9/","kind":"official_historical_source","independence_group":"us-army-c","derived_from":[]}
+  ],
+  "propositions":[
+    {"id":"p-video-asserts","source_id":"s-video","claim_id":"c1","state":"REPORTED","relation":"ASSERTS","text":"The video carries the 80% German flak-crew mortality claim.","scope_note":"A source carrying a statistic is not evidence that the statistic is historically correct."},
+    {"id":"p-article-restates","source_id":"s-article","claim_id":"c1","state":"REPORTED","relation":"RESTATES","text":"The article restates the video's mortality claim in altered form.","scope_note":"The Human Record marks this node as downstream and not independent corroboration."},
+    {"id":"p-summary-restates","source_id":"s-summary","claim_id":"c1","state":"REPORTED","relation":"RESTATES","text":"The automated summary repeats the viral video's claim.","scope_note":"Condensation of the source claim does not create a new witness."},
+    {"id":"p-later-asserts","source_id":"s-later-video","claim_id":"c1","state":"REPORTED","relation":"ASSERTS","text":"A later video title asserts the figure while its description reportedly calls it untraceable.","scope_note":"The preserved THR record does not treat this as an independent research check."},
+    {"id":"p-army-nearby","source_id":"s-army","claim_id":"c1","state":"OBSERVED","relation":"NEARBY_NOT_SUPPORT","text":"The official source documents high flak-casualty percentages among Allied aircrew, a different population and measure.","scope_note":"Allied aircrew casualties caused by flak are not the same assertion as mortality among German flak crews."}
+  ],
+  "corrections":[],
+  "unknowns":[
+    {"claim_ids":["c1"],"text":"The true aggregate mortality rate of German anti-aircraft crews."},
+    {"claim_ids":["c1"],"text":"Whether an earlier source predating the visible online chain contains the 80% figure."},
+    {"claim_ids":["c1"],"text":"Whether the figure mutated from a different casualty statistic."}
+  ]
+}
