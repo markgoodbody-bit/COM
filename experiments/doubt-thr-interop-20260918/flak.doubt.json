@@ -71,7 +71,7 @@
       "publisher": "The Human Record",
       "date": "2026-09-16",
       "retrievedAt": "2026-09-18",
-      "locator": "current_findings[1]",
+      "locator": "Section: current_findings[1]",
       "excerpt": "The linked article and summary restate the video claim with changed scope and are not independent corroboration."
     },
     {
@@ -81,7 +81,7 @@
       "publisher": "The Human Record",
       "date": "2026-09-16",
       "retrievedAt": "2026-09-18",
-      "locator": "current_findings[4]",
+      "locator": "Section: current_findings[4]",
       "excerpt": "Authoritative sources support nearby facts about flak danger and Allied casualties but do not, in the sources checked for this record, establish the claimed aggregate German crew mortality rate."
     }
   ]
