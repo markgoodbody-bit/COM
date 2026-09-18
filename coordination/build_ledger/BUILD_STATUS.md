@@ -22,6 +22,27 @@ OWNER_FOUND -> SHRINK OR STOP
 RELAY_REPO != RELAY_RUNTIME
 ```
 
+## THR issue #40 candidate-boundary delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_ISSUE40_CANDIDATE_BOUNDARY_20260918.md`.
+
+- THR main = `708b9f5f0691e93d052a81431e3c7de9a63a947e`.
+- PR #43 exact head `a564814...`: workflow `35357048111 SUCCESS`, 76 tests / OK, Codex exact-head `KEEP_SHRINK`.
+- Public catalogue remains exactly **3 records**.
+- Candidate links now require a non-empty inspectable `basis`.
+- Candidate-local `evidence`, `evidence_state`, `history` fail closed as unmodelled semantics.
+- Source-attributed propositions may address unresolved mention A -> mention B through assertions without entity resolution.
+- The proposed `basis_assertion_ids` bridge was not earned; probe PR #42 is closed unmerged.
+- Remaining issue #40 debt: prior candidate uncertainty/history is **not machine-typed**; an exclusion with ordinary basis and erased prior candidate state can still structurally pass. Issue #40 remains open on this boundary.
+- Hannibal remains non-public pending fresh rebase/review against the new production main.
+
+```text
+OUTSIDE_CASE -> TWO_CONCRETE_PRODUCTION_REPAIRS
+PARTIAL_REPAIR != OUTSIDE_VALIDATION
+CANDIDATE_BASIS != IDENTITY_TRUTH
+NO_TYPED_HISTORY_YET != HISTORY_IRRELEVANT
+```
+
 ## THR issue #40 repair delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
@@ -52,7 +73,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / OUTSIDE REPAIR-1 INTEGRATED / SECOND SEAM OPEN** | Main `38fff7a...`; catalogue still 3. PR41 merged the typed assertion→mention repair with 73-test exact-head CI; candidate-decision provenance/history remains unresolved. PR35 Hannibal stays draft/non-public. |
+| COM #347 / THR | **ACTIVE PRODUCT / TWO OUTSIDE-CASE REPAIRS INTEGRATED / HISTORY LIMIT OPEN** | Main `708b9f5...`; catalogue still 3. PR41 adds typed assertion→mention references; PR43 requires candidate basis and rejects unmodelled candidate evidence/history semantics. Machine-readable prior candidate-state preservation remains unresolved. PR35 Hannibal stays draft/non-public. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
@@ -63,7 +84,7 @@ PURPOSE > INSTRUMENT
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **STABLE PUBLIC BASELINE + ISSUE-40 SEMANTIC REPAIR** | `38fff7a...`; three public records unchanged; PR41 adds typed assertion→mention referents without resolving identity. Candidate-decision provenance/history remains open. |
+| THR main | **STABLE PUBLIC BASELINE + ISSUE-40 BOUNDARY REPAIRS** | `708b9f5...`; three public records unchanged; PR41 adds typed assertion→mention referents and PR43 bounds candidate semantics. Typed prior candidate-history remains open. |
 | PSFH D070 | **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED** | Maintained `7ef97775...`; public `c0a830bf...`; CI `35340308124` green, publisher `35340379133` green, Pages `35340423410` green, live verifier passed 33 targets. First publication exposed and repaired recursive nested-README omission. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
