@@ -4,6 +4,29 @@ Recorded snapshot: **2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europ
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
+## EvidenceBridge / Doubt owner-convergence delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/DOUBT_THR_INTEROP_20260918.md`.
+
+- EvidenceBridge standalone proof PR #375: green at `99cf0b6...` / CI `35368129110 SUCCESS`, then **CLOSED UNMERGED / OWNER FOUND**.
+- Strong owner Doubt v0.8.0 was tested directly rather than merely cited.
+- PR #376 encoded flak, Hannibal, R. Vale, plus an unseen sieve/riddle case in the **unmodified** Doubt contract.
+- exact final branch head `cc2d859...`; pinned upstream validator commit `647482d...`; workflow `35368990471 SUCCESS`.
+- four-map receipts: flak `fbeea813525d`, Hannibal `69c24b6bc869`, R. Vale `325b63004d42`, sieve/riddle `db2cde962a38`.
+- PR #376 merged as `08e2daddaee5dbca4aba491fe4a56197c59dc90a`.
+- Result = **OWNER SUFFICIENT WITH LOSS**: reader-facing meaning survived; richer THR machine semantics for ancestry / reported-state / supersession were compressed, but no consequential use failure from that compression is observed.
+- No Doubt fork, no THR schema change, no adoption-by-momentum.
+- EvidenceBridge Open Agent / Nebius product routes are **not earned**.
+- Shipaton 2026 is **STOP** after Mark confirmed no existing store developer infrastructure; PR #374 is closed unmerged, reusable spike preserved.
+
+```text
+USE STRONGER OWNER > REBUILD OWNER
+INTEROPERABILITY != FULL SEMANTIC EQUIVALENCE
+VALID MAP != SOURCE TRUTH
+OWNER FOUND != FAILURE
+WORLD / REAL USE -> NEXT EARNED GAP
+```
+
 ## ATRS #364 competition-readiness delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/ATRS_COMPETITION_READINESS_20260918.md`.
@@ -135,7 +158,7 @@ PURPOSE > INSTRUMENT
 | --- | --- | --- |
 | COM #347 / THR | **ACTIVE PUBLIC PRODUCT / RECORD 4 MERGED / HISTORY LIMIT WAKE-ONLY** | Main `ad903505...`; repository catalogue now 4. PR41 + PR43 + PR45 are integrated. Hannibal record 4 survived bounded hostile review and translated-literal repair. Served-byte verification is not fresh in this aperture. V5 typed candidate-history remains unmodelled until a real use failure earns it. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
-| COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
+| COM #349 / tournament | **ACTIVE / #364 RESEARCH LEAD / PRODUCT ROUTES OWNER-SUBTRACTED** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / REAL CONTENDER / RESULT SURFACE PRESERVED** | September relation method frozen; readiness branch now adds current prior-work subtraction, result contract and empty report shell. Full population relation result deliberately uncomputed until fresh November core work if live rules allow. |
 | COM #365 | **REAL-USE ACTIVATION / POSITIVE RESIDUE OWNER-SUBTRACTED / NO NEW PRIMITIVE** | Follow-on owner search routes participation, burden distribution, exit/voice, unintended effects and maintenance burden to established fields. No project-specific positive-transition residue is established; stop theory-building from current cases. |
 | COM #99 / record-correction consequence | **OWNER-NATIVE NORMATIVE CHAIN / IMPLEMENTATION WATCH** | NHS guidance now explicitly covers ambient-scribe correction, flagging and correction of other records carrying propagated errors. Theory gap not earned; implementation failure not observed. |
