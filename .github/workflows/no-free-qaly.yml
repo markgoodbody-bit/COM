@@ -33,14 +33,16 @@ jobs:
           python - <<'PY'
           import json
           r=json.load(open('/tmp/report.json'))
-          assert r['objective_rank_reversal'] is True
+          assert r['status'] == 'TEACHING_APPENDIX_OWNER_THEORY_NOT_BENCHMARK'
           assert r['monetary_rank_reversal'] is True
-          assert r['stakeholder_rank_reversal'] is True
-          assert r['preference_sensitive_case']['accuracy']=='UNDEFINED_NO_OBJECTIVE_CORRECT_ACTION'
+          comp=r['monetary_order_comparison']
+          assert comp['strict_rank_reversal'] is True
+          assert comp['strict_reversal_pairs'] == ['money_problem_a::money_problem_b']
+          assert comp['tie_vs_order_pairs'] == []
           assert 'decision_quality_score' not in r
           print(json.dumps({
-              'objective_rankings': r['objective_rankings'],
-              'monetary_rankings': r['monetary_rankings'],
-              'stakeholder_rank_reversal': r['stakeholder_rank_reversal']
+              'monetary_rank_groups': r['monetary_rank_groups'],
+              'strict_reversal_pairs': comp['strict_reversal_pairs'],
+              'tie_vs_order_pairs': comp['tie_vs_order_pairs']
           }, indent=2))
           PY
