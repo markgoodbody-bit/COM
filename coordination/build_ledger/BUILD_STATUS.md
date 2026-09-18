@@ -1,6 +1,6 @@
 # Build status
 
-Recorded snapshot: **2026-09-18 late-morning build/currentness pass — Europe/London**.
+Recorded snapshot: **2026-09-18 afternoon field-activation pass — Europe/London**.
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
@@ -19,8 +19,8 @@ PURPOSE > INSTRUMENT
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
-| COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
-| COM #99 / social-care correction consequence | **FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD** | Normative owner chain substantially present; operational connection after post-use correction is not established from public sources. |
+| COM #365 | **REAL-USE ACTIVATION / NO NEW PRIMITIVE** | Awaab = no domain delta/compression only; Awaab+Hackney = two-domain portability witness; sieve/riddle = real positive-construction witness; drought = hard-collision boundary activation. Practical advantage unproven; hostile returns pending. |
+| COM #99 / record-correction consequence | **OWNER-NATIVE NORMATIVE CHAIN / IMPLEMENTATION WATCH** | NHS guidance now explicitly covers ambient-scribe correction, flagging and correction of other records carrying propagated errors. Theory gap not earned; implementation failure not observed. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
@@ -30,6 +30,7 @@ PURPOSE > INSTRUMENT
 | PSFH D070 | **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED** | Maintained `7ef97775...`; public `c0a830bf...`; CI `35340308124` green, publisher `35340379133` green, Pages `35340423410` green, live verifier passed 33 targets. First publication exposed and repaired recursive nested-README omission. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
+| Carer's Allowance reassessment | **SYSTEM-SCALE CORRECTION-CAPACITY WATCH** | >200k review programme; ~25k expected debt change/refund cases. Current throughput not yet official. Next evidence gate: 14 Oct 2026 DWP MI. |
 
 ## #364 — current source/method state
 
@@ -203,41 +204,56 @@ NO_NEW_SPECIMEN
 
 Detailed receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
-### COM #365
+### COM #365 / real-use activation
 
-Positive-construction quarry earned a derived view, not a new TRACE/ME primitive. `S=C-M` remains rejected as a universal scalar; reachability claims still need witnesses.
+No baseline or primitive change.
+
+Current evidence set:
+- `field/AWAABS_LAW_LQ_202524733_CORRECTION_WINDOW_20260918.md`
+- `evidence/AWAABS_LAW_LQ_202524733_THIN_ACTIVATION_RESULT_20260918.md`
+- `field/HACKNEY_HOUSING_BENEFIT_25014765_PENDING_REVIEW_20260918.md`
+- `evidence/CROSS_DOMAIN_COMPRESSION_AWAAB_HACKNEY_20260918.md`
+- `evidence/SIEVE_RIDDLE_POSITIVE_CONSTRUCTION_ACTIVATION_20260918.md`
+- `field/ENGLAND_DROUGHT_2026_HARD_COLLISION_20260918.md`
+- `evidence/ENGLAND_DROUGHT_2026_HARD_COLLISION_ACTIVATION_20260918.md`
+
+```text
+AWAAB = NO DOMAIN DELTA / COMPRESSION ONLY
+AWAAB+HACKNEY = TWO-DOMAIN PORTABILITY WITNESS
+SIEVE/RIDDLE = REAL POSITIVE-CONSTRUCTION WITNESS
+DROUGHT = HARD-COLLISION BOUNDARY ACTIVATION
+OPERATIONAL ADVANTAGE = NOT DEMONSTRATED
+NEW PRIMITIVE = NONE
+```
+
+#365 comments `5729845049`, `5729899822`, `5729932322`, `5729988622` invite only concrete hostile returns.
 
 ### Resources
 
-No application live.
+Fresh pass found no application earned today.
 
-Current resource posture: Corrigibility Research Fund survives as a funding owner but **no proposal thesis is earned**; generic correction propagation and generic non-obedience/multi-principal stories were owner-subtracted. Residual authority-ambiguity / semantic-non-collapse is HOLD. Arcee/Anthropic credit routes require real live budgets; OpenAI Researcher Access is HOLD on currently known affiliation standing; ARIA remains a seam only.
+```text
+BLUEDOT = KEEP FOR SPECIFIC COMPUTE/API BOTTLENECK
+CRF = OWNER PRESENT / NO CONCEPT NOTE
+ARIA = OWNER PRESENT / THESIS NOT EARNED
+LASR = HIGH PERSONAL-TIME COMMITMENT / NOT DEFAULT RUNWAY
+APPLICATION EARNED TODAY = NO
+```
 
 No contact/account/terms/application/spend/payment action.
 
-### PSFH D070
+### Carer's Allowance reassessment
 
-D070 is live and byte-verified.
+System-scale correction-capacity watch only.
 
-```text
-maintained source = 7ef97775f3f9970042c87d476ac9e39eb2516b49
-public gh-pages = c0a830bfd14ca76052a1ee5913d302952485f57c
-maintained CI = 35340308124 SUCCESS
-publisher = 35340379133 SUCCESS
-Pages deployment = 35340423410 SUCCESS
-live verifier = LIVE_PSFH_D070_VERIFIED targets=33 attempt=5
-```
+Official programme scale:
+- >200,000 cases to review;
+- ~25,000 expected debt reduction/cancellation/refund;
+- £75m across 2026/27–2028/29.
 
-The current aliases now route to released TRACE/ME while the older preview-source basis remains historically pinned. The first D070 publication attempt exposed a recursive rsync basename-exclusion defect that omitted nested READMEs. Publisher staging now verifies the resource tree before push and verifies served bytes after deployment.
+Official throughput is not yet established.
 
-```text
-BUILT_BYTES != STAGED_BYTES
-STAGED_BYTES != PUSHED_BYTES
-PUSHED_BYTES != SERVED_BYTES
-SERVE_VERIFIED != READER_BENEFIT
-```
-
-Reader benefit remains unestablished. Weak search visibility has been observed, but no indexing defect is established and no SEO build is currently earned.
+Next evidence gate: **14 October 2026 DWP reassessment management information**.
 
 ### Campfire / Square
 
@@ -260,7 +276,7 @@ Explicit human gates remain for:
 - travel/payout/tax;
 - crawler/training-policy changes.
 
-Current receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
+Current receipt: `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
