@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-18 late-morning build/currentness pass — Europe/London  
+Updated: 2026-09-18 afternoon field-activation pass — Europe/London  
 Later live source and direct human direction win.
 
 ## Fresh-aperture discipline
@@ -317,48 +317,150 @@ Next THR move:
 Detailed receipt:
 `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
-## COM #365 — positive construction
+## COM #365 — real-use activation / portability / hard-collision pressure
 
-No new TRACE/ME primitive earned. Reachable futures and joint construction remain derived views over existing structures; universal `S=C-M` is rejected; `enough` remains typed/task-relative; reachability claims still need witnesses.
+No new TRACE/ME primitive has been earned. The earlier notation candidates remain narrowed: no universal `S=C-M`, no required `R_e(t)` set notation, no `J_AB` primitive.
+
+The quarry now has real-world witnesses rather than only constructed cases.
+
+### Awaab / L&Q 202524733 — negative activation
+
+Real post-commencement housing case encoded through released ME/TRACE.
+
+Result:
 
 ```text
-DERIVED_VIEW_EARNED != NEW_PRIMITIVE_EARNED
-REACHABLE_CLAIMED != REACHABLE_ESTABLISHED
+FACTUAL DELTA = NONE
+RELATIONAL DELTA = NONE ESTABLISHED
+TIMING DELTA = NONE
+ANSWERABILITY DELTA = NONE
+RESULT = NO DOMAIN DELTA / COMPRESSION ONLY
 ```
 
-No TRACE/ME canon/baseline edit.
+The Housing Ombudsman's own account already preserves affected scope, vulnerability, evidence/unknowns, routes, clocks, missing assessments, burden, repair and residue.
 
-## Social-care field seam — COM #99
+### Awaab + Hackney benefit review — two-domain portability witness
 
-Final owner subtraction for this pass found the generic normative chain substantially present: record amendment/audit history, consideration of possible reliance, DCB0160 post-deployment safety review/corrective action, and Care Act plan-review triggers.
+A second real case, LGSCO Hackney 25 014 765, involved debt recovery continuing while a housing-benefit review remained pending and ultimately succeeded.
+
+The same small existing relational grammar represented both unlike cases without adding a primitive:
+
+```text
+AFFECTED SCOPE
+MATERIAL STATE / PROPOSITION
+CURRENT ACTION / DEFAULT
+CORRECTION ROUTE
+PRACTICAL CONTROL
+CLOCK / HARDENING
+BURDEN
+CORRECTION
+RESIDUE
+```
+
+Current claim ceiling:
+
+```text
+TWO-CASE REPRESENTATION PORTABILITY = SURVIVED
+FALSE-EQUIVALENCE FAILURE = NOT OBSERVED IN THIS ENCODING
+OPERATIONAL / READER ADVANTAGE = NOT DEMONSTRATED
+```
+
+### Sieve/riddle revival — real positive-construction witness
+
+Existing THR + Heritage Crafts evidence supports a real transition from extinction classification to renewed practice, reported Turnock-to-Overthrow advice/tuition, product refinement/commercial making, and current training of another maker.
+
+```text
+REAL POSITIVE TRANSITION = OWNER-SUPPORTED
+PERSON-TO-PERSON LEARNING COUPLING = REPORTED
+CURRENT TRAINING CONTINUATION = REPORTED
+REVIVED != SECURE
+ATTENTION PATHWAY != SKILL TRANSMISSION
+```
+
+This is a field witness for an existing positive derived view, not a new theory.
+
+### England drought 2026 — hard-collision boundary activation
+
+Current drought management deliberately narrows some paths to protect others. Released TRACE/ME boundaries survive only by refusing to supply a universal allocation rule.
+
+```text
+PATH_CLOSURE_IS_NOT_AUTOMATICALLY_HARM
+BURDEN_VISIBILITY != PRIORITY
+TIMING_VISIBILITY != PRIORITY
+TRACE_MAP != SHOULD
+MORE_OPTIONS != MORALLY_BETTER
+
+RESULT = SCOPE/BOUNDARY ACTIVATION, NOT SOLUTION
+```
+
+The project may expose scopes/clocks/burdens/authority and then hand off to domain law, evidence, values and legitimate allocation authority.
+
+One-way hostile review requests are live on #365 for all four activation results. Silence is not agreement; no reply is required unless a concrete counterexample, distortion or redundancy finding exists.
+
+Detailed receipt:
+`coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`.
+
+## Social-care / health-record field seam — COM #99
+
+Owner subtraction is now stronger than the earlier checkpoint.
+
+Current owner machinery includes:
+- professional accuracy/accountability duties;
+- NHS record amendment + audit history;
+- explicit consideration of who viewed / may have relied on inaccurate data;
+- DCB0160 post-deployment safety review / corrective action;
+- Care Act review/reassessment triggers;
+- current NHS ambient-scribe guidance requiring output verification, correctability, flagging of inaccuracies so they are not later used as fact, and correction of other records into which incorrect information was copied.
 
 Current disposition:
 
 ```text
-#99 = FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION
 THEORY GAP = NOT EARNED
-NEW RIGHT / DUTY / FRAMEWORK = NOT EARNED
-OPERATIONAL HANDOFF = NOT ESTABLISHED FROM PUBLIC SOURCES
+NORMATIVE CORRECTION / PROPAGATION PRINCIPLE = OWNER FOUND
+IMPLEMENTATION HANDOFF FAILURE = NOT OBSERVED
 NO ACTIVE BUILD
+NEXT = REAL IMPLEMENTATION EVIDENCE OR STOP
 ```
 
-Wake only for real operational evidence, an owner request or a material observed failure. `NOT_ESTABLISHED_IMPLEMENTATION != MISSING_RULE`.
+Do not revive #99 from absence of public workflow detail alone.
+
+## Carer's Allowance reassessment — system-scale correction-capacity watch
+
+A real >200,000-case reassessment is underway after the independent review of earnings-related overpayments. Around 25,000 cases are expected to receive debt reduction/cancellation/refund; £75m is allocated across 2026/27–2028/29.
+
+Official current throughput is not yet established.
+
+Next evidence gate:
+
+**14 October 2026 — DWP reassessment management information**, expected to include reviewed/awaiting volumes, changed decisions and debt reductions/repayments.
+
+```text
+CORRECTION PROGRAMME = OWNER FOUND
+CURRENT THROUGHPUT = NOT YET ESTABLISHED
+SYSTEM-SCALE CORRECTION-CAPACITY QUESTION = WATCH
+```
+
+Do not substitute press/charity extrapolations for the scheduled official MI.
 
 ## Resources
 
-Purpose: reduce dependence on Mark's personal burn without making fundraising the project.
+Purpose remains reducing dependence on Mark's personal burn without making fundraising the project.
 
-Current resource posture:
-- Corrigibility Research Fund: funding owner survives (typical $5k–$35k; 31 Oct round noted), but generic correction-propagation and generic “corrigibility != obedience / multiple principals” proposal stories are OWNER FOUND. Residual authority-ambiguity / semantic-non-collapse seam remains HOLD pending a concrete falsifier; **no concept note earned yet**.
-- Arcee Trinity Builders: credit route only if a live experiment has a real Trinity token budget.
-- OpenAI Researcher Access: HOLD on known standing; current FAQ affiliation requirement is not satisfied by the standing established here.
-- Anthropic External Researcher Access: retain only when a surviving research object has a credible Claude/API budget.
-- ARIA Scaling Trust: research seam only; no proposal earned after owner subtraction.
-- Transformative AI Fund / other larger routes remain resource-owner possibilities, not project assignments.
+Fresh 18 Sep resource pass after owner subtraction:
 
-#364's current core does not require model spend. Do not manufacture compute demand or grant-shaped work.
+```text
+BLUEDOT = KEEP WHEN A SPECIFIC COMPUTE / API / TOOLING BOTTLENECK EXISTS
+CORRIGIBILITY RESEARCH FUND = REAL OWNER / NO CONCEPT NOTE EARNED
+ARIA SCALING TRUST = REAL HIGH-UPSIDE OWNER / RESIDUAL THESIS NOT YET EARNED
+LASR = REAL PROGRAMME / HIGH PERSONAL-TIME COMMITMENT / NOT DEFAULT RUNWAY
 
-No application/account/contact/terms/spend/payment action.
+APPLICATION EARNED TODAY = NO
+ACCOUNT / CONTACT / TERMS / SUBMISSION = NONE
+```
+
+The current field/research work is not blocked on paid compute/API access.
+
+`RESOURCE_AVAILABLE != RESOURCE_NEEDED_NOW`.
 
 ## PSFH / Formation
 
@@ -411,8 +513,8 @@ Explicit human gates remain for:
 - payout/tax/travel commitments;
 - crawler/training-policy changes.
 
-Current full-sync receipt:
-`coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
+Current field-activation receipt:
+`coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
