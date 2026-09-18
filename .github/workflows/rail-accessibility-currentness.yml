@@ -33,3 +33,5 @@ jobs:
         run: python -m unittest -v
       - name: Frozen six-station audit
         run: python check.py --frozen
+      - name: Live public-page observation
+        run: python check.py --live
