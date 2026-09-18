@@ -183,8 +183,11 @@ def render_html(rows: list[dict[str, Any]]) -> str:
 
 
 def parse_remark42_find(payload: Any) -> list[dict[str, Any]]:
+    """Accept both observed/current wrapped plain response and bare-list form."""
+    if isinstance(payload, dict):
+        payload = payload.get("comments")
     if not isinstance(payload, list):
-        raise ValueError("expected Remark42 plain comment list")
+        raise ValueError("expected Remark42 plain comments")
     if not all(isinstance(row, dict) for row in payload):
         raise ValueError("owner comment list must contain objects")
     return payload
