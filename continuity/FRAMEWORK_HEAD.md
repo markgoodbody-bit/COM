@@ -400,6 +400,23 @@ One-way hostile review requests are live on #365 for all four activation results
 Detailed receipt:
 `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`.
 
+Late-afternoon follow-on adds three real-use pressures and one bounded synthesis:
+- NATS 8 Sep outage -> **NO DOMAIN DELTA / COMPRESSION ONLY**; safe degradation is a real option-closure boundary witness;
+- Anthropic Sep threat report -> real support for **AUTONOMY != HARM SEVERITY** and **HUMAN IN LOOP != SAFETY**; no new fan-out field;
+- Burnt Oak community solar -> real collective positive-construction witness through differentiated roles; benefits partly projected;
+- sieve/riddle + Burnt Oak -> two-case positive-construction derived view survived after Framework repaired an overclaim that multi-party delivery proved joint-only necessity.
+
+#365 hostile review comment `5730739217` asks whether the positive synthesis should be kept, shrunk or killed as redundant.
+
+Detailed follow-on:
+`coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`.
+
+```text
+TWO_CASE_PORTABILITY != GENERALITY
+JOINT_DELIVERY_OBSERVED != JOINT_ONLY_NECESSITY_PROVED
+POSITIVE_TRANSITION != MORALLY_BETTER
+```
+
 ## Social-care / health-record field seam — COM #99
 
 Owner subtraction is now stronger than the earlier checkpoint.
@@ -514,7 +531,7 @@ Explicit human gates remain for:
 - crawler/training-policy changes.
 
 Current field-activation receipt:
-`coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`.
+`coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
