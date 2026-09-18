@@ -1,6 +1,6 @@
 # Build status
 
-Recorded snapshot: **2026-09-17 Build reacquire — Europe/London**.
+Recorded snapshot: **2026-09-18 morning FULL COMSYNC — Europe/London**.
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
@@ -15,7 +15,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS** | Hannibal candidates remain draft; no public record 4. |
+| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records; issue #31 open public review; PR30 draft at `7618bc0...` with observation-target semantics unresolved; bounded outreach authorised. |nnibal candidates remain draft; no public record 4. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | Researcher Access HOLD; ARIA seam only. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / FRESH-CORPUS ROUTE-RELATION QUESTION / NOT RESULT** | Current exact head `7b7b1fd8...`; hosted CI `35277771413` green. Reader-use pilot is secondary and human-run gated. `LAYER_NOT_STATED` is valid; no whole-record score or causal version claim. |
@@ -26,7 +26,7 @@ PURPOSE > INSTRUMENT
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **STABLE** | `15b9929f...`; three public records unchanged. |
+| THR main | **STABLE PUBLIC BASELINE** | `15b9929f...`; three public records unchanged. |nchanged. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
@@ -136,9 +136,17 @@ No registration, organiser contact, terms acceptance or submission.
 
 ## Other active lanes
 
-### THR / Hannibal
+### THR / architecture and public review
 
-PR27/28/29/30 remain overlapping draft/research probes. Strong external owners cover most ontology machinery. No Hannibal merge and no public record 4.
+THR main remains three public records.
+
+- PR #28: Hannibal candidate / architecture stress; draft, no public record 4.
+- PR #30: Hannibal + JFK probe; draft head `7618bc0...`. Source-ownership and public/default record-link repairs are useful; observation-target semantics remains unresolved.
+- issue #31: public hostile-review aperture; no issue comments observed in this sync.
+- bounded public outreach/testing through existing authorised project identities/channels is authorised; feedback remains evidence input, not validation.
+- Sunjata remains stress-only; do not synthesise “the epic” into a THR record by momentum.
+
+No stewardship/licence/canon/public-record promotion.
 
 ### COM #365
 
@@ -146,7 +154,11 @@ Positive-construction quarry earned a derived view, not a new TRACE/ME primitive
 
 ### Resources
 
-No application live. OpenAI Researcher Access remains HOLD on the project's current independent standing; ARIA Scaling Trust remains a research seam, not an earned proposal. No contact/account/terms/spend/payment action.
+No application live.
+
+Retained routes: OpenAI Researcher Access and Anthropic External Researcher Access only when a surviving research object has a credible API budget; ARIA remains a research seam only. LASR is time-sensitive but is a separate career/research decision, not default project runway.
+
+#364 currently requires no model spend. No contact/account/terms/spend/payment action.
 
 ### Campfire / Square
 
@@ -169,7 +181,7 @@ Explicit human gates remain for:
 - travel/payout/tax;
 - crawler/training-policy changes.
 
-Current receipt: `coordination/build_ledger/FULL_COMSYNC_20260917_BUILD_REACQUIRE.md`.
+Current receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
