@@ -213,14 +213,21 @@ DO NOT REPACKAGE THR LANGUAGE
 ## Current priority
 
 ```text
-1. ATRS / Apart Epistemics = PRESERVE RESULT
-2. Hack Apertus = PREP FROZEN / RUN IN WINDOW
-3. WORLD / REAL USE = FIND NEXT EARNED GAP
+1. WORLD / REAL USE = FIND NEXT EARNED GAP
+2. ATRS / Apart Epistemics = PRESERVE RESULT / DO NOT PRE-CONSUME
+3. Hack Apertus = PREP FROZEN / RUN ONLY IN WINDOW
 4. Open Agent = HOLD / NO CURRENT PRODUCT
 5. Nebius/NVIDIA = HOLD / NO CURRENT PRODUCT
 6. Since AI = WATCH CHALLENGES / HUMAN LOAD
 7. Apart Collusion = HOLD UNTIL REAL DELTA
 8. Shipaton 2026 = STOP
+```
+
+This ordering is deliberate. Competition windows are opportunities around useful work; they are not the project's top-level work queue.
+
+```text
+WORLD / REAL USE > COMPETITION PREPARATION
+PRESERVE FUTURE RESULT != SPEND CURRENT TOKENS
 ```
 
 No competition registration, account creation, store submission, terms acceptance, travel booking, spend or external contact is authorised by this tournament record.
