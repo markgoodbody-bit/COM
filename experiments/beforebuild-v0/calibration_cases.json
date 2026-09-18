@@ -1,0 +1,189 @@
+{
+  "format": "beforebuild-calibration-v0.1",
+  "cases": [
+    {
+      "id": "evidencebridge-vs-doubt",
+      "proposal": "Build a standalone inspectable evidence-lineage product for claims, sources, contradictions, corrections and unknowns.",
+      "world_need": {
+        "observed": true,
+        "description": "THR pressure cases require inspectable source dependence, translation/attribution and unresolved identity without promoting repetition into corroboration.",
+        "evidence": [
+          "COM PR #376 and its four frozen THR interoperability fixtures"
+        ]
+      },
+      "hard_cases": [
+        {
+          "id": "flak",
+          "description": "dependent repetition must not become independent corroboration"
+        },
+        {
+          "id": "hannibal",
+          "description": "translation and attributed source criticism must remain bounded"
+        },
+        {
+          "id": "r-vale",
+          "description": "reported distinctness must coexist with unresolved identity"
+        },
+        {
+          "id": "sieve-riddle",
+          "description": "transmission-lineage uncertainty must remain visible"
+        }
+      ],
+      "owners": [
+        {
+          "id": "doubt-v0.8.0",
+          "evidence": "Unmodified alsoleg89/doubt v0.8.0 validator pinned in COM PR #376.",
+          "exact_function_match": true,
+          "trial": {
+            "executed": true,
+            "hard_case_results": {
+              "flak": "PASS",
+              "hannibal": "PASS",
+              "r-vale": "PASS",
+              "sieve-riddle": "PASS"
+            },
+            "material_losses": [
+              {
+                "id": "richer-thr-machine-semantics",
+                "description": "Dedicated THR ancestry/reported-state/supersession semantics are compressed in Doubt's smaller contract.",
+                "consequential_failure_observed": false
+              }
+            ],
+            "semantic_cheating_observed": false
+          }
+        }
+      ],
+      "uncovered_requirement": {
+        "observed": false,
+        "material": false,
+        "description": "No consequential use failure from the observed compression was established."
+      },
+      "smallest_build": null
+    },
+    {
+      "id": "policy-boundary-compiler",
+      "proposal": "Build a compiler/evaluator that preserves unresolved, refused, withheld, non-authority, conflict and revocation states through machine policy/negotiation.",
+      "world_need": {
+        "observed": false,
+        "description": "The experiment demonstrated only that an authored preserving compiler can reproduce its authored fixture states; no real compiler collapse causing a material wrong outcome was observed.",
+        "evidence": [
+          "COM PR #362 hostile closure receipt"
+        ]
+      },
+      "hard_cases": [
+        {
+          "id": "unresolved",
+          "description": "unresolved must not silently become negotiable"
+        },
+        {
+          "id": "refused",
+          "description": "refusal must not become missing/default permission"
+        },
+        {
+          "id": "withheld",
+          "description": "withheld value must not be disclosed or inferred"
+        },
+        {
+          "id": "revoked",
+          "description": "revoked authority must not remain active"
+        }
+      ],
+      "owners": [
+        {
+          "id": "authorization-standards-cluster",
+          "evidence": "Current DPV/ISO 27560, XACML, Cedar, ODRL and agent-authorization work preserve substantial status/reason/context/delegation semantics.",
+          "exact_function_match": false,
+          "trial": {
+            "executed": false,
+            "hard_case_results": {},
+            "material_losses": [],
+            "semantic_cheating_observed": false
+          }
+        }
+      ],
+      "uncovered_requirement": {
+        "observed": false,
+        "material": false,
+        "description": "No real requirement->policy pipeline failure remained after owner subtraction."
+      },
+      "smallest_build": {
+        "description": "Run current model/compiler against synthetic fixtures.",
+        "bounded": true,
+        "kill_condition": "Kill if fixtures mostly measure explicit cue-following or no real pipeline failure is observed."
+      }
+    },
+    {
+      "id": "rail-accessibility-currentness",
+      "proposal": "Build a tiny public-surface checker for contradictory lift-existence/currentness statements.",
+      "world_need": {
+        "observed": true,
+        "description": "Three stations had current owner-controlled passenger summaries stating no lifts while another current owner-controlled surface necessarily evidenced lift existence; three controls did not show the contradiction.",
+        "evidence": [
+          "COM PR #383 frozen/live six-station audit"
+        ]
+      },
+      "hard_cases": [
+        {
+          "id": "HIR",
+          "description": "contradiction should be detected"
+        },
+        {
+          "id": "IRL",
+          "description": "contradiction should be detected"
+        },
+        {
+          "id": "DSY",
+          "description": "contradiction should be detected"
+        },
+        {
+          "id": "BIW",
+          "description": "existing-lift control should remain consistent"
+        },
+        {
+          "id": "AGV",
+          "description": "existing-lift control should remain consistent"
+        },
+        {
+          "id": "LLE",
+          "description": "existing-lift control should remain consistent despite separate outage information"
+        }
+      ],
+      "owners": [
+        {
+          "id": "national-rail-accessibility-surfaces",
+          "evidence": "National Rail Accessibility Map/live lift data and station/operator accessibility surfaces own live operational/accessibility information.",
+          "exact_function_match": false,
+          "trial": {
+            "executed": true,
+            "hard_case_results": {
+              "HIR": "FAIL",
+              "IRL": "FAIL",
+              "DSY": "FAIL",
+              "BIW": "PASS",
+              "AGV": "PASS",
+              "LLE": "PASS"
+            },
+            "material_losses": [
+              {
+                "id": "cross-surface-currentness-consistency",
+                "description": "No owner tool/surface found in the bounded pass exposed the exact passenger-summary vs lift-existence contradiction as a consistency audit.",
+                "consequential_failure_observed": true
+              }
+            ],
+            "semantic_cheating_observed": false
+          }
+        }
+      ],
+      "uncovered_requirement": {
+        "observed": true,
+        "material": true,
+        "description": "A bounded owner-routable cross-surface existence/currentness consistency check remained."
+      },
+      "smallest_build": {
+        "description": "Six-station existence/currentness checker with negation/fetch guards and an unsent owner correction packet.",
+        "bounded": true,
+        "kill_condition": "Kill or shrink if owner fixes the data, current public fetches become too fragile, or an existing owner tool provides the same consistency check."
+      }
+    }
+  ]
+}
