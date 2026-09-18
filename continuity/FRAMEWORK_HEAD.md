@@ -266,13 +266,26 @@ PR #30 has earned two bounded repairs:
 - assertion evidence observations must belong to a source cited by that assertion;
 - public/default mention validation again requires `record_id`; recordless research validation is only an explicit isolated caller mode, and a public repo branch/fixture is not private staging.
 
-One semantic defect remains unresolved: assertion state `observed` is not bound to a typed object of observation. A one-word mutation can upgrade report-page evidence from `reported_by_source` to `observed` while validation still accepts it. A blanket source-media ban was rejected as unsound because legitimate observations *of* documents/pages exist.
+The remaining observation-state false pass now has a bounded stacked repair in draft PR #32:
+
+```text
+PR32 head = 845b2a0dfb0de049bafb31f7342eaeae12d1fa60
+workflow 35325473325 = SUCCESS
+tests = 66 OK
+```
+
+The repair does not invent an observation ontology. Current source observations are treated as bounded retrieval/inspection events of source representations. Cross-record assertion states `observed` and `reconciled` fail closed until THR has an earned typed observation/reconciliation target relation. CRMsci 3.2 is the stronger owner for that semantic distinction. Existing `reported_by_source` use remains valid.
+
+Repository-wide search found legitimate narrative/record-local uses of observed/reconciled but no production cross-record assertion currently using those states.
 
 ```text
 ASSERTION_SOURCE_OWNERSHIP_REPAIR = USEFUL
 PUBLICATION_BOUNDARY_REPAIR = USEFUL
-OBSERVATION_TARGET_SEMANTICS = UNRESOLVED
+OBSERVATION_STATE_FALSE_PASS = REPAIRED_ON_DRAFT_BRANCH
 PR30 = DRAFT / NOT MERGED / NOT DEPLOYED
+PR32 = DRAFT / GREEN / HOSTILE_REVIEW_PENDING / NOT MERGED
+SOURCE_MEDIUM != OBSERVED_OBJECT
+FAIL_CLOSED_NOW != PERMANENT_SCHEMA_DECISION
 ```
 
 Sunjata remains only a stress candidate. Current hostile return kills a synthesised record of “the epic” and, if pursued, shrinks toward one recording/performance plus its extraction/permission chain. Community authority/restriction should route to strong owners rather than a new THR consent ontology.
