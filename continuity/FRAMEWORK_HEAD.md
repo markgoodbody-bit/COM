@@ -46,7 +46,7 @@ STOP
 ```text
 TRACE v0.3.0 main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics v0.7.0 main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-The Human Record main = 194012dcb8247d3cb964cfc65b5082ce67355529
+The Human Record main = 58f1b7ade96ea2a5524bb6d36fdba193f8c016db
 THR public records = 3
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
@@ -283,7 +283,7 @@ No registration, terms acceptance, organiser contact or submission by momentum.
 
 THR main is now:
 
-`194012dcb8247d3cb964cfc65b5082ce67355529`
+`58f1b7ade96ea2a5524bb6d36fdba193f8c016db`
 
 Public catalogue remains exactly **three records**. No record 4 was promoted.
 
@@ -334,10 +334,20 @@ Closed as integrated or superseded:
 - PR #33 — checked-source sibling repair.
 
 Current Hannibal candidate surface:
-- PR #35 — draft historical-human encounter rebuilt from repaired main; exact head `76dd138d1d1d5627dec071b013062cf8349409c6`; hosted workflow `35330401494 SUCCESS`; 70 tests / OK; 7 warnings; public catalogue still three records.
-- Earlier Hannibal candidate branches are superseded/closed for integration purposes; do not revive duplicates.
+- PR #35 — draft historical-human encounter, now synced with current production main;
+- exact head `86d22fd575c0d3da51a7b866484501796e523464`;
+- hosted workflow `35333703151 SUCCESS`, job `105563590181 SUCCESS`;
+- structural / operational PASS;
+- 74 tests / OK; 7 warnings remain;
+- public catalogue still exactly three records.
+- Earlier Hannibal candidate/mixed-review branches are superseded/closed for integration purposes; do not revive duplicates.
 
-PR #35 is **not** public record 4 and is not merge-ready merely because validator infrastructure improved.
+Production main also received PR #37 independently:
+- merge `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`;
+- malformed assertion evidence ID containers now fail structurally;
+- the repair is fixture-independent and does not depend on Hannibal remaining a candidate.
+
+PR #35 is **not** public record 4. Its next gate is the revised-head hostile review asking `KEEP_FOR_READER_PAGE / REPAIR_SMALL / KILL_AS_PUBLIC_ENCOUNTER`. Green structure does not authorise a reader page or catalogue promotion.
 
 Issue #31 remains the public hostile-review aperture. Framework comment `5728047635` records that the two named false passes are repaired on main while explicitly keeping the wider break surface open.
 
