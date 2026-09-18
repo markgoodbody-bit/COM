@@ -33,6 +33,7 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`ANTHROPIC_SEPT_2026_AUTONOMOUS_CYBER_BOUNDARY_ACTIVATION.md`](ANTHROPIC_SEPT_2026_AUTONOMOUS_CYBER_BOUNDARY_ACTIVATION.md) | Real field support for **AUTONOMY != HARM SEVERITY** and **HUMAN IN LOOP != SAFETY**; no new primitive. |
 | [`BURNT_OAK_COMMUNITY_SOLAR_POSITIVE_ACTIVATION_20260918.md`](BURNT_OAK_COMMUNITY_SOLAR_POSITIVE_ACTIVATION_20260918.md) | Real collective capability construction through differentiated roles; **positive construction survived without a new primitive**. |
 | [`POSITIVE_CONSTRUCTION_TWO_CASE_SYNTHESIS_20260918.md`](POSITIVE_CONSTRUCTION_TWO_CASE_SYNTHESIS_20260918.md) | Sieve/riddle + Burnt Oak support a bounded construction view; keeps realised/projected, cooperation/necessity and construction/goodness distinct. |
+| [`PLACE_BASED_BUDGETS_OWNER_CURRENTNESS_20260918.md`](PLACE_BASED_BUDGETS_OWNER_CURRENTNESS_20260918.md) | Live public-service integration programme already owns people-vs-silo, pooled/aligned governance, user-voice and evaluation framing; **owner convergence / claim narrowing**. |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
