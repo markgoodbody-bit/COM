@@ -72,8 +72,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "b46d615a9c6795ce06262453773b759c2ab0adfd6db8c819b68200eda2f8b287",
-    "change_history_input_html_sha256": "77d22210e2b9f739e76aa1b2593e4d50fc2bcb4bd7c09b054d0d5ccf9a96c54e",
+    "change_history_sha256": "2e0daf60ff804fb416c9544b993d55eafe1cf1fe163de22af42eaab97d66be8f",
+    "change_history_input_html_sha256": "8728b90da6e7d1e95688cadac407d90bc93688625036d00f9507710ce7c32625",
     "change_history_addendum_note": "D016 through D038 and D045-D072 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. D068-D069 were backfilled from exact published Git history after their original publications omitted change-log/version advances. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
