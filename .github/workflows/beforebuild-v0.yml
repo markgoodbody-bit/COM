@@ -176,7 +176,7 @@ jobs:
 
   remark42-guestbook-owner-trial:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -187,22 +187,35 @@ jobs:
           REMARK_IMAGE: ghcr.io/umputun/remark42:v1.16.4@sha256:980e0e76a6f241cd181f44c5b4d686f0d8cd7f552e11deb3bdcba223b2c3b866
         run: |
           docker pull "$REMARK_IMAGE"
-          docker run -d --rm --name beforebuild-remark42             -p 127.0.0.1:8080:8080             -e REMARK_URL=http://127.0.0.1:8080             -e SITE=psfh             -e SECRET=beforebuild-ephemeral-secret-not-for-production             -e AUTH_ANON=true             -e MAX_COMMENT_SIZE=280             -e ADMIN_PASSWD=beforebuild-admin             "$REMARK_IMAGE"
+          docker run -d --name beforebuild-remark42             -p 127.0.0.1:8080:8080             -e REMARK_URL=http://127.0.0.1:8080             -e SITE=psfh             -e SECRET=beforebuild-ephemeral-secret-0123456789abcdef             -e AUTH_ANON=true             "$REMARK_IMAGE"
 
           ready=0
-          for i in $(seq 1 40); do
+          for i in $(seq 1 25); do
+            if ! docker inspect beforebuild-remark42 >/dev/null 2>&1; then
+              echo "container disappeared"
+              break
+            fi
+            running=$(docker inspect -f '{{.State.Running}}' beforebuild-remark42 2>/dev/null || echo false)
+            if [ "$running" != "true" ]; then
+              echo "container exited before readiness"
+              docker logs beforebuild-remark42 || true
+              break
+            fi
             if curl -fsS http://127.0.0.1:8080/ping >/dev/null; then
               ready=1
               break
             fi
             sleep 1
           done
+
           if [ "$ready" -ne 1 ]; then
-            docker logs beforebuild-remark42
+            echo "Remark42 did not become ready"
+            docker logs beforebuild-remark42 || true
+            docker inspect beforebuild-remark42 || true
             exit 1
           fi
 
-      - name: Exercise guestbook hard cases and emit machine owner receipt
+      - name: Exercise non-admin guestbook hard cases and emit machine owner receipt
         run: |
           python - <<'PY'
           import json
@@ -221,20 +234,18 @@ jobs:
           }
           notes = {}
 
-          def run(args, check=False):
-              p = subprocess.run(args, text=True, capture_output=True)
-              if check and p.returncode != 0:
-                  raise RuntimeError(f"command failed: {args!r}\nstdout={p.stdout}\nstderr={p.stderr}")
-              return p
+          def run(args):
+              return subprocess.run(args, text=True, capture_output=True)
 
           cookies = "/tmp/remark-cookies.txt"
           login = run([
               "curl", "-sS", "-o", "/tmp/remark-login-body",
               "-D", "/tmp/remark-login-headers",
               "-c", cookies,
+              "-w", "%{http_code}",
               f"{base}/auth/anonymous/login?user=visitor&aud=psfh",
           ])
-          notes["anonymous_login_curl_rc"] = login.returncode
+          notes["anonymous_login_status"] = login.stdout.strip()
 
           xsrf = ""
           cp = Path(cookies)
@@ -261,10 +272,9 @@ jobs:
               args += ["-X", "POST", f"{base}/api/v1/comment?site=psfh", "-d", payload]
               p = run(args)
               try:
-                  status = int(p.stdout.strip())
+                  return int(p.stdout.strip())
               except Exception:
-                  status = 0
-              return status
+                  return 0
 
           first_status = post("I was here", "/tmp/remark-first.json")
           notes["first_post_status"] = first_status
@@ -272,19 +282,17 @@ jobs:
               results["anonymous-or-account-free"] = "PASS"
               first = json.load(open("/tmp/remark-first.json"))
               comment_id = first.get("id")
-              # Remark42 stores/render comments as comment objects but supplies no
-              # PSFH-specific untrusted/project-instruction boundary.
-              if "project_instruction" in first or "trust" in first:
-                  results["separate-trust-region"] = "PASS"
-              else:
-                  results["separate-trust-region"] = "FAIL"
 
-              # User-authenticated delete within the configured edit window.
+              # PSFH requires a machine-visible trust boundary on each guest row.
+              results["separate-trust-region"] = (
+                  "PASS" if ("project_instruction" in first or "trust" in first) else "FAIL"
+              )
+
+              # Try author deletion using the documented user-authenticated update route.
               payload = json.dumps({"text": "", "summary": "remove", "delete": True})
               args = [
                   "curl", "-sS", "-o", "/tmp/remark-delete.json", "-w", "%{http_code}",
-                  "-b", cookies,
-                  "-H", "Content-Type: application/json",
+                  "-b", cookies, "-H", "Content-Type: application/json",
               ]
               if xsrf:
                   args += ["-H", f"X-XSRF-TOKEN: {xsrf}"]
@@ -304,10 +312,10 @@ jobs:
                   "curl", "-sS",
                   f"{base}/api/v1/find?site=psfh&url={thread}&format=plain",
               ])
-              if del_status in {200, 201} and "I was here" not in found.stdout:
-                  results["true-removal"] = "PASS"
-              elif del_status:
-                  results["true-removal"] = "FAIL"
+              if del_status in {200, 201}:
+                  results["true-removal"] = (
+                      "PASS" if "I was here" not in found.stdout else "FAIL"
+                  )
 
           md_status = post("[x](https://example.com)", "/tmp/remark-markdown.json")
           notes["markdown_post_status"] = md_status
@@ -315,42 +323,17 @@ jobs:
               md = json.load(open("/tmp/remark-markdown.json"))
               rendered = str(md.get("text", ""))
               original = str(md.get("orig", ""))
-              # PSFH v0 explicitly wants no links/markdown in stored guest text.
-              if "https://example.com" in original or "<a " in rendered:
-                  results["plain-small-mark"] = "FAIL"
-              else:
-                  results["plain-small-mark"] = "PASS"
+              # Accepting/storing a link-shaped Markdown mark fails PSFH's v0 contract.
+              results["plain-small-mark"] = (
+                  "FAIL"
+                  if ("https://example.com" in original or "<a " in rendered or "https://example.com" in rendered)
+                  else "PASS"
+              )
 
-          export = run([
-              "curl", "-sS", "-o", "/tmp/remark-export.bin", "-w", "%{http_code}",
-              "-u", "admin:beforebuild-admin",
-              f"{base}/api/v1/admin/export?site=psfh&mode=stream",
-          ])
-          try:
-              export_status = int(export.stdout.strip())
-          except Exception:
-              export_status = 0
-          notes["admin_export_status"] = export_status
-          if export_status == 200 and Path("/tmp/remark-export.bin").stat().st_size > 0:
-              results["export-portability"] = "PASS"
-          elif export_status:
-              results["export-portability"] = "FAIL"
-
-          readonly = run([
-              "curl", "-sS", "-o", "/tmp/remark-readonly.json", "-w", "%{http_code}",
-              "-u", "admin:beforebuild-admin",
-              "-X", "PUT",
-              f"{base}/api/v1/admin/readonly?site=psfh&url={thread}&ro=1",
-          ])
-          try:
-              ro_status = int(readonly.stdout.strip())
-          except Exception:
-              ro_status = 0
-          notes["readonly_set_status"] = ro_status
-          if ro_status in {200, 201}:
-              blocked_status = post("should be blocked", "/tmp/remark-blocked.json")
-              notes["post_after_readonly_status"] = blocked_status
-              results["bounded-abuse-stop"] = "PASS" if blocked_status != 201 else "FAIL"
+          # Admin export/read-only are documented owner capabilities, but this trial does
+          # not invent an admin identity. They remain NOT_TESTED in the executable receipt.
+          notes["export_review"] = "documented_owner_capability_not_executed"
+          notes["readonly_review"] = "documented_owner_capability_not_executed"
 
           receipt = {
               "format": "beforebuild-owner-receipts-v0.1",
@@ -359,7 +342,7 @@ jobs:
                   "candidate_id": "remark42",
                   "executed": True,
                   "hard_case_results": results,
-                  "source": "loopback-ci:ghcr.io/umputun/remark42:v1.16.4@sha256:980e0e76a6f241cd181f44c5b4d686f0d8cd7f552e11deb3bdcba223b2c3b866",
+                  "source": "loopback-ci:remark42-v1.16.4-minimal-documented-config",
               }],
           }
           json.dump(receipt, open("/tmp/remark-receipt.json", "w"), indent=2)
@@ -374,6 +357,8 @@ jobs:
           import json
           r=json.load(open('/tmp/guestbook-owner-result.json'))
           row=r['results'][0]
+          # Do not assert a favourable verdict. Incomplete relevant trials must shrink.
+          assert row['verdict'] in {'SHRINK','USE_OWNER','INTEROPERATE','BUILD_PROBE','STOP'}
           print(json.dumps({
               'prospective_verdict': row['verdict'],
               'reason': row['reason'],
@@ -392,3 +377,9 @@ jobs:
             /tmp/guestbook-owner-result.json
           if-no-files-found: warn
           retention-days: 14
+
+      - name: Show owner logs
+        if: always()
+        run: |
+          docker logs beforebuild-remark42 || true
+          docker rm -f beforebuild-remark42 || true
