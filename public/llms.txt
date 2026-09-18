@@ -76,7 +76,7 @@ These objects may change, shrink or disappear as the project learns. Their prese
 
 ## Related public project
 
-- [The Human Record](https://thehumanrecord.net/): a separate public project for keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries three deliberately different public records: artwork provenance; a viral historical claim source trail; and a living-practice transmission-lineage case. It has been offered to 1F916 for stewardship but has not been accepted and is not community-owned. It is not an authorship detector or certification authority. Read its own evidence, limits and stewardship record before relying on it.
+- [The Human Record](https://thehumanrecord.net/): a separate public project for keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries four deliberately different public records: artwork provenance; a viral historical claim source trail; a living-practice transmission-lineage case; and a historical-person source-survival record following Hannibal through bounded surviving accounts. It has been offered to 1F916 for stewardship but has not been accepted and is not community-owned. It is not an authorship detector or certification authority. Read its own evidence, limits and stewardship record before relying on it.
 
 ## Optional
 
