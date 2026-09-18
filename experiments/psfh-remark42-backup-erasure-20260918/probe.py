@@ -26,7 +26,12 @@ IMAGE = "ghcr.io/umputun/remark42:v1.16.4@sha256:980e0e76a6f241cd181f44c5b4d686f
 
 
 def run(args: list[str], *, check: bool = True) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(args, text=True, capture_output=True, check=check)
+    cp = subprocess.run(args, text=True, capture_output=True)
+    if check and cp.returncode != 0:
+        raise RuntimeError(
+            f"command failed ({cp.returncode}): {args!r}\nstdout={cp.stdout}\nstderr={cp.stderr}"
+        )
+    return cp
 
 
 def request(opener, url: str, *, method="GET", payload=None, xsrf=None):
@@ -121,7 +126,11 @@ def main() -> int:
             comment_id = comment["id"]
 
             # Create a native owner backup while the synthetic mark is current.
-            run(["docker", "exec", container, "backup", "-s", SITE])
+            run([
+                "docker", "exec",
+                "-e", "REMARK_URL=http://127.0.0.1:8080",
+                container, "backup", "-s", SITE,
+            ])
             listed = run([
                 "docker", "exec", container, "sh", "-lc",
                 "find /srv/var/backup -maxdepth 1 -type f -name '*.gz' -print | sort"
@@ -151,7 +160,11 @@ def main() -> int:
 
             # Restore the pre-delete backup and check whether old guest text returns.
             backup_name = Path(backup_in_container).name
-            run(["docker", "exec", container, "restore", "-f", backup_name, "-s", SITE])
+            run([
+                "docker", "exec",
+                "-e", "REMARK_URL=http://127.0.0.1:8080",
+                container, "restore", "-f", backup_name, "-s", SITE,
+            ])
             time.sleep(0.5)
             after_restore = current_payload(opener, base)
             result["restored_from_pre_delete_backup_contains_marker"] = payload_contains_marker(after_restore)
