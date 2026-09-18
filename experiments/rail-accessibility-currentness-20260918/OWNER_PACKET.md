@@ -4,7 +4,7 @@ Status: **PREPARED FOR OWNER ROUTING / NOT SENT / NO CONTACT AUTHORISED**
 
 ## Purpose
 
-Report three current contradictions in public station lift-existence information, with controls and a reproducible check.
+Report three current contradictions in public station lift-**existence** information, with controls and a reproducible check.
 
 ## Problem already recognised by regulator
 
@@ -14,22 +14,22 @@ ORR's 2025-26 Network Rail assessment says that a significant number of complete
 
 1. Horton-in-Ribblesdale (HIR)
 - National Rail station summary: `There are no lifts`
-- National Rail backend: `Lifts have been installed ... there is now step-free access to both platforms.`
+- National Rail Accessibility Map surface: `Lifts have been installed ... there is now step-free access to both platforms.`
 
 2. Irlam (IRL)
 - National Rail station summary: `There are no lifts`
-- same public page: lift-out-of-order alert
-- National Rail backend: lifts installed Spring 2025; individual lifts exposed
+- the same passenger page carries a lift-out-of-order alert, which itself implies a lift exists
+- National Rail Accessibility Map surface says lifts were installed in Spring 2025 and exposes individual lift records
 
 3. Daisy Hill (DSY)
 - National Rail station summary: `There are no lifts`
 - Northern station page: lift access available; lifts installed
-- Northern opening report: new lift entered use in April 2025
+- Northern opening report: a new lift entered use in April 2025
 
 Controls:
 - Biggleswade (BIW): public summary says lifts exist
 - Abergavenny (AGV): public summary says lifts exist
-- Llanelli (LLE): public summary says lifts exist even while an outage alert is active
+- Llanelli (LLE): public summary says lifts exist; an outage alert remains separate existence evidence
 
 ## Reproduction
 
@@ -41,8 +41,7 @@ Commands:
 `python check.py --frozen`
 `python check.py --live`
 
-Exact live-observation workflow witness:
-`35380766892 SUCCESS`
+The checker intentionally does **not** classify whether a station's lifts are working now or whether a complete step-free route is currently usable. Those questions have stronger owner surfaces and can change independently of lift existence.
 
 ## Requested correction
 
@@ -54,16 +53,14 @@ This packet does not claim the stations are currently accessible or inaccessible
 
 No root cause or responsible organisation is asserted from the public evidence.
 
-
 ## Current owner routes — not used
 
 National Rail's current Contact Us page says:
 - station accessibility/facility comments can be directed to the station operator;
-- inaccuracies in National Rail website/services can be reported to National Rail Enquiries;
-- the site specifically asks people who notice inaccuracies to include the affected URL.
+- questions about National Rail website/services can be sent to National Rail Enquiries.
 
 Primary first route for this packet:
-National Rail Contact Us / website accuracy route:
+National Rail Contact Us / website route:
 https://www.nationalrail.co.uk/help-and-assistance/contact-us/
 
 Northern accessibility/customer route is a possible second route for Northern-managed station content:
