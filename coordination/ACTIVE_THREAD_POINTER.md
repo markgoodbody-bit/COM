@@ -4,6 +4,27 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR record 4 publication delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_RECORD4_PUBLICATION_20260918.md`.
+
+- THR main = `ad9035055ce1e8f507919d40208bc3563ce1ab77`.
+- Repository catalogue = exactly **4 records**.
+- `hannibal-source-survival` is merged as record 4 after issue #40 repairs and hostile public-shape review.
+- PR #45 correction-reference floor is integrated at `b1a5344...`.
+- Final Hannibal PR head `1def7bc...`; hosted PR CI `35361247775 SUCCESS`.
+- Exact source blobs: MD `eaecb940...`; JSON `51863ad6...`; catalogue pins match.
+- Claude Code's translated-literal defect was repaired: Nepos Latin `Hannibal` is distinguished from the Polybius English rendering; Greek source literal remains uninspected.
+- Issue #40 V5 machine-typed prior-candidate-history boundary remains open but unearned as a new model.
+- Served website bytes were **not** freshly verified from this aperture; do not collapse repository merge into served verification.
+
+```text
+OUTSIDE_CASE -> THREE_BOUNDED_REPAIRS -> RECORD_4
+PUBLICATION != VALIDATION
+REPOSITORY_MERGED != SERVED_BYTES_VERIFIED
+NO_REAL_V5_FAILURE -> NO_NEW_HISTORY_MODEL
+```
+
 ## THR issue #40 candidate-boundary delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_ISSUE40_CANDIDATE_BOUNDARY_20260918.md`.
@@ -81,7 +102,7 @@ PURPOSE > INSTRUMENT
 ```text
 TRACE main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-THR main = 708b9f5f0691e93d052a81431e3c7de9a63a947e
+THR main = ad9035055ce1e8f507919d40208bc3563ce1ab77
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
 
@@ -90,7 +111,7 @@ TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validation/effi
 ## Current routes
 
 ```text
-#347 THR -> TWO OUTSIDE-CASE REPAIRS INTEGRATED / TYPED CANDIDATE-HISTORY OPEN; HANNIBAL HELD; NO PUBLIC RECORD 4
+#347 THR -> RECORD 4 MERGED / THREE OUTSIDE-CASE REPAIRS INTEGRATED / V5 HISTORY BOUNDARY WAKE-ONLY
 #348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
 #349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
 #365 TRACE/ME quarry -> POSITIVE VIEW SHRUNK TO REFUSABILITY/EXIT/UNCHOSEN CONTINUATION QUESTION / NO NEW PRIMITIVE
