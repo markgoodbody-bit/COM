@@ -4,6 +4,22 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR four-record maintenance / AI contribution delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_FOUR_RECORD_MAINTENANCE_GROK_FLAK_20260918.md`.
+
+- THR current main = `fef76a44ffb0986ac677f504858cad0787ccfabf`; catalogue remains exactly **4**.
+- PR #46 public maintenance sync merged `927c587e...` after CI `35370404004 SUCCESS` / 92 tests.
+- Codex verified record-4 served bytes at `ad903505...` (16/16 checked paths); later current-head served bytes are not separately reverified here.
+- PR #47 carried the user-relayed Grok flak lead through Codex + Framework source checking and merged as `fef76a44...`; exact-head CI `35371411917 SUCCESS` / 92 tests.
+- Flak record v0.2.5 now partially checks one Westermann 1940 campaign passage while preserving OCR/authentication/archive limits; 80% aggregate mortality remains unresolved.
+- record-5 differentiated quarry: Claude Code returned **OWNER_FOUND twice / ZERO RECORDS**.
+- Cabinet Office Assist correction: UK Government Web Archive already preserves substantial prior-state history; the September ATRS freeze is our verification copy, not the only public old state.
+
+`CASUALTY != DEATH`
+`SELECTED PASSAGE != WHOLE BOOK`
+`RECORD_5 = NOT EARNED`
+`OWNER FOUND -> STOP`
 ## EvidenceBridge / Doubt owner-convergence delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/DOUBT_THR_INTEROP_20260918.md`.
