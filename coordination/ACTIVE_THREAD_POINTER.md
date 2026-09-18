@@ -2,7 +2,7 @@
 
 Current bounded competition thread:
 
-1. **Amazon Alexa+** — active draft build in Campfire Relay PR #245; exact green head `26ca1046...`; product = verified action receipts / explicit unknown / no ambiguous-write retry / read-only reconciliation. Mechanism novelty not claimed.
+1. **Amazon Alexa+** — active draft build in Campfire Relay PR #245; exact green head `2d969a8c...`; product = verified action receipts / explicit unknown / no ambiguous-write retry / read-only reconciliation. Mechanism novelty not claimed.
 2. **Hack Apertus** — hold until 1 October live challenge/rules gate.
 3. **London applications** — Dwelly / Stripe / No.10 are human application/attendance gates; no application or travel commitment made.
 4. **Open Agent / Nebius** — no generic clone by momentum; reopen only on track-specific or stack-native fit.
