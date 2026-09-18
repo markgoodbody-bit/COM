@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, cp, writeFile, unlink, readFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { verifyResources, copyResources } from './resources.mjs';
 
 const source = path.resolve(import.meta.dirname, '../public/resources');
