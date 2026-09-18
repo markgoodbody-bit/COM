@@ -1,44 +1,29 @@
-# No Free QALY — a measurement contract for claims that “decision quality improved”
+# No Free QALY — a bounded synthesis about comparing “decision quality improved”
 
-Status: **OPEN-TRACK SYNTHESIS CANDIDATE / RUNNABLE TEACHING APPENDIX / NOT A NEW THEOREM / NOT A UNIVERSAL SCORE / NOT A SUBMISSION**
+Status: **FALLBACK OPEN-TRACK SYNTHESIS / ONE RUNNABLE OWNER-THEORY ILLUSTRATION / NOT A NEW THEOREM / NOT A UNIVERSAL SCORE / NOT A SUBMISSION**
 
 Apart AI x Epistemics asks in its Open Track for the field's equivalent of a QALY: a defensible, comparable unit for `decision quality improved`.
 
-This candidate's answer is conditional rather than absolute:
+This fallback answer is conditional rather than absolute:
 
-> Existing decision-analysis results identify restrictive conditions under which some improvement measures are comparable across decision problems. Outside those conditions, cross-project comparison is not established unless the value/utility contract, counterfactual baseline, uncertainty model and aggregation rule are explicit.
+> Existing decision-analysis results identify conditions under which some improvement measures are comparable across decision problems. Outside those conditions, cross-project comparison is not established unless enough of the decision/value/aggregation contract is shared and explicit.
 
-This repository does **not** claim to discover metric rank reversal. The executable examples are a teaching appendix that makes established measurement problems visible in an AI-epistemics setting.
-
-They illustrate three bounded cases:
-
-1. accuracy gain and expected-utility gain can order two improvements differently when the declared stakes differ;
-2. expected-utility increase and certainty-equivalent gain can order monetary improvements differently under a declared nonlinear utility setting;
-3. preference-sensitive decisions can lack an objective accuracy target, while alternative stakeholder value contracts can order interventions differently.
+This repository does **not** claim to discover metric rank reversal. The executable appendix now keeps only the strongest reviewed illustration: a monetary CARA example of the Abbas & Hazen value-of-information mechanism. Earlier objective-accuracy and preference-sensitive examples were removed after hostile review showed that their ordering depended on incomparable/author-chosen value contracts rather than an earned new result.
 
 ## Strong owners / boundary
 
-- **Abbas & Hazen, _On the Value of Information Across Decision Problems_** owns the load-bearing decision-analysis theory. It also gives positive comparability conditions; this synthesis must not imply that cross-problem comparison is always impossible.
-- **Metric / benchmark rank-instability research** already owns the broader phenomenon that evaluation choices can reverse system rankings. The runnable appendix is not offered as novelty.
-- **DECIDE-AI** provides an established minimum-reporting checklist for early live clinical AI decision-support evaluations. It is an important owner for intended use, decision-maker/workflow, outcomes, analysis, errors, safety and human factors. It is a reporting guideline, not a theorem that unlike cross-domain value functions are commensurable.
-- **IPDAS / preference-sensitive decision-quality instruments** already establish that decision quality can be decision- and preference-specific.
-- **Human–AI evaluation taxonomies** already separate outcome, reliance, safety and learning measures rather than reducing them to one scalar.
+- **Abbas & Hazen, _On the Value of Information Across Decision Problems_** owns the load-bearing cross-problem theory, including positive comparability conditions.
+- **CHEERS 2022 / CHEERS-AI** already own substantial reporting-contract territory for health-economic and AI-enabled health-economic evaluation: context, perspective, comparators, outcomes, horizon, uncertainty, distributional effects and related assumptions.
+- **DECIDE-AI** owns minimum reporting for early live clinical AI decision-support evaluations, including intended use, workflow, outcomes, safety/errors and human factors.
+- **Decision curve analysis / net benefit**, NICE reference-case practice, IPDAS, decision-quality practice, SMAA/MCDA robustness and human–AI evaluation taxonomies already own major parts of the surrounding measurement problem.
 
-The residual contribution under test is therefore only:
+The residual object is only audience-specific synthesis:
 
-> a short, attributed synthesis for AI-epistemics projects that says which assumptions must travel with a `decision quality improved` claim before cross-project comparison is meaningful, plus a runnable appendix showing why those disclosures matter.
+> For AI-epistemics projects that report heterogeneous notions of `decision quality improved`, disclose enough of the decision/value/aggregation contract to determine whether the proposed cross-project comparison is direct, conditional, or not established.
 
-## Identified reader / comparison task
+That is not a new standard. It is a review question assembled from existing owners.
 
-The target reader is not an abstract metric designer. It is an AI-epistemics researcher, reviewer or judge confronted with two projects that both claim to improve decisions but report unlike objects — for example accuracy, regret, expected utility, calibration, process quality or preference concordance.
-
-The immediate question is:
-
-> Which comparisons are direct, which are conditional on an explicit common value/utility contract, and which are simply not established from the reported numbers?
-
-The contract does **not** make unlike values commensurable. It exposes when the basis for comparison is missing.
-
-## Run the teaching appendix
+## Runnable illustration
 
 ```bash
 python competition/no_free_qaly/benchmark.py \
@@ -46,9 +31,11 @@ python competition/no_free_qaly/benchmark.py \
   --out /tmp/no_free_qaly.json
 ```
 
-## Minimum Decision-Improvement Measurement Contract
+The appendix reports strict pairwise reversal separately from tie-versus-order differences. Identifier/alphabetical order never determines the scientific label.
 
-Before a cross-project decision-improvement comparison is asserted, disclose at least:
+## Minimum comparison context
+
+Before asserting a cross-project comparison, make material assumptions inspectable, including where relevant:
 
 - decision owner / affected scope;
 - alternatives;
@@ -61,17 +48,13 @@ Before a cross-project decision-improvement comparison is asserted, disclose at 
 - distribution / aggregation rule across people or cases;
 - correction / irreversibility handling where material.
 
-This is a synthesis/reporting contract, not a score or new reporting standard. `OWNER_MAP.md` records where these fields are inherited from or extend beyond nearby owners.
+These fields are synthesis metadata, not a claim that this project invented them or that all ten are mandatory in every domain.
 
-## Kill / shrink criteria
+## Promotion test
 
-Kill or shrink further if:
+This fallback should receive competition effort only if a **real** comparison task demonstrates that existing owner guidance still leaves a material ambiguity and this synthesis helps a reviewer expose it.
 
-- an existing cross-domain AI decision-support reporting/comparison standard already supplies the same contract at the same level;
-- applying existing guidance to realistic AI-epistemics project claims leaves no material comparison ambiguity;
-- the contract only restates mature guidance without improving appraisal of an actual comparison;
-- the teaching appendix is mistaken for empirical prevalence or a new rank-reversal result;
-- the surviving synthesis is too weak to justify competition effort relative to another owner-subtracted candidate.
+A fictional exercise cannot establish reader benefit.
 
 ## Claim ceilings
 
@@ -79,8 +62,8 @@ Kill or shrink further if:
 OWNER_THEORY != OUR_NOVELTY
 TEACHING_APPENDIX != BENCHMARK_CONTRIBUTION
 REPORTING_CONTRACT != UNIVERSAL_SCORE
-REPORTING_COMPLETENESS != METHODOLOGICAL_QUALITY
-ONE_NUMBER != COMPARABILITY
-VALUE_FUNCTION_HIDDEN != VALUE_NEUTRAL
-UNDEFINED_METRIC != ZERO_IMPROVEMENT
+TIE != STRICT_PREFERENCE
+IDENTIFIER_ORDER != SCIENTIFIC_ORDER
+FICTIONAL_REVIEW_EXERCISE != READER_BENEFIT
+NOT_ESTABLISHED != ZERO_VALUE
 ```
