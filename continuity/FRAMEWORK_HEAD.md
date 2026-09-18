@@ -4,6 +4,25 @@ Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## PSFH #118 Remark42 restore/custody delta — 18 September 2026 late
+
+- prior backup probe proved current delete != backup erasure;
+- PR #387 tested the smallest restore guard on pinned Remark42 v1.16.4;
+- final head `a1f6cb8678e423d1663e5d52f055d2033bc07a0c`; workflow `35396323631 SUCCESS`;
+- pre-delete backup restored removed marker; stable comment id survived;
+- separate removal receipt contained no removed text;
+- admin replay returned 200 and removed restored marker before reopen;
+- PR #387 merged as `82849d0a9e8a11495e3e5396e65bd43ab6f683f2`;
+- custody candidate added at `coordination/PSFH_LEAVE_A_MARK_CUSTODY_CANDIDATE_20260918.md` (`22765fdb...`);
+- current ICO guidance supports the distinction between live deletion and backup data held beyond use pending overwrite/removal under a justified retention schedule; no universal retention period was inferred;
+- owner production guidance already specifies trusted-proxy and forwarding-header requirements; no duplicate proxy mechanism is earned.
+
+`REMARK42 + SMALL PSFH ADAPTER + RESTORE GUARD = TECHNICALLY PLAUSIBLE`
+`BACKUP PURGE / RETENTION PERIOD = HUMAN/POLICY CHOICE`
+`PRODUCTION HOST/PROXY TOPOLOGY = NOT SELECTED`
+`PUBLIC INTAKE = NOT EARNED`
+
+`OWNER + SMALL ADAPTER + EXPLICIT CUSTODY > REBUILD OWNER`
 ## BeforeBuild prospective-utility delta — 18 September 2026 late
 
 Detailed receipt: `coordination/build_ledger/BEFOREBUILD_PROSPECTIVE_UTILITY_RESULT_20260918.md`.
