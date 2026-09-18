@@ -4,15 +4,18 @@
 This module does not discover owners, browse the web, decide novelty, or verify
 that a cited observation is true. It consumes an explicit evidence contract.
 
-v0.2 deliberately derives the two most dangerous decision inputs:
-- whether a current-world need is actually evidenced;
+v0.2 derives the two most dangerous decision inputs:
+- whether a current-world need is evidenced;
 - whether a relevant owner/candidate leaves hard cases uncovered.
 
-There is no authored "world_need_observed" or "uncovered_requirement" boolean.
+Owner trial execution can arrive through a machine receipt. The receipt may
+override only execution status and hard-case results; semantic-loss assessment
+remains explicit review evidence.
 """
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 from pathlib import Path
 from typing import Any
@@ -33,6 +36,7 @@ QUALIFYING_WORLD_EVIDENCE = {
     "current_user_need",
 }
 RELEVANT_CANDIDATES = {"exact", "near"}
+RECEIPT_FORMAT = "beforebuild-owner-receipts-v0.1"
 
 
 def load_cases(path: Path) -> dict[str, Any]:
@@ -41,6 +45,15 @@ def load_cases(path: Path) -> dict[str, Any]:
         raise ValueError("unexpected calibration format")
     if not isinstance(data.get("cases"), list) or not data["cases"]:
         raise ValueError("cases must be a non-empty list")
+    return data
+
+
+def load_receipts(path: Path) -> dict[str, Any]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("format") != RECEIPT_FORMAT:
+        raise ValueError("unexpected owner receipt format")
+    if not isinstance(data.get("receipts"), list) or not data["receipts"]:
+        raise ValueError("receipts must be a non-empty list")
     return data
 
 
@@ -91,6 +104,10 @@ def validate_case(case: dict[str, Any]) -> None:
                 raise ValueError(f"{case['id']}: loss consequential flag must be bool")
         if not isinstance(trial.get("semantic_cheating_observed"), bool):
             raise ValueError(f"{case['id']}: semantic_cheating_observed must be bool")
+        if "receipt_source" in trial and (
+            not isinstance(trial["receipt_source"], str) or not trial["receipt_source"].strip()
+        ):
+            raise ValueError(f"{case['id']}: receipt_source must be non-empty string")
 
     probe = case["smallest_probe"]
     if probe is not None:
@@ -98,6 +115,60 @@ def validate_case(case: dict[str, Any]) -> None:
             raise ValueError(f"{case['id']}: smallest_probe.bounded must be bool")
         if not isinstance(probe.get("kill_condition"), str) or not probe["kill_condition"].strip():
             raise ValueError(f"{case['id']}: smallest_probe.kill_condition required")
+
+
+def apply_receipts(data: dict[str, Any], receipt_sets: list[dict[str, Any]]) -> dict[str, Any]:
+    """Overlay machine owner-execution receipts onto a case contract.
+
+    Receipts can only set:
+    - trial.executed
+    - trial.hard_case_results
+    - trial.receipt_source
+
+    They cannot alter:
+    - world evidence
+    - candidate relevance
+    - semantic/material loss assessment
+    - probe scope/kill conditions
+    """
+    out = copy.deepcopy(data)
+    cases = {case["id"]: case for case in out["cases"]}
+
+    for receipt_set in receipt_sets:
+        if receipt_set.get("format") != RECEIPT_FORMAT:
+            raise ValueError("unexpected owner receipt format")
+        for receipt in receipt_set.get("receipts", []):
+            case_id = receipt.get("case_id")
+            candidate_id = receipt.get("candidate_id")
+            if case_id not in cases:
+                raise ValueError(f"receipt references unknown case {case_id!r}")
+            case = cases[case_id]
+            candidates = {candidate["id"]: candidate for candidate in case["candidates"]}
+            if candidate_id not in candidates:
+                raise ValueError(
+                    f"receipt references unknown candidate {candidate_id!r} in {case_id}"
+                )
+
+            hard_ids = {row["id"] for row in case["hard_cases"]}
+            results = receipt.get("hard_case_results")
+            if not isinstance(results, dict):
+                raise ValueError("receipt hard_case_results must be object")
+            if set(results) - hard_ids:
+                raise ValueError("receipt references unknown hard case")
+            if any(value not in HARD_RESULTS for value in results.values()):
+                raise ValueError("receipt contains invalid hard-case result")
+            if not isinstance(receipt.get("executed"), bool):
+                raise ValueError("receipt executed must be bool")
+            source = receipt.get("source")
+            if not isinstance(source, str) or not source.strip():
+                raise ValueError("receipt source required")
+
+            trial = candidates[candidate_id]["trial"]
+            trial["executed"] = receipt["executed"]
+            trial["hard_case_results"] = results
+            trial["receipt_source"] = source
+
+    return out
 
 
 def derive_world_need(case: dict[str, Any]) -> dict[str, Any]:
@@ -124,6 +195,7 @@ def candidate_coverage(case: dict[str, Any], candidate: dict[str, Any]) -> dict[
         "candidate_id": candidate["id"],
         "relevance": candidate["relevance"],
         "executed": trial["executed"],
+        "receipt_source": trial.get("receipt_source"),
         "pass": passed,
         "fail": failed,
         "not_tested": not_tested,
@@ -232,9 +304,15 @@ def evaluate_all(data: dict[str, Any]) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("cases", type=Path)
+    parser.add_argument("--receipt", action="append", type=Path, default=[])
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
-    report = evaluate_all(load_cases(args.cases))
+
+    data = load_cases(args.cases)
+    if args.receipt:
+        data = apply_receipts(data, [load_receipts(path) for path in args.receipt])
+
+    report = evaluate_all(data)
     text = json.dumps(report, indent=2, sort_keys=True) + "\n"
     if args.out:
         args.out.write_text(text, encoding="utf-8")
