@@ -18,7 +18,7 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records. PR30 draft `7618bc0...`; sibling PR32 `845b2a0...` green (66 tests) for observation-state fail-closed; sibling PR33 `1b332ec...` green (67 tests) for checked-source fail-closed; both hostile-review pending; issue #31 public break aperture active. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **CURRENT LEAD / RELATION CALIBRATION IN PROGRESS / NOT RESULT** | Exact head `e582b709...`; hosted CI `35324172751` green. Deterministic 16-case independent coding gate is frozen; Reader Lens remains secondary/human-run gated. |
+| #364 ATRS | **CURRENT LEAD / CALIBRATION SURVIVED WITH REPAIRS / NOT RESULT** | Exact head `d7eaeda...`; hosted CI `35327175854` green. Two frozen first passes coded all 16 without outside process knowledge/new target categories; method KEEP, codebook REPAIR, primary inclusion SHRINK. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
 | COM #99 / social-care correction consequence | **FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD** | Normative owner chain substantially present; operational connection after post-use correction is not established from public sources. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
@@ -71,8 +71,8 @@ Nine scored cases use six position/condition-balanced schedules; the missing-fie
 The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
 
 ```text
-#364 current exact head = e582b709e025f2907bb850cb2b3c681101504aef
-current hosted CI = 35324172751 SUCCESS
+#364 current exact head = d7eaeda4550f499ad6d0f8de5fd335d70e9cec8f
+current hosted CI = 35327175854 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -99,21 +99,42 @@ GREEN_SOURCE_HEAD != EXACT_HEAD_ARTIFACT_WITNESS
 100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
 ```
 
-## #364 — frozen relation calibration
+## #364 — relation calibration survived with repairs
 
-The current non-human decision gate is now frozen before any new result:
-- deterministic 16-record sample over frozen run 35257984573;
-- sample identity `c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54`;
-- independent first-pass requests to Codex + Claude Code;
-- pre-return adjudication rules frozen by Framework;
-- no outside process knowledge / live refetch / linked-site inspection allowed in first pass.
+The deterministic 16-record calibration is complete.
 
-No independent first-pass return had landed at the exact sync check carried here.
+Inputs:
+- Codex frozen first pass `8cf2f2ba...`;
+- Claude Code frozen first pass #364 comment `5727586822`;
+- Framework reconciliation under pre-frozen D1–D8 adjudication rules.
 
 ```text
-IF CALIBRATION FAILS -> SHRINK/KILL BEFORE NOVEMBER
+METHOD = KEEP
+CODEBOOK = REPAIR
+PRIMARY INCLUSION = SHRINK
+VERSION = SECONDARY TAG ONLY
+```
+
+Both first passes coded all 16 from frozen records without outside process knowledge or new target categories. Their material disagreement was dominated by route discovery/inclusion and several target/binding assignments, not basic uncodability.
+
+Codebook v2:
+- tight primary stopping rule;
+- trigger != target;
+- DIRECT precedence;
+- general contacts not route channels;
+- bare N/A -> `UNEXPLAINED_NA`;
+- actor class carried separately;
+- explicit affected actor with no route -> `NO_ROUTE_STATED_IN_RECORD`, never no-real-route;
+- generic QA/maintenance/security/data-rights work is secondary context unless explicitly bound to the primary answerability object.
+
+Current branch objects:
+- `RELATION_CALIBRATION_RECONCILIATION_20260918.md`;
+- `RELATION_CODEBOOK_V2_20260918.md`.
+
+```text
 CALIBRATION != POPULATION RESULT
-AGREEMENT != VALIDATION
+CALIBRATION_SURVIVED != METHOD_VALIDATED
+NEXT_SUBSTANTIVE_RESULT = FRESH_CORPUS_IF_LIVE_RULES_ALLOW
 ```
 
 ## #364 — human-study gate remains closed
