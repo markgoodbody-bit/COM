@@ -72,8 +72,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "bda6d6657140655dbb30a6154538ee2b703fdf7f69b13a16f458bbff8b3172ef",
-    "change_history_input_html_sha256": "0e342db6176608586bf74e11984636f8461a981fcbe3a3e13b59356a822b8433",
+    "change_history_sha256": "b9ca501d86272623ef4091e6fb8300939175065098671187a3663e65cc68d379",
+    "change_history_input_html_sha256": "c095a96d14f4c57e4009d0f03eadbea1d76045ebd1bc15b6ba43533f2b693017",
     "change_history_addendum_note": "D016 through D038 and D045-D070 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. D068-D069 were backfilled from exact published Git history after their original publications omitted change-log/version advances. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
@@ -108,7 +108,12 @@
       "mechanical_ethics_commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
       "resource_input_sha256": "84ebfe8f23af8ffce93bc13b14314e74aa0722a03688cff8087962517182eff7",
       "resource_inventory_sha256": "7a9609cf8ee083a60b4974971a103c7e0e00f475b3cfde7821cf9dc0eefef9b0",
-      "scope": "Current same-domain aliases advance to the released v0.3.0/v0.7.0 baselines; earlier candidate snapshots remain immutable. Status sync is not validation or a new framework release."
+      "scope": "Current same-domain aliases advance to the released v0.3.0/v0.7.0 baselines; earlier candidate snapshots remain immutable. Status sync is not validation or a new framework release.",
+      "explore_current_source_routes": {
+        "trace_commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
+        "mechanical_ethics_commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
+        "historical_basis_preserved": "Explore trace/me source-snapshot entries remain pinned to the pre-release source objects actually used to build the adapted readings."
+      }
     }
   },
   "boundaries": [
