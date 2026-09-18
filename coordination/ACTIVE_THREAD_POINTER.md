@@ -4,6 +4,29 @@ Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## BeforeBuild prospective-utility delta — 18 September 2026 late
+
+Detailed receipt: `coordination/build_ledger/BEFOREBUILD_PROSPECTIVE_UTILITY_RESULT_20260918.md`.
+
+- #384/#385 are **CLOSED / UNMERGED**.
+- Historical calibration and live owner trials were green, including Doubt and National Rail.
+- prospective PSFH/Remark42 trial materially narrowed custom work, but #118 already owned the requirements and reuse-over-rebuild direction.
+- Remark42 passed account-free intake, current deletion, export and stop controls; failed PSFH-specific trust-region and tiny-plain-mark constraints.
+- a small PSFH adapter closed those two bounded gaps in loopback while leaving owner persistence/auth/moderation/delete/export intact.
+- backup-erasure semantics, production security and public deployment remain unestablished.
+- current build-vs-buy practice already owns real-input POCs / candidate trials / integration-cost review.
+- adapter/evaluation cost remains materially bespoke; low-friction reusable product value is not established.
+
+Disposition:
+`BEFOREBUILD METHOD UTILITY = OBSERVED`
+`BEFOREBUILD STANDALONE PRODUCT = NOT EARNED`
+`OPEN AGENT / NEBIUS ENTRY = NOT EARNED`
+
+Absorb only this operating tactic:
+`PLAUSIBLE STRONG OWNER -> RUN ON OUR HARD CASES WHEN CHEAP/SAFE -> RECORD LOSS -> REUSE / INTEROPERATE / SHRINK / STOP BEFORE CUSTOM BUILD`
+
+Do not reopen BeforeBuild as a named product absent a naturally arising case that both changes a material decision and uses a low-bespoke reusable adapter.
+
 ## THR direct contribution-packet regression delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_DIRECT_PACKET_REGRESSION_20260918.md`.
