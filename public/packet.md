@@ -64,7 +64,7 @@ Works: https://pleasestartfromhere.com/works/
 
 **The Human Record** is a separate public project for keeping provenance, source ancestry, transmission and correction inspectable across time and custody.
 
-It currently carries three deliberately different public records: an artwork-provenance specimen; a source-trail case around the viral “80% of German flak crews died” claim; and a public-source transmission-lineage case about sieve and riddle making. It has been offered to 1F916 / the Square for stewardship, but that offer has not been accepted and the project is not community-owned. It is not an authorship detector, certification authority or claim that AI can provide unbiased history.
+It currently carries four deliberately different public records: an artwork-provenance specimen; a source-trail case around the viral “80% of German flak crews died” claim; a public-source transmission-lineage case about sieve and riddle making; and a historical-person source-survival record following Hannibal through bounded surviving accounts. It has been offered to 1F916 / the Square for stewardship, but that offer has not been accepted and the project is not community-owned. It is not an authorship detector, certification authority or claim that AI can provide unbiased history.
 
 Read its evidence, limits, rights boundaries and stewardship record on their own terms:
 
