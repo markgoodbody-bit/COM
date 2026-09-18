@@ -15,7 +15,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records. PR30 draft `7618bc0...`; stacked PR32 `845b2a0...` is green (66 tests) and fails closed the observation-state false pass; hostile review pending; issue #31 public break aperture active. |
+| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records. PR30 draft `7618bc0...`; sibling PR32 `845b2a0...` green (66 tests) for observation-state fail-closed; sibling PR33 `1b332ec...` green (67 tests) for checked-source fail-closed; both hostile-review pending; issue #31 public break aperture active. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / RELATION CALIBRATION IN PROGRESS / NOT RESULT** | Exact head `e582b709...`; hosted CI `35324172751` green. Deterministic 16-case independent coding gate is frozen; Reader Lens remains secondary/human-run gated. |
@@ -159,8 +159,9 @@ THR main remains three public records.
 
 - PR #28: Hannibal candidate / architecture stress; draft, no public record 4.
 - PR #30: Hannibal + JFK probe; draft head `7618bc0...`. Source-ownership and public/default record-link repairs are useful.
-- PR #32: stacked observation-state fail-closed repair at `845b2a0...`; workflow `35325473325` SUCCESS; 66 tests OK; DRAFT / hostile review pending / not merged.
-- issue #31: public hostile-review aperture; known observation-state defect and PR32 repair now exposed there for falsification.
+- PR #32: sibling observation-state fail-closed repair at `845b2a0...`; workflow `35325473325` SUCCESS; 66 tests OK; DRAFT / hostile review pending / not merged.
+- PR #33: sibling hidden-completeness / checked-source fail-closed repair at `1b332ec...`; workflow `35326431061` SUCCESS; 67 tests OK; DRAFT / hostile review pending / not merged.
+- issue #31: public hostile-review aperture; both known defects/repairs are exposed there for falsification.
 - bounded public outreach/testing through existing authorised project identities/channels is authorised; feedback remains evidence input, not validation.
 - Sunjata remains stress-only; do not synthesise “the epic” into a THR record by momentum.
 
