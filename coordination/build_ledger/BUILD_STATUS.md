@@ -1,3 +1,51 @@
+## Competition push — 18 September 2026 late
+
+Direct Mark direction: pursue competitions we can credibly win.
+
+Detailed receipts:
+- `coordination/competition_quarry/COMPETITION_LIVE_SCAN_20260918_LATE.md`
+- `coordination/build_ledger/COMPETITION_BUILD_PASS_20260918_LATE.md`
+- `coordination/competition_quarry/LONDON_COMPETITION_APPLICATION_GATE_20260918.md`
+
+### Active reversible build — Amazon Alexa+
+
+Campfire Relay draft PR #245:
+`Did It Happen? — Action Receipts for Alexa+`
+
+Exact current green head:
+`26ca104640cbbfb49a66ca8408a96a845a465d10`
+
+Hosted:
+`campfire-ci 35401492364 SUCCESS`
+
+Current product edge:
+```text
+TOOL RETURN != WORLD EFFECT
+AMBIGUOUS WRITE -> NO AUTOMATIC RETRY
+UNRESOLVED SAME ACTION -> SECOND WRITE BLOCKED
+READ-ONLY RECONCILIATION -> CONFIRMED OR STILL UNKNOWN
+```
+
+Mechanism novelty is **not** claimed. MCP, durable execution/idempotency, postcondition/effect verification and action receipts have stronger existing owners. Candidate value is the Alexa+ customer interaction around verified / rejected / unknown / reconcile.
+
+No Amazon/Devpost registration, terms acceptance, account/credit action, public deployment, organiser contact or submission has occurred.
+
+### Time / human gates
+
+- Hack Apertus: wake 1 Oct; no judged result pre-run.
+- Dwelly London 10 Oct: strong fit / application + attendance gate.
+- Stripe x Briefcase London 15 Oct: strong short-form fit / registration + attendance gate.
+- Future States / No.10 5–6 Oct: strong real-owner fit / approval + attendance gate.
+- Open Agent: hold until live track brief.
+- Nebius/NVIDIA: hold until a product naturally needs the required stack.
+- ATRS/Apart Epistemics: preserve September method for fresh November result.
+
+```text
+COMPETITION PUSH != PROJECT PURPOSE CHANGE
+GREEN SPIKE != REGISTERED
+HUMAN GATE != ENGINEERING TODO
+```
+
 ## Late 18 September Framework delta — PSFH decision gate + hard field witnesses
 
 ### PSFH #118
