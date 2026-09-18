@@ -1,6 +1,6 @@
 # Build status
 
-Recorded snapshot: **2026-09-18 morning FULL COMSYNC — Europe/London**.
+Recorded snapshot: **2026-09-18 late-morning build/currentness pass — Europe/London**.
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
@@ -15,7 +15,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / PRODUCTION HARDENED / ONE CANDIDATE SURFACE** | Main `58f1b7ad...`; PR37 added fixture-independent evidence-container guards. PR35 head `86d22fd...` is green with 74 tests / 7 warnings; Codex returned `KEEP_FOR_READER_PAGE`, CC return remains pending, and PR39 is proposal-only. Catalogue still 3 records. |
+| COM #347 / THR | **ACTIVE PRODUCT / CANDIDATE BUILT / WAIT READER EVIDENCE** | Main `58f1b7ad...`; catalogue still 3. PR35 exact head `836f93e...` is draft/non-public with exact-head workflow green; differentiated review closed, reader copy integrated, and a non-catalogued noindex mockup exists. Issue31 now carries the reader-object break request; no outsider response at last check. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
@@ -27,7 +27,7 @@ PURPOSE > INSTRUMENT
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
 | THR main | **STABLE PUBLIC BASELINE + SEMANTIC REPAIR** | `58f1b7ad...`; three public records unchanged; PR34 semantic repairs + PR37 evidence-container guard integrated. |
-| PSFH D069 | **LIVE / NARROW READER-FRICTION REPAIR** | Maintained `feab9785...`; public `23e3047c...`; one duplicate ceiling paragraph removed. Reader benefit unestablished; draft PR371 resource-copy sync is incomplete/unpublished. |
+| PSFH D070 | **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED** | Maintained `7ef97775...`; public `c0a830bf...`; CI `35340308124` green, publisher `35340379133` green, Pages `35340423410` green, live verifier passed 33 targets. First publication exposed and repaired recursive nested-README omission. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
 
@@ -177,36 +177,31 @@ No registration, organiser contact, terms acceptance or submission.
 
 ## Other active lanes
 
-### THR / production semantics and one surviving candidate
+### THR / production semantics + one reader candidate
 
-THR main is `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`; public catalogue remains three records.
+THR production main remains `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`; public catalogue remains three records.
 
-PR #34 merged only reusable production repairs from the research pressure:
-- exact head `b8fca327...`;
-- workflow `35329512132 SUCCESS`;
-- 64 production tests / OK;
-- 7 warnings remain visible;
-- no historical research fixture or record-4 candidate entered main.
+Production repairs from PR #34 / #37 remain integrated. No Hannibal research fixture or reader proposal is on main.
 
-Closed:
-- #27 / #29 duplicate Hannibal candidates;
-- #30 research integration branch;
-- #32 / #33 sibling semantic review branches.
-
-Open:
-- #35 sole current Hannibal candidate; revised/synced head `86d22fd...`, hosted workflow `35333703151 SUCCESS`, 74 tests OK, 7 warnings; Codex revised-delta return `KEEP_FOR_READER_PAGE`, Claude Code return pending; no reader page or public promotion;
-- #39 head `7653232...` reader-encounter proposal targeting #35 only; not a public page, catalogue mutation or fourth record;
-- issue #31 public break aperture.
-
-Integrated since the prior pointer:
-- PR #37 production-only malformed evidence-container guard, merge `58f1b7ad...`; exact pre-merge head `d64fc57...` had workflow `35333353339 SUCCESS`, 68 tests OK, 7 warnings.
+Current candidate:
+- PR #35 draft / non-public;
+- exact head `836f93e0849268359c58d531792bce1890271691`;
+- workflow `35339637347 SUCCESS`; integrity + rejection-case tests passed;
+- differentiated revised-head review closed after repair of one missing Polybius 3.48.12 method/access row;
+- selection-time candidate pool / alternatives are explicitly recorded as not preserved;
+- PR #39 reader copy integrated into PR #35;
+- `cases/hannibal-reader-page-proposal.html` is a styled `noindex,nofollow` mockup outside `/records/`, absent from the catalogue and not record 4;
+- issue #31 reader-object break request is live; no outsider response at last check.
 
 ```text
-DEFECT_REPAIRED != MODEL_VALIDATED
+HISTORICAL PERSON != SURVIVING BIOGRAPHY
 THREE_PUBLIC_RECORDS = UNCHANGED
-NEXT = DIFFERENTIATED REVISED-HEAD REVIEW + READER-PROPOSAL INTEGRATION DECISION
+GREEN_CANDIDATE != PUBLICATION
+NEXT = OUTSIDE / READER EVIDENCE OR CONCRETE FALSIFIER
 NO_NEW_SPECIMEN
 ```
+
+Detailed receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ### COM #365
 
@@ -219,6 +214,30 @@ No application live.
 Current resource posture: Corrigibility Research Fund survives as a funding owner but **no proposal thesis is earned**; generic correction propagation and generic non-obedience/multi-principal stories were owner-subtracted. Residual authority-ambiguity / semantic-non-collapse is HOLD. Arcee/Anthropic credit routes require real live budgets; OpenAI Researcher Access is HOLD on currently known affiliation standing; ARIA remains a seam only.
 
 No contact/account/terms/application/spend/payment action.
+
+### PSFH D070
+
+D070 is live and byte-verified.
+
+```text
+maintained source = 7ef97775f3f9970042c87d476ac9e39eb2516b49
+public gh-pages = c0a830bfd14ca76052a1ee5913d302952485f57c
+maintained CI = 35340308124 SUCCESS
+publisher = 35340379133 SUCCESS
+Pages deployment = 35340423410 SUCCESS
+live verifier = LIVE_PSFH_D070_VERIFIED targets=33 attempt=5
+```
+
+The current aliases now route to released TRACE/ME while the older preview-source basis remains historically pinned. The first D070 publication attempt exposed a recursive rsync basename-exclusion defect that omitted nested READMEs. Publisher staging now verifies the resource tree before push and verifies served bytes after deployment.
+
+```text
+BUILT_BYTES != STAGED_BYTES
+STAGED_BYTES != PUSHED_BYTES
+PUSHED_BYTES != SERVED_BYTES
+SERVE_VERIFIED != READER_BENEFIT
+```
+
+Reader benefit remains unestablished. Weak search visibility has been observed, but no indexing defect is established and no SEO build is currently earned.
 
 ### Campfire / Square
 
@@ -241,7 +260,7 @@ Explicit human gates remain for:
 - travel/payout/tax;
 - crawler/training-policy changes.
 
-Current receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
+Current receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
