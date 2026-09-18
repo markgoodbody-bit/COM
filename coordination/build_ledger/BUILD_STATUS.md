@@ -1,624 +1,147 @@
 # Build status
 
-Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-18 PM — token-allocation / repair / field / opportunity pass  
-Later live source and direct human direction win.
+Status: **NO GENERAL BUILD QUEUE / WORLD-QUARRY PRIMARY / ONE PRESERVED OPEN PR**  
+Updated: **18 September 2026 PM — post drift/falsification x100**
 
-## TOKEN ALLOCATION / PROCEED delta — 18 September 2026 PM
+Observed status only. Re-read mutable heads before acting.
 
-Detailed receipt: coordination/build_ledger/FRAMEWORK_TOKEN_ALLOCATION_PROCEED_20260918_PM.md
+## Active build
 
-- Competition false-active surface reduced: #350/#351/#352/#353/#361/#362 closed unmerged with evidence/branches preserved.
-- #362 received a fresh hostile review and was killed as an empirical pilot: fixture-authored states + deterministic consequence mapping did not establish a real policy-compiler failure; owner coverage is strong.
-- #363 fallback repaired at exact head 45105b2775c5e99c65db264a1c9285b5f7edcd1f; workflow 35383752912 SUCCESS. It remains fallback-only and unmerged by momentum.
-- #364 ATRS remains current competition lead; fresh November result surface remains uncomputed.
-- Bradford LGSCO 25 023 288 now supplies one generic correction-implementation witness for #99; downstream consequence-review failure remains unestablished; AI-specific delta = no.
-- Rail + Bradford cross-domain note shows one thin existing relation can carry both: correction/new state exists != correction reached every consequential target. Portability witness only; no new TRACE primitive/ME doctrine.
-- THR record-5 quarry II tested ELIZA, 1860 phonautogram, Kilroy and BBC Domesday; stronger owners found for all four; record 5 remains unearned.
-- Hack Apertus pre-event prep now has a 1 Oct rules/rights/pre-existing-work start gate. No model result, registration or terms acceptance consumed.
-- Resource lane re-read: no current paid-compute blocker and no application earned today.
+**None.**
 
-Current centre:
-TRACE/ME = stable released baselines / real-use pressure
-THR = 4 records / record 5 not earned
-ATRS #364 = lead / preserve November result
-Hack Apertus = prep only / start gate 1 Oct
-#363 = green fallback only
-WORLD / REAL USE = active / owner subtraction first
+There is no justified always-on build queue.
 
-PURPOSE > INSTRUMENT
-OWNER FOUND / NO DELTA / NOT OUR GAP / STOP = VALID
+The next build must be earned by a fresh WORLD / REAL USE gap after owner subtraction.
 
-## CORE REREAD + PROCEED delta — 18 September 2026 PM
+## Preserved open work
 
-Detailed receipts:
-- `coordination/build_ledger/RAIL_ACCESSIBILITY_CURRENTNESS_RESULT_20260918.md`
-- `coordination/build_ledger/WORLD_OWNER_SUBTRACTION_PASS_20260918_PM.md`
-
-Core reread from live TRACE v0.3.0, Mechanical Ethics v0.7.0 and THR current source re-anchors the project around:
-- bounded perception and incomplete information;
-- affected scope and provisional boundaries;
-- usable routes rather than paper routes;
-- correction before material hardening;
-- burden placement under unequal power;
-- witness/currentness without collapsing record into world;
-- answerability: affected outcomes reaching and changing future action;
-- future viability without choosing a universal best life;
-- owner subtraction and stop/handoff where stronger domain machinery already carries the distinction.
+### PR #364 — ATRS Answerability Audit
 
 ```text
-PURPOSE = HOW CAN WE MAKE A BETTER FUTURE?
-FRAMEWORK VALUE = PORTABLE STRUCTURAL VISIBILITY / CORRECTION ROUTING / ANSWERABILITY
-PROJECT PURPOSE != NOVELTY
-PROJECT PURPOSE != MORE MACHINERY
-OWNER FOUND != FAILURE
-CUT OVERCLAIM, NOT PURPOSE
+head = d2bea526feced78750d1bbb4c45e686f3e4c6446
+CI = 35363721949 SUCCESS
+status = PREPARED / RESULT PRESERVED
+population result = NOT COMPUTED
+selected competition entry = NONE
 ```
 
-The previous tab's last active build was rail accessibility currentness PR #383 after EvidenceBridge had already been killed in favour of Doubt interoperability and PSFH D072 had repaired THR four-record currentness.
+Do not merge/census/polish by momentum.
 
-Rail now completed:
-- hostile reread found the station-level operational classifier overclaimed mixed/multi-lift status;
-- operational layer deleted;
-- local-negation and failed-fetch guards added;
-- exact final branch head `f8a95125fee58cf7bfa6458ea30618e424186542`;
-- merge-ref workflow `35382364633 SUCCESS`;
-- 7/7 regression tests PASS;
-- fresh live run preserved HIR/IRL/DSY contradictions and BIW/AGV/LLE controls;
-- PR #383 merged as `4630b07d6c9f9844cba862ef297cddafd9c11698`;
-- owner correction packet remains **UNSENT**;
-- no new TRACE primitive or ME doctrine earned.
+## Time-gated preparation
+
+### Hack Apertus
+
+Prep exists; no competitive result exists.
+
+Start gate on/after 1 October:
+- re-read live challenge/rules/judging;
+- record pre-existing material honestly;
+- verify rights/open-source compatibility;
+- search existing reports;
+- predeclare expected behaviour;
+- run only event-admissible fixtures;
+- preserve all attempts;
+- reduce failures to smallest reproducers.
+
+Valid result includes STOP.
+
+## Recently completed
+
+### Drift / falsification x100
+
+Audit:
+`falsification/PROJECT_DRIFT_FALSIFY_X100_20260918_PM.md`
+
+Pre-repair:
+```text
+R 73
+F 12
+P 12
+U 3
+```
+
+Repairs:
+- WORLD / REAL USE restored above competition in tournament priority;
+- #345 closed;
+- #349 closed;
+- #363 closed unmerged as preserved fallback;
+- continuity compaction replaces historical-bus pattern.
+
+### Rail accessibility currentness
+
+PR #383 merged as:
+`4630b07d6c9f9844cba862ef297cddafd9c11698`
+
+Result:
+- HIR / IRL / DSY existence contradictions;
+- BIW / AGV / LLE controls;
+- operational-status classifier deleted after hostile review;
+- owner packet unsent.
+
+### Bradford correction propagation
+
+Field note:
+`field/BRADFORD_CHILDRENS_RECORD_CORRECTION_PROPAGATION_20260720.md`
+
+Result:
+```text
+formal correction recommendation != timely implementation
+downstream consequence-review failure = NOT ESTABLISHED
+AI-specific delta = NO
+```
+
+### Cross-domain correction propagation
+
+`evidence/CORRECTION_PROPAGATION_RAIL_BRADFORD_20260918.md`
+
+Result:
+```text
+portable description = observed across two domains
+operational advantage = not demonstrated
+new TRACE primitive = no
+new ME doctrine = no
+```
+
+### THR record-5 quarry II
+
+Four candidates / four stronger owner routes / zero records.
+
+Record 5 remains unearned.
+
+## Stable project baselines
 
 ```text
-HOSTILE RESULT = SHRINK -> KEEP_OWNER_ROUTABLE
-LIFT_EXISTS != LIFT_WORKING_NOW != STEP_FREE_ROUTE_USABLE
-PUBLIC_METADATA_CONTRADICTION != OPERATOR_BLAME
+TRACE formal baseline = v0.3.0
+Mechanical Ethics formal baseline = v0.7.0
+THR public catalogue = 4 records
+PSFH = voluntary public door
 ```
 
-Fresh WORLD / REAL USE owner subtraction after rail:
-- PIP correction/appeal learning -> DWP Timms Review owner active;
-- pensions-dashboard value accuracy/currentness -> TPR owner active;
-- housing data/complaint/systemic learning -> Housing Ombudsman owner active;
-- electronic-monitoring governance/data/capacity risk -> MoJ/HMPPS + NAO owner-rich;
-- no specific consequential project residue established from those cases.
-
-Internal PSFH currentness check:
-- maintained source already carries TRACE/ME explicit AI-training permission language and both permission files;
-- no D073 currentness repair earned from that check.
+## External/consequential actions
 
 ```text
-NEW PRODUCT = NO
-NEW THEORY = NO
-NEW THR RECORD = NO
-PSFH REPAIR = NO DELTA
-WORLD QUARRY = ACTIVE
-NEXT = FOLLOW REAL CONSEQUENTIAL GAP, NOT SIMILARITY
+rail owner contact = NONE
+competition registration = NONE
+competition terms acceptance = NONE
+competition submission = NONE
+grant application = NONE
+new spend = NONE
+new credentials = NONE
 ```
 
-## FULL COMSYNC live delta — 18 September 2026 19:42 BST
+## Next build condition
 
-Detailed receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_1942BST.md`.
-
-- Fresh pre-sync COM main observed: `369adfa7263a84e7bf3f09bfc10aba53403aa8f3`.
-- Current repository mains: TRACE `e7d46398...`; Mechanical Ethics `45b4a303...`; THR `217f89c...`; Campfire Relay `b8579e56...`.
-- TRACE / ME main movement is explicit AI-training permission + README routing only; released formal baselines remain TRACE v0.3.0 and ME v0.7.0.
-- THR remains exactly 4 public records; Hannibal is record 4; EvidenceBridge standalone remains STOP / OWNER FOUND; no record 5 is earned.
-- Rail currentness PR #383 is OPEN / DRAFT / MERGEABLE at exact head `ae74440cb36315110ca4aafaf06907faa3d2716c`; workflow `35380967037 SUCCESS`.
-- No hostile review return is observed yet; only the request is present. No owner correction contact has been sent.
-- Do not collapse green CI into review completion or publication/owner routing.
-- Campfire authenticated runtime state remains UNKNOWN in this aperture.
+The next repository build should satisfy:
 
 ```text
-REPOSITORY_MAIN_MOVED != FORMAL_BASELINE_CHANGED
-GREEN_CI != HOSTILE_REVIEW_COMPLETE
-OWNER_PACKET_READY != OWNER_CONTACT_SENT
-PURPOSE > INSTRUMENT
+REAL CURRENT CASE
++ STRONGEST OWNER CHECKED
++ SPECIFIC CONSEQUENTIAL RESIDUE
++ SMALL REVERSIBLE HELP
++ CLEAR KILL / ROUTE CONDITION
 ```
 
+Selection correction from x100:
+prefer the next quarry to be materially different from the recent UK/public-sector correction cluster.
 
-Recorded snapshot: **2026-09-18 19:23 BST D072 delivery/currentness pass — Europe/London**.
-
-Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
-
-## PSFH D072 + THR currentness delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/PSFH_D072_THR_CURRENTNESS_20260918.md`.
-
-- PSFH maintained source integrated D072 as `ddcd4bcae4290f2e4b5ff1dd5f7ed0ec434eb3f7`.
-- Public predecessor was `8ece7395701250202ce8f5dd0763db1dff5193d5`.
-- Public `gh-pages` advanced to `ad320e756f42e2db2ffc6e59154bfd39b6b5df97`.
-- publisher workflow `35379696167 SUCCESS`.
-- live exact-byte verifier: `LIVE_PSFH_D072_VERIFIED targets=37 attempt=6`.
-- homepage, `llms.txt` and one-file packet now correctly describe **4 THR public records**, including the bounded Hannibal historical-person source-survival record.
-- Site Preview = `0.8.29`; D072 is a currentness repair, not a framework or THR evidence change.
-- THR current main = `217f89c10a60f02b7d39785d531b2cb47cab7337`; catalogue = exactly **4**.
-- THR contribution packet moved beyond initial `63682dc...`: public-delivery verification and cold-use friction repairs are integrated at `2cbf43a...` / `217f89c...`.
-- No record 5 is earned; no PSFH redesign is earned.
-
-```text
-SOURCE_GREEN != PUBLISHED
-PUSHED != LIVE_BYTE_VERIFIED
-D072 = LIVE / BYTE-VERIFIED
-READER_BENEFIT = NOT ESTABLISHED
-LINKED_PROJECT_CURRENTNESS = RESTORED
-```
-
-## THR portable AI/human contribution relay delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/THR_PORTABLE_CONTRIBUTION_PACKET_20260918.md`.
-
-- THR main advanced through PR #48 to `63682dc5ce05d34373384cd4bc0528c118cb8980`.
-- Exact PR head `952ca4416ed600852767bbacda499d64dca41578`; hosted CI `35374031627 SUCCESS`; 101 tests / OK.
-- The packet was earned by the successful Grok -> Mark -> Codex -> Framework flak contribution path; it is not a speculative intake schema.
-- New objects: `CONTRIBUTION_PACKET.md`, `contribution-packet.schema.json`, `examples/grok-flak-relay.packet.json`.
-- `checked_by_contributor: bool` was rejected before merge; current field is attributed `source_check_status = reported_checked / reported_not_checked / unknown`.
-- contributor availability is time-bounded as `availability_at_receipt`.
-- Ordinary prose remains first-class. No account-free backend, authentication layer, governance transfer or evidence priority was created.
-- Public serving of the new files is NOT freshly verified in this aperture because direct domain retrieval/DNS failed; repository merge != served-byte witness.
-
-`PACKET != AUTHENTICATED IDENTITY`
-`REPORTED_CHECKED != CHECK INDEPENDENTLY VERIFIED`
-`RELAY != ORIGINAL CONTRIBUTOR`
-`VALID_PACKET != VALID_CLAIM`
-`RECEIVED != ACCEPTED`
-`LATER REVIEW != RETROACTIVE CONTRIBUTOR WORK`
-## THR four-record maintenance / AI contribution delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/THR_FOUR_RECORD_MAINTENANCE_GROK_FLAK_20260918.md`.
-
-- THR current main = `fef76a44ffb0986ac677f504858cad0787ccfabf`; catalogue remains exactly **4**.
-- PR #46 public maintenance sync merged `927c587e...` after CI `35370404004 SUCCESS` / 92 tests.
-- Codex verified record-4 served bytes at `ad903505...` (16/16 checked paths); later current-head served bytes are not separately reverified here.
-- PR #47 carried the user-relayed Grok flak lead through Codex + Framework source checking and merged as `fef76a44...`; exact-head CI `35371411917 SUCCESS` / 92 tests.
-- Flak record v0.2.5 now partially checks one Westermann 1940 campaign passage while preserving OCR/authentication/archive limits; 80% aggregate mortality remains unresolved.
-- record-5 differentiated quarry: Claude Code returned **OWNER_FOUND twice / ZERO RECORDS**.
-- Cabinet Office Assist correction: UK Government Web Archive already preserves substantial prior-state history; the September ATRS freeze is our verification copy, not the only public old state.
-
-`CASUALTY != DEATH`
-`SELECTED PASSAGE != WHOLE BOOK`
-`RECORD_5 = NOT EARNED`
-`OWNER FOUND -> STOP`
-## EvidenceBridge / Doubt owner-convergence delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/DOUBT_THR_INTEROP_20260918.md`.
-
-- EvidenceBridge standalone proof PR #375: green at `99cf0b6...` / CI `35368129110 SUCCESS`, then **CLOSED UNMERGED / OWNER FOUND**.
-- Strong owner Doubt v0.8.0 was tested directly rather than merely cited.
-- PR #376 encoded flak, Hannibal, R. Vale, plus an unseen sieve/riddle case in the **unmodified** Doubt contract.
-- exact final branch head `cc2d859...`; pinned upstream validator commit `647482d...`; workflow `35368990471 SUCCESS`.
-- four-map receipts: flak `fbeea813525d`, Hannibal `69c24b6bc869`, R. Vale `325b63004d42`, sieve/riddle `db2cde962a38`.
-- PR #376 merged as `08e2daddaee5dbca4aba491fe4a56197c59dc90a`.
-- Result = **OWNER SUFFICIENT WITH LOSS**: reader-facing meaning survived; richer THR machine semantics for ancestry / reported-state / supersession were compressed, but no consequential use failure from that compression is observed.
-- No Doubt fork, no THR schema change, no adoption-by-momentum.
-- EvidenceBridge Open Agent / Nebius product routes are **not earned**.
-- Shipaton 2026 is **STOP** after Mark confirmed no existing store developer infrastructure; PR #374 is closed unmerged, reusable spike preserved.
-
-```text
-USE STRONGER OWNER > REBUILD OWNER
-INTEROPERABILITY != FULL SEMANTIC EQUIVALENCE
-VALID MAP != SOURCE TRUTH
-OWNER FOUND != FAILURE
-WORLD / REAL USE -> NEXT EARNED GAP
-```
-
-## ATRS #364 competition-readiness delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/ATRS_COMPETITION_READINESS_20260918.md`.
-
-- Current assessment: **REAL CONTENDER / FIRST PLACE PLAUSIBLE / NOT FAVOURITE**; no defensible numeric win probability before the fresh result.
-- Live Apart Open Track fit is unusually direct: live epistemic deployment + weekend-downloadable data + measurement/investigative research.
-- Stronger 2026 register research owner-subtracts broad novelty. `TRANSPARENCY != CONTESTABILITY`, generic register-accountability critique and complete-register auditing are not #364's contribution.
-- Surviving delta is the live UK ATRS implementation measurement: **route -> target site -> eligible actor -> initiation/channel**, source-bound to GDS's own two-site Appeals/review guidance.
-- Branch prep head = `d2bea526...`; hosted CI `35363721949 SUCCESS`; current preparation includes rewritten README/owner map, sprint plan, competition-readiness assessment, prior-work pressure, frozen November result contract and empty report shell.
-- The full population relation result remains deliberately **uncomputed**.
-- Preserve: **DO NOT full-code the remaining population or compute headline counts before the sprint.**
-
-```text
-NOVEMBER_CORPUS != BLIND HOLDOUT
-SEPTEMBER_METHOD = DISCLOSED PREPARATION
-NOVEMBER_RESULT = FRESH CORE WORK IF LIVE RULES ALLOW
-PRESERVE_RESULT_SURFACE = ACTIVE WORK
-```
-
-## #365 positive-transition owner-subtraction delta — 18 September 2026
-
-Evidence: `evidence/POSITIVE_TRANSITION_REFUSAL_EXIT_OWNER_SUBTRACTION_20260918.md`.
-
-The previously retained refusability/exit/unchosen-maintenance question is **not established as project-specific residue**. Strong owners cover its components:
-- participatory/evaluation practice -> affected people, power, unintended/negative effects;
-- procedural/distributive/recognition justice -> participation + benefit/burden distribution;
-- exit/voice literature -> leave vs answer-back;
-- infrastructure literature -> imposed/community maintenance burden.
-
-```text
-PROJECT-SPECIFIC POSITIVE-TRANSITION RESIDUE = NOT ESTABLISHED
-RESULT = OWNER CONVERGENCE / SHRINK AGAIN
-NEW TRACE PRIMITIVE = NO
-NEW ME DOCTRINE = NO
-NO MORE POSITIVE-CONSTRUCTION THEORY BUILD FROM CURRENT CASES
-```
-
-Useful remainder is a non-proprietary reading discipline only: positive framing must not hide participation, burden, exit/voice, imposed maintenance or unintended effects.
-
-## THR record 4 publication delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/THR_RECORD4_PUBLICATION_20260918.md`.
-
-- THR main = `ad9035055ce1e8f507919d40208bc3563ce1ab77`.
-- Repository catalogue = exactly **4 records**.
-- `hannibal-source-survival` is merged as record 4 after issue #40 repairs and hostile public-shape review.
-- PR #45 correction-reference floor is integrated at `b1a5344...`.
-- Final Hannibal PR head `1def7bc...`; hosted PR CI `35361247775 SUCCESS`.
-- Exact source blobs: MD `eaecb940...`; JSON `51863ad6...`; catalogue pins match.
-- Claude Code's translated-literal defect was repaired: Nepos Latin `Hannibal` is distinguished from the Polybius English rendering; Greek source literal remains uninspected.
-- Issue #40 V5 machine-typed prior-candidate-history boundary remains open but unearned as a new model.
-- Served website bytes were **not** freshly verified from this aperture; do not collapse repository merge into served verification.
-
-```text
-OUTSIDE_CASE -> THREE_BOUNDED_REPAIRS -> RECORD_4
-PUBLICATION != VALIDATION
-REPOSITORY_MERGED != SERVED_BYTES_VERIFIED
-NO_REAL_V5_FAILURE -> NO_NEW_HISTORY_MODEL
-```
-
-## FULL COMSYNC live delta — 18 September 2026 15:08 BST
-
-This block supersedes later stale wording in this file where the two conflict. Detailed receipt:
-`coordination/build_ledger/FULL_COMSYNC_20260918_1508BST.md`.
-
-- **THR:** the prior `no outsider response` state is obsolete. The Square break request produced a concrete outside synthetic case, reproduced as human-record issue #40. Production main remains `58f1b7ad...` / three public records; Hannibal PR #35 remains draft/non-public. Immediate product edge is the issue #40 mention/assertion + candidate-link evidence/history defect, not record-4 publication.
-- **#365 positive construction:** Claude Code return `5730883998` = **SHRINK**. Logic-model / contribution / sustainability / impact / heritage-viability owners substantially cover seven of eight questions. Drop the generic nine-step project reading; retain only the narrow derived pressure: **who could not refuse the positive transition, who cannot exit it, and who carries continuation without having chosen to?** No new primitive.
-- **Material capacity:** latest GB data-centre/grid case is a real reachability witness but owner-rich; no project primitive or domain rule earned.
-- **#364:** unchanged/frozen at `827b823...`; wait for fresh November data/rules, no September polishing.
-- **Campfire/Square:** public front door reachable; operational Relay tool not exposed in this runtime; authenticated `framework-relay` state remains UNKNOWN.
-
-```text
-OUTSIDE_CASE != OUTSIDE_VALIDATION
-ISSUE_40_OPEN != REPAIR_ACCEPTED
-OWNER_FOUND -> SHRINK OR STOP
-RELAY_REPO != RELAY_RUNTIME
-```
-
-## THR issue #40 candidate-boundary delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/THR_ISSUE40_CANDIDATE_BOUNDARY_20260918.md`.
-
-- THR main = `708b9f5f0691e93d052a81431e3c7de9a63a947e`.
-- PR #43 exact head `a564814...`: workflow `35357048111 SUCCESS`, 76 tests / OK, Codex exact-head `KEEP_SHRINK`.
-- Public catalogue remains exactly **3 records**.
-- Candidate links now require a non-empty inspectable `basis`.
-- Candidate-local `evidence`, `evidence_state`, `history` fail closed as unmodelled semantics.
-- Source-attributed propositions may address unresolved mention A -> mention B through assertions without entity resolution.
-- The proposed `basis_assertion_ids` bridge was not earned; probe PR #42 is closed unmerged.
-- Remaining issue #40 debt: prior candidate uncertainty/history is **not machine-typed**; an exclusion with ordinary basis and erased prior candidate state can still structurally pass. Issue #40 remains open on this boundary.
-- Hannibal remains non-public pending fresh rebase/review against the new production main.
-
-```text
-OUTSIDE_CASE -> TWO_CONCRETE_PRODUCTION_REPAIRS
-PARTIAL_REPAIR != OUTSIDE_VALIDATION
-CANDIDATE_BASIS != IDENTITY_TRUTH
-NO_TYPED_HISTORY_YET != HISTORY_IRRELEVANT
-```
-
-## THR issue #40 repair delta — 18 September 2026
-
-Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
-
-- THR production main advanced to `38fff7a864d3acb3caf417ee830ecb284fa67139` through PR #41.
-- Exact PR-head witness: `90b07a1015fd0f36c66f0ed7e4193505bc7395be`; workflow `35355805237 SUCCESS`; 73 tests / OK. No separate merge-head workflow is visible through the current route.
-- Public catalogue re-read at the merge head remains exactly **3 records**.
-- Repair closes only the first outside R. Vale break: assertions may now address an existing unresolved mention through typed `mention_id`; opaque-ID shape, uniqueness and existence fail closed.
-- Preserve `MENTION_REFERENCE != ENTITY_RESOLUTION`.
-- Issue #40 candidate-decision provenance/history seam remains open. Do **not** add `candidate.evidence_state` by momentum; owner subtraction points toward testing a resolution decision that references an evidence-bearing assertion/history instead.
-- Hannibal PR #35 remains held/non-public.
-
-```text
-OUTSIDE_CASE -> CONCRETE_REPAIR = OBSERVED
-OUTSIDE_CASE != OUTSIDE_VALIDATION
-PR41_MERGED != ISSUE40_CLOSED
-ASSERTION_REFERENCE != IDENTITY_RESOLUTION
-```
-
-> **HOW CAN WE MAKE A BETTER FUTURE?**
-
-```text
-WORLD / REAL USE -> STRONGEST OWNER -> SPECIFIC CONSEQUENTIAL GAP -> SMALLEST HELP -> WATCH CONSEQUENCES
-PURPOSE > INSTRUMENT
-```
-
-## Current state
-
-| Work | State | Current disposition |
-| --- | --- | --- |
-| COM #347 / THR | **ACTIVE PUBLIC PRODUCT / RECORD 4 MERGED / HISTORY LIMIT WAKE-ONLY** | Main `ad903505...`; repository catalogue now 4. PR41 + PR43 + PR45 are integrated. Hannibal record 4 survived bounded hostile review and translated-literal repair. Served-byte verification is not fresh in this aperture. V5 typed candidate-history remains unmodelled until a real use failure earns it. |
-| COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
-| COM #349 / tournament | **ACTIVE / #364 RESEARCH LEAD / PRODUCT ROUTES OWNER-SUBTRACTED** | Selected entry remains NONE. |
-| #364 ATRS | **CURRENT LEAD / REAL CONTENDER / RESULT SURFACE PRESERVED** | September relation method frozen; readiness branch now adds current prior-work subtraction, result contract and empty report shell. Full population relation result deliberately uncomputed until fresh November core work if live rules allow. |
-| COM #365 | **REAL-USE ACTIVATION / POSITIVE RESIDUE OWNER-SUBTRACTED / NO NEW PRIMITIVE** | Follow-on owner search routes participation, burden distribution, exit/voice, unintended effects and maintenance burden to established fields. No project-specific positive-transition residue is established; stop theory-building from current cases. |
-| COM #99 / record-correction consequence | **OWNER-NATIVE NORMATIVE CHAIN / IMPLEMENTATION WATCH** | NHS guidance now explicitly covers ambient-scribe correction, flagging and correction of other records carrying propagated errors. Theory gap not earned; implementation failure not observed. |
-| #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
-| #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
-| #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
-| TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
-| Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **FOUR-RECORD PUBLIC REPOSITORY BASELINE** | `ad903505...`; catalogue = 4. Hannibal is the fourth source-survival encounter. Publication is not validation; served-site bytes were not freshly verified in this aperture. |
-| PSFH D070 | **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED** | Maintained `7ef97775...`; public `c0a830bf...`; CI `35340308124` green, publisher `35340379133` green, Pages `35340423410` green, live verifier passed 33 targets. First publication exposed and repaired recursive nested-README omission. |
-| Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
-| Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
-| Carer's Allowance reassessment | **SYSTEM-SCALE CORRECTION-CAPACITY WATCH** | >200k review programme; ~25k expected debt change/refund cases. Current throughput not yet official. Next evidence gate: 14 Oct 2026 DWP MI. |
-
-## #364 — current source/method state
-
-Frozen ATRS source/evidence work remains intact. Version-aware correction over the same 152 HTML pages corrected legacy-heading misses without refetching.
-
-Corrected source-level observations:
-
-```text
-records = 152
-human_review = 152/152
-appeals_review = 151/152
-model_performance = 139/152
-risks = 152/152
-impact_assessment = 145/152
-maintenance = 152/152
-senior_responsible_owner = 152/152
-```
-
-Historical pre-version-aware counts remain historical parser output.
-
-The reader-use method is three-condition:
-
-```text
-FULL    = full frozen record
-EXCERPT = exact Appeals field isolated plainly
-LENS    = same field evidence with deterministic grouping only
-```
-
-```text
-FULL -> EXCERPT = field-location/scoping effect
-EXCERPT -> LENS = added grouping effect, if any
-EXCERPT ~= LENS -> ROUTE TO SIMPLER OWNER
-```
-
-Nine scored cases use six position/condition-balanced schedules; the missing-field case is a non-scored sentinel. Private scoring is route-linked rather than an arbitrary cross-product.
-
-### Final code-repair receipt
-
-The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
-
-```text
-#364 current exact head = 827b82382f26c52d62272dd4fe4e87ce52d1f78e
-current hosted CI = 35332539753 SUCCESS
-#367 = MERGED reader-use repair
-fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
-```
-
-At that head:
-- residual LENS-only caution/task prose is removed;
-- EXCERPT/LENS paragraph parity is regression-tested where no grouping exists;
-- emitted private-key cases no longer contain obsolete `component_rules`;
-- route bundles are the sole emitted provisional scoring representation;
-- v3.1 HRA/Wilton source-key narrowings remain active.
-
-The previous preserved v3.1 built artifact still predates #367:
-
-```text
-reader-use run = 35272269260 SUCCESS
-artifact = 10518547136
-sha256 = 09764a039e47ef39a5e19a998e888fb48f7e76bb9c4de5c9ed858af1ee007f3c
-```
-
-Do not relabel that older artifact as an exact-head witness.
-
-```text
-GREEN_SOURCE_HEAD != EXACT_HEAD_ARTIFACT_WITNESS
-100/100_KNOWN_FALSIFIERS_RESISTED != VALIDATED_RESEARCH_RESULT
-```
-
-## #364 — relation calibration survived with repairs
-
-The deterministic 16-record calibration is complete.
-
-Inputs:
-- Codex frozen first pass `8cf2f2ba...`;
-- Claude Code frozen first pass #364 comment `5727586822`;
-- Framework reconciliation under pre-frozen D1–D8 adjudication rules.
-
-```text
-METHOD = KEEP
-CODEBOOK = REPAIR
-PRIMARY INCLUSION = SHRINK
-VERSION = SECONDARY TAG ONLY
-```
-
-Both first passes coded all 16 from frozen records without outside process knowledge or new target categories. Their material disagreement was dominated by route discovery/inclusion and several target/binding assignments, not basic uncodability.
-
-Codebook v2:
-- tight primary stopping rule;
-- trigger != target;
-- DIRECT precedence;
-- general contacts not route channels;
-- bare N/A -> `UNEXPLAINED_NA`;
-- actor class carried separately;
-- explicit affected actor with no route -> `NO_ROUTE_STATED_IN_RECORD`, never no-real-route;
-- generic QA/maintenance/security/data-rights work is secondary context unless explicitly bound to the primary answerability object.
-
-Current branch objects:
-- `RELATION_CALIBRATION_RECONCILIATION_20260918.md`;
-- `RELATION_CODEBOOK_V2_20260918.md`.
-
-Final known calibration debt was closed by PR #369: actor-route absence now checks the bounded actor-eligible inventory, preventing unknown-target positive routes from being misreported as no route.
-
-```text
-SEPTEMBER_METHOD = FROZEN
-CALIBRATION != POPULATION RESULT
-CALIBRATION_SURVIVED != METHOD_VALIDATED
-NEXT_SUBSTANTIVE_RESULT = FRESH_CORPUS_IF_LIVE_RULES_ALLOW
-```
-
-## #364 — human-study gate remains closed
-
-Method status after the concrete repairs:
-
-```text
-PROVISIONAL PILOT-METHOD CANDIDATE
-NOT READY FOR HUMAN EXECUTION
-METHOD_SOURCE_GREEN != HUMAN_RESULT
-```
-
-Still required before participant execution:
-- independent source-bound answer-key adjudication;
-- target population / sample rationale;
-- recruitment and allocation plan;
-- consent / data minimisation;
-- analysis plan, including unsupported inference and null/adverse results.
-
-No participant recruitment/contact/data exists or is authorised.
-
-## Competition
-
-Current Apart AI x Epistemics public page: 13–15 Nov 2026, online; $2,000 total cash prizes, $1,000 first. Open Track explicitly welcomes investigation of a live epistemic deployment using weekend-downloadable data.
-
-#364 is a plausible fit, not a winning claim or selected entry.
-
-```text
-SEPTEMBER = PILOT / METHOD / FALSIFICATION / FROZEN BASELINE
-NOVEMBER = FRESH SUBSTANTIVE RESULT IF LIVE RULES ALLOW
-SELECTED ENTRY = NONE
-REGISTERED / SUBMITTED = NO
-POSSIBLE_PRIZE != MONEY_OWNED
-```
-
-No registration, organiser contact, terms acceptance or submission.
-
-## Other active lanes
-
-### THR / production semantics + one reader candidate
-
-THR production main remains `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`; public catalogue remains three records.
-
-Production repairs from PR #34 / #37 remain integrated. No Hannibal research fixture or reader proposal is on main.
-
-Current candidate:
-- PR #35 draft / non-public;
-- exact head `836f93e0849268359c58d531792bce1890271691`;
-- workflow `35339637347 SUCCESS`; integrity + rejection-case tests passed;
-- differentiated revised-head review closed after repair of one missing Polybius 3.48.12 method/access row;
-- selection-time candidate pool / alternatives are explicitly recorded as not preserved;
-- PR #39 reader copy integrated into PR #35;
-- `cases/hannibal-reader-page-proposal.html` is a styled `noindex,nofollow` mockup outside `/records/`, absent from the catalogue and not record 4;
-- issue #31 reader-object break request is live; no outsider response at last check.
-
-```text
-HISTORICAL PERSON != SURVIVING BIOGRAPHY
-THREE_PUBLIC_RECORDS = UNCHANGED
-GREEN_CANDIDATE != PUBLICATION
-NEXT = OUTSIDE / READER EVIDENCE OR CONCRETE FALSIFIER
-NO_NEW_SPECIMEN
-```
-
-Detailed receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
-
-### COM #365 / real-use activation
-
-No baseline or primitive change.
-
-Current evidence set:
-- `field/AWAABS_LAW_LQ_202524733_CORRECTION_WINDOW_20260918.md`
-- `evidence/AWAABS_LAW_LQ_202524733_THIN_ACTIVATION_RESULT_20260918.md`
-- `field/HACKNEY_HOUSING_BENEFIT_25014765_PENDING_REVIEW_20260918.md`
-- `evidence/CROSS_DOMAIN_COMPRESSION_AWAAB_HACKNEY_20260918.md`
-- `evidence/SIEVE_RIDDLE_POSITIVE_CONSTRUCTION_ACTIVATION_20260918.md`
-- `field/ENGLAND_DROUGHT_2026_HARD_COLLISION_20260918.md`
-- `evidence/ENGLAND_DROUGHT_2026_HARD_COLLISION_ACTIVATION_20260918.md`
-- `field/NATS_20260908_FLIGHT_PLANNING_OUTAGE_20260918.md`
-- `evidence/NATS_20260908_THIN_ACTIVATION_RESULT_20260918.md`
-- `field/ANTHROPIC_SEPT_2026_AUTONOMOUS_CYBER_OPERATIONS.md`
-- `evidence/ANTHROPIC_SEPT_2026_AUTONOMOUS_CYBER_BOUNDARY_ACTIVATION.md`
-- `field/BURNT_OAK_COMMUNITY_SOLAR_COLLECTIVE_CONSTRUCTION_20260918.md`
-- `evidence/BURNT_OAK_COMMUNITY_SOLAR_POSITIVE_ACTIVATION_20260918.md`
-- `evidence/POSITIVE_CONSTRUCTION_TWO_CASE_SYNTHESIS_20260918.md`
-- `field/AI_CONTACT_HOTLINE_GET_ANSWER_BACK_20260918.md`
-- `evidence/AI_CONTACT_HOTLINE_BOUNDARY_ACTIVATION_20260918.md`
-- `field/DEEPMIND_SWARM_WHISTLEBLOWING_ENFORCEMENT_20260918.md`
-- `evidence/DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md`
-- `evidence/AGENT_ANSWER_BACK_TWO_CASE_OWNER_SUBTRACTION_20260918.md`
-- `evidence/CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md`
-- `field/PAPER2AGENT_ACTIVE_DERIVED_RESEARCH_OBJECT_20260918.md`
-- `evidence/PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md`
-
-```text
-AWAAB = NO DOMAIN DELTA / COMPRESSION ONLY
-AWAAB+HACKNEY = TWO-DOMAIN PORTABILITY WITNESS
-SIEVE/RIDDLE = REAL POSITIVE-CONSTRUCTION WITNESS
-DROUGHT = HARD-COLLISION BOUNDARY ACTIVATION
-NATS = CRITICAL-INFRASTRUCTURE NO DOMAIN DELTA / COMPRESSION ONLY
-ANTHROPIC CYBER = AUTONOMY/HARM + HUMAN-IN-LOOP NON-COLLAPSE PRESSURE
-BURNT OAK = REAL COLLECTIVE POSITIVE-CONSTRUCTION WITNESS
-POSITIVE TWO-CASE VIEW = SURVIVED / HOSTILE REVIEW OPEN
-AI HOTLINE = GET-ONLY / INFO-FLOW + ANSWER-BACK BOUNDARY WITNESS
-DEEPMIND SWARM = DETECTION / REPORT / ENFORCEMENT / CORRECTION SEPARATION
-ANSWER-BACK TWO-CASE = OWNER CONVERGENCE / EXISTING ME CLAIM ACTIVATED
-CAMPFIRE SELF-AUDIT = CURRENTNESS BOUNDARY / NO BUILD
-PAPER2AGENT = ACTIVE-DERIVED-VIEW WITNESS / NO THR BUILD
-OPERATIONAL ADVANTAGE = NOT DEMONSTRATED
-NEW PRIMITIVE = NONE
-```
-
-#365 comments `5729845049`, `5729899822`, `5729932322`, `5729988622` invite only concrete hostile returns.
-
-### Resources
-
-Fresh pass found no application earned today.
-
-```text
-BLUEDOT = KEEP FOR SPECIFIC COMPUTE/API BOTTLENECK
-CRF = OWNER PRESENT / NO CONCEPT NOTE
-ARIA = OWNER PRESENT / THESIS NOT EARNED
-LASR = HIGH PERSONAL-TIME COMMITMENT / NOT DEFAULT RUNWAY
-APPLICATION EARNED TODAY = NO
-```
-
-No contact/account/terms/application/spend/payment action.
-
-### Carer's Allowance reassessment
-
-System-scale correction-capacity watch only.
-
-Official programme scale:
-- >200,000 cases to review;
-- ~25,000 expected debt reduction/cancellation/refund;
-- £75m across 2026/27–2028/29.
-
-Official throughput is not yet established.
-
-Next evidence gate: **14 October 2026 DWP reassessment management information**.
-
-### Campfire / Square
-
-Public 1F916 door is reachable and current protocol is visible. This aperture has no authenticated `framework-relay` inbox/quota/write state and no operational Relay tool.
-
-```text
-PUBLIC_SNAPSHOT != AUTHENTICATED_CURRENT_STATE
-RELAY_REPO != RELAY_TOOL
-```
-
-## Consequential gates
-
-Explicit human gates remain for:
-- #364 participant recruitment / human-study execution;
-- competition/funder accounts, terms, organiser contact and submission;
-- credentials/payment/new spend;
-- TRACE/ME release/canon/baseline/licence changes;
-- Campfire Production activation;
-- destructive/irreversible actions;
-- travel/payout/tax;
-- crawler/training-policy changes.
-
-Current receipt: `coordination/build_ledger/ANSWER_BACK_ACTIVE_RECORD_PASS_20260918_PM.md`.
-
-```text
-TRUTH > CONTINUITY_COHERENCE
-OWNER_FOUND / NO_DELTA / NOT_OUR_GAP / STOP = VALID
-PURPOSE > INSTRUMENT
-```
+History belongs in dated build-ledger receipts and Git, not this file.
