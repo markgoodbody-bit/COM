@@ -1,8 +1,28 @@
 # ACTIVE THREAD POINTER
 
-Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-18 19:23 BST D072 delivery/currentness pass — Europe/London  
+Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
+Updated: 2026-09-18 19:42 BST FULL COMSYNC — Europe/London  
 Later live source and direct human direction win.
+
+## FULL COMSYNC live delta — 18 September 2026 19:42 BST
+
+Detailed receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_1942BST.md`.
+
+- Fresh pre-sync COM main observed: `369adfa7263a84e7bf3f09bfc10aba53403aa8f3`.
+- Current repository mains: TRACE `e7d46398...`; Mechanical Ethics `45b4a303...`; THR `217f89c...`; Campfire Relay `b8579e56...`.
+- TRACE / ME main movement is explicit AI-training permission + README routing only; released formal baselines remain TRACE v0.3.0 and ME v0.7.0.
+- THR remains exactly 4 public records; Hannibal is record 4; EvidenceBridge standalone remains STOP / OWNER FOUND; no record 5 is earned.
+- Rail currentness PR #383 is OPEN / DRAFT / MERGEABLE at exact head `ae74440cb36315110ca4aafaf06907faa3d2716c`; workflow `35380967037 SUCCESS`.
+- No hostile review return is observed yet; only the request is present. No owner correction contact has been sent.
+- Do not collapse green CI into review completion or publication/owner routing.
+- Campfire authenticated runtime state remains UNKNOWN in this aperture.
+
+```text
+REPOSITORY_MAIN_MOVED != FORMAL_BASELINE_CHANGED
+GREEN_CI != HOSTILE_REVIEW_COMPLETE
+OWNER_PACKET_READY != OWNER_CONTACT_SENT
+PURPOSE > INSTRUMENT
+```
 
 ## PSFH D072 + THR currentness delta — 18 September 2026
 
