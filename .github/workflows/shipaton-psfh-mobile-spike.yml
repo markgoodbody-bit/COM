@@ -1,0 +1,37 @@
+name: Shipaton PSFH mobile spike
+
+on:
+  push:
+    branches:
+      - framework/shipaton-psfh-mobile-spike-20260918
+    paths:
+      - 'competition/shipaton_psfh_mobile_spike/**'
+      - '.github/workflows/shipaton-psfh-mobile-spike.yml'
+  pull_request:
+    paths:
+      - 'competition/shipaton_psfh_mobile_spike/**'
+      - '.github/workflows/shipaton-psfh-mobile-spike.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: competition/shipaton_psfh_mobile_spike
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: competition/shipaton_psfh_mobile_spike/package.json
+      - name: Install spike dependencies
+        run: npm install --no-audit --no-fund
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Resolve Expo public config
+        run: npx expo config --type public >/tmp/psfh-mobile-expo-config.json
