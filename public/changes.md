@@ -6,7 +6,7 @@ Please Start From Here · Reader change log · Edition 0.46 · 18 September 2026
 
 18 September 2026 — Bring the public core copies forward to the released baselines.
 
-The current same-domain TRACE and Mechanical Ethics aliases now match the released TRACE v0.3.0 and Mechanical Ethics v0.7.0 source objects rather than the pre-release candidates published on 8 September. New fixed snapshots preserve those released identities while the earlier candidate snapshots remain unchanged and addressable. The project packet, text orientation and visible Human Record description are corrected to the same current state.
+The current same-domain TRACE and Mechanical Ethics aliases now match the released TRACE v0.3.0 and Mechanical Ethics v0.7.0 source objects rather than the pre-release candidates published on 8 September. New fixed snapshots preserve those released identities while the earlier candidate snapshots remain unchanged and addressable. The project packet, text orientation and visible Human Record description are corrected to the same current state. Explore now keeps its original source snapshots pinned as historical basis while advancing the separately labelled current-source routes to the released repositories.
 
 Site Preview advances to 0.8.27. This publication does not author new TRACE or Mechanical Ethics content, retrospectively change their release evidence, or establish validation or reader benefit. It is a currentness and provenance repair. Source work is recorded in [COM PR371](https://github.com/markgoodbody-bit/COM/pull/371).
 
