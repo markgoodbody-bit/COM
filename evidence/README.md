@@ -38,6 +38,7 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md`](DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md) | Primary swarm witness for **DETECTION != REPORTING != ENFORCEMENT != CORRECTION**; no new primitive. |
 | [`AGENT_ANSWER_BACK_TWO_CASE_OWNER_SUBTRACTION_20260918.md`](AGENT_ANSWER_BACK_TWO_CASE_OWNER_SUBTRACTION_20260918.md) | Hotline + DeepMind swarm: AI-specific field activation of existing answerability claim; generic lifecycle already owned by ISO/NIST. |
 | [`CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md`](CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md) | Self-application: Campfire is research transport/evidence, not a claimed whistleblower system; continuous monitoring is unestablished but no consequential missed-reply failure is reproduced. |
+| [`PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md`](PAPER2AGENT_ACTIVE_DERIVED_VIEW_ACTIVATION_20260918.md) | External owner convergence: interactive/executable derived view can remain distinct from source/evidence; no THR build or new primitive earned. |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
