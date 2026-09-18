@@ -20,3 +20,11 @@ Validation uses the upstream action alsoleg89/doubt@v0.8.0 without local schema 
 If all three validate, generic EvidenceBridge ontology is further owner-subtracted. If a case cannot be represented without losing a load-bearing distinction, preserve that exact loss as a concrete interoperability gap.
 
 `USE STRONGER OWNER > REBUILD OWNER`
+
+## Unseen fourth-case promotion test
+
+After the three design-pressure cases validated, a fourth existing THR case was added **without changing the Doubt schema**:
+
+- sieve/riddle revival — tests whether reported revival, partial direct learning, shared institutional source family, and the unknown tacit-skill transmission gap remain distinct.
+
+This case was not used to design EvidenceBridge v0. If it validates unchanged, the generic owner-sufficiency result strengthens.
