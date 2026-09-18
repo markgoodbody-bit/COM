@@ -1,0 +1,28 @@
+name: PSFH Remark42 restore guard probe
+on:
+  push:
+    branches: [framework/psfh-remark42-restore-guard-20260918]
+    paths:
+      - 'experiments/psfh-remark42-restore-guard-20260918/**'
+      - '.github/workflows/psfh-remark42-restore-guard.yml'
+  pull_request:
+    paths:
+      - 'experiments/psfh-remark42-restore-guard-20260918/**'
+      - '.github/workflows/psfh-remark42-restore-guard.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m py_compile experiments/psfh-remark42-restore-guard-20260918/probe.py
+      - run: python experiments/psfh-remark42-restore-guard-20260918/probe.py --out /tmp/result.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: psfh-remark42-restore-guard-result
+          path: /tmp/result.json
+          retention-days: 14
