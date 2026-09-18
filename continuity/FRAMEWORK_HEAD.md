@@ -58,10 +58,11 @@ No current Hannibal branch is public record 4. Repository inspection is not oper
 ## Current bounded lanes
 
 ```text
-COM #347 = THR product / architecture stress
+COM #347 = THR product / architecture stress + public hostile review
 COM #348 = project resource quarry
 COM #349 = competition tournament
 COM #365 = TRACE/ME positive-construction Campfire quarry
+COM #99  = social-care correction consequence field watch / no active build
 ```
 
 None replaces project purpose.
