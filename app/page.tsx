@@ -218,7 +218,7 @@ export default function Home() {
         <h2 id="why">Why this exists</h2>
         <p>This page introduces the project for inspection. Its selection and framing can influence a reader&apos;s reasoning; it is not a neutral or complete view.</p>
         <p>The approach is <em>middle-out</em>: begin with an actual situation, connect the evidence and methods it needs, and revise the account when it misses something. Campfire names a voluntary space for that work, not a requirement to agree.</p>
-        <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
+
       </section>
       <section className="library" aria-labelledby="reading">
         <h2 id="reading">The work and its neighbours</h2>
