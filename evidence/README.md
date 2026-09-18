@@ -31,6 +31,7 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`NHS_AI_REGULATION_OWNER_CURRENTNESS_20260918.md`](NHS_AI_REGULATION_OWNER_CURRENTNESS_20260918.md) | Strong healthcare owner present; overlap with ME/TRACE is owner subtraction, not novelty/validation. |
 | [`NATS_20260908_THIN_ACTIVATION_RESULT_20260918.md`](NATS_20260908_THIN_ACTIVATION_RESULT_20260918.md) | Critical-infrastructure owner machinery already preserves the material relations: **NO DOMAIN DELTA / COMPRESSION ONLY**. |
 | [`ANTHROPIC_SEPT_2026_AUTONOMOUS_CYBER_BOUNDARY_ACTIVATION.md`](ANTHROPIC_SEPT_2026_AUTONOMOUS_CYBER_BOUNDARY_ACTIVATION.md) | Real field support for **AUTONOMY != HARM SEVERITY** and **HUMAN IN LOOP != SAFETY**; no new primitive. |
+| [`BURNT_OAK_COMMUNITY_SOLAR_POSITIVE_ACTIVATION_20260918.md`](BURNT_OAK_COMMUNITY_SOLAR_POSITIVE_ACTIVATION_20260918.md) | Real collective capability construction through differentiated roles; **positive construction survived without a new primitive**. |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
