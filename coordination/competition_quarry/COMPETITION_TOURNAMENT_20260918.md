@@ -145,7 +145,80 @@ NO ACCOUNT / STORE / TERMS / SPEND ACTION WITHOUT MARK
 
 If store publication cannot be credibly achieved in time, kill immediately.
 
-## 4. Nebius x NVIDIA Global AI Hackathon — RETAIN / SERIOUS PRODUCT ROUTE
+## 4. Open Agent Hackathon 2026 — RETAIN / STRONG PRODUCT BUILD ROUTE
+
+Dates: 15–20 Oct 2026, online.
+Registration closes: 13 Oct UTC on the current organiser page.
+Owner:
+https://hackathon.genai.works/
+
+Current organiser FAQ says public hackathons are open worldwide to developers, researchers and builders.
+A current NCSA partner announcement advertises a **$20,000 prize pool**.
+
+Brief:
+**Build an agent that does real work.**
+
+This is a stronger natural fit than converting ATRS into an agent.
+
+### Candidate: EvidenceBridge
+
+A real working research/public-interest agent:
+
+Input:
+- claim/question;
+- source URLs/documents.
+
+Agent work:
+- inspect sources;
+- extract propositions;
+- distinguish reported / observed / inferred / disputed / unknown;
+- identify source ancestry/dependence;
+- flag duplicate-source false corroboration;
+- preserve corrections;
+- expose exact evidence behind conclusions;
+- refuse to manufacture a living-person profile or unsupported relation.
+
+Output:
+- concise answer;
+- inspectable evidence graph/table;
+- correction/unknown state;
+- machine-readable export.
+
+This can be useful for:
+- researchers;
+- journalists;
+- public-interest investigators;
+- THR contributors;
+- policy/governance readers.
+
+It is not “TRACE as an app”.
+
+### Two-competition path
+
+If EvidenceBridge proves useful during Open Agent:
+
+```text
+OPEN AGENT (15–20 OCT)
+-> BUILD CORE PRODUCT DURING EVENT
+-> REAL USER / JUDGE BREAKAGE
+-> REPAIR
+-> THEN
+NEBIUS/NVIDIA (DEADLINE 30 OCT)
+-> SIGNIFICANT NEMOTRON / NEBIUS UPDATE
+-> SCALE / HOST / POLISH
+-> OPTIONAL TAVILY DISCOVERY IF EARNED
+```
+
+Nebius explicitly allows existing projects that are significantly updated during its submission period, so this sequencing may be compatible; live rules for both must be re-read before any dual submission.
+
+Current disposition:
+```text
+RETAIN / STRONG
+BUILD ONLY IF PRODUCT IS USEFUL WITHOUT PRIZE
+NO REGISTRATION YET
+```
+
+## 5. Nebius x NVIDIA Global AI Hackathon — RETAIN / SERIOUS PRODUCT ROUTE
 
 Deadline: 30 Oct 2026, 10:00 PDT.
 Owner:
@@ -209,7 +282,7 @@ NEW CLEAN OSS REPO IF BUILT
 NO NEMOTRON THEATRE
 ```
 
-## 5. Since AI 2026 — CONDITIONAL / HIGH LOAD
+## 6. Since AI 2026 — CONDITIONAL / HIGH LOAD
 
 Dates: 6–8 Nov 2026.
 Location: Turku, Finland; in person.
@@ -247,7 +320,7 @@ HIGH HUMAN LOAD
 TRAVEL / APPLICATION GATE
 ```
 
-## 6. Apart AI Collusion — HOLD / NO EARNED DELTA
+## 7. Apart AI Collusion — HOLD / NO EARNED DELTA
 
 Dates: 23–25 Oct 2026, online + NYC hub.
 Prize: $1,000 first / $2,000 total.
@@ -287,9 +360,10 @@ DO NOT REPACKAGE THR LANGUAGE
 1. ATRS / Apart Epistemics = PRESERVE RESULT
 2. Hack Apertus = PREP NOW, RUN IN WINDOW
 3. Shipaton Peace Prize = URGENT FEASIBILITY GATE
-4. Nebius/NVIDIA = PRODUCT DISCOVERY / HIGH UPSIDE
-5. Since AI = WATCH CHALLENGES / HUMAN LOAD
-6. Apart Collusion = HOLD UNTIL REAL DELTA
+4. Open Agent = STRONG PRODUCT BUILD ROUTE
+5. Nebius/NVIDIA = FOLLOW-ON PRODUCT / HIGH UPSIDE
+6. Since AI = WATCH CHALLENGES / HUMAN LOAD
+7. Apart Collusion = HOLD UNTIL REAL DELTA
 ```
 
 No competition registration, account creation, store submission, terms acceptance, travel booking, spend or external contact is authorised by this tournament record.
