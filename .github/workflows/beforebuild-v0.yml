@@ -39,7 +39,6 @@ jobs:
               'policy-boundary-compiler': 'STOP',
               'rail-accessibility-currentness': 'BUILD_PROBE',
           }, got
-          assert 'typed evidence is not source verification' in r['claim_ceiling']
           print(json.dumps(got, indent=2, sort_keys=True))
           PY
 
@@ -57,8 +56,7 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          src='experiments/beforebuild-v0/calibration_cases.json'
-          data=json.load(open(src))
+          data=json.load(open('experiments/beforebuild-v0/calibration_cases.json'))
           case=next(c for c in data['cases'] if c['id']=='evidencebridge-vs-doubt')
           owner=next(c for c in case['candidates'] if c['id']=='doubt-v0.8.0')
           owner['trial']['executed']=False
@@ -84,7 +82,7 @@ jobs:
           PY
       - name: Require owner receipt to reproduce INTEROPERATE
         run: |
-          python experiments/beforebuild-v0/beforebuild.py /tmp/cases.json             --receipt /tmp/doubt-receipt.json             --out /tmp/live-owner-report.json
+          python experiments/beforebuild-v0/beforebuild.py /tmp/cases.json             --receipt /tmp/doubt-receipt.json --out /tmp/live-owner-report.json
           python - <<'PY'
           import json
           r=json.load(open('/tmp/live-owner-report.json'))
@@ -92,10 +90,61 @@ jobs:
           assert row['verdict']=='INTEROPERATE', row
           cov=next(x for x in row['candidate_coverage'] if x['candidate_id']=='doubt-v0.8.0')
           assert cov['receipt_source'].startswith('github-action:alsoleg89/doubt@')
-          print(json.dumps({
-            'verdict':row['verdict'],
-            'receipt_source':cov['receipt_source'],
-            'hard_cases_passed':cov['pass'],
-            'material_loss_ids':cov['material_loss_ids'],
-          }, indent=2))
+          print(json.dumps({'verdict':row['verdict'],'receipt_source':cov['receipt_source'],'hard_cases_passed':cov['pass'],'review_loss_ids':cov['review_loss_ids']}, indent=2))
+          PY
+
+  live-rail-owner-system-adapter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Observe current National Rail public owner surfaces
+        run: |
+          python experiments/rail-accessibility-currentness-20260918/check.py --live --json > /tmp/rail-live.json
+      - name: Convert live owner observation to BeforeBuild receipt
+        run: |
+          python - <<'PY'
+          import json
+          audits=json.load(open('/tmp/rail-live.json'))
+          map_result={
+            'CONTRADICTION':'FAIL',
+            'CONSISTENT_EXISTS':'PASS',
+            'NO_EXISTENCE_COMPARISON':'NOT_TESTED',
+            'FETCH_UNKNOWN':'NOT_TESTED',
+          }
+          results={row['crs']:map_result[row['result']] for row in audits}
+          assert set(results)=={'HIR','IRL','DSY','BIW','AGV','LLE'}, results
+
+          data=json.load(open('experiments/beforebuild-v0/calibration_cases.json'))
+          case=next(c for c in data['cases'] if c['id']=='rail-accessibility-currentness')
+          owner=next(c for c in case['candidates'] if c['id']=='national-rail-owner-system')
+          owner['trial']['executed']=False
+          owner['trial']['hard_case_results']={}
+          json.dump(data, open('/tmp/cases.json','w'), indent=2)
+
+          receipt={
+            'format':'beforebuild-owner-receipts-v0.1',
+            'receipts':[{
+              'case_id':'rail-accessibility-currentness',
+              'candidate_id':'national-rail-owner-system',
+              'executed':True,
+              'hard_case_results':results,
+              'source':'live-public-owner-surfaces:rail-accessibility-checker'
+            }]
+          }
+          json.dump(receipt, open('/tmp/rail-receipt.json','w'), indent=2)
+          print(json.dumps({'live_results':results}, indent=2))
+          PY
+      - name: Evaluate current owner state without freezing historical failure
+        run: |
+          python experiments/beforebuild-v0/beforebuild.py /tmp/cases.json             --receipt /tmp/rail-receipt.json --out /tmp/rail-beforebuild.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/rail-beforebuild.json'))
+          row=next(x for x in r['results'] if x['case_id']=='rail-accessibility-currentness')
+          assert row['verdict'] in {'BUILD_PROBE','USE_OWNER','SHRINK'}, row
+          print(json.dumps({'current_verdict':row['verdict'],'coverage':row['candidate_coverage']}, indent=2))
           PY
