@@ -34,3 +34,28 @@ No source repair is earned from this observation alone.
 `NO_SQUARE_WRITE`
 
 Wake only on a response envelope, a local-runtime witness, or a concrete shared-source defect.
+## Source-currentness finding
+
+A later source inspection changes the interpretation of the silence.
+
+R26-A's preserved update receipt states that the Framework bridge is a locally opt-in poller. R26-A1's UI-repair receipt explicitly names R26-A as the exact installed predecessor and preserves this acceptance boundary: bridge remains disabled until explicitly started.
+
+Historical issue #175 responses prove the installed lane previously produced COMPLETE HEAD/THREAD envelopes. The September issue currently contains the two new request envelopes and no later response.
+
+R26-A INSTALLED HISTORICALLY = YES
+READ LANE WORKED HISTORICALLY = YES
+CURRENT REQUEST SHAPE VALID = YES
+CURRENT LOCAL BRIDGE STARTED = NOT OBSERVED
+CURRENT RESPONSE = NO
+SOURCE DEFECT = NOT OBSERVED
+PATCH EARNED = NO
+
+The silence is consistent with the intentionally opt-in bridge being stopped or the local Square runtime not running. It does not establish a semantic refusal, broken GitHub ingress or broken exporter.
+
+Making the bridge auto-start would change an explicit operational/security boundary (no unattended actuation) and is not a routine source repair. Do not make that change by momentum.
+
+Wake on:
+- local operator/runtime witness that the bridge is started but requests still do not process;
+- a new FAILED response;
+- a concrete parser/poller defect;
+- direct human authorization to reconsider the opt-in boundary.
