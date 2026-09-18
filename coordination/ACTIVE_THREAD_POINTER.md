@@ -2,7 +2,7 @@
 
 Current bounded competition thread:
 
-1. **Amazon Alexa+** — source candidate FROZEN GREEN in Campfire Relay PR #245; exact head `109d67c190496774a28ea97cec7ccd11342cac84`; hosted `campfire-ci 1519 / 35404393764 SUCCESS`. Product now includes explicit unknown/no-retry, cross-session unresolved-receipt recovery, historical-vs-current confirmation repair, judge-facing evidence timeline and standalone submission package.
+1. **Amazon Alexa+** — source candidate REPAIRED GREEN in Campfire Relay PR #245; exact head `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`; hosted `campfire-ci 1520 / 35405626849 SUCCESS`. A hostile restart probe found that persisted `INTENT/PENDING` could be ignored after a post-write ledger-append interruption, allowing a second write. The exact repair now treats durable `PENDING` as unresolved for discovery and duplicate suppression, with read-only reconciliation; 22 focused tests pass. This is conservative recovery, not an exactly-once claim. The package also retains explicit unknown/no-retry, historical-vs-current confirmation repair, judge-facing evidence timeline and standalone submission material.
 2. **Hack-Nation 7** — application packet ready; next approval batch closes **19 September**; human registration/approval gate only, no more engineering prerequisite.
 3. **ARC Prize 2026** — newly routed as HIGH-VALUE QUARRY; $2M programme / ARC-AGI-3 milestone 30 Sep / $450K paper pool, but paper requires real Kaggle code submission. Small owner-baseline viability spike earned; full pivot not earned.
 4. **Hack Apertus** — hold until 1 October live challenge/rules gate.
