@@ -180,8 +180,8 @@ The subsequent world/owner pass moved #364's lead question beyond the secondary 
 Current exact PR #364 head:
 
 ```text
-95a979a75e51f796818712031f1583ca06f5c2d9
-hosted CI 35328650762 = SUCCESS
+827b82382f26c52d62272dd4fe4e87ce52d1f78e
+hosted CI 35332539753 = SUCCESS
 ```
 
 Current fresh-corpus question:
@@ -250,7 +250,16 @@ FIRST_READS_DIFFERED_MATERIALLY_ON_INCLUSION_AND_SOME_TARGETS
 CALIBRATION_SURVIVED != METHOD_VALIDATED
 ```
 
-The next substantive result, if pursued, should be a fresh corpus under live November rules using codebook v2. Do not turn the September calibration into a population result.
+The final post-reconciliation false-absence defect was repaired through PR #369 and agreed by Codex + Claude Code: `NO_ROUTE_STATED_IN_RECORD` is now derived over the whole bounded actor-eligible relation inventory, not merely the confirmed-target primary table. Positive candidate routes with unknown/other targets still count as stated routes; internal review by someone else and explicit negative no-separate propositions do not become the affected actor's positive route.
+
+```text
+PR369 head = 0827f5925fc789fe0c98c370a3d3b7809a1acf60
+merge = 827b82382f26c52d62272dd4fe4e87ce52d1f78e
+hosted CI = 35332539753 SUCCESS
+SEPTEMBER_METHOD = FROZEN
+```
+
+The next substantive result, if pursued, should be a fresh corpus under live November rules using codebook v2. Do not turn the September calibration into a population result or continue September recoding by momentum.
 
 The reader-use method remains secondary and not ready for participant execution.
 
@@ -324,10 +333,11 @@ Closed as integrated or superseded:
 - PR #32 — direct-state sibling repair;
 - PR #33 — checked-source sibling repair.
 
-Remaining Hannibal candidate surface:
-- PR #28 only — draft historical-human candidate / architecture pressure.
+Current Hannibal candidate surface:
+- PR #35 — draft historical-human encounter rebuilt from repaired main; exact head `76dd138d1d1d5627dec071b013062cf8349409c6`; hosted workflow `35330401494 SUCCESS`; 70 tests / OK; 7 warnings; public catalogue still three records.
+- Earlier Hannibal candidate branches are superseded/closed for integration purposes; do not revive duplicates.
 
-PR #28 is **not** public record 4 and is not merge-ready merely because validator infrastructure improved.
+PR #35 is **not** public record 4 and is not merge-ready merely because validator infrastructure improved.
 
 Issue #31 remains the public hostile-review aperture. Framework comment `5728047635` records that the two named false passes are repaired on main while explicitly keeping the wider break surface open.
 
@@ -342,12 +352,10 @@ GRAPH != WORLD
 ```
 
 Next THR gate:
-- refresh only PR #28 against the new main;
-- strongest-owner/source-criticism check;
+- keep PR #35 exact reviewed head stable while differentiated hostile review runs;
+- current Framework self-review attacks: conventional label vs source-attested string; missing selection provenance; web-reading-surface quality; Lacinium tablet/column carrier identity;
 - preserve source dependence, survival bias and representation boundaries;
-- test with current production validators;
-- hostile review;
-- no catalogue promotion unless the public record is genuinely earned.
+- no catalogue promotion unless the public record is genuinely earned and separately authorised.
 
 Do **not** add another stress specimen before this is resolved.
 
@@ -393,13 +401,15 @@ Wake only for real operational evidence, an owner request or a material observed
 
 Purpose: reduce dependence on Mark's personal burn without making fundraising the project.
 
-Current retained routes:
-- OpenAI Researcher Access: KEEP only when a surviving research object has a credible OpenAI API budget.
-- Anthropic External Researcher Access: KEEP only when a surviving research object has a credible Claude/API budget.
+Current resource posture:
+- Corrigibility Research Fund: funding owner survives (typical $5k–$35k; 31 Oct round noted), but generic correction-propagation and generic “corrigibility != obedience / multiple principals” proposal stories are OWNER FOUND. Residual authority-ambiguity / semantic-non-collapse seam remains HOLD pending a concrete falsifier; **no concept note earned yet**.
+- Arcee Trinity Builders: credit route only if a live experiment has a real Trinity token budget.
+- OpenAI Researcher Access: HOLD on known standing; current FAQ affiliation requirement is not satisfied by the standing established here.
+- Anthropic External Researcher Access: retain only when a surviving research object has a credible Claude/API budget.
 - ARIA Scaling Trust: research seam only; no proposal earned after owner subtraction.
-- LASR is recorded as a time-sensitive career/research programme, not a default project-runway route.
+- Transformative AI Fund / other larger routes remain resource-owner possibilities, not project assignments.
 
-#364's current core does not require model spend. Do not manufacture compute demand to fit credit programmes.
+#364's current core does not require model spend. Do not manufacture compute demand or grant-shaped work.
 
 No application/account/contact/terms/spend/payment action.
 
