@@ -26,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Syntax
         run: python -m py_compile experiments/psfh-remark42-backup-erasure-20260918/probe.py
+      - name: Container ownership regression
+        run: python -m unittest discover -s experiments/psfh-remark42-backup-erasure-20260918 -p 'test_*.py'
       - name: Run synthetic owner lifecycle
         run: |
           python experiments/psfh-remark42-backup-erasure-20260918/probe.py --out /tmp/remark42-erasure-result.json
