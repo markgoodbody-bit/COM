@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import unquote, urlsplit
 
 HERE = Path(__file__).resolve().parent
-INPUT_SHA = '84ebfe8f23af8ffce93bc13b14314e74aa0722a03688cff8087962517182eff7'
+INPUT_SHA = '5b878fa69fe7ff5e75d61c194c2fc18f8af4b34abbc4984a9fcc152a3359f455'
 BASE = 'https://pleasestartfromhere.com'
 
 
@@ -235,11 +235,11 @@ def assemble(root, output, previous=None):
                         {'files': rows, 'dependencies': dependencies(project, bodies)})
     inventory = {'format': 'psfh-resource-copies/0.1', 'input_sha256': INPUT_SHA,
                  'input_source': 'scripts/RESOURCE_COPIES.json in maintained PSFH source; exact input_sha256 is the reviewed identity',
-                 'boundary': 'Pinned project-controlled reading copies, not a whole ecosystem mirror, validation result or new reuse/training licence. Current aliases name the released editions below. Snapshot paths preserve immutable earlier/release identities and must not be overwritten. These aliases are not continuously checked heads.',
+                 'boundary': 'Pinned reading copies. AI_TRAINING_PERMISSION.md in each project grants scoped AI training permission for owner-controlled material; third-party rights remain separate. No general reuse licence or validation is implied. Current aliases carry the released documents and updated notices. Earlier snapshots remain immutable historical copies. These aliases are not continuously checked heads.',
                  'projects': projects}
     title = 'Read TRACE and Mechanical Ethics'
     intro = 'The documents are here on this site as exact local copies of the current released TRACE v0.3.0 and Mechanical Ethics v0.7.0 baselines. Release changes status, not validation or demonstrated practical advantage. Earlier published candidate editions remain at fixed snapshot paths.'
-    limit = 'GitHub remains the place for source history, criticism and discussion. FPF and other third-party references remain elsewhere. This is not a self-contained copy of every linked source, and it does not grant new copying, adaptation or training rights.'
+    limit = 'AI training, including commercial training, is permitted for the owner-controlled material specified in each project’s AI_TRAINING_PERMISSION.md below, including its complete-text HTML copies. Third-party rights remain separate; this is not a general reuse licence. GitHub remains the place for source history, criticism and discussion. Historical snapshots retain their original notices; the dated training permissions take precedence for the covered versions.'
     text = '# ' + title + '\n\n' + intro + '\n\n' + limit + '\n'
     body = '<h1>' + title + '</h1><p>' + intro + '</p>'
     body += '<p>Optional HTML source-text views: <a href="/read/trace-spine.html">TRACE compact spine</a> · <a href="/read/me-book.html">ME book</a> · <a href="/read/start.html">Start</a> · <a href="/read/orientation.html">Orientation</a>. Complete source text, not a new formatted edition.</p>'

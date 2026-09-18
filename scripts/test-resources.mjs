@@ -21,7 +21,11 @@ test('all copies, declarations, local dependency paths and directory navigation 
       assert.ok(files.has('snapshots/' + project.id + '/' + project.commit + '/' + dep.target));
     }
   }
-  assert.equal(copies, 14);
+  assert.equal(copies, 16);
+  for (const project of inventory.projects) {
+    assert.ok(project.files.some(file => file.path === 'AI_TRAINING_PERMISSION.md'));
+    assert.match(files.get(project.id + '/README.md').toString(), /AI_TRAINING_PERMISSION.md/);
+  }
   for (const [name, bytes] of files) if (name.endsWith('.html')) {
     const page = bytes.toString();
     assert.doesNotMatch(page, /<(script|iframe|form|object)\b/i);

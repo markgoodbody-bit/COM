@@ -4,23 +4,23 @@
   "prepared": "2026-09-18",
   "status": "BUILD INPUT / NOT A PUBLIC DELIVERY RECEIPT",
   "purpose": "Publish the current first-party reading resources as actual same-domain files, not redirects or runtime GitHub fetches.",
-  "authority_basis": "Mark explicitly requested first-party resource copies on pleasestartfromhere.com in this conversation. No downstream licence, training right, private-data publication or new spend is granted by this inventory.",
-  "source_observation": "Released TRACE v0.3.0 and Mechanical Ethics v0.7.0 source commits and exact selected file identities were re-read through the GitHub connector on 18 September 2026. Earlier published candidate snapshots remain immutable history; current aliases advance only through this reviewed release-sync input.",
+  "authority_basis": "Mark authorised AI training on owner-controlled TRACE and Mechanical Ethics material on 18 September 2026. The copied AI_TRAINING_PERMISSION.md notices define scope; this inventory grants no additional rights.",
+  "source_observation": "Permission notices and current READMEs pinned to reviewed post-permission commits. Released document bytes and prior snapshots remain unchanged.",
   "projects": [
     {
       "id": "trace",
       "repository": "markgoodbody-bit/TRACE",
-      "commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
+      "commit": "e7d46398dc00ead931b0d5cae98518c1bcf304a3",
       "status_at_source": "v0.3.0 / RELEASED / FORMAL BASELINE / CURRENT SPECIFICATION / NOT VALIDATED / NO EFFICACY RESULT",
       "baseline_distinction": "v0.3.0 is the current released formal baseline; v0.2.7 remains the previous released formal baseline",
       "notice_path": "README.md",
       "current_prefix": "/resources/trace/",
-      "snapshot_prefix": "/resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/",
+      "snapshot_prefix": "/resources/snapshots/trace/e7d46398dc00ead931b0d5cae98518c1bcf304a3/",
       "files": [
         {
           "path": "README.md",
-          "git_blob_sha1": "a6f95cf2bac4558e4b5b56b0b38d6e498541d3d0",
-          "bytes": 6827,
+          "git_blob_sha1": "037aa205fdc5c3ff4d7baec1135d81fa86d19848",
+          "bytes": 6960,
           "media_type": "text/markdown; charset=utf-8"
         },
         {
@@ -36,23 +36,29 @@
           "bytes": 180619,
           "media_type": "text/markdown; charset=utf-8",
           "sha256_declared_by_source_readme": "b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34"
+        },
+        {
+          "path": "AI_TRAINING_PERMISSION.md",
+          "git_blob_sha1": "467e47b68f5172e22546885792720be28b3ab4b3",
+          "bytes": 2685,
+          "media_type": "text/markdown; charset=utf-8"
         }
       ]
     },
     {
       "id": "mechanical-ethics",
       "repository": "markgoodbody-bit/mechanical-ethics",
-      "commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
+      "commit": "45b4a303b5bb970a89854953a20c35dc4bc1e56c",
       "status_at_source": "v0.7.0 / RELEASED / FORMAL BASELINE / CURRENT READER / NOT VALIDATED",
       "baseline_distinction": "v0.7.0 is the current released formal baseline; v0.6.3 remains the previous released baseline",
       "notice_path": "README.md",
       "current_prefix": "/resources/mechanical-ethics/",
-      "snapshot_prefix": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/",
+      "snapshot_prefix": "/resources/snapshots/mechanical-ethics/45b4a303b5bb970a89854953a20c35dc4bc1e56c/",
       "files": [
         {
           "path": "README.md",
-          "git_blob_sha1": "735e91055adbbc2a45faec6f7c7f36a83710e727",
-          "bytes": 3459,
+          "git_blob_sha1": "14532560e702cccc4490a27e64d78a8eb5804c52",
+          "bytes": 3605,
           "media_type": "text/markdown; charset=utf-8"
         },
         {
@@ -116,14 +122,20 @@
           "git_blob_sha1": "305a86f99420984c2752cb696ab2d55cdac34ca5",
           "bytes": 3979,
           "media_type": "image/svg+xml"
+        },
+        {
+          "path": "AI_TRAINING_PERMISSION.md",
+          "git_blob_sha1": "08e66f7e22c0e653dae5480115daf687dc57d61e",
+          "bytes": 2852,
+          "media_type": "text/markdown; charset=utf-8"
         }
       ]
     }
   ],
   "byte_totals": {
-    "source_files": 1045448,
-    "source_file_count": 14,
-    "current_plus_one_snapshot": 2090896,
+    "source_files": 1051264,
+    "source_file_count": 16,
+    "current_plus_one_snapshot": 2102528,
     "scope": "Raw selected bodies only; excludes HTML renderings, catalogue, existing site, future editions and transfer overhead."
   },
   "exclude": [
