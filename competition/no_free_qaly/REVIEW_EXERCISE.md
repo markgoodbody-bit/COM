@@ -1,50 +1,24 @@
-# Review exercise — what can a reviewer actually compare?
+# Review exercise — a proposed comparison question
 
-Status: **SYNTHETIC APART-STYLE REVIEW EXERCISE / NOT REAL SUBMISSIONS / NOT EMPIRICAL EVIDENCE**
+Status: **SYNTHETIC APART-STYLE EXERCISE / NOT REAL SUBMISSIONS / NOT EMPIRICAL EVIDENCE / NOT READER-BENEFIT EVIDENCE**
 
-This exercise tests whether the synthesis changes an actual review decision. The project claims below are deliberately realistic in shape but fictional. They are not attributed to any Apart participant.
+This fictional pair illustrates the review question the synthesis proposes. It does **not** demonstrate that a real reviewer was previously confused or that this aid changes a real decision.
 
 ## Claim A — forecast briefing assistant
 
 > On 120 held-out binary forecasts, adding the assistant improved mean Brier score from 0.24 to 0.18 compared with the same forecasters without the assistant.
 
-Reported object: proper-score improvement on a forecast task.
-
-What ordinary reporting can establish from the sentence:
-- the measured outcome is forecast accuracy/calibration via Brier score;
-- a counterfactual comparison is named;
-- sample size is stated.
-
-What remains missing for broader `decision quality improved` comparison:
-- whether these forecasts fed a consequential decision at all;
-- whose decision/welfare is the target;
-- value or payoff consequences of different forecast errors;
-- whether 0.06 Brier improvement is being treated as an outcome in itself or a proxy for a later decision benefit;
-- aggregation/subgroup distribution and horizon if downstream impact is claimed.
+This is a proper-score improvement on a forecasting task. The sentence names a comparison and sample size, but by itself does not establish downstream decision utility, affected scope, payoff asymmetry or the relationship between forecast quality and later action.
 
 ## Claim B — guardian / reflection agent
 
 > In a four-week deployment with 20 users, people using the reflection agent reported 30% fewer decisions they later regretted than during a matched baseline period.
 
-Reported object: change in a self-reported process/outcome proxy.
+This is a change in a self-reported outcome/process proxy. The sentence does not establish a common utility with Claim A, nor whether lower regret came from better choices, changed preferences, reduced action or response effects.
 
-What ordinary reporting can establish from the sentence:
-- a baseline period exists;
-- the deployment horizon and user count are stated;
-- the outcome is later self-reported regret.
+## Proposed disposition for A versus B
 
-What remains missing for broader `decision quality improved` comparison:
-- how regret was defined and elicited;
-- whether reduced regret reflects better decisions, changed preferences, lower willingness to act, or response effects;
-- whose values determine whether a decision was better;
-- distribution of benefit/harm across users and decisions;
-- whether irreversible harms or missed opportunities are represented.
-
-## Comparison A vs B
-
-A reviewer cannot defensibly conclude that `0.06 Brier improvement` is larger or smaller than `30% fewer regretted decisions` merely because both numbers improved.
-
-The problem is not missing normalization arithmetic. They are different measurement objects:
+A reviewer cannot infer that `0.06 Brier improvement` is larger or smaller than `30% fewer regretted decisions` merely because both numbers improved.
 
 ```text
 FORECAST QUALITY != DECISION OUTCOME
@@ -52,40 +26,25 @@ SELF-REPORTED REGRET != COMMON UTILITY
 PERCENT IMPROVEMENT != COMMON SCALE
 ```
 
-DECIDE-AI-style reporting concepts improve the description of intended use, users, outcomes, analysis, safety and human factors. Decision analysis supplies the missing rule for utility-based comparison when a common value contract exists. Neither permits a reviewer to invent that common contract when the projects did not report one.
+The synthesis would label:
 
-Disposition under this synthesis:
-
-`CROSS-PROJECT COMPARABILITY = NOT ESTABLISHED`
+`CROSS-PROJECT COMPARABILITY = NOT ESTABLISHED FROM THE REPORTED NUMBERS`
 
 That is not a score of either project and not a claim that either project lacks value.
 
-## Conditional comparison example
+## Positive cases
 
-Now suppose two projects evaluate the **same** decision population, alternatives, state probabilities, monetary consequence model, CARA utility function and horizon, against the **same** baseline policy, and each reports expected-utility improvement under that frozen contract.
+If two projects share the same decision population, alternatives, uncertainty model, value/utility contract, horizon and baseline policy, then a comparison under a common declared measure may be conditionally meaningful.
 
-Then an ordinal comparison may be meaningful under the declared common contract. The synthesis should say:
+If two runs of the same forecasting intervention use the same held-out cases, scoring rule, baseline, weighting and aggregation, Brier-score improvement is directly comparable within that frozen metric contract.
 
-`COMPARABILITY = CONDITIONAL ON SHARED CONTRACT`
+## What remains untested
 
-not `all decision quality is incomparable`.
+The useful empirical question is not whether this fictional pair can be described. It is whether a real AI-epistemics review/comparison contains a material ambiguity that existing guidance does not already resolve, and whether exposing the comparison contract changes appraisal.
 
-## Direct comparison example
+Until that is observed:
 
-If two runs of the same forecasting intervention use the same held-out cases, scoring rule, baseline, weighting and aggregation and report Brier-score improvement, the metric-level comparison is direct within that declared evaluation object:
-
-`COMPARABILITY = DIRECT WITHIN FROZEN METRIC CONTRACT`
-
-That still does not convert Brier improvement into a universal decision-quality currency.
-
-## Did the synthesis add anything?
-
-Yes, narrowly: it changes the reviewer question from
-
-> Which project has the bigger improvement number?
-
-to
-
-> Are these numbers measurements of the same object under a sufficiently shared decision/value contract to support the comparison being made?
-
-If this distinction is already obvious and routinely enforced by Apart's judging/reporting process, this candidate should stop. The exercise is not evidence that it is currently missing in practice.
+```text
+PROPOSED REVIEW QUESTION != DEMONSTRATED REVIEW BENEFIT
+FICTIONAL PAIR != FIELD PREVALENCE
+```
