@@ -92,9 +92,9 @@ Hard ecological collision pressure from Marion Island. Reopen on the next ME rea
 
 No new Formation artifact or benchmark is active.
 
-### PSFH — OBSERVE / CORRECT
+### PSFH — D072 LIVE / BYTE-VERIFIED / OBSERVE-CORRECT
 
-Voluntary public door. No redesign currently earned.
+Voluntary public door. D072 public `gh-pages` = `ad320e756f42e2db2ffc6e59154bfd39b6b5df97`; live verifier matched 37 targets and restored four-record THR currentness across homepage / `llms.txt` / packet. Reader benefit remains unestablished. No redesign currently earned.
 
 ### Resources — HOLD
 
