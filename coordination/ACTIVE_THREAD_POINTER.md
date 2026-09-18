@@ -1,7 +1,7 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-18 morning FULL COMSYNC — Europe/London  
+Updated: 2026-09-18 late-morning build/currentness pass — Europe/London  
 Later live source and direct human direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -207,40 +207,33 @@ POSSIBLE_PRIZE != MONEY_OWNED
 
 No organiser contact/registration/terms/submission by momentum.
 
-## THR / production repair + candidate pressure
+## THR / production repair + reader-evidence wait
 
 THR main:
 `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`
 
 Public catalogue remains three records.
 
-Production PR #34 merged the hostile-reviewed semantic repairs from the Hannibal/JFK probes without merging the historical research fixtures:
-- exact PR head `b8fca327...`;
-- workflow `35329512132 SUCCESS`;
-- 64 production tests / OK;
-- 7 warnings remain visible.
+Current Hannibal candidate:
+- PR #35 remains draft / non-public;
+- exact head `836f93e0849268359c58d531792bce1890271691`;
+- workflow `35339637347 SUCCESS`; integrity + rejection-case tests passed;
+- differentiated revised-head review closed after one missing Polybius 3.48.12 method/access row was repaired;
+- missing selection-time candidate-pool / alternatives history is now explicitly recorded as not preserved;
+- PR #39 reader copy is integrated into the candidate branch;
+- `cases/hannibal-reader-page-proposal.html` is a non-catalogued `noindex,nofollow` mockup, not record 4.
 
-No separate merge-head CI had appeared at the last exact check.
-
-Closed/superseded cleanup surfaces include earlier Hannibal and research-integration branches.
-
-Sole current Hannibal candidate:
-- PR #35 — draft historical-human encounter synced with current main;
-- head `86d22fd...`;
-- workflow `35333703151 SUCCESS`, 74 tests OK, 7 warnings;
-- Codex prior-head review = KEEP with small repairs;
-- Codex revised-delta return = `KEEP_FOR_READER_PAGE`; Claude Code revised-head return remains pending;
-- PR #39 head `7653232...` adds a reader-encounter proposal on the candidate branch only; no reader page/catalogue promotion yet.
-
-Production PR #37 separately merged malformed assertion-evidence container guards to main at `58f1b7ad...`; this is not a Hannibal promotion.
-
-Issue #31 stays open as public break aperture; the two named validator false passes are repaired on main, not validated away.
+Issue #31 now exposes the reader object for bounded breakage; no outsider response had landed at the last check.
 
 ```text
-THR_MAIN_REPAIRED != RECORD_4_EARNED
-NEXT = DIFFERENTIATED REVISED-HEAD REVIEW + READER-PROPOSAL INTEGRATION DECISION
-NEW_SPECIMEN_BY_MOMENTUM = NO
+THREE_PUBLIC_RECORDS = UNCHANGED
+HISTORICAL PERSON != SURVIVING BIOGRAPHY
+GREEN_CANDIDATE != PUBLICATION
+NEXT = OUTSIDE / READER EVIDENCE OR CONCRETE FALSIFIER
+NO_NEW_SPECIMEN
 ```
+
+Detailed receipt: `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ## #365 — positive construction
 
@@ -272,11 +265,17 @@ RELAY_REPO != RELAY_TOOL
 - #355 ProofPath: closed / owner found.
 - #356 Stage A: closed / optional replication / $0.
 - #363 No Free QALY: fallback synthesis only.
-- PSFH D069: live at maintained `feab9785...` / public `23e3047c...`; one duplicated efficacy/authority paragraph removed; reader benefit unestablished.
-- PSFH draft PR #371: current TRACE/ME resource-copy reconciliation only; incomplete and unpublished.
+- PSFH D070: **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED**.
+  - maintained source `7ef97775f3f9970042c87d476ac9e39eb2516b49`;
+  - public `gh-pages` `c0a830bfd14ca76052a1ee5913d302952485f57c`;
+  - maintained CI `35340308124 SUCCESS`;
+  - publisher `35340379133 SUCCESS`;
+  - Pages deployment `35340423410 SUCCESS`;
+  - live verifier: `LIVE_PSFH_D070_VERIFIED targets=33 attempt=5`.
+- D070 preserves the older historical preview-source basis while current aliases point to released TRACE/ME. The publisher now verifies the staged resource tree and served bytes after a recursive README-exclusion defect was caught and repaired.
 - Formation #339: merged working/non-production; not canon.
 
-Current full-sync receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
+Current full-sync receipt remains `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`; later build/currentness delta is in `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ## Consequential gates
 
