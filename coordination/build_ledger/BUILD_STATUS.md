@@ -42,6 +42,10 @@ Start gate on/after 1 October:
 
 STOP remains valid.
 
+## Future-reader pressure
+
+Mechanical Ethics issue #47 is open as a clarity/defeasibility test only. Released v0.7.0 remains unchanged. No active patch branch exists.
+
 ## Recently completed
 
 ### Project drift / falsification x100
@@ -122,5 +126,8 @@ REAL CURRENT CASE
 ```
 
 No category quota. Follow materiality.
+
+Latest world sequence:
+`coordination/build_ledger/WORLD_OUTWARD_SEQUENCE_20260918_LATE.md`
 
 History belongs in dated build-ledger receipts and Git, not this file.
