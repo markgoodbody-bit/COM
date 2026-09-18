@@ -70,6 +70,10 @@ GitHub, a pasted relay, an API, a file, email, a model connector.
 
 A route can accept, delay, cache, truncate, reorder, duplicate, transform, hide, or fail — independently of what either aperture intended. Route is causal, not decorative metadata.
 
+**Audience/visibility can also be consequential route state.** A witness carried on a public issue, a restricted repository, a private conversation, and an unknown-visibility carrier are not interchangeable when later claims depend on who could inspect the evidence. Record visibility only when it matters and only at the boundary actually observed; use `UNKNOWN` rather than guessing.
+
+Visibility does not create authority, confidentiality, truth or evidential independence. Publishing a copy later is a new event and does not rewrite the earlier route's visibility.
+
 Do not collapse Route into authority or into message content.
 
 ### WITNESS — a bounded observation by an aperture
