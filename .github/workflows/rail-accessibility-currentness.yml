@@ -1,0 +1,35 @@
+name: Rail accessibility currentness v0
+
+on:
+  push:
+    branches:
+      - framework/rail-accessibility-currentness-20260918
+    paths:
+      - 'experiments/rail-accessibility-currentness-20260918/**'
+      - '.github/workflows/rail-accessibility-currentness.yml'
+  pull_request:
+    paths:
+      - 'experiments/rail-accessibility-currentness-20260918/**'
+      - '.github/workflows/rail-accessibility-currentness.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  frozen-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: experiments/rail-accessibility-currentness-20260918
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile check.py test_check.py
+      - name: Tests
+        run: python -m unittest -v
+      - name: Frozen six-station audit
+        run: python check.py --frozen
