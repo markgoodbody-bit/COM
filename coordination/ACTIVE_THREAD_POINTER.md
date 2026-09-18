@@ -23,7 +23,7 @@ PURPOSE > INSTRUMENT
 ```text
 TRACE main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-THR main = 194012dcb8247d3cb964cfc65b5082ce67355529
+THR main = 58f1b7ade96ea2a5524bb6d36fdba193f8c016db
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
 
@@ -210,7 +210,7 @@ No organiser contact/registration/terms/submission by momentum.
 ## THR / production repair + candidate pressure
 
 THR main:
-`194012dcb8247d3cb964cfc65b5082ce67355529`
+`58f1b7ade96ea2a5524bb6d36fdba193f8c016db`
 
 Public catalogue remains three records.
 
@@ -225,7 +225,13 @@ No separate merge-head CI had appeared at the last exact check.
 Closed/superseded cleanup surfaces include earlier Hannibal and research-integration branches.
 
 Sole current Hannibal candidate:
-- PR #35 — draft historical-human encounter rebuilt from repaired main; head `76dd138d...`; workflow `35330401494 SUCCESS`; 70 tests OK; not record 4.
+- PR #35 — draft historical-human encounter synced with current main;
+- head `86d22fd...`;
+- workflow `35333703151 SUCCESS`, 74 tests OK, 7 warnings;
+- Codex prior-head review = KEEP with small repairs;
+- revised-head review is pending; no reader page/catalogue promotion yet.
+
+Production PR #37 separately merged malformed assertion-evidence container guards to main at `58f1b7ad...`; this is not a Hannibal promotion.
 
 Issue #31 stays open as public break aperture; the two named validator false passes are repaired on main, not validated away.
 
