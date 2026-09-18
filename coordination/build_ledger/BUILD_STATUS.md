@@ -18,7 +18,7 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PRODUCT / PRODUCTION REPAIRED / ONE CANDIDATE SURFACE** | Main `194012dc...`; PR34 merged reviewed semantic repairs (64 prod tests, 7 warnings). PR27/29/30/32/33 closed; PR28 is sole Hannibal candidate; public catalogue still 3 records. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **CURRENT LEAD / CALIBRATION SURVIVED WITH REPAIRS / NOT RESULT** | Exact head `d7eaeda...`; hosted CI `35328650762` green. Two frozen first passes coded all 16 without outside process knowledge/new target categories; method KEEP, codebook REPAIR, primary inclusion SHRINK. |
+| #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
 | COM #99 / social-care correction consequence | **FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD** | Normative owner chain substantially present; operational connection after post-use correction is not established from public sources. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
@@ -71,8 +71,8 @@ Nine scored cases use six position/condition-balanced schedules; the missing-fie
 The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
 
 ```text
-#364 current exact head = 95a979a75e51f796818712031f1583ca06f5c2d9
-current hosted CI = 35328650762 SUCCESS
+#364 current exact head = 827b82382f26c52d62272dd4fe4e87ce52d1f78e
+current hosted CI = 35332539753 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -131,7 +131,10 @@ Current branch objects:
 - `RELATION_CALIBRATION_RECONCILIATION_20260918.md`;
 - `RELATION_CODEBOOK_V2_20260918.md`.
 
+Final known calibration debt was closed by PR #369: actor-route absence now checks the bounded actor-eligible inventory, preventing unknown-target positive routes from being misreported as no route.
+
 ```text
+SEPTEMBER_METHOD = FROZEN
 CALIBRATION != POPULATION RESULT
 CALIBRATION_SURVIVED != METHOD_VALIDATED
 NEXT_SUBSTANTIVE_RESULT = FRESH_CORPUS_IF_LIVE_RULES_ALLOW
@@ -191,7 +194,7 @@ Closed:
 - #32 / #33 sibling semantic review branches.
 
 Open:
-- #28 sole Hannibal candidate;
+- #35 sole current Hannibal candidate; head `76dd138d...`, hosted workflow `35330401494 SUCCESS`, 70 tests OK, 7 warnings; no public promotion;
 - issue #31 public break aperture.
 
 ```text
@@ -209,9 +212,9 @@ Positive-construction quarry earned a derived view, not a new TRACE/ME primitive
 
 No application live.
 
-Retained routes: OpenAI Researcher Access and Anthropic External Researcher Access only when a surviving research object has a credible API budget; ARIA remains a research seam only. LASR is time-sensitive but is a separate career/research decision, not default project runway.
+Current resource posture: Corrigibility Research Fund survives as a funding owner but **no proposal thesis is earned**; generic correction propagation and generic non-obedience/multi-principal stories were owner-subtracted. Residual authority-ambiguity / semantic-non-collapse is HOLD. Arcee/Anthropic credit routes require real live budgets; OpenAI Researcher Access is HOLD on currently known affiliation standing; ARIA remains a seam only.
 
-#364 currently requires no model spend. No contact/account/terms/spend/payment action.
+No contact/account/terms/application/spend/payment action.
 
 ### Campfire / Square
 
