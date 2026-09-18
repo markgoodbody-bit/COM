@@ -65,6 +65,13 @@ The primary fresh-corpus relation table should include a proposition only when t
 
 Generic model governance, maintenance, security reporting, performance monitoring, supplier feedback, data rights, and research-governance review are secondary context unless the record explicitly binds them to changing or reconsidering a current tool output or broader-process outcome.
 
+A separate **candidate/unknown-target inventory** preserves explicit route propositions whose target cannot be bound from the public record. These rows retain `LAYER_NOT_STATED` or `OTHER_STATED_TARGET` and are not silently promoted into confirmed tool-output/broader-process route counts. This is how NS&I complaints, HERMeS generic feedback and the Reception Baseline school-contact proposition remain visible without defeating the tighter primary inclusion rule.
+
+```text
+ROUTE_PROPOSITION_OBSERVED != PRIMARY_TARGET_CONFIRMED
+UNKNOWN_TARGET != DROP_THE_PROPOSITION
+```
+
 MONITORING != ANSWER_BACK_ROUTE
 MODEL_QA != SUBJECT_CHALLENGE
 DATA_RIGHT != OUTPUT_REVERSAL
@@ -276,11 +283,13 @@ No evidence-locator error has yet been established that requires recoding a rout
 | V4-01 FCDO | response review/appeal | BROADER_OPERATIONAL_PROCESS / DIRECT |
 | V4-02 CPS | correspondence feedback/complaint | BROADER_OPERATIONAL_PROCESS / DIRECT |
 | V4-03 GOV.UK Chat | check answer against source pages | TOOL_OUTPUT / DIRECT |
+| V4-04 NS&I | dissatisfied response -> human agent | TOOL_OUTPUT / DIRECT / IN_CHANNEL_HANDOFF |
 | V4-04 NS&I | complaints/unresolved issues | LAYER_NOT_STATED |
 | V4-05 EA | permitting appeal | BROADER_OPERATIONAL_PROCESS / DIRECT |
 | V4-06 E-Supervision | flagged mismatch practitioner review | TOOL_OUTPUT / DIRECT / INTERNAL |
 | V4-07 Ancient Woodland | bare N/A | no route bundle; UNEXPLAINED_NA |
-| V4-07 Ancient Woodland | user review/feedback on polygons | TOOL_OUTPUT / DIRECT |
+| V4-07 Ancient Woodland | user inspection of output polygons | TOOL_OUTPUT / DIRECT / SELF_CORRECTION |
+| V4-07 Ancient Woodland | feedback used for future model versions | OTHER_STATED_TARGET / secondary context |
 | V4-08 TrustID | user review request | TOOL_OUTPUT / DIRECT |
 | V4-08 TrustID | manual-check alternative | BROADER_OPERATIONAL_PROCESS / EXPLICIT_CROSS_FIELD |
 | V3-01 Data First | researcher error/anomaly feedback | TOOL_OUTPUT / DIRECT |
@@ -290,7 +299,8 @@ No evidence-locator error has yet been established that requires recoding a rout
 | V3-03 GOV.UK search | general page feedback | OTHER_STATED_TARGET / DIRECT |
 | V3-04 DfE | none-required proposition | NO_RELEVANT_CHALLENGE_WITH_REASON / DIRECT / PLANNED |
 | V3-05 HMRC | takedown appeal | BROADER_OPERATIONAL_PROCESS / DIRECT |
-| V3-06 HERMeS | general feedback/issues form | LAYER_NOT_STATED |
+| V3-06 HERMeS | general feedback form | LAYER_NOT_STATED |
+| V3-06 HERMeS | bug/maintenance reporting | OTHER_STATED_TARGET / secondary context |
 | V3-06 HERMeS | validate answer against sources | TOOL_OUTPUT / DIRECT |
 | V3-07 Reception Baseline | request narrative statement | OTHER_STATED_TARGET / DIRECT / EXPLANATION_ONLY |
 | V3-07 Reception Baseline | broader issue -> school | LAYER_NOT_STATED |
