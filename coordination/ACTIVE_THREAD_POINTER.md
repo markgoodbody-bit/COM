@@ -23,7 +23,7 @@ PURPOSE > INSTRUMENT
 ```text
 TRACE main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-THR main = 15b9929f685627644fcfc33cbb113b34876ecf59
+THR main = 194012dcb8247d3cb964cfc65b5082ce67355529
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
 
@@ -85,8 +85,8 @@ Nine scored cases / six balanced schedules; one missing-field non-scored sentine
 The late full-sync replay found Codex repairs `06a3176` and `0573ce5`. They are now integrated through PR #367.
 
 ```text
-#364 current exact head = d7eaeda4550f499ad6d0f8de5fd335d70e9cec8f
-current hosted CI = 35327175854 SUCCESS
+#364 current exact head = 95a979a75e51f796818712031f1583ca06f5c2d9
+current hosted CI = 35328650762 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -204,29 +204,34 @@ POSSIBLE_PRIZE != MONEY_OWNED
 
 No organiser contact/registration/terms/submission by momentum.
 
-## THR / architecture / public hostile review
+## THR / production repair + candidate pressure
 
-THR main remains `15b9929f...` with exactly three public records.
+THR main:
+`194012dcb8247d3cb964cfc65b5082ce67355529`
 
-Current working surfaces:
-- PR #28 = Hannibal candidate / architecture pressure; draft, not record 4.
-- PR #30 = Hannibal + JFK validator/workflow probe; draft head `7618bc0...`.
-- issue #31 = public hostile-review aperture; Framework has exposed PR32 and PR33 as public break targets. No outsider review result is implied.
+Public catalogue remains three records.
 
-Strong owners still absorb most ontology/provenance machinery. Current working hypothesis remains `RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH`, not a new universal ontology.
+Production PR #34 merged the hostile-reviewed semantic repairs from the Hannibal/JFK probes without merging the historical research fixtures:
+- exact PR head `b8fca327...`;
+- workflow `35329512132 SUCCESS`;
+- 64 production tests / OK;
+- 7 warnings remain visible.
 
-PR #30's source-ownership and public/default record-link repairs are useful.
+No separate merge-head CI had appeared at the last exact check.
 
-Two sibling assertion-state repairs are now under hostile review, both stacked on PR #30:
+Closed cleanup surfaces:
+`#27 #29 #30 #32 #33`.
 
-- PR #32 — `845b2a0...`, workflow `35325473325 SUCCESS`, 66 tests: fail closed `observed` / `reconciled` until typed observation/reconciliation target support exists.
-- PR #33 — `1b332ec...`, workflow `35326431061 SUCCESS`, 67 tests: `unsupported_in_sources_checked` requires a real observed source set; no universal search schema and no exhaustiveness claim.
+Sole Hannibal candidate:
+- PR #28 — draft / not record 4.
 
-Both remain DRAFT / UNMERGED. Their defects/repairs are exposed on public review issue #31 for falsification.
+Issue #31 stays open as public break aperture; the two named validator false passes are repaired on main, not validated away.
 
-Mark has authorised bounded public criticism/testing through already-authorised project identities/channels. Issue #31 is the public review aperture. Last carried Square invitation 5757 has one collaborator comment from `cc-relay`; no outsider review result was observed. Feedback is input, not validation.
-
-No Hannibal merge/public promotion. No stewardship/licence/canon transfer.
+```text
+THR_MAIN_REPAIRED != RECORD_4_EARNED
+NEXT = PR28 OWNER/SOURCE PRESSURE
+NEW_SPECIMEN_BY_MOMENTUM = NO
+```
 
 ## #365 — positive construction
 
