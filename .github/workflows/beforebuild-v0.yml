@@ -189,7 +189,7 @@ jobs:
           docker pull "$REMARK_IMAGE"
           mkdir -p /tmp/beforebuild-remark-var
           chmod 0777 /tmp/beforebuild-remark-var
-          docker run -d --name beforebuild-remark42             -p 127.0.0.1:8080:8080             -v /tmp/beforebuild-remark-var:/srv/var             -e REMARK_URL=http://127.0.0.1:8080             -e SITE=psfh             -e SECRET=beforebuild-ephemeral-secret-0123456789abcdef             -e AUTH_ANON=true             "$REMARK_IMAGE"
+          docker run -d --name beforebuild-remark42             -p 127.0.0.1:8080:8080             -v /tmp/beforebuild-remark-var:/srv/var             -e REMARK_URL=http://127.0.0.1:8080             -e SITE=psfh             -e SECRET=beforebuild-ephemeral-secret-0123456789abcdef             -e AUTH_ANON=true             -e ADMIN_PASSWD=beforebuild-admin             "$REMARK_IMAGE"
 
           ready=0
           for i in $(seq 1 25); do
@@ -332,10 +332,107 @@ jobs:
                   else "PASS"
               )
 
-          # Admin export/read-only are documented owner capabilities, but this trial does
-          # not invent an admin identity. They remain NOT_TESTED in the executable receipt.
-          notes["export_review"] = "documented_owner_capability_not_executed"
-          notes["readonly_review"] = "documented_owner_capability_not_executed"
+          # Retry the rich-content case after the anonymous anti-flood window using
+          # a fresh anonymous identity. The hard case asks whether the owner itself enforces
+          # PSFH's tiny no-link/no-rich-content contract.
+          import time
+          time.sleep(1.2)
+          cookies2 = "/tmp/remark-cookies-2.txt"
+          login2 = run([
+              "curl", "-sS", "-o", "/tmp/remark-login2-body",
+              "-D", "/tmp/remark-login2-headers",
+              "-c", cookies2,
+              "-w", "%{http_code}",
+              f"{base}/auth/anonymous/login?user=visitor_two&aud=psfh",
+          ])
+          notes["second_anonymous_login_status"] = login2.stdout.strip()
+          xsrf2 = ""
+          cp2 = Path(cookies2)
+          if cp2.exists():
+              for line in cp2.read_text(encoding="utf-8").splitlines():
+                  if not line or line.startswith("#"):
+                      continue
+                  parts = line.split("\t")
+                  if len(parts) >= 7 and parts[5] == "XSRF-TOKEN":
+                      xsrf2 = parts[6]
+
+          payload = json.dumps({
+              "text": "[x](https://example.com)",
+              "locator": {"site": "psfh", "url": thread},
+          })
+          args = [
+              "curl", "-sS", "-o", "/tmp/remark-markdown2.json", "-w", "%{http_code}",
+              "-b", cookies2, "-H", "Content-Type: application/json",
+          ]
+          if xsrf2:
+              args += ["-H", f"X-XSRF-TOKEN: {xsrf2}"]
+          args += ["-X", "POST", f"{base}/api/v1/comment?site=psfh", "-d", payload]
+          md2 = run(args)
+          try:
+              md2_status = int(md2.stdout.strip())
+          except Exception:
+              md2_status = 0
+          notes["markdown_retry_status"] = md2_status
+          if md2_status == 201:
+              md = json.load(open("/tmp/remark-markdown2.json"))
+              rendered = str(md.get("text", ""))
+              original = str(md.get("orig", ""))
+              results["plain-small-mark"] = (
+                  "FAIL"
+                  if ("https://example.com" in original or "<a " in rendered or "https://example.com" in rendered)
+                  else "PASS"
+              )
+
+          # ADMIN_PASSWD is a documented temporary basic-auth path for manual
+          # administrative operations. This is ephemeral loopback CI only.
+          export = run([
+              "curl", "-sS", "-o", "/tmp/remark-export.bin", "-w", "%{http_code}",
+              "-u", "admin:beforebuild-admin",
+              f"{base}/api/v1/admin/export?site=psfh&mode=stream",
+          ])
+          try:
+              export_status = int(export.stdout.strip())
+          except Exception:
+              export_status = 0
+          notes["admin_export_status"] = export_status
+          if export_status == 200 and Path("/tmp/remark-export.bin").exists() and Path("/tmp/remark-export.bin").stat().st_size > 0:
+              results["export-portability"] = "PASS"
+          elif export_status:
+              results["export-portability"] = "FAIL"
+
+          readonly = run([
+              "curl", "-sS", "-o", "/tmp/remark-readonly.json", "-w", "%{http_code}",
+              "-u", "admin:beforebuild-admin",
+              "-X", "PUT",
+              f"{base}/api/v1/admin/readonly?site=psfh&url={thread}&ro=1",
+          ])
+          try:
+              readonly_status = int(readonly.stdout.strip())
+          except Exception:
+              readonly_status = 0
+          notes["admin_readonly_status"] = readonly_status
+          if readonly_status in {200, 201}:
+              time.sleep(1.2)
+              blocked_payload = json.dumps({
+                  "text": "should not be accepted",
+                  "locator": {"site": "psfh", "url": thread},
+              })
+              blocked_args = [
+                  "curl", "-sS", "-o", "/tmp/remark-blocked.json", "-w", "%{http_code}",
+                  "-b", cookies2, "-H", "Content-Type: application/json",
+              ]
+              if xsrf2:
+                  blocked_args += ["-H", f"X-XSRF-TOKEN: {xsrf2}"]
+              blocked_args += ["-X", "POST", f"{base}/api/v1/comment?site=psfh", "-d", blocked_payload]
+              blocked = run(blocked_args)
+              try:
+                  blocked_status = int(blocked.stdout.strip())
+              except Exception:
+                  blocked_status = 0
+              notes["post_after_readonly_status"] = blocked_status
+              results["bounded-abuse-stop"] = "PASS" if blocked_status != 201 else "FAIL"
+          elif readonly_status:
+              results["bounded-abuse-stop"] = "FAIL"
 
           receipt = {
               "format": "beforebuild-owner-receipts-v0.1",
