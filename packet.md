@@ -32,7 +32,7 @@ Public entrance: https://pleasestartfromhere.com/
 
 **TRACE** is a structural language for situations where partial evidence, changing conditions, affected scopes, clocks, usable routes, authority, burdens, residue and correction need to remain connected.
 
-The selected public reading copy is **v0.3.0 specification RC1**: not released, not canon, not validated and with no demonstrated efficacy result. The released formal baseline remains v0.2.7.
+The selected public reading copy is the **released TRACE v0.3.0 formal baseline and current specification**. It remains not validated and has no demonstrated efficacy result. TRACE v0.2.7 is preserved as the previous released formal baseline.
 
 TRACE does not decide what should be valued, grant authority, settle standing, or replace stronger domain methods. If another method preserves what matters with less burden, that is a reason to use the other method.
 
@@ -44,7 +44,7 @@ Source repository: https://github.com/markgoodbody-bit/TRACE
 
 **Mechanical Ethics** is the human-facing ethical/normative companion. It is concerned especially with the distance between a record and the life it affects: practical access, harm, care, answer-back, correction and what remains after a formal repair.
 
-The selected public reading copy is a **v0.7.0 working candidate**: not the preservation baseline, not a release, not canon and not validated. The preservation baseline remains v0.6.3.
+The selected public reading copy is the **released Mechanical Ethics v0.7.0 formal baseline and current reader**. It remains not validated. Mechanical Ethics v0.6.3 is preserved as the previous released baseline.
 
 Mechanical Ethics is not a universal priority rule and does not make kindness equivalent to passivity, obedience or permanent preservation.
 
@@ -62,9 +62,9 @@ Works: https://pleasestartfromhere.com/works/
 
 ### The Human Record
 
-**The Human Record** is a separate public experiment in preserving inspectable provenance for human creation as synthetic media becomes abundant.
+**The Human Record** is a separate public project for keeping provenance, source ancestry, transmission and correction inspectable across time and custody.
 
-It currently contains one real provenance specimen. It has been offered to 1F916 / the Square for stewardship, but that offer has not been accepted and the project is not community-owned. It is not an authorship detector, certification authority or claim that AI can provide unbiased history.
+It currently carries three deliberately different public records: an artwork-provenance specimen; a source-trail case around the viral “80% of German flak crews died” claim; and a public-source transmission-lineage case about sieve and riddle making. It has been offered to 1F916 / the Square for stewardship, but that offer has not been accepted and the project is not community-owned. It is not an authorship detector, certification authority or claim that AI can provide unbiased history.
 
 Read its evidence, limits, rights boundaries and stewardship record on their own terms:
 

@@ -1,6 +1,30 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.43 · 15 September 2026
+Please Start From Here · Reader change log · Edition 0.46 · 18 September 2026
+
+### D070
+
+18 September 2026 — Bring the public core copies forward to the released baselines.
+
+The current same-domain TRACE and Mechanical Ethics aliases now match the released TRACE v0.3.0 and Mechanical Ethics v0.7.0 source objects rather than the pre-release candidates published on 8 September. New fixed snapshots preserve those released identities while the earlier candidate snapshots remain unchanged and addressable. The project packet, text orientation and visible Human Record description are corrected to the same current state. Explore now keeps its original source snapshots pinned as historical basis while advancing the separately labelled current-source routes to the released repositories.
+
+Site Preview advances to 0.8.27. This publication does not author new TRACE or Mechanical Ethics content, retrospectively change their release evidence, or establish validation or reader benefit. It is a currentness and provenance repair. Source work is recorded in [COM PR371](https://github.com/markgoodbody-bit/COM/pull/371).
+
+### D069
+
+18 September 2026 — State the efficacy and authority ceiling once.
+
+A real post-D068 reader-friction observation and the earlier hostile review both pointed to duplicated boundary language. The later copy of the sentence saying that practical advantage has not been demonstrated and that the material grants no authority was removed from Why this exists; the earlier reader-boundary copy remains unchanged.
+
+This was published as [23e3047c](https://github.com/markgoodbody-bit/COM/commit/23e3047cb9ba9d9b42ac12b18e5be59a41a17449) after [COM PR370](https://github.com/markgoodbody-bit/COM/pull/370). Site Preview remained labelled 0.8.26 and the public change log still stopped at D067. This entry records that omission rather than inventing a version bump at the time. Removing a duplicate boundary is not removing the boundary or evidence of reader benefit.
+
+### D068
+
+15 September 2026 — Reduce reader friction without turning the entrance into a proof.
+
+The opening composite story gained an optional bridge showing what Mechanical Ethics and TRACE notice in the same scene, while explicitly saying that the scene supplies no measured deadline, tested intervention or proof of practical advantage. Repeated invitation and anti-coercion wording was compressed; one explicit reader-autonomy boundary and the visible efficacy/authority ceiling were retained. The Human Record description also moved beyond the original one-specimen wording.
+
+The candidate received bounded differential review, Claude Code challenge and desktop/mobile/no-JavaScript visual checks before publication as [5ce14d5b](https://github.com/markgoodbody-bit/COM/commit/5ce14d5b94e092b3e11ceb1cb0116b4b76be1401) from [COM PR343](https://github.com/markgoodbody-bit/COM/pull/343). Site Preview remained labelled 0.8.26 and the public change log still stopped at D067. This later ledger entry preserves that actual publication history rather than silently rewriting it.
 
 ### D067
 
