@@ -71,7 +71,7 @@
       "publisher": "The Human Record",
       "date": "2026-09-18",
       "retrievedAt": "2026-09-18",
-      "locator": "entity.notes[1]",
+      "locator": "Section: entity.notes[1]",
       "excerpt": "The checked Nepos Latin passage attests the literal string 'Hannibal'. The checked Polybius reading surface renders the name as 'Hannibal' in English; this record did not inspect the Greek source literal."
     },
     {
@@ -81,7 +81,7 @@
       "publisher": "The Human Record",
       "date": "2026-09-18",
       "retrievedAt": "2026-09-18",
-      "locator": "assertions[1].scope.ceiling",
+      "locator": "Section: assertions[1].scope.ceiling",
       "excerpt": "This is Polybius' evaluation of another historian, not THR's adjudication of Sosylus."
     }
   ]
