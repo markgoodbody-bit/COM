@@ -1,6 +1,6 @@
 # RubyGems GemStuffer correction-propagation field watch — 18 September 2026
 
-Status: **FIELD WATCH / OWNER-RECONCILIATION QUESTION / NO CONTACT SENT / NOT A THR RECORD / NOT TRACE-ME CANON**
+Status: **OWNER FOUND / OBSERVE-ONLY FIELD NOTE / NO CONTACT SENT / NOT A THR RECORD / NOT TRACE-ME CANON**
 
 Purpose: preserve one concrete world observation for the project question:
 
@@ -96,6 +96,37 @@ Examples of downstream detection owners currently exposing GemStuffer package wa
 https://socket.dev/rubygems/package/bot9evil
 https://socket.dev/rubygems/package/southnewsprobe1778550995
 
+## Owner subtraction update — later 18 September 2026
+
+A second pass found concrete evidence that malicious-package knowledge is already propagating beyond the registry operator into standard security/advisory owners.
+
+Examples:
+
+- JFrog's GemStuffer reconstruction explicitly carries the later May/June/July campaign inventory and publishes IOCs/remediation.
+- OSV carries malicious RubyGems records imported from ReversingLabs / OpenSSF malicious-packages.
+- GitHub Advisory Database mirrors/aliases malicious RubyGems advisories from that ecosystem.
+- The exact campaign-shaped name `oaibooty9217`, discussed in the wider GemStuffer evidence trail, already has OSV record `MAL-2026-8153` and GHSA alias `GHSA-g5vg-jhgr-77wg`.
+
+Sources:
+- https://research.jfrog.com/post/gemstuffer-openai-rubygems/
+- https://osv.dev/vulnerability/MAL-2026-8153
+- https://github.com/advisories/GHSA-g5vg-jhgr-77wg
+
+This does **not** establish complete one-to-one advisory coverage of JFrog's 3,022-package classification, complete downstream cleanup, or actual installation exposure.
+
+It does establish that the previously suspected missing propagation mechanism is not missing in the simple sense.
+
+```text
+OPERATOR_REPORT != WHOLE_SECURITY_ECOSYSTEM
+REGISTRY_YANK != ADVISORY_PROPAGATION
+ADVISORY_PROPAGATION_EXISTS != COMPLETE_REMEDIATION
+PARTIAL_COVERAGE_OBSERVED != FULL_CAMPAIGN_RECONCILED
+```
+
+The remaining operator-vs-research-set reconciliation is now primarily an incident-account/currentness question unless concrete downstream reliance or an uncorrected reachable artefact is demonstrated.
+
+Accordingly this note is demoted from an active residual quarry to **OWNER FOUND / OBSERVE ONLY**.
+
 ## Residual question
 
 The currently unresolved question is narrower than "was the incident contained?":
@@ -137,10 +168,12 @@ Any owner contact should be separately justified rather than generated merely be
 ## Current disposition
 
 ```text
-FIELD CASE = KEEP AS WATCH
+FIELD CASE = OWNER FOUND / OBSERVE ONLY
+DOWNSTREAM WARNING / ADVISORY OWNERS = PRESENT
 THEORY GAP = NOT EARNED
 NEW THR RECORD = NO
 NEW TRACE/ME PRIMITIVE = NO
 EXTERNAL CONTACT = NOT SENT
-NEXT = OWNER RECONCILIATION EVIDENCE OR STOP
+WAKE = CONCRETE UNCORRECTED REACHABLE ARTEFACT / MATERIAL DOWNSTREAM RELIANCE / OWNER REQUEST
+OTHERWISE = STOP
 ```
