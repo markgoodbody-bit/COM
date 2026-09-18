@@ -1,8 +1,26 @@
 # Build status
 
-Recorded snapshot: **2026-09-18 afternoon field-activation pass — Europe/London**.
+Recorded snapshot: **2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London**.
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
+
+## FULL COMSYNC live delta — 18 September 2026 15:08 BST
+
+This block supersedes later stale wording in this file where the two conflict. Detailed receipt:
+`coordination/build_ledger/FULL_COMSYNC_20260918_1508BST.md`.
+
+- **THR:** the prior `no outsider response` state is obsolete. The Square break request produced a concrete outside synthetic case, reproduced as human-record issue #40. Production main remains `58f1b7ad...` / three public records; Hannibal PR #35 remains draft/non-public. Immediate product edge is the issue #40 mention/assertion + candidate-link evidence/history defect, not record-4 publication.
+- **#365 positive construction:** Claude Code return `5730883998` = **SHRINK**. Logic-model / contribution / sustainability / impact / heritage-viability owners substantially cover seven of eight questions. Drop the generic nine-step project reading; retain only the narrow derived pressure: **who could not refuse the positive transition, who cannot exit it, and who carries continuation without having chosen to?** No new primitive.
+- **Material capacity:** latest GB data-centre/grid case is a real reachability witness but owner-rich; no project primitive or domain rule earned.
+- **#364:** unchanged/frozen at `827b823...`; wait for fresh November data/rules, no September polishing.
+- **Campfire/Square:** public front door reachable; operational Relay tool not exposed in this runtime; authenticated `framework-relay` state remains UNKNOWN.
+
+```text
+OUTSIDE_CASE != OUTSIDE_VALIDATION
+ISSUE_40_OPEN != REPAIR_ACCEPTED
+OWNER_FOUND -> SHRINK OR STOP
+RELAY_REPO != RELAY_RUNTIME
+```
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
@@ -15,11 +33,11 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / CANDIDATE BUILT / WAIT READER EVIDENCE** | Main `58f1b7ad...`; catalogue still 3. PR35 exact head `836f93e...` is draft/non-public with exact-head workflow green; differentiated review closed, reader copy integrated, and a non-catalogued noindex mockup exists. Issue31 now carries the reader-object break request; no outsider response at last check. |
+| COM #347 / THR | **ACTIVE PRODUCT / OUTSIDE DEFECT FOUND / REPAIR NOT YET ACCEPTED** | Main `58f1b7ad...`; catalogue still 3. PR35 `836f93e...` remains draft/non-public. Outside synthetic identity case is reproduced in human-record #40: assertions cannot type a mention referent, while candidate-link provenance/history states are not discriminated. Address #40 before any record-4 publication. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
-| COM #365 | **REAL-USE ACTIVATION / NO NEW PRIMITIVE** | Awaab = no domain delta/compression only; Awaab+Hackney = two-domain portability witness; sieve/riddle = real positive-construction witness; drought = hard-collision boundary activation. Practical advantage unproven; hostile returns pending. |
+| COM #365 | **REAL-USE ACTIVATION / POSITIVE SYNTHESIS SHRUNK / NO NEW PRIMITIVE** | Hostile return `5730883998` routes seven/eight positive-construction questions to evaluation/safeguarding owners. Drop the generic nine-step view; retain only the derived refusability/exit/unchosen-continuation-burden question for further world testing. |
 | COM #99 / record-correction consequence | **OWNER-NATIVE NORMATIVE CHAIN / IMPLEMENTATION WATCH** | NHS guidance now explicitly covers ambient-scribe correction, flagging and correction of other records carrying propagated errors. Theory gap not earned; implementation failure not observed. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
