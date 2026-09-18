@@ -1,0 +1,76 @@
+name: PSFH D071 regenerate rights resources
+
+on:
+  push:
+    branches:
+      - framework/psfh-d071-training-rights-sync-20260918
+    paths:
+      - 'scripts/RESOURCE_COPIES.json'
+      - 'scripts/import-resources.py'
+      - 'scripts/test_import_resources.py'
+      - 'scripts/test-resources.mjs'
+      - 'scripts/resources.mjs'
+      - '.github/workflows/psfh-d071-generate-resources.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d071-training-rights-sync-20260918
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install bounded resource dependency
+        run: python -m pip install pypdf
+      - name: Acquire exact current project files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -rf /tmp/psfh-d071-acquired /tmp/psfh-d071-assembled
+          python scripts/import-resources.py --acquire /tmp/psfh-d071-acquired
+      - name: Assemble while preserving published snapshots
+        run: |
+          python scripts/import-resources.py --assemble /tmp/psfh-d071-acquired --output /tmp/psfh-d071-assembled --previous public/resources
+          rm -rf public/resources
+          mv /tmp/psfh-d071-assembled public/resources
+      - name: Pin generated inventory identity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, re
+          inv = Path('public/resources/inventory.json').read_bytes()
+          digest = hashlib.sha256(inv).hexdigest()
+          path = Path('scripts/resources.mjs')
+          text = path.read_text()
+          text, n = re.subn(r"export const INVENTORY_SHA256 = '[0-9a-f]{64}';",
+                            "export const INVENTORY_SHA256 = '" + digest + "';", text, count=1)
+          if n != 1:
+              raise SystemExit('inventory pin not replaced')
+          path.write_text(text)
+          print('D071_INVENTORY_SHA256=' + digest)
+          PY
+      - name: Recheck resource contract
+        run: |
+          python -m unittest scripts.test_import_resources -v
+          node --test scripts/test-resources.mjs
+      - name: Commit generated resources to candidate branch
+        run: |
+          git config user.name "PSFH D071 resource generator"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/resources scripts/resources.mjs
+          if git diff --cached --quiet; then
+            echo "No generated resource delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D071: regenerate current rights resources"
+          git push origin HEAD:framework/psfh-d071-training-rights-sync-20260918
