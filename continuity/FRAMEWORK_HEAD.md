@@ -180,8 +180,8 @@ The subsequent world/owner pass moved #364's lead question beyond the secondary 
 Current exact PR #364 head:
 
 ```text
-e582b709e025f2907bb850cb2b3c681101504aef
-hosted CI 35324172751 = SUCCESS
+d7eaeda4550f499ad6d0f8de5fd335d70e9cec8f
+hosted CI 35327175854 = SUCCESS
 ```
 
 Current fresh-corpus question:
@@ -200,29 +200,57 @@ VERSION_ASSOCIATION != VERSION_CAUSED_CHANGE
 FRESH_CORPUS QUESTION != RESULT
 ```
 
-### Frozen relation calibration — current decision gate
+### Frozen relation calibration — survived with repairs
 
-On 18 Sep Framework froze the deterministic 16-case relation calibration before any new result:
-- `RELATION_CALIBRATION_PROTOCOL_20260918.md`;
-- `relation_calibration_sample_20260918.json`;
-- `RELATION_CALIBRATION_ADJUDICATION_20260918.md`.
+The deterministic 16-case falsifier has now returned from both differentiated apertures.
 
-Sample identity:
+Frozen sample identity:
 
 `c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54`
 
-Codex and Claude Code have both been asked for independent first-pass coding using only the frozen record, with no live refetch, linked-site inspection or outside process knowledge. Framework authored the earlier dry run and therefore acts as integrator/adjudicator rather than a third independent coder.
+First-pass returns:
+- Codex: `CODEX_RELATION_FIRST_PASS_20260918.md` at `8cf2f2ba0e1ba6e83a4237aa330f97bb87ed325b`;
+- Claude Code: #364 comment `5727586822`.
 
-No calibration return had landed at the exact sync check that produced this pointer.
+Both coded all 16 frozen records without live GOV.UK refetch, linked-site inspection or outside process knowledge, and neither needed to invent a new target category. Both disclose prior exposure to the method/records; this is differentiated coding, not blind external validation.
+
+Framework reconciled them under the pre-frozen D1–D8 rules without rewriting either first pass:
 
 ```text
-IF FROZEN RELATION CODING CANNOT SURVIVE
--> NOVEMBER FRESHNESS DOES NOT RESCUE IT
-
-DISAGREEMENT != FAILURE
-AGREEMENT != WORLD_TRUTH
-LAYER_NOT_STATED = VALID_RESULT
+RELATION_CALIBRATION_RECONCILIATION_20260918.md
+RELATION_CODEBOOK_V2_20260918.md
 ```
+
+Current disposition:
+
+```text
+METHOD = KEEP
+CODEBOOK = REPAIR
+PRIMARY INCLUSION = SHRINK
+VERSION = SECONDARY TAG ONLY
+HUMAN PILOT = NOT REQUIRED FOR CORE RELATION RESULT
+```
+
+The largest disagreement was route discovery: Codex included substantially more generic QA/governance/maintenance propositions. Codebook v2 therefore narrows the primary table to actions explicitly tied to review/challenge/correction/reconsideration of a tool output or broader-process outcome, with generic QA/maintenance/security/data-rights work retained only as secondary context unless explicitly bound.
+
+Additional repairs:
+- separate trigger from target and stated effect;
+- DIRECT takes precedence when the route proposition itself names its target;
+- record contacts are not borrowed as route channels;
+- bare N/A becomes record-level `UNEXPLAINED_NA`, not a route;
+- carry derived actor class;
+- preserve `NO_ROUTE_STATED_IN_RECORD != NO_REAL_ROUTE`;
+- contradictions in status/effect do not erase a clear target.
+
+```text
+ALL_16_CODED_FROM_FROZEN_RECORDS
+NO_OUTSIDE_PROCESS_KNOWLEDGE_NEEDED
+NO_NEW_TARGET_CATEGORY_NEEDED
+FIRST_READS_DIFFERED_MATERIALLY_ON_INCLUSION_AND_SOME_TARGETS
+CALIBRATION_SURVIVED != METHOD_VALIDATED
+```
+
+The next substantive result, if pursued, should be a fresh corpus under live November rules using codebook v2. Do not turn the September calibration into a population result.
 
 The reader-use method remains secondary and not ready for participant execution.
 
