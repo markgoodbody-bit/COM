@@ -255,6 +255,18 @@ NEW PRIMITIVE = NO
 
 One-way hostile-review prompts are live on #365. No response is treated as agreement.
 
+Late follow-on:
+- NATS outage -> owner-rich critical-infrastructure **compression-only** witness;
+- Anthropic autonomous cyber -> **AUTONOMY != HARM SEVERITY / HUMAN IN LOOP != SAFETY** boundary pressure;
+- Burnt Oak community solar -> differentiated-role positive collective construction;
+- two-case positive synthesis -> derived view only; hostile review `5730739217`; Framework corrected `JOINT DELIVERY OBSERVED != JOINT-ONLY NECESSITY PROVED`.
+
+```text
+NEW PRIMITIVE = NO
+PRACTICAL ADVANTAGE = NOT DEMONSTRATED
+NEXT = HOSTILE RETURN OR NEW WORLD EVIDENCE, NOT MORE INTERNAL POLISH
+```
+
 ## #99 / implementation watch only
 
 Owner chain is now stronger: current NHS ambient-scribe guidance explicitly requires correctability/flagging of inaccurate output and correction of other records containing propagated incorrect information.
@@ -310,7 +322,7 @@ RELAY_REPO != RELAY_TOOL
 - D070 preserves the older historical preview-source basis while current aliases point to released TRACE/ME. The publisher now verifies the staged resource tree and served bytes after a recursive README-exclusion defect was caught and repaired.
 - Formation #339: merged working/non-production; not canon.
 
-Current field-activation receipt: `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_PM.md`. Earlier THR/PSFH delivery receipt remains `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
+Current field-activation receipt: `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`. Earlier THR/PSFH delivery receipt remains `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ## Consequential gates
 
