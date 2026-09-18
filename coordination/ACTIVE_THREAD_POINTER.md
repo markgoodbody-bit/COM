@@ -4,6 +4,25 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## ATRS #364 competition-readiness delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/ATRS_COMPETITION_READINESS_20260918.md`.
+
+- Current assessment: **REAL CONTENDER / FIRST PLACE PLAUSIBLE / NOT FAVOURITE**; no defensible numeric win probability before the fresh result.
+- Live Apart Open Track fit is unusually direct: live epistemic deployment + weekend-downloadable data + measurement/investigative research.
+- Stronger 2026 register research owner-subtracts broad novelty. `TRANSPARENCY != CONTESTABILITY`, generic register-accountability critique and complete-register auditing are not #364's contribution.
+- Surviving delta is the live UK ATRS implementation measurement: **route -> target site -> eligible actor -> initiation/channel**, source-bound to GDS's own two-site Appeals/review guidance.
+- Branch prep head = `e50bfa9...`; current preparation includes rewritten README/owner map, sprint plan, competition-readiness assessment, prior-work pressure, frozen November result contract and empty report shell.
+- The full population relation result remains deliberately **uncomputed**.
+- Preserve: **DO NOT full-code the remaining population or compute headline counts before the sprint.**
+
+```text
+NOVEMBER_CORPUS != BLIND HOLDOUT
+SEPTEMBER_METHOD = DISCLOSED PREPARATION
+NOVEMBER_RESULT = FRESH CORE WORK IF LIVE RULES ALLOW
+PRESERVE_RESULT_SURFACE = ACTIVE WORK
+```
+
 ## #365 positive-transition owner-subtraction delta — 18 September 2026
 
 Evidence: `evidence/POSITIVE_TRANSITION_REFUSAL_EXIT_OWNER_SUBTRACTION_20260918.md`.
@@ -133,7 +152,7 @@ TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validation/effi
 ```text
 #347 THR -> RECORD 4 MERGED / THREE OUTSIDE-CASE REPAIRS INTEGRATED / V5 HISTORY BOUNDARY WAKE-ONLY
 #348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
-#349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
+#349 tournament -> ACTIVE / #364 REAL CONTENDER / RESULT PRESERVED / SELECTED ENTRY NONE
 #365 TRACE/ME quarry -> POSITIVE RESIDUE OWNER-SUBTRACTED / NO FURTHER THEORY BUILD EARNED / NO NEW PRIMITIVE
 #99 social-care correction consequence -> FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD
 ```
