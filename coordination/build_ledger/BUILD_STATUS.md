@@ -13,10 +13,10 @@ Campfire Relay draft PR #245:
 `Did It Happen? — Action Receipts for Alexa+`
 
 Exact current green head:
-`26ca104640cbbfb49a66ca8408a96a845a465d10`
+`2d969a8c2362c8d255534103763e6876427380fc`
 
 Hosted:
-`campfire-ci 35401492364 SUCCESS`
+`campfire-ci 35401867356 SUCCESS`
 
 Current product edge:
 ```text
