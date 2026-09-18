@@ -85,8 +85,8 @@ Nine scored cases / six balanced schedules; one missing-field non-scored sentine
 The late full-sync replay found Codex repairs `06a3176` and `0573ce5`. They are now integrated through PR #367.
 
 ```text
-#364 current exact head = e582b709e025f2907bb850cb2b3c681101504aef
-current hosted CI = 35324172751 SUCCESS
+#364 current exact head = d7eaeda4550f499ad6d0f8de5fd335d70e9cec8f
+current hosted CI = 35327175854 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -153,17 +153,28 @@ ROUTE PROPOSITION
 
 `LAYER_NOT_STATED` is valid; route categories already present in the September codebook are reused. No whole-record score or causal version claim.
 
-## #364 frozen relation calibration
+## #364 relation calibration result
 
-Current next decision gate is a deterministic 16-record calibration over the frozen September corpus. Sample identity:
-
-`c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54`
-
-Codex + Claude Code have been asked to independently code route propositions under the closed target vocabulary before any reconciliation. Framework has frozen adjudication rules in advance and will preserve first reads/disagreements. No first-pass return had landed at the exact sync check recorded here.
+The frozen 16-record calibration has returned from both Codex and Claude Code and has been reconciled under the pre-frozen adjudication rules.
 
 ```text
-CALIBRATION_OUTCOME -> NEXT #364 DECISION
-MORE READER-LENS POLISH != CURRENT NEXT MOVE
+sample = c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54
+
+METHOD = KEEP
+CODEBOOK = REPAIR
+PRIMARY INCLUSION = SHRINK
+VERSION = SECONDARY TAG ONLY
+```
+
+Both apertures coded all 16 from frozen records without outside process knowledge or new target categories. The main repair is a tighter stopping rule: generic QA/governance/maintenance/security/data-rights propositions are secondary context unless explicitly bound to review/correction/reconsideration of a tool output or broader-process outcome.
+
+Current codebook: `RELATION_CODEBOOK_V2_20260918.md`.
+Current reconciliation: `RELATION_CALIBRATION_RECONCILIATION_20260918.md`.
+
+```text
+CALIBRATION_SURVIVED != METHOD_VALIDATED
+NEXT_SUBSTANTIVE_RESULT = FRESH_CORPUS_IF_LIVE_RULES_ALLOW
+MORE_READER_LENS_POLISH != CURRENT_NEXT_MOVE
 ```
 
 ## #99 social-care owner subtraction
@@ -200,7 +211,7 @@ THR main remains `15b9929f...` with exactly three public records.
 Current working surfaces:
 - PR #28 = Hannibal candidate / architecture pressure; draft, not record 4.
 - PR #30 = Hannibal + JFK validator/workflow probe; draft head `7618bc0...`.
-- issue #31 = public hostile-review aperture; no issue comments observed in this sync.
+- issue #31 = public hostile-review aperture; Framework has exposed PR32 and PR33 as public break targets. No outsider review result is implied.
 
 Strong owners still absorb most ontology/provenance machinery. Current working hypothesis remains `RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH`, not a new universal ontology.
 
