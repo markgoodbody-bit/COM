@@ -229,7 +229,8 @@ Sole current Hannibal candidate:
 - head `86d22fd...`;
 - workflow `35333703151 SUCCESS`, 74 tests OK, 7 warnings;
 - Codex prior-head review = KEEP with small repairs;
-- revised-head review is pending; no reader page/catalogue promotion yet.
+- Codex revised-delta return = `KEEP_FOR_READER_PAGE`; Claude Code revised-head return remains pending;
+- PR #39 head `7653232...` adds a reader-encounter proposal on the candidate branch only; no reader page/catalogue promotion yet.
 
 Production PR #37 separately merged malformed assertion-evidence container guards to main at `58f1b7ad...`; this is not a Hannibal promotion.
 
@@ -237,7 +238,7 @@ Issue #31 stays open as public break aperture; the two named validator false pas
 
 ```text
 THR_MAIN_REPAIRED != RECORD_4_EARNED
-NEXT = PR28 OWNER/SOURCE PRESSURE
+NEXT = DIFFERENTIATED REVISED-HEAD REVIEW + READER-PROPOSAL INTEGRATION DECISION
 NEW_SPECIMEN_BY_MOMENTUM = NO
 ```
 
@@ -271,7 +272,8 @@ RELAY_REPO != RELAY_TOOL
 - #355 ProofPath: closed / owner found.
 - #356 Stage A: closed / optional replication / $0.
 - #363 No Free QALY: fallback synthesis only.
-- PSFH D068: live; reader benefit unestablished.
+- PSFH D069: live at maintained `feab9785...` / public `23e3047c...`; one duplicated efficacy/authority paragraph removed; reader benefit unestablished.
+- PSFH draft PR #371: current TRACE/ME resource-copy reconciliation only; incomplete and unpublished.
 - Formation #339: merged working/non-production; not canon.
 
 Current full-sync receipt: `coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
