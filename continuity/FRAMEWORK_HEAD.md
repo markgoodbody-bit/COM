@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-18 morning FULL COMSYNC — Europe/London  
+Updated: 2026-09-18 late-morning build/currentness pass — Europe/London  
 Later live source and direct human direction win.
 
 ## Fresh-aperture discipline
@@ -279,106 +279,43 @@ POSSIBLE_PRIZE != MONEY_OWNED
 
 No registration, terms acceptance, organiser contact or submission by momentum.
 
-## THR — production repairs integrated / one candidate surface
+## THR — production repairs integrated / reader candidate waiting on outside evidence
 
-THR main is now:
+THR production main remains:
 
 `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`
 
 Public catalogue remains exactly **three records**. No record 4 was promoted.
 
-### Production semantic repair
+Production semantic repairs remain integrated from PR #34 / PR #37. Structural success is not historical truth or model validation.
 
-The Hannibal/JFK probes exposed reusable validator/model defects. After hostile review, Framework extracted only production behavior into PR #34, excluding research fixtures and owner-map material.
+Current Hannibal candidate:
+- PR #35 remains draft / non-public;
+- exact head `836f93e0849268359c58d531792bce1890271691`;
+- exact-head workflow `35339637347 SUCCESS`; integrity and rejection-case tests passed;
+- Claude Code's differentiated revised-head review closed; its one concrete missing Polybius 3.48.12 method/access row was added and rechecked;
+- THR selection provenance now explicitly records that the selection-time candidate pool / alternatives were not preserved rather than reconstructing them;
+- PR #39 reader copy was integrated into PR #35 only;
+- `cases/hannibal-reader-page-proposal.html` is a styled `noindex,nofollow` mockup outside `/records/`, absent from the catalogue and not public record 4.
 
-PR #34 exact pre-merge witness:
-```text
-head = b8fca327d06b87c17a2e827b44bdcc5bf15fb459
-workflow = 35329512132 SUCCESS
-job = 105550339640 SUCCESS
-production tests = 64 / OK
-open-vocabulary warnings = 7
-```
-
-Merged main:
-`194012dcb8247d3cb964cfc65b5082ce67355529`
-
-No separate merge-head workflow run had appeared at the last exact check; do not invent one. The verified witness is exact PR head + successful conflict-free merge.
-
-Main now enforces:
-- evidence observations belong to a cited source;
-- public/default mentions require a public record link; uncatalogued research validation is explicit isolated/in-memory mode only;
-- public repo branches/fixtures are public, not private staging;
-- cross-record `observed` / `reconciled` fail closed until typed target support exists;
-- the direct-evidence guard cannot silently disappear if its model section moves;
-- `unsupported_in_sources_checked` requires an inspected source aperture;
-- failed/not-retrieved/access-restricted/citation-only observations do not count as checked;
-- negative findings expose boundedness without claiming exhaustive search.
-
-Four flak-source observations already substantively inspected in the existing record were corrected from legacy `referenced_by_record` metadata to scoped `partial` observations. This reduced the warning count by correcting evidence metadata, not suppressing warnings.
+The narrow public residue remains:
 
 ```text
-STRUCTURAL_PASS != TRUTH
-SOURCE_OBSERVATION != DIRECT_WORLD_OBSERVATION
-SOURCES_CHECKED != ALL_POSSIBLE_SOURCES
-DEFECT_REPAIRED != MODEL_VALIDATED
+HISTORICAL PERSON != SURVIVING BIOGRAPHY
+SOURCE REPORT != DIRECT OBSERVATION
+CANDIDATE != RECORD_4
+GREEN_CANDIDATE != PUBLICATION
 ```
 
-### Branch cleanup / candidate state
+Issue #31 carries the bounded reader-object break request (comment `5729320945`). At the last check no outsider response had landed.
 
-Closed as integrated or superseded:
-- PR #27 — early Hannibal candidate;
-- PR #29 — early Hannibal candidate;
-- PR #30 — Hannibal/JFK research integration surface;
-- PR #32 — direct-state sibling repair;
-- PR #33 — checked-source sibling repair.
+Next THR move:
+- wait for reader/outside evidence or a new concrete falsifier;
+- repair, shrink or kill the encounter if such evidence earns it;
+- do not add another stress specimen or promote the catalogue by momentum.
 
-Current Hannibal candidate surface:
-- PR #35 — draft historical-human encounter, now synced with current production main;
-- exact head `86d22fd575c0d3da51a7b866484501796e523464`;
-- hosted workflow `35333703151 SUCCESS`, job `105563590181 SUCCESS`;
-- structural / operational PASS;
-- 74 tests / OK; 7 warnings remain;
-- public catalogue still exactly three records.
-- Earlier Hannibal candidate/mixed-review branches are superseded/closed for integration purposes; do not revive duplicates.
-
-Production main also received PR #37 independently:
-- merge `58f1b7ade96ea2a5524bb6d36fdba193f8c016db`;
-- malformed assertion evidence ID containers now fail structurally;
-- the repair is fixture-independent and does not depend on Hannibal remaining a candidate.
-
-PR #35 is **not** public record 4. Codex returned `KEEP_FOR_READER_PAGE` on the revised delta; Claude Code's differentiated revised-head return remains outstanding. PR #39 (`765323222c141225d4abcc8e290f880bc0baa16d`) is a reader-encounter proposal targeting the candidate branch only. No reader page or catalogue promotion has occurred, and green structure/editorial preference does not establish reader benefit.
-
-Issue #31 remains the public hostile-review aperture. Framework comment `5728047635` records that the two named false passes are repaired on main while explicitly keeping the wider break surface open.
-
-Strong-owner subtraction remains load-bearing: CIDOC CRM / CRMsci / CRMinf / CRMdig, W3C PROV, nanopublication patterns, Wikibase/Wikidata full statements, and preservation/source-criticism owners absorb substantial machinery.
-
-Working architecture remains provisional:
-```text
-RECORD != FUNDAMENTAL_UNIT
-RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH
-INDEX != ONTOLOGY
-GRAPH != WORLD
-```
-
-Next THR gate:
-- keep PR #35 exact reviewed head stable while differentiated hostile review runs;
-- current Framework self-review attacks: conventional label vs source-attested string; missing selection provenance; web-reading-surface quality; Lacinium tablet/column carrier identity;
-- preserve source dependence, survival bias and representation boundaries;
-- no catalogue promotion unless the public record is genuinely earned and separately authorised.
-
-Do **not** add another stress specimen before this is resolved.
-
-Mark's bounded public-criticism authority remains active. Feedback is input, not validation.
-
-```text
-AI_FEEDBACK != HUMAN_FEEDBACK
-MODEL_DIFFERENCE != INDEPENDENT_EVIDENCE
-REPLY != ENDORSEMENT
-AGREEMENT != VALIDATION
-SILENCE != REJECTION
-OUTREACH != RECRUITMENT
-```
+Detailed receipt:
+`coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ## COM #365 — positive construction
 
@@ -425,9 +362,32 @@ No application/account/contact/terms/spend/payment action.
 
 ## PSFH / Formation
 
-- PSFH D069 is live at maintained source `feab978564483bfa6277a0472fed542164d50d9e` / public `23e3047cb9ba9d9b42ac12b18e5be59a41a17449`; it removes one duplicated efficacy/authority paragraph only. Reader benefit remains unestablished.
-- Draft PR #371 is reconciling PSFH resource aliases/status to released TRACE v0.3.0 and ME v0.7.0. Its head is moving and must be reacquired before review. It is incomplete and unpublished; no exact hosted witness is claimed.
-- Formation #339 remains merged working/non-production; not canon/alignment result.
+PSFH D070 is now live and byte-verified.
+
+```text
+maintained source = 7ef97775f3f9970042c87d476ac9e39eb2516b49
+public gh-pages = c0a830bfd14ca76052a1ee5913d302952485f57c
+maintained CI = 35340308124 SUCCESS
+publisher = 35340379133 SUCCESS
+publisher job = 105584667180 SUCCESS
+Pages deployment = 35340423410 SUCCESS
+live witness = LIVE_PSFH_D070_VERIFIED targets=33 attempt=5
+```
+
+D070 advances current same-domain TRACE/ME aliases to released TRACE v0.3.0 / ME v0.7.0 while preserving the older source revisions actually used for the adapted Explore readings.
+
+The first publication attempt exposed a real delivery defect: recursive `rsync --exclude='README.md'` preserved the root README by accidentally excluding every nested README. The publisher now uses root-only `--exclude='/README.md'` and verifies the staged resource tree before push. The live verifier distinguishes built, staged, pushed and served bytes.
+
+```text
+BUILT_BYTES != STAGED_BYTES
+STAGED_BYTES != PUSHED_BYTES
+PUSHED_BYTES != SERVED_BYTES
+SERVE_VERIFIED != READER_BENEFIT
+```
+
+Reader benefit remains unestablished. Current weak search visibility is an observation only; indexing configuration is already permissive, so no SEO build is earned.
+
+Formation #339 remains merged working/non-production; not canon/alignment result.
 
 ## Campfire / Square
 
