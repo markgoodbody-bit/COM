@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.27",
+  "site_edition": "0.8.28",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -72,9 +72,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "b9ca501d86272623ef4091e6fb8300939175065098671187a3663e65cc68d379",
-    "change_history_input_html_sha256": "c095a96d14f4c57e4009d0f03eadbea1d76045ebd1bc15b6ba43533f2b693017",
-    "change_history_addendum_note": "D016 through D038 and D045-D070 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. D068-D069 were backfilled from exact published Git history after their original publications omitted change-log/version advances. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "b46d615a9c6795ce06262453773b759c2ab0adfd6db8c819b68200eda2f8b287",
+    "change_history_input_html_sha256": "77d22210e2b9f739e76aa1b2593e4d50fc2bcb4bd7c09b054d0d5ccf9a96c54e",
+    "change_history_addendum_note": "D016 through D038 and D045-D071 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. D068-D069 were backfilled from exact published Git history after their original publications omitted change-log/version advances. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -83,7 +83,7 @@
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
     "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
-    "resource_inventory_sha256": "7a9609cf8ee083a60b4974971a103c7e0e00f475b3cfde7821cf9dc0eefef9b0",
+    "resource_inventory_sha256": "5fafbf3658e7e73f647aa47d5235008899b59ef99ac2849d6129e1f687257dda",
     "worked_revision_source_commit": "730ece48c96fae27d66c797c2fc8fe96a61e8d39",
     "worked_revision_source_path": "door-prototypes/perspective-walk-20260908/WORKED_REVISION.md",
     "explore_source_path": "door-prototypes/perspective-walk-20260908/",
@@ -114,7 +114,8 @@
         "mechanical_ethics_commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
         "historical_basis_preserved": "Explore trace/me source-snapshot entries remain pinned to the pre-release source objects actually used to build the adapted readings."
       }
-    }
+    },
+    "training_permission_input_sha256": "250bbfd7964208fdeb780925d45de0b86d4ff2b6d6000b86befac04a9c0ded14"
   },
   "boundaries": [
     "Encounter is not adoption; reading is not consent; a route is not authority.",
@@ -124,5 +125,17 @@
     "Crawler access does not grant training or reuse permission; consult the relevant source notices.",
     "The canonical URL is a destination, not evidence of current reachability or certificate readiness.",
     "Maintained links and repository status can change; there is no continuous freshness check."
-  ]
+  ],
+  "ai_training": {
+    "status": "Permitted for the owner-controlled material specified in the linked notices, not all site content.",
+    "notices": [
+      "/resources/trace/AI_TRAINING_PERMISSION.md",
+      "/resources/mechanical-ethics/AI_TRAINING_PERMISSION.md"
+    ],
+    "trace_source_commit": "e7d46398dc00ead931b0d5cae98518c1bcf304a3",
+    "mechanical_ethics_source_commit": "45b4a303b5bb970a89854953a20c35dc4bc1e56c",
+    "third_party_rights": "Excluded from the grant; their own terms apply.",
+    "provenance": "Requested, not a condition of permission.",
+    "limit": "Custom scoped permission, not a standard open-content licence or guarantee of dataset inclusion."
+  }
 }

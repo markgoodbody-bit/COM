@@ -3,7 +3,7 @@ import { readFile, readdir, lstat, mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 
-export const INVENTORY_SHA256 = '7a9609cf8ee083a60b4974971a103c7e0e00f475b3cfde7821cf9dc0eefef9b0';
+export const INVENTORY_SHA256 = '5fafbf3658e7e73f647aa47d5235008899b59ef99ac2849d6129e1f687257dda';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 function safe(relative) {
   if (!/^[a-zA-Z0-9._/-]+$/.test(relative) || relative.split('/').some(p => ['', '.', '..'].includes(p))) throw new Error('Unsafe resource path');
@@ -15,9 +15,12 @@ export async function verifyResources(root) {
   const inventory = JSON.parse(raw);
   const expected = new Map();
   for (const project of inventory.projects) for (const file of project.files) {
-    for (const url of [file.current, file.snapshot]) {
-      if (!url.startsWith('/resources/')) throw new Error('Resource prefix mismatch');
-      expected.set(safe(url.slice('/resources/'.length)), file);
+    if (!file.current.startsWith('/resources/')) throw new Error('Resource prefix mismatch');
+    expected.set(safe(file.current.slice('/resources/'.length)), file);
+    if (file.snapshot) {
+      if (!file.snapshot.startsWith('/resources/')) throw new Error('Resource prefix mismatch');
+      const snapshotRule = file.snapshot_identity || file;
+      expected.set(safe(file.snapshot.slice('/resources/'.length)), snapshotRule);
     }
   }
   for (const file of [...inventory.generated_files, ...inventory.snapshot_files]) {

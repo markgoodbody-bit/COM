@@ -50,6 +50,17 @@ class ImportTests(unittest.TestCase):
                 if source.is_file():
                     self.assertEqual(source.read_bytes(), (output / source.relative_to(ROOT)).read_bytes())
 
+    def test_snapshot_modes_have_explicit_meaning(self):
+        projects = m.source_input()['projects']
+        trace = next(project for project in projects if project['id'] == 'trace')
+        me = next(project for project in projects if project['id'] == 'mechanical-ethics')
+        for project in (trace, me):
+            readme = next(file for file in project['files'] if file['path'] == 'README.md')
+            permission = next(file for file in project['files'] if file['path'] == 'AI_TRAINING_PERMISSION.md')
+            self.assertEqual(readme['snapshot_mode'], 'preserve')
+            self.assertEqual(permission['snapshot_mode'], 'none')
+            self.assertNotEqual(project['commit'], project['release_commit'])
+
 
 if __name__ == '__main__':
     unittest.main()

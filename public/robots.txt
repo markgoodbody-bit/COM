@@ -1,5 +1,8 @@
 # Public retrieval is allowed. This is not access control or training consent.
 # Consult each source's licence notices for reuse permissions.
+# Scoped AI training permission for owner-controlled released TRACE and ME:
+# https://pleasestartfromhere.com/resources/trace/AI_TRAINING_PERMISSION.md
+# https://pleasestartfromhere.com/resources/mechanical-ethics/AI_TRAINING_PERMISSION.md
 # Public reading pages permit indexing; error pages retain noindex.
 User-agent: *
 Allow: /

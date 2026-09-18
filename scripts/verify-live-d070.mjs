@@ -15,10 +15,14 @@ for(const project of inventory.projects || []){
   for(const file of project.files || []){
     for(const field of ['current','snapshot']){
       if(!file[field]) continue;
+      const expected = field === 'snapshot' && file.snapshot_identity
+        ? file.snapshot_identity.sha256
+        : file.sha256;
+      if (!expected) continue;
       targets.push({
         label:`${project.id}:${file.path}:${field}`,
         path:file[field],
-        expected:file.sha256
+        expected
       });
     }
   }
