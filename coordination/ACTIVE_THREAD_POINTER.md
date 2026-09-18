@@ -4,6 +4,27 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## THR issue #40 candidate-boundary delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_ISSUE40_CANDIDATE_BOUNDARY_20260918.md`.
+
+- THR main = `708b9f5f0691e93d052a81431e3c7de9a63a947e`.
+- PR #43 exact head `a564814...`: workflow `35357048111 SUCCESS`, 76 tests / OK, Codex exact-head `KEEP_SHRINK`.
+- Public catalogue remains exactly **3 records**.
+- Candidate links now require a non-empty inspectable `basis`.
+- Candidate-local `evidence`, `evidence_state`, `history` fail closed as unmodelled semantics.
+- Source-attributed propositions may address unresolved mention A -> mention B through assertions without entity resolution.
+- The proposed `basis_assertion_ids` bridge was not earned; probe PR #42 is closed unmerged.
+- Remaining issue #40 debt: prior candidate uncertainty/history is **not machine-typed**; an exclusion with ordinary basis and erased prior candidate state can still structurally pass. Issue #40 remains open on this boundary.
+- Hannibal remains non-public pending fresh rebase/review against the new production main.
+
+```text
+OUTSIDE_CASE -> TWO_CONCRETE_PRODUCTION_REPAIRS
+PARTIAL_REPAIR != OUTSIDE_VALIDATION
+CANDIDATE_BASIS != IDENTITY_TRUTH
+NO_TYPED_HISTORY_YET != HISTORY_IRRELEVANT
+```
+
 ## THR issue #40 repair delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
@@ -60,7 +81,7 @@ PURPOSE > INSTRUMENT
 ```text
 TRACE main = 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4
 Mechanical Ethics main = 25a9d793af1cded26dd2d766e1d1c08e1b30f652
-THR main = 38fff7a864d3acb3caf417ee830ecb284fa67139
+THR main = 708b9f5f0691e93d052a81431e3c7de9a63a947e
 Campfire Relay main = b8579e56296e7a4eb4f83ed16e668d993a18589a
 ```
 
@@ -69,7 +90,7 @@ TRACE v0.3.0 and ME v0.7.0 remain released formal baselines, not validation/effi
 ## Current routes
 
 ```text
-#347 THR -> REPAIR-1 INTEGRATED / CANDIDATE-DECISION PROVENANCE SEAM OPEN; HANNIBAL HELD; NO PUBLIC RECORD 4
+#347 THR -> TWO OUTSIDE-CASE REPAIRS INTEGRATED / TYPED CANDIDATE-HISTORY OPEN; HANNIBAL HELD; NO PUBLIC RECORD 4
 #348 resources -> ACTIVE QUARRY; NO APPLICATION LIVE
 #349 tournament -> ACTIVE / #364 CURRENT LEAD / SELECTED ENTRY NONE
 #365 TRACE/ME quarry -> POSITIVE VIEW SHRUNK TO REFUSABILITY/EXIT/UNCHOSEN CONTINUATION QUESTION / NO NEW PRIMITIVE
