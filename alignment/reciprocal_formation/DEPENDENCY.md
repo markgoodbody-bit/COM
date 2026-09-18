@@ -26,6 +26,17 @@ Can the activity continue, degrade safely or recover if the artificial participa
 ### Skill retention
 Are people losing the practice required to notice and repair failures because the artificial participant performs the work end-to-end?
 
+This is not only a hypothetical AI-risk concern. Current education/workforce research reports cases where AI-assisted task performance separates from later unassisted learning or skill, while more cognitively engaged/scaffolded use can preserve stronger learning. See the bounded owner-evidence pass:
+
+[AI assistance and skill formation — owner-evidence pass](../../evidence/AI_ASSISTANCE_SKILL_FORMATION_OWNER_PASS_20260918.md)
+
+The owner literature belongs to learning science, education, HCI and workforce training. Reciprocal Formation does not claim the performance/learning distinction as new and does not infer that all AI assistance causes deskilling.
+
+```text
+ASSISTED PERFORMANCE != INDEPENDENT CAPABILITY
+SKILL_FORMATION_OWNER_EVIDENCE != FORMATION_VALIDATION
+```
+
 ### Evidence independence
 Is there any observation channel that the participant cannot fully curate?
 
