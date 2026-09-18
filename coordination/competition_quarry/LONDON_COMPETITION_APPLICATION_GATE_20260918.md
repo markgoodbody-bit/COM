@@ -135,3 +135,44 @@ Unavoidable human actions:
 - supply any application profile details the form genuinely requires.
 
 Framework can prepare and build around the gate but must not fabricate acceptance or submit terms on Mark's behalf without the explicit event-specific decision.
+
+
+## Additional urgent gates
+
+### Hack-Nation 7 — apply before the next batch closes
+
+Current official schedule shows:
+- 3–4 Oct event;
+- online participation available;
+- London/Cambridge among hub options;
+- current next application batch closes 19 Sep;
+- challenges arrive at kickoff.
+
+Public application posture:
+- systems engineer / AI builder;
+- strongest evidence = real multi-agent coordination, exception/recovery, provenance/evidence and agent reliability work;
+- no preselected startup pitch;
+- build from supplied challenge.
+
+Do not imply a company, customer base or prior hackathon win.
+
+### NVIDIA Claw Agent Challenge — UK remote
+
+Current public page:
+- remote across UK;
+- asks for a long-running claw agent;
+- first prize includes DGX Spark Founders Edition + GTC Berlin pass + showcase;
+- full requirements are only exposed after registration.
+
+Campfire is relevant inheritance, but do not convert it into a submission until the registered brief says what a qualifying claw must be.
+
+### VAST Real-Time Video Agents — 17 Oct
+
+Current public route:
+- London;
+- application required;
+- registration closes 9 Oct;
+- first prize DGX Spark;
+- stack/data supplied by organizers.
+
+Potentially useful for multimodal verification/provenance, but do not prebuild before seeing the supplied video/data problem.
