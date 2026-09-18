@@ -1,8 +1,31 @@
 # ACTIVE THREAD POINTER
 
 Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**  
-Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
+Updated: 2026-09-18 19:23 BST D072 delivery/currentness pass — Europe/London  
 Later live source and direct human direction win.
+
+## PSFH D072 + THR currentness delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/PSFH_D072_THR_CURRENTNESS_20260918.md`.
+
+- PSFH maintained source integrated D072 as `ddcd4bcae4290f2e4b5ff1dd5f7ed0ec434eb3f7`.
+- Public predecessor was `8ece7395701250202ce8f5dd0763db1dff5193d5`.
+- Public `gh-pages` advanced to `ad320e756f42e2db2ffc6e59154bfd39b6b5df97`.
+- publisher workflow `35379696167 SUCCESS`.
+- live exact-byte verifier: `LIVE_PSFH_D072_VERIFIED targets=37 attempt=6`.
+- homepage, `llms.txt` and one-file packet now correctly describe **4 THR public records**, including the bounded Hannibal historical-person source-survival record.
+- Site Preview = `0.8.29`; D072 is a currentness repair, not a framework or THR evidence change.
+- THR current main = `217f89c10a60f02b7d39785d531b2cb47cab7337`; catalogue = exactly **4**.
+- THR contribution packet moved beyond initial `63682dc...`: public-delivery verification and cold-use friction repairs are integrated at `2cbf43a...` / `217f89c...`.
+- No record 5 is earned; no PSFH redesign is earned.
+
+```text
+SOURCE_GREEN != PUBLISHED
+PUSHED != LIVE_BYTE_VERIFIED
+D072 = LIVE / BYTE-VERIFIED
+READER_BENEFIT = NOT ESTABLISHED
+LINKED_PROJECT_CURRENTNESS = RESTORED
+```
 
 ## THR portable AI/human contribution relay delta — 18 September 2026
 
