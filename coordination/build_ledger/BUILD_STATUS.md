@@ -4,6 +4,26 @@ Recorded snapshot: **2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europ
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
+## #365 positive-transition owner-subtraction delta — 18 September 2026
+
+Evidence: `evidence/POSITIVE_TRANSITION_REFUSAL_EXIT_OWNER_SUBTRACTION_20260918.md`.
+
+The previously retained refusability/exit/unchosen-maintenance question is **not established as project-specific residue**. Strong owners cover its components:
+- participatory/evaluation practice -> affected people, power, unintended/negative effects;
+- procedural/distributive/recognition justice -> participation + benefit/burden distribution;
+- exit/voice literature -> leave vs answer-back;
+- infrastructure literature -> imposed/community maintenance burden.
+
+```text
+PROJECT-SPECIFIC POSITIVE-TRANSITION RESIDUE = NOT ESTABLISHED
+RESULT = OWNER CONVERGENCE / SHRINK AGAIN
+NEW TRACE PRIMITIVE = NO
+NEW ME DOCTRINE = NO
+NO MORE POSITIVE-CONSTRUCTION THEORY BUILD FROM CURRENT CASES
+```
+
+Useful remainder is a non-proprietary reading discipline only: positive framing must not hide participation, burden, exit/voice, imposed maintenance or unintended effects.
+
 ## THR record 4 publication delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_RECORD4_PUBLICATION_20260918.md`.
@@ -98,7 +118,7 @@ PURPOSE > INSTRUMENT
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
-| COM #365 | **REAL-USE ACTIVATION / POSITIVE SYNTHESIS SHRUNK / NO NEW PRIMITIVE** | Hostile return `5730883998` routes seven/eight positive-construction questions to evaluation/safeguarding owners. Drop the generic nine-step view; retain only the derived refusability/exit/unchosen-continuation-burden question for further world testing. |
+| COM #365 | **REAL-USE ACTIVATION / POSITIVE RESIDUE OWNER-SUBTRACTED / NO NEW PRIMITIVE** | Follow-on owner search routes participation, burden distribution, exit/voice, unintended effects and maintenance burden to established fields. No project-specific positive-transition residue is established; stop theory-building from current cases. |
 | COM #99 / record-correction consequence | **OWNER-NATIVE NORMATIVE CHAIN / IMPLEMENTATION WATCH** | NHS guidance now explicitly covers ambient-scribe correction, flagging and correction of other records carrying propagated errors. Theory gap not earned; implementation failure not observed. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
 | #355 ProofPath | **CLOSED / OWNER FOUND** | Do not reopen by renaming. |
