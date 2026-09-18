@@ -1,0 +1,88 @@
+{
+  "title": "THR Hannibal — can Doubt preserve translation and attribution boundaries?",
+  "question": "Does the bounded Human Record source path establish that Polybius' Greek text literally contains 'Hannibal' and that Sosylus was unreliable?",
+  "updatedAt": "2026-09-18",
+  "verdict": "No. The checked Polybius surface is an English translation whose Greek literal was not inspected, and the negative judgement of Sosylus remains Polybius' reported evaluation rather than THR's adjudication.",
+  "nodes": [
+    {
+      "id": "position",
+      "type": "position",
+      "label": "Current position",
+      "text": "The bounded record does not establish either stronger claim."
+    },
+    {
+      "id": "translation-evidence",
+      "type": "evidence",
+      "label": "Translation boundary",
+      "text": "The checked Polybius surface renders 'Hannibal' in English, while the Greek source literal was not inspected.",
+      "sourceId": "thr-hannibal-translation"
+    },
+    {
+      "id": "sosylus-evidence",
+      "type": "evidence",
+      "label": "Attributed source criticism",
+      "text": "The record preserves Polybius' criticism of Sosylus as Polybius' evaluation, not as THR's direct judgement.",
+      "sourceId": "thr-hannibal-criticism"
+    },
+    {
+      "id": "greek-literal",
+      "type": "unknown",
+      "label": "Greek literal",
+      "text": "The exact Greek source literal remains uninspected in the bounded record."
+    },
+    {
+      "id": "sosylus-reliability",
+      "type": "unknown",
+      "label": "Independent reliability adjudication",
+      "text": "The bounded sources do not independently adjudicate Sosylus' historical reliability."
+    }
+  ],
+  "edges": [
+    {
+      "from": "translation-evidence",
+      "to": "position",
+      "relation": "supports",
+      "note": "A checked English rendering does not establish the literal form of the uninspected Greek source text."
+    },
+    {
+      "from": "sosylus-evidence",
+      "to": "position",
+      "relation": "supports",
+      "note": "Attributing a negative judgement to Polybius prevents silently adopting that judgement as the project's own conclusion."
+    },
+    {
+      "from": "greek-literal",
+      "to": "position",
+      "relation": "missing",
+      "note": "The missing Greek inspection blocks the literal-source claim."
+    },
+    {
+      "from": "sosylus-reliability",
+      "to": "position",
+      "relation": "missing",
+      "note": "The absence of an independent adjudication blocks the stronger reliability claim."
+    }
+  ],
+  "sources": [
+    {
+      "id": "thr-hannibal-translation",
+      "title": "Hannibal source-survival record — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/hannibal-barca.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-18",
+      "retrievedAt": "2026-09-18",
+      "locator": "entity.notes[1]",
+      "excerpt": "The checked Nepos Latin passage attests the literal string 'Hannibal'. The checked Polybius reading surface renders the name as 'Hannibal' in English; this record did not inspect the Greek source literal."
+    },
+    {
+      "id": "thr-hannibal-criticism",
+      "title": "Hannibal source-survival record — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/hannibal-barca.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-18",
+      "retrievedAt": "2026-09-18",
+      "locator": "assertions[1].scope.ceiling",
+      "excerpt": "This is Polybius' evaluation of another historian, not THR's adjudication of Sosylus."
+    }
+  ]
+}
