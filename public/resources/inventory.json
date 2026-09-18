@@ -1,54 +1,54 @@
 {
   "format": "psfh-resource-copies/0.1",
-  "input_sha256": "9fdd16b8f9871e06bae72650ed42a7f69fcd0c83cd5dfd6ed3467023b9d34cb5",
-  "input_source": "https://github.com/markgoodbody-bit/COM/blob/10c23eb1b971d1c14306637837de6d05d0dbec2f/door-prototypes/perspective-walk-20260908/RESOURCE_COPIES.json",
-  "boundary": "Pinned project-controlled reading copies, not a whole ecosystem mirror, release, validation or new reuse/training licence. Current aliases name these selected editions, not continuously checked heads. Snapshot bytes must not be overwritten.",
+  "input_sha256": "84ebfe8f23af8ffce93bc13b14314e74aa0722a03688cff8087962517182eff7",
+  "input_source": "scripts/RESOURCE_COPIES.json in maintained PSFH source; exact input_sha256 is the reviewed identity",
+  "boundary": "Pinned project-controlled reading copies, not a whole ecosystem mirror, validation result or new reuse/training licence. Current aliases name the released editions below. Snapshot paths preserve immutable earlier/release identities and must not be overwritten. These aliases are not continuously checked heads.",
   "projects": [
     {
       "id": "trace",
       "repository": "markgoodbody-bit/TRACE",
-      "commit": "46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b",
-      "status_at_source": "v0.3.0 specification RC1 / NOT RELEASED / NOT CANON / NOT VALIDATED / NO EFFICACY RESULT",
-      "baseline_distinction": "v0.2.7 remains released formal baseline; not substituted by this copy",
+      "commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
+      "status_at_source": "v0.3.0 / RELEASED / FORMAL BASELINE / CURRENT SPECIFICATION / NOT VALIDATED / NO EFFICACY RESULT",
+      "baseline_distinction": "v0.3.0 is the current released formal baseline; v0.2.7 remains the previous released formal baseline",
       "notice_path": "README.md",
       "files": [
         {
           "path": "README.md",
-          "git_blob_sha1": "0df1a46a33eb63fa47a3cdc4a3b145115f2ccfc1",
-          "bytes": 6563,
+          "git_blob_sha1": "a6f95cf2bac4558e4b5b56b0b38d6e498541d3d0",
+          "bytes": 6827,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256": "2af757c5f819abeda0f5051bc9cc518c9605b47b77ea4d102276dd582615880d",
+          "sha256": "123336044c25a5a89f87622af0ca97009e3eeab8de510b757bd15d01446eaff1",
           "current": "/resources/trace/README.md",
-          "snapshot": "/resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md",
-          "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md",
+          "snapshot": "/resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/README.md",
+          "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/README.md",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
         },
         {
           "path": "TRACE-SPINE.md",
-          "git_blob_sha1": "488989cef87e47adc6df8407382717ebf58e10a6",
-          "bytes": 25795,
+          "git_blob_sha1": "2e5afe78d0033d47582af9ffaa94f0d0e5a51bc7",
+          "bytes": 25838,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256_declared_by_source_readme": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999",
-          "sha256": "9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999",
+          "sha256_declared_by_source_readme": "be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6",
+          "sha256": "be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6",
           "current": "/resources/trace/TRACE-SPINE.md",
-          "snapshot": "/resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md",
-          "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md",
+          "snapshot": "/resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE-SPINE.md",
+          "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE-SPINE.md",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
         },
         {
           "path": "TRACE.md",
-          "git_blob_sha1": "3f7011abb2f453ef250990e6e30cbd787db683c7",
-          "bytes": 180511,
+          "git_blob_sha1": "e9c0a9906c663ac4f9887ee42f8595edc74d2f92",
+          "bytes": 180619,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256_declared_by_source_readme": "1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f",
-          "sha256": "1dfc668d3e3dc5d85dcfc8bed5a025672025aff3ce157205b55bbc5f54160a1f",
+          "sha256_declared_by_source_readme": "b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34",
+          "sha256": "b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34",
           "current": "/resources/trace/TRACE.md",
-          "snapshot": "/resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE.md",
-          "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE.md",
+          "snapshot": "/resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE.md",
+          "source_url": "https://github.com/markgoodbody-bit/TRACE/blob/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE.md",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -86,48 +86,48 @@
     {
       "id": "mechanical-ethics",
       "repository": "markgoodbody-bit/mechanical-ethics",
-      "commit": "44f7efb59806242fd26c572cbfbaaeaefaea2058",
-      "status_at_source": "v0.7.0 working candidate v0.2.4 / NOT BASELINE / NOT RELEASE / NOT CANON / NOT VALIDATED",
-      "baseline_distinction": "v0.6.3 remains preservation baseline; not substituted by this copy",
+      "commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
+      "status_at_source": "v0.7.0 / RELEASED / FORMAL BASELINE / CURRENT READER / NOT VALIDATED",
+      "baseline_distinction": "v0.7.0 is the current released formal baseline; v0.6.3 remains the previous released baseline",
       "notice_path": "README.md",
       "files": [
         {
           "path": "README.md",
-          "git_blob_sha1": "3bdc070a79bef1835250b81f7fb1f9c764382555",
-          "bytes": 3120,
+          "git_blob_sha1": "735e91055adbbc2a45faec6f7c7f36a83710e727",
+          "bytes": 3459,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256": "019a965a06bca268f836b312fc48b07f7e86c168844a2cf8a899e9d4cbf0a0a3",
+          "sha256": "fc18ae7c77f6e114ae6de9c83b101920763deef961a64671c3b511521f5c9bbf",
           "current": "/resources/mechanical-ethics/README.md",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/README.md",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/README.md",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
         },
         {
           "path": "MECHANICAL_ETHICS.md",
-          "git_blob_sha1": "cc6f5195b3d71d29f6bfbc8062ef9623f6f2dcb2",
-          "bytes": 87555,
+          "git_blob_sha1": "e232a29c5b6492930ff5b94b005c948f67ba6067",
+          "bytes": 87543,
           "media_type": "text/markdown; charset=utf-8",
-          "sha256_declared_by_source_readme": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93",
-          "sha256": "6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93",
+          "sha256_declared_by_source_readme": "8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c",
+          "sha256": "8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c",
           "current": "/resources/mechanical-ethics/MECHANICAL_ETHICS.md",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.md",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.md",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
         },
         {
           "path": "MECHANICAL_ETHICS.pdf",
-          "git_blob_sha1": "874f5311a49e962d8b50005f74ed11ed41f27700",
-          "bytes": 451736,
+          "git_blob_sha1": "b7579079bbeb32912b8b280ce444e0b41d330a7f",
+          "bytes": 451840,
           "media_type": "application/pdf",
-          "sha256_declared_by_source_readme": "18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56",
-          "sha256": "18f16b7a34b39765b94ef70b5872b47faf3e42c3b30bb21401c4c1af2d452b56",
+          "sha256_declared_by_source_readme": "122c56bb2ea1063bccb8ced3652686a006d3ff44bdaafa445a525e9464711cdf",
+          "sha256": "122c56bb2ea1063bccb8ced3652686a006d3ff44bdaafa445a525e9464711cdf",
           "current": "/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.pdf",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.pdf",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.pdf",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.pdf",
           "inspection": {
             "pages": 50,
             "check": "Parsed reachable PDF objects; no authoring or visual review"
@@ -140,8 +140,8 @@
           "media_type": "image/png",
           "sha256": "bc19a7b7121faba611ef900470398ad5981ae1d1ff44faa79b3912b2a449ec00",
           "current": "/resources/mechanical-ethics/figures/figure-1-file-and-life.png",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.png",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.png",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.png",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.png",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -153,8 +153,8 @@
           "media_type": "image/svg+xml",
           "sha256": "7e925765434bc701d5eacb88972a8f9715bc4a66d548e5b569d9c9a99692c2bb",
           "current": "/resources/mechanical-ethics/figures/figure-1-file-and-life.svg",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.svg",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.svg",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.svg",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.svg",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -166,8 +166,8 @@
           "media_type": "image/png",
           "sha256": "d1df6bea949b7db9bb64fd76fda35921d49473503b920b85ccae83864c445bc3",
           "current": "/resources/mechanical-ethics/figures/figure-2-correction-window.png",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.png",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.png",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.png",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.png",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -179,8 +179,8 @@
           "media_type": "image/svg+xml",
           "sha256": "4d1570e07bfb8dcf7a3b9c7fc6cf380f1522e3b49b29fbf78df218be99069a5f",
           "current": "/resources/mechanical-ethics/figures/figure-2-correction-window.svg",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.svg",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.svg",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.svg",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.svg",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -192,8 +192,8 @@
           "media_type": "image/png",
           "sha256": "e6e0a457e3e1225edb1b29e0be9e698b988814270578d75ebd381f6bbab928d1",
           "current": "/resources/mechanical-ethics/figures/figure-3-two-flats-one-wall.png",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.png",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.png",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.png",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.png",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -205,8 +205,8 @@
           "media_type": "image/svg+xml",
           "sha256": "0d98a7ea605bf9a440f0d315b5ca62fb2c4144d4cedea78bad81cbad5119db11",
           "current": "/resources/mechanical-ethics/figures/figure-3-two-flats-one-wall.svg",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.svg",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.svg",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.svg",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.svg",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -218,8 +218,8 @@
           "media_type": "image/png",
           "sha256": "4d0f41aa5eb560b6afe1b9e2102c99a8476d2c9211a380d6c401192016797ebf",
           "current": "/resources/mechanical-ethics/figures/figure-4-machine-speed-human-correction.png",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.png",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.png",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.png",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.png",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -231,8 +231,8 @@
           "media_type": "image/svg+xml",
           "sha256": "c17f04eb3d3c22e6b1d62eae7e505ba0bd42e7f6a6c6a76d45d263bdd2e5662a",
           "current": "/resources/mechanical-ethics/figures/figure-4-machine-speed-human-correction.svg",
-          "snapshot": "/resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.svg",
-          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.svg",
+          "snapshot": "/resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.svg",
+          "source_url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.svg",
           "inspection": {
             "check": "Format and bounded active-content check"
           }
@@ -311,16 +311,91 @@
     },
     {
       "path": "index.md",
-      "bytes": 5805,
-      "sha256": "46d9c63e70c076572dae3d613085e0dcd147ba54350de6f17375e252f55fc9ab"
+      "bytes": 5936,
+      "sha256": "2da40ec236ce9099c56bb4bdcaa4d3f6fb458f118bd781b7b6421237c2b640ab"
     },
     {
       "path": "index.html",
-      "bytes": 5830,
-      "sha256": "db898bd3488b0543c1d47efea786aaa5266ca1644588d6a4ea08e6aedcb1b081"
+      "bytes": 5961,
+      "sha256": "09b147450ab70e918007cec9e8a5753b4b5b08790c5957fdaa9450e45bc1f0e5"
     }
   ],
   "snapshot_files": [
+    {
+      "path": "snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/README.md",
+      "bytes": 6827,
+      "sha256": "123336044c25a5a89f87622af0ca97009e3eeab8de510b757bd15d01446eaff1"
+    },
+    {
+      "path": "snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE-SPINE.md",
+      "bytes": 25838,
+      "sha256": "be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6"
+    },
+    {
+      "path": "snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE.md",
+      "bytes": 180619,
+      "sha256": "b9431ecc07e711c4abd1e70d4159acfd1cb8cecb8bdbd22086e8073b10c01d34"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/README.md",
+      "bytes": 3459,
+      "sha256": "fc18ae7c77f6e114ae6de9c83b101920763deef961a64671c3b511521f5c9bbf"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.md",
+      "bytes": 87543,
+      "sha256": "8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.pdf",
+      "bytes": 451840,
+      "sha256": "122c56bb2ea1063bccb8ced3652686a006d3ff44bdaafa445a525e9464711cdf"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.png",
+      "bytes": 81671,
+      "sha256": "bc19a7b7121faba611ef900470398ad5981ae1d1ff44faa79b3912b2a449ec00"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.svg",
+      "bytes": 3268,
+      "sha256": "7e925765434bc701d5eacb88972a8f9715bc4a66d548e5b569d9c9a99692c2bb"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.png",
+      "bytes": 58039,
+      "sha256": "d1df6bea949b7db9bb64fd76fda35921d49473503b920b85ccae83864c445bc3"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.svg",
+      "bytes": 2887,
+      "sha256": "4d1570e07bfb8dcf7a3b9c7fc6cf380f1522e3b49b29fbf78df218be99069a5f"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.png",
+      "bytes": 69949,
+      "sha256": "e6e0a457e3e1225edb1b29e0be9e698b988814270578d75ebd381f6bbab928d1"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.svg",
+      "bytes": 3756,
+      "sha256": "0d98a7ea605bf9a440f0d315b5ca62fb2c4144d4cedea78bad81cbad5119db11"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.png",
+      "bytes": 65773,
+      "sha256": "4d0f41aa5eb560b6afe1b9e2102c99a8476d2c9211a380d6c401192016797ebf"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.svg",
+      "bytes": 3979,
+      "sha256": "c17f04eb3d3c22e6b1d62eae7e505ba0bd42e7f6a6c6a76d45d263bdd2e5662a"
+    },
+    {
+      "path": "snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/index.html",
+      "bytes": 1155,
+      "sha256": "2058b2eae70ef50c3f8246b919baf9925b73ebc303ac1f51c47e25ba475f81c1"
+    },
     {
       "path": "snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md",
       "bytes": 6563,
