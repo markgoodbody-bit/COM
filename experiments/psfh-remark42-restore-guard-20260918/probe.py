@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import argparse, gzip, http.cookiejar, json, os, subprocess, tempfile, time, urllib.parse, urllib.request
+import uuid
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -41,9 +42,9 @@ def main():
     ap.add_argument("--port",type=int,default=8084)
     args=ap.parse_args()
     base=f"http://127.0.0.1:{args.port}"
-    container="psfh-remark42-restore-guard"
+    # Never remove a fixed-name container that another invocation may own.
+    container=f"psfh-remark42-restore-guard-{uuid.uuid4().hex}"
     result={"format":"psfh-remark42-restore-guard/0.1","owner_image":IMAGE,"real_person_data":False}
-    run(["docker","rm","-f",container],check=False)
     with tempfile.TemporaryDirectory(prefix="psfh-r42-guard-") as td:
         os.chmod(td,0o777)
         try:
