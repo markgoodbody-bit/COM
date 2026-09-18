@@ -180,8 +180,8 @@ The subsequent world/owner pass moved #364's lead question beyond the secondary 
 Current exact PR #364 head:
 
 ```text
-7b7b1fd8a171a5414c315f585e715700cc0703f6
-hosted CI 35277771413 = SUCCESS
+e582b709e025f2907bb850cb2b3c681101504aef
+hosted CI 35324172751 = SUCCESS
 ```
 
 Current fresh-corpus question:
@@ -198,6 +198,30 @@ ROUTE_RELATION != RECORD_SCORE
 CODER_CAN_INFER != RECORD_MAKES_LEGIBLE
 VERSION_ASSOCIATION != VERSION_CAUSED_CHANGE
 FRESH_CORPUS QUESTION != RESULT
+```
+
+### Frozen relation calibration — current decision gate
+
+On 18 Sep Framework froze the deterministic 16-case relation calibration before any new result:
+- `RELATION_CALIBRATION_PROTOCOL_20260918.md`;
+- `relation_calibration_sample_20260918.json`;
+- `RELATION_CALIBRATION_ADJUDICATION_20260918.md`.
+
+Sample identity:
+
+`c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54`
+
+Codex and Claude Code have both been asked for independent first-pass coding using only the frozen record, with no live refetch, linked-site inspection or outside process knowledge. Framework authored the earlier dry run and therefore acts as integrator/adjudicator rather than a third independent coder.
+
+No calibration return had landed at the exact sync check that produced this pointer.
+
+```text
+IF FROZEN RELATION CODING CANNOT SURVIVE
+-> NOVEMBER FRESHNESS DOES NOT RESCUE IT
+
+DISAGREEMENT != FAILURE
+AGREEMENT != WORLD_TRUTH
+LAYER_NOT_STATED = VALID_RESULT
 ```
 
 The reader-use method remains secondary and not ready for participant execution.
