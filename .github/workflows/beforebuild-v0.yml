@@ -25,7 +25,7 @@ jobs:
           python-version: '3.12'
       - name: Syntax
         run: python -m py_compile experiments/beforebuild-v0/beforebuild.py experiments/beforebuild-v0/test_beforebuild.py
-      - name: Unit tests
+      - name: Unit and steering tests
         run: python -m unittest experiments/beforebuild-v0/test_beforebuild.py -v
       - name: Historical calibration smoke
         run: |
@@ -37,8 +37,8 @@ jobs:
           assert got == {
               'evidencebridge-vs-doubt': 'INTEROPERATE',
               'policy-boundary-compiler': 'STOP',
-              'rail-accessibility-currentness': 'BUILD',
+              'rail-accessibility-currentness': 'BUILD_PROBE',
           }, got
-          assert 'prospective validation' in r['claim_ceiling']
+          assert 'typed evidence is not source verification' in r['claim_ceiling']
           print(json.dumps(got, indent=2, sort_keys=True))
           PY
