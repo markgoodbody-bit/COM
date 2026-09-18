@@ -5,9 +5,9 @@ import { SITE_EDITION } from './site-edition.mjs';
 const ORIGIN = 'https://pleasestartfromhere.com';
 export const VIEWS = [
   { output: 'read/start.html', source: 'explore/start.json', title: 'Start: complete JSON source text', edition: 'Site Preview 0.8.25, worked relationship route (D066); not validation', sha256: "e01f3ac4538c927cc921e11176dcd359f6b65e6d778fba7ea84546589a658217" },
-  { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.26, separate-project discoverability (D067); not validation', sha256: "5dfc5ffc0026ad928a2e5b5bc1b6b1a6cf813d1c131ad5661a440b9a59e3fe21" },
-  { output: 'read/trace-spine.html', source: 'resources/trace/TRACE-SPINE.md', title: 'TRACE compact spine: complete Markdown source text', edition: 'TRACE RC1, source 46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b; not a new TRACE release', sha256: '9ee106e98a34643929f82fa3296adffac46e650e4e8d0b775016269f0fe50999' },
-  { output: 'read/me-book.html', source: 'resources/mechanical-ethics/MECHANICAL_ETHICS.md', title: 'Mechanical Ethics: complete Markdown source text', edition: 'ME v0.7.0 working candidate v0.2.4, source 44f7efb59806242fd26c572cbfbaaeaefaea2058; not a new ME release', sha256: '6a85d512904d00ea6e76b6d4f7fdff63cc9068a99d88b3541d501ed6ae2adc93' },
+  { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.27, released-core currentness sync (D070); not validation', sha256: 'bd4dd697e23ff1e0f081683ebf30987c5671087ee11bed9f0de1264bfedca25b' },
+  { output: 'read/trace-spine.html', source: 'resources/trace/TRACE-SPINE.md', title: 'TRACE compact spine: complete Markdown source text', edition: 'TRACE v0.3.0 released baseline, source 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4; local status sync, not a new TRACE release', sha256: 'be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6' },
+  { output: 'read/me-book.html', source: 'resources/mechanical-ethics/MECHANICAL_ETHICS.md', title: 'Mechanical Ethics: complete Markdown source text', edition: 'Mechanical Ethics v0.7.0 released baseline, source 25a9d793af1cded26dd2d766e1d1c08e1b30f652; local status sync, not a new ME release', sha256: '8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c' },
 ];
 export const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 export function escapeText(text) {

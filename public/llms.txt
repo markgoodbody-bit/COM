@@ -68,7 +68,7 @@ These objects may change, shrink or disappear as the project learns. Their prese
 
 ## Related public project
 
-- [The Human Record](https://thehumanrecord.net/): a separate public experiment in preserving inspectable provenance for human creation as synthetic media becomes abundant. It currently has one real specimen. It has been offered to 1F916 for stewardship but has not been accepted and is not community-owned. It is not an authorship detector or certification authority. Read its own evidence, limits and stewardship record before relying on it.
+- [The Human Record](https://thehumanrecord.net/): a separate public project for keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries three deliberately different public records: artwork provenance; a viral historical claim source trail; and a living-practice transmission-lineage case. It has been offered to 1F916 for stewardship but has not been accepted and is not community-owned. It is not an authorship detector or certification authority. Read its own evidence, limits and stewardship record before relying on it.
 
 ## Optional
 

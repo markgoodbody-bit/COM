@@ -3,7 +3,7 @@ import { readFile, readdir, lstat, mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 
-export const INVENTORY_SHA256 = '948c07c95715d5d4215c35166f0afe209a7431e80f506b9b9ac3d6ce90afdca8';
+export const INVENTORY_SHA256 = '7a9609cf8ee083a60b4974971a103c7e0e00f475b3cfde7821cf9dc0eefef9b0';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 function safe(relative) {
   if (!/^[a-zA-Z0-9._/-]+$/.test(relative) || relative.split('/').some(p => ['', '.', '..'].includes(p))) throw new Error('Unsafe resource path');
