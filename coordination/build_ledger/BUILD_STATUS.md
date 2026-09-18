@@ -1,3 +1,18 @@
+## Mechanical Ethics reader-test delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/ME_ROUTE_PRESERVATION_READER_TEST_20260918.md`.
+
+- ME main = `714907a4d0af7bd702b0ab92786aa858213812b4` after merging a **reader-test harness only**.
+- released reader blob remains `e232a29c5b6492930ff5b94b005c948f67ba6067`; v0.7.0 wording is unchanged.
+- issue #47 remains open as a hard-collision clarity/defeasibility question.
+- initial forced-choice protocol was self-falsified for priming before any return was accepted.
+- v0.1 uses open-ended first-pass questions, post-response classification, exact source binding, local/no-telemetry A/B presentation and local result validation.
+- exact prep CI `35392490769 SUCCESS`.
+- cold Condition-B result = **NOT YET OBTAINED**.
+
+`TEST READY != WORDING DEFECT PROVEN`
+`NO CHANGE = VALID RESULT`
+
 # Build status
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-QUARRY PRIMARY / ONE PRESERVED OPEN PR**  
