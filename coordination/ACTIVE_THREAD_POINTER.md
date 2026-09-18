@@ -85,8 +85,8 @@ Nine scored cases / six balanced schedules; one missing-field non-scored sentine
 The late full-sync replay found Codex repairs `06a3176` and `0573ce5`. They are now integrated through PR #367.
 
 ```text
-#364 current exact head = 7b7b1fd8a171a5414c315f585e715700cc0703f6
-current hosted CI = 35277771413 SUCCESS
+#364 current exact head = e582b709e025f2907bb850cb2b3c681101504aef
+current hosted CI = 35324172751 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -152,6 +152,19 @@ ROUTE PROPOSITION
 ```
 
 `LAYER_NOT_STATED` is valid; route categories already present in the September codebook are reused. No whole-record score or causal version claim.
+
+## #364 frozen relation calibration
+
+Current next decision gate is a deterministic 16-record calibration over the frozen September corpus. Sample identity:
+
+`c97ea5548ccc26b130a8ffe2783569d6d365897fcf0e04a35fba033486012b54`
+
+Codex + Claude Code have been asked to independently code route propositions under the closed target vocabulary before any reconciliation. Framework has frozen adjudication rules in advance and will preserve first reads/disagreements. No first-pass return had landed at the exact sync check recorded here.
+
+```text
+CALIBRATION_OUTCOME -> NEXT #364 DECISION
+MORE READER-LENS POLISH != CURRENT NEXT MOVE
+```
 
 ## #99 social-care owner subtraction
 
