@@ -4,6 +4,26 @@ Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF*
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## #365 positive-transition owner-subtraction delta — 18 September 2026
+
+Evidence: `evidence/POSITIVE_TRANSITION_REFUSAL_EXIT_OWNER_SUBTRACTION_20260918.md`.
+
+The previously retained refusability/exit/unchosen-maintenance question is **not established as project-specific residue**. Strong owners cover its components:
+- participatory/evaluation practice -> affected people, power, unintended/negative effects;
+- procedural/distributive/recognition justice -> participation + benefit/burden distribution;
+- exit/voice literature -> leave vs answer-back;
+- infrastructure literature -> imposed/community maintenance burden.
+
+```text
+PROJECT-SPECIFIC POSITIVE-TRANSITION RESIDUE = NOT ESTABLISHED
+RESULT = OWNER CONVERGENCE / SHRINK AGAIN
+NEW TRACE PRIMITIVE = NO
+NEW ME DOCTRINE = NO
+NO MORE POSITIVE-CONSTRUCTION THEORY BUILD FROM CURRENT CASES
+```
+
+Useful remainder is a non-proprietary reading discipline only: positive framing must not hide participation, burden, exit/voice, imposed maintenance or unintended effects.
+
 ## THR record 4 publication delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/THR_RECORD4_PUBLICATION_20260918.md`.
@@ -140,7 +160,7 @@ No current Hannibal branch is public record 4. Repository inspection is not oper
 COM #347 = THR product / 4 public repository records; issue #40 earned three bounded repairs; V5 typed candidate-history remains wake-only
 COM #348 = project resource quarry
 COM #349 = competition tournament
-COM #365 = TRACE/ME real-use quarry / positive-construction view SHRUNK to refusability-exit-continuation residue
+COM #365 = TRACE/ME real-use quarry / positive-construction residue OWNER-SUBTRACTED; no further theory build earned
 COM #99  = social-care correction consequence field watch / no active build
 ```
 
