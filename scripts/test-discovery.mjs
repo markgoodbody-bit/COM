@@ -35,6 +35,12 @@ test('Explore keeps historical source basis separate from current repository rou
  assert.match(sources['me-home'].label,/current-source route/);
  const packet=JSON.parse(await readFile('out/explore/packet.json','utf8')).sources;
  assert.deepEqual(packet,sources);
+
+ const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
+ const traceRepo=manifest.source_repositories.find(x=>x.name==='TRACE');
+ const meRepo=manifest.source_repositories.find(x=>x.name==='Mechanical Ethics');
+ assert.equal(traceRepo.human_preview_source_revision,'46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b');
+ assert.equal(meRepo.human_preview_source_revision,'44f7efb59806242fd26c572cbfbaaeaefaea2058');
 });
 
 test('root metadata names only the first-party canonical origin',()=>{
