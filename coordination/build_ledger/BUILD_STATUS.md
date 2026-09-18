@@ -15,10 +15,10 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / ARCHITECTURE STRESS / PUBLIC HOSTILE REVIEW** | Main still 3 records. PR30 draft `7618bc0...`; sibling PR32 `845b2a0...` green (66 tests) for observation-state fail-closed; sibling PR33 `1b332ec...` green (67 tests) for checked-source fail-closed; both hostile-review pending; issue #31 public break aperture active. |
+| COM #347 / THR | **ACTIVE PRODUCT / PRODUCTION REPAIRED / ONE CANDIDATE SURFACE** | Main `194012dc...`; PR34 merged reviewed semantic repairs (64 prod tests, 7 warnings). PR27/29/30/32/33 closed; PR28 is sole Hannibal candidate; public catalogue still 3 records. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **CURRENT LEAD / CALIBRATION SURVIVED WITH REPAIRS / NOT RESULT** | Exact head `d7eaeda...`; hosted CI `35327175854` green. Two frozen first passes coded all 16 without outside process knowledge/new target categories; method KEEP, codebook REPAIR, primary inclusion SHRINK. |
+| #364 ATRS | **CURRENT LEAD / CALIBRATION SURVIVED WITH REPAIRS / NOT RESULT** | Exact head `d7eaeda...`; hosted CI `35328650762` green. Two frozen first passes coded all 16 without outside process knowledge/new target categories; method KEEP, codebook REPAIR, primary inclusion SHRINK. |
 | COM #365 | **CAMPFIRE QUARRY / DERIVED-VIEW RESULT** | No new TRACE/ME primitive earned. |
 | COM #99 / social-care correction consequence | **FIELD WATCH / OWNER IMPLEMENTATION OBSERVATION / NO BUILD** | Normative owner chain substantially present; operational connection after post-use correction is not established from public sources. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
@@ -26,7 +26,7 @@ PURPOSE > INSTRUMENT
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **STABLE PUBLIC BASELINE** | `15b9929f...`; three public records unchanged. |
+| THR main | **STABLE PUBLIC BASELINE + SEMANTIC REPAIR** | `194012dc...`; three public records unchanged; validator/source semantics hardened through merged PR34. |
 | PSFH D068 | **LIVE** | Reader benefit unestablished. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
@@ -71,8 +71,8 @@ Nine scored cases use six position/condition-balanced schedules; the missing-fie
 The previous full replay found two remaining Codex repairs (`06a3176`, `0573ce5`). They are now integrated through PR #367.
 
 ```text
-#364 current exact head = d7eaeda4550f499ad6d0f8de5fd335d70e9cec8f
-current hosted CI = 35327175854 SUCCESS
+#364 current exact head = 95a979a75e51f796818712031f1583ca06f5c2d9
+current hosted CI = 35328650762 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -174,19 +174,32 @@ No registration, organiser contact, terms acceptance or submission.
 
 ## Other active lanes
 
-### THR / architecture and public review
+### THR / production semantics and one surviving candidate
 
-THR main remains three public records.
+THR main is `194012dcb8247d3cb964cfc65b5082ce67355529`; public catalogue remains three records.
 
-- PR #28: Hannibal candidate / architecture stress; draft, no public record 4.
-- PR #30: Hannibal + JFK probe; draft head `7618bc0...`. Source-ownership and public/default record-link repairs are useful.
-- PR #32: sibling observation-state fail-closed repair at `845b2a0...`; workflow `35325473325` SUCCESS; 66 tests OK; DRAFT / hostile review pending / not merged.
-- PR #33: sibling hidden-completeness / checked-source fail-closed repair at `1b332ec...`; workflow `35326431061` SUCCESS; 67 tests OK; DRAFT / hostile review pending / not merged.
-- issue #31: public hostile-review aperture; both known defects/repairs are exposed there for falsification.
-- bounded public outreach/testing through existing authorised project identities/channels is authorised; feedback remains evidence input, not validation.
-- Sunjata remains stress-only; do not synthesise “the epic” into a THR record by momentum.
+PR #34 merged only reusable production repairs from the research pressure:
+- exact head `b8fca327...`;
+- workflow `35329512132 SUCCESS`;
+- 64 production tests / OK;
+- 7 warnings remain visible;
+- no historical research fixture or record-4 candidate entered main.
 
-No stewardship/licence/canon/public-record promotion.
+Closed:
+- #27 / #29 duplicate Hannibal candidates;
+- #30 research integration branch;
+- #32 / #33 sibling semantic review branches.
+
+Open:
+- #28 sole Hannibal candidate;
+- issue #31 public break aperture.
+
+```text
+DEFECT_REPAIRED != MODEL_VALIDATED
+THREE_PUBLIC_RECORDS = UNCHANGED
+NEXT = PRESSURE PR28 AGAINST NEW MAIN
+NO_NEW_SPECIMEN
+```
 
 ### COM #365
 
