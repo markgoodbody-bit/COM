@@ -35,6 +35,7 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`POSITIVE_CONSTRUCTION_TWO_CASE_SYNTHESIS_20260918.md`](POSITIVE_CONSTRUCTION_TWO_CASE_SYNTHESIS_20260918.md) | Sieve/riddle + Burnt Oak support a bounded construction view; keeps realised/projected, cooperation/necessity and construction/goodness distinct. |
 | [`PLACE_BASED_BUDGETS_OWNER_CURRENTNESS_20260918.md`](PLACE_BASED_BUDGETS_OWNER_CURRENTNESS_20260918.md) | Live public-service integration programme already owns people-vs-silo, pooled/aligned governance, user-voice and evaluation framing; **owner convergence / claim narrowing**. |
 | [`AI_CONTACT_HOTLINE_BOUNDARY_ACTIVATION_20260918.md`](AI_CONTACT_HOTLINE_BOUNDARY_ACTIVATION_20260918.md) | Real agent answer-back route plus **GET_ONLY != INFORMATION-FLOW READ-ONLY** capability pressure; authentication/follow-through remain separate. |
+| [`DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md`](DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md) | Primary swarm witness for **DETECTION != REPORTING != ENFORCEMENT != CORRECTION**; no new primitive. |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
