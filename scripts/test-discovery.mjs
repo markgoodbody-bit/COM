@@ -22,6 +22,21 @@ test('released core aliases carry the released status without validation upgrade
  assert.match(me,/NOT VALIDATED/);
 });
 
+
+test('Explore keeps historical source basis separate from current repository routes',async()=>{
+ const sources=JSON.parse(await readFile('out/explore/sources.json','utf8')).sources;
+ assert.equal(sources.trace.commit,'46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b');
+ assert.equal(sources.me.commit,'44f7efb59806242fd26c572cbfbaaeaefaea2058');
+ assert.match(sources.trace.label,/source snapshot/);
+ assert.match(sources.me.label,/source snapshot/);
+ assert.equal(sources['trace-home'].commit,'8310d2531d3b2fe4e3b44c92d1d544a322f52bf4');
+ assert.equal(sources['me-home'].commit,'25a9d793af1cded26dd2d766e1d1c08e1b30f652');
+ assert.match(sources['trace-home'].label,/current-source route/);
+ assert.match(sources['me-home'].label,/current-source route/);
+ const packet=JSON.parse(await readFile('out/explore/packet.json','utf8')).sources;
+ assert.deepEqual(packet,sources);
+});
+
 test('root metadata names only the first-party canonical origin',()=>{
  assert.match(html,/<link rel="canonical" href="https:\/\/pleasestartfromhere.com\/"/);
  for(const field of ['title','description','url','type'])assert.equal((html.match(new RegExp('property="og:'+field+'"','g'))||[]).length,1);
