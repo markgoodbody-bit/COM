@@ -44,12 +44,14 @@ Branch:
 `framework/amazon-alexa-did-it-happen-20260918`
 
 Exact green head:
-`26ca104640cbbfb49a66ca8408a96a845a465d10`
+`2d969a8c2362c8d255534103763e6876427380fc`
 
 Hosted evidence:
-`campfire-ci 35401492364 SUCCESS`
+`campfire-ci 35401867356 SUCCESS`
 
 No release-candidate workflow was repurposed; unrelated release workflows skipped as expected.
+
+The final green head also contains the real friction log, 90-second demo script and factual submission-draft preparation. Those are preparation artifacts, not a submitted entry.
 
 ### Product
 
