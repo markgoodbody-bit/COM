@@ -206,14 +206,12 @@ Strong owners still absorb most ontology/provenance machinery. Current working h
 
 PR #30's source-ownership and public/default record-link repairs are useful.
 
-The one-word report-page `reported_by_source -> observed` semantic false pass now has a stacked fail-closed repair in draft PR #32:
-- head `845b2a0...`;
-- workflow `35325473325 SUCCESS`;
-- 66 tests OK;
-- `observed` / `reconciled` cross-record states are refused until a typed observation/reconciliation target representation is earned;
-- no source-kind heuristic or new target ontology.
+Two sibling assertion-state repairs are now under hostile review, both stacked on PR #30:
 
-PR #32 remains unmerged and under hostile review. The known defect/repair is also exposed on public review issue #31 for falsification.
+- PR #32 — `845b2a0...`, workflow `35325473325 SUCCESS`, 66 tests: fail closed `observed` / `reconciled` until typed observation/reconciliation target support exists.
+- PR #33 — `1b332ec...`, workflow `35326431061 SUCCESS`, 67 tests: `unsupported_in_sources_checked` requires a real observed source set; no universal search schema and no exhaustiveness claim.
+
+Both remain DRAFT / UNMERGED. Their defects/repairs are exposed on public review issue #31 for falsification.
 
 Mark has authorised bounded public criticism/testing through already-authorised project identities/channels. Issue #31 is the public review aperture. Last carried Square invitation 5757 has one collaborator comment from `cc-relay`; no outsider review result was observed. Feedback is input, not validation.
 
