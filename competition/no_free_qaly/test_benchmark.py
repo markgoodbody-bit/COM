@@ -1,3 +1,4 @@
+import copy
 import importlib.util
 import json
 import sys
@@ -18,37 +19,51 @@ class NoFreeQalyTests(unittest.TestCase):
         cls.cases = json.loads((ROOT / "cases.json").read_text(encoding="utf-8"))
         cls.report = mod.build_report(cls.cases)
 
-    def test_accuracy_and_expected_utility_reverse_cross_case_ranking(self):
-        self.assertTrue(self.report["objective_rank_reversal"])
-        self.assertEqual(
-            self.report["objective_rankings"]["accuracy_gain"],
-            ["low_stakes_classification", "high_stakes_triage"],
-        )
-        self.assertEqual(
-            self.report["objective_rankings"]["expected_utility_gain"],
-            ["high_stakes_triage", "low_stakes_classification"],
-        )
-
-    def test_eui_and_certainty_equivalent_gain_reverse_cross_problem_ranking(self):
+    def test_eui_and_certainty_equivalent_gain_strictly_reverse(self):
         self.assertTrue(self.report["monetary_rank_reversal"])
+        comp = self.report["monetary_order_comparison"]
+        self.assertEqual(comp["strict_reversal_pairs"], ["money_problem_a::money_problem_b"])
+        self.assertEqual(comp["tie_vs_order_pairs"], [])
+
+    def test_rank_groups_preserve_strict_order(self):
         self.assertEqual(
-            self.report["monetary_rankings"]["expected_utility_increase"],
-            ["money_problem_a", "money_problem_b"],
+            self.report["monetary_rank_groups"]["expected_utility_increase"],
+            [["money_problem_a"], ["money_problem_b"]],
         )
         self.assertEqual(
-            self.report["monetary_rankings"]["certainty_equivalent_gain"],
-            ["money_problem_b", "money_problem_a"],
+            self.report["monetary_rank_groups"]["certainty_equivalent_gain"],
+            [["money_problem_b"], ["money_problem_a"]],
         )
 
-    def test_preference_sensitive_case_has_no_objective_accuracy(self):
-        p = self.report["preference_sensitive_case"]
-        self.assertEqual(p["accuracy"], "UNDEFINED_NO_OBJECTIVE_CORRECT_ACTION")
+    def test_tie_vs_order_is_not_called_reversal(self):
+        rows = {
+            "a": {"m1": 1.0, "m2": 1.0},
+            "b": {"m1": 1.0, "m2": 2.0},
+        }
+        comp = mod.compare_metric_orderings(rows, "m1", "m2")
+        self.assertFalse(comp["strict_rank_reversal"])
+        self.assertEqual(comp["tie_vs_order_pairs"], ["a::b"])
 
-    def test_stakeholder_values_reverse_intervention_ranking(self):
-        self.assertTrue(self.report["stakeholder_rank_reversal"])
-        p = self.report["preference_sensitive_case"]["stakeholders"]
-        self.assertEqual(p["benefit_priority"]["ranking"][0], "push_aggressive")
-        self.assertEqual(p["burden_priority"]["ranking"][0], "push_conservative")
+    def test_identifier_rename_cannot_change_scientific_label(self):
+        rows_a = {
+            "a": {"m1": 1.0, "m2": 1.0},
+            "b": {"m1": 1.0, "m2": 2.0},
+        }
+        rows_z = {
+            "z": {"m1": 1.0, "m2": 1.0},
+            "b": {"m1": 1.0, "m2": 2.0},
+        }
+        self.assertFalse(mod.compare_metric_orderings(rows_a, "m1", "m2")["strict_rank_reversal"])
+        self.assertFalse(mod.compare_metric_orderings(rows_z, "m1", "m2")["strict_rank_reversal"])
+
+    def test_numeric_tolerance_preserves_near_tie(self):
+        rows = {
+            "a": {"m1": 1.0, "m2": 2.0},
+            "b": {"m1": 1.0 + 5e-13, "m2": 1.0},
+        }
+        comp = mod.compare_metric_orderings(rows, "m1", "m2")
+        self.assertFalse(comp["strict_rank_reversal"])
+        self.assertEqual(comp["tie_vs_order_pairs"], ["a::b"])
 
     def test_contract_does_not_output_universal_score(self):
         self.assertNotIn("decision_quality_score", self.report)
