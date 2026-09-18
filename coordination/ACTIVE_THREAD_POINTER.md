@@ -322,7 +322,18 @@ RELAY_REPO != RELAY_TOOL
 - D070 preserves the older historical preview-source basis while current aliases point to released TRACE/ME. The publisher now verifies the staged resource tree and served bytes after a recursive README-exclusion defect was caught and repaired.
 - Formation #339: merged working/non-production; not canon.
 
-Current field-activation receipt: `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`. Earlier THR/PSFH delivery receipt remains `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
+Current field receipts:
+- `coordination/build_ledger/FIELD_ACTIVATION_PASS_20260918_LATE_PM.md`
+- `coordination/build_ledger/ANSWER_BACK_ACTIVE_RECORD_PASS_20260918_PM.md`
+
+Latest delta:
+- AI Contact Hotline: capability / answer-back boundary witness; no report was sent.
+- DeepMind swarm: primary answer-back/enforcement witness; generic lifecycle owner-subtracted to ISO/NIST.
+- Campfire/COM self-audit: continuous monitoring unestablished, consequential missed-reply failure not reproduced -> **NO BUILD**.
+- Paper2Agent: active-derived-view owner convergence; **NO THR BUILD**.
+- #365 hostile review `5730826732` open; no response at last read.
+
+Earlier THR/PSFH delivery receipt remains `coordination/build_ledger/THR_HANNIBAL_PSFH_D070_20260918.md`.
 
 ## Consequential gates
 
