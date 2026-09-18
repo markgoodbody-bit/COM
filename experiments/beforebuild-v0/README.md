@@ -1,4 +1,4 @@
-# BeforeBuild v0.2 — executable owner-trial falsifier
+# BeforeBuild v0.3 — executable owner-trial falsifier
 
 Status: **BOUNDED PRODUCT FALSIFIER / OWNER-TRIAL DECISION CORE / NOT A SEARCH ENGINE / NOT A COMPETITION ENTRY / NOT A NOVELTY CLAIM**
 
@@ -176,3 +176,41 @@ MACHINE RECEIPT != REVIEW
 ```
 
 This is one adapter, not evidence that arbitrary owners are easy to execute. Adapter cost/reusability remains a central kill test.
+
+
+## Currentness: review loss vs trial failure
+
+v0.3 separates two things that v0.2 still conflated:
+
+- **review loss** — a durable semantic/functional limitation identified by review, such as Doubt compressing richer THR machine semantics;
+- **trial failure** — what the candidate/owner does on the hard case **now**, such as a current public information contradiction.
+
+A machine receipt may update trial execution/results. It may **not** overwrite review loss.
+
+This matters because the world can change. The live rail adapter re-fetches the six public owner cases on every workflow run and converts them into a fresh receipt:
+
+- `CONTRADICTION -> FAIL`;
+- `CONSISTENT_EXISTS -> PASS`;
+- fetch/insufficient comparison -> `NOT_TESTED`.
+
+The same historical case can therefore legitimately move:
+
+```text
+BUILD_PROBE   # contradiction still observed
+USE_OWNER     # owner surfaces now satisfy all declared cases
+SHRINK        # current fetch/trial is incomplete
+```
+
+without rewriting historical evidence.
+
+```text
+HISTORICAL FAILURE != CURRENT FAILURE
+REVIEW LOSS != EXECUTION FAILURE
+FRESH RECEIPT > STALE TRIAL LABEL
+```
+
+Two adapter shapes are now exercised by CI:
+1. a pinned upstream GitHub Action (Doubt);
+2. a live public owner-system observation (rail).
+
+That is still only two adapters. Reusability is not established.
