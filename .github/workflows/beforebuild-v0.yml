@@ -187,7 +187,9 @@ jobs:
           REMARK_IMAGE: ghcr.io/umputun/remark42:v1.16.4@sha256:980e0e76a6f241cd181f44c5b4d686f0d8cd7f552e11deb3bdcba223b2c3b866
         run: |
           docker pull "$REMARK_IMAGE"
-          docker run -d --name beforebuild-remark42             -p 127.0.0.1:8080:8080             -e REMARK_URL=http://127.0.0.1:8080             -e SITE=psfh             -e SECRET=beforebuild-ephemeral-secret-0123456789abcdef             -e AUTH_ANON=true             "$REMARK_IMAGE"
+          mkdir -p /tmp/beforebuild-remark-var
+          chmod 0777 /tmp/beforebuild-remark-var
+          docker run -d --name beforebuild-remark42             -p 127.0.0.1:8080:8080             -v /tmp/beforebuild-remark-var:/srv/var             -e REMARK_URL=http://127.0.0.1:8080             -e SITE=psfh             -e SECRET=beforebuild-ephemeral-secret-0123456789abcdef             -e AUTH_ANON=true             "$REMARK_IMAGE"
 
           ready=0
           for i in $(seq 1 25); do
