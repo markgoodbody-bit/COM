@@ -4,6 +4,25 @@ Recorded snapshot: **2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europ
 
 Observed coordination state only. Re-read mutable heads before acting. Later live source and direct human direction win.
 
+## ATRS #364 competition-readiness delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/ATRS_COMPETITION_READINESS_20260918.md`.
+
+- Current assessment: **REAL CONTENDER / FIRST PLACE PLAUSIBLE / NOT FAVOURITE**; no defensible numeric win probability before the fresh result.
+- Live Apart Open Track fit is unusually direct: live epistemic deployment + weekend-downloadable data + measurement/investigative research.
+- Stronger 2026 register research owner-subtracts broad novelty. `TRANSPARENCY != CONTESTABILITY`, generic register-accountability critique and complete-register auditing are not #364's contribution.
+- Surviving delta is the live UK ATRS implementation measurement: **route -> target site -> eligible actor -> initiation/channel**, source-bound to GDS's own two-site Appeals/review guidance.
+- Branch prep head = `e50bfa9...`; current preparation includes rewritten README/owner map, sprint plan, competition-readiness assessment, prior-work pressure, frozen November result contract and empty report shell.
+- The full population relation result remains deliberately **uncomputed**.
+- Preserve: **DO NOT full-code the remaining population or compute headline counts before the sprint.**
+
+```text
+NOVEMBER_CORPUS != BLIND HOLDOUT
+SEPTEMBER_METHOD = DISCLOSED PREPARATION
+NOVEMBER_RESULT = FRESH CORE WORK IF LIVE RULES ALLOW
+PRESERVE_RESULT_SURFACE = ACTIVE WORK
+```
+
 ## #365 positive-transition owner-subtraction delta — 18 September 2026
 
 Evidence: `evidence/POSITIVE_TRANSITION_REFUSAL_EXIT_OWNER_SUBTRACTION_20260918.md`.
@@ -117,7 +136,7 @@ PURPOSE > INSTRUMENT
 | COM #347 / THR | **ACTIVE PUBLIC PRODUCT / RECORD 4 MERGED / HISTORY LIMIT WAKE-ONLY** | Main `ad903505...`; repository catalogue now 4. PR41 + PR43 + PR45 are integrated. Hannibal record 4 survived bounded hostile review and translated-literal repair. Served-byte verification is not fresh in this aperture. V5 typed candidate-history remains unmodelled until a real use failure earns it. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
-| #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
+| #364 ATRS | **CURRENT LEAD / REAL CONTENDER / RESULT SURFACE PRESERVED** | September relation method frozen; readiness branch now adds current prior-work subtraction, result contract and empty report shell. Full population relation result deliberately uncomputed until fresh November core work if live rules allow. |
 | COM #365 | **REAL-USE ACTIVATION / POSITIVE RESIDUE OWNER-SUBTRACTED / NO NEW PRIMITIVE** | Follow-on owner search routes participation, burden distribution, exit/voice, unintended effects and maintenance burden to established fields. No project-specific positive-transition residue is established; stop theory-building from current cases. |
 | COM #99 / record-correction consequence | **OWNER-NATIVE NORMATIVE CHAIN / IMPLEMENTATION WATCH** | NHS guidance now explicitly covers ambient-scribe correction, flagging and correction of other records carrying propagated errors. Theory gap not earned; implementation failure not observed. |
 | #363 No Free QALY | **FALLBACK SYNTHESIS** | Not benchmark novelty. |
