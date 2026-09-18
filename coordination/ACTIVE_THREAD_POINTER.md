@@ -85,8 +85,8 @@ Nine scored cases / six balanced schedules; one missing-field non-scored sentine
 The late full-sync replay found Codex repairs `06a3176` and `0573ce5`. They are now integrated through PR #367.
 
 ```text
-#364 current exact head = 95a979a75e51f796818712031f1583ca06f5c2d9
-current hosted CI = 35328650762 SUCCESS
+#364 current exact head = 827b82382f26c52d62272dd4fe4e87ce52d1f78e
+current hosted CI = 35332539753 SUCCESS
 #367 = MERGED reader-use repair
 fd1b75c9671af8e85df9cbe9ad33ef025797d578 = last exact reader-use repair head
 ```
@@ -171,10 +171,13 @@ Both apertures coded all 16 from frozen records without outside process knowledg
 Current codebook: `RELATION_CODEBOOK_V2_20260918.md`.
 Current reconciliation: `RELATION_CALIBRATION_RECONCILIATION_20260918.md`.
 
+PR #369 closed the final known false-absence rule by checking the whole bounded actor-eligible route inventory before emitting `NO_ROUTE_STATED_IN_RECORD`.
+
 ```text
+SEPTEMBER_METHOD = FROZEN
 CALIBRATION_SURVIVED != METHOD_VALIDATED
 NEXT_SUBSTANTIVE_RESULT = FRESH_CORPUS_IF_LIVE_RULES_ALLOW
-MORE_READER_LENS_POLISH != CURRENT_NEXT_MOVE
+MORE_SEPTEMBER_POLISH != CURRENT_NEXT_MOVE
 ```
 
 ## #99 social-care owner subtraction
@@ -219,11 +222,10 @@ Production PR #34 merged the hostile-reviewed semantic repairs from the Hannibal
 
 No separate merge-head CI had appeared at the last exact check.
 
-Closed cleanup surfaces:
-`#27 #29 #30 #32 #33`.
+Closed/superseded cleanup surfaces include earlier Hannibal and research-integration branches.
 
-Sole Hannibal candidate:
-- PR #28 — draft / not record 4.
+Sole current Hannibal candidate:
+- PR #35 — draft historical-human encounter rebuilt from repaired main; head `76dd138d...`; workflow `35330401494 SUCCESS`; 70 tests OK; not record 4.
 
 Issue #31 stays open as public break aperture; the two named validator false passes are repaired on main, not validated away.
 
@@ -241,12 +243,13 @@ No new TRACE/ME primitive earned. Reachable futures and joint construction remai
 
 No application live.
 
-- OpenAI Researcher Access: retained only for a surviving object with a credible OpenAI API budget.
-- Anthropic External Researcher Access: retained only for a surviving object with a credible Claude/API budget.
+- Corrigibility Research Fund: KEEP as funding owner; no proposal thesis earned after owner subtraction. Generic correction propagation and generic non-obedience/multi-principal framing are owner-occupied; residual authority-ambiguity/non-collapse question remains HOLD.
+- Arcee Trinity Builders: only with a real live token budget.
+- OpenAI Researcher Access: HOLD on currently known affiliation standing.
+- Anthropic credits: only with a real Claude budget.
 - ARIA: owner-subtracted research seam only; no proposal earned.
-- LASR: time-sensitive career/research programme, not a default project-runway route.
 
-#364 does not currently need model spend. No contact/account/terms/spend/payment action.
+No contact/account/terms/application/spend/payment action.
 
 ## Campfire / Square
 
