@@ -38,11 +38,11 @@ Campfire Relay draft PR #245:
 
 Exact current head:
 
-`109d67c190496774a28ea97cec7ccd11342cac84`
+`ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`
 
 Hosted verification:
 
-`campfire-ci run 1519 / 35404393764 — SUCCESS`
+`campfire-ci run 1520 / 35405626849 — SUCCESS`
 
 No release-candidate workflow was promoted by this competition branch.
 
@@ -118,6 +118,20 @@ Repair:
 Regression preserved.
 
 Codex also found the standalone test path was Windows-hostile. It now uses `fileURLToPath(import.meta.url)`.
+
+A later exact-head restart probe preserved a distinct adverse result at superseded head `109d67c...`: if durable append of `WRITE_ATTEMPT` failed after the simulated external write returned, the ledger reopened with only `INTENT/PENDING`. The next session's unresolved guard excluded `PENDING` and could issue a duplicate write.
+
+Bounded repair at `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`:
+- persisted `PENDING` intent is an unresolved/open receipt;
+- an equivalent later action is blocked before precheck/write;
+- recovery uses read-only reconciliation;
+- the failure-boundary/reopen regression holds external write count at one;
+- all 22 focused tests pass inside hosted `campfire-ci 1520 / 35405626849 SUCCESS`.
+
+```text
+DURABLE PENDING INTENT -> POSSIBLY SENT -> NO BLIND RESEND
+CONSERVATIVE DUPLICATE SUPPRESSION != EXACTLY-ONCE EXTERNAL EXECUTION
+```
 
 ```text
 WAS CONFIRMED != IS STILL TRUE
