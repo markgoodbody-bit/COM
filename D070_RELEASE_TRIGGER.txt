@@ -1,0 +1,5 @@
+PSFH D070 one-shot release trigger.
+
+Basis maintained source: 000cfe088321db665cb3b31d0899f620512f60fd
+Purpose: trigger the dedicated fail-closed publisher only.
+Not part of public site output.
