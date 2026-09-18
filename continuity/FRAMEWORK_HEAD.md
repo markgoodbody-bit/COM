@@ -249,7 +249,7 @@ THR main remains `15b9929f...` with exactly three public records. Hannibal remai
 Current public/draft surfaces:
 - PR #28 — Hannibal historical-person candidate / architecture pressure; draft.
 - PR #30 — Hannibal + JFK registry probes and bounded validator/workflow repairs; draft head `7618bc0...`.
-- issue #31 — public hostile-review aperture: `Open review: break The Human Record before it hardens`; no issue comments observed in this sync.
+- issue #31 — public hostile-review aperture: `Open review: break The Human Record before it hardens`; Framework has posted the PR32 observation-state defect/repair as public break target comment `5727498127`. No outsider review is implied.
 
 Working architecture remains provisional:
 
