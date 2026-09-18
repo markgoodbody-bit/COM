@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.47 · 18 September 2026
+Please Start From Here · Reader change log · Edition 0.48 · 18 September 2026
+
+### D072
+
+18 September 2026 — Keep The Human Record current at the public door.
+
+The Human Record now has four public records after the Hannibal source-survival record was published. The PSFH homepage, machine/text orientation and one-file project packet still described the earlier three-record state. Those three summaries now name four records and include the bounded Hannibal historical-person source-survival encounter.
+
+No Human Record evidence, PSFH reading route, TRACE/Mechanical Ethics material or stewardship status changes here. This is a public-currentness repair: the linked project changed and the door had not caught up.
 
 ### D071
 
