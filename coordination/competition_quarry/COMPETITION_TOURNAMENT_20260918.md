@@ -261,3 +261,29 @@ Current competition state remains:
 
 SELECTED ENTRY = NONE
 REGISTRATION / TERMS ACCEPTANCE / SUBMISSION = NONE
+
+
+## Late live-source delta — 18 September 2026
+
+The tournament above is retained as the earlier same-day quarry. Fresh public-source scanning after direct Mark direction to pursue competitions materially changed the current route.
+
+Current detailed source:
+`COMPETITION_LIVE_SCAN_20260918_LATE.md`
+
+Current build receipt:
+`../build_ledger/COMPETITION_BUILD_PASS_20260918_LATE.md`
+
+Material updates:
+- Amazon Developer Hackathon / Alexa+ is now an **ACTIVE BOUNDED BUILD** because its submission period is already open and the current rules support new/significantly-updated work plus self-hosted MCP / simulated Alexa+ routes.
+- Campfire Relay draft PR #245 is the current Amazon spike; exact current green head is `26ca104640cbbfb49a66ca8408a96a845a465d10`.
+- early-October London events (Dwelly, Stripe x Briefcase, No.10) are now explicit human-gated routes because their current problem formats fit existing exception/reconciliation engineering.
+- generic action-recovery/evidence products remain owner-crowded; Nebius/Open-Agent routes are **not** reopened merely because prize pools are larger.
+- Hack Apertus remains time-gated to 1 October; ATRS remains time-gated to fresh November work.
+
+This later section supersedes the earlier priority ordering where they conflict.
+
+```text
+CURRENT LIVE ROUTE > EARLIER SAME-DAY TOURNAMENT
+AMAZON BUILD != AMAZON REGISTRATION
+LONDON FIT != ATTENDANCE COMMITMENT
+```
