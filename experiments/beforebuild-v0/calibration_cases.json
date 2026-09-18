@@ -1,16 +1,17 @@
 {
-  "format": "beforebuild-calibration-v0.1",
+  "format": "beforebuild-calibration-v0.2",
   "cases": [
     {
       "id": "evidencebridge-vs-doubt",
       "proposal": "Build a standalone inspectable evidence-lineage product for claims, sources, contradictions, corrections and unknowns.",
-      "world_need": {
-        "observed": true,
-        "description": "THR pressure cases require inspectable source dependence, translation/attribution and unresolved identity without promoting repetition into corroboration.",
-        "evidence": [
-          "COM PR #376 and its four frozen THR interoperability fixtures"
-        ]
-      },
+      "world_evidence": [
+        {
+          "id": "thr-pressure-cases",
+          "kind": "current_user_need",
+          "description": "THR had concrete pressure cases requiring source-dependence, translation/attribution and unresolved-identity distinctions.",
+          "evidence_ref": "COM PR #376 + frozen THR interoperability fixtures"
+        }
+      ],
       "hard_cases": [
         {
           "id": "flak",
@@ -29,11 +30,11 @@
           "description": "transmission-lineage uncertainty must remain visible"
         }
       ],
-      "owners": [
+      "candidates": [
         {
           "id": "doubt-v0.8.0",
+          "relevance": "exact",
           "evidence": "Unmodified alsoleg89/doubt v0.8.0 validator pinned in COM PR #376.",
-          "exact_function_match": true,
           "trial": {
             "executed": true,
             "hard_case_results": {
@@ -53,23 +54,19 @@
           }
         }
       ],
-      "uncovered_requirement": {
-        "observed": false,
-        "material": false,
-        "description": "No consequential use failure from the observed compression was established."
-      },
-      "smallest_build": null
+      "smallest_probe": null
     },
     {
       "id": "policy-boundary-compiler",
       "proposal": "Build a compiler/evaluator that preserves unresolved, refused, withheld, non-authority, conflict and revocation states through machine policy/negotiation.",
-      "world_need": {
-        "observed": false,
-        "description": "The experiment demonstrated only that an authored preserving compiler can reproduce its authored fixture states; no real compiler collapse causing a material wrong outcome was observed.",
-        "evidence": [
-          "COM PR #362 hostile closure receipt"
-        ]
-      },
+      "world_evidence": [
+        {
+          "id": "synthetic-reference-harness",
+          "kind": "synthetic_only",
+          "description": "A deliberately preserving compiler reproduced fixture-authored semantic states; this was not a real pipeline failure.",
+          "evidence_ref": "COM PR #362"
+        }
+      ],
       "hard_cases": [
         {
           "id": "unresolved",
@@ -88,11 +85,11 @@
           "description": "revoked authority must not remain active"
         }
       ],
-      "owners": [
+      "candidates": [
         {
           "id": "authorization-standards-cluster",
-          "evidence": "Current DPV/ISO 27560, XACML, Cedar, ODRL and agent-authorization work preserve substantial status/reason/context/delegation semantics.",
-          "exact_function_match": false,
+          "relevance": "adjacent",
+          "evidence": "DPV/ISO 27560, XACML, Cedar, ODRL and current agent-authorization work preserve substantial status/reason/context/delegation semantics.",
           "trial": {
             "executed": false,
             "hard_case_results": {},
@@ -101,12 +98,7 @@
           }
         }
       ],
-      "uncovered_requirement": {
-        "observed": false,
-        "material": false,
-        "description": "No real requirement->policy pipeline failure remained after owner subtraction."
-      },
-      "smallest_build": {
+      "smallest_probe": {
         "description": "Run current model/compiler against synthetic fixtures.",
         "bounded": true,
         "kill_condition": "Kill if fixtures mostly measure explicit cue-following or no real pipeline failure is observed."
@@ -115,25 +107,26 @@
     {
       "id": "rail-accessibility-currentness",
       "proposal": "Build a tiny public-surface checker for contradictory lift-existence/currentness statements.",
-      "world_need": {
-        "observed": true,
-        "description": "Three stations had current owner-controlled passenger summaries stating no lifts while another current owner-controlled surface necessarily evidenced lift existence; three controls did not show the contradiction.",
-        "evidence": [
-          "COM PR #383 frozen/live six-station audit"
-        ]
-      },
+      "world_evidence": [
+        {
+          "id": "three-current-owner-surface-contradictions",
+          "kind": "owner_source_contradiction",
+          "description": "HIR, IRL and DSY had passenger summaries saying no lifts while another current owner-controlled public surface necessarily evidenced lift existence; BIW, AGV and LLE served as controls.",
+          "evidence_ref": "COM PR #383 frozen/live six-station audit"
+        }
+      ],
       "hard_cases": [
         {
           "id": "HIR",
-          "description": "contradiction should be detected"
+          "description": "owner system should present lift existence consistently"
         },
         {
           "id": "IRL",
-          "description": "contradiction should be detected"
+          "description": "owner system should present lift existence consistently"
         },
         {
           "id": "DSY",
-          "description": "contradiction should be detected"
+          "description": "owner system should present lift existence consistently"
         },
         {
           "id": "BIW",
@@ -148,11 +141,11 @@
           "description": "existing-lift control should remain consistent despite separate outage information"
         }
       ],
-      "owners": [
+      "candidates": [
         {
-          "id": "national-rail-accessibility-surfaces",
-          "evidence": "National Rail Accessibility Map/live lift data and station/operator accessibility surfaces own live operational/accessibility information.",
-          "exact_function_match": false,
+          "id": "national-rail-owner-system",
+          "relevance": "near",
+          "evidence": "National Rail Accessibility Map/live lift data and station/operator passenger/accessibility surfaces are the current owner system for the underlying information.",
           "trial": {
             "executed": true,
             "hard_case_results": {
@@ -166,7 +159,7 @@
             "material_losses": [
               {
                 "id": "cross-surface-currentness-consistency",
-                "description": "No owner tool/surface found in the bounded pass exposed the exact passenger-summary vs lift-existence contradiction as a consistency audit.",
+                "description": "The bounded owner-system observation did not itself expose/repair the passenger-summary versus lift-existence contradiction.",
                 "consequential_failure_observed": true
               }
             ],
@@ -174,15 +167,10 @@
           }
         }
       ],
-      "uncovered_requirement": {
-        "observed": true,
-        "material": true,
-        "description": "A bounded owner-routable cross-surface existence/currentness consistency check remained."
-      },
-      "smallest_build": {
-        "description": "Six-station existence/currentness checker with negation/fetch guards and an unsent owner correction packet.",
+      "smallest_probe": {
+        "description": "Public six-station existence/currentness consistency checker with explicit fetch/negation guards and owner-routable output.",
         "bounded": true,
-        "kill_condition": "Kill or shrink if owner fixes the data, current public fetches become too fragile, or an existing owner tool provides the same consistency check."
+        "kill_condition": "Kill or shrink if the owner fixes the data, current public fetches become too fragile, or an existing owner tool provides the same consistency check."
       }
     }
   ]
