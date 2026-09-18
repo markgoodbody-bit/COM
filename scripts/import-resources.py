@@ -234,11 +234,11 @@ def assemble(root, output, previous=None):
         projects.append({k: project[k] for k in ('id', 'repository', 'commit', 'status_at_source', 'baseline_distinction', 'notice_path')} |
                         {'files': rows, 'dependencies': dependencies(project, bodies)})
     inventory = {'format': 'psfh-resource-copies/0.1', 'input_sha256': INPUT_SHA,
-                 'input_source': 'https://github.com/markgoodbody-bit/COM/blob/10c23eb1b971d1c14306637837de6d05d0dbec2f/door-prototypes/perspective-walk-20260908/RESOURCE_COPIES.json',
-                 'boundary': 'Pinned project-controlled reading copies, not a whole ecosystem mirror, release, validation or new reuse/training licence. Current aliases name these selected editions, not continuously checked heads. Snapshot bytes must not be overwritten.',
+                 'input_source': 'scripts/RESOURCE_COPIES.json in maintained PSFH source; exact input_sha256 is the reviewed identity',
+                 'boundary': 'Pinned project-controlled reading copies, not a whole ecosystem mirror, validation result or new reuse/training licence. Current aliases name the released editions below. Snapshot paths preserve immutable earlier/release identities and must not be overwritten. These aliases are not continuously checked heads.',
                  'projects': projects}
     title = 'Read TRACE and Mechanical Ethics'
-    intro = 'The documents are here on this site. You can read the Markdown or download the existing ME PDF. These are working editions, not validated releases. Their original notices are included unchanged.'
+    intro = 'The documents are here on this site as exact local copies of the current released TRACE v0.3.0 and Mechanical Ethics v0.7.0 baselines. Release changes status, not validation or demonstrated practical advantage. Earlier published candidate editions remain at fixed snapshot paths.'
     limit = 'GitHub remains the place for source history, criticism and discussion. FPF and other third-party references remain elsewhere. This is not a self-contained copy of every linked source, and it does not grant new copying, adaptation or training rights.'
     text = '# ' + title + '\n\n' + intro + '\n\n' + limit + '\n'
     body = '<h1>' + title + '</h1><p>' + intro + '</p>'
