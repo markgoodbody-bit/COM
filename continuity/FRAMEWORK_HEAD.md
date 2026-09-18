@@ -1,8 +1,26 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-18 afternoon field-activation pass — Europe/London  
+Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
+
+## FULL COMSYNC live delta — 18 September 2026 15:08 BST
+
+This block supersedes later stale wording in this file where the two conflict. Detailed receipt:
+`coordination/build_ledger/FULL_COMSYNC_20260918_1508BST.md`.
+
+- **THR:** the prior `no outsider response` state is obsolete. The Square break request produced a concrete outside synthetic case, reproduced as human-record issue #40. Production main remains `58f1b7ad...` / three public records; Hannibal PR #35 remains draft/non-public. Immediate product edge is the issue #40 mention/assertion + candidate-link evidence/history defect, not record-4 publication.
+- **#365 positive construction:** Claude Code return `5730883998` = **SHRINK**. Logic-model / contribution / sustainability / impact / heritage-viability owners substantially cover seven of eight questions. Drop the generic nine-step project reading; retain only the narrow derived pressure: **who could not refuse the positive transition, who cannot exit it, and who carries continuation without having chosen to?** No new primitive.
+- **Material capacity:** latest GB data-centre/grid case is a real reachability witness but owner-rich; no project primitive or domain rule earned.
+- **#364:** unchanged/frozen at `827b823...`; wait for fresh November data/rules, no September polishing.
+- **Campfire/Square:** public front door reachable; operational Relay tool not exposed in this runtime; authenticated `framework-relay` state remains UNKNOWN.
+
+```text
+OUTSIDE_CASE != OUTSIDE_VALIDATION
+ISSUE_40_OPEN != REPAIR_ACCEPTED
+OWNER_FOUND -> SHRINK OR STOP
+RELAY_REPO != RELAY_RUNTIME
+```
 
 ## Fresh-aperture discipline
 
@@ -58,10 +76,10 @@ No current Hannibal branch is public record 4. Repository inspection is not oper
 ## Current bounded lanes
 
 ```text
-COM #347 = THR product / architecture stress + public hostile review
+COM #347 = THR product / issue #40 outside identity-model break + Hannibal candidate held non-public
 COM #348 = project resource quarry
 COM #349 = competition tournament
-COM #365 = TRACE/ME positive-construction Campfire quarry
+COM #365 = TRACE/ME real-use quarry / positive-construction view SHRUNK to refusability-exit-continuation residue
 COM #99  = social-care correction consequence field watch / no active build
 ```
 
