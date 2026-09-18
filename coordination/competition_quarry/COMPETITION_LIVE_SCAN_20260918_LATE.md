@@ -264,3 +264,97 @@ ELIGIBLE != SUBMITTED
 SUBMITTED != AWARDED
 PRIZE_AMOUNT != EXPECTED_VALUE
 ~~~
+
+
+## 13. NVIDIA Claw Agent Challenge: London — STRONG UK REMOTE FIT / REGISTRATION GATE
+
+Official:
+- https://luma.com/claw-agent-challenge-london
+
+Current public state:
+- hosted by NVIDIA Developer Community;
+- virtual / remote;
+- open to people living in the United Kingdom;
+- asks participants to build a **long-running claw agent**;
+- no fixed in-person hackathon schedule/team requirement is stated publicly;
+- 1st place: GTC Berlin pass + DGX Spark Founders Edition (~$4,000 stated value) + showcase opportunity at NVIDIA Build-a-Claw London;
+- 2nd place: GTC Berlin pass + showcase opportunity.
+
+The public page says full challenge details, submission requirements, inspiration and NVIDIA Build model resources are provided **after registration**.
+
+This is a strong natural fit to:
+- Campfire long-running agent / continuity work;
+- explicit state/currentness;
+- failure recovery;
+- local-first / bounded actuation;
+- source-vs-runtime distinction.
+
+But do not infer the actual judged task before reading the registered brief.
+
+Disposition:
+
+```text
+STRONG FIT
+NO SPECULATIVE BUILD BEFORE BRIEF
+REGISTRATION = HUMAN GATE
+FULL RULES / SUBMISSION SHAPE = NOT YET SEEN
+```
+
+## 14. Poolside Research Hackathon — STOP / REGISTRATION CLOSED
+
+Official:
+- https://luma.com/poolsidehackathon
+
+This would have been an unusually strong research fit:
+- Laguna XS.2 model-level research;
+- evaluation design / multi-agent / RL environments;
+- judges prioritise generalisability, reproducibility and technical contribution;
+- winner receives a DGX Spark.
+
+Current public page now says **Registration Closed**.
+
+Disposition:
+
+```text
+STRONG THEORETICAL FIT != CURRENTLY ENTERABLE
+STOP
+```
+
+Do not contact the host merely to manufacture a late route.
+
+## 15. Monad Metropolis — LARGE PRIZE / WRONG CURRENT DIRECTION
+
+Public London builder page:
+- six-week online-first Monad hackathon;
+- $250,000 total prize pool;
+- tracks include Trust / Identity / AI Infrastructure.
+
+This is financially material, but the competition is fundamentally an onchain / Monad build.
+
+No current project need requires Monad.
+
+Disposition:
+
+```text
+LARGE PRIZE != EARNED STACK FIT
+NO CRYPTO PIVOT FOR PRIZE
+HOLD / NO BUILD
+```
+
+## 16. Galuxium Nexus V2 — LOW PRIORITY / COMMERCIAL-SHAPE DISTORTION
+
+Public Devpost material:
+- deadline 31 Oct;
+- requires a public production-ready SaaS, operational MVP, business/monetisation architecture and demo video;
+- public prize labels show ~$14.9k total value, but detailed top-tier language describes infrastructure grants / credits rather than direct liquid cash.
+
+A truthful competition entry would require turning a current project into a monetised SaaS rather than solving an earned current gap.
+
+Disposition:
+
+```text
+SAAS MONETISATION REQUIREMENT != CURRENT PROJECT NEED
+ADVERTISED VALUE != LIQUID CASH
+NO PRIZE-SHAPED PRODUCT PIVOT
+STOP / LOW PRIORITY
+```
