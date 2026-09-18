@@ -1,0 +1,20 @@
+name: PSFH D071 input hash witness
+
+on:
+  push:
+    branches:
+      - framework/psfh-d071-training-rights-sync-20260918
+    paths:
+      - 'scripts/RESOURCE_COPIES.json'
+      - '.github/workflows/psfh-d071-input-hash.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print reviewed resource input identity
+        run: sha256sum scripts/RESOURCE_COPIES.json
