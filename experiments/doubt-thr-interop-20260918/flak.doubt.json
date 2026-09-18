@@ -1,0 +1,88 @@
+{
+  "title": "THR flak claim — can Doubt preserve repetition vs corroboration?",
+  "question": "Does the checked Human Record evidence establish that roughly 80% of German anti-aircraft crew members died during the Second World War?",
+  "updatedAt": "2026-09-18",
+  "verdict": "No. In the sources checked by The Human Record, the claim is not established; downstream repetition is not independent corroboration and the true aggregate mortality rate remains unknown.",
+  "nodes": [
+    {
+      "id": "position",
+      "type": "position",
+      "label": "Current position",
+      "text": "The checked record does not establish the 80% mortality claim."
+    },
+    {
+      "id": "restatement-claim",
+      "type": "claim",
+      "label": "Dependent repetition",
+      "text": "The linked article and automated summary are downstream restatements of the video claim rather than independent corroboration."
+    },
+    {
+      "id": "restatement-evidence",
+      "type": "evidence",
+      "label": "THR source-ancestry finding",
+      "text": "The Human Record explicitly records the article and summary as non-independent restatements.",
+      "sourceId": "thr-flak-restatement"
+    },
+    {
+      "id": "no-establishment",
+      "type": "evidence",
+      "label": "Checked-source ceiling",
+      "text": "The Human Record says the authoritative sources checked support nearby facts but do not establish the aggregate German flak-crew mortality claim.",
+      "sourceId": "thr-flak-ceiling"
+    },
+    {
+      "id": "true-rate",
+      "type": "unknown",
+      "label": "True aggregate mortality",
+      "text": "The true aggregate mortality rate of German anti-aircraft crews remains unknown in this record."
+    }
+  ],
+  "edges": [
+    {
+      "from": "restatement-evidence",
+      "to": "restatement-claim",
+      "relation": "supports",
+      "note": "The cited THR source region explicitly says these downstream nodes are not independent corroboration."
+    },
+    {
+      "from": "restatement-claim",
+      "to": "position",
+      "relation": "qualifies",
+      "note": "Repeated downstream claims cannot by themselves supply independent evidentiary support for the focal mortality claim."
+    },
+    {
+      "from": "no-establishment",
+      "to": "position",
+      "relation": "supports",
+      "note": "The bounded source review explicitly states that the checked authoritative material does not establish the focal aggregate mortality rate."
+    },
+    {
+      "from": "true-rate",
+      "to": "position",
+      "relation": "missing",
+      "note": "The unresolved aggregate rate prevents upgrading 'unsupported in checked sources' into a claim that a different mortality rate is true."
+    }
+  ],
+  "sources": [
+    {
+      "id": "thr-flak-restatement",
+      "title": "The viral '80% of German flak crews died' claim — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/viral-flak-claim.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-16",
+      "retrievedAt": "2026-09-18",
+      "locator": "current_findings[1]",
+      "excerpt": "The linked article and summary restate the video claim with changed scope and are not independent corroboration."
+    },
+    {
+      "id": "thr-flak-ceiling",
+      "title": "The viral '80% of German flak crews died' claim — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/viral-flak-claim.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-16",
+      "retrievedAt": "2026-09-18",
+      "locator": "current_findings[4]",
+      "excerpt": "Authoritative sources support nearby facts about flak danger and Allied casualties but do not, in the sources checked for this record, establish the claimed aggregate German crew mortality rate."
+    }
+  ]
+}
