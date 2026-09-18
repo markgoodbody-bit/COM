@@ -8,7 +8,8 @@ test('D072 exposes the current separate Human Record route with bounded standing
  assert.match(html,/href="https:\/\/thehumanrecord.net\/"/);
  assert.match(html,/four public records/);
  assert.match(html,/artwork provenance/);
- assert.match(html,/living-practice transmission-lineage/);\n assert.match(html,/historical-person source-survival/);
+ assert.match(html,/living-practice transmission-lineage/);
+ assert.match(html,/historical-person source-survival/);
  assert.match(html,/not accepted/);
  assert.match(html,/not evidence for TRACE or Mechanical Ethics/);
 });
