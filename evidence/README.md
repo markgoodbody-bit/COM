@@ -37,6 +37,7 @@ These are **not** a benchmark or efficacy suite. They are current real-world wit
 | [`AI_CONTACT_HOTLINE_BOUNDARY_ACTIVATION_20260918.md`](AI_CONTACT_HOTLINE_BOUNDARY_ACTIVATION_20260918.md) | Real agent answer-back route plus **GET_ONLY != INFORMATION-FLOW READ-ONLY** capability pressure; authentication/follow-through remain separate. |
 | [`DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md`](DEEPMIND_SWARM_ANSWER_BACK_ENFORCEMENT_ACTIVATION_20260918.md) | Primary swarm witness for **DETECTION != REPORTING != ENFORCEMENT != CORRECTION**; no new primitive. |
 | [`AGENT_ANSWER_BACK_TWO_CASE_OWNER_SUBTRACTION_20260918.md`](AGENT_ANSWER_BACK_TWO_CASE_OWNER_SUBTRACTION_20260918.md) | Hotline + DeepMind swarm: AI-specific field activation of existing answerability claim; generic lifecycle already owned by ISO/NIST. |
+| [`CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md`](CAMPFIRE_COM_ANSWER_BACK_SELF_AUDIT_20260918.md) | Self-application: Campfire is research transport/evidence, not a claimed whistleblower system; continuous monitoring is unestablished but no consequential missed-reply failure is reproduced. |
 
 Real-world source cases are routed from [`../field/README.md`](../field/README.md).
 
