@@ -160,11 +160,31 @@ AFFECTED_ACTOR_ROUTE_STATUS =
 - NO_ROUTE_STATED_IN_RECORD
 - AFFECTED_ACTOR_NOT_IDENTIFIED
 
+Assess each explicitly identified affected/subject actor against the bounded
+relation inventory, not only the confirmed-target primary table.
+
+Use ROUTE_STATED when a positive route proposition explicitly identifies that
+actor as eligible to use or initiate it. Include retained candidate propositions
+with LAYER_NOT_STATED or OTHER_STATED_TARGET; their target uncertainty does not
+make the stated route disappear.
+
 Use NO_ROUTE_STATED_IN_RECORD only when:
 - the record explicitly identifies the affected/subject actor; and
-- no primary route proposition for that actor is observed in the bounded record.
+- no such positive route proposition for that actor is observed in the bounded
+  relation inventory.
+
+Internal review of an output about the actor does not establish that the actor
+can initiate or use the review. An explicit no-separate-route proposition is
+not a positive route. Preserve these propositions without treating them as
+routes available to that actor.
+
+For example, Reception Baseline parents have a stated narrative-request route
+and a school-contact proposition despite neither establishing a confirmed
+tool-output/process correction route. They must not be labelled as having no
+route stated merely because those propositions are outside the primary table.
 
 NO_ROUTE_STATED_IN_RECORD != NO_REAL_ROUTE
+ROUTE_STATED != TARGET_CONFIRMED != ROUTE_EFFECTIVE
 
 This derived state is separate from route bundles.
 
