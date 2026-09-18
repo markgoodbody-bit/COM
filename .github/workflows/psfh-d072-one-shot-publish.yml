@@ -1,9 +1,9 @@
 name: PSFH D072 publication-base witness
 
 on:
-  push:
+  pull_request:
     branches:
-      - framework/psfh-d072-release-trigger
+      - codex/door-maintained-source-20260908
     paths:
       - '.github/workflows/psfh-d072-one-shot-publish.yml'
 
