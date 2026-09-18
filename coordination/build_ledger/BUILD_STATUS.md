@@ -129,7 +129,7 @@ Exactly four public records. Record 5 remains unearned.
 TRACE formal baseline = v0.3.0
 Mechanical Ethics formal baseline = v0.7.0
 THR public catalogue = 4 records
-PSFH = voluntary public door
+PSFH D072 = live / byte-verified / voluntary public door / no redesign earned
 ```
 
 ## External/consequential actions
