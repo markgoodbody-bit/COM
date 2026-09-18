@@ -1,0 +1,83 @@
+{
+  "format": "beforebuild-calibration-v0.3",
+  "cases": [
+    {
+      "id": "psfh-account-free-guestbook",
+      "proposal": "Add a bounded account-free PSFH guestbook / Leave a Mark intake without turning the Door into a forum, identity service, or untrusted-instruction surface.",
+      "world_evidence": [
+        {
+          "id": "preexisting-psfh-guestbook-need",
+          "kind": "current_user_need",
+          "description": "COM #118 predates BeforeBuild and preserves a real desired account-free presence record; representation was earned, while intake remained held on custody/moderation/removal/retention/abuse/operator-capacity grounds.",
+          "evidence_ref": "COM issue #118 + merged representation experiment 75f80f4ce5340817649eefbcf4f0b53d7dec713e"
+        }
+      ],
+      "hard_cases": [
+        {
+          "id": "anonymous-or-account-free",
+          "description": "A visitor can leave the minimal mark without a GitHub/social account requirement."
+        },
+        {
+          "id": "separate-trust-region",
+          "description": "Guest bytes remain outside PSFH authored orientation and are machine-labelled as untrusted visitor data."
+        },
+        {
+          "id": "true-removal",
+          "description": "Public guest text can actually be removed rather than only superseded in permanent public Git history."
+        },
+        {
+          "id": "export-portability",
+          "description": "The register can be exported/backed up in an inspectable vendor-neutral form."
+        },
+        {
+          "id": "bounded-abuse-stop",
+          "description": "Operator can rate-limit/block/disable intake without deleting the existing record."
+        },
+        {
+          "id": "plain-small-mark",
+          "description": "The system can enforce the deliberately tiny no-link/no-rich-content mark contract without silently widening into a forum."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "remark42",
+          "relevance": "near",
+          "evidence": "MIT-licensed active self-hosted comment engine. Public docs show optional anonymous access, moderator deletion/blocking, JSON export/backups, read-only controls and request limiting. It also includes Markdown/thread/auth features beyond PSFH's desired v0.",
+          "review_losses": [
+            {
+              "id": "comment-engine-overbreadth",
+              "description": "Remark42 is a full comment engine with Markdown/auth/thread semantics; PSFH wants a tiny presence register and separate trust-region representation.",
+              "consequential_failure_observed": false
+            },
+            {
+              "id": "backup-erasure-unknown",
+              "description": "Current public docs establish backups and deletion APIs but do not by themselves establish PSFH's required deletion propagation through restored/retained backups.",
+              "consequential_failure_observed": false
+            }
+          ],
+          "trial": {
+            "executed": false,
+            "hard_case_results": {},
+            "semantic_cheating_observed": false
+          }
+        },
+        {
+          "id": "formspree-receipt-layer",
+          "relevance": "adjacent",
+          "evidence": "Managed account-free web-form receiver with anti-spam and bounded submission-history retention. It does not itself provide the PSFH public-register/trust-region semantics.",
+          "review_losses": [],
+          "trial": {
+            "executed": false,
+            "hard_case_results": {},
+            "semantic_cheating_observed": false
+          }
+        }
+      ],
+      "smallest_probe": {
+        "description": "Run a local isolated Remark42 instance with anonymous access and no public PSFH wiring; test only the six hard cases, then decide adopt/shrink/stop.",
+        "bounded": true,
+        "kill_condition": "Stop if the owner cannot be narrowed to the tiny trust-separated register contract without more machinery/custody burden than a dedicated minimal receiver, or if removal/backup semantics cannot meet the stated boundary."
+      }
+    }
+  ]
+}
