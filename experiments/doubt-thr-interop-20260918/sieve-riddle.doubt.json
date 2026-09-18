@@ -1,0 +1,111 @@
+{
+  "title": "THR sieve/riddle revival — can Doubt preserve revival vs transmission?",
+  "question": "Does the checked public evidence establish that the revival of UK sieve and riddle making preserved and transmitted the older tacit skill completely?",
+  "updatedAt": "2026-09-18",
+  "verdict": "No. Public sources establish a reported revival and one reported direct-learning route, but they do not establish what tacit knowledge was transmitted, reconstructed, adapted, or newly learned.",
+  "nodes": [
+    {
+      "id": "position",
+      "type": "position",
+      "label": "Current position",
+      "text": "The bounded record supports revival and partial learning-lineage claims, not complete tacit-skill transmission."
+    },
+    {
+      "id": "revival",
+      "type": "evidence",
+      "label": "Reported revival",
+      "text": "Heritage Crafts reports extinction in 2017 followed by revival by two new makers by March 2019.",
+      "sourceId": "thr-sieve-findings"
+    },
+    {
+      "id": "learning",
+      "type": "evidence",
+      "label": "Reported direct-learning route",
+      "text": "A published Homo Faber interview records Steve Overthrow reporting that he learned partly from Mike Turnock.",
+      "sourceId": "thr-sieve-learning"
+    },
+    {
+      "id": "same-family",
+      "type": "evidence",
+      "label": "Source-family boundary",
+      "text": "The THR record explicitly treats two Heritage Crafts pages as one institutional evidence family rather than two independent witnesses.",
+      "sourceId": "thr-sieve-independence"
+    },
+    {
+      "id": "transmission-gap",
+      "type": "unknown",
+      "label": "Tacit transmission gap",
+      "text": "What was transmitted, reconstructed, adapted, or newly learned across the revival remains unresolved."
+    },
+    {
+      "id": "completeness",
+      "type": "unknown",
+      "label": "Completeness of survival",
+      "text": "Whether all materially important tacit knowledge survived the extinction interval remains unknown."
+    }
+  ],
+  "edges": [
+    {
+      "from": "revival",
+      "to": "position",
+      "relation": "qualifies",
+      "note": "Reported revival establishes renewed practice but does not itself establish continuity of all tacit skill."
+    },
+    {
+      "from": "learning",
+      "to": "position",
+      "relation": "qualifies",
+      "note": "A reported direct-learning route narrows the gap but does not establish the content or completeness of transmission."
+    },
+    {
+      "from": "same-family",
+      "to": "position",
+      "relation": "qualifies",
+      "note": "Treating related institutional pages as one evidence family prevents apparent repetition from becoming extra independent support."
+    },
+    {
+      "from": "transmission-gap",
+      "to": "position",
+      "relation": "missing",
+      "note": "The missing transmission detail blocks a claim that the older tacit skill was preserved completely."
+    },
+    {
+      "from": "completeness",
+      "to": "position",
+      "relation": "missing",
+      "note": "Unknown survival completeness prevents equating revival with full continuity."
+    }
+  ],
+  "sources": [
+    {
+      "id": "thr-sieve-findings",
+      "title": "Sieve and riddle making returns from extinction — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/sieve-riddle-revival.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-16",
+      "retrievedAt": "2026-09-18",
+      "locator": "Section: current_findings[1]",
+      "excerpt": "Heritage Crafts reports that the craft was listed extinct in 2017 and had been revived by two new makers by March 2019."
+    },
+    {
+      "id": "thr-sieve-learning",
+      "title": "Sieve and riddle making returns from extinction — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/sieve-riddle-revival.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-16",
+      "retrievedAt": "2026-09-18",
+      "locator": "Section: current_findings[4]",
+      "excerpt": "In a published Homo Faber interview, Steve Overthrow reports learning partly from Mike Turnock. This supports a reported direct-learning route, not complete reconstruction of the skill transfer."
+    },
+    {
+      "id": "thr-sieve-independence",
+      "title": "Sieve and riddle making returns from extinction — Human Record case JSON",
+      "url": "https://github.com/markgoodbody-bit/human-record/blob/ad9035055ce1e8f507919d40208bc3563ce1ab77/cases/sieve-riddle-revival.json",
+      "publisher": "The Human Record",
+      "date": "2026-09-16",
+      "retrievedAt": "2026-09-18",
+      "locator": "Section: source_independence.warning",
+      "excerpt": "Two Heritage Crafts pages are separate publications but one institutional evidence family. The current Heritage Crafts page also cites the Guardian feature; different publisher groups do not prove claim-level independence."
+    }
+  ]
+}
