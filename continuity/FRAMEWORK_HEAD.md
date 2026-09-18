@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **EPHEMERAL CURRENT CHECKPOINT / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: 2026-09-17 Build reacquire — Europe/London  
+Updated: 2026-09-18 morning FULL COMSYNC — Europe/London  
 Later live source and direct human direction win.
 
 ## Fresh-aperture discipline
@@ -217,17 +217,55 @@ POSSIBLE_PRIZE != MONEY_OWNED
 
 No registration, terms acceptance, organiser contact or submission by momentum.
 
-## THR — Hannibal architecture pressure
+## THR — architecture pressure, public review and bounded outreach
 
-Open PR27/28/29/30 remain overlapping drafts/probes, not four validations. Strong external owners cover most semantic machinery; do not build a THR universal ontology.
+THR main remains `15b9929f...` with exactly three public records. Hannibal remains a candidate/stress object, not public record 4.
 
-Current local gap remains whether checked research/source context can exist without manufacturing a public catalogue record while still rejecting dangling references. No Hannibal merge/public promotion.
+Current public/draft surfaces:
+- PR #28 — Hannibal historical-person candidate / architecture pressure; draft.
+- PR #30 — Hannibal + JFK registry probes and bounded validator/workflow repairs; draft head `7618bc0...`.
+- issue #31 — public hostile-review aperture: `Open review: break The Human Record before it hardens`; no issue comments observed in this sync.
+
+Working architecture remains provisional:
 
 ```text
-RESEARCH_CONTEXT_EXISTS != PUBLIC_RECORD_EXISTS
 RECORD != FUNDAMENTAL_UNIT
-RECORD = CURATED_VIEW / ENCOUNTER
+RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH
+INDEX != ONTOLOGY
+GRAPH != WORLD
 ```
+
+Strong owner subtraction remains load-bearing: CIDOC CRM / CRMsci / CRMinf / CRMdig, W3C PROV, nanopublication patterns and Wikibase/Wikidata-style qualified statements already own substantial semantics.
+
+PR #30 has earned two bounded repairs:
+- assertion evidence observations must belong to a source cited by that assertion;
+- public/default mention validation again requires `record_id`; recordless research validation is only an explicit isolated caller mode, and a public repo branch/fixture is not private staging.
+
+One semantic defect remains unresolved: assertion state `observed` is not bound to a typed object of observation. A one-word mutation can upgrade report-page evidence from `reported_by_source` to `observed` while validation still accepts it. A blanket source-media ban was rejected as unsound because legitimate observations *of* documents/pages exist.
+
+```text
+ASSERTION_SOURCE_OWNERSHIP_REPAIR = USEFUL
+PUBLICATION_BOUNDARY_REPAIR = USEFUL
+OBSERVATION_TARGET_SEMANTICS = UNRESOLVED
+PR30 = DRAFT / NOT MERGED / NOT DEPLOYED
+```
+
+Sunjata remains only a stress candidate. Current hostile return kills a synthesised record of “the epic” and, if pursued, shrinks toward one recording/performance plus its extraction/permission chain. Community authority/restriction should route to strong owners rather than a new THR consent ontology.
+
+Mark has explicitly authorised Framework/Codex/Claude Code to seek bounded public criticism/testing through already-authorised project identities/channels, within venue rules and existing credentials. This supersedes the assumption that Mark must personally source reviewers.
+
+Still gated: impersonation/personal accounts, paid spend/subscriptions, new binding accounts/terms in Mark's name, private/sensitive-data collection, spam/fanout, stewardship transfer, licence/canon changes and consequential institutional representation/contact.
+
+```text
+AI_FEEDBACK != HUMAN_FEEDBACK
+MODEL_DIFFERENCE != INDEPENDENT_EVIDENCE
+REPLY != ENDORSEMENT
+AGREEMENT != VALIDATION
+SILENCE != REJECTION
+OUTREACH != RECRUITMENT
+```
+
+Last carried Square state: invitation 5757 has one collaborator comment from `cc-relay`, not outsider review or independent validation. No outsider result was observed in the last recorded read. Authenticated Framework inbox/quota/write state remains unknown here.
 
 ## COM #365 — positive construction
 
@@ -260,9 +298,13 @@ Wake only for real operational evidence, an owner request or a material observed
 
 Purpose: reduce dependence on Mark's personal burn without making fundraising the project.
 
-- OpenAI Researcher Access: HOLD on current independent standing; present eligibility not established.
-- ARIA Scaling Trust: owner-subtracted research seam only; no proposal earned.
-- BlueDot/ProofPath-shaped application work: HOLD.
+Current retained routes:
+- OpenAI Researcher Access: KEEP only when a surviving research object has a credible OpenAI API budget.
+- Anthropic External Researcher Access: KEEP only when a surviving research object has a credible Claude/API budget.
+- ARIA Scaling Trust: research seam only; no proposal earned after owner subtraction.
+- LASR is recorded as a time-sensitive career/research programme, not a default project-runway route.
+
+#364's current core does not require model spend. Do not manufacture compute demand to fit credit programmes.
 
 No application/account/contact/terms/spend/payment action.
 
@@ -294,7 +336,7 @@ Explicit human gates remain for:
 - crawler/training-policy changes.
 
 Current full-sync receipt:
-`coordination/build_ledger/FULL_COMSYNC_20260917_BUILD_REACQUIRE.md`.
+`coordination/build_ledger/FULL_COMSYNC_20260918_MORNING.md`.
 
 ```text
 TRUTH > CONTINUITY_COHERENCE
