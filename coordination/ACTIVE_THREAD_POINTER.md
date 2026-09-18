@@ -204,7 +204,16 @@ Current working surfaces:
 
 Strong owners still absorb most ontology/provenance machinery. Current working hypothesis remains `RECORD = CURATED VIEW / ENCOUNTER THROUGH A SPARSE PROVENANCE GRAPH`, not a new universal ontology.
 
-PR #30's source-ownership and public/default record-link repairs are useful. One material semantic gap remains: `observed` is not validated against a typed object of observation, so report evidence can still be relabelled as directly observed by a one-word state change. This is preserved as unresolved, not hidden behind the green test count.
+PR #30's source-ownership and public/default record-link repairs are useful.
+
+The one-word report-page `reported_by_source -> observed` semantic false pass now has a stacked fail-closed repair in draft PR #32:
+- head `845b2a0...`;
+- workflow `35325473325 SUCCESS`;
+- 66 tests OK;
+- `observed` / `reconciled` cross-record states are refused until a typed observation/reconciliation target representation is earned;
+- no source-kind heuristic or new target ontology.
+
+PR #32 remains unmerged and under hostile review. The known defect/repair is also exposed on public review issue #31 for falsification.
 
 Mark has authorised bounded public criticism/testing through already-authorised project identities/channels. Issue #31 is the public review aperture. Last carried Square invitation 5757 has one collaborator comment from `cc-relay`; no outsider review result was observed. Feedback is input, not validation.
 
