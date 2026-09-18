@@ -1,0 +1,29 @@
+name: PSFH D072 hash witness
+
+on:
+  push:
+    branches:
+      - framework/psfh-d072-thr-four-record-currentness-20260918
+    paths:
+      - 'public/llms.txt'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - '.github/workflows/psfh-d072-hash-witness.yml'
+  pull_request:
+    paths:
+      - 'public/llms.txt'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - '.github/workflows/psfh-d072-hash-witness.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print D072 source identities
+        run: |
+          sha256sum public/llms.txt public/changes.md public/changes.html
