@@ -3,14 +3,13 @@ name: PSFH D070 one-shot publish
 on:
   push:
     branches:
-      - codex/door-maintained-source-20260908
+      - framework/psfh-d070-release-trigger
 
 permissions:
   contents: write
 
 jobs:
   publish-d070:
-    if: github.event.head_commit.message == 'PSFH: publish D070 from tested source'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -74,7 +73,13 @@ jobs:
           fi
           git -C /tmp/psfh-publish commit -m "Publish PSFH D070 released-core currentness sync"
           git -C /tmp/psfh-publish push origin HEAD:gh-pages
+      - name: Verify D070 reached the live Door
+        env:
+          PSFH_VERIFY_ATTEMPTS: 18
+          PSFH_VERIFY_DELAY_MS: 5000
+        run: node scripts/verify-live-d070.mjs out/resources/inventory.json
 
-# One-shot D070 publisher. Remove after a witnessed successful publication.
+# One-shot D070 publisher. The dedicated trigger branch is disposable.
 # SOURCE_CI_GREEN != PUBLICATION
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
 # EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
