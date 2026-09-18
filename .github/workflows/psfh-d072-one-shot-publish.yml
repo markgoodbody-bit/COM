@@ -1,0 +1,23 @@
+name: PSFH D072 publication-base witness
+
+on:
+  push:
+    branches:
+      - framework/psfh-d072-release-trigger
+    paths:
+      - '.github/workflows/psfh-d072-one-shot-publish.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  witness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Print exact public predecessor
+        run: |
+          git fetch origin gh-pages
+          echo "D072_EXPECTED_GH_PAGES=$(git rev-parse origin/gh-pages)"
