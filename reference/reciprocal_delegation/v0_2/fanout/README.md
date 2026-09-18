@@ -54,6 +54,7 @@ Current work-in-progress owners now include:
 - AI Agent Authorization Integration Framework / Agent Operation Authorization — OAuth-based agent authorization composition and operation-bound authorization;
 - Revocation Closure for Agentic Authorization Systems — protocol-neutral semantics for when revocation propagation may honestly be called complete, including authority graphs, consequential sinks, cut sets, pending effects, bounded closure states and closure receipts.
 - Execution Finality / Finality-Bound Revocation individual Internet-Drafts (10–16 September 2026) — candidate acts held non-effective until an effectuation/finality sink verifies act-specific authority/current protected state; finality-bound revocation makes authoritative revocation, suspension, narrowing or superseding state load-bearing again at the protected commit boundary; related Execution Handle drafts bind a scoped non-bearer handle to an exact act/sink and use atomic verify/consume semantics.
+- Bounded Capability Receipts and Durable Spend Control for Agent Actions — a current Experimental Internet-Draft whose reserve-execute-commit model makes delegation transfer rather than copy authority, funds direct child allocations from parent authority, and requires aggregate child allocations to remain within the parent balance in one authoritative atomic state domain. This substantially owner-occupies the runtime/shared-budget analogue of this companion's family action ceiling.
 
 These are Internet-Drafts / work in progress. Several execution-finality documents are individual submissions rather than IETF Working Group products, and none of this constitutes adoption, deployment validation or endorsement. They nevertheless make the external owner landscape materially denser around runtime authorization, act-specific effectuation and revocation semantics that this companion deliberately leaves outside its scope.
 
@@ -65,6 +66,7 @@ REVOCATION_REQUEST != REVOCATION_CLOSURE
 DECLARED_NO_TOUCH != FINALITY_PREDICATE_ENFORCED
 COMPUTED_ACT != AUTHORITY_FOR_EXTERNAL_EFFECT
 RUNTIME_REVOCATION / EFFECTUATION CONTROL -> OAUTH / IAM / POLICY / FINALITY-SINK OWNERS
+RUNTIME SHARED-BUDGET / SIBLING ALLOCATION CONSERVATION -> BOUNDED-CAPABILITY / AUTHORIZATION OWNERS
 FANOUT_COMPANION -> PROJECT-LEVEL COORDINATION / CONSERVATION ONLY
 ```
 
@@ -373,13 +375,21 @@ DELEGATED_EXECUTION != RESPONSIBILITY_DISAPPEARS
 CHILD_FAILURE != AUTOMATIC_PARENT_CULPABILITY
 ```
 
-## Why this is current
+## Why this remains locally useful
 
-Production agent systems increasingly use orchestrator/worker patterns and parallel subagents. The project also carries current field evidence that multi-agent coordination, side channels, incomplete monitoring and large populations can amplify capability and evaluator burden.
+Production agent systems increasingly use orchestrator/worker patterns and parallel subagents. The project also carries field evidence that multi-agent coordination, side channels, incomplete monitoring and large populations can amplify capability and evaluator burden.
 
-That makes a single-lane delegation envelope insufficient for some real agent architectures.
+The companion remains useful **inside this project** because the base Reciprocal Delegation record is single-lane and COM needed an inspectable one-hop family hand-back / conservation representation.
 
-The repair remains narrow: it does not add agent consciousness, standing, self-preservation, trust scores or autonomous authority.
+It should no longer be described as filling an unowned external protocol gap. Current authorization work now covers narrowing delegation, shared sibling budget conservation, revocation closure and effectuation/finality controls at substantially stronger protocol/runtime layers.
+
+```text
+LOCAL_COORDINATION_USE != EXTERNAL_NOVELTY
+PROJECT_REFERENCE != PROTOCOL_CONTRIBUTION
+OWNER_FOUND DOES_NOT_REQUIRE_DELETING_USEFUL_LOCAL_HISTORY
+```
+
+The local repair remains narrow: it does not add agent consciousness, standing, self-preservation, trust scores or autonomous authority.
 
 ## Bundled examples
 
