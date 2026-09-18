@@ -1,0 +1,80 @@
+name: PSFH D070 one-shot publish
+
+on:
+  push:
+    branches:
+      - codex/door-maintained-source-20260908
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d070:
+    if: github.event.head_commit.message == 'PSFH: publish D070 from tested source'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install pypdf
+      - name: Rebuild and recheck public output
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 23e3047cb9ba9d9b42ac12b18e5be59a41a17449
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over current publication
+        run: |
+          rm -rf /tmp/psfh-publish
+          git worktree add -B gh-pages /tmp/psfh-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='README.md' \
+            out/ /tmp/psfh-publish/
+          test "$(git -C /tmp/psfh-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-publish hash-object README.md)" = "$readme_blob"
+          git -C /tmp/psfh-publish status --short
+      - name: Commit and publish D070
+        run: |
+          git -C /tmp/psfh-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-publish add -A
+          if git -C /tmp/psfh-publish diff --cached --quiet; then
+            echo "No publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-publish commit -m "Publish PSFH D070 released-core currentness sync"
+          git -C /tmp/psfh-publish push origin HEAD:gh-pages
+
+# One-shot D070 publisher. Remove after a witnessed successful publication.
+# SOURCE_CI_GREEN != PUBLICATION
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
