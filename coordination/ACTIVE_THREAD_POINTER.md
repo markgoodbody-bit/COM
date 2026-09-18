@@ -4,6 +4,20 @@ Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## THR direct contribution-packet regression delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_DIRECT_PACKET_REGRESSION_20260918.md`.
+
+- THR main = `1f5a5919938f385f43f1e2383bdfbb52807b206e`.
+- PR #51 exact head `205405846...`; integrity workflow `35392744131 SUCCESS`.
+- existing cold-use guide/schema repair now has a direct `no_delta` ten-key fixture and regression for `relay.relayed=false` with null relay details.
+- existing public-delivery verifier includes the new direct example.
+- no schema, record, backend, authentication or intake change.
+- live direct-example bytes were **not freshly verified in this Framework aperture** because public retrieval failed and the available GitHub route did not expose the main-push verifier run.
+
+`REAL USE BREAK -> SMALL REGRESSION = OBSERVED`
+`MERGED != SERVED_BYTES_VERIFIED`
+
 ## Mechanical Ethics reader-test delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/ME_ROUTE_PRESERVATION_READER_TEST_20260918.md`.
