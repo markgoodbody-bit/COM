@@ -203,7 +203,7 @@ Mitigation:
 5. concrete examples make the consequence obvious to a generalist judge;
 6. every headline number links to evidence;
 7. report stays short and accessible;
-8. no stronger owner has already published the same population measurement.
+8. no stronger owner has already published the same **UK ATRS route→target→actor→initiation population measurement**.
 
 ### Likely solid but not winning if:
 
