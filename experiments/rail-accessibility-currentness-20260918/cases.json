@@ -1,0 +1,145 @@
+{
+  "format": "rail-accessibility-currentness/0.1",
+  "frozen_at": "2026-09-18",
+  "scope": "Public existence/currentness consistency only; not route usability certification.",
+  "stations": [
+    {
+      "crs": "HIR",
+      "name": "Horton-in-Ribblesdale",
+      "expected": "CONTRADICTION",
+      "summary": {
+        "url": "https://www.nationalrail.co.uk/stations/horton-in-ribblesdale/",
+        "observed": "There are no lifts"
+      },
+      "corroborating_surfaces": [
+        {
+          "kind": "national_rail_backend",
+          "url": "https://railmap.nationalrail.co.uk/backend/public/station/HIR",
+          "observed": "Lifts have been installed with access to an overbridge, there is now step-free access to both platforms.",
+          "proves_lift_existence": true
+        }
+      ],
+      "operational": {
+        "observed": "No lift information available",
+        "expected": "UNKNOWN"
+      }
+    },
+    {
+      "crs": "IRL",
+      "name": "Irlam",
+      "expected": "CONTRADICTION",
+      "summary": {
+        "url": "https://www.nationalrail.co.uk/stations/irlam/",
+        "observed": "There are no lifts"
+      },
+      "corroborating_surfaces": [
+        {
+          "kind": "national_rail_backend",
+          "url": "https://railmap.nationalrail.co.uk/backend/public/station/IRL",
+          "observed": "This station now has step free access to all platforms as a result of lifts that were installed Spring 2025.",
+          "proves_lift_existence": true
+        },
+        {
+          "kind": "national_rail_public_alert",
+          "url": "https://www.nationalrail.co.uk/stations/irlam/",
+          "observed": "The lifts are out of order between platform 2 and the underpass at Irlam station.",
+          "proves_lift_existence": true
+        }
+      ],
+      "operational": {
+        "observed": "The lifts are out of order between platform 2 and the underpass",
+        "expected": "OUT_OF_SERVICE"
+      }
+    },
+    {
+      "crs": "DSY",
+      "name": "Daisy Hill",
+      "expected": "CONTRADICTION",
+      "summary": {
+        "url": "https://www.nationalrail.co.uk/stations/daisy-hill/",
+        "observed": "There are no lifts"
+      },
+      "corroborating_surfaces": [
+        {
+          "kind": "operator_station_page",
+          "url": "https://www.northernrailway.co.uk/stations/daisy-hill",
+          "observed": "Island platform with lift access available. Please be aware that this map is out of date as of 25/4/25 as lifts have now been installed.",
+          "proves_lift_existence": true
+        },
+        {
+          "kind": "operator_news",
+          "url": "https://media.northernrailway.co.uk/news/customers-provided-with-step-free-access-at-daisy-hill-station-after-gbp-4-million-upgrade",
+          "observed": "official opening of a new lift at Daisy Hill station, providing passengers step-free access for the first time.",
+          "proves_lift_existence": true
+        }
+      ],
+      "operational": {
+        "observed": null,
+        "expected": "NOT_CHECKED"
+      }
+    },
+    {
+      "crs": "BIW",
+      "name": "Biggleswade",
+      "expected": "CONSISTENT_EXISTS",
+      "summary": {
+        "url": "https://www.nationalrail.co.uk/stations/biggleswade/",
+        "observed": "There are lifts"
+      },
+      "corroborating_surfaces": [
+        {
+          "kind": "national_rail_backend",
+          "url": "https://railmap.nationalrail.co.uk/backend/public/station/BIW",
+          "observed": "Lift 1 - Platform 1 & 2 - Status: In service - Lift is currently available",
+          "proves_lift_existence": true
+        }
+      ],
+      "operational": {
+        "observed": "Status: In service",
+        "expected": "IN_SERVICE"
+      }
+    },
+    {
+      "crs": "AGV",
+      "name": "Abergavenny",
+      "expected": "CONSISTENT_EXISTS",
+      "summary": {
+        "url": "https://www.nationalrail.co.uk/stations/abergavenny/",
+        "observed": "There are lifts"
+      },
+      "corroborating_surfaces": [
+        {
+          "kind": "national_rail_backend",
+          "url": "https://railmap.nationalrail.co.uk/backend/public/station/AGV",
+          "observed": "Platform 2 for services towards Newport is fully accessible via a footbridge with lifts at the end of platform 1.",
+          "proves_lift_existence": true
+        }
+      ],
+      "operational": {
+        "observed": "Status: In service",
+        "expected": "IN_SERVICE"
+      }
+    },
+    {
+      "crs": "LLE",
+      "name": "Llanelli",
+      "expected": "CONSISTENT_EXISTS",
+      "summary": {
+        "url": "https://www.nationalrail.co.uk/stations/llanelli/",
+        "observed": "There are lifts"
+      },
+      "corroborating_surfaces": [
+        {
+          "kind": "national_rail_public_alert",
+          "url": "https://www.nationalrail.co.uk/stations/llanelli/",
+          "observed": "The lifts are out of order at Llanelli station.",
+          "proves_lift_existence": true
+        }
+      ],
+      "operational": {
+        "observed": "The lifts are out of order",
+        "expected": "OUT_OF_SERVICE"
+      }
+    }
+  ]
+}
