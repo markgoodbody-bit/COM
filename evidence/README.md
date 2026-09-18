@@ -18,6 +18,26 @@ Every file records its own provenance and carries `Status: preserved ... not val
 | [`QW_FRESH_RESYNC_001.md`](QW_FRESH_RESYNC_001.md) | Fresh-aperture recovery against an immutable anchor, after the stale read above. |
 | [`CC_PROVENANCE_CONTINUITY_001.md`](CC_PROVENANCE_CONTINUITY_001.md) | Continuing-session provenance receipt. Explicitly not an independent read of the underlying comment body. |
 
+## Current real-use activation routes — 18 September 2026
+
+These are **not** a benchmark or efficacy suite. They are current real-world witnesses used to cut claims, test portability, or preserve owner subtraction.
+
+| Witness | Current bounded result |
+|---|---|
+| [`AWAABS_LAW_LQ_202524733_THIN_ACTIVATION_RESULT_20260918.md`](AWAABS_LAW_LQ_202524733_THIN_ACTIVATION_RESULT_20260918.md) | Housing Ombudsman already preserved the material relations: **NO DOMAIN DELTA / COMPRESSION ONLY**. |
+| [`CROSS_DOMAIN_COMPRESSION_AWAAB_HACKNEY_20260918.md`](CROSS_DOMAIN_COMPRESSION_AWAAB_HACKNEY_20260918.md) | Same small relational grammar represented two unlike administrative cases without a new primitive; practical advantage unearned. |
+| [`SIEVE_RIDDLE_POSITIVE_CONSTRUCTION_ACTIVATION_20260918.md`](SIEVE_RIDDLE_POSITIVE_CONSTRUCTION_ACTIVATION_20260918.md) | Real positive transition / reported learning coupling / current training witness; revival remains fragile. |
+| [`ENGLAND_DROUGHT_2026_HARD_COLLISION_ACTIVATION_20260918.md`](ENGLAND_DROUGHT_2026_HARD_COLLISION_ACTIVATION_20260918.md) | Released scope/value boundaries survive a real hard collision by refusing to generate an allocation rule. |
+| [`NHS_AI_REGULATION_OWNER_CURRENTNESS_20260918.md`](NHS_AI_REGULATION_OWNER_CURRENTNESS_20260918.md) | Strong healthcare owner present; overlap with ME/TRACE is owner subtraction, not novelty/validation. |
+
+Real-world source cases are routed from [`../field/README.md`](../field/README.md).
+
+```text
+REAL CASE != VALIDATION
+PORTABILITY WITNESS != PRACTICAL ADVANTAGE
+OWNER CONVERGENCE != PROJECT NOVELTY
+```
+
 ## Routes
 
 [`routes/`](../routes/) holds immutable route objects — task instructions addressed to a specific aperture, preserved so an instruction is never carried solely by a long issue transcript.
