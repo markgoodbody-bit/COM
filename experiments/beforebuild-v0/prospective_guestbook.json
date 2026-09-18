@@ -74,9 +74,9 @@
         }
       ],
       "smallest_probe": {
-        "description": "Run a local isolated Remark42 instance with anonymous access and no public PSFH wiring; test only the six hard cases, then decide adopt/shrink/stop.",
+        "description": "Build an isolated PSFH-specific adapter/prototype over the strongest tested owner: enforce the tiny mark contract, emit a separate machine-labelled untrusted register view, and test deletion/export/stop semantics. Do not wire it to public PSFH.",
         "bounded": true,
-        "kill_condition": "Stop if the owner cannot be narrowed to the tiny trust-separated register contract without more machinery/custody burden than a dedicated minimal receiver, or if removal/backup semantics cannot meet the stated boundary."
+        "kill_condition": "Stop if meeting the PSFH trust/removal/plain-text contract requires forking or carrying substantially more comment-engine/auth/custody machinery than a dedicated minimal receiver, or if backup/deletion obligations remain unbounded."
       }
     }
   ]
