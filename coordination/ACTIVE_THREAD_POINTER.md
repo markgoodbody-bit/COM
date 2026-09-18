@@ -4,6 +4,29 @@ Status: **BOUNDED CURRENT COORDINATION POINTER / NOT CANON / NOT AUTHORITY**
 Updated: 2026-09-18 15:08 BST FULL COMSYNC live-delta pass — Europe/London  
 Later live source and direct human direction win.
 
+## EvidenceBridge / Doubt owner-convergence delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/DOUBT_THR_INTEROP_20260918.md`.
+
+- EvidenceBridge standalone proof PR #375: green at `99cf0b6...` / CI `35368129110 SUCCESS`, then **CLOSED UNMERGED / OWNER FOUND**.
+- Strong owner Doubt v0.8.0 was tested directly rather than merely cited.
+- PR #376 encoded flak, Hannibal, R. Vale, plus an unseen sieve/riddle case in the **unmodified** Doubt contract.
+- exact final branch head `cc2d859...`; pinned upstream validator commit `647482d...`; workflow `35368990471 SUCCESS`.
+- four-map receipts: flak `fbeea813525d`, Hannibal `69c24b6bc869`, R. Vale `325b63004d42`, sieve/riddle `db2cde962a38`.
+- PR #376 merged as `08e2daddaee5dbca4aba491fe4a56197c59dc90a`.
+- Result = **OWNER SUFFICIENT WITH LOSS**: reader-facing meaning survived; richer THR machine semantics for ancestry / reported-state / supersession were compressed, but no consequential use failure from that compression is observed.
+- No Doubt fork, no THR schema change, no adoption-by-momentum.
+- EvidenceBridge Open Agent / Nebius product routes are **not earned**.
+- Shipaton 2026 is **STOP** after Mark confirmed no existing store developer infrastructure; PR #374 is closed unmerged, reusable spike preserved.
+
+```text
+USE STRONGER OWNER > REBUILD OWNER
+INTEROPERABILITY != FULL SEMANTIC EQUIVALENCE
+VALID MAP != SOURCE TRUTH
+OWNER FOUND != FAILURE
+WORLD / REAL USE -> NEXT EARNED GAP
+```
+
 ## ATRS #364 competition-readiness delta — 18 September 2026
 
 Detailed receipt: `coordination/build_ledger/ATRS_COMPETITION_READINESS_20260918.md`.
