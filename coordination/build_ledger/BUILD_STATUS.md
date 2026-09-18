@@ -22,6 +22,25 @@ OWNER_FOUND -> SHRINK OR STOP
 RELAY_REPO != RELAY_RUNTIME
 ```
 
+## THR issue #40 repair delta — 18 September 2026
+
+Detailed receipt: `coordination/build_ledger/THR_ISSUE40_MENTION_REFERENT_20260918.md`.
+
+- THR production main advanced to `38fff7a864d3acb3caf417ee830ecb284fa67139` through PR #41.
+- Exact PR-head witness: `90b07a1015fd0f36c66f0ed7e4193505bc7395be`; workflow `35355805237 SUCCESS`; 73 tests / OK. No separate merge-head workflow is visible through the current route.
+- Public catalogue re-read at the merge head remains exactly **3 records**.
+- Repair closes only the first outside R. Vale break: assertions may now address an existing unresolved mention through typed `mention_id`; opaque-ID shape, uniqueness and existence fail closed.
+- Preserve `MENTION_REFERENCE != ENTITY_RESOLUTION`.
+- Issue #40 candidate-decision provenance/history seam remains open. Do **not** add `candidate.evidence_state` by momentum; owner subtraction points toward testing a resolution decision that references an evidence-bearing assertion/history instead.
+- Hannibal PR #35 remains held/non-public.
+
+```text
+OUTSIDE_CASE -> CONCRETE_REPAIR = OBSERVED
+OUTSIDE_CASE != OUTSIDE_VALIDATION
+PR41_MERGED != ISSUE40_CLOSED
+ASSERTION_REFERENCE != IDENTITY_RESOLUTION
+```
+
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
 ```text
@@ -33,7 +52,7 @@ PURPOSE > INSTRUMENT
 
 | Work | State | Current disposition |
 | --- | --- | --- |
-| COM #347 / THR | **ACTIVE PRODUCT / OUTSIDE DEFECT FOUND / REPAIR NOT YET ACCEPTED** | Main `58f1b7ad...`; catalogue still 3. PR35 `836f93e...` remains draft/non-public. Outside synthetic identity case is reproduced in human-record #40: assertions cannot type a mention referent, while candidate-link provenance/history states are not discriminated. Address #40 before any record-4 publication. |
+| COM #347 / THR | **ACTIVE PRODUCT / OUTSIDE REPAIR-1 INTEGRATED / SECOND SEAM OPEN** | Main `38fff7a...`; catalogue still 3. PR41 merged the typed assertion→mention repair with 73-test exact-head CI; candidate-decision provenance/history remains unresolved. PR35 Hannibal stays draft/non-public. |
 | COM #348 / resources | **ACTIVE QUARRY / NO APPLICATION LIVE** | OpenAI + Anthropic researcher-credit routes retained only for real API need; ARIA seam only; no application live. |
 | COM #349 / tournament | **ACTIVE / #364 CURRENT LEAD / SELECTION OPEN** | Selected entry remains NONE. |
 | #364 ATRS | **CURRENT LEAD / SEPTEMBER METHOD FROZEN / WAIT FRESH DATA** | Exact head `827b823...`; hosted CI `35332539753` green. Final actor-route absence repair integrated via #369; no more September recoding by momentum. |
@@ -44,7 +63,7 @@ PURPOSE > INSTRUMENT
 | #356 Stage A | **CLOSED / OPTIONAL REPLICATION / $0 SPENT** | No provider calls. |
 | TRACE | **v0.3.0 RELEASED FORMAL BASELINE** | Main `8310d253...`; not validated/no efficacy result. |
 | Mechanical Ethics | **v0.7.0 RELEASED FORMAL BASELINE** | Main `25a9d793...`; not validated. |
-| THR main | **STABLE PUBLIC BASELINE + SEMANTIC REPAIR** | `58f1b7ad...`; three public records unchanged; PR34 semantic repairs + PR37 evidence-container guard integrated. |
+| THR main | **STABLE PUBLIC BASELINE + ISSUE-40 SEMANTIC REPAIR** | `38fff7a...`; three public records unchanged; PR41 adds typed assertion→mention referents without resolving identity. Candidate-decision provenance/history remains open. |
 | PSFH D070 | **LIVE / BYTE-VERIFIED / READER BENEFIT UNESTABLISHED** | Maintained `7ef97775...`; public `c0a830bf...`; CI `35340308124` green, publisher `35340379133` green, Pages `35340423410` green, live verifier passed 33 targets. First publication exposed and repaired recursive nested-README omission. |
 | Formation #339 | **MERGED / WORKING NON-PRODUCTION** | Not canon. |
 | Campfire Relay | **SOURCE STABLE** | Main `b8579e56...`; authenticated Relay/Square state unknown here. |
