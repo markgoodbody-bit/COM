@@ -1,12 +1,10 @@
-## THR — Camp Fire collection history merged / Hannibal Greek source next
+## THR — Hannibal Greek source-literal candidate / hostile review pending
 
-`coordination/build_ledger/THR_CAMP_FIRE_COLLECTION_HISTORY_MERGED_20260919.md`
+`coordination/build_ledger/THR_HANNIBAL_GREEK_LITERAL_CANDIDATE_20260919.md`
 
-Public THR main is now `6e5a2eff69e17e85a743d54501eac4ab0a1d527b` after merged PR #56. Camp Fire no longer treats all pre-1927 custody as unknown: it now preserves a Met-reported Clarke -> 1899 sale/agent -> Pomeroy -> 1927 gift collection history plus selected 1893/1911 historical re-observations. Continuous custody/legal title, exact 1899 mechanics, pre-Clarke ownership and independent proof of creation remain unestablished. Creator-attribution assertion evidence is unchanged. Four public records remain four.
+Public THR main remains `6e5a2eff69e17e85a743d54501eac4ab0a1d527b` / four records. Draft PR #57 at exact head `b40e071e5b443311f32593f442d92d776da92410`, hosted run 181 / `35471618313` SUCCESS, narrows only the Polybius 3.33.17-18 source-literal boundary: Perseus Greek-edition passage token lists attest `Ἀννίβας` in both sections. Full Greek passage/manuscript/other-passage verification remains unestablished. Hostile review requested on comment `5745550856`. No merge/canon yet.
 
-Fresh next pressure: Hannibal. Polybius Greek edition `urn:cts:greekLit:tlg0543.tlg001.perseus-grc2` is located; exact THR-cited Book 3 Greek passage inspection is the next test. `GREEK EDITION LOCATED != EXACT PASSAGE INSPECTED`.
-
-`NEXT = HANNIBAL EXACT GREEK BOOK-3 PASSAGE CHECK; PATCH ONLY IF SOURCE-LITERAL BOUNDARY IS HONESTLY NARROWED`
+`NEXT = FOLLOW PR57 HOSTILE REVIEW; PASS_WITH_CEILINGS -> MERGE DECISION, REPAIR -> SMALLEST FIX; CONTINUE REAL FIELD PRESSURE ELSEWHERE IN PARALLEL`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
