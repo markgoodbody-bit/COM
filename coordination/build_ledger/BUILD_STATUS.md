@@ -1,3 +1,11 @@
+## NVIDIA Claw — EvidenceWatch CORE LIVE WITNESS COMPLETE / submission work next
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_CLEAN_RESTART_PASS_20260919.md`
+
+Exact head `9877d84b115df0f183c61d420642cef45048ca8c`: first clean run 3 -> 4 + one alert; second process returned duplicate observations for both owner pages, canonical 4, alerts 1, newAlerts none. Stop engine churn unless a new defect appears.
+
+`NEXT = TERMS -> JUDGE PACKAGE -> DEMO/SUBMISSION`
+
 ## NVIDIA Claw — EvidenceWatch CLEAN LIVE PASS / final restart witness next
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_CLEAN_POST_REPAIR_PASS_20260919.md`
