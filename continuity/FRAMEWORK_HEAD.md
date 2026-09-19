@@ -2,12 +2,12 @@
 
 `coordination/build_ledger/NVIDIA_CLAW_PUBLIC_STACK_PREFLIGHT_20260919.md`
 
-NVIDIA already owns generic memory/retry/snapshot/reconciliation machinery. A narrower `Continuity Steward` product seam survives public owner subtraction: live-source reacquisition + stale-state detection + role/authority continuity + compact successor handoff without runtime-identity fiction.
+NVIDIA already owns generic memory/retry/snapshot/reconciliation machinery. A broad `Continuity Steward` build is now **HOLD** after deeper owner subtraction: NVIDIA already owns much of live-source/project-memory/rebuild continuity. Only a narrower role/authority/currentness-handoff question remains.
 
 Windows/WSL2 path is publicly supported. **Do not code the submission before the registered challenge brief.**
 
 `REGISTER = HUMAN/UI GATE`  
-`NEXT = GET FULL BRIEF -> FIT/PIVOT/BUILD`
+`NEXT = GET FULL BRIEF -> OWNER-SUBTRACT AGAIN -> FIT/PIVOT/BUILD`
 
 ## NVIDIA Claw — clean registration gate
 
