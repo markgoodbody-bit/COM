@@ -1,3 +1,12 @@
+## NVIDIA Claw — clean registration gate
+
+`coordination/build_ledger/NVIDIA_CLAW_REGISTRATION_GATE_20260919.md`
+
+Live page confirms UK-wide remote eligibility, no degree/student requirement, no team requirement, and registration deadline **3 Oct 07:59 BST**. Full challenge brief appears only after registration.
+
+`REGISTER = HUMAN GATE`  
+`BUILD = WAIT FOR FULL BRIEF`
+
 ## Hack-Nation 7 — host clarification sent / wait
 
 `coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260919.md`
