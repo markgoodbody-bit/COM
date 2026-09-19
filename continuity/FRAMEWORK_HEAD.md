@@ -2,7 +2,7 @@
 
 `coordination/build_ledger/HACK_NATION_APPLICATION_READY_20260919.md`
 
-Fresh official route is live; public-safe application answers are now reduced to paste-ready form. Default reversible posture: **online / solo-or-team / no preselected product / choose after challenge reveal**.
+Fresh official route is live; public-safe application answers are paste-ready. Sep 19 is the current batch deadline; the final listed batch closes Sep 26. Default reversible posture: **online / solo-or-team / no preselected product / choose after challenge reveal**.
 
 `APPLICATION SENT = NO`  
 Identity/account/terms/form submission remain Mark's human gate.
