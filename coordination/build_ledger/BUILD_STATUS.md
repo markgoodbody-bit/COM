@@ -1,16 +1,16 @@
-## NVIDIA Claw — EvidenceWatch ACTIVE / exact-head green
+## NVIDIA Claw — EvidenceWatch SOURCE GREEN / live probe next
 
-`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_GREEN_20260919.md`
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_PREFLIGHT_GREEN_20260919.md`
 
 Relay draft PR #248:
-- head `2e62c2ed640f7bd8fe036f9a05ba0b26b84e2c0a`;
-- `campfire-ci 1554 / 35448098624 SUCCESS`;
+- head `f4c5a51850b6e183c7718715f2e6a0cc6a80f4d6`;
+- `campfire-ci 1563 / 35448429677 SUCCESS`;
 - 15 focused tests;
-- browser demo + long-running engine + bounded discovery + source-authority guards;
+- source core frozen pending real NVIDIA inference evidence;
 - Relay main/Production unchanged.
 
 `ACTIVE BUILD = EVIDENCEWATCH`  
-`NEXT = OWNER SUBTRACTION -> LIVE NVIDIA WITNESS -> DEPLOY/PACKAGE IF EARNED`
+`NEXT = LOCAL NVIDIA BUILD PROBE -> LIVE SOURCE RUN -> DEPLOY/PACKAGE IF EARNED`
 
 ## Hack-Nation — Luma support replied / organiser still outstanding
 
@@ -72,7 +72,7 @@ History belongs in dated receipts + Git.
 
 **NVIDIA EvidenceWatch — Relay draft PR #248.**
 
-Exact state is routed above and in `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_GREEN_20260919.md`.
+Exact state is routed above and in `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_PREFLIGHT_GREEN_20260919.md`.
 
 ## Green / frozen candidate objects
 
