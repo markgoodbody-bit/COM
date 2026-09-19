@@ -86,9 +86,16 @@ A bounded core repair is now patched on Relay PR #173:
 Static review also caught and repaired the synthetic plan-replay preflight so it carries the new adapter scope.
 
 Current exact Relay head:
-`6afba0abdee53c092a45281ff5004c81777acac4`
+`e40d57d6292c6351363ad14fe7cc4e993bcdb0b6`
 
-Hosted CI for this exact second-stage head is not yet classified here. Do not promote the generic repair to green until the exact-head workflow result is reacquired.
+Static review after the first generic patch found a second pre-observation weakness: execution checked only that an authorization ID existed in the ledger, not that the supplied authorization object exactly matched the persisted human-approved record. That could undermine the new early target-drift brake.
+
+Additional repair:
+- supplied authorization must hash-match the exact persisted authorization record before use;
+- static authorization integrity/scope validation runs before target-scope comparison;
+- altered authorization regression requires failure before any fresh observation.
+
+The earlier run 1530 belongs to a superseded head once this branch moved. Hosted CI for exact head `e40d57d...` is not yet classified here. Do not promote the generic repair to green until exact-head CI is reacquired.
 
 ```text
 SOURCE-SPECIFIC GREEN != GENERIC-CORE GREEN
