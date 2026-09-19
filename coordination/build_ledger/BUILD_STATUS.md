@@ -1,10 +1,10 @@
-## THR — Nepos edition preservation route merged
+## THR — flak archival citation route / PR #64 hostile review
 
-`coordination/build_ledger/THR_NEPOS_PRESERVATION_ROUTE_MERGED_20260920.md`
+`coordination/build_ledger/THR_FLAK_ARCHIVE_ROUTE_PR64_20260920.md`
 
-Public THR main is now `09013b2ec47aa1fc60ab7fbd011a33de296ffc83` after merged PR #62. Hannibal advances to record version `0.1.2` only for source recoverability: DCC chapter 13 now carries `institutional_preservation_route_identified` via the related Bret Mulligan Dickinson College Commentaries edition at Open Book Publishers (DOI `10.11647/OBP.0068`) and an unrestricted Library of Congress digital copy. The exact DCC chapter-13 web representation is **not** established as archived or byte-identical to those carriers. Final head `628d2637798341dd5483ba059ed8b160f68f2982`, run 215 / `35476102293` SUCCESS. Historical findings unchanged; public record count remains 4.
+Live THR main at branch/recheck: `09013b2ec47aa1fc60ab7fbd011a33de296ffc83` / four public records. Draft PR #64 exact head `45114e248a5e7bb52313a0aefd4c3f02105598f0`; hosted integrity run 220 / `35477129788` SUCCESS; mergeable YES. Candidate v0.2.8 narrows Westermann note 75 to N 529/7 + RL 12/457: N 529/7 title is recovered from Westermann's note only; RL 12/457 is independently matched at DDB/Bundesarchiv catalogue level. Archival pages remain uninspected; claim status remains unsupported in sources checked / true aggregate rate unknown. Hostile review target updated on PR #64 comment `5746211462`. Official Bundesarchiv stronger-owner route is now concrete (Freiburg / research service / digitisation-on-demand), but **no external archive request has been sent**.
 
-`NEXT = STRONGEST UNRESOLVED LOAD-BEARING SOURCE PRESERVATION GAP OR REAL EXTERNAL CORRECTION; NO ARCHIVE STACK / RECORD 5 BY MOMENTUM`
+`NEXT = FOLLOW PR64 HOSTILE REVIEW; THEN RELEASE DECISION SEPARATE. EXTERNAL BUNDESARCHIV REQUEST ONLY THROUGH EXPLICIT CONTACT GATE.`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
