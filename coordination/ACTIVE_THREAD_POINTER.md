@@ -1,3 +1,9 @@
+## Hack-Nation 7 — READY TO APPLY / HUMAN FORM GATE
+
+`coordination/build_ledger/HACK_NATION_APPLICATION_READY_20260919.md`
+
+No engineering prerequisite remains. Paste-ready public answers prepared. Use online as reversible default if participation preference is required; do not preselect a product before challenge reveal.
+
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
