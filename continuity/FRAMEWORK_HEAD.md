@@ -1,12 +1,12 @@
-## THR — sieve learning-route merged / Camp Fire provenance next
+## THR — Camp Fire collection history merged / Hannibal Greek source next
 
-`coordination/build_ledger/THR_SIEVE_LEARNING_ROUTE_MERGED_20260919.md`
+`coordination/build_ledger/THR_CAMP_FIRE_COLLECTION_HISTORY_MERGED_20260919.md`
 
-Public THR main is now `cd4bdc73a6a9392e472e2954d284965a8f78e5fd` after merged PR #55. Sieve/Riddle v0.1.3 now preserves reported learning components (research, trial-and-error/product development, Turnock advice/tuition) **without** asserting one linear chronology; exact sequence/overlap, tacit content, relative contribution and completeness remain unresolved. Codex repair verification `5745409524` = PASS_WITH_CEILINGS. No living-person profile/process extraction/assertion change; four public records remain four.
+Public THR main is now `6e5a2eff69e17e85a743d54501eac4ab0a1d527b` after merged PR #56. Camp Fire no longer treats all pre-1927 custody as unknown: it now preserves a Met-reported Clarke -> 1899 sale/agent -> Pomeroy -> 1927 gift collection history plus selected 1893/1911 historical re-observations. Continuous custody/legal title, exact 1899 mechanics, pre-Clarke ownership and independent proof of creation remain unestablished. Creator-attribution assertion evidence is unchanged. Four public records remain four.
 
-Fresh strongest field pressure is Camp Fire: Met/historical sources materially narrow the currently overbroad "pre-1927 custody unknown" boundary. Next is a record-local reported collection-history repair from this current main, not a new global provenance type.
+Fresh next pressure: Hannibal. Polybius Greek edition `urn:cts:greekLit:tlg0543.tlg001.perseus-grc2` is located; exact THR-cited Book 3 Greek passage inspection is the next test. `GREEK EDITION LOCATED != EXACT PASSAGE INSPECTED`.
 
-`NEXT = CAMP FIRE REPORTED COLLECTION / EXHIBITION HISTORY REPAIR; PRESERVE COLLECTION HISTORY != CONTINUOUS CUSTODY PROOF`
+`NEXT = HANNIBAL EXACT GREEK BOOK-3 PASSAGE CHECK; PATCH ONLY IF SOURCE-LITERAL BOUNDARY IS HONESTLY NARROWED`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
