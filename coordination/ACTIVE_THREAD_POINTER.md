@@ -1,10 +1,12 @@
-## THR — flak Overmans boundary merged / move to next field pressure
+## THR — sieve learning-route merged / Camp Fire provenance next
 
-`coordination/build_ledger/THR_FLAK_OVERMANS_MERGED_20260919.md`
+`coordination/build_ledger/THR_SIEVE_LEARNING_ROUTE_MERGED_20260919.md`
 
-Public THR main is now `6e2b5ed6a207a8a98f2989b5409d3cfb97ac492a` after merged PR #54. Flak record v0.2.6 now records a bounded Oldenbourg/De Gruyter Overmans preview check: **sample-based analysis drawn from individual Deutsche Dienststelle/WASt records**, with organisation/branch table-list material including Luftwaffe-level rows. Relevant result-table values and any flak-crew-specific breakdown remain uninspected. Primary 80% assertion evidence is unchanged; claim remains `unsupported_in_sources_checked`, true aggregate rate unknown. Codex review `5745312284` = PASS_WITH_CEILINGS / not NO_DELTA. Four public records remain four. RFC #52 remains separate draft/not canon.
+Public THR main is now `cd4bdc73a6a9392e472e2954d284965a8f78e5fd` after merged PR #55. Sieve/Riddle v0.1.3 now preserves reported learning components (research, trial-and-error/product development, Turnock advice/tuition) **without** asserting one linear chronology; exact sequence/overlap, tacit content, relative contribution and completeness remain unresolved. Codex repair verification `5745409524` = PASS_WITH_CEILINGS. No living-person profile/process extraction/assertion change; four public records remain four.
 
-`NEXT = STOP FLAK CHURN ABSENT STRONGER INSPECTABLE SOURCE; MOVE TO REAL FIELD PRESSURE IN AN EXISTING RECORD — NO RECORD 5 / ONTOLOGY BY MOMENTUM`
+Fresh strongest field pressure is Camp Fire: Met/historical sources materially narrow the currently overbroad "pre-1927 custody unknown" boundary. Next is a record-local reported collection-history repair from this current main, not a new global provenance type.
+
+`NEXT = CAMP FIRE REPORTED COLLECTION / EXHIBITION HISTORY REPAIR; PRESERVE COLLECTION HISTORY != CONTINUOUS CUSTODY PROOF`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
