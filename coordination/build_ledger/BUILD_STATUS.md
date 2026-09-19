@@ -74,7 +74,7 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 
 ### Hack-Nation 7
 
-Fresh owner check: application route still live at last check on **19 September**.
+Fresh owner check: application route is live; **19 September is the current batch deadline, not the final one**. Batch 6 closes **26 September**.
 
 - answer bank ready;
 - no engineering prerequisite;
