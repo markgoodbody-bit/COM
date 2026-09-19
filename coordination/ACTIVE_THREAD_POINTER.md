@@ -1,3 +1,11 @@
+## NVIDIA Claw — EvidenceWatch CLEAN LIVE PASS / final restart witness next
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_CLEAN_POST_REPAIR_PASS_20260919.md`
+
+Exact green head `9877d84b115df0f183c61d420642cef45048ca8c` produced clean July baseline 3 -> September correction 4 -> final canonical 4, one downstream-review alert, no broad /news discovery, and `EVIDENCEWATCH_LIVE_ONCE_OK`.
+
+`NEXT = RUN SAME HEARTBEAT AGAINST CLEAN LEDGER`
+
 ## NVIDIA Claw — EvidenceWatch TEMPORAL REPAIR GREEN / clean ledger next
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_TEMPORAL_REPAIR_GREEN_20260919.md`
