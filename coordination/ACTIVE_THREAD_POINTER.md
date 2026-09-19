@@ -4,7 +4,7 @@
 
 THR draft PR #52 head `6f09dc68136b4fc5480cf2eba8578afcf85aa48b`; hosted integrity run 149 / `35466492643` SUCCESS. Current public relations already route one source -> one assertion/record/view and one Polybius source -> four Hannibal assertions -> one record/view; **multi-record source fan-out is not yet present / not tested**. The overbroad "no THR protocol pressure" claim is falsified by the existing optional `human-record-contribution-packet/0.1`: bounded task-specific exchange contracts can be earned by real handoff loss. A **universal THR record/knowledge protocol remains not earned**. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
 
-`NEXT = REAL MULTI-RECORD FAN-OUT OR INDEPENDENT HOSTILE REVIEW; COUNTEREXAMPLE EARNS SMALLEST TYPE / CONTRACT / MAPPING`
+`NEXT = INDEPENDENT HOSTILE REVIEW REQUESTED ON THR #52 COMMENT 5744960907; HOLD RFC UNLESS REAL MULTI-RECORD FAN-OUT / COUNTEREXAMPLE APPEARS`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
