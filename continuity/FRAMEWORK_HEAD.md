@@ -1,3 +1,11 @@
+## NVIDIA API trial — authorised / local key next
+
+`coordination/build_ledger/NVIDIA_API_TRIAL_AUTHORISED_20260919.md`
+
+Mark explicitly authorised NVIDIA API trial use for the EvidenceWatch competition prototype. No production use, spend, sensitive inputs or credential publication authorised.
+
+`NEXT = GENERATE LOCAL NVIDIA BUILD KEY -> RUN ONE PROBE -> RETURN SANITISED OUTPUT`
+
 ## NVIDIA Claw — EvidenceWatch SOURCE FROZEN GREEN / provider gate
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_SOURCE_FREEZE_20260919.md`
@@ -10,7 +18,8 @@ Relay draft PR #248:
 - feature/source core frozen;
 - Relay main/Production unchanged.
 
-`NEXT = MARK ACCEPTS/USES NVIDIA API TRIAL SERVICE -> LOCAL KEY -> npm run probe`  
+`NVIDIA API TRIAL TERMS = AUTHORISED FOR PROTOTYPE`  
+`NEXT = LOCAL KEY -> ONE LIVE PROBE`  
 `DO NOT PASTE API KEY INTO CHAT / GITHUB / COM`
 
 ## Hack-Nation — Luma support replied / organiser still outstanding
