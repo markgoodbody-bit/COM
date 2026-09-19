@@ -1,3 +1,12 @@
+## PAC compensation redress pressure — 19 September 2026 — RESISTED / FIELD KEEP
+
+- owner: Public Accounts Committee / NAO / compensation-policy and scheme bodies;
+- project result: correction-as-second-harm is already representable in ME v0.7.0 and TRACE v0.3.0;
+- field witness preserved;
+- no primitive, wording, canon, release or policy proposal created.
+
+`REAL CASE -> PRESSURE -> NO GAP -> KEEP EVIDENCE -> STOP`
+
 ## Alexa blocked-receipt recovery — 19 September 2026 — GREEN / FREEZE
 
 Receipt:
