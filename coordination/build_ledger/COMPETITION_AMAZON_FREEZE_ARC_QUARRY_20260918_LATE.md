@@ -1,5 +1,7 @@
 # Competition build delta — Amazon freeze + ARC Prize quarry — 18 September 2026 late
 
+> **19 September supersession for ARC only:** the allowed viability spike completed at `coordination/competition_quarry/ARC_PRIZE_OWNER_SUBTRACTION_20260919.md` with `OWNER FOUND / ARC BUILD STOP / KAGGLE GATE NOT EARNED`. The 18 September material below is retained as the routing-time receipt.
+
 Status: **CURRENT COMPETITION RECEIPT / AMAZON SOURCE CANDIDATE GREEN / ARC QUARRY ONLY / NO REGISTRATION OR SUBMISSION**
 
 Direct Mark direction:
