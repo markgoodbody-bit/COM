@@ -1,3 +1,12 @@
+## CURRENT HUMAN GATE — Hack-Nation 7 READY TO APPLY — 19 September 2026
+
+`coordination/build_ledger/HACK_NATION_APPLICATION_READY_20260919.md`
+
+Fresh official route is live; public-safe application answers are now reduced to paste-ready form. Default reversible posture: **online / solo-or-team / no preselected product / choose after challenge reveal**.
+
+`APPLICATION SENT = NO`  
+Identity/account/terms/form submission remain Mark's human gate.
+
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
