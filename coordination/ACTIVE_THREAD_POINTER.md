@@ -1,10 +1,10 @@
-## THR — impact-route fifth repair / verifier hold
+## THR — impact-route verifier closed / field-pressure hold
 
-`coordination/build_ledger/THR_RFC_IMPACT_ROUTE_REPAIR_HOLD_20260919.md`
+`coordination/build_ledger/THR_RFC_IMPACT_ROUTE_VERIFIER_CLOSED_20260919.md`
 
-Public THR main `094c498ac1f0d395a65f775d254eb180facfcd35` includes merged PR #53 only as a Heritage Crafts operational source-check receipt (`record_evidence_promoted=false`); four records/findings remain unchanged and served registry deployment is **not independently verified**. Draft RFC PR #52 is now `a37424e270b48102f77c42f68493bc5e244e63db`, run 162 / `35468504244` SUCCESS. Framework follow-up found and repaired one smaller malformed `assertion.evidence.source_ids` routing case; external follow-up verification is requested on PR #52 comment `5745198258`.
+Draft RFC PR #52 exact head `a37424e270b48102f77c42f68493bc5e244e63db`; hosted integrity run 162 / `35468504244` SUCCESS. Codex follow-up comment `5745211646` returned **PASS_WITH_CEILINGS** after re-running the focused helper tests and all 20 registered sources through the current helper. The demonstrated routing defects are closed within scope; helper churn stops. Public THR main remains `094c498ac1f0d395a65f775d254eb180facfcd35` / 4 records; merged Heritage Crafts receipt remains operational-only with `record_evidence_promoted=false`.
 
-`NEXT = FOLLOW REAL VERIFIER RETURN; IF PASS_WITH_CEILINGS HOLD RFC, IF REPAIR APPLY SMALLEST RED/GREEN FIX; NO NEW TYPES / MAINTENANCE SWEEP BY MOMENTUM`
+`NEXT = REAL FIELD PRESSURE ONLY — MULTI-RECORD FAN-OUT / CURRENT RECORD COUNTEREXAMPLE / INDEPENDENT WITNESS / STRONGER OWNER / REAL HANDOFF; OTHERWISE HOLD RFC`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
