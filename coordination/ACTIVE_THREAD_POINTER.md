@@ -1,10 +1,10 @@
-## THR — implementation audit / bounded protocol counterexample
+## THR — executable impact routing / code-audit repair
 
-`coordination/build_ledger/THR_FRACTAL_IMPLEMENTATION_PROTOCOL_AUDIT_20260919.md`
+`coordination/build_ledger/THR_FRACTAL_IMPACT_ROUTING_REPAIR_20260919.md`
 
-THR draft PR #52 head `6f09dc68136b4fc5480cf2eba8578afcf85aa48b`; hosted integrity run 149 / `35466492643` SUCCESS. Current public relations already route one source -> one assertion/record/view and one Polybius source -> four Hannibal assertions -> one record/view; **multi-record source fan-out is not yet present / not tested**. The overbroad "no THR protocol pressure" claim is falsified by the existing optional `human-record-contribution-packet/0.1`: bounded task-specific exchange contracts can be earned by real handoff loss. A **universal THR record/knowledge protocol remains not earned**. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+THR draft PR #52 head `cea984dca9ff4b79e5cad8409272cdf46b7798ec`; hosted integrity run 155 / `35467028963` SUCCESS. Codex registry audit confirmed 20 sources / 8 assertions and found 11 sources with direct `used_by_records` routes but no assertion edge. A read-only impact query now unions direct + assertion-derived routes; Codex then found four helper defects, all repaired with 15 focused tests. Source registry is explicitly not the full evidence universe: the Sieve/Riddle Homo Faber interview remains record-local. No new dependency type or universal protocol is earned. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
 
-`NEXT = INDEPENDENT HOSTILE REVIEW REQUESTED ON THR #52 COMMENT 5744960907; HOLD RFC UNLESS REAL MULTI-RECORD FAN-OUT / COUNTEREXAMPLE APPEARS`
+`NEXT = WAIT FOR BOUNDED REPAIR VERIFICATION ON THR #52 COMMENT 5745019308; IF PASS, STOP HELPER CHURN AND RETURN TO REAL FIELD PRESSURE`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
