@@ -1,3 +1,11 @@
+## NVIDIA Claw — EvidenceWatch PRE-SUBMIT AUDIT GREEN / unattended witness next
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_PRESUBMIT_AUDIT_GREEN_20260919.md`
+
+Audit head `ee362ce0105565815ad2695f12db0481fab5f638`; `campfire-ci 1598 / 35452177273 SUCCESS`. Private-repo link, internal PII doc, stale terms, missing live script, standalone ignores and attribution repaired. Video submission preferred; do not publicize Campfire Relay by momentum.
+
+`NEXT = BOUNDED UNATTENDED SCHEDULER WITNESS -> RECORD VIDEO -> FINAL FORM`
+
 ## NVIDIA Claw — official rules reviewed / Airtable fields next
 
 `coordination/build_ledger/NVIDIA_CLAW_OFFICIAL_RULES_REVIEW_20260919.md`
