@@ -1,3 +1,17 @@
+## CURRENT CHECKPOINT — TRACE/ME successor pressure ledger — 19 September 2026
+
+`coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
+
+```text
+ME PATCH PRESSURES = 1 (issue #47 hard-collision route wording)
+ME PATCHES EARNED = 0 (fresh reader required)
+TRACE PATCH PRESSURES = 0
+TRACE PATCHES EARNED = 0
+RELEASED BASELINES = UNCHANGED
+```
+
+Today's field cases mostly strengthened the no-expansion case. Successor text starts only when reality forces a representational/reader repair.
+
 ## CURRENT CHECKPOINT — THR public-delivery aperture status — 19 September 2026
 
 Receipt:
