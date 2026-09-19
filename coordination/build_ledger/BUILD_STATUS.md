@@ -1,3 +1,7 @@
+## THR direct-packet delivery status — 19 September 2026 — APERTURE-LIMIT / NO REPAIR
+
+Exact-byte post-main verifier includes the direct packet and eight current public objects. Push-run result/public bytes cannot be observed from this aperture. No delivery failure established and no THR mutation earned.
+
 ## THR digital-preservation quarry — 19 September 2026 — 4x OWNER FOUND / STOP
 
 No human-record mutation. Digital fragility alone is not a THR admission rule. Four candidate families were routed to stronger active preservation owners.
