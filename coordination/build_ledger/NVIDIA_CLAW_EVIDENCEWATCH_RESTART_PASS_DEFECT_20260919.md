@@ -47,6 +47,27 @@ Repair on Relay PR #248:
 Current repair head:
 `f3896afa26652a0f532897a8b5cced5143bc6f83`
 
-Hosted `campfire-ci 1576 / 35450043232` was still running at checkpoint time.
+Hosted `campfire-ci 1576 / 35450043232 — SUCCESS` on exact repair head.
 
 Do not erase the core restart witness because of the discovered-source defect; they are separate observations.
+
+
+## Hosted repair result
+
+Exact repair head:
+`f3896afa26652a0f532897a8b5cced5143bc6f83`
+
+Hosted:
+`campfire-ci 1576 / 35450043232 — SUCCESS`
+
+Focused competition tests on this head:
+- core: 19
+- browser HTTP E2E: 1
+- total: 20
+
+Disposition:
+```text
+CORE RESTART/DUPLICATE WITNESS = PASS
+FETCH-vs-ANALYSIS FAILURE REPAIR = GREEN
+SESSION KEY REUSE = AVAILABLE
+```
