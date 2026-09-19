@@ -1,3 +1,7 @@
+## Hack-Nation 7 — READY TO APPLY / NO BUILD REQUIRED
+
+Public answer payload prepared and current. Application/identity/account/terms/submission remain human actions. No hackathon project should be built before challenge reveal.
+
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
