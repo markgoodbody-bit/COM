@@ -1,10 +1,10 @@
-## THR — protocol not earned / contract-profile ceiling
+## THR — implementation audit / bounded protocol counterexample
 
-`coordination/build_ledger/THR_FRACTAL_PROTOCOL_BOUNDARY_20260919.md`
+`coordination/build_ledger/THR_FRACTAL_IMPLEMENTATION_PROTOCOL_AUDIT_20260919.md`
 
-THR draft PR #52 head `3d348e17afa3dfcf4e420db98de369846e77fab8`; hosted integrity run 145 / `35466043388` SUCCESS. After zero-new-types and stronger-owner subtraction, a new THR universal ontology **and** new THR protocol are not currently earned. The provisional architecture ceiling is the existing public record product + minimum interoperability contract + sparse cross-record references + record-local structure + stronger-owner mappings where material. The hostile review packet now asks for a concrete protocol requirement or `NO PROTOCOL PRESSURE FOUND`. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+THR draft PR #52 head `6f09dc68136b4fc5480cf2eba8578afcf85aa48b`; hosted integrity run 149 / `35466492643` SUCCESS. Current public relations already route one source -> one assertion/record/view and one Polybius source -> four Hannibal assertions -> one record/view; **multi-record source fan-out is not yet present / not tested**. The overbroad "no THR protocol pressure" claim is falsified by the existing optional `human-record-contribution-packet/0.1`: bounded task-specific exchange contracts can be earned by real handoff loss. A **universal THR record/knowledge protocol remains not earned**. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
 
-`NEXT = INDEPENDENTLY FALSIFY ZERO-NEW-TYPES + NO-PROTOCOL-PRESSURE; REAL COUNTEREXAMPLE EARNS SMALLEST CHANGE`
+`NEXT = REAL MULTI-RECORD FAN-OUT OR INDEPENDENT HOSTILE REVIEW; COUNTEREXAMPLE EARNS SMALLEST TYPE / CONTRACT / MAPPING`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
