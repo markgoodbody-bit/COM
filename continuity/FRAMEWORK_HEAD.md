@@ -1,3 +1,22 @@
+## CURRENT HUMAN GATE — Hack-Nation 7 application — 19 September 2026
+
+Fresh official-source check:
+`coordination/build_ledger/HACK_NATION_APPLICATION_GATE_REFRESH_20260919.md`
+
+Official event route still shows **Batch 5 · Sep 19** and **Apply now**. Event remains 3–4 October, online or hubs, approval required; no pre-existing team/idea is required and challenge tracks arrive with the event.
+
+Prepared truthful answer bank remains:
+`coordination/competition_quarry/COMPETITION_HUMAN_GATE_APPLICATION_PACK_20260918.md`
+
+```text
+APPLICATION ROUTE = LIVE AT LAST CHECK
+ENGINEERING PREREQUISITE = NONE
+REGISTRATION / ACCOUNT / TERMS = HUMAN GATE
+APPLICATION SENT = NO
+```
+
+Do not invent a Hack-Nation product before the challenge brief.
+
 ## CURRENT CHECKPOINT — TRACE/ME successor pressure ledger — 19 September 2026
 
 `coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
