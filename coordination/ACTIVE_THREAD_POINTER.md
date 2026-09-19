@@ -1,3 +1,11 @@
+## THR — protocol not earned / contract-profile ceiling
+
+`coordination/build_ledger/THR_FRACTAL_PROTOCOL_BOUNDARY_20260919.md`
+
+THR draft PR #52 head `3d348e17afa3dfcf4e420db98de369846e77fab8`; hosted integrity run 145 / `35466043388` SUCCESS. After zero-new-types and stronger-owner subtraction, a new THR universal ontology **and** new THR protocol are not currently earned. The provisional architecture ceiling is the existing public record product + minimum interoperability contract + sparse cross-record references + record-local structure + stronger-owner mappings where material. The hostile review packet now asks for a concrete protocol requirement or `NO PROTOCOL PRESSURE FOUND`. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+
+`NEXT = INDEPENDENTLY FALSIFY ZERO-NEW-TYPES + NO-PROTOCOL-PRESSURE; REAL COUNTEREXAMPLE EARNS SMALLEST CHANGE`
+
 ## THR — PROV correction / residue attack / zero-new-types provisional
 
 `coordination/build_ledger/THR_FRACTAL_RESIDUE_ZERO_TYPES_20260919.md`
