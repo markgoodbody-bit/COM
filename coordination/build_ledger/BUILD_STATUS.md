@@ -2,10 +2,10 @@
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_RESTART_PASS_DEFECT_20260919.md`
 
-Second real run recovered state 4, returned duplicate observations for both configured owner pages, kept alert count 1 and emitted no new alerts. Separate discovered-source path exposed fetch-vs-analysis failure misclassification; repair head `f3896afa26652a0f532897a8b5cced5143bc6f83` is in hosted CI 1576.
+Second real run recovered state 4, returned duplicate observations for both configured owner pages, kept alert count 1 and emitted no new alerts. Separate discovered-source path exposed fetch-vs-analysis failure misclassification; repair head `f3896afa26652a0f532897a8b5cced5143bc6f83` passed hosted CI 1576.
 
 `CORE RESTART/DUPLICATE = PASS`  
-`DISCOVERED-SOURCE DEFECT = REPAIRED IN SOURCE / CI PENDING`
+`DISCOVERED-SOURCE DEFECT = REPAIRED / CI 1576 SUCCESS`
 
 ## NVIDIA Claw — EvidenceWatch REAL HEARTBEAT PASS / restart test next
 
