@@ -1,3 +1,27 @@
+## Live World field-pressure result — 19 September 2026 — RESOLVED GREEN DRAFT
+
+Receipt:
+`coordination/build_ledger/LIVE_WORLD_DECLARED_TRANSPORT_BOUNDARY_20260919.md`
+
+Field witness:
+`field/FRONTIER_CYBER_EVAL_DECLARED_WORLD_TARGET_DRIFT_20260919.md`
+
+Campfire Relay PR #173 exact head:
+`dad71bb70da16275b4ffd9acda70605699415973`
+
+Hosted:
+`campfire-ci 1538 / 35437072566 SUCCESS`
+
+15 focused Live World tests. Current repair binds actual adapter authority scope/transport target before observation/write, binds execution to the exact persisted human authorization, brakes mid-batch scope drift, refuses 1F916 redirects, and preserves pre-write `writeAttempted=false`.
+
+Relay main/Production unchanged. No TRACE/ME rule earned. Candidate re-frozen.
+
+```text
+DECLARED WORLD != ACTUAL TARGET
+REACHABLE != AUTHORIZED
+FIELD OWNER FOUND + PROJECT DEFECT REPAIRED
+```
+
 ## Post-FULL-COMSYNC build delta — 19 September 2026
 
 Receipt: `coordination/build_ledger/AMAZON_ALEXA_RESOURCE_UNCERTAINTY_REPAIR_20260919.md`.
