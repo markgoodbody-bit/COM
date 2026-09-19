@@ -69,3 +69,28 @@ SOURCE-SPECIFIC REPAIR = GREEN
 PR #173 = STILL DRAFT / NOT PRODUCTION
 NEXT BOUNDED QUESTION = DOES GENERIC CORE REQUIRE ACTUAL-TARGET IDENTITY FROM EVERY ADAPTER?
 ```
+
+
+## Generic-core bounded follow-on — in flight
+
+The source-specific repair exposed a deeper software-contract question: a future adapter could omit its actual target from adapter-specific `authorizationBasis`.
+
+A bounded core repair is now patched on Relay PR #173:
+- every adapter must expose synchronous/local-only `authorityScope()`;
+- the core hashes/persists that scope itself;
+- execution compares it before any fresh observation under old authority;
+- it is checked again before every action;
+- target drift returns `LIVE_WORLD_ADAPTER_AUTHORITY_SCOPE_DRIFT` with no write;
+- a generic regression changes a fake adapter from `sandbox://expected` to an unexpected real target after authorization and requires the engine to stop before another observation.
+
+Static review also caught and repaired the synthetic plan-replay preflight so it carries the new adapter scope.
+
+Current exact Relay head:
+`6afba0abdee53c092a45281ff5004c81777acac4`
+
+Hosted CI for this exact second-stage head is not yet classified here. Do not promote the generic repair to green until the exact-head workflow result is reacquired.
+
+```text
+SOURCE-SPECIFIC GREEN != GENERIC-CORE GREEN
+FIELD PRESSURE -> CONCRETE REPRODUCER -> CORE INVARIANT CANDIDATE
+```
