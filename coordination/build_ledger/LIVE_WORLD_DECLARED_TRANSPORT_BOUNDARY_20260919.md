@@ -1,6 +1,6 @@
 # Live World declared-world / transport-target repair — 19 September 2026
 
-Status: **IN FLIGHT / PATCHED / HOSTED CI PENDING / NOT MAIN / NOT PRODUCTION**
+Status: **GREEN CANDIDATE REPAIR / HOSTED CI PASS / NOT RELAY MAIN / NOT PRODUCTION**
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
@@ -56,7 +56,7 @@ MERGED != PRODUCTION
 REAL FIELD FAILURE CLASS != PROJECT NOVELTY
 ```
 
-Hosted `campfire-ci 1527 / 35436665469` is currently in progress on exact head `929ea298...`.
+Hosted `campfire-ci 1527 / 35436665469 SUCCESS` passed on exact head `929ea298bd26a04964b62bf69310b5e45f349a51`.
 
 ## Capacity
 
@@ -65,6 +65,7 @@ Claude Code is unavailable until 20 September per Mark. Do not block this bounde
 ## Next
 
 ```text
-CI SUCCESS -> exact-source review -> update PR/COM -> freeze candidate
-CI FAILURE -> inspect exact failure -> smallest repair only
+SOURCE-SPECIFIC REPAIR = GREEN
+PR #173 = STILL DRAFT / NOT PRODUCTION
+NEXT BOUNDED QUESTION = DOES GENERIC CORE REQUIRE ACTUAL-TARGET IDENTITY FROM EVERY ADAPTER?
 ```
