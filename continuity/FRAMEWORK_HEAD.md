@@ -1,3 +1,14 @@
+## NVIDIA Claw — public preflight complete / register for brief
+
+`coordination/build_ledger/NVIDIA_CLAW_PUBLIC_STACK_PREFLIGHT_20260919.md`
+
+NVIDIA already owns generic memory/retry/snapshot/reconciliation machinery. A narrower `Continuity Steward` product seam survives public owner subtraction: live-source reacquisition + stale-state detection + role/authority continuity + compact successor handoff without runtime-identity fiction.
+
+Windows/WSL2 path is publicly supported. **Do not code the submission before the registered challenge brief.**
+
+`REGISTER = HUMAN/UI GATE`  
+`NEXT = GET FULL BRIEF -> FIT/PIVOT/BUILD`
+
 ## NVIDIA Claw — clean registration gate
 
 `coordination/build_ledger/NVIDIA_CLAW_REGISTRATION_GATE_20260919.md`
