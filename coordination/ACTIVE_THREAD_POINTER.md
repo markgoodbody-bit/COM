@@ -1,3 +1,16 @@
+## THR — Bundesarchiv inquiry drafted / NOT SENT
+
+`coordination/build_ledger/THR_FLAK_BUNDESARCHIV_DRAFT_20260920.md`
+
+Westermann/DDB source-side recheck remains consistent with draft PR #64's current ceiling: the checked reproduction states 60 officer / 890 enlisted dead-wounded-missing casualties for 10 May–22 June 1940 and note 75 cites N 529/7 + RL 12/457; DDB/Bundesarchiv independently matches RL 12/457 at catalogue level only. An unsent Gmail inquiry is now prepared to `militaerarchiv@bundesarchiv.de` asking for N 529/7 confirmation, access/digitisation guidance, and whether the cited archival material contains the basis for 60/890. It explicitly requests a quote before any chargeable work.
+
+`DRAFT PREPARED != EXTERNAL CONTACT`  
+`NO MESSAGE SENT / NO FEE AUTHORISED`
+
+PR #64 remains separate: follow the independent hostile review, repair if earned, and keep release decision separate.
+
+`NEXT = HOSTILE REVIEW + EXPLICIT HUMAN SEND GATE FOR BUNDESARCHIV DRAFT.`
+
 ## THR — flak archival citation route / PR #64 hostile review
 
 `coordination/build_ledger/THR_FLAK_ARCHIVE_ROUTE_PR64_20260920.md`
