@@ -1,3 +1,11 @@
+## THR — PROV correction / residue attack / zero-new-types provisional
+
+`coordination/build_ledger/THR_FRACTAL_RESIDUE_ZERO_TYPES_20260919.md`
+
+THR draft PR #52 head `fb514b1f7bc0d960eaf408c60614b966f6f3e2a0`; hosted integrity run 143 / `35465831576` SUCCESS. The first PROV mapping's chronology/time defect was found and later verified repaired. Universal independence and correction-propagation types are not earned; continuation is an acceptance criterion rather than a THR-owned archival stack. Current four records + RFC microcases require zero new shared THR core types under current evidence. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+
+`NEXT = FALSIFY ZERO-NEW-SHARED-TYPES WITH A REAL COUNTEREXAMPLE / INDEPENDENT HOSTILE REVIEW; DO NOT EXPAND BY MOMENTUM`
+
 ## THR — second owner subtraction / RFC narrower again
 
 `coordination/build_ledger/THR_FRACTAL_OWNER_SUBTRACTION_2_20260919.md`
