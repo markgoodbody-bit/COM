@@ -1,10 +1,10 @@
-## THR — executable impact routing / code-audit repair
+## THR — impact-routing smoke pass / verifier hold
 
-`coordination/build_ledger/THR_FRACTAL_IMPACT_ROUTING_REPAIR_20260919.md`
+`coordination/build_ledger/THR_FRACTAL_IMPACT_ROUTING_SMOKE_PASS_20260919.md`
 
-THR draft PR #52 head `cea984dca9ff4b79e5cad8409272cdf46b7798ec`; hosted integrity run 155 / `35467028963` SUCCESS. Codex registry audit confirmed 20 sources / 8 assertions and found 11 sources with direct `used_by_records` routes but no assertion edge. A read-only impact query now unions direct + assertion-derived routes; Codex then found four helper defects, all repaired with 15 focused tests. Source registry is explicitly not the full evidence universe: the Sieve/Riddle Homo Faber interview remains record-local. No new dependency type or universal protocol is earned. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+THR draft PR #52 head `d5621c7e701825bfd743b823aa1c97b352dec7cb`; hosted integrity run 157 / `35467239067` SUCCESS. Impact routing remains a read-only union of direct `used_by_records` + assertion-derived record routes. Codex found four helper defects; all are repaired with 15 hostile/unit tests plus 2 current-registry smoke tests. Source registry remains explicitly incomplete relative to record-local evidence. No new dependency type / universal protocol / record 5 is earned. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
 
-`NEXT = WAIT FOR BOUNDED REPAIR VERIFICATION ON THR #52 COMMENT 5745019308; IF PASS, STOP HELPER CHURN AND RETURN TO REAL FIELD PRESSURE`
+`NEXT = HOLD IMPACT HELPER FOR REPAIR VERIFICATION ON THR #52 COMMENT 5745019308; PASS -> RETURN TO REAL FIELD PRESSURE, REPAIR -> SMALLEST FIX ONLY`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
