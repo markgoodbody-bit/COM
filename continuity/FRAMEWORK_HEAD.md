@@ -4,6 +4,28 @@ Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**
 Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
 Later live source and direct human direction win.
 
+## FULL COMSYNC delta — 19 September 2026
+
+Detailed receipt: `coordination/build_ledger/FULL_COMSYNC_20260919.md`.
+
+- CC temporarily out of tokens until tomorrow; **not removed** and no default blocking.
+- TRACE main `e7d46398...`; formal baseline still v0.3.0.
+- ME main `714907a...`; formal baseline still v0.7.0; #47 cold-reader result still absent.
+- THR main `1f5a591...`; exactly 4 public records; record 5 not earned.
+- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`; `campfire-ci 1520 / 35405626849 SUCCESS`.
+- Amazon remains **GREEN SOURCE / HUMAN ONBOARDING-SUBMISSION GATE**.
+- Hack-Nation application batch closes **19 Sep**; answer bank ready; human gate only.
+- ARC small viability gate completed by owner subtraction: state graphs, reflection memory, hypothesis retrodiction and falsification-tested world models already have strong current ARC owners. **ARC BUILD = STOP**; no Kaggle/account gate crossed.
+- Hack Apertus remains held until 1 Oct; ATRS result remains preserved for November.
+- Fresh broad WORLD / REAL USE pass found material events but no specific project gap stronger than current owners.
+
+```text
+WORLD / REAL USE = PRIMARY
+OWNER FOUND / NO DELTA / STOP = VALID
+HUMAN GATE != ENGINEERING TODO
+PURPOSE > INSTRUMENT
+```
+
 ## Late 18 September Framework delta — PSFH decision gate + hard field witnesses
 
 ### PSFH #118
