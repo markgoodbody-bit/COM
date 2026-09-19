@@ -1,3 +1,11 @@
+## NVIDIA Claw — EvidenceWatch UNATTENDED PASS / video next
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_UNATTENDED_PASS_20260919.md`
+
+Audit head `ee362ce0105565815ad2695f12db0481fab5f638`: real scheduler ran autonomously across multiple 10-second heartbeats. First cycle baseline 3 -> correction 4; six later cycles duplicate+duplicate, canonical 4, no new alerts. Technical validation stop reached.
+
+`NEXT = RECORD 60–90s VIDEO -> REVIEW -> FINAL AIRTABLE SUBMISSION`
+
 ## NVIDIA Claw — EvidenceWatch PRE-SUBMIT AUDIT GREEN / unattended witness next
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_PRESUBMIT_AUDIT_GREEN_20260919.md`
