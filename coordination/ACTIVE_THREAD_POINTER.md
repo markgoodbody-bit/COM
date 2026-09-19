@@ -1,3 +1,12 @@
+## THR record-5 quarry — Anthropic correction lineage — STOP
+
+`coordination/build_ledger/THR_ANTHROPIC_CORRECTION_OWNER_PASS_20260919.md`
+
+Anthropic's July three-incident disclosure and September four-incident assessment already preserve an explicit linked correction trail, including missed-transcript/search-aperture explanation and changed interpretation. No consequential THR recoverability gap observed.
+
+`THR PUBLIC RECORDS = 4`  
+`RECORD 5 = NOT EARNED`
+
 ## PAC compensation redress field result — 19 September 2026 — KEEP / NO PATCH
 
 `field/PAC_COMPENSATION_REDRESS_SECOND_HARM_20260919.md`  
