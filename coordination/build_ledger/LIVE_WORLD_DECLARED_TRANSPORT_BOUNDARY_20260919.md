@@ -126,3 +126,20 @@ PRE-WRITE FAILURE != WRITE ATTEMPT
 ACTION 1 AUTHORIZED != ACTION 2 TARGET MAY DRIFT
 CURRENT HEAD > SUPERSEDED CI
 ```
+
+
+## Redirect-path hardening — in flight
+
+A further concrete transport ambiguity survived static review: canonical request origin alone did not prevent the HTTP client from following a redirect to a different origin while source receipts still named the canonical world.
+
+Repair on exact Relay head:
+`dad71bb70da16275b4ffd9acda70605699415973`
+
+- 1F916 requests now set `redirect='error'`;
+- source receipts record `redirectPolicy='error'`;
+- read-only access regression requires every adapter request to carry the no-redirect policy;
+- documentation states that an authorization for the canonical origin may not silently follow to another origin.
+
+This remains an application-layer boundary. DNS/TLS/host/network compromise is not claimed solved.
+
+All hosted CI results from earlier heads are superseded. Exact-head CI for `dad71bb...` remains to be classified.
