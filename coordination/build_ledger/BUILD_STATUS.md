@@ -6,46 +6,6 @@ THR draft PR #52 head `3d348e17afa3dfcf4e420db98de369846e77fab8`; hosted integri
 
 `NEXT = INDEPENDENTLY FALSIFY ZERO-NEW-TYPES + NO-PROTOCOL-PRESSURE; REAL COUNTEREXAMPLE EARNS SMALLEST CHANGE`
 
-## THR — PROV correction / residue attack / zero-new-types provisional
-
-`coordination/build_ledger/THR_FRACTAL_RESIDUE_ZERO_TYPES_20260919.md`
-
-THR draft PR #52 head `fb514b1f7bc0d960eaf408c60614b966f6f3e2a0`; hosted integrity run 143 / `35465831576` SUCCESS. The first PROV mapping's chronology/time defect was found and later verified repaired. Universal independence and correction-propagation types are not earned; continuation is an acceptance criterion rather than a THR-owned archival stack. Current four records + RFC microcases require zero new shared THR core types under current evidence. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
-
-`NEXT = FALSIFY ZERO-NEW-SHARED-TYPES WITH A REAL COUNTEREXAMPLE / INDEPENDENT HOSTILE REVIEW; DO NOT EXPAND BY MOMENTUM`
-
-## THR — second owner subtraction / RFC narrower again
-
-`coordination/build_ledger/THR_FRACTAL_OWNER_SUBTRACTION_2_20260919.md`
-
-THR draft PR #52 head `62cdc3af4b055945f79a3d20fce5398984e4130d`; hosted integrity run 135 / `35465104244` SUCCESS. CIDOC CRM, CRMdig, CRMinf and PREMIS subtract more generic event/process/inference/preservation territory; nanopublications supply an existing assertion/provenance packaging pattern. Codex microcase audit repair now preserves run attempt + later metadata-observation time without backfilling history. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` with exactly 4 records.
-
-`NEXT = ATTACK THE SURVIVING JOIN / INDEPENDENCE / CORRECTION-PROPAGATION RESIDUE; NO NEW GLOBAL TYPES BY MOMENTUM`
-
-## THR — W3C PROV interop microcase PASS / no new global types
-
-`coordination/build_ledger/THR_FRACTAL_PROV_INTEROP_20260919.md`
-
-THR draft PR #52 head `2ee2e777e7f6ab887402127c891ed98123d90068`; hosted integrity run 133 SUCCESS. Real validator self-description mapped to W3C PROV using local fragment IDs; Turtle parses as 42 triples. Generic process graph owner-subtracted to PROV; THR keeps warning/epistemic/authority residue. Public records remain 4; registries unchanged.
-
-`NEXT = INDEPENDENT HOSTILE REVIEW / REAL INDEPENDENT WITNESS / DISTINCT EARNED INTEROP CASE`
-
-## THR — fractal strongest-owner subtraction complete / RFC narrowed
-
-`coordination/build_ledger/THR_FRACTAL_OWNER_SUBTRACTION_20260919.md`
-
-THR draft PR #52 head `a1deaf1580c86a58099c5c48c782459a29e22de8`; hosted integrity run 131 SUCCESS. W3C PROV, C2PA, VC/DID, in-toto/SLSA, Sigstore/Rekor, Memento and Software Heritage/SWHID owner-subtract generic layers. RFC now explicitly interoperability-first: THR preserves joins/residue rather than replacing stronger standards.
-
-`NEXT = INDEPENDENT HOSTILE REVIEW / REAL WITNESS / CONCRETE INTEROP MICROCASE; NO NEW GLOBAL TYPES BY MOMENTUM`
-
-## THR — fractal architecture RFC opened / no canon change
-
-`coordination/build_ledger/THR_FRACTAL_ARCHITECTURE_LANE_20260919.md`
-
-THR draft PR #52 head `d054d91508b6dd6dd70a2ce2b2cd5ae2305c2b63`; hosted integrity run 129 SUCCESS. Exploratory RFC + four-record falsification + independent-review packet + one real validator self-description microcase. Public records remain exactly 4; current registries/canon unchanged.
-
-`NEXT = INDEPENDENT HOSTILE REVIEW OR REAL NEW PRESSURE; DO NOT ADD GLOBAL TYPES BY MOMENTUM`
-
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
 `coordination/build_ledger/NVIDIA_CLAW_CC_FINAL_REVIEW_PACKET_20260919.md`
