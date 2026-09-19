@@ -1,10 +1,16 @@
-## THR — Hannibal Greek source-literal candidate / hostile review pending
+## THR — two live field candidates / reviews pending
 
-`coordination/build_ledger/THR_HANNIBAL_GREEK_LITERAL_CANDIDATE_20260919.md`
+`coordination/build_ledger/THR_FIELD_CANDIDATES_HANNIBAL_FLAK_20260919.md`
 
-Public THR main remains `6e5a2eff69e17e85a743d54501eac4ab0a1d527b` / four records. Draft PR #57 at exact head `b40e071e5b443311f32593f442d92d776da92410`, hosted run 181 / `35471618313` SUCCESS, narrows only the Polybius 3.33.17-18 source-literal boundary: Perseus Greek-edition passage token lists attest `Ἀννίβας` in both sections. Full Greek passage/manuscript/other-passage verification remains unestablished. Hostile review requested on comment `5745550856`. No merge/canon yet.
+Public THR main remains `6e5a2eff69e17e85a743d54501eac4ab0a1d527b` / four records.
 
-`NEXT = FOLLOW PR57 HOSTILE REVIEW; PASS_WITH_CEILINGS -> MERGE DECISION, REPAIR -> SMALLEST FIX; CONTINUE REAL FIELD PRESSURE ELSEWHERE IN PARALLEL`
+PR #57 Hannibal is repaired after Codex caught a lemma-vs-source-literal over-upgrade. Exact head `99e2cbb8fd3dc07ec0316970ff50460f9d463cdc`, run 187 / `35471893328` SUCCESS. Current claim is only: Perseus passage-vocabulary index associates 3.33.17–18 with lemma `Ἀννίβας`; Framework did not directly inspect the inflected Greek source-text spelling. Follow-up review pending on comment `5745550856`.
+
+PR #58 flak exact head `adbf50ee80ed9e5ed0e516010b7b99dad631db65`, run 182 / `35471799195` SUCCESS. Targeted full-text Westermann search finds an 80-percent flak-casualty statistic in RAF/Bomber Command context plus 1,110,900 late-1944 flak-arm personnel strength; neither establishes German flak-crew mortality or ancestry to the viral claim. Hostile review pending on comment `5745578189`.
+
+Fresh Overmans p.255 secondary reproduction is NO DELTA: ~433k Luftwaffe deaths still does not isolate flak crews and primary table values were not directly inspected.
+
+`NEXT = FOLLOW #57/#58 REVIEWS -> SMALLEST REPAIR OR BOUNDED MERGE DECISION; CONTINUE REAL FIELD SOURCES, NO FIFTH RECORD / RFC POLISH BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
