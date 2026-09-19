@@ -1,3 +1,12 @@
+## NVIDIA Claw — EvidenceWatch REAL HEARTBEAT PASS / restart test next
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_REAL_HEARTBEAT_PASS_20260919.md`
+
+Exact head `513487a69033fca9e8102ef77ee6538fb695e87e` produced a real public-web + real NVIDIA + durable-ledger PASS: July baseline 3 -> September correction 4 -> dependent briefing flagged.
+
+`NEXT = RUN SAME LIVE HEARTBEAT AGAIN AGAINST EXISTING LEDGER`  
+Expected only if normalized pages are unchanged: duplicate observations / no new alert / current state remains 4.
+
 ## NVIDIA Claw — EvidenceWatch REAL-SOURCE RUNNER GREEN
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_REAL_SOURCE_RUNNER_GREEN_20260919.md`
