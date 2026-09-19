@@ -1,3 +1,12 @@
+## Alexa blocked-receipt recovery — 19 September 2026 — GREEN / FREEZE
+
+Receipt:
+`coordination/build_ledger/AMAZON_BLOCKED_RECEIPT_RECOVERY_20260919.md`
+
+Relay PR #246 was exact-head reviewed and merged into the draft Alexa branch. Current PR #245 head is `7a4c501dedb228c7387336fa267356e9cde27f8f`; hosted `campfire-ci 1539 / 35437873204 SUCCESS`; 24 focused tests.
+
+The repair preserves a blocked-before-write request as historical no-write evidence instead of manufacturing unresolved work during later readback. Relay main/Production, accounts, registration, terms and submission remain unchanged. Candidate re-frozen.
+
 ## Live World target-boundary repair — 19 September 2026 — GREEN / FREEZE
 
 Current exact draft candidate:
