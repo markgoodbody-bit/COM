@@ -1,3 +1,22 @@
+## Amazon post-sync repair — 19 September 2026
+
+Receipt:
+`coordination/build_ledger/AMAZON_ALEXA_RESOURCE_UNCERTAINTY_REPAIR_20260919.md`
+
+Fresh hostile review found:
+1. open-receipt MCP output schema excluded legal unresolved `active` / `scheduled` actions;
+2. unresolved side effects blocked only an exact desired-state repeat rather than all new writes to the same resource.
+
+Repaired at `d727ccca61ccad9c54750285e59dc7674d0981af`; hosted `campfire-ci 1524 / 35436153754 SUCCESS`; 23 focused tests.
+
+```text
+UNRESOLVED RESOURCE ACTION -> READ-ONLY RECONCILIATION BEFORE NEXT WRITE
+RESOURCE SERIALIZATION != EXACTLY-ONCE
+GREEN -> FREEZE AGAIN
+```
+
+No human gate crossed.
+
 ## Competition push — 18 September 2026 late — current
 
 Direct Mark direction: pursue competitions we can credibly win.
@@ -11,10 +30,10 @@ Campfire Relay draft PR #245:
 `Did It Happen? — Action Receipts for Alexa+`
 
 Exact current head:
-`ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`
+`d727ccca61ccad9c54750285e59dc7674d0981af`
 
 Hosted:
-`campfire-ci 1520 / 35405626849 SUCCESS`
+`campfire-ci 1524 / 35436153754 SUCCESS`
 
 Current product edge:
 ```text
@@ -28,7 +47,7 @@ WAS CONFIRMED != IS STILL TRUE
 
 Judge package, ~90s demo script, product-feedback draft, Amazon friction draft, standalone export and Devpost field packet are prepared.
 
-Hostile restart evidence preserved: at the superseded green head `109d67c...`, a ledger append interruption after the simulated write could leave only `INTENT/PENDING`; a new session ignored that status and issued a second write. Exact repaired head `ce9f3d4...` exposes durable `PENDING` as unresolved, blocks the duplicate, and routes recovery through read-only reconciliation. The regression holds external write count at one; all 22 focused tests passed inside hosted CI. This does not establish exactly-once execution for arbitrary external systems or filesystem failure modes.
+Hostile restart evidence preserved: at the superseded green head `109d67c...`, a ledger append interruption after the simulated write could leave only `INTENT/PENDING`; a new session ignored that status and issued a second write. Exact repaired head `d727ccc...` exposes durable `PENDING` as unresolved, blocks the duplicate, and routes recovery through read-only reconciliation. The regression holds external write count at one; all 23 focused tests passed inside hosted CI. This does not establish exactly-once execution for arbitrary external systems or filesystem failure modes.
 
 Open Source mini candidate: THR PR #41, with #43/#45 as related same-window hardening. Plausible eligibility only; not organiser-certified.
 
@@ -175,7 +194,7 @@ Detailed receipt: `coordination/build_ledger/FULL_COMSYNC_20260919.md`.
 - TRACE main `e7d46398...`; formal baseline still v0.3.0.
 - ME main `714907a...`; formal baseline still v0.7.0; #47 cold-reader result still absent.
 - THR main `1f5a591...`; exactly 4 public records; record 5 not earned.
-- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`; `campfire-ci 1520 / 35405626849 SUCCESS`.
+- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `d727ccca61ccad9c54750285e59dc7674d0981af`; `campfire-ci 1524 / 35436153754 SUCCESS`.
 - Amazon remains **GREEN SOURCE / HUMAN ONBOARDING-SUBMISSION GATE**.
 - Hack-Nation application batch closes **19 Sep**; answer bank ready; human gate only.
 - ARC small viability gate completed by owner subtraction: state graphs, reflection memory, hypothesis retrodiction and falsification-tested world models already have strong current ARC owners. **ARC BUILD = STOP**; no Kaggle/account gate crossed.
