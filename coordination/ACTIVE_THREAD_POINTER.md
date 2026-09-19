@@ -34,7 +34,7 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Immediate human gate — Hack-Nation 7
 
-Fresh 19 Sep check still showed **Batch 5 · Sep 19 / Apply now**.
+Fresh check: Batch 5 closes **19 Sep**, but the official Hackathon 7 table also lists **Batch 6 closing 26 Sep**. Apply-now route remains live.
 
 - answer bank ready;
 - no additional engineering prerequisite;
