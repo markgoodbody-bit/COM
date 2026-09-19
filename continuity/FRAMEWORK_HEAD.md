@@ -1,3 +1,11 @@
+## NVIDIA Claw — EvidenceWatch TEMPORAL REPAIR GREEN / clean ledger next
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_TEMPORAL_REPAIR_GREEN_20260919.md`
+
+Relay PR #248 head `9877d84b115df0f183c61d420642cef45048ca8c`; `campfire-ci 1583 / 35450727597 SUCCESS`; 24 focused tests. Legacy ledger completion + temporal source authority + analysis/fetch separation + broad-index discovery repairs are green.
+
+`NEXT = PRESERVE PRE-FIX LOCAL LEDGER -> CLEAN LIVE RUN -> CLEAN RESTART RUN`
+
 ## NVIDIA Claw — restart core PASS / discovered-source repair in CI
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_RESTART_PASS_DEFECT_20260919.md`
