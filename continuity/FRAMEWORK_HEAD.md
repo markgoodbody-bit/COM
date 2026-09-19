@@ -1,3 +1,11 @@
+## THR — W3C PROV interop microcase PASS / no new global types
+
+`coordination/build_ledger/THR_FRACTAL_PROV_INTEROP_20260919.md`
+
+THR draft PR #52 head `2ee2e777e7f6ab887402127c891ed98123d90068`; hosted integrity run 133 SUCCESS. Real validator self-description mapped to W3C PROV using local fragment IDs; Turtle parses as 42 triples. Generic process graph owner-subtracted to PROV; THR keeps warning/epistemic/authority residue. Public records remain 4; registries unchanged.
+
+`NEXT = INDEPENDENT HOSTILE REVIEW / REAL INDEPENDENT WITNESS / DISTINCT EARNED INTEROP CASE`
+
 ## THR — fractal strongest-owner subtraction complete / RFC narrowed
 
 `coordination/build_ledger/THR_FRACTAL_OWNER_SUBTRACTION_20260919.md`
