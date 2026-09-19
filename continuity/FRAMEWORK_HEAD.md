@@ -1,3 +1,11 @@
+## THR — fractal architecture RFC opened / no canon change
+
+`coordination/build_ledger/THR_FRACTAL_ARCHITECTURE_LANE_20260919.md`
+
+THR draft PR #52 head `d054d91508b6dd6dd70a2ce2b2cd5ae2305c2b63`; hosted integrity run 129 SUCCESS. Exploratory RFC + four-record falsification + independent-review packet + one real validator self-description microcase. Public records remain exactly 4; current registries/canon unchanged.
+
+`NEXT = INDEPENDENT HOSTILE REVIEW OR REAL NEW PRESSURE; DO NOT ADD GLOBAL TYPES BY MOMENTUM`
+
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
 `coordination/build_ledger/NVIDIA_CLAW_CC_FINAL_REVIEW_PACKET_20260919.md`
