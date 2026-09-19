@@ -1,12 +1,10 @@
-## THR — flak ancestry quarry complete / no public-record delta
+## THR — Nepos edition preservation route merged
 
-`coordination/build_ledger/THR_FLAK_ANCESTRY_NO_DELTA_20260919.md`
+`coordination/build_ledger/THR_NEPOS_PRESERVATION_ROUTE_MERGED_20260920.md`
 
-Public THR main remains `29acc6ee090fc0b2897e90a2fc33efeb41cc2770` with exactly four records. A bounded exact/near-exact English/German web search found no pre-12-August-2025 source establishing roughly 80% mortality among German flak crews. Nearby Allied-aircrew “one in five” and 80%-of-wounds structures are plausible mutation mechanisms only, not transmission evidence. The current flak record already preserves the appropriate population/measure boundary and uncertainty.
+Public THR main is now `09013b2ec47aa1fc60ab7fbd011a33de296ffc83` after merged PR #62. Hannibal advances to record version `0.1.2` only for source recoverability: DCC chapter 13 now carries `institutional_preservation_route_identified` via the related Bret Mulligan Dickinson College Commentaries edition at Open Book Publishers (DOI `10.11647/OBP.0068`) and an unrestricted Library of Congress digital copy. The exact DCC chapter-13 web representation is **not** established as archived or byte-identical to those carriers. Final head `628d2637798341dd5483ba059ed8b160f68f2982`, run 215 / `35476102293` SUCCESS. Historical findings unchanged; public record count remains 4.
 
-`DISPOSITION = PRE-AUGUST ORIGIN UNRESOLVED / WESTERMANN TRANSMISSION NOT ESTABLISHED / PUBLIC RECORD DELTA = NO`
-
-`NEXT = HOLD FOR A REAL EARLIER SOURCE, TRANSCRIPT/SOURCE LIST, CREATOR CITATION OR ARCHIVE CAPTURE; NO FIFTH RECORD / SPECULATIVE NODE / RFC POLISH BY MOMENTUM`
+`NEXT = STRONGEST UNRESOLVED LOAD-BEARING SOURCE PRESERVATION GAP OR REAL EXTERNAL CORRECTION; NO ARCHIVE STACK / RECORD 5 BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
