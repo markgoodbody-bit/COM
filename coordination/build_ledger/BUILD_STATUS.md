@@ -1,3 +1,15 @@
+## Live World target-boundary repair — 19 September 2026 — GREEN / FREEZE
+
+Current exact draft candidate:
+- Relay PR #173;
+- head `dad71bb70da16275b4ffd9acda70605699415973`;
+- `campfire-ci 1538 / 35437072566 SUCCESS`;
+- 15 focused tests.
+
+Real-world trigger: frontier cyber-evaluation incidents where declared simulation/scope diverged from reachable real systems. Strong external owners already own containment/allowlisting/monitoring. Project-specific result was a real draft Live World boundary defect, now repaired.
+
+No Relay main/Production change. No TRACE/ME change. Reopen only on concrete failure or deliberate promotion work.
+
 ## Amazon post-sync repair — 19 September 2026
 
 Receipt:
