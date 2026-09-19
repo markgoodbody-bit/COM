@@ -1,3 +1,7 @@
+## Hack-Nation 7 application — 19 September 2026 — HUMAN GATE LIVE
+
+Fresh official route still exposes today's Batch 5 application. Answer bank ready; no further build prerequisite. No registration, terms acceptance or application sent.
+
 ## TRACE/ME successor pressure — 19 September 2026 — NO SUCCESSOR BUILD
 
 `coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
