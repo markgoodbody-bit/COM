@@ -1,3 +1,9 @@
+## NVIDIA Prototype sampling — corrected
+
+`coordination/build_ledger/NVIDIA_PROTOTYPE_SAMPLING_CORRECTION_20260919.md`
+
+Current NVIDIA Prototype page supplied by Mark shows `temperature=0.5 / top_p=1`. EvidenceWatch adapter updated accordingly. Earlier `1.0 / 0.95` wording is stale; prior live provider witness remains valid.
+
 ## NVIDIA Claw — EvidenceWatch LIVE PROVIDER PASS / real-source heartbeat next
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_LIVE_PROVIDER_WITNESS_20260919.md`
