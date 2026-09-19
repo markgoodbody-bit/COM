@@ -6,6 +6,24 @@ Later live source and direct human direction win.
 
 ## CURRENT CHECKPOINT — 19 September 2026
 
+### Alexa blocked-receipt recovery — GREEN DRAFT
+
+Receipt: `coordination/build_ledger/AMAZON_BLOCKED_RECEIPT_RECOVERY_20260919.md`.
+
+A persisted request that had been blocked before any write could be reconciled later as if its outcome were unknown, manufacturing a phantom open action after the original blocker resolved and preventing a legitimate later action.
+
+Bounded repair merged into the Alexa draft candidate through Relay PR #246:
+- exact PR #245 head `7a4c501dedb228c7387336fa267356e9cde27f8f`;
+- `campfire-ci 1539 / 35437873204 SUCCESS`;
+- 24 focused action-receipt tests;
+- blocked request remains historical `BLOCKED_OPEN_RECEIPT` / `writeAttempted=false`;
+- readback performs no world read or ledger mutation;
+- a later explicit action is no longer blocked by phantom uncertainty.
+
+`RELAY MAIN / PRODUCTION = UNCHANGED`  
+`ALEXA+ HOST VALIDATION = NOT ESTABLISHED`  
+`CANDIDATE = GREEN / FREEZE AGAIN`
+
 ### Live World field-pressure repair — RESOLVED GREEN DRAFT
 
 Receipt: `coordination/build_ledger/LIVE_WORLD_DECLARED_TRANSPORT_BOUNDARY_20260919.md`.  
