@@ -1,3 +1,27 @@
+## CURRENT CHECKPOINT — PAC compensation redress pressure — 19 September 2026
+
+Field:
+`field/PAC_COMPENSATION_REDRESS_SECOND_HARM_20260919.md`
+
+Falsification:
+`falsification/PAC_COMPENSATION_ME_TRACE_PRESSURE_20260919.md`
+
+Fresh Public Accounts Committee evidence across government compensation schemes pressures a core project question: can a correction/redress route become a second harm-producing system through same-body control, proof burden, delay, uncertainty, poor communication and lost institutional learning?
+
+Result:
+
+```text
+REAL FIELD PRESSURE = YES
+DOMAIN OWNER = STRONG
+ME v0.7.0 REPRESENTATIONAL GAP = NOT OBSERVED
+TRACE v0.3.0 REPRESENTATIONAL GAP = NOT OBSERVED
+EMPIRICAL GROUNDING = STRENGTHENED
+NEW PRIMITIVE / WORDING PATCH / RELEASE = NO
+DISPOSITION = KEEP FIELD WITNESS / STOP CANON WORK
+```
+
+Survey limitation preserved: 572 PAC respondents recruited through relevant organisations; Infected Blood respondents were the majority. Survey percentages are not treated as population prevalence estimates.
+
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
