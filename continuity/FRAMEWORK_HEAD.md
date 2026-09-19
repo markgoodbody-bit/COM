@@ -4,6 +4,17 @@ Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**
 Updated: **19 September 2026 — post FULL COMSYNC + Amazon hostile repair**  
 Later live source and direct human direction win.
 
+## CURRENT IN-FLIGHT CHECKPOINT — 19 September 2026
+
+Receipt: `coordination/build_ledger/LIVE_WORLD_DECLARED_TRANSPORT_BOUNDARY_20260919.md`.
+
+Fresh world pressure from frontier cyber-evaluation incidents re-earned review of dormant Campfire Relay PR #173. Concrete candidate defect found: semantic `worldId=1f916.ai` was not cryptographically/structurally bound to the adapter's actual configurable HTTP origin.
+
+Bounded patch is at Relay head `929ea298bd26a04964b62bf69310b5e45f349a51`; hosted `campfire-ci 1527 / 35436665469` is **IN PROGRESS**. Do not call it green yet.
+
+CC unavailable until 20 Sep per Mark; do not block.
+
+
 ## Post-FULL-COMSYNC build delta — 19 September 2026
 
 Receipt: `coordination/build_ledger/AMAZON_ALEXA_RESOURCE_UNCERTAINTY_REPAIR_20260919.md`.
