@@ -1,3 +1,7 @@
+## THR digital-preservation quarry — 19 September 2026 — 4x OWNER FOUND / STOP
+
+No human-record mutation. Digital fragility alone is not a THR admission rule. Four candidate families were routed to stronger active preservation owners.
+
 ## THR Anthropic correction-lineage quarry — 19 September 2026 — OWNER FOUND / STOP
 
 Primary owner already preserves original disclosure + linked revision + reason/search-aperture change. THR would currently duplicate rather than recover.
