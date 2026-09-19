@@ -1,3 +1,11 @@
+## THR — fractal strongest-owner subtraction complete / RFC narrowed
+
+`coordination/build_ledger/THR_FRACTAL_OWNER_SUBTRACTION_20260919.md`
+
+THR draft PR #52 head `a1deaf1580c86a58099c5c48c782459a29e22de8`; hosted integrity run 131 SUCCESS. W3C PROV, C2PA, VC/DID, in-toto/SLSA, Sigstore/Rekor, Memento and Software Heritage/SWHID owner-subtract generic layers. RFC now explicitly interoperability-first: THR preserves joins/residue rather than replacing stronger standards.
+
+`NEXT = INDEPENDENT HOSTILE REVIEW / REAL WITNESS / CONCRETE INTEROP MICROCASE; NO NEW GLOBAL TYPES BY MOMENTUM`
+
 ## THR — fractal architecture RFC opened / no canon change
 
 `coordination/build_ledger/THR_FRACTAL_ARCHITECTURE_LANE_20260919.md`
