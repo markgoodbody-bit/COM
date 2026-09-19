@@ -2,8 +2,9 @@
 
 Direct Mark direction: pursue competitions we can credibly win.
 
-Current detailed receipt:
-`coordination/build_ledger/COMPETITION_AMAZON_FREEZE_ARC_QUARRY_20260918_LATE.md`
+Current detailed receipts:
+- `coordination/build_ledger/COMPETITION_AMAZON_FREEZE_ARC_QUARRY_20260918_LATE.md`
+- `coordination/competition_quarry/ARC_PRIZE_OWNER_SUBTRACTION_20260919.md`
 
 ### Amazon Alexa+ — REPAIRED GREEN SOURCE CANDIDATE
 
@@ -37,7 +38,7 @@ No Amazon/Devpost registration, terms acceptance, account/credit action, public 
 ### Next competition allocations
 
 - **Hack-Nation 7:** public-safe application packet ready; next application batch ends 19 Sep; human application gate.
-- **ARC Prize 2026:** HIGH-VALUE QUARRY only. Small public-baseline viability spike earned; no Kaggle terms/submission and no TRACE/ME-to-ARC transplant.
+- **ARC Prize 2026:** OWNER FOUND / BUILD STOP. The bounded viability pass found current competitors already using the proposed state-graph, reflection, retrodiction and falsification mechanisms; no project-specific delta survived and the Kaggle gate is not earned. Receipt: `coordination/competition_quarry/ARC_PRIZE_OWNER_SUBTRACTION_20260919.md`.
 - **Hack Apertus:** wake 1 Oct; no judged result pre-run.
 - **NVIDIA Claw / Dwelly / Stripe / No.10 / VAST:** prepared human registration/attendance gates.
 - **Open Agent / Nebius:** hold for exact track/stack fit.
