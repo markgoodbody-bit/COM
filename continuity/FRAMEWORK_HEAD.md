@@ -1,3 +1,26 @@
+## CURRENT CHECKPOINT — THR Anthropic correction-lineage quarry — 19 September 2026
+
+Receipt:
+`coordination/build_ledger/THR_ANTHROPIC_CORRECTION_OWNER_PASS_20260919.md`
+
+Candidate: Anthropic's public correction from three disclosed cyber-evaluation incidents to four after a later search found transcripts missed by the initial ~141k-run agentic review.
+
+Owner subtraction result:
+
+```text
+ORIGINAL JULY DISCLOSURE = STILL PUBLIC
+SEPTEMBER CORRECTION = SEPARATE DATED PRIMARY SOURCE
+LATER SOURCE LINKS EARLIER SOURCE = YES
+WHY EARLIER SEARCH MISSED EVIDENCE = EXPLICIT
+SEARCH APERTURE EXPANSION = EXPLICIT
+COUNT + INTERPRETIVE REVISION = EXPLICIT
+SPECIFIC THR RECOVERABILITY GAP = NO
+THR RECORD 5 = NOT EARNED
+THR MUTATION = NONE
+```
+
+Strongest owner already preserves the correction lineage adequately. Route outward / stop.
+
 ## CURRENT CHECKPOINT — PAC compensation redress pressure — 19 September 2026
 
 Field:
