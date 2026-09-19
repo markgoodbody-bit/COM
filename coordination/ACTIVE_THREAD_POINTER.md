@@ -1,3 +1,11 @@
+## THR digital-preservation record-5 quarry — STOP
+
+`coordination/build_ledger/THR_RECORD5_DIGITAL_PRESERVATION_QUARRY_20260919.md`
+
+Conifer, a conserved Flash artwork, i-DAT and FutureEverything all returned strong active preservation/legacy owners. No specific unowned lineage gap survived.
+
+`THR RECORDS = 4 / RECORD 5 NOT EARNED`
+
 ## THR record-5 quarry — Anthropic correction lineage — STOP
 
 `coordination/build_ledger/THR_ANTHROPIC_CORRECTION_OWNER_PASS_20260919.md`
