@@ -165,3 +165,45 @@ Next after registration:
 2. map requirements against this candidate;
 3. OWNER FOUND / NO DELTA / PIVOT / BUILD;
 4. if BUILD, create the smallest end-to-end NemoClaw-compatible vertical slice first.
+
+
+## Further owner-subtraction — later 19 September
+
+A deeper pass over NVIDIA's public Developer Community Chief-of-Staff example materially narrows the proposed `Continuity Steward` seam.
+
+That NVIDIA example already includes:
+- read-only live GitHub querying;
+- cross-source gap analysis;
+- host-side persistent state across sandbox lifecycles;
+- explicit snapshot / restore;
+- auto-heal;
+- role-lens routing;
+- different-user / different-channel continuity demonstrations after rebuild.
+
+Therefore the broad claim:
+
+```text
+LONG-RUNNING PROJECT CONTINUITY STEWARD = OUR DISTINCT EDGE
+```
+
+is **not earned** from public evidence.
+
+A narrower possible residue remains:
+- explicit separation of role continuity from runtime/session identity;
+- authority/gate continuity across successor apertures;
+- bounded hot-state compaction specifically to prevent continuity memory itself becoming replay burden;
+- source-currentness invalidation before acting.
+
+But this residue is currently a **question**, not a product thesis.
+
+Updated disposition:
+
+```text
+NVIDIA OWNER OVERLAP = MATERIAL
+CONTINUITY STEWARD AS PRE-BRIEF BUILD = HOLD
+REGISTERED BRIEF = REQUIRED
+NO CODE BUILD YET
+PIVOT / OWNER FOUND / BUILD = DECIDE AFTER BRIEF
+```
+
+This correction is evidence that the owner-subtraction process is working.
