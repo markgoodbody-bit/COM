@@ -1,0 +1,123 @@
+name: ATRS Reader Lens task pack
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/READER_USE_PROTOCOL*.md'
+      - 'competition/atrs_answerability/reader_use_pack*.py'
+      - 'competition/atrs_answerability/test_reader_use_pack_v3.py'
+      - '.github/workflows/atrs-reader-use-pack.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  build-task-pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax and v3 regression locks
+        run: |
+          python -m py_compile \
+            competition/atrs_answerability/reader_use_pack.py \
+            competition/atrs_answerability/reader_use_pack_v3.py \
+            competition/atrs_answerability/reader_use_pack_v3_1.py \
+            competition/atrs_answerability/test_reader_use_pack_v3.py
+          python -m unittest competition/atrs_answerability/test_reader_use_pack_v3.py -v
+          python - <<'PY'
+          import importlib.util, sys
+          from pathlib import Path
+          p=Path('competition/atrs_answerability/reader_use_pack_v3_1.py')
+          spec=importlib.util.spec_from_file_location('v31',p)
+          m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)
+          hra=m.v3.ROUTE_BUNDLES['hra-proportionate-review']
+          wilton=m.v3.ROUTE_BUNDLES['wilton-data-cleaning']
+          assert hra[0]['channel'] == 'queries@hra.nhs.uk'
+          assert hra[1]['channel'] == 'NOT STATED'
+          assert wilton[0]['actor'] == 'individual'
+          print('v3.1 source-key narrowing PASS')
+          PY
+      - name: Download corrected derived report
+        uses: actions/download-artifact@v4
+        with:
+          name: atrs-version-aware-derived-35268849195
+          path: /tmp/derived
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: markgoodbody-bit/COM
+          run-id: 35268849195
+      - name: Download exact frozen source HTML
+        uses: actions/download-artifact@v4
+        with:
+          name: atrs-reproducible-corpus-35257984573
+          path: /tmp/source
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: markgoodbody-bit/COM
+          run-id: 35257984573
+      - name: Build v3.1 evidence-bound three-condition pack
+        run: |
+          python competition/atrs_answerability/reader_use_pack_v3_1.py \
+            /tmp/derived/atrs_full_version_aware.json \
+            /tmp/source/atrs_html \
+            --out-dir /tmp/reader-use-pack-v3
+      - name: Assert v3 schedules, parity, route keys and separation
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json
+          from collections import Counter, defaultdict
+          from pathlib import Path
+          p=Path('/tmp/reader-use-pack-v3')
+          participant=p/'participant_pack'
+          private=p/'private_key'
+          m=json.load(open(participant/'manifest.json'))
+          k=json.load(open(private/'answer_key.json'))
+          assert m['status'] == 'V3_METHOD_PACK_NO_PARTICIPANT_RESULT'
+          assert k['status'].startswith('PRIVATE_PROVISIONAL_ROUTE_LINKED_KEY_')
+          assert k['scored_cases'] == 9
+          assert len(m['schedules']) == 6
+          assert not (participant/'answer_key.json').exists()
+          assert not (private/'manifest.json').exists()
+          assert 'same published Appeals-field passage' in m['information_parity']
+          exposure=defaultdict(Counter)
+          positions=defaultdict(Counter)
+          for schedule in m['schedules']:
+              rows=list(csv.DictReader(open(participant/f"schedule_{schedule['sequence_id']}.csv")))
+              assert len(rows) == 9
+              counts=Counter(r['condition'] for r in rows)
+              assert counts == Counter({'FULL':3,'EXCERPT':3,'LENS':3}), (schedule['sequence_id'],counts)
+              assert [int(r['position']) for r in rows] == list(range(1,10))
+              for r in rows:
+                  exposure[r['case_id']][r['condition']] += 1
+                  positions[int(r['position'])][r['condition']] += 1
+                  target=participant/r['target_path']
+                  assert target.exists()
+                  assert hashlib.sha256(target.read_bytes()).hexdigest() == r['target_sha256']
+          assert all(exposure[c][cond] == 2 for c in exposure for cond in ('FULL','EXCERPT','LENS')), exposure
+          assert all(positions[pos][cond] == 2 for pos in positions for cond in ('FULL','EXCERPT','LENS')), positions
+          assert len(m['surface_manifest']) == 10
+          assert m['non_scored_sentinel']['case_id'] == 'dbt-find-exporters'
+          scored=[c for c in k['cases'] if c['primary_scored']]
+          assert len(scored) == 9
+          assert all(c['route_bundles'] for c in scored)
+          assert 'arbitrary cross-products are invalid' in k['route_bundle_rule']
+          hra=next(c for c in scored if c['case_id']=='hra-proportionate-review')
+          assert hra['route_bundles'][1]['channel'] == 'NOT STATED'
+          wilton=next(c for c in scored if c['case_id']=='wilton-data-cleaning')
+          assert wilton['route_bundles'][0]['actor'] == 'individual'
+          # Participant surfaces must never contain the private answer key.
+          assert not any('route_bundles' in f.read_text(errors='ignore') for f in participant.rglob('*') if f.is_file() and f.suffix in {'.html','.json','.txt','.csv'})
+          print('v3.1 three-condition method gate PASS')
+          PY
+      - name: Preserve v3.1 method pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-reader-use-pack-v3-1-${{ github.run_id }}
+          path: /tmp/reader-use-pack-v3
+          retention-days: 30
