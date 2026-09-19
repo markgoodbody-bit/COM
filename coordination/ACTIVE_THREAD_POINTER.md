@@ -1,3 +1,11 @@
+## Hack-Nation application form — clarification gate
+
+`coordination/build_ledger/HACK_NATION_FORM_SCHEMA_MISMATCH_20260919.md`
+
+The live application form requires LinkedIn, degree, institution and graduation year, but Mark has no university degree and does not use LinkedIn; graduation dropdown has no N/A option. Do not invent academic history or revive LinkedIn. Public event material does not establish student-only eligibility. Ask host how non-degree professionals should complete the form.
+
+`APPLICATION SENT = NO`
+
 ## Hack-Nation 7 — READY TO APPLY / HUMAN FORM GATE
 
 `coordination/build_ledger/HACK_NATION_APPLICATION_READY_20260919.md`
