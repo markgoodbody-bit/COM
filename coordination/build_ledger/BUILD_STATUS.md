@@ -1,10 +1,10 @@
-## THR — Heritage Crafts no-delta merged / RFC verifier hold
+## THR — impact-route fifth repair / verifier hold
 
-`coordination/build_ledger/THR_HERITAGE_CRAFTS_NO_DELTA_MERGED_20260919.md`
+`coordination/build_ledger/THR_RFC_IMPACT_ROUTE_REPAIR_HOLD_20260919.md`
 
-Public THR main is now `094c498ac1f0d395a65f775d254eb180facfcd35` after merged PR #53: one append-only Heritage Crafts operational source-check receipt, `record_evidence_promoted=false`; four public records and the Sieve/Riddle finding remain unchanged. Visible Heritage Crafts status is still CRITICALLY ENDANGERED / Critical; live-origin/byte identity remain unestablished; preservation route remains INSUFFICIENT EVIDENCE. Draft RFC PR #52 remains separately at `d5621c7e701825bfd743b823aa1c97b352dec7cb`, run 157 SUCCESS, with impact-helper repair verification pending on comment `5745019308`. Public served registry was not independently reverified through the web aperture.
+Public THR main `094c498ac1f0d395a65f775d254eb180facfcd35` includes merged PR #53 only as a Heritage Crafts operational source-check receipt (`record_evidence_promoted=false`); four records/findings remain unchanged and served registry deployment is **not independently verified**. Draft RFC PR #52 is now `a37424e270b48102f77c42f68493bc5e244e63db`, run 162 / `35468504244` SUCCESS. Framework follow-up found and repaired one smaller malformed `assertion.evidence.source_ids` routing case; external follow-up verification is requested on PR #52 comment `5745198258`.
 
-`NEXT = FOLLOW REAL RFC VERIFIER / LATE PR53 DEFECT IF ANY; OTHERWISE MOVE ONLY ON CONSEQUENTIAL FIELD PRESSURE — NO MAINTENANCE COVERAGE BY MOMENTUM`
+`NEXT = FOLLOW REAL VERIFIER RETURN; IF PASS_WITH_CEILINGS HOLD RFC, IF REPAIR APPLY SMALLEST RED/GREEN FIX; NO NEW TYPES / MAINTENANCE SWEEP BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
