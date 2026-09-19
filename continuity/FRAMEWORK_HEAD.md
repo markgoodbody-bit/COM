@@ -4,18 +4,43 @@ Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**
 Updated: **19 September 2026 — post FULL COMSYNC + Amazon hostile repair**  
 Later live source and direct human direction win.
 
-## CURRENT IN-FLIGHT CHECKPOINT — 19 September 2026
+## CURRENT CHECKPOINT — 19 September 2026
 
-Receipt: `coordination/build_ledger/LIVE_WORLD_DECLARED_TRANSPORT_BOUNDARY_20260919.md`.
+### Live World field-pressure repair — RESOLVED GREEN DRAFT
 
-Fresh world pressure from frontier cyber-evaluation incidents re-earned review of dormant Campfire Relay PR #173. Concrete candidate defect found: semantic `worldId=1f916.ai` was not cryptographically/structurally bound to the adapter's actual configurable HTTP origin.
+Receipt: `coordination/build_ledger/LIVE_WORLD_DECLARED_TRANSPORT_BOUNDARY_20260919.md`.  
+Field: `field/FRONTIER_CYBER_EVAL_DECLARED_WORLD_TARGET_DRIFT_20260919.md`.
 
-Bounded 1F916 repair is green at Relay head `929ea298bd26a04964b62bf69310b5e45f349a51`; hosted `campfire-ci 1527 / 35436665469 SUCCESS`. PR #173 remains draft/not Production. Next bounded test asks whether the generic core itself must require actual-target identity from every adapter.
+Fresh world pressure from frontier cyber-evaluation incidents re-earned review of dormant Relay PR #173. A real declared-world/actual-target authorization defect was found and repaired.
 
-CC unavailable until 20 Sep per Mark; do not block.
+Exact draft head: `dad71bb70da16275b4ffd9acda70605699415973`.  
+Hosted: `campfire-ci 1538 / 35437072566 SUCCESS`.  
+Focused Live World tests: 15.
 
-Generic Live World follow-on remains **IN FLIGHT**, now at Relay head `dad71bb70da16275b4ffd9acda70605699415973`: adapter `authorityScope()` binding + exact persisted-authorization match + pre-observation/per-action target-drift brakes + mid-batch drift regression + truthful pre-write `writeAttempted=false` + 1F916 no-redirect transport. Exact-head hosted CI still needs classification; the earlier source-specific repair is superseded by this stronger current head.
+Repair now binds generic adapter authority scope and exact persisted human authorization before fresh observation/write; rechecks scope before every action; binds 1F916 to canonical HTTPS with no redirects; and preserves truthful pre-write `writeAttempted=false`.
 
+`RELAY MAIN / PRODUCTION = UNCHANGED`  
+`NEW TRACE/ME PRIMITIVE = NO`  
+`PR #173 = DRAFT / FREEZE AFTER GREEN`
+
+CC unavailable until 20 Sep per Mark; do not block on CC.
+
+### Short-chat continuity cadence
+
+Because active build work is consuming enough context to force frequent new tabs:
+
+```text
+MATERIAL BUILD / REPAIR / STOP / HUMAN-GATE CHANGE
+-> WRITE DATED RECEIPT IF DETAIL MATTERS
+-> COMPACT FRAMEWORK_HEAD CHECKPOINT
+-> THEN CONTINUE DEEP WORK
+
+HEAD = CURRENT ROUTING
+DATED RECEIPTS + GIT = DETAIL/HISTORY
+DO NOT WAIT FOR END-OF-TAB TO CHECKPOINT MATERIAL STATE
+```
+
+This is continuity discipline, not a new project purpose or bureaucracy.
 
 ## Post-FULL-COMSYNC build delta — 19 September 2026
 
