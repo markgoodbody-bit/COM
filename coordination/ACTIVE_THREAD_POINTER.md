@@ -1,10 +1,10 @@
-## THR — impact-route verifier closed / field-pressure hold
+## THR — flak Overmans boundary merged / move to next field pressure
 
-`coordination/build_ledger/THR_RFC_IMPACT_ROUTE_VERIFIER_CLOSED_20260919.md`
+`coordination/build_ledger/THR_FLAK_OVERMANS_MERGED_20260919.md`
 
-Draft RFC PR #52 exact head `a37424e270b48102f77c42f68493bc5e244e63db`; hosted integrity run 162 / `35468504244` SUCCESS. Codex follow-up comment `5745211646` returned **PASS_WITH_CEILINGS** after re-running the focused helper tests and all 20 registered sources through the current helper. The demonstrated routing defects are closed within scope; helper churn stops. Public THR main remains `094c498ac1f0d395a65f775d254eb180facfcd35` / 4 records; merged Heritage Crafts receipt remains operational-only with `record_evidence_promoted=false`.
+Public THR main is now `6e2b5ed6a207a8a98f2989b5409d3cfb97ac492a` after merged PR #54. Flak record v0.2.6 now records a bounded Oldenbourg/De Gruyter Overmans preview check: **sample-based analysis drawn from individual Deutsche Dienststelle/WASt records**, with organisation/branch table-list material including Luftwaffe-level rows. Relevant result-table values and any flak-crew-specific breakdown remain uninspected. Primary 80% assertion evidence is unchanged; claim remains `unsupported_in_sources_checked`, true aggregate rate unknown. Codex review `5745312284` = PASS_WITH_CEILINGS / not NO_DELTA. Four public records remain four. RFC #52 remains separate draft/not canon.
 
-`NEXT = REAL FIELD PRESSURE ONLY — MULTI-RECORD FAN-OUT / CURRENT RECORD COUNTEREXAMPLE / INDEPENDENT WITNESS / STRONGER OWNER / REAL HANDOFF; OTHERWISE HOLD RFC`
+`NEXT = STOP FLAK CHURN ABSENT STRONGER INSPECTABLE SOURCE; MOVE TO REAL FIELD PRESSURE IN AN EXISTING RECORD — NO RECORD 5 / ONTOLOGY BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
