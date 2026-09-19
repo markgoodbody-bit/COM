@@ -1,3 +1,20 @@
+## CURRENT CHECKPOINT — THR digital-preservation quarry — 19 September 2026
+
+Receipt:
+`coordination/build_ledger/THR_RECORD5_DIGITAL_PRESERVATION_QUARRY_20260919.md`
+
+Four serious digital-preservation candidates were owner-subtracted: Rhizome Conifer transition, *Bite the Bullet* Flash conservation, i-DAT decommissioning, and FutureEverything closure/archive.
+
+```text
+REAL DIGITAL RISK = YES
+STRONGER PRESERVATION / LEGACY OWNER = YES IN ALL FOUR
+SPECIFIC UNOWNED THR LINEAGE GAP = NO
+THR RECORD 5 = NOT EARNED
+THR MUTATION = NONE
+```
+
+Digital fragility does not lower the record-admission threshold. Leave THR at four records and return to wider work.
+
 ## CURRENT CHECKPOINT — THR Anthropic correction-lineage quarry — 19 September 2026
 
 Receipt:
