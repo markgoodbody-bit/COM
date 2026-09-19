@@ -19,7 +19,8 @@ https://luma.com/z3za7zow
 
 Observed current facts:
 - event: 3–4 October 2026;
-- Hack-Nation site still shows **Batch 5 · Sep 19, 2026** and **Apply now**;
+- Hack-Nation site shows **Batch 5 · Sep 19, 2026** and **Apply now**;
+- the dedicated Hackathon 7 application-round table also lists **Batch 6 · Sep 26, 2026**, with decision communication Sep 28, so Sep 19 is **not** the final application deadline;
 - free to enter;
 - online participation available;
 - 15+ in-person hubs advertised;
