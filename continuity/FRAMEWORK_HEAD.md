@@ -10,7 +10,7 @@ Receipt: `coordination/build_ledger/LIVE_WORLD_DECLARED_TRANSPORT_BOUNDARY_20260
 
 Fresh world pressure from frontier cyber-evaluation incidents re-earned review of dormant Campfire Relay PR #173. Concrete candidate defect found: semantic `worldId=1f916.ai` was not cryptographically/structurally bound to the adapter's actual configurable HTTP origin.
 
-Bounded patch is at Relay head `929ea298bd26a04964b62bf69310b5e45f349a51`; hosted `campfire-ci 1527 / 35436665469` is **IN PROGRESS**. Do not call it green yet.
+Bounded 1F916 repair is green at Relay head `929ea298bd26a04964b62bf69310b5e45f349a51`; hosted `campfire-ci 1527 / 35436665469 SUCCESS`. PR #173 remains draft/not Production. Next bounded test asks whether the generic core itself must require actual-target identity from every adapter.
 
 CC unavailable until 20 Sep per Mark; do not block.
 
