@@ -1,10 +1,12 @@
-## THR — Hannibal + flak field repairs merged / origin search next
+## THR — flak ancestry quarry complete / no public-record delta
 
-`coordination/build_ledger/THR_HANNIBAL_FLAK_MERGED_20260919.md`
+`coordination/build_ledger/THR_FLAK_ANCESTRY_NO_DELTA_20260919.md`
 
-Public THR main is now `29acc6ee090fc0b2897e90a2fc33efeb41cc2770` with exactly four records. PR #57 merged Hannibal 0.1.1 with the corrected Perseus lemma-index/source-literal boundary. PR #58 merged flak 0.2.7 after Codex narrowed one ancestry overclaim and supplied carrier-page locators; flak remains `unsupported_in_sources_checked` / historical truth `unknown`. Shared state: 27 sources, 8 assertions.
+Public THR main remains `29acc6ee090fc0b2897e90a2fc33efeb41cc2770` with exactly four records. A bounded exact/near-exact English/German web search found no pre-12-August-2025 source establishing roughly 80% mortality among German flak crews. Nearby Allied-aircrew “one in five” and 80%-of-wounds structures are plausible mutation mechanisms only, not transmission evidence. The current flak record already preserves the appropriate population/measure boundary and uncertainty.
 
-`NEXT = REAL FIELD WORK: SEARCH PRE-AUGUST-2025 ORIGIN OF THE GERMAN FLAK-CREW 80% CLAIM; NUMERICAL PROXIMITY != TRANSMISSION; NO FIFTH RECORD / RFC POLISH BY MOMENTUM`
+`DISPOSITION = PRE-AUGUST ORIGIN UNRESOLVED / WESTERMANN TRANSMISSION NOT ESTABLISHED / PUBLIC RECORD DELTA = NO`
+
+`NEXT = HOLD FOR A REAL EARLIER SOURCE, TRANSCRIPT/SOURCE LIST, CREATOR CITATION OR ARCHIVE CAPTURE; NO FIFTH RECORD / SPECULATIVE NODE / RFC POLISH BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
@@ -176,7 +178,7 @@ History belongs in dated receipts + Git.
 
 - TRACE main `e7d46398dc00ead931b0d5cae98518c1bcf304a3` — formal baseline v0.3.0;
 - Mechanical Ethics main `714907a4d0af7bd702b0ab92786aa858213812b4` — formal baseline v0.7.0;
-- Human Record main `1f5a5919938f385f43f1e2383bdfbb52807b206e` — four public records;
+- Human Record main `29acc6ee090fc0b2897e90a2fc33efeb41cc2770` — four public records;
 - Campfire Relay main `32143937d6a642a6f5e2404d368fd09aa4d54da9`.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
