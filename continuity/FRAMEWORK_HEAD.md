@@ -1,8 +1,26 @@
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **18 September 2026 PM — post drift-x100 repair + counter-aperture passes**  
+Updated: **19 September 2026 — post FULL COMSYNC + Amazon hostile repair**  
 Later live source and direct human direction win.
+
+## Post-FULL-COMSYNC build delta — 19 September 2026
+
+Receipt: `coordination/build_ledger/AMAZON_ALEXA_RESOURCE_UNCERTAINTY_REPAIR_20260919.md`.
+
+A fresh Framework hostile read of Amazon PR #245 found two concrete defects on the green source candidate:
+- the open-receipt MCP schema excluded legal unresolved `active` / `scheduled` states;
+- unresolved writes were blocked only for the same desired state, allowing a different write against the same resource before reconciliation.
+
+Small repair only:
+- unresolved side effects now serialize per resource until read-only reconciliation closes them;
+- the MCP schema now covers all legal action states;
+- focused suite = 23 tests;
+- exact head = `d727ccca61ccad9c54750285e59dc7674d0981af`;
+- hosted `campfire-ci 1524 / 35436153754 SUCCESS`.
+
+`CONCRETE DEFECT -> SMALLEST REPAIR -> GREEN -> FREEZE AGAIN`
+
 
 ## FULL COMSYNC delta — 19 September 2026
 
@@ -12,7 +30,7 @@ Detailed receipt: `coordination/build_ledger/FULL_COMSYNC_20260919.md`.
 - TRACE main `e7d46398...`; formal baseline still v0.3.0.
 - ME main `714907a...`; formal baseline still v0.7.0; #47 cold-reader result still absent.
 - THR main `1f5a591...`; exactly 4 public records; record 5 not earned.
-- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`; `campfire-ci 1520 / 35405626849 SUCCESS`.
+- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `d727ccca61ccad9c54750285e59dc7674d0981af`; `campfire-ci 1524 / 35436153754 SUCCESS`.
 - Amazon remains **GREEN SOURCE / HUMAN ONBOARDING-SUBMISSION GATE**.
 - Hack-Nation application batch closes **19 Sep**; answer bank ready; human gate only.
 - ARC small viability gate completed by owner subtraction: state graphs, reflection memory, hypothesis retrodiction and falsification-tested world models already have strong current ARC owners. **ARC BUILD = STOP**; no Kaggle/account gate crossed.
