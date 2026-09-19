@@ -1,10 +1,10 @@
-## THR — impact-routing smoke pass / verifier hold
+## THR — RFC verifier hold + Heritage Crafts no-delta field check
 
-`coordination/build_ledger/THR_FRACTAL_IMPACT_ROUTING_SMOKE_PASS_20260919.md`
+`coordination/build_ledger/THR_HERITAGE_CRAFTS_NO_DELTA_20260919.md`
 
-THR draft PR #52 head `d5621c7e701825bfd743b823aa1c97b352dec7cb`; hosted integrity run 157 / `35467239067` SUCCESS. Impact routing remains a read-only union of direct `used_by_records` + assertion-derived record routes. Codex found four helper defects; all are repaired with 15 hostile/unit tests plus 2 current-registry smoke tests. Source registry remains explicitly incomplete relative to record-local evidence. No new dependency type / universal protocol / record 5 is earned. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+Two bounded THR lanes are live. RFC PR #52 remains at `d5621c7e701825bfd743b823aa1c97b352dec7cb`, run 157 SUCCESS, with impact-helper repair verification pending on comment `5745019308`; no more helper churn unless that review returns a concrete defect. Separate maintenance PR #53 is at `22579e0306d7a432af2a5fc10169c5985ba3adc8`, run 160 SUCCESS: Heritage Crafts retrieval surface still shows Sieve/Riddle as CRITICALLY ENDANGERED / Critical (NO DELTA on visible status), but live-origin/byte identity are not established and preservation lookup remains INSUFFICIENT EVIDENCE. PR #53 changes only the append-only source-check ledger with `record_evidence_promoted=false`; semantic review pending on comment `5745076242`. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
 
-`NEXT = HOLD IMPACT HELPER FOR REPAIR VERIFICATION ON THR #52 COMMENT 5745019308; PASS -> RETURN TO REAL FIELD PRESSURE, REPAIR -> SMALLEST FIX ONLY`
+`NEXT = FOLLOW REAL REVIEW RETURN; OTHERWISE HOLD BOTH LANES / NO TYPE, RECORD OR EVIDENCE PROMOTION BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
