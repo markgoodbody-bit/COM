@@ -1,3 +1,13 @@
+## Hack-Nation 7 — host clarification sent / wait
+
+`coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260919.md`
+
+Mark has contacted the organiser about the required LinkedIn/degree/institution/graduation fields. Application remains unsubmitted; eligibility remains unknown pending reply.
+
+`HOST CONTACT = SENT`  
+`APPLICATION = NOT SUBMITTED`  
+`NEXT ACTION = WAIT FOR ORGANISER RESPONSE`
+
 ## Hack-Nation application form — clarification gate
 
 `coordination/build_ledger/HACK_NATION_FORM_SCHEMA_MISMATCH_20260919.md`
