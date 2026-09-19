@@ -1,3 +1,21 @@
+## NVIDIA Claw — REGISTERED / full brief next
+
+`coordination/build_ledger/NVIDIA_CLAW_REGISTRATION_CONFIRMED_20260919.md`
+
+Mark is confirmed registered. NVIDIA's confirmation email exposes the full challenge-brief route. No submission build starts until the exact brief/judging/submission requirements are ingested.
+
+`REGISTRATION = CONFIRMED`  
+`NEXT = FULL BRIEF -> OWNER SUBTRACTION -> BUILD/PIVOT`
+
+## Hack-Nation — Luma support replied / organiser still outstanding
+
+`coordination/build_ledger/HACK_NATION_LUMA_SUPPORT_CORRECTION_20260919.md`
+
+Earlier state is corrected: Mark contacted Luma support, not the Hack-Nation organiser. Luma cannot answer eligibility/form-field policy and directs users to Contact the Host.
+
+`APPLICATION = NOT SUBMITTED`  
+`ORGANISER CLARIFICATION = STILL NEEDED`
+
 ## NVIDIA Claw — public preflight complete / register for brief
 
 `coordination/build_ledger/NVIDIA_CLAW_PUBLIC_STACK_PREFLIGHT_20260919.md`
@@ -17,16 +35,6 @@ Live page confirms UK-wide remote eligibility, no degree/student requirement, no
 
 `REGISTER = HUMAN GATE`  
 `BUILD = WAIT FOR FULL BRIEF`
-
-## Hack-Nation 7 — host clarification sent / wait
-
-`coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260919.md`
-
-Mark has contacted the organiser about the required LinkedIn/degree/institution/graduation fields. Application remains unsubmitted; eligibility remains unknown pending reply.
-
-`HOST CONTACT = SENT`  
-`APPLICATION = NOT SUBMITTED`  
-`NEXT ACTION = WAIT FOR ORGANISER RESPONSE`
 
 ## Hack-Nation application form — clarification gate
 
