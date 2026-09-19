@@ -1,3 +1,20 @@
+## CURRENT CHECKPOINT — THR public-delivery aperture status — 19 September 2026
+
+Receipt:
+`coordination/build_ledger/THR_PUBLIC_DELIVERY_APERTURE_STATUS_20260919.md`
+
+Direct no-delta packet is explicitly included in a main-push workflow that retrieves eight public objects and requires exact byte equality. This aperture cannot observe push-triggered workflow results and cannot resolve `thehumanrecord.net`.
+
+```text
+VERIFIER PATH = CONFIRMED
+EXACT 1f5a591 PUSH RESULT = UNOBSERVED HERE
+CURRENT SERVED BYTE MATCH = UNOBSERVED HERE
+FAILED LOCAL READ != FAILED PUBLICATION
+SOURCE / WORKFLOW REPAIR = NO
+```
+
+No THR mutation earned.
+
 ## CURRENT CHECKPOINT — THR digital-preservation quarry — 19 September 2026
 
 Receipt:
