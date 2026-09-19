@@ -1,16 +1,10 @@
-## THR — two live field candidates / reviews pending
+## THR — Hannibal + flak field repairs merged / origin search next
 
-`coordination/build_ledger/THR_FIELD_CANDIDATES_HANNIBAL_FLAK_20260919.md`
+`coordination/build_ledger/THR_HANNIBAL_FLAK_MERGED_20260919.md`
 
-Public THR main remains `6e5a2eff69e17e85a743d54501eac4ab0a1d527b` / four records.
+Public THR main is now `29acc6ee090fc0b2897e90a2fc33efeb41cc2770` with exactly four records. PR #57 merged Hannibal 0.1.1 with the corrected Perseus lemma-index/source-literal boundary. PR #58 merged flak 0.2.7 after Codex narrowed one ancestry overclaim and supplied carrier-page locators; flak remains `unsupported_in_sources_checked` / historical truth `unknown`. Shared state: 27 sources, 8 assertions.
 
-PR #57 Hannibal is repaired after Codex caught a lemma-vs-source-literal over-upgrade. Exact head `99e2cbb8fd3dc07ec0316970ff50460f9d463cdc`, run 187 / `35471893328` SUCCESS. Current claim is only: Perseus passage-vocabulary index associates 3.33.17–18 with lemma `Ἀννίβας`; Framework did not directly inspect the inflected Greek source-text spelling. Follow-up review pending on comment `5745550856`.
-
-PR #58 flak exact head `adbf50ee80ed9e5ed0e516010b7b99dad631db65`, run 182 / `35471799195` SUCCESS. Targeted full-text Westermann search finds an 80-percent flak-casualty statistic in RAF/Bomber Command context plus 1,110,900 late-1944 flak-arm personnel strength; neither establishes German flak-crew mortality or ancestry to the viral claim. Hostile review pending on comment `5745578189`.
-
-Fresh Overmans p.255 secondary reproduction is NO DELTA: ~433k Luftwaffe deaths still does not isolate flak crews and primary table values were not directly inspected.
-
-`NEXT = FOLLOW #57/#58 REVIEWS -> SMALLEST REPAIR OR BOUNDED MERGE DECISION; CONTINUE REAL FIELD SOURCES, NO FIFTH RECORD / RFC POLISH BY MOMENTUM`
+`NEXT = REAL FIELD WORK: SEARCH PRE-AUGUST-2025 ORIGIN OF THE GERMAN FLAK-CREW 80% CLAIM; NUMERICAL PROXIMITY != TRANSMISSION; NO FIFTH RECORD / RFC POLISH BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
