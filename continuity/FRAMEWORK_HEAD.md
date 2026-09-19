@@ -1,7 +1,7 @@
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **19 September 2026 — post FULL COMSYNC + Amazon hostile repair**  
+Updated: **19 September 2026 — post Live World field-pressure repair / short-chat cadence**  
 Later live source and direct human direction win.
 
 ## CURRENT CHECKPOINT — 19 September 2026
