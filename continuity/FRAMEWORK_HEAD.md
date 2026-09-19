@@ -1,3 +1,12 @@
+## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
+
+`coordination/build_ledger/NVIDIA_CLAW_CC_FINAL_REVIEW_PACKET_20260919.md`
+
+EvidenceWatch exact candidate remains `ee362ce0105565815ad2695f12db0481fab5f638`, hosted green, unattended live witness PASS. Mark wants CC to give one final independent review before recording/submission. Packet prepared with explicit functional/claim/security/competition/video falsification targets.
+
+`TONIGHT = HOLD / NO SUBMISSION`  
+`TOMORROW = CC FINAL REVIEW -> REPAIR IF EARNED -> RECORD VIDEO -> FINAL FORM REVIEW`
+
 ## NVIDIA Claw — EvidenceWatch UNATTENDED PASS / video next
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_UNATTENDED_PASS_20260919.md`
