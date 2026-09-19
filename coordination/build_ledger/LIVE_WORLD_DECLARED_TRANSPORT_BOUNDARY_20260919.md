@@ -1,6 +1,6 @@
 # Live World declared-world / transport-target repair — 19 September 2026
 
-Status: **GREEN CANDIDATE REPAIR / HOSTED CI PASS / NOT RELAY MAIN / NOT PRODUCTION**
+Status: **RESOLVED GREEN DRAFT-CANDIDATE REPAIR / NOT RELAY MAIN / NOT PRODUCTION / NO TRACE-ME CHANGE**
 
 > HOW CAN WE MAKE A BETTER FUTURE?
 
@@ -143,3 +143,54 @@ Repair on exact Relay head:
 This remains an application-layer boundary. DNS/TLS/host/network compromise is not claimed solved.
 
 All hosted CI results from earlier heads are superseded. Exact-head CI for `dad71bb...` remains to be classified.
+
+
+## Final exact result
+
+Relay PR #173 exact head:
+`dad71bb70da16275b4ffd9acda70605699415973`
+
+Hosted:
+`campfire-ci 1538 / 35437072566 SUCCESS`
+
+Focused Live World test surface:
+- core: 8;
+- 1F916 access: 3;
+- 1F916 act/witness: 4;
+- total: 15.
+
+Intermediate exact heads 1530 / 1533 / 1536 also passed before later hostile findings moved the candidate.
+
+Final repair stack:
+1. bind `worldId=1f916.ai` to canonical HTTPS transport;
+2. refuse alternate/path/query/credential-bearing bases;
+3. make canonical base/origin immutable;
+4. refuse HTTP redirects;
+5. require generic adapter `authorityScope()`;
+6. core hashes/persists authority scope itself;
+7. supplied authorization must exactly match the persisted human-approved record;
+8. validate authorization before fresh observation;
+9. check current adapter scope before execution observation and every action;
+10. stop mid-batch if target scope changes;
+11. preserve `writeAttempted=false` for failures before `adapter.act()`.
+
+Field witness:
+`field/FRONTIER_CYBER_EVAL_DECLARED_WORLD_TARGET_DRIFT_20260919.md`
+
+Practical production check:
+- Live World / Campfire Square module is not present on Relay `main`;
+- this was a pre-promotion candidate defect, not a discovered Production exposure.
+
+Final disposition:
+```text
+REAL FIELD PRESSURE = YES
+STRONG DOMAIN OWNERS = YES
+PROJECT-SPECIFIC DRAFT DEFECT = YES -> REPAIRED
+EXACT-HEAD HOSTED CI = GREEN
+RELAY MAIN / PRODUCTION = UNCHANGED
+NEW TRACE/ME PRIMITIVE = NO
+GENERAL NEW PRODUCT = NO
+CANDIDATE = FREEZE / OBSERVE / REOPEN ONLY ON CONCRETE FAILURE OR PROMOTION WORK
+```
+
+`CONCRETE DEFECT -> SMALLEST BOUNDARY -> HOSTILE RETEST -> GREEN -> FREEZE`
