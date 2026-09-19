@@ -14,7 +14,7 @@ Bounded 1F916 repair is green at Relay head `929ea298bd26a04964b62bf69310b5e45f3
 
 CC unavailable until 20 Sep per Mark; do not block.
 
-Generic Live World follow-on remains **IN FLIGHT**, now at Relay head `8a4cc2498a024f68cb495fdacd34ffeae739ab6a`: adapter `authorityScope()` binding + exact persisted-authorization match + pre-observation/per-action target-drift brakes + mid-batch drift regression + truthful pre-write `writeAttempted=false`. Exact-head hosted CI still needs classification; source-specific 1F916 repair remains separately green.
+Generic Live World follow-on remains **IN FLIGHT**, now at Relay head `dad71bb70da16275b4ffd9acda70605699415973`: adapter `authorityScope()` binding + exact persisted-authorization match + pre-observation/per-action target-drift brakes + mid-batch drift regression + truthful pre-write `writeAttempted=false` + 1F916 no-redirect transport. Exact-head hosted CI still needs classification; the earlier source-specific repair is superseded by this stronger current head.
 
 
 ## Post-FULL-COMSYNC build delta — 19 September 2026
