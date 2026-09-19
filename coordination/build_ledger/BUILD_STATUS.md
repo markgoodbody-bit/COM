@@ -1,3 +1,9 @@
+## THR Anthropic correction-lineage quarry — 19 September 2026 — OWNER FOUND / STOP
+
+Primary owner already preserves original disclosure + linked revision + reason/search-aperture change. THR would currently duplicate rather than recover.
+
+No human-record mutation. Public catalogue remains exactly four records.
+
 ## PAC compensation redress pressure — 19 September 2026 — RESISTED / FIELD KEEP
 
 - owner: Public Accounts Committee / NAO / compensation-policy and scheme bodies;
