@@ -1,3 +1,11 @@
+## NVIDIA Claw — official rules reviewed / Airtable fields next
+
+`coordination/build_ledger/NVIDIA_CLAW_OFFICIAL_RULES_REVIEW_20260919.md`
+
+UK 18+ individual eligibility confirmed in Section 2. Rules contain two preserved textual inconsistencies: Section 3 says "Spain"; Section 5 says "PST" while registered page shows Oct 3 07:59 BST. No project ownership assignment or broad project licence found in supplied rules. Privacy/publicity, winner-document, tax and Delaware/Santa-Clara terms noted.
+
+`NEXT = INSPECT AIRTABLE FORM FIELDS -> FINAL DEMO/SUBMISSION PACKAGE`
+
 ## NVIDIA Claw — EvidenceWatch CORE LIVE WITNESS COMPLETE / submission work next
 
 `coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_CLEAN_RESTART_PASS_20260919.md`
