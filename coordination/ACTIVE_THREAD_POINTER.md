@@ -1,3 +1,9 @@
+## Hack-Nation 7 — live human application gate — 19 September 2026
+
+`coordination/build_ledger/HACK_NATION_APPLICATION_GATE_REFRESH_20260919.md`
+
+Official route rechecked today: Batch 5 Sep 19 remains displayed with Apply now; approval required; online/hub event Oct 3–4; no idea/team required before acceptance. Public-safe answer bank ready. No application/account/terms action taken.
+
 ## THR digital-preservation record-5 quarry — STOP
 
 `coordination/build_ledger/THR_RECORD5_DIGITAL_PRESERVATION_QUARRY_20260919.md`
