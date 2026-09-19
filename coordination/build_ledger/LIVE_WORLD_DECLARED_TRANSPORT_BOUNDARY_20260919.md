@@ -101,3 +101,28 @@ The earlier run 1530 belongs to a superseded head once this branch moved. Hosted
 SOURCE-SPECIFIC GREEN != GENERIC-CORE GREEN
 FIELD PRESSURE -> CONCRETE REPRODUCER -> CORE INVARIANT CANDIDATE
 ```
+
+
+## Further bounded hardening — in flight
+
+Static review of the per-action loop exposed two further testable edges:
+
+1. **Mid-batch scope drift** — if the actual adapter target changes after action 1, action 2 must stop before its next observation or write.
+2. **Write-attempt evidence honesty** — an exception during observation/action-preflight occurred before `adapter.act()`, but the old catch path reported `writeAttempted=true`.
+
+Repairs now on exact Relay head:
+`8a4cc2498a024f68cb495fdacd34ffeae739ab6a`
+
+Changes:
+- per-action scope regression for target drift between action 1 and action 2;
+- local `writeAttempted` state begins only immediately before entering `adapter.act()`;
+- pre-write failures now record `phase=before-write` and `writeAttempted=false`;
+- documentation distinguishes attempted actuation from proof of remote commit.
+
+Any workflow result from an earlier generic-scope head is superseded once this branch moved. Exact-head hosted CI for `8a4cc249...` remains to be classified.
+
+```text
+PRE-WRITE FAILURE != WRITE ATTEMPT
+ACTION 1 AUTHORIZED != ACTION 2 TARGET MAY DRIFT
+CURRENT HEAD > SUPERSEDED CI
+```
