@@ -1,11 +1,16 @@
-## NVIDIA Claw — REGISTERED / full brief next
+## NVIDIA Claw — EvidenceWatch ACTIVE / exact-head green
 
-`coordination/build_ledger/NVIDIA_CLAW_REGISTRATION_CONFIRMED_20260919.md`
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_GREEN_20260919.md`
 
-Mark is confirmed registered. NVIDIA's confirmation email exposes the full challenge-brief route. No submission build starts until the exact brief/judging/submission requirements are ingested.
+Relay draft PR #248:
+- head `2e62c2ed640f7bd8fe036f9a05ba0b26b84e2c0a`;
+- `campfire-ci 1554 / 35448098624 SUCCESS`;
+- 15 focused tests;
+- browser demo + long-running engine + bounded discovery + source-authority guards;
+- Relay main/Production unchanged.
 
-`REGISTRATION = CONFIRMED`  
-`NEXT = FULL BRIEF -> OWNER SUBTRACTION -> BUILD/PIVOT`
+`ACTIVE BUILD = EVIDENCEWATCH`  
+`NEXT = OWNER SUBTRACTION -> LIVE NVIDIA WITNESS -> DEPLOY/PACKAGE IF EARNED`
 
 ## Hack-Nation — Luma support replied / organiser still outstanding
 
