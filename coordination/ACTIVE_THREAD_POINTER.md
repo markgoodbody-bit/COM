@@ -1,16 +1,17 @@
-## NVIDIA Claw — EvidenceWatch SOURCE GREEN / live probe next
+## NVIDIA Claw — EvidenceWatch SOURCE FROZEN GREEN / provider gate
 
-`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_PREFLIGHT_GREEN_20260919.md`
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_SOURCE_FREEZE_20260919.md`
 
 Relay draft PR #248:
-- head `f4c5a51850b6e183c7718715f2e6a0cc6a80f4d6`;
-- `campfire-ci 1563 / 35448429677 SUCCESS`;
-- 15 focused tests;
-- source core frozen pending real NVIDIA inference evidence;
+- head `dea07788e361d018ed31a2e0d1171fd5a2785092`;
+- `campfire-ci 1566 / 35448597496 SUCCESS`;
+- 17 focused tests;
+- explicit state-authority boundary;
+- feature/source core frozen;
 - Relay main/Production unchanged.
 
-`ACTIVE BUILD = EVIDENCEWATCH`  
-`NEXT = LOCAL NVIDIA BUILD PROBE -> LIVE SOURCE RUN -> DEPLOY/PACKAGE IF EARNED`
+`NEXT = MARK ACCEPTS/USES NVIDIA API TRIAL SERVICE -> LOCAL KEY -> npm run probe`  
+`DO NOT PASTE API KEY INTO CHAT / GITHUB / COM`
 
 ## Hack-Nation — Luma support replied / organiser still outstanding
 
