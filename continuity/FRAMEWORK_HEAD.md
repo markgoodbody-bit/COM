@@ -1,10 +1,10 @@
-## THR — RFC verifier hold + Heritage Crafts no-delta field check
+## THR — Heritage Crafts no-delta merged / RFC verifier hold
 
-`coordination/build_ledger/THR_HERITAGE_CRAFTS_NO_DELTA_20260919.md`
+`coordination/build_ledger/THR_HERITAGE_CRAFTS_NO_DELTA_MERGED_20260919.md`
 
-Two bounded THR lanes are live. RFC PR #52 remains at `d5621c7e701825bfd743b823aa1c97b352dec7cb`, run 157 SUCCESS, with impact-helper repair verification pending on comment `5745019308`; no more helper churn unless that review returns a concrete defect. Separate maintenance PR #53 is at `22579e0306d7a432af2a5fc10169c5985ba3adc8`, run 160 SUCCESS: Heritage Crafts retrieval surface still shows Sieve/Riddle as CRITICALLY ENDANGERED / Critical (NO DELTA on visible status), but live-origin/byte identity are not established and preservation lookup remains INSUFFICIENT EVIDENCE. PR #53 changes only the append-only source-check ledger with `record_evidence_promoted=false`; semantic review pending on comment `5745076242`. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` / 4 records.
+Public THR main is now `094c498ac1f0d395a65f775d254eb180facfcd35` after merged PR #53: one append-only Heritage Crafts operational source-check receipt, `record_evidence_promoted=false`; four public records and the Sieve/Riddle finding remain unchanged. Visible Heritage Crafts status is still CRITICALLY ENDANGERED / Critical; live-origin/byte identity remain unestablished; preservation route remains INSUFFICIENT EVIDENCE. Draft RFC PR #52 remains separately at `d5621c7e701825bfd743b823aa1c97b352dec7cb`, run 157 SUCCESS, with impact-helper repair verification pending on comment `5745019308`. Public served registry was not independently reverified through the web aperture.
 
-`NEXT = FOLLOW REAL REVIEW RETURN; OTHERWISE HOLD BOTH LANES / NO TYPE, RECORD OR EVIDENCE PROMOTION BY MOMENTUM`
+`NEXT = FOLLOW REAL RFC VERIFIER / LATE PR53 DEFECT IF ANY; OTHERWISE MOVE ONLY ON CONSEQUENTIAL FIELD PRESSURE — NO MAINTENANCE COVERAGE BY MOMENTUM`
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
