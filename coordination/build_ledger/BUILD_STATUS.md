@@ -1,3 +1,11 @@
+## THR — second owner subtraction / RFC narrower again
+
+`coordination/build_ledger/THR_FRACTAL_OWNER_SUBTRACTION_2_20260919.md`
+
+THR draft PR #52 head `62cdc3af4b055945f79a3d20fce5398984e4130d`; hosted integrity run 135 / `35465104244` SUCCESS. CIDOC CRM, CRMdig, CRMinf and PREMIS subtract more generic event/process/inference/preservation territory; nanopublications supply an existing assertion/provenance packaging pattern. Codex microcase audit repair now preserves run attempt + later metadata-observation time without backfilling history. Public THR main remains `1f5a5919938f385f43f1e2383bdfbb52807b206e` with exactly 4 records.
+
+`NEXT = ATTACK THE SURVIVING JOIN / INDEPENDENCE / CORRECTION-PROPAGATION RESIDUE; NO NEW GLOBAL TYPES BY MOMENTUM`
+
 ## THR — W3C PROV interop microcase PASS / no new global types
 
 `coordination/build_ledger/THR_FRACTAL_PROV_INTEROP_20260919.md`
