@@ -1,10 +1,11 @@
-## NVIDIA API trial — authorised / local key next
+## NVIDIA Claw — EvidenceWatch LIVE PROVIDER PASS / real-source heartbeat next
 
-`coordination/build_ledger/NVIDIA_API_TRIAL_AUTHORISED_20260919.md`
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_LIVE_PROVIDER_WITNESS_20260919.md`
 
-Mark explicitly authorised NVIDIA API trial use for the EvidenceWatch competition prototype. No production use, spend, sensitive inputs or credential publication authorised.
+Mark ran the exact credential-safe probe successfully against NVIDIA Build / Nemotron 3 Super. Structured correction analysis parsed and ended `NVIDIA_PROBE_OK`. API key was not exposed.
 
-`NEXT = GENERATE LOCAL NVIDIA BUILD KEY -> RUN ONE PROBE -> RETURN SANITISED OUTPUT`
+`LIVE NVIDIA PROVIDER WITNESS = PASS`  
+`NEXT = PUBLIC REAL-SOURCE HEARTBEAT -> RESTART RECOVERY -> PACKAGE/DEPLOY IF EARNED`
 
 ## NVIDIA Claw — EvidenceWatch SOURCE FROZEN GREEN / provider gate
 
