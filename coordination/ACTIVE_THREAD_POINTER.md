@@ -1,3 +1,16 @@
+## NVIDIA Claw — EvidenceWatch REAL-SOURCE RUNNER GREEN
+
+`coordination/build_ledger/NVIDIA_CLAW_EVIDENCEWATCH_REAL_SOURCE_RUNNER_GREEN_20260919.md`
+
+Relay draft PR #248:
+- head `513487a69033fca9e8102ef77ee6538fb695e87e`;
+- `campfire-ci 1571 / 35449632481 SUCCESS`;
+- 18 focused tests;
+- live NVIDIA provider witness already PASS;
+- bounded live Anthropic owner-source runner ready.
+
+`NEXT = MARK PULLS BRANCH -> RUNS scripts/run-live-once.ps1 -> RETURNS SANITISED OUTPUT`
+
 ## NVIDIA Prototype sampling — corrected
 
 `coordination/build_ledger/NVIDIA_PROTOTYPE_SAMPLING_CORRECTION_20260919.md`
