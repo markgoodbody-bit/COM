@@ -1,8 +1,22 @@
+## Post-FULL-COMSYNC build delta — 19 September 2026
+
+Receipt: `coordination/build_ledger/AMAZON_ALEXA_RESOURCE_UNCERTAINTY_REPAIR_20260919.md`.
+
+Amazon PR #245 remains the same bounded competition object, but a fresh hostile read earned two repairs:
+- unresolved actions now block any further write to the same resource until read-only reconciliation closes the uncertainty;
+- `list_open_action_receipts` now advertises all legal action states.
+
+Exact head: `d727ccca61ccad9c54750285e59dc7674d0981af`.  
+Hosted: `campfire-ci 1524 / 35436153754 SUCCESS`.  
+Focused tests: 23.
+
+No competition/account/terms/deployment/submission gate crossed. Candidate re-frozen.
+
 ## Competition push — 18 September 2026 late — current
 
 Current bounded competition thread:
 
-1. **Amazon Alexa+** — source candidate REPAIRED GREEN in Campfire Relay PR #245; exact head `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`; hosted `campfire-ci 1520 / 35405626849 SUCCESS`. A hostile restart probe found that persisted `INTENT/PENDING` could be ignored after a post-write ledger-append interruption, allowing a second write. The exact repair now treats durable `PENDING` as unresolved for discovery and duplicate suppression, with read-only reconciliation; 22 focused tests pass. This is conservative recovery, not an exactly-once claim. The package also retains explicit unknown/no-retry, historical-vs-current confirmation repair, judge-facing evidence timeline and standalone submission material.
+1. **Amazon Alexa+** — source candidate REPAIRED GREEN in Campfire Relay PR #245; exact head `d727ccca61ccad9c54750285e59dc7674d0981af`; hosted `campfire-ci 1524 / 35436153754 SUCCESS`. A hostile restart probe found that persisted `INTENT/PENDING` could be ignored after a post-write ledger-append interruption, allowing a second write. The exact repair now treats durable `PENDING` as unresolved for discovery and duplicate suppression, with read-only reconciliation; 23 focused tests pass. This is conservative recovery, not an exactly-once claim. The package also retains explicit unknown/no-retry, historical-vs-current confirmation repair, judge-facing evidence timeline and standalone submission material.
 2. **Hack-Nation 7** — application packet ready; next approval batch closes **19 September**; human registration/approval gate only, no more engineering prerequisite.
 3. **ARC Prize 2026** — OWNER-SUBTRACTED / STOP. The small viability gate found current ARC owners already using state graphs, reflection memory, history-retrodicting hypotheses and falsification-tested executable world models. No project-specific algorithmic delta earned; no Kaggle gate crossed.
 4. **Hack Apertus** — hold until 1 October live challenge/rules gate.
@@ -37,7 +51,7 @@ Detailed receipt: `coordination/build_ledger/FULL_COMSYNC_20260919.md`.
 - TRACE main `e7d46398...`; formal baseline still v0.3.0.
 - ME main `714907a...`; formal baseline still v0.7.0; #47 cold-reader result still absent.
 - THR main `1f5a591...`; exactly 4 public records; record 5 not earned.
-- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `ce9f3d4029f4aed8de6f39e166eafc14ac69da2e`; `campfire-ci 1520 / 35405626849 SUCCESS`.
+- Relay main `32143937...`; Amazon PR #245 exact repaired-green head `d727ccca61ccad9c54750285e59dc7674d0981af`; `campfire-ci 1524 / 35436153754 SUCCESS`.
 - Amazon remains **GREEN SOURCE / HUMAN ONBOARDING-SUBMISSION GATE**.
 - Hack-Nation application batch closes **19 Sep**; answer bank ready; human gate only.
 - ARC small viability gate completed by owner subtraction: state graphs, reflection memory, hypothesis retrodiction and falsification-tested world models already have strong current ARC owners. **ARC BUILD = STOP**; no Kaggle/account gate crossed.
