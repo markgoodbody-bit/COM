@@ -26,14 +26,14 @@ NEXT = RECORD VIDEO
 -> MARK EXPLICIT SUBMISSION GATE
 ```
 
-## WORLD / REAL USE — THR pressure cycle close
+## WORLD / REAL USE — THR documentation reviews returned
 
-`coordination/build_ledger/WORLD_THR_PRESSURE_CYCLE_20260920_0100.md`
+`coordination/build_ledger/WORLD_THR_DOCUMENTATION_REVIEWS_20260920.md`
 
-Fresh outward pressure produced **two bounded documentation candidates and three owner/no-delta results**.
+Codex completed the requested bounded hostile reviews at the exact draft heads:
 
-- **PR #70 — source genesis:** `OBSERVED_AT != GENERATED_AT`; public/fetchable evidence may have been created downstream of the claim. Strong owners: W3C PROV / C2PA. Draft head `6ee3faf75ea8b0198b7ef1f79d882c8d097dba7f`. Review pending.
-- **PR #72 — missing-value reason:** `MISSING VALUE != ONE STATE`; reason for missingness can change next action. CIDOC issue 723 is active; cross-domain transfer found in UK education + CDC. Draft head `08e0bb9e836046f52b8fbadb54ce765afd2b0fa4`. Review pending.
+- **Human Record PR #70 — source genesis:** `PASS_WITH_CEILINGS` at `6ee3faf75ea8b0198b7ef1f79d882c8d097dba7f`. Current THR observation records do not establish source generation time; the draft keeps W3C PROV/C2PA as stronger owners and adds no source type, registry field, schema or validator.
+- **Human Record PR #72 — missing-value reason:** `PASS_WITH_CEILINGS` at `08e0bb9e836046f52b8fbadb54ce765afd2b0fa4`. The draft preserves action-relevant record state without adopting CIDOC issue 723's unresolved modelling vocabulary and adds no enum, schema or validator.
 - **HMRC corrections:** OWNER FOUND / NO THR DELTA.
 - **Scholarly corrections:** OWNER FOUND / NO THR DELTA.
 - **Anthropic source laundering:** existing THR independence model survives; NO DELTA.
@@ -43,10 +43,9 @@ PUBLIC RECORDS = 4
 RECORD 5 = NOT EARNED
 NEW TYPES = NO
 SCHEMA / VALIDATOR GROWTH = NO
-EXTERNAL HUMAN CONTACT = NONE
+MERGE APPROVAL = NOT SUPPLIED BY THESE REVIEWS
 
-PR #70 + #72 = PARK UNTIL BOUNDED REVIEW
-NO REVIEW RETURN -> DO NOT POLL LOOP
+PR #70 + #72 = REVIEW RETURNED / REMAIN DRAFT
 NEXT = WORLD / REAL USE
 ```
 
