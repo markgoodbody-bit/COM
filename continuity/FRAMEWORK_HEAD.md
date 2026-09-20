@@ -1,34 +1,21 @@
-## EvidenceWatch — standalone private repository verified / clear to record
+## EvidenceWatch — standalone private repo accepted
 
-`coordination/build_ledger/EVIDENCEWATCH_STANDALONE_REPOSITORY_20260920.md`
+`coordination/build_ledger/EVIDENCEWATCH_STANDALONE_REPO_ACCEPTED_20260920.md`
 
-Mark's direction to move EvidenceWatch into its own clean repository before recording is complete.
+Current product source is now **`markgoodbody-bit/evidencewatch`** — private — main `a0d0a9e58156b67ec00ad95c758dc1dc3eebc5a7` — fresh one-commit history — 26-file standalone surface — `35/35` local tests — hosted CI `35507545045 SUCCESS`.
 
-- standalone repository: `markgoodbody-bit/evidencewatch` — **private**;
-- standalone main: `a0d0a9e58156b67ec00ad95c758dc1dc3eebc5a7`;
-- source snapshot: Relay PR #248 head `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`;
-- engine, UI, runners and helper scripts: byte-identical to the reviewed source snapshot;
-- standalone GitHub Actions run `35507545045`: **SUCCESS**;
-- fresh NVIDIA/public-web live call after extraction: **NO**.
+Codex created it; CC independently fresh-cloned/verified every blob/history/scan/test; Framework independently verified live main/tree/README/package/CI. COM #402 closed completed.
 
-The repaired-head live witness remains valid for its exact source snapshot. Byte-identical extraction plus fresh standalone CI does not manufacture a new live witness or broader validation. Preserve the awkward model `status=contradicted` field ceiling and the one-shot runner's no-lock/sequential-only limitation.
+Campfire Relay PR #248 remains build/witness ancestry, not current product source.
 
 ```text
-NEXT = USE STANDALONE REPOSITORY
--> RECORD DETERMINISTIC BROWSER DEMO
--> USE SAVED EXACT-SNAPSHOT LIVE/HEARTBEAT EVIDENCE WITH ITS CEILINGS
--> CREDENTIAL/CLAIM REVIEW
+NEXT = VIDEO FROM STANDALONE REPO
+-> CLAIM / CREDENTIAL / PERSONAL-DATA REVIEW
 -> FINAL AIRTABLE PAYLOAD REVIEW
 -> MARK EXPLICIT SUBMISSION GATE
 
-NO PUBLIC VISIBILITY CHANGE
-NO SUBMISSION
-NO MORE ENGINE CHURN ABSENT NEW DEFECT
-
-THR #70/#72 = PARKED
-FLAK = STOP
-RECORD 5 = NOT EARNED
-WORLD / REAL USE = PRIMARY OUTSIDE RECORDING GATE
+PUBLIC REPO VISIBILITY = HOLD / PRIVATE
+NO MORE MANUAL FILE TRANSPORT FOR MARK
 ```
 
 ## WORLD / REAL USE — THR pressure cycle close
