@@ -80,6 +80,34 @@ DELEGATION := {
 `consequential`
 : work affecting account/settings, spend, credentials, release/canon/licence, external institutional contact, live actuation, Production adoption, or another explicitly named consequential domain. It requires a named authorization request and exact approval token/value. Routine phrases such as `proceed` are not sufficient unless the request explicitly defined them as the unique approval token for that request.
 
+
+### External human attention is a burden surface
+
+External institutional contact is consequential for more than representation or spend. A request can consume another person's reading, interpretation, routing, retrieval, correspondence or research time even when it is cheap for the caller to send.
+
+Before asking an external human to do work, prefer the following bounded sequence:
+
+```text
+MATERIAL QUESTION
+-> REASONABLE MACHINE / PUBLIC-SOURCE WORK FIRST
+-> STRONGEST APPROPRIATE HUMAN OWNER
+-> SMALLEST ANSWERABLE REQUEST
+-> MAKE DECLINE / REDIRECT EASY
+-> EXPOSE POSSIBLE COST OR COMMITMENT
+-> REQUEST-SPECIFIC HUMAN AUTHORIZATION
+```
+
+Where possible, ask an archive, maintainer, expert or institution for the route, record, access mechanism or bounded fact they uniquely own before asking them to perform analysis that the project can do itself.
+
+```text
+CHEAP_FOR_CALLER != CHEAP_FOR_RECIPIENT
+MESSAGE_SENT != ATTENTION_OWED
+EXTERNAL_REQUEST != MACHINE_QUERY
+OWNER_RESPONSE != ENDORSEMENT
+```
+
+This is a burden/authority discipline, not a prohibition on human contact. High-value requests may be justified; the point is to account for the human work they create.
+
 ### Claims bind to objects/heads
 
 A claim records the exact head/object version it describes. When the head moves, the claim becomes historical until re-measured; it does not become a reputation score attached to the participant.
