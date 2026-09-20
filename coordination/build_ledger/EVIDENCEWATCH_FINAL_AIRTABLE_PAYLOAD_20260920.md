@@ -11,19 +11,21 @@ Current standalone product source:
 ```text
 repo: markgoodbody-bit/evidencewatch
 visibility: PRIVATE
-main: e6ced8a453680b9a143c86de164bee907e6506b2
-hosted CI: 35508380750 / SUCCESS
+main: 79e4d5270844342b74fd4e0c1e2439ab17772dd6
+hosted CI: 35508764265 / SUCCESS
 runtime source snapshot with repaired-head live witness:
 00017d190bb6a9813cb64f1f30a17b27e4ce10ca
 ```
 
-Recording pack is merged into standalone main. It adds only:
+Recording pack and final clinical UI are merged into standalone main. Current main includes:
 - sanitised live-witness evidence;
 - evidence-bound recording guide;
 - deterministic demo launcher;
-- PowerShell syntax parsing in CI.
+- PowerShell syntax parsing in CI;
+- isolated demo-ledger/port launcher repair;
+- clinical monitoring interface with visible Demo mode boundary.
 
-No runtime engine/analyzer/fetcher change was introduced by the recording pack.
+The final UI pass did not change engine/analyzer/ledger/live-runner semantics.
 
 ## Identity / eligibility fields
 
