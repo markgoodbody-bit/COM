@@ -1,49 +1,23 @@
-## THR — Koch note-75 role repaired / PR #64 green
+## THR — x100 falsification complete / flak seam saturated
 
-`coordination/build_ledger/THR_FLAK_KOCH_ROLE_REPAIR_20260920.md`
+`coordination/build_ledger/THR_FLAK_FALSIFICATION_X100_DRIFT_20260920.md`
 
-Public-source exhaustion of the Koch branch found one earned subtraction: Westermann explicitly uses Koch pp. 42–44 in note 75 for a separate 854-flak / 1,525-fighter aircraft-destruction comparison; the checked note does not explicitly identify Koch as the source of the 60/890 personnel-casualty figure. Lawful public full text of Koch pp. 42–44 was not recovered, so `KOCH NOT EXPLICITLY SOURCE != KOCH PROVED NOT TO CONTAIN FIGURES`.
+PR #64 current candidate: `5b0e983f44520f3774ba60ea723a235b71645bb4`; hosted integrity run 223 / `35478092259` SUCCESS; independent Codex review comment `5746324900` = `PASS_WITH_CEILINGS`. One control defect found by the x100 pass (stale PR-body head/check) was repaired.
 
-PR #64 exact head `5b0e983f44520f3774ba60ea723a235b71645bb4`; hosted integrity run 223 / `35478092259` SUCCESS. Latest independent hostile-review target: comment `5746318182`.
+Falsification tally: **70 SURVIVES / 13 CEILINGS / 10 WARNINGS / 1 REPAIR / 6 STOPS**.
 
-No external human was contacted. Bundesarchiv draft remains narrowed and unsent.
+Drift result: the bounded flak case is useful, but further excavation now has rising opportunity cost and risks turning one worked example into the project objective. The remaining archival gap is not needed to justify PR #64. Bundesarchiv draft remains narrowed and **UNSENT**; external contact stays held unless a future defined question makes those pages materially load-bearing.
 
-`NEXT = FOLLOW INDEPENDENT PR64 REVIEW; STOP KOCH CHURN ABSENT NEW EVIDENCE.`
-
-## THR — human-attention gate / public-source pass
-
-`coordination/build_ledger/THR_HUMAN_ATTENTION_PUBLIC_SOURCE_PASS_20260920.md`
-
-External institutional contact remains consequential, now with an explicit burden reason: a message can consume another person's attention/work even when sending it is trivial for us. Public-machine work should precede contact where reasonable; ask external humans for the smallest fact/access route they uniquely own rather than casually transferring analysis work.
-
-Flak public-source pass: Westermann note 75 remains confirmed in the checked reproduction; N 529 collection and other individual N 529 units are publicly recoverable, but N 529/7 itself was not recovered from the searched public indexed surfaces. Current invenio presents a login/registration gate; no account was created. The unsent Bundesarchiv Gmail draft was narrowed to **access / catalogue-pointer / digitisation route only**, with archive staff explicitly not asked to evaluate the historical figures.
-
-`EXTERNAL_REQUEST != MACHINE_QUERY`  
-`PUBLIC_SEARCH_NO_HIT != ARCHIVE_NO_RECORD`  
-`DRAFT NARROWED / NOT SENT / NO FEE OR ACCOUNT AUTHORISED`
-
-PR #64 independent hostile review remains separate.
-
-## THR — Bundesarchiv inquiry drafted / NOT SENT
-
-`coordination/build_ledger/THR_FLAK_BUNDESARCHIV_DRAFT_20260920.md`
-
-Westermann/DDB source-side recheck remains consistent with draft PR #64's current ceiling: the checked reproduction states 60 officer / 890 enlisted dead-wounded-missing casualties for 10 May–22 June 1940 and note 75 cites N 529/7 + RL 12/457; DDB/Bundesarchiv independently matches RL 12/457 at catalogue level only. An unsent Gmail inquiry is now prepared to `militaerarchiv@bundesarchiv.de` asking for N 529/7 confirmation, access/digitisation guidance, and whether the cited archival material contains the basis for 60/890. It explicitly requests a quote before any chargeable work.
-
-`DRAFT PREPARED != EXTERNAL CONTACT`  
-`NO MESSAGE SENT / NO FEE AUTHORISED`
-
-PR #64 remains separate: follow the independent hostile review, repair if earned, and keep release decision separate.
-
-`NEXT = HOSTILE REVIEW + EXPLICIT HUMAN SEND GATE FOR BUNDESARCHIV DRAFT.`
-
-## THR — flak archival citation route / PR #64 hostile review
-
-`coordination/build_ledger/THR_FLAK_ARCHIVE_ROUTE_PR64_20260920.md`
-
-Live THR main at branch/recheck: `09013b2ec47aa1fc60ab7fbd011a33de296ffc83` / four public records. Draft PR #64 exact head `45114e248a5e7bb52313a0aefd4c3f02105598f0`; hosted integrity run 220 / `35477129788` SUCCESS; mergeable YES. Candidate v0.2.8 narrows Westermann note 75 to N 529/7 + RL 12/457: N 529/7 title is recovered from Westermann's note only; RL 12/457 is independently matched at DDB/Bundesarchiv catalogue level. Archival pages remain uninspected; claim status remains unsupported in sources checked / true aggregate rate unknown. Hostile review target updated on PR #64 comment `5746211462`. Official Bundesarchiv stronger-owner route is now concrete (Freiburg / research service / digitisation-on-demand), but **no external archive request has been sent**.
-
-`NEXT = FOLLOW PR64 HOSTILE REVIEW; THEN RELEASE DECISION SEPARATE. EXTERNAL BUNDESARCHIV REQUEST ONLY THROUGH EXPLICIT CONTACT GATE.`
+```text
+USEFUL WORKED CASE != THR VALIDATED
+WORKED CASE != COMPARATIVE ADVANTAGE
+PR #64 CANDIDATE = EARNED
+FLAK RESEARCH SEAM = SATURATED
+PR #52 FRACTAL RFC = HOLD
+RECORD 5 = NOT EARNED
+RELEASE DECISION = SEPARATE
+NEXT = RETURN TO WORLD / NEW PRESSURE
+```
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
 
