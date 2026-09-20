@@ -157,3 +157,38 @@ Before final recording/submission:
 No submission occurred.
 No public export occurred.
 No credential was exposed.
+
+
+## Disposition after semantic check
+
+The live witness is accepted as:
+
+```text
+REPAIRED_HEAD_LIVE_REWITNESS = PASS_WITH_CEILING
+CLEAR_TO_RECORD VIDEO
+```
+
+Reason:
+- the real correction and dedupe behaviours passed on exact head `00017d190...`;
+- the candidate source remained quarantined;
+- the odd model-supplied `status=contradicted` is not displayed in the browser demo;
+- the engine did not rely on that label alone to manufacture the correction;
+- changing analyzer semantics now would invalidate the exact live witness and create
+  another credentialed re-witness burden without a demonstrated judge-facing defect.
+
+Therefore the model-status anomaly is preserved as a nonblocking semantic ceiling,
+not hidden and not repaired by momentum.
+
+PR #248 live-witness receipt:
+comment `5749372733`.
+
+```text
+NEXT
+-> RECORD VIDEO FROM DETERMINISTIC BROWSER DEMO
+   + SAVED REPAIRED-HEAD LIVE WITNESS / HEARTBEAT EVIDENCE
+-> REVIEW VIDEO FOR CLAIMS / CREDENTIALS / PERSONAL DATA
+-> FINAL AIRTABLE PAYLOAD REVIEW
+-> MARK EXPLICIT SUBMISSION GATE
+
+NO MORE ENGINE CHURN ABSENT NEW DEFECT
+```
