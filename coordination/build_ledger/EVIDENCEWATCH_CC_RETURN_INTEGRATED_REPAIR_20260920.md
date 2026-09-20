@@ -159,3 +159,61 @@ Final CC bounded closure target:
 COM #401 comment `5749321553`.
 
 All previous verification-target comments are historical/superseded.
+
+
+## CC closure verdict
+
+Claude Code returned on COM #401 comment `5749323668` against exact functional
+head `529bdd8e31ac528490acb6791508c1c4df3f738d`.
+
+Verdict:
+
+```text
+CLEAR_TO_REWITNESS
+```
+
+CC reran the original hostile probes and observed:
+- discovery growth: 781 -> 6;
+- candidate material alerts: 190 -> 0;
+- repeated authority outage alerts: 6 -> 1;
+- torn trailing JSONL: startup failure -> complete prior history readable;
+- B1 / B2 / M1 / M2 / M3 / M4 all CLOSED for the challenge's single-host shape.
+
+CC also confirmed Codex's final discovery-accounting counterexamples closed.
+
+Remaining M2 ceiling:
+the PID lock is a local-host process guard, not a distributed lock for multiple
+hosts sharing a network filesystem.
+
+Framework applied that **documentation-only** ceiling after CC's functional
+verification. No engine/test behavior changed.
+
+Final branch/documentation head:
+
+`00017d190bb6a9813cb64f1f30a17b27e4ce10ca`
+
+Hosted:
+
+`campfire-ci 1616 / 35506135667 — SUCCESS`
+
+COM #401 was then closed as completed.
+
+## Current real gate
+
+```text
+CODE REVIEW = CLOSED
+HOSTILE COUNTEREXAMPLES = CLOSED FOR CURRENT CHALLENGE SHAPE
+
+NEXT
+-> OFF-CAMERA REPAIRED-HEAD LIVE NVIDIA + PUBLIC WEB WITNESS
+-> SAME LEDGER SECOND RUN
+-> VERIFY QUIET / DEDUPE / CANONICAL STATE
+-> ONLY THEN RECORD VIDEO
+-> FINAL PAYLOAD REVIEW
+-> MARK EXPLICIT SUBMISSION GATE
+```
+
+The current repaired branch has **not yet** been re-witnessed against NVIDIA and
+the live Anthropic pages.
+
+`CLEAR_TO_REWITNESS != CLEAR_TO_RECORD != CLEAR_TO_SUBMIT`
