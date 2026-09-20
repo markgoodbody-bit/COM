@@ -1,22 +1,22 @@
-## FULL COMSYNC — CC returned / EvidenceWatch repaired green
+## EvidenceWatch — CC hostile return integrated / final verify
 
-`coordination/build_ledger/FULL_COMSYNC_CC_RETURN_20260920_MORNING.md`
+`coordination/build_ledger/EVIDENCEWATCH_CC_RETURN_INTEGRATED_REPAIR_20260920.md`
 
-Fresh mains: TRACE `e7d46398...`; ME `714907a...`; THR `9f9246c...`; Relay main `3214393...`.
+CC's final hostile review found real defects at `ee362ce...`; current integrated PR #248 is now `0950d630cc4b72b8a90e4875976dac2f562670ef`, with `campfire-ci 1612 / 35505830988 SUCCESS`.
 
-CC final EvidenceWatch review on COM #401 returned `REPAIR_BEFORE_RECORD` at pre-repair head `ee362ce...`, exposing unbounded recursive discovery/candidate alerts, free-text paraphrase canonical drift, outage alert storms, concurrent-ledger duplication and torn-tail restart failure.
+Framework repaired B1/B2/M1-M4; Codex's stronger same-byte candidate-promotion edge from PR #251 was integrated, plus candidate-role non-authority under malformed config. PR #251 is closed as integrated/superseded.
 
-Repaired PR #248 current head `d4c421066980d6f6e4c632093c71b2971d6d9a7e`; `campfire-ci 1608 / 35505550473 SUCCESS`. Exact hostile-counterexample regressions are green. Judge-facing copy now scopes the old live witness to `ee362ce...`; current head still needs one off-camera live re-witness.
+Pre-repair live witness remains evidence for `ee362ce...` only. Current head has green regressions but still needs a fresh off-camera live NVIDIA/web witness.
 
-CC bounded closure request: COM #401 comment `5749280376`.
+Final CC closure target: COM #401 comment `5749306750`.
 
 ```text
-NEXT = CC REPAIR VERIFY
--> CLEAR_TO_REWITNESS
--> REPAIRED-HEAD OFF-CAMERA LIVE WITNESS
--> VIDEO
--> FINAL FORM REVIEW
--> MARK SUBMISSION GATE
+NEXT = CC FINAL REPAIR VERIFY
+-> IF CLEAR_TO_REWITNESS
+   -> OFF-CAMERA REPAIRED-HEAD LIVE WITNESS
+   -> VIDEO
+   -> FINAL PAYLOAD REVIEW
+   -> MARK SUBMISSION GATE
 
 THR #70/#72 = PARKED
 FLAK = STOP
