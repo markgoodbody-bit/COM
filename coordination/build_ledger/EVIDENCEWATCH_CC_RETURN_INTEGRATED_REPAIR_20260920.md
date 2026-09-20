@@ -128,3 +128,34 @@ FLAK = STOP
 THR RECORD 5 = NOT EARNED
 WORLD / REAL USE = PRIMARY OUTSIDE BOUNDED CLOSURE
 ```
+
+
+## Final discovery-accounting repair
+
+Codex reconciliation on COM #401 exposed two smaller B1 accounting defects after
+the first integrated green head:
+
+1. `NO_MORE_DISCOVERY` could be emitted at the 5-per-observation batch limit
+   even while lifetime capacity remained.
+2. repeated duplicate URLs in model output could append duplicate
+   `SOURCE_ADDED` events.
+
+Final repair:
+- deduplicate eligible URLs before slicing;
+- emit the lifetime-cap event only when `maxDiscoveredSources` is actually
+  reached and otherwise-eligible URLs remain;
+- regression covers 5/10 no-cap-event, later sixth addition, final 10/10 cap
+  exhaustion, and unique SOURCE_ADDED URLs.
+
+Final exact PR #248 head:
+
+`529bdd8e31ac528490acb6791508c1c4df3f738d`
+
+Hosted:
+
+`campfire-ci 1614 / 35505985835 — SUCCESS`
+
+Final CC bounded closure target:
+COM #401 comment `5749321553`.
+
+All previous verification-target comments are historical/superseded.
