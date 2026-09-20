@@ -1,22 +1,22 @@
-## THR — x100 falsification complete / flak seam saturated
+## WORLD / REAL USE — 20 Sep early owner pass
 
-`coordination/build_ledger/THR_FLAK_FALSIFICATION_X100_DRIFT_20260920.md`
+`coordination/build_ledger/WORLD_OWNER_PASS_20260920_EARLY.md`
 
-PR #64 current candidate: `5b0e983f44520f3774ba60ea723a235b71645bb4`; hosted integrity run 223 / `35478092259` SUCCESS; independent Codex review comment `5746324900` = `PASS_WITH_CEILINGS`. One control defect found by the x100 pass (stale PR-body head/check) was repaired.
+Fresh outward pressure produced **two owner-convergence results, not two new project objects**:
+- AI court-filing verification burden: `CITATION EXISTS != ARGUMENT SOUND`; strong legal owners already carry verification/accountability/sanctions; **NO DOMAIN DELTA**.
+- Full Fact LLM correction divergence: `FACT CHECK PUBLISHED != MODEL CORRECTED`; Full Fact already owns continuous multi-model benchmarking; THR zero-new-type result survives.
 
-Falsification tally: **70 SURVIVES / 13 CEILINGS / 10 WARNINGS / 1 REPAIR / 6 STOPS**.
+THR RFC #52 documentation history was corrected at `71982549398bbd613927647229220c9ee15c676c`; run 224 / `35478617338` SUCCESS. Code/semantics unchanged; RFC remains DRAFT / HOLD / NOT CANON.
 
-Drift result: the bounded flak case is useful, but further excavation now has rising opportunity cost and risks turning one worked example into the project objective. The remaining archival gap is not needed to justify PR #64. Bundesarchiv draft remains narrowed and **UNSENT**; external contact stays held unless a future defined question makes those pages materially load-bearing.
+EvidenceWatch final CC review is now discoverable through **COM #401** at exact candidate `ee362ce0105565815ad2695f12db0481fab5f638`. Candidate remains unchanged; no submission follows.
 
 ```text
-USEFUL WORKED CASE != THR VALIDATED
-WORKED CASE != COMPARATIVE ADVANTAGE
-PR #64 CANDIDATE = EARNED
-FLAK RESEARCH SEAM = SATURATED
-PR #52 FRACTAL RFC = HOLD
+FLAK = STOP / SATURATED
+BUNDESARCHIV = UNSENT / HOLD
+PR #52 = HOLD
 RECORD 5 = NOT EARNED
-RELEASE DECISION = SEPARATE
-NEXT = RETURN TO WORLD / NEW PRESSURE
+NEW ME/TRACE PATCH = NOT EARNED
+NEXT = WORLD / REAL USE + PROCESS CC #401 WHEN RETURN LANDS
 ```
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
