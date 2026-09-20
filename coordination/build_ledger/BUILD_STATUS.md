@@ -1,3 +1,13 @@
+## THR — missing-value reason pressure / draft PR #72
+
+`coordination/build_ledger/THR_DECLARED_UNKNOWN_REASON_PRESSURE_20260920.md`
+
+CIDOC CRM issue 723 exposes a live provenance-record ambiguity: empty does not tell the next researcher whether a value was unexamined, sought-but-not-obtained, restricted, not applicable, or withheld. THR already carries some of these distinctions in prose but not explicitly in the minimum record contract.
+
+Draft PR #72 at `08e0bb9e836046f52b8fbadb54ce765afd2b0fa4` adds only action-relevant documentation distinctions and explicitly refuses to infer `unknowable`. No schema/enum/validator/record growth. Bounded review comment `5746552872`.
+
+`NEXT = ONE REVIEW -> REPAIR IF EARNED -> HOLD; FOLLOW STRONGER OWNER.`
+
 ## WORLD / REAL USE — HMRC correction-propagation owner pass
 
 `coordination/build_ledger/WORLD_HMRC_STATISTICS_CORRECTION_OWNER_PASS_20260920.md`
