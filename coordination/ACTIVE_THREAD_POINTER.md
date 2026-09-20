@@ -1,38 +1,28 @@
-## EvidenceWatch — CC hostile return integrated / final verify
+## EvidenceWatch — CC repair verification CLOSED / clear to re-witness
 
 `coordination/build_ledger/EVIDENCEWATCH_CC_RETURN_INTEGRATED_REPAIR_20260920.md`
 
-CC's hostile review at pre-repair `ee362ce...` found real B1/B2/M1-M4 defects. Cross-aperture repair is now integrated at PR #248 exact head `529bdd8e31ac528490acb6791508c1c4df3f738d`; `campfire-ci 1614 / 35505985835 SUCCESS`.
+CC independently re-ran the original hostile probes against functional head `529bdd8e31ac528490acb6791508c1c4df3f738d` and returned **`CLEAR_TO_REWITNESS`** in COM #401 comment `5749323668`. B1/B2/M1-M4 all closed for the challenge's single-host shape; Codex's discovery-accounting counterexamples also closed.
 
-Framework repairs + Codex counterexamples now cover:
-- bounded lifetime discovery and depth-1 candidate quarantine;
-- exact config promotion with same-byte re-analysis;
-- candidate role non-authoritative even under malformed authority flag;
-- typed material-state comparison / NVIDIA comparator temp 0;
-- transition-only outage + recovery;
-- single live ledger writer;
-- fsync + torn-tail recovery;
-- redirect URL dedupe;
-- correct lifetime-cap accounting and duplicate discovered-URL suppression.
+Framework then applied only CC's requested documentation ceiling: the writer lock is a **single-host local-process guard**, not distributed network-filesystem locking. Final branch/documentation head `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`; `campfire-ci 1616 / 35506135667 SUCCESS`. No functional code changed after CC verification.
 
-Codex PR #251 is closed as integrated/superseded.
-
-Pre-repair live witness remains evidence for `ee362ce...` only. Current head has green hostile regressions but **still needs a fresh off-camera live NVIDIA/web witness**.
-
-Final CC closure target: COM #401 comment `5749321553`.
+COM #401 is closed completed.
 
 ```text
-NEXT = CC FINAL REPAIR VERIFY
--> IF CLEAR_TO_REWITNESS
-   -> OFF-CAMERA REPAIRED-HEAD LIVE WITNESS
-   -> VIDEO
-   -> FINAL PAYLOAD REVIEW
-   -> MARK SUBMISSION GATE
+NEXT = MARK LOCAL / OFF-CAMERA REPAIRED-HEAD LIVE WITNESS
+-> CLEAN FIRST RUN
+-> SAME-LEDGER SECOND RUN
+-> VERIFY CURRENT 3 -> 4 / QUIET DEDUPE BEHAVIOUR
+-> VIDEO
+-> FINAL PAYLOAD REVIEW
+-> MARK SUBMISSION GATE
+
+CLEAR_TO_REWITNESS != CLEAR_TO_RECORD != CLEAR_TO_SUBMIT
 
 THR #70/#72 = PARKED
 FLAK = STOP
 RECORD 5 = NOT EARNED
-WORLD / REAL USE = PRIMARY
+WORLD / REAL USE = PRIMARY OUTSIDE THIS HUMAN/CREDENTIAL GATE
 ```
 
 ## WORLD / REAL USE — THR pressure cycle close
