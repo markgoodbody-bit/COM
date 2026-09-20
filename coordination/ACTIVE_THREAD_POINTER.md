@@ -1,35 +1,28 @@
-## EvidenceWatch — repaired-head live witness PASS_WITH_CEILING / clear to record
+## EvidenceWatch — standalone private repository verified / clear to record
 
-`coordination/build_ledger/EVIDENCEWATCH_REPAIRED_HEAD_LIVE_REWITNESS_20260920.md`
+`coordination/build_ledger/EVIDENCEWATCH_STANDALONE_REPOSITORY_20260920.md`
 
-Mark locally verified exact branch head `00017d190bb6a9813cb64f1f30a17b27e4ce10ca` and ran the bounded real NVIDIA/public-web witness twice.
+Mark's direction to move EvidenceWatch into its own clean repository before recording is complete.
 
-First run:
-- July owner -> BASELINE_ESTABLISHED / quantity 3;
-- September owner -> MATERIAL_DELTA / correction / quantity 4;
-- one dependent-review alert;
-- one discovered candidate.
+- standalone repository: `markgoodbody-bit/evidencewatch` — **private**;
+- standalone main: `a0d0a9e58156b67ec00ad95c758dc1dc3eebc5a7`;
+- source snapshot: Relay PR #248 head `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`;
+- engine, UI, runners and helper scripts: byte-identical to the reviewed source snapshot;
+- standalone GitHub Actions run `35507545045`: **SUCCESS**;
+- fresh NVIDIA/public-web live call after extraction: **NO**.
 
-Second same-ledger run:
-- both configured owner sources -> DUPLICATE_OBSERVATION;
-- discovered candidate -> NO_MATERIAL_DELTA / no recursion / no alert;
-- canonical quantity remained 4;
-- newAlerts = [].
-
-`REPAIRED_HEAD_LIVE_REWITNESS = PASS_WITH_CEILING`.
-
-Ceiling: model returned proposition "... four ..." with internal `status=contradicted`. Browser does not display that field and it did not independently drive the correction. Preserve it; do not reopen analyzer semantics by momentum.
-
-PR #248 witness receipt: comment `5749372733`.
+The repaired-head live witness remains valid for its exact source snapshot. Byte-identical extraction plus fresh standalone CI does not manufacture a new live witness or broader validation. Preserve the awkward model `status=contradicted` field ceiling and the one-shot runner's no-lock/sequential-only limitation.
 
 ```text
-NEXT = RECORD VIDEO
--> DETERMINISTIC BROWSER DEMO
--> SAVED REPAIRED-HEAD LIVE/HEARTBEAT EVIDENCE
+NEXT = USE STANDALONE REPOSITORY
+-> RECORD DETERMINISTIC BROWSER DEMO
+-> USE SAVED EXACT-SNAPSHOT LIVE/HEARTBEAT EVIDENCE WITH ITS CEILINGS
 -> CREDENTIAL/CLAIM REVIEW
 -> FINAL AIRTABLE PAYLOAD REVIEW
 -> MARK EXPLICIT SUBMISSION GATE
 
+NO PUBLIC VISIBILITY CHANGE
+NO SUBMISSION
 NO MORE ENGINE CHURN ABSENT NEW DEFECT
 
 THR #70/#72 = PARKED
