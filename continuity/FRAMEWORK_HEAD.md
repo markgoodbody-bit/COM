@@ -1,28 +1,41 @@
-## EvidenceWatch — CC repair verification CLOSED / clear to re-witness
+## EvidenceWatch — repaired-head live witness PASS_WITH_CEILING / clear to record
 
-`coordination/build_ledger/EVIDENCEWATCH_CC_RETURN_INTEGRATED_REPAIR_20260920.md`
+`coordination/build_ledger/EVIDENCEWATCH_REPAIRED_HEAD_LIVE_REWITNESS_20260920.md`
 
-CC independently re-ran the original hostile probes against functional head `529bdd8e31ac528490acb6791508c1c4df3f738d` and returned **`CLEAR_TO_REWITNESS`** in COM #401 comment `5749323668`. B1/B2/M1-M4 all closed for the challenge's single-host shape; Codex's discovery-accounting counterexamples also closed.
+Mark locally verified exact branch head `00017d190bb6a9813cb64f1f30a17b27e4ce10ca` and ran the bounded real NVIDIA/public-web witness twice.
 
-Framework then applied only CC's requested documentation ceiling: the writer lock is a **single-host local-process guard**, not distributed network-filesystem locking. Final branch/documentation head `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`; `campfire-ci 1616 / 35506135667 SUCCESS`. No functional code changed after CC verification.
+First run:
+- July owner -> BASELINE_ESTABLISHED / quantity 3;
+- September owner -> MATERIAL_DELTA / correction / quantity 4;
+- one dependent-review alert;
+- one discovered candidate.
 
-COM #401 is closed completed.
+Second same-ledger run:
+- both configured owner sources -> DUPLICATE_OBSERVATION;
+- discovered candidate -> NO_MATERIAL_DELTA / no recursion / no alert;
+- canonical quantity remained 4;
+- newAlerts = [].
+
+`REPAIRED_HEAD_LIVE_REWITNESS = PASS_WITH_CEILING`.
+
+Ceiling: model returned proposition "... four ..." with internal `status=contradicted`. Browser does not display that field and it did not independently drive the correction. Preserve it; do not reopen analyzer semantics by momentum.
+
+PR #248 witness receipt: comment `5749372733`.
 
 ```text
-NEXT = MARK LOCAL / OFF-CAMERA REPAIRED-HEAD LIVE WITNESS
--> CLEAN FIRST RUN
--> SAME-LEDGER SECOND RUN
--> VERIFY CURRENT 3 -> 4 / QUIET DEDUPE BEHAVIOUR
--> VIDEO
--> FINAL PAYLOAD REVIEW
--> MARK SUBMISSION GATE
+NEXT = RECORD VIDEO
+-> DETERMINISTIC BROWSER DEMO
+-> SAVED REPAIRED-HEAD LIVE/HEARTBEAT EVIDENCE
+-> CREDENTIAL/CLAIM REVIEW
+-> FINAL AIRTABLE PAYLOAD REVIEW
+-> MARK EXPLICIT SUBMISSION GATE
 
-CLEAR_TO_REWITNESS != CLEAR_TO_RECORD != CLEAR_TO_SUBMIT
+NO MORE ENGINE CHURN ABSENT NEW DEFECT
 
 THR #70/#72 = PARKED
 FLAK = STOP
 RECORD 5 = NOT EARNED
-WORLD / REAL USE = PRIMARY OUTSIDE THIS HUMAN/CREDENTIAL GATE
+WORLD / REAL USE = PRIMARY OUTSIDE RECORDING GATE
 ```
 
 ## WORLD / REAL USE — THR pressure cycle close
