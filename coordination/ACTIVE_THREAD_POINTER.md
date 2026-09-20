@@ -1,29 +1,29 @@
-## EvidenceWatch — Codex visual pass active / Framework non-overlap
+## EvidenceWatch — final UI PASS / recording gate
 
-Current safe standalone main after launcher repair:
-`markgoodbody-bit/evidencewatch@cde55a0c3372e6c3c97f222c0c6f240bab52a494`
+Current private standalone product source:
+`markgoodbody-bit/evidencewatch@79e4d5270844342b74fd4e0c1e2439ab17772dd6`
 
-Codex owns the current professional/clinical UI pass on:
-- `public/index.html`;
-- `public/style.css`;
-- UI labels in `public/app.js`.
+Hosted CI:
+`35508764265 / SUCCESS`
 
-Framework is not editing those files.
+Codex clinical UI PR #5 is merged. Framework recording-readiness review = **PASS**.
 
-Final review contract:
-`coordination/build_ledger/EVIDENCEWATCH_FINAL_UI_RECORDING_ACCEPTANCE_20260920.md`
+Receipt:
+`coordination/build_ledger/EVIDENCEWATCH_FINAL_UI_RECORDING_PASS_20260920.md`
+
+Final Airtable copy updated to the frozen UI head:
+`coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
 
 ```text
-NEXT = CODEX POSTS EXACT VISUAL HEAD
--> ONE RECORDING-READINESS REVIEW
--> IF PASS: FREEZE UI
--> RECORD VIDEO
--> REVIEW + UPLOAD
--> FINAL AIRTABLE REVIEW
--> MARK SUBMISSION GATE
+UI FREEZE
+NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
 
-VISUAL TASTE DIFFERENCE != DEFECT
-NO MORE UI CHURN AFTER PASS
+NEXT = RECORD VIDEO
+-> REVIEW FINISHED VIDEO
+-> UPLOAD PUBLIC VIDEO
+-> INSERT URL
+-> FINAL FORM REVIEW
+-> MARK EXPLICIT SUBMISSION GATE
 ```
 
 ## WORLD / REAL USE — THR pressure cycle close
