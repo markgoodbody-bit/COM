@@ -1,54 +1,25 @@
-## THR — missing-value reason pressure / draft PR #72
+## WORLD / REAL USE — THR pressure cycle close
 
-`coordination/build_ledger/THR_DECLARED_UNKNOWN_REASON_PRESSURE_20260920.md`
+`coordination/build_ledger/WORLD_THR_PRESSURE_CYCLE_20260920_0100.md`
 
-CIDOC CRM issue 723 exposes a live provenance-record ambiguity: empty does not tell the next researcher whether a value was unexamined, sought-but-not-obtained, restricted, not applicable, or withheld. THR already carries some of these distinctions in prose but not explicitly in the minimum record contract.
+Fresh outward pressure produced **two bounded documentation candidates and three owner/no-delta results**.
 
-Draft PR #72 at `08e0bb9e836046f52b8fbadb54ce765afd2b0fa4` adds only action-relevant documentation distinctions and explicitly refuses to infer `unknowable`. No schema/enum/validator/record growth. Bounded review comment `5746552872`.
-
-`NEXT = ONE REVIEW -> REPAIR IF EARNED -> HOLD; FOLLOW STRONGER OWNER.`
-
-## WORLD / REAL USE — HMRC correction-propagation owner pass
-
-`coordination/build_ledger/WORLD_HMRC_STATISTICS_CORRECTION_OWNER_PASS_20260920.md`
-
-HMRC's 15 Sep statistics review gives a mature real-world correction fan-out case: two upstream HMRC errors affected ONS/HMT market-sensitive publications; owner records preserve downstream effects, correction timing and cross-department communication recommendations. Strongest owners are already active.
-
-`ERROR != ROUTINE REVISION` is useful domain compression, but **NO THR RECORD / NO NEW TYPE / NO ME-TRACE PATCH** is earned.
-
-`NEXT = CONTINUE WORLD QUARRY; PR #70 REVIEW REMAINS PARKED.`
-
-## THR — source genesis field pressure / draft PR #70
-
-`coordination/build_ledger/THR_SOURCE_GENESIS_FIELD_PRESSURE_20260920.md`
-
-Fresh OpenAI misalignment disclosure exposed a real provenance edge: a source can be publicly retrievable because the answering system created/uploaded it in order to cite it. THR already records observation time but did not state strongly enough that `OBSERVED_AT != GENERATED_AT` and `PUBLIC URL != PREEXISTING EVIDENCE`.
-
-Strongest owners already exist: W3C PROV for generation/attribution/derivation semantics; C2PA for asset-origin/action/ingredient provenance. Draft PR #70 therefore adds only a bounded source-model / record-contract distinction. **No new source type, registry/schema/validator change or record 5.**
-
-PR #70 exact head `6ee3faf75ea8b0198b7ef1f79d882c8d097dba7f`; bounded hostile-review request comment `5746539170`.
-
-`NEXT = ONE BOUNDED REVIEW -> REPAIR IF EARNED -> HOLD / RELEASE DECISION SEPARATE -> RETURN TO WORLD.`
-
-## WORLD / REAL USE — 20 Sep early owner pass
-
-`coordination/build_ledger/WORLD_OWNER_PASS_20260920_EARLY.md`
-
-Fresh outward pressure produced **two owner-convergence results, not two new project objects**:
-- AI court-filing verification burden: `CITATION EXISTS != ARGUMENT SOUND`; strong legal owners already carry verification/accountability/sanctions; **NO DOMAIN DELTA**.
-- Full Fact LLM correction divergence: `FACT CHECK PUBLISHED != MODEL CORRECTED`; Full Fact already owns continuous multi-model benchmarking; THR zero-new-type result survives.
-
-THR RFC #52 documentation history was corrected at `71982549398bbd613927647229220c9ee15c676c`; run 224 / `35478617338` SUCCESS. Code/semantics unchanged; RFC remains DRAFT / HOLD / NOT CANON.
-
-EvidenceWatch final CC review is now discoverable through **COM #401** at exact candidate `ee362ce0105565815ad2695f12db0481fab5f638`. Candidate remains unchanged; no submission follows.
+- **PR #70 — source genesis:** `OBSERVED_AT != GENERATED_AT`; public/fetchable evidence may have been created downstream of the claim. Strong owners: W3C PROV / C2PA. Draft head `6ee3faf75ea8b0198b7ef1f79d882c8d097dba7f`. Review pending.
+- **PR #72 — missing-value reason:** `MISSING VALUE != ONE STATE`; reason for missingness can change next action. CIDOC issue 723 is active; cross-domain transfer found in UK education + CDC. Draft head `08e0bb9e836046f52b8fbadb54ce765afd2b0fa4`. Review pending.
+- **HMRC corrections:** OWNER FOUND / NO THR DELTA.
+- **Scholarly corrections:** OWNER FOUND / NO THR DELTA.
+- **Anthropic source laundering:** existing THR independence model survives; NO DELTA.
 
 ```text
-FLAK = STOP / SATURATED
-BUNDESARCHIV = UNSENT / HOLD
-PR #52 = HOLD
+PUBLIC RECORDS = 4
 RECORD 5 = NOT EARNED
-NEW ME/TRACE PATCH = NOT EARNED
-NEXT = WORLD / REAL USE + PROCESS CC #401 WHEN RETURN LANDS
+NEW TYPES = NO
+SCHEMA / VALIDATOR GROWTH = NO
+EXTERNAL HUMAN CONTACT = NONE
+
+PR #70 + #72 = PARK UNTIL BOUNDED REVIEW
+NO REVIEW RETURN -> DO NOT POLL LOOP
+NEXT = WORLD / REAL USE
 ```
 
 ## NVIDIA Claw — HOLD TONIGHT / CC hostile review tomorrow
