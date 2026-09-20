@@ -1,3 +1,13 @@
+## WORLD / REAL USE — HMRC correction-propagation owner pass
+
+`coordination/build_ledger/WORLD_HMRC_STATISTICS_CORRECTION_OWNER_PASS_20260920.md`
+
+HMRC's 15 Sep statistics review gives a mature real-world correction fan-out case: two upstream HMRC errors affected ONS/HMT market-sensitive publications; owner records preserve downstream effects, correction timing and cross-department communication recommendations. Strongest owners are already active.
+
+`ERROR != ROUTINE REVISION` is useful domain compression, but **NO THR RECORD / NO NEW TYPE / NO ME-TRACE PATCH** is earned.
+
+`NEXT = CONTINUE WORLD QUARRY; PR #70 REVIEW REMAINS PARKED.`
+
 ## THR — source genesis field pressure / draft PR #70
 
 `coordination/build_ledger/THR_SOURCE_GENESIS_FIELD_PRESSURE_20260920.md`
