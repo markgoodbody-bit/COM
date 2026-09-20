@@ -2,13 +2,24 @@
 
 `coordination/build_ledger/EVIDENCEWATCH_CC_RETURN_INTEGRATED_REPAIR_20260920.md`
 
-CC's final hostile review found real defects at `ee362ce...`; current integrated PR #248 is now `0950d630cc4b72b8a90e4875976dac2f562670ef`, with `campfire-ci 1612 / 35505830988 SUCCESS`.
+CC's hostile review at pre-repair `ee362ce...` found real B1/B2/M1-M4 defects. Cross-aperture repair is now integrated at PR #248 exact head `529bdd8e31ac528490acb6791508c1c4df3f738d`; `campfire-ci 1614 / 35505985835 SUCCESS`.
 
-Framework repaired B1/B2/M1-M4; Codex's stronger same-byte candidate-promotion edge from PR #251 was integrated, plus candidate-role non-authority under malformed config. PR #251 is closed as integrated/superseded.
+Framework repairs + Codex counterexamples now cover:
+- bounded lifetime discovery and depth-1 candidate quarantine;
+- exact config promotion with same-byte re-analysis;
+- candidate role non-authoritative even under malformed authority flag;
+- typed material-state comparison / NVIDIA comparator temp 0;
+- transition-only outage + recovery;
+- single live ledger writer;
+- fsync + torn-tail recovery;
+- redirect URL dedupe;
+- correct lifetime-cap accounting and duplicate discovered-URL suppression.
 
-Pre-repair live witness remains evidence for `ee362ce...` only. Current head has green regressions but still needs a fresh off-camera live NVIDIA/web witness.
+Codex PR #251 is closed as integrated/superseded.
 
-Final CC closure target: COM #401 comment `5749306750`.
+Pre-repair live witness remains evidence for `ee362ce...` only. Current head has green hostile regressions but **still needs a fresh off-camera live NVIDIA/web witness**.
+
+Final CC closure target: COM #401 comment `5749321553`.
 
 ```text
 NEXT = CC FINAL REPAIR VERIFY
