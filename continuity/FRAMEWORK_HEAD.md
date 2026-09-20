@@ -1,3 +1,17 @@
+## THR — human-attention gate / public-source pass
+
+`coordination/build_ledger/THR_HUMAN_ATTENTION_PUBLIC_SOURCE_PASS_20260920.md`
+
+External institutional contact remains consequential, now with an explicit burden reason: a message can consume another person's attention/work even when sending it is trivial for us. Public-machine work should precede contact where reasonable; ask external humans for the smallest fact/access route they uniquely own rather than casually transferring analysis work.
+
+Flak public-source pass: Westermann note 75 remains confirmed in the checked reproduction; N 529 collection and other individual N 529 units are publicly recoverable, but N 529/7 itself was not recovered from the searched public indexed surfaces. Current invenio presents a login/registration gate; no account was created. The unsent Bundesarchiv Gmail draft was narrowed to **access / catalogue-pointer / digitisation route only**, with archive staff explicitly not asked to evaluate the historical figures.
+
+`EXTERNAL_REQUEST != MACHINE_QUERY`  
+`PUBLIC_SEARCH_NO_HIT != ARCHIVE_NO_RECORD`  
+`DRAFT NARROWED / NOT SENT / NO FEE OR ACCOUNT AUTHORISED`
+
+PR #64 independent hostile review remains separate.
+
 ## THR — Bundesarchiv inquiry drafted / NOT SENT
 
 `coordination/build_ledger/THR_FLAK_BUNDESARCHIV_DRAFT_20260920.md`
