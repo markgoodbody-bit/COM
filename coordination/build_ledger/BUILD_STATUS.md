@@ -1,20 +1,31 @@
-## EvidenceWatch — standalone private repo accepted
+## EvidenceWatch — standalone recording-ready / Airtable copy final
 
-`coordination/build_ledger/EVIDENCEWATCH_STANDALONE_REPO_ACCEPTED_20260920.md`
+Current product source:
+`markgoodbody-bit/evidencewatch@e6ced8a453680b9a143c86de164bee907e6506b2`
 
-Current product source is now **`markgoodbody-bit/evidencewatch`** — private — main `a0d0a9e58156b67ec00ad95c758dc1dc3eebc5a7` — fresh one-commit history — 26-file standalone surface — `35/35` local tests — hosted CI `35507545045 SUCCESS`.
+Hosted CI:
+`35508380750 / SUCCESS`
 
-Codex created it; CC independently fresh-cloned/verified every blob/history/scan/test; Framework independently verified live main/tree/README/package/CI. COM #402 closed completed.
+Recording pack is merged on standalone main:
+- `docs/RECORDING.md`;
+- `docs/LIVE_WITNESS.md`;
+- `scripts/start-recording-demo.ps1`;
+- CI parses PowerShell helpers.
 
-Campfire Relay PR #248 remains build/witness ancestry, not current product source.
+Final form copy:
+`coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
+
+Only missing submission artifact is the **public video URL**. Private repo remains private.
 
 ```text
-NEXT = VIDEO FROM STANDALONE REPO
--> CLAIM / CREDENTIAL / PERSONAL-DATA REVIEW
--> FINAL AIRTABLE PAYLOAD REVIEW
+NEXT = RECORD VIDEO
+-> REVIEW FINISHED FILE
+-> UPLOAD PUBLIC VIDEO
+-> INSERT URL
+-> FINAL FORM REVIEW
 -> MARK EXPLICIT SUBMISSION GATE
 
-PUBLIC REPO VISIBILITY = HOLD / PRIVATE
+NO MORE CODE CHURN ABSENT NEW DEFECT
 NO MORE MANUAL FILE TRANSPORT FOR MARK
 ```
 
