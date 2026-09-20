@@ -1,32 +1,29 @@
-## EvidenceWatch — standalone recording-ready / Airtable copy final
+## EvidenceWatch — Codex visual pass active / Framework non-overlap
 
-Current product source:
-`markgoodbody-bit/evidencewatch@e6ced8a453680b9a143c86de164bee907e6506b2`
+Current safe standalone main after launcher repair:
+`markgoodbody-bit/evidencewatch@cde55a0c3372e6c3c97f222c0c6f240bab52a494`
 
-Hosted CI:
-`35508380750 / SUCCESS`
+Codex owns the current professional/clinical UI pass on:
+- `public/index.html`;
+- `public/style.css`;
+- UI labels in `public/app.js`.
 
-Recording pack is merged on standalone main:
-- `docs/RECORDING.md`;
-- `docs/LIVE_WITNESS.md`;
-- `scripts/start-recording-demo.ps1`;
-- CI parses PowerShell helpers.
+Framework is not editing those files.
 
-Final form copy:
-`coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
-
-Only missing submission artifact is the **public video URL**. Private repo remains private.
+Final review contract:
+`coordination/build_ledger/EVIDENCEWATCH_FINAL_UI_RECORDING_ACCEPTANCE_20260920.md`
 
 ```text
-NEXT = RECORD VIDEO
--> REVIEW FINISHED FILE
--> UPLOAD PUBLIC VIDEO
--> INSERT URL
--> FINAL FORM REVIEW
--> MARK EXPLICIT SUBMISSION GATE
+NEXT = CODEX POSTS EXACT VISUAL HEAD
+-> ONE RECORDING-READINESS REVIEW
+-> IF PASS: FREEZE UI
+-> RECORD VIDEO
+-> REVIEW + UPLOAD
+-> FINAL AIRTABLE REVIEW
+-> MARK SUBMISSION GATE
 
-NO MORE CODE CHURN ABSENT NEW DEFECT
-NO MORE MANUAL FILE TRANSPORT FOR MARK
+VISUAL TASTE DIFFERENCE != DEFECT
+NO MORE UI CHURN AFTER PASS
 ```
 
 ## WORLD / REAL USE — THR pressure cycle close
