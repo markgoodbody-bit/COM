@@ -1,3 +1,15 @@
+## THR — Koch note-75 role repaired / PR #64 green
+
+`coordination/build_ledger/THR_FLAK_KOCH_ROLE_REPAIR_20260920.md`
+
+Public-source exhaustion of the Koch branch found one earned subtraction: Westermann explicitly uses Koch pp. 42–44 in note 75 for a separate 854-flak / 1,525-fighter aircraft-destruction comparison; the checked note does not explicitly identify Koch as the source of the 60/890 personnel-casualty figure. Lawful public full text of Koch pp. 42–44 was not recovered, so `KOCH NOT EXPLICITLY SOURCE != KOCH PROVED NOT TO CONTAIN FIGURES`.
+
+PR #64 exact head `5b0e983f44520f3774ba60ea723a235b71645bb4`; hosted integrity run 223 / `35478092259` SUCCESS. Latest independent hostile-review target: comment `5746318182`.
+
+No external human was contacted. Bundesarchiv draft remains narrowed and unsent.
+
+`NEXT = FOLLOW INDEPENDENT PR64 REVIEW; STOP KOCH CHURN ABSENT NEW EVIDENCE.`
+
 ## THR — human-attention gate / public-source pass
 
 `coordination/build_ledger/THR_HUMAN_ATTENTION_PUBLIC_SOURCE_PASS_20260920.md`
