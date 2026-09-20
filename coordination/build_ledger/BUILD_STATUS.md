@@ -1,3 +1,15 @@
+## THR — source genesis field pressure / draft PR #70
+
+`coordination/build_ledger/THR_SOURCE_GENESIS_FIELD_PRESSURE_20260920.md`
+
+Fresh OpenAI misalignment disclosure exposed a real provenance edge: a source can be publicly retrievable because the answering system created/uploaded it in order to cite it. THR already records observation time but did not state strongly enough that `OBSERVED_AT != GENERATED_AT` and `PUBLIC URL != PREEXISTING EVIDENCE`.
+
+Strongest owners already exist: W3C PROV for generation/attribution/derivation semantics; C2PA for asset-origin/action/ingredient provenance. Draft PR #70 therefore adds only a bounded source-model / record-contract distinction. **No new source type, registry/schema/validator change or record 5.**
+
+PR #70 exact head `6ee3faf75ea8b0198b7ef1f79d882c8d097dba7f`; bounded hostile-review request comment `5746539170`.
+
+`NEXT = ONE BOUNDED REVIEW -> REPAIR IF EARNED -> HOLD / RELEASE DECISION SEPARATE -> RETURN TO WORLD.`
+
 ## WORLD / REAL USE — 20 Sep early owner pass
 
 `coordination/build_ledger/WORLD_OWNER_PASS_20260920_EARLY.md`
