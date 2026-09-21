@@ -11,8 +11,8 @@ Current standalone product source:
 ```text
 repo: markgoodbody-bit/evidencewatch
 visibility: PRIVATE
-main: 79e4d5270844342b74fd4e0c1e2439ab17772dd6
-hosted CI: 35508764265 / SUCCESS
+main: e924b0de15ccaa1255bfdb80685f60f1a60172e9
+hosted CI: 35589752244 / SUCCESS
 runtime source snapshot with repaired-head live witness:
 00017d190bb6a9813cb64f1f30a17b27e4ce10ca
 ```
@@ -23,6 +23,8 @@ Recording pack and final clinical UI are merged into standalone main. Current ma
 - deterministic demo launcher;
 - PowerShell syntax parsing in CI;
 - isolated demo-ledger/port launcher repair;
+- hostile-run repair for inherited `EVIDENCEWATCH_PRESERVE_DEMO`;
+- reset-after-bind repair preventing a failed second server from clearing the running demo ledger;
 - clinical monitoring interface with visible Demo mode boundary.
 
 The final UI pass did not change engine/analyzer/ledger/live-runner semantics.
