@@ -1,21 +1,24 @@
-## EvidenceWatch — final UI PASS / recording gate
+## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
-`markgoodbody-bit/evidencewatch@79e4d5270844342b74fd4e0c1e2439ab17772dd6`
+`markgoodbody-bit/evidencewatch@e924b0de15ccaa1255bfdb80685f60f1a60172e9`
 
 Hosted CI:
-`35508764265 / SUCCESS`
+`35589752244 / SUCCESS`
 
-Codex clinical UI PR #5 is merged. Framework recording-readiness review = **PASS**.
+Claude Code's 100-run falsification found two concrete deterministic-recording defects after the UI freeze: inherited `EVIDENCEWATCH_PRESERVE_DEMO=1` could retain a prior demo ledger, and a second server could reset the shared ledger before failing to bind. PR #6 repairs both. Codex exact-head review returned `PASS_WITH_CEILINGS`; PR #6 is merged and main CI is green.
 
 Receipt:
-`coordination/build_ledger/EVIDENCEWATCH_FINAL_UI_RECORDING_PASS_20260920.md`
+`coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`
 
-Final Airtable copy updated to the frozen UI head:
+The prior live NVIDIA/public-web witness remains bound to runtime snapshot `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`. The launcher/demo-server repair is not a fresh live-provider validation.
+
+Final Airtable copy is updated to the repaired standalone head:
 `coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
 
 ```text
-UI FREEZE
+RECORDING PATH REPAIR = MERGED / CI GREEN
+UI FREEZE REMAINS
 NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
 
 NEXT = RECORD VIDEO
