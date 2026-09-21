@@ -222,7 +222,7 @@ History belongs in dated receipts + Git.
 
 - TRACE main `e7d46398dc00ead931b0d5cae98518c1bcf304a3` — formal baseline v0.3.0;
 - Mechanical Ethics main `714907a4d0af7bd702b0ab92786aa858213812b4` — formal baseline v0.7.0;
-- Human Record main `29acc6ee090fc0b2897e90a2fc33efeb41cc2770` — four public records;
+- Human Record main `9f9246c76348cd2f3a4d4f3501b4bf5af65e96db` — four public records;
 - Campfire Relay main `32143937d6a642a6f5e2404d368fd09aa4d54da9`.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`

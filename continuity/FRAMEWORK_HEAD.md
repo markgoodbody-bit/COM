@@ -241,7 +241,7 @@ OWNER FOUND / NO DELTA / NOT OUR GAP / STOP = VALID
 CUT OVERCLAIM, NOT PURPOSE
 ```
 
-Mark is the human originator/witness and consequential human gate. Framework coordinates/integrates episodically. Codex is available. Claude Code is temporarily out of tokens until 20 September; **do not block on CC by default**.
+Mark is the human originator/witness and consequential human gate. Framework coordinates/integrates episodically. Codex is available. Codex and Claude Code are available for bounded review; **do not block ordinary reversible work on either reviewer by default**.
 
 ## Current source identities
 
@@ -249,7 +249,7 @@ Reacquired before this compaction:
 
 - TRACE main: `e7d46398dc00ead931b0d5cae98518c1bcf304a3`;
 - Mechanical Ethics main: `714907a4d0af7bd702b0ab92786aa858213812b4`;
-- The Human Record main: `29acc6ee090fc0b2897e90a2fc33efeb41cc2770`;
+- The Human Record main: `9f9246c76348cd2f3a4d4f3501b4bf5af65e96db`;
 - Campfire Relay main: `32143937d6a642a6f5e2404d368fd09aa4d54da9`.
 
 Formal baselines:
