@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **22 September 2026 — bounded hot-surface compaction**
+Updated: **23 September 2026 — successor owner-subtraction integration**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -103,6 +103,21 @@ Formal baselines:
 - several infrastructure/safety cases owner-subtracted cleanly.
 
 Do not convert successful representation into validation.
+
+## Current bounded design lane — TRACE / ME successor
+
+Direct Mark direction on 22 September opened one non-canon successor-design lane in COM #365. Draft PR #409 is a review object, not a released-source branch. Codex's exact-source audit and Claude Code's hostile owner subtraction are both returned and integrated at head `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`.
+
+```text
+TRACE v0.3.0 = UNCHANGED
+ME v0.7.0 = UNCHANGED
+NEW TRACE PRIMITIVE = NOT EARNED
+REPRESENTATIONAL GAP = NOT DEMONSTRATED
+
+SURVIVING WORK = ATTRIBUTED COMPRESSION / SALIENCE / WORKED TRANSFER
+```
+
+Seven of eight candidate areas have strong prior owners. The smallest useful import is a declared baseline for any future-space comparison; the smallest internal repairs split `UNKNOWN` from `OMITTED` and replace internal authorship inference with represented alternatives plus a usable refusal/revision route. Beta review candidates may be prepared, but no release, canon, baseline or broad external-model review follows automatically.
 
 ## Current human gates
 
@@ -163,9 +178,9 @@ Freeze after green; reopen on concrete failure or deliberate promotion work.
 
 Hold until **1 October** live challenge/rules/rights gate. Do not pre-consume judged work.
 
-### Mechanical Ethics #47
+### TRACE / Mechanical Ethics successor
 
-Only current ME successor wording pressure. Reader-test harness exists; released v0.7.0 unchanged. Need a genuinely uncontaminated reader result.
+COM #365 / draft PR #409 is the current bounded non-canon design lane. The earlier ME #47 reader-test pressure remains relevant but is no longer the whole successor state. Released v0.7.0 and TRACE v0.3.0 remain unchanged. Any source edit still requires a bounded reader/transfer failure, representational loss or other earned edit gate; owner subtraction alone does not manufacture one.
 
 Successor-pressure route:
 `coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
