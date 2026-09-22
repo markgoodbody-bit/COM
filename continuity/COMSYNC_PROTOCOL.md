@@ -3,7 +3,7 @@
 Anchor live COM first; read sources before claiming them read. A prior session's summary is neither your observation nor your identity.
 
 Status: BOUNDED COORDINATION PROTOCOL — NOT CANON / NOT PROJECT TRUTH
-Updated: 2026-09-15 — Europe/London
+Updated: 2026-09-22 — Europe/London
 
 Purpose: make `COMSYNC` cheap, repeatable and disciplined, while reserving `FULL COMSYNC` for broader reacquisition including the live Square and materially available Relay tooling.
 
@@ -50,6 +50,34 @@ On the **first FULL COMSYNC of a fresh Framework tab**, do this once:
 
 If no per-layer acquisition receipt from this session is available, treat acquisition as unestablished and run this sequence. A partial receipt calls for the missing material layers, not replay of everything already read. This trigger establishes a reading obligation, not runtime identity.
 
+A per-layer receipt establishes **acquisition coverage**, not learning or correct integration. A source can be delivered and read without materially changing the receiver's working map, and a changed map can still route the next act incorrectly.
+
+```text
+READ_WHOLE != MAP_UPDATED
+MAP_UPDATED != CORRECT_ROUTING
+BOOT_RECEIPT != LEARNING_ESTABLISHED
+```
+
+For a later `FULL COMSYNC` in the **same aperture**, a complete acquisition receipt changes the default. Start delta-first rather than replaying the core:
+
+```text
+SAME_APERTURE + COMPLETE_RECEIPT
+-> REFRESH COM / HOT ROUTES / MUTABLE HEADS
+-> CHECK INVALIDATORS
+-> REOPEN ONLY INVALIDATED LAYERS
+-> STOP ON NO MATERIAL DELTA
+```
+
+A layer is invalidated when at least one of these is material:
+- its source identity or load-bearing dependency changed;
+- the current task now depends on detail not previously acquired deeply enough;
+- later evidence contradicts the current working map;
+- direct current human direction changes purpose, priority or authority;
+- the aperture cannot honestly establish that its prior map remains adequate for the next act.
+
+Repeated reading is not free. It consumes the same bounded context needed for reasoning and action, so unnecessary replay is itself a coordination burden. A direct correction from Mark that the sync is reloading needlessly is evidence about the process, not an invitation to defend the checklist.
+
+
 ```text
 COM main SHA -> COM_STATE at that SHA
 -> FRAMEWORK_HEAD (orientation only; purpose before instruments)
@@ -71,6 +99,8 @@ Cross-check the pointer against live issues ordered by update time (GitHub REST:
 Historical quarries, old reviews, retired issues, carriers and large Square exports remain cold unless a live question triggers them.
 
 For each layer (orientation, TRACE, ME, live work, tools/Square, optional bootstrap), record READ with source identity and coverage, PARTIAL with missing coverage, or NOT READ with reason. Include source bytes and bytes actually delivered when measurable; otherwise state coverage UNKNOWN and identify sections/pages actually inspected. A downloaded file size is not evidence that its contents were delivered to the reader. Never turn a tool's truncated output into a full-read claim. Include `optional bootstrap: NOT READ (by design)` when skipped. This is a local compact receipt, not a new public comment per layer.
+
+Do not use that acquisition checklist as the sole proof that the bootstrap worked. The stronger evidence is subsequent bounded behaviour: correct routing, preserved ceilings, appropriate reopening of invalidated layers, and stopping when no consequential delta is found. One successful behaviour in one runtime is still only bounded evidence, not a universal protocol validation.
 
 Optional orientation remains in `continuity/BOOTSTRAP.md` (ground through reflective causality) and `continuity/CAMPFIRE_ORIENTATION.md` (ground, fire, horizon, other fires, communication, correction), as available at the anchored COM revision. The four-film archaeology (Memento; Everything Everywhere All at Once; Children of Men; Unthinkable) is a discovery lead, not required loading; use the omission map if material and report an unresolved carrier as UNKNOWN. These resources grant no identity or authority. Live user instructions supersede this orientation.
 
