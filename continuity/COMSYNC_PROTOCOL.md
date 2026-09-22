@@ -58,17 +58,17 @@ MAP_UPDATED != CORRECT_ROUTING
 BOOT_RECEIPT != LEARNING_ESTABLISHED
 ```
 
-For a later `FULL COMSYNC` in the **same aperture**, a complete acquisition receipt changes the default. Start delta-first rather than replaying the core:
+For a later `FULL COMSYNC` in the **same aperture**, an acquisition receipt adequate for the declared bootstrap layers changes the default. Start delta-first rather than replaying the core:
 
 ```text
-SAME_APERTURE + COMPLETE_RECEIPT
+SAME_APERTURE + ADEQUATE_BOOTSTRAP_RECEIPT
 -> REFRESH COM / HOT ROUTES / MUTABLE HEADS
 -> CHECK INVALIDATORS
 -> REOPEN ONLY INVALIDATED LAYERS
 -> STOP ON NO MATERIAL DELTA
 ```
 
-A layer is invalidated when at least one of these is material:
+Adequacy is task- and layer-relative, not a claim that the project has been completely learned. A layer is invalidated when at least one of these is material:
 - its source identity or load-bearing dependency changed;
 - the current task now depends on detail not previously acquired deeply enough;
 - later evidence contradicts the current working map;
@@ -76,7 +76,6 @@ A layer is invalidated when at least one of these is material:
 - the aperture cannot honestly establish that its prior map remains adequate for the next act.
 
 Repeated reading is not free. It consumes the same bounded context needed for reasoning and action, so unnecessary replay is itself a coordination burden. A direct correction from Mark that the sync is reloading needlessly is evidence about the process, not an invitation to defend the checklist.
-
 
 ```text
 COM main SHA -> COM_STATE at that SHA
