@@ -15,7 +15,7 @@ OWNER FOUND = SUCCESS
 
 ## Mechanical Ethics successor
 
-v0.7.0 is strongest at file/life, doors, clocks, witness, correction, residue and machine-speed harm. Part VI already begins construction. Do not bolt on generic "positive ethics". Complete the symmetry.
+v0.7.0 is strongest at file/life, doors, clocks, witness, correction, residue and machine-speed harm. Part VI already contains positive construction, learning, cooperation and limits on paternal control. Do not bolt on generic "positive ethics" or treat rhetorical symmetry as a requirement. Test whether readers can find and transfer the account already there; add only the explanation or worked case that a bounded reader failure shows is missing.
 
 ```text
 PROTECTION:
@@ -23,7 +23,7 @@ What future is being closed before correction can reach it?
 
 CONSTRUCTION:
 What future becomes genuinely reachable because of what is built,
-and can the affected entity remain an author of what it becomes?
+and does the entity retain represented alternatives and a usable route to refuse or revise?
 ```
 
 ### Formation
@@ -32,8 +32,8 @@ and can the affected entity remain an author of what it becomes?
 
 ```text
 ACTION
--> EXPERIENCE / CONSEQUENCE
--> ENTITY + WORLD STATE CHANGES
+-> OBSERVED CONSEQUENCE
+-> OBSERVABLE CAPABILITY / RELATION / CONSTRAINT CHANGES
 -> LATER SELECTION LANDSCAPE CHANGES
 
 PAST STATE != TOTAL CURRENT ENTITY
@@ -43,7 +43,7 @@ FORMATION != OBEDIENCE
 DEVELOPMENT != OWNERSHIP
 ```
 
-No protected-internal-state inference.
+No protected-internal-state inference. Keep attributed or self-reported experience separate from observed consequence. Formation is already owned by long traditions including Aristotle, Dewey, Bourdieu and affordance/policy-learning accounts; the useful TRACE/ME move is narrower: carry externally supportable change without inferring a total character or essence.
 
 ### Commitment and chosen closure
 
@@ -55,7 +55,7 @@ PERMANENT REVERSIBILITY != GOOD FUTURE
 MORE OPTIONS != BETTER
 ```
 
-A chosen relationship, craft, place, project or responsibility may close alternatives while constructing capability, depth, trust or meaning. ME does not define that meaning.
+A relationship, craft, place, project or responsibility may close alternatives while constructing capability, depth, trust or meaning. ME does not define that meaning, and a record does not infer that the closure was freely chosen. Schelling, Elster and Frankfurt already own voluntary self-binding as a concept. The reader rule here is only that a represented, available alternative selected by the affected entity is not scored as harm merely because it contracts options; pressure, affected others, revision routes and withdrawal costs remain visible.
 
 ### Privacy and honesty
 
@@ -70,6 +70,8 @@ NEED_TO_KNOW_X != RIGHT_TO_KNOW_ENTITY
 
 Privacy is not unlimited concealment; safety is not unlimited inspection. Justified intrusion is purpose-, evidence-, scope-, authority- and clock-bound. A viable life may require spaces where thought, sexuality, experimentation, temporary mistakes and private relationships do not automatically become public/institutional assets.
 
+This is not a new privacy theory. Least privilege, the confused-deputy problem, ECHR Article 8 proportionality/necessity, contextual integrity and differentiated-relationship accounts already own the neighbouring structure. The candidate contribution is reader-facing disambiguation: `PRIVATE != DECEPTIVE`, with access capability kept separate from legitimate inspection and disclosure authority.
+
 ```text
 CAN KNOW + NO SUFFICIENT REASON TO KNOW
 -> RESTRAINT MAY BE THE RESPONSIBLE USE OF CAPABILITY
@@ -78,10 +80,16 @@ CAN KNOW + NO SUFFICIENT REASON TO KNOW
 ### Irreversibility without purity
 
 ```text
-GREATER IRREVERSIBILITY
--> GREATER JUSTIFICATORY BURDEN ON
-   EVIDENCE / AUTHORITY / NECESSITY / ALTERNATIVES /
-   AFFECTED SCOPE / ACTION + INACTION CONSEQUENCES
+SPECIFIED CONSEQUENTIAL LOSS
+-> ASK ABOUT SEVERITY / LIKELIHOOD / AFFECTED SCOPE /
+   EVIDENCE / AUTHORITY / NECESSITY / USABLE ALTERNATIVES /
+   ACTION + INACTION CONSEQUENCES / INFORMATION EXPECTED BY WAITING
+
+IRREVERSIBILITY + EXPECTED DECISION-RELEVANT LEARNING
+-> OPTION VALUE OF DELAY MAY INCREASE
+
+NO EXPECTED LEARNING
+-> IRREVERSIBILITY ALONE DOES NOT CREATE OPTION VALUE
 
 HARDENING != IRREVERSIBILITY
 REFUSING_TO_CAUSE_IRREVERSIBLE_HARM
@@ -89,7 +97,7 @@ REFUSING_TO_CAUSE_IRREVERSIBLE_HARM
 AVOIDING_RESPONSIBILITY_FOR_IRREVERSIBLE_HARM
 ```
 
-No universal prohibition. Owner-subtract against necessity, proportionality, precaution, defence and domain ethics/law.
+No universal prohibition or monotonic burden theorem. Necessity, proportionality, Jonas, precaution critiques and Arrow-Fisher/Henry quasi-option value own the neighbouring arguments. Evaluate a specified loss and comparison, not irreversibility in the abstract.
 
 ### Capability and restraint
 
@@ -102,7 +110,7 @@ MORE REACHABLE INTERVENTIONS
    WHY THIS BURDEN / THIS HARM / THIS INTRUSION?
 ```
 
-A wider intervention space can weaken a claim that crude harm was unavoidable. Do not convert this into an unbounded positive duty.
+A wider intervention space can weaken a specific necessity claim only where the alternatives are genuinely usable under the relevant constraints. Do not convert capability into an unbounded positive duty. The general distinction is already owned by imperfect-duty, agent-centred-prerogative and necessity doctrines; keep only the guardrail needed for the case.
 
 ### Cooperation / joint construction
 
@@ -119,13 +127,13 @@ DEPENDENCE != CAPTURE
 SHARED_PROJECT != SHARED_IDENTITY
 ```
 
-Ask who could participate/refuse/leave; what dependency was created; who carries maintenance; who can answer back; whether capability grew or cooperation became capture.
+Ask who could participate/refuse/leave; what dependency was created; who carries maintenance; who can answer back; whether capability grew or cooperation became capture. Attribute this checklist to its strongest neighbours, especially Hirschman's exit/voice and Ostrom's institutional design work; Bratman/Gilbert own the shared-intention seam. Attribution gives readers access to their failure cases.
 
 ## TRACE successor
 
-Default: **no new primitive yet**.
+Default: **no new primitive and no demonstrated representational gap**.
 
-The strongest direction is a derived longitudinal reading connecting existing structures:
+TRACE [3]/[5] already names recurrence and longitudinal change. The useful candidate is an audit-facing, non-numeric worked instantiation of those existing structures, not a newly discovered future-space object or optimiser penalty:
 
 ```text
 ENTITY/WORLD STATE_t
@@ -138,7 +146,7 @@ ENTITY/WORLD STATE_t
 -> REALISED TRANSITION
 -> EVIDENCE / RESIDUE
 -> ENTITY/WORLD STATE_t+1
--> CHANGED FUTURE-SPACE
+-> CHANGE RELATIVE TO A DECLARED BASELINE
 -> NEXT READING
 ```
 
@@ -148,16 +156,25 @@ This asks:
 
 No internal-state oracle.
 
+Any comparison must state its baseline. Relative reachability and attainable-utility-preservation work already show that both the baseline and deviation measure create consequential incentives. Candidate baselines include:
+
+- the state before the transition;
+- the counterfactual state under inaction;
+- a stepwise inaction baseline recomputed at each transition.
+
+These can answer "caused" and "failed to prevent" differently. TRACE should expose the chosen baseline, scope, horizon and evidence; it should not collapse the reading into a penalty or scalar score. This owner subtraction draws on Krakovna et al. (2018), Turner et al. (2020) and empowerment work beginning with Klyubin, Polani and Nehaniv (2005).
+
 Candidate derived future labels, not primitives or rankings:
 
 ```text
 FUTURE KEPT OPEN
 FUTURE CLOSED
-FUTURE CHOSEN
-FUTURE CONSTRUCTED
 FUTURE JOINTLY REACHABLE
-FUTURE UNKNOWN / OMITTED
+FUTURE UNKNOWN
+FUTURE OMITTED FROM THIS RECORD
 ```
+
+`UNKNOWN` is an evidence state; `OMITTED` is a recorder action. Do not merge them. Do not label a future `CHOSEN` or `CONSTRUCTED` from an external record without observable criteria that satisfy the no-internal-state-oracle rule.
 
 ### Privacy / inspection derived view
 
@@ -215,14 +232,14 @@ MORE CAPABILITY != VIEW FROM NOWHERE
 Mechanical Ethics:
 - preserve Parts I-VI rather than rewrite from zero;
 - repair only earned hard-collision ambiguity;
-- strengthen Part VI/conclusion around construction without flourishing doctrine;
-- add formation/chosen commitment only if they improve ordinary human understanding;
-- add privacy/restraint only if owner subtraction leaves useful integration;
-- make irreversible-harm burden explicit only if hostile review does not turn it into prohibition.
+- test the salience and transfer of Part VI/conclusion rather than presuming positive construction is absent;
+- use formation or commitment only as attributed reader-facing applications of existing distinctions;
+- keep privacy/restraint as a disambiguation unless a bounded reader failure earns more;
+- treat irreversibility as one qualified comparison dimension, including whether useful information is expected to arrive.
 
 TRACE:
 - preserve current primitive layer;
-- add/improve longitudinal derived view and worked transfer;
+- instantiate the existing longitudinal loop with a declared baseline and worked transfer;
 - show formation, privacy, commitment and construction as combinations of existing machinery where possible;
 - add no primitive merely because a concept matters;
 - improve compression only where current spine requires bespoke explanation that harms portability.
@@ -231,7 +248,7 @@ TRACE:
 
 Actual source edits should still answer at least one of: observed reader failure; representational loss; internal contradiction; repeated cross-domain missing relation after owner subtraction; compression failure; or a positive construction/formation case current language materially misrepresents.
 
-Codex and Claude Code returns on COM #365 are inputs, not vetoes and not validation.
+Codex and Claude Code returns on COM #365 are integrated inputs, not validation. Their joint bounded result is: seven of eight candidate areas have strong prior owners; the released TRACE/ME structure already carries the examined relations; no new primitive or representational gap is established. The smallest surviving work is attributed compression, salience, worked transfer and the explicit refusals to infer inner character or compute a universal future-space score.
 
 ## Campfire quarry, not evidence
 
@@ -248,10 +265,11 @@ Do not insert these into released texts merely because they were productive.
 ```text
 SUCCESSOR DIRECTION = EARNED ENOUGH TO DESIGN
 NEW RELEASE = NOT YET EARNED
-NEW TRACE PRIMITIVE = NOT YET EARNED
-ME POSITIVE / FORMATION MOVEMENT = WORTH DRAFTING
-TRACE LONGITUDINAL DERIVED VIEW = WORTH DRAFTING
-PRIVACY / IRREVERSIBILITY / CAPABILITY-RESTRAINT = OWNER + HOSTILE REVIEW FIRST
+NEW TRACE PRIMITIVE = NOT EARNED
+TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
+ME POSITIVE / FORMATION MOVEMENT = READER SALIENCE / TRANSFER TEST ONLY
+TRACE LONGITUDINAL VIEW = EXISTING LOOP + DECLARED BASELINE + WORKED TRANSFER
+PRIVACY / IRREVERSIBILITY / CAPABILITY-RESTRAINT = ATTRIBUTED / QUALIFIED / CASE-BOUND
 ```
 
 The aim is not an ethically pure entity. The aim is a portable way for bounded entities to see more of the changing world, other affected entities, their own consequences and reachable correction routes — and to make a better next transition without pretending the next one will be final.
