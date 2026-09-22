@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **22 September 2026 — bounded hot-surface compaction**
+Updated: **23 September 2026 — successor owner-subtraction integration**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -72,6 +72,19 @@ History belongs in dated receipts + Git.
 **NONE.** EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`. Its next step is local video recording and review, not source expansion. Upload, form completion and submission remain consequential human gates.
 
 Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`.
+
+## Active non-source design
+
+COM #365 / draft PR #409 is an explicitly directed, non-canon TRACE/ME successor design lane. Both exact-source/owner-subtraction reviews are returned and integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`.
+
+```text
+RELEASED TRACE / ME = UNCHANGED
+NEW PRIMITIVE / CONCEPT = NONE EARNED
+REPRESENTATIONAL GAP = NOT DEMONSTRATED
+NEXT = SMALLEST BETA REVIEW CANDIDATES, NOT SOURCE PROMOTION
+```
+
+This does not reopen a general build queue. Broad external-model review, release, canon and baseline promotion remain separately gated.
 
 ## Green / frozen candidate objects
 
@@ -110,9 +123,9 @@ Draft candidate frozen.
 - population result intentionally uncomputed;
 - next substantive evidence must be fresh November work if live rules allow.
 
-### Mechanical Ethics #47
+### TRACE / Mechanical Ethics successor
 
-Reader-test harness ready. No uncontaminated Condition-B result. v0.7.0 unchanged.
+COM #365 / draft PR #409 now carries the bounded design state. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. TRACE v0.3.0 and ME v0.7.0 remain unchanged.
 
 ### PSFH Leave a Mark
 
@@ -196,7 +209,7 @@ PSFH public guest intake = NONE
 - generic Nebius product — not earned;
 - BeforeBuild standalone — not earned;
 - THR record 5 — not earned;
-- new TRACE/ME version — not earned.
+- TRACE/ME released-source patch or version promotion — not earned; COM #365 non-canon design remains active.
 
 ## Next build condition
 
