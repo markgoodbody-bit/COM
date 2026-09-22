@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **22 September 2026 — bounded hot-surface compaction**
+Updated: **23 September 2026 — successor owner-subtraction integration**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -80,7 +80,21 @@ Current world sequence has recently returned:
 
 Next quarry follows materiality, not category quota.
 
-## 2. Current human gate — Hack-Nation 7
+## 2. Current bounded design lane — TRACE / ME successor
+
+Direct Mark direction opened COM #365 and draft PR #409 as a non-canon design object. Both dispatched reviews have returned and are integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`.
+
+```text
+OWNER FOUND ON 7 OF 8 CANDIDATES
+NEW PRIMITIVE = NONE
+NEW CONCEPT = NONE
+TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
+NEXT = BOUNDED BETA REVIEW CANDIDATE PREPARATION
+```
+
+Keep the surviving work small: attributed compression, salience, a worked transfer case, declared comparison baselines, and explicit refusal of inner-character inference or future-space scoring. Do not edit released TRACE/ME by momentum. Broad external-model review, canon, release and baseline promotion remain separate gates.
+
+## 3. Current human gate — Hack-Nation 7
 
 Last verified owner check: **19 September**. It listed Batch 6 closing **26 September**. Current route availability was not independently reverified during this compaction; check the owner source before action.
 
@@ -95,7 +109,7 @@ Receipt:
 `APPLICATION SENT = NO`  
 Registration/account/terms remain Mark's gate.
 
-## 3. Green / frozen drafts
+## 4. Green / frozen drafts
 
 ### Amazon Alexa+ — Relay PR #245
 
@@ -117,7 +131,7 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-## 4. Time / fresh-evidence gates
+## 5. Time / fresh-evidence gates
 
 ### ATRS — COM PR #364
 Head `d2bea526feced78750d1bbb4c45e686f3e4c6446`. Preserve September method; wake for fresh November result/rules or concrete falsifier.
@@ -126,12 +140,12 @@ Head `d2bea526feced78750d1bbb4c45e686f3e4c6446`. Preserve September method; wake
 Wake **1 October**; reread challenge/judging/rights before running judged work.
 
 ### Mechanical Ethics #47
-Need uncontaminated reader result; no released wording patch yet.
+Earlier reader-test pressure remains open inside the broader COM #365 successor lane; no released wording patch yet.
 
 ### PSFH Leave a Mark
 Technical candidate plausible; public intake waits for explicit human/controller/legal/topology choices.
 
-## 5. THR
+## 6. THR
 
 Exactly four public records. Record 5 not earned.
 
@@ -142,7 +156,7 @@ Do not create another record merely because:
 
 Current delivery caveat: exact-byte verifier includes the direct contribution fixture, but current push-run/live-byte result is unobserved from this aperture.
 
-## 6. Resources
+## 7. Resources
 
 COM #348 remains live only as an opportunity/runway quarry.
 
@@ -158,7 +172,7 @@ AVAILABLE MONEY WITHOUT NEED
 
 No resource application is currently required to continue today's work.
 
-## 7. Closed / do-not-reopen by momentum
+## 8. Closed / do-not-reopen by momentum
 
 - ARC build — owner-subtracted / STOP;
 - Shipaton — STOP;
@@ -166,8 +180,7 @@ No resource application is currently required to continue today's work.
 - generic Nebius product — not earned;
 - BeforeBuild standalone product — not earned;
 - THR record-5 growth — not earned;
-- TRACE successor — no current patch pressure;
-- ME successor — one reader pressure only, no patch earned.
+- TRACE/ME released-source patch — no patch earned; non-canon COM #365 design lane remains active.
 
 ## Detailed routes
 
