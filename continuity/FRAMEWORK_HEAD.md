@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — beta2 exact-source returns / reconciliation open**
+Updated: **23 September 2026 — external review round 1 integrated / beta3 open**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-COM #365 remains the active non-canon successor lane. The exact beta1 review targets remain TRACE `43a92cef427906829f1745595c69eccdf51d6ec2` and ME `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`; a Codex concurrency miss changed both branch histories, then restored their file trees byte-for-byte. Current beta2 heads after bounded exact-source repair are TRACE v0.4.0-beta2 PR #57 at `881b1d3248c8cca9887dfa7fa5047944b34c7437` and Mechanical Ethics v0.8.0-beta2 PR #50 at `18bfd49d516d64fb9e6e30601844750015b0af3b`. Released baselines remain unchanged.
+COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `6a9f48918925fd93d5ed7eb50b75cbe2f60bed21` and Mechanical Ethics v0.8.0-beta3 PR #52 at `0d5d2703adc29564fa5bfeb250df80884eed7362`. Released baselines remain unchanged.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -115,8 +115,9 @@ NEW TRACE PRIMITIVE = NOT EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
 
 SURVIVING WORK = ATTRIBUTED COMPRESSION / SALIENCE / WORKED TRANSFER
-TRACE v0.4.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED / NOT RELEASE
-ME v0.8.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED / NOT RELEASE
+TRACE v0.4.0-beta3 = EXTERNAL-REVIEW INTEGRATION CANDIDATE / NOT RELEASE
+ME v0.8.0-beta3 = EXTERNAL-REVIEW INTEGRATION CANDIDATE / NOT RELEASE
+BETA2 = PRESERVED ROUND-1 REVIEW SNAPSHOT
 BETA1 = EXACT TARGET COMMITS PRESERVED / BRANCH HISTORIES MOVED / FILE TREES RESTORED
 ```
 
@@ -185,7 +186,7 @@ Hold until **1 October** live challenge/rules/rights gate. Do not pre-consume ju
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 coordinates the successor lane. External reviewers should use TRACE PR #57 and ME PR #50 plus `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`. The earlier ME #47 reader-test pressure remains relevant. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged; review does not promote canon or baseline.
+COM #365 coordinates the successor lane. Beta3 review surfaces are TRACE PR #58 / ME PR #52 with focused beta3 briefs; beta2 remains the provenance surface for round-1 returns. The earlier ME #47 reader-test pressure remains relevant. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged; review does not promote canon or baseline.
 
 Successor-pressure route:
 `coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
