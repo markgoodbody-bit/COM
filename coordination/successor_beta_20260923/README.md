@@ -34,6 +34,14 @@ Historical Corday material and unverified Chowchilla material are not included i
 
 The remaining question is whether this companion helps readers enough to justify its length. It can be shortened or removed without changing a released baseline.
 
+## Executable illustrations
+
+Run `python coordination/successor_beta_20260923/check_examples.py` from the repository root. It uses only the standard library and performs no network or file writes.
+
+The first fixture distinguishes event order from event counts and a stipulated unrelated benefit from restored access. This refutes only an order-blind event tally, not every additive model. The second distinguishes existence of a successful trajectory from a policy usable without hidden information. Equal state probabilities and the transition rules are stipulated, not measured. The informed policy is deliberately given the state as an observation; the uninformed policies are not.
+
+Passing these checks establishes consistency of these finite illustrations, not clinical facts, mathematical completeness, reader benefit or validation of TRACE/ME. Read the editorial companion before these fixtures if an initial reader response is wanted; they disclose worked interpretations.
+
 ## Scope boundaries
 
 No TRACE/ME release, canon, licence or baseline promotion. No external reviewer dispatch, paid inference, submission or production activation. Framework owns integration of this stacked candidate. This is not a new general work queue or a THR entity-graph design.
