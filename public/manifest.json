@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.29",
+  "site_edition": "0.8.30",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-23",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -37,13 +37,13 @@
       "name": "TRACE",
       "url": "https://github.com/markgoodbody-bit/TRACE",
       "status_url": "https://raw.githubusercontent.com/markgoodbody-bit/TRACE/main/README.md",
-      "human_preview_source_revision": "46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"
+      "human_preview_source_revision": "6c68fae8cbc51d0ef1e77a18e220ceb7a1207025"
     },
     {
       "name": "Mechanical Ethics",
       "url": "https://github.com/markgoodbody-bit/mechanical-ethics",
       "status_url": "https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/main/README.md",
-      "human_preview_source_revision": "44f7efb59806242fd26c572cbfbaaeaefaea2058"
+      "human_preview_source_revision": "e2ef746e931161cb70ac46a4eaa122442134e86b"
     },
     {
       "name": "COM",
@@ -74,7 +74,7 @@
     "change_history_source_path": "public/changes.md in the maintained site source",
     "change_history_sha256": "2e0daf60ff804fb416c9544b993d55eafe1cf1fe163de22af42eaab97d66be8f",
     "change_history_input_html_sha256": "8728b90da6e7d1e95688cadac407d90bc93688625036d00f9507710ce7c32625",
-    "change_history_addendum_note": "D016 through D038 and D045-D072 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. D068-D069 were backfilled from exact published Git history after their original publications omitted change-log/version advances. Earlier generator identity applies to the preserved older entries.",
+    "change_history_addendum_note": "D016 through D038 and D045-D073 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -82,8 +82,8 @@
     },
     "first_contact_design_commit": "2f986c315370c4233f02180cc6fab5d6f30afb2f",
     "change_history_generator_commit": "e63d4fa7c2f6533366ee80f55726cd9ac85e962b",
-    "resource_copy_input_commit": "10c23eb1b971d1c14306637837de6d05d0dbec2f",
-    "resource_inventory_sha256": "5fafbf3658e7e73f647aa47d5235008899b59ef99ac2849d6129e1f687257dda",
+    "resource_copy_input_commit": "pending-d073-source-head",
+    "resource_inventory_sha256": "f0bfdeb2732da98d06baae5142e25ce00624c63deb90087b41bda794cbd3e35e",
     "worked_revision_source_commit": "730ece48c96fae27d66c797c2fc8fe96a61e8d39",
     "worked_revision_source_path": "door-prototypes/perspective-walk-20260908/WORKED_REVISION.md",
     "explore_source_path": "door-prototypes/perspective-walk-20260908/",
@@ -104,16 +104,17 @@
       "scope": "The canonical root is named as shared reading for humans and AI readers. The older human_reading route key is retained as a compatibility alias; both resolve to the same public root."
     },
     "resource_release_sync": {
-      "trace_commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
-      "mechanical_ethics_commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
-      "resource_input_sha256": "84ebfe8f23af8ffce93bc13b14314e74aa0722a03688cff8087962517182eff7",
-      "resource_inventory_sha256": "7a9609cf8ee083a60b4974971a103c7e0e00f475b3cfde7821cf9dc0eefef9b0",
-      "scope": "Current same-domain aliases advance to the released v0.3.0/v0.7.0 baselines; earlier candidate snapshots remain immutable. Status sync is not validation or a new framework release.",
-      "explore_current_source_routes": {
-        "trace_commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
-        "mechanical_ethics_commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
-        "historical_basis_preserved": "Explore trace/me source-snapshot entries remain pinned to the pre-release source objects actually used to build the adapted readings."
-      }
+      "trace_commit": "6c68fae8cbc51d0ef1e77a18e220ceb7a1207025",
+      "trace_version": "v0.4.0",
+      "trace_compact_sha256": "add22409dcc25d09b26559c7d824ddae047262ac5918a509c2a4234bdc27ce6d",
+      "trace_full_reference_version": "v0.3.0 retained donor/reference",
+      "mechanical_ethics_commit": "e2ef746e931161cb70ac46a4eaa122442134e86b",
+      "mechanical_ethics_version": "v0.8.0",
+      "mechanical_ethics_markdown_sha256": "e3267c3e41e7fdfb44c9a9279250a1a7a38d5b9c389a594fef40cfea75fdbe76",
+      "mechanical_ethics_pdf_sha256": "e9ca37b249b4d915b18e954b6c72ebd999ae4be8ceed2c0aaf395922d0c6b56f",
+      "resource_input_sha256": "0d0a7d53957bbd1b59b55231f18df01a95735d309ecbc19d96eec6a73f6f3861",
+      "resource_inventory_sha256": "f0bfdeb2732da98d06baae5142e25ce00624c63deb90087b41bda794cbd3e35e",
+      "scope": "Current same-domain aliases advance to TRACE v0.4.0 and Mechanical Ethics v0.8.0 released baselines; earlier snapshots remain immutable. Existing AI-training grants remain scoped to TRACE v0.3.0 and Mechanical Ethics v0.7.0. Release sync is not validation or demonstrated practical advantage."
     },
     "training_permission_input_sha256": "250bbfd7964208fdeb780925d45de0b86d4ff2b6d6000b86befac04a9c0ded14"
   },
