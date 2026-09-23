@@ -1,0 +1,82 @@
+name: PSFH D073 finalize release sync
+
+on:
+  push:
+    branches:
+      - framework/psfh-d073-trace-me-release-sync-20260923
+    paths:
+      - 'public/llms.txt'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - '.github/workflows/psfh-d073-finalize.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d073-trace-me-release-sync-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D073 derived identities
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, re
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+          views=Path('scripts/source-views.mjs')
+          text=views.read_text()
+          llms=sha('public/llms.txt')
+          text,n=re.subn(r"(source: 'llms.txt'.*?sha256: ')[0-9a-f]{64}(')", r"\g<1>"+llms+r"\2", text, count=1)
+          if n != 1: raise SystemExit('orientation hash pin not replaced')
+          views.write_text(text)
+
+          mp=Path('public/manifest.json')
+          m=json.loads(mp.read_text())
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          m['provenance']['resource_inventory_sha256']=sha('public/resources/inventory.json')
+          m['provenance']['resource_copy_input_commit']='5f95b3705ac89de34e3a5827fc07484518786c26'
+          m['provenance']['resource_release_sync']['resource_inventory_sha256']=sha('public/resources/inventory.json')
+          mp.write_text(json.dumps(m, indent=2)+'\n')
+          print('D073_LLMS_SHA256='+llms)
+          print('D073_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D073_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          print('D073_RESOURCE_INVENTORY_SHA256='+sha('public/resources/inventory.json'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+      - name: Commit exact derived pins
+        run: |
+          git config user.name "PSFH D073 finalizer"
+          git config user.email "actions@users.noreply.github.com"
+          git add scripts/source-views.mjs public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D073 derived pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D073: pin release-sync derived identities"
+          git push origin HEAD:framework/psfh-d073-trace-me-release-sync-20260923
+
+# D073 retry after discovery-contract repair

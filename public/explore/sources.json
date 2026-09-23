@@ -29,9 +29,9 @@
     },
     "trace-home": {
       "label": "TRACE purpose, limitations and current-source route",
-      "url": "https://github.com/markgoodbody-bit/TRACE/blob/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/README.md",
-      "raw_url": "https://raw.githubusercontent.com/markgoodbody-bit/TRACE/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/README.md",
-      "commit": "8310d2531d3b2fe4e3b44c92d1d544a322f52bf4",
+      "url": "https://github.com/markgoodbody-bit/TRACE/blob/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025/README.md",
+      "raw_url": "https://raw.githubusercontent.com/markgoodbody-bit/TRACE/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025/README.md",
+      "commit": "6c68fae8cbc51d0ef1e77a18e220ceb7a1207025",
       "sections": [
         "Start here",
         "Current status",
@@ -40,9 +40,9 @@
     },
     "me-home": {
       "label": "Mechanical Ethics purpose, limitations and current-source route",
-      "url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/25a9d793af1cded26dd2d766e1d1c08e1b30f652/README.md",
-      "raw_url": "https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/README.md",
-      "commit": "25a9d793af1cded26dd2d766e1d1c08e1b30f652",
+      "url": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e2ef746e931161cb70ac46a4eaa122442134e86b/README.md",
+      "raw_url": "https://raw.githubusercontent.com/markgoodbody-bit/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/README.md",
+      "commit": "e2ef746e931161cb70ac46a4eaa122442134e86b",
       "sections": [
         "Current status",
         "What remains unresolved"

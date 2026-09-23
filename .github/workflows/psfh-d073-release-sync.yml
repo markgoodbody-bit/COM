@@ -1,0 +1,88 @@
+name: PSFH D073 regenerate released resources
+
+on:
+  push:
+    branches:
+      - framework/psfh-d073-trace-me-release-sync-20260923
+    paths:
+      - 'scripts/RESOURCE_COPIES.json'
+      - '.github/workflows/psfh-d073-release-sync.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d073-trace-me-release-sync-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install bounded resource dependency
+        run: python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin reviewed resource-map identity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, re
+          spec = Path('scripts/RESOURCE_COPIES.json').read_bytes()
+          digest = hashlib.sha256(spec).hexdigest()
+          path = Path('scripts/import-resources.py')
+          text = path.read_text()
+          text, n = re.subn(r"INPUT_SHA = '[0-9a-f]{64}'",
+                            "INPUT_SHA = '" + digest + "'", text, count=1)
+          if n != 1:
+              raise SystemExit('importer input pin not replaced')
+          path.write_text(text)
+          print('D073_RESOURCE_INPUT_SHA256=' + digest)
+          PY
+      - name: Acquire exact released project files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -rf /tmp/psfh-d073-acquired /tmp/psfh-d073-assembled
+          python scripts/import-resources.py --acquire /tmp/psfh-d073-acquired
+      - name: Assemble and preserve all prior snapshots
+        run: |
+          python scripts/import-resources.py --assemble /tmp/psfh-d073-acquired --output /tmp/psfh-d073-assembled --previous public/resources
+          rm -rf public/resources
+          mv /tmp/psfh-d073-assembled public/resources
+      - name: Pin generated inventory identity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, re
+          inv = Path('public/resources/inventory.json').read_bytes()
+          digest = hashlib.sha256(inv).hexdigest()
+          path = Path('scripts/resources.mjs')
+          text = path.read_text()
+          text, n = re.subn(r"export const INVENTORY_SHA256 = '[0-9a-f]{64}';",
+                            "export const INVENTORY_SHA256 = '" + digest + "';", text, count=1)
+          if n != 1:
+              raise SystemExit('inventory pin not replaced')
+          path.write_text(text)
+          print('D073_INVENTORY_SHA256=' + digest)
+          PY
+      - name: Recheck resource contract
+        run: |
+          python -m unittest scripts.test_import_resources -v
+          node --test scripts/test-resources.mjs
+      - name: Commit generated resources
+        run: |
+          git config user.name "PSFH D073 resource generator"
+          git config user.email "actions@users.noreply.github.com"
+          git add scripts/import-resources.py scripts/resources.mjs public/resources
+          if git diff --cached --quiet; then
+            echo "No generated resource delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D073: regenerate TRACE v0.4.0 and ME v0.8.0 resources"
+          git push origin HEAD:framework/psfh-d073-trace-me-release-sync-20260923
