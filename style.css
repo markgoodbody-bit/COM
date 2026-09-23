@@ -231,15 +231,16 @@ body:has(.context-window) .hero-heading h1 { font-size: clamp(1.25rem, 2.6vw, 2.
 .full-reference > section { margin-inline: auto; }
 @supports not selector(:has(*)) { .context-window [data-step] { display: block; } }
 @media print { .context-window [data-step], .context-window[data-enhanced] [data-step][hidden] { display: block !important; } .journey-exits { display: none; } }
-/* D030: retain the whole painting first, without making it a full-screen gate. */
-body:has(.project-spine) .art-hero { width: min(100%, calc(28svh * 3801 / 2368)); min-height: 0; margin-block: 0; }
+/* D076: let the opening artwork act as a real visual anchor.
+   Keep the complete 3801:2368 frame, centred and large, without cropping. */
+body:has(.project-spine) .art-hero { width: min(90vw, 76rem); min-height: 0; margin: 0 auto 1rem; }
 body:has(.project-spine) .opening-composition { margin-bottom: 0; }
-body:has(.project-spine) .hero-heading { margin: .75rem; }
-body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.125rem, 2vw, 1.5rem); }
+body:has(.project-spine) .hero-heading { margin: clamp(1rem, 2vw, 1.75rem); }
+body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.5rem, 2.8vw, 2.5rem); }
 .project-spine { width: min(calc(100% - 2rem), 76rem); margin: 1.5rem auto 2rem; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1rem 3rem; }
 .project-purpose h2 { font: 400 clamp(1.75rem, 3vw, 2.5rem)/1.15 var(--serif); margin: .5rem 0 1rem; }
 .project-purpose p { max-width: 64ch; margin-block: 0 .75rem; }
-.art-key { max-width: 58rem; margin: .8rem auto 0; padding-inline: 1rem; font: 400 clamp(1rem, 1.6vw, 1.125rem)/1.55 var(--serif); text-wrap: pretty; }
+.art-key { max-width: 64rem; margin: 1rem auto 0; padding-inline: 1rem; text-align: center; font: 400 clamp(1.075rem, 1.8vw, 1.3rem)/1.55 var(--serif); text-wrap: pretty; }
 .project-disclosure { max-width: 64ch; margin: .5rem 0; border-top: 1px solid var(--border); }
 .project-disclosure:last-of-type { border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
 .project-disclosure summary { cursor: pointer; min-height: 2.75rem; padding-block: .65rem; font-weight: 600; }
@@ -252,12 +253,12 @@ body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.125rem, 2vw, 1.5r
 
 /* Homepage title: slightly more legible without overtaking the Homer opening. */
 body:has(.project-spine) .hero-heading h1 {
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
 }
 
-/* D047: restore visual weight to the opening painting after the story-first repair.
-   Keep the full 3801:2368 frame, but size it against the content as well as the viewport.
-   On larger screens it can approach the 76rem reading width without becoming a full-screen gate. */
+/* D076: the opening image is the first visual encounter, not a thumbnail.
+   Preserve the whole frame and centre it at near-page width. */
 body:has(.project-spine) .art-hero {
-  width: min(100%, 64rem, calc(70svh * 3801 / 2368));
+  width: min(90vw, 76rem);
+  margin-inline: auto;
 }
