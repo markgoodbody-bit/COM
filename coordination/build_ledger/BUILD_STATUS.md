@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — external review round 1 integrated / beta3 open**
+Updated: **23 September 2026 — beta3 round-2 external review ready**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,7 +75,7 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `6a9f48918925fd93d5ed7eb50b75cbe2f60bed21` and ME v0.8.0-beta3 PR #52 at `0d5d2703adc29564fa5bfeb250df80884eed7362`.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `5e50926bada398184c6f83a8c376a5ceea6e6832` and ME v0.8.0-beta3 PR #52 at `cf8c64612a4e4d20cb1303ad0cab70dfd43d87d5`.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
@@ -237,3 +237,6 @@ Hot surfaces are intentionally compact.
 - compaction receipt: `coordination/build_ledger/COMPACT_CONTINUITY_REPAIR_20260919_MIDDAY.md`
 
 `HOT SURFACE = CURRENT STATE, NOT HISTORY`
+
+
+Beta3 round-2 status: outside-AI review ready. Final bounded repairs integrated: ME conditional timing/answerability wording; TRACE verification distinction restored after shrink; Amina prospective timing overclaim removed; TRACE practical falsifier predeclares comparator/task/measure/burden/adjudication. Released baselines unchanged.
