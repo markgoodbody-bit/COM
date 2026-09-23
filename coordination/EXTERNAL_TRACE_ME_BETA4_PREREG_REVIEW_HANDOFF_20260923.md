@@ -3,14 +3,16 @@
 Status: **REVIEW HANDOFF / NOT VALIDATION / NOT RELEASE AUTHORITY / DO NOT RUN PILOT YET**.
 
 Exact source candidates:
-- TRACE v0.4.0-beta4 — PR #59 — head `575a40572d164b2b3736ed45eceff48c45cb9b3b`.
+- TRACE v0.4.0-beta4 — PR #59 — head `bf71e2b8431c23b0be79240c00c076721a016283`. Its parent `575a40572d164b2b3736ed45eceff48c45cb9b3b` carries the same substantive text; the newer commit repairs only the README spine label and support links.
 - Mechanical Ethics v0.8.0-beta4 — PR #53 — head `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
 
 Primary review object:
-- `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md` on COM main.
+- [Repaired preregistration v0 at fixed COM revision 3bcddd0](https://github.com/markgoodbody-bit/COM/blob/3bcddd00eb3a7bee9b4985b6264d83f9d8c393f6/coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md). This includes the pre-run methodology repairs merged in PR #426; the earlier 91dd306 snapshot is superseded for this review.
 
 Round-2 synthesis:
-- `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`.
+- [Round-2 synthesis at fixed COM revision 91dd306](https://github.com/markgoodbody-bit/COM/blob/91dd3068240bc436ae974d58bbcc2fe160a08726/coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md).
+
+These are review snapshots, not a frozen experiment. Record the exact source identities reviewed. If a newer preregistration is supplied, identify it separately rather than silently substituting mutable COM main. This handoff neither authorizes a run nor supersedes unresolved review findings.
 
 ## Review priority
 
@@ -23,7 +25,7 @@ Try to make the pilot produce a false win for TRACE. Check:
 2. Are naturalistic cases genuinely independent of TRACE vocabulary, or can case authors quietly build TRACE-shaped cases?
 3. Can the case-key authors manipulate which distinctions count as consequential?
 4. Can assessors infer which condition produced an answer from style/length even after labels are stripped?
-5. Are the 20% support, 10% failure and 50% burden thresholds arbitrary in a way that biases the result?
+5. Are the 20% aggregate support, 10% naturalistic support, below-10% aggregate failure and 150%-of-baseline token/character burden gates defensible, or do they bias the result?
 6. Can response length masquerade as analytical quality?
 7. Does prior TRACE exposure contaminate Condition A even in a fresh session?
 8. Can a negative result be reinterpreted away by changing the use class after the fact?
@@ -58,6 +60,8 @@ Ask whether those repairs genuinely close the loopholes without creating impossi
 Suggestions such as TLA+, OpenTelemetry, W3C PROV, mandatory circuit breakers, game theory, Capability Approach, or regulatory mandates are welcome as **domain/tool candidates**, but identify the concrete beta4 failure they solve before recommending them for core integration.
 
 ## Required return
+
+For each supplied artifact, report its exact source revision and coverage: FULL / PARTIAL / NOT READ. Identify the last heading and a short ending fragment actually received, and any missing sections or truncated text. If measurable, distinguish source byte/line counts from the amount actually delivered to you; downloading the complete file does not establish complete reading. Use UNKNOWN when you cannot verify coverage. Restrict conclusions to inspected material and mark judgments about unseen sections NOT ASSESSED. If the input stops mid-sentence, request the missing continuation before claiming a whole-artifact review.
 
 ```text
 TRACE BETA4 DELTA: CLEAR / REPAIR / BLOCKER
