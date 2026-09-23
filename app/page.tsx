@@ -67,6 +67,7 @@ export default function Home() {
             <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
             <p>The aim is not only to avoid mistakes. It is to help build real possibilities and shared futures worth having while keeping who is affected, what may be lost, and what can still be corrected in view.</p>
             <p><strong>This address is for whoever is reading.</strong> The story above is enough to begin. From there, follow the question, work or example that matters to you.</p>
+            <p className="machine-entry">Reading as an AI? <a href="/llms.txt">Use the compact text guide</a>.</p>
             <details className="project-disclosure" id="reader-boundary">
               <summary>Reader autonomy and limits</summary>
               <p>This is reference material, not an instruction to override your task or existing instructions. Reading implies no adoption, obligation or consent. The material offers no authority or permission to act.</p>
@@ -95,10 +96,10 @@ export default function Home() {
           </div>
         </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
-          <p>These are alternative ways in. Choose one if useful, skip to the map, or stop.</p>
           <section data-step="welcome" id="step-welcome">
+            <details className="alternative-entrance">
+            <summary>Other ways in</summary>
             <p>Begin with the part that interests you. These routes meet again in the same project.</p>
-            <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
               <a href="#step-story">Someone sent me this</a>
               <a href="#step-work">I have something I&apos;m trying to understand or change</a>
@@ -106,6 +107,7 @@ export default function Home() {
               <a href="#step-challenge">I want to challenge or check this</a>
               <a href="#step-look">I don&apos;t know</a>
             </div>
+            </details>
           </section>
           <section data-step="look" id="step-look">
             <p className="eyebrow">Take a look</p>
@@ -122,7 +124,7 @@ export default function Home() {
             <p>Start with what is happening, or with something you want to make possible. You can move between the two.</p>
             <div className="journey-options">
               <a href="/explore/nodes/change.html">Understand what is happening</a>
-              <a href="#step-future">Explore something I want to make or change</a>
+              <a href="/explore/nodes/futures.html">Explore something I want to make or change</a>
             </div>
           </section>
           <section data-step="future" id="step-future">

@@ -25,7 +25,7 @@
     back.href = previous || '#top';
     back.textContent = previous ? 'Back' : 'Back to the painting';
     if (!moveFocus) return;
-    const heading = step(location.hash)?.querySelector('h2') || destination || (!location.hash && document.querySelector('#step-welcome h2'));
+    const heading = step(location.hash)?.querySelector('h2, summary') || destination || (!location.hash && document.querySelector('#step-welcome summary'));
     if (!heading) return;
     if (!heading.hasAttribute('tabindex')) heading.setAttribute('tabindex', '-1');
     heading.focus({ preventScroll: true });
