@@ -1,6 +1,7 @@
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
+import { appealPresentation } from './appeal-presentation.mjs';
 
 const stylesheet = '<link rel="stylesheet" href="/style.css">';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -34,7 +35,7 @@ export async function applyHouseStyle(root) {
       if (!entry.isFile()) throw Error('Unexpected generated entry: ' + child);
       if (!child.endsWith('.html')) continue;
       const file = path.join(root, child);
-      const before = await readFile(file, 'utf8'), after = addReadingNavigation(sharedStyle(before), child);
+      const before = await readFile(file, 'utf8'), after = addReadingNavigation(appealPresentation(sharedStyle(before), child), child);
       if (before !== after) { await writeFile(file, after); changed.push(child); }
     }
   }

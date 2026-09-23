@@ -4,21 +4,38 @@ import { readFile } from 'node:fs/promises';
 import { ROOMS } from './contextual-art.mjs';
 import { ENABLED_ROOMS } from './change-room.mjs';
 import { SUPPORT_READINGS, addReadingNavigation } from './house-style.mjs';
+import { appealPresentation } from './appeal-presentation.mjs';
 
 const escape = s => s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;');
 
-test('eight support readings gain direct exits without changing their main text', async () => {
+test('eight support readings gain direct exits with the declared presentation only', async () => {
   assert.equal(SUPPORT_READINGS.size, 8);
   for (const route of SUPPORT_READINGS) {
     const source = await readFile('public/' + route, 'utf8');
     const output = await readFile('out/' + route, 'utf8');
-    assert.equal(output.match(/<main>[\s\S]*?<\/main>/)[0], source.match(/<main>[\s\S]*?<\/main>/)[0]);
+    assert.equal(output.match(/<main>[\s\S]*?<\/main>/)[0], appealPresentation(source, route).match(/<main>[\s\S]*?<\/main>/)[0]);
     assert.match(output, /class="support-reading"/);
     assert.match(output, /href="\/">Opening<\/a>/);
     assert.match(output, /href="\/explore\/#reading-map">Explore questions<\/a>/);
     assert.throws(() => addReadingNavigation(output, route), /template changed/);
   }
   assert.equal(addReadingNavigation('<body>archive</body>', 'resources/snapshots/example.html'), '<body>archive</body>');
+});
+
+test('appeal entry and case keep original sections behind the readable example', async () => {
+  for (const id of ['case', 'entry']) {
+    const source = await readFile(`public/explore/example/${id}.html`, 'utf8');
+    const output = await readFile(`out/explore/example/${id}.html`, 'utf8');
+    const details = output.split('<summary>Source details and limits</summary>')[1].split('</details>')[0];
+    for (const section of source.matchAll(/<section>[\s\S]*?<\/section>/g)) assert.ok(details.includes(section[0]));
+    assert.match(output, /Illustrative example/);
+    assert.ok(output.indexOf('aria-label="Optional routes"') < output.indexOf('Source details and limits'));
+  }
+  const facts = JSON.parse(await readFile('public/explore/example/case.json'));
+  const rendered = await readFile('out/explore/example/case.html', 'utf8');
+  for (const fact of facts.facts) assert.ok(rendered.includes(`<p>${escape(fact.text)}</p>`));
+  for (const unknown of facts.unknowns) assert.ok(rendered.includes(`<li>${escape(unknown)}</li>`));
+  assert.throws(() => appealPresentation('<main>changed</main>', 'explore/example/case.html'), /template changed/);
 });
 
 test('all ten readings retain their accounts, questions, source links and one title', async () => {
