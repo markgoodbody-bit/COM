@@ -1,9 +1,3 @@
-## Release currentness correction — 23 September 2026, 14:10 UTC
-
-This supersedes the pre-release TRACE/ME status statements below; those beta identities remain review history, not current released baselines. Live GitHub release receipts identify **TRACE v0.4.0** at `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and **Mechanical Ethics v0.8.0** at `e2ef746e931161cb70ac46a4eaa122442134e86b`, citing explicit human release authority. Source: [TRACE release](https://github.com/markgoodbody-bit/TRACE/releases/tag/v0.4.0), [ME release](https://github.com/markgoodbody-bit/mechanical-ethics/releases/tag/v0.8.0). Both remain NOT VALIDATED; the pilot remains unrun and not authorized by publication. Prior releases and the v0.3 technical donor remain preserved; training permissions are not automatically expanded.
-
-PSFH D073 source sync PR #429 is merged to its maintained-source branch, not COM main. Publication run `35872216595` completed successfully. At approximately 14:12 UTC, independent HTTPS reads of the served TRACE spine, ME Markdown and ME PDF matched all three release-receipt SHA-256 hashes exactly. This verifies those three artifacts, not every site route or visual rendering.
-
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
@@ -66,10 +60,10 @@ History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
 
-- TRACE main `e7d46398dc00ead931b0d5cae98518c1bcf304a3` — formal baseline v0.3.0;
-- Mechanical Ethics main `714907a4d0af7bd702b0ab92786aa858213812b4` — formal baseline v0.7.0;
-- Human Record main `9f9246c76348cd2f3a4d4f3501b4bf5af65e96db` — four public records;
-- Campfire Relay main `32143937d6a642a6f5e2404d368fd09aa4d54da9`.
+- TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
+- Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
+- Human Record main `0a8e5370891c09bb0993a4da136219e658d1d104` — four public records; entity-admission guard integrated;
+- Campfire Relay main `192caed51cabc6fdf60cebea3c1bb7df548ecdb0` — COMSYNC/watchdog split integrated; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -81,20 +75,18 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `bf71e2b8431c23b0be79240c00c076721a016283` and ME v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
+TRACE / Mechanical Ethics release work is complete. COM #365 now carries successor/review provenance and routes future pressure into real-world/use testing.
 
 ```text
-RELEASED TRACE / ME = UNCHANGED
-NEW CORE TERM / CONCEPT = NONE EARNED
-TRACE v0.4.0-beta3 = OPEN / ROUND-1 INTEGRATION CANDIDATE
-ME v0.8.0-beta3 = OPEN / ROUND-1 INTEGRATION CANDIDATE
-BETA2 = PRESERVED ROUND-1 REVIEW SNAPSHOT
-EXTERNAL MODEL REVIEW ROUND 1 = INGESTED / NOT VALIDATION
+TRACE v0.4.0 = RELEASED / NOT VALIDATED / NO EFFICACY RESULT
+ME v0.8.0 = RELEASED / NOT VALIDATED
+TRACE BETA PRS #56-59 = CLOSED / HISTORY PRESERVED
+ME BETA PRS #49/#50/#52/#53 = CLOSED / HISTORY PRESERVED
+BETA5 = NOT EARNED
+PRACTICAL-ADVANTAGE PILOT = UNRUN / SEPARATE TEST
 ```
 
-Round-1 convergence earned cuts rather than ontology growth. TRACE beta3 shrinks the compact spine from roughly 29.4k to roughly 20.2k characters, moves detailed timing and the full anti-collapse catalogue into profile/index files, adds a worked parse, and states a practical-advantage falsifier. ME beta3 removes local viability-set math, bounds the timing test, adds finality/elected-closure symmetry, grounds the Other Fire under power asymmetry, makes hope explicitly non-demanding, and exposes concrete buildable patterns. Stronger-owner maps route more specialist machinery outward.
-
-Existing release-integrity/source-binding workflows still fail because beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected guard, not a beta PASS/FAIL result. Do not weaken those guards.
+Round-1/2 review earned cuts, attribution and clearer boundaries rather than ontology growth. Do not reopen released prose by review momentum. Next source change requires a concrete defect or world/use evidence.
 
 ## Green / frozen candidate objects
 
@@ -102,9 +94,9 @@ Existing release-integrity/source-binding workflows still fail because beta file
 
 `Did It Happen? — Action Receipts for Alexa+`
 
-- head: `7a4c501dedb228c7387336fa267356e9cde27f8f`;
-- hosted: `campfire-ci 1539 / 35437873204 SUCCESS`;
-- focused tests: 24;
+- head: `c0f8a94bb0aeec73e780c24d35c93372a306ee7d`;
+- hosted: `campfire-ci / 35875127444 SUCCESS`;
+- focused candidate tests: 25;
 - unresolved-state, restart, current-vs-history and blocked-receipt recovery regressions preserved;
 - real Alexa+ interoperability: not tested;
 - source candidate: green / freeze.
@@ -135,7 +127,7 @@ Draft candidate frozen.
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 carries coordination history; TRACE #57 / ME #50 remain beta2 round-1 provenance; TRACE #58 / ME #52 carry beta3 integration. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
+COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME beta PRs #49/#50/#52/#53 are closed after release with branches/history preserved. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.4.0 and ME v0.8.0 are frozen pending concrete defects or world/use evidence.
 
 ### PSFH Leave a Mark
 
