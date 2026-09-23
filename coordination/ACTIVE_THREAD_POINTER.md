@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — successor owner-subtraction integration**
+Updated: **23 September 2026 — morning beta-support refresh**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,21 +82,21 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-Direct Mark direction opened COM #365 and draft PR #409 as a non-canon design object. Both dispatched reviews have returned and are integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`.
+COM #365 remains active. Draft PR #409 is integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`. Stacked draft PR #411 is prepared at `b246a9eb704ed93bf2782a4d201a1b970b7266c2` with the reader companion, review brief, executable finite illustrations and two reviewed architecture corrections.
 
 ```text
-OWNER FOUND ON 7 OF 8 CANDIDATES
-NEW PRIMITIVE = NONE
-NEW CONCEPT = NONE
+NEW PRIMITIVE = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
-NEXT = BOUNDED BETA REVIEW CANDIDATE PREPARATION
+BETA-SUPPORT PACKET = PREPARED
+FRAMEWORK INTEGRATION = PENDING
+EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
 ```
 
-Keep the surviving work small: attributed compression, salience, a worked transfer case, declared comparison baselines, and explicit refusal of inner-character inference or future-space scoring. Do not edit released TRACE/ME by momentum. Broad external-model review, canon, release and baseline promotion remain separate gates.
+Next: integrate/shrink #411 against the overnight Codex/CC corrections, then decide whether the packet is coherent enough for cold external-model review. Released TRACE/ME remain unchanged.
 
 ## 3. Current human gate — Hack-Nation 7
 
-Last verified owner check: **19 September**. It listed Batch 6 closing **26 September**. Current route availability was not independently reverified during this compaction; check the owner source before action.
+Owner source reverified **23 September**: Batch 6 still closes **26 September 2026**; the event is listed for **3–4 October 2026**.
 
 - answer bank ready;
 - no additional engineering prerequisite;
@@ -148,6 +148,8 @@ Technical candidate plausible; public intake waits for explicit human/controller
 ## 6. THR
 
 Exactly four public records. Record 5 not earned.
+
+Entity-first / entity-through-time pressure routes into existing THR PR #52 and current identity/assertion/living-subject models. No new universal entity graph or root schema is earned by the overnight review; preserve temporal/currentness and correction questions as bounded pressure.
 
 Do not create another record merely because:
 - a correction is interesting;
