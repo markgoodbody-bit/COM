@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D080 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D081 live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -141,7 +141,7 @@ Freeze after green.
 
 ### PSFH next design candidate
 
-D079 remains the preserved lighter front-door composition. D080 is now live from PR #456: the Works shelf and all six dedicated artwork encounters share one gallery grammar, with art first, provenance adjacent, aspect-preserving presentation and consistent continuation routes. Powers keeps her recorded eleven-panel account, Vermeer keeps the Städel context, Lewis keeps two views, tall works retain work-specific breathing room, and Homer keeps the project-response boundary. Maintained CI now also runs the current-state Works regression. Next bounded PSFH design target: the five art-bearing Explore rooms.
+D079 remains the preserved lighter front-door composition. D080 is now live from PR #456: the Works shelf and all six dedicated artwork encounters share one gallery grammar, with art first, provenance adjacent, aspect-preserving presentation and consistent continuation routes. Powers keeps her recorded eleven-panel account, Vermeer keeps the Städel context, Lewis keeps two views, tall works retain work-specific breathing room, and Homer keeps the project-response boundary. Maintained CI now also runs the current-state Works regression. The five art-bearing Explore rooms are now D081 live; next bounded PSFH design target is the remaining text-only reading/example/utility families.
 
 ## 5. Time / fresh-evidence gates
 
@@ -215,4 +215,4 @@ STOP
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / DO NOT USE TO DEFINE PROJECT VALUE**. Outside review has already repaired several preregistration defects; the latest #365 return still leaves prompt asymmetry as an open methodological item. Do not run until the intended workflow, scoring and remaining prompt asymmetry are frozen. A short-case cost failure may be the honest result; do not lengthen cases or change amortisation after outcomes. Released TRACE/ME source stays frozen unless a concrete source defect or world/use pressure earns reopening.
 
-TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D080 serves them live at `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`. D079's lighter illustrated-essay opening is unchanged; D080 repairs the deeper Works presentation system. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
+TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D081 serves them live at `gh-pages@2c8de6e793d6d9610022d93cf1d5e8028a111712`. D079's lighter illustrated-essay opening and D080 Works system remain unchanged; D081 repairs the five contextual Explore art-room handoffs. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
