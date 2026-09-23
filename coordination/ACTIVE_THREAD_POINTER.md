@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D083 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D084 live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -141,7 +141,7 @@ Freeze after green.
 
 ### PSFH next design candidate
 
-D079 remains the preserved lighter front-door composition. D080 owns Works, D081 the contextual art-room handoffs, and D082 the ten-room reading shell. D083 now makes the five appeal-example views one recognizable case family using the shared stylesheet and common wayfinding while preserving stipulated facts, unknowns, lenses, raw Markdown/JSON and optional cross-routes. Maintained CI now includes the five-page current-state example regression. Next bounded PSFH target is the remaining long-form/utility layer.
+D079 remains the preserved lighter front-door composition. D080 owns Works, D081 the contextual art-room handoffs, D082 the ten-room reading shell and D083 the appeal case family. D084 fixes a concrete accessibility interaction between D081 and D082: art-bearing node rooms now expose one first-action bypass to the reading boundary rather than two overlapping skip links. Explore and the six text-only rooms keep their existing single bypasses. The maintained contextual-art regression now pins that invariant. No further PSFH design release is queued without a new rendered/use observation or concrete defect.
 
 ## 5. Time / fresh-evidence gates
 
@@ -215,4 +215,4 @@ STOP
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / DO NOT USE TO DEFINE PROJECT VALUE**. Outside review has already repaired several preregistration defects; the latest #365 return still leaves prompt asymmetry as an open methodological item. Do not run until the intended workflow, scoring and remaining prompt asymmetry are frozen. A short-case cost failure may be the honest result; do not lengthen cases or change amortisation after outcomes. Released TRACE/ME source stays frozen unless a concrete source defect or world/use pressure earns reopening.
 
-TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D083 serves them live at `gh-pages@6b8aa57dea37a595f1bff014ec1d734a56501650`. D079 opening, D080 Works, D081 art rooms and D082 reading shell remain unchanged; D083 repairs only the appeal-example presentation family. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
+TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D084 serves them live at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`. D079-D083 presentation/content boundaries remain intact; D084 is only the single-skip accessibility repair. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
