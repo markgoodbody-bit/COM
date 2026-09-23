@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D077 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D078 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -74,7 +74,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
 
 Current reversible maintenance/design candidates:
-- **PSFH** #440 + #442 + #443 — treat as one combined next candidate; CC rendered their D076-era combination cleanly, but current D077 title/art state still needs latest-base integration/recheck before merge/publication;
+- **PSFH D078** — #440 + #442 + #443 integrated together on the D077 base via PR #449, published and live-byte verified; no further first-contact build is queued absent new visual/use evidence or a concrete defect;
 - **THR #75** `1b0766a66c675689f0ae6df97609a032caef1946` — entity-admission containment/catalogue repair, CI green, unmerged, no record/registry/catalogue data change;
 - **Relay #256** `c630cafeb2efde1888bc773a0eaeb03376cf569b` — two bounded COMSYNC maintenance repairs, campfire-ci green, unmerged, no Production activation.
 
@@ -138,13 +138,7 @@ COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME b
 
 ### PSFH combined first-contact candidate
 
-PR #440 + #442 + #443 are OPEN / UNMERGED / UNPUBLISHED. Combined intent:
-- illustrated-essay reading column and 18–20px main prose;
-- collapse the second visible chooser into an optional “Other ways in” disclosure;
-- direct work-to-futures route + quiet early AI compact-guide route;
-- move THR from the early project block to neighbours and remove two duplicate passages.
-
-CC reports a clean combined render at desktop/phone/320px reflow/200% text/keyboard/no-JS, but that review used the D076-era maintained base. Recheck the combination against D077 before integration; preserve one publication owner. Framework disposition: COM #108 comment 5797949735.
+PR #440 + #442 + #443 were integrated together in PR #449 and published as D078. The combined release keeps D077 art/title geometry and adds the bounded essay column, optional alternate chooser, direct Futures route, quiet early AI guide, THR-neighbour placement and duplicate-copy subtraction. Maintained CI now permanently checks the three primary routes plus `journey.js` syntax. Component branches remain history/provenance, not an active publication queue.
 
 ### PSFH Leave a Mark
 
@@ -256,4 +250,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D077 live at `decc05063ec0a79da9a49260cfc7a32029bfab3f`; maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`; publication/live-root workflow `35882968302` SUCCESS; root SHA-256 `eab1cfe66e5e36089feaa9c0a0eaa1a6622f60ff5ab4a77a59b97a54af8edb15`. D074-D077 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D078 live at `3f937db5345d527f527f8189cb1dfadee737bc5c`; maintained source `5ff27454bd5cfcd181e144ab05788ab693ded0e9`; publication/live-root workflow `35885661379` SUCCESS; root SHA-256 `744c326b3d4734f628f949c287fea2d75e909040ed8a07e09feae2a659f5bde6`. D074-D078 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.
