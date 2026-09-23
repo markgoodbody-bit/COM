@@ -75,12 +75,12 @@ export default function Home() {
             </details>
           </div>
           <nav className="project-routes" aria-label="Ways to use this project">
-            <a href="#step-work">Bring a situation or question</a>
-            <a href="/explore/#reading-map">Explore the core questions</a>
-            <a href="#reading">Read Mechanical Ethics and TRACE</a>
-            <a href="/explore/challenge.html">Challenge or disagree</a>
+            <a href="#step-work">Explore a question or possibility</a>
+            <a href="#reading">Read the work</a>
+            <a href="/works/">Spend time with the art</a>
           </nav>
           <div className="project-parts">
+            <p><a href="/explore/challenge.html">Challenge or disagree with the work</a>.</p>
             <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
             <details id="current-work" className="current-work">
               <summary>Current workshop — optional work in progress</summary>
