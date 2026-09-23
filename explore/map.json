@@ -90,8 +90,8 @@
     },
     {
       "path": "example/affected.html",
-      "bytes": 2325,
-      "sha256": "8bf53b44ff22bbcd9bcf8f73dea939ed1e98b9e3a4e0b39b61fb277d6ac65889"
+      "bytes": 2573,
+      "sha256": "5ef31bd44c501cb416842cbcff165f1d4a44bd89fcf067f523bd41dab30c5ec1"
     },
     {
       "path": "example/affected.json",
@@ -105,8 +105,8 @@
     },
     {
       "path": "example/case.html",
-      "bytes": 2168,
-      "sha256": "4494f6c4e7a182c4b16f73d0f3128d526eab4b29391b140f7011e2998cfd0d5e"
+      "bytes": 2416,
+      "sha256": "cc062b4cd220c0253ab69344fb6682d555547ed18e5705da80be10793f5512b8"
     },
     {
       "path": "example/case.json",
@@ -120,8 +120,8 @@
     },
     {
       "path": "example/challenge.html",
-      "bytes": 2495,
-      "sha256": "97eb4984ab312282746fd7d39cd49def25cfe5b5bf717b2bd376f36b5f77cc52"
+      "bytes": 2743,
+      "sha256": "ac90f0dbb5706fd8de681a356767035720c927c443e452396db888ee58c9c556"
     },
     {
       "path": "example/challenge.json",
@@ -135,8 +135,8 @@
     },
     {
       "path": "example/entry.html",
-      "bytes": 2036,
-      "sha256": "03ad3bfe698301a1bf37b381b6a4fce8e4322cf38af42fd221a85dbfeed2b734"
+      "bytes": 2284,
+      "sha256": "7f8ce555b14bdc4dff2ec480f4b0d10e5811b4435bbfd73aee5fc6326e3f07d2"
     },
     {
       "path": "example/entry.json",
@@ -150,8 +150,8 @@
     },
     {
       "path": "example/route.html",
-      "bytes": 2293,
-      "sha256": "dd0685db4760caa63331141ce696c6fea1c3fc9c407904773f32fe689231b97e"
+      "bytes": 2541,
+      "sha256": "581f9ac48f9bc82133f8ca0f6e8d18d47e528c19fb852dc6cfc0ed2a701b66e3"
     },
     {
       "path": "example/route.json",

@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
 
+### D083
+
+23 September 2026 — Make the appeal illustration read as one case family.
+
+The five appeal-example pages were still carrying the oldest public-page presentation pattern: each embedded the same private mini-stylesheet, arrived without a shared case-family orientation, and looked more like separate generated records than optional views over one stipulated case. The underlying facts and lenses were already deliberately bounded; the presentation had not caught up with the rest of PSFH.
+
+Entry, shared case, formal route, affected future and challenge now use the shared site stylesheet directly. Each page carries the same small Appeal example / Explore orientation before the account, the same bounded case-reading column, consistent section labels, optional-route treatment and footer. The existing text, status, F1/F2 facts, unknowns, challenge language, source links and optional cross-routes are unchanged. The pages remain text-only and do not become a forced linear tour.
+
+A current-state regression checks all five pages, requires the shared case-family classes and stylesheet, refuses old inline/embedded presentation, verifies the family routes between entry, shared facts and the three perspective pages, and is part of maintained CI. No example Markdown/JSON facts, TRACE source, conceptual reading nodes, artwork, Works content, Mechanical Ethics, Human Record, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.40. This is a presentation/wayfinding repair, not evidence of reader benefit or of the example's correctness.
+
 ### D082
 
 23 September 2026 — Give the reading rooms one quiet text surface.
