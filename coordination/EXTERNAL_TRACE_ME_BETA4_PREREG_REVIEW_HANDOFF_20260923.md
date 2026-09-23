@@ -61,6 +61,8 @@ Suggestions such as TLA+, OpenTelemetry, W3C PROV, mandatory circuit breakers, g
 
 ## Required return
 
+For each supplied artifact, report its exact source revision and coverage: FULL / PARTIAL / NOT READ. Identify the last heading and a short ending fragment actually received, and any missing sections or truncated text. If measurable, distinguish source byte/line counts from the amount actually delivered to you; downloading the complete file does not establish complete reading. Use UNKNOWN when you cannot verify coverage. Restrict conclusions to inspected material and mark judgments about unseen sections NOT ASSESSED. If the input stops mid-sentence, request the missing continuation before claiming a whole-artifact review.
+
 ```text
 TRACE BETA4 DELTA: CLEAR / REPAIR / BLOCKER
 ME BETA4 DELTA:    CLEAR / REPAIR / BLOCKER
