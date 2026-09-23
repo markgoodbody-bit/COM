@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — round-2 integrated / beta4 + prereg open**
+Updated: **23 September 2026 — beta4 + prereg external-review ready**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,7 +75,7 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `575a40572d164b2b3736ed45eceff48c45cb9b3b` and ME v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `bf71e2b8431c23b0be79240c00c076721a016283` and ME v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
@@ -240,3 +240,6 @@ Hot surfaces are intentionally compact.
 
 
 Round-2 reviews are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`. Beta4 adds only bounded local guards and carrier/capture repairs. A TRACE practical-advantage pilot preregistration candidate is open at `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md`; it must be reviewed and frozen before any run. Released baselines unchanged.
+
+
+Beta4/prereg status: source deltas are internally CLEAR_WITH_CEILINGS; the stale Figure 2 carrier is repaired in ME beta4; TRACE beta4 packaging is repaired at `bf71e2b8431c23b0be79240c00c076721a016283`. The practical-advantage preregistration is repaired on COM main and ready for outside review, but **NO PILOT RUN IS AUTHORIZED OR STARTED**.
