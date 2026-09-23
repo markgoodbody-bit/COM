@@ -78,3 +78,5 @@ jobs:
           fi
           git commit -m "PSFH D073: pin release-sync derived identities"
           git push origin HEAD:framework/psfh-d073-trace-me-release-sync-20260923
+
+# D073 retry after discovery-contract repair
