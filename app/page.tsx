@@ -256,7 +256,7 @@ export default function Home() {
       <p>Current released reading copies: <a href={trace + "/tree/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025"}>TRACE v0.4.0</a> · <a href={me + "/tree/e2ef746e931161cb70ac46a4eaa122442134e86b"}>Mechanical Ethics v0.8.0</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>.</p>
       <details className="technical-handoff">
         <summary>Machine and technical routes</summary>
-        <p><strong>Compact text and machine routes:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
+        <p><strong>Compact text and machine routes:</strong> <a href="https://pleasestartfromhere.com/llms.txt">llms.txt</a> · <a href="https://pleasestartfromhere.com/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
       </details>
     </footer>
   </>;

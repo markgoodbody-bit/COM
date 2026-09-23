@@ -1,6 +1,18 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.49 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.50 · 23 September 2026
+
+### D074
+
+23 September 2026 — Put human meaning before route machinery.
+
+A fresh cold critique of the live D073 entrance identified a residual onboarding problem: D073 already placed *Two flats, one wall* before the main routing, but a first-time reader could still encounter too many choices, technical routes and defensive boundaries before the purpose had settled.
+
+The homepage now gives the existing *Camp Fire* interpretation beside the artwork, keeps the accessibility skip link as “Skip to story”, leads from the opening story through one clear continuation before branching, reduces the early project route grid from eight choices to four, and closes the long introduction by default. Reader autonomy, authority and practical-advantage ceilings remain intact inside one visible disclosure. The llms.txt and start.json routes remain available but move to a technical disclosure in the footer. The positive statement “make harm visible, correction reachable and power answerable” now stands without an immediate philosophical self-cancellation.
+
+No TRACE, Mechanical Ethics, Human Record, Explore reading, machine payload, crawler rule, permission, intake, tracking or server behaviour changes here. The footer also replaces stale pre-release TRACE/ME source pins with the current released v0.4.0/v0.8.0 identities.
+
+Source change: [COM PR433](https://github.com/markgoodbody-bit/COM/pull/433). Site Preview advances to 0.8.31. This is a reversible first-contact/editorial repair prompted by reader criticism; it does not establish reader benefit or practical advantage.
 
 ### D073
 

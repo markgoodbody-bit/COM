@@ -1,0 +1,148 @@
+name: PSFH D074 publish human-door repair
+
+on:
+  push:
+    branches:
+      - framework/psfh-d074-publish-20260923
+    paths:
+      - 'app/page.tsx'
+      - 'app/globals.css'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - '.github/workflows/psfh-d074-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d074:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d074-publish-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D074 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.31'
+          m['updated']='2026-09-23'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          m['provenance']['change_history_addendum_note']=note.replace('D045-D073','D045-D074')
+          m['provenance']['human_first_d074']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/433',
+            'scope':'First-contact progressive disclosure: existing Camp Fire interpretation moved beside the artwork; one story continuation before branching; early route grid reduced; reader limits consolidated; machine routes moved to footer disclosure; long introduction collapsed by default. No framework/source/machine-payload/crawler/intake change. Reader benefit unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D074_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D074_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+      - name: Commit exact D074 manifest pins
+        run: |
+          git config user.name "PSFH D074 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D074 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D074: pin human-door release provenance"
+          git push origin HEAD:framework/psfh-d074-publish-20260923
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: b073009b1ba0f9d4d1a3a8121ee544bf90e95398
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D073
+        run: |
+          rm -rf /tmp/psfh-d074-publish
+          git worktree add -B gh-pages /tmp/psfh-d074-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d074-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d074-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d074-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d074-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d074-publish/
+          test "$(git -C /tmp/psfh-d074-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d074-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d074-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d074-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d074-publish/resources');"
+          git -C /tmp/psfh-d074-publish status --short
+      - name: Commit and publish D074
+        run: |
+          git -C /tmp/psfh-d074-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d074-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d074-publish add -A
+          if git -C /tmp/psfh-d074-publish diff --cached --quiet; then
+            echo "No D074 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d074-publish commit -m "Publish PSFH D074 human-first entrance"
+          git -C /tmp/psfh-d074-publish push origin HEAD:gh-pages
+      - name: Verify D074 served root
+        run: |
+          expected="$(sha256sum out/index.html | awk '{print $1}')"
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/ -o /tmp/psfh-live-index.html; then
+              actual="$(sha256sum /tmp/psfh-live-index.html | awk '{print $1}')"
+              if [ "$actual" = "$expected" ]; then
+                ok=1
+                break
+              fi
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "Live root did not converge to D074 built bytes" >&2
+            exit 1
+          }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+          grep -F 'Put human meaning before route machinery.' /tmp/psfh-live-changes.html
+          grep -F 'Why this is here.' /tmp/psfh-live-index.html
+          grep -F 'Reader autonomy and limits' /tmp/psfh-live-index.html
+          echo "D074 live root SHA-256: $expected"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
