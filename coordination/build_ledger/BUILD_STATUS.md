@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — beta2 exact-source returns / reconciliation open**
+Updated: **23 September 2026 — external review round 1 integrated / beta3 open**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,20 +75,20 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. Exact beta1 review targets remain addressable, but a Codex concurrency miss changed both beta1 branch histories before restoring their file trees. Current beta2 heads after bounded repair are TRACE v0.4.0-beta2 PR #57 at `881b1d3248c8cca9887dfa7fa5047944b34c7437` and ME v0.8.0-beta2 PR #50 at `18bfd49d516d64fb9e6e30601844750015b0af3b`.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `6a9f48918925fd93d5ed7eb50b75cbe2f60bed21` and ME v0.8.0-beta3 PR #52 at `0d5d2703adc29564fa5bfeb250df80884eed7362`.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
-NEW PRIMITIVE / CONCEPT = NONE EARNED
-REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED
-ME v0.8.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED
-BETA1 = EXACT TARGET COMMITS PRESERVED / BRANCH HISTORIES MOVED / FILE TREES RESTORED
-CODEX / CC REVIEW = RETURNED / RECONCILIATION OPEN
-EXTERNAL MODEL REVIEW = USER-DISPATCH READY / NO INDEPENDENT REVIEWS INGESTED YET
+NEW CORE TERM / CONCEPT = NONE EARNED
+TRACE v0.4.0-beta3 = OPEN / ROUND-1 INTEGRATION CANDIDATE
+ME v0.8.0-beta3 = OPEN / ROUND-1 INTEGRATION CANDIDATE
+BETA2 = PRESERVED ROUND-1 REVIEW SNAPSHOT
+EXTERNAL MODEL REVIEW ROUND 1 = INGESTED / NOT VALIDATION
 ```
 
-Framework self-review is integrated into beta2: owner maps, one TRACE category cleanup, the human `reach/connect to hope` question, despair/non-erasure distinctions, bounded positive duties, and corrected beta-versus-released artifact surfaces. Codex added a stale-ceiling repair, Snyder attribution, a released-builder status guard, and evidence/authority separations. Claude Code's remaining human-reader findings are preserved for reconciliation rather than auto-written. Existing release-integrity/source-binding workflows fail because beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected baseline guard, not a beta PASS/FAIL result. Do not weaken those guards.
+Round-1 convergence earned cuts rather than ontology growth. TRACE beta3 shrinks the compact spine from roughly 29.4k to roughly 20.2k characters, moves detailed timing and the full anti-collapse catalogue into profile/index files, adds a worked parse, and states a practical-advantage falsifier. ME beta3 removes local viability-set math, bounds the timing test, adds finality/elected-closure symmetry, grounds the Other Fire under power asymmetry, makes hope explicitly non-demanding, and exposes concrete buildable patterns. Stronger-owner maps route more specialist machinery outward.
+
+Existing release-integrity/source-binding workflows still fail because beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected guard, not a beta PASS/FAIL result. Do not weaken those guards.
 
 ## Green / frozen candidate objects
 
@@ -129,7 +129,7 @@ Draft candidate frozen.
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 carries coordination history; TRACE #57 / ME #50 are the current repaired beta2 surfaces; the original beta1 target commits remain comparison controls despite moved branch histories. External handoff is on COM main and must use current exact heads. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
+COM #365 carries coordination history; TRACE #57 / ME #50 remain beta2 round-1 provenance; TRACE #58 / ME #52 carry beta3 integration. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
 
 ### PSFH Leave a Mark
 
