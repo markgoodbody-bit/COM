@@ -293,16 +293,6 @@ OMITTED FROM HEAD != ABSENT
 ```
 
 
-## Round-2 integration / beta4 gate
-
-Round-2 outside reviews are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`. Beta4 integrates only bounded carrier/mirror repairs. The next high-value review object is the preregistration candidate `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md`; beta4 delta review is secondary. Released baselines remain unchanged.
-
-
-## Beta4 / prereg external gate
-
-TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; ME beta4 PR #53 is at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. Both are bounded round-2 integration candidates, not releases. The repaired TRACE practical-advantage preregistration is now on COM main and is **READY FOR EXTERNAL REVIEW / NOT READY TO RUN**. Use `coordination/EXTERNAL_TRACE_ME_BETA4_PREREG_REVIEW_HANDOFF_20260923.md`.
-
-
 ## Release / Door update — 23 September
 
 TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D084 is live at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`, maintained source `e09d22d03a4b4a0754dfe7c29853dad91742cc38`; publication run `35895091228` SUCCESS with selected exact live-byte verification. D079 homepage, D080 Works, D081 art presentation, D082 reading-room content and D083 appeal facts/lenses remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.

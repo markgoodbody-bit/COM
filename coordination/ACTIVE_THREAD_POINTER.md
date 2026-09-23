@@ -116,7 +116,7 @@ Registration/account/terms remain Mark's gate.
 
 - head `c0f8a94bb0aeec73e780c24d35c93372a306ee7d`;
 - `campfire-ci / 35875127444 SUCCESS`;
-- 25 focused candidate tests;
+- 27 focused candidate tests;
 - judge package prepared;
 - real Alexa+ host interop not tested;
 - human onboarding/submission gates remain.
