@@ -6,8 +6,8 @@ const ORIGIN = 'https://pleasestartfromhere.com';
 export const VIEWS = [
   { output: 'read/start.html', source: 'explore/start.json', title: 'Start: complete JSON source text', edition: 'Site Preview 0.8.25, worked relationship route (D066); not validation', sha256: "e01f3ac4538c927cc921e11176dcd359f6b65e6d778fba7ea84546589a658217" },
   { output: 'read/orientation.html', source: 'llms.txt', title: 'Orientation: complete text source', edition: 'Site Preview 0.8.29, THR four-record currentness (D072); not validation', sha256: '777c6b43e5a326bbb4fa3f6de46270e39ca424d008ee8d69dafc4135c3eee4d1' },
-  { output: 'read/trace-spine.html', source: 'resources/trace/TRACE-SPINE.md', title: 'TRACE compact spine: complete Markdown source text', edition: 'TRACE v0.3.0 released baseline, source 8310d2531d3b2fe4e3b44c92d1d544a322f52bf4; local status sync, not a new TRACE release', sha256: 'be6d1b4109576b8c182822120a0cd002435e522f02a77c048bc769715611b6c6' },
-  { output: 'read/me-book.html', source: 'resources/mechanical-ethics/MECHANICAL_ETHICS.md', title: 'Mechanical Ethics: complete Markdown source text', edition: 'Mechanical Ethics v0.7.0 released baseline, source 25a9d793af1cded26dd2d766e1d1c08e1b30f652; local status sync, not a new ME release', sha256: '8f702f3f5bdc2d6c188858f11aea8da22893fba9e678828fdb35d6ebd2fc1a9c' },
+  { output: 'read/trace-spine.html', source: 'resources/trace/TRACE-SPINE.md', title: 'TRACE compact spine: complete Markdown source text', edition: 'TRACE v0.4.0 released compact baseline, source 6c68fae8cbc51d0ef1e77a18e220ceb7a1207025; local release sync, not validation', sha256: 'add22409dcc25d09b26559c7d824ddae047262ac5918a509c2a4234bdc27ce6d' },
+  { output: 'read/me-book.html', source: 'resources/mechanical-ethics/MECHANICAL_ETHICS.md', title: 'Mechanical Ethics: complete Markdown source text', edition: 'Mechanical Ethics v0.8.0 released baseline, source e2ef746e931161cb70ac46a4eaa122442134e86b; local release sync, not validation', sha256: 'e3267c3e41e7fdfb44c9a9279250a1a7a38d5b9c389a594fef40cfea75fdbe76' },
 ];
 export const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 export function escapeText(text) {
