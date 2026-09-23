@@ -239,6 +239,11 @@ body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.125rem, 2vw, 1.5r
 .project-spine { width: min(calc(100% - 2rem), 76rem); margin: 1.5rem auto 2rem; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1rem 3rem; }
 .project-purpose h2 { font: 400 clamp(1.75rem, 3vw, 2.5rem)/1.15 var(--serif); margin: .5rem 0 1rem; }
 .project-purpose p { max-width: 64ch; margin-block: 0 .75rem; }
+.art-key { max-width: 58rem; margin: .8rem auto 0; padding-inline: 1rem; font: 400 clamp(1rem, 1.6vw, 1.125rem)/1.55 var(--serif); text-wrap: pretty; }
+.project-disclosure { max-width: 64ch; margin: .5rem 0; border-top: 1px solid var(--border); }
+.project-disclosure:last-of-type { border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
+.project-disclosure summary { cursor: pointer; min-height: 2.75rem; padding-block: .65rem; font-weight: 600; }
+.project-disclosure p { margin: .1rem 0 .8rem; }
 .project-routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; align-content: start; }
 .project-routes a { display: flex; align-items: center; min-height: 2.75rem; padding-block: .5rem; border-bottom: 1px solid var(--border); }
 .project-parts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 3rem; border-top: 1px solid var(--border); padding-top: 1rem; }
