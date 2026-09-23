@@ -22,7 +22,7 @@ test('five contextual rooms preserve canonical art and share one handoff grammar
     assert.ok(html.indexOf('class="room-stage') < html.indexOf('class="room-credit"'), room.page);
     assert.ok(html.indexOf('class="room-credit"') < html.indexOf('class="room-heading"'), room.page);
     assert.ok(html.indexOf('class="room-heading"') < html.indexOf('class="room-nav"'), room.page);
-    assert.ok(html.indexOf('class="room-nav"') < html.indexOf('<main id="reading"'), room.page);
+    assert.ok(html.indexOf('class="room-nav"') < html.indexOf('id="reading"'), room.page);
     assert.match(html, /This placement is our choice, not the artist's argument or an endorsement/, room.page);
     assert.doesNotMatch(html, /class="room-stage room-stage-pair" style=/, room.page);
 
