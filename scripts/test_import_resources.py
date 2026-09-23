@@ -57,9 +57,9 @@ class ImportTests(unittest.TestCase):
         for project in (trace, me):
             readme = next(file for file in project['files'] if file['path'] == 'README.md')
             permission = next(file for file in project['files'] if file['path'] == 'AI_TRAINING_PERMISSION.md')
-            self.assertEqual(readme['snapshot_mode'], 'preserve')
+            self.assertEqual(readme['snapshot_mode'], 'copy')
             self.assertEqual(permission['snapshot_mode'], 'none')
-            self.assertNotEqual(project['commit'], project['release_commit'])
+            self.assertEqual(project['commit'], project['release_commit'])
 
 
 if __name__ == '__main__':
