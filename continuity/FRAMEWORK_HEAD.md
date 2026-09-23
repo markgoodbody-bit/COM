@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D083 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D084 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -210,9 +210,9 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D083 is the current public door: maintained source `129261f5a7e231e8ddcc8d6ae38569f00ddcf0ce`, published `gh-pages@6b8aa57dea37a595f1bff014ec1d734a56501650`, Site Preview `0.8.40`. Publication run `35894089298` completed SUCCESS with selected exact live-byte verification across all five appeal-example pages. D079 keeps the lighter illustrated-essay opening; D080 unified Works; D081 cleaned contextual art entrances; D082 unified the ten-room reading shell; D083 makes the stipulated appeal illustration one coherent optional case family without changing its facts or lenses. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D084 is the current public door: maintained source `e09d22d03a4b4a0754dfe7c29853dad91742cc38`, published `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`, Site Preview `0.8.41`. Publication run `35895091228` completed SUCCESS with selected exact live-byte verification. D079 keeps the lighter illustrated-essay opening; D080 unified Works; D081 cleaned contextual art entrances; D082 unified the ten-room reading shell; D083 unified the appeal-example case family; D084 removes the duplicate first-action skip link from the four art-bearing conceptual rooms while preserving the single appropriate bypass on Explore and text-only rooms. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
-PSFH #440 + #442 + #443 were integrated in D078; D079 published Mark's lighter opening. D080 then moves below the front door: PR #456 unified the Works shelf and six dedicated encounters around art-first, aspect-preserving presentation with provenance adjacent, while preserving work-specific accounts and multi-view/tall-work treatment. `scripts/test-works-current.mjs` is now part of maintained CI. D081's art rooms and D082's ten-room reading shell remain regression-bound. D083 now cleans the five-page appeal case family and binds a current-state example regression into maintained CI. Next PSFH pressure is the remaining long-form/utility layer; do not reopen the homepage, Works, art rooms, reading shell or appeal example by momentum.
+PSFH #440 + #442 + #443 were integrated in D078; D079 published Mark's lighter opening. D080 then moves below the front door: PR #456 unified the Works shelf and six dedicated encounters around art-first, aspect-preserving presentation with provenance adjacent, while preserving work-specific accounts and multi-view/tall-work treatment. `scripts/test-works-current.mjs` is now part of maintained CI. D081 art rooms, D082 reading shell and D083 appeal family remain regression-bound. D084 repairs the observed cross-layer accessibility collision and extends the maintained contextual-art regression to require one correct skip link per contextual room. The remaining long-form/utility pages already inherit the shared stylesheet and currently show no concrete defect; do not create D085 by momentum.
 
 ## The Human Record
 
@@ -305,4 +305,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D083 is live at `gh-pages@6b8aa57dea37a595f1bff014ec1d734a56501650`, maintained source `129261f5a7e231e8ddcc8d6ae38569f00ddcf0ce`; publication run `35894089298` SUCCESS with selected exact live-byte verification. D079 homepage, D080 Works, D081 art rooms and D082 reading-room content remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D084 is live at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`, maintained source `e09d22d03a4b4a0754dfe7c29853dad91742cc38`; publication run `35895091228` SUCCESS with selected exact live-byte verification. D079 homepage, D080 Works, D081 art presentation, D082 reading-room content and D083 appeal facts/lenses remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
