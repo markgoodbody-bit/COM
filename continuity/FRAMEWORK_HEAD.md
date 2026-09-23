@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D073 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D074 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -203,7 +203,7 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D073 is the current public door: maintained source `9003b9e6e25fbd37360aa674c4dfb2ba0fd0fbed`, published `gh-pages@b073009b1ba0f9d4d1a3a8121ee544bf90e95398`. Post-deploy HTTPS reads matched the released TRACE spine, ME Markdown and ME PDF hashes exactly. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D074 is the current public door: maintained source `ad6d0fdbf4331abd0245cb4156e5fc8694c11cea`, published `gh-pages@04ff41a9c7dcd1eaf6b4c77b94d76ae6cbd56934`, Site Preview `0.8.31`. Publication run `35879689637` completed SUCCESS and the custom-domain root matched the built D074 root at SHA-256 `1b7a0b3798906bba3266ead68267ac7b2e56f9deb6dd8f2a0b6f3ad8d83e916`. D074 changes first-contact composition only; the D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
 ## The Human Record
 
@@ -294,4 +294,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D073 is live at `gh-pages@b073009b1ba0f9d4d1a3a8121ee544bf90e95398`, maintained source `9003b9e6e25fbd37360aa674c4dfb2ba0fd0fbed`; publication run `35872216595` SUCCESS with live-byte verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D074 is live at `gh-pages@04ff41a9c7dcd1eaf6b4c77b94d76ae6cbd56934`, maintained source `ad6d0fdbf4331abd0245cb4156e5fc8694c11cea`; publication run `35879689637` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
