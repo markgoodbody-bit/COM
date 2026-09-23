@@ -1,9 +1,3 @@
-## Release currentness correction — 23 September 2026, 14:10 UTC
-
-This supersedes the pre-release TRACE/ME status statements below; those beta identities remain review history, not current released baselines. Live GitHub release receipts identify **TRACE v0.4.0** at `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and **Mechanical Ethics v0.8.0** at `e2ef746e931161cb70ac46a4eaa122442134e86b`, citing explicit human release authority. Source: [TRACE release](https://github.com/markgoodbody-bit/TRACE/releases/tag/v0.4.0), [ME release](https://github.com/markgoodbody-bit/mechanical-ethics/releases/tag/v0.8.0). Both remain NOT VALIDATED; the pilot remains unrun and not authorized by publication. Prior releases and the v0.3 technical donor remain preserved; training permissions are not automatically expanded.
-
-PSFH D073 source sync PR #429 is merged to its maintained-source branch, not COM main. Publication run `35872216595` completed successfully. At approximately 14:12 UTC, independent HTTPS reads of the served TRACE spine, ME Markdown and ME PDF matched all three release-receipt SHA-256 hashes exactly. This verifies those three artifacts, not every site route or visual rendering.
-
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
@@ -88,14 +82,14 @@ Mark is the human originator/witness and consequential human gate. Framework coo
 
 Reacquired before this compaction:
 
-- TRACE main: `e7d46398dc00ead931b0d5cae98518c1bcf304a3`;
-- Mechanical Ethics main: `714907a4d0af7bd702b0ab92786aa858213812b4`;
-- The Human Record main: `9f9246c76348cd2f3a4d4f3501b4bf5af65e96db`;
-- Campfire Relay main: `32143937d6a642a6f5e2404d368fd09aa4d54da9`.
+- TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
+- Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
+- The Human Record main: `0a8e5370891c09bb0993a4da136219e658d1d104` — four public records; entity-admission guard integrated;
+- Campfire Relay main: `192caed51cabc6fdf60cebea3c1bb7df548ecdb0` — COMSYNC/watchdog split integrated; no Production promotion.
 
 Formal baselines:
-- **TRACE v0.3.0** — released / not validated / no efficacy result;
-- **Mechanical Ethics v0.7.0** — released / not validated.
+- **TRACE v0.4.0** — released / not validated / no efficacy result;
+- **Mechanical Ethics v0.8.0** — released / not validated.
 
 ## Current primary
 
@@ -115,8 +109,9 @@ Do not convert successful representation into validation.
 COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Released baselines are now TRACE v0.4.0 at `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and Mechanical Ethics v0.8.0 at `e2ef746e931161cb70ac46a4eaa122442134e86b`. Beta4 remains preserved as pre-release review provenance.
 
 ```text
-TRACE v0.3.0 = UNCHANGED
-ME v0.7.0 = UNCHANGED
+TRACE v0.4.0 = RELEASED / FORMAL BASELINE / NOT VALIDATED / NO EFFICACY RESULT
+ME v0.8.0 = RELEASED / FORMAL BASELINE / NOT VALIDATED
+PREVIOUS v0.3.0 / v0.7.0 BASELINES = PRESERVED
 NEW TRACE PRIMITIVE = NOT EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
 
@@ -130,7 +125,7 @@ BETA1 = EXACT TARGET COMMITS PRESERVED / BRANCH HISTORIES MOVED / FILE TREES RES
 
 Codex and Claude Code exact-source returns are now recorded. Bounded repairs removed a stale TRACE successor ceiling, credited Snyder on TRACE's supported-prospect side, prevented the released ME PDF builder from silently packaging beta source as v0.7, and separated reported hope, supported prospect, effective intervention and legitimate authority. Claude Code's remaining hostile-reader findings concern the positive/negative balance, unexplained fire metaphor, power asymmetry, harm-side visibility and one safety-sensitive passage; these remain review questions rather than silently applied wording. The current strongest lesson is sharper discrimination, not new semantics.
 
-No release, canon, baseline or broad external-model review follows automatically.
+The release lane is closed. Beta PRs are closed with branches/history preserved. Do not open beta5 by momentum; reopen source only for a concrete defect or world/use pressure.
 
 ## Current human gates
 
@@ -159,9 +154,9 @@ Do not invent a Hack-Nation product before its challenge brief.
 
 `Did It Happen? — Action Receipts for Alexa+`
 
-- exact head: `7a4c501dedb228c7387336fa267356e9cde27f8f`;
-- hosted: `campfire-ci 1539 / 35437873204 SUCCESS`;
-- focused tests: 24;
+- exact head: `c0f8a94bb0aeec73e780c24d35c93372a306ee7d`;
+- hosted: `campfire-ci / 35875127444 SUCCESS`;
+- focused candidate suite: 25 tests;
 - real Alexa+ host interoperability: **not tested**;
 - registration / terms / repository-release / demo-upload / final submission: **human gates**.
 
@@ -193,7 +188,7 @@ Hold until **1 October** live challenge/rules/rights gate. Do not pre-consume ju
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 coordinates the successor lane. Beta3 review surfaces are TRACE PR #58 / ME PR #52 with focused beta3 briefs; beta2 remains the provenance surface for round-1 returns. The earlier ME #47 reader-test pressure remains relevant. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged; review does not promote canon or baseline.
+COM #365 now preserves the successor/review history and routes the released pair into world/use testing. TRACE beta PRs #56-59 and ME beta PRs #49/#50/#52/#53 are closed after release with branches and discussions retained. The earlier ME #47 reader-test pressure remains relevant, but no beta5 or released-source edit is earned by review momentum.
 
 Successor-pressure route:
 `coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
@@ -208,7 +203,7 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D072 remains the byte-verified public door. Leave a Mark / Remark42 is technically plausible but public intake remains behind human/controller/legal/production-topology choices. Do not turn human gates into engineering churn.
+D073 is the current public door: maintained source `9003b9e6e25fbd37360aa674c4dfb2ba0fd0fbed`, published `gh-pages@b073009b1ba0f9d4d1a3a8121ee544bf90e95398`. Post-deploy HTTPS reads matched the released TRACE spine, ME Markdown and ME PDF hashes exactly. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
 ## The Human Record
 
