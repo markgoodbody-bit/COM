@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — source betas opened**
+Updated: **23 September 2026 — beta2 external-review ready**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-COM #365 remains the active non-canon successor lane. The COM architecture/companion work is now integrated on the #409 design branch. Actual source-repo betas are open: TRACE PR #56 at `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics PR #49 at `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`. Both are draft review candidates; released baselines remain unchanged.
+COM #365 remains the active non-canon successor lane. Frozen beta1 controls remain TRACE #56 and ME #49. The current external-review candidates are TRACE v0.4.0-beta2 PR #57 at `012509754aa2abdf1536604166f838449af6b509` and Mechanical Ethics v0.8.0-beta2 PR #50 at `733f304f4cce3af08398bcf7967168c1647fb1af`. Released baselines remain unchanged.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -115,9 +115,9 @@ NEW TRACE PRIMITIVE = NOT EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
 
 SURVIVING WORK = ATTRIBUTED COMPRESSION / SALIENCE / WORKED TRANSFER
-TRACE v0.4.0-beta1 = OPEN / INTERNAL REVIEW PENDING
-ME v0.8.0-beta1 = OPEN / INTERNAL REVIEW PENDING
-EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
+TRACE v0.4.0-beta2 = READY FOR EXTERNAL AI REVIEW / NOT RELEASE
+ME v0.8.0-beta2 = READY FOR EXTERNAL AI REVIEW / NOT RELEASE
+BETA1 = FROZEN INTERNAL COMPARISON CONTROL
 ```
 
 Codex and Claude Code materially corrected one another overnight. The current strongest lesson is not new semantics but sharper discrimination: realised/reported/inferred/projected change stay distinct; omission does not imply intentional withholding; later good may contribute to repair without erasing earlier loss; route operation, discoverability and a subject's knowledge must not collapse; headline claims must not outrun the run that produced them.
@@ -185,7 +185,7 @@ Hold until **1 October** live challenge/rules/rights gate. Do not pre-consume ju
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 coordinates the successor lane. TRACE draft PR #56 and Mechanical Ethics draft PR #49 are now the concrete source beta candidates. The earlier ME #47 reader-test pressure remains relevant. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged; beta review does not promote canon or baseline.
+COM #365 coordinates the successor lane. External reviewers should use TRACE PR #57 and ME PR #50 plus `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`. The earlier ME #47 reader-test pressure remains relevant. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged; review does not promote canon or baseline.
 
 Successor-pressure route:
 `coordination/ME_TRACE_SUCCESSOR_PRESSURE_LEDGER_20260919.md`
