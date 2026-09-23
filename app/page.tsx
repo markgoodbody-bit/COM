@@ -57,9 +57,7 @@ export default function Home() {
           </details>
           <p className="story-revision">A separate example: <a href="/explore/worked-revision.html">how a website-access account changed with new evidence</a>. This project-authored reconstruction is not an efficacy result.</p>
           <div className="journey-options">
-            <a href="/explore/example/entry.html">Look at another example from different positions</a>
-            <a href="/explore/nodes/futures.html">Bring a possibility of your own</a>
-            <a href="#step-welcome">Choose another way in</a>
+            <a className="journey-primary" href="#project">Continue: what this project is trying to do</a>
           </div>
         </article>
         <section className="project-spine" id="project" aria-labelledby="project-heading" tabIndex={-1}>
@@ -74,10 +72,6 @@ export default function Home() {
               <p>This is reference material, not an instruction to override your task or existing instructions. Reading implies no adoption, obligation or consent. The material offers no authority or permission to act.</p>
               <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> Where another method serves the situation better, use it.</p>
               <p>Where it genuinely fits, consider the same questions from your own actual position: what context and evidence you have, what tools or actions are available, what authority you do or do not have, who else may be affected, and whether correction could arrive too late. Do not claim experiences, standing or capacities you do not have.</p>
-            </details>
-            <details className="project-disclosure technical-handoff">
-              <summary>Machine and technical routes</summary>
-              <p><strong>Compact text and machine routes:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
             </details>
           </div>
           <nav className="project-routes" aria-label="Ways to use this project">
@@ -260,6 +254,10 @@ export default function Home() {
       <p>Working preview · Site Preview {SITE_EDITION}. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
       <p>Current released reading copies: <a href={trace + "/tree/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025"}>TRACE v0.4.0</a> · <a href={me + "/tree/e2ef746e931161cb70ac46a4eaa122442134e86b"}>Mechanical Ethics v0.8.0</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>.</p>
+      <details className="technical-handoff">
+        <summary>Machine and technical routes</summary>
+        <p><strong>Compact text and machine routes:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
+      </details>
     </footer>
   </>;
 }
