@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.52 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.53 · 23 September 2026
+
+### D077
+
+23 September 2026 — Make the opening title a real front-door statement.
+
+Direct visual review of the live D076 homepage showed that the enlarged *Camp Fire* image now carries the opening properly, but “Please Start From Here” still read like a small corner label. The title is now much larger and horizontally centred over the artwork on larger screens. On narrow screens it remains centred below the image at a reduced scale.
+
+The complete artwork frame, story, routes, disclosures, machine payloads and framework sources are unchanged. Source change: [COM PR444](https://github.com/markgoodbody-bit/COM/pull/444). Site Preview advances to 0.8.34. This is a presentation correction, not evidence of reader benefit.
 
 ### D076
 
