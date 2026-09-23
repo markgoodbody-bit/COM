@@ -22,14 +22,22 @@ test('eight support readings gain direct exits with the declared presentation on
   assert.equal(addReadingNavigation('<body>archive</body>', 'resources/snapshots/example.html'), '<body>archive</body>');
 });
 
-test('appeal entry and case keep original sections behind the readable example', async () => {
-  for (const id of ['case', 'entry']) {
+test('all five appeal pages retain original sections behind the readable example', async () => {
+  for (const id of ['case', 'entry', 'route', 'affected', 'challenge']) {
     const source = await readFile(`public/explore/example/${id}.html`, 'utf8');
     const output = await readFile(`out/explore/example/${id}.html`, 'utf8');
     const details = output.split('<summary>Source details and limits</summary>')[1].split('</details>')[0];
     for (const section of source.matchAll(/<section>[\s\S]*?<\/section>/g)) assert.ok(details.includes(section[0]));
     assert.match(output, /Illustrative example/);
     assert.ok(output.indexOf('aria-label="Optional routes"') < output.indexOf('Source details and limits'));
+    if (['route', 'affected', 'challenge'].includes(id)) {
+      const node = JSON.parse(await readFile(`public/explore/example/${id}.json`));
+      const visible = output.split('<details class="appeal-source">')[0];
+      assert.ok(visible.includes(`<h1>${escape(node.question)}</h1>`));
+      assert.ok(visible.includes(escape(node.reading)));
+      assert.ok(visible.includes(escape(node.challenge)));
+      for (const item of node.unknowns) assert.ok(visible.includes(`<li>${escape(item)}</li>`));
+    }
   }
   const facts = JSON.parse(await readFile('public/explore/example/case.json'));
   const rendered = await readFile('out/explore/example/case.html', 'utf8');
