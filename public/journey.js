@@ -25,13 +25,13 @@
     back.href = previous || '#top';
     back.textContent = previous ? 'Back' : 'Back to the painting';
     if (!moveFocus) return;
-    const heading = step(location.hash)?.querySelector('h2') || destination || (!location.hash && document.querySelector('#step-welcome h2'));
+    const heading = step(location.hash)?.querySelector('h2, summary') || destination || (!location.hash && document.querySelector('#step-welcome summary'));
     if (!heading) return;
     if (!heading.hasAttribute('tabindex')) heading.setAttribute('tabindex', '-1');
     heading.focus({ preventScroll: true });
     (step(location.hash) || (!location.hash && document.querySelector('#step-welcome')) || heading).scrollIntoView({ block: 'start' });
   }
-  // Without this enhancement the full introduction remains expanded.
+  // Without this enhancement native fragment links and disclosures remain usable; the long introduction stays closed by default.
   reference.open = !!target()?.closest('#full-introduction');
   document.addEventListener('click', event => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
