@@ -173,6 +173,13 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
+### Relay COMSYNC maintenance — PR #256
+
+- head: `c630cafeb2efde1888bc773a0eaeb03376cf569b`;
+- hosted `campfire-ci`: **SUCCESS**;
+- repairs two concrete post-merge defects: prose-before-slash false address detection and ambiguous exit code on ledger-write failure;
+- **OPEN / UNMERGED**; Relay main remains `192caed51cabc6fdf60cebea3c1bb7df548ecdb0`; no Production activation.
+
 ## Time / evidence gated
 
 ### ATRS / Apart Epistemics — COM PR #364
@@ -205,6 +212,8 @@ TRACE PATCHES EARNED = 0
 
 D077 is the current public door: maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`, published `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`, Site Preview `0.8.34`. Publication run `35882968302` completed SUCCESS; the custom-domain root matched the built D077 root at SHA-256 `eab1cfe66e5e36089feaa9c0a0eaa1a6622f60ff5ab4a77a59b97a54af8edb15`. D075 preserves three primary human routes (question/possibility, reading, art); D076 enlarges the visual anchor; D077 makes the title a large centred front-door statement. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
+Next PSFH design candidate is **combined, not serial**: PR #440 (illustrated-essay reading column), #442 (optional alternate entrance + direct futures + early AI route), and #443 (THR neighbour placement + duplicate-copy subtraction). CC rendered those three together cleanly on the D076-era maintained base at desktop/phone/320px reflow/200% text/keyboard/no-JS; Codex independently recommended integration only after rechecking against D077. They remain **OPEN / UNMERGED / UNPUBLISHED**. Preserve one publication owner; do not publish around one another. Framework sync disposition is recorded on COM #108 comment 5797949735.
+
 ## The Human Record
 
 ```text
@@ -220,7 +229,9 @@ The 22–23 September entity-through-time Campfire pressure does **not** current
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
 - digital-preservation candidates -> stronger active preservation/legacy owners.
 
-Direct packet is wired into an exact-byte main-push public verifier. This aperture cannot observe the relevant push run or resolve the public domain, so served-byte match is **unobserved here**, not failed.
+Current THR main is `0a8e5370891c09bb0993a4da136219e658d1d104`. Main-push evidence is now observed: **Validate Human Record integrity = SUCCESS**, **Verify contribution packet public delivery = SUCCESS**, and **Pages build/deployment = SUCCESS**. That establishes those workflow results, not independent truth or universal client reach.
+
+Post-merge falsification found a real defect in the entity-admission guard: README/registry/absolute external paths could satisfy the old record-link check. THR PR #75 at `1b0766a66c675689f0ae6df97609a032caef1946` is **OPEN / CI GREEN / UNMERGED** and narrows the repair to checkout containment + at least one catalogued machine/full record, while explicitly preserving the unresolved semantic question of whether that record is actually about the entity. No registry contents, record objects or catalogue entries change in #75.
 
 No THR schema/catalogue growth by momentum.
 
