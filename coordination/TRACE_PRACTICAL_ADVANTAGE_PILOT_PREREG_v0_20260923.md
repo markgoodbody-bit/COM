@@ -39,6 +39,7 @@ Before case execution, freeze and record:
 - exposed sampling settings (temperature/top-p/etc.) or `provider default` if not configurable;
 - context/output-token budget, identical across paired arms except for the additional TRACE input;
 - primary policy of **one run per case-condition per model**; no selective reruns;
+- retry policy: **no content-level retry** in the primary analysis; a provider-wide infrastructure failure may exclude the paired case only under the predeclared rule below;
 - randomisation schedule;
 - timeout / missing-output rule below.
 
