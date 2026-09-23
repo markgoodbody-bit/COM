@@ -6,7 +6,7 @@ import test from 'node:test';
 const source = readFileSync(new URL('../app/page.tsx', import.meta.url), 'utf8');
 const baseline = execFileSync('git', ['show', 'ccf65dcc5780685608ce54ff4e6c888ac731611e:app/page.tsx'], {encoding: 'utf8'});
 test('story and questions are preserved while opening qualifications are reduced', () => {
-  const narrative = text => text.split('<div className="story-body">')[1].split('<p className="story-source">')[0];
+  const narrative = text => text.replace(/\r\n/g, '\n').split('<div className="story-body">')[1].split('<p className="story-source">')[0];
   assert.equal(narrative(source), narrative(baseline));
   const opening = source.split('<article className="concrete-story')[1].split('</article>')[0];
   assert.match(opening, /A composite scene from/);
