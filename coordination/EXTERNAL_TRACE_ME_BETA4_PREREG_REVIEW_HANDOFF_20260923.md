@@ -3,14 +3,16 @@
 Status: **REVIEW HANDOFF / NOT VALIDATION / NOT RELEASE AUTHORITY / DO NOT RUN PILOT YET**.
 
 Exact source candidates:
-- TRACE v0.4.0-beta4 — PR #59 — head `575a40572d164b2b3736ed45eceff48c45cb9b3b`.
+- TRACE v0.4.0-beta4 — PR #59 — head `bf71e2b8431c23b0be79240c00c076721a016283`. Its parent `575a40572d164b2b3736ed45eceff48c45cb9b3b` carries the same substantive text; the newer commit repairs only the README spine label and support links.
 - Mechanical Ethics v0.8.0-beta4 — PR #53 — head `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
 
 Primary review object:
-- `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md` on COM main.
+- [Preregistration v0 at fixed COM revision 91dd306](https://github.com/markgoodbody-bit/COM/blob/91dd3068240bc436ae974d58bbcc2fe160a08726/coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md).
 
 Round-2 synthesis:
-- `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`.
+- [Round-2 synthesis at fixed COM revision 91dd306](https://github.com/markgoodbody-bit/COM/blob/91dd3068240bc436ae974d58bbcc2fe160a08726/coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md).
+
+These are review snapshots, not a frozen experiment. Record the exact source identities reviewed. If a newer preregistration is supplied, identify it separately rather than silently substituting mutable COM main. This handoff neither authorizes a run nor supersedes unresolved review findings.
 
 ## Review priority
 
