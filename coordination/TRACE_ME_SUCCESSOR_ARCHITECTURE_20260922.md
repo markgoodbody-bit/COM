@@ -31,9 +31,9 @@ and does the entity retain represented alternatives and a usable route to refuse
 > What are repeated choices, environments and relationships making easier, harder, thinkable, unthinkable, reachable or normal for the entity that will make the next choice?
 
 ```text
-ACTION
--> OBSERVED CONSEQUENCE
--> OBSERVABLE CAPABILITY / RELATION / CONSTRAINT CHANGES
+ACTION / DELAY / NULL
+-> CONSEQUENCE OR PROJECTED CONSEQUENCE (EVIDENCE STATUS EXPLICIT)
+-> CAPABILITY / RELATION / CONSTRAINT CHANGE (SUPPORTED OR UNCERTAIN)
 -> LATER SELECTION LANDSCAPE CHANGES
 
 PAST STATE != TOTAL CURRENT ENTITY
@@ -44,6 +44,8 @@ DEVELOPMENT != OWNERSHIP
 ```
 
 No protected-internal-state inference. Keep attributed or self-reported experience separate from observed consequence. Formation is already owned by long traditions including Aristotle, Dewey, Bourdieu and affordance/policy-learning accounts; the useful TRACE/ME move is narrower: carry externally supportable change without inferring a total character or essence.
+
+Keep realised, reported, inferred and projected change distinguishable. A supported forecast can expose a possible consequence before it occurs; it must not be presented as an observed outcome.
 
 ### Commitment and chosen closure
 
@@ -174,7 +176,9 @@ FUTURE UNKNOWN
 FUTURE OMITTED FROM THIS RECORD
 ```
 
-`UNKNOWN` is an evidence state; `OMITTED` is a recorder action. Do not merge them. Do not label a future `CHOSEN` or `CONSTRUCTED` from an external record without observable criteria that satisfy the no-internal-state-oracle rule.
+`UNKNOWN` concerns what is known through a stated aperture. `OMITTED FROM THIS RECORD` concerns missing representation relative to a stated expected scope or comparison. Its cause, and whether anyone deliberately withheld it, require separate support. These dimensions can coexist; they are not interchangeable or necessarily exclusive labels.
+
+Do not label a future `CHOSEN` or `CONSTRUCTED` from an external record without observable criteria that satisfy the no-internal-state-oracle rule.
 
 ### Privacy / inspection derived view
 
