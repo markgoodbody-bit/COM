@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — beta3 round-2 external review ready**
+Updated: **23 September 2026 — round-2 integrated / beta4 + prereg open**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,7 +75,7 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `5e50926bada398184c6f83a8c376a5ceea6e6832` and ME v0.8.0-beta3 PR #52 at `cf8c64612a4e4d20cb1303ad0cab70dfd43d87d5`.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta2 is preserved as the first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `575a40572d164b2b3736ed45eceff48c45cb9b3b` and ME v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
@@ -239,4 +239,4 @@ Hot surfaces are intentionally compact.
 `HOT SURFACE = CURRENT STATE, NOT HISTORY`
 
 
-Beta3 round-2 status: outside-AI review ready. Final bounded repairs integrated: ME conditional timing/answerability wording; TRACE verification distinction restored after shrink; Amina prospective timing overclaim removed; TRACE practical falsifier predeclares comparator/task/measure/burden/adjudication. Released baselines unchanged.
+Round-2 reviews are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`. Beta4 adds only bounded local guards and carrier/capture repairs. A TRACE practical-advantage pilot preregistration candidate is open at `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md`; it must be reviewed and frozen before any run. Released baselines unchanged.
