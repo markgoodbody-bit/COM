@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
 
+### D082
+
+23 September 2026 — Give the reading rooms one quiet text surface.
+
+After the artwork systems were cleaned, the six text-only conceptual rooms still carried generator-level presentation debt: inline body, heading, summary and footer styles embedded directly in the rendered HTML, while the shared stylesheet already owned the rest of the site. The same renderer serves all ten conceptual rooms, so those inline skins also sat underneath the four art-bearing node rooms.
+
+The reading-room generator now emits one semantic shell and no inline presentation styles. Every room gets the same compact Reading map / Opening navigation, shared heading, counterpoint, disclosure, source-link, onward-route and footer classes. The six text-only rooms — Change, Care, Wisdom, Selection and consequences, Power and answerability, and Correction and residue — arrive directly into that quiet reading column without acquiring artwork. The four art-bearing node rooms retain their D081 artwork entrances; their duplicate top reading-room navigation is hidden because the art entrance already provides those routes.
+
+A new current-state regression covers all ten rooms, distinguishes the six text-only rooms from the four art-bearing node rooms, checks preservation of node text, raw-source routes, source pointers and authored graph edges, and verifies that presentation is owned by the shared stylesheet rather than inline attributes. It is now part of maintained CI. No node JSON/Markdown text, graph semantics, artwork, Works content, TRACE, Mechanical Ethics, Human Record, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.39. This is a presentation and maintenance repair, not evidence of reader benefit.
+
 ### D081
 
 23 September 2026 — Clean the handoff from artwork to reading.

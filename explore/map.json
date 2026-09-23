@@ -185,8 +185,8 @@
     },
     {
       "path": "nodes/aperture.html",
-      "bytes": 5567,
-      "sha256": "8dd56fa69fa80af43dcfbacbb0a9425b85c00b3545477db48d4676c9d1037e79"
+      "bytes": 5730,
+      "sha256": "cd14669a15793987aa0318dd5d35e30a8bb3197cc986a43a8a34255632abb2f3"
     },
     {
       "path": "nodes/aperture.json",
@@ -200,8 +200,8 @@
     },
     {
       "path": "nodes/care.html",
-      "bytes": 3830,
-      "sha256": "14ebdee968fec24f9d7b766560f27e497beaa28421ac82e9d490a65c5e787ce4"
+      "bytes": 4001,
+      "sha256": "7e2a757eb7ef0945489e89b1dace4e8b3878b614c1046c43105df67ae7ea32b8"
     },
     {
       "path": "nodes/care.json",
@@ -215,8 +215,8 @@
     },
     {
       "path": "nodes/change.html",
-      "bytes": 3737,
-      "sha256": "c61b6bb9f9b89b0dc1b53227206d777d552cf0a8fbd2f798863c310b6422b447"
+      "bytes": 3908,
+      "sha256": "911d4a0630ecaf53b9373710c9e82fa1216563b7c6be366ed77702e9e26ceb82"
     },
     {
       "path": "nodes/change.json",
@@ -230,8 +230,8 @@
     },
     {
       "path": "nodes/correction.html",
-      "bytes": 3820,
-      "sha256": "496c688c5260db969261aeb943f16bbc4fbad30b5afda7c1ede47d48637100a3"
+      "bytes": 3991,
+      "sha256": "6a64a13a621e3facb5a0e08eb151ec7edf1687aa26f706cba3a7e19b3071ceb1"
     },
     {
       "path": "nodes/correction.json",
@@ -245,8 +245,8 @@
     },
     {
       "path": "nodes/futures.html",
-      "bytes": 5247,
-      "sha256": "addff8c81a85badcb34c8610a04400b09d03dc3af5db5db557367c3760d7f8ea"
+      "bytes": 5410,
+      "sha256": "a1a2cbc2e6dc19c27681802a3563f46da65529340e8997a30f955db4ad0b75c0"
     },
     {
       "path": "nodes/futures.json",
@@ -260,8 +260,8 @@
     },
     {
       "path": "nodes/hardening.html",
-      "bytes": 5804,
-      "sha256": "5012a471b907667657304208252c45b17194b8ab65034a7c66ae94c521ac54ff"
+      "bytes": 5967,
+      "sha256": "5150fb7bd3a027fd372f2df8a3079d11495148ce2e4a6b07138414ea032ddb2c"
     },
     {
       "path": "nodes/hardening.json",
@@ -275,8 +275,8 @@
     },
     {
       "path": "nodes/power.html",
-      "bytes": 3817,
-      "sha256": "c7bbd06962a74da21b6b2c407361e83792fe7af0d453720bfb6de2ad03e96999"
+      "bytes": 3988,
+      "sha256": "5d8d3affa2753d40e85e4af4b037527eeb928d4e6dedaed1f9b7912c07a3ce34"
     },
     {
       "path": "nodes/power.json",
@@ -290,8 +290,8 @@
     },
     {
       "path": "nodes/selection.html",
-      "bytes": 3567,
-      "sha256": "48e03b540e227b9c15a6bc49f4d99b95ed8751bd9b37d7e0f921fca3a8b2c065"
+      "bytes": 3738,
+      "sha256": "54876fed2288c580f9691b29d37a367e1a8398b1342a077365beed5f5608e17e"
     },
     {
       "path": "nodes/selection.json",
@@ -305,8 +305,8 @@
     },
     {
       "path": "nodes/significance.html",
-      "bytes": 5208,
-      "sha256": "50db538ded7b08332e5d9e6f592175d14fcc9013107af174ea3d2610138c3de1"
+      "bytes": 5371,
+      "sha256": "b55b67f6741032884be5ebdd5229cb40ad8570de860b2f9e235439b9af1d3f09"
     },
     {
       "path": "nodes/significance.json",
@@ -320,8 +320,8 @@
     },
     {
       "path": "nodes/wisdom.html",
-      "bytes": 3959,
-      "sha256": "cbc33d5687c53a5196b6d55f92493f9c4c2cd6ae19ca3f229046d89c6222bfec"
+      "bytes": 4130,
+      "sha256": "73260851fd9df656afede0bcd060ad2bfc7e7323f7ba3264bbfe5a8e65669bfe"
     },
     {
       "path": "nodes/wisdom.json",
