@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — successor owner-subtraction integration**
+Updated: **23 September 2026 — morning beta-support refresh**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-Direct Mark direction on 22 September opened one non-canon successor-design lane in COM #365. Draft PR #409 is a review object, not a released-source branch. Codex's exact-source audit and Claude Code's hostile owner subtraction are both returned and integrated at head `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`.
+COM #365 remains the active non-canon successor lane. Draft PR #409 is integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`. Codex then prepared stacked draft PR #411 at `b246a9eb704ed93bf2782a4d201a1b970b7266c2`: a reader-facing companion, review brief, executable finite illustrations and precise architecture fixes. Framework integration of #411 is pending.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -115,15 +115,18 @@ NEW TRACE PRIMITIVE = NOT EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
 
 SURVIVING WORK = ATTRIBUTED COMPRESSION / SALIENCE / WORKED TRANSFER
+BETA-SUPPORT PACKET = PREPARED / NOT EXTERNALLY REVIEWED
 ```
 
-Seven of eight candidate areas have strong prior owners. The smallest useful import is a declared baseline for any future-space comparison; the smallest internal repairs split `UNKNOWN` from `OMITTED` and replace internal authorship inference with represented alternatives plus a usable refusal/revision route. Beta review candidates may be prepared, but no release, canon, baseline or broad external-model review follows automatically.
+Codex and Claude Code materially corrected one another overnight. The current strongest lesson is not new semantics but sharper discrimination: realised/reported/inferred/projected change stay distinct; omission does not imply intentional withholding; later good may contribute to repair without erasing earlier loss; route operation, discoverability and a subject's knowledge must not collapse; headline claims must not outrun the run that produced them.
+
+No release, canon, baseline or broad external-model review follows automatically.
 
 ## Current human gates
 
 ### Hack-Nation 7
 
-The last verified official-source check was on 19 September. It listed a final batch closing **26 September**, but that route was not independently reverified during this compaction. Check the owner source before any application action.
+Owner source reverified **23 September**: Batch 6 still closes **26 September 2026** and the Global AI Hackathon is listed for **3–4 October 2026**. Registration/account/terms remain Mark's gate.
 
 Prepared answer bank:
 `coordination/competition_quarry/COMPETITION_HUMAN_GATE_APPLICATION_PACK_20260918.md`
@@ -205,6 +208,8 @@ record 5 = NOT EARNED
 stewardship = OFFERED / NOT ACCEPTED
 portable contribution route = LIVE
 ```
+
+The 22–23 September entity-through-time Campfire pressure does **not** currently earn a new THR root architecture. Existing THR PR #52 already owns the exploratory fractal/owner-subtraction lane and current THR models already separate mentions, entities, assertions, correction and living-subject boundaries. Useful remaining pressure is temporal/currentness discrimination and subject obligations, not a universal living-person graph.
 
 19 September record-5 quarries:
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
