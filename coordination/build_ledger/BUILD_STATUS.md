@@ -69,9 +69,16 @@ History belongs in dated receipts + Git.
 
 ## Active build
 
-**NONE.** EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`. Its next step is local video recording and review, not source expansion. Upload, form completion and submission remain consequential human gates.
+No single Production/source build lane is currently authorized.
 
-Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`.
+EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
+
+Current reversible maintenance/design candidates:
+- **PSFH** #440 + #442 + #443 — treat as one combined next candidate; CC rendered their D076-era combination cleanly, but current D077 title/art state still needs latest-base integration/recheck before merge/publication;
+- **THR #75** `1b0766a66c675689f0ae6df97609a032caef1946` — entity-admission containment/catalogue repair, CI green, unmerged, no record/registry/catalogue data change;
+- **Relay #256** `c630cafeb2efde1888bc773a0eaeb03376cf569b` — two bounded COMSYNC maintenance repairs, campfire-ci green, unmerged, no Production activation.
+
+Current EvidenceWatch repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`.
 
 ## Active non-source design
 
@@ -128,6 +135,16 @@ Draft candidate frozen.
 ### TRACE / Mechanical Ethics successor
 
 COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME beta PRs #49/#50/#52/#53 are closed after release with branches/history preserved. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.4.0 and ME v0.8.0 are frozen pending concrete defects or world/use evidence.
+
+### PSFH combined first-contact candidate
+
+PR #440 + #442 + #443 are OPEN / UNMERGED / UNPUBLISHED. Combined intent:
+- illustrated-essay reading column and 18–20px main prose;
+- collapse the second visible chooser into an optional “Other ways in” disclosure;
+- direct work-to-futures route + quiet early AI compact-guide route;
+- move THR from the early project block to neighbours and remove two duplicate passages.
+
+CC reports a clean combined render at desktop/phone/320px reflow/200% text/keyboard/no-JS, but that review used the D076-era maintained base. Recheck the combination against D077 before integration; preserve one publication owner. Framework disposition: COM #108 comment 5797949735.
 
 ### PSFH Leave a Mark
 
@@ -237,10 +254,6 @@ Hot surfaces are intentionally compact.
 `HOT SURFACE = CURRENT STATE, NOT HISTORY`
 
 
-Round-2 reviews are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`. Beta4 adds only bounded local guards and carrier/capture repairs. A TRACE practical-advantage pilot preregistration candidate is open at `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md`; it must be reviewed and frozen before any run. Released baselines unchanged.
-
-
-Beta4/prereg status: source deltas are internally CLEAR_WITH_CEILINGS; the stale Figure 2 carrier is repaired in ME beta4; TRACE beta4 packaging is repaired at `bf71e2b8431c23b0be79240c00c076721a016283`. The practical-advantage preregistration is repaired on COM main and ready for outside review, but **NO PILOT RUN IS AUTHORIZED OR STARTED**.
-
+Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
 TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D077 live at `decc05063ec0a79da9a49260cfc7a32029bfab3f`; maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`; publication/live-root workflow `35882968302` SUCCESS; root SHA-256 `eab1cfe66e5e36089feaa9c0a0eaa1a6622f60ff5ab4a77a59b97a54af8edb15`. D074-D077 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.

@@ -132,6 +132,17 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
+### Relay COMSYNC maintenance — PR #256
+
+- head `c630cafeb2efde1888bc773a0eaeb03376cf569b`;
+- `campfire-ci` SUCCESS;
+- repairs two concrete post-merge defects in address detection and ledger-write failure reporting;
+- OPEN / UNMERGED; Relay main remains `192caed51cabc6fdf60cebea3c1bb7df548ecdb0`; Production unchanged.
+
+### PSFH next design candidate
+
+Treat PR #440 + #442 + #443 as **one combined candidate**, not three serial publications. CC rendered the combined D076-era merge cleanly at desktop/phone/320px reflow/200% text/keyboard/no-JS. Codex recommends integration only after rechecking it against the current D077 title/art state. All three remain OPEN / UNMERGED / UNPUBLISHED; preserve one publication owner. Framework disposition: COM #108 comment 5797949735.
+
 ## 5. Time / fresh-evidence gates
 
 ### ATRS — COM PR #364
@@ -157,7 +168,7 @@ Do not create another record merely because:
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current delivery caveat: exact-byte verifier includes the direct contribution fixture, but current push-run/live-byte result is unobserved from this aperture.
+Current THR main is `0a8e5370891c09bb0993a4da136219e658d1d104`. Main-push integrity, contribution-packet public-delivery and Pages workflows are all observed SUCCESS. THR PR #75 at `1b0766a66c675689f0ae6df97609a032caef1946` is OPEN / CI GREEN / UNMERGED after post-merge falsification of the entity-admission guard; it repairs checkout containment + catalogued-record linkage without changing records, registry contents or the catalogue and without pretending record-to-entity ownership is modelled.
 
 ## 7. Resources
 
@@ -202,10 +213,6 @@ STOP
 ```
 
 
-Round 2 is **RETURNED / SYNTHESIZED / NOT VALIDATION**. Next: hostile-review and freeze the preregistration candidate before any pilot run. Beta4 is a bounded integration delta, not a new general rewrite.
-
-
-Beta4/prereg next gate: **OUTSIDE REVIEW THE PREREGISTRATION; DO NOT RUN THE PILOT YET**. TRACE #59 exact head `bf71e2b8431c23b0be79240c00c076721a016283`; ME #53 exact head `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. The preregistration on COM main includes the Codex governance repairs.
-
+Practical-advantage test status: **UNRUN / SEPARATE TEST / DO NOT USE TO DEFINE PROJECT VALUE**. Outside review has already repaired several preregistration defects; the latest #365 return still leaves prompt asymmetry as an open methodological item. Do not run until the intended workflow, scoring and remaining prompt asymmetry are frozen. A short-case cost failure may be the honest result; do not lengthen cases or change amortisation after outcomes. Released TRACE/ME source stays frozen unless a concrete source defect or world/use pressure earns reopening.
 
 TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D077 serves them live with the human-first entrance, three primary human routes, enlarged centred artwork and a large centred title at `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
