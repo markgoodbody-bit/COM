@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D081 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D082 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -74,7 +74,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
 
 Current reversible maintenance/design candidates:
-- **PSFH D080** — D079 front door retained; PR #456 unifies the Works shelf + six dedicated encounters around one art-first gallery grammar, published and selected-live-byte verified at `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`; D081 cleans and regression-binds the five art-bearing Explore rooms; next bounded design target is the remaining text-only reading/example/utility families, not more homepage/Works/art-room churn;
+- **PSFH D082** — D079 front door, D080 Works and D081 contextual art entrances retained; all ten conceptual rooms now share one semantic/shared-CSS reading shell with six node rooms deliberately text-only, published and selected-live-byte verified at `gh-pages@9379c14c7c530313eb45a726c024c12af4da821e`; next bounded design target is the appeal-example / utility family, not more homepage/Works/art-room/reading-shell churn;
 - **THR #75** `1b0766a66c675689f0ae6df97609a032caef1946` — entity-admission containment/catalogue repair, CI green, unmerged, no record/registry/catalogue data change;
 - **Relay #256** `c630cafeb2efde1888bc773a0eaeb03376cf569b` — two bounded COMSYNC maintenance repairs, campfire-ci green, unmerged, no Production activation.
 
@@ -250,4 +250,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D081 live at `2c8de6e793d6d9610022d93cf1d5e8028a111712`; maintained source `c3feb58a4020e3a4760292ab8872af90759ded0f`; publication workflow `35892306246` SUCCESS with selected exact live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans the five contextual Explore art rooms. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D082 live at `9379c14c7c530313eb45a726c024c12af4da821e`; maintained source `1cd7ef165e15dbb27cc3f8f88832175baf8e11dc`; publication workflow `35893361462` SUCCESS with selected exact live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies the conceptual reading shell. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
