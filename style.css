@@ -140,26 +140,44 @@ body:has(.first-movements) footer > p:first-child { grid-column: 1 / -1; color: 
 .concrete-story .story-questions { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
 .concrete-story .story-source { margin-top: 1.25rem; color: var(--muted); font-size: .9375rem; }
 .technical-handoff { color: var(--muted); font-size: .9375rem; }
-/* Contextual encounters: whole artwork, no text over the image, no forced tour. */
+/* Contextual encounters: whole artwork, provenance beside it, then the reading.
+   These are entrances to reading rooms, not alternate Works pages. */
 body.contextual-room { max-width: none; padding: 0; }
 .contextual-room > main, .contextual-room > footer { width: min(calc(100% - 2rem), 76ch); margin-inline: auto; }
-.art-room { --room-bg: #0b293c; --room-ink: #faf8f3; margin: 0; background: var(--room-bg); color: var(--room-ink); }
+.art-room { --room-bg: #0b293c; --room-ink: #faf8f3; margin: 0; padding-bottom: 1rem; background: var(--room-bg); color: var(--room-ink); }
 .art-room-shen { --room-bg: #d9cdb0; --room-ink: #202d34; }
 .art-room a, .art-room a:visited { color: var(--room-ink); }
 .art-room a:focus-visible { outline-color: var(--room-ink); }
-.room-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding: .5rem clamp(1rem, 4vw, 4rem); }
-.room-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .9375rem; }
-.room-stage { margin: 0; padding: 0; }
-.room-heading { padding: 2rem clamp(1rem, 4vw, 4rem); }
-.room-heading p { font: 400 clamp(3rem, 5.8vw, 6rem)/1.04 var(--serif); letter-spacing: -.035em; max-width: 11ch; margin: 0 0 1.5rem; }
-.room-heading > a { display: inline-block; padding-block: .75rem; }
+
+.room-stage { max-width: 92rem; margin: 0 auto; padding: clamp(.75rem, 2vw, 2rem) clamp(.75rem, 3vw, 3rem) 0; }
+.room-stage-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.75rem, 1.5vw, 1.5rem); align-items: start; }
 .room-stage figure { margin: 0; min-width: 0; }
-.room-image { display: flex; justify-content: center; }
-.room-image img { display: block; width: 100%; height: calc(100svh - 4rem); object-fit: contain; object-position: center top; padding: 0; border: 0; }
-.room-stage figcaption { margin-top: 1rem; font-size: .875rem; text-align: center; }
-.room-credit { padding: 1.5rem clamp(1rem, 4vw, 4rem); border-top: 1px solid currentColor; font-size: .875rem; }
-.room-credit p { max-width: 95ch; }
+.room-image { display: flex; justify-content: center; align-items: flex-start; }
+.room-image img { display: block; width: auto; height: auto; max-width: 100%; max-height: 82svh; object-fit: contain; object-position: center top; padding: 0; border: 0; }
+.room-stage-pair .room-image img { max-height: 78svh; }
+.room-stage figcaption { max-width: 52rem; margin: .75rem auto 0; padding-inline: 1rem; font-size: .875rem; line-height: 1.5; text-align: center; }
+
+.room-credit { max-width: 52rem; margin: 0 auto; padding: 1rem 1rem 1.5rem; border-bottom: 1px solid currentColor; font-size: .875rem; line-height: 1.6; }
+.room-credit p { max-width: 76ch; margin: .5rem 0; }
+.room-heading { max-width: 52rem; margin: 0 auto; padding: 2rem 1rem .75rem; }
+.room-heading p { font: 400 clamp(2.5rem, 5vw, 4.75rem)/1.06 var(--serif); letter-spacing: -.03em; max-width: 14ch; margin: 0 0 1rem; text-wrap: balance; }
+.room-heading > a { display: inline-flex; align-items: center; min-height: 2.75rem; padding-block: .35rem; }
+.room-nav { max-width: 52rem; margin: 0 auto; padding: .25rem 1rem 1rem; display: flex; flex-wrap: wrap; gap: .25rem 1.75rem; }
+.room-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .9375rem; }
 .contextual-room #reading-map { scroll-margin-top: 1.5rem; }
+
+@media (max-width: 48rem) {
+  .room-stage { padding-inline: .75rem; }
+  .room-stage-pair { grid-template-columns: 1fr; }
+  .room-image img, .room-stage-pair .room-image img { max-height: 78svh; }
+  .room-heading { padding: 1.5rem 1rem .5rem; }
+  .room-heading p { font-size: clamp(2.25rem, 9vw, 3.5rem); max-width: none; }
+  .room-stage figcaption { padding-inline: .25rem; }
+}
+@media print {
+  .room-image img, .room-stage-pair .room-image img { max-height: 24cm; }
+  .room-stage { min-height: 0; }
+}
 /* Derived human map only: equal question doors, optional authored connections. */
 #reading-map .reading-map-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; list-style: none; padding: 0; }
 #reading-map .reading-map-list > li { min-width: 0; margin: 0; padding-block: 1.5rem; border-top: 1px solid var(--border); }

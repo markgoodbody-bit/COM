@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.37",
+  "site_edition": "0.8.38",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -76,9 +76,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "20503d6a2e3bac8f657ee8389196e92333870b66ac3c1391942550e92475e223",
-    "change_history_input_html_sha256": "ef0e1c90855c20eba85d98d5ae953a108daff9e5f8b58bb6b6d325c0299d271a",
-    "change_history_addendum_note": "D016 through D038 and D045-D080 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "99b4a08d52918f80ab8f80ddf1e912af8481ff71453dff58313bb3e671ca4522",
+    "change_history_input_html_sha256": "4c1bf687947106d194e55f2697d687c70ce8ad3e9f3d7c9a13f256c2491da4f7",
+    "change_history_addendum_note": "D016 through D038 and D045-D081 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -150,6 +150,10 @@
       "basis": "eafaf40e83d723e577a8cb78469a95946c334edd",
       "overlay": "scripts/WORKS_D080.json",
       "scope": "One shared Works presentation grammar: art first, provenance adjacent, consistent account typography and routes, bounded aspect-preserving collection thumbnails. Harriet Powers and Johannes Vermeer move off active one-off styles; work-specific content and all artwork/source-record bytes remain unchanged. Maintained CI now runs the Works regression. Reader benefit unmeasured."
+    },
+    "contextual_art_rooms_d081": {
+      "basis": "237c47cbd8d0aa487c1ad8accfc62dc25d91c330",
+      "scope": "Five existing Explore artwork entrances share one bounded handoff: complete uncropped artwork, adjacent provenance/placement boundary, then conceptual room heading and routes. Edmonia Lewis two-view layout moves from inline styling into shared CSS. Existing artwork selection, bytes, source records, reading nodes and graph are unchanged. The five-room regression is bound into maintained CI. Reader benefit unmeasured."
     },
     "html_source_text": [
       {
@@ -257,11 +261,11 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "708f28dafab6e84b10ccfc312412171505e1be3103e18257ab841f88aa9eff23",
+    "change_history_html_sha256": "73886a4339a3b57e16a682532ea5a6445125dac038affcbaea7ba85fdab0409e",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "e6212a40d1ed9b13f04f2166bd7f38f0c9ff553ef8a571606f2fe968e0201e34",
+      "stylesheet_sha256": "b51a23bcd51158b92fa8ca0e83c6a2a77fb63f17aac44a7b9e1a0f50937dffe7",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },

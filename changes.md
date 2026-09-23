@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
 
+### D081
+
+23 September 2026 — Clean the handoff from artwork to reading.
+
+The deeper-site pass found a real maintenance gap in the five contextual artwork entrances under Explore. Their live presentation still used an older full-viewport image rule, the Edmonia Lewis two-view room carried a one-off inline grid style, provenance arrived only after navigation and a large conceptual heading, and the contextual-art regression still asserted that only two rooms existed. That stale test was not in maintained CI.
+
+The five art-bearing rooms now share one bounded handoff: complete artwork first with no text over it; provenance and the project-placement boundary immediately after the image; then the conceptual room heading and ordinary reading routes. Images remain aspect-preserving and uncropped, but gain consistent breathing room and a bounded viewport height rather than filling the whole stage by rule. Lewis's two museum views now use the shared pair class and stack on narrow screens without inline layout. The existing dark room family and Shen Zhou's lighter room remain; no new artwork or interpretation is introduced.
+
+The contextual-art regression now covers all five rooms — Anna Atkins, Shen Zhou, Johannes Vermeer, Harriet Powers and Edmonia Lewis — checks their canonical Works/image custody, handoff order, complete-image containment and absence of the old inline pair exception, and runs in maintained CI. No artwork bytes, museum/source records, reading-node text/graph, Works content, TRACE, Mechanical Ethics, Human Record, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.38. This is a presentation and regression repair, not evidence of reader benefit.
+
 ### D080
 
 23 September 2026 — Give Works one gallery grammar.

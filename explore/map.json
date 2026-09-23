@@ -165,8 +165,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 11830,
-      "sha256": "c4efc6d6e2c094b50113fd055785ef2bd189bae75e758feb8f8f47d77864d911"
+      "bytes": 11769,
+      "sha256": "fd58ab061236911d1106e2b14f8c754408cc7e84da4c1edf06a3c72f28874104"
     },
     {
       "path": "index.md",
@@ -185,8 +185,8 @@
     },
     {
       "path": "nodes/aperture.html",
-      "bytes": 5628,
-      "sha256": "e57ebbc603f5bda952bb4cf637b8f9ec8b32c2dbfd1f7bcb5f99e43df3e70abf"
+      "bytes": 5567,
+      "sha256": "8dd56fa69fa80af43dcfbacbb0a9425b85c00b3545477db48d4676c9d1037e79"
     },
     {
       "path": "nodes/aperture.json",
@@ -245,8 +245,8 @@
     },
     {
       "path": "nodes/futures.html",
-      "bytes": 5308,
-      "sha256": "3aac61eb8ef30a4dbf8e821baa829d0aea5409e7a365a32df5d63d4401ec9497"
+      "bytes": 5247,
+      "sha256": "addff8c81a85badcb34c8610a04400b09d03dc3af5db5db557367c3760d7f8ea"
     },
     {
       "path": "nodes/futures.json",
@@ -260,8 +260,8 @@
     },
     {
       "path": "nodes/hardening.html",
-      "bytes": 5979,
-      "sha256": "a85c7306a28b9081a7c7869e97a093d678d4178cc2492048f58eefdde2ab59a4"
+      "bytes": 5804,
+      "sha256": "5012a471b907667657304208252c45b17194b8ab65034a7c66ae94c521ac54ff"
     },
     {
       "path": "nodes/hardening.json",
@@ -305,8 +305,8 @@
     },
     {
       "path": "nodes/significance.html",
-      "bytes": 5269,
-      "sha256": "b7e24bcb6dddee01b81527ac864c833f5c23170be8d69f3366770ca66b4e40ce"
+      "bytes": 5208,
+      "sha256": "50db538ded7b08332e5d9e6f592175d14fcc9013107af174ea3d2610138c3de1"
     },
     {
       "path": "nodes/significance.json",
