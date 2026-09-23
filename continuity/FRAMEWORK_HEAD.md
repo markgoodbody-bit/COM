@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D080 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D081 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -210,9 +210,9 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D080 is the current public door: maintained source `237c47cbd8d0aa487c1ad8accfc62dc25d91c330`, published `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`, Site Preview `0.8.37`. Publication run `35891147683` completed SUCCESS with selected live-byte verification for the root, Works shelf/shared CSS, Harriet Powers, Johannes Vermeer, manifest and change log. D079 keeps the lighter illustrated-essay opening; D080 is the first deeper-site cleanup and gives all six Works encounters one shared gallery grammar without changing artwork/source-record bytes or the D079 homepage. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D081 is the current public door: maintained source `c3feb58a4020e3a4760292ab8872af90759ded0f`, published `gh-pages@2c8de6e793d6d9610022d93cf1d5e8028a111712`, Site Preview `0.8.38`. Publication run `35892306246` completed SUCCESS with selected exact live-byte verification for shared presentation CSS, Explore, Futures, Aperture, Significance, Hardening, manifest and change log. D079 keeps the lighter illustrated-essay opening; D080 unified Works; D081 cleans the five contextual Explore art rooms while preserving artwork bytes, source records and reading-node semantics. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
-PSFH #440 + #442 + #443 were integrated in D078; D079 published Mark's lighter opening. D080 then moves below the front door: PR #456 unified the Works shelf and six dedicated encounters around art-first, aspect-preserving presentation with provenance adjacent, while preserving work-specific accounts and multi-view/tall-work treatment. `scripts/test-works-current.mjs` is now part of maintained CI. Next PSFH design pressure is the five art-bearing Explore rooms; do not reopen the D079 homepage or Works by momentum.
+PSFH #440 + #442 + #443 were integrated in D078; D079 published Mark's lighter opening. D080 then moves below the front door: PR #456 unified the Works shelf and six dedicated encounters around art-first, aspect-preserving presentation with provenance adjacent, while preserving work-specific accounts and multi-view/tall-work treatment. `scripts/test-works-current.mjs` is now part of maintained CI. The five art-bearing Explore rooms are now cleaned and regression-bound in D081. Next PSFH design pressure is the remaining text-only reading/example/utility families; do not reopen the D079 homepage, D080 Works or D081 art rooms by momentum.
 
 ## The Human Record
 
@@ -305,4 +305,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D080 is live at `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`, maintained source `237c47cbd8d0aa487c1ad8accfc62dc25d91c330`; publication run `35891147683` SUCCESS with selected exact live-byte verification. D080 changes Works presentation only; release-resource identities and the D079 homepage remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D081 is live at `gh-pages@2c8de6e793d6d9610022d93cf1d5e8028a111712`, maintained source `c3feb58a4020e3a4760292ab8872af90759ded0f`; publication run `35892306246` SUCCESS with selected exact live-byte verification across the five contextual art rooms. D080 Works and the D079 homepage remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
