@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — round-2 integrated / beta4 + prereg open**
+Updated: **23 September 2026 — beta4 + prereg external-review ready**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `575a40572d164b2b3736ed45eceff48c45cb9b3b` and Mechanical Ethics v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. Released baselines remain unchanged.
+COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `bf71e2b8431c23b0be79240c00c076721a016283` and Mechanical Ethics v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. Released baselines remain unchanged.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -284,3 +284,8 @@ OMITTED FROM HEAD != ABSENT
 ## Round-2 integration / beta4 gate
 
 Round-2 outside reviews are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`. Beta4 integrates only bounded carrier/mirror repairs. The next high-value review object is the preregistration candidate `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md`; beta4 delta review is secondary. Released baselines remain unchanged.
+
+
+## Beta4 / prereg external gate
+
+TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; ME beta4 PR #53 is at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. Both are bounded round-2 integration candidates, not releases. The repaired TRACE practical-advantage preregistration is now on COM main and is **READY FOR EXTERNAL REVIEW / NOT READY TO RUN**. Use `coordination/EXTERNAL_TRACE_ME_BETA4_PREREG_REVIEW_HANDOFF_20260923.md`.
