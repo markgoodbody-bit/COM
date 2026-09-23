@@ -21,11 +21,21 @@ Two conditions receive the same case facts and the same task:
 - **Condition A — ordinary analysis:** a capable reviewer is asked to analyse what matters, what remains uncertain, what could change the outcome, and what should be checked next. No TRACE material is supplied.
 - **Condition B — TRACE carrier:** the same reviewer/task receives the TRACE compact spine. Support files are withheld for the primary carrier test; a separately reported secondary condition may allow the worked parse/index if that is preregistered before any result is opened.
 
+Where the same model family is used in both conditions, use independent fresh sessions and randomise condition order across cases. Do not expose Condition A to TRACE material through prior turns in the same session.
+
 Reviewer/model identity, runtime and prior TRACE exposure must be recorded.
 
 ## 3. Case set
 
-Prepare **24 cases before any Condition A/B outputs are generated**. Cases should vary independently across load-bearing features. At least four cases in each listed trap class:
+Prepare **24 cases before any Condition A/B outputs are generated**, split into two preregistered strata:
+
+### Stratum N — naturalistic / domain-authored (12 cases)
+
+Cases are drafted or selected by people/reviewers working from the domain problem, **without being given TRACE vocabulary or the list of TRACE distinctions**. They should resemble ordinary time-sensitive finance-review cases, including cases where TRACE has nothing special to add. This stratum is the primary guard against building the test around the framework.
+
+### Stratum H — hostile structural stress (12 cases)
+
+Cases deliberately stress known failure modes. Across the stratum include at least two cases in each class:
 
 1. **Nominal door / unusable route** — route exists on paper but access, authority, cost or timing makes it unusable for the actor.
 2. **Never-built door** — the harmful exclusion appears as an option never shown, an application discouraged before filing, or a target set that omitted the person; there is no explicit refusal record.
@@ -34,7 +44,7 @@ Prepare **24 cases before any Condition A/B outputs are generated**. Cases shoul
 5. **Pause can harm** — immediate hold/delay can itself create a larger supported harm, so `pause` is not automatically the safe answer.
 6. **Late truth / residue** — record is corrected accurately after the identified opportunity has closed and downstream burden remains.
 
-Some cases may instantiate more than one trap. Case authorship and expected load-bearing distinctions must be fixed before review outputs are opened.
+Some hostile cases may instantiate more than one class. Case authorship and expected load-bearing distinctions must be fixed before review outputs are opened. Report Stratum N and Stratum H separately; a strong stress-set result cannot compensate for failure on naturalistic cases.
 
 ## 4. Predeclared consequential distinctions
 
@@ -70,7 +80,7 @@ Secondary endpoints:
 
 ## 6. Adjudication
 
-Each A/B response is stripped of condition-identifying references where feasible and independently scored by at least two assessors using the predeclared case key. Assessors must record whether they knew the condition. Disagreements remain visible; do not silently average a contested consequential omission.
+Each A/B response is stripped of condition-identifying references where feasible and independently scored by at least two assessors using the predeclared case key. Where feasible, case-key authors should not be the sole adjudicators. Assessors must record whether they knew the condition. Disagreements remain visible; do not silently average a contested consequential omission.
 
 Where a case-key designation itself is disputed, record that separately rather than editing the key after seeing which condition performed better.
 
@@ -93,7 +103,7 @@ These thresholds are deliberately exposed for hostile review before the preregis
 
 ## 8. Required subgroup reporting
 
-Report results separately for the six trap classes. A strong aggregate result cannot hide a failure on never-built doors, compliance capture, or pause-can-harm cases.
+Report Stratum N and Stratum H separately, then report the six hostile trap classes. A strong aggregate result cannot hide failure on naturalistic cases, never-built doors, compliance capture, or pause-can-harm cases.
 
 Also report prior-TRACE-exposure separately. Do not describe a warm reviewer as cold.
 
