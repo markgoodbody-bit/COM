@@ -90,7 +90,6 @@ export default function Home() {
               <p><a href={answerableConstruction}>Answerable Construction</a> is preserved as synthesis, history and an open question after stronger neighbouring work cut down its contribution claim. It is not an established standalone layer.</p>
               <p>These are optional routes into the live workshop, not prerequisites for TRACE, Mechanical Ethics or this site. They may change, shrink or disappear as the project learns.</p>
             </details>
-            <p><a href="https://thehumanrecord.net/">The Human Record</a> is a separate public project about keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries four public records: artwork provenance, a viral historical claim source trail, a living-practice transmission-lineage case, and a historical-person source-survival record following Hannibal through bounded surviving accounts. Stewardship has been offered to 1F916, not accepted. It is not evidence for TRACE or Mechanical Ethics, an authorship detector, or a certification authority.</p>
             <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement.</p>
           </div>
         </section>
@@ -138,7 +137,7 @@ export default function Home() {
             <p className="eyebrow">Check the work</p>
             <h2 tabIndex={-1}>You do not have to agree.</h2>
             <p>A useful objection does not need this project&apos;s vocabulary, or a proposed repair.</p>
-            <p>These accounts can omit people, infer too much or steer the reader. A different account may serve better. A challenge need not be expressed in this project&apos;s vocabulary.</p>
+            <p>These accounts can omit people, infer too much or steer the reader. A different account may serve better.</p>
             <div className="journey-options">
               <a href="#step-story">Inspect the small example</a>
               <a href="/explore/challenge.html">Read the limits and ways to challenge</a>
@@ -181,7 +180,6 @@ export default function Home() {
             <h2>I want to explore, question or disagree</h2>
             <p>You do not need a problem, an identity category or a commitment to begin. Wander without committing to a method, try the material on a real question, or challenge what seems wrong or incomplete. A useful objection does not need this project&apos;s vocabulary and does not have to propose a repair. Reading and leaving is also a complete use.</p>
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">Explore</a> · <a href="https://pleasestartfromhere.com/discussion/">Read questions and discussion</a></p>
-            <p>This static site does not collect or store visitor messages or identity. The current direct project-thread reply route requires a GitHub account; there is no no-account direct reply route in this edition.</p>
           </article>
         </div>
         <div className="perspective-and-boundaries">
@@ -237,6 +235,7 @@ export default function Home() {
         <p><a href="https://pleasestartfromhere.com/resources/">All local reading files, diagrams and fixed editions</a>.</p>
         <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
         <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
+        <p><a href="https://thehumanrecord.net/">The Human Record</a> is a separate public project about keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries four public records: artwork provenance, a viral historical claim source trail, a living-practice transmission-lineage case, and a historical-person source-survival record following Hannibal through bounded surviving accounts. Stewardship has been offered to 1F916, not accepted. It is not evidence for TRACE or Mechanical Ethics, an authorship detector, or a certification authority.</p>
         <article className="artist-source" id="winslow-homer" aria-labelledby="homer-heading">
           <h3 id="homer-heading">The painting and its maker</h3>
           <p><strong>{CAMP_FIRE.artist} ({CAMP_FIRE.artist_dates})</strong> was an American painter. He began in commercial printmaking and worked as an artist-correspondent during the Civil War. His subjects included rural life, coastal communities and the sea. He moved to Prouts Neck, Maine, in 1883. <a href={CAMP_FIRE.biography_url}>Read H. Barbara Weinberg&apos;s biography at The Met</a>.</p>
