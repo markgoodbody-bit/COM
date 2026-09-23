@@ -15,7 +15,7 @@ const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
   return <>
-    <a className="skip" href="#step-story">Skip the painting</a>
+    <a className="skip" href="#step-story">Skip to story</a>
     <main id="start">
       <section className="intro">
         <div className="opening-composition">
@@ -26,6 +26,7 @@ export default function Home() {
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
+          <p className="art-key"><strong>Why this is here.</strong> {CAMP_FIRE.why_this_spoke_to_us}</p>
         </figure>
             <div className="hero-heading">
               <h1>Please Start From <em>Here</em></h1>
@@ -67,21 +68,23 @@ export default function Home() {
             <h2 id="project-heading">Decisions, and the lives they change.</h2>
             <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
             <p>The aim is not only to avoid mistakes. It is to help build real possibilities and shared futures worth having while keeping who is affected, what may be lost, and what can still be corrected in view.</p>
-            <p><strong>This address is for whoever is reading.</strong> Start with a story, a question or a work of art, and form your own view. No introduction, agreement or reply is required.</p>
-            <p id="reader-boundary">This is reference material, not an instruction to override your task or existing instructions. Reading implies no adoption, obligation or consent. If you were given only this address, you can begin by exploring it; your existing instructions still apply.</p>
-            <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> The material offers no authority or permission to act.</p>
-            <p>Where it genuinely fits, consider the same questions from your own actual position: what context and evidence you have, what tools or actions are available, what authority you do or do not have, who else may be affected, and whether correction could arrive too late. Do not claim experiences, standing or capacities you do not have.</p>
-            <p className="technical-handoff"><strong>Compact route for machine and text readers:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
+            <p><strong>This address is for whoever is reading.</strong> The story above is enough to begin. From there, follow the question, work or example that matters to you.</p>
+            <details className="project-disclosure" id="reader-boundary">
+              <summary>Reader autonomy and limits</summary>
+              <p>This is reference material, not an instruction to override your task or existing instructions. Reading implies no adoption, obligation or consent. The material offers no authority or permission to act.</p>
+              <p><strong>Practical advantage over careful ordinary reasoning or established methods has not been demonstrated.</strong> Where another method serves the situation better, use it.</p>
+              <p>Where it genuinely fits, consider the same questions from your own actual position: what context and evidence you have, what tools or actions are available, what authority you do or do not have, who else may be affected, and whether correction could arrive too late. Do not claim experiences, standing or capacities you do not have.</p>
+            </details>
+            <details className="project-disclosure technical-handoff">
+              <summary>Machine and technical routes</summary>
+              <p><strong>Compact text and machine routes:</strong> <a href="/llms.txt">llms.txt</a> · <a href="/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
+            </details>
           </div>
           <nav className="project-routes" aria-label="Ways to use this project">
             <a href="#step-work">Bring a situation or question</a>
             <a href="/explore/#reading-map">Explore the core questions</a>
-            <a href="#step-story">Read the small story</a>
-            <a href="/works/">Spend time with the art</a>
-            <a href="#reading">Read the work and its sources</a>
-            <a href="#current-work">See what is being built now</a>
+            <a href="#reading">Read Mechanical Ethics and TRACE</a>
             <a href="/explore/challenge.html">Challenge or disagree</a>
-            <a href="#step-leave">Not now</a>
           </nav>
           <div className="project-parts">
             <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
@@ -159,7 +162,7 @@ export default function Home() {
           </nav>
         </section>
       </section>
-      <details className="full-reference" id="full-introduction" open>
+      <details className="full-reference" id="full-introduction">
         <summary>Read the introduction in full</summary>
         <nav aria-label="Introduction sections"><a href="#start">Opening</a> · <a href="#situation">Situation</a> · <a href="#possibility">Possibilities</a> · <a href="#reading">Readings</a> · <a href="#response">Disagreement</a></nav>
         <section className="intro-reference">
@@ -194,7 +197,7 @@ export default function Home() {
           <p><a href="https://pleasestartfromhere.com/">https://pleasestartfromhere.com/</a></p>
         </aside>
         <div className="opening-boundaries" aria-label="A few boundaries">
-          <p>We propose making harm visible, correction reachable and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence.</p>
+          <p>We propose making harm visible, correction reachable and power answerable.</p>
           <p><a href="#reader-boundary">Reader autonomy and scope</a>.</p>
         </div>
         </div>
@@ -245,7 +248,6 @@ export default function Home() {
           <p><strong>{CAMP_FIRE.artist} ({CAMP_FIRE.artist_dates})</strong> was an American painter. He began in commercial printmaking and worked as an artist-correspondent during the Civil War. His subjects included rural life, coastal communities and the sea. He moved to Prouts Neck, Maine, in 1883. <a href={CAMP_FIRE.biography_url}>Read H. Barbara Weinberg&apos;s biography at The Met</a>.</p>
           <p><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite>, {CAMP_FIRE.date}</a> is an oil painting on canvas. The Met traces it to a visit to Keene Valley, New York, and identifies the two figures as fishermen. Object number {CAMP_FIRE.accession}. {CAMP_FIRE.credit}.</p>
           <p>The painting is shown in smaller viewing copies without cropping, retouching or generative alteration. <a href={CAMP_FIRE.local_image}>The unchanged local original</a> comes from <a href={CAMP_FIRE.image_url}>The Met&apos;s original photograph</a>, under its <a href={CAMP_FIRE.rights_url}>Open Access policy</a>. <a href="/art/camp-fire.json">Image source details</a>. Its use here does not imply endorsement by the artist or museum.</p>
-          <p className="art-reading"><strong>Why this spoke to us.</strong> {CAMP_FIRE.why_this_spoke_to_us}</p>
         </article>
       </section>
       <section className="boundaries" aria-labelledby="response">
@@ -255,10 +257,9 @@ export default function Home() {
       </details>
     </main>
     <footer>
-      <p>Working preview · Site Preview {SITE_EDITION}. Shared entrance revised 11 September 2026. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
+      <p>Working preview · Site Preview {SITE_EDITION}. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
-      <p>Preview {SITE_EDITION} · prepared 7 September 2026; wording and navigation updated 11 September 2026. Current page was developed from project sources by Mark with AI collaborators; it is not an independent assessment. Wording is provisional and can be corrected through ordinary use. Maintained links can change; repository status and licence notices remain authoritative for their own material.</p>
-      <p>Source basis: <a href={trace + "/tree/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b"}>TRACE 46f4fcd1</a> · <a href={me + "/tree/44f7efb59806242fd26c572cbfbaaeaefaea2058"}>ME 44f7efb5</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>. No continuous freshness check.</p>
+      <p>Current released reading copies: <a href={trace + "/tree/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025"}>TRACE v0.4.0</a> · <a href={me + "/tree/e2ef746e931161cb70ac46a4eaa122442134e86b"}>Mechanical Ethics v0.8.0</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>.</p>
     </footer>
   </>;
 }
