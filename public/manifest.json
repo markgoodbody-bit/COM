@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.40",
+  "site_edition": "0.8.41",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -72,9 +72,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "c93f80aacece6ab89f7795b6a285132ec0c5ec2b0724ed51b90b05bccb84e79d",
-    "change_history_input_html_sha256": "ebca782e6c79ad811454ed3523dde642c183e6f72045134cbba9bb6b20540640",
-    "change_history_addendum_note": "D016 through D038 and D045-D083 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "935baad019b5469dabb7871ff106993849670c2a26275134a51f05b731b17feb",
+    "change_history_input_html_sha256": "cf1f2a8446c76f5fa4d0fb73f57ae5e097a969be1cbcb77e0accf2b3a291fa2a",
+    "change_history_addendum_note": "D016 through D038 and D045-D084 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -158,6 +158,10 @@
     "appeal_case_family_d083": {
       "basis": "1cd7ef165e15dbb27cc3f8f88832175baf8e11dc",
       "scope": "Five existing appeal-example HTML views use one shared site stylesheet and case-family wayfinding. Stipulated facts, lenses, unknowns, challenge text, Markdown/JSON sources and cross-routes are unchanged. The pages remain optional and text-only. Current-state regression is bound into maintained CI. Reader benefit and example correctness remain unmeasured."
+    },
+    "single_contextual_skip_d084": {
+      "basis": "129261f5a7e231e8ddcc8d6ae38569f00ddcf0ce",
+      "scope": "Art-bearing conceptual rooms retain one first-action accessibility bypass: the contextual-art skip to the reading boundary. The generic reading-room skip-to-question is removed only when an artwork entrance is composed. Explore and the six text-only conceptual rooms keep their existing single skip links. Content and route semantics are unchanged."
     }
   },
   "boundaries": [
