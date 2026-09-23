@@ -4,14 +4,15 @@ Status: **DRAFT HANDOFF / DO NOT TREAT AS VALIDATION / DO NOT SUBMIT OR PUBLISH 
 
 Purpose: give independent AI apertures a clean way to review the next TRACE / Mechanical Ethics betas without turning the exercise into a popularity contest or a novelty test.
 
-Current source candidates at time of drafting:
-- TRACE v0.4.0-beta1 — draft PR #56, base released v0.3.0.
-- Mechanical Ethics v0.8.0-beta1 — draft PR #49, base released v0.7.0.
-- Framework beta2-work deltas exist separately and should replace these exact heads only after internal integration.
+Current external-review candidates:
+- TRACE v0.4.0-beta2 — draft PR #57, exact head `012509754aa2abdf1536604166f838449af6b509`, base released v0.3.0: https://github.com/markgoodbody-bit/TRACE/pull/57
+- Mechanical Ethics v0.8.0-beta2 — draft PR #50, exact head `733f304f4cce3af08398bcf7967168c1647fb1af`, base released v0.7.0: https://github.com/markgoodbody-bit/mechanical-ethics/pull/50
+
+Frozen beta1 PRs #56/#49 remain internal comparison controls. Do not review them unless explicitly asked to compare beta1 against beta2.
 
 ## Reviewer instructions
 
-Please do not begin by reading project discussion, prior reviews, COM, or other model outputs. Start with the artifacts themselves.
+Please do not begin by reading project discussion, prior reviews, COM, beta1, or other model outputs. Start with the beta2 artifacts themselves. For Mechanical Ethics, the repository PDF is still released v0.7.0 and is **not** the beta; read the beta Markdown. For TRACE, `TRACE.md` remains the released v0.3.0 donor/full reference; the beta review object is `TRACE-SPINE.md`.
 
 ### Pass A — cold read
 
