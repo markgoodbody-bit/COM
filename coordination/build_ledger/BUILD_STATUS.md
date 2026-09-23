@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — source betas opened**
+Updated: **23 September 2026 — beta1 review / beta2 self-review split**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,18 +75,19 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. The architecture/companion work has produced concrete source betas: TRACE draft PR #56 at `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics draft PR #49 at `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. Frozen beta1 review targets remain TRACE #56 at `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics #49 at `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`. Framework self-review is isolated in stacked TRACE #57 and ME #50 beta2-work PRs.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
 NEW PRIMITIVE / CONCEPT = NONE EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta1 = OPEN / INTERNAL REVIEW PENDING
-ME v0.8.0-beta1 = OPEN / INTERNAL REVIEW PENDING
-EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
+TRACE v0.4.0-beta1 = FROZEN INTERNAL REVIEW TARGET
+ME v0.8.0-beta1 = FROZEN INTERNAL REVIEW TARGET
+TRACE / ME BETA2-WORK = STACKED FRAMEWORK DELTAS
+EXTERNAL MODEL REVIEW = HANDOFF PREPARED / NOT DISPATCHED
 ```
 
-Codex/CC exact-source reviews are dispatched. Existing release-integrity/source-binding workflows fail on these draft PRs because the beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected baseline guard, not a beta PASS/FAIL result. Do not weaken those guards. This remains a bounded beta lane, not a general build queue.
+Codex/CC exact-source reviews are dispatched and returns are pending. Framework beta2-work currently adds owner maps, removes one TRACE category leak, restores the human `reach/connect to hope` question, distinguishes despair from total future closure, and repairs positive-duty leakage. Keep beta1 frozen until the two independent lanes can be compared. Existing release-integrity/source-binding workflows fail because the beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected baseline guard, not a beta PASS/FAIL result. Do not weaken those guards.
 
 ## Green / frozen candidate objects
 
@@ -127,7 +128,7 @@ Draft candidate frozen.
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 carries coordination history; TRACE PR #56 and ME PR #49 carry the actual beta sources. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
+COM #365 carries coordination history; TRACE #56 / ME #49 carry frozen beta1 sources; TRACE #57 / ME #50 carry Framework beta2-work deltas. External handoff draft is on COM main. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
 
 ### PSFH Leave a Mark
 

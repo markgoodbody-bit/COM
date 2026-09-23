@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — source betas opened**
+Updated: **23 September 2026 — beta1 review / beta2 self-review split**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,18 +82,19 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-COM #365 remains active. The successor architecture/companion work has now produced two actual source-repo beta PRs: TRACE #56 at `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics #49 at `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`.
+COM #365 remains active. Exact beta1 review targets are frozen at TRACE #56 `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics #49 `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`. Framework self-review is isolated in stacked beta2-work PRs: TRACE #57 and ME #50.
 
 ```text
 NEW PRIMITIVE = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
 TRACE v0.4.0-beta1 = DRAFT PR #56
 ME v0.8.0-beta1 = DRAFT PR #49
-CODEX / CC EXACT-SOURCE REVIEW = DISPATCHED
-EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
+CODEX / CC EXACT-SOURCE REVIEW = DISPATCHED / RETURNS PENDING
+FRAMEWORK BETA2-WORK = STACKED / DO NOT MERGE INTO BETA1 YET
+EXTERNAL REVIEW HANDOFF = PREPARED / NOT DISPATCHED
 ```
 
-Next: integrate/shrink the exact source betas against Codex/CC returns, then decide whether they are coherent enough for cold external-model review. Current red CI on the beta PRs is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
+Next: compare Codex/CC beta1 returns against Framework's independent beta2-work deltas, then integrate one coherent beta2 candidate. Do not silently merge the lanes before that comparison. Current red CI on beta1 is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green. External review prompt: `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`.
 
 ## 3. Current human gate — Hack-Nation 7
 
