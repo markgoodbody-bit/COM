@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D078 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D079 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -74,7 +74,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
 
 Current reversible maintenance/design candidates:
-- **PSFH D078** — #440 + #442 + #443 integrated together on the D077 base via PR #449, published and live-byte verified; no further first-contact build is queued absent new visual/use evidence or a concrete defect;
+- **PSFH D079** — D078 illustrated-essay entrance retained; Mark-requested lighter opening copy from #448 published and live-byte verified; #452 makes copy preservation part of maintained CI; no further first-contact build is queued absent new visual/use evidence, direct Mark request or a concrete defect;
 - **THR #75** `1b0766a66c675689f0ae6df97609a032caef1946` — entity-admission containment/catalogue repair, CI green, unmerged, no record/registry/catalogue data change;
 - **Relay #256** `c630cafeb2efde1888bc773a0eaeb03376cf569b` — two bounded COMSYNC maintenance repairs, campfire-ci green, unmerged, no Production activation.
 
@@ -138,7 +138,7 @@ COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME b
 
 ### PSFH combined first-contact candidate
 
-PR #440 + #442 + #443 were integrated together in PR #449 and published as D078. The combined release keeps D077 art/title geometry and adds the bounded essay column, optional alternate chooser, direct Futures route, quiet early AI guide, THR-neighbour placement and duplicate-copy subtraction. Maintained CI now permanently checks the three primary routes plus `journey.js` syntax. Component branches remain history/provenance, not an active publication queue.
+PR #440 + #442 + #443 were integrated in D078. D079 then publishes Mark's lighter-opening copy from #448: neutral campfire caption, shorter composite-source line, `Looking more closely` bridge and relocated access example. #452 makes the exact story/questions and opening-copy boundary a checkout-independent maintained-CI regression. Component branches remain history/provenance, not an active publication queue.
 
 ### PSFH Leave a Mark
 
@@ -250,4 +250,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D078 live at `3f937db5345d527f527f8189cb1dfadee737bc5c`; maintained source `5ff27454bd5cfcd181e144ab05788ab693ded0e9`; publication/live-root workflow `35885661379` SUCCESS; root SHA-256 `744c326b3d4734f628f949c287fea2d75e909040ed8a07e09feae2a659f5bde6`. D074-D078 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D079 live at `b48a7f5d6ddc15d570d85d054ed222695eda6cec`; maintained source `eafaf40e83d723e577a8cb78469a95946c334edd`; publication/live-root workflow `35886961634` SUCCESS; root SHA-256 `f0b68464861d7cebcea78bf8c7b6b8d2155515af9480fed731c719009c702fcc`. D074-D079 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.

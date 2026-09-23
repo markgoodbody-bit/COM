@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D078 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D079 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -210,9 +210,9 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D078 is the current public door: maintained source `5ff27454bd5cfcd181e144ab05788ab693ded0e9`, published `gh-pages@3f937db5345d527f527f8189cb1dfadee737bc5c`, Site Preview `0.8.35`. Publication run `35885661379` completed SUCCESS; the custom-domain root matched the built D078 root at SHA-256 `744c326b3d4734f628f949c287fea2d75e909040ed8a07e09feae2a659f5bde6`. D075 preserves three primary human routes; D076 enlarges the visual anchor; D077 makes the title a large centred front-door statement; D078 turns the post-story entrance into a coherent illustrated-essay reading flow and folds the former #440/#442/#443 work into one published release. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D079 is the current public door: maintained source `eafaf40e83d723e577a8cb78469a95946c334edd`, published `gh-pages@b48a7f5d6ddc15d570d85d054ed222695eda6cec`, Site Preview `0.8.36`. Publication run `35886961634` completed SUCCESS; the custom-domain root matched the built D079 root at SHA-256 `f0b68464861d7cebcea78bf8c7b6b8d2155515af9480fed731c719009c702fcc`. D078 keeps the coherent illustrated-essay reading flow; D079 applies Mark's lighter-opening copy request without changing the three story paragraphs, two questions, D078 layout or D077 art/title geometry. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
-PSFH #440 + #442 + #443 were integrated together on top of D077 in PR #449 and published as D078. Their branches/history remain useful provenance; they are superseded as active candidates. Maintained CI now permanently includes the focused entrance-route regression and `journey.js` syntax check. No further first-contact churn is earned without a new visual/use observation or concrete defect.
+PSFH #440 + #442 + #443 were integrated in D078. Mark's later explicit lighter-opening request was merged via #448 and published as D079; #452 made its copy-preservation test checkout-independent and permanent in maintained CI. Maintained CI now checks entrance routes, opening-copy preservation and `journey.js` syntax. No further first-contact churn is earned without a new visual/use observation, direct Mark request or concrete defect.
 
 ## The Human Record
 
@@ -305,4 +305,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D078 is live at `gh-pages@3f937db5345d527f527f8189cb1dfadee737bc5c`, maintained source `5ff27454bd5cfcd181e144ab05788ab693ded0e9`; publication run `35885661379` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D079 is live at `gh-pages@b48a7f5d6ddc15d570d85d054ed222695eda6cec`, maintained source `eafaf40e83d723e577a8cb78469a95946c334edd`; publication run `35886961634` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
