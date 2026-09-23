@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D076 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D077 live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -208,4 +208,4 @@ Round 2 is **RETURNED / SYNTHESIZED / NOT VALIDATION**. Next: hostile-review and
 Beta4/prereg next gate: **OUTSIDE REVIEW THE PREREGISTRATION; DO NOT RUN THE PILOT YET**. TRACE #59 exact head `bf71e2b8431c23b0be79240c00c076721a016283`; ME #53 exact head `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. The preregistration on COM main includes the Codex governance repairs.
 
 
-TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D076 serves them live with the human-first entrance, three primary human routes and enlarged centred artwork at `gh-pages@0209cbb11d144dd1f62f7ebf8b99947798ff6e71`. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
+TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D077 serves them live with the human-first entrance, three primary human routes, enlarged centred artwork and a large centred title at `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
