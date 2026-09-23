@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.30",
+  "site_edition": "0.8.31",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -76,9 +76,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "1e46d047b0cf70d531d5e8a4152091f7c19dd767355b09e9a5b795f9ef5d6a03",
-    "change_history_input_html_sha256": "b7ffaa92aa81a98c3a4b9e11b1b476b773f1d8cf7f1887b3950fe03279bd9ecd",
-    "change_history_addendum_note": "D016 through D038 and D045-D073 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "99cae5e2d534cc7e782afa7917d2c0a5e538799e7d4609ce4cc9f1821c31ab54",
+    "change_history_input_html_sha256": "a4b88e5607612f9e3ce798c4b56754ccf2f62e126bd8b11ada878a556a7a1726",
+    "change_history_addendum_note": "D016 through D038 and D045-D074 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -121,6 +121,10 @@
       "scope": "Current same-domain aliases advance to TRACE v0.4.0 and Mechanical Ethics v0.8.0 released baselines; earlier snapshots remain immutable. Existing AI-training grants remain scoped to TRACE v0.3.0 and Mechanical Ethics v0.7.0. Release sync is not validation or demonstrated practical advantage."
     },
     "training_permission_input_sha256": "250bbfd7964208fdeb780925d45de0b86d4ff2b6d6000b86befac04a9c0ded14",
+    "human_first_d074": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/433",
+      "scope": "First-contact progressive disclosure: existing Camp Fire interpretation moved beside the artwork; one story continuation before branching; early route grid reduced; reader limits consolidated; machine routes moved to footer disclosure; long introduction collapsed by default. No framework/source/machine-payload/crawler/intake change. Reader benefit unmeasured."
+    },
     "html_source_text": [
       {
         "output": "read/start.html",
@@ -227,11 +231,11 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "8241f7d5dc924cae79e8615dd12775b8515a6e212aceafa68e6a705f87fe3de2",
+    "change_history_html_sha256": "5b8c87a4ff117b69dd92767e39d2892caeb7369de21a0dc0067da5bfe3d806ef",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "e46a8f71ccf19e667d268dd58fffd3907f2c8393601933d23f7379880d6dc7fe",
+      "stylesheet_sha256": "fcefa3f6077d917ed80d1dbae05b9b4669845c82ba1006b4fc7f4fc0ef384269",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },
