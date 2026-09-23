@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — morning beta-support refresh**
+Updated: **23 September 2026 — source betas opened**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,17 +82,18 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-COM #365 remains active. Draft PR #409 is integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`. Stacked draft PR #411 is prepared at `b246a9eb704ed93bf2782a4d201a1b970b7266c2` with the reader companion, review brief, executable finite illustrations and two reviewed architecture corrections.
+COM #365 remains active. The successor architecture/companion work has now produced two actual source-repo beta PRs: TRACE #56 at `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics #49 at `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`.
 
 ```text
 NEW PRIMITIVE = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
-BETA-SUPPORT PACKET = PREPARED
-FRAMEWORK INTEGRATION = PENDING
+TRACE v0.4.0-beta1 = DRAFT PR #56
+ME v0.8.0-beta1 = DRAFT PR #49
+CODEX / CC EXACT-SOURCE REVIEW = DISPATCHED
 EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
 ```
 
-Next: integrate/shrink #411 against the overnight Codex/CC corrections, then decide whether the packet is coherent enough for cold external-model review. Released TRACE/ME remain unchanged.
+Next: integrate/shrink the exact source betas against Codex/CC returns, then decide whether they are coherent enough for cold external-model review. Current red CI on the beta PRs is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
 
 ## 3. Current human gate — Hack-Nation 7
 
