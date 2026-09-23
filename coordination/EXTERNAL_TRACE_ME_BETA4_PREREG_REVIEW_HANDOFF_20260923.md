@@ -7,7 +7,7 @@ Exact source candidates:
 - Mechanical Ethics v0.8.0-beta4 — PR #53 — head `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
 
 Primary review object:
-- [Preregistration v0 at fixed COM revision 91dd306](https://github.com/markgoodbody-bit/COM/blob/91dd3068240bc436ae974d58bbcc2fe160a08726/coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md).
+- [Repaired preregistration v0 at fixed COM revision 3bcddd0](https://github.com/markgoodbody-bit/COM/blob/3bcddd00eb3a7bee9b4985b6264d83f9d8c393f6/coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md). This includes the pre-run methodology repairs merged in PR #426; the earlier 91dd306 snapshot is superseded for this review.
 
 Round-2 synthesis:
 - [Round-2 synthesis at fixed COM revision 91dd306](https://github.com/markgoodbody-bit/COM/blob/91dd3068240bc436ae974d58bbcc2fe160a08726/coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md).
@@ -25,7 +25,7 @@ Try to make the pilot produce a false win for TRACE. Check:
 2. Are naturalistic cases genuinely independent of TRACE vocabulary, or can case authors quietly build TRACE-shaped cases?
 3. Can the case-key authors manipulate which distinctions count as consequential?
 4. Can assessors infer which condition produced an answer from style/length even after labels are stripped?
-5. Are the 20% support, 10% failure and 50% burden thresholds arbitrary in a way that biases the result?
+5. Are the 20% aggregate support, 10% naturalistic support, below-10% aggregate failure and 150%-of-baseline token/character burden gates defensible, or do they bias the result?
 6. Can response length masquerade as analytical quality?
 7. Does prior TRACE exposure contaminate Condition A even in a fresh session?
 8. Can a negative result be reinterpreted away by changing the use class after the fact?
