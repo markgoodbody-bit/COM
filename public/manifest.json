@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.33",
+  "site_edition": "0.8.34",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -72,8 +72,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "847378fae9d75b06d1a80232ef7838eba36bc32dd11b35b11335a18b0c49c498",
-    "change_history_input_html_sha256": "ba051b8c9fe36d41a595fa45c3f6b3c1ff0036274bac44892bcd798291b4b7e4",
+    "change_history_sha256": "9b8ca331f4cdcffa6242f802d13556cc6c7d70d06ea406e341de0b350bc638bf",
+    "change_history_input_html_sha256": "5ee607de164d992a72e9e0fae83361819c2917375226c53b2759ea6be043d875",
     "change_history_addendum_note": "D016 through D038 and D045-D075 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
@@ -128,6 +128,10 @@
     "opening_art_d076": {
       "source_pr": "https://github.com/markgoodbody-bit/COM/pull/438",
       "scope": "Opening Camp Fire geometry enlarged and centred; complete artwork remains uncropped. Existing interpretation is centred beneath it. No content, framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured."
+    },
+    "opening_title_d077": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/444",
+      "scope": "Opening title enlarged and horizontally centred over the complete Camp Fire artwork on larger screens, with a centred reduced-scale mobile fallback. No content, framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured."
     }
   },
   "boundaries": [
