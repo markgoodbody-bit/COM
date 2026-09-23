@@ -18,6 +18,9 @@ test('five contextual rooms preserve canonical art and share one handoff grammar
     assert.ok(html.includes('/works/' + room.work + '/'), room.page);
     assert.ok(html.includes(record.institution), room.page);
     assert.ok(html.includes('href="#' + room.anchor + '"'), room.page);
+    const skips = [...html.matchAll(/<a class="skip"[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a>/g)];
+    assert.equal(skips.length, 1, room.page + ' must expose one first-action skip link');
+    assert.equal(skips[0][1], '#' + room.anchor, room.page);
     assert.ok(html.indexOf('class="skip"') < html.indexOf('class="room-stage'), room.page);
     assert.ok(html.indexOf('class="room-stage') < html.indexOf('class="room-credit"'), room.page);
     assert.ok(html.indexOf('class="room-credit"') < html.indexOf('class="room-heading"'), room.page);

@@ -76,6 +76,12 @@ function contextualPresentation(room, record, images, workHtml) {
 
 export function addArtRoom(html, room, record, images, workHtml = '') {
   if (html.includes('class="art-room')) throw Error('Art room already present');
+  // A reading-room page already carries its own skip-to-question link. Once an
+  // artwork entrance is added, keep one first-action bypass only: the art-room
+  // skip lands at the reading boundary and the question remains immediately
+  // reachable inside that reading. Explore itself has no duplicate to remove.
+  const genericReadingSkip = '<a class="skip" href="#question">Skip to the question</a>';
+  if (room.anchor === 'reading') html = html.replace(genericReadingSkip, '');
   // Controlled static templates only: retain attributes instead of replacing
   // the reading renderer's body style or any pre-existing body class.
   const bodies = html.match(/<body\b[^>]*>/g) ?? [], mains = html.match(/<main\b[^>]*>/g) ?? [];
