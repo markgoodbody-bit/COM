@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — beta2 external-review ready**
+Updated: **23 September 2026 — beta2 exact-source returns / reconciliation open**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-COM #365 remains the active non-canon successor lane. Frozen beta1 controls remain TRACE #56 and ME #49. The current external-review candidates are TRACE v0.4.0-beta2 PR #57 at `012509754aa2abdf1536604166f838449af6b509` and Mechanical Ethics v0.8.0-beta2 PR #50 at `733f304f4cce3af08398bcf7967168c1647fb1af`. Released baselines remain unchanged.
+COM #365 remains the active non-canon successor lane. The exact beta1 review targets remain TRACE `43a92cef427906829f1745595c69eccdf51d6ec2` and ME `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`; a Codex concurrency miss changed both branch histories, then restored their file trees byte-for-byte. Current beta2 heads after bounded exact-source repair are TRACE v0.4.0-beta2 PR #57 at `881b1d3248c8cca9887dfa7fa5047944b34c7437` and Mechanical Ethics v0.8.0-beta2 PR #50 at `18bfd49d516d64fb9e6e30601844750015b0af3b`. Released baselines remain unchanged.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -115,12 +115,12 @@ NEW TRACE PRIMITIVE = NOT EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
 
 SURVIVING WORK = ATTRIBUTED COMPRESSION / SALIENCE / WORKED TRANSFER
-TRACE v0.4.0-beta2 = READY FOR EXTERNAL AI REVIEW / NOT RELEASE
-ME v0.8.0-beta2 = READY FOR EXTERNAL AI REVIEW / NOT RELEASE
-BETA1 = FROZEN INTERNAL COMPARISON CONTROL
+TRACE v0.4.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED / NOT RELEASE
+ME v0.8.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED / NOT RELEASE
+BETA1 = EXACT TARGET COMMITS PRESERVED / BRANCH HISTORIES MOVED / FILE TREES RESTORED
 ```
 
-Codex and Claude Code materially corrected one another overnight. The current strongest lesson is not new semantics but sharper discrimination: realised/reported/inferred/projected change stay distinct; omission does not imply intentional withholding; later good may contribute to repair without erasing earlier loss; route operation, discoverability and a subject's knowledge must not collapse; headline claims must not outrun the run that produced them.
+Codex and Claude Code exact-source returns are now recorded. Bounded repairs removed a stale TRACE successor ceiling, credited Snyder on TRACE's supported-prospect side, prevented the released ME PDF builder from silently packaging beta source as v0.7, and separated reported hope, supported prospect, effective intervention and legitimate authority. Claude Code's remaining hostile-reader findings concern the positive/negative balance, unexplained fire metaphor, power asymmetry, harm-side visibility and one safety-sensitive passage; these remain review questions rather than silently applied wording. The current strongest lesson is sharper discrimination, not new semantics.
 
 No release, canon, baseline or broad external-model review follows automatically.
 
