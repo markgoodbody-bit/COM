@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.35",
+  "site_edition": "0.8.36",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -76,8 +76,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "2e0c3989a1a690a52b609e2d173b23d98fb8a2c43adf51d0dcfd9e36a85d025f",
-    "change_history_input_html_sha256": "bb83c2f3805ced1b2cb0a12628d07a3ecea5c6185007c18f3c4c1c5338af977f",
+    "change_history_sha256": "2d9d7ee68bfba09e49bf21c5630bb91be417fc3d9e4bb4addcfac33188b6c5c0",
+    "change_history_input_html_sha256": "226b42c329f8ea1f81d9f454ff0857683feb2e2e85f5a254cf8d66d7a2981806",
     "change_history_addendum_note": "D016 through D038 and D045-D075 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
@@ -140,6 +140,11 @@
     "human_essay_d078": {
       "source_pr": "https://github.com/markgoodbody-bit/COM/pull/449",
       "scope": "Combined illustrated-essay entrance: bounded reading column, optional alternate chooser, direct futures and early AI routes, Human Record moved to neighbours, duplicate copy removed, and route/journey checks promoted into maintained CI. D077 hero/title geometry preserved. No framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured."
+    },
+    "lighter_opening_d079": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/448",
+      "ci_pr": "https://github.com/markgoodbody-bit/COM/pull/452",
+      "scope": "Mark-requested lighter opening copy: neutral campfire caption, shorter composite-source line, concise Looking more closely bridge, and access example moved to reading resources. Three narrative paragraphs and two questions preserved by maintained CI regression. D078 layout and D077 hero/title geometry preserved. No framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured."
     },
     "html_source_text": [
       {
@@ -247,7 +252,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "438abd843abe78ef2826e5c063fcd92cc13b4584da5cbbc9cfd5ff353928651a",
+    "change_history_html_sha256": "d5d60e5def7fbe58ee63fc88696fa18aa0adde9b1f855702051b475e0c46adc5",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

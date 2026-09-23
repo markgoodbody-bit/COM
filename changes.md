@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.54 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
+
+### D079
+
+23 September 2026 — Let the opening speak more lightly.
+
+Mark explicitly asked for less defensive opening copy: remove “Why this is here”, avoid “us/our” in the painting caption, keep the composite-scene status without repeatedly defending it, and let general limits arrive later instead of interrupting the first encounter.
+
+The painting caption now reads: “A shared fire, two different positions. A place to begin together without needing to share the same view.” The three story paragraphs and two questions are unchanged. The source line is reduced to a short composite-scene label and link. The optional ME/TRACE bridge becomes “Looking more closely” with concise structural observations rather than repeated non-efficacy language. The separate website-access example moves from the opening story to the reading/resources area. The general practical-advantage ceiling and provenance/artist-intention boundaries remain elsewhere on the page.
+
+A copy-preservation regression now pins the retained narrative/questions and the lighter opening boundary, and is part of maintained CI. Source wording: [COM PR448](https://github.com/markgoodbody-bit/COM/pull/448). CI hardening: [COM PR452](https://github.com/markgoodbody-bit/COM/pull/452). D078 layout and D077 artwork/title geometry remain unchanged. No TRACE, Mechanical Ethics or Human Record source, machine payload, crawler rule, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.36. This is an editorial/presentation correction, not evidence of reader benefit.
 
 ### D078
 
