@@ -103,7 +103,7 @@ Round-1/2 review earned cuts, attribution and clearer boundaries rather than ont
 
 - head: `c0f8a94bb0aeec73e780c24d35c93372a306ee7d`;
 - hosted: `campfire-ci / 35875127444 SUCCESS`;
-- focused candidate tests: 25;
+- focused candidate tests: 27;
 - unresolved-state, restart, current-vs-history and blocked-receipt recovery regressions preserved;
 - real Alexa+ interoperability: not tested;
 - source candidate: green / freeze.
@@ -222,7 +222,7 @@ PSFH public guest intake = NONE
 - generic Nebius product — not earned;
 - BeforeBuild standalone — not earned;
 - THR record 5 — not earned;
-- TRACE/ME released-source patch or version promotion — not earned; COM #365 non-canon design remains active.
+- TRACE/ME released-source patch or version promotion — not earned; COM #365 preserves the review record and world/use route, with no active successor-design build.
 
 ## Next build condition
 
