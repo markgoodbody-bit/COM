@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — beta2 external-review ready**
+Updated: **23 September 2026 — beta2 exact-source returns / reconciliation open**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,19 +75,20 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 coordinates the active non-canon TRACE/ME successor lane. Beta1 remains frozen for internal comparison. Current external-review candidates are TRACE v0.4.0-beta2 PR #57 at `012509754aa2abdf1536604166f838449af6b509` and ME v0.8.0-beta2 PR #50 at `733f304f4cce3af08398bcf7967168c1647fb1af`.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. Exact beta1 review targets remain addressable, but a Codex concurrency miss changed both beta1 branch histories before restoring their file trees. Current beta2 heads after bounded repair are TRACE v0.4.0-beta2 PR #57 at `881b1d3248c8cca9887dfa7fa5047944b34c7437` and ME v0.8.0-beta2 PR #50 at `18bfd49d516d64fb9e6e30601844750015b0af3b`.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
 NEW PRIMITIVE / CONCEPT = NONE EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta2 = READY FOR EXTERNAL AI REVIEW
-ME v0.8.0-beta2 = READY FOR EXTERNAL AI REVIEW
-BETA1 = FROZEN INTERNAL COMPARISON CONTROL
-EXTERNAL MODEL REVIEW = USER-DISPATCH READY / NO REVIEWS INGESTED YET
+TRACE v0.4.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED
+ME v0.8.0-beta2 = EXACT-SOURCE REPAIR INTEGRATED / CURRENT HEAD REQUIRED
+BETA1 = EXACT TARGET COMMITS PRESERVED / BRANCH HISTORIES MOVED / FILE TREES RESTORED
+CODEX / CC REVIEW = RETURNED / RECONCILIATION OPEN
+EXTERNAL MODEL REVIEW = USER-DISPATCH READY / NO INDEPENDENT REVIEWS INGESTED YET
 ```
 
-Framework self-review is integrated into beta2: owner maps, one TRACE category cleanup, the human `reach/connect to hope` question, despair/non-erasure distinctions, bounded positive duties, and corrected beta-versus-released artifact surfaces. Codex/CC beta1 returns may still arrive and should be preserved as independent evidence rather than treated as blockers. Existing release-integrity/source-binding workflows fail because beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected baseline guard, not a beta PASS/FAIL result. Do not weaken those guards.
+Framework self-review is integrated into beta2: owner maps, one TRACE category cleanup, the human `reach/connect to hope` question, despair/non-erasure distinctions, bounded positive duties, and corrected beta-versus-released artifact surfaces. Codex added a stale-ceiling repair, Snyder attribution, a released-builder status guard, and evidence/authority separations. Claude Code's remaining human-reader findings are preserved for reconciliation rather than auto-written. Existing release-integrity/source-binding workflows fail because beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected baseline guard, not a beta PASS/FAIL result. Do not weaken those guards.
 
 ## Green / frozen candidate objects
 
@@ -128,7 +129,7 @@ Draft candidate frozen.
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 carries coordination history; TRACE #57 / ME #50 are the review-ready beta2 surfaces; beta1 remains frozen control. External handoff is on COM main. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
+COM #365 carries coordination history; TRACE #57 / ME #50 are the current repaired beta2 surfaces; the original beta1 target commits remain comparison controls despite moved branch histories. External handoff is on COM main and must use current exact heads. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
 
 ### PSFH Leave a Mark
 
