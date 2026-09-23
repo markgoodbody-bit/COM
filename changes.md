@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.53 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.54 · 23 September 2026
+
+### D078
+
+23 September 2026 — Turn the post-story entrance into one coherent illustrated essay.
+
+D074–D077 fixed the order, route balance, artwork scale and title, but the material below the opening still carried dashboard structure: two-column story/project layouts, a second fully visible five-choice chooser, repeated challenge/intake copy, and a neighbouring project described inside the main project block.
+
+The opening story and project explanation now share a bounded 42rem reading column with 1.25rem prose and 1.65 line-height. The three primary routes remain question/possibility, reading and art, but present sequentially. The second chooser becomes an optional native “Other ways in” disclosure; the work route can reach Futures directly; AI readers get a quiet early route to llms.txt. The Human Record moves to “The work and its neighbours”, and two duplicate passages are removed without changing their remaining boundary. The optional journey script now focuses the disclosure summary correctly, and the primary-route regression plus journey-script syntax check are part of maintained CI.
+
+This integrates the previously separate #440/#442/#443 candidates on top of D077 as one reviewed change. D077 artwork and title geometry remain untouched. No TRACE, Mechanical Ethics or Human Record source, machine payload, crawler rule, permission, intake, tracking or server behaviour changes here. Source integration: [COM PR449](https://github.com/markgoodbody-bit/COM/pull/449). Site Preview advances to 0.8.35. This is a presentation/navigation repair, not evidence of reader benefit.
 
 ### D077
 

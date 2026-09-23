@@ -250,6 +250,32 @@ body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.5rem, 2.8vw, 2.5r
 .project-parts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 3rem; border-top: 1px solid var(--border); padding-top: 1rem; }
 .project-parts p { margin: 0; font-size: 1rem; }
 @media (max-width: 48rem) { .project-spine { grid-template-columns: 1fr; gap: .75rem; margin-top: 1rem; } .project-parts { grid-template-columns: 1fr; gap: .75rem; } }
+/* Illustrated-essay reading flow. Artwork remains independently sized above.
+   Scope to this entrance so the reading rooms keep their existing layouts. */
+body:has(.project-spine) .opening-story,
+body:has(.project-spine) .project-spine {
+  width: min(calc(100% - 2.5rem), 42rem);
+  margin-inline: auto;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+body:has(.project-spine) .opening-story header { margin-bottom: 1.75rem; }
+body:has(.project-spine) .opening-story header h2 { max-width: none; }
+body:has(.project-spine) .opening-story .story-lead { font-size: 1.25em; }
+body:has(.project-spine) .project-spine { margin-block: 3rem; }
+body:has(.project-spine) .project-purpose p { margin-bottom: 1.25rem; }
+body:has(.project-spine) .project-routes {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-block: 2rem;
+  border-top: 1px solid var(--border);
+}
+body:has(.project-spine) .project-routes a { padding-block: .85rem; }
+body:has(.project-spine) .project-parts { display: block; padding-top: 1.5rem; }
+body:has(.project-spine) .project-parts > * { margin-block: 0 1.25rem; }
+body:has(.project-spine) .project-parts p { font-size: inherit; }
 
 /* D077: make the homepage title a deliberate opening statement.
    Keep the whole Homer image visible; centre the title over the image on larger screens,
