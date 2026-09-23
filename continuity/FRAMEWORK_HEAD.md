@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — external review round 1 integrated / beta3 open**
+Updated: **23 September 2026 — beta3 round-2 external review ready**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `6a9f48918925fd93d5ed7eb50b75cbe2f60bed21` and Mechanical Ethics v0.8.0-beta3 PR #52 at `0d5d2703adc29564fa5bfeb250df80884eed7362`. Released baselines remain unchanged.
+COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `5e50926bada398184c6f83a8c376a5ceea6e6832` and Mechanical Ethics v0.8.0-beta3 PR #52 at `cf8c64612a4e4d20cb1303ad0cab70dfd43d87d5`. Released baselines remain unchanged.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -278,3 +278,8 @@ DATED RECEIPTS = DETAIL
 GIT = HISTORY
 OMITTED FROM HEAD != ABSENT
 ```
+
+
+## Beta3 round-2 gate
+
+Beta3 is ready for a second outside-AI review round at exact TRACE head `5e50926bada398184c6f83a8c376a5ceea6e6832` and ME head `cf8c64612a4e4d20cb1303ad0cab70dfd43d87d5`. Codex's bounded beta3 consistency findings were integrated; Framework's final ME mirror audit found no material blocker. Claude Code's focused beta3 return has not yet been observed and is not a blocking dependency unless it later identifies a concrete material defect. Use `coordination/EXTERNAL_TRACE_ME_BETA3_REVIEW_HANDOFF_20260923.md`.
