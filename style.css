@@ -251,9 +251,41 @@ body:has(.project-spine) .hero-heading h1 { font-size: clamp(1.5rem, 2.8vw, 2.5r
 .project-parts p { margin: 0; font-size: 1rem; }
 @media (max-width: 48rem) { .project-spine { grid-template-columns: 1fr; gap: .75rem; margin-top: 1rem; } .project-parts { grid-template-columns: 1fr; gap: .75rem; } }
 
-/* Homepage title: slightly more legible without overtaking the Homer opening. */
-body:has(.project-spine) .hero-heading h1 {
-  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+/* D077: make the homepage title a deliberate opening statement.
+   Keep the whole Homer image visible; centre the title over the image on larger screens,
+   and keep a centred but smaller title below the image on narrow screens. */
+@media (min-width: 49rem) {
+  body:has(.project-spine) .hero-heading {
+    justify-self: stretch;
+    width: 100%;
+    margin: 0;
+    padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 3vw, 2.5rem) 0;
+    text-align: center;
+  }
+
+  body:has(.project-spine) .hero-heading h1 {
+    font-size: clamp(3.75rem, 7vw, 7.5rem);
+    line-height: .98;
+    letter-spacing: -.045em;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  body:has(.project-spine) .hero-heading {
+    justify-self: center;
+    width: 100%;
+    margin: .8rem 0 0;
+    padding-inline: 1rem;
+    text-align: center;
+  }
+
+  body:has(.project-spine) .hero-heading h1 {
+    font-size: clamp(2.4rem, 10vw, 4rem);
+    line-height: 1.02;
+    max-width: none;
+  }
 }
 
 /* D076: the opening image is the first visual encounter, not a thumbnail.
