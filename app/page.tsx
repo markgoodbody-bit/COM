@@ -26,7 +26,7 @@ export default function Home() {
             <span><a href={CAMP_FIRE.object_url}><cite>{CAMP_FIRE.title}</cite></a>, {CAMP_FIRE.date}, by <a href="#winslow-homer">{CAMP_FIRE.artist}</a>.</span>
             <span>{CAMP_FIRE.museum}. <a href={CAMP_FIRE.rights_url}>Public domain, Open Access</a>.</span>
           </figcaption>
-          <p className="art-key"><strong>Why this is here.</strong> {CAMP_FIRE.why_this_spoke_to_us}</p>
+          <p className="art-key">A shared fire, two different positions. A place to begin together without needing to share the same view.</p>
         </figure>
             <div className="hero-heading">
               <h1>Please Start From <em>Here</em></h1>
@@ -46,16 +46,15 @@ export default function Home() {
               <p><strong>What had changed by the time an inspection was offered?</strong></p>
               <p><strong>What could each household actually reach while the same wall was changing?</strong></p>
             </div>
-            <p className="story-source">This is a compressed introduction to a <strong>composite scene</strong> in Mechanical Ethics, not a documented tenant case. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the source and its fuller context</a>.</p>
+            <p className="story-source">A composite scene from <cite>Mechanical Ethics</cite>. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the fuller story</a>.</p>
           </div>
           <details className="story-bridge" id="story-bridge">
-            <summary>What do ME and TRACE notice in this scene?</summary>
-            <p><strong>Mechanical Ethics asks about the family, not just the file.</strong> The inspection arrives after they have found another tenancy. Closing the case does not establish that the disruption has been repaired.</p>
-            <p><strong>TRACE separates things a single ticket status can blur:</strong> acknowledgement from a route to someone able to act; the timing of an inspection from the timing of the family&apos;s move; and an administrative ending from remaining consequences.</p>
-            <p><strong>A point to investigate:</strong> while the family was still there, who could act on the room, and what evidence would show that a protective response had actually reached them? The scene supplies no measured deadline, tested intervention or proof that using either framework would have changed the outcome.</p>
-            <p>This is a reading of the composite scene, not evidence of practical advantage. <a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the book</a> or <a href="/resources/trace/TRACE-SPINE.md">inspect the structural language</a>.</p>
+            <summary>Looking more closely</summary>
+            <p>Mechanical Ethics follows what happens to the family while the case moves through the system.</p>
+            <p>TRACE distinguishes receiving an acknowledgement from reaching someone able to act. It separates the inspection&apos;s timing from the family&apos;s move, and the closing of the case from the consequences that remain.</p>
+            <p>While the family was still there, who could act on the room? What would show that help had actually reached them?</p>
+            <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read Mechanical Ethics</a> · <a href="/resources/trace/TRACE-SPINE.md">Explore TRACE</a></p>
           </details>
-          <p className="story-revision">A separate example: <a href="/explore/worked-revision.html">how a website-access account changed with new evidence</a>. This project-authored reconstruction is not an efficacy result.</p>
           <div className="journey-options">
             <a className="journey-primary" href="#project">Continue: what this project is trying to do</a>
           </div>
@@ -235,6 +234,7 @@ export default function Home() {
           </article>
         </div>
         <p><a href="https://pleasestartfromhere.com/resources/">All local reading files, diagrams and fixed editions</a>.</p>
+        <p>A separate example: <a href="/explore/worked-revision.html">how a website-access account changed with new evidence</a>. This project-authored reconstruction is not an efficacy result.</p>
         <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
         <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
         <article className="artist-source" id="winslow-homer" aria-labelledby="homer-heading">
