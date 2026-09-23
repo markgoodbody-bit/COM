@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
 
+### D084
+
+23 September 2026 — Keep one accessibility bypass in art-bearing reading rooms.
+
+The D081 artwork entrance and D082 shared reading-room shell each carried their own skip link. In the four art-bearing conceptual rooms this produced two first-action accessibility bypasses: “Go straight to the reading” followed immediately by “Skip to the question”. Both worked, but together they duplicated the same early navigation function and made the keyboard/screen-reader entrance noisier than the text-only rooms.
+
+The contextual-art wrapper now removes the generic reading-room skip-to-question link when it adds an artwork entrance. The artwork-specific bypass remains and lands at the reading boundary; the question remains the first major target inside that reading. Explore itself and the six text-only conceptual rooms keep their existing single skip links.
+
+The existing five-room contextual-art regression now requires exactly one skip link per contextual room and checks that it targets the room's intended bypass anchor. No artwork, reading-node text, graph edge, case example, Works content, TRACE, Mechanical Ethics, Human Record, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.41. This is an accessibility/navigation repair, not evidence of reader benefit.
+
 ### D083
 
 23 September 2026 — Make the appeal illustration read as one case family.
