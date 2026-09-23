@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.50 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.51 · 23 September 2026
+
+### D075
+
+23 September 2026 — Keep art as a primary human route.
+
+A collaborator review of D074 caught an overcorrection in the simplified continuation menu. D074 correctly made the first encounter sequential, but its four primary routes no longer offered art even though the opening deliberately uses art as a human way into the project.
+
+The primary continuation menu now has three distinct routes: explore a question or possibility, read the work, or spend time with the art. Challenge remains directly visible immediately below rather than disappearing into a technical or secondary menu. A focused regression pins those three destinations.
+
+No opening story, artwork, Reader autonomy and limits disclosure, TRACE/Mechanical Ethics/Human Record source, machine payload, crawler rule, permission, intake, tracking or server behaviour changes here. Source change: [COM PR435](https://github.com/markgoodbody-bit/COM/pull/435). Site Preview advances to 0.8.32. This is a small navigation correction, not evidence of reader benefit.
 
 ### D074
 

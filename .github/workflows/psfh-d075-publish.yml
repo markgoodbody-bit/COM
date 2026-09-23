@@ -1,0 +1,147 @@
+name: PSFH D075 publish three primary routes
+
+on:
+  push:
+    branches:
+      - framework/psfh-d075-three-routes-20260923
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - '.github/workflows/psfh-d075-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d075:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d075-three-routes-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D075 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.32'
+          m['updated']='2026-09-23'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          m['provenance']['change_history_addendum_note']=note.replace('D045-D074','D045-D075')
+          m['provenance']['human_routes_d075']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/435',
+            'scope':'Primary continuation routes reduced to three distinct human choices: question/possibility, reading, art. Challenge remains directly visible below the primary menu. No framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D075_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D075_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+      - name: Commit exact D075 manifest pins
+        run: |
+          git config user.name "PSFH D075 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D075 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D075: pin three-route release provenance"
+          git push origin HEAD:framework/psfh-d075-three-routes-20260923
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 04ff41a9c7dcd1eaf6b4c77b94d76ae6cbd56934
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D074
+        run: |
+          rm -rf /tmp/psfh-d075-publish
+          git worktree add -B gh-pages /tmp/psfh-d075-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d075-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d075-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d075-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d075-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d075-publish/
+          test "$(git -C /tmp/psfh-d075-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d075-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d075-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d075-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d075-publish/resources');"
+          git -C /tmp/psfh-d075-publish status --short
+      - name: Commit and publish D075
+        run: |
+          git -C /tmp/psfh-d075-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d075-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d075-publish add -A
+          if git -C /tmp/psfh-d075-publish diff --cached --quiet; then
+            echo "No D075 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d075-publish commit -m "Publish PSFH D075 three primary routes"
+          git -C /tmp/psfh-d075-publish push origin HEAD:gh-pages
+      - name: Verify D075 served root
+        run: |
+          expected="$(sha256sum out/index.html | awk '{print $1}')"
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/ -o /tmp/psfh-live-index.html; then
+              actual="$(sha256sum /tmp/psfh-live-index.html | awk '{print $1}')"
+              if [ "$actual" = "$expected" ]; then
+                ok=1
+                break
+              fi
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "Live root did not converge to D075 built bytes" >&2
+            exit 1
+          }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+          grep -F 'Keep art as a primary human route.' /tmp/psfh-live-changes.html
+          grep -F 'Explore a question or possibility' /tmp/psfh-live-index.html
+          grep -F 'Read the work' /tmp/psfh-live-index.html
+          grep -F 'Spend time with the art' /tmp/psfh-live-index.html
+          echo "D075 live root SHA-256: $expected"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
