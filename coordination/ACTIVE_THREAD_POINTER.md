@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — beta1 review / beta2 self-review split**
+Updated: **23 September 2026 — beta2 external-review ready**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,19 +82,20 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-COM #365 remains active. Exact beta1 review targets are frozen at TRACE #56 `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics #49 `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`. Framework self-review is isolated in stacked beta2-work PRs: TRACE #57 and ME #50.
+COM #365 remains active. Beta1 controls stay frozen at TRACE #56 and ME #49. Review-ready beta2 candidates are TRACE #57 `012509754aa2abdf1536604166f838449af6b509` and ME #50 `733f304f4cce3af08398bcf7967168c1647fb1af`.
 
 ```text
 NEW PRIMITIVE = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta1 = DRAFT PR #56
-ME v0.8.0-beta1 = DRAFT PR #49
+TRACE v0.4.0-beta2 = PR #57 / EXTERNAL REVIEW READY
+ME v0.8.0-beta2 = PR #50 / EXTERNAL REVIEW READY
+BETA1 = FROZEN INTERNAL CONTROL
 CODEX / CC EXACT-SOURCE REVIEW = DISPATCHED / RETURNS PENDING
 FRAMEWORK BETA2-WORK = STACKED / DO NOT MERGE INTO BETA1 YET
 EXTERNAL REVIEW HANDOFF = PREPARED / NOT DISPATCHED
 ```
 
-Next: compare Codex/CC beta1 returns against Framework's independent beta2-work deltas, then integrate one coherent beta2 candidate. Do not silently merge the lanes before that comparison. Current red CI on beta1 is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green. External review prompt: `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`.
+Next: collect independent external AI reviews against beta2 using `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`, while preserving any later Codex/CC beta1 returns as independent comparison evidence. Current red CI on beta2 is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
 
 ## 3. Current human gate — Hack-Nation 7
 
