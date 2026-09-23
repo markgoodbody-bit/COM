@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — morning beta-support refresh**
+Updated: **23 September 2026 — source betas opened**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,17 +75,18 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 / draft PR #409 is the active non-canon TRACE/ME successor lane at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`. Codex stacked draft PR #411 at `b246a9eb704ed93bf2782a4d201a1b970b7266c2` with four bounded beta-support files: reviewed architecture corrections, a reader companion, editorial review brief, and dependency-free finite illustrations.
+COM #365 coordinates the active non-canon TRACE/ME successor lane. The architecture/companion work has produced concrete source betas: TRACE draft PR #56 at `43a92cef427906829f1745595c69eccdf51d6ec2` and Mechanical Ethics draft PR #49 at `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
 NEW PRIMITIVE / CONCEPT = NONE EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
-BETA SUPPORT = PREPARED / FRAMEWORK INTEGRATION PENDING
+TRACE v0.4.0-beta1 = OPEN / INTERNAL REVIEW PENDING
+ME v0.8.0-beta1 = OPEN / INTERNAL REVIEW PENDING
 EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
 ```
 
-Overnight reviewer corrections must be integrated before broad review: do not infer permanence from harm history, do not confuse resilience with recovery, do not promote technical labels beyond the evidence, and do not let headline claims outrun the run. This remains non-source design, not a general build queue.
+Codex/CC exact-source reviews are dispatched. Existing release-integrity/source-binding workflows fail on these draft PRs because the beta files intentionally differ from released v0.3.0/v0.7.0; that is an expected baseline guard, not a beta PASS/FAIL result. Do not weaken those guards. This remains a bounded beta lane, not a general build queue.
 
 ## Green / frozen candidate objects
 
@@ -126,7 +127,7 @@ Draft candidate frozen.
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 / draft PR #409 carries the architecture; stacked draft PR #411 carries the current beta-support packet. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. TRACE v0.3.0 and ME v0.7.0 remain unchanged.
+COM #365 carries coordination history; TRACE PR #56 and ME PR #49 carry the actual beta sources. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.3.0 and ME v0.7.0 remain unchanged.
 
 ### PSFH Leave a Mark
 
