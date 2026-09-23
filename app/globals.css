@@ -276,3 +276,37 @@ body:has(.project-spine) .project-routes a { padding-block: .85rem; }
 body:has(.project-spine) .project-parts { display: block; padding-top: 1.5rem; }
 body:has(.project-spine) .project-parts > * { margin-block: 0 1.25rem; }
 body:has(.project-spine) .project-parts p { font-size: inherit; }
+
+/* Deeper readings: the same quiet essay measure, without a second panel. */
+body.reading-room > main { width: 100%; margin: 0; }
+body.reading-room .context-window {
+  width: min(calc(100% - 2.5rem), 42rem);
+  margin: 3rem auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+body.reading-room .context-window header { margin-bottom: 2.5rem; }
+body.reading-room .context-window h1 { font-size: 2.75rem; }
+body.reading-room .context-window h2 { font-size: 2rem; margin-top: 2.5rem; }
+body.reading-room .context-window h3 { font-size: 1.5rem; }
+body.reading-room .context-window details { margin-block: 1.5rem; }
+body.reading-room > footer { width: min(calc(100% - 2.5rem), 42rem); padding-inline: 0; }
+/* Keep the whole frame. Natural aspect ratio avoids a viewport-tall blank stage. */
+.contextual-room .art-room { background: var(--background); color: var(--foreground); }
+.contextual-room .art-room a, .contextual-room .art-room a:visited { color: inherit; }
+.contextual-room .art-room a:focus-visible { outline-color: var(--foreground); }
+.contextual-room .room-stage { width: min(calc(100% - 2rem), 76rem); margin-inline: auto; }
+.contextual-room .room-image img { width: 100%; height: auto; max-height: 85svh; object-fit: contain; }
+.contextual-room .room-credit, .contextual-room .room-nav {
+  width: min(calc(100% - 2.5rem), 42rem);
+  margin-inline: auto;
+  padding: 1rem 0;
+  border: 0;
+}
+.contextual-room .room-credit { color: var(--muted); }
+.contextual-room .room-credit p { margin-bottom: .5rem; }
+.contextual-room .room-credit summary { cursor: pointer; padding-block: .5rem; }
+@media print { .contextual-room .room-image img { max-height: 24cm; } }

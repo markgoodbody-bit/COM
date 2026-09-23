@@ -1,0 +1,44 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { ROOMS } from './contextual-art.mjs';
+import { ENABLED_ROOMS } from './change-room.mjs';
+
+const escape = s => s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;');
+
+test('all ten readings retain their accounts, questions, source links and one title', async () => {
+  for (const id of ENABLED_ROOMS) {
+    const node = JSON.parse(await readFile(`public/explore/nodes/${id}.json`));
+    const html = await readFile(`out/explore/nodes/${id}.html`, 'utf8');
+    assert.match(html, /class="reading-room/);
+    assert.equal((html.match(/<h1\b/g) || []).length, 1);
+    for (const key of ['short', 'detail', 'perspective', 'challenge', 'question', 'boundary']) {
+      assert.ok(html.includes(escape(node[key])), `${id}: ${key}`);
+    }
+    assert.ok(html.includes(`href="${id}.md"`));
+    assert.ok(html.includes(`href="${id}.json"`));
+    assert.ok(html.indexOf('Sources and other formats') < html.indexOf('>JSON source</a>'));
+    for (const edge of node.next) assert.ok(html.includes(`href="${edge.target}.html"`));
+  }
+});
+
+test('five art entrances retain image metadata and rights without a duplicate title', async () => {
+  assert.equal(ROOMS.length, 5);
+  for (const room of ROOMS) {
+    const html = await readFile(`out/${room.page}`, 'utf8');
+    const record = JSON.parse(await readFile(`public/art/${room.record}.json`));
+    assert.equal((html.match(/<img\b/g) || []).length, room.mode === 'views' ? 2 : 1);
+    assert.ok(html.includes(`href="/works/${room.work}/"`));
+    assert.ok(html.includes(`href="#${room.anchor}"`));
+    assert.doesNotMatch(html, /class="room-heading"/);
+    assert.ok(html.indexOf('<figure>') < html.indexOf('class="room-nav"'));
+    assert.match(html, /<details><summary>About this placement<\/summary>/);
+    const rights = typeof record.rights === 'string' ? record.rights : (record.rights?.designation ?? record.rights?.label);
+    if (rights) assert.ok(html.includes(escape(rights)), room.key + ' rights');
+    for (const image of html.matchAll(/<img\b[^>]+>/g)) {
+      assert.match(image[0], /width="\d+"/);
+      assert.match(image[0], /height="\d+"/);
+      assert.match(image[0], /alt="[^"]+"/);
+    }
+  }
+});

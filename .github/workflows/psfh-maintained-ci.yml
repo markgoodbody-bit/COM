@@ -31,7 +31,7 @@ jobs:
       - name: Build public site
         run: npm run build
       - name: Resource, currentness and entrance regressions
-        run: node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs
+        run: node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-deep-reading.mjs
       - name: Optional journey script syntax
         run: node --check public/journey.js
       - name: Resource reassembly and source-view roundtrip

@@ -70,7 +70,7 @@ function contextualPresentation(room, record, images, workHtml) {
     stageClass:paired ? 'room-stage room-stage-pair' : 'room-stage',
     // Auto-fit preserves Lewis's canonical two-view presentation on wide screens
     // and stacks the two independent museum photographs on narrow ones.
-    stageStyle:paired ? 'display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,28rem),1fr));gap:1px;align-items:start' : '',
+    stageStyle:paired ? 'display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,28rem),1fr));gap:1.5rem;align-items:start' : '',
     credit,
   };
 }
@@ -88,9 +88,8 @@ export function addArtRoom(html, room, record, images, workHtml = '') {
     ? body.replace(classes[0][0], ' class=' + classes[0][1] + classes[0][2] + ' contextual-room' + classes[0][1])
     : body.replace(/>$/, ' class="contextual-room">');
   const presentation = room.mode === 'legacy' ? legacyPresentation(room, record, images) : contextualPresentation(room, record, images, workHtml);
-  const mapAnchor = room.key === 'atkins' ? '#reading-map' : '/explore/#reading-map';
   const stageStyle = presentation.stageStyle ? ` style="${presentation.stageStyle}"` : '';
-  const entrance = `<a class="skip" href="#${room.anchor}">${room.bypass}</a><section class="art-room art-room-${room.key}" aria-label="${escape(room.title)} entrance"><div class="${presentation.stageClass}"${stageStyle}>${presentation.stage}</div><nav class="room-nav" aria-label="Bypass the artwork"><a href="#${room.anchor}">${room.bypass}</a><a href="/">Back to the opening</a></nav><div class="room-heading"><p>${escape(room.title)}</p><a href="#${room.anchor}">${room.key === 'atkins' ? 'Choose a reading' : 'Read the small account'} <span aria-hidden="true">↓</span></a></div><div class="room-credit"><p>${escape(presentation.credit)} <a href="/works/${room.work}/">About the work, sources and viewing copies</a>.</p><p>This placement is our choice, not the artist's argument or an endorsement of this project. <a href="${mapAnchor}">Skip to the map</a>.</p></div></section>`;
+  const entrance = `<a class="skip" href="#${room.anchor}">${room.bypass}</a><section class="art-room art-room-${room.key}" aria-label="${escape(room.title)} entrance"><div class="${presentation.stageClass}"${stageStyle}>${presentation.stage}</div><div class="room-credit"><p>${escape(presentation.credit)} <a href="/works/${room.work}/">About the artwork</a>.</p><details><summary>About this placement</summary><p>The artwork accompanies this reading as an editorial choice. Its placement does not attribute the reading's argument to the artist or imply endorsement.</p></details></div><nav class="room-nav" aria-label="Reading and opening"><a href="#${room.anchor}">${room.bypass}</a><a href="/">Back to the opening</a></nav></section>`;
   let result = html.replace(body, wrappedBody + entrance)
     .replace(main, main.replace(/>$/, ' id="reading">'));
   if (room.key === 'atkins') result = result.replace('<nav aria-label="Optional routes"', '<nav id="reading-map" aria-label="Optional routes"');
