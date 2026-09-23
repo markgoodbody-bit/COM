@@ -30,8 +30,8 @@ jobs:
           python -m pip install pypdf
       - name: Build public site
         run: npm run build
-      - name: Resource, currentness and entrance-route regressions
-        run: node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs
+      - name: Resource, currentness and entrance regressions
+        run: node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs
       - name: Optional journey script syntax
         run: node --check public/journey.js
       - name: Resource reassembly and source-view roundtrip
