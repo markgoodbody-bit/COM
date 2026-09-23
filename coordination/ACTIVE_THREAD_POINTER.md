@@ -1,3 +1,9 @@
+## Release currentness correction — 23 September 2026, 14:10 UTC
+
+This supersedes the pre-release TRACE/ME status statements below; those beta identities remain review history, not current released baselines. Live GitHub release receipts identify **TRACE v0.4.0** at `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and **Mechanical Ethics v0.8.0** at `e2ef746e931161cb70ac46a4eaa122442134e86b`, citing explicit human release authority. Source: [TRACE release](https://github.com/markgoodbody-bit/TRACE/releases/tag/v0.4.0), [ME release](https://github.com/markgoodbody-bit/mechanical-ethics/releases/tag/v0.8.0). Both remain NOT VALIDATED; the pilot remains unrun and not authorized by publication. Prior releases and the v0.3 technical donor remain preserved; training permissions are not automatically expanded.
+
+PSFH D073 source sync PR #429 is merged to its maintained-source branch, not COM main. Publication run `35872216595` was still verifying the live site at this observation; do not infer served-byte identity from the source merge. Reacquire the run and served files before claiming publication complete.
+
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
