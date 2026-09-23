@@ -1,0 +1,84 @@
+name: PSFH D073 one-shot publish
+
+on:
+  push:
+    branches:
+      - framework/psfh-d073-publish-20260923
+    paths:
+      - '.github/workflows/psfh-d073-one-shot-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d073:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d073-publish-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Rebuild and recheck public output
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: ad320e756f42e2db2ffc6e59154bfd39b6b5df97
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over current publication
+        run: |
+          rm -rf /tmp/psfh-publish
+          git worktree add -B gh-pages /tmp/psfh-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-publish hash-object README.md)"
+          rsync -a --delete             --exclude='.git'             --exclude='CNAME'             --exclude='.nojekyll'             --exclude='.gitattributes'             --exclude='/README.md'             out/ /tmp/psfh-publish/
+          test "$(git -C /tmp/psfh-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-publish/resources');"
+          git -C /tmp/psfh-publish status --short
+      - name: Commit and publish D073
+        run: |
+          git -C /tmp/psfh-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-publish add -A
+          if git -C /tmp/psfh-publish diff --cached --quiet; then
+            echo "No publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-publish commit -m "Publish PSFH D073 TRACE v0.4.0 / ME v0.8.0 release sync"
+          git -C /tmp/psfh-publish push origin HEAD:gh-pages
+      - name: Verify D073 reached the live Door
+        env:
+          PSFH_VERIFY_ATTEMPTS: 18
+          PSFH_VERIFY_DELAY_MS: 5000
+        run: node scripts/verify-live-d070.mjs out/resources/inventory.json
+
+# One-shot D073 publisher.
+# SOURCE_CI_GREEN != PUBLICATION
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
