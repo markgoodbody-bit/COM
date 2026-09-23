@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import unquote, urlsplit
 
 HERE = Path(__file__).resolve().parent
-INPUT_SHA = '250bbfd7964208fdeb780925d45de0b86d4ff2b6d6000b86befac04a9c0ded14'
+INPUT_SHA = '0d0a7d53957bbd1b59b55231f18df01a95735d309ecbc19d96eec6a73f6f3861'
 BASE = 'https://pleasestartfromhere.com'
 
 
