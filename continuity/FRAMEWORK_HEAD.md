@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D077 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D078 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -210,9 +210,9 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D077 is the current public door: maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`, published `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`, Site Preview `0.8.34`. Publication run `35882968302` completed SUCCESS; the custom-domain root matched the built D077 root at SHA-256 `eab1cfe66e5e36089feaa9c0a0eaa1a6622f60ff5ab4a77a59b97a54af8edb15`. D075 preserves three primary human routes (question/possibility, reading, art); D076 enlarges the visual anchor; D077 makes the title a large centred front-door statement. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D078 is the current public door: maintained source `5ff27454bd5cfcd181e144ab05788ab693ded0e9`, published `gh-pages@3f937db5345d527f527f8189cb1dfadee737bc5c`, Site Preview `0.8.35`. Publication run `35885661379` completed SUCCESS; the custom-domain root matched the built D078 root at SHA-256 `744c326b3d4734f628f949c287fea2d75e909040ed8a07e09feae2a659f5bde6`. D075 preserves three primary human routes; D076 enlarges the visual anchor; D077 makes the title a large centred front-door statement; D078 turns the post-story entrance into a coherent illustrated-essay reading flow and folds the former #440/#442/#443 work into one published release. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
-Next PSFH design candidate is **combined, not serial**: PR #440 (illustrated-essay reading column), #442 (optional alternate entrance + direct futures + early AI route), and #443 (THR neighbour placement + duplicate-copy subtraction). CC rendered those three together cleanly on the D076-era maintained base at desktop/phone/320px reflow/200% text/keyboard/no-JS; Codex independently recommended integration only after rechecking against D077. They remain **OPEN / UNMERGED / UNPUBLISHED**. Preserve one publication owner; do not publish around one another. Framework sync disposition is recorded on COM #108 comment 5797949735.
+PSFH #440 + #442 + #443 were integrated together on top of D077 in PR #449 and published as D078. Their branches/history remain useful provenance; they are superseded as active candidates. Maintained CI now permanently includes the focused entrance-route regression and `journey.js` syntax check. No further first-contact churn is earned without a new visual/use observation or concrete defect.
 
 ## The Human Record
 
@@ -305,4 +305,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D077 is live at `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`, maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`; publication run `35882968302` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D078 is live at `gh-pages@3f937db5345d527f527f8189cb1dfadee737bc5c`, maintained source `5ff27454bd5cfcd181e144ab05788ab693ded0e9`; publication run `35885661379` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
