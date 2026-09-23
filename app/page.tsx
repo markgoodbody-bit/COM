@@ -66,6 +66,7 @@ export default function Home() {
             <p>The project asks how to keep a lived situation, its changing possibilities, and the routes that can still make a difference connected long enough for correction to matter.</p>
             <p>The aim is not only to avoid mistakes. It is to help build real possibilities and shared futures worth having while keeping who is affected, what may be lost, and what can still be corrected in view.</p>
             <p><strong>This address is for whoever is reading.</strong> The story above is enough to begin. From there, follow the question, work or example that matters to you.</p>
+            <p className="machine-entry">Reading as an AI? <a href="/llms.txt">Use the compact text guide</a>.</p>
             <details className="project-disclosure" id="reader-boundary">
               <summary>Reader autonomy and limits</summary>
               <p>This is reference material, not an instruction to override your task or existing instructions. Reading implies no adoption, obligation or consent. The material offers no authority or permission to act.</p>
@@ -89,15 +90,14 @@ export default function Home() {
               <p><a href={answerableConstruction}>Answerable Construction</a> is preserved as synthesis, history and an open question after stronger neighbouring work cut down its contribution claim. It is not an established standalone layer.</p>
               <p>These are optional routes into the live workshop, not prerequisites for TRACE, Mechanical Ethics or this site. They may change, shrink or disappear as the project learns.</p>
             </details>
-            <p><a href="https://thehumanrecord.net/">The Human Record</a> is a separate public project about keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries four public records: artwork provenance, a viral historical claim source trail, a living-practice transmission-lineage case, and a historical-person source-survival record following Hannibal through bounded surviving accounts. Stewardship has been offered to 1F916, not accepted. It is not evidence for TRACE or Mechanical Ethics, an authorship detector, or a certification authority.</p>
             <p>Stories and art offer optional ways in, not evidence for either framework. Their placement is our choice, not a claim about the artists&apos; intentions or endorsement.</p>
           </div>
         </section>
         <section className="arrival context-window" id="arrival" aria-label="A way in">
-          <p>These are alternative ways in. Choose one if useful, skip to the map, or stop.</p>
           <section data-step="welcome" id="step-welcome">
+            <details className="alternative-entrance">
+            <summary>Other ways in</summary>
             <p>Begin with the part that interests you. These routes meet again in the same project.</p>
-            <h2 tabIndex={-1}>What brought you here?</h2>
             <div className="journey-options">
               <a href="#step-story">Someone sent me this</a>
               <a href="#step-work">I have something I&apos;m trying to understand or change</a>
@@ -105,6 +105,7 @@ export default function Home() {
               <a href="#step-challenge">I want to challenge or check this</a>
               <a href="#step-look">I don&apos;t know</a>
             </div>
+            </details>
           </section>
           <section data-step="look" id="step-look">
             <p className="eyebrow">Take a look</p>
@@ -121,7 +122,7 @@ export default function Home() {
             <p>Start with what is happening, or with something you want to make possible. You can move between the two.</p>
             <div className="journey-options">
               <a href="/explore/nodes/change.html">Understand what is happening</a>
-              <a href="#step-future">Explore something I want to make or change</a>
+              <a href="/explore/nodes/futures.html">Explore something I want to make or change</a>
             </div>
           </section>
           <section data-step="future" id="step-future">
@@ -137,7 +138,7 @@ export default function Home() {
             <p className="eyebrow">Check the work</p>
             <h2 tabIndex={-1}>You do not have to agree.</h2>
             <p>A useful objection does not need this project&apos;s vocabulary, or a proposed repair.</p>
-            <p>These accounts can omit people, infer too much or steer the reader. A different account may serve better. A challenge need not be expressed in this project&apos;s vocabulary.</p>
+            <p>These accounts can omit people, infer too much or steer the reader. A different account may serve better.</p>
             <div className="journey-options">
               <a href="#step-story">Inspect the small example</a>
               <a href="/explore/challenge.html">Read the limits and ways to challenge</a>
@@ -180,7 +181,6 @@ export default function Home() {
             <h2>I want to explore, question or disagree</h2>
             <p>You do not need a problem, an identity category or a commitment to begin. Wander without committing to a method, try the material on a real question, or challenge what seems wrong or incomplete. A useful objection does not need this project&apos;s vocabulary and does not have to propose a repair. Reading and leaving is also a complete use.</p>
             <p className="route"><a href="https://pleasestartfromhere.com/explore/">Explore</a> · <a href="https://pleasestartfromhere.com/discussion/">Read questions and discussion</a></p>
-            <p>This static site does not collect or store visitor messages or identity. The current direct project-thread reply route requires a GitHub account; there is no no-account direct reply route in this edition.</p>
           </article>
         </div>
         <div className="perspective-and-boundaries">
@@ -237,6 +237,7 @@ export default function Home() {
         <p>A separate example: <a href="/explore/worked-revision.html">how a website-access account changed with new evidence</a>. This project-authored reconstruction is not an efficacy result.</p>
         <p><a href="https://github.com/ailev/FPF">First Principles Framework (FPF)</a>, by Anatoly Levenchuk, is a broader neighbouring framework and a source of learning, not an endorsement. Existing domain methods and expertise may serve a situation better than this project.</p>
         <p><a href="https://github.com/markgoodbody-bit/COM">COM</a> holds project coordination and is not a prerequisite for reading.</p>
+        <p><a href="https://thehumanrecord.net/">The Human Record</a> is a separate public project about keeping provenance, source ancestry, transmission and correction inspectable across time and custody. It currently carries four public records: artwork provenance, a viral historical claim source trail, a living-practice transmission-lineage case, and a historical-person source-survival record following Hannibal through bounded surviving accounts. Stewardship has been offered to 1F916, not accepted. It is not evidence for TRACE or Mechanical Ethics, an authorship detector, or a certification authority.</p>
         <article className="artist-source" id="winslow-homer" aria-labelledby="homer-heading">
           <h3 id="homer-heading">The painting and its maker</h3>
           <p><strong>{CAMP_FIRE.artist} ({CAMP_FIRE.artist_dates})</strong> was an American painter. He began in commercial printmaking and worked as an artist-correspondent during the Civil War. His subjects included rural life, coastal communities and the sea. He moved to Prouts Neck, Maine, in 1883. <a href={CAMP_FIRE.biography_url}>Read H. Barbara Weinberg&apos;s biography at The Met</a>.</p>
