@@ -257,7 +257,7 @@ body:has(.project-spine) .project-spine {
   width: min(calc(100% - 2.5rem), 42rem);
   margin-inline: auto;
   display: block;
-  font-size: clamp(1.125rem, 1rem + .3vw, 1.25rem);
+  font-size: 1.25rem;
   line-height: 1.65;
 }
 body:has(.project-spine) .opening-story header { margin-bottom: 1.75rem; }
