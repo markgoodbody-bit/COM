@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — successor owner-subtraction integration**
+Updated: **23 September 2026 — morning beta-support refresh**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -75,16 +75,17 @@ Current repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIF
 
 ## Active non-source design
 
-COM #365 / draft PR #409 is an explicitly directed, non-canon TRACE/ME successor design lane. Both exact-source/owner-subtraction reviews are returned and integrated at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`.
+COM #365 / draft PR #409 is the active non-canon TRACE/ME successor lane at `2749e3410eb3ede6ab8d42db3c9f369126c68dd1`. Codex stacked draft PR #411 at `b246a9eb704ed93bf2782a4d201a1b970b7266c2` with four bounded beta-support files: reviewed architecture corrections, a reader companion, editorial review brief, and dependency-free finite illustrations.
 
 ```text
 RELEASED TRACE / ME = UNCHANGED
 NEW PRIMITIVE / CONCEPT = NONE EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
-NEXT = SMALLEST BETA REVIEW CANDIDATES, NOT SOURCE PROMOTION
+BETA SUPPORT = PREPARED / FRAMEWORK INTEGRATION PENDING
+EXTERNAL MODEL REVIEW = NOT YET DISPATCHED
 ```
 
-This does not reopen a general build queue. Broad external-model review, release, canon and baseline promotion remain separately gated.
+Overnight reviewer corrections must be integrated before broad review: do not infer permanence from harm history, do not confuse resilience with recovery, do not promote technical labels beyond the evidence, and do not let headline claims outrun the run. This remains non-source design, not a general build queue.
 
 ## Green / frozen candidate objects
 
@@ -125,7 +126,7 @@ Draft candidate frozen.
 
 ### TRACE / Mechanical Ethics successor
 
-COM #365 / draft PR #409 now carries the bounded design state. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. TRACE v0.3.0 and ME v0.7.0 remain unchanged.
+COM #365 / draft PR #409 carries the architecture; stacked draft PR #411 carries the current beta-support packet. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. TRACE v0.3.0 and ME v0.7.0 remain unchanged.
 
 ### PSFH Leave a Mark
 
@@ -137,7 +138,7 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 
 ### Hack-Nation 7
 
-Last verified owner check: **19 September**. It listed Batch 6 closing **26 September**. Current route availability requires a fresh owner-source check before action.
+Owner source reverified **23 September**: Batch 6 still closes **26 September 2026**; Global AI Hackathon 7 is listed for **3–4 October 2026**.
 
 - answer bank ready;
 - no engineering prerequisite;
