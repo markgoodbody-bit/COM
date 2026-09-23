@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.39",
+  "site_edition": "0.8.40",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -72,9 +72,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "de06045af5405b7119b691bda1fe51534d1b4360d47ed442f259edbd099a73e8",
-    "change_history_input_html_sha256": "bf38092d7fe99ac46c1c701956078b5b4762ece17bf88b345ade8478eb946890",
-    "change_history_addendum_note": "D016 through D038 and D045-D082 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "c93f80aacece6ab89f7795b6a285132ec0c5ec2b0724ed51b90b05bccb84e79d",
+    "change_history_input_html_sha256": "ebca782e6c79ad811454ed3523dde642c183e6f72045134cbba9bb6b20540640",
+    "change_history_addendum_note": "D016 through D038 and D045-D083 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -154,6 +154,10 @@
     "reading_room_shell_d082": {
       "basis": "c3feb58a4020e3a4760292ab8872af90759ded0f",
       "scope": "All ten conceptual reading rooms use one semantic/shared-CSS shell with no generator-level inline presentation. Six text-only node rooms remain text-only; four art-bearing node rooms retain the D081 contextual art entrance. Node text, raw sources, source pointers and authored graph edges are unchanged. Current-state ten-room regression is bound into maintained CI. Reader benefit unmeasured."
+    },
+    "appeal_case_family_d083": {
+      "basis": "1cd7ef165e15dbb27cc3f8f88832175baf8e11dc",
+      "scope": "Five existing appeal-example HTML views use one shared site stylesheet and case-family wayfinding. Stipulated facts, lenses, unknowns, challenge text, Markdown/JSON sources and cross-routes are unchanged. The pages remain optional and text-only. Current-state regression is bound into maintained CI. Reader benefit and example correctness remain unmeasured."
     }
   },
   "boundaries": [
