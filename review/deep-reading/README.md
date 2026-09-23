@@ -71,3 +71,20 @@ still outstanding.
   is20px, all ten questions exist and no horizontal overflow was observed.
   Vermeer computed max-width is915px and object-fit remains contain.
 - FW's parallel PR456 owns Works presentation. No Works file changed here.
+
+## Integration and supporting-page navigation
+
+Merged maintained source 237c47cb (including FW's Works pass) into this
+candidate, preserving both Works and deep-reading CI suites. The earlier
+D079 homepage hash is historical: the upstream edition update changes it.
+
+Eight support pages (five appeal pages, sources, challenge, worked revision)
+now have visible Opening/Explore questions links and 42rem/20px presentation.
+Their complete main elements remain byte-for-byte equal to source. The
+transform is limited to these eight paths and rejects unexpected body shapes.
+
+Combined local Node checks:22 pass. Link check:39 pages,698 references,
+90 fragments, zero problems. Appeal case sampled at390px:20px body and no
+horizontal overflow. The screenshot also exposes a remaining editorial issue:
+the appeal case leads with status and raw provenance before the story. This
+navigation patch does not pretend to resolve that reading-order problem.

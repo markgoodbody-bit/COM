@@ -3,8 +3,23 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { ROOMS } from './contextual-art.mjs';
 import { ENABLED_ROOMS } from './change-room.mjs';
+import { SUPPORT_READINGS, addReadingNavigation } from './house-style.mjs';
 
 const escape = s => s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;');
+
+test('eight support readings gain direct exits without changing their main text', async () => {
+  assert.equal(SUPPORT_READINGS.size, 8);
+  for (const route of SUPPORT_READINGS) {
+    const source = await readFile('public/' + route, 'utf8');
+    const output = await readFile('out/' + route, 'utf8');
+    assert.equal(output.match(/<main>[\s\S]*?<\/main>/)[0], source.match(/<main>[\s\S]*?<\/main>/)[0]);
+    assert.match(output, /class="support-reading"/);
+    assert.match(output, /href="\/">Opening<\/a>/);
+    assert.match(output, /href="\/explore\/#reading-map">Explore questions<\/a>/);
+    assert.throws(() => addReadingNavigation(output, route), /template changed/);
+  }
+  assert.equal(addReadingNavigation('<body>archive</body>', 'resources/snapshots/example.html'), '<body>archive</body>');
+});
 
 test('all ten readings retain their accounts, questions, source links and one title', async () => {
   for (const id of ENABLED_ROOMS) {

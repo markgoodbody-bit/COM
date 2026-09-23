@@ -321,3 +321,11 @@ body.reading-room > footer { width: min(calc(100% - 2.5rem), 42rem); padding-inl
 .explore-hub section { margin-block: 2.5rem; }
 .explore-hub .explore-orientation { border-top: 1px solid var(--border); padding-block: 1.25rem; }
 .explore-hub .explore-orientation summary { cursor: pointer; padding-block: .5rem; }
+/* Supporting accounts retain their source prose and gain a direct way back. */
+body.support-reading { max-width: 44.5rem; padding-inline: 1.25rem; font-size: 1.25rem; line-height: 1.65; }
+.support-reading h1 { font-size: 2.75rem; }
+.support-reading h2 { font-size: 2rem; }
+.support-reading h3 { font-size: 1.5rem; }
+.support-reading section { margin-block: 2.5rem; }
+.reading-breadcrumbs { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding-block: 1rem; font-size: 1rem; }
+.reading-breadcrumbs a { display: inline-flex; align-items: center; min-height: 2.75rem; }

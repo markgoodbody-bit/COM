@@ -4,6 +4,18 @@ import path from 'node:path';
 
 const stylesheet = '<link rel="stylesheet" href="/style.css">';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
+export const SUPPORT_READINGS = new Set([
+  'explore/challenge.html', 'explore/sources.html', 'explore/worked-revision.html',
+  ...['entry', 'case', 'route', 'affected', 'challenge'].map(id => `explore/example/${id}.html`),
+]);
+
+export function addReadingNavigation(html, route) {
+  if (!SUPPORT_READINGS.has(route)) return html;
+  if ((html.match(/<body>/g) ?? []).length !== 1 || !html.includes('<main>')) {
+    throw Error('Support reading template changed: ' + route);
+  }
+  return html.replace('<body>', '<body class="support-reading"><nav class="reading-breadcrumbs" aria-label="Site navigation"><a href="/">Opening</a><a href="/explore/#reading-map">Explore questions</a></nav>');
+}
 export function sharedStyle(html) {
   if (!html.includes('</head>')) throw Error('HTML head missing');
   // Generated trusted HTML only. Body markup and source payload are untouched.
@@ -22,7 +34,7 @@ export async function applyHouseStyle(root) {
       if (!entry.isFile()) throw Error('Unexpected generated entry: ' + child);
       if (!child.endsWith('.html')) continue;
       const file = path.join(root, child);
-      const before = await readFile(file, 'utf8'), after = sharedStyle(before);
+      const before = await readFile(file, 'utf8'), after = addReadingNavigation(sharedStyle(before), child);
       if (before !== after) { await writeFile(file, after); changed.push(child); }
     }
   }
