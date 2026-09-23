@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D079 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D080 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -210,9 +210,9 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D079 is the current public door: maintained source `eafaf40e83d723e577a8cb78469a95946c334edd`, published `gh-pages@b48a7f5d6ddc15d570d85d054ed222695eda6cec`, Site Preview `0.8.36`. Publication run `35886961634` completed SUCCESS; the custom-domain root matched the built D079 root at SHA-256 `f0b68464861d7cebcea78bf8c7b6b8d2155515af9480fed731c719009c702fcc`. D078 keeps the coherent illustrated-essay reading flow; D079 applies Mark's lighter-opening copy request without changing the three story paragraphs, two questions, D078 layout or D077 art/title geometry. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D080 is the current public door: maintained source `237c47cbd8d0aa487c1ad8accfc62dc25d91c330`, published `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`, Site Preview `0.8.37`. Publication run `35891147683` completed SUCCESS with selected live-byte verification for the root, Works shelf/shared CSS, Harriet Powers, Johannes Vermeer, manifest and change log. D079 keeps the lighter illustrated-essay opening; D080 is the first deeper-site cleanup and gives all six Works encounters one shared gallery grammar without changing artwork/source-record bytes or the D079 homepage. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
-PSFH #440 + #442 + #443 were integrated in D078. Mark's later explicit lighter-opening request was merged via #448 and published as D079; #452 made its copy-preservation test checkout-independent and permanent in maintained CI. Maintained CI now checks entrance routes, opening-copy preservation and `journey.js` syntax. No further first-contact churn is earned without a new visual/use observation, direct Mark request or concrete defect.
+PSFH #440 + #442 + #443 were integrated in D078; D079 published Mark's lighter opening. D080 then moves below the front door: PR #456 unified the Works shelf and six dedicated encounters around art-first, aspect-preserving presentation with provenance adjacent, while preserving work-specific accounts and multi-view/tall-work treatment. `scripts/test-works-current.mjs` is now part of maintained CI. Next PSFH design pressure is the five art-bearing Explore rooms; do not reopen the D079 homepage or Works by momentum.
 
 ## The Human Record
 
@@ -305,4 +305,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D079 is live at `gh-pages@b48a7f5d6ddc15d570d85d054ed222695eda6cec`, maintained source `eafaf40e83d723e577a8cb78469a95946c334edd`; publication run `35886961634` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D080 is live at `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`, maintained source `237c47cbd8d0aa487c1ad8accfc62dc25d91c330`; publication run `35891147683` SUCCESS with selected exact live-byte verification. D080 changes Works presentation only; release-resource identities and the D079 homepage remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.

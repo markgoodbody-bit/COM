@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D079 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D080 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -74,7 +74,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
 
 Current reversible maintenance/design candidates:
-- **PSFH D079** — D078 illustrated-essay entrance retained; Mark-requested lighter opening copy from #448 published and live-byte verified; #452 makes copy preservation part of maintained CI; no further first-contact build is queued absent new visual/use evidence, direct Mark request or a concrete defect;
+- **PSFH D080** — D079 front door retained; PR #456 unifies the Works shelf + six dedicated encounters around one art-first gallery grammar, published and selected-live-byte verified at `gh-pages@4ffb1aa71a93bc3785682280fa5a433f7426d1f9`; next bounded design target is the five art-bearing Explore rooms, not more homepage/Works churn;
 - **THR #75** `1b0766a66c675689f0ae6df97609a032caef1946` — entity-admission containment/catalogue repair, CI green, unmerged, no record/registry/catalogue data change;
 - **Relay #256** `c630cafeb2efde1888bc773a0eaeb03376cf569b` — two bounded COMSYNC maintenance repairs, campfire-ci green, unmerged, no Production activation.
 
@@ -138,7 +138,7 @@ COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME b
 
 ### PSFH combined first-contact candidate
 
-PR #440 + #442 + #443 were integrated in D078. D079 then publishes Mark's lighter-opening copy from #448: neutral campfire caption, shorter composite-source line, `Looking more closely` bridge and relocated access example. #452 makes the exact story/questions and opening-copy boundary a checkout-independent maintained-CI regression. Component branches remain history/provenance, not an active publication queue.
+PR #440 + #442 + #443 were integrated in D078 and D079 published Mark's lighter-opening copy. D080 deliberately leaves that front door alone and cleans the deeper Works system instead: one shared stylesheet/grammar, aspect-preserving shelf wells, consistent art-first account structure and continuation routes, with exact D080 wrapper pins and a current-state Works CI regression. Component branches remain history/provenance, not an active publication queue.
 
 ### PSFH Leave a Mark
 
@@ -250,4 +250,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D079 live at `b48a7f5d6ddc15d570d85d054ed222695eda6cec`; maintained source `eafaf40e83d723e577a8cb78469a95946c334edd`; publication/live-root workflow `35886961634` SUCCESS; root SHA-256 `f0b68464861d7cebcea78bf8c7b6b8d2155515af9480fed731c719009c702fcc`. D074-D079 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D080 live at `4ffb1aa71a93bc3785682280fa5a433f7426d1f9`; maintained source `237c47cbd8d0aa487c1ad8accfc62dc25d91c330`; publication workflow `35891147683` SUCCESS with selected exact live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 begins deeper-site presentation cleanup at Works. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
