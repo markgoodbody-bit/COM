@@ -1,6 +1,18 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.48 · 18 September 2026
+Please Start From Here · Reader change log · Edition 0.49 · 23 September 2026
+
+### D073
+
+23 September 2026 — Bring the public door forward to TRACE v0.4.0 and Mechanical Ethics v0.8.0.
+
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are now the current released formal baselines in their source repositories. PSFH's current same-domain reading aliases advance to those exact released objects, with new fixed release snapshots while every earlier snapshot remains unchanged.
+
+The update preserves the release ceilings: neither release is validated and practical advantage over competent ordinary reasoning or established specialist methods remains unearned. TRACE's retained full technical reference remains v0.3.0 donor context. Mechanical Ethics' v0.8.0 PDF and corrected Figure 2 carrier are copied exactly from the release.
+
+Existing AI-training permission notices remain scoped to the versions they name — TRACE v0.3.0 and Mechanical Ethics v0.7.0. Publishing v0.4.0/v0.8.0 on PSFH does not silently extend those grants.
+
+Site Preview advances to 0.8.30. This is a release-currentness, provenance and delivery update, not evidence of efficacy or reader benefit.
 
 ### D072
 
