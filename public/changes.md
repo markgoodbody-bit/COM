@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.51 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.52 · 23 September 2026
+
+### D076
+
+23 September 2026 — Make the opening artwork a central visual anchor.
+
+Direct visual review of the live D075 homepage showed that *Camp Fire* still rendered too much like a small illustration above a document. The remaining cause was an older homepage size rule that constrained the artwork to a small viewport-height footprint and conflicted with the later hero styling.
+
+The complete uncropped painting now renders centred at up to 90% of the viewport width, bounded at 76rem. The overlaid title scales with the larger image, and the existing project-authored “Why this is here” interpretation is larger and centred beneath it. The older and later CSS rules now agree instead of relying on stylesheet order.
+
+No artwork bytes, crop, story, navigation destination, framework source, machine payload, provenance, crawler rule, permission, intake, tracking or server behaviour changes here. Source change: [COM PR438](https://github.com/markgoodbody-bit/COM/pull/438). Site Preview advances to 0.8.33. This is a presentation correction, not evidence of reader benefit.
 
 ### D075
 
