@@ -1,9 +1,3 @@
-## Release currentness correction — 23 September 2026, 14:10 UTC
-
-This supersedes the pre-release TRACE/ME status statements below; those beta identities remain review history, not current released baselines. Live GitHub release receipts identify **TRACE v0.4.0** at `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and **Mechanical Ethics v0.8.0** at `e2ef746e931161cb70ac46a4eaa122442134e86b`, citing explicit human release authority. Source: [TRACE release](https://github.com/markgoodbody-bit/TRACE/releases/tag/v0.4.0), [ME release](https://github.com/markgoodbody-bit/mechanical-ethics/releases/tag/v0.8.0). Both remain NOT VALIDATED; the pilot remains unrun and not authorized by publication. Prior releases and the v0.3 technical donor remain preserved; training permissions are not automatically expanded.
-
-PSFH D073 source sync PR #429 is merged to its maintained-source branch, not COM main. Publication run `35872216595` completed successfully. At approximately 14:12 UTC, independent HTTPS reads of the served TRACE spine, ME Markdown and ME PDF matched all three release-receipt SHA-256 hashes exactly. This verifies those three artifacts, not every site route or visual rendering.
-
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
@@ -93,13 +87,13 @@ COM #365 remains active. Beta2 is the preserved first external-review snapshot. 
 ```text
 NEW CORE TERM = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta3 = PR #58 / ROUND-1 INTEGRATION CANDIDATE
-ME v0.8.0-beta3 = PR #52 / ROUND-1 INTEGRATION CANDIDATE
-BETA2 = PRESERVED ROUND-1 REVIEW SNAPSHOT
-EXTERNAL REVIEW ROUND 1 = RETURNED / SYNTHESIZED / NOT VALIDATION
+TRACE v0.4.0 = RELEASED / NOT VALIDATED / NO EFFICACY RESULT
+ME v0.8.0 = RELEASED / NOT VALIDATED
+BETA PRS = CLOSED / BRANCHES + REVIEW HISTORY PRESERVED
+EXTERNAL REVIEW = RETURNED / SYNTHESIZED / NOT VALIDATION
 ```
 
-Next: review beta3 as a response to round 1, not restart a general rewrite. TRACE must demonstrate that the shrink preserved useful discrimination and that its worked parse earns activation cost. ME must test reduced formalism, finality symmetry, the power-aware Other Fire and the concrete build programme. Current red CI remains the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
+Next: world/use pressure, not another general rewrite. The practical-advantage preregistration remains a separate unrun test. Reopen either released source only for a concrete defect or evidence from use; do not weaken release integrity or manufacture beta5 by momentum.
 
 ## 3. Current human gate — Hack-Nation 7
 
@@ -120,9 +114,9 @@ Registration/account/terms remain Mark's gate.
 
 ### Amazon Alexa+ — Relay PR #245
 
-- head `7a4c501dedb228c7387336fa267356e9cde27f8f`;
-- `campfire-ci 1539 / 35437873204 SUCCESS`;
-- 24 focused tests;
+- head `c0f8a94bb0aeec73e780c24d35c93372a306ee7d`;
+- `campfire-ci / 35875127444 SUCCESS`;
+- 25 focused candidate tests;
 - judge package prepared;
 - real Alexa+ host interop not tested;
 - human onboarding/submission gates remain.
