@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D078 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D079 live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -141,7 +141,7 @@ Freeze after green.
 
 ### PSFH next design candidate
 
-PR #440 + #442 + #443 are now integrated together in PR #449 and published as PSFH D078. Their prior review remains provenance rather than an active queue. D078 keeps the D077 title/art geometry while adding the 42rem essay column, optional `Other ways in`, direct Futures route, quiet early AI guide, THR-neighbour placement and duplicate-copy subtraction. Maintained CI now runs the entrance-route regression and `journey.js` syntax check on every maintained-site change.
+PR #440 + #442 + #443 were integrated in D078. Mark's explicit lighter-opening request is now published as D079 via #448, with #452 making the narrative/caption preservation regression permanent in maintained CI. D079 retains the D078 42rem essay layout, optional `Other ways in`, direct Futures route, early AI guide and THR-neighbour placement, while replacing `Why this is here` with the neutral campfire caption and shortening the story bridge. Maintained CI now runs entrance-route, opening-copy and `journey.js` checks.
 
 ## 5. Time / fresh-evidence gates
 
@@ -215,4 +215,4 @@ STOP
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / DO NOT USE TO DEFINE PROJECT VALUE**. Outside review has already repaired several preregistration defects; the latest #365 return still leaves prompt asymmetry as an open methodological item. Do not run until the intended workflow, scoring and remaining prompt asymmetry are frozen. A short-case cost failure may be the honest result; do not lengthen cases or change amortisation after outcomes. Released TRACE/ME source stays frozen unless a concrete source defect or world/use pressure earns reopening.
 
-TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D078 serves them live through the consolidated illustrated-essay entrance at `gh-pages@3f937db5345d527f527f8189cb1dfadee737bc5c`. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
+TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D079 serves them live through the lighter illustrated-essay entrance at `gh-pages@b48a7f5d6ddc15d570d85d054ed222695eda6cec`. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
