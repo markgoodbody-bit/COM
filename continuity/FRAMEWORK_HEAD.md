@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D076 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D077 live**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -203,7 +203,7 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D076 is the current public door: maintained source `56ca301a7664dc7c1db576a2c1088975a430f3c6`, published `gh-pages@0209cbb11d144dd1f62f7ebf8b99947798ff6e71`, Site Preview `0.8.33`. Publication run `35881362788` completed SUCCESS; the custom-domain root matched the built D076 root at SHA-256 `e8d6a67fb30b921fe3e386c2b473f076c7dde17d8e55d04a53924818282b95dd`, and live `style.css` contains the centred `min(90vw, 76rem)` opening-art rule. D075 preserves three primary human routes (question/possibility, reading, art); D076 enlarges the visual anchor only. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D077 is the current public door: maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`, published `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`, Site Preview `0.8.34`. Publication run `35882968302` completed SUCCESS; the custom-domain root matched the built D077 root at SHA-256 `eab1cfe66e5e36089feaa9c0a0eaa1a6622f60ff5ab4a77a59b97a54af8edb15`. D075 preserves three primary human routes (question/possibility, reading, art); D076 enlarges the visual anchor; D077 makes the title a large centred front-door statement. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
 
 ## The Human Record
 
@@ -294,4 +294,4 @@ TRACE beta4 PR #59 is at exact head `bf71e2b8431c23b0be79240c00c076721a016283`; 
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D076 is live at `gh-pages@0209cbb11d144dd1f62f7ebf8b99947798ff6e71`, maintained source `56ca301a7664dc7c1db576a2c1088975a430f3c6`; publication run `35881362788` SUCCESS with exact live-root and live-style verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D077 is live at `gh-pages@decc05063ec0a79da9a49260cfc7a32029bfab3f`, maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`; publication run `35882968302` SUCCESS with exact live-root verification. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.

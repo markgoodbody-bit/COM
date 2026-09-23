@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D076 live**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D077 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -243,4 +243,4 @@ Round-2 reviews are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2
 Beta4/prereg status: source deltas are internally CLEAR_WITH_CEILINGS; the stale Figure 2 carrier is repaired in ME beta4; TRACE beta4 packaging is repaired at `bf71e2b8431c23b0be79240c00c076721a016283`. The practical-advantage preregistration is repaired on COM main and ready for outside review, but **NO PILOT RUN IS AUTHORIZED OR STARTED**.
 
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D076 live at `0209cbb11d144dd1f62f7ebf8b99947798ff6e71`; maintained source `56ca301a7664dc7c1db576a2c1088975a430f3c6`; publication/live-root workflow `35881362788` SUCCESS; root SHA-256 `e8d6a67fb30b921fe3e386c2b473f076c7dde17d8e55d04a53924818282b95dd`; live CSS verified for the centred 90vw/76rem hero. D074-D076 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D077 live at `decc05063ec0a79da9a49260cfc7a32029bfab3f`; maintained source `ccf65dcc5780685608ce54ff4e6c888ac731611e`; publication/live-root workflow `35882968302` SUCCESS; root SHA-256 `eab1cfe66e5e36089feaa9c0a0eaa1a6622f60ff5ab4a77a59b97a54af8edb15`. D074-D077 are first-contact/navigation/presentation repairs, not framework changes. Release != validation. Practical-advantage pilot remains unrun.
