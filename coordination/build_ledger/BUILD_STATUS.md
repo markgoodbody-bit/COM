@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — beta4 + prereg external-review ready**
+Updated: **23 September 2026 — TRACE/ME released + PSFH D073 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -243,3 +243,6 @@ Round-2 reviews are synthesized in `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2
 
 
 Beta4/prereg status: source deltas are internally CLEAR_WITH_CEILINGS; the stale Figure 2 carrier is repaired in ME beta4; TRACE beta4 packaging is repaired at `bf71e2b8431c23b0be79240c00c076721a016283`. The practical-advantage preregistration is repaired on COM main and ready for outside review, but **NO PILOT RUN IS AUTHORIZED OR STARTED**.
+
+
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D073 live at `b073009b1ba0f9d4d1a3a8121ee544bf90e95398`; source `9003b9e6e25fbd37360aa674c4dfb2ba0fd0fbed`; live-witness workflow `35872216595` SUCCESS. Release != validation. Practical-advantage pilot remains unrun.
