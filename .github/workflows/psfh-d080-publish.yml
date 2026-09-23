@@ -1,0 +1,138 @@
+name: PSFH D080 publish Works gallery system
+
+on:
+  push:
+    branches:
+      - framework/psfh-d080-publish-20260923
+    paths:
+      - '.github/workflows/psfh-d080-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d080:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d080-publish-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Build and check D080
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+          node --input-type=module - <<'NODE'
+          import {readFile} from 'node:fs/promises';
+          const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
+          if(manifest.site_edition!=='0.8.37') throw Error('D080 site edition missing');
+          if(!manifest.provenance?.gallery_system_d080) throw Error('D080 gallery provenance missing');
+          const changes=await readFile('out/changes.html','utf8');
+          if(!changes.includes('id="d080"') || !changes.includes('Give Works one gallery grammar')) throw Error('D080 history missing');
+          const powers=await readFile('out/works/harriet-powers/index.html','utf8');
+          const vermeer=await readFile('out/works/johannes-vermeer/index.html','utf8');
+          if(/work\.css/.test(powers)||/work\.css/.test(vermeer)) throw Error('one-off active work stylesheet survived');
+          NODE
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: b48a7f5d6ddc15d570d85d054ed222695eda6cec
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D079
+        run: |
+          rm -rf /tmp/psfh-d080-publish
+          git worktree add -B gh-pages /tmp/psfh-d080-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d080-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d080-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d080-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d080-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d080-publish/
+          test "$(git -C /tmp/psfh-d080-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d080-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d080-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d080-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d080-publish/resources');"
+          git -C /tmp/psfh-d080-publish status --short
+      - name: Commit and publish D080
+        run: |
+          git -C /tmp/psfh-d080-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d080-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d080-publish add -A
+          if git -C /tmp/psfh-d080-publish diff --cached --quiet; then
+            echo "No D080 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d080-publish commit -m "Publish PSFH D080 Works gallery system"
+          git -C /tmp/psfh-d080-publish push origin HEAD:gh-pages
+      - name: Verify D080 served bytes
+        run: |
+          declare -A paths=(
+            [root]="index.html"
+            [works]="works/index.html"
+            [shelf]="works/shelf.css"
+            [powers]="works/harriet-powers/index.html"
+            [vermeer]="works/johannes-vermeer/index.html"
+            [manifest]="manifest.json"
+            [changes]="changes.html"
+          )
+          ok=0
+          for i in $(seq 1 18); do
+            all=1
+            for key in "${!paths[@]}"; do
+              path="${paths[$key]}"
+              expected="$(sha256sum "out/$path" | awk '{print $1}')"
+              if ! curl -fsSL --max-time 20 "https://pleasestartfromhere.com/$path" -o "/tmp/psfh-d080-$key"; then
+                all=0
+                continue
+              fi
+              actual="$(sha256sum "/tmp/psfh-d080-$key" | awk '{print $1}')"
+              test "$actual" = "$expected" || all=0
+            done
+            if [ "$all" = 1 ]; then ok=1; break; fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "Live D080 selected bytes did not converge" >&2
+            exit 1
+          }
+          grep -F 'complete available image before our text' /tmp/psfh-d080-works
+          grep -F 'aspect-ratio: 4 / 3' /tmp/psfh-d080-shelf
+          grep -F 'class="work-page textile"' /tmp/psfh-d080-powers
+          grep -F 'class="work-page portrait"' /tmp/psfh-d080-vermeer
+          ! grep -F 'work.css' /tmp/psfh-d080-powers
+          ! grep -F 'work.css' /tmp/psfh-d080-vermeer
+          grep -F '"site_edition": "0.8.37"' /tmp/psfh-d080-manifest
+          grep -F 'Give Works one gallery grammar' /tmp/psfh-d080-changes
+          echo "D080 selected live bytes verified"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
