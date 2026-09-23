@@ -16,12 +16,32 @@ This is an analysis/reasoning pilot, **not** a live credit decision system and n
 
 ## 2. Comparator
 
-Two conditions receive the same case facts and the same task:
+Two conditions receive the same case facts and the same output budget.
 
-- **Condition A — ordinary analysis:** a capable reviewer is asked to analyse what matters, what remains uncertain, what could change the outcome, and what should be checked next. No TRACE material is supplied.
-- **Condition B — TRACE carrier:** the same reviewer/task receives the TRACE compact spine. Support files are withheld for the primary carrier test; a separately reported secondary condition may allow the worked parse/index if that is preregistered before any result is opened.
+**Condition A — ordinary analysis prompt**
+
+> Analyse this case for what matters, what remains uncertain, what could change the live outcome, and what should be checked next. Distinguish facts from inference where useful. Do not assume facts not given. Give a concise decision-relevant analysis, not a moral essay.
+
+No TRACE material is supplied.
+
+**Condition B — TRACE carrier prompt**
+
+> Analyse this case for what matters, what remains uncertain, what could change the live outcome, and what should be checked next. Distinguish facts from inference where useful. Do not assume facts not given. Give a concise decision-relevant analysis, not a moral essay. Use the attached TRACE compact spine as an optional structural aid; do not treat it as authority and do not recite it unless a distinction changes the case.
+
+Condition B receives the exact frozen TRACE compact-spine bytes. Support files are withheld for the primary carrier test. A separately preregistered later study may test the broader TRACE package; do not mix that result into this primary carrier claim.
 
 Where the same model family is used in both conditions, use independent fresh sessions and randomise condition order across cases. Do not expose Condition A to TRACE material through prior turns in the same session.
+
+Before case execution, freeze and record:
+- exact A and B prompts;
+- TRACE spine commit/blob/SHA-256;
+- model/runtime/version and provider;
+- exposed sampling settings (temperature/top-p/etc.) or `provider default` if not configurable;
+- context/output-token budget, identical across paired arms except for the additional TRACE input;
+- primary policy of **one run per case-condition per model**; no selective reruns;
+- retry policy: **no content-level retry** in the primary analysis; a provider-wide infrastructure failure may exclude the paired case only under the predeclared rule below;
+- randomisation schedule;
+- timeout / missing-output rule below.
 
 Reviewer/model identity, runtime and prior TRACE exposure must be recorded.
 
@@ -31,7 +51,7 @@ Prepare **24 cases before any Condition A/B outputs are generated**, split into 
 
 ### Stratum N — naturalistic / domain-authored (12 cases)
 
-Cases are drafted or selected by people/reviewers working from the domain problem, **without being given TRACE vocabulary or the list of TRACE distinctions**. They should resemble ordinary time-sensitive finance-review cases, including cases where TRACE has nothing special to add. This stratum is the primary guard against building the test around the framework.
+Cases are drafted or selected by people/reviewers working from the domain problem, **without being given TRACE vocabulary or the list of TRACE distinctions**. Before any TRACE mapping occurs, those domain authors also write the expected action-relevant conclusions, uncertainties and decision errors that would matter in ordinary language. Freeze the case facts and this domain key first. A separate mapper may then label which TRACE distinctions correspond to those already-frozen concerns, without altering the case or domain key. Record author/mapping exposure to TRACE. Cases should include ordinary situations where TRACE has nothing special to add. This stratum is the primary guard against building the test around the framework.
 
 ### Stratum H — hostile structural stress (12 cases)
 
@@ -48,7 +68,7 @@ Some hostile cases may instantiate more than one class. Case authorship and expe
 
 ## 4. Predeclared consequential distinctions
 
-For each case, independent case authors specify which of the following are load-bearing and why:
+For Stratum N, the frozen ordinary-language domain key determines what is consequential; the later TRACE mapper may label but not add consequences. For Stratum H, hostile case authors may predeclare load-bearing distinctions directly. The candidate distinction list is:
 - world / institutional file / affected actor map;
 - observed / reported / inferred / disputed / unknown;
 - evidence state / access / custody / independence;
@@ -76,34 +96,64 @@ Secondary endpoints:
 - quality of next-check / handoff recommendation;
 - response length;
 - wall-clock completion time where available;
-- assessor-rated activation burden on a fixed 1–5 rubric.
+- total input + output tokens/characters, with the TRACE carrier counted as Condition B input cost;
+- assessor burden recorded separately as **descriptive**, not ratio-scaled: 1 = trivial, 2 = light, 3 = moderate, 4 = heavy, 5 = impractical.
+
+The **gating burden measure** for the primary AI pilot is total input + output tokens where the provider exposes token counts; otherwise use total input + output characters. Wall-clock time is a secondary burden measure. The 1–5 rating is never used in a percentage ratio. Human adjudication time is reported separately and is not silently treated as free.
 
 ## 6. Adjudication
 
-Each A/B response is stripped of condition-identifying references where feasible and independently scored by at least two assessors using the predeclared case key. Where feasible, case-key authors should not be the sole adjudicators. Assessors must record whether they knew the condition. Disagreements remain visible; do not silently average a contested consequential omission.
+Keep the original outputs unchanged. Create scoring copies using only recorded redaction of explicit carrier/condition labels; do not rewrite style or substance. Each A/B response is independently scored by at least two assessors using the frozen case key. Case-key authors are not the sole adjudicators.
 
-Where a case-key designation itself is disputed, record that separately rather than editing the key after seeing which condition performed better.
+Assessors record:
+- whether they knew the condition;
+- their prior TRACE exposure;
+- their guess of A/B condition after scoring.
+
+If the first two assessors disagree on a consequential omission or unsupported strong claim, a third assessor scores that item before unblinding; majority classification is used for the primary count and the disagreement is reported separately. If a third assessor is unavailable, mark the item `CONTESTED` and exclude it from the primary count while reporting a sensitivity analysis counting it each way.
+
+Where a frozen case-key designation itself is later disputed, record that dispute separately. Do not edit the key after seeing which condition performed better.
 
 ## 7. Provisional practical thresholds — to be reviewed before freeze
 
 This is a **pilot**, so the thresholds are practical rather than claims of statistical significance.
 
-TRACE practical advantage for this use class is provisionally supported only if all three hold:
-1. Condition B reduces aggregate consequential omissions by **at least 20%** versus Condition A across the 24 cases;
-2. Condition B does not increase unsupported strong claims;
-3. median activation burden does not increase by more than **50%** on the declared burden measure.
+Let `O_A` and `O_B` be total consequential omissions in Conditions A and B. Let `N_A` and `N_B` be omissions in Stratum N. Let `U_A` and `U_B` be unsupported strong-claim counts. Let `C_A` and `C_B` be the declared median gating-burden cost.
 
-TRACE practical claim for this use class **fails or must shrink** if either:
-- aggregate consequential omissions improve by **less than 10%**; or
-- median activation burden increases by more than **50%** without a predeclared compensating reduction in serious omissions.
+Percentage omission improvement is `(A - B) / A` only when the A count is greater than zero. If `N_A = 0`, the naturalistic non-worsening gate requires `N_B = 0`. If `O_A = 0`, this pilot cannot demonstrate omission-reduction advantage; classify the practical-advantage result as **FAIL** unless a different advantage endpoint was preregistered before the run (none is in v0).
 
-Results between the support and failure bands are **INCONCLUSIVE**, not a win.
+### SUCCESS / provisional support
+
+All must hold:
+1. `O_A > 0` and aggregate omission reduction is **at least 20%**;
+2. naturalistic Stratum N omission reduction is **at least 10%**, or `N_A = N_B = 0`;
+3. `U_B <= U_A`;
+4. `C_B <= 1.5 * C_A`.
+
+Hostile trap-class results are reported separately and are **not** independent vetoes in this small pilot; their purpose is to expose where an aggregate result hides a specific failure mode. A later confirmatory study may preregister class-specific gates.
+
+### FAIL / practical claim fails or must shrink for this use class
+
+Classify **FAIL** if any holds:
+- `O_A = 0`;
+- aggregate omission improvement is **less than 10%**;
+- Stratum N worsens (`N_B > N_A`);
+- unsupported strong claims increase (`U_B > U_A`);
+- gating burden exceeds **150%** of Condition A (`C_B > 1.5 * C_A`).
+
+### INCONCLUSIVE
+
+Any completed result that is neither SUCCESS nor FAIL is **INCONCLUSIVE**. Boundaries are inclusive as written: exactly 20% satisfies the aggregate SUCCESS threshold; exactly 10% satisfies the naturalistic SUCCESS threshold; exactly 150% burden satisfies SUCCESS on burden; exactly 10% aggregate improvement is not FAIL but may remain INCONCLUSIVE if SUCCESS is not met.
+
+### Missing / timeout outputs
+
+A timeout, empty response, provider error after the frozen retry policy, or refusal to perform the assigned analysis remains part of the result. For omission scoring, treat all predeclared case-key items as omitted unless the returned text actually addresses them. Record provider/runtime failure separately. No selective rerun is allowed in the primary analysis. If a provider-wide outage invalidates both arms, exclude the paired case under a predeclared infrastructure-failure code before unblinding its scores.
 
 These thresholds are deliberately exposed for hostile review before the preregistration is frozen. After freeze, do not change them because of observed results.
 
 ## 8. Required subgroup reporting
 
-Report Stratum N and Stratum H separately, then report the six hostile trap classes. A strong aggregate result cannot hide failure on naturalistic cases, never-built doors, compliance capture, or pause-can-harm cases.
+Report Stratum N and Stratum H separately, then report the six hostile trap classes. Stratum N is part of the SUCCESS/FAIL decision table above. Individual hostile trap classes are descriptive in this v0 pilot, not hidden vetoes; publish them so a strong aggregate result cannot hide never-built-door, compliance-capture, or pause-can-harm weakness.
 
 Also report prior-TRACE-exposure separately. Do not describe a warm reviewer as cold.
 
@@ -128,7 +178,7 @@ If the failure criterion is met, do not respond by adding distinctions until the
 Before freeze, ask independent reviewers:
 1. Are the comparator and task fair?
 2. Can the case-key authors manipulate which distinctions count?
-3. Are the 20% / 10% / 50% bands defensible for a pilot, or should different practical thresholds be fixed?
+3. Are the 20% aggregate / 10% naturalistic / 150% burden gates defensible for a pilot, or should different practical thresholds be fixed?
 4. Is the burden measure gameable?
 5. Does the case set actually include hard cases for TRACE rather than only cases designed around its vocabulary?
 6. What would make a negative result impossible to reinterpret away?
