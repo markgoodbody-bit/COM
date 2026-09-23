@@ -36,25 +36,26 @@ export function renderReadingRoom(node, index, targets) {
   const standing = node.kind === 'working synthesis' ? '' : `<p data-reading-kind><strong>${escape(node.kind)}</strong></p>`;
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(node.title)} · Please Start From Here</title><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/markdown" href="${node.id}.md"><link rel="alternate" type="application/json" href="${node.id}.json"><link rel="describedby" href="../llms.txt"></head>
-<body style="max-width:none;padding:0"><a class="skip" href="#question">Skip to the question</a>
+<body class="reading-room"><a class="skip" href="#question">Skip to the question</a>
+<nav class="reading-room-nav" aria-label="Reading room routes"><a href="/explore/#reading-map">Reading map</a><a href="/">Opening</a></nav>
 <main${node.id === 'futures' ? ' tabindex="-1"' : ''}><article class="context-window" aria-labelledby="room-title">
-<header><h1 id="room-title" style="margin-top:0">${escape(node.title)}</h1>${standing}<p>${escape(node.short)}</p></header>
+<header class="reading-room-header"><h1 id="room-title">${escape(node.title)}</h1>${standing}<p>${escape(node.short)}</p></header>
 <h2 id="question" tabindex="-1">${escape(node.question)}</h2>
-<div aria-label="Another position and challenge">
+<div class="reading-room-counterpoint" aria-label="Another position and challenge">
 <h3>Another position</h3><p>${escape(node.perspective)}</p>
 <h3>Challenge</h3><p>${escape(node.challenge)}</p></div>
-<details id="full-account"><summary style="padding:.75rem 0;cursor:pointer">Read the full account</summary>
+<details id="full-account" class="reading-room-detail"><summary>Read the full account</summary>
 <h3>Expand</h3><p>${escape(node.detail)}</p>
 <h3>Status</h3><p>${escape(node.kind)}. ${escape(node.boundary)}</p></details>
-<p><a href="${node.id}.md">Complete text</a> · <a href="${node.id}.json">JSON source</a></p>
-<nav aria-label="Optional directions"><h3>If you want to follow this further</h3><div class="journey-options">${moves}</div></nav>
+<p class="reading-source-links"><a href="${node.id}.md">Complete text</a> · <a href="${node.id}.json">JSON source</a></p>
+<nav class="reading-room-directions" aria-label="Optional directions"><h3>If you want to follow this further</h3><div class="journey-options">${moves}</div></nav>
 <nav class="journey-exits" aria-label="Opening, map or stop"><a href="/">Opening</a><a href="/explore/#reading-map">Map</a><a href="/#step-leave">Not now</a></nav>
-<details><summary style="padding:.75rem 0;cursor:pointer">Sources and other routes</summary><ul>${sources}
+<details class="reading-room-detail"><summary>Sources and other routes</summary><ul>${sources}
 <li><a href="${escape(localHtml(node.routes.sources))}">Source terms and snapshots</a></li>
 <li><a href="${escape(localHtml(node.routes.example))}">Same facts, different views</a></li>
 <li><a href="${escape(localHtml(node.routes.challenge_access))}">Challenge the account or the route</a></li>
 <li><a href="${escape(node.routes.map)}">Source map (JSON)</a></li></ul></details>
-</article></main><footer style="max-width:48rem;margin-inline:auto;padding-inline:1rem">${escape(node.status)}. Same source as the machine representations. No sign-in, personal disclosure or report-back is needed.</footer></body></html>\n`;
+</article></main><footer class="reading-room-footer">${escape(node.status)}. Same source as the machine representations. No sign-in, personal disclosure or report-back is needed.</footer></body></html>\n`;
 }
 
 export async function writeReadingRooms(sourceRoot, outputRoot) {

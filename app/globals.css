@@ -226,6 +226,28 @@ summary:focus-visible { outline: 3px solid var(--foreground); outline-offset: 3p
   .concrete-story .story-body { grid-column: 1; }
 }
 /* One quiet reading window. Native fragment links work without JavaScript. */
+/* Reading rooms: one shared text surface. Art-bearing rooms keep their
+   D081 entrance above this; text-only rooms arrive directly here. */
+body.reading-room { max-width: none; padding: 0; }
+.reading-room-nav { width: min(calc(100% - 2rem), 48rem); margin: 0 auto; padding: 1rem 1rem .75rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-bottom: 1px solid var(--border); font-size: .9375rem; }
+.reading-room-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+body.contextual-room > .reading-room-nav { display: none; }
+.reading-room-header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+.reading-room-header h1 { margin: 0 0 .75rem; font: 400 clamp(2.4rem, 5vw, 4rem)/1.06 var(--serif); letter-spacing: -.025em; text-wrap: balance; }
+.reading-room-header > p { max-width: 62ch; }
+.reading-room-counterpoint { margin: 2rem 0; padding: 1.5rem 0; border-block: 1px solid var(--border); }
+.reading-room-counterpoint h3 { margin-top: 1.5rem; }
+.reading-room-counterpoint h3:first-child { margin-top: 0; }
+.reading-room-detail { margin: 1.5rem 0; border-top: 1px solid var(--border); }
+.reading-room-detail summary { cursor: pointer; min-height: 2.75rem; padding: .75rem 0; }
+.reading-source-links { color: var(--muted); font-size: .9375rem; }
+.reading-room-directions { margin-top: 2.25rem; }
+.reading-room-footer { width: min(calc(100% - 2rem), 48rem); margin: 0 auto; padding: 1.25rem 1rem 2.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .875rem; line-height: 1.6; }
+body.reading-room:not(.contextual-room) .context-window { margin-top: .75rem; background: transparent; border-block: 0; padding-top: 1.5rem; }
+@media (max-width: 48rem) {
+  .reading-room-nav { padding-inline: .75rem; }
+  .reading-room-header h1 { font-size: clamp(2.1rem, 11vw, 3.25rem); }
+}
 body:has(.context-window) .opening-composition { margin-top: 0; }
 body:has(.context-window) .context-window .concrete-story { width: 100%; padding: 0; border: 0; }
 .context-window .concrete-story header { margin: 0; padding: 0; }
