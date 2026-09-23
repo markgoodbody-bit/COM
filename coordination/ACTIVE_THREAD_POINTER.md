@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — round-2 integrated / beta4 + prereg open**
+Updated: **23 September 2026 — beta4 + prereg external-review ready**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,7 +82,7 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-COM #365 remains active. Beta2 is the preserved first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 `575a40572d164b2b3736ed45eceff48c45cb9b3b` and ME v0.8.0-beta4 PR #53 `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
+COM #365 remains active. Beta2 is the preserved first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 `bf71e2b8431c23b0be79240c00c076721a016283` and ME v0.8.0-beta4 PR #53 `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`.
 
 ```text
 NEW CORE TERM = NONE EARNED
@@ -203,3 +203,6 @@ STOP
 
 
 Round 2 is **RETURNED / SYNTHESIZED / NOT VALIDATION**. Next: hostile-review and freeze the preregistration candidate before any pilot run. Beta4 is a bounded integration delta, not a new general rewrite.
+
+
+Beta4/prereg next gate: **OUTSIDE REVIEW THE PREREGISTRATION; DO NOT RUN THE PILOT YET**. TRACE #59 exact head `bf71e2b8431c23b0be79240c00c076721a016283`; ME #53 exact head `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. The preregistration on COM main includes the Codex governance repairs.
