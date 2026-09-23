@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — beta2 exact-source returns / reconciliation open**
+Updated: **23 September 2026 — external review round 1 integrated / beta3 open**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,20 +82,18 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-COM #365 remains active. Exact beta1 review targets remain TRACE `43a92cef427906829f1745595c69eccdf51d6ec2` and ME `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`; their branch histories moved during a Codex concurrency miss, but the file trees were restored. Current repaired beta2 candidates are TRACE #57 `881b1d3248c8cca9887dfa7fa5047944b34c7437` and ME #50 `18bfd49d516d64fb9e6e30601844750015b0af3b`.
+COM #365 remains active. Beta2 is the preserved first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 `6a9f48918925fd93d5ed7eb50b75cbe2f60bed21` and ME v0.8.0-beta3 PR #52 `0d5d2703adc29564fa5bfeb250df80884eed7362`.
 
 ```text
-NEW PRIMITIVE = NONE EARNED
+NEW CORE TERM = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta2 = PR #57 / REPAIRED CURRENT HEAD / EXTERNAL REVIEW MAY USE CURRENT HEAD
-ME v0.8.0-beta2 = PR #50 / REPAIRED CURRENT HEAD / EXTERNAL REVIEW MAY USE CURRENT HEAD
-BETA1 = EXACT TARGET COMMITS PRESERVED / FILE TREES RESTORED
-CODEX / CC EXACT-SOURCE REVIEW = RETURNED / RECONCILIATION OPEN
-FRAMEWORK BETA2-WORK = STACKED / DO NOT MERGE INTO BETA1
-EXTERNAL REVIEW HANDOFF = PREPARED / NOT DISPATCHED
+TRACE v0.4.0-beta3 = PR #58 / ROUND-1 INTEGRATION CANDIDATE
+ME v0.8.0-beta3 = PR #52 / ROUND-1 INTEGRATION CANDIDATE
+BETA2 = PRESERVED ROUND-1 REVIEW SNAPSHOT
+EXTERNAL REVIEW ROUND 1 = RETURNED / SYNTHESIZED / NOT VALIDATION
 ```
 
-Next: preserve the returned beta1 audits, reconcile Claude Code's remaining human-wording findings without silently substituting machine voice for Mark's, then collect independent external AI reviews against the repaired exact beta2 heads using `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`. Current red CI on beta2 is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
+Next: review beta3 as a response to round 1, not restart a general rewrite. TRACE must demonstrate that the shrink preserved useful discrimination and that its worked parse earns activation cost. ME must test reduced formalism, finality symmetry, the power-aware Other Fire and the concrete build programme. Current red CI remains the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
 
 ## 3. Current human gate — Hack-Nation 7
 
