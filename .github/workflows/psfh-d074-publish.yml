@@ -10,6 +10,7 @@ on:
       - 'public/changes.md'
       - 'public/changes.html'
       - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
       - '.github/workflows/psfh-d074-publish.yml'
 
 permissions:
