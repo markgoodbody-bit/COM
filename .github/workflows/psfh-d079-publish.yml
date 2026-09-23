@@ -1,0 +1,157 @@
+name: PSFH D079 publish lighter opening copy
+
+on:
+  push:
+    branches:
+      - framework/psfh-d079-publish-20260923
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - 'scripts/test-opening-copy.mjs'
+      - '.github/workflows/psfh-maintained-ci.yml'
+      - '.github/workflows/psfh-d079-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d079:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d079-publish-20260923
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D079 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.36'
+          m['updated']='2026-09-23'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          m['provenance']['change_history_addendum_note']=note.replace('D045-D078','D045-D079')
+          m['provenance']['lighter_opening_d079']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/448',
+            'ci_pr':'https://github.com/markgoodbody-bit/COM/pull/452',
+            'scope':'Mark-requested lighter opening copy: neutral campfire caption, shorter composite-source line, concise Looking more closely bridge, and access example moved to reading resources. Three narrative paragraphs and two questions preserved by maintained CI regression. D078 layout and D077 hero/title geometry preserved. No framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D079_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D079_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+      - name: Commit exact D079 manifest pins
+        run: |
+          git config user.name "PSFH D079 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D079 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D079: pin lighter-opening release provenance"
+          git push origin HEAD:framework/psfh-d079-publish-20260923
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 3f937db5345d527f527f8189cb1dfadee737bc5c
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D078
+        run: |
+          rm -rf /tmp/psfh-d079-publish
+          git worktree add -B gh-pages /tmp/psfh-d079-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d079-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d079-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d079-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d079-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d079-publish/
+          test "$(git -C /tmp/psfh-d079-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d079-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d079-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d079-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d079-publish/resources');"
+          git -C /tmp/psfh-d079-publish status --short
+      - name: Commit and publish D079
+        run: |
+          git -C /tmp/psfh-d079-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d079-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d079-publish add -A
+          if git -C /tmp/psfh-d079-publish diff --cached --quiet; then
+            echo "No D079 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d079-publish commit -m "Publish PSFH D079 lighter opening copy"
+          git -C /tmp/psfh-d079-publish push origin HEAD:gh-pages
+      - name: Verify D079 served root
+        run: |
+          expected="$(sha256sum out/index.html | awk '{print $1}')"
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/ -o /tmp/psfh-live-index.html; then
+              actual="$(sha256sum /tmp/psfh-live-index.html | awk '{print $1}')"
+              if [ "$actual" = "$expected" ]; then
+                ok=1
+                break
+              fi
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "Live root did not converge to D079 built bytes" >&2
+            exit 1
+          }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/style.css -o /tmp/psfh-live-style.css
+          grep -F 'Let the opening speak more lightly.' /tmp/psfh-live-changes.html
+          grep -F 'A shared fire, two different positions.' /tmp/psfh-live-index.html
+          grep -F 'Looking more closely' /tmp/psfh-live-index.html
+          grep -F 'A composite scene from' /tmp/psfh-live-index.html
+          ! grep -F 'Why this is here.' /tmp/psfh-live-index.html
+          ! grep -F 'not a documented tenant case' /tmp/psfh-live-index.html
+          grep -F 'width: min(calc(100% - 2.5rem), 42rem)' /tmp/psfh-live-style.css
+          grep -F 'font-size: 1.25rem' /tmp/psfh-live-style.css
+          grep -F 'font-size: clamp(3.75rem, 7vw, 7.5rem)' /tmp/psfh-live-style.css
+          echo "D079 live root SHA-256: $expected"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
