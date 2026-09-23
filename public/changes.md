@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
 
+### D080
+
+23 September 2026 — Give Works one gallery grammar.
+
+Mapping the deeper site after D079 showed that the six dedicated artwork encounters had accumulated three presentation generations: two pages still loaded one-off work styles while four used the shared gallery stylesheet, and the collection shelf framed unlike-shaped works with an older fixed-height thumbnail rule. The artwork, source records and substantive accounts did not need rewriting; the presentation layer had drifted.
+
+Works now uses one shared gallery grammar. The collection page states the encounter rule plainly: the complete available image comes before our text, with provenance kept beside it. Shelf thumbnails use bounded neutral image wells that preserve each work's aspect ratio. Harriet Powers and Johannes Vermeer now use the same active stylesheet and page structure as the other four encounters, while retaining Powers's recorded eleven-panel account and the Städel context for Vermeer. Cleopatra remains a two-view sculpture encounter; the tall Atkins and Shen Zhou works keep portrait-specific breathing room; Homer retains the separate project-response boundary.
+
+No artwork image, museum/source record, caption claim, TRACE, Mechanical Ethics, Human Record, Explore reading, permission, intake, tracking or server behaviour changes here. A new D080 Works overlay pins only the changed wrappers/shared stylesheet, and the Works regression now runs in maintained CI. Site Preview advances to 0.8.37. This is a presentation-consistency repair, not evidence of reader benefit.
+
 ### D079
 
 23 September 2026 — Let the opening speak more lightly.

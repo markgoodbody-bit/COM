@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.36",
+  "site_edition": "0.8.37",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -72,9 +72,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "2d9d7ee68bfba09e49bf21c5630bb91be417fc3d9e4bb4addcfac33188b6c5c0",
-    "change_history_input_html_sha256": "226b42c329f8ea1f81d9f454ff0857683feb2e2e85f5a254cf8d66d7a2981806",
-    "change_history_addendum_note": "D016 through D038 and D045-D075 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "20503d6a2e3bac8f657ee8389196e92333870b66ac3c1391942550e92475e223",
+    "change_history_input_html_sha256": "ef0e1c90855c20eba85d98d5ae953a108daff9e5f8b58bb6b6d325c0299d271a",
+    "change_history_addendum_note": "D016 through D038 and D045-D080 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -141,6 +141,11 @@
       "source_pr": "https://github.com/markgoodbody-bit/COM/pull/448",
       "ci_pr": "https://github.com/markgoodbody-bit/COM/pull/452",
       "scope": "Mark-requested lighter opening copy: neutral campfire caption, shorter composite-source line, concise Looking more closely bridge, and access example moved to reading resources. Three narrative paragraphs and two questions preserved by maintained CI regression. D078 layout and D077 hero/title geometry preserved. No framework, machine-payload, crawler, intake or permission change. Reader benefit unmeasured."
+    },
+    "gallery_system_d080": {
+      "basis": "eafaf40e83d723e577a8cb78469a95946c334edd",
+      "overlay": "scripts/WORKS_D080.json",
+      "scope": "One shared Works presentation grammar: art first, provenance adjacent, consistent account typography and routes, bounded aspect-preserving collection thumbnails. Harriet Powers and Johannes Vermeer move off active one-off styles; work-specific content and all artwork/source-record bytes remain unchanged. Maintained CI now runs the Works regression. Reader benefit unmeasured."
     }
   },
   "boundaries": [

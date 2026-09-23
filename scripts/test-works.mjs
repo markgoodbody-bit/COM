@@ -4,7 +4,7 @@ import { readFile, mkdtemp, cp, writeFile, readdir, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { WORKS, WORKS_D052, verifyWorks, copyWorks } from './works.mjs';
+import { WORKS, WORKS_D052, WORKS_D080, verifyWorks, copyWorks } from './works.mjs';
 
 const homerRoute = 'works/winslow-homer/index.html';
 
@@ -90,58 +90,46 @@ test('historical publication treatment changed only named wrappers from the pinn
   }
 });
 
-test('art-first preserves the five prior encounters and adds Homer without changing his image source', async () => {
-  const base = '0f627f2357d74de6b1556e25f5e4a0be5c9a7c57';
-  const normal = text => text.replace(/\r\n/g, '\n').replace(/>\s+</g, '><').trim();
-  const readBefore = route => execFileSync('git', ['show', base + ':public/' + route], {maxBuffer:20*1024*1024});
-  const names = ['anna-atkins','shen-zhou','edmonia-lewis','harriet-powers','johannes-vermeer'];
-  const moved = new Set(names.map(name => 'works/' + name + '/index.html'));
-  for (const route of Object.keys(WORKS.files)) {
-    const after = await readFile('public/' + route);
-    if (route === homerRoute) {
-      const current = after.toString('utf8');
-      assert.ok(current.indexOf('<img') < current.indexOf('<header id="work-details"'), route);
-      assert.ok(current.indexOf('<img') < current.indexOf('<nav class="shelf-return"'), route);
-      assert.match(current, /href="\.\.\/\.\.\/art\/camp-fire\.jpg"/);
-      assert.match(current, /camp-fire-720\.jpg 720w/);
-      assert.match(current, /camp-fire-1440\.jpg 1440w/);
-      assert.match(current, /camp-fire\.jpg 3801w/);
-      assert.match(current, /Project response, not artist intention/);
-      assert.match(current, /our reading|invitation to begin together without assuming the same view/i);
-      continue;
-    }
-    if (route === 'works/index.html') {
-      const current = after.toString('utf8');
-      assert.equal((current.match(/<li>/g) ?? []).length, 6);
-      assert.match(current, /winslow-homer\/index\.html/);
-      assert.doesNotMatch(current, /Five selected works/);
-      continue;
-    }
-    const before = readBefore(route);
-    if (moved.has(route)) {
-      const old = before.toString('utf8').replace(/\r\n/g, '\n'), current = after.toString('utf8').replace(/\r\n/g, '\n');
-      const main = old.match(/<main\b[^>]*>/)[0];
-      const heading = old.slice(old.indexOf(main) + main.length).match(/^\s*(<header\b[\s\S]*?<\/header>)/)[1];
-      const nav = old.match(/<nav class="shelf-return">[\s\S]*?<\/nav>/)[0];
-      const siteHeader = old.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0] || '';
-      assert.ok(current.includes(heading.replace('<header', '<header id="work-details"')), route);
-      assert.ok(current.includes(nav), route);
-      assert.ok(current.includes(siteHeader), route);
-      const stationaryBefore = old.replace(heading,'').replace(nav,'').replace(siteHeader,'');
-      const stationaryAfter = current.replace(heading.replace('<header','<header id="work-details"'),'')
-        .replace('<nav class="work-routes" aria-label="Continue or leave"><a href="../index.html">All works</a><a href="../../explore/#reading-map">Reading map</a><a href="../../">Back to the opening</a></nav>', '')
-        .replace(nav,'').replace(siteHeader,'').replace('<body class="artwork-first">','<body>')
-        .replace('class="skip" href="#work-details"','class="skip" href="#work"')
-        .replace('>Skip to the account</a>', old.match(/>Skip to the (?:work|painting)<\/a>/)[0]);
-      assert.equal(normal(stationaryAfter), normal(stationaryBefore), route);
-      assert.ok(current.indexOf('<img') < current.indexOf('<header id="work-details"'), route);
-      assert.ok(current.indexOf('<img') < current.indexOf('<nav class="shelf-return"'), route);
-      assert.ok(current.includes('href="../../explore/#reading-map"'), route);
-    } else if (route === 'works/shelf.css') {
-      assert.ok(normal(after.toString()).startsWith(normal(before.toString())));
-      assert.match(after.toString(), /max-height: 100svh/);
-    } else assert.deepEqual(after, before, route);
+test('D080 uses one shared gallery grammar without changing the art custody set', async () => {
+  assert.equal(WORKS_D080.basis, 'eafaf40e83d723e577a8cb78469a95946c334edd');
+  const shelf = await readFile('public/works/shelf.css', 'utf8');
+  assert.match(shelf, /\.shelf \.image-space \{ aspect-ratio: 4 \/ 3;/);
+  assert.match(shelf, /max-height: calc\(100svh - clamp/);
+  assert.match(shelf, /\.work-page \.context, \.work-page \.museum-note, \.work-page \.reading/);
+
+  const collection = await readFile('public/works/index.html', 'utf8');
+  assert.equal((collection.match(/<li>/g) ?? []).length, 6);
+  assert.match(collection, /complete available image before our text/);
+
+  const names = ['harriet-powers','johannes-vermeer','anna-atkins','shen-zhou','edmonia-lewis','winslow-homer'];
+  for (const name of names) {
+    const route = 'public/works/' + name + '/index.html';
+    const page = await readFile(route, 'utf8');
+    assert.match(page, /<body class="artwork-first">/, route);
+    assert.match(page, /<main id="work" class="work-page(?: [^"]+)?">/, route);
+    assert.match(page, /<link rel="stylesheet" href="\.\.\/shelf\.css">/, route);
+    assert.doesNotMatch(page, /href="(?:\.\/)?work\.css"/, route);
+    assert.ok(page.indexOf('<img') < page.indexOf('id="work-details"'), route);
+    assert.ok(page.indexOf('<img') < page.indexOf('<nav class="shelf-return"'), route);
+    assert.match(page, /<nav class="work-routes" aria-label="Continue or leave">/, route);
+    assert.match(page, /href="\.\.\/\.\.\/explore\/#reading-map"/, route);
+    assert.match(page, /href="\.\.\/\.\.\/">Back to the opening<\/a>/, route);
   }
+
+  const powers = await readFile('public/works/harriet-powers/index.html', 'utf8');
+  assert.match(powers, /The maker's recorded account/);
+  assert.match(powers, /eleven subjects/);
+  assert.match(powers, /americanhistory\.si\.edu\/collections\/object\/nmah_556462/);
+
+  const vermeer = await readFile('public/works/johannes-vermeer/index.html', 'utf8');
+  assert.match(vermeer, /At the museum/);
+  assert.match(vermeer, /sammlung\.staedelmuseum\.de\/en\/work\/the-geographer/);
+
+  const cleopatra = await readFile('public/works/edmonia-lewis/index.html', 'utf8');
+  assert.equal((cleopatra.match(/<figure>/g) ?? []).length, 2);
+  const homer = await readFile('public/works/winslow-homer/index.html', 'utf8');
+  assert.match(homer, /Project response, not artist intention/);
+  assert.match(homer, /href="\.\.\/\.\.\/art\/camp-fire\.jpg"/);
 });
 
 test('a changed record fails before the copier writes any output', async () => {

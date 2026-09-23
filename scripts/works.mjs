@@ -5,10 +5,11 @@ import path from 'node:path';
 
 const baseWorks = JSON.parse(await readFile(new URL('./WORKS_COPIES.json', import.meta.url)));
 export const WORKS_D052 = JSON.parse(await readFile(new URL('./WORKS_D052.json', import.meta.url)));
+export const WORKS_D080 = JSON.parse(await readFile(new URL('./WORKS_D080.json', import.meta.url)));
 export const WORKS = {
   ...baseWorks,
-  files: { ...baseWorks.files, ...WORKS_D052.files },
-  maintained_overlays: [...(baseWorks.maintained_overlays ?? []), 'WORKS_D052.json'],
+  files: { ...baseWorks.files, ...WORKS_D052.files, ...WORKS_D080.files },
+  maintained_overlays: [...(baseWorks.maintained_overlays ?? []), 'WORKS_D052.json', 'WORKS_D080.json'],
 };
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const safe = route => /^(works|art)\/[a-zA-Z0-9._/-]+$/.test(route)

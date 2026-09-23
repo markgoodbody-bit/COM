@@ -1,0 +1,23 @@
+{
+  "basis": "eafaf40e83d723e577a8cb78469a95946c334edd",
+  "status": "D080 gallery-system repair: one shared Works presentation grammar while preserving artwork bytes, museum/source records, captions and work-specific content.",
+  "verification_ceiling": "These pins establish the exact D080 wrapper and shared-style bytes. They do not independently reverify museum provenance, image rights or reader benefit. Unchanged artwork and record bytes remain owned by the earlier Works inventories.",
+  "files": {
+    "works/index.html": {
+      "bytes": 2323,
+      "sha256": "cee380ab71f0334a2b50a6ff5895c203c779277d17d1853981792c9766d7eb44"
+    },
+    "works/shelf.css": {
+      "bytes": 5820,
+      "sha256": "e2fe16e59879fc51201146a5f78ad11afdbfc4af018705bd177972dc49cbb480"
+    },
+    "works/harriet-powers/index.html": {
+      "bytes": 4330,
+      "sha256": "fd6362de5d0a09a0eb8e2d7b046d39f7cca3083cb261cb3e80beae901c326be6"
+    },
+    "works/johannes-vermeer/index.html": {
+      "bytes": 2808,
+      "sha256": "0d1fa7ff804d44c6890e5b5d28307798f9d417d86cae258b8aa00832da694758"
+    }
+  }
+}
