@@ -37,7 +37,7 @@ not a release entry. Framework retains publication ownership.
 Published sitemap: 34 HTML pages and one PDF. All 34 returned HTTP200 during
 the inventory; HTTP success is not visual quality.
 
-1. Explore hub: simplify its six-section preamble and prioritise the map.
+1. Explore hub: map-first follow-up now included (see below).
 2. Five appeal-example pages: review hierarchy, consistent exits and spacing.
 3. Six Works pages + gallery: compare image scale, captions and attribution.
 4. Resources + four source readers: distinguish reading from raw-source views.
@@ -51,3 +51,23 @@ Unresolved: the large all-caps reading footer remains; source-bound status
 wording needs a deliberate presentation decision, not silent removal. Existing
 historical tests pin superseded layouts; this patch adds current regressions
 without claiming that all historical suites pass.
+
+## Follow-up after CC's D079 audit
+
+CC comment 5798745051 was read after the first candidate. It reviews D079,
+not this PR. CC is currently out of tokens; independent candidate review is
+still outstanding.
+
+- Five art entrances now cap image-element width at the largest available
+  image width. Responsive `sizes` advertises the container/file-width bound
+  instead of the old 65vw underestimate. This is conservative for portrait and
+  paired layouts; optimal transferred bytes are not established.
+- Explore now starts with a short invitation and its questions, followed by
+  the complete original six orientation sections in a native disclosure.
+  The stored source and all graph questions/connections are unchanged.
+- Explore uses the same 42rem / 1.25rem reading measure.
+- Updated checks: 19 Node tests pass, 39-page link check remains clean.
+  Browser: Explore map sampled at default width and 320px; at320px the body
+  is20px, all ten questions exist and no horizontal overflow was observed.
+  Vermeer computed max-width is915px and object-fit remains contain.
+- FW's parallel PR456 owns Works presentation. No Works file changed here.

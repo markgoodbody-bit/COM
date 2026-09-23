@@ -39,6 +39,23 @@ test('five art entrances retain image metadata and rights without a duplicate ti
       assert.match(image[0], /width="\d+"/);
       assert.match(image[0], /height="\d+"/);
       assert.match(image[0], /alt="[^"]+"/);
+      const width = image[0].match(/width="(\d+)"/)[1];
+      assert.ok(image[0].includes(`style="max-width:${width}px"`));
+      assert.ok(image[0].includes(`sizes="min(calc(100vw - 2rem), 76rem, ${width}px)"`));
     }
   }
+});
+
+test('Explore presents its questions before the preserved orientation', async () => {
+  const original = await readFile('public/explore/index.html', 'utf8');
+  const html = await readFile('out/explore/index.html', 'utf8');
+  const sections = [...original.matchAll(/<section>[\s\S]*?<\/section>/g)].map(m => m[0]);
+  assert.equal(sections.length, 6);
+  for (const section of sections) {
+    assert.ok(html.includes(section));
+    assert.ok(html.indexOf(section) > html.indexOf('About this reading space'));
+  }
+  assert.ok(html.indexOf('id="reading-map"') < html.indexOf('About this reading space'));
+  assert.equal((html.match(/data-reading-node=/g) || []).length, 10);
+  assert.equal((html.match(/data-relation=/g) || []).length, 30);
 });

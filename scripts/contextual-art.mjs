@@ -24,18 +24,19 @@ function variantFigure(room, variants, alt, label = null, pair = false) {
   const largest = variants.at(-1);
   if (!largest?.file || !largest?.width || !largest?.height) throw Error('Incomplete contextual-art image variant');
   const srcset = variants.length > 1 ? ` srcset="${variants.map(v => '/art/' + escape(v.file) + ' ' + v.width + 'w').join(', ')}"` : '';
-  const sizes = pair ? '(max-width: 48rem) 100vw, 50vw' : '(max-width: 48rem) 100vw, 65vw';
+  // Conservative slot bound: never advertise less than the available frame.
+  const sizes = `min(calc(100vw - 2rem), 76rem, ${largest.width}px)`;
   const caption = label
     ? `<figcaption>${escape(label)}</figcaption>`
     : `<figcaption><a href="/works/${room.work}/"><cite>${escape(room.recordTitle)}</cite></a> · ${escape(room.recordCreator)}, ${escape(room.recordDate)}</figcaption>`;
-  return `<figure><a class="room-image" href="/works/${room.work}/" aria-label="Read about ${escape(room.recordTitle)} by ${escape(room.recordCreator)}"><img src="/art/${escape(largest.file)}"${srcset} sizes="${sizes}" width="${largest.width}" height="${largest.height}" alt="${escape(alt)}" loading="eager" decoding="async"></a>${caption}</figure>`;
+  return `<figure><a class="room-image" href="/works/${room.work}/" aria-label="Read about ${escape(room.recordTitle)} by ${escape(room.recordCreator)}"><img src="/art/${escape(largest.file)}"${srcset} sizes="${sizes}" style="max-width:${largest.width}px" width="${largest.width}" height="${largest.height}" alt="${escape(alt)}" loading="eager" decoding="async"></a>${caption}</figure>`;
 }
 
 function legacyPresentation(room, record, images) {
   const variants = images[0].variants, largest = variants.at(-1);
   if (!variants.length || !record.alt || !record.credit || !record.rights) throw Error('Incomplete canonical work record');
   const srcset = variants.map(v => '/art/' + escape(v.file) + ' ' + v.width + 'w').join(', ');
-  const figure = `<figure><a class="room-image" href="/works/${room.work}/" aria-label="Read about ${escape(record.title)} by ${escape(record.creator)}"><img src="/art/${escape(largest.file)}" srcset="${srcset}" sizes="(max-width: 48rem) 100vw, 65vw" width="${largest.width}" height="${largest.height}" alt="${escape(record.alt)}" loading="eager" decoding="async"></a><figcaption><a href="/works/${room.work}/"><cite>${escape(record.title)}</cite></a> · ${escape(record.creator)}, ${escape(record.date)}</figcaption></figure>`;
+  const figure = `<figure><a class="room-image" href="/works/${room.work}/" aria-label="Read about ${escape(record.title)} by ${escape(record.creator)}"><img src="/art/${escape(largest.file)}" srcset="${srcset}" sizes="min(calc(100vw - 2rem), 76rem, ${largest.width}px)" style="max-width:${largest.width}px" width="${largest.width}" height="${largest.height}" alt="${escape(record.alt)}" loading="eager" decoding="async"></a><figcaption><a href="/works/${room.work}/"><cite>${escape(record.title)}</cite></a> · ${escape(record.creator)}, ${escape(record.date)}</figcaption></figure>`;
   return {stage: figure, stageClass:'room-stage', stageStyle:'', credit:`${record.institution}. ${record.credit}. ${record.rights}.`};
 }
 

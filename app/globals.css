@@ -310,3 +310,14 @@ body.reading-room > footer { width: min(calc(100% - 2.5rem), 42rem); padding-inl
 .contextual-room .room-credit p { margin-bottom: .5rem; }
 .contextual-room .room-credit summary { cursor: pointer; padding-block: .5rem; }
 @media print { .contextual-room .room-image img { max-height: 24cm; } }
+.contextual-room > main.explore-hub {
+  width: min(calc(100% - 2.5rem), 42rem);
+  font-size: 1.25rem;
+  line-height: 1.65;
+  margin-block: 2.5rem;
+}
+.explore-hub h1 { font-size: 2.75rem; }
+.explore-hub h2 { font-size: 2rem; }
+.explore-hub section { margin-block: 2.5rem; }
+.explore-hub .explore-orientation { border-top: 1px solid var(--border); padding-block: 1.25rem; }
+.explore-hub .explore-orientation summary { cursor: pointer; padding-block: .5rem; }
