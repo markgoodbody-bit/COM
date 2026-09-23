@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **23 September 2026 — beta3 round-2 external review ready**
+Updated: **23 September 2026 — round-2 integrated / beta4 + prereg open**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -106,7 +106,7 @@ Do not convert successful representation into validation.
 
 ## Current bounded design lane — TRACE / ME successor
 
-COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Current integration candidates are TRACE v0.4.0-beta3 PR #58 at `5e50926bada398184c6f83a8c376a5ceea6e6832` and Mechanical Ethics v0.8.0-beta3 PR #52 at `cf8c64612a4e4d20cb1303ad0cab70dfd43d87d5`. Released baselines remain unchanged.
+COM #365 remains the active non-canon successor lane. Beta2 is now the preserved first external-review snapshot. Nine outside AI review returns were supplied by Mark and synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Current bounded integration candidates are TRACE v0.4.0-beta4 PR #59 at `575a40572d164b2b3736ed45eceff48c45cb9b3b` and Mechanical Ethics v0.8.0-beta4 PR #53 at `70e66ce5fd44051cae67b4f9de70b8d6d67f58c6`. Released baselines remain unchanged.
 
 ```text
 TRACE v0.3.0 = UNCHANGED
@@ -115,8 +115,9 @@ NEW TRACE PRIMITIVE = NOT EARNED
 REPRESENTATIONAL GAP = NOT DEMONSTRATED
 
 SURVIVING WORK = ATTRIBUTED COMPRESSION / SALIENCE / WORKED TRANSFER
-TRACE v0.4.0-beta3 = EXTERNAL-REVIEW INTEGRATION CANDIDATE / NOT RELEASE
-ME v0.8.0-beta3 = EXTERNAL-REVIEW INTEGRATION CANDIDATE / NOT RELEASE
+TRACE v0.4.0-beta4 = ROUND-2 BOUNDED INTEGRATION CANDIDATE / NOT RELEASE
+ME v0.8.0-beta4 = ROUND-2 BOUNDED INTEGRATION CANDIDATE / NOT RELEASE
+BETA3 = PRESERVED ROUND-2 REVIEW SNAPSHOT
 BETA2 = PRESERVED ROUND-1 REVIEW SNAPSHOT
 BETA1 = EXACT TARGET COMMITS PRESERVED / BRANCH HISTORIES MOVED / FILE TREES RESTORED
 ```
@@ -280,6 +281,6 @@ OMITTED FROM HEAD != ABSENT
 ```
 
 
-## Beta3 round-2 gate
+## Round-2 integration / beta4 gate
 
-Beta3 is ready for a second outside-AI review round at exact TRACE head `5e50926bada398184c6f83a8c376a5ceea6e6832` and ME head `cf8c64612a4e4d20cb1303ad0cab70dfd43d87d5`. Codex's bounded beta3 consistency findings were integrated; Framework's final ME mirror audit found no material blocker. Claude Code's focused beta3 return has not yet been observed and is not a blocking dependency unless it later identifies a concrete material defect. Use `coordination/EXTERNAL_TRACE_ME_BETA3_REVIEW_HANDOFF_20260923.md`.
+Round-2 outside reviews are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND2_SYNTHESIS_20260923.md`. Beta4 integrates only bounded carrier/mirror repairs. The next high-value review object is the preregistration candidate `coordination/TRACE_PRACTICAL_ADVANTAGE_PILOT_PREREG_v0_20260923.md`; beta4 delta review is secondary. Released baselines remain unchanged.
