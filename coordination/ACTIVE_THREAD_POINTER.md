@@ -55,7 +55,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — beta2 external-review ready**
+Updated: **23 September 2026 — beta2 exact-source returns / reconciliation open**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -82,20 +82,20 @@ Next quarry follows materiality, not category quota.
 
 ## 2. Current bounded design lane — TRACE / ME successor
 
-COM #365 remains active. Beta1 controls stay frozen at TRACE #56 and ME #49. Review-ready beta2 candidates are TRACE #57 `012509754aa2abdf1536604166f838449af6b509` and ME #50 `733f304f4cce3af08398bcf7967168c1647fb1af`.
+COM #365 remains active. Exact beta1 review targets remain TRACE `43a92cef427906829f1745595c69eccdf51d6ec2` and ME `57457f8b157dfa5ef8c7cb1a2c7a0ef8bc190d5e`; their branch histories moved during a Codex concurrency miss, but the file trees were restored. Current repaired beta2 candidates are TRACE #57 `881b1d3248c8cca9887dfa7fa5047944b34c7437` and ME #50 `18bfd49d516d64fb9e6e30601844750015b0af3b`.
 
 ```text
 NEW PRIMITIVE = NONE EARNED
 TRACE REPRESENTATIONAL GAP = NOT DEMONSTRATED
-TRACE v0.4.0-beta2 = PR #57 / EXTERNAL REVIEW READY
-ME v0.8.0-beta2 = PR #50 / EXTERNAL REVIEW READY
-BETA1 = FROZEN INTERNAL CONTROL
-CODEX / CC EXACT-SOURCE REVIEW = DISPATCHED / RETURNS PENDING
-FRAMEWORK BETA2-WORK = STACKED / DO NOT MERGE INTO BETA1 YET
+TRACE v0.4.0-beta2 = PR #57 / REPAIRED CURRENT HEAD / EXTERNAL REVIEW MAY USE CURRENT HEAD
+ME v0.8.0-beta2 = PR #50 / REPAIRED CURRENT HEAD / EXTERNAL REVIEW MAY USE CURRENT HEAD
+BETA1 = EXACT TARGET COMMITS PRESERVED / FILE TREES RESTORED
+CODEX / CC EXACT-SOURCE REVIEW = RETURNED / RECONCILIATION OPEN
+FRAMEWORK BETA2-WORK = STACKED / DO NOT MERGE INTO BETA1
 EXTERNAL REVIEW HANDOFF = PREPARED / NOT DISPATCHED
 ```
 
-Next: collect independent external AI reviews against beta2 using `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`, while preserving any later Codex/CC beta1 returns as independent comparison evidence. Current red CI on beta2 is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
+Next: preserve the returned beta1 audits, reconcile Claude Code's remaining human-wording findings without silently substituting machine voice for Mark's, then collect independent external AI reviews against the repaired exact beta2 heads using `coordination/EXTERNAL_TRACE_ME_BETA_REVIEW_HANDOFF_20260923.md`. Current red CI on beta2 is the expected released-baseline/source-binding guard firing; do not weaken release integrity to make a beta green.
 
 ## 3. Current human gate — Hack-Nation 7
 
