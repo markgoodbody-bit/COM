@@ -21,7 +21,8 @@
           "path": "README.md",
           "git_blob_sha1": "d6146c04d72ce12919a3322a0bd611a5123872e6",
           "bytes": 6836,
-          "media_type": "text/markdown; charset=utf-8"
+          "media_type": "text/markdown; charset=utf-8",
+          "snapshot_mode": "copy"
         },
         {
           "path": "AI_TRAINING_PERMISSION.md",
@@ -61,7 +62,8 @@
           "path": "README.md",
           "git_blob_sha1": "b300bf7501be2edbb66ca9ba35167bf5ca2ee427",
           "bytes": 3737,
-          "media_type": "text/markdown; charset=utf-8"
+          "media_type": "text/markdown; charset=utf-8",
+          "snapshot_mode": "copy"
         },
         {
           "path": "AI_TRAINING_PERMISSION.md",
