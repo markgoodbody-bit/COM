@@ -739,3 +739,136 @@ TRACE's possible role is only to connect these owners to clocks, apertures, rout
 Concrete falsifier:
 
 If a mature AI-control monitoring framework already requires all of these bindings and a TRACE reading causes no additional question, earlier detection, or better handoff, record OWNER FOUND / NO DELTA.
+
+## 24 September 2026 — frontier question: how does anything continue?
+
+Status: **RAW CAMPFIRE SKETCH / NOT CANON / NOT FORMAL IDENTITY THEORY**
+
+Campfire question from Mark: **How does anything continue?**
+
+Initial answer to attack, not preserve by default:
+
+> Something continues when enough structure survives or is reproduced across change to help produce a later state that is recognisably related under a declared criterion.
+
+Important correction: continuation does not require sameness. Many continuing things are continuously rebuilt, repaired, copied, metabolised, taught, rehearsed, re-instantiated or re-bound.
+
+Examples that may share only partial structure:
+- a flame: matter changes continuously; process/pattern persists while fuel/conditions support it;
+- an organism: material turnover + metabolism + repair + regulation + developmental continuity;
+- a species: lineage through reproduction, not persistence of one body;
+- a culture/language: repeated transmission through minds, artefacts and institutions;
+- a relationship: recurrent interaction and updated mutual models;
+- a software service: changing processes/machines while functional contract and state continuity persist;
+- a conversation / AI aperture: later state constrained by preserved prior structure, despite interruption or different runtime instance;
+- a record: bytes may persist while meaning can be lost if the interpretive environment disappears.
+
+### Candidate decomposition
+
+Let X_t be a represented state at time t, E_t its environment, and Phi_t the transition / reproduction process.
+
+X_(t+1) = Phi_t(X_t, E_t)
+
+A continuity claim should not be free-standing. It needs a declared correspondence relation R and resolution r:
+
+CONTINUES_R,r(X_t, X_(t+1))
+
+where R states **what kind of continuity is being claimed**.
+
+Candidate continuity dimensions to keep separate unless evidence supports joining them:
+- substrate/material continuity;
+- causal continuity / descent;
+- organisational / process continuity;
+- functional continuity;
+- informational / memory continuity;
+- relational continuity;
+- legal/social identity continuity;
+- subjective continuity (where meaningful and evidenced);
+- value/purpose continuity.
+
+Preserve:
+
+SAME LABEL != SAME CONTINUATION
+SAME SUBSTRATE != SAME FUNCTION
+SAME FUNCTION != SAME ENTITY
+CAUSAL DESCENT != SUBJECTIVE IDENTITY
+INFORMATION PRESERVED != MEANING PRESERVED
+RESTART != RESTORATION
+RECONSTRUCTION != UNBROKEN CONTINUITY
+
+### Possible minimal pattern
+
+CONTINUITY may require some combination of:
+
+1. **Carrier** — something from the earlier state reaches the later state;
+2. **Transformation / reproduction rule** — a process maps earlier structure into later structure;
+3. **Boundary / criterion** — what counts as the thing continuing, at what resolution;
+4. **Energy / resource support** — enough physical capacity exists to keep rebuilding or reproducing the pattern;
+5. **Error correction / repair** — drift and damage are corrected often enough to preserve the claimed structure;
+6. **Environment / niche** — surrounding conditions remain compatible, or the entity adapts;
+7. **Witness / provenance** — enough evidence remains to support the continuity claim rather than merely assume it.
+
+None of these is automatically necessary for every kind of continuity. Stronger owners decide.
+
+### Candidate quantitative handle — continuity budget
+
+Do not treat this as a theorem.
+
+For a chosen continuity criterion R, let:
+- g_R(t) = rate at which relevant structure is regenerated / repaired / re-instantiated;
+- d_R(t) = rate at which relevant structure is lost / corrupted / dispersed;
+- h_R(t) = external support supplied by other entities/environment;
+- m_R(t) = minimum retained structure needed for the continuity claim at the chosen resolution.
+
+Then a crude viability pressure is:
+
+d/dt S_R(t) = g_R(t) + h_R(t) - d_R(t)
+
+with continuity becoming unsupported when S_R falls below the criterion m_R.
+
+This resembles maintenance/reliability/homeostasis models and should route to stronger owners rather than become TRACE-owned maths.
+
+### Interesting asymmetry
+
+Some continuity is **self-maintained**; some is **other-maintained**.
+
+An infant, patient, archive, endangered language, software service or artificial agent may continue only because another entity carries part of the repair / memory / energy / interpretation burden.
+
+That creates a temporal and power question:
+
+> Who or what is currently carrying the work required for this thing to continue, and what happens if that support stops?
+
+### Continuity can fail in different ways
+
+- sudden destruction;
+- gradual drift beyond the declared identity criterion;
+- substrate survives but organisation/function is lost;
+- pattern survives but provenance is broken;
+- bytes survive but interpretation becomes unavailable;
+- function survives via replacement while historical continuity is broken;
+- apparent continuity is manufactured retrospectively by label or narrative;
+- entity continues physically while relationship / role / standing does not;
+- lineage continues while individual continuity ends.
+
+### THR / TRACE pressure
+
+TRACE already warns that a repeated path label does not establish the same continuation. This frontier may therefore be mostly a **routing/teaching expansion**, not a representational gap.
+
+THR pressure: preservation should distinguish preserving a carrier from preserving enough interpretive/provenance structure for later reconstruction.
+
+Potential question for future artificial continuity:
+
+> If a later AI instance reads prior outputs and is causally changed by them, what exactly continued: information, lineage, role, model-state influence, relationship, or entity identity?
+
+Do not answer 'same entity' without an earned identity criterion.
+
+### Stronger owners to consult
+
+dynamical systems; control/homeostasis; reliability engineering; autopoiesis/process biology; evolutionary lineage; information theory/error correction; distributed systems/state replication; temporal databases/event sourcing; philosophy of persistence/identity; cultural evolution; archival science/provenance; developmental systems theory.
+
+### Falsifiers
+
+- if the decomposition just restates existing persistence/identity theory less precisely, route outward and keep only a compact question;
+- if one scalar 'continuity score' collapses materially different kinds of persistence, reject it;
+- if continuity is inferred from label, memory, or function alone, preserve UNKNOWN;
+- if repair/support costs are hidden on another entity, expose the carrier of that burden;
+- if preserving continuity destroys more important futures, continuity is not automatically the good.
