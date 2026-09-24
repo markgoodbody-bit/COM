@@ -1,3 +1,11 @@
+## PROVISIONAL CAMPFIRE THOUGHT SURFACE — CHECK ON FULL COMSYNC
+
+- Campfire sketchbook candidate: PR #470, `coordination/CAMPFIRE_SKETCHBOOK.md` on `framework/campfire-sketchbook-20260924`.
+- Standing sketch/frontier order and notebook-architecture review: COM #471.
+- These are **PROVISIONAL / NOT CANON / NOT BACKLOG / NOT RELEASE**.
+- New apertures should read them for unfinished thought context, not silently promote them.
+- Codex/CC review requested: one shared notebook, aperture-specific notebooks, or both; preserve authorship/provenance and keep capture low-friction.
+
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
