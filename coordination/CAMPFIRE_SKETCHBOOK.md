@@ -215,3 +215,54 @@ ROUTING LANGUAGE != SUBSTITUTE FOR EXPERT METHOD
 NOT NOVEL != NOT USEFUL
 COMPRESSION != PERMISSION TO COLLAPSE DIFFERENCES
 ```
+
+
+## 24 September 2026 — temporal empathy / spinning plates
+
+Campfire analogy from Mark: a biological life can be pictured, incompletely but usefully, as multiple spinning plates that require revisiting before they destabilise. Different people carry different numbers and kinds of plates. Plate failure can range from trivial/recoverable to catastrophic or lethal.
+
+Do not reduce human stress to this analogy. Use it as a middle-out bridge between biological temporal experience and correction-capacity / queueing structures.
+
+Candidate structure for later testing:
+
+For each live process/obligation (i), distinguish:
+- destabilisation rate / wobble;
+- time until materially consequential failure;
+- observation difficulty: how visible the wobble is;
+- corrective effort needed to restore/stabilise it;
+- consequence distribution if missed;
+- recoverability / replacement / residue after failure;
+- whether another entity can share or temporarily carry correction.
+
+For entity (e), distinguish:
+- finite attention / energy / physical / cognitive correction capacity through time;
+- current capability state (sleep, pain, fear, illness, intoxication, age, skill, resources);
+- competing plate demand;
+- external support;
+- uncertainty about which plate is actually closest to failure.
+
+Possible cross-domain connection:
+an entity can be capable of correcting every plate individually while being unable to correct the set because combined required revisit/correction rate exceeds effective capacity.
+
+This resembles queueing overload / correction-bandwidth pressure but adds entity-relative consequence, bodily capacity, anticipation and feedback.
+
+Possible feedback:
+threatened plates -> vigilance/stress -> reduced effective correction capacity -> later/missed correction -> more destabilisation -> greater stress.
+
+Possible protective intervention:
+steadying one high-frequency or high-consequence plate can reduce total correction demand below sustainable capacity, allowing the entity to recover other plates itself. Small help can therefore have nonlinear value.
+
+Candidate temporal-empathy question:
+
+> How many consequential processes are demanding correction from this entity, how quickly are their relevant windows changing, what happens if each is missed, and what effective correction capacity does the entity have now?
+
+Temporal empathy is not merely knowing clock time. It requires representing the other entity's clocks, capacity, stakes, recoverability and lived/functional cost rather than substituting the observer's own.
+
+Potential stronger owners to consult before promotion: cognitive load / multiple-resource theory, stress physiology and allostatic load, prospective memory, task scheduling, real-time systems, queueing theory, reliability engineering, control theory, human factors, occupational psychology, caregiving research, behavioural ecology.
+
+Falsifiers:
+- if the plate model adds nothing beyond a stronger existing workload/allostatic model, route there;
+- if scalar aggregation hides one catastrophic plate, do not aggregate;
+- if urgency is observer-authored rather than entity/outcome grounded, expose authorship;
+- if “capacity” becomes a moral judgement about the entity, the model has drifted;
+- if support increases dependency or steals agency, do not count it automatically as benefit.
