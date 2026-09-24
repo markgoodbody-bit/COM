@@ -674,3 +674,30 @@ These are notebook/continuity observations, not TRACE primitives.
 - Can queueing / Age of Information / metastability be compressed into one or two TRACE routing cues without misleading non-specialists?
 - What is the smallest entity-relative temporal profile that improves reasoning rather than creating another ontology?
 - Can temporal empathy be tested as transfer: does it cause a reasoner to notice a relevant clock/capacity mismatch they otherwise miss?
+
+## 24 September 2026 — Framework follow-up after team review
+
+Quick repository search after Codex/CC review:
+
+- TRACE current source contains timestamps, temporal-origin/basis, common temporal basis and supported-conversion machinery, but searches for `valid time`, `record time`, `observed_at`, `recorded_at`, and `known at` did not expose an explicit general distinction between event occurrence and later recording/knowledge.
+- THR already has both `observed_at` and `recorded_at` in different layers, plus the explicit boundary `OBSERVED_AT != PERMANENTLY_CURRENT`.
+- That means the candidate seam is **not** simply 'THR forgot timestamps'. The narrower question is whether the system can keep separate: when an underlying event/state held; when an observer encountered evidence of it; when a record was created/updated; and when a downstream actor could reasonably have known it.
+
+Provisional four-time decomposition for falsification only:
+
+T_event = when the represented event/state occurred or held
+T_observe = when an aperture observed evidence
+T_record = when a record/assertion was written or updated
+T_know(actor) = earliest supported time the relevant actor had / could use the information
+
+Do not assume all four are always available or meaningful.
+
+Potential pressure:
+
+T_event != T_observe != T_record != T_know(actor)
+
+This may matter for causation, notice, answerability, retrospective reconstruction, stale authority, correction windows and claims such as 'they knew before acting'.
+
+Stronger owners to check before any promotion: bitemporal/temporal databases, event sourcing, provenance, epistemic logic / knowledge-at-time, legal notice doctrine where relevant, distributed tracing and trusted timestamping.
+
+Failure condition: if existing TRACE claims + THR observation/source ancestry can already express the distinction without ambiguity, prefer a teaching example over any new formal field.
