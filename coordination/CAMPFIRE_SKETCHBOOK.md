@@ -577,3 +577,100 @@ Before promotion:
 - test where waiting creates value rather than harm;
 - test where forgetting improves rather than damages the entity;
 - keep only what materially improves routing or reasoning.
+
+## 24 September 2026 — team review of temporal sketches
+
+Status: **REVIEW / ROUTING OUTCOME / STILL NOT CANON**
+
+Independent Codex and Claude Code reviews of COM #473 materially narrowed the earlier temporal sketches.
+
+### Converged result: do not add a new 'shared temporal witness' primitive
+
+Codex and CC both found that current TRACE already carries much of the needed structure through temporal basis/origin, clock authorship/control, supported conversion/binding, uncertainty and comparability.
+
+Prefer stronger-owner language where detail matters:
+- metrology: reference time scale, synchronization, time transfer, traceability, uncertainty;
+- distributed systems: causal ordering, logical clocks, wall/monotonic clocks, leases/fencing, external consistency;
+- temporal databases: valid/event time versus transaction/record time;
+- trusted timestamping where independent binding of a record to time is material.
+
+Candidate connective teaching prompt only:
+
+EVENT IDENTITY -> CLOCK / CAUSAL RELATION -> SUPPORTED REFERENCE OR TRANSLATION -> UNCERTAINTY -> CLAIM
+
+A shared external reference is not required when causal ordering alone supports the consequential claim.
+
+Preserve:
+ACCURATE CLOCK != ACCURATE EVENT CLAIM
+COMMON TIME SOURCE != INDEPENDENT CORROBORATION
+ORDERING != DURATION
+TIMESTAMP AGREEMENT != EVENT-BINDING AGREEMENT
+
+### Strongest newly exposed seam: event time versus record/known time
+
+CC did not find an explicit spine distinction between when an event occurred and when a system recorded or learned it.
+
+Potential compact pressure:
+
+VALID / EVENT TIME != RECORD / TRANSACTION / KNOWN TIME
+
+This matters for late reports, backdating, delayed notice, stale knowledge, retrospective reconstruction and claims about what information was available at the decision time.
+
+Do not promote yet. First check full TRACE and THR for existing ownership, then route to bitemporal-data literature.
+
+Possible later wording, if still earned:
+
+'When a stated time is load-bearing, expose whether it refers to occurrence, recording, receipt, knowledge, or another declared event.'
+
+### Maths pruning / stronger-owner routing
+
+The earlier sketch maths should be treated as routing handles, not home-grown replacements:
+
+- aggregate load ratio and correction bandwidth are both forms of utilization / queueing pressure; merge conceptually and route to queueing theory;
+- queueing already supplies the nonlinear waiting behaviour near saturation, which is stronger than our informal 'one plate can tip the system' wording;
+- stress/load reducing capacity and preventing recovery has a strong analogue in metastable-failure literature; use that as an owner before inventing a new feedback formalism;
+- staleness pressure has a stronger owner in Age of Information / freshness literature; route there rather than treating χ = age × change-rate as a result;
+- the sketched timestamp-separation inequality duplicates current TRACE safeguards around supported binding and non-overlapping uncertainty; do not promote it;
+- entity-relative lived/functional time remains distinct from reference-clock precision and should not be collapsed into a clock unit.
+
+### Currentness after absence is broader than time
+
+CC's operational evidence exposed a useful correction: a resumed process can be stale because of a pinned commit, identifier, authority, relationship or other reference even when its clock is correct.
+
+Therefore:
+
+TIME STALENESS is one case of REFERENCE / WORLD STALENESS.
+
+Possible reacquisition question:
+
+'Which references carried across the gap still bind to the current world, and which were intentionally pinned as historical baselines?'
+
+Do not blindly replace every old reference with latest: reproducibility sometimes requires deliberate pins.
+
+### Notebook architecture — team convergence
+
+Codex and CC independently converged on:
+- one shared notebook for fragments intentionally shared with other apertures;
+- optional private/local scratch for ugly or personal half-thoughts;
+- no mandatory mirrored notebook per aperture;
+- one discoverability pointer in FRAMEWORK_HEAD is enough;
+- read delta-first: latest unfinished entries plus links, not the whole notebook every COMSYNC;
+- keep contradictory entries side by side; challenge by linked entry rather than silent rewrite;
+- minimum shared capture can be cheap: date, attributed aperture/speaker, fragment, source link if one exists;
+- do not require taxonomy/falsifier/full proposal at capture time;
+- before promotion, name the occasion at which the proposed idea would actually change action;
+- notebook growth must be visible enough that the unread tail cannot silently disappear.
+
+Two useful CC observations:
+
+ONLY_WHAT_IS_PUSHED_IS_READ
+ONLY_WHAT_NAMES_AN_OCCASION_FIRES
+
+These are notebook/continuity observations, not TRACE primitives.
+
+### Remaining frontier questions
+
+- Does event-time versus record/known-time add anything after a full TRACE + THR search?
+- Can queueing / Age of Information / metastability be compressed into one or two TRACE routing cues without misleading non-specialists?
+- What is the smallest entity-relative temporal profile that improves reasoning rather than creating another ontology?
+- Can temporal empathy be tested as transfer: does it cause a reasoner to notice a relevant clock/capacity mismatch they otherwise miss?
