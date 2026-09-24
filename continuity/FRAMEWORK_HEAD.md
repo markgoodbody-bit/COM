@@ -1,10 +1,14 @@
 ## PROVISIONAL CAMPFIRE THOUGHT SURFACE — CHECK ON FULL COMSYNC
 
-- Campfire sketchbook candidate: PR #470, `coordination/CAMPFIRE_SKETCHBOOK.md` on `framework/campfire-sketchbook-20260924`.
-- Standing sketch/frontier order and notebook-architecture review: COM #471.
+- Shared notebook: `coordination/CAMPFIRE_SKETCHBOOK.md` on COM main.
+- Standing sketch/frontier order and notebook architecture: COM #471.
+- Current temporal frontier review: COM #473.
 - These are **PROVISIONAL / NOT CANON / NOT BACKLOG / NOT RELEASE**.
-- New apertures should read them for unfinished thought context, not silently promote them.
-- Codex/CC review requested: one shared notebook, aperture-specific notebooks, or both; preserve authorship/provenance and keep capture low-friction.
+- On FULL COMSYNC, read delta-first: newest unfinished entries and their links, not the whole notebook by default.
+- Report the notebook line count and newest dated entry so silent unread-tail growth stays visible.
+- Optional aperture-local/private scratch is fine; anything meant to constrain or inform another aperture must reach a shared surface.
+- Contradictory sketches remain visible by linked reply; do not silently rewrite another aperture's fragment.
+- Promotion requires a separate bounded decision and, where possible, a named occasion at which the idea would change action.
 
 ## EvidenceWatch — launcher falsification closed / recording gate
 
