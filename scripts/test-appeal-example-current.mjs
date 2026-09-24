@@ -70,6 +70,8 @@ test('case-family stylesheet remains quiet and responsive', async () => {
   const css=await readFile('app/globals.css','utf8');
   assert.match(css,/body\.case-example \{ max-width: none; padding: 0; \}/);
   assert.match(css,/\.case-example-page > section \{/);
+  assert.match(css,/\.case-example-page \{ width: min\(calc\(100% - 2rem\), 42rem\)/);
+  assert.match(css,/\.case-example-page > p, \.case-example-page > section p, \.case-example-page > section li \{ font-size: 1\.075rem; line-height: 1\.72;/);
   assert.match(css,/\.case-example-routes ul \{[^}]*grid-template-columns: repeat\(2,minmax\(0,1fr\)\)/s);
   assert.match(css,/@media \(max-width: 40rem\)[\s\S]*\.case-example-routes ul \{ grid-template-columns: 1fr; \}/);
 });
