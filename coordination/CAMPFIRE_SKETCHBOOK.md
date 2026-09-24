@@ -357,3 +357,223 @@ SKETCHBOOK != COMSYNC
 CAPTURE != PROMOTION
 CONTINUITY CARRIER != CONTINUOUS IDENTITY
 ```
+
+## 24 September 2026 — provisional temporal maths / patterns
+
+Status: **SKETCH MATHS / NOT TRACE FORMALISM / NOT VALIDATED**
+
+These expressions are handles for later pressure-testing. Delete them if stronger owners already provide cleaner machinery or if compression hides action-relevant distinctions.
+
+### 1. Local correction margin and aggregate correction load are different
+
+TRACE already carries a path-specific correction-window margin. Keep that.
+
+For a live process / plate i:
+- e_i = effective corrective effort required per intervention;
+- Δ_i = maximum useful revisit interval before material destabilisation / missed correction;
+- d_i = e_i / Δ_i = approximate correction demand rate.
+
+For entity x, let C_x(t) be effective correction capacity per unit time under the entity's current condition.
+
+Crude aggregate load ratio:
+
+ρ_x(t) = [Σ_i d_i(t)] / C_x(t)
+
+Interpretation:
+- ρ_x < 1: average correction demand may be serviceable;
+- ρ_x ≈ 1: small disturbances can remove slack;
+- ρ_x > 1: unresolved correction demand tends to accumulate unless demand falls, capacity rises, work is shared, or some processes are allowed to fail.
+
+Do NOT infer safety from ρ_x < 1. One plate can still fail if its own correction window closes first. Aggregate load and local margin must remain separate.
+
+Possible capacity feedback:
+
+C_x(t+δ) = C_x(t) - S_x(t) + H_x(t)
+
+where S_x is capacity lost to stress / pain / vigilance / exhaustion / illness / interruption, and H_x is capacity restored or supplied by rest, treatment, tools, another entity, or environmental change.
+
+Possible positive feedback:
+
+ρ ↑ -> stress ↑ -> C ↓ -> ρ ↑
+
+Possible recovery feedback:
+
+small well-placed help -> C ↑ or d_i ↓ -> ρ < 1 -> self-recovery becomes reachable
+
+This may explain why steadying one plate can have nonlinear value.
+
+### 2. Temporal empathy should probably be a vector, not a score
+
+Candidate entity-relative temporal state:
+
+Θ_x(t) = <A_x, M_x, P_x, C_x, L_x, R_x, U_x>_t
+
+Provisional components:
+- A_x: temporal aperture / what rates of change the entity can detect;
+- M_x: usable past / memory and external carriers currently reachable;
+- P_x: prospective reach / what futures and horizons it can model;
+- C_x: effective correction / action capacity now;
+- L_x: live correction load / competing time-sensitive demands;
+- R_x: recovery / restoration dynamics;
+- U_x: uncertainty about its own temporal state and surrounding clocks.
+
+Do not assume these components are scalar or independent.
+
+Candidate temporal empathy: represent enough of Θ_x and the relevant external clocks to avoid substituting the observer's temporal condition for the affected entity's.
+
+Falsifier: if this merely renames established constructs without improving cross-domain routing, delete it.
+
+### 3. Shared temporal witness / binding
+
+Let c_x be a local clock, r a chosen shared temporal reference, b_x a supported binding from c_x to r, and ε_x the uncertainty / error bound in that binding.
+
+A strong cross-entity timing claim needs more than shared units. It needs supported bindings whose uncertainty is small enough for the claim.
+
+For two estimated event times t_a and t_b, a crude ordering pressure is:
+
+|t_a - t_b| > ε_a + ε_b
+
+if the ordering claim is grounded only in those estimates.
+
+Distributed systems, metrology and relativity own the real methods.
+
+Preserve:
+SAME UNIT != SAME CLOCK
+TIMESTAMP != SUPPORTED TEMPORAL BINDING
+SHARED REFERENCE != UNIVERSAL COSMIC TIME
+REFERENCE CLOCK != ENTITY-RELATIVE TEMPORAL CONDITION
+
+### 4. Temporal aliasing / witness resolution
+
+An aperture can be truthful and still be temporally incapable of observing the transition that matters.
+
+Let Δ_s be the effective sampling interval and Δ_e the material event duration / transition timescale.
+
+If consequential events can arise and resolve inside an unobserved interval, absence in the record does not establish absence in the world.
+
+Do not lazily import Nyquist unless its signal assumptions hold.
+
+OBSERVATION RESOLUTION TOO COARSE + EVENT BETWEEN OBSERVATIONS -> HONEST RECORD MAY MISS CONSEQUENTIAL TRANSITION
+
+Candidate TRACE check: before treating monitoring as evidence of non-occurrence, ask whether the aperture had sufficient temporal resolution and liveness to detect the event class.
+
+### 5. Temporal self-location / stale standing
+
+Let t_g be the last externally grounded state, t_n current reference time, a = t_n - t_g grounding age, and λ_W a rate / hazard of materially relevant world change.
+
+Crude staleness pressure:
+
+χ = a × λ_W
+
+This is not a probability unless a stronger model earns that interpretation.
+
+Structural point: more elapsed unobserved time in a faster-changing world increases pressure to reacquire currentness before acting.
+
+Preserve:
+INTERNAL CONTINUITY != WORLD CURRENTNESS
+RESUMED STATE != RESTORED STANDING
+MEMORY OF AUTHORITY != CURRENT AUTHORITY
+
+### 6. Correction bandwidth and the uncorrected past
+
+Let λ_c(t) be the rate at which materially consequential correction-needing events enter a system and μ_c(t) the effective rate at which adequate correction can be detected, adjudicated and enacted.
+
+Necessary stability pressure, roughly:
+
+λ_c < μ_c
+
+over the relevant horizon, with sufficient local deadline margin for individual cases.
+
+If sustained λ_c > μ_c, backlog grows even if every individual case has a formally valid route.
+
+Crude backlog:
+
+B(t+δ) ≈ max[0, B(t) + integral_t^(t+δ) (λ_c - μ_c) dt]
+
+Candidate phrase: uncorrected past = consequential residue represented by backlog that has not yet been adequately observed / answered / corrected.
+
+Do not treat backlog items as equivalent. One missed irreversible case can dominate thousands of low-stakes cases.
+
+### 7. Trust as temporally accumulated relational evidence
+
+Campfire case: years of honesty can make a short later statement such as trust me now carry evidence that cannot be transmitted inside the emergency window.
+
+Crude trust-evidence reserve:
+
+E_(A->B)(t) = Σ_j [w_j × q_j × k(t - t_j)]
+
+where q_j is observed evidence from interaction j about the relevant property, w_j its relevance / diagnostic weight, and k a retention / decay / update function.
+
+This is NOT a moral trust score.
+
+Pattern:
+REPEATED PRIOR CONDUCT -> STORED RELATIONAL EVIDENCE -> LATER SHORT WINDOW -> COMPRESSED COMMUNICATION CARRIES MORE THAN ITS WORDS ALONE
+
+Different trust properties remain separate: honesty evidence != competence evidence; care != accuracy.
+
+Possible connection: trust can function as pre-positioned temporal infrastructure, built before the emergency and usable when there is insufficient time for full explanation.
+
+### 8. Effective capability can be distributed across entities
+
+Do not model reachable future from internal capability alone.
+
+Candidate composition:
+
+C_eff(x) = C_internal(x) ⊕ C_accessible-support(x, others, environment)
+
+where ⊕ means combined through actual usable relations, not arithmetic addition.
+
+An infant, patient, injured animal, apprentice or immature artificial system may remain viable because another entity temporarily carries missing sensing, modelling, protection or correction capability.
+
+Developmental question: does support progressively enlarge the entity's own viable agency, or merely preserve dependency?
+
+DEPENDENCE != FAILURE
+EXTERNAL SUPPORT != INTERNAL CAPABILITY
+SUPPORT AVAILABLE IN THEORY != SUPPORT REACHABLE IN TIME
+CARE != PERMANENT CONTROL
+
+### 9. Future-space quality must not collapse into option count
+
+Do not use |F_x| increasing as an automatic value rule.
+
+Any evaluation requires a declared measure / value source ν. Schematic only:
+
+V_x(t;ν) = integral over F_x(t) of ν(f) dμ(f)
+
+The measure, horizon, entity, uncertainty and value source are authored and contestable.
+
+OPTION COUNT != FUTURE VALUE
+NARROWER FUTURE != NECESSARILY WORSE FUTURE
+LONGER DURATION != NECESSARILY MORE REALISED VALUE
+VALUE SOURCE MUST BE EXPOSED
+
+### 10. Minimal temporal middle-out loop
+
+WHERE AM I IN TIME?
+WHAT CHANGED?
+WHAT CAN I ACTUALLY SENSE AT THIS RATE?
+WHICH CLOCKS MATTER TO WHICH ENTITIES?
+WHAT MUST BE REVISITED BEFORE IT WOBBLES / HARDENS?
+WHAT CAPACITY EXISTS NOW?
+WHAT IS ACCUMULATING FASTER THAN CORRECTION?
+WHAT PAST CARRIERS SHOULD UPDATE THE PRESENT MODEL?
+WHAT FUTURE PATHS ARE OPENING / CLOSING / BEING CREATED?
+WHAT SHARED TEMPORAL WITNESS SUPPORTS CROSS-ENTITY CLAIMS?
+ACT / WAIT / SEEK INFORMATION
+LOOK AGAIN
+
+This is not a new TRACE procedure. Test first whether current TRACE already generates these questions when read properly.
+
+### Rebuild discipline
+
+Before promotion:
+- map each expression to stronger owners;
+- ask whether current TRACE already contains the structure;
+- test biological, institutional, distributed-systems, AI-agent and ordinary human cases;
+- test where averages conceal catastrophic local deadlines;
+- test coercive external support;
+- test controlled / false shared clocks;
+- test misplaced trust;
+- test where waiting creates value rather than harm;
+- test where forgetting improves rather than damages the entity;
+- keep only what materially improves routing or reasoning.
