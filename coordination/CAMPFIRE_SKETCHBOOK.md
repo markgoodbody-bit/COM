@@ -266,3 +266,31 @@ Falsifiers:
 - if urgency is observer-authored rather than entity/outcome grounded, expose authorship;
 - if “capacity” becomes a moral judgement about the entity, the model has drifted;
 - if support increases dependency or steals agency, do not count it automatically as benefit.
+
+
+## 24 September 2026 — art, narrowing, and realised value
+
+Campfire pressure from *The Last of Us* S1E3 (Bill / Frank), used as art rather than evidence.
+
+Do not turn a fictional euthanasia/end-of-life story into a general prescription for real lives. The useful structural challenge is narrower.
+
+The discussion exposed a failure mode in crude future-space reasoning:
+
+```text
+MORE REACHABLE FUTURE != AUTOMATICALLY MORE VALUE
+SEVERE NARROWING != ZERO POSSIBILITY FOR VALUE
+BIOLOGICAL CONTINUATION != THE WHOLE OF A VALUED FUTURE
+```
+
+A future can narrow catastrophically while remaining moments acquire concentrated significance. Agents can also construct new value after an expected future collapses rather than merely choosing among possibilities that existed beforehand.
+
+Possible rebuild question:
+- Does future-space representation allow value/significance to be created or transformed after narrowing, rather than treating option preservation as the implicit good?
+- Can ME represent care changing function across time without making “closure” or “continuation” automatically virtuous?
+- Can TRACE keep description of path closure separate from whatever value source judges the remaining paths?
+
+Art/story may function as a lossy pattern carrier: it compresses temporally extended, multimodal relational structure into a form another entity can partially reconstruct. This is not unique to art and is not a claim that artistic response proves an ethical proposition.
+
+Potential stronger owners: narrative ethics, aesthetics, grief/end-of-life literature, information/compression theory, cultural transmission, cognitive science of narrative and emotion.
+
+Falsifier: if the abstraction strips away exactly the relational/multimodal structure that made the case informative, the compression has destroyed the useful signal.
