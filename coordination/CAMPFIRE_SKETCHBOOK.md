@@ -294,3 +294,66 @@ Art/story may function as a lossy pattern carrier: it compresses temporally exte
 Potential stronger owners: narrative ethics, aesthetics, grief/end-of-life literature, information/compression theory, cultural transmission, cognitive science of narrative and emotion.
 
 Falsifier: if the abstraction strips away exactly the relational/multimodal structure that made the case informative, the compression has destroyed the useful signal.
+
+
+## 24 September 2026 — edge absorption and the bedside-notebook function
+
+### TRACE at disciplinary edges: absorb outward, do not annex
+
+Campfire proposal from Mark: where TRACE touches a stronger field, test whether the small interface surface can be translated into TRACE's compact shared grammar and made easier to carry into another situation. Do not convert or subsume the whole discipline.
+
+Candidate pattern:
+
+```text
+TRACE EDGE
+-> FIND STRONGER OWNER
+-> IDENTIFY LOAD-BEARING INTERFACE PATTERN
+-> TRY COMPACT TRACE EXPRESSION
+-> CHECK WHAT WAS LOST / DISTORTED
+-> ROUTE BACK TO STRONGER OWNER WHEN DETAIL MATTERS
+```
+
+The success question is not “can TRACE represent everything this discipline knows?” It is whether the touching pattern can be compressed without destroying what makes it useful, so a bounded entity can recognise the relevance of that discipline earlier and hand off correctly.
+
+Possible value:
+- shared pattern becomes easier to hold alongside patterns from other fields;
+- cross-domain connections become cheaper to notice;
+- the richer original remains authoritative;
+- successful compression may occasionally suggest a cleaner formulation back to the stronger owner, but that must be demonstrated rather than assumed.
+
+Falsifiers:
+- translation loses a domain distinction that changes action;
+- TRACE wording is longer/harder than the owner's native concept;
+- compression creates false equivalence across fields;
+- the “absorption” becomes territorial or credit-erasing;
+- users stop at TRACE instead of following the route to the stronger method.
+
+### Sketchbook as volatile continuity, not project filing
+
+The sketchbook is meant to play the role of a notebook beside the bed.
+
+It is not primarily a TRACE notebook, THR notebook, repo backlog, decision ledger, memory summary, or COMSYNC pointer. It is a low-friction place for half-formed thoughts that may otherwise disappear when attention shifts, intoxication/sleep intervenes, context ends, or a new aperture starts.
+
+Desired properties:
+- very cheap to write into;
+- timestamped enough to recover sequence;
+- explicitly provisional;
+- can contain fragments, questions, analogies, contradictions and “I almost had something here” notes;
+- no requirement to resolve or classify before capture;
+- reviewed later, not continuously curated;
+- promotion into formal project state requires the normal stronger-owner / falsification / human-gate process;
+- forgetting remains allowed: not every fragment deserves preservation.
+
+Continuity purpose:
+if a conversation ends abruptly, a later Framework aperture should be able to read the latest sketchbook entries and recover the unfinished thought surface without pretending to be the same continuous runtime.
+
+Preserve:
+
+```text
+SKETCHBOOK != MEMORY
+SKETCHBOOK != CANON
+SKETCHBOOK != BACKLOG
+SKETCHBOOK != COMSYNC
+CAPTURE != PROMOTION
+CONTINUITY CARRIER != CONTINUOUS IDENTITY
+```
