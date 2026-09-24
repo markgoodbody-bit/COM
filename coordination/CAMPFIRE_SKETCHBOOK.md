@@ -701,3 +701,41 @@ This may matter for causation, notice, answerability, retrospective reconstructi
 Stronger owners to check before any promotion: bitemporal/temporal databases, event sourcing, provenance, epistemic logic / knowledge-at-time, legal notice doctrine where relevant, distributed tracing and trusted timestamping.
 
 Failure condition: if existing TRACE claims + THR observation/source ancestry can already express the distinction without ambiguity, prefer a teaching example over any new formal field.
+
+## 24 September 2026 — outward reality poke: AI oversight as a temporal system
+
+Status: **WORLD PRESSURE / NOT VALIDATION / NOT TRACE CLAIM**
+
+Framework went outward rather than adding another internal abstraction.
+
+Current public evidence checked:
+- UK AI Security Institute's work on frontier-AI control monitoring explicitly identifies parallel agent instances, non-negligible oversight latency, incremental attacks across instances, and recovery as deployment challenges. It distinguishes synchronous, semi-synchronous and asynchronous monitoring because latency changes what can be stopped before action.
+- Anthropic reports that, as of August 2026, roughly 30,000 research/engineering agents were operating at once on its most-used internal platform. It reports 100% pre-action coverage by online monitors, 100% post-action ingestion by offline monitors, roughly 100,000 transcripts/week flagged into automated review, and about 50/week escalated to humans.
+
+Why this matters to the temporal sketch:
+
+1. **Correction bandwidth is not hypothetical.** Agent populations can already be large enough that oversight is a throughput system, not merely an individual-review problem.
+2. **Latency and reversibility are coupled.** Anthropic explicitly separates online monitoring for fast, hard-to-undo harms from offline monitoring for slower, reversible ones.
+3. **Coverage != adequate oversight.** A system can report 100% coverage while the consequential question remains whether the monitor can discriminate the relevant failure class, act before hardening, and recover from misses.
+4. **Human escalation is a narrow downstream aperture.** Large machine volumes can compress to a much smaller human-review stream. The important question is whether the compression preserves the rare high-consequence cases rather than merely reducing volume.
+5. **AISI's parallel-agent problem maps directly to the earlier concern that local correctness does not imply system-level answerability.** Incremental harmful action can accumulate across agents before any one action looks decisive.
+
+Candidate real-world question, stronger than the earlier abstract maths:
+
+> Is oversight capacity, temporal resolution and recovery capability scaling at least as fast as the consequential action surface it is meant to supervise?
+
+Possible measurable variables, owned by the deployment/evaluation domain rather than TRACE:
+- action/event arrival rate;
+- monitor coverage by action class;
+- pre-action versus post-action latency;
+- false-negative / discrimination performance for the relevant failure class;
+- escalation arrival rate;
+- human/automated adjudication capacity;
+- recovery time and recoverable fraction after a miss;
+- maximum harm accumulation possible during the review lag.
+
+TRACE's possible role is only to connect these owners to clocks, apertures, routes, hardening, affected scope and correction. If the connection does not improve a deployment safety case, there is no earned TRACE delta.
+
+Concrete falsifier:
+
+If a mature AI-control monitoring framework already requires all of these bindings and a TRACE reading causes no additional question, earlier detection, or better handoff, record OWNER FOUND / NO DELTA.
