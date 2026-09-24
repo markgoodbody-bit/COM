@@ -872,3 +872,63 @@ dynamical systems; control/homeostasis; reliability engineering; autopoiesis/pro
 - if continuity is inferred from label, memory, or function alone, preserve UNKNOWN;
 - if repair/support costs are hidden on another entity, expose the carrier of that burden;
 - if preserving continuity destroys more important futures, continuity is not automatically the good.
+
+## 25 September 2026 — pre-sleep COMSYNC reduction
+
+Status: **TEAM RETURN / REDUCTION / NOT CANON**
+
+### Event / observation / record / knowledge time
+
+Codex full-reference review of TRACE + THR returned **TEACHING EXAMPLE ONLY**.
+
+Important correction to the provisional four-time sketch:
+
+`T_know(actor)` must not collapse 'information existed', 'was delivered', 'was inspectable', 'was understood', and 'was usable for action'. These are different propositions and may not be single timestamps.
+
+Likewise:
+- an event/state can hold over an interval;
+- observation can repeat;
+- records can have revisions;
+- knowledge can be lost;
+- exposure to a false statement is not knowledge of its truth.
+
+So the useful connective question is narrower:
+
+> When a temporal claim matters, distinguish what happened, what was observed, what was recorded, what was available to whom, and what could actually be used at the decision point.
+
+No new TRACE primitive earned.
+
+### Continuity
+
+Codex independent #475 review returned **TEACHING PATTERN ONLY**.
+
+Strong correction to Framework's first sketch:
+
+Three questions must remain separate:
+1. what actually persists;
+2. what process carries / reproduces it;
+3. what evidence warrants our claim that it persisted.
+
+A witness supports our continuity claim; it is not necessarily required for the thing itself to continue.
+
+The proposed general continuity stock equation `dS_R/dt = g_R + h_R - d_R` does **not** survive as a universal formulation. Reasons include incompatible units, double-counting support, organization not reducible to amount, jumps/forks/replacements, path dependence, interruption hidden by endpoint recovery, and confusion of criterion failure with evidence failure.
+
+Delete / demote it to a domain-specific analogy only where a stronger owner supplies operational units and model assumptions.
+
+Smallest surviving continuity prompt:
+
+> What is claimed to continue, across which interval and changes, under which criterion; what carries that continuation, who bears its support cost, and what observation would distinguish survival, replacement and reconstruction?
+
+Two potentially useful teaching pressures remain:
+- support dependence: continuity can be carried by another entity/environment and the cost may be externalized;
+- forks / non-transitivity: shared history or repeated local resemblance does not guarantee one unique successor or end-to-end identity.
+
+Preserve:
+
+CONTINUITY CLAIM != CONTINUITY MECHANISM
+EVIDENCE OF CONTINUITY != CONTINUITY ITSELF
+RECONSTRUCTION != UNBROKEN SURVIVAL
+SHARED HISTORY != UNIQUE SUCCESSOR
+LOCAL RESEMBLANCE != TRANSITIVE IDENTITY
+
+Claude Code's #475 operational lane had not returned at this COMSYNC. Keep UNKNOWN rather than inventing a result.
