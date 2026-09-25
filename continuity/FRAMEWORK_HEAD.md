@@ -266,9 +266,11 @@ The 22–23 September entity-through-time Campfire pressure does **not** current
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
 - digital-preservation candidates -> stronger active preservation/legacy owners.
 
-Current THR main is `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`. The #75 containment/catalogue guard repair is merged. Main validation, contribution-packet public-delivery and Pages workflows are observed SUCCESS. That establishes those workflow results, not independent truth or universal client reach.
+Current THR main is `c7be1efb5ca66673c398cdc19eb4c0f2489246d9`. Main integrity `36197053456` and Pages deployment `36197052804` are observed SUCCESS. The contribution-packet public-delivery workflow did not run because none of its scoped files changed in this repair.
 
-Post-merge falsification found a real defect in the entity-admission guard: README/registry/absolute external paths could satisfy the old record-link check. PR #75 repaired this with checkout containment + at least one catalogued machine/full record and is now merged into `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`. The unresolved semantic question remains whether that record is actually about the entity. No registry contents, record objects or catalogue entries changed in #75.
+PR #75 previously repaired entity-admission containment/catalogued-record linkage. PR #76 now repairs a separate real generated-view defect: a browse-card summary had remained stale after its underlying Camp Fire record changed. Each public record card is now bound to a SHA-256 over the existing catalogue source-basis map, so source-byte/route drift requires review and re-pin before integrity passes. Exact reviewed head `be20322ae8208ba77e231ea77617863f1a47ba22`; hosted validation `36196988375` SUCCESS / 129 tests OK. No record evidence, registry, schema, catalogue contents or record count changed.
+
+Preserve: **DIGEST MATCH != SUMMARY TRUE**. The guard detects source-basis drift; it does not semantically validate the browse prose.
 
 No THR schema/catalogue growth by momentum.
 
