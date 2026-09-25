@@ -111,7 +111,9 @@ Host-contact receipt:
 `coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260925.md`
 
 `HOST CLARIFICATION = SENT / REPLY AWAITED`
-`APPLICATION SENT = NO`  
+
+`APPLICATION SENT = NO`
+
 Registration/account/terms remain Mark's gate.
 
 ## 4. Green / frozen drafts
