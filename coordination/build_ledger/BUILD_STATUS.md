@@ -139,7 +139,8 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
 - proposal hard-limit: 1,500 words;
-- current owner-subtracted revision: **1,354 words**;
+- current owner-subtracted revision: **1,422 words**;
+- judge rehearsal and likely post-gate form copy are prepared; no identity/contact field has been entered;
 - target object: EvidenceWatch as a bounded workflow-integration/burden hypothesis inside research integrity / evidence synthesis;
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work own major component mechanisms;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
