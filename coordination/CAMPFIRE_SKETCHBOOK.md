@@ -1132,3 +1132,54 @@ Framework adds one provenance expansion:
 > Which contract applied, which rule version was in force, what artifact was evaluated, in what environment, by what verifier, under whose authority, with what result, and what correction/appeal remained reachable?
 
 These are teaching/routing questions over existing stronger owners. No new TRACE primitive or THR record is earned.
+
+
+## 26 September 2026 — complaint-route AI assistance under long correction clocks
+
+Status: **WORLD / REAL USE WATCH / STRONG OWNER PRESENT / NO TRACE-ME-THR DELTA**
+
+Primary public owner surfaces checked 26 September 2026:
+- Parliamentary and Health Service Ombudsman privacy notice:
+  https://www.ombudsman.org.uk/privacy-policy
+- PHSO 2026–2031 user-experience strategy:
+  https://www.ombudsman.org.uk/publications/our-strategy-2026-2031/user-experience
+- PHSO public service page / current wait-time notice:
+  https://www.ombudsman.org.uk/
+- ICO automated-decision guidance:
+  https://ico.org.uk/for-organisations/law-enforcement/guide-to-le-processing/individual-rights/right-not-to-be-subject-to-automated-decision-making/
+
+Current public state:
+- PHSO says current wait times can be **up to eight months** amid increased complaints needing further investigation.
+- Its strategy says digital tools and AI will help caseworkers collate information, search guidance and streamline time-consuming casework.
+- Its privacy notice says AI assists routine administrative tasks such as summarising documents and meeting preparation, and explicitly says **AI is not used to make a decision on a complaint**.
+- ICO guidance separately preserves the distinction between automated processing and significant automated decision-making, and requires meaningful human intervention where the latter rules apply.
+
+Candidate teaching seam:
+
+```text
+AI_ASSISTS_ROUTE != AI_OWNS_DECISION
+HUMAN_DECISION_LABEL != MEANINGFUL_HUMAN_REVIEW_ESTABLISHED
+FASTER_ADMINISTRATION != CORRECTION_BEFORE_HARDENING
+WAIT_TIME != HARM BY ITSELF
+LONG CORRECTION CLOCK + LIVE CONSEQUENCES -> WATCH HARDENING
+```
+
+Why this is only a watch:
+
+The public material does not show an AI-caused complaint failure, token human review, a missed correction, or a specific complainant harmed by the announced AI use. The eight-month wait is a current service-level statement, not a measured hardening event for one case.
+
+Existing stronger owners already carry:
+- ombudsman complaint/process design;
+- data-protection and automated-decision safeguards;
+- human-intervention requirements;
+- administrative service standards.
+
+Wake this only if a real case exposes a consequential gap such as:
+- AI-assisted summarisation materially alters or omits contested evidence;
+- a nominal human review cannot actually correct an automated/AI-shaped case state;
+- route delay makes a previously reachable remedy ineffective;
+- the complaint record cannot preserve the person's challenge/correction through the AI-assisted workflow.
+
+Current disposition:
+
+**OWNER FOUND / WATCH CONSEQUENCES / NO PATCH / NO THR RECORD.**
