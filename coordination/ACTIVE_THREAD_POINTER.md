@@ -89,12 +89,13 @@ Current draft:
 
 Hostile review: COM #479.
 
-EvidenceWatch draft PR #7:
-- head `252897f672dd916c2e1db273112dd45d21df0e35`;
+EvidenceWatch PR #7:
+- **MERGED** to private main `c969a7d4123458eda874fa328a4258d46b617113`;
 - CSL-JSON reference-manager file handoff;
-- 42 deterministic tests on branch;
-- branch CI SUCCESS;
-- **NOT MERGED / NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION**.
+- 43 deterministic tests;
+- post-merge CI SUCCESS;
+- **NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION**;
+- NVIDIA submission evidence remains bound to earlier head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
 
 ```text
 PROPOSAL = 1269 WORDS
