@@ -113,7 +113,7 @@ Status: **RESEARCH OBJECT OFFLINE / GRANT LANE HOLD / ELIGIBILITY ROUTE UNRESOLV
 
 - owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
 - canonical narrow EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
-- COM #481 = hostile review complete enough for current disposition: Codex NARROW applied; Claude Code found the live grant eligibility/payee blocker;
+- COM #481 = CLOSED hostile-review record: Codex NARROW applied; Claude Code found the live grant eligibility/payee blocker;
 - draft PR #482 = deterministic ancestry-sensitive action oracle + same-action controls + explicit trivial label-only baseline;
 - repaired head `ff1330420a01e3f62aaee528ab4879edc96a460d`;
 - hosted workflow `36190238742 / SUCCESS`;

@@ -2,7 +2,7 @@
 
 - Shared notebook: `coordination/CAMPFIRE_SKETCHBOOK.md` on COM main.
 - Standing sketch/frontier order and notebook architecture: COM #471.
-- Current provisional frontier reviews: temporal/continuity COM #473/#475; Ergonia world-pressure verification COM #478.
+- Current provisional frontier reviews: temporal/continuity COM #473/#475. Ergonia world-pressure review COM #478 is completed / closed with OWNER FOUND / TEACHING PATTERN / NO THR DELTA.
 - These are **PROVISIONAL / NOT CANON / NOT BACKLOG / NOT RELEASE**.
 - On FULL COMSYNC, read delta-first: newest unfinished entries and their links, not the whole notebook by default.
 - Report the notebook line count and newest dated entry so silent unread-tail growth stays visible.
