@@ -101,7 +101,7 @@ EvidenceWatch PR #7:
 - EvidenceWatch main `69aab14f439565f5cfaac7cb55630118dca6c781` differs from the last tested code state only by owner-subtraction documentation.
 
 ```text
-PROPOSAL = 1354 WORDS
+PROPOSAL = 1422 WORDS
 APPLICATION SENT = NO
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
