@@ -11,7 +11,7 @@ Owner proposal limit:
 **1,500 words**
 
 Current proposal word count:
-**1449 words**
+**1454 words**
 
 Current EvidenceWatch private main:
 `8abb167c16e2bb4504271904c8eaf040734c30fa`
@@ -48,11 +48,11 @@ FINAL TERMS / IDENTITY / SUBMIT = MARK HUMAN GATE
 
 ## 1. THE PROBLEM
 
-Research briefs, evidence syntheses and institutional decisions often depend on claims whose underlying evidence later changes: a publisher issues a correction, a dataset is revised, an owner changes a reported figure, an authority page is replaced, or an apparently new source turns out to repeat the same evidentiary root.
+The initial user is a researcher or evidence-synthesis lead maintaining a living review or recurring evidence brief. Their decision is whether an existing conclusion must be reopened when underlying evidence changes: a publisher correction, dataset revision, owner update, replaced authority page, or apparently new source that repeats the same evidentiary root.
 
 Formal retraction warnings are not the gap I am claiming. Zotero already integrates Retraction Watch and can warn when a cited item is retracted, including citations already present in a document when they are refreshed. Crossmark exposes formal scholarly corrections, retractions and updates.
 
-The residual problem is what happens **after reliance** when the relevant change is broader than a formal retraction and the dependency is broader than one citation: did the evidence state behind a bounded claim materially change, and which brief, review, policy note or decision now needs another look?
+The residual problem is what happens **after reliance** when the change is broader than a formal retraction and the dependency broader than one citation: did the evidence state behind a bounded claim materially change, and does the maintained review/brief now need reopening?
 
 There is evidence that propagation can fail. In a 2022 meta-epidemiological study of 587 systematic reviews and clinical-practice guidelines citing retracted randomized trials, 43% were published after the trial had been retracted. Among reviews/guidelines that had incorporated trials before those trials were later retracted, only about 5% corrected or retracted their own results. That is biomedical evidence, not a universal rate, but it shows the downstream-dependency failure is real. Source: https://pubmed.ncbi.nlm.nih.gov/35779825/
 
@@ -127,7 +127,7 @@ If a current product already provides that full loop at equal or better resoluti
 
 The next stage is a bounded research-workflow pilot.
 
-The initial user group would be teams maintaining living evidence syntheses, research-integrity reviews or other recurring briefs where source currentness matters. The pilot would compare EvidenceWatch with the team's existing practice on a pre-labelled set of material/non-material changes, measuring:
+The first pilot user would be an evidence-synthesis lead maintaining a living review or recurring evidence brief, using Zotero or an equivalent shared reference library as the existing workflow boundary. The pilot would compare EvidenceWatch with the team's existing practice on a pre-labelled set of material/non-material changes, measuring:
 - time to flag affected work;
 - missed material changes and false alerts;
 - reviewer minutes, duplicate suppression, and setup/maintenance time;
@@ -154,7 +154,6 @@ Up to £25,000 would be staged.
 - **Stage 3 — £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
 This moves a working standalone prototype into a measured existing-workflow test while preserving a stop path.
-
 ---
 
 ## Final human review checklist
