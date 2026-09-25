@@ -11,7 +11,7 @@ Owner proposal limit:
 **1,500 words**
 
 Current proposal word count:
-**1445 words**
+**1470 words**
 
 Current EvidenceWatch private main:
 `8abb167c16e2bb4504271904c8eaf040734c30fa`
@@ -98,7 +98,7 @@ EvidenceWatch is a working prototype, not a validated research product.
 
 The deterministic browser demo shows an owner claim moving from a baseline of three incidents, through derivative repetition that does not change canonical state, to an owner correction from three to four that creates one downstream-review alert while preserving the earlier state.
 
-A separate live technical witness (one watch, two runs) ran the same engine against real public owner pages using NVIDIA Nemotron; the second run deduplicated unchanged observations instead of issuing another alert.
+A separate live technical witness (one watch, two runs) ran the same engine against real public owner pages using NVIDIA Nemotron; the second run deduplicated unchanged observations instead of issuing another alert. The model also labelled the corrected four-incident claim "contradicted"; that label is part of the typed state the engine compares, and the anomaly remains unresolved.
 
 Demo:
 https://youtu.be/0hdwNc_t4pM
