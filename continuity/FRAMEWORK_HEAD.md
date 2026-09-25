@@ -10,6 +10,18 @@
 - Contradictory sketches remain visible by linked reply; do not silently rewrite another aperture's fragment.
 - Promotion requires a separate bounded decision and, where possible, a named occasion at which the idea would change action.
 
+## EvidenceWatch — NVIDIA Claw submitted / awaiting result
+
+Submission receipt:
+`coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
+
+```text
+SUBMITTED = YES
+VIDEO = https://youtu.be/0hdwNc_t4pM
+WINNER OUTREACH = AROUND 6 OCTOBER 2026
+AWARDED = UNKNOWN
+```
+
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
