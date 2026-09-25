@@ -150,6 +150,27 @@ CSL HANDOFF != EMBEDDED PRODUCT INTEGRATION
 APPLICATION = NO
 ```
 
+### Mercor AI Safety Fund — secondary offline lane
+
+Status: **NARROWED AFTER OWNER SUBTRACTION / NOT SUBMITTED / NO MODEL EXECUTION**.
+
+- original EOI mechanism is superseded by Marc Bara, arXiv:2609.01873;
+- adjacent source-authority/action owner: Junchi Liao, arXiv:2607.20827;
+- surviving candidate question: whether an LLM decision agent uses supplied evidence ancestry appropriately under a fixed action policy;
+- owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
+- rewritten EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
+- COM #481 owns hostile review;
+- draft PR #482 contains offline oracle/tests only;
+- creation head `1fedf8a85d331cc3211a1bf086322477c8b42efe`;
+- workflow `36185909732 / SUCCESS`;
+- Bara ESB reuse route verified: 3,300 frozen instances / 19,200 LLM reports; MIT code / CC BY 4.0 data.
+
+    NOVELTY = NOT ESTABLISHED
+    MODEL CALLS = 0
+    SPEND = $0
+    CREDENTIAL ACTION = NONE
+    APPLICATION = NONE
+
 ### Hack-Nation 7
 
 Status: **STOP / NOT APPLYING**.
