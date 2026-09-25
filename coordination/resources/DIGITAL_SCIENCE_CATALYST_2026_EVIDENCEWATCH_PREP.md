@@ -68,7 +68,7 @@ A concrete refuse/flag behaviour is tested: a derivative source repeating the ow
 
 The user remains accountable. EvidenceWatch never rewrites a brief or declares truth. Tested disagreement, source-loss and candidate-discovery cases preserve state or route review without canonical overwrite; model errors can still go undetected.
 
-The current suite has 47 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
+The current suite has 54 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
 
 ## 4. TEAM
 
@@ -87,7 +87,7 @@ A one-watch/two-run live witness used NVIDIA Nemotron against real public owner 
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are merged; current main adds only stronger-owner subtraction documentation after that tested code state. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
+There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are merged. A predeclared shadow-mode pilot protocol and deterministic offline scorer are now also merged; they freeze human labels/configuration before scoring and measure material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is engineering/pilot instrumentation, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
