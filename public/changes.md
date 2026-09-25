@@ -2,6 +2,16 @@
 
 Please Start From Here · Reader change log · Edition 0.56 · 25 September 2026
 
+### D086
+
+25 September 2026 — Put the Explore question map before the orientation.
+
+Explore already contained ten question routes and thirty authored connections, but a visitor first had to move through six orientation sections before reaching the map. The orientation was useful context; making it compulsory first-contact reading weakened the small-beginning purpose of Explore.
+
+After the existing complete Anna Atkins artwork entrance, Explore now asks what the reader is trying to understand, change or keep possible and presents the ten-question map immediately. The six original orientation sections are preserved verbatim under the native “About this reading space” disclosure. All ten questions, thirty authored “From here” connections, source routes, machine representations and other routes are unchanged.
+
+The current-state regression pins the preserved six-section orientation, graph identities and routes. Exact-head maintained CI passed, and a fresh built-page review at 1440px desktop and 390px mobile found a readable two-column/one-column map with no observed clipping or horizontal overflow; the artwork remains complete and dominant on arrival. No TRACE, Mechanical Ethics, Human Record, artwork bytes, node text, graph semantics, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.43. This is a reversible reading-order/presentation change; reader benefit remains unmeasured.
+
 ### D085
 
 25 September 2026 — Let the appeal example read like a human situation before exposing its source shape.
