@@ -79,11 +79,12 @@ Audience:
 ## Current evidence
 
 - working Node.js prototype;
-- 47 deterministic tests / last code-bearing CI green;
+- 54 deterministic tests / Windows + Ubuntu CI green;
 - append-only state and restart reconstruction;
 - correction / disagreement / source-loss / candidate-quarantine behavior;
 - CSL-JSON handoff;
 - deterministic research-shaped browser fixture;
+- predeclared shadow-mode pilot protocol + deterministic offline scorer;
 - one live two-run model witness on public owner pages.
 
 Ceilings:
@@ -114,7 +115,7 @@ Canonical copy:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current proposal:
-**1,422 words / nine required 2026 headings**
+**1,451 words / nine required 2026 headings**
 
 ## Budget
 
