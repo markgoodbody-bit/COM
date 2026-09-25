@@ -141,11 +141,13 @@ Research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEA
 
 Latest stronger-owner pass removes mechanism novelty: Cochrane owns important retraction/correction-to-review paths; Refract owns reproducible source-change events; AIEP P170 owns evidence-dependency/cascade architecture; ReadCube/scite own substantial workflow/monitoring surfaces. EvidenceWatch survives only as a workflow-integration/burden hypothesis. Current main `b8fc0971ceace55878aa6130448850d88774f254` includes the predeclared shadow-mode pilot protocol + deterministic offline scorer and PR #14's Windows file-URL repair / cross-platform CI matrix; post-merge run `36202014248` has both Windows and Ubuntu jobs SUCCESS. No live pilot, research partner, provider call or operational reliance is implied.
 
+The next evidential step is not more feature work. COM #348 comment `5840522726` narrows the first gate to one willing living-review team's already-completed update workflow: what source changed, what depended on it, how existing practice found it, and what happened next. Compare against that real baseline before building an integration. No partner is established and the note does not authorise contact.
+
 Live application form is now reached and page 1 inspected; it asks for email. Later pages and any embedded terms remain uninspected until the human identity/form gate is crossed.
 
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL = 1451 WORDS / LIVING-REVIEW + OWNER-SUBTRACTION + PILOT-INSTRUMENTATION REVISION
+PROPOSAL = 1451 CONSERVATIVE WHITESPACE TOKENS / 1422 NORMALIZED PROSE WORDS
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
