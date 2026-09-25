@@ -11,7 +11,7 @@ Owner proposal limit:
 **1,500 words**
 
 Current proposal word count:
-**1470 words**
+**1485 words**
 
 Current EvidenceWatch private main:
 `8abb167c16e2bb4504271904c8eaf040734c30fa`
@@ -68,9 +68,9 @@ EvidenceWatch is a long-running agent for post-reliance evidence monitoring.
 7. Non-material paraphrase and derivative repetition stay quiet. Corrections, source loss/recovery, disagreement or genuinely new support can trigger review.
 8. The human sees the before/after state, source role, revision history and affected downstream work, then decides whether to revise, escalate or leave it unchanged.
 
-Steps 2-7 run autonomously on a schedule; a person sets up step 1 and reviews, approves or overrides at step 8.
+Steps 2-7 run autonomously; a person owns step 1 and reviews, approves or overrides at step 8.
 
-The current prototype is standalone Node.js. A new reversible adapter now accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero, which researchers already use to hold the sources they cite. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
+The current prototype is standalone Node.js. A new reversible adapter now accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero, where researchers keep cited sources. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
 
 This is currently a **file handoff, not a live Zotero or ReadCube integration**. A funded pilot would automate the handoff through the supported integration surface of the reference-manager or shared evidence-library workflow chosen with a pilot user.
 
@@ -98,7 +98,7 @@ EvidenceWatch is a working prototype, not a validated research product.
 
 The deterministic browser demo shows an owner claim moving from a baseline of three incidents, through derivative repetition that does not change canonical state, to an owner correction from three to four that creates one downstream-review alert while preserving the earlier state.
 
-A separate live technical witness (one watch, two runs) ran the same engine against real public owner pages using NVIDIA Nemotron; the second run deduplicated unchanged observations instead of issuing another alert. The model also labelled the corrected four-incident claim "contradicted"; that label is part of the typed state the engine compares, and the anomaly remains unresolved.
+A separate live technical witness (one watch, two runs) ran the engine against real public owner pages using NVIDIA Nemotron; the second run deduplicated unchanged observations rather than alerting again. The model also labelled the corrected claim "contradicted", an unresolved anomaly in the engine's typed state.
 
 Demo:
 https://youtu.be/0hdwNc_t4pM
