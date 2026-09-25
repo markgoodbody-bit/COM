@@ -141,7 +141,7 @@ Status: **PREPARED / HOSTILE REVIEW OPEN / NOT SUBMITTED**.
 - current hostile-review revision: **1,445 words**;
 - target object: EvidenceWatch as a bounded research-integrity / evidence-synthesis workflow;
 - COM #479 owns hostile review;
-- EvidenceWatch PR #7 is merged to private main `c969a7d4123458eda874fa328a4258d46b617113`; CSL handoff remains file-based, not a live Zotero/ReadCube integration.
+- EvidenceWatch current private main is `8abb167c16e2bb4504271904c8eaf040734c30fa`; PR #7 CSL handoff, PR #8 DOI repair and PR #9 controlled witness are merged; the handoff remains file-based, not a live Zotero/ReadCube integration.
 
 ```text
 GRANT FIT != PRODUCT VALIDATION
