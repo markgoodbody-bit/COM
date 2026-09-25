@@ -9,37 +9,6 @@ WINNER OUTREACH = AROUND 6 OCTOBER 2026
 AWARDED = UNKNOWN
 ```
 
-## EvidenceWatch — launcher falsification closed / recording gate
-
-Current private standalone product source:
-`markgoodbody-bit/evidencewatch@e924b0de15ccaa1255bfdb80685f60f1a60172e9`
-
-Hosted CI:
-`35589752244 / SUCCESS`
-
-Claude Code's 100-run falsification found two concrete deterministic-recording defects after the UI freeze: inherited `EVIDENCEWATCH_PRESERVE_DEMO=1` could retain a prior demo ledger, and a second server could reset the shared ledger before failing to bind. PR #6 repairs both. Codex exact-head review returned `PASS_WITH_CEILINGS`; PR #6 is merged and main CI is green.
-
-Receipt:
-`coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`
-
-The prior live NVIDIA/public-web witness remains bound to runtime snapshot `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`. The launcher/demo-server repair is not a fresh live-provider validation.
-
-Final Airtable copy is updated to the repaired standalone head:
-`coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
-
-```text
-RECORDING PATH REPAIR = MERGED / CI GREEN
-UI FREEZE REMAINS
-NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
-
-NEXT = RECORD VIDEO
--> REVIEW FINISHED VIDEO
--> UPLOAD PUBLIC VIDEO
--> INSERT URL
--> FINAL FORM REVIEW
--> MARK EXPLICIT SUBMISSION GATE
-```
-
 ## WORLD / REAL USE — THR documentation reviews returned
 
 `coordination/build_ledger/WORLD_THR_DOCUMENTATION_REVIEWS_20260920.md`
@@ -66,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D084 live**
+Updated: **25 September 2026 — EvidenceWatch submitted + PSFH D085 live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -154,11 +123,11 @@ Freeze after green.
 - head `c630cafeb2efde1888bc773a0eaeb03376cf569b`;
 - `campfire-ci` SUCCESS;
 - repairs two concrete post-merge defects in address detection and ledger-write failure reporting;
-- OPEN / UNMERGED; Relay main remains `192caed51cabc6fdf60cebea3c1bb7df548ecdb0`; Production unchanged.
+- MERGED; Relay main is `95b2adc10a8082031cd31b289f94826d582932ef`; post-merge campfire-ci SUCCESS; Production unchanged.
 
 ### PSFH next design candidate
 
-D079 remains the preserved lighter front-door composition. D080 owns Works, D081 the contextual art-room handoffs, D082 the ten-room reading shell and D083 the appeal case family. D084 fixes a concrete accessibility interaction between D081 and D082: art-bearing node rooms now expose one first-action bypass to the reading boundary rather than two overlapping skip links. Explore and the six text-only rooms keep their existing single bypasses. The maintained contextual-art regression now pins that invariant. No further PSFH design release is queued without a new rendered/use observation or concrete defect.
+D085 is live: the five appeal-example views now present the bounded human-readable situation/question before the source-shaped fields, which remain available under disclosure and raw routes. Maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; publication run `36134343693` SUCCESS with selected live-byte verification. COM #467 (map-first Explore) remains a separate held candidate; do not merge/publish it by momentum.
 
 ## 5. Time / fresh-evidence gates
 
@@ -232,4 +201,4 @@ STOP
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / DO NOT USE TO DEFINE PROJECT VALUE**. Outside review has already repaired several preregistration defects; the latest #365 return still leaves prompt asymmetry as an open methodological item. Do not run until the intended workflow, scoring and remaining prompt asymmetry are frozen. A short-case cost failure may be the honest result; do not lengthen cases or change amortisation after outcomes. Released TRACE/ME source stays frozen unless a concrete source defect or world/use pressure earns reopening.
 
-TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D084 serves them live at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`. D079-D083 presentation/content boundaries remain intact; D084 is only the single-skip accessibility repair. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
+TRACE/ME release lane: **CLOSED AS RELEASE / OPEN AS WORLD TEST**. TRACE v0.4.0 and ME v0.8.0 are released; PSFH D085 serves them live at `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`. D079-D084 presentation/content boundaries remain intact; D085 is a bounded appeal-example legibility change only. Do not open beta5 by momentum. Next material step is real/public-case pressure or a concrete defect.
