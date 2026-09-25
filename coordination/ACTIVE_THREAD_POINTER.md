@@ -185,7 +185,7 @@ Do not create another record merely because:
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current THR main is `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`. Main-push integrity, contribution-packet public-delivery and Pages workflows are observed SUCCESS. THR PR #75 is merged; its checkout-containment + catalogued-record-link repair changed no records, registry contents or catalogue data and does not pretend record-to-entity ownership is modelled.
+Current THR main is `c7be1efb5ca66673c398cdc19eb4c0f2489246d9`. Main integrity `36197053456` and Pages deployment `36197052804` are SUCCESS. PR #76 is merged after current-main re-port + hostile shrink: each browse card is now pinned to the existing record source-basis map by a card-bound SHA-256, so record-source drift fails closed until the card is reviewed/re-pinned. Exact head `be20322a…`, hosted validation `36196988375` SUCCESS / 129 tests OK. No records, registry data, schema or record count changed. Detailed receipt: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`.
 
 ## 7. Resources
 
