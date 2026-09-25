@@ -2,7 +2,7 @@
 
 Date: 20 September 2026 — Europe/London
 
-Status: **FORM COPY FINAL / VIDEO URL TBD / TERMS CHECKBOX + SUBMISSION HUMAN-GATED**
+Status: **FORM COPY FINAL / VIDEO URL READY / TERMS CHECKBOX + SUBMISSION HUMAN-GATED**
 
 ## Basis
 
@@ -105,11 +105,11 @@ because it forced the product value to be shown quickly.
 Preferred submission artifact:
 
 ```text
-PUBLIC VIDEO URL = TBD
+PUBLIC VIDEO URL = https://youtu.be/0hdwNc_t4pM
 ```
 
-Use a 60–90 second public YouTube/Loom-style video after final credential/claim
-review.
+Use the reviewed 56.8-second unlisted YouTube video:
+https://youtu.be/0hdwNc_t4pM
 
 Do **not** provide the private GitHub repository as a judge-facing link unless
 Mark separately authorises making an appropriate surface public.
