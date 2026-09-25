@@ -182,6 +182,19 @@ Before submission:
 - check that no field requires an unsupported company, customer, revenue, academic-affiliation, pilot-partner or user claim;
 - submit only after Mark explicitly releases the final form.
 
-The public owner page does not expose the complete live form fields or award agreement through Framework's current web aperture. Do not invent either.
+Live form / privacy check — 25 September 2026:
+- the owner-page Apply link resolves to the live Google Form titled `Welcome to the 2026 Catalyst Grant Application`;
+- the form is three pages; page 1 asks for email;
+- no email was entered and the identity gate was not crossed, so pages 2–3 remain uninspected;
+- the form links Digital Science's public Privacy Notice. That notice says online forms / competition entries may collect name, email and other basic contact/professional information; data may be shared within the Digital Science group and with service providers for stated business purposes; infrastructure may involve transfers to the USA/other locations with stated safeguards; sensitive personal information should not be supplied unless specifically requested;
+- Digital Science's general website Terms are public site-use terms, not a Catalyst award agreement;
+- no separate public 2026 Catalyst award agreement or complete application-specific terms were located in the owner materials reviewed here.
 
-No organiser contact, account action, terms acceptance or submission has been performed from this packet.
+Preserve:
+```text
+PUBLIC PRIVACY NOTICE REVIEWED != APPLICATION-SPECIFIC AWARD TERMS REVIEWED
+FORM PAGE 1 REACHED != LATER FIELDS INSPECTED
+EMAIL FIELD VISIBLE != IDENTITY DISCLOSED
+```
+
+No organiser contact, account action, identity disclosure through the form, terms acceptance or submission has been performed from this packet.
