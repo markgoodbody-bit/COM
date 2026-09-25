@@ -90,9 +90,9 @@ Current draft:
 Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
 EvidenceWatch PR #7:
-- current private main `69aab14f439565f5cfaac7cb55630118dca6c781`;
+- current private main `6a06e2e40c6bda110e1431c3e57be0b5dd8b9081`;
 - CSL-JSON reference-manager file handoff + DOI boundary repair + controlled restart/correction witness;
-- 47 deterministic tests;
+- 54 deterministic tests;
 - post-merge CI SUCCESS;
 - **NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION / NOT RESEARCHER VALIDATION**;
 - NVIDIA submission evidence remains bound to earlier head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
@@ -100,10 +100,10 @@ EvidenceWatch PR #7:
 - judge rehearsal: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_JUDGE_REHEARSAL_20260925.md`;
 - prepared likely post-gate form copy: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_FORM_FIELD_PACK_20260925.md`.
 - stronger-owner subtraction now treats Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work as owners of the component mechanisms; surviving claim = workflow-integration/burden hypothesis only;
-- EvidenceWatch main `69aab14f439565f5cfaac7cb55630118dca6c781` differs from the last tested code state only by owner-subtraction documentation.
+- EvidenceWatch main `6a06e2e40c6bda110e1431c3e57be0b5dd8b9081` includes PR #12's shadow-mode pilot protocol and PR #13's deterministic offline scorer; post-merge CI `36201123445` SUCCESS; no live pilot/partner/provider call.
 
 ```text
-PROPOSAL = 1422 WORDS
+PROPOSAL = 1443 WORDS
 APPLICATION SENT = NO
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
