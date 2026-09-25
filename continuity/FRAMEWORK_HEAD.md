@@ -133,11 +133,13 @@ Current application draft:
 
 Hostile review lane: COM #479.
 
-EvidenceWatch current private main is `8abb167c16e2bb4504271904c8eaf040734c30fa` with post-merge CI SUCCESS and 46 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
+EvidenceWatch current private main is `b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f` with post-merge CI SUCCESS and 47 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
+
+Research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`. Optional Digital Science recording script: `coordination/resources/DIGITAL_SCIENCE_RESEARCH_DEMO_RECORDING_20260925.md`.
 
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL = 1445 WORDS / STRONGER-OWNER + WITNESS REVISION
+PROPOSAL = 1422 WORDS / STRONGER-OWNER + WITNESS REVISION
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
