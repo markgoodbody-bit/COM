@@ -57,7 +57,7 @@ EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781`
 
 Current reversible maintenance/design state:
 - **PSFH D086 LIVE** — maintained source `c071b1e570851b275565ca364f4a788178da9bac`; public `gh-pages@86ed354053ba9441099447c9e82441b56d79df27`; Site Preview `0.8.43`; Explore map-first reading order after complete artwork; publication `36196077132` SUCCESS with selected live bytes verified; post-sync maintained CI `36196201700` SUCCESS. PR #490 merged after exact-head CI + fresh desktop/mobile QA; superseded #467 closed;
-- **THR #75 MERGED** — main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`; validation + Pages green; no record/registry/catalogue data change;
+- **THR #76 MERGED** — main `c7be1efb5ca66673c398cdc19eb4c0f2489246d9`; browse-card source-basis freshness guard integrated after exact-head `36196988375` SUCCESS / 129 tests OK; main integrity `36197053456` + Pages `36197052804` SUCCESS; no record/registry/schema/catalogue-content change. #75 containment repair remains inherited;
 - **Relay #257 MERGED** — main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`; issue bodies and zero-comment issues now participate in COMSYNC mail discovery; no Production activation.
 
 Current receipts:
@@ -65,6 +65,7 @@ Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`
 - `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`
 - `coordination/build_ledger/PSFH_D086_PUBLICATION_20260925.md`
+- `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`
 
 ## Active non-source design
 
