@@ -22,37 +22,6 @@ WINNER OUTREACH = AROUND 6 OCTOBER 2026
 AWARDED = UNKNOWN
 ```
 
-## EvidenceWatch — launcher falsification closed / recording gate
-
-Current private standalone product source:
-`markgoodbody-bit/evidencewatch@e924b0de15ccaa1255bfdb80685f60f1a60172e9`
-
-Hosted CI:
-`35589752244 / SUCCESS`
-
-Claude Code's 100-run falsification found two concrete deterministic-recording defects after the UI freeze: inherited `EVIDENCEWATCH_PRESERVE_DEMO=1` could retain a prior demo ledger, and a second server could reset the shared ledger before failing to bind. PR #6 repairs both. Codex exact-head review returned `PASS_WITH_CEILINGS`; PR #6 is merged and main CI is green.
-
-Receipt:
-`coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`
-
-The prior live NVIDIA/public-web witness remains bound to runtime snapshot `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`. The launcher/demo-server repair is not a fresh live-provider validation.
-
-Final Airtable copy is updated to the repaired standalone head:
-`coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
-
-```text
-RECORDING PATH REPAIR = MERGED / CI GREEN
-UI FREEZE REMAINS
-NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
-
-NEXT = RECORD VIDEO
--> REVIEW FINISHED VIDEO
--> UPLOAD PUBLIC VIDEO
--> INSERT URL
--> FINAL FORM REVIEW
--> MARK EXPLICIT SUBMISSION GATE
-```
-
 ## WORLD / REAL USE — THR documentation reviews returned
 
 `coordination/build_ledger/WORLD_THR_DOCUMENTATION_REVIEWS_20260920.md`
@@ -108,8 +77,8 @@ Reacquired before this compaction:
 
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
-- The Human Record main: `0a8e5370891c09bb0993a4da136219e658d1d104` — four public records; entity-admission guard integrated;
-- Campfire Relay main: `192caed51cabc6fdf60cebea3c1bb7df548ecdb0` — COMSYNC/watchdog split integrated; no Production promotion.
+- The Human Record main: `8efb858cd0f539bc208f63b2f2bfb3d4c3750795` — four public records; bounded entity-admission containment/catalogue repair from #75 merged; main validation + Pages green;
+- Campfire Relay main: `95b2adc10a8082031cd31b289f94826d582932ef` — #256 bounded COMSYNC repairs merged; campfire-ci green; no Production promotion.
 
 Formal baselines:
 - **TRACE v0.4.0** — released / not validated / no efficacy result;
@@ -237,9 +206,9 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D084 is the current public door: maintained source `e09d22d03a4b4a0754dfe7c29853dad91742cc38`, published `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`, Site Preview `0.8.41`. Publication run `35895091228` completed SUCCESS with selected exact live-byte verification. D079 keeps the lighter illustrated-essay opening; D080 unified Works; D081 cleaned contextual art entrances; D082 unified the ten-room reading shell; D083 unified the appeal-example case family; D084 removes the duplicate first-action skip link from the four art-bearing conceptual rooms while preserving the single appropriate bypass on Explore and text-only rooms. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices; do not turn human gates into engineering churn.
+D085 is the current public door: maintained source `f6985439d58fe0937c8546a04a5845b28283265f`, published `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`, Site Preview `0.8.42`. Publication run `36134343693` completed SUCCESS with exact prior-public-head pinning and selected live-byte verification. D079 keeps the lighter illustrated-essay opening; D080 unified Works; D081 cleaned contextual art entrances; D082 unified the ten-room reading shell; D083 unified the appeal-example case family; D084 removed the duplicate first-action skip link; D085 makes the five appeal views human-readable first while preserving the source-shaped fields, status, facts, unknowns, provenance and raw Markdown/JSON routes under disclosure. D073 TRACE/ME release-resource identities remain unchanged. Leave a Mark / Remark42 remains behind human/controller/legal/production-topology choices.
 
-PSFH #440 + #442 + #443 were integrated in D078; D079 published Mark's lighter opening. D080 then moves below the front door: PR #456 unified the Works shelf and six dedicated encounters around art-first, aspect-preserving presentation with provenance adjacent, while preserving work-specific accounts and multi-view/tall-work treatment. `scripts/test-works-current.mjs` is now part of maintained CI. D081 art rooms, D082 reading shell and D083 appeal family remain regression-bound. D084 repairs the observed cross-layer accessibility collision and extends the maintained contextual-art regression to require one correct skip link per contextual room. The remaining long-form/utility pages already inherit the shared stylesheet and currently show no concrete defect; do not create D085 by momentum.
+D085 was earned by the current external-comprehension pressure, not version momentum. COM #467 (map-first Explore) remains open/green but is deliberately held so its larger orientation change can be judged separately after D085 rather than bundled into this release. Publication receipt: `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`.
 
 ## The Human Record
 
@@ -322,4 +291,4 @@ OMITTED FROM HEAD != ABSENT
 
 ## Release / Door update — 23 September
 
-TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D084 is live at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`, maintained source `e09d22d03a4b4a0754dfe7c29853dad91742cc38`; publication run `35895091228` SUCCESS with selected exact live-byte verification. D079 homepage, D080 Works, D081 art presentation, D082 reading-room content and D083 appeal facts/lenses remain unchanged. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
+TRACE v0.4.0 and Mechanical Ethics v0.8.0 are released. PSFH D085 is live at `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`, maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; publication run `36134343693` SUCCESS with selected exact live-byte verification. D079 homepage, D080 Works, D081 art presentation, D082 reading-room content and D084 accessibility boundary remain intact; D085 changes only appeal-example presentation order/legibility. Existing AI-training grants remain scoped to TRACE v0.3.0 / ME v0.7.0. Next TRACE/ME work returns to WORLD / REAL USE; the practical-advantage preregistration remains unrun and does not retroactively validate the release.
