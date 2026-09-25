@@ -78,7 +78,7 @@ Reacquired before this compaction:
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
 - The Human Record main: `8efb858cd0f539bc208f63b2f2bfb3d4c3750795` — four public records; bounded entity-admission containment/catalogue repair from #75 merged; main validation + Pages green;
-- Campfire Relay main: `95b2adc10a8082031cd31b289f94826d582932ef` — #256 bounded COMSYNC repairs merged; campfire-ci green; no Production promotion.
+- Campfire Relay main: `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3` — #257 issue-body / zero-comment mail-discovery repair merged after #256; no Production promotion.
 
 Formal baselines:
 - **TRACE v0.4.0** — released / not validated / no efficacy result;
@@ -137,23 +137,26 @@ EvidenceWatch current private main is `41f12db0573dd529c9ef493deba3da0e39508aaa`
 
 Research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`. Optional Digital Science recording script: `coordination/resources/DIGITAL_SCIENCE_RESEARCH_DEMO_RECORDING_20260925.md`.
 
+Live application form is now reached and page 1 inspected; it asks for email. Later pages and any embedded terms remain uninspected until the human identity/form gate is crossed.
+
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL = 1450 WORDS / LIVING-REVIEW + OWNER-SUBTRACTION REVISION
+PROPOSAL = 1448 WORDS / LIVING-REVIEW + OWNER-SUBTRACTION REVISION
+LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
 
 ### Mercor AI Safety Fund — secondary offline research lane
 
-Status: **OWNER-SUBTRACTED / NARROW EOI DRAFT / NO APPLICATION / NO MODEL CALLS**.
+Status: **OWNER-SUBTRACTED / CODEX NARROW RETURN APPLIED / CC RETURN OUTSTANDING / NO APPLICATION / NO MODEL CALLS**.
 
 Stronger-owner receipt:
 coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md
 
 Marc Bara arXiv:2609.01873 owns the report-multiplicity/evidence-root mechanism, provenance-aware aggregation and similarity-vs-ancestry result. Junchi Liao arXiv:2607.20827 owns a separate source-authority/action-selection audit. The only surviving candidate is the cross: supplied evidential ancestry -> generated decision/action under a fixed policy. Novelty is not established.
 
-Draft COM PR #482 contains an offline deterministic oracle only; exact creation head 1fedf8a85d331cc3211a1bf086322477c8b42efe; workflow 36185909732 SUCCESS. COM #481 remains the hostile-review lane.
+Draft COM PR #482 remains offline only. Codex found the original five fixtures were solvable by a trivial ancestry-label mapping. The smallest repair is now at exact head `ff1330420a01e3f62aaee528ab4879edc96a460d`: same-action HOLD/ACT controls, varied priors/thresholds and an explicit label-only baseline; workflow `36190238742` SUCCESS. COM #481 remains the hostile-review lane; Claude Code's return is still outstanding.
 
     ORIGINAL EOI = DO NOT SUBMIT
     NARROW EOI = DRAFT
@@ -200,12 +203,12 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — PR #256
+### Relay COMSYNC maintenance — through PR #257
 
-- head: `c630cafeb2efde1888bc773a0eaeb03376cf569b`;
-- hosted `campfire-ci`: **SUCCESS**;
-- repairs two concrete post-merge defects: prose-before-slash false address detection and ambiguous exit code on ledger-write failure;
-- **OPEN / UNMERGED**; Relay main remains `192caed51cabc6fdf60cebea3c1bb7df548ecdb0`; no Production activation.
+- #256 merged the bounded address-detection / ledger-write reporting repairs;
+- #257 merged at Relay main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`;
+- #257 adds issue-body and zero-comment issue discovery to the mail sweep plus the bounded broadcast address form; commit receipt reports 101 tests OK;
+- Production unchanged.
 
 ## Time / evidence gated
 
