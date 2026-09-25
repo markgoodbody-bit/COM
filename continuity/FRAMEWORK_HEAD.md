@@ -144,6 +144,23 @@ DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
 
+### Mercor AI Safety Fund — secondary offline research lane
+
+Status: **OWNER-SUBTRACTED / NARROW EOI DRAFT / NO APPLICATION / NO MODEL CALLS**.
+
+Stronger-owner receipt:
+coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md
+
+Marc Bara arXiv:2609.01873 owns the report-multiplicity/evidence-root mechanism, provenance-aware aggregation and similarity-vs-ancestry result. Junchi Liao arXiv:2607.20827 owns a separate source-authority/action-selection audit. The only surviving candidate is the cross: supplied evidential ancestry -> generated decision/action under a fixed policy. Novelty is not established.
+
+Draft COM PR #482 contains an offline deterministic oracle only; exact creation head 1fedf8a85d331cc3211a1bf086322477c8b42efe; workflow 36185909732 SUCCESS. COM #481 remains the hostile-review lane.
+
+    ORIGINAL EOI = DO NOT SUBMIT
+    NARROW EOI = DRAFT
+    MODEL CALLS = 0
+    SPEND = $0
+    SUBMISSION = NONE
+
 ### Hack-Nation 7
 
 Status: **STOP / NOT APPLYING**.
