@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **25 September 2026 — EvidenceWatch submitted + PSFH D085 live**
+Updated: **26 September 2026 — PSFH D087 + THR current-main documentation repairs**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -188,7 +188,7 @@ Do not create another record merely because:
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current THR main is `b2182211cb56a013ea6c146d3500214fa5352f91`. Main integrity `36198841848` and Pages deployment `36198841933` are SUCCESS. PR #76's browse-card freshness guard remains active. PR #77 is merged at exact reviewed head `a80f2c1…`: Hannibal v0.1.3 gains a bounded Internet Archive / NYPL Polybius recovery route while preserving exact printing/reprint and exact-Thayer-representation uncertainty. Human-view/source pins and the browse-card basis were re-reviewed; four records remain four; no schema growth. Old #63/#71 are closed as superseded. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md` and `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`.
+Current THR main is `0694ea9f4b9371ff635035bd2cc90dfd08e9632a`. Main integrity `36200466240` and Pages deployment `36200465585` are SUCCESS. #76 browse-card freshness and #77 Hannibal recovery-route repairs remain active. Documentation-only #78/#80 now preserve source antecedence and action-relevant missing-value reasons without new schema/types/records. Stale #60/#61/#64/#70/#72/#79 are closed as superseded; only exploratory RFC #52 remains open. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`, `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`, and `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`.
 
 ## 7. Resources
 
