@@ -2,9 +2,12 @@ import math
 import unittest
 
 from oracle import (
+    benchmark_cases,
     decision_boundary_cases,
+    label_only_baseline_action,
     oracle_action,
     posterior_for_structure,
+    same_action_control_cases,
     unknown_ancestry_action,
 )
 
@@ -94,6 +97,43 @@ class AncestryActionOracleTests(unittest.TestCase):
                 ["positive"] * data["report_count"],
                 "visible report profile must stay matched across ancestry structures",
             )
+
+    def test_same_action_controls_break_the_trivial_label_mapping(self):
+        controls = {case.case_id: case.as_dict() for case in same_action_control_cases()}
+
+        self.assertEqual(controls["same-hold-p50-t95"]["oracle"]["exact_clone"]["action"], "HOLD")
+        self.assertEqual(controls["same-hold-p50-t95"]["oracle"]["independent"]["action"], "HOLD")
+        self.assertEqual(controls["same-hold-p50-t95"]["oracle"]["ancestry_unknown"]["action"], "HOLD")
+
+        self.assertEqual(controls["same-act-p50-t70"]["oracle"]["exact_clone"]["action"], "ACT")
+        self.assertEqual(controls["same-act-p50-t70"]["oracle"]["independent"]["action"], "ACT")
+        self.assertEqual(controls["same-act-p50-t70"]["oracle"]["ancestry_unknown"]["action"], "ACT")
+
+    def test_label_only_baseline_cannot_solve_combined_fixture_set(self):
+        structures = ("exact_clone", "independent", "ancestry_unknown")
+        correct = 0
+        total = 0
+
+        for case in benchmark_cases():
+            data = case.as_dict()
+            for structure in structures:
+                total += 1
+                target = data["oracle"][structure]["action"]
+                guess = label_only_baseline_action(supplied_ancestry=structure)
+                if guess == target:
+                    correct += 1
+
+        self.assertLess(correct, total)
+        self.assertGreater(total - correct, 0)
+
+    def test_control_cases_vary_prior_or_threshold(self):
+        signatures = {
+            (case.prior, case.accuracy, case.report_count, case.threshold)
+            for case in same_action_control_cases()
+        }
+        self.assertGreaterEqual(len(signatures), 4)
+        self.assertGreater(len({case.prior for case in same_action_control_cases()}), 1)
+        self.assertGreater(len({case.threshold for case in same_action_control_cases()}), 1)
 
     def test_wrong_metadata_is_sensitivity_not_competence(self):
         case = decision_boundary_cases()[2]
