@@ -53,7 +53,7 @@ History belongs in dated receipts + Git.
 
 No single Production/source build lane is currently authorized.
 
-EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781`; the latest move is owner-subtraction documentation only. The last code-bearing state remains CI-green with 47 deterministic tests after the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
+EvidenceWatch current private main is `6a06e2e40c6bda110e1431c3e57be0b5dd8b9081`, post-merge CI `36201123445` SUCCESS with 54 deterministic tests. In addition to the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness, main now includes PR #12's predeclared shadow-mode research pilot protocol and PR #13's deterministic offline pilot scorer. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
@@ -147,7 +147,7 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 - target object: EvidenceWatch as a bounded workflow-integration/burden hypothesis inside research integrity / evidence synthesis;
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work own major component mechanisms;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
-- EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781`; PR #7 CSL handoff, PR #8 DOI repair and PR #9 controlled witness are merged; the handoff remains file-based, not a live Zotero/ReadCube integration.
+- EvidenceWatch current private main is `6a06e2e40c6bda110e1431c3e57be0b5dd8b9081`; PR #7 CSL handoff, PR #8 DOI repair, PR #9 controlled witness, PR #12 pilot protocol and PR #13 offline scorer are merged; the handoff remains file-based, not a live Zotero/ReadCube integration; no live research pilot exists.
 - live application form reached; page 1 inspected (email); later fields and embedded terms remain unknown until the human form gate is crossed.
 
 ```text
