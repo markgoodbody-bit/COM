@@ -45,7 +45,7 @@ History belongs in dated receipts + Git.
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
 - Human Record main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795` — four public records; #75 containment/catalogue guard repair merged; validation + Pages green;
-- Campfire Relay main `95b2adc10a8082031cd31b289f94826d582932ef` — #256 bounded COMSYNC repairs merged; campfire-ci green; Production unchanged.
+- Campfire Relay main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3` — #257 issue-body / zero-comment discovery repair merged after #256; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -58,7 +58,7 @@ EvidenceWatch current private main is `41f12db0573dd529c9ef493deba3da0e39508aaa`
 Current reversible maintenance/design state:
 - **PSFH D085 LIVE** — maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; human-first appeal-example presentation only; selected live bytes verified. PR #467 map-first Explore remains held / not live;
 - **THR #75 MERGED** — main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`; validation + Pages green; no record/registry/catalogue data change;
-- **Relay #256 MERGED** — main `95b2adc10a8082031cd31b289f94826d582932ef`; campfire-ci green; no Production activation.
+- **Relay #257 MERGED** — main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`; issue bodies and zero-comment issues now participate in COMSYNC mail discovery; no Production activation.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
@@ -139,10 +139,11 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
 - proposal hard-limit: 1,500 words;
-- current hostile-review revision: **1,450 words**;
+- current hostile-review revision: **1,448 words**;
 - target object: EvidenceWatch as a bounded research-integrity / evidence-synthesis workflow;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
 - EvidenceWatch current private main is `41f12db0573dd529c9ef493deba3da0e39508aaa`; PR #7 CSL handoff, PR #8 DOI repair and PR #9 controlled witness are merged; the handoff remains file-based, not a live Zotero/ReadCube integration.
+- live application form reached; page 1 inspected (email); later fields and embedded terms remain unknown until the human form gate is crossed.
 
 ```text
 GRANT FIT != PRODUCT VALIDATION
@@ -152,17 +153,17 @@ APPLICATION = NO
 
 ### Mercor AI Safety Fund — secondary offline lane
 
-Status: **NARROWED AFTER OWNER SUBTRACTION / NOT SUBMITTED / NO MODEL EXECUTION**.
+Status: **NARROWED AFTER OWNER SUBTRACTION / CODEX REPAIR APPLIED / NOT SUBMITTED / NO MODEL EXECUTION**.
 
 - original EOI mechanism is superseded by Marc Bara, arXiv:2609.01873;
 - adjacent source-authority/action owner: Junchi Liao, arXiv:2607.20827;
 - surviving candidate question: whether an LLM decision agent uses supplied evidence ancestry appropriately under a fixed action policy;
 - owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
 - rewritten EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
-- COM #481 owns hostile review;
-- draft PR #482 contains offline oracle/tests only;
-- creation head `1fedf8a85d331cc3211a1bf086322477c8b42efe`;
-- workflow `36185909732 / SUCCESS`;
+- COM #481 owns hostile review; Codex returned NARROW and Claude Code remains outstanding;
+- draft PR #482 contains offline oracle/tests plus same-action controls and an explicit label-only baseline;
+- repaired head `ff1330420a01e3f62aaee528ab4879edc96a460d`;
+- workflow `36190238742 / SUCCESS`;
 - Bara ESB reuse route verified: 3,300 frozen instances / 19,200 LLM reports; MIT code / CC BY 4.0 data.
 
     NOVELTY = NOT ESTABLISHED
@@ -229,8 +230,8 @@ No current work is blocked enough on paid compute/API to justify manufacturing a
 ## External / consequential action state
 
 ```text
-competition application = NONE
-competition submission = NONE
+NVIDIA Claw competition submission = SUBMITTED / award unknown
+other competition application = NONE
 grant application = NONE
 new account / terms = NONE
 new spend = NONE
