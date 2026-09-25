@@ -114,7 +114,7 @@ A one-watch/two-run live witness used NVIDIA Nemotron against real public owner 
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are now merged on EvidenceWatch main (`b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`) with post-merge CI green. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
+There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are now merged on EvidenceWatch main (`41f12db0573dd529c9ef493deba3da0e39508aaa`) with post-merge CI green. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
