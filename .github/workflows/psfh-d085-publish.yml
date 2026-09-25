@@ -8,6 +8,7 @@ on:
       - 'public/changes.md'
       - 'public/changes.html'
       - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
       - 'public/explore/example/**'
       - 'app/globals.css'
       - 'scripts/test-appeal-example-current.mjs'
