@@ -75,26 +75,34 @@ EXTERNAL REVIEW = RETURNED / SYNTHESIZED / NOT VALIDATION
 
 Next: world/use pressure, not another general rewrite. The practical-advantage preregistration remains a separate unrun test. Reopen either released source only for a concrete defect or evidence from use; do not weaken release integrity or manufacture beta5 by momentum.
 
-## 3. Current human gate — Hack-Nation 7
+## 3. Current human gate — Digital Science Catalyst Grant 2026
 
-Owner source reverified **23 September**: Batch 6 still closes **26 September 2026**; the event is listed for **3–4 October 2026**.
+Owner rules rechecked **25 September 2026**:
+- theme: **Agentic Workflows You Can Trust**;
+- individuals / research projects / early-stage prototypes or concepts eligible;
+- proposal maximum **1,500 words** using the owner headings;
+- judges score team, problem, solution, competitors, market, progress and Digital Science fit;
+- deadline **5 October 2026, 17:00 BST**.
 
-- answer bank ready;
-- no additional engineering prerequisite;
-- no pre-existing idea/team required before acceptance;
-- exact challenge comes with event.
+Current draft:
+`coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
-Receipt:
-`coordination/build_ledger/HACK_NATION_APPLICATION_GATE_REFRESH_20260919.md`
+Hostile review: COM #479.
 
-Host-contact receipt:
-`coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260925.md`
+EvidenceWatch draft PR #7:
+- head `252897f672dd916c2e1db273112dd45d21df0e35`;
+- CSL-JSON reference-manager file handoff;
+- 42 deterministic tests on branch;
+- branch CI SUCCESS;
+- **NOT MERGED / NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION**.
 
-`HOST CLARIFICATION = SENT / REPLY AWAITED`
+```text
+PROPOSAL = 1269 WORDS
+APPLICATION SENT = NO
+FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
+```
 
-`APPLICATION SENT = NO`
-
-Registration/account/terms remain Mark's gate.
+Hack-Nation 7 is **STOP / NOT APPLYING**. Do not revive it unless format/terms materially change.
 
 ## 4. Green / frozen drafts
 
