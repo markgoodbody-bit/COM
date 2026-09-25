@@ -11,22 +11,25 @@ Owner proposal limit:
 **1,500 words**
 
 Current proposal word count:
-**1454 words**
+**1422 words**
 
 Current EvidenceWatch private main:
-`8abb167c16e2bb4504271904c8eaf040734c30fa`
+`b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`
 
 Current CI:
 **SUCCESS**
 
 Current deterministic suite:
-**46 tests / 46 pass**
+**47 tests / 47 pass**
 
 Engineering witness receipt:
 `coordination/build_ledger/EVIDENCEWATCH_RESEARCH_HANDOFF_WITNESS_20260925.md`
 
-Demo:
+Demo currently available:
 https://youtu.be/0hdwNc_t4pM
+
+Current product also includes a clearly labelled synthetic research-correction browser fixture, selectable locally through:
+`scripts/start-research-demo.ps1`
 
 Related public work:
 - https://github.com/markgoodbody-bit/human-record
@@ -39,6 +42,7 @@ GRANT FIT != PRODUCT VALIDATION
 FORMAL RETRACTION ALERTING != OUR GAP
 CSL HANDOFF != LIVE PRODUCT INTEGRATION
 SYNTHETIC RESEARCH WITNESS != RESEARCHER VALIDATION
+SYNTHETIC RESEARCH DEMO != LIVE SCHOLARLY EVIDENCE
 NO RESEARCH CUSTOMERS CLAIMED
 NO PRICING VALIDATION CLAIMED
 FINAL TERMS / IDENTITY / SUBMIT = MARK HUMAN GATE
@@ -85,7 +89,7 @@ A concrete refusal/escalation behaviour is already tested: a newly discovered ca
 
 The user remains accountable. EvidenceWatch never rewrites a brief or declares truth. Tested disagreement, source-loss and candidate-discovery cases preserve state or route review without canonical overwrite; model errors can still go undetected.
 
-The current suite has 46 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
+The current suite has 47 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
 
 ## 4. TEAM
 
@@ -104,7 +108,7 @@ A one-watch/two-run live witness used NVIDIA Nemotron against real public owner 
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are now merged on EvidenceWatch main (`8abb167c16e2bb4504271904c8eaf040734c30fa`) with post-merge CI green. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
+There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are now merged on EvidenceWatch main (`b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`) with post-merge CI green. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
@@ -114,14 +118,15 @@ https://pleasestartfromhere.com/
 
 Strong existing owners already cover large parts of this problem:
 
-- **Zotero + Retraction Watch** already warns about retracted items in a library and can warn when an existing document contains a citation that was later retracted. EvidenceWatch should not be built merely to reproduce that: https://www.zotero.org/blog/retracted-item-notifications/
-- **Crossmark / Crossref** exposes formal corrections, retractions and other publisher-registered updates: https://www.crossref.org/services/crossmark/
-- **ReadCube** already owns reference management, recurring literature monitoring, shared libraries and systematic-review workflows. It is therefore both a strong alternative and a natural place to test whether the residual dependency-monitoring pattern adds anything: https://about.readcube.com/
-- **Visualping / Distill** own generic webpage-change monitoring; **scite** owns living citation context and retraction/citation signals.
+- **Zotero + Retraction Watch** warns about retracted library items and citations later retracted: https://www.zotero.org/blog/retracted-item-notifications/
+- **Crossmark / Crossref** exposes formal corrections, retractions and publisher-registered updates: https://www.crossref.org/services/crossmark/
+- **ReadCube** owns reference management, literature monitoring, shared libraries and systematic-review workflows: https://about.readcube.com/
+- Digital Science's own Catalyst portfolio includes **PostPub**, which tracks retractions/integrity actions, and **VIRUS**, which tracks questionable papers and their downstream scholarly/policy impact. These are close precedents, not gaps I should relabel as mine.
+- scite and generic page-change monitors own further citation/change signals.
 
-EvidenceWatch survives only if the conjunction is useful: **post-reliance claim-level state across heterogeneous sources + source ancestry/independence + explicit state authority + material-change filtering + an explicit map to downstream work beyond the source itself**.
+The surviving hypothesis is narrower: **post-reliance claim-level state across heterogeneous sources + ancestry/independence + explicit state authority + material-change filtering + a map to downstream work that may need reopening**.
 
-If a current product already provides that full loop at equal or better resolution, EvidenceWatch should be killed or narrowed rather than marketed around it.
+If another product already provides that full loop better, EvidenceWatch should be killed or narrowed.
 
 ## 7. WHERE THIS GOES
 
@@ -154,6 +159,7 @@ Up to £25,000 would be staged.
 - **Stage 3 — £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
 This moves a working standalone prototype into a measured existing-workflow test while preserving a stop path.
+
 ---
 
 ## Final human review checklist
@@ -164,7 +170,7 @@ Before submission:
 - read any privacy, publicity, IP, award or participation terms shown in the actual application form;
 - specifically check whether Digital Science's generic website-content licence applies to Catalyst application material; current public evidence does not establish that;
 - confirm name/email/contact fields;
-- decide whether to provide the unlisted NVIDIA demo URL as the prototype demo;
+- decide whether to use the existing unlisted NVIDIA demo or record the research-specific deterministic demo;
 - confirm the staged £25,000 budget;
 - check that no field requires an unsupported company, customer, revenue, academic affiliation or user claim;
 - submit only after Mark explicitly releases the final form.
