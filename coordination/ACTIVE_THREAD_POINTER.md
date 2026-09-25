@@ -87,10 +87,10 @@ Owner rules rechecked **25 September 2026**:
 Current draft:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
-Hostile review: COM #479.
+Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
 EvidenceWatch PR #7:
-- current private main `b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`;
+- current private main `41f12db0573dd529c9ef493deba3da0e39508aaa`;
 - CSL-JSON reference-manager file handoff + DOI boundary repair + controlled restart/correction witness;
 - 47 deterministic tests;
 - post-merge CI SUCCESS;
@@ -99,7 +99,7 @@ EvidenceWatch PR #7:
 - selectable synthetic research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`.
 
 ```text
-PROPOSAL = 1422 WORDS
+PROPOSAL = 1450 WORDS
 APPLICATION SENT = NO
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
