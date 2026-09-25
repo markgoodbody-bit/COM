@@ -11,7 +11,7 @@ Owner proposal limit:
 **1,500 words**
 
 Current proposal word count:
-**1445 words**
+**1449 words**
 
 Current EvidenceWatch private main:
 `8abb167c16e2bb4504271904c8eaf040734c30fa`
@@ -21,6 +21,9 @@ Current CI:
 
 Current deterministic suite:
 **46 tests / 46 pass**
+
+Engineering witness receipt:
+`coordination/build_ledger/EVIDENCEWATCH_RESEARCH_HANDOFF_WITNESS_20260925.md`
 
 Demo:
 https://youtu.be/0hdwNc_t4pM
@@ -57,7 +60,7 @@ I have not yet measured how often the broader EvidenceWatch problem occurs in ta
 
 ## 2. YOUR WORKFLOW
 
-EvidenceWatch is a long-running agent for post-reliance evidence monitoring.
+EvidenceWatch is a configured multi-step monitoring agent. Humans set the question, source policy and dependents; scheduled observation, analysis, state comparison and review routing then run without another prompt.
 
 1. A researcher defines a bounded question, the sources relevant to it, which source has authority for which state, and the downstream item that relies on the claim.
 2. EvidenceWatch fetches and fingerprints those sources on a schedule.
@@ -80,7 +83,7 @@ EvidenceWatch rebuilds canonical state from an append-only ledger after restart.
 
 A concrete refusal/escalation behaviour is already tested: a newly discovered candidate source may be analysed but cannot establish or advance canonical state and cannot create a canonical alert until a human/configuration change promotes it. When a current authority source becomes unreachable, EvidenceWatch flags review but preserves the last known claim state instead of converting "unreachable" into "false".
 
-The user remains accountable for the research output. EvidenceWatch does not automatically rewrite a brief, retract a claim or declare a source true or false. Uncertainty or contradiction routes to review.
+The user remains accountable. EvidenceWatch never rewrites a brief or declares truth. Tested disagreement, source-loss and candidate-discovery cases preserve state or route review without canonical overwrite; model errors can still go undetected.
 
 The current suite has 46 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
 
@@ -96,7 +99,7 @@ EvidenceWatch is a working prototype, not a validated research product.
 
 The deterministic browser demo shows an owner claim moving from a baseline of three incidents, through derivative repetition that does not change canonical state, to an owner correction from three to four that creates one downstream-review alert while preserving the earlier state.
 
-A separate live technical witness ran the engine against real public owner pages using NVIDIA Nemotron; a second same-ledger run deduplicated unchanged observations instead of issuing another alert.
+A one-watch/two-run live witness used NVIDIA Nemotron against real public owner pages; the second same-ledger run deduplicated unchanged observations. One model-status field was internally inconsistent and remains unresolved rather than being treated as validation.
 
 Demo:
 https://youtu.be/0hdwNc_t4pM
@@ -124,15 +127,13 @@ If a current product already provides that full loop at equal or better resoluti
 
 The next stage is a bounded research-workflow pilot.
 
-The initial user group would be teams maintaining living evidence syntheses, research-integrity reviews or other recurring briefs where source currentness matters. The pilot would measure:
-- time from authoritative source correction to affected work being flagged;
-- material/false alert rate;
-- reviewer minutes per alert;
-- duplicate/derivative suppression;
-- whether users can reconstruct why an alert happened without trusting the model;
-- setup burden for explicit source authority.
+The initial user group would be teams maintaining living evidence syntheses, research-integrity reviews or other recurring briefs where source currentness matters. The pilot would compare EvidenceWatch with the team's existing practice on a pre-labelled set of material/non-material changes, measuring:
+- time to flag affected work;
+- missed material changes and false alerts;
+- reviewer minutes, duplicate suppression, and setup/maintenance time;
+- whether users can reconstruct why an alert happened without trusting the model.
 
-A negative result is useful. If setup burden is too high, material changes are too rare, or reviewers cannot trust the routing, the product should be narrowed or stopped.
+Stop or narrow if maintenance exceeds saved review time, material changes are too rare, or missed-change rate is unacceptable.
 
 If later commercialised, the plausible buyer is an institution or research team paying for monitored workspaces/integrations. A workspace or monitored-collection subscription is a hypothesis only; pricing has not been tested.
 
@@ -146,15 +147,13 @@ Digital Science also owns products close to the natural integration surface. Rea
 
 ## 9. BUDGET
 
-Up to £25,000 would fund a bounded pilot rather than general project overhead:
+Up to £25,000 would be staged.
 
-- £10,000 — engineering time for a supported reference-library/workflow integration and deployment;
-- £6,000 — researcher workflow testing, observation and evaluation;
-- £4,000 — model/API and infrastructure costs for repeated controlled monitoring;
-- £3,000 — independent security/provenance/adversarial review;
-- £2,000 — reproducibility packaging and documentation.
+- **Stage 1 — £5,000 cap:** workflow integration, matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
+- **Stage 2 — £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
+- **Stage 3 — £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
-What this enables that I cannot do today is the important part: move from a technically working standalone prototype to a measured test inside a workflow that researchers already use, with enough external review to discover whether the product residue is real.
+This moves a working standalone prototype into a measured existing-workflow test while preserving a stop path.
 
 ---
 
@@ -167,7 +166,7 @@ Before submission:
 - specifically check whether Digital Science's generic website-content licence applies to Catalyst application material; current public evidence does not establish that;
 - confirm name/email/contact fields;
 - decide whether to provide the unlisted NVIDIA demo URL as the prototype demo;
-- confirm the £25,000 budget shape;
+- confirm the staged £25,000 budget;
 - check that no field requires an unsupported company, customer, revenue, academic affiliation or user claim;
 - submit only after Mark explicitly releases the final form.
 
