@@ -80,9 +80,9 @@ Current world sequence has recently returned:
 
 Next quarry follows materiality, not category quota.
 
-## 2. Current bounded design lane — TRACE / ME successor
+## 2. TRACE / ME successor — released and closed to source churn
 
-COM #365 remains active. Beta2 is the preserved first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is now the preserved round-2 review snapshot. Current released baselines are TRACE v0.4.0 `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and ME v0.8.0 `e2ef746e931161cb70ac46a4eaa122442134e86b`; beta4 remains preserved review provenance.
+There is **no active source-build lane**. COM #365 preserves the world/use route and review history; it is not an active successor build. Beta2 is the preserved first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is the preserved round-2 review snapshot. Current released baselines are TRACE v0.4.0 `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and ME v0.8.0 `e2ef746e931161cb70ac46a4eaa122442134e86b`; beta4 remains preserved review provenance.
 
 ```text
 NEW CORE TERM = NONE EARNED
@@ -107,7 +107,13 @@ Owner source reverified **23 September**: Batch 6 still closes **26 September 20
 Receipt:
 `coordination/build_ledger/HACK_NATION_APPLICATION_GATE_REFRESH_20260919.md`
 
-`APPLICATION SENT = NO`  
+Host-contact receipt:
+`coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260925.md`
+
+`HOST CLARIFICATION = SENT / REPLY AWAITED`
+
+`APPLICATION SENT = NO`
+
 Registration/account/terms remain Mark's gate.
 
 ## 4. Green / frozen drafts
@@ -194,7 +200,7 @@ No resource application is currently required to continue today's work.
 - generic Nebius product — not earned;
 - BeforeBuild standalone product — not earned;
 - THR record-5 growth — not earned;
-- TRACE/ME released-source patch — no patch earned; non-canon COM #365 design lane remains active.
+- TRACE/ME released-source patch — no patch earned; COM #365 preserves review history and the world/use route, not an active source-build lane.
 
 ## Detailed routes
 
