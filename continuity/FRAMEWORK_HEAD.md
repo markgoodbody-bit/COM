@@ -266,11 +266,11 @@ The 22–23 September entity-through-time Campfire pressure does **not** current
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
 - digital-preservation candidates -> stronger active preservation/legacy owners.
 
-Current THR main is `c7be1efb5ca66673c398cdc19eb4c0f2489246d9`. Main integrity `36197053456` and Pages deployment `36197052804` are observed SUCCESS. The contribution-packet public-delivery workflow did not run because none of its scoped files changed in this repair.
+Current THR main is `b2182211cb56a013ea6c146d3500214fa5352f91`. Main integrity `36198841848` and Pages deployment `36198841933` are observed SUCCESS.
 
-PR #75 previously repaired entity-admission containment/catalogued-record linkage. PR #76 now repairs a separate real generated-view defect: a browse-card summary had remained stale after its underlying Camp Fire record changed. Each public record card is now bound to a SHA-256 over the existing catalogue source-basis map, so source-byte/route drift requires review and re-pin before integrity passes. Exact reviewed head `be20322ae8208ba77e231ea77617863f1a47ba22`; hosted validation `36196988375` SUCCESS / 129 tests OK. No record evidence, registry, schema, catalogue contents or record count changed.
+PR #75 repaired entity-admission containment/catalogued-record linkage. PR #76 repaired stale browse-card source-basis detection. PR #77 then used that guard during a real record maintenance pass: Hannibal v0.1.3 now records a bounded Internet Archive / New York Public Library recovery route for the Polybius printed-edition family, while explicitly leaving exact physical printing/reprint state and exact Thayer HTML identity unresolved. Exact #77 head `a80f2c1f51528b50b5eae24bb6a8635606205642`; exact-head validation `36198799678` SUCCESS. The human view, catalogue source pins and browse-card basis were re-reviewed/re-pinned; browse summary prose, schema and four-record count did not change. Old #63/#71 are closed as superseded.
 
-Preserve: **DIGEST MATCH != SUMMARY TRUE**. The guard detects source-basis drift; it does not semantically validate the browse prose.
+Preserve: **DIGEST MATCH != SUMMARY TRUE** and **PRINTED EDITION ROUTE IDENTIFIED != EXACT WEB REPRESENTATION PRESERVED**. Detailed receipt: `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`.
 
 No THR schema/catalogue growth by momentum.
 
