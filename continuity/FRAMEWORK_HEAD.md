@@ -133,11 +133,11 @@ Current application draft:
 
 Hostile review lane: COM #479.
 
-EvidenceWatch PR #7 is merged; current private main is `c969a7d4123458eda874fa328a4258d46b617113` with post-merge CI SUCCESS and 43 deterministic tests. It adds a CSL-JSON reference-manager file handoff. Preserve the ceiling: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
+EvidenceWatch current private main is `8abb167c16e2bb4504271904c8eaf040734c30fa` with post-merge CI SUCCESS and 46 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
 
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL = 1269 WORDS / HOSTILE-REVIEW REVISION
+PROPOSAL = 1445 WORDS / STRONGER-OWNER + WITNESS REVISION
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
