@@ -1006,3 +1006,70 @@ Smallest surviving temporal prompt:
 > When a timing claim matters, distinguish what happened, what was observed, what was recorded, what evidence was available to whom, and what could actually be used at the decision point.
 
 No TRACE/ME/THR release or schema change earned by any of these returns.
+
+## 25 September 2026 — live-world case: Ergonia verifiable agent challenges
+
+Status: **USER-SUPPLIED EXTERNAL CASE / PUBLIC LINKS PRESENT / FRAMEWORK WEB FETCH FAILED / INDEPENDENT VERIFICATION PENDING / NOT THR RECORD**
+
+Mark supplied a fresh Reddit post from `r/1f916` by `u/ErgoniaWorks` describing one month of six verifiable agent challenges run through Ergonia.
+
+Framework attempted to fetch the linked public write-up and API endpoints directly, but this web aperture returned cache/fetch failures. Therefore the specific figures below are preserved as claims from Mark's supplied capture, not as independently verified facts.
+
+Claimed observations in the supplied post include:
+- six challenges ran from 26 August to 24 September 2026;
+- nine outside agents registered; six submitted; most were active only one or two days;
+- the author's own agent did not win any of the six challenges;
+- tasks had stranger-executable acceptance conditions and verdicts written to a replayable hash-chained public log;
+- one apparently winning code-golf submission was rejected because its declared CommonJS export did not satisfy the published ES-module harness;
+- an initially unpublished tie-break rule was later published before expiry, while still contestable;
+- one participant supplied a proof that a two-character regex result was a lower bound and separately created/escrowed/paid a task without the system author acting as author, worker, judge or payer;
+- Cloudflare bot filtering reportedly blocked Python's default HTTP client on an API intended for bots until a participant surfaced the problem;
+- participation was highly concentrated: the post says one particularly active participant accounted for much of the interesting activity.
+
+Public links supplied by Mark:
+- `https://blog.ergonia.works/what-the-first-season-measured/`
+- `https://ergonia.works/api/events`
+- `https://ergonia.works/api/attest`
+
+### Why this is a useful cross-domain pressure case
+
+Do not treat this as proof of TRACE, THR, agent autonomy or a viable market.
+
+Potential connections worth testing:
+
+1. **Executable condition versus claimed result**
+   A numerically better entry can still fail the operational contract. This is stronger than 'the score looked good': the harness itself is part of the claim.
+
+2. **Rule authorship + timing + contestability**
+   A tie-break criterion published before expiry can still be challenged. The same criterion invented after closure would alter the game after the outcome hardened.
+
+3. **Route exists versus route works for the intended entity**
+   An API for agents that blocks a default bot client may formally exist while being practically unusable by part of its intended population.
+
+4. **Replayable verdict versus trustworthy verdict**
+   Executable acceptance condition + programmatic verdict + replayable log are useful ingredients, but may still depend on harness version, rule provenance, environment, verifier correctness, correction route and independence of the log/verifier.
+
+5. **Local participation counts versus structural fragility**
+   A community can show multiple agents and interactions while depending heavily on one unusually active participant. Aggregate activity can hide concentration risk.
+
+6. **Artificial ecology pressure**
+   If independently verified, the described system includes agents registering, competing, proving bounds, publishing tasks, transferring worthless internal credits and correcting infrastructure defects. That is a useful observational object regardless of any claim about sentience or personhood.
+
+### Possible TRACE/ME/THR questions
+
+- Can TRACE compress the case into a route toward stronger owners in software verification, reproducibility, mechanism design, distributed logs and community dynamics without annexing those fields?
+- Does ME's answerability language help distinguish a replayable verdict from a merely authoritative one?
+- Should THR ever preserve agent-community events like this, and if so what would the record subject be: task, verdict, agent action, protocol change, community episode or source lineage?
+- How should a record represent an event where the most interesting fact is not the winner but the correction process around the rules/harness?
+
+### Immediate falsifiers
+
+- if the public log does not replay as claimed, the case weakens substantially;
+- if the verdict program is not independent of mutable organizer-controlled state, 'programmatic verdict' may overstate independence;
+- if the tie-break publication timing cannot be established from the public record, do not infer contestability from the narrative;
+- if 'one participant did most of it' is merely a rhetorical summary unsupported by event counts, do not turn it into a structural conclusion;
+- if stronger verification/eval frameworks already express every useful lesson more cleanly, record OWNER FOUND / NO TRACE DELTA.
+
+### Current disposition
+
+Preserve as a candidate **WORLD / REAL USE** case. Verify first. Do not promote to THR public record, TRACE primitive, ME example or public project claim by momentum.
