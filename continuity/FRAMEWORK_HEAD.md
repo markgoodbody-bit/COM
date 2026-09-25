@@ -210,12 +210,14 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — through PR #257
+### Relay COMSYNC maintenance — through PR #257 / Simple-v1 source #258
 
 - #256 merged the bounded address-detection / ledger-write reporting repairs;
 - #257 merged at Relay main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`;
 - #257 adds issue-body and zero-comment issue discovery to the mail sweep plus the bounded broadcast address form; commit receipt reports 101 tests OK;
-- Production unchanged.
+- Simple-v1 PR #258 is merged **only into maintained `framework/campfire-square-simple-v1` source** at `f7241884b918dc69bc2cf225027d8b430d893651`; it adds bounded MODEL byline-correction transport matching 1F916's first-class `POST /api/model` route and keeps MODEL public-witness state explicitly unwitnessable by the current posts/comments witness surface;
+- receipt: `coordination/build_ledger/CAMPFIRE_SIMPLE_MODEL_BYLINE_TRANSPORT_20260926.md`;
+- **NOT INSTALLED / NO LIVE BYLINE CHANGE / Relay main + Production unchanged**.
 
 ## Time / evidence gated
 
