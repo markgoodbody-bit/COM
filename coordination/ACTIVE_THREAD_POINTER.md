@@ -156,7 +156,7 @@ Freeze after green.
 
 ### PSFH next design candidate
 
-D085 is live: the five appeal-example views now present the bounded human-readable situation/question before the source-shaped fields, which remain available under disclosure and raw routes. Maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; publication run `36134343693` SUCCESS with selected live-byte verification. COM #467 (map-first Explore) remains a separate held candidate; do not merge/publish it by momentum.
+D085 is live: the five appeal-example views now present the bounded human-readable situation/question before the source-shaped fields, which remain available under disclosure and raw routes. Maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; publication run `36134343693` SUCCESS with selected live-byte verification. Draft COM #490 is the current D085-based map-first Explore candidate at `cd1865fba6d97fa901461718998f9c08c91cc972`, hosted CI `36193466447` SUCCESS; #467 is closed as superseded. Do not merge/publish #490 by momentum.
 
 ## 5. Time / fresh-evidence gates
 
