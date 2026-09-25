@@ -124,25 +124,17 @@ The release lane is closed. Beta PRs are closed with branches/history preserved.
 
 ### Hack-Nation 7
 
-Owner source reverified **23 September**: Batch 6 still closes **26 September 2026** and the Global AI Hackathon is listed for **3–4 October 2026**. Registration/account/terms remain Mark's gate.
+Status: **STOP / NOT APPLYING**.
 
-Prepared answer bank:
-`coordination/competition_quarry/COMPETITION_HUMAN_GATE_APPLICATION_PACK_20260918.md`
-
-Fresh gate receipt:
-`coordination/build_ledger/HACK_NATION_APPLICATION_GATE_REFRESH_20260919.md`
-
-Host-contact receipt:
-`coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260925.md`
+Kai confirmed that a CV could substitute for LinkedIn verification, but the application flow remains a poor fit for Mark's actual situation and would require unnecessary personal-career packaging for a speculative competition. Mark decided on 25 September 2026 not to pursue it.
 
 ```text
-HOST CLARIFICATION = SENT / REPLY AWAITED
-ENGINEERING PREREQUISITE = NONE
-REGISTRATION / ACCOUNT / TERMS = HUMAN GATE
-APPLICATION SENT = NO
+APPLICATION = NO
+LINKEDIN = NO
+CV UPDATE = NO
+FURTHER CONTACT = NO
+REOPEN ONLY IF THE FORMAT/TERMS MATERIALLY CHANGE
 ```
-
-Do not invent a Hack-Nation product before its challenge brief.
 
 ## Green / frozen candidate work
 
