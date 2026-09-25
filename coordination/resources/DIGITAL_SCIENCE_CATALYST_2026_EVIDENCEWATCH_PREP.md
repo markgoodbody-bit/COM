@@ -31,15 +31,13 @@ POSSIBLE £25K != AWARDED £25K
 
 ## 1. THE PROBLEM
 
-The initial user is a living systematic review team. Its decision is whether an existing conclusion must be reopened when evidence already included changes: a publisher correction, dataset revision, owner update, replaced authority page, or apparently new source that repeats the same evidentiary root.
+The initial user is a living systematic review team deciding whether an existing conclusion needs reopening after evidence already included changes: a dataset revision, authority update, replaced source page, or apparent corroboration from the same evidentiary root.
 
-Formal retraction warnings are not the gap I am claiming. Zotero already integrates Retraction Watch and can warn when a cited item is retracted, including citations already present in a document when they are refreshed. Crossmark exposes formal scholarly corrections, retractions and updates.
+Formal retraction/correction handling is not the gap. Zotero and Crossmark expose formal status. Cochrane now matches newly retracted included studies to affected reviews and routes impact assessment; its update guidance also covers relevant corrections and additional information from previously included studies.
 
-The residual problem is what happens **after reliance** when the change is broader than formal retraction status: did the evidence state behind a bounded claim materially change, and does the living review now need reopening?
+The residual is narrower: can a small agent catch material changes outside those well-owned paths and route only affected downstream work for human review?
 
-Change itself is common, but materiality is the unmeasured crux. A 2016 PLOS ONE study found textual content had drifted for over 75% of the web references for which archived and live versions could be compared. Separately, a 2022 biomedical study found only about 5% of systematic reviews/guidelines corrected or retracted their results after trials they had included were later retracted. Neither establishes a universal rate of material change. Sources: https://doi.org/10.1371/journal.pone.0167475 and https://pubmed.ncbi.nlm.nih.gov/35779825/
-
-Whether EvidenceWatch catches consequential changes accurately enough to save review time remains a pilot question.
+A 2016 PLOS ONE study found textual drift in over 75% of comparable archived/live web references, but that does not establish consequential change. Whether residual changes are frequent enough to justify another monitor is a pilot question. Source: https://doi.org/10.1371/journal.pone.0167475
 
 ## 2. YOUR WORKFLOW
 
@@ -89,7 +87,7 @@ A one-watch/two-run live witness used NVIDIA Nemotron against real public owner 
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are now merged on EvidenceWatch main (`41f12db0573dd529c9ef493deba3da0e39508aaa`) with post-merge CI green. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
+There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are merged; current main adds only stronger-owner subtraction documentation after that tested code state. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
@@ -97,29 +95,28 @@ https://pleasestartfromhere.com/
 
 ## 6. ALTERNATIVES AND COMPETITORS
 
-Strong existing owners already cover large parts of this problem:
+Stronger owners remove most of the mechanism as a novelty claim:
 
-- **Zotero + Retraction Watch** warns about retracted library items and citations later retracted: https://www.zotero.org/blog/retracted-item-notifications/
-- **Crossmark / Crossref** exposes formal corrections, retractions and publisher-registered updates: https://www.crossref.org/services/crossmark/
-- **ReadCube** owns reference management, literature monitoring, shared libraries and systematic-review workflows: https://about.readcube.com/
-- Digital Science's own Catalyst portfolio includes **PostPub**, which tracks retractions/integrity actions, and **VIRUS**, which tracks questionable papers and their downstream scholarly/policy impact. These are close precedents, not gaps I should relabel as mine.
-- **Perma.cc** owns preservation of the cited web state, the complementary strategy of freezing the 'before' rather than monitoring the live source: https://perma.cc/
+- **Zotero, Crossmark and Cochrane** own formal status and important retraction/correction-to-review paths: https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
+- **ReadCube and scite** own literature monitoring, shared libraries, systematic-review workflows, citation synchronisation/context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
+- **Refract** owns reproducible semantic change events from versioned public sources; **AIEP P170** already specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
+- Digital Science's **PostPub/VIRUS** track integrity events and downstream impact; **Perma.cc** preserves the relied-on web state.
 
-The surviving hypothesis is narrower: **post-reliance claim-level state across heterogeneous sources + ancestry/independence + explicit state authority + material-change filtering + a map to downstream work that may need reopening**.
+EvidenceWatch is therefore not a new change detector or dependency-graph idea. The surviving hypothesis is integration: **can heterogeneous post-reliance source state, explicit authority, materiality filtering, an existing or human-approved dependency map and human review routing be joined inside a current research workflow with low enough burden to be useful?**
 
-If another product already provides that full loop better, EvidenceWatch should be killed or narrowed.
+If a stronger workflow already provides that integration, or the residual change class is too rare to matter, EvidenceWatch should be killed or narrowed.
 
 ## 7. WHERE THIS GOES
 
-The next stage is a bounded research-workflow pilot.
+The next stage is a bounded workflow-integration pilot, not a new evidence architecture.
 
-The first pilot would involve one living systematic review team, using its existing reference library. Cochrane's living-review model already performs continual surveillance for new evidence; this pilot tests the adjacent burden of changes to evidence already included. It would compare EvidenceWatch with existing practice on a pre-labelled set of material/non-material changes, measuring:
+One living systematic review team would use its existing reference library. Cochrane already owns new-evidence surveillance and a retraction-impact route, so the pilot would isolate residual changes not handled adequately by those processes and compare EvidenceWatch with existing practice on a pre-labelled material/non-material set, measuring:
 - time to flag affected work;
 - missed material changes and false alerts;
 - reviewer minutes, duplicate suppression, and setup/maintenance time;
 - whether users can reconstruct why an alert happened without trusting the model.
 
-Stop or narrow if maintenance exceeds saved review time, material changes are too rare, or missed-change rate is unacceptable.
+Stop or narrow if maintenance exceeds saved review time, residual changes are too rare, existing practice performs as well, or missed-change rate is unacceptable.
 
 If later commercialised, the plausible buyer is an institution or research team paying for monitored workspaces/integrations. A workspace or monitored-collection subscription is a hypothesis only; pricing has not been tested.
 
@@ -127,9 +124,9 @@ If later commercialised, the plausible buyer is an institution or research team 
 
 EvidenceWatch sits in evidence synthesis and research integrity.
 
-The fit is not simply "AI with provenance". It is a multi-step agent that must know when to stay quiet, when to flag a change, and when it lacks authority to act. That is directly aligned with Digital Science's 2026 emphasis on agents embedded in researcher workflows with provenance, governance and accountability.
+Its mechanisms are not novel. The fit is a multi-step agent that must know when to stay quiet, flag a change, or refuse to act without authority, matching Digital Science's emphasis on embedded workflows with provenance, governance and accountability.
 
-Digital Science also owns products close to the natural integration surface. ReadCube already handles literature monitoring, shared libraries, citation/document synchronisation and systematic-review workflows. That makes Digital Science a particularly useful place to test the narrower question: is there value in monitoring **changes to evidence already relied on**, then routing only material changes to the downstream work they affect? I would value help testing that residue with researchers before hardening the wrong product.
+Digital Science also owns several strong adjacent systems, including ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
 
 ## 9. BUDGET
 
