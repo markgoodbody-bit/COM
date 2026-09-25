@@ -79,7 +79,7 @@ Reacquired before this compaction:
 
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
-- The Human Record main: `8efb858cd0f539bc208f63b2f2bfb3d4c3750795` — four public records; bounded entity-admission containment/catalogue repair from #75 merged; main validation + Pages green;
+- The Human Record main: `0694ea9f4b9371ff635035bd2cc90dfd08e9632a` — four public records; #75 containment, #76 browse-freshness, #77 Hannibal recovery-route and documentation-only #78/#80 repairs merged; main integrity + Pages green;
 - Campfire Relay main: `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3` — #257 issue-body / zero-comment mail-discovery repair merged after #256; no Production promotion.
 
 Formal baselines:
@@ -268,7 +268,7 @@ The 22–23 September entity-through-time Campfire pressure does **not** current
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
 - digital-preservation candidates -> stronger active preservation/legacy owners.
 
-Current THR main is `b2182211cb56a013ea6c146d3500214fa5352f91`. Main integrity `36198841848` and Pages deployment `36198841933` are observed SUCCESS.
+Current THR main is `0694ea9f4b9371ff635035bd2cc90dfd08e9632a`. Main integrity `36200466240` and Pages deployment `36200465585` are observed SUCCESS. Documentation-only #78/#80 add source-antecedence and action-relevant missing-value distinctions without schema/record growth; receipt: `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`. The only remaining open THR PR is exploratory RFC #52.
 
 PR #75 repaired entity-admission containment/catalogued-record linkage. PR #76 repaired stale browse-card source-basis detection. PR #77 then used that guard during a real record maintenance pass: Hannibal v0.1.3 now records a bounded Internet Archive / New York Public Library recovery route for the Polybius printed-edition family, while explicitly leaving exact physical printing/reprint state and exact Thayer HTML identity unresolved. Exact #77 head `a80f2c1f51528b50b5eae24bb6a8635606205642`; exact-head validation `36198799678` SUCCESS. The human view, catalogue source pins and browse-card basis were re-reviewed/re-pinned; browse summary prose, schema and four-record count did not change. Old #63/#71 are closed as superseded.
 
