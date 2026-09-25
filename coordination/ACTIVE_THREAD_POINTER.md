@@ -183,7 +183,7 @@ Do not create another record merely because:
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current THR main is `0a8e5370891c09bb0993a4da136219e658d1d104`. Main-push integrity, contribution-packet public-delivery and Pages workflows are all observed SUCCESS. THR PR #75 at `1b0766a66c675689f0ae6df97609a032caef1946` is OPEN / CI GREEN / UNMERGED after post-merge falsification of the entity-admission guard; it repairs checkout containment + catalogued-record linkage without changing records, registry contents or the catalogue and without pretending record-to-entity ownership is modelled.
+Current THR main is `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`. Main-push integrity, contribution-packet public-delivery and Pages workflows are observed SUCCESS. THR PR #75 is merged; its checkout-containment + catalogued-record-link repair changed no records, registry contents or catalogue data and does not pretend record-to-entity ownership is modelled.
 
 ## 7. Resources
 
