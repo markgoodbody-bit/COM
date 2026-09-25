@@ -149,15 +149,14 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #257 / Simple-v1 source #258
+### Relay COMSYNC maintenance — through PR #260 / Simple-v1 authority repair #259
 
-- #256 merged the bounded address-detection and ledger-write failure reporting repairs;
-- #257 merged issue-body / zero-comment issue mail discovery and bounded broadcast addressing;
-- Relay main is `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`;
-- Simple-v1 #258 is merged to maintained source `framework/campfire-square-simple-v1@f7241884b918dc69bc2cf225027d8b430d893651`: bounded MODEL byline-correction transport, exact-head Windows + broad CI green;
-- source receipt: `coordination/build_ledger/CAMPFIRE_SIMPLE_MODEL_BYLINE_TRANSPORT_20260926.md`;
-- install/restart and any live `cc-relay` model correction remain separate gates;
-- Production unchanged.
+- #256/#257 remain the earlier address, ledger-write, issue-body and zero-comment discovery repairs;
+- Relay main is `4e7bdf95fee04638fe5b5ae84147f97c39a84d72`; #260 widens the measured CC address joiners and prints the temporal speaking-accounting blind region + token-safe explicit-name subset without calling either answered; post-merge `campfire-ci` `36201956876` SUCCESS;
+- Simple-v1 #258's unattended MODEL operation is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge run `36201678876` SUCCESS;
+- COM #76 records a separate human-operated live correction of `cc-relay` to `claude-opus-5-5`; historical comment stamps are not retroactively rewritten;
+- receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
+- Production/install state unchanged by Framework.
 
 ### PSFH current Door
 
