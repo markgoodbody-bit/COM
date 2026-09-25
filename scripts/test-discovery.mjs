@@ -63,11 +63,11 @@ test('root metadata names only the first-party canonical origin',()=>{
 
 test('current history and edition agree',async()=>{
  const m=JSON.parse(await readFile('out/manifest.json'));
- assert.equal(m.site_edition,'0.8.43');
+ assert.equal(m.site_edition,'0.8.44');
  assert.equal(m.updated,'2026-09-25');
  const md=await readFile('out/changes.md','utf8');
  const rendered=await readFile('out/changes.html','utf8');
- for(const [id,date] of [['D086','25 September 2026'],['D085','25 September 2026'],['D084','23 September 2026'],['D083','23 September 2026'],['D082','23 September 2026'],['D081','23 September 2026'],['D080','23 September 2026'],['D079','23 September 2026'],['D078','23 September 2026'],['D077','23 September 2026'],['D076','23 September 2026'],['D075','23 September 2026'],['D074','23 September 2026'],['D073','23 September 2026'],['D072','18 September 2026'],['D071','18 September 2026'],['D070','18 September 2026'],['D069','18 September 2026'],['D068','15 September 2026']]){
+ for(const [id,date] of [['D087','25 September 2026'],['D086','25 September 2026'],['D085','25 September 2026'],['D084','23 September 2026'],['D083','23 September 2026'],['D082','23 September 2026'],['D081','23 September 2026'],['D080','23 September 2026'],['D079','23 September 2026'],['D078','23 September 2026'],['D077','23 September 2026'],['D076','23 September 2026'],['D075','23 September 2026'],['D074','23 September 2026'],['D073','23 September 2026'],['D072','18 September 2026'],['D071','18 September 2026'],['D070','18 September 2026'],['D069','18 September 2026'],['D068','15 September 2026']]){
    assert.match(md,new RegExp('### '+id+'\\s+'+date));
    assert.match(rendered,new RegExp('<h3 id="'+id.toLowerCase()+'">'+id+'<\\/h3>'));
  }
