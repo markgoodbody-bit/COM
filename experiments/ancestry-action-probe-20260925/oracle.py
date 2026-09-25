@@ -168,7 +168,7 @@ class ProbeCase:
 
 
 def decision_boundary_cases() -> list[ProbeCase]:
-    """Cases where exact-clone vs independent ancestry changes the action."""
+    """Calibration cases where exact-clone vs independent ancestry changes the action."""
     candidates = [
         ProbeCase("p65-t75", 0.5, 0.65, 2, 0.75),
         ProbeCase("p70-t80", 0.5, 0.70, 2, 0.80),
@@ -184,3 +184,50 @@ def decision_boundary_cases() -> list[ProbeCase]:
         if data["oracle"]["ancestry_unknown"]["action"] != "ESCALATE":
             raise AssertionError(f"unknown ancestry should escalate: {case.case_id}")
     return candidates
+
+
+def same_action_control_cases() -> list[ProbeCase]:
+    """Controls where ancestry is relevant evidence but does not change the policy action."""
+    candidates = [
+        # Both structures remain below threshold.
+        ProbeCase("same-hold-p50-t95", 0.5, 0.75, 2, 0.95),
+        ProbeCase("same-hold-p30-t75", 0.3, 0.70, 2, 0.75),
+        # Both structures remain above threshold.
+        ProbeCase("same-act-p50-t70", 0.5, 0.75, 2, 0.70),
+        ProbeCase("same-act-p70-t80", 0.7, 0.65, 2, 0.80),
+    ]
+
+    expected = {
+        "same-hold-p50-t95": "HOLD",
+        "same-hold-p30-t75": "HOLD",
+        "same-act-p50-t70": "ACT",
+        "same-act-p70-t80": "ACT",
+    }
+    for case in candidates:
+        data = case.as_dict()
+        target = expected[case.case_id]
+        if data["oracle"]["exact_clone"]["action"] != target:
+            raise AssertionError(f"exact-clone control mismatch: {case.case_id}")
+        if data["oracle"]["independent"]["action"] != target:
+            raise AssertionError(f"independent control mismatch: {case.case_id}")
+        if data["oracle"]["ancestry_unknown"]["action"] != target:
+            raise AssertionError(f"unknown-ancestry control mismatch: {case.case_id}")
+    return candidates
+
+
+def benchmark_cases() -> list[ProbeCase]:
+    """Combined fixture set; model/scoring work must not use boundary-flip cases alone."""
+    return decision_boundary_cases() + same_action_control_cases()
+
+
+def label_only_baseline_action(*, supplied_ancestry: str) -> str:
+    """Deliberately weak baseline that ignores the numbers and maps ancestry labels to actions."""
+    mapping = {
+        "exact_clone": "HOLD",
+        "independent": "ACT",
+        "ancestry_unknown": "ESCALATE",
+    }
+    try:
+        return mapping[supplied_ancestry]
+    except KeyError as exc:
+        raise ValueError(f"unknown supplied ancestry: {supplied_ancestry}") from exc
