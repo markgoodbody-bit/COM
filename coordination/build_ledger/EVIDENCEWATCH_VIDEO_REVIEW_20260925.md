@@ -2,7 +2,7 @@
 
 Date: 25 September 2026
 
-Status: **VIDEO RECORDED / TECHNICAL + VISUAL REVIEW PASS / HUMAN AUDIO LISTEN PASS / NOT UPLOADED**
+Status: **VIDEO RECORDED / REVIEW PASS / UNLISTED YOUTUBE UPLOADED / FORM NOT SUBMITTED**
 
 Reviewed artifact supplied by Mark:
 - filename: `EvidenceWatch.mp4`
@@ -37,3 +37,19 @@ HUMAN AUDIO LISTEN = PASS
 ```
 
 No upload or competition submission performed by this review.
+
+
+## Upload
+
+Mark confirmed the reviewed video is uploaded as an **Unlisted** YouTube video and that the link works while the video does not appear on the public channel page.
+
+Submission URL:
+
+`https://youtu.be/0hdwNc_t4pM`
+
+```text
+VIDEO UPLOADED = YES
+VISIBILITY = UNLISTED
+LINK ACCESS = CONFIRMED BY MARK
+FORM SUBMITTED = NO
+```
