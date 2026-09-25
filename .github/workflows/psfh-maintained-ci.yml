@@ -42,7 +42,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: psfh-map-first-explore-qa
-          path: out/explore
+          path: |
+            out/explore
+            out/style.css
+            out/art/atkins-720.jpg
+            out/art/atkins-1440.jpg
           if-no-files-found: error
 
 # This workflow checks source/build integrity only.
