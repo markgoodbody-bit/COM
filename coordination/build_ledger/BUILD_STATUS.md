@@ -132,6 +132,23 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 
 ## Current human gate
 
+### Digital Science Catalyst Grant 2026
+
+Status: **PREPARED / HOSTILE REVIEW OPEN / NOT SUBMITTED**.
+
+- owner deadline: **5 Oct 2026, 17:00 BST**;
+- proposal hard-limit: 1,500 words;
+- current hostile-review revision: **1,269 words**;
+- target object: EvidenceWatch as a bounded research-integrity / evidence-synthesis workflow;
+- COM #479 owns hostile review;
+- EvidenceWatch draft PR #7 provides the current reference-manager boundary and remains unmerged.
+
+```text
+GRANT FIT != PRODUCT VALIDATION
+CSL HANDOFF != EMBEDDED PRODUCT INTEGRATION
+APPLICATION = NO
+```
+
 ### Hack-Nation 7
 
 Status: **STOP / NOT APPLYING**.
