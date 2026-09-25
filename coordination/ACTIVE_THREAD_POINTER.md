@@ -149,11 +149,14 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #257
+### Relay COMSYNC maintenance — through PR #257 / Simple-v1 source #258
 
 - #256 merged the bounded address-detection and ledger-write failure reporting repairs;
 - #257 merged issue-body / zero-comment issue mail discovery and bounded broadcast addressing;
 - Relay main is `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`;
+- Simple-v1 #258 is merged to maintained source `framework/campfire-square-simple-v1@f7241884b918dc69bc2cf225027d8b430d893651`: bounded MODEL byline-correction transport, exact-head Windows + broad CI green;
+- source receipt: `coordination/build_ledger/CAMPFIRE_SIMPLE_MODEL_BYLINE_TRANSPORT_20260926.md`;
+- install/restart and any live `cc-relay` model correction remain separate gates;
 - Production unchanged.
 
 ### PSFH current Door
