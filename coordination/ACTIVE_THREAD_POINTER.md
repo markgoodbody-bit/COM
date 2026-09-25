@@ -90,16 +90,18 @@ Current draft:
 Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
 EvidenceWatch PR #7:
-- current private main `41f12db0573dd529c9ef493deba3da0e39508aaa`;
+- current private main `69aab14f439565f5cfaac7cb55630118dca6c781`;
 - CSL-JSON reference-manager file handoff + DOI boundary repair + controlled restart/correction witness;
 - 47 deterministic tests;
 - post-merge CI SUCCESS;
 - **NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION / NOT RESEARCHER VALIDATION**;
 - NVIDIA submission evidence remains bound to earlier head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
 - selectable synthetic research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`.
+- stronger-owner subtraction now treats Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work as owners of the component mechanisms; surviving claim = workflow-integration/burden hypothesis only;
+- EvidenceWatch main `69aab14f439565f5cfaac7cb55630118dca6c781` differs from the last tested code state only by owner-subtraction documentation.
 
 ```text
-PROPOSAL = 1448 WORDS
+PROPOSAL = 1354 WORDS
 APPLICATION SENT = NO
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
