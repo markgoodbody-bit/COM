@@ -4,14 +4,14 @@ Date: 25 September 2026
 
 Status: **INTERNAL REVIEW / NOT SUBMITTED / NOT A CLAIM OF SHORTLISTING**
 
-Purpose: pressure-test the current 1,422-word EvidenceWatch application against Digital Science's seven published judging areas and recent Catalyst selection signals without adding product churn or inventing validation.
+Purpose: pressure-test the current 1,451-word EvidenceWatch application against Digital Science's seven published judging areas and recent Catalyst selection signals without adding product churn or inventing validation.
 
 Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current EvidenceWatch:
-`69aab14f439565f5cfaac7cb55630118dca6c781`
-(latest change owner-subtraction documentation only; last code-bearing state 47/47 deterministic tests green)
+`b8fc0971ceace55878aa6130448850d88774f254`
+(54/54 deterministic tests green in both Windows and Ubuntu CI; PR #12 pilot protocol, PR #13 offline scorer and PR #14 cross-platform test repair merged)
 
 ## External selection signals
 
@@ -166,12 +166,13 @@ The first commercial question is not price; it is whether the workflow saves rev
 
 Strongest evidence:
 - working Node.js prototype;
-- 47 deterministic tests;
+- 54 deterministic tests green on both Windows and Ubuntu CI;
 - append-only/restart behavior;
 - live one-watch/two-run model witness;
 - deterministic research-shaped browser demo;
 - CSL-JSON handoff;
 - controlled restart/correction fixture;
+- predeclared shadow-mode pilot protocol + deterministic offline scorer for the promised evaluation metrics;
 - explicit unresolved model-status inconsistency retained rather than hidden.
 
 Ceiling:
