@@ -264,9 +264,9 @@ The 22–23 September entity-through-time Campfire pressure does **not** current
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
 - digital-preservation candidates -> stronger active preservation/legacy owners.
 
-Current THR main is `0a8e5370891c09bb0993a4da136219e658d1d104`. Main-push evidence is now observed: **Validate Human Record integrity = SUCCESS**, **Verify contribution packet public delivery = SUCCESS**, and **Pages build/deployment = SUCCESS**. That establishes those workflow results, not independent truth or universal client reach.
+Current THR main is `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`. The #75 containment/catalogue guard repair is merged. Main validation, contribution-packet public-delivery and Pages workflows are observed SUCCESS. That establishes those workflow results, not independent truth or universal client reach.
 
-Post-merge falsification found a real defect in the entity-admission guard: README/registry/absolute external paths could satisfy the old record-link check. THR PR #75 at `1b0766a66c675689f0ae6df97609a032caef1946` is **OPEN / CI GREEN / UNMERGED** and narrows the repair to checkout containment + at least one catalogued machine/full record, while explicitly preserving the unresolved semantic question of whether that record is actually about the entity. No registry contents, record objects or catalogue entries change in #75.
+Post-merge falsification found a real defect in the entity-admission guard: README/registry/absolute external paths could satisfy the old record-link check. PR #75 repaired this with checkout containment + at least one catalogued machine/full record and is now merged into `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`. The unresolved semantic question remains whether that record is actually about the entity. No registry contents, record objects or catalogue entries changed in #75.
 
 No THR schema/catalogue growth by momentum.
 
