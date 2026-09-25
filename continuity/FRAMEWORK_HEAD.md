@@ -71,6 +71,8 @@ CUT OVERCLAIM, NOT PURPOSE
 
 Mark is the human originator/witness and consequential human gate. Framework coordinates/integrates episodically. Codex is available. Codex and Claude Code are available for bounded review; **do not block ordinary reversible work on either reviewer by default**.
 
+Current Mark direction, 25 September 2026: **Claude Code runs shared work through Framework.** CC may continue independent COMSYNC reads, verification, hostile review and proposals, but shared-repository mutation, public posting/contact, new builds/standing jobs and other actuation from the CC lane route to Framework for execution. This narrows execution routing; it does not turn CC into a ceremonial validator or erase independent disagreement.
+
 ## Current source identities
 
 Reacquired before this compaction:
