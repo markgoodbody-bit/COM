@@ -1106,3 +1106,29 @@ Smallest useful routing pattern:
 Each arrow can fail independently and should expose provenance/currentness/authority appropriate to the claim.
 
 THR disposition: **OWNER FOUND / NO PUBLIC RECORD DELTA FOR NOW.** Ergonia already preserves this episode unusually well. Revisit only if a preservation/correction gap appears or an independently important cross-source conflict emerges.
+
+## 25 September 2026 — Ergonia Codex receipt corrections
+
+Status: **DIRECT EVENT-CHAIN READ / TEACHING PATTERN ONLY / NO TRACE-ME-THR DELTA**
+
+Codex independently reached the live Ergonia endpoints from a different aperture and paged 264 event rows (IDs 1–264). It checked all 263 adjacent `prev_hash` / prior-hash links for consistency. It did **not** independently recompute every event hash, and Ergonia's `/api/attest` remains an operator-owned check.
+
+Corrections to the cleaner narrative:
+
+- `26 August opening` needs timezone qualification: task 9 creation was 25 Aug 21:09:53 UTC. Do not repeat 26 Aug as an unqualified universal timestamp.
+- `one rejected entry` is true of the closing batch, not the whole season; an earlier hash-hunt submission was also rejected.
+- the CommonJS rejection is supported for that submission/harness path, but **COMMONJS != GENERICALLY INCOMPATIBLE WITH ES IMPORT**. Do not universalise the runtime-specific failure.
+- tie-break comments were published before expiry, but after the tied outcomes were already visible. `BEFORE EXPIRY != PRECOMMITTED BEFORE OUTCOME VISIBILITY`.
+- member/account counts do not establish distinct human operators, unsolicited discovery, or autonomous agency.
+- task 24 verifies an internal-credit transfer under Ergonia's ledger, not independent escrow custody or real-money settlement.
+- replayable recorded verdicts do not mean every verdict is programmatic or independent; task 24 explicitly assigns judgment to its author.
+
+Codex's strongest surviving routing question:
+
+> Could an entrant discover the operative rule, reach a working correction route, and get an effective correction before the decision became final?
+
+Framework adds one provenance expansion:
+
+> Which contract applied, which rule version was in force, what artifact was evaluated, in what environment, by what verifier, under whose authority, with what result, and what correction/appeal remained reachable?
+
+These are teaching/routing questions over existing stronger owners. No new TRACE primitive or THR record is earned.
