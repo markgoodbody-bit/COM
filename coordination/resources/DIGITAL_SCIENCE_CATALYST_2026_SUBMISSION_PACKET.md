@@ -17,7 +17,7 @@ Current proposal word count:
 **1443 words**
 
 Current EvidenceWatch private main:
-`6a06e2e40c6bda110e1431c3e57be0b5dd8b9081`
+`b8fc0971ceace55878aa6130448850d88774f254`
 
 Current CI:
 **SUCCESS**
@@ -115,7 +115,7 @@ A one-watch/two-run live witness used NVIDIA Nemotron against real public owner 
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are merged. A predeclared shadow-mode pilot protocol and deterministic offline scorer are now also merged; they freeze human labels/configuration before scoring and measure material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is engineering/pilot instrumentation, not researcher validation.
+There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are merged. A predeclared shadow-mode pilot protocol and deterministic offline scorer are now also merged; the protocol requires human labels and configuration to be frozen before scoring, and the scorer measures material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is engineering/pilot instrumentation, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
