@@ -185,7 +185,7 @@ Do not create another record merely because:
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current THR main is `c7be1efb5ca66673c398cdc19eb4c0f2489246d9`. Main integrity `36197053456` and Pages deployment `36197052804` are SUCCESS. PR #76 is merged after current-main re-port + hostile shrink: each browse card is now pinned to the existing record source-basis map by a card-bound SHA-256, so record-source drift fails closed until the card is reviewed/re-pinned. Exact head `be20322a…`, hosted validation `36196988375` SUCCESS / 129 tests OK. No records, registry data, schema or record count changed. Detailed receipt: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`.
+Current THR main is `b2182211cb56a013ea6c146d3500214fa5352f91`. Main integrity `36198841848` and Pages deployment `36198841933` are SUCCESS. PR #76's browse-card freshness guard remains active. PR #77 is merged at exact reviewed head `a80f2c1…`: Hannibal v0.1.3 gains a bounded Internet Archive / NYPL Polybius recovery route while preserving exact printing/reprint and exact-Thayer-representation uncertainty. Human-view/source pins and the browse-card basis were re-reviewed; four records remain four; no schema growth. Old #63/#71 are closed as superseded. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md` and `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`.
 
 ## 7. Resources
 
