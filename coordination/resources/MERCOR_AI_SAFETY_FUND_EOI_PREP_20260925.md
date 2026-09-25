@@ -50,7 +50,7 @@ No real-model result from the proposed experiment exists yet. Earlier provenance
 
 This proposal is explicitly an extension of stronger prior work, not a claim to have discovered source-dependence.
 
-Marc Bara's September 2026 preprint **Epistemic Sybil Resistance: Multiplying AI Agents Without Multiplying Evidence** (arXiv:2609.01873) formalises the distinction between report multiplicity and evidence-root multiplicity and tests it with more than 20,000 controlled LLM report/extraction calls. His work shows that multiplying reports from a fixed evidence root can produce severe overconfidence under independence-assuming aggregation, that provenance-aware aggregation can correct much of the failure, and that report similarity is not a reliable substitute for evidential ancestry. His public reproducibility package includes frozen outputs and an Epistemic Sybil Benchmark.
+Marc Bara's September 2026 preprint **Epistemic Sybil Resistance: Multiplying AI Agents Without Multiplying Evidence** (arXiv:2609.01873) formalises the distinction between report multiplicity and evidence-root multiplicity and tests it with more than 20,000 controlled LLM report/extraction calls. His work shows that multiplying reports from a fixed evidence root can produce severe overconfidence under independence-assuming aggregation, that provenance-aware aggregation can correct much of the failure, and that report similarity is not a reliable substitute for evidential ancestry. His public reproducibility package includes an Epistemic Sybil Benchmark (ESB) containing 3,300 frozen evaluation instances built from 19,200 LLM report calls. The benchmark exposes report values/rationales and, on its provenance track, true root labels; its code is MIT-licensed and its data/experimental material are CC BY 4.0.
 
 Junchi Liao's **Auditing Provenance Sensitivity in LLM Agent Action Selection** (arXiv:2607.20827) separately tests how source-authority changes affect LLM action selection and shows that untrusted evidence can still influence actions.
 
@@ -62,7 +62,7 @@ In other words, Bara establishes why ancestry matters for inference; this study 
 
 ## Proposed experiment
 
-The experiment would use synthetic evidentiary worlds with known ground truth and known report ancestry, ideally reusing or interoperating with Bara's openly released benchmark/generator where the licence and attribution permit.
+The experiment would begin from Bara's frozen ESB evaluation data rather than regenerate the report-multiplicity experiment. ESB already supplies synthetic worlds, held-out truth, report values/rationales and true root labels under explicit reusable licences. The new work would add a decision-policy layer and current decision-agent calls, with attribution and the stronger owner's benchmark left intact.
 
 For each synthetic case, a fixed decision policy and loss/threshold rule determines the oracle action under the known information structure. The agent receives matched reports and must return a structured confidence/decision object.
 
@@ -91,8 +91,8 @@ This is not a test of whether the model can infer ancestry from prose. Bara's no
 
 ## Staged design and stop rules
 
-### Stage 0 — reproduction / adapter gate
-Reproduce a bounded subset of the stronger owner's benchmark from frozen public artifacts and verify the local decision-layer adapter against known synthetic root structure. No new empirical claim.
+### Stage 0 — benchmark / decision-layer adapter gate
+Run the stronger owner's published ESB baselines/scorer on its frozen artifacts, then verify a local decision-layer adapter against the same known root structure and held-out truth. This is a compatibility/reproduction gate, not a new empirical claim and requires no hosted model calls.
 
 ### Stage 1 — small decision-policy screen
 Run a small preregistered set of matched cases across one or two current model families, with byte-identical repeats to estimate stochastic variation.
