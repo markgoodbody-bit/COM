@@ -114,3 +114,29 @@ PR #7 passes the useful-without-grant test:
 PR #7 was merged as internal product progress. The later owner-subtraction documentation commit moved private main to `12594ef3a7c80324c0299002ecc4868bf2d0c82f`, with CI green. The NVIDIA submission remains bound to its earlier frozen head in its receipt.
 
 No public release, organiser contact, form submission, terms acceptance or spend is implied by merge.
+
+
+## Late stronger-owner / application-surface addendum — 25 September 2026
+
+Digital Science's own prior Catalyst portfolio is closer to EvidenceWatch than the first draft acknowledged:
+- **PostPub** tracks retractions/integrity issues, notifications and action/accountability;
+- **VIRUS** tracks questionable papers and their downstream scholarly/policy impact.
+
+These are adjacent stronger owners. They do not, from the owner descriptions reviewed, establish the full EvidenceWatch residue of heterogeneous-source claim state + explicit authority/ancestry + material-change filtering + downstream work reopening. They do make any broader "research-integrity monitoring" claim untenable.
+
+The current proposal therefore names PostPub/VIRUS explicitly and narrows differentiation accordingly.
+
+Application-surface limitation:
+- Digital Science's current owner page publishes the full nine-section proposal instructions and deadline;
+- the advertised application shortlink is `https://bit.ly/4cnE9O6`;
+- Framework's normal web aperture cannot follow that shortlink;
+- a separate container DNS attempt also failed;
+- no hidden form-field or application-specific-rights claim has therefore been inferred.
+
+The live form must still be inspected by Mark before submission.
+
+```text
+OWNER PAGE VERIFIED != HIDDEN FORM VERIFIED
+GENERIC WEBSITE TERMS != CATALYST FORM TERMS BY ASSUMPTION
+ADJACENT CATALYST WINNER != OUR GAP
+```
