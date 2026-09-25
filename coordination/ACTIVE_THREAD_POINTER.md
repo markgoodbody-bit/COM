@@ -156,9 +156,9 @@ Freeze after green.
 - Relay main is `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`;
 - Production unchanged.
 
-### PSFH next design candidate
+### PSFH current Door
 
-D085 is live: the five appeal-example views now present the bounded human-readable situation/question before the source-shaped fields, which remain available under disclosure and raw routes. Maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; publication run `36134343693` SUCCESS with selected live-byte verification. Draft COM #490 is the current D085-based map-first Explore candidate at `cd1865fba6d97fa901461718998f9c08c91cc972`, hosted CI `36193466447` SUCCESS; #467 is closed as superseded. Do not merge/publish #490 by momentum.
+D086 is live: after the complete Anna Atkins Explore entrance, the existing ten-question map now precedes the preserved six-section orientation, which remains available under `About this reading space`. Maintained source `c071b1e570851b275565ca364f4a788178da9bac`; public `gh-pages@86ed354053ba9441099447c9e82441b56d79df27`; Site Preview `0.8.43`; publication run `36196077132` SUCCESS; post-sync maintained CI `36196201700` SUCCESS. COM #490 is merged after exact-head CI and fresh desktop/mobile QA; #467 is closed as superseded. Reader benefit remains unmeasured.
 
 ## 5. Time / fresh-evidence gates
 
