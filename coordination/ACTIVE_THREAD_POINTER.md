@@ -104,6 +104,20 @@ APPLICATION SENT = NO
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
 
+### Secondary machine lane — Mercor AI Safety Fund
+
+Status: **OWNER-SUBTRACTED / OFFLINE ONLY / NO APPLICATION**.
+
+- owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
+- canonical narrow EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
+- COM #481 = hostile review;
+- draft PR #482 = deterministic ancestry-sensitive action oracle;
+- creation head `1fedf8a85d331cc3211a1bf086322477c8b42efe`;
+- hosted workflow `36185909732 / SUCCESS`;
+- no model calls / no credentials / no spend.
+
+The original false-corroboration research question is superseded by Marc Bara arXiv:2609.01873. Current candidate is only the narrower ancestry-side-information -> generated-action cross with Junchi Liao's action-provenance work. Novelty is not established.
+
 Hack-Nation 7 is **STOP / NOT APPLYING**. Do not revive it unless format/terms materially change.
 
 ## 4. Green / frozen drafts
