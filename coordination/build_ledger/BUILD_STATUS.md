@@ -44,7 +44,7 @@ History belongs in dated receipts + Git.
 
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
-- Human Record main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795` — four public records; #75 containment/catalogue guard repair merged; validation + Pages green;
+- Human Record main `b2182211cb56a013ea6c146d3500214fa5352f91` — four public records; #75 containment guard, #76 browse-card source-basis guard and #77 bounded Hannibal Polybius recovery-route repair merged; integrity + Pages green;
 - Campfire Relay main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3` — #257 issue-body / zero-comment discovery repair merged after #256; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
