@@ -13,7 +13,7 @@ test('map precedes verbatim orientation and preserves every source route', async
   const sections = [...source.matchAll(/<section>[\s\S]*?<\/section>/g)].map(m=>m[0]);
   assert.equal(sections.length,6);
   assert.equal(details,sections.join(''));
-  assert.ok(built.indexOf('id="reading-map"') < built.indexOf('About this reading space'));
+  assert.ok(built.indexOf('id="reading-map-title"') < built.indexOf('About this reading space'));
   assert.equal((built.match(/data-reading-node=/g)||[]).length,10);
   assert.equal((built.match(/data-relation=/g)||[]).length,30);
   for(const node of index.nodes) assert.ok(built.includes(escape(node.question)));
