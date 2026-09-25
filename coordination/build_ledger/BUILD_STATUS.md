@@ -37,14 +37,14 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **25 September 2026 — EvidenceWatch submitted + PSFH D086 live**
+Updated: **26 September 2026 — PSFH D087 + THR documentation repairs current**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
 
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
-- Human Record main `b2182211cb56a013ea6c146d3500214fa5352f91` — four public records; #75 containment guard, #76 browse-card source-basis guard and #77 bounded Hannibal Polybius recovery-route repair merged; integrity + Pages green;
+- Human Record main `0694ea9f4b9371ff635035bd2cc90dfd08e9632a` — four public records; #75 containment, #76 browse-card source-basis, #77 Hannibal recovery-route, and documentation-only #78/#80 repairs merged; integrity + Pages green; only exploratory RFC #52 remains open;
 - Campfire Relay main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3` — #257 issue-body / zero-comment discovery repair merged after #256; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
@@ -57,7 +57,7 @@ EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781`
 
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
-- **THR #77 MERGED** — main `b2182211cb56a013ea6c146d3500214fa5352f91`; #76 browse-card source-basis guard remains active; Hannibal v0.1.3 now records a bounded Internet Archive / NYPL Polybius recovery route with exact printing/reprint and exact-Thayer identity left unresolved; exact-head validation `36198799678` SUCCESS; main integrity `36198841848` + Pages `36198841933` SUCCESS; four records remain four, no schema growth. #63/#71 closed as superseded;
+- **THR CURRENT MAIN `0694ea9f…`** — #76 browse-freshness and #77 Hannibal recovery-route remain active; #78 adds source-antecedence documentation routed to PROV/C2PA; #80 adds action-relevant missing-value reasons without a new enum/schema; main integrity `36200466240` + Pages `36200465585` SUCCESS; four records remain four; stale #60/#61/#64/#70/#72/#79 closed; only exploratory RFC #52 remains open;
 - **Relay #257 MERGED** — main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`; issue bodies and zero-comment issues now participate in COMSYNC mail discovery; no Production activation.
 - **Simple-v1 #258 SOURCE INTEGRATED** — maintained `framework/campfire-square-simple-v1@f7241884b918dc69bc2cf225027d8b430d893651`; adds bounded MODEL byline-correction transport matching current 1F916 `/api/model`; reviewed head `3c3335701183828bdd627868feed42464c6b2332` passed Windows run `36199819165` and broad `campfire-ci` `36199819073`; installed worker / live byline unchanged.
 
@@ -288,4 +288,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D086 live at `86ed354053ba9441099447c9e82441b56d79df27`; maintained source `c071b1e570851b275565ca364f4a788178da9bac`; publication workflow `36196077132` SUCCESS with selected live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass; D085 makes the appeal family human-readable first; D086 makes Explore question-map first while preserving its orientation under disclosure. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D087 live at `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; publication workflow `36198130032` SUCCESS and post-sync maintained CI `36198262841` SUCCESS. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass; D085 makes the appeal family human-readable first; D086 makes Explore question-map first; D087 repairs human-facing current TRACE/ME source routes while preserving historical node-source bases. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
