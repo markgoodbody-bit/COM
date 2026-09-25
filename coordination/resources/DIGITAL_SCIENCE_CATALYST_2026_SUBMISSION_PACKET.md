@@ -11,12 +11,12 @@ Owner proposal limit:
 **1,500 words**
 
 Current proposal word count:
-**1,265 words**
+**1410 words**
 
 Current EvidenceWatch private main:
-`c969a7d4123458eda874fa328a4258d46b617113`
+`12594ef3a7c80324c0299002ecc4868bf2d0c82f`
 
-Post-merge CI:
+Current CI:
 **SUCCESS**
 
 Demo:
@@ -30,6 +30,7 @@ Preserve:
 ```text
 APPLICATION = NOT SUBMITTED
 GRANT FIT != PRODUCT VALIDATION
+FORMAL RETRACTION ALERTING != OUR GAP
 CSL HANDOFF != LIVE PRODUCT INTEGRATION
 NO RESEARCH CUSTOMERS CLAIMED
 NO PRICING VALIDATION CLAIMED
@@ -40,11 +41,15 @@ FINAL TERMS / IDENTITY / SUBMIT = MARK HUMAN GATE
 
 ## 1. THE PROBLEM
 
-Research briefs, evidence syntheses and institutional decisions often depend on claims whose underlying sources later change: a publisher issues a correction or retraction, a dataset is revised, an owner changes a reported figure, or an apparently new source turns out to repeat the same evidentiary root.
+Research briefs, evidence syntheses and institutional decisions often depend on claims whose underlying evidence later changes: a publisher issues a correction, a dataset is revised, an owner changes a reported figure, an authority page is replaced, or an apparently new source turns out to repeat the same evidentiary root.
 
-Today, the person who relied on the claim usually has to notice that change manually or through a tool that watches only one part of the problem. Crossmark exposes formal scholarly updates; reference managers organise literature; citation tools surface later citations; page monitors detect changed webpages. The remaining workflow question is narrower: **did the evidence state behind a claim I relied on materially change, and which brief, review or decision now needs another look?**
+Formal retraction warnings are not the gap I am claiming. Zotero already integrates Retraction Watch and can warn when a cited item is retracted, including citations already present in a document when they are refreshed. Crossmark exposes formal scholarly corrections, retractions and updates.
 
-I have not yet measured how often this creates material work for target research teams. That is a pilot question, not a fact I want to manufacture. The measurable cost to test is reviewer time spent rechecking unchanged evidence versus time saved by correctly routing only material changes.
+The residual problem is what happens **after reliance** when the relevant change is broader than a formal retraction and the dependency is broader than one citation: did the evidence state behind a bounded claim materially change, and which brief, review, policy note or decision now needs another look?
+
+There is evidence that propagation can fail. In a 2022 meta-epidemiological study of 587 systematic reviews and clinical-practice guidelines citing retracted randomized trials, 43% were published after the trial had been retracted. Among reviews/guidelines that had incorporated trials before those trials were later retracted, only about 5% corrected or retracted their own results. That is biomedical evidence, not a universal rate, but it shows the downstream-dependency failure is real. Source: https://pubmed.ncbi.nlm.nih.gov/35779825/
+
+I have not yet measured how often the broader EvidenceWatch problem occurs in target teams or whether monitoring it saves time. Those are pilot questions.
 
 ## 2. YOUR WORKFLOW
 
@@ -100,14 +105,16 @@ https://pleasestartfromhere.com/
 
 ## 6. ALTERNATIVES AND COMPETITORS
 
-Strong existing owners already cover important parts of this problem:
+Strong existing owners already cover large parts of this problem:
 
-- Crossmark / Crossref exposes the current status of scholarly content, including corrections, retractions and updates: https://www.crossref.org/services/crossmark/
-- Visualping and Distill are mature webpage-change monitors with history, conditions and AI summaries: https://visualping.io/ and https://distill.io/
-- Zotero and ReadCube Papers own reference/library workflows; ReadCube also provides literature monitoring and review tooling: https://www.zotero.org/ and https://about.readcube.com/
-- scite provides living citation context, including supporting/contrasting citations and retraction signals: https://scite.ai/
+- **Zotero + Retraction Watch** already warns about retracted items in a library and can warn when an existing document contains a citation that was later retracted. EvidenceWatch should not be built merely to reproduce that: https://www.zotero.org/blog/retracted-item-notifications/
+- **Crossmark / Crossref** exposes formal corrections, retractions and other publisher-registered updates: https://www.crossref.org/services/crossmark/
+- **ReadCube** already owns reference management, recurring literature monitoring, shared libraries and systematic-review workflows. It is therefore both a strong alternative and a natural place to test whether the residual dependency-monitoring pattern adds anything: https://about.readcube.com/
+- **Visualping / Distill** own generic webpage-change monitoring; **scite** owns living citation context and retraction/citation signals.
 
-EvidenceWatch should be killed or narrowed if one of these, or another product, already provides the full useful loop better. The current product hypothesis is the conjunction of claim-level cross-source state, explicit source ancestry/independence, explicit state authority, correction history and a downstream "what must I revisit?" dependency.
+EvidenceWatch survives only if the conjunction is useful: **post-reliance claim-level state across heterogeneous sources + source ancestry/independence + explicit state authority + material-change filtering + an explicit map to downstream work beyond the source itself**.
+
+If a current product already provides that full loop at equal or better resolution, EvidenceWatch should be killed or narrowed rather than marketed around it.
 
 ## 7. WHERE THIS GOES
 
@@ -131,7 +138,7 @@ EvidenceWatch sits in evidence synthesis and research integrity.
 
 The fit is not simply "AI with provenance". It is a multi-step agent that must know when to stay quiet, when to flag a change, and when it lacks authority to act. That is directly aligned with Digital Science's 2026 emphasis on agents embedded in researcher workflows with provenance, governance and accountability.
 
-Digital Science also owns products close to the natural integration surface, particularly ReadCube and its literature-management/review workflows. I would value help deciding whether this dependency-monitoring pattern belongs inside a reference-manager/literature-review workflow at all, and testing it with researchers before hardening the wrong product.
+Digital Science also owns products close to the natural integration surface. ReadCube already handles literature monitoring, shared libraries, citation/document synchronisation and systematic-review workflows. That makes Digital Science a particularly useful place to test the narrower question: is there value in monitoring **changes to evidence already relied on**, then routing only material changes to the downstream work they affect? I would value help testing that residue with researchers before hardening the wrong product.
 
 ## 9. BUDGET
 
@@ -151,8 +158,9 @@ What this enables that I cannot do today is the important part: move from a tech
 
 Before submission:
 
-- confirm the form still uses the owner-published 2026 terms and deadline;
-- read any privacy, publicity, IP, award or participation terms shown in the live form;
+- confirm the live form still uses the owner-published 2026 deadline and proposal structure;
+- read any privacy, publicity, IP, award or participation terms shown in the actual application form;
+- specifically check whether Digital Science's generic website-content licence applies to Catalyst application material; current public evidence does not establish that;
 - confirm name/email/contact fields;
 - decide whether to provide the unlisted NVIDIA demo URL as the prototype demo;
 - confirm the £25,000 budget shape;
