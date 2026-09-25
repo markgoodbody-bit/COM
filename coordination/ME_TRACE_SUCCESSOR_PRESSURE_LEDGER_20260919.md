@@ -5,8 +5,10 @@ Status: **NON-CANON PRESSURE LEDGER / NOT A VERSION PLAN / NOT A RELEASE CANDIDA
 > HOW CAN WE MAKE A BETTER FUTURE?
 
 Current released formal baselines:
-- TRACE v0.3.0;
-- Mechanical Ethics v0.7.0.
+- TRACE v0.4.0;
+- Mechanical Ethics v0.8.0.
+
+Historical entries below originated while v0.3.0 / v0.7.0 were current. Their pressure classifications remain evidence/history unless explicitly rechecked against the released successors. New entries should use the current released baselines.
 
 This file exists to keep field pressure from turning into version churn.
 
@@ -237,6 +239,53 @@ Anthropic's three-to-four cyber-incident correction is representable as:
 
 No TRACE search-aperture primitive earned.
 
+## TRACE-S6 — Timely correction-route entry can harden through an unactioned dependency
+
+Classification:
+**SURVIVED / DO NOT PATCH**
+
+Source:
+`field/PATEL_HMCTS_UNACTIONED_REASONS_20260925.md` and **[2026] UKUT 341 (AAC)**.
+
+Pressure:
+A claimant requested the statement of reasons within time, received an automated acknowledgement, but HMCTS did not action the request. Years later the papers were gone, the original judge had retired and reconstructing the reasons was no longer practicable. The Upper Tribunal found a material error in the later refusal to extend time because no extension had been needed in the first place, but the original route was not restored.
+
+Current TRACE v0.4.0 already represents:
+- request/action vs completed transition;
+- acknowledgement record vs proof of completion;
+- route dependencies;
+- clocks/hardening;
+- currentness and loss of reconstructive evidence;
+- procedural correction vs restoration;
+- residue and alternate complaint routes.
+
+No new primitive earned.
+
+## ME-S4 — Formal route can fail without a refusal when the institution drops the next step
+
+Classification:
+**SURVIVED / DO NOT PATCH**
+
+Source:
+`field/PATEL_HMCTS_UNACTIONED_REASONS_20260925.md`.
+
+Pressure:
+The affected person entered the route in time, but the institution did not carry the route forward. By the time the omission was legally recognised, the missing reasons could no longer realistically be produced.
+
+Current Mechanical Ethics v0.8.0 already carries the structure through:
+- Door vs practical access;
+- Process Becomes Distance;
+- correction-before-hardening;
+- routes carrying their own memory;
+- custody/record loss;
+- residue;
+- corrected process != restored lost path.
+
+Important ceiling:
+the Upper Tribunal also found the substantive challenge had no realistic prospects and the later delay was not persuasively explained. This is evidence about route failure/hardening, not evidence that the claimant would otherwise have won.
+
+No wording patch earned.
+
 ---
 
 # Shared negative evidence from 19 September
@@ -249,7 +298,8 @@ The following real/current pressure did **not** earn baseline changes:
 - Anthropic correction-lineage update;
 - THR digital-preservation candidate quarry;
 - NHS SPR rectification implementation watch;
-- MAIB crewed/uncrewed collision interim report.
+- MAIB crewed/uncrewed collision interim report;
+- Patel v SSWP / HMCTS unactioned statement-of-reasons request.
 
 That negative evidence matters.
 
