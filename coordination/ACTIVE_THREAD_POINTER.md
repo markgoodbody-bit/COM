@@ -90,15 +90,16 @@ Current draft:
 Hostile review: COM #479.
 
 EvidenceWatch PR #7:
-- current private main `8abb167c16e2bb4504271904c8eaf040734c30fa`;
+- current private main `b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`;
 - CSL-JSON reference-manager file handoff + DOI boundary repair + controlled restart/correction witness;
-- 46 deterministic tests;
+- 47 deterministic tests;
 - post-merge CI SUCCESS;
 - **NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION / NOT RESEARCHER VALIDATION**;
 - NVIDIA submission evidence remains bound to earlier head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
+- selectable synthetic research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`.
 
 ```text
-PROPOSAL = 1445 WORDS
+PROPOSAL = 1422 WORDS
 APPLICATION SENT = NO
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
