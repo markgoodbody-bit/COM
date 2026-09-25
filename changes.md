@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.56 · 25 September 2026
+Please Start From Here · Reader change log · Edition 0.57 · 25 September 2026
+
+### D087
+
+25 September 2026 — Keep historical source basis separate from the current release route.
+
+The Explore source page and optional full packet deliberately preserve the older TRACE and Mechanical Ethics snapshots that the ten reading nodes were built from. Those historical source pointers were correct. A different pair of links, explicitly labelled as the current-source route, had drifted: they still pointed to older README commits even though the machine source map already named released TRACE v0.4.0 and Mechanical Ethics v0.8.0.
+
+The human-facing source page, Markdown source list and optional full packet now point those current-source routes at released TRACE `6c68fae8…` and Mechanical Ethics `e2ef746e…`. The historical node-source snapshots at TRACE `46f4fcd…` and Mechanical Ethics `44f7efb…` remain unchanged. A maintained regression requires both identities to remain visible and rejects the stale intermediate README commits.
+
+No TRACE or Mechanical Ethics source, release, licence, node text, graph relation, artwork, navigation, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.44. This is a provenance/currentness repair; reader benefit remains unmeasured.
 
 ### D086
 

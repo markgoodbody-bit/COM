@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.43",
+  "site_edition": "0.8.44",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -76,8 +76,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "4c8b136f574f8e7c784eb833608e6292b33aa23d5d2c184313ca8a8483e8d10b",
-    "change_history_input_html_sha256": "9b93a062e61fee92b7fd45a39a0541acc1b1a4b0c1268d7c8a72fd2120c8e82e",
+    "change_history_sha256": "52b3cf1c9bcf5b963f89f31bd8e6214f02f456beffe5f4ba6071af5de9e83df7",
+    "change_history_input_html_sha256": "082aa4d17386e48722f35a7fbb2f1a046672d4d926f4a92d0ef098c0e64684dd",
     "change_history_addendum_note": "D016 through D038 and D045-D086 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
@@ -177,6 +177,12 @@
       "basis": "3f462ded684b1790c0df272569c29847831acccd",
       "candidate_head": "067911c7658bf9f9dfcbd23345ff8cfba2c77e0c",
       "scope": "Explore now presents its existing ten-question map immediately after the complete Anna Atkins artwork entrance, while preserving the original six orientation sections verbatim under About this reading space. All ten questions, thirty authored connections, source routes and machine representations are unchanged. Exact-head maintained CI and fresh 1440px/390px built-page QA passed. No framework, artwork-byte, node-text, graph-semantic, permission, intake, tracking or server-behaviour change. Reader benefit unmeasured."
+    },
+    "current_source_routes_d087": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/491",
+      "basis": "f1812a8d7d965c09cfd2eeaad51b31aa25313847",
+      "candidate_head": "5a91aea30871bfede42d9236d56abcd808ac3227",
+      "scope": "Human-facing Explore source routes explicitly labelled current-source now match the released TRACE v0.4.0 and Mechanical Ethics v0.8.0 README heads already carried by sources.json. Historical node-source snapshots remain unchanged. Exact-head maintained CI passed. No framework semantics, node text, graph relation, artwork, permission, intake, tracking or server-behaviour change. Reader benefit unmeasured."
     },
     "html_source_text": [
       {
@@ -284,7 +290,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "16e794a6922f2a1543f3ac96cca0b8738f070c3efd16daf8975073fb36e03130",
+    "change_history_html_sha256": "24f3b2072be0b92ab8847e9a3b8557815b0ca2d1922d6faab0e405c3f7914d72",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
