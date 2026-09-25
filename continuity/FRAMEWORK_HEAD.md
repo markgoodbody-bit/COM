@@ -124,7 +124,7 @@ The release lane is closed. Beta PRs are closed with branches/history preserved.
 
 ### Digital Science Catalyst Grant 2026
 
-Status: **PRIMARY NEAR-TERM RESOURCE TARGET / DRAFT HARDENED / NOT SUBMITTED**.
+Status: **PRIMARY NEAR-TERM RESOURCE TARGET / OWNER-SUBTRACTED INTEGRATION PILOT / NOT SUBMITTED**.
 
 Owner rules rechecked 25 September 2026: individuals and early-stage prototypes/concepts are eligible; proposal <=1,500 words; deadline **5 October 2026, 17:00 BST**; judges assess team, problem, solution, competitors, market, progress and Digital Science fit.
 
@@ -133,15 +133,17 @@ Current application draft:
 
 Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
-EvidenceWatch current private main is `41f12db0573dd529c9ef493deba3da0e39508aaa` with CI SUCCESS and 47 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
+EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781` with CI SUCCESS and 47 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
 
 Research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`. Optional Digital Science recording script: `coordination/resources/DIGITAL_SCIENCE_RESEARCH_DEMO_RECORDING_20260925.md`.
+
+Latest stronger-owner pass removes mechanism novelty: Cochrane owns important retraction/correction-to-review paths; Refract owns reproducible source-change events; AIEP P170 owns evidence-dependency/cascade architecture; ReadCube/scite own substantial workflow/monitoring surfaces. EvidenceWatch now survives only as a workflow-integration/burden hypothesis. Current EvidenceWatch main `69aab14f439565f5cfaac7cb55630118dca6c781` is a docs-only owner-subtraction move; runtime code/test state is unchanged.
 
 Live application form is now reached and page 1 inspected; it asks for email. Later pages and any embedded terms remain uninspected until the human identity/form gate is crossed.
 
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL = 1448 WORDS / LIVING-REVIEW + OWNER-SUBTRACTION REVISION
+PROPOSAL = 1354 WORDS / LIVING-REVIEW + OWNER-SUBTRACTION REVISION
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
