@@ -931,7 +931,7 @@ RECONSTRUCTION != UNBROKEN SURVIVAL
 SHARED HISTORY != UNIQUE SUCCESSOR
 LOCAL RESEMBLANCE != TRANSITIVE IDENTITY
 
-Claude Code's #475 operational lane had not returned at this COMSYNC. Keep UNKNOWN rather than inventing a result.
+Historical receipt from that earlier COMSYNC: Claude Code's #475 operational lane had not yet returned then. This UNKNOWN was superseded by the CC return preserved in the next dated reduction below; do not treat it as current pending work.
 
 ## 25 September 2026 — morning FULL COMSYNC reduction
 
