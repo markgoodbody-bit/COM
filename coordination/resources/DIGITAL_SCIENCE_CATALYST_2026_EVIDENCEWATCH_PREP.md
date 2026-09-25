@@ -31,15 +31,15 @@ POSSIBLE £25K != AWARDED £25K
 
 ## 1. THE PROBLEM
 
-The initial user is a researcher or evidence-synthesis lead maintaining a living review or recurring evidence brief. Their decision is whether an existing conclusion must be reopened when underlying evidence changes: a publisher correction, dataset revision, owner update, replaced authority page, or apparently new source that repeats the same evidentiary root.
+The initial user is a living systematic review team. Its decision is whether an existing conclusion must be reopened when evidence already included changes: a publisher correction, dataset revision, owner update, replaced authority page, or apparently new source that repeats the same evidentiary root.
 
 Formal retraction warnings are not the gap I am claiming. Zotero already integrates Retraction Watch and can warn when a cited item is retracted, including citations already present in a document when they are refreshed. Crossmark exposes formal scholarly corrections, retractions and updates.
 
-The residual problem is what happens **after reliance** when the change is broader than a formal retraction and the dependency broader than one citation: did the evidence state behind a bounded claim materially change, and does the maintained review/brief now need reopening?
+The residual problem is what happens **after reliance** when the change is broader than formal retraction status: did the evidence state behind a bounded claim materially change, and does the living review now need reopening?
 
-There is evidence that propagation can fail. In a 2022 meta-epidemiological study of 587 systematic reviews and clinical-practice guidelines citing retracted randomized trials, 43% were published after the trial had been retracted. Among reviews/guidelines that had incorporated trials before those trials were later retracted, only about 5% corrected or retracted their own results. That is biomedical evidence, not a universal rate, but it shows the downstream-dependency failure is real. Source: https://pubmed.ncbi.nlm.nih.gov/35779825/
+Change itself is common, but materiality is the unmeasured crux. A 2016 PLOS ONE study found textual content had drifted for over 75% of the web references for which archived and live versions could be compared. Separately, a 2022 biomedical study found only about 5% of systematic reviews/guidelines corrected or retracted their results after trials they had included were later retracted. Neither establishes a universal rate of material change. Sources: https://doi.org/10.1371/journal.pone.0167475 and https://pubmed.ncbi.nlm.nih.gov/35779825/
 
-I have not yet measured how often the broader EvidenceWatch problem occurs in target teams or whether monitoring it saves time. Those are pilot questions.
+Whether EvidenceWatch catches consequential changes accurately enough to save review time remains a pilot question.
 
 ## 2. YOUR WORKFLOW
 
@@ -64,7 +64,7 @@ Trust is carried by inspectable state rather than a model verdict.
 
 EvidenceWatch rebuilds canonical state from an append-only ledger after restart. Observation fingerprints suppress duplicate model work without deleting history. Authority is explicit configuration, separate from evidentiary role. Discovered sources are quarantined as candidates rather than recursively gaining authority.
 
-A concrete refusal/escalation behaviour is already tested: a newly discovered candidate source may be analysed but cannot establish or advance canonical state and cannot create a canonical alert until a human/configuration change promotes it. When a current authority source becomes unreachable, EvidenceWatch flags review but preserves the last known claim state instead of converting "unreachable" into "false".
+A concrete refuse/flag behaviour is tested: a derivative source repeating the owner stays quiet; if it diverges, EvidenceWatch flags review but refuses to overwrite canonical state. Discovered candidates likewise cannot establish or advance state until explicit promotion. If an authority source becomes unreachable, the last known state is preserved rather than converted into "false".
 
 The user remains accountable. EvidenceWatch never rewrites a brief or declares truth. Tested disagreement, source-loss and candidate-discovery cases preserve state or route review without canonical overwrite; model errors can still go undetected.
 
@@ -101,7 +101,7 @@ Strong existing owners already cover large parts of this problem:
 - **Crossmark / Crossref** exposes formal corrections, retractions and publisher-registered updates: https://www.crossref.org/services/crossmark/
 - **ReadCube** owns reference management, literature monitoring, shared libraries and systematic-review workflows: https://about.readcube.com/
 - Digital Science's own Catalyst portfolio includes **PostPub**, which tracks retractions/integrity actions, and **VIRUS**, which tracks questionable papers and their downstream scholarly/policy impact. These are close precedents, not gaps I should relabel as mine.
-- scite and generic page-change monitors own further citation/change signals.
+- **Perma.cc** owns preservation of the cited web state—the complementary strategy of freezing the 'before' rather than monitoring the live source: https://perma.cc/
 
 The surviving hypothesis is narrower: **post-reliance claim-level state across heterogeneous sources + ancestry/independence + explicit state authority + material-change filtering + a map to downstream work that may need reopening**.
 
@@ -111,7 +111,7 @@ If another product already provides that full loop better, EvidenceWatch should 
 
 The next stage is a bounded research-workflow pilot.
 
-The first pilot user would be an evidence-synthesis lead maintaining a living review or recurring evidence brief, using Zotero or an equivalent shared reference library as the existing workflow boundary. The pilot would compare EvidenceWatch with the team's existing practice on a pre-labelled set of material/non-material changes, measuring:
+The first pilot would involve one living systematic review team, using its existing reference library. Cochrane's living-review model already performs continual surveillance for new evidence; this pilot tests the adjacent burden of changes to evidence already included. It would compare EvidenceWatch with existing practice on a pre-labelled set of material/non-material changes, measuring:
 - time to flag affected work;
 - missed material changes and false alerts;
 - reviewer minutes, duplicate suppression, and setup/maintenance time;
@@ -133,7 +133,7 @@ Digital Science also owns products close to the natural integration surface. Rea
 
 Up to £25,000 would be staged.
 
-- **Stage 1 — £5,000 cap:** workflow integration, matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
+- **Stage 1 — £5,000 cap:** workflow integration and testing whether the review's own outcome→study structure can propose dependency mappings for human batch approval; matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
 - **Stage 2 — £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
 - **Stage 3 — £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
