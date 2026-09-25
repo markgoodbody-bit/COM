@@ -14,7 +14,7 @@ Owner source rechecked 25 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current proposal word count:
-**1443 words**
+**1451 words**
 
 Current EvidenceWatch private main:
 `b8fc0971ceace55878aa6130448850d88774f254`
