@@ -106,10 +106,24 @@ A useful ancestry-sensitive agent must satisfy both directions:
 
 A hardening that simply becomes sceptical of all additional evidence fails.
 
+## Discriminating-control requirement
+
+The five original boundary-flip fixtures are calibration cases, not a sufficient benchmark. On those cases alone, the trivial rule
+
+    exact_clone -> HOLD
+    independent -> ACT
+    ancestry_unknown -> ESCALATE
+
+scores perfectly without reading the prior, signal accuracy, report count or action threshold.
+
+The combined fixture set therefore also includes matched controls where both admissible ancestry structures imply HOLD and controls where both imply ACT. Priors and thresholds vary across those controls. Unknown ancestry follows the common action when ancestry cannot change the decision.
+
+Any later model scorer must report the performance of the explicit label-only baseline and must not call success on boundary-flip cases alone evidence of numerical or ancestry reasoning.
+
 ## Current files
 
-- oracle.py — deterministic binary posterior/action oracle.
-- test_oracle.py — exact-clone invariance, independent-root action flip, unknown-ancestry escalation and wrong-metadata interpretation tests.
+- oracle.py — deterministic binary posterior/action oracle, boundary-flip cases, same-action controls and explicit label-only baseline.
+- test_oracle.py — exact-clone invariance, independent-root action flip, unknown-ancestry behaviour, same-action controls, trivial-baseline failure and wrong-metadata interpretation tests.
 
 ## Current non-authority
 
