@@ -38,6 +38,12 @@ jobs:
         run: python -m unittest scripts.test_import_resources scripts.test_source_views
       - name: Local route integrity
         run: python scripts/check-local-links.py
+      - name: Temporary Explore QA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: psfh-map-first-explore-qa
+          path: out/explore
+          if-no-files-found: error
 
 # This workflow checks source/build integrity only.
 # CI_PASS != READER_BENEFIT != VALIDATION != PUBLICATION
