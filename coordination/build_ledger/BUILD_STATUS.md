@@ -57,7 +57,7 @@ EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781`
 
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
-- **THR #76 MERGED** — main `c7be1efb5ca66673c398cdc19eb4c0f2489246d9`; browse-card source-basis freshness guard integrated after exact-head `36196988375` SUCCESS / 129 tests OK; main integrity `36197053456` + Pages `36197052804` SUCCESS; no record/registry/schema/catalogue-content change. #75 containment repair remains inherited;
+- **THR #77 MERGED** — main `b2182211cb56a013ea6c146d3500214fa5352f91`; #76 browse-card source-basis guard remains active; Hannibal v0.1.3 now records a bounded Internet Archive / NYPL Polybius recovery route with exact printing/reprint and exact-Thayer identity left unresolved; exact-head validation `36198799678` SUCCESS; main integrity `36198841848` + Pages `36198841933` SUCCESS; four records remain four, no schema growth. #63/#71 closed as superseded;
 - **Relay #257 MERGED** — main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`; issue bodies and zero-comment issues now participate in COMSYNC mail discovery; no Production activation.
 
 Current receipts:
