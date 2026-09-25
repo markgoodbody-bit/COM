@@ -4,17 +4,20 @@ Date: 25 September 2026
 
 Status: **FORM-READY COPY / NOT SUBMITTED / HUMAN TERMS + IDENTITY + FINAL SUBMIT GATE**
 
-Owner deadline:
-**5 October 2026, 17:00 BST**
-
-Owner proposal limit:
-**1,500 words**
+Owner source rechecked 25 September 2026:
+- theme: **Agentic workflows you can trust**
+- open globally to individuals, startups and research teams;
+- prototype / working product / well-formed concept accepted;
+- award up to **£25,000**, described as equity-free;
+- applications close **5 October 2026, 17:00 BST**;
+- proposal maximum **1,500 words**;
+- shortlisted applicants may be invited to a short interview with a live demo.
 
 Current proposal word count:
-**1422 words**
+**1450 words**
 
 Current EvidenceWatch private main:
-`b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`
+`41f12db0573dd529c9ef493deba3da0e39508aaa`
 
 Current CI:
 **SUCCESS**
@@ -22,14 +25,14 @@ Current CI:
 Current deterministic suite:
 **47 tests / 47 pass**
 
-Engineering witness receipt:
+Engineering witness:
 `coordination/build_ledger/EVIDENCEWATCH_RESEARCH_HANDOFF_WITNESS_20260925.md`
 
-Demo currently available:
-https://youtu.be/0hdwNc_t4pM
+Selectable synthetic research demo receipt:
+`coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`
 
-Current product also includes a clearly labelled synthetic research-correction browser fixture, selectable locally through:
-`scripts/start-research-demo.ps1`
+Existing reviewed unlisted demo:
+https://youtu.be/0hdwNc_t4pM
 
 Related public work:
 - https://github.com/markgoodbody-bit/human-record
@@ -43,6 +46,7 @@ FORMAL RETRACTION ALERTING != OUR GAP
 CSL HANDOFF != LIVE PRODUCT INTEGRATION
 SYNTHETIC RESEARCH WITNESS != RESEARCHER VALIDATION
 SYNTHETIC RESEARCH DEMO != LIVE SCHOLARLY EVIDENCE
+NO PILOT PARTNER CLAIMED
 NO RESEARCH CUSTOMERS CLAIMED
 NO PRICING VALIDATION CLAIMED
 FINAL TERMS / IDENTITY / SUBMIT = MARK HUMAN GATE
@@ -52,15 +56,15 @@ FINAL TERMS / IDENTITY / SUBMIT = MARK HUMAN GATE
 
 ## 1. THE PROBLEM
 
-The initial user is a researcher or evidence-synthesis lead maintaining a living review or recurring evidence brief. Their decision is whether an existing conclusion must be reopened when underlying evidence changes: a publisher correction, dataset revision, owner update, replaced authority page, or apparently new source that repeats the same evidentiary root.
+The initial user is a living systematic review team. Its decision is whether an existing conclusion must be reopened when evidence already included changes: a publisher correction, dataset revision, owner update, replaced authority page, or apparently new source that repeats the same evidentiary root.
 
 Formal retraction warnings are not the gap I am claiming. Zotero already integrates Retraction Watch and can warn when a cited item is retracted, including citations already present in a document when they are refreshed. Crossmark exposes formal scholarly corrections, retractions and updates.
 
-The residual problem is what happens **after reliance** when the change is broader than a formal retraction and the dependency broader than one citation: did the evidence state behind a bounded claim materially change, and does the maintained review/brief now need reopening?
+The residual problem is what happens **after reliance** when the change is broader than formal retraction status: did the evidence state behind a bounded claim materially change, and does the living review now need reopening?
 
-There is evidence that propagation can fail. In a 2022 meta-epidemiological study of 587 systematic reviews and clinical-practice guidelines citing retracted randomized trials, 43% were published after the trial had been retracted. Among reviews/guidelines that had incorporated trials before those trials were later retracted, only about 5% corrected or retracted their own results. That is biomedical evidence, not a universal rate, but it shows the downstream-dependency failure is real. Source: https://pubmed.ncbi.nlm.nih.gov/35779825/
+Change itself is common, but materiality is the unmeasured crux. A 2016 PLOS ONE study found textual content had drifted for over 75% of the web references for which archived and live versions could be compared. Separately, a 2022 biomedical study found only about 5% of systematic reviews/guidelines corrected or retracted their results after trials they had included were later retracted. Neither establishes a universal rate of material change. Sources: https://doi.org/10.1371/journal.pone.0167475 and https://pubmed.ncbi.nlm.nih.gov/35779825/
 
-I have not yet measured how often the broader EvidenceWatch problem occurs in target teams or whether monitoring it saves time. Those are pilot questions.
+Whether EvidenceWatch catches consequential changes accurately enough to save review time remains a pilot question.
 
 ## 2. YOUR WORKFLOW
 
@@ -75,9 +79,11 @@ EvidenceWatch is a configured multi-step monitoring agent. Humans set the questi
 7. Non-material paraphrase and derivative repetition stay quiet. Corrections, source loss/recovery, disagreement or genuinely new support can trigger review.
 8. The human sees the before/after state, source role, revision history and affected downstream work, then decides whether to revise, escalate or leave it unchanged.
 
-The current prototype is standalone Node.js. A new reversible adapter now accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
+The current prototype is standalone Node.js. A new reversible adapter accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
 
-This is currently a **file handoff, not a live Zotero or ReadCube integration**. A funded pilot would automate the handoff through the supported integration surface of the reference-manager or shared evidence-library workflow chosen with a pilot user.
+The first proposed integration target is **Zotero**. A pilot would recruit one living systematic review team that already maintains its included-study library in Zotero or a compatible reference manager, then automate the current file handoff through a supported integration surface. No pilot partner is established yet.
+
+This is currently a **file handoff, not a live Zotero or ReadCube integration**.
 
 ## 3. TRUST, AUDIT AND GOVERNANCE
 
@@ -85,7 +91,7 @@ Trust is carried by inspectable state rather than a model verdict.
 
 EvidenceWatch rebuilds canonical state from an append-only ledger after restart. Observation fingerprints suppress duplicate model work without deleting history. Authority is explicit configuration, separate from evidentiary role. Discovered sources are quarantined as candidates rather than recursively gaining authority.
 
-A concrete refusal/escalation behaviour is already tested: a newly discovered candidate source may be analysed but cannot establish or advance canonical state and cannot create a canonical alert until a human/configuration change promotes it. When a current authority source becomes unreachable, EvidenceWatch flags review but preserves the last known claim state instead of converting "unreachable" into "false".
+A concrete refuse/flag behaviour is tested: a derivative source repeating the owner stays quiet; if it diverges, EvidenceWatch flags review but refuses to overwrite canonical state. Discovered candidates likewise cannot establish or advance state until explicit promotion. If an authority source becomes unreachable, the last known state is preserved rather than converted into "false".
 
 The user remains accountable. EvidenceWatch never rewrites a brief or declares truth. Tested disagreement, source-loss and candidate-discovery cases preserve state or route review without canonical overwrite; model errors can still go undetected.
 
@@ -122,7 +128,7 @@ Strong existing owners already cover large parts of this problem:
 - **Crossmark / Crossref** exposes formal corrections, retractions and publisher-registered updates: https://www.crossref.org/services/crossmark/
 - **ReadCube** owns reference management, literature monitoring, shared libraries and systematic-review workflows: https://about.readcube.com/
 - Digital Science's own Catalyst portfolio includes **PostPub**, which tracks retractions/integrity actions, and **VIRUS**, which tracks questionable papers and their downstream scholarly/policy impact. These are close precedents, not gaps I should relabel as mine.
-- scite and generic page-change monitors own further citation/change signals.
+- **Perma.cc** owns preservation of the cited web state—the complementary strategy of freezing the 'before' rather than monitoring the live source: https://perma.cc/
 
 The surviving hypothesis is narrower: **post-reliance claim-level state across heterogeneous sources + ancestry/independence + explicit state authority + material-change filtering + a map to downstream work that may need reopening**.
 
@@ -132,7 +138,7 @@ If another product already provides that full loop better, EvidenceWatch should 
 
 The next stage is a bounded research-workflow pilot.
 
-The first pilot user would be an evidence-synthesis lead maintaining a living review or recurring evidence brief, using Zotero or an equivalent shared reference library as the existing workflow boundary. The pilot would compare EvidenceWatch with the team's existing practice on a pre-labelled set of material/non-material changes, measuring:
+The first pilot would involve one living systematic review team, using its existing reference library. Cochrane's living-review model already performs continual surveillance for new evidence; this pilot tests the adjacent burden of changes to evidence already included. It would compare EvidenceWatch with existing practice on a pre-labelled set of material/non-material changes, measuring:
 - time to flag affected work;
 - missed material changes and false alerts;
 - reviewer minutes, duplicate suppression, and setup/maintenance time;
@@ -154,7 +160,7 @@ Digital Science also owns products close to the natural integration surface. Rea
 
 Up to £25,000 would be staged.
 
-- **Stage 1 — £5,000 cap:** workflow integration, matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
+- **Stage 1 — £5,000 cap:** workflow integration and testing whether the review's own outcome→study structure can propose dependency mappings for human batch approval; matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
 - **Stage 2 — £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
 - **Stage 3 — £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
@@ -166,13 +172,16 @@ This moves a working standalone prototype into a measured existing-workflow test
 
 Before submission:
 
-- confirm the live form still uses the owner-published 2026 deadline and proposal structure;
-- read any privacy, publicity, IP, award or participation terms shown in the actual application form;
-- specifically check whether Digital Science's generic website-content licence applies to Catalyst application material; current public evidence does not establish that;
+- open the live Digital Science application from the owner page;
+- confirm the application still uses the published 2026 criteria and deadline;
+- read any privacy, publicity, IP, award or participation terms shown in the live form;
 - confirm name/email/contact fields;
-- decide whether to use the existing unlisted NVIDIA demo or record the research-specific deterministic demo;
-- confirm the staged £25,000 budget;
-- check that no field requires an unsupported company, customer, revenue, academic affiliation or user claim;
+- decide whether to provide the existing unlisted demo URL;
+- preserve the distinction between the cybersecurity demo and the synthetic research fixture;
+- confirm the staged £5k / £14k / £6k budget;
+- check that no field requires an unsupported company, customer, revenue, academic-affiliation, pilot-partner or user claim;
 - submit only after Mark explicitly releases the final form.
 
-No organiser contact or submission has been performed from this packet.
+The public owner page does not expose the complete live form fields or award agreement through Framework's current web aperture. Do not invent either.
+
+No organiser contact, account action, terms acceptance or submission has been performed from this packet.
