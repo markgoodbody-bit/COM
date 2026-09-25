@@ -17,13 +17,12 @@ Owner criteria rechecked against the live 2026 Digital Science Catalyst page:
 Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
-Current EvidenceWatch candidate:
-- draft PR #7
-- head `40567758348695c988c286dca414f1665f3e3e5c`
-- push CI SUCCESS
-- PR CI SUCCESS
-- 43 deterministic tests on branch
-- file-based CSL-JSON reference-manager handoff
+Current EvidenceWatch state:
+- private main `12594ef3a7c80324c0299002ecc4868bf2d0c82f`
+- CI SUCCESS
+- 43 deterministic tests
+- PR #7 CSL-JSON reference-manager handoff merged
+- owner-subtraction note now explicitly records Zotero retraction warnings and ReadCube monitoring/review ownership
 - no public release / no live Zotero or ReadCube integration
 
 ## Strongest rejection reasons, not hidden
@@ -64,16 +63,18 @@ The strongest concrete refusal/escalation test is already in code: a discovered 
 Disposition: **KEEP**.
 
 ### Competitors
-Strong owners exist:
+Strong owners exist and narrow the claim further:
 - Crossmark / Crossref: formal corrections/retractions/update status;
-- scite: citation context/retractions;
-- Visualping / Distill: change monitoring/history/conditions;
-- Zotero / ReadCube: reference and literature workflows.
+- Zotero + Retraction Watch: library and document-level retraction warnings, including later retraction of already-cited items;
+- ReadCube: literature monitoring, shared libraries, systematic-review workflows, citation/library synchronisation;
+- Visualping / Distill: page-change monitoring;
+- scite: citation context/retraction signals.
 
-EvidenceWatch survives only as a conjunction:
-`claim-level cross-source state + ancestry/independence + explicit state authority + correction history + downstream revisit dependency`.
+EvidenceWatch therefore **does not own formal retraction propagation**. The surviving hypothesis is broader post-reliance evidence change across heterogeneous sources, with explicit ancestry/authority and downstream dependency routing beyond one citation.
 
-Disposition: **KEEP AS PRODUCT HYPOTHESIS, NOT NOVELTY CLAIM**. Kill/pivot if a current product owns the full loop better.
+A 2022 meta-epidemiological study of systematic reviews and clinical-practice guidelines supports the existence of a downstream correction problem in biomedicine: of 239 articles that had included trials later retracted, only about 5% of systematic reviews and guidelines corrected or retracted their results. This is domain-specific evidence, not a universal incidence estimate.
+
+Disposition: **KEEP AS NARROWED PRODUCT HYPOTHESIS, NOT NOVELTY CLAIM**. Kill/pivot if a current product owns the full residue better.
 
 ### Market
 No customer discovery, purchasing signal or pricing validation exists. Candidate users are evidence-synthesis, research-integrity and recurring-review teams. Workspace/monitored-collection subscription is only a hypothesis.
@@ -110,6 +111,6 @@ PR #7 passes the useful-without-grant test:
 - the adapter is independent of Digital Science-specific APIs;
 - all branch tests pass.
 
-Therefore **MERGE IS EARNED AS INTERNAL PRODUCT PROGRESS**, while preserving the NVIDIA submission artifact's older frozen head in its receipt.
+PR #7 was merged as internal product progress. The later owner-subtraction documentation commit moved private main to `12594ef3a7c80324c0299002ecc4868bf2d0c82f`, with CI green. The NVIDIA submission remains bound to its earlier frozen head in its receipt.
 
 No public release, organiser contact, form submission, terms acceptance or spend is implied by merge.
