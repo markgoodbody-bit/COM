@@ -33,7 +33,7 @@ Hosted review:
 - an intermediate assertion-only head failed because a test source needle used a double-quoted PowerShell literal containing `$payload`; Framework corrected the test literal before final review. The transport source had already passed both suites before that assertion was added.
 
 Post-merge push run:
-- `36199933452`: pending/in progress at receipt creation; do not call post-merge green until observed.
+- `36199933452`: SUCCESS at maintained Simple-v1 merge `f7241884b918dc69bc2cf225027d8b430d893651`.
 
 Preserve:
 ```text
