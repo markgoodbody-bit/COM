@@ -122,6 +122,26 @@ The release lane is closed. Beta PRs are closed with branches/history preserved.
 
 ## Current human gates
 
+### Digital Science Catalyst Grant 2026
+
+Status: **PRIMARY NEAR-TERM RESOURCE TARGET / DRAFT HARDENED / NOT SUBMITTED**.
+
+Owner rules rechecked 25 September 2026: individuals and early-stage prototypes/concepts are eligible; proposal <=1,500 words; deadline **5 October 2026, 17:00 BST**; judges assess team, problem, solution, competitors, market, progress and Digital Science fit.
+
+Current application draft:
+`coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
+
+Hostile review lane: COM #479.
+
+EvidenceWatch draft PR #7 adds a green CSL-JSON reference-manager file handoff. Preserve the ceiling: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION**.
+
+```text
+APPLICATION = NOT SUBMITTED
+PROPOSAL = 1269 WORDS / HOSTILE-REVIEW REVISION
+DEADLINE = 2026-10-05 17:00 BST
+FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
+```
+
 ### Hack-Nation 7
 
 Status: **STOP / NOT APPLYING**.
