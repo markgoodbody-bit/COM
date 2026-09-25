@@ -1,3 +1,16 @@
+## EvidenceWatch — NVIDIA Claw submitted / awaiting result
+
+Submission receipt:
+`coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
+
+```text
+SUBMITTED = YES
+VIDEO = https://youtu.be/0hdwNc_t4pM
+WINNER OUTREACH = AROUND 6 OCTOBER 2026
+AWARDED = UNKNOWN
+NO FURTHER ENGINEERING CHURN ABSENT CONCRETE DEFECT / ORGANISER REQUEST
+```
+
 ## EvidenceWatch — launcher falsification closed / recording gate
 
 Current private standalone product source:
