@@ -1,0 +1,148 @@
+name: PSFH D085 publish human-first appeal example
+
+on:
+  push:
+    branches:
+      - framework/psfh-d085-publish-20260925
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'public/explore/example/**'
+      - 'app/globals.css'
+      - 'scripts/test-appeal-example-current.mjs'
+      - '.github/workflows/psfh-d085-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d085:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d085-publish-20260925
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D085 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.42'
+          m['updated']='2026-09-25'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          m['provenance']['change_history_addendum_note']=note.replace('D045-D084','D045-D085')
+          m['provenance']['human_first_appeal_d085']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/465',
+            'basis':'007c03ab3c2c73f29c376f96e13874f8fec02e39',
+            'scope':'Five appeal-example views now lead with ordinary human-readable situation/question material while preserving source-shaped fields, provenance, status, facts, unknowns, lenses, Markdown and JSON under explicit routes/disclosure. Reading column narrowed to 42rem and regression pins the human-first structure. No framework, machine-payload, crawler, intake, permission, tracking or server-behaviour change. Reader benefit unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D085_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D085_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          git diff --check
+      - name: Commit exact D085 manifest pins
+        run: |
+          git config user.name "PSFH D085 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D085 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D085: pin human-first appeal release provenance"
+          git push origin HEAD:framework/psfh-d085-publish-20260925
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D084
+        run: |
+          rm -rf /tmp/psfh-d085-publish
+          git worktree add -B gh-pages /tmp/psfh-d085-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d085-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d085-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d085-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d085-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d085-publish/
+          test "$(git -C /tmp/psfh-d085-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d085-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d085-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d085-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d085-publish/resources');"
+          git -C /tmp/psfh-d085-publish status --short
+      - name: Commit and publish D085
+        run: |
+          git -C /tmp/psfh-d085-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d085-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d085-publish add -A
+          if git -C /tmp/psfh-d085-publish diff --cached --quiet; then
+            echo "No D085 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d085-publish commit -m "Publish PSFH D085 human-first appeal example"
+          git -C /tmp/psfh-d085-publish push origin HEAD:gh-pages
+      - name: Verify D085 served bytes
+        run: |
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/manifest.json -o /tmp/psfh-live-manifest.json && grep -F '"site_edition": "0.8.42"' /tmp/psfh-live-manifest.json; then
+              ok=1
+              break
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || { echo "Live manifest did not converge to D085" >&2; exit 1; }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/example/case.html -o /tmp/psfh-live-case.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/example/affected.html -o /tmp/psfh-live-affected.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/style.css -o /tmp/psfh-live-style.css
+          grep -F 'An appeal that comes later' /tmp/psfh-live-case.html
+          grep -F 'Source details and limits' /tmp/psfh-live-case.html
+          grep -F 'What could become unreachable before the hearing?' /tmp/psfh-live-affected.html
+          grep -F 'D085' /tmp/psfh-live-changes.html
+          grep -F 'Let the appeal example read like a human situation' /tmp/psfh-live-changes.html
+          grep -F '.case-example-page { width: min(calc(100% - 2rem), 42rem)' /tmp/psfh-live-style.css
+          echo "D085 selected live-byte verification PASS"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
