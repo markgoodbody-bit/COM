@@ -54,9 +54,11 @@ EvidenceWatch is a configured multi-step monitoring agent. Humans set the questi
 7. Non-material paraphrase and derivative repetition stay quiet. Corrections, source loss/recovery, disagreement or genuinely new support can trigger review.
 8. The human sees the before/after state, source role, revision history and affected downstream work, then decides whether to revise, escalate or leave it unchanged.
 
-The current prototype is standalone Node.js. A new reversible adapter now accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
+The current prototype is standalone Node.js. A new reversible adapter accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
 
-This is currently a **file handoff, not a live Zotero or ReadCube integration**. A funded pilot would automate the handoff through the supported integration surface of the reference-manager or shared evidence-library workflow chosen with a pilot user.
+The first proposed integration target is **Zotero**. A pilot would recruit one living systematic review team that already maintains its included-study library in Zotero or a compatible reference manager, then automate the current file handoff through a supported integration surface. No pilot partner is established yet.
+
+This is currently a **file handoff, not a live Zotero or ReadCube integration**.
 
 ## 3. TRUST, AUDIT AND GOVERNANCE
 
