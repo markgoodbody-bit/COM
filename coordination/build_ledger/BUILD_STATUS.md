@@ -11,7 +11,7 @@ AWARDED = UNKNOWN
 NO FURTHER ENGINEERING CHURN ABSENT CONCRETE DEFECT / ORGANISER REQUEST
 ```
 
-## EvidenceWatch — launcher falsification closed / recording gate
+## EvidenceWatch — preserved launcher repair basis
 
 Current private standalone product source:
 `markgoodbody-bit/evidencewatch@e924b0de15ccaa1255bfdb80685f60f1a60172e9`
@@ -34,12 +34,9 @@ RECORDING PATH REPAIR = MERGED / CI GREEN
 UI FREEZE REMAINS
 NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
 
-NEXT = RECORD VIDEO
--> REVIEW FINISHED VIDEO
--> UPLOAD PUBLIC VIDEO
--> INSERT URL
--> FINAL FORM REVIEW
--> MARK EXPLICIT SUBMISSION GATE
+RECORDING / REVIEW / UPLOAD / FINAL SUBMISSION = COMPLETED
+NEXT = AWAIT RESULT OR ORGANISER REQUEST
+SUBMISSION DOES NOT ESTABLISH AN AWARD
 ```
 
 ## WORLD / REAL USE — THR documentation reviews returned
@@ -84,7 +81,7 @@ History belongs in dated receipts + Git.
 
 No single Production/source build lane is currently authorized.
 
-EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
+EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`. Mark completed the NVIDIA Claw submission on 25 September; the dated submission receipt records the observed confirmation. Await the result or a concrete organiser request, not another recording or submission. Award status remains unknown.
 
 Current reversible maintenance/design candidates:
 - **PSFH D084** — D079-D083 core presentation systems retained; a concrete accessibility collision between contextual art and the reading-room shell is repaired so each art-bearing node room exposes one intended first-action skip link, published and selected-live-byte verified at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`; remaining long-form/utility pages currently inherit the shared stylesheet without a concrete defect, so no D085 is queued by momentum;
@@ -220,9 +217,9 @@ No current work is blocked enough on paid compute/API to justify manufacturing a
 
 ```text
 competition application = NONE
-competition submission = NONE
+competition submission = NVIDIA CLAW / EVIDENCEWATCH SUBMITTED 25 SEPTEMBER
 grant application = NONE
-new account / terms = NONE
+new account = NOT ESTABLISHED HERE / NVIDIA SUBMISSION TERMS ACCEPTED BY MARK PER RECEIPT
 new spend = NONE
 travel commitment = NONE
 TRACE/ME release change = NONE

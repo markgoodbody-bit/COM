@@ -9,7 +9,7 @@ WINNER OUTREACH = AROUND 6 OCTOBER 2026
 AWARDED = UNKNOWN
 ```
 
-## EvidenceWatch — launcher falsification closed / recording gate
+## EvidenceWatch — preserved launcher repair basis
 
 Current private standalone product source:
 `markgoodbody-bit/evidencewatch@e924b0de15ccaa1255bfdb80685f60f1a60172e9`
@@ -32,12 +32,9 @@ RECORDING PATH REPAIR = MERGED / CI GREEN
 UI FREEZE REMAINS
 NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
 
-NEXT = RECORD VIDEO
--> REVIEW FINISHED VIDEO
--> UPLOAD PUBLIC VIDEO
--> INSERT URL
--> FINAL FORM REVIEW
--> MARK EXPLICIT SUBMISSION GATE
+RECORDING / REVIEW / UPLOAD / FINAL SUBMISSION = COMPLETED
+NEXT = AWAIT RESULT OR ORGANISER REQUEST
+SUBMISSION DOES NOT ESTABLISH AN AWARD
 ```
 
 ## WORLD / REAL USE — THR documentation reviews returned
