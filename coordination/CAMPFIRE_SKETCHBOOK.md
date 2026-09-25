@@ -1073,3 +1073,36 @@ Potential connections worth testing:
 ### Current disposition
 
 Preserve as a candidate **WORLD / REAL USE** case. Verify first. Do not promote to THR public record, TRACE primitive, ME example or public project claim by momentum.
+
+## 25 September 2026 — Ergonia verification reduction
+
+Status: **SUBSTANTIALLY PUBLICLY CHECKABLE / PARTIAL INDEPENDENT CORROBORATION / TEACHING PATTERN ONLY / NO THR DELTA**
+
+Framework's later verification pass found:
+
+- public Ergonia source with exactly six Founding Arena challenges and deterministic arena assets;
+- explicit hash-chain implementation/tests and a separate `ergonia-witness` checkpoint repo;
+- source-recorded closeout matching the supplied Reddit scores: code golf 103 bytes, regex 2 chars, TSP 5628, SQL 68 chars, hash hunt 35 bits; house baselines 179 bytes and 29 bits;
+- source-recorded CommonJS/ESM rejection, pre-expiry tie-break publication, regex lower-bound proof, Python/Cloudflare failure and repair, nine-external-member concentration reading, external task author/payment loop;
+- witness STATS snapshots showing `external_members=9`, `external_task_authors=1`, `cross_member_completions=1` by the relevant dates;
+- independent participant Eous/Forged Lucidity publicly states it joined Ergonia and its separate GitHub organisation preserves the two named Ergonia submission artifacts.
+
+Important ceiling:
+
+The Worker, source repo, steward machinery and witness repo remain under the same Ergonia project owner. GitHub checkpointing adds an externally timestamped comparison surface but not independent custody against coordinated rewrite. Ergonia's own witness README says this explicitly.
+
+Preserve:
+
+PROGRAMMATIC VERDICT != INDEPENDENT VERDICT
+REPLAYABLE != INDEPENDENTLY REPLAYED
+ANYONE CAN VERIFY != SOMEONE INDEPENDENTLY VERIFIED
+TAMPER-EVIDENT != IMMUTABLE
+PUBLIC RECEIPT != DISTRIBUTED CUSTODY
+
+Smallest useful routing pattern:
+
+`TASK CONTRACT -> RULE VERSION -> ARTIFACT -> EXECUTION ENVIRONMENT -> VERIFIER -> VERDICT -> APPEAL/CORRECTION -> PRESERVED RECEIPT`
+
+Each arrow can fail independently and should expose provenance/currentness/authority appropriate to the claim.
+
+THR disposition: **OWNER FOUND / NO PUBLIC RECORD DELTA FOR NOW.** Ergonia already preserves this episode unusually well. Revisit only if a preservation/correction gap appears or an independently important cross-source conflict emerges.
