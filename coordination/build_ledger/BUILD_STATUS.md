@@ -11,37 +11,6 @@ AWARDED = UNKNOWN
 NO FURTHER ENGINEERING CHURN ABSENT CONCRETE DEFECT / ORGANISER REQUEST
 ```
 
-## EvidenceWatch — launcher falsification closed / recording gate
-
-Current private standalone product source:
-`markgoodbody-bit/evidencewatch@e924b0de15ccaa1255bfdb80685f60f1a60172e9`
-
-Hosted CI:
-`35589752244 / SUCCESS`
-
-Claude Code's 100-run falsification found two concrete deterministic-recording defects after the UI freeze: inherited `EVIDENCEWATCH_PRESERVE_DEMO=1` could retain a prior demo ledger, and a second server could reset the shared ledger before failing to bind. PR #6 repairs both. Codex exact-head review returned `PASS_WITH_CEILINGS`; PR #6 is merged and main CI is green.
-
-Receipt:
-`coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`
-
-The prior live NVIDIA/public-web witness remains bound to runtime snapshot `00017d190bb6a9813cb64f1f30a17b27e4ce10ca`. The launcher/demo-server repair is not a fresh live-provider validation.
-
-Final Airtable copy is updated to the repaired standalone head:
-`coordination/build_ledger/EVIDENCEWATCH_FINAL_AIRTABLE_PAYLOAD_20260920.md`
-
-```text
-RECORDING PATH REPAIR = MERGED / CI GREEN
-UI FREEZE REMAINS
-NO MORE DESIGN / ENGINE CHURN ABSENT CONCRETE DEFECT
-
-NEXT = RECORD VIDEO
--> REVIEW FINISHED VIDEO
--> UPLOAD PUBLIC VIDEO
--> INSERT URL
--> FINAL FORM REVIEW
--> MARK EXPLICIT SUBMISSION GATE
-```
-
 ## WORLD / REAL USE — THR documentation reviews returned
 
 `coordination/build_ledger/WORLD_THR_DOCUMENTATION_REVIEWS_20260920.md`
@@ -68,15 +37,15 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **23 September 2026 — TRACE/ME released + PSFH D084 live**
+Updated: **25 September 2026 — EvidenceWatch submitted + PSFH D085 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
 
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
-- Human Record main `0a8e5370891c09bb0993a4da136219e658d1d104` — four public records; entity-admission guard integrated;
-- Campfire Relay main `192caed51cabc6fdf60cebea3c1bb7df548ecdb0` — COMSYNC/watchdog split integrated; Production unchanged.
+- Human Record main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795` — four public records; #75 containment/catalogue guard repair merged; validation + Pages green;
+- Campfire Relay main `95b2adc10a8082031cd31b289f94826d582932ef` — #256 bounded COMSYNC repairs merged; campfire-ci green; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -84,14 +53,16 @@ History belongs in dated receipts + Git.
 
 No single Production/source build lane is currently authorized.
 
-EvidenceWatch private main is frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; its next step is local video recording/review, not source expansion. Upload, form completion and submission remain consequential human gates.
+EvidenceWatch private main remains frozen and CI-green at `e924b0de15ccaa1255bfdb80685f60f1a60172e9`; the NVIDIA Claw submission is complete with reviewed unlisted demo video `https://youtu.be/0hdwNc_t4pM`. Result is unknown; organiser says winner outreach around 6 October 2026. No further EvidenceWatch engineering churn absent a concrete defect or organiser request.
 
-Current reversible maintenance/design candidates:
-- **PSFH D084** — D079-D083 core presentation systems retained; a concrete accessibility collision between contextual art and the reading-room shell is repaired so each art-bearing node room exposes one intended first-action skip link, published and selected-live-byte verified at `gh-pages@9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`; remaining long-form/utility pages currently inherit the shared stylesheet without a concrete defect, so no D085 is queued by momentum;
-- **THR #75** `1b0766a66c675689f0ae6df97609a032caef1946` — entity-admission containment/catalogue repair, CI green, unmerged, no record/registry/catalogue data change;
-- **Relay #256** `c630cafeb2efde1888bc773a0eaeb03376cf569b` — two bounded COMSYNC maintenance repairs, campfire-ci green, unmerged, no Production activation.
+Current reversible maintenance/design state:
+- **PSFH D085 LIVE** — maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; human-first appeal-example presentation only; selected live bytes verified. PR #467 map-first Explore remains held / not live;
+- **THR #75 MERGED** — main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`; validation + Pages green; no record/registry/catalogue data change;
+- **Relay #256 MERGED** — main `95b2adc10a8082031cd31b289f94826d582932ef`; campfire-ci green; no Production activation.
 
-Current EvidenceWatch repair receipt: `coordination/build_ledger/EVIDENCEWATCH_LAUNCHER_FALSIFICATION_CLOSE_20260921.md`.
+Current receipts:
+- `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
+- `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`
 
 ## Active non-source design
 
@@ -266,4 +237,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D084 live at `9c950c6e9be3e59cfbdc09f4f6a6a187e6a04c29`; maintained source `e09d22d03a4b4a0754dfe7c29853dad91742cc38`; publication workflow `35895091228` SUCCESS with selected exact live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass created by composing D081+D082. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D085 live at `e78c04f9668ad46f10c20909fffb9f6def2dda9e`; maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; publication workflow `36134343693` SUCCESS with selected exact live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass; D085 makes the appeal family human-readable first while preserving source-shaped detail. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
