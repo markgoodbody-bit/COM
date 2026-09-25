@@ -96,7 +96,9 @@ EvidenceWatch PR #7:
 - post-merge CI SUCCESS;
 - **NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION / NOT RESEARCHER VALIDATION**;
 - NVIDIA submission evidence remains bound to earlier head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
-- selectable synthetic research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`.
+- selectable synthetic research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`;
+- judge rehearsal: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_JUDGE_REHEARSAL_20260925.md`;
+- prepared likely post-gate form copy: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_FORM_FIELD_PACK_20260925.md`.
 - stronger-owner subtraction now treats Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work as owners of the component mechanisms; surviving claim = workflow-integration/burden hypothesis only;
 - EvidenceWatch main `69aab14f439565f5cfaac7cb55630118dca6c781` differs from the last tested code state only by owner-subtraction documentation.
 
