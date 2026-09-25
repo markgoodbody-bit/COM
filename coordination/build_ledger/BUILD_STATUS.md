@@ -143,12 +143,13 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
 - proposal hard-limit: 1,500 words;
-- current owner-subtracted revision: **1,422 words**;
+- current owner-subtracted revision: **1,451 conservative whitespace tokens / 1,422 normalized prose words**; both counts remain below the 1,500-word ceiling;
 - judge rehearsal and likely post-gate form copy are prepared; no identity/contact field has been entered;
 - target object: EvidenceWatch as a bounded workflow-integration/burden hypothesis inside research integrity / evidence synthesis;
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work own major component mechanisms;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
 - EvidenceWatch current private main is `b8fc0971ceace55878aa6130448850d88774f254`; PR #7 CSL handoff, PR #8 DOI repair, PR #9 controlled witness, PR #12 pilot protocol, PR #13 offline scorer and PR #14 Windows-path/cross-platform-CI repair are merged; 54/54 tests pass in both Windows and Ubuntu jobs; handoff remains file-based, not a live Zotero/ReadCube integration; no live research pilot exists.
+- COM #348 comment `5840522726` fixes the next evidence gate: obtain one willing living-review team's already-completed update-workflow specimen and measure its actual existing-practice baseline before another integration feature; no partner is established and no contact is authorised by the note.
 - live application form reached; page 1 inspected (email); later fields and embedded terms remain unknown until the human form gate is crossed.
 
 ```text

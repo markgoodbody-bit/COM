@@ -101,9 +101,10 @@ EvidenceWatch PR #7:
 - prepared likely post-gate form copy: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_FORM_FIELD_PACK_20260925.md`.
 - stronger-owner subtraction now treats Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work as owners of the component mechanisms; surviving claim = workflow-integration/burden hypothesis only;
 - EvidenceWatch main `b8fc0971ceace55878aa6130448850d88774f254` includes PR #12's shadow-mode pilot protocol, PR #13's deterministic offline scorer, and PR #14's Windows path repair + Windows/Ubuntu CI matrix; post-merge `36202014248` SUCCESS on both OS jobs; no live pilot/partner/provider call.
+- first missing evidence is one real living-review workflow specimen and its actual existing-practice baseline, not another feature or synthetic demonstration; method note: COM #348 comment `5840522726`; no partner contact is authorised by that note.
 
 ```text
-PROPOSAL = 1451 WORDS
+PROPOSAL = 1451 CONSERVATIVE WHITESPACE TOKENS / 1422 NORMALIZED PROSE WORDS
 APPLICATION SENT = NO
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
