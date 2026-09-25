@@ -53,7 +53,7 @@ History belongs in dated receipts + Git.
 
 No single Production/source build lane is currently authorized.
 
-EvidenceWatch current private main is `8abb167c16e2bb4504271904c8eaf040734c30fa`, post-merge CI-green with 46 deterministic tests after the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
+EvidenceWatch current private main is `b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`, post-merge CI-green with 47 deterministic tests after the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
 - **PSFH D085 LIVE** — maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; human-first appeal-example presentation only; selected live bytes verified. PR #467 map-first Explore remains held / not live;
@@ -62,6 +62,7 @@ Current reversible maintenance/design state:
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
+- `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`
 - `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`
 
 ## Active non-source design
@@ -138,10 +139,10 @@ Status: **PREPARED / HOSTILE REVIEW OPEN / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
 - proposal hard-limit: 1,500 words;
-- current hostile-review revision: **1,445 words**;
+- current hostile-review revision: **1,422 words**;
 - target object: EvidenceWatch as a bounded research-integrity / evidence-synthesis workflow;
 - COM #479 owns hostile review;
-- EvidenceWatch current private main is `8abb167c16e2bb4504271904c8eaf040734c30fa`; PR #7 CSL handoff, PR #8 DOI repair and PR #9 controlled witness are merged; the handoff remains file-based, not a live Zotero/ReadCube integration.
+- EvidenceWatch current private main is `b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f`; PR #7 CSL handoff, PR #8 DOI repair and PR #9 controlled witness are merged; the handoff remains file-based, not a live Zotero/ReadCube integration.
 
 ```text
 GRANT FIT != PRODUCT VALIDATION
