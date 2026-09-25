@@ -68,7 +68,7 @@ A concrete refusal/escalation behaviour is already tested: a newly discovered ca
 
 The user remains accountable for the research output. EvidenceWatch does not automatically rewrite a brief, retract a claim or declare a source true or false. Uncertainty or contradiction routes to review.
 
-The current suite has 43 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
+The current suite has 46 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
 
 ## 4. TEAM
 
@@ -87,7 +87,7 @@ A separate live technical witness ran the engine against real public owner pages
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff is now merged on EvidenceWatch main (`c969a7d4123458eda874fa328a4258d46b617113`) with post-merge CI green. It exists to test the next step toward an actual researcher workflow, not to pretend that integration is complete.
+There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are now merged on EvidenceWatch main (`8abb167c16e2bb4504271904c8eaf040734c30fa`) with post-merge CI green. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is an engineering witness, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
