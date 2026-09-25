@@ -37,6 +37,18 @@ test('Explore keeps historical source basis separate from current repository rou
  const packet=JSON.parse(await readFile('out/explore/packet.json','utf8')).sources;
  assert.deepEqual(packet,sources);
 
+ const sourceHtml=await readFile('out/explore/sources.html','utf8');
+ const sourceMd=await readFile('out/explore/sources.md','utf8');
+ const packetMd=await readFile('out/explore/packet.md','utf8');
+ for(const humanPage of [sourceHtml,sourceMd,packetMd]){
+   assert.match(humanPage,new RegExp(sources['trace-home'].commit));
+   assert.match(humanPage,new RegExp(sources['me-home'].commit));
+   assert.match(humanPage,new RegExp(sources.trace.commit));
+   assert.match(humanPage,new RegExp(sources.me.commit));
+   assert.doesNotMatch(humanPage,/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/);
+   assert.doesNotMatch(humanPage,/25a9d793af1cded26dd2d766e1d1c08e1b30f652/);
+ }
+
  const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
  const traceRepo=manifest.source_repositories.find(x=>x.name==='TRACE');
  const meRepo=manifest.source_repositories.find(x=>x.name==='Mechanical Ethics');
