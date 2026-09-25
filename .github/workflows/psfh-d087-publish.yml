@@ -1,0 +1,157 @@
+name: PSFH D087 publish current TRACE/ME source routes
+
+on:
+  push:
+    branches:
+      - framework/psfh-d087-publish-20260925
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - 'public/explore/sources.html'
+      - 'public/explore/sources.md'
+      - 'public/explore/packet.md'
+      - '.github/workflows/psfh-d087-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d087:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d087-publish-20260925
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D087 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.44'
+          m['updated']='2026-09-25'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          m['provenance']['change_history_addendum_note']=note.replace('D045-D085','D045-D087')
+          m['provenance']['current_source_routes_d087']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/491',
+            'basis':'f1812a8d7d965c09cfd2eeaad51b31aa25313847',
+            'candidate_head':'5a91aea30871bfede42d9236d56abcd808ac3227',
+            'scope':'Human-facing Explore source routes explicitly labelled current-source now match the released TRACE v0.4.0 and Mechanical Ethics v0.8.0 README heads already carried by sources.json. Historical node-source snapshots remain unchanged. Exact-head maintained CI passed. No framework semantics, node text, graph relation, artwork, permission, intake, tracking or server-behaviour change. Reader benefit unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D087_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D087_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          git diff --check
+      - name: Commit exact D087 manifest pins
+        run: |
+          git config user.name "PSFH D087 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D087 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D087: pin current-source route release provenance"
+          git push origin HEAD:framework/psfh-d087-publish-20260925
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 86ed354053ba9441099447c9e82441b56d79df27
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D086
+        run: |
+          rm -rf /tmp/psfh-d087-publish
+          git worktree add -B gh-pages /tmp/psfh-d087-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d087-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d087-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d087-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d087-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d087-publish/
+          test "$(git -C /tmp/psfh-d087-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d087-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d087-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d087-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d087-publish/resources');"
+          git -C /tmp/psfh-d087-publish status --short
+      - name: Commit and publish D087
+        run: |
+          git -C /tmp/psfh-d087-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d087-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d087-publish add -A
+          if git -C /tmp/psfh-d087-publish diff --cached --quiet; then
+            echo "No D087 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d087-publish commit -m "Publish PSFH D087 current TRACE/ME source routes"
+          git -C /tmp/psfh-d087-publish push origin HEAD:gh-pages
+      - name: Verify D087 served bytes
+        run: |
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/manifest.json -o /tmp/psfh-live-manifest.json && grep -F '"site_edition": "0.8.44"' /tmp/psfh-live-manifest.json; then
+              ok=1
+              break
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || { echo "Live manifest did not converge to D087" >&2; exit 1; }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/sources.html -o /tmp/psfh-live-sources.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/sources.md -o /tmp/psfh-live-sources.md
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/packet.md -o /tmp/psfh-live-packet.md
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+
+          for f in /tmp/psfh-live-sources.html /tmp/psfh-live-sources.md /tmp/psfh-live-packet.md; do
+            grep -F '6c68fae8cbc51d0ef1e77a18e220ceb7a1207025' "$f"
+            grep -F 'e2ef746e931161cb70ac46a4eaa122442134e86b' "$f"
+            grep -F '46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b' "$f"
+            grep -F '44f7efb59806242fd26c572cbfbaaeaefaea2058' "$f"
+            ! grep -F '8310d2531d3b2fe4e3b44c92d1d544a322f52bf4' "$f"
+            ! grep -F '25a9d793af1cded26dd2d766e1d1c08e1b30f652' "$f"
+          done
+
+          grep -F 'D087' /tmp/psfh-live-changes.html
+          grep -F 'Keep historical source basis separate from the current release route.' /tmp/psfh-live-changes.html
+          echo "D087 selected live-byte verification PASS"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# CURRENT_SOURCE_ROUTE != HISTORICAL_NODE_BASIS
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
