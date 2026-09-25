@@ -2,7 +2,7 @@
 
 Date: 25 September 2026
 
-Status: **VIDEO RECORDED / TECHNICAL + VISUAL REVIEW PASS / HUMAN AUDIO LISTEN STILL REQUIRED / NOT UPLOADED**
+Status: **VIDEO RECORDED / TECHNICAL + VISUAL REVIEW PASS / HUMAN AUDIO LISTEN PASS / NOT UPLOADED**
 
 Reviewed artifact supplied by Mark:
 - filename: `EvidenceWatch.mp4`
@@ -24,13 +24,13 @@ Privacy/cleanliness from sampled frames:
 - no visible email tabs, credentials, API keys, shell history or personal paths in sampled frames;
 - Demo mode remains visible.
 
-Boundary:
-Framework can verify that an audio track exists and inspect objective levels, but cannot honestly certify the exact spoken wording/intelligibility by listening in this environment. Mark should play the final file once with headphones/speakers before upload.
+Human audio gate:
+Mark reviewed the finished recording with sound on 25 September 2026 and reported: `audio good`.
 
 Next:
 ```text
-MARK HUMAN AUDIO LISTEN
--> IF CLEAR: UPLOAD PUBLIC/UNLISTED VIDEO
+HUMAN AUDIO LISTEN = PASS
+-> UPLOAD PUBLIC/UNLISTED VIDEO
 -> INSERT VIDEO URL
 -> FINAL FORM REVIEW
 -> MARK EXPLICIT SUBMISSION GATE
