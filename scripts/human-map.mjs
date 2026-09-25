@@ -67,7 +67,14 @@ export function renderHumanMap(html, index, records) {
   }).join('');
 
   const replacement = `<nav aria-label="Optional routes" tabindex="-1"><section aria-labelledby="reading-map-title"><h2 id="reading-map-title">Ten questions</h2><p>Choose whichever question helps. There is no required order, ranking or preferred route. From here shows connections chosen by the authors.</p><ul class="reading-map-list">${items}</ul></section><section aria-labelledby="other-routes-title"><h2 id="other-routes-title">Other routes</h2><ul>${otherLinks.map(link => link.html).join('')}</ul></section></nav>`;
-  return html.replace(navs[0][0], replacement);
+  // Keep the source orientation inspectable, but let a visitor reach the map first.
+  const introduction = html.match(/<main><h1>[^<]+<\/h1>((?:<section>[\s\S]*?<\/section>)+)(?=<nav aria-label="Optional routes">)/);
+  if (!introduction || (introduction[1].match(/<section>/g) ?? []).length !== 6) {
+    throw Error('Expected six Explore orientation sections');
+  }
+  const opening = '<main><h1>Explore</h1><p>What are you trying to understand, change, or keep possible? Begin with a question below.</p>';
+  const orientation = `<details class="explore-orientation"><summary>About this reading space</summary>${introduction[1]}</details>`;
+  return html.replace(introduction[0], opening).replace(navs[0][0], replacement + orientation);
 }
 
 export async function writeHumanMap(sourceRoot, outputRoot) {
