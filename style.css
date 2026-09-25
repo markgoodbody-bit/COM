@@ -229,11 +229,12 @@ summary:focus-visible { outline: 3px solid var(--foreground); outline-offset: 3p
 body.case-example { max-width: none; padding: 0; }
 .case-example-nav { width: min(calc(100% - 2rem), 48rem); margin: 0 auto; padding: 1rem 1rem .75rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-bottom: 1px solid var(--border); font-size: .9375rem; }
 .case-example-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; }
-.case-example-page { width: min(calc(100% - 2rem), 48rem); margin: 0 auto; padding: 1.75rem 1rem 3rem; }
+.case-example-page { width: min(calc(100% - 2rem), 42rem); margin: 0 auto; padding: 1.75rem 1rem 3rem; }
 .case-example-page h1 { margin: 0 0 2rem; font: 400 clamp(2.4rem, 5vw, 4rem)/1.06 var(--serif); letter-spacing: -.025em; text-wrap: balance; }
 .case-example-page > section { margin: 0; padding: 1.25rem 0; border-top: 1px solid var(--border); }
 .case-example-page > section h2 { margin: 0 0 .65rem; font: 600 .9rem/1.4 var(--sans); letter-spacing: .035em; color: var(--muted); }
-.case-example-page > section p { margin: 0; font-size: 1.075rem; line-height: 1.72; overflow-wrap: anywhere; }
+.case-example-page > p, .case-example-page > section p, .case-example-page > section li { font-size: 1.075rem; line-height: 1.72; overflow-wrap: anywhere; }
+.case-example-page > section p { margin: 0; }
 .case-example-routes { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
 .case-example-routes ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 1.5rem; }
 .case-example-routes li { margin: 0; border-bottom: 1px solid var(--border); }

@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.41",
+  "site_edition": "0.8.42",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-23",
+  "updated": "2026-09-25",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -76,9 +76,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "935baad019b5469dabb7871ff106993849670c2a26275134a51f05b731b17feb",
-    "change_history_input_html_sha256": "cf1f2a8446c76f5fa4d0fb73f57ae5e097a969be1cbcb77e0accf2b3a291fa2a",
-    "change_history_addendum_note": "D016 through D038 and D045-D084 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "63ecf61002d75d9120c9bef7538faaf64bc7fabd3ecbfee487eb8d641da27f06",
+    "change_history_input_html_sha256": "06f90031fb3883c474d97b982da4ba67228786ebdca5d4e8bc86038e2cf93be1",
+    "change_history_addendum_note": "D016 through D038 and D045-D085 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -166,6 +166,11 @@
     "single_contextual_skip_d084": {
       "basis": "129261f5a7e231e8ddcc8d6ae38569f00ddcf0ce",
       "scope": "Art-bearing conceptual rooms retain one first-action accessibility bypass: the contextual-art skip to the reading boundary. The generic reading-room skip-to-question is removed only when an artwork entrance is composed. Explore and the six text-only conceptual rooms keep their existing single skip links. Content and route semantics are unchanged."
+    },
+    "human_first_appeal_d085": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/465",
+      "basis": "007c03ab3c2c73f29c376f96e13874f8fec02e39",
+      "scope": "Five appeal-example views now lead with ordinary human-readable situation/question material while preserving source-shaped fields, provenance, status, facts, unknowns, lenses, Markdown and JSON under explicit routes/disclosure. Reading column narrowed to 42rem and regression pins the human-first structure. No framework, machine-payload, crawler, intake, permission, tracking or server-behaviour change. Reader benefit unmeasured."
     },
     "html_source_text": [
       {
@@ -273,11 +278,11 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "73f90df3ca0fb0fd827622ea50845a8e1f7d5232b14129c5cfe1de8a7fffe717",
+    "change_history_html_sha256": "c775bd46694a24b2007aabbfb9defd8fbfe06cdbf0ee48369983ab8f232ad3a1",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "9c0f4cd49f560025b453877f9158e796df93e67a7d372e9e3b4e8bd7310bdda5",
+      "stylesheet_sha256": "f86cf162a2262ef6400d4dbac8e548c2a73af15ea8d59df07c8f12cfc9c963fd",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },

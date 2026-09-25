@@ -1,6 +1,19 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.55 · 23 September 2026
+Please Start From Here · Reader change log · Edition 0.56 · 25 September 2026
+
+### D085
+
+25 September 2026 — Let the appeal example read like a human situation before exposing its source shape.
+
+The D083 appeal pages shared one visual family, but they still opened with source-shaped labels, JSON-like arrays and provenance before the simple situation or question. That made a deliberately small example harder to enter than the underlying case required.
+
+The five appeal views now lead with ordinary human-readable material: the shared case begins with the two stipulated facts and its unknowns; the perspective pages begin with their question, short reading and challenge. The full source-shaped fields, status, provenance, supported-by lists and rendering notes remain available in a disclosure, with direct Markdown/JSON routes preserved. The case facts, F1/F2 identifiers, unknowns, lenses and source files are unchanged.
+
+The shared case reading width is narrowed to 42rem and the top-level prose/list typography matches the existing case-family reading size. The current-state regression now pins the human-first structure, preserved source detail and reading geometry. No TRACE, Mechanical Ethics, Human Record, conceptual-room, artwork, permission, intake, tracking or server behaviour changes here. Site Preview advances to 0.8.42. This is a legibility/presentation repair prompted by the project's current external-comprehension pressure; reader benefit remains unmeasured.
+
+### D084
+
 
 ### D084
 
