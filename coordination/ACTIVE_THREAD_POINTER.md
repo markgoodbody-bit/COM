@@ -158,7 +158,7 @@ Freeze after green.
 
 ### PSFH current Door
 
-D086 is live: after the complete Anna Atkins Explore entrance, the existing ten-question map now precedes the preserved six-section orientation, which remains available under `About this reading space`. Maintained source `c071b1e570851b275565ca364f4a788178da9bac`; public `gh-pages@86ed354053ba9441099447c9e82441b56d79df27`; Site Preview `0.8.43`; publication run `36196077132` SUCCESS; post-sync maintained CI `36196201700` SUCCESS. COM #490 is merged after exact-head CI and fresh desktop/mobile QA; #467 is closed as superseded. Reader benefit remains unmeasured.
+D087 is live. D086's map-first Explore remains intact; D087 changes only the human-facing source routes explicitly labelled current, bringing them to released TRACE v0.4.0 `6c68fae8…` and Mechanical Ethics v0.8.0 `e2ef746e…` while retaining the historical node-source snapshots `46f4fcd…` / `44f7efb…`. Maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; publication run `36198130032` SUCCESS; post-sync maintained CI `36198262841` SUCCESS. COM #491 is merged. Reader benefit remains unmeasured.
 
 ## 5. Time / fresh-evidence gates
 
