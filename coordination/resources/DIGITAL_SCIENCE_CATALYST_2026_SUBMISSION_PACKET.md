@@ -14,7 +14,7 @@ Owner source rechecked 25 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current proposal word count:
-**1450 words**
+**1448 words**
 
 Current EvidenceWatch private main:
 `41f12db0573dd529c9ef493deba3da0e39508aaa`
@@ -128,7 +128,7 @@ Strong existing owners already cover large parts of this problem:
 - **Crossmark / Crossref** exposes formal corrections, retractions and publisher-registered updates: https://www.crossref.org/services/crossmark/
 - **ReadCube** owns reference management, literature monitoring, shared libraries and systematic-review workflows: https://about.readcube.com/
 - Digital Science's own Catalyst portfolio includes **PostPub**, which tracks retractions/integrity actions, and **VIRUS**, which tracks questionable papers and their downstream scholarly/policy impact. These are close precedents, not gaps I should relabel as mine.
-- **Perma.cc** owns preservation of the cited web state—the complementary strategy of freezing the 'before' rather than monitoring the live source: https://perma.cc/
+- **Perma.cc** owns preservation of the cited web state, the complementary strategy of freezing the 'before' rather than monitoring the live source: https://perma.cc/
 
 The surviving hypothesis is narrower: **post-reliance claim-level state across heterogeneous sources + ancestry/independence + explicit state authority + material-change filtering + a map to downstream work that may need reopening**.
 
@@ -160,9 +160,9 @@ Digital Science also owns products close to the natural integration surface. Rea
 
 Up to £25,000 would be staged.
 
-- **Stage 1 — £5,000 cap:** workflow integration and testing whether the review's own outcome→study structure can propose dependency mappings for human batch approval; matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
-- **Stage 2 — £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
-- **Stage 3 — £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
+- **Stage 1, £5,000 cap:** workflow integration and testing whether the review's own outcome→study structure can propose dependency mappings for human batch approval; matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
+- **Stage 2, £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
+- **Stage 3, £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
 This moves a working standalone prototype into a measured existing-workflow test while preserving a stop path.
 
