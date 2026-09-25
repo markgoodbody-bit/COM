@@ -100,9 +100,9 @@ The current suite has 47 deterministic tests, including correction, duplicate su
 
 ## 4. TEAM
 
-I am Mark Goodbody, a UK Senior IT and Telecoms Engineer with more than 25 years of professional experience across infrastructure, networking, support, troubleshooting and small-team leadership.
+I am Mark Goodbody, a UK Senior IT and Telecoms Engineer with more than 25 years of professional experience across infrastructure, networking, support, troubleshooting and small-team leadership. My relevant expertise is systems rather than academic research: state, failure recovery, audit trails and operating under incomplete information.
 
-I built EvidenceWatch from independent work on provenance, correction and human/AI answerability. I remain the human release and accountability gate. Multiple AI systems are used for implementation and adversarial review; model agreement is not treated as validation.
+I built EvidenceWatch from independent work on provenance, correction and human/AI answerability. I remain the human release and accountability gate. Multiple AI systems are used for implementation and adversarial review; model agreement is not treated as validation. The proposed pilot is deliberately where research-workflow expertise enters: it tests the engineering against a living review team's actual practice rather than treating my domain assumptions as validated.
 
 ## 5. WHERE YOU ARE TODAY
 
@@ -146,7 +146,7 @@ One living systematic review team would use its existing reference library. Coch
 
 Stop or narrow if maintenance exceeds saved review time, residual changes are too rare, existing practice performs as well, or missed-change rate is unacceptable.
 
-If later commercialised, the plausible buyer is an institution or research team paying for monitored workspaces/integrations. A workspace or monitored-collection subscription is a hypothesis only; pricing has not been tested.
+If later commercialised, the plausible buyer is an institution or research team paying for monitored workspaces/integrations. The initial adoption hypothesis is evidence-synthesis teams at universities, health evidence or guideline units, and similar organisations already maintaining updateable reviews. A workspace or monitored-collection subscription is a hypothesis only; pricing has not been tested.
 
 ## 8. FIT WITH DIGITAL SCIENCE
 
