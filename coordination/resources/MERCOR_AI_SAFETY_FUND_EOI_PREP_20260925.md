@@ -2,22 +2,36 @@
 
 Date: 25 September 2026
 
-Status: **OWNER-SUBTRACTED REWRITE / NOT SUBMITTED / HUMAN IDENTITY + FORM + TERMS GATE REMAINS MARK'S**
+Status: **HOLD / CURRENT OWNER ELIGIBILITY ROUTE UNRESOLVED / NOT SUBMITTED / RESEARCH OBJECT MAY CONTINUE OFFLINE**
 
 Owner:
 https://jobs.ashbyhq.com/mercor/1d59ce50-4207-4d95-b7fd-5a01e90b0897/
 
-Current owner facts:
+Current owner facts — rechecked against the live posting on 25 September 2026:
 - Mercor says it is committing **$5m** to AI-safety research;
-- independent researchers and small teams are explicitly eligible;
+- the currently served eligibility clause names researchers at universities and non-profit research organizations, plus public benefit corporations and small startups that do not sell AI training data;
+- the posting states that **awards are made to the researcher's institution**;
+- applicants must be based in the United States or United Kingdom and have a background in ML, CS, statistics or an adjacent field; security is explicitly listed as adjacent;
 - named interests include oversight/control, agentic evaluation, interpretability, misalignment, sandbox escape and red-teaming methodology;
-- support may include researcher time, API credits, expert grading/red-teaming/annotation and, subject to review, Mercor evaluation infrastructure;
-- grantees are expected to publish a paper, open dataset, public methodology or field-useful tool;
-- application asks for a **1–2 page Expression of Interest** covering team/background/research accomplishments, proposed project, outputs/impact, rough timeline and resources;
+- support may include researcher time, API costs, expert grading/red-teaming/annotation and, subject to review, Mercor evaluation infrastructure;
+- expected outputs must be released under an open licence permitting commercial use;
+- the application asks for a **1–2 page Expression of Interest** covering team/background/research accomplishments, proposed project, outputs/impact, rough timeline and resources, and says not to include confidential/proprietary information;
 - no fixed grant size or application deadline is stated in the owner body.
 
-Important ambiguity:
-The Ashby shell labels the listing on-site while the grant body itself does not state an in-person requirement. Treat location/travel as award-terms unresolved, not as either permission or blocker.
+Current award-term surface:
+- grantees retain ownership but grant Mercor a non-exclusive licence to use the work, including commercially;
+- benchmark/evaluation projects give Mercor early access before public release and an exclusive right to build/host a private held-out test set at Mercor's cost;
+- grantees agree not to work with specified Mercor competitors on substantially similar benchmarks/evaluations during the award and for 12 months afterward; the public posting does not name those competitors;
+- Mercor may identify grantees/institutions publicly; awards include tax documentation, sanctions screening and progress reporting.
+
+Current eligibility consequence:
+Mark's established standing in this draft is an unaffiliated UK systems engineer / independent researcher. No qualifying institutional host or eligible company route is currently established. The grant EOI is therefore **HOLD / DO NOT SUBMIT** unless either:
+1. an eligible institutional/company host is genuinely established; or
+2. Mark explicitly chooses to ask Mercor whether an unaffiliated individual may apply.
+
+External clarification is a consequential contact and remains Mark's gate.
+
+Ashby shell metadata still says on-site / temporary / $0 while the grant body states no attendance requirement. Treat employment/on-site interpretation as unresolved form metadata, but it is secondary to the explicit institutional-award eligibility blocker.
 
 Preserve:
 ```text
@@ -26,7 +40,10 @@ OWNER FOUND -> CREDIT / BUILD ON / DO NOT REDISCOVER
 OFFLINE HARNESS != MODEL RESULT
 NOVELTY = NOT ESTABLISHED
 FUND SIZE != OUR GRANT SIZE
+CURRENT POSTING != EARLIER CAPTURE
+AWARD TO INSTITUTION != UNAFFILIATED ELIGIBILITY
 LOCATION METADATA != TRAVEL OBLIGATION
+RESEARCH OBJECT SURVIVES != GRANT ROUTE OPEN
 NO SIGNAL -> STOP / SHRINK
 ```
 
@@ -144,14 +161,20 @@ Funding would not be used to expand the study after a null result merely to cons
 - Supplied provenance is not proof of truth.
 - A synthetic oracle-action benchmark does not establish deployment prevalence.
 - One model-family result would not establish a general model defect.
-- No Mercor award/IP/publication/location terms have been accepted or fully inspected.
+- Current public award terms have been inspected at the posting level; no award agreement has been accepted. The unspecified-competitor restriction, institutional payee requirement and any full agreement terms remain consequential human gates.
 - No model calls or spend are authorised by this draft.
 
-## Human gate before submit
+## Human gate before any submit path
 
-- read the live application fields and exact terms;
-- decide whether the narrowed owner-subtracted question is worth pursuing;
+Current default: **HOLD / DO NOT SUBMIT**.
+
+Before the grant route can reopen:
+- establish a genuinely eligible institutional/company host, or explicitly ask Mercor whether an unaffiliated individual can apply;
+- if the route reopens, inspect the live application fields and full award agreement;
+- obtain the named competitor list before accepting any 12-month restriction on similar benchmark/evaluation work;
+- decide whether the commercial-use licence, early benchmark access/private held-out right, publicity and open-commercial-output requirements are acceptable;
 - decide final requested resource amount;
-- confirm the cited prior-work framing;
-- confirm Mark's identity/contact representation;
+- confirm the cited prior-work framing and Mark's identity/contact representation;
 - final submit only after Mark explicitly releases the completed application.
+
+The offline research scaffold does not depend on this grant route and may remain preserved without model execution.
