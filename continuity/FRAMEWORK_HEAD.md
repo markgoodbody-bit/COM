@@ -149,17 +149,20 @@ FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 
 ### Mercor AI Safety Fund — secondary offline research lane
 
-Status: **OWNER-SUBTRACTED / CODEX NARROW RETURN APPLIED / CC RETURN OUTSTANDING / NO APPLICATION / NO MODEL CALLS**.
+Status: **RESEARCH OBJECT SURVIVES / GRANT LANE HOLD / CURRENT ELIGIBILITY ROUTE UNRESOLVED / NO APPLICATION / NO MODEL CALLS**.
 
 Stronger-owner receipt:
 coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md
 
 Marc Bara arXiv:2609.01873 owns the report-multiplicity/evidence-root mechanism, provenance-aware aggregation and similarity-vs-ancestry result. Junchi Liao arXiv:2607.20827 owns a separate source-authority/action-selection audit. The only surviving candidate is the cross: supplied evidential ancestry -> generated decision/action under a fixed policy. Novelty is not established.
 
-Draft COM PR #482 remains offline only. Codex found the original five fixtures were solvable by a trivial ancestry-label mapping. The smallest repair is now at exact head `ff1330420a01e3f62aaee528ab4879edc96a460d`: same-action HOLD/ACT controls, varied priors/thresholds and an explicit label-only baseline; workflow `36190238742` SUCCESS. COM #481 remains the hostile-review lane; Claude Code's return is still outstanding.
+Draft COM PR #482 remains offline only. Codex found the original five fixtures were solvable by a trivial ancestry-label mapping; the smallest repair is green at exact head `ff1330420a01e3f62aaee528ab4879edc96a460d` with workflow `36190238742` SUCCESS. Claude Code's current-owner review then found the live Mercor posting now requires an eligible institutional/company category and states awards are made to the researcher's institution. Mark's draft explicitly has no academic affiliation and no qualifying host is established. The grant lane is HOLD / DO NOT SUBMIT unless an eligible host exists or Mark chooses external clarification. Public award terms also include commercial-use licensing, early-access/private-held-out rights for evals, and a 12-month restriction involving unspecified Mercor competitors.
 
     ORIGINAL EOI = DO NOT SUBMIT
-    NARROW EOI = DRAFT
+    NARROW RESEARCH OBJECT = OFFLINE / GREEN
+    GRANT EOI = HOLD / DO NOT SUBMIT
+    ELIGIBILITY ROUTE = UNRESOLVED
+    EXTERNAL CLARIFICATION = MARK GATE / NOT SENT
     MODEL CALLS = 0
     SPEND = $0
     SUBMISSION = NONE

@@ -107,17 +107,19 @@ FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 
 ### Secondary machine lane — Mercor AI Safety Fund
 
-Status: **OWNER-SUBTRACTED / CODEX NARROW RETURN APPLIED / OFFLINE ONLY / NO APPLICATION**.
+Status: **RESEARCH OBJECT OFFLINE / GRANT LANE HOLD / ELIGIBILITY ROUTE UNRESOLVED / NO APPLICATION**.
 
 - owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
 - canonical narrow EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
-- COM #481 = hostile review; Codex returned NARROW, Claude Code outstanding;
+- COM #481 = hostile review complete enough for current disposition: Codex NARROW applied; Claude Code found the live grant eligibility/payee blocker;
 - draft PR #482 = deterministic ancestry-sensitive action oracle + same-action controls + explicit trivial label-only baseline;
 - repaired head `ff1330420a01e3f62aaee528ab4879edc96a460d`;
 - hosted workflow `36190238742 / SUCCESS`;
-- no model calls / no credentials / no spend.
+- live posting says awards are made to the researcher's institution; no qualifying host is currently established;
+- public award terms include commercial-use licence, eval early-access/private-held-out rights and a 12-month restriction involving unspecified competitors;
+- no model calls / no credentials / no spend / no external clarification sent.
 
-The original false-corroboration research question is superseded by Marc Bara arXiv:2609.01873. Current candidate is only the narrower ancestry-side-information -> generated-action cross with Junchi Liao's action-provenance work. Novelty is not established.
+The original false-corroboration research question is superseded by Marc Bara arXiv:2609.01873. The narrower ancestry-side-information -> generated-action research object survives provisionally, but Mercor is no longer an open application route. Reopen the grant lane only with an eligible host or explicit Mark-authorized clarification to Mercor. Novelty remains unestablished.
 
 Hack-Nation 7 is **STOP / NOT APPLYING**. Do not revive it unless format/terms materially change.
 

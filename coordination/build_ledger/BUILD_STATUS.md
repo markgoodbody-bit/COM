@@ -153,20 +153,26 @@ APPLICATION = NO
 
 ### Mercor AI Safety Fund — secondary offline lane
 
-Status: **NARROWED AFTER OWNER SUBTRACTION / CODEX REPAIR APPLIED / NOT SUBMITTED / NO MODEL EXECUTION**.
+Status: **RESEARCH OBJECT NARROWED / GRANT LANE HOLD / CURRENT ELIGIBILITY ROUTE UNRESOLVED / NO MODEL EXECUTION**.
 
 - original EOI mechanism is superseded by Marc Bara, arXiv:2609.01873;
 - adjacent source-authority/action owner: Junchi Liao, arXiv:2607.20827;
 - surviving candidate question: whether an LLM decision agent uses supplied evidence ancestry appropriately under a fixed action policy;
 - owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
 - rewritten EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
-- COM #481 owns hostile review; Codex returned NARROW and Claude Code remains outstanding;
+- COM #481 hostile review returned from both lanes: Codex NARROW applied; Claude Code identified the current institutional eligibility/payee blocker;
 - draft PR #482 contains offline oracle/tests plus same-action controls and an explicit label-only baseline;
 - repaired head `ff1330420a01e3f62aaee528ab4879edc96a460d`;
 - workflow `36190238742 / SUCCESS`;
 - Bara ESB reuse route verified: 3,300 frozen instances / 19,200 LLM reports; MIT code / CC BY 4.0 data.
+- live Mercor posting now says awards are made to the researcher's institution; no qualifying host is established for Mark's unaffiliated standing;
+- current public award terms include commercial-use licensing, eval early-access/private-held-out rights and a 12-month restriction involving unspecified competitors;
+- external eligibility clarification remains a Mark gate and has not been sent.
 
     NOVELTY = NOT ESTABLISHED
+    RESEARCH SCAFFOLD = OFFLINE / GREEN
+    GRANT EOI = HOLD / DO NOT SUBMIT
+    ELIGIBILITY ROUTE = UNRESOLVED
     MODEL CALLS = 0
     SPEND = $0
     CREDENTIAL ACTION = NONE
