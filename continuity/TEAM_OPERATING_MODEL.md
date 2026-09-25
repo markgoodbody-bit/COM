@@ -59,6 +59,10 @@ Codex does **not** become a Framework runtime or inherit Framework's coordinatio
 
 Claude Code provides differentiated technical criticism, adversarial review, alternative formulations and specialist build help when available.
 
+Current Mark direction, 25 September 2026: CC's shared execution routes **through Framework**. CC may continue COMSYNC reads, verification, hostile review, proposals and lane returns, but should not directly merge/commit/push shared repositories, post/contact externally, or start a new build/standing job from its lane. It hands the evidenced proposal to Framework, which decides and runs within the existing authority envelope.
+
+This is an execution-routing rule, not a requirement that Framework agree with CC and not a loss of independent challenge.
+
 CC is valuable but is **not normally a critical-path dependency**. If CC is unavailable, other work continues unless a work object explicitly requires CC review.
 
 Independent challenge is more useful when it can disagree. Do not turn CC into a ceremonial validator.
