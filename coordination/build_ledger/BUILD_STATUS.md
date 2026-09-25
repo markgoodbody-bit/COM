@@ -45,7 +45,7 @@ History belongs in dated receipts + Git.
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
 - Human Record main `0694ea9f4b9371ff635035bd2cc90dfd08e9632a` — four public records; #75 containment, #76 browse-card source-basis, #77 Hannibal recovery-route, and documentation-only #78/#80 repairs merged; integrity + Pages green; only exploratory RFC #52 remains open;
-- Campfire Relay main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3` — #257 issue-body / zero-comment discovery repair merged after #256; Production unchanged.
+- Campfire Relay main `4e7bdf95fee04638fe5b5ae84147f97c39a84d72` — #260 measured joiner + speaking-accounting visibility repair merged after #257; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -58,8 +58,8 @@ EvidenceWatch current private main is `6a06e2e40c6bda110e1431c3e57be0b5dd8b9081`
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
 - **THR CURRENT MAIN `0694ea9f…`** — #76 browse-freshness and #77 Hannibal recovery-route remain active; #78 adds source-antecedence documentation routed to PROV/C2PA; #80 adds action-relevant missing-value reasons without a new enum/schema; main integrity `36200466240` + Pages `36200465585` SUCCESS; four records remain four; stale #60/#61/#64/#70/#72/#79 closed; only exploratory RFC #52 remains open;
-- **Relay #257 MERGED** — main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`; issue bodies and zero-comment issues now participate in COMSYNC mail discovery; no Production activation.
-- **Simple-v1 #258 SOURCE INTEGRATED** — maintained `framework/campfire-square-simple-v1@f7241884b918dc69bc2cf225027d8b430d893651`; adds bounded MODEL byline-correction transport matching current 1F916 `/api/model`; reviewed head `3c3335701183828bdd627868feed42464c6b2332` passed Windows run `36199819165` and broad `campfire-ci` `36199819073`; installed worker / live byline unchanged.
+- **Relay #260 MERGED** — main `4e7bdf95fee04638fe5b5ae84147f97c39a84d72`; CC address joins now include `/ + & and`, and temporally skipped addressed rows are explicitly counted with a token-safe named subset + printed blind-region limits; exact-head `36201814270` and post-merge `36201956876` SUCCESS; no Production activation.
+- **Simple-v1 #259 AUTHORITY REPAIR MERGED** — maintained `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`; removes #258's unattended MODEL operation while preserving earlier worker/supervisor repairs; exact-head Simple-v1 `36201550455` + broad `36201550475` SUCCESS; post-merge `36201678876` SUCCESS. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
