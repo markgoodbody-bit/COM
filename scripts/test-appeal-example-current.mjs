@@ -3,6 +3,30 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const pages=['entry','case','route','affected','challenge'];
+const escape = s => s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#x27;');
+
+test('appeal reading opens with source facts or question and preserves detailed limits', async () => {
+  for (const id of pages) {
+    const html = await readFile(`out/explore/example/${id}.html`, 'utf8');
+    const node = JSON.parse(await readFile(`public/explore/example/${id}.json`));
+    const [visible, details] = html.split('<details class="appeal-source">');
+    assert.ok(details, id);
+    assert.ok(details.includes('Source details and limits'));
+    assert.ok(details.includes(escape(node.status)));
+    assert.ok(visible.includes('Illustrative example'));
+    if (id === 'case') {
+      for (const fact of node.facts) assert.ok(visible.includes(`<p>${escape(fact.text)}</p>`));
+      for (const item of node.unknowns) assert.ok(visible.includes(`<li>${escape(item)}</li>`));
+    } else if (id === 'entry') {
+      assert.ok(visible.includes(escape(node.offer)));
+      assert.ok(visible.includes('href="case.html"'));
+    } else {
+      for (const key of ['question','reading','challenge']) assert.ok(visible.includes(escape(node[key])), `${id}:${key}`);
+      for (const item of node.unknowns) assert.ok(visible.includes(`<li>${escape(item)}</li>`));
+    }
+    for (const format of ['md','json']) assert.ok(html.includes(`href="${id}.${format}"`));
+  }
+});
 
 test('appeal example pages share one case-family presentation', async () => {
   for (const name of pages) {
@@ -46,6 +70,8 @@ test('case-family stylesheet remains quiet and responsive', async () => {
   const css=await readFile('app/globals.css','utf8');
   assert.match(css,/body\.case-example \{ max-width: none; padding: 0; \}/);
   assert.match(css,/\.case-example-page > section \{/);
+  assert.match(css,/\.case-example-page \{ width: min\(calc\(100% - 2rem\), 42rem\)/);
+  assert.match(css,/\.case-example-page > p, \.case-example-page > section p, \.case-example-page > section li \{ font-size: 1\.075rem; line-height: 1\.72;/);
   assert.match(css,/\.case-example-routes ul \{[^}]*grid-template-columns: repeat\(2,minmax\(0,1fr\)\)/s);
   assert.match(css,/@media \(max-width: 40rem\)[\s\S]*\.case-example-routes ul \{ grid-template-columns: 1fr; \}/);
 });
