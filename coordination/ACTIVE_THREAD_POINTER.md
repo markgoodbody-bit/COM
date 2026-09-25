@@ -99,21 +99,22 @@ EvidenceWatch PR #7:
 - selectable synthetic research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`.
 
 ```text
-PROPOSAL = 1450 WORDS
+PROPOSAL = 1448 WORDS
 APPLICATION SENT = NO
+LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
 
 ### Secondary machine lane — Mercor AI Safety Fund
 
-Status: **OWNER-SUBTRACTED / OFFLINE ONLY / NO APPLICATION**.
+Status: **OWNER-SUBTRACTED / CODEX NARROW RETURN APPLIED / OFFLINE ONLY / NO APPLICATION**.
 
 - owner-subtraction receipt: `coordination/resources/MERCOR_AI_SAFETY_FUND_OWNER_SUBTRACTION_20260925.md`;
 - canonical narrow EOI: `coordination/resources/MERCOR_AI_SAFETY_FUND_EOI_PREP_20260925.md`;
-- COM #481 = hostile review;
-- draft PR #482 = deterministic ancestry-sensitive action oracle;
-- creation head `1fedf8a85d331cc3211a1bf086322477c8b42efe`;
-- hosted workflow `36185909732 / SUCCESS`;
+- COM #481 = hostile review; Codex returned NARROW, Claude Code outstanding;
+- draft PR #482 = deterministic ancestry-sensitive action oracle + same-action controls + explicit trivial label-only baseline;
+- repaired head `ff1330420a01e3f62aaee528ab4879edc96a460d`;
+- hosted workflow `36190238742 / SUCCESS`;
 - no model calls / no credentials / no spend.
 
 The original false-corroboration research question is superseded by Marc Bara arXiv:2609.01873. Current candidate is only the narrower ancestry-side-information -> generated-action cross with Junchi Liao's action-provenance work. Novelty is not established.
@@ -142,12 +143,12 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — PR #256
+### Relay COMSYNC maintenance — through PR #257
 
-- head `c630cafeb2efde1888bc773a0eaeb03376cf569b`;
-- `campfire-ci` SUCCESS;
-- repairs two concrete post-merge defects in address detection and ledger-write failure reporting;
-- MERGED; Relay main is `95b2adc10a8082031cd31b289f94826d582932ef`; post-merge campfire-ci SUCCESS; Production unchanged.
+- #256 merged the bounded address-detection and ledger-write failure reporting repairs;
+- #257 merged issue-body / zero-comment issue mail discovery and bounded broadcast addressing;
+- Relay main is `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`;
+- Production unchanged.
 
 ### PSFH next design candidate
 
