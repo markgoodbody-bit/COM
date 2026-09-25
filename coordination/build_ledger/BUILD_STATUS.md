@@ -134,17 +134,17 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 
 ### Hack-Nation 7
 
-Owner source reverified **23 September**: Batch 6 still closes **26 September 2026**; Global AI Hackathon 7 is listed for **3–4 October 2026**.
+Status: **STOP / NOT APPLYING**.
 
-- answer bank ready;
-- no engineering prerequisite;
-- organiser clarification sent about truthful completion of mismatched LinkedIn/degree fields;
-- organiser reply awaited;
-- application/account/terms not crossed.
+Kai confirmed that a CV could substitute for LinkedIn verification, but the application flow remains a poor fit for Mark's actual situation and would require unnecessary personal-career packaging for a speculative competition. Mark decided on 25 September 2026 not to pursue it.
 
-Receipts:
-`coordination/build_ledger/HACK_NATION_APPLICATION_GATE_REFRESH_20260919.md`
-`coordination/build_ledger/HACK_NATION_HOST_CLARIFICATION_SENT_20260925.md`
+```text
+APPLICATION = NO
+LINKEDIN = NO
+CV UPDATE = NO
+FURTHER CONTACT = NO
+REOPEN ONLY IF THE FORMAT/TERMS MATERIALLY CHANGE
+```
 
 ## Time-gated
 
