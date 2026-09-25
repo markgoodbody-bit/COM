@@ -1,0 +1,34 @@
+name: Ancestry action probe
+
+on:
+  push:
+    branches:
+      - framework/ancestry-action-probe-20260925
+    paths:
+      - 'experiments/ancestry-action-probe-20260925/**'
+      - '.github/workflows/ancestry-action-probe.yml'
+  pull_request:
+    paths:
+      - 'experiments/ancestry-action-probe-20260925/**'
+      - '.github/workflows/ancestry-action-probe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile
+        working-directory: experiments/ancestry-action-probe-20260925
+        run: python -m py_compile oracle.py test_oracle.py
+      - name: Test deterministic oracle
+        working-directory: experiments/ancestry-action-probe-20260925
+        run: python -m unittest -v test_oracle.py
+      - name: Diff hygiene
+        run: git diff --check
