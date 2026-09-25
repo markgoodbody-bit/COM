@@ -53,7 +53,7 @@ History belongs in dated receipts + Git.
 
 No single Production/source build lane is currently authorized.
 
-EvidenceWatch current private main is `c969a7d4123458eda874fa328a4258d46b617113`, post-merge CI-green with 43 deterministic tests after the bounded CSL-JSON reference-manager handoff. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
+EvidenceWatch current private main is `8abb167c16e2bb4504271904c8eaf040734c30fa`, post-merge CI-green with 46 deterministic tests after the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
 - **PSFH D085 LIVE** — maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; human-first appeal-example presentation only; selected live bytes verified. PR #467 map-first Explore remains held / not live;
@@ -138,7 +138,7 @@ Status: **PREPARED / HOSTILE REVIEW OPEN / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
 - proposal hard-limit: 1,500 words;
-- current hostile-review revision: **1,269 words**;
+- current hostile-review revision: **1,445 words**;
 - target object: EvidenceWatch as a bounded research-integrity / evidence-synthesis workflow;
 - COM #479 owns hostile review;
 - EvidenceWatch PR #7 is merged to private main `c969a7d4123458eda874fa328a4258d46b617113`; CSL handoff remains file-based, not a live Zotero/ReadCube integration.
