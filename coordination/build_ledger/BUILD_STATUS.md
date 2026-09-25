@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **25 September 2026 — EvidenceWatch submitted + PSFH D085 live**
+Updated: **25 September 2026 — EvidenceWatch submitted + PSFH D086 live**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -56,7 +56,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch current private main is `69aab14f439565f5cfaac7cb55630118dca6c781`; the latest move is owner-subtraction documentation only. The last code-bearing state remains CI-green with 47 deterministic tests after the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
-- **PSFH D085 LIVE** — maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; public `gh-pages@e78c04f9668ad46f10c20909fffb9f6def2dda9e`; Site Preview `0.8.42`; human-first appeal-example presentation only; selected live bytes verified. Draft PR #490 is the current D085-based map-first Explore candidate at `cd1865fba6d97fa901461718998f9c08c91cc972`, hosted CI `36193466447` SUCCESS, held / not live; superseded #467 is closed;
+- **PSFH D086 LIVE** — maintained source `c071b1e570851b275565ca364f4a788178da9bac`; public `gh-pages@86ed354053ba9441099447c9e82441b56d79df27`; Site Preview `0.8.43`; Explore map-first reading order after complete artwork; publication `36196077132` SUCCESS with selected live bytes verified; post-sync maintained CI `36196201700` SUCCESS. PR #490 merged after exact-head CI + fresh desktop/mobile QA; superseded #467 closed;
 - **THR #75 MERGED** — main `8efb858cd0f539bc208f63b2f2bfb3d4c3750795`; validation + Pages green; no record/registry/catalogue data change;
 - **Relay #257 MERGED** — main `20d6e3f8b9822823a27a5263c14b75d1d5cf07a3`; issue bodies and zero-comment issues now participate in COMSYNC mail discovery; no Production activation.
 
@@ -64,6 +64,7 @@ Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
 - `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`
 - `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`
+- `coordination/build_ledger/PSFH_D086_PUBLICATION_20260925.md`
 
 ## Active non-source design
 
@@ -285,4 +286,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D085 live at `e78c04f9668ad46f10c20909fffb9f6def2dda9e`; maintained source `f6985439d58fe0937c8546a04a5845b28283265f`; publication workflow `36134343693` SUCCESS with selected exact live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass; D085 makes the appeal family human-readable first while preserving source-shaped detail. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D086 live at `86ed354053ba9441099447c9e82441b56d79df27`; maintained source `c071b1e570851b275565ca364f4a788178da9bac`; publication workflow `36196077132` SUCCESS with selected live-byte verification. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass; D085 makes the appeal family human-readable first; D086 makes Explore question-map first while preserving its orientation under disclosure. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
