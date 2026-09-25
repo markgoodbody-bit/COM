@@ -131,15 +131,15 @@ Owner rules rechecked 25 September 2026: individuals and early-stage prototypes/
 Current application draft:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
-Hostile review lane: COM #479.
+Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
-EvidenceWatch current private main is `b4c8f2bbbca1ae6ad1a5caa16a95cc76ce1b1f1f` with post-merge CI SUCCESS and 47 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
+EvidenceWatch current private main is `41f12db0573dd529c9ef493deba3da0e39508aaa` with CI SUCCESS and 47 deterministic tests. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
 
 Research demo receipt: `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`. Optional Digital Science recording script: `coordination/resources/DIGITAL_SCIENCE_RESEARCH_DEMO_RECORDING_20260925.md`.
 
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL = 1422 WORDS / STRONGER-OWNER + WITNESS REVISION
+PROPOSAL = 1450 WORDS / LIVING-REVIEW + OWNER-SUBTRACTION REVISION
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
