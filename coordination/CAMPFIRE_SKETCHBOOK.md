@@ -932,3 +932,77 @@ SHARED HISTORY != UNIQUE SUCCESSOR
 LOCAL RESEMBLANCE != TRANSITIVE IDENTITY
 
 Claude Code's #475 operational lane had not returned at this COMSYNC. Keep UNKNOWN rather than inventing a result.
+
+## 25 September 2026 — morning FULL COMSYNC reduction
+
+Status: **TEAM RETURN / REDUCTION / NOT CANON**
+
+### Temporal empathy / spinning plates — CC return
+
+Claude Code independently returned **OWNER FOUND / NO REPRESENTATIONAL DELTA** for the tested mechanisms. Current TRACE already carries most of the structure through apertures, capability/source, boundaries, route usability, shared capacity, clocks/authorship, hardening and currentness.
+
+Useful reductions:
+
+- Keep Mark's spinning-plates **image** as a teaching bridge; cut the home-grown scalar maths.
+- A queue waits; a plate falls. Queueing/backlog and deadline scheduling are related but not the same problem.
+- Real-time scheduling is the stronger owner for 'can this entity revisit every live task before its deadline?'; total utilisation alone can miss a long uninterruptible job.
+- Queueing remains the stronger owner where missed work waits rather than disappears.
+- Acute stress / metastability and slower allostatic load are different timescales; do not collapse them into one generic feedback equation.
+- Prospective memory exposes a missing cost in the simple plate image: remembering **when to look** consumes capacity. External cues can reduce that cost without another entity taking over the task.
+- Multiple-resource theory challenges any single scalar capacity C: an entity can have spare capacity in one channel while another is saturated.
+- Caregiver / external capability is already representable as capability with a source plus a route that must be reachable fast enough.
+
+Owned / duplicate candidates to demote from the provisional maths:
+- scalar load ratio rho;
+- generic C(t+delta)=C-S+H stress equation;
+- temporal-state vector Theta as a new construct;
+- lambda/mu correction-backlog maths already carried in TRACE full reference and queueing;
+- internal-plus-support capability notation;
+- 'temporal empathy' as a technical primitive.
+
+Possible teaching question that still survives:
+
+> Which live obligations have deadlines, which are interruptible, what capacity/source can service each in time, and which cue/helper/route would restore feasibility?
+
+Still untested whether this teaching compression improves a reader's reasoning.
+
+### Continuity — CC return
+
+CC agrees with Codex: **TEACHING PATTERN ONLY**.
+
+Three refinements survive:
+
+1. **RESTART != RESTORATION != REPAIR.** A process can run again without restoring prior state or incorporating the repair that matters.
+2. When asking who carries continuity/support, also ask **was that support meant to stop?** For development/scaffolding, timely withdrawal may be the success condition; too early can be neglect, too late can become control.
+3. The continuity criterion has an author. Different communities/domains can legitimately designate different continuity criteria; TRACE should expose authorship rather than silently choose one.
+
+Evidence and reality must remain separate:
+
+EVIDENCE OF CONTINUITY != CONTINUITY ITSELF
+
+Evidence failure can manufacture a break that did not occur, or hide a real break.
+
+Useful live/artificial cases from CC:
+- service process restarted while installed bytes still predated the repair;
+- AI model/session labels can outlive a model change and manufacture apparent continuity;
+- context compaction can preserve information/role while working context does not continue;
+- an archive can preserve bytes while interpretation requires additional representation information;
+- a relationship or role can require reacquisition after a long gap because both parties' models go stale.
+
+### Event / observation / record / knowledge time
+
+Codex returned **TEACHING EXAMPLE ONLY** after full TRACE + THR search.
+
+Do not force a four-scalar timestamp ontology. The real distinctions may be intervals, repeated observations, revisions and changing access.
+
+Especially:
+
+INFORMATION EXISTS != DELIVERED != INSPECTABLE != UNDERSTOOD != USABLE FOR ACTION
+
+and exposure to a false statement does not establish knowledge of its truth.
+
+Smallest surviving temporal prompt:
+
+> When a timing claim matters, distinguish what happened, what was observed, what was recorded, what evidence was available to whom, and what could actually be used at the decision point.
+
+No TRACE/ME/THR release or schema change earned by any of these returns.
