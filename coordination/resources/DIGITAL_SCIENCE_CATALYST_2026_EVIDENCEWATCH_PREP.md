@@ -97,14 +97,15 @@ https://pleasestartfromhere.com/
 
 Strong existing owners already cover large parts of this problem:
 
-- **Zotero + Retraction Watch** already warns about retracted items in a library and can warn when an existing document contains a citation that was later retracted. EvidenceWatch should not be built merely to reproduce that: https://www.zotero.org/blog/retracted-item-notifications/
-- **Crossmark / Crossref** exposes formal corrections, retractions and other publisher-registered updates: https://www.crossref.org/services/crossmark/
-- **ReadCube** already owns reference management, recurring literature monitoring, shared libraries and systematic-review workflows. It is therefore both a strong alternative and a natural place to test whether the residual dependency-monitoring pattern adds anything: https://about.readcube.com/
-- **Visualping / Distill** own generic webpage-change monitoring; **scite** owns living citation context and retraction/citation signals.
+- **Zotero + Retraction Watch** warns about retracted library items and citations later retracted: https://www.zotero.org/blog/retracted-item-notifications/
+- **Crossmark / Crossref** exposes formal corrections, retractions and publisher-registered updates: https://www.crossref.org/services/crossmark/
+- **ReadCube** owns reference management, literature monitoring, shared libraries and systematic-review workflows: https://about.readcube.com/
+- Digital Science's own Catalyst portfolio includes **PostPub**, which tracks retractions/integrity actions, and **VIRUS**, which tracks questionable papers and their downstream scholarly/policy impact. These are close precedents, not gaps I should relabel as mine.
+- scite and generic page-change monitors own further citation/change signals.
 
-EvidenceWatch survives only if the conjunction is useful: **post-reliance claim-level state across heterogeneous sources + source ancestry/independence + explicit state authority + material-change filtering + an explicit map to downstream work beyond the source itself**.
+The surviving hypothesis is narrower: **post-reliance claim-level state across heterogeneous sources + ancestry/independence + explicit state authority + material-change filtering + a map to downstream work that may need reopening**.
 
-If a current product already provides that full loop at equal or better resolution, EvidenceWatch should be killed or narrowed rather than marketed around it.
+If another product already provides that full loop better, EvidenceWatch should be killed or narrowed.
 
 ## 7. WHERE THIS GOES
 
