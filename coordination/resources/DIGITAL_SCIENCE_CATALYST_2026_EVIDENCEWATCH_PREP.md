@@ -41,22 +41,22 @@ The University of Bern living review already checked included preprints for jour
 
 ## 2. YOUR WORKFLOW
 
-EvidenceWatch is a configured multi-step monitoring agent. Humans set the question, source policy and dependents; scheduled observation, analysis, state comparison and review routing then run without another prompt.
+EvidenceWatch is a configured multi-step monitoring agent. Humans set the question, source policy and dependents; observation, analysis, state comparison and review routing then run on schedule.
 
-1. A researcher defines a bounded question, the sources relevant to it, which source has authority for which state, and the downstream item that relies on the claim.
-2. EvidenceWatch fetches and fingerprints those sources on a schedule.
+1. A researcher defines the bounded question, relevant sources, source authority and downstream dependents.
+2. EvidenceWatch fetches and fingerprints sources.
 3. Identical observations are suppressed before model work while an append-only ledger preserves history.
-4. When content changes, a model extracts only the bounded evidence needed for the monitored question.
-5. The engine keeps source role separate from state authority: a derivative or supporting source cannot silently overwrite the configured owner state.
-6. It compares the new typed evidence with prior canonical state.
-7. Non-material paraphrase and derivative repetition stay quiet. Corrections, source loss/recovery, disagreement or genuinely new support can trigger review.
-8. The human sees the before/after state, source role, revision history and affected downstream work, then decides whether to revise, escalate or leave it unchanged.
+4. Changed content is analysed only for evidence relevant to the monitored question.
+5. Source role remains separate from state authority: derivative/supporting sources cannot overwrite the configured owner state.
+6. Typed evidence is compared with prior canonical state.
+7. Non-material paraphrase and derivative repetition stay quiet; corrections, source loss/recovery, disagreement or genuinely new support can trigger review.
+8. The human sees before/after state, source role, revision history and affected downstream work, then decides what to do.
 
-The current prototype is standalone Node.js. A new reversible adapter accepts standard CSL-JSON reference-manager exports and turns them into EvidenceWatch watch configurations. CSL JSON is an import/export format supported by Zotero. Imported references default to candidate/non-authoritative sources; authority and independence must be assigned explicitly.
+The prototype is standalone Node.js. A reversible adapter converts standard CSL-JSON reference-manager exports into watch configurations. Imported references default to candidate/non-authoritative sources; authority and independence require explicit assignment.
 
-The first proposed integration target is **Zotero**. A pilot would recruit one living systematic review team that already maintains its included-study library in Zotero or a compatible reference manager, then automate the current file handoff through a supported integration surface. No pilot partner is established yet.
+The first proposed integration target is **Zotero**. A pilot would use one living systematic review team's existing library and automate the current file handoff through a supported integration surface.
 
-This is currently a **file handoff, not a live Zotero or ReadCube integration**.
+This remains a **file handoff, not a live Zotero or ReadCube integration**, and no pilot partner is established.
 
 ## 3. TRUST, AUDIT AND GOVERNANCE
 
@@ -80,14 +80,14 @@ I built EvidenceWatch from independent work on provenance, correction and human/
 
 EvidenceWatch is a working prototype, not a validated research product.
 
-The deterministic browser demo shows an owner claim moving from a baseline of three incidents, through derivative repetition that does not change canonical state, to an owner correction from three to four that creates one downstream-review alert while preserving the earlier state.
+The deterministic browser demo shows a baseline owner claim, derivative repetition that stays quiet, then an owner correction that preserves the earlier state and creates one downstream-review alert.
 
-A one-watch/two-run live witness used NVIDIA Nemotron against real public owner pages; the second same-ledger run deduplicated unchanged observations. One model-status field was internally inconsistent and remains unresolved rather than being treated as validation.
+A one-watch/two-run live NVIDIA Nemotron witness against public owner pages deduplicated unchanged observations on the second run. One internally inconsistent model-status field remains unresolved rather than being treated as validation.
 
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no claimed research customers or validated user-efficiency results. The CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness are merged. A predeclared shadow-mode pilot protocol and deterministic offline scorer are now also merged; the protocol requires human labels and configuration to be frozen before scoring, and the scorer measures material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. In the synthetic-content / real-format CSL witness, three references imported, one unfetchable reference was skipped, state survived an engine restart, and a controlled publisher correction changed the bounded result from 1.8 to 1.2 while routing the dependent brief for review. This is engineering/pilot instrumentation, not researcher validation.
+There are no research customers or validated efficiency results. Merged work includes the CSL-JSON handoff, DOI-boundary repair, restart/correction witness, a predeclared shadow-mode pilot protocol and deterministic offline scorer. The protocol freezes human labels/configuration before scoring; the scorer measures material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. A synthetic-content / real-format CSL witness also survived restart and routed a controlled 1.8→1.2 publisher correction for review. This is engineering/pilot instrumentation, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
@@ -95,30 +95,30 @@ https://pleasestartfromhere.com/
 
 ## 6. ALTERNATIVES AND COMPETITORS
 
-Stronger owners remove most of the mechanism as a novelty claim:
+Stronger owners remove most mechanism novelty:
 
-- **Crossref/Europe PMC, Zotero/Crossmark and Cochrane** own preprint-publication linking, formal status and correction-to-review paths: https://www.crossref.org/documentation/research-nexus/posted-content-includes-preprints/ and https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
-- **ReadCube and scite** own literature monitoring, shared libraries, systematic-review workflows, citation synchronisation/context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
-- **Refract** owns reproducible semantic change events from versioned public sources; **AIEP P170** already specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
-- Digital Science's **PostPub/VIRUS** track integrity events and downstream impact; **Perma.cc** preserves the relied-on web state.
+- **Crossref/Europe PMC, Zotero/Crossmark and Cochrane** own preprint-publication linking, formal status and important correction-to-review paths: https://www.crossref.org/documentation/research-nexus/posted-content-includes-preprints/ and https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
+- **ReadCube and scite** own literature monitoring, shared libraries, review workflows, citation context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
+- **Refract** owns reproducible source-change events; **AIEP P170** specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
+- Digital Science's **PostPub/VIRUS** track integrity events/downstream impact; **Perma.cc** preserves relied-on web states.
 
-EvidenceWatch is therefore not a new change detector or dependency-graph idea. The surviving hypothesis is integration: **can heterogeneous post-reliance source state, explicit authority, materiality filtering, an existing or human-approved dependency map and human review routing be joined inside a current research workflow with low enough burden to be useful?**
+EvidenceWatch is not a new change detector or dependency-graph idea. Its surviving hypothesis is integration: can heterogeneous post-reliance source state, explicit authority, materiality filtering, a human-approved dependency map and review routing fit an existing workflow with low enough burden to be useful?
 
-If a stronger workflow already provides that integration, or the residual change class is too rare to matter, EvidenceWatch should be killed or narrowed.
+If a stronger workflow already does this, or the residual change class is too rare, stop or narrow.
 
 ## 7. WHERE THIS GOES
 
-The next stage is a bounded workflow-integration pilot, not a new evidence architecture.
+The next stage is a bounded workflow-integration pilot.
 
-One living systematic review team would use its existing reference library. Cochrane already owns new-evidence surveillance and a retraction-impact route, so the pilot would isolate residual changes not handled adequately by those processes and compare EvidenceWatch with existing practice on a pre-labelled material/non-material set, measuring:
+One living systematic review team would use its existing reference library. Because Cochrane and related workflows already own surveillance and important correction routes, the pilot would isolate residual changes and compare EvidenceWatch with existing practice on a pre-labelled set, measuring:
 - time to flag affected work;
 - missed material changes and false alerts;
-- reviewer minutes, duplicate suppression, and setup/maintenance time;
+- reviewer, setup and maintenance minutes;
 - whether users can reconstruct why an alert happened without trusting the model.
 
-Stop or narrow if maintenance exceeds saved review time, residual changes are too rare, existing practice performs as well, or missed-change rate is unacceptable.
+Stop or narrow if maintenance exceeds saved review time, residual changes are too rare, existing practice performs as well, or misses are unacceptable.
 
-If later commercialised, the plausible buyer is an institution or research team paying for monitored workspaces/integrations. The initial adoption hypothesis is evidence-synthesis teams at universities, health evidence or guideline units, and similar organisations already maintaining updateable reviews. A workspace or monitored-collection subscription is a hypothesis only; pricing has not been tested.
+If later commercialised, the plausible buyer is an institution or research team paying for monitored workspaces/integrations. Initial adoption is hypothesised around evidence-synthesis teams, health-evidence/guideline units and similar organisations maintaining updateable reviews. Pricing is untested.
 
 ## 8. FIT WITH DIGITAL SCIENCE
 
