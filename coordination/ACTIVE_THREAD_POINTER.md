@@ -90,9 +90,9 @@ Current draft:
 Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
 EvidenceWatch PR #7:
-- current private main `f08e35086a3a6b7c16de72f42f060d47b0ab1ae7`;
+- current private main `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`;
 - CSL-JSON reference-manager file handoff + DOI boundary repair + controlled restart/correction witness;
-- 59 deterministic tests;
+- 62 deterministic tests;
 - post-merge CI SUCCESS;
 - **NOT PUBLIC / NOT A LIVE ZOTERO OR READCUBE INTEGRATION / NOT RESEARCHER VALIDATION**;
 - NVIDIA submission evidence remains bound to earlier head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
@@ -100,7 +100,7 @@ EvidenceWatch PR #7:
 - judge rehearsal: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_JUDGE_REHEARSAL_20260925.md`;
 - prepared likely post-gate form copy: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_FORM_FIELD_PACK_20260925.md`.
 - stronger-owner subtraction now treats Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work as owners of the component mechanisms; surviving claim = workflow-integration/burden hypothesis only;
-- EvidenceWatch main `f08e35086a3a6b7c16de72f42f060d47b0ab1ae7` includes PR #12 pilot protocol, #13 offline scorer, #14 cross-platform repair, #15 real-workflow owner subtraction, and #16 pre-pilot workflow/burden intake + freeze validator; post-merge `36236672975` SUCCESS on Ubuntu and Windows with 59/59 tests; no live pilot/partner/provider call.
+- EvidenceWatch main `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f` includes PR #12 pilot protocol, #13 offline scorer, #14 cross-platform repair, #15 real-workflow owner subtraction, #16 pre-pilot workflow/burden intake, and #17 freeze completeness + canonical receipt hardening; post-merge `36237923895` SUCCESS on Ubuntu and Windows with 62/62 tests; no live pilot/partner/provider call.
 - public historical workflow specimen FOUND: University of Bern living review / Lombardi preprint->final transition; current practice already checks preprint currentness, avoids double-counting and re-extracts changed content; EvidenceWatch represents the same-lineage authority succession without code change. Receipt: `coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`. Stronger gate still open: willing current team + actual matched burden baseline; no partner/contact.
 
 ```text
