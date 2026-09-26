@@ -87,9 +87,9 @@ EvidenceWatch is a configured multi-step monitoring agent. Humans set the questi
 
 The prototype is standalone Node.js. A reversible adapter converts standard CSL-JSON reference-manager exports into watch configurations. Imported references default to candidate/non-authoritative sources; authority and independence require explicit assignment.
 
-The first proposed integration target is **Zotero**. A pilot would use one living systematic review team's existing library and automate the current file handoff through a supported integration surface.
+The first proposed integration target is **Zotero**, reusing its existing API/local-API and object-version machinery rather than building parallel sync. Stage 1 would begin read-only: bind owner source-version/currentness signals to items in one living review team's existing library and present shadow alerts outside the library. Write-back is deferred until benefit and authority are established.
 
-This remains a **file handoff, not a live Zotero or ReadCube integration**, and no pilot partner is established.
+Current EvidenceWatch remains a **file handoff, not a live Zotero or ReadCube integration**, and no pilot partner is established.
 
 ## 3. TRUST, AUDIT AND GOVERNANCE
 
@@ -170,7 +170,7 @@ Digital Science also owns several strong adjacent systems, including Figshare, R
 
 Up to £25,000 would be staged.
 
-- **Stage 1, £5,000 cap:** workflow integration and testing whether the review's own outcome→study structure can propose dependency mappings for human batch approval; matched-baseline fixtures and setup/maintenance measurement. Stop if burden or problem incidence makes the workflow implausible.
+- **Stage 1, £5,000 cap:** read-only integration with the chosen workflow/reference library, source-state→item binding, human-approved dependency mapping, matched-baseline fixtures and setup/maintenance measurement. No write-back is required. Stop if burden or problem incidence makes the workflow implausible.
 - **Stage 2, £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
 - **Stage 3, £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
