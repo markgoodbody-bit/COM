@@ -1767,3 +1767,148 @@ Current disposition:
 
 Coordination record: COM #568.
 
+## 26 September 2026 — VAT Assist tests the answerability-route sketch at the pre-hardening edge
+
+Status: **FRESH-CASE FALSIFICATION / SKETCH SURVIVED WITHOUT NEW DIMENSION / PRE-DEPLOYMENT / NO PROJECT DELTA**
+
+Trigger:
+- provisional answerability-route sketch — COM #568;
+- HMRC VAT Assist ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/hmrc-vat-assist
+
+Why this is a useful test:
+
+VAT Assist is not a post-hoc dispute/remedy workflow.
+
+The tool is designed to act **before a VAT return is submitted**:
+- pre-submission return data are compared with data held by HMRC;
+- where a potential error is identified, the customer receives a plain-English digital nudge;
+- the nudge is voluntary;
+- the customer can decide that it does not apply and take no action;
+- the stated purpose is to help the customer correct the return before submission;
+- the tool is currently pre-deployment, with launch planned around April 2027.
+
+The ATRS risk section explicitly says the message should make clear that the customer is not required to act if they are confident the return is correct or the nudge does not apply.
+
+This is a different answerability route:
+
+```text
+DRAFT RETURN
+-> RULE-BASED CHECK
+-> VOLUNTARY NUDGE
+-> CUSTOMER EVALUATES
+-> CUSTOMER MAY CHANGE OR IGNORE
+-> RETURN SUBMITTED
+```
+
+No formal appeal is needed to reject the tool output before the return hardens.
+
+## Test against the six-question sketch
+
+1. **Affected layer**
+   - pre-submission feedback / draft return.
+
+2. **Initiator**
+   - the tool initiates the nudge;
+   - the affected customer controls whether to act on it.
+
+3. **Reviewer**
+   - the customer reviews the individual nudge against their own intended return;
+   - HMRC performs aggregate/system assurance over whether feedback is appropriate.
+
+4. **Review resolution**
+   - individual, before submission.
+
+5. **Changeable consequence**
+   - the draft VAT return can be corrected;
+   - the nudge can also be ignored.
+
+6. **Correction clock**
+   - explicitly **pre-hardening**.
+
+No seventh dimension was required.
+
+The case therefore supports:
+
+```text
+ABILITY_TO_IGNORE / CORRECT BEFORE SUBMISSION
+!=
+FORMAL APPEAL
+
+DIRECT HUMAN CONTROL
+CAN BE
+AN ANSWERABILITY ROUTE
+```
+
+It also sharpens one existing question rather than adding a primitive:
+
+> who controls whether the tool output becomes consequential?
+
+That remains inside **initiator / reviewer / changeable consequence**, not a new ontology field.
+
+## Contrast with the prior three cases
+
+```text
+VAT ASSIST
+-> affected person retains direct control before hardening
+-> tool output can be ignored
+-> PRE-HARDENING SELF-CORRECTION ROUTE
+
+E-SUPERVISION
+-> operator reviews every individual case
+-> mismatch gets additional review
+-> INDIVIDUAL HUMAN REVIEW ROUTE
+
+BENCHNOTES
+-> judge validates before hardening
+-> broader correction route exists after hardening
+-> PRE + POST-HARDENING ROUTE, PUBLIC BINDING WEAK
+
+HMRC PTP
+-> model shapes treatment intensity
+-> aggregate monitoring + broader complaint route
+-> INDIVIDUAL SCORE LAYER NOT DIRECTLY CONTESTABLE
+```
+
+## Ceilings
+
+Do not infer:
+- that VAT Assist is effective;
+- that nudges are always accurate or harmless;
+- that a user always understands they can ignore a nudge;
+- that no later tax dispute can arise;
+- that the pre-deployment design will remain unchanged after launch.
+
+The record itself acknowledges possible irrelevant nudges and relies on testing/assurance plus clear non-mandatory wording as mitigation.
+
+## Falsification result
+
+The provisional answerability-route sketch survived a fourth, structurally distinct case without adding a dimension.
+
+That earns:
+
+```text
+SKETCH SURVIVED ONE FRESH CASE
+!= VALIDATED FRAMEWORK
+!= ATRS POPULATION RESULT
+!= NEW TRACE / ME PRIMITIVE
+```
+
+The useful result is narrower:
+
+> the six questions are proving capable of distinguishing direct pre-hardening user control, individual operator review, layered judicial correction, and aggregate-monitoring/broader-remedy patterns without reducing them to "appeal yes/no."
+
+Project routing:
+- keep as teaching compression;
+- no TRACE/ME source churn;
+- no THR record;
+- no ATRS #364 wake;
+- no HMRC contact;
+- test again only when a genuinely different case appears.
+
+Current disposition:
+
+**SKETCH SURVIVED / NO NEW DIMENSION / KEEP PROVISIONAL / NO PATCH.**
+
+Coordination record: COM #569.
+
