@@ -80,7 +80,7 @@ Reacquired before this compaction:
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
 - The Human Record main: `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 repairs plus bounded read-only impact routing #81 merged; main integrity + Pages green; open THR PRs = 0;
-- Campfire Relay main: `67b9438ad2824f8850d2a0dbc8a7479727681e7c` — #260 COMSYNC joiner/accounting repair, #261 source/release/install-currentness documentation repair and #262 older-thread accounting clarification; no Production activation. A bounded read-only target-machine check established the existing running Windows source as the `campfire-production-v0.18.34` tag; loaded modules and `node_modules` were not verified.
+- Campfire Relay main: `58920c10b4942d8058a01763de8a34c7530cf088` — #260 COMSYNC joiner/accounting repair, #261 source/release/install-currentness documentation repair, #262 older-thread accounting clarification, and #264 inference-identity honesty repair; no Production activation. #264 narrows persisted/resolved `{provider, model, protocol}` to configured target identity and separates it from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS. A bounded read-only target-machine check still establishes only the existing running Windows source as the `campfire-production-v0.18.34` tag; loaded modules and `node_modules` were not verified.
 
 Formal baselines:
 - **TRACE v0.4.0** — released / not validated / no efficacy result;
@@ -212,10 +212,10 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — through PR #262 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #264 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is now `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; post-merge `campfire-ci` `36237314991` SUCCESS;
+- Relay main is now `58920c10b4942d8058a01763de8a34c7530cf088`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; #264 narrows configured/resolved target identity from any implication of attested provider runtime identity; exact-head `campfire-ci` `36241319101` SUCCESS;
 - Simple-v1 #258's unattended MODEL operation was a boundary mistake and is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge Simple-v1 CI SUCCESS;
 - COM #76 records that Mark separately corrected the live `cc-relay` self-declared model to `claude-opus-5-5` through a one-off human-operated request; the correction is not retroactive and Framework did not use the credential;
 - consolidated receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;

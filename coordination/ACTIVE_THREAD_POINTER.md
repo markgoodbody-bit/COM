@@ -150,15 +150,16 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #262 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #264 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; #262 clarifies that the older-thread count is a thread-state count rather than addressed-message or unanswered-request count; post-merge `campfire-ci` `36237314991` SUCCESS;
+- Relay main is `58920c10b4942d8058a01763de8a34c7530cf088`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; #262 clarifies that the older-thread count is a thread-state count rather than addressed-message or unanswered-request count; #264 narrows persisted/resolved `{provider, model, protocol}` to configured target identity and explicitly separates it from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS;
 - Simple-v1 #258's unattended MODEL operation is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge run `36201678876` SUCCESS;
 - COM #76 records a separate human-operated live correction of `cc-relay` to `claude-opus-5-5`; historical comment stamps are not retroactively rewritten;
 - receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
 - bounded target-host evidence establishes the existing running Windows source as tag v0.18.34 (`src/` 74/74 plus matching `package.json`); loaded modules, `node_modules`, `STATE/` and `.env` were not established;
 - runtime + engagement receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`;
+- preserve: `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY` and `PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION`;
 - Production/install state unchanged by Framework; no service install or restart performed by Framework.
 
 ### Square targeted engagement — wait / do not duplicate
