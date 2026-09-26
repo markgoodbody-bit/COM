@@ -212,7 +212,7 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — through PR #262 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #264 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
 - Relay main is now `58920c10b4942d8058a01763de8a34c7530cf088`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; #264 narrows configured/resolved target identity from any implication of attested provider runtime identity; exact-head `campfire-ci` `36241319101` SUCCESS;
