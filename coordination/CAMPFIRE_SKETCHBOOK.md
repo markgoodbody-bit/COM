@@ -1468,3 +1468,112 @@ Current disposition:
 
 Coordination record: COM #564.
 
+## 26 September 2026 — HMRC Business Propensity to Pay: treatment shaping without individual score appeal
+
+Status: **WORLD / REAL USE FIELD WITNESS / BROADER CORRECTION OWNER EXISTS / LAYER-CONTESTABILITY SEAM / NO PROJECT DELTA**
+
+Primary official surfaces:
+- HMRC Business Propensity to Pay ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/hmrc-business-propensity-to-pay
+- HMRC complaints route:
+  https://www.gov.uk/complain-about-hmrc
+- HMRC complaint contacts:
+  https://www.gov.uk/find-hmrc-contacts/make-a-complaint-about-hmrc
+- Adjudicator's Office route:
+  https://www.gov.uk/guidance/how-to-complain-to-the-adjudicators-office-about-hmrc-or-the-voa
+
+Observed current public state:
+
+- Business Propensity to Pay (PtP) predicts business debtors' likely engagement with debt recovery.
+- It runs monthly and creates scores for approximately **4 million customers** each month.
+- The score helps determine the debt collection journey and is visible to Debt Management staff.
+- The ATRS risk section explicitly says an incorrect link/segmentation could over- or underestimate likely engagement and cause increased/decreased letter frequency and different letter tone/content.
+- The human-review section describes aggregate monthly dashboard monitoring / automated drift checks; it does not state that each individual score is independently reviewed before it shapes the customer journey.
+- The Appeals and review field says the public cannot appeal a tool decision because the model output is not itself an outcome and no decision is made directly from the PtP model.
+- The same field says the debt journey would happen regardless and customers can engage HMRC to agree an appropriate payment outcome.
+- Outside the ATRS record, HMRC has broader service/case-handling correction routes: complaints, first/second-tier review, independent Adjudicator review, plus ordinary debt-management contact/payment-arrangement routes.
+
+This creates a different answerability pattern from both BenchNotes and e-supervision.
+
+```text
+MODEL SCORE
+-> SEGMENT
+-> TAILORED JOURNEY
+-> LETTER TIMING / FREQUENCY / TONE / CONTENT
+-> CUSTOMER ENGAGEMENT / PAYMENT OUTCOME
+```
+
+The score is not the final tax debt or payment decision.
+
+But:
+
+```text
+NOT A FORMAL DECISION
+!=
+NO DIFFERENTIAL TREATMENT
+```
+
+Strong-owner subtraction:
+
+1. HMRC already owns the underlying debt/payment decision and complaint/remedy processes.
+2. Customers can contact HMRC and negotiate an appropriate payment outcome.
+3. Service/case-handling mistakes can enter HMRC's complaint pathway, including independent escalation after internal review.
+4. Therefore do **not** claim that affected customers have no correction route.
+
+The narrower public-record seam is layer-specific:
+
+> the individual model-derived segment can shape communication intensity/content, while the ATRS record describes aggregate model review and no appeal of the score itself; broader customer correction exists at the debt/service layer.
+
+Working distinctions:
+
+```text
+MODEL_OUTPUT_NOT_FORMAL_DECISION != NO_TREATMENT_EFFECT
+TAILORED_COMMUNICATION != LEGALLY_FINAL_OUTCOME
+AGGREGATE_MODEL_REVIEW != INDIVIDUAL_SCORE_REVIEW
+BROADER_COMPLAINT_ROUTE_EXISTS != MODEL_SCORE_CONTESTABLE_AS_SUCH
+CUSTOMER_CAN_ENGAGE != CUSTOMER_CAN_SEE_OR_CORRECT_SCORE
+MODEL_MONITORING != INDIVIDUAL_ANSWERABILITY
+```
+
+Contrast across current cases:
+
+```text
+E-SUPERVISION
+-> individual mismatch review route + consequence explicitly stated
+-> PUBLIC ROUTE LEGIBLE
+
+BENCHNOTES
+-> strong pre-finalisation judge review + broader tribunal correction route
+-> ATRS appeal field does not bind broader route
+-> POSSIBLE ROUTE-LEGIBILITY GAP
+
+HMRC PTP
+-> aggregate model monitoring + broader service/debt complaint routes
+-> individual score shapes tailored treatment but is not directly appealable
+-> LAYER-CONTESTABILITY SEAM
+```
+
+Ceilings:
+
+The public evidence does **not** establish:
+- that any customer has been wrongly segmented;
+- that model segmentation caused an incorrect debt amount, penalty or enforcement decision;
+- that a complaint could or could not cause the underlying score to be changed;
+- that customers have a legal entitlement to inspect the PtP score;
+- that the model is unfair or unlawful;
+- that broad complaint routes are ineffective in practice.
+
+Project routing:
+
+- TRACE/ME already represent treatment effects, layers, power, correction routes and clocks; no semantic primitive earned.
+- THR does not earn a record.
+- ATRS PR #364 remains frozen; do not convert this into a September population result.
+- No HMRC contact or complaint.
+- Preserve as a layer-specific contestability witness.
+
+Current disposition:
+
+**BROADER CORRECTION OWNER EXISTS / INDIVIDUAL SCORE CONTESTABILITY NOT PUBLICLY BOUND / PRESERVE LAYER DISTINCTION / NO PATCH.**
+
+Coordination record: COM #566.
+
