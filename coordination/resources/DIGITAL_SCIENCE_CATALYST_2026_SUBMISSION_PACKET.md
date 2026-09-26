@@ -87,9 +87,7 @@ EvidenceWatch is a configured multi-step monitoring agent. Humans set the questi
 
 The prototype is standalone Node.js. A reversible adapter converts standard CSL-JSON reference-manager exports into watch configurations. Imported references default to candidate/non-authoritative sources; authority and independence require explicit assignment.
 
-The first proposed integration target is **Zotero**. A pilot would use one living systematic review team's existing library and automate the current file handoff through a supported integration surface.
-
-This remains a **file handoff, not a live Zotero or ReadCube integration**, and no pilot partner is established.
+The adapter is reference-manager-neutral: a pilot uses the team's existing library rather than requiring migration. Zotero is only the current tested CSL-JSON handoff. With Digital Science, ReadCube is an obvious stronger-owner test: if it already handles the residual at equal or lower burden, stop. There is **no live Zotero or ReadCube integration, access agreement or pilot partner**.
 
 ## 3. TRUST, AUDIT AND GOVERNANCE
 
@@ -160,11 +158,9 @@ If later commercialised, the plausible buyer is an institution or research team 
 
 ## 8. FIT WITH DIGITAL SCIENCE
 
-EvidenceWatch sits in evidence synthesis and research integrity.
+EvidenceWatch sits in evidence synthesis and research integrity. Its mechanisms are not novel; the fit is a multi-step agent that can stay quiet or refuse unauthorized state changes, with provenance and audit built in.
 
-Its mechanisms are not novel. The fit is a multi-step agent that must know when to stay quiet, flag a change, or refuse to act without authority, matching Digital Science's emphasis on embedded workflows with provenance, governance and accountability.
-
-Digital Science also owns several strong adjacent systems, including ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
+The missing capability is research-workflow ownership, not another model feature. Digital Science's ReadCube and prior integrity work make it a strong place to falsify the adapter against real practice. If the portfolio already solves the residual, stop; if not, measure whether the adapter lowers burden. No ReadCube access or partnership is claimed.
 
 ## 9. BUDGET
 
