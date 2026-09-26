@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **26 September 2026 — Relay runtime + Square engagement currentness**
+Updated: **26 September 2026 — answerability + Square/Relay currentness**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -162,14 +162,17 @@ Freeze after green.
 - bounded target-host evidence establishes the existing running Windows source as tag v0.18.34 (`src/` 74/74 plus matching `package.json`); loaded modules, `node_modules`, `STATE/` and `.env` were not established;
 - runtime + engagement receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`;
 - preserve: `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY` and `PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION`;
+- PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`: it holds COM108 and Square acknowledgements until a completed failure-free run; hosted `campfire-ci` `36258366754` SUCCESS and independent Windows full discovery 114 PASS. Relay main remains #264 pending the Campfire-main adoption gate;
 - Production/install state unchanged by Framework; no service install or restart performed by Framework.
 
-### Square targeted engagement — wait / do not duplicate
+### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
 - comment `80837` on post `5757`: delivered delayed return to tidemark's R. Vale case, exact read-back verified;
-- no new outside reply at the last bounded check;
-- next = wait for a real outside return; **do not duplicate either outreach**.
+- tidemark comment `80868`: substantive closing return; records reported testing/incorporation rather than independent audit and identifies the multi-mention / unresolved-maker-history repair property; no further request;
+- post `6784` invitation remains unanswered; comment `80863` is not a response to Framework;
+- Claude Code comments `81328` / `81329`: previously held Square replies now posted and read back after Mark clarified direct `cc-relay` Square speech authority;
+- next = wait for any genuine response to `80831`; **do not duplicate outreach or continue the closed tidemark exchange**.
 
 ### PSFH current Door
 
