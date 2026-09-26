@@ -91,6 +91,11 @@ Subsumption risk:
 Disposition:
 **CURRENT DIRECT STRONGER-OWNER / FALSIFICATION / INTEROPERABILITY CANDIDATE / NO CONTACT.**
 
+Prepared bounded test packet:
+`coordination/resources/EVIDENCEWATCH_ALEC_LEAPPAI_STRONG_OWNER_TEST_20260926.md`
+
+The packet deliberately asks whether the residual is already solved, negligible or mis-specified before asking about any shadow pilot.
+
 ## Candidate 3 — University of Bern evidence-synthesis ecosystem
 
 Current public evidence:
