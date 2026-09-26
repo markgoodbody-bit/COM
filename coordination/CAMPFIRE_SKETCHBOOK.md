@@ -1577,3 +1577,193 @@ Current disposition:
 
 Coordination record: COM #566.
 
+## 26 September 2026 — answerability is a route through layers, not an appeal flag
+
+Status: **PROVISIONAL CAMPFIRE SYNTHESIS / THREE-CASE CONTRAST / TEACHING COMPRESSION / NOT CANON / NO PROJECT DELTA**
+
+Trigger cases:
+- MoJ e-supervision — COM #564;
+- HMCTS BenchNotes — COM #562;
+- HMRC Business Propensity to Pay — COM #566.
+
+The three cases reject a simplistic binary such as:
+
+```text
+FORMAL APPEAL EXISTS = ANSWERABLE
+FORMAL APPEAL ABSENT = NOT ANSWERABLE
+```
+
+That rule fails in both directions.
+
+### Case contrast
+
+**E-supervision**
+
+The tool uses facial comparison in probation check-ins.
+
+The record says:
+- all check-ins receive practitioner review;
+- a mismatch triggers further review;
+- a mismatch does not prevent service use;
+- no formal appeal exists.
+
+Here:
+
+```text
+NO FORMAL APPEAL
++ INDIVIDUAL REVIEW TRIGGER
++ HUMAN REVIEWER
++ BOUNDED CONSEQUENCE
++ CORRECTION PATH
+-> ROUTE PUBLICLY LEGIBLE
+```
+
+**BenchNotes**
+
+The tool transcribes judges' dictated oral decisions.
+
+The record says:
+- judge reviews/validates before finalisation;
+- tool does not decide, so Appeals/review is treated as N/A.
+
+The wider tribunal process separately has post-finalisation correction/review/appeal machinery.
+
+Here:
+
+```text
+STRONG PRE-HARDENING CORRECTION
++ BROADER POST-HARDENING CORRECTION OWNER
+BUT PUBLIC ATRS FIELD DOES NOT BIND THE LAYERS
+-> POSSIBLE ROUTE-LEGIBILITY GAP
+```
+
+**HMRC Business Propensity to Pay**
+
+The model score helps shape debt-collection communication/journey.
+
+The record says:
+- aggregate model monitoring exists;
+- model output is not the final outcome/direct decision;
+- customers cannot appeal the tool score;
+- customers can engage HMRC about the payment outcome;
+- broader HMRC service/case-handling complaint routes exist.
+
+Here:
+
+```text
+AGGREGATE MODEL REVIEW
++ BROADER CUSTOMER REMEDY
++ INDIVIDUAL MODEL-SHAPED TREATMENT
+BUT SCORE LAYER NOT DIRECTLY CONTESTABLE
+-> LAYER-CONTESTABILITY SEAM
+```
+
+## Candidate compression
+
+```text
+ANSWERABILITY != APPEAL_PRESENT
+ANSWERABILITY != HUMAN_IN_LOOP
+ANSWERABILITY != MODEL_MONITORING
+```
+
+Ask instead:
+
+1. **What is the affected layer?**
+   - model output;
+   - intermediate record;
+   - human operational judgement;
+   - communication/treatment;
+   - formal decision;
+   - downstream consequence.
+
+2. **Who can initiate correction/review?**
+   - affected person;
+   - operator;
+   - supervisor;
+   - automatic control;
+   - nobody stated.
+
+3. **Who reviews?**
+   - the original operator;
+   - independent human;
+   - specialist;
+   - aggregate governance team;
+   - external body.
+
+4. **At what resolution?**
+   - this individual case/output;
+   - cohort/aggregate;
+   - system/model;
+   - only the downstream final outcome.
+
+5. **What can actually change?**
+   - the source state;
+   - the model/output;
+   - the intermediate record;
+   - treatment;
+   - formal decision;
+   - future system behaviour.
+
+6. **When is correction reachable?**
+   - before hardening;
+   - after hardening;
+   - both;
+   - not stated.
+
+A compact route sketch:
+
+```text
+AFFECTED LAYER
+-> INITIATOR
+-> REVIEWER
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+This is not proposed as a new ontology.
+
+It substantially overlaps:
+- TRACE's existing layers/carriers/authority/clocks/correction channels;
+- Mechanical Ethics correction-before-hardening and answerability;
+- ATRS #364's frozen route proposition dimensions:
+  target site, actor scope, initiation/review mode, route form, status/effect.
+
+Therefore:
+
+```text
+USEFUL COMPRESSION
+!= NEW SEMANTIC PRIMITIVE
+
+THREE CASES
+!= POPULATION RESULT
+
+ROUTE LEGIBILITY
+!= ROUTE EFFECTIVENESS
+```
+
+## What could falsify the compression
+
+A future case should challenge this sketch if:
+- the route is fully legible yet these dimensions fail to explain practical answerability;
+- an affected entity has meaningful answerability without any identifiable correction/review route;
+- the route exists but a different missing dimension is load-bearing;
+- the six questions add ceremony without changing what a reviewer can see/do.
+
+Do not harden the sketch by adding dimensions speculatively.
+
+## Project consequence
+
+- Keep TRACE v0.4.0 and ME v0.8.0 frozen.
+- Keep ATRS #364's September method frozen.
+- No THR record.
+- No checker/schema.
+- Use the sketch only as a field-reading aid on the next distinct case.
+- If it repeatedly explains reality without new semantics, it may become a worked teaching compression rather than canon.
+
+Current disposition:
+
+**TEACHING COMPRESSION / TEST ON FRESH CASE / NO PATCH.**
+
+Coordination record: COM #568.
+
