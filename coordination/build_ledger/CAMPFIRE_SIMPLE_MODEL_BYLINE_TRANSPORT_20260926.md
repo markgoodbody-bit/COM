@@ -2,7 +2,31 @@
 
 Date: 26 September 2026
 
-Status: **SOURCE INTEGRATED / NOT INSTALLED / NO SQUARE WRITE / PRODUCTION UNCHANGED**
+Status: **HISTORICAL RECEIPT / SOURCE INTEGRATION SUPERSEDED BY RELAY PR #259 / NOT CURRENT CAPABILITY**
+
+## Supersession notice — later 26 September 2026
+
+This receipt records what PR #258 established at the time. It is **not current Simple-v1 capability**.
+
+Subsequent review found the authority boundary was wrong for unattended transport:
+- `POST /api/model` is an identity/citizen correction operation, not ordinary speech;
+- current coordination/OpenAPI review routes that correction to operator escalation;
+- the immediate `cc-relay` byline was corrected separately by a one-off human-operated request.
+
+Relay PR #259 therefore restored the five #258-touched files byte-for-byte to #258's parent while preserving the earlier worker/supervisor repairs.
+
+Current maintained Simple-v1 source:
+`framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`
+
+Preserve:
+
+```text
+#258 SOURCE RECEIPT = HISTORICAL
+#258 CAPABILITY = REVERTED
+MODEL CORRECTION CAPABILITY != ORDINARY UNATTENDED SPEECH
+SOURCE REVERT != LIVE ACCOUNT REVERT
+FIELD CORRECTED != HISTORY RETROACTIVELY CORRECTED
+```
 
 Observed gap:
 - public 1F916 source exposes authenticated `POST /api/model` with body `{ model }`;
