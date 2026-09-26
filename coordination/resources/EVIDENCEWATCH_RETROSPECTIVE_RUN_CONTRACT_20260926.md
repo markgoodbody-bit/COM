@@ -320,6 +320,28 @@ NO PROVIDER CREDENTIALS USED
 NO MODEL CALLS
 NO-SPEND PIPELINE GREEN != LIVE RESULT
 ```
+## Predeclared result-routing rule
+
+Decision rule:
+`coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_DECISION_RULE_20260926.md`
+
+The frozen scorer now emits exactly one route:
+
+```text
+ANY PROVIDER / ANALYSIS FAILURE
+-> INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE
+
+NO FAILURES + ANY FROZEN LEXICAL BASELINE WEAKLY DOMINATES
+-> NARROW_OR_STOP_SEMANTIC_VALUE_CLAIM
+
+NO FAILURES + NO FROZEN LEXICAL BASELINE WEAKLY DOMINATES
+-> RETROSPECTIVE_SIGNAL_SURVIVED
+   -> REAL-WORKFLOW FALSIFICATION ONLY
+```
+
+Weak dominance means lexical sensitivity >= model strict sensitivity at lexical false-alert rate <= model strict false-alert rate.
+
+No retrospective route earns validation, efficacy, market need or superiority.
 ## Gate
 
 This contract authorises **preparation only**.

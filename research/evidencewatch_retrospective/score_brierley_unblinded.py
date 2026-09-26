@@ -104,6 +104,96 @@ def best_baseline_at_far(metric: dict, model_far: float | None) -> dict | None:
     }
 
 
+def decision_route(
+    strict_metrics: dict,
+    failures_total: int,
+    lexical_metrics: dict,
+) -> dict:
+    """Route the retrospective result without inventing post-hoc thresholds.
+
+    Priority:
+    1. Any provider/analysis failure prevents a clean semantic-discrimination claim.
+    2. Otherwise, trivial lexical weak dominance blocks a semantic-value claim.
+    3. Otherwise, the retrospective signal survives only far enough to justify
+       harder real-workflow falsification.
+    """
+    sensitivity = strict_metrics.get("sensitivity")
+    false_alert_rate = strict_metrics.get("false_alert_rate")
+
+    if sensitivity is None or false_alert_rate is None:
+        return {
+            "route": "INVALID_OR_UNSCORABLE",
+            "reason": "strict sensitivity or false-alert rate is unavailable",
+            "dominated_by": [],
+            "next_action": "preserve result; repair scoring/integrity before any substantive claim",
+        }
+
+    dominated_by = []
+    for name, metric in lexical_metrics.items():
+        point = metric.get("best_at_or_below_model_strict_far")
+        if not point:
+            continue
+        baseline_sensitivity = point.get("sensitivity")
+        baseline_far = point.get("false_alert_rate")
+        if baseline_sensitivity is None or baseline_far is None:
+            continue
+        if (
+            baseline_sensitivity + 1e-12 >= sensitivity
+            and baseline_far <= false_alert_rate + 1e-12
+        ):
+            dominated_by.append(
+                {
+                    "metric": name,
+                    "baseline_sensitivity": baseline_sensitivity,
+                    "baseline_false_alert_rate": baseline_far,
+                    "model_strict_sensitivity": sensitivity,
+                    "model_strict_false_alert_rate": false_alert_rate,
+                    "comparison": "WEAKLY_DOMINATES_MODEL_OPERATING_POINT",
+                }
+            )
+
+    if failures_total > 0:
+        return {
+            "route": "INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE",
+            "reason": (
+                "one or more cases failed; strict metrics remain reported, but this run "
+                "does not earn a clean semantic-discrimination interpretation"
+            ),
+            "dominated_by": dominated_by,
+            "next_action": (
+                "preserve the failed run; repeat only as a separately declared run if "
+                "the failure cause is external/transient and repetition is justified"
+            ),
+        }
+
+    if dominated_by:
+        return {
+            "route": "NARROW_OR_STOP_SEMANTIC_VALUE_CLAIM",
+            "reason": (
+                "at least one frozen trivial lexical baseline matches or exceeds the "
+                "model strict sensitivity at an equal or lower false-alert rate"
+            ),
+            "dominated_by": dominated_by,
+            "next_action": (
+                "do not claim semantic material-change discrimination from this benchmark; "
+                "owner-subtract, redesign, or move only with a narrower non-semantic claim"
+            ),
+        }
+
+    return {
+        "route": "RETROSPECTIVE_SIGNAL_SURVIVED",
+        "reason": (
+            "no provider/analysis failures and no frozen trivial lexical baseline weakly "
+            "dominates the model strict operating point"
+        ),
+        "dominated_by": [],
+        "next_action": (
+            "progress only to a real-workflow shadow falsification with measured burden; "
+            "do not claim validation, efficacy, market need, or superiority"
+        ),
+    }
+
+
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -297,6 +387,9 @@ def main() -> int:
             ),
         }
 
+    failures_total = sum(row["failed"] for row in rows)
+    route = decision_route(strict_metrics, failures_total, lexical_metrics)
+
     result = {
         "schema": "evidencewatch-brierley-unblinded-score-v1",
         "status": "SCORED_AFTER_OUTPUT_FREEZE",
@@ -320,9 +413,10 @@ def main() -> int:
             "ceiling": "SECONDARY_VIEW_ONLY_FAILURES_EXCLUDED",
         },
         "failures": {
-            "total": sum(row["failed"] for row in rows),
+            "total": failures_total,
             "by_owner_label": failure_by_label,
         },
+        "decision_route": route,
         "successor_relation_distribution": {
             label: dict(counter) for label, counter in relation_by_label.items()
         },
@@ -338,6 +432,9 @@ def main() -> int:
             "ABSTRACT_MAJOR_CHANGE != CLINICAL_MATERIALITY",
             "RETROSPECTIVE_DISCRIMINATION != REVIEWER_TIME_SAVED",
             "MODEL_ALERT != PRODUCT_VALUE",
+            "RETROSPECTIVE_SIGNAL_SURVIVED != VALIDATION",
+            "LEXICAL_WEAK_DOMINANCE -> NARROW_OR_STOP_SEMANTIC_VALUE_CLAIM",
+            "PROVIDER_OR_ANALYSIS_FAILURE -> INCONCLUSIVE_CLEAN_SEMANTIC_RESULT",
         ],
         "cases": rows,
     }
@@ -352,6 +449,7 @@ def main() -> int:
     print(f"strict_sensitivity={strict_metrics['sensitivity']}")
     print(f"strict_false_alert_rate={strict_metrics['false_alert_rate']}")
     print(f"failures={result['failures']['total']}")
+    print(f"decision_route={result['decision_route']['route']}")
     print(f"scored_output_sha256={digest}")
     return 0
 
