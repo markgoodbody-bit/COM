@@ -6,7 +6,7 @@ Offline only.
 Usage:
   python research/evidencewatch_retrospective/build_blinded_brierley_packet.py \
     /path/to/all_pairs.tsv \
-    research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json \
+    research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json \
     /tmp/evidencewatch_brierley_packet.json \
     /tmp/evidencewatch_brierley_key.json
 """
@@ -16,10 +16,12 @@ import csv
 import hashlib
 import json
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 BLIND_SALT = "evidencewatch-brierley-blind-v1"
 EXPECTED_CASES = 44
+MISSING = {"", "NA", "N/A", "NULL"}
 
 
 def sha256_hex(data: bytes) -> str:
@@ -30,18 +32,49 @@ def clean_text(value: str) -> str:
     return " ".join(str(value or "").split())
 
 
-def load_all_pairs(path: Path) -> dict[str, dict]:
-    with path.open(newline="", encoding="utf-8-sig") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        rows: dict[str, dict] = {}
-        for row in reader:
+def usable_text(value: str | None) -> bool:
+    text = str(value or "").strip()
+    return bool(text) and text.upper() not in MISSING and "\ufffd" not in text
+
+
+def load_all_pairs(path: Path) -> dict[str, list[dict]]:
+    rows: dict[str, list[dict]] = defaultdict(list)
+    with path.open(newline="", encoding="cp1252", errors="replace") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
             doi = str(row.get("doi") or "").strip()
-            if not doi:
-                continue
-            if doi in rows:
-                raise AssertionError(f"Duplicate preprint DOI in all_pairs.tsv: {doi}")
-            rows[doi] = row
-    return rows
+            if doi:
+                rows[doi].append(row)
+    return dict(rows)
+
+
+def resolve_owner_row(all_pairs: dict[str, list[dict]], selected_case: dict) -> dict:
+    doi = selected_case["preprint_doi"]
+    published_doi = selected_case["published_doi"]
+    candidates = [
+        row
+        for row in all_pairs.get(doi, [])
+        if str(row.get("published_doi") or "").strip() == published_doi
+        and usable_text(row.get("abstract"))
+        and usable_text(row.get("published_pubmed_abstract"))
+    ]
+    if not candidates:
+        raise AssertionError(
+            f"No reconstructable owner row for selected DOI pair: {doi} -> {published_doi}"
+        )
+
+    unique = {}
+    for row in candidates:
+        key = (
+            str(row.get("abstract") or ""),
+            str(row.get("published_pubmed_abstract") or ""),
+        )
+        unique[key] = row
+    if len(unique) != 1:
+        raise AssertionError(
+            f"Ambiguous reconstructable owner rows for selected DOI pair: "
+            f"{doi} -> {published_doi}; unique_text_pairs={len(unique)}"
+        )
+    return next(iter(unique.values()))
 
 
 def selected_cases(manifest: dict) -> list[dict]:
@@ -82,19 +115,12 @@ def build(manifest: dict, all_pairs: dict[str, dict]) -> tuple[dict, dict]:
 
     for index, selected_case in enumerate(selected, start=1):
         doi = selected_case["preprint_doi"]
-        row = all_pairs.get(doi)
-        if row is None:
-            raise AssertionError(f"Selected DOI missing from all_pairs.tsv: {doi}")
+        row = resolve_owner_row(all_pairs, selected_case)
 
-        row_published_doi = str(row.get("published_doi") or "").strip()
-        if row_published_doi != selected_case["published_doi"]:
-            raise AssertionError(
-                f"Published DOI mismatch for {doi}: "
-                f"manifest={selected_case['published_doi']} source={row_published_doi}"
-            )
-
-        preprint = clean_text(row.get("abstract"))
-        published = clean_text(row.get("published_pubmed_abstract"))
+        raw_preprint = str(row.get("abstract") or "")
+        raw_published = str(row.get("published_pubmed_abstract") or "")
+        preprint = clean_text(raw_preprint)
+        published = clean_text(raw_published)
         if not preprint:
             raise AssertionError(f"Missing preprint abstract for {doi}")
         if not published:

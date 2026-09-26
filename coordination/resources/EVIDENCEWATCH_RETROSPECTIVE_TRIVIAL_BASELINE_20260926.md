@@ -2,7 +2,7 @@
 
 Date: 26 September 2026
 
-Status: **PRE-MODEL BASELINE FROZEN / NO PROVIDER CALL / DESCRIPTIVE ONLY**
+Status: **V2 PRE-MODEL BASELINE FROZEN / FULL 44-CASE COVERAGE / NO PROVIDER CALL / DESCRIPTIVE ONLY**
 
 Purpose:
 
@@ -15,7 +15,7 @@ Offline scorer:
 
 Pinned inputs remain:
 - Brierley owner repository `a07c570cf3be4481ba74c59ceee22e40f949990b`;
-- frozen 44-case manifest already merged in COM.
+- current executable manifest: `research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json`.
 
 ## Metrics fixed before the model run
 
@@ -42,55 +42,42 @@ For each metric, preserve:
 - Mann-Whitney / pairwise AUC with 0.5 credit for ties;
 - the complete threshold/ROC table.
 
-## Owner-data missingness
+## v1 baseline supersession
 
-The pinned `all_pairs.tsv` does not provide a usable `published_pubmed_abstract` for three frozen no-change controls:
+The earlier v1 descriptive baseline had only 19 reconstructable controls and is historical.
 
-- `10.1101/2020.02.03.20020248`
-- `10.1101/2020.02.16.20023564`
-- `10.1101/2020.02.17.20023721`
-
-These remain missing.
+The hosted no-spend gate discovered that v1 was not an executable 44-pair text corpus. v2 rematched controls using clean text reconstructability as a pre-run eligibility rule. The current baseline therefore has **22 major-change + 22 no-change text pairs**.
 
 ```text
-MISSING PUBLISHED ABSTRACT != ZERO TEXT CHANGE
-MISSING CONTROL != DROP THE CASE FROM THE MODEL RUN
+V1 22/19 LEXICAL VIEW = HISTORICAL / SUPERSEDED
+V2 22/22 LEXICAL VIEW = CURRENT PRE-MODEL BASELINE
 ```
-
-The 44-case model experiment remains unchanged. Lexical AUC is complete-case descriptive context only.
 
 ## Pre-model observed baseline
 
-Using the fixed metrics above on the reconstructable cases:
+Using the fixed metrics above on the raw-owner reconstructed v2 corpus:
 
-| baseline | major-change complete n | no-change complete n | complete-case AUC |
+| baseline | major-change n | no-change n | AUC |
 | --- | ---: | ---: | ---: |
-| token-set Jaccard distance | 22 | 19 | 0.787081 |
-| token-multiset Jaccard distance | 22 | 19 | 0.779904 |
-| token-count delta | 22 | 19 | 0.794258 |
+| token-set Jaccard distance | 22 | 22 | 0.799587 |
+| token-multiset Jaccard distance | 22 | 22 | 0.795455 |
+| token-count delta | 22 | 22 | 0.793388 |
 
-Median scores:
-
-| baseline | major-change median | no-change median |
-| --- | ---: | ---: |
-| token-set Jaccard distance | 0.408014 | 0.058333 |
-| token-multiset Jaccard distance | 0.435773 | 0.065134 |
-| token-count delta | 0.132446 | 0.010582 |
+Hosted receipt: workflow run `36260538589` **SUCCESS**.
 
 This is already enough to reject a weak benchmark story:
 
 > The frozen major-change cases are not indistinguishable from controls by trivial surface change.
 
 Therefore a positive EvidenceWatch result must be interpreted against this fact.
-
 ## Post-unblinding comparison rule
 
 After the model output file is frozen and the owner key is opened:
 
 - report the model's 44-case sensitivity / false-alert rate exactly as predeclared;
-- report the lexical baselines' complete-case AUC and coverage;
+- report the lexical baselines' full 22/22 AUC and coverage;
 - for each lexical metric, report the best sensitivity attainable at or below the model's observed false-alert rate **as a descriptive operating-point comparison**, clearly labelled post-unblinding;
-- do not silently exclude model failures or the three lexical-missing controls to make either side look better.
+- do not silently exclude model failures or alter the frozen v2 lexical corpus to make either side look better.
 
 The model does not need to "beat AUC" to be useful because the operational target includes semantic materiality, authority and routing. But if simple text magnitude already matches the model's alert tradeoff, any claim that model reasoning is adding material-change discrimination must be narrowed.
 
@@ -101,7 +88,7 @@ TRIVIAL TEXT DISTANCE != SEMANTIC MATERIALITY
 HIGH LEXICAL AUC != USEFUL WORKFLOW
 MODEL ALERT != MODEL VALUE
 MODEL PERFORMANCE ~= LEXICAL BASELINE -> NARROW CLAIM
-COMPLETE_CASE AUC != FULL 44-CASE PERFORMANCE
+LEXICAL AUC != MODEL / WORKFLOW PERFORMANCE
 ```
 
 No provider/model call, EvidenceWatch source change, grant submission or external contact is performed by this baseline.

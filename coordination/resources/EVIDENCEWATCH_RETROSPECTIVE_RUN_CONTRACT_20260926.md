@@ -8,11 +8,13 @@ Purpose:
 
 Freeze the exact run semantics before any output from the 44-case Brierley challenge exists.
 
+This contract applies to the **v2 raw-owner reconstructed challenge only**. v1 is preserved as a failed pre-run design and must not be executed.
+
 This contract sits downstream of:
 - frozen case selection:
   `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_CHALLENGE_20260926.md`
 - frozen manifest:
-  `research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json`
+  `research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json`
 - blinded packet boundary:
   `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_BLINDING_20260926.md`
 
@@ -200,14 +202,14 @@ Offline scorer:
 `research/evidencewatch_retrospective/score_trivial_baselines.py`
 
 Current pre-model complete-case AUCs are approximately:
-- token-set Jaccard distance: `0.787081`;
-- token-multiset Jaccard distance: `0.779904`;
-- token-count delta: `0.794258`.
+- token-set Jaccard distance: `0.799587`;
+- token-multiset Jaccard distance: `0.795455`;
+- token-count delta: `0.793388`.
 
-Three owner-labelled no-change controls lack a usable published abstract in the pinned owner TSV; they remain in the 44-case model run but are missing from these lexical complete-case metrics.
+The current v2 corpus has full reconstructable text coverage for all 22 major-change and 22 no-change cases. The earlier v1 22/19 lexical view is historical and superseded.
 
 After model output is frozen and labels are unblinded:
-- report lexical coverage and AUC beside the model's strict 44-case sensitivity / false-alert rate;
+- report the full v2 22/22 lexical AUC beside the model's strict 44-case sensitivity / false-alert rate;
 - for each lexical metric, report the best descriptive sensitivity available at or below the model's observed false-alert rate;
 - label that matched operating-point comparison as post-unblinding descriptive analysis, not a predeclared threshold test;
 - do not drop model failures or lexical-missing controls from the headline result.
@@ -246,6 +248,7 @@ The harness:
 - dry-runs by default with zero provider calls;
 - verifies EvidenceWatch HEAD `9c96c839…` and pinned analyzer/engine/ledger/package Git blobs before module import;
 - validates the blinded packet and packet SHA-256;
+- requires packet SHA-256 `f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc`;
 - pins Nemotron in code rather than inheriting `NVIDIA_MODEL`;
 - requires both explicit `--live` and `NVIDIA_API_KEY`;
 - refuses existing output/ledger/lock paths;
@@ -271,6 +274,8 @@ Boundary note:
 
 The scorer is frozen before any model output exists.
 
+It hard-pins the v2 packet SHA above and owner-key SHA-256 `75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9`.
+
 Headline scoring is strict failure-worst-case across all 44 cases:
 
 ```text
@@ -281,6 +286,17 @@ FAILED NO-CHANGE CONTROL -> FALSE POSITIVE / REVIEW BURDEN
 It also preserves raw-output and available-case-only secondary views, exact input SHA-256 identities, per-case error anatomy, relation/material-reason distributions, and the predeclared trivial-baseline operating-point comparison.
 
 Do not replace this scorer after seeing output and call the replacement the same preregistered run.
+## No-spend preparation gate
+
+Hosted workflow run `36260538589`: **SUCCESS**.
+
+It independently reconstructed v2 from the pinned raw owner files, verified 22+22 selection, rebuilt the blinded packet/key to the exact hashes above, recomputed the full lexical baselines, checked harness fail-closed behavior before provider access, and exercised the conservative unblinding scorer on a synthetic structural result.
+
+```text
+NO PROVIDER CREDENTIALS USED
+NO MODEL CALLS
+NO-SPEND PIPELINE GREEN != LIVE RESULT
+```
 ## Gate
 
 This contract authorises **preparation only**.

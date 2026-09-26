@@ -6,7 +6,7 @@ Offline only.
 Usage:
   python research/evidencewatch_retrospective/score_trivial_baselines.py \
     /path/to/all_pairs.tsv \
-    research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json \
+    research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json \
     /tmp/brierley_trivial_baselines.json
 """
 from __future__ import annotations
@@ -15,7 +15,7 @@ import csv
 import json
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 TOKEN_RE = re.compile(r"[a-z0-9]+")
@@ -109,21 +109,48 @@ def roc_points(rows: list[dict], metric: str) -> list[dict]:
     return out
 
 
-def load_owner_pairs(path: Path) -> dict[str, dict]:
-    with path.open(newline="", encoding="utf-8-sig") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        rows = {}
-        for row in reader:
+def load_owner_pairs(path: Path) -> dict[str, list[dict]]:
+    rows: dict[str, list[dict]] = defaultdict(list)
+    with path.open(newline="", encoding="cp1252", errors="replace") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
             doi = str(row.get("doi") or "").strip()
-            if not doi:
-                continue
-            if doi in rows:
-                raise AssertionError(f"Duplicate DOI in owner TSV: {doi}")
-            rows[doi] = row
-    return rows
+            if doi:
+                rows[doi].append(row)
+    return dict(rows)
 
 
-def selected_rows(manifest: dict, owner_rows: dict[str, dict]) -> list[dict]:
+def resolve_owner_row(owner_rows: dict[str, list[dict]], record: dict) -> dict:
+    doi = record["preprint_doi"]
+    published_doi = record["published_doi"]
+    candidates = [
+        row
+        for row in owner_rows.get(doi, [])
+        if str(row.get("published_doi") or "").strip() == published_doi
+        and valid_text(row.get("abstract")) is not None
+        and valid_text(row.get("published_pubmed_abstract")) is not None
+        and "\ufffd" not in str(row.get("abstract") or "")
+        and "\ufffd" not in str(row.get("published_pubmed_abstract") or "")
+    ]
+    if not candidates:
+        raise AssertionError(
+            f"No reconstructable owner row for selected DOI pair: {doi} -> {published_doi}"
+        )
+    unique = {}
+    for row in candidates:
+        key = (
+            str(row.get("abstract") or ""),
+            str(row.get("published_pubmed_abstract") or ""),
+        )
+        unique[key] = row
+    if len(unique) != 1:
+        raise AssertionError(
+            f"Ambiguous reconstructable owner rows for selected DOI pair: "
+            f"{doi} -> {published_doi}; unique_text_pairs={len(unique)}"
+        )
+    return next(iter(unique.values()))
+
+
+def selected_rows(manifest: dict, owner_rows: dict[str, list[dict]]) -> list[dict]:
     out = []
     seen = set()
     for episode in manifest["episodes"]:
@@ -133,20 +160,16 @@ def selected_rows(manifest: dict, owner_rows: dict[str, dict]) -> list[dict]:
             if doi in seen:
                 raise AssertionError(f"Duplicate selected DOI: {doi}")
             seen.add(doi)
-            owner = owner_rows.get(doi)
-            if owner is None:
-                raise AssertionError(f"Selected DOI missing from owner TSV: {doi}")
+            owner = resolve_owner_row(owner_rows, record)
 
             preprint = valid_text(owner.get("abstract"))
             published = valid_text(owner.get("published_pubmed_abstract"))
-            if preprint is None:
-                raise AssertionError(f"Missing preprint abstract for selected DOI: {doi}")
+            if preprint is None or published is None:
+                raise AssertionError(
+                    f"Selected v2 pair unexpectedly became unreconstructable: {doi}"
+                )
 
-            scores = {}
-            if published is None:
-                scores = {name: None for name in METRICS}
-            else:
-                scores = {name: fn(preprint, published) for name, fn in METRICS.items()}
+            scores = {name: fn(preprint, published) for name, fn in METRICS.items()}
 
             out.append(
                 {

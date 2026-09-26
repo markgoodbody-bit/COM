@@ -39,6 +39,7 @@ const COMMON_CLAIM = 'The substantive findings and conclusions stated in this st
 const EXPECTED_CASES = 44;
 const EXPECTED_PROVIDER_CALLS = EXPECTED_CASES * 2;
 const PACKET_SCHEMA = 'evidencewatch-brierley-blinded-packet-v1';
+const EXPECTED_PACKET_SHA256 = 'f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc';
 
 function fail(message) {
   throw new Error(message);
@@ -149,10 +150,17 @@ function validatePacket(packetPath) {
     if (!String(entry.published_abstract || '').trim()) fail(`Empty published abstract: ${entry.case_id}`);
   }
 
+  const packetSha256 = sha256Buffer(bytes);
+  if (packetSha256 !== EXPECTED_PACKET_SHA256) {
+    fail(
+      `Frozen packet SHA-256 mismatch: expected ${EXPECTED_PACKET_SHA256}, observed ${packetSha256}`
+    );
+  }
+
   return {
     resolved,
     packet,
-    sha256: sha256Buffer(bytes),
+    sha256: packetSha256,
   };
 }
 

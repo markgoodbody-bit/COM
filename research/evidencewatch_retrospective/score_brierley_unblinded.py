@@ -24,6 +24,8 @@ CONTROL = "ABSTRACT_NO_CHANGE"
 PRE_SCHEMA = "evidencewatch-brierley-pre-unblind-output-v1"
 KEY_SCHEMA = "evidencewatch-brierley-blinded-key-v1"
 BASELINE_SCHEMA = "evidencewatch-brierley-trivial-baselines-v1"
+EXPECTED_PACKET_SHA256 = "f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc"
+EXPECTED_KEY_SHA256 = "75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9"
 
 
 def sha256_file(path: Path) -> str:
@@ -110,6 +112,7 @@ def validate_pre(pre: dict) -> dict[str, dict]:
     assert pre.get("schema") == PRE_SCHEMA, pre.get("schema")
     assert pre.get("status") == "OUTPUT_FROZEN_BEFORE_OWNER_LABEL_JOIN", pre.get("status")
     assert pre.get("packet", {}).get("case_count") == EXPECTED_CASES
+    assert pre.get("packet", {}).get("sha256") == EXPECTED_PACKET_SHA256
     assert pre.get("provider", {}).get("expected_calls") == EXPECTED_CASES * 2
     assert pre.get("provider", {}).get("observed_calls") == EXPECTED_CASES * 2
     cases = pre.get("cases")
@@ -185,6 +188,10 @@ def main() -> int:
         raise AssertionError(f"Refusing to overwrite scored output: {output_path}")
 
     pre = load_json(pre_path)
+    if sha256_file(key_path) != EXPECTED_KEY_SHA256:
+        raise AssertionError(
+            "Owner-key SHA-256 does not match the frozen v2 challenge key"
+        )
     key = load_json(key_path)
     baseline = load_json(baseline_path)
 

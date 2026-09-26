@@ -31,6 +31,10 @@ It requires:
 - baseline output schema/status and 44 selected source rows;
 - owner-label agreement between key and lexical-baseline file.
 
+Before scoring, the scorer also requires:
+- v2 packet SHA-256 `f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc` in the sealed pre-unblind output;
+- v2 owner-key SHA-256 `75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9` for the unblinding key.
+
 Input file SHA-256 values are carried into the scored result.
 
 ## Headline metric: strict failure-worst-case
@@ -99,7 +103,7 @@ Aggregate views include:
 
 ## Trivial baseline comparison
 
-The frozen lexical baseline remains complete-case descriptive evidence.
+The frozen v2 lexical baseline covers all 22 major-change and 22 no-change text pairs.
 
 For each lexical metric the scorer reports:
 - AUC;
