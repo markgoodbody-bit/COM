@@ -20,7 +20,7 @@ def day(value: str) -> int:
 
 
 def load_rows(path: Path) -> list[dict]:
-    with path.open(newline="", encoding="utf-8-sig") as handle:
+    with path.open(newline="", encoding="cp1252") as handle:
         rows = list(csv.DictReader(handle))
     out = []
     for row_number, row in enumerate(rows, start=2):
