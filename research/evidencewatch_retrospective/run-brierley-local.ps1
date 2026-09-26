@@ -26,7 +26,7 @@ $ExpectedComBlobs = @{
     "research/evidencewatch_retrospective/build_blinded_brierley_packet.py"            = "b285348ca24722a20f6c3913ccba93659ce56f3e"
     "research/evidencewatch_retrospective/score_trivial_baselines.py"                  = "8f442453aea3348cbb2c71da51c989bc9fae9433"
     "research/evidencewatch_retrospective/run_brierley_retrospective.mjs"              = "9b156be82c76fa06059a234c8a438a1ce0b16292"
-    "research/evidencewatch_retrospective/score_brierley_unblinded.py"                 = "b12d9e23bb2c90186229d9c0bd142937aad3eb2b"
+    "research/evidencewatch_retrospective/score_brierley_unblinded.py"                 = "825a1c4ba67dcd7a55258b9ae3e7ef58734f1658"
 }
 
 function Invoke-Checked {

@@ -14,9 +14,12 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import sys
 from collections import Counter
 from pathlib import Path
+
+from score_trivial_baselines import METRICS, auc, roc_points
 
 EXPECTED_CASES = 44
 POSITIVE = "ABSTRACT_MAJOR_CHANGE"
@@ -73,7 +76,11 @@ def confusion(rows: list[dict], prediction_field: str) -> dict:
 def best_baseline_at_far(metric: dict, model_far: float | None) -> dict | None:
     if model_far is None:
         return None
-    candidates = []
+    # The always-quiet endpoint is a real comparator, even when every observed
+    # threshold would alert on a control. None denotes that endpoint, not a gap.
+    candidates = [{"threshold": None, "sensitivity": 0.0, "false_alert_rate": 0.0,
+                   "tp": 0, "fp": 0, "positive_n": metric["complete_positive_n"],
+                   "control_n": metric["complete_control_n"]}]
     for point in metric.get("roc_points", []):
         threshold = point.get("threshold")
         sensitivity = point.get("sensitivity")
@@ -88,7 +95,7 @@ def best_baseline_at_far(metric: dict, model_far: float | None) -> dict | None:
         key=lambda p: (
             -float(p["sensitivity"]),
             float(p["false_alert_rate"]),
-            -float(p["threshold"]),
+            -float(p["threshold"]) if p["threshold"] is not None else -math.inf,
         )
     )
     chosen = candidates[0]
@@ -120,10 +127,21 @@ def decision_route(
     sensitivity = strict_metrics.get("sensitivity")
     false_alert_rate = strict_metrics.get("false_alert_rate")
 
-    if sensitivity is None or false_alert_rate is None:
+    valid_comparators = set(lexical_metrics) == set(METRICS)
+    for metric in lexical_metrics.values():
+        point = metric.get("best_at_or_below_model_strict_far") if isinstance(metric, dict) else None
+        valid_comparators = valid_comparators and isinstance(point, dict)
+        if isinstance(point, dict):
+            valid_comparators = valid_comparators and all(
+                valid_rate(point.get(key)) for key in ("sensitivity", "false_alert_rate")
+            ) and point.get("positive_n") == 22 and point.get("control_n") == 22
+            if valid_rate(false_alert_rate) and valid_rate(point.get("false_alert_rate")):
+                valid_comparators = valid_comparators and point["false_alert_rate"] <= false_alert_rate + 1e-12
+
+    if not valid_rate(sensitivity) or not valid_rate(false_alert_rate) or not valid_comparators:
         return {
             "route": "INVALID_OR_UNSCORABLE",
-            "reason": "strict sensitivity or false-alert rate is unavailable",
+            "reason": "strict rates or complete valid frozen comparator evidence are unavailable",
             "dominated_by": [],
             "next_action": "preserve result; repair scoring/integrity before any substantive claim",
         }
@@ -198,6 +216,10 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def valid_rate(value: object) -> bool:
+    return type(value) in (int, float) and math.isfinite(value) and 0 <= value <= 1
+
+
 def validate_pre(pre: dict) -> dict[str, dict]:
     assert pre.get("schema") == PRE_SCHEMA, pre.get("schema")
     assert pre.get("status") == "OUTPUT_FROZEN_BEFORE_OWNER_LABEL_JOIN", pre.get("status")
@@ -246,7 +268,25 @@ def validate_baselines(baseline: dict) -> dict[str, dict]:
     for row in rows:
         doi = row.get("preprint_doi")
         assert doi and doi not in out, doi
+        assert row.get("owner_label") in {POSITIVE, CONTROL}, doi
+        assert row.get("published_abstract_available") is True, doi
+        scores = row.get("scores")
+        assert isinstance(scores, dict) and set(scores) == set(METRICS), doi
+        assert all(valid_rate(value) for value in scores.values()), doi
         out[doi] = row
+    assert Counter(row["owner_label"] for row in rows) == {POSITIVE: 22, CONTROL: 22}
+    metrics = baseline.get("metrics")
+    assert isinstance(metrics, dict) and set(metrics) == set(METRICS), "Missing/extra frozen metrics"
+    for name, metric in metrics.items():
+        assert isinstance(metric, dict), name
+        for key, expected in (("complete_positive_n", 22), ("complete_control_n", 22),
+                              ("missing_positive_n", 0), ("missing_control_n", 0)):
+            assert type(metric.get(key)) is int and metric[key] == expected, (name, key)
+        positives = [row["scores"][name] for row in rows if row["owner_label"] == POSITIVE]
+        controls = [row["scores"][name] for row in rows if row["owner_label"] == CONTROL]
+        assert valid_rate(metric.get("auc")) and metric["auc"] == auc(positives, controls), name
+        # Reject stale/altered aggregate evidence; never route from its claims alone.
+        assert metric.get("roc_points") == roc_points(rows, name), (name, "ROC differs from case scores")
     return out
 
 
