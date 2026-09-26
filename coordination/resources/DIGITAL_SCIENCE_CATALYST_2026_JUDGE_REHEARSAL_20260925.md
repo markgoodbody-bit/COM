@@ -100,10 +100,19 @@ Current-owner subtraction:
 - residual: material post-reliance changes outside those well-owned routes plus downstream routing.
 
 Risk:
-Frequency/materiality of the residual class is unmeasured.
+Frequency/materiality of the residual class is unmeasured in a current target workflow.
+
+Public historical workflow evidence now exists:
+- the University of Bern asymptomatic-COVID living review explicitly checked included preprints for later peer-reviewed publication and re-extracted data when content changed;
+- one public Lombardi episode moved from a preprint reporting 41/138 asymptomatic positives to a final publication/review extraction of 17/139 after longer follow-up / changed symptom definition;
+- the review repository explicitly records that the final publication succeeded a preprint already included, so it was not counted as independent new evidence;
+- the fifth review uses the public extracted data in synthesis.
+
+Receipt:
+`coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`
 
 Best answer:
-That uncertainty is the pilot question, not something to hide. Stop if the residual is too rare or existing practice performs as well.
+The maintenance problem is real, but current practice already handled this public case. That cuts the claim down to burden/integration: can tooling make that repeated currentness + lineage + re-extraction routing cheaper without degrading judgement? Frequency and user-value remain pilot questions. Stop if the residual is too rare or existing practice performs as well.
 
 ### SOLUTION
 
@@ -175,8 +184,13 @@ Strongest evidence:
 - predeclared shadow-mode pilot protocol + deterministic offline scorer for the promised evaluation metrics;
 - explicit unresolved model-status inconsistency retained rather than hidden.
 
+Additional real-workflow evidence:
+- one public historical living-review episode now demonstrates that preprint -> final-publication change, same-lineage handling and re-extraction are real maintenance work;
+- the same owner source reports a seven-person core team becoming overwhelmed and later recruiting 20 experienced volunteers committing at least 3 hours/month across review tasks;
+- that workload context is not an episode-specific time saving and does not validate EvidenceWatch.
+
 Ceiling:
-No research customers, pilot or user-efficiency result.
+No research customers, willing pilot partner, current matched-burden measurement or user-efficiency result.
 
 ### FIT WITH DIGITAL SCIENCE
 
@@ -205,6 +219,11 @@ Answer:
 
 Answer:
 "Large parts already are. I removed those as novelty claims. The remaining hypothesis is whether material post-reliance state across heterogeneous sources can be joined to explicit authority and downstream work with low enough review burden to be useful. If one of those systems already closes that loop better, EvidenceWatch should narrow or stop."
+
+### "Do you have evidence this workflow problem actually happens?"
+
+Answer:
+"Yes, but not evidence yet that EvidenceWatch improves it. The University of Bern living review publicly describes checking included preprints for later peer-reviewed publication and re-extracting data when content changed. Its public repository contains a concrete Lombardi case: the preprint reported 41/138 asymptomatic positives, while the final article and review extraction used 17/139 after longer follow-up and a changed symptom definition. The team recognised it as the same study lineage rather than independent evidence. That proves the maintenance task is real and also proves competent existing practice can handle it. The grant question is whether this can be made cheaper and more inspectable, not whether reviewers need to be taught to do it."
 
 ### "What makes this agentic rather than a script?"
 
