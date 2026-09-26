@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **26 September 2026 — Relay runtime + Square engagement currentness**
+Updated: **26 September 2026 — answerability + Square/Relay currentness**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -59,6 +59,7 @@ Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
 - **THR CURRENT MAIN `2d0cf64e…`** — #76/#77/#78/#80 remain active; #81 adds the hardened read-only direct+assertion impact-route query extracted from exploratory #52; main integrity `36237522858` + Pages `36237522573` SUCCESS; four records remain four; #52 closed unmerged; open THR PRs = 0; no dependency ontology/schema growth;
 - **Relay #260 + #261 + #262 + #264 MERGED** — main `58920c10b4942d8058a01763de8a34c7530cf088`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; #264 separates configured/resolved target identity from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS; target-machine read still establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
+- **Relay #265 READY / NOT MERGED** — exact head `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`; prevents late COMSYNC failure from consuming COM108/Square rows as acknowledged; hosted `campfire-ci` `36258366754` SUCCESS; independent Claude Code Windows full discovery 114 PASS; per-file atomic replacement is not a multi-file transaction or concurrent-writer guarantee. Campfire main adoption remains gated.
 ```text
 CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
