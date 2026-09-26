@@ -204,6 +204,71 @@ function resultReceipt(result, elapsedMs) {
   };
 }
 
+function writeJsonExclusive(outputPath, value) {
+  const rendered = JSON.stringify(value, null, 2) + '\n';
+  fs.writeFileSync(outputPath, rendered, { encoding: 'utf8', flag: 'wx' });
+  return {
+    rendered,
+    sha256: sha256Buffer(Buffer.from(rendered, 'utf8')),
+  };
+}
+
+function partialFailureOutput({
+  startedAt,
+  source,
+  packetInfo,
+  cases,
+  providerReceipts,
+  paths,
+  attemptedAnalyses,
+  failure,
+}) {
+  return {
+    schema: 'evidencewatch-brierley-pre-unblind-output-v1',
+    status: 'PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE',
+    started_at: startedAt,
+    completed_at: new Date().toISOString(),
+    evidencewatch: {
+      commit: source.head,
+      blobs: source.blobs,
+    },
+    packet: {
+      sha256: packetInfo.sha256,
+      case_count: packetInfo.packet.case_count,
+    },
+    provider: {
+      model: MODEL,
+      endpoint: ENDPOINT,
+      expected_calls: EXPECTED_PROVIDER_CALLS,
+      attempted_analyses: attemptedAnalyses,
+      observed_responses: providerReceipts.length,
+    },
+    common_claim: COMMON_CLAIM,
+    failure,
+    cases,
+    provider_receipts: providerReceipts,
+    ledger_path: paths.ledger,
+  };
+}
+
+function sealPartialFailure(args) {
+  const output = partialFailureOutput(args);
+  const sealed = writeJsonExclusive(args.paths.output, output);
+  process.stdout.write(JSON.stringify({
+    status: output.status,
+    failure: output.failure,
+    processed_cases: output.cases.length,
+    attempted_analyses: output.provider.attempted_analyses,
+    observed_responses: output.provider.observed_responses,
+    packet_sha256: output.packet.sha256,
+    output_sha256: sealed.sha256,
+    output_path: args.paths.output,
+    ledger_path: args.paths.ledger,
+  }, null, 2) + '\n');
+  process.stdout.write('EVIDENCEWATCH_BRIERLEY_LIVE_RUN_ABORTED_PRE_UNBLIND\n');
+  process.exitCode = 3;
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const source = verifyEvidenceWatchCheckout(args.evidencewatch);
@@ -282,6 +347,7 @@ async function main() {
   const engine = new EvidenceWatchEngine({ ledger, analyzer });
   const cases = [];
   const startedAt = new Date().toISOString();
+  let attemptedAnalyses = 0;
 
   for (const entry of packetInfo.packet.cases) {
     const caseId = entry.case_id;
@@ -300,6 +366,7 @@ async function main() {
 
     receiptContext = { case_id: caseId, phase: 'preprint' };
     const baselineStarted = Date.now();
+    attemptedAnalyses += 1;
     const baseline = await engine.observe({
       watchId,
       source: preprintSource,
@@ -309,9 +376,40 @@ async function main() {
       candidateLinks: [],
     });
     const baselineElapsed = Date.now() - baselineStarted;
+    const baselineReceipt = resultReceipt(baseline, baselineElapsed);
+
+    if (baseline?.status === 'ANALYSIS_FAILED') {
+      const snapshot = engine.getSnapshot(watchId);
+      cases.push({
+        case_id: caseId,
+        baseline: baselineReceipt,
+        successor: null,
+        prediction_review: false,
+        final_canonical_state: snapshot?.currentState ?? null,
+        alert_count: snapshot?.alerts?.length ?? 0,
+      });
+      receiptContext = null;
+      sealPartialFailure({
+        startedAt,
+        source,
+        packetInfo,
+        cases,
+        providerReceipts,
+        paths,
+        attemptedAnalyses,
+        failure: {
+          case_id: caseId,
+          phase: 'preprint',
+          engine_status: baseline?.status ?? null,
+          error: baseline?.error ?? 'analysis failed',
+        },
+      });
+      return;
+    }
 
     receiptContext = { case_id: caseId, phase: 'publication' };
     const successorStarted = Date.now();
+    attemptedAnalyses += 1;
     const successor = await engine.observe({
       watchId,
       source: publicationSource,
@@ -321,22 +419,46 @@ async function main() {
       candidateLinks: [],
     });
     const successorElapsed = Date.now() - successorStarted;
+    const successorReceipt = resultReceipt(successor, successorElapsed);
 
     const snapshot = engine.getSnapshot(watchId);
     cases.push({
       case_id: caseId,
-      baseline: resultReceipt(baseline, baselineElapsed),
-      successor: resultReceipt(successor, successorElapsed),
+      baseline: baselineReceipt,
+      successor: successorReceipt,
       prediction_review: successor?.status === 'MATERIAL_DELTA',
       final_canonical_state: snapshot?.currentState ?? null,
       alert_count: snapshot?.alerts?.length ?? 0,
     });
+
+    if (successor?.status === 'ANALYSIS_FAILED') {
+      receiptContext = null;
+      sealPartialFailure({
+        startedAt,
+        source,
+        packetInfo,
+        cases,
+        providerReceipts,
+        paths,
+        attemptedAnalyses,
+        failure: {
+          case_id: caseId,
+          phase: 'publication',
+          engine_status: successor?.status ?? null,
+          error: successor?.error ?? 'analysis failed',
+        },
+      });
+      return;
+    }
   }
 
   receiptContext = null;
 
+  if (attemptedAnalyses !== EXPECTED_PROVIDER_CALLS) {
+    fail(`Analysis-attempt count mismatch: expected ${EXPECTED_PROVIDER_CALLS}, observed ${attemptedAnalyses}`);
+  }
   if (providerReceipts.length !== EXPECTED_PROVIDER_CALLS) {
-    fail(`Provider-call count mismatch: expected ${EXPECTED_PROVIDER_CALLS}, observed ${providerReceipts.length}`);
+    fail(`Provider-response count mismatch: expected ${EXPECTED_PROVIDER_CALLS}, observed ${providerReceipts.length}`);
   }
 
   const output = {
@@ -356,6 +478,7 @@ async function main() {
       model: MODEL,
       endpoint: ENDPOINT,
       expected_calls: EXPECTED_PROVIDER_CALLS,
+      attempted_analyses: attemptedAnalyses,
       observed_calls: providerReceipts.length,
     },
     common_claim: COMMON_CLAIM,
@@ -364,9 +487,8 @@ async function main() {
     ledger_path: paths.ledger,
   };
 
-  const rendered = JSON.stringify(output, null, 2) + '\n';
-  fs.writeFileSync(paths.output, rendered, { encoding: 'utf8', flag: 'wx' });
-  const digest = sha256Buffer(Buffer.from(rendered, 'utf8'));
+  const sealed = writeJsonExclusive(paths.output, output);
+  const digest = sealed.sha256;
 
   process.stdout.write(JSON.stringify({
     status: output.status,
