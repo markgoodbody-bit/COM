@@ -149,6 +149,7 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
 - proposal hard-limit: 1,500 words; current exact proposal-body count after the 26 September owner-test repair is **1,409 whitespace-delimited words / 1,465 word-like tokens**; both local methods remain below the ceiling and final editor recount is still required;
+- copy discipline: proposal is now effectively frozen; new material must replace weaker wording rather than accumulate, unless the final editor count proves safe;
 - judge rehearsal and likely post-gate form copy are prepared; no identity/contact field has been entered;
 - target object: EvidenceWatch as a bounded workflow-integration/burden hypothesis inside research integrity / evidence synthesis;
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite, EPPI-Reviewer, MAGICapp, ALEC/Monash and Digital Science's own adjacent work own major component mechanisms; public partner quarry additionally identifies EPPI Centre, ALEC, Bern and MAGIC as strong current living-evidence owners that could falsify or subsume the residual workflow claim;
