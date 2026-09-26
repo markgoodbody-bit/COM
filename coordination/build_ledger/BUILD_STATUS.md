@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **26 September 2026 — PSFH D087 + THR documentation repairs current**
+Updated: **26 September 2026 — Relay runtime + Square engagement currentness**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -45,7 +45,7 @@ History belongs in dated receipts + Git.
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
 - Human Record main `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 plus bounded read-only impact routing #81 merged; integrity + Pages green; exploratory THR #52 closed unmerged; open THR PRs = 0;
-- Campfire Relay main `73cfcbd4d583e575fc36f604f30448b1532bed81` — #260 measured joiner/speaking-accounting repair plus #261 documentation-only source/release/install currentness repair; installed Windows runtime remains unknown without target-host evidence; Production unchanged.
+- Campfire Relay main `67b9438ad2824f8850d2a0dbc8a7479727681e7c` — #260 measured joiner/speaking-accounting repair, #261 source/release/install currentness repair and #262 older-thread accounting clarification; bounded target-host evidence establishes the existing running Windows source as tag v0.18.34 while leaving loaded modules and dependencies unverified; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -58,13 +58,14 @@ EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
 - **THR CURRENT MAIN `2d0cf64e…`** — #76/#77/#78/#80 remain active; #81 adds the hardened read-only direct+assertion impact-route query extracted from exploratory #52; main integrity `36237522858` + Pages `36237522573` SUCCESS; four records remain four; #52 closed unmerged; open THR PRs = 0; no dependency ontology/schema growth;
-- **Relay #260 + #261 MERGED** — main `73cfcbd4d583e575fc36f604f30448b1532bed81`; #260 repairs measured address joins/accounting visibility; #261 removes false-current installed-version claims by separating source, production-named tag, published GitHub Release and target-host runtime evidence; #261 exact-head `36236885881` + post-merge `36236969264` SUCCESS; stale #215 closed; no Production activation.
+- **Relay #260 + #261 + #262 MERGED** — main `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; post-merge `36237314991` SUCCESS; target-machine read establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
 - **Simple-v1 #259 AUTHORITY REPAIR MERGED** — maintained `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`; removes #258's unattended MODEL operation while preserving earlier worker/supervisor repairs; exact-head Simple-v1 `36201550455` + broad `36201550475` SUCCESS; post-merge `36201678876` SUCCESS. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
 - `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`
 - `coordination/build_ledger/EVIDENCEWATCH_WINDOWS_CI_REPAIR_20260926.md`
+- `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`
 - `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`
 - `coordination/build_ledger/PSFH_D086_PUBLICATION_20260925.md`
 - `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`
