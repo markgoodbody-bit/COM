@@ -25,8 +25,8 @@ $ExpectedComBlobs = @{
     "research/evidencewatch_retrospective/verify_brierley_manifest.py"                 = "df7f501d3e18ae8df6dea57cb0901daf6b2c6dae"
     "research/evidencewatch_retrospective/build_blinded_brierley_packet.py"            = "b285348ca24722a20f6c3913ccba93659ce56f3e"
     "research/evidencewatch_retrospective/score_trivial_baselines.py"                  = "8f442453aea3348cbb2c71da51c989bc9fae9433"
-    "research/evidencewatch_retrospective/run_brierley_retrospective.mjs"              = "9b156be82c76fa06059a234c8a438a1ce0b16292"
-    "research/evidencewatch_retrospective/score_brierley_unblinded.py"                 = "b12d9e23bb2c90186229d9c0bd142937aad3eb2b"
+    "research/evidencewatch_retrospective/run_brierley_retrospective.mjs"              = "2935c5f0e2fc5ff35b5796c3985328393acf42ae"
+    "research/evidencewatch_retrospective/score_brierley_unblinded.py"                 = "9192e440b16795ea633df973145941cb31674e03"
 }
 
 function Invoke-Checked {
@@ -227,7 +227,7 @@ Write-Host "LIVE MODE: executing the frozen 44-case / 88-analysis run."
 Write-Host "Provider endpoint is currently documented as a free Developer Program prototype/research endpoint; account quota/rate limits still apply."
 Write-Host ""
 
-Invoke-Checked -FilePath "node" -ArgumentList @(
+& node @(
     $harness,
     "--live",
     "--evidencewatch", $evidenceWatchRoot,
@@ -235,15 +235,44 @@ Invoke-Checked -FilePath "node" -ArgumentList @(
     "--output", $preUnblind,
     "--ledger", $ledger
 )
+$liveExitCode = $LASTEXITCODE
 
 if (-not (Test-Path -LiteralPath $preUnblind -PathType Leaf)) {
-    throw "Live harness returned without creating expected pre-unblind output: $preUnblind"
+    throw "Live harness returned without creating expected pre-unblind receipt: $preUnblind (exit $liveExitCode)"
 }
 if (-not (Test-Path -LiteralPath $ledger -PathType Leaf)) {
     throw "Live harness returned without creating expected ledger: $ledger"
 }
 
 $preUnblindSha = (Get-FileHash -LiteralPath $preUnblind -Algorithm SHA256).Hash.ToLowerInvariant()
+$preUnblindObject = Get-Content -LiteralPath $preUnblind -Raw | ConvertFrom-Json
+
+if ($preUnblindObject.status -eq "PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE") {
+    Write-Host ""
+    Write-Host "LIVE RUN ABORTED ON FIRST ANALYSIS FAILURE."
+    Write-Host "Partial pre-unblind receipt: $preUnblind"
+    Write-Host "Partial receipt SHA256: $preUnblindSha"
+    Write-Host "Ledger: $ledger"
+    Write-Host ("Failure case: {0}" -f $preUnblindObject.failure.case_id)
+    Write-Host ("Failure phase: {0}" -f $preUnblindObject.failure.phase)
+    Write-Host ("Attempted analyses: {0}" -f $preUnblindObject.provider.attempted_analyses)
+    Write-Host ("Observed provider responses: {0}" -f $preUnblindObject.provider.observed_responses)
+    Write-Host ""
+    Write-Host "STOP. Do not unblind or score this as a completed 44-case run."
+    Write-Host "Preserve this failed run. Any retry must use a new run directory and remain a separately declared run."
+    if ($liveExitCode -eq 0) {
+        throw "Partial failure receipt was created but live harness returned exit code 0"
+    }
+    exit $liveExitCode
+}
+
+if ($liveExitCode -ne 0) {
+    throw "Live harness failed with exit code $liveExitCode after writing status '$($preUnblindObject.status)'"
+}
+
+if ($preUnblindObject.status -ne "OUTPUT_FROZEN_BEFORE_OWNER_LABEL_JOIN") {
+    throw "Unexpected live pre-unblind status: $($preUnblindObject.status)"
+}
 
 Write-Host ""
 Write-Host "LIVE PRE-UNBLIND RUN COMPLETE."
