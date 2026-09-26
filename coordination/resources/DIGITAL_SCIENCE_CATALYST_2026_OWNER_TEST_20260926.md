@@ -65,7 +65,7 @@ Counted on the exact branch source from the first required heading `## 1. THE PR
 - word-like-token count: **1,465**
 - owner ceiling: **1,500 words**
 
-Both local methods retain >100 words of headroom. Final copy should still be recounted in the submission editor because Google/word-processor tokenisation can differ.
+Headroom is **91** by the whitespace count and **35** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
 
 ## Strongest remaining weakness
 
