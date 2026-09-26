@@ -22,13 +22,6 @@ BLIND_SALT = "evidencewatch-brierley-blind-v1"
 EXPECTED_CASES = 44
 
 
-def canonical_bytes(value: object) -> bytes:
-    return (
-        json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-        .encode("utf-8")
-    )
-
-
 def sha256_hex(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
