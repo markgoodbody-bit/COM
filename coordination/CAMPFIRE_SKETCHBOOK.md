@@ -3009,3 +3009,222 @@ Current disposition:
 
 Coordination record: COM #583.
 
+## 26 September 2026 — GOV.UK site search tests whether "reviewer" requires an institutional caseworker
+
+Status: **FRESH-CASE TEST / DIRECT PUBLIC ALGORITHMIC SERVICE / REVIEWER ROLE SHARPENED / NO NEW DIMENSION / FIELD SEQUENCE SATURATING**
+
+Primary official surface:
+- DSIT GOV.UK site search ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/dsit-gov-dot-uk-site-search
+
+Why this is structurally useful:
+
+GOV.UK site search sends algorithmically ranked results directly to public users.
+
+There is no human caseworker reviewing each ranked list before it reaches the user.
+
+The ATRS record says:
+- Google Vertex AI Search retrieves and ranks GOV.UK content in response to each query;
+- ranking influences which pages users are likely to visit;
+- users still choose which result to click;
+- in roughly one in four tracked searches users refine/rephrase the query;
+- in roughly 20% of tracked searches users search but do not click a result;
+- a feedback form is available on the search page;
+- the GOV.UK search team continuously monitors technical performance and search-result quality;
+- relevance is evaluated using judgement lists, click behaviour and other service metrics;
+- significant quality degradations can be addressed internally or escalated to Google.
+
+The risk section explicitly recognises that poor ranking could waste users' time or mislead them about what action to take.
+
+The route therefore exists at two resolutions.
+
+### Local interaction route
+
+```text
+USER QUERY
+-> RANKED RESULTS
+-> USER INSPECTS
+-> USER CLICKS / IGNORES / REPHRASES / USES ANOTHER ROUTE
+```
+
+### System-improvement route
+
+```text
+USER / ANALYTICS / JUDGEMENT-LIST SIGNAL
+-> GOV.UK SEARCH TEAM MONITORING
+-> QUALITY REVIEW
+-> INTERNAL CONFIGURATION / CONTENT ACTION
+   OR FEEDBACK TO GOOGLE
+-> FUTURE SEARCH BEHAVIOUR
+```
+
+## Test against the current teaching surface
+
+Current preferred sequence:
+
+```text
+AFFECTED LAYER
+-> WITNESS / OBSERVABILITY
+-> INITIATOR
+-> REVIEWER
+-> WHO CAN ACT / UNDER WHAT AUTHORITY
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+At first glance, the case appears to lack a reviewer.
+
+It does not.
+
+The mistake is assuming:
+
+```text
+REVIEWER
+=
+INSTITUTIONAL CASEWORKER
+```
+
+At the local interaction layer:
+- **affected layer:** ranking / information-access path;
+- **witness / observability:** user sees the returned ranked list and can judge whether it appears useful;
+- **initiator:** user can immediately rephrase, ignore or choose another route;
+- **reviewer:** the user is the first evaluator of usefulness for their own information need;
+- **who can act / authority:** user controls their next click/query; no public authority is needed to reject a search result;
+- **review resolution:** local acceptance/rejection of the result set;
+- **changeable consequence:** user's navigation/action path;
+- **clock:** immediate, before relying on the selected result.
+
+At the system layer:
+- **affected layer:** search-quality behaviour across users/queries;
+- **witness / observability:** analytics, judgement lists, feedback and team monitoring;
+- **initiator:** users, metrics, evaluators or product team;
+- **reviewer:** GOV.UK search team / relevant product specialists;
+- **who can act / authority:** GOV.UK can change its configuration/content/rules; Google controls proprietary VAIS product internals;
+- **review resolution:** system-quality diagnosis / remediation;
+- **changeable consequence:** future rankings/configuration/content treatment;
+- **clock:** continuous monitoring / later product correction.
+
+No new dimension is required.
+
+## Teaching sharpening
+
+The reviewer question should be read functionally:
+
+> **Who evaluates whether the observed output/state is acceptable at this layer?**
+
+That role can be:
+- the affected user;
+- an operator;
+- a specialist;
+- an independent reviewer;
+- an aggregate governance/product team;
+- multiple actors at different resolutions.
+
+Therefore:
+
+```text
+NO CASEWORKER
+!= NO REVIEW
+
+USER SELF-REVIEW
+CAN BE
+A LOCAL ANSWERABILITY ROUTE
+
+LOCAL USER ADAPTATION
+!= SYSTEM CORRECTION
+```
+
+The last distinction matters.
+
+A user rephrasing a query corrects their own path through the system.
+
+It does not necessarily correct the ranking model for later users.
+
+So route chaining still applies:
+
+```text
+LOCAL ADAPTATION
+-> DOES THE EXPERIENCE PRODUCE A SYSTEM-LEVEL SIGNAL?
+-> CAN THAT SIGNAL REACH AN ACTOR ABLE TO CHANGE FUTURE OUTPUT?
+```
+
+## Positive owner subtraction
+
+The public record already documents meaningful safeguards:
+- users retain click/query choice;
+- alternate discovery routes exist;
+- feedback is available;
+- continuous quality monitoring exists;
+- judgement-list evaluation exists;
+- GOV.UK can work with Google on remediation;
+- no claim is made that search ranking itself determines a legal entitlement or formal decision.
+
+Do not turn imperfect search ranking into a claim that users lack agency or that the service is defective.
+
+## Ceilings
+
+The public record does **not** establish:
+- individual search failures or harms;
+- the effectiveness of the feedback route;
+- that every misleading ranking is detected;
+- that rephrasing is easy for every user;
+- that aggregate analytics represent users who do not consent to tracking;
+- that GOV.UK can inspect or change every proprietary model component;
+- that a high-ranked page is substantively correct merely because it is judged relevant.
+
+## Falsification result
+
+The current teaching surface survives this tenth case.
+
+The useful sharpening is role semantics, not a new question:
+
+```text
+REVIEWER
+= FUNCTIONAL EVALUATOR AT THE AFFECTED LAYER
+NOT NECESSARILY
+= FORMAL HUMAN CASEWORKER
+```
+
+Preserve:
+
+```text
+EIGHT-QUESTION TEACHING SURFACE SURVIVED THIS CASE
+!= VALIDATION
+
+NO CASEWORKER
+!= NO REVIEW
+
+USER CAN CORRECT OWN PATH
+!= USER CAN CORRECT SYSTEM
+
+LOCAL ANSWERABILITY
+!= SYSTEM-LEVEL CORRECTION
+```
+
+## Sequence disposition
+
+Ten structurally differentiated cases have now produced:
+- two actual teaching-surface falsifications/repairs;
+- route-chaining / branching guidance;
+- an observability/verifiability scar;
+- a functional definition of reviewer;
+- repeated confirmation that these are compressions of existing TRACE/ME structures rather than new primitives.
+
+Adding more nearby ATRS cases now risks example accumulation rather than information gain.
+
+Project routing:
+- stop the current ATRS field-case sequence here unless a materially novel topology appears;
+- extract the earned result into one compact **provisional teaching card**;
+- keep TRACE v0.4.0 / ME v0.8.0 frozen;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no ATRS #364 population wake;
+- no GDS contact.
+
+Current disposition:
+
+**TEACHING SURFACE SURVIVED DIRECT-SEARCH CASE / REVIEWER ROLE SHARPENED / TEN-CASE SEQUENCE SATURATED / EXTRACT COMPACT PROVISIONAL CARD NEXT.**
+
+Coordination record: COM #585.
+
