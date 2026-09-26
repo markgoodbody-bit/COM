@@ -2798,3 +2798,214 @@ Current disposition:
 
 Coordination record: COM #581.
 
+## 26 September 2026 — DWP Urgent Journal Messages tests witness / observability when ground truth is not directly available
+
+Status: **FRESH-CASE TEST / HIGH-UNCERTAINTY SIGNAL / WITNESS QUESTION SURVIVED WITH EPISTEMIC CEILING / NO NEW DIMENSION / NO PROJECT DELTA**
+
+Primary official surface:
+- DWP Urgent Journal Messages ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/dwp-urgent-journal-messages
+
+Why this is a useful ninth case:
+
+The system does not classify a fully observable fact such as whether a document field matches a known record.
+
+It predicts whether a Universal Credit journal message **may indicate a risk of harm**.
+
+The ATRS record says:
+- every journal message passes through the tool;
+- roughly 2 million journal messages per month are processed;
+- the tool applies an urgent flag to messages whose words/phrases cross a weighted threshold;
+- flagged messages are highlighted to Universal Credit agents for quicker review;
+- agents always determine the next step;
+- agents can remove a model-applied flag or add a manual flag;
+- non-flagged messages still remain in ordinary business-as-usual review;
+- precision was 13.5% and recall 84.0% over the stated April 2025-April 2026 period;
+- low precision is expected for the rare outcome;
+- model performance is monitored and the model can be retrained.
+
+Most importantly, the training/test reference itself is not perfect ground truth.
+
+The record says historical labels came from advanced customer-support-agent flags, and explicitly notes that those agents did not flag all journal messages: urgent messages without particular keywords may therefore be represented as non-urgent in the dataset.
+
+So there are at least three epistemic states:
+
+```text
+MESSAGE TEXT
+-> MODEL RISK SIGNAL
+-> HUMAN URGENCY JUDGEMENT
+-> REAL-WORLD RISK / NEED
+```
+
+These are not interchangeable.
+
+## Test against the current answerability teaching surface
+
+Current preferred sequence after DSIT Consult:
+
+```text
+AFFECTED LAYER
+-> WITNESS / OBSERVABILITY
+-> INITIATOR
+-> REVIEWER
+-> WHO CAN ACT / UNDER WHAT AUTHORITY
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+At first glance, this case could suggest splitting:
+
+```text
+WITNESS
+-> VERIFIER
+```
+
+or:
+
+```text
+SOURCE ACCESS
+-> GROUND-TRUTH ACCESS
+```
+
+But that would overstate what answerability requires.
+
+The relevant answerability route can operate before ground truth is certain.
+
+For the individual message:
+- **affected layer:** prioritisation / urgent-contact handling;
+- **witness / observability:** the journal message, model flag and later agent review are visible to DWP staff;
+- **initiator:** model flag or human judgement can trigger priority handling;
+- **reviewer:** Universal Credit agent;
+- **who can act / authority:** trained agent applies the appropriate service response;
+- **review resolution:** urgency/risk-handling judgement for that contact;
+- **changeable consequence:** priority and response/action can change; model flag can be added/removed;
+- **clock:** rapid pre-consequence prioritisation, with non-flagged messages still remaining in ordinary review.
+
+No extra semantic dimension is necessary.
+
+## Epistemic ceiling earned
+
+What **is** earned is a teaching scar on the witness question:
+
+> **Witness / observability asks what evidence or signal can be seen, by whom, and with what limits. It does not imply verified ground truth is available.**
+
+Preserve:
+
+```text
+OBSERVABLE SIGNAL
+!= VERIFIED REALITY
+
+MODEL FLAG
+!= TRUE HARM STATE
+
+HUMAN LABEL
+!= PERFECT GROUND TRUTH
+
+WITNESS ACCESS
+!= CERTAINTY
+```
+
+This matters because otherwise the DSIT Consult repair could be over-read as:
+
+> answerability requires an affected person or reviewer to prove the underlying truth before correction can begin.
+
+That is wrong in safety-sensitive or uncertain settings.
+
+Sometimes the reason to create an answerability route is precisely that uncertainty is unresolved and action must remain corrigible while evidence improves.
+
+## Imperfect-reference-data lesson
+
+This case also prevents a simplistic reading of model metrics.
+
+The model's reported recall/precision are relative to a labelled dataset built from prior human flags.
+
+The ATRS record itself identifies label incompleteness.
+
+Therefore:
+
+```text
+PERFORMANCE AGAINST HUMAN FLAGS
+!= PERFORMANCE AGAINST PERFECT REAL-WORLD TRUTH
+
+REFERENCE LABEL
+CAN ITSELF BE
+A BOUNDED WITNESS
+```
+
+That is already native to TRACE / THR / Mechanical Ethics:
+- evidence currency and aperture;
+- witness limits;
+- unknowns;
+- state versus claim;
+- correction as later evidence arrives.
+
+No new primitive is earned.
+
+## Positive mitigation subtraction
+
+The system contains important safeguards:
+- every final next-step decision remains human;
+- agents can override model flags;
+- unflagged messages are still reviewed;
+- model performance is monitored;
+- retraining is available;
+- the model is used for prioritisation, not as an autonomous determination of a customer's real-world harm state.
+
+Do not convert imperfect metrics or uncertain ground truth into a claim that the system is defective.
+
+## Ceilings
+
+The public record does **not** establish:
+- an individual harmful miss;
+- an individual inappropriate intervention caused by a false flag;
+- what real-world outcomes follow each urgent contact;
+- that every human override is correct;
+- that the reported reference labels capture every true risk event;
+- that DWP's current operational process cannot correct mistakes.
+
+## Falsification result
+
+The current teaching surface survives this ninth case without another field.
+
+But its witness question must carry an epistemic ceiling:
+
+```text
+WITNESS / OBSERVABILITY
+= WHAT CAN BE SEEN / KNOWN AT THIS APERTURE
+NOT
+= GROUND TRUTH PROVED
+```
+
+This is a **scar**, not a new question.
+
+Preserve:
+
+```text
+EIGHT-QUESTION TEACHING SURFACE SURVIVED THIS CASE
+!= VALIDATION
+
+OBSERVABILITY
+!= VERIFIABILITY
+
+ACTION UNDER UNCERTAINTY
+CAN STILL BE ANSWERABLE
+IF CORRECTION / REVIEW REMAINS OPEN
+```
+
+Project routing:
+- retain the current teaching sequence unchanged;
+- add the observability/verification scar to its use;
+- keep TRACE v0.4.0 / ME v0.8.0 frozen;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no ATRS #364 population wake;
+- no DWP contact;
+- next hostile case should preferably test **anonymous/automated aggregate action where no human reviewer is naturally present**, to challenge whether reviewer itself can be optional or distributed.
+
+Current disposition:
+
+**WITNESS QUESTION SURVIVED / EPISTEMIC CEILING SHARPENED / NO NEW DIMENSION / NO PATCH.**
+
+Coordination record: COM #583.
+
