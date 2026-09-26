@@ -86,6 +86,45 @@ PREPRINT DATA RECHECK AFTER PUBLICATION
 
 Preprint -> final-publication pairs remain useful **historical/calibration/test fixtures** because they supply known same-lineage source transitions. They must not be used as evidence that living-guideline teams lack a route for this class.
 
+## Dataset-version subtraction — identity/provenance is already strongly owned
+
+Current infrastructure already owns much of dataset-version identity:
+
+- **DataCite** recommends updating DOI metadata for minor versions and assigning/linking a new DOI for major versions. Its relation vocabulary includes `IsPreviousVersionOf`, `IsNewVersionOf`, `HasVersion` and `IsVersionOf`, and its metadata provenance records changes.
+- **Figshare** versions public items/collections, keeps prior versions visible, gives each version a DOI, and uses a base DOI that resolves to the latest public version.
+- **Zenodo** creates a new immutable record/persistent identifier for a new file version and links versions so a citation to a specific version remains stable.
+- **W3C PROV** already owns generic revision provenance through `wasRevisionOf`.
+
+Owner surfaces:
+- https://support.datacite.org/docs/versioning
+- https://info.figshare.com/user-guide/how-versioning-works/
+- https://help.zenodo.org/docs/deposit/manage-versions/
+- https://www.w3.org/ns/prov
+
+Figshare is also a **Digital Science solution**, making this subtraction directly relevant to the Catalyst application:
+- https://www.digital-science.com/products/figshare/
+
+Therefore:
+
+```text
+VERSIONED DATASET SUCCESSOR IDENTITY
+!= EVIDENCEWATCH GAP
+
+DATASET VERSION PROVENANCE
+!= EVIDENCEWATCH NOVELTY
+
+OWNER VERSION SIGNAL EXISTS
+!= DOWNSTREAM RELIANCE AUTOMATICALLY REOPENED
+```
+
+EvidenceWatch should consume trusted registry/repository version signals where available rather than model-guessing succession from text.
+
+The remaining dataset question is integration:
+- whether a version/change matters to the bounded relied-on claim;
+- whether it affects already-used extraction/synthesis/recommendation state;
+- whether the current workflow already routes that consequence cheaply;
+- what happens when version/currentness signals are incomplete, fragmented or disconnected from downstream work.
+
 ## Surviving residual
 
 The remaining falsifiable seam is narrower:
@@ -93,7 +132,7 @@ The remaining falsifiable seam is narrower:
 > Can an agent catch a material change to an **already-relied-on source** that is not already handled by the workflow's ordinary new-study, preprint-publication, retraction or formal-correction routes, then route only affected downstream work for human review?
 
 Examples may include:
-- dataset revision under a stable research object/lineage without a normal new-study/status event;
+- dataset/source revision whose owner version signal is absent, fragmented, or not connected to already-relied-on downstream work;
 - owner page or technical evidence revision after reliance;
 - source authority succession or corrected content not captured by standard publication/retraction/correction tooling.
 
