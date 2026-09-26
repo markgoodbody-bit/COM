@@ -261,6 +261,26 @@ HARNESS READY != LIVE RUN
 DRY RUN != PROVIDER EXECUTION
 PARTIAL RUN != COMPLETED 44-CASE RESULT
 ```
+## Frozen post-run unblinding scorer
+
+Offline scorer:
+`research/evidencewatch_retrospective/score_brierley_unblinded.py`
+
+Boundary note:
+`coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_UNBLIND_SCORER_20260926.md`
+
+The scorer is frozen before any model output exists.
+
+Headline scoring is strict failure-worst-case across all 44 cases:
+
+```text
+FAILED MAJOR-CHANGE CASE -> FALSE NEGATIVE
+FAILED NO-CHANGE CONTROL -> FALSE POSITIVE / REVIEW BURDEN
+```
+
+It also preserves raw-output and available-case-only secondary views, exact input SHA-256 identities, per-case error anatomy, relation/material-reason distributions, and the predeclared trivial-baseline operating-point comparison.
+
+Do not replace this scorer after seeing output and call the replacement the same preregistered run.
 ## Gate
 
 This contract authorises **preparation only**.
