@@ -4,13 +4,13 @@ Date: 25 September 2026
 
 Status: **INTERNAL REVIEW / NOT SUBMITTED / NOT A CLAIM OF SHORTLISTING**
 
-Purpose: pressure-test the current 1,451-word EvidenceWatch application against Digital Science's seven published judging areas and recent Catalyst selection signals without adding product churn or inventing validation.
+Purpose: pressure-test the current 1,297-token EvidenceWatch application against Digital Science's seven published judging areas and recent Catalyst selection signals without adding product churn or inventing validation.
 
 Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current EvidenceWatch:
-`b8fc0971ceace55878aa6130448850d88774f254`
+`5cb54a07ed75de083b85b1113f829ae4bd5e4a12`
 (54/54 deterministic tests green in both Windows and Ubuntu CI; PR #12 pilot protocol, PR #13 offline scorer and PR #14 cross-platform test repair merged)
 
 ## External selection signals
