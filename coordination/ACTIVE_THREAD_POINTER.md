@@ -165,7 +165,7 @@ Freeze after green.
 - PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`: it holds COM108 and Square acknowledgements until a completed failure-free run; hosted `campfire-ci` `36258366754` SUCCESS and independent Windows full discovery 114 PASS. Relay main remains #264 pending the Campfire-main adoption gate;
 - Production/install state unchanged by Framework; no service install or restart performed by Framework.
 
-### Answerability-route field sequence — nine cases / repaired surface + epistemic scar
+### Answerability-route field sequence — ten cases / saturated / extract teaching card
 
 - HMCTS BenchNotes: strong pre-finalisation human correction + wider post-finalisation route, but weak public binding between layers;
 - MoJ e-supervision: no formal appeal, but individual review trigger + reviewer + bounded consequence are publicly legible;
@@ -176,6 +176,7 @@ Freeze after green.
 - DEFRA / PackUK waste-cost stack: repaired surface survives upstream model QA + downstream PackUK decision + complaint + jurisdiction-specific external appeal; formal appeal at the decision layer does not equal direct contestability of each upstream model component.
 - DSIT Consult: **seven-question surface falsified** on diffuse/collective representation; affected consultation respondents may not observe their internal sentiment/topic mapping, so `AFFECTED != WITNESS != INITIATOR` is load-bearing.
 - DWP Urgent Journal Messages: witness question survives uncertain ground truth; model flag + agent judgement are bounded signals, not verified real-world harm state. Preserve `OBSERVABILITY != VERIFIABILITY` and `REFERENCE LABEL != PERFECT GROUND TRUTH`.
+- GOV.UK site search: no caseworker per ranking, but local user self-review + aggregate search-team quality review fit the same surface; `REVIEWER` is a functional evaluator at the affected layer, and `LOCAL USER ADAPTATION != SYSTEM CORRECTION`.
 
 Current preferred teaching questions:
 
@@ -203,7 +204,7 @@ ROUTE LEGIBLE AT LAYER N != ROUTE CONNECTED TO LAYER N+1
 TEACHING SURFACE REPAIR != TRACE / ME PRIMITIVE
 ```
 
-Latest field record: COM #583 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Keep ATRS #364 frozen; no population result or contact. Next hostile case should preferably test an anonymous/automated aggregate route where no natural case-level human reviewer exists, to see whether `REVIEWER` can legitimately be none/distributed.
+Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case ATRS answerability sequence is **saturated / STOP by default**. Next action is extract one compact provisional teaching card; do not wake ATRS #364 or continue nearby case accumulation unless a materially novel topology appears.
 ### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
