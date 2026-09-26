@@ -79,7 +79,7 @@ Audience:
 ## Current evidence
 
 - working Node.js prototype;
-- 54 deterministic tests / Windows + Ubuntu CI green;
+- 59 deterministic tests / Windows + Ubuntu CI green;
 - append-only state and restart reconstruction;
 - correction / disagreement / source-loss / candidate-quarantine behavior;
 - CSL-JSON handoff;
