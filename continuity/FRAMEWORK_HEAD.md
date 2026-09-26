@@ -50,7 +50,7 @@ NEXT = WORLD / REAL USE
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
 Updated: **26 September 2026 — fresh answerability-route field sequence / EvidenceWatch gates current**
 Rule: later live source and direct Mark direction win.
-Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged.
+Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged. Provisional extraction: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — **NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED**.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
