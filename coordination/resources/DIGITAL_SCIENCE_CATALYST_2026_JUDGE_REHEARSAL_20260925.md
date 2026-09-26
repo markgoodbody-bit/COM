@@ -10,8 +10,8 @@ Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current EvidenceWatch:
-`5cb54a07ed75de083b85b1113f829ae4bd5e4a12`
-(54/54 deterministic tests green in both Windows and Ubuntu CI; PR #12 pilot protocol, PR #13 offline scorer and PR #14 cross-platform test repair merged)
+`f08e35086a3a6b7c16de72f42f060d47b0ab1ae7`
+(54/59 deterministic tests green in both Windows and Ubuntu CI; PR #12 pilot protocol, PR #13 offline scorer and PR #14 cross-platform test repair merged)
 
 ## External selection signals
 
@@ -175,7 +175,7 @@ The first commercial question is not price; it is whether the workflow saves rev
 
 Strongest evidence:
 - working Node.js prototype;
-- 54 deterministic tests green on both Windows and Ubuntu CI;
+- 59 deterministic tests green on both Windows and Ubuntu CI;
 - append-only/restart behavior;
 - live one-watch/two-run model witness;
 - deterministic research-shaped browser demo;
