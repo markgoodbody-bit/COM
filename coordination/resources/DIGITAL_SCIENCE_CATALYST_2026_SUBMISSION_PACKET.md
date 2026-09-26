@@ -14,7 +14,7 @@ Owner source rechecked 26 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current exact proposal-body count:
-**1,331 whitespace-delimited words / 1,369 word-like tokens**
+**1,362 whitespace-delimited words / 1,405 word-like tokens**
 
 Final submission-editor recount remains required.
 
@@ -70,7 +70,7 @@ Formal retraction/correction handling is not the gap. Zotero and Crossmark expos
 
 The residual is narrower: can a small agent catch material changes outside those well-owned paths and route only affected downstream work for human review?
 
-A public baseline from the University of Bern shows this is recurring work: its living review ran weekly automated searches that added 100–200 records, checked preprint publication status in each update, and re-extracted data when content changed. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. Existing practice can handle this. The unknown is whether EvidenceWatch reduces reviewer burden without adding unacceptable misses or false alerts. Sources: https://doi.org/10.1186/s13643-023-02325-y and https://doi.org/10.1016/j.cmi.2020.06.013
+A public baseline from the University of Bern shows this is recurring work: its living review ran weekly automated searches that added 100–200 records, checked preprint publication status in each update, and re-extracted data when content changed. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. A separate six-review evaluation reported 3–300 citations screened and 5 minutes–32 hours of author-team work per month. That is total living-review workload, not the narrower burden EvidenceWatch might reduce. Existing practice can handle this; the pilot must measure whether EvidenceWatch reduces reviewer burden without adding unacceptable misses or false alerts. Sources: https://doi.org/10.1186/s13643-023-02325-y, https://doi.org/10.1016/j.cmi.2020.06.013 and https://doi.org/10.1186/s13643-019-1248-5
 
 ## 2. YOUR WORKFLOW
 
