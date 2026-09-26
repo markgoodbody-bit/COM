@@ -193,8 +193,8 @@ Current reference-manager state:
 - CSL-JSON file handoff only;
 - no live Zotero or ReadCube integration.
 
-Proposed first host:
-**Zotero**, but using Zotero's own API v3/local-API/object-version machinery rather than building parallel sync.
+Proposed host rule:
+Use the pilot team's existing reference/evidence system. **Zotero** is the concrete substrate studied so far because its API v3/local API and object-version machinery let Stage 1 stay read-only rather than rebuild sync; it is not a required host. A stronger partner workflow, including ReadCube or EPPI-Reviewer, should win.
 
 Stage 1 begins read-only:
 - bind owner source-state/currentness signals to items in one existing library;
@@ -308,9 +308,9 @@ Best answer:
 
 > "Version identity is largely solved for well-versioned repositories. The question is whether the version signal reaches the exact evidence object already relied upon and whether that consequence is routed to the affected work. EvidenceWatch should consume DataCite/Figshare signals, not compete with them."
 
-### "Why Zotero?"
+### "Why mention Zotero?"
 
-> "It is a plausible first host because it is already present in research workflows and exposes mature API/local-API and object-version primitives. Stage 1 can therefore be read-only and focus on the actual hypothesis rather than rebuilding sync. If the partner uses a stronger host, we should use that instead."
+> "It is the concrete substrate I have studied because its mature API/local-API and object-version primitives let a Stage 1 adapter stay read-only. It is not a requirement for the pilot. The useful host is whatever system the real team already uses; if Digital Science or the partner has a stronger route through ReadCube, EPPI-Reviewer or another platform, use that instead."
 
 ### "What makes this agentic rather than a script?"
 
@@ -318,7 +318,7 @@ Best answer:
 
 ### "Show me something it refuses."
 
-> "A derivative source cannot overwrite canonical owner state. A discovered candidate cannot gain authority automatically. Source unreachability does not become evidence that the claim is false. Stage 1 Zotero integration is read-only until benefit and authority are established."
+> "A derivative source cannot overwrite canonical owner state. A discovered candidate cannot gain authority automatically. Source unreachability does not become evidence that the claim is false. Stage 1 host integration is read-only until benefit and authority are established."
 
 ### "What does £5,000 Stage 1 buy?"
 
