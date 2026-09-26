@@ -135,7 +135,7 @@ The release lane is closed. Beta PRs are closed with branches/history preserved.
 
 ### EvidenceWatch retrospective Brierley execution
 
-Status: **SELECTION + BLINDING + RUN CONTRACT FROZEN / NOT RUN / PROVIDER-RESOURCE GATE**.
+Status: **SELECTION + BLINDING + RUN CONTRACT FROZEN / NOT RUN / NVIDIA CREDENTIAL + QUOTA GATE**.
 
 Frozen objects:
 - challenge protocol: `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_CHALLENGE_20260926.md`;
@@ -157,7 +157,7 @@ ABSTRACT_MAJOR_CHANGE != CLINICAL / REVIEW MATERIALITY
 RETROSPECTIVE_DISCRIMINATION != REVIEWER TIME SAVED
 ```
 
-Actual execution consumes provider resources and remains a separate consequential/spend gate. Do not patch/tune the pinned source against this set and then report the same set as untouched validation.
+Actual execution uses NVIDIA's currently advertised free Developer Program prototype/research endpoint, so no monetary charge is established; it still consumes account quota/rate-limit capacity and requires Mark's NVIDIA credential. Preserve: `FREE ENDPOINT != UNLIMITED QUOTA` and `PROVIDER RESOURCE / CREDENTIAL GATE != DEMONSTRATED MONETARY SPEND GATE`. Do not patch/tune the pinned source against this set and then report the same set as untouched validation.
 
 ### Digital Science Catalyst Grant 2026
 
