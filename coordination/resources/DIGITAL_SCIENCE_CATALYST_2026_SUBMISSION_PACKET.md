@@ -191,6 +191,7 @@ Before submission:
 - confirm the staged £5k / £14k / £6k budget;
 - check that no field requires an unsupported company, customer, revenue, academic-affiliation, pilot-partner or user claim;
 - keep submitted narrative to project-authored prose and links; do not paste third-party abstracts, screenshots or proprietary source material into the form; Digital Science's general Site Terms grant a broad licence over submitted Content, while Catalyst-specific award/IP terms remain uninspected;
+- historical Catalyst material from 2014/2016 suggests a low-string/no-IP-claim posture, but do not rely on that history if the 2026 form or award agreement says otherwise;
 - submit only after Mark explicitly releases the final form.
 
 Live form / privacy check — 25 September 2026:
@@ -205,6 +206,7 @@ Preserve:
 ```text
 PUBLIC PRIVACY NOTICE REVIEWED != APPLICATION-SPECIFIC AWARD TERMS REVIEWED
 GENERAL SITE CONTENT LICENCE REVIEWED != CATALYST-SPECIFIC IP / AWARD TERMS REVIEWED
+HISTORICAL CATALYST LOW-STRING / NO-IP PRACTICE != 2026 CONTRACT
 FORM PAGE 1 REACHED != LATER FIELDS INSPECTED
 EMAIL FIELD VISIBLE != IDENTITY DISCLOSED
 ```
