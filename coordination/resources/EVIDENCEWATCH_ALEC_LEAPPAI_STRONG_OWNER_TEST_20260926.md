@@ -25,11 +25,12 @@ Owner surfaces:
 
 > In your current living-guideline workflow, do already-relied-on sources materially change outside the normal new-study, retraction and formal-correction routes often enough to create measurable human maintenance burden?
 
-Examples might include:
-- preprint -> final publication where extracted findings materially change;
-- dataset revisions under the same research lineage;
+ALEC's own Living Guidelines Handbook already explicitly owns preprint -> peer-reviewed publication monitoring and data recheck. Do **not** present that route as the gap.
+
+The residual examples to test are therefore narrower:
+- dataset revisions under the same research lineage that do not arrive as an ordinary new-study/status event;
 - revised owner/technical pages after evidence has already been relied upon;
-- source authority succession where the same evidentiary root changes state without appearing as a new independent study.
+- source authority succession or corrected content not captured by the workflow's standard publication, retraction or formal-correction routes.
 
 Do not assume these examples are common or currently missed.
 
@@ -40,7 +41,8 @@ If the residual class exists, ask how LEAPP-AI / the surrounding workflow alread
 1. **Detection**
    - What mechanisms surface the change today?
    - Which changes are already caught by ordinary search/update tooling?
-   - Which are caught by Crossref/Crossmark, retraction systems, reference managers, EPPI/MAGIC-like infrastructure, or human review?
+   - Treat preprint -> publication surveillance/data recheck as already owned by ALEC guidance; ask instead about revisions that fall outside that route.
+   - Which remaining changes are caught by Crossref/Crossmark, retraction systems, reference managers, EPPI/MAGIC-like infrastructure, or human review?
 
 2. **Lineage / authority**
    - Does the workflow preserve that a successor source and an earlier source share one evidentiary root?
