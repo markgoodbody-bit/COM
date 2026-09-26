@@ -4,7 +4,7 @@ Date: 25 September 2026
 
 Status: **FORM-READY COPY / NOT SUBMITTED / HUMAN TERMS + IDENTITY + FINAL SUBMIT GATE**
 
-Owner source rechecked 25 September 2026:
+Owner source rechecked 26 September 2026:
 - theme: **Agentic workflows you can trust**
 - open globally to individuals, startups and research teams;
 - prototype / working product / well-formed concept accepted;
@@ -13,8 +13,10 @@ Owner source rechecked 25 September 2026:
 - proposal maximum **1,500 words**;
 - shortlisted applicants may be invited to a short interview with a live demo.
 
-Current proposal word count:
-**1297 words**
+Current exact proposal-body count:
+**1,331 whitespace-delimited words / 1,369 word-like tokens**
+
+Final submission-editor recount remains required.
 
 Current EvidenceWatch private main:
 `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
@@ -30,6 +32,9 @@ Latest EvidenceWatch main change:
 
 Engineering witness:
 `coordination/build_ledger/EVIDENCEWATCH_RESEARCH_HANDOFF_WITNESS_20260925.md`
+
+Owner-test matrix:
+`coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_OWNER_TEST_20260926.md`
 
 Selectable synthetic research demo receipt:
 `coordination/build_ledger/EVIDENCEWATCH_SELECTABLE_RESEARCH_DEMO_20260925.md`
@@ -65,7 +70,7 @@ Formal retraction/correction handling is not the gap. Zotero and Crossmark expos
 
 The residual is narrower: can a small agent catch material changes outside those well-owned paths and route only affected downstream work for human review?
 
-The University of Bern living review already checked included preprints for journal publication and re-extracted changed data. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. The maintenance task is real and existing practice handles it; whether automation reduces burden is the pilot question. Sources: https://doi.org/10.1186/s13643-023-02325-y and https://doi.org/10.1016/j.cmi.2020.06.013
+A public baseline from the University of Bern shows this is recurring work: its living review ran weekly automated searches that added 100–200 records, checked preprint publication status in each update, and re-extracted data when content changed. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. Existing practice can handle this. The unknown is whether EvidenceWatch reduces reviewer burden without adding unacceptable misses or false alerts. Sources: https://doi.org/10.1186/s13643-023-02325-y and https://doi.org/10.1016/j.cmi.2020.06.013
 
 ## 2. YOUR WORKFLOW
 
@@ -138,10 +143,14 @@ If a stronger workflow already does this, or the residual change class is too ra
 
 The next stage is a bounded workflow-integration pilot.
 
-One living systematic review team would use its existing reference library. Because Cochrane and related workflows already own surveillance and important correction routes, the pilot would isolate residual changes and compare EvidenceWatch with existing practice on a pre-labelled set, measuring:
+One living systematic review team would use its existing reference library. Because Cochrane and related workflows already own surveillance and important correction routes, the pilot would isolate residual changes and compare EvidenceWatch with existing practice on a pre-labelled set.
+
+Primary outcome: **reviewer minutes per correctly handled material-change episode versus existing practice**.
+
+Secondary outcomes:
 - time to flag affected work;
 - missed material changes and false alerts;
-- reviewer, setup and maintenance minutes;
+- setup and maintenance minutes;
 - whether users can reconstruct why an alert happened without trusting the model.
 
 Stop or narrow if maintenance exceeds saved review time, residual changes are too rare, existing practice performs as well, or misses are unacceptable.
