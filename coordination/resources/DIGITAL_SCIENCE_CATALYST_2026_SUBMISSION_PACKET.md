@@ -14,7 +14,7 @@ Owner source rechecked 26 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current exact proposal-body count:
-**1,362 whitespace-delimited words / 1,405 word-like tokens**
+**1,409 whitespace-delimited words / 1,465 word-like tokens**
 
 Final submission-editor recount remains required.
 
@@ -132,6 +132,7 @@ Stronger owners remove most mechanism novelty:
 
 - **Crossref/Europe PMC, Zotero/Crossmark and Cochrane** own preprint-publication linking, formal status and important correction-to-review paths: https://www.crossref.org/documentation/research-nexus/posted-content-includes-preprints/ and https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
 - **ReadCube and scite** own literature monitoring, shared libraries, review workflows, citation context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
+- **EPPI-Reviewer** already links Zotero libraries and uses OpenAlex-based auto-update suggestions for living reviews; **MAGICapp** already supports structured guideline updating with audit trails and current living-guideline surveillance; **ALEC/Monash** is developing an AI-supported Living Evidence Architecture. These are direct subsumption tests, not validation targets: https://eppi.ioe.ac.uk/cms/er4/help/openalex-in-eppi-reviewer/keeping-a-review-up-to-date-auto-update, https://www.magicevidence.org/magicapp/ and https://www.monash.edu/mada/research/project/living-evidence-architecture
 - **Refract** owns reproducible source-change events; **AIEP P170** specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
 - Digital Science's **PostPub/VIRUS** track integrity events/downstream impact; **Perma.cc** preserves relied-on web states.
 

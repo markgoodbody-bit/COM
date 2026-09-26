@@ -115,7 +115,7 @@ Canonical copy:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current proposal:
-**Current exact proposal body: 1,362 whitespace-delimited words / 1,405 word-like tokens / nine required 2026 headings. Recount in the submission editor before final submit.**
+**Current exact proposal body: 1,409 whitespace-delimited words / 1,465 word-like tokens / nine required 2026 headings. Recount in the submission editor before final submit.**
 
 ## Budget
 
