@@ -31,7 +31,7 @@ def clean_text(value: str) -> str:
 
 
 def load_all_pairs(path: Path) -> dict[str, dict]:
-    with path.open(newline="", encoding="utf-8-sig") as handle:
+    with path.open(newline="", encoding="cp1252") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         rows: dict[str, dict] = {}
         for row in reader:
