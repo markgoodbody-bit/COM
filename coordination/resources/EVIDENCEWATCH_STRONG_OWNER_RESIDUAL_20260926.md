@@ -125,6 +125,44 @@ The remaining dataset question is integration:
 - whether the current workflow already routes that consequence cheaply;
 - what happens when version/currentness signals are incomplete, fragmented or disconnected from downstream work.
 
+## Web-state subtraction — change detection/preservation is already strongly owned
+
+Generic web-page change detection and prior-state preservation also have stronger owners:
+
+- **Memento / RFC 7089** defines time-based access to prior states of web resources.
+- **Perma.cc** preserves cited web pages so relied-on content remains retrievable even if the live source changes or disappears.
+- **changedetection.io** provides scheduled web-page monitoring, timestamped change history, alerts and an API for managing watches.
+- **Visualping** provides scheduled page monitoring, before/after comparisons, API/workflow integrations and AI-assisted importance filtering.
+
+Owner surfaces:
+- https://www.rfc-editor.org/info/rfc7089/
+- https://perma.cc/about
+- https://changedetection.io/
+- https://changedetection.io/docs/api_v1/
+- https://visualping.io/
+
+Therefore:
+
+```text
+WEB PAGE CHANGED
+!= EVIDENCEWATCH GAP
+
+WEB STATE PRESERVATION
+!= EVIDENCEWATCH NOVELTY
+
+CHANGE ALERT
+!= RELIED-ON DOWNSTREAM CONSEQUENCE
+```
+
+EvidenceWatch should consume stronger web-change/history signals where practical rather than re-claiming generic page monitoring.
+
+The remaining web-source question is the same integration question:
+- was this exact source/state actually relied upon;
+- does the change alter the bounded proposition or evidence state that mattered;
+- which already-relied-on extraction/synthesis/brief/recommendation depends on it;
+- is reopening that downstream work worth the human burden;
+- does the existing workflow already answer those questions adequately.
+
 ## Surviving residual
 
 The remaining falsifiable seam is narrower:
@@ -133,7 +171,7 @@ The remaining falsifiable seam is narrower:
 
 Examples may include:
 - dataset/source revision whose owner version signal is absent, fragmented, or not connected to already-relied-on downstream work;
-- owner page or technical evidence revision after reliance;
+- owner/technical-source revision where a change/history signal exists but is not connected to the specific downstream work that relied on the prior state;
 - source authority succession or corrected content not captured by standard publication/retraction/correction tooling.
 
 Existing EvidenceWatch machinery can represent this seam, but representation is not evidence that it saves work.
