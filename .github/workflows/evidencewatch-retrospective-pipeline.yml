@@ -86,6 +86,9 @@ jobs:
           assert packet['status'] == 'BLINDED_INPUT_NO_OWNER_LABELS'
           assert packet['case_count'] == 44
           assert len(packet['cases']) == 44
+          import hashlib
+          assert hashlib.sha256(open('/tmp/brierley_packet.json','rb').read()).hexdigest() == 'f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc'
+          assert hashlib.sha256(open('/tmp/brierley_key.json','rb').read()).hexdigest() == '75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9'
           assert all(set(row) == {'case_id','preprint_abstract','published_abstract'} for row in packet['cases'])
 
           labels=Counter(row['owner_label'] for row in key['cases'])
@@ -222,7 +225,7 @@ jobs:
               'started_at':'2000-01-01T00:00:00.000Z',
               'completed_at':'2000-01-01T00:01:00.000Z',
               'evidencewatch':{'commit':'synthetic-contract-test'},
-              'packet':{'sha256':'synthetic','case_count':44},
+              'packet':{'sha256':'f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc','case_count':44},
               'provider':{
                   'model':'synthetic-contract-test',
                   'endpoint':'none',
