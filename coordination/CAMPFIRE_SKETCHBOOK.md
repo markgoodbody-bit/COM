@@ -3642,3 +3642,151 @@ Current disposition:
 
 Coordination record: COM #599.
 
+## 26 September 2026 — Project Nectar: stopping a pilot can be evidence of a functioning learning loop
+
+Status: **WORLD / REAL USE POSITIVE CONTROL / PILOT STOP / NO VENDOR OR POLICING VERDICT / NO PROJECT DELTA**
+
+Primary/supporting surfaces:
+- East Midlands Special Operations Unit (EMSOU), 11 July 2025:
+  https://www.rocu.police.uk/news/2025/july/police-pilot-advanced-data-platform-to-tackle-serious-and-organised-crime/
+- Police Professional, 23 September 2026, quoting EMSOU:
+  https://policeprofessional.com/news/five-police-forces-drop-palantir-pilot-as-funding-ends/
+
+Bounded public state:
+
+The East Midlands pilot was explicitly framed as a test of whether an advanced data platform could:
+- provide a unified view across existing information;
+- automate manual processes;
+- improve operational response/investigation/resource use.
+
+In September 2026, EMSOU said that after the scoping work and assessment of what the project would deliver, considered alongside future funding streams, it had decided not to take the project further.
+
+Home Office funding for the pilot was also discontinued.
+
+Other Palantir/policing deployments or pilots elsewhere are separate cases.
+
+Therefore:
+
+```text
+ONE PILOT STOP
+!=
+UNIVERSAL PRODUCT FAILURE
+
+FUNDING ENDED
+!=
+TECHNICAL FAILURE PROVED
+
+PROJECT NOT CONTINUED
+!=
+NO LEARNING OCCURRED
+```
+
+## Why this matters to the project
+
+Our own build discipline repeatedly says:
+
+```text
+BUILD
+-> OBSERVE
+-> CORRECT
+-> STOP IF SUBSUMED / LOW VALUE / WRONG FIT
+```
+
+A common failure mode is to treat a started pilot as an implicit promise to continue.
+
+This case is a useful positive control against that momentum.
+
+```text
+PILOT STARTED
+!= VALUE ESTABLISHED
+
+TECHNICALLY PLAUSIBLE
+!= CONTINUE
+
+TIME / EFFORT ALREADY SPENT
+!= REASON TO EXTEND
+
+STOP AFTER EVIDENCE
+CAN BE
+A SUCCESSFUL LEARNING OUTCOME
+```
+
+The interesting object is not Palantir as a company.
+
+It is the decision structure:
+
+```text
+HYPOTHESISED OPERATIONAL BENEFIT
+-> TIME-BOUNDED PILOT
+-> OBSERVED / SCOPED VALUE
++ FUTURE RESOURCE CONSTRAINT
+-> CONTINUE OR STOP
+```
+
+The stop can be rational even if:
+- the technology works technically;
+- some users liked it;
+- some benefits exist;
+- another organisation reaches a different result.
+
+## Mechanical Ethics / TRACE relation
+
+No new semantic structure is required.
+
+TRACE can already keep distinct:
+- intended purpose;
+- observed evidence;
+- resources/constraints;
+- decision authority;
+- local result;
+- uncertainty about transfer elsewhere.
+
+Mechanical Ethics can already represent:
+- burden/cost of continuation;
+- distribution of benefits and exposure;
+- opportunity cost;
+- correction/stop as a reachable action.
+
+The useful anti-drift relation is:
+
+```text
+SUNK EFFORT
+!= CONTINUATION DUTY
+```
+
+## Ceilings
+
+Do not infer:
+- that the pilot provided no benefit;
+- that the software was technically deficient;
+- that funding was the only reason for stopping;
+- that procurement concerns determined this specific EMSOU decision;
+- that another force should reach the same conclusion;
+- that Palantir's broader public-sector work is justified or unjustified by this one result.
+
+This is a local stop decision, not a political/vendor ranking.
+
+## Project consequence
+
+Use as a positive control when our own prototypes or research lanes reach a stop condition.
+
+If an EvidenceWatch pilot, competition build, PSFH feature, Relay experiment or other project object does not clear its declared value/burden gate:
+
+```text
+STOP
+!=
+WASTED WORK
+
+STOP
+=
+OBSERVATION CHANGED THE NEXT ACTION
+```
+
+No source patch, field schema or institutional contact is earned.
+
+Current disposition:
+
+**POSITIVE STOP CONTROL / KEEP IN CAMPFIRE / NO PATCH.**
+
+Coordination record: COM #601.
+
