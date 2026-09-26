@@ -149,7 +149,7 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite and Digital Science's own adjacent work own major component mechanisms;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
 - EvidenceWatch current private main is `b8fc0971ceace55878aa6130448850d88774f254`; PR #7 CSL handoff, PR #8 DOI repair, PR #9 controlled witness, PR #12 pilot protocol, PR #13 offline scorer and PR #14 Windows-path/cross-platform-CI repair are merged; 54/54 tests pass in both Windows and Ubuntu jobs; handoff remains file-based, not a live Zotero/ReadCube integration; no live research pilot exists.
-- COM #348 comment `5840522726` fixes the next evidence gate: obtain one willing living-review team's already-completed update-workflow specimen and measure its actual existing-practice baseline before another integration feature; no partner is established and no contact is authorised by the note.
+- **REAL PUBLIC WORKFLOW SPECIMEN FOUND / NO CODE DELTA** — University of Bern living review public history contains a Lombardi preprint->final transition where changed content caused re-extraction and the same study lineage fed Q1 synthesis; current EvidenceWatch already represents the authority/succession pattern. Receipt: `coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`. This does not satisfy the stronger gate: no willing current team, episode-specific minutes or measured EvidenceWatch value delta.
 - live application form reached; page 1 inspected (email); later fields and embedded terms remain unknown until the human form gate is crossed.
 
 ```text
