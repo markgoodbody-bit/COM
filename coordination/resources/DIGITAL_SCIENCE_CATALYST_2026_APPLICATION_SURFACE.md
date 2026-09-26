@@ -90,7 +90,7 @@ Tests:
 
 Current scope:
 - one living systematic review team as first user type;
-- Zotero as first proposed integration target;
+- pilot host follows the team's existing reference/evidence system; Zotero is the current concrete studied read-only substrate, not a privileged future host; ReadCube/EPPI/other stronger hosts remain valid subsumption tests;
 - no pilot partner claimed;
 - CSL JSON file handoff exists;
 - no live Zotero/ReadCube integration claimed;
