@@ -22,6 +22,24 @@ Use only the already frozen scored result:
 
 Do not substitute available-case metrics for the headline decision.
 
+## Integrity prerequisite
+
+Before any substantive route, require all three frozen lexical metrics, complete
+22-positive / 22-control coverage, finite per-row scores, and ROC/AUC summaries
+consistent with those rows. Missing or malformed comparator evidence is a scoring
+integrity failure, not a surviving signal. The scorer rejects invalid baseline
+inputs; the route function returns `INVALID_OR_UNSCORABLE` for incomplete or
+invalid operating-point comparisons.
+
+The always-quiet ROC endpoint has zero sensitivity and zero false-alert rate.
+It remains a valid comparator when no observed threshold qualifies at zero false
+alerts. Its `threshold: null` denotes that endpoint, not missing evidence.
+
+These checks establish internal consistency, not independent authentication of
+the per-row scores. The pinned owner-data reconstruction remains required.
+This repair changes neither the selected cases nor the model, and produces no
+model result. It is not a fourth substantive interpretation of a completed run.
+
 ## Route 1 — provider / analysis failure
 
 If **any** case has a provider or analysis failure:
