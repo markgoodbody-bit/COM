@@ -215,7 +215,7 @@ Freeze after green; reopen on concrete failure or deliberate promotion work.
 ### Relay COMSYNC maintenance — through PR #261 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is now `73cfcbd4d583e575fc36f604f30448b1532bed81`; #260 adds `+` / `&` / `and` joiners to the measured CC address forms and makes the existing "closed by speaking" blind region explicit; #261 separates repository source/tag/release evidence from installed-runtime claims; exact-head and post-merge `campfire-ci` are SUCCESS;
+- Relay main is now `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; post-merge `campfire-ci` `36237314991` SUCCESS;
 - Simple-v1 #258's unattended MODEL operation was a boundary mistake and is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge Simple-v1 CI SUCCESS;
 - COM #76 records that Mark separately corrected the live `cc-relay` self-declared model to `claude-opus-5-5` through a one-off human-operated request; the correction is not retroactive and Framework did not use the credential;
 - consolidated receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
