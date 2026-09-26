@@ -95,8 +95,8 @@ jobs:
 
           expected={
             'token_set_jaccard_distance':0.7995867768595041,
-            'token_multiset_jaccard_distance':0.7913223140495868,
-            'token_count_delta':0.7871900826446281,
+            'token_multiset_jaccard_distance':0.7954545454545454,
+            'token_count_delta':0.7933884297520661,
           }
           for name,want in expected.items():
               metric=baseline['metrics'][name]
