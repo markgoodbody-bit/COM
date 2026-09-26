@@ -150,10 +150,10 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #260 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #261 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is `4e7bdf95fee04638fe5b5ae84147f97c39a84d72`; #260 widens the measured CC address joiners and prints the temporal speaking-accounting blind region + token-safe explicit-name subset without calling either answered; post-merge `campfire-ci` `36201956876` SUCCESS;
+- Relay main is `73cfcbd4d583e575fc36f604f30448b1532bed81`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; post-merge `campfire-ci` `36236969264` SUCCESS;
 - Simple-v1 #258's unattended MODEL operation is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge run `36201678876` SUCCESS;
 - COM #76 records a separate human-operated live correction of `cc-relay` to `claude-opus-5-5`; historical comment stamps are not retroactively rewritten;
 - receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
