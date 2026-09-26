@@ -37,7 +37,7 @@ Formal retraction/correction handling is not the gap. Zotero and Crossmark expos
 
 The residual is narrower: can a small agent catch material changes outside those well-owned paths and route only affected downstream work for human review?
 
-A 2016 PLOS ONE study found textual drift in over 75% of comparable archived/live web references, but that does not establish consequential change. Whether residual changes are frequent enough to justify another monitor is a pilot question. Source: https://doi.org/10.1371/journal.pone.0167475
+A public University of Bern living-review workflow shows this maintenance is real and already partly solved: reviewers checked included preprints for journal publication and re-extracted data when content changed. In one Lombardi study, the preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139 persistently asymptomatic. Whether automating this residual work reduces reviewer burden is the pilot question. Sources: https://doi.org/10.1186/s13643-023-02325-y and https://doi.org/10.1016/j.cmi.2020.06.013
 
 ## 2. YOUR WORKFLOW
 
@@ -97,7 +97,7 @@ https://pleasestartfromhere.com/
 
 Stronger owners remove most of the mechanism as a novelty claim:
 
-- **Zotero, Crossmark and Cochrane** own formal status and important retraction/correction-to-review paths: https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
+- **Crossref, Europe PMC, Zotero, Crossmark and Cochrane** own preprint-to-publication linking, formal status and important retraction/correction-to-review paths: https://www.crossref.org/documentation/research-nexus/posted-content-includes-preprints/ and https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
 - **ReadCube and scite** own literature monitoring, shared libraries, systematic-review workflows, citation synchronisation/context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
 - **Refract** owns reproducible semantic change events from versioned public sources; **AIEP P170** already specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
 - Digital Science's **PostPub/VIRUS** track integrity events and downstream impact; **Perma.cc** preserves the relied-on web state.
