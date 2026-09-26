@@ -40,6 +40,9 @@ The harness requires:
 
 It records the packet SHA-256 before execution.
 
+For this frozen v2 run it also requires the exact packet SHA-256:
+`f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc`.
+
 ## Dry-run default
 
 Without `--live`, the harness:
