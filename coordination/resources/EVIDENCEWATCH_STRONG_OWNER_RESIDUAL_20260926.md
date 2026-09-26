@@ -64,17 +64,38 @@ Owner surface:
 
 Do not position EvidenceWatch as a general living-evidence architecture.
 
+## ALEC subtraction — preprint currentness is explicitly owned
+
+ALEC's Living Guidelines Handbook v1.1 explicitly advises guideline developers who use preprints to:
+- implement literature-surveillance measures to identify when the article is published in a peer-reviewed journal;
+- document a priori how preprints are monitored;
+- recheck and incorporate the data once peer-reviewed data are published.
+
+Owner surface:
+- https://livingevidence.org.au/wp-content/uploads/Living-Guidelines-Handbook-v1.1-Aug2025.pdf
+
+Therefore:
+
+```text
+PREPRINT -> PEER-REVIEWED PUBLICATION MONITORING
+!= EVIDENCEWATCH GAP
+
+PREPRINT DATA RECHECK AFTER PUBLICATION
+!= EVIDENCEWATCH NOVELTY
+```
+
+Preprint -> final-publication pairs remain useful **historical/calibration/test fixtures** because they supply known same-lineage source transitions. They must not be used as evidence that living-guideline teams lack a route for this class.
+
 ## Surviving residual
 
 The remaining falsifiable seam is narrower:
 
-> Can an agent catch a material change to an **already-relied-on source** when it arrives as neither a new study nor a formal status event, then route only affected downstream work for human review?
+> Can an agent catch a material change to an **already-relied-on source** that is not already handled by the workflow's ordinary new-study, preprint-publication, retraction or formal-correction routes, then route only affected downstream work for human review?
 
 Examples may include:
-- preprint -> final-authoritative publication where substantive content changes;
-- dataset revision under a stable research object/lineage;
+- dataset revision under a stable research object/lineage without a normal new-study/status event;
 - owner page or technical evidence revision after reliance;
-- source authority succession or corrected content not captured by formal retraction/correction tooling.
+- source authority succession or corrected content not captured by standard publication/retraction/correction tooling.
 
 Existing EvidenceWatch machinery can represent this seam, but representation is not evidence that it saves work.
 
