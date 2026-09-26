@@ -204,7 +204,7 @@ ROUTE LEGIBLE AT LAYER N != ROUTE CONNECTED TO LAYER N+1
 TEACHING SURFACE REPAIR != TRACE / ME PRIMITIVE
 ```
 
-Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case ATRS answerability sequence is **saturated / STOP by default**. Extracted provisional card: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED. Next useful test is one materially different non-ATRS transfer; do not continue nearby ATRS case accumulation.
+Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case ATRS answerability sequence is **saturated / STOP by default**. Extracted provisional card: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED. Non-ATRS Relay authority transfer COM #589 / `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md` = PASS WITH CEILINGS / no new dimension. **STOP this lane by default; one transfer != validation.**
 ### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;

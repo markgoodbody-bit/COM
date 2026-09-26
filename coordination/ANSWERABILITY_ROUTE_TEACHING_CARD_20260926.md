@@ -327,6 +327,33 @@ The teaching surface was not drafted top-down. It was changed by real public cas
 
 The case count is ten substantive field cases plus the intermediate synthesis at #568.
 
+## Non-ATRS transfer witness
+
+A deliberately different transfer test was run against the project's own Campfire Relay MODEL-authority mistake (#258 -> #259 / COM #589).
+
+The same route questions kept separate:
+- unattended source capability;
+- current live account/byline state;
+- already-written historical public stamps.
+
+The card represented the correction without a new field:
+
+```text
+SOURCE REVERT != LIVE ACCOUNT REVERT
+LIVE ACCOUNT CORRECTION != HISTORICAL REWRITE
+CAPABILITY != AUTHORITY
+CURRENTNESS REPAIR != PROVENANCE ERASURE
+```
+
+Transfer receipt:
+`coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md`
+
+This supports only a narrow portability observation:
+
+```text
+ONE NON-ATRS TRANSFER
+!= CROSS-DOMAIN VALIDATION
+```
 ## Current status
 
 The nearby ATRS example quarry is saturated.
