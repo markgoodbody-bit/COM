@@ -55,6 +55,9 @@ jobs:
       - name: Offline comparator integrity regressions
         run: python -m unittest discover -s research/evidencewatch_retrospective -p test_scorer_comparators.py -v
 
+      - name: Offline fail-fast branch execution
+        run: node --test research/evidencewatch_retrospective/test_failfast.mjs
+
       - name: Verify local runner pins current experiment blobs
         run: |
           python - <<'PY'
