@@ -52,6 +52,277 @@ jobs:
           node --check research/evidencewatch_retrospective/run_brierley_retrospective.mjs
           pwsh -NoProfile -Command "[void][scriptblock]::Create((Get-Content 'research/evidencewatch_retrospective/run-brierley-local.ps1' -Raw))"
 
+      - name: Verify local runner pins current experiment blobs
+        run: |
+          python - <<'PY'
+          import pathlib
+          import re
+          import subprocess
+
+          runner=pathlib.Path('research/evidencewatch_retrospective/run-brierley-local.ps1').read_text(encoding='utf-8')
+          pairs=dict(re.findall(r'^\s*"([^"]+)"\s*=\s*"([0-9a-f]{40})"\s*      - name: Reconstruct frozen challenge objects from pinned owner data
+        run: |
+          set -euo pipefail
+          MANIFEST="research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json"
+
+          python research/evidencewatch_retrospective/verify_brierley_manifest.py \
+            /tmp/brierley-owner/abstract_scoring.csv \
+            /tmp/brierley-owner/all_pairs.tsv \
+            "$MANIFEST"
+
+          python research/evidencewatch_retrospective/build_blinded_brierley_packet.py \
+            /tmp/brierley-owner/all_pairs.tsv \
+            "$MANIFEST" \
+            /tmp/brierley_packet.json \
+            /tmp/brierley_key.json
+
+          python research/evidencewatch_retrospective/score_trivial_baselines.py \
+            /tmp/brierley-owner/all_pairs.tsv \
+            "$MANIFEST" \
+            /tmp/brierley_baselines.json
+
+      - name: Assert frozen selection, blinding and lexical baseline
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+
+          packet=json.load(open('/tmp/brierley_packet.json', encoding='utf-8'))
+          key=json.load(open('/tmp/brierley_key.json', encoding='utf-8'))
+          baseline=json.load(open('/tmp/brierley_baselines.json', encoding='utf-8'))
+
+          assert packet['schema'] == 'evidencewatch-brierley-blinded-packet-v1'
+          assert packet['status'] == 'BLINDED_INPUT_NO_OWNER_LABELS'
+          assert packet['case_count'] == 44
+          assert len(packet['cases']) == 44
+          import hashlib
+          assert hashlib.sha256(open('/tmp/brierley_packet.json','rb').read()).hexdigest() == 'f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc'
+          assert hashlib.sha256(open('/tmp/brierley_key.json','rb').read()).hexdigest() == '75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9'
+          assert all(set(row) == {'case_id','preprint_abstract','published_abstract'} for row in packet['cases'])
+
+          labels=Counter(row['owner_label'] for row in key['cases'])
+          assert labels == {'ABSTRACT_MAJOR_CHANGE':22, 'ABSTRACT_NO_CHANGE':22}, labels
+
+          assert baseline['missing_owner_published_abstracts'] == []
+
+          expected={
+            'token_set_jaccard_distance':0.7995867768595041,
+            'token_multiset_jaccard_distance':0.7954545454545454,
+            'token_count_delta':0.7933884297520661,
+          }
+          for name,want in expected.items():
+              metric=baseline['metrics'][name]
+              assert metric['complete_positive_n'] == 22
+              assert metric['complete_control_n'] == 22
+              assert metric['missing_positive_n'] == 0
+              assert metric['missing_control_n'] == 0
+              assert abs(metric['auc'] - want) < 1e-12, (name,metric['auc'],want)
+
+          print('packet cases=',packet['case_count'])
+          print('labels=',dict(labels))
+          print('lexical complete cases=44')
+          print('lexical baseline assertions PASS')
+          PY
+
+      - name: Harness fails closed before provider access when pinned private checkout is absent
+        run: |
+          set -euo pipefail
+          set +e
+          OUT="$(
+            node research/evidencewatch_retrospective/run_brierley_retrospective.mjs \
+              --evidencewatch /tmp/not-present-evidencewatch \
+              --packet /tmp/brierley_packet.json \
+              --output /tmp/should-not-exist.json \
+              --ledger /tmp/should-not-exist.jsonl \
+              2>&1
+          )"
+          STATUS=$?
+          set -e
+          test "$STATUS" -ne 0
+          printf '%s\n' "$OUT" | grep -F 'EvidenceWatch checkout not found'
+          test ! -e /tmp/should-not-exist.json
+          test ! -e /tmp/should-not-exist.jsonl
+          echo "harness fail-closed pre-provider gate PASS"
+
+      - name: Build synthetic structural pre-unblind output
+        run: |
+          python - <<'PY'
+          import json
+
+          key=json.load(open('/tmp/brierley_key.json', encoding='utf-8'))
+          first_positive=next(r['case_id'] for r in key['cases'] if r['owner_label']=='ABSTRACT_MAJOR_CHANGE')
+          first_control=next(r['case_id'] for r in key['cases'] if r['owner_label']=='ABSTRACT_NO_CHANGE')
+
+          cases=[]
+          receipts=[]
+          for row in key['cases']:
+              cid=row['case_id']
+              positive=row['owner_label']=='ABSTRACT_MAJOR_CHANGE'
+              failed=cid in {first_positive, first_control}
+
+              baseline={
+                  'engine_status':'BASELINE_ESTABLISHED',
+                  'source_id':f'{cid}-preprint',
+                  'relation':'baseline',
+                  'current_state':{'status':'supported','quantity':None},
+                  'summary':'synthetic scorer-structure test',
+                  'material_reasons':[],
+                  'alert_kind':None,
+                  'error':None,
+                  'elapsed_ms':1,
+              }
+
+              if failed:
+                  successor={
+                      'engine_status':'ANALYSIS_FAILED',
+                      'source_id':f'{cid}-publication',
+                      'relation':None,
+                      'current_state':None,
+                      'summary':None,
+                      'material_reasons':[],
+                      'alert_kind':None,
+                      'error':'synthetic failure for scorer contract test',
+                      'elapsed_ms':1,
+                  }
+              elif positive:
+                  successor={
+                      'engine_status':'MATERIAL_DELTA',
+                      'source_id':f'{cid}-publication',
+                      'relation':'correction',
+                      'current_state':{'status':'supported','quantity':None},
+                      'summary':'synthetic positive',
+                      'material_reasons':['synthetic_material_reason'],
+                      'alert_kind':'correction',
+                      'error':None,
+                      'elapsed_ms':1,
+                  }
+              else:
+                  successor={
+                      'engine_status':'NO_MATERIAL_DELTA',
+                      'source_id':f'{cid}-publication',
+                      'relation':'baseline',
+                      'current_state':{'status':'supported','quantity':None},
+                      'summary':'synthetic control',
+                      'material_reasons':[],
+                      'alert_kind':None,
+                      'error':None,
+                      'elapsed_ms':1,
+                  }
+
+              cases.append({
+                  'case_id':cid,
+                  'baseline':baseline,
+                  'successor':successor,
+                  'prediction_review':successor['engine_status']=='MATERIAL_DELTA',
+                  'final_canonical_state':successor.get('current_state'),
+                  'alert_count':1 if successor['engine_status']=='MATERIAL_DELTA' else 0,
+              })
+              for phase in ('preprint','publication'):
+                  receipts.append({
+                      'case_id':cid,
+                      'phase':phase,
+                      'started_at':'2000-01-01T00:00:00.000Z',
+                      'completed_at':'2000-01-01T00:00:01.000Z',
+                      'http_status':200,
+                      'ok':True,
+                      'raw_response_body':'{"synthetic":true}',
+                  })
+
+          pre={
+              'schema':'evidencewatch-brierley-pre-unblind-output-v1',
+              'status':'OUTPUT_FROZEN_BEFORE_OWNER_LABEL_JOIN',
+              'started_at':'2000-01-01T00:00:00.000Z',
+              'completed_at':'2000-01-01T00:01:00.000Z',
+              'evidencewatch':{'commit':'synthetic-contract-test'},
+              'packet':{'sha256':'f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc','case_count':44},
+              'provider':{
+                  'model':'synthetic-contract-test',
+                  'endpoint':'none',
+                  'expected_calls':88,
+                  'observed_calls':88,
+              },
+              'common_claim':'synthetic scorer contract test',
+              'cases':cases,
+              'provider_receipts':receipts,
+              'ledger_path':'synthetic',
+          }
+          json.dump(pre,open('/tmp/synthetic_pre_unblind.json','w',encoding='utf-8'),indent=2)
+          print('synthetic failed positive=',first_positive)
+          print('synthetic failed control=',first_control)
+          PY
+
+      - name: Exercise frozen unblinding scorer and conservative failure rule
+        run: |
+          python research/evidencewatch_retrospective/score_brierley_unblinded.py \
+            /tmp/synthetic_pre_unblind.json \
+            /tmp/brierley_key.json \
+            /tmp/brierley_baselines.json \
+            /tmp/synthetic_scored.json
+
+          python - <<'PY'
+          import json
+          score=json.load(open('/tmp/synthetic_scored.json', encoding='utf-8'))
+          strict=score['headline_strict_failure_worst_case']
+          raw=score['raw_output_prediction']
+          available=score['available_case_only']
+
+          assert strict['tp'] == 21, strict
+          assert strict['fn'] == 1, strict
+          assert strict['fp'] == 1, strict
+          assert strict['tn'] == 21, strict
+
+          assert raw['tp'] == 21, raw
+          assert raw['fn'] == 1, raw
+          assert raw['fp'] == 0, raw
+          assert raw['tn'] == 22, raw
+
+          assert available['case_n'] == 42, available
+          assert available['excluded_failure_n'] == 2, available
+          assert score['failures']['total'] == 2
+          assert score['decision_route']['route'] == 'INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE', score['decision_route']
+
+          for metric in score['trivial_lexical_baselines'].values():
+              assert metric['best_at_or_below_model_strict_far'] is not None
+
+          print('strict=',strict)
+          print('raw=',raw)
+          print('available=',available)
+          print('decision_route=',score['decision_route'])
+          print('unblinding scorer contract PASS')
+          PY
+
+      - name: Gate summary
+        run: |
+          echo "NO PROVIDER CREDENTIALS USED"
+          echo "NO MODEL CALLS"
+          echo "PRIVATE EVIDENCEWATCH EXACT-CHECKOUT DRY RUN REMAINS LOCAL"
+          echo "EVIDENCEWATCH_RETROSPECTIVE_NO_SPEND_PIPELINE_OK"
+, runner, re.M))
+
+          required=[
+              'research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json',
+              'research/evidencewatch_retrospective/verify_brierley_manifest.py',
+              'research/evidencewatch_retrospective/build_blinded_brierley_packet.py',
+              'research/evidencewatch_retrospective/score_trivial_baselines.py',
+              'research/evidencewatch_retrospective/run_brierley_retrospective.mjs',
+              'research/evidencewatch_retrospective/score_brierley_unblinded.py',
+          ]
+
+          for path in required:
+              assert path in pairs, ('runner pin missing', path)
+              observed=subprocess.check_output(['git','hash-object','--',path], text=True).strip()
+              assert pairs[path] == observed, (path, pairs[path], observed)
+
+          harness=pathlib.Path('research/evidencewatch_retrospective/run_brierley_retrospective.mjs').read_text(encoding='utf-8')
+          wrapper=runner
+          assert 'PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE' in harness
+          assert 'EVIDENCEWATCH_BRIERLEY_LIVE_RUN_ABORTED_PRE_UNBLIND' in harness
+          assert 'PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE' in wrapper
+
+          print('local runner COM blob pins: VERIFIED')
+          print('fail-fast partial receipt markers: VERIFIED')
+          PY
+
       - name: Reconstruct frozen challenge objects from pinned owner data
         run: |
           set -euo pipefail
