@@ -234,6 +234,33 @@ It would not establish:
 
 A weak result is equally useful and must remain visible.
 
+## Execution harness
+
+Fail-closed harness:
+`research/evidencewatch_retrospective/run_brierley_retrospective.mjs`
+
+Harness boundary note:
+`coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_HARNESS_20260926.md`
+
+The harness:
+- dry-runs by default with zero provider calls;
+- verifies EvidenceWatch HEAD `9c96c839…` and pinned analyzer/engine/ledger/package Git blobs before module import;
+- validates the blinded packet and packet SHA-256;
+- pins Nemotron in code rather than inheriting `NVIDIA_MODEL`;
+- requires both explicit `--live` and `NVIDIA_API_KEY`;
+- refuses existing output/ledger/lock paths;
+- runs exactly one baseline + one successor analysis for each of 44 opaque cases;
+- captures raw provider response bodies without credentials/outgoing request bodies;
+- requires exactly 88 provider responses;
+- writes the pre-unblind output with exclusive create and prints its SHA-256.
+
+A failed/partial live attempt is not silently resumed into the same ledger. Preserve it as a failed run and start a separately declared run if repetition is justified.
+
+```text
+HARNESS READY != LIVE RUN
+DRY RUN != PROVIDER EXECUTION
+PARTIAL RUN != COMPLETED 44-CASE RESULT
+```
 ## Gate
 
 This contract authorises **preparation only**.
