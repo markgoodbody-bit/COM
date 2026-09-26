@@ -11,7 +11,7 @@ Owner source checked 25 September 2026:
 - award up to **£25,000**, described as equity-free;
 - application deadline: **5 October 2026, 17:00 BST**;
 - proposal maximum: **1,500 words**;
-- owner explicitly asks for multi-step research workflows with provenance, audit trails, governance, human review/override and measurable outcomes.
+- owner explicitly asks applicants to name the affected research decision, existing workflow/tool, refusal-or-escalation behaviour and measurable outcome, alongside provenance, audit trails, governance and human review/override.
 
 Candidate object: **EvidenceWatch**, scoped to research-integrity / evidence-synthesis workflows.
 
@@ -37,7 +37,7 @@ Formal retraction/correction handling is not the gap. Zotero and Crossmark expos
 
 The residual is narrower: can a small agent catch material changes outside those well-owned paths and route only affected downstream work for human review?
 
-The University of Bern living review already checked included preprints for journal publication and re-extracted changed data. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. The maintenance task is real and existing practice handles it; whether automation reduces burden is the pilot question. Sources: https://doi.org/10.1186/s13643-023-02325-y and https://doi.org/10.1016/j.cmi.2020.06.013
+A public baseline from the University of Bern shows this is recurring work: its living review ran weekly automated searches that added 100–200 records, checked preprint publication status in each update, and re-extracted data when content changed. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. Existing practice can handle this. The unknown is whether EvidenceWatch reduces reviewer burden without adding unacceptable misses or false alerts. Sources: https://doi.org/10.1186/s13643-023-02325-y and https://doi.org/10.1016/j.cmi.2020.06.013
 
 ## 2. YOUR WORKFLOW
 
@@ -110,10 +110,14 @@ If a stronger workflow already does this, or the residual change class is too ra
 
 The next stage is a bounded workflow-integration pilot.
 
-One living systematic review team would use its existing reference library. Because Cochrane and related workflows already own surveillance and important correction routes, the pilot would isolate residual changes and compare EvidenceWatch with existing practice on a pre-labelled set, measuring:
+One living systematic review team would use its existing reference library. Because Cochrane and related workflows already own surveillance and important correction routes, the pilot would isolate residual changes and compare EvidenceWatch with existing practice on a pre-labelled set.
+
+Primary outcome: **reviewer minutes per correctly handled material-change episode versus existing practice**.
+
+Secondary outcomes:
 - time to flag affected work;
 - missed material changes and false alerts;
-- reviewer, setup and maintenance minutes;
+- setup and maintenance minutes;
 - whether users can reconstruct why an alert happened without trusting the model.
 
 Stop or narrow if maintenance exceeds saved review time, residual changes are too rare, existing practice performs as well, or misses are unacceptable.
