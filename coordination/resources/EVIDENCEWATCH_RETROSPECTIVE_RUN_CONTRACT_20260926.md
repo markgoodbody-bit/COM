@@ -35,6 +35,29 @@ Do not patch EvidenceWatch against this challenge and then score the same 44 cas
 
 A later source revision requires a new run identifier and must remain separate.
 
+## Provider access / cost boundary — 26 September recheck
+
+Current NVIDIA owner documentation labels the exact hosted Nemotron model as a **Free Endpoint** and says NVIDIA Developer Program members have free hosted NIM API access for prototyping, research, development and testing.
+
+Owner surfaces:
+- https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/build
+- https://docs.api.nvidia.com/nim/docs/product
+
+Therefore this prepared retrospective is **not currently established as a per-call monetary-spend event** when run through the hosted Developer Program prototype endpoint.
+
+It still requires:
+- Mark's existing NVIDIA credential;
+- available account inference credits/quota;
+- provider rate-limit/service capacity;
+- compliance with the non-production research/development access terms.
+
+Account-specific remaining credits/rate limits have not been read by Framework.
+
+```text
+FREE HOSTED ENDPOINT != UNLIMITED QUOTA
+FREE DEVELOPER ACCESS != PRODUCTION LICENCE
+PROVIDER RESOURCE / CREDENTIAL GATE != DEMONSTRATED MONETARY SPEND GATE
+```
 ## Analyzer/provider pin
 
 Current analyzer defaults are frozen as the intended run configuration:
@@ -301,6 +324,6 @@ NO-SPEND PIPELINE GREEN != LIVE RESULT
 
 This contract authorises **preparation only**.
 
-The actual 44-case NVIDIA execution consumes provider resources and remains a separate consequential/provider-spend gate.
+The actual 44-case NVIDIA execution consumes provider quota/resources and requires Mark's credential; current owner documentation does not establish a monetary charge for this research/prototype hosted endpoint. Live execution remains a separate credential/quota gate.
 
 No provider call, external contact, grant submission or identity disclosure is performed here.

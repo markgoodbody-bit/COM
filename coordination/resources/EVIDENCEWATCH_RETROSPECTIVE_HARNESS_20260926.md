@@ -56,6 +56,11 @@ Expected marker:
 
 `EVIDENCEWATCH_BRIERLEY_DRY_RUN_OK`
 
+Current provider access note:
+- exact pinned model is advertised by NVIDIA as a hosted **Free Endpoint**;
+- Developer Program hosted NIM access is documented as free for prototyping/research/development/testing;
+- live execution still consumes account quota and requires the API credential;
+- no claim is made about Mark's remaining account credits/rate limits.
 ## Live gate
 
 Live execution requires **both**:
