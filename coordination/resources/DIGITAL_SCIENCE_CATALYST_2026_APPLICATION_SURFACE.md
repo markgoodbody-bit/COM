@@ -75,7 +75,7 @@ Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Canonical proposal body:
-**1,425 whitespace-delimited words / 1,467 word-like tokens**
+**1,426 whitespace-delimited words / 1,469 word-like tokens**
 
 Final submission-editor recount remains required.
 
