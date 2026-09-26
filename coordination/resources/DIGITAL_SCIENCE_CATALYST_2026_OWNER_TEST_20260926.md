@@ -20,7 +20,7 @@ The owner explicitly asks applicants to test six things before applying:
 
 | Owner test | Current EvidenceWatch answer | Evidence state |
 | --- | --- | --- |
-| Research decision | Whether already-relied-on evidence changed enough to reopen affected synthesis/review work | **DEFINED / NOT USER-VALIDATED** |
+| Research decision | Whether an already-relied-on source changed materially outside new-study/formal-status paths and should route affected synthesis/review work to humans | **DEFINED / NOT USER-VALIDATED** |
 | Who / how often | Living systematic review team. Public Bern exemplar ran weekly searches adding 100–200 records and checked preprint status each update | **PUBLIC BASELINE / NOT UNIVERSAL FREQUENCY** |
 | Lifecycle | Evidence synthesis + research integrity | **DIRECT FIT** |
 | Existing tool/system | Proposed first integration target: Zotero / an existing reference library | **FILE HANDOFF EXISTS / LIVE INTEGRATION DOES NOT** |
@@ -61,11 +61,11 @@ Additional workload source:
 
 Counted on the exact branch source from the first required heading `## 1. THE PROBLEM` through the end of `## 9. BUDGET`.
 
-- whitespace-delimited count: **1,409**
-- word-like-token count: **1,465**
+- whitespace-delimited count: **1,421**
+- word-like-token count: **1,477**
 - owner ceiling: **1,500 words**
 
-Headroom is **91** by the whitespace count and **35** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
+Headroom is **79** by the whitespace count and **23** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
 
 ## Strongest remaining weakness
 
