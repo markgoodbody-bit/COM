@@ -61,11 +61,11 @@ Additional workload source:
 
 Counted on the exact branch source from the first required heading `## 1. THE PROBLEM` through the end of `## 9. BUDGET`.
 
-- whitespace-delimited count: **1,426**
+- whitespace-delimited count: **1,436**
 - word-like-token count: **1,469**
 - owner ceiling: **1,500 words**
 
-Headroom is **74** by the whitespace count and **31** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
+Headroom is **64** by the whitespace count and **31** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
 
 ## Dataset/version owner subtraction
 
