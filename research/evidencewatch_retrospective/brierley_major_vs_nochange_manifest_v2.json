@@ -5,7 +5,7 @@
   "supersedes": {
     "schema": "evidencewatch-retrospective-major-change-challenge-v1",
     "path": "research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json",
-    "reason": "No-spend CI demonstrated that v1 was not executable as a 44-pair text challenge: three selected controls lacked a reconstructable published abstract in the pinned owner all_pairs.tsv. The repair adds source reconstructability as a pre-run eligibility rule. No model/provider output existed."
+    "reason": "No-spend CI demonstrated that v1 was not executable as a 44-pair text challenge: three selected controls lacked a reconstructable published abstract, and additional candidate rows contained undecodable raw owner bytes. The v2 repair adds clean source reconstructability as a pre-run eligibility rule and is defined by independent recomputation from the pinned raw owner files. No model/provider output existed."
   },
   "source": {
     "study": "Brierley et al. 2022, Tracking changes between preprint posting and journal publication during a pandemic",
@@ -27,9 +27,9 @@
     "controls": 22,
     "positive_covid": 15,
     "positive_non_covid": 7,
-    "max_control_date_gap_days": 12,
-    "median_control_date_gap_days": 3,
-    "controls_changed_from_v1": 8
+    "max_control_date_gap_days": 15,
+    "median_control_date_gap_days": 5,
+    "controls_changed_from_v1": 11
   },
   "boundaries": [
     "SOURCE_RECONSTRUCTABILITY_IS_PRE_RUN_ELIGIBILITY_NOT_MODEL_OUTCOME",
@@ -425,19 +425,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 100,
-        "preprint_doi": "10.1101/2020.02.16.951913",
-        "published_doi": "10.1016/j.bbrc.2020.03.044",
-        "posted_date": "21/02/2020",
+        "source_row": 109,
+        "preprint_doi": "10.1101/2020.02.22.20024927",
+        "published_doi": "10.1371/journal.pone.0230548",
+        "posted_date": "23/02/2020",
         "published_date": "19/03/2020",
-        "title": "Single cell RNA sequencing of 13 human tissues identify cell types and receptors of human coronaviruses",
-        "published_title": "Single cell RNA sequencing of 13 human tissues identify cell types and receptors of human coronaviruses",
-        "journal": "Biochemical and Biophysical Research Communications",
+        "title": "Association of radiologic findings with mortality of patients infected with 2019 novel coronavirus in Wuhan, China",
+        "published_title": "Association of radiologic findings with mortality of patients infected with 2019 novel coronavirus in Wuhan, China",
+        "journal": "PLOS ONE",
         "owner_highest_change": 0,
-        "owner_change_outcomes": "0",
-        "owner_word_change_ratio": "0.020198975"
+        "owner_change_outcomes": "1",
+        "owner_word_change_ratio": "0.002898551"
       },
-      "matched_posting_date_gap_days": 8
+      "matched_posting_date_gap_days": 10
     },
     {
       "pair_id": "pair-13",
@@ -458,19 +458,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 109,
-        "preprint_doi": "10.1101/2020.02.22.20024927",
-        "published_doi": "10.1371/journal.pone.0230548",
-        "posted_date": "23/02/2020",
-        "published_date": "19/03/2020",
-        "title": "Association of radiologic findings with mortality of patients infected with 2019 novel coronavirus in Wuhan, China",
-        "published_title": "Association of radiologic findings with mortality of patients infected with 2019 novel coronavirus in Wuhan, China",
-        "journal": "PLOS ONE",
+        "source_row": 121,
+        "preprint_doi": "10.1101/2020.03.01.20029074",
+        "published_doi": "10.1038/s41392-020-0148-4",
+        "posted_date": "03/03/2020",
+        "published_date": "27/03/2020",
+        "title": "Lymphopenia predicts disease severity of COVID-19: a descriptive and predictive study",
+        "published_title": "Lymphopenia predicts disease severity of COVID-19: a descriptive and predictive study",
+        "journal": "Signal Transduction and Targeted Therapy",
         "owner_highest_change": 0,
         "owner_change_outcomes": "1",
-        "owner_word_change_ratio": "0.002898551"
+        "owner_word_change_ratio": "NA"
       },
-      "matched_posting_date_gap_days": 5
+      "matched_posting_date_gap_days": 14
     },
     {
       "pair_id": "pair-14",
@@ -491,19 +491,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 121,
-        "preprint_doi": "10.1101/2020.03.01.20029074",
-        "published_doi": "10.1038/s41392-020-0148-4",
-        "posted_date": "03/03/2020",
-        "published_date": "27/03/2020",
-        "title": "Lymphopenia predicts disease severity of COVID-19: a descriptive and predictive study",
-        "published_title": "Lymphopenia predicts disease severity of COVID-19: a descriptive and predictive study",
-        "journal": "Signal Transduction and Targeted Therapy",
+        "source_row": 122,
+        "preprint_doi": "10.1101/2020.03.02.20026708",
+        "published_doi": "10.1126/science.abb4218",
+        "posted_date": "06/03/2020",
+        "published_date": "25/03/2020",
+        "title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
+        "published_title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
+        "journal": "Science",
         "owner_highest_change": 0,
-        "owner_change_outcomes": "1",
-        "owner_word_change_ratio": "NA"
+        "owner_change_outcomes": "0",
+        "owner_word_change_ratio": "0.054428044"
       },
-      "matched_posting_date_gap_days": 12
+      "matched_posting_date_gap_days": 15
     },
     {
       "pair_id": "pair-15",
@@ -524,19 +524,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 125,
-        "preprint_doi": "10.1101/2020.03.02.968388",
-        "published_doi": "10.1002/pro.3873",
-        "posted_date": "03/03/2020",
-        "published_date": "18/04/2020",
-        "title": "Crystal structure of Nsp15 endoribonuclease NendoU from SARS-CoV-2",
-        "published_title": "Crystal structure of Nsp15 endoribonuclease\r\n            NendoU\r\n            from\r\n            SARS-CoV\r\n            -2",
-        "journal": "Protein Science",
+        "source_row": 124,
+        "preprint_doi": "10.1101/2020.03.02.20030320",
+        "published_doi": "10.1016/j.ijid.2020.03.019",
+        "posted_date": "06/03/2020",
+        "published_date": "14/04/2020",
+        "title": "Preliminary estimation of the novel coronavirus disease (COVID-19) cases in Iran: a modelling analysis based on overseas cases and air travel data",
+        "published_title": "Preliminary estimation of the novel coronavirus disease (COVID-19) cases in Iran: A modelling analysis based on overseas cases and air travel data",
+        "journal": "International Journal of Infectious Diseases",
         "owner_highest_change": 0,
-        "owner_change_outcomes": "2",
-        "owner_word_change_ratio": "0.126826417"
+        "owner_change_outcomes": "0",
+        "owner_word_change_ratio": "0.301287554"
       },
-      "matched_posting_date_gap_days": 5
+      "matched_posting_date_gap_days": 8
     },
     {
       "pair_id": "pair-16",
@@ -557,19 +557,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 122,
-        "preprint_doi": "10.1101/2020.03.02.20026708",
-        "published_doi": "10.1126/science.abb4218",
-        "posted_date": "06/03/2020",
-        "published_date": "25/03/2020",
-        "title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
-        "published_title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
-        "journal": "Science",
+        "source_row": 131,
+        "preprint_doi": "10.1101/2020.03.09.20033217",
+        "published_doi": "10.1056/nejmc2004973",
+        "posted_date": "10/03/2020",
+        "published_date": "17/03/2020",
+        "title": "Aerosol and surface stability of HCoV-19 (SARS-CoV-2) compared to SARS-CoV-1",
+        "published_title": "Aerosol and Surface Stability of SARS-CoV-2 as Compared with SARS-CoV-1",
+        "journal": "New England Journal of Medicine",
         "owner_highest_change": 0,
-        "owner_change_outcomes": "0",
-        "owner_word_change_ratio": "0.054428044"
+        "owner_change_outcomes": "2",
+        "owner_word_change_ratio": "NA"
       },
-      "matched_posting_date_gap_days": 6
+      "matched_posting_date_gap_days": 10
     },
     {
       "pair_id": "pair-17",
@@ -590,19 +590,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 124,
-        "preprint_doi": "10.1101/2020.03.02.20030320",
-        "published_doi": "10.1016/j.ijid.2020.03.019",
-        "posted_date": "06/03/2020",
-        "published_date": "14/04/2020",
-        "title": "Preliminary estimation of the novel coronavirus disease (COVID-19) cases in Iran: a modelling analysis based on overseas cases and air travel data",
-        "published_title": "Preliminary estimation of the novel coronavirus disease (COVID-19) cases in Iran: A modelling analysis based on overseas cases and air travel data",
-        "journal": "International Journal of Infectious Diseases",
+        "source_row": 136,
+        "preprint_doi": "10.1101/2020.03.11.20034314",
+        "published_doi": "10.3934/mbe.2020172",
+        "posted_date": "13/03/2020",
+        "published_date": "07/04/2020",
+        "title": "Predicting the cumulative number of cases for the COVID-19 epidemic in China from early data",
+        "published_title": "Predicting the cumulative number of cases for the COVID-19 epidemic in China from early data",
+        "journal": "Mathematical Biosciences and Engineering",
         "owner_highest_change": 0,
         "owner_change_outcomes": "0",
-        "owner_word_change_ratio": "0.301287554"
+        "owner_word_change_ratio": "0"
       },
-      "matched_posting_date_gap_days": 3
+      "matched_posting_date_gap_days": 10
     },
     {
       "pair_id": "pair-18",
@@ -623,19 +623,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 131,
-        "preprint_doi": "10.1101/2020.03.09.20033217",
-        "published_doi": "10.1056/nejmc2004973",
-        "posted_date": "10/03/2020",
-        "published_date": "17/03/2020",
-        "title": "Aerosol and surface stability of HCoV-19 (SARS-CoV-2) compared to SARS-CoV-1",
-        "published_title": "Aerosol and Surface Stability of SARS-CoV-2 as Compared with SARS-CoV-1",
-        "journal": "New England Journal of Medicine",
+        "source_row": 145,
+        "preprint_doi": "10.1101/2020.03.15.20035204",
+        "published_doi": "10.1128/jvi.00567-20",
+        "posted_date": "17/03/2020",
+        "published_date": "07/04/2020",
+        "title": "International expansion of a novel SARS-CoV-2 mutant",
+        "published_title": "International Expansion of a Novel SARS-CoV-2 Mutant",
+        "journal": "Journal of Virology",
         "owner_highest_change": 0,
-        "owner_change_outcomes": "2",
+        "owner_change_outcomes": "3",
         "owner_word_change_ratio": "NA"
       },
-      "matched_posting_date_gap_days": 1
+      "matched_posting_date_gap_days": 6
     },
     {
       "pair_id": "pair-19",
@@ -656,19 +656,19 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 136,
-        "preprint_doi": "10.1101/2020.03.11.20034314",
-        "published_doi": "10.3934/mbe.2020172",
-        "posted_date": "13/03/2020",
-        "published_date": "07/04/2020",
-        "title": "Predicting the cumulative number of cases for the COVID-19 epidemic in China from early data",
-        "published_title": "Predicting the cumulative number of cases for the COVID-19 epidemic in China from early data",
-        "journal": "Mathematical Biosciences and Engineering",
+        "source_row": 151,
+        "preprint_doi": "10.1101/2020.03.15.992818",
+        "published_doi": "10.1093/ve/veaa027",
+        "posted_date": "17/03/2020",
+        "published_date": "25/03/2020",
+        "title": "An emergent clade of SARS-CoV-2 linked to returned travellers from Iran",
+        "published_title": "An emergent clade of SARS-CoV-2 linked to returned travellers from Iran",
+        "journal": "Virus Evolution",
         "owner_highest_change": 0,
         "owner_change_outcomes": "0",
-        "owner_word_change_ratio": "0"
+        "owner_word_change_ratio": "0.002932551"
       },
-      "matched_posting_date_gap_days": 1
+      "matched_posting_date_gap_days": 5
     },
     {
       "pair_id": "pair-20",
@@ -689,17 +689,17 @@
       },
       "control": {
         "owner_label": "ABSTRACT_NO_CHANGE",
-        "source_row": 145,
-        "preprint_doi": "10.1101/2020.03.15.20035204",
-        "published_doi": "10.1128/jvi.00567-20",
+        "source_row": 152,
+        "preprint_doi": "10.1101/2020.03.15.992925",
+        "published_doi": "10.3390/jcm9040982",
         "posted_date": "17/03/2020",
-        "published_date": "07/04/2020",
-        "title": "International expansion of a novel SARS-CoV-2 mutant",
-        "published_title": "International Expansion of a Novel SARS-CoV-2 Mutant",
-        "journal": "Journal of Virology",
+        "published_date": "02/04/2020",
+        "title": "Master Regulator Analysis of the SARS-CoV-2/Human interactome",
+        "published_title": "Master Regulator Analysis of the SARS-CoV-2/Human Interactome",
+        "journal": "Journal of Clinical Medicine",
         "owner_highest_change": 0,
-        "owner_change_outcomes": "3",
-        "owner_word_change_ratio": "NA"
+        "owner_change_outcomes": "1",
+        "owner_word_change_ratio": "0.002403846"
       },
       "matched_posting_date_gap_days": 0
     },
