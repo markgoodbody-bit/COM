@@ -50,6 +50,7 @@ jobs:
             research/evidencewatch_retrospective/score_trivial_baselines.py \
             research/evidencewatch_retrospective/score_brierley_unblinded.py
           node --check research/evidencewatch_retrospective/run_brierley_retrospective.mjs
+          pwsh -NoProfile -Command "[void][scriptblock]::Create((Get-Content 'research/evidencewatch_retrospective/run-brierley-local.ps1' -Raw))"
 
       - name: Reconstruct frozen challenge objects from pinned owner data
         run: |
