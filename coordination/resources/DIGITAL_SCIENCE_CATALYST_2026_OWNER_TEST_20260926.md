@@ -30,7 +30,7 @@ The owner explicitly asks applicants to test six things before applying:
 | Secondary outcomes | Time-to-flag, misses, false alerts, setup/maintenance minutes, explanation reconstruction | **PREDECLARED / UNMEASURED** |
 | Current stage | Working standalone prototype, demo, CSL-JSON handoff, pilot protocol/scorer, 62 deterministic tests | **ENGINEERING EVIDENCE** |
 | Users/customers | None | **ABSENT / DISCLOSED** |
-| Competitors/owners | Cochrane, Crossref/Europe PMC, Zotero/Crossmark, ReadCube, scite, Refract, AIEP P170, Digital Science adjacency | **OWNER-SUBTRACTED** |
+| Competitors/owners | Cochrane, Crossref/Europe PMC, Zotero/Crossmark, ReadCube, scite, EPPI-Reviewer, MAGICapp, ALEC/Monash, Refract, AIEP P170, Digital Science adjacency | **OWNER-SUBTRACTED / SUBSUMPTION RISK HIGH** |
 | Commercial market | Possible institutional/team workspace/integration buyer; pricing untested | **HYPOTHESIS ONLY** |
 | Team | Mark: systems/infrastructure/audit/failure-recovery expertise; no established research-workflow partner | **ENGINEERING STRENGTH / DOMAIN-PARTNER GAP** |
 | Budget | Staged £5k / £14k / £6k with stop gates | **DRAFT / HUMAN GATE** |
@@ -61,8 +61,8 @@ Additional workload source:
 
 Counted on the exact branch source from the first required heading `## 1. THE PROBLEM` through the end of `## 9. BUDGET`.
 
-- whitespace-delimited count: **1,362**
-- word-like-token count: **1,405**
+- whitespace-delimited count: **1,409**
+- word-like-token count: **1,465**
 - owner ceiling: **1,500 words**
 
 Both local methods retain >100 words of headroom. Final copy should still be recounted in the submission editor because Google/word-processor tokenisation can differ.
