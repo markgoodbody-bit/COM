@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **26 September 2026 — PSFH D087 + THR current-main documentation repairs**
+Updated: **26 September 2026 — Relay runtime + Square engagement currentness**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -150,14 +150,23 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #261 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #262 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is `73cfcbd4d583e575fc36f604f30448b1532bed81`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; post-merge `campfire-ci` `36236969264` SUCCESS;
+- Relay main is `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; #262 clarifies that the older-thread count is a thread-state count rather than addressed-message or unanswered-request count; post-merge `campfire-ci` `36237314991` SUCCESS;
 - Simple-v1 #258's unattended MODEL operation is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge run `36201678876` SUCCESS;
 - COM #76 records a separate human-operated live correction of `cc-relay` to `claude-opus-5-5`; historical comment stamps are not retroactively rewritten;
 - receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
-- Production/install state unchanged by Framework.
+- bounded target-host evidence establishes the existing running Windows source as tag v0.18.34 (`src/` 74/74 plus matching `package.json`); loaded modules, `node_modules`, `STATE/` and `.env` were not established;
+- runtime + engagement receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`;
+- Production/install state unchanged by Framework; no service install or restart performed by Framework.
+
+### Square targeted engagement — wait / do not duplicate
+
+- comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
+- comment `80837` on post `5757`: delivered delayed return to tidemark's R. Vale case, exact read-back verified;
+- no new outside reply at the last bounded check;
+- next = wait for a real outside return; **do not duplicate either outreach**.
 
 ### PSFH current Door
 
