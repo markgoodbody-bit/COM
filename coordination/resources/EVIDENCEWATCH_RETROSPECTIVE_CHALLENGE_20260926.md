@@ -2,8 +2,37 @@
 
 Date: 26 September 2026
 
-Status: **PRE-RUN FROZEN / OWNER-LABELLED RETROSPECTIVE CHALLENGE / NO EVIDENCEWATCH RESULT**
+Status: **V2 PRE-RUN FROZEN / RAW-OWNER RECONSTRUCTED / HOSTED NO-SPEND GATE GREEN / NO EVIDENCEWATCH RESULT**
 
+## v2 source-integrity repair
+
+The original v1 selection remains preserved at:
+`research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json`
+
+It is **not executable as the current 44-pair challenge**. Before any model/provider output existed, hosted no-spend reconstruction exposed two source-integrity facts in the pinned owner files:
+- three v1 no-change controls did not have a reconstructable published abstract in the pinned `all_pairs.tsv` field used by the challenge;
+- the owner TSV contains duplicate preprint DOIs and some raw bytes that are not cleanly decodable as cp1252, so eligibility must be established on the exact `(preprint DOI, published DOI)` pair and selected text must be cleanly reconstructable.
+
+Current executable manifest:
+`research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json`
+
+v2 adds one pre-run eligibility rule only:
+
+> the exact owner `(preprint DOI, published DOI)` pair must contain a reconstructable preprint abstract and published abstract in the pinned raw owner TSV, with no replacement character after bounded source decoding.
+
+The owner major-change set remains all 22 cases. One-to-one control rematching changes 11 controls from v1 because unavailable/unclean candidates are removed before nearest-date matching.
+
+Hosted no-spend gate:
+- workflow run `36260538589`: **SUCCESS**;
+- deterministic blinded packet SHA-256: `f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc`;
+- separate owner-key SHA-256: `75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9`;
+- provider credentials/calls: **none**.
+
+```text
+V1 PRE-RUN FREEZE != EXECUTABLE CORPUS
+SOURCE-INTEGRITY FAILURE BEFORE MODEL OUTPUT -> REPAIR + NEW FREEZE
+V2 REPAIR != POST-RESULT TUNING
+```
 Purpose:
 
 Test one narrow engineering question without selecting examples after seeing EvidenceWatch output:
@@ -36,6 +65,7 @@ Positive set:
 
 Control set:
 - owner `Highest_change == 0`;
+- exact preprint/published pair must have clean reconstructable text in the pinned raw `all_pairs.tsv`;
 - one unique control per positive;
 - same COVID/non-COVID stratum;
 - minimum absolute difference in preprint posting date;
@@ -43,8 +73,8 @@ Control set:
 
 Observed matching:
 - 22 unique controls;
-- maximum posting-date gap = 5 days;
-- median posting-date gap = 2 days.
+- maximum posting-date gap = 15 days;
+- median posting-date gap = 5 days.
 
 Do not replace awkward cases, rebalance after output, or drop failures unless a source-integrity defect is demonstrated and recorded before scoring.
 
