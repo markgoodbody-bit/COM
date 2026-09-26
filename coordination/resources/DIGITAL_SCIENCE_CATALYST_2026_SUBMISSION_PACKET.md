@@ -14,7 +14,7 @@ Owner source rechecked 26 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current exact proposal-body count:
-**1,425 whitespace-delimited words / 1,467 word-like tokens**
+**1,426 whitespace-delimited words / 1,469 word-like tokens**
 
 Final submission-editor recount remains required.
 
@@ -134,9 +134,9 @@ Stronger owners remove most mechanism novelty:
 - **ReadCube and scite** own literature monitoring, shared libraries, review workflows, citation context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
 - **EPPI-Reviewer** already links Zotero libraries and uses OpenAlex-based auto-update suggestions for living reviews; **MAGICapp** already supports structured guideline updating with audit trails and current living-guideline surveillance; **ALEC/Monash** is developing an AI-supported Living Evidence Architecture. These are direct subsumption tests, not validation targets: https://eppi.ioe.ac.uk/cms/er4/help/openalex-in-eppi-reviewer/keeping-a-review-up-to-date-auto-update, https://www.magicevidence.org/magicapp/ and https://www.monash.edu/mada/research/project/living-evidence-architecture
 - **Refract** owns reproducible source-change events; **AIEP P170** specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
-- Digital Science's **Figshare** already owns versioned research-output identity; **PostPub/VIRUS** track integrity events/downstream impact; **Perma.cc** preserves relied-on web states.
+- Digital Science's **Figshare** owns versioned research-output identity; **PostPub/VIRUS** track integrity events/downstream impact; Visualping/changedetection.io own web-change monitoring; **Perma.cc/Memento** preserve prior web states.
 
-EvidenceWatch is not a new change detector, version registry or dependency-graph idea. Its surviving hypothesis is integration: can owner version/change signals plus residual source changes, explicit authority, materiality filtering and review routing fit an existing workflow with low enough burden to be useful?
+EvidenceWatch is not a new change detector, archive, version registry or dependency-graph idea. Its surviving hypothesis is integration: can owner change/version signals be bound to what was relied upon, filtered for materiality and routed to affected downstream work at useful burden?
 
 If a stronger workflow already does this, or the residual change class is too rare, stop or narrow.
 

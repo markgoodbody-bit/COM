@@ -30,7 +30,7 @@ The owner explicitly asks applicants to test six things before applying:
 | Secondary outcomes | Time-to-flag, misses, false alerts, setup/maintenance minutes, explanation reconstruction | **PREDECLARED / UNMEASURED** |
 | Current stage | Working standalone prototype, demo, CSL-JSON handoff, pilot protocol/scorer, 62 deterministic tests | **ENGINEERING EVIDENCE** |
 | Users/customers | None | **ABSENT / DISCLOSED** |
-| Competitors/owners | Cochrane, Crossref/Europe PMC, DataCite, Figshare, Zenodo, Zotero/Crossmark, ReadCube, scite, EPPI-Reviewer, MAGICapp, ALEC/Monash, Refract, AIEP P170 | **OWNER-SUBTRACTED / SUBSUMPTION RISK HIGH** |
+| Competitors/owners | Cochrane, Crossref/Europe PMC, DataCite, Figshare, Zenodo, Memento, Perma.cc, Visualping, changedetection.io, Zotero/Crossmark, ReadCube, scite, EPPI-Reviewer, MAGICapp, ALEC/Monash, Refract, AIEP P170 | **OWNER-SUBTRACTED / SUBSUMPTION RISK HIGH** |
 | Commercial market | Possible institutional/team workspace/integration buyer; pricing untested | **HYPOTHESIS ONLY** |
 | Team | Mark: systems/infrastructure/audit/failure-recovery expertise; no established research-workflow partner | **ENGINEERING STRENGTH / DOMAIN-PARTNER GAP** |
 | Budget | Staged £5k / £14k / £6k with stop gates | **DRAFT / HUMAN GATE** |
@@ -61,11 +61,11 @@ Additional workload source:
 
 Counted on the exact branch source from the first required heading `## 1. THE PROBLEM` through the end of `## 9. BUDGET`.
 
-- whitespace-delimited count: **1,425**
-- word-like-token count: **1,467**
+- whitespace-delimited count: **1,426**
+- word-like-token count: **1,469**
 - owner ceiling: **1,500 words**
 
-Headroom is **75** by the whitespace count and **33** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
+Headroom is **74** by the whitespace count and **31** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
 
 ## Dataset/version owner subtraction
 
@@ -77,6 +77,18 @@ Therefore the application must not imply that EvidenceWatch invents dataset-vers
 VERSION SIGNAL != DOWNSTREAM REVIEW ROUTE
 FIGSHARE / DATACITE VERSIONING != EVIDENCEWATCH NOVELTY
 INTEGRATION HYPOTHESIS = STILL UNMEASURED
+```
+
+## Web-change owner subtraction
+
+Memento, Perma.cc, Visualping and changedetection.io already own web-state preservation and generic page-change monitoring.
+
+Therefore the application must not imply that EvidenceWatch invents website monitoring. The surviving question is whether stronger change/history signals can be bound to a specific relied-on evidence state and routed to the exact downstream work that should be reopened.
+
+```text
+PAGE CHANGE != DOWNSTREAM CONSEQUENCE
+WEB MONITORING != EVIDENCEWATCH NOVELTY
+RELIANCE-BINDING / MATERIALITY / ROUTING = UNMEASURED
 ```
 
 ## Strongest remaining weakness
