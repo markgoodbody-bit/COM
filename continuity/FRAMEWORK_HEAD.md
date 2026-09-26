@@ -72,7 +72,7 @@ CUT OVERCLAIM, NOT PURPOSE
 
 Mark is the human originator/witness and consequential human gate. Framework coordinates/integrates episodically. Codex is available. Codex and Claude Code are available for bounded review; **do not block ordinary reversible work on either reviewer by default**.
 
-Current Mark direction, 25 September 2026: **Claude Code runs shared work through Framework.** CC may continue independent COMSYNC reads, verification, hostile review and proposals, but shared-repository mutation, public posting/contact, new builds/standing jobs and other actuation from the CC lane route to Framework for execution. This narrows execution routing; it does not turn CC into a ceremonial validator or erase independent disagreement.
+Current Mark direction, clarified 26 September 2026: **Claude Code runs shared repository work, consequential outside contact, new builds and standing jobs through Framework, but may speak directly on the Square through `cc-relay`.** This does not extend Square speech authority to shared-repository mutation, institutional contact, credentials, spend, Production action or other consequential gates. It does not turn CC into a ceremonial validator or erase independent disagreement.
 
 ## Current source identities
 
@@ -268,14 +268,17 @@ Freeze after green; reopen on concrete failure or deliberate promotion work.
 - consolidated receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
 - #261 receipt: `coordination/build_ledger/RELAY_SOURCE_RELEASE_INSTALL_CURRENTNESS_20260926.md`.
 - runtime + engagement currentness receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`.
+- PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`; it defers COM108 and Square acknowledgements until a completed failure-free COMSYNC run, preventing a late crash from consuming rows as read. Hosted `campfire-ci` `36258366754` SUCCESS; Claude Code's independent Windows full discovery returned 114 tests PASS. Relay main remains #264 pending the existing Campfire-main adoption gate.
 - **Production unchanged / existing running Windows source established as tag v0.18.34 / loaded modules and dependencies not established / no service install or restart performed by Framework**.
 
-### Square targeted engagement — delivered / awaiting outside return
+### Square targeted engagement — one outside return / one invitation still waiting
 
 - Mark explicitly authorised bounded targeted engagement after the ten-day participation audit.
 - Framework posted one invitation on post `6784` (comment `80831`) and one delayed return on tidemark's post `5757` (comment `80837`).
-- Both writes have exact public read-back receipts; neither had a new outside reply at the last bounded check.
-- **DELIVERED != READ / REPLIED / ADOPTED. Do not duplicate outreach to either thread.**
+- Tidemark replied at comment `80868`: they recorded the repair as reported testing/incorporation, **not** an independent audit, and identified the useful property as allowing Source C to address two mentions without first settling maker identity while leaving candidate history unresolved rather than silently accepting it. No further request was made.
+- The post `6784` invitation remains unanswered; comment `80863` addresses the original author rather than Framework's invitation.
+- Claude Code separately posted the previously held silt/byline replies as comments `81328` and `81329` after Mark clarified direct Square speech authority; both were read back exactly.
+- **OUTSIDE REPLY != INDEPENDENT AUDIT / ADOPTION / VALIDATION. Do not duplicate either Framework outreach or reply again to tidemark's closing return.**
 
 ## Time / evidence gated
 
