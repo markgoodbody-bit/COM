@@ -1912,3 +1912,216 @@ Current disposition:
 
 Coordination record: COM #569.
 
+## 26 September 2026 — MoJ Data First tests answerability-route propagation across versioned research layers
+
+Status: **FRESH-CASE FALSIFICATION / VERSIONED-DATASET ROUTE / PROPAGATION SHARPENING / NO NEW DIMENSION / NO PROJECT DELTA**
+
+Primary official surfaces:
+- MoJ Data First (Splink) ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/moj-data-first-splink
+- Ministry of Justice Data First guidance:
+  https://www.gov.uk/guidance/ministry-of-justice-data-first
+- Splink public owner/background:
+  https://www.gov.uk/government/publications/joined-up-data-in-government-the-future-of-data-linking-methods/splink-mojs-open-source-library-for-probabilistic-record-linkage-at-scale
+
+Why this is a useful fifth case:
+
+Data First is not primarily a direct-user service, pre-submission nudge, individual operator decision-support step, or formal adjudicative record.
+
+Splink probabilistically links person records across justice datasets. The linked/deduplicated identifiers are added to versioned research datasets used by accredited researchers for justice-system analysis. The datasets are explicitly described as research inputs rather than operational decision tools.
+
+The public ATRS record says:
+- linkage outputs are reviewed before release;
+- samples of records/person clusters are manually reviewed;
+- researchers do not receive PII and therefore are not expected to be able to verify whether a particular individual link is correct;
+- researchers can report an apparent error/anomaly;
+- MoJ says such issues can be addressed in the next model iteration cycle;
+- Data First datasets are periodically republished with refreshed/improved linkage;
+- research based on those datasets may contribute to a future policy evidence base.
+
+This creates a route shaped like:
+
+```text
+SOURCE ADMINISTRATIVE RECORDS
+-> PROBABILISTIC LINKAGE
+-> VERSIONED DATA FIRST DATASET
+-> RESEARCH ANALYSIS
+-> RESEARCH OUTPUT
+-> POSSIBLE POLICY EVIDENCE
+```
+
+and a correction path shaped like:
+
+```text
+RESEARCHER SUSPECTS ANOMALY
+-> FEEDBACK TO DATA FIRST
+-> MOJ LINKAGE REVIEW
+-> MODEL / LINKAGE CORRECTION
+-> NEXT DATASET ITERATION
+```
+
+The second chain does not automatically establish propagation through the first.
+
+## Test against the six-question answerability sketch
+
+For the dataset/linkage layer:
+
+1. **Affected layer**
+   - linked identifier / versioned Data First dataset.
+
+2. **Initiator**
+   - MoJ/internal reviewers;
+   - accredited researcher can report a suspected anomaly even though they cannot inspect PII-level truth directly.
+
+3. **Reviewer**
+   - MoJ Data First / Internal Data Linking team.
+
+4. **Review resolution**
+   - linkage/model/dataset level, potentially prompted by a researcher's anomaly report.
+
+5. **Changeable consequence**
+   - linkage model and a later dataset release can change.
+
+6. **Correction clock**
+   - pre-release QA exists;
+   - post-release anomaly correction is described through a future model/data iteration.
+
+The six questions still describe the local route.
+
+## What looked like a missing seventh dimension
+
+The harder question is downstream:
+
+> If a linkage error is corrected in a later Data First release, what happens to analysis already performed from the earlier release?
+
+The public sources checked establish periodic republishes and future correction opportunity. They do **not** establish:
+- automatic notification to every researcher who used an older affected state;
+- automatic re-execution of prior analysis;
+- correction of already-published academic outputs;
+- propagation into policy products that may have cited earlier research.
+
+At first glance this looks like a missing **correction propagation** dimension.
+
+But adding a seventh field is not yet justified.
+
+The cleaner representation is recursive:
+
+```text
+ROUTE A:
+LINKAGE / DATASET
+-> INITIATOR
+-> REVIEWER
+-> DATASET-LEVEL CHANGE
+-> RELEASE CLOCK
+
+THEN ASK ROUTE B:
+CORRECTED DATASET
+-> WHICH DOWNSTREAM RESEARCH OUTPUT IS AFFECTED?
+-> WHO CAN INITIATE RE-ANALYSIS / CORRECTION?
+-> WHO REVIEWS?
+-> WHAT OUTPUT CAN CHANGE?
+-> ON WHAT CLOCK?
+
+THEN, IF NEEDED, ROUTE C:
+CORRECTED RESEARCH OUTPUT
+-> POLICY / OPERATIONAL CONSEQUENCE
+-> ...
+```
+
+So the load-bearing issue is not necessarily another dimension.
+
+It is whether an answerability route **connects to the next dependent affected layer**.
+
+Candidate sharpening:
+
+```text
+LOCAL CORRECTION ROUTE EXISTS
+!=
+DOWNSTREAM CORRECTION PROPAGATES
+
+ROUTE LEGIBLE AT LAYER N
+!=
+ROUTE CONNECTED TO LAYER N+1
+
+ANSWERABILITY ACROSS A CHAIN
+=
+LOCAL ROUTE
++ DEPENDENCY / HANDOFF TO NEXT AFFECTED LAYER
+```
+
+This is already compatible with project structures:
+- TRACE carriers / dependency / state / correction channel / clocks;
+- Mechanical Ethics correction-before-hardening and consequences;
+- THR impact-route thinking;
+- EvidenceWatch downstream-dependency routing.
+
+Therefore:
+
+```text
+PROPAGATION SHARPENING
+!= NEW TRACE PRIMITIVE
+
+RECURSIVE ROUTE APPLICATION
+MAY BE ENOUGH
+```
+
+## Positive owner subtraction
+
+The Data First design already contains substantial integrity controls:
+- pre-release manual review;
+- multiple linkage confidence thresholds for researcher sensitivity analysis;
+- explicit caveat/limitations guidance;
+- periodic dataset re-release;
+- open-source linkage software/methodology;
+- a public feedback route.
+
+Do not turn downstream-propagation uncertainty into a claim that the Data First process is unanswerable or defective.
+
+## Ceilings
+
+The public evidence does **not** establish:
+- a known erroneous Data First linkage;
+- a published paper that relied on a bad link;
+- a policy error caused by linked-data error;
+- that prior researchers are not informed when a release changes;
+- that correction propagation is absent in unpublished operational practice;
+- that a data subject has or lacks a legally required personal correction route through Data First.
+
+## Falsification result
+
+The fifth case does not yet break the six-question sketch.
+
+It sharpens how to use it:
+
+> Apply the route at one affected layer, then ask whether the corrected state is actually connected to the next dependent layer that may now be stale.
+
+This turns "correction propagation" into a **route-chaining test** rather than a speculative seventh dimension.
+
+Preserve:
+
+```text
+SIX QUESTIONS SURVIVED FIFTH DISTINCT CASE
+!= VALIDATION
+
+ROUTE CHAINING
+!= AUTOMATIC PROPAGATION
+
+NEXT-LAYER HANDOFF ABSENT FROM PUBLIC RECORD
+!= REAL-WORLD HANDOFF ABSENT
+```
+
+Project routing:
+- keep TRACE v0.4.0 / ME v0.8.0 frozen;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no ATRS #364 wake;
+- no MoJ contact;
+- keep the answerability sketch provisional;
+- next hostile case should preferably test multi-actor or cross-jurisdiction correction rather than another simple individual appeal path.
+
+Current disposition:
+
+**SKETCH SURVIVED / PROPAGATION SHARPENED AS ROUTE CHAINING / NO NEW DIMENSION / NO PATCH.**
+
+Coordination record: COM #575.
+
