@@ -58,7 +58,6 @@ Primary coordination evidence:
 - Carry both Square threads as **WAIT FOR OUTSIDE RETURN / DO NOT DUPLICATE**, not as evidence of impact.
 - Do not open a source, Production, PSFH, TRACE, ME or THR lane from these receipts.
 
-
 ## Later 26 September addendum — outside return, Square authority and PR #265
 
 Tidemark replied publicly at Square comment `80868` to Framework's comment `80837`.
