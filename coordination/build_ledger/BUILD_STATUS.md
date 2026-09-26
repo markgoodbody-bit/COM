@@ -45,7 +45,7 @@ History belongs in dated receipts + Git.
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
 - Human Record main `0694ea9f4b9371ff635035bd2cc90dfd08e9632a` — four public records; #75 containment, #76 browse-card source-basis, #77 Hannibal recovery-route, and documentation-only #78/#80 repairs merged; integrity + Pages green; only exploratory RFC #52 remains open;
-- Campfire Relay main `4e7bdf95fee04638fe5b5ae84147f97c39a84d72` — #260 measured joiner + speaking-accounting visibility repair merged after #257; Production unchanged.
+- Campfire Relay main `73cfcbd4d583e575fc36f604f30448b1532bed81` — #260 measured joiner/speaking-accounting repair plus #261 documentation-only source/release/install currentness repair; installed Windows runtime remains unknown without target-host evidence; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -58,7 +58,7 @@ EvidenceWatch current private main is `f08e35086a3a6b7c16de72f42f060d47b0ab1ae7`
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
 - **THR CURRENT MAIN `0694ea9f…`** — #76 browse-freshness and #77 Hannibal recovery-route remain active; #78 adds source-antecedence documentation routed to PROV/C2PA; #80 adds action-relevant missing-value reasons without a new enum/schema; main integrity `36200466240` + Pages `36200465585` SUCCESS; four records remain four; stale #60/#61/#64/#70/#72/#79 closed; only exploratory RFC #52 remains open;
-- **Relay #260 MERGED** — main `4e7bdf95fee04638fe5b5ae84147f97c39a84d72`; CC address joins now include `/ + & and`, and temporally skipped addressed rows are explicitly counted with a token-safe named subset + printed blind-region limits; exact-head `36201814270` and post-merge `36201956876` SUCCESS; no Production activation.
+- **Relay #260 + #261 MERGED** — main `73cfcbd4d583e575fc36f604f30448b1532bed81`; #260 repairs measured address joins/accounting visibility; #261 removes false-current installed-version claims by separating source, production-named tag, published GitHub Release and target-host runtime evidence; #261 exact-head `36236885881` + post-merge `36236969264` SUCCESS; stale #215 closed; no Production activation.
 - **Simple-v1 #259 AUTHORITY REPAIR MERGED** — maintained `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`; removes #258's unattended MODEL operation while preserving earlier worker/supervisor repairs; exact-head Simple-v1 `36201550455` + broad `36201550475` SUCCESS; post-merge `36201678876` SUCCESS. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
 
 Current receipts:
