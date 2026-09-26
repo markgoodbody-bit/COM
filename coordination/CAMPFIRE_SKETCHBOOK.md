@@ -3409,3 +3409,236 @@ Current disposition:
 
 Coordination record: COM #596.
 
+## 26 September 2026 — NHS McCloud Remedy: a correction programme can become a second harm-bearing process
+
+Status: **WORLD / REAL USE FIELD WITNESS / NON-AI CROSS-DOMAIN TRANSFER / EXISTING ME-TRACE STRUCTURES SURVIVE / NO PROJECT DELTA**
+
+Primary official surfaces:
+- DHSC independent review:
+  https://www.gov.uk/government/publications/mccloud-remedy-project-recovery-plan-review-update
+- Ministerial statement, 2 September 2026:
+  https://questions-statements.parliament.uk/written-statements/detail/2026-09-02/hcws307
+- NHSBSA McCloud Remedy hub:
+  https://www.nhsbsa.nhs.uk/public-service-pensions-remedy-mccloud
+
+Purpose:
+
+Pressure-test Mechanical Ethics / TRACE on a non-AI institutional correction programme.
+
+The McCloud Remedy exists because earlier public-service pension changes produced age-discriminatory treatment. The remedy is intended to give eligible members a fair choice and correct the earlier treatment.
+
+The independent review then examined the delivery system created to carry that correction.
+
+## Bounded current evidence
+
+The review records meaningful improvement in governance, programme management, visibility, planning and operational capability.
+
+It also records serious remaining conditions:
+- missed statutory/programme deadlines;
+- delivery dates that the review could not fully assure;
+- material data, supplier, automation and capacity dependencies;
+- interest liabilities that increase with each month of delay;
+- member experience described as notably poor, principally because of delays and limited communication;
+- long waits and confusion among affected members;
+- customer communication that had often been reactive;
+- trust/confidence damaged by delay and subsequent silence;
+- lack of transparency itself further eroding confidence;
+- weak McCloud-specific customer-experience measurement;
+- manual/paper-heavy processes and limited self-service.
+
+The September ministerial statement separately says:
+- a comprehensive administration audit is being led by the Government Actuary's Department;
+- around 95% of members are expected to be unaffected by newly identified administration issues;
+- directly affected members will be contacted;
+- records will be corrected and pension awards updated where appropriate;
+- interest will be payable where payments/increases are due.
+
+Do not collapse:
+- the original age-discrimination remedy;
+- delivery delays in the remedy;
+- separately discovered historic/current administration defects;
+- the later audit/correction programme.
+
+They are related but distinct layers.
+
+## Mechanical Ethics pressure
+
+This is a clear worked instance of:
+
+```text
+ORIGINAL HARM
+-> FORMAL REMEDY CREATED
+-> REMEDY DELIVERY SYSTEM
+-> DELAY / UNCERTAINTY / COMMUNICATION BURDEN
+-> SECOND-ORDER HARM DELTA
+-> RECOVERY / AUDIT / FURTHER CORRECTION
+```
+
+Therefore:
+
+```text
+REMEDY PROGRAM
+!=
+HARM-FREE CORRECTION
+
+LEGAL / POLICY CORRECTION
+!=
+INDIVIDUAL CORRECTION DELIVERED
+
+CORRECTION DELAY
+HAS ITS OWN ΔH
+
+REMEDY INTENT
+!=
+REMEDY EXPERIENCE
+```
+
+The most important point is not that the institution failed to care.
+
+The review explicitly records committed staff and meaningful progress.
+
+The point is structural:
+
+> a system created to repair an earlier injustice can itself transfer uncertainty, waiting, communication burden and financial exposure onto the people awaiting repair.
+
+That is already inside Mechanical Ethics' existing language of burden, clocks, harm deltas, power and correction-before-hardening.
+
+No new primitive is needed.
+
+## Compensation does not collapse all harm dimensions
+
+Existing mitigation includes:
+- interest on arrears where due;
+- compensation routes for direct financial loss;
+- priority handling for some members;
+- revised planning/governance;
+- improved communications recommendations;
+- wider audit.
+
+These matter.
+
+But:
+
+```text
+FINANCIAL COMPENSATION
+!=
+TIME RESTORED
+
+INTEREST
+!=
+CERTAINTY RESTORED
+
+PAYMENT CORRECTION
+!=
+TRUST AUTOMATICALLY RESTORED
+
+FINAL BENEFIT CORRECT
+!=
+INTERIM BURDEN ABSENT
+```
+
+This does not mean compensation is inadequate in law or practice in every case.
+
+It means the harm ledger should not collapse all burdens into the final cash amount.
+
+## TRACE pressure
+
+The case is also a clean layered/clocks example.
+
+Possible route:
+
+```text
+PAST POLICY / SCHEME STATE
+-> COURT / REMEDY RULE
+-> MEMBER RECORD STATE
+-> REMEDIAL SERVICE STATEMENT
+-> MEMBER CHOICE
+-> ENACTMENT
+-> UPDATED AWARD / PAYMENT
+```
+
+Each layer has a different clock and different failure modes.
+
+A high-level policy remedy can be "done" while an individual's correction remains not yet delivered.
+
+Preserve:
+
+```text
+POLICY REMEDY STATE
+!=
+MEMBER CASE STATE
+
+PROGRAMME MILESTONE
+!=
+INDIVIDUAL CORRECTION WINDOW
+
+AGGREGATE PROGRESS
+!=
+AFFECTED PERSON'S WAIT OVER
+```
+
+This is not a TRACE ontology expansion; it is a worked transfer of existing state/layer/clock distinctions.
+
+## Strong-owner subtraction
+
+Stronger owners already exist for:
+- pension law/remedy design;
+- pension administration;
+- scheme governance;
+- audit/assurance;
+- customer communications;
+- financial compensation and interest;
+- programme delivery.
+
+The project does not own those domains.
+
+The useful contribution is only the portable cross-domain visibility pattern:
+
+> when judging a remedy, measure not just whether the original wrong has a correction policy, but whether the correction path itself is accumulating avoidable harm before the member reaches the corrected state.
+
+## Ceilings
+
+Do not infer:
+- that every affected NHS Pension Scheme member has suffered financial loss;
+- that the final remedy is legally inadequate;
+- that delays were intentional;
+- that all members are affected by newly identified administration issues;
+- that interest/compensation is ineffective;
+- that the independent review establishes every individual case error;
+- partisan motive or blame.
+
+The review itself is explicit that it is not an exhaustive audit of every case or historical issue.
+
+## Falsification result
+
+Mechanical Ethics / TRACE survive this non-AI transfer without new semantics.
+
+The case earns a strong worked distinction:
+
+```text
+CORRECTION EXISTS
+!=
+CORRECTION REACHED
+
+REMEDY UNDERWAY
+!=
+HARM ACCUMULATION STOPPED
+```
+
+and a practical question:
+
+> **What harm is accumulating while the correction mechanism itself is still in flight?**
+
+Project routing:
+- keep TRACE v0.4.0 / ME v0.8.0 source frozen;
+- no THR record/schema;
+- no pension-domain method;
+- preserve as a worked cross-domain teaching/field case;
+- no external contact.
+
+Current disposition:
+
+**STRONG REAL-WORLD TRANSFER / EXISTING SEMANTICS SURVIVE / REMEDY-PROCESS ΔH MADE VISIBLE / NO PATCH.**
+
+Coordination record: COM #599.
+
