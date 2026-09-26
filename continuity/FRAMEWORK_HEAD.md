@@ -48,8 +48,9 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **26 September 2026 — EvidenceWatch retrospective integrity frozen / Zotero Stage 1 current**
+Updated: **26 September 2026 — fresh answerability-route field sequence / EvidenceWatch gates current**
 Rule: later live source and direct Mark direction win.
+Shared Campfire sketchbook now includes the fresh four-case answerability sequence through COM #569; newest field test is VAT Assist. Read delta-first rather than replaying the whole notebook.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
 
@@ -95,6 +96,7 @@ Formal baselines:
 
 - **model/runtime proof:** RFC 9334 RATS plus the current AIR draft are the stronger owners for attestation. The project retained the distinction `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY`; Relay #264 repaired only the local evidence wording. No parallel attestation protocol, THR field or TRACE/ME primitive was earned.
 - **CPS Beam Notes / ATRS:** the current public record contains an unresolved Azure summarisation-route tension while CPS digital-material guidance already owns important audit-trail/provenance requirements. Preserved as COM #498/#499 field witness: `PUBLIC_RECORD_CONTRADICTION != OPERATIONAL_FAILURE`; no compliance conclusion, contact or project patch.
+- **answerability-route field sequence:** HMCTS BenchNotes, MoJ e-supervision, HMRC Business Propensity to Pay and HMRC VAT Assist now form a four-case contrast. Provisional teaching compression: `ANSWERABILITY != APPEAL_PRESENT`; inspect affected layer -> initiator -> reviewer -> review resolution -> changeable consequence -> correction clock. VAT Assist tested the sketch at the pre-hardening/user-control edge without forcing a seventh dimension. Preserve: **TEACHING COMPRESSION != NEW TRACE/ME PRIMITIVE**, **FOUR CASES != ATRS POPULATION RESULT**.
 - **EvidenceWatch:** stronger-owner subtraction now leaves only the narrow post-reliance change seam: an already-relied-on source materially changes outside new-study/formal-status routes. Public pair literature shows the class is non-zero but does not establish living-review workflow incidence or product-scale burden.
 - **retrospective challenge:** the executable Brierley v2 corpus is frozen into 22 owner-labelled major-change pairs plus 22 clean reconstructable matched no-change controls. v1 is preserved as a failed pre-run design after no-spend source reconstruction exposed unreconstructable/unclean controls. Hosted no-spend reconstruction `36260538589` is SUCCESS; comparator-integrity integration later passed full no-spend pipeline `36268383444`; packet SHA `f12762d4…`, owner-key SHA `75c64ca3…`; missing/malformed lexical comparator evidence now fails closed rather than routing to a surviving signal; no provider call or result exists.
 - **Digital Science:** remains the primary near-term resource target. Proposal/application currentness is repaired; Stage 1 now starts read-only against Zotero's existing API/version substrate rather than inventing library sync or write-back; judge rehearsal is current. General Site Content licence terms are reviewed, while Catalyst-specific award/IP terms and later form fields remain behind Mark's identity gate.
