@@ -79,7 +79,7 @@ Reacquired before this compaction:
 
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
-- The Human Record main: `0694ea9f4b9371ff635035bd2cc90dfd08e9632a` — four public records; #75 containment, #76 browse-freshness, #77 Hannibal recovery-route and documentation-only #78/#80 repairs merged; main integrity + Pages green;
+- The Human Record main: `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 repairs plus bounded read-only impact routing #81 merged; main integrity + Pages green; open THR PRs = 0;
 - Campfire Relay main: `73cfcbd4d583e575fc36f604f30448b1532bed81` — #260 COMSYNC joiner/accounting repair plus #261 source/release/install-currentness documentation repair; no Production activation; installed Windows runtime remains unverified here.
 
 Formal baselines:
@@ -265,13 +265,13 @@ stewardship = OFFERED / NOT ACCEPTED
 portable contribution route = LIVE
 ```
 
-The 22–23 September entity-through-time Campfire pressure does **not** currently earn a new THR root architecture. Existing THR PR #52 already owns the exploratory fractal/owner-subtraction lane and current THR models already separate mentions, entities, assertions, correction and living-subject boundaries. Useful remaining pressure is temporal/currentness discrimination and subject obligations, not a universal living-person graph.
+The 22–23 September entity-through-time pressure did **not** earn a new THR root architecture. Exploratory THR PR #52 is now closed unmerged after its one executable residue was extracted through #81: a bounded read-only impact query over existing source/assertion/catalogue relations. Current THR models still separate mentions, entities, assertions, correction and living-subject boundaries. Useful remaining pressure is real cross-record fan-out, temporal/currentness discrimination and subject obligations—not a universal living-person graph.
 
 19 September record-5 quarries:
 - Anthropic correction lineage -> strongest owner already preserves original + revision + reason;
 - digital-preservation candidates -> stronger active preservation/legacy owners.
 
-Current THR main is `0694ea9f4b9371ff635035bd2cc90dfd08e9632a`. Main integrity `36200466240` and Pages deployment `36200465585` are observed SUCCESS. Documentation-only #78/#80 add source-antecedence and action-relevant missing-value distinctions without schema/record growth; receipt: `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`. The only remaining open THR PR is exploratory RFC #52.
+Current THR main is `2d0cf64e685224b3c8183f5e83e18143bb16f0c7`. Main integrity `36237522858` and Pages deployment `36237522573` are observed SUCCESS. Documentation-only #78/#80 remain active; #81 adds bounded read-only impact routing with no schema/type/record growth. Exploratory RFC #52 is closed unmerged with research history preserved. Open THR PRs = 0. Receipts: `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md` and `coordination/build_ledger/THR_FRACTAL_RFC_RESIDUE_EXTRACTION_20260926.md`.
 
 PR #75 repaired entity-admission containment/catalogued-record linkage. PR #76 repaired stale browse-card source-basis detection. PR #77 then used that guard during a real record maintenance pass: Hannibal v0.1.3 now records a bounded Internet Archive / New York Public Library recovery route for the Polybius printed-edition family, while explicitly leaving exact physical printing/reprint state and exact Thayer HTML identity unresolved. Exact #77 head `a80f2c1f51528b50b5eae24bb6a8635606205642`; exact-head validation `36198799678` SUCCESS. The human view, catalogue source pins and browse-card basis were re-reviewed/re-pinned; browse summary prose, schema and four-record count did not change. Old #63/#71 are closed as superseded.
 
