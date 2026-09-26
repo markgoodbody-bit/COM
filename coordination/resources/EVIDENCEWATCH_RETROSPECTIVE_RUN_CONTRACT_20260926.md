@@ -191,6 +191,32 @@ Also report:
 
 Do not collapse failures out of denominators without showing both strict and available-case views.
 
+## Trivial baseline comparison
+
+Pre-model lexical baselines are frozen separately at:
+`coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_TRIVIAL_BASELINE_20260926.md`
+
+Offline scorer:
+`research/evidencewatch_retrospective/score_trivial_baselines.py`
+
+Current pre-model complete-case AUCs are approximately:
+- token-set Jaccard distance: `0.787081`;
+- token-multiset Jaccard distance: `0.779904`;
+- token-count delta: `0.794258`.
+
+Three owner-labelled no-change controls lack a usable published abstract in the pinned owner TSV; they remain in the 44-case model run but are missing from these lexical complete-case metrics.
+
+After model output is frozen and labels are unblinded:
+- report lexical coverage and AUC beside the model's strict 44-case sensitivity / false-alert rate;
+- for each lexical metric, report the best descriptive sensitivity available at or below the model's observed false-alert rate;
+- label that matched operating-point comparison as post-unblinding descriptive analysis, not a predeclared threshold test;
+- do not drop model failures or lexical-missing controls from the headline result.
+
+```text
+MODEL PERFORMANCE ~= TRIVIAL TEXT BASELINE -> NARROW MODEL-VALUE CLAIM
+TRIVIAL TEXT DISTANCE != SEMANTIC MATERIALITY
+LEXICAL AUC != WORKFLOW VALUE
+```
 ## Interpretation ceiling
 
 A strong result could show only:
