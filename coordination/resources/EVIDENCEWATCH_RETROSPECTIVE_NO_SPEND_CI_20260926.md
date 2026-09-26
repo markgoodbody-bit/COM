@@ -2,11 +2,20 @@
 
 Date: 26 September 2026
 
-Status: **HOSTED NO-SPEND GATE PREPARED / PRIVATE-CHECKOUT LIMIT EXPLICIT**
+Status: **HOSTED NO-SPEND GATE SUCCESS / V2 RAW-OWNER RECONSTRUCTION VERIFIED / PRIVATE-CHECKOUT LIMIT EXPLICIT**
 
 Workflow:
 `.github/workflows/evidencewatch-retrospective-pipeline.yml`
 
+Hosted receipt:
+- workflow run `36260538589`: **SUCCESS**;
+- executable manifest: `research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json`;
+- v1 preserved as pre-run source-integrity failure;
+- packet SHA-256: `f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc`;
+- key SHA-256: `75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9`;
+- lexical AUCs: `0.799587`, `0.795455`, `0.793388` with 22+22 complete text pairs;
+- synthetic conservative scorer test: TP 21 / FN 1 / FP 1 / TN 21 under one failed positive + one failed control;
+- provider credentials/calls: none.
 Purpose:
 
 Exercise the frozen retrospective machinery end-to-end as far as COM's hosted CI can honestly reach, before any NVIDIA provider execution.
@@ -19,8 +28,8 @@ The workflow:
 1. checks out COM;
 2. downloads only the two required public Brierley owner files from exact commit `a07c570c...` and verifies their Git blob identities (`abstract_scoring.csv = da5d6080...`, `all_pairs.tsv = 3c26344f...`);
 3. compiles all Python retrospective scripts and runs `node --check` on the execution harness;
-4. recomputes the frozen 22+22 selection from owner `abstract_scoring.csv`;
-5. reconstructs blinded packet + owner key from pinned `all_pairs.tsv`;
+4. recomputes the frozen v2 22+22 selection from both pinned owner files, including clean text reconstructability;
+5. reconstructs blinded packet + owner key from pinned `all_pairs.tsv` and checks their exact v2 SHA-256 identities;
 6. recomputes trivial lexical baselines and asserts exact pre-model AUCs;
 7. asserts the harness fails closed before provider access when the required EvidenceWatch checkout is absent;
 8. creates a synthetic, structurally valid 44-case pre-unblind result;
