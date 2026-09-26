@@ -148,6 +148,28 @@ This specimen directly subtracts several possible EvidenceWatch claims:
 
 Therefore EvidenceWatch cannot justify itself by saying review teams simply fail to notice preprint-to-publication transitions or do not know to re-extract changed evidence.
 
+## Stronger owner for the successor link itself
+
+The preprint -> journal-publication transition is also not an unowned discovery problem.
+
+Current scholarly infrastructure already exposes explicit version relationships:
+- Crossref supports `isPreprintOf` / `hasPreprint` typed relationships between posted content and later accepted/version-of-record outputs;
+- Crossref performs title/first-author matching and notifies preprint depositors of candidate article matches for review/deposit;
+- Europe PMC links preprint versions and, when available, links the preprint to the peer-reviewed published article;
+- Sciety's public activity surface exposes the exact Lombardi preprint -> `10.1016/j.cmi.2020.06.013` publication event.
+
+Therefore:
+
+```text
+PREPRINT -> FINAL-PUBLICATION LINK DISCOVERY
+!= EVIDENCEWATCH VALUE CLAIM
+
+SCHOLARLY VERSION RELATIONSHIP METADATA
+= STRONGER OWNER INPUT
+```
+
+EvidenceWatch should consume or interoperate with these owner signals where available rather than model-guessing source succession from text similarity.
+
 ## Residual product hypothesis after this specimen
 
 The surviving question becomes smaller:
