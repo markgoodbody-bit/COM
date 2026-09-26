@@ -2542,3 +2542,259 @@ Current disposition:
 
 Coordination record: COM #579.
 
+## 26 September 2026 — DSIT Consult breaks the repaired answerability teaching surface at witness/initiator separation
+
+Status: **FRESH-CASE FALSIFICATION / DIFFUSE-COLLECTIVE EFFECT / SECOND TEACHING REPAIR EARNED / NO NEW SEMANTIC PRIMITIVE**
+
+Primary official surfaces:
+- DSIT Consult ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/dsit-consult
+- Cabinet Office consultation principles:
+  https://www.gov.uk/government/publications/consultation-principles-guidance/consultation-principles-2018
+
+Why this is structurally distinct:
+
+Consult does not primarily act on one person through a bounded operational decision.
+
+It processes many public consultation responses through an LLM pipeline:
+- sentiment analysis;
+- topic generation;
+- topic consolidation;
+- topic refinement;
+- topic mapping back to individual responses.
+
+Its outputs help civil servants build an initial thematic view of a consultation and can inform the eventual consultation report.
+
+The ATRS record says:
+- no citizen directly interacts with the tool;
+- civil servants review and critique the outputs;
+- users can edit AI outputs;
+- the tool is assistive and does not make policy decisions;
+- proprietary-model opacity is a recognised risk;
+- biased or misleading interpretations are a recognised risk;
+- the team recognises legal/process concerns around preserving the requirement that responses are appropriately read and considered.
+
+The public consultation principles separately say:
+- consultation responses should be taken into account when policy is taken forward;
+- government should later explain what responses were received and how they informed policy;
+- the published government response should facilitate scrutiny.
+
+This gives a different chain:
+
+```text
+INDIVIDUAL RESPONSE
+-> AI SENTIMENT / TOPIC CLASSIFICATION
+-> AGGREGATE THEME FRAMEWORK
+-> CIVIL-SERVICE ANALYSIS / QA
+-> CONSULTATION REPORT
+-> POLICY DEVELOPMENT
+-> LATER PUBLIC SCRUTINY
+```
+
+## Test against the repaired seven-question teaching surface
+
+Current questions before this case:
+
+1. affected layer;
+2. initiator;
+3. reviewer;
+4. who can act / under what authority;
+5. review resolution;
+6. changeable consequence;
+7. correction clock.
+
+The case exposes a prior hidden assumption.
+
+Suppose an individual response is:
+- assigned the wrong sentiment;
+- mapped to the wrong topic;
+- omitted from a material theme;
+- absorbed into a misleading aggregate pattern.
+
+The respondent may be affected in the sense that their contribution is no longer represented as intended.
+
+But:
+
+> How would that respondent know?
+
+The public record says civil-service users can inspect/edit tool outputs. It does not establish that each respondent can inspect their own internal sentiment/topic mapping.
+
+The later public consultation response enables aggregate scrutiny of what government says it heard and how this informed policy. That is valuable, but it is not equivalent to visibility into the internal mapping of one contribution.
+
+Therefore:
+
+```text
+AFFECTED ENTITY
+!= WITNESS OF ERROR
+
+WITNESS OF ERROR
+!= INITIATOR OF CORRECTION
+
+CORRECTION ROUTE EXISTS
+!= SOMEONE CAN SEE ENOUGH TO TRIGGER IT
+```
+
+## Second teaching repair earned
+
+The question:
+
+> **Who can observe / witness enough of the error to know correction is needed?**
+
+is load-bearing before:
+
+> Who can initiate correction?
+
+Repaired teaching surface:
+
+```text
+AFFECTED LAYER
+-> WITNESS / OBSERVABILITY
+-> INITIATOR
+-> REVIEWER
+-> WHO CAN ACT / UNDER WHAT AUTHORITY
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+The wording may later compress further, but the distinction must survive.
+
+## Why this is not a new TRACE / ME primitive
+
+The deeper project already carries the relevant structures:
+- witness independence;
+- bounded perception / aperture;
+- evidence visibility;
+- actor / affected entity distinction;
+- answer-back / correction channel;
+- authority and capability;
+- clocks.
+
+So:
+
+```text
+TEACHING SURFACE FAILED AGAIN
+!= SEMANTIC FRAMEWORK FAILED
+
+WITNESS QUESTION EARNED
+!= NEW ONTOLOGY EARNED
+```
+
+Again, the middle-out pattern is useful:
+a real case reveals that a compact reader-facing sequence had collapsed distinctions the deeper language already knew.
+
+## Diffuse and collective answerability
+
+This case also sharpens what "affected layer" can mean.
+
+The affected object may not be only:
+- one person's formal decision;
+- one record;
+- one score.
+
+It may be:
+- representation of a person's contribution;
+- aggregate representation of a group of contributions;
+- a thematic account used in policy formation.
+
+Therefore:
+
+```text
+NO SINGLE INDIVIDUAL DECISION
+!= NO CONSEQUENTIAL REPRESENTATION
+
+AGGREGATE OUTPUT
+CAN STILL HAVE
+DISTRIBUTED / COLLECTIVE AFFECTED PARTIES
+```
+
+This still fits the existing **affected layer** question; no additional "collective" field is earned.
+
+## Positive owner subtraction
+
+Do not turn the observability seam into a claim that Consult has no correction safeguards.
+
+The public record contains meaningful safeguards:
+- civil-servant review and critique;
+- editable AI outputs;
+- domain-expert involvement;
+- assistive rather than autonomous use;
+- model-performance comparison with human labellers;
+- acknowledgement of opacity and bias risk;
+- later public consultation-response publication and scrutiny principles.
+
+Consult's own evaluation also shows the task is not mechanically objective:
+human labellers agree with each other imperfectly on theme mapping, and the AI likewise has imperfect agreement with the supervisor.
+
+That makes human disagreement itself part of the evidence rather than proof that every divergence is an algorithmic error.
+
+## Ceilings
+
+The public evidence does **not** establish:
+- that a real consultation response has been materially misrepresented by Consult;
+- that a respondent lacks every route to raise concern with the responsible department;
+- that civil servants cannot inspect response-level mappings;
+- that internal audit/version history is absent;
+- that a published consultation response would fail to expose a serious aggregate distortion;
+- that Consult is unlawful, unfair or ineffective;
+- that pre-deployment design will remain unchanged.
+
+The ATRS page itself says department-specific review/appeal handling varies.
+
+## Falsification result
+
+The repaired seven-question teaching surface does **not** survive unchanged.
+
+A second teaching-level repair is earned:
+
+> Make observability/witness explicit before initiation.
+
+Preserve:
+
+```text
+SEVEN-QUESTION TEACHING SURFACE
+= FALSIFIED ON DIFFUSE / COLLECTIVE CASE
+
+AFFECTED != ABLE TO WITNESS
+
+WITNESS != INITIATOR
+
+PUBLIC AGGREGATE SCRUTINY
+!= INDIVIDUAL INTERNAL-MAPPING VISIBILITY
+
+DEEPER TRACE / ME SEMANTICS
+= UNCHANGED
+```
+
+Current preferred teaching sequence:
+
+```text
+AFFECTED LAYER
+-> WITNESS / OBSERVABILITY
+-> INITIATOR
+-> REVIEWER
+-> WHO CAN ACT / UNDER WHAT AUTHORITY
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+Route chaining / branching still remain use instructions rather than new fields:
+- repeat the sequence at the next affected layer;
+- follow branches where different actors/authorities can act.
+
+Project routing:
+- repair provisional teaching compression only;
+- keep TRACE v0.4.0 / ME v0.8.0 frozen;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no ATRS #364 population wake;
+- no DSIT contact;
+- next test should target a case where **nobody can directly observe the ground truth at decision time**, to test whether witness/observability needs further subdivision into source access versus independent verification.
+
+Current disposition:
+
+**TEACHING SURFACE FALSIFIED AGAIN / WITNESS-INITIATOR SPLIT EARNED / SEMANTIC FRAMEWORK UNCHANGED.**
+
+Coordination record: COM #581.
+
