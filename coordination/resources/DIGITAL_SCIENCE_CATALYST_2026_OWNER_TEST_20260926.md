@@ -1,0 +1,88 @@
+# Digital Science Catalyst 2026 — EvidenceWatch owner-test matrix
+
+Date: 26 September 2026
+
+Status: **PRE-SUBMISSION EVIDENCE CHECK / NOT SUBMITTED / HUMAN GATE UNCHANGED**
+
+Owner surfaces rechecked 26 September 2026:
+- https://www.digital-science.com/about-us/investment/catalyst-grant/
+- live Google Form landing page linked by the owner page.
+
+The owner explicitly asks applicants to test six things before applying:
+1. the research decision, who makes it, when/how often;
+2. research-lifecycle fit;
+3. the existing tool/system the agent must live inside;
+4. whether the work genuinely needs multiple steps;
+5. a task the agent should refuse, flag or escalate;
+6. a measurable outcome.
+
+## Current EvidenceWatch fit
+
+| Owner test | Current EvidenceWatch answer | Evidence state |
+| --- | --- | --- |
+| Research decision | Whether already-relied-on evidence changed enough to reopen affected synthesis/review work | **DEFINED / NOT USER-VALIDATED** |
+| Who / how often | Living systematic review team. Public Bern exemplar ran weekly searches adding 100–200 records and checked preprint status each update | **PUBLIC BASELINE / NOT UNIVERSAL FREQUENCY** |
+| Lifecycle | Evidence synthesis + research integrity | **DIRECT FIT** |
+| Existing tool/system | Proposed first integration target: Zotero / an existing reference library | **FILE HANDOFF EXISTS / LIVE INTEGRATION DOES NOT** |
+| Multi-step need | Observe -> fingerprint -> compare -> analyse relevant change -> preserve authority -> route affected dependents -> human review | **IMPLEMENTED AS PROTOTYPE** |
+| Refuse / flag / escalate | Derivative repetition stays quiet; derivative disagreement flags review; candidate sources cannot gain authority; outage preserves prior state | **DETERMINISTICALLY TESTED / NOT RESEARCHER-VALIDATED** |
+| Primary outcome | Reviewer minutes per correctly handled material-change episode versus existing practice | **PREDECLARED / UNMEASURED** |
+| Secondary outcomes | Time-to-flag, misses, false alerts, setup/maintenance minutes, explanation reconstruction | **PREDECLARED / UNMEASURED** |
+| Current stage | Working standalone prototype, demo, CSL-JSON handoff, pilot protocol/scorer, 62 deterministic tests | **ENGINEERING EVIDENCE** |
+| Users/customers | None | **ABSENT / DISCLOSED** |
+| Competitors/owners | Cochrane, Crossref/Europe PMC, Zotero/Crossmark, ReadCube, scite, Refract, AIEP P170, Digital Science adjacency | **OWNER-SUBTRACTED** |
+| Commercial market | Possible institutional/team workspace/integration buyer; pricing untested | **HYPOTHESIS ONLY** |
+| Team | Mark: systems/infrastructure/audit/failure-recovery expertise; no established research-workflow partner | **ENGINEERING STRENGTH / DOMAIN-PARTNER GAP** |
+| Budget | Staged £5k / £14k / £6k with stop gates | **DRAFT / HUMAN GATE** |
+
+## Public burden baseline
+
+The University of Bern practical guide provides a bounded real-workflow baseline:
+- automated search ran weekly;
+- 100–200 new records were uploaded each week;
+- preprint publication status was checked in each update;
+- data were re-extracted if content changed;
+- the core team reported becoming overwhelmed as screening volume grew and later recruited volunteers.
+
+This establishes recurring workload and the existence of the maintenance task.
+
+It does **not** establish:
+- EvidenceWatch time saving;
+- frequency of material post-reliance changes across all reviews;
+- acceptable miss/false-alert rates;
+- willingness to adopt;
+- Zotero integration value.
+
+## Proposal-body count
+
+Counted on the exact branch source from the first required heading `## 1. THE PROBLEM` through the end of `## 9. BUDGET`.
+
+- whitespace-delimited count: **1,331**
+- word-like-token count: **1,369**
+- owner ceiling: **1,500 words**
+
+Both local methods retain >100 words of headroom. Final copy should still be recounted in the submission editor because Google/word-processor tokenisation can differ.
+
+## Strongest remaining weakness
+
+```text
+WORKING PROTOTYPE
++ PUBLIC WORKFLOW SPECIMEN
++ PREDECLARED PILOT
+!=
+REAL RESEARCHER BENEFIT
+```
+
+The strongest next evidence remains one willing current team, its existing workflow baseline, and measured reviewer minutes / misses / false alerts. More prototype features do not substitute for that.
+
+## Human gate
+
+Still required before any submission:
+- identity/team wording review;
+- live-form later pages and embedded terms;
+- demo-sharing decision;
+- budget acceptance;
+- contact details;
+- final submit.
+
+No form entry, external contact, terms acceptance, identity disclosure or submission is authorised by this note.
