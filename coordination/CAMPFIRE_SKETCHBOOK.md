@@ -3228,3 +3228,184 @@ Current disposition:
 
 Coordination record: COM #585.
 
+## 26 September 2026 — CLOSEDQUORUM: autonomous action selection does not create legitimate authority
+
+Status: **WORLD / REAL USE FIELD WITNESS / AUTONOMOUS HOSTILE ACTUATION / EXISTING SEMANTICS SURVIVE / NO PROJECT DELTA**
+
+Primary owner:
+- Cisco Talos, *The Closed Quorum: Inside the first reported autonomous AI C2 implant*:
+  https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/
+
+Owner ceiling matters:
+
+Talos' static analysis describes a malware architecture that can query several commercial LLMs, aggregate their structured action choices and select a next action without continuing human tasking.
+
+But Talos also states:
+- the publicly observed distribution binary had placeholder provider credentials / webhook;
+- they did not observe a complete end-to-end execution of that public build;
+- in-the-wild deployment was not confirmed.
+
+Therefore:
+
+```text
+ARCHITECTURE CONFIRMED BY STATIC ANALYSIS
+!=
+IN-THE-WILD AUTONOMOUS CAMPAIGN CONFIRMED
+```
+
+Do not inflate the case.
+
+## Why this is useful to the project
+
+The architecture separates roles that ordinary "AI autonomy" language tends to collapse.
+
+At a high level:
+
+```text
+HUMAN DEVELOPER / OPERATOR
+-> DEFINES PURPOSE + AVAILABLE CAPABILITY SPACE + CONFIGURATION
+-> LLM PANEL OBSERVES BOUNDED CONTEXT
+-> LLMs SELECT AMONG PREDECLARED ACTION CLASSES
+-> AGGREGATOR RESOLVES THE SELECTION
+-> MALWARE EXECUTES
+-> TARGET / AFFECTED ENTITY BEARS CONSEQUENCE
+```
+
+The live human operator can disappear from the immediate action loop while human causal design remains upstream.
+
+Working distinctions:
+
+```text
+NO LIVE HUMAN OPERATOR
+!=
+NO HUMAN CAUSAL OWNERSHIP
+
+MODEL VOTE
+!=
+LEGITIMATE AUTHORITY
+
+INTERNAL DECISION AUTHORITY
+!=
+AUTHORITY OVER THE AFFECTED ENTITY
+
+CAPABILITY SPACE SET BY HUMAN
+!=
+NEXT ACTION CHOSEN BY HUMAN
+
+AUTONOMOUS ACTUATION
+!=
+AUTONOMOUS PURPOSE
+```
+
+This is especially useful because "authority" has at least two different senses here:
+
+1. **internal execution authority**
+   - the software accepts the selected model outcome as sufficient to trigger one of its configured capabilities;
+
+2. **legitimate authority over the affected system/person**
+   - absent; the malware's action is hostile/unauthorised from the target's standpoint.
+
+So:
+
+```text
+SYSTEM AUTHORISED ITSELF TO EXECUTE
+!=
+AFFECTED ENTITY AUTHORISED THE ACTION
+```
+
+That distinction was already available in TRACE / Mechanical Ethics through capability, authority, actor/affected entity, action and consequence. No new primitive is earned.
+
+## Voting is not distributed accountability
+
+A multi-model vote can make action selection more resilient to:
+- one provider failing;
+- one response refusing;
+- one malformed answer.
+
+That does not distribute moral/legal answerability among the models.
+
+The vote is an implementation decision procedure.
+
+The load-bearing upstream facts remain:
+- who built/configured the action space;
+- who supplied/authorised credentials/resources;
+- what executable capabilities were exposed;
+- who deployed the system;
+- who is affected;
+- whether the affected party authorised any of it.
+
+Therefore:
+
+```text
+MULTI-MODEL CONSENSUS
+!=
+MULTI-PARTY LEGITIMACY
+
+ROBUSTER DECISION PROCEDURE
+!=
+BETTER-AUTHORISED ACTION
+```
+
+## Correction / stop structure
+
+This is not primarily an "appeal" case.
+
+The affected machine/user is not in a cooperative answerability relationship with the malware.
+
+For the target/defender, stronger owners are ordinary cyber-security controls:
+- detect;
+- contain;
+- revoke;
+- isolate;
+- remediate;
+- investigate.
+
+The project should not pretend to improve malware response by inventing another control framework.
+
+Cisco Talos explicitly routes defenders toward behavioural detection rather than simple provider-domain blocking.
+
+So:
+
+```text
+CYBER DETECTION / RESPONSE
+= STRONGER OWNER
+
+ME / TRACE VALUE HERE
+= ROLE / AUTHORITY / CONSEQUENCE LEGIBILITY ONLY
+```
+
+## Falsification result
+
+The case does **not** break current TRACE / Mechanical Ethics semantics.
+
+It does pressure a useful teaching mistake:
+
+> "the AI decided" can hide the humans who selected the purpose, capability set, configuration and deployment while also hiding that the target never granted legitimate authority.
+
+Preserve:
+
+```text
+DECISION SELECTION
+!= PURPOSE OWNERSHIP
+
+EXECUTION AUTHORITY INSIDE A SYSTEM
+!= LEGITIMATE AUTHORITY OVER ANOTHER ENTITY
+
+AUTONOMY OF LOOP
+!= AUTONOMY OF ORIGIN
+```
+
+Project routing:
+- no TRACE/ME source patch;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no offensive implementation;
+- no provider contact;
+- preserve as a cross-domain field witness for future teaching/transfer.
+
+Current disposition:
+
+**FIELD WITNESS / EXISTING SEMANTICS SURVIVE / AUTHORITY SENSES SHARPENED / NO PATCH.**
+
+Coordination record: COM #596.
+
