@@ -110,7 +110,7 @@ def roc_points(rows: list[dict], metric: str) -> list[dict]:
 
 
 def load_owner_pairs(path: Path) -> dict[str, dict]:
-    with path.open(newline="", encoding="utf-8-sig") as handle:
+    with path.open(newline="", encoding="cp1252") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         rows = {}
         for row in reader:
