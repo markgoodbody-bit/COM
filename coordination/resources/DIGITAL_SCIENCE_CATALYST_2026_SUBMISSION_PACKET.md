@@ -17,13 +17,13 @@ Current proposal word count:
 **1297 words**
 
 Current EvidenceWatch private main:
-`5cb54a07ed75de083b85b1113f829ae4bd5e4a12`
+`f08e35086a3a6b7c16de72f42f060d47b0ab1ae7`
 
 Current CI:
 **SUCCESS**
 
 Current deterministic suite:
-**54 tests / 54 pass**
+**59 tests / 59 pass**
 
 Latest EvidenceWatch main change:
 **real-workflow owner subtraction added after pilot protocol/scorer; runtime semantics unchanged / no live pilot or provider call**
@@ -96,7 +96,7 @@ A concrete refuse/flag behaviour is tested: a derivative source repeating the ow
 
 The user remains accountable. EvidenceWatch never rewrites a brief or declares truth. Tested disagreement, source-loss and candidate-discovery cases preserve state or route review without canonical overwrite; model errors can still go undetected.
 
-The current suite has 54 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
+The current suite has 59 deterministic tests, including correction, duplicate suppression, derivative disagreement, authority boundaries, restart reconstruction, outage/recovery, candidate quarantine, browser-demo behaviour and the CSL-JSON handoff.
 
 ## 4. TEAM
 
