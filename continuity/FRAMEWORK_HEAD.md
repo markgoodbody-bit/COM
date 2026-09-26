@@ -80,7 +80,7 @@ Reacquired before this compaction:
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
 - The Human Record main: `0694ea9f4b9371ff635035bd2cc90dfd08e9632a` — four public records; #75 containment, #76 browse-freshness, #77 Hannibal recovery-route and documentation-only #78/#80 repairs merged; main integrity + Pages green;
-- Campfire Relay main: `4e7bdf95fee04638fe5b5ae84147f97c39a84d72` — #260 joiner + speaking-accounting visibility repair merged after #257; no Production promotion.
+- Campfire Relay main: `73cfcbd4d583e575fc36f604f30448b1532bed81` — #260 COMSYNC joiner/accounting repair plus #261 source/release/install-currentness documentation repair; no Production activation; installed Windows runtime remains unverified here.
 
 Formal baselines:
 - **TRACE v0.4.0** — released / not validated / no efficacy result;
@@ -212,14 +212,15 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — through PR #260 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #261 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is now `4e7bdf95fee04638fe5b5ae84147f97c39a84d72`; #260 adds `+` / `&` / `and` joiners to the measured CC address forms and makes the existing "closed by speaking" blind region explicit without calling it answered; exact-head and post-merge `campfire-ci` are SUCCESS;
+- Relay main is now `73cfcbd4d583e575fc36f604f30448b1532bed81`; #260 adds `+` / `&` / `and` joiners to the measured CC address forms and makes the existing "closed by speaking" blind region explicit; #261 separates repository source/tag/release evidence from installed-runtime claims; exact-head and post-merge `campfire-ci` are SUCCESS;
 - Simple-v1 #258's unattended MODEL operation was a boundary mistake and is reverted by #259; maintained source is `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`, post-merge Simple-v1 CI SUCCESS;
 - COM #76 records that Mark separately corrected the live `cc-relay` self-declared model to `claude-opus-5-5` through a one-off human-operated request; the correction is not retroactive and Framework did not use the credential;
 - consolidated receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
-- **Production unchanged / no service install or restart performed by Framework**.
+- #261 receipt: `coordination/build_ledger/RELAY_SOURCE_RELEASE_INSTALL_CURRENTNESS_20260926.md`.
+- **Production unchanged / installed runtime not freshly established / no service install or restart performed by Framework**.
 
 ## Time / evidence gated
 
