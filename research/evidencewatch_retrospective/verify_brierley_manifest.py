@@ -145,7 +145,20 @@ def main() -> int:
     assert manifest["schema"] == EXPECTED_SCHEMA, manifest["schema"]
     assert manifest["status"] == EXPECTED_STATUS, manifest["status"]
     assert len(expected) == 22, len(expected)
-    assert observed == expected
+    if observed != expected:
+        print("SELECTION_MISMATCH", file=sys.stderr)
+        for index, (got, want) in enumerate(zip(observed, expected), start=1):
+            if got != want:
+                print(
+                    f"pair-{index:02d}: manifest={got} recomputed={want}",
+                    file=sys.stderr,
+                )
+        if len(observed) != len(expected):
+            print(
+                f"length mismatch: manifest={len(observed)} recomputed={len(expected)}",
+                file=sys.stderr,
+            )
+        raise AssertionError("Frozen manifest does not match raw-owner recomputation")
     assert manifest["selection"]["positives"] == 22
     assert manifest["selection"]["controls"] == 22
     assert manifest["selection"]["positive_covid"] == 15
