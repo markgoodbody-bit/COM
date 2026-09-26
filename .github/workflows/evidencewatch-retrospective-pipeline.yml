@@ -52,6 +52,46 @@ jobs:
           node --check research/evidencewatch_retrospective/run_brierley_retrospective.mjs
           pwsh -NoProfile -Command "[void][scriptblock]::Create((Get-Content 'research/evidencewatch_retrospective/run-brierley-local.ps1' -Raw))"
 
+      - name: Verify local runner pins current experiment blobs
+        run: |
+          python - <<'PY'
+          import pathlib
+          import subprocess
+
+          runner=pathlib.Path('research/evidencewatch_retrospective/run-brierley-local.ps1').read_text(encoding='utf-8')
+          pairs={}
+          for raw_line in runner.splitlines():
+              line=raw_line.strip()
+              if not line.startswith('"research/evidencewatch_retrospective/') or ' = ' not in line:
+                  continue
+              left,right=line.split(' = ',1)
+              key=left.strip().strip('"')
+              value=right.strip().strip('"')
+              if len(value) == 40 and all(ch in '0123456789abcdef' for ch in value):
+                  pairs[key]=value
+
+          required=[
+              'research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json',
+              'research/evidencewatch_retrospective/verify_brierley_manifest.py',
+              'research/evidencewatch_retrospective/build_blinded_brierley_packet.py',
+              'research/evidencewatch_retrospective/score_trivial_baselines.py',
+              'research/evidencewatch_retrospective/run_brierley_retrospective.mjs',
+              'research/evidencewatch_retrospective/score_brierley_unblinded.py',
+          ]
+
+          for path in required:
+              assert path in pairs, ('runner pin missing', path)
+              observed=subprocess.check_output(['git','hash-object','--',path], text=True).strip()
+              assert pairs[path] == observed, (path, pairs[path], observed)
+
+          harness=pathlib.Path('research/evidencewatch_retrospective/run_brierley_retrospective.mjs').read_text(encoding='utf-8')
+          assert 'PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE' in harness
+          assert 'EVIDENCEWATCH_BRIERLEY_LIVE_RUN_ABORTED_PRE_UNBLIND' in harness
+          assert 'PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE' in runner
+
+          print('local runner COM blob pins: VERIFIED')
+          print('fail-fast partial receipt markers: VERIFIED')
+          PY
       - name: Reconstruct frozen challenge objects from pinned owner data
         run: |
           set -euo pipefail

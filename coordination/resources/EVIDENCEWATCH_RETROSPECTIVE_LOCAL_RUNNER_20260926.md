@@ -60,6 +60,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\research\evidencewatch_ret
 
 The wrapper first completes the same dry-run checks, then invokes the frozen live harness.
 
+If the harness seals `PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE`, the wrapper:
+- prints the partial receipt path + SHA-256;
+- reports the failed opaque case/phase and attempted/observed call counts;
+- stops with the harness failure exit code;
+- does **not** print or run the unblinding scorer command.
+
+The wrapper also verifies that its hard-pinned COM experiment-file Git blobs match the actual local checkout before any owner fetch or provider access. Hosted no-spend CI independently checks those runner pins against current branch blobs so scorer/harness drift cannot silently make the one-command gate stale.
+
 ## Deliberate unblinding separation
 
 A completed live run stops after writing/sealing the pre-unblind output and ledger.

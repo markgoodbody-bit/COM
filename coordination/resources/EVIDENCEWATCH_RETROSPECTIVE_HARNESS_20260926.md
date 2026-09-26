@@ -120,11 +120,32 @@ It does not persist:
 
 The normal pinned analyzer still parses the same provider response.
 
-The harness requires exactly **88** provider responses before writing a completed output.
+The harness requires exactly **88 attempted analyses and 88 provider responses** before writing a completed output.
+
+If either the baseline or successor observation returns `ANALYSIS_FAILED`, the harness stops immediately. It does **not** spend later calls trying to rescue a run that the predeclared decision rule has already routed to inconclusive.
+
+It instead writes/seals:
+
+`PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE`
+
+with:
+- exact EvidenceWatch/packet/provider identities;
+- processed cases;
+- attempted-analysis count;
+- observed provider-response count;
+- failure case ID + phase + error;
+- raw provider receipts obtained so far;
+- ledger path.
+
+Expected partial marker:
+
+`EVIDENCEWATCH_BRIERLEY_LIVE_RUN_ABORTED_PRE_UNBLIND`
+
+The partial receipt is evidence of a failed run, not a scoreable 44-case output.
 
 ## Output freeze
 
-The live output contains:
+A completed live output contains:
 - exact EvidenceWatch commit/blob identities;
 - packet SHA-256;
 - model/endpoint;
@@ -148,6 +169,7 @@ Preserve:
 ```text
 HARNESS GREEN != MODEL RESULT
 DRY RUN != PROVIDER EXECUTION
+PARTIAL FAILURE RECEIPT != COMPLETED RUN
 OUTPUT DIGEST FROZEN != VALIDATION
 RAW PROVIDER RESPONSE != ATTESTED MODEL IDENTITY
 ```
