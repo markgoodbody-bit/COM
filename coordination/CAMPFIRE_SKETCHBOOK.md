@@ -1228,3 +1228,68 @@ Current disposition:
 
 Coordination record: COM #494.
 
+## 26 September 2026 — CPS Beam Notes: public transformation route vs case audit trail
+
+Status: **WORLD / REAL USE FIELD WITNESS / PUBLIC-RECORD CONTRADICTION / STRONGER OWNER PRESENT / NO PROJECT DELTA**
+
+Primary public surfaces checked:
+- CPS Beam Notes ATRS v4.0 record, published 9 September 2026:
+  https://www.gov.uk/algorithmic-transparency-records/the-crown-prosecution-service-beam-notes
+- CPS Disclosure Manual, Chapter 30 — Digital Material:
+  https://www.cps.gov.uk/prosecution-guidance/disclosure-manual-chapter-30-digital-material
+- ATRS guidance for public-sector bodies:
+  https://www.gov.uk/government/publications/guidance-for-organisations-using-the-algorithmic-transparency-recording-standard/algorithmic-transparency-recording-standard-guidance-for-public-sector-bodies
+
+Observed current public state:
+
+- Beam Notes supports prosecutors reviewing video-recorded evidence by generating timestamped transcripts and structured summaries.
+- The ATRS record says prosecutors must watch the original video, review transcripts/summaries, correct errors before use, and manually copy verified content into the CPS case-management system.
+- The record acknowledges inaccurate/unfair outcomes, over-reliance and lower transcription accuracy for accents, second-language speech, speech impediments, background noise, multiple speakers and interpreter-mediated conversations as risks.
+- The transcription path can fall back from ElevenLabs Scribe to self-hosted Deepgram Nova 3 and then Azure Speech.
+- One model-specification section describes an Azure-hosted GPT summarisation contingency that activates if the default OpenAI API summarisation service is unavailable.
+- The later operational-data/data-sharing section says the CPS deployment's summarisation model does not use Azure and has no fallback to another cloud platform or region.
+
+Do not resolve that last pair by inference. On the current public text it is an internal transformation-route contradiction or an unstated scope/version distinction.
+
+The record also names some model identities at a family/moving-target level, including `GPT-4/GPT-4o`, `Nova 3 (latest version...)` and an Azure-hosted `latest stable` GPT contingency. That is system transparency, but it does not by itself make one historical case execution reproducible.
+
+Stronger owner:
+
+CPS digital-material guidance already says analytical processing should be properly recorded, that an audit trail should allow another practitioner to follow the process, and that the software/methods used should be recorded in relevant digital-material workflows. This substantially owns the underlying provenance/audit requirement.
+
+Ceiling:
+
+The public material checked does **not** establish:
+- whether every Beam Notes intermediate transcript/summary is material that falls under those disclosure-manual provisions;
+- the exact contents of Beam's case-level audit log;
+- whether model route/version, prompt/template version, generated intermediate states and human corrections are retained per case;
+- whether the contradictory Azure summarisation statements describe different deployment epochs/scopes or a documentation defect;
+- any actual unfair case outcome or failed correction.
+
+Working distinctions:
+
+```text
+PUBLIC_ATRS_RECORD != CASE_EXECUTION_LOG
+MODEL_FAMILY_DISCLOSED != EXACT_EXECUTION_ROUTE
+HUMAN_REVIEW_REQUIRED != CORRECTION_LINEAGE_PROVED
+ORIGINAL_SOURCE_REVIEW_REQUIRED = STRONG MITIGATION
+NOT_DECISION_MAKING != NO_INFLUENCE_ON_EVIDENCE_REVIEW
+PUBLIC_RECORD_CONTRADICTION != OPERATIONAL_FAILURE
+LAYER_NOT_STATED != ROUTE_ABSENT
+```
+
+Project routing:
+
+- TRACE already has carriers/state/provenance distinctions sufficient to represent the path.
+- Mechanical Ethics already has correction-before-hardening, power and answerability language sufficient to ask whether a consequential error remains correctable.
+- THR does not earn a record or schema expansion.
+- EvidenceWatch does not earn a feature.
+- ATRS PR #364 remains frozen under its existing wake rules; do not recode the September corpus by momentum.
+- No CPS/ATRS correction contact is authorised from this observation.
+
+Current disposition:
+
+**STRONGER OWNER PRESENT / PRESERVE CONTRADICTION / WATCH FOR CASE-LEVEL EVIDENCE / NO PATCH.**
+
+Coordination record: COM #498.
+
