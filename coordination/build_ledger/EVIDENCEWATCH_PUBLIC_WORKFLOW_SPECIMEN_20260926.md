@@ -174,6 +174,39 @@ REAL HISTORICAL EPISODE FOUND
 != WILLING CURRENT PARTNER FOUND
 ```
 
+## Public burden context — useful but not episode-specific
+
+The practical-guide owner source says:
+- the original core review team of seven became overwhelmed as new hits increased;
+- the team recruited 20 experienced systematic-review volunteers from April 2021;
+- each volunteer agreed to contribute at least 3 hours per month to eligibility assessment, data extraction and/or risk-of-bias work;
+- the core team also carried training, individual feedback and workflow/tool support;
+- automated weekly search was still bringing in roughly 100–200 new records.
+
+This establishes a **real high-burden review environment**, not the labour cost of this particular Lombardi source transition.
+
+A conservative arithmetic lower bound for the explicitly stated volunteer commitment is:
+
+```text
+20 volunteers x >=3 h/month
+= >=60 volunteer-hours/month
+```
+
+But those hours cover multiple review tasks and must **not** be attributed to preprint-currentness checking or this one re-extraction episode.
+
+Preserve:
+
+```text
+REVIEW WORKFLOW LABOUR INTENSIVE
+!= THIS FEATURE WOULD SAVE 60 HOURS
+
+TEAM OVERWHELMED
+!= EVIDENCEWATCH SOLVES THE BOTTLENECK
+
+PUBLIC WORKLOAD CONTEXT
+!= MATCHED BURDEN MEASUREMENT
+```
+
 ## What EvidenceWatch must not infer
 
 Do not infer:
