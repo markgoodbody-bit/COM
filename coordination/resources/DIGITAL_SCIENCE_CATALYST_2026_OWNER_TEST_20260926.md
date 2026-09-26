@@ -42,9 +42,10 @@ The University of Bern practical guide provides a bounded real-workflow baseline
 - 100–200 new records were uploaded each week;
 - preprint publication status was checked in each update;
 - data were re-extracted if content changed;
-- the core team reported becoming overwhelmed as screening volume grew and later recruited volunteers.
+- the core team reported becoming overwhelmed as screening volume grew and later recruited volunteers;
+- a separate mixed-methods evaluation of six living reviews reported 3–300 citations screened per month and 5 minutes–32 hours of author-team work per month.
 
-This establishes recurring workload and the existence of the maintenance task.
+This establishes recurring workload and a bounded time-cost context. The 5-minute–32-hour range covers whole living-review maintenance and must **not** be presented as the amount EvidenceWatch can save or as specific to post-reliance source-state monitoring.
 
 It does **not** establish:
 - EvidenceWatch time saving;
@@ -53,12 +54,15 @@ It does **not** establish:
 - willingness to adopt;
 - Zotero integration value.
 
+Additional workload source:
+- https://doi.org/10.1186/s13643-019-1248-5
+
 ## Proposal-body count
 
 Counted on the exact branch source from the first required heading `## 1. THE PROBLEM` through the end of `## 9. BUDGET`.
 
-- whitespace-delimited count: **1,331**
-- word-like-token count: **1,369**
+- whitespace-delimited count: **1,362**
+- word-like-token count: **1,405**
 - owner ceiling: **1,500 words**
 
 Both local methods retain >100 words of headroom. Final copy should still be recounted in the submission editor because Google/word-processor tokenisation can differ.
