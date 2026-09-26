@@ -115,6 +115,33 @@ GENERAL SITE CONTENT LICENCE != CATALYST AWARD IP TERM BY ASSUMPTION
 COPYRIGHT RETAINED != NO LICENCE GRANTED
 ```
 
+## Historical Catalyst IP / flexibility context — not current terms
+
+Public Digital Science history provides a useful but non-binding prior:
+
+- 10 November 2014 Catalyst owner page:
+  https://www.digital-science.com/blog/the-next-catalyst-grant-application-deadline-is-this-week/
+  - explicitly said Digital Science did **not** claim intellectual-property rights in the application;
+  - explicitly said recipients were not prevented from working with other collaborators or investors;
+  - described a six-month funded-project period and a final presentation to Digital Science.
+- 29 April 2016 Digital Science interview with Catalyst winner James Harwood:
+  https://www.digital-science.com/blog/foundersfriday-james-harwood-penelope-research/
+  - Harwood described the Catalyst funding as **'no strings attached'** and said that flexibility let the product change direction.
+- 19 December 2025 winner announcement:
+  https://www.digital-science.com/press-releases/digital-science-awards-2025-catalyst-grants/
+  - describes winners using the grant to develop their own products over the coming year;
+  - does not expose a current public IP/exclusivity agreement.
+
+This historical pattern is reassuring context only.
+
+```text
+2014 NO-IP-CLAIM STATEMENT != 2026 AWARD AGREEMENT
+2016 WINNER 'NO STRINGS ATTACHED' != CURRENT CONTRACT TERM
+2025 PRODUCT DEVELOPMENT FREEDOM OBSERVED != EXCLUSIVITY RULE PROVED
+2026 EQUITY-FREE != 2026 IP TERMS KNOWN
+```
+
+Current decision rule is unchanged: read the live 2026 form/award terms before accepting or submitting anything that creates rights or obligations.
 ## Next human gate
 
 Open the owner-linked application form in a normal browser.
