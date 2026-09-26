@@ -150,7 +150,7 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #262 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #264 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address, ledger-write, issue-body and zero-comment discovery repairs;
 - Relay main is `58920c10b4942d8058a01763de8a34c7530cf088`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; #262 clarifies that the older-thread count is a thread-state count rather than addressed-message or unanswered-request count; #264 narrows persisted/resolved `{provider, model, protocol}` to configured target identity and explicitly separates it from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS;
