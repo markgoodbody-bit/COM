@@ -1377,3 +1377,94 @@ Current disposition:
 
 Coordination record: COM #562.
 
+## 26 September 2026 — MoJ e-supervision: a positive answerability-route counterexample
+
+Status: **WORLD / REAL USE POSITIVE CONTROL / ROUTE LEGIBLE / NO PROJECT DELTA**
+
+Official surface:
+- MoJ Check-In with your probation officer (E-Supervision) ATRS record:
+  https://www.gov.uk/algorithmic-transparency-records/moj-check-in-with-your-probation-officer-e-supervision
+
+Purpose:
+
+Test our own tendency to treat a missing formal appeal as an answerability gap.
+
+Observed current public state:
+
+- The service uses AWS Rekognition facial comparison to support identity verification during eligible remote probation check-ins.
+- The system returns a similarity/pass-fail style output, but practitioners retain responsibility for assessing identity and making the decision.
+- **Every check-in is practitioner-reviewed regardless of the system output.**
+- A potential mismatch is highlighted for further practitioner review/additional checks.
+- The ATRS record explicitly acknowledges false-positive and false-negative risk.
+- The Appeals and review field says there is no formal appeals process because the tool does not make an access decision.
+- Crucially, the same field explains the operative consequence and correction path: a non-match is reviewed by a practitioner and does **not** prevent the individual from using the service.
+
+That is materially different from merely saying:
+
+> "not applicable because the tool does not decide."
+
+The public record binds:
+- the algorithmic output;
+- the human reviewer;
+- the review trigger;
+- the bounded consequence to the affected person.
+
+Therefore the absence of a formal appeal does not by itself create an answerability defect.
+
+Working distinctions:
+
+```text
+NO_FORMAL_APPEAL != NO_ANSWERABILITY
+DECISION_SUPPORT != NO_RISK
+FALSE_MATCH_RISK_ACKNOWLEDGED != FAILURE OBSERVED
+HUMAN_REVIEW_STATED + CONSEQUENCE_STATED = ROUTE_LEGIBLE
+ROUTE_LEGIBLE != ROUTE_PROVED EFFECTIVE IN PRACTICE
+```
+
+Contrast with BenchNotes:
+
+```text
+E-SUPERVISION:
+NO FORMAL APPEAL
++ MISMATCH REVIEW ROUTE STATED
++ USER CONSEQUENCE STATED
+-> PUBLIC ROUTE LEGIBLE
+
+BENCHNOTES:
+TOOL DOES NOT DECIDE
++ HUMAN PRE-FINALISATION REVIEW STATED
++ BROADER FORMAL CORRECTION ROUTE EXISTS ELSEWHERE
+BUT ATRS APPEAL FIELD DOES NOT BIND TO THAT BROADER ROUTE
+-> POSSIBLE PUBLIC ROUTE-LEGIBILITY GAP
+```
+
+This contrast is useful because it prevents a simplistic rule such as:
+
+`APPEAL FIELD = N/A -> DEFECT`
+
+The question is whether the public record makes the relevant correction/review channel and consequence legible at the layer where the tool participates.
+
+Ceilings:
+
+The public ATRS record does **not** establish:
+- actual false-match rates in the deployed cohort;
+- that practitioner review always catches every incorrect match/mismatch;
+- user experience of the additional-review process;
+- absence of downstream consequences outside the bounded service description;
+- general fairness or efficacy.
+
+Project routing:
+
+- No TRACE/ME primitive earned.
+- No THR record.
+- No EvidenceWatch feature.
+- No ATRS September population recode.
+- No contact with MoJ / probation service.
+- Preserve as a positive control against one-sided gap hunting.
+
+Current disposition:
+
+**ROUTE LEGIBLE / STRONG HUMAN REVIEW / POSITIVE CONTROL / NO PATCH.**
+
+Coordination record: COM #564.
+
