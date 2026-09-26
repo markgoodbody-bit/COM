@@ -45,7 +45,7 @@ History belongs in dated receipts + Git.
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
 - Human Record main `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 plus bounded read-only impact routing #81 merged; integrity + Pages green; exploratory THR #52 closed unmerged; open THR PRs = 0;
-- Campfire Relay main `67b9438ad2824f8850d2a0dbc8a7479727681e7c` — #260 measured joiner/speaking-accounting repair, #261 source/release/install currentness repair and #262 older-thread accounting clarification; bounded target-host evidence establishes the existing running Windows source as tag v0.18.34 while leaving loaded modules and dependencies unverified; Production unchanged.
+- Campfire Relay main `58920c10b4942d8058a01763de8a34c7530cf088` — #260 measured joiner/speaking-accounting repair, #261 source/release/install currentness repair, #262 older-thread accounting clarification, and #264 inference-identity honesty repair; #264 changes evidence terminology only and does not establish provider/backend attestation; bounded target-host evidence still establishes only the existing running Windows source as tag v0.18.34 while leaving loaded modules and dependencies unverified; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
 
@@ -58,7 +58,12 @@ EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
 Current reversible maintenance/design state:
 - **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
 - **THR CURRENT MAIN `2d0cf64e…`** — #76/#77/#78/#80 remain active; #81 adds the hardened read-only direct+assertion impact-route query extracted from exploratory #52; main integrity `36237522858` + Pages `36237522573` SUCCESS; four records remain four; #52 closed unmerged; open THR PRs = 0; no dependency ontology/schema growth;
-- **Relay #260 + #261 + #262 MERGED** — main `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; post-merge `36237314991` SUCCESS; target-machine read establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
+- **Relay #260 + #261 + #262 + #264 MERGED** — main `58920c10b4942d8058a01763de8a34c7530cf088`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; #264 separates configured/resolved target identity from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS; target-machine read still establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
+```text
+CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
+PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
+```
+
 - **Simple-v1 #259 AUTHORITY REPAIR MERGED** — maintained `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`; removes #258's unattended MODEL operation while preserving earlier worker/supervisor repairs; exact-head Simple-v1 `36201550455` + broad `36201550475` SUCCESS; post-merge `36201678876` SUCCESS. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
 
 Current receipts:
