@@ -14,10 +14,10 @@ Owner source rechecked 25 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current proposal word count:
-**1451 words**
+**1297 words**
 
 Current EvidenceWatch private main:
-`b8fc0971ceace55878aa6130448850d88774f254`
+`5cb54a07ed75de083b85b1113f829ae4bd5e4a12`
 
 Current CI:
 **SUCCESS**
@@ -26,7 +26,7 @@ Current deterministic suite:
 **54 tests / 54 pass**
 
 Latest EvidenceWatch main change:
-**research-pilot protocol + deterministic offline scorer merged / no live pilot or provider call**
+**real-workflow owner subtraction added after pilot protocol/scorer; runtime semantics unchanged / no live pilot or provider call**
 
 Engineering witness:
 `coordination/build_ledger/EVIDENCEWATCH_RESEARCH_HANDOFF_WITNESS_20260925.md`
