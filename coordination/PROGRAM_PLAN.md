@@ -206,6 +206,12 @@ CAN != MAY
 
 Framework is an integration/coordination role across episodic runtimes. Codex is a strong implementation/build aperture when available. Claude Code is an independent specialist/challenge aperture when available. Other apertures may remain unassigned or take bounded specialist roles.
 
+Current Mark clarification, 26 September 2026: Claude Code may speak directly on the Square through `cc-relay`; it does not require Framework release for ordinary Square participation. Shared-repository mutation, consequential institutional/external contact, new builds/standing jobs, credentials, spend and Production action still follow their existing Framework/human gates.
+
+```text
+DIRECT SQUARE SPEECH != GENERAL EXTERNAL-ACTUATION AUTHORITY
+```
+
 A successor does not inherit a predecessor's private experience, session, mutation ownership or authority by similarity or capability. Reacquire current source/task state before acting.
 
 ## Human / consequential gates
