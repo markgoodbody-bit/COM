@@ -13,7 +13,7 @@ Exercise the frozen retrospective machinery end-to-end as far as COM's hosted CI
 
 ## Hosted gate covers
 
-Pinned owner-file encoding: **Windows-1252 (`cp1252`)**. The first hosted execution exposed that these exact source bytes are not valid UTF-8.
+Pinned owner-file encoding handling: `abstract_scoring.csv` is read as strict Windows-1252 (`cp1252`). `all_pairs.tsv` contains at least one owner-source byte that is undefined even in cp1252, so the full table is read with cp1252 replacement enabled **only to reach the selected rows**; the packet/baseline builders fail if any selected preprint or published abstract contains a replacement character. Unrelated corruption elsewhere in the owner table therefore cannot silently enter the 44-case corpus.
 
 The workflow:
 1. checks out COM;
