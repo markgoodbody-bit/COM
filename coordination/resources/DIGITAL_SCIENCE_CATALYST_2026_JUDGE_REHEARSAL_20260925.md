@@ -1,23 +1,37 @@
 # Digital Science Catalyst 2026 — judge rehearsal
 
-Date: 25 September 2026
+Date: 26 September 2026
 
 Status: **INTERNAL REVIEW / NOT SUBMITTED / NOT A CLAIM OF SHORTLISTING**
 
-Purpose: pressure-test the current 1,297-token EvidenceWatch application against Digital Science's seven published judging areas and recent Catalyst selection signals without adding product churn or inventing validation.
+Purpose: pressure-test the actual current EvidenceWatch application against Digital Science's published judging areas and likely interview questions without adding product churn or inventing validation.
 
 Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
+Current proposal body:
+**1,426 whitespace-delimited words**. Final form-editor recount remains required.
+
 Current EvidenceWatch:
-`f08e35086a3a6b7c16de72f42f060d47b0ab1ae7`
-(54/59 deterministic tests green in both Windows and Ubuntu CI; PR #12 pilot protocol, PR #13 offline scorer and PR #14 cross-platform test repair merged)
+`9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
+
+Current deterministic suite:
+**62 / 62 green on Windows + Ubuntu CI**
+
+Current ceiling:
+
+```text
+WORKING PROTOTYPE != VALIDATED RESEARCH PRODUCT
+RETROSPECTIVE TEST PREPARED != RETROSPECTIVE RESULT
+PUBLIC WORKFLOW SPECIMEN != USER BENEFIT
+GRANT FIT != PRODUCT VALIDATION
+```
 
 ## External selection signals
 
 ### 2026 owner criteria
 
-Digital Science says judges score:
+Digital Science says judges assess:
 - team;
 - problem;
 - solution;
@@ -39,227 +53,294 @@ https://www.digital-science.com/about-us/investment/catalyst-grant/
 ### 2025 winners
 
 Digital Science said:
-- FigureTwo stood out because of the team's deeply relevant publishing/product background and an elegant solution;
-- Pathfinder brought deep bibliometrics/science-mapping pedigree and a product aligned with Digital Science customers/products.
+- FigureTwo stood out because of the team's relevant publishing/product background and an elegant solution;
+- Pathfinder brought bibliometrics/science-mapping pedigree and strong alignment with Digital Science products/customers.
 
 Source:
 https://www.digital-science.com/press-releases/digital-science-awards-2025-catalyst-grants/
 
 ### 2024 research-integrity winners
 
-PostPub and VIRUS were already rooted in research-integrity work and proposed concrete tools using wider scholarly-data/workflow surfaces.
+PostPub and VIRUS were already rooted in research-integrity work and proposed concrete tools tied to scholarly-data/workflow surfaces.
 
 Source:
 https://www.digital-science.com/press-releases/digital-science-catalyst-grant-winners-research-integrity/
 
-### Shortlisted but not awarded comparator — OpenRefine 2025
+### Negative comparator — OpenRefine 2025
 
-OpenRefine's public application shows a mature 17-year product, roughly 15,500 monthly downloads, established maintainers, fiscal sponsorship, community/user evidence and a full £25k delivery plan. It was shortlisted but its own funding page later records the award as not received.
+OpenRefine publicly showed a mature product, established usage and a full delivery plan, was shortlisted, and later recorded that the award was not received.
 
-Sources:
-- https://forum.openrefine.org/t/funding-opportunity-2025-digital-science-catalyst-grant/2574
-- https://openrefine.org/funding
-
-Do not infer why it lost; no rejection rationale is public. The useful negative lesson is only:
+Do not infer why. The bounded lesson is:
 
 ```text
 TRACTION + MATURE TEAM + DELIVERY CAPACITY != AUTOMATIC CATALYST WIN
 THEME / DISTINCTIVE FIT / PRODUCT DIRECTION STILL MATTER
 ```
 
-## EvidenceWatch judging pressure
+Sources:
+- https://forum.openrefine.org/t/funding-opportunity-2025-digital-science-catalyst-grant/2574
+- https://openrefine.org/funding
+
+## Current EvidenceWatch position after stronger-owner subtraction
+
+EvidenceWatch no longer claims novelty in:
+- new-study surveillance;
+- formal retraction/correction handling;
+- preprint -> publication monitoring;
+- dataset-version identity/provenance;
+- generic webpage change detection;
+- web-state preservation;
+- generic dependency graphs;
+- generic living-guideline materiality routing;
+- Zotero/library sync/version plumbing.
+
+Stronger owners include:
+- Cochrane;
+- Crossref / Europe PMC;
+- Zotero / Crossmark;
+- ReadCube / scite;
+- EPPI-Reviewer;
+- MAGICapp / GRADEpro;
+- ALEC / LEAPP-AI;
+- DataCite / Figshare / Zenodo;
+- Memento / Perma.cc;
+- Visualping / changedetection.io;
+- Refract;
+- AIEP P170.
+
+The surviving hypothesis is integration:
+
+> Can owner change/version/currentness signals be bound to the exact source state actually relied upon, filtered for bounded materiality, and routed to affected downstream review work at lower burden than current practice?
+
+If a strong existing workflow already does this adequately, EvidenceWatch should narrow, interoperate or stop.
+
+## Judging pressure
 
 ### TEAM
 
 Evidence:
 - Mark Goodbody: 25+ years IT/telecoms/systems engineering;
 - current work demonstrates state management, restart/recovery, audit trails, authority boundaries and operational failure handling;
-- multiple AI systems used for implementation/adversarial review with human release/accountability gate.
+- multiple AI systems are used for implementation/adversarial review, with Mark as human release/accountability gate.
 
 Risk:
 - no academic research appointment;
 - no systematic-review domain expert currently on the team;
 - no pilot partner.
 
-Honest answer:
-The relevant expertise is systems engineering, not academic-domain authority. The pilot is explicitly the mechanism for bringing research-workflow expertise into the product and for falsifying Mark's assumptions before they harden.
+Best answer:
+
+> "My relevant expertise is systems engineering: state, provenance, failure recovery, auditability and correction under incomplete information. I am not claiming systematic-review expertise. The pilot is deliberately where that domain expertise enters and where my assumptions can be falsified before they harden."
 
 Do not:
 - inflate systems engineering into research-methods expertise;
-- imply AI collaborators are advisors with independent professional standing;
+- imply AI collaborators are professional advisors;
 - invent a pilot partner.
 
 ### PROBLEM
 
-Decision:
-Does a living systematic review need reopening because evidence already relied upon materially changed?
+Current decision:
+Does a living evidence team need to reopen already-relied-on work because an underlying source state materially changed?
 
-Current-owner subtraction:
-- formal retractions/corrections: Zotero/Crossmark/Cochrane;
-- new-evidence surveillance: living-review practice;
-- residual: material post-reliance changes outside those well-owned routes plus downstream routing.
+Owner subtraction:
+- formal retractions/corrections are already handled by stronger systems;
+- new-study surveillance is already handled;
+- ALEC explicitly owns preprint -> peer-reviewed monitoring/data recheck;
+- DataCite/Figshare/Zenodo own much ordinary version identity;
+- Memento/Perma/Visualping/changedetection.io own generic web-state preservation/change monitoring;
+- AIEP/MAGIC/GRADEpro own substantial dependency/evidence-to-decision structure.
+
+Residual:
+The connection between an external changed source state and the exact relied-on extraction/synthesis/recommendation object may still be fragmented across systems.
 
 Risk:
-Frequency/materiality of the residual class is unmeasured in a current target workflow.
+We do not know how often that residual creates meaningful burden in a current workflow.
 
-Public historical workflow evidence now exists:
-- the University of Bern asymptomatic-COVID living review explicitly checked included preprints for later peer-reviewed publication and re-extracted data when content changed;
-- one public Lombardi episode moved from a preprint reporting 41/138 asymptomatic positives to a final publication/review extraction of 17/139 after longer follow-up / changed symptom definition;
-- the review repository explicitly records that the final publication succeeded a preprint already included, so it was not counted as independent new evidence;
-- the fifth review uses the public extracted data in synthesis.
-
-Receipt:
-`coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`
+Public evidence:
+- University of Bern living review checked included preprints for later publication and re-extracted data when content changed;
+- Lombardi moved from 41/138 in the preprint state to 17/139 in the final/review extraction after longer follow-up and a changed symptom definition;
+- competent existing practice handled it correctly.
 
 Best answer:
-The maintenance problem is real, but current practice already handled this public case. That cuts the claim down to burden/integration: can tooling make that repeated currentness + lineage + re-extraction routing cheaper without degrading judgement? Frequency and user-value remain pilot questions. Stop if the residual is too rare or existing practice performs as well.
+
+> "The maintenance task is real, but the public case also proves reviewers already know how to handle it. The question is not whether they need our method. It is whether binding trusted source-state signals to already-relied-on work can make that maintenance cheaper and more inspectable without increasing misses or noise."
 
 ### SOLUTION
 
-EvidenceWatch genuinely runs a multi-step loop:
+Current multi-step loop:
+
 ```text
-configured question/source policy
--> scheduled fetch/fingerprint
--> change detection
--> bounded model extraction when needed
--> source-role / authority check
--> typed state comparison
--> downstream dependency routing
--> human review
+bounded question + source policy
+-> observe / fingerprint
+-> consume owner currentness/version signals where available
+-> selectively analyse residual change
+-> enforce source-role / authority boundaries
+-> compare typed evidence state
+-> bind to approved downstream dependencies
+-> route human review
+-> preserve append-only history
 ```
 
 Trust behavior already demonstrated:
 - duplicate suppression;
 - derivative disagreement without canonical overwrite;
 - candidate quarantine;
-- source loss preserves last known state;
+- source-loss/recovery while preserving last known state;
 - restart reconstruction;
 - correction history.
 
-Risk:
-Current reference-manager connection is CSL-JSON file handoff, not embedded integration.
+Current reference-manager state:
+- CSL-JSON file handoff only;
+- no live Zotero or ReadCube integration.
 
-Best answer:
-The grant is for testing the integration hypothesis, not funding a disguised finished product.
+Proposed first host:
+**Zotero**, but using Zotero's own API v3/local-API/object-version machinery rather than building parallel sync.
 
-### COMPETITORS
+Stage 1 begins read-only:
+- bind owner source-state/currentness signals to items in one existing library;
+- present shadow alerts outside the library;
+- defer write-back until benefit and authority are established.
 
-Current application is strong here because it subtracts rather than hand-waves:
-- Cochrane;
-- Zotero/Crossmark;
-- ReadCube/scite;
-- Refract;
-- AIEP P170;
-- PostPub/VIRUS;
-- Perma.cc.
+Boundary:
 
-Best answer to "why isn't this already solved?":
-It may be. EvidenceWatch only survives if joining heterogeneous post-reliance state, explicit authority, materiality filtering, dependency routing and human review inside one existing workflow saves enough effort to matter. If a stronger owner already does this well, stop.
+```text
+ZOTERO ITEM VERSION != SOURCE PUBLICATION / DATASET VERSION
+READABLE INTEGRATION != WRITE AUTHORITY
+```
+
+### COMPETITORS / STRONGER OWNERS
+
+The application should not answer "why are you better than all these systems?"
+
+Better answer:
+
+> "Large parts are already solved by stronger owners. EvidenceWatch survives only as an integration/burden hypothesis across those systems. If an existing workflow already closes the loop cheaply, we should use it or stop."
+
+This is stronger than a novelty claim because it makes the grant fund a falsifiable integration test instead of another parallel platform.
 
 ### MARKET
 
 Current state:
-- buyer hypothesis only: institutions/research teams maintaining updateable reviews;
-- plausible initial users: university evidence-synthesis teams, health evidence/guideline units and similar organisations;
-- pricing untested.
+- buyer hypothesis only: institutions/research teams maintaining updateable reviews/guidelines;
+- pricing untested;
+- no customers;
+- no validated adoption evidence.
 
 Risk:
-This is one of the weakest judging dimensions.
+Still one of the weakest judging dimensions.
 
 Do not manufacture TAM figures.
 
 Interview answer:
-The first commercial question is not price; it is whether the workflow saves reviewer time at acceptable missed-change and false-alert rates. Pricing follows only if that survives.
+
+> "The first commercial question is not price. It is whether this reduces reviewer burden at acceptable miss and false-alert rates inside a real existing workflow. Pricing and market size come after that survives."
 
 ### PROGRESS TO DATE
 
-Strongest evidence:
+Engineering:
 - working Node.js prototype;
-- 59 deterministic tests green on both Windows and Ubuntu CI;
+- 62 deterministic tests green on Windows and Ubuntu;
 - append-only/restart behavior;
-- live one-watch/two-run model witness;
-- deterministic research-shaped browser demo;
+- one live two-run Nemotron witness on public owner pages;
+- deterministic research-shaped demo;
 - CSL-JSON handoff;
 - controlled restart/correction fixture;
-- predeclared shadow-mode pilot protocol + deterministic offline scorer for the promised evaluation metrics;
-- explicit unresolved model-status inconsistency retained rather than hidden.
+- predeclared shadow-mode pilot protocol + offline scorer.
 
-Additional real-workflow evidence:
-- one public historical living-review episode now demonstrates that preprint -> final-publication change, same-lineage handling and re-extraction are real maintenance work;
-- the same owner source reports a seven-person core team becoming overwhelmed and later recruiting 20 experienced volunteers committing at least 3 hours/month across review tasks;
-- that workload context is not an episode-specific time saving and does not validate EvidenceWatch.
+Real-workflow evidence:
+- public Bern historical specimen;
+- recurring living-review workload context;
+- no willing current research partner and no matched burden result.
 
-Ceiling:
-No research customers, willing pilot partner, current matched-burden measurement or user-efficiency result.
+Retrospective falsification pipeline:
+- Brierley v2 frozen before model output;
+- 22 owner-labelled major-change pairs;
+- 22 clean reconstructable matched no-change controls;
+- blinded packet/key SHA receipts;
+- full 22+22 trivial lexical baselines around AUC 0.79–0.80;
+- fail-closed local harness;
+- first `ANALYSIS_FAILED` aborts and seals a partial receipt;
+- comparator integrity checks are now fail-closed;
+- result-routing rule is predeclared;
+- **no model/provider run has occurred**.
+
+Interpretation:
+
+```text
+PREDECLARED HOSTILE TEST = PROGRESS
+UNRUN TEST != RESULT
+GREEN PIPELINE != MODEL QUALITY
+```
 
 ### FIT WITH DIGITAL SCIENCE
 
-This is the strongest judging dimension.
+This remains a strong dimension.
 
 Direct alignment:
 - evidence synthesis / research integrity;
-- multi-step agent;
-- provenance/audit/governance native to architecture;
+- long-running multi-step agent;
+- provenance/audit/governance native to the architecture;
 - explicit stay-quiet / flag / refuse behavior;
-- proposed integration surface overlaps Digital Science's research-workflow ecosystem.
+- measurable workflow outcome;
+- integration surface overlaps Digital Science products/workflows.
 
-Why Digital Science specifically:
-They own adjacent workflow/data surfaces and can help falsify the integration hypothesis with researchers rather than merely fund more standalone engineering.
+Digital Science is also a particularly useful falsifier because it owns adjacent systems including Figshare and ReadCube and has already funded research-integrity work such as PostPub/VIRUS.
 
-Do not imply ReadCube or another Digital Science product has agreed to integrate.
+Best answer:
+
+> "Digital Science is valuable here not because it validates the idea, but because its own workflow products and research users are strong enough to show quickly whether this integration layer is redundant."
 
 ## Hostile interview questions
 
 ### "Why you? You are not a systematic-review researcher."
 
-Answer:
-"I'm not claiming that expertise. My contribution is systems engineering: state, provenance, failure recovery, auditability and making correction survive operational boundaries. The reason I am asking for a pilot rather than claiming product-market fit is precisely to put that engineering in front of people who own the research workflow and see whether it survives."
+> "Correct. My contribution is systems engineering: state, provenance, failure recovery, auditability and correction. I am asking to test that engineering inside a workflow owned by research-method experts rather than presenting my domain assumptions as validated."
 
-### "Why isn't this just Crossmark, Zotero, Cochrane, ReadCube or scite?"
+### "Why isn't this just Zotero, Crossmark, Cochrane, ReadCube, scite, EPPI, MAGIC or ALEC?"
 
-Answer:
-"Large parts already are. I removed those as novelty claims. The remaining hypothesis is whether material post-reliance state across heterogeneous sources can be joined to explicit authority and downstream work with low enough review burden to be useful. If one of those systems already closes that loop better, EvidenceWatch should narrow or stop."
+> "Much of it is. I have removed those mechanisms from the novelty claim. The remaining question is whether their change/currentness signals can be connected to the exact prior state a team relied upon and the downstream work that should be reopened, with low enough burden to matter. If their existing workflow already does that well, EvidenceWatch should narrow or stop."
 
-### "Do you have evidence this workflow problem actually happens?"
+### "Why isn't this just Visualping or changedetection.io?"
 
-Answer:
-"Yes, but not evidence yet that EvidenceWatch improves it. The University of Bern living review publicly describes checking included preprints for later peer-reviewed publication and re-extracting data when content changed. Its public repository contains a concrete Lombardi case: the preprint reported 41/138 asymptomatic positives, while the final article and review extraction used 17/139 after longer follow-up and a changed symptom definition. The team recognised it as the same study lineage rather than independent evidence. That proves the maintenance task is real and also proves competent existing practice can handle it. The grant question is whether this can be made cheaper and more inspectable, not whether reviewers need to be taught to do it."
+> "Generic webpage change detection is already owned. A changed page is not automatically a changed evidence state, and a changed evidence state is not automatically a reason to reopen a recommendation. The proposed test is the binding/materiality/routing layer inside an existing evidence workflow."
+
+### "Why isn't dataset versioning already solved by DataCite or Figshare?"
+
+> "Version identity is largely solved for well-versioned repositories. The question is whether the version signal reaches the exact evidence object already relied upon and whether that consequence is routed to the affected work. EvidenceWatch should consume DataCite/Figshare signals, not compete with them."
+
+### "Why Zotero?"
+
+> "It is a plausible first host because it is already present in research workflows and exposes mature API/local-API and object-version primitives. Stage 1 can therefore be read-only and focus on the actual hypothesis rather than rebuilding sync. If the partner uses a stronger host, we should use that instead."
 
 ### "What makes this agentic rather than a script?"
 
-Answer:
-"The useful unit is the long-running configured workflow: observe sources on schedule, suppress unchanged observations, selectively invoke model extraction, compare typed state, enforce authority boundaries, discover or quarantine candidates, route affected work, and preserve state across restart. The person configures the policy and handles review; they do not prompt each step."
+> "The useful object is the long-running configured workflow: observe, suppress unchanged states, consume version signals, selectively analyse residual change, enforce authority boundaries, preserve state across restart, quarantine discovered candidates and route affected work for human review. The human defines policy and makes the decision; they do not prompt every step."
 
-### "Show me a failure it refuses."
+### "Show me something it refuses."
 
-Answer:
-"A derivative source can repeat or contradict the owner. Repetition does not mint independent support; contradiction triggers review but cannot overwrite canonical owner state. A discovered candidate cannot establish state until explicitly promoted. An unreachable authority source does not become false."
+> "A derivative source cannot overwrite canonical owner state. A discovered candidate cannot gain authority automatically. Source unreachability does not become evidence that the claim is false. Stage 1 Zotero integration is read-only until benefit and authority are established."
 
-### "What does £5,000 Stage 1 buy that you cannot do now?"
+### "What does £5,000 Stage 1 buy?"
 
-Answer:
-"Integration into an actual evidence-synthesis workflow and measurement of the setup/maintenance burden against existing practice. The standalone mechanism already exists. Stage 1 is deliberately a falsification stage, not more feature accumulation."
+> "Read-only integration into one actual workflow, source-state-to-item binding, a human-approved dependency map, matched baseline episodes and measurement of setup and recurring burden. It can stop there if the problem is too rare or existing practice is better."
 
 ### "What result kills the project?"
 
-Answer:
-"Residual material changes are too rare; existing practice catches them as well; setup/maintenance costs more reviewer time than it saves; false alerts are too high; or missed material changes are unacceptable."
+> "Residual changes are too rare; existing practice catches them as well or better; setup and maintenance cost more time than they save; false alerts make the queue unusable; or material changes are missed."
 
-### "Why a private repository?"
+### "What has the retrospective benchmark proved?"
 
-Answer:
-"The prototype is private while the product/reuse boundary is still being decided. The application should not imply source openness. If inspection becomes necessary for due diligence, decide a bounded release or review route explicitly rather than silently changing the licence/reuse state."
+> "Nothing yet about the model—the live run has not happened. What is useful is that the corpus, trivial baselines, failure handling and interpretation routes were frozen before output. If simple lexical change weakly dominates the model, the semantic-value claim narrows or stops."
 
-### "Why £25,000?"
+### "Why is the repository private?"
 
-Answer:
-"It is staged rather than assumed. Stage 1 caps at £5k and can stop the project. The remaining £20k is conditional on the workflow surviving: pilot engineering/researcher evaluation, then model/infrastructure and independent review/reproducibility."
+> "The prototype is private while product/reuse boundaries are still being decided. I do not want an accidental licence decision to masquerade as validation. If due diligence requires inspection, I would use an explicit bounded review or release route."
 
 ## Demo route if shortlisted
 
-Prefer the research-shaped deterministic fixture over the NVIDIA cyber video for a live Catalyst interview.
+Prefer the research-shaped deterministic fixture over the NVIDIA cyber video for a live interview.
 
-Target: 45–55 seconds.
+Target: about 45–55 seconds.
 
 ```text
 synthetic fixture / zero state
@@ -271,10 +352,8 @@ synthetic fixture / zero state
 ```
 
 Close with:
-"It does not decide scientific truth. It preserves the evidence change, authority path and affected work for human review."
 
-Source script:
-`coordination/resources/DIGITAL_SCIENCE_RESEARCH_DEMO_RECORDING_20260925.md`
+> "It does not decide scientific truth. It preserves the evidence change, authority path and affected work for human review."
 
 Do not call this:
 - a researcher pilot;
@@ -289,9 +368,19 @@ APPLICATION FIT = REAL
 WIN = UNKNOWN
 SHORTLIST = UNKNOWN
 
-STRONGEST DIMENSIONS = SOLUTION / PROGRESS / 2026 FIT / TRUST ARCHITECTURE
-WEAKEST DIMENSIONS = DOMAIN TEAM / USER VALIDATION / MARKET
+STRONGEST DIMENSIONS =
+  TRUST ARCHITECTURE
+  SOLUTION SHAPE
+  2026 THEME FIT
+  PREDECLARED FALSIFICATION
 
-NEXT PRE-SUBMISSION WORK = NO NEW PRODUCT FEATURES
+WEAKEST DIMENSIONS =
+  DOMAIN TEAM
+  USER VALIDATION
+  MARKET
+  NO CURRENT PILOT PARTNER
+
+NEXT PRODUCT WORK = NONE BY MOMENTUM
+NEXT EVIDENCE = REAL WORKFLOW OR FROZEN RETROSPECTIVE RUN
 NEXT HUMAN GATE = LIVE FORM IDENTITY -> LATER FIELDS/TERMS -> FINAL SUBMIT
 ```
