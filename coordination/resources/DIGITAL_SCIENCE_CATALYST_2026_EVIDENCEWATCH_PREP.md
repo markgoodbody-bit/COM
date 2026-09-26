@@ -54,7 +54,7 @@ EvidenceWatch is a configured multi-step monitoring agent. Humans set the questi
 
 The prototype is standalone Node.js. A reversible adapter converts standard CSL-JSON reference-manager exports into watch configurations. Imported references default to candidate/non-authoritative sources; authority and independence require explicit assignment.
 
-The first proposed integration target is **Zotero**, using its existing API/local-API and object-version machinery rather than building parallel sync. Stage 1 would start read-only: bind owner source-version/currentness signals to items in one living review team's existing library and present shadow alerts outside the library. Write-back is deferred until benefit and authority are established.
+The first proposed integration target is **Zotero**. Stage 1 would reuse its API/version machinery read-only to bind owner source-state signals to items in one living-review library and present shadow alerts. Write-back waits until benefit and authority are established.
 
 Current EvidenceWatch remains a **file handoff, not a live Zotero or ReadCube integration**, and no pilot partner is established.
 
@@ -137,7 +137,7 @@ Digital Science also owns several strong adjacent systems, including Figshare, R
 
 Up to £25,000 would be staged.
 
-- **Stage 1, £5,000 cap:** read-only integration with the chosen workflow/reference library, source-state→item binding, human-approved dependency mapping, matched-baseline fixtures and setup/maintenance measurement. No write-back is required. Stop if burden or problem incidence makes the workflow implausible.
+- **Stage 1, £5,000 cap:** read-only library integration, source-state→item binding, human-approved dependency mapping, matched-baseline fixtures and burden measurement. Stop if burden or problem incidence makes the workflow implausible.
 - **Stage 2, £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
 - **Stage 3, £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
 
