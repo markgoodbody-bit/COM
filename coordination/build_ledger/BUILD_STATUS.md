@@ -159,7 +159,7 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 - live application form reached; page 1 inspected (email); later fields and embedded terms remain unknown until the human form gate is crossed.
 - owner-test matrix: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_OWNER_TEST_20260926.md`; primary pilot outcome is now `reviewer minutes per correctly handled material-change episode versus existing practice`; current state remains unmeasured.
 - public partner quarry: `coordination/resources/EVIDENCEWATCH_PUBLIC_PILOT_PARTNER_QUARRY_20260926.md`; no outreach has occurred; the useful pilot is with a strong existing owner who may return `OWNER FOUND / STOP`, not a weak workflow selected to make the prototype look good.
-- **RETROSPECTIVE CHALLENGE FROZEN / NOT RUN** — Brierley owner dataset pinned at `a07c570c…`; all 22 owner-labelled `Highest_change >= 2` abstract pairs plus 22 unique same-stratum nearest-date `Highest_change == 0` controls; max posting-date gap 5 days, median 2; manifest + offline verifier preserved under `research/evidencewatch_retrospective/`; no provider/model call, no result, no user validation.
+- **RETROSPECTIVE CHALLENGE + BLINDING + RUN CONTRACT FROZEN / NOT RUN** — Brierley owner dataset pinned at `a07c570c…`; all 22 owner-labelled `Highest_change >= 2` abstract pairs plus 22 unique same-stratum nearest-date `Highest_change == 0` controls; max posting-date gap 5 days, median 2; manifest + offline verifier + blinded packet builder preserved under `research/evidencewatch_retrospective/`; exact pinned execution semantics at `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_RUN_CONTRACT_20260926.md`; no provider/model call, no result, no user validation.
 
 ```text
 GRANT FIT != PRODUCT VALIDATION
