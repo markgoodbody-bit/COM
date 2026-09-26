@@ -52,32 +52,44 @@ EPPI Support / EPPI Centre contact pages exist.
 Disposition:
 **HIGH-VALUE STRONGER-OWNER TEST / NO CONTACT.**
 
-## Candidate 2 — Australian Living Evidence Collaboration (ALEC) / Cochrane Evidence Synthesis Unit Australia
+## Candidate 2 — Australian Living Evidence Collaboration (ALEC) / LEAPP-AI / Cochrane Evidence Synthesis Unit Australia
 
 Current public evidence:
 - ALEC is governed through Cochrane Australia at Monash University.
 - Its current public site records 2026 funded living-evidence projects, including early-onset bowel cancer guidance, the LATEST project and an urgent influenza guideline completed in four weeks.
 - ALEC and Monash are co-designing a Living Evidence Architecture with WHO and regional partners.
-- The architecture work explicitly explores AI-supported living evidence for clinicians, policymakers and public-health systems.
+- **LEAPP-AI is now a direct current stronger-owner test.** It is a collaboration between Monash FIT, MADA and ALEC using the LEAPP pregnancy/postnatal living guideline as a real-world case study.
+- LEAPP-AI explicitly:
+  - maps the current living-guideline workflow through document review and contributor interviews;
+  - decomposes it into discrete task-level components;
+  - systematically searches for AI-enabled tools;
+  - maps tools to specific guideline-development tasks;
+  - evaluates tools for practical functionality, strengths, limitations and risks;
+  - aims to reduce ongoing maintenance burden while preserving expert time for decision-making, equity and implementation.
+- Its public page explicitly welcomes collaboration with **technology partners**, as well as guideline developers, clinicians, researchers and policymakers.
 - Cochrane's Evidence Synthesis Unit Australia includes ALEC and provides evidence-synthesis services.
 
 Public owner surfaces:
+- https://livingevidence.org.au/research-initiatives/leapp-ai/
+- https://livingevidence.org.au/research-initiatives/
 - https://livingevidence.org.au/about-us/
 - https://www.cochrane.org/about-us/who-we-are/our-groups/evidence-synthesis-unit-australia
 - https://www.monash.edu/mada/research/project/living-evidence-architecture
 - https://www.monash.edu/mada/research/project/living-evidence-architecture/report
 
-Why this is a strong test:
+Why this is now the strongest direct falsification environment:
 - active living-evidence production, not a historical project;
-- explicit interest in AI-supported evidence infrastructure;
-- real guideline/evidence-update consequences;
-- strong methodological owners who can quickly expose whether EvidenceWatch's authority/change-routing layer adds anything.
+- an actual living-guideline workflow is being decomposed at task level now;
+- AI-tool fit, risk and workflow burden are already explicit research objects;
+- technology partners are explicitly in scope;
+- the team is strong enough to tell us that EvidenceWatch is redundant, mis-scoped, or only useful as an upstream adapter;
+- the question can be asked against their existing workflow rather than against a weak invented comparator.
 
 Subsumption risk:
-**VERY HIGH.** ALEC is already developing next-generation living-evidence infrastructure and may own the problem better.
+**VERY HIGH / DESIRABLE.** LEAPP-AI may already own or supersede the useful part of the problem. That makes it a stronger falsification target, not a worse one.
 
 Disposition:
-**HIGH-VALUE FALSIFICATION PARTNER CANDIDATE / NO CONTACT.**
+**CURRENT DIRECT STRONGER-OWNER / FALSIFICATION / INTEROPERABILITY CANDIDATE / NO CONTACT.**
 
 ## Candidate 3 — University of Bern evidence-synthesis ecosystem
 
@@ -151,8 +163,8 @@ PUT THE RESIDUAL CLAIM IN FRONT OF A STRONG EXISTING LIVING-EVIDENCE OWNER
 ```
 
 Current strongest candidate types:
-1. **EPPI Centre** for direct review-tool integration/subsumption testing;
-2. **ALEC** for high-rigour living-evidence infrastructure falsification;
+1. **ALEC / LEAPP-AI** for direct task-level AI-in-living-guideline falsification and interoperability testing;
+2. **EPPI Centre** for direct review-tool integration/subsumption testing;
 3. **Bern** for systematic-review + AI-method evaluation;
 4. **MAGIC** for downstream living-guideline materiality/routing.
 
