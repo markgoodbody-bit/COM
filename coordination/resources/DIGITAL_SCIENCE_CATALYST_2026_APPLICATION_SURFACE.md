@@ -1,10 +1,10 @@
 # Digital Science Catalyst Grant 2026 — application surface
 
-Date: 25 September 2026
+Date: 26 September 2026
 
 Status: **OWNER PAGE VERIFIED / LIVE FORM FIELDS NOT RESOLVED BY FRAMEWORK / DO NOT INVENT**
 
-## Public owner facts verified 25 September 2026
+## Public owner facts reverified 26 September 2026
 
 Owner:
 https://www.digital-science.com/about-us/investment/catalyst-grant/
@@ -74,17 +74,19 @@ Canonical prep:
 Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
-Canonical proposal:
-**1,450 words**
+Canonical proposal body:
+**1,421 whitespace-delimited words / 1,477 word-like tokens**
+
+Final submission-editor recount remains required.
 
 Current EvidenceWatch private main:
-`41f12db0573dd529c9ef493deba3da0e39508aaa`
+`9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
 
 CI:
-**SUCCESS**
+**SUCCESS on Windows + Ubuntu**
 
 Tests:
-**47 / 47**
+**62 / 62**
 
 Current scope:
 - one living systematic review team as first user type;
@@ -94,6 +96,24 @@ Current scope:
 - no live Zotero/ReadCube integration claimed;
 - selectable synthetic research demo exists;
 - existing YouTube demo remains a technical product demonstration, not research-user validation.
+
+## Public content-term boundary — 26 September recheck
+
+Digital Science's general website Terms state that material submitted/uploaded to the Site as user Content grants Digital Science a royalty-free, non-exclusive, perpetual and irrevocable licence to use, copy, edit, adapt, publish, reproduce, translate, sub-license, create derivative works from, make available, communicate, display, store and distribute that Content. The same Terms say the submitter retains any copyright they hold, and require the submitter to have rights to third-party material included in the submission.
+
+Owner surface:
+https://www.digital-science.com/terms-and-conditions/
+
+This is a **general Site term**, not a separately verified 2026 Catalyst award agreement. Pages 2–3 of the live grant form and any application-specific award terms remain uninspected behind the identity gate.
+
+Practical submission rule:
+
+```text
+PROJECT-AUTHORED PROPOSAL PROSE + LINKS = PREFERRED
+PASTING THIRD-PARTY ABSTRACTS / SCREENSHOTS / PROPRIETARY MATERIAL = AVOID
+GENERAL SITE CONTENT LICENCE != CATALYST AWARD IP TERM BY ASSUMPTION
+COPYRIGHT RETAINED != NO LICENCE GRANTED
+```
 
 ## Next human gate
 
