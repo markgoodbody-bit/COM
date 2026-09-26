@@ -15,7 +15,7 @@ Exercise the frozen retrospective machinery end-to-end as far as COM's hosted CI
 
 The workflow:
 1. checks out COM;
-2. checks out the public Brierley owner dataset at exact commit `a07c570c...`;
+2. downloads only the two required public Brierley owner files from exact commit `a07c570c...` and verifies their Git blob identities (`abstract_scoring.csv = da5d6080...`, `all_pairs.tsv = 3c26344f...`);
 3. compiles all Python retrospective scripts and runs `node --check` on the execution harness;
 4. recomputes the frozen 22+22 selection from owner `abstract_scoring.csv`;
 5. reconstructs blinded packet + owner key from pinned `all_pairs.tsv`;
