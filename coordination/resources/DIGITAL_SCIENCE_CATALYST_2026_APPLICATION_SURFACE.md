@@ -74,8 +74,10 @@ Canonical prep:
 Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
-Canonical proposal:
-**1,450 words**
+Canonical proposal body:
+**1,421 whitespace-delimited words / 1,477 word-like tokens**
+
+Final submission-editor recount remains required.
 
 Current EvidenceWatch private main:
 `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
