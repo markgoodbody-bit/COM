@@ -54,10 +54,11 @@ jobs:
       - name: Reconstruct frozen challenge objects from pinned owner data
         run: |
           set -euo pipefail
-          MANIFEST="research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json"
+          MANIFEST="research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json"
 
           python research/evidencewatch_retrospective/verify_brierley_manifest.py \
             /tmp/brierley-owner/abstract_scoring.csv \
+            /tmp/brierley-owner/all_pairs.tsv \
             "$MANIFEST"
 
           python research/evidencewatch_retrospective/build_blinded_brierley_packet.py \
@@ -90,23 +91,24 @@ jobs:
           labels=Counter(row['owner_label'] for row in key['cases'])
           assert labels == {'ABSTRACT_MAJOR_CHANGE':22, 'ABSTRACT_NO_CHANGE':22}, labels
 
-          assert len(baseline['missing_owner_published_abstracts']) == 3
-          assert all(row['owner_label'] == 'ABSTRACT_NO_CHANGE' for row in baseline['missing_owner_published_abstracts'])
+          assert baseline['missing_owner_published_abstracts'] == []
 
           expected={
-            'token_set_jaccard_distance':0.7870813397129187,
-            'token_multiset_jaccard_distance':0.7799043062200957,
-            'token_count_delta':0.7942583732057417,
+            'token_set_jaccard_distance':0.7995867768595041,
+            'token_multiset_jaccard_distance':0.7913223140495868,
+            'token_count_delta':0.7871900826446281,
           }
           for name,want in expected.items():
               metric=baseline['metrics'][name]
               assert metric['complete_positive_n'] == 22
-              assert metric['complete_control_n'] == 19
+              assert metric['complete_control_n'] == 22
+              assert metric['missing_positive_n'] == 0
+              assert metric['missing_control_n'] == 0
               assert abs(metric['auc'] - want) < 1e-12, (name,metric['auc'],want)
 
           print('packet cases=',packet['case_count'])
           print('labels=',dict(labels))
-          print('missing lexical controls=',len(baseline['missing_owner_published_abstracts']))
+          print('lexical complete cases=44')
           print('lexical baseline assertions PASS')
           PY
 
