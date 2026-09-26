@@ -68,7 +68,7 @@ The initial user is a living systematic review team deciding whether an existing
 
 Formal retraction/correction handling is not the gap. Zotero and Crossmark expose formal status. Cochrane now matches newly retracted included studies to affected reviews and routes impact assessment; its update guidance also covers relevant corrections and additional information from previously included studies.
 
-The residual is narrower: can a small agent catch material changes outside those well-owned paths and route only affected downstream work for human review?
+The residual is narrower: can an agent catch a material change to an already-relied-on source that arrives as neither a new study nor a formal status event, then route only affected downstream work for human review?
 
 A public baseline from the University of Bern shows this is recurring work: its living review ran weekly automated searches that added 100–200 records, checked preprint publication status in each update, and re-extracted data when content changed. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. A separate six-review evaluation reported 3–300 citations screened and 5 minutes–32 hours of author-team work per month. That is total living-review workload, not the narrower burden EvidenceWatch might reduce. Existing practice can handle this; the pilot must measure whether EvidenceWatch reduces reviewer burden without adding unacceptable misses or false alerts. Sources: https://doi.org/10.1186/s13643-023-02325-y, https://doi.org/10.1016/j.cmi.2020.06.013 and https://doi.org/10.1186/s13643-019-1248-5
 
