@@ -20,7 +20,7 @@ The owner explicitly asks applicants to test six things before applying:
 
 | Owner test | Current EvidenceWatch answer | Evidence state |
 | --- | --- | --- |
-| Research decision | Whether an already-relied-on source changed materially outside new-study/formal-status paths and should route affected synthesis/review work to humans | **DEFINED / NOT USER-VALIDATED** |
+| Research decision | Whether owner version/currentness signals or residual source changes require reopening already-relied-on synthesis/review work | **DEFINED / NOT USER-VALIDATED** |
 | Who / how often | Living systematic review team. Public Bern exemplar ran weekly searches adding 100–200 records and checked preprint status each update | **PUBLIC BASELINE / NOT UNIVERSAL FREQUENCY** |
 | Lifecycle | Evidence synthesis + research integrity | **DIRECT FIT** |
 | Existing tool/system | Proposed first integration target: Zotero / an existing reference library | **FILE HANDOFF EXISTS / LIVE INTEGRATION DOES NOT** |
@@ -30,7 +30,7 @@ The owner explicitly asks applicants to test six things before applying:
 | Secondary outcomes | Time-to-flag, misses, false alerts, setup/maintenance minutes, explanation reconstruction | **PREDECLARED / UNMEASURED** |
 | Current stage | Working standalone prototype, demo, CSL-JSON handoff, pilot protocol/scorer, 62 deterministic tests | **ENGINEERING EVIDENCE** |
 | Users/customers | None | **ABSENT / DISCLOSED** |
-| Competitors/owners | Cochrane, Crossref/Europe PMC, Zotero/Crossmark, ReadCube, scite, EPPI-Reviewer, MAGICapp, ALEC/Monash, Refract, AIEP P170, Digital Science adjacency | **OWNER-SUBTRACTED / SUBSUMPTION RISK HIGH** |
+| Competitors/owners | Cochrane, Crossref/Europe PMC, DataCite, Figshare, Zenodo, Zotero/Crossmark, ReadCube, scite, EPPI-Reviewer, MAGICapp, ALEC/Monash, Refract, AIEP P170 | **OWNER-SUBTRACTED / SUBSUMPTION RISK HIGH** |
 | Commercial market | Possible institutional/team workspace/integration buyer; pricing untested | **HYPOTHESIS ONLY** |
 | Team | Mark: systems/infrastructure/audit/failure-recovery expertise; no established research-workflow partner | **ENGINEERING STRENGTH / DOMAIN-PARTNER GAP** |
 | Budget | Staged £5k / £14k / £6k with stop gates | **DRAFT / HUMAN GATE** |
@@ -66,6 +66,18 @@ Counted on the exact branch source from the first required heading `## 1. THE PR
 - owner ceiling: **1,500 words**
 
 Headroom is **79** by the whitespace count and **23** by the stricter word-like-token count. Final copy must be recounted in the submission editor because Google/word-processor tokenisation can differ.
+
+## Dataset/version owner subtraction
+
+DataCite, Figshare and Zenodo already provide strong version identity/provenance routes, and Figshare is a Digital Science solution.
+
+Therefore the application must not imply that EvidenceWatch invents dataset-version detection. The test is whether existing owner signals plus residual un-signalled changes can be integrated with a team's actual relied-on dependency/materiality workflow at useful burden.
+
+```text
+VERSION SIGNAL != DOWNSTREAM REVIEW ROUTE
+FIGSHARE / DATACITE VERSIONING != EVIDENCEWATCH NOVELTY
+INTEGRATION HYPOTHESIS = STILL UNMEASURED
+```
 
 ## Strongest remaining weakness
 
