@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **26 September 2026 — EvidenceWatch retrospective execution frozen / Digital Science gate current**
+Updated: **26 September 2026 — EvidenceWatch retrospective integrity frozen / Zotero Stage 1 current**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -96,8 +96,8 @@ Formal baselines:
 - **model/runtime proof:** RFC 9334 RATS plus the current AIR draft are the stronger owners for attestation. The project retained the distinction `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY`; Relay #264 repaired only the local evidence wording. No parallel attestation protocol, THR field or TRACE/ME primitive was earned.
 - **CPS Beam Notes / ATRS:** the current public record contains an unresolved Azure summarisation-route tension while CPS digital-material guidance already owns important audit-trail/provenance requirements. Preserved as COM #498/#499 field witness: `PUBLIC_RECORD_CONTRADICTION != OPERATIONAL_FAILURE`; no compliance conclusion, contact or project patch.
 - **EvidenceWatch:** stronger-owner subtraction now leaves only the narrow post-reliance change seam: an already-relied-on source materially changes outside new-study/formal-status routes. Public pair literature shows the class is non-zero but does not establish living-review workflow incidence or product-scale burden.
-- **retrospective challenge:** the executable Brierley v2 corpus is frozen into 22 owner-labelled major-change pairs plus 22 clean reconstructable matched no-change controls. v1 is preserved as a failed pre-run design after no-spend source reconstruction exposed unreconstructable/unclean controls. Hosted no-spend run `36260538589` is SUCCESS; packet SHA `f12762d4…`, owner-key SHA `75c64ca3…`; no provider call or result exists.
-- **Digital Science:** remains the primary near-term resource target. Proposal/application currentness is repaired; general Site Content licence terms are reviewed, while Catalyst-specific award/IP terms and later form fields remain behind Mark's identity gate.
+- **retrospective challenge:** the executable Brierley v2 corpus is frozen into 22 owner-labelled major-change pairs plus 22 clean reconstructable matched no-change controls. v1 is preserved as a failed pre-run design after no-spend source reconstruction exposed unreconstructable/unclean controls. Hosted no-spend reconstruction `36260538589` is SUCCESS; comparator-integrity integration later passed full no-spend pipeline `36268383444`; packet SHA `f12762d4…`, owner-key SHA `75c64ca3…`; missing/malformed lexical comparator evidence now fails closed rather than routing to a surviving signal; no provider call or result exists.
+- **Digital Science:** remains the primary near-term resource target. Proposal/application currentness is repaired; Stage 1 now starts read-only against Zotero's existing API/version substrate rather than inventing library sync or write-back; judge rehearsal is current. General Site Content licence terms are reviewed, while Catalyst-specific award/IP terms and later form fields remain behind Mark's identity gate.
 
 ```text
 OWNER FOUND -> LEARN / INTEROPERATE / STOP IF SUBSUMED
@@ -143,7 +143,7 @@ Frozen objects:
 - blinded packet builder/boundary: `research/evidencewatch_retrospective/build_blinded_brierley_packet.py` + `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_BLINDING_20260926.md`;
 - exact execution semantics: `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_RUN_CONTRACT_20260926.md`.
 
-The run pins EvidenceWatch `9c96c839…`, NVIDIA `nvidia/nemotron-3-super-120b-a12b`, one common watched claim, one two-step preprint -> publication topology, failure handling and post-unblinding scoring.
+The run pins EvidenceWatch `9c96c839…`, NVIDIA `nvidia/nemotron-3-super-120b-a12b`, one common watched claim, one two-step preprint -> publication topology, failure handling and post-unblinding scoring. Comparator integrity is fail-closed: all three frozen lexical metrics must be complete 22/22, finite and internally consistent before any substantive result route; the always-quiet zero-alert ROC endpoint remains valid.
 
 ```text
 44 CASES = 22 OWNER-LABELLED MAJOR CHANGE + 22 MATCHED NO-CHANGE CONTROLS
@@ -168,6 +168,12 @@ Owner rules rechecked 26 September 2026: individuals and early-stage prototypes/
 Current application draft:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
+Current integration boundary:
+`coordination/resources/EVIDENCEWATCH_ZOTERO_INTEGRATION_BOUNDARY_20260926.md`
+
+Current judge rehearsal:
+`coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_JUDGE_REHEARSAL_20260925.md`
+
 Hostile review: COM #479 — COMPLETE / KEEP WITH CEILINGS.
 
 EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f` with 62 deterministic tests green on both Windows and Ubuntu CI. PR #7 added the CSL-JSON handoff; PR #8 repaired malformed DOI fallback; PR #9 added the synthetic-content / real-format restart-and-correction witness; PR #12 added a predeclared shadow-mode research pilot protocol; PR #13 added its deterministic offline scorer; PR #16 added pre-pilot workflow/burden intake; PR #17 hardened its pre-unblinding freeze and canonical receipt. Preserve: **CSL HANDOFF != LIVE ZOTERO/READCUBE INTEGRATION** and **SYNTHETIC WITNESS != RESEARCHER VALIDATION**. The NVIDIA submission remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9`.
@@ -184,7 +190,7 @@ Application-surface currentness is repaired at `coordination/resources/DIGITAL_S
 
 ```text
 APPLICATION = NOT SUBMITTED
-PROPOSAL BODY = 1426 WHITESPACE WORDS / 1469 WORD-LIKE TOKENS / TIGHT HEADROOM / FINAL EDITOR RECOUNT REQUIRED
+PROPOSAL BODY = 1426 WHITESPACE WORDS / TIGHT HEADROOM / FINAL EDITOR RECOUNT REQUIRED
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
 GENERAL SITE CONTENT LICENCE = REVIEWED
 CATALYST-SPECIFIC AWARD / IP TERMS = UNKNOWN
