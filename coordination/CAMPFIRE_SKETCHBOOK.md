@@ -1293,3 +1293,87 @@ Current disposition:
 
 Coordination record: COM #498.
 
+## 26 September 2026 — HMCTS BenchNotes: transcription, judicial record formation and correction route
+
+Status: **WORLD / REAL USE FIELD WITNESS / STRONG MITIGATION + STRONGER CORRECTION OWNER FOUND / PUBLIC ROUTE-LEGIBILITY GAP / NO PROJECT DELTA**
+
+Primary official surfaces:
+- HM Courts & Tribunals Service BenchNotes ATRS record:
+  https://www.gov.uk/algorithmic-transparency-records/hm-courts-and-tribunals-service-benchnotes
+- ATRS guidance for public-sector bodies:
+  https://www.gov.uk/government/publications/guidance-for-organisations-using-the-algorithmic-transparency-recording-standard/algorithmic-transparency-recording-standard-guidance-for-public-sector-bodies
+- Tribunal Procedure (First-tier Tribunal) (Immigration and Asylum Chamber) Rules 2014:
+  https://www.legislation.gov.uk/uksi/2014/2604/body
+
+Observed current public state:
+
+- BenchNotes is a production judicial-support tool in the First-tier Tribunal Immigration and Asylum Chamber.
+- A judge dictates an oral decision; Azure Speech Services produces a transcript into a structured template used to prepare the written Decisions & Reasons document.
+- The judge remains responsible for the judicial decision and is required to review/validate the transcript before finalising the written output.
+- This human review sits before the written record hardens and is therefore a strong correction-before-hardening mitigation.
+- The ATRS record's Appeals and review field says the tool does not make decisions.
+- ATRS guidance for that field is broader: publishers should consider routes for challenging/reviewing the algorithmic-tool output and the broader operational-process output.
+- The tribunal procedure rules separately provide post-decision correction/review/appeal machinery. Rule 31 permits correction of clerical mistakes or accidental slips/omissions in a decision, direction or document.
+
+Do **not** collapse these layers.
+
+```text
+AUDIO
+-> ASR TRANSCRIPT
+-> JUDGE REVIEW / VALIDATION
+-> DECISIONS & REASONS
+-> FORMAL CASE RECORD
+-> POST-FINALISATION CORRECTION / REVIEW / APPEAL ROUTES
+```
+
+The interesting public-record seam is not "AI makes immigration decisions." It does not.
+
+The seam is:
+
+> the ATRS answerability field terminates at "tool does not make decisions" even though the tool output contributes to a consequential written judicial record and the wider tribunal process has correction/review routes.
+
+That may be a **route-legibility gap in the transparency record**. It is not evidence that the real tribunal process lacks a correction route.
+
+Strong owner / mitigation subtraction:
+
+1. **Human judicial review before finalisation** is the primary local safeguard.
+2. **Tribunal rules** own formal post-finalisation correction/review/appeal.
+3. The project therefore does not invent either human verification or judicial correction machinery.
+
+Ceilings:
+
+The public sources checked do **not** establish:
+- that BenchNotes has caused an erroneous judgment;
+- that a transcript error survived judicial review into a final decision;
+- that Rule 31 necessarily covers every possible substantive error originating in speech recognition;
+- that an appeal would succeed because BenchNotes was involved;
+- that the ATRS wording is legally non-compliant;
+- that the published model/version wording is sufficient to reconstruct the exact inference backend used for a historical case.
+
+Working distinctions:
+
+```text
+AI_ASSISTED_TRANSCRIPTION != AUTOMATED_JUDICIAL_DECISION
+HUMAN_REVIEW_BEFORE_FINALISATION = STRONG MITIGATION
+TOOL_OUTPUT != BROADER_OPERATIONAL_OUTPUT
+TOOL_DOES_NOT_DECIDE != NO REVIEW_OR_CORRECTION_ROUTE
+RULE_31_CORRECTION_EXISTS != ASR_ERROR_AUTOMATICALLY CORRECTED
+PUBLIC_ATRS_ROUTE_LEGIBILITY != REAL_WORLD_ROUTE EXISTENCE
+MODEL "LATEST" != REPRODUCIBLE HISTORICAL INFERENCE STATE
+```
+
+Project routing:
+
+- TRACE already has carriers, state, clocks, authority and correction-channel distinctions sufficient to represent this route.
+- Mechanical Ethics already has correction-before-hardening and answerability language sufficient to ask whether transcription error remains visible/correctable before and after finalisation.
+- THR does not earn a record or schema change.
+- EvidenceWatch does not earn a feature.
+- ATRS PR #364 remains frozen under its existing September wake rules; do not recode the frozen corpus because one new adversarial case is interesting.
+- No HMCTS / judiciary / ATRS correction contact is authorised from this observation.
+
+Current disposition:
+
+**STRONG MITIGATION PRESENT / STRONGER CORRECTION OWNER PRESENT / PRESERVE ROUTE-LEGIBILITY WITNESS / NO PATCH.**
+
+Coordination record: COM #562.
+
