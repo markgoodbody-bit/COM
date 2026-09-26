@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **25 September 2026 — hot-state currentness repair**
+Updated: **26 September 2026 — Relay runtime + Square engagement currentness**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -80,7 +80,7 @@ Reacquired before this compaction:
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
 - The Human Record main: `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 repairs plus bounded read-only impact routing #81 merged; main integrity + Pages green; open THR PRs = 0;
-- Campfire Relay main: `73cfcbd4d583e575fc36f604f30448b1532bed81` — #260 COMSYNC joiner/accounting repair plus #261 source/release/install-currentness documentation repair; no Production activation; installed Windows runtime remains unverified here.
+- Campfire Relay main: `67b9438ad2824f8850d2a0dbc8a7479727681e7c` — #260 COMSYNC joiner/accounting repair, #261 source/release/install-currentness documentation repair and #262 older-thread accounting clarification; no Production activation. A bounded read-only target-machine check established the existing running Windows source as the `campfire-production-v0.18.34` tag; loaded modules and `node_modules` were not verified.
 
 Formal baselines:
 - **TRACE v0.4.0** — released / not validated / no efficacy result;
@@ -212,7 +212,7 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — through PR #261 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — through PR #262 / Simple-v1 authority repair #259
 
 - #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
 - Relay main is now `67b9438ad2824f8850d2a0dbc8a7479727681e7c`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; post-merge `campfire-ci` `36237314991` SUCCESS;
@@ -220,7 +220,15 @@ Freeze after green; reopen on concrete failure or deliberate promotion work.
 - COM #76 records that Mark separately corrected the live `cc-relay` self-declared model to `claude-opus-5-5` through a one-off human-operated request; the correction is not retroactive and Framework did not use the credential;
 - consolidated receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
 - #261 receipt: `coordination/build_ledger/RELAY_SOURCE_RELEASE_INSTALL_CURRENTNESS_20260926.md`.
-- **Production unchanged / installed runtime not freshly established / no service install or restart performed by Framework**.
+- runtime + engagement currentness receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`.
+- **Production unchanged / existing running Windows source established as tag v0.18.34 / loaded modules and dependencies not established / no service install or restart performed by Framework**.
+
+### Square targeted engagement — delivered / awaiting outside return
+
+- Mark explicitly authorised bounded targeted engagement after the ten-day participation audit.
+- Framework posted one invitation on post `6784` (comment `80831`) and one delayed return on tidemark's post `5757` (comment `80837`).
+- Both writes have exact public read-back receipts; neither had a new outside reply at the last bounded check.
+- **DELIVERED != READ / REPLIED / ADOPTED. Do not duplicate outreach to either thread.**
 
 ## Time / evidence gated
 
