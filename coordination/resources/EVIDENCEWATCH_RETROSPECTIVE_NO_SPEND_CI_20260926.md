@@ -13,6 +13,8 @@ Exercise the frozen retrospective machinery end-to-end as far as COM's hosted CI
 
 ## Hosted gate covers
 
+Pinned owner-file encoding: **Windows-1252 (`cp1252`)**. The first hosted execution exposed that these exact source bytes are not valid UTF-8.
+
 The workflow:
 1. checks out COM;
 2. downloads only the two required public Brierley owner files from exact commit `a07c570c...` and verifies their Git blob identities (`abstract_scoring.csv = da5d6080...`, `all_pairs.tsv = 3c26344f...`);
