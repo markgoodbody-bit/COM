@@ -4,8 +4,10 @@ Date: 26 September 2026
 
 Status: **REPAIRED / WINDOWS + LINUX CI GREEN / RUNTIME SCORER SEMANTICS UNCHANGED**
 
-Current EvidenceWatch private main:
+EvidenceWatch private main **at the time of this repair**:
 `b8fc0971ceace55878aa6130448850d88774f254`
+
+This is historical receipt identity, not a present-tense main pointer.
 
 Trigger:
 Claude Code ran the merged 54-test suite on Windows and observed **53/54**.
