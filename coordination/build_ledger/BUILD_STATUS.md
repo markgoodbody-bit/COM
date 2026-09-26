@@ -148,10 +148,10 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
-- proposal hard-limit: 1,500 words; current exact proposal-body count after the 26 September owner-test repair is **1,409 whitespace-delimited words / 1,465 word-like tokens**; both local methods remain below the ceiling and final editor recount is still required;
+- proposal hard-limit: 1,500 words; current exact proposal-body count after the 26 September owner-test repair is **1,421 whitespace-delimited words / 1,477 word-like tokens**; both local methods remain below the ceiling and final editor recount is still required;
 - copy discipline: proposal is now effectively frozen; new material must replace weaker wording rather than accumulate, unless the final editor count proves safe;
 - judge rehearsal and likely post-gate form copy are prepared; no identity/contact field has been entered;
-- target object: EvidenceWatch as a bounded workflow-integration/burden hypothesis inside research integrity / evidence synthesis;
+- target object: EvidenceWatch as a bounded post-reliance source-change integration/burden hypothesis inside research integrity / evidence synthesis; owner-subtracted boundary: `coordination/resources/EVIDENCEWATCH_STRONG_OWNER_RESIDUAL_20260926.md`;
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite, EPPI-Reviewer, MAGICapp, ALEC/Monash and Digital Science's own adjacent work own major component mechanisms; public partner quarry additionally identifies EPPI Centre, ALEC, Bern and MAGIC as strong current living-evidence owners that could falsify or subsume the residual workflow claim;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
 - EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`; PR #7/#8/#9/#12/#13/#14 plus #15 real-workflow owner subtraction, #16 pre-pilot workflow/burden intake and #17 freeze completeness/canonical receipt hardening are merged; 62/62 tests pass in both Windows and Ubuntu jobs; handoff remains file-based, not a live Zotero/ReadCube integration; no live research pilot exists.
