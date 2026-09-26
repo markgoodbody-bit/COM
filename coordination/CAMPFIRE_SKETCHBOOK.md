@@ -2125,3 +2125,221 @@ Current disposition:
 
 Coordination record: COM #575.
 
+## 26 September 2026 — Sutton Access Assure breaks the six-question answerability teaching compression at reviewer/actuator separation
+
+Status: **FRESH-CASE FALSIFICATION / MULTI-ACTOR ROUTE / TEACHING COMPRESSION REPAIR EARNED / NO NEW SEMANTIC PRIMITIVE**
+
+Primary official surfaces:
+- London Borough of Sutton Access Assure / Technology Enabled Care ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/london-borough-of-sutton-access-assure-technology-enabled-care
+- Sutton care-technology public service page:
+  https://www.sutton.gov.uk/adult-social-care/support-live-home/care-technology/get-care-technology
+
+Why this is structurally different:
+
+Access Assure combines in-home sensors, anomaly detection and LLM-based summaries with a 24/7 monitoring and escalation service.
+
+The public ATRS record says:
+- every alert is reviewed by a trained Medequip Connect specialist;
+- a welfare-check call is made;
+- after review, the response can branch into several different services or actors;
+- possible escalations include Medequip emergency response, NHS Urgent Community Response, emergency services, relatives, carers or other supporting services;
+- local escalation pathways are co-designed with Sutton/local health partners;
+- residents can object, complain or refuse the service where they have capacity;
+- where a resident lacks capacity, a best-interest decision may be supported by the Local Authority under the Mental Capacity Act / Care Act framework;
+- Sutton is data controller, Medequip is data processor, and Access Group is sub-processor.
+
+The route therefore looks less like one reviewer correcting one output and more like:
+
+```text
+SENSOR / MODEL OUTPUT
+-> MEDEQUIP REVIEWER
+-> WELFARE CHECK
+-> ROUTING / ESCALATION DECISION
+-> ONE OR MORE DOWNSTREAM ACTORS
+   -> MEDEQUIP RESPONDER
+   -> NHS URGENT COMMUNITY RESPONSE
+   -> EMERGENCY SERVICES
+   -> RELATIVE / CARER
+   -> LOCAL AUTHORITY
+-> CONSEQUENCE FOR RESIDENT
+```
+
+## Test against the six-question sketch
+
+The existing six-question teaching compression asks:
+
+1. affected layer;
+2. initiator;
+3. reviewer;
+4. review resolution;
+5. changeable consequence;
+6. correction clock.
+
+Most of the case can be described.
+
+But one load-bearing distinction is obscured:
+
+> The person/entity that reviews the signal is not necessarily the person/entity with authority or capability to take the consequential action.
+
+For example:
+- Medequip may review the alert;
+- NHS or emergency services may hold the relevant operational capability;
+- a local-authority decision-maker may hold legal/statutory authority in a capacity/best-interest route;
+- a relative/carer may take practical action without holding formal public authority.
+
+Therefore:
+
+```text
+REVIEWER
+!= ACTUATOR
+!= AUTHORITY HOLDER
+!= CAPABILITY HOLDER
+```
+
+The six-question compression had previously got away with this because in several earlier cases those roles happened to collapse:
+- judge reviews + finalises;
+- practitioner reviews + decides;
+- customer reviews + acts on own draft return;
+- MoJ linkage team reviews + updates the model/dataset.
+
+Access Assure separates them.
+
+## What this earns
+
+This is the first fresh case that **does break the teaching compression as written**.
+
+It earns a teaching-level repair:
+
+```text
+AFFECTED LAYER
+-> INITIATOR
+-> REVIEWER
+-> ACTOR / AUTHORITY TO CHANGE
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+Alternative wording may later be better:
+
+> **Who can actually act, and under what authority?**
+
+The important part is not the number seven.
+
+The important part is that a reader must not infer:
+
+```text
+PERSON WHO REVIEWS
+=
+PERSON WHO CAN CORRECT / ACT
+```
+
+## Why this still does NOT earn a new TRACE / ME primitive
+
+TRACE and Mechanical Ethics already carry the deeper distinction:
+- capability;
+- authority;
+- actor/affected entity;
+- correction channel;
+- clocks;
+- consequence.
+
+So:
+
+```text
+TEACHING COMPRESSION FAILED
+!= SEMANTIC FRAMEWORK FAILED
+
+NEW QUESTION EARNED
+!= NEW PRIMITIVE EARNED
+```
+
+This is exactly the kind of middle-out result we wanted:
+a real case exposes that the compact teaching surface had collapsed two already-existing semantic distinctions.
+
+## Route chaining still matters
+
+The Data First result from COM #575 also survives.
+
+Access Assure adds **branching** as well as chaining.
+
+A single alert can fan out across multiple actors and authority regimes:
+
+```text
+LOCAL ROUTE
+-> BRANCH A: PRIVATE RESPONSE SERVICE
+-> BRANCH B: NHS
+-> BRANCH C: EMERGENCY SERVICE
+-> BRANCH D: FAMILY / CARER
+-> BRANCH E: LOCAL AUTHORITY
+```
+
+Therefore a practical answerability read may need to trace:
+
+```text
+ROUTE CHAINING
++ ROUTE BRANCHING
++ AUTHORITY HANDOFF
+```
+
+without turning those into new ontology primitives.
+
+## Positive owner subtraction
+
+The public record contains substantial safeguards and explicit routing:
+- all alerts reviewed;
+- welfare-check calls;
+- documented escalation pathways;
+- audit trail of alerts, calls, reasons, actions and outcomes;
+- resident complaint/objection route;
+- ability to refuse where capacity exists;
+- statutory best-interest route where capacity does not.
+
+Do not interpret the multi-actor complexity itself as a defect.
+
+## Ceilings
+
+The public evidence does **not** establish:
+- an erroneous alert that caused harm;
+- an inappropriate escalation;
+- that handoffs fail in practice;
+- that residents cannot obtain correction;
+- that the complaint route is ineffective;
+- that capacity decisions are improperly made;
+- that the role/authority boundaries in the public ATRS record fully describe every contractual or clinical responsibility.
+
+## Falsification result
+
+The provisional six-question teaching compression does **not** survive unchanged.
+
+Repair earned:
+
+> Separate the reviewer from the entity that can actually act/change the consequence, and ask what authority/capability supports that action.
+
+Preserve:
+
+```text
+SIX-QUESTION SKETCH = FALSIFIED AS TEACHING COMPRESSION
+
+DEEPER TRACE / ME SEMANTICS = NOT FALSIFIED
+
+REVIEWER != ACTOR / AUTHORITY HOLDER
+= LOAD-BEARING IN MULTI-ACTOR ROUTES
+```
+
+Project routing:
+- repair the provisional teaching compression only;
+- keep TRACE v0.4.0 / ME v0.8.0 source frozen;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no ATRS #364 population wake;
+- no Sutton/Medequip contact;
+- next test should ask whether the repaired seven-question teaching compression handles another multi-actor case without further role collapse.
+
+Current disposition:
+
+**TEACHING SKETCH FALSIFIED / REVIEWER-ACTOR-AUTHORITY SPLIT EARNED / SEMANTIC FRAMEWORK UNCHANGED.**
+
+Coordination record: COM #577.
+
