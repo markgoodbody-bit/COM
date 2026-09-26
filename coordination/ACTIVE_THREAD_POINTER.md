@@ -165,22 +165,38 @@ Freeze after green.
 - PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`: it holds COM108 and Square acknowledgements until a completed failure-free run; hosted `campfire-ci` `36258366754` SUCCESS and independent Windows full discovery 114 PASS. Relay main remains #264 pending the Campfire-main adoption gate;
 - Production/install state unchanged by Framework; no service install or restart performed by Framework.
 
-### Answerability-route field sequence — five-case provisional teaching compression
+### Answerability-route field sequence — six-case teaching compression with one earned repair
 
 - HMCTS BenchNotes: strong pre-finalisation human correction + wider post-finalisation route, but weak public binding between layers;
 - MoJ e-supervision: no formal appeal, but individual review trigger + reviewer + bounded consequence are publicly legible;
 - HMRC Business Propensity to Pay: individual score shapes treatment while correction is mostly visible at broader debt/service layer;
 - HMRC VAT Assist: affected person retains direct pre-hardening control to ignore/correct before submission;
-- MoJ Data First / Splink: versioned dataset correction can be locally answerable while downstream research outputs may remain stale; provisional sharpening = **route chaining / next-layer handoff**, not a seventh dimension.
+- MoJ Data First / Splink: versioned dataset correction can be locally answerable while downstream research outputs may remain stale; route chaining / next-layer handoff sharpened;
+- Sutton Access Assure: **six-question sketch falsified** because alert reviewer, downstream actuator, authority holder and capability holder can be different entities across a branching care route.
+
+Repaired teaching questions:
+
+```text
+AFFECTED LAYER
+-> INITIATOR
+-> REVIEWER
+-> WHO CAN ACT / UNDER WHAT AUTHORITY
+-> REVIEW RESOLUTION
+-> CHANGEABLE CONSEQUENCE
+-> CORRECTION CLOCK
+```
+
+Preserve:
 
 ```text
 ANSWERABILITY != APPEAL_PRESENT
+REVIEWER != ACTOR / AUTHORITY HOLDER
 LOCAL CORRECTION ROUTE != DOWNSTREAM CORRECTION PROPAGATION
 ROUTE LEGIBLE AT LAYER N != ROUTE CONNECTED TO LAYER N+1
-TEACHING COMPRESSION != TRACE / ME PRIMITIVE
+TEACHING SURFACE REPAIR != TRACE / ME PRIMITIVE
 ```
 
-Latest field record: COM #575 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Keep ATRS #364 frozen; no population result or contact.
+Latest field record: COM #577 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Keep ATRS #364 frozen; no population result or contact.
 ### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
