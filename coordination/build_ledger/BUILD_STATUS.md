@@ -148,7 +148,7 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
-- proposal hard-limit: 1,500 words; current exact proposal-body count after the 26 September owner-test repair is **1,421 whitespace-delimited words / 1,477 word-like tokens**; both local methods remain below the ceiling and final editor recount is still required;
+- proposal hard-limit: 1,500 words; current exact proposal-body count after the 26 September owner-test repair is **1,425 whitespace-delimited words / 1,467 word-like tokens**; both local methods remain below the ceiling and final editor recount is still required;
 - copy discipline: proposal is now effectively frozen; new material must replace weaker wording rather than accumulate, unless the final editor count proves safe;
 - judge rehearsal and likely post-gate form copy are prepared; no identity/contact field has been entered;
 - target object: EvidenceWatch as a bounded post-reliance source-change integration/burden hypothesis inside research integrity / evidence synthesis; owner-subtracted boundary: `coordination/resources/EVIDENCEWATCH_STRONG_OWNER_RESIDUAL_20260926.md`; prevalence boundary: `coordination/resources/EVIDENCEWATCH_RESIDUAL_PREVALENCE_20260926.md` — consequential preprint/publication changes exist but pair-level rates do not establish living-review workflow incidence;
