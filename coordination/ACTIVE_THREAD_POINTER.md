@@ -165,7 +165,7 @@ Freeze after green.
 - PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`: it holds COM108 and Square acknowledgements until a completed failure-free run; hosted `campfire-ci` `36258366754` SUCCESS and independent Windows full discovery 114 PASS. Relay main remains #264 pending the Campfire-main adoption gate;
 - Production/install state unchanged by Framework; no service install or restart performed by Framework.
 
-### Answerability-route field sequence — six-case teaching compression with one earned repair
+### Answerability-route field sequence — seven cases / repaired teaching surface holding
 
 - HMCTS BenchNotes: strong pre-finalisation human correction + wider post-finalisation route, but weak public binding between layers;
 - MoJ e-supervision: no formal appeal, but individual review trigger + reviewer + bounded consequence are publicly legible;
@@ -173,6 +173,7 @@ Freeze after green.
 - HMRC VAT Assist: affected person retains direct pre-hardening control to ignore/correct before submission;
 - MoJ Data First / Splink: versioned dataset correction can be locally answerable while downstream research outputs may remain stale; route chaining / next-layer handoff sharpened;
 - Sutton Access Assure: **six-question sketch falsified** because alert reviewer, downstream actuator, authority holder and capability holder can be different entities across a branching care route.
+- DEFRA / PackUK waste-cost stack: repaired surface survives upstream model QA + downstream PackUK decision + complaint + jurisdiction-specific external appeal; formal appeal at the decision layer does not equal direct contestability of each upstream model component.
 
 Repaired teaching questions:
 
@@ -196,7 +197,7 @@ ROUTE LEGIBLE AT LAYER N != ROUTE CONNECTED TO LAYER N+1
 TEACHING SURFACE REPAIR != TRACE / ME PRIMITIVE
 ```
 
-Latest field record: COM #577 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Keep ATRS #364 frozen; no population result or contact.
+Latest field record: COM #579 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Keep ATRS #364 frozen; no population result or contact. Next hostile case should preferably involve diffuse/collective affected parties where no single initiator is obvious.
 ### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
