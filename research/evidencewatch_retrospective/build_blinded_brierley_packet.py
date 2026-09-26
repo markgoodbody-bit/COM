@@ -31,7 +31,7 @@ def clean_text(value: str) -> str:
 
 
 def load_all_pairs(path: Path) -> dict[str, dict]:
-    with path.open(newline="", encoding="cp1252") as handle:
+    with path.open(newline="", encoding="cp1252", errors="replace") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         rows: dict[str, dict] = {}
         for row in reader:
@@ -93,8 +93,14 @@ def build(manifest: dict, all_pairs: dict[str, dict]) -> tuple[dict, dict]:
                 f"manifest={selected_case['published_doi']} source={row_published_doi}"
             )
 
-        preprint = clean_text(row.get("abstract"))
-        published = clean_text(row.get("published_pubmed_abstract"))
+        raw_preprint = str(row.get("abstract") or "")
+        raw_published = str(row.get("published_pubmed_abstract") or "")
+        if "\ufffd" in raw_preprint or "\ufffd" in raw_published:
+            raise AssertionError(
+                f"Selected abstract contains undecodable owner-source byte(s): {doi}"
+            )
+        preprint = clean_text(raw_preprint)
+        published = clean_text(raw_published)
         if not preprint:
             raise AssertionError(f"Missing preprint abstract for {doi}")
         if not published:
