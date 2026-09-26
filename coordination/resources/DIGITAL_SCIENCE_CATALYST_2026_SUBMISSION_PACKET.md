@@ -64,11 +64,11 @@ FINAL TERMS / IDENTITY / SUBMIT = MARK HUMAN GATE
 
 ## 1. THE PROBLEM
 
-The initial user is a living systematic review team deciding whether an existing conclusion needs reopening after evidence already included changes: a dataset revision, authority update, replaced source page, or apparent corroboration from the same evidentiary root.
+The initial user is a living systematic review team deciding whether an existing conclusion needs reopening after evidence already included changes: a repository exposes a new version, an authority source changes, or apparent corroboration shares one evidentiary root.
 
 Formal retraction/correction handling is not the gap. Zotero and Crossmark expose formal status. Cochrane now matches newly retracted included studies to affected reviews and routes impact assessment; its update guidance also covers relevant corrections and additional information from previously included studies.
 
-The residual is narrower: can an agent catch a material change to an already-relied-on source that arrives as neither a new study nor a formal status event, then route only affected downstream work for human review?
+The residual is narrower: can an agent consume trusted version/currentness signals where they exist, catch material residual changes where they do not, and route only affected already-relied-on work for human review?
 
 A public baseline from the University of Bern shows this is recurring work: its living review ran weekly automated searches that added 100–200 records, checked preprint publication status in each update, and re-extracted data when content changed. One Lombardi preprint reported 41/138 asymptomatic positives; after longer follow-up, the final article reported 17/139. A separate six-review evaluation reported 3–300 citations screened and 5 minutes–32 hours of author-team work per month. That is total living-review workload, not the narrower burden EvidenceWatch might reduce. Existing practice can handle this; the pilot must measure whether EvidenceWatch reduces reviewer burden without adding unacceptable misses or false alerts. Sources: https://doi.org/10.1186/s13643-023-02325-y, https://doi.org/10.1016/j.cmi.2020.06.013 and https://doi.org/10.1186/s13643-019-1248-5
 
@@ -134,9 +134,9 @@ Stronger owners remove most mechanism novelty:
 - **ReadCube and scite** own literature monitoring, shared libraries, review workflows, citation context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
 - **EPPI-Reviewer** already links Zotero libraries and uses OpenAlex-based auto-update suggestions for living reviews; **MAGICapp** already supports structured guideline updating with audit trails and current living-guideline surveillance; **ALEC/Monash** is developing an AI-supported Living Evidence Architecture. These are direct subsumption tests, not validation targets: https://eppi.ioe.ac.uk/cms/er4/help/openalex-in-eppi-reviewer/keeping-a-review-up-to-date-auto-update, https://www.magicevidence.org/magicapp/ and https://www.monash.edu/mada/research/project/living-evidence-architecture
 - **Refract** owns reproducible source-change events; **AIEP P170** specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
-- Digital Science's **PostPub/VIRUS** track integrity events/downstream impact; **Perma.cc** preserves relied-on web states.
+- Digital Science's **Figshare** already owns versioned research-output identity; **PostPub/VIRUS** track integrity events/downstream impact; **Perma.cc** preserves relied-on web states.
 
-EvidenceWatch is not a new change detector or dependency-graph idea. Its surviving hypothesis is integration: can heterogeneous post-reliance source state, explicit authority, materiality filtering, a human-approved dependency map and review routing fit an existing workflow with low enough burden to be useful?
+EvidenceWatch is not a new change detector, version registry or dependency-graph idea. Its surviving hypothesis is integration: can owner version/change signals plus residual source changes, explicit authority, materiality filtering and review routing fit an existing workflow with low enough burden to be useful?
 
 If a stronger workflow already does this, or the residual change class is too rare, stop or narrow.
 
@@ -164,7 +164,7 @@ EvidenceWatch sits in evidence synthesis and research integrity.
 
 Its mechanisms are not novel. The fit is a multi-step agent that must know when to stay quiet, flag a change, or refuse to act without authority, matching Digital Science's emphasis on embedded workflows with provenance, governance and accountability.
 
-Digital Science also owns several strong adjacent systems, including ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
+Digital Science also owns several strong adjacent systems, including Figshare, ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
 
 ## 9. BUDGET
 
