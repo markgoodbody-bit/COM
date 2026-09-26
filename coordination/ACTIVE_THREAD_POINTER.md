@@ -216,6 +216,9 @@ Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case 
 
 ### PSFH current Door
 
+D087 exact-publication cold audit: `coordination/build_ledger/PSFH_D087_COLD_FIRST_CONTACT_AUDIT_20260926.md` = **KEEP / NO PATCH**. Exact `gh-pages@723b07f7…` is Site Preview 0.8.44; stale 0.8.41 seen in crawler cache was not a live defect. Story-before-vocabulary, visible stop/challenge, map-first Explore, art-first Works and bounded machine entrance survive. `SOURCE-ORDER AUDIT != HUMAN READER STUDY`; reader benefit remains unmeasured.
+
+
 D087 is live. D086's map-first Explore remains intact; D087 changes only the human-facing source routes explicitly labelled current, bringing them to released TRACE v0.4.0 `6c68fae8…` and Mechanical Ethics v0.8.0 `e2ef746e…` while retaining the historical node-source snapshots `46f4fcd…` / `44f7efb…`. Maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; publication run `36198130032` SUCCESS; post-sync maintained CI `36198262841` SUCCESS. COM #491 is merged. Reader benefit remains unmeasured.
 
 ## 5. Time / fresh-evidence gates
