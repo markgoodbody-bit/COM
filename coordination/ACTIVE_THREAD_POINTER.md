@@ -162,7 +162,7 @@ Freeze after green.
 - bounded target-host evidence establishes the existing running Windows source as tag v0.18.34 (`src/` 74/74 plus matching `package.json`); loaded modules, `node_modules`, `STATE/` and `.env` were not established;
 - runtime + engagement receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`;
 - preserve: `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY` and `PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION`;
-- PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`: it holds COM108 and Square acknowledgements until a completed failure-free run; hosted `campfire-ci` `36258366754` SUCCESS and independent Windows full discovery 114 PASS. Relay main remains #264 pending the Campfire-main adoption gate;
+- PR #265 is OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`: it holds COM108 and Square acknowledgements until a completed failure-free run; hosted `campfire-ci` `36258366754` SUCCESS and independent Windows full discovery 114 PASS. **Technical gate satisfied; remaining Campfire-main adoption gate is explicit Mark merge approval under Relay `coordination/WORKSTREAMS.md`. Do not infer approval from generic proceed/keep-going instructions.** Relay main remains #264;
 - Production/install state unchanged by Framework; no service install or restart performed by Framework.
 
 ### Answerability-route field sequence — ten cases / saturated / extract teaching card
