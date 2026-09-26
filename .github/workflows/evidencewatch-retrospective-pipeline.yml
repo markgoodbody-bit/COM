@@ -20,12 +20,17 @@ jobs:
       - name: Checkout COM
         uses: actions/checkout@v4
 
-      - name: Checkout pinned public Brierley owner dataset
-        uses: actions/checkout@v4
-        with:
-          repository: preprinting-a-pandemic/preprint_changes
-          ref: a07c570cf3be4481ba74c59ceee22e40f949990b
-          path: owner
+      - name: Fetch only pinned public Brierley owner files
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/brierley-owner
+          BASE="https://raw.githubusercontent.com/preprinting-a-pandemic/preprint_changes/a07c570cf3be4481ba74c59ceee22e40f949990b/data"
+          curl --fail --location --silent --show-error "$BASE/abstract_scoring.csv" -o /tmp/brierley-owner/abstract_scoring.csv
+          curl --fail --location --silent --show-error "$BASE/all_pairs.tsv" -o /tmp/brierley-owner/all_pairs.tsv
+
+          test "$(git hash-object /tmp/brierley-owner/abstract_scoring.csv)" = "da5d608019200a14b31c9d605df8e27ced2eaa21"
+          test "$(git hash-object /tmp/brierley-owner/all_pairs.tsv)" = "3c26344ffc84ca43656477dd2229ac6530d4735f"
+          echo "pinned owner file blobs verified"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -52,17 +57,17 @@ jobs:
           MANIFEST="research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json"
 
           python research/evidencewatch_retrospective/verify_brierley_manifest.py \
-            owner/data/abstract_scoring.csv \
+            /tmp/brierley-owner/abstract_scoring.csv \
             "$MANIFEST"
 
           python research/evidencewatch_retrospective/build_blinded_brierley_packet.py \
-            owner/data/all_pairs.tsv \
+            /tmp/brierley-owner/all_pairs.tsv \
             "$MANIFEST" \
             /tmp/brierley_packet.json \
             /tmp/brierley_key.json
 
           python research/evidencewatch_retrospective/score_trivial_baselines.py \
-            owner/data/all_pairs.tsv \
+            /tmp/brierley-owner/all_pairs.tsv \
             "$MANIFEST" \
             /tmp/brierley_baselines.json
 
