@@ -2343,3 +2343,202 @@ Current disposition:
 
 Coordination record: COM #577.
 
+## 26 September 2026 — DEFRA / PackUK stacked-model appeal tests the repaired answerability-route teaching surface
+
+Status: **FRESH-CASE TEST / STACKED MODEL + DOWNSTREAM FORMAL APPEAL / REPAIRED TEACHING SURFACE SURVIVED / NO PROJECT DELTA**
+
+Primary official surfaces:
+- DEFRA Local Authority Waste Collection Cost Groupings ATRS:
+  https://www.gov.uk/algorithmic-transparency-records/defra-local-authority-waste-collection-cost-groupings
+- PackUK Extended Producer Responsibility packaging appeals process:
+  https://www.gov.uk/government/publications/packuk-extended-producer-responsibility-packaging-appeals-process
+- Detailed PackUK appeal guidance:
+  https://www.gov.uk/government/publications/packuk-extended-producer-responsibility-packaging-appeals-process/extended-producer-responsibility-for-packaging-pepr-appeal-against-a-decision-issued-by-packuk
+
+Why this is structurally distinct:
+
+The Local Authority Waste Collection Cost Groupings model does not itself issue a fee or payment.
+
+Its output is one stage in a stacked process:
+
+```text
+GROUPINGS MODEL
+-> LAPCAP
+-> PROFIC
+-> BASE FEES / LOCAL-AUTHORITY PAYMENT CALCULATION
+-> PACKUK FORMAL DECISION / NOTICE
+```
+
+The ATRS record says:
+- the groupings model assigns local authorities to residual/recycling cost groups;
+- groupings feed LAPCAP;
+- LAPCAP feeds PROFIC;
+- PROFIC helps set producer base fees;
+- formal annual fees/payments are downstream outputs;
+- first-year funding allocated through the process was just under £1.5 billion;
+- groupings are reviewed by humans before insertion into LAPCAP;
+- code changes are quality-assured;
+- the appeal process attaches to decisions assisted by the full LAPCAP process, not to the clustering output itself.
+
+The PackUK appeal guidance then describes:
+- complaints before appeal for most relevant decisions;
+- producer appeals against fee liability/revised-fee decisions;
+- local-authority appeals against disposal-cost/payment decisions;
+- external appeal bodies that vary by UK jurisdiction.
+
+This creates a route with multiple decision layers and authority transfers:
+
+```text
+DEFRA ANALYSTS
+-> REVIEW GROUPINGS MODEL
+
+PACKUK
+-> ISSUES FEE / PAYMENT DECISION
+
+AFFECTED PRODUCER / LOCAL AUTHORITY
+-> COMPLAINT TO PACKUK
+
+IF UNRESOLVED
+-> EXTERNAL APPEAL BODY
+   -> FIRST-TIER TRIBUNAL (ENGLAND / WALES)
+   -> SHERIFF / SCOTTISH MINISTERS (SCOTLAND, DEPENDING ON ROUTE)
+   -> PLANNING APPEALS COMMISSION (NORTHERN IRELAND)
+```
+
+## Test against the repaired teaching surface
+
+Current repaired questions:
+
+1. affected layer;
+2. initiator;
+3. reviewer;
+4. who can act / under what authority;
+5. review resolution;
+6. changeable consequence;
+7. correction clock.
+
+The case fits without another role.
+
+### Upstream model layer
+
+- **Affected layer:** local-authority grouping.
+- **Initiator:** Defra analyst / model QA.
+- **Reviewer:** another analyst / model team.
+- **Who can act / authority:** Defra modelling team can amend grouping/model inputs/code before downstream use.
+- **Resolution:** model/grouping-level QA.
+- **Changeable consequence:** grouping passed into LAPCAP.
+- **Clock:** before downstream formal fee/payment determination.
+
+### Downstream decision layer
+
+- **Affected layer:** PackUK fee/payment decision or notice.
+- **Initiator:** affected producer/holding company/local authority through complaint/appeal.
+- **Reviewer:** PackUK complaint process, then external appeal body if escalated.
+- **Who can act / authority:** PackUK can alter/replace its decision within its process; external statutory appeal body holds decision-review authority under the relevant regulations.
+- **Resolution:** formal decision/notice.
+- **Changeable consequence:** liability/payment/amount or related notice.
+- **Clock:** complaint first for most regulation 105 routes, then appeal within stated time limits.
+
+This case therefore confirms the value of separating:
+
+```text
+MODEL REVIEWER
+!= DOWNSTREAM DECISION MAKER
+!= APPELLANT
+!= EXTERNAL APPEAL AUTHORITY
+```
+
+The Sutton Access Assure repair handles this cleanly.
+
+## Route chaining
+
+The case also reinforces the Data First sharpening:
+
+```text
+UPSTREAM MODEL CORRECTION
+DOES NOT ITSELF EQUAL
+DOWNSTREAM DECISION CORRECTION
+
+DOWNSTREAM APPEAL
+DOES NOT ITSELF IDENTIFY
+WHICH UPSTREAM MODEL COMPONENT CAUSED THE ERROR
+```
+
+A useful read traces the handoff:
+
+```text
+GROUPING
+-> LAPCAP
+-> PROFIC
+-> PACKUK DECISION
+-> COMPLAINT
+-> APPEAL
+```
+
+At each transition, ask whether correction can propagate to the next affected layer.
+
+## Why no new dimension is earned
+
+The repaired teaching surface already distinguishes:
+- reviewer;
+- authority/actor;
+- resolution;
+- consequence;
+- clock;
+- layer.
+
+No further role is required.
+
+The cross-jurisdiction variation also fits inside the existing **who can act / under what authority** question: the competent appeal body changes by jurisdiction, but the semantic dimension does not.
+
+Therefore:
+
+```text
+JURISDICTION CHANGES THE AUTHORITY HOLDER
+!= NEW ANSWERABILITY DIMENSION
+```
+
+## Ceilings
+
+The public evidence does **not** establish:
+- a known incorrect grouping;
+- a known fee/payment decision caused by a model error;
+- that every grouping error is appealable as such;
+- that an appellant can directly inspect every upstream model contribution;
+- that an appeal body will diagnose the upstream algorithmic source of an error;
+- that the model stack is unfair or unlawful.
+
+The existence of a formal appeal route is not evidence that the upstream model is transparent or error-free.
+
+## Falsification result
+
+The repaired teaching compression survives this seventh, stacked-model / formal-appeal case.
+
+Preserve:
+
+```text
+SEVEN-QUESTION TEACHING SURFACE SURVIVED THIS CASE
+!= VALIDATED FRAMEWORK
+
+FORMAL APPEAL AT DOWNSTREAM DECISION
+!= UPSTREAM MODEL CONTESTABILITY
+
+REVIEWER / DECISION MAKER / APPELLANT / APPEAL AUTHORITY
+= DISTINCT ROLES CORRECTLY EXPOSED BY REPAIR
+```
+
+Project routing:
+- keep TRACE v0.4.0 / ME v0.8.0 frozen;
+- no THR record/schema;
+- no EvidenceWatch feature;
+- no ATRS #364 population wake;
+- no Defra/PackUK contact;
+- keep teaching compression provisional but now prefer the repaired seven-question form;
+- next case should preferably test anonymous/collective affected parties or diffuse public effects, where there may be no single obvious initiator.
+
+Current disposition:
+
+**REPAIRED TEACHING SURFACE SURVIVED / STACKED MODEL + FORMAL APPEAL REPRESENTED / NO NEW DIMENSION / NO PATCH.**
+
+Coordination record: COM #579.
+
