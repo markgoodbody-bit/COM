@@ -181,14 +181,14 @@ Technical candidate plausible; public intake waits for explicit human/controller
 
 Exactly four public records. Record 5 not earned.
 
-Entity-first / entity-through-time pressure routes into existing THR PR #52 and current identity/assertion/living-subject models. No new universal entity graph or root schema is earned by the overnight review; preserve temporal/currentness and correction questions as bounded pressure.
+Entity-first / entity-through-time pressure was owner-subtracted through exploratory THR #52. #52 is now closed unmerged after #81 extracted the bounded read-only impact-routing helper. No universal entity graph, dependency ontology or root schema was earned; preserve real cross-record fan-out, temporal/currentness and correction questions as future bounded pressure.
 
 Do not create another record merely because:
 - a correction is interesting;
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current THR main is `0694ea9f4b9371ff635035bd2cc90dfd08e9632a`. Main integrity `36200466240` and Pages deployment `36200465585` are SUCCESS. #76 browse-card freshness and #77 Hannibal recovery-route repairs remain active. Documentation-only #78/#80 now preserve source antecedence and action-relevant missing-value reasons without new schema/types/records. Stale #60/#61/#64/#70/#72/#79 are closed as superseded; only exploratory RFC #52 remains open. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`, `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`, and `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`.
+Current THR main is `2d0cf64e685224b3c8183f5e83e18143bb16f0c7`. Main integrity `36237522858` and Pages deployment `36237522573` are SUCCESS. #76/#77/#78/#80 remain active; #81 adds bounded read-only source impact routing using existing direct + assertion-derived relations. #52 is closed unmerged; open THR PRs = 0. Four records remain four; no schema/type growth. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`, `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`, `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`, and `coordination/build_ledger/THR_FRACTAL_RFC_RESIDUE_EXTRACTION_20260926.md`.
 
 ## 7. Resources
 
