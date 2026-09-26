@@ -13,7 +13,7 @@ Builder:
 
 Inputs:
 - exact owner `all_pairs.tsv` from the pinned Brierley repository commit;
-- frozen challenge manifest already merged in COM.
+- current executable challenge manifest `research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v2.json`; v1 is historical and not executable.
 
 Outputs are deliberately split:
 
@@ -47,6 +47,10 @@ The script fails closed if:
 - a known label/identity token leaks into the packet.
 
 Both output files receive SHA-256 receipts.
+
+Verified v2 hosted reconstruction (`36260538589` SUCCESS):
+- blinded packet SHA-256: `f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc`;
+- separate owner-key SHA-256: `75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9`.
 
 Preserve:
 
