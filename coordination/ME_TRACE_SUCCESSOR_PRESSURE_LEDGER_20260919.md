@@ -286,6 +286,62 @@ the Upper Tribunal also found the substantive challenge had no realistic prospec
 
 No wording patch earned.
 
+## TRACE-S7 — Route delay without bad faith
+
+Classification:
+**SURVIVED / DO NOT PATCH**
+
+Source:
+`field/REASONABLE_ADJUSTMENTS_DELAY_PROCESS_20260926.md`.
+
+Pressure:
+The UK government's 2026 reasonable-adjustments research identifies delay at acknowledgement, decision and implementation stages, but does not support a simple bad-faith model. Reported mechanisms include unclear legal/process expectations, external dependencies, absent or weak workplace procedures, untrained line managers acting as de facto case managers, and manager turnover.
+
+Current TRACE v0.4.0 already represents:
+- separate acknowledgement / decision / implementation transitions;
+- route ownership and handoffs;
+- dependencies and capacity;
+- clocks without inventing a universal deadline;
+- burden transfer;
+- custody/currentness across manager turnover;
+- escalation routes distinct from successful resolution.
+
+Useful cross-domain lesson:
+
+```text
+HARMFUL DELAY != MALICIOUS INTENT
+UNCLEAR OWNER + UNCLEAR NEXT STEP + DEPENDENCY WAIT + TIME
+-> ROUTE CAN STALL
+```
+
+No new primitive earned.
+
+## ME-S5 — Process ambiguity can transfer burden without a malicious actor
+
+Classification:
+**SURVIVED / DO NOT PATCH**
+
+Source:
+`field/REASONABLE_ADJUSTMENTS_DELAY_PROCESS_20260926.md`.
+
+Pressure:
+A formal duty can exist while the practical route remains ambiguous. Employees and employers can disagree about what is reasonable, who acts next and how often progress should be communicated; external provision and internal turnover can add delay.
+
+Current Mechanical Ethics v0.8.0 already carries the structure through:
+- Process Becomes Distance;
+- Who Builds the Maze;
+- Who Pays for Complexity;
+- practical access vs nominal access;
+- delay transferring burden;
+- correction-before-hardening;
+- route memory / answerability;
+- care without assuming intent or moral purity.
+
+The empirical correction is causal, not semantic:
+**real harm can accumulate through ambiguity, capacity limits and broken handoffs without bad faith.**
+
+No wording patch earned.
+
 ---
 
 # Shared negative evidence from 19 September
@@ -299,7 +355,8 @@ The following real/current pressure did **not** earn baseline changes:
 - THR digital-preservation candidate quarry;
 - NHS SPR rectification implementation watch;
 - MAIB crewed/uncrewed collision interim report;
-- Patel v SSWP / HMCTS unactioned statement-of-reasons request.
+- Patel v SSWP / HMCTS unactioned statement-of-reasons request;
+- reasonable-adjustment delay/process ambiguity.
 
 That negative evidence matters.
 
