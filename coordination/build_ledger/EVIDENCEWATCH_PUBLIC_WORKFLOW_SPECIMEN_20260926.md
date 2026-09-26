@@ -185,6 +185,55 @@ Do not infer:
 - that preprint-to-publication transitions are the main residual change class;
 - that current Zotero/Crossmark/ReadCube/Cochrane tooling could not now handle parts of this route more efficiently.
 
+## EvidenceWatch representability check
+
+Current EvidenceWatch main:
+`b8fc0971ceace55878aa6130448850d88774f254`
+
+No new code or data type is required to represent this episode.
+
+Existing structure already carries:
+- multiple configured source representations;
+- explicit `stateAuthority`;
+- shared `independenceGroup` for one evidentiary root;
+- `authorityAsOf` for source succession/currentness;
+- analyzer relation `correction`, whose existing instruction explicitly includes a source that **supersedes** an earlier source/state;
+- material reasons;
+- configured downstream dependents;
+- append-only before/after state.
+
+The existing engine regression `newer state authority cannot be rolled back by an older authority source` already tests the load-bearing succession behaviour:
+- earlier authority establishes state;
+- later authority advances it;
+- later authority time becomes current;
+- changed bytes from the older authority can alert but cannot roll canonical state backwards.
+
+A Lombardi-shaped watch could therefore represent:
+- preprint = earlier primary/state-authority source;
+- final publication = later primary/state-authority source;
+- both = same evidentiary root / independence group;
+- final publication = later `authorityAsOf`;
+- changed follow-up result / symptom definition = material supersession;
+- Q1 review object = downstream dependent.
+
+Preserve:
+
+```text
+REAL CASE FITS CURRENT MODEL
+-> NO FEATURE EARNED
+
+SAME EVIDENTIARY ROOT
+!= INDEPENDENT SUPPORT
+
+LATER AUTHORITATIVE SUCCESSOR
+!= RETROACTIVE ERASURE OF PREPRINT STATE
+
+REPRESENTABLE
+!= USEFUL IN PRACTICE
+```
+
+The remaining gap is empirical burden/value, not representation.
+
 ## Gate result
 
 ```text
