@@ -4,7 +4,7 @@ Date: 25 September 2026
 
 Status: **NON-BINDING DRAFT / NOT SUBMITTED / HUMAN IDENTITY + TERMS + SUBMISSION GATE REMAINS MARK'S**
 
-Owner source checked 25 September 2026:
+Owner source checked 26 September 2026:
 - 2026 theme: **Agentic workflows you can trust**
 - open globally to individuals, startups and research teams;
 - prototype, working product or well-formed concept accepted;
