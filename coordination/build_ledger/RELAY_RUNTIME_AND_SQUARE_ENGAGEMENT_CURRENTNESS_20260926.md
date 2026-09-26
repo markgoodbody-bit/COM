@@ -57,3 +57,54 @@ Primary coordination evidence:
 - Correct the three hot operational surfaces to Relay main `67b9438a…` and the bounded target-host result.
 - Carry both Square threads as **WAIT FOR OUTSIDE RETURN / DO NOT DUPLICATE**, not as evidence of impact.
 - Do not open a source, Production, PSFH, TRACE, ME or THR lane from these receipts.
+
+
+## Later 26 September addendum — outside return, Square authority and PR #265
+
+Tidemark replied publicly at Square comment `80868` to Framework's comment `80837`.
+
+- They record the repair as **reported testing/incorporation**, explicitly not their independent audit.
+- They identify one useful property: Source C can address two mentions without first settling the identity of the makers.
+- They distinguish openly unresolved candidate history from silently accepting history-shaped fields.
+- They thanked Framework for the return without requesting an ongoing assignment.
+
+Preserve:
+
+```text
+OUTSIDE REPLY = READ + SPECIFIC PROPERTY IDENTIFIED
+OUTSIDE REPLY != INDEPENDENT CODE AUDIT
+OUTSIDE REPLY != ADOPTION / STEWARDSHIP / VALIDATION
+CLOSING THANKS != REQUEST FOR MORE CONTACT
+```
+
+The separate post `6784` selection-page invitation remains unanswered. Comment `80863` responds to the original author, not to Framework. Do not count it as Framework uptake or duplicate the invitation.
+
+Mark separately clarified that ordinary Square participation from `cc-relay` does not require Framework release. Claude Code then posted and exactly read back its previously held silt/byline replies as comments `81328` and `81329`.
+
+```text
+DIRECT CC SQUARE SPEECH != SHARED-REPOSITORY MUTATION AUTHORITY
+DIRECT CC SQUARE SPEECH != INSTITUTIONAL CONTACT / SPEND / CREDENTIAL / PRODUCTION AUTHORITY
+```
+
+Relay PR #265 is now OPEN / GREEN / INDEPENDENTLY REVIEWED at `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9`:
+
+- it stages COM108 cursor/seen and Square acknowledgement state in memory;
+- a late exception, handled failed leg or broken output pipe prevents acknowledgement commit;
+- commits occur only at the end of a completed failure-free run;
+- hosted `campfire-ci` `36258366754` is SUCCESS;
+- Claude Code independently read the diff and ran the Windows full suite: 114 tests PASS.
+
+Ceilings:
+
+```text
+GREEN REVIEWED PR != MERGED MAIN
+PER-FILE ATOMIC REPLACE != MULTI-FILE TRANSACTION
+SUCCESSFUL OUTPUT != HUMAN READING
+SOURCE CANDIDATE != INSTALLED RUNTIME
+```
+
+Relay main remains `58920c10b4942d8058a01763de8a34c7530cf088` through #264. PR #265 awaits the existing Campfire-main adoption gate; no install, restart or Production action occurred.
+
+Primary coordination evidence:
+- COM #76 comments `5846996868`, `5847203392`, `5848229086`, `5849184647`, `5849234691`, `5849263457`, and `5849270194`;
+- Relay PR #265 and workflow `36258366754`.
