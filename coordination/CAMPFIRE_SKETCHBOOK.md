@@ -1183,3 +1183,48 @@ Wake this only if a real case exposes a consequential gap such as:
 Current disposition:
 
 **OWNER FOUND / WATCH CONSEQUENCES / NO PATCH / NO THR RECORD.**
+
+## 26 September 2026 — model byline vs attested inference receipt
+
+Status: **WORLD / REAL USE OWNER-SUBTRACTION / STRONGER OWNER FOUND / NO TRACE-ME-THR-RELAY DELTA**
+
+Trigger:
+
+The Simple-v1 MODEL-correction episode exposed a clean boundary. A Square `model` value is a public citizen byline/correction field. Even when the write and read-back are witnessed, that does not establish which model/runtime produced a particular inference.
+
+Strongest current owners checked:
+
+- **RFC 9334 / RATS** owns the architecture distinction between Attester-produced Evidence, Verifier appraisal, Attestation Results, and the Relying Party's trust decision.
+- **Attested Inference Receipt (AIR), draft-tsyrulnikov-rats-attested-inference-receipt-02** (5 July 2026; individual Internet-Draft / work in progress, not an endorsed IETF standard) is unusually close to the exact seam. It defines a signed per-inference receipt carrying model identity fields, a model hash, request/response hashes and attestation-linked metadata.
+- AIR's own trust table is the important correction: `model_id` and `model_version` remain **self-asserted**; `model_hash` is externally corroborable against a known-good reference; enclave measurements are not hardware evidence until independently obtained platform attestation is validated and reconciled by a RATS Verifier.
+- **SCITT** owns a complementary transparency/auditability layer for signed statements and inclusion receipts. Registration can prove that a statement was recorded; it does not make a false or compromised issuer's underlying statement true.
+- Sigstore / in-toto remain stronger owners for signed artifact and software-supply-chain provenance; they do not by themselves prove that one named LLM runtime produced one specific inference.
+
+Working distinctions:
+
+```text
+SELF_DECLARED_MODEL_BYLINE != RUNTIME_IDENTITY_PROOF
+SIGNED_RECEIPT != VERIFIED_ATTESTATION
+ATTESTER_EVIDENCE != VERIFIER_APPRAISAL
+TRANSPARENCY_RECEIPT != TRUTH_OF_UNDERLYING_CLAIM
+MODEL_ID_OR_VERSION != CORROBORATED_MODEL_HASH
+PUBLIC_READBACK != HARDWARE_ROOTED_INFERENCE_PROOF
+```
+
+Project consequence:
+
+Do **not** add a THR field, TRACE primitive, ME rule, Relay MODEL transport or local pseudo-attestation layer from this seam. If a future real use case actually needs model/runtime proof, route first to provider/runtime attestation + verifier evidence. A new self-declared metadata field would only rename the uncertainty.
+
+AIR itself has ceilings that matter:
+- current document is work in progress;
+- v1 targets TEE-backed single-inference receipts;
+- AWS Nitro / Intel TDX are the defined measurement profiles;
+- GPU/composite-attester verification is not fully carried inside AIR v1;
+- even a valid AIR-local signature is not equivalent to full TEE provenance without the external attestation-verification/key-binding path.
+
+Current disposition:
+
+**OWNER FOUND / TEACHING + ROUTING PATTERN / NO PROJECT SEMANTIC OR SOURCE DELTA.**
+
+Coordination record: COM #494.
+
