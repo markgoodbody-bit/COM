@@ -23,7 +23,7 @@ The owner explicitly asks applicants to test six things before applying:
 | Research decision | Whether owner version/currentness signals or residual source changes require reopening already-relied-on synthesis/review work | **DEFINED / NOT USER-VALIDATED** |
 | Who / how often | Living systematic review team. Public Bern exemplar ran weekly searches adding 100–200 records and checked preprint status each update | **PUBLIC BASELINE / NOT UNIVERSAL FREQUENCY** |
 | Lifecycle | Evidence synthesis + research integrity | **DIRECT FIT** |
-| Existing tool/system | Proposed first integration target: Zotero / an existing reference library | **FILE HANDOFF EXISTS / LIVE INTEGRATION DOES NOT** |
+| Existing tool/system | Proposed first host: Zotero / existing reference library; Zotero API v3 already supplies library/object versions and sync primitives, so Stage 1 can start read-only | **OWNER API EXISTS / FILE HANDOFF ONLY TODAY / LIVE INTEGRATION DOES NOT** |
 | Multi-step need | Observe -> fingerprint -> compare -> analyse relevant change -> preserve authority -> route affected dependents -> human review | **IMPLEMENTED AS PROTOTYPE** |
 | Refuse / flag / escalate | Derivative repetition stays quiet; derivative disagreement flags review; candidate sources cannot gain authority; outage preserves prior state | **DETERMINISTICALLY TESTED / NOT RESEARCHER-VALIDATED** |
 | Primary outcome | Reviewer minutes per correctly handled material-change episode versus existing practice | **PREDECLARED / UNMEASURED** |
@@ -90,6 +90,23 @@ PAGE CHANGE != DOWNSTREAM CONSEQUENCE
 WEB MONITORING != EVIDENCEWATCH NOVELTY
 RELIANCE-BINDING / MATERIALITY / ROUTING = UNMEASURED
 ```
+
+## Zotero substrate subtraction
+
+Zotero API v3 already owns library/object versioning, conditional sync and optimistic concurrency. EvidenceWatch should not build parallel library-sync machinery.
+
+The remaining adapter problem is narrower:
+- bind a Zotero item to the exact external source state that was relied upon;
+- keep source authority/lineage separate from Zotero object version;
+- present a shadow review route without writing back until value/authority are established.
+
+```text
+ZOTERO ITEM VERSION != SOURCE PUBLICATION / DATASET VERSION
+READABLE INTEGRATION != WRITE AUTHORITY
+```
+
+Boundary note:
+`coordination/resources/EVIDENCEWATCH_ZOTERO_INTEGRATION_BOUNDARY_20260926.md`
 
 ## Strongest remaining weakness
 
