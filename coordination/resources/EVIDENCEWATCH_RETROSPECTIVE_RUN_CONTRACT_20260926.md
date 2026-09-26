@@ -83,7 +83,14 @@ The current analyzer system contract is preserved from the pinned source:
 
 No alternative model, fallback model, prompt repair, response retry policy or manual adjudication may be introduced silently inside this run.
 
-A provider failure remains a failed case attempt unless a separately declared full rerun is started.
+Because the predeclared decision rule routes **any** provider/analysis failure to an inconclusive run, the live harness now aborts on the first `ANALYSIS_FAILED`. Continuing after that point cannot recover a clean result and would only consume additional provider quota.
+
+On first analysis failure:
+- stop before the next analysis;
+- seal `PARTIAL_RUN_ABORTED_ON_ANALYSIS_FAILURE` with exact source/packet/provider identities, processed cases, provider receipts, failure case/phase/error and ledger path;
+- print the partial receipt SHA-256;
+- do not unblind or score it as a completed 44-case run;
+- repeat only as a separately declared fresh run if the failure cause is external/transient and repetition is justified.
 
 ## Common watched claim
 
@@ -275,10 +282,11 @@ The harness:
 - pins Nemotron in code rather than inheriting `NVIDIA_MODEL`;
 - requires both explicit `--live` and `NVIDIA_API_KEY`;
 - refuses existing output/ledger/lock paths;
-- runs exactly one baseline + one successor analysis for each of 44 opaque cases;
+- runs at most one baseline + one successor analysis for each of 44 opaque cases;
 - captures raw provider response bodies without credentials/outgoing request bodies;
-- requires exactly 88 provider responses;
-- writes the pre-unblind output with exclusive create and prints its SHA-256.
+- **aborts on the first `ANALYSIS_FAILED` and seals a partial-failure receipt rather than consuming remaining quota**;
+- requires exactly 88 attempted analyses + 88 provider responses before a **completed** `OUTPUT_FROZEN_BEFORE_OWNER_LABEL_JOIN` can be written;
+- writes completed or partial pre-unblind receipts with exclusive create and prints their SHA-256.
 
 A failed/partial live attempt is not silently resumed into the same ledger. Preserve it as a failed run and start a separately declared run if repetition is justified.
 
