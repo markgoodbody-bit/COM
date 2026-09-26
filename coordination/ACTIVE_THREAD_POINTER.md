@@ -105,7 +105,7 @@ EvidenceWatch PR #7:
 - public historical workflow specimen FOUND: University of Bern living review / Lombardi preprint->final transition; current practice already checks preprint currentness, avoids double-counting and re-extracts changed content; the same guide reports weekly automated searches adding 100–200 records; a separate six-review evaluation reports 3–300 citations and 5 minutes–32 hours of author-team work per month, as whole-review context rather than EvidenceWatch-attributable burden. EvidenceWatch represents the same-lineage authority succession without code change. Receipt: `coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`. Owner-test matrix: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_OWNER_TEST_20260926.md`. Primary pilot outcome is now reviewer minutes per correctly handled material-change episode versus existing practice. Partner quarry: `coordination/resources/EVIDENCEWATCH_PUBLIC_PILOT_PARTNER_QUARRY_20260926.md`. Stronger gate still open: willing current team + actual matched burden baseline; public candidate != willing partner; no contact.
 
 ```text
-PROPOSAL BODY = 1421 WHITESPACE WORDS / 1477 WORD-LIKE TOKENS / TIGHT HEADROOM / FINAL EDITOR RECOUNT REQUIRED
+PROPOSAL BODY = 1425 WHITESPACE WORDS / 1467 WORD-LIKE TOKENS / TIGHT HEADROOM / FINAL EDITOR RECOUNT REQUIRED
 COPY FREEZE = REPLACE WEAKER WORDING IF NEW FACTS ARRIVE; DO NOT APPEND BY MOMENTUM
 APPLICATION SENT = NO
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
