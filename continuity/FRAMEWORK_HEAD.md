@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **26 September 2026 — Relay runtime + Square engagement currentness**
+Updated: **26 September 2026 — EvidenceWatch retrospective execution frozen / Digital Science gate current**
 Rule: later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -75,12 +75,13 @@ Current Mark direction, 25 September 2026: **Claude Code runs shared work throug
 
 ## Current source identities
 
-Reacquired before this compaction:
+Reacquired and current through this compaction:
 
 - TRACE main: `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released v0.4.0 compact baseline;
 - Mechanical Ethics main: `e2ef746e931161cb70ac46a4eaa122442134e86b` — released v0.8.0 reader baseline;
 - The Human Record main: `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 repairs plus bounded read-only impact routing #81 merged; main integrity + Pages green; open THR PRs = 0;
 - Campfire Relay main: `58920c10b4942d8058a01763de8a34c7530cf088` — #260 COMSYNC joiner/accounting repair, #261 source/release/install-currentness documentation repair, #262 older-thread accounting clarification, and #264 inference-identity honesty repair; no Production activation. #264 narrows persisted/resolved `{provider, model, protocol}` to configured target identity and separates it from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS. A bounded read-only target-machine check still establishes only the existing running Windows source as the `campfire-production-v0.18.34` tag; loaded modules and `node_modules` were not verified.
+- EvidenceWatch main: `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f` — 62 deterministic tests green on Windows + Ubuntu; pre-pilot workflow/burden intake and pre-unblinding freeze hardening merged; current retrospective Brierley challenge, blinding boundary and run contract live in COM only and have **not** changed EvidenceWatch source.
 
 Formal baselines:
 - **TRACE v0.4.0** — released / not validated / no efficacy result;
@@ -90,14 +91,22 @@ Formal baselines:
 
 **WORLD / REAL USE remains primary.**
 
-19 September outward work has produced both repairs and honest stops:
-- real frontier cyber-evaluation pressure found a draft Live World authority/actual-target defect and repaired it;
-- PAC compensation/redress pressure strengthened existing ME/TRACE representation but earned no semantic patch;
-- multiple THR record-5 quarries returned stronger owners;
-- NHS SPR rectification remains implementation-watch only;
-- several infrastructure/safety cases owner-subtracted cleanly.
+26 September outward work is producing owner-subtraction, bounded repairs and predeclared empirical tests rather than framework churn:
 
-Do not convert successful representation into validation.
+- **model/runtime proof:** RFC 9334 RATS plus the current AIR draft are the stronger owners for attestation. The project retained the distinction `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY`; Relay #264 repaired only the local evidence wording. No parallel attestation protocol, THR field or TRACE/ME primitive was earned.
+- **CPS Beam Notes / ATRS:** the current public record contains an unresolved Azure summarisation-route tension while CPS digital-material guidance already owns important audit-trail/provenance requirements. Preserved as COM #498/#499 field witness: `PUBLIC_RECORD_CONTRADICTION != OPERATIONAL_FAILURE`; no compliance conclusion, contact or project patch.
+- **EvidenceWatch:** stronger-owner subtraction now leaves only the narrow post-reliance change seam: an already-relied-on source materially changes outside new-study/formal-status routes. Public pair literature shows the class is non-zero but does not establish living-review workflow incidence or product-scale burden.
+- **retrospective challenge:** the Brierley owner dataset is frozen into 22 owner-labelled major-change pairs plus 22 matched no-change controls; selection verifier, blinding boundary and exact run contract are preserved before any output. No provider call or result exists.
+- **Digital Science:** remains the primary near-term resource target. Proposal/application currentness is repaired; general Site Content licence terms are reviewed, while Catalyst-specific award/IP terms and later form fields remain behind Mark's identity gate.
+
+```text
+OWNER FOUND -> LEARN / INTEROPERATE / STOP IF SUBSUMED
+PREDECLARED TEST != VALIDATION
+PUBLIC EVIDENCE != USER VALUE
+NEGATIVE RESULT = USEFUL
+```
+
+Do not convert successful representation, a clean benchmark, or grant fit into validation.
 
 ## TRACE / ME successor — released and closed to source churn
 
@@ -124,6 +133,29 @@ The release lane is closed. Beta PRs are closed with branches/history preserved.
 
 ## Current human gates
 
+### EvidenceWatch retrospective Brierley execution
+
+Status: **SELECTION + BLINDING + RUN CONTRACT FROZEN / NOT RUN / PROVIDER-RESOURCE GATE**.
+
+Frozen objects:
+- challenge protocol: `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_CHALLENGE_20260926.md`;
+- manifest: `research/evidencewatch_retrospective/brierley_major_vs_nochange_manifest_v1.json`;
+- blinded packet builder/boundary: `research/evidencewatch_retrospective/build_blinded_brierley_packet.py` + `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_BLINDING_20260926.md`;
+- exact execution semantics: `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_RUN_CONTRACT_20260926.md`.
+
+The run pins EvidenceWatch `9c96c839…`, NVIDIA `nvidia/nemotron-3-super-120b-a12b`, one common watched claim, one two-step preprint -> publication topology, failure handling and post-unblinding scoring.
+
+```text
+44 CASES = 22 OWNER-LABELLED MAJOR CHANGE + 22 MATCHED NO-CHANGE CONTROLS
+88 NVIDIA ANALYSES = BASELINE + SUCCESSOR FOR EACH CASE
+MODEL / PROVIDER CALLS = 0 SO FAR
+RESULT = NONE
+ABSTRACT_MAJOR_CHANGE != CLINICAL / REVIEW MATERIALITY
+RETROSPECTIVE_DISCRIMINATION != REVIEWER TIME SAVED
+```
+
+Actual execution consumes provider resources and remains a separate consequential/spend gate. Do not patch/tune the pinned source against this set and then report the same set as untouched validation.
+
 ### Digital Science Catalyst Grant 2026
 
 Status: **PRIMARY NEAR-TERM RESOURCE TARGET / OWNER-SUBTRACTED INTEGRATION PILOT / NOT SUBMITTED**.
@@ -145,10 +177,14 @@ The next evidential step is not more feature work. A **public historical** workf
 
 Live application form is now reached and page 1 inspected; it asks for email. Later pages and any embedded terms remain uninspected until the human identity/form gate is crossed.
 
+Application-surface currentness is repaired at `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_APPLICATION_SURFACE.md`; form-ready copy is `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`. Digital Science's **general Site Terms** have now been reviewed: they grant a broad licence over submitted Site Content while leaving underlying copyright ownership with the submitter and requiring rights to third-party material. This is not established as the Catalyst-specific award/IP agreement. Keep the application to project-authored prose + links; do not paste third-party abstracts/screenshots/proprietary material.
+
 ```text
 APPLICATION = NOT SUBMITTED
 PROPOSAL BODY = 1421 WHITESPACE WORDS / 1477 WORD-LIKE TOKENS / TIGHT HEADROOM / FINAL EDITOR RECOUNT REQUIRED
 LIVE FORM = REACHED / PAGE 1 INSPECTED / LATER FIELDS + TERMS UNKNOWN
+GENERAL SITE CONTENT LICENCE = REVIEWED
+CATALYST-SPECIFIC AWARD / IP TERMS = UNKNOWN
 DEADLINE = 2026-10-05 17:00 BST
 FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
 ```
