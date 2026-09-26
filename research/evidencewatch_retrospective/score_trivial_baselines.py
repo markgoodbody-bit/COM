@@ -110,7 +110,7 @@ def roc_points(rows: list[dict], metric: str) -> list[dict]:
 
 
 def load_owner_pairs(path: Path) -> dict[str, dict]:
-    with path.open(newline="", encoding="cp1252") as handle:
+    with path.open(newline="", encoding="cp1252", errors="replace") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         rows = {}
         for row in reader:
@@ -137,8 +137,14 @@ def selected_rows(manifest: dict, owner_rows: dict[str, dict]) -> list[dict]:
             if owner is None:
                 raise AssertionError(f"Selected DOI missing from owner TSV: {doi}")
 
-            preprint = valid_text(owner.get("abstract"))
-            published = valid_text(owner.get("published_pubmed_abstract"))
+            raw_preprint = str(owner.get("abstract") or "")
+            raw_published = str(owner.get("published_pubmed_abstract") or "")
+            if "\ufffd" in raw_preprint or "\ufffd" in raw_published:
+                raise AssertionError(
+                    f"Selected abstract contains undecodable owner-source byte(s): {doi}"
+                )
+            preprint = valid_text(raw_preprint)
+            published = valid_text(raw_published)
             if preprint is None:
                 raise AssertionError(f"Missing preprint abstract for selected DOI: {doi}")
 
