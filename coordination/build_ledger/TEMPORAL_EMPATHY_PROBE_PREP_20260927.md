@@ -141,12 +141,24 @@ TRACE PATCH = NO
 ME PATCH = NO
 ```
 
-## Next gate
+## Reader-test gate — optional evidence lane, not a work gate
 
-Do not run until there is a genuinely independent reader route outside shared COM visibility.
+A genuinely independent reader route is required **only** before claiming a clean A/B reader-comparison result from this frozen packet set.
 
-If that route cannot be obtained cleanly:
+It is **not** required to continue:
+- stronger-owner research;
+- literature absorption;
+- design-intervention quarrying;
+- real/public case analysis;
+- internal hostile review and falsification;
+- comparison against released TRACE/ME;
+- refining the conceptual routing surface where new owner evidence warrants it;
+- building non-result-bearing teaching or design artifacts.
 
-`NO CLEAN RESULT / STOP`
+If a future independent-reader comparison is attempted and clean independence cannot be obtained, route that comparison to:
 
-Do not weaken the design silently to manufacture evidence.
+`NO CLEAN READER RESULT`
+
+Do not convert that into:
+
+`TEMPORAL EMPATHY WORK MUST STOP`.
