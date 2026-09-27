@@ -162,113 +162,141 @@ No claim that this solves dental capacity shortages or all cross-provider care g
 
 ---
 
-## Case 2 — EHC plan delay: protect the child's present while the plan/appeal clock stalls
+## Case 2 — EHC process and current education: stronger owner cuts the 20-week-only trigger
 
-Status: **REAL CURRENT SCALE PRESSURE / SPECIFIC SMALL WORKFLOW CANDIDATE / LEGAL-EDUCATION OWNER REQUIRED**
+Status: **STRONGER OWNER FOUND / PRIMARY 20-WEEK TRIGGER SUPERSEDED / EVENT-TRIGGERED PARALLEL-CLOCK PATTERN SURVIVES**
 
-### World evidence
+### National/current pressure
 
-Current Department for Education statistics for England:
+Department for Education 2026 statistics for plans issued during 2025 report:
+- 46.1% within the ordinary 20-week timeframe, excluding specified exceptions;
+- 43.5% between 20 and 52 weeks;
+- 10.3% more than a year after the request;
+- mean issue time 24.0 weeks, excluding exceptions.
 
+Owner:
 https://explore-education-statistics.service.gov.uk/find-statistics/education-health-and-care-plans/2026
 
-For plans issued during 2025, the published statistics state:
-- 46.1% of new EHC plans were issued within the statutory 20-week timeframe, excluding specified exceptions;
-- 43.5% were issued between 20 and 52 weeks;
-- 10.3% were issued more than a year after the request;
-- mean issue time was 24.0 weeks, excluding exceptions.
+This establishes material timeliness pressure. It does not establish the same failure mechanism in every local authority or every delayed case.
 
-The statutory/public process says the whole assessment/plan-development process should normally take no more than 20 weeks.
+### Earlier project candidate — cut back
 
-### Concrete prior case
+The first pass proposed a **20-week temporal preservation checkpoint** joining:
+- EHC process state;
+- current education state;
+- parallel protection route;
+- current action holder;
+- next check.
 
-LGSCO Bromley 22 016 360:
+That was too plan-centric.
 
-https://www.lgo.org.uk/decisions/education/special-educational-needs/22-016-360
+Recent Ombudsman owner cases show that the current-education / alternative-provision question may need to arise **well before** the ordinary 20-week EHC horizon, when a council becomes aware that a child may not be receiving suitable education, and it must remain live as circumstances change.
 
-The Ombudsman found:
-- the council took too long to produce the EHC plan;
-- it did not properly consider alternative education;
-- the parent's right of appeal was delayed;
-- the child missed education.
+The old paper object is preserved as historical v0 and superseded by:
+`coordination/resources/TEMPORAL_CANDIDATE_EHC_PARALLEL_CLOCK_v1_20260927.md`
 
-The remedy included apology, payment for lost education and staff guidance/training.
+### Stronger-owner evidence
 
-### Stronger owners
+#### Essex County Council 24 018 461 — 12 August 2025
 
-Current public owner surfaces:
-- GOV.UK EHC-plan process / 20-week timing;
-- SEND Tribunal route;
-- Education Act 1996 section 19;
-- DfE alternative-provision / children-missing-education guidance;
-- LGSCO case law/guidance.
+https://www.lgo.org.uk/decisions/education/alternative-provision/24-018-461
 
-Section 19 requires local authorities to arrange suitable education for compulsory-school-age children who would otherwise not receive suitable education because of illness, exclusion or other reasons, subject to the legal conditions.
+Public findings include:
+- an EHC request later recorded that the child was not attending full-time;
+- the Council said it considered its alternative-education duty then;
+- the Ombudsman found the Council should have become aware earlier when another council team was contacted about attendance;
+- which council team held the information was not an adequate answer: relevant information should propagate internally;
+- the Council failed to keep the alternative provision under review;
+- when circumstances changed and provision broke down, later action followed after additional delay.
 
-Current statutory guidance says time out of suitable education should be kept to an absolute minimum.
+The decision/service-improvement actions also reinforce:
+- current-state review;
+- internal communication;
+- front-line escalation when a child is not attending full-time.
 
-### Temporal structure
+#### Shropshire Council 25 002 787 — 3 March 2026
 
-The key interaction is not merely:
+https://www.lgo.org.uk/decisions/education/alternative-provision/25-002-787
 
-PLAN LATE.
+The Ombudsman found fault because the Council failed to decide whether alternative provision was needed when it became aware the child was out of school.
 
-It can be:
+The Ombudsman did **not** find resulting educational injustice from that particular failure because the school had put appropriate support in place.
 
-~~~text
-PLAN LATE
--> APPEAL START DELAYED
-+ CHILD'S EDUCATION CLOCK CONTINUES
-+ POSSIBLE ALTERNATIVE-PROVISION DUTY EXISTS IN PARALLEL
-~~~
-
-The later plan can still matter, but it does not recreate missed education.
-
-### Smallest-help candidate
-
-**20-week breach preservation checkpoint**
-
-If an EHC-plan process crosses the statutory 20-week point without a final plan, the case-management workflow could automatically require a bounded checkpoint recording:
-
-1. why the plan remains unresolved;
-2. a named current owner;
-3. next expected decision/review date;
-4. whether the child is currently receiving suitable education;
-5. if not, whether the existing section-19 / alternative-provision route has been considered by the legally responsible team;
-6. which outstanding evidence/action belongs to the authority versus parent/young person;
-7. whether the affected family needs to do anything before the next check.
-
-Design principle:
+This usefully preserves:
 
 ~~~text
-PLAN DELAY
-SHOULD NOT SILENTLY BECOME
-EDUCATION-PROTECTION DELAY
+PROCESS FAILURE
+!=
+PROOF OF LOST EDUCATION IN EVERY CASE
 ~~~
 
-The checkpoint does **not**:
-- decide eligibility;
-- create a tribunal appeal right before the law provides one;
-- decide what alternative provision is suitable;
-- replace professional/legal judgement.
+#### Gloucestershire — positive and negative controls
 
-It is a trigger to ensure already-distinct clocks/duties are not collapsed.
+Current LGSCO decisions/service-improvement records show:
+- cases where suitable alternative provision was put in place despite separate EHC-process faults;
+- cases requiring clearer recorded reasons for section-19 decisions;
+- requirements to review part-time provision / oversight;
+- improvement work around internal responsibility and communication.
 
-### Why this may be smaller than the problem
+Owner:
+https://www.lgo.org.uk/your-councils-performance/gloucestershire-county-council/serviceimprovements?category=1015&year=2025
 
-It does not attempt to solve SEND capacity, staffing or national plan delays.
+### Revised smallest pattern
 
-It asks only that once the headline clock is breached, the system explicitly re-check the **current child's trajectory** rather than treating "EHCP still in progress" as the whole state.
+**Parallel-clock preservation**
 
-### Kill / route condition
+Potential owner-defined triggers include:
+- any relevant council team receives credible information that a child is not attending or may not be receiving suitable education;
+- EHC assessment material records reduced/absent attendance;
+- current provision changes or breaks down;
+- a scheduled review point arrives;
+- the ordinary 20-week EHC horizon is crossed as a currentness backstop.
 
-**OWNER FOUND / NO DELTA** if current local-authority case systems already reliably trigger this exact cross-check at breach and evidence shows the real failure lies elsewhere.
+At a valid trigger, support the legally responsible owner to establish/record:
 
-**LEGAL OWNER REQUIRED** before treating this as operational guidance; section-19 application is fact-sensitive.
+~~~text
+CURRENT EDUCATION STATE
++
+WHETHER A PARALLEL PROTECTION ROUTE MUST BE CONSIDERED
++
+DECISION / BASIS
++
+WHO OWNS NEXT ACTION
++
+WHEN THE ARRANGEMENT IS REVIEWED AGAIN
+~~~
 
-This is a candidate workflow design pattern, not legal advice.
+The pattern does **not** make the legal decision.
 
----
+### Stronger-owner correction
+
+The project should no longer claim:
+
+> councils need a 20-week checkpoint to notice current education.
+
+Stronger owners already require earlier awareness/action in relevant cases.
+
+What the project may still contribute is a compact cross-clock routing reminder:
+
+~~~text
+EHC PROCESS CLOCK
+!=
+CURRENT EDUCATION CLOCK
+!=
+APPEAL / CORRECTION CLOCK
+
+AND
+
+CONSIDERED ONCE
+!=
+ADEQUATELY KEPT UNDER REVIEW
+~~~
+
+### Current result
+
+**STRONGER OWNER FOUND / MECHANISM NOT NOVEL / CROSS-CLOCK COMPRESSION USEFUL / NO GENERAL LOCAL-AUTHORITY GAP ESTABLISHED.**
+
+Do not contact councils or publish this as guidance from this pass.
 
 ## Case 3 — LGSCO complaint waiting: many temporal-empathy patterns already implemented
 
@@ -420,7 +448,7 @@ The four cases produce a useful mixed pattern:
 | Case | Existing owner strength | Residual | Smallest-help result |
 |---|---|---|---|
 | NHS e-RS / referral handoffs | strong and improving | negative-transition patient visibility / responsibility continuity may remain uneven | bounded responsibility receipt — **candidate** |
-| EHC-plan delay | strong legal/process owner but current timeliness pressure is large | child trajectory can continue degrading while plan/appeal waits | 20-week preservation checkpoint — **candidate / legal-owner validation needed** |
+| EHC process / current education | strong legal/education owner; recent Ombudsman cases already own early awareness + review | exact cross-clock join/compression may aid salience, but general absence is not established | **OWNER-DERIVED PARALLEL-CLOCK PATTERN / NO NOVELTY CLAIM** |
 | LGSCO complaint waits | strong temporal transparency already | no general residual established | **NO DELTA / STOP** |
 | Seattle secure scheduling | implemented + evaluated | not our gap | **POSITIVE CONTROL / ABSORB** |
 
@@ -447,9 +475,9 @@ WHAT WOULD SHOW THAT THE OWNER ALREADY SOLVED IT?
 
 No TRACE/ME source patch is earned.
 
-Two candidate intervention objects survive:
-1. referral negative-transition responsibility receipt;
-2. EHC 20-week preservation checkpoint.
+One narrow patient-facing referral paper object survives provisionally, while the EHC candidate has been **substantially owner-subtracted**:
+1. referral negative-transition responsibility receipt — preserve/watch while e-RS's September notification rollout beds in;
+2. EHC parallel-clock preservation v1 — owner-derived compression of existing expectations, not a novel intervention.
 
 Neither should be presented as owner-approved or deployed.
 
@@ -466,4 +494,4 @@ TEMPORAL EMPATHY
 
 Current disposition:
 
-**APPLIED VALUE PLAUSIBLE / TWO NARROW CANDIDATES / TWO OWNER-FOUND CONTROLS / NO FRAMEWORK PATCH.**
+**APPLIED VALUE PLAUSIBLE / ONE NARROW WATCH CANDIDATE / ONE OWNER-DERIVED CROSS-CLOCK COMPRESSION / TWO OWNER-FOUND CONTROLS / NO FRAMEWORK PATCH.**
