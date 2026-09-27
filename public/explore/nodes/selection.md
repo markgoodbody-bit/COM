@@ -14,7 +14,7 @@ A designer may see a default as convenience; someone affected may encounter it a
 
 ## Challenge
 
-Uncertainty does not itself choose action or delay. Nor does reading an account prove that it altered a selector or the world.
+Uncertainty does not itself choose action or delay. Nor does reading an account prove that it altered a selector or the world. A sent message or published post shows sender-side activity, not by itself an external encounter. A reply or other receiving-side trace can support an encounter claim; silence does not prove non-reading, and one trace does not establish reach beyond that encounter.
 
 ## Open question
 
