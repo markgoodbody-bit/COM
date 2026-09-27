@@ -244,5 +244,7 @@ RUN = NOT STARTED
 RESULT = NONE
 ```
 
-Next action:
+Future result-bearing reader-comparison action, **if and when that evidence lane is chosen**:
 obtain a clean reader route outside shared COM visibility. Do not create or expose the adjudication key on the reader-visible shared surface before responses freeze.
+
+This preregistration does **not** block continued temporal-empathy research, owner absorption, case analysis, design intervention work, internal falsification, or comparison against current TRACE/ME. It constrains only any future claim of an independent reader-comparison result.
