@@ -75,7 +75,7 @@ Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Canonical proposal body:
-**1,426 whitespace-delimited words / 1,469 word-like tokens**
+**1482 whitespace-delimited words by current COM recount**
 
 Final submission-editor recount remains required.
 
@@ -90,10 +90,11 @@ Tests:
 
 Current scope:
 - one living systematic review team as first user type;
-- Zotero as first proposed integration target;
+- pilot host follows the participating team's existing workflow;
+- Zotero is the currently tested CSL/API substrate, not a required future host;
+- Digital Science-owned ReadCube is an explicit stronger-owner/subsumption test; no access, partnership or integration is claimed;
 - no pilot partner claimed;
 - CSL JSON file handoff exists;
-- no live Zotero/ReadCube integration claimed;
 - selectable synthetic research demo exists;
 - existing YouTube demo remains a technical product demonstration, not research-user validation.
 
