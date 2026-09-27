@@ -84,7 +84,7 @@ The deterministic browser demo shows a baseline owner claim, derivative repetiti
 
 A one-watch/two-run live NVIDIA Nemotron witness against public owner pages deduplicated unchanged observations on the second run. One internally inconsistent model-status field remains unresolved rather than being treated as validation.
 
-Demo:
+Demo (recorded for an earlier NVIDIA agent challenge; non-research scenario):
 https://youtu.be/0hdwNc_t4pM
 
 There are no research customers or validated efficiency results. Merged work includes the CSL-JSON handoff, DOI-boundary repair, restart/correction witness, a predeclared shadow-mode pilot protocol and deterministic offline scorer. The protocol freezes human labels/configuration before scoring; the scorer measures material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. A synthetic-content / real-format CSL witness also survived restart and routed a controlled 1.8→1.2 publisher correction for review. A frozen 44-case retrospective run stopped before unblinding after provider/model-output failures; no semantic score was produced or reused as evidence. This is engineering/pilot instrumentation, not researcher validation.
@@ -99,7 +99,7 @@ Stronger owners remove most mechanism novelty:
 
 - **Crossref/Europe PMC, Zotero/Crossmark and Cochrane** own preprint-publication linking, formal status and important correction-to-review paths: https://www.crossref.org/documentation/research-nexus/posted-content-includes-preprints/ and https://www.cochrane.org/about-us/news/cochrane-strengthens-systems-manage-retracted-publications-its-published-reviews
 - **ReadCube and scite** own literature monitoring, shared libraries, review workflows, citation context and integrity alerts: https://about.readcube.com/ and https://scite.ai/
-- **EPPI-Reviewer** already links Zotero libraries and uses OpenAlex-based auto-update suggestions for living reviews; **MAGICapp** already supports structured guideline updating with audit trails and current living-guideline surveillance; **ALEC/Monash** is developing an AI-supported Living Evidence Architecture. These are direct subsumption tests, not validation targets: https://eppi.ioe.ac.uk/cms/er4/help/openalex-in-eppi-reviewer/keeping-a-review-up-to-date-auto-update, https://www.magicevidence.org/magicapp/ and https://www.monash.edu/mada/research/project/living-evidence-architecture
+- **EPPI-Reviewer** already links Zotero libraries and uses OpenAlex-based auto-update suggestions for living reviews; **MAGICapp** already supports structured guideline updating with audit trails and current living-guideline surveillance; **ALEC/Monash** is co-designing an AI-supported Living Evidence Architecture. These are direct subsumption tests, not validation targets: https://eppi.ioe.ac.uk/cms/er4/help/openalex-in-eppi-reviewer/keeping-a-review-up-to-date-auto-update, https://www.magicevidence.org/magicapp/ and https://www.monash.edu/mada/research/project/living-evidence-architecture
 - **Refract** owns reproducible source-change events; **AIEP P170** specifies evidence-dependency graphs and cascade impact analysis: https://github.com/refract-org/refract and https://aiep.dev/specs/p170_aiep_evidence_dependency_graph_protocol_os/
 - Digital Science's **Figshare** owns versioned research-output identity; **PostPub/VIRUS** track integrity events/downstream impact; Visualping/changedetection.io own web-change monitoring; **Perma.cc/Memento** preserve prior web states.
 
@@ -131,7 +131,7 @@ EvidenceWatch sits in evidence synthesis and research integrity.
 
 Its mechanisms are not novel. The fit is a multi-step agent that must know when to stay quiet, flag a change, or refuse to act without authority, matching Digital Science's emphasis on embedded workflows with provenance, governance and accountability.
 
-Digital Science also owns strong adjacent systems, including Dimensions MCPs, Papers AI, Figshare, ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
+Digital Science offers adjacent systems including Dimensions MCPs, Papers AI, Figshare and ReadCube, and has supported related research-integrity work through Catalyst winners PostPub and VIRUS. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
 
 ## 9. BUDGET
 

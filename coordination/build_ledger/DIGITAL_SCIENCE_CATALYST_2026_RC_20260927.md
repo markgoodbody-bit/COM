@@ -2,7 +2,7 @@
 
 Date: 27 September 2026
 
-Status: **PROPOSAL FROZEN / FORM-READY COPY / NOT SUBMITTED / HUMAN IDENTITY + TERMS + SUBMIT GATE**
+Status: **PROPOSAL FROZEN / FINAL APPLICATION DOCUMENT PREPARED / NOT SUBMITTED / HUMAN FINAL-VALUE + SUBMIT GATE**
 
 Owner:
 https://www.digital-science.com/about-us/investment/catalyst-grant/
@@ -19,19 +19,19 @@ Canonical prep:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
 Git blob:
-`3e81765547388c37c65d63401477788cfffd64d4`
+`101c5ce0b69ac619b6ccd34270e526ee980a3a61`
 
 Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Git blob:
-`fca570bbb30f8dae78cf8c16af8f4e6916e1841d`
+`3f9136a2ca3a338a87a741927e8e797c2e2d8d8d`
 
 Current whitespace-delimited proposal recount:
-**1,464 words**
+**1,479 words**
 
 Headroom against owner limit:
-**36 words**
+**21 words**
 
 Practical rule:
 **DO NOT POLISH FURTHER BY MOMENTUM.**
@@ -127,11 +127,11 @@ Still not done:
 - no final submit.
 
 Before submission:
-1. create the exact application document from the frozen 1,464-word proposal;
-2. make the document readable to Digital Science reviewers without edit rights;
-3. paste the verified document link into the live form;
-4. answer the arithmetic human check;
-5. final human read of the visible form values;
+1. use the exact reviewed 1,479-word Markdown / 1,470-word rendered Google-Doc candidate;
+2. Google Doc: `https://docs.google.com/document/d/1WIKqa73vXTO_fo3RU8BsM-O50Yd75yLYrEbQgl4pS18/edit?usp=drivesdk`;
+3. explicit reader access for `catalyst@digital-science.com` is established; anyone-with-link public access is not established;
+4. verify the final Page-2 values and reviewer-link access choice;
+5. enter the arithmetic human check;
 6. submit only on Mark's explicit release.
 
 ```text

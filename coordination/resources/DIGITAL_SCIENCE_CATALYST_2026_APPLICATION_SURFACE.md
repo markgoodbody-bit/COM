@@ -69,17 +69,9 @@ PERMISSION TO SUBMIT A PRIVATE / INACCESSIBLE DOCUMENT
 
 The application-document link must be readable by Digital Science reviewers without granting edit rights.
 
-## Proposal evidence claims reverified
+## Current proposal fact-check status
 
-1. Jones et al., PLOS ONE 2016:
-https://doi.org/10.1371/journal.pone.0167475
-
-The paper reports that among 241,091 URI references with representative archived snapshots and corresponding live content, 184,065 (76.35%) had drifted from the originally referenced content. The application correctly phrases this as "over 75% ... for which archived and live versions could be compared", not as a universal rate for all citations.
-
-2. Kataoka et al., Journal of Clinical Epidemiology 2022:
-https://pubmed.ncbi.nlm.nih.gov/35779825/
-
-The abstract reports 239 reviews/guidelines that incorporated trials before those trials were later retracted; 5% of systematic reviews (9/196) and 5% of clinical-practice guidelines (2/43) corrected or retracted their results. The application preserves the biomedical/domain-specific ceiling.
+The current 27 September proposal was rechecked before send by independent project apertures. Its live cited claims include the Bern living-review workflow, six-review workload range, the Lombardi preprint/final transition, current EvidenceWatch test state, current Catalyst owner facts and named adjacent products. Earlier Jones/Kataoka claims belonged to prior application drafts and are **not** part of the current proposal.
 
 ## Current application object
 
@@ -90,7 +82,7 @@ Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Canonical proposal body:
-**1464 whitespace-delimited words by current COM recount**
+**1479 whitespace-delimited words by current COM recount**
 
 Final submission-editor recount remains required.
 
@@ -120,7 +112,7 @@ Digital Science's general website Terms state that material submitted/uploaded t
 Owner surface:
 https://www.digital-science.com/terms-and-conditions/
 
-This is a **general Site term**, not a separately verified 2026 Catalyst award agreement. Pages 2–3 of the live grant form and any application-specific award terms remain uninspected behind the identity gate.
+This is a **general Site term**, not a separately verified 2026 Catalyst award agreement. The live form has now been inspected through page 3; it exposes no separate Catalyst-specific IP/award agreement or terms-acceptance checkbox. Award-stage contractual terms remain unresolved.
 
 Practical submission rule:
 
@@ -160,13 +152,11 @@ This historical pattern is reassuring context only.
 Current decision rule is unchanged: read the live 2026 form/award terms before accepting or submitting anything that creates rights or obligations.
 ## Next human gate
 
-Open the owner-linked application form in a normal browser.
-
-Before typing/submitting:
-1. capture or report the actual field list;
-2. read any displayed privacy, publicity, IP, eligibility and award terms;
-3. compare them against the prepared packet;
-4. stop on any field requiring unsupported representation;
-5. final submit only after Mark releases the completed form.
+Before final submit:
+1. use the exact reviewed application document;
+2. verify reviewer read access to its link;
+3. verify the final Page-2 values;
+4. enter the human-check answer on Page 3;
+5. final submit only after Mark explicitly releases the completed form.
 
 No submission or terms acceptance has occurred.
