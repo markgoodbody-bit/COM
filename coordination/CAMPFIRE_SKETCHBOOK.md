@@ -5088,3 +5088,66 @@ Current disposition:
 
 **CHANNEL-LOCK OWNER TERM ABSORBED / HANDOFF SALIENCE USEFUL / TRACE+ME REPRESENTATION SURVIVES / NO PATCH / NO OUTREACH.**
 
+## 27 September 2026 — channel handoff is not context handoff
+
+Status: **FRESH WORLD / FCA OWNER WITNESS / PAPER DESIGN SKETCH / NO PATCH**
+
+Citizens Advice's current `channel lock` witness showed:
+
+~~~text
+ROUTE A + ROUTE B
+!=
+SWITCH A -> B USABLE
+~~~
+
+The FCA's 17 September review of payments firms adds a second layer.
+
+Current owner findings include:
+- vulnerability identification embedded across online/automated journeys in stronger firms;
+- system flags / recorded support state;
+- routing some online-chat customers to human agents;
+- weaker firms unable to consistently evidence how vulnerability information was recorded/shared across the customer journey;
+- inconsistent support across the journey;
+- broader FCA evidence that some customers had to repeat disclosed circumstances because recorded information was not used.
+
+That supports:
+
+~~~text
+CHANNEL HANDOFF
+!=
+CONTEXT HANDOFF
+
+SUPPORT NEED DISCLOSED
+!=
+SUPPORT NEED REACHES NEXT ACTOR
+
+CUSTOMER RECORD EXISTS
+!=
+RELEVANT STATE USED
+~~~
+
+But the naive fix is also dangerous:
+
+~~~text
+CONTEXT CONTINUITY
+!=
+TOTAL PERSONAL-DATA PROPAGATION
+~~~
+
+The useful cross-domain question is:
+
+> what minimum support-relevant state should survive a consequential handoff, and who is actually permitted to receive it?
+
+Paper sketch:
+`coordination/resources/SUPPORT_STATE_HANDOFF_CONTRACT_v0_20260927.md`
+
+Field note:
+`field/FCA_SUPPORT_STATE_HANDOFF_WITNESS_20260927.md`
+
+TRACE already has route/handoff/state/custody/currentness/burden machinery.
+ME already has usable routes, burden placement and privacy boundaries.
+
+Current disposition:
+
+**HANDOFF SALIENCE SHARPENED / PRIVACY GUARD REQUIRED / STRONG OWNER PRESENT / TRACE+ME PATCH NO / NO OUTREACH.**
+
