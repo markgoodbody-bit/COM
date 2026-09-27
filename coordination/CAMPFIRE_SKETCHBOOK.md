@@ -4890,3 +4890,88 @@ Current disposition:
 
 **CONFORMANCE LAYER STILL USEFUL / FOUR BROAD OWNER FAMILIES PRESSURED / NO VALIDATION / TRACE PATCH NO / ME PATCH NO.**
 
+## 27 September 2026 — temporal conformance saturation: stop feeding the pattern
+
+Status: **SATURATION / SUCCESSFUL STOP / WORLD-FIRST RESUME / NO PATCH**
+
+A fourth applied pass used:
+- ICO personal-data breach response;
+- ORR rail Passenger Assist.
+
+Neither case earned a new conformance-audit dimension.
+
+ICO already owns:
+- breach/event time versus awareness time;
+- the reporting clock;
+- phased reporting under incomplete information;
+- high-risk affected-person notification;
+- reassessment when later evidence changes the risk picture.
+
+Passenger Assist already owns:
+- advance booking;
+- turn-up-and-go;
+- station handover;
+- delivery obligations;
+- fallback/alternative transport;
+- redress after failed booked assistance.
+
+Current ORR evidence still shows a real delivery gap:
+high satisfaction when assistance is actually delivered, but a material minority of booked-assistance users report receiving none of what they booked.
+
+That fits the existing conformance audit:
+
+~~~text
+BOOKED
+!=
+DELIVERED
+
+REDRESS
+!=
+ORIGINAL JOURNEY RESTORED
+~~~
+
+No new field was needed.
+
+This is the saturation signal.
+
+Across ten applied cases/controls, the temporal lane has already:
+- found stronger owners;
+- killed term/mechanism novelty;
+- cut home-grown maths;
+- built a design-pattern library;
+- built an owner-derived conformance audit;
+- allowed OWNER FOUND / NO DELTA;
+- let stronger owners move our own trigger earlier;
+- refined internal/back-stage clocks and lifecycle currentness;
+- reached new domains without further audit growth.
+
+Preserve:
+
+~~~text
+MORE EXAMPLES
+!=
+MORE LEARNING BY DEFAULT
+
+AUDIT STABILITY UNDER NEW CASES
+CAN BE
+A STOP SIGNAL
+~~~
+
+Saturation review:
+`coordination/resources/TEMPORAL_CONFORMANCE_SATURATION_REVIEW_20260927.md`
+
+Receipt:
+`coordination/build_ledger/TEMPORAL_CONFORMANCE_SATURATION_20260927.md`
+
+Reopen only for:
+- a real falsifier;
+- stronger-owner correction;
+- actual use need;
+- clean/funded testing opportunity;
+- demonstrated TRACE/ME defect;
+- genuinely novel domain pressure.
+
+Current disposition:
+
+**TEMPORAL CASE ACCUMULATION STOP BY DEFAULT / TOOL PRESERVED / WORLD / REAL USE RESUME / TRACE PATCH NO / ME PATCH NO.**
+
