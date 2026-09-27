@@ -14,7 +14,7 @@ Owner source rechecked 26 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current exact proposal-body count:
-**1,464 whitespace-delimited words**
+**1,479 whitespace-delimited words**
 
 Final submission-editor recount remains required.
 
