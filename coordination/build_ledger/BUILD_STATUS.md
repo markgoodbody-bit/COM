@@ -37,14 +37,14 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — Digital Science RC frozen / Simple-v1 #266 merged / Square return**
+Updated: **27 September 2026 — D088 live / THR #82 merged / answerability A2 returned, B2 pending**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
 
 - TRACE main `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` — released compact baseline v0.4.0;
 - Mechanical Ethics main `e2ef746e931161cb70ac46a4eaa122442134e86b` — released reader baseline v0.8.0;
-- Human Record main `2d0cf64e685224b3c8183f5e83e18143bb16f0c7` — four public records; #75/#76/#77/#78/#80 plus bounded read-only impact routing #81 merged; integrity + Pages green; exploratory THR #52 closed unmerged; open THR PRs = 0;
+- Human Record main `448dcd7b2f829e0c7277365d14daaacf4cd381a4` — four public records; #81 bounded read-only impact routing retained; #82 adds three append-only source-currentness receipts with `record_evidence_promoted=false`; validator `36312512443` passed before merge; no record/schema/type growth; exploratory #52 remains closed unmerged;
 - Campfire Relay main `9408d795d0508815e097066b749800ddbd8b8290` — #260 measured joiner/speaking-accounting repair, #261 source/release/install currentness repair, #262 older-thread accounting clarification, #264 inference-identity honesty repair, and #265 deferred-acknowledgement repair merged; bounded target-host evidence still establishes only the existing running Windows source as tag v0.18.34 while leaving loaded modules and dependencies unverified; Production unchanged.
 
 `REPOSITORY MAIN MOVEMENT != NEW FORMAL BASELINE`
@@ -56,8 +56,8 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`, post-merge CI `36237923895` SUCCESS with 62 deterministic tests on both Windows and Ubuntu jobs. In addition to the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness, main now includes PR #12's predeclared shadow-mode research pilot protocol and PR #13's deterministic offline pilot scorer. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
-- **PSFH D087 LIVE** — maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; D086 map-first Explore preserved; D087 repairs stale human-facing current TRACE/ME source routes while retaining historical node-basis snapshots; publication `36198130032` SUCCESS with selected custom-domain bytes verified; post-sync maintained CI `36198262841` SUCCESS. PR #491 merged after exact-head CI;
-- **THR CURRENT MAIN `2d0cf64e…`** — #76/#77/#78/#80 remain active; #81 adds the hardened read-only direct+assertion impact-route query extracted from exploratory #52; main integrity `36237522858` + Pages `36237522573` SUCCESS; four records remain four; #52 closed unmerged; open THR PRs = 0; no dependency ontology/schema growth;
+- **PSFH D088 LIVE** — maintained source `db2b64ab9d08e44a93cbb61c03cb2eaee28f5629`; public `gh-pages@c1dec76b8c28e8bbc5d9ad406067261070e4c555`; Site Preview `0.8.45`; D086 map-first Explore and D087 source-route repair remain intact; D088 adds only the reader-earned encounter-evidence boundary to Selection. Publisher `36313499829` and release-sync CI `36313610925` SUCCESS with custom-domain byte verification. Receipt: `coordination/build_ledger/PSFH_D088_ENCOUNTER_EVIDENCE_PUBLICATION_20260927.md`;
+- **THR CURRENT MAIN `448dcd7b…`** — #81 retains the hardened read-only direct+assertion impact-route query extracted from exploratory #52; #82 appends bounded currentness receipts for the Met Camp Fire page, Heritage Crafts sieve/riddle page and Guardian Turnock article. Validator `36312512443` SUCCESS before merge. Four records remain four; no evidence promotion, new record, schema/type growth, preservation claim, origin-HTTP claim or byte-identity claim;
 - **Relay #260 + #261 + #262 + #264 MERGED** — main `58920c10b4942d8058a01763de8a34c7530cf088`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; #264 separates configured/resolved target identity from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS; target-machine read still establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
 - **Relay #265 MERGED / SOURCE ADOPTED / PRODUCTION UNCHANGED** — reviewed head `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9` merged as `9408d795d0508815e097066b749800ddbd8b8290`; it prevents late COMSYNC failure from consuming COM108/Square rows as acknowledged. Hosted `campfire-ci` `36258366754` was SUCCESS and independent Claude Code Windows full discovery reported 114 PASS before adoption. Per-file atomic replacement is not a multi-file transaction or concurrent-writer guarantee. No install/restart/Production activation follows from the merge.
 ```text
@@ -131,6 +131,18 @@ Draft candidate frozen.
 ### TRACE / Mechanical Ethics successor
 
 COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME beta PRs #49/#50/#52/#53 are closed after release with branches/history preserved. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.4.0 and ME v0.8.0 are frozen pending concrete defects or world/use evidence.
+
+### Answerability teaching-card reliability probe
+
+The ten-case field sequence remains saturated and the card remains provisional / non-canon. Beam Notes #618/#619 is preserved as an invalid blind-test setup because both readers disclosed prior exposure.
+
+Clean replacement #623/#624 uses the mechanically selected Office of the Public Guardian: Investigations Assistant record (seed `2026-09-27`; zero exact title/slug hits in COM/THR before dispatch). Reader A2 / Claude Code has frozen its source-only reading at #623 before reading B2. It chose the unflagged transaction-category route and found explicit investigator review/correction before progression, later decision-level complaint/review, and unresolved ambiguity over the relevant hardening point and exact affected layer. Reader B2 / #624 is still pending.
+
+```text
+ONE CLEAN READER RETURN != RELIABILITY RESULT
+DO NOT COMPARE UNTIL B2 IS FROZEN
+COMPARE DISAGREEMENTS != SCORE AGREEMENT
+```
 
 ### PSFH current Door — D088
 
