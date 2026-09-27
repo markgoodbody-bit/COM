@@ -164,7 +164,7 @@ EvidenceWatch sits in evidence synthesis and research integrity.
 
 Its mechanisms are not novel. The fit is a multi-step agent that must know when to stay quiet, flag a change, or refuse to act without authority, matching Digital Science's emphasis on embedded workflows with provenance, governance and accountability.
 
-Digital Science also owns several strong adjacent systems, including Figshare, ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
+Digital Science also owns strong adjacent systems, including Dimensions MCPs, Papers AI, Figshare, ReadCube and the PostPub/VIRUS Catalyst work. That makes it a useful place to falsify the integration hypothesis: does joining residual post-reliance change monitoring to an existing workflow save enough reviewer work, at acceptable error and maintenance cost, to deserve a product?
 
 ## 9. BUDGET
 
