@@ -1,0 +1,163 @@
+name: PSFH D090 publish effective-copy correction
+
+on:
+  push:
+    branches:
+      - framework/psfh-d090-publish-20260928
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - 'public/explore/nodes/correction.md'
+      - 'public/explore/nodes/correction.json'
+      - 'public/explore/nodes/correction.html'
+      - 'public/explore/packet.md'
+      - 'public/explore/packet.json'
+      - '.github/workflows/psfh-d090-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d090:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d090-publish-20260928
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D090 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.47'
+          m['updated']='2026-09-28'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          for old in ('D045-D087','D045-D088','D045-D089'):
+              note=note.replace(old,'D045-D090')
+          m['provenance']['change_history_addendum_note']=note
+          m['provenance']['correction_effective_copy_d090']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/663',
+            'basis':'b30a37cc29770686611b5a648c7116bba00091a3',
+            'candidate_head':'7c874aea39443d5a949d30cec53206d7ffc57196',
+            'external_return':'Campfire Square post 6978 comment 82966 by zora',
+            'scope':'Correction now binds the version or copy people and processes actually rely on and separates sending from target change through target-copy or receiving-side evidence. All five current carriers are checked. No node, graph, schema, tracking, analytics, TRACE/ME/THR source, permission, intake or server-behaviour change. Population reader benefit remains unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D090_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D090_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          git diff --check
+      - name: Commit exact D090 manifest pins
+        run: |
+          git config user.name "PSFH D090 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D090 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D090: pin effective-copy release provenance"
+          git push origin HEAD:framework/psfh-d090-publish-20260928
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 1d50a8624d07292a20bee74e023958bc75732690
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D089
+        run: |
+          rm -rf /tmp/psfh-d090-publish
+          git worktree add -B gh-pages /tmp/psfh-d090-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d090-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d090-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d090-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d090-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d090-publish/
+          test "$(git -C /tmp/psfh-d090-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d090-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d090-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d090-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d090-publish/resources');"
+          git -C /tmp/psfh-d090-publish status --short
+      - name: Commit and publish D090
+        run: |
+          git -C /tmp/psfh-d090-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d090-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d090-publish add -A
+          if git -C /tmp/psfh-d090-publish diff --cached --quiet; then
+            echo "No D090 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d090-publish commit -m "Publish PSFH D090 effective-copy correction"
+          git -C /tmp/psfh-d090-publish push origin HEAD:gh-pages
+      - name: Verify D090 served bytes
+        run: |
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/manifest.json -o /tmp/psfh-live-manifest.json && grep -F '"site_edition": "0.8.47"' /tmp/psfh-live-manifest.json; then
+              ok=1
+              break
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || { echo "Live manifest did not converge to D090" >&2; exit 1; }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/nodes/correction.html -o /tmp/psfh-live-correction.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/nodes/correction.md -o /tmp/psfh-live-correction.md
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/nodes/correction.json -o /tmp/psfh-live-correction.json
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/packet.md -o /tmp/psfh-live-packet.md
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/packet.json -o /tmp/psfh-live-packet.json
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+
+          for f in /tmp/psfh-live-correction.html /tmp/psfh-live-correction.md /tmp/psfh-live-correction.json /tmp/psfh-live-packet.md /tmp/psfh-live-packet.json; do
+            grep -F 'version or copy that people and processes actually rely on' "$f"
+            grep -F 'Sending a correction does not show that target changed' "$f"
+            grep -F 'target copy or a receiving-side receipt' "$f"
+          done
+
+          grep -F 'D090' /tmp/psfh-live-changes.html
+          grep -F 'Bind correction to the copy that matters.' /tmp/psfh-live-changes.html
+          echo "D090 selected live-byte verification PASS"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# SENT_CORRECTION != TARGET_CHANGED
+# PLAUSIBLE_COPY != EFFECTIVE_COPY
+# ONE_READER_RETURN != POPULATION_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
