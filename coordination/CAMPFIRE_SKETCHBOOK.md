@@ -4645,3 +4645,96 @@ Current disposition:
 
 **KEEP WORKING / DESIGN + OWNER ABSORPTION ACTIVE / TRACE PATCH NO / ME PATCH NO.**
 
+## 27 September 2026 — temporal empathy applied: the owner can cut our clock earlier
+
+Status: **WORLD / REAL USE APPLICATION / STRONGER-OWNER CORRECTION / NO PATCH**
+
+A first real-system application pass used the temporal design-pattern library against:
+- NHS e-Referral handoffs;
+- EHC / current-education timing;
+- LGSCO complaint waiting;
+- Seattle secure scheduling.
+
+The pass was deliberately allowed to return `OWNER FOUND / NO DELTA`.
+
+That happened twice:
+- LGSCO already exposes staged waits / process expectations strongly enough that no general new feature was earned.
+- Seattle's schedule-predictability intervention is already implemented and evaluated; it is a stronger positive owner, not our invention.
+
+NHS e-RS is more interesting but currently **moving**:
+September 2026 releases added patient-facing processing / accepted-referral visibility. A negative-transition responsibility receipt remains a narrow paper candidate, but the correct current action is **WATCH / NO OUTREACH**, not rush to suggest a feature while the owner is actively changing the relevant surface.
+
+The strongest learning came from EHC / current education.
+
+Framework first proposed:
+
+```text
+20-WEEK EHC HORIZON
+-> CHECK CURRENT EDUCATION / PARALLEL PROTECTION
+```
+
+Recent Ombudsman cases showed that this is too late as the primary trigger.
+
+The stronger owner already expects relevant current-education / alternative-provision consideration to arise when the council becomes aware that the child may not be receiving suitable education, including through information held by another council team. The state also has to be kept under review as circumstances change.
+
+So the project object changed to:
+
+```text
+AWARENESS / MATERIAL PROVISION CHANGE / REVIEW POINT
+-> REACQUIRE CURRENT EDUCATION STATE
+-> ROUTE TO RESPONSIBLE OWNER
+-> RECORD DECISION / BASIS
+-> KEEP UNDER REVIEW
+
+20-WEEK HORIZON
+= BACKSTOP / CURRENTNESS CHECK
+NOT PRIMARY PROTECTION TRIGGER
+```
+
+This earns an important project-method lesson:
+
+```text
+OUR CLOCK
+CAN BE
+TOO LATE
+
+STRONGER OWNER
+CAN MOVE THE TRIGGER EARLIER
+```
+
+and:
+
+```text
+CONSIDERED ONCE
+!=
+ADEQUATELY KEPT UNDER REVIEW
+```
+
+The cross-domain compression that still travels is:
+
+```text
+PROCESS CLOCK
+!=
+AFFECTED-ENTITY STATE CLOCK
+!=
+CORRECTION / APPEAL CLOCK
+```
+
+but the mechanism belongs to the education/legal owner.
+
+Applied pass:
+`coordination/resources/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_PASS_20260927.md`
+
+EHC owner synthesis:
+`coordination/resources/TEMPORAL_EHC_STRONG_OWNER_CASE_SYNTHESIS_20260927.md`
+
+Current EHC paper object:
+`coordination/resources/TEMPORAL_CANDIDATE_EHC_PARALLEL_CLOCK_v1_20260927.md`
+
+Receipt:
+`coordination/build_ledger/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_20260927.md`
+
+Current disposition:
+
+**APPLIED VALUE PLAUSIBLE / OWNER CORRECTION WORKED / NO TRACE OR ME PATCH / KEEP WORKING.**
+
