@@ -27,9 +27,9 @@ Six public-source case packets, one per stratum:
 1. **Institutional delay / trajectory change**
 2. **Uncertain timing / health or care constraint**
 3. **Prospective-memory / remember-to-act burden**
-4. **Competing deadline / task-specific capacity overload**
-5. **Hardening / irrecoverable lost route**
-6. **Unequal acceleration / speed-capital or schedule-control asymmetry**
+4. **Workload-capacity imbalance / intervention adds work**
+5. **Competing deadline / task-specific resource interference**
+6. **Hardening / unequal waiting / lost-route consequence**
 
 Each packet must:
 - be understandable without project-specific vocabulary;
@@ -63,10 +63,11 @@ For each response, blinded adjudication asks whether it correctly notices:
 2. **control / temporal agency** where material;
 3. **uncertainty / unpredictability** where material;
 4. **hardening / what changes while waiting**;
-5. **competing task-specific capacity** where material;
-6. **cue/support route** where material;
-7. **irrecoverable residue / lost future** where material;
-8. **correct stronger-owner route** rather than project self-reference.
+5. **work imposed by the route/intervention itself** where material;
+6. **competing task-specific capacity** where material;
+7. **cue/support route** where material;
+8. **irrecoverable residue / lost future** where material;
+9. **correct stronger-owner route** rather than project self-reference.
 
 A dimension is only eligible for a case if the frozen source packet supports it.
 
