@@ -342,6 +342,65 @@ The empirical correction is causal, not semantic:
 
 No wording patch earned.
 
+## TRACE-S8 — Substantively justified delay can still have a harmful communication route
+
+Classification:
+**SURVIVED / DO NOT PATCH**
+
+Source:
+`field/HORIZON_SHORTFALL_DELAY_COMMUNICATION_20260927.md`.
+
+Pressure:
+The Horizon Shortfall Scheme Independent Senior Lawyer accepted the substantive systemic approach to complex outstanding claims while separately finding that two claimants had not been kept adequately informed about progress. The review records that poor communication caused or compounded distress and preserves continuing escalation and monitoring routes.
+
+Current TRACE v0.4.0 already separates:
+- substantive adjudication from claimant-facing communication;
+- actors, authority and review ownership;
+- next-step dependencies and clocks;
+- observability from resolution;
+- route support from substantive outcome;
+- escalation and monitoring from completed correction.
+
+Useful compression:
+```text
+SUBSTANTIVE REVIEW JUSTIFIED
+!= COMMUNICATION ADEQUATE
+
+ROUTE ACTIVE
+!= AFFECTED PERSON CAN SEE WHAT HAPPENS NEXT
+```
+
+No new primitive earned.
+
+## ME-S6 — Avoidable burden can arise in the communication layer of a legitimate process
+
+Classification:
+**SURVIVED / DO NOT PATCH**
+
+Source:
+`field/HORIZON_SHORTFALL_DELAY_COMMUNICATION_20260927.md`.
+
+Pressure:
+A process can be substantively legitimate yet still transfer avoidable uncertainty, chasing work and distress through poor explanation of delay, next steps and expected timing.
+
+Current Mechanical Ethics v0.8.0 already carries this through:
+- Process Becomes Distance;
+- Door vs practical access;
+- Who Builds the Maze;
+- Who Pays for Complexity;
+- burden/residue;
+- correction-before-hardening;
+- answerability.
+
+The case sharpens:
+```text
+LEGITIMATE PROCESS
+CAN STILL CREATE ΔH
+THROUGH POOR ROUTE COMMUNICATION
+```
+
+No wording patch earned.
+
 ---
 
 # Shared negative evidence from 19 September
@@ -356,7 +415,8 @@ The following real/current pressure did **not** earn baseline changes:
 - NHS SPR rectification implementation watch;
 - MAIB crewed/uncrewed collision interim report;
 - Patel v SSWP / HMCTS unactioned statement-of-reasons request;
-- reasonable-adjustment delay/process ambiguity.
+- reasonable-adjustment delay/process ambiguity;
+- Horizon Shortfall Scheme justified-delay / communication-failure distinction.
 
 That negative evidence matters.
 
