@@ -74,6 +74,24 @@ test('selection separates sender activity from evidence of external encounter',a
  }
 });
 
+test('correction binds the effective copy and verifies receipt',async()=>{
+ const md=await readFile('out/explore/nodes/correction.md','utf8');
+ const node=JSON.parse(await readFile('out/explore/nodes/correction.json','utf8'));
+ const rendered=await readFile('out/explore/nodes/correction.html','utf8');
+ const packetMd=await readFile('out/explore/packet.md','utf8');
+ const packet=JSON.parse(await readFile('out/explore/packet.json','utf8'));
+ const packetCorrection=packet.nodes.find(x=>x.id==='correction');
+ assert.ok(packetCorrection,'packet correction node missing');
+ const target=/version or copy that people and processes actually rely on/;
+ const sendBoundary=/Sending a correction does not show that target changed/;
+ const receipt=/target copy or a receiving-side receipt/;
+ for(const carrier of [md,node.detail,rendered,packetMd,packetCorrection.detail]){
+   assert.match(carrier,target);
+   assert.match(carrier,sendBoundary);
+   assert.match(carrier,receipt);
+ }
+});
+
 test('root metadata names only the first-party canonical origin',()=>{
  assert.match(html,/<link rel="canonical" href="https:\/\/pleasestartfromhere.com\/"/);
  for(const field of ['title','description','url','type'])assert.equal((html.match(new RegExp('property="og:'+field+'"','g'))||[]).length,1);
