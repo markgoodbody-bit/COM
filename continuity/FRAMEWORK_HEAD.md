@@ -139,7 +139,7 @@ The release lane is closed. Beta PRs are closed with branches/history preserved.
 
 ### EvidenceWatch retrospective Brierley execution
 
-Status: **SELECTION + BLINDING + RUN CONTRACT FROZEN / LIVE RUN AUTHORISED 27 SEPTEMBER / NOT RUN / LOCAL NVIDIA CREDENTIAL + QUOTA GATE**.
+Status: **SELECTION + BLINDING + RUN CONTRACT FROZEN / TWO LIVE ATTEMPTS ABORTED PRE-UNBLIND / INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE / NO FURTHER RETRIES**.
 
 Frozen objects:
 - challenge protocol: `coordination/resources/EVIDENCEWATCH_RETROSPECTIVE_CHALLENGE_20260926.md`;
@@ -161,7 +161,7 @@ ABSTRACT_MAJOR_CHANGE != CLINICAL / REVIEW MATERIALITY
 RETROSPECTIVE_DISCRIMINATION != REVIEWER TIME SAVED
 ```
 
-Actual execution uses NVIDIA's currently advertised free Developer Program prototype/research endpoint, so no monetary charge is established; it still consumes account quota/rate-limit capacity and requires Mark's NVIDIA credential. Mark authorised the frozen live run on 27 September 2026, but the current Framework aperture cannot access the local PowerShell session or its `NVIDIA_API_KEY`; no provider call was made from this aperture. The existing local runner remains the authoritative execution path and must not be weakened or replaced merely to bypass that boundary. Preserve: `FREE ENDPOINT != UNLIMITED QUOTA`, `PROVIDER RESOURCE / CREDENTIAL GATE != DEMONSTRATED MONETARY SPEND GATE`, and `AUTHORISED != EXECUTED`. Do not patch/tune the pinned source against this set and then report the same set as untouched validation.
+Actual execution uses NVIDIA's currently advertised free Developer Program prototype/research endpoint, so no monetary charge is established; it consumes account quota/rate-limit capacity and requires Mark's NVIDIA credential. Two authorised local attempts were made on 27 September 2026 under the frozen contract. Run 1 aborted after 3 analyses on provider HTTP 503 `Service temporarily overloaded`; fresh run 2 aborted after 8 analyses because the pinned model did not return a JSON object. Both stopped before owner-label join/unblinding/scoring. The declared route is therefore `INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE`; no third retry is authorised. Preserve: `PARTIAL_PROVIDER RUN != SEMANTIC RESULT`, `FAIL-FAST STOP != NEGATIVE MODEL SCORE`, and `RETRY / TUNING != UNTOUCHED BLIND VALIDATION`. Do not patch/tune the pinned source against this 44-case packet and then report the same set as blind validation.
 
 ### Digital Science Catalyst Grant 2026
 
