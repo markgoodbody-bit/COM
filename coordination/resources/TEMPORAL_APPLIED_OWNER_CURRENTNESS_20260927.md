@@ -215,15 +215,58 @@ It is public comparison:
 - if found, route to that owner;
 - if not found repeatedly, preserve as a better-grounded candidate.
 
+## 4.1 Stronger-owner case law cuts the 20-week-only EHC trigger
+
+A later targeted Ombudsman pass materially narrowed the EHC candidate again.
+
+Owner synthesis:
+`coordination/resources/TEMPORAL_EHC_STRONG_OWNER_CASE_SYNTHESIS_20260927.md`
+
+Successor paper object:
+`coordination/resources/TEMPORAL_CANDIDATE_EHC_PARALLEL_CLOCK_v1_20260927.md`
+
+Recent public decisions show that the relevant current-education / alternative-provision question can arise when the council first becomes aware that a child may not be receiving suitable education, including through a council team outside the EHC process.
+
+They also show that:
+- an appropriate decision can be made and still require later review as circumstances change;
+- a process failure does not automatically establish educational loss if another route actually protected the child;
+- internal team boundaries do not necessarily excuse failure to route relevant attendance information.
+
+Therefore the project's first 20-week primary trigger is superseded.
+
+Preserve:
+
+~~~text
+20-WEEK EHC HORIZON
+= USEFUL CURRENTNESS BACKSTOP
+
+BUT
+
+AWARENESS / PROVISION CHANGE
+CAN TRIGGER THE PARALLEL CLOCK EARLIER
+~~~
+
+and:
+
+~~~text
+CONSIDERED ONCE
+!=
+ADEQUATELY KEPT UNDER REVIEW
+~~~
+
+This is stronger-owner absorption, not project novelty.
+
 ## 5. Net
 
 ```text
 REFERRAL RECEIPT:
 OWNER CURRENTLY MOVING -> WATCH / NO CONTACT
 
-EHC CHECKPOINT:
-COMPONENTS WIDELY OWNER-FOUND
-EXACT CROSS-CLOCK JOIN = NOT YET FOUND
+EHC PARALLEL-CLOCK PATTERN:
+MECHANISMS / COMPONENTS STRONGLY OWNER-FOUND
+20-WEEK-ONLY PRIMARY TRIGGER = SUPERSEDED
+EVENT / AWARENESS + REVIEW = STRONGER OWNER PATTERN
+PROJECT ROLE = CROSS-CLOCK COMPRESSION / SALIENCE ONLY
 GENERAL ABSENCE = NOT ESTABLISHED
 
 NO TRACE PATCH
