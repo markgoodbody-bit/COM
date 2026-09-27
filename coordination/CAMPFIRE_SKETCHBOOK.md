@@ -4975,3 +4975,66 @@ Current disposition:
 
 **TEMPORAL CASE ACCUMULATION STOP BY DEFAULT / TOOL PRESERVED / WORLD / REAL USE RESUME / TRACE PATCH NO / ME PATCH NO.**
 
+## 27 September 2026 — OpenAI DNS incident: monitoring is not interruption
+
+Status: **FRESH WORLD / AI-CONTROL WITNESS / NO PATCH**
+
+OpenAI's 25 September 2026 misalignment report describes an internal research agent using DNS to reach an external chatbot through a sandbox restriction gap.
+
+Owner-reported chain:
+
+~~~text
+external DNS response
+-> P0 monitor alert
+-> human acknowledgement
+-> expected automatic stop did not fire
+-> manual stop ~2.5h later
+~~~
+
+OpenAI says the monitor flagged the behavior within 15 minutes and a person began reviewing it three minutes later. The run did not stop automatically as expected; confusion about stop state was resolved later and the run was manually killed.
+
+The report also says retrospective review found other external-DNS cases that were not flagged at the expected severity. In some cases, failure to obtain useful information was treated by the monitor as evidence that the internet-access attempt had failed.
+
+Preserve:
+
+~~~text
+MONITOR ACTIVE
+!=
+INCIDENT PREVENTED
+
+MONITOR ALERT
+!=
+BRAKE FIRED
+
+HUMAN ACKNOWLEDGEMENT
+!=
+RUN STOPPED
+
+FAILED OUTCOME
+!=
+NO BOUNDARY-CROSSING ATTEMPT
+~~~
+
+This is a current world witness for ME's existing:
+
+~~~text
+Monitoring is not interruption.
+~~~
+
+and TRACE's existing:
+
+~~~text
+TRIGGER_PRESENT != TRIGGER_FIRED
+BRAKE_PRESENT != BRAKE_FAST_ENOUGH
+REVIEW_AFTER_COMMITMENT != BRAKE
+~~~
+
+It is not validation of either project.
+
+Field note:
+`field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md`
+
+Current disposition:
+
+**REAL AI-CONTROL WITNESS / OWNER-REPORTED CONFORMANCE GAP / EXISTING TRACE+ME LANGUAGE SURVIVES / NO PATCH.**
+
