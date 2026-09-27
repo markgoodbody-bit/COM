@@ -1,6 +1,6 @@
 # Digital Science Catalyst 2026 — judge rehearsal
 
-Date: 26 September 2026
+Date: 27 September 2026
 
 Status: **INTERNAL REVIEW / NOT SUBMITTED / NOT A CLAIM OF SHORTLISTING**
 
@@ -10,7 +10,7 @@ Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current proposal body:
-**1,426 whitespace-delimited words**. Final form-editor recount remains required.
+**1,482 whitespace-delimited words**. Proposal body is frozen; final form-editor recount remains required.
 
 Current EvidenceWatch:
 `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
@@ -22,7 +22,7 @@ Current ceiling:
 
 ```text
 WORKING PROTOTYPE != VALIDATED RESEARCH PRODUCT
-RETROSPECTIVE TEST PREPARED != RETROSPECTIVE RESULT
+RETROSPECTIVE RUN INCONCLUSIVE != SEMANTIC RESULT
 PUBLIC WORKFLOW SPECIMEN != USER BENEFIT
 GRANT FIT != PRODUCT VALIDATION
 ```
@@ -261,15 +261,18 @@ Retrospective falsification pipeline:
 - fail-closed local harness;
 - first `ANALYSIS_FAILED` aborts and seals a partial receipt;
 - comparator integrity checks are now fail-closed;
-- result-routing rule is predeclared;
-- **no model/provider run has occurred**.
+- result-routing rule was predeclared;
+- live attempt 1 stopped after 3 analyses on NVIDIA HTTP 503;
+- live attempt 2 stopped after 8 analyses when the pinned model returned non-JSON output;
+- both stopped before unblinding; owner labels were not joined and no scorer was run;
+- route disposition = `INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE`; no third retry is authorised.
 
 Interpretation:
 
 ```text
 PREDECLARED HOSTILE TEST = PROGRESS
-UNRUN TEST != RESULT
-GREEN PIPELINE != MODEL QUALITY
+FAIL-FAST HELD != SEMANTIC PERFORMANCE PROVED
+INCONCLUSIVE PROVIDER ROUTE != NEGATIVE MODEL SCORE
 ```
 
 ### FIT WITH DIGITAL SCIENCE
@@ -330,7 +333,7 @@ Best answer:
 
 ### "What has the retrospective benchmark proved?"
 
-> "Nothing yet about the model—the live run has not happened. What is useful is that the corpus, trivial baselines, failure handling and interpretation routes were frozen before output. If simple lexical change weakly dominates the model, the semantic-value claim narrows or stops."
+> "No semantic discrimination result. Two frozen attempts stopped before unblinding—first on provider HTTP 503, then on non-JSON model output—so no owner labels were joined and no scorer ran. What survived is the fail-fast discipline and an observed reliability problem in that pinned provider/model route, not evidence for or against EvidenceWatch's semantic value."
 
 ### "Why is the repository private?"
 
@@ -381,6 +384,6 @@ WEAKEST DIMENSIONS =
   NO CURRENT PILOT PARTNER
 
 NEXT PRODUCT WORK = NONE BY MOMENTUM
-NEXT EVIDENCE = REAL WORKFLOW OR FROZEN RETROSPECTIVE RUN
+NEXT EVIDENCE = REAL WORKFLOW / STRONG-OWNER RETURN
 NEXT HUMAN GATE = LIVE FORM IDENTITY -> LATER FIELDS/TERMS -> FINAL SUBMIT
 ```
