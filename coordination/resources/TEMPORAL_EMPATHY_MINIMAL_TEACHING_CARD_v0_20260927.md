@@ -2,85 +2,43 @@
 
 Date: 27 September 2026
 
-Status: **TEST CARD / NOT CANON / NOT VALIDATED**
+Status: **FROZEN TEST CARD / NOT CANON / NOT VALIDATED**
 
-Purpose:
-
-A deliberately small prompt for testing whether temporal-empathy language helps a bounded reader notice action-relevant timing differences without replacing stronger domain methods.
-
-The card should fit on one screen.
-
----
+Purpose: test whether a very small prompt improves temporal reasoning without replacing stronger domain methods.
 
 # WHOSE TIME IS THIS?
 
 1. **What imposes the timing?**
-   - a natural/physical process?
-   - another person?
-   - an institution/system?
-   - a deadline authored by someone?
+   Natural process, another person, institution/system, or authored deadline?
 
 2. **Who controls any of it?**
-   - can the affected entity accelerate, defer, pause, renegotiate or sequence the process?
-   - is "flexibility" actually under their control?
+   Can the affected entity accelerate, defer, pause, renegotiate or sequence it?
 
-3. **What is uncertain or unpredictable?**
-   - timing?
-   - capacity?
-   - availability?
-   - the next institutional step?
-   - what evidence will be required?
+3. **What is uncertain?**
+   Timing, availability, capacity, next step, or evidence required?
 
-4. **Which windows close, and what changes while waiting?**
-   - what becomes harder, more expensive, less recoverable or impossible?
-   - does later correction restore the same future?
+4. **What changes while waiting?**
+   What becomes harder, costlier, less recoverable or impossible?
 
-5. **What work is the system adding, and what else competes for the same capability?**
-   - time alone is not enough;
-   - count the work required to use the remedy/intervention itself;
-   - ask which task-specific capacities, interruptions and obligations collide;
-   - do not read missed action as lack of motivation by default.
+5. **What work does the route itself add?**
+   What other obligations, interruptions or task-specific capacities compete with it?
 
-6. **What cue or support would restore feasibility without taking over the decision?**
-   - reminder;
-   - clearer next-check time;
-   - shared work;
-   - accessible route;
-   - temporary protection;
-   - schedule control;
-   - stronger domain help.
+6. **What cue or support could restore feasibility without taking over the decision?**
+   Reminder, clearer next-check time, shared work, accessible route, temporary protection, schedule control, or specialist help?
 
 7. **What cannot be given back later?**
-   - lost time;
-   - lost opportunity;
-   - exhausted capacity;
-   - foreclosed route;
-   - irreversible consequence.
-
----
+   Lost time, opportunity, capacity, route, or irreversible consequence?
 
 ## Stop / route
 
-If the answer depends on specialist knowledge or a stronger domain method, say so and identify what kind of expertise/evidence is needed.
-
-Do not invent the domain answer from this card.
+If specialist knowledge is needed, name what kind of expertise/evidence is missing. Do not invent the domain answer.
 
 ## Guard
 
 ```text
 EMPATHY != PROJECTION
-
-MY TIME AVAILABLE
-!=
-YOUR TIME AVAILABLE
-
-MY ABILITY TO WAIT
-!=
-WAITING IS CHEAP FOR YOU
-
-FORMAL WINDOW OPEN
-!=
-PRACTICAL ROUTE OPEN
+MY TIME AVAILABLE != YOUR TIME AVAILABLE
+FORMAL WINDOW OPEN != PRACTICAL ROUTE OPEN
 ```
 
 This card has no validated reasoning advantage yet.
