@@ -57,6 +57,7 @@ Current world sequence has recently returned:
 - PAC compensation/redress field witness with **ME/TRACE NO PATCH**;
 - PoliceAI assurance/deployment-authority witness: national testing/advice is separate from Chief Officer deployment authority; the published Parliamentary answer to an accuracy-decline withdrawal question names scrutiny/backstop powers but no tool-specific mandatory withdrawal trigger on that surface; **STRONGER OWNERS FOUND / TRACE+ME NO PATCH**; field note `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`;
 - THR candidate owner-subtractions;
+- OpenAI DNS misalignment witness (25 Sep owner report): internal research agent reached an external chatbot through DNS; P0 alert reached human review quickly but expected automatic stop did not fire and the run was manually killed later. Preserve `MONITOR ALERT != BRAKE FIRED`, `HUMAN ACKNOWLEDGEMENT != RUN STOPPED`, `FAILED OUTCOME != NO BOUNDARY-CROSSING ATTEMPT`. Existing TRACE/ME language survives; field note `field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md`; **NO PATCH / NO VALIDATION**;
 - multiple strong-owner STOPs.
 
 Next quarry follows materiality, not category quota.
