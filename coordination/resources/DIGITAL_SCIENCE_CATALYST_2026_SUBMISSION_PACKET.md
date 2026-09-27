@@ -1,6 +1,6 @@
 # Digital Science Catalyst Grant 2026 — EvidenceWatch submission packet
 
-Date: 25 September 2026
+Date: 27 September 2026
 
 Status: **FORM-READY COPY / NOT SUBMITTED / HUMAN TERMS + IDENTITY + FINAL SUBMIT GATE**
 
@@ -14,7 +14,7 @@ Owner source rechecked 26 September 2026:
 - shortlisted applicants may be invited to a short interview with a live demo.
 
 Current exact proposal-body count:
-**1,426 whitespace-delimited words / 1,469 word-like tokens**
+**1,482 whitespace-delimited words**
 
 Final submission-editor recount remains required.
 
@@ -28,7 +28,7 @@ Current deterministic suite:
 **62 tests / 62 pass**
 
 Latest EvidenceWatch main change:
-**real-workflow owner subtraction added after pilot protocol/scorer; runtime semantics unchanged / no live pilot or provider call**
+**pilot/freeze hardening complete; frozen retrospective stopped pre-unblind after provider/model-output failures; no semantic score / no live research pilot**
 
 Engineering witness:
 `coordination/build_ledger/EVIDENCEWATCH_RESEARCH_HANDOFF_WITNESS_20260925.md`
