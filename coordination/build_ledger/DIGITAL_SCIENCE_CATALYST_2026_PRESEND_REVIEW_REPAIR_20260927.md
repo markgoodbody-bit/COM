@@ -121,6 +121,34 @@ Current hot surfaces are synchronized to the current proposal count and live for
 
 Earlier receipts carrying 1,482 or 1,485 words remain historical snapshots and should not be read as current candidate identities.
 
+## Final application document state
+
+Google Doc:
+`https://docs.google.com/document/d/1WIKqa73vXTO_fo3RU8BsM-O50Yd75yLYrEbQgl4pS18/edit?usp=drivesdk`
+
+Verified after repair:
+- title: `EvidenceWatch — Digital Science Catalyst Grant 2026 Application`;
+- rendered document text: **1,470 whitespace-delimited words** (Markdown `##` markers removed);
+- all nine section headings present and formatted as Heading 1;
+- demo is explicitly labelled as an earlier NVIDIA agent-challenge / non-research scenario;
+- Digital Science / PostPub / VIRUS wording uses support rather than ownership;
+- ALEC/Monash wording says `co-designing`;
+- Section 9 remains **65 words**;
+- no trailing carrier artifact remains;
+- owner: Mark's Google account;
+- explicit reader: `catalyst@digital-science.com`;
+- public / anyone-with-link access: **not established**.
+
+```text
+EXPLICIT CATALYST MAILBOX READER
+!=
+ANYONE-WITH-LINK PUBLIC READER
+
+DOCUMENT RENDER COUNT 1470
+!=
+MARKDOWN CARRIER COUNT 1479
+```
+
 ## Current gate
 
 Still not done:
