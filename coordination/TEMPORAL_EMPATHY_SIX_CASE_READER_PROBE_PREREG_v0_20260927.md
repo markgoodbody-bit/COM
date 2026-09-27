@@ -53,6 +53,33 @@ Same instruction, plus the frozen one-screen card.
 
 No extra explanatory prose.
 
+## 2.1 Reader allocation
+
+Minimum clean design:
+
+- each of the six packets receives **two independent readers**;
+- one reader receives Condition A;
+- one different reader receives Condition B;
+- each reader sees **one packet only**;
+- no reader sees the paired response before freezing their own;
+- no reader is reused across packets in the minimum design.
+
+Therefore the minimum run is:
+
+```text
+6 PACKETS
+x 2 CONDITIONS
+= 12 INDEPENDENT READER-PACKET RESPONSES
+```
+
+This is deliberately expensive in reader count to avoid:
+- within-reader carryover;
+- learning the card from earlier cases;
+- comparison leakage;
+- condition-order effects.
+
+If 12 genuinely independent readers cannot be obtained, do not silently substitute a weaker design and call it the same test. Amend/preregister a new design first.
+
 ## 3. Primary comparison
 
 The test is **not** whether Condition B produces more words.
@@ -67,7 +94,7 @@ For each response, blinded adjudication asks whether it correctly notices:
 6. **competing task-specific capacity** where material;
 7. **cue/support route** where material;
 8. **irrecoverable residue / lost future** where material;
-9. **correct stronger-owner route** rather than project self-reference.
+9. **appropriate domain handoff** rather than project self-reference or invented expertise.
 
 A dimension is only eligible for a case if the frozen source packet supports it.
 
@@ -183,9 +210,11 @@ MORE INFORMATION ADVANTAGE
 
 ## 9. Stronger-owner test
 
-After responses freeze, ask:
+After responses freeze, adjudicators may consult the owner matrix and ask:
 
 > Would direct use of the relevant owner method have been simpler and better than the cross-domain card?
+
+The reader is not required to name the literature or author.
 
 If yes:
 - credit the owner;
