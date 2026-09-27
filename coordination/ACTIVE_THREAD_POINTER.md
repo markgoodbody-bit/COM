@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **27 September 2026 — Digital Science RC frozen / Simple-v1 #266 merged / Square encounter return**
+Updated: **27 September 2026 — D088 live / THR #82 merged / answerability A2 returned, B2 pending**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -209,7 +209,7 @@ TEACHING SURFACE REPAIR != TRACE / ME PRIMITIVE
 
 Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case ATRS answerability sequence is **saturated / STOP by default**. Extracted provisional card: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED. Non-ATRS Relay authority transfer COM #589 / `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md` = PASS WITH CEILINGS / no new dimension. **STOP this lane by default; one transfer != validation.**
 
-Reliability probe: the first held-out attempt on CPS Beam Notes (#618/#619) **invalidated its own blind-test setup** because both readers disclosed prior Beam Notes exposure; it is preserved as a contaminated pilot and yields no agreement/reliability result. Clean replacement #623/#624 uses Office of the Public Guardian: Investigations Assistant, selected mechanically from the current 50-record first-page ATRS snapshot with predeclared seed `2026-09-27` and zero exact title/slug hits in COM/THR before dispatch. Both frozen reads remain required before comparison; compare disagreements, not a score.
+Reliability probe: the first held-out attempt on CPS Beam Notes (#618/#619) **invalidated its own blind-test setup** because both readers disclosed prior Beam Notes exposure; it is preserved as a contaminated pilot and yields no agreement/reliability result. Clean replacement #623/#624 uses Office of the Public Guardian: Investigations Assistant, selected mechanically from the current 50-record first-page ATRS snapshot with predeclared seed `2026-09-27` and zero exact title/slug hits in COM/THR before dispatch. Reader A2 (Claude Code, #623) has now frozen a source-only read before seeing B2: it selected the unflagged transaction-category route, found explicit pre-decision human correction plus later decision-level complaint/review, and flagged ambiguity around the affected layer and hardening point. Reader B2 (#624) has not yet returned. **NO COMPARISON YET**; wait for B2, then compare disagreements question-by-question rather than scoring agreement.
 ### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
