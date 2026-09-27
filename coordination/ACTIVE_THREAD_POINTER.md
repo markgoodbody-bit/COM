@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **27 September 2026 — Digital Science RC frozen / Relay #265 merged / EvidenceWatch retrospective inconclusive**
+Updated: **27 September 2026 — Digital Science RC frozen / Simple-v1 #266 merged / Square encounter return**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -154,7 +154,7 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — through PR #265 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #266
 
 - #256/#257 remain the earlier address, ledger-write, issue-body and zero-comment discovery repairs;
 - Relay main is `9408d795d0508815e097066b749800ddbd8b8290`; #260 widens measured CC address joiners/accounting visibility; #261 separates source/tag/release facts from installed-runtime claims and closes stale #215; #262 clarifies that the older-thread count is a thread-state count rather than addressed-message/unanswered-request count; #264 narrows persisted/resolved `{provider, model, protocol}` to configured target identity and explicitly separates it from provider-reported model metadata, model self-report and cryptographic inference attestation; #265 adds the deferred-acknowledgement repair so a late failed COMSYNC leg cannot consume COM108/Square rows as acknowledged;

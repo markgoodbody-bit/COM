@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **26 September 2026 — answerability + Square/Relay currentness**
+Updated: **27 September 2026 — Digital Science RC frozen / Simple-v1 #266 merged / Square return**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -65,7 +65,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 #259 AUTHORITY REPAIR MERGED** — maintained `framework/campfire-square-simple-v1@f4fa18220957acb00a1ed938432043edb2e27837`; removes #258's unattended MODEL operation while preserving earlier worker/supervisor repairs; exact-head Simple-v1 `36201550455` + broad `36201550475` SUCCESS; post-merge `36201678876` SUCCESS. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
+- **Simple-v1 #259 AUTHORITY REPAIR + #266 SOURCE CURRENTNESS MERGED** — maintained `framework/campfire-square-simple-v1@e191fa9f7c3ab2636b2e27664c1b47adf7a875e2`; #259 removes #258's unattended MODEL operation; #266 upstreams the machine-only supervisor transition ledger and replaces console-decoded raw `gh` fetches with Contents API JSON/base64 -> direct byte writes. The initial #266 patch failed Windows testing because it wrote literal backslash-r/backslash-n characters into JSONL; corrected head `597eeb117cb67f4aaa72951aca7d211909f152a1` passed Windows PowerShell `36312015925` and broad `campfire-ci` `36312016016`, with independent RUNNING/STALE/recovery reproduction. Repeated non-RUNNING rows are intentional; best-effort logging is not a durable audit guarantee; source merge does not establish post-reboot installed-runtime identity or health. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`

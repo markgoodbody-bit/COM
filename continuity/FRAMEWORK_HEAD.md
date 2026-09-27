@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **27 September 2026 — EvidenceWatch live route inconclusive / Relay #265 adopted / Digital Science host-neutral**
+Updated: **27 September 2026 — Digital Science RC frozen / Simple-v1 #266 merged / Square encounter return**
 Rule: later live source and direct Mark direction win.
 Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged. Provisional extraction: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — **NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED**. One non-ATRS transfer against the Relay #258/#259 MODEL-authority repair is preserved at `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md`: the card separated source capability, live state and hardened history without a new dimension. **ONE TRANSFER != CROSS-DOMAIN VALIDATION.**
 
@@ -102,7 +102,7 @@ Formal baselines:
 - **McCloud Remedy / harm-bearing correction:** the independent NHS pension remedy review is a strong non-AI transfer. It records meaningful progress while also finding poor member experience from delay/limited communication, continuing delivery risk, growing interest liabilities and trust erosion. Existing ME/TRACE semantics survive. Preserve: `CORRECTION EXISTS != CORRECTION REACHED`, `REMEDY UNDERWAY != HARM ACCUMULATION STOPPED`, and ask what ΔH accumulates while correction itself remains in flight. Pension law/administration/audit remain stronger owners; no source patch earned.
 - **EvidenceWatch:** stronger-owner subtraction now leaves only the narrow post-reliance change seam: an already-relied-on source materially changes outside new-study/formal-status routes. Public pair literature shows the class is non-zero but does not establish living-review workflow incidence or product-scale burden.
 - **retrospective challenge:** the executable Brierley v2 corpus is frozen into 22 owner-labelled major-change pairs plus 22 clean reconstructable matched no-change controls. v1 is preserved as a failed pre-run design after no-spend source reconstruction exposed unreconstructable/unclean controls. Hosted no-spend reconstruction `36260538589` is SUCCESS; comparator-integrity integration passed full no-spend pipeline `36268383444`; the actual post-preflight fail-fast loop is executed offline with mocked engine/provider/filesystem and hosted run `36280855668` SUCCESS. Two authorised live attempts on 27 September then aborted pre-unblind under the frozen fail-fast rule: run 1 after 3 analyses on NVIDIA HTTP 503 overload, run 2 after 8 analyses on non-JSON model output. No owner-label join/scoring occurred; declared route = `INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE`; no third retry is authorised. `PARTIAL PROVIDER RUN != SEMANTIC RESULT`. COM #612 is closed as completed/inconclusive; it is not an active execution lane.
-- **Digital Science:** remains the primary near-term resource target. The pilot is now **host-neutral**: use the participating team's existing workflow rather than force Zotero. Zotero/CSL-JSON is the currently tested substrate; Digital Science-owned ReadCube is an explicit stronger-owner/subsumption test, not an assumed partnership. Stage 1 remains read-only and earns no write-back authority. One correction-first email has been sent to ALEC/LEAPP-AI's official administrative route; delivery is established, while reply/interest/partnership remain unknown. General Site Content licence terms are reviewed; Catalyst-specific award/IP terms and later form fields remain behind Mark's identity gate.
+- **Digital Science:** remains the primary near-term resource target. The pilot is now **host-neutral**: use the participating team's existing workflow rather than force Zotero. Zotero/CSL-JSON is the currently tested substrate; Digital Science-owned ReadCube is an explicit stronger-owner/subsumption test, not an assumed partnership. Stage 1 remains read-only and earns no write-back authority. One correction-first email has been sent to ALEC/LEAPP-AI's official administrative route; a sent/transmission receipt is established, while recipient delivery/read, reply, interest and partnership remain unknown. General Site Content licence terms are reviewed; Catalyst-specific award/IP terms and later form fields remain behind Mark's identity gate.
 
 ```text
 OWNER FOUND -> LEARN / INTEROPERATE / STOP IF SUBSUMED
@@ -156,8 +156,9 @@ V2 RAW-OWNER NO-SPEND GATE = 36260538589 SUCCESS
 BLINDED PACKET SHA256 = f12762d4867da361e9eb72e3a12c30e82b734f005b09d527b7b19c7aee2ae1cc
 OWNER KEY SHA256 = 75c64ca3235812b2cccf0d5dc2801698dd23f20a393f627106026d619eb299c9
 88 NVIDIA ANALYSES = BASELINE + SUCCESSOR FOR EACH CASE
-MODEL / PROVIDER CALLS = 0 SO FAR
-RESULT = NONE
+LIVE ATTEMPTS = 2 / BOTH ABORTED PRE-UNBLIND
+OWNER-LABEL JOIN / SCORING = NOT RUN
+SEMANTIC RESULT = NONE / ROUTE = INCONCLUSIVE_PROVIDER_OR_ANALYSIS_FAILURE
 ABSTRACT_MAJOR_CHANGE != CLINICAL / REVIEW MATERIALITY
 RETROSPECTIVE_DISCRIMINATION != REVIEWER TIME SAVED
 ```
@@ -262,7 +263,7 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — through PR #264 / Simple-v1 authority repair #259
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #266
 
 - #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
 - Relay main is now `9408d795d0508815e097066b749800ddbd8b8290`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; #264 narrows configured/resolved target identity from any implication of attested provider runtime identity; #265 adds deferred acknowledgement so a late failed COMSYNC leg cannot consume COM108/Square rows as acknowledged; #265 reviewed head `9cc485b8…`, hosted `campfire-ci` `36258366754` SUCCESS, independent Windows discovery 114 PASS;
