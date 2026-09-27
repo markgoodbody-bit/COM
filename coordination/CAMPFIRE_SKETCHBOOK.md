@@ -5202,3 +5202,69 @@ Current disposition:
 
 **LIVE PILOT / OBSERVATION-TO-RECORD CHAIN LOAD-BEARING / STRONG OWNER PRESENT / WATCH PILOT OUTCOME / TRACE+ME+THR PATCH NO.**
 
+## 27 September 2026 — tell us once without owning the whole person
+
+Status: **FRESH WORLD / CROSS-SECTOR SUPPORT-STATE PRESSURE / NO PATCH**
+
+A current Public Accounts Committee report on water, energy and broadband says vulnerable consumers may have to repeat personal circumstances across providers/sectors and calls for work toward a multi-sector "tell us once" approach.
+
+That pressure is real:
+
+~~~text
+REPEATED DISCLOSURE
+CAN BE
+A SUPPORT BURDEN
+~~~
+
+But the obvious technical answer can drift into another failure:
+
+~~~text
+TELL US ONCE
+!=
+TELL EVERYONE EVERYTHING
+
+SHARED SUPPORT STATE
+!=
+UNIVERSAL PERSON GRAPH
+
+PORTABILITY
+!=
+CENTRAL OWNERSHIP
+~~~
+
+Stronger owners already occupy much of the design space:
+- ICO data-sharing guidance contains a consented water/energy tell-us-once example;
+- existing PSR work has common needs codes / cross-utility sharing;
+- current data-intermediary policy explores user-authorised third-party portability.
+
+The project contribution is therefore not "build a central vulnerable-person database."
+
+The useful question is:
+
+> What minimum support-relevant state should travel, to whom, for what purpose, with what currentness/correction/withdrawal semantics?
+
+A second distinction matters:
+
+~~~text
+SUPPORT NEED
+!=
+DEBT PROFILE
+
+ONE "VULNERABILITY" LABEL
+!=
+ONE DATA PURPOSE
+~~~
+
+This directly reinforces the THR fault line:
+make the record more useful without making the person more owned.
+
+Field note:
+`field/CROSS_SECTOR_TELL_ONCE_SUPPORT_STATE_20260927.md`
+
+Existing paper sketch hardened:
+`coordination/resources/SUPPORT_STATE_HANDOFF_CONTRACT_v0_20260927.md`
+
+Current disposition:
+
+**PORTABILITY/PRIVACY TENSION SHARPENED / UNIVERSAL PERSON GRAPH STILL REJECTED / STRONG OWNERS PRESENT / NO THR OR TRACE-ME PATCH / NO OUTREACH.**
+
