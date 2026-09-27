@@ -1,8 +1,8 @@
 # Digital Science Catalyst 2026 — likely form-field pack
 
-Date: 25 September 2026
+Date: 27 September 2026
 
-Status: **PREPARED COPY / NOT ENTERED / 2026 LATER FORM FIELDS UNINSPECTED**
+Status: **PREPARED COPY / CURRENTNESS REPAIRED 27 SEP / NOT ENTERED / 2026 LATER FORM FIELDS UNINSPECTED**
 
 Purpose: reduce friction after the human identity gate without pretending the 2026 Google Form uses the same fields as prior years.
 
@@ -58,12 +58,12 @@ EvidenceWatch joins scheduled observation, duplicate suppression, bounded extrac
 
 ## Existing workflow / target system
 
-**Zotero or a compatible reference-manager workflow used by a living systematic-review team.**
+**The participating team's existing living-review/reference workflow.**
 
-Current state:
-**CSL-JSON file handoff only.**
+Current tested substrate:
+**Zotero-compatible CSL-JSON file handoff only.**
 
-Do not claim a live Zotero plugin or ReadCube integration.
+Zotero is not a required future host. Digital Science-owned ReadCube is a stronger-owner/subsumption test if that is the team's real workflow. Do not claim a live Zotero plugin, ReadCube access, partnership or integration.
 
 ## Research lifecycle
 
@@ -79,13 +79,14 @@ Audience:
 ## Current evidence
 
 - working Node.js prototype;
-- 59 deterministic tests / Windows + Ubuntu CI green;
+- 62 deterministic tests / Windows + Ubuntu CI green;
 - append-only state and restart reconstruction;
 - correction / disagreement / source-loss / candidate-quarantine behavior;
 - CSL-JSON handoff;
 - deterministic research-shaped browser fixture;
 - predeclared shadow-mode pilot protocol + deterministic offline scorer;
-- one live two-run model witness on public owner pages.
+- one live one-watch/two-run model witness on public owner pages;
+- frozen 44-case retrospective route attempted twice and stopped pre-unblind under fail-fast (provider HTTP 503 after 3 analyses; non-JSON model output after 8); no owner-label join, scorer run or semantic result; no third retry authorised.
 
 Ceilings:
 - no research customers;
@@ -115,7 +116,7 @@ Canonical copy:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current proposal:
-**Current exact proposal body: 1,421 whitespace-delimited words / 1,477 word-like tokens / nine required 2026 headings. Recount in the submission editor before final submit.**
+**Current exact proposal body: 1,482 whitespace-delimited words / nine required 2026 headings. Recount in the submission editor before final submit.**
 
 ## Budget
 
