@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **26 September 2026 — answerability + Square/Relay currentness**
+Updated: **27 September 2026 — Digital Science RC frozen / Relay #265 merged / EvidenceWatch retrospective inconclusive**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
