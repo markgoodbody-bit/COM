@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.59 · 27 September 2026
+Please Start From Here · Reader change log · Edition 0.60 · 28 September 2026
+
+### D090
+
+28 September 2026 — Bind correction to the copy that matters.
+
+A real external reader return identified a narrow gap in the Correction node: a correction can reach a plausible but superseded, mirrored or cached copy while the version that an audience or decision process actually relies on remains unchanged. The previous wording required enough time “to affect the target” without saying which target or what would show that it changed.
+
+The Correction expansion now requires the right target — the version or copy that people and processes actually rely on — and separates sending a correction from evidence that the target changed. It asks the reader to check the target copy or a receiving-side receipt. Markdown, JSON, HTML and both full-packet carriers carry the same boundary, and a maintained regression checks all five.
+
+The node title, question, routes and graph relations are unchanged. No tracking, analytics, new schema, TRACE, Mechanical Ethics, Human Record, permission, intake or server behaviour is added. Site Preview advances to 0.8.47. This is a bounded correction prompted by one external return and reproduced in the public carriers; population reader benefit remains unmeasured.
 
 ### D089
 
