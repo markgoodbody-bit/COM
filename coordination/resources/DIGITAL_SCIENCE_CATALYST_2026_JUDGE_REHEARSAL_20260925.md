@@ -10,7 +10,7 @@ Current proposal:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current proposal body:
-**1,482 whitespace-delimited words**. Proposal body is frozen; final form-editor recount remains required.
+**1,485 whitespace-delimited words**. Proposal body is frozen; final form-editor recount remains required.
 
 Current EvidenceWatch:
 `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`
