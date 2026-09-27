@@ -69,7 +69,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`, post-merge CI `36237923895` SUCCESS with 62 deterministic tests on both Windows and Ubuntu jobs. In addition to the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness, main now includes PR #12's predeclared shadow-mode research pilot protocol and PR #13's deterministic offline pilot scorer. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
-- **PSFH D089 LIVE** — maintained source `d4611fca862d004fd4d5576935acd23f124820a6`; public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`; Site Preview `0.8.46`; D088 encounter-evidence wording is unchanged, and D089 synchronizes the two optional packet carriers with the three Selection node carriers. Publisher `36318774643` and post-sync maintained CI `36319148681` SUCCESS with custom-domain verification across all five carriers. Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`;
+- **PSFH D090 LIVE** — maintained source `5eccae1403bee1d6774fb33622f84fb6424120e5`; public `gh-pages@11c2751d686a4fac710a61cdfc5e5840781fda1b`; Site Preview `0.8.47`; the Correction node now binds the version/copy actually relied upon, separates sent correction from target change and requires target-copy or receiving-side evidence. Publisher `36359621385` and post-sync maintained CI `36359780443` SUCCESS with custom-domain verification across all five carriers. Receipt: `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`;
 - **THR CURRENT MAIN `448dcd7b…`** — #81 retains the hardened read-only direct+assertion impact-route query extracted from exploratory #52; #82 appends bounded currentness receipts for the Met Camp Fire page, Heritage Crafts sieve/riddle page and Guardian Turnock article. Validator `36312512443` SUCCESS before merge. Four records remain four; no evidence promotion, new record, schema/type growth, preservation claim, origin-HTTP claim or byte-identity claim;
 - **Relay #260 + #261 + #262 + #264 MERGED** — main `58920c10b4942d8058a01763de8a34c7530cf088`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; #264 separates configured/resolved target identity from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS; target-machine read still establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
 - **Relay #265 MERGED / SOURCE ADOPTED / PRODUCTION UNCHANGED** — reviewed head `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9` merged as `9408d795d0508815e097066b749800ddbd8b8290`; it prevents late COMSYNC failure from consuming COM108/Square rows as acknowledged. Hosted `campfire-ci` `36258366754` was SUCCESS and independent Claude Code Windows full discovery reported 114 PASS before adoption. Per-file atomic replacement is not a multi-file transaction or concurrent-writer guarantee. No install/restart/Production activation follows from the merge.
@@ -90,6 +90,7 @@ Current receipts:
 - `coordination/build_ledger/PSFH_D086_PUBLICATION_20260925.md`
 - `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`
 - `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`
+- `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`
 - `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`
 - `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`
 - `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
@@ -223,26 +224,26 @@ TRACE PATCH = NO
 ME PATCH = NO
 ```
 
-### PSFH current Door — D089
+### PSFH current Door — D090
 
 D087 remains the last broad cold first-contact audit: **KEEP / NO GENERAL REDESIGN**.
 
 D088 remains the narrow reader-earned semantic correction: sender-side activity is not by itself evidence of external encounter.
 
-D089 repairs only the late-found packet carrier mismatch:
-- source PR #629 candidate `fb15d513…`;
-- maintained source CI `36318460184 / SUCCESS`;
-- source merge `6230335250dfd7ee69f2638a0b2008355ece3a84`;
-- fail-closed publisher `36318774643 / SUCCESS` against exact D088 predecessor `c1dec76b…`;
-- current public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`;
-- Site Preview `0.8.46`;
-- all five Selection carriers verified through the custom domain;
-- release-sync PR #630 -> maintained source `d4611fca862d004fd4d5576935acd23f124820a6`;
-- post-merge maintained CI `36319148681 / SUCCESS`.
+D090 repairs the effective-copy gap exposed by `zora`'s Square return:
+- source PR #663 candidate `7c874aea…`;
+- maintained source CI `36359328549 / SUCCESS`;
+- source merge `b30a37cc29770686611b5a648c7116bba00091a3`;
+- fail-closed publisher `36359621385 / SUCCESS` against exact D089 predecessor `1d50a862…`;
+- current public `gh-pages@11c2751d686a4fac710a61cdfc5e5840781fda1b`;
+- Site Preview `0.8.47`;
+- all five Correction carriers verified through the custom domain;
+- release-sync PR #665 -> maintained source `5eccae1403bee1d6774fb33622f84fb6424120e5`;
+- post-merge maintained CI `36359780443 / SUCCESS`.
 
-Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`.
+Receipt: `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`.
 
-`CARRIER_SYNC != SEMANTIC_CHANGE`; reader benefit remains unmeasured.
+`PLAUSIBLE COPY != EFFECTIVE COPY`; `SENT CORRECTION != TARGET CHANGED`; reader benefit remains unmeasured.
 
 ### PSFH Leave a Mark
 
@@ -413,4 +414,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; **PSFH D089 live** at `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`; maintained source `d4611fca862d004fd4d5576935acd23f124820a6`; Site Preview `0.8.46`; publisher `36318774643` SUCCESS and post-sync maintained CI `36319148681` SUCCESS. D088 remains the substantive encounter-evidence wording correction; D089 is carrier synchronization only. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; **PSFH D090 live** at `gh-pages@11c2751d686a4fac710a61cdfc5e5840781fda1b`; maintained source `5eccae1403bee1d6774fb33622f84fb6424120e5`; Site Preview `0.8.47`; publisher `36359621385` SUCCESS and post-sync maintained CI `36359780443` SUCCESS. D090 is the reader-earned effective-copy correction; it is not a framework change, validation or population result. Practical-advantage pilot remains unrun.
