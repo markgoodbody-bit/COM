@@ -22,7 +22,7 @@ Three months later Debbie returns reporting exhaustion and difficulty sleeping. 
 
 The clinician reiterates the importance of insulin and suggests that attending the diabetes class will give Debbie the confidence she needs. Debbie promises to schedule the appointment.
 
-The source later supplies additional context and a different care approach, but that material is intentionally withheld from this reader packet.
+This packet stops at that point in the published illustrative sequence. Later material is not included.
 
 ## Ceiling
 
