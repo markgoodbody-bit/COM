@@ -5355,3 +5355,62 @@ Current disposition:
 
 **OWNER FOUND FOR PORTABLE SUPPORT PROFILE / CROSS-DOMAIN ROUTE+SUPPORT RECEIPT ONLY / NO TRACE-ME-THR PATCH / NO GENERAL PROFILE BUILD.**
 
+## 27 September 2026 — never-built door: hiring margin, not just layoffs
+
+Status: **FRESH WORLD / LABOUR-MARKET PRESSURE / CAUSAL CEILINGS / NO PATCH**
+
+The Jubilee/Andrew Yang debate gave us a hypothesis:
+
+> the easiest worker to remove may be the worker never hired.
+
+Current Stanford labour research gives that idea a better empirical basis, but also narrows it.
+
+The August 2026 ADP-based update reports:
+- no widespread economy-wide AI displacement;
+- a widening early-career gap in highly AI-exposed occupations;
+- adjustment appearing mainly through reduced hiring rather than increased separations.
+
+But the authors explicitly say those patterns are descriptive, not causal estimates of AI.
+
+A newer 41-country study adds another correction:
+AI-adopting firms reduce the junior share of their workforce relative to controls, but primarily because senior employment grows rather than because junior employment necessarily falls.
+
+Preserve:
+
+~~~text
+NO LAYOFF EVENT
+!=
+NO ENTRY-ROUTE CHANGE
+
+NO REJECTION LETTER
+!=
+NO FORECLOSED OPPORTUNITY
+
+JUNIOR SHARE DOWN
+!=
+JUNIOR EMPLOYMENT DOWN
+
+AI-EXPOSED EMPLOYMENT GAP
+!=
+AI CAUSAL EFFECT
+~~~
+
+This is a better real-world pressure case for the existing **never-built door** edge.
+
+The useful measurement lesson:
+
+~~~text
+SEPARATION / UNEMPLOYMENT APERTURE
+CAN MISS
+HIRING / ENTRY-ROUTE CHANGE
+~~~
+
+But labour economists own the measurement and causal method.
+
+Field note:
+`field/AI_EARLY_CAREER_HIRING_NEVER_BUILT_DOOR_20260927.md`
+
+Current disposition:
+
+**REAL PRESSURE / EMPIRICAL HIRING-MARGIN SUPPORT / CAUSAL CLAIM NARROWED / TRACE+ME REPRESENTATION SURVIVES / NO PATCH.**
+
