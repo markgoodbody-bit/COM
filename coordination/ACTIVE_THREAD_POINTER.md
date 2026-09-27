@@ -61,7 +61,7 @@ Current world sequence has recently returned:
 
 Next quarry follows materiality, not category quota.
 
-Temporal-empathy side probe is now **PREPARED / NOT RUN**. Prior owners include Temporal Design/HCI and workload-capacity/treatment-burden work; six neutral public-source packets + a leakage-repaired one-screen card are frozen. Minimum clean design requires 12 independent reader-packet responses outside shared COM visibility. Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`. No TRACE/ME patch follows.
+Temporal-empathy work is **ACTIVE RESEARCH / OWNER-ABSORPTION**, with an optional **PREPARED / NOT RUN** reader-comparison lane. Prior owners include Temporal Design/HCI and workload-capacity/treatment-burden work; six neutral public-source packets + a leakage-repaired one-screen card are frozen. The 12-independent-reader design is required only if we later want a clean reader-comparison result; it is **not** a blocker on continued research, case analysis, design intervention work, internal falsification or TRACE/ME comparison. Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`. No TRACE/ME patch follows yet.
 
 ## 2. TRACE / ME successor — released and closed to source churn
 
