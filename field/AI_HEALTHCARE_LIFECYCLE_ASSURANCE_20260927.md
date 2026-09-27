@@ -1,83 +1,69 @@
-# National Commission on AI in Healthcare — lifecycle assurance world witness
+# National Commission on AI in Healthcare — lifecycle-authorisation addendum
 
 Date: 27 September 2026
 
-Status: **FRESH WORLD / STRONG HEALTHCARE REGULATORY OWNER / LIFECYCLE ASSURANCE WITNESS / NO TRACE OR ME PATCH**
+Status: **INCREMENTAL OWNER-CURRENTNESS ADDENDUM / PRIOR OWNER NOTE EXISTS / NOT A NEW WORLD WITNESS / NO TRACE OR ME PATCH**
+
+Prior project note:
+`evidence/NHS_AI_REGULATION_OWNER_CURRENTNESS_20260918.md`
 
 Primary owner:
 National Commission into the Regulation of AI in Healthcare, *Recommendations for a future regulatory framework*, 10 September 2026.
 
 https://www.gov.uk/government/publications/national-commission-into-the-regulation-of-ai-in-healthcare-recommendations-for-a-future-regulatory-framework/national-commission-into-the-regulation-of-ai-in-healthcare-recommendations-for-a-future-regulatory-framework
 
-Current owner status:
-- independent, non-statutory advisory commission;
-- recommendations published;
-- cross-government response to follow separately.
+## Duplicate correction
 
-Do not treat recommendations as already-enacted law/regulation.
+The 18 September owner/currentness note already captured:
+- responsibility should follow practical ability to act;
+- escalation on performance degradation before a conventional reportable incident;
+- evidence/redress after AI-mediated harm;
+- reporting as a learning/correction loop;
+- strong healthcare regulatory owners;
+- no TRACE/ME source change.
 
-## Strong owner result
+Therefore those points are **not new findings here**.
 
-The Commission explicitly argues for a **lifecycle-based** approach rather than relying heavily on a single point-in-time pre-market authorisation.
+## Narrow incremental residue
 
-Current recommendations include:
-- staged deployment where appropriate;
-- use of robust real-world evidence;
-- post-market surveillance and monitoring;
-- prospective post-market studies where residual uncertainty remains;
-- more regular ongoing performance reporting;
-- escalation processes where performance degradation is detected even when a conventional reportable incident has not yet occurred;
-- public/professional communication around staged deployment and ongoing evidence.
+The Commission also makes a lifecycle-authorisation point that the earlier note did not foreground.
 
-This is already a strong owner of:
+It recommends:
+- staged deployment/authorisation pathways where appropriate;
+- clear communication that staged deployment is staged/conditional;
+- real-world evidence during deployment;
+- post-market surveillance and studies;
+- ongoing performance reporting;
+- temporary staged status with a route toward full authorisation.
+
+The useful compression is:
 
 ~~~text
 AUTHORISED AT t0
 !=
-SAFE / EFFECTIVE AT t1
+CURRENTLY SUPPORTED AT t1
 
-NO REPORTABLE INCIDENT
+STAGED DEPLOYMENT
 !=
-NO MATERIAL PERFORMANCE DEGRADATION
+FULL AUTHORISATION
 
-PRE-MARKET EVIDENCE
-!=
-LIFECYCLE EVIDENCE
-
-DEPLOYED
-!=
-FULLY VALIDATED FOR EVERY SETTING / GROUP / CONDITION
+REAL-WORLD USE
+CAN GENERATE EVIDENCE
+WITHOUT
+BECOMING SELF-VALIDATING
 ~~~
 
-## Why this matters structurally
+A device can have a valid historical authorisation state while the current claim about safety/performance still depends on:
+- deployment setting;
+- patient population;
+- software/model version;
+- new failure modes;
+- post-market evidence;
+- unresolved uncertainty.
 
-AI-enabled medical devices may:
-- operate across settings/patient groups not fully represented pre-market;
-- change through software/model updates;
-- encounter real-world failure modes that were not exhaustively testable pre-market;
-- degrade or drift before a dramatic incident threshold is crossed.
+## TRACE relation
 
-The Commission's answer is not "ban deployment until uncertainty is zero."
-
-It is closer to:
-
-~~~text
-ALLOW BOUNDED DEPLOYMENT
-+
-DECLARE RESIDUAL UNCERTAINTY
-+
-WATCH REAL PERFORMANCE
-+
-ESCALATE ON DEGRADATION
-+
-UPDATE EVIDENCE / LABELLING / CONTROLS
-~~~
-
-That is a stronger-owner implementation of correction-before-hardening logic within healthcare regulation.
-
-## Currentness pressure
-
-TRACE already says:
+This is already representable in TRACE v0.4.0:
 
 ~~~text
 RETAINED_RECORD != CURRENT_STATE
@@ -86,136 +72,34 @@ DATE_CURRENT != DERIVED_VALUE_CURRENT
 CURRENT_AT_USE != VALID_THROUGH_DEPENDENT_INTERVAL
 ~~~
 
-The Commission's lifecycle framing is a current domain-owner witness that this is not merely a data-provenance concern.
-
-A regulatory/device state can become stale because:
-- performance changes;
-- deployment context changes;
-- patient mix changes;
-- software/model changes;
-- new real-world evidence arrives.
-
-## Escalation before classical incident threshold
-
-Recommendation 17 is especially useful because it calls for established escalation processes where performance degradation is detected **even if a reportable incident has not occurred**.
-
-Preserve:
+So:
 
 ~~~text
-NO REPORTABLE INCIDENT
+LIFECYCLE AUTHORISATION PRESSURE
 !=
-NO ACTION-RELEVANT SIGNAL
-
-DEGRADATION SIGNAL
-!=
-PROOF OF HARM
-
-DEGRADATION SIGNAL
-CAN STILL
-TRIGGER REVIEW / ESCALATION
+NEW CURRENTNESS PRIMITIVE
 ~~~
 
-This is the right middle state between:
-- ignoring weak-but-material signals;
-- treating every deviation as proven harm.
+The Commission is the stronger healthcare-regulatory owner.
 
-## Staged deployment
+## Practical owner-routed question
 
-The Commission also treats staged deployment as temporary and evidence-generating.
+For a consequential deployed AI-enabled device:
 
-That gives:
+> What evidence makes the current safety/performance claim valid for this version, setting and population now, and what change would force re-evaluation?
 
-~~~text
-STAGED ACCESS
-!=
-FULL AUTHORISATION
+This routes outward to regulatory/clinical owners.
 
-TEMPORARY DEPLOYMENT
-!=
-EVIDENCE CEILING REMOVED
-
-REAL-WORLD USE
-CAN BE
-EVIDENCE-GENERATING
-WITHOUT
-BECOMING SELF-VALIDATING
-~~~
-
-This distinction matters because successful use by itself does not settle:
-- generalisability;
-- subgroup safety;
-- future performance;
-- causal attribution;
-- long-term benefit/risk.
-
-## Public / professional communication
-
-The Commission recommends that staged-authorisation deployment status be clearly communicated to patients and health-system partners, with updates in settings where devices are deployed.
-
-Preserve:
-
-~~~text
-DEVICE AVAILABLE
-!=
-DEPLOYMENT STATUS OBVIOUS
-
-STAGED / CONDITIONAL STATUS
-!=
-PATIENT / CLINICIAN KNOWS THAT STATUS
-~~~
-
-This is an answerability/transparency layer, not the whole safety mechanism.
-
-## Relation to TRACE
-
-Existing TRACE v0.4.0 already carries:
-- currentness;
-- dependency-relative stale/current state;
-- clocks;
-- route usability;
-- transitions;
-- evidence status;
-- burden;
-- current-vs-historical state;
-- review-after-commitment versus brake;
-- supported uncertainty.
-
-The Commission does not expose a new TRACE primitive.
-
-It provides a domain-specific owner for lifecycle assurance.
-
-## Relation to Mechanical Ethics
-
-ME already carries:
-- correction before hardening;
-- slow harm;
-- machine-speed correction pressure;
-- monitoring versus interruption;
-- residue;
-- usable routes;
-- burden placement.
-
-Again, the Commission owns the healthcare-specific method.
-
-## Smallest project question
-
-When a consequential AI system is approved/deployed:
-
-> What evidence makes its safety/performance claim current today, what change would make that claim stale, and what escalation route exists before the next severe incident?
-
-That question should route outward to the applicable regulatory/clinical owner.
-
-## Anti-overclaim
+## Boundaries
 
 Do not infer:
-- the Commission's recommendations are already implemented;
-- every healthcare AI is a regulated medical device;
-- post-market monitoring guarantees safety;
-- all performance drift is harmful;
-- every degradation signal should stop deployment;
-- the Commission validates TRACE/ME;
-- the UK has solved AI healthcare governance.
+- the Commission recommendations are already enacted regulation;
+- staged deployment applies to every healthcare AI;
+- every AI healthcare tool is a regulated medical device;
+- historical authorisation becomes invalid merely because time passed;
+- post-market surveillance guarantees safety;
+- this addendum validates TRACE or Mechanical Ethics.
 
 ## Current disposition
 
-**STRONGER OWNER FOUND / LIFECYCLE ASSURANCE + PRE-INCIDENT ESCALATION ABSORBED / CURRENT TRACE+ME REPRESENTATION SURVIVES / NO PATCH / NO OUTREACH.**
+**PRIOR OWNER NOTE CONFIRMED / NARROW LIFECYCLE-AUTHORISATION ADDENDUM / CURRENT TRACE REPRESENTATION SURVIVES / NO PATCH / NO HOT-STATE GROWTH REQUIRED.**
