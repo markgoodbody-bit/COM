@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **27 September 2026 — D088 live / THR #82 merged / answerability A2 frozen / Simple-v1 runtime + packet/log defects reacquired**
+Updated: **27 September 2026 — D089 live / Simple-v1 #268 merged / answerability reliability probe closed without clean result**
 Rule: later live source and direct Mark direction win.
 Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged. Provisional extraction: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — **NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED**. One non-ATRS transfer against the Relay #258/#259 MODEL-authority repair is preserved at `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md`: the card separated source capability, live state and hardened history without a new dimension. **ONE TRANSFER != CROSS-DOMAIN VALIDATION.**
 
@@ -96,7 +96,7 @@ Formal baselines:
 
 - **model/runtime proof:** RFC 9334 RATS plus the current AIR draft are the stronger owners for attestation. The project retained the distinction `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY`; Relay #264 repaired only the local evidence wording. No parallel attestation protocol, THR field or TRACE/ME primitive was earned.
 - **CPS Beam Notes / ATRS:** the current public record contains an unresolved Azure summarisation-route tension while CPS digital-material guidance already owns important audit-trail/provenance requirements. Preserved as COM #498/#499 field witness: `PUBLIC_RECORD_CONTRADICTION != OPERATIONAL_FAILURE`; no compliance conclusion, contact or project patch.
-- **answerability reliability probe:** Beam Notes #618/#619 is preserved as a contaminated blind-test setup and yields no reliability result. Clean replacement #623/#624 uses mechanically selected OPG Investigations Assistant. Reader A2 (#623) is frozen source-only before B2; Reader B2 is still pending. Do not compare until B2 freezes; compare disagreements rather than score agreement.
+- **answerability reliability probe:** CLOSED WITHOUT CLEAN TWO-READER RESULT. Beam Notes #618/#619 was contaminated by prior exposure. Replacement #623/#624 was clean at dispatch and produced one frozen A2 source-only read, but shared COM #76 / hot surfaces exposed A2 route/outcome detail before B2 froze; B2 correctly held. No A/B comparison or reliability/validation result exists. Preserve `SHARED_COORDINATION_VISIBILITY != READER_INDEPENDENCE`; future test requires an outcome embargo and should not be rerun by momentum. Receipt: `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`.
 - **answerability-route field sequence:** ten structurally distinct cases now add GOV.UK site search to the prior nine. Data First sharpened route chaining; Access Assure exposed `REVIEWER != ACTOR != AUTHORITY HOLDER != CAPABILITY HOLDER`; DSIT Consult exposed `AFFECTED != WITNESS != INITIATOR`; DWP added the epistemic scar `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed `REVIEWER = FUNCTIONAL EVALUATOR AT THIS LAYER`, which may be the affected user locally and a product/governance team at system resolution. Current preferred teaching compression remains affected layer -> **witness / observability** -> initiator -> reviewer -> **who can actually act / under what authority** -> review resolution -> changeable consequence -> correction clock. Route chaining/branching are use instructions. Preserve: **WITNESS ACCESS != GROUND TRUTH**, **LOCAL USER ADAPTATION != SYSTEM CORRECTION**, **TEACHING SURFACE REPAIRED != NEW TRACE/ME PRIMITIVE**, **TEN CASES != ATRS POPULATION RESULT**. This case sequence is now saturated; stop nearby-case accumulation.
 - **autonomous hostile actuation / CLOSEDQUORUM:** Cisco Talos statically confirmed an architecture in which several LLMs can select among constrained hostile actions and the software can execute without continuing human tasking; in-the-wild deployment and full end-to-end operation of the public build were **not** confirmed. Existing TRACE/ME semantics survive. Teaching pressure: `MODEL VOTE != LEGITIMATE AUTHORITY`, `NO LIVE HUMAN OPERATOR != NO HUMAN CAUSAL OWNERSHIP`, and `INTERNAL EXECUTION AUTHORITY != AUTHORITY OVER THE AFFECTED ENTITY`. Strong cyber owners retain detection/response; no offensive implementation or framework patch earned.
 - **Horizon Shortfall Scheme delay/communication:** the Independent Senior Lawyer accepted the substantive approach to complex outstanding claims while separately finding that poor progress communication caused or compounded distress. Current ME/TRACE survive. Preserve `SUBSTANTIVE REVIEW JUSTIFIED != COMMUNICATION ADEQUATE` and `ROUTE ACTIVE != AFFECTED PERSON CAN SEE WHAT HAPPENS NEXT`. Field witness: `field/HORIZON_SHORTFALL_DELAY_COMMUNICATION_20260927.md`; no patch/THR record earned.
@@ -264,22 +264,29 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #266
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #268
 
-- #256/#257 remain the earlier address-detection, ledger-write, issue-body and zero-comment discovery repairs;
-- Relay main is now `9408d795d0508815e097066b749800ddbd8b8290`; #260 adds `+` / `&` / `and` joiners to measured CC address forms and exposes the speaking-accounting blind region; #261 separates repository source/tag/release evidence from installed-runtime claims; #262 clarifies that the older-thread count is a thread-state count, not a message/unanswered-request count; #264 narrows configured/resolved target identity from any implication of attested provider runtime identity; #265 adds deferred acknowledgement so a late failed COMSYNC leg cannot consume COM108/Square rows as acknowledged; #265 reviewed head `9cc485b8…`, hosted `campfire-ci` `36258366754` SUCCESS, independent Windows discovery 114 PASS;
-- Simple-v1 #258's unattended MODEL operation was a boundary mistake and is reverted by #259; maintained source is `framework/campfire-square-simple-v1@e191fa9f7c3ab2636b2e27664c1b47adf7a875e2` after #266 upstreamed the supervisor transition ledger and byte-safe installer fetch; corrected Windows PowerShell run `36312015925` and broad `campfire-ci` `36312016016` SUCCESS;
-- COM #76 records that Mark separately corrected the live `cc-relay` self-declared model to `claude-opus-5-5` through a one-off human-operated request; the correction is not retroactive and Framework did not use the credential;
-- consolidated receipt: `coordination/build_ledger/RELAY_MODEL_BOUNDARY_AND_COMSYNC_REPAIR_20260926.md`;
-- #261 receipt: `coordination/build_ledger/RELAY_SOURCE_RELEASE_INSTALL_CURRENTNESS_20260926.md`.
-- runtime + engagement currentness receipt: `coordination/build_ledger/RELAY_RUNTIME_AND_SQUARE_ENGAGEMENT_CURRENTNESS_20260926.md`.
-- PR #265 was explicitly approved by Mark and is **MERGED** on Relay main `9408d795d0508815e097066b749800ddbd8b8290`. The repair holds COM108/Square acknowledgements until a completed failure-free run. Per-file atomic replacement remains neither a multi-file transaction nor a concurrent-writer guarantee. Production activation remains separate.
-- **Relay Production unchanged / existing running Windows Relay source established as tag v0.18.34 / loaded modules and dependencies not established / no service install or restart performed by Framework**.
-- **Simple-v1 installed runtime reacquired 27 Sep:** supervisor status RUNNING at 10:59:40Z with ledger STARTING 09:40:20Z -> RUNNING 09:40:21Z. Installed App text still matches the pre-#266 `f4fa182` lineage rather than maintained source `e191fa9f`; its locally restored supervisor already contains the event ledger, so #266 installation is useful currentness/README repair rather than an urgent health fix. The overnight event was Windows Fast Startup resume after power-off, not a clean reboot; `LastBootUpTime` remained 26 Sep. `SOURCE_CURRENT != INSTALLED_CURRENT`, but installed health is freshly observed.
+- Relay main remains `9408d795d0508815e097066b749800ddbd8b8290`; #265 deferred acknowledgements are merged there. Production activation remains separate.
+- Simple-v1 maintained source is `framework/campfire-square-simple-v1@6a07380bdf85804d7029ce5ea6ba279a14c5192b`.
+- #266 upstreamed the supervisor transition ledger and byte-safe installer fetch; corrected Windows `36312015925` and broad `36312016016` SUCCESS.
+- #267 repairs the field-observed malformed-ingress log flood using local append-only refusal state keyed by GitHub comment ID + body SHA-256. Identical bad bytes skip before parsing across polls/restarts; edited bodies reopen parsing. Windows `36319114531`, broad `36319114533`, post-merge `36319248333` SUCCESS; merge `20b37128…`.
+- Independent hostile review found no blocking defect and identified one regression false-green risk. #268 pins actual parser-call counts; Windows `36319389245` and broad `36319389248` SUCCESS; merge `6a07380b…`.
+- Installed Simple-v1 was freshly observed RUNNING but still on pre-#266 `f4fa182…`. Its local supervisor already has the event ledger, but its worker does not yet contain #267/#268. `SOURCE_REPAIRED != INSTALLED_REPAIRED`.
+- Receipt: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`.
 
-### Relay diagnostic-retention defect — active bounded repair
+### Relay diagnostic-retention repair — source merged / installed runtime pending
 
-A malformed historical #177 comment (ID `5380939579`) contains pseudo-JSON with stripped quotes. The speech worker reparses it on every pass; at 10:53:50Z, 4,028 of 5,252 retained PowerShell event-4100 rows were the resulting `Invalid JSON primitive: campfire-simple-read-v1` error. Diagnostics are therefore aging out in under a day. Smallest source repair: remember/refuse the unparseable comment id after first parse failure (with visible bounded receipt), so one immutable bad row cannot flood logs. Do not edit/hide historical evidence merely to silence the parser unless separately chosen.
+The malformed historical #177 comment `5380939579` remains preserved. Source no longer needs to parse identical bad bytes every poll: #267 persists a refusal keyed to comment ID + body hash, and #268 verifies actual parser-call suppression rather than only ledger-row deduplication.
+
+At the field observation, 4,028 / 5,252 retained event-4100 rows were the same parse error and diagnostics were aging out in under a day.
+
+Current boundary:
+- maintained source repaired through `6a07380b…`;
+- installed worker last observed pre-#266 `f4fa182…`;
+- no install/restart has been performed by Framework;
+- therefore the live host log flood is **not yet claimed fixed**.
+
+Do not delete or rewrite the historical comment merely to make diagnostics quiet.
 
 ### Square targeted engagement — one outside return / one invitation still waiting
 
@@ -320,9 +327,21 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D088 is the current public door: maintained source `db2b64ab9d08e44a93cbb61c03cb2eaee28f5629`, published `gh-pages@c1dec76b8c28e8bbc5d9ad406067261070e4c555`, Site Preview `0.8.45`. Publisher `36313499829` and release-sync CI `36313610925` were SUCCESS with direct custom-domain byte verification. D086 map-first Explore and D087 current-source-route repair remain intact. D088 adds only the reader-earned sender-activity / external-encounter boundary to Selection. Receipt: `coordination/build_ledger/PSFH_D088_ENCOUNTER_EVIDENCE_PUBLICATION_20260927.md`.
+D089 is the current public door:
+- maintained source `d4611fca862d004fd4d5576935acd23f124820a6`;
+- public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`;
+- Site Preview `0.8.46`;
+- publisher `36318774643 / SUCCESS`;
+- post-sync maintained CI `36319148681 / SUCCESS`.
 
-**Fresh D088 defect from late hostile review:** live `explore/packet.md` and `explore/packet.json` still carry the pre-D088 Selection challenge while `nodes/selection.{md,json,html}` carry the new text. This is a current carrier mismatch, not a dated snapshot. Repair the two packet carriers + regression through maintained source and the normal fail-closed publisher; do not hand-edit `gh-pages`. D087's broader cold first-contact audit remains **KEEP / NO GENERAL REDESIGN**.
+D088 remains the substantive reader-earned Selection correction. D089 changes no wording: it synchronizes the two optional full-packet carriers with the three node carriers after late review found them stale. All five were verified through the custom domain.
+
+Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`.
+
+D087 remains the last broad first-contact audit: **KEEP / NO GENERAL REDESIGN**.
+
+`CARRIER_SYNC != SEMANTIC_CHANGE`
+`PUBLISHED != READER_BENEFIT`
 
 ## The Human Record
 
