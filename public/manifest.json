@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.45",
+  "site_edition": "0.8.46",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -72,9 +72,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "79b8256a334814f8dd714db12829ed105723ef856bda9bac720eb52ed09e6e6f",
-    "change_history_input_html_sha256": "30c95084f86f22862604772630dcb36f13979c36f9e273fb0e70fb63e567b8a0",
-    "change_history_addendum_note": "D016 through D038 and D045-D088 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "3b6fde7e88271d73afa8e0ccfb373082b6b39e27119e779595ea94a697f85344",
+    "change_history_input_html_sha256": "e6ea5bfa7ab685d41af23d62dc120645db99708cbbd139bf9631b0f8ef13f86b",
+    "change_history_addendum_note": "D016 through D038 and D045-D089 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -186,6 +186,13 @@
       "candidate_head": "3b4a0bf0b07da258da2d7d6839a4b48dc6087cd2",
       "external_return_coordination": "https://github.com/markgoodbody-bit/COM/issues/76#issuecomment-5854977592",
       "scope": "Selection now separates sender-side publication activity from evidence of external encounter: a receiving-side trace can support an encounter claim, silence does not prove non-reading, and one trace does not establish broader reach. Markdown/JSON/HTML carriers are synchronized and regression-pinned. No graph relation, tracking, analytics, TRACE/ME/THR source, permission, intake or server-behaviour change. Reader benefit beyond the concrete external correction remains unmeasured."
+    },
+    "packet_carrier_sync_d089": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/629",
+      "basis": "6230335250dfd7ee69f2638a0b2008355ece3a84",
+      "candidate_head": "fb15d513235e413cdb185b3bb7a2bb33c9778265",
+      "late_review_coordination": "https://github.com/markgoodbody-bit/COM/issues/76#issuecomment-5855271357",
+      "scope": "The D088 Selection encounter-evidence wording is copied unchanged into explore/packet.md and explore/packet.json, and the maintained regression now checks all five Selection carriers. No wording, graph relation, tracking, analytics, TRACE/ME/THR source, permission, intake or server-behaviour change. Reader benefit remains unmeasured."
     }
   },
   "boundaries": [
