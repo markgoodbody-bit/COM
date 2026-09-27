@@ -2,7 +2,7 @@
 
 Date: 27 September 2026
 
-Status: **PAPER PROTOTYPE / OWNER-COMPATIBILITY TEST / NOT NHS GUIDANCE / NOT DEPLOYED**
+Status: **PAPER PROTOTYPE / OWNER TRAJECTORY CONVERGES / WATCH / NO OUTREACH / NOT NHS GUIDANCE / NOT DEPLOYED**
 
 Origin:
 `coordination/resources/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_PASS_20260927.md`
@@ -116,6 +116,20 @@ MORE CLINICAL MESSAGING
 MORE CONFLICTING INSTRUCTIONS
 ~~~
 
+## Currentness note — 27 September 2026
+
+NHS e-RS Release 16.8 shipped adjacent patient-facing temporal visibility on 11 September 2026 for referrals being processed and accepted. Because the owner has just changed the relevant surface, this paper object is **not** a feature-request/contact trigger now.
+
+Current discipline:
+
+~~~text
+OWNER JUST SHIPPED ADJACENT REPAIR
+-> WATCH CONSEQUENCES
+-> DO NOT RUSH TO CONTACT
+~~~
+
+Reopen only if post-release evidence shows a material negative-transition visibility problem, the owner explicitly asks for relevant feedback, or a real case demonstrates that existing backstops still leave consequential uncertainty.
+
 ## Stronger-owner questions
 
 Before any real use, NHS/e-RS/pathway owners would need to answer:
@@ -153,4 +167,4 @@ Look for:
 
 Current disposition:
 
-**SMALL REVERSIBLE PAPER OBJECT / DOMAIN OWNER REQUIRED / NO IMPLEMENTATION AUTHORITY.**
+**SMALL REVERSIBLE PAPER OBJECT / OWNER TRAJECTORY CONVERGES / WATCH / NO OUTREACH / DOMAIN OWNER REQUIRED / NO IMPLEMENTATION AUTHORITY.**
