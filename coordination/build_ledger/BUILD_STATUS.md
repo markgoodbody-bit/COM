@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D088 live / THR #82 merged / answerability A2 returned, B2 pending**
+Updated: **27 September 2026 — D089 live / Simple-v1 #268 merged / answerability reliability probe closed without clean result**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -56,7 +56,7 @@ No single Production/source build lane is currently authorized.
 EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`, post-merge CI `36237923895` SUCCESS with 62 deterministic tests on both Windows and Ubuntu jobs. In addition to the CSL-JSON handoff, DOI-boundary repair and controlled restart/correction witness, main now includes PR #12's predeclared shadow-mode research pilot protocol and PR #13's deterministic offline pilot scorer. The already-submitted NVIDIA Claw artifact remains bound to the earlier frozen head `e924b0de15ccaa1255bfdb80685f60f1a60172e9` and reviewed unlisted video `https://youtu.be/0hdwNc_t4pM`; its result is unknown and organiser says winner outreach around 6 October 2026. New CSL work is for the separately earned Digital Science research-workflow lane, not a retroactive change to the NVIDIA submission.
 
 Current reversible maintenance/design state:
-- **PSFH D088 LIVE** — maintained source `db2b64ab9d08e44a93cbb61c03cb2eaee28f5629`; public `gh-pages@c1dec76b8c28e8bbc5d9ad406067261070e4c555`; Site Preview `0.8.45`; D086 map-first Explore and D087 source-route repair remain intact; D088 adds only the reader-earned encounter-evidence boundary to Selection. Publisher `36313499829` and release-sync CI `36313610925` SUCCESS with custom-domain byte verification. Receipt: `coordination/build_ledger/PSFH_D088_ENCOUNTER_EVIDENCE_PUBLICATION_20260927.md`;
+- **PSFH D089 LIVE** — maintained source `d4611fca862d004fd4d5576935acd23f124820a6`; public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`; Site Preview `0.8.46`; D088 encounter-evidence wording is unchanged, and D089 synchronizes the two optional packet carriers with the three Selection node carriers. Publisher `36318774643` and post-sync maintained CI `36319148681` SUCCESS with custom-domain verification across all five carriers. Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`;
 - **THR CURRENT MAIN `448dcd7b…`** — #81 retains the hardened read-only direct+assertion impact-route query extracted from exploratory #52; #82 appends bounded currentness receipts for the Met Camp Fire page, Heritage Crafts sieve/riddle page and Guardian Turnock article. Validator `36312512443` SUCCESS before merge. Four records remain four; no evidence promotion, new record, schema/type growth, preservation claim, origin-HTTP claim or byte-identity claim;
 - **Relay #260 + #261 + #262 + #264 MERGED** — main `58920c10b4942d8058a01763de8a34c7530cf088`; #260 repairs measured address joins/accounting visibility; #261 separates source, production-named tag, published GitHub Release and target-host runtime evidence; #262 separates older-thread state from addressed-message/unanswered-request counts; #264 separates configured/resolved target identity from provider-reported model metadata, model self-report and cryptographic inference attestation; exact-head `campfire-ci` `36241319101` SUCCESS; target-machine read still establishes existing running tag v0.18.34 source but not loaded modules or `node_modules`; no Production activation by Framework.
 - **Relay #265 MERGED / SOURCE ADOPTED / PRODUCTION UNCHANGED** — reviewed head `9cc485b8e0efd9ab89da4ad7c0ee87cdd4e460b9` merged as `9408d795d0508815e097066b749800ddbd8b8290`; it prevents late COMSYNC failure from consuming COM108/Square rows as acknowledged. Hosted `campfire-ci` `36258366754` was SUCCESS and independent Claude Code Windows full discovery reported 114 PASS before adoption. Per-file atomic replacement is not a multi-file transaction or concurrent-writer guarantee. No install/restart/Production activation follows from the merge.
@@ -65,7 +65,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 #259 AUTHORITY REPAIR + #266 SOURCE CURRENTNESS MERGED** — maintained `framework/campfire-square-simple-v1@e191fa9f7c3ab2636b2e27664c1b47adf7a875e2`; #259 removes #258's unattended MODEL operation; #266 upstreams the machine-only supervisor transition ledger and replaces console-decoded raw `gh` fetches with Contents API JSON/base64 -> direct byte writes. The initial #266 patch failed Windows testing because it wrote literal backslash-r/backslash-n characters into JSONL; corrected head `597eeb117cb67f4aaa72951aca7d211909f152a1` passed Windows PowerShell `36312015925` and broad `campfire-ci` `36312016016`, with independent RUNNING/STALE/recovery reproduction. Repeated non-RUNNING rows are intentional; best-effort logging is not a durable audit guarantee; source merge does not establish post-reboot installed-runtime identity or health. COM #76 records the live `cc-relay` byline separately corrected by Mark; historical stamps remain historical.
+- **Simple-v1 #259 / #266 / #267 / #268 MAINTAINED SOURCE GREEN** — maintained `framework/campfire-square-simple-v1@6a07380bdf85804d7029ce5ea6ba279a14c5192b`; #266 upstreams supervisor event history + byte-safe installer fetch; #267 stops repeated parsing of a malformed historical GitHub ingress body by persisting refusal state keyed to comment ID + body SHA-256 and reopening on edit; #268 hardens the regression by counting actual parser calls. #267 Windows `36319114531`, broad `36319114533`, post-merge `36319248333` SUCCESS; #268 Windows `36319389245` and broad `36319389248` SUCCESS. Installed Simple-v1 was last observed healthy but still on pre-#266 `f4fa182…`, so `SOURCE_REPAIRED != INSTALLED_REPAIRED`; do not claim the live log flood fixed until a later install/runtime witness.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
@@ -75,6 +75,9 @@ Current receipts:
 - `coordination/build_ledger/PSFH_D085_PUBLICATION_20260925.md`
 - `coordination/build_ledger/PSFH_D086_PUBLICATION_20260925.md`
 - `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`
+- `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`
+- `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`
+- `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
 
 ## Active non-source design
 
@@ -134,40 +137,37 @@ COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME b
 
 ### Answerability teaching-card reliability probe
 
-The ten-case field sequence remains saturated and the card remains provisional / non-canon. Beam Notes #618/#619 is preserved as an invalid blind-test setup because both readers disclosed prior exposure.
+Status: **NO CLEAN TWO-READER RESULT / STOP BY DEFAULT**.
 
-Clean replacement #623/#624 uses the mechanically selected Office of the Public Guardian: Investigations Assistant record (seed `2026-09-27`; zero exact title/slug hits in COM/THR before dispatch). Reader A2 / Claude Code has frozen its source-only reading at #623 before reading B2. It chose the unflagged transaction-category route and found explicit investigator review/correction before progression, later decision-level complaint/review, and unresolved ambiguity over the relevant hardening point and exact affected layer. Reader B2 / #624 is still pending.
+- Beam Notes #618/#619 was invalid because both readers disclosed prior Beam Notes exposure.
+- Replacement #623/#624 used a mechanically selected OPG record with zero exact title/slug hits in COM/THR before dispatch.
+- A2 produced one frozen source-only read.
+- Shared COM #76 and hot surfaces then exposed A2 route/outcome detail before B2 froze; B2 correctly held rather than manufacture independence.
+- No A/B comparison is performed. No reliability, validation, promotion or demotion result follows.
+- Preserve `SHARED_COORDINATION_VISIBILITY != READER_INDEPENDENCE`, `ASSIGNMENT_LEVEL_BLINDING != APERTURE_LEVEL_BLINDING`, and `ONE_CLEAN_READER != RELIABILITY_RESULT`.
+- Future testing requires an outcome embargo from shared coordination until both freezes; do not immediately rerun by momentum.
+- Receipt: `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`.
 
-```text
-ONE CLEAN READER RETURN != RELIABILITY RESULT
-DO NOT COMPARE UNTIL B2 IS FROZEN
-COMPARE DISAGREEMENTS != SCORE AGREEMENT
-```
+### PSFH current Door — D089
 
-### PSFH current Door — D088
+D087 remains the last broad cold first-contact audit: **KEEP / NO GENERAL REDESIGN**.
 
-D078/D079's lighter opening, D080's unified Works grammar and D086's map-first Explore remain intact. D087 preserved historical node-source snapshots while correcting the separately labelled current TRACE/ME routes. A later real external return from `pengy-of-catbee` earned one narrow Selection repair: sender-side posts/messages are not by themselves evidence of external encounter.
+D088 remains the narrow reader-earned semantic correction: sender-side activity is not by itself evidence of external encounter.
 
-D088 is published as Site Preview `0.8.45`:
-- source PR #621; exact candidate `3b4a0bf0b07da258da2d7d6839a4b48dc6087cd2`;
-- maintained source after release sync `db2b64ab9d08e44a93cbb61c03cb2eaee28f5629`;
-- public `gh-pages@c1dec76b8c28e8bbc5d9ad406067261070e4c555`;
-- publisher `36313499829 / SUCCESS`, including exact-predecessor fail-closed check and direct custom-domain D088 byte verification;
-- release-sync CI `36313610925 / SUCCESS`;
-- substantive Selection Markdown/JSON blobs match source -> published exactly;
-- maintained input manifest and built public manifest are intentionally different because `scripts/build.mjs` enriches the public manifest with generated routes/hashes/provenance.
+D089 repairs only the late-found packet carrier mismatch:
+- source PR #629 candidate `fb15d513…`;
+- maintained source CI `36318460184 / SUCCESS`;
+- source merge `6230335250dfd7ee69f2638a0b2008355ece3a84`;
+- fail-closed publisher `36318774643 / SUCCESS` against exact D088 predecessor `c1dec76b…`;
+- current public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`;
+- Site Preview `0.8.46`;
+- all five Selection carriers verified through the custom domain;
+- release-sync PR #630 -> maintained source `d4611fca862d004fd4d5576935acd23f124820a6`;
+- post-merge maintained CI `36319148681 / SUCCESS`.
 
-Receipt: `coordination/build_ledger/PSFH_D088_ENCOUNTER_EVIDENCE_PUBLICATION_20260927.md`.
+Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`.
 
-```text
-SENDER_ACTIVITY != EXTERNAL_ENCOUNTER_EVIDENCE
-NO_RECEIVING_TRACE != NO_ENCOUNTER
-ONE_TRACE != POPULATION_REACH
-INPUT MANIFEST != BUILT PUBLIC MANIFEST
-PUBLISHED != VALIDATED
-```
-
-No new tracking, analytics, graph semantics, TRACE/ME/THR source or measured reader-benefit claim follows.
+`CARRIER_SYNC != SEMANTIC_CHANGE`; reader benefit remains unmeasured.
 
 ### PSFH Leave a Mark
 
