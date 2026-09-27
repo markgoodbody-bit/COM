@@ -14,7 +14,7 @@ Pin the exact reader-visible materials for the first temporal-empathy comparison
 |---|---|
 | `coordination/resources/TEMPORAL_EMPATHY_OWNER_ROUTING_MATRIX_20260927.md` | `8ae4ecdd1636c97de31e09a36184234e5a421377` |
 | `coordination/resources/TEMPORAL_EMPATHY_MINIMAL_TEACHING_CARD_v0_20260927.md` | `7793f42ad03d6d2a4f649391af6ef90262d58e9a` |
-| `coordination/TEMPORAL_EMPATHY_SIX_CASE_READER_PROBE_PREREG_v0_20260927.md` | `ced20a43edbc9903d5510f5cf4fb6a6d01ef9e72` |
+| `coordination/TEMPORAL_EMPATHY_SIX_CASE_READER_PROBE_PREREG_v0_20260927.md` | `9595445a0a24224ac054e4e95200c9bb9477d684` |
 | `coordination/temporal_empathy_probe/PACKET_01.md` | `776b3c527df6c616414e52f63890b2191e7ed777` |
 | `coordination/temporal_empathy_probe/PACKET_02.md` | `ee804a06ddceddd54408a36f66eef388fcd91349` |
 | `coordination/temporal_empathy_probe/PACKET_03.md` | `3565a5f6e70be3c8f354440a4b6668e43b2d8820` |
