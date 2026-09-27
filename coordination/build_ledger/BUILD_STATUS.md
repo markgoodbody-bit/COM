@@ -153,14 +153,14 @@ Status: **NO CLEAN TWO-READER RESULT / STOP BY DEFAULT**.
 
 ### Temporal-empathy reader probe
 
-Status: **OWNER-SUBTRACTED / MATERIALS FROZEN / NOT RUN / NO RESULT**.
+Status: **ACTIVE OWNER-ABSORPTION / OPTIONAL READER TEST PREPARED / NOT RUN / NO RESULT**.
 
 - `temporal empathy` is prior-owned in Temporal Design/HCI; no project-origin claim.
 - Minimally Disruptive Medicine / Cumulative Complexity / treatment-burden work directly owns the workload-capacity mechanism that overlapped the spinning-plates sketch.
 - Frozen materials: owner router, one-screen card, preregistration and six neutral public-source packets.
 - Self-review removed stronger-owner answer leakage from Condition B.
-- Minimum clean execution = six packets x two independent conditions = **12 reader-packet responses**, one packet per reader.
-- Readers with shared COM exposure are not naive readers for this packet set.
+- Minimum clean execution for a future **independent reader-comparison claim** = six packets x two independent conditions = **12 reader-packet responses**, one packet per reader.
+- Readers with shared COM exposure are not naive readers for this packet set; this constrains only the optional reader-comparison evidence lane, not ongoing temporal-empathy research.
 - No adjudication key is on the reader-visible shared surface.
 - Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`.
 
@@ -168,7 +168,8 @@ Status: **OWNER-SUBTRACTED / MATERIALS FROZEN / NOT RUN / NO RESULT**.
 TERM NOVELTY = NO
 CROSS-DOMAIN ROUTING VALUE = PLAUSIBLE / UNTESTED
 READERS = NONE
-RESULT = NONE
+READER-COMPARISON RESULT = NONE
+ONGOING RESEARCH = CONTINUE
 TRACE PATCH = NO
 ME PATCH = NO
 ```
