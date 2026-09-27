@@ -56,6 +56,20 @@ test('Explore keeps historical source basis separate from current repository rou
  assert.equal(meRepo.human_preview_source_revision,'44f7efb59806242fd26c572cbfbaaeaefaea2058');
 });
 
+test('selection separates sender activity from evidence of external encounter',async()=>{
+ const md=await readFile('out/explore/nodes/selection.md','utf8');
+ const node=JSON.parse(await readFile('out/explore/nodes/selection.json','utf8'));
+ const rendered=await readFile('out/explore/nodes/selection.html','utf8');
+ const required=/sender-side activity, not by itself an external encounter/;
+ const silence=/silence does not prove non-reading/;
+ const bounded=/one trace does not establish reach beyond that encounter/;
+ for(const carrier of [md,node.challenge,rendered]){
+   assert.match(carrier,required);
+   assert.match(carrier,silence);
+   assert.match(carrier,bounded);
+ }
+});
+
 test('root metadata names only the first-party canonical origin',()=>{
  assert.match(html,/<link rel="canonical" href="https:\/\/pleasestartfromhere.com\/"/);
  for(const field of ['title','description','url','type'])assert.equal((html.match(new RegExp('property="og:'+field+'"','g'))||[]).length,1);
