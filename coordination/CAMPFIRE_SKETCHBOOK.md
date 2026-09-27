@@ -3918,3 +3918,448 @@ Current disposition:
 
 Coordination record: COM #606.
 
+## 27 September 2026 — AI optimism, capability without claim on value, and the never-hired worker
+
+Status: **CAMPFIRE / ARGUMENT QUARRY / SOURCE TRANSCRIPT PROVIDED BY MARK / EMPIRICAL CLAIMS NOT INDEPENDENTLY VERIFIED / NO PATCH**
+
+Source:
+- Jubilee, *AI Realist vs 20 AI Optimists (ft. Andrew Yang) | Surrounded*
+- https://www.youtube.com/watch?v=020ZvO0FbMM
+- working basis here: transcript supplied by Mark on 27 September 2026.
+
+This note does **not** adopt the political programme, economic forecasts, numerical claims or causal attributions made in the debate.
+
+The useful object is the structure repeatedly exposed by disagreement between:
+- easier access to AI-enabled capability;
+- concentration of ownership / data / infrastructure / market value;
+- labour substitution and non-hiring;
+- possible creation of new work;
+- finite attention and uneven transition capacity;
+- human value that market prices can fail to represent.
+
+The transcript is used as a quarry for distinctions and pressure cases, not as validated empirical evidence.
+
+### 1. Capability can broaden while value control concentrates
+
+Several participants argue that AI lowers the cost of coding, legal help, tutoring, business formation, research assistance and other expert capability.
+
+The counter-pressure is that broader access to capability does not imply broader ownership, bargaining power or claim on the value produced.
+
+Candidate distinctions:
+
+```text
+CAPABILITY DEMOCRATIZATION
+!=
+VALUE DEMOCRATIZATION
+
+CAPABILITY ↑
+!=
+BARGAINING POWER ↑
+
+PRODUCTIVITY ↑
+!=
+BURDEN ↓
+
+NEW POSSIBILITY EXISTS
+!=
+AFFECTED ENTITY CAN REACH IT
+```
+
+A stronger middle-out question:
+
+> If an entity's capability rises while its claim on the resulting value falls, what happened to its reachable future?
+
+This can travel beyond employment into education, disability technology, care, institutional digitisation and other systems where capability and allocation are separate.
+
+### 2. The never-hired worker / never-built door
+
+A particularly strong pressure case appears in the claim that the easiest worker to remove is the worker never hired.
+
+A firm may:
+- cancel a junior role before advertising it;
+- stop replacing attrition;
+- reduce entry-level intake;
+- use AI to absorb work that would previously have created a new role.
+
+No employee is fired.
+No rejection necessarily occurs.
+No appealable event may exist.
+The missing future appears only as an absent route.
+
+```text
+JOB REMOVED
+!=
+HIRING PATH NEVER CREATED
+
+OBSERVED DISPLACEMENT
+!=
+FORECLOSED ENTRY
+
+NO REJECTION
+!=
+NO LOST OPPORTUNITY
+```
+
+This is a strong real-world pressure case for Mechanical Ethics' existing unfinished **never-built door** edge.
+
+The affected entity may be:
+- a graduate;
+- a career-switcher;
+- an apprentice;
+- a worker who would previously have moved into the role;
+- a future team member who never becomes legible to the institution.
+
+There may be no named harmed person at decision time, yet a class of reachable futures can still narrow.
+
+### 3. Aperture failure: unemployment can miss displacement
+
+The debate repeatedly distinguishes headline unemployment from:
+- underemployment;
+- labour-force exit;
+- occupational downgrading;
+- suppressed hiring;
+- reduced headcount inside surviving roles.
+
+Whether the specific statistics in the debate are correct remains to be checked independently.
+
+The structural lesson does not depend on them:
+
+```text
+MEASURED UNEMPLOYMENT
+!=
+LABOUR DISPLACEMENT
+
+EMPLOYED
+!=
+USING PRIOR CAPABILITY
+
+NO LAYOFF RECORDED
+!=
+NO LABOUR EFFECT
+
+VISIBLE EVENT COUNT
+!=
+FULL TRANSITION BURDEN
+```
+
+An aperture can be technically accurate while omitting the state transition that matters.
+
+### 4. AI presence and AI causation must stay separate
+
+The transcript explicitly raises "AI washing": a firm can attribute ordinary restructuring, over-hiring correction or management failure to AI.
+
+The inverse error is also possible: because AI is present in a changed organisation, observers can over-attribute the change to AI.
+
+Candidate TRACE discipline:
+
+```text
+AI PRESENT
+!=
+AI CAUSED
+
+AI CITED
+!=
+AI CAUSED
+
+POST-AI CHANGE
+!=
+AI-ATTRIBUTABLE CHANGE
+```
+
+This is likely to matter because actors can have incentives both to exaggerate and to minimise AI's causal role.
+
+### 5. Task automation, job automation and headcount are different layers
+
+One optimistic argument says that a job survives if some human-only task remains.
+
+The counter is that a firm does not need to automate 100% of a role to reduce headcount sharply.
+
+```text
+TASK AUTOMATED
+!=
+JOB AUTOMATED
+
+JOB NOT FULLY AUTOMATED
+!=
+HEADCOUNT UNCHANGED
+
+ROLE SURVIVES
+!=
+NUMBER OF PEOPLE IN ROLE SURVIVES
+```
+
+A better aperture may be:
+
+```text
+TASK MIX
+-> REQUIRED HUMAN CAPABILITY
+-> REQUIRED HUMAN CAPACITY
+-> HEADCOUNT / ENTRY ROUTES / BURDEN
+```
+
+Asking only "can AI do this occupation?" can miss the consequential scale.
+
+### 6. Creation abundance can coexist with attention scarcity
+
+AI can make it easier for many people to produce:
+- apps;
+- writing;
+- media;
+- businesses;
+- designs;
+- research artefacts.
+
+But human attention remains bounded.
+
+The transcript reaches this through discussion of app discovery, creators and finite paid subscriptions.
+
+```text
+CREATION COST ↓
+!=
+DISCOVERY COST ↓
+
+MORE PRODUCERS
+!=
+MORE ATTENTION
+
+CAPABILITY ABUNDANCE
++ ATTENTION SCARCITY
+CAN COEXIST
+```
+
+Possible consequence:
+
+A technology can democratize production while leaving distribution/discovery winner-take-most or even making that bottleneck sharper.
+
+This may matter to PSFH / THR as well:
+- making high-quality material easier to create does not make it easier to encounter;
+- preservation / publication / production are different from discovery / attention / uptake.
+
+### 7. Aggregate gain does not establish individual transition
+
+Arguments about new jobs, rising sector demand or productivity growth can all be true at aggregate level while particular people fail to cross the transition.
+
+```text
+TOTAL DEMAND ↑
+!=
+INCUMBENT WORKERS BENEFIT
+
+SECTOR GROWS
+!=
+AFFECTED ENTITY RECOVERS
+
+AGGREGATE GAIN
+!=
+INDIVIDUAL REPAIR
+```
+
+The transition itself has clocks and capabilities:
+
+```text
+CURRENT ROLE / INCOME DETERIORATES
+-> RENT / DEBT / FAMILY / HEALTH BURDEN CONTINUES
+-> TIME + MONEY + ACCESS + CONFIDENCE NEEDED TO RETRAIN / MOVE
+-> NEW OPPORTUNITY BECOMES USABLE
+```
+
+Candidate timing relation:
+
+```text
+T_acquire_transition_capability
+<
+T_income / housing / health / social-position_hardens
+```
+
+This is another domain witness for:
+
+```text
+SYSTEM PATHWAY EXISTS
+!=
+AFFECTED ENTITY CAN TRANSITION
+```
+
+### 8. Market value and human value are separate variables
+
+The debate repeatedly returns to teaching, care, parenting, health, community, creativity and human relationship as forms of value that may be weakly priced or unpriced.
+
+Candidate distinctions:
+
+```text
+MARKET VALUE
+!=
+HUMAN VALUE
+
+UNPAID
+!=
+VALUELESS
+
+LOW MARKET PRICE
+!=
+LOW HUMAN CONSEQUENCE
+```
+
+AI could therefore produce a state in which:
+
+```text
+HUMAN CAPABILITY ↑
+TOTAL PRODUCTIVE CAPACITY ↑
+MATERIAL ABUNDANCE ↑
+
+WHILE
+
+LABOUR SCARCITY VALUE ↓
+INDIVIDUAL BARGAINING POWER ↓
+INCOME SECURITY ↓
+SOCIAL ROLE STABILITY ↓
+```
+
+Those quantities do not have to move together.
+
+TRACE relevance is anti-collapse rather than a new primitive.
+
+### 9. Positive construction: what future does automation create?
+
+A weaker question is:
+
+> What jobs will AI remove?
+
+A stronger positive-construction question is:
+
+> What worthwhile futures does automation make reachable, and for whom are they actually reachable?
+
+The debate's better moments converge on:
+- fewer unwanted tasks;
+- more human relationship / care;
+- scientific progress;
+- entrepreneurship;
+- health / creativity / learning;
+- purpose outside conventional employment.
+
+But possibility is not enough.
+
+```text
+POSSIBLE GOOD FUTURE
+!=
+ACCESSIBLE GOOD FUTURE
+
+SYSTEM PRODUCTIVITY GAIN
+!=
+PERSONAL CAPABILITY TO TRANSITION
+```
+
+This keeps positive construction attached to routes, burdens, clocks and distribution.
+
+### 10. Agentic optimism
+
+The final realist/optimist exchange exposes a useful distinction.
+
+Optimism need not mean predicting that outcomes will be good.
+Realism need not mean paralysis.
+
+Candidate interpretation:
+
+```text
+OPTIMISM
+!=
+POSITIVE FORECAST
+
+REALISM
+!=
+NEGATIVE FORECAST
+
+AGENTIC OPTIMISM
+=
+FUTURE NOT FULLY HARDENED
++
+REACHABLE INTERVENTION STILL EXISTS
+```
+
+Related distinctions:
+
+```text
+FALSIFICATION
+!=
+NIHILISM
+
+HOPE
+!=
+DENIAL OF HARM
+
+WARNING
+!=
+REJECTION OF POSSIBILITY
+```
+
+This is compatible with supported prospect / correction-capacity work but does not earn source promotion.
+
+### 11. Local optimisation can consume the conditions it depends on
+
+A final systems seam appears in discussion of concentration, instability, distrust and "bunker" outcomes.
+
+Candidate loop:
+
+```text
+LOCAL PRODUCTIVITY / CAPITAL OPTIMISATION
+-> CONCENTRATED GAIN
+-> EXTERNALISED BURDEN
+-> TRUST / STABILITY LOSS
+-> SECURITY / POLITICAL / SOCIAL COST
+-> CONDITIONS SUPPORTING THE ORIGINAL OPTIMUM DEGRADE
+```
+
+This is not a moral verdict about particular firms.
+
+It is a generic systems question:
+
+> Can a local optimum destroy environmental or social conditions on which its own continuation depends?
+
+That is a stronger object than simply asking winners to behave generously.
+
+## Three especially portable Campfire objects
+
+### A. THE NEVER-HIRED WORKER
+
+A future path can disappear without producing a refusal event.
+
+### B. CAPABILITY WITHOUT CLAIM ON VALUE
+
+An entity can become more capable while its bargaining power, resource access or share of resulting value falls.
+
+### C. AGENTIC OPTIMISM
+
+Optimism as preservation and use of reachable intervention, not as prediction that everything will be fine.
+
+## Ceilings
+
+Do not infer from this debate:
+- actual US unemployment / underemployment / labour-force-participation values;
+- causal AI displacement rates;
+- future job-loss or job-creation totals;
+- the scale or speed of AI labour substitution;
+- the value of any UBI / tax / regulatory policy;
+- that specific firms caused specific layoffs because of AI;
+- that AI necessarily increases or decreases inequality;
+- that the debate validates TRACE, Mechanical Ethics, PSFH or THR.
+
+The video's numerical and causal claims require stronger empirical owners before use as factual evidence.
+
+The useful result here is structural pressure only.
+
+## Project consequence
+
+No TRACE or Mechanical Ethics patch is earned.
+
+The strongest current route is:
+
+```text
+AI-LABOUR DEBATE
+-> NEVER-BUILT DOOR PRESSURE
+-> TRANSITION-CAPABILITY CLOCK
+-> CAPABILITY / VALUE / POWER SEPARATION
+-> KEEP IN CAMPFIRE
+```
+
+Current disposition:
+
+**USEFUL STRUCTURAL QUARRY / NEVER-BUILT-DOOR PRESSURE / POSITIVE-CONSTRUCTION + TRANSITION PRESSURE / NO PATCH.**
+
