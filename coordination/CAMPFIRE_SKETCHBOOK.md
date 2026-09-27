@@ -5038,3 +5038,53 @@ Current disposition:
 
 **REAL AI-CONTROL WITNESS / OWNER-REPORTED CONFORMANCE GAP / EXISTING TRACE+ME LANGUAGE SURVIVES / NO PATCH.**
 
+## 27 September 2026 — Citizens Advice digital walls: routes can exist while switching fails
+
+Status: **FRESH WORLD / CROSS-SECTOR ACCESS WITNESS / STRONG OWNER / NO PATCH**
+
+Citizens Advice's 22 September 2026 *Behind digital walls* report identifies:
+- two-tier support;
+- **channel lock**;
+- poor digital design
+
+as recurring mechanisms through which digital-first essential services can reduce access.
+
+The important pressure is not "digital bad" or "chatbots bad".
+
+It is:
+
+~~~text
+ROUTE A EXISTS
++
+ROUTE B EXISTS
+!=
+SWITCH A -> B IS USABLE
+
+HUMAN SUPPORT EXISTS
+!=
+HUMAN SUPPORT REACHABLE IN TIME
+~~~
+
+The owner explicitly calls for:
+- a right to talk to a human when needed;
+- a right to move between online and offline support;
+- decent digital services.
+
+Stronger-owner subtraction matters:
+FCA Consumer Duty / support guidance and Ofgem Contact Ease guidance already own substantial effective-support / channel-access obligations in their domains.
+
+So this is not an unoccupied project theory.
+
+The useful project question is narrower:
+
+> when the current service channel stops being usable for the affected situation, is there a reachable handoff to an appropriate channel before consequence hardens?
+
+Potential context/state continuity across that handoff remains a design question, not a direct owner finding on this surface.
+
+Field note:
+`field/CITIZENS_ADVICE_DIGITAL_CHANNEL_LOCK_20260927.md`
+
+Current disposition:
+
+**CHANNEL-LOCK OWNER TERM ABSORBED / HANDOFF SALIENCE USEFUL / TRACE+ME REPRESENTATION SURVIVES / NO PATCH / NO OUTREACH.**
+
