@@ -25,7 +25,7 @@ Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Git blob:
-`e7a85622b03dd2d076211236cf84dcb1721106a0`
+`7489833a1a8d3a6f5718ad069fc294f4b67f60be`
 
 Current whitespace-delimited proposal recount:
 **1,485 words**
