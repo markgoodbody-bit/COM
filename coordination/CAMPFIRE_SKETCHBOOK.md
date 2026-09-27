@@ -5414,3 +5414,61 @@ Current disposition:
 
 **REAL PRESSURE / EMPIRICAL HIRING-MARGIN SUPPORT / CAUSAL CLAIM NARROWED / TRACE+ME REPRESENTATION SURVIVES / NO PATCH.**
 
+## 28 September 2026 — the queue can look smaller because the route failed upstream
+
+Status: **FRESH WORLD / PRE-QUEUE VISIBILITY PRESSURE / STRONG OWNERS / NO PATCH**
+
+The current never-built-door quarry survived one structurally different transfer, but the transfer also cut the novelty claim harder.
+
+NHS referral evidence gives a clean example of an observation aperture starting after a consequential gate.
+
+Healthwatch England's 2025 referral work found people whose referrals were delayed, lost, rejected or not sent and who therefore had not joined the specialist waiting list. A June 2026 Parliamentary answer separately says the Department does not centrally hold the proportion of referrals rejected on administrative grounds or due to capacity constraints and had not assessed the effect of rejected referrals on reported waiting-list figures.
+
+NHS/e-RS rules already own substantial routing semantics, including referral worklists, rejection/return states, redirection, acceptance rules and RTT clock starts.
+
+So the useful residue is not "the NHS forgot referrals".
+
+It is:
+
+~~~text
+NOT ON A DOWNSTREAM QUEUE
+!=
+NO UNRESOLVED NEED
+
+DOWNSTREAM THROUGHPUT
+CAN MISS
+UPSTREAM NON-ENTRY / RETURN / SUPPRESSED STATE
+~~~
+
+The stronger-owner map then pushed the metaphor outward:
+
+- administrative burden / non-take-up already owns people deterred before programme entry;
+- capability theory already owns formal option versus substantive opportunity;
+- youth-transition work owns opportunity structures;
+- health-services research owns unmet need;
+- transport owns latent/suppressed demand;
+- digital-access work owns channel lock.
+
+Therefore:
+
+~~~text
+NEVER-BUILT DOOR = USEFUL CAMPFIRE METAPHOR
+!=
+NOVEL THEORY
+
+CROSS-DOMAIN VALUE, IF ANY
+=
+NOTICE WHERE THE MEASUREMENT APERTURE STARTS
+AND WHO DISAPPEARS BEFORE IT
+~~~
+
+Field note:
+field/NHS_REFERRAL_PREQUEUE_VISIBILITY_20260928.md
+
+Owner map:
+coordination/resources/ROUTE_ABSENCE_STRONG_OWNER_MAP_20260928.md
+
+Current disposition:
+
+**KEEP AS PROVISIONAL APERTURE CHECK / STRONG OWNER FIRST / NO TRACE-ME PATCH / NO CANON PROMOTION.**
+

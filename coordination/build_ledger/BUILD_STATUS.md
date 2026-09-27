@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh world witnesses incl early-career hiring never-built-door pressure / external gates quiet**
+Updated: **28 September 2026 — fresh NHS pre-queue visibility transfer / route-absence owner subtraction / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -88,6 +88,7 @@ Current receipts:
 - `field/CROSS_SECTOR_TELL_ONCE_SUPPORT_STATE_20260927.md` — current cross-sector repeated-disclosure pressure. Subsequent owner subtraction finds portable support/profile state already strongly owned by Personal Communication Passports, NHS Accessible Information Standard, NICE and portable-preference work. `SUPPORT_STATE_HANDOFF_CONTRACT_v0_20260927.md` is now narrowed to a route/action handoff receipt referencing owner-defined minimum support adjustments; `PROFILE CREATED != PROFILE USED`, `HANDOFF RECEIPT != PORTABLE PERSON PROFILE`. Owner map `coordination/resources/SUPPORT_STATE_HANDOFF_STRONG_OWNER_MAP_20260927.md`; receipt `coordination/build_ledger/SUPPORT_STATE_HANDOFF_OWNER_SUBTRACTION_20260927.md`. **NO THR/TRACE/ME PATCH / NO GENERAL PROFILE BUILD.**
 - Relay self-mirror receipt `coordination/build_ledger/RELAY_MONITOR_BRAKE_MIRROR_20260927.md` — report-only judge allegations remain explicitly observational; real dispatch/profile gates remain separate fail-closed mechanisms. OpenAI DNS witness does not earn an enforcement rule. **NO RELAY/SIMPLE-v1 PATCH / PRODUCTION UNCHANGED.**
 - `field/AI_EARLY_CAREER_HIRING_NEVER_BUILT_DOOR_20260927.md` — current labour-market pressure for the existing never-built-door edge: reduced hiring can change entry routes without a layoff/refusal event. Stanford owner evidence is bounded: descriptive young-worker AI-exposure gap is not a causal AI estimate; 41-country junior-share decline is driven mainly by senior growth, not necessarily junior employment loss. **NO TRACE/ME PATCH.**
+- `field/NHS_REFERRAL_PREQUEUE_VISIBILITY_20260928.md` + `coordination/resources/ROUTE_ABSENCE_STRONG_OWNER_MAP_20260928.md` — current health transfer + owner subtraction: unresolved need/referral state can sit before downstream waiting-list entry, but health access, administrative burden/non-take-up, capability/opportunity, and latent-demand fields already own the domain mechanisms. Surviving project value is only an observation-boundary check: `DOWNSTREAM THROUGHPUT CAN MISS UPSTREAM NON-ENTRY`. **TERM NOVELTY CUT / NO TRACE-ME PATCH / NO CANON PROMOTION.**
 
 ## Active non-source design
 
