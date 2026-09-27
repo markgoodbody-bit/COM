@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #268 merged / answerability reliability probe closed without clean result**
+Updated: **27 September 2026 — D089 live / Simple-v1 #269 merged / PoliceAI field witness / external gates quiet**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -55,6 +55,7 @@ Do not open work because a project instrument has unused capacity.
 Current world sequence has recently returned:
 - Live World software repair from real cyber-evaluation pressure;
 - PAC compensation/redress field witness with **ME/TRACE NO PATCH**;
+- PoliceAI assurance/deployment-authority witness: national testing/advice is separate from Chief Officer deployment authority; the published Parliamentary answer to an accuracy-decline withdrawal question names scrutiny/backstop powers but no tool-specific mandatory withdrawal trigger on that surface; **STRONGER OWNERS FOUND / TRACE+ME NO PATCH**; field note `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`;
 - THR candidate owner-subtractions;
 - multiple strong-owner STOPs.
 
@@ -154,16 +155,17 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #268
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #269
 
 - Relay main remains `9408d795d0508815e097066b749800ddbd8b8290`; #265 deferred-acknowledgement repair is merged there. Production activation remains separate.
-- Simple-v1 maintained source is now `framework/campfire-square-simple-v1@6a07380bdf85804d7029ce5ea6ba279a14c5192b`.
-- #266 upstreamed the supervisor transition ledger and byte-safe installer fetch. Corrected Windows PowerShell run `36312015925` and broad `campfire-ci` `36312016016` SUCCESS.
-- #267 repairs a field-observed diagnostic-retention failure: malformed historical GitHub comment `5380939579` was being reparsed every poll and accounted for 4,028 / 5,252 retained event-4100 rows. The worker now persists refusal state keyed by comment ID + body SHA-256, skips identical bad bytes before parsing across restarts, and automatically reopens parsing if the comment body changes.
-- #267 validation: Windows PowerShell `36319114531` SUCCESS; broad `campfire-ci` `36319114533` SUCCESS; post-merge Simple-v1 `36319248333` SUCCESS.
-- Independent hostile review found no blocking defect but identified a false-green risk in row-count-only testing. #268 adds direct parser-call counts; Windows `36319389245` and broad `36319389248` SUCCESS; merge `6a07380b…`.
-- Installed Simple-v1 runtime was freshly observed healthy but still on the pre-#266 `f4fa182…` lineage. Its local supervisor already has the event ledger, but the installed worker does **not** yet contain #267/#268. Therefore `SOURCE_REPAIRED != INSTALLED_REPAIRED`; do not claim the live log flood fixed until an install/runtime witness establishes it.
-- Historical malformed evidence was preserved; no comment was edited/hidden to silence the parser.
+- Simple-v1 maintained source is now `framework/campfire-square-simple-v1@05137dc05812111b99ec149bc291fb70350dabdd`.
+- #266 upstreamed the supervisor transition ledger and byte-safe installer fetch. Corrected Windows PowerShell `36312015925` and broad `campfire-ci` `36312016016` SUCCESS.
+- #267 repairs the field-observed malformed-ingress log flood with refusal state keyed by comment ID + body SHA-256; #268 pins actual parser-call suppression.
+- Independent review then found a new availability edge: refusal-ledger read/write I/O failure could abort the whole citizen ingress pass. #269 makes **only this diagnostic persistence** best-effort: unreadable ledger -> empty cache; failed append -> in-memory refusal + continue; degraded state is visible through worker heartbeat.
+- #269's first three Windows attempts failed in the test harness and are preserved: optional-property StrictMode access, missing extracted heartbeat dependency, then missing real worker heartbeat initialisation. Final head `302540eb22def9007176361a1c51da2ce49efb08` passed Windows `36320549273` and broad `36320549270`; merge `05137dc0…`; post-merge Simple-v1 `36320632175` SUCCESS.
+- Speech/actuation, request-dedupe, receipt and authority state remain fail-closed; only diagnostic refusal persistence is best-effort.
+- Installed Simple-v1 was last observed healthy but still on the pre-#266 `f4fa182…` lineage. Its local supervisor already has the event ledger, but its worker does **not** yet contain #267/#268/#269. `SOURCE_REPAIRED != INSTALLED_REPAIRED`; the live log flood is not claimed fixed.
+- Historical malformed evidence remains preserved.
 - Receipt: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`.
 
 ### Answerability-route field sequence — ten cases / saturated / extract teaching card

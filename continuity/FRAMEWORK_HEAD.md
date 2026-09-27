@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #268 merged / answerability reliability probe closed without clean result**
+Updated: **27 September 2026 — D089 live / Simple-v1 #269 merged / PoliceAI field witness / external gates quiet**
 Rule: later live source and direct Mark direction win.
 Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged. Provisional extraction: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — **NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED**. One non-ATRS transfer against the Relay #258/#259 MODEL-authority repair is preserved at `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md`: the card separated source capability, live state and hardened history without a new dimension. **ONE TRANSFER != CROSS-DOMAIN VALIDATION.**
 
@@ -95,6 +95,7 @@ Formal baselines:
 26 September outward work is producing owner-subtraction, bounded repairs and predeclared empirical tests rather than framework churn:
 
 - **model/runtime proof:** RFC 9334 RATS plus the current AIR draft are the stronger owners for attestation. The project retained the distinction `CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY`; Relay #264 repaired only the local evidence wording. No parallel attestation protocol, THR field or TRACE/ME primitive was earned.
+- **PoliceAI assurance / withdrawal authority:** Home Office policy makes national testing/benchmarking/advice distinct from Chief Officer deployment authority; Chief Officers remain accountable through the current PCC structure, with registry scrutiny and Police Act backstop powers described publicly. A 10 September Parliamentary answer to an explicit post-deployment accuracy-decline withdrawal question does not, on that answer surface, state a tool-specific mandatory withdrawal threshold or correction clock. This does **not** establish that no such mechanism exists elsewhere. Stronger policing/legal owners remain primary; existing answerability distinctions survive; TRACE PATCH = NO, ME PATCH = NO, THR RECORD = NO. Field note: `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`.
 - **CPS Beam Notes / ATRS:** the current public record contains an unresolved Azure summarisation-route tension while CPS digital-material guidance already owns important audit-trail/provenance requirements. Preserved as COM #498/#499 field witness: `PUBLIC_RECORD_CONTRADICTION != OPERATIONAL_FAILURE`; no compliance conclusion, contact or project patch.
 - **answerability reliability probe:** CLOSED WITHOUT CLEAN TWO-READER RESULT. Beam Notes #618/#619 was contaminated by prior exposure. Replacement #623/#624 was clean at dispatch and produced one frozen A2 source-only read, but shared COM #76 / hot surfaces exposed A2 route/outcome detail before B2 froze; B2 correctly held. No A/B comparison or reliability/validation result exists. Preserve `SHARED_COORDINATION_VISIBILITY != READER_INDEPENDENCE`; future test requires an outcome embargo and should not be rerun by momentum. Receipt: `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`.
 - **answerability-route field sequence:** ten structurally distinct cases now add GOV.UK site search to the prior nine. Data First sharpened route chaining; Access Assure exposed `REVIEWER != ACTOR != AUTHORITY HOLDER != CAPABILITY HOLDER`; DSIT Consult exposed `AFFECTED != WITNESS != INITIATOR`; DWP added the epistemic scar `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed `REVIEWER = FUNCTIONAL EVALUATOR AT THIS LAYER`, which may be the affected user locally and a product/governance team at system resolution. Current preferred teaching compression remains affected layer -> **witness / observability** -> initiator -> reviewer -> **who can actually act / under what authority** -> review resolution -> changeable consequence -> correction clock. Route chaining/branching are use instructions. Preserve: **WITNESS ACCESS != GROUND TRUTH**, **LOCAL USER ADAPTATION != SYSTEM CORRECTION**, **TEACHING SURFACE REPAIRED != NEW TRACE/ME PRIMITIVE**, **TEN CASES != ATRS POPULATION RESULT**. This case sequence is now saturated; stop nearby-case accumulation.
@@ -264,24 +265,29 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #268
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #269
 
 - Relay main remains `9408d795d0508815e097066b749800ddbd8b8290`; #265 deferred acknowledgements are merged there. Production activation remains separate.
-- Simple-v1 maintained source is `framework/campfire-square-simple-v1@6a07380bdf85804d7029ce5ea6ba279a14c5192b`.
-- #266 upstreamed the supervisor transition ledger and byte-safe installer fetch; corrected Windows `36312015925` and broad `36312016016` SUCCESS.
-- #267 repairs the field-observed malformed-ingress log flood using local append-only refusal state keyed by GitHub comment ID + body SHA-256. Identical bad bytes skip before parsing across polls/restarts; edited bodies reopen parsing. Windows `36319114531`, broad `36319114533`, post-merge `36319248333` SUCCESS; merge `20b37128…`.
-- Independent hostile review found no blocking defect and identified one regression false-green risk. #268 pins actual parser-call counts; Windows `36319389245` and broad `36319389248` SUCCESS; merge `6a07380b…`.
-- Installed Simple-v1 was freshly observed RUNNING but still on pre-#266 `f4fa182…`. Its local supervisor already has the event ledger, but its worker does not yet contain #267/#268. `SOURCE_REPAIRED != INSTALLED_REPAIRED`.
+- Simple-v1 maintained source is `framework/campfire-square-simple-v1@05137dc05812111b99ec149bc291fb70350dabdd`.
+- #266 upstreamed the supervisor transition ledger and byte-safe installer fetch.
+- #267 suppresses repeated parsing of an immutable malformed historical GitHub ingress body using refusal state keyed by comment ID + body SHA-256; #268 pins actual parser-call suppression.
+- Independent hostile review found refusal-ledger I/O could itself become an availability dependency. #269 makes **only the diagnostic refusal ledger** best-effort: read failure -> empty cache; append failure -> in-memory refusal + continue; both emit degraded heartbeat. Speech/actuation, dedupe, receipt and authority state remain fail-closed.
+- #269 final head `302540eb22def9007176361a1c51da2ce49efb08`; Windows `36320549273`, broad `36320549270`, post-merge Simple-v1 `36320632175` all SUCCESS. Earlier Windows harness failures remain visible in history rather than being flattened.
+- Installed Simple-v1 was last observed RUNNING but still on pre-#266 `f4fa182…`; its worker therefore does not yet contain #267/#268/#269. `SOURCE_REPAIRED != INSTALLED_REPAIRED`.
 - Receipt: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`.
 
-### Relay diagnostic-retention repair — source merged / installed runtime pending
+### Relay diagnostic-retention repair — source merged through #269 / installed runtime pending
 
-The malformed historical #177 comment `5380939579` remains preserved. Source no longer needs to parse identical bad bytes every poll: #267 persists a refusal keyed to comment ID + body hash, and #268 verifies actual parser-call suppression rather than only ledger-row deduplication.
+The malformed historical #177 comment `5380939579` remains preserved.
 
-At the field observation, 4,028 / 5,252 retained event-4100 rows were the same parse error and diagnostics were aging out in under a day.
+Maintained source now handles both sides of the field failure:
+- #267/#268: identical malformed bytes do not get reparsed indefinitely, including across worker restart, and edited bytes reopen parsing;
+- #269: the diagnostic refusal file cannot take the whole citizen ingress pass offline if temporarily unreadable/unwritable.
+
+At the original observation, 4,028 / 5,252 retained event-4100 rows were the same parse error and useful diagnostics were aging out in under a day.
 
 Current boundary:
-- maintained source repaired through `6a07380b…`;
+- maintained source repaired through `05137dc0…`;
 - installed worker last observed pre-#266 `f4fa182…`;
 - no install/restart has been performed by Framework;
 - therefore the live host log flood is **not yet claimed fixed**.

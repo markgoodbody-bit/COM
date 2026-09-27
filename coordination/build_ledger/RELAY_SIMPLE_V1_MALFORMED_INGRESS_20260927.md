@@ -2,7 +2,7 @@
 
 Date: 27 September 2026
 
-Status: **MAINTAINED SOURCE REPAIRED / TESTS GREEN / INSTALLED RUNTIME NOT YET UPDATED**
+Status: **MAINTAINED SOURCE REPAIRED THROUGH #269 / TESTS GREEN / INSTALLED RUNTIME NOT YET UPDATED**
 
 ## Field defect
 
@@ -58,6 +58,36 @@ Pre-merge:
 
 Merge: 6a07380bdf85804d7029ce5ea6ba279a14c5192b
 
+## Availability hardening — PR #269
+
+Two independent hostile reviews found a new edge introduced by #267: because PowerShell runs with Stop semantics, a temporary read or append failure on the diagnostic refusal ledger could take the entire GitHub-ingress pass for that citizen to ERROR and prevent later valid comments from being processed.
+
+That ledger owns no authority, dedupe, receipt or actuation state, so #269 makes only this diagnostic persistence best-effort:
+
+- unreadable refusal ledger -> empty refusal cache + degraded heartbeat;
+- failed refusal append -> retain the in-memory refusal for the current pass + degraded heartbeat + continue;
+- speech/actuation, request dedupe, receipt and authority ledgers remain unchanged/fail-closed.
+
+The Windows regression forces both refusal-state read and write I/O failure and verifies that a following valid COMMENT reaches ordinary Test-CSSpeechRequest validation.
+
+The first three Windows attempts failed in the test harness, and are preserved rather than flattened:
+- 28e0bad3…: assertion dereferenced optional reason under StrictMode;
+- f31c0b6e…: extracted helpers omitted Set-CSWorkerHeartbeat;
+- 98c82ec4…: extracted harness omitted the real worker's WorkerHeartbeatPath initialisation.
+
+Final reviewed head:
+302540eb22def9007176361a1c51da2ce49efb08
+
+Pre-merge:
+- Windows PowerShell 36320549273 / SUCCESS;
+- broad campfire-ci 36320549270 / SUCCESS.
+
+Merge:
+05137dc05812111b99ec149bc291fb70350dabdd
+
+Post-merge Simple-v1:
+36320632175 / SUCCESS
+
 ## Installed-runtime boundary
 
 The most recent host observation before these repairs established:
@@ -65,7 +95,7 @@ The most recent host observation before these repairs established:
 - installed App still on the pre-#266 f4fa182 lineage;
 - locally restored supervisor already carries the event ledger.
 
-Therefore the installed worker does not yet contain #267/#268. The source repair is real; the live log flood is not claimed fixed until a later install/runtime witness establishes it.
+Therefore the installed worker does not yet contain #267/#268/#269. The source repair is real; the live log flood is not claimed fixed until a later install/runtime witness establishes it.
 
     SOURCE_REPAIRED != INSTALLED_REPAIRED
     HISTORICAL_BAD_COMMENT != DELETE_HISTORY

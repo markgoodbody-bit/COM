@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #268 merged / answerability reliability probe closed without clean result**
+Updated: **27 September 2026 — D089 live / Simple-v1 #269 merged / PoliceAI field witness / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -65,7 +65,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 #259 / #266 / #267 / #268 MAINTAINED SOURCE GREEN** — maintained `framework/campfire-square-simple-v1@6a07380bdf85804d7029ce5ea6ba279a14c5192b`; #266 upstreams supervisor event history + byte-safe installer fetch; #267 stops repeated parsing of a malformed historical GitHub ingress body by persisting refusal state keyed to comment ID + body SHA-256 and reopening on edit; #268 hardens the regression by counting actual parser calls. #267 Windows `36319114531`, broad `36319114533`, post-merge `36319248333` SUCCESS; #268 Windows `36319389245` and broad `36319389248` SUCCESS. Installed Simple-v1 was last observed healthy but still on pre-#266 `f4fa182…`, so `SOURCE_REPAIRED != INSTALLED_REPAIRED`; do not claim the live log flood fixed until a later install/runtime witness.
+- **Simple-v1 #259 / #266 / #267 / #268 / #269 MAINTAINED SOURCE GREEN** — maintained `framework/campfire-square-simple-v1@05137dc05812111b99ec149bc291fb70350dabdd`; #266 upstreams supervisor event history + byte-safe installer fetch; #267 suppresses repeated parsing of malformed historical GitHub ingress by comment ID + body SHA-256; #268 hardens actual parser-call regression; #269 makes only the diagnostic refusal ledger best-effort so local I/O failure cannot take valid ingress down. Final #269 head `302540eb22def9007176361a1c51da2ce49efb08` passed Windows `36320549273`, broad `36320549270`, and post-merge Simple-v1 `36320632175`. Speech/actuation, dedupe, receipt and authority ledgers remain fail-closed. Installed Simple-v1 was last observed healthy but still on pre-#266 `f4fa182…`; `SOURCE_REPAIRED != INSTALLED_REPAIRED`.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
@@ -78,6 +78,7 @@ Current receipts:
 - `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`
 - `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`
 - `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
+- `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`
 
 ## Active non-source design
 
