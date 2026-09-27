@@ -23,7 +23,7 @@ The owner explicitly asks applicants to test six things before applying:
 | Research decision | Whether owner version/currentness signals or residual source changes require reopening already-relied-on synthesis/review work | **DEFINED / NOT USER-VALIDATED** |
 | Who / how often | Living systematic review team. Public Bern exemplar ran weekly searches adding 100–200 records and checked preprint status each update | **PUBLIC BASELINE / NOT UNIVERSAL FREQUENCY** |
 | Lifecycle | Evidence synthesis + research integrity | **DIRECT FIT** |
-| Existing tool/system | Proposed first host: Zotero / existing reference library; Zotero API v3 already supplies library/object versions and sync primitives, so Stage 1 can start read-only | **OWNER API EXISTS / FILE HANDOFF ONLY TODAY / LIVE INTEGRATION DOES NOT** |
+| Existing tool/system | Pilot host = the team's existing workflow. Zotero is the currently tested substrate and offers read-only API/version primitives; Digital Science-owned ReadCube is an explicit stronger-owner/subsumption test rather than an assumed partnership | **HOST FOLLOWS REAL WORKFLOW / FILE HANDOFF ONLY TODAY / LIVE INTEGRATION DOES NOT** |
 | Multi-step need | Observe -> fingerprint -> compare -> analyse relevant change -> preserve authority -> route affected dependents -> human review | **IMPLEMENTED AS PROTOTYPE** |
 | Refuse / flag / escalate | Derivative repetition stays quiet; derivative disagreement flags review; candidate sources cannot gain authority; outage preserves prior state | **DETERMINISTICALLY TESTED / NOT RESEARCHER-VALIDATED** |
 | Primary outcome | Reviewer minutes per correctly handled material-change episode versus existing practice | **PREDECLARED / UNMEASURED** |
@@ -52,7 +52,7 @@ It does **not** establish:
 - frequency of material post-reliance changes across all reviews;
 - acceptable miss/false-alert rates;
 - willingness to adopt;
-- Zotero integration value.
+- host-specific integration value, including whether Zotero, ReadCube or another existing workflow already subsumes the residue.
 
 Additional workload source:
 - https://doi.org/10.1186/s13643-019-1248-5
