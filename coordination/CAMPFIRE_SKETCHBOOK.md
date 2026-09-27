@@ -4738,3 +4738,83 @@ Current disposition:
 
 **APPLIED VALUE PLAUSIBLE / OWNER CORRECTION WORKED / NO TRACE OR ME PATCH / KEEP WORKING.**
 
+## 27 September 2026 — temporal safeguard conformance: design gap is not execution gap
+
+Status: **WORLD / REAL USE / OWNER-DERIVED OPERATIONAL LAYER / NO PATCH**
+
+A second applied pass used two different current systems:
+- NHS patient-initiated follow-up (PIFU);
+- Awaab's Law / social-housing hazard handling.
+
+Both stronger owners already contain much of the temporal design that a shallow temporal-empathy critique might propose.
+
+The failure surface is often later:
+
+```text
+SAFEGUARD SPECIFIED
+!=
+SAFEGUARD FIRED
+
+TRIGGER DEFINED
+!=
+TRIGGER CAPTURED
+
+CLOCK DEFINED
+!=
+CLOCK STARTED CORRECTLY
+
+ACTION RECORDED
+!=
+PROTECTION REACHED
+
+TIMESCALE MET
+!=
+DURABLE RESOLUTION
+```
+
+This yields a useful cross-domain distinction:
+
+```text
+DESIGN GAP
+!=
+EXECUTION GAP
+```
+
+PIFU:
+current NHS England guidance already addresses suitability, remembering/initiating, carers, fallback to timed follow-up, tracking, review dates, clinically required monitoring, incident learning and post-activation wait targets. A 2026 staff evaluation still reports implementation variation, admin burden, EPR workarounds, some patients failing to initiate appropriately, primary-care spillover and continued waits after some activations.
+
+So:
+
+```text
+PIFU DESIGN SAFEGUARDS = STRONG OWNER
+LOCAL CONFORMANCE = VARIABLE
+NEW PROJECT POLICY = NOT EARNED
+```
+
+Awaab's Law:
+the legal/guidance surface already contains multi-channel notice/knowledge, hazard clocks, concurrent complaint clocks, written summaries, updates and material-change retriggering.
+
+The 2026 Phase 1 Test-and-Learn research reports that implementation is already changing behaviour but remains uneven/fragile: fragmented cases, clock ambiguity, vulnerability-data problems, written-summary failures, capacity/IT constraints and risk of compliance activity displacing durable resolution.
+
+This is nearly a direct world example of TRACE's existing:
+
+```text
+DISTINCTION_PRESENT != DISTINCTION_APPLIED
+TRIGGER_PRESENT != TRIGGER_FIRED
+```
+
+The project object that survives is therefore an **owner-derived temporal safeguard conformance audit**, not a new temporal ontology.
+
+Audit:
+`coordination/resources/TEMPORAL_SAFEGUARD_CONFORMANCE_AUDIT_v0_20260927.md`
+
+Sample readings:
+`coordination/resources/TEMPORAL_SAFEGUARD_CONFORMANCE_SAMPLE_READINGS_20260927.md`
+
+Applied pass:
+`coordination/resources/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_PASS_2_20260927.md`
+
+Current disposition:
+
+**CONFORMANCE LAYER USEFUL / TWO BOUNDED APPLICATIONS / NO VALIDATION / TRACE PATCH NO / ME PATCH NO / KEEP WORKING.**
+
