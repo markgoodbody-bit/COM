@@ -5472,3 +5472,63 @@ Current disposition:
 
 **KEEP AS PROVISIONAL APERTURE CHECK / STRONG OWNER FIRST / NO TRACE-ME PATCH / NO CANON PROMOTION.**
 
+## 28 September 2026 — information can arrive and still fail to become protection
+
+Status: **FRESH WORLD / PROBATION PUBLIC-PROTECTION WITNESS / OWNER FOUND / NO NEW TOOL / NO PATCH**
+
+HM Inspectorate of Probation's 24 September national public-protection findings give a useful real correction-propagation case.
+
+Across the inspection programme, the owner reports:
+- police information-sharing had improved, but some received information was still too weak to support meaningful assessment;
+- children's-services information remained less reliable;
+- most importantly, critical information already available in a case was not sufficiently interrogated, analysed or translated into robust risk assessment/management activity in 54% of inspected cases.
+
+The percentages are not one denominator and must not be combined.
+
+The sharper structure is:
+
+~~~text
+INFORMATION AVAILABLE
+!=
+INFORMATION UNDERSTOOD
+
+INFORMATION UNDERSTOOD
+!=
+JUDGEMENT UPDATED
+
+JUDGEMENT UPDATED
+!=
+PROTECTIVE ACTION DELIVERED
+~~~
+
+The temporal/correction pressure is also real.
+
+The Inspectorate says little national progress had been made against its April 2025 information-sharing recommendation, despite later improvement activity and regional action plans.
+
+So:
+
+~~~text
+RECOMMENDATION ISSUED
+!=
+CORRECTION PROPAGATED
+
+ACTION PLAN EXISTS
+!=
+FRONTLINE PRACTICE CHANGED
+
+STRATEGIC PRIORITY
+!=
+OPERATIONAL RELIABILITY
+~~~
+
+But this does not justify a new project-native chain. COM already carries correction propagation, process/function and signal/consequence distinctions.
+
+The Inspectorate's own effective-practice material also supplies the positive control: coordinated sharing, clear accountability, professional curiosity, escalation and regular review can work.
+
+Field note:
+field/PROBATION_PUBLIC_PROTECTION_INFORMATION_TO_ACTION_20260928.md
+
+Current disposition:
+
+**KEEP AS REAL INFORMATION-TO-ACTION + CORRECTION-PROPAGATION WITNESS / STRONG OWNER / NO NEW CARD / NO TRACE-ME PATCH / WATCH FUTURE OWNER RESPONSE OR REINSPECTION.**
+

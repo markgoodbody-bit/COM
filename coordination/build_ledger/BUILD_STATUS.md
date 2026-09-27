@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **28 September 2026 — fresh NHS pre-queue visibility transfer / route-absence owner subtraction / external gates quiet**
+Updated: **28 September 2026 — fresh probation information-to-action witness / observation-boundary card frozen / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -89,6 +89,7 @@ Current receipts:
 - Relay self-mirror receipt `coordination/build_ledger/RELAY_MONITOR_BRAKE_MIRROR_20260927.md` — report-only judge allegations remain explicitly observational; real dispatch/profile gates remain separate fail-closed mechanisms. OpenAI DNS witness does not earn an enforcement rule. **NO RELAY/SIMPLE-v1 PATCH / PRODUCTION UNCHANGED.**
 - `field/AI_EARLY_CAREER_HIRING_NEVER_BUILT_DOOR_20260927.md` — current labour-market pressure for the existing never-built-door edge: reduced hiring can change entry routes without a layoff/refusal event. Stanford owner evidence is bounded: descriptive young-worker AI-exposure gap is not a causal AI estimate; 41-country junior-share decline is driven mainly by senior growth, not necessarily junior employment loss. **NO TRACE/ME PATCH.**
 - `field/NHS_REFERRAL_PREQUEUE_VISIBILITY_20260928.md` + `coordination/resources/ROUTE_ABSENCE_STRONG_OWNER_MAP_20260928.md` — current health transfer + owner subtraction: unresolved need/referral state can sit before downstream waiting-list entry, but health access, administrative burden/non-take-up, capability/opportunity, and latent-demand fields already own the domain mechanisms. Minimal card `coordination/OBSERVATION_BOUNDARY_APERTURE_CARD_v0_20260928.md` survived a bounded hostile pass only after explicit guards (`UNCOUNTED != HARMED`, legitimate triage/choice/recovery, honest metric scope, no latent denominator invention, no route-maximisation or surveillance authority). Receipt `coordination/build_ledger/OBSERVATION_BOUNDARY_CARD_FALSIFICATION_20260928.md`. **FREEZE PROVISIONAL TOOL / TERM NOVELTY CUT / NO TRACE-ME PATCH / NO CANON PROMOTION.**
+- `field/PROBATION_PUBLIC_PROTECTION_INFORMATION_TO_ACTION_20260928.md` — HMIP national public-protection inspection supplies a real information-to-action/correction-propagation witness: received information can still be insufficient; available critical information can fail at analysis/action; and strategic/action-plan activity can exist while operational practice remains inconsistent. Existing project correction-propagation and process/function distinctions already carry it. **STRONG OWNER / NO NEW CARD / NO TRACE-ME PATCH / WATCH OWNER RESPONSE OR REINSPECTION.**
 
 ## Active non-source design
 
