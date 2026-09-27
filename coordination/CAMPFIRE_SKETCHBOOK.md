@@ -5268,3 +5268,90 @@ Current disposition:
 
 **PORTABILITY/PRIVACY TENSION SHARPENED / UNIVERSAL PERSON GRAPH STILL REJECTED / STRONG OWNERS PRESENT / NO THR OR TRACE-ME PATCH / NO OUTREACH.**
 
+## 27 September 2026 — support-state portability: stronger owners already exist
+
+Status: **OWNER SUBTRACTION / PAPER OBJECT NARROWED / NO PATCH**
+
+The "support-state handoff" sketch has a much stronger prior lineage than the initial cross-sector framing suggested.
+
+Personal Communication Passports have existed since 1991 and are explicitly used across transitions/settings so people do not have to repeatedly reconstruct important communication/support information.
+
+NHS England's current Accessible Information Standard already requires:
+
+~~~text
+IDENTIFY
+-> RECORD
+-> FLAG
+-> SHARE
+-> MEET
+-> REVIEW
+~~~
+
+for communication/information needs across treatment, referral, discharge and handover.
+
+NICE likewise recommends keeping communication passports current and sharing communication preferences with relevant services to avoid repeated disclosure.
+
+A real communication-passport implementation adds the execution warning:
+
+~~~text
+PROFILE CREATED
+!=
+PROFILE AVAILABLE
+!=
+PROFILE READ
+!=
+SUPPORT APPLIED
+~~~
+
+So:
+
+~~~text
+PORTABLE SUPPORT PROFILE
+!=
+PROJECT NOVELTY
+~~~
+
+The project object has therefore been cut down.
+
+What remains is only a possible handoff compression:
+
+~~~text
+ROUTE / ACTION STATE
++
+OWNER-DEFINED MINIMUM SUPPORT ADJUSTMENT
++
+CURRENTNESS / SOURCE / ACCESS BOUNDARY
+~~~
+
+at a consequential handoff.
+
+That is a **handoff receipt**, not a portable person profile.
+
+Preserve:
+
+~~~text
+HANDOFF RECEIPT
+!=
+UNIVERSAL PERSON GRAPH
+
+COMMUNICATION PREFERENCE
+!=
+FINANCIAL DISTRESS
+!=
+DEBT PROFILE
+
+TELL US ONCE
+!=
+TELL EVERYONE EVERYTHING
+~~~
+
+Owner map:
+`coordination/resources/SUPPORT_STATE_HANDOFF_STRONG_OWNER_MAP_20260927.md`
+
+Narrowed paper object:
+`coordination/resources/SUPPORT_STATE_HANDOFF_CONTRACT_v0_20260927.md`
+
+Current disposition:
+
+**OWNER FOUND FOR PORTABLE SUPPORT PROFILE / CROSS-DOMAIN ROUTE+SUPPORT RECEIPT ONLY / NO TRACE-ME-THR PATCH / NO GENERAL PROFILE BUILD.**
+
