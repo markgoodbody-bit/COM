@@ -19,19 +19,19 @@ Canonical prep:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
 Git blob:
-`3e81765547388c37c65d63401477788cfffd64d4`
+`101c5ce0b69ac619b6ccd34270e526ee980a3a61`
 
 Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Git blob:
-`fca570bbb30f8dae78cf8c16af8f4e6916e1841d`
+`3f9136a2ca3a338a87a741927e8e797c2e2d8d8d`
 
 Current whitespace-delimited proposal recount:
-**1,464 words**
+**1,479 words**
 
 Headroom against owner limit:
-**36 words**
+**21 words**
 
 Practical rule:
 **DO NOT POLISH FURTHER BY MOMENTUM.**
