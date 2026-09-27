@@ -152,7 +152,7 @@ Invoke-WebRequest -Uri "$ownerBase/all_pairs.tsv" -OutFile $pairsPath
 
 foreach ($entry in $ExpectedOwnerBlobs.GetEnumerator()) {
     $ownerPath = Join-Path $ownerDir $entry.Key
-    $observed = (& git hash-object -- $ownerPath | Out-String).Trim()
+    $observed = (& git hash-object --no-filters -- $ownerPath | Out-String).Trim()
     if ($LASTEXITCODE -ne 0) {
         throw "git hash-object failed for $ownerPath"
     }
