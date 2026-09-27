@@ -28,7 +28,7 @@ Git blob:
 `b5917f4e18cec725e586ca94bfa8be760a113867`
 
 Current whitespace-delimited proposal recount:
-**1,482 words**
+**1,485 words**
 
 Headroom against owner limit:
 **18 words**
