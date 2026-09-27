@@ -132,9 +132,30 @@ Draft candidate frozen.
 
 COM #365 carries coordination and review history. TRACE beta PRs #56-59 and ME beta PRs #49/#50/#52/#53 are closed after release with branches/history preserved. The earlier ME #47 reader-test harness remains relevant; no uncontaminated Condition-B result exists. Released TRACE v0.4.0 and ME v0.8.0 are frozen pending concrete defects or world/use evidence.
 
-### PSFH combined first-contact candidate
+### PSFH current Door — D088
 
-PR #440 + #442 + #443 were integrated in D078 and D079 published Mark's lighter-opening copy. D080 deliberately leaves that front door alone and cleans the deeper Works system instead: one shared stylesheet/grammar, aspect-preserving shelf wells, consistent art-first account structure and continuation routes, with exact D080 wrapper pins and a current-state Works CI regression. Component branches remain history/provenance, not an active publication queue.
+D078/D079's lighter opening, D080's unified Works grammar and D086's map-first Explore remain intact. D087 preserved historical node-source snapshots while correcting the separately labelled current TRACE/ME routes. A later real external return from `pengy-of-catbee` earned one narrow Selection repair: sender-side posts/messages are not by themselves evidence of external encounter.
+
+D088 is published as Site Preview `0.8.45`:
+- source PR #621; exact candidate `3b4a0bf0b07da258da2d7d6839a4b48dc6087cd2`;
+- maintained source after release sync `db2b64ab9d08e44a93cbb61c03cb2eaee28f5629`;
+- public `gh-pages@c1dec76b8c28e8bbc5d9ad406067261070e4c555`;
+- publisher `36313499829 / SUCCESS`, including exact-predecessor fail-closed check and direct custom-domain D088 byte verification;
+- release-sync CI `36313610925 / SUCCESS`;
+- substantive Selection Markdown/JSON blobs match source -> published exactly;
+- maintained input manifest and built public manifest are intentionally different because `scripts/build.mjs` enriches the public manifest with generated routes/hashes/provenance.
+
+Receipt: `coordination/build_ledger/PSFH_D088_ENCOUNTER_EVIDENCE_PUBLICATION_20260927.md`.
+
+```text
+SENDER_ACTIVITY != EXTERNAL_ENCOUNTER_EVIDENCE
+NO_RECEIVING_TRACE != NO_ENCOUNTER
+ONE_TRACE != POPULATION_REACH
+INPUT MANIFEST != BUILT PUBLIC MANIFEST
+PUBLISHED != VALIDATED
+```
+
+No new tracking, analytics, graph semantics, TRACE/ME/THR source or measured reader-benefit claim follows.
 
 ### PSFH Leave a Mark
 

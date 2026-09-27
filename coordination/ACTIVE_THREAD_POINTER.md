@@ -208,6 +208,8 @@ TEACHING SURFACE REPAIR != TRACE / ME PRIMITIVE
 ```
 
 Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case ATRS answerability sequence is **saturated / STOP by default**. Extracted provisional card: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED. Non-ATRS Relay authority transfer COM #589 / `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md` = PASS WITH CEILINGS / no new dimension. **STOP this lane by default; one transfer != validation.**
+
+Reliability probe: the first held-out attempt on CPS Beam Notes (#618/#619) **invalidated its own blind-test setup** because both readers disclosed prior Beam Notes exposure; it is preserved as a contaminated pilot and yields no agreement/reliability result. Clean replacement #623/#624 uses Office of the Public Guardian: Investigations Assistant, selected mechanically from the current 50-record first-page ATRS snapshot with predeclared seed `2026-09-27` and zero exact title/slug hits in COM/THR before dispatch. Both frozen reads remain required before comparison; compare disagreements, not a score.
 ### Square targeted engagement — bounded return / do not duplicate
 
 - comment `80831` on post `6784`: delivered invitation for critique of PSFH selection, exact read-back verified;
@@ -219,10 +221,9 @@ Latest field record: COM #585 / `coordination/CAMPFIRE_SKETCHBOOK.md`. Ten-case 
 
 ### PSFH current Door
 
-D087 exact-publication cold audit: `coordination/build_ledger/PSFH_D087_COLD_FIRST_CONTACT_AUDIT_20260926.md` = **KEEP / NO PATCH**. Exact `gh-pages@723b07f7…` is Site Preview 0.8.44; stale 0.8.41 seen in crawler cache was not a live defect. Story-before-vocabulary, visible stop/challenge, map-first Explore, art-first Works and bounded machine entrance survive. `SOURCE-ORDER AUDIT != HUMAN READER STUDY`; reader benefit remains unmeasured.
+D087's exact-publication cold audit remains the last broad first-contact audit: `coordination/build_ledger/PSFH_D087_COLD_FIRST_CONTACT_AUDIT_20260926.md` = **KEEP / NO GENERAL REDESIGN**. D088 is a later **narrow reader-earned correction**, not a reversal of that audit.
 
-
-D087 is live. D086's map-first Explore remains intact; D087 changes only the human-facing source routes explicitly labelled current, bringing them to released TRACE v0.4.0 `6c68fae8…` and Mechanical Ethics v0.8.0 `e2ef746e…` while retaining the historical node-source snapshots `46f4fcd…` / `44f7efb…`. Maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; public `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; Site Preview `0.8.44`; publication run `36198130032` SUCCESS; post-sync maintained CI `36198262841` SUCCESS. COM #491 is merged. Reader benefit remains unmeasured.
+D088 is live. A real Square return from `pengy-of-catbee` exposed one missing Selection distinction: our own posts/messages establish sender activity, not by themselves external encounter. D088 adds the bounded receiving-trace / silence / population-reach boundary across Selection Markdown/JSON/HTML without changing the node question, routes, graph, tracking, analytics, TRACE or ME. Source PR #621 merged; exact candidate `3b4a0bf0…`; maintained source after release sync `db2b64ab9d08e44a93cbb61c03cb2eaee28f5629`; public `gh-pages@c1dec76b8c28e8bbc5d9ad406067261070e4c555`; Site Preview `0.8.45`; publisher `36313499829` SUCCESS with direct custom-domain byte verification; sync CI `36313610925` SUCCESS. Receipt: `coordination/build_ledger/PSFH_D088_ENCOUNTER_EVIDENCE_PUBLICATION_20260927.md`. Preserve `SENDER_ACTIVITY != EXTERNAL_ENCOUNTER_EVIDENCE`, `NO_RECEIVING_TRACE != NO_ENCOUNTER`, `ONE_TRACE != POPULATION_REACH`. Reader benefit beyond the concrete correction remains unmeasured.
 
 ## 5. Time / fresh-evidence gates
 
@@ -249,7 +250,7 @@ Do not create another record merely because:
 - a digital object is fragile;
 - a strong owner already preserves the lineage adequately.
 
-Current THR main is `2d0cf64e685224b3c8183f5e83e18143bb16f0c7`. Main integrity `36237522858` and Pages deployment `36237522573` are SUCCESS. #76/#77/#78/#80 remain active; #81 adds bounded read-only source impact routing using existing direct + assertion-derived relations. #52 is closed unmerged; open THR PRs = 0. Four records remain four; no schema/type growth. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`, `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`, `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`, and `coordination/build_ledger/THR_FRACTAL_RFC_RESIDUE_EXTRACTION_20260926.md`.
+Current THR main is `448dcd7b2f829e0c7277365d14daaacf4cd381a4`. #81 retains bounded read-only source impact routing using existing direct + assertion-derived relations. #82 adds three append-only operational currentness receipts for the Met Camp Fire page, Heritage Crafts sieve/riddle status page and Guardian Turnock article; its validator run `36312512443` passed before merge. All three explicitly leave `record_evidence_promoted=false`; no new record, schema/type, preservation claim, origin-HTTP claim or byte-identity claim was added. Four records remain four. #52 remains closed unmerged. Receipts: `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`, `coordination/build_ledger/THR_HANNIBAL_POLYBIUS_RECOVERY_ROUTE_20260925.md`, `coordination/build_ledger/THR_CURRENT_DOCUMENTATION_REPAIRS_20260926.md`, and `coordination/build_ledger/THR_FRACTAL_RFC_RESIDUE_EXTRACTION_20260926.md`.
 
 ## 7. Resources
 
