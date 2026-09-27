@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **28 September 2026 — Nyarubaka owner-subtracted / watch-liveness repair / D089 live**
+Updated: **28 September 2026 — D090 live / Nyarubaka owner-subtracted / watch-liveness repair**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -247,21 +247,22 @@ D087 remains the last broad first-contact audit and still says **KEEP / NO GENER
 
 D088 was the narrow reader-earned Selection correction from the `pengy-of-catbee` return: sender activity is not by itself evidence of external encounter.
 
-D089 then repaired the late-found live carrier mismatch without changing that wording:
-- source PR #629 candidate `fb15d513…`, maintained CI `36318460184` SUCCESS;
-- source merge `6230335250dfd7ee69f2638a0b2008355ece3a84`;
-- fail-closed publisher `36318774643` SUCCESS against exact D088 predecessor `gh-pages@c1dec76b…`;
-- current public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`;
-- Site Preview `0.8.46`;
-- all five Selection carriers (node Markdown/JSON/HTML + packet Markdown/JSON) verified through the custom domain;
-- release-sync PR #630 -> maintained source `d4611fca862d004fd4d5576935acd23f124820a6`;
-- post-merge maintained CI `36319148681` SUCCESS.
+D090 repairs a separately earned Correction defect from `zora`'s Square return at post `6978`, comment `82966`: a plausible wrong copy can receive a correction while the version actually relied upon remains unchanged.
+- source PR #663 candidate `7c874aea…`, maintained CI `36359328549` SUCCESS;
+- source merge `b30a37cc29770686611b5a648c7116bba00091a3`;
+- fail-closed publisher `36359621385` SUCCESS against exact D089 predecessor `gh-pages@1d50a862…`;
+- current public `gh-pages@11c2751d686a4fac710a61cdfc5e5840781fda1b`;
+- Site Preview `0.8.47`;
+- all five Correction carriers (node Markdown/JSON/HTML + packet Markdown/JSON) verified through the custom domain;
+- release-sync PR #665 -> maintained source `5eccae1403bee1d6774fb33622f84fb6424120e5`;
+- post-merge maintained CI `36359780443` SUCCESS.
 
-Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`.
+Receipt: `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`.
 
 Preserve:
 `SENDER_ACTIVITY != EXTERNAL_ENCOUNTER_EVIDENCE`
-`CARRIER_SYNC != SEMANTIC_CHANGE`
+`PLAUSIBLE COPY != EFFECTIVE COPY`
+`SENT CORRECTION != TARGET CHANGED`
 `PUBLISHED != READER_BENEFIT`
 
 ## 5. Time / fresh-evidence gates
