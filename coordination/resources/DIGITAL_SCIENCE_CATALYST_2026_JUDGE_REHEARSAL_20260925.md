@@ -193,8 +193,8 @@ Current reference-manager state:
 - CSL-JSON file handoff only;
 - no live Zotero or ReadCube integration.
 
-Proposed first host:
-**Zotero**, but using Zotero's own API v3/local-API/object-version machinery rather than building parallel sync.
+Proposed host rule:
+**Use the pilot team's existing workflow.** Zotero remains the currently tested substrate and one plausible read-only host because its API/version machinery already exists. Digital Science-owned ReadCube is an explicit stronger-owner/subsumption test if Digital Science supports that route. Do not force Zotero where a stronger existing host fits better.
 
 Stage 1 begins read-only:
 - bind owner source-state/currentness signals to items in one existing library;
@@ -308,9 +308,9 @@ Best answer:
 
 > "Version identity is largely solved for well-versioned repositories. The question is whether the version signal reaches the exact evidence object already relied upon and whether that consequence is routed to the affected work. EvidenceWatch should consume DataCite/Figshare signals, not compete with them."
 
-### "Why Zotero?"
+### "Why Zotero rather than ReadCube or the team's existing system?"
 
-> "It is a plausible first host because it is already present in research workflows and exposes mature API/local-API and object-version primitives. Stage 1 can therefore be read-only and focus on the actual hypothesis rather than rebuilding sync. If the partner uses a stronger host, we should use that instead."
+> "Zotero is the substrate I can currently demonstrate: CSL-JSON handoff plus a mature read-only API/version route. It is not a product requirement. The pilot should live inside the workflow the team already uses. Because Digital Science owns ReadCube, ReadCube is an especially useful subsumption test: if that workflow already closes the loop, EvidenceWatch should integrate there, narrow, or stop rather than force Zotero."
 
 ### "What makes this agentic rather than a script?"
 
