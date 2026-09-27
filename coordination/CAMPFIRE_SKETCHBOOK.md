@@ -5151,3 +5151,54 @@ Current disposition:
 
 **HANDOFF SALIENCE SHARPENED / PRIVACY GUARD REQUIRED / STRONG OWNER PRESENT / TRACE+ME PATCH NO / NO OUTREACH.**
 
+## 27 September 2026 — FSA voice-to-text pilot: inspection is not transcription
+
+Status: **FRESH WORLD / LIVE PILOT / STRONG OWNER / NO PATCH**
+
+The Food Standards Agency reports a live 2026 pilot testing voice-to-text in meat plants to improve capture of inspection information and reduce administrative effort.
+
+The FSA says the immediate proof-of-concept question is whether the technology is viable in the environmental conditions of meat plants. Wider scaling is contingent on pilot outcomes, data/interoperability and governance/assurance/transparency.
+
+The stronger FSA Science Council owner already says safety-critical AI-supported decisions should remain human, explainable and traceable, with ongoing validation.
+
+The useful pressure is therefore not "FSA forgot human oversight."
+
+It is the capture chain:
+
+~~~text
+WORLD STATE
+-> INSPECTOR OBSERVATION
+-> SPOKEN UTTERANCE
+-> AUDIO CAPTURE
+-> MACHINE TRANSCRIPTION
+-> HUMAN CONFIRMATION / CORRECTION
+-> OFFICIAL RECORD
+-> DOWNSTREAM REGULATORY USE
+~~~
+
+Preserve:
+
+~~~text
+OBSERVATION != UTTERANCE
+UTTERANCE != TRANSCRIPTION
+TRANSCRIPTION != VALIDATED RECORD
+VOICE-TO-TEXT ACCURACY != INSPECTION ACCURACY
+~~~
+
+The public pilot surface does not state the exact retention, confirmation, edit-provenance or enforcement semantics, so:
+
+~~~text
+NOT DESCRIBED PUBLICLY
+!=
+NOT IMPLEMENTED
+~~~
+
+Do not manufacture a gap.
+
+Field note:
+`field/FSA_AI_INSPECTION_CAPTURE_CHAIN_20260927.md`
+
+Current disposition:
+
+**LIVE PILOT / OBSERVATION-TO-RECORD CHAIN LOAD-BEARING / STRONG OWNER PRESENT / WATCH PILOT OUTCOME / TRACE+ME+THR PATCH NO.**
+
