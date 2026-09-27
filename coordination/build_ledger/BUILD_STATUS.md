@@ -153,7 +153,7 @@ Status: **NO CLEAN TWO-READER RESULT / STOP BY DEFAULT**.
 
 ### Temporal-empathy reader probe
 
-Status: **ACTIVE OWNER-ABSORPTION / DESIGN PATTERNS BUILT / OPTIONAL READER TEST PREPARED / NOT RUN / NO RESULT**.
+Status: **ACTIVE APPLIED RESEARCH / OWNER ABSORPTION + DESIGN PATTERNS BUILT / OPTIONAL READER TEST PREPARED / NOT RUN**.
 
 - `temporal empathy` is prior-owned in Temporal Design/HCI; no project-origin claim.
 - Minimally Disruptive Medicine / Cumulative Complexity / treatment-burden work directly owns the workload-capacity mechanism that overlapped the spinning-plates sketch.
@@ -166,6 +166,9 @@ Status: **ACTIVE OWNER-ABSORPTION / DESIGN PATTERNS BUILT / OPTIONAL READER TEST
 - Released TRACE/ME coverage audit found no current representational gap: `coordination/resources/TEMPORAL_EMPATHY_TRACE_ME_COVERAGE_AUDIT_20260927.md`.
 - Current design correction: `DIFFERENT RHYTHM != DEFICIT`; `OPERATOR FLEXIBILITY != AFFECTED-PERSON TEMPORAL AGENCY`; `NO SCHEDULED TASK != AVAILABLE CAPACITY`.
 - Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_DESIGN_ABSORPTION_20260927.md`.
+- Applied operating-system pass: `coordination/resources/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_PASS_20260927.md`.
+- Applied result: LGSCO complaint waits = **OWNER FOUND / NO MATERIAL DELTA**; Seattle secure scheduling = **STRONGER OWNER / POSITIVE CONTROL**; e-RS negative-transition receipt = **WATCH / NO OUTREACH** because adjacent patient notification functionality shipped 11 Sep 2026; EHC 20-week-only checkpoint = **SUPERSEDED** after recent Ombudsman cases showed awareness/state-change + continuing review are stronger triggers. Current EHC object: `coordination/resources/TEMPORAL_CANDIDATE_EHC_PARALLEL_CLOCK_v1_20260927.md`.
+- Applied receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_20260927.md`.
 - Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`.
 
 ```text
@@ -174,8 +177,10 @@ CROSS-DOMAIN ROUTING VALUE = PLAUSIBLE / UNTESTED
 READERS = NONE
 READER-COMPARISON RESULT = NONE
 ONGOING RESEARCH = CONTINUE
+APPLIED VALUE = PLAUSIBLE / OWNER-ROUTED
 DESIGN / SALIENCE DELTA = YES
 REPRESENTATIONAL GAP = NOT FOUND
+EHC 20-WEEK-ONLY TRIGGER = SUPERSEDED
 TRACE PATCH = NO
 ME PATCH = NO
 ```
