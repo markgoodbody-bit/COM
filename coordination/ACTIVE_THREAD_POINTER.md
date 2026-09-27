@@ -61,7 +61,7 @@ Current world sequence has recently returned:
 
 Next quarry follows materiality, not category quota.
 
-Temporal-empathy work is **ACTIVE RESEARCH / OWNER-ABSORPTION**, with an optional **PREPARED / NOT RUN** reader-comparison lane. Prior owners now include Temporal Design/HCI, workload-capacity/treatment-burden, disability/crip temporalities, time poverty, schedule predictability/control, prospective memory and recovery/fatigue work. Six neutral packets + minimal card remain frozen for any later reader test, but current work continues independently. A concrete design-pattern library and released TRACE/ME coverage audit are now built; current result = **TEACHING/DESIGN DELTA / NO REPRESENTATIONAL GAP / NO TRACE OR ME PATCH**. Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_DESIGN_ABSORPTION_20260927.md`.
+Temporal-empathy work is **ACTIVE WORLD/APPLIED RESEARCH**, with the optional reader-comparison lane still frozen/not required. Real-system pass now returns mixed owner results: **LGSCO NO DELTA**, **Seattle owner-found positive control**, **NHS e-RS WATCH / NO OUTREACH after adjacent September notification repair**, and **EHC stronger-owner correction**: the project's 20-week-only trigger was too late; current-education protection may need to route from earlier awareness/state change and be kept under review, with 20 weeks only a backstop. Current EHC v1 is an owner-derived parallel-clock paper object, not a novel mechanism. **TRACE/ME PATCH = NO.** Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_20260927.md`.
 
 ## 2. TRACE / ME successor — released and closed to source churn
 
