@@ -35,9 +35,11 @@ The card should fit on one screen.
    - what becomes harder, more expensive, less recoverable or impossible?
    - does later correction restore the same future?
 
-5. **What else competes for the same capability?**
+5. **What work is the system adding, and what else competes for the same capability?**
    - time alone is not enough;
-   - ask which task-specific capacities, interruptions and obligations collide.
+   - count the work required to use the remedy/intervention itself;
+   - ask which task-specific capacities, interruptions and obligations collide;
+   - do not read missed action as lack of motivation by default.
 
 6. **What cue or support would restore feasibility without taking over the decision?**
    - reminder;
@@ -66,6 +68,7 @@ Examples:
 - discretionary time -> time poverty / temporal justice;
 - institutional delay -> institutional-time / administrative-burden work;
 - remembering when -> prospective memory;
+- workload-capacity imbalance -> treatment-burden / Minimally Disruptive Medicine;
 - task collision -> human factors / scheduling;
 - chronic load -> stress/allostatic owners;
 - irreversibility -> remedies / domain-specific protection.
