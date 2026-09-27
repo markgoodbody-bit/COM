@@ -54,9 +54,9 @@ EvidenceWatch is a configured multi-step monitoring agent. Humans set the questi
 
 The prototype is standalone Node.js. A reversible adapter converts standard CSL-JSON reference-manager exports into watch configurations. Imported references default to candidate/non-authoritative sources; authority and independence require explicit assignment.
 
-The first proposed integration target is **Zotero**. Stage 1 would reuse its API/version machinery read-only to bind owner source-state signals to items in one living-review library and present shadow alerts. Write-back waits until benefit and authority are established.
+The pilot host should be the workflow already used by the participating team. EvidenceWatch's tested substrate is currently Zotero-compatible CSL-JSON, and Zotero's API/version machinery gives one plausible read-only route, but Zotero is not a required future host. Digital Science's own ReadCube is an obvious stronger-owner/subsumption test: if it or another existing workflow already closes this loop, use that host or stop rather than forcing a parallel integration.
 
-Current EvidenceWatch remains a **file handoff, not a live Zotero or ReadCube integration**, and no pilot partner is established.
+Current EvidenceWatch remains a **file handoff, not a live Zotero or ReadCube integration**. No ReadCube access, partnership or integration exists, and no pilot partner is established.
 
 ## 3. TRUST, AUDIT AND GOVERNANCE
 
