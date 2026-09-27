@@ -169,8 +169,9 @@ def build(manifest: dict, all_pairs: dict[str, dict]) -> tuple[dict, dict]:
 
 def write_json(path: Path, value: object) -> str:
     rendered = json.dumps(value, ensure_ascii=False, indent=2) + "\n"
-    path.write_text(rendered, encoding="utf-8")
-    return sha256_hex(rendered.encode("utf-8"))
+    encoded = rendered.encode("utf-8")
+    path.write_bytes(encoded)
+    return sha256_hex(encoded)
 
 
 def main() -> int:
