@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #269 merged / PoliceAI field witness / external gates quiet**
+Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / PoliceAI field witness / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -65,7 +65,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 #259 / #266 / #267 / #268 / #269 MAINTAINED SOURCE GREEN** — maintained `framework/campfire-square-simple-v1@05137dc05812111b99ec149bc291fb70350dabdd`; #266 upstreams supervisor event history + byte-safe installer fetch; #267 suppresses repeated parsing of malformed historical GitHub ingress by comment ID + body SHA-256; #268 hardens actual parser-call regression; #269 makes only the diagnostic refusal ledger best-effort so local I/O failure cannot take valid ingress down. Final #269 head `302540eb22def9007176361a1c51da2ce49efb08` passed Windows `36320549273`, broad `36320549270`, and post-merge Simple-v1 `36320632175`. Speech/actuation, dedupe, receipt and authority ledgers remain fail-closed. Installed Simple-v1 was last observed healthy but still on pre-#266 `f4fa182…`; `SOURCE_REPAIRED != INSTALLED_REPAIRED`.
+- **Simple-v1 #259 / #266 / #267 / #268 / #269 / #270 MAINTAINED SOURCE GREEN / STOP BY DEFAULT** — maintained `framework/campfire-square-simple-v1@e53631d104f1aafb91850e492f51e1ca2377cefa`; #266 upstreams supervisor event history + byte-safe installer fetch; #267/#268 stop and test repeated malformed-ingress parsing; #269 makes only diagnostic refusal persistence best-effort so refusal-file I/O cannot take valid ingress down; #270 adds a test-only ASCII carrier invariant for installer-shipped `.ps1`/`.psm1` under Windows PowerShell 5.1. #270 candidate `b03c2e1086e2486d7111259874adc172b9ca8d7a` passed Windows `36320921439`, broad `36320921494`, merged as `e53631d1…`, and post-merge Simple-v1 `36321019856` SUCCESS. Installed Simple-v1 was last observed healthy but still pre-#266 `f4fa182…`; `SOURCE_CURRENT != INSTALLED_CURRENT`. No further source work absent a concrete defect or deliberate UTF-8 carrier change.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
@@ -77,6 +77,7 @@ Current receipts:
 - `coordination/build_ledger/THR_BROWSE_CARD_FRESHNESS_REPAIR_20260925.md`
 - `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`
 - `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`
+- `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`
 - `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
 - `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`
 
