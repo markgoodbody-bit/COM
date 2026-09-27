@@ -168,13 +168,7 @@ Digital Science also owns strong adjacent systems, including Dimensions MCPs, Pa
 
 ## 9. BUDGET
 
-Up to £25,000 would be staged.
-
-- **Stage 1, £5,000 cap:** read-only library integration, source-state→item binding, human-approved dependency mapping, matched-baseline fixtures and burden measurement. Stop if burden or problem incidence makes the workflow implausible.
-- **Stage 2, £14,000 cap:** only if Stage 1 survives; pilot engineering plus researcher observation/evaluation, including predeclared materiality labels and missed-change measurement.
-- **Stage 3, £6,000 cap:** model/API/infrastructure, independent security/provenance review and reproducibility documentation as required.
-
-This moves a working standalone prototype into a measured existing-workflow test while preserving a stop path.
+Up to £25,000 would be staged. Stage 1 (£5,000): read-only workflow integration, source-state binding, dependency mapping and burden baselines. Stage 2 (£14,000), only if Stage 1 survives: pilot engineering and researcher evaluation, including materiality labels and missed-change measurement. Stage 3 (£6,000): model/API infrastructure, independent security/provenance review and reproducibility documentation. This would move a standalone prototype into a measured existing-workflow test while preserving explicit stop gates.
 
 ---
 
