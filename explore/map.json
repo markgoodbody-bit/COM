@@ -230,18 +230,18 @@
     },
     {
       "path": "nodes/correction.html",
-      "bytes": 3991,
-      "sha256": "6a64a13a621e3facb5a0e08eb151ec7edf1687aa26f706cba3a7e19b3071ceb1"
+      "bytes": 4159,
+      "sha256": "1ff688e8deffbf41d9579a73e4a153825896bc7247742eba6ef3f30f18d648d1"
     },
     {
       "path": "nodes/correction.json",
-      "bytes": 2585,
-      "sha256": "8c5147c2cea8eec6812e8f3bb5c9ac735fc9b1fa58a81f16a9c0192378e257ef"
+      "bytes": 2753,
+      "sha256": "cc59571c1ba543970a4dfd36db6b6189665ec8d9de53e8bf99c8949006866818"
     },
     {
       "path": "nodes/correction.md",
-      "bytes": 1614,
-      "sha256": "255c64a328f7be211f7c032fb301640f6c896fdbc0d683744b63a56aca72d711"
+      "bytes": 1782,
+      "sha256": "61805861b4331729ed7d09c146de079ad65267b0d037cb3ebc56bd4e1b68330e"
     },
     {
       "path": "nodes/futures.html",
@@ -335,13 +335,13 @@
     },
     {
       "path": "packet.json",
-      "bytes": 21199,
-      "sha256": "8d5f09a06708627799b1f191110fecbf5cd89d9a65d548caabe63c851c7f6be5"
+      "bytes": 21367,
+      "sha256": "eb22bc232cc320f93cb31aedc6d85bfbc29b8fe45707424957596954f9ec1468"
     },
     {
       "path": "packet.md",
-      "bytes": 19673,
-      "sha256": "3855e383753a257306b4713bde29ffd3752eeb1393c4a782f45e6f1a41796f47"
+      "bytes": 19841,
+      "sha256": "8e3029b2f58c54f91ce93dddba5552db0bf5d6db991b712601fa374fde9c5678"
     },
     {
       "path": "questions.json",

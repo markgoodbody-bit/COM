@@ -210,7 +210,7 @@ A repaired record is not proof of a repaired life or system.
 
 ## Expand
 
-A correction route needs detection, access, the capacity to act and enough time to affect the target. Afterwards, some losses may remain. A changed policy can help the next case without restoring the previous one.
+A correction route needs detection, access, the capacity to act, enough time and the right target: the version or copy that people and processes actually rely on. Sending a correction does not show that target changed; check the target copy or a receiving-side receipt. Afterwards, some losses may remain. A changed policy can help the next case without restoring the previous one.
 
 ## Another position
 
