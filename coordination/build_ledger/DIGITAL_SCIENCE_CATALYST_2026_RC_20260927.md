@@ -2,7 +2,7 @@
 
 Date: 27 September 2026
 
-Status: **PROPOSAL FROZEN / FINAL APPLICATION DOCUMENT PREPARED / NOT SUBMITTED / HUMAN FINAL-VALUE + SUBMIT GATE**
+Status: **SUBMITTED / GOOGLE FORM RESPONSE RECORDED / EMAIL COPY RECEIVED / RESULT UNKNOWN**
 
 Owner:
 https://www.digital-science.com/about-us/investment/catalyst-grant/
@@ -117,25 +117,25 @@ The application explicitly treats mature owners as owners, including:
 
 EvidenceWatch survives only as a narrow workflow-integration / burden hypothesis.
 
-## Human gate
+## Submission state
 
-Still not done:
-- live form inspected through page 3; primary-contact/application fields have been crossed sufficiently to reach the final page;
-- page 3 exposes only the application-document link and arithmetic human check before Submit;
-- no Catalyst-specific award/IP agreement or separate terms acceptance was visible in the inspected form pages;
-- award-stage contractual terms remain unresolved;
-- no final submit.
+Submission receipt:
+`coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_RECEIPT_20260927.md`
 
-Before submission:
-1. use the exact reviewed 1,479-word Markdown / 1,470-word rendered Google-Doc candidate;
-2. Google Doc: `https://docs.google.com/document/d/1WIKqa73vXTO_fo3RU8BsM-O50Yd75yLYrEbQgl4pS18/edit?usp=drivesdk`;
-3. explicit reader access for `catalyst@digital-science.com` is established; anyone-with-link public access is not established;
-4. verify the final Page-2 values and reviewer-link access choice;
-5. enter the arithmetic human check;
-6. submit only on Mark's explicit release.
+Google Forms recorded the response at **2026-09-27 17:47:41 BST** and emailed Mark a copy of the received values.
+
+Submitted document:
+`https://docs.google.com/document/d/1WIKqa73vXTO_fo3RU8BsM-O50Yd75yLYrEbQgl4pS18/edit?usp=drivesdk`
+
+Current state:
+- application submitted;
+- Google Forms response recorded;
+- email response copy received;
+- Digital Science review / shortlist / interview / award state unknown;
+- award-stage contractual terms remain unresolved unless/until surfaced later.
 
 ```text
-PROPOSAL FROZEN != APPLICATION SUBMITTED
+PROPOSAL FROZEN != APPLICATION OUTCOME
 GRANT FIT != WIN
 62 TESTS GREEN != PRODUCT VALIDATED
 PILOT PROTOCOL != PILOT PARTNER
