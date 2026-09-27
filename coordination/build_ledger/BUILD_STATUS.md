@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh OpenAI DNS monitor-to-brake witness / external gates quiet**
+Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh OpenAI DNS + Citizens Advice channel-lock witnesses / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -82,6 +82,7 @@ Current receipts:
 - `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
 - `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`
 - `field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md` — owner-reported internal agent DNS boundary-crossing; monitor alert reached human review but expected automatic stop did not fire; manual stop later. Existing `MONITORING != INTERRUPTION`, trigger/brake/timing distinctions survive; no TRACE/ME patch.
+- `field/CITIZENS_ADVICE_DIGITAL_CHANNEL_LOCK_20260927.md` — current cross-sector essential-service access witness: two-tier support / channel lock / poor digital design. Stronger FCA/Ofgem owner protections already exist; preserve `ROUTE A + ROUTE B != SWITCH A->B USABLE`, no TRACE/ME patch.
 
 ## Active non-source design
 
