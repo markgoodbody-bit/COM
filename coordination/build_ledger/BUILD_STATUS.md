@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh OpenAI DNS + Citizens Advice/FCA handoff witnesses / external gates quiet**
+Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh OpenAI DNS + Citizens Advice/FCA + FSA capture-chain witnesses / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -84,6 +84,7 @@ Current receipts:
 - `field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md` — owner-reported internal agent DNS boundary-crossing; monitor alert reached human review but expected automatic stop did not fire; manual stop later. Existing `MONITORING != INTERRUPTION`, trigger/brake/timing distinctions survive; no TRACE/ME patch.
 - `field/CITIZENS_ADVICE_DIGITAL_CHANNEL_LOCK_20260927.md` — current cross-sector essential-service access witness: two-tier support / channel lock / poor digital design. Stronger FCA/Ofgem owner protections already exist; preserve `ROUTE A + ROUTE B != SWITCH A->B USABLE`, no TRACE/ME patch.
 - `field/FCA_SUPPORT_STATE_HANDOFF_WITNESS_20260927.md` — current payments-firm implementation witness: route/channel handoff can succeed while support/vulnerability state fails to propagate across the customer journey. Paper sketch `coordination/resources/SUPPORT_STATE_HANDOFF_CONTRACT_v0_20260927.md` carries strict privacy/minimisation guards. Preserve `CHANNEL HANDOFF != CONTEXT HANDOFF`; no TRACE/ME patch.
+- `field/FSA_AI_INSPECTION_CAPTURE_CHAIN_20260927.md` — current FSA operational AI pilot witness: voice-to-text for meat-plant inspection capture. Preserve `OBSERVATION != UTTERANCE != TRANSCRIPTION != VALIDATED RECORD`; stronger owner already requires human/traceable safety-critical decisions; public implementation detail is incomplete, so watch pilot outcome rather than infer a gap. **NO TRACE/ME/THR PATCH.**
 - Relay self-mirror receipt `coordination/build_ledger/RELAY_MONITOR_BRAKE_MIRROR_20260927.md` — report-only judge allegations remain explicitly observational; real dispatch/profile gates remain separate fail-closed mechanisms. OpenAI DNS witness does not earn an enforcement rule. **NO RELAY/SIMPLE-v1 PATCH / PRODUCTION UNCHANGED.**
 
 ## Active non-source design
