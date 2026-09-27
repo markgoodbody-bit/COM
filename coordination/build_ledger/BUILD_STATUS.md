@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh OpenAI DNS + Citizens Advice/FCA + FSA + cross-sector support-state witnesses / external gates quiet**
+Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh world witnesses incl early-career hiring never-built-door pressure / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -87,6 +87,7 @@ Current receipts:
 - `field/FSA_AI_INSPECTION_CAPTURE_CHAIN_20260927.md` — current FSA operational AI pilot witness: voice-to-text for meat-plant inspection capture. Preserve `OBSERVATION != UTTERANCE != TRANSCRIPTION != VALIDATED RECORD`; stronger owner already requires human/traceable safety-critical decisions; public implementation detail is incomplete, so watch pilot outcome rather than infer a gap. **NO TRACE/ME/THR PATCH.**
 - `field/CROSS_SECTOR_TELL_ONCE_SUPPORT_STATE_20260927.md` — current cross-sector repeated-disclosure pressure. Subsequent owner subtraction finds portable support/profile state already strongly owned by Personal Communication Passports, NHS Accessible Information Standard, NICE and portable-preference work. `SUPPORT_STATE_HANDOFF_CONTRACT_v0_20260927.md` is now narrowed to a route/action handoff receipt referencing owner-defined minimum support adjustments; `PROFILE CREATED != PROFILE USED`, `HANDOFF RECEIPT != PORTABLE PERSON PROFILE`. Owner map `coordination/resources/SUPPORT_STATE_HANDOFF_STRONG_OWNER_MAP_20260927.md`; receipt `coordination/build_ledger/SUPPORT_STATE_HANDOFF_OWNER_SUBTRACTION_20260927.md`. **NO THR/TRACE/ME PATCH / NO GENERAL PROFILE BUILD.**
 - Relay self-mirror receipt `coordination/build_ledger/RELAY_MONITOR_BRAKE_MIRROR_20260927.md` — report-only judge allegations remain explicitly observational; real dispatch/profile gates remain separate fail-closed mechanisms. OpenAI DNS witness does not earn an enforcement rule. **NO RELAY/SIMPLE-v1 PATCH / PRODUCTION UNCHANGED.**
+- `field/AI_EARLY_CAREER_HIRING_NEVER_BUILT_DOOR_20260927.md` — current labour-market pressure for the existing never-built-door edge: reduced hiring can change entry routes without a layoff/refusal event. Stanford owner evidence is bounded: descriptive young-worker AI-exposure gap is not a causal AI estimate; 41-country junior-share decline is driven mainly by senior growth, not necessarily junior employment loss. **NO TRACE/ME PATCH.**
 
 ## Active non-source design
 
