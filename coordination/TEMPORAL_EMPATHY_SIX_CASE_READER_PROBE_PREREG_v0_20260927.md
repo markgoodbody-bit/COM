@@ -208,11 +208,12 @@ Stop the probe if:
 PROTOCOL = PREPARED
 CARD = PREPARED
 OWNER MATRIX = PREPARED
-CASE PACKETS = NOT YET FROZEN
+CASE PACKETS = FROZEN / PACKETS 01-06
+FROZEN MANIFEST = `coordination/temporal_empathy_probe/FROZEN_MANIFEST_20260927.md`
 READERS = NOT ASSIGNED
 RUN = NOT STARTED
 RESULT = NONE
 ```
 
 Next action:
-find candidate public cases, perform stronger-owner checks, then freeze packets without exposing answer keys to eventual readers.
+obtain a clean reader route outside shared COM visibility. Do not create or expose the adjudication key on the reader-visible shared surface before responses freeze.
