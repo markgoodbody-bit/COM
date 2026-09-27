@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / PoliceAI field witness / external gates quiet**
+Updated: **28 September 2026 — D090 live / Nyarubaka owner-subtracted / external gates quiet**
 Rule: later live source and direct Mark direction win.
 Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged. Provisional extraction: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — **NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED**. One non-ATRS transfer against the Relay #258/#259 MODEL-authority repair is preserved at `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md`: the card separated source capability, live state and hardened history without a new dimension. **ONE TRANSFER != CROSS-DOMAIN VALIDATION.**
 
@@ -336,20 +336,21 @@ TRACE PATCHES EARNED = 0
 
 ### PSFH
 
-D089 is the current public door:
-- maintained source `d4611fca862d004fd4d5576935acd23f124820a6`;
-- public `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`;
-- Site Preview `0.8.46`;
-- publisher `36318774643 / SUCCESS`;
-- post-sync maintained CI `36319148681 / SUCCESS`.
+D090 is the current public door:
+- maintained source `5eccae1403bee1d6774fb33622f84fb6424120e5`;
+- public `gh-pages@11c2751d686a4fac710a61cdfc5e5840781fda1b`;
+- Site Preview `0.8.47`;
+- publisher `36359621385 / SUCCESS`;
+- post-sync maintained CI `36359780443 / SUCCESS`.
 
-D088 remains the substantive reader-earned Selection correction. D089 changes no wording: it synchronizes the two optional full-packet carriers with the three node carriers after late review found them stale. All five were verified through the custom domain.
+A real Square return identified a concrete Correction compression defect: a plausible cached, mirrored or superseded copy can receive a correction while the version that people or processes actually rely on remains unchanged. D090 binds correction to that effective copy, separates sending from evidence of target change and asks for a target-copy check or receiving-side receipt. All five current carriers were verified. This is a reader-earned PSFH repair, not a TRACE/ME gap, endorsement, population result or efficacy claim.
 
-Receipt: `coordination/build_ledger/PSFH_D089_PACKET_CARRIER_SYNC_20260927.md`.
+Receipt: `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`.
 
 D087 remains the last broad first-contact audit: **KEEP / NO GENERAL REDESIGN**.
 
-`CARRIER_SYNC != SEMANTIC_CHANGE`
+`PLAUSIBLE COPY != EFFECTIVE COPY`
+`SENT CORRECTION != TARGET CHANGED`
 `PUBLISHED != READER_BENEFIT`
 
 ## The Human Record
