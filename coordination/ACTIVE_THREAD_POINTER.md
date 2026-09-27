@@ -106,7 +106,7 @@ EvidenceWatch PR #7:
 - public historical workflow specimen FOUND: University of Bern living review / Lombardi preprint->final transition; current practice already checks preprint currentness, avoids double-counting and re-extracts changed content; the same guide reports weekly automated searches adding 100–200 records; a separate six-review evaluation reports 3–300 citations and 5 minutes–32 hours of author-team work per month, as whole-review context rather than EvidenceWatch-attributable burden. EvidenceWatch represents the same-lineage authority succession without code change. Receipt: `coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`. Owner-test matrix: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_OWNER_TEST_20260926.md`. Primary pilot outcome is now reviewer minutes per correctly handled material-change episode versus existing practice. Partner quarry: `coordination/resources/EVIDENCEWATCH_PUBLIC_PILOT_PARTNER_QUARRY_20260926.md`. Stronger gate still open: willing current team + actual matched burden baseline. Mark authorised correction-first contact on 27 September 2026; one email was sent to the official ALEC administrative route. A sent/transmission receipt is established; recipient delivery/read, reply, interest and partnership remain unknown.
 
 ```text
-PROPOSAL BODY = 1482 WHITESPACE WORDS / 18-WORD HEADROOM / FROZEN RC / FINAL FORM-EDITOR RECOUNT REQUIRED
+PROPOSAL BODY = 1485 WHITESPACE WORDS / 15-WORD HEADROOM / FROZEN RC / FINAL FORM-EDITOR RECOUNT REQUIRED
 COPY FREEZE = REPLACE WEAKER WORDING IF NEW FACTS ARRIVE; DO NOT APPEND BY MOMENTUM
 RC = `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_RC_20260927.md`
 COM #538 = CLOSED / HOST-NEUTRAL REPAIR COMPLETE
