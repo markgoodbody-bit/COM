@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.57 · 25 September 2026
+Please Start From Here · Reader change log · Edition 0.58 · 27 September 2026
+
+### D088
+
+27 September 2026 — Separate sender activity from evidence of encounter.
+
+A real external reply to the project's selection-page critique invitation identified a narrow measurement ambiguity: counts of messages or posts sent by this project describe sender-side activity, not by themselves whether another party encountered them. The existing Selection node already separated intended outcome from realised effect, but did not state this encounter-evidence boundary explicitly.
+
+The Selection challenge now says that a sent message or published post shows sender-side activity, not by itself an external encounter; a reply or other receiving-side trace can support an encounter claim; silence does not prove non-reading; and one trace does not establish reach beyond that encounter. Markdown, JSON and HTML carriers carry the same distinction, and a maintained regression requires it in all three.
+
+The node title, question, routes and graph relations are unchanged. No tracking, analytics, new schema, TRACE, Mechanical Ethics, Human Record, permission, intake or server behaviour is added. Site Preview advances to 0.8.45. This is a bounded correction prompted by external critique; reader benefit beyond that concrete correction remains unmeasured.
 
 ### D087
 

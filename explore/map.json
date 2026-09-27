@@ -290,18 +290,18 @@
     },
     {
       "path": "nodes/selection.html",
-      "bytes": 3738,
-      "sha256": "54876fed2288c580f9691b29d37a367e1a8398b1342a077365beed5f5608e17e"
+      "bytes": 4004,
+      "sha256": "7c6280d545ade4d30771c507ec91091e168a432116a5e7a167a8339507e5aa16"
     },
     {
       "path": "nodes/selection.json",
-      "bytes": 2043,
-      "sha256": "af7da65a421b17d5c1840e3d6b5755bd603dd8330f854dd42b4c1c0769b4f9ac"
+      "bytes": 2309,
+      "sha256": "3ba4e3951607602d6537f6b6acd81b8371c9ab4d4e178493677753429a76f173"
     },
     {
       "path": "nodes/selection.md",
-      "bytes": 1368,
-      "sha256": "26eea1bd1f9b8d4572e3307f458e5227cdb32b3b4b9066283d9f328f6745f8ce"
+      "bytes": 1634,
+      "sha256": "fbf97e58e9366c8f3389b5c1b3702023cf2538cd0e8c5410cfe330932a28f2de"
     },
     {
       "path": "nodes/significance.html",
