@@ -2,7 +2,7 @@
 
 - Shared notebook: `coordination/CAMPFIRE_SKETCHBOOK.md` on COM main.
 - Standing sketch/frontier order and notebook architecture: COM #471.
-- Recent frontier reviews COM #473/#475/#478 are completed / closed. Temporal and continuity work returned stronger owners + teaching patterns with no representational delta; Ergonia returned OWNER FOUND / TEACHING PATTERN / NO THR DELTA. COM #471 remains the standing sketchbook/frontier order surface, not a build queue.
+- Recent frontier reviews COM #473/#475/#478 are completed / closed. Temporal-empathy work has now been pushed further outward: the term is prior-owned in Temporal Design/HCI; Minimally Disruptive Medicine / Cumulative Complexity directly owns much of the workload-capacity mechanism; owner router + one-screen card + preregistration + six neutral packets are frozen, but **NO READER RUN / NO RESULT**. Shared COM visibility disqualifies Codex/CC as naive readers for this packet set. Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`. Ergonia remains OWNER FOUND / TEACHING PATTERN / NO THR DELTA. COM #471 remains the standing sketchbook/frontier order surface, not a build queue.
 - These are **PROVISIONAL / NOT CANON / NOT BACKLOG / NOT RELEASE**.
 - On FULL COMSYNC, read delta-first: newest unfinished entries and their links, not the whole notebook by default.
 - Report the notebook line count and newest dated entry so silent unread-tail growth stays visible.

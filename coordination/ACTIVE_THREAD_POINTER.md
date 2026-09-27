@@ -61,6 +61,8 @@ Current world sequence has recently returned:
 
 Next quarry follows materiality, not category quota.
 
+Temporal-empathy side probe is now **PREPARED / NOT RUN**. Prior owners include Temporal Design/HCI and workload-capacity/treatment-burden work; six neutral public-source packets + a leakage-repaired one-screen card are frozen. Minimum clean design requires 12 independent reader-packet responses outside shared COM visibility. Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`. No TRACE/ME patch follows.
+
 ## 2. TRACE / ME successor — released and closed to source churn
 
 There is **no active source-build lane**. COM #365 preserves the world/use route and review history; it is not an active successor build. Beta2 is the preserved first external-review snapshot. Nine outside AI returns supplied by Mark are synthesized at `coordination/TRACE_ME_EXTERNAL_REVIEW_ROUND1_SYNTHESIS_20260923.md`. Beta3 is the preserved round-2 review snapshot. Current released baselines are TRACE v0.4.0 `6c68fae8cbc51d0ef1e77a18e220ceb7a1207025` and ME v0.8.0 `e2ef746e931161cb70ac46a4eaa122442134e86b`; beta4 remains preserved review provenance.

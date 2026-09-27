@@ -277,7 +277,78 @@ REMEMBER-TO-REVISIT COST
 
 Both may matter.
 
-## 6. Capacity is not one scalar
+## 6. Workload-capacity balance / Minimally Disruptive Medicine
+
+### Cumulative Complexity Model / treatment burden
+
+A stronger owner exists for one of the central spinning-plates intuitions.
+
+May, Montori & Mair's *Minimally Disruptive Medicine* (BMJ, 2009), and the later Cumulative Complexity Model / treatment-burden literature, treat care as work that competes with the rest of a person's life.
+
+Owner surfaces:
+- https://www.bmj.com/content/339/bmj.b2803
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC5602768/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7434057/
+
+The model distinguishes:
+- **workload**: what the person has to do, including treatment/self-care plus ordinary life demands;
+- **capacity**: the abilities/resources available to carry that work;
+- dynamic imbalance: when workload exceeds capacity, access, self-care and outcomes can worsen;
+- feedback: worsening illness or intensified treatment can increase workload and reduce capacity further.
+
+This is a direct stronger owner of much of the provisional spinning-plates mechanism.
+
+Absorb:
+
+```text
+REQUIRED WORK
+!=
+CAPACITY TO CARRY IT
+
+TREATMENT / CORRECTION ADDED
+CAN ITSELF ADD BURDEN
+
+MORE HELP
+!=
+LESS TOTAL WORK FOR THE AFFECTED ENTITY
+
+NONADHERENCE / MISSED ACTION
+!=
+LACK OF MOTIVATION BY DEFAULT
+```
+
+The literature also makes a point close to temporal empathy:
+
+the same prescribed workload can be manageable for one person and overwhelming for another because work, caring responsibilities, finances, illness burden, social support and other demands differ.
+
+Project correction:
+
+Do not present a general workload/capacity feedback model as project-original.
+
+The possible cross-domain role is narrower:
+notice when an institution/system is adding work to the entity whose limited capacity is already part of the problem, then route to treatment-burden / workload-capacity / domain-specific owners.
+
+### Burden-of-treatment / workload-capacity case family
+
+This literature is especially useful for the planned reader probe because it supplies a strong test against projection:
+
+```text
+SAME TASK LIST
+!=
+SAME BURDEN
+
+LOW NOMINAL WORKLOAD
+!=
+LOW BURDEN IF CAPACITY IS LOW
+
+HIGH WORKLOAD
+!=
+HIGH BURDEN IF SUPPORT / CAPACITY IS HIGH
+```
+
+That means the teaching card should ask what *work the intervention itself adds*, not merely how many other obligations exist.
+
+## 7. Capacity is not one scalar
 
 ### Wickens — Multiple Resource Theory
 
@@ -303,7 +374,7 @@ Keep `capacity` typed / source-specific where action depends on it.
 
 Do not revive a scalar `C_x(t)` as general human capacity.
 
-## 7. Stress / load across time
+## 8. Stress / load across time
 
 ### Allostatic load
 
@@ -329,7 +400,7 @@ into one generic `stress reduces capacity` equation.
 
 Temporal empathy should route to the correct owner depending on timescale and mechanism.
 
-## 8. Control over one's schedule matters
+## 9. Control over one's schedule matters
 
 ### Gerstel & Clawson — Control over Time (2018)
 
@@ -353,7 +424,7 @@ AFFECTED PERSON CONTROLS THE FLEXIBILITY
 
 This is important for AI / institutional systems that claim to be adaptive while moving variability and coordination cost onto the person.
 
-## 9. Temporal agency / time work
+## 10. Temporal agency / time work
 
 Flaherty, Meinert & Dalsgård (eds.), *Time Work: Studies of Temporal Agency* (2020).
 
@@ -375,7 +446,7 @@ A temporal-empathy account should ask what temporal agency they have:
 - obtain help?
 - refuse synchronization?
 
-## 10. Perspective across time / historical empathy
+## 11. Perspective across time / historical empathy
 
 Historical-empathy traditions distinguish empathy from sympathy and emphasize contextual perspective-taking while resisting presentism.
 
@@ -389,7 +460,7 @@ PROJECT PRESENT-DAY ASSUMPTIONS ONTO IT
 
 But historical empathy is not the same construct as practical temporal burden / timing design.
 
-## 11. Future-self continuity
+## 12. Future-self continuity
 
 Hal Hershfield's future-self continuity work shows that how people represent their future selves can affect intertemporal decisions.
 
@@ -403,7 +474,7 @@ This owns part of:
 
 Do not collapse future-self continuity into temporal empathy. It is a neighbouring mechanism.
 
-## 12. What the project should absorb
+## 13. What the project should absorb
 
 ### A. Credit the term
 
@@ -482,7 +553,7 @@ DECISION CONTROL
 
 This may be particularly useful for accessible systems and Local Steward design.
 
-## 13. The remaining cross-domain project hypothesis
+## 14. The remaining cross-domain project hypothesis
 
 After owner subtraction, the defensible remainder is not a new theory of time or empathy.
 
@@ -494,7 +565,7 @@ That is a **teaching / routing hypothesis**.
 
 It must be tested.
 
-## 14. Work Framework can do next
+## 15. Work Framework can do next
 
 ### Work A — owner matrix
 
@@ -565,7 +636,7 @@ Test which travel into institutional / AI-mediated settings without distortion.
 ME already earned the need for an eventual intellectual-neighbours document.
 Temporal Design / temporal justice / institutional time inequality / administrative burden / disability temporalities should be part of that credit map.
 
-## 15. Current decision
+## 16. Current decision
 
 ```text
 TEMPORAL EMPATHY TERM = PRIOR OWNER FOUND

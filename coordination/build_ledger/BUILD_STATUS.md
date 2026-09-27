@@ -151,6 +151,28 @@ Status: **NO CLEAN TWO-READER RESULT / STOP BY DEFAULT**.
 - Future testing requires an outcome embargo from shared coordination until both freezes; do not immediately rerun by momentum.
 - Receipt: `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`.
 
+### Temporal-empathy reader probe
+
+Status: **OWNER-SUBTRACTED / MATERIALS FROZEN / NOT RUN / NO RESULT**.
+
+- `temporal empathy` is prior-owned in Temporal Design/HCI; no project-origin claim.
+- Minimally Disruptive Medicine / Cumulative Complexity / treatment-burden work directly owns the workload-capacity mechanism that overlapped the spinning-plates sketch.
+- Frozen materials: owner router, one-screen card, preregistration and six neutral public-source packets.
+- Self-review removed stronger-owner answer leakage from Condition B.
+- Minimum clean execution = six packets x two independent conditions = **12 reader-packet responses**, one packet per reader.
+- Readers with shared COM exposure are not naive readers for this packet set.
+- No adjudication key is on the reader-visible shared surface.
+- Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`.
+
+```text
+TERM NOVELTY = NO
+CROSS-DOMAIN ROUTING VALUE = PLAUSIBLE / UNTESTED
+READERS = NONE
+RESULT = NONE
+TRACE PATCH = NO
+ME PATCH = NO
+```
+
 ### PSFH current Door — D089
 
 D087 remains the last broad cold first-contact audit: **KEEP / NO GENERAL REDESIGN**.

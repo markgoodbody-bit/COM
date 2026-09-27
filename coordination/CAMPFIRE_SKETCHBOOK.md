@@ -4470,3 +4470,62 @@ Current disposition:
 
 **TERM CREDITED OUTWARD / IMAGE KEPT / GENERAL MATH DEMOTED / ROUTING HYPOTHESIS PLAUSIBLE / EMPIRICAL ADVANTAGE UNTESTED / NO TRACE OR ME PATCH.**
 
+## 27 September 2026 — treatment burden absorbs the spinning-plates mechanism
+
+Status: **STRONGER OWNER FOUND / IMPORTANT REDUCTION / NO PATCH**
+
+A later owner pass found a much closer prior owner for the spinning-plates / workload-capacity intuition than queueing alone:
+
+**Minimally Disruptive Medicine / Cumulative Complexity Model / treatment burden.**
+
+Core owned structure:
+- treatment and self-care are work;
+- ordinary life demands also consume workload;
+- capacity is finite and context-dependent;
+- workload that exceeds capacity can degrade access, adherence and outcomes;
+- worsening illness / intensified treatment can add still more work and reduce capacity further;
+- the same nominal treatment workload can be manageable for one person and overwhelming for another.
+
+This directly absorbs much of the provisional home-grown `load / capacity / feedback` sketch.
+
+Preserve:
+
+```text
+SAME TASK LIST
+!=
+SAME BURDEN
+
+REQUIRED WORK
+!=
+CAPACITY TO CARRY IT
+
+MORE HELP
+!=
+LESS WORK FOR THE PERSON RECEIVING IT
+
+MISSED ACTION
+!=
+LACK OF MOTIVATION BY DEFAULT
+```
+
+The strongest temporal-empathy addition is therefore not a new workload model.
+
+It is a routing question:
+
+> What work is this intervention / remedy / correction itself adding to the affected entity, and does that work fit the entity's current life plus task-specific capacity before the relevant windows close?
+
+This is especially important because an institution can respond to a struggling entity by adding:
+- forms;
+- appointments;
+- monitoring;
+- evidence requests;
+- repeated contacts;
+- self-management tasks;
+- deadlines.
+
+A nominally supportive response can therefore worsen the workload-capacity imbalance.
+
+Current disposition:
+
+**DIRECT STRONGER OWNER / ABSORB + CREDIT / ADD TO OWNER ROUTER + TEST CARD / NO TRACE OR ME PATCH.**
+
