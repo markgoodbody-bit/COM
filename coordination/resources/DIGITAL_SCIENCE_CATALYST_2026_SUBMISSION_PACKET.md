@@ -120,7 +120,7 @@ A one-watch/two-run live NVIDIA Nemotron witness against public owner pages dedu
 Demo:
 https://youtu.be/0hdwNc_t4pM
 
-There are no research customers or validated efficiency results. Merged work includes the CSL-JSON handoff, DOI-boundary repair, restart/correction witness, a predeclared shadow-mode pilot protocol and deterministic offline scorer. The protocol freezes human labels/configuration before scoring; the scorer measures material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. A synthetic-content / real-format CSL witness also survived restart and routed a controlled 1.8→1.2 publisher correction for review. This is engineering/pilot instrumentation, not researcher validation.
+There are no research customers or validated efficiency results. Merged work includes the CSL-JSON handoff, DOI-boundary repair, restart/correction witness, a predeclared shadow-mode pilot protocol and deterministic offline scorer. The protocol freezes human labels/configuration before scoring; the scorer measures material-change sensitivity, false-alert burden, downstream routing, time-to-flag and reviewer minutes without model calls. A synthetic-content / real-format CSL witness also survived restart and routed a controlled 1.8→1.2 publisher correction for review. A frozen 44-case retrospective run stopped before unblinding after provider/model-output failures; no semantic score was produced or reused as evidence. This is engineering/pilot instrumentation, not researcher validation.
 
 Related public provenance work:
 https://github.com/markgoodbody-bit/human-record
