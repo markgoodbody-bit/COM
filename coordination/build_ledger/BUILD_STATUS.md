@@ -169,6 +169,9 @@ Status: **ACTIVE APPLIED RESEARCH / OWNER ABSORPTION + DESIGN PATTERNS BUILT / O
 - Applied operating-system pass: `coordination/resources/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_PASS_20260927.md`.
 - Applied result: LGSCO complaint waits = **OWNER FOUND / NO MATERIAL DELTA**; Seattle secure scheduling = **STRONGER OWNER / POSITIVE CONTROL**; e-RS negative-transition receipt = **WATCH / NO OUTREACH** because adjacent patient notification functionality shipped 11 Sep 2026; EHC 20-week-only checkpoint = **SUPERSEDED** after recent Ombudsman cases showed awareness/state-change + continuing review are stronger triggers. Current EHC object: `coordination/resources/TEMPORAL_CANDIDATE_EHC_PARALLEL_CLOCK_v1_20260927.md`.
 - Applied receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_20260927.md`.
+- Second applied pass: PIFU = **STRONG OWNER / DESIGN GAP NOT EARNED / IMPLEMENTATION-FIDELITY + BURDEN-TRANSFER PRESSURE**; Awaab's Law Phase 1 = **STRONG OWNER / REAL EARLY CONFORMANCE GAP OBSERVED** from 2026 Test-and-Learn evidence. Working cross-domain distinction: `DESIGN GAP != EXECUTION GAP`.
+- Temporal safeguard conformance audit: `coordination/resources/TEMPORAL_SAFEGUARD_CONFORMANCE_AUDIT_v0_20260927.md`; sample public readings: `coordination/resources/TEMPORAL_SAFEGUARD_CONFORMANCE_SAMPLE_READINGS_20260927.md`. Core chain = specified -> trigger observed -> routed -> clock started -> owner assigned -> acted -> reached -> state rechecked -> material-change retrigger -> outcome/residue. **OWNER-DERIVED / NOT VALIDATED / NO NEW TRACE/ME PRIMITIVE.**
+- Conformance receipt: `coordination/build_ledger/TEMPORAL_SAFEGUARD_CONFORMANCE_20260927.md`.
 - Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`.
 
 ```text
@@ -179,6 +182,8 @@ READER-COMPARISON RESULT = NONE
 ONGOING RESEARCH = CONTINUE
 APPLIED VALUE = PLAUSIBLE / OWNER-ROUTED
 DESIGN / SALIENCE DELTA = YES
+CONFORMANCE LAYER = USEFUL / OWNER-DERIVED / UNVALIDATED
+DESIGN GAP != EXECUTION GAP
 REPRESENTATIONAL GAP = NOT FOUND
 EHC 20-WEEK-ONLY TRIGGER = SUPERSEDED
 TRACE PATCH = NO
@@ -375,4 +380,4 @@ Hot surfaces are intentionally compact.
 
 Practical-advantage test status: **UNRUN / SEPARATE TEST / NOT PROJECT VERDICT**. Outside review has already repaired multiple preregistration defects. Latest #365 discussion leaves prompt asymmetry as an open method item; freeze the intended workflow/scoring before any run. Do not lengthen cases, change cost amortisation, alter scoring or rescue subgroups after outcomes. Released TRACE v0.4.0 / ME v0.8.0 remain frozen absent a concrete source defect or world/use pressure.
 
-TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; PSFH D087 live at `gh-pages@723b07f719adacbca14cd81c61a54bcbf0c58a41`; maintained source `028068961dd8814e639917afcde9bb2cef7b639b`; publication workflow `36198130032` SUCCESS and post-sync maintained CI `36198262841` SUCCESS. D074-D079 are front-door/navigation/presentation repairs; D080 unifies Works; D081 cleans contextual art rooms; D082 unifies conceptual reading rooms; D083 unifies the appeal case family; D084 removes the duplicate accessibility bypass; D085 makes the appeal family human-readable first; D086 makes Explore question-map first; D087 repairs human-facing current TRACE/ME source routes while preserving historical node-source bases. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
+TRACE/ME/PSFH status: TRACE v0.4.0 and ME v0.8.0 released; **PSFH D089 live** at `gh-pages@1d50a8624d07292a20bee74e023958bc75732690`; maintained source `d4611fca862d004fd4d5576935acd23f124820a6`; Site Preview `0.8.46`; publisher `36318774643` SUCCESS and post-sync maintained CI `36319148681` SUCCESS. D088 remains the substantive encounter-evidence wording correction; D089 is carrier synchronization only. None are framework changes. Release != validation. Practical-advantage pilot remains unrun.
