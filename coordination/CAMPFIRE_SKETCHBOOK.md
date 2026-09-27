@@ -4363,3 +4363,110 @@ Current disposition:
 
 **USEFUL STRUCTURAL QUARRY / NEVER-BUILT-DOOR PRESSURE / POSITIVE-CONSTRUCTION + TRANSITION PRESSURE / NO PATCH.**
 
+## 27 September 2026 — temporal empathy owner subtraction / absorption
+
+Status: **STRONGER OWNER FOUND / TERM NOT PROJECT-ORIGINATED / CROSS-DOMAIN ROUTING HYPOTHESIS SURVIVES / NO PATCH**
+
+Research pass:
+`coordination/resources/TEMPORAL_EMPATHY_STRONG_OWNER_MAP_20260927.md`
+
+Important correction:
+
+`temporal empathy` is established prior language in Temporal Design / HCI, not a Framework invention.
+
+Strong lineage:
+- Larissa Pschetz, *Temporal Design* (2014);
+- Pschetz & Michelle Bastian, *Temporal Design: Rethinking time in design* (2018);
+- Bowler, Bach & Pschetz, CHI 2022 Haze work on uncertain scheduling and unrepresented temporalities.
+
+The prior work already owns:
+- plural / situated temporalities;
+- temporal inequality;
+- challenging uniform clock-time assumptions;
+- design that makes different rhythms visible;
+- uncertainty-aware scheduling;
+- temporal empathy as a design orientation.
+
+Recent digital-systems work also converges on system pacing, interruption, recovery and changing availability.
+
+Therefore:
+
+```text
+TEMPORAL EMPATHY TERM
+!=
+PROJECT NOVELTY
+
+MULTIPLE TEMPORALITIES
+!=
+PROJECT NOVELTY
+
+UNCERTAIN TIMING CAN BE MARGINALISED
+!=
+PROJECT NOVELTY
+```
+
+Other stronger owners already cover major mechanisms:
+- temporal justice / discretionary control over time;
+- time poverty;
+- institutional time inequality / speed capital;
+- unequal waiting;
+- administrative burden;
+- prospective memory / intention offloading;
+- multiple-resource workload;
+- allostatic load / chronic stress;
+- schedule control;
+- temporal agency / time work;
+- future-self continuity.
+
+The project should **absorb and route**, not rename.
+
+The cleaner surviving compression is:
+
+```text
+HOW MUCH CLOCK TIME?
+!=
+WHO CONTROLS THE TIME?
+!=
+WHO IMPOSES THE WAIT?
+!=
+WHAT CHANGES WHILE WE WAIT?
+```
+
+Candidate cross-domain value remains:
+
+> notice when an observer is substituting their own temporal condition for the affected entity's, then route to the stronger owner before a consequential window closes.
+
+Possible owner-routed dimensions:
+- imposed duration / waiting;
+- discretionary control / temporal agency;
+- predictability / uncertainty;
+- deadlines / hardening / irreversibility;
+- competing obligations / resource interference;
+- remember-to-act / cue burden;
+- recovery / fatigue / stress timescale;
+- support / shared capability;
+- acceleration privilege;
+- trajectory / what delay forecloses.
+
+Do not revive a single temporal-empathy score or `Theta_x` vector.
+
+Potential teaching prompt for later falsification:
+
+```text
+WHOSE TIME IS THIS?
+
+What imposes the timing?
+What is uncertain?
+Which windows close, and what changes while waiting?
+What other obligations compete for the same capacity?
+What cue/support is needed to act in time?
+Who can accelerate, defer or renegotiate?
+What lost time / future cannot be restored later?
+```
+
+The next earned work is a small independent-reader comparison against real cases, not another theory build.
+
+Current disposition:
+
+**TERM CREDITED OUTWARD / IMAGE KEPT / GENERAL MATH DEMOTED / ROUTING HYPOTHESIS PLAUSIBLE / EMPIRICAL ADVANTAGE UNTESTED / NO TRACE OR ME PATCH.**
+
