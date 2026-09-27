@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.58 · 27 September 2026
+Please Start From Here · Reader change log · Edition 0.59 · 27 September 2026
+
+### D089
+
+27 September 2026 — Keep the full Explore packet synchronized with Selection.
+
+A late hostile review of the already-published D088 change found a carrier mismatch: the standalone Selection Markdown, JSON and HTML carried the new sender-activity / external-encounter boundary, while the optional full `explore/packet.md` and `explore/packet.json` still embedded the previous Selection challenge. The packet was current everywhere else.
+
+D089 copies the existing D088 Selection wording into those two packet carriers and extends the maintained regression from three carriers to all five. No wording, question, route, node, graph, tracking, analytics, TRACE, Mechanical Ethics, Human Record, permission, intake or server behaviour changes here. Site Preview advances to 0.8.46. This is a carrier-currentness repair; reader benefit remains unmeasured.
 
 ### D088
 
