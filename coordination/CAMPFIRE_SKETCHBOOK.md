@@ -3790,3 +3790,131 @@ Current disposition:
 
 Coordination record: COM #601.
 
+## 27 September 2026 — Fixing Factories: repair as capability construction, not only item rescue
+
+Status: **WORLD / REAL USE POSITIVE-CONSTRUCTION WITNESS / OPERATOR EVIDENCE / NO VALIDATION / NO PATCH**
+
+Current owner surfaces:
+- The Restart Project, 23 September 2026:
+  https://therestartproject.org/news/a-new-chapter-for-fixing-factories/
+- Hackney Fixing Factory current programme:
+  https://therestartproject.org/groups/hackney-fixing-factory/
+- Artillery / East London Waste Authority Repair Cafés:
+  https://www.artillery.org.uk/repair-cafes
+
+The bounded object is not the political case for right-to-repair and not a claim that community repair is universally superior.
+
+It is the structure of an operating environment that does more than repair an object for somebody.
+
+Current public owner material shows:
+- five Fixing Factories operating across London;
+- weekly community-repair sessions where visitors inspect, diagnose and repair items with support;
+- a distinct beginner repair club and a volunteer repair club at Hackney;
+- paid skill-development workshops alongside free repair activity;
+- East London Repair Cafés that deliberately add hands-on skill-share workshops to repair events;
+- operator-reported annual Fixing Factory figures of 1,200+ people engaged, 600+ items repaired and 1,300+ kg of waste saved;
+- an operator-reported survey figure that 74% of visitors felt more connected to their community.
+
+Those final figures are organisation-reported impact data, not an independent evaluation.
+
+The useful structure is:
+
+```text
+BROKEN OBJECT
+-> ACCESSIBLE SHARED WORKSPACE
+-> SKILLED HUMAN SUPPORT
+-> PARTICIPANT TAKES PART IN DIAGNOSIS / REPAIR
+-> REPEATED BEGINNER / VOLUNTEER ROUTES
+-> POSSIBILITY OF LOCAL CAPABILITY THAT OUTLASTS ONE REPAIR
+```
+
+This differs from a pure service model:
+
+```text
+ITEM REPAIRED FOR PERSON
+!=
+PERSON / COMMUNITY GAINS REPAIR CAPABILITY
+
+BUT
+
+REPAIR SERVICE
++ PARTICIPATORY PRACTICE
++ REPEATED LEARNING ROUTE
+CAN CREATE A CAPABILITY-BUILDING ENVIRONMENT
+```
+
+The route itself is publicly evidenced. Durable individual capability gain is not established merely because the route exists.
+
+## Relation to Mechanical Ethics / positive construction
+
+Mechanical Ethics already contains the composite Saturday Workshop scene and the positive claim that worthwhile arrangements can develop capability while leaving participants present in decisions about their own lives.
+
+This real case must not be used as validation of that scene or of Mechanical Ethics.
+
+The useful independent pressure is smaller:
+
+> a positive intervention can be designed so that the immediate output is not only the repaired object, but also a route through which practical capability, confidence, relationships and future helping capacity may accumulate.
+
+That adds a useful complement to recent harm/correction work:
+
+```text
+PREVENT LOSS
+!=
+CREATE CAPABILITY
+
+REPAIR OBJECT
+!=
+BUILD REPAIR CAPABILITY
+
+SERVICE DELIVERY
+!=
+PARTICIPATORY CAPABILITY CONSTRUCTION
+```
+
+The case also exposes a burden/design question rather than only a benefit claim:
+- who supplies skilled volunteer time;
+- who funds the physical space and tools;
+- whether free access is sustained;
+- whether progression routes remain usable for people with less time, confidence, money or mobility;
+- whether the programme can survive grant dependence without shifting its burden onto volunteers.
+
+The Restart Project itself says a large share of Fixing Factory operating money comes from a National Lottery grant and is now looking for partners for the next phase. That makes continuity/resource burden part of the positive-construction account rather than an external footnote.
+
+## Ceilings
+
+Do not infer:
+- longitudinal skill retention from attendance;
+- causal community connection from self-reported visitor surveys;
+- that every visitor progresses from recipient to fixer;
+- that access is equally usable by all local residents;
+- that five sites establish a scalable national model;
+- that waste/carbon estimates independently verify wider environmental benefit;
+- that the programmes validate Mechanical Ethics, TRACE or the Saturday Workshop scene;
+- that repair culture is the project's invention.
+
+Stronger owners remain community-repair practitioners, repair organisations, skills/education research, circular-economy practice and local programme evaluators.
+
+## Falsification / project consequence
+
+No TRACE or Mechanical Ethics semantic change is required.
+
+The case does earn one positive-construction teaching distinction:
+
+```text
+IMMEDIATE OUTPUT
+!=
+ONLY DURABLE OUTPUT
+
+A WELL-DESIGNED HELPING ENVIRONMENT
+MAY ALSO BUILD
+FUTURE CAPABILITY TO HELP SELF / OTHERS
+```
+
+That is already representable inside current ME/Open Horizon language.
+
+Current disposition:
+
+**REAL POSITIVE-CONSTRUCTION WITNESS / CAPABILITY ROUTE OBSERVED / LONGITUDINAL EFFECT UNKNOWN / KEEP IN CAMPFIRE / NO PATCH.**
+
+Coordination record: COM #606.
+
