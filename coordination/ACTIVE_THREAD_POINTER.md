@@ -76,7 +76,7 @@ EXTERNAL REVIEW = RETURNED / SYNTHESIZED / NOT VALIDATION
 
 Next: world/use pressure, not another general rewrite. The practical-advantage preregistration remains a separate unrun test. Reopen either released source only for a concrete defect or evidence from use; do not weaken release integrity or manufacture beta5 by momentum.
 
-## 3. Current human gate — Digital Science Catalyst Grant 2026
+## 3. Digital Science Catalyst Grant 2026 — submitted / awaiting result
 
 Owner rules rechecked **25 September 2026**:
 - theme: **Agentic Workflows You Can Trust**;
@@ -112,10 +112,11 @@ RC = `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_RC_20260927.md`
 OWNER CURRENTNESS = `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_OWNER_CURRENTNESS_REPAIR_20260927.md`
 LIVE FORM BUDGET REPAIR = `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_LIVE_FORM_BUDGET_REPAIR_20260927.md`
 PRE-SEND REVIEW = `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_PRESEND_REVIEW_REPAIR_20260927.md`
+SUBMISSION RECEIPT = `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_RECEIPT_20260927.md`
 COM #538 = CLOSED / HOST-NEUTRAL REPAIR COMPLETE
-APPLICATION SENT = NO
-LIVE FORM = PAGE 3 REACHED / ALL FORM PAGES INSPECTED / LINK + HUMAN CHECK + SUBMIT REMAIN
-FINAL IDENTITY / TERMS / BUDGET / SUBMIT = MARK HUMAN GATE
+APPLICATION SENT = YES / 2026-09-27 17:47 BST
+GOOGLE FORM = RESPONSE RECORDED / EMAIL COPY RECEIVED
+RESULT = UNKNOWN / WAIT FOR DIGITAL SCIENCE
 ```
 
 ### Secondary machine lane — Mercor AI Safety Fund
