@@ -19,19 +19,19 @@ Canonical prep:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_EVIDENCEWATCH_PREP.md`
 
 Git blob:
-`e5e00e4ae7486e1ba14007d9a0ce1ee37e31dd6a`
+`3e81765547388c37c65d63401477788cfffd64d4`
 
 Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Git blob:
-`7489833a1a8d3a6f5718ad069fc294f4b67f60be`
+`fca570bbb30f8dae78cf8c16af8f4e6916e1841d`
 
 Current whitespace-delimited proposal recount:
-**1,485 words**
+**1,464 words**
 
 Headroom against owner limit:
-**15 words**
+**36 words**
 
 Practical rule:
 **DO NOT POLISH FURTHER BY MOMENTUM.**
@@ -120,19 +120,19 @@ EvidenceWatch survives only as a narrow workflow-integration / burden hypothesis
 ## Human gate
 
 Still not done:
-- no identity/contact field entered in the live application;
-- later live form fields / application-specific terms not fully inspected;
-- no terms accepted;
+- live form inspected through page 3; primary-contact/application fields have been crossed sufficiently to reach the final page;
+- page 3 exposes only the application-document link and arithmetic human check before Submit;
+- no Catalyst-specific award/IP agreement or separate terms acceptance was visible in the inspected form pages;
+- award-stage contractual terms remain unresolved;
 - no final submit.
 
 Before submission:
-1. enter/review identity fields;
-2. inspect the actual remaining form pages;
-3. read privacy/publicity/IP/award terms presented there;
-4. map actual fields to the prepared form-field pack;
-5. refuse unsupported company/academic/customer/partner claims;
-6. final human read;
-7. submit only on Mark's release.
+1. create the exact application document from the frozen 1,464-word proposal;
+2. make the document readable to Digital Science reviewers without edit rights;
+3. paste the verified document link into the live form;
+4. answer the arithmetic human check;
+5. final human read of the visible form values;
+6. submit only on Mark's explicit release.
 
 ```text
 PROPOSAL FROZEN != APPLICATION SUBMITTED

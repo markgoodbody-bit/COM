@@ -2,14 +2,17 @@
 
 Date: 27 September 2026
 
-Status: **PREPARED COPY / CURRENTNESS REPAIRED 27 SEP / NOT ENTERED / 2026 LATER FORM FIELDS UNINSPECTED**
+Status: **LIVE 2026 FIELDS INSPECTED THROUGH PAGE 3 / PREPARED COPY MAPPED / NOT SUBMITTED**
 
 Purpose: reduce friction after the human identity gate without pretending the 2026 Google Form uses the same fields as prior years.
 
 Known current form state:
-- live form reached;
-- page 1 asks for email;
-- pages 2–3 remain uninspected because no identity/email was entered.
+- live form reached through page 3;
+- page 2 asks for primary contact name, short abstract, discovery route and research-lifecycle location;
+- page 3 requires the application-document link and arithmetic human check;
+- page 3 specifies a 75-word cap for Section 9 Budget;
+- no separate Catalyst-specific terms checkbox or award agreement was visible in the inspected form pages;
+- final Submit remains untouched.
 
 Historical comparator:
 The publicly available OpenRefine 2025 Catalyst application shows that the 2025 form separately asked for a primary contact, discovery source, short abstract and a link to the full application document. **2025 FORM != 2026 FORM.** The copy below is therefore prepared only for fields that actually appear after Mark crosses the current form gate.
@@ -116,7 +119,7 @@ Canonical copy:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Current proposal:
-**Current exact proposal body: 1,485 whitespace-delimited words / nine required 2026 headings. Recount in the submission editor before final submit.**
+**Current exact proposal body: 1,464 whitespace-delimited words / nine required 2026 headings. Recount in the submission editor before final submit.**
 
 ## Budget
 
@@ -133,6 +136,8 @@ model/API/infrastructure + independent security/provenance review + reproducibil
 ```
 
 Total maximum: **£25,000**
+
+Form-specific constraint: Section 9 is capped at **75 words**. Current canonical budget copy is **65 whitespace-delimited words**.
 
 Preserve staged stop path.
 

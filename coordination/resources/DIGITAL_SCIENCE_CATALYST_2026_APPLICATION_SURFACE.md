@@ -2,7 +2,7 @@
 
 Date: 26 September 2026
 
-Status: **OWNER PAGE VERIFIED / LIVE FORM FIELDS NOT RESOLVED BY FRAMEWORK / DO NOT INVENT**
+Status: **LIVE THREE-PAGE FORM INSPECTED THROUGH PAGE 3 / REQUIRED FIELDS RESOLVED / NOT SUBMITTED**
 
 ## Public owner facts reverified 26 September 2026
 
@@ -30,29 +30,44 @@ The owner page explicitly asks applicants to name:
 - a refuse/flag/escalate failure test;
 - an outcome metric.
 
-## Form-resolution ceiling
+## Live form fields — inspected 27 September 2026
 
-Digital Science's current public social links expose the application through:
-`https://bit.ly/4cnE9O6`
+The live Google Form was inspected manually through all three pages.
 
-Framework's web aperture can verify that this is the advertised application short-link, but cannot resolve the short-link into the live form. Container DNS cannot reach it either.
+Page 2 fields:
+- primary contact name;
+- short abstract;
+- discovery route ("How did you hear about the Catalyst Grant?");
+- research-lifecycle location, multi-select.
+
+Page 3:
+- repeats the nine required proposal headings and prompts;
+- specifies **Section 9 BUDGET (75 words)**;
+- requires a **link** to the Catalyst Grant Application document;
+- requires the arithmetic human-check question `10 + (7 - 3)`;
+- states that a copy of responses will be emailed to the supplied address;
+- shows Google reCAPTCHA Privacy/Terms;
+- exposes **Submit** directly after those fields.
+
+No company, institution, incorporation, customer, revenue, partner, upload, publicity-consent, IP-licence checkbox or separate Catalyst-specific terms field was visible in the inspected form pages.
 
 Therefore:
 
 ```text
-OWNER PAGE VERIFIED != LIVE FORM INSPECTED
-PUBLIC SHORT-LINK EXISTS != FIELD SCHEMA KNOWN
-EQUITY-FREE PUBLIC DESCRIPTION != FULL AWARD TERMS REVIEWED
-GENERAL DIGITAL SCIENCE TERMS != CATALYST GRANT TERMS BY ASSUMPTION
+FORM FIELDS INSPECTED
+!=
+AWARD AGREEMENT INSPECTED
+
+NO CATALYST-SPECIFIC IP TERM VISIBLE IN FORM
+!=
+NO SUCH TERM EXISTS AT AWARD STAGE
+
+LINK FIELD
+!=
+PERMISSION TO SUBMIT A PRIVATE / INACCESSIBLE DOCUMENT
 ```
 
-Do not invent:
-- form field names;
-- required company/institution status;
-- privacy/publicity checkboxes;
-- grant-agreement IP terms;
-- award acceptance obligations;
-- tax treatment.
+The application-document link must be readable by Digital Science reviewers without granting edit rights.
 
 ## Proposal evidence claims reverified
 
@@ -75,7 +90,7 @@ Form-ready packet:
 `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_PACKET.md`
 
 Canonical proposal body:
-**1485 whitespace-delimited words by current COM recount**
+**1464 whitespace-delimited words by current COM recount**
 
 Final submission-editor recount remains required.
 
