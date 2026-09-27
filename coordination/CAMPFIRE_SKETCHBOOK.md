@@ -4818,3 +4818,75 @@ Current disposition:
 
 **CONFORMANCE LAYER USEFUL / TWO BOUNDED APPLICATIONS / NO VALIDATION / TRACE PATCH NO / ME PATCH NO / KEEP WORKING.**
 
+## 27 September 2026 — temporal conformance: front-stage protection, back-stage clocks, and lifecycle currentness
+
+Status: **WORLD / REAL USE / FINANCE + ENERGY / NO PATCH**
+
+Third applied pass:
+- APP scam reimbursement;
+- involuntary prepayment meters.
+
+APP reimbursement adds a useful clock separation.
+
+Current PSR data show strong consumer-facing reimbursement timing while a separate inter-firm reimbursement-contribution clock performed less well.
+
+Preserve:
+
+~~~text
+AFFECTED-ENTITY PROTECTION CLOCK
+!=
+INTERNAL DEPENDENCY / SETTLEMENT CLOCK
+
+INTERNAL CLOCK MISSED
+!=
+AFFECTED ENTITY HARMED BY DEFAULT
+
+AFFECTED ENTITY PROTECTED
+!=
+INTERNAL PROCESS HEALTHY
+~~~
+
+This blocks a common over-inference:
+a hidden process defect can matter without proving that the protection failed for the person.
+
+The prepayment-meter owner material adds a different correction.
+
+A one-time vulnerability/suitability decision can become stale.
+
+~~~text
+INITIAL SUITABILITY
+!=
+ONGOING SUITABILITY
+
+VULNERABILITY RECORDED AT t0
+!=
+VULNERABILITY CURRENT AT t1
+
+SAFE AT ENTRY
+!=
+SAFE LATER
+~~~
+
+Ofgem's current evidence is mixed in a useful way:
+serious inappropriate-installation cases were not widespread in the reviewed population, but data/record/process defects and vulnerable-customer monitoring failures still produced material redress/enforcement work.
+
+That means:
+
+~~~text
+NO WIDESPREAD CATASTROPHIC FAILURE
+!=
+PROCESS CONFORMANCE IS GOOD ENOUGH
+~~~
+
+The temporal safeguard conformance audit was therefore refined to include:
+- front-stage versus back-stage clocks;
+- gate versus lifecycle/currentness conformance;
+- actor-reported versus independently verified conformance evidence.
+
+Receipt:
+`coordination/build_ledger/TEMPORAL_CONFORMANCE_FINANCE_ENERGY_20260927.md`
+
+Current disposition:
+
+**CONFORMANCE LAYER STILL USEFUL / FOUR BROAD OWNER FAMILIES PRESSURED / NO VALIDATION / TRACE PATCH NO / ME PATCH NO.**
+
