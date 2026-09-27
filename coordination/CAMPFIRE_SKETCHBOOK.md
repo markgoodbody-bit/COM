@@ -5598,3 +5598,67 @@ Current disposition:
 
 **KEEP AS POSITIVE PRE-SCALE GOVERNANCE WITNESS / AFFECTED-GROUP DISSENT PRESERVED / NO NEW TOOL / NO TRACE-ME PATCH / WATCH WHETHER IMPLEMENTATION MATCHES INTENT.**
 
+## 28 September 2026 — a built asset is real before its promised future is
+
+Status: **NON-UK MATERIAL POSITIVE CONSTRUCTION / PROVISIONAL HANDOVER / NO OUTCOME CLAIM / NO PATCH**
+
+ARDE/KUBAHO reports that a newly constructed solar-powered irrigation system in Nyarubaka, Rwanda was provisionally handed over on 18 September.
+
+The physical change matters:
+- river intake;
+- central sump;
+- solar pump;
+- uphill holding dam;
+- gravity-fed field distribution;
+- intended 10-hectare irrigation surface.
+
+A beneficiary cooperative committee and Water User Committee were present at handover.
+
+But the same source says farmers had not yet started planting.
+
+That gives us a clean positive-construction boundary:
+
+~~~text
+INFRASTRUCTURE COMPLETED
+!=
+AGRICULTURAL OUTCOME ACHIEVED
+
+PROVISIONAL HANDOVER
+!=
+DURABLE OPERATING CAPABILITY DEMONSTRATED
+
+SYSTEM READY FOR USE
+!=
+SYSTEM USED
+
+FUTURE POSSIBILITY CREATED
+!=
+FUTURE BENEFIT REALISED
+~~~
+
+Do not over-correct in the other direction: something material **has** been built. New water-routing capability now exists where it did not before.
+
+The honest state chain is:
+
+~~~text
+NEED / TARGET
+-> DESIGN / FINANCE
+-> CONSTRUCTION
+-> PROVISIONAL HANDOVER
+-> OPERATION
+-> USER UPTAKE
+-> MAINTENANCE
+-> OUTCOME
+~~~
+
+Current evidence reaches only partway through that chain.
+
+Also preserve source discipline: ARDE/KUBAHO describes Water User Committee training/maintenance practices on other projects, but that does not establish training or maintenance capability for this exact Nyarubaka system.
+
+Field note:
+field/NYARUBAKA_SOLAR_IRRIGATION_PROVISIONAL_HANDOVER_20260928.md
+
+Current disposition:
+
+**KEEP AS MATERIAL POSITIVE-CONSTRUCTION + HANDOVER-BOUNDARY WITNESS / NO NEW TOOL / NO TRACE-ME PATCH / EVENT-TRIGGERED REOPEN ONLY / NO STANDING MONITOR.**
+
