@@ -6,13 +6,19 @@ Status: **PAPER DESIGN SKETCH / OWNER-ROUTED / NOT CANON / NOT DEPLOYED**
 
 World pressure:
 - Citizens Advice channel-lock witness;
-- FCA vulnerable-payments review.
+- FCA vulnerable-payments review;
+- Public Accounts Committee cross-sector "tell us once" / vulnerable-consumer burden report.
 
 Purpose:
 
-Represent the smallest state that may need to survive a channel/team handoff so an affected person does not have to restart a consequential service journey from zero.
+Represent the smallest state that may need to survive a channel/team/organisation handoff so an affected person does not have to restart a consequential service journey from zero.
 
-This is **not** a universal customer profile or a permission to propagate sensitive data.
+This is **not**:
+- a universal customer profile;
+- a universal living-person graph;
+- a debt registry;
+- a permission to propagate sensitive data;
+- a claim that centralisation is the correct topology.
 
 ## Core object
 
@@ -77,6 +83,42 @@ FULL PERSONAL PROFILE
 
 Where the relevant owner does not support carrying a field:
 omit it or mark it UNKNOWN.
+
+## Cross-sector boundary
+
+Cross-sector use makes the privacy/currentness problem stronger, not weaker.
+
+Preserve:
+
+~~~text
+TELL US ONCE
+!=
+TELL EVERYONE EVERYTHING
+
+PORTABLE SUPPORT STATE
+!=
+CENTRAL OWNERSHIP
+
+SUPPORT NEED
+!=
+DEBT PROFILE
+
+CONSENT / AUTHORITY AT t0
+!=
+PERMANENT AUTHORITY AT t1
+~~~
+
+For cross-organisation propagation, the stronger owner should additionally determine:
+- lawful basis / consent where applicable;
+- purpose;
+- recipient scope;
+- revocation/withdrawal semantics where applicable;
+- retention/currentness period;
+- correction propagation;
+- provenance/source authority;
+- whether a data intermediary / federated / direct-sharing architecture is safer than a central register.
+
+The object should carry only the minimum action-relevant support state needed for the receiving route.
 
 ## Success question
 
