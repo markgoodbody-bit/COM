@@ -186,6 +186,32 @@ ACTION COMPLETED
 PROTECTION EFFECTIVE
 ~~~
 
+## 7.1 Front-stage protection versus back-stage dependencies
+
+A safeguard can protect the affected entity even while an internal dependency performs poorly.
+
+Ask:
+- which clock is visible to the affected entity?
+- which internal settlement / handoff / reconciliation clocks support it?
+- can one actor absorb an internal delay so the protection still reaches the person?
+- if the internal clock fails, what consequence actually propagates outward?
+
+~~~text
+AFFECTED-ENTITY PROTECTION CLOCK
+!=
+INTERNAL DEPENDENCY CLOCK
+
+INTERNAL CLOCK MISSED
+!=
+AFFECTED-ENTITY HARM BY DEFAULT
+
+AFFECTED ENTITY PROTECTED
+!=
+INTERNAL PROCESS HEALTHY
+~~~
+
+Do not infer consumer harm from a hidden process failure without evidence of propagation.
+
 ## 8. Parallel clocks / routes
 
 What else is happening while this process runs?
@@ -231,6 +257,31 @@ Ask:
 AGENCY
 !=
 UNSUPPORTED RESPONSIBILITY
+~~~
+
+## 9.1 Gate conformance versus lifecycle conformance
+
+A one-time eligibility / suitability / vulnerability check can be correct and still become stale.
+
+Ask:
+- which facts can materially change after entry?
+- who can observe that change?
+- what triggers reassessment?
+- is there a natural lifecycle event such as debt repayment, expiry, treatment review or change in household circumstances?
+- can a person return to a safer/more supported route?
+
+~~~text
+SAFE AT ENTRY
+!=
+SAFE LATER
+
+SUITABLE AT t0
+!=
+SUITABLE AT t1
+
+ELIGIBILITY CHECK
+!=
+ONGOING CURRENTNESS
 ~~~
 
 ## 10. Review / re-trigger
@@ -289,6 +340,29 @@ LOCAL PERFORMANCE IMPROVED
 !=
 TOTAL BURDEN REDUCED
 ~~~
+
+## 12.1 Evidence / verification of conformance
+
+A conformance claim is only as strong as the evidence surface supporting it.
+
+Ask:
+- who produced the data?
+- who can verify it?
+- is the evidence actor-supplied, independently sampled, audited or cross-checked?
+- are revisions/version changes visible?
+- does one party's dataset cover the other party's part of the chain?
+
+~~~text
+CONFORMANCE REPORTED
+!=
+CONFORMANCE INDEPENDENTLY VERIFIED
+
+DASHBOARD CURRENT
+!=
+ALL UNDERLYING DATA INDEPENDENT
+~~~
+
+This is not a demand for universal external audit. It is a custody/verification disclosure.
 
 ## Compact status notation
 
@@ -388,4 +462,4 @@ Delete or demote this audit if:
 
 Current disposition:
 
-**WORKING AUDIT / OWNER-DERIVED / USE ON PUBLIC CASES / NO VALIDATION CLAIM.**
+**WORKING AUDIT / OWNER-DERIVED / REFINED BY HEALTH, HOUSING, FINANCE + ENERGY CASES / USE ON PUBLIC CASES / NO VALIDATION CLAIM.**
