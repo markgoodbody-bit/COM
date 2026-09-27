@@ -61,17 +61,9 @@ The card should fit on one screen.
 
 ## Stop / route
 
-If the answer depends on a stronger field, route there.
+If the answer depends on specialist knowledge or a stronger domain method, say so and identify what kind of expertise/evidence is needed.
 
-Examples:
-- uncertain scheduling -> Temporal Design / HCI;
-- discretionary time -> time poverty / temporal justice;
-- institutional delay -> institutional-time / administrative-burden work;
-- remembering when -> prospective memory;
-- workload-capacity imbalance -> treatment-burden / Minimally Disruptive Medicine;
-- task collision -> human factors / scheduling;
-- chronic load -> stress/allostatic owners;
-- irreversibility -> remedies / domain-specific protection.
+Do not invent the domain answer from this card.
 
 ## Guard
 
