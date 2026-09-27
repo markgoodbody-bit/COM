@@ -153,7 +153,7 @@ Status: **NO CLEAN TWO-READER RESULT / STOP BY DEFAULT**.
 
 ### Temporal-empathy reader probe
 
-Status: **ACTIVE OWNER-ABSORPTION / OPTIONAL READER TEST PREPARED / NOT RUN / NO RESULT**.
+Status: **ACTIVE OWNER-ABSORPTION / DESIGN PATTERNS BUILT / OPTIONAL READER TEST PREPARED / NOT RUN / NO RESULT**.
 
 - `temporal empathy` is prior-owned in Temporal Design/HCI; no project-origin claim.
 - Minimally Disruptive Medicine / Cumulative Complexity / treatment-burden work directly owns the workload-capacity mechanism that overlapped the spinning-plates sketch.
@@ -162,6 +162,10 @@ Status: **ACTIVE OWNER-ABSORPTION / OPTIONAL READER TEST PREPARED / NOT RUN / NO
 - Minimum clean execution for a future **independent reader-comparison claim** = six packets x two independent conditions = **12 reader-packet responses**, one packet per reader.
 - Readers with shared COM exposure are not naive readers for this packet set; this constrains only the optional reader-comparison evidence lane, not ongoing temporal-empathy research.
 - No adjudication key is on the reader-visible shared surface.
+- Deeper owner absorption added disability/crip temporalities, schedule predictability/control, recovery/slack and accompaniment/collective-access pressure. Design pattern library: `coordination/resources/TEMPORAL_EMPATHY_DESIGN_PATTERNS_20260927.md`.
+- Released TRACE/ME coverage audit found no current representational gap: `coordination/resources/TEMPORAL_EMPATHY_TRACE_ME_COVERAGE_AUDIT_20260927.md`.
+- Current design correction: `DIFFERENT RHYTHM != DEFICIT`; `OPERATOR FLEXIBILITY != AFFECTED-PERSON TEMPORAL AGENCY`; `NO SCHEDULED TASK != AVAILABLE CAPACITY`.
+- Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_DESIGN_ABSORPTION_20260927.md`.
 - Receipt: `coordination/build_ledger/TEMPORAL_EMPATHY_PROBE_PREP_20260927.md`.
 
 ```text
@@ -170,6 +174,8 @@ CROSS-DOMAIN ROUTING VALUE = PLAUSIBLE / UNTESTED
 READERS = NONE
 READER-COMPARISON RESULT = NONE
 ONGOING RESEARCH = CONTINUE
+DESIGN / SALIENCE DELTA = YES
+REPRESENTATIONAL GAP = NOT FOUND
 TRACE PATCH = NO
 ME PATCH = NO
 ```

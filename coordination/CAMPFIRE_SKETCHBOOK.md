@@ -4529,3 +4529,119 @@ Current disposition:
 
 **DIRECT STRONGER OWNER / ABSORB + CREDIT / ADD TO OWNER ROUTER + TEST CARD / NO TRACE OR ME PATCH.**
 
+## 27 September 2026 — temporal empathy: do not normalise everyone to the system clock
+
+Status: **OWNER ABSORPTION / DESIGN CORRECTION / NO PATCH**
+
+Deeper work in disability temporalities, time poverty, schedule predictability and current TRACE/ME source produced an important correction.
+
+A temporal-empathy project can drift while sounding compassionate.
+
+Failure mode:
+
+```text
+PERSON HAS DIFFERENT / UNCERTAIN / SLOWER RHYTHM
+-> SYSTEM "UNDERSTANDS"
+-> SYSTEM HELPS PERSON CONFORM TO THE SAME PRODUCTIVITY CLOCK
+```
+
+That is not enough.
+
+Crip-time / disability-studies work challenges the assumption that non-normative pacing is simply a deficit to repair. Chrononormativity names the organisation of bodies around productivity-oriented temporal norms. Margaret Price's work adds collective accountability / accompaniment rather than relying only on individualized exception requests.
+
+Preserve:
+
+```text
+DIFFERENT RHYTHM
+!=
+DEFICIT
+
+SLOWER
+!=
+WORSE BY DEFAULT
+
+ACCESS
+!=
+MAKING THE PERSON MATCH THE INSTITUTION
+
+ACCOMMODATION ROUTE
+!=
+ACCESSIBLE ENVIRONMENT
+```
+
+The project-level question should therefore include:
+
+> Which timing requirements are genuinely load-bearing, which are inherited norms, and which side has power to change them?
+
+A second owner pass on work schedules strengthens the same point.
+
+Unpredictable scheduling can transfer temporal risk from organisation to worker. An employer can become more operationally flexible while the worker loses predictability, sleep, economic security or ability to coordinate care.
+
+```text
+OPERATOR FLEXIBILITY ↑
+CAN COEXIST WITH
+AFFECTED-PERSON TEMPORAL AGENCY ↓
+```
+
+A third correction concerns recovery.
+
+Empty calendar space is not automatically spare capacity.
+
+```text
+NO SCHEDULED TASK
+!=
+AVAILABLE CAPACITY
+
+REST
+!=
+WASTED TIME
+
+SLACK
+CAN BE
+RECOVERY / CORRECTION CAPACITY
+```
+
+That links disability temporalities, fatigue/recovery, time poverty and resilience without claiming they are the same discipline.
+
+Design patterns extracted into:
+`coordination/resources/TEMPORAL_EMPATHY_DESIGN_PATTERNS_20260927.md`
+
+Released-source coverage audit:
+`coordination/resources/TEMPORAL_EMPATHY_TRACE_ME_COVERAGE_AUDIT_20260927.md`
+
+Coverage result:
+
+Current Mechanical Ethics already represents:
+- unequal waiting cost;
+- strategic uncertainty;
+- slow harm;
+- burden placement;
+- clock/evidence control;
+- temporary protection;
+- competing clocks.
+
+Current TRACE already represents:
+- WAIT / DELAY / INACTION;
+- delay as non-neutral;
+- route usability / fast enough;
+- typed clocks;
+- hardening;
+- burden creation / relief / transfer.
+
+No ontology gap is currently earned.
+
+The useful delta is:
+
+```text
+ATTRIBUTION
++ SALIENCE
++ DESIGN INTERVENTIONS
++ ANTI-NORMALISATION GUARD
+```
+
+not a new temporal primitive.
+
+Current disposition:
+
+**KEEP WORKING / DESIGN + OWNER ABSORPTION ACTIVE / TRACE PATCH NO / ME PATCH NO.**
+
