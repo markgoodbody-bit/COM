@@ -1,0 +1,160 @@
+name: PSFH D089 publish packet carrier sync
+
+on:
+  push:
+    branches:
+      - framework/psfh-d089-publish-20260927
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - 'public/explore/packet.md'
+      - 'public/explore/packet.json'
+      - '.github/workflows/psfh-d089-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d089:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d089-publish-20260927
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Pin D089 history and provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['site_edition']='0.8.46'
+          m['updated']='2026-09-27'
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          for old in ('D045-D086','D045-D087','D045-D088'):
+              note=note.replace(old,'D045-D089')
+          m['provenance']['change_history_addendum_note']=note
+          m['provenance']['packet_carrier_sync_d089']={
+            'source_pr':'https://github.com/markgoodbody-bit/COM/pull/629',
+            'basis':'6230335250dfd7ee69f2638a0b2008355ece3a84',
+            'candidate_head':'fb15d513235e413cdb185b3bb7a2bb33c9778265',
+            'late_review_coordination':'https://github.com/markgoodbody-bit/COM/issues/76#issuecomment-5855271357',
+            'scope':'The D088 Selection encounter-evidence wording is copied unchanged into explore/packet.md and explore/packet.json, and the maintained regression now checks all five Selection carriers. No wording, graph relation, tracking, analytics, TRACE/ME/THR source, permission, intake or server-behaviour change. Reader benefit remains unmeasured.'
+          }
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D089_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D089_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Build and check
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          git diff --check
+      - name: Commit exact D089 manifest pins
+        run: |
+          git config user.name "PSFH D089 publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "No D089 manifest pin delta" >&2
+            exit 1
+          fi
+          git commit -m "PSFH D089: pin packet-carrier release provenance"
+          git push origin HEAD:framework/psfh-d089-publish-20260927
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: c1dec76b8c28e8bbc5d9ad406067261070e4c555
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+      - name: Stage exact built site over D088
+        run: |
+          rm -rf /tmp/psfh-d089-publish
+          git worktree add -B gh-pages /tmp/psfh-d089-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d089-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d089-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d089-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d089-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='CNAME' \
+            --exclude='.nojekyll' \
+            --exclude='.gitattributes' \
+            --exclude='/README.md' \
+            out/ /tmp/psfh-d089-publish/
+          test "$(git -C /tmp/psfh-d089-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d089-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d089-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d089-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d089-publish/resources');"
+          git -C /tmp/psfh-d089-publish status --short
+      - name: Commit and publish D089
+        run: |
+          git -C /tmp/psfh-d089-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d089-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d089-publish add -A
+          if git -C /tmp/psfh-d089-publish diff --cached --quiet; then
+            echo "No D089 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d089-publish commit -m "Publish PSFH D089 packet carrier sync"
+          git -C /tmp/psfh-d089-publish push origin HEAD:gh-pages
+      - name: Verify D089 served bytes
+        run: |
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/manifest.json -o /tmp/psfh-live-manifest.json && grep -F '"site_edition": "0.8.46"' /tmp/psfh-live-manifest.json; then
+              ok=1
+              break
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || { echo "Live manifest did not converge to D089" >&2; exit 1; }
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/nodes/selection.html -o /tmp/psfh-live-selection.html
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/nodes/selection.md -o /tmp/psfh-live-selection.md
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/nodes/selection.json -o /tmp/psfh-live-selection.json
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/packet.md -o /tmp/psfh-live-packet.md
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/packet.json -o /tmp/psfh-live-packet.json
+          curl -fsSL --max-time 20 https://pleasestartfromhere.com/changes.html -o /tmp/psfh-live-changes.html
+
+          for f in /tmp/psfh-live-selection.html /tmp/psfh-live-selection.md /tmp/psfh-live-selection.json /tmp/psfh-live-packet.md /tmp/psfh-live-packet.json; do
+            grep -F 'sender-side activity, not by itself an external encounter' "$f"
+            grep -F 'silence does not prove non-reading' "$f"
+            grep -F 'one trace does not establish reach beyond that encounter' "$f"
+          done
+
+          grep -F 'D089' /tmp/psfh-live-changes.html
+          grep -F 'Keep the full Explore packet synchronized with Selection.' /tmp/psfh-live-changes.html
+          echo "D089 selected live-byte verification PASS"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PACKET_CARRIER != OPTIONAL_STALE_SNAPSHOT
+# CARRIER_SYNC != SEMANTIC_CHANGE
+# SENDER_ACTIVITY != EXTERNAL_ENCOUNTER_EVIDENCE
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
