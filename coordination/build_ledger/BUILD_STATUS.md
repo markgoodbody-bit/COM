@@ -181,18 +181,18 @@ Remaining issues are policy/controller/legal/production-topology choices, not so
 
 ### Digital Science Catalyst Grant 2026
 
-Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
+Status: **SUBMITTED / RESPONSE RECORDED / EMAIL COPY RECEIVED / RESULT UNKNOWN**.
 
 - owner deadline: **5 Oct 2026, 17:00 BST**;
-- proposal hard-limit: 1,500 words; current exact COM recount after host-neutral repair + bounded retrospective-disclosure sentence + Digital Science-owned currentness substitution is **1,479 whitespace-delimited words**; 21-word headroom; live Section 9 budget sub-cap is 75 words and current budget copy remains 65 words; release candidate frozen at `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_RC_20260927.md`; owner-currentness receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_OWNER_CURRENTNESS_REPAIR_20260927.md`; live-form budget receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_LIVE_FORM_BUDGET_REPAIR_20260927.md`; pre-send review receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_PRESEND_REVIEW_REPAIR_20260927.md`; final reviewer-link access check + Page-2 value check + human-check + explicit submit remain;
+- proposal hard-limit: 1,500 words; current exact COM recount after host-neutral repair + bounded retrospective-disclosure sentence + Digital Science-owned currentness substitution is **1,479 whitespace-delimited words**; 21-word headroom; live Section 9 budget sub-cap is 75 words and current budget copy remains 65 words; release candidate frozen at `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_RC_20260927.md`; owner-currentness receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_OWNER_CURRENTNESS_REPAIR_20260927.md`; live-form budget receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_LIVE_FORM_BUDGET_REPAIR_20260927.md`; pre-send review receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_PRESEND_REVIEW_REPAIR_20260927.md`; submission receipt `coordination/build_ledger/DIGITAL_SCIENCE_CATALYST_2026_SUBMISSION_RECEIPT_20260927.md`; Google Forms recorded the response at **2026-09-27 17:47 BST** and emailed the received values;
 - copy discipline: proposal is **FROZEN**; do not add material by momentum. Wake prose only for a factual/currentness defect, actual form field, discovered owner/terms constraint, or Mark's explicit wording change;
-- judge rehearsal and form-field pack are prepared; page-2 required fields were completed sufficiently to reach page 3, but final entered values still require Mark's pre-submit check;
+- submitted values are preserved in the Google Forms response-copy email; primary contact = Mark Goodbody, discovery route = Other / AI-assisted web research, workflow = Evidence synthesis + Research integrity;
 - target object: EvidenceWatch as a bounded post-reliance source-change integration/burden hypothesis inside research integrity / evidence synthesis; owner-subtracted boundary: `coordination/resources/EVIDENCEWATCH_STRONG_OWNER_RESIDUAL_20260926.md`; prevalence boundary: `coordination/resources/EVIDENCEWATCH_RESIDUAL_PREVALENCE_20260926.md` — consequential preprint/publication changes exist but pair-level rates do not establish living-review workflow incidence;
 - stronger-owner subtraction: mechanism novelty withdrawn; Cochrane, Refract, AIEP P170, ReadCube/scite, EPPI-Reviewer, MAGICapp, ALEC/Monash and Digital Science's own adjacent work own major component mechanisms; public partner quarry additionally identifies EPPI Centre, ALEC, Bern and MAGIC as strong current living-evidence owners that could falsify or subsume the residual workflow claim;
 - COM #479 hostile review is complete: KEEP WITH CEILINGS;
 - EvidenceWatch current private main is `9c96c8390d65f4fb452b2a106bcdb4fa0418ea6f`; PR #7/#8/#9/#12/#13/#14 plus #15 real-workflow owner subtraction, #16 pre-pilot workflow/burden intake and #17 freeze completeness/canonical receipt hardening are merged; 62/62 tests pass in both Windows and Ubuntu jobs; handoff remains file-based, not a live Zotero/ReadCube integration; no live research pilot exists.
 - **REAL PUBLIC WORKFLOW SPECIMEN FOUND / NO CODE DELTA** — University of Bern living review public history contains a Lombardi preprint->final transition where changed content caused re-extraction and the same study lineage fed Q1 synthesis. The same public guide gives a bounded recurring-work baseline: weekly automated searches added 100–200 records and preprint publication status was checked in each update. A separate six-review evaluation reported 3–300 citations screened and 5 minutes–32 hours of author-team work per month; that range is whole-review maintenance, not the EvidenceWatch-addressable slice. Current EvidenceWatch already represents the authority/succession pattern. Receipt: `coordination/build_ledger/EVIDENCEWATCH_PUBLIC_WORKFLOW_SPECIMEN_20260926.md`. This still does not satisfy the stronger gate: no willing current team, episode-specific reviewer minutes or measured EvidenceWatch value delta.
-- live application form inspected through page 3; required fields are known; no separate Catalyst-specific award/IP agreement or terms-acceptance checkbox was visible in the form; document link + human check + explicit submit remain.
+- live form submission is complete; no separate Catalyst-specific award/IP agreement or terms-acceptance checkbox was visible in the form; award-stage terms remain unresolved unless surfaced later;
 - owner-test matrix: `coordination/resources/DIGITAL_SCIENCE_CATALYST_2026_OWNER_TEST_20260926.md`; primary pilot outcome is now `reviewer minutes per correctly handled material-change episode versus existing practice`; current state remains unmeasured.
 - ALEC owner subtraction: Living Guidelines Handbook v1.1 explicitly owns preprint-publication surveillance and data recheck; preprint transitions remain calibration/test fixtures, not EvidenceWatch gap evidence; surviving residual excludes standard preprint-publication routes.
 - dataset-version owner subtraction: DataCite, Figshare, Zenodo and W3C PROV already own strong version identity/provenance routes; Figshare is a Digital Science solution. EvidenceWatch must consume owner version signals where available; surviving question is materiality + downstream-routing integration, especially where currentness/version signals are fragmented or disconnected from relied-on work.
@@ -204,7 +204,7 @@ Status: **PREPARED / HOSTILE REVIEW COMPLETE / NOT SUBMITTED**.
 ```text
 GRANT FIT != PRODUCT VALIDATION
 CSL HANDOFF != EMBEDDED PRODUCT INTEGRATION
-APPLICATION = NO
+APPLICATION = SUBMITTED / RESULT UNKNOWN
 ```
 
 ### Mercor AI Safety Fund — secondary offline lane
@@ -294,7 +294,7 @@ No current work is blocked enough on paid compute/API to justify manufacturing a
 ```text
 NVIDIA Claw competition submission = SUBMITTED / award unknown
 other competition application = NONE
-grant application = NONE
+grant application = DIGITAL SCIENCE CATALYST SUBMITTED / result unknown
 new account / terms = NONE
 new spend = NONE
 travel commitment = NONE
