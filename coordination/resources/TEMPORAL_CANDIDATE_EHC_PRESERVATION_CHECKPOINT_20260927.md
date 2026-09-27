@@ -2,7 +2,12 @@
 
 Date: 27 September 2026
 
-Status: **PAPER PROTOTYPE / EDUCATION-LEGAL OWNER TEST / NOT LEGAL ADVICE / NOT DEPLOYED**
+Status: **SUPERSEDED AS PRIMARY DESIGN / HISTORICAL v0 / 20-WEEK BACKSTOP RETAINED INSIDE v1 / NOT DEPLOYED**
+
+Superseded by:
+`coordination/resources/TEMPORAL_CANDIDATE_EHC_PARALLEL_CLOCK_v1_20260927.md`
+
+Reason: stronger-owner cases show the current-education / section-19 consideration can be triggered by awareness or changing provision well before the 20-week EHC horizon.
 
 Origin:
 `coordination/resources/TEMPORAL_EMPATHY_APPLIED_SYSTEMS_PASS_20260927.md`
