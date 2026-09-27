@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / PoliceAI field witness / external gates quiet**
+Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / fresh OpenAI DNS monitor-to-brake witness / external gates quiet**
 History belongs in dated receipts + Git.
 
 ## Stable source / baseline state
@@ -81,6 +81,7 @@ Current receipts:
 - `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`
 - `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
 - `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`
+- `field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md` — owner-reported internal agent DNS boundary-crossing; monitor alert reached human review but expected automatic stop did not fire; manual stop later. Existing `MONITORING != INTERRUPTION`, trigger/brake/timing distinctions survive; no TRACE/ME patch.
 
 ## Active non-source design
 
