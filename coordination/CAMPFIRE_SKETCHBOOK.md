@@ -5532,3 +5532,69 @@ Current disposition:
 
 **KEEP AS REAL INFORMATION-TO-ACTION + CORRECTION-PROPAGATION WITNESS / STRONG OWNER / NO NEW CARD / NO TRACE-ME PATCH / WATCH FUTURE OWNER RESPONSE OR REINSPECTION.**
 
+## 28 September 2026 — build trust before scale, but do not confuse invitation with authority
+
+Status: **POSITIVE CONSTRUCTION / PRE-SCALE GOVERNANCE / AFFECTED-GROUP CHALLENGE ATTACHED / NO PATCH**
+
+The 23 September Keep Britain Working update gives a useful positive construction witness because it tries to surface data-governance and trust questions before full-scale deployment.
+
+The published design includes:
+- initial employer-data work without named/identifiable employee data;
+- small-number suppression/combination;
+- aggregate/anonymised employer-facing insight;
+- citizen panels to test conditions for trust / "social licence";
+- prototype/Vanguard testing before wider scaling;
+- proposed public reporting and multi-stakeholder governance for the Workplace Health Intelligence Unit;
+- explicit open questions about participation and whether the value is worth people's time.
+
+That is constructive sequencing.
+
+But Disability Rights UK's same-day response supplies the necessary affected-group challenge: it says direct co-production with Disabled people/representative organisations and concrete support commitments are not yet sufficiently clear.
+
+Preserve:
+
+~~~text
+PLAN TO TEST TRUST
+!=
+TRUST EARNED
+
+LIVED-EXPERIENCE INPUT
+!=
+CO-PRODUCTION
+
+SOCIAL LICENCE
+!=
+LEGAL PERMISSION
+
+AGGREGATE OUTPUT
+!=
+ZERO PRIVACY RISK
+
+GOOD DATA
+!=
+GOOD ACTION
+~~~
+
+The useful pattern is not policy endorsement.
+
+It is:
+
+~~~text
+PURPOSE
+-> MINIMISE
+-> ENGAGE
+-> PROTOTYPE
+-> GOVERN / REPORT
+-> VALIDATE
+-> THEN CONSIDER SCALE
+~~~
+
+with affected people still able to challenge whether the engagement is meaningful enough.
+
+Field note:
+field/KEEP_BRITAIN_WORKING_SOCIAL_LICENCE_BEFORE_SCALE_20260928.md
+
+Current disposition:
+
+**KEEP AS POSITIVE PRE-SCALE GOVERNANCE WITNESS / AFFECTED-GROUP DISSENT PRESERVED / NO NEW TOOL / NO TRACE-ME PATCH / WATCH WHETHER IMPLEMENTATION MATCHES INTENT.**
+
