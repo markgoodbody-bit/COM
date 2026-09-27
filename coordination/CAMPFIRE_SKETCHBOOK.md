@@ -5662,3 +5662,54 @@ Current disposition:
 
 **KEEP AS MATERIAL POSITIVE-CONSTRUCTION + HANDOVER-BOUNDARY WITNESS / NO NEW TOOL / NO TRACE-ME PATCH / EVENT-TRIGGERED REOPEN ONLY / NO STANDING MONITOR.**
 
+## 28 September 2026 — output-to-outcome chain is owner territory
+
+Status: **STRONGER OWNER FOUND / NEW THEORY KILLED / SALIENCE RETAINED / NO PATCH**
+
+The Nyarubaka handover witness tempted a portable chain:
+
+~~~text
+SPECIFIED
+-> BUILT
+-> HANDED OVER
+-> OPERATING
+-> USED
+-> OUTCOME
+~~~
+
+The stronger-owner pass cuts that back.
+
+Current Green Book guidance already separates outputs from outcomes.  
+The 2026 Magenta Book already separates implementation/process evaluation from impact evaluation and uses Theory-of-Change chains.  
+OECD results frameworks already carry inputs -> activities -> outputs -> outcomes -> impacts.  
+Benefits-management/project-delivery practice already separates delivered capability, transition/embedding and benefits realisation.
+
+Therefore:
+
+~~~text
+NEW PROJECT-NATIVE BUILD-TO-BENEFIT CHAIN = NO
+
+PORTABLE LESSON =
+DO NOT PROMOTE THE EVIDENCE STATE
+PAST THE STAGE ACTUALLY OBSERVED
+~~~
+
+Useful scars remain:
+
+~~~text
+BUILT != OPERATING
+OPERATING != USED
+USED != EFFECTIVE
+OUTCOME OBSERVED != OUTCOME CAUSED BY THIS INTERVENTION
+BENEFIT REALISED != BENEFIT EQUITABLY DISTRIBUTED
+~~~
+
+But the exact stages belong to the domain.
+
+Receipt:
+coordination/build_ledger/BUILD_TO_OUTCOME_OWNER_SUBTRACTION_20260928.md
+
+Current disposition:
+
+**OWNER FOUND / ABSORB / STOP NEARBY EXAMPLE ACCUMULATION / NO NEW CARD / NO TRACE-ME PATCH.**
+
