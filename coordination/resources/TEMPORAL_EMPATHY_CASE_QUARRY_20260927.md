@@ -267,18 +267,53 @@ Risk:
 Disposition:
 **ALTERNATE / NOT FIRST CHOICE.**
 
+## Candidate J — interruption / task-specific resource interference
+
+Source:
+*Association Between Mobile Telephone Interruptions and Medication Administration Errors in a Pediatric Intensive Care Unit*.
+
+Owner surface:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6990809/
+
+Public source facts:
+- cohort study of 257 nurses and 3,308 patients;
+- 238,540 medication-administration attempts;
+- incoming telephone calls around medication administration were associated with a modestly higher overall error rate;
+- the reported association varied by shift, nurse experience, nurse-to-patient ratio and patient care requirements;
+- incoming text messages did not show the same reported association.
+
+Why useful:
+- concrete human-factors case where "time available" alone is insufficient;
+- interruption, experience, care load and shift interact;
+- resists a simple rule that all interruptions are equally harmful.
+
+Risk:
+- reader may over-causalise an observational association;
+- patient safety context can tempt blanket "never interrupt" answers despite the authors' own contextual caution.
+
+Disposition:
+**KEEP / TASK-SPECIFIC INTERFERENCE PACKET CANDIDATE.**
+
 ## Proposed six strata after quarry pass
 
-The most defensible current set of **source families** is:
+The first frozen six source packets now use:
 
-1. uncertainty representation — A;
-2. remember-to-act/cue burden — B;
-3. workload-capacity / remedy adds work — C (after concrete vignette);
-4. schedule control / flexibility asymmetry — D;
-5. institutional delay + ongoing harm — E;
-6. hardening / delayed correction route / lost education — F.
+1. institutional care gap / ongoing harm — E -> `PACKET_01`;
+2. uncertainty representation — A -> `PACKET_02`;
+3. remember-to-act / cue burden — B -> `PACKET_03`;
+4. workload-capacity / remedy adds work — C, resolved with the published fictitious Debbie vignette -> `PACKET_04`;
+5. interruption / task-specific resource interference — J -> `PACKET_05`;
+6. hardening / delayed correction route / lost education — F -> `PACKET_06`.
 
-Use G/H as owner/control material and replacements if a selected packet is too leading.
+D/G/H/I remain alternates or owner/control material.
+
+The packet set deliberately spans:
+- public-service delay;
+- HCI uncertainty;
+- experimental reminder support;
+- treatment-burden/workload-capacity;
+- human-factors interruption;
+- delayed appeal / non-restorable lost education.
 
 The first six have now been frozen as neutral source packets 01-06.
 
