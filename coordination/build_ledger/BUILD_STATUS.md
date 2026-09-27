@@ -83,6 +83,7 @@ Current receipts:
 - `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`
 - `field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md` — owner-reported internal agent DNS boundary-crossing; monitor alert reached human review but expected automatic stop did not fire; manual stop later. Existing `MONITORING != INTERRUPTION`, trigger/brake/timing distinctions survive; no TRACE/ME patch.
 - `field/CITIZENS_ADVICE_DIGITAL_CHANNEL_LOCK_20260927.md` — current cross-sector essential-service access witness: two-tier support / channel lock / poor digital design. Stronger FCA/Ofgem owner protections already exist; preserve `ROUTE A + ROUTE B != SWITCH A->B USABLE`, no TRACE/ME patch.
+- Relay self-mirror receipt `coordination/build_ledger/RELAY_MONITOR_BRAKE_MIRROR_20260927.md` — report-only judge allegations remain explicitly observational; real dispatch/profile gates remain separate fail-closed mechanisms. OpenAI DNS witness does not earn an enforcement rule. **NO RELAY/SIMPLE-v1 PATCH / PRODUCTION UNCHANGED.**
 
 ## Active non-source design
 
