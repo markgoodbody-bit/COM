@@ -2,7 +2,7 @@
 
 Date: 27 September 2026
 
-Status: **PAPER DESIGN SKETCH / OWNER-ROUTED / NOT CANON / NOT DEPLOYED**
+Status: **OWNER-SUBTRACTED HANDOFF RECEIPT / NOT A PORTABLE PROFILE CLAIM / NOT CANON / NOT DEPLOYED**
 
 World pressure:
 - Citizens Advice channel-lock witness;
@@ -11,7 +11,11 @@ World pressure:
 
 Purpose:
 
-Represent the smallest state that may need to survive a channel/team/organisation handoff so an affected person does not have to restart a consequential service journey from zero.
+Represent the smallest route/action receipt that may need to survive a consequential channel/team/organisation handoff, while referencing only the minimum support adjustment already justified by the stronger domain owner.
+
+Communication Passports, the NHS Accessible Information Standard, NICE and portable-preference work already own substantial parts of portable support/preference state. See coordination/resources/SUPPORT_STATE_HANDOFF_STRONG_OWNER_MAP_20260927.md.
+
+This object is therefore **not** a proposed general support profile.
 
 This is **not**:
 - a universal customer profile;
@@ -49,13 +53,13 @@ next_action:
 next_check_or_deadline:
   <time/window | UNKNOWN>
 
-support_adjustment_needed:
-  <minimum necessary support state | NONE | UNKNOWN>
+support_adjustment_ref:
+  <reference to owner-defined minimum support/communication adjustment | NONE | UNKNOWN>
 
-support_state_source:
-  <source / customer disclosure / verified record / UNKNOWN>
+support_adjustment_source:
+  <owner record / person-held passport / supported source | UNKNOWN>
 
-support_state_currentness:
+support_adjustment_currentness:
   <timestamp / review basis | UNKNOWN>
 
 disclosure_scope:
@@ -68,7 +72,11 @@ do_not_carry:
 ## Required discipline
 
 ~~~text
-HANDOFF
+HANDOFF RECEIPT
+!=
+PORTABLE PERSON PROFILE
+
+ROUTE CONTINUITY
 !=
 DUMP ENTIRE HISTORY
 
@@ -76,9 +84,13 @@ CONTEXT CONTINUITY
 !=
 UNBOUNDED MEMORY
 
-MINIMUM SUPPORT STATE
+SUPPORT ADJUSTMENT REFERENCE
 !=
 FULL PERSONAL PROFILE
+
+PROFILE CREATED
+!=
+PROFILE USED
 ~~~
 
 Where the relevant owner does not support carrying a field:
@@ -118,7 +130,9 @@ For cross-organisation propagation, the stronger owner should additionally deter
 - provenance/source authority;
 - whether a data intermediary / federated / direct-sharing architecture is safer than a central register.
 
-The object should carry only the minimum action-relevant support state needed for the receiving route.
+The object should carry **route/action continuity** and only reference/carry the minimum support adjustment that the stronger owner says the receiving route legitimately needs.
+
+Where a mature communication passport, accessibility flag, health passport or other owner-defined support record already exists, this receipt should point to/use that owner object rather than duplicate it.
 
 ## Success question
 
@@ -142,4 +156,4 @@ Do not use this object if:
 
 Current disposition:
 
-**PAPER SKETCH ONLY / STRONG OWNER MUST DEFINE ACTUAL FIELDS + ACCESS / NO IMPLEMENTATION.**
+**OWNER-SUBTRACTED PAPER HANDOFF RECEIPT / PORTABLE SUPPORT PROFILE OWNER FOUND / ROUTE+MINIMUM-SUPPORT JOIN ONLY / NO IMPLEMENTATION.**
