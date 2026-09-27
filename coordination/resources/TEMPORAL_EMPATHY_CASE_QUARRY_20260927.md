@@ -2,7 +2,7 @@
 
 Date: 27 September 2026
 
-Status: **CASE QUARRY / PUBLIC SOURCES / NOT YET FROZEN AS READER PACKETS / NO RESULT**
+Status: **CASE QUARRY / SIX READER PACKETS NOW FROZEN / ALTERNATES PRESERVED / NO RESULT**
 
 Purpose:
 
@@ -280,11 +280,11 @@ The most defensible current set of **source families** is:
 
 Use G/H as owner/control material and replacements if a selected packet is too leading.
 
-Do not freeze the six yet.
+The first six have now been frozen as neutral source packets 01-06.
 
 ## Why not freeze yet
 
-Case C still needs a concrete public vignette.
+Case C is resolved with the published fictitious `Debbie` vignette from the Minimally Disruptive Medicine paper; the packet withholds the later MDM solution.
 
 Before freezing:
 - build neutral source packets with no project labels;
@@ -300,7 +300,8 @@ OWNER MATRIX = FROZEN CANDIDATE
 TEACHING CARD = FROZEN CANDIDATE
 PROTOCOL = FROZEN CANDIDATE
 CASE QUARRY = BUILT
-FINAL SIX PACKETS = NOT FROZEN
+FINAL SIX PACKETS = FROZEN / 01-06
+FROZEN MANIFEST = `coordination/temporal_empathy_probe/FROZEN_MANIFEST_20260927.md`
 READERS = NOT ASSIGNED
 RESULT = NONE
 ```
