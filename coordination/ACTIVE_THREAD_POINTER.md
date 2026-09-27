@@ -35,7 +35,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **27 September 2026 — D089 live / Simple-v1 #269 merged / PoliceAI field witness / external gates quiet**
+Updated: **27 September 2026 — D089 live / Simple-v1 #270 merged / PoliceAI field witness / external gates quiet**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -155,18 +155,19 @@ Freeze unless reality earns reopening.
 
 Freeze after green.
 
-### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #269
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #270
 
 - Relay main remains `9408d795d0508815e097066b749800ddbd8b8290`; #265 deferred-acknowledgement repair is merged there. Production activation remains separate.
-- Simple-v1 maintained source is now `framework/campfire-square-simple-v1@05137dc05812111b99ec149bc291fb70350dabdd`.
+- Simple-v1 maintained source is now `framework/campfire-square-simple-v1@e53631d104f1aafb91850e492f51e1ca2377cefa`.
 - #266 upstreamed the supervisor transition ledger and byte-safe installer fetch. Corrected Windows PowerShell `36312015925` and broad `campfire-ci` `36312016016` SUCCESS.
 - #267 repairs the field-observed malformed-ingress log flood with refusal state keyed by comment ID + body SHA-256; #268 pins actual parser-call suppression.
 - Independent review then found a new availability edge: refusal-ledger read/write I/O failure could abort the whole citizen ingress pass. #269 makes **only this diagnostic persistence** best-effort: unreadable ledger -> empty cache; failed append -> in-memory refusal + continue; degraded state is visible through worker heartbeat.
 - #269's first three Windows attempts failed in the test harness and are preserved: optional-property StrictMode access, missing extracted heartbeat dependency, then missing real worker heartbeat initialisation. Final head `302540eb22def9007176361a1c51da2ce49efb08` passed Windows `36320549273` and broad `36320549270`; merge `05137dc0…`; post-merge Simple-v1 `36320632175` SUCCESS.
+- #270 adds a **test-only Windows PowerShell carrier guard**: installer-shipped `.ps1`/`.psm1` filenames are derived from the installer's own payload list and must remain ASCII until a deliberate UTF-8-aware execution strategy replaces that invariant. Candidate `b03c2e10…`; Windows `36320921439` SUCCESS; broad `36320921494` SUCCESS; merge `e53631d1…`; post-merge Simple-v1 `36321019856` SUCCESS.
 - Speech/actuation, request-dedupe, receipt and authority state remain fail-closed; only diagnostic refusal persistence is best-effort.
-- Installed Simple-v1 was last observed healthy but still on the pre-#266 `f4fa182…` lineage. Its local supervisor already has the event ledger, but its worker does **not** yet contain #267/#268/#269. `SOURCE_REPAIRED != INSTALLED_REPAIRED`; the live log flood is not claimed fixed.
+- Installed Simple-v1 was last observed healthy but still on the pre-#266 `f4fa182…` lineage. Its local supervisor already has the event ledger, but its installed payload does **not** yet contain #267/#268/#269/#270. `SOURCE_REPAIRED != INSTALLED_REPAIRED`; the live log flood is not claimed fixed.
 - Historical malformed evidence remains preserved.
-- Receipt: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`.
+- Receipts: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md` and `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`.
 
 ### Answerability-route field sequence — ten cases / saturated / extract teaching card
 
