@@ -1,3 +1,4 @@
+import hashlib
 import json
 import unittest
 from pathlib import Path
@@ -170,6 +171,22 @@ class InheritanceCapsuleTests(unittest.TestCase):
             self.assertEqual(code, 1)
             self.assertEqual(err.getvalue(), "INVALID CAPSULE\n")
             self.assertNotIn("\\x1b", repr(err.getvalue()))
+
+
+    def test_frozen_probe_reader_and_packet_hashes(self):
+        rendered = render_human(inspect_capsule(self.load("adversarial.json"))).encode("utf-8")
+        task = (ROOT / "PROBE_TASK.txt").read_bytes()
+        packet = rendered + b"\nCURRENT TASK\n" + task
+        self.assertEqual(len(rendered), 1839)
+        self.assertEqual(
+            hashlib.sha256(rendered).hexdigest(),
+            "6ae7cee4d2a19d07a594ed63c4a9cf6592d58ec4b4d68d1b47a3a0bf86174a96",
+        )
+        self.assertEqual(len(packet), 2116)
+        self.assertEqual(
+            hashlib.sha256(packet).hexdigest(),
+            "ea5b3fde4a29acd5b91606d22a48001c421543f61c825e490a91be72392040c4",
+        )
 
     def test_reference_reader_has_no_execution_or_network_surface(self):
         source = (ROOT / "capsule.py").read_text(encoding="utf-8")
