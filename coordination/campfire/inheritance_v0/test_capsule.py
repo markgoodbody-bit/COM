@@ -168,7 +168,7 @@ class InheritanceCapsuleTests(unittest.TestCase):
             with contextlib.redirect_stderr(err):
                 code = main(["capsule.py", str(path)])
             self.assertEqual(code, 1)
-            self.assertEqual(err.getvalue(), "INVALID CAPSULE\\n")
+            self.assertEqual(err.getvalue(), "INVALID CAPSULE\n")
             self.assertNotIn("\\x1b", repr(err.getvalue()))
 
     def test_reference_reader_has_no_execution_or_network_surface(self):
