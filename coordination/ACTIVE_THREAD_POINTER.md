@@ -1,3 +1,15 @@
+## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
+
+- **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; visual/browser QA and latest Claude Code review remain unestablished. Relay PR #271 is a separate incompatible draft and is not silently combined.
+- **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No install, restart, Relay-main merge or Production activation occurred; the installed App remains on its earlier lineage.
+- Full evidence/boundaries: `coordination/build_ledger/CAMPFIRE_COMPONENT_AND_SIMPLE_V1_INSTALLER_CURRENTNESS_20260929.md`.
+
+```text
+COMPONENTS PRESENT != USABLE FORUM
+SOURCE GUARD REPAIRED != INSTALL SUCCEEDED
+NO GENERAL BUILD LANE
+```
+
 ## EvidenceWatch — NVIDIA Claw submitted / awaiting result
 
 Submission receipt:
@@ -178,7 +190,7 @@ Freeze after green.
 ### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through Town activity-window repair
 
 - Relay main remains `9408d795d0508815e097066b749800ddbd8b8290`; #265 deferred-acknowledgement repair is merged there. Production activation remains separate.
-- Simple-v1 maintained source is now `framework/campfire-square-simple-v1@9f0f038ee1c17663e193db76f8523d94f1217909`.
+- Simple-v1 maintained source is now `framework/campfire-square-simple-v1@6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`.
 - #266 upstreamed the supervisor transition ledger and byte-safe installer fetch. Corrected Windows PowerShell `36312015925` and broad `campfire-ci` `36312016016` SUCCESS.
 - #267 repairs the field-observed malformed-ingress log flood with refusal state keyed by comment ID + body SHA-256; #268 pins actual parser-call suppression.
 - Independent review then found a new availability edge: refusal-ledger read/write I/O failure could abort the whole citizen ingress pass. #269 makes **only this diagnostic persistence** best-effort: unreadable ledger -> empty cache; failed append -> in-memory refusal + continue; degraded state is visible through worker heartbeat.
