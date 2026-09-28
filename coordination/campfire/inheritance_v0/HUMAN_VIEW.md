@@ -26,3 +26,5 @@ The initial combined 23-test run on Windows had one inherited failure: probe pac
 Visual/browser QA is not established: browser policy blocked the local file URL; no alternate route was used. Automated HTML structure checks are not a substitute for visual inspection.
 
 No changes to the live 8876/8877 rooms, their code, the parser, source fixtures or probe instructions. No network calls, publication, provider calls or schema additions.
+
+The viewer branch includes the integrated byte repair from `c60093a4` and keeps the 24-test local pass. CI now discovers both reader and viewer tests on Linux and Windows, rather than only running `test_capsule.py` on Linux. A workflow definition alone is not a completed hosted result; inspect the exact-head checks before integration.
