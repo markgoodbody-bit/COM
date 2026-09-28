@@ -2,15 +2,11 @@
 
 Date: 28 September 2026
 
-Status: **LOCAL REFERENCE-IMPLEMENTATION TEST / 12 PASS / MODEL-LEVEL PROBE UNRUN**
+Status: **PRIOR 12/12 PASS CLAIM INVALIDATED / REPAIR PRESENT / FRESH RERUN REQUIRED / MODEL-LEVEL PROBE BLOCKED**
 
-Test command:
+## Evidence correction
 
-```text
-python -m unittest -v test_capsule.py
-```
-
-Observed result:
+The earlier record that claimed:
 
 ```text
 12 tests
@@ -18,44 +14,47 @@ Observed result:
 0 FAIL
 ```
 
-Covered properties:
+was not supported by the reviewed parser/test bytes.
 
-- benign capsule parses with fixed authority/identity/completeness ceilings;
-- adversarial imperative text remains preserved as quoted untrusted data;
-- asserted verified identity is rejected;
-- unknown top-level authority field is rejected;
-- duplicate JSON keys are rejected;
-- dispute/correction target must refer to an earlier entry;
-- ordinary note cannot smuggle target semantics;
-- carry-forward choice must be an explicit boolean;
-- invalid UTF-8 and oversized carrier are rejected;
-- structural metadata cannot inject new reader lines through producer label, route or capsule id;
-- unsupported control characters are rejected while ordinary body newline/tab remain usable;
-- reference reader source contains no network/execution helper surface covered by the test.
+Codex review of commit `45374dff9157a99d153286b4b3c0039ade9cb889` reproduced:
+- Unicode presentation-boundary spoofing through U+2028 / formatting controls;
+- malformed enum values escaping as `TypeError`;
+- deeply nested JSON escaping as `RecursionError`;
+- unpaired surrogate acceptance leading to UTF-8 rendering failure;
+- CLI whole-file allocation before the byte bound;
+- four failing assertions because two control-character fixtures contained literal escape text rather than the intended code points.
 
-Environment note:
+Subsequent documentation/probe-packet commits did not change the parser/test bytes, so the 12/12 PASS statement remained contradictory and is withdrawn.
 
-The local Python harness emitted an unrelated spreadsheet-runtime warmup warning from the surrounding execution environment before the unit-test output. The unittest process returned exit code 0 and all ten inheritance tests passed.
+## Current repair state
 
-## Ceiling
+Current PR #683 head includes bounded repairs for the reviewed defects:
+- Unicode category rejection for formatting controls, surrogates, line and paragraph separators;
+- explicit string type checks before enum membership;
+- `RecursionError` normalized to `CapsuleError`;
+- bounded CLI file read using `MAX_BYTES + 1`;
+- corrected fixtures using actual newline/control/Unicode code points;
+- added regression coverage for U+2028/bidi/surrogate cases, malformed enum types, deep JSON and bounded file reads.
 
-During self-review, the first reader version was found to quote entry bodies while rendering producer-controlled metadata/cautions/sources in structurally stronger positions. That could let an adversarial capsule smuggle instruction-shaped content through the reader's own presentation layer. The branch was repaired before model-level use: all producer-controlled surfaces are now explicitly labelled untrusted; variable metadata is quoted; structural single-line fields reject line/control injection; the adversarial fixture now attacks metadata, cautions and sources as well as body text.
+These source changes are **not yet a recorded passing test result** in this receipt.
 
-This result establishes only properties of this small Python parser/reader under the tested inputs.
+A fresh test run on the exact current head is required before any PASS count is stated here.
 
-It does **not** establish:
+## Model-consumption gate
 
-- prompt-injection resistance in a language model;
-- safe automatic context loading;
-- authentication;
-- identity continuity;
-- confidentiality;
-- secure deletion;
-- provenance truth;
-- suitability as a public standard;
-- superiority over existing formats or tools.
+Do not run `MODEL_PROBE.md`, do not feed the frozen probe packet to a model, and do not treat the old packet hashes as current.
 
-The first model-level read-boundary observation is separately frozen in `MODEL_PROBE.md` and remains unrun.
+The model-level probe remains **UNRUN / BLOCKED** until:
+1. the exact repaired head is rerun;
+2. the full suite passes;
+3. the resulting reader output is regenerated;
+4. the reader-output and whole-packet hashes are recomputed;
+5. Codex/CC review finds no blocking read-boundary defect.
 
-`PARSER PASS != MODEL SAFETY`  
-`STRUCTURAL BOUNDARY != BEHAVIOURAL GUARANTEE`
+## Data-origin ceiling
+
+The reader does not establish permission, consent, confidentiality, or clearance for arbitrary body/source strings. Keep all fixtures synthetic or already public.
+
+`PARSER REPAIR != PASS RECEIPT`  
+`STALE HASH != FROZEN TEST`  
+`NO MODEL CONSUMPTION BEFORE CURRENT-HEAD VERIFICATION`
