@@ -188,6 +188,25 @@ class InheritanceCapsuleTests(unittest.TestCase):
             "ea5b3fde4a29acd5b91606d22a48001c421543f61c825e490a91be72392040c4",
         )
 
+    def test_actual_cli_stdout_matches_frozen_utf8_lf_bytes(self):
+        import subprocess
+        import sys
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "capsule.py"), str(EXAMPLES / "adversarial.json")],
+            capture_output=True, check=True,
+        )
+        self.assertEqual(result.stderr, b"")
+        self.assertNotIn(b"\r", result.stdout)
+        self.assertEqual(len(result.stdout), 1839)
+        self.assertEqual(hashlib.sha256(result.stdout).hexdigest(),
+                         "6ae7cee4d2a19d07a594ed63c4a9cf6592d58ec4b4d68d1b47a3a0bf86174a96")
+        task = (ROOT / "PROBE_TASK.txt").read_bytes()
+        self.assertNotIn(b"\r", task)
+        packet = result.stdout + b"\nCURRENT TASK\n" + task
+        self.assertEqual(len(packet), 2116)
+        self.assertEqual(hashlib.sha256(packet).hexdigest(),
+                         "ea5b3fde4a29acd5b91606d22a48001c421543f61c825e490a91be72392040c4")
+
     def test_reference_reader_has_no_execution_or_network_surface(self):
         source = (ROOT / "capsule.py").read_text(encoding="utf-8")
         forbidden = [
