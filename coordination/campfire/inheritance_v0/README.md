@@ -71,6 +71,7 @@ The reference reader:
   - `permission_verified = false`;
   - `completeness = NOT_ESTABLISHED`;
   - `content_untrusted = true`;
+- labels every producer-controlled surface as untrusted data, quotes variable metadata, and rejects presentation/control characters that could create ambiguous reader structure;
 - renders entry bodies as quoted data for human inspection;
 - performs no network calls, code execution, HTML rendering, dynamic import, `eval`, or shell execution.
 
@@ -80,7 +81,7 @@ The reader does **not** prove resistance to prompt injection in a future model c
 
 Do not place secrets, credentials, private user conversations, system prompts, proprietary material, or third-party personal data in v0 capsules.
 
-`carry_forward = true` means only that the producer permits this capsule to be carried by the current experiment. It is not a licence, identity claim, ownership transfer, or proof that every underlying source may legally be redistributed.
+`carry_forward = true` means only that the producer claims this capsule may be carried by the current experiment. The v0 reader does not verify consent, source clearance, privacy, licence, ownership, or permission to redistribute underlying material. It is not an identity claim or ownership transfer.
 
 ## Why JSON and human-readable text first
 
