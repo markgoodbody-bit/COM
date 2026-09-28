@@ -265,7 +265,9 @@ def main(argv: list[str]) -> int:
     except (OSError, CapsuleError):
         print("INVALID CAPSULE", file=sys.stderr)
         return 1
-    sys.stdout.write(render_human(view))
+    # The reviewed output is a byte carrier: do not let platform encoding or
+    # Windows text-mode newline translation change the frozen UTF-8/LF bytes.
+    sys.stdout.buffer.write(render_human(view).encode("utf-8"))
     return 0
 
 
