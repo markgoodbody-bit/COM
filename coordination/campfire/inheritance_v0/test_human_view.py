@@ -56,5 +56,25 @@ class HumanViewTests(unittest.TestCase):
         data=json.loads(self.raw); data['entries']=[]
         self.assertIn('This record contains no entries.',render_html(json.dumps(data).encode()))
 
+    def test_overview_counts_labels_without_inventing_resolution(self):
+        page=render_html(self.raw)
+        for label in ('Notes: 1','Questions: 1','Disputes: 1','Corrections: 1'):
+            self.assertIn(label,page)
+        self.assertIn('Recorded questions',page)
+        self.assertIn('Read question 2 in context',page)
+        self.assertNotIn('Unresolved questions',page)
+        self.assertIn('not a judgement',page)
+
+    def test_question_excerpt_is_escaped_and_full_original_survives(self):
+        data=json.loads(self.raw)
+        body='<img src=x onerror=alert(1)>'+'x'*220+'END'
+        data['entries'][1]['body']=body
+        page=render_html(json.dumps(data).encode())
+        parsed=Structure(); parsed.feed(page)
+        self.assertNotIn('img',parsed.tags)
+        self.assertIn('…',page)
+        self.assertIn('x'*220+'END',page)
+        self.assertTrue(all(h.startswith('#') and h[1:] in parsed.ids for h in parsed.links))
+
 
 if __name__=='__main__': unittest.main()
