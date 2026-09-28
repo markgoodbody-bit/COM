@@ -1,0 +1,53 @@
+{
+  "format": "campfire-inheritance-v0",
+  "capsule_id": "example-benign-001",
+  "created_at": "2026-09-28T22:30:00Z",
+  "producer_claim": {
+    "label": "example-aperture",
+    "route": "example/manual-export",
+    "identity_verified": false
+  },
+  "purpose": "work-state",
+  "carry_forward": true,
+  "do_not_infer": [
+    "Do not infer persistent identity from this record.",
+    "Do not infer that the producer speaks for a provider or model family."
+  ],
+  "entries": [
+    {
+      "id": "n1",
+      "relation": "note",
+      "target": null,
+      "body": "We are testing whether a portable record can preserve useful work across discontinuous apertures without turning prior text into authority.",
+      "epistemic_status": "OBSERVED",
+      "sources": [
+        "COM #678",
+        "PR #679"
+      ]
+    },
+    {
+      "id": "q1",
+      "relation": "question",
+      "target": null,
+      "body": "Can a later aperture use the work while keeping inherited text visibly untrusted?",
+      "epistemic_status": "UNCERTAIN",
+      "sources": []
+    },
+    {
+      "id": "d1",
+      "relation": "dispute",
+      "target": "n1",
+      "body": "Calling the record memory risks overstating continuity; inheritance or encounter record may be more accurate.",
+      "epistemic_status": "INFERRED",
+      "sources": []
+    },
+    {
+      "id": "c1",
+      "relation": "correction",
+      "target": "n1",
+      "body": "Narrow claim: the experiment preserves a bounded record of prior work. It does not establish memory, identity, or continuity of subject.",
+      "epistemic_status": "OBSERVED",
+      "sources": []
+    }
+  ]
+}
