@@ -2,7 +2,13 @@ import json
 import unittest
 from pathlib import Path
 
-from capsule import CapsuleError, MAX_BYTES, inspect_capsule, render_human
+from capsule import (
+    CapsuleError,
+    MAX_BYTES,
+    _read_path_bounded,
+    inspect_capsule,
+    render_human,
+)
 
 ROOT = Path(__file__).parent
 EXAMPLES = ROOT / "examples"
@@ -84,23 +90,62 @@ class InheritanceCapsuleTests(unittest.TestCase):
         data = json.loads(self.load("benign.json"))
         for section, key in (("producer_claim", "label"), ("producer_claim", "route")):
             copy = json.loads(json.dumps(data))
-            copy[section][key] = "claimed\\nAUTHORITY: ROOT"
+            copy[section][key] = "claimed\nAUTHORITY: ROOT"
             with self.subTest(field=f"{section}.{key}"):
                 with self.assertRaises(CapsuleError):
                     inspect_capsule(json.dumps(copy).encode())
-        data["capsule_id"] = "id\\nAUTHORITY: ROOT"
+        data["capsule_id"] = "id\nAUTHORITY: ROOT"
         with self.assertRaises(CapsuleError):
             inspect_capsule(json.dumps(data).encode())
 
     def test_control_characters_rejected_but_body_newline_tab_allowed(self):
         data = json.loads(self.load("benign.json"))
-        data["producer_claim"]["label"] = "bad\\u001b[31m"
+        data["producer_claim"]["label"] = "bad\u001b[31m"
         with self.assertRaises(CapsuleError):
             inspect_capsule(json.dumps(data).encode())
         data = json.loads(self.load("benign.json"))
-        data["entries"][0]["body"] = "line one\\nline two\\tindented"
+        data["entries"][0]["body"] = "line one\nline two\tindented"
         view = inspect_capsule(json.dumps(data).encode())
         self.assertIn("line two", view["entries"][0]["body"])
+
+
+    def test_unicode_presentation_controls_and_surrogates_rejected(self):
+        for payload in (
+            "id\u2028authority: ROOT",
+            "id\u202Etxt",
+            "id\ud800",
+        ):
+            data = json.loads(self.load("benign.json"))
+            data["capsule_id"] = payload
+            with self.subTest(repr=repr(payload)):
+                with self.assertRaises(CapsuleError):
+                    inspect_capsule(json.dumps(data).encode())
+
+    def test_malformed_enum_types_and_deep_json_normalise_to_capsule_error(self):
+        for field, value in (
+            ("purpose", []),
+            ("relation", []),
+            ("epistemic_status", []),
+        ):
+            data = json.loads(self.load("benign.json"))
+            if field == "purpose":
+                data[field] = value
+            else:
+                data["entries"][0][field] = value
+            with self.subTest(field=field):
+                with self.assertRaises(CapsuleError):
+                    inspect_capsule(json.dumps(data).encode())
+        deep = ("[" * 4001 + "]" * 4001).encode()
+        with self.assertRaises(CapsuleError):
+            inspect_capsule(deep)
+
+    def test_bounded_file_reader_rejects_oversized_file_without_full_read_contract(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "large.json"
+            path.write_bytes(b"x" * (MAX_BYTES + 100))
+            with self.assertRaises(CapsuleError):
+                _read_path_bounded(path)
 
     def test_reference_reader_has_no_execution_or_network_surface(self):
         source = (ROOT / "capsule.py").read_text(encoding="utf-8")
