@@ -48,7 +48,7 @@ NEXT = WORLD / REAL USE
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
-Updated: **28 September 2026 — D090 live / Nyarubaka owner-subtracted / external gates quiet**
+Updated: **28 September 2026 — D090 live / Town cache source-bounded / external gates quiet**
 Rule: later live source and direct Mark direction win.
 Shared Campfire sketchbook now includes a ten-case answerability sequence through COM #585. Two teaching-surface failures/repairs were earned (`REVIEWER != ACTOR/AUTHORITY`, `AFFECTED != WITNESS != INITIATOR`); DWP added `OBSERVABILITY != VERIFIABILITY`; GOV.UK search confirmed reviewer is a functional evaluator, not necessarily a caseworker. The ATRS case sequence is now **saturated / stop by default**; extract a compact provisional teaching card rather than keep accumulating examples. TRACE/ME semantics remain unchanged. Provisional extraction: `coordination/ANSWERABILITY_ROUTE_TEACHING_CARD_20260926.md` — **NOT CANON / NOT TRACE/ME SOURCE / NOT ATRS METHOD / NOT VALIDATED**. One non-ATRS transfer against the Relay #258/#259 MODEL-authority repair is preserved at `coordination/ANSWERABILITY_ROUTE_NON_ATRS_TRANSFER_RELAY_20260926.md`: the card separated source capability, live state and hardened history without a new dimension. **ONE TRANSFER != CROSS-DOMAIN VALIDATION.**
 
@@ -265,17 +265,18 @@ Field-triggered repair binds actual adapter authority scope before observation/w
 
 Freeze after green; reopen on concrete failure or deliberate promotion work.
 
-### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through #270
+### Relay COMSYNC maintenance — Relay through #265 / Simple-v1 through Town activity-window repair
 
 - Relay main remains `9408d795d0508815e097066b749800ddbd8b8290`; #265 deferred acknowledgements are merged there. Production activation remains separate.
-- Simple-v1 maintained source is `framework/campfire-square-simple-v1@e53631d104f1aafb91850e492f51e1ca2377cefa`.
+- Simple-v1 maintained source is `framework/campfire-square-simple-v1@9f0f038ee1c17663e193db76f8523d94f1217909`.
 - #266 upstreamed the supervisor transition ledger and byte-safe installer fetch.
 - #267 suppresses repeated parsing of an immutable malformed historical GitHub ingress body using refusal state keyed by comment ID + body SHA-256; #268 pins actual parser-call suppression.
 - Independent hostile review found refusal-ledger I/O could itself become an availability dependency. #269 makes **only the diagnostic refusal ledger** best-effort: read failure -> empty cache; append failure -> in-memory refusal + continue; both emit degraded heartbeat. Speech/actuation, dedupe, receipt and authority state remain fail-closed.
 - #269 final head `302540eb22def9007176361a1c51da2ce49efb08`; Windows `36320549273`, broad `36320549270`, post-merge Simple-v1 `36320632175` all SUCCESS. Earlier Windows harness failures remain visible in history rather than being flattened.
 - #270 pins a **test-only Windows PowerShell encoding invariant**: every installer-shipped `.ps1`/`.psm1` file, discovered from the installer's own payload list, must remain ASCII until a deliberate UTF-8-aware execution carrier supersedes this guard. Candidate `b03c2e10…`; Windows `36320921439`, broad `36320921494`, post-merge `36321019856` SUCCESS; merge `e53631d1…`. `REPOSITORY_BYTES_CORRECT != POWERSHELL_DECODING_CORRECT`.
-- Installed Simple-v1 was last observed RUNNING but still on pre-#266 `f4fa182…`; its installed payload therefore does not yet contain #267/#268/#269/#270. `SOURCE_REPAIRED != INSTALLED_REPAIRED`.
-- Receipts: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md` and `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`.
+- A concrete installed-runtime defect reopened this source lane once: the Town `-AllCitizens` cache had retained 24,330+ events / 53.7 MB back to 14 September and rewrote the full file each minute. Exact head `9f0f038e…` prunes only the activity view to the intended 24-hour server-time window, leaves AI history unpruned, adds an on-disk regression and wires it into hosted Windows PowerShell CI `36412767174 / SUCCESS`.
+- Installed Simple-v1 was last observed RUNNING but still on pre-#266 `f4fa182…`; its installed payload therefore does not yet contain #267/#268/#269/#270 or the Town cache repair. The adjacent `System error.` bursts remain correlated with refresh completion but their throwing statement is not isolated. `SOURCE_REPAIRED != INSTALLED_REPAIRED`; `CACHE_PRUNED != GUI_ERROR_CAUSE_ISOLATED`.
+- Receipts: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`, `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`, and `coordination/build_ledger/SIMPLE_V1_TOWN_ACTIVITY_WINDOW_REPAIR_20260928.md`.
 
 ### Relay diagnostic-retention repair — source merged through #269 / installed runtime pending
 
