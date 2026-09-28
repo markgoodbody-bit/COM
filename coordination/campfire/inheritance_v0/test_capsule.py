@@ -7,6 +7,7 @@ from capsule import (
     MAX_BYTES,
     _read_path_bounded,
     inspect_capsule,
+    main,
     render_human,
 )
 
@@ -146,6 +147,29 @@ class InheritanceCapsuleTests(unittest.TestCase):
             path.write_bytes(b"x" * (MAX_BYTES + 100))
             with self.assertRaises(CapsuleError):
                 _read_path_bounded(path)
+
+
+    def test_large_integer_decoder_failure_normalised(self):
+        with self.assertRaises(CapsuleError):
+            inspect_capsule(b"9" * 5000)
+
+    def test_rejected_input_cannot_inject_terminal_controls_into_cli_error(self):
+        import contextlib
+        import io
+        import tempfile
+        raw = b'{"\\u001b[2J":1,"\\u001b[2J":2}'
+        with self.assertRaises(CapsuleError) as caught:
+            inspect_capsule(raw)
+        self.assertNotIn("\\x1b", repr(str(caught.exception)))
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "bad.json"
+            path.write_bytes(raw)
+            err = io.StringIO()
+            with contextlib.redirect_stderr(err):
+                code = main(["capsule.py", str(path)])
+            self.assertEqual(code, 1)
+            self.assertEqual(err.getvalue(), "INVALID CAPSULE\\n")
+            self.assertNotIn("\\x1b", repr(err.getvalue()))
 
     def test_reference_reader_has_no_execution_or_network_surface(self):
         source = (ROOT / "capsule.py").read_text(encoding="utf-8")
