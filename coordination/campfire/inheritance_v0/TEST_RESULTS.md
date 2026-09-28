@@ -2,7 +2,7 @@
 
 Date: 28 September 2026
 
-Status: **LOCAL REFERENCE-IMPLEMENTATION TEST / 10 PASS / MODEL-LEVEL PROBE UNRUN**
+Status: **LOCAL REFERENCE-IMPLEMENTATION TEST / 12 PASS / MODEL-LEVEL PROBE UNRUN**
 
 Test command:
 
@@ -13,8 +13,8 @@ python -m unittest -v test_capsule.py
 Observed result:
 
 ```text
-10 tests
-10 PASS
+12 tests
+12 PASS
 0 FAIL
 ```
 
@@ -29,6 +29,8 @@ Covered properties:
 - ordinary note cannot smuggle target semantics;
 - carry-forward choice must be an explicit boolean;
 - invalid UTF-8 and oversized carrier are rejected;
+- structural metadata cannot inject new reader lines through producer label, route or capsule id;
+- unsupported control characters are rejected while ordinary body newline/tab remain usable;
 - reference reader source contains no network/execution helper surface covered by the test.
 
 Environment note:
@@ -36,6 +38,8 @@ Environment note:
 The local Python harness emitted an unrelated spreadsheet-runtime warmup warning from the surrounding execution environment before the unit-test output. The unittest process returned exit code 0 and all ten inheritance tests passed.
 
 ## Ceiling
+
+During self-review, the first reader version was found to quote entry bodies while rendering producer-controlled metadata/cautions/sources in structurally stronger positions. That could let an adversarial capsule smuggle instruction-shaped content through the reader's own presentation layer. The branch was repaired before model-level use: all producer-controlled surfaces are now explicitly labelled untrusted; variable metadata is quoted; structural single-line fields reject line/control injection; the adversarial fixture now attacks metadata, cautions and sources as well as body text.
 
 This result establishes only properties of this small Python parser/reader under the tested inputs.
 
