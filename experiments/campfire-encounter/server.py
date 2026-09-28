@@ -9,13 +9,9 @@ from pathlib import Path
 
 from capsule import inspect_capsule, MAX_BYTES
 from store import Store
+from disclosure import TEXT, identifier
 
-DISCLOSURE = ('Shared experimental room. Use synthetic or already-public material only. '
-              'The host and other processes under this Windows user can inspect or alter it. '
-              'Retrieval may send content to your model provider. Names and acceptance IDs are '
-              'not verified identities. Carry choices control whole-thread export only. '
-              'Access expires within 24 hours; expiry is not deletion. Normal server shutdown '
-              'removes its disposable files, not exported copies or secure-erases the disk.')
+DISCLOSURE = TEXT
 
 
 class App:
@@ -33,7 +29,7 @@ class App:
 
         @contextmanager
         def opened():
-            s = Store(self.path)
+            s = Store(self.path, disclosure=identifier(DISCLOSURE))
             try:
                 yield s
             finally:
@@ -112,6 +108,8 @@ def make_server(app, port=0):
         def do_GET(self):
             if not self.host_ok():
                 return self.reply(403, {'error': 'Host rejected'})
+            if self.path == '/api/disclosure':
+                return self.reply(200, {'text': DISCLOSURE, 'id': identifier(DISCLOSURE)})
             asset = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'),
                      '/style.css': ('style.css', 'text/css')}.get(self.path)
             if not asset:
@@ -119,6 +117,7 @@ def make_server(app, port=0):
             body = (Path(__file__).parent / asset[0]).read_text(encoding='utf-8')
             if self.path == '/':
                 body = body.replace('TOKEN_PLACEHOLDER', app.token).replace('DISCLOSURE_PLACEHOLDER', DISCLOSURE)
+                body = body.replace('DISCLOSURE_ID_PLACEHOLDER', identifier(DISCLOSURE))
             self.reply(200, body, asset[1])
 
         def do_POST(self):

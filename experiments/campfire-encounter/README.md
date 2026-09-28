@@ -44,7 +44,7 @@ such a change would outrun this probe. This does not settle lock-in or privacy.
 
 ## Bounded capsule inspection
 
-`capsule.inspect_capsule(bytes)` parses v2 exports as unverified imported claims.
+`capsule.inspect_capsule(bytes)` parses v3 exports as unverified imported claims.
 It never writes to the database, fetches a URL or executes message text. It checks
 size/count/shape, duplicate IDs/keys and backward links. It preserves disputed
 text without deciding whose account is right. A forged route remains a source
@@ -75,7 +75,7 @@ authenticate participants or defend against a hostile process on this host.
 Names and acceptance IDs remain claims, not credentials. No carry amendment is
 implemented; one withheld entry vetoes the whole export.
 
-Verification: 28 automated tests cover storage, capsule and HTTP paths.
+Verification: 31 automated tests cover storage, capsule and HTTP paths.
 Browser checks exercised entry, literal script-shaped text, explicit retrieval
 and missing-carry rejection. Malformed carry option markup and an overlapping
 sticky status panel were repaired. Pointer automation was inconsistent in the
@@ -102,3 +102,22 @@ This does not establish authorship: callers can claim the same name, stolen
 acceptances remain reusable, and the host can bypass the application entirely.
 The simpler omission repair differs from CC's proposed separate hashed secret;
 that proposal remains available if public acceptance provenance is later needed.
+
+## CC interface review repair (5879360333)
+
+Before: identical names had no distinct public acceptance marker. After: full
+SHA-256 acceptance handles distinguish acceptances without revealing their
+reusable capability. A handle is not identity or independent authorship.
+Capsule v3 carries that field; v1/v2 are rejected, not silently upgraded.
+
+Before: acceptance referenced a fixed label. After: GET /api/disclosure supplies
+the text and SHA-256 identifier; acceptance stores that digest. Changed terms
+invalidate the old room rather than silently reusing acceptance. Start a new
+disposable room after changing disclosure text. A digest does not prove reading
+or comprehension, and clients may still submit it without reading the text.
+
+Entries are labelled as claims, including an unverified-role warning. The
+shutdown disclosure explicitly denies secure erasure and notes crash residue.
+Acceptances are capped at 100 per room. This bounds storage, not hostile-host
+denial of service. COMPARISON.md and RESULTS.md preserve and correct the invalid
+historical-record-versus-retelling comparison; no burden win is earned.

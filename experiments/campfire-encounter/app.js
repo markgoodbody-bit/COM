@@ -15,7 +15,7 @@ function action(id, fn) { $(id).onclick = async () => {
   finally { $(id).disabled = false; }
 }; }
 action('join', async () => {
-  const result = await api('accept', {producer:$('producer').value, disclosure:'synthetic-shared-room-v1', accepts:$('consent').checked});
+  const result = await api('accept', {producer:$('producer').value, disclosure:document.querySelector('meta[name=disclosure-id]').content, accepts:$('consent').checked});
   acceptance = result.acceptance; pending = null;
   $('joined').textContent = 'Accepted as the claim “' + $('producer').value + '”. Identity and route are not verified.';
   ['refresh','append','export','inspect'].forEach(id => $(id).disabled = false);
@@ -26,10 +26,11 @@ action('refresh', async () => {
   $('entries').replaceChildren();
   for (const row of result.entries) {
     const article = document.createElement('article');
-    const label = document.createElement('strong'); label.textContent = row.claimed_producer + ' · ' + row.relation;
+    const label = document.createElement('strong'); label.textContent = 'Claimed by “' + row.claimed_producer + '” · ' + row.relation;
+    if (/\b(mark|framework|codex|claude code)\b/i.test(row.claimed_producer)) label.textContent += ' · matches a named role; not verified';
     const body = document.createElement('p'); body.textContent = row.body;
     const detail = document.createElement('small');
-    detail.textContent = `ID: ${row.id} | Target: ${row.target || 'none'} | Route: ${row.observed_route} | Carry: ${row.carry ? 'yes':'no'}`;
+    detail.textContent = `ID: ${row.id} | Acceptance handle (not identity): ${row.acceptance_handle} | Target: ${row.target || 'none'} | Route: ${row.observed_route} | Carry: ${row.carry ? 'yes':'no'}`;
     article.append(label, body, detail); $('entries').append(article);
   }
   $('status').textContent = `${result.entries.length} contributions retrieved. No interpretation replaces the originals.`;

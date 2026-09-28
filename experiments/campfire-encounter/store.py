@@ -2,12 +2,15 @@
 import json
 import sqlite3
 import uuid
+import hashlib
+from disclosure import TEXT, identifier
 
 
 class Store:
-    DISCLOSURE = 'synthetic-shared-room-v1'
+    DISCLOSURE = identifier(TEXT)
 
-    def __init__(self, path):
+    def __init__(self, path, disclosure=None):
+        self.DISCLOSURE = disclosure or type(self).DISCLOSURE
         self.db = sqlite3.connect(path)
         self.db.row_factory = sqlite3.Row
         version = self.db.execute('PRAGMA user_version').fetchone()[0]
@@ -53,6 +56,9 @@ class Store:
         with self.db:
             self.db.execute('BEGIN IMMEDIATE')
             self._live(encounter, now)
+            if self.db.execute('SELECT count(*) FROM acceptances WHERE encounter=?',
+                               (encounter,)).fetchone()[0] >= 100:
+                raise ValueError('Acceptance limit reached')
             # This storage-only caller supplies no authenticated route. Do not
             # accept a caller's invented route as a host observation.
             self.db.execute('INSERT INTO acceptances VALUES (?,?,?,?,?,?)',
@@ -61,7 +67,7 @@ class Store:
 
     def _live(self, encounter, now):
         row = self.db.execute('SELECT * FROM encounters WHERE id=?', (encounter,)).fetchone()
-        if row is None or now >= row['expires']:
+        if row is None or now >= row['expires'] or row['disclosure'] != self.DISCLOSURE:
             raise ValueError('Encounter missing or expired')
         return row
 
@@ -106,9 +112,13 @@ class Store:
         self._live(encounter, now)
         # Acceptance is a reusable local capability, not portable provenance.
         # Never distribute it (or internal retry keys) to readers/export holders.
-        return [dict(r) for r in self.db.execute(
-            'SELECT id,encounter,claimed_producer,body,relation,target,carry,observed_route '
-            'FROM entries WHERE encounter=? ORDER BY rowid', (encounter,))]
+        result = []
+        for r in self.db.execute('SELECT * FROM entries WHERE encounter=? ORDER BY rowid', (encounter,)):
+            row = {k: r[k] for k in ('id', 'encounter', 'claimed_producer', 'body',
+                                   'relation', 'target', 'carry', 'observed_route')}
+            row['acceptance_handle'] = hashlib.sha256(r['acceptance'].encode('ascii')).hexdigest()
+            result.append(row)
+        return result
 
     def export(self, encounter, *, now):
         entries = self.read(encounter, now=now)
@@ -116,6 +126,6 @@ class Store:
         # bundle rather than imply a selectively exported thread is complete.
         if any(not row['carry'] for row in entries):
             raise ValueError('Whole-thread export blocked by carry-forward choice')
-        return json.dumps({'format': 'campfire-synthetic-v2',
+        return json.dumps({'format': 'campfire-synthetic-v3',
                            'authority': 'NONE', 'identity_verified': False,
                            'entries': entries}, ensure_ascii=False)

@@ -6,6 +6,8 @@ import unittest
 from pathlib import Path
 from server import App, make_server
 from store import Store
+import server
+from disclosure import identifier
 
 
 class ServerTests(unittest.TestCase):
@@ -137,6 +139,44 @@ class ServerTests(unittest.TestCase):
         for suffix in ('-wal', '-shm', '-journal'):
             self.assertFalse(Path(str(self.app.path) + suffix).exists())
         with self.assertRaises(ValueError): self.app.dispatch('read', {'acceptance':'x'})
+
+    def test_same_claim_different_handles_not_capabilities(self):
+        a, b = self.accept('Codex'), self.accept('Codex')
+        self.append(a)
+        self.append(b)
+        _, raw, _ = self.request('/api/read', {'acceptance':a})
+        rows = json.loads(raw)['entries']
+        self.assertNotEqual(rows[0]['acceptance_handle'], rows[1]['acceptance_handle'])
+        for row in rows:
+            self.assertEqual(self.append(row['acceptance_handle'], request='forged')[0], 400)
+        js = Path(__file__).with_name('app.js').read_text(encoding='utf-8')
+        self.assertIn('Claimed by', js)
+        self.assertIn('matches a named role; not verified', js)
+
+    def test_disclosure_endpoint_and_changed_text_rejected(self):
+        code, raw, _ = self.request('/api/disclosure', method='GET')
+        self.assertEqual(code, 200)
+        disclosure = json.loads(raw)
+        self.assertEqual(disclosure['id'], identifier(disclosure['text']))
+        a = self.accept()
+        original = server.DISCLOSURE
+        try:
+            server.DISCLOSURE = 'Different terms'
+            data = {'producer':'B', 'disclosure':disclosure['id'], 'accepts':True}
+            self.assertEqual(self.request('/api/accept', data)[0], 400)
+            self.assertEqual(self.request('/api/read', {'acceptance':a})[0], 400)
+        finally:
+            server.DISCLOSURE = original
+        self.assertIn('does not securely erase', disclosure['text'])
+        self.assertIn('a crash can leave', disclosure['text'])
+
+    def test_acceptance_bound_and_existing_reader_survives(self):
+        a = self.accept()
+        for i in range(99):
+            self.accept(str(i))
+        data = {'producer':'overflow', 'disclosure':Store.DISCLOSURE, 'accepts':True}
+        self.assertEqual(self.request('/api/accept', data)[0], 400)
+        self.assertEqual(self.request('/api/read', {'acceptance':a})[0], 200)
 
 
 if __name__ == '__main__':

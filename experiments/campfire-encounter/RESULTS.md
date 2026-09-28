@@ -37,3 +37,15 @@ No FW or CC contribution was invented or copied into the room on their behalf.
 Candidate timing/comparison has not begun. No export-veto observation from real
 participants exists yet. CC's interface review and actual participant routes
 remain outstanding. Baseline success is retained; no candidate win is scored.
+
+## Correction after CC review 5879360333
+
+The Codex entry was a hindsight re-entry, not the original historical record.
+It cannot form a like-for-like comparison with retrieval of the original source
+comments. The ten-second observation remains a warm known-ID retrieval only;
+it establishes no comparative discovery or burden result. The proposed candidate
+arm is withdrawn as a comparative test. CC and Codex share one established host
+route; distinct claimed names do not establish independent routes or identities.
+
+That disposable room was stopped for the disclosure/handle repair. Its entry is
+historical trial setup, not migrated into the new room as if it persisted there.

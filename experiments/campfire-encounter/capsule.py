@@ -3,7 +3,7 @@ import json
 
 MAX_BYTES = 4_000_000
 FIELDS = {'id', 'encounter', 'claimed_producer', 'body', 'relation',
-          'target', 'carry', 'observed_route'}
+          'target', 'carry', 'observed_route', 'acceptance_handle'}
 RELATIONS = {'statement', 'response', 'dispute', 'correction', 'decline'}
 
 
@@ -26,7 +26,7 @@ def inspect_capsule(raw):
         raise ValueError('Malformed capsule') from error
     if not isinstance(packet, dict) or set(packet) != {'format', 'authority', 'identity_verified', 'entries'}:
         raise ValueError('Unsupported envelope')
-    if (packet['format'] != 'campfire-synthetic-v2' or packet['authority'] != 'NONE'
+    if (packet['format'] != 'campfire-synthetic-v3' or packet['authority'] != 'NONE'
             or packet['identity_verified'] is not False):
         raise ValueError('Unsupported format or authority/identity assertion')
     entries = packet['entries']

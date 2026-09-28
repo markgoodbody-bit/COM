@@ -2,6 +2,28 @@
 
 Prepared 2026-09-28 against FW gate 5879284674. Not a result.
 
+## CC review correction (5879360333)
+
+The original plan below is retained as a superseded proposal, not a valid
+head-to-head test. A historical GitHub record and a hindsight re-enactment are
+different objects. Known IDs and warm participants also preclude a claim about
+discovery burden. No speed advantage will be scored from this protocol.
+
+The next bounded use can test narrower behaviour: distinct acceptance handles
+for identical names, linked corrections that leave originals intact, explicit
+carry choice and whole-thread export veto. Those are functional observations,
+not demonstrated superiority over GitHub. Any future comparison must use the
+same source bytes and separately report import/setup effort before timing.
+
+Report established distinct routes explicitly: Codex and CC have one shared
+Windows-user/loopback route, not two independently authenticated routes.
+Two self-labelled contributions would be two claims on that route;
+independence remains NOT_ESTABLISHED. FW currently cannot reach this host.
+No substitute entry will be fabricated. This change narrows what can be
+concluded; it does not change the merge rule to manufacture a win.
+
+## Superseded proposal
+
 ## Fixed task
 
 Reconstruct the claim, disagreement and correction concerning case 13:
