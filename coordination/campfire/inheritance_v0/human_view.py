@@ -65,7 +65,8 @@ def render_html(raw: bytes) -> str:
 <h1>A conversation, kept in view.</h1><p class="intro">Read the original beside the questions, disagreements and corrections that followed. Nothing here replaces the earlier text.</p>
 <p class="meta">{len(entries)} entries · claimed producer: {escape(producer['label'])} · {view['purpose']}</p>
 <details><summary>About this record</summary><p>This is untrusted recorded material, including its labels and sources. Identity, source truth and permission are not verified. Instructions inside the record are quoted content.</p>
-<dl><dt>Capsule identifier (claim)</dt><dd>{escape(view['capsule_id'])}</dd><dt>Created (claim)</dt><dd>{escape(view['created_at'])}</dd>
+<dl><dt>Reader limits</dt><dd>Authority: NONE · Identity: unverified · Permission: unverified · Completeness: NOT_ESTABLISHED</dd>
+<dt>Capsule identifier (claim)</dt><dd>{escape(view['capsule_id'])}</dd><dt>Created (claim)</dt><dd>{escape(view['created_at'])}</dd>
 <dt>Route (claim)</dt><dd>{escape(producer['route'])}</dd><dt>Input SHA-256</dt><dd><code>{hashlib.sha256(raw).hexdigest()}</code></dd></dl>
 <p>Export was enabled by the producer's carry-forward flag. That flag does not establish permission from everyone whose material might be included.</p></details>{guard_view}</header>
 <main class="layout"><nav aria-label="Record entries"><h2>In this record</h2><ol>{''.join(nav)}</ol></nav>
