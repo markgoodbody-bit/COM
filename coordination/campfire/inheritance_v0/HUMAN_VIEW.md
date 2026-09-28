@@ -28,3 +28,8 @@ Visual/browser QA is not established: browser policy blocked the local file URL;
 No changes to the live 8876/8877 rooms, their code, the parser, source fixtures or probe instructions. No network calls, publication, provider calls or schema additions.
 
 The viewer branch includes the integrated byte repair from `c60093a4` and keeps the 24-test local pass. CI now discovers both reader and viewer tests on Linux and Windows, rather than only running `test_capsule.py` on Linux. A workflow definition alone is not a completed hosted result; inspect the exact-head checks before integration.
+
+## Scan-first overview
+
+Before: the reader had a generic entry list and required scrolling to locate questions and challenges.
+After: counts link to the first entry of each labelled type, and recorded questions have short escaped excerpts linked to full originals. Entries remain in their original order. An excerpt is not a generated summary; longer question text is marked with an ellipsis and retained in full below. No answer/resolution state, recency, participant identity or completeness is inferred. This is a navigation improvement, not demonstrated usefulness or a new schema.

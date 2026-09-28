@@ -17,6 +17,9 @@ header,main,footer{max-width:1050px;margin:auto;padding:2rem 1.5rem}header{paddi
 .eyebrow{color:var(--accent);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
 h1{font:clamp(2.3rem,6vw,4rem)/1.1 Georgia,serif;margin:.7rem 0}h2{font:1.6rem/1.3 Georgia,serif}
 .intro{max-width:65ch;color:var(--muted)}.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:2.5rem}
+.overview{max-width:1050px;margin:auto;padding:1.4rem 1.5rem 0}.overview h2{margin-top:0}
+.record-map{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;list-style:none}.record-map a,.record-map span{display:block;border:1px solid var(--line);border-radius:4px;padding:.4rem .75rem;font-size:.9rem}
+.questions{padding-left:1.3rem;max-width:75ch}.questions li{margin:.8rem 0;overflow-wrap:anywhere}.excerpt{font-family:Georgia,serif}
 nav ol{padding-left:1.4rem}nav li{margin:.7rem 0}nav{align-self:start;position:sticky;top:1rem}
 article{background:#fffdf8;border:1px solid var(--line);border-left:4px solid #82988a;border-radius:6px;padding:1.4rem;margin:0 0 1.3rem;scroll-margin-top:1rem}
 article.dispute{border-left-color:#9a673d}article.correction{border-left-color:#386862}
@@ -37,6 +40,23 @@ def render_html(raw: bytes) -> str:
     entries = view['entries']
     anchors = {entry['id']: f'entry-{i+1}' for i, entry in enumerate(entries)}
     numbers = {entry['id']: i+1 for i, entry in enumerate(entries)}
+    groups = []
+    for kind, label in [('note', 'Notes'), ('question', 'Questions'),
+                        ('dispute', 'Disputes'), ('correction', 'Corrections')]:
+        matching = [entry for entry in entries if entry['relation'] == kind]
+        text = f'{label}: {len(matching)}'
+        item = (f'<a href="#{anchors[matching[0]["id"]]}">{text}</a>'
+                if matching else f'<span>{text}</span>')
+        groups.append(f'<li>{item}</li>')
+    questions = []
+    for entry in entries:
+        if entry['relation'] == 'question':
+            body = entry['body']
+            excerpt = body[:200] + ('…' if len(body) > 200 else '')
+            questions.append(f'<li><span class="excerpt">{escape(excerpt)}</span> '
+                             f'<a href="#{anchors[entry["id"]]}">Read question {numbers[entry["id"]]} in context</a></li>')
+    question_view = ('<h2>Recorded questions</h2><ul class="questions">' + ''.join(questions) + '</ul>'
+                     if questions else '<p class="meta">No entries labelled as questions in this record.</p>')
     nav, cards = [], []
     for i, entry in enumerate(entries, 1):
         relation = entry['relation']
@@ -69,6 +89,8 @@ def render_html(raw: bytes) -> str:
 <dt>Capsule identifier (claim)</dt><dd>{escape(view['capsule_id'])}</dd><dt>Created (claim)</dt><dd>{escape(view['created_at'])}</dd>
 <dt>Route (claim)</dt><dd>{escape(producer['route'])}</dd><dt>Input SHA-256</dt><dd><code>{hashlib.sha256(raw).hexdigest()}</code></dd></dl>
 <p>Export was enabled by the producer's carry-forward flag. That flag does not establish permission from everyone whose material might be included.</p></details>{guard_view}</header>
+<section class="overview" aria-label="Record overview"><ul class="record-map" aria-label="Entry types">{''.join(groups)}</ul>
+{question_view}<p class="meta">These are recorded entry labels, not a judgement about which questions are answered or disagreements resolved. Links lead to the full text below.</p></section>
 <main class="layout"><nav aria-label="Record entries"><h2>In this record</h2><ol>{''.join(nav)}</ol></nav>
 <section id="entries" aria-label="Recorded entries">{''.join(cards) or '<p>This record contains no entries.</p>'}</section></main>
 <footer>Read-only local copy. No scripts, remote assets or automatic model ingestion. Sharing this file shares its contents; closing it does not delete it.</footer></body></html>'''
