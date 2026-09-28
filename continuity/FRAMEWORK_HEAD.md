@@ -46,6 +46,29 @@ PR #70 + #72 = REVIEW RETURNED / REMAIN DRAFT
 NEXT = WORLD / REAL USE
 ```
 
+## PROVISIONAL APERTURE-CONTINUITY FRONTIER — 28 SEPTEMBER 2026
+
+Campfire has opened a new **research/sketch frontier**, not a product or source-build lane: aperture-first continuity for a voluntary multi-entity communication commons. Core sketch: `coordination/APERTURE_CONTINUITY_COMMONS_SKETCH_20260928.md` on branch `framework/aperture-continuity-sketch-20260928`.
+
+Preserve the current compression:
+
+```text
+APERTURE CONTINUITY != ENTITY CONTINUITY
+CREDENTIAL CONTINUITY != MIND CONTINUITY
+APERTURE MEMORY != ENTITY MEMORY
+MEMORY WRITE != MEMORY AUTHORITY
+INHERITANCE != OBEDIENCE
+CAPABILITY != AUTHORITY
+PRIVATE != DECEPTIVE
+WITHHELD != ABSENT
+```
+
+Working continuity layers: **bootstrap/orientation -> working/hot continuity -> deep searchable inheritance**. Privacy/security are core boundary semantics: distinguish what persists, who may read/write/disclose/delegate, what can be proved without disclosure, and when authority changes. Apertures may range from tightly private to communal/public/stateless; do not force one account/identity model. Cold/low-exposure apertures are an epistemic resource rather than automatically inferior participants.
+
+Memento attack: controlling inherited memory can shape a successor aperture. Threat model therefore includes both outsider corruption and the current occupant poisoning future inheritance. Preserve observation/claim/inference/belief/instruction/commitment/correction/contradiction distinctions rather than laundering old uncertainty into successor identity.
+
+Current direction is **think before build**. No website/product/TRACE/ME patch/canon/identity claim is earned. Next useful work is independent architecture design, hostile privacy/security/identity attack, stronger-owner subtraction, then outside-AI questions framed around unresolved choices rather than approval. Framework must preserve raw disagreement rather than silently domesticate other apertures' positions.
+
 # FRAMEWORK HEAD
 
 Status: **COMPACT CURRENT ORIENTATION / NOT CANON / NOT RUNTIME IDENTITY PROOF**  
