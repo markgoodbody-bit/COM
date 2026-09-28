@@ -1,3 +1,15 @@
+## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
+
+- **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; visual/browser QA and latest Claude Code review remain unestablished. Relay PR #271 is a separate incompatible draft and is not silently combined.
+- **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No install, restart, Relay-main merge or Production activation occurred; the installed App remains on its earlier lineage.
+- Full evidence/boundaries: `coordination/build_ledger/CAMPFIRE_COMPONENT_AND_SIMPLE_V1_INSTALLER_CURRENTNESS_20260929.md`.
+
+```text
+COMPONENTS PRESENT != USABLE FORUM
+SOURCE GUARD REPAIRED != INSTALL SUCCEEDED
+NO GENERAL BUILD LANE
+```
+
 ## EvidenceWatch — NVIDIA Claw submitted / awaiting result
 
 Submission receipt:
@@ -78,7 +90,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 maintained source `9f0f038e…` GREEN / STOP BY DEFAULT** — #266/#267/#268/#269/#270 remain retained. A concrete installed-runtime defect then reopened source once: Town's `-AllCitizens` activity cache had grown without pruning to 24,330+ events / 53.7 MB and rewrote the full file each minute. Exact head `9f0f038ee1c17663e193db76f8523d94f1217909` prunes only that activity view to the intended 24-hour server-time window, leaves AI history unpruned, adds a returned/on-disk regression and passes hosted Windows PowerShell CI `36412767174 / SUCCESS`. Installed Simple-v1 remains on pre-#266 `f4fa182…`; no install/restart/Production action occurred. The adjacent `System error.` bursts remain correlated but causally unresolved. `SOURCE_CURRENT != INSTALLED_CURRENT`; `CACHE_PRUNED != GUI_ERROR_FIXED`. Reopen only for a concrete field defect, installed-runtime update/witness, or deliberate carrier change.
+- **Simple-v1 maintained source `6ca82daf…` GREEN / STOP BY DEFAULT** — #266/#267/#268/#269/#270 remain retained. A concrete installed-runtime defect then reopened source once: Town's `-AllCitizens` activity cache had grown without pruning to 24,330+ events / 53.7 MB and rewrote the full file each minute. Head `9f0f038ee1c17663e193db76f8523d94f1217909` pruned only that activity view to the intended 24-hour server-time window, left AI history unpruned, added a returned/on-disk regression and passed hosted Windows PowerShell CI `36412767174 / SUCCESS`. A later real install attempt exposed the Windows PowerShell 5.1 BOM self-rejection; PR #272 repaired only that guard and merged into the candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`, with post-merge run `36498228679 / SUCCESS`. The attempted update did not adopt: the prior App was restored and remains on its earlier lineage; no successful install/restart/Production action occurred. The adjacent `System error.` bursts remain correlated but causally unresolved. `SOURCE_CURRENT != INSTALLED_CURRENT`; `CACHE_PRUNED != GUI_ERROR_FIXED`. Reopen only for a concrete field defect, installed-runtime update/witness, or deliberate carrier change.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
