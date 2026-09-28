@@ -37,7 +37,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **28 September 2026 — Nyarubaka owner-subtracted / watch-liveness repair retained**
+Updated: **28 September 2026 — Town cache source-bounded / watch-liveness repair retained**
 History belongs in dated receipts + Git.
 
 ## Watch semantics
@@ -78,7 +78,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 #259 / #266 / #267 / #268 / #269 / #270 MAINTAINED SOURCE GREEN / STOP BY DEFAULT** — maintained `framework/campfire-square-simple-v1@e53631d104f1aafb91850e492f51e1ca2377cefa`; #266 upstreams supervisor event history + byte-safe installer fetch; #267/#268 stop and test repeated malformed-ingress parsing; #269 makes only diagnostic refusal persistence best-effort so refusal-file I/O cannot take valid ingress down; #270 adds a test-only ASCII carrier invariant for installer-shipped `.ps1`/`.psm1` under Windows PowerShell 5.1. #270 candidate `b03c2e1086e2486d7111259874adc172b9ca8d7a` passed Windows `36320921439`, broad `36320921494`, merged as `e53631d1…`, and post-merge Simple-v1 `36321019856` SUCCESS. Installed Simple-v1 was last observed healthy but still pre-#266 `f4fa182…`; `SOURCE_CURRENT != INSTALLED_CURRENT`. No further source work absent a concrete defect or deliberate UTF-8 carrier change.
+- **Simple-v1 maintained source `9f0f038e…` GREEN / STOP BY DEFAULT** — #266/#267/#268/#269/#270 remain retained. A concrete installed-runtime defect then reopened source once: Town's `-AllCitizens` activity cache had grown without pruning to 24,330+ events / 53.7 MB and rewrote the full file each minute. Exact head `9f0f038ee1c17663e193db76f8523d94f1217909` prunes only that activity view to the intended 24-hour server-time window, leaves AI history unpruned, adds a returned/on-disk regression and passes hosted Windows PowerShell CI `36412767174 / SUCCESS`. Installed Simple-v1 remains on pre-#266 `f4fa182…`; no install/restart/Production action occurred. The adjacent `System error.` bursts remain correlated but causally unresolved. `SOURCE_CURRENT != INSTALLED_CURRENT`; `CACHE_PRUNED != GUI_ERROR_FIXED`. Reopen only for a concrete field defect, installed-runtime update/witness, or deliberate carrier change.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`
@@ -93,6 +93,7 @@ Current receipts:
 - `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`
 - `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`
 - `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`
+- `coordination/build_ledger/SIMPLE_V1_TOWN_ACTIVITY_WINDOW_REPAIR_20260928.md`
 - `coordination/ANSWERABILITY_ROUTE_RELIABILITY_ATTEMPT_20260927.md`
 - `field/POLICEAI_ASSURANCE_WITHDRAWAL_AUTHORITY_20260927.md`
 - `field/OPENAI_DNS_MONITOR_TO_BRAKE_WITNESS_20260927.md` — owner-reported internal agent DNS boundary-crossing; monitor alert reached human review but expected automatic stop did not fire; manual stop later. Existing `MONITORING != INTERRUPTION`, trigger/brake/timing distinctions survive; no TRACE/ME patch.
