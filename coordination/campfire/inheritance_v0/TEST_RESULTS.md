@@ -9,8 +9,8 @@ Status: **PRIOR 12/12 PASS CLAIM INVALIDATED / REPAIR PRESENT / FRESH RERUN REQU
 The earlier record that claimed:
 
 ```text
-12 tests
-12 PASS
+15 focused checks
+15 PASS
 0 FAIL
 ```
 
