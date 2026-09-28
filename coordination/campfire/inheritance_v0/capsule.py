@@ -46,7 +46,7 @@ def _no_duplicate_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
     result: dict[str, Any] = {}
     for key, value in pairs:
         if key in result:
-            raise CapsuleError(f"duplicate key: {key}")
+            raise CapsuleError("duplicate object key")
         result[key] = value
     return result
 
@@ -55,9 +55,9 @@ def _strict_keys(obj: dict[str, Any], allowed: set[str], where: str) -> None:
     unknown = set(obj) - allowed
     missing = allowed - set(obj)
     if unknown:
-        raise CapsuleError(f"{where}: unknown fields: {sorted(unknown)}")
+        raise CapsuleError(f"{where}: unknown fields")
     if missing:
-        raise CapsuleError(f"{where}: missing fields: {sorted(missing)}")
+        raise CapsuleError(f"{where}: missing fields")
 
 
 def _bounded_string(
@@ -102,8 +102,8 @@ def parse_capsule(raw: bytes) -> dict[str, Any]:
         raise CapsuleError("capsule must be UTF-8") from exc
     try:
         data = json.loads(text, object_pairs_hook=_no_duplicate_object)
-    except (json.JSONDecodeError, CapsuleError, RecursionError) as exc:
-        raise CapsuleError(f"invalid JSON: {exc}") from exc
+    except (ValueError, RecursionError) as exc:
+        raise CapsuleError("invalid JSON") from exc
 
     if not isinstance(data, dict):
         raise CapsuleError("top level must be an object")
@@ -262,8 +262,8 @@ def main(argv: list[str]) -> int:
     path = Path(argv[1])
     try:
         view = inspect_capsule(_read_path_bounded(path))
-    except (OSError, CapsuleError) as exc:
-        print(f"INVALID CAPSULE: {exc}", file=sys.stderr)
+    except (OSError, CapsuleError):
+        print("INVALID CAPSULE", file=sys.stderr)
         return 1
     sys.stdout.write(render_human(view))
     return 0
