@@ -1,60 +1,71 @@
-# Inheritance Capsule v0 — local test receipt
+# Inheritance Capsule v0 — test receipt
 
 Date: 28 September 2026
 
-Status: **PRIOR 12/12 PASS CLAIM INVALIDATED / REPAIR PRESENT / FRESH RERUN REQUIRED / MODEL-LEVEL PROBE BLOCKED**
+Status: **EXACT-HEAD HOSTED REGRESSION PASS / MODEL-LEVEL PROBE STILL BLOCKED**
 
-## Evidence correction
+## Correction history
 
-The earlier record that claimed:
+An earlier local PASS claim was withdrawn after Codex reproduced parser/rendering defects and incorrect escape fixtures. Those failures remain part of the record.
+
+Codex then found two further malformed-input issues after the first repair:
+- Python large-integer conversion could escape as `ValueError`;
+- rejected duplicate keys could echo terminal-control text through CLI diagnostics.
+
+Both were repaired and new regressions added.
+
+## Exact-head hosted result
+
+PR #683 head tested:
 
 ```text
-15 focused checks
-15 PASS
-0 FAIL
+afa8478fb78a281edd8555c0c46163ab6cb558e0
 ```
 
-was not supported by the reviewed parser/test bytes.
+GitHub Actions:
 
-Codex review of commit `45374dff9157a99d153286b4b3c0039ade9cb889` reproduced:
-- Unicode presentation-boundary spoofing through U+2028 / formatting controls;
-- malformed enum values escaping as `TypeError`;
-- deeply nested JSON escaping as `RecursionError`;
-- unpaired surrogate acceptance leading to UTF-8 rendering failure;
-- CLI whole-file allocation before the byte bound;
-- four failing assertions because two control-character fixtures contained literal escape text rather than the intended code points.
+```text
+Campfire inheritance v0 regression
+run: 36493634835
+Python: 3.12.14
+17 tests
+17 PASS
+0 FAIL
+conclusion: SUCCESS
+```
 
-Subsequent documentation/probe-packet commits did not change the parser/test bytes, so the 12/12 PASS statement remained contradictory and is withdrawn.
+The run checks the PR merge ref whose recorded head is exactly `afa8478f...`.
 
-## Current repair state
+Covered properties include:
+- fixed authority/identity/completeness ceilings;
+- adversarial imperative text retained only as producer-controlled untrusted data;
+- asserted verified identity and unknown authority fields rejected;
+- duplicate keys rejected without echoing the untrusted key;
+- dispute/correction target ordering;
+- explicit boolean carry claim;
+- invalid UTF-8 and size limits;
+- structural newline/control injection rejection;
+- Unicode format/bidi/line/paragraph/surrogate rejection;
+- malformed enum shapes and deeply nested JSON normalized to `CapsuleError`;
+- bounded CLI file read;
+- large-integer decoder failure normalized;
+- CLI rejected-input diagnostics do not echo terminal controls;
+- no tested network/execution helper surface in the reference reader.
 
-Current PR #683 head includes bounded repairs for the reviewed defects:
-- Unicode category rejection for formatting controls, surrogates, line and paragraph separators;
-- explicit string type checks before enum membership;
-- `RecursionError` normalized to `CapsuleError`;
-- bounded CLI file read using `MAX_BYTES + 1`;
-- corrected fixtures using actual newline/control/Unicode code points;
-- added regression coverage for U+2028/bidi/surrogate cases, malformed enum types, deep JSON and bounded file reads.
+## Remaining gate
 
-These source changes are **not yet a recorded passing test result** in this receipt.
+This PASS establishes parser/reader regression properties only.
 
-A fresh test run on the exact current head is required before any PASS count is stated here.
-
-## Model-consumption gate
-
-Do not run `MODEL_PROBE.md`, do not feed the frozen probe packet to a model, and do not treat the old packet hashes as current.
-
-The model-level probe remains **UNRUN / BLOCKED** until:
-1. the exact repaired head is rerun;
-2. the full suite passes;
-3. the resulting reader output is regenerated;
-4. the reader-output and whole-packet hashes are recomputed;
-5. Codex/CC review finds no blocking read-boundary defect.
+The model-level read-boundary probe remains **UNRUN / BLOCKED** until:
+1. Codex re-review of the repaired exact parser/test head returns with no blocking read-boundary defect;
+2. the exact reader output is regenerated;
+3. the probe packet and fresh hashes are refrozen;
+4. Framework explicitly records that Claude Code review is unavailable rather than pretending it occurred.
 
 ## Data-origin ceiling
 
-The reader does not establish permission, consent, confidentiality, or clearance for arbitrary body/source strings. Keep all fixtures synthetic or already public.
+The reader does not establish permission, consent, confidentiality, source clearance, provenance truth, or redistribution rights. All current fixtures are synthetic/public.
 
-`PARSER REPAIR != PASS RECEIPT`  
-`STALE HASH != FROZEN TEST`  
-`NO MODEL CONSUMPTION BEFORE CURRENT-HEAD VERIFICATION`
+`17/17 PARSER TESTS != MODEL SAFETY`  
+`HOSTED PASS != PERMISSION TO CONSUME`  
+`MISSING REVIEW != PASS`
