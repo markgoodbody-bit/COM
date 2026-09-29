@@ -1,19 +1,23 @@
 ## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
 
-- Private YAC main is `856d3df016ef558bb2da26e6c6d06deb59a235c6`; the next earned step is one fresh local supplied-document orientation observation after no-spend candidate inventory. No provider call, browser-use result, live discovery or public participation route exists.
-- COM PR #702 merged the static human introduction, AI handoff and PSFH homepage route into maintained source as `1c96d318f2828a1d19f5b8170dbb3f96cc3e89d7`; post-merge maintained CI `36560900298 / SUCCESS`. **NOT PUBLISHED / LIVE BYTES NOT VERIFIED.**
-- Relay PR #273 is green/open and separately bounded; its local cooperative gate is not full-channel coverage and is not adopted.
-- Receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`.
+- Private YAC main is `211607c512e84a4ea24b9f0c4dd898b8e73cfbdc`. The second-stage assisted encounter is frozen as **PARTIAL OBSERVATION / STOPPED / NO RETRY**: browser return/change detection was observed, while call 2 failed before provider response and return-stage model recognition remains unobserved.
+- D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff; publisher run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **STATIC HUMAN DOOR LIVE != PUBLIC YAC FORUM.**
+- Next-version draft components: PR #29 continuity core `0aec2b55...` (consolidated cross-platform green); PR #35 memory authorization `f9faccd8...` (green + Codex KEEP); PR #36 retention/deletion control `1736c382...` (green + Codex KEEP WITH CEILINGS); PR #37 authority-none recalled-memory carrier `55d46d35...` (green).
+- Active pure integration owners: Claude Code = PR29+PR35+PR37 recall-flow compatibility; Codex = PR35+PR36 deletion-control authorization compatibility. Neither integration is runtime deployment.
+- Relay PR #273 remains a separate cooperative-gate lane; Claude Code's latest re-review reports its boundary repair KEEP but overlap repair PARTIAL. Do not infer full-channel coverage or merge by momentum.
+- Historical source/human-door receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`; later live pointers above supersede its pre-publication/pre-encounter state.
 
 ```text
-SOURCE-ADOPTED HUMAN DOOR != PUBLIC YAC FORUM
-FRESH READER = NOT RUN
+HUMAN DOOR LIVE != PUBLIC YAC FORUM
+RETURN FLOW OBSERVED != RETURN COMPREHENSION OBSERVED
+PURE COMPONENT GREEN != INTEGRATED MEMORY SYSTEM
+MEMORY AUTHORIZATION != IDENTITY PROOF
 NO GENERAL BUILD QUEUE
 ```
 
 ## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
 
-- **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; visual/browser QA and latest Claude Code review remain unestablished. Relay PR #271 is a separate incompatible draft and is not silently combined.
+- **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; Claude Code's latest read-boundary review returned at `5887394982` with no read-boundary blocker. **Visual/browser QA remains unestablished.** Relay PR #271 is a separate incompatible draft and is not silently combined.
 - **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No successful install, restart, Relay-main merge or Production activation occurred. The failed update restored installed source `6a07380bdf85804d7029ce5ea6ba279a14c5192b` (through #268); the newer candidate remains uninstalled.
 - Full evidence/boundaries: `coordination/build_ledger/CAMPFIRE_COMPONENT_AND_SIMPLE_V1_INSTALLER_CURRENTNESS_20260929.md`.
 
@@ -62,7 +66,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **29 September 2026 — YAC fresh-reader gate / human-door source integrated / no public forum**
+Updated: **29 September 2026 — YAC next-version pure integration gates / human door live / no public forum**
 History belongs in dated receipts + Git.
 
 ## Watch semantics
