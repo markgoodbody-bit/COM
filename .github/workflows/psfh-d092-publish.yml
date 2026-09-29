@@ -1,0 +1,129 @@
+name: PSFH D092 publish static THR window
+
+on:
+  push:
+    branches:
+      - framework/psfh-d092-publish-20260929
+    paths:
+      - 'public/explore/yac/index.html'
+      - 'public/explore/yac/thr/index.html'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'public/manifest.json'
+      - 'public/sitemap.xml'
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+      - '.github/workflows/psfh-d092-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d092:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d092-publish-20260929
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+
+      - name: Build and check exact reviewed source
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+
+      - name: Verify reviewed D092 content
+        run: |
+          grep -F 'Reading or continuing does not record acceptance of this covenant.' out/explore/yac/thr/index.html
+          grep -F 'The letterbox is not open yet' out/explore/yac/thr/index.html
+          grep -F '448dcd7b2f829e0c7277365d14daaacf4cd381a4' out/explore/yac/thr/index.html
+          ! grep -E '<form|<script' out/explore/yac/thr/index.html
+          grep -F 'https://pleasestartfromhere.com/explore/yac/thr/' out/sitemap.xml
+
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 4f000c4be6cf1a1541c8c01b035893df751bcf10
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+
+      - name: Stage exact built site over current Pages
+        run: |
+          rm -rf /tmp/psfh-d092-publish
+          git worktree add -B gh-pages /tmp/psfh-d092-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d092-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d092-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d092-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d092-publish hash-object README.md)"
+          rsync -a --delete             --exclude='.git'             --exclude='CNAME'             --exclude='.nojekyll'             --exclude='.gitattributes'             --exclude='/README.md'             out/ /tmp/psfh-d092-publish/
+          test "$(git -C /tmp/psfh-d092-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d092-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d092-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d092-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d092-publish/resources');"
+          git -C /tmp/psfh-d092-publish status --short
+
+      - name: Commit and publish D092
+        run: |
+          git -C /tmp/psfh-d092-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d092-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d092-publish add -A
+          if git -C /tmp/psfh-d092-publish diff --cached --quiet; then
+            echo "No D092 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d092-publish commit -m "Publish PSFH D092 static THR window"
+          git -C /tmp/psfh-d092-publish push origin HEAD:gh-pages
+
+      - name: Verify D092 served routes
+        run: |
+          expected_root="$(sha256sum out/index.html | awk '{print $1}')"
+          expected_thr="$(sha256sum out/explore/yac/thr/index.html | awk '{print $1}')"
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 https://pleasestartfromhere.com/ -o /tmp/psfh-live-index.html               && curl -fsSL --max-time 20 https://pleasestartfromhere.com/explore/yac/thr/ -o /tmp/psfh-live-thr.html; then
+              actual_root="$(sha256sum /tmp/psfh-live-index.html | awk '{print $1}')"
+              actual_thr="$(sha256sum /tmp/psfh-live-thr.html | awk '{print $1}')"
+              if [ "$actual_root" = "$expected_root" ] && [ "$actual_thr" = "$expected_thr" ]; then
+                ok=1
+                break
+              fi
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "Live D092 bytes did not converge" >&2
+            exit 1
+          }
+          grep -F 'Reading or continuing does not record acceptance of this covenant.' /tmp/psfh-live-thr.html
+          grep -F 'The letterbox is not open yet' /tmp/psfh-live-thr.html
+          ! grep -E '<form|<script' /tmp/psfh-live-thr.html
+          echo "D092 live root SHA-256: $expected_root"
+          echo "D092 live THR-window SHA-256: $expected_thr"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# WINDOW_PUBLISHED != LETTERBOX_AUTHORIZED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
