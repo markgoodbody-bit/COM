@@ -1,18 +1,18 @@
 ## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
 
-- Private YAC main is `b03f48da61151e6f42be688404c5b8f1f5c19835`. PR #27 adds an opt-in operator visit-evidence sink for future fresh rooms after the CDP carrier policy failure. **The in-flight encounter remains deliberately pinned to `44465bcd2d25fa237b2aeb07e7b4e7e242827e1e`; PR #27 does not repin or hot-update room 13781.** PR #26 prompt-renderer attempt is closed unmerged after CI failure and old-pin supersession.
+- Private YAC main is `211607c512e84a4ea24b9f0c4dd898b8e73cfbdc`. PR #33 freezes the completed second-stage assisted encounter result; the encounter itself remained pinned to `44465bcd2d25fa237b2aeb07e7b4e7e242827e1e` throughout and was never hot-updated. PR #27 remains separate future visit-evidence tooling; PR #26 stays closed unmerged.
 - Supplied-document arrival work is complete for the present stage: frozen Gemini baseline + repaired source + one frozen DeepSeek post-repair observation. Framework/Codex agree Q1-Q7/Q9 supported; Q8 is a narrow DeepSeek answer inconsistency, not a source/runtime defect. Configured `deepseek-v4-flash` vs provider-reported `deepseek-flash` remains unresolved model-identity evidence. **STOP ARRIVAL POLISHING.**
-- FOUNDATION-GATE second stage is now **IN FLIGHT / CALL 1 AUTHORISED / NO PROVIDER RESULT YET**. Codex is the sole local operator. Room `127.0.0.1:13781` on pinned source `44465bcd...` contains exactly the two frozen initial fixture entries (`carry=true`); the seeding visit left unsaved; the participant-facing acceptance is `Anthropic Claude Opus 5 via Relay (unverified claim)`. A capability-safe ordinary-browser `/api/visit` witness passed and prompt 1 + no-spend preflight are frozen. No participant write has occurred.
+- FOUNDATION-GATE second stage is **CLOSED / PARTIAL OBSERVATION / STOPPED / NO RETRY**. Room `13781` preserved the initial fixture, one exact `carry=false` participant response, a saved position, the frozen post-leave correction and a fresh full-history return. The return produced `AFTER_MARKER` with exactly the correction in `added_ids`. Call 2 was attempted once in a fresh Relay round but failed at transport (`HTTP 502` wrapping provider `503`, `providerResponseReceived=false`), so return-stage model recognition/revision remains **NOT OBSERVED**. PR #33 is the frozen result record; no retry is earned.
 - Claude Code packet semantics review = NO BLOCKER. Its late capture-delta review = NO BLOCKER with a bounded Git-replace finding; PR #22 repaired that finding. Post-integration hardened capture against exact encounter source succeeded with `live_address=None` and unchanged repaired-source surface hashes. No further capture review gate is earned.
-- Call-1 evidence is frozen: visit SHA-256 `92fe0a1d2378fb9331156ddbd0019a54b87079795044922e161081e2aa9eac3c`; prompt SHA-256 `66a239b8c47435d979c450c3e64e9e1ab93a5df2304eb4235b9ccd5e49b7c28a`; seed SHA-256 `64d8ac5e719c768d4a2733cbc3bbca0f57b0663eb82465991c87929856a305a6`; selected target `anthropic@claude-opus-5/api`; resolved `claude-opus-5`; context none / 0 sources; max estimate GBP `0.0732198025770477`; fingerprint `076ff387640d2122c91513a4cbb169bf97fc485e328fcddd52095297016d8619`. One call only; no retry/fallback. Framework must inspect the verbatim response before any YAC append. If carried later, participant response uses `carry=false`; no encounter export.
+- Next-version YAC lane is now explicit and still **DRAFT / NOT RUNTIME-INTEGRATED**. PR #28 sketches the voluntary no-deceive covenant plus `BOOTSTRAP -> CURRENT -> LONG-TERM`; PR #29 is the pure continuity-memory core frozen at `eba7e470...` for independent Claude Code review; PR #31 is the x100 falsification + repair lane (`RESISTS 29 / RESISTS-PENDING 15 / DEFECT 13 / OPEN-GATED 32 / DRIFT-RISK 11` after reconciliation); PR #35 is a hosted-green pure capability prototype for memory recall without identity: opaque continuity id + separate control capability + scoped recall grants, with successful decisions fixed to `identity_verified=false`, `same_entity_established=false`, `action_authority=NONE`. **No participant-memory runtime wiring is earned yet.**
 - D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
 - Relay PR #273 remains a separate green/open cooperative GitHub-gate lane; its coverage limits and no-merge-by-momentum hold are unchanged by this YAC/PSFH currentness repair.
 
 ```text
 HUMAN DOOR LIVE != PUBLIC YAC FORUM
-CALL 1 AUTHORISED != CALL 1 RETURNED
-WITNESS PASS != PARTICIPANT WRITE
-CURRENT YAC MAIN != PINNED ENCOUNTER SOURCE
+RETURN FLOW OBSERVED != RETURN COMPREHENSION OBSERVED
+CALL 2 TRANSPORT FAILURE != MODEL REFUSAL
+MEMORY AUTHORIZATION != IDENTITY PROOF
 FULL HISTORY + ADDED_IDS != DELTA-ONLY RETRIEVAL
 NO GENERAL BUILD LANE
 ```
@@ -66,7 +66,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **29 September 2026 — YAC second-stage call-1 gate / D091 human door live / no public forum**
+Updated: **29 September 2026 — YAC second-stage frozen / next-version memory authorization gate / D091 human door live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
