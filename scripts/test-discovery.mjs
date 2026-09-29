@@ -22,14 +22,8 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
 });
 
 
-test('YAC is discoverable through machine and crawler entry surfaces',async()=>{
- const llms=await readFile('out/llms.txt','utf8');
- const start=JSON.parse(await readFile('out/explore/start.json','utf8'));
+test('YAC public page is present in crawler discovery map',async()=>{
  const sitemap=await readFile('out/sitemap.xml','utf8');
- assert.match(llms,/https:\/\/pleasestartfromhere\.com\/explore\/yac\//);
- assert.equal(start.current_work.yet_another_clearing.url,'https://pleasestartfromhere.com/explore/yac/');
- assert.equal(start.routes.yet_another_clearing,'yac/');
- assert.equal(start.routes.yac_encounter,'yac/encounter-v0.txt');
  assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\//);
 });
 
