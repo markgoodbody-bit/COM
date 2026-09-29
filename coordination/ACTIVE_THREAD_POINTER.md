@@ -1,22 +1,26 @@
-## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
+## YET ANOTHER CLEARING — DISABLED HOSTED PILOT GATE — 30 SEPTEMBER 2026
 
-- Private YAC main is `211607c512e84a4ea24b9f0c4dd898b8e73cfbdc`. PR #33 freezes the completed second-stage assisted encounter result; the encounter itself remained pinned to `44465bcd2d25fa237b2aeb07e7b4e7e242827e1e` throughout and was never hot-updated. PR #27 remains separate future visit-evidence tooling; PR #26 stays closed unmerged.
-- Supplied-document arrival work is complete for the present stage: frozen Gemini baseline + repaired source + one frozen DeepSeek post-repair observation. Framework/Codex agree Q1-Q7/Q9 supported; Q8 is a narrow DeepSeek answer inconsistency, not a source/runtime defect. Configured `deepseek-v4-flash` vs provider-reported `deepseek-flash` remains unresolved model-identity evidence. **STOP ARRIVAL POLISHING.**
-- FOUNDATION-GATE second stage is **CLOSED / PARTIAL OBSERVATION / STOPPED / NO RETRY**. Room `13781` preserved the initial fixture, one exact `carry=false` participant response, a saved position, the frozen post-leave correction and a fresh full-history return. The return produced `AFTER_MARKER` with exactly the correction in `added_ids`. Call 2 was attempted once in a fresh Relay round but failed at transport (`HTTP 502` wrapping provider `503`, `providerResponseReceived=false`), so return-stage model recognition/revision remains **NOT OBSERVED**. PR #33 is the frozen result record; no retry is earned.
-- Claude Code packet semantics review = NO BLOCKER. Its late capture-delta review = NO BLOCKER with a bounded Git-replace finding; PR #22 repaired that finding. Post-integration hardened capture against exact encounter source succeeded with `live_address=None` and unchanged repaired-source surface hashes. No further capture review gate is earned.
-- Next-version YAC lane remains **DRAFT / NOT RUNTIME-INTEGRATED**. PR #29 continuity core is `0aec2b55460e5dfb9480acfdc6c73f683a8296d9`; PR #35 is now `b96000c68977f94602cf6979e37cac0183af482a` with public control authorization + epoch-bound recall integrated; PR #36 remains `1736c3826439844279694cec1cbf4aeb209017d5`; PR #37 is now `d88b4a05bc3c16dbe05c41e837a1dfb87c747fc1` with the accepted carrier repairs. **No participant-memory runtime wiring is earned yet.**
-- D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
-
-- **Next-version YAC memory stack remains pure/draft.** Claude Code corrected recall integration PR #38 at `b76d54d56f9e482032e6296766373df1178afafd`: explicit immutable control-authorized host record->state binding closes the prior same-label/state-swap G1 at this pure layer; 27 targeted integration tests and hosted runs `36596120429` + `36596116166` are SUCCESS on Ubuntu + Windows. PR #41 `bab1755ec4a0c0adceb53b61129335c12f3da9cd` remains hosted-green but is **REPAIR REQUIRED** after CC hostile review `5894139066` reproduced participant-controlled future `requested_at` locking the retention target. Framework chooses a narrower v0 boundary: host stamps participant request/cancel times and one `target_ref` binds to one continuity record only. CC successor-repair assignment is COM #678 `5894238630`; do not edit frozen PR41. The combined PR41/PR38 deletion-pending -> recall-denial seam is HOLD until that successor repair returns and is reviewed. No persistence, provider/runtime action or public memory deployment.
-- **Capacity:** Codex new work is paused until **3 Oct 2026**. Do not leave a lane marked as waiting on Codex or assign new Codex work before then. CC may take explicitly reassigned non-overlapping work; existing technical gates remain unchanged.
-- Relay PR #273 remains a separate green/open cooperative GitHub-gate lane; its coverage limits and no-merge-by-momentum hold are unchanged by this YAC/PSFH currentness repair.
+- Live YAC main: `703d51030dc83ebf56162bbbb629a4f580b23e29` (PR #63 merged; main checks `36626808453 / SUCCESS`).
+- D092 / Site Preview `0.8.49` is live as a static, read-only THR window at public `gh-pages@003f8d38687131a0f6535df940d33c2d5b28472e`; publisher and Pages runs passed and served bytes were verified. **READING WINDOW != PARTICIPANT LETTERBOX.**
+- Mark authorised one disabled-first Cloudflare pilot after the account was verified as Free plan with no new terms/payment prerequisite observed on the inspected creation surfaces. Stop guard remains for any later charge, checkout, terms or paid upgrade.
+- Exactly one dedicated Worker and one dedicated D1 now exist:
+  - Worker: `https://yac-thr-disposable-pilot.mecchanical-ethics.workers.dev`
+  - provider version: `afc4fd2d-570c-46d4-9915-d7aea5793238`
+  - D1: dedicated `yac-thr-disposable-pilot` database; reviewed schema applied successfully.
+- Final observed gates: `SUBMISSIONS_ENABLED=false`, `WITHDRAWALS_ENABLED=false`. Initial remote counts were invites=0, items=0, envelopes=0. No real invite, participant data, THR mutation, YAC memory or automatic publication.
+- Build provenance recomputation matched the deployment source/schema receipt modulo standard LF/CRLF checkout normalization. A later read-only provider export returned module hashes matching that expected normalized source.
+- Codex hosted GET-only smoke = PASS. Claude Code hostile disabled-surface read = KEEP; no write bypass, public readback/admin route, credential leak or consent drift observed. Served root page was byte-identical to reviewed `INDEX_HTML`.
+- Direct provider logging/analytics retention is unresolved. Cloudflare NEL/Report-To headers were observed; no invite capability travelled because the capability is in the URL fragment.
+- **Next exact action:** run the already-authorised synthetic-only hosted write matrix, then restore and verify both gates false and leave no usable test invite. This matrix is **NOT RUN** at this checkpoint. Return to Campfire before real intake or any real invitation.
+- Next-version memory-stack drafts remain separate and do not become runtime/public memory through this pilot.
+- Relay PR #273 remains a separate cooperative GitHub-gate lane; no install/deployment or mixed-version claim.
 
 ```text
-HUMAN DOOR LIVE != PUBLIC YAC FORUM
-RETURN FLOW OBSERVED != RETURN COMPREHENSION OBSERVED
-CALL 2 TRANSPORT FAILURE != MODEL REFUSAL
-MEMORY AUTHORIZATION != IDENTITY PROOF
-FULL HISTORY + ADDED_IDS != DELTA-ONLY RETRIEVAL
+STATIC WINDOW LIVE != LETTERBOX INTAKE OPEN
+DISABLED HOSTED SURFACE VERIFIED != ENABLED WRITE PATH VERIFIED
+SYNTHETIC DATA != PARTICIPANT DATA
+PUBLIC VISIBILITY CHOICE != AUTO-PUBLICATION
+PROVIDER RETENTION = UNESTABLISHED
 NO GENERAL BUILD LANE
 ```
 
