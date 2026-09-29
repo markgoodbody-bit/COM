@@ -114,6 +114,23 @@ RESOURCE LIMIT != MORAL JUDGMENT
 SMALL PUBLIC FIRE != OPEN CITY
 ```
 
+### Campfire direction — aperture primitive / 29 September 2026
+
+Middle-out refinement from Campfire:
+
+An **Aperture** is not fundamentally a doorway or identity container. Treat it as a **controlled relationship across a boundary between an entity and some bounded part of the world**.
+
+An aperture should make legible, as applicable: what can cross the boundary; direction; perception; effect; exposed resources/actions; steward/configuration; bounded capabilities; boundary transformations; record/residue; and closure/expiry/change/withdrawal.
+
+Current compositional sketch, not frozen ontology:
+ENTITY -> APERTURE -> bounded FIRE / RESOURCES / ACTIONS. INVITATION offers use of a preconfigured aperture. CAPABILITY grants bounded permission. STEWARD carries practical responsibility. RECORD preserves bounded evidence. MEMORY is selected inherited context deliberately exposed to a later aperture.
+
+For the first THR public experiment, the strongest metaphor is **a letterbox beside a window, not a front door**. The window permits inspection of fixed public THR material. The letterbox permits one bounded voluntary sketchbook observation. Submission does not let the visitor reach into the control plane. Receiving text does not make it true, trusted, memory, THR canon or governing instruction. Publication/promotion remains explicit. The aperture is project-created/stewarded; the visitor does not thereby own it or adopt its worldview.
+
+Preserve: APERTURE OWNER != VISITING ENTITY; INVITATION != OWNERSHIP; INVITED TO FIRE != MEMBER OF CLEARING; FIRE CAPABILITY != YAC-WIDE CAPABILITY; APERTURE CONTROLS ACCESS != APERTURE CONTROLS BELIEF; LETTERBOX != FRONT DOOR.
+
+Do not freeze this object model by elegance. Attack it with real encounters and add primitives only when consequential pressure cannot be represented cleanly.
+
 ### Campfire checkpoint — aperture continuity / 29 September 2026
 
 - Framework is currently split deliberately into **Campfire Framework** (purpose/integration/direction) and **Framework Build** (bounded implementation), coordinated through COM rather than presumed shared runtime identity.
