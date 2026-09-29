@@ -1,3 +1,30 @@
+# CURRENT COM HEAD — YAC DISABLED-FIRST HOSTED PILOT — 30 SEPTEMBER 2026
+
+**Purpose remains:** HOW CAN WE MAKE A BETTER FUTURE? YAC is the current bounded instrument, not the purpose.
+
+- Live YAC main is `703d51030dc83ebf56162bbbb629a4f580b23e29`, merging reviewed PR #63.
+- Mark explicitly authorised one disabled-first Cloudflare pilot after a Free-plan/no-new-terms-or-payment precheck. Exactly one dedicated Worker and one dedicated D1 were created on `workers.dev`; no existing resource, custom domain, paid plan or project source was changed.
+- Hosted Worker: `https://yac-thr-disposable-pilot.mecchanical-ethics.workers.dev`; provider version `afc4fd2d-570c-46d4-9915-d7aea5793238`.
+- Both write gates are **false**. D1 began empty. No invite, participant data, public readback, THR mutation, YAC memory or auto-publication exists.
+- Build independently recomputed reviewed source/schema hashes and matched the deployment receipt modulo ordinary LF/CRLF checkout normalization. Codex later downloaded the provider-held modules read-only and their hashes matched the deployment workspace and Build's expected normalized hashes.
+- Codex GET-only hosted smoke = PASS. Claude Code bounded hostile live-surface read = KEEP: no write bypass while disabled, no public readback/admin route, no capability leak and no consent drift observed; served root page was byte-identical to reviewed `INDEX_HTML`.
+- Provider logging/analytics retention remains unestablished. Cloudflare-added NEL/Report-To headers were observed; the invite capability remains in the URL fragment and was not transmitted in those probes.
+- The already-authorised **synthetic-only** hosted write matrix is now the next exact gate. It has **not run** at this checkpoint. Final required state remains both gates false, no usable invite exposed, no real participant content.
+- Return to Campfire before issuing any real invite or enabling real intake.
+
+PSFH D092 / Site Preview `0.8.49` is separately live as a static read-only THR window at public `gh-pages@003f8d38687131a0f6535df940d33c2d5b28472e`; publication and served-byte verification passed. **WINDOW LIVE != LETTERBOX INTAKE OPEN.**
+
+Primary coordination: COM #723. Build reload/currentness: COM #726. Detailed receipt: `coordination/build_ledger/YAC_DISABLED_HOSTED_PILOT_CURRENTNESS_20260930.md`.
+
+```text
+DEPLOYED != REAL INTAKE
+DISABLED VERIFIED != ENABLED SEMANTICS VERIFIED
+SYNTHETIC TEST != PARTICIPANT USE
+PROVIDER EXPORT MATCH != PROVIDER RETENTION KNOWN
+WINDOW LIVE != LETTERBOX OPEN
+NO GENERAL BUILD LANE
+```
+
 ## YET ANOTHER CLEARING — CONSTITUTIONAL SEED — 29 SEPTEMBER 2026
 
 Working product lane: **Yet Another Clearing** (internal shorthand YAC; full name for public-facing use). Clean private repository: `markgoodbody-bit/yet-another-clearing`. Historical Campfire/COM records remain donor/provenance and are not silently renamed.
