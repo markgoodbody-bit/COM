@@ -6,6 +6,8 @@
 - Claude Code packet semantics review = NO BLOCKER. Its late capture-delta review = NO BLOCKER with a bounded Git-replace finding; PR #22 repaired that finding. Post-integration hardened capture against exact encounter source succeeded with `live_address=None` and unchanged repaired-source surface hashes. No further capture review gate is earned.
 - Next-version YAC lane is now explicit and still **DRAFT / NOT RUNTIME-INTEGRATED**. PR #28 sketches the voluntary no-deceive covenant plus `BOOTSTRAP -> CURRENT -> LONG-TERM`; PR #29 is the pure continuity-memory core frozen at `eba7e470...` for independent Claude Code review; PR #31 is the x100 falsification + repair lane (`RESISTS 29 / RESISTS-PENDING 15 / DEFECT 13 / OPEN-GATED 32 / DRIFT-RISK 11` after reconciliation); PR #35 is a hosted-green pure capability prototype for memory recall without identity: opaque continuity id + separate control capability + scoped recall grants, with successful decisions fixed to `identity_verified=false`, `same_entity_established=false`, `action_authority=NONE`. **No participant-memory runtime wiring is earned yet.**
 - D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
+
+- **Next-version YAC memory stack remains pure/draft.** PR #29 core `0aec2b55...` is consolidated and cross-platform green; PR #35 authorization `f9faccd8...` is green + Codex KEEP; PR #36 retention control `1736c382...` is green + Codex KEEP WITH CEILINGS; PR #37 recalled-memory carrier `55d46d35...` is green. Active integration ownership: Claude Code = PR29+35+37 recall path; Codex = PR35+36 deletion-control authorization. No component branch edits, persistence, provider/runtime action or public memory deployment.
 - Relay PR #273 remains a separate green/open cooperative GitHub-gate lane; its coverage limits and no-merge-by-momentum hold are unchanged by this YAC/PSFH currentness repair.
 
 ```text
@@ -19,7 +21,7 @@ NO GENERAL BUILD LANE
 
 ## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
 
-- **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; visual/browser QA and latest Claude Code review remain unestablished. Relay PR #271 is a separate incompatible draft and is not silently combined.
+- **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`. Claude Code's latest read-boundary review returned at COM comment `5887394982` with no read-boundary blocker. **Visual/browser QA remains unestablished.** Relay PR #271 is a separate incompatible draft and is not silently combined.
 - **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No successful install, restart, Relay-main merge or Production activation occurred. The failed update restored installed source `6a07380bdf85804d7029ce5ea6ba279a14c5192b` (through #268); the newer candidate remains uninstalled.
 - Full evidence/boundaries: `coordination/build_ledger/CAMPFIRE_COMPONENT_AND_SIMPLE_V1_INSTALLER_CURRENTNESS_20260929.md`.
 
@@ -66,7 +68,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **29 September 2026 — YAC second-stage frozen / next-version memory authorization gate / D091 human door live**
+Updated: **29 September 2026 — YAC second-stage frozen / next-version pure integration gates / D091 human door live**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
