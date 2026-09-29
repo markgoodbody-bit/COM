@@ -1,0 +1,57 @@
+name: PSFH D092 pin history
+
+on:
+  push:
+    branches:
+      - framework/yac-thr-window-d092-20260929
+    paths:
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - '.github/workflows/psfh-d092-pin-history.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  pin-history:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/yac-thr-window-d092-20260929
+          fetch-depth: 0
+      - name: Compute and pin exact D092 history bytes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+
+          sha=lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          p=Path('public/manifest.json')
+          m=json.loads(p.read_text())
+          m['provenance']['change_history_sha256']=sha('public/changes.md')
+          m['provenance']['change_history_input_html_sha256']=sha('public/changes.html')
+          note=m['provenance'].get('change_history_addendum_note','')
+          if 'D045-D091' in note:
+              note=note.replace('D045-D091','D045-D092')
+          elif 'D045-D092' not in note:
+              raise SystemExit('unexpected change_history_addendum_note; refusing to guess')
+          m['provenance']['change_history_addendum_note']=note
+          p.write_text(json.dumps(m, indent=2)+'\n')
+          print('D092_CHANGES_MD_SHA256='+sha('public/changes.md'))
+          print('D092_CHANGES_HTML_SHA256='+sha('public/changes.html'))
+          PY
+      - name: Commit exact D092 history pins
+        run: |
+          git config user.name "PSFH D092 history pin"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/manifest.json
+          if git diff --cached --quiet; then
+            echo "D092 history pins already exact"
+            exit 0
+          fi
+          git commit -m "PSFH D092: pin exact change-history bytes"
+          git push origin HEAD:framework/yac-thr-window-d092-20260929
+
+# HISTORY_CHANGED -> REPIN EXACT BYTES / DO NOT WEAKEN BUILD GUARD
