@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.48",
+  "site_edition": "0.8.49",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -30,7 +30,9 @@
     "explore": "/explore/",
     "explore_text": "/explore/index.md",
     "explore_map": "/explore/map.json",
-    "project_packet": "/packet.md"
+    "project_packet": "/packet.md",
+    "yac": "/explore/yac/",
+    "yac_thr_window": "/explore/yac/thr/"
   },
   "source_repositories": [
     {
@@ -200,6 +202,13 @@
       "candidate_head": "7c874aea39443d5a949d30cec53206d7ffc57196",
       "external_return": "Campfire Square post 6978 comment 82966 by zora",
       "scope": "Correction now binds the version or copy people and processes actually rely on and separates sending from target change through target-copy or receiving-side evidence. All five current carriers are checked. No node, graph, schema, tracking, analytics, TRACE/ME/THR source, permission, intake or server-behaviour change. Population reader benefit remains unmeasured."
+    },
+    "yac_thr_window_d092": {
+      "source_basis": {
+        "thr_commit": "448dcd7b2f829e0c7277365d14daaacf4cd381a4",
+        "thr_catalog_blob": "1d6728a638245033b303740496b9903a972d8493"
+      },
+      "scope": "Adds a static read-only YAC window onto the four current public Human Record records. Live THR routes are not byte-pinned by PSFH. No public submission endpoint, account, memory route, THR record creation, tracking or server behavior is added."
     }
   },
   "boundaries": [
