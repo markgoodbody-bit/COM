@@ -6,6 +6,7 @@
 - Claude Code packet semantics review = NO BLOCKER. Its late capture-delta review = NO BLOCKER with a bounded Git-replace finding; PR #22 repaired that finding. Post-integration hardened capture against exact encounter source succeeded with `live_address=None` and unchanged repaired-source surface hashes. No further capture review gate is earned.
 - PR #21 comment `5890626179` freezes the private operator route and invariant two participant questions. Exact complete provider payload bytes/hashes must be preserved immediately before each dispatch because actual room views/entry IDs are dynamic. Do not expose the protocol, later fixture or outcome criteria; refusal is valid.
 - D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
+- Relay PR #273 remains a separate green/open cooperative GitHub-gate lane; its coverage limits and no-merge-by-momentum hold are unchanged by this YAC/PSFH currentness repair.
 
 ```text
 HUMAN DOOR LIVE != PUBLIC YAC FORUM
