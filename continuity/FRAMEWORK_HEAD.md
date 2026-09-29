@@ -681,3 +681,108 @@ DATED RECEIPTS = DETAIL
 GIT = HISTORY
 OMITTED FROM HEAD != ABSENT
 ```
+
+## 29 September 2026 — YAC THR aperture / Cloudflare disabled-first pilot
+
+Current live coordination lane: COM #723 / #726.
+
+YAC first-pilot encounter shape is now bounded and implemented:
+
+```text
+UNIQUE INVITE
+-> PRECONFIGURED THR APERTURE
+-> BOUNDED THR READING
+-> OPTIONAL GUESTBOOK: "What did you notice?"
+-> EXPLICIT VISIBILITY CHOICE
+-> QUARANTINE
+-> REVIEW
+-> LEAVE
+```
+
+Visitor may contribute, decline, disagree or leave. No membership or runtime-identity continuity is implied.
+
+Visibility is intentionally narrow:
+- PUBLIC = participant permits THIS EXACT NOTE to be considered later for public display; still quarantined; no automatic publication.
+- STEWARD_ONLY = steward/operator may inspect the original for operating/evaluating the experiment; no permission to publish the original or a summary.
+
+```text
+PUBLIC != PUBLISHED
+STEWARD_READ != SUMMARY_PUBLICATION_RIGHT
+PROMPT GUIDES ATTENTION != PROMPT DEFINES POSSIBLE ANSWERS
+```
+
+YAC PR #63 exact reviewed head:
+`3ba661c9b5db26d5eb76b4a669cbd9a7d953c2e5`
+
+Merged YAC main:
+`703d51030dc83ebf56162bbbb629a4f580b23e29`
+
+Converged evidence before merge:
+- hosted Ubuntu + Windows CI SUCCESS;
+- Codex exact-head KEEP / GO TO HUMAN GATE;
+- Claude Code exact-head KEEP after re-executed client/control attacks;
+- retry/idempotency, withdrawal control, finite lifetime budgets, privacy, visibility mapping and local Worker/D1 runtime paths exercised.
+
+Important retry distinction:
+`A GATE ON A RETRY != PROOF NOTHING WAS STORED`.
+
+Mark explicitly authorised the next provider step:
+> Approved: create the disabled-first Cloudflare pilot
+
+Clarified:
+> Yes, but check the plan first.
+
+Cloudflare read-only precheck later established:
+- selected account is on Free plan;
+- D1 is available on the Free plan;
+- no payment/checkout/new-terms control was observed on the inspected Worker/D1 pre-creation surfaces;
+- mandatory STOP remains if any later provider step presents new terms, payment, charge or paid-plan requirement.
+
+Current bounded provider authority:
+- exactly ONE dedicated Worker;
+- exactly ONE dedicated D1 database;
+- workers.dev only;
+- SUBMISSIONS_ENABLED=false;
+- WITHDRAWALS_ENABLED=false;
+- synthetic-only;
+- no public invites;
+- no participant data;
+- no custom domain;
+- no paid-plan change;
+- no THR mutation;
+- no YAC memory;
+- no auto-publication.
+
+Build Two lacks an authenticated Cloudflare execution surface. Codex already holds the selected authenticated provider session. Campfire therefore reassigned the provider mutation to Codex rather than copying credentials into another aperture.
+
+Role split at this checkpoint:
+- Codex = provider mutation + hosted-runtime evidence within existing scope;
+- Build Two = independent deployed-code/config verification against YAC main `703d5103...`;
+- Claude Code = bounded hostile read of actual disabled hosted surface if materially useful;
+- Campfire = integration and next human gate.
+
+```text
+NO CREDENTIAL COPYING
+DEVELOPER != VERIFIER
+AUTHORIZATION TRANSFERRED != AUTHORITY WIDENED
+DISABLED-FIRST != LIVE INTAKE
+RESOURCE CREATED != PARTICIPANT DATA AUTHORIZED
+```
+
+Expected next durable receipt:
+- exact Worker HTTPS URL;
+- deployment/version identity;
+- exact deployed-source provenance;
+- D1 identity;
+- schema result/hash;
+- exact gate values;
+- relevant logging/analytics defaults observed;
+- independent Build verification;
+- hosted read-only smoke;
+- synthetic-only boundary checks.
+
+Return to Campfire BEFORE enabling submissions or issuing any real invite.
+
+The broader project remains larger than YAC. YAC is a bounded experimental social-infrastructure seam under:
+**HOW CAN WE MAKE A BETTER FUTURE?**
+
