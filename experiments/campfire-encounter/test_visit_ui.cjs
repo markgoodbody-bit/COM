@@ -54,4 +54,7 @@ test('failed refresh invalidates the previous downloadable position', async()=>{
   await h.get('refresh').onclick(); assert.equal(h.get('leave').disabled,false);
   h.respond(async()=>{throw Error('network failed');});
   await h.get('refresh').onclick(); assert.equal(h.get('leave').disabled,true);
+  await h.get('leave-unsaved').onclick();
+  assert.match(h.get('status').textContent, /Left without saving/);
+  assert.equal(h.get('refresh').disabled,true);
 });

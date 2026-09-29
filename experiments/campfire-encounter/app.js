@@ -66,6 +66,10 @@ action('leave', async () => {
   const url = URL.createObjectURL(new Blob([JSON.stringify(lastReceipt, null, 2)], {type:'application/json'}));
   const link = document.createElement('a'); link.href = url; link.download = 'campfire-return.json'; link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
+  clearVisit();
+  $('status').textContent = 'Left this browser visit. Receipt download requested; check your downloads. This clears this page, not server permissions or room records. Copies already saved remain.';
+});
+function clearVisit() {
   acceptance = null; pending = null; lastReceipt = null;
   ['refresh','append','export','inspect','leave'].forEach(id => $(id).disabled = true);
   $('entries').replaceChildren(); $('contents').replaceChildren();
@@ -74,7 +78,10 @@ action('leave', async () => {
   $('inspection').textContent = '';
   document.querySelectorAll('input[name=carry]').forEach(input => input.checked = false);
   $('consent').checked = false;
-  $('status').textContent = 'Left this browser visit. Receipt download requested; check your downloads. This clears this page, not server permissions or room records. Copies already saved remain.';
+}
+action('leave-unsaved', async () => {
+  clearVisit();
+  $('status').textContent = 'Left without saving a return position. This clears this page, not server permissions or room records. Copies already saved remain.';
 });
 action('append', async () => {
   const carry = document.querySelector('input[name=carry]:checked');
