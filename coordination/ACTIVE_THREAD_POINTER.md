@@ -8,6 +8,7 @@
 - D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
 
 - **Next-version YAC memory stack remains pure/draft.** Codex retention integration PR #41 `bab1755ec4a0c0adceb53b61129335c12f3da9cd` = KEEP WITH CEILINGS; hosted `36594777395` SUCCESS on Windows + Ubuntu. V0 overlap policy is explicit: reject a second pending deletion request for the same bound target; trusted-host outcome recording remains separate from participant control authority. Claude Code now owns repaired-component recall re-integration using PR29 `0aec2b55...` + PR35 `b96000c...` + PR37 `d88b4a05...` under COM #678 `5893973655`; explicit host record->state binding and current epoch/withdrawal gates are required. No persistence, provider/runtime action or public memory deployment.
+- **Capacity:** Codex new work is paused until **3 Oct 2026**. Do not leave a lane marked as waiting on Codex or assign new Codex work before then. CC may take explicitly reassigned non-overlapping work; existing technical gates remain unchanged.
 - Relay PR #273 remains a separate green/open cooperative GitHub-gate lane; its coverage limits and no-merge-by-momentum hold are unchanged by this YAC/PSFH currentness repair.
 
 ```text
