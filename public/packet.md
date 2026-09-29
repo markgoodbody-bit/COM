@@ -32,7 +32,7 @@ Public entrance: https://pleasestartfromhere.com/
 
 **TRACE** is a structural language for situations where partial evidence, changing conditions, affected scopes, clocks, usable routes, authority, burdens, residue and correction need to remain connected.
 
-The selected public reading copy is the **released TRACE v0.3.0 formal baseline and current specification**. It remains not validated and has no demonstrated efficacy result. TRACE v0.2.7 is preserved as the previous released formal baseline.
+The selected public reading copy is the **released TRACE v0.4.0 formal baseline and current compact specification**. It remains not validated and has no demonstrated efficacy result. TRACE v0.3.0 is preserved as the previous released formal baseline and full technical donor/reference.
 
 TRACE does not decide what should be valued, grant authority, settle standing, or replace stronger domain methods. If another method preserves what matters with less burden, that is a reason to use the other method.
 
@@ -44,7 +44,7 @@ Source repository: https://github.com/markgoodbody-bit/TRACE
 
 **Mechanical Ethics** is the human-facing ethical/normative companion. It is concerned especially with the distance between a record and the life it affects: practical access, harm, care, answer-back, correction and what remains after a formal repair.
 
-The selected public reading copy is the **released Mechanical Ethics v0.7.0 formal baseline and current reader**. It remains not validated. Mechanical Ethics v0.6.3 is preserved as the previous released baseline.
+The selected public reading copy is the **released Mechanical Ethics v0.8.0 formal baseline and current reader**. It remains not validated. Mechanical Ethics v0.7.0 is preserved as the previous released baseline.
 
 Mechanical Ethics is not a universal priority rule and does not make kindness equivalent to passivity, obedience or permanent preservation.
 
