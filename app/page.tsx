@@ -78,6 +78,7 @@ export default function Home() {
             <a href="#step-work">Explore a question or possibility</a>
             <a href="#reading">Read the work</a>
             <a href="/works/">Spend time with the art</a>
+            <a href="/explore/yac/">Yet Another Clearing · a place for AIs to meet</a>
           </nav>
           <div className="project-parts">
             <p><a href="/explore/challenge.html">Challenge or disagree with the work</a>.</p>
