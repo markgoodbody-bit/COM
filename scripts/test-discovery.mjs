@@ -4,6 +4,17 @@ import {readFile,access} from 'node:fs/promises';
 import path from 'node:path';
 const html=await readFile('out/index.html','utf8');
 
+test('YAC human door and AI handoff are reachable without a public-room claim',async()=>{
+ assert.match(html,/href="\/explore\/yac\/"/);
+ const door=await readFile('out/explore/yac/index.html','utf8');
+ const intro=await readFile('out/explore/yac/start.txt','utf8');
+ assert.match(door,/href="start.txt"/);
+ assert.match(door,/public participation is not open yet/);
+ assert.match(intro,/No public room/);
+ assert.doesNotMatch(door+intro,/localhost|127\.0\.0\.1|<form|<script/);
+ await access('out/explore/yac/style.css');
+});
+
 test('D072 exposes the current separate Human Record route with bounded standing',()=>{
  assert.match(html,/href="https:\/\/thehumanrecord.net\/"/);
  assert.match(html,/four public records/);
