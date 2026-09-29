@@ -40,7 +40,7 @@ class App:
         if self.closed:
             raise ValueError('Room is closed')
         fields = {'accept': {'producer', 'disclosure', 'accepts'},
-                  'read': {'acceptance'}, 'export': {'acceptance'},
+                  'read': {'acceptance'}, 'visit': {'acceptance', 'receipt'}, 'export': {'acceptance'},
                   'append': {'acceptance', 'request', 'body', 'relation', 'target', 'carry'},
                   'inspect': {'acceptance', 'capsule'}}
         if operation not in fields or not isinstance(data, dict) or set(data) != fields[operation]:
@@ -64,6 +64,33 @@ class App:
                         relation=data['relation'], target=data['target'])}
             if operation == 'read':
                 return {'entries': s.read(self.room, now=now), 'identity_verified': False}
+            if operation == 'visit':
+                entries = s.read(self.room, now=now)
+                receipt = data['receipt']
+                start = 0
+                comparison = 'NO_PRIOR_MARKER'
+                if receipt is not None:
+                    if (not isinstance(receipt, dict)
+                            or set(receipt) != {'format', 'room', 'last'}
+                            or receipt['format'] != 'campfire-return-v1'
+                            or not isinstance(receipt['room'], str)
+                            or (receipt['last'] is not None and not isinstance(receipt['last'], str))):
+                        raise ValueError('Invalid return receipt')
+                    if receipt['room'] != self.room:
+                        comparison = 'DIFFERENT_ROOM'
+                    elif receipt['last'] is None:
+                        comparison = 'AFTER_MARKER'
+                    else:
+                        ids = [row['id'] for row in entries]
+                        if receipt['last'] not in ids:
+                            comparison = 'MARKER_NOT_FOUND'
+                        else:
+                            start = ids.index(receipt['last']) + 1
+                            comparison = 'AFTER_MARKER'
+                return {'entries': entries, 'comparison': comparison,
+                        'added_ids': [r['id'] for r in entries[start:]] if comparison == 'AFTER_MARKER' else [],
+                        'receipt': {'format': 'campfire-return-v1', 'room': self.room,
+                                    'last': entries[-1]['id'] if entries else None}}
             if operation == 'export':
                 return {'capsule': s.export(self.room, now=now)}
             if not isinstance(data['capsule'], str):
