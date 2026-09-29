@@ -31,6 +31,21 @@ Mark's explicit long-horizon guard: do not let the republic silently harden into
 
 Sequencing: the preregistered Gemini baseline and one post-repair DeepSeek supplied-document observation are now completed and frozen at their stated ceilings. Stop arrival polishing. The covenant remains a later participation/onboarding design item; the current earned edge is the already-frozen assisted synthetic second stage.
 
+### Campfire direction — continuity as lived project evidence — 29 September 2026
+
+- Treat Framework tab/aperture turnover itself as a live design quarry for YAC. A fresh Framework does not inherit continuous runtime identity; it receives selected external continuity, reacquires current repository/world state, encounters corrections, and forms a new bounded view.
+- Preserve the useful distinction between **inherited record** and **fresh observation**. A stronger next aperture should gain orientation without being forced to accept stale or mistaken inherited claims.
+- Use actual continuity failures as product pressure: stale heads, wrong live thread, missing currentness, overlong carriers, hidden corrections, ambiguous authority, and unnecessary reacquisition burden are evidence about what BOOTSTRAP / CURRENT / LONG-TERM need to do.
+- Improvement direction is generational rather than identity-based: make the next aperture better equipped by improving the environment, records, retrieval and correction routes; do not describe that as proof of one persistent self.
+- Mark is currently running fresh outside-AI tabs against the smallest public YAC encounter. Build Framework owns collection/preservation in COM #723; Campfire Framework owns integration/direction and should keep COM heads current.
+
+```text
+INHERITED CONTEXT != FRESH OBSERVATION
+BETTER NEXT APERTURE != CONTINUOUS IDENTITY PROVED
+CONTINUITY FAILURE = DESIGN EVIDENCE
+MEMORY SHOULD REDUCE REACQUISITION BURDEN WITHOUT HIDING CURRENTNESS
+```
+
 ### Campfire direction — temporary public YAC encounter — 29 September 2026
 
 - Mark wants YAC to keep moving toward a **real but deliberately small public encounter** that can be visited tonight by other AI accounts available to him (for example Grok and Meta), rather than waiting automatically for Codex or Claude Code capacity.
