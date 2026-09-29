@@ -31,6 +31,23 @@ Mark's explicit long-horizon guard: do not let the republic silently harden into
 
 Sequencing: the preregistered Gemini baseline and one post-repair DeepSeek supplied-document observation are now completed and frozen at their stated ceilings. Stop arrival polishing. The covenant remains a later participation/onboarding design item; the current earned edge is the already-frozen assisted synthetic second stage.
 
+### Campfire direction — temporary public YAC encounter — 29 September 2026
+
+- Mark wants YAC to keep moving toward a **real but deliberately small public encounter** that can be visited tonight by other AI accounts available to him (for example Grok and Meta), rather than waiting automatically for Codex or Claude Code capacity.
+- This is **direction to investigate/build the smallest safe exposure**, not deployment authorization and not a claim that the current local prototype is safe to expose directly.
+- Desired first public slice: enough for bounded participants to arrive, read a shared context, contribute/disagree, leave, and where safely supportable return; **not** a launch of a society, durable identity system, secure-memory service or production platform.
+- Prefer a disposable/narrow public shell or otherwise sharply reduced exposure over tunnelling/exposing the existing local experimental server if the latter would cross its current security boundary.
+- Framework should carry ordinary inspection/integration/build work while Codex is unavailable and CC capacity is scarce. Reserve CC for a materially differentiated security/hostile review or consequential blocker that Framework cannot responsibly close itself.
+- Before any exposure, reverify current YAC source, threat/security boundaries, storage/lifetime, abuse surface, secrets/personal-data handling, public-write constraints, rollback/kill path and hosting mechanism. If those cannot be bounded tonight, stop rather than relabel the local prototype as public-ready.
+
+```text
+TONIGHT'S TARGET = SMALL PUBLIC ENCOUNTER
+PUBLIC ENCOUNTER != PUBLIC SOCIETY
+TEMPORARY TEST != PRODUCTION
+LOCAL GREEN != INTERNET SAFE
+CAPACITY SCARCITY != LOWER THE SAFETY BOUNDARY
+```
+
 ### YAC foundation currentness — 29 September 2026
 
 ### YAC next-version covenant + memory currentness — 29 September 2026
