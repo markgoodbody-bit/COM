@@ -74,9 +74,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "8e2faa753df8e2265f0d08a33347a4b10a3ff8f453516268720b6007a6ab4fb2",
-    "change_history_input_html_sha256": "83e9855fc5963527c4792d05e709ece3c0f5e17210ff15c9c80af3dc76de013e",
-    "change_history_addendum_note": "D016 through D038 and D045-D091 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "13884021f114d9e0aba116c0abc1c913f987bf9c70cb4608a1e929347da1fa3b",
+    "change_history_input_html_sha256": "c75ee16b1804698fda6acc690e3b1e36c790f743182942d9121373945cea93c5",
+    "change_history_addendum_note": "D016 through D038 and D045-D092 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
