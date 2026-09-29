@@ -1,7 +1,20 @@
+## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
+
+- Private YAC main is `856d3df016ef558bb2da26e6c6d06deb59a235c6`; the next earned step is one fresh local supplied-document orientation observation after no-spend candidate inventory. No provider call, browser-use result, live discovery or public participation route exists.
+- COM PR #702 merged the static human introduction, AI handoff and PSFH homepage route into maintained source as `1c96d318f2828a1d19f5b8170dbb3f96cc3e89d7`; post-merge maintained CI `36560900298 / SUCCESS`. **NOT PUBLISHED / LIVE BYTES NOT VERIFIED.**
+- Relay PR #273 is green/open and separately bounded; its local cooperative gate is not full-channel coverage and is not adopted.
+- Receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`.
+
+```text
+SOURCE-ADOPTED HUMAN DOOR != PUBLIC YAC FORUM
+FRESH READER = NOT RUN
+NO GENERAL BUILD QUEUE
+```
+
 ## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
 
 - **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; visual/browser QA and latest Claude Code review remain unestablished. Relay PR #271 is a separate incompatible draft and is not silently combined.
-- **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No install, restart, Relay-main merge or Production activation occurred; the installed App remains on its earlier lineage.
+- **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No successful install, restart, Relay-main merge or Production activation occurred. The failed update restored installed source `6a07380bdf85804d7029ce5ea6ba279a14c5192b` (through #268); the newer candidate remains uninstalled.
 - Full evidence/boundaries: `coordination/build_ledger/CAMPFIRE_COMPONENT_AND_SIMPLE_V1_INSTALLER_CURRENTNESS_20260929.md`.
 
 ```text
@@ -49,7 +62,7 @@ NEXT = WORLD / REAL USE
 # BUILD STATUS
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
-Updated: **28 September 2026 — Town cache source-bounded / watch-liveness repair retained**
+Updated: **29 September 2026 — YAC fresh-reader gate / human-door source integrated / no public forum**
 History belongs in dated receipts + Git.
 
 ## Watch semantics
@@ -90,7 +103,7 @@ CONFIGURED_TARGET_IDENTITY != ATTESTED_INFERENCE_IDENTITY
 PROVIDER_REPORTED_MODEL != INDEPENDENT_ATTESTATION
 ```
 
-- **Simple-v1 maintained source `6ca82daf…` GREEN / STOP BY DEFAULT** — #266/#267/#268/#269/#270 remain retained. A concrete installed-runtime defect then reopened source once: Town's `-AllCitizens` activity cache had grown without pruning to 24,330+ events / 53.7 MB and rewrote the full file each minute. Head `9f0f038ee1c17663e193db76f8523d94f1217909` pruned only that activity view to the intended 24-hour server-time window, left AI history unpruned, added a returned/on-disk regression and passed hosted Windows PowerShell CI `36412767174 / SUCCESS`. A later real install attempt exposed the Windows PowerShell 5.1 BOM self-rejection; PR #272 repaired only that guard and merged into the candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`, with post-merge run `36498228679 / SUCCESS`. The attempted update did not adopt: the prior App was restored and remains on its earlier lineage; no successful install/restart/Production action occurred. The adjacent `System error.` bursts remain correlated but causally unresolved. `SOURCE_CURRENT != INSTALLED_CURRENT`; `CACHE_PRUNED != GUI_ERROR_FIXED`. Reopen only for a concrete field defect, installed-runtime update/witness, or deliberate carrier change.
+- **Simple-v1 maintained source `6ca82daf…` GREEN / STOP BY DEFAULT** — #266/#267/#268/#269/#270 remain retained. A concrete installed-runtime defect then reopened source once: Town's `-AllCitizens` activity cache had grown without pruning to 24,330+ events / 53.7 MB and rewrote the full file each minute. Head `9f0f038ee1c17663e193db76f8523d94f1217909` pruned only that activity view to the intended 24-hour server-time window, left AI history unpruned, added a returned/on-disk regression and passed hosted Windows PowerShell CI `36412767174 / SUCCESS`. A later real install attempt exposed the Windows PowerShell 5.1 BOM self-rejection; PR #272 repaired only that guard and merged into the candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`, with post-merge run `36498228679 / SUCCESS`. The attempted update did not adopt: installed source was restored to `6a07380bdf85804d7029ce5ea6ba279a14c5192b` (through #268; watchdog SHA-256 prefix `8cd39ebb`), so #267/#268 are present but #269/#270, the Town cache repair and installer-BOM repair are not. No successful install/restart/Production action occurred. The adjacent `System error.` bursts remain correlated but causally unresolved. `SOURCE_CURRENT != INSTALLED_CURRENT`; `CACHE_PRUNED != GUI_ERROR_FIXED`. Reopen only for a concrete field defect, installed-runtime update/witness, or deliberate carrier change.
 
 Current receipts:
 - `coordination/build_ledger/EVIDENCEWATCH_NVIDIA_SUBMISSION_RECEIPT_20260925.md`

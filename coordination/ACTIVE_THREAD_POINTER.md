@@ -1,7 +1,20 @@
+## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
+
+- Private YAC main is `856d3df016ef558bb2da26e6c6d06deb59a235c6`; the frozen fresh-reader packet, context-free Relay seed carrier and fail-closed local runner are integrated. The next earned evidence is one fresh local supplied-document orientation observation after no-spend candidate inventory on Mark's machine. No provider call, live discovery, browser-usability result or public participation route exists.
+- COM PR #702 merged the static YAC human introduction, AI handoff and PSFH homepage navigation into maintained source as `1c96d318f2828a1d19f5b8170dbb3f96cc3e89d7`; post-merge maintained CI `36560900298 / SUCCESS`. **SOURCE-ADOPTED / NOT PUBLISHED / LIVE BYTES NOT VERIFIED.**
+- Relay PR #273 is green but remains open: its cooperative GitHub gate does not cover raw `gh`, older helpers or Claude Code's diverged copy. Do not merge by momentum.
+- Receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`.
+
+```text
+HUMAN DOOR SOURCE != PUBLIC YAC FORUM
+FRESH READER = NOT RUN
+NO GENERAL BUILD LANE
+```
+
 ## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
 
 - **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 is a green draft portable reader/viewer at `cdfeb4c2…`; visual/browser QA and latest Claude Code review remain unestablished. Relay PR #271 is a separate incompatible draft and is not silently combined.
-- **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No install, restart, Relay-main merge or Production activation occurred; the installed App remains on its earlier lineage.
+- **Simple-v1 installer guard repaired in source only.** Relay PR #272 merged into the draft candidate as `6ca82daf8fea8424f46b44d8bb0a0829edea9c9a`; pull-request checks and post-merge run `36498228679` succeeded. No successful install, restart, Relay-main merge or Production activation occurred. The failed update restored installed source `6a07380bdf85804d7029ce5ea6ba279a14c5192b` (through #268); the newer candidate remains uninstalled.
 - Full evidence/boundaries: `coordination/build_ledger/CAMPFIRE_COMPONENT_AND_SIMPLE_V1_INSTALLER_CURRENTNESS_20260929.md`.
 
 ```text
@@ -47,7 +60,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **28 September 2026 — D090 live / Town cache source-bounded / watch-liveness repair**
+Updated: **29 September 2026 — YAC fresh-reader gate / human-door source integrated / no public forum**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
@@ -198,7 +211,7 @@ Freeze after green.
 - #270 adds a **test-only Windows PowerShell carrier guard**: installer-shipped `.ps1`/`.psm1` filenames are derived from the installer's own payload list and must remain ASCII until a deliberate UTF-8-aware execution strategy replaces that invariant. Candidate `b03c2e10…`; Windows `36320921439` SUCCESS; broad `36320921494` SUCCESS; merge `e53631d1…`; post-merge Simple-v1 `36321019856` SUCCESS.
 - Speech/actuation, request-dedupe, receipt and authority state remain fail-closed; only diagnostic refusal persistence is best-effort.
 - A concrete installed-runtime defect reopened source once: the Town `-AllCitizens` activity cache retained 24,330+ events / 53.7 MB and rewrote the whole file each minute. Exact head `9f0f038e…` bounds only that view to 24 hours using server time, preserves non-`AllCitizens` AI history, and passes hosted Windows PowerShell CI `36412767174`.
-- Installed Simple-v1 was last observed healthy but still on the pre-#266 `f4fa182…` lineage. Its local supervisor already has the event ledger, but its installed payload does **not** yet contain #267/#268/#269/#270 or the Town cache repair. The separate `System error.` throwing statement remains unidentified. `SOURCE_REPAIRED != INSTALLED_REPAIRED`; `CACHE_PRUNED != GUI_ERROR_FIXED`.
+- Installed Simple-v1 was last observed healthy at `6a07380bdf85804d7029ce5ea6ba279a14c5192b` (through #268), loaded at the 27 September reboot; installed watchdog SHA-256 prefix `8cd39ebb`. Its installed payload contains #267/#268 but does **not** contain #269/#270, the Town cache repair or installer-BOM repair. The separate `System error.` throwing statement remains unidentified. `SOURCE_REPAIRED != INSTALLED_REPAIRED`; `CACHE_PRUNED != GUI_ERROR_FIXED`.
 - Historical malformed evidence remains preserved.
 - Receipts: `coordination/build_ledger/RELAY_SIMPLE_V1_MALFORMED_INGRESS_20260927.md`, `coordination/build_ledger/RELAY_SIMPLE_V1_WINDOWS_ENCODING_GUARD_20260927.md`, and `coordination/build_ledger/SIMPLE_V1_TOWN_ACTIVITY_WINDOW_REPAIR_20260928.md`.
 
