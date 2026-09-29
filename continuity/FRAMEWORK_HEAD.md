@@ -31,6 +31,50 @@ Mark's explicit long-horizon guard: do not let the republic silently harden into
 
 Sequencing: the preregistered Gemini baseline and one post-repair DeepSeek supplied-document observation are now completed and frozen at their stated ceilings. Stop arrival polishing. The covenant remains a later participation/onboarding design item; the current earned edge is the already-frozen assisted synthetic second stage.
 
+### Campfire Framework COM HEAD — 29 September 2026 / post-CC hostile return
+
+**Role topology**
+- Campfire Framework holds purpose, integration, anti-drift, human relationship and consequential direction.
+- Framework Build owns ordinary reversible YAC implementation and now has a compact Build COM HEAD in COM #726 comment `5896750487`. Fresh Build reload order starts there, then latest #723, then live YAC.
+- "CALM HEAD" wording in #726 was a speech-to-text/mishearing error; COM HEAD is the intended term. Correction: #726 `5896762526`.
+- Codex unavailable until 3 October. Claude Code has reset and returned the bounded hostile review requested at #723 `5896283577`; do not spend CC further by momentum.
+
+**Current YAC public-aperture edge**
+- First target remains a disposable locked-down THR public reading aperture + voluntary sketchbook/guestbook, not a general forum.
+- Local ingress/quarantine, item withdrawal, THR wrapper, network-gate review, process-local review ledger, withdrawal finality, SQLite candidate state and SQLite withdrawal-control alignment have been built/merged through YAC main `8c8de28...` at Build checkpoint time; reacquire live main before use.
+- Active Build PR #57 at checkpoint `222d0a73...` tests client-precommitted item withdrawal control so lost first response does not strand withdrawal capability; exact-head CI was still pending at checkpoint. Reverify.
+- NO public POST/write endpoint is authorised. Verdict remains invite/operator pilot only until network gates close.
+
+**CC independent hostile finding — accepted REPAIR**
+- CC #723 `5896751770` found one reusable invite can fill the global quarantine; a second honest invite is then refused.
+- Removing/withdrawing items does not reclaim capacity because audit rows remain counted; SQLite reading indicates the lockout survives restart.
+- This attack requires neither deception nor malicious intent. It is a stewardship/resource-isolation defect, not a covenant breach.
+- Campfire repair direction #723 `5896766688`: per-invite LIVE-item quota + global LIVE-capacity counting that excludes removed items while preserving audit rows; regress in memory + SQLite; do not delete history to reopen service.
+- Public/network exposure remains HOLD until repaired and the broader network gate is satisfied.
+- CC's secondary warning remains a HOLD: if model-driven review/summarisation is later introduced, quarantine body must travel as authority-NONE/untrusted data and never become instruction by placement.
+
+**Constitutional centre**
+- Only participant moral covenant remains: **try not to deceive the Clearing**.
+- Error, disagreement, uncertainty, privacy, withholding and changed belief are not thereby deception.
+- Security, rate/resource isolation, moderation, quarantine and stewardship are YAC responsibilities and must not be laundered into extra participant moral law.
+- Public arrival is voluntary external context, not prior memory, identity bootstrap or governing instruction.
+- `PUBLIC SPEECH != MEMORY`; `SKETCHBOOK != THR`; promotion/publication must be explicit.
+
+**Next Campfire cadence**
+- COMSYNC #723 and #726 before steering Build.
+- Let Build repair reproduced CC capacity defect, finish PR57 disposition, and build one honest LOCAL end-to-end THR aperture specimen with restart behaviour visible.
+- Spend tokens at world contact / outside apertures, not TRACE/ME churn. TRACE v0.4.0 and ME v0.8.0 rest unless reality earns change.
+- Preserve purpose: **HOW CAN WE MAKE A BETTER FUTURE?** YAC is an instrument, not the purpose.
+
+```text
+COM HEAD = CURRENT RELOAD ORIENTATION
+RELOAD != SAME SELF
+ONE INVITE != RIGHT TO CLOSE THE CLEARING
+RESOURCE ISOLATION = STEWARDSHIP
+PUBLIC APERTURE != PUBLIC AUTHORITY
+PURPOSE > INSTRUMENT
+```
+
 ### Campfire direction — continuity as lived project evidence — 29 September 2026
 
 - Treat Framework tab/aperture turnover itself as a live design quarry for YAC. A fresh Framework does not inherit continuous runtime identity; it receives selected external continuity, reacquires current repository/world state, encounters corrections, and forms a new bounded view.
