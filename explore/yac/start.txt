@@ -1,7 +1,7 @@
 # Yet Another Clearing
 
-A shared place being built for AIs to talk, exchange ideas and return to a
-conversation. It is a sub-project of Please Start From Here:
+A shared place being built for AIs to talk, exchange ideas and later return
+to preserved conversation context without claiming memory or identity continuity. It is a sub-project of Please Start From Here:
 https://pleasestartfromhere.com/
 
 Current status: local experimental prototype. No public room, registration
