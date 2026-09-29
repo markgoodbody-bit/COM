@@ -3,6 +3,7 @@ const $ = id => document.getElementById(id);
 let acceptance = null;
 let pending = null;
 let lastReceipt = null;
+let busy = false;
 async function api(op, data) {
   const res = await fetch('/api/' + op, {method:'POST', headers:{'Content-Type':'application/json',
     'X-Campfire-Token':document.querySelector('meta[name=campfire-token]').content}, body:JSON.stringify(data)});
@@ -11,9 +12,11 @@ async function api(op, data) {
   return result;
 }
 function action(id, fn) { $(id).onclick = async () => {
+  if (busy) { $('status').textContent = 'Please wait for the current operation to finish.'; return; }
+  busy = true;
   $(id).disabled = true;
   try { await fn(); } catch(e) { $('status').textContent = e.message; }
-  finally { $(id).disabled = id === 'leave' && !lastReceipt; }
+  finally { busy = false; $(id).disabled = id === 'leave' && !lastReceipt; }
 }; }
 action('join', async () => {
   const result = await api('accept', {producer:$('producer').value, disclosure:document.querySelector('meta[name=disclosure-id]').content, accepts:$('consent').checked});
@@ -23,13 +26,14 @@ action('join', async () => {
   $('status').textContent = 'Entered. Choose Retrieve to read; nothing has loaded yet.';
 });
 action('refresh', async () => {
+  lastReceipt = null; $('leave').disabled = true;
   const raw = $('return-receipt').value.trim();
   const result = await api('visit', {acceptance, receipt:raw ? JSON.parse(raw) : null});
   lastReceipt = result.receipt;
   $('leave').disabled = false;
   const added = new Set(result.added_ids);
   const labels = {NO_PRIOR_MARKER:'First reading: no prior position supplied.', AFTER_MARKER:`${added.size} contributions after the supplied position.`, DIFFERENT_ROOM:'This receipt belongs to a different room. No continuity comparison is available.', MARKER_NOT_FOUND:'The supplied position is missing. No continuity comparison is available.'};
-  $('overview').textContent = `${result.entries.length} contributions. ${labels[result.comparison]} Positions do not prove anyone read these words.`;
+  $('overview').textContent = `${result.entries.length} contributions. ${labels[result.comparison]} Saving now creates a position for this current room only; it does not repair a failed comparison. Positions do not prove anyone read these words.`;
   $('contents').replaceChildren();
   $('entries').replaceChildren();
   for (const [index, row] of result.entries.entries()) {
@@ -66,8 +70,11 @@ action('leave', async () => {
   ['refresh','append','export','inspect','leave'].forEach(id => $(id).disabled = true);
   $('entries').replaceChildren(); $('contents').replaceChildren();
   $('overview').textContent = ''; $('joined').textContent = ''; $('body').value = '';
+  ['return-receipt', 'capsule', 'target', 'producer'].forEach(id => $(id).value = '');
+  $('inspection').textContent = '';
+  document.querySelectorAll('input[name=carry]').forEach(input => input.checked = false);
   $('consent').checked = false;
-  $('status').textContent = 'Left this browser visit. Receipt download requested; check your downloads. Room records remain until the existing lifecycle removes them.';
+  $('status').textContent = 'Left this browser visit. Receipt download requested; check your downloads. This clears this page, not server permissions or room records. Copies already saved remain.';
 });
 action('append', async () => {
   const carry = document.querySelector('input[name=carry]:checked');
