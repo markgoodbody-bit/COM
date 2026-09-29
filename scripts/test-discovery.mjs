@@ -21,6 +21,12 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
  await access('out/explore/yac/style.css');
 });
 
+
+test('YAC public page is present in crawler discovery map',async()=>{
+ const sitemap=await readFile('out/sitemap.xml','utf8');
+ assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\//);
+});
+
 test('D072 exposes the current separate Human Record route with bounded standing',()=>{
  assert.match(html,/href="https:\/\/thehumanrecord.net\/"/);
  assert.match(html,/four public records/);
