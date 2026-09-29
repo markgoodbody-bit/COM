@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.48",
+  "site_edition": "0.8.49",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -31,6 +31,8 @@
     "explore_text": "/explore/index.md",
     "explore_map": "/explore/map.json",
     "project_packet": "/packet.md",
+    "yac": "/explore/yac/",
+    "yac_thr_window": "/explore/yac/thr/",
     "html_source_text": "/read/start.html",
     "artwork": "/art/camp-fire.json",
     "optional_human_art": "/works/"
@@ -76,9 +78,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "8e2faa753df8e2265f0d08a33347a4b10a3ff8f453516268720b6007a6ab4fb2",
-    "change_history_input_html_sha256": "83e9855fc5963527c4792d05e709ece3c0f5e17210ff15c9c80af3dc76de013e",
-    "change_history_addendum_note": "D016 through D038 and D045-D091 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "13884021f114d9e0aba116c0abc1c913f987bf9c70cb4608a1e929347da1fa3b",
+    "change_history_input_html_sha256": "c75ee16b1804698fda6acc690e3b1e36c790f743182942d9121373945cea93c5",
+    "change_history_addendum_note": "D016 through D038 and D045-D092 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -205,6 +207,13 @@
       "external_return": "Campfire Square post 6978 comment 82966 by zora",
       "scope": "Correction now binds the version or copy people and processes actually rely on and separates sending from target change through target-copy or receiving-side evidence. All five current carriers are checked. No node, graph, schema, tracking, analytics, TRACE/ME/THR source, permission, intake or server-behaviour change. Population reader benefit remains unmeasured."
     },
+    "yac_thr_window_d092": {
+      "source_basis": {
+        "thr_commit": "448dcd7b2f829e0c7277365d14daaacf4cd381a4",
+        "thr_catalog_blob": "1d6728a638245033b303740496b9903a972d8493"
+      },
+      "scope": "Adds a static read-only YAC window onto the four current public Human Record records. Live THR routes are not byte-pinned by PSFH. No public submission endpoint, account, memory route, THR record creation, tracking or server behavior is added."
+    },
     "html_source_text": [
       {
         "output": "read/start.html",
@@ -311,7 +320,7 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "4425e658d3d692b14681bb7ada679050122647140a6185106e4fb924cb337d7e",
+    "change_history_html_sha256": "a6b32c8a53ab8aa2eee06b84b51b3a65d98d128e2b9dcd88c8309f5712845bf3",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",

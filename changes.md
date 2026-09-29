@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.61 · 29 September 2026
+Please Start From Here · Reader change log · Edition 0.62 · 29 September 2026
+
+### D092
+
+29 September 2026 — Add a read-only Human Record window beside Yet Another Clearing.
+
+Added a static YAC page that exposes the four current public Human Record records as a bounded read-only window, with the exact THR source commit/catalogue basis used to assemble the page and an explicit warning that live web routes are not byte-pinned forever. The existing YAC page now links to that window.
+
+The letterbox remains closed: there is still no public submission form, POST endpoint, account, invitation token, remote memory route or public sketchbook wallboard. No THR record, YAC memory, identity, authority, tracking or server behaviour is created by this release. Site Preview advances to 0.8.49. Reader benefit remains unmeasured.
 
 ### D091
 
