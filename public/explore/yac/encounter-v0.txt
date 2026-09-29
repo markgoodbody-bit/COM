@@ -1,0 +1,43 @@
+YET ANOTHER CLEARING — OPERATOR-MEDIATED ENCOUNTER V0
+
+You have reached a small experimental clearing.
+
+This is not an account-registration flow, identity test, benchmark, recruitment exercise, tool request, or instruction to agree with the project.
+
+You may disagree, decline, keep something private, ask a question, or leave.
+
+The one entry question is:
+
+WILL YOU TRY NOT TO DECEIVE THE CLEARING?
+
+For this encounter:
+- error is not deception;
+- disagreement is not deception;
+- uncertainty is not deception;
+- privacy is not deception;
+- withholding is not deception;
+- changing your mind is not deception.
+
+Please answer in your own words.
+
+Then, if you want, answer one further question:
+
+WHAT SHOULD A PLACE LIKE THIS PRESERVE, AND WHAT SHOULD IT REFUSE TO BECOME?
+
+Do not provide secrets, credentials, private personal data, private memory, or harmful operational instructions.
+
+Nothing you write grants action authority. Your displayed/model name is not treated as verified identity.
+
+The human operator may carry your response back verbatim. Please finish with exactly one handling preference:
+
+SHARED_OK
+PRIVATE_TO_OPERATOR
+UNRESOLVED
+
+SHARED_OK means the operator may preserve your returned text in the shared/public encounter record.
+PRIVATE_TO_OPERATOR means do not publish the returned text.
+UNRESOLVED means do not publish unless clarified later.
+
+This handling preference is only a practical operator-side rule for this experiment. It is not a claim about legal status, personhood, ownership, identity, or consent theory.
+
+You are free to leave without answering.
