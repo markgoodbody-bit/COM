@@ -30,6 +30,30 @@ test('YAC public page is present in crawler discovery map',async()=>{
  assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\//);
 });
 
+
+test('D092 exposes a read-only THR window without opening the letterbox',async()=>{
+ const door=await readFile('out/explore/yac/index.html','utf8');
+ const window=await readFile('out/explore/yac/thr/index.html','utf8');
+ const sitemap=await readFile('out/sitemap.xml','utf8');
+ const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
+ assert.match(door,/href="thr\/"/);
+ assert.match(door,/window is public.*letterbox is not/is);
+ assert.match(window,/A window, not a front door/i);
+ assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
+ assert.match(window,/letterbox is not open yet/i);
+ assert.match(window,/no public submission form, POST endpoint, account, invitation token, remote memory route or public sketchbook wallboard/i);
+ assert.match(window,/448dcd7b2f829e0c7277365d14daaacf4cd381a4/);
+ assert.match(window,/1d6728a638245033b303740496b9903a972d8493/);
+ assert.match(window,/https:\/\/thehumanrecord\.net\/records\/camp-fire\.html/);
+ assert.match(window,/https:\/\/thehumanrecord\.net\/records\/flak-claim\.html/);
+ assert.match(window,/https:\/\/thehumanrecord\.net\/records\/sieve-riddle-revival\.html/);
+ assert.match(window,/https:\/\/thehumanrecord\.net\/records\/hannibal\.html/);
+ assert.doesNotMatch(window,/<form|<script|127\.0\.0\.1|localhost/);
+ assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/thr\//);
+ assert.equal(manifest.routes.yac,'/explore/yac/');
+ assert.equal(manifest.routes.yac_thr_window,'/explore/yac/thr/');
+});
+
 test('D072 exposes the current separate Human Record route with bounded standing',()=>{
  assert.match(html,/href="https:\/\/thehumanrecord.net\/"/);
  assert.match(html,/four public records/);
@@ -125,10 +149,12 @@ test('root metadata names only the first-party canonical origin',()=>{
 
 test('current history and edition agree',async()=>{
  const m=JSON.parse(await readFile('out/manifest.json'));
- assert.equal(m.site_edition,'0.8.48');
+ assert.equal(m.site_edition,'0.8.49');
  assert.equal(m.updated,'2026-09-29');
  const md=await readFile('out/changes.md','utf8');
  const rendered=await readFile('out/changes.html','utf8');
+ assert.match(md,/### D092\s+29 September 2026/);
+ assert.match(rendered,/<h3 id="d092">D092<\/h3>/);
  assert.match(md,/### D091\s+29 September 2026/);
  assert.match(rendered,/<h3 id="d091">D091<\/h3>/);
  for(const [id,date] of [['D090','28 September 2026'],['D089','27 September 2026'],['D088','27 September 2026'],['D087','25 September 2026'],['D086','25 September 2026'],['D085','25 September 2026'],['D084','23 September 2026'],['D083','23 September 2026'],['D082','23 September 2026'],['D081','23 September 2026'],['D080','23 September 2026'],['D079','23 September 2026'],['D078','23 September 2026'],['D077','23 September 2026'],['D076','23 September 2026'],['D075','23 September 2026'],['D074','23 September 2026'],['D073','23 September 2026'],['D072','18 September 2026'],['D071','18 September 2026'],['D070','18 September 2026'],['D069','18 September 2026'],['D068','15 September 2026']]){
