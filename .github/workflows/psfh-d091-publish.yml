@@ -1,0 +1,67 @@
+name: PSFH D091 publish YAC introduction
+on:
+  push:
+    branches: [codex/yac-release-20260929]
+    paths: [.github/workflows/psfh-d091-publish.yml]
+permissions:
+  contents: write
+concurrency:
+  group: psfh-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and verify
+        run: |
+          npm ci
+          python -m pip install pypdf==6.10.0
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          git diff --check
+      - name: Publish against exact predecessor
+        env:
+          EXPECTED: 11c2751d686a4fac710a61cdfc5e5840781fda1b
+        run: |
+          git fetch origin gh-pages
+          test "$(git rev-parse origin/gh-pages)" = "$EXPECTED"
+          target="$(mktemp -d)"
+          git worktree add --detach "$target" "$EXPECTED"
+          rsync -a --delete --exclude='.git' --exclude='CNAME' --exclude='.nojekyll' --exclude='.gitattributes' --exclude='/README.md' out/ "$target/"
+          for file in CNAME .nojekyll .gitattributes README.md; do
+            test "$(git -C "$target" hash-object "$file")" = "$(git rev-parse "$EXPECTED:$file")"
+          done
+          git -C "$target" config user.name 'PSFH release publisher'
+          git -C "$target" config user.email 'actions@users.noreply.github.com'
+          git -C "$target" add -A
+          git -C "$target" commit -m 'Publish PSFH D091 YAC human introduction'
+          # Normal fast-forward push rejects a competing publication.
+          git -C "$target" push origin HEAD:gh-pages
+      - name: Verify served bytes
+        run: |
+          for route in index.html explore/yac/index.html explore/yac/style.css explore/yac/start.txt changes.html manifest.json; do
+            expected="$(sha256sum "out/$route" | cut -d' ' -f1)"
+            matched=0
+            for attempt in $(seq 1 18); do
+              if curl -fsSL --max-time 15 "https://pleasestartfromhere.com/$route" -o /tmp/psfh-d091-live; then
+                actual="$(sha256sum /tmp/psfh-d091-live | cut -d' ' -f1)"
+                if [ "$actual" = "$expected" ]; then matched=1; break; fi
+              fi
+              sleep 5
+            done
+            test "$matched" = 1 || { echo "Live bytes not verified: $route"; exit 1; }
+            echo "Verified $route $expected"
+          done
