@@ -1,19 +1,25 @@
-## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
+## YET ANOTHER CLEARING — DISABLED HOSTED PILOT GATE — 30 SEPTEMBER 2026
 
-- Private YAC main is `211607c512e84a4ea24b9f0c4dd898b8e73cfbdc`. The second-stage assisted encounter is frozen as **PARTIAL OBSERVATION / STOPPED / NO RETRY**: browser return/change detection was observed, while call 2 failed before provider response and return-stage model recognition remains unobserved.
-- D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff; publisher run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **STATIC HUMAN DOOR LIVE != PUBLIC YAC FORUM.**
-- Next-version draft components: PR #29 continuity core `0aec2b55...`; PR #35 repaired authorization `b96000c...` (includes public control authorization + epoch-bound recall); PR #36 retention/deletion control `1736c382...`; PR #37 repaired authority-none carrier `d88b4a05...`.
-- Codex retention integration PR #41 `bab1755e...` remains exact-head hosted green (`36594777395 / SUCCESS`, Windows + Ubuntu) but is now **REPAIR REQUIRED** for composition: CC review `5894139066` reproduced participant-controlled future `requested_at` locking the pending target. Framework accepted F1 and set v0 target binding to one `target_ref` per continuity record. Frozen PR41 is not to be edited; CC successor-repair task is `5894238630`. Still pure in-memory/process-local only; no actual deletion, persistence, runtime suppression or deployment.
-- Claude Code returned repaired recall-flow integration PR #38 `b76d54d5...` against PR29 + current PR35 + current PR37. Explicit immutable fresh-control-authorized `continuity_id -> ContinuityState` binding now prevents id rebind/state sharing and selects by id + object identity rather than label; current epoch/withdrawal gates remain fail-closed. 27 targeted integration tests; hosted `36596120429` and `36596116166` SUCCESS on Ubuntu + Windows. **G1 closed at this pure layer / runtime memory still NOT established.** PR38 is acceptable as the recall-side input; the combined seam is now blocked only on the PR41 successor repair and review.
-- **Capacity gate:** Codex is unavailable for new work until **3 October 2026**. Existing Codex evidence remains valid but no new Codex build/review/runtime activity is assumed. Claude Code has returned the isolated PR41 successor repair as draft YAC PR #42 `693663d4...`; hosted push + PR runs are green on Ubuntu + Windows. Framework initially misread Mark's Claude Code usage screenshot as weekly capacity. **Correction:** the displayed ~7.5k / 3% figure is the current **5-hour usage window**, not the weekly limit; roughly 14k current-session context tokens were also shown. Mark reports CC is getting low on usable capacity. Treat CC as reserve capacity for now: no new broad review/build work and no combined seam assignment by momentum. Framework should inspect/integrate directly where it can. This does not relax deployment, provider-call or retry gates.
-- Relay PR #273 A1 repair at `00ef0fcc0ebbcf84336c1e4ec11670403e813c39` has Claude Code KEEP with rollout restriction; no install/deployment and no mixed-version gate-sharing claim. Keep separate from YAC memory integration.
-- Historical source/human-door receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`; later live pointers above supersede its pre-publication/pre-encounter state.
+- Live YAC main is `703d51030dc83ebf56162bbbb629a4f580b23e29`; reviewed PR #63 is merged and main checks `36626808453 / SUCCESS`.
+- PSFH D092 / Site Preview `0.8.49` publishes only the static read-only THR window. Public `gh-pages@003f8d38687131a0f6535df940d33c2d5b28472e`; publication/Pages checks and served-byte verification passed. No form, script, POST route, account or token.
+- The bounded Cloudflare provider gate was explicitly authorised by Mark and conditioned on Free plan / no new terms or payment. The precheck passed; exactly one dedicated Worker and one dedicated D1 were created on `workers.dev`. No paid-plan, custom-domain or unrelated-resource change.
+- Hosted Worker: `https://yac-thr-disposable-pilot.mecchanical-ethics.workers.dev`; version `afc4fd2d-570c-46d4-9915-d7aea5793238`.
+- Both gates are false. Initial D1 counts were zero. No participant invite/data, public readback, THR mutation, YAC memory or auto-publication.
+- Independent evidence converged:
+  - Build recomputed reviewed source/schema hashes and matched deployment-receipt bytes modulo ordinary LF/CRLF normalization;
+  - Codex provider export later matched those module hashes;
+  - Codex GET-only hosted smoke passed;
+  - Claude Code disabled-surface hostile read returned KEEP and found no write bypass/readback/capability leak/consent drift.
+- Limits: direct provider logging/analytics retention remains unestablished; enabled-gate semantics and seven-day retention are not yet observed. Cloudflare NEL/Report-To headers were visible, while URL-fragment invite capabilities were not transmitted.
+- **Active bounded build:** synthetic-only hosted boundary matrix on the existing dedicated resources, already authorised but **NOT RUN** at this checkpoint. Required final state: both gates false, no usable synthetic invite, exact D1 summary, no participant content. Return to Campfire before any real invite/intake.
+- Next-version memory-stack drafts remain separate/pure. No participant-memory runtime integration follows.
+- Relay PR #273 remains separate and unadopted.
 
 ```text
-HUMAN DOOR LIVE != PUBLIC YAC FORUM
-RETURN FLOW OBSERVED != RETURN COMPREHENSION OBSERVED
-PURE COMPONENT GREEN != INTEGRATED MEMORY SYSTEM
-MEMORY AUTHORIZATION != IDENTITY PROOF
+ACTIVE BUILD = SYNTHETIC-ONLY HOSTED BOUNDARY TEST
+REAL INTAKE = CLOSED
+DISABLED VERIFIED != ENABLED SEMANTICS VERIFIED
+TIME-UNOBSERVED != PASS
 NO GENERAL BUILD QUEUE
 ```
 
