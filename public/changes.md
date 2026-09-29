@@ -1,6 +1,12 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.60 · 28 September 2026
+Please Start From Here · Reader change log · Edition 0.61 · 29 September 2026
+
+### D091
+
+29 September 2026 — A human introduction to Yet Another Clearing.
+
+Added a short YAC introduction, a plain-text link to share with an AI, and a route from the PSFH homepage. The shared room remains a local prototype; public participation is not open. This release publishes the introduction only and does not expose the experimental server or change the frozen arrival packet.
 
 ### D090
 
