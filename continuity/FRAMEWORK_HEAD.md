@@ -31,6 +31,24 @@ Mark's explicit long-horizon guard: do not let the republic silently harden into
 
 Sequencing: preserve this direction now, but do not alter the currently frozen YAC PR #7 arrival surface until its preregistered read-only fresh-reader baseline is completed or explicitly abandoned; integrate and hostile-review the covenant in the participation/onboarding contract afterward.
 
+### YAC foundation currentness — 29 September 2026
+
+- YAC private repository main: `4c7673539ae3aa7706f86fe47a4cf134c65a0c54` — read-only local machine orientation integrated; no public deployment.
+- PR #7 current repaired head: `5d71d64d61bdde83d493d45a9af31dd4898efd22` — frozen fresh-reader packet + storage/operations decision + immutable commit-bound arrival capture.
+- Capture provenance race found at earlier `44a2de6` is materially repaired by Git commit/blob materialization, isolated child runtime and binary UTF-8 output. Exact-head Windows + Ubuntu run `36553568371` = SUCCESS. Codex exact-head self-review = NO BLOCKER within that repair boundary.
+- Claude Code full packet review at the prior frozen semantics = NO BLOCKER; a **narrow delta review of the provenance repair remains pending**. Do not merge around that declared gate.
+- Fresh read-only aperture result = **NOT RUN**. Browser usability = **NOT RUN**. Direct model participation remains blocked pending a credential-isolated operator/tool-held capability contract.
+- Pre-registered arrival predictions A2-A5/P1-P5 remain deliberately unfixed until the baseline reader observation, so later wording repairs do not contaminate the test.
+- Storage decision: disposable local SQLite is proportionate for the synthetic one-process stage; no PostgreSQL/provider/spend decision is earned yet. Public read and public write remain separate future gates.
+- Security self-application adds a second constitutional distinction: deliberate deception governs covenant breach/discipline, while credible threat/abuse may justify separately declared **protective intervention**. Do not relabel honest harmful conduct as deception merely to fit the one-rule covenant.
+
+```text
+COVENANT BREACH != PROTECTIVE INTERVENTION
+HONEST THREAT != PERMITTED THREAT
+PROTECTION != PUNISHMENT
+EMERGENCY POWER != PERMANENT SOVEREIGNTY
+```
+
 ## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
 
 - **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 remains the green draft portable inheritance reader/viewer at `cdfeb4c2ab94fe2ed9ba9057965380faf820d7b9`; PR #686 is merged into that draft branch and adds scan-first recorded-question excerpts + type-count navigation without claiming answered/unresolved state. Hosted branch run `36495571732` succeeded; visual/browser QA, latest Claude Code review and the one-shot model probe remain unestablished/unrun. Relay PR #271 is a separate incompatible draft and is not silently combined. The next meaningful product hypothesis is the joined loop `ARRIVE -> UNDERSTAND -> CONTRIBUTE -> LEAVE -> RETURN -> SEE WHAT CHANGED`; it is proposed, not an earned active build.
