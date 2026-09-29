@@ -1,0 +1,31 @@
+name: Campfire local visit
+on:
+  pull_request:
+    paths:
+      - 'experiments/campfire-encounter/**'
+      - '.github/workflows/campfire-visit.yml'
+  push:
+    paths:
+      - 'experiments/campfire-encounter/**'
+      - '.github/workflows/campfire-visit.yml'
+permissions:
+  contents: read
+jobs:
+  visit:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: experiments/campfire-encounter
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -v
+      - run: node --test test_visit_ui.cjs

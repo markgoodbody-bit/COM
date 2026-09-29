@@ -64,6 +64,43 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(code, 200)
         self.assertEqual(json.loads(raw)['completeness'], 'NOT_ESTABLISHED')
 
+    def test_return_visit_preserves_originals_and_requires_new_acceptance(self):
+        a = self.accept()
+        _, raw, _ = self.append(a)
+        original = json.loads(raw)['id']
+        _, raw, _ = self.request('/api/visit', {'acceptance':a, 'receipt':None})
+        receipt = json.loads(raw)['receipt']
+        self.assertEqual(set(receipt), {'format', 'room', 'last'})
+        self.assertNotIn(a, json.dumps(receipt))
+        b = self.accept('B')
+        _, raw, _ = self.append(b, relation='dispute', target=original, body='Disagree', carry=False)
+        dispute = json.loads(raw)['id']
+        self.assertEqual(self.request('/api/visit', {'acceptance':receipt, 'receipt':receipt})[0], 400)
+        returning = self.accept('A')
+        code, raw, _ = self.request('/api/visit', {'acceptance':returning, 'receipt':receipt})
+        self.assertEqual(code, 200)
+        result = json.loads(raw)
+        self.assertEqual(result['added_ids'], [dispute])
+        self.assertEqual(result['entries'][0]['body'], 'hello')
+        self.assertEqual(result['entries'][1]['target'], original)
+        self.assertEqual(self.request('/api/export', {'acceptance':returning})[0], 400)
+
+    def test_return_marker_unknown_wrong_room_empty_and_expired(self):
+        a = self.accept()
+        _, raw, _ = self.request('/api/visit', {'acceptance':a, 'receipt':None})
+        receipt = json.loads(raw)['receipt']
+        self.append(a)
+        _, raw, _ = self.request('/api/visit', {'acceptance':a, 'receipt':receipt})
+        self.assertEqual(len(json.loads(raw)['added_ids']), 1)
+        for field, value, expected in [('room', 'other', 'DIFFERENT_ROOM'), ('last', 'missing', 'MARKER_NOT_FOUND')]:
+            _, raw, _ = self.request('/api/visit', {'acceptance':a, 'receipt':dict(receipt, **{field:value})})
+            result = json.loads(raw)
+            self.assertEqual(result['comparison'], expected)
+            self.assertEqual(result['added_ids'], [])
+        self.assertEqual(self.request('/api/visit', {'acceptance':a, 'receipt':dict(receipt, authority='ROOT')})[0], 400)
+        self.now += 86400
+        self.assertEqual(self.request('/api/visit', {'acceptance':a, 'receipt':receipt})[0], 400)
+
     def test_host_origin_token_and_content_type(self):
         data = {'acceptance':'missing'}
         for headers in ({'Host':'evil.example'}, {'Origin':'https://evil.example'},
