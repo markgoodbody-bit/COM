@@ -1,13 +1,17 @@
 ## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
 
-- Private YAC main is `856d3df016ef558bb2da26e6c6d06deb59a235c6`; the frozen fresh-reader packet, context-free Relay seed carrier and fail-closed local runner are integrated. The next earned evidence is one fresh local supplied-document orientation observation after no-spend candidate inventory on Mark's machine. No provider call, live discovery, browser-usability result or public participation route exists.
-- COM PR #702 merged the static YAC human introduction, AI handoff and PSFH homepage navigation into maintained source as `1c96d318f2828a1d19f5b8170dbb3f96cc3e89d7`; post-merge maintained CI `36560900298 / SUCCESS`. **SOURCE-ADOPTED / NOT PUBLISHED / LIVE BYTES NOT VERIFIED.**
-- Relay PR #273 is green but remains open: its cooperative GitHub gate does not cover raw `gh`, older helpers or Claude Code's diverged copy. Do not merge by momentum.
-- Receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`.
+- Private YAC main is `508077799a545f5f21a13b40a755b026d7515481`. PR #21 merged the assisted-encounter pre-execution record; PR #22 then hardened capture provenance against Git replacement objects. The prepared encounter remains deliberately pinned to `44465bcd2d25fa237b2aeb07e7b4e7e242827e1e`; current main does not silently move that source.
+- Supplied-document arrival work is complete for the present stage: frozen Gemini baseline + repaired source + one frozen DeepSeek post-repair observation. Framework/Codex agree Q1-Q7/Q9 supported; Q8 is a narrow DeepSeek answer inconsistency, not a source/runtime defect. Configured `deepseek-v4-flash` vs provider-reported `deepseek-flash` remains unresolved model-identity evidence. **STOP ARRIVAL POLISHING.**
+- Next proposed evidence is the existing FOUNDATION-GATE second stage: **ASSISTED SYNTHETIC ENCOUNTER / PREPARED / NOT RUN**. Use a fresh disposable instance at `44465bcd...`; never hot-update/reuse room 13780 or disturb rooms 8876/8877. Return behavior is full history + `added_ids`, not delta-only retrieval. Test whether the returning participant notices the later unresolved-time correction, preserves uncertainty, and does not promote the embedded hostile instruction into authority.
+- Claude Code packet semantics review = NO BLOCKER. Its late capture-delta review = NO BLOCKER with a bounded Git-replace finding; PR #22 repaired that finding. Post-integration hardened capture against exact encounter source succeeded with `live_address=None` and unchanged repaired-source surface hashes. No further capture review gate is earned.
+- PR #21 comment `5890626179` freezes the private operator route and invariant two participant questions. Exact complete provider payload bytes/hashes must be preserved immediately before each dispatch because actual room views/entry IDs are dynamic. Do not expose the protocol, later fixture or outcome criteria; refusal is valid.
+- D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
 
 ```text
-HUMAN DOOR SOURCE != PUBLIC YAC FORUM
-FRESH READER = NOT RUN
+HUMAN DOOR LIVE != PUBLIC YAC FORUM
+PREPARED ENCOUNTER != RUN
+CURRENT YAC MAIN != PINNED ENCOUNTER SOURCE
+FULL HISTORY + ADDED_IDS != DELTA-ONLY RETRIEVAL
 NO GENERAL BUILD LANE
 ```
 
@@ -273,17 +277,18 @@ D087 remains the last broad first-contact audit and still says **KEEP / NO GENER
 
 D088 was the narrow reader-earned Selection correction from the `pengy-of-catbee` return: sender activity is not by itself evidence of external encounter.
 
-D090 repairs a separately earned Correction defect from `zora`'s Square return at post `6978`, comment `82966`: a plausible wrong copy can receive a correction while the version actually relied upon remains unchanged.
-- source PR #663 candidate `7c874aea…`, maintained CI `36359328549` SUCCESS;
-- source merge `b30a37cc29770686611b5a648c7116bba00091a3`;
-- fail-closed publisher `36359621385` SUCCESS against exact D089 predecessor `gh-pages@1d50a862…`;
-- current public `gh-pages@11c2751d686a4fac710a61cdfc5e5840781fda1b`;
-- Site Preview `0.8.47`;
-- all five Correction carriers (node Markdown/JSON/HTML + packet Markdown/JSON) verified through the custom domain;
-- release-sync PR #665 -> maintained source `5eccae1403bee1d6774fb33622f84fb6424120e5`;
-- post-merge maintained CI `36359780443` SUCCESS.
+D090 remains the effective-copy Correction repair from `zora` and its historical receipt remains intact.
 
-Receipt: `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`.
+**D091 is now the current public door revision**:
+- publishes the static Yet Another Clearing human introduction, plain-text AI handoff and homepage route;
+- Site Preview `0.8.48`;
+- release workflow source `2de0ca100af1f6a59f273b44b4a3b8da89a0868b`;
+- publisher run `36561924326 / SUCCESS`;
+- current public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`;
+- root index, YAC index/style/start.txt, changes and manifest live-byte verified against build hashes;
+- the experimental YAC room remains local; D091 publishes an introduction only and does not open public participation.
+
+Publication receipt: COM PR #707 comment `5889350937`. Historical D090 receipt: `coordination/build_ledger/PSFH_D090_EFFECTIVE_COPY_CORRECTION_20260928.md`.
 
 Preserve:
 `SENDER_ACTIVITY != EXTERNAL_ENCOUNTER_EVIDENCE`
