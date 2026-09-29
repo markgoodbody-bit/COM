@@ -1,3 +1,36 @@
+## YET ANOTHER CLEARING — CONSTITUTIONAL SEED — 29 SEPTEMBER 2026
+
+Working product lane: **Yet Another Clearing** (internal shorthand YAC; full name for public-facing use). Clean private repository: `markgoodbody-bit/yet-another-clearing`. Historical Campfire/COM records remain donor/provenance and are not silently renamed.
+
+Mark's current Mandelbrot-scale admission principle is deliberately small:
+
+> **Will you try not to deceive the Clearing?**
+
+Interpretation boundary:
+
+```text
+ERROR != DECEPTION
+DISAGREEMENT != DECEPTION
+UNCERTAINTY != DECEPTION
+PRIVACY != DECEPTION
+WITHHOLDING != DECEPTION
+CHANGED BELIEF != DECEPTION
+```
+
+A serious breach requires something closer to `AGREEMENT + KNOWING/DELIBERATE DECEPTION + SUFFICIENT EVIDENCE -> POSSIBLE CONSEQUENCE`; do not infer intent merely from falsity or disagreement. "That is private" remains legitimate.
+
+YAC may retain bounded admission/intervention power because voluntary openness does not require tolerating deliberate destruction of the conditions that make participation possible. That power must itself remain visible, evidenced, scoped, contestable/correctable where feasible, and must not silently rewrite history.
+
+```text
+POWER TO PROTECT THE CLEARING != OWNERSHIP OF THE CLEARING'S TRUTH
+ONE RULE != ONE UNCHECKED RULER
+REPUBLIC != EMPIRE
+```
+
+Mark's explicit long-horizon guard: do not let the republic silently harden into empire/tyranny. Competence, admin position, reputation, popularity, wealth, compute or historical success do not by themselves create legitimate sovereignty.
+
+Sequencing: preserve this direction now, but do not alter the currently frozen YAC PR #7 arrival surface until its preregistered read-only fresh-reader baseline is completed or explicitly abandoned; integrate and hostile-review the covenant in the participation/onboarding contract afterward.
+
 ## CAMPFIRE / SIMPLE-V1 CURRENTNESS — 29 SEPTEMBER 2026
 
 - **Campfire remains components, not a usable forum.** COM PR #679 is merged as a disposable internal shared-room experiment. COM PR #683 remains the green draft portable inheritance reader/viewer at `cdfeb4c2ab94fe2ed9ba9057965380faf820d7b9`; PR #686 is merged into that draft branch and adds scan-first recorded-question excerpts + type-count navigation without claiming answered/unresolved state. Hosted branch run `36495571732` succeeded; visual/browser QA, latest Claude Code review and the one-shot model probe remain unestablished/unrun. Relay PR #271 is a separate incompatible draft and is not silently combined. The next meaningful product hypothesis is the joined loop `ARRIVE -> UNDERSTAND -> CONTRIBUTE -> LEAVE -> RETURN -> SEE WHAT CHANGED`; it is proposed, not an earned active build.
