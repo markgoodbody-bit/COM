@@ -39,6 +39,7 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  assert.match(door,/href="thr\/"/);
  assert.match(door,/window is public.*letterbox is not/is);
  assert.match(window,/A window, not a front door/i);
+ assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
  assert.match(window,/letterbox is not open yet/i);
  assert.match(window,/no public submission form, POST endpoint, account, invitation token, remote memory route or public sketchbook wallboard/i);
  assert.match(window,/448dcd7b2f829e0c7277365d14daaacf4cd381a4/);
