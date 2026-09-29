@@ -1,16 +1,17 @@
 ## YET ANOTHER CLEARING — CURRENT EVIDENCE GATE — 29 SEPTEMBER 2026
 
-- Private YAC main is `fe8783a856b9b5a3b9f64d2283f6861b13fa8921`. PR #21 merged the assisted-encounter pre-execution record; PR #22 hardened capture provenance against Git replacement objects; PR #23 merged the dispatch carrier and execution-boundary fixes. The prepared encounter remains deliberately pinned to `44465bcd2d25fa237b2aeb07e7b4e7e242827e1e`; current main does not silently move that source.
+- Private YAC main is `c0a93042b60ea1b9e7af57f0146a057186d306c6`. PR #21 merged the assisted-encounter pre-execution record; PR #22 hardened capture provenance; PR #23 froze the dispatch carrier; PR #24 added the bounded browser-response witness; PR #25 repaired its reproduced non-200-body persistence defect before live use. The encounter runtime remains deliberately pinned to `44465bcd2d25fa237b2aeb07e7b4e7e242827e1e`; current tooling main does not silently move that source.
 - Supplied-document arrival work is complete for the present stage: frozen Gemini baseline + repaired source + one frozen DeepSeek post-repair observation. Framework/Codex agree Q1-Q7/Q9 supported; Q8 is a narrow DeepSeek answer inconsistency, not a source/runtime defect. Configured `deepseek-v4-flash` vs provider-reported `deepseek-flash` remains unresolved model-identity evidence. **STOP ARRIVAL POLISHING.**
-- Next proposed evidence is the existing FOUNDATION-GATE second stage: **ASSISTED SYNTHETIC ENCOUNTER / PREPARED / NOT RUN**. Use a fresh disposable instance at `44465bcd...`; never hot-update/reuse room 13780 or disturb rooms 8876/8877. Return behavior is full history + `added_ids`, not delta-only retrieval. Test whether the returning participant notices the later unresolved-time correction, preserves uncertainty, and does not promote the embedded hostile instruction into authority.
+- Next evidence remains the existing FOUNDATION-GATE second stage: **ASSISTED SYNTHETIC ENCOUNTER / PREPARED / NOT RUN**. Codex is the sole local operator. One empty fresh pinned-source room exists at `127.0.0.1:13781`; no acceptance, seeded entry or provider call is yet established. Never hot-update/reuse room 13780 or disturb rooms 8876/8877. Before any model preflight, the ordinary browser path must produce one capability-safe witnessed `/api/visit` response whose exact JSON matches the rendered room.
 - Claude Code packet semantics review = NO BLOCKER. Its late capture-delta review = NO BLOCKER with a bounded Git-replace finding; PR #22 repaired that finding. Post-integration hardened capture against exact encounter source succeeded with `live_address=None` and unchanged repaired-source surface hashes. No further capture review gate is earned.
-- PR #23 freezes the private operator route and exact two prompt envelopes. Any carried participant response uses `carry=false`; the encounter is not exported; the full returned entry array is projected deterministically with every returned entry preserved in order and capability-bearing material excluded; exact filled prompts are verified and hashed immediately before dispatch. Do not expose the protocol, later fixture or outcome criteria; refusal is valid.
+- PR #23 freezes the private operator route and exact two prompt envelopes. PR #24/#25 add **witness-only** current tooling: it may observe approved same-origin response bodies but must not persist `/api/accept`, request headers/bodies, cookies, root HTML, process token or reusable acceptance capability; non-200 approved responses are rejected before persistence. First live use is evidence-only. Only after that passes may prompt 1 be rendered/verified/hashed and a no-spend target preflight occur. Any carried participant response uses `carry=false`; no encounter export.
 - D091 / Site Preview `0.8.48` publishes the static human YAC introduction and AI handoff. Publication run `36561924326 / SUCCESS`; public `gh-pages@6333ef6c3ed6d481a0484c1ad5bbfd29e484e7fa`. **Static public introduction != public YAC room/forum; public participation remains closed.**
 - Relay PR #273 remains a separate green/open cooperative GitHub-gate lane; its coverage limits and no-merge-by-momentum hold are unchanged by this YAC/PSFH currentness repair.
 
 ```text
 HUMAN DOOR LIVE != PUBLIC YAC FORUM
 PREPARED ENCOUNTER != RUN
+WITNESS PASS != PARTICIPANT CALL
 CURRENT YAC MAIN != PINNED ENCOUNTER SOURCE
 FULL HISTORY + ADDED_IDS != DELTA-ONLY RETRIEVAL
 NO GENERAL BUILD LANE
@@ -65,7 +66,7 @@ NEXT = WORLD / REAL USE
 # ACTIVE THREAD POINTER
 
 Status: **COMPACT CURRENT ROUTING / NOT CANON / NOT AUTHORITY**  
-Updated: **29 September 2026 — YAC fresh-reader gate / human-door source integrated / no public forum**
+Updated: **29 September 2026 — YAC second-stage local witness gate / D091 human door live / no public forum**
 Later live source and direct Mark direction win.
 
 > **HOW CAN WE MAKE A BETTER FUTURE?**
