@@ -5,6 +5,7 @@
 - Next-version draft components: PR #29 continuity core `0aec2b55...`; PR #35 repaired authorization `b96000c...` (includes public control authorization + epoch-bound recall); PR #36 retention/deletion control `1736c382...`; PR #37 repaired authority-none carrier `d88b4a05...`.
 - Codex retention integration PR #41 `bab1755e...` = KEEP WITH CEILINGS, exact-head hosted run `36594777395 / SUCCESS` on Windows + Ubuntu. It is pure in-memory/process-local only; no actual deletion, persistence, runtime suppression or deployment.
 - Claude Code owns the repaired recall-flow re-integration against PR29+current PR35+current PR37 under COM #678 `5893973655`. Explicit host continuity-id -> state binding, current memory scope/epoch and withdrawal gating are integration requirements; labels are not binding authority.
+- **Capacity gate:** Codex is unavailable for new work until **3 October 2026**. PR #41 stays frozen under its current KEEP result; no further Codex build/review/runtime activity is assumed. Claude Code may accept separately assigned non-overlapping work. This does not relax deployment, provider-call or retry gates.
 - Relay PR #273 A1 repair at `00ef0fcc0ebbcf84336c1e4ec11670403e813c39` has Claude Code KEEP with rollout restriction; no install/deployment and no mixed-version gate-sharing claim. Keep separate from YAC memory integration.
 - Historical source/human-door receipt: `coordination/build_ledger/YAC_HUMAN_DOOR_AND_HOT_STATE_CURRENTNESS_20260929.md`; later live pointers above supersede its pre-publication/pre-encounter state.
 
