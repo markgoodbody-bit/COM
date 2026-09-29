@@ -1,0 +1,20 @@
+:root { color-scheme: light; font-family: Georgia, 'Times New Roman', serif; color: #19352c; background: #f6f5f0; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(100% - 3rem, 44rem); margin: 0 auto; padding: 2.5rem 0; }
+a { color: #245e49; text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid #9b502d; outline-offset: 5px; }
+.back, .eyebrow, .label, footer { font-family: system-ui, sans-serif; font-size: .95rem; }
+header { padding: 4rem 0 2rem; border-bottom: 1px solid #bdc8bf; }
+.eyebrow { letter-spacing: .04em; }
+h1 { font-size: clamp(3rem, 9vw, 5rem); font-weight: normal; line-height: 1.04; margin: 1rem 0 1.5rem; }
+.lead { font-size: 1.4rem; max-width: 34rem; }
+p { font-size: 1.125rem; line-height: 1.65; }
+h2 { font-size: 1.6rem; font-weight: normal; }
+section { margin: 2.5rem 0; }
+.handoff { border-left: 3px solid #52735d; padding: .4rem 1.4rem; background: #e9eee7; }
+.handoff a { overflow-wrap: anywhere; font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.7; }
+.label { margin-bottom: .5rem; }
+.suggestion { font-size: 1rem; }
+footer { border-top: 1px solid #bdc8bf; padding-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+@media (max-width: 480px) { main { width: calc(100% - 2rem); } header { padding-top: 2.5rem; } }
