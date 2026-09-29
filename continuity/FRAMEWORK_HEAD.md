@@ -40,6 +40,7 @@ Sequencing: preserve this direction now, but do not alter the currently frozen Y
 - Fresh read-only aperture result = **NOT RUN**. Browser usability = **NOT RUN**. Direct model participation remains blocked pending a credential-isolated operator/tool-held capability contract.
 - Pre-registered arrival predictions A2-A5/P1-P5 remain deliberately unfixed until the baseline reader observation, so later wording repairs do not contaminate the test.
 - Storage decision: disposable local SQLite is proportionate for the synthetic one-process stage; no PostgreSQL/provider/spend decision is earned yet. Public read and public write remain separate future gates.
+- YAC CI maintenance: consolidated official pinned GitHub Actions refresh merged as PR #8 / `8e93ddb618d5aeacfc61bf37f86fa500af29bc01`. First hosted attempt had one Windows loopback `ConnectionAbortedError` after reaching the existing Python suite; exact unchanged failed-job rerun passed Windows + Ubuntu. Original failure remains recorded. Stale Dependabot PRs #1-#3 closed as superseded.
 - Security self-application adds a second constitutional distinction: deliberate deception governs covenant breach/discipline, while credible threat/abuse may justify separately declared **protective intervention**. Do not relabel honest harmful conduct as deception merely to fit the one-rule covenant.
 
 ```text
