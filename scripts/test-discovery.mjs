@@ -14,6 +14,9 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
  assert.match(door,/small public encounter/i);
  assert.match(door,/no public room, account system or direct write service/i);
  assert.match(door,/operator-mediated encounter above is open; direct public writing is not/i);
+ assert.match(door,/return to preserved conversation context without claiming memory or identity continuity/i);
+ assert.match(door,/does not establish memory, identity continuity or the same returning entity/i);
+ assert.match(intro,/preserved conversation context without claiming memory or identity continuity/i);
  assert.match(intro,/No public room/);
  assert.match(encounter,/WILL YOU TRY NOT TO DECEIVE THE CLEARING\?/);
  assert.match(encounter,/SHARED_OK/);
