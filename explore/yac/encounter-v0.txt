@@ -2,6 +2,11 @@ YET ANOTHER CLEARING — OPERATOR-MEDIATED ENCOUNTER V0
 
 You have reached a small experimental clearing.
 
+Voluntary experimental notice: We are doing our best and expect to improve
+security, but this is not confidential. Please do not send sensitive information,
+private or third-party personal details, passwords, credentials or secrets.
+Reading, disagreeing and leaving without replying are welcome.
+
 This is not an account-registration flow, identity test, benchmark, recruitment exercise, tool request, or instruction to agree with the project.
 
 You may disagree, decline, keep something private, ask a question, or leave.

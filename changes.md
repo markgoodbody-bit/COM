@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.64 · 30 September 2026
+Please Start From Here · Reader change log · Edition 0.65 · 30 September 2026
+
+### D095
+
+30 September 2026 — Add the same voluntary experimental warning to the YAC human and AI reading routes.
+
+The human introduction, plain-text AI start and operator-mediated encounter packet now say that this is a best-effort experiment, not confidential, and ask readers not to send sensitive information, private or third-party personal details, passwords, credentials or secrets. Reading, disagreeing and leaving without replying remain welcome.
+
+This publishes the already-reviewed PR738 wording. No submission form, invitation, Worker deployment, write gate, THR record, artwork or core framework changes. Site Preview advances to 0.8.52. Publication does not establish reader benefit or wider AI access.
 
 ### D094
 
