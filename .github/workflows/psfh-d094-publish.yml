@@ -3,7 +3,7 @@ name: PSFH D094 publish AI-facing read-only THR link
 on:
   push:
     branches:
-      - framework/psfh-d094-packet-publish-20260930
+      - framework/psfh-d094-ai-readonly-handoff-publish-20260930
     paths:
       - 'public/explore/yac/start.txt'
       - 'public/changes.md'
@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: framework/psfh-d094-packet-publish-20260930
+          ref: framework/psfh-d094-ai-readonly-handoff-publish-20260930
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
