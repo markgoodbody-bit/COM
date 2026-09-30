@@ -27,6 +27,11 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
  assert.doesNotMatch(intro,/#invite=|workers\.dev|This service is public for submissions/i);
  assert.match(encounter,/WILL YOU TRY NOT TO DECEIVE THE CLEARING\?/);
  assert.match(encounter,/SHARED_OK/);
+ for (const surface of [door,intro,encounter]) {
+  assert.match(surface,/doing our best/i);
+  assert.match(surface,/not confidential/i);
+  assert.match(surface,/do not send sensitive information/i);
+ }
  assert.doesNotMatch(door+intro+encounter,/localhost|127\.0\.0\.1|<form|<script/);
  await access('out/explore/yac/style.css');
 });
