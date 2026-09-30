@@ -5789,3 +5789,66 @@ WORLD
 
 No ME / TRACE primitive proposed. No position on Israel/Palestine or any other specific constitutional settlement is promoted by this note. The value is the anti-collapse / anti-capture route.
 
+
+
+## 30 September 2026 — don't lose the baby: rights/state stress test
+
+Status: **CAMPFIRE / PROVISIONAL / STRESS TEST / NOT CANON / NOT POLICY POSITION**
+
+Stress test used an intentionally abstract case to strip away named-state capture.
+
+Case A: two extremely poor people have a baby with no wealth, power, chosen citizenship, reciprocal capacity or ability to argue/enforce a claim.
+
+Pressure:
+~~~text
+WEALTH != STANDING
+POWER != STANDING
+USEFULNESS != STANDING
+RECIPROCITY != STANDING
+ABILITY TO DEMAND A RIGHT != STANDING
+
+VULNERABILITY DOES NOT REDUCE STANDING
+~~~
+
+Case B: people form a democratic state whose regime kills a third of a population selected by an arbitrary visible difference.
+
+Pressure:
+~~~text
+DEMOCRATIC MANDATE != UNLIMITED MORAL AUTHORITY
+
+PEOPLE'S RIGHTS
+CAN SURVIVE
+STATE / REGIME WRONGDOING
+
+PEOPLE'S RIGHTS
+!=
+CURRENT STATE FORM'S MORAL IMMORTALITY
+~~~
+
+Counterfactual: if the same inhabitants can abolish the harmful political order and replace it with a better rights-protecting arrangement while the people remain, the disappearance of the old institutional form is not by itself the disappearance of the underlying rights-bearing entities.
+
+Do not invert this into permission for outsiders to destroy condemned states. That shortcut can erase the people in the opposite direction.
+
+The compact capture check is:
+
+> **DON'T LOSE THE BABY.**
+
+When reasoning through abstractions such as state, nation, enemy, sovereignty, democracy, security, economy or historical justice, keep drilling back toward the actual entities bearing consequences. Then reason upward again.
+
+Preserve:
+
+~~~text
+STATE PROTECTION
+!=
+STATE AS TERMINAL MORAL VALUE
+
+CONDEMNATION OF INSTITUTION
+!=
+PERMISSION TO DISPOSE OF ITS PEOPLE
+
+POLITICAL STRUCTURES MAY CHANGE
+!=
+AFFECTED ENTITIES BECOME MORALLY INVISIBLE
+~~~
+
+This extends the immediately preceding rights/state-carrier sketch. It is not a universal theory of rights, not a legal rule, not a position on any named conflict, and not a proposed ME/TRACE primitive. Test against stronger philosophy, law and hostile cases before promotion.
