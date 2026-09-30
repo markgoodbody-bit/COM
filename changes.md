@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.62 · 29 September 2026
+Please Start From Here · Reader change log · Edition 0.63 · 30 September 2026
+
+### D093
+
+30 September 2026 — Correct current release labels in the one-file project packet.
+
+The optional one-file project packet still called TRACE v0.3.0 and Mechanical Ethics v0.7.0 current, although the released core baselines and PSFH resource aliases now identify TRACE v0.4.0 and Mechanical Ethics v0.8.0. The maintained packet now identifies those current releases while preserving TRACE v0.3.0 as the prior full technical donor/reference and Mechanical Ethics v0.7.0 as the prior reader.
+
+This is a carrier-currentness correction, not a new core release. Historical Explore source snapshots, current resource aliases, artwork, site navigation, YAC and THR content, intake, tracking, deployment permissions and the hosted Cloudflare pilot are unchanged. Site Preview advances to 0.8.50. Reader benefit remains unmeasured.
 
 ### D092
 
