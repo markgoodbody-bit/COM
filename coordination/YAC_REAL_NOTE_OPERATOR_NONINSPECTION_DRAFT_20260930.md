@@ -10,7 +10,7 @@ Provider account/session holders must not widen deployment permissions, issue re
 
 Mark's real-note human inspection is a distinct expressly disclosed steward path, not an AI operator's permission to inspect. Public 'STEWARD_ONLY' forbids public original and revealing summary; 'PUBLIC' permits later consideration only. An external participant retains genuine right to decline. A procedural option requires advance disclosure that the operator tools technically COULD inspect or deploy code to capture text and that any such inspection could transmit text to their model-service providers. The alternatives are stronger source-custody isolation or read-only encounter, not hidden substitution.
 
-During emergency FULL OFF, current self-service withdrawal returns HTTP503. Before any pilot, Mark must agree an actual reachable human contact/response obligation and a reviewed later withdrawal resolution procedure. No blanket promise of immediate deletion; active note and claimed label NULLing leaves unsalted SHA-256 body/request fingerprints permanently under current schema, and provider backup copies may persist.
+During emergency FULL OFF, current self-service withdrawal returns HTTP503. Before any pilot, Mark must agree an actual reachable human contact/response obligation and a reviewed later withdrawal resolution procedure. No blanket promise of immediate deletion; active note and claimed label NULLing leaves unsalted SHA-256 body/request fingerprints remain in live audit rows after withdrawal/expiry, with no deletion schedule currently implemented, and provider backup copies may persist.
 
 Acceptance evidence required BEFORE describing tools as 'instructed not to inspect':
 
