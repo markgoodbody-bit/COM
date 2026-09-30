@@ -102,12 +102,25 @@ jobs:
           node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d093-publish/resources');"
           git -C /tmp/psfh-d093-publish add -A
           actual="$(git -C /tmp/psfh-d093-publish diff --cached --name-only | LC_ALL=C sort)"
-          expected="$(printf '%s\n' changes.html changes.md manifest.json packet.md | LC_ALL=C sort)"
+          expected="$(printf '%s\n' changes.html changes.md index.html manifest.json packet.md read/me-book.html read/orientation.html read/start.html read/trace-spine.html | LC_ALL=C sort)"
           if [ "$actual" != "$expected" ]; then
             echo "Unexpected public file changes:" >&2
             printf '%s\n' "$actual" >&2
             exit 1
           fi
+          # Each extra HTML change must be EXACTLY one visible edition-label substitution.
+          # Do not accept unrelated content drift under a widened nine-file allowlist.
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          work='/tmp/psfh-d093-publish'
+          for path in ('index.html','read/me-book.html','read/orientation.html','read/start.html','read/trace-spine.html'):
+              previous=subprocess.run(['git','-C',work,'show','HEAD:'+path],check=True,capture_output=True).stdout
+              proposed=(Path(work)/path).read_bytes()
+              assert previous.count(b'0.8.49')==1, 'unexpected earlier edition marker in '+path
+              assert previous.replace(b'0.8.49',b'0.8.50')==proposed, 'non-edition HTML change in '+path
+          print('D093 five HTML carriers: edition label only')
+          PY
           git -C /tmp/psfh-d093-publish status --short
 
       - name: Commit and publish D093
