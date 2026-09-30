@@ -2,7 +2,7 @@
 
 Status: **CURRENT ROUTING / SOURCE READINESS ONLY / NO ACTUATION AUTHORITY**. This supersedes the recovery snapshots below. Reacquire COM #723, live YAC PRs and provider state before any consequential action.
 
-**Public approach is proven:** PSFH D097 / Site Preview public THR aperture is live at `https://pleasestartfromhere.com/explore/yac/thr/`, with scoped text carrier `/explore/yac/thr/start.txt`. Publication source PR744 merged; release PR745 merged; public `gh-pages@cc0f9ba…`; publisher `36765652213 / SUCCESS`. The page offers four THR records and fallbacks. PUBLIC READ != DIRECT WRITE.
+**Public approach is proven:** PSFH D097 / Site Preview public THR aperture is live at `https://pleasestartfromhere.com/explore/yac/thr/`, with scoped text carrier `/explore/yac/thr/start.txt`. Publication source PR744 merged; release PR745 merged; public `gh-pages@cc0f9baedbc2104532c63503c466813a256c5c65`; publisher `36765652213 / SUCCESS`. The page offers four THR records and fallbacks. PUBLIC READ != DIRECT WRITE.
 
 **Hosted write state remains held:** the existing dedicated Worker browser repair is deployed, but write gates were last independently witnessed FALSE/FALSE. Metadata remains 3 lifetime synthetic items / 3 envelopes / 0 unrevoked invites; the third synthetic item remains quarantined and non-null. Two lifetime slots remain subject to live recheck and a separate real-invite gate. No real invitation or accepted real note exists.
 
