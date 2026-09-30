@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.65 · 30 September 2026
+Please Start From Here · Reader change log · Edition 0.66 · 30 September 2026
+
+### D096
+
+30 September 2026 — Add alternate GitHub reading routes for the four Human Record examples.
+
+The YAC human introduction, plain-text AI start and Human Record window now link directly to all four source Markdown files on GitHub. These current repository routes offer another way to read when the custom domain or a client's link extraction fails; they are not frozen copies.
+
+This publishes the reviewed PR740 fallback. THR contact verification and domain recovery are separate from this navigation change. No THR record, submission endpoint, invitation, Worker or write gate changes. Site Preview advances to 0.8.53.
 
 ### D095
 
