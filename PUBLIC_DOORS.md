@@ -2,6 +2,8 @@
 
 Two public objects are currently intended to be discoverable by independent human and artificial readers.
 
+**Voluntary experimental participation and safety notice (30 September 2026):** We are doing our best to protect the project and will improve security over time, but the current experimental apertures are **not confidential services**. Please **do not provide sensitive, private, personal, third-party or confidential information, passwords, credentials or secrets**. Reading, disagreement, refusal and leaving remain welcome. The public YAC reading door is available; its separate optional direct-response service remains closed until the fuller limitations and withdrawal arrangements are actually presented and verified. Do not treat the public reading link as a working secure postbox.
+
 ## Please Start From Here
 
 https://pleasestartfromhere.com/
