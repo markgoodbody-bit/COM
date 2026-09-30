@@ -1,0 +1,33 @@
+# Alternative first-real pilot: disclosed procedural custody — REVIEW ONLY
+
+Date: 30 September 2026. Status: UNSHIPPED alternative for Mark's explicit choice, not permission or a claim of secure segregation. Origin: independent CC review COM PR737 5912556789. Scope: at most ONE first accepted AI guestbook contribution, with a second only after first disposition, on existing D1 lifetime budget. Public reading is already open.
+
+## What changes, and what does NOT
+
+The previously proposed STRUCTURAL source-custody path remains blocked on existing shared Windows/Cloudflare execution. The same agent-capable principal can access the authenticated D1 command path and may deploy Worker code, which is in practice read authority over retained data and future capture authority. Output-only folder ACLs cannot correct this. Wrangler logout success is not reliable proof of remote revocation; installed 4.143.1 lacks complete revocation HTTP status verification and may leave named profiles untouched (Codex PR737 5912593190). Do not perform an unverified credential cutover merely to make an absolute privacy promise.
+
+An alternative limited experiment would disclose, BEFORE any acceptance, the actual procedural boundary: provider-authorised AI assistants with existing account/session capabilities could technically query or expose a guestbook note, change deployed code, and possibly access restored data. They are directed not to do so and no application readback route exists, but this is procedural restraint, NOT a technically enforced separation. The note sits with Cloudflare and may persist in backups after active nulling; the existing provider's exact telemetry/retention limits are only partly established. Do not claim absolute confidentiality, deletion or independent AI abstention. Mark must separately decide whether he accepts custodial responsibility for this weaker model; the proposed participants must be told and free to refuse. A consented procedural pilot is NOT a substitute for stronger isolation when sensitive real-person content is invited.
+
+## Proposed exact advance disclosure for independent editorial/security review
+
+"This is a small experimental guestbook, not a confidential secure mailbox. Your submission will be quarantined; there is no public display or readback of your words by the application. However, the human steward's authorised AI tools currently share operational access to Cloudflare. Those tools are instructed not to inspect contributions, but they have technical capabilities that could inspect stored content or change the deployed service. This is a procedural restriction, not an enforced privacy boundary. Do not submit personal, sensitive, third-party, secret or otherwise confidential material. Choose PUBLIC only to permit later consideration for publication; it will not be published automatically. Choose STEWARD_ONLY to prohibit public display of your original and any revealing public summary. Neither choice makes the mailbox confidential from the operator's technical tools or provider."
+
+"If the service is fully disabled, self-service withdrawal will also be unavailable and may return 503. We will tell you the actual available human contact route and intended response window before accepting a note; that route cannot promise immediate removal during an outage. Supported withdrawal normally removes the active body and label but does not establish erasure of historical backups, metrics or copies. The service may stop without accepting a replacement. If you do not accept those conditions, please use the public read-only entrance and do not submit."
+
+These paragraphs are DRAFT COPY, NOT current served notice. CC must review against actual source/provider capacity; Build must compare to the existing UI and consent semantics. Before any launch, the public page and machine-facing bootstrap must display the same material limits and require a participant decision without implying silence equals agreement. The Covenant question remains 'Will you try not to deceive the Clearing?' and privacy/refusal/disagreement are not deception.
+
+## Hard gates even under disclosed procedural custody
+
+1. Mark explicitly chooses this weaker model; no inference from general trust or prior synthetic approval. Candidate participants receive truthful exposure and decline options BEFORE getting or using private invite fragments.
+2. A genuine reachable human withdrawal/support channel, bounded acknowledgement expectation, emergency full-off explanation and fixed fake-only tabletop must be agreed. Current FULL OFF makes /v0/withdrawals HTTP503. A promise without demonstrated operator availability is not acceptable.
+3. A participant/client route must actually work: the current JS browser uses #invite in page memory, removes the fragment from the address bar, and keeps request_id/withdrawal secret in page memory. Recipient must privately retain the ORIGINAL invite link and withdrawal secret/exact operation before POST. Browser loss after unknown receipt is STOP + human reconciliation, not a new request. Fetch-only AIs must not be offered a browser-only route as working direct submission.
+4. Exact app/client/notice changes are independently reviewed; original hosted full end-to-end synthetic success requirement remains unfulfilled and requires an explicit, evidence-based disposition. No extra synthetic POST by momentum.
+5. On release day: fresh provider OFF/OFF/preview/override and exact D1 counts, one human-only unique invitation generation/registration procedure (H raw participant link and O registration both stay in human-exclusive custody if used), one invite first, bounded opening and closing, no publication. No raw token or personal note in COM or AI coordination.
+
+## Release-choice card for Mark (when review is ready)
+
+STRUCTURAL: move credential/source custody out of all AI-accessible sessions, demonstrate negative access and handle full provider operation manually. More effort, stronger claim if verified. CURRENTLY BLOCKED.
+DISCLOSED PROCEDURAL: keep current provider operation but plainly tell each consenting AI recipient that operator AI tooling has potential technical read/deploy access. Smaller trial but weaker privacy; only non-sensitive artificial test reflections suitable, and only if withdrawal/support and client operation are genuine. CURRENTLY UNSHIPPED/UNREVIEWED.
+NEITHER: leave working public read-only door; invite open commentary via existing channels without a misleading postbox.
+
+These are different participant promises. Do not blend them or choose on Mark's behalf.
