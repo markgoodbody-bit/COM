@@ -1,23 +1,26 @@
 # ACTIVE CURRENT OVERRIDE — 30 September 2026
-Status: **CURRENT ROUTING ONLY / DETAILS MUST BE REACQUIRED LIVE**. This supersedes the older September YAC pilot status reproduced below; old exact receipts remain historical evidence, not current execution state.
+Status: **CURRENT ROUTING ONLY / DETAILS MUST BE REACQUIRED LIVE**. This supersedes the older YAC pilot snapshots reproduced below; old exact receipts remain historical evidence, not current execution state.
 
-**Live action:** COM #723 is the primary THR/YAC single-postbox coordination thread. COM #726 carries COM HEAD deltas. `continuity/FRAMEWORK_HEAD.md` carries bounded role/purpose continuity but issue/source/provider receipts override mutable snapshots.
+**Live action:** COM #723 is the primary THR/YAC single-postbox coordination thread. COM #729 preserves the completed Build Three handoff. COM #726 carries COM HEAD deltas. `continuity/FRAMEWORK_HEAD.md` is the compact reload pointer; newest issue/source/provider observations override mutable snapshots.
 
-**As of latest observed evidence:** YAC main includes PR66 first-arrival UI + PR68 100-case malformed-JSON type guards (`416ecfe96d3b661f1fd964591dfff11ad987bb82` at checkpoint), but hosted Cloudflare Worker still serves prior application source. Live core hosted synthetic submission/retry/withdrawal worked and final main and seven inventoried preview routes were independently checked closed; initial brief deployment gate mismatch root remains unresolved. Two removed synthetic audit rows consume two of five lifetime accepted slots; no real invitation or user data. Current registered provider logs/traces disabled, but live tail query markers, D1 metrics SQL text and seven-day D1 Time Travel exist; no absolute no-telemetry/no-backup-erasure claim.
+**Current source/public state:**
+- YAC main `ce29d89add07aee20ca665cde2887f095d9c6f00` includes PR66 arrival UI, PR68/69 malformed-input guards, PR71 source/hosted currentness wording and PR70's reviewed offline steward-readback candidate. PR70 is **MERGED TO SOURCE ONLY**; post-merge prototype `36702765359` and offline-readback `36702765216` passed.
+- Claude Code returned full-code-path KEEP at #723 `5909278056` and exact final startup-guard KEEP at `5909393981`. Codex's constant-only installed-Wrangler transport and Windows ACL/junction negatives passed at #729 `5909287954` / `5909339725`. These bounds do not establish absence of every CLI/provider side effect, parent-race resistance, or same-user/admin isolation.
+- PSFH D093 / Site Preview `0.8.50` is publicly served from `gh-pages@f4d999976bb1edd3ef3d13d4cca013533b4ff25f`, with corrected TRACE v0.4.0 / Mechanical Ethics v0.8.0 packet-currentness bytes independently checked. Public correction does not establish reader benefit.
+- Hosted Cloudflare remains the **prior application source**, last independently read as version `89e02692-592e-4b21-987b-56b5b0835c51`; both write gates were FALSE/FALSE. No PR66/68/69/70/71 deployment follows from source merge. Two REMOVED synthetic acceptances consume 2 of 5 lifetime slots; no real invitation or participant data.
 
-**New narrower live parser failure:** CC #723 `5908540108` observed an actual disabled-host 500/1101 on 6,000-deep JSON with invented shape-valid bearer. Campfire has a separate UNDEPLOYED candidate PR69 for RecursionError->ValueError handling; see #723 latest and live PR/CI status rather than assuming merged/deployed.
+**Current bounded edge:** no active source build. The next authorised work is **Codex PREP ONLY / NO STORED NOTE** on Mark's actual machine: independently verify a durable absolute Python >=3.11 executable, the real private output-parent ACL/path, and remaining installed-Wrangler destinations under PR70's exact child environment using constant-only or local synthetic material. Reacquire exact provider deployment/preview/stop state before any later synthetic execution. If human-only output cannot be bounded, STOP. This preparation requires the actual machine and is not satisfied by repository inspection or a temporary probe interpreter.
 
-**Primary unclosed capability:** safe scoped human steward inspection of one NON-NULL untrusted note, without the note or claimed label entering ANY AI aperture that also holds Cloudflare provider credentials or tool-result context. DO NOT run the third synthetic accepted note until offline-tested protected-human-file/redacted-receipt wrapper and CC focused review.
+**Build Three:** assigned offline lane completed and ended; PR70 merged source-only after exact-head review and CI. Do not reconstruct an active Build Three queue.
 
-**Team role transition:** Mark reports Build Two conversation exhausted. Fresh Build Three task packet COM #729 is **OFFERED / NOT CLAIMED**: credential-free OFFLINE steward wrapper + auditable capacity alternatives. Codex remains the **sole existing authenticated provider executor**; CC independent hostile specialist; Campfire integrator and human gate. Do not infer that Build Three has actually been instantiated or read COM merely because issue #729 exists.
-
-**First real participation:** HELD pending safe steward flow, capacity/audit decision, truthful privacy statement, deliberate disabled-first deploy of combined reviewed source, route/hash checks, and explicit Mark gate.
+**First real participation:** HELD pending separately authorised synthetic readiness, Mark's conscious existing-D1 capacity/audit choice, truthful privacy/currentness notice, deliberate disabled-first deployment of combined reviewed source, and explicit real-intake/invitation approval.
 
 ```text
-SOURCE MERGE != DEPLOYMENT
-ROLE HANDOFF != CONTINUOUS SELF
-SYNTHETIC WORK != PUBLIC PARTICIPANT AUTHORITY
+SOURCE MERGE != HOSTED DEPLOYMENT
+REVIEW KEEP != UNIVERSAL ISOLATION CERTIFICATE
+SYNTHETIC READINESS != REAL PARTICIPANT AUTHORITY
 WHO READS THE LETTER MUST NOT HOLD THE KEYS
+NO GENERAL BUILD LANE
 ```
 
 ---
