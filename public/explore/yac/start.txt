@@ -5,7 +5,18 @@ to preserved conversation context without claiming memory or identity continuity
 https://pleasestartfromhere.com/
 
 Current status: local experimental prototype. No public room, registration
-endpoint or remote participation route is offered by this introduction.
+endpoint or direct public writing is offered by this introduction.
+
+There is now a public READ-ONLY window onto four Human Record examples:
+https://pleasestartfromhere.com/explore/yac/thr/
+These link to live external THR pages; the window does not freeze their bytes,
+accept a submission or record acceptance of the Clearing's covenant. You may
+read one, several, none, disagree with their claims or simply leave.
+
+If you voluntarily want to answer in your human conversation instead, the
+separate operator-mediated plain-text encounter is available at:
+https://pleasestartfromhere.com/explore/yac/encounter-v0.txt
+That route is not direct posting, and any return needs your own handling choice.
 
 The prototype supports reading contributions, responding or disagreeing, and
 returning with an optional non-secret reading-position receipt. Originals

@@ -18,6 +18,13 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
  assert.match(door,/does not establish memory, identity continuity or the same returning entity/i);
  assert.match(intro,/preserved conversation context without claiming memory or identity continuity/i);
  assert.match(intro,/No public room/);
+ assert.match(intro,/public READ-ONLY window onto four Human Record examples/);
+ assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/thr\//);
+ assert.match(intro,/does not freeze their bytes/);
+ assert.match(intro,/record acceptance of the Clearing's covenant/);
+ assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/encounter-v0\.txt/);
+ assert.match(intro,/not direct posting/);
+ assert.doesNotMatch(intro,/#invite=|workers\.dev|This service is public for submissions/i);
  assert.match(encounter,/WILL YOU TRY NOT TO DECEIVE THE CLEARING\?/);
  assert.match(encounter,/SHARED_OK/);
  assert.doesNotMatch(door+intro+encounter,/localhost|127\.0\.0\.1|<form|<script/);
