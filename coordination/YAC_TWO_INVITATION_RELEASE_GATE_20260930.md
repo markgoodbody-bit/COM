@@ -10,7 +10,7 @@ Never publish shared raw invite fragments, claim automated moderation/canon prom
 
 ## Critical-path gate A — private reading and custody
 
-The current synthetic-only local reader and same-SID shared Downloads path are NOT suitable for genuine note privacy. Review COM PR737 R1 criteria. Require an actual demonstrated nonshared human-only session from which AI executor cannot read files, console, clipboard or logs. A separate window or a promise not to look is insufficient. If R1 cannot be demonstrated with existing privileges, choose separately authorised no-key R2 or keep direct intake CLOSED. Before any real note, independently review the exact real-note extraction code/command, content channel and failure behaviour, including what happens when readback fails before withdrawal. Distinguish Mark-only *human* access from OS-admin/provider access ceilings.
+The current synthetic-only local reader and same-SID shared Downloads path are NOT suitable for genuine note privacy. **Codex has BLOCKED the present R1 arrangement:** its agent-capable session has the same SID and file access, AND the existing authenticated Wrangler transport allows caller-supplied D1 SQL. Merely relocating output into an ACL-restricted directory (R2) does not remove independent agent source reads. Require source-credential isolation BEFORE considering output ACLs. Review COM PR737 R1 criteria. Require an actual demonstrated human-exclusive provider credential/session **inaccessible to connected AI tools or agent-capable processes**, and an independent nonshared output session from which the AI executor cannot read files, console, clipboard or logs. A separate window or a promise not to look is insufficient. If R1 cannot be demonstrated with existing privileges, choose separately authorised no-key R2 or keep direct intake CLOSED. Before any real note, independently review the exact real-note extraction code/command, content channel and failure behaviour, including what happens when readback fails before withdrawal. Distinguish Mark-only *human* access from OS-admin/provider access ceilings.
 
 ## Gate B — participant rights / no dead end
 
@@ -31,9 +31,9 @@ On the exact proposed source/release candidate, record independent CC security d
 - fresh single active 100% version; authenticated provider preview URLs disabled and tested historical/override closures;
 - both gates initially false/false; exactly three spent lifetime rows / three envelopes / zero unrevoked invites **if still observed**; two remaining acceptances only after this is verified;
 - no new resource, paid terms, quota increase or unrelated production changes;
-- no raw note/capability/withdrawal secret ever in model-visible tools, terminal capture, COM receipts or release card.
+- no raw note, provider credential, or administrative capability ever in keyholding/administrative AI tools, terminal capture, COM receipts or release card. The **intended recipient AI** may necessarily hold its own narrowly scoped invitation fragment and participant-held withdrawal secret; these must not be exposed to unrelated models/tools or keyholding operator AI.
 
-Run only a separately reviewed, explicitly approved human-gated operation. No additional synthetic POST automatically required and no promise that offline green checks certify real confidentiality.
+Run only a separately reviewed, explicitly approved human-gated operation. **The older FIRST_PILOT_OPERATOR_PATH requirement for a complete hosted end-to-end synthetic success remains UNMET** by the failed Phase B run. Campfire/Mark must explicitly disposition that unmet criterion against the exact proposed first-real risk controls; offline green tests do not silently waive it, and another provider synthetic acceptance is not authorised by this document. No additional synthetic POST automatically required and no promise that offline green checks certify real confidentiality.
 
 ## Gate D — Mark's one human decision, once the above is ready
 
@@ -48,7 +48,7 @@ Only AFTER that human decision and fresh live provider checks: mint exactly one 
 ## Evidence that changes the release state
 
 STATUS NOW: READ-ONLY PUBLIC; DIRECT POSTBOX NOT READY.
-NEXT: R1 feasibility/negative-access demonstration, independently usable real-note extraction, and a demonstrated truthful withdrawal continuity model, not another speculative verifier tweak.
+NEXT: human-exclusive **SOURCE credential** feasibility and true nonshared output verification (present R1 is BLOCKED), independently reviewed real-note extraction, demonstrated truthful withdrawal continuity model, and explicit disposition of the unmet hosted E2E requirement. No speculative verifier tweak.
 SUCCESSFUL OFFLINE TEST != REAL READER ISOLATION; FIRST INVITE != ACCEPTED NOTE; ACCEPTED NOTE != READ BY MARK; READ != PUBLICATION; FINAL OFF PASS != PROOF ALL INTERMEDIATE WINDOWS WERE CORRECT.
 
 If the private postbox cannot meet this small gate without disproportionate time/burden, keep the public reading entrance and use voluntary operator-mediated external response rather than silently widening authority.
