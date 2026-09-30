@@ -206,10 +206,12 @@ test('root metadata names only the first-party canonical origin',()=>{
 
 test('current history and edition agree',async()=>{
  const m=JSON.parse(await readFile('out/manifest.json'));
- assert.equal(m.site_edition,'0.8.53');
+ assert.equal(m.site_edition,'0.8.54');
  assert.equal(m.updated,'2026-09-30');
  const md=await readFile('out/changes.md','utf8');
  const rendered=await readFile('out/changes.html','utf8');
+ assert.match(md,/### D097\s+30 September 2026/);
+ assert.match(rendered,/<h3 id="d097">D097<\/h3>/);
  assert.match(md,/### D096\s+30 September 2026/);
  assert.match(rendered,/<h3 id="d096">D096<\/h3>/);
  assert.match(md,/### D095\s+30 September 2026/);
