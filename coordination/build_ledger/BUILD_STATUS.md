@@ -1,3 +1,15 @@
+# CURRENT YAC RECOVERY OVERRIDE — 30 SEPTEMBER 2026
+
+SUPERSEDES PREP / TWO-ROW / SYNTHETIC-NOT-RUN snapshots below. Primary coordination COM #736; evidence COM #733 comments 5912095808, 5912241828, 5912289319. Public read-only THR available, direct writing CLOSED. YAC hosted source d1385981; operator PR73 exact16d89b55 DRAFT/unmerged. Test-only PR76 feb9456b2 targets PR73; not a fix/root-cause finding.
+
+Exactly ONE synthetic accepted, then STOP at second verify_gates(FALSE,TRUE), with immediate-closure, withdrawal-outcome and final-metadata uncertainties. Later authenticated independent full OFF PASS eb725ff6: single100%, previews disabled and 12 witnessed version/override probes closed. Last metadata: 3 lifetime items/3 envelopes/0 unrevoked invites, prior two removed/null, third fixed synthetic QUARANTINE with body+label non-NULL. Protected human-file readback NOT created; original process-local withdrawal capability unavailable. Codex retained local FALSE/TRUE config export around 13:14:50Z: evidence of intended exported settings, NOT proof of effective edge state or precise failure predicate. CAUSE UNKNOWN. CC independently KEEP for non-destructive HOLD; Build fake second-verify path reproduced but not root cause.
+
+Third row received 2026-09-30 13:14:02.900 UTC. Existing global cleanup.sql is strictly >7-day and REQUIRES AN OPERATOR RUN, not automatic. Earliest practical eligible whole-second time 2026-10-07 13:14:03 UTC. Do not run early, auto-run at eligibility, repurpose expiry as withdrawal, or assume active NULL removes provider backup. Before any later separately authorised cleanup: exact qualifying metadata/scope + SQL/source predicate + independent full OFF and previews/overrides currentness + CC check + Mark's consequential write decision. Three lifetime slots consumed, TWO remain subject to live state and a separate real-invite gate. Same-SID shared Downloads is NOT structural real-note privacy; real writing stays closed until reviewed Mark-only/nonshared or genuinely no-key reader route. No new synthetic acceptance, resource, gate-on sequence or PR73 merge by momentum.
+
+STOP != PASS; ELIGIBLE != EXECUTED; PUBLIC_READ != DIRECT_WRITE.
+
+---
+
 ## YET ANOTHER CLEARING — SOURCE/HOSTED CURRENTNESS — 30 SEPTEMBER 2026
 
 - YAC main is `ce29d89add07aee20ca665cde2887f095d9c6f00`: PR66/68/69/71 and reviewed PR70 are merged **SOURCE ONLY**. Post-merge prototype `36702765359` and offline-readback `36702765216` succeeded.
