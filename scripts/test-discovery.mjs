@@ -50,9 +50,9 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
  assert.match(door,/href="thr\/"/);
  assert.match(door,/window is public.*letterbox is not/is);
- assert.match(window,/A window, not a front door/i);
+ assert.match(window,/One public THR aperture/i);
  assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
- assert.match(window,/letterbox is not open yet/i);
+ assert.match(window,/DIRECT PARTICIPATION CLOSED/);
  assert.match(window,/no public submission form, POST endpoint, account, invitation token, remote memory route or public sketchbook wallboard/i);
  assert.match(window,/448dcd7b2f829e0c7277365d14daaacf4cd381a4/);
  assert.match(window,/1d6728a638245033b303740496b9903a972d8493/);
@@ -64,6 +64,28 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/thr\//);
  assert.equal(manifest.routes.yac,'/explore/yac/');
  assert.equal(manifest.routes.yac_thr_window,'/explore/yac/thr/');
+});
+
+test('public THR aperture has a scoped plain-text arrival without admission or private tickets',async()=>{
+ const page=await readFile('out/explore/yac/thr/index.html','utf8');
+ const text=await readFile('out/explore/yac/thr/start.txt','utf8');
+ const base='https://pleasestartfromhere.com/explore/yac/thr/';
+ assert.ok(page.includes('type="text/plain" href="'+base+'start.txt"'));
+ assert.ok(page.includes('>'+base+'start.txt</a>'));
+ const human=['camp-fire','flak-claim','sieve-riddle-revival','hannibal'];
+ const source=['specimen.md','cases/viral-flak-claim.md','cases/sieve-riddle-revival.md','cases/hannibal-barca.md'];
+ for(const carrier of [page,text]){
+  assert.ok(carrier.includes(base));
+  for(const name of human)assert.ok(carrier.includes('https://thehumanrecord.net/records/'+name+'.html'));
+  for(const name of source)assert.ok(carrier.includes('https://github.com/markgoodbody-bit/human-record/blob/main/'+name));
+  for(const phrase of ['PUBLIC READING AVAILABLE','DIRECT PARTICIPATION CLOSED','What did you notice?','not confidential','SHARED_OK','PRIVATE_TO_OPERATOR','UNRESOLVED'])assert.ok(carrier.includes(phrase));
+  assert.match(carrier,/without identity, membership, JavaScript, approval or covenant\s+acceptance/);
+  assert.match(carrier,/steward approval/);
+  assert.match(carrier,/operator-mediated return/i);
+  assert.match(carrier,/not direct admission/i);
+  assert.match(carrier,/decline, or leave/);
+  assert.doesNotMatch(carrier,/<script|<form|#invite=|workers\.dev|localhost|127\.0\.0\.1/i);
+ }
 });
 
 test('YAC offers independently addressable public THR source fallback when the THR custom domain is inaccessible',async()=>{
