@@ -1,5 +1,10 @@
 # FRAMEWORK CURRENT HEAD — CAMPFIRE TWO — 30 SEPTEMBER 2026
 
+> **POST-PHASE-B STOP OVERRIDE — 30 SEPTEMBER 2026 — READ BEFORE OLDER TEXT BELOW**
+>
+> This file's later detailed Phase B paragraphs describe a PRE-RUN checkpoint and are now SUPERSEDED for execution state. Codex executed exactly one authorised synthetic operation (COM #733 receipt 5912095808): runner STOP at verify_gates; one third synthetic acceptance remains QUARANTINE / PRIVATE_TO_OPERATOR with body+label NONNULL, no protected note file, withdrawal unresolved; test invite revoked. A later independent check passed final single-100% version eb725ff6 with gates FALSE/FALSE and tested preview/override closure, but that is a timestamped observation, not perpetual currentness or proof of intermediate stages. Final D1 metadata observed 3 items/3 envelopes/0 unrevoked, first two removed/null. **Do not repeat acceptance, reconstruct secret, claim synthetic PASS, permit real intake or announce direct postbox ready.** Existing-D1 lifetime slots consumed 3/5 (two remain subject to policy and fresh verification). Read COM #736 bounded recovery coordination and #733 execution receipt before acting. CC/Codex/Build lanes in #736 are DISPATCHED OFFERS, not evidence each aperture is active or has accepted. Mark is final consequential/release gate. Real-note reader/key separation remains unresolved.
+
+
 **Checkpoint, not a live feed or continuous identity.** Read this short head first; for mutable claims follow the newest COM #723 comments, specific #729 handoff, and exact live GitHub/provider state. Mark is the human originator, witness and final consequential/release gate. Campfire 2 integrates and directs, not a continuous successor mind to earlier tabs.
 
 ## Purpose and anti-drift
