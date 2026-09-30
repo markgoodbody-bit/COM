@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.66 · 30 September 2026
+Please Start From Here · Reader change log · Edition 0.67 · 30 September 2026
+
+### D097
+
+30 September 2026 — Name the public THR aperture and add its scoped plain-text arrival.
+
+The existing THR address is the same for every visitor. Its arrival page now distinguishes public reading from closed direct participation, keeps all four record and source-fallback links, and offers a plain-text sibling. An optional response through an existing human conversation is labelled operator-mediated, not direct admission.
+
+This publishes reviewed PR744. No invitation is issued by visiting; no direct-write gate, provider resource or THR record changes. Site Preview advances to 0.8.54.
 
 ### D096
 
