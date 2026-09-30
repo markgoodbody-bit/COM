@@ -1,6 +1,6 @@
 # CURRENT FIRST-REAL THR CELL SOURCE READINESS — 30 SEPTEMBER 2026
 
-- **Public approach PROVEN:** PSFH D097 serves the fixed THR aperture and scoped text carrier; publisher `36765652213 / SUCCESS`, public `gh-pages@cc0f9ba…`.
+- **Public approach PROVEN:** PSFH D097 serves the fixed THR aperture and scoped text carrier; publisher `36765652213 / SUCCESS`, public `gh-pages@cc0f9baedbc2104532c63503c466813a256c5c65`.
 - **Direct writing CLOSED:** existing Worker gates last witnessed FALSE/FALSE; 3 synthetic items / 3 envelopes / 0 unrevoked invites; no real invite or note. Two lifetime slots remain, subject to live verification and Mark's gate.
 - **PR81 SOURCE-READY / DRAFT:** head `358d17d5746a28f04aee8fdf4de325f9b9976ff5`; exact CI green. Agreed UTF-8 HTML preregistration: 15,646 bytes, `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`. Not served.
 - **PR84 SOURCE-CANDIDATE / DRAFT:** head `ce77420ad09dde2f1157ac249548a0d149abd2a8`; prototype `36776758956` and offline-readback `36776758976` succeeded. Separate one-item real-note reader; agent-facing success receipt only `status,item_id`; same-SID handling is procedural, not structural isolation. Independent hostile review is outstanding.
