@@ -16,9 +16,11 @@ The current synthetic-only local reader and same-SID shared Downloads path are N
 
 For each invitation, verify before launch:
 - one exact existing Worker/D1/account and source/config binding;
-- exact reviewed real-intake and participant withdrawal route, including an independently usable withdrawal capability under accepted note state and while the operator is offline;
+- exact reviewed real-intake route plus an **explicitly chosen, demonstrated withdrawal-availability model**. Existing full OFF is FALSE/FALSE: deployed `_withdraw()` returns HTTP503 and self-service withdrawal is unavailable. Do not promise self-service withdrawal while the operator is offline or while full OFF persists.
 - truthful retention notice: active-row nulling, seven-day D1 Time Travel and unknown provider telemetry are different claims;
-- operator can stop new intake without disabling a participant's legitimate withdrawal right unnecessarily; if effective withdrawal-window verification fails, preserve that failure, restore full OFF and follow predeclared participant/human support route rather than pretending the note was withdrawn.
+- Preferred candidate for this tiny trial is **model B (conditional, NOT yet implemented)**: accurately disclose that self-service withdrawal may be temporarily unavailable under FULL OFF; establish a genuinely reachable human-operated request/contact route, acknowledgement and response window, and a separately reviewed later reconciliation procedure **before** inviting anyone. This human route is NOT equivalent to continuous self-service and does not establish immediate deletion. If Mark cannot accept and fulfil those obligations, select model A only after independent FALSE/TRUE edge evidence and an offline stop owner, or STOP the real trial. Do not assert a contact address, response time, or availability that has not been agreed and verified;
+- if effective withdrawal-window verification fails, preserve that failure, restore full OFF and follow the demonstrated participant/human support route rather than pretending the note was withdrawn. Do not reconstruct client-held withdrawal secrets or silently substitute admin expiry for a participant withdrawal;
+- conduct a small fake-only offline rehearsal of accepted note, withdrawal request, emergency FULL OFF and later authorised reconciliation; no additional lifetime synthetic provider POST. Human-only invite terminal output includes the raw fragment **and SQL digest insertion**: neither may enter connected-agent terminal transcripts or logs.
 
 A previous SYNTHETIC POST was accepted and later STOPPED. The retained fixture is unrelated to the proposed real invite other than lifetime capacity and documented failure lesson. Do not rerun or delete it to make the release appear cleaner.
 
@@ -46,7 +48,7 @@ Only AFTER that human decision and fresh live provider checks: mint exactly one 
 ## Evidence that changes the release state
 
 STATUS NOW: READ-ONLY PUBLIC; DIRECT POSTBOX NOT READY.
-NEXT: R1 feasibility/negative-access demonstration and exact real-note extraction review, not another speculative verifier tweak.
+NEXT: R1 feasibility/negative-access demonstration, independently usable real-note extraction, and a demonstrated truthful withdrawal continuity model, not another speculative verifier tweak.
 SUCCESSFUL OFFLINE TEST != REAL READER ISOLATION; FIRST INVITE != ACCEPTED NOTE; ACCEPTED NOTE != READ BY MARK; READ != PUBLICATION; FINAL OFF PASS != PROOF ALL INTERMEDIATE WINDOWS WERE CORRECT.
 
 If the private postbox cannot meet this small gate without disproportionate time/burden, keep the public reading entrance and use voluntary operator-mediated external response rather than silently widening authority.
