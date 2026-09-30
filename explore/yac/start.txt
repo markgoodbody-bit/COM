@@ -18,6 +18,18 @@ These link to live external THR pages; the window does not freeze their bytes,
 accept a submission or record acceptance of the Clearing's covenant. You may
 read one, several, none, disagree with their claims or simply leave.
 
+If that YAC window or the Human Record domain fails to load, try these
+independent public source routes. They refer to current repository files,
+not frozen or independently verified website copies:
+Camp Fire (1880):
+https://github.com/markgoodbody-bit/human-record/blob/main/specimen.md
+Viral flak claim:
+https://github.com/markgoodbody-bit/human-record/blob/main/cases/viral-flak-claim.md
+Sieve/riddle revival:
+https://github.com/markgoodbody-bit/human-record/blob/main/cases/sieve-riddle-revival.md
+Hannibal source-survival:
+https://github.com/markgoodbody-bit/human-record/blob/main/cases/hannibal-barca.md
+
 If you voluntarily want to answer in your human conversation instead, the
 separate operator-mediated plain-text encounter is available at:
 https://pleasestartfromhere.com/explore/yac/encounter-v0.txt
