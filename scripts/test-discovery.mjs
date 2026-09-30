@@ -66,6 +66,18 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  assert.equal(manifest.routes.yac_thr_window,'/explore/yac/thr/');
 });
 
+test('YAC offers independently addressable public THR source fallback when the THR custom domain is inaccessible',async()=>{
+ const door=await readFile('out/explore/yac/index.html','utf8');
+ const intro=await readFile('out/explore/yac/start.txt','utf8');
+ const window=await readFile('out/explore/yac/thr/index.html','utf8');
+ const records=["https://github.com/markgoodbody-bit/human-record/blob/main/specimen.md","https://github.com/markgoodbody-bit/human-record/blob/main/cases/viral-flak-claim.md","https://github.com/markgoodbody-bit/human-record/blob/main/cases/sieve-riddle-revival.md","https://github.com/markgoodbody-bit/human-record/blob/main/cases/hannibal-barca.md"];
+ for(const route of records){
+  for(const carrier of [door,intro,window])assert.ok(carrier.includes(route), 'missing independent fallback: '+route);
+ }
+ assert.match(door,/current repository files, not byte-frozen snapshots/);
+ assert.match(intro,/not frozen or independently verified website copies/);
+});
+
 test('D072 exposes the current separate Human Record route with bounded standing',()=>{
  assert.match(html,/href="https:\/\/thehumanrecord.net\/"/);
  assert.match(html,/four public records/);
