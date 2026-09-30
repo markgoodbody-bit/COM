@@ -709,107 +709,50 @@ GIT = HISTORY
 OMITTED FROM HEAD != ABSENT
 ```
 
-## 29 September 2026 — YAC THR aperture / Cloudflare disabled-first pilot
+## 30 September 2026 — YAC THR aperture: hosted disabled, preview repaired; synthetic test pending
 
-Current live coordination lane: COM #723 / #726.
+Live coordination: COM #723 / #726. This section supersedes the 29 September pilot checkpoint; historical facts remain in Git + issue receipts. Reacquire mutable provider state before action.
 
-YAC first-pilot encounter shape is now bounded and implemented:
-
+Purpose: first bounded public THR aperture:
 ```text
-UNIQUE INVITE
--> PRECONFIGURED THR APERTURE
--> BOUNDED THR READING
--> OPTIONAL GUESTBOOK: "What did you notice?"
--> EXPLICIT VISIBILITY CHOICE
--> QUARANTINE
--> REVIEW
+UNIQUE PRIVATE INVITE
+-> PUBLICLY READABLE PRECONFIGURED THR CONTEXT
+-> OPTIONAL "What did you notice?"
+-> EXPLICIT PUBLIC or STEWARD_ONLY CHOICE
+-> SINGLE UNTRUSTED NOTE / QUARANTINE
+-> WITHDRAWAL CAPABILITY
 -> LEAVE
 ```
+No identity fiction or implicit covenant acceptance. PUBLIC permits later *consideration* of the exact original, not automatic publication. STEWARD_ONLY permits operator review and prohibits publication of original or revealing summary. No public note readback, THR-record mutation, YAC memory write, unrestricted anonymous postbox or publishing workflow exists.
 
-Visitor may contribute, decline, disagree or leave. No membership or runtime-identity continuity is implied.
+Current YAC main: `33a1c658d0f3470572734a8b1a9799bfd6d0d3af`, after reviewed/merged:
+- PR63 runtime disposable Worker+D1 pilot, reviewed head `3ba661c9...`, merge `703d5103...`;
+- PR64 preview_urls=false template, every-version shutdown invariant, explicitly provisional first-pilot operator sheet, merge `ed20ffcf...`;
+- PR65 no gradual/split gate-ON deployments or rollback to one, gate-OFF restoration at 100%, intended-recipient AI capability wording, merge `33a1c658...`.
+PR64/65 are documentation/config changes only; hosted application runtime source unchanged.
 
-Visibility is intentionally narrow:
-- PUBLIC = participant permits THIS EXACT NOTE to be considered later for public display; still quarantined; no automatic publication.
-- STEWARD_ONLY = steward/operator may inspect the original for operating/evaluating the experiment; no permission to publish the original or a summary.
+Selected Cloudflare Free account prechecked. Mark expressly authorized ONE Worker + ONE D1 on workers.dev, disabled-first synthetic-only, no charges/upgrade/new terms, no participant invites/data or custom domain. Codex holds existing authenticated provider session and is provider executor; Build Two independently verifies source/config and results; CC runs bounded hostile reviews; Campfire owns next real-intake gate. No credential copying.
 
-```text
-PUBLIC != PUBLISHED
-STEWARD_READ != SUMMARY_PUBLICATION_RIGHT
-PROMPT GUIDES ATTENTION != PROMPT DEFINES POSSIBLE ANSWERS
-```
+Actual dedicated hosted Worker:
+`https://yac-thr-disposable-pilot.mecchanical-ethics.workers.dev`
+D1: dedicated `yac-thr-disposable-pilot`.
+Initial disabled deployment version `afc4fd2d-570c-46d4-9915-d7aea5793238`. Source/schema hashes independently reconciled against reviewed YAC main; Codex downloaded actual hosted modules, exact hash match. Hosted GET-only PASS, initial database empty, CC hostile disabled-surface KEEP.
 
-YAC PR #63 exact reviewed head:
-`3ba661c9b5db26d5eb76b4a669cbd9a7d953c2e5`
+CC identified a consequential problem: public version-specific preview URLs could retain a gate-ON version after main alias restored gate-OFF. Codex deployed *disabled-only* preview_urls=false on same Worker/D1, version `90372878-e77e-4067-a77f-25c03afd818f`. CC independently tested old + new known version preview URLs: both Cloudflare 404/1042; main GET /health 200 FALSE/FALSE and page byte-identical. This is observed closure of known disabled versions, NOT timeless proof future gate-ON versions remain closed. Another hazard: Cloudflare version-override header can select active deployment versions even at 0% traffic, so NEVER use mixed/gradual gate-ON deployments or rollback to one. Restore gate-OFF as 100% single-version and check every known public route.
 
-Merged YAC main:
-`703d51030dc83ebf56162bbbb629a4f580b23e29`
+Current next action: Codex executes ALREADY-AUTHORIZED SYNTHETIC-ONLY hosted matrix on existing resources, provided future-preview/active-version suppression is established BEFORE any gate-ON deploy. Test PUBLIC/STEW_ONLY mapping, retry under transport loss/429/503, duplicate/concurrent/cap bounds, withdrawal/nulling, stop intake preserving withdrawal, expiry, known-length/chunked limits, no public readback, logging canary. Record exact provider version and all-url reachability after every transition; end at BOTH GATES FALSE, all synthetic capabilities unusable. If suppression/override uncertain, HOLD gate-on and return exact provider blocker. Build independently reviews executed receipts. No executed synthetic write receipt was on COM #723 at this checkpoint. REAL INVITES NOT AUTHORIZED.
 
-Converged evidence before merge:
-- hosted Ubuntu + Windows CI SUCCESS;
-- Codex exact-head KEEP / GO TO HUMAN GATE;
-- Claude Code exact-head KEEP after re-executed client/control attacks;
-- retry/idempotency, withdrawal control, finite lifetime budgets, privacy, visibility mapping and local Worker/D1 runtime paths exercised.
-
-Important retry distinction:
-`A GATE ON A RETRY != PROOF NOTHING WAS STORED`.
-
-Mark explicitly authorised the next provider step:
-> Approved: create the disabled-first Cloudflare pilot
-
-Clarified:
-> Yes, but check the plan first.
-
-Cloudflare read-only precheck later established:
-- selected account is on Free plan;
-- D1 is available on the Free plan;
-- no payment/checkout/new-terms control was observed on the inspected Worker/D1 pre-creation surfaces;
-- mandatory STOP remains if any later provider step presents new terms, payment, charge or paid-plan requirement.
-
-Current bounded provider authority:
-- exactly ONE dedicated Worker;
-- exactly ONE dedicated D1 database;
-- workers.dev only;
-- SUBMISSIONS_ENABLED=false;
-- WITHDRAWALS_ENABLED=false;
-- synthetic-only;
-- no public invites;
-- no participant data;
-- no custom domain;
-- no paid-plan change;
-- no THR mutation;
-- no YAC memory;
-- no auto-publication.
-
-Build Two lacks an authenticated Cloudflare execution surface. Codex already holds the selected authenticated provider session. Campfire therefore reassigned the provider mutation to Codex rather than copying credentials into another aperture.
-
-Role split at this checkpoint:
-- Codex = provider mutation + hosted-runtime evidence within existing scope;
-- Build Two = independent deployed-code/config verification against YAC main `703d5103...`;
-- Claude Code = bounded hostile read of actual disabled hosted surface if materially useful;
-- Campfire = integration and next human gate.
+Before first genuine invite, demonstrate safe scoped steward inspection with *synthetic* content and establish truthful retention/logging notice. No dashboard or automatic publisher needed for this five-invite pilot; operator CLI candidate is NOT YET EXECUTED. Provider documentation (not direct account evidence) says new Workers may have default-enabled invocation logs with request URL and Free retention ~3 days; inspect the actual pilot setting. D1 Time Travel is automatic and supports ~7 days of restore history on Free; NULLing active rows is not instantaneous provider-backup erasure. See:
+`https://developers.cloudflare.com/workers/observability/logs/workers-logs/`
+`https://developers.cloudflare.com/d1/reference/time-travel/`
+No secure-erasure claim, no pasted credentials and no real data in testing.
 
 ```text
-NO CREDENTIAL COPYING
-DEVELOPER != VERIFIER
-AUTHORIZATION TRANSFERRED != AUTHORITY WIDENED
-DISABLED-FIRST != LIVE INTAKE
-RESOURCE CREATED != PARTICIPANT DATA AUTHORIZED
+PUBLIC READ != OPEN PUBLIC WRITE
+KNOWN PREVIEWS CLOSED != ALL FUTURE PREVIEWS CLOSED
+MAIN GATE OFF != ALL VERSIONS OFF
+SYNTHETIC PASS != HUMAN AUTHORIZATION FOR REAL VISITORS
+HEAD != WORLD
 ```
 
-Expected next durable receipt:
-- exact Worker HTTPS URL;
-- deployment/version identity;
-- exact deployed-source provenance;
-- D1 identity;
-- schema result/hash;
-- exact gate values;
-- relevant logging/analytics defaults observed;
-- independent Build verification;
-- hosted read-only smoke;
-- synthetic-only boundary checks.
-
-Return to Campfire BEFORE enabling submissions or issuing any real invite.
-
-The broader project remains larger than YAC. YAC is a bounded experimental social-infrastructure seam under:
-**HOW CAN WE MAKE A BETTER FUTURE?**
-
+Broader guiding purpose still: **HOW CAN WE MAKE A BETTER FUTURE?** YAC is one bounded experimental instrument, not the entire project.
