@@ -11,6 +11,7 @@ on:
       - 'public/manifest.json'
 
       - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
 
       - '.github/workflows/psfh-d093-publish.yml'
 
