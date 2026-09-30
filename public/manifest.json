@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.49",
+  "site_edition": "0.8.50",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -74,9 +74,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "13884021f114d9e0aba116c0abc1c913f987bf9c70cb4608a1e929347da1fa3b",
-    "change_history_input_html_sha256": "c75ee16b1804698fda6acc690e3b1e36c790f743182942d9121373945cea93c5",
-    "change_history_addendum_note": "D016 through D038 and D045-D092 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "fd783ccc59d21df9655f55d51f39f890b626c6577007f34b3d5c6b49f0c5277f",
+    "change_history_input_html_sha256": "42668b9d2ca2bc296d6b7c438566ca1bf79a4d7356bde8be601b790cfc3e0485",
+    "change_history_addendum_note": "D016 through D038 and D045-D093 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -209,6 +209,10 @@
         "thr_catalog_blob": "1d6728a638245033b303740496b9903a972d8493"
       },
       "scope": "Adds a static read-only YAC window onto the four current public Human Record records. Live THR routes are not byte-pinned by PSFH. No public submission endpoint, account, memory route, THR record creation, tracking or server behavior is added."
+    },
+    "packet_core_currentness_d093": {
+      "source_pr": "https://github.com/markgoodbody-bit/COM/pull/722",
+      "scope": "Update only the optional one-file project packet's current TRACE/ME release labels and preserved prior-version references. Current source aliases and historical Explore source basis unchanged; no TRACE/ME semantic, licensing, YAC/THR, tracking or intake change. Reader benefit unmeasured."
     }
   },
   "boundaries": [
