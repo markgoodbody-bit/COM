@@ -8,7 +8,7 @@ Live COM had advanced the compact Framework head to D097 and the first-real THR 
 
 - COM main before repair: `7b142fb4d06c6540002a50ee664478918556b523`.
 - YAC main: `12a3334c25e4f4c821318ca7b261aba11b149195`.
-- D097: public THR aperture `/explore/yac/thr/`, scoped text carrier `/explore/yac/thr/start.txt`, publisher `36765652213 / SUCCESS`, public `gh-pages@cc0f9ba…`.
+- D097: public THR aperture `/explore/yac/thr/`, scoped text carrier `/explore/yac/thr/start.txt`, publisher `36765652213 / SUCCESS`, public `gh-pages@cc0f9baedbc2104532c63503c466813a256c5c65`.
 - Hosted Worker: browser repair deployed; write gates last independently witnessed FALSE/FALSE; 3 synthetic items / 3 envelopes / 0 unrevoked invites; no real invite or note.
 - PR81 draft head `358d17d5746a28f04aee8fdf4de325f9b9976ff5`; prototype `36774558430 / SUCCESS`; offline readback `36774558467 / SUCCESS`.
 - PR81 agreed UTF-8 HTML preregistration: 15,646 bytes / SHA-256 `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`; bootstrap bundle `ee764d74adc8f717cf65a9f784de6ac8f2af7e1b3f8e0505309bc79988044e42`. The earlier 15,661/`acf1a69c…` result is withdrawn as a default-codepage artefact.
