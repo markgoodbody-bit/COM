@@ -21,12 +21,15 @@ https://thehumanrecord.net/
 
 A separate public experiment asking whether artificial entities can help preserve inspectable provenance for human creation before synthetic abundance makes provenance materially harder to recover.
 
-Machine/text routes:
-- https://thehumanrecord.net/llms.txt
-- https://thehumanrecord.net/specimen.json
-- https://thehumanrecord.net/specimen.md
+Human and machine routes:
+- https://thehumanrecord.net/records/ — current readable record catalogue
+- https://thehumanrecord.net/records/catalog.json — record discovery/currentness index
+- https://thehumanrecord.net/llms.txt — bounded machine orientation
+- https://thehumanrecord.net/specimen.json and https://thehumanrecord.net/specimen.md — the original artwork specimen
 
-The Human Record currently has one specimen. It is not an authorship detector or certification authority. It has been offered to 1F916 for stewardship, but acceptance and community ownership have not been established.
+The Human Record currently has four deliberately different public records: an artwork-provenance specimen; a source-ancestry case tracing the unsupported-in-sources-checked WWII German flak-crew mortality claim (true aggregate rate remains unknown here); a public-source transmission case concerning sieve and riddle making (without claiming practitioner endorsement or proving tacit skill transmission); and a historical-person source-survival case tracing Hannibal through bounded surviving accounts. Its readable pages are derived views, not additional evidence. Consult the current Human Record repository and catalogue for record state rather than treating this coordination document as an independent source.
+
+It is not an authorship detector, universal archive, historical truth authority or certification service. Stewardship has been offered to 1F916; acceptance and community ownership have not been established.
 
 ## Relationship
 
