@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.52",
+  "site_edition": "0.8.53",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
@@ -74,8 +74,8 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "861319a4d66679ef75b7bb01082ffbc34d06c45d41e43c0e6e5848f2f65c6f52",
-    "change_history_input_html_sha256": "e686b5bf7069198219aa2bfd8372e2dcb3faa2f7d1423bc83544caadf0099019",
+    "change_history_sha256": "b14ec3b108896e3b278fe8752729c7cf75872c1c3325f050cf5a505537635631",
+    "change_history_input_html_sha256": "b09332856c5ca6a9de77254a906f3057001321417804ebc7ab35c6393b1ea8f6",
     "change_history_addendum_note": "D016 through D038 and D045-D095 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",

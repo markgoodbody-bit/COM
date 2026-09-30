@@ -1,0 +1,199 @@
+name: PSFH D096 publish THR source fallback
+
+on:
+  push:
+    branches:
+      - codex/psfh-d096-source-fallback-20260930
+    paths:
+      - 'public/explore/yac/start.txt'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'public/manifest.json'
+
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+
+      - '.github/workflows/psfh-d096-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d096:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/psfh-d096-source-fallback-20260930
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+
+      - name: Build and check exact reviewed source
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+
+      - name: Verify reviewed D096 route and pinned source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          s=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          m=json.loads(Path('out/manifest.json').read_text(encoding='utf-8'))
+          assert m['site_edition']=='0.8.53' and m['updated']=='2026-09-30'
+          assert m['provenance']['change_history_sha256']==s('public/changes.md')
+          assert m['provenance']['change_history_input_html_sha256']==s('public/changes.html')
+          intro=Path('out/explore/yac/start.txt').read_text(encoding='utf-8')
+          assert 'https://pleasestartfromhere.com/explore/yac/thr/' in intro
+          assert 'https://pleasestartfromhere.com/explore/yac/encounter-v0.txt' in intro
+          assert 'does not freeze their bytes' in intro and 'not direct posting' in intro
+          assert '#invite=' not in intro and 'workers.dev' not in intro
+          assert '### D096' in Path('out/changes.md').read_text(encoding='utf-8')
+          assert 'id="d096"' in Path('out/changes.html').read_text(encoding='utf-8')
+          thr=Path('out/explore/yac/thr/index.html').read_text(encoding='utf-8')
+          assert 'The letterbox is not open yet' in thr
+          assert '<form' not in thr and '<script' not in thr
+          packet=Path('out/packet.md').read_text(encoding='utf-8')
+          assert 'released TRACE v0.4.0 formal baseline and current compact specification' in packet
+          assert 'released Mechanical Ethics v0.8.0 formal baseline and current reader' in packet
+          for route in ('explore/yac/index.html','explore/yac/start.txt','explore/yac/encounter-v0.txt'):
+              warning=Path('out',route).read_text(encoding='utf-8')
+              assert 'not confidential' in warning
+              assert 'do not send sensitive information' in warning
+          for route in ('explore/yac/index.html','explore/yac/start.txt','explore/yac/thr/index.html'):
+              content=Path('out',route).read_text(encoding='utf-8')
+              for target in ('specimen.md','cases/viral-flak-claim.md','cases/sieve-riddle-revival.md','cases/hannibal-barca.md'):
+                  assert 'https://github.com/markgoodbody-bit/human-record/blob/main/'+target in content
+          print('D096 four source links in all three carriers verified')
+          PY
+
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: d9b5862eb4ea82d4aea0627fd86093614cdb33e7
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+
+      - name: Stage exact built site over current Pages
+        run: |
+          test ! -e /tmp/psfh-d096-publish
+          git worktree add -B gh-pages /tmp/psfh-d096-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d096-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d096-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d096-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d096-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' --exclude='CNAME' --exclude='.nojekyll' \
+            --exclude='.gitattributes' --exclude='/README.md' \
+            out/ /tmp/psfh-d096-publish/
+          test "$(git -C /tmp/psfh-d096-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d096-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d096-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d096-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d096-publish/resources');"
+          git -C /tmp/psfh-d096-publish add -A
+          actual="$(git -C /tmp/psfh-d096-publish diff --cached --name-only | LC_ALL=C sort)"
+          expected="$(printf '%s\n' changes.html changes.md explore/yac/index.html explore/yac/thr/index.html explore/yac/start.txt index.html manifest.json read/me-book.html read/orientation.html read/start.html read/trace-spine.html | LC_ALL=C sort)"
+          if [ "$actual" != "$expected" ]; then
+            echo "Unexpected public file changes:" >&2
+            printf '%s\n' "$actual" >&2
+            exit 1
+          fi
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          work='/tmp/psfh-d096-publish'
+          for path in ('index.html','read/me-book.html','read/orientation.html','read/start.html','read/trace-spine.html'):
+              previous=subprocess.run(['git','-C',work,'show','HEAD:'+path],check=True,capture_output=True).stdout
+              proposed=(Path(work)/path).read_bytes()
+              assert previous.count(b'0.8.52')==1, 'unexpected previous edition marker in '+path
+              assert previous.replace(b'0.8.52',b'0.8.53')==proposed, 'non-edition HTML change in '+path
+          print('D096 five HTML carriers: edition label only')
+          PY
+          git -C /tmp/psfh-d096-publish status --short
+
+      - name: Commit and publish D096
+        run: |
+          git -C /tmp/psfh-d096-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d096-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d096-publish add -A
+          if git -C /tmp/psfh-d096-publish diff --cached --quiet; then
+            echo "No D096 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d096-publish commit -m "Publish PSFH D096 THR source fallback"
+          git -C /tmp/psfh-d096-publish push origin HEAD:gh-pages
+
+      - name: Verify D096 served routes
+        run: |
+          expected_root="$(sha256sum out/index.html | awk '{print $1}')"
+          expected_thr="$(sha256sum out/explore/yac/thr/index.html | awk '{print $1}')"
+          expected_yac="$(sha256sum out/explore/yac/index.html | awk '{print $1}')"
+          expected_fallback="$(sha256sum out/explore/yac/encounter-v0.txt | awk '{print $1}')"
+          expected_intro="$(sha256sum out/explore/yac/start.txt | awk '{print $1}')"
+          expected_packet="$(sha256sum out/packet.md | awk '{print $1}')"
+          expected_changes="$(sha256sum out/changes.html | awk '{print $1}')"
+          expected_manifest="$(sha256sum out/manifest.json | awk '{print $1}')"
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 "https://pleasestartfromhere.com/?d096=$i" -o /tmp/d096-root \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/explore/yac/thr/?d096=$i" -o /tmp/d096-thr \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/explore/yac/start.txt?d096=$i" -o /tmp/d096-intro \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/explore/yac/?d096=$i" -o /tmp/d096-yac \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/explore/yac/encounter-v0.txt?d096=$i" -o /tmp/d096-fallback \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/packet.md?d096=$i" -o /tmp/d096-packet \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/changes.html?d096=$i" -o /tmp/d096-changes \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/manifest.json?d096=$i" -o /tmp/d096-manifest; then
+              if [ "$(sha256sum /tmp/d096-root | awk '{print $1}')" = "$expected_root" ] \
+                && [ "$(sha256sum /tmp/d096-thr | awk '{print $1}')" = "$expected_thr" ] \
+                && [ "$(sha256sum /tmp/d096-intro | awk '{print $1}')" = "$expected_intro" ] \
+                && [ "$(sha256sum /tmp/d096-yac | awk '{print $1}')" = "$expected_yac" ] \
+                && [ "$(sha256sum /tmp/d096-fallback | awk '{print $1}')" = "$expected_fallback" ] \
+                && [ "$(sha256sum /tmp/d096-packet | awk '{print $1}')" = "$expected_packet" ] \
+                && [ "$(sha256sum /tmp/d096-changes | awk '{print $1}')" = "$expected_changes" ] \
+                && [ "$(sha256sum /tmp/d096-manifest | awk '{print $1}')" = "$expected_manifest" ]; then
+                ok=1
+                break
+              fi
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "D096 live bytes failed to converge" >&2
+            exit 1
+          }
+          grep -F 'public READ-ONLY window onto four Human Record examples' /tmp/d096-intro
+          grep -F 'https://pleasestartfromhere.com/explore/yac/thr/' /tmp/d096-intro
+          grep -F 'not direct posting' /tmp/d096-intro
+          ! grep -F '#invite=' /tmp/d096-intro
+          grep -F 'The letterbox is not open yet' /tmp/d096-thr
+          ! grep -E '<form|<script' /tmp/d096-thr
+          grep -F 'D096' /tmp/d096-changes
+          echo "D096 LIVE_INTRO_SHA256=$expected_intro"
+          echo "D096 LIVE_MANIFEST_SHA256=$expected_manifest"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# AI_HANDOFF_ROUTE != DIRECT_WRITE_PERMISSION
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
