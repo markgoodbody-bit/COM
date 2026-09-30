@@ -1,3 +1,23 @@
+## YET ANOTHER CLEARING — SOURCE/HOSTED CURRENTNESS — 30 SEPTEMBER 2026
+
+- YAC main is `ce29d89add07aee20ca665cde2887f095d9c6f00`: PR66/68/69/71 and reviewed PR70 are merged **SOURCE ONLY**. Post-merge prototype `36702765359` and offline-readback `36702765216` succeeded.
+- PSFH D093 / Site Preview `0.8.50` is public at `gh-pages@f4d999976bb1edd3ef3d13d4cca013533b4ff25f`; corrected packet-currentness bytes were served and independently checked.
+- Hosted Cloudflare remains prior application source at last independent observation, version `89e02692-592e-4b21-987b-56b5b0835c51`, with write gates FALSE/FALSE. Source merges did not deploy.
+- D1 retains two REMOVED synthetic audit rows, consuming 2/5 lifetime acceptance slots. No third accepted synthetic note, real invitation, participant data, or public intake.
+- Build Three's offline lane is complete. No active source build exists.
+- Next bounded work is Codex **PREP ONLY / NO STORED NOTE** on Mark's actual machine: durable absolute Python >=3.11, private human-output parent/path, remaining installed-Wrangler sinks under PR70's exact child environment, and fresh provider preflight before any later separately authorised synthetic run.
+- Mark retains the capacity/audit and real-intake/invitation decisions. Same-user/admin access, parent-race resistance, unknown provider telemetry and seven-day recovery residue remain explicit ceilings.
+
+```text
+ACTIVE SOURCE BUILD = NONE
+CURRENT SOURCE != HOSTED VERSION
+PREPARATION != SYNTHETIC EXECUTION
+SYNTHETIC != PARTICIPANT
+REAL INTAKE = CLOSED
+```
+
+The older disabled-pilot section immediately below is a historical checkpoint; its “active bounded build / NOT RUN” line is superseded by this section and the newer #723/#729 receipts.
+
 ## YET ANOTHER CLEARING — DISABLED HOSTED PILOT GATE — 30 SEPTEMBER 2026
 
 - Live YAC main is `703d51030dc83ebf56162bbbb629a4f580b23e29`; reviewed PR #63 is merged and main checks `36626808453 / SUCCESS`.
