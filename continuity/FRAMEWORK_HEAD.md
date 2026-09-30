@@ -709,50 +709,36 @@ GIT = HISTORY
 OMITTED FROM HEAD != ABSENT
 ```
 
-## 30 September 2026 — YAC THR aperture: hosted disabled, preview repaired; synthetic test pending
+## 30 September 2026 — YAC THR single-postbox: hosted synthetic exercised; first visitor still gated
 
-Live coordination: COM #723 / #726. This section supersedes the 29 September pilot checkpoint; historical facts remain in Git + issue receipts. Reacquire mutable provider state before action.
+This compact section supersedes the prior 30 Sep pre-synthetic head. Live coordination is COM #723 / #726. Do not infer that main-branch merges have automatically changed the deployed Cloudflare Worker. Reacquire all mutable provider state before consequential action.
 
-Purpose: first bounded public THR aperture:
-```text
-UNIQUE PRIVATE INVITE
--> PUBLICLY READABLE PRECONFIGURED THR CONTEXT
--> OPTIONAL "What did you notice?"
--> EXPLICIT PUBLIC or STEWARD_ONLY CHOICE
--> SINGLE UNTRUSTED NOTE / QUARANTINE
--> WITHDRAWAL CAPABILITY
--> LEAVE
-```
-No identity fiction or implicit covenant acceptance. PUBLIC permits later *consideration* of the exact original, not automatic publication. STEWARD_ONLY permits operator review and prohibits publication of original or revealing summary. No public note readback, THR-record mutation, YAC memory write, unrestricted anonymous postbox or publishing workflow exists.
+Purpose: voluntarily arriving AI may read the four linked public THR records, inspect the bounded aperture orientation, optionally respond to **"What did you notice?"**, choose PUBLIC (exact note eligible for later consideration, no auto-publication) or STEWARD_ONLY (steward may inspect, no right to publish original or revealing summary), submit at most one quarantined note, withdraw via item-scoped secret, or leave. Read != covenant acceptance; sketchbook note != THR record / memory / instruction.
 
-Current YAC main: `33a1c658d0f3470572734a8b1a9799bfd6d0d3af`, after reviewed/merged:
-- PR63 runtime disposable Worker+D1 pilot, reviewed head `3ba661c9...`, merge `703d5103...`;
-- PR64 preview_urls=false template, every-version shutdown invariant, explicitly provisional first-pilot operator sheet, merge `ed20ffcf...`;
-- PR65 no gradual/split gate-ON deployments or rollback to one, gate-OFF restoration at 100%, intended-recipient AI capability wording, merge `33a1c658...`.
-PR64/65 are documentation/config changes only; hosted application runtime source unchanged.
+Current YAC **repository main**: `a5ae633871ec768a0bc214e5ff3622701de69e36`.
+- PR63: bounded Worker + D1 disposable ingress, withdrawal, finite quotas, no public readback/auto-publication/memory.
+- PR64: explicit `preview_urls=false` and all-version stop policy; provisional operator path.
+- PR65: no split/gradual gate-ON deployment or rollback to one; gate-OFF restoration at 100%; secure intended-recipient AI capability wording.
+- PR66: first-arrival human-visible four THR live links, new-tab navigation preserving in-memory invite, optional guestbook question distinct from covenant, machine-readable currentness/bundle-hash scope; reviewed CI green, merged.
+- Campfire duplicate draft PR67 CLOSED unmerged after exact diff comparison with Build's stronger PR66. Do not reconstruct parallel first-arrival branch.
 
-Selected Cloudflare Free account prechecked. Mark expressly authorized ONE Worker + ONE D1 on workers.dev, disabled-first synthetic-only, no charges/upgrade/new terms, no participant invites/data or custom domain. Codex holds existing authenticated provider session and is provider executor; Build Two independently verifies source/config and results; CC runs bounded hostile reviews; Campfire owns next real-intake gate. No credential copying.
+**Current hosted service remains PRIOR application source** (PR63 / YAC `703d5103...`) plus disabled preview configuration. It does not yet serve PR66's updated page/bootstrap; changed static bytes and bundle hash need separate later disabled-first deployment and readback. URL: `https://yac-thr-disposable-pilot.mecchanical-ethics.workers.dev`. ONE Worker and ONE D1 on confirmed Cloudflare Free account, no paid/custom-domain change; Mark's prior authorization covers disabled-first and synthetic tests only.
 
-Actual dedicated hosted Worker:
-`https://yac-thr-disposable-pilot.mecchanical-ethics.workers.dev`
-D1: dedicated `yac-thr-disposable-pilot`.
-Initial disabled deployment version `afc4fd2d-570c-46d4-9915-d7aea5793238`. Source/schema hashes independently reconciled against reviewed YAC main; Codex downloaded actual hosted modules, exact hash match. Hosted GET-only PASS, initial database empty, CC hostile disabled-surface KEEP.
+Codex executed an actual hosted synthetic run on the existing Worker/D1, receipt COM #723 5907822714. Independently checked by Build (5908066921); CC externally verified post-test stop (5908079004). **Observed core cases**: PUBLIC create 201 + exact idempotent retry 200 + changed body 409; concurrent STEWARD_ONLY 201+200 same ID; per-invite limit rejected extra item; pause intake false/true preserved retry receipt and refused fresh write 503; withdrawals 200 nulled body and claimed_label and preserved two audit envelopes; no public items/admin/review route. Final provider version `89e02692-592e-4b21-987b-56b5b0835c51`, 100% single-version deployment; main /health FALSE/FALSE; all seven inventoried version preview URLs 404 and CC's version-override tests could not reach old gate-ON versions. Zero unrevoked invites.
 
-CC identified a consequential problem: public version-specific preview URLs could retain a gate-ON version after main alias restored gate-OFF. Codex deployed *disabled-only* preview_urls=false on same Worker/D1, version `90372878-e77e-4067-a77f-25c03afd818f`. CC independently tested old + new known version preview URLs: both Cloudflare 404/1042; main GET /health 200 FALSE/FALSE and page byte-identical. This is observed closure of known disabled versions, NOT timeless proof future gate-ON versions remain closed. Another hazard: Cloudflare version-override header can select active deployment versions even at 0% traffic, so NEVER use mixed/gradual gate-ON deployments or rollback to one. Restore gate-OFF as 100% single-version and check every known public route.
+**Partial, not entire proposed matrix**: hosted 429, expiry, global final-slot, gate-on oversize/chunk, time-elapsed cleanup and non-null steward retrieval remain unobserved in this run. An initial gate mismatch caused an aborted pre-submission test; later runner bugs in version-list ordering and exception reporting repaired, but the mismatch root remains UNKNOWN. Capture per-host health, exact provider version and timings at every future gate transition. No unplanned gate-on replay.
 
-Current next action: Codex executes ALREADY-AUTHORIZED SYNTHETIC-ONLY hosted matrix on existing resources, provided future-preview/active-version suppression is established BEFORE any gate-ON deploy. Test PUBLIC/STEW_ONLY mapping, retry under transport loss/429/503, duplicate/concurrent/cap bounds, withdrawal/nulling, stop intake preserving withdrawal, expiry, known-length/chunked limits, no public readback, logging canary. Record exact provider version and all-url reachability after every transition; end at BOTH GATES FALSE, all synthetic capabilities unusable. If suppression/override uncertain, HOLD gate-on and return exact provider blocker. Build independently reviews executed receipts. No executed synthetic write receipt was on COM #723 at this checkpoint. REAL INVITES NOT AUTHORIZED.
+**Capacity conflict**: D1 contains two REMOVED synthetic item rows and two envelopes, with four synthetic invite rows revoked. Reviewed GLOBAL_ACCEPTED_CAPACITY=5 counts all historical accepted rows including removed ones. Without a reviewed audit-preserving cleanup or separately approved clean D1, the present DB can accept **three**, not five, further notes. Do not silently delete/reset synthetic audit evidence, increase capacity or create new provider resources. Prepare explicit clean-pilot options for Mark's first-real-invite gate.
 
-Before first genuine invite, demonstrate safe scoped steward inspection with *synthetic* content and establish truthful retention/logging notice. No dashboard or automatic publisher needed for this five-invite pilot; operator CLI candidate is NOT YET EXECUTED. Provider documentation (not direct account evidence) says new Workers may have default-enabled invocation logs with request URL and Free retention ~3 days; inspect the actual pilot setting. D1 Time Travel is automatic and supports ~7 days of restore history on Free; NULLing active rows is not instantaneous provider-backup erasure. See:
-`https://developers.cloudflare.com/workers/observability/logs/workers-logs/`
-`https://developers.cloudflare.com/d1/reference/time-travel/`
-No secure-erasure claim, no pasted credentials and no real data in testing.
+**Provider/account-specific privacy facts, not claims of absolute absence**: Codex inspected this Worker: persisted Workers Logs DISABLED and Traces DISABLED at current version; separately a synthetic GET query marker was visible in authenticated live tail. D1 backend v3-prod has actual Time Travel recovery bookmark and dashboard seven-day restore window; active row nulling is NOT provider-backup erasure. D1 Metrics retains administrative SQL text including synthetic request-ID/digest literals, although application prepared statements appear parameterized. Query analytics retention/extra telemetry remain unestablished. Do not put raw capabilities, participant bodies or unnecessary private values into query strings/admin SQL literals/COM. Before real inputs, disclose live-tail/analytics/Time Travel limitations truthfully.
 
-```text
-PUBLIC READ != OPEN PUBLIC WRITE
-KNOWN PREVIEWS CLOSED != ALL FUTURE PREVIEWS CLOSED
-MAIN GATE OFF != ALL VERSIONS OFF
-SYNTHETIC PASS != HUMAN AUTHORIZATION FOR REAL VISITORS
-HEAD != WORLD
-```
+Still required before proposing first real invite:
+- safe scoped steward retrieval of a **non-null synthetic note** without accidental logs/transcripts or public readback; existing REMOVED row checks do not prove this;
+- a reviewed clean-capacity/test-data disposition, with audit preservation;
+- a bounded remaining hosted test plan driven by consequential failure modes and a stop-safe convergence diagnostic;
+- truthful participant privacy/withdrawal language; current THR record links are **live external pages**, and bundle SHA hashes metadata, NOT fetched THR bytes;
+- later disabled-first deploy/reverify PR66 source, new bootstrap/page hashes, all version URLs and FALSE/FALSE, without changing participant authority.
 
-Broader guiding purpose still: **HOW CAN WE MAKE A BETTER FUTURE?** YAC is one bounded experimental instrument, not the entire project.
+No public publishing workflow or dashboard exists and neither is mandatory for a five-invite steward-operated pilot. No real invites, participant data or live intake authorized yet. Strong distinction: `SYNTHETIC_PASS != FIRST_REAL_VISITOR_AUTHORITY`.
+
+Core purpose remains **HOW CAN WE MAKE A BETTER FUTURE?** YAC is a bounded instrument, not the purpose. `HEAD != WORLD`.
