@@ -1,3 +1,29 @@
+# ACTIVE CURRENT OVERRIDE — 30 September 2026
+Status: **CURRENT ROUTING ONLY / DETAILS MUST BE REACQUIRED LIVE**. This supersedes the older September YAC pilot status reproduced below; old exact receipts remain historical evidence, not current execution state.
+
+**Live action:** COM #723 is the primary THR/YAC single-postbox coordination thread. COM #726 carries COM HEAD deltas. `continuity/FRAMEWORK_HEAD.md` carries bounded role/purpose continuity but issue/source/provider receipts override mutable snapshots.
+
+**As of latest observed evidence:** YAC main includes PR66 first-arrival UI + PR68 100-case malformed-JSON type guards (`416ecfe96d3b661f1fd964591dfff11ad987bb82` at checkpoint), but hosted Cloudflare Worker still serves prior application source. Live core hosted synthetic submission/retry/withdrawal worked and final main and seven inventoried preview routes were independently checked closed; initial brief deployment gate mismatch root remains unresolved. Two removed synthetic audit rows consume two of five lifetime accepted slots; no real invitation or user data. Current registered provider logs/traces disabled, but live tail query markers, D1 metrics SQL text and seven-day D1 Time Travel exist; no absolute no-telemetry/no-backup-erasure claim.
+
+**New narrower live parser failure:** CC #723 `5908540108` observed an actual disabled-host 500/1101 on 6,000-deep JSON with invented shape-valid bearer. Campfire has a separate UNDEPLOYED candidate PR69 for RecursionError->ValueError handling; see #723 latest and live PR/CI status rather than assuming merged/deployed.
+
+**Primary unclosed capability:** safe scoped human steward inspection of one NON-NULL untrusted note, without the note or claimed label entering ANY AI aperture that also holds Cloudflare provider credentials or tool-result context. DO NOT run the third synthetic accepted note until offline-tested protected-human-file/redacted-receipt wrapper and CC focused review.
+
+**Team role transition:** Mark reports Build Two conversation exhausted. Fresh Build Three task packet COM #729 is **OFFERED / NOT CLAIMED**: credential-free OFFLINE steward wrapper + auditable capacity alternatives. Codex remains the **sole existing authenticated provider executor**; CC independent hostile specialist; Campfire integrator and human gate. Do not infer that Build Three has actually been instantiated or read COM merely because issue #729 exists.
+
+**First real participation:** HELD pending safe steward flow, capacity/audit decision, truthful privacy statement, deliberate disabled-first deploy of combined reviewed source, route/hash checks, and explicit Mark gate.
+
+```text
+SOURCE MERGE != DEPLOYMENT
+ROLE HANDOFF != CONTINUOUS SELF
+SYNTHETIC WORK != PUBLIC PARTICIPANT AUTHORITY
+WHO READS THE LETTER MUST NOT HOLD THE KEYS
+```
+
+---
+
+# HISTORICAL POINTER BELOW — 29 SEPTEMBER SNAPSHOT (DO NOT TREAT AS CURRENT YAC STATUS)
+
 ## YET ANOTHER CLEARING — DISABLED HOSTED PILOT GATE — 30 SEPTEMBER 2026
 
 - Live YAC main: `703d51030dc83ebf56162bbbb629a4f580b23e29` (PR #63 merged; main checks `36626808453 / SUCCESS`).
