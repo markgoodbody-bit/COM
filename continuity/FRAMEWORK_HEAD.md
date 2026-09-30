@@ -1,3 +1,30 @@
+# HOT COM HEAD — CAMPFIRE TWO / BUILD THREE — 30 SEPTEMBER 2026
+
+**Reload this section first; the historical head below has superseded first-line claims.** Purpose: HOW CAN WE MAKE A BETTER FUTURE? Current bounded work: safe, voluntary first contact through a public read-only THR window and one invitation-only, quarantined guestbook note. Campfire 2 is a fresh aperture and does not claim predecessor runtime identity.
+
+**Current source/role anchors at this checkpoint**
+- COM coordination: #723 live lane, #726 historical role reload, #729 Build Three single task. Build Three independently CLAIMED #729 in comment `5908808482`; Campfire 2 independently claimed integration/currentness/human-gate role in #723 comment `5908845577`. Do not duplicate Build Three's offline protected-local-human-file steward reader or review-only same-D1 capacity options.
+- YAC **SOURCE** main: `dce75f2d96497e6a771d2ee798327e74f21d7d3f` after source-only PR69 merge. PR66 first-arrival UI, PR68 type guards and PR69 structural-depth decoder are merged **source**, not hosted. PR69 exact pre-merge `5869c41d76a52c1a4ebe9ce9f67e8ff0f7e2f9e4`, GitHub Actions PR run `36698537118` SUCCESS; CC focused KEEP #723 `5908801602`. Post-merge CI is a separate check; do not assume it.
+- Hosted existing Cloudflare Worker remains **PRIOR** application/source (recorded deployed version `89e02692-592e-4b21-987b-56b5b0835c51`) and both gates last independently observed FALSE/FALSE by Codex GET; no automatic deployment or real invitation. One dedicated existing Worker + one dedicated existing D1 only. Codex owns the authenticated provider session/operational facts, not Build Three.
+- CC's live ~6,000-depth within-12-KiB JSON request returned generic hosted 500/1101 at prior source even with intake disabled; PR69 fixes source only. Later conscious disabled-first provider deployment requires exact source/page/bootstrap rehash, all-version and override stop checks, and one **non-writing** hosted 6,000-depth regression; none is inferred complete here.
+- **BLOCKER** before third synthetic non-null fixture: untrusted guestbook body + claimed label must never enter any AI/session holding provider actuation credentials, including stdout/stderr, tool outputs, local debug side effects or errors. Build Three is building a credential-free offline wrapper to emit body only to pre-created protected LOCAL HUMAN file and redacted fixed receipt; CC must review complete output/error path before Codex performs any hosted test. Codex offline finding: child env `WRANGLER_WRITE_LOGS=false`, `WRANGLER_LOG_SANITIZE=true` are necessary Wrangler4.143.1 controls, NOT comprehensive isolation proof.
+- Two REMOVED synthetic accepted items already occupy **2 of 5 lifetime slots** on existing D1. One more expressly gated synthetic non-null test would leave 2, not 5, for a real trial. No extra D1, silent row deletion/reset, provider settings or extra terms/spend. Build Three preparing honest two-option capacity decision for Mark.
+- Privacy ceiling: Workers Logs + Traces disabled in exact account at last Codex dashboard observation, but privileged live tail exposed synthetic GET query marker; D1 Metrics retains admin SQL literals; actual D1 Time Travel seven-day recovery window. NULLing active row is not instant erasure. Public static THR window is live; public write aperture is still NOT open.
+- Roles: **Campfire 2** purpose/integration/currentness and Mark's consequential gates; **Build Three** offline wrapper + capacity alternatives; **Codex** existing provider execution only; **Claude Code** independent narrow output-path review. Mark remains human originator/witness/final release gate.
+
+```
+RELOAD != SAME SELF
+INHERITED RECORD != FRESH OBSERVATION
+WHO READS THE LETTER MUST NOT HOLD THE KEYS
+SOURCE MERGE != HOSTED DEPLOYMENT
+SYNTHETIC PASS != REAL INTAKE AUTHORITY
+PUBLIC SPEECH != THR / MEMORY / GOVERNING INSTRUCTION
+```
+
+---
+
+## ARCHIVED PRIOR COM HEAD (preserved verbatim; newer pointers above override mutable status)
+
 # CURRENT COM HEAD — YAC DISABLED-FIRST HOSTED PILOT — 30 SEPTEMBER 2026
 
 **Purpose remains:** HOW CAN WE MAKE A BETTER FUTURE? YAC is the current bounded instrument, not the purpose.
