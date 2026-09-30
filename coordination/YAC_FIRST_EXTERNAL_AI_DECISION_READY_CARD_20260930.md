@@ -14,7 +14,7 @@ Public disabled-first browser page is now independently witnessed at the exact r
 ## What can be completed without Mark
 - Keep repaired disabled-first live browser and independent evidence frozen; no extra framework or repeated synthetic acceptance.
 - Prepare exact **served HTML + machine bootstrap notice parity** on a DRAFT branch, branching only after Mark selects A or B; do not write one ambiguous notice that blends models.
-- Finish PR78's source-only Prepare -> retain -> Send flow and Item ID retention wording; hosted source not changed by that work.
+- **Already complete:** PR78 was merged into YAC main and the resulting a311 browser source is served at the independently verified exact hash; Prepare -> retain -> Send and Item ID wording are present. Do not reopen this lane. JS parse and text presence are NOT proof the flow works end-to-end in a browser.
 - Produce exact client capability check for the *named first recipient*: JS browser+POST vs confidential first-party client vs fetch-only. Fetch-only => read-only.
 - Prepare a fake-only withdrawal/support tabletop and metadata-only secret reconciliation procedure; no lifetime D1 slot is consumed.
 - Preserve non-inspection rule for operator AIs as a required procedural fact if B is chosen; every future executor must acknowledge pinned rule before provider work.
