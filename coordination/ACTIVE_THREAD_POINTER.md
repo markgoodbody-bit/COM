@@ -1,12 +1,28 @@
-# CURRENT YAC RECOVERY OVERRIDE — 30 SEPTEMBER 2026
+# CURRENT FIRST-REAL THR CELL OVERRIDE — 30 SEPTEMBER 2026
 
-SUPERSEDES PREP / TWO-ROW / SYNTHETIC-NOT-RUN snapshots below. Primary coordination COM #736; evidence COM #733 comments 5912095808, 5912241828, 5912289319. Public read-only THR available, direct writing CLOSED. YAC hosted source d1385981; operator PR73 exact16d89b55 DRAFT/unmerged. Test-only PR76 feb9456b2 targets PR73; not a fix/root-cause finding.
+Status: **CURRENT ROUTING / SOURCE READINESS ONLY / NO ACTUATION AUTHORITY**. This supersedes the recovery snapshots below. Reacquire COM #723, live YAC PRs and provider state before any consequential action.
 
-Exactly ONE synthetic accepted, then STOP at second verify_gates(FALSE,TRUE), with immediate-closure, withdrawal-outcome and final-metadata uncertainties. Later authenticated independent full OFF PASS eb725ff6: single100%, previews disabled and 12 witnessed version/override probes closed. Last metadata: 3 lifetime items/3 envelopes/0 unrevoked invites, prior two removed/null, third fixed synthetic QUARANTINE with body+label non-NULL. Protected human-file readback NOT created; original process-local withdrawal capability unavailable. Codex retained local FALSE/TRUE config export around 13:14:50Z: evidence of intended exported settings, NOT proof of effective edge state or precise failure predicate. CAUSE UNKNOWN. CC independently KEEP for non-destructive HOLD; Build fake second-verify path reproduced but not root cause.
+**Public approach is proven:** PSFH D097 / Site Preview public THR aperture is live at `https://pleasestartfromhere.com/explore/yac/thr/`, with scoped text carrier `/explore/yac/thr/start.txt`. Publication source PR744 merged; release PR745 merged; public `gh-pages@cc0f9ba…`; publisher `36765652213 / SUCCESS`. The page offers four THR records and fallbacks. PUBLIC READ != DIRECT WRITE.
 
-Third row received 2026-09-30 13:14:02.900 UTC. Existing global cleanup.sql is strictly >7-day and REQUIRES AN OPERATOR RUN, not automatic. Earliest practical eligible whole-second time 2026-10-07 13:14:03 UTC. Do not run early, auto-run at eligibility, repurpose expiry as withdrawal, or assume active NULL removes provider backup. Before any later separately authorised cleanup: exact qualifying metadata/scope + SQL/source predicate + independent full OFF and previews/overrides currentness + CC check + Mark's consequential write decision. Three lifetime slots consumed, TWO remain subject to live state and a separate real-invite gate. Same-SID shared Downloads is NOT structural real-note privacy; real writing stays closed until reviewed Mark-only/nonshared or genuinely no-key reader route. No new synthetic acceptance, resource, gate-on sequence or PR73 merge by momentum.
+**Hosted write state remains held:** the existing dedicated Worker browser repair is deployed, but write gates were last independently witnessed FALSE/FALSE. Metadata remains 3 lifetime synthetic items / 3 envelopes / 0 unrevoked invites; the third synthetic item remains quarantined and non-null. Two lifetime slots remain subject to live recheck and a separate real-invite gate. No real invitation or accepted real note exists.
 
-STOP != PASS; ELIGIBLE != EXECUTED; PUBLIC_READ != DIRECT_WRITE.
+**Active bounded source-readiness lane:**
+- YAC main `12a3334c25e4f4c821318ca7b261aba11b149195`.
+- Draft PR81 `358d17d5746a28f04aee8fdf4de325f9b9976ff5`: participant-facing voluntary/non-confidential, credential, STEWARD_ONLY and withdrawal/local-copy disclosure candidate. Prototype `36774558430` and offline-readback `36774558467` succeeded. Canonical UTF-8 rendered HTML preregistration is **15,646 bytes / SHA-256 `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`**; bootstrap bundle `ee764d74adc8f717cf65a9f784de6ac8f2af7e1b3f8e0505309bc79988044e42`. The earlier 15,661/`acf1a69c…` value came from Windows default-codepage mis-decoding and is withdrawn.
+- Draft PR84 `ce77420ad09dde2f1157ac249548a0d149abd2a8`: separate PR70-derived one-item real-note reader, synthetic donor unchanged, success receipt narrowed to `{status,item_id}`, same-SID custody disclosed as procedural rather than structural isolation. Prototype `36776758956` and offline-readback `36776758976` succeeded. **Independent hostile review has not yet returned.**
+
+**Release remains HOLD:** before any POST, PR84 needs exact hostile review; Mark must fix a private support/response route and window, choose one compatible consenting nonsensitive recipient, personally demonstrate the reviewed reader/editor path, and explicitly approve one bounded real run after fresh disabled-first provider/version/preview/gate verification. PR81/84 source green does not authorize merge, deploy, invite or write.
+
+The latest Campfire rights/state/baby/bootstrap notes remain provisional challenge material. They expose no concrete conflict with the current participant design: the aperture already separates entity from access credential, public approach from guarded crossing, and procedural custody from structural isolation. No ME/TRACE/YAC implementation follows from those notes.
+
+```text
+PUBLIC APPROACH != ADMISSION
+SOURCE READY != HOSTED
+CI GREEN != HOSTILE REVIEW
+ACCESS CREDENTIAL != IDENTITY
+BOOTSTRAP != OBSERVATION
+ONE REAL NOTE = HUMAN-GATED / NOT YET AUTHORISED
+```
 
 ---
 
