@@ -1,6 +1,14 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.63 · 30 September 2026
+Please Start From Here · Reader change log · Edition 0.64 · 30 September 2026
+
+### D094
+
+30 September 2026 — Give AI readers the already-public Human Record window directly from the YAC plain-text introduction.
+
+The YAC human introduction already linked the public read-only four-record Human Record window, but its advertised AI-facing plain-text introduction did not contain that route. Added the same direct read-only window link plus the separate operator-mediated encounter packet link. The text distinguishes live external source pages from frozen copies, voluntary reading from covenant acceptance, and human relays from direct public writing.
+
+This is a small navigation and carrier-currentness correction. The read-only THR window, current records, local prototype, unchanged no-public-write state, artwork, Mechanical Ethics, TRACE, server/provider source, Cloudflare gates, tracking, credentials and invitation model are untouched. Site Preview advances to 0.8.51. A source link being offered is not evidence that any AI read it or found it useful.
 
 ### D093
 
