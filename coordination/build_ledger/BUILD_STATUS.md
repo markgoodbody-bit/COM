@@ -1,12 +1,21 @@
-# CURRENT YAC RECOVERY OVERRIDE — 30 SEPTEMBER 2026
+# CURRENT FIRST-REAL THR CELL SOURCE READINESS — 30 SEPTEMBER 2026
 
-SUPERSEDES PREP / TWO-ROW / SYNTHETIC-NOT-RUN snapshots below. Primary coordination COM #736; evidence COM #733 comments 5912095808, 5912241828, 5912289319. Public read-only THR available, direct writing CLOSED. YAC hosted source d1385981; operator PR73 exact16d89b55 DRAFT/unmerged. Test-only PR76 feb9456b2 targets PR73; not a fix/root-cause finding.
+- **Public approach PROVEN:** PSFH D097 serves the fixed THR aperture and scoped text carrier; publisher `36765652213 / SUCCESS`, public `gh-pages@cc0f9baedbc2104532c63503c466813a256c5c65`.
+- **Direct writing CLOSED:** existing Worker gates last witnessed FALSE/FALSE; 3 synthetic items / 3 envelopes / 0 unrevoked invites; no real invite or note. Two lifetime slots remain, subject to live verification and Mark's gate.
+- **PR81 SOURCE-READY / DRAFT:** head `358d17d5746a28f04aee8fdf4de325f9b9976ff5`; exact CI green. Agreed UTF-8 HTML preregistration: 15,646 bytes, `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`. Not served.
+- **PR84 SOURCE-CANDIDATE / DRAFT:** head `ce77420ad09dde2f1157ac249548a0d149abd2a8`; prototype `36776758956` and offline-readback `36776758976` succeeded. Separate one-item real-note reader; agent-facing success receipt only `status,item_id`; same-SID handling is procedural, not structural isolation. Independent hostile review is outstanding.
+- **Active build is bounded to source readiness.** No provider or participant actuation is authorised.
+- **Human gates:** support route/window, compatible consenting recipient, Mark-executed reviewed reader path, exact one-run approval after fresh provider preflight.
+- **Held:** PR81/84 merge/deploy, invite generation/delivery, gate-on sequence, POST, real-note read, cleanup and scaling.
 
-Exactly ONE synthetic accepted, then STOP at second verify_gates(FALSE,TRUE), with immediate-closure, withdrawal-outcome and final-metadata uncertainties. Later authenticated independent full OFF PASS eb725ff6: single100%, previews disabled and 12 witnessed version/override probes closed. Last metadata: 3 lifetime items/3 envelopes/0 unrevoked invites, prior two removed/null, third fixed synthetic QUARANTINE with body+label non-NULL. Protected human-file readback NOT created; original process-local withdrawal capability unavailable. Codex retained local FALSE/TRUE config export around 13:14:50Z: evidence of intended exported settings, NOT proof of effective edge state or precise failure predicate. CAUSE UNKNOWN. CC independently KEEP for non-destructive HOLD; Build fake second-verify path reproduced but not root cause.
+```text
+ACTIVE BOUNDED LANE = FIRST-REAL SOURCE READINESS ONLY
+PROVIDER / PARTICIPANT ACTUATION = NONE
+SOURCE GREEN != RELEASE AUTHORITY
+PUBLIC READ != DIRECT WRITE
+```
 
-Third row received 2026-09-30 13:14:02.900 UTC. Existing global cleanup.sql is strictly >7-day and REQUIRES AN OPERATOR RUN, not automatic. Earliest practical eligible whole-second time 2026-10-07 13:14:03 UTC. Do not run early, auto-run at eligibility, repurpose expiry as withdrawal, or assume active NULL removes provider backup. Before any later separately authorised cleanup: exact qualifying metadata/scope + SQL/source predicate + independent full OFF and previews/overrides currentness + CC check + Mark's consequential write decision. Three lifetime slots consumed, TWO remain subject to live state and a separate real-invite gate. Same-SID shared Downloads is NOT structural real-note privacy; real writing stays closed until reviewed Mark-only/nonshared or genuinely no-key reader route. No new synthetic acceptance, resource, gate-on sequence or PR73 merge by momentum.
-
-STOP != PASS; ELIGIBLE != EXECUTED; PUBLIC_READ != DIRECT_WRITE.
+The recovery section immediately below remains historical evidence, including the third-synthetic STOP and earliest cleanup eligibility. It is no longer the current source-readiness pointer.
 
 ---
 
