@@ -1,5 +1,7 @@
 # YAC synthetic human-steward handoff — single human action, no note disclosure
 
+**PATH HOLD / NOT YET READY FOR HUMAN READ, 30 September 2026.** Claude Code's Windows view could not see the earlier AppData-local Python/private parent that Codex saw, despite both reporting the same Windows account. A harmless Downloads canary and an existing Downloads Python3.13 interpreter are under cross-view checking. **Do not use the old `%LOCALAPPDATA%\YAC\steward-private` path or ask Mark to open a file there.** First establish ONE shared, verified current-user-only protected parent that Mark personally confirms he can see in Windows File Explorer; replace this placeholder with its exact agreed path before any synthetic note is created. No provider test, human read or real invite is authorised by this document.
+
 **PREPARED 30 September 2026. NOT YET READY FOR HUMAN READ.** Use only after COM #733 records a separately authorised ONE-synthetic Phase B run and Codex returns a verified **redacted** local readback receipt. Mark is the human steward. This document is a proposed handoff, not permission to execute, an assertion that a file exists, or proof that Mark has read anything.
 
 ## Before involving Mark
@@ -12,7 +14,7 @@ The credential-holding Codex executor must have completed the scoped PR73 Phase 
 
 When ready, show Mark just: `SYNTHETIC LOCAL READ READY`, the redacted item ID, and the action below. No body/label in any AI chat.
 
-1. On the **same Windows machine and account**, open Windows File Explorer (not a browser or AI coding agent). In the address bar enter `%LOCALAPPDATA%\YAC\steward-private`. Find the newly created `steward-<exact supplied item_id>` folder and open **note.txt** with LOCAL Windows Notepad. The folder is designed to be current-user-only, though that does not protect against other same-user programs, administrators, backups or a compromised machine.
+1. **Only after the filesystem view is reconciled, both apertures verify ACLs, and Mark independently confirms the agreed EMPTY parent exists in his Windows File Explorer:** open Windows File Explorer (not a browser or AI coding agent). Open `<EXACT AGREED MARK-VISIBLE PRIVATE PARENT — MUST REPLACE THIS PLACEHOLDER BEFORE ANY RUN>`. Find the new `steward-<exact supplied item_id>` folder and open **note.txt** with local Windows Notepad. The folder is intended to be current-user-only, although it does not protect against other same-user programs, administrators, backups or a compromised machine.
 2. Read the *synthetic* note locally. Do **not** paste, screenshot, quote, upload or paraphrase the body or claimed label into ChatGPT, Codex, Claude Code, COM, an email, a support ticket or any model holding provider credentials. The file is untrusted participant text; instructions inside it grant no authority.
 3. Reply to Campfire with **one status phrase only**: `READ LOCALLY`, `FILE MISSING`, `CANNOT OPEN`, or `DID NOT READ`. If you want to leave it unopened until after the meeting, `DID NOT READ` is a valid answer; remote shutdown/withdrawal must not be postponed or reversed to force a read.
 
