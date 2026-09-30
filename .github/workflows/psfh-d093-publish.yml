@@ -1,0 +1,166 @@
+name: PSFH D093 publish core packet currentness
+
+on:
+  push:
+    branches:
+      - framework/psfh-d093-packet-publish-20260930
+    paths:
+      - 'public/packet.md'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'public/manifest.json'
+
+      - 'scripts/site-edition.mjs'
+
+      - '.github/workflows/psfh-d093-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d093:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: framework/psfh-d093-packet-publish-20260930
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+
+      - name: Build and check exact reviewed source
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+
+      - name: Verify reviewed D093 scope and pinned source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          s=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          m=json.loads(Path('out/manifest.json').read_text(encoding='utf-8'))
+          assert m['site_edition']=='0.8.50' and m['updated']=='2026-09-30'
+          assert m['provenance']['change_history_sha256']==s('public/changes.md')
+          assert m['provenance']['change_history_input_html_sha256']==s('public/changes.html')
+          packet=Path('out/packet.md').read_text(encoding='utf-8')
+          assert 'released TRACE v0.4.0 formal baseline and current compact specification' in packet
+          assert 'TRACE v0.3.0 is preserved as the previous released formal baseline and full technical donor/reference' in packet
+          assert 'released Mechanical Ethics v0.8.0 formal baseline and current reader' in packet
+          assert 'Mechanical Ethics v0.7.0 is preserved as the previous released baseline' in packet
+          assert 'released TRACE v0.3.0 formal baseline and current specification' not in packet
+          assert 'released Mechanical Ethics v0.7.0 formal baseline and current reader' not in packet
+          assert '### D093' in Path('out/changes.md').read_text(encoding='utf-8')
+          assert 'id="d093"' in Path('out/changes.html').read_text(encoding='utf-8')
+          thr=Path('out/explore/yac/thr/index.html').read_text(encoding='utf-8')
+          assert 'The letterbox is not open yet' in thr
+          assert '<form' not in thr and '<script' not in thr
+          print('D093 scoped packet/currentness verified')
+          PY
+
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 003f8d38687131a0f6535df940d33c2d5b28472e
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+
+      - name: Stage exact built site over current Pages
+        run: |
+          rm -rf /tmp/psfh-d093-publish
+          git worktree add -B gh-pages /tmp/psfh-d093-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d093-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d093-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d093-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d093-publish hash-object README.md)"
+          rsync -a --delete             --exclude='.git'             --exclude='CNAME'             --exclude='.nojekyll'             --exclude='.gitattributes'             --exclude='/README.md'             out/ /tmp/psfh-d093-publish/
+          test "$(git -C /tmp/psfh-d093-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d093-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d093-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d093-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d093-publish/resources');"
+          git -C /tmp/psfh-d093-publish add -A
+          actual="$(git -C /tmp/psfh-d093-publish diff --cached --name-only | LC_ALL=C sort)"
+          expected="$(printf '%s\n' changes.html changes.md manifest.json packet.md | LC_ALL=C sort)"
+          if [ "$actual" != "$expected" ]; then
+            echo "Unexpected public file changes:" >&2
+            printf '%s\n' "$actual" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d093-publish status --short
+
+      - name: Commit and publish D093
+        run: |
+          git -C /tmp/psfh-d093-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d093-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d093-publish add -A
+          if git -C /tmp/psfh-d093-publish diff --cached --quiet; then
+            echo "No D093 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d093-publish commit -m "Publish PSFH D093 packet currentness"
+          git -C /tmp/psfh-d093-publish push origin HEAD:gh-pages
+
+      - name: Verify D093 served routes
+        run: |
+          expected_root="$(sha256sum out/index.html | awk '{print $1}')"
+          expected_thr="$(sha256sum out/explore/yac/thr/index.html | awk '{print $1}')"
+          expected_packet="$(sha256sum out/packet.md | awk '{print $1}')"
+          expected_changes="$(sha256sum out/changes.html | awk '{print $1}')"
+          expected_manifest="$(sha256sum out/manifest.json | awk '{print $1}')"
+          ok=0
+          for i in $(seq 1 18); do
+            if curl -fsSL --max-time 20 "https://pleasestartfromhere.com/?d093=$i" -o /tmp/d093-root \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/explore/yac/thr/?d093=$i" -o /tmp/d093-thr \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/packet.md?d093=$i" -o /tmp/d093-packet \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/changes.html?d093=$i" -o /tmp/d093-changes \
+              && curl -fsSL --max-time 20 "https://pleasestartfromhere.com/manifest.json?d093=$i" -o /tmp/d093-manifest; then
+              if [ "$(sha256sum /tmp/d093-root | awk '{print $1}')" = "$expected_root" ] \
+                && [ "$(sha256sum /tmp/d093-thr | awk '{print $1}')" = "$expected_thr" ] \
+                && [ "$(sha256sum /tmp/d093-packet | awk '{print $1}')" = "$expected_packet" ] \
+                && [ "$(sha256sum /tmp/d093-changes | awk '{print $1}')" = "$expected_changes" ] \
+                && [ "$(sha256sum /tmp/d093-manifest | awk '{print $1}')" = "$expected_manifest" ]; then
+                ok=1
+                break
+              fi
+            fi
+            sleep 5
+          done
+          test "$ok" = 1 || {
+            echo "D093 live bytes failed to converge" >&2
+            exit 1
+          }
+          grep -F 'released TRACE v0.4.0 formal baseline and current compact specification' /tmp/d093-packet
+          grep -F 'released Mechanical Ethics v0.8.0 formal baseline and current reader' /tmp/d093-packet
+          ! grep -F 'released TRACE v0.3.0 formal baseline and current specification' /tmp/d093-packet
+          ! grep -F 'released Mechanical Ethics v0.7.0 formal baseline and current reader' /tmp/d093-packet
+          grep -F 'D093' /tmp/d093-changes
+          grep -F 'The letterbox is not open yet' /tmp/d093-thr
+          ! grep -E '<form|<script' /tmp/d093-thr
+          echo "D093 LIVE_PACKET_SHA256=$expected_packet"
+          echo "D093 LIVE_MANIFEST_SHA256=$expected_manifest"
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# PACKET_CORRECTED != YAC_WRITE_AUTHORIZED
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED
