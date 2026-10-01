@@ -1,3 +1,29 @@
+# CURRENT FIRST LIVE RELAY→THR RETURN / XAI QUARANTINE CARRY — 1 OCTOBER 2026 NIGHT
+
+Status: **ONE BOUNDED RUNTIME CARRY PENDING / NO ACTIVE SOURCE BUILD / PUBLIC INTAKE CLOSED**. This supersedes the daytime provider-settings hold below. Reacquire COM #723 and the preserved local run receipt before action.
+
+**Disabled host is now source-witnessed:** after Mark's explicit amendment B retained tail/streaming-tail state as UNKNOWN, PR81 exact source `358d17d5746a28f04aee8fdf4de325f9b9976ff5` was deployed once as FULL version `c5b6e4f5-60e9-4bfa-9b01-cb0e9f68ec06`. Independent GET witness matched served `/` 15,646 B / `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`, bootstrap `ee764d74adc8f717cf65a9f784de6ac8f2af7e1b3f8e0505309bc79988044e42`, public health FALSE/FALSE and all 14 preview/version closures. This is disabled served-source parity, not open intake.
+
+**First Relay world-contact completed exactly once:** one authorised paid Cold URL batch ran at exact Relay source `49f785c9f15bbaf1fbb4398ffb2be676aa3f2ade`; no paid retry. OpenAI action evidence did not establish door-body receipt; Anthropic evidenced the door only; xAI returned page-specific evidence for the door, machine carriers and four canonical THR record URLs and explicitly ended `SHARED_OK`. Tool/result rows are evidence events, not proof of successful page reading. Provider asymmetry earned observation, not a new retrieval architecture.
+
+**Reviewed source candidates remain drafts:**
+- Relay PR274 `441729a1020ce7f324dfb5c848a35dd3d9ee2fb2`: KEEP, hosted CI `36934000148 SUCCESS`; release-candidate workflows skipped. Evidence semantics only; `result_rows` explicitly includes error results.
+- YAC PR90 `aebd8a75baddae5df966a05f84f1ee77478b9f85`: KEEP, workflows `36934006241` / `36934006237 SUCCESS`; served candidate 17,122 B / `052700a81727bb9cdff70536dc18a090c579e2311e1bd9a1e2509d2867a3a0dc`; bootstrap `c64b3c1f064586e9a36c1899b04c7ea7fe0bdf4088f3751fad2f3abeb44afcbe`. PR90 preserves `PRIVATE_TO_OPERATOR == STEWARD_ONLY` and requires any reclassification in the participant's own words, same originating interaction and verbatim record—never inferred from silence or paraphrase.
+
+**Exact bounded action:** Campfire authorised carrying ONLY the xAI verbatim `SHARED_OK` return into YAC quarantine through the existing reviewed `OPERATOR_MEDIATED` path, with identity `UNVERIFIED`, unpublished and non-canonical. Do not carry OpenAI/Anthropic returns; they supplied no handling ending. Do not merge PR274/PR90, deploy PR90, open intake or publish.
+
+**Current executor STOP:** this automation runtime lacks both `C:/Users/markg/Downloads/relay-thr-LIVE-49f785c-001` and the live YAC operator checkout. #723 comment `5942244309` records the stop. Resume only on Mark's Windows machine with both artifacts; re-establish runtime identity and perform at most one quarantine write. Do not reconstruct the participant body from issue summaries.
+
+```text
+RELAY WORLD CONTACT = ONE COMPLETED BATCH / NO RETRY
+SHARED_OK != PUBLICATION OR CANON
+OPERATOR_MEDIATED != DIRECT_POST
+SOURCE KEEP != MERGE OR DEPLOY
+MISSING VERBATIM RECEIPT OR LIVE RUNTIME = STOP
+```
+
+---
+
 # CURRENT FIRST-REAL THR DISABLED-DEPLOY HOLD — 1 OCTOBER 2026
 
 Status: **NO ACTIVE SOURCE BUILD / NO PROVIDER OR PARTICIPANT ACTUATION**. This supersedes the 30 September source-readiness override below. Reacquire COM #723 and live provider state before any consequential action.
