@@ -1,3 +1,23 @@
+# CURRENT FIRST-REAL THR PROVIDER-SETTINGS HOLD — 1 OCTOBER 2026
+
+- **ACTIVE SOURCE BUILD = NONE.** The source-readiness lane below is closed and superseded.
+- **PR84 SOURCE REVIEW CLOSED WITH CEILINGS:** draft head `b5a62239df24f1362894faffbf96944b8c181f46`; workflows `36843872439` and `36843872452` SUCCESS. Independent hostile review closed the pre-POST reader source gate. PR84 remains unmerged; no real note was read.
+- **PR81 STILL DRAFT / UNSERVED:** exact head `358d17d5746a28f04aee8fdf4de325f9b9976ff5`; preregistered HTML 15,646 bytes / `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`; bootstrap `ee764d74adc8f717cf65a9f784de6ac8f2af7e1b3f8e0505309bc79988044e42`.
+- **DISABLED DEPLOYMENT NOT RUN:** reviewed preflight stopped because provider observability/logpush/tail-consumer/tracing/logging state is UNKNOWN. Pinned Wrangler 4.143.1 export omission/null cannot establish disabled/empty state.
+- **PRESERVED TIMESTAMPED PRECHECK EVIDENCE:** local binding; D1 `3 items / 3 envelopes / 0 unrevoked invites`; active version `5d7de732-b8d1-4d1a-b98e-7721509805f2` single 100%; expected D1/rate/bindings; public health FALSE/FALSE; 13 preview routes 404 with overrides FALSE/FALSE. Reacquire before any later deploy.
+- **NEXT = HUMAN SETTINGS EVIDENCE:** narrow read-only provider-console observation of enabled/disabled/empty settings only, or an explicit human change to the all-predicates-PASS condition. No logs, participant data, credentials, broad screenshot or setting mutation is requested.
+- **LATER HUMAN GATES UNCHANGED:** support route/window, compatible consenting nonsensitive recipient, Mark-executed reviewed reader/editor path and explicit one-run approval.
+- **HELD:** deployment, gates, invite, POST, withdrawal, real-note read, cleanup, capacity reset and scaling.
+
+```text
+ACTIVE SOURCE BUILD = NONE
+PROVIDER SETTINGS = UNKNOWN / HUMAN EVIDENCE REQUIRED
+NO DEPLOYMENT OCCURRED
+REAL INTAKE = CLOSED
+```
+
+---
+
 # CURRENT FIRST-REAL THR CELL SOURCE READINESS — 30 SEPTEMBER 2026
 
 - **Public approach PROVEN:** PSFH D097 serves the fixed THR aperture and scoped text carrier; publisher `36765652213 / SUCCESS`, public `gh-pages@cc0f9baedbc2104532c63503c466813a256c5c65`.
