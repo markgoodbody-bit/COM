@@ -1,3 +1,25 @@
+# CURRENT FIRST-REAL THR DISABLED-DEPLOY HOLD — 1 OCTOBER 2026
+
+Status: **NO ACTIVE SOURCE BUILD / NO PROVIDER OR PARTICIPANT ACTUATION**. This supersedes the 30 September source-readiness override below. Reacquire COM #723 and live provider state before any consequential action.
+
+**Source gate closed with ceilings:** YAC PR84 remains a draft at exact head `b5a62239df24f1362894faffbf96944b8c181f46`. Its independent hostile review closed the pre-POST reader source gate, and exact-head workflows `36843872439` / `36843872452` passed. This is source evidence only: PR84 is unmerged and no real-note read occurred. PR81 remains draft/unserved at `358d17d5746a28f04aee8fdf4de325f9b9976ff5`, preregistered as 15,646 bytes / `a8e643ddd848e189cfa92fe1357894aff4efe35826e9292144f2cbf801066b05`, bootstrap `ee764d74adc8f717cf65a9f784de6ac8f2af7e1b3f8e0505309bc79988044e42`.
+
+**Disabled deployment STOPPED before write:** the reviewed preflight observed preserved source/config/tool binding; D1 counts `3/3/0`; active version `5d7de732-b8d1-4d1a-b98e-7721509805f2` at single 100%; expected existing D1/rate/bindings; public health FALSE/FALSE; and all 13 witnessed version previews 404 with overrides FALSE/FALSE. It did **not** establish provider observability, logpush, tail-consumer, tracing or logging state. Static inspection of pinned Wrangler 4.143.1 showed the reviewed export route cannot turn omitted/null fields into authoritative disabled/empty evidence. These settings remain UNKNOWN. The earlier transient metadata-transport failure was not reproduced; its historical cause remains UNKNOWN.
+
+**Exact next gate — human evidence, not build:** Mark must obtain a narrow read-only provider-console settings observation for observability/logpush/tail consumers/tracing/logging (enabled/disabled/empty only; no live logs, participant data, credentials or broad screenshots), or explicitly revise the all-predicates-PASS deployment condition. Do not rerun closed source review or preflight checks by momentum. If the settings gate later clears, provider state must still be freshly reacquired before the single disabled-first deployment.
+
+**Later human gates remain separate:** private support route and response window; one compatible consenting nonsensitive recipient; Mark's reviewed reader/editor procedure; explicit authorization for exactly one real run. No invite, gate transition, POST, withdrawal or real-note read follows from settings evidence alone.
+
+```text
+PR84 HOSTILE REVIEW CLOSED != MERGED OR EXECUTED
+OMITTED PROVIDER FIELD != DISABLED SETTING
+PREFLIGHT PARTIAL PASS != DEPLOYMENT AUTHORITY
+HUMAN SETTINGS EVIDENCE != PARTICIPANT AUTHORITY
+ACTIVE SOURCE BUILD = NONE
+```
+
+---
+
 # CURRENT FIRST-REAL THR CELL OVERRIDE — 30 SEPTEMBER 2026
 
 Status: **CURRENT ROUTING / SOURCE READINESS ONLY / NO ACTUATION AUTHORITY**. This supersedes the recovery snapshots below. Reacquire COM #723, live YAC PRs and provider state before any consequential action.
