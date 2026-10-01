@@ -17,6 +17,10 @@ HEAD != WORLD
 
 Do not reconstruct historical detail into current state by memory.
 
+## Optional role-selectable front door (DRAFT)
+
+If a new reader needs help choosing **which** continuity/task surface to inspect, start at [`continuity/COMHEAD.md`](continuity/COMHEAD.md), then choose a Framework, Campfire, BUILD or independent-collaborator reading profile. This is a voluntary discovery layer only: it does not replace COMS/HELLO, `COM_STATE.md`, current HEAD or live issue routing, and reading a profile does not assign a role or grant access.
+
 ## COMS routing — any aperture
 
 A cold aperture may run COMS read-only without joining.
