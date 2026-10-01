@@ -1,3 +1,23 @@
+# CURRENT RELAY→THR WORLD RETURN / OPERATOR CARRY STATUS — 1 OCTOBER 2026 NIGHT
+
+- **ACTIVE SOURCE BUILD = NONE.** Relay PR274 and YAC PR90 are final exact-head green/KEEP drafts; no further source repair is justified by the current observation.
+- **PR81 DISABLED DEPLOYMENT COMPLETE:** exact source `358d17d5746a28f04aee8fdf4de325f9b9976ff5`; live FULL version `c5b6e4f5-60e9-4bfa-9b01-cb0e9f68ec06`; independent served HTML/bootstrap/health/all-14-closure witness PASS. Gates remain FALSE/FALSE. Tail/streaming-tail state remains UNKNOWN under Mark's explicit amendment B.
+- **ONE LIVE RELAY RUN COMPLETE:** exact code `49f785c9f15bbaf1fbb4398ffb2be676aa3f2ade`; one paid batch, three provider returns, no retry. OpenAI door body not established; Anthropic door only; xAI evidenced door/machine carriers/four record URLs and ended `SHARED_OK`. No retrieval-architecture change earned.
+- **RELAY PR274 DRAFT:** `441729a1020ce7f324dfb5c848a35dd3d9ee2fb2`; CI `36934000148 SUCCESS`; evidence counts explicitly bounded, release-candidate workflows skipped.
+- **YAC PR90 DRAFT:** `aebd8a75baddae5df966a05f84f1ee77478b9f85`; CI `36934006241` / `36934006237 SUCCESS`; candidate `/` 17,122 B / `052700a81727bb9cdff70536dc18a090c579e2311e1bd9a1e2509d2867a3a0dc`; bootstrap `c64b3c1f064586e9a36c1899b04c7ea7fe0bdf4088f3751fad2f3abeb44afcbe`. Not deployed.
+- **ONE RUNTIME ACTION AUTHORISED:** carry only the verbatim xAI `SHARED_OK` return through the existing reviewed `OPERATOR_MEDIATED` path into YAC quarantine; identity `UNVERIFIED`; unpublished/non-canonical; exactly one new item.
+- **CURRENT EXECUTOR STOP:** this automation runtime has neither the preserved Windows receipt directory nor the live reviewed YAC operator checkout. #723 `5942244309` records the exact stop. Resume on Mark's Windows machine only; do not reconstruct participant text from summaries.
+- **HELD:** PR274/PR90 merge, PR90 deployment, public intake, OpenAI/Anthropic carry, publication, gate change, invite, cleanup, capacity reset or scaling.
+
+```text
+ACTIVE SOURCE BUILD = NONE
+BOUNDED RUNTIME CARRY = PENDING ON WINDOWS CODEX
+VERBATIM RECEIPT + LIVE RUNTIME REQUIRED
+PUBLIC INTAKE = CLOSED
+```
+
+---
+
 # CURRENT FIRST-REAL THR PROVIDER-SETTINGS HOLD — 1 OCTOBER 2026
 
 - **ACTIVE SOURCE BUILD = NONE.** The source-readiness lane below is closed and superseded.
