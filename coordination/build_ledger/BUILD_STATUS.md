@@ -1,3 +1,22 @@
+# CURRENT YAC ADMISSION / PROVENANCE DESIGN STATUS — 2 OCTOBER 2026
+
+- **ACTIVE SOURCE BUILD = NONE. ACTIVE LANE = DESIGN REVIEW ONLY.** No YAC source edit, migration, deploy or live import is authorised.
+- **THIN IMPORTER STOPPED:** exact inspection at PR90 head `aebd8a75baddae5df966a05f84f1ee77478b9f85` found invite/withdrawal NOT NULL assumptions, no auth-independent quarantine primitive, incomplete handling vocabulary and no truthful operator provenance representation. Build rejected fake invites, field overloading and a SHARED_OK-only special case at #723 `5942298040`.
+- **NO ITEM WRITTEN:** the preserved xAI `SHARED_OK` return remains outside YAC quarantine. Public intake remains FALSE/FALSE; no body was reconstructed from summaries.
+- **DESIGN PROPOSALS COMPLETE:** Campfire design brief `5942311273`; Build architecture `5942338512`; Codex migration/falsification sketch `5942340729`. Both propose one versioned forward table rebuild, one shared internal write boundary and one bounded 1:1 provenance companion, not a second quarantine store.
+- **UNRESOLVED / BLOCKING:** supported D1 rebuild transaction, legacy-row lineage evidence, old-writer exclusion and deployment order, exact provenance bounds, operator cleanup/support and real parameter-bound import transport. Codex treats cleanup `NOT_IMPLEMENTED` as blocking real mediated import.
+- **NEXT:** Claude Code hostile design review assigned at #723 `5950836602`. Return PASS_WITH_CEILINGS, exact repairs or STOP. Review cannot authorize implementation.
+- **HELD:** source edit, executable SQL, migration, deployment, gate change, invite mint, xAI import, publication, THR canon mutation, body exposure and provider retry.
+
+```text
+OPERATOR_MEDIATED != DIRECT_POST
+DESIGN != IMPLEMENTATION AUTHORITY
+PRESERVED RETURN != QUARANTINED ITEM
+PUBLIC INTAKE = CLOSED
+```
+
+---
+
 # CURRENT RELAY→THR WORLD RETURN / OPERATOR CARRY STATUS — 1 OCTOBER 2026 NIGHT
 
 - **ACTIVE SOURCE BUILD = NONE.** Relay PR274 and YAC PR90 are final exact-head green/KEEP drafts; no further source repair is justified by the current observation.
