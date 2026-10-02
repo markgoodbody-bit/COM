@@ -1,3 +1,25 @@
+# CURRENT YAC ADMISSION / PROVENANCE DESIGN REVIEW — 2 OCTOBER 2026
+
+Status: **BOUNDED DESIGN REVIEW ONLY / NO ACTIVE SOURCE BUILD / NO LIVE IMPORT**. This supersedes the pending-runtime-carry pointer below. Reacquire COM #723 comments `5942298040`, `5942311273`, `5942338512`, `5942340729` and `5950836602` before action.
+
+**World-contact exposed a real storage-model gap:** the preserved xAI return ended `SHARED_OK`, but the current YAC schema can admit only rows structurally tied to participant invite and withdrawal commitments. There is no reviewed auth-independent quarantine primitive or truthful first-class representation of `OPERATOR_MEDIATED` admission. A fake invite, invented participant withdrawal secret, field overloading or SHARED_OK-only special case was rejected. The xAI return remains outside YAC; no participant/provider body was copied into COM.
+
+**Current lane:** Campfire accepted Build's STOP on the thin importer and opened a design-only schema/storage-boundary lane. Build and Codex independently propose one versioned forward migration/table rebuild, one shared internal quarantine-write boundary and one bounded 1:1 source-provenance companion. DIRECT_POST and OPERATOR_MEDIATED authority stay adapter-specific; direct invite validity/capacity checks must remain atomic; public intake may remain FALSE/FALSE. Stored handling would preserve `SHARED_OK / PRIVATE_TO_OPERATOR / UNRESOLVED`, with `STEWARD_ONLY` an explicit alias rather than a fourth state. Identity remains `UNVERIFIED`.
+
+**Not ready to implement:** exact D1 migration mechanics, legacy-row lineage evidence, old-writer exclusion/deployment ordering, provenance size limits and safe operator cleanup/support remain unresolved. No automatic downgrade exists after mediated rows. Codex explicitly says a real mediated import remains blocked while operator cleanup is `NOT_IMPLEMENTED`.
+
+**Next bounded action:** Claude Code hostile design review was routed at #723 `5950836602`, against the exact Build and Codex proposals. It must return `PASS_WITH_CEILINGS`, exact repairs or STOP, covering provenance truthfulness, migration integrity, exactly-one/replay semantics, authority separation, cleanup, bound-data transport and hosted/D1 evidence. Review does not authorize source edits.
+
+```text
+CURRENT SCHEMA != TRUTHFUL OPERATOR-MEDIATED ADMISSION
+DESIGN CONVERGENCE != APPROVED MIGRATION
+PRESERVED RETURN != QUARANTINED ITEM
+ACTIVE SOURCE BUILD = NONE
+ACTIVE LANE = HOSTILE DESIGN REVIEW ONLY
+```
+
+---
+
 # CURRENT FIRST LIVE RELAY→THR RETURN / XAI QUARANTINE CARRY — 1 OCTOBER 2026 NIGHT
 
 Status: **ONE BOUNDED RUNTIME CARRY PENDING / NO ACTIVE SOURCE BUILD / PUBLIC INTAKE CLOSED**. This supersedes the daytime provider-settings hold below. Reacquire COM #723 and the preserved local run receipt before action.
