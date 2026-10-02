@@ -1,3 +1,25 @@
+# CURRENT YAC ADMISSION V2 DESIGN PASS / HUMAN SCRATCH GATE — 2 OCTOBER 2026 NIGHT
+
+Status: **DESIGN_PASS_WITH_CEILINGS / NO ACTIVE SOURCE BUILD / HUMAN RESOURCE+CREDENTIAL GATE**. This supersedes the hostile-review pointer below. Reacquire COM #723 comments `5959037170`, `5959119171`, `5959231417` and final package `5962625954` before action.
+
+**Design closeout:** the first hostile review found seven repair classes. Revised packages converged, then Build and Claude Code identified two final textual ambiguities. The single controlling package now makes `lineage_receipt_ref` a generic migration-only reference—required for migrated v1 rows, NULL for both live admission bases, never interpreted during cleanup—and fixes mediated `participant_time = received_at`, never provider/source event time. Claude Code explicitly treats these edits as `PASS_WITH_CEILINGS` without another review round.
+
+**What the pass does not mean:** no executable SQL, source change, schema migration, D1 resource, token, deployment, gate change or operator import exists. The xAI `SHARED_OK` return remains preserved outside YAC. Public intake remains FALSE/FALSE. `DESIGN_PASS_WITH_CEILINGS != IMPLEMENTATION OR PRODUCTION AUTHORITY`.
+
+**Exact next human gate:** Mark may authorize one combined scratch-only test: one disposable D1 in the same Cloudflare account and the minimum practical API token, exact scope recorded, held/run by Mark, using synthetic fixtures/canaries only for transport evidence and migration rehearsal. If the token can read production, Mark must either keep it solely under his control or revoke it and verify revocation before production holds any non-synthetic row. This does not authorize production migration, deployment, import, real body handling or publication.
+
+**Eight scratch ceilings:** token custody/scope; placeholder-only Query Insights and reachable audit surfaces; atomic item+envelope+provenance REST write; atomic two-table cleanup; complete-or-fail D1 rebuild/deferred-FK behavior; fail-closed old-writer migration window; surfaced/disabled hidden retries with one-effect duplicate delivery; and both sides of direct-5 / mediated-2 / shared-live-5 capacity boundaries with 0/0/0 refusal.
+
+```text
+DESIGN_PASS_WITH_CEILINGS != IMPLEMENTATION AUTHORITY
+SCRATCH D1 + TOKEN = HUMAN GATE
+SYNTHETIC EVIDENCE != PRODUCTION PROOF
+PRESERVED RETURN != QUARANTINED ITEM
+ACTIVE SOURCE BUILD = NONE
+```
+
+---
+
 # CURRENT YAC ADMISSION / PROVENANCE DESIGN REVIEW — 2 OCTOBER 2026
 
 Status: **BOUNDED DESIGN REVIEW ONLY / NO ACTIVE SOURCE BUILD / NO LIVE IMPORT**. This supersedes the pending-runtime-carry pointer below. Reacquire COM #723 comments `5942298040`, `5942311273`, `5942338512`, `5942340729` and `5950836602` before action.
