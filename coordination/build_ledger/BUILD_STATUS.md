@@ -1,3 +1,21 @@
+# CURRENT YAC ADMISSION V2 DESIGN PASS — 2 OCTOBER 2026 NIGHT
+
+- **ACTIVE SOURCE BUILD = NONE.** The schema/storage design has closed as `DESIGN_PASS_WITH_CEILINGS`; implementation remains unauthorized.
+- **FINAL TWO EDITS CLOSED:** `lineage_receipt_ref` is migration-only, required for migrated v1 basis and NULL for both live bases; cleanup never interprets it. For mediated rows, `participant_time = received_at` exactly and never carries provider/source event time.
+- **CONTROLLING DESIGN:** COM #723 `5962625954`, superseding Build `5958241854` and unpatched Codex `5958261149`. Build review `5959037170`; Claude Code closeout `5959119171`.
+- **NO LIVE DELTA:** no source edit, SQL, migration, scratch D1, token, deploy, gate change, invite, import, provider call, cleanup, publication or THR canon mutation. The xAI return remains outside YAC; public intake remains closed.
+- **NEXT = MARK'S SCRATCH-ONLY GATE:** authorize one same-account disposable D1 plus minimum practical token, exact scope recorded and held/run by Mark, synthetic fixtures/canaries only. If it can read production, keep it solely under Mark's control or revoke and verify revocation before production holds non-synthetic rows.
+- **SCRATCH MUST PROVE:** parameter/log surfaces; REST atomicity; two-table cleanup atomicity; D1 rebuild/FK complete-or-fail; migration-window fail-closed behavior; hidden retries/duplicate delivery; capacity boundaries; token custody/scope.
+- **HELD:** all implementation, production migration/deployment/import, real body handling, publication and public intake.
+
+```text
+DESIGN PASS = READY TO ASK, NOT READY TO BUILD
+SCRATCH AUTHORITY != PRODUCTION AUTHORITY
+ACTIVE SOURCE BUILD = NONE
+```
+
+---
+
 # CURRENT YAC ADMISSION / PROVENANCE DESIGN STATUS — 2 OCTOBER 2026
 
 - **ACTIVE SOURCE BUILD = NONE. ACTIVE LANE = DESIGN REVIEW ONLY.** No YAC source edit, migration, deploy or live import is authorised.
