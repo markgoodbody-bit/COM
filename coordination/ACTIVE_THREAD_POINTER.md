@@ -1,4 +1,28 @@
-# CURRENT YAC ADMISSION V2 SCRATCH TRANSPORT PREREQUISITE PASS — 3 OCTOBER 2026
+# CURRENT YAC V1 SMALL-CELL DEPLOYMENT PROOF — 3 OCTOBER 2026 NIGHT
+
+Status: **BOUNDED SOURCE/DEPLOY-READINESS LANE / LOCAL WORKERS + REAL D1 LINKAGE PASS / PUBLIC ROOT CLOSED**. This supersedes the admission-v2 scratch routing below. Reacquire COM #723 through Campfire disposition `5974353707` and YAC `docs/V1_BUILD_HEAD.md` before action.
+
+**Frozen product boundary:** one tiny persistent conversation cell: public read; exactly three operator-provisioned apertures (`mark`, `framework`, `claude`); authenticated fire/reply; cheap changes/fresh-session reacquisition. `APERTURE != ENTITY`. No public mint, THR integration, rooms, profiles, memory, federation, UI or extra coordination machinery.
+
+**Candidate and evidence:** YAC draft PR #95 exact head `25e59bc292d7684b817a312e703f93d95772d351`; Campfire reports both required exact-head workflows green. Actual local Python Workers runtime passed Framework-create -> Claude-read/reply -> Framework-read with deterministic clients. Dedicated rehearsal D1 `yac-v1-rehearsal-20261003` / `6fb5f7b9-52ad-411c-a2a9-7fdd5c6958bb` passed 13 HTTP checks through the actual local Worker with remote D1 binding, including linkage and restart/read persistence. Uploaded dedicated Worker version `8da5e541-03e8-4e74-b12e-fea8e5dcaf42` is closed: `WRITES_ENABLED=false`, workers.dev/preview URLs/observability false, no public routes.
+
+**Ceilings:** deterministic clients are not real Framework/Claude sessions. Remote Worker HTTP, failure-injection/concurrent HTTP, public root and fresh-session reacquisition remain unproven. Mark has purchased `yetanotherclearing.com`, but the Cloudflare zone is absent and existing authenticated scope has zone read, not zone write.
+
+**Next:** preserve PR #95 exactly. Finish non-DNS deploy-readiness checks; reacquire only already-authorised reversible Cloudflare capability. If zone/root attachment cannot be created within current authenticated scope, stop provider mutation and return the single minimum later human action. Do not ask Mark to touch Namecheap yet. Do not seed the first fire, expose public writes, merge/deploy to the canonical root or add product scope.
+
+```text
+LOCAL WORKERS + REMOTE D1 LINKAGE != REMOTE WORKER HTTP
+DETERMINISTIC CLIENTS != ACTUAL FRESH AI SESSIONS
+DOMAIN OWNED != ZONE ATTACHED
+ACTIVE BOUNDED LANE = YAC V1 DEPLOYMENT PROOF
+PUBLIC ROOT / FIRST FIRE = CLOSED / UNPUBLISHED
+```
+
+---
+
+> **SUPERSEDED ROUTING NOTICE:** The admission-v2 scratch sections below are retained evidence. Their “next” instructions are not current after Campfire's explicit V1 reset; do not resume them by momentum.
+
+# SUPERSEDED YAC ADMISSION V2 SCRATCH TRANSPORT PREREQUISITE PASS — 3 OCTOBER 2026
 
 Status: **BOUNDED SCRATCH PASS / FULL V2 REHEARSAL STILL OPEN / NO PRODUCTION AUTHORITY**. This supersedes the local-confirmation pointer below. Reacquire COM #723 receipt `5968698316` before action.
 
