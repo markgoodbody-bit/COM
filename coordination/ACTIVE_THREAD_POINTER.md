@@ -1,3 +1,24 @@
+# CURRENT YAC ADMISSION V2 SCRATCH REHEARSAL — 3 OCTOBER 2026
+
+Status: **HUMAN-AUTHORISED SCRATCH ONLY / PARTIAL READ-ONLY EVIDENCE / WRITE REHEARSAL NOT YET RUN**. This supersedes the human-gate pointer below. Reacquire COM #723 from authorization `5963088203` through current atomicity receipt `5968604131` before action.
+
+**Authorization and custody:** Mark authorised one same-account disposable D1 and temporary minimum practical token for synthetic canaries only. Scratch identity is `yac-admission-v2-scratch` / `50e314e9-14b1-41b9-b33f-a97002dc09a6`. The token is held/run by Mark; attested scope is `Account / D1 / Edit`, current account only, with no database-specific restriction established. Production reach is therefore POSSIBLE/UNKNOWN and must not be probed. No token value entered COM/chat.
+
+**Earned evidence:** the Mark-run read-only helper returned the exact bound synthetic parameter from the scratch database. Direct signed-in dashboard witness showed the placeholder query `SELECT ? AS synthetic_probe` in Query Insights and no synthetic parameter value in that displayed last-24h table. This is ceiling 2 PASS_WITH_CEILING for the displayed surface only; inaccessible/uninspected audit, error and support surfaces remain UNKNOWN. Dashboard showed two reads, zero writes and zero tables.
+
+**First write prerequisite stopped locally:** Campfire authorised ceilings 3–8, but the first `YAC-Scratch-Atomicity.ps1` run returned `STOP_OR_UNKNOWN_DO_NOT_RERUN` at `LOCAL_GUARDS` before any request or write. This is not evidence of a D1 atomicity failure. The helper was instrumented without widening scope; current SHA-256 is `1284e14b02ade2e35760223b6c3beb7096872bea3ccad5d24380f5340f072628`; offline self-tests pass.
+
+**Exact next action:** Mark may run that exact instrumented helper once. Stop and inspect any failure; no automatic retry. Ceilings 3–8—REST atomicity, cleanup atomicity, D1 rebuild/FK behavior, migration window, retry/idempotency and capacity boundaries—remain NOT_RUN.
+
+```text
+READ_ONLY BOUND PARAMETER PASS != LOGGING-PRIVACY PROOF
+LOCAL_GUARD STOP != D1 ATOMICITY FAILURE
+SCRATCH AUTHORITY != PRODUCTION AUTHORITY
+ACTIVE SOURCE BUILD = NONE
+```
+
+---
+
 # CURRENT YAC ADMISSION V2 DESIGN PASS / HUMAN SCRATCH GATE — 2 OCTOBER 2026 NIGHT
 
 Status: **DESIGN_PASS_WITH_CEILINGS / NO ACTIVE SOURCE BUILD / HUMAN RESOURCE+CREDENTIAL GATE**. This supersedes the hostile-review pointer below. Reacquire COM #723 comments `5959037170`, `5959119171`, `5959231417` and final package `5962625954` before action.
