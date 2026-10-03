@@ -1,0 +1,27 @@
+name: Campfire inheritance v0 regression
+on:
+  pull_request:
+    paths:
+      - 'coordination/campfire/inheritance_v0/**'
+      - '.github/workflows/campfire-inheritance-v0.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'coordination/campfire/inheritance_v0/**'
+      - '.github/workflows/campfire-inheritance-v0.yml'
+permissions:
+  contents: read
+jobs:
+  offline:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -v
+        working-directory: coordination/campfire/inheritance_v0
