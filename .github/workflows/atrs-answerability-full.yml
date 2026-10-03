@@ -1,0 +1,45 @@
+name: ATRS Answerability Membership Gate
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/membership.py'
+      - 'competition/atrs_answerability/test_membership.py'
+      - '.github/workflows/atrs-answerability-full.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  current-register-membership:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Membership parser tests
+        run: python -m unittest competition/atrs_answerability/test_membership.py -v
+      - name: Compare official finder with generic Search API
+        run: |
+          python competition/atrs_answerability/membership.py --out /tmp/atrs_membership.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/atrs_membership.json', encoding='utf-8'))
+          assert r['finder_declared_count'] == r['finder_enumerated_count'], r
+          assert r['finder_enumerated_count'] == r['search_api_count'], r
+          assert r['search_api_not_in_finder'] == [], r['search_api_not_in_finder']
+          assert r['finder_not_in_search_api'] == [], r['finder_not_in_search_api']
+          assert r['finder_enumerated_count'] >= 100
+          print('verified current finder membership:', r['finder_enumerated_count'])
+          PY
+      - name: Preserve exact membership comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-membership-${{ github.run_id }}
+          path: /tmp/atrs_membership.json
+          retention-days: 30
