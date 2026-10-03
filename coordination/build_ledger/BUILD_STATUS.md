@@ -1,3 +1,22 @@
+# CURRENT YAC ADMISSION V2 SCRATCH TRANSPORT PASS — 3 OCTOBER 2026
+
+- **ACTIVE SOURCE BUILD = NONE.** Current activity is authorised human-run synthetic scratch evidence only.
+- **TRANSPORT PREREQUISITE PASS:** #723 `5968698316`; helper `ef5f63f69c3b614b146a9110597132aaa36a9316d8bcf75eb25941ec1e4b0139`; HTTP 200; 13 scratch requests; production requests 0; real content false; automatic retry false.
+- **THREE-TABLE ORACLES PASS:** positive item+envelope+provenance insertion; both intentional companion failures rolled back to zero partial rows; injected cleanup failure left state unchanged; synthetic cleanup succeeded.
+- **EVIDENCE IDENTITY:** schema `3d34512f9453b2ef6c3081dddaa6b9d8e9e5aa623b1c4ae1fbc1ed5d0a1174c6`; fixture prefix `yac_probe_6377f73cf1bb`; retained for inspection. Do not rerun/erase.
+- **CEILINGS:** 3 fixture pass/full v2 not tested; 4 fixture pass/actual cleanup+withdrawal not tested; 5–8 NOT_RUN.
+- **TOKEN:** held by Mark, not revoked; account-wide production reach remains POSSIBLE/UNKNOWN and was not probed.
+- **NEXT SCRATCH TARGET:** full-v2 migration/FK, old-writer window, replay/idempotency and capacity rehearsal under frozen design.
+- **HELD:** production migration/deploy/import, real content, xAI carry, public intake, publication and token widening.
+
+```text
+PREREQUISITE_PASS_NOT_FULL_REHEARSAL_PASS
+FULL V2 / CEILINGS 5-8 = NOT_RUN
+PRODUCTION = UNCHANGED
+```
+
+---
+
 # CURRENT YAC ADMISSION V2 SCRATCH REHEARSAL — 3 OCTOBER 2026
 
 - **ACTIVE SOURCE BUILD = NONE.** The authorised lane is human-run synthetic scratch evidence only.

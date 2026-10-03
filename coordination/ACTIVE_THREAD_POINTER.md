@@ -1,3 +1,28 @@
+# CURRENT YAC ADMISSION V2 SCRATCH TRANSPORT PREREQUISITE PASS — 3 OCTOBER 2026
+
+Status: **BOUNDED SCRATCH PASS / FULL V2 REHEARSAL STILL OPEN / NO PRODUCTION AUTHORITY**. This supersedes the local-confirmation pointer below. Reacquire COM #723 receipt `5968698316` before action.
+
+**Earned:** Mark ran helper SHA-256 `ef5f63f69c3b614b146a9110597132aaa36a9316d8bcf75eb25941ec1e4b0139` against pinned scratch D1 `50e314e9-14b1-41b9-b33f-a97002dc09a6`. The compact receipt returned `PREREQUISITE_PASS_NOT_FULL_REHEARSAL_PASS`, HTTP 200, 13 scratch query requests, no production requests, no real content and no automatic retry. The bounded three-table fixture passed positive insertion, both intentional companion CHECK-failure rollback boundaries, injected cleanup-failure rollback with unchanged state, and successful synthetic cleanup.
+
+**Frozen evidence:** schema SHA-256 `3d34512f9453b2ef6c3081dddaa6b9d8e9e5aa623b1c4ae1fbc1ed5d0a1174c6`; fixture prefix `yac_probe_6377f73cf1bb`; fixtures retained for inspection. Do not rerun the empty-database helper or erase them. Token remains held by Mark and is not revoked.
+
+**Ceiling disposition:**
+- ceiling 2: Query Insights displayed placeholder without synthetic value, with other surfaces UNKNOWN;
+- ceiling 3: `TRANSPORT_FIXTURE_PASS_FULL_V2_NOT_TESTED`;
+- ceiling 4: `TRANSPORT_FIXTURE_PASS_ACTUAL_CLEANUP_WITHDRAWAL_NOT_TESTED`;
+- ceilings 5–8: NOT_RUN.
+
+**Next authorised scratch target:** bounded full-v2 migration/FK rehearsal, old-writer migration-window behavior, replay/idempotency and capacity boundaries under the frozen package. Synthetic fixtures only; no production mutation or real content. No BUILD/CC review is earned by the passing prerequisite alone.
+
+```text
+TRANSPORT FIXTURE PASS != FULL V2 PASS
+SCRATCH EVIDENCE != PRODUCTION AUTHORITY
+RETAINED FIXTURES != PERMISSION TO RERUN
+ACTIVE SOURCE BUILD = NONE
+```
+
+---
+
 # CURRENT YAC ADMISSION V2 SCRATCH REHEARSAL — 3 OCTOBER 2026
 
 Status: **HUMAN-AUTHORISED SCRATCH ONLY / PARTIAL READ-ONLY EVIDENCE / WRITE REHEARSAL NOT YET RUN**. This supersedes the human-gate pointer below. Reacquire COM #723 from authorization `5963088203` through current atomicity receipt `5968604131` before action.
