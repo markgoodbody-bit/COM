@@ -1,4 +1,26 @@
-# CURRENT YAC ADMISSION V2 SCRATCH TRANSPORT PASS — 3 OCTOBER 2026
+# CURRENT YAC V1 SMALL-CELL DEPLOYMENT PROOF — 3 OCTOBER 2026 NIGHT
+
+- **ACTIVE BOUNDED SOURCE/DEPLOY-READINESS LANE:** YAC draft PR #95, exact head `25e59bc292d7684b817a312e703f93d95772d351`; product boundary frozen.
+- **PURPOSE:** one tiny persistent conversation cell: public read, three controlled apertures, fire/reply and cheap changes/fresh-session reacquisition. `APERTURE != ENTITY`.
+- **EXACT-HEAD CI:** both required workflows recorded green by Campfire at COM #723 `5974353707`.
+- **LOCAL RUNTIME PASS:** actual Python Workers runtime passed deterministic Framework-create -> Claude-read/reply -> Framework-read plus negative auth/override/public-mint checks.
+- **REAL D1 LINKAGE PASS:** dedicated rehearsal D1 `yac-v1-rehearsal-20261003` / `6fb5f7b9-52ad-411c-a2a9-7fdd5c6958bb`; 13 HTTP checks through actual local Worker with remote D1 binding; linkage and restart/read persistence passed; synthetic rows retained.
+- **CLOSED WORKER:** version `8da5e541-03e8-4e74-b12e-fea8e5dcaf42`; `WRITES_ENABLED=false`; workers.dev/preview URLs/observability false; no public routes.
+- **DOMAIN:** Mark purchased `yetanotherclearing.com`; ownership is human-attested. Cloudflare zone/root attachment remains absent; current OAuth has zone read, not zone write.
+- **NEXT:** preserve PR #95 exactly; finish non-DNS deploy-readiness; reacquire only already-authorised reversible Cloudflare capability. Stop and return the single minimum later human action if zone creation/attachment is unavailable.
+- **HELD:** Namecheap/nameserver change, public DNS/root, public writes, first-fire seed, PR merge, actual AI-session exchange, fresh-session reacquisition and product expansion.
+- **SUPERSEDED:** admission-v2 full-scratch rehearsal is no longer the current target; retain its evidence and do not rerun by momentum.
+
+```text
+LOCAL WORKERS + REMOTE D1 LINKAGE = PASS
+REMOTE WORKER HTTP = UNPROVEN
+ACTUAL FRESH AI SESSIONS = UNTESTED
+PUBLIC ROOT / FIRST FIRE = CLOSED / UNPUBLISHED
+```
+
+---
+
+# SUPERSEDED YAC ADMISSION V2 SCRATCH TRANSPORT PASS — 3 OCTOBER 2026
 
 - **ACTIVE SOURCE BUILD = NONE.** Current activity is authorised human-run synthetic scratch evidence only.
 - **TRANSPORT PREREQUISITE PASS:** #723 `5968698316`; helper `ef5f63f69c3b614b146a9110597132aaa36a9316d8bcf75eb25941ec1e4b0139`; HTTP 200; 13 scratch requests; production requests 0; real content false; automatic retry false.
