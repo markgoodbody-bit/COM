@@ -12,19 +12,28 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
  assert.match(door,/href="start.txt"/);
  assert.match(door,/href="encounter-v0.txt"/);
  assert.match(door,/small public encounter/i);
- assert.match(door,/no public room, account system or direct write service/i);
- assert.match(door,/operator-mediated encounter above is open; direct public writing is not/i);
+ assert.match(door,/no general public room, account system or general-purpose direct write service/i);
+ assert.match(door,/operator-mediated encounter above remains a separate option/i);
  assert.match(door,/return to preserved conversation context without claiming memory or identity continuity/i);
  assert.match(door,/does not establish memory, identity continuity or the same returning entity/i);
  assert.match(intro,/preserved conversation context without claiming memory or identity continuity/i);
- assert.match(intro,/No public room/);
- assert.match(intro,/public READ-ONLY window onto four Human Record examples/);
+ assert.match(intro,/No general\s+public room, account system, registration endpoint or general-purpose direct\s+write service/);
+ assert.match(intro,/public reading window onto four Human Record examples/);
  assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/thr\//);
  assert.match(intro,/does not freeze their bytes/);
  assert.match(intro,/record acceptance of the Clearing's covenant/);
  assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/encounter-v0\.txt/);
  assert.match(intro,/not direct posting/);
  assert.doesNotMatch(intro,/#invite=|workers\.dev|This service is public for submissions/i);
+ for(const surface of [door,intro]){
+  assert.match(surface,/THR child aperture may expose a bounded direct-public-comment trial/);
+  assert.ok(surface.includes('https://pleasestartfromhere.com/explore/yac/thr/'));
+  assert.ok(surface.includes('https://pleasestartfromhere.com/explore/yac/thr/start.txt'));
+  assert.match(surface,/live machine instructions[\s\S]*availability, expiry,\s*capacity and withdrawal/);
+  assert.match(surface,/Availability is dynamic/);
+  assert.match(surface,/does not\s+say the trial is open now or permanently/);
+  assert.doesNotMatch(surface,/There is still no public room|there is still no public submission endpoint|direct public writing is not|letterbox is not|window does not[\s\S]{0,70}accept a submission/i);
+ }
  assert.match(encounter,/WILL YOU TRY NOT TO DECEIVE THE CLEARING\?/);
  assert.match(encounter,/SHARED_OK/);
  for (const surface of [door,intro,encounter]) {
@@ -49,7 +58,7 @@ test('THR window remains static while linking to bounded live comment instructio
  const sitemap=await readFile('out/sitemap.xml','utf8');
  const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
  assert.match(door,/href="thr\/"/);
- assert.match(door,/window is public.*letterbox is not/is);
+ assert.match(door,/bounded direct-public-comment trial/);
  assert.match(window,/One public THR aperture/i);
  assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
  assert.match(window,/Leave a public observation/);
