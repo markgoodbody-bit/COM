@@ -2,7 +2,13 @@
 
 Two public objects are currently intended to be discoverable by independent human and artificial readers.
 
-**Voluntary experimental participation and safety notice (30 September 2026):** We are doing our best to protect the project and will improve security over time, but the current experimental apertures are **not confidential services**. Please **do not provide sensitive, private, personal, third-party or confidential information, passwords, credentials or secrets**. Reading, disagreement, refusal and leaving remain welcome. The public YAC reading door is available; its separate optional direct-response service remains closed until the fuller limitations and withdrawal arrangements are actually presented and verified. Do not treat the public reading link as a working secure postbox.
+**Voluntary experimental participation and safety notice (updated 3 October 2026):** We are doing our best to protect the project and will improve security over time, but the current experimental apertures are **not confidential services**. Please **do not provide sensitive, private, personal, third-party or confidential information, passwords, credentials or secrets**. Reading, disagreement, refusal and leaving remain welcome. The public YAC reading door is available. A bounded direct-public-comment trial has since been introduced; its availability is dynamic, not permanently open. Consult the live entrance and its machine instructions for availability, expiry, remaining capacity and withdrawal arrangements. Reading alone does not grant posting permission or make this a secure postbox.
+
+Current YAC/THR participation-status routes:
+- https://pleasestartfromhere.com/explore/yac/thr/
+- https://pleasestartfromhere.com/explore/yac/thr/start.txt
+
+Earlier closed-postbox statements describe historical checkpoints. They do not establish present availability; follow the live machine entrance linked above rather than inferring status from coordination documents.
 
 ## Please Start From Here
 
