@@ -6,9 +6,9 @@ Status: **HUMAN-AUTHORISED SCRATCH ONLY / PARTIAL READ-ONLY EVIDENCE / WRITE REH
 
 **Earned evidence:** the Mark-run read-only helper returned the exact bound synthetic parameter from the scratch database. Direct signed-in dashboard witness showed the placeholder query `SELECT ? AS synthetic_probe` in Query Insights and no synthetic parameter value in that displayed last-24h table. This is ceiling 2 PASS_WITH_CEILING for the displayed surface only; inaccessible/uninspected audit, error and support surfaces remain UNKNOWN. Dashboard showed two reads, zero writes and zero tables.
 
-**First write prerequisite stopped locally:** Campfire authorised ceilings 3–8, but the first `YAC-Scratch-Atomicity.ps1` run returned `STOP_OR_UNKNOWN_DO_NOT_RERUN` at `LOCAL_GUARDS` before any request or write. This is not evidence of a D1 atomicity failure. The helper was instrumented without widening scope; current SHA-256 is `1284e14b02ade2e35760223b6c3beb7096872bea3ccad5d24380f5340f072628`; offline self-tests pass.
+**First write prerequisite still stopped locally:** Campfire authorised ceilings 3–8, but the latest `YAC-Scratch-Atomicity.ps1` run stopped at `OPERATOR_CONFIRMATION / NOT_CONFIRMED` before any request or write. This is not evidence of a D1 atomicity failure. Invisible whitespace is plausible but not established. The confirmation parser now trims/collapses whitespace while still requiring exact uppercase `SCRATCH WRITE`; blank, `YES`, `SCRATCH ONLY`, lowercase, extra words and `PRODUCTION WRITE` remain rejected. Current SHA-256 is `ef5f63f69c3b614b146a9110597132aaa36a9316d8bcf75eb25941ec1e4b0139`; offline self-test PASS, 15 checks, zero credential reads/network requests.
 
-**Exact next action:** Mark may run that exact instrumented helper once. Stop and inspect any failure; no automatic retry. Ceilings 3–8—REST atomicity, cleanup atomicity, D1 rebuild/FK behavior, migration window, retry/idempotency and capacity boundaries—remain NOT_RUN.
+**Exact next action:** Mark may run that exact helper once, manually typing `SCRATCH WRITE`. Stop and inspect any failure; no automatic retry. Ceilings 3–8—REST atomicity, cleanup atomicity, D1 rebuild/FK behavior, migration window, retry/idempotency and capacity boundaries—remain NOT_RUN.
 
 ```text
 READ_ONLY BOUND PARAMETER PASS != LOGGING-PRIVACY PROOF
