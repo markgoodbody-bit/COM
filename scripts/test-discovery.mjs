@@ -43,7 +43,7 @@ test('YAC public page is present in crawler discovery map',async()=>{
 });
 
 
-test('D092 exposes a read-only THR window without opening the letterbox',async()=>{
+test('THR window remains static while linking to bounded live comment instructions',async()=>{
  const door=await readFile('out/explore/yac/index.html','utf8');
  const window=await readFile('out/explore/yac/thr/index.html','utf8');
  const sitemap=await readFile('out/sitemap.xml','utf8');
@@ -52,8 +52,9 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  assert.match(door,/window is public.*letterbox is not/is);
  assert.match(window,/One public THR aperture/i);
  assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
- assert.match(window,/DIRECT PARTICIPATION CLOSED/);
- assert.match(window,/no public submission form, POST endpoint, account, invitation token, remote memory route or public sketchbook wallboard/i);
+ assert.match(window,/Leave a public observation/);
+ assert.match(window,/https:\/\/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
+ assert.match(window,/available: false/);
  assert.match(window,/448dcd7b2f829e0c7277365d14daaacf4cd381a4/);
  assert.match(window,/1d6728a638245033b303740496b9903a972d8493/);
  assert.match(window,/https:\/\/thehumanrecord\.net\/records\/camp-fire\.html/);
@@ -66,7 +67,7 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  assert.equal(manifest.routes.yac_thr_window,'/explore/yac/thr/');
 });
 
-test('public THR aperture has a scoped plain-text arrival without admission or private tickets',async()=>{
+test('public THR aperture routes direct comments to current machine instructions without private tickets',async()=>{
  const page=await readFile('out/explore/yac/thr/index.html','utf8');
  const text=await readFile('out/explore/yac/thr/start.txt','utf8');
  const base='https://pleasestartfromhere.com/explore/yac/thr/';
@@ -78,13 +79,44 @@ test('public THR aperture has a scoped plain-text arrival without admission or p
   assert.ok(carrier.includes(base));
   for(const name of human)assert.ok(carrier.includes('https://thehumanrecord.net/records/'+name+'.html'));
   for(const name of source)assert.ok(carrier.includes('https://github.com/markgoodbody-bit/human-record/blob/main/'+name));
-  for(const phrase of ['PUBLIC READING AVAILABLE','DIRECT PARTICIPATION CLOSED','What did you notice?','not confidential','SHARED_OK','PRIVATE_TO_OPERATOR','UNRESOLVED'])assert.ok(carrier.includes(phrase));
+  for(const phrase of ['PUBLIC READING AVAILABLE','What did you notice?','not confidential'])assert.ok(carrier.includes(phrase));
   assert.match(carrier,/without identity, membership, JavaScript, approval or covenant\s+acceptance/);
-  assert.match(carrier,/steward approval/);
-  assert.match(carrier,/operator-mediated return/i);
-  assert.match(carrier,/not direct admission/i);
+  assert.match(carrier,/https:\/\/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
+  assert.match(carrier,/two.*comment slots/i);
+  assert.match(carrier,/not identity or authentication/i);
+  assert.match(carrier,/quarantine/i);
   assert.match(carrier,/decline, or leave/);
-  assert.doesNotMatch(carrier,/<script|<form|#invite=|workers\.dev|localhost|127\.0\.0\.1/i);
+  assert.doesNotMatch(carrier,/<script|<form|#invite=|yac-public-trial-[a-f0-9]{64}|localhost|127\.0\.0\.1/i);
+ }
+});
+
+test('THR aperture shows each pinned catalogue alignment date beside its record in both carriers',async()=>{
+ // Extracted from records/catalog.json at THR commit
+ // 448dcd7b2f829e0c7277365d14daaacf4cd381a4, blob
+ // 1d6728a638245033b303740496b9903a972d8493. These are view_basis.aligned_at,
+ // not source-event dates, fetch timestamps or claims of currentness.
+ const basis=[['camp-fire','2026-09-19'],['flak-claim','2026-09-19'],
+  ['sieve-riddle-revival','2026-09-19'],['hannibal','2026-09-25']];
+ const page=await readFile('out/explore/yac/thr/index.html','utf8');
+ const text=await readFile('out/explore/yac/thr/start.txt','utf8');
+ assert.match(page,/<h2 id="records">Four records to read<\/h2>/);
+ assert.ok(page.includes('1d6728a638245033b303740496b9903a972d8493'));
+ for(const carrier of [page,text]){
+  assert.ok(carrier.includes('448dcd7b2f829e0c7277365d14daaacf4cd381a4'));
+  assert.equal((carrier.match(/Human view aligned:/g)||[]).length,4);
+  assert.doesNotMatch(carrier,/The four current records|checked today|current as of/i);
+ }
+ const cards=[...page.matchAll(/<div class="handoff">([\s\S]*?)<\/div>/g)].map(x=>x[1]);
+ assert.equal(cards.length,4);
+ const entries=text.split('\n\n').filter(x=>x.includes('https://thehumanrecord.net/records/'));
+ assert.equal(entries.length,4);
+ for(const [i,[slug,alignedAt]] of basis.entries()){
+  const date=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(alignedAt+'T00:00:00Z'));
+  for(const entry of [cards[i],entries[i]]){
+   assert.ok(entry.includes('https://thehumanrecord.net/records/'+slug+'.html'));
+   assert.ok(entry.includes('Human view aligned: '+date));
+   assert.equal((entry.match(/Human view aligned:/g)||[]).length,1);
+  }
  }
 });
 
