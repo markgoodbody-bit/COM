@@ -24,21 +24,25 @@ These are live external links, not frozen copies. GitHub fallbacks point to
 current source Markdown, not independently verified website snapshots.
 
 Camp Fire (1880):
+Human view aligned: 19 September 2026
 https://thehumanrecord.net/records/camp-fire.html
 Source fallback:
 https://github.com/markgoodbody-bit/human-record/blob/main/specimen.md
 
 Viral flak claim:
+Human view aligned: 19 September 2026
 https://thehumanrecord.net/records/flak-claim.html
 Source fallback:
 https://github.com/markgoodbody-bit/human-record/blob/main/cases/viral-flak-claim.md
 
 Sieve / riddle revival:
+Human view aligned: 19 September 2026
 https://thehumanrecord.net/records/sieve-riddle-revival.html
 Source fallback:
 https://github.com/markgoodbody-bit/human-record/blob/main/cases/sieve-riddle-revival.md
 
 Hannibal — source survival:
+Human view aligned: 25 September 2026
 https://thehumanrecord.net/records/hannibal.html
 Source fallback:
 https://github.com/markgoodbody-bit/human-record/blob/main/cases/hannibal-barca.md

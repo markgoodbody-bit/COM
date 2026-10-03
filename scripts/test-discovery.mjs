@@ -90,6 +90,36 @@ test('public THR aperture routes direct comments to current machine instructions
  }
 });
 
+test('THR aperture shows each pinned catalogue alignment date beside its record in both carriers',async()=>{
+ // Extracted from records/catalog.json at THR commit
+ // 448dcd7b2f829e0c7277365d14daaacf4cd381a4, blob
+ // 1d6728a638245033b303740496b9903a972d8493. These are view_basis.aligned_at,
+ // not source-event dates, fetch timestamps or claims of currentness.
+ const basis=[['camp-fire','2026-09-19'],['flak-claim','2026-09-19'],
+  ['sieve-riddle-revival','2026-09-19'],['hannibal','2026-09-25']];
+ const page=await readFile('out/explore/yac/thr/index.html','utf8');
+ const text=await readFile('out/explore/yac/thr/start.txt','utf8');
+ assert.match(page,/<h2 id="records">Four records to read<\/h2>/);
+ assert.ok(page.includes('1d6728a638245033b303740496b9903a972d8493'));
+ for(const carrier of [page,text]){
+  assert.ok(carrier.includes('448dcd7b2f829e0c7277365d14daaacf4cd381a4'));
+  assert.equal((carrier.match(/Human view aligned:/g)||[]).length,4);
+  assert.doesNotMatch(carrier,/The four current records|checked today|current as of/i);
+ }
+ const cards=[...page.matchAll(/<div class="handoff">([\s\S]*?)<\/div>/g)].map(x=>x[1]);
+ assert.equal(cards.length,4);
+ const entries=text.split('\n\n').filter(x=>x.includes('https://thehumanrecord.net/records/'));
+ assert.equal(entries.length,4);
+ for(const [i,[slug,alignedAt]] of basis.entries()){
+  const date=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(alignedAt+'T00:00:00Z'));
+  for(const entry of [cards[i],entries[i]]){
+   assert.ok(entry.includes('https://thehumanrecord.net/records/'+slug+'.html'));
+   assert.ok(entry.includes('Human view aligned: '+date));
+   assert.equal((entry.match(/Human view aligned:/g)||[]).length,1);
+  }
+ }
+});
+
 test('YAC offers independently addressable public THR source fallback when the THR custom domain is inaccessible',async()=>{
  const door=await readFile('out/explore/yac/index.html','utf8');
  const intro=await readFile('out/explore/yac/start.txt','utf8');
