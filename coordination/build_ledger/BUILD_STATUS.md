@@ -1,3 +1,23 @@
+# CURRENT YAC ADMISSION V2 SCRATCH REHEARSAL — 3 OCTOBER 2026
+
+- **ACTIVE SOURCE BUILD = NONE.** The authorised lane is human-run synthetic scratch evidence only.
+- **SCRATCH EXISTS:** `yac-admission-v2-scratch` / `50e314e9-14b1-41b9-b33f-a97002dc09a6`, same Cloudflare account.
+- **TOKEN CUSTODY:** held/run by Mark; human-attested `Account / D1 / Edit`, current account only; no database-specific restriction established; production reach POSSIBLE/UNKNOWN and not probed.
+- **READ-ONLY PASS:** bound synthetic parameter echoed exactly from scratch. Dashboard Query Insights displayed `SELECT ? AS synthetic_probe` without the parameter value; two reads, zero writes, zero tables. Other provider logging/audit/error/support surfaces remain UNKNOWN.
+- **WRITE REHEARSAL NOT RUN:** first atomicity-helper attempt stopped at local guards with zero requests and zero writes; not a D1 failure.
+- **CURRENT HELPER:** `C:/Users/markg/Downloads/YAC-Scratch-Atomicity.ps1`; SHA-256 `1284e14b02ade2e35760223b6c3beb7096872bea3ccad5d24380f5340f072628`; offline self-tests PASS.
+- **NEXT:** one explicit Mark-run attempt of the instrumented helper; stop on failure, no automatic retry.
+- **NOT RUN:** ceilings 3–8, production migration/deploy/import, real body handling, xAI carry and public intake.
+
+```text
+SCRATCH REHEARSAL = AUTHORISED / PARTIAL
+QUERY INSIGHTS DISPLAY = PASS_WITH_CEILING
+CEILINGS 3-8 = NOT_RUN
+PRODUCTION = UNCHANGED
+```
+
+---
+
 # CURRENT YAC ADMISSION V2 DESIGN PASS — 2 OCTOBER 2026 NIGHT
 
 - **ACTIVE SOURCE BUILD = NONE.** The schema/storage design has closed as `DESIGN_PASS_WITH_CEILINGS`; implementation remains unauthorized.
