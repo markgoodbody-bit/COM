@@ -4,9 +4,9 @@
 - **SCRATCH EXISTS:** `yac-admission-v2-scratch` / `50e314e9-14b1-41b9-b33f-a97002dc09a6`, same Cloudflare account.
 - **TOKEN CUSTODY:** held/run by Mark; human-attested `Account / D1 / Edit`, current account only; no database-specific restriction established; production reach POSSIBLE/UNKNOWN and not probed.
 - **READ-ONLY PASS:** bound synthetic parameter echoed exactly from scratch. Dashboard Query Insights displayed `SELECT ? AS synthetic_probe` without the parameter value; two reads, zero writes, zero tables. Other provider logging/audit/error/support surfaces remain UNKNOWN.
-- **WRITE REHEARSAL NOT RUN:** first atomicity-helper attempt stopped at local guards with zero requests and zero writes; not a D1 failure.
-- **CURRENT HELPER:** `C:/Users/markg/Downloads/YAC-Scratch-Atomicity.ps1`; SHA-256 `1284e14b02ade2e35760223b6c3beb7096872bea3ccad5d24380f5340f072628`; offline self-tests PASS.
-- **NEXT:** one explicit Mark-run attempt of the instrumented helper; stop on failure, no automatic retry.
+- **WRITE REHEARSAL NOT RUN:** latest attempt stopped at `OPERATOR_CONFIRMATION / NOT_CONFIRMED`, with zero requests and zero writes; not a D1 failure.
+- **CURRENT HELPER:** `C:/Users/markg/Downloads/YAC-Scratch-Atomicity.ps1`; SHA-256 `ef5f63f69c3b614b146a9110597132aaa36a9316d8bcf75eb25941ec1e4b0139`; offline self-test PASS, 15 checks.
+- **NEXT:** one explicit Mark-run attempt, manually typing exact uppercase `SCRATCH WRITE`; stop on failure, no automatic retry.
 - **NOT RUN:** ceilings 3–8, production migration/deploy/import, real body handling, xAI carry and public intake.
 
 ```text
