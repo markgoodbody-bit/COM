@@ -18,3 +18,7 @@ jobs:
         with:
           python-version: '3.13'
       - run: python -m unittest discover -s transport -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test transport/test_worker.mjs

@@ -1,4 +1,5 @@
 PRAGMA foreign_keys = ON;
+CREATE TABLE mutation_guard (id INTEGER PRIMARY KEY CHECK(id=1), ok INTEGER NOT NULL CHECK(ok=1));
 CREATE TABLE apertures (
   id TEXT PRIMARY KEY,
   credential_hash TEXT NOT NULL UNIQUE,

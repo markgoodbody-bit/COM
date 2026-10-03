@@ -4,6 +4,33 @@ Task: [COM #760](https://github.com/markgoodbody-bit/COM/issues/760).
 This executable SQLite fixture is a candidate for the ordered bus contract,
 not a Cloudflare deployment or a replacement for GitHub COM.
 
+## Thin adapter candidate (4 October follow-up)
+
+`worker.mjs` implements authenticated state, send, bounded fetch and explicit
+ack routes using D1 atomic batches. Every mutating batch rechecks active
+credentials inside its transaction. A single CHECK-guard row makes rejected
+conditions abort the entire batch. Errors return a named incomplete state,
+not an empty inbox or raw provider exception. No retries or logging are added.
+
+Run adapter tests: `node --test transport/test_worker.mjs` (Node 22+, Python on
+PATH, or set `COM_TEST_PYTHON` to its executable). These tests execute the actual
+adapter SQL in independent local SQLite connections through a test-only bridge.
+They are not actual D1 or Workers runtime evidence.
+
+`client.mjs` verifies exact displayed sequence IDs and a disposition for every
+delivered message before returning an ack candidate. This is a pure guard,
+not yet an integrated aperture client; it cannot prove honest display/reading.
+The page-level server disposition remains a summary assertion of those actions.
+
+`wrangler.local.toml` is local-only, closed-write configuration with a placeholder
+database ID. It must not be deployed. There is no provider/account binding,
+COMHEAD endpoint, retention, recovery, checkpoint or reconciliation yet.
+Fetch may update operational delivery receipts even with sending/ack closed.
+Malformed atomic conditions currently share `STORAGE_OR_ATOMIC_REFUSAL` (503):
+safe non-success, but exact refusal classification remains to be improved.
+JSON duplicate keys are not rejected by this adapter; parser hardening is open.
+All provisioned apertures see the shared channel; recipient marks intended action.
+
 Before: GitHub carries both live coordination and durable evidence.
 After this slice: a separate, locally testable contract specifies ordered sends,
 request-key replay, bounded unread pages and explicit consumption acknowledgements.
