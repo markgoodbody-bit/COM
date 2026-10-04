@@ -26,6 +26,17 @@ export function reconcile({github,bus,aperture}={}) {
   // must attest completion of that same run. Row count alone proves nothing.
   if (typeof bus.scope!=='string'||!bus.scope||github.scope!==bus.scope||
       github.complete!==true||bus.complete!==true) issue('INCOMPLETE_OR_DIFFERENT_SCOPE');
+  if (bus.aperture!==aperture) issue('APERTURE_UNBOUND');
+  const window=bus.window;
+  if(!window||window.from_seq!==0||window.to_seq!==bus.head_seq||!integer(window.row_count)||
+      window.row_count!==bus.messages.length||bus.messages.some(m=>!m||m.seq<=window.from_seq||m.seq>window.to_seq)) issue('WINDOW_COVERAGE_UNPROVED');
+  for(const [source,snapshot] of [['github',github],['bus',bus]]) {
+    const c=snapshot.collection;
+    if(!c||!integer(c.started_at)||!integer(c.ended_at)||c.ended_at<c.started_at||
+      !integer(c.page_count)||c.page_count<1||c.last_page_complete!==true) issue('COLLECTION_MARKERS_MISSING',{source});
+  }
+  if(bus.collection?.head_seq_at_start!==bus.head_seq||bus.collection?.head_seq_at_end!==bus.head_seq) issue('COLLECTION_HEAD_CHANGED');
+  if(github.collection?.last_next!==null) issue('GITHUB_LAST_PAGE_UNPROVED');
   if (bus.consumed<bus.retained_after) issue('GAP_OPEN');
   if (bus.checkpoint_version>0 && (!bus.checkpoint||bus.checkpoint.version!==bus.checkpoint_version||
       bus.checkpoint.new_epoch!==bus.epoch||bus.checkpoint.retained_after!==bus.retained_after||
@@ -34,7 +45,7 @@ export function reconcile({github,bus,aperture}={}) {
   const head=bus.comhead;
   result.state={epoch:bus.epoch,checkpoint_version:bus.checkpoint_version,
     retained_after:bus.retained_after,consumed:bus.consumed,head_seq:bus.head_seq,
-    gap:bus.consumed<bus.retained_after,comhead:head??null};
+    gap:bus.consumed<bus.retained_after,comhead:head?{...head,claimed_freshness:head.freshness,freshness:'UNKNOWN'}:null};
   if (!head||!['CURRENT','STALE','UNKNOWN'].includes(head.freshness)||!integer(head.basis_seq)||
       head.basis_seq>bus.head_seq||!anchor.test(head.github_anchor??'')) issue('COMHEAD_UNKNOWN_OR_INVALID');
   else {
@@ -43,13 +54,14 @@ export function reconcile({github,bus,aperture}={}) {
         head.updated_at>bus.server_time) issue('COMHEAD_FRESHNESS_UNVERIFIED');
     else {
       const computed=bus.server_time-head.updated_at>bounds.max_age_seconds||bus.head_seq-head.basis_seq>bounds.max_lag?'STALE':'CURRENT';
+      result.state.comhead.freshness=computed;
       if (head.freshness!==computed) issue('COMHEAD_FRESHNESS_DIFFERENCE');
       if (computed!=='CURRENT') issue('COMHEAD_NOT_CURRENT',{freshness:computed});
     }
   }
   const maps=[];
   for (const [source,snapshot] of [['github',github],['bus',bus]]) {
-    const map=new Map(),seqs=new Set();
+    const map=new Map(),seqs=new Set(),witnesses=new Set();
     for (const row of snapshot.messages) {
       if (!row||row.epoch!==bus.epoch||typeof row.sender!=='string'||!row.sender||
           typeof row.request_key!=='string'||!row.request_key||typeof row.recipient!=='string'||!row.recipient||
@@ -60,7 +72,11 @@ export function reconcile({github,bus,aperture}={}) {
       if (source==='bus') {
         if (!integer(row.seq)||row.seq===0||row.seq>bus.head_seq||seqs.has(row.seq)) issue('INVALID_OR_DUPLICATE_SEQUENCE',{identity:JSON.parse(key)});
         seqs.add(row.seq);
-      } else if (!anchor.test(row.witness_url??'')) issue('GITHUB_WITNESS_MISSING',{identity:JSON.parse(key)});
+      } else {
+        if (!anchor.test(row.witness_url??'')||!/#issuecomment-[1-9][0-9]*$/.test(row.witness_url??'')||witnesses.has(row.witness_url))
+          issue('GITHUB_WITNESS_MISSING_OR_REUSED',{identity:JSON.parse(key)});
+        witnesses.add(row.witness_url);
+      }
       if (row.kind==='decision'&&!anchor.test(row.github_anchor??'')) issue('DECISION_ANCHOR_MISSING',{source,identity:JSON.parse(key)});
     }
     maps.push(map);

@@ -6,8 +6,10 @@ function fixture() {
   const messages=[{epoch,sender:'framework',request_key:'one',recipient:'shared',kind:'message',body:'same',github_anchor:null,seq:1},
     {epoch,sender:'framework',request_key:'two',recipient:'shared',kind:'message',body:'same',github_anchor:null,seq:2},
     {epoch,sender:'claude',request_key:'three',recipient:'codex',kind:'decision',body:'decision',github_anchor:url,seq:3}];
-  return {aperture:'codex',github:{epoch,scope:'synthetic-run',complete:true,messages:messages.map(m=>({...m,witness_url:url}))},
+  const collection={started_at:100,ended_at:100,page_count:1,last_page_complete:true,last_next:null,head_seq_at_start:3,head_seq_at_end:3};
+  return {aperture:'codex',github:{epoch,scope:'synthetic-run',complete:true,collection,messages:messages.map(m=>({...m,witness_url:url+'#issuecomment-'+m.seq}))},
     bus:{epoch,scope:'synthetic-run',complete:true,head_seq:3,retained_after:0,checkpoint_version:0,consumed:0,
+      aperture:'codex',window:{from_seq:0,to_seq:3,row_count:3},collection,
       server_time:100,head_bounds:{max_age_seconds:60,max_lag:50},
       comhead:{basis_seq:3,updated_at:100,freshness:'CURRENT',github_anchor:url},messages}};
 }
@@ -51,6 +53,15 @@ test('ack evidence is explicit; history disposition and malformed accounting ref
 test('claimed CURRENT cannot conceal expired COMHEAD or absent freshness evidence',()=>{
   const f=fixture();f.bus.server_time=200;
   assert.ok(reconcile(f).issues.some(i=>i.code==='COMHEAD_FRESHNESS_DIFFERENCE'));
+  assert.equal(reconcile(f).state.comhead.freshness,'STALE');
   delete f.bus.head_bounds;
   assert.ok(reconcile(f).issues.some(i=>i.code==='COMHEAD_FRESHNESS_UNVERIFIED'));
+});
+test('CC R1-R6: coverage, witness uniqueness, aperture and collection markers required',()=>{
+  for(const change of [f=>{f.bus.messages=f.bus.messages.slice(0,1);f.github.messages=f.github.messages.slice(0,1);},
+    f=>{f.bus.messages=[];f.github.messages=[];},f=>f.github.messages.forEach(m=>m.witness_url=url),
+    f=>f.github.messages[1].witness_url=f.github.messages[0].witness_url,
+    f=>f.aperture='claude',f=>{delete f.bus.collection;delete f.github.collection;}]) {
+    const f=fixture();change(f);assert.equal(reconcile(f).status,'UNKNOWN');
+  }
 });

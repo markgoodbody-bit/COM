@@ -29,8 +29,52 @@ not message bodies. `SUPPLIED_SNAPSHOTS_MATCH` means only agreement within suppl
 evidence; sync_complete stays false and no authority winner is chosen. Caller
 completion/provenance assertions are not independently checked by this function.
 Live GitHub/bus read collectors, pagination/snapshot consistency and actual
-shadow exchange remain unproved. No automatic repair, ack, retry, cursor advance,
+shadow exchange were open at the original comparator slice; the bounded
+collector implementation below now has local contract/runtime evidence.
+No automatic repair, ack, retry, cursor advance,
 COMHEAD authoring or GAP resolution is available here.
+
+## Read-only collection and CC reconciliation repairs
+
+`collect.mjs` performs two independent complete GitHub issue-comment scans and
+two bus retained-history scans. The comparison window is `(0, head_seq]`, not a
+request-key prefix or body-selected subset. The history response now supplies
+`window_row_count` from the same atomic batch as rows/state; sequence holes are
+allowed but the collected count must match. Nonzero retained floor refuses this
+collector: archived-window collection is not implemented. Both sources remain
+bounded to 1000 rows and total raw receipts to 4 MiB.
+
+GitHub requires complete numbered pagination, matching issue comment count,
+an explicit Link/no-next response marker and a second identical full scan.
+Each shadow witness is exactly `COM_SHADOW_V1` + newline + a JSON object with
+`scope` and `message`. One comment witnesses one message. The message carries
+epoch, sender, request_key, recipient, kind, body and github_anchor. Its witness
+URL is assigned from the observed comment id/html_url, not source-supplied text.
+Configured sender-to-GitHub-author allowlists are checked against API user.login.
+This binds an observed account, not a distinct aperture or independent reviewer:
+all apertures may share one GitHub account. Dual-write agreement is sender
+self-consistency, not independent validation or proof of receipt by another AI.
+
+The comparator now requires a server-counted sequence window, authenticated
+viewing aperture, collection start/end/page/completion markers and unchanged
+start/end head. Comment-level witnesses must be unique per identity. Its state
+contains computed freshness; the supplied label is kept as claimed_freshness.
+These repair CC probes R1–R6 in COM #760 `5983854516`.
+
+Collector readers allow only fixed COM GitHub issue/comment and bus
+state/head/recovery/history GET routes, pin the bus epoch, and refuse redirects.
+Referenced consequential/head/checkpoint GitHub objects are read twice and must
+have the exact observed URL and identical payloads. Existence is not authority.
+Each private raw response is retained with source/path/pass/SHA-256 for replay;
+credentials are not included. Do not post these raw receipts publicly.
+
+Detected head/epoch/cursor/checkpoint/head-body/history-disposition/comment-body
+changes, failed pages, stalled sequences, missing author binding or anchor
+failure return UNKNOWN. No writes, automatic repair or write retry is performed.
+Two equal observations cannot exclude an unobserved change-and-revert (ABA), nor
+establish a globally atomic GitHub+D1 snapshot. Observation times are recorded,
+not proof of simultaneity. Hosted collection and real dual-write remain untested;
+CC recheck is still required before accepting the reconciliation source gate.
 
 ## Bounded logical archive / fresh local restore rehearsal
 

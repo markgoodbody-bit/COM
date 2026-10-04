@@ -121,7 +121,7 @@ export class Bus {
   }
   async recovery(actor) {
     const reads=await this.db.batch([epochGuard(this.db,actor),
-      s(this.db,`SELECT a.consumed,t.epoch,t.retained_after,t.checkpoint_version,
+      s(this.db,`SELECT a.id AS aperture,a.consumed,t.epoch,t.retained_after,t.checkpoint_version,
         (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,unixepoch() AS server_time
         FROM apertures a JOIN transport_meta t ON t.id=1 WHERE a.id=? AND a.credential_hash=? AND a.revoked=0`,actor.id,actor.hash),
       s(this.db,'SELECT * FROM recovery_checkpoints ORDER BY version DESC LIMIT 1')]);
@@ -161,7 +161,7 @@ export class Bus {
     return {...result[6].results[0],epoch:writer.epoch,sync_complete:false};
   }
   async state(actor) {
-    const row = await s(this.db, `SELECT consumed,
+    const row = await s(this.db, `SELECT id AS aperture,consumed,
       (SELECT epoch FROM transport_meta WHERE id=1) AS epoch,
       (SELECT retained_after FROM transport_meta WHERE id=1) AS retained_after,
       (SELECT checkpoint_version FROM transport_meta WHERE id=1) AS checkpoint_version,
@@ -285,18 +285,25 @@ export class Bus {
   async history(actor, after, limit) {
     if (!safeInt(after)||!safeInt(limit)||limit<1||limit>100) throw new Refusal('INVALID_PAGE');
     await this.retained(actor,after);
-    const state=await this.state(actor);
-    const messages=(await this.db.batch([epochGuard(this.db,actor),
+    const reads=await this.db.batch([epochGuard(this.db,actor),
       guard(this.db,'?>=(SELECT retained_after FROM transport_meta WHERE id=1)',after),s(this.db,`SELECT m.*,
       (SELECT disposition FROM acknowledgements WHERE aperture=? AND seq=m.seq LIMIT 1) AS my_disposition
-      FROM messages m WHERE seq>? ORDER BY seq LIMIT ?`,actor.id,after,limit+1)]))[2].results;
+      FROM messages m WHERE seq>? ORDER BY seq LIMIT ?`,actor.id,after,limit+1),
+      s(this.db,`SELECT id AS aperture,consumed,(SELECT epoch FROM transport_meta WHERE id=1) AS epoch,
+        (SELECT retained_after FROM transport_meta WHERE id=1) AS retained_after,
+        (SELECT checkpoint_version FROM transport_meta WHERE id=1) AS checkpoint_version,
+        (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
+        (SELECT COUNT(*) FROM messages) AS window_row_count,unixepoch() AS server_time
+        FROM apertures WHERE id=? AND credential_hash=? AND revoked=0`,actor.id,actor.hash)]);
+    const messages=reads[2].results,state=reads[3].results[0];
+    if(!state) throw new Refusal('UNAUTHORIZED',401);
     const more=messages.length>limit;
     return {...state,messages:messages.slice(0,limit),has_more:more,history_only:true};
   }
   async head(actor, env) {
     const reads=await this.db.batch([
       epochGuard(this.db,actor),
-      s(this.db,`SELECT consumed,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
+      s(this.db,`SELECT id AS aperture,consumed,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
         (SELECT epoch FROM transport_meta WHERE id=1) AS epoch,
         (SELECT retained_after FROM transport_meta WHERE id=1) AS retained_after,
         (SELECT checkpoint_version FROM transport_meta WHERE id=1) AS checkpoint_version,
