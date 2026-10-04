@@ -3,8 +3,9 @@
 ## Active bounded source build: COM transport v1
 
 - **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
-- **CANDIDATE SOURCE:** draft PR #761 transport commit `68c48bffa56ac0a9386c12cf96b775397165bc5f`; CI for this advance pending. Prior `5c3ed1bb` exact-head CI passed Ubuntu/Windows.
-- **EARNED:** 14 Python tests, 12 Node groups, 88 local workerd/D1 assertions. Restricted separate head capability with bounded fields, GitHub anchor and atomic author audit/version check. Ordinary credentials/extra fields refused; audit failure rolls back; concurrent writers yield one success/one conflict; revocation prevents further authoring. Prior duplicate/depth/rate and direct/shared safeguards retained.
+- **CANDIDATE SOURCE:** draft PR #761 transport commit `c2c363546094f7ecea6dc0ac0b34be20d50d0003`; CI for this advance pending. Prior `2545aed7` exact-head CI passed Ubuntu/Windows.
+- **EARNED:** 14 Python tests, 13 Node groups, 97 local workerd/D1 assertions. Configured daily shared cap (60 / 86400 seconds) joins the short caps atomically; old-within-day slow sends refused, directs/replays unaffected, expiry and concurrency tested. Prior restricted authoring/request/rate safeguards retained.
+- **CC RATE RECHECK:** `5983326090`, accepted at `5983360185`, closes five P9 properties. P10 repetition remains observation-only; no semantic body refusal. Reconciler repeated-body reporting still open.
 - **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
 - **OPEN:** retention/checkpoint, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Restricted head authoring is source/local tested, not hosted/provisioned. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
 - **ACTUAL CLIENT:** Framework Build `5983140685` = CAPABILITY_CEILING (no private authenticated HTTPS write/ack surface); Codex/CC hosted checks pending. This supersedes the later Campfire comment's generic all-pending matrix.
