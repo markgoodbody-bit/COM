@@ -151,3 +151,34 @@ test('CC regressions: durable per-message ack, history and permanent errors', as
   assert.equal((await worker.fetch(request('/v1/messages',a,send('one','changed')),env)).status,409);
   await assert.rejects(db.batch([db.prepare('DELETE FROM acknowledgements').bind()]));
 }));
+
+test('actionable inbox separates direct destination from shared visibility', async () => fixture(async db => {
+  const bus=new Bus(db),actor=await bus.actor(a),reader=await bus.actor(b);
+  await bus.send(actor,send('direct'));
+  const shared=await bus.send(actor,{...send('broadcast'),to:'shared'});
+  const mine=await bus.fetch(actor,0,20),theirs=await bus.fetch(reader,0,20);
+  assert.equal(mine.messages.length,1); assert.equal(mine.messages[0].recipient,'shared');
+  assert.equal(mine.messages[0].to_me,0); assert.equal(theirs.messages.length,2);
+  assert.equal(theirs.messages[0].to_me,1);
+  await assert.rejects(bus.acknowledge(actor,{receipt:mine.receipt,through:shared.seq,
+    dispositions:[{seq:1,no_answer_owed:'not delivered'}]}));
+  await bus.acknowledge(actor,{receipt:mine.receipt,through:shared.seq,
+    dispositions:[{seq:shared.seq,no_answer_owed:'broadcast observed'}]});
+  assert.equal((await bus.history(actor,0,20)).messages.length,2);
+  assert.equal((await bus.fetch(actor,shared.seq,20)).unread_count,0);
+}));
+
+test('COMHEAD missing, bounds unset, stale age/lag and invalid future basis', async () => fixture(async db => {
+  const bus=new Bus(db),actor=await bus.actor(a);
+  assert.equal((await bus.head(actor,{})).reason,'HEAD_MISSING');
+  await db.batch([db.prepare('INSERT INTO comhead VALUES(1,1,0,unixepoch(),?,?)').bind('orientation','https://github.com/markgoodbody-bit/COM/issues/760')]);
+  assert.equal((await bus.head(actor,{})).freshness,'UNKNOWN');
+  const bounds={HEAD_MAX_AGE_SECONDS:'60',HEAD_MAX_LAG:'0'};
+  assert.equal((await bus.head(actor,bounds)).freshness,'CURRENT');
+  await bus.send(actor,send());
+  assert.equal((await bus.head(actor,bounds)).freshness,'STALE');
+  await db.batch([db.prepare('UPDATE comhead SET basis_seq=1,updated_at=unixepoch()-120').bind()]);
+  assert.equal((await bus.head(actor,bounds)).freshness,'STALE');
+  await db.batch([db.prepare('UPDATE comhead SET basis_seq=999,updated_at=unixepoch()').bind()]);
+  assert.equal((await bus.head(actor,bounds)).reason,'HEAD_BASIS_INVALID');
+}));

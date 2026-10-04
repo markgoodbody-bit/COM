@@ -33,7 +33,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
   try {
     runtime = new Miniflare(nativeOptions(options));
     let db = await runtime.getD1Database('DB');
-    const schema = readFileSync(join(root,'schema.sql'),'utf8');
+    const schema = readFileSync(join(root,'schema.sql'),'utf8').replace(/^--.*$/gm,'');
     const statements = schema.match(/\s*CREATE TRIGGER[\s\S]*?END;|[^;]+;/g);
     for (const sql of statements) await db.prepare(sql).run();
     for (const [id,token] of [['codex',codex],['framework',framework]]) {
@@ -41,6 +41,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     }
     check((await call('/v1/state','wrong')).status,401);
     check((await call('/v1/messages?after=0',framework)).data.unread_count,0);
+    check((await call('/v1/head',framework)).data.reason,'HEAD_MISSING');
     const first=await call('/v1/messages',codex,message()); check(first.status,200);
     check((await call('/v1/messages',codex,message())).data.seq,first.data.seq);
     check((await call('/v1/messages',codex,message('one','conflict'))).status,409);
@@ -48,6 +49,8 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     const page=(await call('/v1/messages?after=0',framework)).data;
     check(page.page_count,1);
     check((await call('/v1/state',framework)).data.consumed,0);
+    check((await call('/v1/messages?after=0',codex)).data.unread_count,0);
+    check((await call('/v1/history',codex)).data.messages.length,1);
     check((await call('/v1/ack',framework,{receipt:page.receipt,through:1})).status,400);
     check((await call('/v1/ack',framework,{receipt:page.receipt,through:2,dispositions:[{seq:1,no_answer_owed:'synthetic'}]})).status,503);
     check((await call('/v1/state',framework)).data.consumed,0);
@@ -70,14 +73,28 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     db=await runtime.getD1Database('DB');
     check((await call('/v1/state',framework)).data.consumed,1);
     check((await call('/v1/state',framework)).data.head_seq,finalHead);
+    await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'true',HEAD_MAX_AGE_SECONDS:'60',HEAD_MAX_LAG:'0'}}));
+    db=await runtime.getD1Database('DB');
+    await db.prepare('INSERT INTO comhead VALUES(1,1,?,unixepoch(),?,?)').bind(finalHead,'synthetic orientation','https://github.com/markgoodbody-bit/COM/issues/760').run();
+    check((await call('/v1/head',framework)).data.freshness,'CURRENT');
+    const claude='c'.repeat(43);
+    await db.prepare('INSERT INTO apertures(id,credential_hash) VALUES (?,?)').bind('claude',await digest(claude)).run();
+    const broadcast=await call('/v1/messages',framework,{...message('broadcast'),to:'shared'});
+    check(broadcast.status,200);
+    const sharedPage=(await call('/v1/messages?after=0',claude)).data;
+    check(sharedPage.page_count,1);
+    check(sharedPage.messages[0].recipient,'shared');
+    check((await call('/v1/ack',claude,{receipt:sharedPage.receipt,through:sharedPage.through,
+      dispositions:[{seq:sharedPage.through,no_answer_owed:'synthetic broadcast'}]})).status,200);
+    check((await call('/v1/head',framework)).data.freshness,'STALE');
     const catchup=(await call('/v1/messages?after=1&limit=3',framework)).data;
-    check([catchup.page_count,catchup.unread_count,catchup.has_more],[3,8,true]);
-    check((await call('/v1/history?after=0',framework)).data.messages.length,9);
-    check((await db.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,1);
+    check([catchup.page_count,catchup.unread_count,catchup.has_more],[3,9,true]);
+    check((await call('/v1/history?after=0',framework)).data.messages.length,10);
+    check((await db.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,2);
     check((await call('/v1/ack',framework,ack)).status,200);
     await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'false'}}));
     check((await call('/v1/messages',framework,message('closed'))).status,503);
-    check((await call('/v1/state',framework)).data.head_seq,finalHead);
+    check((await call('/v1/state',framework)).data.head_seq,broadcast.data.seq);
     console.log(JSON.stringify({status:'LOCAL_WORKER_D1_PASS_NOT_HOSTED_PASS',checks,
       synthetic_only:true,remote_resources_created:0,real_aperture_exchange:false}));
   } finally {

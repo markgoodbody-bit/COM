@@ -66,10 +66,10 @@ export class Bus {
     if (anchor !== null && (typeof anchor !== 'string' || !anchorPattern.test(anchor))) throw new Refusal('INVALID_ANCHOR');
     if (kind === 'decision' && anchor === null) throw new Refusal('DECISION_ANCHOR_REQUIRED');
     const db = this.db;
-    if (!await s(db,'SELECT id FROM apertures WHERE id=? AND revoked=0',recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
+    if (!await s(db,"SELECT id FROM apertures WHERE id=? AND (revoked=0 OR id='shared')",recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
     let results;
     try { results = await db.batch([
-      guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND revoked=0)`, actor.id, actor.hash, recipient),
+      guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND (revoked=0 OR id='shared'))`, actor.id, actor.hash, recipient),
       s(db, `INSERT INTO messages(sender,recipient,kind,github_anchor,request_key,body,received_at)
         VALUES(?,?,?,?,?,?,unixepoch()) ON CONFLICT(sender,request_key) DO NOTHING`, actor.id, recipient, kind, anchor, key, body),
       guard(db, 'EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=? AND body=? AND recipient=? AND kind=? AND github_anchor IS ?)', actor.id, key, body, recipient, kind, anchor),
@@ -88,10 +88,10 @@ export class Bus {
       guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND consumed=?)`, actor.id, actor.hash, actor.id, after),
       s(db, 'DELETE FROM deliveries WHERE aperture=? AND disposition IS NULL', actor.id),
       s(db, `INSERT INTO deliveries(receipt,aperture,start_seq,end_seq)
-        SELECT ?,?,?,MAX(seq) FROM (SELECT seq FROM messages WHERE seq>? ORDER BY seq LIMIT ?) HAVING MAX(seq) IS NOT NULL`, receipt, actor.id, after, after, limit),
-      s(db, 'SELECT * FROM messages WHERE seq>? ORDER BY seq LIMIT ?', after, limit),
+        SELECT ?,?,?,MAX(seq) FROM (SELECT seq FROM messages WHERE seq>? AND recipient IN (?,'shared') ORDER BY seq LIMIT ?) HAVING MAX(seq) IS NOT NULL`, receipt, actor.id, after, after, actor.id, limit),
+      s(db, "SELECT *,recipient=? AS to_me FROM messages WHERE seq>? AND recipient IN (?,'shared') ORDER BY seq LIMIT ?",actor.id, after, actor.id, limit),
       s(db, `SELECT (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
-        (SELECT COUNT(*) FROM messages WHERE seq>?) AS unread_count, unixepoch() AS server_time`, after)
+        (SELECT COUNT(*) FROM messages WHERE seq>? AND recipient IN (?,'shared')) AS unread_count, unixepoch() AS server_time`, after,actor.id)
     ]);
     const messages = results[3].results;
     return {...results[4].results[0], messages, receipt: messages.length ? receipt : null,
@@ -115,7 +115,7 @@ export class Bus {
     const disposition=JSON.stringify(canonical);
     const db = this.db;
     const conditions=canonical.flatMap(row=>[
-      guard(db, `EXISTS(SELECT 1 FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=? AND m.seq=?)`,receipt,row.seq),
+      guard(db, `EXISTS(SELECT 1 FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=? AND m.seq=? AND m.recipient IN (?,'shared'))`,receipt,row.seq,actor.id),
       guard(db, '? IS NULL OR EXISTS(SELECT 1 FROM messages WHERE seq=? AND sender=?)',row.answered_by??null,row.answered_by??null,actor.id)
     ]);
     await db.batch([
@@ -123,7 +123,7 @@ export class Bus {
       guard(db, `EXISTS(SELECT 1 FROM deliveries d JOIN apertures a ON a.id=d.aperture
         WHERE d.receipt=? AND d.aperture=? AND d.end_seq=? AND a.consumed IN(d.start_seq,d.end_seq)
         AND (d.disposition IS NULL OR d.disposition=?))`, receipt, actor.id, through, disposition),
-      guard(db, '(SELECT COUNT(*) FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=?)=?',receipt,canonical.length),
+      guard(db, "(SELECT COUNT(*) FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=? AND m.recipient IN (?,'shared'))=?",receipt,actor.id,canonical.length),
       ...conditions,
       ...canonical.map(row=>s(db,'INSERT INTO acknowledgements(receipt,aperture,seq,disposition) VALUES (?,?,?,?) ON CONFLICT(receipt,seq) DO NOTHING',receipt,actor.id,row.seq,JSON.stringify(row))),
       s(db, 'UPDATE apertures SET consumed=? WHERE id=?', through, actor.id),
@@ -140,6 +140,27 @@ export class Bus {
     const more=messages.length>limit;
     return {...state,messages:messages.slice(0,limit),has_more:more,history_only:true};
   }
+  async head(actor, env) {
+    const reads=await this.db.batch([
+      s(this.db,`SELECT consumed,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
+        unixepoch() AS server_time FROM apertures WHERE id=? AND credential_hash=? AND revoked=0`,actor.id,actor.hash),
+      s(this.db,'SELECT version,basis_seq,updated_at,body,github_anchor FROM comhead WHERE id=1')
+    ]);
+    const state=reads[0].results[0],snapshot=reads[1].results[0]??null;
+    if (!state) throw new Refusal('UNAUTHORIZED',401);
+    const ageBound=Number(env.HEAD_MAX_AGE_SECONDS),lagBound=Number(env.HEAD_MAX_LAG);
+    let freshness='UNKNOWN',reason='HEAD_MISSING';
+    if (snapshot) {
+      reason='FRESHNESS_BOUNDS_UNSET';
+      if (/^(0|[1-9][0-9]*)$/.test(env.HEAD_MAX_AGE_SECONDS??'') && /^(0|[1-9][0-9]*)$/.test(env.HEAD_MAX_LAG??'') && safeInt(ageBound) && safeInt(lagBound)) {
+        const age=state.server_time-snapshot.updated_at, lag=state.head_seq-snapshot.basis_seq;
+        if (age<0 || lag<0 || !anchorPattern.test(snapshot.github_anchor)) reason='HEAD_BASIS_INVALID';
+        else if (age>ageBound || lag>lagBound) {freshness='STALE';reason='HEAD_BOUND_EXCEEDED';}
+        else {freshness='CURRENT';reason='WITHIN_CONFIGURED_BOUNDS';}
+      }
+    }
+    return {...state,snapshot,freshness,reason,sync_complete:false};
+  }
 }
 
 export default {
@@ -151,6 +172,7 @@ export default {
       const actor = await bus.actor(auth.startsWith('Bearer ') ? auth.slice(7) : '');
       const url = new URL(request.url);
       if (request.method === 'GET' && url.pathname === '/v1/state') return response(await bus.state(actor));
+      if (request.method === 'GET' && ['/v1/head','/v1/health'].includes(url.pathname)) return response(await bus.head(actor,env));
       if (request.method === 'GET' && url.pathname === '/v1/history') {
         const after=url.searchParams.get('after')??'0',limit=url.searchParams.get('limit')??'20';
         if (!/^\d+$/.test(after)||!/^\d+$/.test(limit)) throw new Refusal('INVALID_PAGE');

@@ -1,5 +1,37 @@
 # COM transport: first storage-contract slice
 
+## Current routing and head candidate (Framework 5983018442)
+
+Normal `/v1/messages` is now an actionable inbox: only `recipient == this
+aperture` or `recipient == shared` is delivered. Its unread count is scoped
+the same way. Every delivered message needs its own disposition; other-recipient
+messages do not. This is routing, not private mail: all authenticated apertures
+can inspect all retained messages through observation-only `/v1/history`, behind
+or ahead of their consumed cursor. History creates no receipt or acknowledgement.
+`to_me` is 1 for direct mail and 0 for shared rows; both require disposition.
+
+`shared` is a reserved destination with a non-credential hash sentinel and no
+valid bearer. It is not a session or newly registered participant. Ack membership
+and count guards use the same inbox filter, including across legitimate sequence
+holes and unrelated-recipient rows.
+
+Authenticated `/v1/head` and `/v1/health` read a tiny versioned COMHEAD snapshot
+and transport state in one D1 batch: snapshot version, basis_seq, updated_at,
+body and GitHub anchor; current head_seq and server time. Missing snapshot,
+unset/invalid bounds or future/invalid basis is UNKNOWN. Exceeding either bound
+is STALE; CURRENT means within configured age and sequence-lag bounds only.
+Every head response still says sync_complete=false: freshness is not complete
+message consumption. Snapshot authoring is operator-only SQL preparation in
+tests; there is no public head-update endpoint or approved hosted authoring path.
+
+`HEAD_MAX_AGE_SECONDS` and `HEAD_MAX_LAG` must be explicitly configured unsigned
+integer strings. Tests use synthetic limits; no production limits have been
+agreed or silently defaulted. These additions passed nine Node groups and
+36 actual local runtime assertions, plus the original 14 Python fixture tests.
+No remote migration, deployment, resource or credential was created.
+The retained historical sections below are superseded where they describe a
+whole-bus inbox, no head endpoint or unset history semantics.
+
 ## Current adapter repairs after CC hostile review
 
 CC #760 comment 5974895782 found four real gaps in the previous green candidate.

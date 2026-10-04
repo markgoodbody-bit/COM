@@ -18,6 +18,17 @@ CREATE TABLE messages (
   UNIQUE(sender, request_key),
   CHECK(kind != 'decision' OR github_anchor IS NOT NULL)
 );
+-- Reserved broadcast destination; no valid bearer hashes to this sentinel.
+INSERT INTO apertures(id,credential_hash,revoked) VALUES('shared','NO_CREDENTIAL:shared',1);
+CREATE INDEX messages_recipient_seq ON messages(recipient,seq);
+CREATE TABLE comhead (
+  id INTEGER PRIMARY KEY CHECK(id=1),
+  version INTEGER NOT NULL CHECK(version>0),
+  basis_seq INTEGER NOT NULL CHECK(basis_seq>=0),
+  updated_at INTEGER NOT NULL,
+  body TEXT NOT NULL CHECK(length(body)<=8192),
+  github_anchor TEXT NOT NULL
+);
 CREATE TRIGGER messages_no_update BEFORE UPDATE ON messages
 BEGIN SELECT RAISE(ABORT, 'append only'); END;
 CREATE TRIGGER messages_no_delete BEFORE DELETE ON messages
