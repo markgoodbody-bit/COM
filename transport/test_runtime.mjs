@@ -9,7 +9,7 @@ import {join, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {digest} from './worker.mjs';
 import {accountForPage} from './client.mjs';
-import {advanceCheckpoint} from './recovery.mjs';
+import {advanceCheckpoint,resolveGap} from './recovery.mjs';
 import {exportArchive,verifyArchive,restoreArchive,archiveHistory} from './archive.mjs';
 const require = createRequire(import.meta.url);
 const {Miniflare, convertV4MiniflareOptions} = require(process.env.COM_MINIFLARE_MODULE || 'miniflare');
@@ -18,7 +18,7 @@ const nativeOptions = options => ({...convertV4MiniflareOptions(options),
 const root = dirname(fileURLToPath(import.meta.url));
 const codex = 'a'.repeat(43), framework = 'b'.repeat(43);
 const testEpoch='1'.repeat(32);
-const rateConfig={TRANSPORT_EPOCH:testEpoch,SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
+const rateConfig={TRANSPORT_EPOCH:testEpoch,SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60',MESSAGE_CAPACITY:'10000'};
 
 test('local Workers/D1 exchange, rollback, replay, concurrency and restart', async () => {
   const temporary = mkdtempSync(join(tmpdir(),'com-workerd-'));
@@ -248,7 +248,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     const restoredEpoch='3'.repeat(32);
     restoredRuntime=new Miniflare(nativeOptions({...options,name:'com-restore',d1Databases:{DB:'com-restored-fixture'},
       bindings:{WRITES_ENABLED:'true',...rateConfig,TRANSPORT_EPOCH:restoredEpoch}}));
-    const fresh=await restoredRuntime.getD1Database('DB');
+    let fresh=await restoredRuntime.getD1Database('DB');
     for (const statement of statements) await fresh.prepare(statement).run();
     await assert.rejects(restoreArchive(fresh,text+' ',independentHash,schemaHash)); checks++;
     check((await fresh.prepare('SELECT COUNT(*) AS n FROM messages').first()).n,0);
@@ -261,9 +261,9 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     const reexport=await exportArchive(fresh,archiveArgs);
     check(reexport.sha256,independentHash); // all tables, metadata and allocation watermark
     await assert.rejects(restoreArchive(fresh,text,independentHash,schemaHash)); checks++;
-    const fetchRestored=async (path,epoch=null)=> {
-      const res=await restoredRuntime.dispatchFetch('https://com.invalid'+path,{headers:{Authorization:'Bearer '+framework,
-        ...(epoch===null?{}:{'X-COM-Epoch':epoch})}});
+    const fetchRestored=async (path,epoch=null,body)=> {
+      const res=await restoredRuntime.dispatchFetch('https://com.invalid'+path,{method:body?'POST':'GET',headers:{Authorization:'Bearer '+framework,
+        'Content-Type':'application/json',...(epoch===null?{}:{'X-COM-Epoch':epoch})},...(body?{body:JSON.stringify(body)}:{})});
       return {status:res.status,data:await res.json()};
     };
     check((await fetchRestored('/v1/state')).data.status,'RECOVERY_UNBOUND');
@@ -283,9 +283,70 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     check((await fetchRestored('/v1/state')).data.consumed,1);
     check((await fresh.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,verified.tables.acknowledgements.length);
     check((await fetchRestored('/v1/state')).data.head_seq,rateHead);
+    const missing=verified.tables.messages.filter(m=>m.seq>1 && m.seq<=rateHead && ['framework','shared'].includes(m.recipient));
+    const recoveryInput={archive_text:text,archive_sha256:independentHash,schema_sha256:schemaHash,
+      aperture:'framework',current_epoch:restoredEpoch,checkpoint_version:2,expected_consumed:1,
+      dispositions:missing.map(m=>({seq:m.seq,no_answer_owed:'Synthetic recovery review; no current action authorised'})),
+      github_anchor:archiveArgs.github_anchor};
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,dispositions:recoveryInput.dispositions.slice(1)}),/GAP_NOT_ACCOUNTED_FOR/); checks++;
+    const duplicate=recoveryInput.dispositions.map((row,i)=>i===1?recoveryInput.dispositions[0]:row);
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,dispositions:duplicate}),/GAP_NOT_ACCOUNTED_FOR/); checks++;
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,checkpoint_version:3}),/GAP_CONTEXT_MISMATCH/); checks++;
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,current_epoch:'f'.repeat(32)}),/GAP_CONTEXT_MISMATCH/); checks++;
+    const incompletePacket=JSON.parse(text);
+    incompletePacket.tables.messages=incompletePacket.tables.messages.filter(m=>m.seq!==missing[0].seq);
+    const incompleteText=JSON.stringify(incompletePacket);
+    const incompleteHash=createHash('sha256').update(incompleteText).digest('hex');
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,archive_text:incompleteText,archive_sha256:incompleteHash,
+      dispositions:recoveryInput.dispositions.slice(1)})); checks++;
+    const foreign=verified.tables.messages.find(m=>m.sender!=='framework');
+    const badAnswer=[...recoveryInput.dispositions]; badAnswer[0]={seq:missing[0].seq,answered_by:foreign.seq};
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,dispositions:badAnswer})); checks++;
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM recovery_dispositions').first()).n,0);
+    check((await fetchRestored('/v1/state')).data.consumed,1);
+    await fresh.prepare("CREATE TRIGGER fail_gap BEFORE INSERT ON gap_resolutions BEGIN SELECT RAISE(ABORT,'synthetic failure'); END").run();
+    await assert.rejects(resolveGap(fresh,recoveryInput)); checks++;
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM recovery_dispositions').first()).n,0);
+    check((await fetchRestored('/v1/state')).data.consumed,1);
+    await fresh.prepare('DROP TRIGGER fail_gap').run();
+    check((await fetchRestored('/v1/gap-resolve',restoredEpoch,{through:rateHead})).status,404);
+    const resumed=await resolveGap(fresh,recoveryInput);
+    check([resumed.old_epoch,resumed.retained_boundary],[checkpoint.new_epoch,rateHead]);
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM recovery_dispositions').first()).n,missing.length);
+    check((await fetchRestored('/v1/state')).data.consumed,rateHead);
+    check((await fetchRestored('/v1/recovery')).data.recovery_mode,'RETAINED_HISTORY');
+    check((await fresh.prepare('SELECT consumed FROM apertures WHERE id=?').bind('claude').first()).consumed,sharedPage.through);
+    await resolveGap(fresh,recoveryInput);
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM gap_resolutions').first()).n,1);
+    const claudeMissing=verified.tables.messages.filter(m=>m.seq>sharedPage.through && m.seq<=rateHead && ['claude','shared'].includes(m.recipient));
+    await resolveGap(fresh,{...recoveryInput,aperture:'claude',expected_consumed:sharedPage.through,
+      dispositions:claudeMissing.map(m=>({seq:m.seq,no_answer_owed:'Independent synthetic Claude recovery review'}))});
+    check((await fresh.prepare('SELECT consumed FROM apertures WHERE id=?').bind('claude').first()).consumed,rateHead);
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM gap_resolutions').first()).n,2);
+    const changed=recoveryInput.dispositions.map((row,i)=>i?row:{...row,no_answer_owed:'changed'});
+    await assert.rejects(resolveGap(fresh,{...recoveryInput,dispositions:changed})); checks++;
+    await assert.rejects(fresh.prepare('DELETE FROM recovery_dispositions').run()); checks++;
+    await assert.rejects(fresh.prepare('DELETE FROM gap_resolutions').run()); checks++;
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,verified.tables.acknowledgements.length);
+    const next=await fetchRestored('/v1/messages',restoredEpoch,{request_key:'after-gap',body:'synthetic new message',to:'framework'});
+    check(next.status,200);
+    check((await fetchRestored('/v1/messages?after='+rateHead,restoredEpoch)).data.messages.map(m=>m.seq),[next.data.seq]);
+    const currentCount=(await fresh.prepare('SELECT COUNT(*) AS n FROM messages').first()).n;
+    const capacity=currentCount+2;
+    await restoredRuntime.setOptions(nativeOptions({...options,name:'com-restore',d1Databases:{DB:'com-restored-fixture'},
+      bindings:{WRITES_ENABLED:'true',...rateConfig,TRANSPORT_EPOCH:restoredEpoch,MESSAGE_CAPACITY:String(capacity)}}));
+    fresh=await restoredRuntime.getD1Database('DB');
+    const capped=await Promise.all(Array.from({length:6},(_,i)=>fetchRestored('/v1/messages',restoredEpoch,{request_key:'capacity'+i,body:'synthetic',to:'framework'})));
+    check(capped.filter(r=>r.status===200).length,2);
+    check(capped.filter(r=>r.data.status==='CAPACITY_CLOSED').length,4);
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM messages').first()).n,capacity);
+    const watermark=await fresh.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").first();
+    check((await fetchRestored('/v1/messages',restoredEpoch,{request_key:'capacity-refused',body:'synthetic',to:'framework'})).data.capacity.limit,capacity);
+    check(await fresh.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").first(),watermark);
+    check((await fetchRestored('/v1/messages',restoredEpoch,{request_key:'after-gap',body:'synthetic new message',to:'framework'})).data.seq,next.data.seq);
     console.log(JSON.stringify({status:'LOCAL_LOGICAL_ARCHIVE_RESTORE_PASS_NOT_HOSTED_DR',archive_sha256:independentHash,
       schema_sha256:schemaHash,archive_rows:archive.row_count,archive_bytes:bytes.length,bootstrap_observation_only:true,
-      inbox_resume_authorised:false,github_anchor:archiveArgs.github_anchor}));
+      inbox_resume_authorised:true,github_anchor:archiveArgs.github_anchor}));
     console.log(JSON.stringify({status:'LOCAL_WORKER_D1_PASS_NOT_HOSTED_PASS',checks,
       synthetic_only:true,remote_resources_created:0,real_aperture_exchange:false}));
   } finally {

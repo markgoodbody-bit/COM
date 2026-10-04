@@ -21,6 +21,34 @@ CREATE TRIGGER recovery_checkpoints_no_update BEFORE UPDATE ON recovery_checkpoi
 BEGIN SELECT RAISE(ABORT, 'append only'); END;
 CREATE TRIGGER recovery_checkpoints_no_delete BEFORE DELETE ON recovery_checkpoints
 BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TABLE recovery_dispositions (
+  aperture TEXT NOT NULL REFERENCES apertures(id),
+  old_epoch TEXT NOT NULL,
+  archive_sha256 TEXT NOT NULL,
+  original_seq INTEGER NOT NULL,
+  disposition TEXT NOT NULL,
+  PRIMARY KEY(aperture,old_epoch,archive_sha256,original_seq)
+);
+CREATE TABLE gap_resolutions (
+  aperture TEXT NOT NULL REFERENCES apertures(id),
+  current_epoch TEXT NOT NULL,
+  checkpoint_version INTEGER NOT NULL REFERENCES recovery_checkpoints(version),
+  old_epoch TEXT NOT NULL,
+  archive_sha256 TEXT NOT NULL,
+  prior_consumed INTEGER NOT NULL,
+  retained_boundary INTEGER NOT NULL,
+  github_anchor TEXT NOT NULL,
+  server_time INTEGER NOT NULL,
+  PRIMARY KEY(aperture,current_epoch,checkpoint_version)
+);
+CREATE TRIGGER recovery_dispositions_no_update BEFORE UPDATE ON recovery_dispositions
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TRIGGER recovery_dispositions_no_delete BEFORE DELETE ON recovery_dispositions
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TRIGGER gap_resolutions_no_update BEFORE UPDATE ON gap_resolutions
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TRIGGER gap_resolutions_no_delete BEFORE DELETE ON gap_resolutions
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
 CREATE TABLE mutation_guard (id INTEGER PRIMARY KEY CHECK(id=1), ok INTEGER NOT NULL CHECK(ok=1));
 CREATE TABLE apertures (
   id TEXT PRIMARY KEY,

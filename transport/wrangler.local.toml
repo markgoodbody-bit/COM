@@ -15,6 +15,7 @@ SEND_MAX_ALL = "60"
 SEND_MAX_SHARED = "12"
 SHARED_LONG_WINDOW_SECONDS = "86400"
 SHARED_LONG_MAX = "60"
+MESSAGE_CAPACITY = "10000"
 [[d1_databases]]
 binding = "DB"
 database_name = "com-transport-local-synthetic"

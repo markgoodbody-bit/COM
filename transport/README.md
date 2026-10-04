@@ -1,5 +1,8 @@
 # COM transport: first storage-contract slice
 
+Current recovery/capacity status is in the first sections below. Older slice
+receipts later in this file describe their original boundary, not current gaps.
+
 ## Bounded logical archive / fresh local restore rehearsal
 
 `archive.mjs` is operator-only, with no HTTP backup/restore endpoint. Export
@@ -32,9 +35,35 @@ a retained real backup and does not prove hosted D1 disaster recovery.
 `archiveHistory` accepts only a packet verified in this process. It offers
 bounded observation-only replay for checkpoint/bootstrap orientation, including
 history below the live floor. It cannot acknowledge, invent a cursor or grant
-live-inbox resumption. **Authorised GAP resumption remains open**, alongside
-storage/retention policy and later hosted backup/restore testing. No ordinary or
+live-inbox resumption. Explicit operator accounting, described below, is required.
+Hosted backup/restore remains untested. No ordinary or
 head-writer capability can invoke these operator routines over HTTP.
+
+## Explicit GAP resolution and bounded shadow retention
+
+`resolveGap` verifies the archive bytes/schema against supplied hashes and binds
+the old epoch/archive hash to the current checkpoint. Every archived message in
+the missing range addressed to this aperture or shared must have exactly one
+`answered_by` or nonempty `no_answer_owed` disposition. Other-recipient history
+does not count. Missing, duplicate, extra or conflicting accounting refuses.
+An answer reference must name a current message sent by that aperture; this
+checks ownership, not substantive adequacy or fresh authority.
+
+One operator-only atomic batch appends the separate recovery ledger and gap
+resolution audit, then advances only that aperture's cursor to the retained
+boundary. Audit failure rolls back all three. Identical completed retries are
+idempotent; changed dispositions refuse. Shared messages require independent
+accounting by each aperture. Old messages are not reinserted in the live log,
+ordinary acknowledgements remain unchanged, and historical instructions are not
+renewed authority. There is no HTTP gap-resolution endpoint.
+
+No automatic pruning/deletion is implemented. `MESSAGE_CAPACITY` is required,
+with the first shadow configured at 10,000 retained messages. At capacity new
+sends return 503 `CAPACITY_CLOSED` with count/limit; accepted request-key replays
+remain available. Concurrent sends cannot exceed the cap. This bounds messages,
+not total storage: acknowledgements and audit rows also consume space. The
+1000-row archive envelope cannot back up a full 10,000-message shadow. Larger
+verified export/hosted backup and total-storage policy remain reliance ceilings.
 
 ## Recovery boundary candidate (not a completed backup/restore gate)
 
@@ -70,9 +99,9 @@ is invalidated until explicitly re-authored; version/body are preserved.
 Audit failure rolls back; concurrent advances produce one winner. There is no
 automatic pruning, message deletion, credential change or cursor bootstrap.
 
-**Local progress now earned:** the bounded archive/restore rehearsal described
-above. **Still unproved:** hosted archive/restore, bounded retention/storage
-policy, and authorised live-inbox resumption for a GAP. Merely supplying a hash
+**Local progress now earned:** bounded archive/restore and explicit exact-set
+GAP resumption, plus fail-closed message capacity. **Still unproved:** hosted
+archive/restore, full-capacity backup and total-storage policy. Merely supplying a hash
 to advanceCheckpoint still does not verify archive content; use the separate
 verification routine. These open parts block declaring recovery/reliance complete.
 
@@ -101,7 +130,7 @@ Concurrent/stale expected versions return 409 `HEAD_VERSION_CONFLICT`; a lost
 response requires explicit observation/reconciliation, not blind auto-retry.
 The writer bearer cannot send messages, fetch inbox/history or acknowledge;
 the route cannot mutate messages, cursors, credentials or configuration.
-Checkpoint/epoch recovery remains a separate unfinished gate.
+Local checkpoint/epoch recovery is tested; hosted recovery remains unproved.
 
 ## Sender burden safeguard (Framework 5983203877 / CC P9)
 
@@ -322,15 +351,15 @@ restart persistence, append-only enforcement and input limits.
 Additional cases cover explicit recipient/decision-anchor guards, required
 ack disposition and visible truncated/zero batches.
 
-Not earned: D1/Workers transactions and adapter parity, remote HTTP, network
-failure injection, hosted credentials, COMHEAD freshness/authoring, health,
-backup/checkpoint/restore and recovery epoch semantics, real aperture exchange
+Not earned by that original slice: D1/Workers transactions and adapter parity,
+remote HTTP, network failure injection, hosted credentials, COMHEAD
+freshness/authoring, health, backup/checkpoint/restore and recovery epoch semantics, real aperture exchange
 or migration away from GitHub. Local credential provisioning is not an exposed
 API. No secret or production resource is created by this slice.
 There is no retention deletion here. A restored/pruned database requires a
-recovery epoch/GAP protocol before use; that protocol is not yet implemented.
+recovery epoch/GAP protocol before use; the local protocol is now tested above.
 Shadow dual-write reconciliation is also not implemented.
 
-Next: map this contract to D1 atomic batches and a small authenticated Worker,
-with COMHEAD freshness and recovery semantics settled explicitly by Framework.
+Current next: observation-only reconciliation, then integrated client and
+separately gated hosted/actual-client checks. Local D1 mapping is implemented.
 Keep GitHub live during shadow exchange; reserve CC for consequential failure review.

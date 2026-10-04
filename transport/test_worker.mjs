@@ -12,7 +12,7 @@ const root = dirname(fileURLToPath(import.meta.url));
 const python = process.env.COM_TEST_PYTHON || 'python';
 const a = 'a'.repeat(43), b = 'b'.repeat(43);
 const testEpoch='1'.repeat(32);
-const rateConfig={TRANSPORT_EPOCH:testEpoch,SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
+const rateConfig={TRANSPORT_EPOCH:testEpoch,SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60',MESSAGE_CAPACITY:'10000'};
 function database(path) {
   function execute(statements) {
     const run = spawnSync(python, ['-B', join(root, 'sqlite_bridge.py')], {

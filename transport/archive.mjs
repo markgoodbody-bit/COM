@@ -9,7 +9,9 @@ const tables={
   head_audit:['version','aperture','capability','server_time','prior_basis_seq','new_basis_seq','github_anchor'],
   deliveries:['receipt','aperture','start_seq','end_seq','disposition'],
   acknowledgements:['receipt','aperture','seq','disposition'],
-  recovery_checkpoints:['version','prior_epoch','new_epoch','retained_after','head_seq','server_time','archive_sha256','github_anchor','prior_head_anchor']
+  recovery_checkpoints:['version','prior_epoch','new_epoch','retained_after','head_seq','server_time','archive_sha256','github_anchor','prior_head_anchor'],
+  recovery_dispositions:['aperture','old_epoch','archive_sha256','original_seq','disposition'],
+  gap_resolutions:['aperture','current_epoch','checkpoint_version','old_epoch','archive_sha256','prior_consumed','retained_boundary','github_anchor','server_time']
 };
 const names=Object.keys(tables),maxRows=1000,maxBytes=1048576;
 const verifiedPackets=new WeakSet();

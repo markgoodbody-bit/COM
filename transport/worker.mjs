@@ -178,12 +178,12 @@ export class Bus {
     if (anchor !== null && (typeof anchor !== 'string' || !anchorPattern.test(anchor))) throw new Refusal('INVALID_ANCHOR');
     if (kind === 'decision' && anchor === null) throw new Refusal('DECISION_ANCHOR_REQUIRED');
     const db = this.db;
-    const limits = ['SEND_WINDOW_SECONDS','SEND_MAX_ALL','SEND_MAX_SHARED','SHARED_LONG_WINDOW_SECONDS','SHARED_LONG_MAX'].map(name => {
+    const limits = ['SEND_WINDOW_SECONDS','SEND_MAX_ALL','SEND_MAX_SHARED','SHARED_LONG_WINDOW_SECONDS','SHARED_LONG_MAX','MESSAGE_CAPACITY'].map(name => {
       const raw=this.env[name], number=Number(raw);
       if (!/^[1-9][0-9]*$/.test(raw??'') || !safeInt(number)) throw new Refusal('RATE_BOUNDS_UNSET',503);
       return number;
     });
-    const [window,allLimit,sharedLimit,longWindow,longLimit]=limits;
+    const [window,allLimit,sharedLimit,longWindow,longLimit,capacity]=limits;
     if (!await s(db,"SELECT id FROM apertures WHERE id=? AND (revoked=0 OR id='shared')",recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
     let results;
     try { results = await db.batch([
@@ -192,15 +192,15 @@ export class Bus {
       s(db, `INSERT INTO messages(sender,recipient,kind,github_anchor,request_key,body,received_at)
         SELECT ?,?,?,?,?,?,unixepoch() WHERE
         EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=?) OR
-        ((SELECT COUNT(*) FROM messages WHERE sender=? AND received_at>unixepoch()-?)<? AND
+        ((SELECT COUNT(*) FROM messages)<? AND (SELECT COUNT(*) FROM messages WHERE sender=? AND received_at>unixepoch()-?)<? AND
          (?!='shared' OR ((SELECT COUNT(*) FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?)<?
           AND (SELECT COUNT(*) FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?)<?)))
         ON CONFLICT(sender,request_key) DO NOTHING`, actor.id, recipient, kind, anchor, key, body,
-          actor.id,key,actor.id,window,allLimit,recipient,actor.id,window,sharedLimit,actor.id,longWindow,longLimit),
+          actor.id,key,capacity,actor.id,window,allLimit,recipient,actor.id,window,sharedLimit,actor.id,longWindow,longLimit),
       guard(db, `NOT EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=?) OR
         EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=? AND body=? AND recipient=? AND kind=? AND github_anchor IS ?)`, actor.id,key,actor.id, key, body, recipient, kind, anchor),
       s(db, `SELECT (SELECT seq FROM messages WHERE sender=? AND request_key=?) AS seq,
-        unixepoch() AS server_time,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
+        unixepoch() AS server_time,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,(SELECT COUNT(*) FROM messages) AS message_count,
         MAX(1,COALESCE((SELECT received_at FROM messages WHERE sender=? AND received_at>unixepoch()-?
           ORDER BY received_at DESC LIMIT 1 OFFSET ?)+?-unixepoch(),0),
           CASE WHEN ?='shared' THEN COALESCE((SELECT received_at FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?
@@ -216,6 +216,9 @@ export class Bus {
     }
     const result=results[4].results[0];
     if (result.seq===null) {
+      if (result.message_count>=capacity) {
+        const refusal=new Refusal('CAPACITY_CLOSED',503); refusal.capacity={message_count:result.message_count,limit:capacity}; throw refusal;
+      }
       const refusal=new Refusal('RATE_LIMITED',429);
       refusal.retryAfter=Math.min(Math.max(window,longWindow),result.retry_after_seconds);
       throw refusal;
@@ -358,6 +361,7 @@ export default {
       return response({status: error instanceof Refusal ? error.message : 'STORAGE_OR_ATOMIC_REFUSAL',
         ...(error instanceof Refusal && error.retryAfter!==undefined ? {retry_after_seconds:error.retryAfter}:{}),
         ...(error instanceof Refusal && error.recovery ? {recovery:error.recovery}:{}),
+        ...(error instanceof Refusal && error.capacity ? {capacity:error.capacity}:{}),
         sync_complete: false, server_time: Math.floor(Date.now()/1000)}, error instanceof Refusal ? error.status : 503);
     }
   }
