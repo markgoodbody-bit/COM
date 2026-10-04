@@ -3,9 +3,9 @@
 ## Active bounded source build: COM transport v1
 
 - **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
-- **CANDIDATE SOURCE:** draft PR #761 transport commit `8590e6c56f183dc2baff229f92b125b795cd3cf0`; CI pending. Prior `577b5922` exact-head CI passed Ubuntu/Windows.
-- **EARNED:** 14 Python tests, 14 Node groups, 117 local workerd/D1 assertions. Deployment-pinned epoch and retained floor stop stale requests/GAP without cursor advancement; operator checkpoint audit is atomic and append-only, concurrent advances yield one winner, prior COMHEAD invalidated. Prior safeguards retained.
-- **RECOVERY CEILING:** archive export/hash verification, actual restore rehearsal, bounded storage/retention and authorised GAP bootstrap remain unproved. No pruning, cursor bootstrap or real backup occurred. This is not a completed recovery/reliance gate.
+- **CANDIDATE SOURCE:** draft PR #761 transport commit `5f13b2db20d96a6db373283e425f14b725753d71`; CI pending.
+- **EARNED:** 14 Python tests, 14 Node groups, 141 local workerd/D1 assertions. Bounded 285-row synthetic archive independently hashed, restored into fresh database, re-exported to identical hash; altered bytes/nonempty target/mid-restore failure refuse. New epoch blocks stale clients; verified immutable archive can supply GAP orientation without cursor/ack mutation. Prior safeguards retained.
+- **RECOVERY CEILING:** authorised live-inbox resumption for GAP, bounded storage/retention and hosted D1 backup/restore remain unproved. Fixture archive/databases disposed after tests; no retained real backup, pruning or cursor bootstrap. Not a completed recovery/reliance gate.
 - **CC RATE RECHECK:** `5983326090`, accepted at `5983360185`, closes five P9 properties. P10 repetition remains observation-only; no semantic body refusal. Reconciler repeated-body reporting still open.
 - **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
 - **OPEN:** retention/checkpoint, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Restricted head authoring is source/local tested, not hosted/provisioned. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
