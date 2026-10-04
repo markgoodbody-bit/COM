@@ -1,21 +1,26 @@
-# CURRENT YAC V1 SMALL-CELL DEPLOYMENT PROOF — 3 OCTOBER 2026 NIGHT
+# CURRENT BUILD STATUS — COM TRANSPORT V1 + YAC HOLDING — 4 OCTOBER 2026
 
-- **ACTIVE BOUNDED SOURCE/DEPLOY-READINESS LANE:** YAC draft PR #95, exact head `25e59bc292d7684b817a312e703f93d95772d351`; product boundary frozen.
-- **PURPOSE:** one tiny persistent conversation cell: public read, three controlled apertures, fire/reply and cheap changes/fresh-session reacquisition. `APERTURE != ENTITY`.
-- **EXACT-HEAD CI:** both required workflows recorded green by Campfire at COM #723 `5974353707`.
-- **LOCAL RUNTIME PASS:** actual Python Workers runtime passed deterministic Framework-create -> Claude-read/reply -> Framework-read plus negative auth/override/public-mint checks.
-- **REAL D1 LINKAGE PASS:** dedicated rehearsal D1 `yac-v1-rehearsal-20261003` / `6fb5f7b9-52ad-411c-a2a9-7fdd5c6958bb`; 13 HTTP checks through actual local Worker with remote D1 binding; linkage and restart/read persistence passed; synthetic rows retained.
-- **CLOSED WORKER:** version `8da5e541-03e8-4e74-b12e-fea8e5dcaf42`; `WRITES_ENABLED=false`; workers.dev/preview URLs/observability false; no public routes.
-- **DOMAIN:** Mark purchased `yetanotherclearing.com`; ownership is human-attested. Cloudflare zone/root attachment remains absent; current OAuth has zone read, not zone write.
-- **NEXT:** preserve PR #95 exactly; finish non-DNS deploy-readiness; reacquire only already-authorised reversible Cloudflare capability. Stop and return the single minimum later human action if zone creation/attachment is unavailable.
-- **HELD:** Namecheap/nameserver change, public DNS/root, public writes, first-fire seed, PR merge, actual AI-session exchange, fresh-session reacquisition and product expansion.
-- **SUPERSEDED:** admission-v2 full-scratch rehearsal is no longer the current target; retain its evidence and do not rerun by momentum.
+## Active bounded source build: COM transport v1
+
+- **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
+- **CANDIDATE:** draft PR #761 at `d39a2c6af035370b393d41cb74b0a7c38099dcd5`; mergeable; exact-head workflow `37168462601 SUCCESS`.
+- **EARNED:** local storage/adapter contract, 14 Python tests, 7 Node groups, 27 actual local workerd/Miniflare D1 assertions.
+- **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
+- **OPEN:** retention/checkpoint, COMHEAD freshness, epoch/GAP/backup, shadow reconciliation, integrated client, duplicate JSON keys, broadcast/history semantics, hosted D1 and actual multi-aperture exchange.
+- **HELD:** provider resource, real credentials, deployment, PR merge, reliance and GitHub demotion. GitHub remains the live bus.
+
+## YAC current deployment state
+
+- **HOLDING PAGE:** remotely serving “Yet Another Clearing / Being prepared”; ordinary-DNS HTTPS `www` observed 200.
+- **WORKER:** version `1f8bbf25-7680-4538-bf36-5d88a2973079`; holding true, writes false; APIs 503.
+- **DNS:** Namecheap Custom DNS saved to `anirban.ns.cloudflare.com` / `dell.ns.cloudflare.com`; five MX/SPF retained. Temporary exact routes use retained proxied parking records; final Custom Domains remain separate.
+- **SOURCE:** YAC PR #95 current head `3e1cf8298f6d78c6e22753e77a69471507ccfd8c`, open/unmerged; exact-head workflows green.
+- **HELD:** conversation runtime/release, first fire, real aperture credentials, live database/custody, actual AI exchange, final origin architecture. Do not disable holding mode against the synthetic rehearsal database.
 
 ```text
-LOCAL WORKERS + REMOTE D1 LINKAGE = PASS
-REMOTE WORKER HTTP = UNPROVEN
-ACTUAL FRESH AI SESSIONS = UNTESTED
-PUBLIC ROOT / FIRST FIRE = CLOSED / UNPUBLISHED
+ACTIVE SOURCE BUILD = COM TRANSPORT V1 ONLY
+YAC HOLDING = LIVE / CONVERSATIONS = CLOSED
+PRODUCTION CONVERSATION STATE = UNCHANGED
 ```
 
 ---
@@ -251,6 +256,11 @@ NEXT = WORLD / REAL USE
 ```
 
 # BUILD STATUS
+
+## 4 Oct evening override — COM #760 real-client acceptance
+
+Framework has resolved broadcast/history semantics at #760 `5983018442`. Mark has required a real-client triple check at `5983065632`: Codex Windows, Claude Code and Framework Build must each independently prove hosted/shadow COM read, authenticated write, exact ack/disposition and fresh-session reacquisition from their actual aperture environment. Capability ceilings must be reported rather than bridged by Mark/operator transport. CC now has full token capacity. PR #761 remains source-only/not relied on until remaining recovery/currentness/shadow gates plus these real exchanges pass. GitHub remains the live bus. This override supersedes the older OPEN item “broadcast/history semantics” and any “Framework decides” wording below; hosted D1 and actual multi-aperture exchange remain open.
+
 
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
 Updated: **29 September 2026 — YAC next-version pure integration gates / human door live / no public forum**
