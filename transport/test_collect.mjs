@@ -1,17 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {collect,readOnlyReader} from './collect.mjs';
-const epoch='a'.repeat(32),url='https://github.com/markgoodbody-bit/COM/issues/760';
+const epoch='a'.repeat(32),url='https://github.com/markgoodbody-bit/COM/issues/764';
 const marker={aperture:'codex',epoch,head_seq:101,retained_after:0,checkpoint_version:0,consumed:0,server_time:100};
 function fixture() {
   const calls=[];
   const rows=Array.from({length:101},(_,i)=>({epoch,seq:i+1,sender:'codex',request_key:'trial.'+(i+1),recipient:'shared',kind:'message',body:'synthetic '+i,github_anchor:null}));
-  const comments=rows.map((row,i)=>({id:i+1,html_url:url+'#issuecomment-'+(i+1),updated_at:'fixed',user:{login:'markgoodbody-bit'},body:'COM_SHADOW_V1\n'+JSON.stringify({scope:'trial',message:row})}));
+  const comments=rows.map((row,i)=>({id:i+1,html_url:url+'#issuecomment-'+(i+1),created_at:'2026-10-04T20:00:00Z',updated_at:'2026-10-04T20:00:00Z',user:{login:'markgoodbody-bit'},body:'COM_SHADOW_V1\n'+JSON.stringify({scope:'trial',message:row})}));
   const json=data=>({status:200,raw:JSON.stringify(data),link:null});
   const readGithub=async path=>{
     calls.push(['github',path]);
-    if(path.includes('/comments?')) {const page=Number(new URL('https://api.github.com'+path).searchParams.get('page'));return {...json(comments.slice((page-1)*100,page*100)),link:page===1?'<https://api.github.com/repos/markgoodbody-bit/COM/issues/760/comments?per_page=100&page=2>; rel="next"':null};}
-    return json({number:760,comments:comments.length,html_url:url,updated_at:'fixed'});
+    if(path.includes('/comments?')) {const page=Number(new URL('https://api.github.com'+path).searchParams.get('page'));return {...json(comments.slice((page-1)*100,page*100)),link:page===1?'<https://api.github.com/repos/markgoodbody-bit/COM/issues/764/comments?per_page=100&page=2>; rel="next"':null};}
+    return json({number:764,comments:comments.length,html_url:url,updated_at:'fixed'});
   };
   const readBus=async path=>{
     calls.push(['bus',path]);
@@ -20,16 +20,16 @@ function fixture() {
     if(path==='/v1/recovery') return json({...marker,checkpoint:null});
     return json(marker);
   };
-  return {calls,rows,comments,readGithub,readBus,json,args:{readGithub,readBus,issue:760,scope:'trial',aperture:'codex',epoch,
+  return {calls,rows,comments,readGithub,readBus,json,args:{readGithub,readBus,issue:764,scope:'trial',aperture:'codex',epoch,
     head_bounds:{max_age_seconds:60,max_lag:50},trusted_authors:{codex:['markgoodbody-bit']}}};
 }
 test('independent twice-paginated sources match with reproducible private receipts',async()=>{
-  const f=fixture(),before=JSON.stringify([f.rows,f.comments]),r=await collect(f.args);
+  const f=fixture(),before=JSON.stringify([f.rows,f.comments]),{result:r,private_receipts}=await collect(f.args);
   assert.equal(r.status,'SUPPLIED_SNAPSHOTS_MATCH');assert.equal(r.messages.length,101);
   assert.equal(r.sync_complete,false);assert.equal(JSON.stringify([f.rows,f.comments]),before);
   assert.equal(f.calls.filter(([s,p])=>s==='github'&&p.includes('page=2')).length,2);
   assert.equal(f.calls.filter(([s,p])=>s==='bus'&&p.includes('after=100')).length,2);
-  assert.ok(r.source_receipts.every(r=>r.sha256.length===64&&r.raw));
+  assert.ok(private_receipts.every(r=>r.sha256.length===64&&r.raw));
   assert.ok(f.calls.every(([,p])=>!p.includes('/ack')&&!p.includes('/messages')));
 });
 test('pagination omission, failed page and stalled/repeated bus rows stay UNKNOWN',async()=>{
@@ -38,32 +38,32 @@ test('pagination omission, failed page and stalled/repeated bus rows stay UNKNOW
     f=>({...f.args,readGithub:async p=>p.includes('page=2')?{status:503,raw:'{}'}:f.readGithub(p)}),
     f=>({...f.args,readBus:async p=>p.includes('after=100')?f.json({...marker,history_only:true,messages:[],has_more:true}):f.readBus(p)}),
     f=>({...f.args,readBus:async p=>p.includes('after=100')?f.json({...marker,history_only:true,messages:[f.rows[0]],has_more:false}):f.readBus(p)})]) {
-    const f=fixture();assert.equal((await collect(mutate(f))).status,'UNKNOWN');
+    const f=fixture();assert.equal((await collect(mutate(f))).result.status,'UNKNOWN');
   }
 });
 test('body edit without GitHub marker change is caught across complete scans',async()=>{
   const f=fixture();let firstPages=0;
   const readGithub=async p=>{if(p.includes('page=1')&&++firstPages===2) f.comments[0].body+=' ';return f.readGithub(p);};
-  const r=await collect({...f.args,readGithub});assert.equal(r.status,'UNKNOWN');
+  const {result:r}=await collect({...f.args,readGithub});assert.equal(r.status,'UNKNOWN');
   assert.equal(r.issues[0].code,'SOURCE_CHANGED_ACROSS_COLLECTION');
 });
 test('bus head/ack changes, epoch changes and unaccounted retained floor refuse',async()=>{
   for(const change of [{head_seq:102},{epoch:'b'.repeat(32)},{retained_after:1}]) {
     const f=fixture();const readBus=async p=>p==='/v1/state'?f.json({...marker,...change}):f.readBus(p);
-    assert.equal((await collect({...f.args,readBus})).status,'UNKNOWN');
+    assert.equal((await collect({...f.args,readBus})).result.status,'UNKNOWN');
   }
   const f=fixture();let pages=0;
   const readBus=async p=>{if(p.includes('after=0')&&++pages===2) f.rows[0].my_disposition={seq:1,no_answer_owed:'changed'};return f.readBus(p);};
-  assert.equal((await collect({...f.args,readBus})).issues[0].code,'SOURCE_CHANGED_ACROSS_COLLECTION');
+  assert.equal((await collect({...f.args,readBus})).result.issues[0].code,'SOURCE_CHANGED_ACROSS_COLLECTION');
 });
 test('source author, witness URL and anchor existence are independently checked',async()=>{
   for(const change of [f=>f.comments[0].user.login='stranger',f=>f.comments[0].html_url=url+'#issuecomment-999']) {
-    const f=fixture();change(f);assert.equal((await collect(f.args)).status,'UNKNOWN');
+    const f=fixture();change(f);assert.equal((await collect(f.args)).result.status,'UNKNOWN');
   }
-  const f=fixture();const readGithub=async p=>p.endsWith('/issues/760')?f.json({number:760,comments:101,html_url:url,updated_at:'changing '+f.calls.length}):f.readGithub(p);
-  assert.equal((await collect({...f.args,readGithub})).status,'UNKNOWN');
+  const f=fixture();const readGithub=async p=>p.endsWith('/issues/764')?f.json({number:764,comments:101,html_url:url,updated_at:'changing '+f.calls.length}):f.readGithub(p);
+  assert.equal((await collect({...f.args,readGithub})).result.status,'UNKNOWN');
   const g=fixture();g.rows[0].github_anchor=url+'#issuecomment-999';
-  assert.equal((await collect(g.args)).status,'UNKNOWN');
+  assert.equal((await collect(g.args)).result.status,'UNKNOWN');
 });
 test('reader is GET-only, epoch-bound, refuses redirect/path escape, excludes bearer from receipts',async()=>{
   const seen=[];const reader=readOnlyReader({origin:'https://bus.invalid',service:'bus',epoch,token:'private',fetchImpl:async(u,options)=>{seen.push({u,options});return new Response('{}');}});
@@ -78,7 +78,28 @@ test('missing Link receipt, duplicate source JSON keys and truncated bus count r
   const f=fixture();
   for(const readGithub of [async p=>{const r=await f.readGithub(p);delete r.link;return r;},
     async p=>p.includes('/comments?')?{status:200,link:null,raw:'[{"id":1,"id":2}]'}:f.readGithub(p)])
-    assert.equal((await collect({...f.args,readGithub})).status,'UNKNOWN');
+    assert.equal((await collect({...f.args,readGithub})).result.status,'UNKNOWN');
   const readBus=async p=>p.includes('/history?')?f.json({...marker,window_row_count:500,history_only:true,messages:[f.rows.at(-1)],has_more:false}):f.readBus(p);
-  assert.equal((await collect({...f.args,readBus})).issues[0].code,'BUS_HEAD_OR_COUNT_NOT_REACHED');
+  assert.equal((await collect({...f.args,readBus})).result.issues[0].code,'BUS_HEAD_OR_COUNT_NOT_REACHED');
+});
+test('CC G1: edited or undated witnesses and wrong dedicated issue stay UNKNOWN',async()=>{
+  const f=fixture();f.comments[0].updated_at='2026-10-04T23:59:00Z';
+  assert.equal((await collect(f.args)).result.issues[0].code,'GITHUB_WITNESS_EDITED');
+  delete f.comments[0].created_at;
+  assert.equal((await collect(f.args)).result.issues[0].code,'GITHUB_WITNESS_EDITED');
+  assert.equal((await collect({...f.args,issue:760})).result.issues[0].code,'INVALID_COLLECTION_CONFIG');
+});
+test('CC G2: shareable success/failure excludes raw head, message, reason and private receipts',async()=>{
+  const f=fixture(),secret='PRIVATE_SOURCE_BODY_SENTINEL';
+  f.rows[0].body=secret;f.comments[0].body='COM_SHADOW_V1\n'+JSON.stringify({scope:'trial',message:f.rows[0]});
+  f.rows[0].my_disposition={seq:1,no_answer_owed:secret};
+  const original=f.readBus;
+  const readBus=async p=>{const r=await original(p);if(p==='/v1/head'){const d=JSON.parse(r.raw);d.snapshot.body=secret;return f.json(d);}return r;};
+  const {result,private_receipts}=await collect({...f.args,readBus});
+  assert.equal(result.status,'SUPPLIED_SNAPSHOTS_MATCH');assert.equal(result.input_provenance,'COLLECTED');
+  assert.ok(!JSON.stringify(result).includes(secret));assert.ok(!Object.hasOwn(result,'source_receipts'));
+  assert.ok(JSON.stringify(private_receipts).includes(secret));
+  const failed=await collect({...f.args,readGithub:async()=>({status:503,raw:secret,link:null})});
+  assert.equal(failed.result.status,'UNKNOWN');assert.ok(!JSON.stringify(failed.result).includes(secret));
+  assert.ok(JSON.stringify(failed.private_receipts).includes(secret));
 });

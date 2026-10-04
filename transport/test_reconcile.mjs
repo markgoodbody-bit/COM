@@ -16,6 +16,7 @@ function fixture() {
 test('reconciler matches explicit identities, reports repeats, never mutates inputs',()=>{
   const input=fixture(),before=JSON.stringify(input),r=reconcile(input);
   assert.equal(r.status,'SUPPLIED_SNAPSHOTS_MATCH'); assert.equal(r.sync_complete,false);
+  assert.equal(r.input_provenance,'SUPPLIED');
   assert.equal(JSON.stringify(input),before); assert.equal(r.repeated_shared[0].count,2);
   assert.deepEqual(r.messages.map(m=>m.routing),['shared','shared','direct']);
 });

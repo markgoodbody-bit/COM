@@ -209,20 +209,20 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     check((await call('/v1/state',framework)).data.consumed,1);
     // Independent synthetic GitHub witness has no corresponding bus message.
     // Actual workerd history must paginate without issuing a delivery/ack.
-    const witnessURL='https://github.com/markgoodbody-bit/COM/issues/760';
+    const witnessURL='https://github.com/markgoodbody-bit/COM/issues/764';
     const beforeCollection=(await exportArchive(db,{epoch:testEpoch,schema_sha256:'0'.repeat(64),github_anchor:witnessURL})).text;
-    const observed=await collect({issue:760,scope:'shadow',aperture:'framework',epoch:testEpoch,
+    const {result:observed,private_receipts:collectionReceipts}=await collect({issue:764,scope:'shadow',aperture:'framework',epoch:testEpoch,
       head_bounds:{max_age_seconds:86400,max_lag:50},trusted_authors:{codex:['synthetic-author']},
       readGithub:async path=>({status:200,link:null,raw:JSON.stringify(path.includes('/comments?')?[{
-        id:123,html_url:witnessURL+'#issuecomment-123',user:{login:'synthetic-author'},
+        id:123,html_url:witnessURL+'#issuecomment-123',created_at:'2026-10-04T20:00:00Z',updated_at:'2026-10-04T20:00:00Z',user:{login:'synthetic-author'},
         body:'COM_SHADOW_V1\n'+JSON.stringify({scope:'shadow',message:{epoch:testEpoch,sender:'codex',request_key:'shadow.missing',
           recipient:'framework',kind:'message',body:'independent synthetic witness',github_anchor:null}})
-      }]:{number:760,comments:1,html_url:witnessURL,updated_at:'fixed'})}),
+      }]:{number:path.endsWith('/760')?760:764,comments:1,html_url:path.endsWith('/760')?'https://github.com/markgoodbody-bit/COM/issues/760':witnessURL,updated_at:'fixed'})}),
       readBus:async path=>{const r=await runtime.dispatchFetch('https://com.invalid'+path,{method:'GET',
         headers:{Authorization:'Bearer '+framework,'X-COM-Epoch':testEpoch}});return {status:r.status,raw:await r.text()};}});
     check(observed.status,'UNKNOWN');
     check(observed.messages.filter(m=>m.presence==='GITHUB_ONLY').length,1);
-    check(observed.source_receipts.filter(r=>r.source==='bus'&&r.path.includes('/history?')).length>=4,true);
+    check(collectionReceipts.filter(r=>r.source==='bus'&&r.path.includes('/history?')).length>=4,true);
     check((await exportArchive(db,{epoch:testEpoch,schema_sha256:'0'.repeat(64),github_anchor:witnessURL})).text,beforeCollection);
     check((await call('/v1/messages',framework,message('missing-epoch'),null)).status,428);
     check((await call('/v1/recovery',framework,undefined,null)).data.recovery_mode,'RETAINED_HISTORY');

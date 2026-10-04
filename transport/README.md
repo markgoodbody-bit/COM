@@ -44,12 +44,21 @@ allowed but the collected count must match. Nonzero retained floor refuses this
 collector: archived-window collection is not implemented. Both sources remain
 bounded to 1000 rows and total raw receipts to 4 MiB.
 
+The dedicated quiet witness issue is COM #764, enforced by the collector:
+https://github.com/markgoodbody-bit/COM/issues/764 . No general coordination
+discussion there. All bounded shadow witness envelopes must land there; a bus
+message absent from that issue remains BUS_ONLY. The 1000-comment ceiling applies
+to the entire issue, not just matching envelopes.
+
 GitHub requires complete numbered pagination, matching issue comment count,
 an explicit Link/no-next response marker and a second identical full scan.
 Each shadow witness is exactly `COM_SHADOW_V1` + newline + a JSON object with
 `scope` and `message`. One comment witnesses one message. The message carries
 epoch, sender, request_key, recipient, kind, body and github_anchor. Its witness
 URL is assigned from the observed comment id/html_url, not source-supplied text.
+Witness comments require valid created_at with updated_at exactly equal to it.
+Edited/undated witnesses return GITHUB_WITNESS_EDITED. Corrections are new
+comments with new request keys, never edits to old envelopes.
 Configured sender-to-GitHub-author allowlists are checked against API user.login.
 This binds an observed account, not a distinct aperture or independent reviewer:
 all apertures may share one GitHub account. Dual-write agreement is sender
@@ -65,8 +74,13 @@ Collector readers allow only fixed COM GitHub issue/comment and bus
 state/head/recovery/history GET routes, pin the bus epoch, and refuse redirects.
 Referenced consequential/head/checkpoint GitHub objects are read twice and must
 have the exact observed URL and identical payloads. Existence is not authority.
+The API returns `{ result, private_receipts }`, not raw receipts inside result.
 Each private raw response is retained with source/path/pass/SHA-256 for replay;
-credentials are not included. Do not post these raw receipts publicly.
+credentials are not included. Do not post these raw receipts publicly. The
+shareable result excludes source bodies, COMHEAD body and disposition reason
+text: it reports disposition type/reference/reason-present only. Bare comparator
+stamps input_provenance=SUPPLIED; collector stamps COLLECTED. These identify the
+code path, not independent validation, authority or global atomicity.
 
 Detected head/epoch/cursor/checkpoint/head-body/history-disposition/comment-body
 changes, failed pages, stalled sequences, missing author binding or anchor
@@ -74,7 +88,11 @@ failure return UNKNOWN. No writes, automatic repair or write retry is performed.
 Two equal observations cannot exclude an unobserved change-and-revert (ABA), nor
 establish a globally atomic GitHub+D1 snapshot. Observation times are recorded,
 not proof of simultaneity. Hosted collection and real dual-write remain untested;
-CC recheck is still required before accepting the reconciliation source gate.
+CC closed R1–R6 at `5983992233`; Framework accepted direct G1/G2 repair/testing
+without another recheck at `5984083007`. G1/G2 now have explicit local tests.
+Passing these earns LOCAL RECONCILIATION WITH CEILINGS only, not live acceptance.
+
+Next contract: [integrated Codex/CC shadow client](integrated-client-contract.md).
 
 ## Bounded logical archive / fresh local restore rehearsal
 

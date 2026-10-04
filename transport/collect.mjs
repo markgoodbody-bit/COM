@@ -25,12 +25,12 @@ export function readOnlyReader({origin,token,service,epoch,fetchImpl=fetch}) {
 }
 
 // Whole retained-window scans twice; never calls inbox (which issues receipts).
-// Returned source_receipts contain private raw source bodies: do not post them.
-export async function collect({readGithub,readBus,issue,scope,aperture,epoch,head_bounds,trusted_authors}={}) {
+// Private evidence is separate from the shareable result by construction.
+export async function collect({readGithub,readBus,issue=764,scope,aperture,epoch,head_bounds,trusted_authors}={}) {
   const receipts=[];
-  const fail=reason=>({status:'UNKNOWN',observation_only:true,sync_complete:false,authority_winner:null,
-    issues:[{code:reason}],source_receipts:receipts});
-  if(typeof readGithub!=='function'||typeof readBus!=='function'||!Number.isSafeInteger(issue)||issue<1||
+  const fail=reason=>({result:{status:'UNKNOWN',input_provenance:'COLLECTED',observation_only:true,sync_complete:false,authority_winner:null,
+    issues:[{code:reason}]},private_receipts:receipts});
+  if(typeof readGithub!=='function'||typeof readBus!=='function'||issue!==764||
     !/^[a-z0-9-]{1,64}$/.test(scope??'')||!/^[a-f0-9]{32}$/.test(epoch??'')||
     typeof aperture!=='string'||!trusted_authors||!head_bounds) return fail('INVALID_COLLECTION_CONFIG');
   let totalBytes=0;
@@ -80,6 +80,8 @@ export async function collect({readGithub,readBus,issue,scope,aperture,epoch,hea
       if(!comment.body.startsWith('COM_SHADOW_V1\n')) continue;
       const envelope=parsePayloadJson(comment.body.slice('COM_SHADOW_V1\n'.length));
       if(envelope.scope!==scope) continue;
+      if(typeof comment.created_at!=='string'||!Number.isFinite(Date.parse(comment.created_at))||
+        comment.updated_at!==comment.created_at) throw new Unknown('GITHUB_WITNESS_EDITED');
       const message=envelope.message;
       if(!message||message.epoch!==epoch||typeof message.request_key!=='string'||
         !Array.isArray(trusted_authors[message.sender])||!trusted_authors[message.sender].includes(comment.user?.login)) throw new Unknown('GITHUB_WITNESS_UNBOUND');
@@ -141,6 +143,6 @@ export async function collect({readGithub,readBus,issue,scope,aperture,epoch,hea
     const bus={...b2.marker,scope,complete:true,messages,window:b2.window,collection:b2.collection,checkpoint:b2.recovery.checkpoint,
       comhead:b2.head.snapshot?{...b2.head.snapshot,freshness:b2.head.freshness}:null,head_bounds};
     const result=reconcile({aperture,github:{scope,epoch,complete:true,collection:g2.collection,messages:g2.messages},bus});
-    return {...result,collection:'DOUBLE_READ_LOCAL_CONTRACT_NOT_GLOBAL_ATOMICITY',source_receipts:receipts};
+    return {result:{...result,input_provenance:'COLLECTED',collection:'DOUBLE_READ_LOCAL_CONTRACT_NOT_GLOBAL_ATOMICITY'},private_receipts:receipts};
   } catch(error) {return fail(error instanceof Unknown?error.message:'SOURCE_DECODE_OR_READER_FAILURE');}
 }

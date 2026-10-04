@@ -7,7 +7,7 @@ const integer=value=>Number.isSafeInteger(value)&&value>=0;
 const identity=row=>JSON.stringify([row.epoch,row.sender,row.request_key]);
 const content=row=>JSON.stringify([row.recipient,row.kind,row.body,row.github_anchor??null]);
 export function reconcile({github,bus,aperture}={}) {
-  const result={status:'UNKNOWN',observation_only:true,sync_complete:false,
+  const result={status:'UNKNOWN',input_provenance:'SUPPLIED',observation_only:true,sync_complete:false,
     authority_winner:null,issues:[],messages:[],repeated_shared:[],state:null};
   const issue=(code,details={})=>result.issues.push({code,...details});
   if (!github||!bus||typeof aperture!=='string'||!aperture||!Array.isArray(github.messages)||!Array.isArray(bus.messages)) {
@@ -45,7 +45,8 @@ export function reconcile({github,bus,aperture}={}) {
   const head=bus.comhead;
   result.state={epoch:bus.epoch,checkpoint_version:bus.checkpoint_version,
     retained_after:bus.retained_after,consumed:bus.consumed,head_seq:bus.head_seq,
-    gap:bus.consumed<bus.retained_after,comhead:head?{...head,claimed_freshness:head.freshness,freshness:'UNKNOWN'}:null};
+    gap:bus.consumed<bus.retained_after,comhead:head?{version:head.version??null,basis_seq:head.basis_seq,
+      updated_at:head.updated_at,github_anchor:head.github_anchor,claimed_freshness:head.freshness,freshness:'UNKNOWN'}:null};
   if (!head||!['CURRENT','STALE','UNKNOWN'].includes(head.freshness)||!integer(head.basis_seq)||
       head.basis_seq>bus.head_seq||!anchor.test(head.github_anchor??'')) issue('COMHEAD_UNKNOWN_OR_INVALID');
   else {
@@ -89,7 +90,7 @@ export function reconcile({github,bus,aperture}={}) {
     const entry={identity:JSON.parse(key),presence,seq:b?.seq??null,routing,
       github_recipient:g?.recipient??null,bus_recipient:b?.recipient??null,
       github_anchor:g?.github_anchor??null,bus_anchor:b?.github_anchor??null,
-      ack:b?.my_disposition??null};
+      ack:b?.my_disposition==null?{state:'NOT_OBSERVED'}:{state:'INVALID'} };
     result.messages.push(entry);
     if (presence!=='BOTH') issue(presence,{identity:entry.identity,consequential:row.kind==='decision'});
     else if (content(g)!==content(b)) issue('MESSAGE_DIFFERENCE',{identity:entry.identity});
@@ -97,10 +98,12 @@ export function reconcile({github,bus,aperture}={}) {
     if (b?.my_disposition!=null) {
       let disposition=b.my_disposition;
       try {if(typeof disposition==='string') disposition=JSON.parse(disposition);} catch {disposition=null;}
-      if (!disposition||disposition.seq!==b.seq||
+      if (!disposition||Object.keys(disposition).some(k=>!['seq','answered_by','no_answer_owed'].includes(k))||disposition.seq!==b.seq||
           !((integer(disposition.answered_by)&&disposition.answered_by>0&&disposition.no_answer_owed===undefined)||
           (disposition.answered_by===undefined&&typeof disposition.no_answer_owed==='string'&&disposition.no_answer_owed.trim())))
         issue('INVALID_OBSERVED_DISPOSITION',{identity:entry.identity});
+      else entry.ack=disposition.answered_by!==undefined?{state:'ANSWERED_BY',seq:disposition.seq,answered_by:disposition.answered_by}:
+        {state:'NO_ANSWER_OWED',seq:disposition.seq,reason_present:true};
       if (routing==='history') issue('OTHER_RECIPIENT_DISPOSITION',{identity:entry.identity});
     }
   }
