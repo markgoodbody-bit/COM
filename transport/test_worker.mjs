@@ -56,7 +56,7 @@ test('adapter duplicate delivery and accepted-write lost response', async () => 
   assert.equal(replay.seq, accepted.seq);
   assert.equal((await new Bus(db).state(await new Bus(db).actor(a))).head_seq, 1);
   const conflict = await worker.fetch(request('/v1/messages', a, send('one','changed')), env);
-  assert.equal(conflict.status, 503);
+  assert.equal(conflict.status, 409);
   assert.equal((await new Bus(db).state(await new Bus(db).actor(a))).head_seq, 1);
 }));
 
@@ -66,9 +66,9 @@ test('adapter read crash, exact ack and revoked-in-flight guard', async () => fi
   const page = await bus.fetch(reader, 0, 20);
   assert.equal((await bus.state(reader)).consumed, 0);
   await assert.rejects(bus.acknowledge(reader, {receipt:page.receipt,through:1}), /DISPOSITION/);
-  await assert.rejects(bus.acknowledge(reader, {receipt:page.receipt,through:2,no_answer_owed:'observed'}));
-  await bus.acknowledge(reader, {receipt:page.receipt,through:1,no_answer_owed:'observed'});
-  await bus.acknowledge(reader, {receipt:page.receipt,through:1,no_answer_owed:'observed'});
+  await assert.rejects(bus.acknowledge(reader, {receipt:page.receipt,through:2,dispositions:[{seq:1,no_answer_owed:'observed'}]}));
+  await bus.acknowledge(reader, {receipt:page.receipt,through:1,dispositions:[{seq:1,no_answer_owed:'observed'}]});
+  await bus.acknowledge(reader, {receipt:page.receipt,through:1,dispositions:[{seq:1,no_answer_owed:'observed'}]});
   await assert.rejects(bus.fetch(reader, 0, 20));
   await db.batch([db.prepare('UPDATE apertures SET revoked=1 WHERE id=?').bind('codex')]);
   await assert.rejects(bus.send(actor, send('two')));
@@ -81,9 +81,9 @@ test('adapter receipt replacement, wrong owner and decision anchors', async () =
   await assert.rejects(bus.send(actor, {...send(),to:'typo'}));
   await bus.send(actor, {...send(),kind:'decision',github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'});
   const page = await bus.fetch(reader, 0, 20);
-  await assert.rejects(bus.acknowledge(actor, {receipt:page.receipt,through:1,no_answer_owed:'observed'}));
+  await assert.rejects(bus.acknowledge(actor, {receipt:page.receipt,through:1,dispositions:[{seq:1,no_answer_owed:'observed'}]}));
   await bus.fetch(reader, 0, 20);
-  await assert.rejects(bus.acknowledge(reader, {receipt:page.receipt,through:1,no_answer_owed:'observed'}));
+  await assert.rejects(bus.acknowledge(reader, {receipt:page.receipt,through:1,dispositions:[{seq:1,no_answer_owed:'observed'}]}));
 }));
 
 test('client refuses clipped display, omitted disposition, or miscount', () => {
@@ -121,9 +121,33 @@ test('adapter absent aperture catches up with bounded pages on independent conne
     seen.push(...page.messages.map(row=>row.seq));
     const dispositions=page.messages.map(row=>({seq:row.seq,no_answer_owed:'synthetic'}));
     accountForPage(page,page.messages.map(row=>row.seq),dispositions);
-    await bus.acknowledge(reader,{receipt:page.receipt,through:page.through,no_answer_owed:'all synthetic observations'});
+    await bus.acknowledge(reader,{receipt:page.receipt,through:page.through,dispositions});
     cursor=page.through;
   }
   assert.deepEqual(seen,Array.from({length:13},(_,i)=>i+1));
   assert.equal((await bus.state(reader)).consumed,13);
+}));
+
+test('CC regressions: durable per-message ack, history and permanent errors', async () => fixture(async db => {
+  const bus=new Bus(db),actor=await bus.actor(a),reader=await bus.actor(b);
+  await bus.send(actor,send('one'));
+  await bus.send(actor,send('two'));
+  const page=await bus.fetch(reader,0,20);
+  const dispositions=page.messages.map(row=>({seq:row.seq,no_answer_owed:'synthetic '+row.seq}));
+  await assert.rejects(bus.acknowledge(reader,{receipt:page.receipt,through:page.through,dispositions:dispositions.slice(0,1)}));
+  assert.equal((await bus.state(reader)).consumed,0);
+  await bus.acknowledge(reader,{receipt:page.receipt,through:page.through,dispositions});
+  await bus.fetch(reader,page.through,20);
+  const kept=(await db.batch([db.prepare('SELECT * FROM acknowledgements ORDER BY seq').bind()]))[0].results;
+  assert.equal(kept.length,2);
+  assert.deepEqual(kept.map(row=>JSON.parse(row.disposition)),dispositions);
+  await bus.acknowledge(reader,{receipt:page.receipt,through:page.through,dispositions});
+  const history=await bus.history(reader,0,20);
+  assert.equal(history.messages.length,2); assert.equal(history.history_only,true);
+  assert.deepEqual(history.messages.map(row=>JSON.parse(row.my_disposition)),dispositions);
+  assert.equal(history.receipt,undefined); assert.equal((await bus.state(reader)).consumed,page.through);
+  const env={DB:db,WRITES_ENABLED:'true'};
+  assert.equal((await worker.fetch(request('/v1/messages',a,{...send('x'),to:'nobody'}),env)).status,400);
+  assert.equal((await worker.fetch(request('/v1/messages',a,send('one','changed')),env)).status,409);
+  await assert.rejects(db.batch([db.prepare('DELETE FROM acknowledgements').bind()]));
 }));

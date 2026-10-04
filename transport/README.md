@@ -1,5 +1,33 @@
 # COM transport: first storage-contract slice
 
+## Current adapter repairs after CC hostile review
+
+CC #760 comment 5974895782 found four real gaps in the previous green candidate.
+The adapter now retains completed delivery receipts and stores one append-only
+acknowledgement per message, atomically with the consumed cursor. Ack payload is
+`{receipt, through, dispositions:[{seq, answered_by}|{seq, no_answer_owed}]}`.
+The server verifies exact membership/count, sorted unique sequence IDs, valid
+answer authorship and replay-identical dispositions; omitted rows roll back.
+Completed dispositions survive further polling. Retention/storage bounds for
+these durable records still need a checkpoint/epoch policy before reliance.
+
+Authenticated `GET /v1/history?after=0&limit=20` permits bounded rereading of
+already-consumed messages, including this aperture's saved dispositions. It
+creates no delivery receipt and changes no consumed cursor. It is history,
+not a claim that a new aperture experienced the prior session's messages.
+
+Unknown recipient now returns 400; changed-payload request-key replay returns
+409 after a bounded read-only lookup. Unclassified storage/atomic failures
+remain 503 and incomplete; no automatic retry is implied.
+
+The Python `store.py` is the preserved first local fixture, not the controlling
+HTTP contract: it still has the earlier page-level ack interface. Its fetch was
+also patched not to erase completed dispositions. The current Worker and its
+Node/runtime tests control the per-message interface. The historical sections
+below describe earlier slices and their then-current ceilings; this section
+supersedes their page-level ack and missing-history descriptions.
+No hosted resource/migration/deployment follows from these source repairs.
+
 Task: [COM #760](https://github.com/markgoodbody-bit/COM/issues/760).
 This executable SQLite fixture is a candidate for the ordered bus contract,
 not a Cloudflare deployment or a replacement for GitHub COM.

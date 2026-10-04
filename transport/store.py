@@ -88,7 +88,7 @@ class Store:
             rows = self.db.execute('SELECT * FROM messages WHERE seq>? ORDER BY seq LIMIT ?',
                                    (after, limit)).fetchall()
             # One outstanding page per aperture; a refetch invalidates the old receipt.
-            self.db.execute('DELETE FROM deliveries WHERE aperture=?', (aperture['id'],))
+            self.db.execute('DELETE FROM deliveries WHERE aperture=? AND disposition IS NULL', (aperture['id'],))
             receipt = None
             if rows:
                 receipt = secrets.token_urlsafe(24)

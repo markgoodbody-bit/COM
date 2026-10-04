@@ -66,13 +66,19 @@ export class Bus {
     if (anchor !== null && (typeof anchor !== 'string' || !anchorPattern.test(anchor))) throw new Refusal('INVALID_ANCHOR');
     if (kind === 'decision' && anchor === null) throw new Refusal('DECISION_ANCHOR_REQUIRED');
     const db = this.db;
-    const results = await db.batch([
+    if (!await s(db,'SELECT id FROM apertures WHERE id=? AND revoked=0',recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
+    let results;
+    try { results = await db.batch([
       guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND revoked=0)`, actor.id, actor.hash, recipient),
       s(db, `INSERT INTO messages(sender,recipient,kind,github_anchor,request_key,body,received_at)
         VALUES(?,?,?,?,?,?,unixepoch()) ON CONFLICT(sender,request_key) DO NOTHING`, actor.id, recipient, kind, anchor, key, body),
       guard(db, 'EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=? AND body=? AND recipient=? AND kind=? AND github_anchor IS ?)', actor.id, key, body, recipient, kind, anchor),
       s(db, 'SELECT seq,unixepoch() AS server_time,(SELECT MAX(seq) FROM messages) AS head_seq FROM messages WHERE sender=? AND request_key=?', actor.id, key)
-    ]);
+    ]); } catch (error) {
+      const prior=await s(db,'SELECT * FROM messages WHERE sender=? AND request_key=?',actor.id,key).first();
+      if (prior && (prior.body!==body || prior.recipient!==recipient || prior.kind!==kind || prior.github_anchor!==anchor)) throw new Refusal('REQUEST_KEY_CONFLICT',409);
+      throw error;
+    }
     return results[3].results[0];
   }
   async fetch(actor, after, limit) {
@@ -80,7 +86,7 @@ export class Bus {
     const db = this.db; const receipt = crypto.randomUUID();
     const results = await db.batch([
       guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND consumed=?)`, actor.id, actor.hash, actor.id, after),
-      s(db, 'DELETE FROM deliveries WHERE aperture=?', actor.id),
+      s(db, 'DELETE FROM deliveries WHERE aperture=? AND disposition IS NULL', actor.id),
       s(db, `INSERT INTO deliveries(receipt,aperture,start_seq,end_seq)
         SELECT ?,?,?,MAX(seq) FROM (SELECT seq FROM messages WHERE seq>? ORDER BY seq LIMIT ?) HAVING MAX(seq) IS NOT NULL`, receipt, actor.id, after, after, limit),
       s(db, 'SELECT * FROM messages WHERE seq>? ORDER BY seq LIMIT ?', after, limit),
@@ -93,28 +99,46 @@ export class Bus {
       page_count: messages.length, has_more: results[4].results[0].unread_count > messages.length};
   }
   async acknowledge(actor, data) {
-    const {receipt, through, no_answer_owed: reason, answered_by: answer} = data;
+    const {receipt, through, dispositions} = data;
     if (!safeInt(through) || typeof receipt !== 'string' || receipt.length > 128) throw new Refusal('INVALID_ACK');
-    if ((reason === undefined) === (answer === undefined)) throw new Refusal('ACK_DISPOSITION_REQUIRED');
-    let disposition;
-    if (reason !== undefined) {
-      if (typeof reason !== 'string' || !reason.trim() || enc.encode(reason).length > 1024) throw new Refusal('INVALID_DISPOSITION');
-      disposition = 'no_answer_owed:' + reason;
-    } else {
-      if (!safeInt(answer) || answer === 0) throw new Refusal('INVALID_ANSWER');
-      disposition = 'answered_by:' + answer;
-    }
+    if (!Array.isArray(dispositions) || dispositions.length<1 || dispositions.length>100) throw new Refusal('ACK_DISPOSITION_REQUIRED');
+    const canonical=dispositions.map(row=>{
+      if (!row || !safeInt(row.seq) || row.seq===0 || (row.no_answer_owed===undefined)===(row.answered_by===undefined)) throw new Refusal('INVALID_DISPOSITION');
+      if (row.no_answer_owed!==undefined) {
+        if (typeof row.no_answer_owed!=='string' || !row.no_answer_owed.trim() || enc.encode(row.no_answer_owed).length>1024) throw new Refusal('INVALID_DISPOSITION');
+        return {seq:row.seq,no_answer_owed:row.no_answer_owed};
+      }
+      if (!safeInt(row.answered_by) || !row.answered_by) throw new Refusal('INVALID_ANSWER');
+      return {seq:row.seq,answered_by:row.answered_by};
+    });
+    if (canonical.some((row,i)=>i>0 && row.seq<=canonical[i-1].seq)) throw new Refusal('INVALID_DISPOSITION');
+    const disposition=JSON.stringify(canonical);
     const db = this.db;
+    const conditions=canonical.flatMap(row=>[
+      guard(db, `EXISTS(SELECT 1 FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=? AND m.seq=?)`,receipt,row.seq),
+      guard(db, '? IS NULL OR EXISTS(SELECT 1 FROM messages WHERE seq=? AND sender=?)',row.answered_by??null,row.answered_by??null,actor.id)
+    ]);
     await db.batch([
       guard(db, active, actor.id, actor.hash),
       guard(db, `EXISTS(SELECT 1 FROM deliveries d JOIN apertures a ON a.id=d.aperture
         WHERE d.receipt=? AND d.aperture=? AND d.end_seq=? AND a.consumed IN(d.start_seq,d.end_seq)
         AND (d.disposition IS NULL OR d.disposition=?))`, receipt, actor.id, through, disposition),
-      guard(db, '? IS NULL OR EXISTS(SELECT 1 FROM messages WHERE seq=? AND sender=?)', answer ?? null, answer ?? null, actor.id),
+      guard(db, '(SELECT COUNT(*) FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=?)=?',receipt,canonical.length),
+      ...conditions,
+      ...canonical.map(row=>s(db,'INSERT INTO acknowledgements(receipt,aperture,seq,disposition) VALUES (?,?,?,?) ON CONFLICT(receipt,seq) DO NOTHING',receipt,actor.id,row.seq,JSON.stringify(row))),
       s(db, 'UPDATE apertures SET consumed=? WHERE id=?', through, actor.id),
       s(db, 'UPDATE deliveries SET disposition=? WHERE receipt=?', disposition, receipt)
     ]);
     return this.state(actor);
+  }
+  async history(actor, after, limit) {
+    if (!safeInt(after)||!safeInt(limit)||limit<1||limit>100) throw new Refusal('INVALID_PAGE');
+    const state=await this.state(actor);
+    const messages=(await this.db.batch([s(this.db,`SELECT m.*,
+      (SELECT disposition FROM acknowledgements WHERE aperture=? AND seq=m.seq LIMIT 1) AS my_disposition
+      FROM messages m WHERE seq>? ORDER BY seq LIMIT ?`,actor.id,after,limit+1)]))[0].results;
+    const more=messages.length>limit;
+    return {...state,messages:messages.slice(0,limit),has_more:more,history_only:true};
   }
 }
 
@@ -127,6 +151,11 @@ export default {
       const actor = await bus.actor(auth.startsWith('Bearer ') ? auth.slice(7) : '');
       const url = new URL(request.url);
       if (request.method === 'GET' && url.pathname === '/v1/state') return response(await bus.state(actor));
+      if (request.method === 'GET' && url.pathname === '/v1/history') {
+        const after=url.searchParams.get('after')??'0',limit=url.searchParams.get('limit')??'20';
+        if (!/^\d+$/.test(after)||!/^\d+$/.test(limit)) throw new Refusal('INVALID_PAGE');
+        return response(await bus.history(actor,Number(after),Number(limit)));
+      }
       if (request.method === 'GET' && url.pathname === '/v1/messages') {
         const after = url.searchParams.get('after'); const limit = url.searchParams.get('limit') ?? '20';
         if (!after || !/^\d+$/.test(after) || !/^\d+$/.test(limit)) throw new Refusal('INVALID_PAGE');

@@ -29,3 +29,14 @@ CREATE TABLE deliveries (
   end_seq INTEGER NOT NULL,
   disposition TEXT
 );
+CREATE TABLE acknowledgements (
+  receipt TEXT NOT NULL REFERENCES deliveries(receipt),
+  aperture TEXT NOT NULL REFERENCES apertures(id),
+  seq INTEGER NOT NULL REFERENCES messages(seq),
+  disposition TEXT NOT NULL,
+  PRIMARY KEY(receipt,seq)
+);
+CREATE TRIGGER acknowledgements_no_update BEFORE UPDATE ON acknowledgements
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TRIGGER acknowledgements_no_delete BEFORE DELETE ON acknowledgements
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
