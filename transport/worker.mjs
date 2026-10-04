@@ -82,25 +82,53 @@ const active = 'EXISTS(SELECT 1 FROM apertures WHERE id=? AND credential_hash=? 
 const headActive = `EXISTS(SELECT 1 FROM head_capabilities c JOIN apertures a ON a.id=c.aperture
   WHERE c.capability='comhead_writer' AND c.aperture=? AND c.credential_hash=? AND c.revoked=0 AND a.revoked=0)
   AND NOT EXISTS(SELECT 1 FROM apertures WHERE credential_hash=?)`;
+const epochGuard = (db,actor) => guard(db,'EXISTS(SELECT 1 FROM transport_meta WHERE id=1 AND epoch=?)',actor.epoch);
 
 export class Bus {
   constructor(db, env = {}) { this.db = db; this.env = env; }
   async actor(token) {
     if (typeof token !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(token)) throw new Refusal('UNAUTHORIZED', 401);
     const hash = await digest(token);
-    const actor = await s(this.db, 'SELECT id,consumed FROM apertures WHERE credential_hash=? AND revoked=0', hash).first();
+    const actor = await s(this.db, 'SELECT id,consumed,(SELECT epoch FROM transport_meta WHERE id=1) AS epoch FROM apertures WHERE credential_hash=? AND revoked=0', hash).first();
     if (!actor) throw new Refusal('UNAUTHORIZED', 401);
     return {...actor, hash};
   }
   async headWriter(token) {
     if (typeof token!=='string' || !/^[A-Za-z0-9_-]{43}$/.test(token)) throw new Refusal('UNAUTHORIZED',401);
     const hash=await digest(token);
-    const writer=await s(this.db,`SELECT c.aperture AS id FROM head_capabilities c
+    const writer=await s(this.db,`SELECT c.aperture AS id,(SELECT epoch FROM transport_meta WHERE id=1) AS epoch FROM head_capabilities c
       JOIN apertures a ON a.id=c.aperture WHERE c.capability='comhead_writer'
       AND c.credential_hash=? AND c.revoked=0 AND a.revoked=0
       AND NOT EXISTS(SELECT 1 FROM apertures WHERE credential_hash=?)`,hash,hash).first();
     if (!writer) throw new Refusal('UNAUTHORIZED',401);
     return {...writer,hash};
+  }
+  async boundary(actor, expected, required=false) {
+    const meta=await s(this.db,'SELECT epoch,retained_after,checkpoint_version FROM transport_meta WHERE id=1').first();
+    if (!meta || !/^[a-f0-9]{32}$/.test(meta.epoch) || this.env.TRANSPORT_EPOCH!==meta.epoch) throw new Refusal('RECOVERY_UNBOUND',503);
+    if (required && expected===null) throw new Refusal('EPOCH_REQUIRED',428);
+    if (expected!==null && expected!==meta.epoch) {
+      const error=new Refusal('EPOCH_CHANGED',409); error.recovery=meta; throw error;
+    }
+    return meta;
+  }
+  async retained(actor, after) {
+    const meta=await s(this.db,'SELECT epoch,retained_after,checkpoint_version FROM transport_meta WHERE id=1').first();
+    if (!meta || meta.epoch!==actor.epoch) throw new Refusal('EPOCH_CHANGED',409);
+    if (after<meta.retained_after) {
+      const error=new Refusal('GAP',409); error.recovery=meta; throw error;
+    }
+  }
+  async recovery(actor) {
+    const reads=await this.db.batch([epochGuard(this.db,actor),
+      s(this.db,`SELECT a.consumed,t.epoch,t.retained_after,t.checkpoint_version,
+        (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,unixepoch() AS server_time
+        FROM apertures a JOIN transport_meta t ON t.id=1 WHERE a.id=? AND a.credential_hash=? AND a.revoked=0`,actor.id,actor.hash),
+      s(this.db,'SELECT * FROM recovery_checkpoints ORDER BY version DESC LIMIT 1')]);
+    const state=reads[1].results[0],checkpoint=reads[2].results[0]??null;
+    if (!state) throw new Refusal('UNAUTHORIZED',401);
+    return {...state,checkpoint,recovery_mode:state.consumed<state.retained_after ? 'CHECKPOINT_BOOTSTRAP_REQUIRED':'RETAINED_HISTORY',
+      observation_only:true,sync_complete:false};
   }
   async writeHead(writer,data) {
     const {expected_version:version,basis_seq:basis,body,github_anchor:anchor}=data;
@@ -115,6 +143,7 @@ export class Bus {
     if (basis>head.seq || basis<(prior?.basis_seq??0)) throw new Refusal('INVALID_HEAD_BASIS');
     let result;
     try { result=await db.batch([
+      epochGuard(db,writer),
       guard(db,headActive,writer.id,writer.hash,writer.hash),
       guard(db,'COALESCE((SELECT version FROM comhead WHERE id=1),0)=?',version),
       guard(db,'?<=COALESCE((SELECT MAX(seq) FROM messages),0) AND ?>=COALESCE((SELECT basis_seq FROM comhead WHERE id=1),0)',basis,basis),
@@ -129,10 +158,13 @@ export class Bus {
       if ((current?.version??0)!==version) throw new Refusal('HEAD_VERSION_CONFLICT',409);
       throw error;
     }
-    return {...result[5].results[0],sync_complete:false};
+    return {...result[6].results[0],epoch:writer.epoch,sync_complete:false};
   }
   async state(actor) {
     const row = await s(this.db, `SELECT consumed,
+      (SELECT epoch FROM transport_meta WHERE id=1) AS epoch,
+      (SELECT retained_after FROM transport_meta WHERE id=1) AS retained_after,
+      (SELECT checkpoint_version FROM transport_meta WHERE id=1) AS checkpoint_version,
       (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
       unixepoch() AS server_time FROM apertures WHERE id=? AND credential_hash=? AND revoked=0`, actor.id, actor.hash).first();
     if (!row) throw new Refusal('UNAUTHORIZED', 401);
@@ -155,6 +187,7 @@ export class Bus {
     if (!await s(db,"SELECT id FROM apertures WHERE id=? AND (revoked=0 OR id='shared')",recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
     let results;
     try { results = await db.batch([
+      epochGuard(db,actor),
       guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND (revoked=0 OR id='shared'))`, actor.id, actor.hash, recipient),
       s(db, `INSERT INTO messages(sender,recipient,kind,github_anchor,request_key,body,received_at)
         SELECT ?,?,?,?,?,?,unixepoch() WHERE
@@ -181,19 +214,22 @@ export class Bus {
       if (prior && (prior.body!==body || prior.recipient!==recipient || prior.kind!==kind || prior.github_anchor!==anchor)) throw new Refusal('REQUEST_KEY_CONFLICT',409);
       throw error;
     }
-    const result=results[3].results[0];
+    const result=results[4].results[0];
     if (result.seq===null) {
       const refusal=new Refusal('RATE_LIMITED',429);
       refusal.retryAfter=Math.min(Math.max(window,longWindow),result.retry_after_seconds);
       throw refusal;
     }
     const {retry_after_seconds,...accepted}=result;
-    return accepted;
+    return {...accepted,epoch:actor.epoch};
   }
   async fetch(actor, after, limit) {
     if (!safeInt(after) || !safeInt(limit) || limit < 1 || limit > 100) throw new Refusal('INVALID_PAGE');
+    await this.retained(actor,after);
     const db = this.db; const receipt = crypto.randomUUID();
     const results = await db.batch([
+      epochGuard(db,actor),
+      guard(db,'?>=(SELECT retained_after FROM transport_meta WHERE id=1)',after),
       guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND consumed=?)`, actor.id, actor.hash, actor.id, after),
       s(db, 'DELETE FROM deliveries WHERE aperture=? AND disposition IS NULL', actor.id),
       s(db, `INSERT INTO deliveries(receipt,aperture,start_seq,end_seq)
@@ -202,10 +238,10 @@ export class Bus {
       s(db, `SELECT (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
         (SELECT COUNT(*) FROM messages WHERE seq>? AND recipient IN (?,'shared')) AS unread_count, unixepoch() AS server_time`, after,actor.id)
     ]);
-    const messages = results[3].results;
-    return {...results[4].results[0], messages, receipt: messages.length ? receipt : null,
+    const messages = results[5].results;
+    return {...results[6].results[0],epoch:actor.epoch, messages, receipt: messages.length ? receipt : null,
       consumed: after, through: messages.length ? messages.at(-1).seq : after,
-      page_count: messages.length, has_more: results[4].results[0].unread_count > messages.length};
+      page_count: messages.length, has_more: results[6].results[0].unread_count > messages.length};
   }
   async acknowledge(actor, data) {
     const {receipt, through, dispositions} = data;
@@ -222,12 +258,15 @@ export class Bus {
     });
     if (canonical.some((row,i)=>i>0 && row.seq<=canonical[i-1].seq)) throw new Refusal('INVALID_DISPOSITION');
     const disposition=JSON.stringify(canonical);
+    await this.retained(actor,actor.consumed);
     const db = this.db;
     const conditions=canonical.flatMap(row=>[
       guard(db, `EXISTS(SELECT 1 FROM messages m JOIN deliveries d ON m.seq>d.start_seq AND m.seq<=d.end_seq WHERE d.receipt=? AND m.seq=? AND m.recipient IN (?,'shared'))`,receipt,row.seq,actor.id),
       guard(db, '? IS NULL OR EXISTS(SELECT 1 FROM messages WHERE seq=? AND sender=?)',row.answered_by??null,row.answered_by??null,actor.id)
     ]);
     await db.batch([
+      epochGuard(db,actor),
+      guard(db,'(SELECT consumed FROM apertures WHERE id=?)>=(SELECT retained_after FROM transport_meta WHERE id=1)',actor.id),
       guard(db, active, actor.id, actor.hash),
       guard(db, `EXISTS(SELECT 1 FROM deliveries d JOIN apertures a ON a.id=d.aperture
         WHERE d.receipt=? AND d.aperture=? AND d.end_seq=? AND a.consumed IN(d.start_seq,d.end_seq)
@@ -242,20 +281,26 @@ export class Bus {
   }
   async history(actor, after, limit) {
     if (!safeInt(after)||!safeInt(limit)||limit<1||limit>100) throw new Refusal('INVALID_PAGE');
+    await this.retained(actor,after);
     const state=await this.state(actor);
-    const messages=(await this.db.batch([s(this.db,`SELECT m.*,
+    const messages=(await this.db.batch([epochGuard(this.db,actor),
+      guard(this.db,'?>=(SELECT retained_after FROM transport_meta WHERE id=1)',after),s(this.db,`SELECT m.*,
       (SELECT disposition FROM acknowledgements WHERE aperture=? AND seq=m.seq LIMIT 1) AS my_disposition
-      FROM messages m WHERE seq>? ORDER BY seq LIMIT ?`,actor.id,after,limit+1)]))[0].results;
+      FROM messages m WHERE seq>? ORDER BY seq LIMIT ?`,actor.id,after,limit+1)]))[2].results;
     const more=messages.length>limit;
     return {...state,messages:messages.slice(0,limit),has_more:more,history_only:true};
   }
   async head(actor, env) {
     const reads=await this.db.batch([
+      epochGuard(this.db,actor),
       s(this.db,`SELECT consumed,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
+        (SELECT epoch FROM transport_meta WHERE id=1) AS epoch,
+        (SELECT retained_after FROM transport_meta WHERE id=1) AS retained_after,
+        (SELECT checkpoint_version FROM transport_meta WHERE id=1) AS checkpoint_version,
         unixepoch() AS server_time FROM apertures WHERE id=? AND credential_hash=? AND revoked=0`,actor.id,actor.hash),
       s(this.db,'SELECT version,basis_seq,updated_at,body,github_anchor FROM comhead WHERE id=1')
     ]);
-    const state=reads[0].results[0],snapshot=reads[1].results[0]??null;
+    const state=reads[1].results[0],snapshot=reads[2].results[0]??null;
     if (!state) throw new Refusal('UNAUTHORIZED',401);
     const ageBound=Number(env.HEAD_MAX_AGE_SECONDS),lagBound=Number(env.HEAD_MAX_LAG);
     let freshness='UNKNOWN',reason='HEAD_MISSING';
@@ -282,11 +327,15 @@ export default {
       const url = new URL(request.url);
       if (request.method==='POST' && url.pathname==='/v1/head') {
         const writer=await bus.headWriter(token);
+        await bus.boundary(writer,request.headers.get('X-COM-Epoch'),true);
         if (env.WRITES_ENABLED!=='true' || env.HEAD_WRITES_ENABLED!=='true') throw new Refusal('HEAD_WRITES_CLOSED',503);
         return response(await bus.writeHead(writer,await payload(request)));
       }
       const actor = await bus.actor(token);
+      await bus.boundary(actor,request.headers.get('X-COM-Epoch'),
+        request.method==='POST' || ['/v1/messages','/v1/history'].includes(url.pathname));
       if (request.method === 'GET' && url.pathname === '/v1/state') return response(await bus.state(actor));
+      if (request.method === 'GET' && url.pathname === '/v1/recovery') return response(await bus.recovery(actor));
       if (request.method === 'GET' && ['/v1/head','/v1/health'].includes(url.pathname)) return response(await bus.head(actor,env));
       if (request.method === 'GET' && url.pathname === '/v1/history') {
         const after=url.searchParams.get('after')??'0',limit=url.searchParams.get('limit')??'20';
@@ -308,6 +357,7 @@ export default {
       // No raw exceptions, SQL, credentials or message bodies returned/logged.
       return response({status: error instanceof Refusal ? error.message : 'STORAGE_OR_ATOMIC_REFUSAL',
         ...(error instanceof Refusal && error.retryAfter!==undefined ? {retry_after_seconds:error.retryAfter}:{}),
+        ...(error instanceof Refusal && error.recovery ? {recovery:error.recovery}:{}),
         sync_complete: false, server_time: Math.floor(Date.now()/1000)}, error instanceof Refusal ? error.status : 503);
     }
   }

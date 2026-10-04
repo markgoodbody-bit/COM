@@ -1,4 +1,26 @@
 PRAGMA foreign_keys = ON;
+-- Must be explicitly bound by the operator before HTTP service can start.
+CREATE TABLE transport_meta (
+  id INTEGER PRIMARY KEY CHECK(id=1),
+  epoch TEXT NOT NULL CHECK(length(epoch)=32),
+  retained_after INTEGER NOT NULL DEFAULT 0 CHECK(retained_after>=0),
+  checkpoint_version INTEGER NOT NULL DEFAULT 0 CHECK(checkpoint_version>=0)
+);
+CREATE TABLE recovery_checkpoints (
+  version INTEGER PRIMARY KEY,
+  prior_epoch TEXT NOT NULL,
+  new_epoch TEXT NOT NULL,
+  retained_after INTEGER NOT NULL,
+  head_seq INTEGER NOT NULL,
+  server_time INTEGER NOT NULL,
+  archive_sha256 TEXT NOT NULL,
+  github_anchor TEXT NOT NULL,
+  prior_head_anchor TEXT
+);
+CREATE TRIGGER recovery_checkpoints_no_update BEFORE UPDATE ON recovery_checkpoints
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TRIGGER recovery_checkpoints_no_delete BEFORE DELETE ON recovery_checkpoints
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
 CREATE TABLE mutation_guard (id INTEGER PRIMARY KEY CHECK(id=1), ok INTEGER NOT NULL CHECK(ok=1));
 CREATE TABLE apertures (
   id TEXT PRIMARY KEY,

@@ -7,10 +7,12 @@ import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 import worker, {Bus, digest, parsePayloadJson} from './worker.mjs';
 import {accountForPage} from './client.mjs';
+import {advanceCheckpoint} from './recovery.mjs';
 const root = dirname(fileURLToPath(import.meta.url));
 const python = process.env.COM_TEST_PYTHON || 'python';
 const a = 'a'.repeat(43), b = 'b'.repeat(43);
-const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
+const testEpoch='1'.repeat(32);
+const rateConfig={TRANSPORT_EPOCH:testEpoch,SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
 function database(path) {
   function execute(statements) {
     const run = spawnSync(python, ['-B', join(root, 'sqlite_bridge.py')], {
@@ -37,6 +39,7 @@ async function fixture(action) {
     assert.equal(setup.status, 0, setup.stderr);
     const db = database(path);
     await db.batch([
+      db.prepare('INSERT INTO transport_meta(id,epoch) VALUES(1,?)').bind(testEpoch),
       db.prepare('INSERT INTO apertures(id,credential_hash) VALUES (?,?)').bind('codex', await digest(a)),
       db.prepare('INSERT INTO apertures(id,credential_hash) VALUES (?,?)').bind('framework', await digest(b))
     ]);
@@ -45,7 +48,7 @@ async function fixture(action) {
 }
 const send = (key='one', body='synthetic') => ({request_key:key, body, to:'framework'});
 const request = (path, token=a, data, method=data ? 'POST':'GET') => new Request('https://com.invalid'+path,
-  {method, headers:{Authorization:'Bearer '+token, 'Content-Type':'application/json'},
+  {method, headers:{Authorization:'Bearer '+token, 'Content-Type':'application/json','X-COM-Epoch':testEpoch},
     ...(data ? {body:JSON.stringify(data)} : {})});
 
 test('request JSON rejects duplicate decoded keys and excessive nesting', () => {
@@ -75,7 +78,7 @@ test('sender limits refuse atomically while exact replay remains available', asy
   assert.equal((await worker.fetch(request('/v1/messages',a,send('fourth')),env)).status,429);
   assert.equal((await worker.fetch(request('/v1/messages',a,shared('cap1')),env)).status,200);
   assert.equal((await worker.fetch(request('/v1/messages',a,{...shared('cap1'),body:'conflict'}),env)).status,409);
-  assert.equal((await worker.fetch(request('/v1/messages',a,send('unconfigured')),{DB:db,WRITES_ENABLED:'true'})).status,503);
+  assert.equal((await worker.fetch(request('/v1/messages',a,send('unconfigured')),{DB:db,WRITES_ENABLED:'true',TRANSPORT_EPOCH:testEpoch})).status,503);
   assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM messages').bind().first()).n,3);
 }));
 
@@ -113,6 +116,26 @@ test('long shared window blocks slow sends but not directs or retained replays',
   assert.equal((await worker.fetch(request('/v1/messages',a,shared('old0')),env)).status,200);
   assert.equal((await worker.fetch(request('/v1/messages',b,shared('other')),env)).status,200);
   assert.equal((await db.prepare("SELECT COUNT(*) AS n FROM messages WHERE sender='codex' AND recipient='shared'").bind().first()).n,2);
+}));
+
+test('epoch mismatch and explicit history floor never silently consume', async () => fixture(async db => {
+  const bus=new Bus(db,rateConfig),actor=await bus.actor(a),reader=await bus.actor(b);
+  await bus.send(actor,send());
+  const checkpoint={expected_epoch:testEpoch,expected_checkpoint:0,new_epoch:'2'.repeat(32),retained_after:1,
+    archive_sha256:'a'.repeat(64),github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'};
+  await advanceCheckpoint(db,checkpoint);
+  await assert.rejects(bus.send(actor,send('stale')), /SQLITE_BATCH_REFUSAL/);
+  await assert.rejects(advanceCheckpoint(db,checkpoint), /SQLITE_BATCH_REFUSAL/);
+  const env={DB:db,WRITES_ENABLED:'true',...rateConfig,TRANSPORT_EPOCH:checkpoint.new_epoch};
+  assert.equal((await worker.fetch(request('/v1/messages?after=0',b),env)).status,409);
+  const current=request('/v1/messages?after=0',b); current.headers.set('X-COM-Epoch',checkpoint.new_epoch);
+  const response=await worker.fetch(current,env); assert.equal(response.status,409);
+  assert.equal((await response.json()).status,'GAP');
+  const observe=request('/v1/recovery',b); observe.headers.delete('X-COM-Epoch');
+  const recovery=await (await worker.fetch(observe,env)).json();
+  assert.equal(recovery.recovery_mode,'CHECKPOINT_BOOTSTRAP_REQUIRED');
+  assert.equal(recovery.consumed,0); assert.equal(recovery.checkpoint.version,1);
+  assert.equal((await bus.state(reader)).consumed,0);
 }));
 
 test('adapter duplicate delivery and accepted-write lost response', async () => fixture(async db => {
@@ -155,10 +178,12 @@ test('adapter receipt replacement, wrong owner and decision anchors', async () =
 }));
 
 test('client refuses clipped display, omitted disposition, or miscount', () => {
-  const page = {messages:[{seq:1},{seq:2}],page_count:2,unread_count:51,head_seq:51,
+  const page = {epoch:testEpoch,messages:[{seq:1},{seq:2}],page_count:2,unread_count:51,head_seq:51,
     server_time:1,has_more:true,consumed:0,through:2,receipt:'synthetic'};
   const dispositions = [1,2].map(seq => ({seq,no_answer_owed:'observed'}));
   assert.equal(accountForPage(page,[1,2],dispositions).through,2);
+  assert.equal(accountForPage(page,[1,2],dispositions).epoch,testEpoch);
+  assert.throws(() => accountForPage({...page,epoch:null},[1,2],dispositions));
   assert.throws(() => accountForPage(page,[1],dispositions));
   assert.throws(() => accountForPage(page,[1,2],dispositions.slice(0,1)));
   assert.throws(() => accountForPage({...page,page_count:1},[1,2],dispositions));
@@ -166,7 +191,7 @@ test('client refuses clipped display, omitted disposition, or miscount', () => {
 });
 
 test('HTTP closed writes, auth, bound payload, measured zero, storage failure', async () => fixture(async db => {
-  const env = {DB:db, WRITES_ENABLED:'false'};
+  const env = {DB:db, WRITES_ENABLED:'false',TRANSPORT_EPOCH:testEpoch};
   assert.equal((await worker.fetch(request('/v1/messages',a,send()),env)).status,503);
   assert.equal((await worker.fetch(request('/v1/state','wrong'),env)).status,401);
   const zero = await (await worker.fetch(request('/v1/messages?after=0',b),env)).json();

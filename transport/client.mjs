@@ -1,7 +1,7 @@
 // No network calls or automatic ack. This verifies what a client says it delivered.
 export function accountForPage(page, displayedSequences, dispositions) {
   const expected = page.messages.map(message => message.seq);
-  if (page.page_count !== expected.length || page.unread_count < expected.length ||
+  if (!/^[a-f0-9]{32}$/.test(page.epoch??'') || page.page_count !== expected.length || page.unread_count < expected.length ||
       page.has_more !== (page.unread_count > expected.length) ||
       !Number.isSafeInteger(page.head_seq) || !Number.isSafeInteger(page.server_time) ||
       expected.some((seq, i) => !Number.isSafeInteger(seq) || seq <= (i ? expected[i-1] : page.consumed)) ||
@@ -12,5 +12,6 @@ export function accountForPage(page, displayedSequences, dispositions) {
         (row.answered_by === undefined && typeof row.no_answer_owed === 'string' && row.no_answer_owed.trim())))) {
     throw new Error('PAGE_NOT_ACCOUNTED_FOR');
   }
-  return {through: page.through, receipt: page.receipt, dispositions};
+  // Caller must bind the POST's X-COM-Epoch to this observed page epoch.
+  return {epoch:page.epoch,through: page.through, receipt: page.receipt, dispositions};
 }

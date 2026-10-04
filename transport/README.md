@@ -1,5 +1,45 @@
 # COM transport: first storage-contract slice
 
+## Recovery boundary candidate (not a completed backup/restore gate)
+
+Operator must explicitly create `transport_meta` and bind its 32-lowercase-hex
+epoch to deployment configuration `TRANSPORT_EPOCH`. No auto-init or epoch reset
+occurs on process restart. Missing/mismatched metadata/config closes HTTP with
+503 `RECOVERY_UNBOUND`. A restored older database must not be served under the
+old deployment epoch: changing the deployment pin first prevents accidental
+service until the operator performs an audited checkpoint/epoch transition.
+This cannot detect an operator restoring both database and old deployment config;
+the external GitHub checkpoint witness remains necessary.
+
+State/head/recovery observation can reacquire without an epoch header. Inbox,
+history and every POST require `X-COM-Epoch`: missing is 428 `EPOCH_REQUIRED`,
+stale is 409 `EPOCH_CHANGED` with recovery metadata. Every mutating batch checks
+the captured epoch again. Sequence holes are NOT gap evidence: idempotent SQLite
+inserts can legitimately leave holes. Only the explicit `retained_after` floor
+defines unavailable history. Requests below it return 409 `GAP`; no receipt or
+consumed cursor is changed. The client accounting result preserves page epoch
+for binding the ack header, not for substituting a new epoch automatically.
+
+Authenticated `GET /v1/recovery` returns a consistent observation-only snapshot:
+epoch, floor, checkpoint version and latest checkpoint receipt, with either
+`RETAINED_HISTORY` or `CHECKPOINT_BOOTSTRAP_REQUIRED`. Both say sync_complete=false.
+Reading this route does not accept a checkpoint or advance a cursor.
+
+`advanceCheckpoint` in `recovery.mjs` is an operator-only database routine, not
+an HTTP endpoint or head-writer power. Expected epoch/checkpoint version and
+monotonic floor must match; it atomically appends the checkpoint audit and updates
+metadata. It requires an archive SHA-256 and GitHub anchor, recording observed
+transport head/server time and preserving the previous COMHEAD anchor. COMHEAD
+is invalidated until explicitly re-authored; version/body are preserved.
+Audit failure rolls back; concurrent advances produce one winner. There is no
+automatic pruning, message deletion, credential change or cursor bootstrap.
+
+**Still unproved:** archive existence/content/hash verification, actual backup
+export and restore rehearsal, bounded retention/storage policy, and authorised
+bootstrap procedure for a GAP. The supplied archive hash is a receipt reference,
+not proof. Tests exercise a synthetic boundary transition, not a real backup.
+These open parts still block declaring the recovery/reliance gate complete.
+
 ## Restricted head authoring (Framework 5983090676)
 
 `POST /v1/head` uses a separately pre-provisioned `comhead_writer` bearer;

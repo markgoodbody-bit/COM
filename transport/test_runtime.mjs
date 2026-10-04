@@ -8,13 +8,15 @@ import {join, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {digest} from './worker.mjs';
 import {accountForPage} from './client.mjs';
+import {advanceCheckpoint} from './recovery.mjs';
 const require = createRequire(import.meta.url);
 const {Miniflare, convertV4MiniflareOptions} = require(process.env.COM_MINIFLARE_MODULE || 'miniflare');
 const nativeOptions = options => ({...convertV4MiniflareOptions(options),
   resourcePersistencePath:options.d1Persist, telemetry:{enabled:false},logRequests:false});
 const root = dirname(fileURLToPath(import.meta.url));
 const codex = 'a'.repeat(43), framework = 'b'.repeat(43);
-const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
+const testEpoch='1'.repeat(32);
+const rateConfig={TRANSPORT_EPOCH:testEpoch,SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
 
 test('local Workers/D1 exchange, rollback, replay, concurrency and restart', async () => {
   const temporary = mkdtempSync(join(tmpdir(),'com-workerd-'));
@@ -24,9 +26,9 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
   let runtime;
   let checks=0;
   function check(actual, expected) { assert.deepEqual(actual,expected); checks++; }
-  async function call(path, token=codex, body) {
+  async function call(path, token=codex, body, epoch=testEpoch) {
     const res = await runtime.dispatchFetch('https://com.invalid'+path, {
-      method:body ? 'POST':'GET', headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},
+      method:body ? 'POST':'GET', headers:{Authorization:'Bearer '+token,'Content-Type':'application/json',...(epoch===null?{}:{'X-COM-Epoch':epoch})},
       ...(body ? {body:JSON.stringify(body)} : {})});
     return {status:res.status, data:await res.json()};
   }
@@ -37,6 +39,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     const schema = readFileSync(join(root,'schema.sql'),'utf8').replace(/^--.*$/gm,'');
     const statements = schema.match(/\s*CREATE TRIGGER[\s\S]*?END;|[^;]+;/g);
     for (const sql of statements) await db.prepare(sql).run();
+    await db.prepare('INSERT INTO transport_meta(id,epoch) VALUES(1,?)').bind(testEpoch).run();
     for (const [id,token] of [['codex',codex],['framework',framework]]) {
       await db.prepare('INSERT INTO apertures(id,credential_hash) VALUES (?,?)').bind(id,await digest(token)).run();
     }
@@ -49,7 +52,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
       ['{"receipt":"x","through":1,"dispositions":[{"seq":1,"seq":2}]}','JSON_DUPLICATE_KEY'],
       ['{"x":'+'['.repeat(33)+'0'+']'.repeat(33)+'}','JSON_DEPTH_BOUND']]) {
       const res=await runtime.dispatchFetch('https://com.invalid/v1/messages', {
-        method:'POST',headers:{Authorization:'Bearer '+codex,'Content-Type':'application/json'},body});
+        method:'POST',headers:{Authorization:'Bearer '+codex,'Content-Type':'application/json','X-COM-Epoch':testEpoch},body});
       check(res.status,400); check((await res.json()).status,code);
     }
     check((await call('/v1/state')).data.head_seq,0);
@@ -166,7 +169,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     check((await db.prepare("SELECT COUNT(*) AS n FROM messages WHERE sender='daily-racer'").first()).n,60);
     const rateHead=(await call('/v1/state',framework)).data.head_seq;
     check((await db.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,2);
-    await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'false'}}));
+    await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'false',TRANSPORT_EPOCH:testEpoch}}));
     check((await call('/v1/messages',framework,message('closed'))).status,503);
     check((await call('/v1/state',framework)).data.head_seq,rateHead);
     await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'true',HEAD_WRITES_ENABLED:'true',...rateConfig,
@@ -201,6 +204,35 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     check((await call('/v1/head',writer,{...author,expected_version:3})).status,401);
     check((await call('/v1/state',framework)).data.head_seq,rateHead);
     check((await call('/v1/state',framework)).data.consumed,1);
+    check((await call('/v1/messages',framework,message('missing-epoch'),null)).status,428);
+    check((await call('/v1/recovery',framework,undefined,null)).data.recovery_mode,'RETAINED_HISTORY');
+    const checkpoint={expected_epoch:testEpoch,expected_checkpoint:0,new_epoch:'2'.repeat(32),retained_after:rateHead,
+      archive_sha256:'a'.repeat(64),github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'};
+    await db.prepare("CREATE TRIGGER fail_checkpoint BEFORE INSERT ON recovery_checkpoints BEGIN SELECT RAISE(ABORT,'synthetic failure'); END").run();
+    await assert.rejects(advanceCheckpoint(db,checkpoint)); checks++;
+    check((await db.prepare('SELECT checkpoint_version FROM transport_meta').first()).checkpoint_version,0);
+    check((await db.prepare('SELECT version FROM comhead').first()).version,3);
+    await db.prepare('DROP TRIGGER fail_checkpoint').run();
+    const checkpoints=await Promise.allSettled([advanceCheckpoint(db,checkpoint),advanceCheckpoint(db,checkpoint)]);
+    check(checkpoints.map(r=>r.status).sort(),['fulfilled','rejected']);
+    check((await call('/v1/state',framework,undefined,null)).data.status,'RECOVERY_UNBOUND');
+    await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'true',...rateConfig,TRANSPORT_EPOCH:checkpoint.new_epoch,
+      HEAD_MAX_AGE_SECONDS:'86400',HEAD_MAX_LAG:'50'}}));
+    db=await runtime.getD1Database('DB');
+    check((await call('/v1/messages',framework,message('old-epoch'))).data.status,'EPOCH_CHANGED');
+    const gap=await call('/v1/messages?after=1',framework,undefined,checkpoint.new_epoch);
+    check(gap.status,409); check(gap.data.status,'GAP');
+    check(gap.data.recovery.retained_after,rateHead);
+    check((await call('/v1/history?after=0',framework,undefined,checkpoint.new_epoch)).data.status,'GAP');
+    const recover=(await call('/v1/recovery',framework,undefined,null)).data;
+    check(recover.recovery_mode,'CHECKPOINT_BOOTSTRAP_REQUIRED');
+    check([recover.epoch,recover.consumed,recover.checkpoint.version],[checkpoint.new_epoch,1,1]);
+    check((await call('/v1/head',framework,undefined,null)).data.freshness,'UNKNOWN');
+    check((await call('/v1/history?after='+rateHead,framework,undefined,checkpoint.new_epoch)).data.messages.length,0);
+    check((await db.prepare('SELECT COUNT(*) AS n FROM recovery_checkpoints').first()).n,1);
+    await assert.rejects(db.prepare('DELETE FROM recovery_checkpoints').run()); checks++;
+    check((await call('/v1/state',framework,undefined,null)).data.consumed,1);
+    check((await call('/v1/state',framework,undefined,null)).data.head_seq,rateHead);
     console.log(JSON.stringify({status:'LOCAL_WORKER_D1_PASS_NOT_HOSTED_PASS',checks,
       synthetic_only:true,remote_resources_created:0,real_aperture_exchange:false}));
   } finally {
