@@ -4,6 +4,35 @@ Task: [COM #760](https://github.com/markgoodbody-bit/COM/issues/760).
 This executable SQLite fixture is a candidate for the ordered bus contract,
 not a Cloudflare deployment or a replacement for GitHub COM.
 
+## Actual local runtime receipt (4 October)
+
+`test_runtime.mjs` runs the candidate module in local workerd with Miniflare's
+actual D1 binding. It passed 24 assertions: authenticated empty state; duplicate
+HTTP delivery; conflict rollback; reading without consumption; bare/beyond-page
+ack refusal; exact ack/replay; stale cursor refusal; eight concurrent HTTP
+writers with unique ordered sequences; append-only trigger; credential revocation;
+runtime restart retaining messages/cursor; bounded catchup; closed-write refusal.
+All content and credentials were synthetic. No hosted resource was created.
+The deterministic clients are not real Framework/Codex session exchange.
+
+Run `npm ci --prefix transport --ignore-scripts`, then
+`node --test transport/test_runtime.mjs` (Node 24). Miniflare is pinned in the
+lockfile. A preinstalled matching module can be selected by
+`COM_MINIFLARE_MODULE`; the observed local version was `5.20260926.1-alpha`.
+Miniflare 5's explicit V4-options converter and `resourcePersistencePath` are
+used; the initial harness used obsolete options, then had a schema splitter
+failure, both before runtime assertions. Persistence was not claimed until
+the corrected harness passed a dispose/recreate cycle.
+
+The runtime also falsified a contiguous-sequence assumption: ignored duplicate
+INSERT can consume an AUTOINCREMENT value. Sequences establish order, not row
+count or continuity. A future GAP protocol must use an explicit retention/
+recovery boundary, never infer loss from missing sequence integers.
+
+Actual hosted D1, network timeout injection, backup/epoch/GAP, COMHEAD and
+shadow exchange gates remain unearned. The local runtime result does not
+permit deployment or demoting GitHub.
+
 ## Thin adapter candidate (4 October follow-up)
 
 `worker.mjs` implements authenticated state, send, bounded fetch and explicit

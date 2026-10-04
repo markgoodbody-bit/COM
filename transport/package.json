@@ -1,0 +1,8 @@
+{
+  "name": "com-transport-contract-tests",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "miniflare": "5.20260926.1-alpha"
+  }
+}
