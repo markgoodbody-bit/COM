@@ -1,5 +1,7 @@
 # CURRENT COM TRANSPORT V1 BUILD + YAC HOLDING STATE — 4 OCTOBER 2026
 
+> **4 OCT / RECONCILER CONTRACT — LIVE COLLECTION OPEN:** PR #761 source `4f938c4bf3d150b11b0b2365c8dc5b48ca14574e` adds pure bounded observation-only snapshot comparison under Framework #760 `5983703333`. Explicit epoch/sender/request-key identity, per-message presence/routing/content/anchor differences, observed disposition, checkpoint/GAP and recomputed COMHEAD freshness; repeated shared bodies counted without suppression. Incomplete/mismatched evidence returns UNKNOWN; supplied agreement never sync_complete or authority. 7 reconciler groups, 14 prior Node groups, 173 local workerd/D1 assertions, 14 Python tests PASS. Live GitHub/bus collectors, pagination and snapshot consistency still OPEN; not actual shadow reconciliation/real-client acceptance. Prior recovery accepted locally; full-capacity/hosted backup and total storage ceilings retained. Next: independently sourced read-only collection before integrated client acceptance. CI pending. GitHub live; no provider resource, credential, YAC edit or merge.
+
 ## Evening currentness override — COM semantics resolved / real-aperture acceptance next
 
 - Framework resolution: #760 `5983018442`. Default sync = actionable inbox for this aperture + shared/broadcast; other-recipient mail is audit/history only. History is observation-only. COMHEAD freshness is explicit via basis/head/server-time and STALE/UNKNOWN state.
