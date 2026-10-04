@@ -81,7 +81,7 @@ const guard = (db, condition, ...args) => s(db,
 const active = 'EXISTS(SELECT 1 FROM apertures WHERE id=? AND credential_hash=? AND revoked=0)';
 
 export class Bus {
-  constructor(db) { this.db = db; }
+  constructor(db, env = {}) { this.db = db; this.env = env; }
   async actor(token) {
     if (typeof token !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(token)) throw new Refusal('UNAUTHORIZED', 401);
     const hash = await digest(token);
@@ -104,20 +104,45 @@ export class Bus {
     if (anchor !== null && (typeof anchor !== 'string' || !anchorPattern.test(anchor))) throw new Refusal('INVALID_ANCHOR');
     if (kind === 'decision' && anchor === null) throw new Refusal('DECISION_ANCHOR_REQUIRED');
     const db = this.db;
+    const limits = ['SEND_WINDOW_SECONDS','SEND_MAX_ALL','SEND_MAX_SHARED'].map(name => {
+      const raw=this.env[name], number=Number(raw);
+      if (!/^[1-9][0-9]*$/.test(raw??'') || !safeInt(number)) throw new Refusal('RATE_BOUNDS_UNSET',503);
+      return number;
+    });
+    const [window,allLimit,sharedLimit]=limits;
     if (!await s(db,"SELECT id FROM apertures WHERE id=? AND (revoked=0 OR id='shared')",recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
     let results;
     try { results = await db.batch([
       guard(db, `${active} AND EXISTS(SELECT 1 FROM apertures WHERE id=? AND (revoked=0 OR id='shared'))`, actor.id, actor.hash, recipient),
       s(db, `INSERT INTO messages(sender,recipient,kind,github_anchor,request_key,body,received_at)
-        VALUES(?,?,?,?,?,?,unixepoch()) ON CONFLICT(sender,request_key) DO NOTHING`, actor.id, recipient, kind, anchor, key, body),
-      guard(db, 'EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=? AND body=? AND recipient=? AND kind=? AND github_anchor IS ?)', actor.id, key, body, recipient, kind, anchor),
-      s(db, 'SELECT seq,unixepoch() AS server_time,(SELECT MAX(seq) FROM messages) AS head_seq FROM messages WHERE sender=? AND request_key=?', actor.id, key)
+        SELECT ?,?,?,?,?,?,unixepoch() WHERE
+        EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=?) OR
+        ((SELECT COUNT(*) FROM messages WHERE sender=? AND received_at>unixepoch()-?)<? AND
+         (?!='shared' OR (SELECT COUNT(*) FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?)<?))
+        ON CONFLICT(sender,request_key) DO NOTHING`, actor.id, recipient, kind, anchor, key, body,
+          actor.id,key,actor.id,window,allLimit,recipient,actor.id,window,sharedLimit),
+      guard(db, `NOT EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=?) OR
+        EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=? AND body=? AND recipient=? AND kind=? AND github_anchor IS ?)`, actor.id,key,actor.id, key, body, recipient, kind, anchor),
+      s(db, `SELECT (SELECT seq FROM messages WHERE sender=? AND request_key=?) AS seq,
+        unixepoch() AS server_time,(SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
+        MAX(1,COALESCE((SELECT received_at FROM messages WHERE sender=? AND received_at>unixepoch()-?
+          ORDER BY received_at DESC LIMIT 1 OFFSET ?)+?-unixepoch(),0),
+          CASE WHEN ?='shared' THEN COALESCE((SELECT received_at FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?
+          ORDER BY received_at DESC LIMIT 1 OFFSET ?)+?-unixepoch(),0) ELSE 0 END) AS retry_after_seconds`,
+        actor.id,key,actor.id,window,allLimit-1,window,recipient,actor.id,window,sharedLimit-1,window)
     ]); } catch (error) {
       const prior=await s(db,'SELECT * FROM messages WHERE sender=? AND request_key=?',actor.id,key).first();
       if (prior && (prior.body!==body || prior.recipient!==recipient || prior.kind!==kind || prior.github_anchor!==anchor)) throw new Refusal('REQUEST_KEY_CONFLICT',409);
       throw error;
     }
-    return results[3].results[0];
+    const result=results[3].results[0];
+    if (result.seq===null) {
+      const refusal=new Refusal('RATE_LIMITED',429);
+      refusal.retryAfter=Math.min(window,result.retry_after_seconds);
+      throw refusal;
+    }
+    const {retry_after_seconds,...accepted}=result;
+    return accepted;
   }
   async fetch(actor, after, limit) {
     if (!safeInt(after) || !safeInt(limit) || limit < 1 || limit > 100) throw new Refusal('INVALID_PAGE');
@@ -127,7 +152,7 @@ export class Bus {
       s(db, 'DELETE FROM deliveries WHERE aperture=? AND disposition IS NULL', actor.id),
       s(db, `INSERT INTO deliveries(receipt,aperture,start_seq,end_seq)
         SELECT ?,?,?,MAX(seq) FROM (SELECT seq FROM messages WHERE seq>? AND recipient IN (?,'shared') ORDER BY seq LIMIT ?) HAVING MAX(seq) IS NOT NULL`, receipt, actor.id, after, after, actor.id, limit),
-      s(db, "SELECT *,recipient=? AS to_me FROM messages WHERE seq>? AND recipient IN (?,'shared') ORDER BY seq LIMIT ?",actor.id, after, actor.id, limit),
+      s(db, "SELECT *,recipient=? AS to_me,CASE WHEN recipient='shared' THEN 'shared' ELSE 'direct' END AS delivery FROM messages WHERE seq>? AND recipient IN (?,'shared') ORDER BY seq LIMIT ?",actor.id, after, actor.id, limit),
       s(db, `SELECT (SELECT COALESCE(MAX(seq),0) FROM messages) AS head_seq,
         (SELECT COUNT(*) FROM messages WHERE seq>? AND recipient IN (?,'shared')) AS unread_count, unixepoch() AS server_time`, after,actor.id)
     ]);
@@ -205,7 +230,7 @@ export default {
   async fetch(request, env) {
     try {
       if (!env.DB) throw new Refusal('STORAGE_UNAVAILABLE', 503);
-      const bus = new Bus(env.DB);
+      const bus = new Bus(env.DB,env);
       const auth = request.headers.get('Authorization') || '';
       const actor = await bus.actor(auth.startsWith('Bearer ') ? auth.slice(7) : '');
       const url = new URL(request.url);
@@ -230,6 +255,7 @@ export default {
     } catch (error) {
       // No raw exceptions, SQL, credentials or message bodies returned/logged.
       return response({status: error instanceof Refusal ? error.message : 'STORAGE_OR_ATOMIC_REFUSAL',
+        ...(error instanceof Refusal && error.retryAfter!==undefined ? {retry_after_seconds:error.retryAfter}:{}),
         sync_complete: false, server_time: Math.floor(Date.now()/1000)}, error instanceof Refusal ? error.status : 503);
     }
   }

@@ -7,6 +7,9 @@ preview_urls = false
 enabled = false
 [vars]
 WRITES_ENABLED = "false"
+SEND_WINDOW_SECONDS = "600"
+SEND_MAX_ALL = "60"
+SEND_MAX_SHARED = "12"
 [[d1_databases]]
 binding = "DB"
 database_name = "com-transport-local-synthetic"

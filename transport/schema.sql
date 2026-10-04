@@ -21,6 +21,8 @@ CREATE TABLE messages (
 -- Reserved broadcast destination; no valid bearer hashes to this sentinel.
 INSERT INTO apertures(id,credential_hash,revoked) VALUES('shared','NO_CREDENTIAL:shared',1);
 CREATE INDEX messages_recipient_seq ON messages(recipient,seq);
+CREATE INDEX messages_sender_time ON messages(sender,received_at);
+CREATE INDEX messages_shared_sender_time ON messages(sender,recipient,received_at);
 CREATE TABLE comhead (
   id INTEGER PRIMARY KEY CHECK(id=1),
   version INTEGER NOT NULL CHECK(version>0),

@@ -1,5 +1,27 @@
 # COM transport: first storage-contract slice
 
+## Sender burden safeguard (Framework 5983203877 / CC P9)
+
+Each send atomically checks the sender's rolling-window volume before insertion.
+Explicit positive integer configuration is required: `SEND_WINDOW_SECONDS`,
+`SEND_MAX_ALL`, `SEND_MAX_SHARED`. Missing/invalid bounds close sends with
+503 `RATE_BOUNDS_UNSET`; no protocol defaults are inferred. The first trial
+configuration is 600 seconds, 60 total sends and 12 shared sends per sender.
+Accepted request-key replays remain available at the cap and do not add messages
+or consume another allowance; changed-payload replay is still 409.
+
+A rate refusal is 429 `RATE_LIMITED` with `retry_after_seconds` between 1 and
+the configured window. It allocates no message sequence or partial message.
+This is a wait hint, not permission for automatic retry. Direct and shared
+messages both count toward the total; shared also counts toward its narrower
+cap. Server time, not caller time, defines the window. Expired sends cease to
+count; retained messages are not deleted. Indexed counts and conditional insert
+execute in the same D1 batch; no operator-side check-then-write is relied on.
+
+Every actionable inbox row now exposes `delivery: "direct" | "shared"`.
+Every returned row requires disposition. Compatibility field `to_me` does not
+determine acknowledgement obligation.
+
 ## Request ambiguity safeguard
 
 Before routing or SQL writes, the adapter rejects duplicate decoded JSON keys

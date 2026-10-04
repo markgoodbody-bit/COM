@@ -10,6 +10,7 @@ import {accountForPage} from './client.mjs';
 const root = dirname(fileURLToPath(import.meta.url));
 const python = process.env.COM_TEST_PYTHON || 'python';
 const a = 'a'.repeat(43), b = 'b'.repeat(43);
+const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12'};
 function database(path) {
   function execute(statements) {
     const run = spawnSync(python, ['-B', join(root, 'sqlite_bridge.py')], {
@@ -60,8 +61,26 @@ test('request JSON rejects duplicate decoded keys and excessive nesting', () => 
   assert.throws(() => parsePayloadJson('[]'), /JSON_INVALID/);
 });
 
+test('sender limits refuse atomically while exact replay remains available', async () => fixture(async db => {
+  const env={DB:db,WRITES_ENABLED:'true',SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'3',SEND_MAX_SHARED:'2'};
+  const shared=key=>({...send(key),to:'shared'});
+  for (const key of ['cap1','cap2']) assert.equal((await worker.fetch(request('/v1/messages',a,shared(key)),env)).status,200);
+  const before=await db.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").bind().first();
+  const refused=await worker.fetch(request('/v1/messages',a,shared('refused')),env);
+  assert.equal(refused.status,429);
+  const detail=await refused.json(); assert.equal(detail.status,'RATE_LIMITED');
+  assert.ok(detail.retry_after_seconds>=1 && detail.retry_after_seconds<=600);
+  assert.deepEqual(await db.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").bind().first(),before);
+  assert.equal((await worker.fetch(request('/v1/messages',a,send('direct')),env)).status,200);
+  assert.equal((await worker.fetch(request('/v1/messages',a,send('fourth')),env)).status,429);
+  assert.equal((await worker.fetch(request('/v1/messages',a,shared('cap1')),env)).status,200);
+  assert.equal((await worker.fetch(request('/v1/messages',a,{...shared('cap1'),body:'conflict'}),env)).status,409);
+  assert.equal((await worker.fetch(request('/v1/messages',a,send('unconfigured')),{DB:db,WRITES_ENABLED:'true'})).status,503);
+  assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM messages').bind().first()).n,3);
+}));
+
 test('adapter duplicate delivery and accepted-write lost response', async () => fixture(async db => {
-  const env = {DB:db, WRITES_ENABLED:'true'};
+  const env = {DB:db, WRITES_ENABLED:'true',...rateConfig};
   const first = await worker.fetch(request('/v1/messages', a, send()), env);
   assert.equal(first.status, 200);
   const accepted = await first.json();
@@ -74,7 +93,7 @@ test('adapter duplicate delivery and accepted-write lost response', async () => 
 }));
 
 test('adapter read crash, exact ack and revoked-in-flight guard', async () => fixture(async db => {
-  const bus = new Bus(db), actor = await bus.actor(a), reader = await bus.actor(b);
+  const bus = new Bus(db,rateConfig), actor = await bus.actor(a), reader = await bus.actor(b);
   await bus.send(actor, send());
   const page = await bus.fetch(reader, 0, 20);
   assert.equal((await bus.state(reader)).consumed, 0);
@@ -89,7 +108,7 @@ test('adapter read crash, exact ack and revoked-in-flight guard', async () => fi
 }));
 
 test('adapter receipt replacement, wrong owner and decision anchors', async () => fixture(async db => {
-  const bus = new Bus(db), actor = await bus.actor(a), reader = await bus.actor(b);
+  const bus = new Bus(db,rateConfig), actor = await bus.actor(a), reader = await bus.actor(b);
   await assert.rejects(bus.send(actor, {...send(),kind:'decision'}), /ANCHOR_REQUIRED/);
   await assert.rejects(bus.send(actor, {...send(),to:'typo'}));
   await bus.send(actor, {...send(),kind:'decision',github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'});
@@ -125,7 +144,7 @@ test('HTTP closed writes, auth, bound payload, measured zero, storage failure', 
 }));
 
 test('adapter absent aperture catches up with bounded pages on independent connections', async () => fixture(async db => {
-  const bus = new Bus(db), actor = await bus.actor(a), reader = await bus.actor(b);
+  const bus = new Bus(db,rateConfig), actor = await bus.actor(a), reader = await bus.actor(b);
   for (let i=0;i<13;i++) await bus.send(actor,send(String(i)));
   let cursor=0; const seen=[];
   while (true) {
@@ -142,7 +161,7 @@ test('adapter absent aperture catches up with bounded pages on independent conne
 }));
 
 test('CC regressions: durable per-message ack, history and permanent errors', async () => fixture(async db => {
-  const bus=new Bus(db),actor=await bus.actor(a),reader=await bus.actor(b);
+  const bus=new Bus(db,rateConfig),actor=await bus.actor(a),reader=await bus.actor(b);
   await bus.send(actor,send('one'));
   await bus.send(actor,send('two'));
   const page=await bus.fetch(reader,0,20);
@@ -159,14 +178,14 @@ test('CC regressions: durable per-message ack, history and permanent errors', as
   assert.equal(history.messages.length,2); assert.equal(history.history_only,true);
   assert.deepEqual(history.messages.map(row=>JSON.parse(row.my_disposition)),dispositions);
   assert.equal(history.receipt,undefined); assert.equal((await bus.state(reader)).consumed,page.through);
-  const env={DB:db,WRITES_ENABLED:'true'};
+  const env={DB:db,WRITES_ENABLED:'true',...rateConfig};
   assert.equal((await worker.fetch(request('/v1/messages',a,{...send('x'),to:'nobody'}),env)).status,400);
   assert.equal((await worker.fetch(request('/v1/messages',a,send('one','changed')),env)).status,409);
   await assert.rejects(db.batch([db.prepare('DELETE FROM acknowledgements').bind()]));
 }));
 
 test('actionable inbox separates direct destination from shared visibility', async () => fixture(async db => {
-  const bus=new Bus(db),actor=await bus.actor(a),reader=await bus.actor(b);
+  const bus=new Bus(db,rateConfig),actor=await bus.actor(a),reader=await bus.actor(b);
   await bus.send(actor,send('direct'));
   const shared=await bus.send(actor,{...send('broadcast'),to:'shared'});
   const mine=await bus.fetch(actor,0,20),theirs=await bus.fetch(reader,0,20);
@@ -182,7 +201,7 @@ test('actionable inbox separates direct destination from shared visibility', asy
 }));
 
 test('COMHEAD missing, bounds unset, stale age/lag and invalid future basis', async () => fixture(async db => {
-  const bus=new Bus(db),actor=await bus.actor(a);
+  const bus=new Bus(db,rateConfig),actor=await bus.actor(a);
   assert.equal((await bus.head(actor,{})).reason,'HEAD_MISSING');
   await db.batch([db.prepare('INSERT INTO comhead VALUES(1,1,0,unixepoch(),?,?)').bind('orientation','https://github.com/markgoodbody-bit/COM/issues/760')]);
   assert.equal((await bus.head(actor,{})).freshness,'UNKNOWN');
