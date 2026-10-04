@@ -3,11 +3,12 @@
 ## Active bounded source build: COM transport v1
 
 - **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
-- **CANDIDATE:** draft PR #761 at `d39a2c6af035370b393d41cb74b0a7c38099dcd5`; mergeable; exact-head workflow `37168462601 SUCCESS`.
-- **EARNED:** local storage/adapter contract, 14 Python tests, 7 Node groups, 27 actual local workerd/Miniflare D1 assertions.
+- **CANDIDATE SOURCE:** draft PR #761 transport commit `42f0292a07cf6e06da24b9e3a43a37ac3e3dd5d2`; CI for this advance pending.
+- **EARNED:** local storage/adapter contract, 14 Python tests, 10 Node groups, 45 actual local workerd/Miniflare D1 assertions. Duplicate decoded JSON keys and nesting beyond 32 levels now refused before writes.
 - **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
-- **OPEN:** retention/checkpoint, COMHEAD freshness, epoch/GAP/backup, shadow reconciliation, integrated client, duplicate JSON keys, broadcast/history semantics, hosted D1 and actual multi-aperture exchange.
-- **HELD:** provider resource, real credentials, deployment, PR merge, reliance and GitHub demotion. GitHub remains the live bus.
+- **OPEN:** retention/checkpoint, restricted head authoring, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
+- **ACTUAL CLIENT:** Framework Build `5983140685` = CAPABILITY_CEILING (no private authenticated HTTPS write/ack surface); Codex/CC hosted checks pending. This supersedes the later Campfire comment's generic all-pending matrix.
+- **HELD:** provider resources/deployment await minimal gates and green candidate; smallest dedicated shadow conditionally authorised at `5983065632`. No resource created yet. PR merge, reliance and GitHub demotion remain held.
 
 ## YAC current deployment state
 

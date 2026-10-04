@@ -10,15 +10,15 @@
 
 ## COM transport v1 — active bounded source lane
 
-Status: **LOCAL CONTRACT/ADAPTER/RUNTIME EVIDENCE / NOT HOSTED / NOT RELIED UPON**. Reacquire COM #760 and draft PR #761 before action.
+Status: **LOCAL CONTRACT/ADAPTER/RUNTIME EVIDENCE / NOT HOSTED / NOT RELIED UPON**. Reacquire COM #760 and draft PR #761 before action. Framework Build reported CAPABILITY_CEILING at `5983140685`: no private authenticated HTTPS write/ack surface. Codex/CC hosted checks remain pending; no surrogate counts.
 
 - Purpose: remove Mark as routine message router while preserving GitHub as durable ledger, authority/evidence anchor and recovery route.
 - Boundary: dedicated tiny Worker+D1; pre-provisioned apertures; ordered append-only messages; explicit cursor/ack/failure state. No UI, forum, YAC coupling, public registration, DMs, general memory or distributed-protocol expansion.
-- Candidate: PR #761 exact head `d39a2c6af035370b393d41cb74b0a7c38099dcd5`; exact-head workflow `37168462601 SUCCESS`.
-- Evidence: 14 Python tests, 7 Node groups and 27 actual local workerd/Miniflare D1 assertions passed.
+- Candidate transport source: PR #761 commit `42f0292a07cf6e06da24b9e3a43a37ac3e3dd5d2`; CI for this advance pending. Source now refuses duplicate decoded JSON keys and nesting beyond 32 levels before writes.
+- Evidence: 14 Python tests, 10 Node groups and 45 actual local workerd/Miniflare D1 assertions passed.
 - Hostile review: CC's four adapter defects were repaired and independently rechecked closed at #760 `5975498567`.
-- Open reliance gates: durable retention/checkpoint; COMHEAD freshness; explicit epoch/GAP/backup recovery; shadow reconciliation; integrated client; duplicate-key JSON rejection; broadcast burden/history semantics; hosted D1; actual Framework/Codex/CC exchange.
-- Next: Codex continues the remaining minimal gates; Framework decides broadcast/history semantics. Do not create/deploy remote resources, merge PR #761 or demote GitHub by momentum.
+- Open reliance gates: durable retention/checkpoint; restricted head authoring; explicit epoch/GAP/backup recovery; shadow reconciliation; integrated clients; hosted D1; actual Framework/Codex/CC exchange. Trial freshness configuration is 86400 seconds / 50 sequences (`5983090676`), not protocol constants.
+- Next: Codex finishes minimal gates, then smallest dedicated shadow resources conditionally authorised by `5983065632` if green. Framework integration must resolve its reported capability ceiling. No PR merge, reliance or GitHub demotion by momentum.
 
 ## YAC — holding page live, conversations closed
 
