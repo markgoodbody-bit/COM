@@ -1,4 +1,4 @@
-# Dedicated disabled-first COM shadow. Not YAC, not a migration/reliance claim.
+# Dedicated bounded COM shadow trial. Not YAC, not a migration/reliance claim.
 name = "com-shadow-v1-20261004"
 main = "worker.mjs"
 account_id = "5424afea4492c4b5850228bb36ad3977"
@@ -8,7 +8,7 @@ preview_urls = false
 [observability]
 enabled = false
 [vars]
-WRITES_ENABLED = "false"
+WRITES_ENABLED = "true"
 HEAD_WRITES_ENABLED = "false"
 TRANSPORT_EPOCH = "b94a95a488efa04e8344d31c7475c89b"
 HEAD_MAX_AGE_SECONDS = "86400"
