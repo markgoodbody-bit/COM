@@ -21,6 +21,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test transport/test_worker.mjs
+      - run: node --test transport/test_worker.mjs transport/test_reconcile.mjs
       - run: npm ci --prefix transport --ignore-scripts
       - run: node --test transport/test_runtime.mjs

@@ -3,6 +3,35 @@
 Current recovery/capacity status is in the first sections below. Older slice
 receipts later in this file describe their original boundary, not current gaps.
 
+## Observation-only snapshot reconciler
+
+`reconcile.mjs` is a pure function, with no network, database handle or write
+capability. Inputs are independently acquired `github` and `bus` JSON snapshots
+for the same explicitly named shadow `scope`, plus viewing `aperture`. Both
+must report `complete:true`. Each has `epoch` and `messages`; identity is exactly
+epoch + sender + request_key, never body equality. A GitHub row additionally
+requires a COM `witness_url`. Rows carry recipient, kind, body and github_anchor;
+bus rows also carry seq and optional my_disposition. GitHub must explicitly
+witness those transport identities; arbitrary discussion cannot be mapped by
+similar wording. URL shape alone is not independent source verification.
+
+Bus metadata includes head_seq, retained_after, checkpoint_version, consumed,
+server_time, checkpoint (when version > 0), comhead and head_bounds. COMHEAD
+freshness is rechecked against supplied time/basis/bounds, not trusted solely
+because a caller says CURRENT. Missing checkpoint, GAP, stale head, invalid
+disposition, identity/routing/content/anchor difference or unmatched row leaves
+the result UNKNOWN with explicit issues. Each row reports direct/shared/history
+routing and observed acknowledgement, never consumption inferred from cursor.
+Repeated shared bodies are counted per sender without suppression or abuse labels.
+
+Limits: 1000 messages per source and 2 MiB total JSON. Output is compact metadata,
+not message bodies. `SUPPLIED_SNAPSHOTS_MATCH` means only agreement within supplied
+evidence; sync_complete stays false and no authority winner is chosen. Caller
+completion/provenance assertions are not independently checked by this function.
+Live GitHub/bus read collectors, pagination/snapshot consistency and actual
+shadow exchange remain unproved. No automatic repair, ack, retry, cursor advance,
+COMHEAD authoring or GAP resolution is available here.
+
 ## Bounded logical archive / fresh local restore rehearsal
 
 `archive.mjs` is operator-only, with no HTTP backup/restore endpoint. Export
