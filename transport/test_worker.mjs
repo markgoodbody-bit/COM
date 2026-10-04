@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os';
 import {join, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
-import worker, {Bus, digest} from './worker.mjs';
+import worker, {Bus, digest, parsePayloadJson} from './worker.mjs';
 import {accountForPage} from './client.mjs';
 const root = dirname(fileURLToPath(import.meta.url));
 const python = process.env.COM_TEST_PYTHON || 'python';
@@ -46,6 +46,19 @@ const send = (key='one', body='synthetic') => ({request_key:key, body, to:'frame
 const request = (path, token=a, data, method=data ? 'POST':'GET') => new Request('https://com.invalid'+path,
   {method, headers:{Authorization:'Bearer '+token, 'Content-Type':'application/json'},
     ...(data ? {body:JSON.stringify(data)} : {})});
+
+test('request JSON rejects duplicate decoded keys and excessive nesting', () => {
+  for (const source of ['{"to":"codex","to":"shared"}',
+    '{"to":"codex","\\u0074o":"shared"}',
+    '{"dispositions":[{"seq":1,"seq":2}]}']) {
+    assert.throws(() => parsePayloadJson(source), /JSON_DUPLICATE_KEY/);
+  }
+  assert.throws(() => parsePayloadJson('{"x":'+'['.repeat(33)+'0'+']'.repeat(33)+'}'), /JSON_DEPTH_BOUND/);
+  assert.deepEqual(parsePayloadJson('{"body":"escaped \\" key: to","x":[{"seq":1},{"seq":2}]}'),
+    {body:'escaped " key: to',x:[{seq:1},{seq:2}]});
+  assert.throws(() => parsePayloadJson('{"to":}'));
+  assert.throws(() => parsePayloadJson('[]'), /JSON_INVALID/);
+});
 
 test('adapter duplicate delivery and accepted-write lost response', async () => fixture(async db => {
   const env = {DB:db, WRITES_ENABLED:'true'};

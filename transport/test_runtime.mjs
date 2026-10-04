@@ -42,6 +42,16 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     check((await call('/v1/state','wrong')).status,401);
     check((await call('/v1/messages?after=0',framework)).data.unread_count,0);
     check((await call('/v1/head',framework)).data.reason,'HEAD_MISSING');
+    for (const [body,code] of [
+      ['{"request_key":"ambiguous","body":"a","to":"framework","to":"shared"}','JSON_DUPLICATE_KEY'],
+      ['{"request_key":"ambiguous","body":"a","to":"framework","\\u0074o":"shared"}','JSON_DUPLICATE_KEY'],
+      ['{"receipt":"x","through":1,"dispositions":[{"seq":1,"seq":2}]}','JSON_DUPLICATE_KEY'],
+      ['{"x":'+'['.repeat(33)+'0'+']'.repeat(33)+'}','JSON_DEPTH_BOUND']]) {
+      const res=await runtime.dispatchFetch('https://com.invalid/v1/messages', {
+        method:'POST',headers:{Authorization:'Bearer '+codex,'Content-Type':'application/json'},body});
+      check(res.status,400); check((await res.json()).status,code);
+    }
+    check((await call('/v1/state')).data.head_seq,0);
     const first=await call('/v1/messages',codex,message()); check(first.status,200);
     check((await call('/v1/messages',codex,message())).data.seq,first.data.seq);
     check((await call('/v1/messages',codex,message('one','conflict'))).status,409);

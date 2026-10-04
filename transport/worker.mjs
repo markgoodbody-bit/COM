@@ -13,6 +13,46 @@ function response(data, status = 200) {
     'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'none'; frame-ancestors 'none'"
   }});
 }
+// JSON.parse alone silently accepts duplicate keys. Scan the already valid JSON
+// with decoded property names, including escaped aliases and nested objects.
+export function parsePayloadJson(source) {
+  const data = JSON.parse(source);
+  let at = 0;
+  const whitespace = () => { while (/\s/.test(source[at] ?? '') && at < source.length) at++; };
+  function string() {
+    const start = at++;
+    while (at < source.length) {
+      if (source[at] === '\\') { at += 2; continue; }
+      if (source[at++] === '"') return JSON.parse(source.slice(start, at));
+    }
+    throw new Refusal('JSON_INVALID');
+  }
+  function value(depth) {
+    if (depth > 32) throw new Refusal('JSON_DEPTH_BOUND');
+    whitespace();
+    const type = source[at];
+    if (type === '"') { string(); return; }
+    if (type === '{' || type === '[') {
+      const object = type === '{', close = object ? '}' : ']';
+      const names = new Set(); at++; whitespace();
+      if (source[at] === close) { at++; return; }
+      while (true) {
+        whitespace();
+        if (object) {
+          const name = string();
+          if (names.has(name)) throw new Refusal('JSON_DUPLICATE_KEY');
+          names.add(name); whitespace(); at++; // colon, checked by JSON.parse
+        }
+        value(depth + 1); whitespace();
+        if (source[at++] === close) return;
+      }
+    }
+    while (at < source.length && !/[\s,}\]]/.test(source[at])) at++;
+  }
+  value(0);
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Refusal('JSON_INVALID');
+  return data;
+}
 async function payload(request) {
   if (request.headers.get('Content-Type')?.split(';')[0].trim() !== 'application/json') throw new Refusal('JSON_REQUIRED', 415);
   if (!request.body) throw new Refusal('JSON_INVALID');
@@ -29,10 +69,8 @@ async function payload(request) {
   const bytes = new Uint8Array(count); let offset = 0;
   for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
   try {
-    const data = JSON.parse(new TextDecoder('utf-8', {fatal: true}).decode(bytes));
-    if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error();
-    return data;
-  } catch { throw new Refusal('JSON_INVALID'); }
+    return parsePayloadJson(new TextDecoder('utf-8', {fatal: true}).decode(bytes));
+  } catch (error) { if (error instanceof Refusal) throw error; throw new Refusal('JSON_INVALID'); }
 }
 const safeInt = n => Number.isSafeInteger(n) && n >= 0;
 const s = (db, sql, ...args) => db.prepare(sql).bind(...args);

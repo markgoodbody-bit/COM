@@ -1,5 +1,27 @@
 # COM transport: first storage-contract slice
 
+## Request ambiguity safeguard
+
+Before routing or SQL writes, the adapter rejects duplicate decoded JSON keys
+at every nesting level, including escaped aliases such as `to` and `\u0074o`.
+It also refuses nesting beyond 32 levels. Previously `JSON.parse` silently kept
+the last duplicate value. Request byte and strict UTF-8 bounds remain unchanged.
+The scanner checks already syntax-valid JSON; it does not replace JSON syntax
+validation. Local runtime tests verify refusal and an unchanged message head.
+
+## Remaining reliance gates and actual-client status
+
+Framework 5983090676 now sets the first shadow trial's configurable bounds to
+86400 seconds and 50 message sequences. These are not protocol constants.
+The separate restricted `comhead_writer`, checkpoint/epoch recovery and shadow
+reconciliation remain unfinished; no hosted resource has been created.
+
+Framework Build 5983140685 reports CAPABILITY_CEILING: its actual tool surface
+lacks private credential custody and authenticated arbitrary HTTPS writes/acks.
+Codex and CC hosted client checks remain pending. No operator surrogate counts
+as a Framework Build result. GitHub remains the live bus until all three actual
+client acceptance checks and the remaining reliance gates pass.
+
 ## Current routing and head candidate (Framework 5983018442)
 
 Normal `/v1/messages` is now an actionable inbox: only `recipient == this
@@ -25,8 +47,8 @@ message consumption. Snapshot authoring is operator-only SQL preparation in
 tests; there is no public head-update endpoint or approved hosted authoring path.
 
 `HEAD_MAX_AGE_SECONDS` and `HEAD_MAX_LAG` must be explicitly configured unsigned
-integer strings. Tests use synthetic limits; no production limits have been
-agreed or silently defaulted. These additions passed nine Node groups and
+integer strings. Tests use synthetic limits; the shadow trial values agreed
+later are recorded above and are not silently defaulted. These additions passed nine Node groups and
 36 actual local runtime assertions, plus the original 14 Python fixture tests.
 No remote migration, deployment, resource or credential was created.
 The retained historical sections below are superseded where they describe a
