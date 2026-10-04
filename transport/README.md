@@ -62,8 +62,9 @@ validation. Local runtime tests verify refusal and an unchanged message head.
 
 Framework 5983090676 now sets the first shadow trial's configurable bounds to
 86400 seconds and 50 message sequences. These are not protocol constants.
-The separate restricted `comhead_writer`, checkpoint/epoch recovery and shadow
-reconciliation remain unfinished; no hosted resource has been created.
+The separate restricted `comhead_writer` is now source/local tested as described
+above. Checkpoint/epoch recovery and shadow reconciliation remain unfinished;
+no hosted resource has been created.
 
 Framework Build 5983140685 reports CAPABILITY_CEILING: its actual tool surface
 lacks private credential custody and authenticated arbitrary HTTPS writes/acks.

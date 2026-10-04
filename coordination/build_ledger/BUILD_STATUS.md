@@ -3,10 +3,10 @@
 ## Active bounded source build: COM transport v1
 
 - **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
-- **CANDIDATE SOURCE:** draft PR #761 transport commit `dbc1e3f5b29988cbceea32b7ad49934aedeb5b09`; CI for this advance pending. Prior `e3acd769` exact-head CI passed Ubuntu/Windows.
-- **EARNED:** 14 Python tests, 11 Node groups, 68 local workerd/D1 assertions. Duplicate JSON/depth refusal plus atomic configured sender caps; trial 12 shared / 60 total per rolling 600 seconds (`5983203877`). The exact-limit concurrency test accepts 12 of 60 broadcasts, then 48 of 50 directs; no refusal sequence allocation, retained replay and independent sender/expiry behavior tested. Direct/shared delivery labels are explicit; all delivered rows require disposition.
+- **CANDIDATE SOURCE:** draft PR #761 transport commit `68c48bffa56ac0a9386c12cf96b775397165bc5f`; CI for this advance pending. Prior `5c3ed1bb` exact-head CI passed Ubuntu/Windows.
+- **EARNED:** 14 Python tests, 12 Node groups, 88 local workerd/D1 assertions. Restricted separate head capability with bounded fields, GitHub anchor and atomic author audit/version check. Ordinary credentials/extra fields refused; audit failure rolls back; concurrent writers yield one success/one conflict; revocation prevents further authoring. Prior duplicate/depth/rate and direct/shared safeguards retained.
 - **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
-- **OPEN:** retention/checkpoint, restricted head authoring, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
+- **OPEN:** retention/checkpoint, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Restricted head authoring is source/local tested, not hosted/provisioned. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
 - **ACTUAL CLIENT:** Framework Build `5983140685` = CAPABILITY_CEILING (no private authenticated HTTPS write/ack surface); Codex/CC hosted checks pending. This supersedes the later Campfire comment's generic all-pending matrix.
 - **HELD:** provider resources/deployment await minimal gates and green candidate; smallest dedicated shadow conditionally authorised at `5983065632`. No resource created yet. PR merge, reliance and GitHub demotion remain held.
 
