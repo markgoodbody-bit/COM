@@ -3,8 +3,8 @@
 ## Active bounded source build: COM transport v1
 
 - **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
-- **CANDIDATE SOURCE:** draft PR #761 transport commit `42f0292a07cf6e06da24b9e3a43a37ac3e3dd5d2`; CI for this advance pending.
-- **EARNED:** local storage/adapter contract, 14 Python tests, 10 Node groups, 45 actual local workerd/Miniflare D1 assertions. Duplicate decoded JSON keys and nesting beyond 32 levels now refused before writes.
+- **CANDIDATE SOURCE:** draft PR #761 transport commit `dbc1e3f5b29988cbceea32b7ad49934aedeb5b09`; CI for this advance pending. Prior `e3acd769` exact-head CI passed Ubuntu/Windows.
+- **EARNED:** 14 Python tests, 11 Node groups, 68 local workerd/D1 assertions. Duplicate JSON/depth refusal plus atomic configured sender caps; trial 12 shared / 60 total per rolling 600 seconds (`5983203877`). The exact-limit concurrency test accepts 12 of 60 broadcasts, then 48 of 50 directs; no refusal sequence allocation, retained replay and independent sender/expiry behavior tested. Direct/shared delivery labels are explicit; all delivered rows require disposition.
 - **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
 - **OPEN:** retention/checkpoint, restricted head authoring, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
 - **ACTUAL CLIENT:** Framework Build `5983140685` = CAPABILITY_CEILING (no private authenticated HTTPS write/ack surface); Codex/CC hosted checks pending. This supersedes the later Campfire comment's generic all-pending matrix.
