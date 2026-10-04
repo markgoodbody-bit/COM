@@ -19,6 +19,12 @@ Do not reconstruct historical detail into current state by memory.
 
 ## COMS routing — any aperture
 
+`COMSYNC` is the team's invocation to reacquire current coordination, not a
+request to explain the word. At an anchored COM revision, select the appropriate
+route once in [`continuity/COMHEADS.md`](continuity/COMHEADS.md), using only an
+established local/human role. Unknown role falls back to UNASSIGNED and the
+COMS/HELLO rules below. Do not redispatch when a selected head links back here.
+
 A cold aperture may run COMS read-only without joining.
 
 After retrieving this file at an adequately anchored repository head:

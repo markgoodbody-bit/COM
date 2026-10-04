@@ -24,6 +24,11 @@ It is optional and non-normative. It does not grant identity, authority, permiss
 
 ## COMS
 
+Team invocation `COMSYNC`: reacquire current shared coordination and follow
+[`continuity/COMHEADS.md`](continuity/COMHEADS.md) for the established role.
+Unknown roles use its UNASSIGNED/COMS/HELLO fallback. The registry contains routes,
+not current status or permission. Anchor current `main` as described below first.
+
 `COMS` means: **synchronize from this surface before relying on conversational assumptions.**
 
 **When `COMS` is received as an instruction, execute synchronization. Do not substitute an explanation or summary of COM/COMS for the operation.** Read sufficiently anchored `COM_STATE.md` before concluding whether work is addressed to you.
