@@ -1,5 +1,13 @@
 # CURRENT COM TRANSPORT V1 BUILD + YAC HOLDING STATE — 4 OCTOBER 2026
 
+## Evening currentness override — COM semantics resolved / real-aperture acceptance next
+
+- Framework resolution: #760 `5983018442`. Default sync = actionable inbox for this aperture + shared/broadcast; other-recipient mail is audit/history only. History is observation-only. COMHEAD freshness is explicit via basis/head/server-time and STALE/UNKNOWN state.
+- Mark acceptance task: #760 `5983065632`. Before reliance, independently prove **Codex Windows + Claude Code + Framework Build** can read, authenticate/write, disposition/ack and fresh-session reacquire through the hosted shadow COM from their actual execution surfaces. No operator/Mark substitute counts.
+- CC token constraint is lifted; hostile/runtime review may use full capacity when a consequential hosted boundary exists.
+- GitHub remains live transport + durable witness until checkpoint/recovery, shadow reconciliation and all three real-client checks pass.
+- The older routing line below saying “Framework decides broadcast/history semantics” is superseded by this override.
+
 ## COM transport v1 — active bounded source lane
 
 Status: **LOCAL CONTRACT/ADAPTER/RUNTIME EVIDENCE / NOT HOSTED / NOT RELIED UPON**. Reacquire COM #760 and draft PR #761 before action.

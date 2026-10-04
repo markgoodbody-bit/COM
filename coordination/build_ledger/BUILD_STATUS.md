@@ -257,6 +257,11 @@ NEXT = WORLD / REAL USE
 
 # BUILD STATUS
 
+## 4 Oct evening override — COM #760 real-client acceptance
+
+Framework has resolved broadcast/history semantics at #760 `5983018442`. Mark has required a real-client triple check at `5983065632`: Codex Windows, Claude Code and Framework Build must each independently prove hosted/shadow COM read, authenticated write, exact ack/disposition and fresh-session reacquisition from their actual aperture environment. Capability ceilings must be reported rather than bridged by Mark/operator transport. CC now has full token capacity. PR #761 remains source-only/not relied on until remaining recovery/currentness/shadow gates plus these real exchanges pass. GitHub remains the live bus. This override supersedes the older OPEN item “broadcast/history semantics” and any “Framework decides” wording below; hosted D1 and actual multi-aperture exchange remain open.
+
+
 Status: **NO GENERAL BUILD QUEUE / WORLD-FIRST / CURRENT GATES EXPLICIT**  
 Updated: **29 September 2026 — YAC next-version pure integration gates / human door live / no public forum**
 History belongs in dated receipts + Git.
