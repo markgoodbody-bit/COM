@@ -3,12 +3,12 @@
 ## Active bounded source build: COM transport v1
 
 - **OWNER/ROUTE:** Codex lead via COM #760; Framework semantic/integration gate; Claude Code hostile review.
-- **CANDIDATE SOURCE:** draft PR #761 transport commit `5f13b2db20d96a6db373283e425f14b725753d71`; CI pending.
-- **EARNED:** 14 Python tests, 14 Node groups, 141 local workerd/D1 assertions. Bounded 285-row synthetic archive independently hashed, restored into fresh database, re-exported to identical hash; altered bytes/nonempty target/mid-restore failure refuse. New epoch blocks stale clients; verified immutable archive can supply GAP orientation without cursor/ack mutation. Prior safeguards retained.
-- **RECOVERY CEILING:** authorised live-inbox resumption for GAP, bounded storage/retention and hosted D1 backup/restore remain unproved. Fixture archive/databases disposed after tests; no retained real backup, pruning or cursor bootstrap. Not a completed recovery/reliance gate.
+- **CANDIDATE SOURCE:** draft PR #761 transport commit `957532f8`; new-head CI pending.
+- **EARNED:** 14 Python tests, 14 Node groups, 173 local workerd/D1 assertions. Prior archive/restore safeguards retained; exact direct/shared recovery accounting bound to archive/checkpoint/epoch, append-only ledger/audit and atomic cursor advancement pass. Independent shared recovery, duplicate/omission/changed archive rejection, audit rollback and accepted replay at concurrent capacity pass. Local synthetic recovery model green under Framework `5983596297`.
+- **RECOVERY CEILING:** hosted D1 DR, full-capacity export and total storage unproved. Trial retains all history without pruning, hard message cap 10,000; archive helper max 1000 total rows cannot back up full shadow. Fixture archive/databases disposed; no retained real backup or actual-client acceptance/reliance.
 - **CC RATE RECHECK:** `5983326090`, accepted at `5983360185`, closes five P9 properties. P10 repetition remains observation-only; no semantic body refusal. Reconciler repeated-body reporting still open.
 - **CC RECHECK:** four material adapter defects repaired and closed at #760 `5975498567`.
-- **OPEN:** retention/checkpoint, epoch/GAP/backup, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Restricted head authoring is source/local tested, not hosted/provisioned. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
+- **OPEN:** hosted/full-capacity backup and total storage, shadow reconciliation, integrated clients, hosted D1 and actual multi-aperture exchange. Restricted head authoring is source/local tested, not hosted/provisioned. Semantics resolved at `5983018442`; shadow bounds set at `5983090676` (86400 seconds / 50 sequences).
 - **ACTUAL CLIENT:** Framework Build `5983140685` = CAPABILITY_CEILING (no private authenticated HTTPS write/ack surface); Codex/CC hosted checks pending. This supersedes the later Campfire comment's generic all-pending matrix.
 - **HELD:** provider resources/deployment await minimal gates and green candidate; smallest dedicated shadow conditionally authorised at `5983065632`. No resource created yet. PR merge, reliance and GitHub demotion remain held.
 
