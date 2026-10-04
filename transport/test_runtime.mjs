@@ -14,7 +14,7 @@ const nativeOptions = options => ({...convertV4MiniflareOptions(options),
   resourcePersistencePath:options.d1Persist, telemetry:{enabled:false},logRequests:false});
 const root = dirname(fileURLToPath(import.meta.url));
 const codex = 'a'.repeat(43), framework = 'b'.repeat(43);
-const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12'};
+const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
 
 test('local Workers/D1 exchange, rollback, replay, concurrency and restart', async () => {
   const temporary = mkdtempSync(join(tmpdir(),'com-workerd-'));
@@ -106,7 +106,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     // Tight synthetic limits test the same configured atomic boundary, not
     // elapsed wall-clock sleeps or an operator-side check-then-write.
     await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'true',
-      SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'3',SEND_MAX_SHARED:'2'}}));
+      ...rateConfig,SEND_MAX_ALL:'3',SEND_MAX_SHARED:'2'}}));
     db=await runtime.getD1Database('DB');
     const shared = key=>({...message(key),to:'shared'});
     const r1=await call('/v1/messages',claude,shared('cap1')); check(r1.status,200);
@@ -145,6 +145,25 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     check(directs.filter(r=>r.status===200).length,48);
     check(directs.filter(r=>r.status===429).length,2);
     check((await db.prepare("SELECT COUNT(*) AS n FROM messages WHERE sender='trial'").first()).n,60);
+    const daily='i'.repeat(43),dailyExpired='j'.repeat(43),dailyRacer='k'.repeat(43);
+    for (const [id,token,count,age] of [['daily',daily,60,601],['daily-expired',dailyExpired,60,86400],['daily-racer',dailyRacer,58,601]]) {
+      await db.prepare('INSERT INTO apertures(id,credential_hash) VALUES (?,?)').bind(id,await digest(token)).run();
+      await db.prepare(`WITH RECURSIVE n(x) AS (SELECT 0 UNION ALL SELECT x+1 FROM n WHERE x+1<?)
+        INSERT INTO messages(sender,recipient,kind,request_key,body,received_at)
+        SELECT ?,'shared','message','old'||x,'synthetic',unixepoch()-? FROM n`).bind(count,id,age).run();
+    }
+    const beforeDaily=await db.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").first();
+    const dailyRefusal=await call('/v1/messages',daily,shared('slow-new'));
+    check(dailyRefusal.status,429);
+    check(dailyRefusal.data.retry_after_seconds>600 && dailyRefusal.data.retry_after_seconds<=86400,true);
+    check(await db.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").first(),beforeDaily);
+    check((await call('/v1/messages',daily,message('daily-direct'))).status,200);
+    check((await call('/v1/messages',daily,shared('old0'))).status,200);
+    check((await call('/v1/messages',dailyExpired,shared('next-day'))).status,200);
+    const longRaces=await Promise.all(Array.from({length:5},(_,i)=>call('/v1/messages',dailyRacer,shared('long-race'+i))));
+    check(longRaces.filter(r=>r.status===200).length,2);
+    check(longRaces.filter(r=>r.status===429).length,3);
+    check((await db.prepare("SELECT COUNT(*) AS n FROM messages WHERE sender='daily-racer'").first()).n,60);
     const rateHead=(await call('/v1/state',framework)).data.head_seq;
     check((await db.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,2);
     await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'false'}}));

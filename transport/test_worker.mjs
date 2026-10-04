@@ -10,7 +10,7 @@ import {accountForPage} from './client.mjs';
 const root = dirname(fileURLToPath(import.meta.url));
 const python = process.env.COM_TEST_PYTHON || 'python';
 const a = 'a'.repeat(43), b = 'b'.repeat(43);
-const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12'};
+const rateConfig={SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'60',SEND_MAX_SHARED:'12',SHARED_LONG_WINDOW_SECONDS:'86400',SHARED_LONG_MAX:'60'};
 function database(path) {
   function execute(statements) {
     const run = spawnSync(python, ['-B', join(root, 'sqlite_bridge.py')], {
@@ -62,7 +62,7 @@ test('request JSON rejects duplicate decoded keys and excessive nesting', () => 
 });
 
 test('sender limits refuse atomically while exact replay remains available', async () => fixture(async db => {
-  const env={DB:db,WRITES_ENABLED:'true',SEND_WINDOW_SECONDS:'600',SEND_MAX_ALL:'3',SEND_MAX_SHARED:'2'};
+  const env={DB:db,WRITES_ENABLED:'true',...rateConfig,SEND_MAX_ALL:'3',SEND_MAX_SHARED:'2'};
   const shared=key=>({...send(key),to:'shared'});
   for (const key of ['cap1','cap2']) assert.equal((await worker.fetch(request('/v1/messages',a,shared(key)),env)).status,200);
   const before=await db.prepare("SELECT seq FROM sqlite_sequence WHERE name='messages'").bind().first();
@@ -98,6 +98,21 @@ test('separate head capability rejects ordinary auth, extra authority and stale 
   assert.equal((await bus.state(await bus.actor(a))).consumed,0);
   assert.equal((await bus.state(await bus.actor(a))).head_seq,0);
   await assert.rejects(db.batch([db.prepare('DELETE FROM head_audit').bind()]));
+}));
+
+test('long shared window blocks slow sends but not directs or retained replays', async () => fixture(async db => {
+  const env={DB:db,WRITES_ENABLED:'true',...rateConfig,SHARED_LONG_MAX:'2'};
+  await db.batch([0,1].map(i=>db.prepare(`INSERT INTO messages(sender,recipient,kind,request_key,body,received_at)
+    VALUES('codex','shared','message',?,'synthetic',unixepoch()-601)`).bind('old'+i)));
+  const shared=key=>({...send(key),to:'shared'});
+  const refused=await worker.fetch(request('/v1/messages',a,shared('new')),env);
+  assert.equal(refused.status,429);
+  const body=await refused.json(); assert.equal(body.status,'RATE_LIMITED');
+  assert.ok(body.retry_after_seconds>600 && body.retry_after_seconds<=86400);
+  assert.equal((await worker.fetch(request('/v1/messages',a,send('direct')),env)).status,200);
+  assert.equal((await worker.fetch(request('/v1/messages',a,shared('old0')),env)).status,200);
+  assert.equal((await worker.fetch(request('/v1/messages',b,shared('other')),env)).status,200);
+  assert.equal((await db.prepare("SELECT COUNT(*) AS n FROM messages WHERE sender='codex' AND recipient='shared'").bind().first()).n,2);
 }));
 
 test('adapter duplicate delivery and accepted-write lost response', async () => fixture(async db => {

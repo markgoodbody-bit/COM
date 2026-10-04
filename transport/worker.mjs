@@ -146,12 +146,12 @@ export class Bus {
     if (anchor !== null && (typeof anchor !== 'string' || !anchorPattern.test(anchor))) throw new Refusal('INVALID_ANCHOR');
     if (kind === 'decision' && anchor === null) throw new Refusal('DECISION_ANCHOR_REQUIRED');
     const db = this.db;
-    const limits = ['SEND_WINDOW_SECONDS','SEND_MAX_ALL','SEND_MAX_SHARED'].map(name => {
+    const limits = ['SEND_WINDOW_SECONDS','SEND_MAX_ALL','SEND_MAX_SHARED','SHARED_LONG_WINDOW_SECONDS','SHARED_LONG_MAX'].map(name => {
       const raw=this.env[name], number=Number(raw);
       if (!/^[1-9][0-9]*$/.test(raw??'') || !safeInt(number)) throw new Refusal('RATE_BOUNDS_UNSET',503);
       return number;
     });
-    const [window,allLimit,sharedLimit]=limits;
+    const [window,allLimit,sharedLimit,longWindow,longLimit]=limits;
     if (!await s(db,"SELECT id FROM apertures WHERE id=? AND (revoked=0 OR id='shared')",recipient).first()) throw new Refusal('UNKNOWN_RECIPIENT');
     let results;
     try { results = await db.batch([
@@ -160,9 +160,10 @@ export class Bus {
         SELECT ?,?,?,?,?,?,unixepoch() WHERE
         EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=?) OR
         ((SELECT COUNT(*) FROM messages WHERE sender=? AND received_at>unixepoch()-?)<? AND
-         (?!='shared' OR (SELECT COUNT(*) FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?)<?))
+         (?!='shared' OR ((SELECT COUNT(*) FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?)<?
+          AND (SELECT COUNT(*) FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?)<?)))
         ON CONFLICT(sender,request_key) DO NOTHING`, actor.id, recipient, kind, anchor, key, body,
-          actor.id,key,actor.id,window,allLimit,recipient,actor.id,window,sharedLimit),
+          actor.id,key,actor.id,window,allLimit,recipient,actor.id,window,sharedLimit,actor.id,longWindow,longLimit),
       guard(db, `NOT EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=?) OR
         EXISTS(SELECT 1 FROM messages WHERE sender=? AND request_key=? AND body=? AND recipient=? AND kind=? AND github_anchor IS ?)`, actor.id,key,actor.id, key, body, recipient, kind, anchor),
       s(db, `SELECT (SELECT seq FROM messages WHERE sender=? AND request_key=?) AS seq,
@@ -170,8 +171,11 @@ export class Bus {
         MAX(1,COALESCE((SELECT received_at FROM messages WHERE sender=? AND received_at>unixepoch()-?
           ORDER BY received_at DESC LIMIT 1 OFFSET ?)+?-unixepoch(),0),
           CASE WHEN ?='shared' THEN COALESCE((SELECT received_at FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?
+          ORDER BY received_at DESC LIMIT 1 OFFSET ?)+?-unixepoch(),0) ELSE 0 END,
+          CASE WHEN ?='shared' THEN COALESCE((SELECT received_at FROM messages WHERE sender=? AND recipient='shared' AND received_at>unixepoch()-?
           ORDER BY received_at DESC LIMIT 1 OFFSET ?)+?-unixepoch(),0) ELSE 0 END) AS retry_after_seconds`,
-        actor.id,key,actor.id,window,allLimit-1,window,recipient,actor.id,window,sharedLimit-1,window)
+        actor.id,key,actor.id,window,allLimit-1,window,recipient,actor.id,window,sharedLimit-1,window,
+        recipient,actor.id,longWindow,longLimit-1,longWindow)
     ]); } catch (error) {
       const prior=await s(db,'SELECT * FROM messages WHERE sender=? AND request_key=?',actor.id,key).first();
       if (prior && (prior.body!==body || prior.recipient!==recipient || prior.kind!==kind || prior.github_anchor!==anchor)) throw new Refusal('REQUEST_KEY_CONFLICT',409);
@@ -180,7 +184,7 @@ export class Bus {
     const result=results[3].results[0];
     if (result.seq===null) {
       const refusal=new Refusal('RATE_LIMITED',429);
-      refusal.retryAfter=Math.min(window,result.retry_after_seconds);
+      refusal.retryAfter=Math.min(Math.max(window,longWindow),result.retry_after_seconds);
       throw refusal;
     }
     const {retry_after_seconds,...accepted}=result;

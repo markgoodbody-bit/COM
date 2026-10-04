@@ -31,17 +31,22 @@ Checkpoint/epoch recovery remains a separate unfinished gate.
 
 Each send atomically checks the sender's rolling-window volume before insertion.
 Explicit positive integer configuration is required: `SEND_WINDOW_SECONDS`,
-`SEND_MAX_ALL`, `SEND_MAX_SHARED`. Missing/invalid bounds close sends with
+`SEND_MAX_ALL`, `SEND_MAX_SHARED`, `SHARED_LONG_WINDOW_SECONDS`, `SHARED_LONG_MAX`. Missing/invalid bounds close sends with
 503 `RATE_BOUNDS_UNSET`; no protocol defaults are inferred. The first trial
-configuration is 600 seconds, 60 total sends and 12 shared sends per sender.
+configuration is 600 seconds, 60 total sends and 12 shared sends per sender,
+plus 60 shared sends per rolling 86400 seconds (Framework 5983360185). Shared
+sends must fit both shared windows as well as the total short window. There is
+no direct-message daily cap or content-based refusal.
 Accepted request-key replays remain available at the cap and do not add messages
 or consume another allowance; changed-payload replay is still 409.
 
 A rate refusal is 429 `RATE_LIMITED` with `retry_after_seconds` between 1 and
-the configured window. It allocates no message sequence or partial message.
+the larger configured window. It allocates no message sequence or partial message.
 This is a wait hint, not permission for automatic retry. Direct and shared
 messages both count toward the total; shared also counts toward its narrower
-cap. Server time, not caller time, defines the window. Expired sends cease to
+cap. The wait hint uses the latest release required by any full applicable
+window: this is the earliest time when all constraints can clear, assuming no
+intervening sends. It is not a reservation. Server time, not caller time, defines the window. Expired sends cease to
 count; retained messages are not deleted. Indexed counts and conditional insert
 execute in the same D1 batch; no operator-side check-then-write is relied on.
 
