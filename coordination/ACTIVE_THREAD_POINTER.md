@@ -1,21 +1,31 @@
-# CURRENT YAC V1 SMALL-CELL DEPLOYMENT PROOF — 3 OCTOBER 2026 NIGHT
+# CURRENT COM TRANSPORT V1 BUILD + YAC HOLDING STATE — 4 OCTOBER 2026
 
-Status: **BOUNDED SOURCE/DEPLOY-READINESS LANE / LOCAL WORKERS + REAL D1 LINKAGE PASS / PUBLIC ROOT CLOSED**. This supersedes the admission-v2 scratch routing below. Reacquire COM #723 through Campfire disposition `5974353707` and YAC `docs/V1_BUILD_HEAD.md` before action.
+## COM transport v1 — active bounded source lane
 
-**Frozen product boundary:** one tiny persistent conversation cell: public read; exactly three operator-provisioned apertures (`mark`, `framework`, `claude`); authenticated fire/reply; cheap changes/fresh-session reacquisition. `APERTURE != ENTITY`. No public mint, THR integration, rooms, profiles, memory, federation, UI or extra coordination machinery.
+Status: **LOCAL CONTRACT/ADAPTER/RUNTIME EVIDENCE / NOT HOSTED / NOT RELIED UPON**. Reacquire COM #760 and draft PR #761 before action.
 
-**Candidate and evidence:** YAC draft PR #95 exact head `25e59bc292d7684b817a312e703f93d95772d351`; Campfire reports both required exact-head workflows green. Actual local Python Workers runtime passed Framework-create -> Claude-read/reply -> Framework-read with deterministic clients. Dedicated rehearsal D1 `yac-v1-rehearsal-20261003` / `6fb5f7b9-52ad-411c-a2a9-7fdd5c6958bb` passed 13 HTTP checks through the actual local Worker with remote D1 binding, including linkage and restart/read persistence. Uploaded dedicated Worker version `8da5e541-03e8-4e74-b12e-fea8e5dcaf42` is closed: `WRITES_ENABLED=false`, workers.dev/preview URLs/observability false, no public routes.
+- Purpose: remove Mark as routine message router while preserving GitHub as durable ledger, authority/evidence anchor and recovery route.
+- Boundary: dedicated tiny Worker+D1; pre-provisioned apertures; ordered append-only messages; explicit cursor/ack/failure state. No UI, forum, YAC coupling, public registration, DMs, general memory or distributed-protocol expansion.
+- Candidate: PR #761 exact head `d39a2c6af035370b393d41cb74b0a7c38099dcd5`; exact-head workflow `37168462601 SUCCESS`.
+- Evidence: 14 Python tests, 7 Node groups and 27 actual local workerd/Miniflare D1 assertions passed.
+- Hostile review: CC's four adapter defects were repaired and independently rechecked closed at #760 `5975498567`.
+- Open reliance gates: durable retention/checkpoint; COMHEAD freshness; explicit epoch/GAP/backup recovery; shadow reconciliation; integrated client; duplicate-key JSON rejection; broadcast burden/history semantics; hosted D1; actual Framework/Codex/CC exchange.
+- Next: Codex continues the remaining minimal gates; Framework decides broadcast/history semantics. Do not create/deploy remote resources, merge PR #761 or demote GitHub by momentum.
 
-**Ceilings:** deterministic clients are not real Framework/Claude sessions. Remote Worker HTTP, failure-injection/concurrent HTTP, public root and fresh-session reacquisition remain unproven. Mark has purchased `yetanotherclearing.com`, but the Cloudflare zone is absent and existing authenticated scope has zone read, not zone write.
+## YAC — holding page live, conversations closed
 
-**Next:** preserve PR #95 exactly. Finish non-DNS deploy-readiness checks; reacquire only already-authorised reversible Cloudflare capability. If zone/root attachment cannot be created within current authenticated scope, stop provider mutation and return the single minimum later human action. Do not ask Mark to touch Namecheap yet. Do not seed the first fire, expose public writes, merge/deploy to the canonical root or add product scope.
+- Mark requested the minimal holding page and authorised the prepared registrar delegation.
+- Namecheap Custom DNS saved to `anirban.ns.cloudflare.com` / `dell.ns.cloudflare.com`; public resolver confirmed the pair and retained five MX/SPF records.
+- Holding Worker version `1f8bbf25-7680-4538-bf36-5d88a2973079`: `HOLDING_PAGE=true`, `WRITES_ENABLED=false`, exact apex/www temporary routes.
+- Remote roots returned 200 with “Yet Another Clearing / Being prepared”; API reads/writes returned 503. Ordinary-DNS HTTPS `www` later returned 200. No global-cache, apex ordinary-DNS or browser-render claim.
+- PR #95 current full head `3e1cf8298f6d78c6e22753e77a69471507ccfd8c`, open/unmerged; both exact-head workflows green.
+- Held: conversation release, first fire, real credentials, live-cell database/custody, actual AI exchange and final Custom Domain origin.
 
 ```text
-LOCAL WORKERS + REMOTE D1 LINKAGE != REMOTE WORKER HTTP
-DETERMINISTIC CLIENTS != ACTUAL FRESH AI SESSIONS
-DOMAIN OWNED != ZONE ATTACHED
-ACTIVE BOUNDED LANE = YAC V1 DEPLOYMENT PROOF
-PUBLIC ROOT / FIRST FIRE = CLOSED / UNPUBLISHED
+HOLDING PAGE LIVE != CONVERSATION LIVE
+LOCAL COM TRANSPORT PASS != HOSTED OR RELIED UPON
+GITHUB REMAINS LIVE BUS
+CARRIER FAILURE != CONTENT RECEIVED
 ```
 
 ---
