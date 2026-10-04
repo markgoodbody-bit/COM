@@ -1,5 +1,41 @@
 # COM transport: first storage-contract slice
 
+## Bounded logical archive / fresh local restore rehearsal
+
+`archive.mjs` is operator-only, with no HTTP backup/restore endpoint. Export
+reads all explicit transport tables and the SQLite message allocation watermark
+in one D1 batch. Bounds are 1000 total rows and 1 MiB serialized UTF-8; exceeding
+either refuses rather than clipping. This is a small shadow-fixture envelope,
+not a scalable production backup service. Credential hashes, messages and
+dispositions make the archive sensitive: keep it private, never post its body.
+No bearer plaintext is exported.
+
+The exact archive bytes, schema SHA-256 and GitHub witness reference are bound
+in the envelope. `verifyArchive` checks against a separately supplied expected
+content hash and schema hash, then checks format/table/column/bound constraints.
+Shape/hash agreement does not prove the GitHub witness exists or grants authority.
+`restoreArchive` accepts only a fresh schema containing the reserved shared row;
+it uses fixed identifiers and bound row values, not SQL from the archive. Inserts
+and allocation-watermark restoration are atomic. Nonempty targets, altered bytes,
+wrong schema or failed constraints refuse. No automatic restore or overwrite.
+
+The runtime rehearsal writes one disposable synthetic archive, independently
+hashes its file bytes using Node crypto (separate from the WebCrypto exporter),
+restores into a new local workerd/D1 binding and re-exports all tables/watermark
+to the identical hash. An injected acknowledgement insertion failure proves
+rollback. The fresh deployment is pinned to a new epoch before serving; the
+restored old epoch stays closed until an explicit checkpoint rebinds it, retaining
+the verified archive hash and GitHub anchor. Old client epochs are refused.
+The archive/test databases are removed after the rehearsal; this does not leave
+a retained real backup and does not prove hosted D1 disaster recovery.
+
+`archiveHistory` accepts only a packet verified in this process. It offers
+bounded observation-only replay for checkpoint/bootstrap orientation, including
+history below the live floor. It cannot acknowledge, invent a cursor or grant
+live-inbox resumption. **Authorised GAP resumption remains open**, alongside
+storage/retention policy and later hosted backup/restore testing. No ordinary or
+head-writer capability can invoke these operator routines over HTTP.
+
 ## Recovery boundary candidate (not a completed backup/restore gate)
 
 Operator must explicitly create `transport_meta` and bind its 32-lowercase-hex
@@ -34,11 +70,11 @@ is invalidated until explicitly re-authored; version/body are preserved.
 Audit failure rolls back; concurrent advances produce one winner. There is no
 automatic pruning, message deletion, credential change or cursor bootstrap.
 
-**Still unproved:** archive existence/content/hash verification, actual backup
-export and restore rehearsal, bounded retention/storage policy, and authorised
-bootstrap procedure for a GAP. The supplied archive hash is a receipt reference,
-not proof. Tests exercise a synthetic boundary transition, not a real backup.
-These open parts still block declaring the recovery/reliance gate complete.
+**Local progress now earned:** the bounded archive/restore rehearsal described
+above. **Still unproved:** hosted archive/restore, bounded retention/storage
+policy, and authorised live-inbox resumption for a GAP. Merely supplying a hash
+to advanceCheckpoint still does not verify archive content; use the separate
+verification routine. These open parts block declaring recovery/reliance complete.
 
 ## Restricted head authoring (Framework 5983090676)
 

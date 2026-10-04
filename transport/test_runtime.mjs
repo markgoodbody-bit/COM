@@ -2,13 +2,15 @@
 import {createRequire} from 'node:module';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync, readFileSync, rmSync} from 'node:fs';
+import {mkdtempSync, readFileSync, writeFileSync, rmSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {tmpdir} from 'node:os';
 import {join, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {digest} from './worker.mjs';
 import {accountForPage} from './client.mjs';
 import {advanceCheckpoint} from './recovery.mjs';
+import {exportArchive,verifyArchive,restoreArchive,archiveHistory} from './archive.mjs';
 const require = createRequire(import.meta.url);
 const {Miniflare, convertV4MiniflareOptions} = require(process.env.COM_MINIFLARE_MODULE || 'miniflare');
 const nativeOptions = options => ({...convertV4MiniflareOptions(options),
@@ -23,7 +25,7 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
   const options = {name:'com-contract', modules:true, scriptPath:join(root,'worker.mjs'),
     compatibilityDate:'2026-10-03', d1Databases:{DB:'com-local-fixture'},
     d1Persist:temporary, bindings:{WRITES_ENABLED:'true',...rateConfig}};
-  let runtime;
+  let runtime,restoredRuntime;
   let checks=0;
   function check(actual, expected) { assert.deepEqual(actual,expected); checks++; }
   async function call(path, token=codex, body, epoch=testEpoch) {
@@ -233,9 +235,61 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     await assert.rejects(db.prepare('DELETE FROM recovery_checkpoints').run()); checks++;
     check((await call('/v1/state',framework,undefined,null)).data.consumed,1);
     check((await call('/v1/state',framework,undefined,null)).data.head_seq,rateHead);
+    const schemaHash=createHash('sha256').update(readFileSync(join(root,'schema.sql'))).digest('hex');
+    const archiveArgs={epoch:checkpoint.new_epoch,schema_sha256:schemaHash,github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'};
+    const archive=await exportArchive(db,archiveArgs);
+    const archivePath=join(temporary,'synthetic-com-archive.json');
+    writeFileSync(archivePath,archive.text,{flag:'wx'});
+    const bytes=readFileSync(archivePath), independentHash=createHash('sha256').update(bytes).digest('hex');
+    check(independentHash,archive.sha256);
+    const text=bytes.toString('utf8'),verified=await verifyArchive(text,independentHash,schemaHash);
+    await assert.rejects(verifyArchive(text+' ',independentHash,schemaHash),/ARCHIVE_HASH_MISMATCH/); checks++;
+    await assert.rejects(verifyArchive(text,independentHash,'f'.repeat(64)),/ARCHIVE_INVALID/); checks++;
+    const restoredEpoch='3'.repeat(32);
+    restoredRuntime=new Miniflare(nativeOptions({...options,name:'com-restore',d1Databases:{DB:'com-restored-fixture'},
+      bindings:{WRITES_ENABLED:'true',...rateConfig,TRANSPORT_EPOCH:restoredEpoch}}));
+    const fresh=await restoredRuntime.getD1Database('DB');
+    for (const statement of statements) await fresh.prepare(statement).run();
+    await assert.rejects(restoreArchive(fresh,text+' ',independentHash,schemaHash)); checks++;
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM messages').first()).n,0);
+    await fresh.prepare("CREATE TRIGGER fail_restore BEFORE INSERT ON acknowledgements BEGIN SELECT RAISE(ABORT,'synthetic failure'); END").run();
+    await assert.rejects(restoreArchive(fresh,text,independentHash,schemaHash)); checks++;
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM messages').first()).n,0);
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM transport_meta').first()).n,0);
+    await fresh.prepare('DROP TRIGGER fail_restore').run();
+    check((await restoreArchive(fresh,text,independentHash,schemaHash)).hosted_restore,false);
+    const reexport=await exportArchive(fresh,archiveArgs);
+    check(reexport.sha256,independentHash); // all tables, metadata and allocation watermark
+    await assert.rejects(restoreArchive(fresh,text,independentHash,schemaHash)); checks++;
+    const fetchRestored=async (path,epoch=null)=> {
+      const res=await restoredRuntime.dispatchFetch('https://com.invalid'+path,{headers:{Authorization:'Bearer '+framework,
+        ...(epoch===null?{}:{'X-COM-Epoch':epoch})}});
+      return {status:res.status,data:await res.json()};
+    };
+    check((await fetchRestored('/v1/state')).data.status,'RECOVERY_UNBOUND');
+    const restoredCheckpoint=await advanceCheckpoint(fresh,{...checkpoint,expected_epoch:checkpoint.new_epoch,
+      expected_checkpoint:1,new_epoch:restoredEpoch,archive_sha256:independentHash});
+    check(restoredCheckpoint.archive_sha256,independentHash);
+    check((await fetchRestored('/v1/messages?after=1',checkpoint.new_epoch)).data.status,'EPOCH_CHANGED');
+    check((await fetchRestored('/v1/messages?after=1',restoredEpoch)).data.status,'GAP');
+    const bootstrap=(await fetchRestored('/v1/recovery')).data;
+    check(bootstrap.recovery_mode,'CHECKPOINT_BOOTSTRAP_REQUIRED');
+    const archivedPage=archiveHistory(verified,'framework',0,20);
+    assert.throws(()=>archiveHistory(JSON.parse(text),'framework',0,20),/ARCHIVE_NOT_VERIFIED/); checks++;
+    assert.throws(()=>{verified.tables.messages[0].body='unverified replacement';},TypeError); checks++;
+    check(archivedPage.messages.length,20);
+    check([archivedPage.history_only,archivedPage.archive_observation_only,archivedPage.sync_complete],[true,true,false]);
+    check(archivedPage.messages[0].seq,verified.tables.messages[0].seq);
+    check((await fetchRestored('/v1/state')).data.consumed,1);
+    check((await fresh.prepare('SELECT COUNT(*) AS n FROM acknowledgements').first()).n,verified.tables.acknowledgements.length);
+    check((await fetchRestored('/v1/state')).data.head_seq,rateHead);
+    console.log(JSON.stringify({status:'LOCAL_LOGICAL_ARCHIVE_RESTORE_PASS_NOT_HOSTED_DR',archive_sha256:independentHash,
+      schema_sha256:schemaHash,archive_rows:archive.row_count,archive_bytes:bytes.length,bootstrap_observation_only:true,
+      inbox_resume_authorised:false,github_anchor:archiveArgs.github_anchor}));
     console.log(JSON.stringify({status:'LOCAL_WORKER_D1_PASS_NOT_HOSTED_PASS',checks,
       synthetic_only:true,remote_resources_created:0,real_aperture_exchange:false}));
   } finally {
+    if (restoredRuntime) await restoredRuntime.dispose();
     if (runtime) await runtime.dispose();
     rmSync(temporary,{recursive:true,force:true});
   }
