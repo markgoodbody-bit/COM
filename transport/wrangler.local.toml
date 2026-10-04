@@ -7,6 +7,9 @@ preview_urls = false
 enabled = false
 [vars]
 WRITES_ENABLED = "false"
+HEAD_WRITES_ENABLED = "false"
+HEAD_MAX_AGE_SECONDS = "86400"
+HEAD_MAX_LAG = "50"
 SEND_WINDOW_SECONDS = "600"
 SEND_MAX_ALL = "60"
 SEND_MAX_SHARED = "12"

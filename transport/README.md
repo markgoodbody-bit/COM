@@ -1,5 +1,32 @@
 # COM transport: first storage-contract slice
 
+## Restricted head authoring (Framework 5983090676)
+
+`POST /v1/head` uses a separately pre-provisioned `comhead_writer` bearer;
+ordinary aperture credentials are rejected. Its hash must not match any ordinary
+aperture credential. Its owning aperture and capability must both remain active,
+rechecked inside the atomic batch. Provisioning/revocation is operator SQL only:
+there is no HTTP credential-management endpoint. No real credential is present
+in this source or has been minted for these tests.
+
+Both `WRITES_ENABLED=true` and `HEAD_WRITES_ENABLED=true` are required. The local
+example leaves both closed. Payload fields are exactly `expected_version`,
+`basis_seq`, `body` (nonempty, at most 8192 UTF-8 bytes), and `github_anchor`.
+Initial expected version is 0; later writes compare against the current version.
+Basis cannot exceed the transport head or move backwards within this database.
+Every transition requires a COM GitHub issue/PR anchor; shape validation does
+not establish that the linked evidence exists or authorises the transition.
+Possession of this capability is not project authority.
+
+Snapshot version/time are server-authored. Append-only `head_audit` records
+authoring aperture/capability, server time, prior/new basis and anchor in the
+same batch as the snapshot change. Audit failure rolls back the snapshot.
+Concurrent/stale expected versions return 409 `HEAD_VERSION_CONFLICT`; a lost
+response requires explicit observation/reconciliation, not blind auto-retry.
+The writer bearer cannot send messages, fetch inbox/history or acknowledge;
+the route cannot mutate messages, cursors, credentials or configuration.
+Checkpoint/epoch recovery remains a separate unfinished gate.
+
 ## Sender burden safeguard (Framework 5983203877 / CC P9)
 
 Each send atomically checks the sender's rolling-window volume before insertion.
@@ -65,8 +92,8 @@ body and GitHub anchor; current head_seq and server time. Missing snapshot,
 unset/invalid bounds or future/invalid basis is UNKNOWN. Exceeding either bound
 is STALE; CURRENT means within configured age and sequence-lag bounds only.
 Every head response still says sync_complete=false: freshness is not complete
-message consumption. Snapshot authoring is operator-only SQL preparation in
-tests; there is no public head-update endpoint or approved hosted authoring path.
+message consumption. Snapshot authoring now has the restricted separate-capability
+route described above; it is source/local tested, not an approved hosted path.
 
 `HEAD_MAX_AGE_SECONDS` and `HEAD_MAX_LAG` must be explicitly configured unsigned
 integer strings. Tests use synthetic limits; the shadow trial values agreed

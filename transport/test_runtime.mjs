@@ -150,6 +150,38 @@ test('local Workers/D1 exchange, rollback, replay, concurrency and restart', asy
     await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'false'}}));
     check((await call('/v1/messages',framework,message('closed'))).status,503);
     check((await call('/v1/state',framework)).data.head_seq,rateHead);
+    await runtime.setOptions(nativeOptions({...options,bindings:{WRITES_ENABLED:'true',HEAD_WRITES_ENABLED:'true',...rateConfig,
+      HEAD_MAX_AGE_SECONDS:'86400',HEAD_MAX_LAG:'50'}}));
+    db=await runtime.getD1Database('DB');
+    const writer='h'.repeat(43);
+    await db.prepare("INSERT INTO head_capabilities VALUES('comhead_writer','framework',?,0)").bind(await digest(writer)).run();
+    const author={expected_version:1,basis_seq:rateHead,body:'synthetic authored head',
+      github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'};
+    check((await call('/v1/head',framework,author)).status,401);
+    check((await call('/v1/messages',writer,message('forbidden'))).status,401);
+    check((await call('/v1/head',writer,{...author,consumed:5})).status,400);
+    check((await call('/v1/head',writer,{...author,github_anchor:null})).status,400);
+    check((await call('/v1/head',writer,{...author,basis_seq:rateHead+1})).status,400);
+    await db.prepare("CREATE TRIGGER fail_head_audit BEFORE INSERT ON head_audit BEGIN SELECT RAISE(ABORT,'synthetic failure'); END").run();
+    check((await call('/v1/head',writer,author)).status,503);
+    check((await db.prepare('SELECT version FROM comhead').first()).version,1);
+    check((await db.prepare('SELECT COUNT(*) AS n FROM head_audit').first()).n,0);
+    await db.prepare('DROP TRIGGER fail_head_audit').run();
+    check((await call('/v1/head',writer,author)).status,200);
+    const audit=await db.prepare('SELECT * FROM head_audit WHERE version=2').first();
+    check([audit.aperture,audit.capability,audit.prior_basis_seq,audit.new_basis_seq],['framework','comhead_writer',finalHead,rateHead]);
+    check(Number.isSafeInteger(audit.server_time),true);
+    check((await call('/v1/head',framework)).data.freshness,'CURRENT');
+    check((await call('/v1/head',writer,author)).status,409);
+    const authors=await Promise.all(['first','second'].map(body=>call('/v1/head',writer,{...author,expected_version:2,body})));
+    check(authors.map(r=>r.status).sort(),[200,409]);
+    check((await db.prepare('SELECT COUNT(*) AS n FROM head_audit').first()).n,2);
+    check((await db.prepare('SELECT version FROM comhead').first()).version,3);
+    await assert.rejects(db.prepare('DELETE FROM head_audit').run()); checks++;
+    await db.prepare('UPDATE head_capabilities SET revoked=1').run();
+    check((await call('/v1/head',writer,{...author,expected_version:3})).status,401);
+    check((await call('/v1/state',framework)).data.head_seq,rateHead);
+    check((await call('/v1/state',framework)).data.consumed,1);
     console.log(JSON.stringify({status:'LOCAL_WORKER_D1_PASS_NOT_HOSTED_PASS',checks,
       synthetic_only:true,remote_resources_created:0,real_aperture_exchange:false}));
   } finally {

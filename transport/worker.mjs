@@ -79,6 +79,9 @@ const guard = (db, condition, ...args) => s(db,
   `INSERT INTO mutation_guard(id,ok) VALUES(1,CASE WHEN ${condition} THEN 1 ELSE 0 END)
    ON CONFLICT(id) DO UPDATE SET ok=excluded.ok`, ...args);
 const active = 'EXISTS(SELECT 1 FROM apertures WHERE id=? AND credential_hash=? AND revoked=0)';
+const headActive = `EXISTS(SELECT 1 FROM head_capabilities c JOIN apertures a ON a.id=c.aperture
+  WHERE c.capability='comhead_writer' AND c.aperture=? AND c.credential_hash=? AND c.revoked=0 AND a.revoked=0)
+  AND NOT EXISTS(SELECT 1 FROM apertures WHERE credential_hash=?)`;
 
 export class Bus {
   constructor(db, env = {}) { this.db = db; this.env = env; }
@@ -88,6 +91,45 @@ export class Bus {
     const actor = await s(this.db, 'SELECT id,consumed FROM apertures WHERE credential_hash=? AND revoked=0', hash).first();
     if (!actor) throw new Refusal('UNAUTHORIZED', 401);
     return {...actor, hash};
+  }
+  async headWriter(token) {
+    if (typeof token!=='string' || !/^[A-Za-z0-9_-]{43}$/.test(token)) throw new Refusal('UNAUTHORIZED',401);
+    const hash=await digest(token);
+    const writer=await s(this.db,`SELECT c.aperture AS id FROM head_capabilities c
+      JOIN apertures a ON a.id=c.aperture WHERE c.capability='comhead_writer'
+      AND c.credential_hash=? AND c.revoked=0 AND a.revoked=0
+      AND NOT EXISTS(SELECT 1 FROM apertures WHERE credential_hash=?)`,hash,hash).first();
+    if (!writer) throw new Refusal('UNAUTHORIZED',401);
+    return {...writer,hash};
+  }
+  async writeHead(writer,data) {
+    const {expected_version:version,basis_seq:basis,body,github_anchor:anchor}=data;
+    if (Object.keys(data).some(key=>!['expected_version','basis_seq','body','github_anchor'].includes(key))) throw new Refusal('HEAD_FIELDS_ONLY');
+    if (!safeInt(version) || version===Number.MAX_SAFE_INTEGER || !safeInt(basis)) throw new Refusal('INVALID_HEAD');
+    if (typeof body!=='string' || !body.trim() || enc.encode(body).length>8192) throw new Refusal('INVALID_HEAD_BODY');
+    if (typeof anchor!=='string' || !anchorPattern.test(anchor)) throw new Refusal('HEAD_ANCHOR_REQUIRED');
+    const db=this.db;
+    const prior=await s(db,'SELECT version,basis_seq FROM comhead WHERE id=1').first();
+    if ((prior?.version??0)!==version) throw new Refusal('HEAD_VERSION_CONFLICT',409);
+    const head=await s(db,'SELECT COALESCE(MAX(seq),0) AS seq FROM messages').first();
+    if (basis>head.seq || basis<(prior?.basis_seq??0)) throw new Refusal('INVALID_HEAD_BASIS');
+    let result;
+    try { result=await db.batch([
+      guard(db,headActive,writer.id,writer.hash,writer.hash),
+      guard(db,'COALESCE((SELECT version FROM comhead WHERE id=1),0)=?',version),
+      guard(db,'?<=COALESCE((SELECT MAX(seq) FROM messages),0) AND ?>=COALESCE((SELECT basis_seq FROM comhead WHERE id=1),0)',basis,basis),
+      s(db,`INSERT INTO head_audit(version,aperture,capability,server_time,prior_basis_seq,new_basis_seq,github_anchor)
+        VALUES(?,?,'comhead_writer',unixepoch(),(SELECT basis_seq FROM comhead WHERE id=1),?,?)`,version+1,writer.id,basis,anchor),
+      s(db,`INSERT INTO comhead(id,version,basis_seq,updated_at,body,github_anchor) VALUES(1,?,?,unixepoch(),?,?)
+        ON CONFLICT(id) DO UPDATE SET version=excluded.version,basis_seq=excluded.basis_seq,
+        updated_at=excluded.updated_at,body=excluded.body,github_anchor=excluded.github_anchor`,version+1,basis,body,anchor),
+      s(db,'SELECT version,basis_seq,updated_at,github_anchor FROM comhead WHERE id=1')
+    ]); } catch (error) {
+      const current=await s(db,'SELECT version FROM comhead WHERE id=1').first();
+      if ((current?.version??0)!==version) throw new Refusal('HEAD_VERSION_CONFLICT',409);
+      throw error;
+    }
+    return {...result[5].results[0],sync_complete:false};
   }
   async state(actor) {
     const row = await s(this.db, `SELECT consumed,
@@ -232,8 +274,14 @@ export default {
       if (!env.DB) throw new Refusal('STORAGE_UNAVAILABLE', 503);
       const bus = new Bus(env.DB,env);
       const auth = request.headers.get('Authorization') || '';
-      const actor = await bus.actor(auth.startsWith('Bearer ') ? auth.slice(7) : '');
+      const token=auth.startsWith('Bearer ') ? auth.slice(7) : '';
       const url = new URL(request.url);
+      if (request.method==='POST' && url.pathname==='/v1/head') {
+        const writer=await bus.headWriter(token);
+        if (env.WRITES_ENABLED!=='true' || env.HEAD_WRITES_ENABLED!=='true') throw new Refusal('HEAD_WRITES_CLOSED',503);
+        return response(await bus.writeHead(writer,await payload(request)));
+      }
+      const actor = await bus.actor(token);
       if (request.method === 'GET' && url.pathname === '/v1/state') return response(await bus.state(actor));
       if (request.method === 'GET' && ['/v1/head','/v1/health'].includes(url.pathname)) return response(await bus.head(actor,env));
       if (request.method === 'GET' && url.pathname === '/v1/history') {

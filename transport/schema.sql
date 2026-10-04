@@ -31,6 +31,26 @@ CREATE TABLE comhead (
   body TEXT NOT NULL CHECK(length(body)<=8192),
   github_anchor TEXT NOT NULL
 );
+-- Operator provisioning only; no HTTP credential-management route.
+CREATE TABLE head_capabilities (
+  capability TEXT PRIMARY KEY CHECK(capability='comhead_writer'),
+  aperture TEXT NOT NULL REFERENCES apertures(id),
+  credential_hash TEXT NOT NULL UNIQUE,
+  revoked INTEGER NOT NULL DEFAULT 0 CHECK(revoked IN (0,1))
+);
+CREATE TABLE head_audit (
+  version INTEGER PRIMARY KEY,
+  aperture TEXT NOT NULL REFERENCES apertures(id),
+  capability TEXT NOT NULL CHECK(capability='comhead_writer'),
+  server_time INTEGER NOT NULL,
+  prior_basis_seq INTEGER,
+  new_basis_seq INTEGER NOT NULL,
+  github_anchor TEXT NOT NULL
+);
+CREATE TRIGGER head_audit_no_update BEFORE UPDATE ON head_audit
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
+CREATE TRIGGER head_audit_no_delete BEFORE DELETE ON head_audit
+BEGIN SELECT RAISE(ABORT, 'append only'); END;
 CREATE TRIGGER messages_no_update BEFORE UPDATE ON messages
 BEGIN SELECT RAISE(ABORT, 'append only'); END;
 CREATE TRIGGER messages_no_delete BEFORE DELETE ON messages

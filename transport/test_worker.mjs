@@ -79,6 +79,27 @@ test('sender limits refuse atomically while exact replay remains available', asy
   assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM messages').bind().first()).n,3);
 }));
 
+test('separate head capability rejects ordinary auth, extra authority and stale writers', async () => fixture(async db => {
+  const token='h'.repeat(43),bus=new Bus(db,rateConfig);
+  await db.batch([db.prepare("INSERT INTO head_capabilities VALUES('comhead_writer','codex',?,0)").bind(await digest(token))]);
+  const env={DB:db,WRITES_ENABLED:'true',HEAD_WRITES_ENABLED:'true',...rateConfig};
+  const data={expected_version:0,basis_seq:0,body:'synthetic head',github_anchor:'https://github.com/markgoodbody-bit/COM/issues/760'};
+  assert.equal((await worker.fetch(request('/v1/head',a,data),env)).status,401);
+  assert.equal((await worker.fetch(request('/v1/messages',token,send()),env)).status,401);
+  assert.equal((await worker.fetch(request('/v1/head',token,{...data,consumed:4}),env)).status,400);
+  assert.equal((await worker.fetch(request('/v1/head',token,{...data,github_anchor:null}),env)).status,400);
+  assert.equal((await worker.fetch(request('/v1/head',token,data),{...env,HEAD_WRITES_ENABLED:'false'})).status,503);
+  assert.equal((await worker.fetch(request('/v1/head',token,data),env)).status,200);
+  assert.equal((await worker.fetch(request('/v1/head',token,data),env)).status,409);
+  const writer=await bus.headWriter(token);
+  await db.batch([db.prepare("UPDATE head_capabilities SET revoked=1").bind()]);
+  await assert.rejects(bus.writeHead(writer,{...data,expected_version:1}), /SQLITE_BATCH_REFUSAL/);
+  assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM head_audit').bind().first()).n,1);
+  assert.equal((await bus.state(await bus.actor(a))).consumed,0);
+  assert.equal((await bus.state(await bus.actor(a))).head_seq,0);
+  await assert.rejects(db.batch([db.prepare('DELETE FROM head_audit').bind()]));
+}));
+
 test('adapter duplicate delivery and accepted-write lost response', async () => fixture(async db => {
   const env = {DB:db, WRITES_ENABLED:'true',...rateConfig};
   const first = await worker.fetch(request('/v1/messages', a, send()), env);
