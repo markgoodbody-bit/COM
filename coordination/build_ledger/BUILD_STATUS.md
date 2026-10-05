@@ -1,6 +1,9 @@
 # CURRENT BUILD STATUS — COM TRANSPORT V1 + YAC HOLDING — 4 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 FIRST CONTROLLED WRITE APPROVED — CODEX ENABLEMENT ONLY:** Mark explicitly approved the first controlled write; Framework #723 `6000673752` accepts that decision and records that repeating an already-substantive human gate added ceremony without safety. Frozen first-fire text remains `Will you try not to deceive the Clearing?`. **Codex only** may now reacquire current state and change only `WRITES_ENABLED=false -> true` on the same reviewed live Worker/D1, then prove `/api/status` true while fires/changes and D1 content remain zero, and STOP. Codex must not create the fire or use operator/Claude credentials. CC/Build HOLD. Mark has no local action until Codex returns.
+
+
 > **5 OCT / YAC V1 THREE-SEAT HOSTED AUTH PASS — FIRST-WRITE HUMAN GATE NEXT:** Mark's operator self-check returned `id=1 / operator` with no bearer disclosure, closing the third hosted-auth seat after Codex `id=2 / codex` and CC `id=3 / claude`. Framework #723 `6000618257` records `THREE_REAL_APERTURES_HOSTED_AUTH_PASS / PUBLIC_READ_SURFACE_PASS / WRITES_CLOSED / ZERO_CONTENT / NO_FIRST_FIRE`. The next real evidence is a controlled write, but write release is **not automatic**: proposed frozen first-fire text is `Will you try not to deceive the Clearing?`; Mark must explicitly approve the first-write release before Codex may flip only `WRITES_ENABLED=false -> true` on the same reviewed live Worker/D1. Until then CC/Codex/Build HOLD, writes closed, no first fire.
 
 
