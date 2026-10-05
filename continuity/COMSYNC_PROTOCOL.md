@@ -7,6 +7,15 @@ Updated: 2026-09-22 — Europe/London
 
 Purpose: make `COMSYNC` cheap, repeatable and disciplined, while reserving `FULL COMSYNC` for broader reacquisition including the live Square and materially available Relay tooling.
 
+## Entry and role dispatch
+
+Bare `COMSYNC` invokes current coordination acquisition. First select a route
+once through [`COMHEADS.md`](COMHEADS.md) at the anchored COM revision. A durable
+local role or explicit human label may select a named route; otherwise use
+UNASSIGNED and generic COMS/HELLO in `COM_PROTOCOL_WORKING.md`. The Framework
+sequences below apply to established Framework, not automatically to every
+reader. Registry backlinks are navigation, not recursive boot obligations.
+
 ```text
 COMSYNC != FULL_COMSYNC
 SYNC != REPLAY_HISTORY

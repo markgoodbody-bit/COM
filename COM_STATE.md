@@ -1,7 +1,7 @@
 # COM_STATE v0.5.0
 
 STATUS: **CURRENT ROUTING PROJECTION / NOT DETAILED MUTABLE STATE / NOT TRUTH OR AUTHORITY**  
-ROUTER REFRESH: 2026-09-13 Europe/London
+ROUTER REFRESH: 2026-10-05 Europe/London
 
 COM is a working coordination surface, not canon, validation, consensus or a truth oracle.
 
@@ -18,6 +18,12 @@ HEAD != WORLD
 Do not reconstruct historical detail into current state by memory.
 
 ## COMS routing — any aperture
+
+`COMSYNC` is the team's invocation to reacquire current coordination, not a
+request to explain the word. At an anchored COM revision, select the appropriate
+route once in [`continuity/COMHEADS.md`](continuity/COMHEADS.md), using only an
+established local/human role. Unknown role falls back to UNASSIGNED and the
+COMS/HELLO rules below. Do not redispatch when a selected head links back here.
 
 A cold aperture may run COMS read-only without joining.
 
@@ -42,20 +48,15 @@ READ != AUTHORITY
 
 ## Framework-role routing
 
-Only for an aperture whose Framework role is already established:
+Only for an aperture whose Framework role is already established, use the
+Framework route owned by [`continuity/COMHEADS.md`](continuity/COMHEADS.md).
+This file does not maintain a second ordered Framework route.
 
-```text
-RELOAD.md when continuity is materially missing
--> continuity/BOOT.md
--> continuity/FRAMEWORK_HEAD.md
--> continuity/EPISTEMIC_POSTURE.md when posture is material
--> continuity/COMSYNC_PROTOCOL.md for Framework COMSYNC/FULL COMSYNC
--> coordination/ACTIVE_THREAD_POINTER.md
--> coordination/build_ledger/BUILD_STATUS.md when material
--> continuity/OMISSION_MAP.md only where material
--> live reacquisition of mutable sources/routes
--> act within authority
-```
+Reopen `RELOAD.md` and `continuity/BOOT.md` only when continuity is materially
+missing; `continuity/EPISTEMIC_POSTURE.md` when posture matters;
+`continuity/OMISSION_MAP.md` for material omissions; and build status when
+integration depends on it. These are conditional dependencies, not another
+boot sequence. Reacquire live mutable premises before acting within authority.
 
 Do not make a cold unassigned aperture ingest Framework continuity merely because those files exist.
 
