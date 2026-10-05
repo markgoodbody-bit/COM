@@ -25,7 +25,7 @@ def routes(text):
 
 def select(table, label):
     # Model the documented label rule; not a runtime identity detector.
-    normalized = label.strip().lower() if isinstance(label, str) else ""
+    normalized = re.sub(r"[\s_]+", "-", label.strip().lower()) if isinstance(label, str) else ""
     return next((name for name, (labels, _) in table.items()
                  if normalized in labels), "unassigned")
 
@@ -37,7 +37,7 @@ class COMHeadChecks(unittest.TestCase):
 
     def test_exact_roles_and_unique_aliases(self):
         self.assertEqual(set(self.table),
-                         {"framework", "campfire", "build", "codex", "cc", "unassigned"})
+                         {"framework", "campfire", "campfire-framework", "build", "codex", "cc", "unassigned"})
         labels = [label for aliases, _ in self.table.values() for label in aliases]
         self.assertEqual(len(labels), len(set(labels)))
 
@@ -51,12 +51,23 @@ class COMHeadChecks(unittest.TestCase):
                     self.assertNotEqual(resolved, REGISTRY.resolve())
 
     def test_aliases_and_safe_unknown(self):
-        for label in [None, "", "invented", "a Framework-like AI", "COM", "GPT"]:
+        for label in [None, "", "invented", "a Framework-like AI", "COM", "GPT",
+                      "FROM: CLAUDE CODE", "Build Ninety", "Framework Build Five"]:
             self.assertEqual(select(self.table, label), "unassigned")
         for label, expected in [("codex-windows", "codex"), (" CODEX ", "codex"),
                                 ("framework-build", "build"), ("build", "build"),
                                 ("claude-code", "cc"), ("cc", "cc"),
-                                ("campfire", "campfire"), ("framework", "framework")]:
+                                ("campfire", "campfire"), ("framework", "framework"),
+                                ("CLAUDE CODE", "cc"), ("Claude Code", "cc"),
+                                ("claude_code", "cc"), ("CODEX WINDOWS", "codex"),
+                                ("Codex Windows", "codex"), ("FRAMEWORK BUILD", "build"),
+                                ("Framework Build", "build"), ("FRAMEWORK BUILD TWO", "build"),
+                                ("Build Three", "build"), ("Build Four", "build"),
+                                ("FW", "framework"), ("fw", "framework"),
+                                ("Campfire Two", "campfire"),
+                                ("CAMPFIRE FRAMEWORK", "campfire-framework"),
+                                ("Campfire Framework", "campfire-framework"),
+                                (" CLAUDE\t__CODE ", "cc")]:
             self.assertEqual(select(self.table, label), expected)
 
     def test_no_recursive_or_historical_loading_route(self):
@@ -80,6 +91,8 @@ class COMHeadChecks(unittest.TestCase):
         self.assertEqual(self.table["unassigned"][1], ["COM_STATE.md", "COM_PROTOCOL_WORKING.md"])
         self.assertIn("own durable local bootstrap first", self.text)
         self.assertIn("grants no Framework role", self.text)
+        self.assertIn("never supplies the missing Framework role", self.text)
+        self.assertIn("standing with Campfire orientation", self.text)
 
     def test_entry_links_and_existing_protocol(self):
         for path in ["README.md", "COM_STATE.md", "continuity/COMSYNC_PROTOCOL.md"]:
@@ -92,6 +105,15 @@ class COMHeadChecks(unittest.TestCase):
         row = "| codex | codex | `COM_STATE.md` |"
         with self.assertRaises(ValueError):
             routes(row + "\n" + row)
+
+    def test_single_framework_route_owner(self):
+        state = (ROOT / "COM_STATE.md").read_text(encoding="utf-8")
+        section = state.split("## Framework-role routing", 1)[1].split("## Current source pointers", 1)[0]
+        self.assertIn("COMHEADS.md", section)
+        self.assertNotIn("```", section)
+        self.assertNotIn("->", section)
+        self.assertIn("conditional dependencies", section)
+        self.assertIn("continuity/FRAMEWORK_HEAD.md", self.table["framework"][1])
 
 
 if __name__ == "__main__":

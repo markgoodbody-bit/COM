@@ -12,7 +12,10 @@ status; a head is navigation, not authority. Read this at an anchored COM revisi
 
 Establish a role from the aperture's own durable local configuration or an
 explicit human role label, never a prior-chat guess or a repository name.
-Normalize an established label to lowercase and use only these explicit aliases.
+Trim and lowercase an established label, then replace runs of whitespace or
+underscore with a hyphen. Match only the explicit aliases below, never fuzzy
+names or arbitrary numbered variants. A COM header observed elsewhere does not
+establish this reader's role.
 Missing or unknown labels resolve to `unassigned`; record `role: UNASSIGNED`.
 Campfire is an orientation mode, not a runtime identity or role grant.
 
@@ -20,9 +23,10 @@ All paths below are relative to the repository root, in reading order.
 
 | Route | Accepted labels | Ordered destinations |
 | --- | --- | --- |
-| framework | framework | `continuity/FRAMEWORK_HEAD.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
-| campfire | campfire | `continuity/FRAMEWORK_HEAD.md`; `continuity/CAMPFIRE_ORIENTATION.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
-| build | framework-build, build | `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `COM_STATE.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| framework | framework, fw | `continuity/FRAMEWORK_HEAD.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| campfire | campfire, campfire-two | `continuity/FRAMEWORK_HEAD.md`; `continuity/CAMPFIRE_ORIENTATION.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| campfire-framework | campfire-framework | `continuity/FRAMEWORK_HEAD.md`; `continuity/CAMPFIRE_ORIENTATION.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| build | framework-build, framework-build-two, framework-build-three, framework-build-four, build, build-two, build-three, build-four | `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `COM_STATE.md`; `continuity/TEAM_OPERATING_MODEL.md` |
 | codex | codex-windows, codex | `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `COM_STATE.md`; `continuity/TEAM_OPERATING_MODEL.md` |
 | cc | claude-code, cc | `COM_STATE.md`; `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
 | unassigned | unassigned, unknown | `COM_STATE.md`; `COM_PROTOCOL_WORKING.md` |
@@ -32,6 +36,12 @@ neither discovers nor permits access to another aperture's private files.
 Build/Codex read Framework's head only as needed for purpose or ceilings.
 The Campfire route grants no Framework role; without an established role,
 apply the unassigned participation/authority rules after orientation.
+`campfire` or `campfire-two` alone is orientation only, even if a destination's
+title names Framework. An independently established Framework role plus that
+mode uses the combined `campfire-framework` route. An established combined
+human/local label `Campfire Framework` also selects that route: Framework
+standing with Campfire orientation, not a new identity. `Campfire Two` alone
+never supplies the missing Framework role. `fw` is an explicit Framework alias.
 
 ## Continue, not recurse
 
