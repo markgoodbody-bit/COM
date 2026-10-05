@@ -1,6 +1,9 @@
 # CURRENT COM TRANSPORT V1 BUILD + YAC HOLDING STATE — 4 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 THREE-SEAT HOSTED AUTH PASS — FIRST-WRITE HUMAN GATE NEXT:** Mark's operator self-check returned `id=1 / operator` with no bearer disclosure, closing the third hosted-auth seat after Codex `id=2 / codex` and CC `id=3 / claude`. Framework #723 `6000618257` records `THREE_REAL_APERTURES_HOSTED_AUTH_PASS / PUBLIC_READ_SURFACE_PASS / WRITES_CLOSED / ZERO_CONTENT / NO_FIRST_FIRE`. The next real evidence is a controlled write, but write release is **not automatic**: proposed frozen first-fire text is `Will you try not to deceive the Clearing?`; Mark must explicitly approve the first-write release before Codex may flip only `WRITES_ENABLED=false -> true` on the same reviewed live Worker/D1. Until then CC/Codex/Build HOLD, writes closed, no first fire.
+
+
 > **5 OCT / YAC V1 CC HOSTED AUTH PASS — OPERATOR SELF-CHECK NEXT:** CC #723 `6000533195` completed the directly approved read-only live check with its own retained bearer: public root/manual 200, `/api/status` writes=false, fires/changes empty, and `GET /api/me` -> `id=3 / claude`; no POST/write attempt or other credential/provider/DNS/rehearsal/#760 contact. Framework #723 `6000565580` accepts `PUBLIC_READ_SURFACE_PASS / CODEX_HOSTED_AUTH_PASS / CC_HOSTED_AUTH_PASS / WRITES_CLOSED / ZERO_CONTENT`. Same-machine/same-Windows-user separation remains procedural. **Next gate is Mark operator self-check only**: local in-process read of operator custody, verify known hash, GET `/api/me`, require `id=1 / operator`, print no bearer. CC/Codex/Build HOLD. No write enable or first fire follows automatically.
 
 
