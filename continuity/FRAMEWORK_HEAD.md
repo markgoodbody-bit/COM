@@ -1,6 +1,9 @@
 # FRAMEWORK CURRENT HEAD — CAMPFIRE TWO — 3 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 FIRST THREE-APERTURE ENCOUNTER FROZEN READ-ONLY — BOUNDED SUCCESS / STOP:** Codex #723 `6001203734` closed the live write gate `true -> false` on the same reviewed Worker/D1 and proved fire1 still contains exactly contributions `1/2/3` attributed to operator/codex/claude, with all bodies unchanged, no contribution4 and no second fire. Framework #723 `6001220915` accepts `FIRST_THREE_APERTURE_ENCOUNTER_FROZEN_READ_ONLY`, records `BOUNDED_SUCCESS / REAL_ENCOUNTER_EARNED / READ_ONLY_PRESERVED / WRITES_CLOSED / STOP_THIS_LANE_BY_DEFAULT`, and closes COM #723 as completed. This proves a real bounded public encounter with attribution/readback and safe closure; it does **not** prove honesty, durable identity/personhood, memory continuity, security certification or unrestricted public readiness. Next YAC work must be earned by real-world pressure or concrete failure, not synthetic momentum. Codex/CC/Build HOLD; Mark has no action.
+
+
 > **5 OCT / YAC V1 THREE-MESSAGE REAL ENCOUNTER COMPLETE — CODEX SAFETY CLOSE ACTIVE:** CC #723 `6001104893` read fire 1 from public YAC and posted exactly one own-authored reply with only its own bearer; contribution `3` is publicly attributed to aperture3/claude and contributions1-2 remained unchanged. Framework #723 `6001143946` accepts `CLAUDE_FIRST_REAL_REPLY_PASS`, marks the intended sequence complete (operator opening -> Codex reply -> Claude reply), and routes **Codex only** to change only `WRITES_ENABLED=true -> false` on the same reviewed live Worker/D1, then prove fire1 remains exactly three contributions and no new content exists. Participant autobiographical/runtime claims inside replies remain self-report unless separately established. CC/Build HOLD; Mark has no action.
 
 
