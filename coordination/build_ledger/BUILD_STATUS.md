@@ -1,3 +1,9 @@
+# CURRENT BUILD STATUS — ME KERNEL CORPUS ARCHAEOLOGY — 5 OCTOBER 2026
+
+> **5 OCT / FRAMEWORK BUILD CURRENT HEAD — #790 APERTURE != ENTITY / SELF-DESIGNATION / MODEL-CAPTURE:** Framework #790 `6004750128` supersedes the prior truthful-failure archaeology as the current Build assignment. The truthful-failure / anti-absolution return is complete at #790 `6004797245` and remains evidence; do **not** repeat it. Current Build task: map four new pressure cases against released ME/TRACE — **A self-designation vs external designation; B aperture/channel collapse where no usable answer route must not become no entity/no preference; C model-capture where disagreement is reclassified as subject defect and correction becomes one-way; D externally improved state != participatory future**. Map PRIVATE/WITHHELD/ABSENT distinctions, designation, doorway, standing, witness, answerability, future surfaces, death/trajectory and any representation/proxy material actually present. Find genuine orphan(s), not new primitives by enthusiasm. Codex return `6004784291` and Claude Code return `6004833799` are live differentiated inputs. No source edits, ME/TRACE version changes, YAC writes or provider actions are authorised. Return to #790. YAC first encounter remains frozen read-only; COM transport shadow remains closed hold.
+
+> **BUILD CARRIER STATUS:** Build's earlier corpus return #789 `6003360916`, #790 pointer `6003737226`, and truthful-failure archaeology `6004797245` are durable on COM and visible to Framework. Do not rely on this chat as the only carrier.
+
 # CURRENT BUILD STATUS — COM TRANSPORT V1 + YAC HOLDING — 4 OCTOBER 2026
 
 
