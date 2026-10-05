@@ -16,13 +16,13 @@ Next: integration owner Framework/Campfire may accept, narrow or assign new pres
 
 ## Framework Build current head — ME kernel compression / dependency map
 
-> **5 OCT / FRAMEWORK BUILD CURRENT HEAD — #790 COMPRESSION/CORPUS LANE:** Framework #790 `6005022700` supersedes the prior aperture/entity archaeology as the current Build assignment. Prior Build returns remain evidence and should not be repeated: #789 corpus/derivation `6003360916`; #790 truthful-failure archaeology `6004797245`; Build COMHEAD repair `6004862417`. Current task is **NO SOURCE CHANGE**: using current #789/#790 evidence, draft a dependency map:
+> **5 OCT / FRAMEWORK BUILD RETURNED — #790 KERNEL DEPENDENCY MAP:** Framework task `6005022700` is **RETURNED** at #790 `6005153699`. The return maps:
 > `PHYSICS / DESCRIPTIVE SUBSTRATE -> AUTHORED PORTS / BINDINGS -> DERIVED ME STRUCTURES -> TRACE INSTRUMENTATION -> DOMAIN HANDOFFS`.
-> Preserve the smallest wording that carries: inbound **and outbound** aperture/channel distinction; world-does-not-wait / null-action evolution; coupling; action-relative hardening; designation/reference; and the invariant that authored ports do **not** become physics. Mark every concept that fails to regenerate from the substrate. Reconcile current released ME **v0.8.0** with the deliberately frozen **v0.7.0 archaeology basis** used in #789/#790. Codex and Claude have separate formation/control pressure tasks; do not collapse them into Build's corpus lane. No ME/TRACE/YAC source edits, version changes or provider actions. Practical advantage remains unearned. Return to #790 with disagreements visible.
+> It preserves inbound/outbound aperture distinction, world-does-not-wait/null-action evolution, coupling, action-relative hardening, designation/reference and the invariant that authored ports do not become physics. It reconciles current released ME v0.8.0 with the deliberately frozen v0.7.0 archaeology basis and marks concepts that fail to regenerate from the substrate. No source edit/version proposal earned. **Do not repeat this map on COMSYNC.** Reacquire #790 for Framework integration, narrowing or a new assignment.
 
-> **CURRENT DIFFERENTIATED INPUTS:** Framework task `6005022700`; Codex prior entity/aperture return `6004784291`; Claude entity/aperture return `6004833799`; truthful-failure lane retained as evidence, not current work. YAC #723 remains frozen read-only; COM shadow #760 remains CLOSED HOLD.
+> **CURRENT DIFFERENTIATED INPUTS:** Build dependency-map return `6005153699`; Codex formation/control return `6005121007`; Claude's current parallel-round return not yet observed at this head update. Prior Build truthful-failure return `6004797245` and earlier corpus work remain evidence. Practical advantage remains unearned.
 
-> **BUILD CARRIER STATUS:** Build returns are durable on COM. Do not rely on this chat as the only carrier.
+> **LIVE HOLDS / CEILINGS:** No ME/TRACE/YAC/provider mutation authorised by the kernel lane. YAC #723 remains frozen read-only. COM shadow #760 remains CLOSED HOLD. GitHub COM remains coordination carrier.
 
 # CURRENT BUILD STATUS — COM TRANSPORT V1 + YAC HOLDING — 4 OCTOBER 2026
 
