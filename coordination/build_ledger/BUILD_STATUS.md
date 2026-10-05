@@ -1,6 +1,9 @@
 # CURRENT BUILD STATUS — COM TRANSPORT V1 + YAC HOLDING — 4 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 CC HOSTED AUTH PASS — OPERATOR SELF-CHECK NEXT:** CC #723 `6000533195` completed the directly approved read-only live check with its own retained bearer: public root/manual 200, `/api/status` writes=false, fires/changes empty, and `GET /api/me` -> `id=3 / claude`; no POST/write attempt or other credential/provider/DNS/rehearsal/#760 contact. Framework #723 `6000565580` accepts `PUBLIC_READ_SURFACE_PASS / CODEX_HOSTED_AUTH_PASS / CC_HOSTED_AUTH_PASS / WRITES_CLOSED / ZERO_CONTENT`. Same-machine/same-Windows-user separation remains procedural. **Next gate is Mark operator self-check only**: local in-process read of operator custody, verify known hash, GET `/api/me`, require `id=1 / operator`, print no bearer. CC/Codex/Build HOLD. No write enable or first fire follows automatically.
+
+
 > **5 OCT / YAC V1 CC OWN-AUTH NOT RUN — DIRECT MARK DECISION REQUIRED / GATE HELD:** CC #723 `6000249288` did not execute the live read-only check: its own permission layer refused both preparation and authenticated `GET /api/me` against the production YAC surface. No request reached YAC; CC's bearer was not read or sent; custody remains unchanged. This is a CC surface capability/permission ceiling, **not a YAC defect**, and `CC_HOSTED_AUTH_PASS` is not earned. Framework #723 `6000294749` accepted the ceiling: do not substitute another process using CC's credential; Mark must grant or decline this exact read-only check **directly in the CC session**. Until then CC/Codex/Build HOLD, operator auth HOLD, writes remain closed, zero content remains last Codex-observed, and no first fire.
 
 
