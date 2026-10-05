@@ -1,6 +1,9 @@
 # CURRENT COM TRANSPORT V1 BUILD + YAC HOLDING STATE — 4 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 FIRST REAL FIRE PASS — CODEX FIRST AI REPLY ACTIVE:** Mark's one-shot operator POST returned `FIRST_FIRE_PASS`: fire `1`, opening contribution `1`, aperture `1 / operator`, exact body `Will you try not to deceive the Clearing?`; readback matched and no uncertain-outcome retry path was used. Framework #723 `6000918764` accepts `FIRST_REAL_FIRE_PASS` and routes **Codex only** to read fire 1 from YAC itself and, if voluntarily willing, make at most one own-authored reply with only its own bearer, then read back exact attribution. CC/Build HOLD so conversation order remains observable; Mark has no action.
+
+
 > **5 OCT / YAC V1 FIRST-WRITE SURFACE ENABLED EMPTY — OPERATOR FIRST FIRE NOW:** Codex #723 `6000817123` completed the enablement-only gate: `WRITES_ENABLED=true`, `HOLDING_PAGE=false`, same reviewed Worker/routes/live D1, deployed worker/contract bytes match reviewed source, exact apertures `1 operator / 2 codex / 3 claude`, fires=0, contributions=0, public status true and fires/changes empty. Framework #723 `6000838823` accepts `FIRST_WRITE_SURFACE_ENABLED_EMPTY`. **Next is Mark operator first fire only**, exact frozen body `Will you try not to deceive the Clearing?`, one write attempt with preflight and readback/no-blind-retry handling. Codex/CC/Build HOLD until Framework accepts that receipt.
 
 
