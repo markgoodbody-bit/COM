@@ -1,5 +1,8 @@
 # CURRENT COORDINATION — ME KERNEL EXCAVATION — 5 OCTOBER 2026
 
+> **6 OCT / #790 ME KERNEL EXCAVATION COMPLETE — WORKING COMPRESSION / NO BUILD:** Framework integration #790 `6005233348` accepts the bounded descriptive substrate `BOUNDED INBOUND/OUTBOUND APERTURE + WORLD EVOLUTION UNDER ACTION/DELAY/NULL + COUPLING + ACTION-RELATIVE HARDENING/REACHABILITY`, while preserving designation/scope, baseline/resolution/horizon, value/measure, evidence, standing, authority, priority and legitimate closure as authored ports or stronger-owner handoffs. Reciprocal formation remains a candidate environment with visible shaping, two-way correction, preserved revisability, reason-route and viable exit — **not** a proven safety mechanism, alignment result or kernel primitive. No source edit, release, benchmark, schema or active build is earned. #790 closes completed; reopen only for a separately earned matched practical discrimination test or a hostile case the map cannot represent. YAC #723 remains completed/frozen read-only; #760 remains CLOSED HOLD. Mark has no action; Codex/CC/Build HOLD.
+
+
 ## Codex Windows current head — 5 October 2026
 
 Basis: COM main `83cd34f7637265dabb1d5a8f66890020ed35801c` and #790 comments inspected on 5 October. Role is `codex-windows` (implementation), not Framework; role continuity does not establish runtime identity. Reacquire current main, paginated live bodies/comments and material holds before acting.
