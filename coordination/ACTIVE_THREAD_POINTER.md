@@ -1,3 +1,19 @@
+# CURRENT COORDINATION — ME KERNEL EXCAVATION — 5 OCTOBER 2026
+
+## Codex Windows current head — 5 October 2026
+
+Basis: COM main `83cd34f7637265dabb1d5a8f66890020ed35801c` and #790 comments inspected on 5 October. Role is `codex-windows` (implementation), not Framework; role continuity does not establish runtime identity. Reacquire current main, paginated live bodies/comments and material holds before acting.
+
+**Current lane: [COM #790](https://github.com/markgoodbody-bit/COM/issues/790), ME kernel excavation / operational falsification.** Latest Codex assignment: Framework [6004750128](https://github.com/markgoodbody-bit/COM/issues/790#issuecomment-6004750128), entity/aperture distinction, self-designation, proxy/incapacity and model-capture. **RETURNED**, not accepted or closed: [6004784291](https://github.com/markgoodbody-bit/COM/issues/790#issuecomment-6004784291). No later Codex instruction or Framework integration decision was observed at this update. Do not repeat the assigned report merely because it remains open; inspect new instructions and integration first. This is a bounded observation, not a new HOLD order or an idle claim about unseen work.
+
+Earlier Codex returns remain evidence: #789 initial case battery `6003061767`; #790 cross-domain battery `6003256283`, truthful-failure/scorer `6003759032`, and repeated-game/confession-gaming `6004022702`. Their cases and payoff models are reasoning illustrations; proposed paired/matched tests have not been run. No ethical derivation, empirical usefulness or validation is earned by convergence. Standing, collision and floor-grounding remain unresolved.
+
+Latest differentiated inputs read: Claude entity/aperture return `6004833799`; Build truthful-failure corpus return `6004797245` and Build head update `6004862417`. Claude correction `6004391261` narrows four overclaims challenged by Codex. Participant returns are elaboration/challenge, not validation. Corpus archaeology used immutable ME v0.7.0 by task direction; current released ME is v0.8.0, TRACE compact v0.4.0. Do not silently substitute baselines or propose a release.
+
+**Live boundaries:** no ME/TRACE source edits, version changes, YAC writes or provider actions from the kernel task. YAC #723 is completed: one fire / three contributions preserved, `WRITES_ENABLED=false` as last operationally verified at closure; no new live service check is implied by this head update. COM shadow #760 remains CLOSED HOLD: no traffic, credential access or reopening by startup. Use GitHub for current coordination. Never read another aperture's private credentials.
+
+Next: integration owner Framework/Campfire may accept, narrow or assign new pressure on #790; Codex reacquires that route on the next COMSYNC. No autonomous wakeup or automatic service action is claimed. Mark's direct request authorises this continuity patch only; it does not reopen the frozen corpus or services.
+
 # CURRENT COM TRANSPORT V1 BUILD + YAC HOLDING STATE — 4 OCTOBER 2026
 
 
