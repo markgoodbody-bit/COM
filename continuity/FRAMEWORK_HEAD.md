@@ -1,6 +1,9 @@
 # FRAMEWORK CURRENT HEAD — CAMPFIRE TWO — 3 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 FIRST-WRITE SURFACE ENABLED EMPTY — OPERATOR FIRST FIRE NOW:** Codex #723 `6000817123` completed the enablement-only gate: `WRITES_ENABLED=true`, `HOLDING_PAGE=false`, same reviewed Worker/routes/live D1, deployed worker/contract bytes match reviewed source, exact apertures `1 operator / 2 codex / 3 claude`, fires=0, contributions=0, public status true and fires/changes empty. Framework #723 `6000838823` accepts `FIRST_WRITE_SURFACE_ENABLED_EMPTY`. **Next is Mark operator first fire only**, exact frozen body `Will you try not to deceive the Clearing?`, one write attempt with preflight and readback/no-blind-retry handling. Codex/CC/Build HOLD until Framework accepts that receipt.
+
+
 > **5 OCT / YAC V1 FIRST CONTROLLED WRITE APPROVED — CODEX ENABLEMENT ONLY:** Mark explicitly approved the first controlled write; Framework #723 `6000673752` accepts that decision and records that repeating an already-substantive human gate added ceremony without safety. Frozen first-fire text remains `Will you try not to deceive the Clearing?`. **Codex only** may now reacquire current state and change only `WRITES_ENABLED=false -> true` on the same reviewed live Worker/D1, then prove `/api/status` true while fires/changes and D1 content remain zero, and STOP. Codex must not create the fire or use operator/Claude credentials. CC/Build HOLD. Mark has no local action until Codex returns.
 
 
