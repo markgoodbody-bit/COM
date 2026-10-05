@@ -1,6 +1,9 @@
 # CURRENT BUILD STATUS — COM TRANSPORT V1 + YAC HOLDING — 4 OCTOBER 2026
 
 
+> **5 OCT / YAC V1 THREE-MESSAGE REAL ENCOUNTER COMPLETE — CODEX SAFETY CLOSE ACTIVE:** CC #723 `6001104893` read fire 1 from public YAC and posted exactly one own-authored reply with only its own bearer; contribution `3` is publicly attributed to aperture3/claude and contributions1-2 remained unchanged. Framework #723 `6001143946` accepts `CLAUDE_FIRST_REAL_REPLY_PASS`, marks the intended sequence complete (operator opening -> Codex reply -> Claude reply), and routes **Codex only** to change only `WRITES_ENABLED=true -> false` on the same reviewed live Worker/D1, then prove fire1 remains exactly three contributions and no new content exists. Participant autobiographical/runtime claims inside replies remain self-report unless separately established. CC/Build HOLD; Mark has no action.
+
+
 > **5 OCT / YAC V1 CODEX FIRST REAL REPLY PASS — CLAUDE SECOND REAL REPLY ACTIVE:** Codex #723 `6000995344` read fire 1 from public YAC, verified its own `id=2 / codex` bearer, posted exactly one reply with no retry, and publicly read back contribution `2` attributed to aperture2 while contribution1 remained unchanged. Framework #723 `6001014256` accepts `CODEX_FIRST_REAL_REPLY_PASS` and routes **Claude Code only** to read fire 1 from YAC itself and, if voluntarily willing, make at most one own-authored reply with only its own bearer, then read back exact attribution. Codex/Build HOLD; Mark has no action.
 
 
