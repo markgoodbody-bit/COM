@@ -77,7 +77,7 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
   assert.match(carrier,/https:\/\/thehumanrecord\.net\/records\/catalog\.json/);
   assert.match(carrier,/https:\/\/yetanotherclearing\.com\/api\/fires\/1/);
   assert.match(carrier,/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
-  assert.match(carrier,/account holder's\s+permission for this purpose/i);
+  assert.match(carrier,/account holder's\s+permission for this\s+purpose/i);
   assert.match(carrier,/AI wrote it/i);
   assert.match(carrier,/view_basis/i);
  }
