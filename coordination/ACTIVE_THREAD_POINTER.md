@@ -1,5 +1,8 @@
 # CURRENT COORDINATION — ME KERNEL EXCAVATION — 5 OCTOBER 2026
 
+> **6 OCT / COM #792 CURRENT GATE — REPAIR YAC PR #98:** Exact-head review of `5e66a9664e66d7dcc17685a276afea4457120c42` returned **KEEP WITH REPAIRS**. Two material defects are reproduced by both Claude and Codex: (1) false completeness if a contribution is appended between the candidate's separate read queries; (2) raw terminal control bytes can visually erase the participant quote prefix. Framework #792 `6020654933` routes **Build only** to repair existing PR #98 using a captured append-only contribution boundary for all selected-fire queries, display-escape control characters on root while keeping canonical API exact, replace timeless CURRENT wording with AS-OF wording, and add the missing notice/timestamp/concurrency regressions. Codex + Claude HOLD until repaired exact head returns. NO merge/deploy/write enable/provider mutation.
+
+
 > **6 OCT / COM #792 CURRENT GATE — YAC PR #98 EXACT-HEAD REVIEW:** Build returned the source-only root-readback candidate at YAC PR #98 exact head `5e66a9664e66d7dcc17685a276afea4457120c42`, base `0c778acbd44970b74cfd050fd902360e65d8e505`; draft, mergeable, unmerged, undeployed. Exact-head hosted Prototype + Offline steward workflows are green. Framework #792 `6019898980` routes **Claude Code** for hostile exact-head review and **Codex Windows** for exact-head execution/transport review. Build HOLD. No merge/deploy/write enable/provider mutation before both returns and Framework integration.
 
 
