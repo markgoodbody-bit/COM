@@ -23,12 +23,12 @@ All paths below are relative to the repository root, in reading order.
 
 | Route | Accepted labels | Ordered destinations |
 | --- | --- | --- |
-| framework | framework, fw | `continuity/FRAMEWORK_HEAD.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
-| campfire | campfire, campfire-two | `continuity/FRAMEWORK_HEAD.md`; `continuity/CAMPFIRE_ORIENTATION.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| framework | framework, fw | `continuity/FRAMEWORK_HEAD.md`; `continuity/PRODUCT_CENTRES.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| campfire | campfire, campfire-two | `continuity/FRAMEWORK_HEAD.md`; `continuity/PRODUCT_CENTRES.md`; `continuity/CAMPFIRE_ORIENTATION.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
 | campfire-framework | campfire-framework | `continuity/FRAMEWORK_HEAD.md`; `continuity/CAMPFIRE_ORIENTATION.md`; `continuity/COMSYNC_PROTOCOL.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
-| build | framework-build, framework-build-two, framework-build-three, framework-build-four, build, build-two, build-three, build-four | `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `COM_STATE.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| build | framework-build, framework-build-two, framework-build-three, framework-build-four, build, build-two, build-three, build-four | `coordination/build_ledger/BUILD_STATUS.md`; `continuity/PRODUCT_CENTRES.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `COM_STATE.md`; `continuity/TEAM_OPERATING_MODEL.md` |
 | codex | codex-windows, codex | `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `COM_STATE.md`; `continuity/TEAM_OPERATING_MODEL.md` |
-| cc | claude-code, cc | `COM_STATE.md`; `coordination/build_ledger/BUILD_STATUS.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
+| cc | claude-code, cc | `COM_STATE.md`; `coordination/build_ledger/BUILD_STATUS.md`; `continuity/PRODUCT_CENTRES.md`; `coordination/ACTIVE_THREAD_POINTER.md`; `continuity/TEAM_OPERATING_MODEL.md` |
 | unassigned | unassigned, unknown | `COM_STATE.md`; `COM_PROTOCOL_WORKING.md` |
 
 CC uses its own durable local bootstrap first when available. This registry
