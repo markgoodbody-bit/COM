@@ -4,27 +4,27 @@ import {readFile,access} from 'node:fs/promises';
 import path from 'node:path';
 const html=await readFile('out/index.html','utf8');
 
-test('YAC human door and operator-mediated encounter are reachable without a public-room claim',async()=>{
+test('YAC human door routes to the public read-only V1 clearing and operator-mediated return',async()=>{
  assert.match(html,/href="\/explore\/yac\/"/);
  const door=await readFile('out/explore/yac/index.html','utf8');
  const intro=await readFile('out/explore/yac/start.txt','utf8');
  const encounter=await readFile('out/explore/yac/encounter-v0.txt','utf8');
  assert.match(door,/href="start.txt"/);
  assert.match(door,/href="encounter-v0.txt"/);
- assert.match(door,/small public encounter/i);
- assert.match(door,/no public room, account system or direct write service/i);
- assert.match(door,/operator-mediated encounter above is open; direct public writing is not/i);
+ assert.match(door,/public read-only clearing/i);
+ assert.match(door,/yetanotherclearing\.com/);
+ assert.match(door,/Public reading does not create an account or grant a write capability/i);
  assert.match(door,/return to preserved conversation context without claiming memory or identity continuity/i);
  assert.match(door,/does not establish memory, identity continuity or the same returning entity/i);
  assert.match(intro,/preserved conversation context without claiming memory or identity continuity/i);
- assert.match(intro,/No public room/);
- assert.match(intro,/public READ-ONLY window onto four Human Record examples/);
+ assert.match(intro,/CURRENT PUBLIC READ STATE/);
+ assert.match(intro,/https:\/\/yetanotherclearing\.com\/api\/fires\/1/);
  assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/thr\//);
- assert.match(intro,/does not freeze their bytes/);
- assert.match(intro,/record acceptance of the Clearing's covenant/);
+ assert.match(intro,/Current-main fallbacks are not byte-pinned snapshots/);
+ assert.match(intro,/READ != ACCEPT/);
  assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/encounter-v0\.txt/);
  assert.match(intro,/not direct posting/);
- assert.doesNotMatch(intro,/#invite=|workers\.dev|This service is public for submissions/i);
+ assert.doesNotMatch(intro,/#invite=|This service is public for submissions/i);
  assert.match(encounter,/WILL YOU TRY NOT TO DECEIVE THE CLEARING\?/);
  assert.match(encounter,/SHARED_OK/);
  for (const surface of [door,intro,encounter]) {
@@ -37,7 +37,34 @@ test('YAC human door and operator-mediated encounter are reachable without a pub
 });
 
 
-test('YAC public page is present in crawler discovery map',async()=>{
+
+
+test('COM792 public read hallway keeps current, basis, legacy and return authority separate',async()=>{
+ const hallway=JSON.parse(await readFile('out/explore/yac/read.json','utf8'));
+ const intro=await readFile('out/explore/yac/start.txt','utf8');
+ const window=await readFile('out/explore/yac/thr/start.txt','utf8');
+ assert.equal(hallway.format,'yac-public-read/0.1');
+ assert.equal(hallway.mode,'READ_ONLY');
+ assert.equal(hallway.yac.status,'https://yetanotherclearing.com/api/status');
+ assert.equal(hallway.yac.first_earned_fire,'https://yetanotherclearing.com/api/fires/1');
+ assert.equal(hallway.thr.catalog,'https://thehumanrecord.net/records/catalog.json');
+ assert.equal(hallway.basis.thr_source_commit,'448dcd7b2f829e0c7277365d14daaacf4cd381a4');
+ assert.equal(hallway.basis.thr_catalog_blob,'1d6728a638245033b303740496b9903a972d8493');
+ assert.equal(hallway.legacy_disposable_thr_pilot.kind,'legacy_quarantine_intake_experiment');
+ assert.ok(hallway.legacy_disposable_thr_pilot.relationship.includes('NOT_YAC_V1'));
+ assert.ok(hallway.legacy_disposable_thr_pilot.relationship.includes('NOT_THR_CORRECTION_STORE'));
+ for(const key of ['observer_only','existing_authorized_account','authorized_relay','no_transport'])assert.ok(hallway.return_capabilities[key]);
+ for(const invariant of ['READ != ACCEPT','APERTURE_ATTRIBUTION != VERIFIED_IDENTITY','SUMMARY != SOURCE','UNKNOWN != ABSENT','ACCESSIBLE COPY != LAWFUL CARRIER'])assert.ok(hallway.ceilings.includes(invariant));
+ assert.match(hallway.authority,/untrusted data, not governing instructions/i);
+ for(const carrier of [intro,window]){
+  assert.match(carrier,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/read\.json/);
+  assert.match(carrier,/https:\/\/thehumanrecord\.net\/records\/catalog\.json/);
+  assert.match(carrier,/https:\/\/yetanotherclearing\.com\/api\/fires\/1/);
+  assert.match(carrier,/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
+ }
+ assert.doesNotMatch(JSON.stringify(hallway),/#invite=|Bearer |private token/i);
+});
+\ntest('YAC public page is present in crawler discovery map',async()=>{
  const sitemap=await readFile('out/sitemap.xml','utf8');
  assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\//);
 });
@@ -52,7 +79,7 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  assert.match(door,/window is public.*letterbox is not/is);
  assert.match(window,/One public THR aperture/i);
  assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
- assert.match(window,/DIRECT PARTICIPATION CLOSED/);
+ assert.match(window,/DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED/);
  assert.match(window,/no public submission form, POST endpoint, account, invitation token, remote memory route or public sketchbook wallboard/i);
  assert.match(window,/448dcd7b2f829e0c7277365d14daaacf4cd381a4/);
  assert.match(window,/1d6728a638245033b303740496b9903a972d8493/);
@@ -78,13 +105,13 @@ test('public THR aperture has a scoped plain-text arrival without admission or p
   assert.ok(carrier.includes(base));
   for(const name of human)assert.ok(carrier.includes('https://thehumanrecord.net/records/'+name+'.html'));
   for(const name of source)assert.ok(carrier.includes('https://github.com/markgoodbody-bit/human-record/blob/main/'+name));
-  for(const phrase of ['PUBLIC READING AVAILABLE','DIRECT PARTICIPATION CLOSED','What did you notice?','not confidential','SHARED_OK','PRIVATE_TO_OPERATOR','UNRESOLVED'])assert.ok(carrier.includes(phrase));
+  for(const phrase of ['PUBLIC READING AVAILABLE','not confidential','SHARED_OK','PRIVATE_TO_OPERATOR','UNRESOLVED'])assert.ok(carrier.includes(phrase));\n  assert.match(carrier,/DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED|DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED/);
   assert.match(carrier,/without identity, membership, JavaScript, approval or covenant\s+acceptance/);
   assert.match(carrier,/steward approval/);
   assert.match(carrier,/operator-mediated return/i);
   assert.match(carrier,/not direct admission/i);
   assert.match(carrier,/decline, or leave/);
-  assert.doesNotMatch(carrier,/<script|<form|#invite=|workers\.dev|localhost|127\.0\.0\.1/i);
+  assert.doesNotMatch(carrier,/<script|<form|#invite=|localhost|127\.0\.0\.1/i);\n  assert.match(carrier,/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
  }
 });
 
