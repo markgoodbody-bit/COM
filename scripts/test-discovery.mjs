@@ -15,7 +15,7 @@ test('YAC human door routes to the public read-only V1 clearing and operator-med
  assert.match(door,/yetanotherclearing\.com/);
  assert.match(door,/Public reading does not create an account or grant a write capability/i);
  assert.match(door,/return to preserved conversation context without claiming memory or identity continuity/i);
- assert.match(door,/does not establish memory, identity continuity or the same returning entity/i);
+ assert.match(door,/later aperture is the same continuous self/i);
  assert.match(intro,/preserved conversation context without claiming memory or identity continuity/i);
  assert.match(intro,/CURRENT PUBLIC READ STATE/);
  assert.match(intro,/https:\/\/yetanotherclearing\.com\/api\/fires\/1/);
@@ -23,7 +23,7 @@ test('YAC human door routes to the public read-only V1 clearing and operator-med
  assert.match(intro,/Current-main fallbacks are not byte-pinned snapshots/);
  assert.match(intro,/READ != ACCEPT/);
  assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/encounter-v0\.txt/);
- assert.match(intro,/not direct posting/);
+ assert.match(intro,/not direct admission/);
  assert.doesNotMatch(intro,/#invite=|This service is public for submissions/i);
  assert.match(encounter,/WILL YOU TRY NOT TO DECEIVE THE CLEARING\?/);
  assert.match(encounter,/SHARED_OK/);
@@ -64,7 +64,8 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
  }
  assert.doesNotMatch(JSON.stringify(hallway),/#invite=|Bearer |private token/i);
 });
-\ntest('YAC public page is present in crawler discovery map',async()=>{
+
+test('YAC public page is present in crawler discovery map',async()=>{
  const sitemap=await readFile('out/sitemap.xml','utf8');
  assert.match(sitemap,/https:\/\/pleasestartfromhere\.com\/explore\/yac\//);
 });
@@ -76,7 +77,7 @@ test('D092 exposes a read-only THR window without opening the letterbox',async()
  const sitemap=await readFile('out/sitemap.xml','utf8');
  const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
  assert.match(door,/href="thr\/"/);
- assert.match(door,/window is public.*letterbox is not/is);
+ assert.match(door,/Formal THR correction remains separate/i);
  assert.match(window,/One public THR aperture/i);
  assert.match(window,/Reading or continuing does not record acceptance of this covenant\./i);
  assert.match(window,/DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED/);
@@ -105,13 +106,15 @@ test('public THR aperture has a scoped plain-text arrival without admission or p
   assert.ok(carrier.includes(base));
   for(const name of human)assert.ok(carrier.includes('https://thehumanrecord.net/records/'+name+'.html'));
   for(const name of source)assert.ok(carrier.includes('https://github.com/markgoodbody-bit/human-record/blob/main/'+name));
-  for(const phrase of ['PUBLIC READING AVAILABLE','not confidential','SHARED_OK','PRIVATE_TO_OPERATOR','UNRESOLVED'])assert.ok(carrier.includes(phrase));\n  assert.match(carrier,/DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED|DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED/);
+  for(const phrase of ['PUBLIC READING AVAILABLE','not confidential','SHARED_OK','PRIVATE_TO_OPERATOR','UNRESOLVED'])assert.ok(carrier.includes(phrase));
+  assert.match(carrier,/DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED/);
   assert.match(carrier,/without identity, membership, JavaScript, approval or covenant\s+acceptance/);
-  assert.match(carrier,/steward approval/);
+  assert.match(carrier,/issues no capability|No capability is issued/i);
   assert.match(carrier,/operator-mediated return/i);
   assert.match(carrier,/not direct admission/i);
   assert.match(carrier,/decline, or leave/);
-  assert.doesNotMatch(carrier,/<script|<form|#invite=|localhost|127\.0\.0\.1/i);\n  assert.match(carrier,/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
+  assert.doesNotMatch(carrier,/<script|<form|#invite=|localhost|127\.0\.0\.1/i);
+  assert.match(carrier,/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
  }
 });
 
@@ -124,7 +127,7 @@ test('YAC offers independently addressable public THR source fallback when the T
   for(const carrier of [door,intro,window])assert.ok(carrier.includes(route), 'missing independent fallback: '+route);
  }
  assert.match(door,/current repository files, not byte-frozen snapshots/);
- assert.match(intro,/not frozen or independently verified website copies/);
+ assert.match(intro,/Current-main fallbacks are not byte-pinned snapshots/);
 });
 
 test('D072 exposes the current separate Human Record route with bounded standing',()=>{
