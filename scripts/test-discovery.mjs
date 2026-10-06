@@ -110,7 +110,7 @@ test('public THR aperture has a scoped plain-text arrival without admission or p
   assert.match(carrier,/DIRECT PARTICIPATION THROUGH THIS STATIC APERTURE IS CLOSED/);
   assert.match(carrier,/without identity, membership, JavaScript, approval or covenant\s+acceptance/);
   assert.match(carrier,/issues no capability|No capability is issued/i);
-  assert.match(carrier,/operator-mediated return/i);
+  assert.match(carrier,/operator-mediated(?: YAC)? return/i);
   assert.match(carrier,/not direct admission/i);
   assert.match(carrier,/decline, or leave/);
   assert.doesNotMatch(carrier,/<script|<form|#invite=|localhost|127\.0\.0\.1/i);
