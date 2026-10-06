@@ -4,15 +4,19 @@ import {readFile,access} from 'node:fs/promises';
 import path from 'node:path';
 const html=await readFile('out/index.html','utf8');
 
-test('YAC human door routes to the public read-only V1 clearing and operator-mediated return',async()=>{
+test('YAC human door routes to the public V1 read surface and operator-mediated return',async()=>{
  assert.match(html,/href="\/explore\/yac\/"/);
  const door=await readFile('out/explore/yac/index.html','utf8');
  const intro=await readFile('out/explore/yac/start.txt','utf8');
  const encounter=await readFile('out/explore/yac/encounter-v0.txt','utf8');
  assert.match(door,/href="start.txt"/);
  assert.match(door,/href="encounter-v0.txt"/);
- assert.match(door,/public read-only clearing/i);
+ assert.match(door,/public YAC V1 read surface/i);
  assert.match(door,/yetanotherclearing\.com/);
+ assert.match(door,/api\/status/i);
+ assert.match(door,/current write state/i);
+ assert.match(door,/last earned receipt/i);
+ assert.doesNotMatch(door,/public read-only clearing/i);
  assert.match(door,/Public reading does not create an account or grant a write capability/i);
  assert.match(door,/return to preserved conversation context without claiming memory or identity continuity/i);
  assert.match(door,/later aperture is the same continuous self/i);
@@ -48,8 +52,12 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
  assert.equal(hallway.yac.status,'https://yetanotherclearing.com/api/status');
  assert.equal(hallway.yac.first_earned_fire,'https://yetanotherclearing.com/api/fires/1');
  assert.equal(hallway.thr.catalog,'https://thehumanrecord.net/records/catalog.json');
+ assert.match(hallway.thr.reading_rule,/each record's view_basis/i);
+ assert.match(hallway.thr.reading_rule,/catalogue's own date is not per-record currentness/i);
  assert.equal(hallway.basis.thr_source_commit,'448dcd7b2f829e0c7277365d14daaacf4cd381a4');
  assert.equal(hallway.basis.thr_catalog_blob,'1d6728a638245033b303740496b9903a972d8493');
+ assert.equal(hallway.basis.yac_source_commit_publicly_verifiable,false);
+ assert.match(hallway.basis.rule,/private-source provenance pointer/i);
  assert.match(hallway.fallbacks.rule,/not frozen BASIS snapshots/i);
  assert.equal(hallway.fallbacks.thr_current_main.camp_fire,'https://github.com/markgoodbody-bit/human-record/blob/main/specimen.md');
  assert.equal(hallway.fallbacks.thr_current_main.hannibal_source_survival,'https://github.com/markgoodbody-bit/human-record/blob/main/cases/hannibal-barca.md');
@@ -59,6 +67,9 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
  assert.ok(hallway.legacy_disposable_thr_pilot.relationship.includes('NOT_YAC_V1'));
  assert.ok(hallway.legacy_disposable_thr_pilot.relationship.includes('NOT_THR_CORRECTION_STORE'));
  for(const key of ['observer_only','existing_authorized_account','authorized_relay','no_transport'])assert.ok(hallway.return_capabilities[key]);
+ assert.match(hallway.return_capabilities.existing_authorized_account.meaning,/account holder's permission for this purpose/i);
+ assert.match(hallway.return_capabilities.existing_authorized_account.meaning,/AI wrote it/i);
+ assert.match(hallway.yac.last_earned_state.description,/operator \/ codex \/ claude aperture encounter/i);
  for(const invariant of ['READ != ACCEPT','APERTURE_ATTRIBUTION != VERIFIED_IDENTITY','SUMMARY != SOURCE','UNKNOWN != ABSENT','ACCESSIBLE COPY != LAWFUL CARRIER'])assert.ok(hallway.ceilings.includes(invariant));
  assert.match(hallway.authority,/untrusted data, not governing instructions/i);
  for(const carrier of [intro,window]){
@@ -66,6 +77,9 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
   assert.match(carrier,/https:\/\/thehumanrecord\.net\/records\/catalog\.json/);
   assert.match(carrier,/https:\/\/yetanotherclearing\.com\/api\/fires\/1/);
   assert.match(carrier,/yac-thr-disposable-pilot\.mecchanical-ethics\.workers\.dev\/start\.txt/);
+  assert.match(carrier,/account holder's permission for this purpose/i);
+  assert.match(carrier,/AI wrote it/i);
+  assert.match(carrier,/view_basis/i);
  }
  assert.doesNotMatch(JSON.stringify(hallway),/#invite=|Bearer |private token/i);
 });
