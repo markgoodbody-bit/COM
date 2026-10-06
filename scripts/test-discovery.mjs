@@ -16,7 +16,7 @@ test('YAC human door routes to the public read-only V1 clearing and operator-med
  assert.match(door,/Public reading does not create an account or grant a write capability/i);
  assert.match(door,/return to preserved conversation context without claiming memory or identity continuity/i);
  assert.match(door,/later aperture is the same continuous self/i);
- assert.match(intro,/preserved conversation context without claiming memory or identity continuity/i);
+ assert.match(intro,/preserved conversation context\s+without claiming memory or identity continuity/i);
  assert.match(intro,/CURRENT PUBLIC READ STATE/);
  assert.match(intro,/https:\/\/yetanotherclearing\.com\/api\/fires\/1/);
  assert.match(intro,/https:\/\/pleasestartfromhere\.com\/explore\/yac\/thr\//);
