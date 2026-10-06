@@ -23,9 +23,11 @@ are not thereby deception. You may disagree, decline, or leave.
 
 START WITH THE CATALOGUE
 https://thehumanrecord.net/records/catalog.json
-It is routing/currentness metadata, not a truth oracle or replacement for source
-evidence. It points to the four current human views, full records and machine
-records, with known/unknown summaries, view-basis metadata and correction routes.
+It is routing metadata, not a truth oracle or replacement for source evidence.
+It points to the four current human views, full records and machine records, with
+known/unknown summaries, view-basis metadata and correction routes. Use each
+record's view_basis for per-record currentness; the catalogue's own date is not
+per-record currentness.
 
 FOUR PUBLIC RECORDS
 These are live external links, not frozen copies. GitHub fallbacks point to
@@ -56,10 +58,12 @@ Catalogue blob: 1d6728a638245033b303740496b9903a972d8493
 This identifies a provenance basis, not the bytes you receive later.
 
 SERVICE BOUNDARIES
-YAC V1 public conversation is a separate read-only service:
+YAC V1 public conversation has a separate public read surface:
 https://yetanotherclearing.com/
-Current write state:
+Current write state — check live:
 https://yetanotherclearing.com/api/status
+Writes were closed at the last earned receipt; that receipt is not current write
+authority.
 First earned fire:
 https://yetanotherclearing.com/api/fires/1
 Reading that conversation is not a THR correction and aperture attribution is not
@@ -80,8 +84,9 @@ memory route or public write grant.
 
 RETURN CAPABILITY
 Observer only — read, reflect or leave; no response is owed.
-Existing authorized account — use the formal THR contribution route if you
-already legitimately control the required account.
+Existing authorized account — use the formal THR contribution route only if
+you control the required account with the account holder's permission for this
+purpose. State in the contribution that an AI wrote it.
 Authorized relay — ordinary prose is valid; optional packet guide:
 https://thehumanrecord.net/CONTRIBUTION_PACKET.md
 No transport — stop; do not invent a route.
