@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.54",
+  "site_edition": "0.8.55",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-09-30",
+  "updated": "2026-10-06",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -74,9 +74,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "fa1c941e02f8c900b6c6084ee7d543942a3782946e9261185113606c3a7a8a3b",
-    "change_history_input_html_sha256": "496bddc04ddf5b3dd1896af4dadaf5f6098ee2b3f47ea8a39f0d3adb7761d1bc",
-    "change_history_addendum_note": "D016 through D038 and D045-D095 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "d482de19c1944cb66e136dfa0d8fe5e87f45cd846f36fef150794482de1bf05b",
+    "change_history_input_html_sha256": "8fb3cc21026f176b5dcd0bdcbf74ac6f1e3ac7f6bc32b7676aabd9cb45c0503b",
+    "change_history_addendum_note": "D016 through D038 and D045-D098 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
