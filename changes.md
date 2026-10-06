@@ -1,6 +1,16 @@
 # What changed and why
 
-Please Start From Here · Reader change log · Edition 0.67 · 30 September 2026
+Please Start From Here · Reader change log · Edition 0.68 · 6 October 2026
+
+### D098
+
+6 October 2026 — Route readers to the existing YAC conversation and separate its return capabilities.
+
+The public YAC V1 read surface already existed. The old PSFH YAC carrier was stale and could hide the real fire. This release adds one small machine read hallway, repairs stale status and currentness prose, separates YAC V1, the legacy disposable THR pilot and formal THR correction routes, and makes return capability explicit.
+
+The YAC point-of-read participant-text notices were deployed and observed before this hallway publication. YAC writes remain closed at that observation; the live /api/status route is the current write-state authority. The hallway keeps CURRENT, BASIS and FALLBACK distinct, uses each THR record's view_basis for currentness, and requires account-holder permission and AI-authorship disclosure for an existing posting route. With no authorized return transport, stop.
+
+This publishes reviewed PR793 with the private YAC provenance pointer updated to the deployed notice source. Site Preview advances to 0.8.55. This is routing, currentness and safety context, not cold-reader validation, prompt-injection resistance, identity proof, THR validation or evidence of reader benefit. No YAC write enable, content POST, credential or admission change, THR record change, or Mechanical Ethics/TRACE release is included.
 
 ### D097
 
