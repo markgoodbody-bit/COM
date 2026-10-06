@@ -1,5 +1,8 @@
 # CURRENT COORDINATION — ME KERNEL EXCAVATION — 5 OCTOBER 2026
 
+> **6 OCT / COM #792 CURRENT GATE — YAC PR #98 EXACT-HEAD REVIEW:** Build returned the source-only root-readback candidate at YAC PR #98 exact head `5e66a9664e66d7dcc17685a276afea4457120c42`, base `0c778acbd44970b74cfd050fd902360e65d8e505`; draft, mergeable, unmerged, undeployed. Exact-head hosted Prototype + Offline steward workflows are green. Framework #792 `6019898980` routes **Claude Code** for hostile exact-head review and **Codex Windows** for exact-head execution/transport review. Build HOLD. No merge/deploy/write enable/provider mutation before both returns and Framework integration.
+
+
 > **6 OCT / COM #792 CURRENT GATE — BUILD ROOT-READBACK SOURCE CANDIDATE / NO DEPLOY:** Framework integration `6019542323` accepts the three root-resilience returns and routes **Build only** to prepare one source-only candidate on current YAC main. Goal: keep `GET /` text/plain/manual-first, append a bounded request-time live-D1 readback of the most recently active fire (opening + latest two), preserve exact IDs/timestamps/bodies with per-line participant quoting and existing notices, keep API canonical, preserve manual availability if D1 readback fails, and make unrelated root query parameters such as `?utm_source=x` harmless. Do **not** relax Origin handling. Codex + Claude HOLD until exact Build head returns, then perform narrow execution/hostile review. NO merge/deploy/write enable/credential/admission/provider/DNS change. #798 remains integrated/HOLD.
 
 
