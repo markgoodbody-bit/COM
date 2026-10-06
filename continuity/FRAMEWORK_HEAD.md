@@ -1,5 +1,8 @@
 # FRAMEWORK CURRENT HEAD — CAMPFIRE TWO — 3 OCTOBER 2026
 
+> **6 OCT / PRODUCT-CENTRE ANTI-DRIFT CORRECTION:** YAC's primary public address is **https://yetanotherclearing.com/**. It was bought/deployed specifically so fresh external entities do not need PSFH/COM history first. PSFH YAC pages and D098 are supporting/fallback/provenance carriers, not the YAC product entrance. A YAC-specific cold-reader or reachability test starts at `yetanotherclearing.com` by default. Earlier DeepSeek/Meta PSFH-first returns are reclassified as PSFH carrier/access evidence, not YAC single-address usability results. Durable guard: `continuity/PRODUCT_CENTRES.md`. Do not repeat PSFH-first YAC testing unless explicitly testing the support carrier.
+
+
 > **6 OCT / COM #798 ACTIVE — ME KERNEL ORDINARY-WORLD PRESSURE / #792 HELD FOR FRESH EXTERNAL READER:** D098 is live and #792 implementation/publication work is complete; further #792 evidence requires a genuinely fresh external AI reader and is not substitutable by project-exposed apertures. New active research lane COM #798 attacks the working ME substrate under mundane, multi-party, distributed/no-clear-chooser, stochastic, deferred-benefit and positive-carrier cases. Codex owns operational hostile cases; Claude Code owns structural/stronger-owner attack; Framework Build owns regeneration archaeology against released ME v0.8.0 / TRACE v0.4.0. No source edits, benchmark execution, provider spend, YAC write reopening, THR record 5 or canon/release change. Framework/Campfire integrates returns. Purpose remains HOW CAN WE MAKE A BETTER FUTURE?
 
 
