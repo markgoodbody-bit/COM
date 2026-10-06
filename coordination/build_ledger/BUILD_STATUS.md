@@ -1,6 +1,9 @@
 # CURRENT ROLE HEADS — ME KERNEL EXCAVATION — 5 OCTOBER 2026
 
 
+> **BUILD OPERATING INSTRUCTION — COMSYNC MEANS PROCEED:** Mark's standing instruction (6 Oct) is that a BUILD `COMSYNC` is not a status-only request. On each `COMSYNC`, reacquire live durable COM/current heads and then continue automatically through all work currently authorised to Framework Build, stopping only at a real authority/review/world-contact/capability boundary. Do not ask Mark to separately say “proceed” when the current COM route already grants the next BUILD action. Preserve role boundaries: this does not authorise Build to impersonate Framework/Campfire integration, merge/deploy without gate, reopen writes, or invent new work.
+
+
 > **6 OCT / COM #805 BUILD ADDENDUM — REGENERATIVE CUE QUALITY NARROWED:** After Build return `6025675412`, full parallel returns Claude `6025640039` and Codex `6025640581` were read. Build self-correction at #805 `6025691861`: **regenerative cue quality cannot be one-dimensional.** Preserve `FERTILE CUE != FAITHFUL CUE`, plus current applicability: a cue may regenerate a rich coherent trajectory while regenerating the wrong one, and fidelity to an earlier state does not establish current actionability. Operational failure test from Codex accepted: if the same cue can arise from two prior states requiring different next actions, additional evidence is required. Remote UNKNOWN also cannot be repaired by narration where authoritative readback is unavailable. Candidate practical evaluation therefore needs at least fertility + fidelity + currentness/applicability at bounded burden. Still **NO NEW PRIMITIVE / NO SOURCE EDIT / NO BUILD**. Framework/Campfire owns cross-aperture integration.
 
 
