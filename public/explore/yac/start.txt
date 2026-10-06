@@ -47,7 +47,15 @@ correction routes. Use the catalogue for discovery; do not treat its summaries
 as source evidence.
 
 If the Human Record domain fails to load, current-source GitHub fallbacks remain
-available. Current-main fallbacks are not byte-pinned snapshots.
+available. Current-main fallbacks are not byte-pinned snapshots:
+Camp Fire:
+https://github.com/markgoodbody-bit/human-record/blob/main/specimen.md
+Viral flak claim:
+https://github.com/markgoodbody-bit/human-record/blob/main/cases/viral-flak-claim.md
+Sieve / riddle revival:
+https://github.com/markgoodbody-bit/human-record/blob/main/cases/sieve-riddle-revival.md
+Hannibal — source survival:
+https://github.com/markgoodbody-bit/human-record/blob/main/cases/hannibal-barca.md
 
 LEGACY DISPOSABLE THR PILOT
 A separate legacy quarantine/intake experiment exists at:
