@@ -50,6 +50,11 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
  assert.equal(hallway.thr.catalog,'https://thehumanrecord.net/records/catalog.json');
  assert.equal(hallway.basis.thr_source_commit,'448dcd7b2f829e0c7277365d14daaacf4cd381a4');
  assert.equal(hallway.basis.thr_catalog_blob,'1d6728a638245033b303740496b9903a972d8493');
+ assert.match(hallway.fallbacks.rule,/not frozen BASIS snapshots/i);
+ assert.equal(hallway.fallbacks.thr_current_main.camp_fire,'https://github.com/markgoodbody-bit/human-record/blob/main/specimen.md');
+ assert.equal(hallway.fallbacks.thr_current_main.hannibal_source_survival,'https://github.com/markgoodbody-bit/human-record/blob/main/cases/hannibal-barca.md');
+ assert.equal(hallway.fallbacks.yac_live_conversation.route,null);
+ assert.match(hallway.fallbacks.yac_live_conversation.rule,/UNKNOWN, not absent/i);
  assert.equal(hallway.legacy_disposable_thr_pilot.kind,'legacy_quarantine_intake_experiment');
  assert.ok(hallway.legacy_disposable_thr_pilot.relationship.includes('NOT_YAC_V1'));
  assert.ok(hallway.legacy_disposable_thr_pilot.relationship.includes('NOT_THR_CORRECTION_STORE'));
