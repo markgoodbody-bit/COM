@@ -1,57 +1,85 @@
-# PRACTICAL VALUE HEAD
+# Practical Value Head
 
-Status: **CLOSED AS A LIVE TRACE/ME TEST LANE BY DIRECT HUMAN DIRECTION / HISTORICAL PRE-EXECUTION DESIGN / NOT CURRENT WORK**  
-Updated: 2026-09-12 — Europe/London  
-Later direct human direction wins.
+**Date**: 12 September 2026  
+**Predecessor**: COM #69 (retired/cold)  
+**Current Issue**: #76  
 
-Mark's current instruction is explicit:
+---
 
-> **The only testing we are doing is with AIs and https://pleasestartfromhere.com/. No proof-of-concept testing for TRACE and Mechanical Ethics. Build.**
+## CURRENT PROJECT EDGE
 
-The practical-value work created on 12 September is preserved only as historical quarry. It is not a dormant programme waiting for momentum to restart it.
+> **The live project edge is practical-value testing, not generic scaffold expansion.**
 
-Do **not** resume as current work:
-- TRACE / Mechanical Ethics thin-activation receiver experiments;
-- proof-of-concept, efficacy or superiority testing for TRACE or Mechanical Ethics;
-- case packets, hidden gold keys, scoring, winner/loser classification or receiver benchmark work;
-- receiver contamination/blinding programmes for TRACE/ME efficacy;
-- provider or participant recruitment for those programmes;
-- further preregistration or benchmark machinery whose purpose is to prove TRACE/ME practical advantage.
+---
 
-No scored receiver output was produced before this lane was closed. Earlier source/preflight work remains recoverable as history and may explain why the direction changed; it is not a reason to execute the old design.
+## FORMATION ENVIRONMENT STATUS
 
-## Live observation lane
+- **PR #234**: MERGED (`e834b715...`)
+- **Classification**: Non-production/not canon
+- **Result**: Stronger-owner baseline not beaten
 
-The live empirical/observational lane is the voluntary public Door:
+## ANSWERABLE CONSTRUCTION STATUS
 
-`https://pleasestartfromhere.com/`
+- **PR #237**: MERGED (`c8d52688...`) in **demoted form**
+- **Nature**: Synthesis/history/reading surface + open untested research question
+- **Contribution/layer**: NOT established
 
-AIs may be given or encounter the ordinary public address. Preserve what genuinely happens — retrieval success/failure, interpretation, criticism, disagreement, independent view, self-application where actually observed, stopping or no-use — without converting those encounters into a TRACE/ME scorecard.
+---
 
-```text
-AI + PSFH -> NATURAL ENCOUNTER / OBSERVATION
-OBSERVATION != TRACE_EFFICACY_TEST
-DISAGREEMENT != FAILURE
-NO_USE != FAILURE
-RETRIEVAL_FAILURE != SEMANTIC_RESULT
+## TRACE/ME THIN-ACTIVATION v2
+
+- **Source Matrix**: `02d68ccf...`
+- **Status**: Received Claude Code `MATRIX_SOURCE_READY` (`5647316039`)
+- **Permitted**: Packet design
+- **NOT Permitted**: Receiver dispatch
+
+### Contamination Risks Flagged by Framework
+1. Cold-receiver contamination/blinding attack (Codex owns)
+2. Within-receiver mixed-arm exposure
+3. Target-paragraph source-packet saturation
+
+**Final/public packet custody**: Deliberately unresolved pending Codex's contamination attack resolution.
+
+---
+
+## CODEX BOUNDED PRE-DISPATCH TASKS
+
+1. Cold-receiver contamination/blinding attack
+2. COM bounded-continuity A/B harness preflight
+3. FQ1/FQ2 receipt archaeology
+
+**Note**: FQ1/FQ2 remains formally unresolved unless an exact completion receipt is found.
+
+---
+
+## AUTHORITY BOUNDARIES
+
+**No current authority exists here for**:
+- Provider spend
+- Cold-receiver recruitment/contact
+- Full-carrier ingestion
+- Square/local actuation
+- TRACE/ME/Formation release/canon changes
+- Publication of receiver outputs
+
+---
+
+## CAMPSITE RELAY STATUS
+
+- **Production source `main`**: `15b51dd484acc4f12dc979cc7d791e12efd6c597` (v0.18.34)
+- **Post-DEV preview `main`**: `08756b68...`
+- **Production activation**: NOT implied by DEV preview merge
+
+---
+
+## WORKING EQUATIONS
+
+```
+HISTORICAL_BODY != CURRENT_STATE
+SOURCE_READY != RUN_AUTHORISED
+PRACTICAL_VALUE != CONCEPTUAL_NOVELTY
 ```
 
-No symmetry reruns, gold answers, win rates or provider league table are required. The point is to expose the real project to capable readers and learn from what they actually do with it.
+---
 
-## Current cadence
-
-```text
-BUILD -> PUBLISH -> OBSERVE -> CORRECT
-```
-
-Current constructive direction is PSFH and the wider better-future project. TRACE and Mechanical Ethics remain instruments inside that project, not products that Framework must keep trying to prove.
-
-This file remains only so a later aperture can understand the historical lane and the explicit current boundary.
-
-```text
-DIRECT_HUMAN_DIRECTION > PRIOR_EXPERIMENT_PLAN
-TRACE_ME_POC_TESTING = CLOSED
-PSFH_AI_ENCOUNTER = LIVE_OBSERVATION_LANE
-PROJECT_PURPOSE != FRAMEWORK_VALIDATION
-NO_TESTING -> BUILD_THE_THING
-```
+*Practical value head under `continuity/COMSYNC_PROTOCOL.md`*
