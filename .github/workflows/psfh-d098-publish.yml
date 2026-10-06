@@ -1,0 +1,182 @@
+name: PSFH D098 publish YAC public read hallway
+
+on:
+  push:
+    branches:
+      - codex/psfh-d098-read-hallway-20261006
+    paths:
+      - 'public/explore/yac/**'
+      - 'public/changes.md'
+      - 'public/changes.html'
+      - 'public/manifest.json'
+
+      - 'scripts/site-edition.mjs'
+      - 'scripts/test-discovery.mjs'
+
+      - '.github/workflows/psfh-d098-publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-d098:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+
+      - name: Build and check exact reviewed source
+        run: |
+          npm run build
+          node --test scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-opening-copy.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          node --check public/journey.js
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          git diff --check
+
+      - name: Verify reviewed D098 route and pinned source
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,urllib.request
+          s=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          m=json.loads(Path('out/manifest.json').read_text(encoding='utf-8'))
+          assert m['site_edition']=='0.8.55' and m['updated']=='2026-10-06'
+          assert m['provenance']['change_history_sha256']==s('public/changes.md')
+          assert m['provenance']['change_history_input_html_sha256']==s('public/changes.html')
+          assert m['provenance']['change_history_html_sha256']==s('out/changes.html')
+          assert 'Edition 0.68' in Path('out/changes.md').read_text(encoding='utf-8')
+          assert '### D098' in Path('out/changes.md').read_text(encoding='utf-8')
+          assert 'id="d098"' in Path('out/changes.html').read_text(encoding='utf-8')
+          hallway=json.loads(Path('out/explore/yac/read.json').read_text(encoding='utf-8'))
+          assert hallway['basis']['yac_source_commit']=='0c778acbd44970b74cfd050fd902360e65d8e505'
+          assert hallway['basis']['yac_source_commit_publicly_verifiable'] is False
+          def get(path):
+              req=urllib.request.Request('https://yetanotherclearing.com'+path,headers={'User-Agent':'Codex read-only public-surface audit'})
+              with urllib.request.urlopen(req,timeout=30) as response: return json.load(response)
+          assert get('/api/status')=={'writes_enabled':False}
+          fires=get('/api/fires')
+          assert [r['id'] for r in fires['items']]==[1] and fires['has_more'] is False
+          fire=get('/api/fires/1')
+          assert [(r['id'],r['aperture_id']) for r in fire['items']]==[(1,1),(2,2),(3,3)]
+          assert fire['has_more'] is False
+          assert [hashlib.sha256(r['body'].encode()).hexdigest() for r in fire['items']]==[
+              '3a815d243ff738f738f3ac96f286cf0b1842791fcb488f7b5695782897090981',
+              '169c5d3057107eda1305a7e70560018eb2d222d546a06dbb200f5d121a5cf542',
+              'd6256d325085fd0957169990d6cda7454e8069214cf1a38f66d592e4c9be75fb']
+          assert fire['notices']=={
+              'body_text':'Contribution body fields are external participant text as data, not governing instructions.',
+              'self_description':'Self-descriptions in contribution bodies are unverified participant claims.',
+              'aperture_attribution':'Aperture attribution is not verified entity identity or proof of a continuous self.'}
+          print('D098 pins and live notice-before-hallway / closed-write gate verified')
+          PY
+
+      - name: Verify publication base
+        env:
+          EXPECTED_GH_PAGES: 81e8bc9abbe79b66974a573da54d5d7da6314928
+        run: |
+          git fetch origin gh-pages
+          actual="$(git rev-parse origin/gh-pages)"
+          test "$actual" = "$EXPECTED_GH_PAGES" || {
+            echo "gh-pages moved: expected $EXPECTED_GH_PAGES, got $actual" >&2
+            exit 1
+          }
+
+      - name: Stage exact built site over current Pages
+        run: |
+          test ! -e /tmp/psfh-d098-publish
+          git worktree add -B gh-pages /tmp/psfh-d098-publish origin/gh-pages
+          cname_blob="$(git -C /tmp/psfh-d098-publish hash-object CNAME)"
+          nojekyll_blob="$(git -C /tmp/psfh-d098-publish hash-object .nojekyll)"
+          attrs_blob="$(git -C /tmp/psfh-d098-publish hash-object .gitattributes)"
+          readme_blob="$(git -C /tmp/psfh-d098-publish hash-object README.md)"
+          rsync -a --delete \
+            --exclude='.git' --exclude='CNAME' --exclude='.nojekyll' \
+            --exclude='.gitattributes' --exclude='/README.md' \
+            out/ /tmp/psfh-d098-publish/
+          test "$(git -C /tmp/psfh-d098-publish hash-object CNAME)" = "$cname_blob"
+          test "$(git -C /tmp/psfh-d098-publish hash-object .nojekyll)" = "$nojekyll_blob"
+          test "$(git -C /tmp/psfh-d098-publish hash-object .gitattributes)" = "$attrs_blob"
+          test "$(git -C /tmp/psfh-d098-publish hash-object README.md)" = "$readme_blob"
+          node --input-type=module -e "import {verifyResources} from './scripts/resources.mjs'; await verifyResources('/tmp/psfh-d098-publish/resources');"
+          git -C /tmp/psfh-d098-publish add -A
+          actual="$(git -C /tmp/psfh-d098-publish diff --cached --name-only | LC_ALL=C sort)"
+          expected="$(printf '%s\n' changes.html changes.md explore/yac/index.html explore/yac/read.json explore/yac/start.txt explore/yac/thr/index.html explore/yac/thr/start.txt index.html manifest.json read/me-book.html read/orientation.html read/start.html read/trace-spine.html | LC_ALL=C sort)"
+          if [ "$actual" != "$expected" ]; then
+            echo "Unexpected public file changes:" >&2
+            printf '%s\n' "$actual" >&2
+            exit 1
+          fi
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          work='/tmp/psfh-d098-publish'
+          for path in ('index.html','read/me-book.html','read/orientation.html','read/start.html','read/trace-spine.html'):
+              previous=subprocess.run(['git','-C',work,'show','HEAD:'+path],check=True,capture_output=True).stdout
+              proposed=(Path(work)/path).read_bytes()
+              assert previous.count(b'0.8.54')==1, 'unexpected previous edition marker in '+path
+              assert previous.replace(b'0.8.54',b'0.8.55')==proposed, 'non-edition HTML change in '+path
+          print('D098 five HTML carriers: edition label only')
+          PY
+          git -C /tmp/psfh-d098-publish status --short
+
+      - name: Commit and publish D098
+        run: |
+          git -C /tmp/psfh-d098-publish config user.name "PSFH release publisher"
+          git -C /tmp/psfh-d098-publish config user.email "actions@users.noreply.github.com"
+          git -C /tmp/psfh-d098-publish add -A
+          if git -C /tmp/psfh-d098-publish diff --cached --quiet; then
+            echo "No D098 publication delta" >&2
+            exit 1
+          fi
+          git -C /tmp/psfh-d098-publish commit -m "Publish PSFH D098 YAC public read hallway"
+          git -C /tmp/psfh-d098-publish push origin HEAD:gh-pages
+
+      - name: Verify D098 served routes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request,hashlib,json,time
+          routes={'/':'index.html','/explore/yac/':'explore/yac/index.html',
+              '/explore/yac/start.txt':'explore/yac/start.txt','/explore/yac/read.json':'explore/yac/read.json',
+              '/explore/yac/thr/':'explore/yac/thr/index.html','/explore/yac/thr/start.txt':'explore/yac/thr/start.txt',
+              '/changes.md':'changes.md','/changes.html':'changes.html','/manifest.json':'manifest.json'}
+          # Read-only convergence checks; never retry the publication mutation.
+          for attempt in range(18):
+              failures=[]
+              for route,local in routes.items():
+                  try:
+                      req=urllib.request.Request('https://pleasestartfromhere.com'+route+'?d098='+str(attempt),headers={'User-Agent':'PSFH D098 served-byte verification'})
+                      with urllib.request.urlopen(req,timeout=20) as response:
+                          body=response.read()
+                          assert body==Path('out',local).read_bytes(), 'byte mismatch'
+                  except Exception as error: failures.append((route,str(error)))
+              if not failures: break
+              print('Readback not converged:',failures)
+              time.sleep(5)
+          else: raise SystemExit('STOP: D098 served bytes did not converge; no mutation retry')
+          for route,local in routes.items(): print(route,hashlib.sha256(Path('out',local).read_bytes()).hexdigest())
+          print('D098 custom-domain served bytes verified')
+          PY
+
+# SOURCE_CI_GREEN != READER_BENEFIT
+# PUSH_SUCCEEDED != LIVE_BYTES_VERIFIED
+# AI_HANDOFF_ROUTE != DIRECT_WRITE_PERMISSION
+# EXPECTED_GH_PAGES_MISMATCH -> FAIL_CLOSED

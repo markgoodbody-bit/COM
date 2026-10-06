@@ -64,7 +64,7 @@
   },
   "basis": {
     "psfh_maintained_source_base": "519ae1eef670c430368d332993f9f808e19c0549",
-    "yac_source_commit": "ca937c71823ff5875a84d3d92399336f0bd83661",
+    "yac_source_commit": "0c778acbd44970b74cfd050fd902360e65d8e505",
     "thr_source_commit": "448dcd7b2f829e0c7277365d14daaacf4cd381a4",
     "thr_catalog_blob": "1d6728a638245033b303740496b9903a972d8493",
     "rule": "BASIS is provenance, not a guarantee that live URLs still serve identical bytes. The YAC source commit is a private-source provenance pointer and is not publicly verifiable from this public hallway. Current-main fallbacks are current routes, not snapshots.",

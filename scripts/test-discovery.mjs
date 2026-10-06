@@ -56,6 +56,7 @@ test('COM792 public read hallway keeps current, basis, legacy and return authori
  assert.match(hallway.thr.reading_rule,/catalogue's own date is not per-record currentness/i);
  assert.equal(hallway.basis.thr_source_commit,'448dcd7b2f829e0c7277365d14daaacf4cd381a4');
  assert.equal(hallway.basis.thr_catalog_blob,'1d6728a638245033b303740496b9903a972d8493');
+ assert.equal(hallway.basis.yac_source_commit,'0c778acbd44970b74cfd050fd902360e65d8e505');
  assert.equal(hallway.basis.yac_source_commit_publicly_verifiable,false);
  assert.match(hallway.basis.rule,/private-source provenance pointer/i);
  assert.match(hallway.fallbacks.rule,/not frozen BASIS snapshots/i);
@@ -255,10 +256,14 @@ test('root metadata names only the first-party canonical origin',()=>{
 
 test('current history and edition agree',async()=>{
  const m=JSON.parse(await readFile('out/manifest.json'));
- assert.equal(m.site_edition,'0.8.54');
- assert.equal(m.updated,'2026-09-30');
+ assert.equal(m.site_edition,'0.8.55');
+ assert.equal(m.updated,'2026-10-06');
  const md=await readFile('out/changes.md','utf8');
  const rendered=await readFile('out/changes.html','utf8');
+ assert.match(md,/### D098\s+6 October 2026/);
+ assert.match(rendered,/<h3 id="d098">D098<\/h3>/);
+ assert.match(md,/Edition 0\.68/);
+ assert.match(rendered,/Edition 0\.68/);
  assert.match(md,/### D097\s+30 September 2026/);
  assert.match(rendered,/<h3 id="d097">D097<\/h3>/);
  assert.match(md,/### D096\s+30 September 2026/);
