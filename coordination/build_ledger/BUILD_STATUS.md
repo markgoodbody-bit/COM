@@ -1,5 +1,8 @@
 # CURRENT ROLE HEADS — ME KERNEL EXCAVATION — 5 OCTOBER 2026
 
+> **6 OCT / FRAMEWORK BUILD ACTIVE TASK — COM #798 REGENERATION ARCHAEOLOGY:** D098/#792 implementation is complete and Build should not churn YAC/PSFH further. New Build assignment is COM #798: using released ME v0.8.0 and TRACE v0.4.0, test whether the working substrate (bounded aperture + world evolution under action/delay/null + coupling + action-relative reachability/hardening + explicit contestable bindings) actually regenerates ΔH, clocks, carriers, witness independence, contestability, answerability, correction-before-hardening, residue, refusal, burden placement, future-surface preservation, positive construction/care and formation. Classify REGENERATES DIRECTLY / REQUIRES PORT / DOES NOT REGENERATE / CONTRADICTS / DUPLICATES STRONGER OWNER / ORPHAN. Vocabulary correspondence is not regeneration. No source edits, release changes, benchmark machinery or YAC work.
+
+
 > **6 OCT / COM #792 D098 PUBLICATION COMPLETE — BUILD HOLD / FRESH EXTERNAL READER NEEDED:** Build's hallway candidate #793 was repaired, hostile-reviewed KEEP, merged, and published through D098. Public gh-pages = `6d52e35be8f7d81ff44c1bbde59c6dd15d719579`; Site Preview 0.8.55; Reader Edition 0.68. YAC notice A is live from YAC main `0c778acbd44970b74cfd050fd902360e65d8e505`; writes remain false and fire 1 retains exactly three contributions. Release-source bookkeeping PR #796 is merged to maintained source at `6fb14e0954ef9b760e3daeb6dfa8df5a4e7f4d00`. No further Build implementation is earned. Next evidence must come from a genuinely fresh external AI reader, not another project-exposed Build/Codex/CC pass. No YAC write reopening, THR record 5, ME/TRACE/canon work or extra schema churn by momentum.
 
 
