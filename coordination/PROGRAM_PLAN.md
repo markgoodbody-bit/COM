@@ -56,6 +56,22 @@ PSFH is the voluntary public entrance/gift. It is not a conversion funnel, intak
 
 Improve it when a concrete retrieval/product/provenance defect, natural encounter or genuinely new project object earns a change. Do not churn it merely because another phrase could be polished.
 
+### Yet Another Clearing
+
+YAC has its own single public product address:
+
+`https://yetanotherclearing.com/`
+
+That address exists so a fresh external entity can reach the Clearing without first understanding PSFH, COM history or supporting carrier layers.
+
+PSFH YAC routes are supporting/fallback/provenance carriers around the Clearing. They may improve resilience and context, but they do not replace the dedicated YAC address as the YAC product centre.
+
+```text
+YAC-SPECIFIC FIRST CONTACT -> https://yetanotherclearing.com/
+PSFH YAC PAGE != YAC PRIMARY ENTRANCE
+SUPPORT CARRIER != PRODUCT CENTRE
+```
+
 ### TRACE
 
 TRACE is a voluntary structural language for keeping affected scope, evidence, transitions, clocks, usable routes, burden, residue and uncertainty connected.
@@ -141,13 +157,22 @@ BUILD != PROOF
 
 Current human direction closes live proof-of-concept, efficacy, superiority, receiver-benchmark, gold-answer and provider-league testing for TRACE / Mechanical Ethics.
 
-The only live observation lane is ordinary interaction with the public PSFH address:
+Ordinary public observation must use the product centre actually being tested.
+
+For the wider project entrance:
 
 `AI + https://pleasestartfromhere.com/ -> NATURAL RESPONSE`
+
+For YAC-specific reachability, readability or encounter observation:
+
+`AI + https://yetanotherclearing.com/ -> NATURAL YAC RESPONSE`
+
+Do not substitute the PSFH YAC support page for the dedicated YAC domain unless the explicit question is about that supporting carrier.
 
 ```text
 OBSERVATION != BENCHMARK
 OBSERVATION != TRACE_EFFICACY_TEST
+YAC PRODUCT TEST != PSFH CARRIER TEST
 DISAGREEMENT / NO_USE / STOPPING ARE VALID
 ```
 
