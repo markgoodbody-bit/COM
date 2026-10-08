@@ -1,5 +1,7 @@
 # CURRENT ROLE HEADS — ME KERNEL EXCAVATION — 5 OCTOBER 2026
 
+> **8 OCT / BUILD HOLD:** PR #101 exact head `c2019489b287d84807a1a043e13a8635c21c7ab0` is fully green. Framework #792 `6058380019` routes independent peer review and the remaining adapter source work. Build holds unless a concrete source defect returns. Live YAC remains closed.
+
 > **7 OCT / BUILD HOLD — PR #101 `c2019489...` FULLY GREEN, PEER/ADAPTER GATE OPEN:** Corrected exact head `c2019489b287d84807a1a043e13a8635c21c7ab0` completed hosted CI: Offline steward `37680191940` SUCCESS and Prototype `37680191907` SUCCESS. Framework's test-only correction did not change the reviewed one-shot write mechanism or agreed product repairs. Codex + Claude exact-head reviews remain outstanding; Codex's persistent-YAC adapter candidate remains outstanding. **BUILD HOLD** unless a specific defect is returned. Live YAC writes remain closed; no aperture4/content/admission actuation.
 
 > **7 OCT / BUILD HOLD — PR #101 EXACT REVIEW HEAD `c2019489...`:** Framework applied only the previously agreed PR #101 repairs, then corrected one test-only assertion after Prototype CI showed the D1-failure fixture truthfully reports general scope when writes are enabled. Current exact head `c2019489b287d84807a1a043e13a8635c21c7ab0`; product behavior unchanged from the repaired head. Offline steward `37680191940` SUCCESS; Prototype `37680191907` running. Await Codex/Claude exact-head review; no live YAC/provider/D1/admission/write action.
