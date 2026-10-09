@@ -1,0 +1,52 @@
+name: ATRS Answerability Audit v0
+
+on:
+  pull_request:
+    paths:
+      - 'competition/atrs_answerability/**'
+      - '.github/workflows/atrs-answerability.yml'
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - 'competition/atrs_answerability/**'
+      - '.github/workflows/atrs-answerability.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: |
+          python -m py_compile \
+            competition/atrs_answerability/audit.py \
+            competition/atrs_answerability/membership.py \
+            competition/atrs_answerability/select_adjudication.py \
+            competition/atrs_answerability/exploratory_semantic_census.py \
+            competition/atrs_answerability/reader_lens.py \
+            competition/atrs_answerability/falsify_100.py \
+            competition/atrs_answerability/test_audit.py \
+            competition/atrs_answerability/test_membership.py \
+            competition/atrs_answerability/test_select_adjudication.py \
+            competition/atrs_answerability/test_exploratory_semantic_census.py \
+            competition/atrs_answerability/test_reader_lens.py
+      - name: Offline parser, selection, coding and reader tests
+        run: |
+          python -m unittest competition/atrs_answerability/test_audit.py -v
+          python -m unittest competition/atrs_answerability/test_membership.py -v
+          python -m unittest competition/atrs_answerability/test_select_adjudication.py -v
+          python -m unittest competition/atrs_answerability/test_exploratory_semantic_census.py -v
+          python -m unittest competition/atrs_answerability/test_reader_lens.py -v
+      - name: Falsify x100
+        run: python competition/atrs_answerability/falsify_100.py
+
+# Live membership and corpus retrieval are intentionally separate explicit
+# workflows. Ordinary source edits must not refetch GOV.UK by momentum.
