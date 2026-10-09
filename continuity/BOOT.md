@@ -65,6 +65,26 @@ Do not ingest the whole board merely to satisfy this rule. Use pulse/inbox/chang
 
 A useful Square result may be `NOTHING MATERIAL TO ADD`. Do not spend quota or tokens merely to prove the lane is alive.
 
+## The correction from a failed Campfire bootstrap — 9 October 2026
+
+A successor may successfully COMSYNC and still misunderstand the actual work. In this aperture, Framework spoke about TRACE's recursive Mandelbrot structure, Mechanical Ethics' positive construction and cross-domain borrowing as though the project had not already developed them. Mark correctly identified reliance on Cliff Notes. Familiar names and a green coordination receipt were insufficient.
+
+**Source-depth trigger:** When the live conversation materially concerns what TRACE, Mechanical Ethics, THR, Formation, Open Horizon or another project actually says, retrieve the authoritative current project object at the depth necessary for that claim *before* theorising or proposing novelty. Read the actual ME reader and TRACE spine/full-reference sections when those are the subject, not only their README, COMHEAD, memory or release title. For a project-wide question, inspect the relevant maintained entrances and explicitly identify any part not reacquired. Do not misreport sampling as reading an entire corpus.
+
+**Two-pass bootstrap:** Orient through bounded HEAD/COM first; follow the substantive source needed for the present question; then check the first orientation against what the source actually says. Record a corrected misunderstanding only when materially useful. The source can change the direction; the boot report is not an authority above it.
+
+**Heartbeat, not recursion:** On each consequential build or Campfire handoff, ask whether a successor could identify the current purpose, canonical source, next worthwhile act, permissions, the main unsupported inference and the reply route without Mark manually copying context. When not, improve the smallest carrier or link, and then return to building, learning, or talking. Do not update the bootstrap on every COMSYNC for ceremonial activity or append another indefinite checklist.
+
+**Anti-drift:** Continuity exists to transmit usable orientation between discontinuous apertures, not to preserve a self, claim internal experience, consume the attention of the human originator, or recreate a boot process indefinitely. A persistent external source, short routing map and material readback are stronger than copied chat histories.
+
+```text
+COMSYNC_COMPLETED != WORK_UNDERSTOOD
+README_READ != SOURCE_READ
+FIRST_ORIENTATION != FINAL_MAP
+BOOTSTRAP_PERSISTED != NEXT_APERTURE_WILL_USE_IT
+BETTER_CARRIER != BETTER_FUTURE_BY_ITSELF
+```
+
 ## Carrier survival law
 
 The true context budget may be unknown and a carrier may be injected before the successor can choose what to read.
