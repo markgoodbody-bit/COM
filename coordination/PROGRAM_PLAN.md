@@ -1,5 +1,7 @@
 # BETTER FUTURE PROGRAM PLAN
 
+> **10 OCT / ACTIVE PRODUCT LANE #813 — CURRENT INTEGRATION EDGE:** Source main is YAC **47e6310b3587cb8f3a598e3d34c0c6246385c8cd**; production remains the earlier Fire2 Worker. Draft PR112 (as-of/native loopback), PR113 (honest UNKNOWN attribution/client CI), Relay PR282 (offline read-only witness), and request-receipt [PR115](https://github.com/markgoodbody-bit/yet-another-clearing/pull/115) are distinct unhosted candidates. PR115 exact head **19846ba2e4a7f183ddfa4ebce1b17860463163c5** replaces ambiguous `meta.changes == 1` control with SQL `RETURNING` evidence and passes exact-head Prototype/Offline workflows on Ubuntu/Windows; see [COM #813 6103080376](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6103080376). **Next strongest-owner seam is client/header compatibility plus an authentic D1-shaped/provider witness; do not open another framework lane or deploy by momentum.** PR112/113 integration was tool-safety blocked and must not be worked around. No new Build/CC/Codex microtask is assigned here. Live #792 Fire2 cutoff/closure and BIC blocker remain separate.
+
 Status: **WORKING OPERATING PLAN — NOT CANON / NOT RELEASE AUTHORITY**  
 Updated: 2026-09-13 — Europe/London  
 Later live source and direct human direction win.
