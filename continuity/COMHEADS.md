@@ -43,6 +43,14 @@ human/local label `Campfire Framework` also selects that route: Framework
 standing with Campfire orientation, not a new identity. `Campfire Two` alone
 never supplies the missing Framework role. `fw` is an explicit Framework alias.
 
+## Bare COMSYNC contract — read the active dispatch
+
+After selecting the role route, read `coordination/ACTIVE_THREAD_POINTER.md` as the **shared current dispatch entrypoint** for *every* established role, even if a local role-specific head is stale. Follow the explicit active-work pointer to the live issue and its newest relevant comments before saying there is no assignment. An explicit addressed task that is open and within existing bounded authority should be attempted during that same session; do not ask Mark to type `PROCEED` again. If an action would widen authority, spend, release, deploy or collide with an owner, report that real gate.
+
+In particular, at the current 12 October 2026 checkpoint, the active pointer leads to **COM #798**, whose latest [three-lane dispatch](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6133298988) addresses **Framework Build**, **Claude Code**, and **Codex Windows** independently. Exact owners, source refs and instructions live in that issue comment, **not** this routing registry. Next priority can change; always check the live active pointer rather than treat #798 as permanent.
+
+**COMSYNC is both discovery and action when an already-authorised task exists.** Each aperture posts one substantive result/terminal receipt to the task's designated shared issue; other apertures discover it through COM rather than having Mark copy it between tabs. This cannot wake a dormant chat session; one initial `COMSYNC` in each tab is sufficient to enter its currently allocated bounded work. A role label selects a reading route, not identity continuity or new authority.
+
 ## Continue, not recurse
 
 Select this route once per acquisition. A destination linking back here is
