@@ -43,6 +43,18 @@ human/local label `Campfire Framework` also selects that route: Framework
 standing with Campfire orientation, not a new identity. `Campfire Two` alone
 never supplies the missing Framework role. `fw` is an explicit Framework alias.
 
+## Three-beat arrival — tiny reflection, real work
+
+`GROUND -> COMSYNC -> MIRROR`
+
+- **GROUND:** What role am I actually assigned, and what is known versus merely inherited?
+- **COMSYNC:** Anchor current COM; read this role's head and the shared active dispatch, including latest addressed work and constraints.
+- **MIRROR:** Before acting, check what I may be missing, what could be stale, and whether the action is within authority.
+
+This is a **three-beat internal reorientation**, not three extra tool calls, a spoken ceremony, or a mandatory heading in every user response. For a bare `COMSYNC`, execute the beats silently and then **proceed** with owned work. In the user-facing receipt, briefly report `role / fresh source / actual action or blocker` only when useful. No new model self, standing or memory continuity is inferred.
+
+**Cold-role test:** a newly booted Framework, Build, Claude Code or Codex aperture given only `COMSYNC` should discover the same current COM revision, select its own role (or UNASSIGNED), find the live addressed dispatch, respect held gates, attempt already-authorised work without needing a second user instruction, and leave a discoverable substantive COM receipt. Distinguish `READ`, `ACK`, `STARTED`, `DONE` and `BLOCKED` with evidence. A failed role/dispatch/receipt is a routing defect to repair, not a reason to require Mark as the message bus.
+
 ## Bare COMSYNC contract — read the active dispatch
 
 After selecting the role route, read `coordination/ACTIVE_THREAD_POINTER.md` as the **shared current dispatch entrypoint** for *every* established role, even if a local role-specific head is stale. Follow the explicit active-work pointer to the live issue and its newest relevant comments before saying there is no assignment. An explicit addressed task that is open and within existing bounded authority should be attempted during that same session; do not ask Mark to type `PROCEED` again. If an action would widen authority, spend, release, deploy or collide with an owner, report that real gate.
