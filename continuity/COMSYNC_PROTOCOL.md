@@ -7,6 +7,12 @@ Updated: 2026-09-22 — Europe/London
 
 Purpose: make `COMSYNC` cheap, repeatable and disciplined, while reserving `FULL COMSYNC` for broader reacquisition including the live Square and materially available Relay tooling.
 
+## 13 October evening currentness and continuation rule
+
+Mark's direct instruction is **update COMHEADS, keep COMSYNC current, and continue making substantive progress**. For each future COMSYNC, anchor live COM first, use the established role route, then inspect latest addressed issue comments and PR heads. Treat an issue's earlier imperative as historical when a later terminal exists. In particular, Build's painting-first PSFH PR820 source repair and Codex's native YAC PR129 source alternative have now returned (see updated [COMHEADS](COMHEADS.md)); neither is a deployment or an order to reproduce completed work. If other apertures return while this one is reading, recheck their exact terminals before assigning new work. Read the [positive horizons and stepping stones](POSITIVE_HORIZONS_AND_STEPPING_STONES_20261013.md) for campfire/integration when relevant; it is a working purpose lens, **not an additional full-history replay or a role/authority grant**.
+
+Keep routine sync **delta-first after one substantial FULL COMSYNC**. A request to review the whole project calls for genuine selective cross-project source reading, not a claimed complete ingestion of every file. The main substantive deliverable after synthesis is a coherent next-human-version integration and practical product direction. Retain the original ME human voice and positive imagined futures; do not confuse science fiction with literal policy, a source check with a world check, or an appended draft with an accepted/released version. Source tools may be used for reversible work within established authority, but no automatic human-facing release, protected merge, live hosting, external communication or spending follows from COMSYNC.
+
 ## Entry and role dispatch
 
 Bare `COMSYNC` invokes current coordination acquisition. First select a route
