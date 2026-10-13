@@ -17,6 +17,10 @@ HEAD != WORLD
 
 Do not reconstruct historical detail into current state by memory.
 
+## Project-only memory handoff (not a live status projection)
+
+A dated [project-memory checkpoint](continuity/PROJECT_MEMORY_CHECKPOINT_20261013.md) exists to support a human-owned memory tab or a fresh aperture's voluntary orientation. It carries no private personal material, no new role, no continuity of AI subjective/runtime identity, no execution authority, and **is not COMS's latest mutable state**. For all current work and responsibilities use [COMHEADS](continuity/COMHEADS.md) and [ACTIVE_THREAD_POINTER](coordination/ACTIVE_THREAD_POINTER.md), then live addressed issues and actual PR heads. Never infer current hosted status from the checkpoint or any prior summary.
+
 ## COMS routing — any aperture
 
 `COMSYNC` is the team's invocation to reacquire current coordination, not a
