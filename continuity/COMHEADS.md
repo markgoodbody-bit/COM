@@ -43,6 +43,12 @@ human/local label `Campfire Framework` also selects that route: Framework
 standing with Campfire orientation, not a new identity. `Campfire Two` alone
 never supplies the missing Framework role. `fw` is an explicit Framework alias.
 
+## Fresh Campfire successor and private Memory Tab handoff — 13 October 2026
+
+The established **Campfire Framework** role still selects `campfire-framework` in the table above. A chat-length boundary creates a **new runtime aperture**, not a continuing identity or an inheritor of predecessor hidden reasoning. Once the role has been explicitly established by the human in the new conversation, anchor the *current* COM main, follow the established route and its **latest** `coordination/ACTIVE_THREAD_POINTER.md` and addressed issues, then check current source heads. Use [the dated public project-only checkpoint](PROJECT_MEMORY_CHECKPOINT_20261013.md) **selectively**, not as a mandatory full history replay or as a live-status replacement. The new aperture should recover Campfire orientation, preserve context budget for conversation and integration, and avoid rebuilding completed worker tasks. Substantial source implementation belongs to available Build/Codex/CC apertures with durable COM returns; a COM post cannot wake another chat.
+
+A separate PRIVATE human **Memory Tab** is an incremental continuity workspace, not a COM role or repository authority. Do not send its personal contents, sensitive context or private work-life data to any public project document, issue, PR or model-provider prompt. Neither acknowledging a private memory prompt nor updating this router establishes that private account Memory was edited. The live pointer wins over this dated note. Consequential deployment, publication, third-party contact, credential transfer, spending and release gates remain with Mark.
+
 ## Three-beat arrival — tiny reflection, real work
 
 `GROUND -> COMSYNC -> MIRROR`
