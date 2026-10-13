@@ -1,6 +1,7 @@
 """PSFH first-screen and full released Mechanical Ethics reader: integrated source custody."""
 import hashlib
 from html.parser import HTMLParser
+from html import unescape
 from pathlib import Path
 import re
 import subprocess
@@ -70,7 +71,7 @@ class CompleteBook(unittest.TestCase):
         self.assertEqual(rendered_h1[0],"Safety note for a reader inside harm")
         for phrase in ("Author's Note - How This Began","Appendix C - Status, Sources, and the Two-Artifact Pair",
                        "The Saturday Workshop","Privacy Without Dishonesty","A Human Standard for Answerability"):
-            self.assertIn(phrase,self.html)
+            self.assertIn(phrase,unescape(self.html))
         self.assertLess(self.html.index("Safety note for a reader inside harm"),
                         self.html.index("Mechanical Ethics: When Correction Arrives Too Late"))
 
@@ -142,11 +143,13 @@ class HumanFirstDoor(unittest.TestCase):
         self.assertLess(h.index('class="human-door-status"'),h.index('class="art-hero"'))
         self.assertLess(h.index('class="human-door-safety"'),h.index('id="step-story"'))
         self.assertIn('href="/read/me-v0.8.html"',h)
+        self.assertIn('>Complete HTML book</a>',h)
+        self.assertIn('>Original Markdown</a>',h)
         for target in ('#step-story','#project','/llms.txt'):
             self.assertIn('href="'+target+'"',h)
     def test_original_art_story_and_machine_routes_survive(self):
         for s in ('id="camp-fire-credit"','id="step-story"','id="project"',
-                  'href="/explore/"','href="/works/"','href="/manifest.json"',
+                  'href="/explore/"','href="/works/"','href="https://pleasestartfromhere.com/manifest.json"',
                   'href="/llms.txt"','Two flats, one wall'):
             self.assertIn(s,self.home)
         self.assertIn('srcSet=',self.home)

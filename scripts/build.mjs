@@ -118,10 +118,6 @@ await writeHumanMap(path.join(root, 'public'), path.join(root, 'out'));
 await mkdir(path.join(root, 'out/discussion'), { recursive: true });
 for (const [name, bytes] of discussionFiles) await writeFile(path.join(root, 'out/discussion', name), bytes);
 await writeViews(path.join(root, 'public'), path.join(root, 'out'));
-// New formatted view is derived only from the exact already-pinned released book.
-// The original Markdown/PDF, their inventory and all figures remain untouched.
-const python = process.env.PSFH_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
-execFileSync(python, ['scripts/render_me_full.py'], { cwd: root, stdio: 'inherit' });
 // Reviewed reader history is separately pinned; preserve its exact source bytes.
 for (const name of ['changes.md', 'changes.html']) {
   const bytes = await readFile(path.join(root, 'public', name));
@@ -148,6 +144,11 @@ await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));
 await applyHouseStyle(path.join(root, 'out'));
 // These dedicated pages retain their reviewed, medium-specific styles.
 await copyWorks(path.join(root, 'public'), path.join(root, 'out'));
+// The complete released book has its own print/reading skin. Generate it AFTER
+// applyHouseStyle, whose sharedStyle intentionally removes all inline <style>
+// from earlier generated HTML pages. Book source/PDF/figure bytes are untouched.
+const python = process.env.PSFH_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
+execFileSync(python, ['scripts/render_me_full.py'], { cwd: root, stdio: 'inherit' });
 console.log('Static build: preserved reading sources; optional homepage navigation script, no server runtime.');
 for (const relativePath of ['out/index.html', 'out/404.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
   const bytes = await readFile(path.join(root, relativePath));

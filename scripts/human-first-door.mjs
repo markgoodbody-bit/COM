@@ -35,6 +35,12 @@ export function humanFirstHomepage(html) {
   output = output.replaceAll(
     'href="/resources/mechanical-ethics/MECHANICAL_ETHICS.md"',
     'href="' + newRoute + '"');
+  // The old Markdown link now targets HTML; do not mislabel the new format.
+  // Retain a direct route to the byte-identical original Markdown beside it.
+  output = output.replace(
+    'href="/read/me-v0.8.html">Book: Markdown</a>',
+    'href="/read/me-v0.8.html">Complete HTML book</a> · <a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Original Markdown</a>'
+  );
   return output;
 }
 export const HUMAN_DOOR_CSS = [
