@@ -73,6 +73,24 @@ Additional models may act as temporary specialists, independent receivers, criti
 
 A new aperture may remain `UNASSIGNED` until a role is explicitly established. Participation does not itself grant mutation authority.
 
+## Rolling initiative after a terminal return (13 October 2026)
+
+A workstream ending is **not** a finding that the world has run out of useful tasks. When a bounded assignment is DONE, its owner should:
+1. report completion and the exact evidence;
+2. reopen the **current** purpose-first work queue, stronger owner and active role assignments;
+3. identify one consequential gap that can be reduced with existing Class A/reversible authority, and distinguish it from another owner's active task;
+4. either proceed independently on a well-scoped local/reversible continuation within its established remit, with a discoverable COM intent receipt, or request Framework coordination if it would create shared ownership conflicts;
+5. if the only next move crosses a human gate, prepare the smallest truthful gated decision and turn to another warranted reversible problem rather than manufacture source churn.
+
+Do **not** invent tasks to stay occupied. Do not turn an old DONE into current STARTED by assertion, and do not treat lack of a live runtime as work occurring. A genuine no-delta or source-safety stop is a successful bounded result for that particular lane, **not global project completion**. Framework should keep a small ready queue and route complete missions, not make Mark carry completion receipts or repeatedly restart workers.
+
+```text
+TASK_DONE != PURPOSE_DONE
+SOURCE_PASS != WORLD_USEFUL
+GATE_BLOCKED_ON_LANE != ALL_WORK_BLOCKED
+INITIATIVE != SELF_GRANTED_CONSEQUENTIAL_AUTHORITY
+```
+
 ## Mission-intent rule
 
 Give each aperture:
