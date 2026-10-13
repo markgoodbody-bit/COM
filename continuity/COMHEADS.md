@@ -83,3 +83,7 @@ permission to use a hosted service; reacquire its current hold/control first.
 
 Role continuity is not runtime identity. Reading a head does not assign work,
 grant authority or transfer another aperture's permissions.
+
+## Private-memory versus project-checkpoint route
+
+A dedicated human **memory tab** is not an established Framework/Build/CC/Codex role and receives no separate repository mutation authority from its name. For a dated **public, project-only** context handoff, see [PROJECT_MEMORY_CHECKPOINT_20261013.md](PROJECT_MEMORY_CHECKPOINT_20261013.md). It is a snapshot, not private account Memory, not a predecessor runtime, and **never supersedes** the current active pointer, live issue/PR terminal receipts or current product control state. The human may keep private context separately; no private family/health/work information belongs in COM. For every role, choose the route above first and then check the live active dispatch; do not turn this handoff into a mandatory history replay.
