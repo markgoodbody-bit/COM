@@ -12,13 +12,15 @@ book is changed in this proposal.
 
 ## Product change
 
-- **First screen:** adapt CC's plain human-purpose/status/three-route design as
-  generated semantic HTML *before* the painting. Keep the existing complete
-  museum image and credit, full Leah/Mia composite story, workshop routes,
-  discussion and source/machine surfaces. Give an actual-Shelter/GOV.UK pointer
-  before the fiction, without giving individual legal/clinical advice.
-  Reduce the image display size on phones without editing or deleting the
-  pinned original or its 720/1440 viewing derivatives.
+- **Painting-first entrance (13 October editorial correction):** preserve the
+  original painting as the first visual and keep the authored overlaid H1,
+  image frame, museum credit and original near-page-width viewing scale.
+  Insert a short purpose, story/book/AI routes and a one-line research status
+  immediately AFTER the whole art composition and BEFORE the unchanged story.
+  Keep more detailed release status and actionable UK housing/support links in
+  an accessible native disclosure reachable ahead of the composite story.
+  This supersedes the previous proposal to place a large text block ahead
+  of the image; it restores Mark's specific art-first preference.
 - **Complete human book:** generate \`/read/me-v0.8.html\` from the current
   already byte-pinned 100,253-byte release Markdown and existing four pinned
   PNG diagrams. Include safety note first, all 17 H1 + 38 H2 headings, Part
@@ -77,7 +79,7 @@ Readers should not submit sensitive or third-party information. Neither
 a link to Shelter nor to GOV.UK claims endorsement, permission or case-specific
 health/housing classification.
 
-Research/released labels are visible above the story. Published book does
+Research/released labels are visible after the painting, above the story. Published book does
 not mean proven efficacy; the reader can use domain owners instead and leave
 or disagree without consuming the machinery. The historical public YAC
 closed-write receipt is not a current availability assertion.
@@ -111,3 +113,19 @@ Author-facing decision:
 No provider, account, DNS, key, credential, third-party communication, release,
 main merge, protected-branch mutation, deployment or new licence is authorised
 by this source PR.
+
+
+## Revised art-first source acceptance, 13 October
+
+Source HTML checks explicitly enforce `art-hero` and retained H1/credit
+before the human-door introduction; the door precedes the unedited story.
+Native disclosure makes context/support available without promoting a long
+legal/status preamble over the artwork. The complete released v0.8 HTML
+reader, Markdown/PDF alternatives, four figures, links, source custody and
+machine discovery routes remain unchanged. Review screenshots at
+1280×800 and 390×844: first visible visual must remain the uncropped
+painting, with purposeful reading links underneath it. CSS source checks,
+Chromium PNG capture and a human visual judgment are three distinct levels;
+successful automated checks do not certify the last one. Real keyboard,
+screen-reader, human comprehension and print-inspection evidence remain
+unearned unless separately executed.

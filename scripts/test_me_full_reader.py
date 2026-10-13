@@ -135,18 +135,38 @@ class HumanFirstDoor(unittest.TestCase):
     def setUpClass(cls):
         cls.home=(ROOT/"out/index.html").read_text(encoding="utf-8")
         cls.css=(ROOT/"out/style.css").read_text(encoding="utf-8")
-    def test_ordinary_visitor_sees_purpose_status_choices_before_art(self):
+    def test_original_painting_first_and_orientation_before_story(self):
         h=self.home
         self.assertEqual(h.count('id="human-door-title"'),1)
-        self.assertLess(h.index('id="human-door-title"'),h.index('class="art-hero"'))
-        self.assertLess(h.index('class="human-door-routes"'),h.index('class="art-hero"'))
-        self.assertLess(h.index('class="human-door-status"'),h.index('class="art-hero"'))
-        self.assertLess(h.index('class="human-door-safety"'),h.index('id="step-story"'))
+        art=h.index('class="art-hero"')
+        title=h.index('Please Start From <em>Here</em>')
+        credit=h.index('id="camp-fire-credit"')
+        door=h.index('class="human-first-door"')
+        story=h.index('id="step-story"')
+        self.assertLess(art, credit)
+        self.assertLess(credit, door)
+        self.assertLess(title, door)
+        self.assertLess(door, story)
+        self.assertEqual(h.count('<h1>Please Start From <em>Here</em></h1>'),1)
         self.assertIn('href="/read/me-v0.8.html"',h)
         self.assertIn('>Complete HTML book</a>',h)
         self.assertIn('>Original Markdown</a>',h)
         for target in ('#step-story','#project','/llms.txt'):
             self.assertIn('href="'+target+'"',h)
+
+    def test_reachable_support_status_are_after_art_and_before_story(self):
+        h=self.home
+        art=h.index('class="art-hero"')
+        details=h.index('id="human-door-limits"')
+        story=h.index('id="step-story"')
+        self.assertLess(art,details)
+        self.assertLess(details,story)
+        self.assertIn('<summary>Limits, source status, and help with a housing problem now</summary>',h)
+        self.assertIn('Shelter: damp and mould',h)
+        self.assertIn('GOV.UK: guidance for English social landlords',h)
+        self.assertIn('not validated methods',h)
+        self.assertNotIn('General writes are currently open',h)
+
     def test_original_art_story_and_machine_routes_survive(self):
         for s in ('id="camp-fire-credit"','id="step-story"','id="project"',
                   'href="/explore/"','href="/works/"','href="https://pleasestartfromhere.com/manifest.json"',
@@ -165,7 +185,7 @@ class HumanFirstDoor(unittest.TestCase):
     def test_responsive_source_and_mobile_reading_route(self):
         self.assertIn('@media(max-width:690px)',self.css)
         self.assertIn('.human-door-routes{grid-template-columns:1fr',self.css)
-        self.assertIn('body:has(.human-first-door) .art-hero',self.css)
+        self.assertNotIn('body:has(.human-first-door) .art-hero{width:',self.css)
         self.assertIn('human-door-lead',self.home)
 
 if __name__ == "__main__":
