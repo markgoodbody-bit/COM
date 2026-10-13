@@ -42,4 +42,50 @@ jobs:
           python scripts/check-local-links.py
           node --check public/journey.js
           git diff --check
+      - name: Chromium localhost desktop/mobile smoke (no publication)
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          "$CHROME" --version
+          mkdir -p review-browser
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory out >/tmp/psfh-book-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            if curl -fsS http://127.0.0.1:8765/read/me-v0.8.html >/dev/null; then break; fi
+            sleep 1
+          done
+          for resolution in "1280,800" "390,844"; do
+            name="${resolution/,/x}"
+            for page in home book; do
+              route="/"
+              if [ "$page" = book ]; then route="/read/me-v0.8.html"; fi
+              timeout 30s "$CHROME" --headless=new --no-sandbox --disable-gpu \
+                --disable-background-networking --disable-component-update --disable-sync \
+                --no-first-run --no-default-browser-check --disable-extensions \
+                --no-proxy-server --disable-dev-shm-usage --hide-scrollbars \
+                --force-device-scale-factor=1 --virtual-time-budget=1200 \
+                "--window-size=$resolution" \
+                "--screenshot=review-browser/$page-$name.png" \
+                "http://127.0.0.1:8765$route"
+            done
+          done
+          python3 - <<'PY'
+          from pathlib import Path
+          from struct import unpack
+          for path in sorted(Path('review-browser').glob('*.png')):
+              blob=path.read_bytes()
+              assert blob.startswith(b'\x89PNG\r\n\x1a\n'), path
+              w,h=unpack('>II',blob[16:24])
+              assert w >= 380 and h >= 750 and len(blob)>4000, (path,w,h,len(blob))
+              print('CHROMIUM_RENDERED',path,w,h,len(blob))
+          assert len(list(Path('review-browser').glob('*.png')))==4
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: psfh-human-full-reader-chromium
+          path: review-browser/*.png
+          if-no-files-found: warn
+          retention-days: 14
 # NO GH-PAGES PUBLISH, NO LIVE REQUEST, NO EXTERNAL CONTACT.
