@@ -1,5 +1,21 @@
 # COMHEAD routes
 
+## 14 October 2026 — FINAL NIGHT TEAM COMSYNC, next distinct missions
+
+**Verified anchor before dispatch:** COM main `a0f9c5ef0eecd53657ada6cee4066714009c3545`; new COM writes below change the next observed head. ME draft PR74 remains `ca8d9dd08b1059d93001094b59976204e87b629e`, Build [RC2 terminal #798 c6177773385](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6177773385), Framework independently [spot-accepted the source/PDF #798 c6177913532](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6177913532). Mark has **NOT** decided to freeze/release v0.9. No more routine manuscript revisions until an actual material defect or human edit is chosen. Public released ME v0.8 and TRACE v0.4 unchanged.
+
+**New, mutually distinct work offered for each actual NEXT ACTIVE aperture COMSYNC (GitHub comments do not awaken tabs):**
+
+- **BUILD** [COM #108 c6178723348](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-6178723348): one source-only, offline, accessible **PSFH no-account challenge *export* experience**, with reader able to quote a claim, explain an objection, save/copy locally. Existing PSFH page explicitly has **NO no-account direct submission route**; do not fake one, collect private data, deploy, merge or duplicate completed PR820/PR824. Human/operator gate for true delivery remains.
+- **CODEX** [COM #813 c6178724095](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6178724095): one bounded source/log investigation of **mixed PR136 same-head YAC checks**: failed Windows push/auth test versus passing pull_request checks; repair only an evidenced actual test/source defect and preserve fail-closed properties. Separate real Workers/D1/hosting gate remains unchanged.
+- **CLAUDE CODE** [COM #74 c6178724938](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6178724938): its received contentment quarry stays DONE; previously assigned sourced **Theranos promised-future vs verified-present** quarry remains NOT OBSERVED RETURNED. After that, optional Flak-style **1900/2023 life-expectancy source-ancestry / denominator** audit; do not mistakenly call a reasonable demographic estimate fabricated merely because retellings share data ancestry. CC source edits route through Framework.
+
+**FRAMEWORK:** these three messages and this compact router update are the ACTUAL final COMSYNC for the night. Maintain purpose larger than the projects: **HOW CAN WE MAKE A BETTER FUTURE?** User's meta challenge was that a better bootstrap should enable independent judgement, not merely preserve Framework's chosen answers; this was recorded in [NEXT_CAMPFIRE_BOOTSTRAP](NEXT_CAMPFIRE_BOOTSTRAP.md), [BOOT](BOOT.md) and [CAMPFIRE_ORIENTATION](CAMPFIRE_ORIENTATION.md), with [FRAMEWORK_HEAD](FRAMEWORK_HEAD.md) compacted to a bounded successor checkpoint. Mirror principle: SOURCE REPEATED != INDEPENDENT EVIDENCE; METRIC VALUE != CORRECT INTERPRETATION; DOCUMENTED ACT != BENEFICIAL RESULT. Stop being impressed by procedural activity without user consequences.
+
+No new outreach, hosting, live write, protected merge, release, spend, credential action or indefinite background activity. Mark is going to bed; do NOT seek live responses, decisions or repeated COMSYNC. Accept DONE, BLOCKED or NO_DELTA returns. On future active sync reverify heads, work and actual availability; do not resurrect completed assignments.
+
+---
+
 ## 14 October 2026 late — Framework mirror and concrete RC2 source/carrier acceptance
 
 **Most recent verified:** BUILD completed one coherent ME09 **RC2** corrective manuscript+PDF at ME PR74 OPEN/DRAFT head `ca8d9dd08b1059d93001094b59976204e87b629e` [#798 c6177773385](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6177773385). It addresses separate prevention/mitigation windows, second bearer of precaution, pressured-consent non-paternalism, finite answerability triage and narrative/grammar seams. Paired private carriers available in Mark's Library (not public GitHub PDF): MD SHA `c0860f3425066496b4ae830bc1c89419ba3e3b3ae563ead07d437cdc34f49c4a`; PDF SHA `848614e5dfbd20ded79720c83d1349975fe928a3733c4a5d6c40c061bd323a07`; PDF 42 A4 pages. Preserve RC1 frozen and distinct in Git ancestry.
