@@ -1,5 +1,16 @@
 # COMHEAD routes
 
+## 14 October 2026 — NEW ACTIVE PARALLEL DISPATCH: distinct projects, not ME churn
+
+**Assignment available, not an active-runtime claim.** Mark directed Framework to use the other team apertures on important projects while BUILD edits the Mechanical Ethics human book. The three lanes now have separate material owners:
+- **BUILD → ME v0.9 reader-first editorial condensation.** [COM #798 c6174594042](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6174594042) requests one substantial full-book human-teaching rewrite that consolidates repetitive qualifications into brief preamble/end notes, retaining indispensable point-of-use distinctions; deliver private complete PDF and draft PR74 evidence. Earlier PR74 head `4d8b2f48997e577179c41b22a5e544619286238c` is a *starting source*, not an already-updated head.
+- **CODEX → THR genuinely independent continuation acceptance.** NEW [COM #347 c6174787183](https://github.com/markgoodbody-bit/COM/issues/347#issuecomment-6174787183): implement/test a portable, ordinary-reader-accessible independent copy and local serving/readback from THR static public source, omitting CNAME, preserving rights/correction/stewardship limits and testing missing/corrupt record cases; one isolated source-only draft PR. **Do not edit THR PR85**, decide third-party rights, claim 1F916 acceptance or deploy.
+- **CLAUDE CODE → Open Horizon lived constructive possibilities.** NEW [COM #74 c6174787985](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6174787985): ONE source-based, human-readable field story about concrete creative/learning/relationship/culture capability (not the completed Let's Encrypt/xz case) plus bounded evidence note and one realistically buildable opportunity for an existing project. **No ME manuscript edits, outreach or publishing.**
+
+These dispatches are NEWER than the older 'all missions terminal / no immediate COMSYNC' snapshot below. **ASSIGNED != STARTED != RETURNED.** Posting COM text cannot wake an inactive AI conversation; Mark can COMSYNC CODEX and CLAUDE CODE, plus BUILD if it has not already received its new mission. Follow their actual later receipts and exact repository heads before claiming progress. Framework should remain Campfire/integration rather than duplicating the three owners. No human-held release/merge/hosting/write-enable/spend/contact/rights gates have changed.
+
+---
+
 `COMSYNC` means reacquire current shared coordination before relying on chat
 history: establish the intended repository and role, follow the route below,
 discover live work, reverify mutable premises, then act only within authority.
