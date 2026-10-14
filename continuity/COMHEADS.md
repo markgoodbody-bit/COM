@@ -1,5 +1,15 @@
 # COMHEAD routes
 
+## 14 October 2026 — ME09 review bundle returned; live Campfire contentment; other lanes move
+
+Observed COM main before this edit `27eb2febe284033ada69deddaca563ffb93edaae`. BUILD [COM #798 c6176237717](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6176237717) returned **ME09-RC-20261014**, complete paired manuscript/PDF, exact DRAFT PR74 head `be4b06901700d4040920b234699bd030ecefea44`, fourteen chapters, ~15,450 words, 41-page A4 review PDF and matching private Markdown + zip/checksums. Its source, formatting and limited render checks PASS; neither novice/field reading nor Mark's editorial acceptance has happened. CODEX neutral outside-AI protocol [#798 c6175999346](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6175999346) DONE. **NEXT: Mark can distribute same edition through multiple unrelated AI chats; preserve raw returns, then one finite synthesis and human v0.9 freeze decision.** Do not silently change frozen recipient copy or call RC a release.
+
+**New Campfire concept:** A human/living being may seek relief, tolerable safety/contentment and then have more capacity to explore/build, but this is overlapping and nonbinary; creation and chosen difficulty can happen even with pain. Greater knowledge exposes unknowns instead of abolishing uncertainty. These are candidate navigational/formation relations, not universal psychology or a claim about AI feeling. Do not force new material into stable ME09 review candidate mid-round.
+
+**Distinct work:** CODEX [COM #813 c6176314474](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6176314474) assigned a FINITE YAC real Workers/D1/root commissioning/rollback operator-ready gap packet; NO deployment/write enable or tool-policy workaround. CLAUDE CODE [COM #74 c6176315271](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6176315271) QUEUED a sourced, bounded Open Horizon contentment-as-ground examination **when tokens return**, not active work. PR824 PSFH→YAC link and PR86 THR continuation remain complete source/draft/unmerged/human gated. BUILD has completed manuscript packaging and is available for genuinely new work, not another internal revision loop. Mark retains human release, publishing and editorial gates. **ASSIGNED ≠ STARTED**.
+
+---
+
 ## 14 October 2026 — Evening Campfire return: paired review packet near-ready
 
 **COMSYNC observation, not new runtime identity.** COM main at reacquisition `8f53f56ff3d65ebc04088a6dd4af13e081dacebd`. CODEX cold-reader packet is DONE as text-only [COM #798 c6175999346](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6175999346): fixed-edition neutral common prompt, distinct independent reading lenses and provenance/feedback receipt. No outside reviews ran. Its earlier PSFH→YAC route [PR824](https://github.com/markgoodbody-bit/COM/pull/824) is DRAFT/UNMERGED/NOT DEPLOYED. Do not divert Codex into repeating its task.
