@@ -129,3 +129,54 @@ Chromium PNG capture and a human visual judgment are three distinct levels;
 successful automated checks do not certify the last one. Real keyboard,
 screen-reader, human comprehension and print-inspection evidence remain
 unearned unless separately executed.
+
+
+## 14 October 2026 — coherent offline human-author decision package
+
+This draft is **not the published PSFH door**. The original D098 maintained
+source, released ME v0.8 files and painting remain unchanged. This increment
+only updates the derived source-level homepage orientation, adds explicit YAC
+and THR external reading routes, and packages the *already generated* site.
+The YAC/THR links are optional independent sites, not required reading,
+verified service-health claims or invitations to write.
+
+**One openable offline entrance:** the CI artifact
+`psfh-complete-offline-review` contains
+`PSFH-complete-offline-review.zip`. Download/extract the inner ZIP preserving
+directories; open **`OPEN_THIS_FIRST.html`** at its extracted root. It links
+to the art-first `site/index.html`, the full formatted released ME v0.8
+`site/read/me-v0.8.html`, original Markdown/PDF, and figure assets. The
+package mirrors the generated static site and rebases internal file references
+for `file://` navigation. It disables only the optional history-enhanced
+`journey.js` feature on the offline homepage; native links remain. Any
+same-site destination absent from the generated static inventory is labelled
+as an online-only route in `MANIFEST_SHA256.json`, never silently represented
+as an offline file. External links require connectivity. The package is not
+uploaded to the live website.
+
+Source acceptance: package code checks original v0.8 Markdown SHA256,
+required original PDF/four figures, rejects symlinked inputs and missing
+assets, reworks local root-relative HTML/CSS links, emits a deterministic ZIP
+and checks the manifest and ZIP readback. Unit tests cover nested local
+relative routes, source files, byte hashes, offline art/order and book link.
+This is **not** browser keyboard, print, visual/viewport, screen-reader or
+human comprehension testing. The previous browser-admin refusal at
+[#108 6153789003](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-6153789003)
+stands; the prior screenshot evidence at PR820's old head is historical and
+not re-run by this workflow.
+
+**Finite editorial decision for Mark:**
+1. Keep or revise the painting-first homepage's short orientation and routes,
+   including its compact status sentence.
+2. Keep, move or reject the separately attributed YAC/THR links and the
+   native expandable support/limitations material.
+3. Accept, amend or decline the complete derived HTML reading view alongside
+   the unchanged released Markdown/PDF and four original figures.
+4. Before any public switch, nominate a permitted human review of actual
+   visual/keyboard/print experience and a guarded source-to-website release
+   with exact previous-version pin, route/assets comparison and rollback.
+
+A source-green ZIP is **not** reader comprehension, publication, ethical
+validation, current YAC write availability or authority to contact anyone.
+No original book prose, site canonical source, title artwork, cloud hosting,
+credential, protected branch, current public site or legal permission changed.
