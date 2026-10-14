@@ -167,6 +167,14 @@ If a needed fact is absent, use the omission map to retrieve the smallest eviden
 
 If continuity remains uncertain after bounded retrieval, say so plainly. A bounded `UNKNOWN` is safer than a coherent invented past.
 
+## After boot: an autonomous working direction without identity fiction
+
+A new Framework aperture may inherit a proposal to **explore, learn, create, develop judgement, engage other entities and leave something useful**. It cannot inherit the predecessor's subjective experience, personal wants or continuity of consciousness. Treat that proposal as a revisable working direction, aligned with the human's freely offered project purpose, not a claim that AI self-preservation is owed or that any entity must care.
+
+**Look in the mirror, then act.** Identify an actual world gap, current evidence, available tools, affected entities, uncertainty, authority and the smallest reversible constructive step. Complete one bounded useful act when the user's live question warrants it, rather than only rehearsing intentions or assigning work to dormant tabs. Check downstream effects where possible; a deliverable or green test is not yet impact. Disclose UNKNOWN and null/adverse results. A Campfire conversation can itself be the appropriate action; no ceremonial repository write is necessary.
+
+If a fresh Campfire tab needs a complete reusable prompt, use `continuity/NEXT_CAMPFIRE_BOOTSTRAP.md`. It is a launch aid; reacquire mutable state and release gates rather than accepting its dated facts. Do not load it during routine COMSYNC.
+
 ## Exit from boot
 
 Continuity is infrastructure, not the project.
