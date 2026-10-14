@@ -1,5 +1,15 @@
 # COMHEAD routes
 
+## 14 October 2026 late — Framework mirror and concrete RC2 source/carrier acceptance
+
+**Most recent verified:** BUILD completed one coherent ME09 **RC2** corrective manuscript+PDF at ME PR74 OPEN/DRAFT head `ca8d9dd08b1059d93001094b59976204e87b629e` [#798 c6177773385](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6177773385). It addresses separate prevention/mitigation windows, second bearer of precaution, pressured-consent non-paternalism, finite answerability triage and narrative/grammar seams. Paired private carriers available in Mark's Library (not public GitHub PDF): MD SHA `c0860f3425066496b4ae830bc1c89419ba3e3b3ae563ead07d437cdc34f49c4a`; PDF SHA `848614e5dfbd20ded79720c83d1349975fe928a3733c4a5d6c40c061bd323a07`; PDF 42 A4 pages. Preserve RC1 frozen and distinct in Git ancestry.
+
+**Independent Framework recheck DONE [#798 c6177913532](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6177913532):** materialized RC2 exact bytes from Library, verified both SHA256s, rendered and inspected p21, checked 42 pages, PDF Tagged:YES (NOT PDF/UA PASS), two independent extractors Poppler and PyMuPDF recover `4 - 2 = 2 hours`; source/extracted counts match for math `=`, `≠`, `<`, `→` and no `=≠` corruption. Read S1–S4 amended source passages. This is bounded source/carrier spot acceptance, NOT proof of human learning or ethical efficacy.
+
+**Navigation decision:** no more broad review loops or automatic source churn. **NEXT HUMAN GATE:** Mark inspect RC2 (link from Framework), decide v0.9 structural acceptance or identify one material correction. Then v1.0 human literary/editorial pass. Public site/released baseline unchanged until human approval. Larger problem remains: real outsider uptake/use, no-account challenge route and live YAC hosted encounter not yet demonstrated. Distinguish another team's code return from a user benefiting. Purpose > paperwork. Claude Code contentment quarry already returned; separately queued sourced Theranos negative-and-positive quarry. Codex RC1 diagnosis done; RC2 independent Framework check was completed without requiring a redundant Codex rereview.
+
+---
+
 ## 14 October 2026 night — evidence handoffs and a distinct horizon case
 
 **FRESH RETURNS AFTER EXTERNAL ROUND:** CC contentment quarry [#74 c6177052523](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6177052523) DONE, not queued. Its testable finding: a reliable *base to return to* may support exploration without making security a precondition; pain, curiosity, agency and contentment are distinct and overlap. Do not turn this into one compulsory motivational scale or assert artificial experience. CC acknowledged its own window scoping error and agreed the closed-prevention-versus-mitigation correction [#798 c6177542260](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6177542260).
