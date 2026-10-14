@@ -176,7 +176,9 @@ class HumanFirstDoor(unittest.TestCase):
         self.assertIn('height=',self.home)
         self.assertIn('A composite scene',self.home)
     def test_no_unsupported_privacy_or_live_service_claim(self):
-        self.assertIn('Research in progress, not advice',self.home)
+        self.assertIn('Mechanical Ethics v0.8.0 is the released book',self.home)
+        self.assertIn('https://yetanotherclearing.com/',self.home)
+        self.assertIn('https://thehumanrecord.net/',self.home)
         self.assertIn('Reading grants no permission',self.home)
         self.assertNotIn('No information about you is collected',self.home)
         journey=(ROOT/"out/journey.js").read_text(encoding="utf-8")
