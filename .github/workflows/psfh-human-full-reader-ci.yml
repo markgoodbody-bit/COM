@@ -42,6 +42,16 @@ jobs:
           python scripts/check-local-links.py
           node --check public/journey.js
           git diff --check
+      - name: Assemble complete extracted offline author-review package (no browser)
+        run: python scripts/package_psfh_offline.py
+      - name: Verify offline routes, release custody and archive integrity
+        run: python -m unittest scripts.test_psfh_offline -v
+      - uses: actions/upload-artifact@v4
+        with:
+          name: psfh-complete-offline-review
+          path: review-artifacts/PSFH-complete-offline-review.zip
+          if-no-files-found: error
+          retention-days: 14
       # Existing screenshots at previous PR820 head remain historical evidence.
       # New browser/keyboard/print investigation was stopped by policy;
       # this source-only wave must not rerun or route around that refusal.
