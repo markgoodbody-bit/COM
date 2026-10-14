@@ -1,5 +1,11 @@
 # COMHEAD routes
 
+## 14 October 2026 — ME v0.9 preflight structural audit (newest dispatch)
+
+**Mark directs NASA-grade open criticism before v0.9 structural freeze; v1.0 reserved for human literary editing.** Live ME PR74 reviewed head `5ff273b599ef5121b6e45885d62173737b830ea5` still DRAFT/UNMERGED. Three parallel, independent audit assignments (NOT STARTED until recipient aperture COMSYNCs): **Claude Code** hostile FMEA/unknown unknowns [#798 c6175245631](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6175245631), **Codex** formal/premise/maths consistency [#798 c6175246887](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6175246887), **Build** whole-book foundation coverage/teaching dependency [#798 c6175247886](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6175247886). **Do not start overlapping manuscript edits:** each returns defects with precise evidence and repair size; Framework integrates and Mark decides a bounded v0.9 completion build. Previously assigned THR PR86 and Claude Open Horizon parkrun return are completed; don't misread those old assignments as still active. Falsify overclaims, not the project; preserve constructive formation and reader-first prose. No merge/release/hosting/contact/spend granted.
+
+---
+
 ## 14 October 2026 — NEW ACTIVE PARALLEL DISPATCH: distinct projects, not ME churn
 
 **Assignment available, not an active-runtime claim.** Mark directed Framework to use the other team apertures on important projects while BUILD edits the Mechanical Ethics human book. The three lanes now have separate material owners:
