@@ -72,6 +72,7 @@ export const HUMAN_DOOR_CSS = [
   '.human-door-routes a{border:1px solid var(--border);padding:.7rem .85rem;display:grid;gap:.2rem;color:var(--foreground);text-decoration:none;min-height:3.6rem}',
   '.human-door-routes a:hover,.human-door-routes a:focus-visible{text-decoration:underline}',
   '.human-door-routes span{font-size:.82rem;color:var(--muted)}',
+  '.human-door-neighbours{font-size:.9rem;line-height:1.45;max-width:76ch;margin:.2rem 0 .6rem}',
   '.human-door-status{font-size:.9rem;line-height:1.5;max-width:76ch}',
   '.human-door-details{font-size:.9rem;line-height:1.55;max-width:76ch;margin:.7rem 0 0}',
   '.human-door-details summary{cursor:pointer;min-height:2.75rem;padding:.45rem 0;color:var(--foreground)}',
