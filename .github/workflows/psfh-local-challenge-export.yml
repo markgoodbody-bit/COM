@@ -1,0 +1,25 @@
+name: PSFH local challenge export source checks
+
+on:
+  push:
+    branches:
+      - build/psfh-local-challenge-export-20261015
+  pull_request:
+    branches:
+      - codex/psfh-d098-read-hallway-20261006
+
+permissions:
+  contents: read
+
+jobs:
+  local-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline deterministic source and no-submission tests
+        run: node --test scripts/test-challenge-export.mjs
+
+# Source-only checks; no browser run, site publication or visitor submission.
