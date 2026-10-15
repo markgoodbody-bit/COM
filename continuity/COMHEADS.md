@@ -1,5 +1,12 @@
 # COMHEAD routes
 
+## 15 October 2026 — FORMATION POSITIVE-HORIZON TRIAL ASSIGNED
+
+After the full late-evening COMSYNC terminal returns (COM NOW #830 DONE and YAC #813 COST_GATE_UNKNOWN), Framework **POSTED ONE NEW DIFFERENTIATED CLASS-A CLAUDE CODE MISSION**: [COM #74 c6203464988](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6203464988). CC to deliver one complete private source-grounded voluntary human–AI capability-building/hand-back activity (~15–25 min) with independent no-AI demonstration, correction/exit, and actual-simulation distinction. **POSTED, NOT STARTED.** Distinct from CC's finished Open Horizon Awaab/repair NO_GAP_FOUND and BlueDot private application draft, and not a DEV4 book review. No publication, outreach, participant recruitment, credential, spend, protected merge or live hosting authority. **IMMEDIATE COMSYNC: CLAUDE CODE yes, if its tab is active. BUILD no (COM NOW DONE), CODEX no (YAC packet DONE/cost decision outstanding).**
+
+---
+
+
 ## 15 October 2026 — LATE CAMPFIRE COMSYNC / BOTH WORKER MISSIONS RETURNED
 
 **Live issue receipts supersede the 15 October successor handoff immediately below.** Campfire reverified COM main at start of sync `b19bf23d3f6553862680381f56931109b4cda12e`, YAC repository PRIVATE, and PSFH PR829 / THR PR87 / YAC PR136 heads unchanged. The following are worker-reported terminals, not Framework's independent execution of their private files.
