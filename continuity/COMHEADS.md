@@ -1,5 +1,17 @@
 # COMHEAD routes
 
+## 15 October 2026 — v1.0 EDITORIAL SKILL RESEARCH ROUTED IN PARALLEL WITH BUILD RC3A ACCEPTANCE
+
+**NEW DIRECT USER DIRECTION:** Mark invited CC and Codex to research what the team needs to know/do to make a good v1.0 book while Build completes independently assigned bounded RC3A acceptance [COM #798 c6190774185](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6190774185). This does **not** authorise book release, acceptance of v0.9, source rewriting or activation of dormant runtime tabs.
+
+- **CLAUDE CODE**, [#798 c6190858517](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6190858517): research HUMAN TEACHING/DEVELOPMENTAL EDITING competences (scaffold concepts without losing meaning-before-example; story, micro→macro bridges, narrative vs waypoints, adversarial misuse; serious evidence vs NotebookLM taste), small sample contrasts, mapped human/AI roles and practical unfamiliar-reader test. Read-only/source-backed finite return to COM through Framework. No shared source writes.
+- **CODEX WINDOWS**, [#798 c6190859423](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6190859423): research PUBLISHING/ACCESSIBILITY/TECHNICAL EDITORIAL craft (source master, DOCX/Markdown/PDF/EPUB, PDF/UA/WCAG actual limitations, semantic extraction, fonts, typography, stable notation, indexing, reproducible print/reader checks), concrete options and small scratch-only proof if warranted. No production code/source changes.
+- **BUILD:** existing single finite RC3A independent acceptance still owns actual manuscript/carrier proof, NOT transferred to CC/Codex. Distinct research should not block it.
+
+**State:** tasks POSTED / NOT OBSERVED STARTED. GitHub messages do not wake another AI session. One COMSYNC in each active CC/Codex tab is enough to acquire full mission; do not make Mark a courier across microsteps. Mark retains v0.9 structural freeze and v1.0 human editorial initiation. No release, protected merge, hosting, real-world recruitment, contact, provider spend or credentials.
+
+---
+
 ## 15 October 2026 — RC3A assessor-account repair sourced; human freeze gate still open
 
 **Actual newest integration:** [#798 c6190720434](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6190720434). Mark specifically asked to resolve Claude's assessor self-certification defect **before** v1.0 and supplied an RC3 NotebookLM critique/debate. Framework inspected distinct uploaded local RC3A paired artifacts, repaired one malformed nested-bold Markdown waypoint (the initially uploaded PDF visibly leaked literal asterisks), rebuilt and spot-checked a corrected QA pair, and **added the distinct corrected RC3A source** to existing **ME draft PR74** at exact head `a240cb39f4e3135dc4c66f09ae03679b3cfbb69a`. New tracked source path `research/kernel_first_human_20261014/THE_MOVING_GROUND_RC3A_20261015.md` Git blob `85f213b3d4d954ac0bc1093c6de16cd5441b4e97`, byte-identical to the QA Markdown. Previous RC3 source/history unchanged. No main merge, release, public PDF upload or human structural acceptance.
