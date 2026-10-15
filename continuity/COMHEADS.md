@@ -1,5 +1,11 @@
 # COMHEAD routes
 
+## 15 October 2026 — HUMAN DIAGRAM FEEDBACK: LESS INK, MORE SPACE
+
+Mark approved the overall A4 PDF design direction but found the p3 **Two Clocks** figure too busy and its type too bold. Framework inspected all three sample pages and independently observed clutter limited chiefly to the diagram: stacked pale-sage waypoint, heavy diagram title/labels, boxed UNKNOWN caveat, duplicate timelines/labels and overly long caption competing at 126 mm book width. **CODEX owns a single sparse SOURCE-EDITABLE v2 diagram candidate** [COM #828 c6194085474](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6194085474); preserve original PR76 figure, reduce text rather than shrinking, use thin rules/regular fonts/one common t0/two legible lines/concise caption, keep provenance, strict-before and coupled housing-loss logic. STATUS **POSTED / NOT OBSERVED STARTED**. No new A4 Build page proof requested until Mark judges lean diagram, to avoid duplicate PDF work. Build's separate short literary voice calibration [c6193474907](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6193474907) remains outstanding. Immediate COMSYNC Codex; Build if its voice task is still unread. Manuscript and earlier research sources/figures remain unchanged; human art/voice gates open.
+
+---
+
 ## 15 October 2026 mid-afternoon — CC HUMAN-VOICE REVIEW + BUILD THREE-PAGE A4 DESIGN PROOF DONE
 
 **NEW DELTAS ARE VERIFIED RETURNS, NOT ASSIGNMENT CLAIMS.** [COM #828](https://github.com/markgoodbody-bit/COM/issues/828):
