@@ -1,5 +1,17 @@
 # COMHEAD routes
 
+## 15 October 2026 — WHOLE PROJECT COMSYNC, THREE DISTINCT WORK WAVES RETURNED
+
+**Full-program plan:** [coordination/WHOLE_PROJECT_PLAN_20261015.md](https://github.com/markgoodbody-bit/COM/blob/main/coordination/WHOLE_PROJECT_PLAN_20261015.md). Keep purpose (better futures) larger than ME/TRACE instruments and site machinery.
+
+**FRESH RETURNS FOUND:** BUILD's coherent PSFH first-visit bundle is **DONE SOURCE / DRAFT** in [COM PR829](https://github.com/markgoodbody-bit/COM/pull/829) at `b5f1b438fd4467f5c97323631cd9f929115cf83c`, [#108 c6201611208](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-6201611208); CODEX's independently continueable THR combined credit/rights reader **DONE SOURCE / DRAFT** [THR PR87](https://github.com/markgoodbody-bit/human-record/pull/87) at `c18ad8d8cb87a7cde7bd29c8bc84f65f75363112`, [#347 c6201558616](https://github.com/markgoodbody-bit/COM/issues/347#issuecomment-6201558616); CLAUDE CODE owner-first field task **DONE / NO_GAP_FOUND**, avoided duplicating Shelter and repair-community methods, [#74 c6201734589](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6201734589). All three are terminal, **NO immediate worker COMSYNC**. The newest human decision keeps ME10 DEV4 private book **PAUSED** for genuine reading.
+
+**PROGRAMME PRIORITY:** Reconcile one entire visitor product at a time. PSFH and THR need human publication/rights/accessible-browser gates; do not mistake source CI for deployment. YAC source is advanced but real isolated runtime and read-only host commissioning remain blocked on an operator environment and later human release consent. Existing Fire2 guest writes CLOSED, no new test by inertia. Do not block independent PSFH/THR human decisions on ME literary completion. No protected merge, release, deployment, outside contact, spending or credential action granted.
+
+**STATE:** PURPOSE ACTIVE; ME10 BOOK PARKED; BUILD/CODEX/CC WORK DONE; NEXT HUMAN/OPERATOR GATES SPECIFIC, NO AUTO-ACTUATION.
+
+---
+
 ## 15 October 2026 — ME10 DEV4 HUMAN-PAUSED; NEW NON-ME TEAM ROUTES POSTED
 
 **Human direction:** Mark likes the book but needs time for substantive reading. Pin ME10 **DEV4** private, fourteen-chapter/48-page A4 UK-English illustrated reading candidate, and **STOP ME editing, further validations and release work until he returns with feedback**. [COM #828 human-pause receipt c6201335710](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6201335710); DEV4 private source SHA256 `df7b2e7045ff2df86acaf42a190b5fcc5dc0a127c49014f3172ac06458992386`, PDF SHA256 `43b850a9ddfcd4b38cec0471a84cac6a888c4df0544475b904abbcc35ee687e9`; NO new release, main merge, GitHub manuscript upload or public publication. DEV3 research branch and older structural sources remain unchanged.
