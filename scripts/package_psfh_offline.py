@@ -48,6 +48,8 @@ def list_source(site: Path) -> dict[str, bytes]:
         "index.html", "style.css", "read/me-v0.8.html",
         "resources/mechanical-ethics/MECHANICAL_ETHICS.md",
         "resources/mechanical-ethics/MECHANICAL_ETHICS.pdf",
+        "explore/yac/index.html", "explore/yac/thr/index.html",
+        "explore/challenge.html", "explore/challenge.md", "explore/challenge-local.html",
         *("resources/mechanical-ethics/figures/" + name for name in FIGURES),
     }
     absent = sorted(essential - found.keys())
@@ -151,6 +153,10 @@ This is an unpublished draft for Mark's editorial judgement, not a live site.</p
 <li><a href="site/read/me-v0.8.html">Open the complete formatted released book</a> (55 original sections, four figures)</li>
 <li><a href="site/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Open the original PDF</a>
 or <a href="site/resources/mechanical-ethics/MECHANICAL_ETHICS.md">original Markdown</a></li>
+<li><a href="site/explore/yac/index.html">Explore Yet Another Clearing</a> (local PSFH introduction; the public Clearing itself is online and current write admission is not promised)</li>
+<li><a href="site/explore/yac/thr/index.html">Inspect the Human Record window</a> (local read-only context, not a hosted record update)</li>
+<li><a href="site/explore/challenge-local.html">Prepare a local challenge packet</a> (copy or save, without an account; <strong>NOT SUBMITTED</strong> or received)</li>
+<li><a href="site/explore/challenge.html">Understand how replies reach the project</a> (the optional direct GitHub route requires an account)</li>
 </ol>
 <p>Extract the ZIP before opening this file; preserve the directory structure.
 These local pages and reading materials require no server or account.
@@ -183,13 +189,19 @@ def build(site: Path = SITE, output: Path = TARGET):
     copied["OPEN_THIS_FIRST.html"] = entry
     copied["OPEN_THIS_FIRST.txt"] = (
         "Extract the entire ZIP; open OPEN_THIS_FIRST.html. "
-        "The complete released ME v0.8 reading edition is site/read/me-v0.8.html. "
-        "This is a DRAFT, not a hosted release; optional external links need internet.\n"
+        "The released ME v0.8 book is site/read/me-v0.8.html. "
+        "The YAC introduction is site/explore/yac/index.html and the THR window is site/explore/yac/thr/index.html. "
+        "Prepare a local correction at site/explore/challenge-local.html; copying or saving is NOT SUBMITTED or received. "
+        "Direct project replies via GitHub remain optional and require an account. "
+        "This is a DRAFT, not a hosted release; external destinations need internet.\n"
     ).encode()
     manifest = {
         "status": "DRAFT_OFFLINE_PREVIEW_NOT_PUBLISHED",
         "released_me_version": "0.8.0",
         "released_markdown_sha256": RELEASE_SHA,
+        "local_challenge_status": "NOT_SUBMITTED_NOT_RECEIVED_NO_INTAKE",
+        "yac": {"local_introduction": "site/explore/yac/index.html", "public_url": "https://yetanotherclearing.com/", "write_state": "CHECK_LIVE_DO_NOT_ASSUME"},
+        "thr_local_window": "site/explore/yac/thr/index.html",
         "original_generated_site_files": len(source),
         "same_site_online_only_optional_links": sorted(deferred),
         "files": {name: digest(raw) for name, raw in sorted(copied.items())},
