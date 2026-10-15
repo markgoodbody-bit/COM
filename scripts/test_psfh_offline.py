@@ -58,11 +58,17 @@ class ExactCandidateBundle(unittest.TestCase):
             self.assertIn("OPEN_THIS_FIRST.html", contents)
             self.assertIn("site/index.html", contents)
             self.assertIn("site/read/me-v0.8.html", contents)
+            for door in ("site/explore/yac/index.html", "site/explore/yac/thr/index.html",
+                         "site/explore/challenge.html", "site/explore/challenge.md",
+                         "site/explore/challenge-local.html"):
+                self.assertIn(door, contents)
             self.assertIn("site/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf", contents)
             for figure in pack.FIGURES:
                 self.assertIn("site/resources/mechanical-ethics/figures/" + figure, contents)
             manifest = json.loads(bundle.read("MANIFEST_SHA256.json"))
             self.assertEqual(manifest["status"], "DRAFT_OFFLINE_PREVIEW_NOT_PUBLISHED")
+            self.assertEqual(manifest["local_challenge_status"], "NOT_SUBMITTED_NOT_RECEIVED_NO_INTAKE")
+            self.assertEqual(manifest["yac"]["write_state"], "CHECK_LIVE_DO_NOT_ASSUME")
             self.assertEqual(
                 hashlib.sha256(bundle.read("site/resources/mechanical-ethics/MECHANICAL_ETHICS.md")).hexdigest(),
                 pack.RELEASE_SHA)
@@ -76,7 +82,21 @@ class ExactCandidateBundle(unittest.TestCase):
             self.assertIn("Released", book)
             self.assertIn("../resources/mechanical-ethics/figures/", book)
             self.assertNotIn('src="/resources/mechanical-ethics/figures/', book)
-            self.assertIn('href="site/index.html"', bundle.read("OPEN_THIS_FIRST.html").decode("utf-8"))
+            entry = bundle.read("OPEN_THIS_FIRST.html").decode("utf-8")
+            self.assertIn('href="site/index.html"', entry)
+            for route in ("site/explore/yac/index.html", "site/explore/yac/thr/index.html",
+                          "site/explore/challenge.html", "site/explore/challenge-local.html"):
+                self.assertIn('href="' + route + '"', entry)
+            self.assertIn("NOT SUBMITTED", entry)
+            self.assertIn('href="explore/challenge-local.html"', home)
+            self.assertLess(home.index('class="art-hero"'), home.index('explore/challenge-local.html'))
+            local = bundle.read("site/explore/challenge-local.html").decode("utf-8")
+            self.assertIn("NOT SUBMITTED", local)
+            self.assertIn("connect-src 'none'; form-action 'none'", local)
+            self.assertIn("no account", local.lower())
+            yac = bundle.read("site/explore/yac/index.html").decode("utf-8")
+            self.assertIn('href="https://yetanotherclearing.com/"', yac)
+            self.assertIn("live status", yac)
 
 
 if __name__ == "__main__":
