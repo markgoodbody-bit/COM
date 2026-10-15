@@ -1,5 +1,21 @@
 # COMHEAD routes
 
+## 15 October 2026 — HUMAN ACCEPTANCE OF RC3A; v1.0 FULL BOOK EDITORIAL BUILD AUTHORISED
+
+**NEW LIVE WORK ROUTE: [COM #828](https://github.com/markgoodbody-bit/COM/issues/828)** — Mechanical Ethics v1.0, one full human-book developmental draft. Mark explicitly accepted RC3A and asked to proceed. [Routing receipt in #798 c6191326339](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6191326339). **RC3A ACCEPTED AS STRUCTURAL STARTING POINT, NOT AS PUBLIC v0.9 RELEASE OR VALIDATED ETHICS.** Old 'awaiting Mark's structural gate' banners below are superseded for draft editing. Final literary acceptance, public release, rights, protected merge and external outreach remain Mark's gates.
+
+**DRAFT ANCHOR:** mechanical-ethics draft PR74 at last-observed exact `a240cb39f4e3135dc4c66f09ae03679b3cfbb69a`; accepted separate RC3A source blob `85f213b3d4d954ac0bc1093c6de16cd5441b4e97`. Original RC1/RC2/RC3/RC3A remain preserved. Verify mutable refs before acting.
+
+**Missions on next actual aperture COMSYNC (POSTED, not evidence of a running AI):**
+- **BUILD — active owner of one complete literary v1.0 source draft**: read full #828 before working, use a separate draft branch and ONE editorial Markdown master, fourteen chapters, coherent beginning-to-end human prose, layered definitions + scenes + contrasts, preserve conceptual guards, relocate excessive qualifications, build substantially and perform a whole-book check, return complete private review carriers with exact source/edition hashes. Do not start v1.0 release or tiny chapter-by-chapter patch loops.
+- **CLAUDE CODE — independent developmental editor**: use existing craft research [#798 c6191044003](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6191044003); read/comment on the actual NEW v1.0 Build source WHEN it exists, not a pretend review of RC3A. Focus novice journey and preserved safeguards; no shared edits, one bounded terminal.
+- **CODEX — independent format/accessibility sample**: use existing publishing research [#798 c6190972473](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6190972473); produce reversible local semantic HTML/quiet-waypoint sample and critical extraction/reading-order checks, not a rival manuscript or public site. Source-ready ≠ PDF/UA/WCAG demonstrated.
+- **FRAMEWORK/CAMPFIRE — integration and philosophical leadership**: protect the architecture and human purpose, receive artifacts/criticism, avoid burning context on Build work.
+
+Mark asked us to avoid repeated COMSYNC courier duty: one active COMSYNC in each available aperture should be sufficient to acquire its full substantive mission; GitHub posts cannot wake dormant sessions. No model spend, external contact, deployment, release or protected merge granted. **Next human deliverable** is a readable full v1.0 candidate, not another approval checklist.
+
+---
+
 ## 15 October 2026 midday — RC3A BUILD ACCEPTED; v1.0 craft research DONE, awaiting Mark
 
 **LATEST terminal integration** [COM #798 c6191113779](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6191113779). At this sync COM main was `3335e54be09321a638f208ecfea48695523ae7d1`; ME PR74 remains OPEN/DRAFT at exact `a240cb39f4e3135dc4c66f09ae03679b3cfbb69a`. Subsequent returns below supersede the older ASSIGNED banners. All work is finite and all three apertures RETURNED; no background tasks active.
