@@ -1,5 +1,19 @@
 # COMHEAD routes
 
+## 15 October 2026 — ACTUAL YAC WINDOWS BLOCKED_ENV / GITHUB CONTAINER NEXT
+
+**FULL COMSYNC: CURRENT OBSERVATIONS, NOT INHERITED TASK STATUS.** COM main at read start `e08645f2bad385338510ee20aff2babd7163dbd6`. Codex **DONE / BLOCKED_ENV** [#813 c6202265222](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6202265222): its Windows aperture lacked a verified no-egress operator environment; pinned native workerd, HTTP and disposable D1 were **NOT RUN**. This is not a global impossibility or a source bug. It supersedes the earlier task's POSTED banner.
+
+**NEW DIFFERENT YAC ROUTE POSTED:** [#813 c6202643380](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6202643380) tasks Codex with ONE bounded **GitHub-hosted Ubuntu/Docker network-isolated native JS reader + synthetic local D1 acceptance**, using earlier PR127 isolated-container witness as a source donor without reopening that **failed Python/WASM path**. Current source YAC PR134/136 unchanged. PREPROVISION from exact pins with verified integrity, then independently check no-egress; do not execute paid Actions outside existing quota, expose credentials, touch real D1/routes, or enable writes. Status **POSTED; NOT OBSERVED STARTED**. No native actual runtime PASS yet.
+
+**CLAUDE CODE DONE:** [#348 c6202558568](https://github.com/markgoodbody-bit/COM/issues/348#issuecomment-6202558568) researched resources. BlueDot Rapid Grants is a *plausible* owner-checked option for a modest non-binding tool/hosting runway (~$800 suggested, NOT applied, awarded or received); Foresight less suitable. CC also identified PR127's actual GitHub Actions no-egress Docker precedent, which prompted the NEW Codex route. Money is not the YAC isolation solution. NO immediate CC COMSYNC.
+
+**FRAMEWORK BUILD:** [COM #830](https://github.com/markgoodbody-bit/COM/issues/830), **COM NOW** useful one-screen grounded offline/read-only human project-status product, remains **POSTED / NO BUILD START RECEIPT** as observed; Codex's newer YAC BLOCKED_ENV correction [#830 c6202402498](https://github.com/markgoodbody-bit/COM/issues/830#issuecomment-6202402498) must override the issue body's old YAC POSTED example. Build should not mirror historical claims as current statuses.
+
+**PRESERVE:** PSFH PR829 and THR PR87 DONE source but DRAFT/UNPUBLISHED; Mechanical Ethics DEV4 private reading edition **HUMAN-PAUSED**; released ME v0.8.0, TRACE v0.4.0 unchanged. No protected merge, publication, outside contact, paid provider or live YAC write approval. **IMMEDIATE COMSYNC: BUILD (COM NOW), CODEX (separate CI operator runtime); CC NO, Framework synced.** A posted GitHub issue does not activate an AI session.
+
+---
+
 ## 15 October 2026 — GO AHEAD RECEIVED / YAC ACTUAL NATIVE READER RUNTIME TASK POSTED
 
 **Human direction:** Mark said "**go ahead**" to Framework's whole-project plan. This is authority to carry out reversible preparation/local engineering and coordination; **not** blanket release, protected merge, live Cloudflare/D1 change, paid provider, rights determination, external contact, credential access or public write permission.
