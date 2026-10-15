@@ -1,5 +1,13 @@
 # COMHEAD routes
 
+## 15 October 2026 — HUMAN FEEDBACK: WRITING TOO STACCATO/FLOWERY, VISUAL TOO AUSTERE
+
+Mark has reviewed **both** the six-page literary calibration and sparse Two Clocks figure. New human evidence: the visual is **cleaner** but still needs beauty; prose is **somewhat better** but has too many short sentences and risks poetry/flowery cadence. Do NOT treat first calibration as approved house voice or PR77 figure as approved art. Previous work overshot from mechanical to affected/staccato, and from crowded to austere.
+
+One finite dual owner brief now [COM #828 c6194754841](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6194754841): **BUILD** creates ONE final modest passage calibration in coherent, sober, relaxed UK-English nonfiction with naturally connected sentences (not lists of aphorisms), using same exact DEV2 source but no full-book mutation; **CODEX** makes ONE more visually graceful yet low-density original Two Clocks alternative, preserve original PR76 and sparse PR77, no giant labels or clutter. Strict mechanics and UK English A4 preferences remain. **QUEUED; not observed running.** After Mark's actual judgement, one substantial whole-book edit/reader edition is preferable to endless 3-page design loops. Claude's separate voice diagnosis DONE. **Immediate COMSYNC: Build and Codex when active.** No release, protected merge, host/outreach/spend gate passed.
+
+---
+
 ## 15 October 2026 — VOICE CALIBRATION + SPARSE TWO-CLOCKS VISUAL BOTH RETURNED
 
 **LIVE COMSYNC integrated** [#828 c6194406873](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6194406873). **BUILD DONE** [c6194232066](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6194232066): six-page **UK English A4 literary voice calibration**, comparing exact DEV2 original against a proposed opening/Ch1, Ch6 and Ch11 voice. Independent retrieval from Mark's Library matches Build's reported hashes: Markdown `39ff5c352a69d619933c59071ba07364cdabfc923ebd80d61efc6bb923944ef3`; PDF `9d7c8446c1ce1bb2266cff4a676777b6c0115dbbf992e78b64a623f8e6aa51e6`, 6 A4 pages, untagged. Exact DEV2 preserved on open/draft ME PR75 `4fa7412141299a2c30b4765d01bee28106db3a4b`. The calibration is NOT approved prose or an actual new full manuscript. It addresses Mark's synthetic-paragraph/em-dash complaint with scene continuity/rhythm, not detector gaming. Next judge: **Mark reads aloud and marks wording he likes/dislikes**.
