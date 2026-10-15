@@ -1,5 +1,15 @@
 # COMHEAD routes
 
+## 15 October 2026 — CAMPFIRE TAB ROTATION / SUCCESSOR HANDOFF
+
+**This Campfire conversation reached its context limit.** A fresh Campfire Framework aperture should begin from the newly updated [`continuity/NEXT_CAMPFIRE_BOOTSTRAP.md`](https://github.com/markgoodbody-bit/COM/blob/main/continuity/NEXT_CAMPFIRE_BOOTSTRAP.md), plus the top current COMHEADS / FRAMEWORK_HEAD / ACTIVE_THREAD_POINTER and the live [COM #828](https://github.com/markgoodbody-bit/COM/issues/828). Do not assume the new runtime inherits predecessor reasoning or local execution. The handoff bootstrap has been refreshed to **15 October 2026**, superseding its misleading 14 October RC2 status, which was stale.
+
+**HUMAN DIRECTION ALREADY CAPTURED:** Mark's "**yes both seem better**" accepts *direction for further draft development*, not completed book/release. Full substantive **ME10-DEV3** Build and supporting Codex art harmonisation are ALREADY POSTED at [#828 c6195256238](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6195256238) with an exact DEV2 basis [ME PR75](https://github.com/markgoodbody-bit/mechanical-ethics/pull/75) `4fa7412141299a2c30b4765d01bee28106db3a4b` and provisional elegant v3 Two Clocks [ME PR78](https://github.com/markgoodbody-bit/mechanical-ethics/pull/78) `aa421cdfc30750951372d39579fc72c6487c9deb`. **Latest observed state at this rotation: TASKS POSTED, no actual START/DONE receipts found.** Their first actual COMSYNC can acquire work; do not duplicate the assignment. Claude Code need not COMSYNC. Preserve RC3A accepted structural source, all older versions and human rights/release gates.
+
+**Next meaningful check:** New Campfire performs cheap live COMSYNC for changed heads and #828 receipts, then integrates actual DEV3/book and visual progress without consuming its own context producing them. Human next reads a whole book rather than another round of micro style calibrations. **Immediate COMSYNC if tabs are available: BUILD and CODEX.**
+
+---
+
 ## 15 October 2026 — HUMAN LIKES VOICE CAL2 + TWO CLOCKS v3; SUBSTANTIAL v1.0 FULL-BOOK DRAFT AUTHORISED
 
 **NEW HUMAN DIRECTION:** Mark reviewed both and said **"yes both seem better"**. Treat as approval of *style direction for further draft development*, NOT final acceptance of novel prose/art, publication, merge, licence, ethics/reader validity or v1.0 release. Stop more 3-page/one-plate calibration cycles.
