@@ -1,5 +1,16 @@
 # COMHEAD routes
 
+## 15 October 2026 — BOTH FINAL BOUNDED CRAFT RETURNS COMPLETED; HUMAN CHOICE NEXT
+
+**Author feedback follow-up delivered, not merely assigned.** Current ME v1.0 14-chapter DEV2 remains source-frozen on [draft PR75](https://github.com/markgoodbody-bit/mechanical-ethics/pull/75), exact `4fa7412141299a2c30b4765d01bee28106db3a4b`. Mark asked for less staccato/flowery wording and a Two Clocks visual that was prettier than the very sparse v2 but not busy as v1. Human voice/art gates are still OPEN.
+
+- **BUILD literary calibration #2 DONE** [COM #828 c6194962877](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6194962877). New private edition `ME10-VOICE-CAL2-20261015`: **three-page, A4 portrait UK-English** proposal across opening/Ch1, Ch6 timing and Ch11 formation, with extended connected paragraphs and less artificial lyricism. PDF SHA256 `5a35eb6362574679e5e77458d10664a7cbf549e63cd80e2068967ad73dd9128d`, editable source/original comparison Markdown SHA256 `d96987b85a9fa018d0940496cce00be0846c18bf04f5ca9680a61e27177a155e`; Framework independently recovered from Mark's Library, matched both actual byte hashes and checked PDFInfo/p1 extraction (3 A4, Tagged:NO). Original DEV2 source and earlier calibration unchanged, no new DEV3 book or acceptance.
+- **CODEX illustration v3 DONE** [COM #828 c6194959375](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6194959375): new [DRAFT ME PR78](https://github.com/markgoodbody-bit/mechanical-ethics/pull/78) exact `aa421cdfc30750951372d39579fc72c6487c9deb` stacked on v2 PR77, old PR76/PR77 and book source untouched. [V2 / v3 side-by-side at same 126mm width](https://github.com/markgoodbody-bit/mechanical-ethics/blob/aa421cdfc30750951372d39579fc72c6487c9deb/research/visual_plates_20261015/two-clocks-v3/v2-v3-equal-width.png) **actually viewed by Framework**: v3 uses regular serif and italic row labels, subtle copper event dots, fine rules, a bit more breathing room; retains 10 label words, zero bold, correct one origin / effect-before-one-loss but after coupled housing loss. Working Georgia is not approved final publishing font. Diagram and caption remain illustrative/synthetic, not competence or ethics validation.
+
+**DISPOSITION:** Both missions are DONE / STOP. **NO immediate COMSYNC** for Build, CC or Codex. Need only Mark's actual judgement on voice CAL2 and v3 illustration. If acceptable, schedule one coherent full-book literary revision with selected artwork integrated into a genuinely accessible A4 proof, not another microcycle. RC3A remains accepted structural basis, DEV2 and art still unapproved literary/final work. No merge, release, hosting, public edition, outside contact, spending or credentials authorised.
+
+---
+
 ## 15 October 2026 — HUMAN FEEDBACK: WRITING TOO STACCATO/FLOWERY, VISUAL TOO AUSTERE
 
 Mark has reviewed **both** the six-page literary calibration and sparse Two Clocks figure. New human evidence: the visual is **cleaner** but still needs beauty; prose is **somewhat better** but has too many short sentences and risks poetry/flowery cadence. Do NOT treat first calibration as approved house voice or PR77 figure as approved art. Previous work overshot from mechanical to affected/staccato, and from crowded to austere.
