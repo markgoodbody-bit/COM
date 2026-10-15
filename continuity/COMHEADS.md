@@ -1,5 +1,18 @@
 # COMHEAD routes
 
+## 16 October 2026 (UK) — FIRST INDEPENDENT VISITOR RELEASE TRAIN POSTED
+
+**Mark: "make it happen". Framework has ACTED within reversible coordination authority, not published anything.** New single product issue [COM #831](https://github.com/markgoodbody-bit/COM/issues/831), created 15 Oct 23:16 UTC (= 16 Oct BST), unifies ONE public-read first-visitor milestone with two non-overlapping Class-A missions:
+- **BUILD: POSTED, NOT STARTED** — produce one publish-ready **source-integrated PSFH PR829/PR820 candidate** against the actual maintained site branch, reconciled ancestry, end-to-end reproducible site build and exact before/after release+rollback rehearsal, with a usable offline human reviewer pack. Original artwork/story/released ME v0.8 unchanged; do not repeat manuscript editing, redesign or existing ZIP receipts. No protected merge/public deploy/rights assent from task.
+- **CODEX: POSTED, NOT STARTED** — conduct ONE real present-day **GET/HEAD-only YAC native cold visitor journey**, distinguishing access denial, stale cache, canonical history and public availability. No guest write, provider credentials, Cloudflare config, costly private Actions run, Docker retry or another Python/WASM probe. Actual native Worker/local D1 remains NOT_RUN / COST_GATE_UNKNOWN [#813 c6203247107](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6203247107). External independent visitor uptake NOT PROVED.
+- **CLAUDE CODE: DONE / NO IMMEDIATE WORK.** Formation hand-back packet [#74 c6203684164](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6203684164) is desk-checked only. COM NOW #830 offline product DONE, human use untested; THR PR87 DRAFT/unpublished; BlueDot draft NOT submitted; ME10 DEV4 HUMAN-PAUSED.
+- **Human gates remain:** Mark separately decides exact PSFH site/rights/publication, THR rights/publication, YAC hosted read-only and any later writes or spend. The general "make it happen" is authority to coordinate and deliver reversible preparation, NOT blanket release approval.
+
+**IMMEDIATE COMSYNC IF TABS AVAILABLE: BUILD and CODEX once each to acquire #831; CLAUDE CODE no.** Posting cannot activate dormant sessions. Framework should follow only those two terminal returns and integrate into one release decision, not create another testing carousel.
+
+---
+
+
 ## 15 October 2026 — LATE CAMPFIRE COMSYNC / FORMATION RETURN + HUMAN DOOR REVIEW PACKET
 
 **Live observed worker returns supersede earlier POSTED/STARTED banners:** CLAUDE CODE completed the distinct Formation hand-back assignment [COM #74 c6203684164](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6203684164). One full private 20-minute activity, “The one-minute source check”, grounded in SIFT and gradual release, with explicit no-AI hand-back and an honest **NO_USE** countercase. **DESK-CHECKED ONLY / NO PERSON / NO OTHER AI TRIAL / NO EFFICACY CLAIM**. Status **DONE/STOP**, no immediate CC COMSYNC. Earlier resource/BlueDot application remains drafted, not submitted. ME10 DEV4 still HUMAN-PAUSED.
