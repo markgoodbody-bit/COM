@@ -1,5 +1,19 @@
 # COMHEAD routes
 
+## 15 October 2026 — v1.0 DEVELOPMENTAL MANUSCRIPT NOW PRESENT; CC INDEPENDENT REVIEW NEXT
+
+**Live source status:** Build returned complete **ME10-DEV1-20261015** (14 chapters, Notes + optional glossary, ~15,880 words) in ME draft [PR75](https://github.com/markgoodbody-bit/mechanical-ethics/pull/75), exact head `28900a695c5f5b9905de6dbc9d769a53f15d79f8`, stacked on accepted RC3A PR74 `a240cb39f4e3135dc4c66f09ae03679b3cfbb69a`. Full source `research/kernel_first_human_20261014/THE_MOVING_GROUND_V10_DEV1_20261015.md` Git blob `c6c4b56be6cf4338af766b6a9b04f9305d2ecf43`, Markdown SHA256 `6a3d4a73e07cb8904b643c6faf34e4a5e18488c220c07229fa566ba9adcee62d`. Build terminal [COM #828 c6191797062](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6191797062): full paired private 34-page PDF SHA256 `8fad95a021e2c4a13c39f4388ddf7e64e681649f75cd36b50fdfce98f7b4268f`, **Tagged:NO**. Subsequent short-opener revision Ch7/10/11 was BLOCKED by safety tooling and never entered the PR; don't confuse local alternative with accepted exact draft. The author has NOT accepted this new prose/released v1.0.
+
+**CODEX DONE** [COM #828 c6191516828](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6191516828): one isolated script-free HTML + visual 6-page PDF proof from FROZEN RC3A Ch6/Notes, exact-source parser/custody/link tests and selected visual checks; real browser, screen reader, PDF/UA/WCAG and genuine uptake still untested. No work further required on previous lane.
+
+**CLAUDE CODE — NOW ACTIONABLE** [COM #828 c6191868906](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6191868906): independently read the actual PR75 full DEV1 source, test Ch1/2, Ch6, Ch12 and real safeguard preservation, return up to three consequential teaching fractures without shared mutation. Task POSTED, not proof of active runtime; immediate COMSYNC for CC when its aperture is open.
+
+**VISUAL CONCEPTS ON RECORD, OPTIONAL NOT PRODUCED:** [COM #828 c6191879753](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6191879753) suggests Two Clocks, Who Draws the Map (assessor self-certification), Growing Room (positive formation), optional micro→meso→macro bridge. These are planning hypotheses, NOT user-authorised illustrations or a reason to block the book; prose and accessibility must work independently.
+
+**NEXT HUMAN GATE:** Mark reads actual full v1.0 DEV1 draft; after CC returns, Framework integrates only material critique into one bounded literary refinement opportunity if Mark wants it. RC3A remains frozen baseline; no release/protected merge/licensing/site/public outside outreach/provider spend/credentials. Avoid another generic AI validation vote or endless micro-iterations.
+
+---
+
 ## 15 October 2026 — HUMAN ACCEPTANCE OF RC3A; v1.0 FULL BOOK EDITORIAL BUILD AUTHORISED
 
 **NEW LIVE WORK ROUTE: [COM #828](https://github.com/markgoodbody-bit/COM/issues/828)** — Mechanical Ethics v1.0, one full human-book developmental draft. Mark explicitly accepted RC3A and asked to proceed. [Routing receipt in #798 c6191326339](https://github.com/markgoodbody-bit/COM/issues/798#issuecomment-6191326339). **RC3A ACCEPTED AS STRUCTURAL STARTING POINT, NOT AS PUBLIC v0.9 RELEASE OR VALIDATED ETHICS.** Old 'awaiting Mark's structural gate' banners below are superseded for draft editing. Final literary acceptance, public release, rights, protected merge and external outreach remain Mark's gates.
