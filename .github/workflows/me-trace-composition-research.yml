@@ -1,0 +1,26 @@
+name: Off-book ME TRACE composition declarations
+on:
+  push:
+    branches: [codex/me-trace-composition-20261014]
+  pull_request:
+    paths:
+      - 'research/me-trace-composition-20261014/**'
+      - '.github/workflows/me-trace-composition-research.yml'
+permissions:
+  contents: read
+jobs:
+  declaration-checks:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: node --version
+      - run: node research/me-trace-composition-20261014/check.mjs
+      - run: node --test research/me-trace-composition-20261014/test.mjs
+      - run: git diff --check
+# No package/runtime install, fetching source, service, provider or actuation.
