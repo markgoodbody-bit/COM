@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-1oEpdwseKmNXDrNv55R9IOEKb9B4w/9/1ur/ivT2dys='; style-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; img-src 'none'; object-src 'none'; worker-src 'none'; base-uri 'none'">
+  <title>Write a challenge locally · Please Start From Here</title>
+  <style media="all">
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172432;background:#faf9f6}
+*{box-sizing:border-box}
+body{margin:0;font-size:1rem;line-height:1.58}
+main{max-width:54rem;margin:0 auto;padding:1.5rem 1.15rem 4rem}
+h1{font-size:clamp(1.85rem,5vw,2.7rem);line-height:1.18;letter-spacing:-.025em}
+h2{font-size:1.35rem}p{max-width:70ch}
+a{color:#164f79;text-underline-offset:.16em}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #c6661a;outline-offset:3px}
+.eyebrow{color:#596574;font-size:.91rem;letter-spacing:.06em;text-transform:uppercase}
+.notice{border-left:4px solid #566e83;padding:.8rem 1rem;background:#eef1f4}
+fieldset{border:1px solid #bdc5cd;border-radius:.55rem;padding:1.2rem;margin:1.25rem 0;background:#fff}
+legend{font-weight:700;padding:0 .4rem}
+label{display:block;margin:.85rem 0 .25rem;font-weight:650}
+.hint{font-size:.88rem;color:#58636f;font-weight:400}
+input,textarea{display:block;width:100%;max-width:100%;font:inherit;line-height:1.45;border:1px solid #80909f;border-radius:.3rem;padding:.6rem .7rem;color:#142535;background:#fff;resize:vertical}
+input{min-height:2.8rem}
+.controls{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.3rem 0}
+button{font:inherit;border:1px solid #203e53;border-radius:.32rem;background:#1c4863;color:white;padding:.65rem 1.05rem;cursor:pointer;min-height:2.8rem}
+button:disabled{background:#d7dcdf;color:#5d686f;border-color:#adb5bc;cursor:not-allowed}
+button:not(:disabled):hover{background:#12364d}
+.preview-section{border-top:2px solid #aeb8c1;margin-top:1.8rem}
+#packet{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:18rem;white-space:pre-wrap;overflow-wrap:anywhere}
+#print-packet{display:none;white-space:pre-wrap;overflow-wrap:anywhere;font:10.5pt/1.5 ui-monospace,Consolas,monospace}
+.status{min-height:1.4rem}
+.routes{border-top:1px solid #bdc5cd;margin-top:2rem;padding-top:.6rem}
+@media(max-width:37rem){main{padding:1rem .8rem 3rem}fieldset{padding:.75rem}.controls{display:grid;grid-template-columns:1fr}button{width:100%}}
+@media print{body{background:#fff;color:#000;font:11pt/1.5 Georgia,serif}main{max-width:none;padding:0}header,.screen-only,form,#packet,.routes,.status{display:none!important}.preview-section{border:0;margin:0}#preview-heading{font-size:13pt}.preview-section>p{display:none}#print-packet{display:block!important}pre{break-inside:auto;white-space:pre-wrap;overflow-wrap:anywhere}}
+
+  </style>
+  <script>
+/* Local export only: no network calls, persistence, analytics or automatic submission. */
+(function () {
+  'use strict';
+  const keys = [
+    ['edition', 'Work or edition'],
+    ['claim', 'Claim or passage'],
+    ['concern', 'Concern, question or alternative'],
+    ['evidence', 'Evidence or supporting account'],
+    ['unknown', 'Unknowns or uncertainties'],
+    ['change', 'Requested correction or next question']
+  ];
+  function safeText(value) {
+    return String(value ?? '').replace(/\r\n?/g, '\n').trim() || '(not supplied)';
+  }
+  function makePacket(fields) {
+    const lines = [
+      'READER CHALLENGE / CORRECTION — LOCAL DRAFT',
+      'Status: NOT SUBMITTED. NOT RECEIVED. NO REVIEW PROMISED.',
+      'This packet was prepared on the reader’s own device. No identity is required.',
+      'The text is the reader’s account; cited claims and evidence are not verified by this page.',
+      ''
+    ];
+    for (const [key, title] of keys) {
+      lines.push(title.toUpperCase(), safeText(fields[key]), '');
+    }
+    lines.push('Reader choice: keep this draft, share it through a separate route, revise it, or stop.', 'Copying or downloading is not a submission, anonymous intake, secure report or proof of project receipt.');
+    return lines.join('\n') + '\n';
+  }
+  if (typeof document === 'undefined') return;
+  const form = document.getElementById('challenge-form');
+  const packet = document.getElementById('packet');
+  const printPacket = document.getElementById('print-packet');
+  const copy = document.getElementById('copy-button');
+  const save = document.getElementById('save-button');
+  const status = document.getElementById('status');
+  let previewCurrent = false;
+  function invalidate() {
+    if (!previewCurrent) return;
+    previewCurrent = false;
+    packet.value = '';
+    printPacket.textContent = '';
+    copy.disabled = true;
+    save.disabled = true;
+    status.textContent = 'The draft changed. Preview it again. Nothing was sent.';
+  }
+  form.addEventListener('input', invalidate);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const values = {};
+    for (const [key] of keys) values[key] = document.getElementById(key).value;
+    packet.value = makePacket(values);
+    printPacket.textContent = packet.value;
+    previewCurrent = true;
+    copy.disabled = false;
+    save.disabled = false;
+    status.textContent = 'Local preview prepared. Nothing was sent or stored by this page.';
+    packet.focus();
+  });
+  copy.addEventListener('click', async () => {
+    if (!previewCurrent) return;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard API unavailable');
+      await navigator.clipboard.writeText(packet.value);
+      status.textContent = 'Copied to your clipboard at your request. Not submitted.';
+    } catch (_) {
+      packet.focus();
+      packet.select();
+      status.textContent = 'Automatic copying is unavailable. The packet is selected; use your device’s Copy command. Nothing was sent.';
+    }
+  });
+  save.addEventListener('click', () => {
+    if (!previewCurrent) return;
+    const file = new Blob([packet.value], {type:'text/plain;charset=utf-8'});
+    const url = URL.createObjectURL(file);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'reader-challenge-local-draft.txt';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    status.textContent = 'Local download requested. This does not send or submit your criticism.';
+  });
+})();
+</script>
+</head>
+<body>
+  <main>
+    <nav class="screen-only" aria-label="Return"><a href="challenge.html">← Challenge and reply access</a></nav>
+    <header>
+      <p class="eyebrow">A local writing aid · No account needed</p>
+      <h1>Put your criticism into words</h1>
+      <p>A claim might be mistaken, omit a person, or miss a useful alternative. You can write a challenge in ordinary language and keep it for yourself or send it through a route you choose.</p>
+      <p class="notice"><strong>This page does not send or receive your words.</strong> It does not save your form in a site database, browser storage or analytics. The preview, copy and download happen in this browser only. Creating a packet is <strong>not</strong> submitting it, reaching the project, securing anonymity or obtaining a promise of review.</p>
+      <p class="screen-only"><strong>Privacy:</strong> avoid names, secrets, contact details, personal histories or other sensitive information. A file you save or text you paste elsewhere can be disclosed there; this local tool is not a confidential reporting service.</p>
+    </header>
+
+    <form id="challenge-form" novalidate autocomplete="off">
+      <fieldset>
+        <legend>1. What are you responding to?</legend>
+        <label for="edition">Work, edition or page <span class="hint">(optional)</span></label>
+        <input id="edition" name="edition" type="text" maxlength="260" placeholder="e.g. a chapter, paragraph, page or URL" autocomplete="off">
+        <label for="claim">Claim or passage <span class="hint">(use your own words or a brief quote)</span></label>
+        <textarea id="claim" name="claim" rows="3" maxlength="3500" placeholder="What is the claim you want someone to examine?"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>2. What concerns you?</legend>
+        <label for="concern">Your concern, question or alternative</label>
+        <textarea id="concern" name="concern" rows="5" maxlength="7000" placeholder="What seems inaccurate, incomplete, unfair or worth doing differently?"></textarea>
+        <label for="evidence">What supports your view? <span class="hint">(optional)</span></label>
+        <textarea id="evidence" name="evidence" rows="3" maxlength="5000" placeholder="Evidence, source, experience described without identifying details, or a labelled example"></textarea>
+        <label for="unknown">What remains unknown or uncertain? <span class="hint">(optional)</span></label>
+        <textarea id="unknown" name="unknown" rows="2" maxlength="3500" placeholder="What would need checking? It is fine to say you do not know."></textarea>
+        <label for="change">What would you like reconsidered? <span class="hint">(optional)</span></label>
+        <textarea id="change" name="change" rows="3" maxlength="3500" placeholder="A correction, a question to investigate, a different example, or no requested change"></textarea>
+      </fieldset>
+      <div class="controls screen-only">
+        <button id="preview-button" type="submit">Preview my packet</button>
+        <button id="copy-button" type="button" disabled>Copy text</button>
+        <button id="save-button" type="button" disabled>Save .txt file</button>
+      </div>
+    </form>
+
+    <section aria-labelledby="preview-heading" class="preview-section">
+      <h2 id="preview-heading">3. Your local preview</h2>
+      <p>This is a draft for you to inspect. Nothing is sent to us. You can correct the fields and preview again before copying or saving.</p>
+      <label class="screen-only" for="packet">Portable plain-text packet</label>
+      <textarea id="packet" readonly rows="18" spellcheck="false" placeholder="Your preview will appear here. You can also write the packet manually without this tool."></textarea>
+      <pre id="print-packet" aria-hidden="true"></pre>
+      <p id="status" role="status" aria-live="polite" class="status screen-only">Nothing has been created or sent.</p>
+    </section>
+
+    <aside class="routes screen-only" aria-label="What happens next">
+      <h2>What happens next is your choice</h2>
+      <p>You may keep the file privately, share it with someone you choose, or stop. This site does not provide a direct no-account reply route. The existing <a href="https://github.com/markgoodbody-bit/COM/issues/108" rel="noreferrer">GitHub discussion route</a> is optional, public and requires a GitHub account. A copied or downloaded packet does not prove that anyone received or reviewed it.</p>
+      <p>If you need urgent, confidential or legally protected assistance, use a competent service appropriate to the situation, not this export.</p>
+      <p><a href="challenge.html">Return to Challenge or leave</a></p>
+    </aside>
+    <noscript><p><strong>JavaScript is off:</strong> You can still write your criticism manually in any text editor. Include the passage, your concern, evidence or unknowns, and any correction you suggest. This page cannot copy, save or submit it for you.</p></noscript>
+  </main>
+</body>
+</html>
