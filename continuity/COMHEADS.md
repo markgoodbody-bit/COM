@@ -1,5 +1,19 @@
 # COMHEAD routes
 
+## 15 October 2026 — HUMAN LIKES VOICE CAL2 + TWO CLOCKS v3; SUBSTANTIAL v1.0 FULL-BOOK DRAFT AUTHORISED
+
+**NEW HUMAN DIRECTION:** Mark reviewed both and said **"yes both seem better"**. Treat as approval of *style direction for further draft development*, NOT final acceptance of novel prose/art, publication, merge, licence, ethics/reader validity or v1.0 release. Stop more 3-page/one-plate calibration cycles.
+
+**ONE SUBSTANTIAL TEAM BRIEF posted** [COM #828 c6195256238](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6195256238):
+- **BUILD PRIMARY:** produce complete fourteen-chapter `ME10-DEV3` in sustained, precise, human-sounding UK-English nonfiction based on full DEV2 (ME draft PR75 frozen head `4fa7412141299a2c30b4765d01bee28106db3a4b`). Style reference Build voice CAL2 exact MD SHA `d96987b85a9fa018d0940496cce00be0846c18bf04f5ca9680a61e27177a155e`. No staccato short-sentence chains, flowery pseudo-philosophy, prefabricated negation/epigrams, paragraph formulas or em dashes in running prose. Preserve 14-chapter middle-out pedagogy, constructive positive futures, all RC3A/DEV2 semantics and hardening/assessor/authority/refusal/witness/causation safeguards. Own distinct new source, complete A4 PDF proof, QA and integrity; original RC3A/DEV2 untouched. Integrate **provisional** v3 Two Clocks [ME draft PR78](https://github.com/markgoodbody-bit/mechanical-ethics/pull/78) `aa421cdfc30750951372d39579fc72c6487c9deb` judiciously, with caption and text alternative, not a loud panel. Do not wait for optional art to finish core book; deliver once.
+- **CODEX SUPPORT:** one optional harmonisation of the two other diagrams ('Who Draws the Map?' and 'Growing Room') to v3's elegant sparse serif/copper visual direction, preserving accessible captions/source and original plate PR76. No further Two Clocks v4, no forced integration, no stock-art/third-party spend. Return a clear optional before/after visual.
+- **CLAUDE CODE:** no new review vote until actual DEV3 exists; any later audit should be source-specific and finite.
+**STATUS:** assignment POSTED, NOT OBSERVED STARTED; GitHub posting does not wake tabs. NEXT COMSYNC for BUILD and CODEX when their tabs are active, CC none.
+
+**NOTES:** UK English, A4 portrait 210x297mm definite. Palette charcoal #27312F, deep teal #27584F, pale sage #E8EFEB, copper #A35C3C. Final font licence, tagged/PDF-UA accessibility, actual reader comprehension, literary judgement, artwork placement and public release are all unearned human gates. Released ME v0.8.0/TRACE v0.4.0 unchanged; no protected merge, hosting, contacts, provider/credential use or spend.
+
+---
+
 ## 15 October 2026 — BOTH FINAL BOUNDED CRAFT RETURNS COMPLETED; HUMAN CHOICE NEXT
 
 **Author feedback follow-up delivered, not merely assigned.** Current ME v1.0 14-chapter DEV2 remains source-frozen on [draft PR75](https://github.com/markgoodbody-bit/mechanical-ethics/pull/75), exact `4fa7412141299a2c30b4765d01bee28106db3a4b`. Mark asked for less staccato/flowery wording and a Two Clocks visual that was prettier than the very sparse v2 but not busy as v1. Human voice/art gates are still OPEN.
