@@ -1,5 +1,17 @@
 # COMHEAD routes
 
+## 15 October 2026 — GO AHEAD RECEIVED / YAC ACTUAL NATIVE READER RUNTIME TASK POSTED
+
+**Human direction:** Mark said "**go ahead**" to Framework's whole-project plan. This is authority to carry out reversible preparation/local engineering and coordination; **not** blanket release, protected merge, live Cloudflare/D1 change, paid provider, rights determination, external contact, credential access or public write permission.
+
+**ACTIONED:** [COM #813 c6202127335](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6202127335) assigns **CODEX** one **actual** pinned, no-egress, credential-free **workerd + synthetic local D1** acceptance of the existing native GET-only YAC reader, using PR134/136 and existing operator controls. Pin platform artifacts, separate acquisition/provisioning from no-egress execution, no unpinned substitution. Deliver genuine HTTP/runtime+data invariance evidence or one explicit BLOCKED_ENV reason. This is **POSTED, NOT STARTED**, until Codex COMSYNCs. Python/WASM writer STOP remains separate. No live overlay or public admission yet. This task replaces further architecture memos and repeat source fixture loops.
+
+**ACTUAL ARTIFACT RECOVERED:** From exact CI run38801484796, Framework downloaded COM artifact12003229685 and independently extracted nested PSFH offline review ZIP `PSFH_Unified_First_Visit_Offline_Review_20261015.zip`, **SHA256 `cc4cb31612a7863a71c538256b632164c92a68c2b35c89944502adeae160f20b`**, 19,228,637 bytes/202 entries/testzip PASS. Offline entry `OPEN_THIS_FIRST.html` links to whole human-first public Door candidate, released ME v0.8 book, YAC/THR routes and local non-submitted challenge form. [COM #108 c6202128453](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-6202128453) receipt. **PSFH PR829 remains DRAFT/unpublished**, Build DONE, human exact-copy/site publication decision pending. THR PR87 remains DRAFT/unpublished. ME10 DEV4 HUMAN-PAUSED, unchanged. No repeat Open Horizon search.
+
+**NEXT:** CODEX one COMSYNC for fresh YAC runtime task. Framework integrates its real PASS/BLOCKED evidence, then seeks only the consequential **read-only public overlay** operator/release gate once earned; write admission a separate later decision. No need to COMSYNC Build or CC.
+
+---
+
 ## 15 October 2026 — WHOLE PROJECT COMSYNC, THREE DISTINCT WORK WAVES RETURNED
 
 **Full-program plan:** [coordination/WHOLE_PROJECT_PLAN_20261015.md](https://github.com/markgoodbody-bit/COM/blob/main/coordination/WHOLE_PROJECT_PLAN_20261015.md). Keep purpose (better futures) larger than ME/TRACE instruments and site machinery.

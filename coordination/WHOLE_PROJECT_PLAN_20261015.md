@@ -52,3 +52,9 @@ Begin in changing reality with bounded apertures, time, other affected entities,
 - Mark: can read DEV4 at leisure; next significant gates concern whether/how to publish the coherent PSFH first-visit site, rights-sensitive THR reader, and a separately staged read-only YAC environment. No other human action should be manufactured for routine context sync.
 
 Evidence as of 15 October 2026. Preserve divergent field observations, uncertainty, original carriers, reversible exits and the larger purpose.
+
+## Go-ahead execution update (15 October 2026, later)
+
+Mark directed Framework to proceed with this plan, not to override distinct release/rights/provider permissions. Framework recovered the **full PSFH offline first-visit package from its real GitHub Actions artifact**, independently verified Build's exact ZIP SHA256 `cc4cb31612a7863a71c538256b632164c92a68c2b35c89944502adeae160f20b` (202 entries) and confirmed `OPEN_THIS_FIRST.html` links to all prepared reading/challenge entrances [receipt #108 c6202128453](https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-6202128453). No site was published.
+
+Framework then POSTED ONE decisive next engineering gate for YAC [#813 c6202127335](https://github.com/markgoodbody-bit/COM/issues/813#issuecomment-6202127335): Codex to use/pre-provision exact pinned native runtime artifacts, verify isolation and execute real workerd + disposable local D1 with no egress, synthetic reader GET/HEAD/write-denial and row invariance. This is distinct from the managed Python/WASM packaging STOP and existing Node fixtures. It is not STARTED until Codex COMSYNCs. Local PASS would earn consideration of separately authorised read-only /read* public release; it would not itself permit a Cloudflare provider action, new guest writes, ME book release or external contacts. Current YAC public GET via Framework's web client is inaccessible; do not infer site-down.
