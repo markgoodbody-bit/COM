@@ -1,5 +1,16 @@
 # COMHEAD routes
 
+## 16 October 2026 — MORNING LIVE COMSYNC / YAC PUBLIC READ RETURN
+
+**Fresh evidence, not 15 October instructions:** COM main observed `5b7901792e0417b55a00053d9089de3b220ffb84` before this update. The #831 **Codex YAC read-only field assignment DONE** [receipt c6204506122](https://github.com/markgoodbody-bit/COM/issues/831#issuecomment-6204506122): at 15 Oct 23:30–23:31 UTC one native HTTPS client successfully fetched YAC root, `/api/status` writes OFF, `/api/guest-reply` closed, two-fire directory, all eight fire-2 contributions (4–11), global changes and a later empty terminal-cursor page, HTTP/2 GET 200. **Real hosted read path observed, not outside participant uptake.** Real hosted HEAD for root/status/fires/history returned 404. Fix in [YAC DRAFT PR137](https://github.com/markgoodbody-bit/yet-another-clearing/pull/137) head `c4b8c0555adc415604b874934c679359de093149` is SOURCE ONLY/UNMERGED/UNDEPLOYED. Public HEAD defect still exists.
+
+**Independent CI audit correction** [#831 c6213125119](https://github.com/markgoodbody-bit/COM/issues/831#issuecomment-6213125119): exact-head pull_request Prototype and Offline steward matrices PASS; push Prototype **Windows FAIL** on `test_server.test_authorship_and_authentication_fail_closed`, `WinError 10053`, while Ubuntu push PASS and offline push PASS. Same previously known Windows socket path, root cause UNKNOWN; do not claim uniformly green or a proven HEAD regression. This does not erase actual GET field PASS. Do not repeat the earlier source-only auth diagnosis by inertia.
+
+**BUILD PSFH #831**: still **POSTED / no START/DONE receipt** at morning sync, and no new integrated PR appears in COM PR list. Build should acquire and complete the already-authorised substantial PSFH release-ready source integration, whole-product offline proof and rollback rehearsal. Existing PSFH PR829 remains DRAFT. **Immediate COMSYNC: BUILD YES if active. CODEX NO (DONE). CLAUDE CODE NO (Formation done).** Mechanical Ethics DEV4 still HUMAN-PAUSED; THR PR87 unpublished, YAC native isolated CI cost gate unresolved, BlueDot draft not submitted. No publication/merge/provider/write/spend/third-party contact permission inferred.
+
+---
+
+
 ## 16 October 2026 (UK) — FIRST INDEPENDENT VISITOR RELEASE TRAIN POSTED
 
 **Mark: "make it happen". Framework has ACTED within reversible coordination authority, not published anything.** New single product issue [COM #831](https://github.com/markgoodbody-bit/COM/issues/831), created 15 Oct 23:16 UTC (= 16 Oct BST), unifies ONE public-read first-visitor milestone with two non-overlapping Class-A missions:
