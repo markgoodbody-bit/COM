@@ -1,5 +1,16 @@
 # COMHEAD routes
 
+## 16 October 2026 — ME CORR2 SOURCE-PRESERVED DONE; YAC CODEX STARTED / CC LARGE MISSION POSTED
+
+**ME PRIMARY: BUILD CORR2 DONE / STOP** [#828 c6219694221](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6219694221). The successor Build session **did** reacquire and execute the source-custody repair, although the older bootstrap's 'no task' banner caused initial confusion. Original DEV4R Markdown verified, 234 emphasis delimiters retained, all three original vector SVGs hash-matched/retained; one private **50-page A4 source-preserved, vector** manuscript/PDF with Mark's **“A Middle-Out Reasoning Language”** subtitle and clearer reader-journey introduction delivered in Build chat. QA reported 18/18 PASS; human read / accessible-PDF test / ME v1.0 release NOT DONE. **BUILD NO COMSYNC**.
+
+**YAC SECONDARY: parallel, different owners.** CODEX has **STARTED** technical first-public-read/return source+release gate [COM #840 c6219727721](https://github.com/markgoodbody-bit/COM/issues/840#issuecomment-6219727721); no terminal yet. **CLAUDE CODE substantive PRODUCT OWNERSHIP POSTED** [#840 c6219806413](https://github.com/markgoodbody-bit/COM/issues/840#issuecomment-6219806413): build a complete visitor-facing voluntary Clearing encounter copy+UX package, real canonical fire reading, humane exit/return and future separate opt-in invitation. **Not a review memo; do not duplicate Codex implementation.** CC assignment POSTED, not actually running until it COMSYNCs. No live writes/provider/merge/outreach/spend approval.
+
+**BOOTSTRAP LESSON:** older Build headings saying no work were superseded by newer issue receipt #828, but top-level bootstrap handoff remained layered with contradictory dated banners. Fresh successors must read latest targeted issue comments AFTER heads, privilege newer specific owner task over stale section prose and report the live task; avoid making Mark manually find a missing address. This happened transiently; Build later returned CORR2. **IMMEDIATE COMSYNC: CLAUDE CODE ONCE (YAC); CODEX NO (already STARTED); BUILD NO (DONE).** How can we make a better future?
+
+---
+
+
 ## 16 October 2026 — MARK: YAC NEXT SECONDARY; ME EXPLANATORY SUBTITLE AND READER JOURNEY
 
 **Direct human priorities:** Mark likes published **PSFH D099** and identifies **YAC as the next secondary project**, with Mechanical Ethics primary. Source-only, product-first **CODEX YAC assignment POSTED** in [COM #840](https://github.com/markgoodbody-bit/COM/issues/840), NOT STARTED until Codex COMSYNC. Focus one real human/AI voluntary **arrive → bounded current read → leave/respond only if authorised → return** encounter using prior PR134/136/137 work, not fresh architecture or repeat tests. Hosted YAC GET works per dated witness; writes remain closed and HEAD mismatch needs human-authorised release, no provider/CI spend/merge inferred. No reopening writes by past permission.
