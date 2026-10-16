@@ -1,0 +1,68 @@
+name: PSFH human-first full released reader (source only)
+on:
+  push:
+    branches:
+      - build/psfh-human-first-full-me-v080-20261013
+      - build/psfh-unified-first-visit-20261015
+  pull_request:
+    paths:
+      - 'scripts/render_me_full.py'
+      - 'scripts/human-first-door.mjs'
+      - 'scripts/build.mjs'
+      - 'scripts/test_me_full_reader.py'
+      - 'scripts/package_psfh_offline.py'
+      - 'scripts/test_psfh_offline.py'
+      - 'public/explore/yac/index.html'
+      - 'public/explore/challenge.html'
+      - 'public/explore/challenge.md'
+      - 'public/explore/challenge-local.html'
+      - 'scripts/test-yac-primary-link.mjs'
+      - 'scripts/test-challenge-export.mjs'
+      - 'review/PSFH_HUMAN_V080_GATE_20261013.md'
+permissions:
+  contents: read
+jobs:
+  integrated-review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked public site dependencies (no deploy)
+        run: |
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+      - name: Build exact source, full ME book and human-first homepage
+        run: npm run build
+      - name: Complete book/source/figure/human routes acceptance
+        run: python -m unittest scripts.test_me_full_reader -v
+      - name: Existing source and link regressions
+        run: |
+          node --test scripts/test-yac-primary-link.mjs scripts/test-challenge-export.mjs scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          node --check public/journey.js
+          git diff --check
+      - name: Assemble complete extracted offline author-review package (no browser)
+        run: python scripts/package_psfh_offline.py
+      - name: Verify offline routes, release custody and archive integrity
+        run: python -m unittest scripts.test_psfh_offline -v
+      - uses: actions/upload-artifact@v4
+        with:
+          name: psfh-unified-first-visit-review
+          path: review-artifacts/PSFH-complete-offline-review.zip
+          if-no-files-found: error
+          retention-days: 14
+      # Existing screenshots at previous PR820 head remain historical evidence.
+      # New browser/keyboard/print investigation was stopped by policy;
+      # this source-only wave must not rerun or route around that refusal.
+# Browser acceptance remains BLOCKED/UNRUN for this wave.
+# NO GH-PAGES PUBLISH, NO LIVE REQUEST, NO EXTERNAL CONTACT.
