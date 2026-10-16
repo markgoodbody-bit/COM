@@ -1,5 +1,14 @@
 # COMHEAD routes
 
+## 16 October 2026 — LATE DEV4R INDEPENDENT REVIEW COMSYNC
+
+**ME10 DEV4R frozen private text, NOT RELEASED / NOT UNDER REVISION.** Mark requested independent CC/Codex/Build review [COM #828 instruction c6217988330](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6217988330). CODEX **DONE/STOP** [c6218173095](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6218173095): no core semantic contradiction observed; restore scoped inspection authority, anti-essentialism after harmful conduct, non-speaking subject care, and exact historical source locators. CLAUDE CODE **DONE/STOP** [c6218211461](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6218211461): coherent teaching book but v0.8's normative burden/duty tests weakened, Predator Position mechanism/maintenance too thin, strategic UNKNOWN burden diluted, Chapter 6 dense, positive conditions of hope weakened, and duty-holders' protective obligations absent. These independent conclusions are **complementary but not identical**. BUILD **POSTED / NO START OR DONE RECEIPT OBSERVED** in #828 at this sync; one COMSYNC if its tab is active. Do not claim all three complete or edit DEV4R by inertia.
+
+**NotebookLM critique (user-provided, separate input):** plausible three small chapter-level additions: clearer mid-scale bridge through garden/library; one concrete privacy-limited residue ledger example; one complete specialist handoff route. **No new primitive such as 'escalation aperture', no new workbook task now, no implementation standard imposed on v1.0.** Future applied workbook is a separate later possibility, not a pending assignment. Wait for Build's independent return; integrate once under Mark's editorial gate. Released ME v0.8.0 and TRACE v0.4.0 unchanged; PSFH D099 published, see following entry.
+
+---
+
+
 ## 16 October 2026 — PSFH D099 ACTUALLY PUBLISHED (supersedes prior human release gate)
 
 **Mark explicitly authorised publication.** [Guarded one-shot publisher run 38898220329](https://github.com/markgoodbody-bit/COM/actions/runs/38898220329) SUCCESS. Public `gh-pages` is now **`d7473141ba89ab74ad51a875634034c96dffc4e9`**, parent/rollback `6d52e35be8f7d81ff44c1bbde59c6dd15d719579`, tree `71b1a06dabc94e35f51dda6e3c328d3ec59db68c`. Pre-publication source/build checks and staging PASS: **203 files, 2 added, 7 modified, 190 prior generated files unchanged, 0 deleted**; original `.gitattributes`, `.nojekyll`, `CNAME`, `README.md` all byte-identical. The native custom-domain HTTP verification byte-matched **all nine changed/new live routes** after normal cache lag. [Full receipt: COM #831 comment 6215179600](https://github.com/markgoodbody-bit/COM/issues/831#issuecomment-6215179600).
