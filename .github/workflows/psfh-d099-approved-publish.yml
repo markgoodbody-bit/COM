@@ -1,0 +1,138 @@
+name: PSFH D099 approved one-shot publication
+
+on:
+  push:
+    branches:
+      - framework/psfh-d099-approved-publish-20261016
+    paths:
+      - .github/workflows/psfh-d099-approved-publish.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: psfh-d099-authorised-publication
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild, stage, verify and publish approved exact D099
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = 'refs/heads/framework/psfh-d099-approved-publish-20261016'
+          test "$(git rev-parse HEAD^)" = 'eb13390c50ecafdd091618d1b3b17e29695e12de'
+          test "$(git diff --name-only HEAD^ HEAD)" = '.github/workflows/psfh-d099-approved-publish.yml'
+          test "$(git rev-parse 9474b10f6d5bc630658a2dec0fa98dbec3f15e2c^{tree})" = '4ecd5f564c536c76f62f53606140ac8a27240e20'
+          npm ci
+          python -m pip install --disable-pip-version-check pypdf==6.10.0
+          npm run build
+          python -m unittest scripts.test_me_full_reader scripts.test_psfh_release_rehearsal -v
+          node --test scripts/test-yac-primary-link.mjs scripts/test-challenge-export.mjs scripts/test-resources.mjs scripts/test-discovery.mjs scripts/test-primary-routes.mjs scripts/test-works-current.mjs scripts/test-contextual-art.mjs scripts/test-reading-rooms-current.mjs scripts/test-appeal-example-current.mjs scripts/test-map-first-current.mjs
+          python -m unittest scripts.test_import_resources scripts.test_source_views
+          python scripts/check-local-links.py
+          python scripts/check-visible-routes.py
+          node --check public/journey.js
+          git diff --check
+          python scripts/psfh_release_rehearsal.py
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          r=json.loads(Path('review-artifacts/PSFH_D099_RELEASE_REHEARSAL.json').read_text())
+          assert (r['source_generated_files'],r['public_git_files'])==(199,201)
+          assert r['public_target_commit']=='6d52e35be8f7d81ff44c1bbde59c6dd15d719579'
+          assert r['public_target_tree']=='60081abd350cf16c04194760fe03b5fce23ca062'
+          assert r['added']==sorted(('explore/challenge-local.html','read/me-v0.8.html'))
+          assert r['modified']==sorted(('explore/challenge.html','explore/challenge.md','explore/map.json','explore/yac/index.html','index.html','manifest.json','style.css'))
+          assert r['deleted_if_naive_replace']==sorted(('.gitattributes','.nojekyll','CNAME','README.md'))
+          assert len(r['unchanged'])==190
+          print('Exact current source build: 2 new, 7 modified, 190 unchanged.')
+          PY
+
+          git fetch origin refs/heads/gh-pages:refs/remotes/origin/gh-pages
+          previous="$(git rev-parse refs/remotes/origin/gh-pages)"
+          test "$previous" = '6d52e35be8f7d81ff44c1bbde59c6dd15d719579' || {
+            echo "STOP: gh-pages moved from pinned publication base: $previous" >&2
+            exit 1
+          }
+          test "$(git rev-parse "$previous^{tree}")" = '60081abd350cf16c04194760fe03b5fce23ca062'
+          stage="$(mktemp -d)/site"
+          git worktree add --detach "$stage" "$previous"
+          test "$(git -C "$stage" ls-files | wc -l | tr -d ' ')" = 201
+          test "$(cat "$stage/CNAME")" = 'pleasestartfromhere.com'
+          rsync -a --delete --exclude='.git' --exclude='CNAME' --exclude='.nojekyll' --exclude='.gitattributes' --exclude='/README.md' out/ "$stage/"
+          for file in .gitattributes .nojekyll CNAME README.md; do
+            test "$(git -C "$stage" hash-object "$file")" = "$(git rev-parse "$previous:$file")"
+          done
+          git -C "$stage" add -A
+          python - "$stage" <<'PY'
+          from pathlib import Path
+          import hashlib,subprocess,sys
+          stage=Path(sys.argv[1]);source=Path('out')
+          built=[p for p in source.rglob('*') if p.is_file()]
+          staged=[p for p in stage.rglob('*') if p.is_file() and '.git' not in p.parts]
+          assert (len(built),len(staged))==(199,203),(len(built),len(staged))
+          expected={'A\texplore/challenge-local.html','A\tread/me-v0.8.html',
+          'M\texplore/challenge.html','M\texplore/challenge.md','M\texplore/map.json',
+          'M\texplore/yac/index.html','M\tindex.html','M\tmanifest.json','M\tstyle.css'}
+          delta=set(subprocess.check_output(['git','-C',str(stage),'diff','--cached','--name-status'],text=True).splitlines())
+          assert delta==expected,(delta,expected)
+          for p in built:
+            name=p.relative_to(source)
+            assert p.read_bytes()==(stage/name).read_bytes(),name
+          assert hashlib.sha256((stage/'resources/mechanical-ethics/MECHANICAL_ETHICS.md').read_bytes()).hexdigest()=='e3267c3e41e7fdfb44c9a9279250a1a7a38d5b9c389a594fef40cfea75fdbe76'
+          print('PASS: 203 staged files; exact 199 generated bytes; four original custody blobs; zero deletions.')
+          PY
+          git -C "$stage" config user.name 'PSFH release publisher'
+          git -C "$stage" config user.email 'actions@users.noreply.github.com'
+          git -C "$stage" commit -m 'Publish PSFH D099 first-visitor release (preserve Pages custody)'
+          published="$(git -C "$stage" rev-parse HEAD)"
+          test "$(git -C "$stage" rev-parse HEAD^)" = "$previous"
+          git -C "$stage" push origin HEAD:refs/heads/gh-pages
+          git fetch origin refs/heads/gh-pages:refs/remotes/origin/gh-pages
+          test "$(git rev-parse refs/remotes/origin/gh-pages)" = "$published"
+          echo "PUBLISHED GH-PAGES: $published; ROLLBACK SOURCE: $previous" | tee -a "$GITHUB_STEP_SUMMARY"
+
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,time,urllib.request
+          routes={'/':'index.html','/read/me-v0.8.html':'read/me-v0.8.html',
+          '/explore/challenge-local.html':'explore/challenge-local.html',
+          '/explore/challenge.html':'explore/challenge.html','/explore/challenge.md':'explore/challenge.md',
+          '/explore/map.json':'explore/map.json','/explore/yac/':'explore/yac/index.html',
+          '/manifest.json':'manifest.json','/style.css':'style.css'}
+          for attempt in range(24):
+            failures=[]
+            for route,local in routes.items():
+              try:
+                req=urllib.request.Request('https://pleasestartfromhere.com'+route+'?d099='+str(attempt),headers={'User-Agent':'PSFH D099 served-byte check','Cache-Control':'no-cache'})
+                with urllib.request.urlopen(req,timeout=18) as response:
+                  body=response.read()
+                  if response.status!=200 or body!=Path('out',local).read_bytes():failures.append((route,'HTTP='+str(response.status),'matching bytes='+str(body==Path('out',local).read_bytes())))
+              except Exception as error:failures.append((route,str(error)))
+            if not failures:
+              print('LIVE CUSTOM-DOMAIN BYTE CONVERGENCE PASS for nine changed/new routes')
+              for route,local in routes.items():print(route,hashlib.sha256(Path('out',local).read_bytes()).hexdigest())
+              break
+            print('Live byte convergence check',attempt+1,'pending:',failures,flush=True)
+            if attempt<23:time.sleep(6)
+          else:raise SystemExit('GH-PAGES PUBLISHED; CDN byte convergence NOT YET VERIFIED. DO NOT RETRY MUTATION.')
+          PY
+          echo 'CUSTOM DOMAIN: 9 changed/new route bytes verified' >> "$GITHUB_STEP_SUMMARY"
+
+# Authorised by Mark on 16 October 2026 for this exact D099 release.
+# One workflow-file push only. No manual dispatch, force push or automatic rollback.
+# Screen-reader/AT and human-use effectiveness remain unproven.
