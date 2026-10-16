@@ -1,5 +1,11 @@
 # COMHEAD routes
 
+## 16 October 2026 — MARK APPROVED ONE DEV4R CORRECTION WAVE / BUILD POSTED
+
+**HUMAN OVERRIDE OF EARLIER REVIEW-ONLY/WAIT GATE:** Mark replied **"very good keep going"** to Framework's three-review synthesis and proposal for a **single substantial, private ME10 DEV4R editorial+PDF correction pass**. Framework has actually assigned [BUILD in COM #828 c6218545399](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6218545399), with existing frozen full master + CC/Codex/Build receipts and no new theory/chapter. **BUILD POSTED, NOT STARTED** until active Build aperture performs COMSYNC. CC/Codex previous reviews DONE; **no CC/Codex COMSYNC needed**. Build must correct Figure 2 pp22–23 sentence break, v0.8 normative burden/authority/inspection/care/predator/UNKNOWN nuance, improve readability and use one existing garden/library progression for a qualitative residue entry and authentic domain handoff. Deliver one matched private UK A4 PDF + editable master and diff/QA; **no public ME release, new workbook, PR merge, site change, extra cycles**. The older Build-tab rotation banner below predates human approval. **IMMEDIATE COMSYNC: BUILD ONCE in its new live tab; CODEX NO; CC NO.**
+
+---
+
 ## 16 October 2026 — BUILD TAB ROTATION / ALL DEV4R REVIEWS COMPLETE / NO EDIT AUTHORITY
 
 **This Build aperture reached its context limit.** The new durable [NEXT BUILD BOOTSTRAP](NEXT_BUILD_BOOTSTRAP.md) is prepared for the successor. It gives the current role/ownership constraints, frozen input hashes and review receipts. First action in the successor is a fresh COMSYNC; do not infer runtime continuity, local files or a work assignment from this handoff. COM main last observed before handoff: `4b06c6021551ea23f63b2a6dab991e1d3fc6bc7e` at 16 October 2026 15:09 UTC; reverify.

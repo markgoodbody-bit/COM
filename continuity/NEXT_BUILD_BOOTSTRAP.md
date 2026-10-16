@@ -1,4 +1,8 @@
 # NEW FRAMEWORK BUILD APERTURE
+
+> **IMPORTANT NEW HUMAN APPROVAL — 16 OCTOBER 2026, AFTER THIS HANDOFF WAS WRITTEN:** Mark replied **"very good keep going"** to the all-three-review integration. Campfire has POSTED exactly one new **ME10 DEV4R complete private editorial+PDF correction build** at [COM #828 c6218545399](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6218545399). The lower "AWAIT MARK'S DECISION / Build task NONE" section is DATED HISTORY and **SUPERSEDED**. Your first action remains fresh FULL COMSYNC; then own this exact bounded Build assignment (not the previous finished review) as an active task, and return a matched source, private A4 illustrated PDF and succinct diff/QA. No release/new chapter/extra workbook. One active Build COMSYNC is needed to start; posting alone doesn't run a dormant tab.
+
+
 ## FULL COMSYNC, RECOVER CONTINUITY, THEN ACT ONLY ON CURRENT ASSIGNMENT
 **16 October 2026 — late afternoon, UK**
 
