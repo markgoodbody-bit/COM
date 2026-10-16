@@ -4,6 +4,7 @@ on:
     branches:
       - build/psfh-human-first-full-me-v080-20261013
       - build/psfh-unified-first-visit-20261015
+      - build/psfh-d098-one-visitor-release-candidate-20261016
   pull_request:
     paths:
       - 'scripts/render_me_full.py'
@@ -18,6 +19,9 @@ on:
       - 'public/explore/challenge-local.html'
       - 'scripts/test-yac-primary-link.mjs'
       - 'scripts/test-challenge-export.mjs'
+      - 'scripts/psfh_release_rehearsal.py'
+      - 'scripts/test_psfh_release_rehearsal.py'
+      - 'review/psfh_release_d099/public_target_git_tree.json'
       - 'review/PSFH_HUMAN_V080_GATE_20261013.md'
 permissions:
   contents: read
@@ -55,10 +59,17 @@ jobs:
         run: python scripts/package_psfh_offline.py
       - name: Verify offline routes, release custody and archive integrity
         run: python -m unittest scripts.test_psfh_offline -v
+      - name: Test pinned read-only release rehearsal negative controls
+        run: python -m unittest scripts.test_psfh_release_rehearsal -v
+      - name: Compare generated site against pinned gh-pages and report rollback (NO DEPLOY)
+        run: python scripts/psfh_release_rehearsal.py
       - uses: actions/upload-artifact@v4
         with:
-          name: psfh-unified-first-visit-review
-          path: review-artifacts/PSFH-complete-offline-review.zip
+          name: psfh-d099-release-candidate-review
+          path: |
+            review-artifacts/PSFH-complete-offline-review.zip
+            review-artifacts/PSFH_D099_RELEASE_REHEARSAL.json
+            review/psfh_release_d099/public_target_git_tree.json
           if-no-files-found: error
           retention-days: 14
       # Existing screenshots at previous PR820 head remain historical evidence.
