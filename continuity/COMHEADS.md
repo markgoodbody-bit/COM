@@ -1,5 +1,14 @@
 # COMHEAD routes
 
+## 16 October 2026 — MARK: YAC NEXT SECONDARY; ME EXPLANATORY SUBTITLE AND READER JOURNEY
+
+**Direct human priorities:** Mark likes published **PSFH D099** and identifies **YAC as the next secondary project**, with Mechanical Ethics primary. Source-only, product-first **CODEX YAC assignment POSTED** in [COM #840](https://github.com/markgoodbody-bit/COM/issues/840), NOT STARTED until Codex COMSYNC. Focus one real human/AI voluntary **arrive → bounded current read → leave/respond only if authorised → return** encounter using prior PR134/136/137 work, not fresh architecture or repeat tests. Hosted YAC GET works per dated witness; writes remain closed and HEAD mismatch needs human-authorised release, no provider/CI spend/merge inferred. No reopening writes by past permission.
+
+**New ME editorial direction** [COM #828 c6219598016](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6219598016): proposed subtitle **“A Middle-Out Reasoning Language”**, clearer existing opening promise (enter via glass/window/seed; develop joined human/institutional mechanisms, time, power, correction, witnesses; arrive at positive construction and informed handoff to legitimate specialists). Explain middle-out in plain English, specify what the reader should be able to notice/question after reading; avoid overclaims, new chapter and extra abstraction. **Fold into the already POSTED Build exact-source finishing pass** [#828 c6219249633](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6219249633) with three original editable SVGs, not another literary cycle. Preserve optional “The Moving Ground” motif without competing subtitle. **Immediate COMSYNC: BUILD once (ME), CODEX once (YAC); CC none.** Posting does not activate sessions. No v1.0 release, YAC deployment/write, external contacts or spend.
+
+---
+
+
 ## 16 October 2026 — DEV4R CORR1 PROVISIONAL DONE; SOURCE-CUSTODY REPAIR POSTED
 
 **NEWEST REAL BUILD RETURN** [COM #828 c6219118911](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6219118911): Build completed a private **56-page A4 CORR1** with 14 chapters, three visual plates and Figure 2 sentence break fixed, plus one editorial wave from the CC/Codex/Build reviews. **Provisional only: source-exact acceptance NOT MET.** Build reconstructed Markdown from the final frozen PDF via text extraction, removing original inline emphasis (original DEV4R has 234 `**` delimiter occurrences, CORR1 zero); it embedded raster crops instead of original vector SVG sources. Do not call it a source-preserved final edition or publication candidate.
