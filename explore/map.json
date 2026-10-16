@@ -80,13 +80,13 @@
   "resources": [
     {
       "path": "challenge.html",
-      "bytes": 1857,
-      "sha256": "5aca2d23cee1bf36000fb90f7c12b3d8e2825fe92760e34d0ba39649ac9fb364"
+      "bytes": 2264,
+      "sha256": "d7f81fc668d509a6959068fd6bfa46f47c8311295375983b90d1f5c9845deb4a"
     },
     {
       "path": "challenge.md",
-      "bytes": 1111,
-      "sha256": "f82454cf4c33d950b669d830ff39a619f780c5e2d39d65d7c425141b8da9a95c"
+      "bytes": 1480,
+      "sha256": "e342f42519864508ad82cdd39c4fef768d134cb6fa6b621478c42a3c9d60f05f"
     },
     {
       "path": "example/affected.html",

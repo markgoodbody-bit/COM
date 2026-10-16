@@ -380,3 +380,25 @@ body:has(.project-spine) .art-hero {
   width: min(90vw, 76rem);
   margin-inline: auto;
 }
+
+.human-first-door{margin:0 auto 1.5rem;width:min(100%,62rem);padding:.75rem 0 1.25rem;border-bottom:1px solid var(--border)}
+.human-first-door h2{font:400 clamp(1.6rem,3vw,2.35rem)/1.2 var(--serif);margin:.3rem 0 .75rem;max-width:32ch}
+.human-door-kicker{font-size:.8rem;letter-spacing:.075em;text-transform:uppercase;color:var(--muted);margin:0}
+.human-door-lead{font-size:clamp(1rem,1.6vw,1.12rem);line-height:1.55;max-width:68ch}
+.human-door-routes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.55rem;margin:1rem 0}
+.human-door-routes a{border:1px solid var(--border);padding:.7rem .85rem;display:grid;gap:.2rem;color:var(--foreground);text-decoration:none;min-height:3.6rem}
+.human-door-routes a:hover,.human-door-routes a:focus-visible{text-decoration:underline}
+.human-door-routes span{font-size:.82rem;color:var(--muted)}
+.human-door-neighbours{font-size:.9rem;line-height:1.45;max-width:76ch;margin:.2rem 0 .6rem}
+.human-door-status{font-size:.9rem;line-height:1.5;max-width:76ch}
+.human-door-details{font-size:.9rem;line-height:1.55;max-width:76ch;margin:.7rem 0 0}
+.human-door-details summary{cursor:pointer;min-height:2.75rem;padding:.45rem 0;color:var(--foreground)}
+.human-door-details summary:focus-visible{outline:3px solid var(--foreground);outline-offset:3px}
+.human-door-details p{margin:.65rem 0}
+body:has(.human-first-door) .opening-composition{margin-bottom:0}
+body:has(.human-first-door) .intro{margin-top:0}
+@media(max-width:690px){.human-first-door{padding:.6rem 0 .9rem}.human-first-door h2{font-size:1.65rem}.human-door-lead{font-size:1rem}
+.human-door-routes{grid-template-columns:1fr;gap:.3rem;margin:.6rem 0}
+.human-door-routes a{min-height:2.85rem;padding:.35rem .65rem;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+.human-door-routes strong{font-size:.95rem}.human-door-routes span{font-size:.78rem;text-align:right}
+.human-door-status{font-size:.85rem}.human-door-details{font-size:.85rem}}
