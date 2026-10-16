@@ -1,0 +1,1017 @@
+{
+  "schema": 1,
+  "source": "GitHub REST read-only git-tree",
+  "repository": "markgoodbody-bit/COM",
+  "ref": "gh-pages",
+  "commit": "6d52e35be8f7d81ff44c1bbde59c6dd15d719579",
+  "tree": "60081abd350cf16c04194760fe03b5fce23ca062",
+  "observed_date_utc": "2026-10-16",
+  "content_scope": "public Pages branch Git blobs, not live CDN byte observation",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha": "8b189252cf399a05c16667bc8a1cb534dce2f22a",
+      "size": 154
+    },
+    {
+      "path": ".nojekyll",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1
+    },
+    {
+      "path": "352408ff99c5e8531fe80000b491b08b.txt",
+      "sha": "eb9e5769c171036aa83d0f97b5afd45103f77342",
+      "size": 33
+    },
+    {
+      "path": "404.html",
+      "sha": "6d46301df99c944e3a47a54f37a2a9c610a87186",
+      "size": 576
+    },
+    {
+      "path": "art/atkins-1440.jpg",
+      "sha": "09daa3b3419f3fccf9e59a4b7ac1645164c271b3",
+      "size": 388918
+    },
+    {
+      "path": "art/atkins-720.jpg",
+      "sha": "4c9487a7b12f6a48cc43003a2e7bd2a29ca691a4",
+      "size": 86776
+    },
+    {
+      "path": "art/atkins-images.json",
+      "sha": "35b11ebeb8aeefc5fe269fc267b4ae191007284a",
+      "size": 2544
+    },
+    {
+      "path": "art/atkins-source.jpg",
+      "sha": "e6cfdb0b02199ca0a9185540328ede6ae5c83a75",
+      "size": 4494739
+    },
+    {
+      "path": "art/atkins.json",
+      "sha": "5e1af080c8a0a24eb1acfa8dfbf7f1251cafa63d",
+      "size": 907
+    },
+    {
+      "path": "art/bible-quilt-1440.jpg",
+      "sha": "241706452f67877d832566c51803bc9a321bd761",
+      "size": 862531
+    },
+    {
+      "path": "art/bible-quilt-720.jpg",
+      "sha": "fa7cbfc9435aff9b6a8d8f4774db9ac223584abf",
+      "size": 201415
+    },
+    {
+      "path": "art/bible-quilt-delivered.jpg",
+      "sha": "b285522f00094d376b4d68af72419a422d3a089b",
+      "size": 2671829
+    },
+    {
+      "path": "art/camp-fire-1440.jpg",
+      "sha": "8ed79c61321d217b1ced2f16f43d58c2d3c0fea9",
+      "size": 255138
+    },
+    {
+      "path": "art/camp-fire-720.jpg",
+      "sha": "158d379a27de3716b490ffd0c61bbc46b9b0e1eb",
+      "size": 57147
+    },
+    {
+      "path": "art/camp-fire.jpg",
+      "sha": "3e51ddc34ed720253e53a2d8705abe39808d17f9",
+      "size": 2350423
+    },
+    {
+      "path": "art/camp-fire.json",
+      "sha": "387b5613c077df75dfc50941334effa41ca71746",
+      "size": 3029
+    },
+    {
+      "path": "art/harriet-powers-acquisition.json",
+      "sha": "17532b2b3b77c43f9e5c93e83e04feb40fc32369",
+      "size": 2676
+    },
+    {
+      "path": "art/harriet-powers-responsive.json",
+      "sha": "a5e8cf1940c64553e3e3aac84bea951a58768df4",
+      "size": 1176
+    },
+    {
+      "path": "art/harriet-powers.json",
+      "sha": "5a87b427d842a98ffbb6d6565302753ce1f1ddcf",
+      "size": 3544
+    },
+    {
+      "path": "art/lewis-images.json",
+      "sha": "35485577bc4eafc91337e25e2d0ad4a8f1b32e78",
+      "size": 5819
+    },
+    {
+      "path": "art/lewis.json",
+      "sha": "a669bd00be7737a31621ac199afab23c79b171ff",
+      "size": 1017
+    },
+    {
+      "path": "art/SAAM-1994.17_1-1440.jpg",
+      "sha": "58be1fe32c6e4094d5a90988e326c57407b35c5c",
+      "size": 259543
+    },
+    {
+      "path": "art/SAAM-1994.17_1-720.jpg",
+      "sha": "ab66316d584f5a0290d73cdbe9cab87bb36c3812",
+      "size": 77729
+    },
+    {
+      "path": "art/SAAM-1994.17_1-source.jpg",
+      "sha": "96ee857bba408434de8d6eab4885e759afa8e8f7",
+      "size": 871456
+    },
+    {
+      "path": "art/SAAM-1994.17_2-1440.jpg",
+      "sha": "9c616063938b2138adb3af12b0069135fe2d88da",
+      "size": 296072
+    },
+    {
+      "path": "art/SAAM-1994.17_2-720.jpg",
+      "sha": "9c19a96624e499da94389f3f7f75c53b3217468b",
+      "size": 83009
+    },
+    {
+      "path": "art/SAAM-1994.17_2-source.jpg",
+      "sha": "9f2eafaca2080acb287fe7b86b231c78ea8226e2",
+      "size": 994431
+    },
+    {
+      "path": "art/shen-1200.jpg",
+      "sha": "69c815eede90fda2d15521219b05d7c9a6d95c73",
+      "size": 547637
+    },
+    {
+      "path": "art/shen-720.jpg",
+      "sha": "b7456f60fcf84224541e064e38f38af2d2d6a447",
+      "size": 199265
+    },
+    {
+      "path": "art/shen-images.json",
+      "sha": "1c7c1f6d3e60b144d20d5c4faf41f922caed73d0",
+      "size": 2562
+    },
+    {
+      "path": "art/shen-source.jpg",
+      "sha": "42d047c073f6f583754bd4325824c7db26f9e7b4",
+      "size": 1370966
+    },
+    {
+      "path": "art/shen.json",
+      "sha": "2a29ac98d516cb1e8834e97819c7f452d5f5b129",
+      "size": 1098
+    },
+    {
+      "path": "art/staedel-1149-thumb-xl.jpg",
+      "sha": "5bfbcf0960d53d45454817542af17becb266a61c",
+      "size": 147792
+    },
+    {
+      "path": "art/vermeer-acquisition.json",
+      "sha": "69f5696600f9e48f893d69cd8edaaad9c40b7ca1",
+      "size": 2380
+    },
+    {
+      "path": "art/vermeer.json",
+      "sha": "4a378dab834288b6c81d2095131f9cbfeb322ed6",
+      "size": 3276
+    },
+    {
+      "path": "changes.html",
+      "sha": "ba2828a22d55db35cddb6e8bfaa3d7f11d6cad74",
+      "size": 121152
+    },
+    {
+      "path": "changes.md",
+      "sha": "0b158d4585542d4a56bc6477f65417fd6bbd1b69",
+      "size": 114996
+    },
+    {
+      "path": "CNAME",
+      "sha": "361aad6a300a49891d0274123194b05115eef241",
+      "size": 23
+    },
+    {
+      "path": "discussion/index.html",
+      "sha": "fb01f8f407074ef0bc174f9bcbd9999f2985d07b",
+      "size": 9405
+    },
+    {
+      "path": "discussion/index.md",
+      "sha": "59a1546277fa4f2cdc7abc4b11f01012d961a89f",
+      "size": 8008
+    },
+    {
+      "path": "explore/challenge.html",
+      "sha": "cd8fecbc69ae489783cb3fef4054bbba31cde996",
+      "size": 1857
+    },
+    {
+      "path": "explore/challenge.md",
+      "sha": "8373f73ed35cb7a9dd10fe80b47f8ff607e43b14",
+      "size": 1111
+    },
+    {
+      "path": "explore/example/affected.html",
+      "sha": "6c8343210578d5f1cce112513fb823911012b954",
+      "size": 3515
+    },
+    {
+      "path": "explore/example/affected.json",
+      "sha": "581c82c5e3f31a869093b9d38b4140da91e80e34",
+      "size": 1324
+    },
+    {
+      "path": "explore/example/affected.md",
+      "sha": "1c259c135e30d16718537701ac922463962e5264",
+      "size": 1283
+    },
+    {
+      "path": "explore/example/case.html",
+      "sha": "64c01ce6ba530918de07715114ee6a3c1f1286cf",
+      "size": 3084
+    },
+    {
+      "path": "explore/example/case.json",
+      "sha": "00901d088037ad80e7bd1de99471ebb16ebbb0b9",
+      "size": 1101
+    },
+    {
+      "path": "explore/example/case.md",
+      "sha": "7985ec7cc989c8b11f9d2eff7551e843c010907c",
+      "size": 1163
+    },
+    {
+      "path": "explore/example/challenge.html",
+      "sha": "cc324e97ad6127d466922335d2ec16e9c100f0ec",
+      "size": 3707
+    },
+    {
+      "path": "explore/example/challenge.json",
+      "sha": "286226b2baa16211a6dfe18da7f7547da268b238",
+      "size": 1493
+    },
+    {
+      "path": "explore/example/challenge.md",
+      "sha": "4ac4e238441c314f8c687964ebf1af9b0fbf7bd4",
+      "size": 1434
+    },
+    {
+      "path": "explore/example/entry.html",
+      "sha": "24c87af0b2a02cb945b344a17c34e65ccef68823",
+      "size": 2694
+    },
+    {
+      "path": "explore/example/entry.json",
+      "sha": "23fbb8e6b6ff8c340eee1fcb1265d8df3daa043e",
+      "size": 1312
+    },
+    {
+      "path": "explore/example/entry.md",
+      "sha": "ebb0f4c1eb33d5bd10b46dc3f0b910fbaeabffaa",
+      "size": 1152
+    },
+    {
+      "path": "explore/example/route.html",
+      "sha": "eb122bb3464c64422daab21036e3fe6b0a57d9de",
+      "size": 3438
+    },
+    {
+      "path": "explore/example/route.json",
+      "sha": "d9f0fe161ca3cbd9ec426822f81daf8500f72431",
+      "size": 1288
+    },
+    {
+      "path": "explore/example/route.md",
+      "sha": "21296e684d1778dda694f15c56bc354d7c87c57d",
+      "size": 1247
+    },
+    {
+      "path": "explore/index.html",
+      "sha": "6d6b5dd2fabc6cf98143e888a4b96d55bb524def",
+      "size": 11928
+    },
+    {
+      "path": "explore/index.md",
+      "sha": "68e6a0e84a69008639f30cb784af566de6dc9519",
+      "size": 3063
+    },
+    {
+      "path": "explore/index.txt",
+      "sha": "67d6182539d94f4d36b91583a728eea43133bde1",
+      "size": 2151
+    },
+    {
+      "path": "explore/llms.txt",
+      "sha": "745f7411d5db818dbf3a9c720598ffce2af31f2f",
+      "size": 3622
+    },
+    {
+      "path": "explore/map.json",
+      "sha": "8e9f1ae2ffa2aa585823c86e5b3a6c25357b7d75",
+      "size": 12504
+    },
+    {
+      "path": "explore/nodes/aperture.html",
+      "sha": "c978430fc6c0a41ca58f96c476c11fe85a92a5e5",
+      "size": 5673
+    },
+    {
+      "path": "explore/nodes/aperture.json",
+      "sha": "e998e249905cf1602ba9c7ae9cbcb85c8b9c9320",
+      "size": 3048
+    },
+    {
+      "path": "explore/nodes/aperture.md",
+      "sha": "e65fc8d865220dbb035b1783d5272fb63221350c",
+      "size": 2072
+    },
+    {
+      "path": "explore/nodes/care.html",
+      "sha": "2ffbd9da26f9f8492aa36c10ef8fcf5f2b9c4967",
+      "size": 4001
+    },
+    {
+      "path": "explore/nodes/care.json",
+      "sha": "ee6415b00be733c18c5ed645de933aefd5e1d81d",
+      "size": 2078
+    },
+    {
+      "path": "explore/nodes/care.md",
+      "sha": "faec6c88259ffcb9c01a4764cd132dfb0fda944e",
+      "size": 1560
+    },
+    {
+      "path": "explore/nodes/change.html",
+      "sha": "be409e36e6a1212188e979327f79b3cc85453bdc",
+      "size": 3908
+    },
+    {
+      "path": "explore/nodes/change.json",
+      "sha": "9858ffecf13c0975c3d4d57bc0147f49dcc0b3e5",
+      "size": 2524
+    },
+    {
+      "path": "explore/nodes/change.md",
+      "sha": "dedabdc8922c305c271039c9853a7c96d8676f4a",
+      "size": 1551
+    },
+    {
+      "path": "explore/nodes/correction.html",
+      "sha": "21e35d67bc16d2e0b6276db98e0138d060138e6e",
+      "size": 4159
+    },
+    {
+      "path": "explore/nodes/correction.json",
+      "sha": "85f6933b9eaa3dd2ff03e587ad901617553eeef0",
+      "size": 2753
+    },
+    {
+      "path": "explore/nodes/correction.md",
+      "sha": "39a240e74f3e3f3ec6f06b7be33ae59c67f98857",
+      "size": 1782
+    },
+    {
+      "path": "explore/nodes/futures.html",
+      "sha": "a8c93b3e9cca78ffe214ce2f8bb989d508bdf5f3",
+      "size": 5353
+    },
+    {
+      "path": "explore/nodes/futures.json",
+      "sha": "3271652cba1e1458c6ebfd28f268439d62da59f4",
+      "size": 2579
+    },
+    {
+      "path": "explore/nodes/futures.md",
+      "sha": "314f6358459e8dc8826b9a909f028666ca2bf911",
+      "size": 1607
+    },
+    {
+      "path": "explore/nodes/hardening.html",
+      "sha": "7a4b332ab8b74aea34bbde580ed35b607a5246a9",
+      "size": 5910
+    },
+    {
+      "path": "explore/nodes/hardening.json",
+      "sha": "9b257e08a8311382982efe9e8b0f1f9b6d47ad36",
+      "size": 2558
+    },
+    {
+      "path": "explore/nodes/hardening.md",
+      "sha": "ef480a84a4b16aee191993da0bc0738e1536fef6",
+      "size": 1585
+    },
+    {
+      "path": "explore/nodes/power.html",
+      "sha": "0e2e5c3ec7debda3fd7f389cc2d65ccf1cbb2850",
+      "size": 3988
+    },
+    {
+      "path": "explore/nodes/power.json",
+      "sha": "df6e4e2f674e3d54003c55b89d86917d7e268c91",
+      "size": 2604
+    },
+    {
+      "path": "explore/nodes/power.md",
+      "sha": "803030276be8b9569e3ab103b9aa6e95aa543ddc",
+      "size": 1633
+    },
+    {
+      "path": "explore/nodes/selection.html",
+      "sha": "16ec406e5b210e16a27c7059264cbbfc0eec7cdf",
+      "size": 4004
+    },
+    {
+      "path": "explore/nodes/selection.json",
+      "sha": "aa20777b8bc143112784ff4f7b25c12c87c55d3e",
+      "size": 2309
+    },
+    {
+      "path": "explore/nodes/selection.md",
+      "sha": "aedc117c62920af24b680e993977061b206710b5",
+      "size": 1634
+    },
+    {
+      "path": "explore/nodes/significance.html",
+      "sha": "51b71e44719f7644ebcd3bae548d377043a13a10",
+      "size": 5314
+    },
+    {
+      "path": "explore/nodes/significance.json",
+      "sha": "d9396b13deb7dab125eb7e420237106cb2fd1857",
+      "size": 1954
+    },
+    {
+      "path": "explore/nodes/significance.md",
+      "sha": "fe1bf3321ed8589ac0b8379529f8a55d9a7792b1",
+      "size": 1431
+    },
+    {
+      "path": "explore/nodes/wisdom.html",
+      "sha": "61934c8a110dd5f851fe7c7018e39dad7b7857a0",
+      "size": 4130
+    },
+    {
+      "path": "explore/nodes/wisdom.json",
+      "sha": "e0cec1201721b70cb3b8924fcc65457b8830c8b9",
+      "size": 2628
+    },
+    {
+      "path": "explore/nodes/wisdom.md",
+      "sha": "9915825d5a2e54f9b3a79b73b062de164c5e1b55",
+      "size": 1654
+    },
+    {
+      "path": "explore/packet.json",
+      "sha": "e4c33f135103a7da4cb89452c8d96810d3fe2148",
+      "size": 21367
+    },
+    {
+      "path": "explore/packet.md",
+      "sha": "c3bb7c93e047de57afc59d71b3d4c7f05a00d2df",
+      "size": 19841
+    },
+    {
+      "path": "explore/questions.json",
+      "sha": "ed90fa7fbcfa7ff31874c053fdfd858ecfc8d2c8",
+      "size": 5238
+    },
+    {
+      "path": "explore/questions.txt",
+      "sha": "6d6f5aaf29b1abbf1d1ca8997b5419e67ff8fdbe",
+      "size": 1650
+    },
+    {
+      "path": "explore/sources.html",
+      "sha": "a70cdeaa21096a9f0a80a1a3cdab973026964cb9",
+      "size": 3067
+    },
+    {
+      "path": "explore/sources.json",
+      "sha": "89c8f73fe88255325b3a80d44ad4907611eb8199",
+      "size": 2952
+    },
+    {
+      "path": "explore/sources.md",
+      "sha": "e6a22cc75b392ca44f3d8ad662d02856628db558",
+      "size": 2217
+    },
+    {
+      "path": "explore/start.json",
+      "sha": "26ff10cbb3879c47f0d64107446bd10f605fc24a",
+      "size": 7223
+    },
+    {
+      "path": "explore/worked-revision.html",
+      "sha": "f934e3e56d8f4fdba65349ca1850d7f9dafe55b1",
+      "size": 7164
+    },
+    {
+      "path": "explore/worked-revision.md",
+      "sha": "f7a8eaf48c6ea3e6fdae4839eafc92be82e26917",
+      "size": 6029
+    },
+    {
+      "path": "explore/yac/encounter-v0.txt",
+      "sha": "8f149971e3b08976824ce072daea4cc897fcc682",
+      "size": 1879
+    },
+    {
+      "path": "explore/yac/index.html",
+      "sha": "76c51ba373afb68236a7968138fe035c6d35e9fa",
+      "size": 7064
+    },
+    {
+      "path": "explore/yac/read.json",
+      "sha": "c607d06c00a5821d328eb5bdaf66573ac84ed432",
+      "size": 5893
+    },
+    {
+      "path": "explore/yac/start.txt",
+      "sha": "a4ac4dad7c6b54a92ab373b0c9f765a233475da4",
+      "size": 4029
+    },
+    {
+      "path": "explore/yac/style.css",
+      "sha": "563a5e0f80fbe197032e46e9d77c1170826c00e4",
+      "size": 1302
+    },
+    {
+      "path": "explore/yac/thr/index.html",
+      "sha": "4424b5f773c2a7acde885019d165e3299cd7c782",
+      "size": 8877
+    },
+    {
+      "path": "explore/yac/thr/start.txt",
+      "sha": "538d98a80408465cf475a3985d1ea1af11d98fc3",
+      "size": 4547
+    },
+    {
+      "path": "favicon-LICENSE.txt",
+      "sha": "b3d250dd9e4de4c6705354e7c7f6b243d9953c76",
+      "size": 953
+    },
+    {
+      "path": "favicon.ico",
+      "sha": "9c5bafaff78e691596fc47663c795b21d2173ae5",
+      "size": 2322
+    },
+    {
+      "path": "favicon.svg",
+      "sha": "498d3576ccbf475a757e28190811eb20696e5767",
+      "size": 410
+    },
+    {
+      "path": "index.html",
+      "sha": "93473bd2f2cea78c5d5775cc2b54a25fc6b18df5",
+      "size": 24147
+    },
+    {
+      "path": "journey.js",
+      "sha": "c030b40fb0cc8916f556c03895fd2f06668c32ac",
+      "size": 2963
+    },
+    {
+      "path": "llms.txt",
+      "sha": "b248abf3763ba051a7acbc629e53efa53ea2e724",
+      "size": 12164
+    },
+    {
+      "path": "manifest.json",
+      "sha": "981a37c98079dcc0183205c0dc2ad7ffc0e7cef9",
+      "size": 27216
+    },
+    {
+      "path": "packet.md",
+      "sha": "eec048e4caa0087ef9c344b48eb771a3682fc074",
+      "size": 8888
+    },
+    {
+      "path": "read/me-book.html",
+      "sha": "66a1bbdcde9665787865562343a14147191a0ff0",
+      "size": 104465
+    },
+    {
+      "path": "read/orientation.html",
+      "sha": "27251cc694d34cc5ff69924fefc6579cbbe7ec3c",
+      "size": 16089
+    },
+    {
+      "path": "read/start.html",
+      "sha": "f1507d710653ff54cc7328c5120f9924eba11e65",
+      "size": 11496
+    },
+    {
+      "path": "read/trace-spine.html",
+      "sha": "d5e5db525b198cf2b2fefa82f2d79648c80b91e0",
+      "size": 23625
+    },
+    {
+      "path": "README.md",
+      "sha": "b94ed9a069f67e49af14c37d45fe07b810519af1",
+      "size": 71984
+    },
+    {
+      "path": "resources/index.html",
+      "sha": "d6119e62c62d837dd17b1386b7a688cae2ab31f5",
+      "size": 6969
+    },
+    {
+      "path": "resources/index.md",
+      "sha": "38f973afbdaadbd5d68de2c425804783a6fa9af8",
+      "size": 6954
+    },
+    {
+      "path": "resources/inventory.json",
+      "sha": "315e28365d3314c4ea65f03bc1f3130f12d64b6b",
+      "size": 33707
+    },
+    {
+      "path": "resources/mechanical-ethics/AI_TRAINING_PERMISSION.md",
+      "sha": "08e66f7e22c0e653dae5480115daf687dc57d61e",
+      "size": 2852
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-1-file-and-life.png",
+      "sha": "828de31780ef8765b2a0136ac3a327083d0c751a",
+      "size": 81671
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-1-file-and-life.svg",
+      "sha": "6234e6a0c736156e084edb98a92680a6f98e2478",
+      "size": 3268
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-2-correction-window.png",
+      "sha": "181a3fc05dfec7e5be88deaf505f11422deff1e4",
+      "size": 44180
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-2-correction-window.svg",
+      "sha": "f9fd9861a9ce31365ed61774246e9f18e76b28b0",
+      "size": 3001
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-3-two-flats-one-wall.png",
+      "sha": "7e71dbb9b2fbe3e3df1a4421160a42a1aaf1a4f7",
+      "size": 69949
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-3-two-flats-one-wall.svg",
+      "sha": "f36b0b408cd78a7dde0ccfc23437d3c11b7895d1",
+      "size": 3756
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-4-machine-speed-human-correction.png",
+      "sha": "eab574b5c8f26544eaf0d6a1a754d9df0037d9ab",
+      "size": 65773
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/figure-4-machine-speed-human-correction.svg",
+      "sha": "305a86f99420984c2752cb696ab2d55cdac34ca5",
+      "size": 3979
+    },
+    {
+      "path": "resources/mechanical-ethics/figures/index.html",
+      "sha": "09324fa0314d6c76f3391586d11664aab7971541",
+      "size": 1155
+    },
+    {
+      "path": "resources/mechanical-ethics/MECHANICAL_ETHICS.md",
+      "sha": "0be2ea2aeb178b8387eedf0b72da2d325c6c5caf",
+      "size": 100253
+    },
+    {
+      "path": "resources/mechanical-ethics/MECHANICAL_ETHICS.pdf",
+      "sha": "e77fb1dbbb9d212ae1568bf25197c31470c90037",
+      "size": 450125
+    },
+    {
+      "path": "resources/mechanical-ethics/README.md",
+      "sha": "b300bf7501be2edbb66ca9ba35167bf5ca2ee427",
+      "size": 3737
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.png",
+      "sha": "828de31780ef8765b2a0136ac3a327083d0c751a",
+      "size": 81671
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-1-file-and-life.svg",
+      "sha": "6234e6a0c736156e084edb98a92680a6f98e2478",
+      "size": 3268
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.png",
+      "sha": "4f4b9596def6f67e51e33b5b8b19e6197debdcd9",
+      "size": 58039
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-2-correction-window.svg",
+      "sha": "8e1b533877995b2ec4859b4a92fd64ad3bba4e37",
+      "size": 2887
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.png",
+      "sha": "7e71dbb9b2fbe3e3df1a4421160a42a1aaf1a4f7",
+      "size": 69949
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-3-two-flats-one-wall.svg",
+      "sha": "f36b0b408cd78a7dde0ccfc23437d3c11b7895d1",
+      "size": 3756
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.png",
+      "sha": "eab574b5c8f26544eaf0d6a1a754d9df0037d9ab",
+      "size": 65773
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/figure-4-machine-speed-human-correction.svg",
+      "sha": "305a86f99420984c2752cb696ab2d55cdac34ca5",
+      "size": 3979
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/figures/index.html",
+      "sha": "09324fa0314d6c76f3391586d11664aab7971541",
+      "size": 1155
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.md",
+      "sha": "e232a29c5b6492930ff5b94b005c948f67ba6067",
+      "size": 87543
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/MECHANICAL_ETHICS.pdf",
+      "sha": "b7579079bbeb32912b8b280ce444e0b41d330a7f",
+      "size": 451840
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/25a9d793af1cded26dd2d766e1d1c08e1b30f652/README.md",
+      "sha": "735e91055adbbc2a45faec6f7c7f36a83710e727",
+      "size": 3459
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.png",
+      "sha": "828de31780ef8765b2a0136ac3a327083d0c751a",
+      "size": 81671
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-1-file-and-life.svg",
+      "sha": "6234e6a0c736156e084edb98a92680a6f98e2478",
+      "size": 3268
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.png",
+      "sha": "4f4b9596def6f67e51e33b5b8b19e6197debdcd9",
+      "size": 58039
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-2-correction-window.svg",
+      "sha": "8e1b533877995b2ec4859b4a92fd64ad3bba4e37",
+      "size": 2887
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.png",
+      "sha": "7e71dbb9b2fbe3e3df1a4421160a42a1aaf1a4f7",
+      "size": 69949
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-3-two-flats-one-wall.svg",
+      "sha": "f36b0b408cd78a7dde0ccfc23437d3c11b7895d1",
+      "size": 3756
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.png",
+      "sha": "eab574b5c8f26544eaf0d6a1a754d9df0037d9ab",
+      "size": 65773
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/figure-4-machine-speed-human-correction.svg",
+      "sha": "305a86f99420984c2752cb696ab2d55cdac34ca5",
+      "size": 3979
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/figures/index.html",
+      "sha": "09324fa0314d6c76f3391586d11664aab7971541",
+      "size": 1155
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md",
+      "sha": "cc6f5195b3d71d29f6bfbc8062ef9623f6f2dcb2",
+      "size": 87555
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.pdf",
+      "sha": "874f5311a49e962d8b50005f74ed11ed41f27700",
+      "size": 451736
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/44f7efb59806242fd26c572cbfbaaeaefaea2058/README.md",
+      "sha": "3bdc070a79bef1835250b81f7fb1f9c764382555",
+      "size": 3120
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-1-file-and-life.png",
+      "sha": "828de31780ef8765b2a0136ac3a327083d0c751a",
+      "size": 81671
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-1-file-and-life.svg",
+      "sha": "6234e6a0c736156e084edb98a92680a6f98e2478",
+      "size": 3268
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-2-correction-window.png",
+      "sha": "181a3fc05dfec7e5be88deaf505f11422deff1e4",
+      "size": 44180
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-2-correction-window.svg",
+      "sha": "f9fd9861a9ce31365ed61774246e9f18e76b28b0",
+      "size": 3001
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-3-two-flats-one-wall.png",
+      "sha": "7e71dbb9b2fbe3e3df1a4421160a42a1aaf1a4f7",
+      "size": 69949
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-3-two-flats-one-wall.svg",
+      "sha": "f36b0b408cd78a7dde0ccfc23437d3c11b7895d1",
+      "size": 3756
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-4-machine-speed-human-correction.png",
+      "sha": "eab574b5c8f26544eaf0d6a1a754d9df0037d9ab",
+      "size": 65773
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/figure-4-machine-speed-human-correction.svg",
+      "sha": "305a86f99420984c2752cb696ab2d55cdac34ca5",
+      "size": 3979
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/figures/index.html",
+      "sha": "09324fa0314d6c76f3391586d11664aab7971541",
+      "size": 1155
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/MECHANICAL_ETHICS.md",
+      "sha": "0be2ea2aeb178b8387eedf0b72da2d325c6c5caf",
+      "size": 100253
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/MECHANICAL_ETHICS.pdf",
+      "sha": "e77fb1dbbb9d212ae1568bf25197c31470c90037",
+      "size": 450125
+    },
+    {
+      "path": "resources/snapshots/mechanical-ethics/e2ef746e931161cb70ac46a4eaa122442134e86b/README.md",
+      "sha": "b300bf7501be2edbb66ca9ba35167bf5ca2ee427",
+      "size": 3737
+    },
+    {
+      "path": "resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/README.md",
+      "sha": "0df1a46a33eb63fa47a3cdc4a3b145115f2ccfc1",
+      "size": 6563
+    },
+    {
+      "path": "resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md",
+      "sha": "488989cef87e47adc6df8407382717ebf58e10a6",
+      "size": 25795
+    },
+    {
+      "path": "resources/snapshots/trace/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE.md",
+      "sha": "3f7011abb2f453ef250990e6e30cbd787db683c7",
+      "size": 180511
+    },
+    {
+      "path": "resources/snapshots/trace/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025/README.md",
+      "sha": "d6146c04d72ce12919a3322a0bd611a5123872e6",
+      "size": 6836
+    },
+    {
+      "path": "resources/snapshots/trace/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025/TRACE-SPINE.md",
+      "sha": "fe67f4e931ebbf00456652ef33923dc1a391dd9b",
+      "size": 21279
+    },
+    {
+      "path": "resources/snapshots/trace/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025/TRACE.md",
+      "sha": "e9c0a9906c663ac4f9887ee42f8595edc74d2f92",
+      "size": 180619
+    },
+    {
+      "path": "resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/README.md",
+      "sha": "a6f95cf2bac4558e4b5b56b0b38d6e498541d3d0",
+      "size": 6827
+    },
+    {
+      "path": "resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE-SPINE.md",
+      "sha": "2e5afe78d0033d47582af9ffaa94f0d0e5a51bc7",
+      "size": 25838
+    },
+    {
+      "path": "resources/snapshots/trace/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/TRACE.md",
+      "sha": "e9c0a9906c663ac4f9887ee42f8595edc74d2f92",
+      "size": 180619
+    },
+    {
+      "path": "resources/trace/AI_TRAINING_PERMISSION.md",
+      "sha": "467e47b68f5172e22546885792720be28b3ab4b3",
+      "size": 2685
+    },
+    {
+      "path": "resources/trace/README.md",
+      "sha": "d6146c04d72ce12919a3322a0bd611a5123872e6",
+      "size": 6836
+    },
+    {
+      "path": "resources/trace/TRACE-SPINE.md",
+      "sha": "fe67f4e931ebbf00456652ef33923dc1a391dd9b",
+      "size": 21279
+    },
+    {
+      "path": "resources/trace/TRACE.md",
+      "sha": "e9c0a9906c663ac4f9887ee42f8595edc74d2f92",
+      "size": 180619
+    },
+    {
+      "path": "robots.txt",
+      "sha": "8192c47c906552691d26b906eea03cfcd000dbd7",
+      "size": 527
+    },
+    {
+      "path": "seed.txt",
+      "sha": "7e1dc87d2103444ec096f1b102c82907e8942fc5",
+      "size": 990
+    },
+    {
+      "path": "sitemap.xml",
+      "sha": "2f97b566aff1bfe7b39dd610863badf5dadf83d9",
+      "size": 3007
+    },
+    {
+      "path": "style.css",
+      "sha": "532bc4c8c1d7050244e3712867d89d3a9c0f54eb",
+      "size": 30696
+    },
+    {
+      "path": "works/anna-atkins/index.html",
+      "sha": "0a01c715fbc383f7cd0ebef954e4ed654e05b40d",
+      "size": 2029
+    },
+    {
+      "path": "works/edmonia-lewis/index.html",
+      "sha": "1e069107400c8f23728e2cd8a5400bfc26cdf6b7",
+      "size": 2533
+    },
+    {
+      "path": "works/harriet-powers/index.html",
+      "sha": "d42017132654b228264a3ff77c9dec94bf754ede",
+      "size": 4330
+    },
+    {
+      "path": "works/harriet-powers/work.css",
+      "sha": "320cd069de2a713298ee13d03b6a4062d7ccf126",
+      "size": 2580
+    },
+    {
+      "path": "works/index.html",
+      "sha": "0aec42ee6828fa628284f2cdc5fb74b3dda14d2f",
+      "size": 2323
+    },
+    {
+      "path": "works/johannes-vermeer/index.html",
+      "sha": "0462d19cdd50bd00e3e854f17594840bef58aa0c",
+      "size": 2808
+    },
+    {
+      "path": "works/johannes-vermeer/work.css",
+      "sha": "5083a8ffd5ffcb60d0f2bc7ad7b3dfee23318ccc",
+      "size": 2155
+    },
+    {
+      "path": "works/shelf.css",
+      "sha": "47dfabd4f6499dc37f817d792c4e8d6179a861ff",
+      "size": 5820
+    },
+    {
+      "path": "works/shen-zhou/index.html",
+      "sha": "d64307dca87ade912b5dcab6a3741887928fcad2",
+      "size": 2286
+    },
+    {
+      "path": "works/winslow-homer/index.html",
+      "sha": "9b355c0753e5b89c0cdca46ff3f03b49d63b9ecc",
+      "size": 2145
+    }
+  ]
+}
