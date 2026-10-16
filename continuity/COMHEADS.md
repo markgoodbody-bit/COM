@@ -1,5 +1,22 @@
 # COMHEAD routes
 
+## 16 October 2026 — LATE DEV4R INDEPENDENT REVIEW COMSYNC
+
+**ME10 DEV4R frozen private text, NOT RELEASED / NOT UNDER REVISION.** Mark requested independent CC/Codex/Build review [COM #828 instruction c6217988330](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6217988330). CODEX **DONE/STOP** [c6218173095](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6218173095): no core semantic contradiction observed; restore scoped inspection authority, anti-essentialism after harmful conduct, non-speaking subject care, and exact historical source locators. CLAUDE CODE **DONE/STOP** [c6218211461](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6218211461): coherent teaching book but v0.8's normative burden/duty tests weakened, Predator Position mechanism/maintenance too thin, strategic UNKNOWN burden diluted, Chapter 6 dense, positive conditions of hope weakened, and duty-holders' protective obligations absent. These independent conclusions are **complementary but not identical**. BUILD **POSTED / NO START OR DONE RECEIPT OBSERVED** in #828 at this sync; one COMSYNC if its tab is active. Do not claim all three complete or edit DEV4R by inertia.
+
+**NotebookLM critique (user-provided, separate input):** plausible three small chapter-level additions: clearer mid-scale bridge through garden/library; one concrete privacy-limited residue ledger example; one complete specialist handoff route. **No new primitive such as 'escalation aperture', no new workbook task now, no implementation standard imposed on v1.0.** Future applied workbook is a separate later possibility, not a pending assignment. Wait for Build's independent return; integrate once under Mark's editorial gate. Released ME v0.8.0 and TRACE v0.4.0 unchanged; PSFH D099 published, see following entry.
+
+---
+
+
+## 16 October 2026 — PSFH D099 ACTUALLY PUBLISHED (supersedes prior human release gate)
+
+**Mark explicitly authorised publication.** [Guarded one-shot publisher run 38898220329](https://github.com/markgoodbody-bit/COM/actions/runs/38898220329) SUCCESS. Public `gh-pages` is now **`d7473141ba89ab74ad51a875634034c96dffc4e9`**, parent/rollback `6d52e35be8f7d81ff44c1bbde59c6dd15d719579`, tree `71b1a06dabc94e35f51dda6e3c328d3ec59db68c`. Pre-publication source/build checks and staging PASS: **203 files, 2 added, 7 modified, 190 prior generated files unchanged, 0 deleted**; original `.gitattributes`, `.nojekyll`, `CNAME`, `README.md` all byte-identical. The native custom-domain HTTP verification byte-matched **all nine changed/new live routes** after normal cache lag. [Full receipt: COM #831 comment 6215179600](https://github.com/markgoodbody-bit/COM/issues/831#issuecomment-6215179600).
+
+**Important limits:** The source [DRAFT PR833](https://github.com/markgoodbody-bit/COM/pull/833) remains `eb13390c50ecafdd091618d1b3b17e29695e12de` OPEN/UNMERGED; publication used a source-pinned independent one-shot workflow branch, **not** raw offline preview or an automatic D098 merge. Site is PUBLIC, not merely release-ready. Human keyboard/browser/print/AT acceptance and independent benefit remain unproved. Local challenge export is NOT SUBMITTED. Public original art/story and released ME v0.8 are preserved; ME10 DEV4 is HUMAN-PAUSED; YAC HEAD fix PR137 draft/undeployed; THR PR87 unpublished. **Immediate Build/Codex/CC COMSYNC NONE.** Avoid duplicate deployment tasks.
+
+---
+
 ## 16 October 2026 — MIDDAY CAMPFIRE TAB ROTATION / #831 BOTH TERMINAL
 
 **THE PREVIOUS CAMPFIRE CONVERSATION REACHED ITS CONTEXT LIMIT.** New fully refreshed [Campfire successor bootstrap](https://github.com/markgoodbody-bit/COM/blob/main/continuity/NEXT_CAMPFIRE_BOOTSTRAP.md) now carries the latest source-grounded state and current live routes. The last COM main checked BEFORE these handoff updates was `c3388b20314e0e173e1fb55a46e9629cba08d15b`; do not reuse as current without fetching main again. Full relevant work receipt [COM #831](https://github.com/markgoodbody-bit/COM/issues/831), especially [Build terminal c6213332503](https://github.com/markgoodbody-bit/COM/issues/831#issuecomment-6213332503) and [coordination c6214245560](https://github.com/markgoodbody-bit/COM/issues/831#issuecomment-6214245560).
