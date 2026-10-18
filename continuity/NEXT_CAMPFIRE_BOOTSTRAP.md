@@ -1,5 +1,8 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE
 
+> **18 OCT 2026 / CURRENT ROUTE CORRECTION:** For a fresh successor, FIRST read [continuity/CURRENT_STATE.md](CURRENT_STATE.md), a short, mutable project-only head, then check the **newest live** owner comments in COM #877/#873/#874. These override this dated handoff and the megabyte-scale historical banners in COMHEADS/FRAMEWORK_HEAD/ACTIVE_THREAD_POINTER. Read older heads selectively when resolving a specific ambiguity; do not serially ingest all archived banners or rewrite histories to perform routine COMSYNC. The R3 client ↔ 38-module native report integration is now **TERMINAL/PASS WITH METADATA LIMITS** (#877 c6255228515; #873 c6255329620). Broad free-text admission screening remains STOP/NO_USE. Human hosting/legal GO remains separate. Role-specific assignments are POSTED, not activated by the repository.
+
+
 ## FULL COMSYNC, RECOVER CONTINUITY, LEAD AND PROCEED
 
 **Sunday, 18 October 2026 — evening, Europe/London**
