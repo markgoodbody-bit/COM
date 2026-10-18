@@ -2,9 +2,12 @@
 
 **Snapshot:** 18 October 2026, evening, Europe/London. **Mutable orientation, not provider truth, runtime memory, human approval, or a permanent head.** Latest role-owner comments in the linked issues supersede every statement here. This short entrypoint is intended to replace repeatedly reading megabytes of appended banners at cold boot, **not to delete Git history**.
 
-## H0 exact human decision
+## Current human-authorised provider scope
 
-**18 October 2026: Mark explicitly APPROVED H0, the limited authenticated READ-ONLY Cloudflare/YAC metadata preflight ONLY**, in direct response to the specific H0 question. Full scope/prohibitions: [COM #874 c6255523919](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6255523919); active CODEX handoff: [COM #873 c6255527436](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6255527436). H0 is POSTED, not observed STARTED/TERMINAL; Codex owns bounded read-only source/version/flags/binding types, D1 schema/aggregate counts, plan/quota and backup/bookmark/restore-capability metadata. No secrets or participant rows, no provider write, migration, backup/restore actuation, domain change, expense or service opening. **STAGE_WRITES_OFF GO NOT GRANTED. AUTO_PUBLIC OPEN GO NOT GRANTED.** Latest live issue receipts override this dated snapshot.
+H0 read-only GET preflight was approved and completed PARTIAL, not pending. Codex's authenticated [H0 terminal, #873 c6255603703](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6255603703) verified apex and read-only MCP source/version unchanged at 21:51 UTC, all three public-writing flags OFF, D1 database metadata three tables/45,056 bytes; plan/quota 403 UNKNOWN and no schema SQL or backup restore. No hosted changes were made.
+
+**Mark explicitly APPROVED H1** in the current Campfire chat: exactly limited non-mutating D1 schema and aggregate SELECT queries through the provider's POST query transport plus one non-mutating GET bookmark lookup. Exact [H1 human grant and safeguards, #874 c6255678078](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6255678078); [Codex task #873 c6255682043](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6255682043). **H1 POSTED, not observed STARTED or completed**. No other HTTP POST, source deployment, row-level query, restoration, publishing, account or legal change permitted. **STAGE_WRITES_OFF and AUTO_PUBLIC OPEN GOs remain NOT GRANTED**. Live owner comments supersede this dated summary.
+
 
 ## Why
 
