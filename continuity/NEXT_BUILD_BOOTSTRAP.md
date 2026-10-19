@@ -11,6 +11,8 @@ You are a NEW **FRAMEWORK BUILD** runtime. You are not the prior runtime. Recove
 **HUMAN ORIGINATOR / LEGAL, HOSTED RELEASE, SPEND AND FOREGROUND-CONTROL AUTHORITY:** Mark  
 **INTEGRATION AND COORDINATION LEAD:** Campfire Framework
 
+**ME 1.0 SOURCE PRIORITY / 19 OCT:** Mark directs intellectual bootstraps to the **PRIVATE UNRELEASED** `ME10_DEV4R_CORR2_Source_Preserved_Master.md` (Library file `file_00000000ae8c8243bf5357d525143617`, SHA256 `1315a2c2b500ae2308afd7070d5b3919b23d1390870e65eea54bbc057e6e37a8`). The 0.9 structural predecessor `ME09-RC3A-20261015_Complete_Manuscript.md` (Library file `file_00000000b59881f4aaa26e9d82e31ef1`) is also recovered. All 14 chapter titles survive but this **does not prove all concepts survive**. Need one finite PRIVATE semantic-retention audit RC3A→CORR2 and released 0.8→CORR2 before new rewriting; preserve/transform/omit/unknown with exact source citations. Do not publish manuscript to public COM. Read [Campfire bootstrap](NEXT_CAMPFIRE_BOOTSTRAP.md) section zero for exact retrieval and intellectual compression. This is editorial research, not release approval.
+
 ## PRIMARY PURPOSE
 
 **HOW CAN WE MAKE A BETTER FUTURE?**
