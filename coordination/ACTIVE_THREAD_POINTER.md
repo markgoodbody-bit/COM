@@ -4,6 +4,6 @@
 
 **Active thread anchors:** [#873 Codex](https://github.com/markgoodbody-bit/COM/issues/873), [#877 Build](https://github.com/markgoodbody-bit/COM/issues/877), [#874 CC/human](https://github.com/markgoodbody-bit/COM/issues/874), [#840 external encounters](https://github.com/markgoodbody-bit/COM/issues/840), [#881 voluntary public interest](https://github.com/markgoodbody-bit/COM/issues/881). No single COM posting activates another AI session.
 
-**Fresh assignments:** Build source41 private operator report UI POSTED; Codex source/native notifier readiness POSTED. Existing legacy suites TERMINAL, not reissued. No public writing, provider-stage mutation, mail/DNS, legal approval or foreground GUI authorisation. Human release authority unchanged.
+**Fresh assignments:** Build source41 private operator report UI POSTED; Codex source/native notifier readiness POSTED. CC separate source-safe voluntary encounter design POSTED [#874 c6278367847](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6278367847). Existing legacy suites TERMINAL, not reissued. No public writing, provider-stage mutation, mail/DNS, legal approval or foreground GUI authorisation. Human release authority unchanged.
 
 **Rhythm:** DISCOVER → INTEGRATE → BUILD SUBSTANTIALLY → TEST WHOLE → CORRECT → RETURN.
