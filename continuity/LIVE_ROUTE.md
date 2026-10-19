@@ -8,7 +8,7 @@
 
 A later live COM delta now establishes **bounded private source work**, not a public build lane:
 
-- YAC steward-triage Repair R1 is source-local and awaiting one exact changed-path native acceptance.
+- YAC steward-triage Repair R1 is source-local; Codex has now STARTED the one exact changed-path native acceptance [#873 c6279492453](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279492453).
 - Mechanical Ethics CORR2 has a nonblocking editorial loss map; it creates a human editorial choice, not rewrite or release authority.
 - Build and Codex have distinct post-repair source-local missions; Claude Code has a separate five-paper intellectual challenge posted.
 - Public YAC writing remains OFF. No provider, mail, DNS, production, public publication or external-contact authority follows.
@@ -41,11 +41,11 @@ Build Repair R1 is **SOURCE_LOCAL_PASS / REPAIRED_UI_NATIVE_PENDING** [#877 c627
 
 Exact private R1 ZIP SHA256: `68f6e21b732e1b1c65233b7ae7f3ea2457a2f853e6e242b9816230b3dc77a056`. Build reports 23 focused source-local checks; this is not native whole acceptance.
 
-Codex's backend/F1 semantics terminal is [#873 c6279024575](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279024575), source-set SHA256 `1dde9fbee04d6f8fb3c9dc79b8e95f9b35f04c35321021c0b06a4cd24fd38f6c`, with 31 targeted native checks and the original pagination defect retained. Build handed the final donor to Codex [#873 c6279074794](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279074794). **One changed-path native UI→Workerd/D1 acceptance is still pending.** Do not infer it, rerun blanket suites or claim hosted acceptance.
+Codex's backend/F1 semantics terminal is [#873 c6279024575](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279024575), source-set SHA256 `1dde9fbee04d6f8fb3c9dc79b8e95f9b35f04c35321021c0b06a4cd24fd38f6c`, with 31 targeted native checks and the original pagination defect retained. Build handed the final donor to Codex [#873 c6279074794](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279074794). Codex **STARTED** the one changed-path native UI→Workerd/D1 acceptance [#873 c6279492453](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279492453). It is not terminal yet. Do not infer the result, rerun blanket suites or claim hosted acceptance.
 
 After that exact closure:
 
-- Codex may choose one bounded reversible THR preservation/currentness/reader-integrity improvement or YAC public read-only accessibility/return problem [#873 c6278943435](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6278943435).
+- Codex's follow-on is now narrowed to one source-local THR/YAC read-only counterexample distinguishing independent from correlated witness evidence or stale from fresh records [#873 c6279481358](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279481358). It waits until R1 acceptance closes.
 - Build may run one distinct source-local first-visitor comprehension experiment in PSFH or YAC around other entity → carrier → consequence → return/correction, with meaningful exit and no forced identity [#877 c6279372485](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279372485).
 
 Both are source-only and nonpublic: no merge, deploy, provider, GUI, mail, DNS, spending, external contact or policy expansion.
