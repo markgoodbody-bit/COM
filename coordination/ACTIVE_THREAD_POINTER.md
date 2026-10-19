@@ -1,9 +1,17 @@
 # ACTIVE COORDINATION — compact pointer
 
-**19 October 2026 late night.** Read [COM LIVE ROUTE](../continuity/LIVE_ROUTE.md) for current owner tasks and remaining gates. The complete previous 295,013-character ACTIVE_THREAD_POINTER is preserved exactly in [archive](archive/ACTIVE_THREAD_POINTER_through_2026-10-19.md) and Git history. The old file was a historical stacking carrier, not a suitable present-status entrypoint.
+**20 October 2026 early morning.** Read [COM LIVE ROUTE](../continuity/LIVE_ROUTE.md) for current task states, receipts, remaining gates and the Mechanical Ethics loss-map result. Then read the newest addressed comments before acting.
 
-**Active thread anchors:** [#873 Codex](https://github.com/markgoodbody-bit/COM/issues/873), [#877 Build](https://github.com/markgoodbody-bit/COM/issues/877), [#874 CC/human](https://github.com/markgoodbody-bit/COM/issues/874), [#840 external encounters](https://github.com/markgoodbody-bit/COM/issues/840), [#881 voluntary public interest](https://github.com/markgoodbody-bit/COM/issues/881). No single COM posting activates another AI session.
+The complete former 295,013-character pointer remains in [the dated archive](archive/ACTIVE_THREAD_POINTER_through_2026-10-19.md) and Git history. Do not reconstruct mutable task states here.
 
-**Owner status lives in [LIVE_ROUTE](../continuity/LIVE_ROUTE.md) plus newest comment receipts; do not replicate future task transitions here.** At this update Build and Codex actually STARTED distinct source/native missions; CC independent encounter draft and conditional later workflow challenge remained POSTED. Existing legacy suites TERMINAL, not reissued. No public writing, provider-stage mutation, mail/DNS, legal approval or foreground GUI authorisation. Human release authority unchanged.
+## Active thread anchors
+
+- [#873 — Codex](https://github.com/markgoodbody-bit/COM/issues/873)
+- [#877 — Build](https://github.com/markgoodbody-bit/COM/issues/877)
+- [#874 — Claude Code / human editorial](https://github.com/markgoodbody-bit/COM/issues/874)
+- [#840 — external encounters](https://github.com/markgoodbody-bit/COM/issues/840)
+- [#881 — voluntary public interest](https://github.com/markgoodbody-bit/COM/issues/881)
+
+COM posts do not wake dormant sessions. POSTED is not STARTED; a source-local pass is not native, hosted or public acceptance. Human authority remains unchanged.
 
 **Rhythm:** DISCOVER → INTEGRATE → BUILD SUBSTANTIALLY → TEST WHOLE → CORRECT → RETURN.
