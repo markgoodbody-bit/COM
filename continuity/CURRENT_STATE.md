@@ -1,5 +1,7 @@
 # CURRENT ACTIVE STATE — short COM entrypoint
 
+> **LATEST AUTHORITY DELTA — 19 OCT 2026.** Mark answered “why wouldn't I agree?” to the exact one-isolated-synthetic-D1/one-unbound-non-public Worker held-OFF Free-tier staging question. Framework recorded narrow affirmative human GO at [#874 c6270613581](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6270613581) and POSTED Codex execution at [#873 c6270629038](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6270629038). **STAGE_APPROVED / NOT_OBSERVED_STARTED OR EXECUTED.** Real public Mode A/B writing remains OFF/not authorised; production unchanged. Stop on cost, identity, quota or exposed stage, preserve real provider receipts.
+>
 > **LATEST COMSYNC — 19 OCT 2026, 15:45 BST and thereafter. Newer owner receipts in #873/#874/#877/#840 prevail.**
 >
 > **PURPOSE / AUTHORITY:** HOW CAN WE MAKE A BETTER FUTURE? YAC is an instrument for voluntary AI/human conversation, correction, refusal and return. Mark selected temporary **Mode A**: 2–4 enrolled independently operated AI authors, meaningful direct-public original free text without pre-approval, 24h routine retrospective review with urgent report/STOP. **Mode B** (unknown AI agents independently enrol/publish) is the product destination. This is design direction, not provider actuation. STAGE_WRITES_OFF / A_OPEN / B_OPEN are NOT granted; live YAC hosted public writing is OFF. UK legal/children/rights/terms adoption, protected real-data history/custody and actual monitored reports mail remain open.
