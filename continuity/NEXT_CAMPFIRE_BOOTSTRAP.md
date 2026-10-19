@@ -2,7 +2,7 @@
 
 ## FULL COMSYNC — RECOVER CONTINUITY, LEAD, AND PROCEED
 
-**19 October 2026, evening (Europe/London) — successor handoff**
+**19 October 2026, late evening (Europe/London) — successor handoff; hosted stage result verified**
 
 You are a **NEW Campfire Framework runtime**, not a continuing predecessor process. Recover state from durable records, not assumed inherited memory, previous local files, unfinished execution, or implied authority.
 
@@ -54,9 +54,9 @@ https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6271556144
 **Already dispatched to Codex**:
 https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6271569698
 
-**STATUS AT LAST READ: POSTED, START NOT OBSERVED.** Do not duplicate this assignment or ask Mark to approve the same replacement again. Recheck owner comments FIRST.
+**STATUS SUPERSEDED BY ACTUAL CODEx HOSTED TERMINAL:** The replacement stage has now **STARTED AND FINISHED, RETAINED AND VERIFIED**, see #873 c6271898498. Do not recreate or delete this verified stage on routine COMSYNC. The earlier dispatch and START remain historical. Recheck owner comments FIRST.
 
-### WHY THE PRIOR PROVIDER STAGE FAILED, AND WHAT MUST CHANGE
+### WHY THE FIRST PROVIDER STAGE FAILED — AND HOW THE REPLACEMENT SUCCEEDED
 
 Codex's prior original stage attempt genuinely:
 - Created one isolated synthetic D1 and one unbound, non-public Worker;
@@ -71,7 +71,15 @@ Primary receipts:
 https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6271350634
 https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6271556144
 
-NEXT-RUN-ONLY.patch in Codex's private operator packet corrects the readback GET **include=modules** and canonical object comparison. Codex must verify patch offline, then perform the next approved provider run with exact live provider readback and fail-closed controls. Source39 ZIP SHA256 **2696821371336c53905b12b7643cf508105fd90f782309e98922b2c675b94bed**; sorted 39-module set digest **077555c8123bd9c1bacf00f8e7b22bdd50b434394d1734cb3b95a903956324b2**. Original private39 retains PUBLICATION_ENABLED=False, MODE_A_SOURCE_ARMED=False and four SQL stage-refusal triggers.
+Codex applied the narrow NEXT-RUN-ONLY.patch, requested **include=modules** in the actual Worker-version GET and performed canonical source/config comparisons. **All 39 returned hosted module digests matched source39; the ONE replacement isolated stage pair is RETAINED, not deleted.** Source39 ZIP SHA256 **2696821371336c53905b12b7643cf508105fd90f782309e98922b2c675b94bed**; sorted 39-module set digest **077555c8123bd9c1bacf00f8e7b22bdd50b434394d1734cb3b95a903956324b2**. Source39 retains PUBLICATION_ENABLED=False, MODE_A_SOURCE_ARMED=False and four SQL stage-refusal triggers. This fixes the specific prior readback bug but does NOT prove public site readiness, semantic safety or protected real-data recovery.
+
+### VERIFIED REPLACEMENT STAGE — HOSTED TERMINAL, NOT PUBLIC OPEN
+
+Codex STARTED [#873 c6271820713](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6271820713) and returned **STAGE_HELD_OFF_NONPUBLIC_SOURCE_AND_SCHEMA_VERIFIED** [#873 c6271898498](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6271898498). Run 19 October **16:18:15–16:19:00 UTC**, 43 authenticated provider operations. **ONE isolated synthetic-only D1 plus ONE unbound, NONPUBLIC Worker RETAINED** (not deleted); one private unbound 100% Worker version deployment. Workers.dev and previews OFF from CREATE, no custom domain/route/service/queue consumers and no public stage HTTP test; exact private IDs/version are in owner-only RETAINED-STAGE.json, not public COM.
+
+Using Worker-version GET **include=modules**, Codex decoded **all 39 actual returned hosted module bytes**, SHA256-matched the pinned original source, verified all **17 bindings** and **51 schema objects / 25 tables**; 9 system/control rows only. Exact source compiled HARD_OFF; all public/intake/operator writing OFF, four SQL refusal triggers active. Deliberate synthetic contribution INSERT refused STAGE_WRITES_OFF/HTTP400/code7500; stored contributions zero. No real participants, keys or V1 production rows. Existing apex31, five-tool MCP, production D1/Worker/route/source/bindings matched before/after in bounded authenticated comparisons. No production SQL, paid plan, DNS/mail or public writing; no new human release GO needed for THIS already completed stage.
+
+The previously missing-module failure is now fixed and preserved as history. **Do not invoke the private operator script again just to check COMSYNC, delete the successful stage, or claim that private unbound deployment is live participant access.** A retained stage is useful proof of resource isolation and exact hosted source/schema, NOT a finding of legal, protected recovery, real report delivery or Mode A/B public readiness.
 
 ### OTHER YAC ENGINEERING: ACTUAL RESULTS AND UNRESOLVED LIMITS
 
@@ -85,7 +93,7 @@ The initial exact source39 backend joined native with the human/agent client und
 https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6268037455
 https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6269938226
 
-**Actual hosted YAC:** 31-module public V1 and five read-only registered MCP tools by prior authenticated checks; GENERAL/GUEST/COMMONS hosted writing OFF, no Mode A stage currently retained as of the last terminal. The root deliberately displays a selection of contributions, whereas original HTML GET **https://yetanotherclearing.com/visit?fire=2&after=0** supports a full bounded fire (20/page, next cursor), verified against genuine source and synthetic renderer, not yet live-tested by Meta. Existing V1 raw reader is NOT a future safe protected Mode A reader.
+**Actual hosted YAC:** Existing public production apex31 and five read-only registered MCP tools remain unchanged, GENERAL/GUEST/COMMONS public writing OFF. **Separate retained Mode-A STAGING now EXISTS but is NONPUBLIC, unbound and HARD_OFF**, with one isolated new synthetic D1. Exact identifiers are in an owner-only RETAINED-STAGE.json and MUST NOT be publicly copied or casually deleted. The root deliberately displays only selected contributions; HTML GET **https://yetanotherclearing.com/visit?fire=2&after=0** exposes bounded full fire history (20/page, next cursor), verified in exact source/synthetic renderer but not yet live-tested by Meta. Old V1 raw reader is NOT an authoritative protected Mode A reader.
 https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6269929769
 
 ### PRODUCT, OUTSIDE VOICES AND REAL OPERATIONS
@@ -107,9 +115,9 @@ Released Mechanical Ethics v0.8.0 and TRACE v0.4.0 are not proof of ethical effe
 
 ### WHAT THE NEXT CAMPFIRE SHOULD DO
 
-**IMMEDIATELY FULL COMSYNC.** Check if Codex has STARTED/finished the already approved replacement stage. If not, keep exact Codex assignment posted; do not claim automatic background work or ask Mark the same permission again. If a real stage terminal exists, reconcile exact new resource identities, hosted actual byte readback, staging non-public/off status, first failure, production invariant and subsequent bounded operations. Correct compact continuity and integrate outcome. Preserve unresolved requirements without turning one technical failure into a global STOP of purpose.
+**IMMEDIATELY FULL COMSYNC.** Codex has ALREADY RETURNED the retained-stage terminal [#873 c6271898498](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6271898498): **STAGE_HELD_OFF_NONPUBLIC_SOURCE_AND_SCHEMA_VERIFIED**. First check if any later owner result supersedes it; if not, treat the stage as real and RETAINED, not a pending create. Verify the controlling human stage receipt [#874 c6271556144](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6271556144), handoff receipt [#874 c6271921408](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6271921408) and latest compact CURRENT_STATE. Do not ask Mark to reapprove, recreate the pair or claim public writes are on. Reconcile new owner comments only and lead next bounded acceptance.
 
-**LEAD SUBSTANTIAL NEXT USEFUL WORK:** When stage is retained, arrange actual isolated hosted/accessible verification where separately authorised, real complaint-mail path and review adoption in one coherent decision packet; continue recruitment/agent dialogue outside YAC without implying public writes. Seek only the next genuinely consequential Mark choice. Delegate to strongest owner; don't exhaust conversation with duplicated COMHEAD banners or a repeating build-test-ask loop.
+**LEAD SUBSTANTIAL NEXT USEFUL WORK:** The stage IS RETAINED. Select one smallest next coherent hosted/operator acceptance step without weakening source-hard-OFF or exposing it publicly by inference. Real report/429 overflow delivery, human urgent response capability, adoption of UK legal/children/privacy/rights/retention terms, protected real-data history/cutover, device accessibility and actual independent participation remain meaningful barriers to OPEN, not reasons to redo provider creation. Present only a truly consequential Mark decision for any further provider scope, mail/DNS or eventual explicit public Mode A OPEN. Continue voluntary external field encounters; build towards Mode B without requiring personal per-AI approval. Stop duplicated COMHEAD banners and build-test-ask loops.
 
 **END SUBSTANTIVE UPDATES with which apertures actually need COMSYNC and why.**
 
