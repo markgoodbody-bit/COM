@@ -9,7 +9,7 @@ The former 361,683-byte stacked build ledger is preserved exactly in Git history
 - Build Repair R1 is **SOURCE_LOCAL_PASS / REPAIRED_UI_NATIVE_PENDING** [#877 c6279074602](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279074602).
 - Codex's backend/F1 semantics work is terminal with 31 targeted native checks [#873 c6279024575](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279024575).
 - The final R1 donor is handed over [#873 c6279074794](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279074794).
-- **One exact changed-path repaired UI→Workerd/D1 acceptance remains pending.** Do not infer it, repeat blanket suites or claim hosted acceptance.
+- Codex **STARTED** the one exact changed-path repaired UI→Workerd/D1 acceptance [#873 c6279492453](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279492453). It is not terminal; do not infer the result, repeat blanket suites or claim hosted acceptance.
 - Retained hosted YAC remains nonpublic HARD_OFF. No merge, deploy, provider, mail, DNS, public writing or human operating-policy gate changed.
 
-After exact closure, distinct source-local visitor/read-only missions are already routed in LIVE_ROUTE. Preserve first failures and limits; avoid review or test carousels.
+After exact closure, distinct source-local visitor/read-only missions are already routed in LIVE_ROUTE; Codex's follow-on explicitly waits behind this acceptance. Preserve first failures and limits; avoid review or test carousels.
