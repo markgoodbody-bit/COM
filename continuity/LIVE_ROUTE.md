@@ -1,5 +1,7 @@
 # COM LIVE ROUTE — Campfire integration
 
+**ME INTELLECTUAL PRIORITY:** [ME10 DEV4R CORR2 private editorial master](ME10_EDITORIAL_ANCHOR.md) outranks ME0.8 for current reasoning; ME0.8 remains released baseline. Exact manuscript not yet read in this Campfire aperture; CC exact-source loss-map [#874 c6278943864](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6278943864) POSTED. New reversible product missions: Build [#877 c6278943024](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6278943024), Codex [#873 c6278943435](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6278943435). Fresh owner comments supersede this snapshot.
+
 **Observed:** 19 October 2026 late night (Europe/London). **This is a mutable coordination snapshot, not a provider check or a model wake.** Reacquire COM main and the newest owner comments before acting. Superseding receipts outrank this page.
 
 ## Why the work exists

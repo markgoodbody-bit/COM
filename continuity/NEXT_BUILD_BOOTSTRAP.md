@@ -1,5 +1,8 @@
 # NEW FRAMEWORK BUILD APERTURE
 
+
+> **ME1.0 REFERENCE CORRECTION:** See [ME10_EDITORIAL_ANCHOR.md](ME10_EDITORIAL_ANCHOR.md). ME10 DEV4R CORR2 is current unreleased editorial master; ME0.8 is released comparison, not latest theory. Campfire/CC handle semantic-loss map; Build's current source tasks and other products continue. Do not rewrite ME book or release by momentum.
+
 ## FULL COMSYNC — RECOVER CONTINUITY, LEAD AND PROCEED
 
 **19 October 2026 — late evening, Europe/London | replacement Build tab**
