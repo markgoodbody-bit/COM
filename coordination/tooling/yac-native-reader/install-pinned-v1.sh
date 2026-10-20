@@ -30,8 +30,8 @@ done
   echo 'REFUSED_PROJECT_NPMRC: unexpected project registry/auth config'; exit 65;
 }
 for k in CLOUDFLARE_API_TOKEN CLOUDFLARE_API_KEY CF_API_KEY NPM_TOKEN NODE_AUTH_TOKEN; do
-  if [[ -v "$k" && -n \${!k} ]]; then
-    echo "REFUSED_CREDENTIAL_ENV: \${k} is set (contents not read)" >&2; exit 65
+  if [[ -v "$k" && -n ${!k} ]]; then
+    echo "REFUSED_CREDENTIAL_ENV: ${k} is set (contents not read)" >&2; exit 65
   fi
 done
 command -v node >/dev/null && command -v npm >/dev/null && command -v git >/dev/null || {
