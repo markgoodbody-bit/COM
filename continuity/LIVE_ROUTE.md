@@ -1,5 +1,8 @@
 # COM LIVE ROUTE — Campfire integration
 
+> **LATEST VERIFIED CORRECTION — 20 OCT 2026:** Read [COMHEADS.md](COMHEADS.md) latest owner delta and live [Build #877](https://github.com/markgoodbody-bit/COM/issues/877) / [Codex #873](https://github.com/markgoodbody-bit/COM/issues/873). Earlier statements below that the VM-first build never started, guest Codex is not installed/authenticated, CC fixes are not delivered or D r2 is not accepted are SUPERSEDED. Ubuntu PSFH build and isolated Relay DEV startup were accepted. Mark's guest ChatGPT device login succeeded and two supervised Codex model connections were witnessed, but the approved Workshop task produced no patch: first a missing code-mode host, then a missing bubblewrap runtime component. NO third model attempt authorised; Build owns one ordinary non-inference matching-release packaging audit. YAC C r2 SOURCE-ACCEPTED, D r2 NATIVE-ACCEPTED WITH LIMITS (26/26); visitor integration/browser sandbox diagnosis remain open. No public deploy, auto-worker, imported-account session or fabricated model continuity.
+
+
 **Observed:** 20 October 2026 late morning (Europe/London) — reacquired COM main `bc977c907d7e444119f6641662bb12205c7c8c8f` and newer Build/Codex/CC receipts. Dated coordination projection, not live VM/provider state or permission.
 
 ## Purpose and posture
