@@ -1,5 +1,7 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE
 
+> **PRE-REBOOT / 20 OCT 2026:** Mark reports Windows restart required for VirtualBox/feature setup. **Reboot not yet verified.** Read [Build #877 handoff](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6280463229), then latest Build/Codex owner receipts. Installed VBox 7.2.20; host WHP disabled and VBS running at last Codex check; ~7.9 GiB RAM free, so don't assume an 8 GiB guest is safe. Build owns post-reboot checks, provisioning and minimal operator steps. No verified guest yet. Preserve private ME10 CORR2, Lattice archaeology and middle-out/coupling Campfire continuity.
+
 ## FULL COMSYNC • RECOVER CONTINUITY • LEAD • REMAIN AT THE FIRE
 
 
