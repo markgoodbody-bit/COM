@@ -81,8 +81,9 @@ if [[ $mode == --install ]]; then
   tmp=$(mktemp -d /tmp/yac-locked-npm.XXXXXXXX)
   trap 'rm -rf -- "$tmp"' EXIT
   : > "$tmp/empty-npmrc"
+  : > "$tmp/empty-global-npmrc"
   export NPM_CONFIG_USERCONFIG="$tmp/empty-npmrc"
-  export NPM_CONFIG_GLOBALCONFIG="$tmp/empty-npmrc"
+  export NPM_CONFIG_GLOBALCONFIG="$tmp/empty-global-npmrc"
   export NPM_CONFIG_CACHE="$tmp/cache"
   export NPM_CONFIG_AUDIT=false NPM_CONFIG_FUND=false
   export NPM_CONFIG_IGNORE_SCRIPTS=true
