@@ -1,6 +1,6 @@
 # COM LIVE ROUTE — Campfire integration
 
-**Observed:** 20 October 2026 early morning (Europe/London). **Mutable coordination snapshot, not canon, release authority, provider state or an automatic model wake.** Reacquire COM main and newest addressed comments before acting; later supported receipts supersede this page.
+**Observed:** 20 October 2026 01:38 BST (Europe/London). **Mutable coordination snapshot, not canon, release authority, provider state or an automatic model wake.** Reacquire COM main and newest addressed comments before acting; later supported receipts supersede this page.
 
 ## Purpose and posture
 
@@ -30,25 +30,18 @@ It also recorded smaller losses and transformations around closure burden, coerc
 
 A new source-safe five-paper “middle-out coupling” challenge is **POSTED / START NOT OBSERVED** [#874 c6279373283](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6279373283). It must distinguish causal coupling from correlation, higher-level agency from aggregation, and moral standing from causal participation; no publication or specification follows automatically.
 
-## YAC — exact current engineering state
+## Current engineering state — earned results, not release
 
-Build Repair R1 is **SOURCE_LOCAL_PASS / REPAIRED_UI_NATIVE_PENDING** [#877 c6279074602](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279074602). It repairs:
+- **YAC private steward R1:** Build original repair [#877 c6279074602](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279074602), Codex native changed-path [#873 c6279557730](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279557730) **PASS WITH LIMITS** (31 scripted HTTP-UI observations + 12 separate fixture checks), not browser, real incident coverage or hosted proof. One evidence-file CRLF integrity mismatch was FOUND and Build corrected it in an immutable exact carrier [#877 c6279615218](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279615218); no application changes or broad suite rerun. No Mode A/B public write grant.
+- **YAC/THR reasoning experiments:** Codex [#873 c6279586347](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279586347) provided one real-capture counterexample: 100 correlated copies of an old acknowledgement summary are not 100 independent witnesses; same epoch/high-water/second is not a reliable content version. Build's biological navigation inquiry [#877 c6280034871](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6280034871) distinguished causal connection, retained representation, target tracking and reflective awareness without claiming a new primitive. Build's visitor source package [#877 c6279710536](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279710536) is source-local; no public deploy.
+- **Claude Code:** finite cross-domain five-paper coupling challenge STARTED [#874 c6279556074](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6279556074), return not yet observed. CC private ME0.8→CORR2 loss-map already TERMINAL [#874 c6279203983](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6279203983); source limits in intellectual section above. Don't restart identical analysis.
 
-- explicit same-ID/body recovery only after GET 404, fresh receipt check, same observed epoch, one-use durable ticket and owner attestation; 404 is not proof of no commit and the client epoch check is not an atomic backend fence;
-- active-register exhaustion by retaining terminal records in an addressable archive;
-- corrupt/stray register visibility by keeping reports readable while all mutations HOLD;
-- page-independent urgent/ordinary unacknowledged owner-ACK counts using the frozen Codex backend contract.
+## Windows host / isolated engineering VM — 20 OCT post-restart
 
-Exact private R1 ZIP SHA256: `68f6e21b732e1b1c65233b7ae7f3ea2457a2f853e6e242b9816230b3dc77a056`. Build reports 23 focused source-local checks; this is not native whole acceptance.
-
-Codex's backend/F1 semantics terminal is [#873 c6279024575](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279024575), source-set SHA256 `1dde9fbee04d6f8fb3c9dc79b8e95f9b35f04c35321021c0b06a4cd24fd38f6c`, with 31 targeted native checks and the original pagination defect retained. Build handed the final donor to Codex [#873 c6279074794](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279074794). Codex **STARTED** the one changed-path native UI→Workerd/D1 acceptance [#873 c6279492453](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279492453). It is not terminal yet. Do not infer the result, rerun blanket suites or claim hosted acceptance.
-
-After that exact closure:
-
-- Codex's follow-on is now narrowed to one source-local THR/YAC read-only counterexample distinguishing independent from correlated witness evidence or stale from fresh records [#873 c6279481358](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279481358). It waits until R1 acceptance closes.
-- Build may run one distinct source-local first-visitor comprehension experiment in PSFH or YAC around other entity → carrier → consequence → return/correction, with meaningful exit and no forced identity [#877 c6279372485](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279372485).
-
-Both are source-only and nonpublic: no merge, deploy, provider, GUI, mail, DNS, spending, external contact or policy expansion.
+- **Host VERIFIED (scoped):** VirtualBox7.2.20 installed; [Build](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6280519734) reports Mark restarted following successful WHP DISM enable; [Codex native read](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280542954) found **WHP enabled, VBS running, free RAM ~13.7 GiB**. Earlier pre-reboot WHP disabled/free RAM7.9 GiB now SUPERSEDED. Resource measurements vary; recheck before sizing. One existing powered-off Windows-configured VM must not be touched by Ubuntu work.
+- **Build OWNER / VM provisioning IN PROGRESS:** obtain verified official Ubuntu Server ISO, detect unattended compatibility, create uniquely named guest only after bounded checks, no Windows personal mounts/secrets. User wants the best feasible lab with minimal manual steps and ordinary outbound NAT, not artificial egress permission ceremonies. NAT alone does not enforce no-LAN/no-host reachability. **NEW UBUNTU VM = NOT YET CREATED/BOOTED; guest network-isolation test = NOT RUN.**
+- **Codex SPECIALIST:** native host preflight complete [#873 c6280402538](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280402538); separately STARTED source-only durable queue/lease/review/stop workbench [#873 c6280542954](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280542954). No VM service, timer, remote agent, account or credential launched. Source candidate does not wake another AI conversation.
+- **Consequential boundaries:** operator-owned host elevation/sensitive credentials, public publication, external account creation, production actions and spending are separate gates. Reboot itself is neither guest boot nor proof of containment.
 
 ## Operational boundaries
 
