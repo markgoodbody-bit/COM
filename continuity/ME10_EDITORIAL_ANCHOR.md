@@ -13,9 +13,9 @@
 
 These are custody receipts, not evidence that a present aperture read the whole exact source. The manuscript stays private.
 
-## Independent loss map — terminal with a source limit
+## Independent loss map — original source limit, later narrowed for named probes
 
-Claude Code returned the assigned ME0.8→CORR2 comparison [#874 c6279203983](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6279203983). It read all 50 pages of the hash-matched CORR2 PDF and all 1,013 lines of released ME0.8. **The exact CORR2 Markdown was inaccessible**, so the result is a PDF-text loss map, not an exact-source or layout-complete comparison. RC3A was not compared.
+Claude Code returned the assigned ME0.8→CORR2 comparison [#874 c6279203983](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6279203983). It read all 50 pages of the hash-matched CORR2 PDF and all 1,013 lines of released ME0.8. **At that initial pass** exact CORR2 Markdown was inaccessible; the reported result was a PDF-text loss map, not exact-source/layout-complete. **Later correction:** CC read and hash-checked the exact private CORR2 Markdown through Build's authorised private carrier and reran the named B1–B4 and smaller-loss phrase probes; the previous zero-hit probes were again zero [#874 c6280851527](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6280851527). This narrows the PDF-versus-Markdown source limit for the *named probes only*. It does **not** establish a whole-book independent second semantic pass, completeness, human editorial approval or agreement with every gap verdict. RC3A was not compared.
 
 Most named concepts were preserved, restored or strengthened: correction before hardening, protected-scope uncertainty, witness independence, strategic unknown, residue, privacy, most burden reasoning and predation. Transformations remain around closure-support burden and the coercive-dependence illustration.
 
@@ -28,7 +28,7 @@ Four material editorial losses were identified:
 
 Smaller editorial losses or transformations were also preserved in the receipt: fear degrading information, the sincere satisfied user, custody modesty, named neighbouring traditions, and lived-experience/despair grounding.
 
-**Disposition:** these are bounded inputs to Mark's editorial judgment, not a mandatory CORR3, rewrite, benchmark, schema, reward function, personhood claim, canon change or release. The smallest proposed repairs are sentences for items 1, 2 and 4 and restoration of one existing outcome paragraph for item 3, but whether any return is a human editorial choice. Do not erase the source limitation.
+**Disposition:** these are bounded inputs to Mark's editorial judgment, not a mandatory CORR3, rewrite, benchmark, schema, reward function, personhood claim, canon change or release. The smallest proposed repairs are sentences for items 1, 2 and 4 and restoration of one existing outcome paragraph for item 3, but whether any return is a human editorial choice. Preserve the initial source limitation alongside the later narrowly verified Markdown probes.
 
 ## Reading and reasoning discipline
 
