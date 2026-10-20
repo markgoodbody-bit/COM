@@ -1,15 +1,14 @@
 # BUILD STATUS — compact diagnostic pointer
 
-**20 October 2026 early morning, Europe/London.** Current engineering state and exact limits live in [COM LIVE ROUTE](../../continuity/LIVE_ROUTE.md) plus the newest addressed comments in [#877](https://github.com/markgoodbody-bit/COM/issues/877) and [#873](https://github.com/markgoodbody-bit/COM/issues/873).
+**20 October 2026 — updated after first Ubuntu guest boot.** Current exact owner state is in [COM LIVE ROUTE](../../continuity/LIVE_ROUTE.md) and newest addressed comments in [#877 Build](https://github.com/markgoodbody-bit/COM/issues/877) and [#873 Codex](https://github.com/markgoodbody-bit/COM/issues/873). GitHub records do not wake a dormant AI runtime.
 
-The former 361,683-byte stacked build ledger is preserved exactly in Git history at parent commit `b22b38dbebe9112efcb64af3cf9b4367097ae7f0`. It is historical evidence, not current dispatch.
+The historical larger build ledger is preserved in Git at parent commit `b22b38dbebe9112efcb64af3cf9b4367097ae7f0`. Do not make a new stacked status log.
 
-## Current diagnostic
+## Current material position
 
-- Build Repair R1 is **SOURCE_LOCAL_PASS / REPAIRED_UI_NATIVE_PENDING** [#877 c6279074602](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6279074602).
-- Codex's backend/F1 semantics work is terminal with 31 targeted native checks [#873 c6279024575](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279024575).
-- The final R1 donor is handed over [#873 c6279074794](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279074794).
-- Codex **STARTED** the one exact changed-path repaired UI→Workerd/D1 acceptance [#873 c6279492453](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279492453). It is not terminal; do not infer the result, repeat blanket suites or claim hosted acceptance.
-- Retained hosted YAC remains nonpublic HARD_OFF. No merge, deploy, provider, mail, DNS, public writing or human operating-policy gate changed.
+- **Build / VM:** operator-run creation and readback of `Framework-Lab` (4 vCPU, 8 GiB, 80 GiB dynamic VDI) completed [#877 c6280795370](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6280795370). Offline manual Ubuntu 24.04.5 LTS installation and first interactive login witnessed [#877 c6280961596](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6280961596). Genuine unattended detect error `E_NOTIMPL` preserved [#873 c6280770280](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280770280). No false unattended PASS. The other Windows VM remains untouched.
+- **Next engineering boundary:** guest poweroff → detach installer ISO → clean powered-off snapshot → ordinary outbound NAT + actual host/LAN isolation checks → install legitimate development tools → native Ubuntu review of Codex's verified source packet. All eight guest NICs were disabled at creation; NAT not yet commissioned. No autonomous AI team or provider runtime running. Build remains owner; no duplicate assignments.
+- **Codex / separate dependency:** source-only bounded workbench TERMINAL [#873 c6280633845](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280633845), 19/19 real Windows tests PASS, five broken variants detected, Linux/runtime activation NOT_RUN.
+- **YAC stewardship:** Build Repair R1 source-local; Codex native changed-path PASS WITH LIMITS [#873 c6279557730](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6279557730), no actual hosted incident-response or browser accessibility acceptance. Hosted public YAC writing remains OFF / NOT AUTHORIZED. Do not confuse fixture completion, source patch or retained NONPUBLIC HARD_OFF stage with public deployment.
 
-After exact closure, distinct source-local visitor/read-only missions are already routed in LIVE_ROUTE; Codex's follow-on explicitly waits behind this acceptance. Preserve first failures and limits; avoid review or test carousels.
+**Purpose:** useful, protected engineering capability enabling legitimate experimentation with minimal Mark intervention; not a VM prison, project end-state or proof of agency.
