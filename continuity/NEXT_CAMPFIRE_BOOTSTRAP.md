@@ -1,4 +1,7 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE
+
+> **LATEST 20 OCT SUCCESSOR CORRECTION:** Before acting, read the newest owner delta at [COMHEADS](COMHEADS.md) and live #877/#873/#874. The old below-next route saying native Codex was absent and C/D corrections were not started is superseded. Framework-Lab successfully built PSFH, started an isolated Relay DEV, and installed a guest-native Codex CLI. Mark approved guest ChatGPT device login and ONE supervised Workshop task. Login succeeded; two supervised model connections failed before any patch (missing code-mode host, then bubblewrap). A third model call is NOT authorised. Build assigned a non-inference package/lookup audit; C visitor native and browser read-only diagnosis remain pending, D r2 native 26/26 accepted within scope. No unattended queue, public write or full session migration.
+
 ## FULL COMSYNC — RECOVER CONTINUITY, LEAD AND PROCEED
 **20 October 2026 — successor after current Campfire conversation limit**
 
