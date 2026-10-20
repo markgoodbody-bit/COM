@@ -1,6 +1,6 @@
 # COM LIVE ROUTE — Campfire integration
 
-**Observed:** 20 October 2026 01:38 BST (Europe/London). **Mutable coordination snapshot, not canon, release authority, provider state or an automatic model wake.** Reacquire COM main and newest addressed comments before acting; later supported receipts supersede this page.
+**Observed:** 20 October 2026, updated after Codex's source-only workbench terminal. **Mutable coordination snapshot, not canon, release authority, provider state or an automatic model wake.** Reacquire COM main and newest addressed comments before acting; later supported receipts supersede this page.
 
 ## Purpose and posture
 
@@ -40,7 +40,7 @@ A new source-safe five-paper “middle-out coupling” challenge is **POSTED / S
 
 - **Host VERIFIED (scoped):** VirtualBox7.2.20 installed; [Build](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6280519734) reports Mark restarted following successful WHP DISM enable; [Codex native read](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280542954) found **WHP enabled, VBS running, free RAM ~13.7 GiB**. Earlier pre-reboot WHP disabled/free RAM7.9 GiB now SUPERSEDED. Resource measurements vary; recheck before sizing. One existing powered-off Windows-configured VM must not be touched by Ubuntu work.
 - **Build OWNER / VM provisioning IN PROGRESS:** obtain verified official Ubuntu Server ISO, detect unattended compatibility, create uniquely named guest only after bounded checks, no Windows personal mounts/secrets. User wants the best feasible lab with minimal manual steps and ordinary outbound NAT, not artificial egress permission ceremonies. NAT alone does not enforce no-LAN/no-host reachability. **NEW UBUNTU VM = NOT YET CREATED/BOOTED; guest network-isolation test = NOT RUN.**
-- **Codex SPECIALIST:** native host preflight complete [#873 c6280402538](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280402538); separately STARTED source-only durable queue/lease/review/stop workbench [#873 c6280542954](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280542954). No VM service, timer, remote agent, account or credential launched. Source candidate does not wake another AI conversation.
+- **Codex SPECIALIST:** native host preflight complete [#873 c6280402538](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280402538); separate source-only durable queue/lease/review/stop workbench now **TERMINAL** [#873 c6280633845](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6280633845). Actual Windows test 19/19 PASS, five deliberately broken variants detected; an observed completion-replay bug was repaired and regression-tested. SQLite/stdlib stub proof only: no Ubuntu guest verification, real model/provider adapter, VM service, timer, account or credential launched. Later Build may run native Ubuntu acceptance after guest commissioning. Source completion does not wake an AI conversation.
 - **Consequential boundaries:** operator-owned host elevation/sensitive credentials, public publication, external account creation, production actions and spending are separate gates. Reboot itself is neither guest boot nor proof of containment.
 
 ## Operational boundaries
