@@ -31,7 +31,7 @@ test("all three distinct constructed cases are complete provisional passages", (
       assert.ok(text.toLowerCase().includes(section.toLowerCase()), key + " " + section);
     }
     assert.match(text, /not independently verified/);
-    assert.match(text, /can be used, changed, rejected or handed off/);
+    assert.match(text, /may be used, changed, rejected or handed off/);
   }
 });
 test("new future requires declaring whose value counts", () => {
