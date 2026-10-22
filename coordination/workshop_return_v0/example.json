@@ -1,0 +1,7 @@
+{
+  "schema": "workshop-witness.v1",
+  "probes": [],
+  "repos": [],
+  "units": [],
+  "max_age_seconds": 3600
+}
