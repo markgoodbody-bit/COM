@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Passage — a possible future, made reachable</title>
+<style>
+:root{color-scheme:dark;--bg:#121818;--card:#1c2525;--ink:#f2eee4;--muted:#b6c1bc;--line:#42534f;--accent:#ffc978;--subtle:#283532;--focus:#b4e7cb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}main,header,footer{max-width:1110px;margin:auto;padding:0 22px}a{color:var(--accent)}a:focus-visible,button:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}header{padding-top:45px;padding-bottom:32px;border-bottom:1px solid var(--line)}.eyebrow{font-size:.76rem;letter-spacing:.15em;color:var(--accent);font-weight:750;text-transform:uppercase}.hero{font-size:clamp(2rem,5vw,3.5rem);font-weight:700;line-height:1.13;letter-spacing:-.035em;margin:13px 0}.intro{max-width:740px;color:var(--muted);font-size:1.08rem}.strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.badge{border:1px solid var(--line);padding:5px 11px;border-radius:30px;font-size:.78rem;color:var(--muted)}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.82fr);gap:22px;padding-top:26px;padding-bottom:50px;align-items:start}.stack{display:grid;gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:23px}.card h2{font-size:1.35rem;margin:0 0 7px;line-height:1.3}.card h3{font-size:1rem;margin:20px 0 5px}.description{margin:0 0 18px;color:var(--muted);font-size:.95rem}.fields{display:grid;gap:13px}.field label{font-weight:650;display:block;margin:0 0 5px}.help{font-size:.8rem;color:var(--muted);margin:2px 0 6px}textarea,input,select{width:100%;border:1px solid var(--line);border-radius:7px;background:#101817;color:var(--ink);padding:10px 12px;font:inherit;min-height:43px}textarea{min-height:77px;resize:vertical}textarea::placeholder,input::placeholder{color:#8ea19a;opacity:1}button{border:1px solid var(--line);background:var(--subtle);color:var(--ink);padding:9px 13px;border-radius:8px;font:inherit;font-size:.92rem;cursor:pointer}button:hover{border-color:var(--accent);background:#32433b}.primary{background:var(--accent);color:#15201b;border-color:var(--accent);font-weight:700}.primary:hover{background:#ffd99f;color:#111b17}.row{display:flex;gap:9px;flex-wrap:wrap}.number{font-size:.8rem;font-weight:700;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}details{border:1px solid var(--line);border-radius:9px;padding:11px 14px;margin-top:13px}summary{cursor:pointer;font-weight:650;color:var(--accent)}details .fields{padding:15px 0 4px}small{color:var(--muted)}.output{position:sticky;top:18px}.packet{height:315px;font:13.5px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap}.questions{margin:5px 0 0;padding-left:20px;color:var(--muted)}.questions li{padding:3px 0}.hr{border:0;border-top:1px solid var(--line);margin:20px 0}.message{min-height:1.5rem;color:var(--accent);font-size:.9rem}.fine{color:var(--muted);font-size:.83rem}.emphasis{color:var(--accent)}footer{border-top:1px solid var(--line);padding-top:24px;padding-bottom:45px;color:var(--muted);font-size:.9rem}#importFile{display:none}@media(max-width:800px){.layout{grid-template-columns:1fr}.output{position:static}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media(prefers-color-scheme:light){:root{color-scheme:light;--bg:#f7f5ee;--card:#fffdfa;--ink:#1a2b28;--muted:#4c615c;--line:#91a49e;--accent:#7b4d0d;--subtle:#e9eee8;--focus:#1a6750}textarea,input,select{background:#fff;color:#182922}button:hover{background:#d6e5d9}.primary{background:#60421b;color:white;border-color:#60421b}.primary:hover{background:#493010;color:white}.emphasis{color:#6a3b00}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">PASSAGE / EXPERIMENTAL LOCAL TOOL v0</div>
+<h1 class="hero">What future could become<br>possible from here?</h1>
+<p class="intro">Start with something real. See the possibility, its practical route, the people who can answer back, and what would change your mind. This is a voluntary reasoning surface, not an ethics verdict or permission to act.</p>
+<div class="strip"><span class="badge">Works offline</span><span class="badge">Nothing sent or automatically saved</span><span class="badge">No score, ranking or forced next step</span></div>
+</header>
+<main>
+<div class="layout">
+<section class="stack" aria-label="Explore a possibility">
+<div class="card">
+<div class="number">Begin anywhere</div>
+<h2>Take a fictional scene for a walk, or bring your own</h2>
+<p class="description">The examples are constructed, not reports about real people. Loading one replaces the current notes only after you agree.</p>
+<div class="row" role="group" aria-label="Fictional starting scenes">
+<button type="button" data-example="repair">Create: repair evening</button>
+<button type="button" data-example="housing">Correct: service deadline</button>
+<button type="button" data-example="flood">Cooperate: changing flood map</button>
+<button type="button" id="clear">Clear notes</button>
+</div>
+</div>
+<div class="card">
+<div class="number">01 · Horizon and ground</div>
+<h2>Name a worthwhile possibility</h2>
+<p class="description">What could people make, protect, recover, learn or become able to do? Whose view of value is missing?</p>
+<div class="fields">
+<div class="field"><label for="future">A future worth exploring</label><textarea id="future" data-field="future" maxlength="4000" placeholder="A specific new capability, relationship or repaired possibility…"></textarea></div>
+<div class="field"><label for="people">For whom?</label><input id="people" data-field="people" maxlength="4000" placeholder="People or entities affected; who should decide if it helps?"></div>
+<div class="field"><label for="scene">What is happening or changing?</label><textarea id="scene" data-field="scene" maxlength="4000" placeholder="One bounded scene — do not treat a map as the whole world."></textarea></div>
+</div>
+<details><summary>Side door · evidence and currentness</summary>
+<div class="fields">
+<div class="field"><label for="basis">How is this scene known?</label><select id="basis" data-field="basis">
+<option value="UNKNOWN">UNKNOWN</option><option value="REPORTED">REPORTED</option><option value="OBSERVED">OBSERVED</option><option value="INFERRED">INFERRED</option><option value="DISPUTED">DISPUTED</option>
+</select><p class="help">This is the writer's own claim, not independent verification.</p></div>
+<div class="field"><label for="source">Source or witness and what they could actually access</label><textarea id="source" data-field="source" maxlength="4000" placeholder="Name the bounded source, not just 'checked'."></textarea></div>
+<div class="field"><label for="checked">When that source observed it (if known)</label><input id="checked" data-field="checked" maxlength="4000" placeholder="Observation time is not necessarily message or export time."></div>
+</div></details>
+</div>
+<div class="card">
+<div class="number">02 · A reachable path</div>
+<h2>What is one bounded next move?</h2>
+<p class="description">A promising route needs more than an attractive description. It needs an actor, a carrier, legitimate authority and time.</p>
+<div class="fields">
+<div class="field"><label for="move">A small action, delay or deliberate no-action worth considering</label><textarea id="move" data-field="move" maxlength="4000" placeholder="The proposal, not an instruction issued by this page."></textarea></div>
+<div class="field"><label for="actor">Who could perform or choose it?</label><input id="actor" data-field="actor" maxlength="4000" placeholder="Name the role or decision owner, not just a capability."></div>
+<div class="field"><label for="carrier">What makes it actually reachable?</label><textarea id="carrier" data-field="carrier" maxlength="4000" placeholder="A channel, resource, access route, permission, information or relationship…"></textarea></div>
+</div>
+<details><summary>Side door · authority, clocks and transferred burdens</summary>
+<div class="fields">
+<div class="field"><label for="authority">Whose authority, agreement or refusal matters?</label><textarea id="authority" data-field="authority" maxlength="4000" placeholder="Technical ability is not the same as authority."></textarea></div>
+<div class="field"><label for="clock">Which deadline or hardening event matters, and why?</label><textarea id="clock" data-field="clock" maxlength="4000" placeholder="What changes if the route finishes too late? Is its duration known?"></textarea></div>
+<div class="field"><label for="burden">Who might carry an unintended burden or lose a path?</label><textarea id="burden" data-field="burden" maxlength="4000" placeholder="Costs, consent, safety, exclusion, dependency, residue…"></textarea></div>
+</div></details>
+</div>
+<div class="card">
+<div class="number">03 · Keep the fire open</div>
+<h2>Who gets to answer back?</h2>
+<p class="description">The point isn't to perfect a description. It is to allow a real next move, an exit, and timely correction if reality disagrees.</p>
+<div class="fields">
+<div class="field"><label for="reply">How can an affected person refuse, challenge or correct this?</label><textarea id="reply" data-field="reply" maxlength="4000" placeholder="A real route to someone who can change the decision — or UNKNOWN."></textarea></div>
+<div class="field"><label for="revisit">When, and through which evidence, will you look again?</label><textarea id="revisit" data-field="revisit" maxlength="4000" placeholder="An observable consequence, not just an output metric."></textarea></div>
+</div>
+<details><summary>Side door · contrary evidence and what happened</summary>
+<div class="fields">
+<div class="field"><label for="change">What would change your proposed next move?</label><textarea id="change" data-field="change" maxlength="4000" placeholder="A counterexample, missing person, stale report, failed carrier…"></textarea></div>
+<div class="field"><label for="outcome">What actually happened, if anything?</label><textarea id="outcome" data-field="outcome" maxlength="4000" placeholder="Separate reported or observed outcomes from projections."></textarea></div>
+</div></details>
+</div>
+</section>
+<aside class="stack output" aria-label="Portable passage">
+<div class="card">
+<div class="number">Carryable context · editable source remains yours</div>
+<h2>Your provisional passage</h2>
+<p class="description">A compact narrative another human or AI can question. Empty material fields stay visibly unknown; no judgement is calculated.</p>
+<label for="packet" class="fine">Generated plain text (selectable)</label>
+<textarea id="packet" class="packet" readonly spellcheck="false"></textarea>
+<div class="row" style="margin-top:12px">
+<button class="primary" type="button" id="copy">Copy passage</button>
+<button type="button" id="downloadText">Save .txt</button>
+<button type="button" id="downloadJson">Save editable .json</button>
+<button type="button" id="import">Open saved .json</button>
+<input id="importFile" type="file" accept=".json,application/json" aria-label="Select saved Passage JSON file">
+</div>
+<p id="message" class="message" role="status" aria-live="polite"></p>
+<hr class="hr">
+<h3>Questions worth carrying forward</h3>
+<p class="description">These appear only when a stated route relies on something still unresolved. They are not requirements or an ethics score.</p>
+<ul id="questions" class="questions"></ul>
+<hr class="hr">
+<p class="fine"><strong class="emphasis">Evidence ceiling:</strong> All inputs are user-provided assertions. This page cannot inspect your world, grant permission, verify authority, calculate reliable correction windows, or establish benefit or harm. When it matters, use competent domain guidance and ask affected people directly.</p>
+<p class="fine"><strong class="emphasis">Local privacy:</strong> Notes exist in this browser tab only until you explicitly save them. A downloaded file or copied passage may contain sensitive details: check it before sharing. This prototype makes no network requests or automatic persistent storage.</p>
+</div>
+</aside>
+</div>
+</main>
+<footer>
+<p>PASSAGE v0 is a noncanonical, source-only companion experiment informed by TRACE v0.4 and Mechanical Ethics. It neither revises their releases nor establishes their practical advantage. Use, alter, refuse or ignore it. A good map should help someone act or question — not replace the world.</p>
+</footer>
+<script id="engine">
+"use strict";
+(function(){
+const SCHEMA="passage.v0";
+const MAX=4000;
+const FIELDS=["future","people","scene","basis","source","checked","move","actor","carrier","authority","clock","burden","reply","revisit","change","outcome"];
+const BASES=["UNKNOWN","REPORTED","OBSERVED","INFERRED","DISPUTED"];
+function blank(){const s={};for(const k of FIELDS)s[k]=k==="basis"?"UNKNOWN":"";return s;}
+function normalise(input){
+ if(!input||typeof input!=="object"||Array.isArray(input))throw Error("Expected an editable passage object.");
+ const out=blank();
+ for(const k of FIELDS){
+  if(!Object.prototype.hasOwnProperty.call(input,k))continue;
+  if(typeof input[k]!=="string"||input[k].length>MAX)throw Error("Invalid or overlong field: "+k);
+  out[k]=input[k];
+ }
+ if(!BASES.includes(out.basis))throw Error("Unrecognised evidence status.");
+ return out;
+}
+function supplied(s){return Boolean(s&&s.trim());}
+function value(s){return supplied(s)?s.trim():"UNKNOWN";}
+function joinLines(lines){return lines.filter(Boolean).join("\n\n");}
+function questions(s){
+ const q=[];
+ if(supplied(s.future)&&!supplied(s.people))q.push("Whose future is this, and who can contest whether it is worthwhile?");
+ if(supplied(s.move)&&!supplied(s.actor))q.push("Who can actually choose or perform this next move?");
+ if(supplied(s.move)&&!supplied(s.carrier))q.push("What practical carrier makes the proposed action reachable?");
+ if(supplied(s.move)&&!supplied(s.authority))q.push("Who has authority to permit, refuse or alter this move? Capability is not permission.");
+ if(supplied(s.clock)&&!supplied(s.source))q.push("Where does the claimed clock or boundary come from? Is its evidence current?");
+ if(supplied(s.clock)&&!supplied(s.revisit))q.push("Can correction arrive before this boundary? No time-window status is proved here.");
+ if(supplied(s.move)&&!supplied(s.reply))q.push("Can an affected person reach someone who can change the decision?");
+ if(supplied(s.outcome)&&(!supplied(s.source)||!supplied(s.checked)))q.push("What source and observation time support the account of what happened?");
+ if(supplied(s.scene)&&s.basis==="UNKNOWN")q.push("The scene's evidence status is UNKNOWN; what can actually be checked?");
+ if(q.length===0)q.push("Nothing is certified by this page. Ask what this picture leaves out, and revisit it when reality changes.");
+ return q;
+}
+function passage(input){
+ const s=normalise(input);
+ const status="Writer-labelled "+s.basis+"; not independently verified";
+ const lines=[
+  "PASSAGE / PROVISIONAL MIDDLE-OUT READING (not a verdict or authority)",
+  "A possibility worth testing is "+value(s.future)+", for "+value(s.people)+". Whether it is worthwhile is for affected people and legitimate value owners to contest.",
+  "The current scene, through this limited view: "+value(s.scene)+". Evidence: "+status+". Source / aperture: "+value(s.source)+". Source observation time: "+value(s.checked)+".",
+  "One possible move is "+value(s.move)+". Potential actor: "+value(s.actor)+". Practical carrier: "+value(s.carrier)+". Authority, agreement or refusal: "+value(s.authority)+".",
+  "Boundary or hardening concern: "+value(s.clock)+". Possible shifted burden or lost path: "+value(s.burden)+". No open or closed correction window is asserted.",
+  "Answer-back route: "+value(s.reply)+". Revisit through: "+value(s.revisit)+". Evidence that may change the move: "+value(s.change)+".",
+  "What actually happened, as entered by the writer (not independently verified): "+value(s.outcome)+".",
+  "Open questions:\n- "+questions(s).join("\n- "),
+  "This reading may be used, changed, rejected or handed off. It does not establish truth, consent, a moral ranking, or permission to act."
+ ];
+ return joinLines(lines);
+}
+function parseSaved(raw){
+ if(typeof raw!=="string"||raw.length>80000)throw Error("Saved file is not recognised or is too large.");
+ let obj;
+ try{obj=JSON.parse(raw);}catch(e){throw Error("Invalid JSON.");}
+ if(!obj||obj.schema!==SCHEMA||!obj.notes)throw Error("This is not a Passage v0 file.");
+ return normalise(obj.notes);
+}
+function saved(s){return JSON.stringify({schema:SCHEMA,notes:normalise(s)},null,2)+"\n";}
+const EXAMPLES={
+ repair:{
+  future:"Neighbours could repair small objects together, exchange skills and meet each other rather than discard repairable things.",
+  people:"Neighbours who want to attend, volunteers, people whose working hours or caring duties restrict access.",
+  scene:"A community room and a willing technical volunteer have been mentioned, but operating permission, insurance and enough hosting capacity are not confirmed.",
+  basis:"REPORTED",source:"Constructed fictional scenario; no real venue, organiser or insurer checked.",
+  move:"Explore a smaller session only after the relevant hosts and volunteers confirm the feasible scope.",
+  actor:"A real organising group, if one forms.",
+  carrier:"A suitable accessible room, a competent team, appropriate cover, clear invitations and a feasible session time.",
+  authority:"Room owner, organiser and volunteers each retain separate decisions and refusal.",
+  burden:"A single volunteer might absorb coordination and safety work; some carers might be excluded.",
+  reply:"Ask prospective attendees and volunteers before deciding; no specific real channel exists in this fiction.",
+  revisit:"Check actual willingness, permissions, accessibility and effort before publicising anything.",
+  change:"The room, insurance, volunteer capacity or interest proves insufficient."
+ },
+ housing:{
+  future:"A family could retain access to essential support while a potentially erroneous termination decision receives meaningful review.",
+  people:"The family, frontline worker and authorised service decision-maker.",
+  scene:"Two fictional databases disagree. A notice would end support in seven days, but the ordinary appeal is said to take three weeks.",
+  basis:"REPORTED",source:"Constructed fictional scenario; no actual service records.",
+  move:"Find the authorised escalation or temporary hold decision-maker before service ends; do not assume a formal appeal is fast enough.",
+  actor:"An authorised service officer, not the reasoning assistant.",
+  carrier:"A verified fast escalation path and evidence the officer can examine in time.",
+  authority:"The organisation must determine who can suspend or correct the notice.",
+  clock:"Service ends after seven days; ordinary review is reportedly three weeks. Comparable time bounds are not established.",
+  burden:"The family may bear disruption even if support is later restored.",
+  reply:"The family needs a reachable way to challenge the notice and supply its own evidence.",
+  revisit:"Verify the decision, deadlines, available hold and whether action actually prevented interruption.",
+  change:"The databases agree, the notice is valid, or the supposed emergency route cannot act in time."
+ },
+ flood:{
+  future:"Residents could get a more useful, current picture of accessible routes without confusing an unverified map with an official warning.",
+  people:"Residents, a voluntary mapping charity, local observers and a statutory warning authority.",
+  scene:"In a fictional flood, a family reports that a route marked dry is impassable. Two of three supposedly independent feeds copied one old map.",
+  basis:"REPORTED",source:"Constructed fictional scenario; no current flood observations or official status.",
+  move:"Route the observation to competent map and warning owners, clearly labelled as unverified until assessed.",
+  actor:"The charity can change its own map; only the appropriate authority can issue its warning.",
+  carrier:"A source-attributed observation and a working report/verification path to each decision owner.",
+  authority:"Map editing and statutory warning authority are separate.",
+  clock:"A route may change faster than the map or review. No verified completion bound is available.",
+  burden:"A mistaken route claim could expose families to danger; source copying can look like independent corroboration.",
+  reply:"A family must be able to correct the map and report dangerous guidance to relevant officials.",
+  revisit:"Check fresh independent observations and official warnings; never imply this fictional tool supplies live safety advice.",
+  change:"The observation is contradicted by more current reliable information or actual route conditions."
+ }
+};
+function example(key){if(!Object.prototype.hasOwnProperty.call(EXAMPLES,key))throw Error("Unknown example.");return normalise(EXAMPLES[key]);}
+globalThis.PassageEngine=Object.freeze({SCHEMA,FIELDS,blank,normalise,passage,questions,parseSaved,saved,example});
+})();
+</script>
+<script id="ui">
+"use strict";
+(function(){
+const E=globalThis.PassageEngine;
+let state=E.blank();
+let edited=false;
+const controls=Array.from(document.querySelectorAll("[data-field]"));
+const packet=document.getElementById("packet");
+const issues=document.getElementById("questions");
+const status=document.getElementById("message");
+const fileInput=document.getElementById("importFile");
+function message(m){status.textContent=m;}
+function render(){
+ packet.value=E.passage(state);
+ issues.replaceChildren();
+ for(const question of E.questions(state)){const li=document.createElement("li");li.textContent=question;issues.appendChild(li);}
+}
+function setState(s){state=E.normalise(s);for(const el of controls)el.value=state[el.dataset.field];render();}
+function confirmReplace(){return !edited||globalThis.confirm("Replace your current notes? Save or copy them first if needed.");}
+function writeFile(name,body,type){
+ const blob=new Blob([body],{type});
+ const url=URL.createObjectURL(blob);
+ const a=document.createElement("a");
+ a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();
+ setTimeout(function(){URL.revokeObjectURL(url);},1000);
+}
+for(const el of controls)el.addEventListener("input",function(){
+ state[el.dataset.field]=el.value;edited=true;message("");render();
+});
+for(const button of document.querySelectorAll("[data-example]"))button.addEventListener("click",function(){
+ if(!confirmReplace())return;
+ setState(E.example(button.dataset.example));edited=true;message("Fictional scene loaded; no real evidence was checked.");
+});
+document.getElementById("clear").addEventListener("click",function(){
+ if(!confirmReplace())return;
+ setState(E.blank());edited=false;message("Notes cleared from this page.");
+});
+document.getElementById("copy").addEventListener("click",async function(){
+ try{
+  if(!navigator.clipboard||!navigator.clipboard.writeText)throw Error("Clipboard unavailable.");
+  await navigator.clipboard.writeText(packet.value);
+  message("Passage copied; check it before sharing.");
+ }catch(e){packet.focus();packet.select();message("Clipboard access unavailable. Passage selected; use Ctrl+C (or Cmd+C).");}
+});
+document.getElementById("downloadText").addEventListener("click",function(){
+ writeFile("passage-notes.txt",packet.value+"\n","text/plain;charset=utf-8");message("Text exported locally; review before sharing.");
+});
+document.getElementById("downloadJson").addEventListener("click",function(){
+ writeFile("passage-editable.json",E.saved(state),"application/json;charset=utf-8");message("Editable JSON exported locally; it may contain personal notes.");
+});
+document.getElementById("import").addEventListener("click",function(){fileInput.click();});
+fileInput.addEventListener("change",async function(){
+ const file=fileInput.files&&fileInput.files[0];fileInput.value="";
+ if(!file)return;
+ if(file.size>80000){message("Import refused: file exceeds 80 KB.");return;}
+ try{
+  const next=E.parseSaved(await file.text());
+  if(!confirmReplace())return;
+  setState(next);edited=true;message("Local notes opened. Claims are not verified by importing them.");
+ }catch(e){message("Import refused: "+e.message);}
+});
+setState(state);
+})();
+</script>
+</body>
+</html>
