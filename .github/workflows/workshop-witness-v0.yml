@@ -1,0 +1,27 @@
+name: Workshop witness offline unit tests
+on:
+  push:
+    branches:
+      - campfire/workshop-return-v0-20261022
+    paths:
+      - 'coordination/workshop_return_v0/**'
+      - '.github/workflows/workshop-witness-v0.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  witness-test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - name: Checkout isolated source
+        uses: actions/checkout@v4
+      - name: Compile stdlib-only witness
+        run: python3 -m py_compile coordination/workshop_return_v0/workshop_witness.py coordination/workshop_return_v0/test_workshop_witness.py
+      - name: Run offline deterministic tests
+        run: python3 -m unittest discover -s coordination/workshop_return_v0 -p 'test_*.py' -v
+      - name: Capture empty safe demo
+        run: |
+          chmod 700 "${RUNNER_TEMP}"
+          python3 coordination/workshop_return_v0/workshop_witness.py capture --config coordination/workshop_return_v0/example.json --output-dir "${RUNNER_TEMP}/workshop-witness-demo"
+          python3 -c 'import json,os; p=os.path.join(os.environ["RUNNER_TEMP"],"workshop-witness-demo","latest.json"); s=json.load(open(p)); assert s["sample_status"] == "NO_CHECKS_CONFIGURED"; assert s["read_only"] and not s["agent_queue_started"]'
