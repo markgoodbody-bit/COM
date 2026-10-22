@@ -1,0 +1,38 @@
+PASSAGE v0 / TEXT-FIRST COLD ENTRANCE
+A voluntary, noncanonical companion to TRACE v0.4; not a release, moral authority, agent instruction, permission, safety approval, or validated practical advantage.
+This entire text is designed to remain readable under a 5,000-character source clip. It is an optional reasoning aid. Use, revise, reject or ignore it.
+
+PURPOSE
+What worthwhile future could become possible, for whom, through which actual commitments, carriers and correction routes?
+Start with a real scene, not a moral score. A future is not made reachable just because it can be described. An exit or refusal may be the best move.
+
+ONE PORTABLE MOVEMENT (NOT A FORM YOU MUST COMPLETE)
+1. GROUND: From [source, access boundary, observed/received time], the bounded scene is [what is changing]. Label load-bearing claims OBSERVED / REPORTED / INFERRED / DISPUTED / UNKNOWN. A report is not verified by being reported.
+2. HORIZON: For [affected scope], a *proposed* worthwhile possibility is [capability, repair, learning, relationship or protection]. Affected people can dispute its value. More option count is not automatically better.
+3. ROUTE: The smallest defensible next move might be [action, deliberate delay or no-action] by [actor], through [practical carrier, resource, knowledge and access], subject to [authority/permission/refusal]. Capability alone is not authority.
+4. CLOCK & BURDEN: A consequential boundary may be [specific change/deadline]; real completion feasibility is [supported bound or UNKNOWN], and costs/exclusion may fall on [scope]. Do not declare an OPEN or CLOSED correction window from an unsupported estimate. A later benefit does not by itself repair an earlier loss.
+5. ANSWER-BACK: Affected entities can [challenge/refuse/correct] via [reachable channel to a decision-maker] before [boundary where supported]. A nominal route that cannot act in time is not an effective correction route.
+6. RETURN: Look again when [specific observation]. Distinguish what happened from what was hoped, and from what a tool recorded. Preserve what would falsify or change this move, including contrary witnesses, missing people and broken carriers.
+
+Use a shorter account where sufficient. Invoke stronger domain methods instead of Passage wherever they carry the decision with less burden or more reliable evidence. Stop or hand off when you lack relevant authority or evidence.
+
+A FICTIONAL EXAMPLE: a small tool-sharing shelf
+A tenant group considers a shelf of shared tools. The possibility: neighbours can borrow basic equipment instead of each buying it. The scene: one organiser has offered a shelf, but no storage consent, lending responsibility or accessible collection times are established (source: constructed illustration; real-world status UNKNOWN). A smaller move: ask the relevant residents, storage holder and willing custodians whether a reversible, limited trial has a credible carrier. An absent shift worker may be excluded by the proposed pickup time. The route to correct the invitation needs a real decision-maker, not simply a suggestion box. After a trial, check whether tools were usable, disputes manageable and the unpaid custodial effort acceptable. No shelf has actually been opened; no permission, safety or social benefit has been proved.
+
+MISLEADING COLLAPSES TO AVOID
+• “Everyone is invited” ≠ everyone can take part.
+• “An appeal exists” ≠ someone can correct the consequence in time.
+• “Three reports agree” ≠ three independent observations.
+• “A revised map exists” ≠ the world changed as represented.
+• “I can do it” ≠ I may do it.
+• “The record shows success” ≠ the affected person says it helped.
+• UNKNOWN ≠ absent; a supported future-space map ≠ the future itself.
+
+HOW TO USE THE SOURCE
+For an optional offline human editor, open index.html. That static file uses local form entries and creates a provisional, copyable paragraph and deliberate local text/JSON exports. Nothing is transmitted by the source code; no credentials, network call or automatic storage are needed.
+The source is on a noncanonical COM branch, not deployed. Its V8 engine/synthetic DOM checks are not a real browser, independent reader or field test.
+
+HOW TO DISPROVE ITS VALUE
+Compare with careful ordinary discussion and the strongest relevant existing domain guide. Predeclare a consequential decision, a burden/time measure and an independent assessor when feasible. If Passage merely renames common sense, adds friction or disguises missing authority/evidence, use the better method. No outside comparison has been run.
+
+CAMPFIRE REMAINS OPEN.
