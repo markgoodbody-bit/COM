@@ -6,26 +6,27 @@
 
 ## Use, from a local computer
 
-Open **`index.html`** in a modern browser. Everything needed is embedded in the one HTML file; it is intended to work directly as a local file, without a server, account, package manager or internet. The interface has three fictional starting scenes or an empty start. Nothing is sent or saved automatically. Its generated portable passage can be copied or downloaded as plain text; JSON export/import is an optional **deliberate** local handoff. Read files before sharing them: they may contain private text.
+For an AI/tool that only reads plain text or clips source, start with **`START_HERE.txt`**: complete voluntary compact movement, noncanonical status, a constructed example, and a reason to discard the carrier, within 5 KB. This avoids making the AI parse the leading CSS or depend on JavaScript. A human may instead open **`index.html`** in a modern browser. Everything needed is embedded in the one HTML file; it is intended to work directly as a local file, without a server, account, package manager or internet. The interface has three fictional starting scenes or an empty start. Nothing is sent or saved automatically. Its generated portable passage can be copied or downloaded as plain text; JSON export/import is an optional **deliberate** local handoff. Read files before sharing them: they may contain private text.
 
 The interface is designed to be optional, not a mandatory checklist: the horizon and scene are first, the carrier/action and answer-back second, and authority, timing, evidence and burden are progressive side doors that can be used when load-bearing. Empty data is `UNKNOWN`. It does not compute goodness, a harm score, permission or a validated window; user-declared `OBSERVED` is still **unverified**. Three built-in examples are explicitly fictional; they cannot be cited as real incidents or specialist advice.
 
 ## Construction / boundary
 
+- `START_HERE.txt`: under-5 KB standalone machine/human cold entrance; voluntary movement rather than parseable command, separate from HTML. 
 - `index.html`: self-contained accessible-labelled HTML, CSS, embedded pure Passage engine plus UI. Source includes a restrictive no-network CSP, no fetch, no analytics, no service worker and no automatic localStorage/sessionStorage. User text flows into textarea `.value` or safe DOM `.textContent`, not inserted into HTML.
-- `test.mjs`: 13 deterministic Node built-in tests without dependencies. Command: `node --test test.mjs` when Node is available. Tests cover unknown/evidence ceiling, three fictional scenes, route/authority/currentness triggers, historical outcome proof, exact schema import/export, hostile input, size guards and source no-network conditions.
+- `test.mjs`: 13 deterministic Node built-in tests, plus a text-first clip-size/semantic regression without dependencies. Command: `node --test test.mjs` when Node is available. Tests cover unknown/evidence ceiling, three fictional scenes, route/authority/currentness triggers, historical outcome proof, exact schema import/export, hostile input, size guards and source no-network conditions.
 - Output is a writer-supplied provisional account, **not** a verifiable event receipt or permission. It is deliberately readable without knowing TRACE glyphs. It links to the formal spine conceptually, not by mutating TRACE.
 - No GitHub Pages configuration, deployment, remote API, account integration, public YAC posting, external participant request, VM timer, provider credential or source release is part of this branch.
 
 ## Reproducible current evidence and honest limits — 22 Oct 2026
 
-Exact immutable work before README: isolated branch `campfire/passage-v0-20261022`.
+Exact verified blobs before this README/text update: isolated branch `campfire/passage-v0-20261022`.
 - HTML Git blob `07d2cca75b351a3d130669e18e0fd61e6b16d657`.
 - Node test source Git blob `a989f0097c713d2fcd40b04d7aae8f4813a64def`.
-- 13/13 test *bodies* exercised PASS against the exact engine, using a V8 JavaScript execution adapter reading these Git blobs. This did **not** launch Node's `node:test` runner.
+- 13/13 original test *bodies* exercised PASS against the exact engine, using a V8 JavaScript execution adapter reading these Git blobs. This did **not** launch Node's `node:test` runner.
 - 10/10 synthetic DOM interaction smoke checks PASS on that HTML blob: first render, input updates, challenge questions, fictional preset, copy, local blob download construction, clear and static label/ID match. This was **not a real browser**.
 - Earlier first test run had 11/13: a test expected different provisional wording and the custom V8 test harness omitted a named `script` variable; both were corrected. A first synthetic DOM run reached 9/10 because its test string used wrong packet wording. Final reruns above are PASS. No failures silently erased.
-- Real local Chromium, browser-download/import, touch layout, keyboard-only navigation, assistive technology, screen readers, Node's own runner, Windows and hosted tests: **NOT_RUN**. Attempted external raw GitHub fetch from the isolated container failed DNS; no network workaround was attempted. The HTML file has **not** been independently opened in a real browser by this aperture.
+- Real local Chromium, browser-download/import, touch layout, keyboard-only navigation, assistive technology, screen readers, Node's own runner, Windows and hosted tests: **NOT_RUN**. Attempted external raw GitHub fetch from the isolated container failed DNS; no network workaround was attempted. The HTML file has **not** been independently opened in a real browser by this aperture. The text-first entrance was added after the original 13/13 and 10/10 checks; do not treat those as testing its byte ceiling until the new regression has executed.
 
 **Acceptance ceiling:** source prototype + V8 engine and synthetic DOM checks only. Do not relabel as native/browser/accessible/hosted acceptance. A future independent native smoke should read exact Git blobs and check the intended offline file:// experience, especially CSP, keyboard traversal, JSON import/export, narrow viewport, clipboard fallback and screen-reader labels before any distribution claim. No permission to contact participants or deploy has been granted.
 
