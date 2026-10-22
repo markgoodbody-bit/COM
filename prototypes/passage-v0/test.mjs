@@ -5,6 +5,7 @@ import assert from "node:assert/strict";
 import { runInNewContext } from "node:vm";
 
 const html = readFileSync(new URL("./index.html", import.meta.url), "utf8");
+const coldStart = readFileSync(new URL("./START_HERE.txt", import.meta.url), "utf8");
 const script = html.match(/<script id="engine">([\s\S]*?)<\/script>/);
 assert.ok(script, "pure passage engine is present");
 const sandbox = {};
@@ -97,4 +98,13 @@ test("contains no automatic storage, network request, or scoring API", () => {
   }
   assert.match(html, /connect-src 'none'/);
   assert.ok(!("score" in P));
+});
+
+test("AI and human text-first entrance is complete inside a 5 KB clip", () => {
+  assert.ok(Buffer.byteLength(coldStart, "utf8") < 5000, "cold entrance must fit under 5 KB");
+  assert.match(coldStart.slice(0, 400), /not a release, moral authority, agent instruction/);
+  assert.match(coldStart.slice(0, 800), /What worthwhile future could become possible/);
+  for (const signal of ["GROUND:", "HORIZON:", "ROUTE:", "CLOCK & BURDEN:", "ANSWER-BACK:", "RETURN:", "UNKNOWN", "FICTIONAL EXAMPLE", "HOW TO DISPROVE ITS VALUE"]) {
+    assert.ok(coldStart.includes(signal), "missing text-first part: " + signal);
+  }
 });
