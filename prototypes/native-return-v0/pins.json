@@ -1,0 +1,17 @@
+{
+  "llms.txt": {
+    "sha256": "dbc4915edd2dc9319f80001a33042788ab61286075a07b5af91706e353a2cc95",
+    "git_blob": "2ec82496a2fd17493e41cb08e2cb49ace9b01f8c",
+    "bytes": 12496
+  },
+  "challenge.html": {
+    "sha256": "cc3ba004e4881cf58154a57607fd5e9b75be092e7999e953bf066d9528aa4ff9",
+    "git_blob": "cbd712c412c949bee17900d9d19f5f4dbca1c962",
+    "bytes": 2127
+  },
+  "index.html": {
+    "sha256": "98310708d53cf919392854a3e71cccac349c9562cdc95c6a0990f69732815405",
+    "git_blob": "9e7ed829bab2ce2a25f0acf8ce7800d7236496c4",
+    "bytes": 9675
+  }
+}
