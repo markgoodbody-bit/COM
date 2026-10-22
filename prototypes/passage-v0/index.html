@@ -131,6 +131,7 @@ function normalise(input){
 function supplied(s){return Boolean(s&&s.trim());}
 function value(s){return supplied(s)?s.trim():"UNKNOWN";}
 function joinLines(lines){return lines.filter(Boolean).join("\n\n");}
+function sentence(valueIn){const t=value(valueIn);return /[.!?…]$/.test(t)?t:t+".";}
 function questions(s){
  const q=[];
  if(supplied(s.future)&&!supplied(s.people))q.push("Whose future is this, and who can contest whether it is worthwhile?");
@@ -150,12 +151,12 @@ function passage(input){
  const status="Writer-labelled "+s.basis+"; not independently verified";
  const lines=[
   "PASSAGE / PROVISIONAL MIDDLE-OUT READING (not a verdict or authority)",
-  "A possibility worth testing is "+value(s.future)+", for "+value(s.people)+". Whether it is worthwhile is for affected people and legitimate value owners to contest.",
-  "The current scene, through this limited view: "+value(s.scene)+". Evidence: "+status+". Source / aperture: "+value(s.source)+". Source observation time: "+value(s.checked)+".",
-  "One possible move is "+value(s.move)+". Potential actor: "+value(s.actor)+". Practical carrier: "+value(s.carrier)+". Authority, agreement or refusal: "+value(s.authority)+".",
-  "Boundary or hardening concern: "+value(s.clock)+". Possible shifted burden or lost path: "+value(s.burden)+". No open or closed correction window is asserted.",
-  "Answer-back route: "+value(s.reply)+". Revisit through: "+value(s.revisit)+". Evidence that may change the move: "+value(s.change)+".",
-  "What actually happened, as entered by the writer (not independently verified): "+value(s.outcome)+".",
+  "A possibility worth testing: "+sentence(s.future)+" Affected scope: "+sentence(s.people)+" Whether it is worthwhile remains for affected people and legitimate value owners to contest.",
+  "The current scene, through this limited view: "+sentence(s.scene)+" Evidence: "+status+". Source / aperture: "+sentence(s.source)+" Source observation time: "+sentence(s.checked),
+  "One possible move: "+sentence(s.move)+" Potential actor: "+sentence(s.actor)+" Practical carrier: "+sentence(s.carrier)+" Authority, agreement or refusal: "+sentence(s.authority),
+  "Boundary or hardening concern: "+sentence(s.clock)+" Possible shifted burden or lost path: "+sentence(s.burden)+" No open or closed correction window is asserted.",
+  "Answer-back route: "+sentence(s.reply)+" Revisit through: "+sentence(s.revisit)+" Evidence that may change the move: "+sentence(s.change),
+  "What actually happened, as entered by the writer (not independently verified): "+sentence(s.outcome),
   "Open questions:\n- "+questions(s).join("\n- "),
   "This reading may be used, changed, rejected or handed off. It does not establish truth, consent, a moral ranking, or permission to act."
  ];
