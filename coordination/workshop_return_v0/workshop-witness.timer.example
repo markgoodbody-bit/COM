@@ -1,0 +1,13 @@
+# PROPOSAL ONLY. Requires completed read-only existing timer inventory first.
+[Unit]
+Description=Periodic finite Framework-Lab local witness
+
+[Timer]
+OnBootSec=5min
+OnUnitInactiveSec=30min
+RandomizedDelaySec=2min
+Persistent=false
+Unit=workshop-witness.service
+
+[Install]
+WantedBy=timers.target
