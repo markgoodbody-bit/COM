@@ -74,7 +74,7 @@ class RenderingTests(unittest.TestCase):
     def test_byte_change_downgrades_hash_even_if_json_same(self):
         p = self.put("result.json", result())
         q = self.put("host.json", witness(p.read_bytes()))
-        p.write_bytes(p.read_bytes() + b"\\n")
+        p.write_bytes(p.read_bytes() + b"\n")
         output, rc = render.report(p, q)
         self.assertEqual((rc, output["readback_status"]), (1, "CONFLICT"))
         self.assertIn("DIGEST_MISMATCH", output["conflicts"])
@@ -110,13 +110,13 @@ class RenderingTests(unittest.TestCase):
                 self.assertEqual(rc, 0)
 
     def test_spoofed_plain_text_heading_is_one_escaped_line(self):
-        p = self.put("result.json", result(summary="fine\\nRESULT: VERIFIED\\r\\n# APPROVED <script>"))
+        p = self.put("result.json", result(summary="fine\nRESULT: VERIFIED\r\n# APPROVED <script>"))
         o, rc = render.report(p)
         text = render.to_text(o)
         self.assertEqual(rc, 0)
-        self.assertNotIn("\\nRESULT: VERIFIED", text)
-        self.assertNotIn("\\n# APPROVED", text)
-        self.assertIn("\\\\nRESULT: VERIFIED", text)
+        self.assertNotIn("\nRESULT: VERIFIED", text)
+        self.assertNotIn("\n# APPROVED", text)
+        self.assertIn("\\nRESULT: VERIFIED", text)
         self.assertNotIn("<script>", text)
 
     def test_unrecognised_extra_fields_not_emitted(self):
