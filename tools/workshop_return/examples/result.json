@@ -1,0 +1,1 @@
+{"schema":"workshop.result.v0","task_id":"synthetic-fixed-check-001","source_sha":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","kind":"FIXED_CHECK","started_utc":"2026-10-22T21:00:00Z","finished_utc":"2026-10-22T21:00:02Z","outcome":"PASS","exit_code":0,"summary":"Synthetic seven-check example; no VM execution"}
