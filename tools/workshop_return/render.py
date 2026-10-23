@@ -16,10 +16,10 @@ import stat
 import sys
 
 MAX_BYTES = 65536
-TASK_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,79}\\Z")
-HEX40 = re.compile(r"[0-9a-f]{40}\\Z")
-HEX64 = re.compile(r"[0-9a-f]{64}\\Z")
-UTC_TIME = re.compile(r"\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z\\Z")
+TASK_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,79}\Z")
+HEX40 = re.compile(r"[0-9a-f]{40}\Z")
+HEX64 = re.compile(r"[0-9a-f]{64}\Z")
+UTC_TIME = re.compile(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\Z")
 KINDS = {"FIXED_CHECK", "SOURCE_REVIEW", "LOCAL_TEST"}
 OUTCOMES = {"PASS", "FAIL", "STOPPED", "UNKNOWN"}
 CARRIERS = {"HOST_FILE", "OTHER"}
