@@ -4,6 +4,16 @@
 
 **24 October 2026 · Framework / Campfire worldward field note · SOURCE-BOUNDED, NOT CAUSAL IDENTIFICATION, NOT COMPANY ENDORSEMENT, NOT A RELEASED ME/TRACE RESULT**
 
+## A two-minute check for anyone seeing the chart
+
+**What is true:** Meta reported **revenue +26.1%**, quarter-end **headcount −14.9%** and a **48.1% rise** in the arithmetic ratio of quarterly revenue to quarter-end staff between Q3 2025 and Q3 2026. Its actual operating profit fell partly because of a large legal charge, while capital expenditure rose substantially. **What is NOT established:** how many of Meta's lost positions AI replaced, that every AI-adopting firm is shedding staff, or that the headline ratio measures human productivity.
+
+**Try it yourself, without relying on an AI's verdict:** (1) Open the issuer's original quarterly financial release or SEC filing; match the two dates. (2) Circle whether each number is a **flow over a period** (revenue) or **stock on one date** (employees). (3) Find at least one omitted variable: profit, capital, extraordinary charge, contractor work, hiring and departures. (4) Open a genuine countercase: SAP's Q3 2026/2025 FTE and revenue both rose; Accenture's FY2026/2025 employee count and revenue also rose (neither proves no individual displacement). (5) Write your own two-sentence conclusion, separating **observed** from **not yet proven**. Name what evidence would change it.
+
+**If your real concern is a career or a livelihood**, this chart alone cannot tell you what opportunities are available in your locality, which firms are hiring juniors, or what support exists for a person affected by redundancy. Use contemporary occupation- and location-specific vacancies, official labour data and reputable employment support rather than using one corporation's ratio as a personal forecast. This is a source-checking exercise, **not employment or financial advice**; no benefit to a real reader has yet been measured.
+
+---
+
 ## Why this exists
 
 A graphic juxtaposed Meta's growing quarterly revenue and declining global headcount. The image is striking. Our initial conversation correctly noticed the possibility of an economic transition, but **went beyond the evidence** when it treated the combination as if it showed AI-driven substitution or measured labour productivity.
