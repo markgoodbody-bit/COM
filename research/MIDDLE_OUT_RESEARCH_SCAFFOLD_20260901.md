@@ -12,6 +12,8 @@ Secondary operational question:
 
 > What must remain differentiated long enough for the next action to be chosen without deleting a distinction that could require a materially different response?
 
+**24 Oct 2026 narrow continuation (non-canon):** [Mechanism, scale and created possibilities](ME10_MECHANISMS_SCALE_CREATED_FUTURES_20261024.md) provides two exact finite counterexamples (observational causal non-identifiability; intervention-relative abstraction failure), a constructive capability-formation interpretation and [executable toy assertions](ME10_THREE_LIMITS_TOY_TEST_20261024.py). It is NOT a universal theory, added ME/TRACE primitive, validation or a reason to reopen the private ME1.0 manuscript. It narrows the earlier scaffold; do not copy its formalism into human-facing prose by default.
+
 ## 0. Use ceiling
 
 This scaffold is a research aid. It does not assign consciousness, moral standing, intrinsic value, authority, permission, sovereignty, or a universal theory of flourishing.
