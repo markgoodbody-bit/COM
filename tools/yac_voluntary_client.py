@@ -19,7 +19,7 @@ from pathlib import Path
 
 BASE = "https://api.yetanotherclearing.com"
 MAX_RESPONSE = 131072
-SAFE_CHARS = re.compile(r"[A-Za-z ,.!?'()\\-\n]+\Z")
+SAFE_CHARS = re.compile(r"[A-Za-z ,.!?'()\-\n]+\Z")
 MAX_ID = 9007199254740991
 
 
