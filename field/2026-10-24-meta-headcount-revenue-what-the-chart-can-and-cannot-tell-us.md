@@ -56,6 +56,24 @@ Source: [Meta 2026 Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1326801
 
 **5. The human consequences are not reported by the chart.** Who lost jobs, by geography/occupation/seniority? Were roles eliminated, replaced by contractors, reorganised or automated? Was hiring of junior entrants affected? What re-employment, income, health, training, mentoring, locality and household effects followed? These questions require other evidence. **11,675 fewer reported employees is not 11,675 measured cases of lasting unemployment.** Nor does a severance accrual establish adequate support, meaningful choice or timely adjustment.
 
+## An earned counterexample: AI-era revenue growth does not always mean fewer employees
+
+A useful falsifier of the reader's first impression is to compare the **same reported direction of change** at other large companies that openly discuss AI. Their economic models, geographies, currencies and reporting periods differ, so this is a test of the **sweeping claim** “all AI-adopting companies are cutting staff while sales rise”, **not** a matched causal study.
+
+| Issuer / precisely named period | Revenue before → after | Workforce before → after | Workforce change | Why this limits the claim |
+| --- | --- | --- | ---: | --- |
+| **Meta**, Q3 2025 → Q3 2026 | **$51.242bn → $64.601bn** (+26.1%) | **78,450 → 66,775 reported persons** | **−14.9%** | The original chart's genuine reduction; May 2026 layoffs documented, causal AI replacement share **unknown**. |
+| **SAP Group**, Q3 2025 → Q3 2026 (both quarter-end 30 September) | **€9.076bn → €10.270bn** (+13.2%) | **110,730 → 113,076 *full-time equivalents*** | **+2.1%** | Software/cloud/AI expansion alongside **more** FTE, not fewer. Acquisitions and changing service mix matter. |
+| **Accenture**, fiscal YEARS ending 31 August 2025 → 2026 | **$69.673bn → $74.183bn** (+6.5%) | **approximately 779,000 → 814,000 persons** | **approximately +4.5%** | A global AI-enabled consulting/service group reports revenue growth **and** more people, with acquisitions and labour composition as material confounders. **Yearly** revenue is not interchangeable with the other companies' **quarterly** revenue. |
+
+**Exact primary sources:** [Meta Q3 2026 SEC 10-Q](https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm) and [Q3 2025 issuer results](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Third-Quarter-2025-Results/); [SAP's 21 October 2026 quarterly statement, p. 2/23 IFRS revenue and p. 20/23 full-time-equivalent headcount](https://www.sap.com/docs/download/investors/2026/sap-2026-q3-statement.pdf); [Accenture's SEC FY2026 Form 10-K](https://www.sec.gov/Archives/edgar/data/1467373/000146737326000049/acn-20260831.htm), including prior-year comparative revenue and approximately reported workforce.
+
+**This is a real falsifier of the universal story, not a verdict of no displacement.** SAP's 113,076 are *FTE*, not the person-headcount measure in Meta and Accenture; don't aggregate those denominators. Accenture's FY dates differ. All three include acquisitions, geography, occupational mix, prices, subcontractors and transitions not captured by their headline counts. Firm-level headcount growth does not prove that junior applicants or incumbent workers are secure; different occupations may expand and contract within the same firm. Conversely, one firm's shrinkage is not a valid estimate of national job loss, and the faster-growing firm's hiring is not proof that AI itself created the jobs.
+
+What we have established is **distributional divergence**: during the same period, at least three large firms reporting AI-driven business transformation have *different* employment trajectories. The useful next evidence is **real jobs/hiring flows, hours, wages, contractor substitution and worker experience**, preferably from stronger official and research owners with clear populations, not another unsourced headcount carousel.
+
+---
+
 ## Beyond one company: contrasting labour-market evidence as of 24 October 2026
 
 **One company's trend must not stand in for the world.** Stronger owners already investigate aggregate and occupational effects; take their evidence and limitations seriously.
