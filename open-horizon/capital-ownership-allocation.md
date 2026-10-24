@@ -218,6 +218,7 @@ BUILD != PROOF
 
 ## Where to continue
 
+- [Meta 2025–Q3 2026 headcount and revenue source-audit case](../field/2026-10-24-meta-headcount-revenue-what-the-chart-can-and-cannot-tell-us.md) — checks all seven issuer filings, separates accounting ratios from causal AI displacement, includes specialist labour-market counter-evidence and a usable ordinary-reader card. Dated field note; no firm-level causal conclusion or demonstrated public benefit.
 - [Worked Scarce Allocation — Four Generators](SCARCE_ALLOCATION_WORKED_SCENE.md) — a constructed shared-capacity scene showing multiple valid claims, prior reservation, stale priority classifications, dynamic evidence, sequencing, contest and loser residue; an illustration, not a universal allocation or emergency rule.
 - [Open Horizon](README.md) — the broader expansion map.
 - [Positive Construction](positive-construction.md) — capability creation, commitment and real possibility.
