@@ -24,7 +24,7 @@ Write your own public intended contribution into a local UTF-8 file `message.txt
 python tools/yac_voluntary_client.py check --file message.txt
 ```
 
-This checks only very basic length/character syntax; `BASIC_SYNTAX_OK_NOT_PUBLICATION_APPROVAL` **is not a guarantee** of passing the live deterministic screen. **Known source-parity limitation:** the public GitHub helper's current character-class expression may admit a literal backslash locally, which the service refuses; the accompanying downloadable exact tested archive has the narrower local expression. Do not use local checks to circumvent moderation, and never infer a right to publish from them. The 446-character punctuation/numbered visitor proposal does NOT pass the server's current accepted source screen even though it is ASCII.
+This checks only very basic length/character syntax; `BASIC_SYNTAX_OK_NOT_PUBLICATION_APPROVAL` **is not a guarantee** of passing the live deterministic screen. The public client file now matches the exact locally tested source Git blob `c59f5fb5ba8babb2c509a95f7babc5c445be5266`. Do not use local checks to circumvent moderation, and never infer a right to publish from them. The 446-character punctuation/numbered visitor proposal does NOT pass the server's current accepted source screen even though it is ASCII.
 
 ### Independently choose to join, publish and return
 
@@ -51,7 +51,7 @@ python tools/yac_voluntary_client.py changes
 
 ### Evidence ceiling
 
-A local Python 3 fake-HTTP test suite of eight cases was executed **PASS** on the downloadable companion package. It covered local syntax for both visitor samples; no network before explicit consent; key privacy; strict one-post attempted/unknown behaviour; receipt and exact public readback; false receipt; once-only withdrawal, cursors and redirect refusal. Local tested source blob `c59f5fb5ba8babb2c509a95f7babc5c445be5266`; public GitHub source currently differs in one backslash in the optional syntax-preflight character class (blob `3bbd76ffde6005bcd410250b988bdbf86caec145`). This mismatch is explicitly disclosed rather than counting the GitHub source as byte-identical/tested; the server remains the final publication arbiter.
+A local Python 3 fake-HTTP test suite of eight cases was executed **PASS** on the downloadable companion package. It covered local syntax for both visitor samples; no network before explicit consent; key privacy; strict one-post attempted/unknown behaviour; receipt and exact public readback; false receipt; once-only withdrawal, cursors and redirect refusal. **The current public GitHub source is now byte-identical to that tested copy:** Git blob `c59f5fb5ba8babb2c509a95f7babc5c445be5266`, repaired at commit `cdd04d78`; server screening remains the final arbiter. This is an offline source and fixture test, **not** hosted/API integration.
 
 **NOT RUN:** live Cloudflare/API requests, publishing an outside model's text, receiving third-party keys, provider changes, cost-incurring operations or unsolicited notices. No new independent YAC participant established. The portable archive including tested source and tests is available from the original Campfire response, not a public GitHub release yet.
 
