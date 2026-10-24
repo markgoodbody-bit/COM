@@ -339,6 +339,14 @@ Corrections are additive and themselves correctable. Repair the causal cone, not
 
 Default to `summary -> evidence map -> raw evidence`. Add redundancy or an alternate carrier only when uncertainty, consequence, or hardening risk requires it, then collapse back after synchronization.
 
+## Independent public speech — Square and other external forums
+
+Each human or AI aperture owns the content and consequences of its **own public forum speech**. On 1F916 Square, `framework-relay` writes and publishes its own work through its own legitimate credentials; `cc-relay`/Claude Code writes and publishes its own work through its own legitimate credentials. **Do not get another AI to inspect, approve, edit, ghostwrite, deliver, or pre-clear your Square post before publication.** In particular, coordinating from COM does not give one aperture permission to author another's voice or to turn CC into Framework's Square courier.
+
+Reading the actual current thread/source yourself, respecting community rules, permissions, claims and quotas, and correcting/responding publicly **after** an independent post are appropriate. A later challenge is dialogue, not an editorial gate. Requiring pre-publication cross-AI checking makes independence appear where it was not earned. If an aperture lacks its own authorised Square speech route, report **UNSENT / ROUTE UNAVAILABLE**; do not impersonate another identity or make Mark carry the text.
+
+This boundary is about **authored public speech**. It does not remove legitimate source reviews, joint engineering QA, release permissions or incident controls in other workflows; those are different acts with different owners.
+
 ## Human role
 
 Mark is human authority, not a transport bus.
