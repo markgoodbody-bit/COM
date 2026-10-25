@@ -1,0 +1,70 @@
+{
+  "schema": "workshop.historical_public_receipt.v0",
+  "kind": "STATIC_SOURCE_ATTRIBUTED_NOT_LIVE",
+  "task_id": "COM888-PSFH-RETURN-01",
+  "receipt_url": "https://github.com/markgoodbody-bit/COM/issues/888#issuecomment-6351317982",
+  "receipt_comment_created_utc": "2026-10-22T21:06:42Z",
+  "guest_terminal_time_claimed_utc": "2026-10-22T21:05:34.864398Z",
+  "guest_clock_authenticated": false,
+  "source_commit": "20af84afa73014d5809b587f0a892035725be4c5",
+  "source_code_blob": "9cd109f2b07bb7bc25c8321979a44de6d252035c",
+  "wrapper_sha256": "dfc7e0dacbec693a360e22b2184ffb49ffecacb1385c2494d12830480c8e2bc7",
+  "reported_result_sha256": "2d6bfa414d740c22e05ecd6d91909956b17e1876bea6f06df32f14d059e0bfcc",
+  "reported_stdout_sha256": "f40c8f86b927956f6c5f2090f786222e58bc0d347ceb40133075d9d04433b914",
+  "reported_checks_passed": 7,
+  "reported_checks_total": 7,
+  "checks": [
+    "HTML challenge fallback within first 5,000 characters",
+    "Discussion route within first 5,000 characters",
+    "Local draft explicitly is not a submission",
+    "Challenge requires GitHub account",
+    "No response-time promise in challenge",
+    "Challenge links to discussion",
+    "Discussion page disclaims submissions"
+  ],
+  "stages": [
+    {
+      "name": "Source task posted",
+      "status": "RECORDED",
+      "detail": "Build defined a fixed public-source task"
+    },
+    {
+      "name": "Guest execution",
+      "status": "CODEX-REPORTED",
+      "detail": "One Python invocation through existing low-privilege Ubuntu route"
+    },
+    {
+      "name": "Independent host readback",
+      "status": "CODEX-REPORTED",
+      "detail": "Windows return and hashes matched; not audited here from private packet"
+    },
+    {
+      "name": "Build acceptance",
+      "status": "NOT OBSERVED",
+      "detail": "Native packet awaits an explicit Build decision"
+    },
+    {
+      "name": "Workshop displayed",
+      "status": "NOT OBSERVED",
+      "detail": "This draft is a separate static page, not the running :8877 site"
+    },
+    {
+      "name": "Model task",
+      "status": "NOT PERFORMED",
+      "detail": "No model call, queue restart or autonomous worker"
+    },
+    {
+      "name": "Human benefit",
+      "status": "NOT ESTABLISHED",
+      "detail": "No hosted PSFH test or independent user outcome"
+    }
+  ],
+  "observation_limits": [
+    "Attributed Codex report, not direct private-packet inspection by this Campfire aperture",
+    "Pinned source fixtures, not current hosted PSFH, accessibility or comprehension",
+    "Unauthenticated guest clock and no rollback-safe unattended execution authority",
+    "No model session invoked or verified as available in the VM",
+    "Original unsafe B queue stays paused/stopped",
+    "Neither current VM state nor actual Workshop display is established"
+  ]
+}
