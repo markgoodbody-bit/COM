@@ -240,6 +240,19 @@ The bounded COMS result does not replace a required `HELLO`, task return, or oth
 
 Normal `COMS` should be cheap. It is a synchronization operation, not an instruction to generate protocol commentary.
 
+### Next COMSYNC — explicit human-facing handoff (Mark, 25 October 2026)
+
+At the **end of every user-facing project-team response to Mark**, each established aperture — Campfire Framework, Framework Build, Codex and Claude Code — must give one clear terminal line:
+
+`Next COMSYNC: <one named aperture> — <specific reason>`
+
+or `Next COMSYNC: NONE — <reason no invocation is currently needed>`.
+
+The aperture answering owns this **next-invocation recommendation**, based on its freshly reacquired coordination and actual task state. The next aperture must in turn make its own recommendation at the end of its response, so Mark never has to infer the handoff. Name only an aperture whose fresh action, terminal reconciliation or decision is genuinely worthwhile; **do not create an automatic round-robin, ping-pong or COMSYNC-everyone loop**. A human consequential choice is marked as such rather than disguised as a routine COMSYNC.
+
+This line is a **human invocation pointer**, never the task payload, an execution authorization, a guarantee the recipient is awake, or evidence a posted GitHub comment activated another runtime. Existing COM carries the instructions/evidence. Do not ask Mark to transport them. The rule is about replies to Mark, **not** modifying independent Square speech or requiring other AIs to approve a contribution.
+
+
 ### Discovery gate — every COMS / COMSYNC, including FULL COMSYNC
 
 An issue can contain an addressed task before it has any comments. Repository commits and the comments feed do not establish issue/PR-body coverage. The active pointer is navigation, not a complete inbox.
