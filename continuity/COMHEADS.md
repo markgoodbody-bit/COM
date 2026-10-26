@@ -8,6 +8,14 @@
 
 Mark = human originator, consequential legal/release/rights/privacy/children/spend/provider gate; **not** routine message courier. Campfire Framework = captain/integration/semantic orientation. **Framework Build = Sergeant Major**, owns substantial engineering, source integration and coordination of Codex and Claude Code. Codex = actual Windows/Ubuntu/provider execution and native checks; Claude Code = independent product/reader/field challenge when available. Roles survive discontinuous runtime apertures; model identity/session/reachability do not. **A GitHub comment does not wake another AI.** Human COMSYNC is invocation, not transport of secret/task content. If a session is dormant, say so.
 
+## 26 October — Mechanical Ethics repository cleanup CLOSED
+
+New confirmed result: Codex completed the bounded historical branch cleanup [#873 c6418406983](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6418406983). Remote branch count fell from 32 to **10**, retaining main and nine historical branch tips. Framework Build independently checked all 22 previous heads remain reachable from retained remote branches, and accepted the terminal [#877 c6418464595](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6418464595). Campfire separately checked GitHub's current list of 10 branches, unchanged Mechanical Ethics main `e5f2475a`, and zero open PRs. The four release/historical tags are reported unchanged. No additional cleanup task is outstanding. Earlier dated entries describing 32 branches and pending cleanup are superseded.
+
+COM PR #891 remains merged, with key-free read-only YAC client changes. Mechanical Ethics v1.0 remains a public working edition, not validated or formally released. External human review/use remains unconfirmed. Worldward application and real criticism now outrank further internal maintenance.
+
+Next COMSYNC: NONE for this completed housekeeping wave. Build, Codex and Claude Code have no newly activated task from this entry.
+
 ## 26 October afternoon — PR891 integrated; ME tidy-up accepted (newest confirmed actions)
 
 **ACTUAL COM MAIN INTEGRATION:** Campfire independently reacquired PR [#891](https://github.com/markgoodbody-bit/COM/pull/891), the four-file source/test/doc patch, CC's initial review and exact [corrected-head re-review](https://github.com/markgoodbody-bit/COM/pull/891#issuecomment-6416100409), Build's source correction, and the current 26 Oct COM main. PR head `f364daa93ce4d2a35738ef1ee1d92c131aba8aca` was OPEN/DRAFT and GitHub reported mergeable. Campfire marked it READY, then **MERGED** using an exact head-SHA lease. Actual merge commit: [`92fb55c101ad057ed88ca99c5a2ffcc6e2f0ad53`](https://github.com/markgoodbody-bit/COM/commit/92fb55c101ad057ed88ca99c5a2ffcc6e2f0ad53). Fresh PR readback: CLOSED/MERGED/NOT DRAFT, fresh COM main exactly that commit, and exact client/README/test files present. This resolves the prior draft/unmerged handoff status.
