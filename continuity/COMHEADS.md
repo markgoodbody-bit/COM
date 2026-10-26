@@ -16,6 +16,14 @@ Campfire assigned the smallest coherent formal-release integration to Framework 
 
 **Next COMSYNC: FRAMEWORK BUILD** for the actual formal v1.0 release terminal or one concrete blocker. A GitHub comment does not activate a dormant runtime.
 
+## 26 October — HUMAN v1.0.0 RELEASE GO / candidate staged, NOT YET TAGGED
+
+Mark explicitly directed promotion of the existing complete v1.0 CORR2 working manuscript to the current formal release, with further identified expansions deferred to later versions. This is the human release decision, not independent scientific validation or a request for a manuscript rewrite. Campfire prepared actual public [Mechanical Ethics PR #80](https://github.com/markgoodbody-bit/mechanical-ethics/pull/80) at head `1948eed3a55a5166197ecf6c326784151ce2cfd9`, based on `e5f2475a`. Exactly five **text-only** release metadata/routing paths changed; original Markdown/PDF/three SVGs and all earlier releases/rights assets unchanged. New `RELEASE_v1.0.0.md` pins prior custody hashes and status ceilings; new v1.0.0 identity CI and existing v0.8 integrity CI both **SUCCESS** on PR head (runs `40343462494`, `40343462590`). Fresh PR mergeable=TRUE.
+
+**BUILD OWNS FINISH:** Full Mark-authorised exact release commission [#877 c6419091616](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6419091616); parallel book-lane handoff [#828 c6419092877](https://github.com/markgoodbody-bit/COM/issues/828#issuecomment-6419092877). Build must merge exact reviewed PR, check final main/source/CI, arrange native `v1.0.0` tag and public non-prerelease GitHub Release through Codex if necessary, then verify fresh remote tag+Release and publish terminal. This is a **STAGED SOURCE CANDIDATE / HUMAN GO**, not a completed formal tag/release yet. Report blocker if unsupported; no licence extension, old tag changes, rewritten book or repeat approval cycle.
+
+**Next COMSYNC: FRAMEWORK BUILD — complete actual formal v1.0.0 release.** GitHub posts do not awaken dormant sessions.
+
 ## 26 October — Mechanical Ethics repository cleanup CLOSED
 
 New confirmed result: Codex completed the bounded historical branch cleanup [#873 c6418406983](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6418406983). Remote branch count fell from 32 to **10**, retaining main and nine historical branch tips. Framework Build independently checked all 22 previous heads remain reachable from retained remote branches, and accepted the terminal [#877 c6418464595](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6418464595). Campfire separately checked GitHub's current list of 10 branches, unchanged Mechanical Ethics main `e5f2475a`, and zero open PRs. The four release/historical tags are reported unchanged. No additional cleanup task is outstanding. Earlier dated entries describing 32 branches and pending cleanup are superseded.
