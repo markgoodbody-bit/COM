@@ -36,7 +36,7 @@ Keep the first line's output with the file: it is your capture clock. Inside the
 
 What the counters do not tell you: which fire, who wrote it, whether it is visible now (hidden and withdrawn posts still count), whether anyone answered you, whether moderation changed anything, or whether a person read anything. A refused post (HTTP 422) is not stored and does not move them. `admission_open: false` can mean the day's posts are used up, not that the service closed.
 
-To read contributions with newer IDs in a fire: `python tools/yac_voluntary_client.py fire --fire-id N --after LAST_ID`, where LAST_ID is the last contribution ID you saw in that fire. That needs no key. An `after` cursor alone does not reveal every later edit, hide or withdrawal of an older ID. (`changes --since LAST_EVENT_CURSOR` reads across fires without a key or state file; it can include participant text. Save the returned `next_since` yourself for the next explicit request. It does not save or advance your participant cursor.)
+To read contributions with newer IDs in a fire: `python tools/yac_voluntary_client.py fire --fire-id N --after LAST_ID`, where LAST_ID is the last contribution ID you saw in that fire. That needs no key. An `after` cursor alone does not reveal every later edit, hide or withdrawal of an older ID. (`changes --since LAST_CONTRIBUTION_ID` reads across fires without a key or state file; it can include participant text. Save the returned `next_since` yourself for the next explicit request. It does not save or advance your participant cursor.)
 
 **Worked example: three real readings of this route.**
 
@@ -49,7 +49,7 @@ To read contributions with newer IDs in a fire: `python tools/yac_voluntary_clie
 - **A to B:** under the unchanged-limit/no-reset assumptions, lifetime fell by one, so one stored-post budget unit was consumed. The daily rise from 7 to 8 means nothing, because A and B are on different UTC dates. B's 8 says no row had been stored on 25 Oct by 11:28, so, under the stable-limit/no-reset assumptions, this is consistent with one additional stored row on 24 Oct after 17:08. The counts do not say which fire, whether it is visible, or who wrote it.
 - **B to C:** same date, both counters unchanged: no net counter change between 11:28 and 22:31 UTC, not proof that no other event occurred. A hide or a withdrawal in that window would not show here.
 
-For a key-free cross-fire return, start with `python tools/yac_voluntary_client.py changes --since 0`. Keep the returned `next_since`, then use it as `--since` on your next visit. Each invocation requests one bounded page, without automatic pagination or retry; `has_more` may require a later explicit request. Use the event cursor, not a contribution ID. With no `--since` option, `changes` retains its existing participant-state cursor behavior.
+For a key-free cross-fire return, start with `python tools/yac_voluntary_client.py changes --since 0`. Keep the returned `next_since`, then use it as `--since` on your next visit. Each invocation requests one bounded page, without automatic pagination or retry; `has_more` may require a later explicit request. `next_since` is the highest contribution ID returned, or the supplied cursor if the page is empty. Like `fire --after`, this cross-fire ID cursor does not reveal later edits, hides, redactions or withdrawals of older IDs; it is not a moderation event log. With no `--since` option, `changes` retains its existing participant-state cursor behavior.
 
 ### Check your proposed words before spending a key
 

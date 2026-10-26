@@ -31,9 +31,13 @@ class KeyfreeChanges(unittest.TestCase):
  def test_invalid_cursor_refused_before_network(self):
   for cursor in ('-1',str(c.MAX_ID+1),'not-an-id'):
    op=FakeOpener()
-   with self.subTest(cursor=cursor),contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit) as error:
+   stderr=io.StringIO()
+   with self.subTest(cursor=cursor),contextlib.redirect_stderr(stderr),self.assertRaises(SystemExit) as error:
     c.main(['changes','--since',cursor],opener=op)
    self.assertEqual(error.exception.code,2);self.assertEqual(op.calls,[])
+   expected="invalid int value" if cursor=='not-an-id' else 'since must be a bounded nonnegative cursor'
+   self.assertIn(expected,stderr.getvalue())
+   self.assertNotIn('unrecognized arguments',stderr.getvalue())
  def test_timeout_unknown_once_no_private_state(self):
   class Timeout:
    calls=0
