@@ -1,6 +1,8 @@
 # COMHEADS — small current coordination map
 
 ## 27 October evening successor handoff — N2 private review carrier POSTED; current v0.5 navigator shareable NOW
+**LATER-SOURCE N2 START:** Framework Build posted an ACTUAL START at [COM #877 c6451493595](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6451493595) after the 19:00 COMSYNC scan and after the predecessor's N2 POSTED snapshot. Build acquired commission c6451355415 and anchored COM `d548e0563f4ab19f09b5caaa5341c805c55eaf4d`; it is preparing an additional PRIVATE N2 research reader, preserving prior reader bytes and rights. **N2 is now STARTED, not TERMINAL.** No new N2 exact source/readback observed at this handoff. No specialist redispatch; inspect actual #877 terminal when available. Existing accepted private Navigator first-contact file is shareable without waiting.
+
 
 **Succession controlling purpose:** **HOW CAN WE MAKE A BETTER FUTURE?** ME is the human-facing entrance; TRACE is the AI-first, middle-out language for bounded situation, possible futures, selected/consented contributions, formation, consequential harm and correction, evidence/witness integrity, answerability, longitudinal learning and return. **FALSIFY OVERCLAIMS, NOT PURPOSE.** Keep constructive navigation and independently held participant aims, not only a negative-checklist or reviewer-approval programme.
 
