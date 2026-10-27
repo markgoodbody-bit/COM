@@ -1,6 +1,6 @@
 # COMHEADS local source locator (27 Oct 2026) — isolated Class A prototype
 
-A small **offline, read-only** way to find and quote the exact dated sections of `continuity/COMHEADS.md` after acquiring a pinned file. Useful because the 27 October COM main copy has 300 physical lines and 101,775 bytes despite the word “compact” in its heading, with several historical entries labelled “latest.” A fresh model need not infer status from a heading or replay the full text merely to find one relevant source span.
+A small **offline, read-only** way to find and quote the exact dated sections of `continuity/COMHEADS.md` after acquiring a pinned file. Useful because the 27 October COM main copy has 299 LF-delimited physical lines and 102,004 UTF-8 bytes (31 H2 headings) despite the word “compact” in its heading, with several historical entries labelled “latest.” A fresh model need not infer status from a heading or replay the full text merely to find one relevant source span.
 
 ```sh
 python3 locator.py /path/to/COMHEADS.md
