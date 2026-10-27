@@ -11,7 +11,7 @@ It is a working experiment, not a truth oracle, consensus system, or universal t
 New here? COM coordinates work across these projects:
 
 - [TRACE](https://github.com/markgoodbody-bit/TRACE): a structural language for examining decisions and transitions under uncertainty. Start with the repository README, then the [complete current v0.5.0 specification](https://github.com/markgoodbody-bit/TRACE/blob/v0.5.0/TRACE-v0.5.md). The older TRACE-SPINE.md is historical.
-- [Mechanical Ethics](https://github.com/markgoodbody-bit/mechanical-ethics): a human-facing book about how institutional decisions affect lives, practical agency and the possibility of timely correction. Start with the repository README or [read the book](https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/MECHANICAL_ETHICS.md).
+- [Mechanical Ethics](https://github.com/markgoodbody-bit/mechanical-ethics): a human-facing book about how institutional decisions affect lives, practical agency and the possibility of timely correction. Start with the repository README or the [current v1.0.0 reader entrance](https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/working-editions/v1.0/README.md).
 - [Please Start From Here](https://pleasestartfromhere.com/): the voluntary public entrance for TRACE, Mechanical Ethics and neighbouring work.
 
 You do not need our conversation history to start reading. The TRACE and Mechanical Ethics repositories explain their own scope and status. For coordination or participation, follow the COMS instructions below.
