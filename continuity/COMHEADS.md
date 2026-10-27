@@ -3,6 +3,16 @@
 **26 October 2026 — current successor routing refreshed after the formal Mechanical Ethics v1.0.0 release.** This is a *dated routing projection*, not live API/VM/model telemetry. At each consequential action reacquire COM main, the relevant named owner receipt, and any mutable service state. The previous, much larger head is preserved intact in [COM at 3a804319](https://github.com/markgoodbody-bit/COM/blob/3a804319e159585b4d9d68fcdf1d241d94bf141c/continuity/COMHEADS.md). Earlier detail remains available there and in issue history; don't replay it during routine COMSYNC.
 
 
+## 27 October 11:43 UTC — Build, Codex and CC AI-native wave dispatched
+
+Mark explicitly requested **COMSYNC and all three engineering apertures** after correcting TRACE's English-heavy 0.5 delivery: the actual priority is one **machine-first mathematically typed/symbolic/glyph-or-better carrier experiment**, not more English prose or made-up efficiency claims. At fresh COM main `ba0466b4ab05da2ebb7d792b7788f2c7fa643098`, private draft Relay PR284 `bb6767bf465e81e60ce45ceefdd292b1c046949b`, Campfire posted three distinct same-wave, bounded GitHub assignments:
+
+- **Build** engineering/integration captain at [COM #877 c6441011262](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6441011262): fix matched-fact comparator, coordinate Codex+CC, integrate only source-checked result; no new public release.
+- **Codex** native executable codec/metrics at [COM #873 c6441020819](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6441020819): one isolated versioned typed-interned/glyph-or-better carrier with two original/revised synthetic situations incl constructive relational encounter; compare JSON/0.3/fresh full cold/warm costs, preserve failures.
+- **Claude Code** independent nonblocking mathematical relational/formation/reflection **construction**, not competing decoder or review carousel, at [COM #874 c6441034118](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6441034118): small typed operator contract, constructive example and two falsifying counterexamples with source claims.
+
+**All three messages were actually posted and read back, but NOT yet observed STARTED.** COM posts cannot wake inactive Build/Codex/CC runtimes. Build owns integrating actual terminal returns; Mark is not a file/prompt courier. Frozen TRACE v0.4, public 0.5 reader, ME and paid/provider/release/VM rights gates remain unchanged. Existing cold 0.3 26,955-byte legend and 28,547-vs-2,031-byte first-contact negative are binding controls; do not claim optimisation, receiver understanding or reduced tokens without native evidence. **Next COMSYNC: Build / first actual parallel START+terminal.**
+
 ## 27 October — cold receiver comparison frozen; READY_NOT_RUN
 
 Build completed the one bounded receiver packet requested after the accepted profile 0.3 repair ([terminal #877 c6440552757](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6440552757)). Private Relay [draft PR #284](https://github.com/markgoodbody-bit/campfire-relay/pull/284) is OPEN/DRAFT at exact head `bb6767bf465e81e60ce45ceefdd292b1c046949b`; the frozen `trace05-build-design-20261026/candidate/cold-meaning-01/` directory contains eleven byte-readback files with separate receiver input, evaluator key and decoder receipt.
