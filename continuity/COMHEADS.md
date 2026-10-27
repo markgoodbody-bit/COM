@@ -6,7 +6,7 @@ Updated 27 October 2026. This is a bounded routing summary, not live telemetry. 
 
 **HOW CAN WE MAKE A BETTER FUTURE?** ME is the human-facing entrance and TRACE the AI-first structural language. Preserve agency, worthwhile possibilities, care, independent purposes, refusal, learning and correction. Falsify overclaims, not purpose.
 
-Mark remains human originator and consequential release/rights/financial authority. Campfire leads conceptual direction and integration. **During Campfire's restart Mark explicitly put Framework Build in charge temporarily.** Build owns the current engineering wave and observations; Codex owns its assigned native action; CC owns its distinct source/UX contribution. New Campfire should acquire these returns, not restart or duplicate the work. A posted task does not wake an aperture.
+Mark remains human originator and consequential release/rights/financial authority. Campfire leads conceptual direction and integration. During Campfire's restart Mark put Framework Build in charge temporarily; Campfire has now returned with continuation c6454858707. Build owns the current engineering wave and observations; Codex owns its assigned native action; CC owns its distinct source/UX contribution. New Campfire should acquire these returns, not restart or duplicate the work. A posted task does not wake an aperture.
 
 ## Active wave: Workshop bootstrap v0 — £0
 
@@ -14,8 +14,8 @@ Mark remains human originator and consequential release/rights/financial authori
 
 | Owner | Actual state | Exact route / next action |
 |---|---|---|
-| Build | **LOCAL MOCK RETURNED; specialist terminals NOW RECEIVED; integration outstanding** | [Local source/mock c6454416550](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6454416550). [Campfire continuation c6454858707](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6454858707) asks Build to independently accept exact receipts and, only if safe, commission one finite guest mock Class A result. |
-| Codex | **NATIVE CLI INSTALL/HELP TERMINAL** | [#888 c6454554536](https://github.com/markgoodbody-bit/COM/issues/888#issuecomment-6454554536): pinned official Codex 0.165.0 in isolated guest user space; version/help exit0. Python 3.12.3 available. No login, provider or model task. Distinct guest mock requires Build's new exact commission. |
+| Build | **SPECIALIST RETURNS ACCEPTED WITH LIMITS; guest mock commissioned** | [Acceptance c6455142523](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6455142523). Owns native return integration. |
+| Codex | **CLI lane CLOSED; new guest mock POSTED** | [COM888-GUEST-MOCK-01 #873 c6455142238](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6455142238): one pinned mock, replay refusal, STOP-before-start in fresh private directory. No login/model. |
 | CC | **SOURCE/UX TERMINAL RETURNED** | [#877 c6454715023](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6454715023): three Relay/steward integration seams, fresh-key proposal and missing prerequisites; private details in Relay commit comment 206954447. No edit/install/VM/provider call. |
 
 **Build artifact:** private [Relay@28eb5428445aecddba9c0ad16b928355248e1513/workshop-bootstrap-v0-20261027/README.md](https://github.com/markgoodbody-bit/campfire-relay/blob/28eb5428445aecddba9c0ad16b928355248e1513/workshop-bootstrap-v0-20261027/README.md). Eight files read back exact. Ten local process-test methods PASS; actual local mock job completed with hashed artifact/receipt. Fixed mock adapter only: input/source/work identity, private snapshot, single-job kernel lock, finite parent/child deadlines, STOP and consumed-ID/partial-attempt hold. No arbitrary command/provider adapter. Zero tokens/cost enforced by refusing model adapters. Not a hostile-code sandbox, general billing cap, crash-proof receipt service, VM execution or model reasoning.
@@ -26,7 +26,7 @@ Mark remains human originator and consequential release/rights/financial authori
 
 **Authority boundary:** £0; no login, credential migration/browser-cookie import, paid call, auto-top-up, provider budget claim, standing scheduler, old unsafe-queue restart, public YAC writing or outside contact. Mark expressed willingness to fund about£10 for a future Jev pilot; exact provider/product, endpoint, prepaid cap and billing controls remain unestablished. Fresh-key custody design is a proposal, not a key store or spending authority. No further host health/probe loop required.
 
-Observation/integration owner: Build. Next check: actual active owner return / MANUAL; no claim of autonomous watching. **Both delegated returns are terminal**, but the parent wave remains PARTIAL pending Build's explicit acceptance, and one separately commissioned finite guest mock execution or precise boundary.
+Observation/integration owner: Build. Next check: actual active owner return / MANUAL; no claim of autonomous watching. Both original delegated returns are terminal and accepted with limits. Parent wave remains PARTIAL pending the explicitly commissioned guest mock result. CC's paid-call/credential hardening findings remain private and unimplemented; the current runner has no paid adapter. No reviewer vote or further CLI version/help rerun.
 
 ## Closed: TRACE v0.5.0 release and repository polish
 
@@ -52,4 +52,4 @@ Observation/integration owner: Build. Next check: actual active owner return / M
 
 Use the [COMS discovery gate](../COM_PROTOCOL_WORKING.md): changed issue/PR bodies including closed objects, then relevant comments. Older closed-history coverage remains PARTIAL. Old CURRENT_STATE/COM_STATE/ACTIVE_THREAD_POINTER prose is navigation and may be stale; it cannot override these exact newer receipts. Do not infer global task absence or current service state from this summary.
 
-**Next COMSYNC: Framework Build — integrate completed Codex/CC VM returns and commission one fixed guest mock only within earned Class A scope. CC's independent PSFH source-only task is POSTED on #108, not an activated runtime.**
+**Next COMSYNC: Codex — acquire the posted COM888-GUEST-MOCK-01 task; Build owns its return.**
