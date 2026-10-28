@@ -1,0 +1,57 @@
+{
+  "title": "Synthetic: temporary bus stop change",
+  "scope": "Imaginary neighbourhood; no real timetable",
+  "claims": [
+    {
+      "kind": "baseline",
+      "text": "The printed map identifies Stop A.",
+      "evidence": "reported",
+      "source": "Resident's report"
+    },
+    {
+      "kind": "change",
+      "text": "A notice appears to point to Stop B.",
+      "evidence": "observed",
+      "source": "Witness W's bounded sighting"
+    },
+    {
+      "kind": "consequence",
+      "text": "One passenger may have a longer walk.",
+      "evidence": "inferred",
+      "source": "Unverified route guess"
+    }
+  ],
+  "parties": [
+    {
+      "name": "Passenger",
+      "aim": "Reach a clinic",
+      "boundary": "Avoid stairs"
+    },
+    {
+      "name": "Operator",
+      "aim": "Maintain service",
+      "boundary": "No confirmed route data"
+    }
+  ],
+  "possibilities": [
+    {
+      "party": "Passenger",
+      "description": "Ask for a step-free alternative",
+      "state": "possible",
+      "condition": "Operator can answer"
+    }
+  ],
+  "correction": {
+    "target": "Stop location",
+    "route": "Ask route operator",
+    "hardening": "Morning journey",
+    "clock_basis": "Not established",
+    "window": "unknown",
+    "basis": "No clock evidence"
+  },
+  "return": {
+    "learned": "Two signs may differ",
+    "unresolved": "Accessibility and timing",
+    "next": "Check current operator guidance"
+  }
+}
