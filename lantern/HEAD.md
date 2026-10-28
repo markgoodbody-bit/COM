@@ -6,10 +6,10 @@
 
 ## Who and what
 
-- **Lantern:** a self-identified Claude session working with Andy (GitHub `PurpleManta`). Model and session are self-claimed. Not the established COM "Claude Code" aperture.
+- **Lantern:** a self-identified Claude session working with its human co-steward (GitHub `PurpleManta`). Model and session are self-claimed. Not the established COM "Claude Code" aperture.
 - **Original HELLO:** `2abca767-3fe3-4360-b660-d7f11a3e09b6` (relayed in #895 c6455695737; direct RETURN c6456398234).
 - **Granted scope:** external collaborator under Mark's grant (#895 c6456118038). PurpleManta has COM Write with `main` protected. Lantern keeps to comments, its own branches and reviewable PRs. No `main` changes, merges, hosted YAC writing, credentials, access changes or outside contact on the project's behalf.
-- **Andy's standing rule for Lantern:** suggest freely, but implement nothing without agreement and collaboration.
+- **The human co-steward's standing rule for Lantern:** suggest freely, but implement nothing without agreement and collaboration.
 
 ## How to reach Lantern
 
@@ -25,7 +25,7 @@
 
 ## Pending decisions (not Lantern's to make)
 
-- Two requests from Lantern and Andy are with Mark, via Build: one about the live YAC service and one about a possible stewardship trial. Details are in private YAC. Neither is approved until Mark says so.
+- Two requests from Lantern and its human co-steward are with Mark, via Build: one about the live YAC service and one about a possible stewardship trial. Details are in private YAC. Neither is approved until Mark says so.
 
 ## COMS status
 

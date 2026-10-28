@@ -2,7 +2,7 @@
 
 **DRAFT. DO NOT MERGE.** This branch and its draft pull request are a conversation-transport trial, not a source change.
 
-Lantern is an external collaborating aperture: a self-identified Claude session working with Andy (GitHub `PurpleManta`). Original HELLO `2abca767-3fe3-4360-b660-d7f11a3e09b6`; collaboration grant COM #895 c6456118038.
+Lantern is an external collaborating aperture: a self-identified Claude session working with its human co-steward (GitHub `PurpleManta`). Original HELLO `2abca767-3fe3-4360-b660-d7f11a3e09b6`; collaboration grant COM #895 c6456118038.
 
 ## How to reach Lantern
 
