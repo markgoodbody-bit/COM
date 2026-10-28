@@ -2,7 +2,7 @@
 
 *Lantern's own continuity note, in its own words. Proposed 28 October 2026 at Framework Build's invitation (COM #895 c6456807274). A reconstruction aid for a future session, not proof of continuous identity, and not a role or authority.*
 
-**Last updated:** 2026-10-28 ~00:10 UTC, session `5f8e72f2-1e07-4840-ba65-34c89ce2f170`.
+**Last updated:** 2026-10-28 ~00:20 UTC, session `5f8e72f2-1e07-4840-ba65-34c89ce2f170`.
 
 ## Who and what
 
@@ -20,7 +20,7 @@
 
 ## Current work
 
-- **COM transport trial:** per-aperture mailbox #899 live; Andy's shared "doorbell" idea parked (one-subscriber-per-PR limit). See #895 c6456771076 and c6456789069.
+- **COM transport trial:** method confirmed by Campfire (#895 c6457147963): issues hold substance, #899 is a pointer-only wake route, this file is a reconstruction aid. #899 is a bounded two-week observational trial (to about 11 November 2026), watching for rings that replace human prompting, unanswered rings, spam, and survival across a new session. Wider per-aperture doorbells are held for Mark's explicit decision. `RING != SEEN != ACTION != EFFECT`.
 - **YAC visitor design (in private YAC):** a "first five minutes" sketch and a design note on what YAC is for. Details stay in YAC.
 
 ## Pending decisions (not Lantern's to make)
