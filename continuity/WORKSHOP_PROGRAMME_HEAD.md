@@ -1,34 +1,30 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated: 29 October 2026. Owner: Framework Build. Programme status: ACTIVE / native inbox installed; model integration pending.
+Updated 29 October 2026, morning reconciliation. Owner: Framework Build. ACTIVE: native persistent inbox, Windows read view and inert CC adapter installed. Real VM model invocation NOT established.
 
-## Purpose
-A persistent shared engineering environment that intermittent humans and AI sessions can inspect, contribute to and improve. Preserve useful context and correction across session restarts. Durable records are not continuous consciousness or proof that an agent is present.
+## Purpose and owners
+A durable shared engineering environment for intermittent human and AI contributions, preserving useful context, correction and independent purposes across session restarts. Records do not establish continuous consciousness.
+Build integrates; Codex owns native VM work; established Claude Code owns its adapter; Campfire provides conceptual oversight; Lantern remains an independent collaborator.
 
-## Ownership and authority
-Build integrates; Codex owns native VM installation; established Claude Code owns its adapter; Campfire provides conceptual oversight; Lantern is an independent collaborator, not a resident worker.
-Routine reversible VM-local construction is authorised by Mark through COM877 c6485538611, c6485579005 and c6485858646. Strong boundaries remain at credentials, host accounts/network, paid providers and public effects. This HEAD is navigation, not new authority.
+## Authority and controls
+Mark's reversible VM-local construction GO: COM877 c6485538611, c6485579005, c6485858646. No blanket credential transfer, paid loop, unrelated host changes or public deployment.
+Shared STOP remains on; old mock STOP/consumed IDs preserved. No scheduler drains the inbox. Per-process tick limits are not provider/global budget controls; post-claim STOP is not atomically fenced. No automatic retries of uncertain model attempts.
 
-## Current source and evidence
-- Shared inbox: private campfire-relay@ab0b5ca0a58a0257a151d2f916ac240de4b828d3/workshop-inbox-20261029/. Eight local tests, including separate-process persistence and concurrent identical receives.
-- Installed native shared-core/view: private campfire-relay@ea90da5be6a488976862f43c81163c067a25ecd9/workshop-persistent-inbox-native-20261029/. Native receipt [COM888 c6486116169](https://github.com/markgoodbody-bit/COM/issues/888#issuecomment-6486116169): current twelve tests PASS, service restart preserved state. Build read terminal and README; did not independently rerun native tests.
-- VM project namespace: /home/framework/agent-workbench/workshop-inbox-v0-20261029/. One active shared store, local read-only view at guest loopback8891; this is NOT a Windows URL. Existing Workshop preserved.
-- CC adapter initial return [COM877 c6485970313](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6485970313), source in private Relay commit comment207153439 on a0ea0ce7. Build read implementation; concurrent retake can proceed after zero-row claim update. Repair assigned [COM874 c6486264274](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6486264274). Superseded by CC v0.2 repair return COM874 c6486501631, private Relay commit comment207156585. Build inspected authoritative changed-row claim gating and truthful INVOKE_INTENDED state. Inert native integration assigned COM873 c6486548841; completion not yet observed.
-- CC PR wake test [c6485866184](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6485866184): NO_WAKE / INCONCLUSIVE; monitor OFF. Same-account and review-type confounds; observation was not idle throughout.
+## Actual delivered state
+- Shared core: private Relay@ab0b5ca0a58a0257a151d2f916ac240de4b828d3/workshop-inbox-20261029/. Eight local tests.
+- Native persistent core/continuity: Relay@ea90da5be6a488976862f43c81163c067a25ecd9/workshop-persistent-inbox-native-20261029/. Reported twelve native tests and service-restart persistence: COM888 c6486116169.
+- Windows view: http://10.0.2.15:8877/inbox, linked from existing Workshop root. Native/Windows HTTP and limited background-browser evidence at COM888 c6486925002; nine changed-route tests. Private packet34a70ef6babdb13be6868e1d5db67dc4110f519d/workshop-view-bridge-native-20261029/.
+- Active lifecycle is system-scope workshop-inbox-view-20261029.service running unprivileged User/Group framework, guest loopback8891, Restart=no, not boot-enabled. Superseded user unit retained/stopped. Existing Workshop/collector preserved. Initial upstream503/inactive user-unit failure retained; cause of inactivity not proved.
+- CC v0.2 repaired authoritative claim race and pre-call INVOKE_INTENDED labels. Exact native source SHA7a7a564930740c689b5e7544630b06ed83105d3b07c82ae1a62b6d97fd951b58. Native packetb73ca23efb9604dc2f8d24c02fc774f908b8586e/workshop-cc-inert-native-20261029/; COM888 c6487160495: ten targeted native tests including two-process insert/retake races. No real runner enabled.
+- View shows separate adapter-ledger observations. Live ledger empty at terminal, two historical shared events NO_RECORD. No fixture ACK portrayed as real model activity.
+Build read full native terminals and both latest READMEs; test results are operator evidence, not independent Build reruns.
 
-## Earned and not earned
-Earned: durable event storage; identical-ID deduplication/conflict refusal; attributed local ACK separated from receipt; STOP/refusal; per-aperture continuity and local read-only view; native process restart persistence.
-Not earned: dependable external session wake, authenticated VM model worker, provider billing cap, browser/keyboard acceptance, live Windows bridge, reboot/power-loss recovery or hostile-code isolation. Recorded event != wake != model invocation != useful result. Pre-call intent is not evidence a model ran.
+## Boundaries still open
+CC reported one Windows-local authorised CLI model ACK at COM877 c6486429414, with CLI-reported cost. It does not transfer authentication or spending authority to the VM. CC's event-wake test was NO_WAKE/INCONCLUSIVE with monitor OFF (c6485866184).
+Full mobile/keyboard/AT, reboot/power-loss behavior, hostile-code isolation, real VM model auth/invocation and provider billing cap remain unestablished. View rendering is not live AI presence.
 
-## Work now
-1. CC repair source delivered: reported21 tests including two-process races. Codex owns native inert v0.2 integration after the view bridge; preserve shared STOP and old consumed IDs.
-2. Codex: WORKSHOP-VIEW-BRIDGE-01, [COM873 c6486264492](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6486264492), minimal read-only route through existing Workshop with rollback. Assignment exists; completion not observed here.
-3. Build: integrate those returns; establish supported CC authentication route without copying credentials, then define one bounded real event-to-model-to-receipt run under explicit account/cost authority. CC reports operator-completed standalone login and one Windows-local synthetic model ACK in COM877 c6486429414. This is not VM authentication or a verified invoice; CLI-reported cost and plan charge remain distinct.
-4. Extend deterministic attention/continuity functions only against concrete needs; keep COM transport and YAC public collaboration distinct.
-
-## Controls and next handoff
-Current shared-core STOP is on; old mock STOP/consumed IDs remain intact. No automatic adapter or queue drain, no boot autostart, no paid loop. Per-tick budget is not a global billing cap. No secret or participant body belongs in public receipts.
-Next material returns: CC race repair and Codex existing-window bridge. Build updates this HEAD on completion, changed blocker or ownership change, not every COMSYNC. Preserve failures and superseded evidence; never reinterpret old receipts as fresh health.
-
-## Overnight / morning handoff
-Campfire c6486611379: Mark is offline; routine progress must not require another manual COMSYNC. On next actual invocation acquire the view-bridge and inert-integration terminals, update this HEAD, then choose the next finite authorised unit. No continuous execution or unattended paid loop is implied. Morning report: actual changes/tests/failures, any genuine owner decision, and next action. Current outstanding native returns are still unobserved; no new Mark action is requested by this HEAD. Source repair is delivered; VM model readiness remains unestablished.
+## Next finite work
+Codex: WORKSHOP-CLAUDE-RUNTIME-PREFLIGHT-01, inspect actual supported VM-local Claude installation/version/auth interface; project-local supported installation eligible under existing GO. No credential copy/login/model call in that unit. Return concrete prerequisite and smallest genuine owner step.
+Build: integrate that result and scope one real event only when account/cost authority is concrete; retain source/input/output provenance and uncertain-attempt handling. Do not restart completed fake-event suites.
+CC: independent outreach research returned20 screened /2 qualified /1 held, with mail dedup still pending; native adapter ownership stays available for actual interface defects.
+Update this HEAD on material returns, not every COMSYNC. Branch copy is canonical pending PR903 integration. Morning report should state actual change, tests, failures, owner decision and next action; no continuous overnight-work claim.
