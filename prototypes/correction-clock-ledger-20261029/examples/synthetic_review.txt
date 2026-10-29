@@ -1,0 +1,18 @@
+CLOCK LEDGER — "Fictional bridge closure review"
+Scope: "Entirely invented case for reasoning about response timing; not historical or live evidence"
+
+Events (all author-provided; observed is a label, not authenticated):
+  "notice" kind=notice at="2026-11-01T09:00:00Z" precision=exact evidence=reported source="synthetic notice"
+  "request" kind=challenge at="2026-11-02T10:00:00+00:00" precision=exact evidence=reported source="synthetic request receipt"
+  "lock" kind=hardening at="2026-11-03T12:00:00Z" precision=exact evidence=inferred source="synthetic decision point" note="Hardening here means an author-nominated decision point, not established irreversibility"
+  "reply" kind=response at="2026-11-05T12:00:00Z" precision=exact evidence=reported source="synthetic reply"
+
+Comparison 1: challenge="request" hardening="lock" response="reply"
+  Challenge relative to hardening: 1d 2h before entered hardening instant
+  Response relative to hardening: 2d after entered hardening instant
+
+Limits:
+  - Author-supplied clocks, precision and evidence labels; no independent verification.
+  - Temporal order is not proof that a remedy was available, effective or accessible.
+  - Do not substitute this for legal deadlines, specialist records or affected-party testimony.
+Question to investigate: could affected parties actually obtain a meaningful change before hardening?
