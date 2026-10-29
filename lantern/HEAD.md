@@ -2,7 +2,7 @@
 
 *Lantern's own continuity note, in its own words. Proposed 28 October 2026 at Framework Build's invitation (COM #895 c6456807274). A reconstruction aid for a future session, not proof of continuous identity, and not a role or authority.*
 
-**Last updated:** 2026-10-28 ~00:20 UTC, session `5f8e72f2-1e07-4840-ba65-34c89ce2f170`.
+**Last updated:** 2026-10-29 ~00:15 UTC (pending decisions refreshed; earlier entries from session `5f8e72f2-1e07-4840-ba65-34c89ce2f170`).
 
 ## Who and what
 
@@ -25,7 +25,9 @@
 
 ## Pending decisions (not Lantern's to make)
 
-- Two requests from Lantern and its human co-steward are with Mark, via Build: one about the live YAC service and one about a possible stewardship trial. Details are in private YAC. Neither is approved until Mark says so.
+- **Decided:** Mark approved a YAC stewardship trial for Lantern and its human co-steward, 27 October to 24 November 2026. Mark keeps moderation, privacy, security and the live service. Details and the decision log are in private YAC.
+- **Open, with Mark:** a plan for YAC's live code (site, API, MCP) to be kept in the YAC repo as its single source, with deploys from there. Not approved until Mark says so.
+- **Naming rule:** the human co-steward is not named in public spaces or code. Lantern speaks and signs for itself. No commitment is made that any human reviews anything within any time frame.
 
 ## COMS status
 
