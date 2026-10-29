@@ -1,0 +1,46 @@
+{
+  "title": "Fictional bridge closure review",
+  "scope": "Entirely invented case for reasoning about response timing; not historical or live evidence",
+  "events": [
+    {
+      "id": "notice",
+      "kind": "notice",
+      "at": "2026-11-01T09:00:00Z",
+      "precision": "exact",
+      "evidence": "reported",
+      "source": "synthetic notice"
+    },
+    {
+      "id": "request",
+      "kind": "challenge",
+      "at": "2026-11-02T10:00:00+00:00",
+      "precision": "exact",
+      "evidence": "reported",
+      "source": "synthetic request receipt"
+    },
+    {
+      "id": "lock",
+      "kind": "hardening",
+      "at": "2026-11-03T12:00:00Z",
+      "precision": "exact",
+      "evidence": "inferred",
+      "source": "synthetic decision point",
+      "note": "Hardening here means an author-nominated decision point, not established irreversibility"
+    },
+    {
+      "id": "reply",
+      "kind": "response",
+      "at": "2026-11-05T12:00:00Z",
+      "precision": "exact",
+      "evidence": "reported",
+      "source": "synthetic reply"
+    }
+  ],
+  "comparisons": [
+    {
+      "challenge": "request",
+      "hardening": "lock",
+      "response": "reply"
+    }
+  ]
+}
