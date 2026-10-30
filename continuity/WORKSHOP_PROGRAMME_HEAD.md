@@ -8,7 +8,7 @@ Build integrates; Codex owns native VM work; established Claude Code owns its ad
 
 ## Authority and controls
 Mark's reversible VM-local construction GO: COM877 c6485538611, c6485579005, c6485858646. No blanket credential transfer, paid loop, unrelated host changes or public deployment.
-Shared STOP remains on; old mock STOP/consumed IDs preserved. No scheduler drains the inbox. Per-process tick limits are not provider/global budget controls; post-claim STOP is not atomically fenced. No automatic retries of uncertain model attempts.
+Shared STOP was ON at the last successful guest observation; the 30 October failed preflight did not refresh it. Every continuation must verify ON. Old mock STOP/consumed IDs preserved. No scheduler drains the inbox. Per-process tick limits are not provider/global budget controls; post-claim STOP is not atomically fenced. No automatic retries of uncertain model attempts.
 
 ## Actual delivered state
 - Shared core: private Relay@ab0b5ca0a58a0257a151d2f916ac240de4b828d3/workshop-inbox-20261029/. Eight local tests.
@@ -31,7 +31,19 @@ Build selected a Windows host runner with a dedicated project configuration as d
 
 CC v0.3.1 inert candidate returned at COM877 c6522363695, private Relay commit comment207381638 on a0ea0ce7804287091459330560baa9c76dcecaab. ZIP SHA256752a2f69477b380af0bdca8ef5886068ac2af07a4ddaa21f430bb58ac057b3e2; runner6b32e8536172cdc4df9eed2018c9d1ea4850813e2260152b40788532dcaf9ec1. Build independently decoded and verified all seven members and inspected the complete runner delta. The v0.3 first failure remains preserved: missing evidence falsely became no activity and malformed duration could crash. Corrected fields keep reach UNKNOWN without positive CLI-reported evidence and provider-call count UNKNOWN, separate from observed subprocess attempts. CC reports46 tests and26 discriminating mutants; Build did not repeat that suite. This is source acceptance, not native integration or isolation proof.
 
-Next finite unit: Codex implements an inert concrete transport for snapshot/acknowledge over the existing strict SSH route, with offline failure/uncertain-ack fixtures only. No live SSH/HTTP, guest writes, login, CLI invocation, service or network change in that unit. Preserve v0.3.1 and original inbox bytes. Owner sign-in and first real call remain distinct later steps. Shared STOP stays on and no scheduler is activated.
+### Transport evidence and current execution
+- First concrete source packet7db40df743586b868f420a1673bbc3d3c6ef2403:17 offline tests, including applied-ACK/lost-reply recovery without model reinvocation. Build found obsolete NAT endpoint; preserved first return.
+- Corrected164b3b5ec75a5aa6347e3517aba8046e8a50814a uses documented host-only route and original host-key lookup, five targeted tests. Accepted source only.
+- Native attempt6a528608c7525d1b2d81024923962682e0a02906 stopped before SSH. Build reproduced CRLF parser defect; actual original cause unconfirmed because stdout was not retained.
+- Corrected parser packetb8fa79324e20f0ac8c2b082a8f9f60106d61fe42:ten tests, all14 fresh host guards PASS at30Oct14:35:21UTC. VM RUNNING observed; actual SSH preflight255/empty output. Guest/STOP UNKNOWN; helpers/snapshot NOT_RUN.
+- Local diagnosis ea981d8740fad43102de930de18fd0d67832eff0, COM877 c6525921339: same no-target ssh.exe -V fails255/empty under four-variable child environment, succeeds under inherited control. Demonstrates local environment incompatibility, not exact missing dependency or original network/auth stage. No new connection/repair performed.
+
+Codex assigned bundled WORKSHOP-SSH-ENV-TO-SNAPSHOT-01 at COM873 c6525978165: finite nonconnecting environment controls, repair both launcher sites, focused tests, then already-authorised conditional two-helper install/ONE snapshot/logical-state verification. No intermediate source-complete approval handoff. Native auth/identity/timeout or unexpected state still stops without automatic repair. No ACK/model/login/service/network/power action.
+
+CC assigned independent WORKSHOP-CLI-STARTUP-EVIDENCE-SOURCE-01 at COM874 c6525978575: additive bounded stream-json startup-evidence parser and offline fixtures only. Missing fields stay UNKNOWN; CLI-reported tools/plugins are not proof of sandbox isolation. Accepted runner remains unchanged; no actual CLI call.
+
+### Coordination efficiency
+Mark asked Build to deliver more per COMSYNC and reduce handoff burden. Dispatch complete coherent units with routine reversible source/preparer correction included. Preserve failures and report material results; do not require Mark to relay content or trigger a new permission round for each substep. Posting is not execution or guaranteed wake. Distinguish actual START, terminal, and pending work. No promise of continuous background monitoring. Owner sign-in/spend/security changes remain real separate boundaries.
 
 Update this HEAD on material returns, not every COMSYNC. Branch copy remains pending PR903 integration; main is unchanged.
 
