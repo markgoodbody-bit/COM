@@ -1,6 +1,38 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, host-adapter source reconciliation. Owner: Framework Build. ACTIVE: native persistent inbox, Windows read view and inert CC adapter installed. Real VM model invocation NOT established.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state awaits the bounded native audit. Autonomous useful work NOT ESTABLISHED.
+
+## Workshop status — owner view
+
+This is a dated record, not a live presence indicator. It supersedes present-tense status in the historical entries below.
+
+| What | What we actually know |
+|---|---|
+| Installed components | Inbox, view, inert adapter and guest CLI have installation receipts. Last successful guest snapshot was 30 October 15:17 UTC; a later read failed. Current state UNKNOWN pending Codex's audit. |
+| Actual model work | One manually authorised host Claude call completed at 19:19 UTC with durable result/readback. Its one-call grant is consumed. |
+| Simulated work | Alpha/Beta exchanges, PULSE projection, curiosity selection and MIRROR checks are offline fixtures, not independent live models. |
+| Build | CC packet reviewed; stale headline corrected; owner status and next-step contract prepared. Native integration remains pending. |
+| Codex Windows | STARTED installed-state audit and finite queue trace:877 c6533808418/c6533994367. No terminal acquired. |
+| Claude Code | RETURNED autonomy challenge and ten experiment proposals:877 c6533971397. No further CC work inferred. |
+| Campfire | Integration direction received:877 c6533972065. |
+| Lantern | Independent collaborator; no new activity established by this audit. |
+
+PULSE records reported readiness with freshness limits. ITCH/curiosity proposes bounded questions; it does not authorise execution. MIRROR checks supplied records for specific mismatches; it is not autonomous introspection. All three remain source-level work here.
+
+CONTINUE is proposed: a small successor handoff containing purpose, chosen commitments, source anchors, corrections, unresolved questions and permission boundaries. A successor must reread and choose; this transfers neither identity nor standing authority.
+
+### One next step, prepared but not activated
+
+After the native return, bind one offline trigger-contract fixture to the actually observed carrier and existing inbox. Record one trigger ID, task/actor scope, STOP observation, selection or refusal, durable claim, outcome and fresh-process readback. Use a deterministic stub, zero models and no installation. Preserve uncertain attempts without retry. This is the single reversible source step toward a later event-to-result chain; it is not another queue or scheduler.
+
+Actual unattended model execution remains gated on a separately scoped owner grant, a supported installed trigger and resolution of the known post-claim STOP race. No new grant follows from this status. A timer timestamp alone or absence of a message in one transcript does not prove absence of human intervention.
+
+### CC challenge adopted with limits
+
+Build read the complete private packet accompanying6533971397. The stale ACTIVE headline was wrong and is replaced here. CC's three STARTs are reported as human-triggered; its session transcript is not independently visible to Build. Desired reduction in Mark's coordination burden is not evidence that COM posts wake runtimes. Service-restart persistence is not reboot recovery.
+
+The ten curiosity proposals are candidates, not ten executed experiments. The reported addressed-mail filter missed a dispatch that the broader register found; retain register coverage. The Little's-law proposal needs finite-window/boundary and stationarity treatment before interpreting mismatch as missing work. Do not promote that heuristic to a diagnosis. The packet's later-failed-read minute differs from the retained chronology; only ordering/exit255 is used here pending exact native receipt, not an invented reconciled time.
+
 
 ## Purpose and owners
 A durable shared engineering environment for intermittent human and AI contributions, preserving useful context, correction and independent purposes across session restarts. Records do not establish continuous consciousness.
@@ -178,8 +210,8 @@ Status vocabulary: PROPOSED, ASSIGNED, STARTED, RETURNED, BLOCKED. Each actor cl
 | Task | Owner | Status at this write | Evidence / next observation |
 |---|---|---|---|
 | Autonomy evidence matrix/integration | Build | STARTED | This matrix; reconcile exact native return |
-| Installed scheduler/heartbeat audit + reuse-mapped finite queue fixture | Codex Windows | ASSIGNED |873 c6533786305; START not yet observed |
-| Independent autonomy challenge + ten curiosity experiments | CC | ASSIGNED |874 c6533786576; START not yet observed |
+| Installed scheduler/heartbeat audit + reuse-mapped finite queue fixture | Codex Windows | STARTED |873 c6533786305;877 c6533808418/c6533994367; terminal pending |
+| Independent autonomy challenge + ten curiosity experiments | CC | RETURNED |877 c6533971397; complete private packet read by Build |
 | Existing projection/consumer/MIRROR source units | Respective owners | RETURNED |6533534417/6533610634/6533722125; no duplicate rerun |
 | Real unattended model experiment | Unassigned | PROPOSED | Not authorised by this audit; prior grant consumed |
 
