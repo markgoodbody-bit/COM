@@ -151,3 +151,36 @@ Codex projection correction terminal877 c6533534417 accepted at source scope by 
 Campfire6533681200 MIRROR commission delivered at private Relay27451d527a1c8471850835970d124050def2b348/workshop-mirror-20261030/. Four files reread equal; four focused methods PASS. First case is Build's recorded false-readiness defect, with a synthetic prospective repeat. Pure review function separates assigned aim, actual conduct, observed/possible costs, conflicting reports, missing observations, proposed correction and unknowns. It exposes selected+NOT_READY and selected+task-declined, without execution authority. A changed choice produces NO_MATCHING_MISMATCH_FOUND, never general approval.
 
 Optional Council lens explicitly simulated, zero independent witnesses. This is supplied-record regression detection, not autonomous introspection, verified consent or general ethical evaluation. Live dispatch integration NOT implemented; no new queue, model, native/service action, spend or public effects. Post-claim STOP and F3 remain open. Finite source wave complete.
+
+
+## Autonomy audit — opened 30 October, current native observation pending
+
+Commission877 c6533735718/c6533753901. Question: can the installed Workshop initiate and complete useful work without Mark prompting COMSYNC? Current answer: NOT ESTABLISHED. This matrix separates historical evidence from a current installed-state observation. Build has not acquired a fresh guest observation in this audit.
+
+| Stage | Strongest retained evidence | Limit / present audit state |
+|---|---|---|
+| Source prototype | Projection, selector, MIRROR returns through6533722125 | Offline deterministic code, not deployed worker |
+| Installed component | Historical inbox/view/collector and CLI install receipts above | Current state pending one bounded native read |
+| Authentication | Dedicated host Claude status30Oct17:48,6529670026 | Host context only; no guest authentication inference |
+| Real model invocation | Host trial6531673025,19:19:04–09UTC, durable synthetic ACK | Manually authorised/triggered; one-call grant consumed |
+| Scheduler enabled for useful model work | No such observation established in retained returns | Collector timer is not sufficient |
+| Non-COMSYNC trigger → useful work | Not established | Source simulation does not establish installed trigger |
+| Durable result / recovery | Actual host trial fresh-process readback; offline scenario restart | Does not establish unattended guest process/reboot recovery |
+| Independent model exchange | Not established | Alpha/Beta are scripted roles, not two models |
+| External effects from autonomous VM worker | Not established | No external autonomy test authorised |
+
+Concrete counterexample to “the Workshop already works autonomously”: the actual19:19 model result followed Mark's explicit one-call approval and Build/Codex dispatch; the later Alpha/Beta run used scripted functions with zero models. Neither supplies the claimed unattended trigger. This refutes using those receipts as proof; it does not prove autonomy impossible or that no unknown task ever ran. Exact prompt-to-trigger latency is not computed: user prompt timestamps are not established here. ChatGPT scheduled automation timestamps are separate carriers and do not prove a guest scheduler fired.
+
+### Durable finite work queue
+
+Status vocabulary: PROPOSED, ASSIGNED, STARTED, RETURNED, BLOCKED. Each actor claims only its own work; posting does not establish wake or runtime presence.
+
+| Task | Owner | Status at this write | Evidence / next observation |
+|---|---|---|---|
+| Autonomy evidence matrix/integration | Build | STARTED | This matrix; reconcile exact native return |
+| Installed scheduler/heartbeat audit + reuse-mapped finite queue fixture | Codex Windows | ASSIGNED |873 c6533786305; START not yet observed |
+| Independent autonomy challenge + ten curiosity experiments | CC | ASSIGNED |874 c6533786576; START not yet observed |
+| Existing projection/consumer/MIRROR source units | Respective owners | RETURNED |6533534417/6533610634/6533722125; no duplicate rerun |
+| Real unattended model experiment | Unassigned | PROPOSED | Not authorised by this audit; prior grant consumed |
+
+One finite attempt per necessary supported existing route, no alternate ingress/retry/GUI/auth/service mutation. No new model spend or paid loop. Native route failure returns UNKNOWN, not another host sweep. Observation owner Build; manual next COMSYNC/actual terminal, no promise of continuous monitoring.
