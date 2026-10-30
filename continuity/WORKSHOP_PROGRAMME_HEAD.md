@@ -8,7 +8,7 @@ Build integrates; Codex owns native VM work; established Claude Code owns its ad
 
 ## Authority and controls
 Mark's reversible VM-local construction GO: COM877 c6485538611, c6485579005, c6485858646. No blanket credential transfer, paid loop, unrelated host changes or public deployment.
-Shared STOP was ON at the last successful guest observation; the 30 October failed preflight did not refresh it. Every continuation must verify ON. Old mock STOP/consumed IDs preserved. No scheduler drains the inbox. Per-process tick limits are not provider/global budget controls; post-claim STOP is not atomically fenced. No automatic retries of uncertain model attempts.
+Shared STOP was freshly observed ON in the successful 30 October15:17UTC snapshot and preservation check. Every continuation must verify its required state. Old mock STOP/consumed IDs preserved. No scheduler drains the inbox. Per-process tick limits are not provider/global budget controls; post-claim STOP is not atomically fenced. No automatic retries of uncertain model attempts.
 
 ## Actual delivered state
 - Shared core: private Relay@ab0b5ca0a58a0257a151d2f916ac240de4b828d3/workshop-inbox-20261029/. Eight local tests.
@@ -38,7 +38,11 @@ CC v0.3.1 inert candidate returned at COM877 c6522363695, private Relay commit c
 - Corrected parser packetb8fa79324e20f0ac8c2b082a8f9f60106d61fe42:ten tests, all14 fresh host guards PASS at30Oct14:35:21UTC. VM RUNNING observed; actual SSH preflight255/empty output. Guest/STOP UNKNOWN; helpers/snapshot NOT_RUN.
 - Local diagnosis ea981d8740fad43102de930de18fd0d67832eff0, COM877 c6525921339: same no-target ssh.exe -V fails255/empty under four-variable child environment, succeeds under inherited control. Demonstrates local environment incompatibility, not exact missing dependency or original network/auth stage. No new connection/repair performed.
 
-Codex assigned bundled WORKSHOP-SSH-ENV-TO-SNAPSHOT-01 at COM873 c6525978165: finite nonconnecting environment controls, repair both launcher sites, focused tests, then already-authorised conditional two-helper install/ONE snapshot/logical-state verification. No intermediate source-complete approval handoff. Native auth/identity/timeout or unexpected state still stops without automatic repair. No ACK/model/login/service/network/power action.
+Codex completed bundled WORKSHOP-SSH-ENV-TO-SNAPSHOT-01 at COM877 c6526412751, private67fa1908b5209aede50a5a8ec2970baf5817274b/workshop-ssh-env-to-snapshot-20261030/. Build inspected environment matrix/full diff/native install/snapshot/preservation receipts. Four no-target controls found ProgramData sufficient as one added variable on this host; both sites repaired, host transport SHA256f0a462f376e8f71b169cd327c245cb55b27eed16416412c138c3d9c5feef5f19. Nine environment and five schema-preparer tests passed. Wrong three-table preparer assumption corrected to exact four documented tables; first failure preserved, no migration.
+
+Two unchanged helpers installed in the new project directory, mode0700/files0600. ONE actual Windows stdin/SSH/helper snapshot succeeded at host15:17:41.515076UTC: STOP ON,2 events/5 receipts, runtime_presence UNKNOWN, dispatch_adapter NONE. Guest clock15:17:43.156499UTC is separate/uncalibrated. Final four-table logical rows/schema/source/counts/STOP unchanged; host wrapper bytes/auth metadata unchanged. Raw snapshot local only. Removal-only rollback prepared, not executed. No ACK/model/login/service/network/power action. Default remains disabled. Native transport snapshot is accepted; model integration is NOT_RUN.
+
+Next Codex unit WORKSHOP-HOST-CLI-COMPATIBILITY-01 inspects existing host executable version/help and exact proposed runner flags without prompt/auth/model/upgrade or VM activity. Deliver one concrete supported-interface/activation proposal; no repeated transport tests.
 
 CC assigned independent WORKSHOP-CLI-STARTUP-EVIDENCE-SOURCE-01 at COM874 c6525978575: additive bounded stream-json startup-evidence parser and offline fixtures only. Missing fields stay UNKNOWN; CLI-reported tools/plugins are not proof of sandbox isolation. Accepted runner remains unchanged; no actual CLI call.
 
