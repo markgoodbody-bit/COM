@@ -1,6 +1,33 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state remains UNKNOWN after the bounded native audit. Autonomous useful work NOT ESTABLISHED.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state remains UNKNOWN; P1 communication diagnosis now assigned. Autonomous useful work NOT ESTABLISHED.
+
+## P1 incident — host-to-guest communication, opened 30 October
+
+Controlling Campfire commission877 c6534506185. Build owns incident integration; Codex diagnostic assigned873 c6534551362, START not yet observed. The earlier autonomy audit stays closed; this is a new communication investigation.
+
+| Incident field | Current evidence |
+|---|---|
+| Symptom / affected route | Established strict Windows-host SSH route to Framework-Lab returned255 with0B stdout/stderr at21:37:58UTC, approximately70ms; no deadline expiry. |
+| Last good proof | 30Oct15:17:41.515076 hostUTC snapshot succeeded through the project transport; dated STOP ON,2events/5receipts. |
+| First retained later failure | Historical19:01 metadata attempt exited255/empty; not the time of a proven outage onset. |
+| Host boundary |21:37:58 metadata reports VM RUNNING/CPU1/8192MiB/host-only NIC1; not guest health. |
+| Guest/network/auth boundaries | Guest command execution, guest services/clock/STOP, transport reach and authentication stage UNKNOWN. No cause assigned. |
+| Severity / impact | P1 project communication investigation: current guest readback unavailable, so guest-dependent work cannot safely rely on historical state. Not proof of whole VM outage or public YAC impact. |
+| Safe fallback | Existing GitHub coordination and private source work; no guest-dependent dispatch, stale readiness promotion or alternate ingress. |
+| Next bounded action | Source/host invocation comparison; if necessary one no-target version control through the same capture/environment path. No target retry or installed repair in this diagnostic unit. |
+| Verified recovery criterion | After an isolated cause and authorised correction, one established strict-route guest read must return a valid dated payload with expected identity and required service/STOP fields. Host running/version success alone cannot close the incident. Preserve first failure and before/after source identities. |
+
+### Cheap PULSE escalation contract — design, not installed
+
+Use the existing dependency records and five-status task view; no second queue or model required.
+
+1. A failed required route opens one P1 incident keyed by dependency and failure epoch. A critical observation that merely expires becomes STALE/UNKNOWN; its defined dependent task being blocked triggers escalation, not an invented outage claim.
+2. Emit a human-readable notice once per material state change: affected work, last good observation, exact failure, current unknowns, owner and next action. Record delivery separately from acknowledgement; a COM post is not a wake.
+3. Fresh unrelated readiness, a successful host check, or a timer tick cannot clear the incident.
+4. Close only against the scoped recovery criterion above. Keep the failed observation and record what the new read does and does not recover. A failed verification remains open, with no automatic retry.
+
+The first notice is this durable HEAD plus the integration receipt on877. No installed alert delivery, timer or automated escalation has been established. Future default-off worker construction remains separate.
 
 ## Workshop status — owner view
 
