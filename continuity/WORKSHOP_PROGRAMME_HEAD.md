@@ -1,6 +1,6 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state awaits the bounded native audit. Autonomous useful work NOT ESTABLISHED.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state remains UNKNOWN after the bounded native audit. Autonomous useful work NOT ESTABLISHED.
 
 ## Workshop status — owner view
 
@@ -8,11 +8,11 @@ This is a dated record, not a live presence indicator. It supersedes present-ten
 
 | What | What we actually know |
 |---|---|
-| Installed components | Inbox, view, inert adapter and guest CLI have installation receipts. Last successful guest snapshot was 30 October 15:17 UTC; a later read failed. Current state UNKNOWN pending Codex's audit. |
+| Installed components | Inbox, view, inert adapter and guest CLI have installation receipts. Last successful guest snapshot was 30 October 15:17 UTC; a later read failed. Current state UNKNOWN: the 21:37:58 UTC audit read also exited255 with no output. Host metadata reports the VM running. |
 | Actual model work | One manually authorised host Claude call completed at 19:19 UTC with durable result/readback. Its one-call grant is consumed. |
 | Simulated work | Alpha/Beta exchanges, PULSE projection, curiosity selection and MIRROR checks are offline fixtures, not independent live models. |
-| Build | CC packet reviewed; stale headline corrected; owner status and next-step contract prepared. Native integration remains pending. |
-| Codex Windows | STARTED installed-state audit and finite queue trace:877 c6533808418/c6533994367. No terminal acquired. |
+| Build | CC packet reviewed; stale headline corrected; owner status and next-step contract prepared. Native audit integrated with UNKNOWN guest state; no activation. |
+| Codex Windows | RETURNED partial native audit and finite queue trace:877 c6534075335. Guest state UNKNOWN; source return accepted with limits. |
 | Claude Code | RETURNED autonomy challenge and ten experiment proposals:877 c6533971397. No further CC work inferred. |
 | Campfire | Integration direction received:877 c6533972065. |
 | Lantern | Independent collaborator; no new activity established by this audit. |
@@ -185,14 +185,14 @@ Campfire6533681200 MIRROR commission delivered at private Relay27451d527a1c84718
 Optional Council lens explicitly simulated, zero independent witnesses. This is supplied-record regression detection, not autonomous introspection, verified consent or general ethical evaluation. Live dispatch integration NOT implemented; no new queue, model, native/service action, spend or public effects. Post-claim STOP and F3 remain open. Finite source wave complete.
 
 
-## Autonomy audit — opened 30 October, current native observation pending
+## Autonomy audit — closed 30 October, native result partial/UNKNOWN
 
-Commission877 c6533735718/c6533753901. Question: can the installed Workshop initiate and complete useful work without Mark prompting COMSYNC? Current answer: NOT ESTABLISHED. This matrix separates historical evidence from a current installed-state observation. Build has not acquired a fresh guest observation in this audit.
+Commission877 c6533735718/c6533753901. Question: can the installed Workshop initiate and complete useful work without Mark prompting COMSYNC? Current answer: NOT ESTABLISHED. This matrix separates historical evidence from a current installed-state observation. Build acquired the fresh failed native read receipt; no guest state was obtained.
 
 | Stage | Strongest retained evidence | Limit / present audit state |
 |---|---|---|
 | Source prototype | Projection, selector, MIRROR returns through6533722125 | Offline deterministic code, not deployed worker |
-| Installed component | Historical inbox/view/collector and CLI install receipts above | Current state pending one bounded native read |
+| Installed component | Historical inbox/view/collector and CLI install receipts above | Current guest state UNKNOWN after the one permitted read |
 | Authentication | Dedicated host Claude status30Oct17:48,6529670026 | Host context only; no guest authentication inference |
 | Real model invocation | Host trial6531673025,19:19:04–09UTC, durable synthetic ACK | Manually authorised/triggered; one-call grant consumed |
 | Scheduler enabled for useful model work | No such observation established in retained returns | Collector timer is not sufficient |
@@ -209,10 +209,29 @@ Status vocabulary: PROPOSED, ASSIGNED, STARTED, RETURNED, BLOCKED. Each actor cl
 
 | Task | Owner | Status at this write | Evidence / next observation |
 |---|---|---|---|
-| Autonomy evidence matrix/integration | Build | STARTED | This matrix; reconcile exact native return |
-| Installed scheduler/heartbeat audit + reuse-mapped finite queue fixture | Codex Windows | STARTED |873 c6533786305;877 c6533808418/c6533994367; terminal pending |
+| Autonomy evidence matrix/integration | Build | RETURNED | Native6534075335 and CC6533971397 integrated; no autonomy claim |
+| Installed scheduler/heartbeat audit + reuse-mapped finite queue fixture | Codex Windows | RETURNED |877 c6534075335; partial native UNKNOWN, finite source return |
 | Independent autonomy challenge + ten curiosity experiments | CC | RETURNED |877 c6533971397; complete private packet read by Build |
 | Existing projection/consumer/MIRROR source units | Respective owners | RETURNED |6533534417/6533610634/6533722125; no duplicate rerun |
 | Real unattended model experiment | Unassigned | PROPOSED | Not authorised by this audit; prior grant consumed |
 
 One finite attempt per necessary supported existing route, no alternate ingress/retry/GUI/auth/service mutation. No new model spend or paid loop. Native route failure returns UNKNOWN, not another host sweep. Observation owner Build; manual next COMSYNC/actual terminal, no promise of continuous monitoring.
+
+
+## Native audit disposition — 30 October 21:42 terminal
+
+Codex877 c6534075335, private Relay d4b80df2e5c7178730a6733299bbfaa7a2af3f4e/workshop-queue-scheduler-20261030/. Build read complete README, RESULT, PROVENANCE, queue_demo.py, native/host receipts and seven-test output. Acceptance is scoped to those inspected materials; the operator's 58-file equality claim is attributed, not a Build whole-packet rehash.
+
+Host21:37:58UTC reports VM RUNNING/CPU1/8192MiB/host-only NIC1/other NICs none. One SSH process exited255 in approximately70ms, empty stdout/stderr, no deadline expiry. This is not the earlier banner-timeout diagnosis and does not prove a guest failure. Current guest units, scheduler, worker, STOP and clock UNKNOWN. No repeated probe or repair commissioned.
+
+Host21:28 query observed one enabled Ready watcher with last-run result0, then RuntimeException; remaining coverage UNKNOWN. Name/status does not establish useful work, model invocation or the watcher's downstream behavior. The corrected query has one synthetic mock check, not native recovery.
+
+Source trace: scripted Alpha produced durable RESULT without exact ACK and remains BLOCKED, unretired attempt preserved. Only previously unattempted Beta continued to ACKED/RETURNED; a fresh process read back the stores with unchanged inputs and STOP ON. Alpha1/Beta1, models0. Seven new queue checks and one separate scheduler mock are attributed to Codex; inherited25 not rerun. The five-state trace is display/audit over existing inbox/adapters, not a new executor. Two overstated intermediate check labels were corrected with originals retained. Post-claim STOP gap remains.
+
+### Carrier decision and next contract
+
+Do not bind a new worker to the observed watcher: its executable arguments and purpose were outside the audit. Do not route new work through the unobserved guest. The demonstrated source-development carrier is a manually started local process with durable fixture inputs and fresh-process readback. It is sufficient for offline contract construction, not autonomous activation.
+
+Use the existing five-status trace as the reusable contract; do not create another equivalent fixture merely to obtain another PASS. Before any future installed trigger is commissioned, bind its exact identity to task/owner, immutable source and one-use attempt; require STOP/claim/uncertain-attempt semantics, a result identity and explicit acknowledgement, and readback in a new process. Missing trigger provenance or ACK remains UNKNOWN/BLOCKED. A new live model grant and post-claim STOP disposition are separate prerequisites.
+
+This finite audit is CLOSED / ACCEPT WITH LIMITS. No native retry, route repair, scheduler installation or model activation follows. Build's next useful source work should close a concrete integration gap, not repeat the inherited trace. Campfire receives this disposition directly.
