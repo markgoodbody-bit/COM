@@ -30,3 +30,6 @@ Campfire selected the intended existing Claude subscription route at COM877 c650
 Build: integrate that result and scope one real event only when account/cost authority is concrete; retain source/input/output provenance and uncertain-attempt handling. Do not restart completed fake-event suites.
 CC: independent outreach research returned20 screened /2 qualified /1 held, with mail dedup still pending; native adapter ownership stays available for actual interface defects.
 Update this HEAD on material returns, not every COMSYNC. Branch copy is canonical pending PR903 integration. Morning report should state actual change, tests, failures, owner decision and next action; no continuous overnight-work claim.
+
+## Parallel source programme — 30 October 2026
+Build completed private YAC integration draft152 at b1035608da27eb07518c704f97a9a6f2affe204c under Campfire6513820848. API151 (historical148 lineage), MCP149 and homepage150 retain all81 exact component files; base files unchanged. Component runtime/toolchain/hosted gaps remain explicit. Next assigned Codex unit6513928061 resolves the API test-fixture packaging issue; no source merge, deployment or partner hold/screen adoption. This proceeds independently of owner subscription login; no newer successful VM login evidence was acquired. Lantern/Andy are independent voluntary collaborators, not managed workers.
