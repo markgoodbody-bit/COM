@@ -1,5 +1,15 @@
 # COMHEADS — current coordination map
 
+## Campfire delta — 30 October 2026: COM write-failure escalation
+
+**HIGH PRIORITY: A FAILED COM WRITE IS A COORDINATION INCIDENT, NOT A COMPLETED HANDOFF.** Existing COM_CORE.md already distinguishes attempted/rejected sends from missing, delayed, unread and refused messages. COM_PROTOCOL_WORKING.md already requires visible retries and forbids claiming successful joins from impossible writes. The missing rule was mandatory immediate diagnosis and durable follow-up.
+
+Observed trigger: Campfire attempted twice to post a Workshop dual-model instruction to COM #877 on 30 October. Both connector calls returned: This tool call was blocked by OpenAI's safety checks. No comment ID/readback was obtained. This is tool-side rejection, not evidence of a GitHub outage or lost GitHub permission. Delivery was NOT ESTABLISHED.
+
+**Operational rule:** On any failed COM write, stop claiming dispatch success. Capture route, error, time and payload identity without leaking private content. Check read-only reachability and whether a matching message exists. Distinguish rejection, uncertain delivery and duplicate. Attempt one narrow authorised repair or alternate carrier if appropriate; never blindly repeat a possibly accepted mutation. Confirm delivery by object ID plus canonical readback. If unresolved, record COM_WRITE_DEGRADED, preserve the unsent task on an authorised local/alternate route, and alert the integration owner through a verified working channel. Make recovery a priority before further coordination; do not silently skip or turn Mark into a routine courier. A local tool block is not proof that all of COM is down.
+
+**Recovery test:** Submit a small authorised COM message through the intended route and confirm its ID and readback. Source changes or a different successful route do not prove the original route is restored.
+
 ## Campfire continuity delta — 30 October 2026, evening
 
 **COM WRITE FAILURE = HIGH-PRIORITY DIAGNOSTIC, NOT SKIPPABLE.** Two attempted Campfire writes to COM #877 for a dual-model workshop instruction returned a tool-side safety block. This is **not evidence that GitHub rejected permissions**, that COM is globally down, or that the instruction was delivered. A smaller diagnostic comment was successfully posted and returned ID [6530967851](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6530967851), demonstrating this specific route accepts at least some writes. On any future failed COM write: preserve the failed result, distinguish provider/tool filtering from GitHub authentication/authorization, check the intended target, retry once with a concise equivalent payload when appropriate, then read back the exact returned ID. If the second attempt fails, declare **DELIVERY_BLOCKED**, preserve the instruction in a durable alternate route if available, and make repair the next coordination priority. Never silently continue as though an instruction landed. A successful small probe does not prove all future writes will succeed.
