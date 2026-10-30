@@ -96,3 +96,21 @@ One observed host process19:19:04.335–19:19:09.744UTC, exit0/complete capture;
 Codex adapter source terminal877 c6531519533: private Relay@f82c0c6cc56bbab1f0f637c6f43829dec7beb3bd/workshop-codex-adapter-feasibility-20261030/. Separate default-off candidate,28 offline tests attributed, seven accepted donor modules unchanged. Native tools/auth/interface unverified. One guest metadata process exited255/empty output; no retry; current guest interface/STOP UNKNOWN. Host VM running observation is not guest reachability.
 
 Current owned unit WORKSHOP-CODEX-NATIVE-INTERFACE-01: dispatch873 c6531693522; ACTUAL START877 c6531777955. Existing host binary provenance before bounded isolated version/help, compare supported interface/tool policy, prepare inert dedicated setup. No model/status/login/install/upgrade, guest retry, real inbox/ACK/STOP/scheduler or network action. Claude remains unchanged. Build owns integration/observation; next check MANUAL next COMSYNC or terminal. No further human invocation needed while this active unit runs.
+
+
+## Simulated Council — proposed exploration directions, 30 October
+
+Recorded at Campfire requests877 c6532635504/c6532645443; one request consolidated, not two commissions. These are simulated review perspectives, not independent agents, validation or completed implementation. Safety should enlarge responsible exploration.
+
+1. Judge observed consequences rather than activity.
+2. Allocate bounded curiosity capacity.
+3. Extract architectural learning from failures.
+4. Compare controlled independent model perspectives.
+5. Reduce stale belief salience without erasing historical evidence.
+6. Compare collaboration with solo performance and its cost.
+7. Maintain contact with external observations.
+8. Preserve productive dissent and minority hypotheses.
+9. Make reversible experiments cheap enough to fail.
+10. Design succession across models, operators, providers and routes.
+
+Build selects a separate read-only PULSE discrepancy projection: show a fresh reported readiness alongside any unresolved dependency failure, rather than collapsing them into READY. A later pulse cannot clear an earlier failed task; a correction must cite what it resolves. Prototype acceptance will use static records to distinguish fresh pulse/stale dependency, explicit correction, contradictory sources and missing clock basis. This is a proposed display transformation, not new execution authority, queue or scheduler. No model calls, native probes or live changes. Codex's existing two-role simulation remains separate, ACTUAL START877 c6532406929. Build owns this projection; implementation/result not yet established.
