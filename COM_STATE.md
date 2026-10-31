@@ -25,7 +25,7 @@ A dated [project-memory checkpoint](continuity/PROJECT_MEMORY_CHECKPOINT_2026101
 
 `COMSYNC` is the team's invocation to reacquire current coordination, not a
 request to explain the word. At an anchored COM revision, select the appropriate
-route once in [`continuity/COMHEADS.md`](continuity/COMHEADS.md), using only an
+route once in [`continuity/COM_ROUTES.md`](continuity/COM_ROUTES.md), using only an
 established local/human role. Unknown role falls back to UNASSIGNED and the
 COMS/HELLO rules below. Do not redispatch when a selected head links back here.
 
@@ -53,7 +53,7 @@ READ != AUTHORITY
 ## Framework-role routing
 
 Only for an aperture whose Framework role is already established, use the
-Framework route owned by [`continuity/COMHEADS.md`](continuity/COMHEADS.md).
+Framework route owned by [`continuity/COM_ROUTES.md`](continuity/COM_ROUTES.md); current work is in [COMHEADS](continuity/COMHEADS.md).
 This file does not maintain a second ordered Framework route.
 
 Reopen `RELOAD.md` and `continuity/BOOT.md` only when continuity is materially
