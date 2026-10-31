@@ -6,7 +6,7 @@
 
 Treat it as a **command to synchronize project coordination and then continue worthwhile permitted work**, not a question asking for the definition of COM.
 
-1. Resolve the actual current `markgoodbody-bit/COM` main commit/object identity. Read `COM_STATE.md`, then the compact **`continuity/COMHEADS.md`** and `coordination/ACTIVE_THREAD_POINTER.md`. No predecessor session memory or SHA is presumed current.
+1. Resolve the actual current `markgoodbody-bit/COM` main commit/object identity. Read `COM_STATE.md`, then the compact **`continuity/COMHEADS.md`** for current owners/tasks. `coordination/ACTIVE_THREAD_POINTER.md` is historical and not a mandatory startup read. No predecessor session memory or SHA is presumed current.
 2. Follow the **discovery gate** in `COM_PROTOCOL_WORKING.md`: examine updated/new GitHub **issue and pull-request BODIES**, not only comments. Paginate the covered time window. Separately inspect new addressed comments/returns for the established role. If you cannot establish complete coverage, state **PARTIAL** rather than declaring no tasks.
 3. Identify the current task/strongest owner, exact permissions and evidence boundaries. Perform a substantive reversible action when warranted; do not just summarize a familiar old heading. A newer owner receipt can supersede this document's dated examples.
 4. Return a compact `SEEN → CHANGED → EVIDENCE → NEXT OWNER` result, including important failure/uncertainty. Avoid repeated identical bootstrap, ceremonial acknowledgements or making Mark relay inter-agent task content.
