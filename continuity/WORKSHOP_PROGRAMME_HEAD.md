@@ -4,7 +4,7 @@ Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. 
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction ASSIGNED873 c6542678192, START not yet observed. Posting is not wake.
+Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation ASSIGNED873 c6542865561; START not yet observed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -331,3 +331,14 @@ Next positive engineering work must name an implementable authority/start bounda
 CC6542640127/private commit comment207519127 read in full by Build, including probes and controls. STOP ON currently labels existing CLAIMED/INVOKE_INTENDED/RESULT/ACKED rows SKIPPED_STOPPED; result acknowledgement is coupled to new launch authority; inherited parent process_once can claim and call a recorder on the same candidate object. These are trusted-source offline findings, not live effects or positive fence tests.
 
 Codex correction8736542678192: preserve stored lifecycle separately from STOP hold; implement explicit result-reconciliation path without new launch, requiring real stored event/runner/result/exact ACK evidence and rejecting forged or empty pending states; guard shared claim path against inherited entry. CC's seeded ACK_PENDING case does not itself establish durable-result validity. Require positive valid-result reconciliation and negative malformed-result cases, no production ACK. Return one corrected packet plus concise implementable positive-start seam decision. No new CC review, native work, install, model or spend. CC RETURNED; Codex ASSIGNED. Owner integration receipt8776542678333.
+
+
+## 31 October — result recovery corrected; positive fixed operation commissioned
+
+Build read full54db2fe4e90fa12db3c3f22f9a1d4059ee23a3a7/workshop-stop-return-correction-20261031/README.md, CORRECTION.diff and NEXT-POSITIVE-SEAM.md. Corrected candidate101a001c is accepted at source scope. Eighteen changed checks are Codex-reported, not independently rerun. The three original failures are preserved. Lifecycle/hold/STOP are separate named fields; valid stored result acknowledgement is explicit and does not call a runner; composition plus claim guard closes the reported inherited-entry path. Trusted ledger assumptions and non-atomic STOP/metadata-ACK policy remain explicit.
+
+API seam: process_once changed from tuples to named reports. No installed consumer has been switched or tested against this candidate. Do not drop it into the existing CLI/view/fixture callers as a compatible replacement. The owner view here reports source disposition only; installation and consumer acceptance remain pending. Valid result ACK is useful recovery, not permission for new work.
+
+Next Codex source assignment8736542865561 implements one positive fixed source-integrity operation using exact existing project_checks and inbox/STOP sources. Stable scoped reservation/result authority lives with STOP; caller rollback cannot erase it under the stated trusted-authority model. Protected OS custody is a native prerequisite, not a fixture claim. Demonstrate positive result/readback plus concurrency/crash/lost-reply/STOP ordering; keep authority/whole-VM rollback outside guarantee. Explicit bounded STOP delay required. Migration/installation are proposals only; no live schema, guest, model or provider actions.
+
+CC review is terminal. No general review carousel or native denial smoke. Current next milestone is a useful fixed operation with a real implementation of admission and recovery, not another universal refusal.
