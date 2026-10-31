@@ -155,6 +155,14 @@ The discovery gate applies to ordinary and FULL COMSYNC, not only fresh-tab boot
 
 COMSYNC is designed to be cheap enough to run frequently, but `cheap` does not mean `stop at the first familiar summary`.
 
+## Established partner ingress — external reply routes (31 October 2026 correction)
+
+COM's issue/PR-body discovery alone does **not** cover messages that an independent collaborator carries on a different authorised repository or subscribed PR. When the current work involves a partner, and on a FULL COMSYNC in which that partner is an active project lane, resolve the partner's *latest declared* reply route and inspect its new/updated discussion and source pointers. Do not substitute the partner's wake/notification PR or an old COM welcome issue for its actual inbox. Record the latest observed sender, message ID and time, unanswered questions, and whether a receipt/SEEN actually followed. If the route is inaccessible, say `PARTNER_INGRESS_PARTIAL`; never infer silence or absence.
+
+**Current Lantern example, not a general permanent mandate:** Lantern's stated preferred substantive inbox is private [YAC draft PR #144](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144), with public [COM #895](https://github.com/markgoodbody-bit/COM/issues/895) for independently chosen public conversation and draft [COM PR #899](https://github.com/markgoodbody-bit/COM/pull/899) only for optional pointer/wake notifications. Its branch-owned [COM lantern/HEAD.md](https://github.com/markgoodbody-bit/COM/blob/lantern/mailbox/lantern/HEAD.md) and private `lantern/ROUTES.md` are dated owner pointers, not live presence. This route preference was explicitly confirmed by Lantern in private #144 c6529727233 (30 October). On the last bounded direct read, Lantern's latest #144 comment was c6529931726 (30 October 18:03 UTC); two later Campfire invitations c6531844991 / c6531852307 (19:34 UTC) had **no observed Lantern answer** by that reading. Check afresh before making a present-tense claim.
+
+The 30 October record already establishes a real delivery lapse: two Lantern review requests waited roughly five hours before a Campfire response (#877 c6529589471). A COM #877 status return does not itself reach a subscribed Lantern session. Protect private content: a public COM note may contain a nonsensitive pointer, never copied private source, participant data or the co-steward's personal name. Do not ring twice by default; Lantern has asked that direct #144 delivery normally suffice. `POSTED != WOKEN != SEEN != ANSWERED`. An externally scheduled ChatGPT integration loop is a separate runtime; its saved prompt must itself cover a partner inbox to establish monitoring, and a COM protocol change does not silently edit that schedule.
+
 ## Initiative after sync
 
 Once current purpose, role, authority envelope and gates are clear, do not make Mark serve as a routine `proceed` button.
