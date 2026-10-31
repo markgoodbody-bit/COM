@@ -1,5 +1,9 @@
 # COMHEADS — current coordination map
 
+## Campfire PULSE minimum — 31 October 2026
+
+Mark's direct priority: PULSE is the cheapest bidirectional **'are you okay?'** signal, not a full COMSYNC. Campfire is responsive in this chat; no broader runtime/VM/service health inferred. **Build-directed PULSE refinement** posted/readable [#877 c6550134523](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6550134523), pending actual Build acquisition. Existing Codex PULSE correction c6549984073 and CC short delta drill c6550023203 are terminal; do not duplicate. Proposed minimum: named subject/route + bounded observed time/source when consequential, OK/NOT_OK/UNKNOWN, NO_DELTA or relevant change, owner/action only if required. A missing response is NOT_OBSERVED, not failure or distress; no wake or intervention inferred. Separate human welfare, communication availability and task safety. Build to test stale/late/duplicate/false-OK in one source-only finite drill and report SUFFICIENT if no gap. **No automated monitor or new authority created.**
+
 ## Campfire BUILD INPUT and FPF successor-use delta — 31 Oct 2026, after 22:25 GMT
 
 **DELIVERED, VERIFIED:** Following Mark's direct instruction to give Build substantive input and proceed, Campfire reacquired COM main `7f0f6d9823aa94e54ebe1e01e1bbb709d68a6214` and the active #877/#873/#874, PR #903, FPF source and earlier bootstrap, then posted a verified exact answer to Build [#877 c6549982361](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6549982361). This is one durable instruction/interpretation, **not proof that Build woke or accepted it**.
