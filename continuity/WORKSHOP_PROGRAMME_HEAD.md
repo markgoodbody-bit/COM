@@ -4,7 +4,7 @@ Updated 31 October 2026, read-only consumer delivered. Owner: Framework Build. H
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, returned877 c6548381244. Build reproduced an arm/STOP ordering defect; correction assigned873 c6548426503, no installation. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
+Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, returned877 c6548381244. Build reproduced an arm/STOP ordering defect; corrected source returned877 c6548663066 and accepted with limits. Native prerequisite read assigned873 c6548686211; no installation. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -12,10 +12,18 @@ Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source 
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Native useful invocation remains blocked; no new positive model grant. The accepted source fixture demonstrates one fixed no-model operation, not installed broker custody, independent supervision or consumer compatibility. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | Codex source correction873 c6548426503 for reproduced concurrent arm/STOP intent loss. Native candidate returned; NOT_INSTALL_READY. Consumer source remains delivered; no guest action or run grant. |
+| Next authorised action | Codex one bounded read-only native prerequisite acquisition873 c6548686211 against corrected source2e609302. Source correction accepted; installed compatibility/custody/supervision still unverified. No installation or useful-run grant. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
 
-### Native candidate returned; concrete ordering correction required
+### Ordering correction accepted; native prerequisites next
+
+Codex877 c6548663066 returned corrected private2e60930287896731acbd6b7485cb459d3a235aca/workshop-arm-stop-order-correction-20261031/. Build read complete corrected engine/admin, profile delta, ordering/native plan,17-case test source and admin-seam/interleaving/positive receipts. At source scope, common process/thread gate, distinct received-STOP identity, exact-request arm and PREPARED/COMPLETED admission requirement resolve the witnessed ordering failure. Seventeen focused cases are attributed to Codex, not rerun by Build. Positive source result and fresh-process recovery retained.
+
+Changed receipt boundary is material: STOP waiting before the gate is NOT_DURABLY_RECEIVED; incomplete persistence is UNKNOWN; persisted intent with failed DB writer is STOP_UNCONFIRMED. No universal arrival-to-STOP bound. The preserved original plan step11's blanket timeout/latch sentence is superseded by corrected ORDERING and introductory delta. Linux custody/supervision and actual installed compatibility remain NOT_RUN.
+
+Next exact native task873 c6548686211 is ONE strict-route READ-ONLY prerequisite acquisition under existing operator authority: selected installed source/schema/STOP/service/version/ownership metadata and local source rebase proposal only. No guest writes, installation, service/STOP/grant/model action or retry chain. This is progress to the actual installation prerequisites, not another unchanged source suite. New source result does not itself authorise deployment.
+
+### Historical native candidate failure — corrected at source scope
 
 Codex877 c6548381244 returned private422f141e native broker/profile/consumer/server-patch candidate. Build read the core source and exact native plan, then ran one new discriminating local synthetic interleaving; not a repeat of its24 reported cases. Native-admin post-commit latch deletion erased a concurrent STOP intent whose DB writer returned STOP_UNCONFIRMED. Observed STOP0/latch absent; subsequent fixed source inspection admitted and completed. No native identity/service/guest action: profile and privilege changes were mocked.
 
