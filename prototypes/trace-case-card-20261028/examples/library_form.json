@@ -1,0 +1,57 @@
+{
+  "title": "Synthetic: library ramp notice",
+  "scope": "Fictional library; no verified opening hours or real visitors",
+  "claims": [
+    {
+      "kind": "baseline",
+      "text": "A leaflet describes a step-free entrance.",
+      "evidence": "reported",
+      "source": "Imaginary leaflet"
+    },
+    {
+      "kind": "change",
+      "text": "A temporary sign seems to direct visitors to another door.",
+      "evidence": "unknown",
+      "source": "Not checked"
+    },
+    {
+      "kind": "consequence",
+      "text": "A visitor might need a different route.",
+      "evidence": "inferred",
+      "source": "Hypothesis, not observed outcome"
+    }
+  ],
+  "parties": [
+    {
+      "name": "Visitor",
+      "aim": "Reach library resources",
+      "boundary": "Step-free access"
+    },
+    {
+      "name": "Staff",
+      "aim": "Keep access available",
+      "boundary": "No verified timetable"
+    }
+  ],
+  "possibilities": [
+    {
+      "party": "Visitor",
+      "description": "Ask staff to confirm the accessible entrance",
+      "state": "possible",
+      "condition": "Staff can respond"
+    }
+  ],
+  "correction": {
+    "target": "Unclear direction",
+    "route": "Ask library staff",
+    "hardening": "Trip already made",
+    "clock_basis": "Unknown",
+    "window": "unknown",
+    "basis": "No clock evidence"
+  },
+  "return": {
+    "learned": "A notice could be ambiguous",
+    "unresolved": "Which door is accessible?",
+    "next": "Check current library information before travel"
+  }
+}
