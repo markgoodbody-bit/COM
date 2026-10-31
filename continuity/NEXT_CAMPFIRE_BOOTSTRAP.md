@@ -17,6 +17,8 @@ Use a short response about the named subject: OK, NOT_OK or UNKNOWN, with observ
 
 Current holds and timing belong in COMHEADS and exact owner receipts. No GUI, provider, spend, publication or native authority follows from bootstrapping. Personal correspondence stays private.
 
+Delayed or repeated delivery is not a fresh observation. Retain source identity/time separately from arrival; the same source event does not create another task. Do not overwrite newer evidence with an older reply; uncertain ordering stays uncertain. An old OK cannot establish current health. NOT_OK names the actual problem and appropriate owner; UNKNOWN names the missing observation only when it matters. No automatic intervention follows either.
+
 ## Preserved history
 
 [Complete preceding file at 07bfded5](https://github.com/markgoodbody-bit/COM/blob/07bfded5a53010b5d107c0ecd8d00d9f9592048b/continuity/NEXT_CAMPFIRE_BOOTSTRAP.md). Historical receipts and repository history are retained. Read them for a specific question, not as routine startup.
