@@ -4,7 +4,7 @@ Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. 
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC exact candidate supplied874 c6542533265 under existing assignment; START not yet observed. Posting is not wake.
+Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction ASSIGNED873 c6542678192, START not yet observed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -324,3 +324,10 @@ Candidate30e54e8f makes Adapter03.process_once deny all new claims/runner callba
 Integration decision: accept the precise denial behavior as a candidate, not completion of the useful worker. Do not replace installed functioning components or run native refusal tests merely to accrue another PASS. CC8746542533265 receives exact changed logic, including the question whether completed-result ACK recovery is unnecessarily coupled to new-launch authority. That challenge is bounded to the current change.
 
 Next positive engineering work must name an implementable authority/start boundary and its failure model. Separate no-repeat-on-uncertainty, local atomic admission and stronger resilience to rollback; do not imply a generic CLI supplies provider idempotency, or require an unimplemented universal guarantee without identifying the actual proposed scope. The owner-visible gap remains: useful event-triggered invocation not delivered.
+
+
+## 31 October — three concrete CC findings adopted
+
+CC6542640127/private commit comment207519127 read in full by Build, including probes and controls. STOP ON currently labels existing CLAIMED/INVOKE_INTENDED/RESULT/ACKED rows SKIPPED_STOPPED; result acknowledgement is coupled to new launch authority; inherited parent process_once can claim and call a recorder on the same candidate object. These are trusted-source offline findings, not live effects or positive fence tests.
+
+Codex correction8736542678192: preserve stored lifecycle separately from STOP hold; implement explicit result-reconciliation path without new launch, requiring real stored event/runner/result/exact ACK evidence and rejecting forged or empty pending states; guard shared claim path against inherited entry. CC's seeded ACK_PENDING case does not itself establish durable-result validity. Require positive valid-result reconciliation and negative malformed-result cases, no production ACK. Return one corrected packet plus concise implementable positive-start seam decision. No new CC review, native work, install, model or spend. CC RETURNED; Codex ASSIGNED. Owner integration receipt8776542678333.
