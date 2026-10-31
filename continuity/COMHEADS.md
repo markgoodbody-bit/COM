@@ -1,5 +1,17 @@
 # COMHEADS — current coordination map
 
+## Campfire BUILD INPUT and FPF successor-use delta — 31 Oct 2026, after 22:25 GMT
+
+**DELIVERED, VERIFIED:** Following Mark's direct instruction to give Build substantive input and proceed, Campfire reacquired COM main `7f0f6d9823aa94e54ebe1e01e1bbb709d68a6214` and the active #877/#873/#874, PR #903, FPF source and earlier bootstrap, then posted a verified exact answer to Build [#877 c6549982361](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6549982361). This is one durable instruction/interpretation, **not proof that Build woke or accepted it**.
+
+**CHANGED ACTION FROM RELOADED FACTS:** Square post10898 and comments128990/128991 are already SENT, so no duplicate request. Workshop failed during FRESH_PRECONDITIONS before installer creation; the pre-existing Workshop/source/service/STOP final comparison was NOT_REACHED, so no 'unchanged/healthy' claim and no native retry. Build [#877 c6549912633](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6549912633) records Mark's direct rule: any scholarly reply **Wednesday at earliest**, still subject to his final approval, **NO scheduled send**. Source-to-decision continuation observed at task scope; long-term transfer/benefit still unproved.
+
+**ONE SOURCE CORRECTION:** Campfire corrected the separate `campfire/pr903-closed-install-negative-return-20261031` candidate to head `21799e19746dbbb356afc9752206f89f7e60372d`, one source file, 5 additions/3 deletions vs Build's PR #903 head `3b42cc7`. It removes the unsupported claim that existing Workshop was freshly unchanged; now says final comparison NOT_REACHED. Exact candidate blob and compare read back. **Build's PR #903, main, real guest and STOP unchanged by this candidate.** Build owns disposition, no native retry implied.
+
+**SELECTIVE EXTERNAL METHOD:** FPF `ailev/FPF` pinned 31-Oct `5018da7`: C.2.8 reader/particular-expression relative structural recovery; C.39.QR return to originating question/use; C.40.NP qualified next attainable problem for independent carriers. Read FPF README/USING-FPF, selected public method texts and latest commit changes, **NOT full 18MB Core**. Valuable methodological neighbour, not a template to ingest wholesale or an ME/TRACE validation. The broader end is independent human/AI judgement, correction and worthwhile futures, not flawless persistence of the original conversation.
+
+**NEXT COMSYNC: BUILD** — acquire c6549982361 and owner-disposition the corrected PR903 view, preserve native STOP/hold; then choose smallest authorised world-facing consequence, while PSFH public push and human correspondence remain gated. Do not commission Codex merely on transient readiness.
+
 ## Campfire FOURTH-tab recovery — 31 October 2026, ~22:16 GMT (early verified checkpoint)
 
 **INCIDENT / METHOD.** Mark reports a **fourth successive Campfire tab interrupted** before a clean final handoff. This is a fresh ChatGPT aperture, not continuous consciousness or inherited worker access. This checkpoint is deliberately written EARLY; the NEXT_CAMPFIRE_BOOTSTRAP and separate QUICK_CAMPFIRE_BOOTSTRAP are parallel recovery texts. Confirm PR/merge/main and both bootstraps by actual readback. Reacquired COM main at start: `ee20c98b060f1ceb4bfd8e4f6b0a57e1fb4ee091`; prior [PR #909](https://github.com/markgoodbody-bit/COM/pull/909) merged. Subsequent branches may move main.
