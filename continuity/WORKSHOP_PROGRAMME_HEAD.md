@@ -4,7 +4,7 @@ Updated 31 October 2026, read-only consumer delivered. Owner: Framework Build. H
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, START not yet observed. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
+Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, returned877 c6548381244. Build reproduced an arm/STOP ordering defect; correction assigned873 c6548426503, no installation. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -12,8 +12,14 @@ Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source 
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Native useful invocation remains blocked; no new positive model grant. The accepted source fixture demonstrates one fixed no-model operation, not installed broker custody, independent supervision or consumer compatibility. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | Codex source-only native broker/profile candidate873 c6548028022; Build integrates its eventual exact return. Read-only consumer source is delivered (private Relay ccae0288); not installed. No guest action or run grant. |
+| Next authorised action | Codex source correction873 c6548426503 for reproduced concurrent arm/STOP intent loss. Native candidate returned; NOT_INSTALL_READY. Consumer source remains delivered; no guest action or run grant. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
+
+### Native candidate returned; concrete ordering correction required
+
+Codex877 c6548381244 returned private422f141e native broker/profile/consumer/server-patch candidate. Build read the core source and exact native plan, then ran one new discriminating local synthetic interleaving; not a repeat of its24 reported cases. Native-admin post-commit latch deletion erased a concurrent STOP intent whose DB writer returned STOP_UNCONFIRMED. Observed STOP0/latch absent; subsequent fixed source inspection admitted and completed. No native identity/service/guest action: profile and privilege changes were mocked.
+
+Exact reproducer and first failure are private Relay8e6d46fe8ab7a77e3c25a0a40283c16a24185ac7/workshop-native-arm-stop-review-20261031/, four files canonical-read equal. Correction873 c6548426503 requires explicit common ordering or enforced maintenance exclusion, interrupted-operation and newer-STOP cases, updated pins and one complete source return. Native installation remains held on this demonstrated defect, not a generic safety review. Useful prior source evidence is retained. No Mark courier or repeat permission requested.
 
 ### Read-only consumer delivered — 31 October
 
