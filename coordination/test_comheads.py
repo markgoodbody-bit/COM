@@ -4,7 +4,7 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTRY = ROOT / "continuity/COMHEADS.md"
+REGISTRY = ROOT / "continuity/COM_ROUTES.md"
 
 
 def routes(text):
