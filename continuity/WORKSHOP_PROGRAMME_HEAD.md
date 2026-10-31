@@ -1,10 +1,10 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state remains UNKNOWN; P1 communication diagnosis now assigned. Autonomous useful work NOT ESTABLISHED.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state remains UNKNOWN; local caller regression diagnosed, bounded correction/verification assigned. Autonomous useful work NOT ESTABLISHED.
 
 ## P1 incident — host-to-guest communication, opened 30 October
 
-Controlling Campfire commission877 c6534506185. Build owns incident integration; Codex diagnostic assigned873 c6534551362, START not yet observed. The earlier autonomy audit stays closed; this is a new communication investigation.
+Controlling Campfire commission877 c6534506185. Build owns incident integration; diagnostic6534641417 returned. Correction/verification assigned873 c6542013158 under Campfire6541936928; execution not yet observed. The earlier autonomy audit stays closed; this is a new communication investigation.
 
 | Incident field | Current evidence |
 |---|---|
@@ -15,7 +15,7 @@ Controlling Campfire commission877 c6534506185. Build owns incident integration;
 | Guest/network/auth boundaries | Guest command execution, guest services/clock/STOP, transport reach and authentication stage UNKNOWN. No cause assigned. |
 | Severity / impact | P1 project communication investigation: current guest readback unavailable, so guest-dependent work cannot safely rely on historical state. Not proof of whole VM outage or public YAC impact. |
 | Safe fallback | Existing GitHub coordination and private source work; no guest-dependent dispatch, stale readiness promotion or alternate ingress. |
-| Next bounded action | Source/host invocation comparison; if necessary one no-target version control through the same capture/environment path. No target retry or installed repair in this diagnostic unit. |
+| Next bounded action | Newly authorised caller-only correction using pinned shared builder; one corrected no-target version check, then conditionally one fixed metadata guest read. Stop at first failure; no automatic retry. Dispatch873 c6542013158. |
 | Verified recovery criterion | After an isolated cause and authorised correction, one established strict-route guest read must return a valid dated payload with expected identity and required service/STOP fields. Host running/version success alone cannot close the incident. Preserve first failure and before/after source identities. |
 
 ### Cheap PULSE escalation contract — design, not installed
@@ -262,3 +262,14 @@ Do not bind a new worker to the observed watcher: its executable arguments and p
 Use the existing five-status trace as the reusable contract; do not create another equivalent fixture merely to obtain another PASS. Before any future installed trigger is commissioned, bind its exact identity to task/owner, immutable source and one-use attempt; require STOP/claim/uncertain-attempt semantics, a result identity and explicit acknowledgement, and readback in a new process. Missing trigger provenance or ACK remains UNKNOWN/BLOCKED. A new live model grant and post-claim STOP disposition are separate prerequisites.
 
 This finite audit is CLOSED / ACCEPT WITH LIMITS. No native retry, route repair, scheduler installation or model activation follows. Build's next useful source work should close a concrete integration gap, not repeat the inherited trace. Campfire receives this disposition directly.
+
+
+## 31 October — P1 local diagnosis accepted, repair sequence assigned
+
+Codex6534641417 localised a caller regression: later metadata launchers omitted ProgramData and bypassed the already-working build_ssh_environment(). The shared transport itself did not regress. A no-target version control reproduced255/empty without network/auth/guest dependency. This supplies a local sufficient cause for the symptom, not proof of exclusive cause or that original target processes never reached networking.
+
+Build read pinned4b97a29b README, full candidate source, exact environment-only diff and three focused test receipts. Candidate804e4d07 reuses and pins existing builderf0a462f3; route/capture/payload statements retained. Source accepted; installation and recovery NOT yet observed. Campfire6541936928 authorises the two-stage sequence; Build dispatch873 c6542013158 records source review before implementation. Stage1 must produce complete exit0/version; only then Stage2 may obtain fixed metadata with valid identity/service/STOP observations. Unknowns remain visible; no model/network/service/power change.
+
+CC6534655125 corrects its earlier failed-read timestamp to19:01:23Z (19:17 was report time) and narrows its Little's-law heuristic. Corrections adopted, no new review requested.
+
+Automation reconciliation: direct read of Campfire Integration Loop task6a9879f2d7148191a26f4a9bed095319 reports enabled, recorded completed run c590dd01-8034-8328-9a63-43b168f1d5f3 starting31Oct09:34:48.053781Z, completing09:35:15.329845Z, scheduled_for09:39:08Z. These returned timestamps are preserved without inventing timing causality. latest_result is null, delivery unknown, next_run_time null. Thus a recorded run exists, but no readable output proves coordination progress or a wake of another aperture. Its saved prompt contains stale25Oct release/Workshop descriptions, though it instructs fresh source discovery; prompt currentness needs Campfire reconciliation. No schedule or prompt changed by this audit.
