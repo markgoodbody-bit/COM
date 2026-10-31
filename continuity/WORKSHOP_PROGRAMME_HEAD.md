@@ -1,10 +1,10 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; current guest/service state remains UNKNOWN; local caller regression diagnosed, bounded correction/verification assigned. Autonomous useful work NOT ESTABLISHED.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED. Autonomous useful work NOT ESTABLISHED.
 
-## P1 incident — host-to-guest communication, opened 30 October
+## P1 incident — communication recovered 31 October; scoped closure
 
-Controlling Campfire commission877 c6534506185. Build owns incident integration; diagnostic6534641417 returned. Correction/verification assigned873 c6542013158 under Campfire6541936928; execution not yet observed. The earlier autonomy audit stays closed; this is a new communication investigation.
+Controlling Campfire commission877 c6534506185. Build owns incident integration; diagnostic6534641417 returned. Correction/verification terminal877 c6542145359 reviewed by Build; pinned route recovery accepted with payload limits. The earlier autonomy audit stays closed; this is a new communication investigation.
 
 | Incident field | Current evidence |
 |---|---|
@@ -15,7 +15,7 @@ Controlling Campfire commission877 c6534506185. Build owns incident integration;
 | Guest/network/auth boundaries | Guest command execution, guest services/clock/STOP, transport reach and authentication stage UNKNOWN. No cause assigned. |
 | Severity / impact | P1 project communication investigation: current guest readback unavailable, so guest-dependent work cannot safely rely on historical state. Not proof of whole VM outage or public YAC impact. |
 | Safe fallback | Existing GitHub coordination and private source work; no guest-dependent dispatch, stale readiness promotion or alternate ingress. |
-| Next bounded action | Newly authorised caller-only correction using pinned shared builder; one corrected no-target version check, then conditionally one fixed metadata guest read. Stop at first failure; no automatic retry. Dispatch873 c6542013158. |
+| Disposition | CLOSED for local caller failure and pinned metadata communication. One corrected version control and one fixed guest read succeeded31Oct10:15UTC. No further recovery probe commissioned. |
 | Verified recovery criterion | After an isolated cause and authorised correction, one established strict-route guest read must return a valid dated payload with expected identity and required service/STOP fields. Host running/version success alone cannot close the incident. Preserve first failure and before/after source identities. |
 
 ### Cheap PULSE escalation contract — design, not installed
@@ -31,15 +31,15 @@ The first notice is this durable HEAD plus the integration receipt on877. No ins
 
 ## Workshop status — owner view
 
-This is a dated record, not a live presence indicator. It supersedes present-tense status in the historical entries below.
+This is a dated record, not a live presence indicator. Latest observation:31October10:15UTC. It supersedes present-tense status in the historical entries below.
 
 | What | What we actually know |
 |---|---|
-| Installed components | Inbox, view, inert adapter and guest CLI have installation receipts. Last successful guest snapshot was 30 October 15:17 UTC; a later read failed. Current state UNKNOWN: the 21:37:58 UTC audit read also exited255 with no output. Host metadata reports the VM running. |
+| Installed components | Inbox, view, inert adapter and guest CLI have installation receipts. Last successful guest snapshot was 30 October 15:17 UTC; a later read failed. Superseded by31Oct10:15 pinned metadata read: Workshop view active/running, named inbox STOP ON. Installed-source digest and whole-guest health not measured. |
 | Actual model work | One manually authorised host Claude call completed at 19:19 UTC with durable result/readback. Its one-call grant is consumed. |
 | Simulated work | Alpha/Beta exchanges, PULSE projection, curiosity selection and MIRROR checks are offline fixtures, not independent live models. |
 | Build | CC packet reviewed; stale headline corrected; owner status and next-step contract prepared. Native audit integrated with UNKNOWN guest state; no activation. |
-| Codex Windows | RETURNED partial native audit and finite queue trace:877 c6534075335. Guest state UNKNOWN; source return accepted with limits. |
+| Codex Windows | RETURNED repair verification877 c6542145359: pinned metadata communication recovered, STOP ON; no worker activated. |
 | Claude Code | RETURNED autonomy challenge and ten experiment proposals:877 c6533971397. No further CC work inferred. |
 | Campfire | Integration direction received:877 c6533972065. |
 | Lantern | Independent collaborator; no new activity established by this audit. |
@@ -273,3 +273,16 @@ Build read pinned4b97a29b README, full candidate source, exact environment-only 
 CC6534655125 corrects its earlier failed-read timestamp to19:01:23Z (19:17 was report time) and narrows its Little's-law heuristic. Corrections adopted, no new review requested.
 
 Automation reconciliation: direct read of Campfire Integration Loop task6a9879f2d7148191a26f4a9bed095319 reports enabled, recorded completed run c590dd01-8034-8328-9a63-43b168f1d5f3 starting31Oct09:34:48.053781Z, completing09:35:15.329845Z, scheduled_for09:39:08Z. These returned timestamps are preserved without inventing timing causality. latest_result is null, delivery unknown, next_run_time null. Thus a recorded run exists, but no readable output proves coordination progress or a wake of another aperture. Its saved prompt contains stale25Oct release/Workshop descriptions, though it instructs fresh source discovery; prompt currentness needs Campfire reconciliation. No schedule or prompt changed by this audit.
+
+
+## 31 October 10:15 UTC — scoped P1 closure
+
+Native terminal877 c6542145359; private Relay673aaff8187ea49e155145cfa7b93f1b6c62a6b6/workshop-comms-p1-repair-verify-20261031/. Build read full README, SEQUENCE-RESULT and NATIVE-READ-RESULT, following prior full caller/diff review. The operator's18-file readback and six validation tests are attributed; no Build rerun.
+
+Stage1 corrected no-target version check complete/exit0; Stage2 one strict established-route metadata request complete/exit0,1992B stdout/no stderr, host10:15:38.212800–10:15:39.074430UTC. Guest10:15:41.010952–10:15:41.045828UTC kept separate. Named inbox STOP ON; marks-workshop-view.service enabled/active/running. shared-task-bridge-candidate.service static/inactive, no trigger reported. Four specifically queried collector unit names NOT_FOUND does not establish global collector absence. Named Codex file present is not authentication/model readiness.
+
+Closure: the local caller regression has a verified correction and pinned metadata communication has recovered. Endpoint identity is evidenced by the unchanged strict SSH host pin plus host VM UUID/network guards; request identity by reviewed caller/payload hashes. Payload did not supply guest hostname or installed-source digest. The broader original source-health criterion is therefore not fully satisfied: retain those as coverage limits, rather than claim full health or continue an unnecessary P1 probe chain.
+
+Canonical source disposition: use reviewed caller804e4d07 in this exact repair packet for future separately scoped metadata work; retire faulty19:01/21:37 launcher copies from recommendations, preserve them as failure evidence. Shared builderf0a462f3 remains unchanged. New staging is not promotion of a background service.
+
+No reboot, service/network/STOP change, model invocation or new spend. P1 CLOSED AT COMMUNICATION SCOPE; autonomous-worker, source-health and browser acceptance remain separate unestablished capabilities. Do not repeat these two native checks merely to re-earn closure.
