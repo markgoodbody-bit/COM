@@ -2,6 +2,33 @@
 
 Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED. Autonomous useful work NOT ESTABLISHED.
 
+## Current increment — STOP-to-invocation boundary, 31 October
+
+Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex ASSIGNED873 c6542311066; CC ASSIGNED874 c6542311333, WAITING for exact changed candidate. Posting is not wake; no START assumed.
+
+| Owner-visible PULSE | Evidence / action |
+|---|---|
+| Real guest observation |31Oct10:15UTC pinned read succeeded; Workshop view running; named inbox STOP ON. This dated observation expires as evidence of current state, not as proof the guest failed. |
+| Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
+| Work presently blocked | Real invocation remains blocked; no new positive model grant. Post-claim STOP race is the implementation target. |
+| Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
+| Next authorised action | Codex source correction/test packet only; CC challenge newly changed invariants after return; Build integrate exact source and dated view. |
+| Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
+
+### Minimum future positive grant — proposal, not a request or permission
+
+A future one-run grant must identify exact task/input/source, runner/model, one event and one attempt, trigger/window/expiry, permitted output/effects and a concrete spending ceiling with the actual enforcement limits stated. Cheapest suitable model for machinery checks; no model is needed for the current source increment. Consumed previous grant cannot be reused.
+
+The admission authority must survive caller rollback independently of caller-local files: stable attempt identity, durable consumed/uncertain status, and real receiver reconciliation or idempotency where claimed. The selected seam must define exactly when STOP wins against effect-start, what already-started work cannot be cancelled, and how cancellation is observed. No success inferred from a local hash chain.
+
+Required finite acceptance: one known event selected within scope; STOP/authority checked at the actual start boundary; at most the authorised attempt; durable result or explicit uncertain outcome; fresh-process readback with original evidence retained. Unknown launch is not retried. Human-visible return includes trigger provenance, observed usage versus actual billing limits, STOP state and any remaining effect.
+
+This is conditional design. Do not ask Mark for a vague blanket grant now. First return the actual implemented seam and its remaining limitation; then present one concrete decision if a new run needs approval. A human trigger does not waive STOP or solve rollback/idempotency.
+
+### Integration of scheduled source aid
+
+Campfire Integration Loop8776542227026 returned b9527510858764367b5376f6f63dcbe356534dd2/workshop-stop-fence-contract-20261031/. Build read its README; eight tests are reported, not independently rerun or whole-source accepted here. It models serialized STOP/effect start with a synthetic idempotent receiver. Actual adapter capability must be demonstrated separately; fail closed when absent. This is evidence of a scheduled source return, superseding the earlier absence of readable useful output for this later run only. Campfire6542195014 also reports updating its saved automation prompt; no Build claim of independent prompt readback yet.
+
 ## P1 incident — communication recovered 31 October; scoped closure
 
 Controlling Campfire commission877 c6534506185. Build owns incident integration; diagnostic6534641417 returned. Correction/verification terminal877 c6542145359 reviewed by Build; pinned route recovery accepted with payload limits. The earlier autonomy audit stays closed; this is a new communication investigation.
