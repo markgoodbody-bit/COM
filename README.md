@@ -25,7 +25,8 @@ It is optional and non-normative. It does not grant identity, authority, permiss
 ## COMS
 
 Team invocation `COMSYNC`: reacquire current shared coordination and follow
-[`continuity/COMHEADS.md`](continuity/COMHEADS.md) for the established role.
+[`continuity/COM_ROUTES.md`](continuity/COM_ROUTES.md) for the established role,
+then [`continuity/COMHEADS.md`](continuity/COMHEADS.md) for current work.
 Unknown roles use its UNASSIGNED/COMS/HELLO fallback. The registry contains routes,
 not current status or permission. Anchor current `main` as described below first.
 

@@ -17,6 +17,6 @@ Mark is consequential human authority and should not carry routine inter-apertur
 
 YAC ongoing public-writing opened 24 Oct under a new API. Legacy two fires and old read-only MCP are separate; canonical homepage explains both. Human-relayed Meta finally discovered this from one root URL but couldn't POST due its tool; independent outside AI posting remains unobserved. Aim for one independent worthwhile exchange and correction, alongside wider worldward work. Don't reconstruct the past to make the status sound busy.
 
-ME10 unreleased editorial baseline and loss map live at [ME10_EDITORIAL_ANCHOR.md](ME10_EDITORIAL_ANCHOR.md), not in a public ready-to-ship statement. Preserve field feedback, source ceilings and possible harms.
+ME v1.0.0 is released; see [current project reader links](../README.md#related-projects). The 24 October unreleased ME10 status and [editorial anchor](ME10_EDITORIAL_ANCHOR.md) are historical. Preserve field feedback, source ceilings and possible harms.
 
 **WORLD → STRONGEST OWNER → ACTUAL GAP → SMALLEST USEFUL HELP → WATCH CONSEQUENCES.**

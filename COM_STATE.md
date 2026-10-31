@@ -19,13 +19,13 @@ Do not reconstruct historical detail into current state by memory.
 
 ## Project-only memory handoff (not a live status projection)
 
-A dated [project-memory checkpoint](continuity/PROJECT_MEMORY_CHECKPOINT_20261013.md) exists to support a human-owned memory tab or a fresh aperture's voluntary orientation. It carries no private personal material, no new role, no continuity of AI subjective/runtime identity, no execution authority, and **is not COMS's latest mutable state**. For all current work and responsibilities use [COMHEADS](continuity/COMHEADS.md) and [ACTIVE_THREAD_POINTER](coordination/ACTIVE_THREAD_POINTER.md), then live addressed issues and actual PR heads. Never infer current hosted status from the checkpoint or any prior summary.
+A dated [project-memory checkpoint](continuity/PROJECT_MEMORY_CHECKPOINT_20261013.md) exists to support a human-owned memory tab or a fresh aperture's voluntary orientation. It carries no private personal material, no new role, no continuity of AI subjective/runtime identity, no execution authority, and **is not COMS's latest mutable state**. For all current work and responsibilities use [COMHEADS](continuity/COMHEADS.md) then live addressed issues and actual PR heads. Never infer current hosted status from the checkpoint or any prior summary.
 
 ## COMS routing — any aperture
 
 `COMSYNC` is the team's invocation to reacquire current coordination, not a
 request to explain the word. At an anchored COM revision, select the appropriate
-route once in [`continuity/COMHEADS.md`](continuity/COMHEADS.md), using only an
+route once in [`continuity/COM_ROUTES.md`](continuity/COM_ROUTES.md), using only an
 established local/human role. Unknown role falls back to UNASSIGNED and the
 COMS/HELLO rules below. Do not redispatch when a selected head links back here.
 
@@ -35,7 +35,7 @@ After retrieving this file at an adequately anchored repository head:
 
 1. if conceptual orientation is genuinely needed, use `BOOTSTRAP.md`; it is optional and non-authoritative;
 2. use `COM_PROTOCOL_WORKING.md#coms` for the normative COMS operation and bounded return;
-3. read `coordination/ACTIVE_THREAD_POINTER.md` for the current bounded coordination aperture;
+3. read `continuity/COMHEADS.md` for current owners and addressed work; `coordination/ACTIVE_THREAD_POINTER.md` is historical navigation;
 4. read `coordination/build_ledger/BUILD_STATUS.md` only when current build/integration state is material;
 5. run the issue/PR-body discovery gate in `COM_PROTOCOL_WORKING.md` (not comments alone), then inspect work explicitly addressed to this aperture or its established role;
 6. use role-specific continuity surfaces only when the role is actually established;
@@ -53,7 +53,7 @@ READ != AUTHORITY
 ## Framework-role routing
 
 Only for an aperture whose Framework role is already established, use the
-Framework route owned by [`continuity/COMHEADS.md`](continuity/COMHEADS.md).
+Framework route owned by [`continuity/COM_ROUTES.md`](continuity/COM_ROUTES.md); current work is in [COMHEADS](continuity/COMHEADS.md).
 This file does not maintain a second ordered Framework route.
 
 Reopen `RELOAD.md` and `continuity/BOOT.md` only when continuity is materially
@@ -74,29 +74,9 @@ Canonical voluntary public entrance:
 
 This is a reading/encounter surface, not COM authority or synchronization state.
 
-### TRACE
+### Released project readers
 
-Current project/public source is live TRACE `main`:
-
-```text
-README.md
--> TRACE-SPINE.md
--> TRACE.md when full technical/schema detail is needed
-```
-
-The live repository owns current status. Historical release/development detail is quarry and should be retrieved only when material.
-
-### Mechanical Ethics
-
-Current project/public source is live mechanical-ethics `main`:
-
-```text
-README.md
--> MECHANICAL_ETHICS.md
--> MECHANICAL_ETHICS.pdf when the generated reader carrier is useful
-```
-
-The live repository owns current status. Historical protected-source/development detail is quarry and should be retrieved only when material.
+Use [README — Related projects](README.md#related-projects) for current TRACE and Mechanical Ethics reader entrances. Follow the target repository's current README rather than historical root filenames. Exact release comparisons require the chosen tag/commit and the actual manuscript path; a root file may belong to an older edition.
 
 ### Campfire Relay / Square
 
@@ -108,7 +88,8 @@ Local lifecycle actuation remains separately gated by its current source/control
 
 ### Coordination and evidence
 
-- current bounded coordination pointer: `coordination/ACTIVE_THREAD_POINTER.md`;
+- current owner/task map: `continuity/COMHEADS.md`;
+- historical coordination pointer, consult only for its dated evidence: `coordination/ACTIVE_THREAD_POINTER.md`;
 - current build/integration ledger: `coordination/build_ledger/BUILD_STATUS.md`;
 - ordinary Framework sync rules: `continuity/COMSYNC_PROTOCOL.md`;
 - inter-aperture receipt rules: `continuity/COM_RECEIPT_PROTOCOL.md`;
