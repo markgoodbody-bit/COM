@@ -1,10 +1,10 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED.
+Updated 31 October 2026, read-only consumer delivered. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED.
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
+Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, START not yet observed. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -12,8 +12,16 @@ Campfire6542195014. Build ACTUAL START: integration/status and future-grant defi
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Native useful invocation remains blocked; no new positive model grant. The accepted source fixture demonstrates one fixed no-model operation, not installed broker custody, independent supervision or consumer compatibility. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | Build source/consumer integration of returned fixed-operation packet df7be1fa; prepare a concrete native custody/supervision profile. No installation or real run follows from source acceptance. |
+| Next authorised action | Codex source-only native broker/profile candidate873 c6548028022; Build integrates its eventual exact return. Read-only consumer source is delivered (private Relay ccae0288); not installed. No guest action or run grant. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
+
+### Read-only consumer delivered — 31 October
+
+Private Relay ccae02880d93e3abc076d5b6189ba86991c3adad/workshop-fixed-consumer-20261031/: implemented SQLite snapshot reader, original event/grant/attempt/result/receipt consistency checks, named lifecycle projection, static escaped HTML and CLI. No runner import or dispatch/ACK/STOP operation. Twenty-six new targeted tests pass; unchanged donor suite not repeated. All eleven package files canonical-read equal.
+
+Actual positive consumer check uses synthetic ledger/grant/receipt rows around the published historical result. A fresh Python process recovers the exact historical result digest; rollback-journal fixture bytes remain unchanged. This is not an original donor-database recovery, new seven-file inspection or guest read. First failure preserved: orphan receipts with a missing attempt row initially displayed NOT_ATTEMPTED; corrected to UNKNOWN. Event-level ACK is not result-specific acknowledgement. Readback freshness is separate from source currentness.
+
+Caller-supplied source/profile consistency is not OS-authenticated custody. Current installed server schema/source and protected supervisor remain unverified. Native interface/profile design is [the integration contract](../planning/WORKSHOP_FIXED_OPERATION_INTEGRATION.md). Codex873 c6548028022 owns one complete SOURCE-ONLY broker/consumer deployment candidate, including preservation and finite native acceptance plan; no installation, real STOP or grant mutation, model or guest observation commissioned. Posting is not START. CC's last unit remains terminal; no duplicate general review.
 
 ### Minimum future positive grant — proposal, not a request or permission
 
