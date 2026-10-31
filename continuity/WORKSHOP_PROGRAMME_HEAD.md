@@ -1,6 +1,6 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED. Autonomous useful work NOT ESTABLISHED.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED.
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
@@ -12,7 +12,7 @@ Campfire6542195014. Build ACTUAL START: integration/status and future-grant defi
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Real invocation remains blocked; no new positive model grant. Post-claim STOP race is the implementation target. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | CC narrow changed-invariant challenge of actual f6303f4f candidate; Build disposition of containment versus functioning positive path. No native denial smoke needed. |
+| Next authorised action | Positive fixed-operation source implementation is ASSIGNED to Codex at #873 c6542865561; START not yet observed. CC challenge is terminal and adopted. No native execution, installation, model or provider action is authorised. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
 
 ### Minimum future positive grant — proposal, not a request or permission
