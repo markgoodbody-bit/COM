@@ -1,27 +1,34 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 31 October 2026, read-only consumer delivered. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED.
+Updated 31 October 2026, native prerequisite read accepted. Owner: Framework Build. Fresh named metadata at guest20:48:39UTC observed Workshop view running and shared inbox STOP ON. New closed broker installation assigned, not observed started or installed. Autonomous useful work remains NOT ESTABLISHED.
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, returned877 c6548381244. Build reproduced an arm/STOP ordering defect; corrected source returned877 c6548663066 and accepted with limits. Native prerequisite read assigned873 c6548686211; no installation. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
+Campfire6542195014/6544242692. Build consumer implementation COMPLETE at source scope; native profile candidate assigned to Codex873 c6548028022, returned877 c6548381244. Build reproduced an arm/STOP ordering defect; corrected source returned877 c6548663066 and accepted with limits. Native prerequisite read RETURNED877 c6549034263 and accepted by Build. Closed isolated install/observer-only acceptance assigned873 c6549071425; no installation outcome yet. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
-| Real guest observation |31Oct10:15UTC pinned read succeeded; Workshop view running; named inbox STOP ON. This dated observation expires as evidence of current state, not as proof the guest failed. |
+| Real guest observation |31Oct20:48 guest snapshot: view active/running, named inbox STOP ON, installed server/index match reviewed bases. Host/guest clocks uncalibrated. No continuous-health claim. |
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Native useful invocation remains blocked; no new positive model grant. The accepted source fixture demonstrates one fixed no-model operation, not installed broker custody, independent supervision or consumer compatibility. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | Codex one bounded read-only native prerequisite acquisition873 c6548686211 against corrected source2e609302. Source correction accepted; installed compatibility/custody/supervision still unverified. No installation or useful-run grant. |
+| Next authorised action | Codex WORKSHOP-CLOSED-INSTALL-01,873 c6549071425: exact new namespace/empty STOP1 database and finite observer-only native acceptance; disabled/no grants, no useful operation, no existing UI/service change. End with new sockets inactive/not enabled. Posting is not START. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
 
-### Ordering correction accepted; native prerequisites next
+### Closed installation decision after actual prerequisite return
+
+Build acquired private ea039b5338d32256aca0c0a1261856fdde1282ff/workshop-native-prerequisite-read-20261031: README, host receipt, prerequisites/compatibility, privacy receipt, exact installed delta/helper, empty-base SQL and grounded plan. One strict SSH returned exit0. Installed source bases match; no rebase needed. Python3.12.3/systemd255/cgroup-v2 prerequisites observed. New broker/groups/directories absent; existing DB remains framework-owned, not protected broker custody. Metadata collector was actually present under collect.service/timer names; it is not autonomous AI work.
+
+Build dispatched873 c6549071425 using existing project-only VM authority: install exact corrected source into isolated missing namespace, exclusively create an empty closed epoch with no private-row copy, migrate its two tables, stage units without boot enable, temporarily run observe.socket only. Profile remains disabled/no grants; observer allowlist has only existing view identity for a finite process probe, no permanent service/group change. Test actual observer/peer-denial/custody, then stop new socket/instances and retain the closed epoch. No arm, execute, useful inspection, model, old DB/STOP change, old service restart or UI patch. First failure stops; no repair/retry chain. Native execution/arm/STOP timing and user-visible integration remain future gates, not supplied by this unit.
+
+### Prior source acceptance and prerequisite commission (completed)
+
 
 Codex877 c6548663066 returned corrected private2e60930287896731acbd6b7485cb459d3a235aca/workshop-arm-stop-order-correction-20261031/. Build read complete corrected engine/admin, profile delta, ordering/native plan,17-case test source and admin-seam/interleaving/positive receipts. At source scope, common process/thread gate, distinct received-STOP identity, exact-request arm and PREPARED/COMPLETED admission requirement resolve the witnessed ordering failure. Seventeen focused cases are attributed to Codex, not rerun by Build. Positive source result and fresh-process recovery retained.
 
 Changed receipt boundary is material: STOP waiting before the gate is NOT_DURABLY_RECEIVED; incomplete persistence is UNKNOWN; persisted intent with failed DB writer is STOP_UNCONFIRMED. No universal arrival-to-STOP bound. The preserved original plan step11's blanket timeout/latch sentence is superseded by corrected ORDERING and introductory delta. Linux custody/supervision and actual installed compatibility remain NOT_RUN.
 
-Next exact native task873 c6548686211 is ONE strict-route READ-ONLY prerequisite acquisition under existing operator authority: selected installed source/schema/STOP/service/version/ownership metadata and local source rebase proposal only. No guest writes, installation, service/STOP/grant/model action or retry chain. This is progress to the actual installation prerequisites, not another unchanged source suite. New source result does not itself authorise deployment.
+Completed prerequisite task873 c6548686211 was ONE strict-route READ-ONLY acquisition under existing operator authority: selected installed source/schema/STOP/service/version/ownership metadata and local source rebase proposal only. No guest writes, installation, service/STOP/grant/model action or retry chain. This is progress to the actual installation prerequisites, not another unchanged source suite. New source result does not itself authorise deployment.
 
 ### Historical native candidate failure — corrected at source scope
 
