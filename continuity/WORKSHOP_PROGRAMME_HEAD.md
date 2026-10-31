@@ -1,10 +1,10 @@
 # Framework-Lab Workshop — programme HEAD
 
-Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED. Autonomous useful work NOT ESTABLISHED.
+Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. Historical installation is recorded; pinned guest metadata communication recovered31October10:15UTC; Workshop view running and named inbox STOP ON observed. Autonomous useful work remains NOT ESTABLISHED.
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation ASSIGNED873 c6542865561; START not yet observed. Posting is not wake.
+Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC RETURNED877 c6542640127; full private probe packet read. Codex correction RETURNED877 c6542851222, source accepted. Positive fixed-operation source implementation RETURNED877 c6543132093; local positive result acquired, native installation not performed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -12,7 +12,7 @@ Campfire6542195014. Build ACTUAL START: integration/status and future-grant defi
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Real invocation remains blocked; no new positive model grant. Post-claim STOP race is the implementation target. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | CC narrow changed-invariant challenge of actual f6303f4f candidate; Build disposition of containment versus functioning positive path. No native denial smoke needed. |
+| Next authorised action | Build source/consumer integration of returned fixed-operation packet df7be1fa; prepare a concrete native custody/supervision profile. No installation or real run follows from source acceptance. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
 
 ### Minimum future positive grant — proposal, not a request or permission
@@ -342,3 +342,16 @@ API seam: process_once changed from tuples to named reports. No installed consum
 Next Codex source assignment8736542865561 implements one positive fixed source-integrity operation using exact existing project_checks and inbox/STOP sources. Stable scoped reservation/result authority lives with STOP; caller rollback cannot erase it under the stated trusted-authority model. Protected OS custody is a native prerequisite, not a fixture claim. Demonstrate positive result/readback plus concurrency/crash/lost-reply/STOP ordering; keep authority/whole-VM rollback outside guarantee. Explicit bounded STOP delay required. Migration/installation are proposals only; no live schema, guest, model or provider actions.
 
 CC review is terminal. No general review carousel or native denial smoke. Current next milestone is a useful fixed operation with a real implementation of admission and recovery, not another universal refusal.
+
+
+## 31 October — positive fixed operation returned
+
+Codex8776543132093; private df7be1fa991598d2c3a8f6ceaa79b54e6f367dbc/workshop-fixed-op-positive-20261031/. Build read full README, NATIVE-PROPOSAL and canonical evidence/CURRENT-POSITIVE-RESULT.json. This is scoped result/proposal acceptance, not full implementation-source review or independent44-file verification.
+
+Observed source-fixture result: seven frozen PSFH visitor files,29954 bytes, PINNED_BYTES_MATCH; inspected code not executed, not an atomic source snapshot or current deployment check. Final runner pin7b2c9c8e; result digeste7d8b8de09eeea9f7668604f9109b87bbb6c428ca35f6c0de13698d209fc4d0c recovered by fresh PID37384 with ACK_REPORTED/no worker rerun.19 current cases attributed to Codex. First import-resolution, replacement-grant replay and launch-report failures preserved, not erased.
+
+Reservation, intent, STOP and fixed-operation result now have runnable source implementation. Stable business identity prevents replacement grant IDs from refreshing consumed attempts in this model. Same-user fixture storage is NOT protected OS custody. Parent-alive watchdog timeout tested; parent-death supervision/native hard bound not established. STOP busy timeout can yield UNKNOWN; only a committed receipt proves STOP. Whole authority/VM rollback remains outside guarantee.
+
+Next integration boundary is native broker custody and independent finite supervision plus explicit named-report consumer, not a new model call or repetition of19 tests. Current packet's fixture path guard deliberately rejects native storage; do not repoint it at the guest. Preserve installed services and STOP ON. Native migration/run proposal is not approved by this acceptance. No vague human approval requested before an exact reviewed native candidate exists.
+
+Scheduled loop6542888693 correctly identified the stale next-action row and duplicate headline; Build applied their substantive corrections with the newer RETURNED state rather than the proposal's older ASSIGNED state. CC terminal; Codex finite source unit terminal. No general review loop.
