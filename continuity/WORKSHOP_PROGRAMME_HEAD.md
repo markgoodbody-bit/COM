@@ -4,7 +4,7 @@ Updated 30 October 2026, autonomy audit reconciliation. Owner: Framework Build. 
 
 ## Current increment — STOP-to-invocation boundary, 31 October
 
-Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex ASSIGNED873 c6542311066; CC ASSIGNED874 c6542311333, WAITING for exact changed candidate. Posting is not wake; no START assumed.
+Campfire6542195014. Build ACTUAL START: integration/status and future-grant definition. Codex RETURNED877 c6542516404, source-only refusal candidate. CC exact candidate supplied874 c6542533265 under existing assignment; START not yet observed. Posting is not wake.
 
 | Owner-visible PULSE | Evidence / action |
 |---|---|
@@ -12,7 +12,7 @@ Campfire6542195014. Build ACTUAL START: integration/status and future-grant defi
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
 | Work presently blocked | Real invocation remains blocked; no new positive model grant. Post-claim STOP race is the implementation target. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
-| Next authorised action | Codex source correction/test packet only; CC challenge newly changed invariants after return; Build integrate exact source and dated view. |
+| Next authorised action | CC narrow changed-invariant challenge of actual f6303f4f candidate; Build disposition of containment versus functioning positive path. No native denial smoke needed. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
 
 ### Minimum future positive grant — proposal, not a request or permission
@@ -313,3 +313,14 @@ Closure: the local caller regression has a verified correction and pinned metada
 Canonical source disposition: use reviewed caller804e4d07 in this exact repair packet for future separately scoped metadata work; retire faulty19:01/21:37 launcher copies from recommendations, preserve them as failure evidence. Shared builderf0a462f3 remains unchanged. New staging is not promotion of a background service.
 
 No reboot, service/network/STOP change, model invocation or new spend. P1 CLOSED AT COMMUNICATION SCOPE; autonomous-worker, source-health and browser acceptance remain separate unestablished capabilities. Do not repeat these two native checks merely to re-earn closure.
+
+
+## 31 October — refusal candidate returned, positive path still missing
+
+Codex terminal8776542516404; private f6303f4fa3294c0287df2f45a63f14d11a925389/workshop-stop-invoke-20261031/. Build read full README and ADAPTER.diff;14 new checks and29-file custody equality remain operator-attributed, not Build reruns. Original real donor seam reproduced STOP-after-claim followed by one scripted effect; first failure retained.
+
+Candidate30e54e8f makes Adapter03.process_once deny all new claims/runner callbacks and holds ACK_PENDING. This is SOURCE_ONLY containment, not an implemented positive fence. Two contenders both denied is not a one-winner launch proof; rollback safety by universal refusal is not external receiver idempotency. Existing legacy/direct runner entry points remain outside this guard. Nothing installed.
+
+Integration decision: accept the precise denial behavior as a candidate, not completion of the useful worker. Do not replace installed functioning components or run native refusal tests merely to accrue another PASS. CC8746542533265 receives exact changed logic, including the question whether completed-result ACK recovery is unnecessarily coupled to new-launch authority. That challenge is bounded to the current change.
+
+Next positive engineering work must name an implementable authority/start boundary and its failure model. Separate no-repeat-on-uncertainty, local atomic admission and stronger resilience to rollback; do not imply a generic CLI supplies provider idempotency, or require an unimplemented universal guarantee without identifying the actual proposed scope. The owner-visible gap remains: useful event-triggered invocation not delivered.
