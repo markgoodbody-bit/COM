@@ -10,7 +10,7 @@ Campfire6542195014. Build ACTUAL START: integration/status and future-grant defi
 |---|---|
 | Real guest observation |31Oct10:15UTC pinned read succeeded; Workshop view running; named inbox STOP ON. This dated observation expires as evidence of current state, not as proof the guest failed. |
 | Communication incident | Closed at metadata-route scope,8776542162093. No communication retest commissioned. |
-| Work presently blocked | Real invocation remains blocked; no new positive model grant. Post-claim STOP race is the implementation target. |
+| Work presently blocked | Native useful invocation remains blocked; no new positive model grant. The accepted source fixture demonstrates one fixed no-model operation, not installed broker custody, independent supervision or consumer compatibility. |
 | Source/simulation | Existing source projection/selector/MIRROR and two scripted actors are simulations. Scheduled integration's b9527510 SQLite fence is a synthetic oracle, not installed protection. |
 | Next authorised action | Build source/consumer integration of returned fixed-operation packet df7be1fa; prepare a concrete native custody/supervision profile. No installation or real run follows from source acceptance. |
 | Installed status | New fence NOT_INSTALLED; new worker/timer NOT_ACTIVATED. This Markdown view is in draft PR903, not the guest UI. |
@@ -75,11 +75,11 @@ PULSE records reported readiness with freshness limits. ITCH/curiosity proposes 
 
 CONTINUE is proposed: a small successor handoff containing purpose, chosen commitments, source anchors, corrections, unresolved questions and permission boundaries. A successor must reread and choose; this transfers neither identity nor standing authority.
 
-### One next step, prepared but not activated
+### One next step, source-earned; native not activated
 
-After the native return, bind one offline trigger-contract fixture to the actually observed carrier and existing inbox. Record one trigger ID, task/actor scope, STOP observation, selection or refusal, durable claim, outcome and fresh-process readback. Use a deterministic stub, zero models and no installation. Preserve uncertain attempts without retry. This is the single reversible source step toward a later event-to-result chain; it is not another queue or scheduler.
+The returned fixed-operation packet now supplies the deterministic source-only EVENT→reservation/intent→STOP/result→fresh-process ACK/readback path. It preserves uncertain attempts without retry and reuses the existing inbox; this is historic byte-integrity work in a same-user fixture, not an installed trigger, protected native authority or model worker. Next integration is the exact native broker/consumer profile and review: caller write denial, immutable grants/code/config, independent finite supervision after caller death, a bounded committed STOP receipt and explicit named-report consumer compatibility. Preparation and review do not authorise migration, installation or execution.
 
-Actual unattended model execution remains gated on a separately scoped owner grant, a supported installed trigger and resolution of the known post-claim STOP race. No new grant follows from this status. A timer timestamp alone or absence of a message in one transcript does not prove absence of human intervention.
+Actual unattended model execution remains gated on a separately scoped owner grant, a supported installed trigger, protected broker custody, independent supervision, explicit consumer compatibility and an installed answer to post-claim STOP. No new grant follows from this source result. A timer timestamp alone or absence of a message in one transcript does not prove absence of human intervention.
 
 ### CC challenge adopted with limits
 
