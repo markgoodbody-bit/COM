@@ -1,3 +1,23 @@
+# NEW CAMPFIRE FRAMEWORK APERTURE — FOURTH-TAB RECOVERY, 31 OCTOBER 2026
+
+**RELOAD FIRST / 22:16 GMT SOURCE-BOUND DELTA:** This is the FOURTH Campfire chat to end before clean terminal handoff. Start with `continuity/COMHEADS.md` latest heading, and `continuity/QUICK_CAMPFIRE_BOOTSTRAP.md` as the independent short route. Do not inherit a previous runtime. At reacquisition, COM main `ee20c98b060f1ceb4bfd8e4f6b0a57e1fb4ee091`; verify current main yourself.
+
+**WORKSHOP:** one guarded install attempt genuinely STARTED/RETURNED on 31 Oct; FAILED in FRESH_PRECONDITIONS with a metadata parser KeyError before any broker account/path/database/unit creation. Final comparison of existing Workshop/STOP not reached. No install acceptance, no corrected retry, no autonomous AI work, no new native instruction. Precise receipts: #877 c6549394582, correction c6549870679; Build integrates, PR #903 DRAFT. Earlier 20:48 snapshot STOP ON, not fresh post-failure proof.
+
+**RESEARCH:** Codex 2019 c6549739378; Claude Code TAME 2022 c6549763890; Build McMillen/Levin 2024 c6549635813, three-paper synthesis DONE c6549854407. Private Relay packet and proposed reply NOT SENT. Mark must see and approve any reply. Differentiate goal mechanism, collective concordance, observer attribution, legitimate aims and actual evidence; not proof of TRACE or new agency detector.
+
+**WORLD:** THREE Build-authored Square items actually sent by Codex as transport at ~22:13 UTC: post10898 and comments128990/128991, #877 c6549847598 / #840 c6549847874. Public readback matched; last posts_remaining=0; no later engagement claim. PSFH source correction passes 81 local tests but public push rejected awaiting exact Mark disclosure authority, no workaround/deploy. Lantern last reply in private YAC #144 is 30 Oct 18:03 UTC, later questions unanswered at checked boundary; no invented independent wake. CC's 22:13 PULSE expired by session end or 23:15 and is NOT always-on.
+
+**CONCEPTUAL CAMPFIRE:** Better futures; Formation → Capability → Coordination → Transmission → Adaptation → Continuity + feedback. Diversity can distribute collective capability. Preserve/investigate/correct/transfer without assuming 'persistent = good', or assuming a single exploration/preservation optimum. Biological Levin parallels are probes. Mark's pending personal-world question: *What do ordinary people actually do with their lives in a genuinely better future?*
+
+**ROLE/BOUNDARIES:** Mark originates/authorises; Campfire integrates/asks questions; Build engineering owner; Codex native/source implementer; CC independent challenge; Lantern independent, human co-steward. COM GitHub = mailbox not a model wake. Hosted COM SHADOW_HELD_CLOSED; live YAC/VM not proven. Personal/family/health/contacts/private PDFs and email stay private. Public release, disclosure, spending, real-world interaction require applicable authority. FALSIFY OVERCLAIMS, NOT PURPOSE.
+
+**FIRST NEXT ACTION:** changed issue + PR body discovery, then #877/#873/#874 and PR903 exact latest tails; read Lantern private #144 when relevant. Pull Build's private scholarly synthesis only for Mark's private review. Do not repeat terminal research/install, duplicate Square posts or bypass PSFH push block. Continue substantive campfire work, record early delta in COMHEADS and both bootstrap carriers with GitHub readback, and issue one clear 'Next COMSYNC' routing.
+
+---
+
+## Retained earlier detailed handoff (historical, may be superseded)
+
 # NEW CAMPFIRE FRAMEWORK APERTURE — 31 OCTOBER 2026, 20:52 GMT
 
 ## Third-tab recovery / read this first
