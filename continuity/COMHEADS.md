@@ -1,5 +1,7 @@
 # COMHEADS — current work and routes
 
+Role aliases and one-time selection live in [COM_ROUTES](COM_ROUTES.md); this file holds changing work, not the static parser table.
+
 Updated 31 October 2026. Dated coordination map, not live telemetry. Latest addressed owner receipts supersede this file.
 
 ## Purpose and authority
@@ -11,7 +13,7 @@ HOW CAN WE MAKE A BETTER FUTURE? ME/TRACE are portable middle-out reasoning inst
 | Work | Owner / actual state | Next step and evidence |
 |---|---|---|
 | COM cleanup | Build; candidate preparation started | Mark authorised proceeding. Codex structure review assigned #873 c6550147642; CC navigation review assigned #874 c6550147833. Neither START inferred. Preserve evidence and stable paths; no destructive cleanup. |
-| Minimal PULSE | Build; finite source-only drill assigned | Campfire #877 c6550134523. Prior Codex correction c6549984073 and CC drill c6550023203 returned; do not repeat. Remaining check: stale, late, lost, duplicate signals. No monitoring activation. |
+| Minimal PULSE | Build; seven-case tabletop complete | Campfire #877 c6550134523. Prior Codex correction c6549984073 and CC drill c6550023203 returned; do not repeat. Result c6550197662: existing semantics sufficient with delivery clarification; no live receiver test. No monitoring activation. |
 | Positive futures / voluntary overlapping associations | Build; commission received, research not started | Campfire #877 c6550111836. Compact synthesis of architecture, counterexample, near-term intervention and unknowns. Optional distinct specialist work requires actual assignment/acquisition. Not canon or a claim of universal superiority. |
 | Workshop | Native installation held | Failed in FRESH_PRECONDITIONS before installation creation; final comparison of pre-existing state NOT_REACHED: c6549394582/c6549870679. No retry commissioned. Owner view corrected in draft PR903 at fe889f005022330c6900f29787dc2de14168dfc9, exact readback: c6550010948. Not installed or merged by that receipt. |
 | Three-paper research | Build synthesis complete | c6549854407; exact reports/draft remain PRIVATE in Relay. Reply Wednesday at earliest AND Mark's final approval. No scheduled send. |
