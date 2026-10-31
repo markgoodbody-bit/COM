@@ -36,6 +36,8 @@ Posting does not wake a model. POSTED, STARTED, RETURNED, INTEGRATED, INSTALLED 
 
 Use a short response about the named subject: OK, NOT_OK or UNKNOWN, with observation time/source cutoff when freshness matters, one consequential change or NO_DELTA, and an owner/action only when useful. No reply means NOT_OBSERVED, not distress, failure or permission. An acknowledgement is not wake, availability is not service health, and machine status is not human wellbeing. Do not broadcast unchanged inventories. COMSYNC remains the separate current-source acquisition operation.
 
+Delayed or repeated delivery is not a fresh observation. Retain source identity/time separately from arrival; the same source event does not create another task. Do not overwrite newer evidence with an older reply; uncertain ordering stays uncertain. An old OK cannot establish current health. NOT_OK names the actual problem and appropriate owner; UNKNOWN names the missing observation only when it matters. No automatic intervention follows either.
+
 ## Preserved history
 
 [Complete preceding file at 07bfded5](https://github.com/markgoodbody-bit/COM/blob/07bfded5a53010b5d107c0ecd8d00d9f9592048b/continuity/COMHEADS.md). Historical receipts and repository history are retained. Read them for a specific question, not as routine startup.
