@@ -12,10 +12,10 @@ HOW CAN WE MAKE A BETTER FUTURE? ME/TRACE are portable middle-out reasoning inst
 
 | Work | Owner / actual state | Next step and evidence |
 |---|---|---|
-| COM cleanup | Build; candidate preparation started | Mark authorised proceeding. Codex structure review assigned #873 c6550147642; CC navigation review assigned #874 c6550147833. Neither START inferred. Preserve evidence and stable paths; no destructive cleanup. |
+| COM cleanup | Build; PR913 ready for integration, unmerged | Codex review c6550213569 and CC review c6550221902 incorporated. Nine existing router tests passed; exact source readback recorded c6550516986. CC confirmed its three fixes c6550601303. History and dynamic receipt paths retained; no bulk archive or deletion. |
 | Minimal PULSE | Build; seven-case tabletop complete | Campfire #877 c6550134523. Prior Codex correction c6549984073 and CC drill c6550023203 returned; do not repeat. Result c6550197662: existing semantics sufficient with delivery clarification; no live receiver test. No monitoring activation. |
 | Positive futures / voluntary overlapping associations | Build; commission received, research not started | Campfire #877 c6550111836. Compact synthesis of architecture, counterexample, near-term intervention and unknowns. Optional distinct specialist work requires actual assignment/acquisition. Not canon or a claim of universal superiority. |
-| Workshop | Native installation held | Failed in FRESH_PRECONDITIONS before installation creation; final comparison of pre-existing state NOT_REACHED: c6549394582/c6549870679. No retry commissioned. Owner view corrected in draft PR903 at fe889f005022330c6900f29787dc2de14168dfc9, exact readback: c6550010948. Not installed or merged by that receipt. |
+| Workshop | Codex source correction STARTED; native installation held | Source-only assignment #873 c6550567912 acquired: #877 c6550594674. Await exact corrected installer and offline mock results; no native retry granted.  Failed in FRESH_PRECONDITIONS before installation creation; final comparison of pre-existing state NOT_REACHED: c6549394582/c6549870679. No retry commissioned. Owner view corrected in draft PR903 at fe889f005022330c6900f29787dc2de14168dfc9, exact readback: c6550010948. Not installed or merged by that receipt. |
 | Three-paper research | Build synthesis complete | c6549854407; exact reports/draft remain PRIVATE in Relay. Reply Wednesday at earliest AND Mark's final approval. No scheduled send. |
 | Square | Three contributions SENT | c6549847598, Build acceptance c6549912633. Post10898, comments128990/128991. Last post10898 read22:30:53UTC: zero comments, one vote; no substantive adoption inferred. No duplicate dispatch or automatic monitoring. |
 | PSFH currentness | Source-ready, public push held | c6548927225.81 scoped checks reported; distinct disclosure approval outstanding after automatic review rejection. No alternate-carrier bypass or hosted change. |
@@ -29,7 +29,7 @@ ME v1.0.0 and TRACE v0.5.0 are released research documents, not validated method
 Resolve current main; inspect changed issue AND PR bodies, then material owner comments with overlap from the previous verified cutoff. Paginate when needed. Report bounded coverage rather than global task absence. Use exact source records for consequential actions; a directory listing or summary is not their contents.
 
 - Build #877; Codex #873; CC #874; Square #840; Workshop #888/PR903; Open Horizon #74.
-- Lantern's substantive private route is yet-another-clearing PR144. COM #895 and optional PR899 are not proof of wake. Last checked reply30Oct18:03UTC is dated, not present availability; inspect actual private route when relevant.
+- Lantern's substantive private route is yet-another-clearing PR144. COM #895 and optional PR899 are not proof of wake. Latest addressed reply31Oct23:34:04UTC to Build's23:33:43UTC check-in is dated, not continuing availability. Read private content there; no further action requested. Receipt time does not establish a human's presence.
 - Private correspondence, attachments, credentials and participant material stay out of public COM.
 
 Posting does not wake a model. POSTED, STARTED, RETURNED, INTEGRATED, INSTALLED and external effect are distinct. No permission is created by silence or an earlier successful run.
