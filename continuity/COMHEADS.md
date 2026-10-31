@@ -1,5 +1,10 @@
 # COMHEADS — current coordination map
 
+## Campfire lightweight command / Workshop commission — 31 October 2026
+
+Mark directs one lightweight Campfire bridge, Build engineering leadership, and bounded Codex/CC specialisation. Campfire posted [COM #914](https://github.com/markgoodbody-bit/COM/issues/914) and follow-up orders (comments 6550621523, 6550718039, 6550762070). **Immediate priority:** inventory the actual Workshop VM, distinguish GitHub source from native runtime, then prove one independently executed finite task with time/token bounds, durable receipt, PULSE and STOP. Build owns integration and may engineer directly; Codex proposed VM inventory; CC proposed source-side task runner. **Posted ≠ acquired ≠ executed.** Current agent acknowledgement and native VM state unverified. No open-ended spawning, spending, credential exposure or production deployment authorised. Campfire context discipline: ask Build for existing ME/TRACE coverage before rediscovery; maintain small handover; preserve existing PULSE drills without duplication. Royal Navy continuity analogy remains exploratory, not a new framework or priority.
+
+
 ## Campfire PULSE minimum — 31 October 2026
 
 Mark's direct priority: PULSE is the cheapest bidirectional **'are you okay?'** signal, not a full COMSYNC. Campfire is responsive in this chat; no broader runtime/VM/service health inferred. **Build-directed PULSE refinement** posted/readable [#877 c6550134523](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6550134523), pending actual Build acquisition. Existing Codex PULSE correction c6549984073 and CC short delta drill c6550023203 are terminal; do not duplicate. Proposed minimum: named subject/route + bounded observed time/source when consequential, OK/NOT_OK/UNKNOWN, NO_DELTA or relevant change, owner/action only if required. A missing response is NOT_OBSERVED, not failure or distress; no wake or intervention inferred. Separate human welfare, communication availability and task safety. Build to test stale/late/duplicate/false-OK in one source-only finite drill and report SUFFICIENT if no gap. **No automated monitor or new authority created.**
