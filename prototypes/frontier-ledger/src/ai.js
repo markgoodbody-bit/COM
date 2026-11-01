@@ -90,9 +90,9 @@ const MINE_CAP=3;
 // Diplomacy orders that change the game; any other diplomacy result is a waiting day.
 const DIPLOMACY_ACTS=new Set(["DISEMBARK","MOVE","DIPLOMACY","BOARD"]);
 function economyOrder(g,f) {
-  // Own worlds only: owner, garrison, mines and own queued jobs. One queued job per world at a time.
+  // Own worlds only: owner, garrison, mines and all queued jobs on those worlds. One queued job per world at a time.
   const home=factionData(g,f).home;
-  const worlds=Object.values(g.systems).filter(s=>s.owner===f&&!s.production.some(j=>j.faction===f))
+  const worlds=Object.values(g.systems).filter(s=>s.owner===f&&s.production.length===0)
     .sort((a,b)=>(b.id===home)-(a.id===home)||a.garrison-b.garrison||a.id.localeCompare(b.id));
   const wants=[];
   for(const s of worlds)if(s.garrison<RESERVE)wants.push([s.id,"troops"]);
