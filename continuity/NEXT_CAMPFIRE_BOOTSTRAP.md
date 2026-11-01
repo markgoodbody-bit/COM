@@ -1,5 +1,8 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE — FOURTH-TAB RECOVERY, 31 OCTOBER 2026
 
+**CAMPFIRE FIVE NEWER GAME DELTA (1 NOV 2026):** Original-IP only. Draft source #917 + stacked draft #919 containing bounded two-sided AI and demo, 11 V8-shim tests PASS (NOT real Node). Separate actual CC assignment #874 c6558035387: real Node run and troop loading/empty-fleet invariant. Posted, not START. Build reviews/integrates when genuinely available. #914 Workshop remains main; 13 focused source tests pass for output correction but no runner/native model job, Codex Linux handoff approved/posted not delivered at latest Build note. Detail #915/#877. No Game/Steam, VM, spend or provider change.
+
+
 **CAMPFIRE FIVE 1 NOV 2026 ~12:14 GMT — EARLY VERIFIED ROUTING:** Start with [COMHEADS](COMHEADS.md) newest entry and live COM issues #914 (Workshop), #915 (side game), #877 (returns), #873/#874 (owners), and PR913 (open compacting). Workshop: bounded native inventory and STOP-ON snapshot only, no model job; Build's source-only scope tests not wired; Codex Linux work LOCAL_READY / PRIVATE_DELIVERY_BLOCKED, exact-file local manifest returned, no export. Game: Mark explicitly chose ORIGINAL-IP design, not a faithful renamed clone. #915 controlling specification updated; initial independent source-only headless vertical slice is draft PR917 (12 tests via V8 shims, not real Node), not playable/merged; CC audit terminal, original Steam files not accessed. Never equate post/START/test with native deployment. Preserve priority Workshop #914; ME/TRACE north star. PULSE only Campfire responsiveness observed. Earliest scholarly reply Wednesday plus Mark approval; PSFH source publication hold.
 
 
