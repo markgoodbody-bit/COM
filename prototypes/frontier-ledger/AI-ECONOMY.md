@@ -21,7 +21,7 @@ From its own worlds only, and only at a world with no job already queued, includ
 
 The engine decides everything else: cost, build time, ownership and treasury. The policy calls the engine's own
 `queueBuild`, which checks before it changes anything, and moves to the next choice when the engine refuses.
-The policy never builds patrol ships, so the shipyard rule never applies to it.
+The ordinary economy policy does not build patrol ships. The separate zero-carrier recovery rule in SHIP-RECOVERY.md runs before this fallback and requires a shipyard.
 
 ## What it reads
 
@@ -52,7 +52,7 @@ A passive human side still loses all 20 seeds to the League within 60 days, firs
 This is a legal, deterministic production habit, not a strong or balanced opponent. It does not:
 
 - plan around threats it cannot see;
-- build ships;
+- expand a fleet while a usable carrier exists;
 - save money for a purpose;
 - weigh troops against mines beyond the fixed order above.
 
