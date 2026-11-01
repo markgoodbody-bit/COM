@@ -209,15 +209,32 @@
     for (const control of element.querySelectorAll('[data-field]')) fields[control.dataset.field] = control.value;
     return fields;
   }
-  function addRow(kind, values = {}) {
+  const ROW_NAMES = { claims: 'Case claim', parties: 'Person or group', possibilities: 'Possible next action' };
+  function labelRows(kind) {
+    const rows = Array.from(el('rows-' + kind).children);
+    rows.forEach((row, index) => row.setAttribute('aria-label', ROW_NAMES[kind] + ' ' + (index + 1) + ' of ' + rows.length));
+  }
+  function addRow(kind, values = {}, focusNew = false) {
+    const container = el('rows-' + kind);
+    if (container.children.length >= LIMIT_ROWS) {
+      if (focusNew) report('Cannot add more than 24 ' + ROW_NAMES[kind].toLowerCase() + ' rows. Remove a row before adding another.', true);
+      return null;
+    }
     const template = el('template-' + kind);
     const row = template.content.firstElementChild.cloneNode(true);
     for (const control of row.querySelectorAll('[data-field]')) {
       if (Object.hasOwn(values, control.dataset.field)) control.value = values[control.dataset.field];
     }
     const remove = row.querySelector('[data-remove]');
-    remove.addEventListener('click', () => row.remove());
-    el('rows-' + kind).appendChild(row);
+    remove.addEventListener('click', () => {
+      row.remove();
+      labelRows(kind);
+      const addButton = document.querySelector('[data-add="' + kind + '"]');
+      if (addButton) addButton.focus();
+    });
+    container.appendChild(row);
+    labelRows(kind);
+    if (focusNew) row.querySelector('[data-field]').focus();
     return row;
   }
   function getFormModel() {
@@ -254,7 +271,7 @@
   }
   document.addEventListener('DOMContentLoaded', () => {
     addRow('claims', {kind: 'change'});
-    for (const b of document.querySelectorAll('[data-add]')) b.addEventListener('click', () => addRow(b.dataset.add));
+    for (const b of document.querySelectorAll('[data-add]')) b.addEventListener('click', () => addRow(b.dataset.add, {}, true));
     el('intake-form').addEventListener('submit', event => {
       event.preventDefault();
       try {
