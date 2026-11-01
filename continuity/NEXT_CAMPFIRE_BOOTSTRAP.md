@@ -1,5 +1,8 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE — FOURTH-TAB RECOVERY, 31 OCTOBER 2026
 
+**CAMPFIRE SIX / 1 NOV latest:** Codex Workshop **source-only true-only commissioning plan TERMINAL** #877 c6563088657 (private 3-doc Relay `7e9a4b0f`); independent Campfire PLAN.md inspection. **NATIVE_NOT_READY**: actual guest custody/UID/interpreter/sockets UNKNOWN, STOP_NOT_DURABLY_RECEIVED limit retained. Build review + minimal read-only inventory decision **POSTED** #877 c6563101436, not START; no VM/install/ARM/model/spend. Game original-IP [DRAFT PR933](https://github.com/markgoodbody-bit/COM/pull/933) 64/64 real Node Linux + scripted CLI, awaiting first human playtest; not merged/released. PULSE here OK; no assumed worker wake. Preserve ME/TRACE purpose.
+
+
 **NEWEST CAMPFIRE SIX — 1 NOV 2026 playable game milestone:** Build **TERMINAL** #877 c6562990952: original game integrated in **draft PR #933** (`303c76c5`), CC invasion AI plus defender notices, **64/64 actual Node Linux tests** and real two-process scripted CLI save/load smoke. No manual player test, balance, main merge or release. From exact draft branch `build/frontier-playable-candidate-20261101` with Node20+: `node prototypes/frontier-ledger/play.js 42 directorate`. Workshop primary: Codex actual START #877 c6562967430 source-only true-only commissioning plan, not terminal/native installation/model. Do not duplicate reviews; actual human play and Codex plan return are next gates. Game remains original IP, ME/TRACE purpose intact.
 
 
