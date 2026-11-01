@@ -22,24 +22,26 @@ No provider, external service, credentials, network or model calls. A game day i
 - Missions take days and roll against explicit **original** probabilities; diplomacy moves support, recon reveals information, sabotage destroys a mine.
 - Facilities earn currency and finish timed production. A finite landing force can seize a world, but seized systems retain low popularity. Enemy headquarters capture is victory.
 - Views hide unknown systems and unawakened agent potential. The opponent policy uses public chart coordinates, but does not inspect unknown system ownership.
-- Two deterministic opponent policies issue one order per faction per day, physically transporting diplomats and conducting missions. They do not yet use troop logistics, production or invasion.
+- The deterministic opponent transports diplomats, conducts missions, reloads troops at friendly docks while retaining a four-troop reserve, and invades known hostile worlds. Military targeting uses known ownership and public coordinates, not hidden enemy strength. It does not build new forces.
 - A player may empty a garrison and accept that defence risk. Travel to mapped but fogged destinations is allowed.
 
 ## What is *not* implemented
 
-Not a playable alpha yet: no command-line interactive orders, tactical combat, multi-fleet battle, fighter/troop subclasses, diplomacy against defended systems, research tree, trade, complex rebellion dynamics, multiplayer, scenario generator, campaign save/restore, latency/resource optimisation, or proper game balance.
+This is a playable text prototype, not a balanced alpha: no tactical combat, multi-fleet battle, fighter/troop subclasses, diplomacy against defended systems, research tree, trade, complex rebellion dynamics, multiplayer, scenario generator, latency/resource optimisation, or proper game balance.
 
 This intentionally avoids treating unverified historical probability tables as facts. All numbers are placeholders for **our own game design**, with tests demonstrating only the written contracts.
 
 ## Integration and next slice
 
-The original state machine, deterministic opponent policy and troop logistics are combined here. Build ran all 30 tests under real Node v24.22.1 on Linux; the 35-day seed-18 demo completes with four worlds held by each faction and no winner. These checks establish the tested contracts, not balanced or entertaining play.
+The engine, troop logistics, diplomatic/military opponent, human CLI, event feedback and save/resume are integrated in this candidate. Build ran all 64 tests under real Node v24.22.1 on Linux, including four defender-notice tests and the eight military-policy tests supplied by CC. These checks establish tested contracts, not balanced or entertaining play.
 
-Next useful slice: a small explicit command interface and campaign save/restore so a person can play against the policy. The AI still needs economic and military decisions. Occupation, production ownership after capture, and strategic scarcity need explicit rules before expansion. Keep this side project below Workshop #914 in resources and priority.
+An actual scripted CLI scenario boarded Ves, travelled to Meridian, completed a diplomatic mission, saved at day 4, quit, loaded in a new process and advanced to day 5. Both processes exited 0 with empty stderr. This was not a manual terminal playtest.
+
+Occupation, production ownership after capture, and strategic scarcity need explicit rules before expansion. Keep this side project below Workshop #914 in resources and priority.
 
 Written as a bounded prototype, not released software.
 
-## Interactive text play (draft #923)
+## Interactive text play
 
 This is a **human-command interface, not a GUI or balanced playable release**. Run from the COM repository checkout (Node 20+):
 
@@ -49,10 +51,16 @@ Type `help` for commands. `chart` lists every system's id and public coordinates
 
 `save campaign.json` writes a local state file using a same-directory temporary file and rename. `load campaign.json` verifies format/version/checksum and state consistency **before replacing the current game**. Saves contain the complete simulation, including the opposing faction's hidden data, and are **not secure against player inspection or deliberate modification**. The checksum catches ordinary accidental corruption but is not authentication. Local path permissions, backup and crash-durability are the operator's responsibility. There is no cloud or Steam access.
 
-New source-only tests cover the command surface, wrong-faction and invalid-command rejection, fogged view, opponent-only day advancement, ongoing travel/missions, and save round-trip/corruption checks. The initial 14 tests passed under a V8 Node-compatible shim. The corrected combined suite now passes all 49 tests under real Node on Windows (CC) and Linux (Build). `test/shell.test.js` runs `play.js` itself on scripted input in a temporary folder: nothing runs after `quit`, end of input closes cleanly, and save, quit and load in a new process continue byte-identically.
+The combined 64-test suite covers command rejection, fogged views, opponent-only advancement, travel/missions, military logistics, conservation, replay, and save corruption checks. `test/shell.test.js` runs the CLI itself with scripted input, including uppercase file commands and ignoring buffered commands after quit.
 
-Known product gaps: research, supply/maintenance, opponent fleet warfare, response to a human capture, multi-faction play, interface quality and balance. A new `events` command shows the last 20 events **belonging to the player's faction only**; `tick` now reports own events occurring during advancement, including mission outcomes. Interactive `SAVE`, `LOAD`, `QUIT` and `EXIT` command verbs are case-insensitive while FILE path case is preserved. Decisions around occupied-system production queues need explicit rules before further expansion.
+`events` shows the last 20 events belonging to the player's faction. `tick` reports those occurring during advancement. A player whose owned world is invaded receives `WORLD_LOST` or `ATTACK_REPELLED` with its system id, even when capture changes ownership. This report does not reveal the attacking fleet, enemy strength, hidden locations or missions. Own mission outcomes retain their agent identity.
 
-## Corrected CLI acceptance
+`SAVE`, `LOAD`, `QUIT` and `EXIT` are case-insensitive; file-path case is preserved. Saves include event history. They are not private from their local reader.
 
-CC exercised the real Windows/Node CLI and returned fixes for buffered commands after quit and the missing public chart. Build applied the exact diff to PR923 and ran all 49 tests under Node v24.22.1 on Linux: 49 passed, including real subprocess quit/EOF and cross-process save/resume checks. No manual terminal playtest or game-balance claim. Mission-result visibility and uppercase SAVE/LOAD/QUIT are addressed by the next stacked source-only draft; its real Node acceptance and manual playtest remain pending.
+Known gaps: research, supply/maintenance, fleet-versus-fleet warfare, economic AI, multi-faction play, interface quality and balance. The military policy uses no commander bonus; the existing commander invasion rule can produce more occupation garrison than landed troops and still needs a separate balance decision. Occupied-system production ownership also needs an explicit rule.
+
+## Integration provenance and limits
+
+The military implementation is CC's exact reviewed diff (SHA256 `e1f80f756da61d3549441a08cbe4357e9ca7ea5cc4ce106b9ceb016ed1927969`) applied to the event-identity candidate `2f9c0577316d8aa2f8baf18d03858b458319fde2`. Build added only the narrow defender notice, its tests and this documentation.
+
+The first combined run exposed a new test's overly broad `/roll/` redaction assertion matching `controlled` in the status line. Word boundaries corrected that test; production output did not change in response. The final actual Node run passed 64/64. No manual playtest, balance acceptance, merge or release is claimed.
