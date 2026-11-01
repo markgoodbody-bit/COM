@@ -119,11 +119,44 @@ function moveFleet(g, faction, fleetId, destination) {
   insist(!f.moving && f.at, "Fleet already in transit");
   const a = getSite(g, f.at), b = getSite(g, destination);
   insist(a.id !== b.id, "Already at destination");
+  // Without these, Math.min() of no ships is Infinity (a one-day jump anywhere)
+  // and a zero speed gives an arrival that never comes.
+  insist(f.ships.length > 0, "Fleet has no ships to move");
+  insist(f.ships.every(s => Number.isFinite(s.speed) && s.speed > 0),
+    "Every ship needs a positive speed");
   const speed = Math.min(...f.ships.map(s => s.speed));
   const days = Math.max(1, Math.ceil(Math.hypot(b.x-a.x,b.y-a.y)/speed));
   f.moving = { destination, daysLeft:days };
   f.at = null;
   return record(g, "depart", { faction, fleetId, destination, eta:g.day+days });
+}
+function troopCapacity(f) {
+  return f.ships.reduce((n, s) => n + s.troops, 0);
+}
+function dockedAtFriendly(g, faction, fleetId) {
+  const f = getFleet(g, fleetId, faction);
+  insist(!f.moving && f.at, "Cannot transfer troops during transit");
+  const s = getSite(g, f.at);
+  insist(s.owner === faction, "Troops transfer only at a friendly system");
+  return [f, s];
+}
+// Every check runs before any change, so a refused transfer creates or loses no troops.
+function embarkTroops(g, faction, fleetId, count) {
+  insist(Number.isInteger(count) && count >= 1, "Troop count must be a positive integer");
+  const [f, s] = dockedAtFriendly(g, faction, fleetId);
+  insist(s.garrison >= count, "Not enough garrison troops to embark");
+  insist(f.troops + count <= troopCapacity(f), "Exceeds the fleet's troop capacity");
+  s.garrison -= count;
+  f.troops += count;
+  return record(g, "embark_troops", { faction, fleetId, systemId:s.id, count });
+}
+function disembarkTroops(g, faction, fleetId, count) {
+  insist(Number.isInteger(count) && count >= 1, "Troop count must be a positive integer");
+  const [f, s] = dockedAtFriendly(g, faction, fleetId);
+  insist(f.troops >= count, "Not enough troops aboard");
+  f.troops -= count;
+  s.garrison += count;
+  return record(g, "disembark_troops", { faction, fleetId, systemId:s.id, count });
 }
 function discoverPower(g, faction, mentorId, candidateId) {
   const mentor=getAgent(g, mentorId, faction), candidate=getAgent(g, candidateId, faction);
@@ -276,4 +309,4 @@ function view(g,faction) {
   };
 }
 module.exports={FACTIONS,createGame,boardAgent,disembarkAgent,moveFleet,
-  discoverPower,mission,queueBuild,invade,tick,view};
+  embarkTroops,disembarkTroops,discoverPower,mission,queueBuild,invade,tick,view};
