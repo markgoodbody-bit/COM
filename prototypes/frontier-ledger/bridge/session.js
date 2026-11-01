@@ -8,9 +8,13 @@ function playerView(g,f){
  const v=E.view(g,f);
  return {day:v.day,faction:f,factionName:E.FACTIONS[f].name,treasury:v.treasury,
   controlled:Object.values(g.systems).filter(s=>s.owner===f).length,winner:v.victory,
-  systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true}:{id:s.id,x:s.x,y:s.y,known:false}),
+  systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true,
+   ...(s.owner===f?{production:s.production.filter(j=>j.faction===f).map(j=>({id:j.id,type:j.type,daysLeft:j.remaining}))}:{})
+  }:{id:s.id,x:s.x,y:s.y,known:false}),
+  missions:g.missions.filter(m=>m.faction===f).map(m=>({id:m.id,agentId:m.agentId,kind:m.kind,target:m.target,daysLeft:m.daysLeft})),
   agents:v.agents,
   fleets:Object.values(g.fleets).filter(s=>s.faction===f).map(s=>({id:s.id,at:s.at,moving:s.moving?{destination:s.moving.destination,daysLeft:s.moving.daysLeft}:null,
+   speed:s.ships.length?Math.min(...s.ships.map(h=>h.speed)):null,
    ships:s.ships.length,troops:s.troops,capacity:s.ships.reduce((n,h)=>n+h.troops,0),agentSlots:s.ships.reduce((n,h)=>n+h.agentSlots,0),agents:[...s.agents]})),
   events:Commands.execute(g,f,'events').split('\n')};
 }
