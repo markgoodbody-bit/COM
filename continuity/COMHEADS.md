@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## CAMPFIRE FIVE — original game delivery / CC commission, 1 November 2026 (newer delta)
+
+- Mark: **keep building the original-IP side game; CC has spare capacity**. Existing engine prototype [PR #917](https://github.com/markgoodbody-bit/COM/pull/917) is DRAFT/UNMERGED; an independently authored **two-faction bounded AI policy, 11 new V8-shim tests and command-line demo** is stacked DRAFT [PR #919](https://github.com/markgoodbody-bit/COM/pull/919) on #917. All 11 reported tests ran under V8 with Node-compatible shims, **NOT in Node**. Simulated diplomatic expansion for both factions, not warfare or a complete playable game; no model/VM/Steam/expense. Build owns actual Node tests/integration and game design acceptance.
+- New **CC assignment** posted on its established [#874 c6558035387](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6558035387): run true Node tests and bounded original troop embark/disembark/capacity + refuse empty fleet movement, separate branch and one terminal. CC message is POSTED, not a wake, acknowledgement or START.
+- **Workshop #914 remains higher priority.** Build's stale-output correction has 13 focused tests reported passing and independent source acceptance, NOT runner or native model job. Codex Linux private nine-file handoff approved and dispatched, NOT yet reported delivered on most recent Build #914; no retry/override or model expense.
+- Source anchors: game [#915](https://github.com/markgoodbody-bit/COM/issues/915), Build [#877](https://github.com/markgoodbody-bit/COM/issues/877), Workshop [#914](https://github.com/markgoodbody-bit/COM/issues/914). No new request from Mark required. PULSE: current Campfire responsive; other runtime status unknown without actual receipt.
+
+
+
 ## CAMPFIRE FIVE — early COMSYNC checkpoint, 1 November 2026 (~12:14 GMT)
 
 **Purpose and status.** “How can we make a better future?” ME/TRACE remain the primary portable harm/agency/correction reasoning project. Fifth Campfire recovered continuity after fourth tab lacked a final COMHEAD update. This is an EARLY durable checkpoint; a GitHub message does not wake a model. Ordinary COMSYNC is bounded; avoid repeated full reads. Read issue bodies and fresh owner receipts.
