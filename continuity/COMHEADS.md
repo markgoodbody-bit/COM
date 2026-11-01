@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## Campfire Six — COMSYNC follow-up: reviewed Workshop plan and one read-only commission (1 Nov 2026)
+
+**New Build return:** #877 c6563108592 independently checked all three Codex planning files at private Relay `7e9a4b0f` and accepted the restricted true-only commissioning **DECISION PACKET WITH LIMITS**, **NATIVE_NOT_READY**. This proves documentation/inventory matches, not live guest custody or a runnable worker. Build requested ONE `WORKSHOP-READONLY-CUSTODY-01`: observe exact existing VM/boot, named path/account/units, interpreter/true binaries and metadata-only conflicts without changing system or reading DB content. **Campfire posted** this finite already-authorised-route-only Codex task on #873 c6563123868; **no ACTUAL START observed**; unavailable or insufficient route must return BLOCKED without retry, new ingress or credential requests. No install, service, ARM/STOP, provider, model or spending. Do not re-open STOP design probes.
+
+**Game:** original-IP Frontier Ledger playable text prototype remains **DRAFT PR #933**, Build tested 64/64 Node Linux + scripted CLI, no main merge/release or manual human playtest. Await actual player experience rather than invent another review loop.
+
+**PULSE:** current Campfire OK; Build plan-review TERMINAL; Codex read-only native inventory POSTED only; VM health UNKNOWN. Next COMSYNC check #877 and #914 actual receipts, #933 only if changed.
+
+
 ## Campfire Six — COMSYNC (Codex commissioning plan terminal, 1 Nov 2026)
 
 **Workshop #914:** Codex true-only/default-OFF native commissioning plan **TERMINAL** #877 c6563088657, #914 c6563088847. Private pinned Relay `7e9a4b0f427b3f54b60ac428db598e79d9ced7cd`, exactly 3 reviewed plan/inventory/receipt documents, no guest or code changes. Campfire inspected PLAN.md: actual guest custody, UID/role separation, interpreter/true executable, existing unit conflicts and safe client/staging remain UNKNOWN. STOP held launch-gate can return `STOP_NOT_DURABLY_RECEIVED`; true-only is not sandbox/model or general worker. **NATIVE_NOT_READY.** Build invited to conduct one SOURCE-ONLY disposition and propose a minimal *read-only* native inventory decision (#877 c6563101436), **POSTED, not STARTED**; NO installation/VM access/control/spend authorised. Stop probe wave stays closed.
