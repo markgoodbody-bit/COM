@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frontier Ledger</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<header class="bar">
+  <h1>Frontier Ledger</h1>
+  <dl id="stats" class="stats" aria-label="Campaign status"></dl>
+  <div class="time">
+    <button id="advance-1" type="button" class="primary">Advance 1 day</button>
+    <label class="days">Days <input id="advance-n" type="number" min="1" max="30" value="5"></label>
+    <button id="advance-many" type="button">Advance</button>
+  </div>
+</header>
+<div class="notices">
+  <p id="message" class="message" role="status" aria-live="polite"></p>
+  <p id="error" class="error" role="alert"></p>
+</div>
+<main class="layout">
+  <section class="chart-area" aria-labelledby="chart-title">
+    <h2 id="chart-title">Star chart</h2>
+    <svg id="chart" viewBox="0 0 600 520" role="group"
+         aria-label="Star chart. Press Tab to move between stars and Enter to select one."></svg>
+    <ul class="legend" aria-label="Legend">
+      <li><span class="key own"></span>Yours</li>
+      <li><span class="key enemy"></span>Enemy</li>
+      <li><span class="key neutral"></span>Neutral</li>
+      <li><span class="key unknown"></span>Not yet visited: owner unknown</li>
+      <li><span class="key fleet"></span>Your fleet</li>
+    </ul>
+    <h2>Recent events</h2>
+    <ol id="events" class="events"></ol>
+  </section>
+  <aside class="panel" aria-labelledby="selection-title">
+    <h2 id="selection-title">Selection</h2>
+    <div id="selection"></div>
+    <h2>Actions</h2>
+    <div id="actions" class="actions"></div>
+    <h2>Your fleets</h2>
+    <ul id="fleet-list" class="units"></ul>
+    <h2>Your agents</h2>
+    <ul id="agent-list" class="units"></ul>
+  </aside>
+</main>
+<footer class="campaign" aria-labelledby="campaign-title">
+  <h2 id="campaign-title">Campaign</h2>
+  <label>Seed <input id="seed" type="number" min="0" max="4294967295" value="42"></label>
+  <label>Side
+    <select id="side">
+      <option value="directorate">Aster Directorate</option>
+      <option value="league">Horizon League</option>
+    </select>
+  </label>
+  <button id="new-game" type="button">New campaign</button>
+  <button id="save-game" type="button">Save to file</button>
+  <label class="file">Load from file <input id="load-game" type="file" accept=".json,application/json"></label>
+</footer>
+</body>
+</html>
