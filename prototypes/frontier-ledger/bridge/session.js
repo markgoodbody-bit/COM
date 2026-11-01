@@ -4,11 +4,24 @@ const COUNTS={board:[2],leave:[1],move:[2],mission:[3],loadtroops:[2],unloadtroo
 function fail(message,status=400){throw Object.assign(new Error(message),{status});}
 function object(x){return x!==null&&typeof x==='object'&&!Array.isArray(x);}
 function keys(x,expected){if(!object(x)||Object.keys(x).length!==expected.length||expected.some(k=>!Object.hasOwn(x,k)))fail('Unexpected request fields');}
+function reconReport(e){
+ if(e.type!=='mission_result'||e.kind!=='recon'||e.success!==true||!e.recon)return null;
+ const r=e.recon;
+ if(!Number.isSafeInteger(e.day)||e.day<0||!Number.isSafeInteger(r.garrison)||r.garrison<0||
+    !Number.isSafeInteger(r.fort)||r.fort<0||!(r.owner===null||Object.hasOwn(E.FACTIONS,r.owner)))return null;
+ return {day:e.day,garrison:r.garrison,fort:r.fort,owner:r.owner};
+}
+function latestRecon(g,f,id){
+ for(let i=g.events.length-1;i>=0;i--){const e=g.events[i];
+  if(e.faction===f&&e.target===id){const r=reconReport(e);if(r)return r;}
+ }
+ return null;
+}
 function missionHistory(g,f){
  const starts=new Map(g.events.filter(e=>e.faction===f&&e.type==='mission_start').map(e=>[e.id,e]));
  return g.events.filter(e=>e.faction===f&&e.type==='mission_result').slice(-40).map(e=>({
   day:e.day,id:e.id,agentId:starts.get(e.id)?.agentId??null,kind:e.kind,target:e.target,
-  success:e.success===true,chance:e.chance,roll:e.roll}));
+  success:e.success===true,chance:e.chance,roll:e.roll,...(reconReport(e)?{recon:reconReport(e)}:{})}));
 }
 function playerView(g,f){
  const v=E.view(g,f);
@@ -16,7 +29,7 @@ function playerView(g,f){
   controlled:Object.values(g.systems).filter(s=>s.owner===f).length,winner:v.victory,
   dailyIncome:Object.values(g.systems).filter(s=>s.owner===f).reduce((n,s)=>n+s.facilities.mine,0),
   missionHistory:missionHistory(g,f),
-  systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true,ownSupport:s.support[f],
+  systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true,ownSupport:s.support[f],recon:latestRecon(g,f,s.id),
    ...(s.owner===f?{dailyIncome:s.facilities.mine,production:s.production.filter(j=>j.faction===f).map(j=>({id:j.id,type:j.type,daysLeft:j.remaining}))}:{})
   }:{id:s.id,x:s.x,y:s.y,known:false}),
   missions:g.missions.filter(m=>m.faction===f).map(m=>({id:m.id,agentId:m.agentId,kind:m.kind,target:m.target,daysLeft:m.daysLeft})),

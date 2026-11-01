@@ -7,8 +7,14 @@
 const COSTS = { patrol: 14, troops: 6, mine: 10 };
 const MISSIONS = ["diplomacy", "recon", "sabotage"];
 
-const MISSION_LIMITS = "A successful diplomacy mission adds up to 25 support (maximum 100). A neutral world joins when that success reaches 65; enemy-held worlds do not join through diplomacy. Recon currently only adds a world to the known chart, usually already done on arrival. It does not reveal enemy garrisons or facilities.";
+const MISSION_LIMITS = "A successful diplomacy mission adds up to 25 support (maximum 100). A neutral world joins when that success reaches 65; enemy-held worlds do not join through diplomacy. Successful recon records garrison and fortification on that day. Reports may become stale; failed recon reveals no defence report.";
 
+function reconText(report,owner){
+ if(!report)return "Defence unknown: no successful recon report.";
+ return "Recon observed on day "+report.day+": garrison "+report.garrison+", fort "+report.fort+
+   "; may now be stale. Observed owner: "+(report.owner||"neutral")+
+   (owner!==undefined&&owner!==report.owner?"; ownership differs from this observation.":".");
+}
 function title(id) {
   return String(id).split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
@@ -403,6 +409,7 @@ function startApp() {
       } else {
         rows.push(["Garrison", "Not visible to you"]);
       }
+      if(sys.known)rows.push(["Recon report",reconText(sys.recon,sys.owner)]);
       box.append(facts(rows));
       if(cls === "own") {
         const jobs=sys.production||[];
@@ -540,6 +547,7 @@ function startApp() {
     for(const e of history){
       const li=el("li"),who=e.agentId?title(e.agentId):"Unknown agent (old record)";
       li.append(el("span","", "Day "+e.day+": "+who+" · "+title(e.kind)+" at "+title(e.target)+" · "+(e.success?"Succeeded":"Failed")+" (chance "+e.chance+"%, roll "+e.roll+")"));
+      if(e.recon)li.append(el("p","hint",reconText(e.recon)));
       if(e.agentId&&find(view.agents,e.agentId))li.append(unitButton("Select "+who,false,()=>select({agent:e.agentId})));
       box.append(li);
     }
@@ -595,4 +603,4 @@ function startApp() {
 }
 
 if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", startApp);
-if (typeof module !== "undefined") module.exports = { title, ownerClass, ownerText, layout, actionsFor, newEvents, ownershipChanges, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };
+if (typeof module !== "undefined") module.exports = { reconText, title, ownerClass, ownerText, layout, actionsFor, newEvents, ownershipChanges, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };

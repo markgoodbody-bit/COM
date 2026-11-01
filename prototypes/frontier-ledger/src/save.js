@@ -105,6 +105,15 @@ function validateGame(g) {
    }
  }
  if(!Array.isArray(g.missions)||!Array.isArray(g.events)||g.missions.length>3000||g.events.length>60000)fail("timeline");
+ // Optional additive event payload: old v1 saves need no migration.
+ for(const e of g.events)if(obj(e)&&has(e,"recon")){
+   const r=e.recon;
+   if(e.type!=="mission_result"||e.kind!=="recon"||e.success!==true||
+      !factions.includes(e.faction)||!has(g.systems,e.target)||!boundedInt(e.day,0,g.day)||
+      !obj(r)||Object.keys(r).sort().join(",")!=="fort,garrison,owner"||
+      !boundedInt(r.garrison,0,1000000)||!boundedInt(r.fort,0,10000)||
+      !(r.owner===null||factions.includes(r.owner)))fail("recon snapshot");
+ }
  for(const m of g.missions){
    if(!obj(m)||!factions.includes(m.faction)||!has(g.agents,m.agentId)||
      !has(g.systems,m.target)||!boundedInt(m.daysLeft,1,100000)||
