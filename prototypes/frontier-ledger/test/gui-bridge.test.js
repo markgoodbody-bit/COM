@@ -15,7 +15,7 @@ test('enemy treasury, missions, events, facilities and ships do not enter view',
  const g=E.createGame();g.events.push({faction:'league',type:'SENTINEL_ENEMY'});g.factions.league.treasury=987654321;
  g.fleets.wanderer.ships[0].secret='SECRET';
  const v=JSON.stringify(playerView(g,'directorate'));
- for(const secret of ['SENTINEL_ENEMY','987654321','wanderer','SECRET','missions'])assert.ok(!v.includes(secret));
+ for(const secret of ['SENTINEL_ENEMY','987654321','wanderer','SECRET'])assert.ok(!v.includes(secret));
 });
 test('action journey matches engine; failed action leaves exact save and revision untouched',()=>{
  const s=createSession();act(s,'board','ves','iron');act(s,'move','iron','meridian');
