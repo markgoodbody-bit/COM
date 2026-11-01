@@ -7,7 +7,7 @@
 const COSTS = { patrol: 14, troops: 6, mine: 10 };
 const MISSIONS = ["diplomacy", "recon", "sabotage"];
 
-const MISSION_LIMITS = "Diplomacy builds support; a neutral world may need several successful missions before joining. Support totals are not displayed. Recon currently only adds a world to the known chart, usually already done on arrival. It does not reveal enemy garrisons or facilities.";
+const MISSION_LIMITS = "A successful diplomacy mission adds up to 25 support (maximum 100). A neutral world joins when that success reaches 65; enemy-held worlds do not join through diplomacy. Recon currently only adds a world to the known chart, usually already done on arrival. It does not reveal enemy garrisons or facilities.";
 
 function title(id) {
   return String(id).split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
@@ -139,7 +139,7 @@ function actionsFor(view, sel) {
           title(kind) + " on " + title(agent.at), !over && ok,
           over || "Sabotage needs an enemy world; " + title(agent.at) + " is " + ownerText(place, faction).toLowerCase()));
       }
-      if (agent.power) {
+      if (agent.mentor) {
         for (const c of view.agents.filter(c => c.id !== agent.id && c.at === agent.at && !c.fleet && !c.busy && !c.power)) {
           out.push(action("Agent", "awaken", [agent.id, c.id], "Awaken " + title(c.id) + "'s hidden potential",
             !over, over));
@@ -155,7 +155,7 @@ function actionsFor(view, sel) {
       const why = type === "patrol" && !yard ? "Patrol ships need a shipyard here"
         : "Costs " + cost + "; you have " + view.treasury;
       out.push(action("Build at " + title(sys.id), "build", [sys.id, type],
-        "Build " + (type === "troops" ? "troops (+3 garrison)" : type === "mine" ? "a mine" : "a patrol ship") + " for " + cost,
+        "Build " + (type === "troops" ? "troops (+3 garrison, 3 days)" : type === "mine" ? "a mine (+1/day, 3 days)" : "a patrol ship (4 days)") + " for " + cost,
         !over && ok, over || why));
     }
   }
@@ -279,7 +279,7 @@ function startApp() {
     const box = $("stats");
     box.replaceChildren();
     const rows = [["Day", String(view.day)], ["Side", view.factionName], ["Treasury", String(view.treasury)],
-      ["Worlds", String(view.controlled)]];
+      ["Worlds", String(view.controlled)], ["Mine income", "+" + view.dailyIncome + "/day"]];
     if (view.winner) rows.push(["Winner", view.winner === view.faction ? "You" : title(view.winner)]);
     for (const [k, v] of rows) {
       const d = el("div", k === "Winner" ? "winner" : "");
@@ -357,8 +357,9 @@ function startApp() {
       const cls = ownerClass(sys, view.faction);
       box.append(el("h3", "", title(sys.id)));
       const rows = [["Owner", ownerText(sys, view.faction)], ["Position", sys.x + ", " + sys.y]];
+      if(sys.known)rows.push(["Your support", sys.ownSupport + "/100" + (sys.owner === null ? "; joins on a diplomacy success reaching 65" : "")]);
       if (cls === "own") {
-        rows.push(["Garrison", String(sys.garrison)],
+        rows.push(["Mine income", "+" + sys.dailyIncome + " per day"], ["Garrison", String(sys.garrison)],
           ["Facilities", "mine " + sys.facilities.mine + ", shipyard " + sys.facilities.yard + ", fort " + sys.facilities.fort]);
       } else if (cls === "unknown") {
         rows.push(["Status", "Not yet visited; send a ship to learn who holds it"]);
@@ -487,13 +488,33 @@ function startApp() {
     }
   }
 
+  function renderEconomy() {
+    const box=$("worlds");box.replaceChildren();
+    for(const s of view.systems.filter(s=>s.known&&s.owner===view.faction)) {
+      const li=el("li"),jobs=s.production||[];
+      li.append(unitButton(title(s.id)+" · +"+s.dailyIncome+"/day · garrison "+s.garrison+" · "+jobs.length+" build(s)",sel.system===s.id,()=>select({system:s.id})));
+      box.append(li);
+    }
+    if(!box.children.length)box.append(el("li","hint","No worlds currently controlled."));
+  }
+  function renderHistory() {
+    const box=$("mission-history");box.replaceChildren();
+    const history=(view.missionHistory||[]).filter(e=>!sel.agent||e.agentId===sel.agent).slice(-20).reverse();
+    for(const e of history){
+      const li=el("li"),who=e.agentId?title(e.agentId):"Unknown agent (old record)";
+      li.append(el("span","", "Day "+e.day+": "+who+" · "+title(e.kind)+" at "+title(e.target)+" · "+(e.success?"Succeeded":"Failed")+" (chance "+e.chance+"%, roll "+e.roll+")"));
+      if(e.agentId&&find(view.agents,e.agentId))li.append(unitButton("Select "+who,false,()=>select({agent:e.agentId})));
+      box.append(li);
+    }
+    if(!history.length)box.append(el("li","hint",sel.agent?"No completed missions recorded for this agent.":"No completed missions recorded yet."));
+  }
   function renderOrders() {
     const box=$("orders"),orders=pendingOrders(view);box.replaceChildren();
     if(!orders.length)box.append(el("li","hint","No journeys, missions or production currently in progress."));
     for(const order of orders){const li=el("li");li.append(unitButton(order.label,false,()=>select(order.selection)));box.append(li);}
   }
   function render() {
-    renderOrders(); renderStats(); renderChart(); renderSelection(); renderActions(); renderUnits(); renderEvents();
+    renderEconomy(); renderHistory(); renderOrders(); renderStats(); renderChart(); renderSelection(); renderActions(); renderUnits(); renderEvents();
     for (const id of ["advance-1", "advance-many"]) $(id).disabled = Boolean(view.winner);
   }
 
