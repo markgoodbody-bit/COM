@@ -1,3 +1,5 @@
+> **Lean Campfire entry (1 November 2026):** For an established Campfire's initial orientation, read COMHEADS + FRAMEWORK_HEAD via either successor pointer. The initial hot load is not a claim of FULL COMSYNC or complete project acquisition. Retained detailed rules below remain applicable by task/trigger; retrieve their relevant sections instead of automatically loading this whole file. Changed issue/PR-body discovery, identity/authority safeguards, required substantive source depth and partner ingress are not waived. Maintain current status only in COMHEADS; preserve history by pinned link rather than prepended deltas.
+
 # FRAMEWORK BOOT — BOUNDED CONTINUATION PROTOCOL
 
 Status: **WORKING CONTINUITY INFRASTRUCTURE — NOT CANON**  
