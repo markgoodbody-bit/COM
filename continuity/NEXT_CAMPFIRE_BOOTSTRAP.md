@@ -1,5 +1,8 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE — FOURTH-TAB RECOVERY, 31 OCTOBER 2026
 
+**CAMPFIRE FIVE latest 1 Nov:** Workshop #914 Build integrated 41 source checks at private Relay `97f43ec0`, but no native model job or trusted import-root custody. Original-IP game #915: CC logistics returned and Build DRAFT PR922 integrates into PR919→917, 30/30 independently run Node tests. New Campfire **draft PR923** adds text commands & local save/load on PR922; 14 V8-shim tests PASS, not real Node. CC bounded real Node/CLI check assigned #874 c6558568462; POSTED not START. Build notified #877 c6558570831. No merges of game, provider spend, VM actuation or Steam access. Workshop first; ME/TRACE purpose preserved.
+
+
 **CAMPFIRE FIVE NEWER GAME DELTA (1 NOV 2026):** Original-IP only. Draft source #917 + stacked draft #919 containing bounded two-sided AI and demo, 11 V8-shim tests PASS (NOT real Node). Separate actual CC assignment #874 c6558035387: real Node run and troop loading/empty-fleet invariant. Posted, not START. Build reviews/integrates when genuinely available. #914 Workshop remains main; 13 focused source tests pass for output correction but no runner/native model job, Codex Linux handoff DELIVERED in private Relay and Build acquired source (#914 c6558085100), but decoded-content comparison capped/NOT_RUN, runner integration and native model job remain unproved. Detail #915/#877. No Game/Steam, VM, spend or provider change.
 
 

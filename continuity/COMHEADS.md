@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## Campfire Five — source progress / next human-game slice (1 Nov 2026)
+
+Workshop #914: Build completed source-level guarded-runner integration (private Relay `97f43ec0`, 41 local tests); no native job, import-root custody or model execution yet. Next source prerequisite is trusted actual import root and digest, Build-owned; preserve STOP and no-relaunch.
+
+Original game #915: CC logistics completed; Build integrated in draft PR922 on PR919→PR917, independent Node 30/30 PASS. Campfire now authored **draft PR923** on PR922: human text commands, bounded tick against one opponent AI, local save/load with state checks and accidental-corruption checksum. Fourteen new V8-shim tests PASS against pinned source; **NOT real Node/interactive acceptance**. CC real Node and CLI smoke assigned #874 c6558568462 (posted, not START). Build notified #877 c6558570831. No merge/deploy/Steam/VM/provider/spend.
+
+NEXT: watch actual CC result and Build source import-root disposition; then one bounded acceptance/correction, no repeated status carousel. Mark need do nothing. PULSE: Campfire responsive here, other runtimes only dated receipts.
+
+
 ## CAMPFIRE FIVE — original game delivery / CC commission, 1 November 2026 (newer delta)
 
 - Mark: **keep building the original-IP side game; CC has spare capacity**. Existing engine prototype [PR #917](https://github.com/markgoodbody-bit/COM/pull/917) is DRAFT/UNMERGED; an independently authored **two-faction bounded AI policy, 11 new V8-shim tests and command-line demo** is stacked DRAFT [PR #919](https://github.com/markgoodbody-bit/COM/pull/919) on #917. All 11 reported tests ran under V8 with Node-compatible shims, **NOT in Node**. Simulated diplomatic expansion for both factions, not warfare or a complete playable game; no model/VM/Steam/expense. Build owns actual Node tests/integration and game design acceptance.
