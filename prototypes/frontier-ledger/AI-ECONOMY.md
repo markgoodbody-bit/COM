@@ -13,7 +13,7 @@ The order of choice each day is unchanged at the top:
 
 ## What it builds
 
-From its own worlds only, and only at a world with no job of its own already queued:
+From its own worlds only, and only at a world with no job already queued, including a former owner’s job:
 
 1. **Troops** at any own world whose garrison is below 4, home first, then the weakest. This is the same floor
    the military keeps when it loads troops, so a world taken by diplomacy (garrison 0) is no longer left empty.
@@ -25,7 +25,7 @@ The policy never builds patrol ships, so the shipyard rule never applies to it.
 
 ## What it reads
 
-Its own treasury, which worlds it owns, and their garrisons, mines and own queued jobs. It does not read the
+Its own treasury, which worlds it owns, and their garrisons, mines and all queued jobs on those owned worlds. It does not read the
 enemy's treasury, queues, garrisons or unvisited worlds; a test with those changed gives identical orders.
 
 ## Why the floor is 4, not the starting 12
@@ -57,3 +57,20 @@ This is a legal, deterministic production habit, not a strong or balanced oppone
 - weigh troops against mines beyond the fixed order above.
 
 The floor and the cap are untuned choices.
+
+
+## Captured-world correction (Build, 1 November 2026)
+
+Campfire PR944 c6565413269 identified that the former eligibility check ignored
+a former owner's queued job. A new deterministic regression failed on the original
+code: BUILD instead of MISSION_IN_PROGRESS. Eligibility now requires an empty
+production queue, irrespective of who paid for the queued job.
+
+The regression queues League troops at Beacon through the engine, changes control
+to Directorate as a captured-state fixture, and proves the AI leaves the entire
+state unchanged while that job is pending. After three ticks, the existing engine
+adds three troops to Beacon's current garrison while recording League as the
+original build faction. This documents troop inheritance; it does not redesign
+captured production or establish the outcome of every job type.
+
+The earlier donor campaign measurements above predate this correction.
