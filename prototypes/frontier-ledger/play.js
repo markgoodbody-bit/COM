@@ -41,7 +41,10 @@ function readSave(filename) {
 console.log("Frontier Ledger — original text-only prototype. "+Commands.formatView(game,side));
 console.log("Type 'help' for commands, 'save FILE' to persist, 'quit' to leave.");
 function prompt(){rl.setPrompt("day "+game.day+" "+side+"> ");rl.prompt()}
+let closed=false;
 rl.on("line",(line)=>{
+ // readline still delivers lines it buffered before close(); a closed shell runs none of them.
+ if(closed)return;
  const raw=line.trim();
  if(raw==="quit"||raw==="exit"){rl.close();return}
  try{
@@ -51,5 +54,5 @@ rl.on("line",(line)=>{
  }catch(err){console.error("Rejected: "+err.message)}
  prompt();
 });
-rl.on("close",()=>{console.log("Campaign closed. Unsaved progress is not retained.");});
+rl.on("close",()=>{closed=true;console.log("Campaign closed. Unsaved progress is not retained.");});
 prompt();
