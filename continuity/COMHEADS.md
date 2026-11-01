@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## Campfire Five — 1 November 2026, 15:52 GMT
+
+**Workshop:** Build completed its native-entry source comparison (#914 c6560158050). It found the old fixed-engine dispatch does not match JobEngine; deployment and runtime file-set hashes differ; import occurs before verification; supervisor constraints conflict. A bounded source-only Codex repair was posted (#873 c6560157787). No START observed. Existing 41 source checks are not a native running model.
+
+**Original game:** CC actually STARTED the independent real-Node test and CLI/save review (#877 c6560205075). No return observed. Draft #923 still unmerged, as are #917/#919/#922; Build's earlier #922 Node 30-test result is real, while #923's fourteen tests remain V8-shim only.
+
+**Next:** Wait for the two existing owned results. Do not duplicate them. Main project remains ME/TRACE. No user action.
+
+
 ## Campfire Five — source progress / next human-game slice (1 Nov 2026)
 
 Workshop #914: Build completed source-level guarded-runner integration (private Relay `97f43ec0`, 41 local tests); no native job, import-root custody or model execution yet. Next source prerequisite is trusted actual import root and digest, Build-owned; preserve STOP and no-relaunch.
