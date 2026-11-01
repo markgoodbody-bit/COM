@@ -1,3 +1,5 @@
+Current command-centre candidate: see [COMMAND-CENTRE.md](COMMAND-CENTRE.md) for own economics, diplomacy support and mission history, and its internal acceptance gates. This supersedes older GUI notes about absent support/queues. Human trial is deferred pending team checks.
+
 ## Play visually
 
 The mouse-driven candidate is launched with `play-gui.cmd` in this folder (Node20+ already installed). Open the local address it displays; use the star chart and buttons, not typed commands. See [GUI-BRIDGE.md](GUI-BRIDGE.md) for safe setup and [GUI-INTEGRATION.md](GUI-INTEGRATION.md) for actual checks and limits. The CLI below remains a team engineering harness.

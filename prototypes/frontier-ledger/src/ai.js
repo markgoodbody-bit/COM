@@ -82,12 +82,41 @@ function militaryOrder(g,f,diplomat) {
   for(const v of fleets){const o=fleetOrder(g,f,v);if(o)return o;}
   return null;
 }
+// Economy: every own world is kept at the military's RESERVE floor, never refilled above it, and gets
+// mines up to a cap. A first version refilled home to 12; that re-armed the military without end and its
+// reload trips kept the diplomat's ship, cutting diplomatic acquisitions from 119 to 40 (20 seeds, 60 days).
+// Costs, times and legality stay the engine's.
+const MINE_CAP=3;
+// Diplomacy orders that change the game; any other diplomacy result is a waiting day.
+const DIPLOMACY_ACTS=new Set(["DISEMBARK","MOVE","DIPLOMACY","BOARD"]);
+function economyOrder(g,f) {
+  // Own worlds only: owner, garrison, mines and all queued jobs on those worlds. One queued job per world at a time.
+  const home=factionData(g,f).home;
+  const worlds=Object.values(g.systems).filter(s=>s.owner===f&&s.production.length===0)
+    .sort((a,b)=>(b.id===home)-(a.id===home)||a.garrison-b.garrison||a.id.localeCompare(b.id));
+  const wants=[];
+  for(const s of worlds)if(s.garrison<RESERVE)wants.push([s.id,"troops"]);
+  for(const s of worlds.slice().sort((a,b)=>a.facilities.mine-b.facilities.mine||a.id.localeCompare(b.id)))
+    if(s.facilities.mine<MINE_CAP)wants.push([s.id,"mine"]);
+  for(const [system,item] of wants){
+    // queueBuild checks owner, item, shipyard and treasury before any change, so a refusal leaves no trace.
+    try{E.queueBuild(g,f,system,item);}catch{continue;}
+    return {faction:f,order:"BUILD",system,item};
+  }
+  return null;
+}
 function orderFaction(g,f) {
   factionData(g,f);
   if(g.winner) return {faction:f,order:"GAME_OVER"};
   const a=chooseDiplomat(g,f);
   const war=militaryOrder(g,f,a);
   if(war)return war;
+  // Production only takes a day that diplomacy would otherwise spend waiting.
+  const talk=diplomacyOrder(g,f,a);
+  if(DIPLOMACY_ACTS.has(talk.order))return talk;
+  return economyOrder(g,f)||talk;
+}
+function diplomacyOrder(g,f,a) {
   if(!a)return {faction:f,order:"NO_AGENT"};
   if(a.busy)return {faction:f,order:"MISSION_IN_PROGRESS",agent:a.id};
   if(a.fleet) {

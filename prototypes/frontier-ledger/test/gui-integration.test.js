@@ -28,5 +28,5 @@ test('integrated client/HTTP displays queued and completed production; old saves
  r=await api.load(S.encode(g,'directorate'));assert.equal(r.view.events[0],'Day 0: troops @cinder');
 });
 test('mission limitation copy does not promise intelligence or automatic ownership',()=>{
- assert.match(UI.MISSION_LIMITS,/several successful missions/);assert.match(UI.MISSION_LIMITS,/Support totals are not displayed/);assert.match(UI.MISSION_LIMITS,/does not reveal enemy/);
+ assert.match(UI.MISSION_LIMITS,/neutral world joins/);assert.match(UI.MISSION_LIMITS,/reaches 65/);assert.match(UI.MISSION_LIMITS,/does not reveal enemy/);
 });

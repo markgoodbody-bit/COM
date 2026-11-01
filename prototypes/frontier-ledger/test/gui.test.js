@@ -127,6 +127,22 @@ test("after days pass, the lines shown as new are exactly the ones added",()=>{
  assert.deepEqual(UI.newEvents(full,full),[]);
 });
 
+test("a known world that changes hands is named; an unknown one is not compared",()=>{
+ const v=createSession().state().view,after=structuredClone(v);
+ after.systems.find(s=>s.id==="meridian").owner="league";
+ after.systems.find(s=>s.id==="beacon").owner="league";   // unknown to this side: never compared
+ assert.deepEqual(UI.ownershipChanges(v,after),["Meridian changed hands: neutral → enemy."]);
+ assert.deepEqual(UI.ownershipChanges(v,v),[]);
+});
+
+test("a download that is only requested does not mark the campaign saved",()=>{
+ // Campfire #942 review: if the browser blocks the download, New and Load must still warn.
+ const js=fs.readFileSync(path.join(GUI,"app.js"),"utf8");
+ const handler=js.slice(js.indexOf('$("save-game")'),js.indexOf('$("load-game")'));
+ assert.ok(handler.includes("api.save()"));
+ assert.doesNotMatch(handler,/unsaved\s*=\s*false/);
+});
+
 test("gui source keeps the bridge's rules: no HTML injection, inline code or remote resources",()=>{
  const html=fs.readFileSync(path.join(GUI,"index.html"),"utf8");
  const js=fs.readFileSync(path.join(GUI,"app.js"),"utf8"),css=fs.readFileSync(path.join(GUI,"style.css"),"utf8");
