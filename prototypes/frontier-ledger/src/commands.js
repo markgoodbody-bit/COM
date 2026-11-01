@@ -54,6 +54,8 @@ function eventView(g,f,start=0) {
  const own=g.events.slice(start).filter(e=>e.faction===f);
  if(!own.length)return "No faction events recorded.";
  const recent=own.slice(-20).map(e=>{
+   if(e.type==="defence_notice")
+     return "Day "+e.day+": Invasion @"+e.systemId+" "+e.outcome;
    const parts=["Day "+e.day+": "+e.type];
    // Results carry a mission ID, not an agent ID. Join only to our own start.
    const missionStart=e.type==="mission_result" && e.id!==undefined
