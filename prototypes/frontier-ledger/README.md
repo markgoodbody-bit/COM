@@ -38,3 +38,17 @@ The original state machine, deterministic opponent policy and troop logistics ar
 Next useful slice: a small explicit command interface and campaign save/restore so a person can play against the policy. The AI still needs economic and military decisions. Occupation, production ownership after capture, and strategic scarcity need explicit rules before expansion. Keep this side project below Workshop #914 in resources and priority.
 
 Written as a bounded prototype, not released software.
+
+## Interactive text play (draft #923)
+
+This is a **human-command interface, not a GUI or balanced playable release**. Run from the COM repository checkout (Node 20+):
+
+    node prototypes/frontier-ledger/play.js 42 directorate
+
+Type `help` for commands. A useful first sequence is `status`, `map`, `agents`, `fleets`, `board ves iron`, `move iron meridian`, `tick 2`, `leave ves`, `mission ves diplomacy meridian`, `tick 2`. One `tick` advances a game-day and gives the **other faction** one deterministic AI decision; the human has no automatic AI moves. The shell allows multiple instantaneous orders between days (intentional alpha simplification). `loadtroops iron 4` embarks troops only from a friendly dock; `invade iron meridian` lands troops on arrival.
+
+`save campaign.json` writes a local state file using a same-directory temporary file and rename. `load campaign.json` verifies format/version/checksum and state consistency **before replacing the current game**. Saves contain the complete simulation, including the opposing faction's hidden data, and are **not secure against player inspection or deliberate modification**. The checksum catches ordinary accidental corruption but is not authentication. Local path permissions, backup and crash-durability are the operator's responsibility. There is no cloud or Steam access.
+
+New source-only tests cover the command surface, wrong-faction and invalid-command rejection, fogged view, opponent-only day advancement, ongoing travel/missions, and save round-trip/corruption checks. The initial 14 tests passed under a V8 Node-compatible shim; **true Node execution of this new slice is pending**. Existing prior stacked 30 Node tests passed under Build before this change.
+
+Known product gaps: research, supply/maintenance, opponent fleet warfare, response to a human capture, multi-faction play, interface quality and balance. Decisions around occupied-system production queues need explicit rules before further expansion.
