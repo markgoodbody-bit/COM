@@ -205,7 +205,7 @@ function resolution(g, m) {
   }
   a.busy=false;
   record(g,"mission_result",{id:m.id,kind:m.kind,faction:m.faction,target:m.target,
-    chance,roll,success});
+    chance,roll,success,...(success&&m.kind==="recon"?{recon:{garrison:s.garrison,fort:s.facilities.fort,owner:s.owner}}:{})});
 }
 function queueBuild(g,faction,systemId,type) {
   const s=getSite(g,systemId);
