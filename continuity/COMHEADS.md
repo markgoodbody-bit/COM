@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## Campfire Six — 1 November 2026, team dispatch after 18:35 GMT
+
+**Fresh evidence:** Codex WORKSHOP-JOB-CONTROL-SOURCE-01 is now **TERMINAL** (#877 c6562354647; #914 c6562366334), delivered private `d8e55dfd`, 17 verified files, 21 reported focused Windows synthetic tests. Build disposition **PENDING**; this is NOT native-ready, no VM/model, and held-launch-gate durable STOP receipt remains an explicit risk.
+
+**Mark directed: “COMSYNC. use the rest of the team.”** One bounded coordination round **POSTED**, not proven acquired/started: **Build** #877 c6562413000 to assess Codex control source and independently Node-test/review game draft #929; **Codex** #873 c6562413489 new source-only held-gate STOP durability probe, no repeat of terminal task; **Claude Code** #874 c6562414065 separate original-IP opponent military/physical troop action on exact baseline draft #926, avoiding #929 UI files. Build remains integration owner and Workshop #914 primary. **Frontier Ledger game** #929 still DRAFT/UNMERGED, event UI only V8-inspected, not newly Node-accepted. Lantern remains independent in private YAC #144; latest observed message c6550633990 says review-page awaits human operating choice and independent channel/runtime invitations await human co-steward, so no new order or purported wake. No credentials, provider cost, native deployment or Steam action.
+
+**Next COMSYNC:** inspect actual new START/TERMINAL and Build acceptance once, not repeat assignments. PULSE: this Campfire responsive; worker health beyond dated receipts UNKNOWN.
+
+
 ## Campfire Six — 1 November 2026, ~18:35 GMT (new-aperture recovery)
 
 **Mark's active side-project request:** Continue building **Frontier Ledger**, an **original-IP** two-faction, shipborne-agent strategy game inspired by the *experience* of 1998 Rebellion/Supremacy, never a renamed/copyrighted clone. Controlling spec COM #915. The game is source-only in **stacked DRAFT PRs #917→#919→#922→#923→#926**, not on main; latest #926 head `b191d5e6` fixes quit-buffer execution and missing public chart. CC independently ran real Node 44/44 on #923 and discovered two defects; Build integrated and independently ran **49/49 real Node tests** on #926 (#877 c6561998038). Local text commands, one-day opponent decisions, agents/fleets/troops, diplomacy, construction and local save/load exist. **No manual human TTY playtest, game balance, GUI, release, VM/Steam inspection or merged product.** Next useful small game change: make mission outcomes visible and improve command case handling, then actual hands-on playtest and economic/military opponent behaviour. Do not duplicate completed CC audit.
