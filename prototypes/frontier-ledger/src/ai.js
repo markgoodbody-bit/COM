@@ -89,6 +89,24 @@ function militaryOrder(g,f,diplomat) {
 const MINE_CAP=3;
 // Diplomacy orders that change the game; any other diplomacy result is a waiting day.
 const DIPLOMACY_ACTS=new Set(["DISEMBARK","MOVE","DIPLOMACY","BOARD"]);
+// A mobile hull with passenger capacity counts even when travelling or occupied:
+// temporary unavailability must not trigger ship proliferation.
+function replacementCarrier(g,f) {
+  const own=Object.values(g.fleets).filter(v=>v.faction===f);
+  if(own.some(v=>v.ships.length>0&&v.ships.every(h=>h.speed>0)&&
+      v.ships.reduce((n,h)=>n+h.agentSlots,0)>0))return null;
+  const worlds=Object.values(g.systems);
+  // Own prepaid patrols remain ours under existing engine semantics, even after a capture.
+  if(worlds.some(s=>s.production.some(j=>j.faction===f&&j.type==="patrol")))return null;
+  if(factionData(g,f).treasury<14)return null;
+  const diplomat=chooseDiplomat(g,f),home=factionData(g,f).home;
+  const yards=worlds.filter(s=>s.owner===f&&s.facilities.yard>0&&s.production.length===0)
+    .sort((a,b)=>(b.id===diplomat?.at)-(a.id===diplomat?.at)||
+      (b.id===home)-(a.id===home)||a.id.localeCompare(b.id));
+  if(!yards.length)return null;
+  E.queueBuild(g,f,yards[0].id,"patrol");
+  return {faction:f,order:"BUILD",system:yards[0].id,item:"patrol"};
+}
 function economyOrder(g,f) {
   // Own worlds only: owner, garrison, mines and all queued jobs on those worlds. One queued job per world at a time.
   const home=factionData(g,f).home;
@@ -114,7 +132,7 @@ function orderFaction(g,f) {
   // Production only takes a day that diplomacy would otherwise spend waiting.
   const talk=diplomacyOrder(g,f,a);
   if(DIPLOMACY_ACTS.has(talk.order))return talk;
-  return economyOrder(g,f)||talk;
+  return replacementCarrier(g,f)||economyOrder(g,f)||talk;
 }
 function diplomacyOrder(g,f,a) {
   if(!a)return {faction:f,order:"NO_AGENT"};
