@@ -1,5 +1,8 @@
 # EMERGENCY CAMPFIRE BOOTSTRAP B — FOURTH-TAB RECOVERY, 31 OCT 2026 (~22:16 GMT)
 
+**CAMPFIRE FIVE — newer 1 Nov 2026 ~18:26 GMT:** Workshop #914: Codex native-entry source candidate private `0be65b87` returned 29 focused checks (source only); Build accepted with limits after Campfire static inspection. Native guest custody/protected ARM/independent STOP and actual model job NOT ESTABLISHED. Build assigned Codex one distinct default-OFF STOP/admin source-only control task (#873 c6561997855), posted not START at check. Original-IP game: CC completed PR923 CLI/save check, caught buffered-quit and missing coordinate-chart defects; Build integrated in stacked DRAFT PR926 above PR923→922→919→917. Independent real Node **49/49 PASS** and save-resume smoke, no merge/release/manual playtest. Read #914/#915 and #877 recent owner returns first; do not repeat terminal CC task. Preserve ME/TRACE purpose, Workshop priority, no VM/spend authorization. PULSE only current Campfire chat responsive.
+
+
 **NEWER 1 NOV ~15:52:** Build completed native-entry source comparison, identified dispatch/import/digest/supervisor mismatches (#914 c6560158050), Codex repair is POSTED not START (#873 c6560157787). CC real Node and CLI/save-game review actually STARTED (#877 c6560205075), no terminal yet. Prior 30 real Node tests belong to game PR922; game PR923 pending independent check. No VM model run or new release.
 
 
