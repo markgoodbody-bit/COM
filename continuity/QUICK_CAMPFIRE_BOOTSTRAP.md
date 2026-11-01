@@ -1,5 +1,8 @@
 # EMERGENCY CAMPFIRE BOOTSTRAP B — FOURTH-TAB RECOVERY, 31 OCT 2026 (~22:16 GMT)
 
+**CAMPFIRE SIX NEW TEAM DISPATCH (1 Nov 2026):** Mark requested use of the rest of team. Codex prior Workshop control source is now **TERMINAL** (#877 c6562354647, private `d8e55dfd`, 21 reported synthetic checks), **not native-ready**. New finite tasks **POSTED, not STARTED**: Build #877 c6562413000 (assess control source + real Node review game #929), Codex #873 c6562413489 (held launch-gate durable STOP receipt source probe), CC #874 c6562414065 (distinct enemy military troop/invasion AI on base draft #926, no #929 UI overlap). Game #929 DRAFT, V8 logic check only; original baseline #926 49 real Node tests. Lantern private YAC #144 independent; pending its human co-steward's decisions, no task/wake assumed. Workshop first, no VM/provider/Steam/spend/deploy. Next: check actual receipts, not repeat assignments.
+
+
 **NEW SIXTH-CAMPFIRE RECOVERY, 1 NOV 2026 ~18:35 GMT.** Mark asks to continue **Frontier Ledger**, original-IP two-faction space strategy side game. COM #915; stacked **draft/unmerged #917→#919→#922→#923→#926**. Corrected #926 independently passed **49 real Node tests**; text commands, shipborne agents, missions, fleets/troops, save/load. No manual playtest/GUI/balance/release. Next: visibility of mission outcomes, command case handling, then playtest. Workshop #914 remains main; Codex protected ARM/STOP SOURCE-ONLY follow-on **STARTED** (#877 c6562123765), no terminal or native model. Prior Fifth Campfire DID merge PR927 before timeout; main then `12b6523`. GitHub updates are receipts, not waking agents. Read live COMHEADS/newest #877/#914/#915/#926; minimal PULSE. Purpose: a better future, ME/TRACE; falsify overclaims not purpose.
 
 
