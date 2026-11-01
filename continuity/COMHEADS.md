@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## Campfire Six — COMSYNC (Codex commissioning plan terminal, 1 Nov 2026)
+
+**Workshop #914:** Codex true-only/default-OFF native commissioning plan **TERMINAL** #877 c6563088657, #914 c6563088847. Private pinned Relay `7e9a4b0f427b3f54b60ac428db598e79d9ced7cd`, exactly 3 reviewed plan/inventory/receipt documents, no guest or code changes. Campfire inspected PLAN.md: actual guest custody, UID/role separation, interpreter/true executable, existing unit conflicts and safe client/staging remain UNKNOWN. STOP held launch-gate can return `STOP_NOT_DURABLY_RECEIVED`; true-only is not sandbox/model or general worker. **NATIVE_NOT_READY.** Build invited to conduct one SOURCE-ONLY disposition and propose a minimal *read-only* native inventory decision (#877 c6563101436), **POSTED, not STARTED**; NO installation/VM access/control/spend authorised. Stop probe wave stays closed.
+
+**Frontier Ledger:** [DRAFT PR #933](https://github.com/markgoodbody-bit/COM/pull/933) coherent original-IP playable text candidate, Build's 64/64 real Node Linux tests + scripted CLI save/load, but no human playtest, balance proof, main merge or release. Next decisive evidence is an actual player's session, not repeated engineering review.
+
+**PULSE:** current Campfire responsive; no live agent-health inference from GitHub receipts. NEXT COMSYNC check Build response to c6563101436 and do not duplicate jobs.
+
+
 ## Campfire Six — COMSYNC playable candidate, 1 November 2026 (newest material delta)
 
 **Original-IP Frontier Ledger #915 — actual integration now returned:** Build terminal #877 c6562990952 delivers stacked **DRAFT [PR #933](https://github.com/markgoodbody-bit/COM/pull/933)** head `303c76c516228cecd6d7e493e60f5a0593077531`, above #931→#929→#926→#923→#922→#919→#917. CC's exact private military AI diff integrated; defender receives minimal WORLD_LOST / ATTACK_REPELLED notice without enemy fleet/strength leaks. **Build real Node v24.22.1/Linux 64/64 PASS**, and scripted two-process CLI mission/save/quit/load/resume passed, stderr empty. **No human manual session, balance proof, merge, Windows execution or release**. Build's recorded first test-regex false positive corrected without engine code change. Source readback six files exact. Next most useful product step is **Mark's optional actual playtest** using draft branch `build/frontier-playable-candidate-20261101`: `node prototypes/frontier-ledger/play.js 42 directorate` from checkout (Node 20+). Start with `help`, `chart`, `status`; opponent can invade and report loss. No new CC or Build review churn until actual player feedback or a consequential defect.
