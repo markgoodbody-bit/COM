@@ -234,6 +234,7 @@ function finishBuild(g,s,item) {
 }
 function invade(g,faction,fleetId,systemId,commanderId=null) {
   const f=getFleet(g,fleetId,faction),s=getSite(g,systemId);
+  const defender=s.owner;
   insist(!f.moving && f.at===s.id,"Fleet must be present to invade");
   insist(s.owner!==faction,"Already owned");
   insist(f.troops>0,"No landing force");
@@ -254,6 +255,10 @@ function invade(g,faction,fleetId,systemId,commanderId=null) {
     const enemy=opposite(faction);
     if(s.id===g.factions[enemy].home) g.winner=faction;
   }
+  // Notify the owner at the time of attack, even if ownership has just changed.
+  // This separate audience record carries no attacking fleet or strength data.
+  if(defender!==null)record(g,"defence_notice",{faction:defender,systemId,
+    outcome:success?"WORLD_LOST":"ATTACK_REPELLED"});
   return record(g,"invasion",{faction,fleetId,systemId,assault,defence,success});
 }
 function tick(g,days=1) {
