@@ -27,7 +27,7 @@ function opposite(faction) {
   return faction === "directorate" ? "league" : "directorate";
 }
 function record(g, type, data) {
-  const event = { day: g.day, type, ...data };
+  const event = { ...data, day: g.day, type }; // reserved identity cannot be overwritten by payload
   g.events.push(event);
   return event;
 }
@@ -218,7 +218,7 @@ function queueBuild(g,faction,systemId,type) {
   wallet.treasury-=cost;
   const item={id:g.nextId++,faction,type,remaining:type==="patrol"?4:3};
   s.production.push(item);
-  record(g,"build_start",{faction,systemId,type,cost});
+  record(g,"build_start",{faction,systemId,itemType:type,cost});
   return item.id;
 }
 function finishBuild(g,s,item) {
@@ -230,7 +230,7 @@ function finishBuild(g,s,item) {
       ships:[{id:"hull-"+item.id,speed:4,troops:5,agentSlots:1,power:2}],
       troops:0,agents:[]};
   }
-  record(g,"build_finish",{systemId:s.id,faction:item.faction,type:item.type});
+  record(g,"build_finish",{systemId:s.id,faction:item.faction,itemType:item.type});
 }
 function invade(g,faction,fleetId,systemId,commanderId=null) {
   const f=getFleet(g,fleetId,faction),s=getSite(g,systemId);
