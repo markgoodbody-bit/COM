@@ -33,6 +33,22 @@ function layout(systems, width = 600, height = 520, pad = 60) {
                      (height - 2 * pad) / Math.max(1, Math.max(...ys) - minY));
   return Object.fromEntries(systems.map(s => [s.id, { x: pad + (s.x - minX) * k, y: pad + (s.y - minY) * k }]));
 }
+// Uses only public chart coordinates and the selected friendly fleet's actual speed.
+function travelDays(view, fleet, destination) {
+  const from=find(view.systems,fleet.at),to=find(view.systems,destination);
+  if(fleet.moving||!from||!to||from.id===to.id||!Number.isFinite(fleet.speed)||fleet.speed<=0)return null;
+  return Math.max(1,Math.ceil(Math.hypot(to.x-from.x,to.y-from.y)/fleet.speed));
+}
+function pendingOrders(view) {
+  const orders=[];
+  for(const f of view.fleets)if(f.moving)orders.push({days:f.moving.daysLeft,
+    label:title(f.id)+" → "+title(f.moving.destination),selection:{fleet:f.id}});
+  for(const m of view.missions||[])orders.push({days:m.daysLeft,
+    label:title(m.agentId)+": "+title(m.kind)+" on "+title(m.target),selection:{agent:m.agentId,system:m.target}});
+  for(const s of view.systems)for(const j of s.production||[])orders.push({days:j.daysLeft,
+    label:title(s.id)+": build "+j.type,selection:{system:s.id}});
+  return orders.sort((a,b)=>a.days-b.days).map(o=>({...o,label:o.label+" · "+o.days+" day(s) left · due day "+(view.day+o.days)}));
+}
 function systemName(view, id) {
   return id ? title(id) : "nowhere";
 }
@@ -71,7 +87,7 @@ function actionsFor(view, sel) {
         enabled: !over && fleet.ships > 0,
         reason: over || (fleet.ships > 0 ? "" : "This fleet has no ships"),
         input: { kind: "select", value: preset,
-          options: targets.map(s => ({ value: s.id, label: title(s.id) + " (" + ownerText(s, faction) + ")" })) },
+          options: targets.map(s => ({ value: s.id, label: title(s.id) + " (" + ownerText(s, faction) + ")" + (travelDays(view,fleet,s.id)!==null?" · "+travelDays(view,fleet,s.id)+" day(s)":"") })) },
         argsFor: v => [fleet.id, v], args: [fleet.id, preset] });
       const friendly = here && here.known && here.owner === faction;
       const room = fleet.capacity - fleet.troops;
@@ -350,6 +366,10 @@ function startApp() {
         rows.push(["Garrison", "Not visible to you"]);
       }
       box.append(facts(rows));
+      if(cls === "own") {
+        const jobs=sys.production||[];
+        box.append(el("p","hint",jobs.length?"Production: "+jobs.map(j=>j.type+" · "+j.daysLeft+" day(s) left").join("; "):"No production queued here."));
+      }
       const fleets = view.fleets.filter(f => f.at === sys.id), agents = view.agents.filter(a => a.at === sys.id);
       if (fleets.length || agents.length) {
         const list = el("ul", "units");
@@ -382,6 +402,8 @@ function startApp() {
     if (agent) {
       box.append(el("h3", "", "Agent " + title(agent.id)));
       box.append(el("p", "hint", MISSION_LIMITS));
+      const assignment=(view.missions||[]).find(m=>m.agentId===agent.id);
+      if(assignment)box.append(el("p","hint",title(assignment.kind)+" on "+title(assignment.target)+": "+assignment.daysLeft+" day(s) left, due day "+(view.day+assignment.daysLeft)+". Outcome is not yet known."));
       box.append(facts([
         ["Where", where(view, agent)], ["Status", agent.busy ? "On a mission" : "Ready"],
         ["Skills", "diplomacy " + agent.skills.diplomacy + ", espionage " + agent.skills.espionage + ", command " + agent.skills.command],
@@ -465,8 +487,13 @@ function startApp() {
     }
   }
 
+  function renderOrders() {
+    const box=$("orders"),orders=pendingOrders(view);box.replaceChildren();
+    if(!orders.length)box.append(el("li","hint","No journeys, missions or production currently in progress."));
+    for(const order of orders){const li=el("li");li.append(unitButton(order.label,false,()=>select(order.selection)));box.append(li);}
+  }
   function render() {
-    renderStats(); renderChart(); renderSelection(); renderActions(); renderUnits(); renderEvents();
+    renderOrders(); renderStats(); renderChart(); renderSelection(); renderActions(); renderUnits(); renderEvents();
     for (const id of ["advance-1", "advance-many"]) $(id).disabled = Boolean(view.winner);
   }
 
@@ -509,4 +536,4 @@ function startApp() {
 }
 
 if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", startApp);
-if (typeof module !== "undefined") module.exports = { title, ownerClass, ownerText, layout, actionsFor, newEvents, describe, createApi, COSTS, MISSION_LIMITS };
+if (typeof module !== "undefined") module.exports = { title, ownerClass, ownerText, layout, actionsFor, newEvents, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };
