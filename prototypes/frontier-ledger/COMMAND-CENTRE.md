@@ -1,6 +1,6 @@
 # One consolidated command-centre milestone
 
-Status: IMPLEMENTED / INTERNAL QA PENDING. Do not ask Mark to download another
+Status: INTERNAL MILESTONE ACCEPTED WITH LIMITS. Do not ask Mark to download another
 small patch. Base943 6d459881714b457c7d4ca490bd999b8286d5f72e; own-state UI
 and projection only. Engine, AI, commands, save format and HTTP security unchanged.
 
@@ -55,3 +55,35 @@ concurrently, captured-world production and commander balance retain prior limit
 Current income can change with ownership/facilities. Mission result history does
 not fabricate historical support deltas that old events never stored. Full saves
 still contain hidden simulation state; the ordinary projection does not.
+
+
+## Final internal disposition — 1 November 2026
+
+CC actual browser terminal877c6564720890: Edge156.0.4314.58 on Windows,
+1366x768 and390px, about22:12–22:17Z. Original27PASS/3FAIL; exact frontend
+patch6216B SHA2564064be6362d323a55998134a294a5a639fd9992a35cdeb21addeafa316c1c26f
+corrected download custody warning, known-owner-change notification and post-action
+keyboard focus. Patched fresh-copy journey30PASS; GUI7PASS. Full private return
+43301B SHAab0faddf201020041b6d0c1833e177f082f6f9f7a5cb2c1ada54c97e49f52daa
+acquired and verified by Build. Patch applied unchanged to app.js/gui.test.js.
+Original failures retained, including the earlier browser test's RNG-path mistake.
+
+Build independently ran combined31 focused tests PASS after integration, including
+clientHTTP journeys, own-only disclosure, exact engine action availability and
+lost-world completion qualification. That separate commands.js correction says a
+world is not currently yours and availability is unconfirmed, without implying
+historical ownership or exposing strength. Browser evidence is CC's exact donor
+plus patch; Build's final commands-message amendment was Node/HTTP tested, not a
+fresh browser run. Engine unchanged.
+
+Codex actual terminal877c6564685716: seed7 League campaign through victoryday26,
+eight CLI processes with save/reload, winning save re-save byte identical; full
+report read. Zero new blockers on that path. This is not a statistical balance,
+fairness or human enjoyment result. The lost-world completion cue was adopted.
+
+INTERNAL ACCEPT WITH LIMITS: one coherent candidate may now be presented, without
+requiring Mark to run routine QA. Both finite team tasks closed; no further review
+carousel. Desktop scroll needed for lower panels, small390px star labels, other
+browsers/screenreader/touch/human enjoyment remain open. Recon and captured-production
+mechanics remain limited. No merge/release/VM/provider/spend has occurred.
+The earlier 'QA pending' paragraphs describe the initial handoff, superseded here.
