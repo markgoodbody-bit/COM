@@ -1,10 +1,10 @@
 # Visual game bridge — integration contract
 
 Base: draft PR938, `20dc1d055214d12b08760c73b228091fa7646d20`.
-This source adds the local server and Windows launcher, not the frontend.
-CC owns `gui/index.html`, `gui/style.css`, `gui/app.js`; until those are integrated,
-`play-gui.js` refuses to start rather than presenting an imaginary playable UI.
-The CLI and four existing engine/AI/command/save modules are unchanged.
+The visual frontend is now integrated. See GUI-INTEGRATION.md for exact donor,
+Build corrections, verification and limits. The startup guard still refuses an
+incomplete checkout. Engine/commands have the documented narrow event-identity
+correction; AI, CLI shell and save validation remain unchanged.
 
 ## Frontend contract v1
 
@@ -60,7 +60,7 @@ style attributes). Error messages need visible text and an accessible live regio
 No production jobs are exposed in the initial view; build-start/finish events
 supply current feedback. Frontend may label hints, but cannot infer unknown owners.
 
-## Startup after frontend integration
+## Startup
 
 1. Put the reviewed checkout in a short user-owned folder, not Windows/System32.
    For a fresh clone, `git -c core.longpaths=true clone --depth 1 --branch BRANCH https://github.com/markgoodbody-bit/COM.git FrontierLedger`.
@@ -74,7 +74,7 @@ network, service installation or host account changes. Ordinary local HTTP is no
 a defence against malware already controlling the user account. Other local
 programs can emulate a client; this is a local single-player prototype.
 
-## Actual verification
+## Bridge-only baseline verification (before frontend integration)
 
 1 November 2026, Node v24.22.1 Linux: nine new tests PASS via
 `node --test test/gui-bridge.test.js`.
