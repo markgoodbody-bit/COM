@@ -175,3 +175,21 @@ test("a game saved with production queued replays identically",()=>{
  const a=AI.runCampaign(g,12),b=AI.runCampaign(copy,12);
  assert.deepEqual(b,a);assert.equal(JSON.stringify(copy),JSON.stringify(g));
 });
+test("a captured world with a former-owner job cannot receive a second AI job",()=>{
+ const g=idleGame();
+ g.systems.cinder.facilities.mine=3;
+ E.queueBuild(g,"league","beacon","troops");
+ const inherited=JSON.parse(JSON.stringify(g.systems.beacon.production[0]));
+ g.systems.beacon.owner="directorate";g.systems.beacon.garrison=0;
+ const before=JSON.stringify(g);
+ assert.equal(AI.orderFaction(g,"directorate").order,"MISSION_IN_PROGRESS");
+ assert.equal(JSON.stringify(g),before);
+ assert.deepEqual(g.systems.beacon.production,[inherited]);
+ E.tick(g,3);
+ assert.equal(g.systems.beacon.owner,"directorate");
+ assert.equal(g.systems.beacon.garrison,3);
+ assert.equal(g.systems.beacon.production.length,0);
+ const event=g.events.find(e=>e.type==="build_finish"&&e.systemId==="beacon");
+ assert.equal(event.faction,"league");
+ assert.equal(event.itemType,"troops");
+});
