@@ -56,6 +56,9 @@ function eventView(g,f,start=0) {
  const recent=own.slice(-20).map(e=>{
    if(e.type==="defence_notice")
      return "Day "+e.day+": Invasion @"+e.systemId+" "+e.outcome;
+   if(e.type==="build_start" || e.type==="build_finish")
+     return "Day "+e.day+": "+e.type+" "+e.itemType+" @"+e.systemId+
+       (e.type==="build_start"?" (queued; cost "+e.cost+")":" (completed)");
    const parts=["Day "+e.day+": "+e.type];
    // Results carry a mission ID, not an agent ID. Join only to our own start.
    const missionStart=e.type==="mission_result" && e.id!==undefined
