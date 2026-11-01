@@ -1,3 +1,7 @@
+## Play visually
+
+The mouse-driven candidate is launched with `play-gui.cmd` in this folder (Node20+ already installed). Open the local address it displays; use the star chart and buttons, not typed commands. See [GUI-BRIDGE.md](GUI-BRIDGE.md) for safe setup and [GUI-INTEGRATION.md](GUI-INTEGRATION.md) for actual checks and limits. The CLI below remains a team engineering harness.
+
 # Frontier Ledger — headless prototype (original IP, v0.1)
 
 A **small, independent** space grand-strategy vertical slice inspired by broad genre mechanics. It does **not** copy or load any existing commercial game's data, code, artwork, characters, locations, probabilities or setting.
@@ -19,7 +23,7 @@ No provider, external service, credentials, network or model calls. A game day i
 - Ships carry character tokens physically. Movement time depends on distance and slowest ship speed. Boarding/disembarking requires colocated units. A fleet needs at least one ship, each with a positive speed, to move.
 - Troops embark from a friendly garrison onto a docked fleet, up to the total `troops` capacity of its ships, and disembark back into a friendly garrison. A refused transfer changes nothing; landing on a neutral or hostile world is an invasion.
 - Agents have diplomacy, espionage and command stats; one mentor per faction can reveal its own candidates' hidden power.
-- Missions take days and roll against explicit **original** probabilities; diplomacy moves support, recon reveals information, sabotage destroys a mine.
+- Missions take days and roll against explicit **original** probabilities; diplomacy moves support, recon adds the target to the known chart (normally already revealed by arrival; no enemy strength or facilities are revealed), sabotage destroys a mine.
 - Facilities earn currency and finish timed production. A finite landing force can seize a world, but seized systems retain low popularity. Enemy headquarters capture is victory.
 - Views hide unknown systems and unawakened agent potential. The opponent policy uses public chart coordinates, but does not inspect unknown system ownership.
 - The deterministic opponent transports diplomats, conducts missions, reloads troops at friendly docks while retaining a four-troop reserve, and invades known hostile worlds. Military targeting uses known ownership and public coordinates, not hidden enemy strength. It does not build new forces.
