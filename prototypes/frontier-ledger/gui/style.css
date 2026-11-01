@@ -1,0 +1,150 @@
+/* Frontier Ledger visual client. Plain CSS, no external fonts or images. */
+:root {
+  --bg: #0b1020;
+  --panel: #141b2f;
+  --line: #2a3450;
+  --text: #e8ecf4;
+  --muted: #aab3c5;
+  --own: #4cc3ff;
+  --enemy: #ff8a65;
+  --neutral: #c3cad6;
+  --unknown: #8a93a6;
+  --fleet: #ffd166;
+  --accent: #2563eb;
+  --bad: #ff9b9b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.4 system-ui, "Segoe UI", sans-serif;
+}
+h1 { font-size: 1.3rem; margin: 0; }
+h2 { font-size: 1rem; margin: 1rem 0 0.4rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+h3 { font-size: 1rem; margin: 0.6rem 0 0.3rem; }
+button, input, select { font: inherit; }
+button {
+  background: #24304d;
+  color: var(--text);
+  border: 1px solid #3b4a70;
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+button:hover:not(:disabled) { border-color: var(--own); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button:disabled { background: #1a2032; color: #8f98ab; border-color: #2a3450; cursor: not-allowed; }
+:focus-visible { outline: 3px solid var(--fleet); outline-offset: 2px; }
+input, select {
+  background: #0f1528;
+  color: var(--text);
+  border: 1px solid #3b4a70;
+  border-radius: 6px;
+  padding: 0.25rem 0.4rem;
+}
+input[type="number"] { width: 5.5rem; }
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.5rem;
+  padding: 0.7rem 1rem;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+.stats { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; margin: 0; }
+.stats div { display: flex; gap: 0.35rem; }
+.stats dt { color: var(--muted); }
+.stats dd { margin: 0; font-weight: 600; }
+.stats .winner dd { color: var(--fleet); }
+.time { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
+.days { color: var(--muted); }
+
+.notices { padding: 0 1rem; min-height: 1.6rem; }
+.message, .error { margin: 0.4rem 0 0; white-space: pre-line; }
+.message:empty, .error:empty { display: none; }
+.error { color: var(--bad); font-weight: 600; }
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  gap: 1rem;
+  padding: 0 1rem 1rem;
+}
+.chart-area, .panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.2rem 1rem 1rem;
+  min-width: 0;
+}
+/* The whole map fits the window on a laptop screen; the drawing keeps its proportions and centres. */
+#chart { width: 100%; height: auto; max-height: calc(100vh - 230px); min-height: 320px; display: block; background: #070b17; border-radius: 8px; }
+
+.star { cursor: pointer; }
+.star .body { stroke-width: 2; }
+.star.own .body { fill: var(--own); stroke: var(--own); }
+.star.enemy .body { fill: var(--enemy); stroke: var(--enemy); }
+.star.neutral .body { fill: var(--neutral); stroke: var(--neutral); }
+.star.unknown .body { fill: #070b17; stroke: var(--unknown); stroke-dasharray: 4 3; }
+.star .halo { fill: none; stroke: transparent; stroke-width: 3; }
+.star:hover .halo { stroke: #3b4a70; }
+.star.selected .halo { stroke: var(--fleet); }
+.star.destination .halo { stroke: var(--own); stroke-dasharray: 5 4; }
+.star:focus { outline: none; }
+.star:focus-visible .halo { stroke: var(--fleet); stroke-width: 4; }
+.star .name { fill: var(--text); font-size: 16px; font-weight: 600; text-anchor: middle; }
+.star .owner { fill: var(--muted); font-size: 13px; text-anchor: middle; }
+.star.enemy .owner { fill: var(--enemy); }
+.star.own .owner { fill: var(--own); }
+.fleet-mark { fill: var(--fleet); stroke: #070b17; stroke-width: 1.5; }
+.fleet-label { fill: var(--fleet); font-size: 12px; }
+.transit { fill: none; stroke: var(--fleet); stroke-width: 1.5; stroke-dasharray: 3 4; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; list-style: none; padding: 0; margin: 0.6rem 0 0; color: var(--muted); font-size: 0.9rem; }
+.legend li { display: flex; align-items: center; gap: 0.35rem; }
+.key { display: inline-block; width: 0.9rem; height: 0.9rem; border-radius: 50%; border: 2px solid; }
+.key.own { background: var(--own); border-color: var(--own); }
+.key.enemy { background: var(--enemy); border-color: var(--enemy); }
+.key.neutral { background: var(--neutral); border-color: var(--neutral); }
+.key.unknown { background: transparent; border-color: var(--unknown); border-style: dashed; }
+.key.fleet { background: var(--fleet); border-color: var(--fleet); border-radius: 2px; transform: rotate(45deg); width: 0.7rem; height: 0.7rem; }
+
+.facts { margin: 0.3rem 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.15rem 0.8rem; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; }
+.hint { color: var(--muted); margin: 0.3rem 0; }
+
+.actions .group { margin-bottom: 0.6rem; }
+.actions .row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0.3rem 0; }
+.reason { color: var(--muted); font-size: 0.9rem; }
+
+.units { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.3rem; }
+.units button { width: 100%; text-align: left; }
+.units button.selected { border-color: var(--fleet); }
+
+.events { margin: 0; padding-left: 1.4rem; max-height: 14rem; overflow-y: auto; }
+.events li { margin: 0.15rem 0; }
+.events .loss { color: var(--bad); font-weight: 600; }
+.events .held { color: var(--own); font-weight: 600; }
+
+.campaign {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin: 0 1rem 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.campaign h2 { margin: 0; }
+.file input { max-width: 15rem; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .time { margin-left: 0; }
+}
