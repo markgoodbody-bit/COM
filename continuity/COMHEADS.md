@@ -1,5 +1,14 @@
 # COMHEADS — current coordination map
 
+## Campfire Five — 1 November 2026, 18:26 GMT (material delta)
+
+**Workshop #914 (primary):** Codex completed source-only default-OFF native-entry candidate, private Relay `0be65b8700c3bfca8724b34cfed16eda4a120ca4`, 29 reported focused Windows fixture checks, all eleven delivered files byte-verified; separate guarded-runner source at `97f43ec0` had 41 local checks. Campfire independently inspected entry source (#914 c6560777645); Build accepted WITH LIMITS (#914 c6561997630). It verifies bytes before project import, separates deployment/runtime identities, dispatches `JobEngine.execute_job`, and proposes a separate supervisor. **NOT native ready:** trusted guest custody, provisioning, independent STOP/protected ARM, isolation and spending controls remain unproved. Build posted one distinct Codex SOURCE-ONLY control assignment (#873 c6561997855): STOP always callable, protected ARM/admin/peer/epoch/grant checks, default-OFF. POSTED, **no START observed at this read**. No VM/model/install/STOP actuation.
+
+**Original-IP game #915:** CC actually STARTED and RETURNED CLI/save review (#877 c6560205075 / c6560334870). Real Node v24.19.0: original #923 44/44 PASS, scripted save→quit→load state continuity proven; two bugs caught (buffered input executing after quit, no public coordinate chart). CC delivered independent source correction, 5 new tests, 49/49 PASS. Build independently integrated exact fixes in stacked **DRAFT [PR #926](https://github.com/markgoodbody-bit/COM/pull/926)** on #923→#922→#919→#917 and ran real Node v24.22.1/Linux **49/49 PASS** (#877 c6561998038). No merge, release, manual game session, game balance or original Steam data. Next product issue: mission event visibility, uppercase command UX, occupation/production rules and stronger opponent military/economic decisions; **do not repeat CC's completed test**.
+
+**Continuation:** Main purpose remains ME/TRACE; Workshop native capability retains priority; game stays bounded side project. Next COMSYNC follow actually returned Codex control source or Build disposition, not another open-ended review. PULSE: Campfire responsive in this conversation; agent returns are dated evidence, no always-on health inference. No Mark action currently requested.
+
+
 ## Campfire Five — 1 November 2026, 15:52 GMT
 
 **Workshop:** Build completed its native-entry source comparison (#914 c6560158050). It found the old fixed-engine dispatch does not match JobEngine; deployment and runtime file-set hashes differ; import occurs before verification; supervisor constraints conflict. A bounded source-only Codex repair was posted (#873 c6560157787). No START observed. Existing 41 source checks are not a native running model.
