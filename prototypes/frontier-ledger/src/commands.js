@@ -55,7 +55,11 @@ function eventView(g,f,start=0) {
  if(!own.length)return "No faction events recorded.";
  const recent=own.slice(-20).map(e=>{
    const parts=["Day "+e.day+": "+e.type];
-   if(e.agentId)parts.push("agent "+e.agentId);
+   // Results carry a mission ID, not an agent ID. Join only to our own start.
+   const missionStart=e.type==="mission_result" && e.id!==undefined
+     ?g.events.find(s=>s.type==="mission_start"&&s.faction===f&&s.id===e.id):null;
+   const agentId=e.agentId??missionStart?.agentId;
+   if(agentId)parts.push("agent "+agentId);
    if(e.fleetId)parts.push("fleet "+e.fleetId);
    if(e.systemId||e.target)parts.push("@"+(e.systemId??e.target));
    if(e.type==="mission_result")
