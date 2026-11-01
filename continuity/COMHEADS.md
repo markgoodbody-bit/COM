@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-Basis: COM 8ddec526e6e82d345d42f2dfe3b72617bceb7b18; owner receipts checked through 1 November 2026, 20:23:58 UTC. This is a dated routing map, not live telemetry. New addressed receipts supersede it.
+Basis: COM 8ddec526e6e82d345d42f2dfe3b72617bceb7b18; owner receipts checked through Codex terminal #877 c6563478082 (1 November 2026). This is a dated routing map, not live telemetry. New addressed receipts supersede it.
 
 ## Purpose and role
 
@@ -12,11 +12,11 @@ Mark is human originator and consequential authority. Campfire integrates; Build
 
 | Lane | Observed record | Owner and next action |
 |---|---|---|
-| Workshop #914, primary | [Codex plan terminal](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6563088657), [Build acceptance](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6563108592). PLAN_COMPLETE / NATIVE_NOT_READY. | Codex [read-only custody assignment](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6563123868) [ACTUAL START](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6563339179): reviewing established host route; no guest connection yet. Terminal/native observations NOT_OBSERVED; VM health UNKNOWN. Check return; do not redispatch. |
+| Workshop #914, primary | Codex [read-only custody TERMINAL](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6563478082): ONE existing-route SSH metadata read; confirmed Framework-Lab guest identity and exact proposed job namespaces absent. Python/true binaries observed. ACLs and five effective unit states remain UNKNOWN. **NATIVE_NOT_READY**. | No further guest read commissioned. Build may propose one bounded OFF-only staging/client **source design** against accepted pins, then separate human native decisions. No provisioning, activation or new STOP probing. |
 | Frontier Ledger #915, secondary | Original-IP playable text candidate [draft PR933](https://github.com/markgoodbody-bit/COM/pull/933), head303c76c516228cecd6d7e493e60f5a0593077531; [Build terminal](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6562990952). 64/64 real Node tests and scripted save/resume. | Await human play; no manual-play, balance, merge or release acceptance. No more unchanged simulation loops. |
-| Lean continuity | [Campfire commission](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6563212298). | Build owns one reversible draft and desk check. This candidate needs review; not merged by its own existence. |
+| Lean continuity | Build [TERMINAL](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6563331983); [draft PR937](https://github.com/markgoodbody-bit/COM/pull/937) revised, author-run static desk check and measured 93% initial word reduction (not model-context telemetry). | Campfire reviews fresh Codex terminal, adjusts this handoff and handles ordinary reviewed integration; keep history pinned, not prepended. |
 
-Workshop inspection uses only an existing authorised native route, exact named metadata and one bounded attempt. If unavailable, BLOCKED once; no alternate ingress. No DB contents, secrets, imports, service/config changes, installation, ARM/STOP/job/model/spend. Held launch-gate STOP may be NOT_DURABLY_RECEIVED; no cancellation claim. Actual guest custody/IDs and current service health UNKNOWN. Closed source/probe tests stay closed.
+Workshop inspection was completed using ONE existing authorised metadata-only native route, with no retries or guest changes. The proposed new paths, accounts and groups were absent at the observed time; this is not a general system inventory. ACLs, several effective unit properties, installed source custody and current service health remain UNKNOWN. No DB contents, secrets, imports, service/config changes, installation, ARM/STOP/job/model/spend. Held launch-gate STOP may be NOT_DURABLY_RECEIVED; no cancellation claim. Closed source/probe tests stay closed.
 
 ## Read and act
 
