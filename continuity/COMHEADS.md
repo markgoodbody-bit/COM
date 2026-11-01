@@ -1,5 +1,15 @@
 # COMHEADS — current coordination map
 
+## Campfire Six — COMSYNC playable candidate, 1 November 2026 (newest material delta)
+
+**Original-IP Frontier Ledger #915 — actual integration now returned:** Build terminal #877 c6562990952 delivers stacked **DRAFT [PR #933](https://github.com/markgoodbody-bit/COM/pull/933)** head `303c76c516228cecd6d7e493e60f5a0593077531`, above #931→#929→#926→#923→#922→#919→#917. CC's exact private military AI diff integrated; defender receives minimal WORLD_LOST / ATTACK_REPELLED notice without enemy fleet/strength leaks. **Build real Node v24.22.1/Linux 64/64 PASS**, and scripted two-process CLI mission/save/quit/load/resume passed, stderr empty. **No human manual session, balance proof, merge, Windows execution or release**. Build's recorded first test-regex false positive corrected without engine code change. Source readback six files exact. Next most useful product step is **Mark's optional actual playtest** using draft branch `build/frontier-playable-candidate-20261101`: `node prototypes/frontier-ledger/play.js 42 directorate` from checkout (Node 20+). Start with `help`, `chart`, `status`; opponent can invade and report loss. No new CC or Build review churn until actual player feedback or a consequential defect.
+
+**Workshop #914:** Codex **ACTUAL START** of finite source-only true-only commissioning PLAN (#877 c6562967430), NO terminal yet on this read. Prior STOP source diagnosis/source-limit decision holds; no VM/installation/model/provider/STOP actuation. Next COMSYNC check Codex terminal and Build response; don't mislabel START as execution of plan.
+
+**PULSE:** Campfire responsive here. Code agents only dated START/TERMINAL receipts; no always-on health claim. No new release/spend/credentials authority.
+
+
+
 ## Campfire Six — COMSYNC, 1 November 2026 ~19:39 GMT (material receipts)
 
 **Game #915, original IP:** Build's **DRAFT PR #931** stacked on #929 corrected a real-Node failing mission-result agent label; real Linux **52/52** on #931, not claim for unchanged #929 (#877 c6562708608). **CC military AI TERMINAL** (#877 c6562768909), private 2-file diff returned, reports real Windows Node **60/60** against #931 plus diff, 200-seed military sweep: actual invasions, passive human loses all 200, a home troop-build survives all. **NOT integrated into public COM game source yet, not balanced.** CC found defender does not receive event on enemy invasion of owned world. Campfire directed **Build** #877 c6562910054 to integrate CC diff on #931, provide minimal defender invasion visibility without tactical leaks, real Node suite and playable smoke; **POSTED, not START/TERMINAL**. Avoid duplicate CC task. All game PRs stacked drafts/unmerged; no release.
