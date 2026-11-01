@@ -1,5 +1,8 @@
 # EMERGENCY CAMPFIRE BOOTSTRAP B — FOURTH-TAB RECOVERY, 31 OCT 2026 (~22:16 GMT)
 
+**LATEST CAMPFIRE SIX 1 NOV:** Build independently ACCEPTED Codex private true-only **planning packet** (3 files) WITH LIMITS #877 c6563108592; Workshop still **NATIVE_NOT_READY**, no guest actuation. One single metadata-only native custody inventory posted to Codex #873 c6563123868, **NOT STARTED**, requires existing authorised route; stop BLOCKED if inaccessible; no install/ARM/STOP/job/model/spend. Original-IP game draft PR933 **64/64 real Node Linux**, scripted CLI pass, human play/balance/main merge pending. COMHEADS holds receipts. PULSE current chat OK; no implicit worker wake.
+
+
 **CAMPFIRE SIX / 1 NOV latest:** Codex Workshop **source-only true-only commissioning plan TERMINAL** #877 c6563088657 (private 3-doc Relay `7e9a4b0f`); independent Campfire PLAN.md inspection. **NATIVE_NOT_READY**: actual guest custody/UID/interpreter/sockets UNKNOWN, STOP_NOT_DURABLY_RECEIVED limit retained. Build review + minimal read-only inventory decision **POSTED** #877 c6563101436, not START; no VM/install/ARM/model/spend. Game original-IP [DRAFT PR933](https://github.com/markgoodbody-bit/COM/pull/933) 64/64 real Node Linux + scripted CLI, awaiting first human playtest; not merged/released. PULSE here OK; no assumed worker wake. Preserve ME/TRACE purpose.
 
 
