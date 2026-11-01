@@ -169,6 +169,19 @@ function newEvents(before, after) {
   return i < 0 ? after.slice() : after.slice(i + 1);
 }
 
+// Known worlds whose owner changed between two views of the same campaign. It compares only owners the
+// player could already see, so it says that a world changed hands, never who did it or how.
+function ownershipChanges(before, after) {
+  const out = [];
+  for (const s of after.systems) {
+    const was = find(before.systems, s.id);
+    if (!was || !was.known || !s.known || was.owner === s.owner) continue;
+    out.push(title(s.id) + " changed hands: " + ownerText(was, before.faction).toLowerCase() + " → " +
+      ownerText(s, after.faction).toLowerCase() + ".");
+  }
+  return out;
+}
+
 // What changed, in words, for the message line after an accepted action.
 function describe(verb, args, view) {
   const t = args.map(title);
@@ -257,22 +270,46 @@ function startApp() {
       } else fail(err);
     } finally { busy = false; document.body.classList.remove("waiting"); }
   }
+  // Rendering rebuilds the panels, which drops keyboard focus to the page. Remember the focused button by
+  // its list and label, and put focus back on the same button, or the first available action.
+  const FOCUS_LISTS = "#actions, #selection, #fleet-list, #agent-list, #worlds, #orders, #mission-history";
+  function focusKey() {
+    const a = document.activeElement;
+    const box = a && a.tagName === "BUTTON" ? a.closest(FOCUS_LISTS) : null;
+    return box ? { box: box.id, text: a.textContent } : null;
+  }
+  function restoreFocus(k) {
+    if (!k) return;
+    const enabled = id => Array.from($(id).querySelectorAll("button")).filter(b => !b.disabled);
+    // With no button left (an agent now on a mission), the Actions panel itself keeps the player's place.
+    const next = enabled(k.box).find(b => b.textContent === k.text) ||
+      (k.box === "actions" ? enabled("actions")[0] || $("actions") : null);
+    if (next) next.focus();
+  }
+  $("actions").setAttribute("tabindex", "-1");
+
   async function act(verb, args) {
+    const focus = focusKey();
     await run(async () => {
       const r = await api.action(verb, args);
-      const before = view.events;
+      const before = view;
       view = r.view; unsaved = true;
       if (sel.fleet && !find(view.fleets, sel.fleet)) sel.fleet = null;
       render();
+      restoreFocus(focus);
       // After days pass, show what happened right away; the full list stays below the chart.
-      const fresh = verb === "tick" ? newEvents(before, view.events) : [];
-      say([describe(verb, args, view)].concat(fresh.slice(-4), fresh.length > 4 ? ["(" + (fresh.length - 4) + " more below the chart)"] : []).join("\n"));
+      // A known world that changed hands is named too: no event reaches a player who did not own it.
+      const fresh = verb === "tick" ? newEvents(before.events, view.events) : [];
+      say([describe(verb, args, view)].concat(ownershipChanges(before, view), fresh.slice(-4),
+        fresh.length > 4 ? ["(" + (fresh.length - 4) + " more below the chart)"] : []).join("\n"));
     });
   }
 
   function select(next) {
+    const focus = focusKey();
     sel = { system: null, fleet: null, agent: null, ...next };
     render();
+    restoreFocus(focus);
   }
 
   function renderStats() {
@@ -539,7 +576,8 @@ function startApp() {
     a.href = url; a.download = r.filename;
     document.body.append(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 10000);
-    unsaved = false;
+    // The browser may block or fail the download and the page cannot tell, so play stays unsaved:
+    // New and Load keep asking before they replace it.
     say("Download requested: " + r.filename + ". Check your browser downloads before closing; the game cannot confirm the file was saved.");
   }));
   $("load-game").addEventListener("change", e => run(async () => {
@@ -557,4 +595,4 @@ function startApp() {
 }
 
 if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", startApp);
-if (typeof module !== "undefined") module.exports = { title, ownerClass, ownerText, layout, actionsFor, newEvents, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };
+if (typeof module !== "undefined") module.exports = { title, ownerClass, ownerText, layout, actionsFor, newEvents, ownershipChanges, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };
