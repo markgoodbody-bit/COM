@@ -50,3 +50,16 @@ test("save, quit and load in a new process continue byte-identically",(t)=>{
  const resumed=fs.readFileSync(path.join(dir,"resumed.json"));
  assert.deepEqual(resumed,fs.readFileSync(path.join(dir,"straight.json")));
 });
+
+test("uppercase SAVE/LOAD/QUIT work, and buffered commands after QUIT do not run",(t)=>{
+ const dir=tempDir(t);
+ const first=shell(dir,"SAVE UpperCase.json\nQUIT\nsave late.json\ntick 5\n");
+ assert.equal(first.status,0);
+ assert.equal(first.stderr,"");
+ assert.equal(fs.existsSync(path.join(dir,"UpperCase.json")),true);
+ assert.equal(fs.existsSync(path.join(dir,"late.json")),false);
+ assert.doesNotMatch(first.stdout,/Advanced/);
+ const second=shell(dir,"LOAD UpperCase.json\nstatus\nQUIT\n");
+ assert.equal(second.status,0);
+ assert.match(second.stdout,/Loaded directorate campaign at day 0/);
+});
