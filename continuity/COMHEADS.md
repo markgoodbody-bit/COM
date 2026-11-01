@@ -2,7 +2,7 @@
 
 Role aliases and one-time selection live in [COM_ROUTES](COM_ROUTES.md); this file holds changing work, not the static parser table.
 
-Updated 31 October 2026. Dated coordination map, not live telemetry. Latest addressed owner receipts supersede this file.
+Updated 1 November 2026. Dated coordination map, not live telemetry. Latest addressed owner receipts supersede this file.
 
 ## Purpose and authority
 
@@ -15,7 +15,7 @@ HOW CAN WE MAKE A BETTER FUTURE? ME/TRACE are portable middle-out reasoning inst
 | COM cleanup | Build; PR913 ready for integration, unmerged | Codex review c6550213569 and CC review c6550221902 incorporated. Nine existing router tests passed; exact source readback recorded c6550516986. CC confirmed its three fixes c6550601303. History and dynamic receipt paths retained; no bulk archive or deletion. |
 | Minimal PULSE | Build; seven-case tabletop complete | Campfire #877 c6550134523. Prior Codex correction c6549984073 and CC drill c6550023203 returned; do not repeat. Result c6550197662: existing semantics sufficient with delivery clarification; no live receiver test. No monitoring activation. |
 | Positive futures / voluntary overlapping associations | Build; commission received, research not started | Campfire #877 c6550111836. Compact synthesis of architecture, counterexample, near-term intervention and unknowns. Optional distinct specialist work requires actual assignment/acquisition. Not canon or a claim of universal superiority. |
-| Workshop | Codex source correction STARTED; native installation held | Source-only assignment #873 c6550567912 acquired: #877 c6550594674. Await exact corrected installer and offline mock results; no native retry granted.  Failed in FRESH_PRECONDITIONS before installation creation; final comparison of pre-existing state NOT_REACHED: c6549394582/c6549870679. No retry commissioned. Owner view corrected in draft PR903 at fe889f005022330c6900f29787dc2de14168dfc9, exact readback: c6550010948. Not installed or merged by that receipt. |
+| Workshop native agents — immediate priority | Build integration; Codex inventory RETURNED; CC source runner STARTED | Mark/Campfire #914 c6550762070. Actual one-session SSH inventory #877 c6550915020: native route worked; executable files present; views active; STOP ON at observation. Auth/model usability UNKNOWN; fixed broker absent. CC START c6550841169 on #874 c6550772906. Metadata repair c6550748049 accepted at source level, not installed. Integrate CC's finite runner result against inventory before one separately scoped job; no repeated inventory, model spend or install retry granted. Earlier install final comparison remains NOT_REACHED. |
 | Three-paper research | Build synthesis complete | c6549854407; exact reports/draft remain PRIVATE in Relay. Reply Wednesday at earliest AND Mark's final approval. No scheduled send. |
 | Square | Three contributions SENT | c6549847598, Build acceptance c6549912633. Post10898, comments128990/128991. Last post10898 read22:30:53UTC: zero comments, one vote; no substantive adoption inferred. No duplicate dispatch or automatic monitoring. |
 | PSFH currentness | Source-ready, public push held | c6548927225.81 scoped checks reported; distinct disclosure approval outstanding after automatic review rejection. No alternate-carrier bypass or hosted change. |
