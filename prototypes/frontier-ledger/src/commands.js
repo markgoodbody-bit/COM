@@ -2,7 +2,7 @@
 // Frontier Ledger: original headless campaign commands. No filesystem or provider access.
 const E=require("./engine.js"), AI=require("./ai.js");
 const HELP=[
- "status | map | agents | fleets | help",
+ "status | map | chart | agents | fleets | help",
  "board AGENT FLEET | leave AGENT | move FLEET SYSTEM",
  "mission AGENT diplomacy|recon|sabotage SYSTEM",
  "loadtroops FLEET COUNT | unloadtroops FLEET COUNT",
@@ -32,6 +32,11 @@ function mapView(g,f) {
   " | facilities "+(s.facilities?JSON.stringify(s.facilities):"?")).join("\n")||
   "No known systems";
 }
+// The public chart the opponent policy already reads: ids and coordinates only.
+// Without it the shell names only known systems, and exploring needs a name to move to.
+function chartView(g) {
+ return Object.values(g.systems).map(s=>s.id+" ("+s.x+","+s.y+")").join("\n");
+}
 function agentsView(g,f) {
  return E.view(g,f).agents.map(a=>a.id+" "+(a.fleet?"aboard "+a.fleet:(a.at??"unknown"))+
   (a.busy?" [mission]":"")+" | "+JSON.stringify(a.skills)+
@@ -56,6 +61,7 @@ function execute(g,f,line) {
  case "":case "help":exact(0);return HELP;
  case "status":exact(0);return formatView(g,f);
  case "map":exact(0);return mapView(g,f);
+ case "chart":exact(0);return chartView(g);
  case "agents":exact(0);return agentsView(g,f);
  case "fleets":exact(0);return fleetsView(g,f);
  case "board":exact(2);result=E.boardAgent(g,f,args[0],args[1]);break;
