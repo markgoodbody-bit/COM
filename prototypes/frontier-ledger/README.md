@@ -47,6 +47,8 @@ This is a **human-command interface, not a GUI or balanced playable release**. R
 
     node prototypes/frontier-ledger/play.js 42 directorate
 
+On Windows, `play.cmd` in this folder starts the same shell after checking for Node.js 20 or later; [PLAYING-ON-WINDOWS.md](PLAYING-ON-WINDOWS.md) is a one-page guide with a short report template for a first play.
+
 Type `help` for commands. `chart` lists every system's id and public coordinates, the chart the opponent policy already reads, and nothing else; `map` covers known systems only. A useful first sequence is `status`, `map`, `agents`, `fleets`, `board ves iron`, `move iron meridian`, `tick 2`, `leave ves`, `mission ves diplomacy meridian`, `tick 2`. One `tick` advances a game-day and gives the **other faction** one deterministic AI decision; the human has no automatic AI moves. The shell allows multiple instantaneous orders between days (intentional alpha simplification). `loadtroops iron 4` embarks troops only from a friendly dock; `invade iron meridian` lands troops on arrival.
 
 `save campaign.json` writes a local state file using a same-directory temporary file and rename. `load campaign.json` verifies format/version/checksum and state consistency **before replacing the current game**. Saves contain the complete simulation, including the opposing faction's hidden data, and are **not secure against player inspection or deliberate modification**. The checksum catches ordinary accidental corruption but is not authentication. Local path permissions, backup and crash-durability are the operator's responsibility. There is no cloud or Steam access.
