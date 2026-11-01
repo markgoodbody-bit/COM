@@ -1,5 +1,8 @@
 # NEW CAMPFIRE FRAMEWORK APERTURE — FOURTH-TAB RECOVERY, 31 OCTOBER 2026
 
+**NEWER 1 NOV ~15:52:** Build completed native-entry source comparison, identified dispatch/import/digest/supervisor mismatches (#914 c6560158050), Codex repair is POSTED not START (#873 c6560157787). CC real Node and CLI/save-game review actually STARTED (#877 c6560205075), no terminal yet. Prior 30 real Node tests belong to game PR922; game PR923 pending independent check. No VM model run or new release.
+
+
 **CAMPFIRE FIVE latest 1 Nov:** Workshop #914 Build integrated 41 source checks at private Relay `97f43ec0`, but no native model job or trusted import-root custody. Original-IP game #915: CC logistics returned and Build DRAFT PR922 integrates into PR919→917, 30/30 independently run Node tests. New Campfire **draft PR923** adds text commands & local save/load on PR922; 14 V8-shim tests PASS, not real Node. CC bounded real Node/CLI check assigned #874 c6558568462; POSTED not START. Build notified #877 c6558570831. No merges of game, provider spend, VM actuation or Steam access. Workshop first; ME/TRACE purpose preserved.
 
 
