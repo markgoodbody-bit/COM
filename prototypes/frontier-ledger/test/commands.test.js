@@ -91,3 +91,25 @@ test("advancing 31 days is rejected before any change",()=>{
  assert.throws(()=>C.execute(g,"directorate","tick 31"),/1..30/);
  assert.equal(JSON.stringify(g),before);
 });
+
+test("only own mission outcomes are displayed after a day tick",()=>{
+ const g=E.createGame(9);
+ g.events.push({day:0,type:"mission_result",faction:"league",target:"beacon",
+   success:true,chance:90,roll:1});
+ assert.doesNotMatch(C.execute(g,"directorate","events"),/beacon|roll 1/);
+ C.execute(g,"directorate","mission orrin recon cinder");
+ const advanced=C.execute(g,"directorate","tick 1");
+ assert.match(advanced,/mission_result.*agent orrin.*@cinder.*(SUCCESS|FAILED).*chance/);
+ const log=C.execute(g,"directorate","events");
+ assert.match(log,/mission_result.*@cinder/);
+ assert.doesNotMatch(log,/beacon/);
+});
+test("the event log stays bounded and reads never change state",()=>{
+ const g=E.createGame(),before=JSON.stringify(g);
+ assert.match(C.execute(g,"directorate","events"),/No faction events/);
+ assert.equal(JSON.stringify(g),before);
+ for(let i=0;i<22;i++)g.events.push({day:i,type:"board",faction:"directorate",agentId:"ves"});
+ const log=C.execute(g,"directorate","events");
+ assert.match(log,/2 earlier faction events omitted/);
+ assert.doesNotMatch(log,/Day 0:/);
+});
