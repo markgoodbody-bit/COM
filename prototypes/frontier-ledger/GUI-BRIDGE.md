@@ -37,10 +37,16 @@ user's choice; the server does not write campaign files.
 - systems array. Public id/x/y and known boolean for every star. Unknown entries
   omit ownership/garrison/facilities. Known neutral owner is null. Known enemy
   garrison/facilities remain null under E.view's visibility rules.
-- agents: own E.view entries, id/at/fleet/busy/skills/power. Unrevealed power is null.
+- agents: own E.view entries, id/at/fleet/busy/skills/power plus actual mentor flag. Unrevealed power is null.
 - fleets: own id/at/moving/ships (count)/troops/capacity/agentSlots/agents (ids).
   moving is null or `{destination,daysLeft}`.
 - events: array of the existing faction-filtered formatted event lines (last20).
+- dailyIncome: current own mine income sum. Known systems expose ownSupport only,
+  never the other faction's support; own worlds additionally dailyIncome/production.
+- missions: own id/agentId/kind/target/daysLeft. missionHistory: last40 own results,
+  with day/id/agentId/kind/target/success/chance/roll. Missing own start means null
+  agentId; never join an opponent start. Own fleets also expose actual minimum speed.
+These additive fields are implemented in COMMAND-CENTRE.md's candidate.
 
 Actions retain existing verb/argument order without exposing a command field:
 board(agent,fleet), leave(agent), move(fleet,system),
@@ -57,8 +63,7 @@ Render imported values with textContent, never innerHTML. Static routes are only
 /, /style.css, /app.js. External scripts, fonts, CDNs and remote connections are
 blocked by CSP. Use external CSS/JS (no inline script/event handlers or inline
 style attributes). Error messages need visible text and an accessible live region.
-No production jobs are exposed in the initial view; build-start/finish events
-supply current feedback. Frontend may label hints, but cannot infer unknown owners.
+Own production jobs and current mission clocks are exposed in the command-centre candidate; build-start/finish events distinguish queue from completion. Frontend may label hints, but cannot infer unknown owners.
 
 ## Startup
 
