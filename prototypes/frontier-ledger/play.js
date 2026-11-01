@@ -46,10 +46,15 @@ rl.on("line",(line)=>{
  // readline still delivers lines it buffered before close(); a closed shell runs none of them.
  if(closed)return;
  const raw=line.trim();
- if(raw==="quit"||raw==="exit"){rl.close();return}
+ if(raw.toLowerCase()==="quit"||raw.toLowerCase()==="exit"){rl.close();return}
  try{
-   if(raw.startsWith("save ")){console.log(writeSave(raw.slice(5).trim()))}
-   else if(raw.startsWith("load ")){console.log(readSave(raw.slice(5).trim()))}
+   // Command verbs are case-insensitive, but preserve the case of FILE paths.
+   const fileCommand=/^(save|load)(?:\s+(.+))?$/i.exec(raw);
+   if(fileCommand){
+     const filename=(fileCommand[2]??"").trim();
+     if(fileCommand[1].toLowerCase()==="save")console.log(writeSave(filename));
+     else console.log(readSave(filename));
+   }
    else console.log(Commands.execute(game,side,raw));
  }catch(err){console.error("Rejected: "+err.message)}
  prompt();
