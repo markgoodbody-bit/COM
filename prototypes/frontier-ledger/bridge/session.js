@@ -4,15 +4,23 @@ const COUNTS={board:[2],leave:[1],move:[2],mission:[3],loadtroops:[2],unloadtroo
 function fail(message,status=400){throw Object.assign(new Error(message),{status});}
 function object(x){return x!==null&&typeof x==='object'&&!Array.isArray(x);}
 function keys(x,expected){if(!object(x)||Object.keys(x).length!==expected.length||expected.some(k=>!Object.hasOwn(x,k)))fail('Unexpected request fields');}
+function missionHistory(g,f){
+ const starts=new Map(g.events.filter(e=>e.faction===f&&e.type==='mission_start').map(e=>[e.id,e]));
+ return g.events.filter(e=>e.faction===f&&e.type==='mission_result').slice(-40).map(e=>({
+  day:e.day,id:e.id,agentId:starts.get(e.id)?.agentId??null,kind:e.kind,target:e.target,
+  success:e.success===true,chance:e.chance,roll:e.roll}));
+}
 function playerView(g,f){
  const v=E.view(g,f);
  return {day:v.day,faction:f,factionName:E.FACTIONS[f].name,treasury:v.treasury,
   controlled:Object.values(g.systems).filter(s=>s.owner===f).length,winner:v.victory,
-  systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true,
-   ...(s.owner===f?{production:s.production.filter(j=>j.faction===f).map(j=>({id:j.id,type:j.type,daysLeft:j.remaining}))}:{})
+  dailyIncome:Object.values(g.systems).filter(s=>s.owner===f).reduce((n,s)=>n+s.facilities.mine,0),
+  missionHistory:missionHistory(g,f),
+  systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true,ownSupport:s.support[f],
+   ...(s.owner===f?{dailyIncome:s.facilities.mine,production:s.production.filter(j=>j.faction===f).map(j=>({id:j.id,type:j.type,daysLeft:j.remaining}))}:{})
   }:{id:s.id,x:s.x,y:s.y,known:false}),
   missions:g.missions.filter(m=>m.faction===f).map(m=>({id:m.id,agentId:m.agentId,kind:m.kind,target:m.target,daysLeft:m.daysLeft})),
-  agents:v.agents,
+  agents:v.agents.map(a=>({...a,mentor:g.agents[a.id].mentor})),
   fleets:Object.values(g.fleets).filter(s=>s.faction===f).map(s=>({id:s.id,at:s.at,moving:s.moving?{destination:s.moving.destination,daysLeft:s.moving.daysLeft}:null,
    speed:s.ships.length?Math.min(...s.ships.map(h=>h.speed)):null,
    ships:s.ships.length,troops:s.troops,capacity:s.ships.reduce((n,h)=>n+h.troops,0),agentSlots:s.ships.reduce((n,h)=>n+h.agentSlots,0),agents:[...s.agents]})),
