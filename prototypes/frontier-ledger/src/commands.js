@@ -2,7 +2,7 @@
 // Frontier Ledger: original headless campaign commands. No filesystem or provider access.
 const E=require("./engine.js"), AI=require("./ai.js");
 const HELP=[
- "status | map | chart | agents | fleets | help",
+ "status | map | chart | agents | fleets | events | help",
  "board AGENT FLEET | leave AGENT | move FLEET SYSTEM",
  "mission AGENT diplomacy|recon|sabotage SYSTEM",
  "loadtroops FLEET COUNT | unloadtroops FLEET COUNT",
@@ -48,6 +48,24 @@ function fleetsView(g,f) {
    " | ships "+v.ships.length+" | troops "+v.troops+" | agents "+
    (v.agents.join(",")||"none")).join("\n");
 }
+// An event belongs to a faction; do not expose opponent actions, targets or rolls.
+// Show at most the last 20 own events, including mission and invasion outcomes.
+function eventView(g,f,start=0) {
+ const own=g.events.slice(start).filter(e=>e.faction===f);
+ if(!own.length)return "No faction events recorded.";
+ const recent=own.slice(-20).map(e=>{
+   const parts=["Day "+e.day+": "+e.type];
+   if(e.agentId)parts.push("agent "+e.agentId);
+   if(e.fleetId)parts.push("fleet "+e.fleetId);
+   if(e.systemId||e.target)parts.push("@"+(e.systemId??e.target));
+   if(e.type==="mission_result")
+     parts.push(e.success?"SUCCESS":"FAILED","chance "+e.chance+"%","roll "+e.roll);
+   if(e.type==="invasion")parts.push(e.success?"SUCCESS":"FAILED");
+   return parts.join(" ");
+ });
+ if(own.length>20)recent.unshift("("+ (own.length-20) +" earlier faction events omitted)");
+ return recent.join("\n");
+}
 // ONE command only. Mutations happen inside independently validating engine calls.
 function execute(g,f,line) {
  requireSide(f);
@@ -64,6 +82,7 @@ function execute(g,f,line) {
  case "chart":exact(0);return chartView(g);
  case "agents":exact(0);return agentsView(g,f);
  case "fleets":exact(0);return fleetsView(g,f);
+ case "events":exact(0);return eventView(g,f);
  case "board":exact(2);result=E.boardAgent(g,f,args[0],args[1]);break;
  case "leave":exact(1);result=E.disembarkAgent(g,f,args[0]);break;
  case "move":exact(2);result=E.moveFleet(g,f,args[0],args[1]);break;
@@ -77,8 +96,10 @@ function execute(g,f,line) {
  case "tick":if(args.length>1)throw Error("tick takes zero or one day count");
    const days=args.length?integer(args[0],"Days",30):1;
    const other=Object.keys(E.FACTIONS).find(x=>x!==f);
+   const eventStart=g.events.length;
    AI.runCampaign(g,days,[other]);
-   return "Advanced to day "+g.day+"; "+formatView(g,f);
+   return "Advanced to day "+g.day+"; "+formatView(g,f)+"\n"+
+     "Your events during advancement:\n"+eventView(g,f,eventStart);
  default:throw Error("Unknown command: "+verb+" (use help)");
  }
  return "Accepted: "+(typeof result==="object"?JSON.stringify(result):String(result));
