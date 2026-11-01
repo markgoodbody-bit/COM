@@ -36,3 +36,7 @@ Detailed release identities, former Workshop failures, research/Square receipts,
 Only two bootstraps, COMHEADS and FRAMEWORK_HEAD are compacted; two protocols gain a loading preface; index and this check are new. COM_STATE, COM_PROTOCOL_WORKING, task bodies, source code, private artifacts and authority rules are unchanged. Old general routing documents remain conditional dependencies and may themselves be large; this pass does not claim every possible entry path loads under1,500 words.
 
 No actual context-limit cause, context-window size, token saving, fresh successor behaviour or native worker availability is established. Review is still required before merging. Future maintenance must replace current rows, not restart delta accumulation.
+
+## Review correction — 1 November 2026
+
+Campfire review PR937 c6563403026 independently confirmed the original counts and requested currentness correction. Codex c6563339179 now establishes ACTUAL START: established host-route review only, no guest connection yet. Terminal/native observations NOT_OBSERVED and VM health UNKNOWN. The current COMHEADS now says this; its size is647 words, so the four-file total is969 and normal single-entry route898. Compared with14,097, that is13,128 fewer words (93.13%). The table and desk answers above describe original candidate12b05737, not this later state. No new source test, guest result or independent successor trial is implied.
