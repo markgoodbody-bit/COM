@@ -1,6 +1,7 @@
 "use strict";
 /* Frontier Ledger: original deterministic opponent policy.
  * Chart coordinates are public; owner/support only observed on visited systems.
+ * Military: load troops at a friendly dock, advance on a visited enemy world, invade.
  * One order per faction per day. No networking, model calls or schedulers.
  */
 const E=require("./engine.js");
@@ -30,10 +31,63 @@ function chooseCarrier(g,f,at) {
     v.agents.length<v.ships.reduce((n,s)=>n+s.agentSlots,0))
     .sort((a,b)=>a.id.localeCompare(b.id))[0]||null;
 }
+// Troops the policy leaves in any friendly garrison it loads from.
+const RESERVE=4;
+function capacity(v){return v.ships.reduce((n,s)=>n+s.troops,0);}
+function hostileTargets(g,f,origin) {
+  // Owner is read only on systems this faction has visited; enemy garrisons, forts and fleets are never read.
+  const known=new Set(factionData(g,f).known),at=g.systems[origin];
+  return Object.values(g.systems).filter(s=>known.has(s.id)&&s.owner!==null&&s.owner!==f)
+    .sort((a,b)=>dist(at,a)-dist(at,b)||a.id.localeCompare(b.id));
+}
+function reloadDocks(g,f,origin) {
+  const at=g.systems[origin];
+  return Object.values(g.systems).filter(s=>s.owner===f&&s.id!==origin&&s.garrison>RESERVE)
+    .sort((a,b)=>dist(at,a)-dist(at,b)||a.id.localeCompare(b.id));
+}
+function fleetOrder(g,f,v) {
+  const targets=hostileTargets(g,f,v.at);
+  if(!targets.length)return null;
+  const here=g.systems[v.at],room=capacity(v)-v.troops;
+  if(here.owner===f) {
+    const count=Math.min(room,here.garrison-RESERVE);
+    if(count>=1) {
+      E.embarkTroops(g,f,v.id,count);
+      return {faction:f,order:"LOAD_TROOPS",fleet:v.id,at:here.id,count};
+    }
+  }
+  // Enemy strength is hidden, so a fleet attacks only when full or when no friendly dock can add troops.
+  const docks=room>0?reloadDocks(g,f,v.at):[];
+  if(v.troops>0&&!docks.length) {
+    const troops=v.troops;
+    if(targets[0].id===here.id) {
+      // No commander: the engine turns a commander's skill into extra garrison on an undefended world.
+      E.invade(g,f,v.id,here.id);
+      return {faction:f,order:"INVADE",fleet:v.id,target:here.id,troops};
+    }
+    E.moveFleet(g,f,v.id,targets[0].id);
+    return {faction:f,order:"ADVANCE",fleet:v.id,target:targets[0].id,troops};
+  }
+  if(!docks.length)return null;
+  E.moveFleet(g,f,v.id,docks[0].id);
+  return {faction:f,order:"RETURN_TO_DOCK",fleet:v.id,target:docks[0].id};
+}
+function militaryOrder(g,f,diplomat) {
+  // A fleet stays with a diplomat on the ground beside it while expansion still has somewhere to go,
+  // so the diplomat is never stranded; a diplomat aboard rides along.
+  const held=diplomat&&diplomat.at&&chooseTarget(g,f,diplomat.at)!==null?diplomat.at:null;
+  const fleets=Object.values(g.fleets).filter(v=>
+    v.faction===f&&!v.moving&&v.at&&v.ships.length>0&&v.at!==held)
+    .sort((a,b)=>a.id.localeCompare(b.id));
+  for(const v of fleets){const o=fleetOrder(g,f,v);if(o)return o;}
+  return null;
+}
 function orderFaction(g,f) {
   factionData(g,f);
   if(g.winner) return {faction:f,order:"GAME_OVER"};
   const a=chooseDiplomat(g,f);
+  const war=militaryOrder(g,f,a);
+  if(war)return war;
   if(!a)return {faction:f,order:"NO_AGENT"};
   if(a.busy)return {faction:f,order:"MISSION_IN_PROGRESS",agent:a.id};
   if(a.fleet) {
