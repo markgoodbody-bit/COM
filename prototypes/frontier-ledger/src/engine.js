@@ -130,6 +130,37 @@ function moveFleet(g, faction, fleetId, destination) {
   f.at = null;
   return record(g, "depart", { faction, fleetId, destination, eta:g.day+days });
 }
+// Deliberate local encounter. All losing hulls are lost; agents escape to the
+// same world. Troops land at a friendly world or disband (explicitly recorded).
+function engage(g,faction,fleetId,targetId) {
+  insist(!g.winner,"Campaign is over");
+  const a=getFleet(g,fleetId,faction),b=g.fleets[targetId];
+  insist(b&&b.faction!==faction&&a.at&&a.at===b.at&&!a.moving&&!b.moving,
+    "No hostile contact at this system");
+  for(const v of [a,b]){
+    insist(v.ships.length>0&&v.ships.every(h=>Number.isSafeInteger(h.power)&&h.power>=0),"Invalid combat hulls");
+    insist(v.agents.every(id=>g.agents[id]&&g.agents[id].fleet===v.id&&!g.agents[id].busy),"Invalid passenger state");
+  }
+  const site=getSite(g,a.at);
+  const power=v=>v.ships.reduce((n,h)=>n+h.power,0);
+  const ap=power(a),bp=power(b),ar=die(g),br=die(g);
+  const loser=ap*20+ar>bp*20+br?b:a; // ties favour defender
+  const loss=loser.ships.length,passengers=[...loser.agents],troops=loser.troops;
+  const landed=site.owner===loser.faction;
+  for(const id of passengers){g.agents[id].fleet=null;g.agents[id].at=site.id;}
+  if(landed)site.garrison+=troops;
+  delete g.fleets[loser.id];
+  let own;
+  for(const v of [a,b]){
+    const e=record(g,"fleet_encounter",{faction:v.faction,systemId:site.id,
+      attacker:a.id,defender:b.id,lostFleet:loser.id,lostHulls:loss,
+      attackPower:ap,defencePower:bp,attackRoll:ar,defenceRoll:br,
+      outcome:v===loser?"lost":"won",
+      ...(v===loser?{survivors:passengers,troops,troopDisposition:landed?"landed":"disbanded"}:{})});
+    if(v.faction===faction)own=e;
+  }
+  return own;
+}
 function troopCapacity(f) {
   return f.ships.reduce((n, s) => n + s.troops, 0);
 }
@@ -313,5 +344,5 @@ function view(g,faction) {
     })),
   };
 }
-module.exports={FACTIONS,createGame,boardAgent,disembarkAgent,moveFleet,
+module.exports={engage,FACTIONS,createGame,boardAgent,disembarkAgent,moveFleet,
   embarkTroops,disembarkTroops,discoverPower,mission,queueBuild,invade,tick,view};
