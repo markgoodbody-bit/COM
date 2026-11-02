@@ -102,6 +102,8 @@ input[type="number"] { width: 5.5rem; }
 .fleet-mark { fill: var(--fleet); stroke: #070b17; stroke-width: 1.5; }
 .fleet-label { fill: var(--fleet); font-size: 12px; }
 .transit { fill: none; stroke: var(--fleet); stroke-width: 1.5; stroke-dasharray: 3 4; }
+.contact-mark { fill: var(--enemy); stroke: #070b17; stroke-width: 1.5; }
+.key.contact { background: var(--enemy); border-color: var(--enemy); border-radius: 2px; transform: rotate(45deg); width: 0.7rem; height: 0.7rem; }
 
 .legend { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; list-style: none; padding: 0; margin: 0.6rem 0 0; color: var(--muted); font-size: 0.9rem; }
 .legend li { display: flex; align-items: center; gap: 0.35rem; }

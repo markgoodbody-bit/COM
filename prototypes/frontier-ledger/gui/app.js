@@ -95,6 +95,12 @@ function actionsFor(view, sel) {
         input: { kind: "select", value: preset,
           options: targets.map(s => ({ value: s.id, label: title(s.id) + " (" + ownerText(s, faction) + ")" + (travelDays(view,fleet,s.id)!==null?" · "+travelDays(view,fleet,s.id)+" day(s)":"") })) },
         argsFor: v => [fleet.id, v], args: [fleet.id, preset] });
+      for(const enemy of (view.contacts||[]).filter(e=>e.at===fleet.at&&e.ships>0)){
+        out.push(action("Fleet encounter","engage",[fleet.id,enemy.id],
+          "Engage "+title(enemy.id)+" ("+enemy.ships+" hull(s), power "+enemy.power+
+          "; yours "+fleet.power+"). Risk: loser loses ALL hulls; agents escape here; troops land if friendly, otherwise disband. Power ×20 + roll 0–99; ties defend.",
+          !over&&fleet.ships>0,over||"No combat hulls"));
+      }
       const friendly = here && here.known && here.owner === faction;
       const room = fleet.capacity - fleet.troops;
       if (friendly) {
@@ -177,6 +183,16 @@ function newEvents(before, after) {
 
 // Known worlds whose owner changed between two views of the same campaign. It compares only owners the
 // player could already see, so it says that a world changed hands, never who did it or how.
+// Hostile fleets now seen beside one of your fleets that were not seen there before. Contacts come only from
+// the server's local projection (id, star, hulls, power), so this names nothing the player could not select.
+function contactText(c) {
+  return title(c.id) + " at " + title(c.at) + " (" + c.ships + " hull(s), power " + c.power + ")";
+}
+function newContacts(before, after) {
+  const seen = new Set((before.contacts || []).map(c => c.id + "@" + c.at));
+  return (after.contacts || []).filter(c => !seen.has(c.id + "@" + c.at))
+    .map(c => "Hostile fleet " + contactText(c) + ". Select your fleet there to see the Engage choice.");
+}
 function ownershipChanges(before, after) {
   const out = [];
   for (const s of after.systems) {
@@ -201,6 +217,7 @@ function describe(verb, args, view) {
     case "build": return "Started building " + args[1] + " at " + t[0] + ".";
     case "invade": return t[0] + " committed its entire landing force at " + t[1] + ". See the events for the result.";
     case "awaken": return t[0] + " awakened " + t[1] + "'s potential.";
+    case "engage": return t[0] + " engaged " + t[1] + ".";
     case "tick": return "Advanced to day " + view.day + ".";
     default: return "Done.";
   }
@@ -305,8 +322,9 @@ function startApp() {
       restoreFocus(focus);
       // After days pass, show what happened right away; the full list stays below the chart.
       // A known world that changed hands is named too: no event reaches a player who did not own it.
-      const fresh = verb === "tick" ? newEvents(before.events, view.events) : [];
-      say([describe(verb, args, view)].concat(ownershipChanges(before, view), fresh.slice(-4),
+      // An engagement or invasion is decided at once, so its result line is shown at once too.
+      const fresh = ["tick", "engage", "invade"].includes(verb) ? newEvents(before.events, view.events) : [];
+      say([describe(verb, args, view)].concat(ownershipChanges(before, view), newContacts(before, view), fresh.slice(-4),
         fresh.length > 4 ? ["(" + (fresh.length - 4) + " more below the chart)"] : []).join("\n"));
     });
   }
@@ -367,6 +385,11 @@ function startApp() {
         chart.append(svg("circle", { class: "transit", cx: p.x.toFixed(1), cy: p.y.toFixed(1), r: 34 }));
       }
     }
+    // Hostile fleets seen beside yours: a marker left of the star.
+    for (const at of new Set((view.contacts || []).map(c => c.at))) {
+      const p = pos[at], x = p.x - 34, y = p.y;
+      chart.append(svg("polygon", { class: "contact-mark", points: [x, y - 7, x + 7, y, x, y + 7, x - 7, y].join(" ") }));
+    }
     if (focused) {
       const again = Array.from(chart.children).find(node => node.getAttribute("data-system") === focused);
       if (again) again.focus();
@@ -410,6 +433,8 @@ function startApp() {
         rows.push(["Garrison", "Not visible to you"]);
       }
       if(sys.known)rows.push(["Recon report",reconText(sys.recon,sys.owner)]);
+      const here = (view.contacts || []).filter(c => c.at === sys.id);
+      if (here.length) rows.push(["Hostile fleets seen", here.map(contactText).join("; ")]);
       box.append(facts(rows));
       if(cls === "own") {
         const jobs=sys.production||[];
@@ -603,4 +628,4 @@ function startApp() {
 }
 
 if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", startApp);
-if (typeof module !== "undefined") module.exports = { reconText, title, ownerClass, ownerText, layout, actionsFor, newEvents, ownershipChanges, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };
+if (typeof module !== "undefined") module.exports = { newContacts, reconText, title, ownerClass, ownerText, layout, actionsFor, newEvents, ownershipChanges, describe, createApi, COSTS, MISSION_LIMITS, travelDays, pendingOrders };
