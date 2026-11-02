@@ -1,6 +1,6 @@
 'use strict';
 const E=require('../src/engine'), Commands=require('../src/commands'), Save=require('../src/save');
-const COUNTS={board:[2],leave:[1],move:[2],mission:[3],loadtroops:[2],unloadtroops:[2],build:[2],invade:[2,3],awaken:[2],tick:[1]};
+const COUNTS={engage:[2],board:[2],leave:[1],move:[2],mission:[3],loadtroops:[2],unloadtroops:[2],build:[2],invade:[2,3],awaken:[2],tick:[1]};
 function fail(message,status=400){throw Object.assign(new Error(message),{status});}
 function object(x){return x!==null&&typeof x==='object'&&!Array.isArray(x);}
 function keys(x,expected){if(!object(x)||Object.keys(x).length!==expected.length||expected.some(k=>!Object.hasOwn(x,k)))fail('Unexpected request fields');}
@@ -32,11 +32,14 @@ function playerView(g,f){
   systems:Object.values(g.systems).map(s=>v.systems[s.id]?{...v.systems[s.id],known:true,ownSupport:s.support[f],recon:latestRecon(g,f,s.id),
    ...(s.owner===f?{dailyIncome:s.facilities.mine,production:s.production.filter(j=>j.faction===f).map(j=>({id:j.id,type:j.type,daysLeft:j.remaining}))}:{})
   }:{id:s.id,x:s.x,y:s.y,known:false}),
+  contacts:Object.values(g.fleets).filter(v=>v.faction!==f&&v.at&&!v.moving&&
+    Object.values(g.fleets).some(o=>o.faction===f&&o.at===v.at&&!o.moving&&o.ships.length>0))
+    .map(v=>({id:v.id,at:v.at,ships:v.ships.length,power:v.ships.reduce((n,h)=>n+h.power,0)})),
   missions:g.missions.filter(m=>m.faction===f).map(m=>({id:m.id,agentId:m.agentId,kind:m.kind,target:m.target,daysLeft:m.daysLeft})),
   agents:v.agents.map(a=>({...a,mentor:g.agents[a.id].mentor})),
   fleets:Object.values(g.fleets).filter(s=>s.faction===f).map(s=>({id:s.id,at:s.at,moving:s.moving?{destination:s.moving.destination,daysLeft:s.moving.daysLeft}:null,
    speed:s.ships.length?Math.min(...s.ships.map(h=>h.speed)):null,
-   ships:s.ships.length,troops:s.troops,capacity:s.ships.reduce((n,h)=>n+h.troops,0),agentSlots:s.ships.reduce((n,h)=>n+h.agentSlots,0),agents:[...s.agents]})),
+   power:s.ships.reduce((n,h)=>n+h.power,0),ships:s.ships.length,troops:s.troops,capacity:s.ships.reduce((n,h)=>n+h.troops,0),agentSlots:s.ships.reduce((n,h)=>n+h.agentSlots,0),agents:[...s.agents]})),
   events:Commands.execute(g,f,'events').split('\n')};
 }
 function createSession(){
