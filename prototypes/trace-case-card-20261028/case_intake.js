@@ -199,7 +199,101 @@
     return pretty;
   }
 
-  const API = { makeCase, validateCase, parseCase, encodeCase, byteCount };
+
+  // Source-only, explicit review: author text is inserted as textContent, never markup.
+  // The Python card renderer remains the separate full printable formatter.
+  function renderReview(data, host) {
+    validateCase(data);
+    if (!host || !host.ownerDocument || typeof host.replaceChildren !== 'function') fail('review host unavailable');
+    const doc = host.ownerDocument;
+    const rootNode = doc.createElement('div');
+    function put(parent, tag, value, css) {
+      const item = doc.createElement(tag);
+      if (css) item.className = css;
+      item.textContent = value;
+      parent.appendChild(item);
+      return item;
+    }
+    function section(title) {
+      const box = put(rootNode, 'section', '', 'review-section');
+      put(box, 'h3', title);
+      return box;
+    }
+    function field(box, title, value, absent = 'Not supplied') {
+      const item = put(box, 'div', '', 'review-field');
+      put(item, 'strong', title + ':');
+      put(item, 'p', value === undefined ? absent : value, 'review-value');
+    }
+    put(rootNode, 'h2', 'Review your draft — author-supplied, not verified');
+    put(rootNode, 'p', 'This preview makes no findings about truth, independent evidence, consent, permissions, outcomes or real deadlines. A blank entry does not prove absence.');
+    const intro = section('Case');
+    field(intro, 'Title', data.title);
+    field(intro, 'Scope', data.scope);
+
+    const claims = section('Before, change and consequences');
+    data.claims.forEach((c, i) => {
+      const item = put(claims, 'div', '', 'review-entry');
+      put(item, 'h4', String(i + 1) + '. ' + c.kind + ' — ' + c.evidence + ' (author evidence label; unverified)');
+      field(item, 'Claim', c.text);
+      field(item, 'Source', c.source, 'Source not supplied');
+    });
+
+    const parties = section('People or groups and their own aims');
+    if (!data.parties || !data.parties.length) {
+      put(parties, 'p', 'No parties supplied; this does not establish that nobody is affected.');
+    } else data.parties.forEach((p, i) => {
+      const item = put(parties, 'div', '', 'review-entry');
+      put(item, 'h4', 'Perspective ' + String(i + 1) + ' — writer-supplied');
+      field(item, 'Person or group', p.name);
+      field(item, 'Aim', p.aim);
+      field(item, 'Boundary', p.boundary);
+    });
+
+    const possibilities = section('Possible responses and alternatives');
+    const stateLimits = {
+      possible: 'not permission or execution',
+      offered: 'not acceptance or execution',
+      permitted: 'not independently authorised or chosen',
+      chosen: 'not necessarily attempted',
+      attempted: 'not proven completed',
+      executed: 'submitted completion claim; effects unverified'
+    };
+    if (!data.possibilities || !data.possibilities.length) {
+      put(possibilities, 'p', 'No options supplied; this does not establish that none exists.');
+    } else data.possibilities.forEach((p, i) => {
+      const item = put(possibilities, 'div', '', 'review-entry');
+      put(item, 'h4', 'Option ' + String(i + 1) + ' — ' + p.state + ' (author label; ' + stateLimits[p.state] + ')');
+      field(item, 'Whose option', p.party);
+      field(item, 'Description', p.description);
+      field(item, 'Condition', p.condition);
+    });
+
+    const correction = section('Correction before hardening');
+    const c = data.correction;
+    if (!c) {
+      put(correction, 'p', 'Correction window not assessed or supplied.');
+    } else {
+      const windowLabel = c.window || 'not_assessed';
+      const note = (windowLabel === 'open' || windowLabel === 'closed')
+        ? 'submitted ' + windowLabel + ' claim, unverified; use a specialist method for deadlines'
+        : windowLabel === 'unknown' ? 'author reports unknown; not a closed window'
+          : 'not assessed; not a closed window';
+      field(correction, 'Window', note);
+      field(correction, 'Target', c.target);
+      field(correction, 'Route', c.route);
+      field(correction, 'Hardening', c.hardening);
+      field(correction, 'Clock basis', c.clock_basis);
+      field(correction, 'Claim basis', c.basis);
+    }
+    const next = section('Return and unanswered questions');
+    field(next, 'Learned', data.return && data.return.learned);
+    field(next, 'Unresolved', data.return && data.return.unresolved);
+    field(next, 'Next question or route', data.return && data.return.next);
+    host.replaceChildren(rootNode);
+    host.hidden = false;
+  }
+
+  const API = { makeCase, validateCase, parseCase, encodeCase, byteCount, renderReview };
   if (typeof module !== 'undefined' && module.exports) module.exports = API;
   if (typeof document === 'undefined') return;
 
@@ -271,6 +365,24 @@
   }
   document.addEventListener('DOMContentLoaded', () => {
     addRow('claims', {kind: 'change'});
+    const reviewPanel = el('draft-review');
+    const clearReview = () => { reviewPanel.hidden = true; reviewPanel.replaceChildren(); };
+    const form = el('intake-form');
+    form.addEventListener('input', clearReview);
+    form.addEventListener('change', clearReview);
+    form.addEventListener('click', e => {
+      if (e.target && typeof e.target.closest === 'function' && e.target.closest('[data-add],[data-remove]')) clearReview();
+    });
+    el('review-draft').addEventListener('click', () => {
+      try {
+        renderReview(makeCase(getFormModel()), reviewPanel);
+        report('Local review prepared. Every statement is author-supplied, not independently verified.');
+        reviewPanel.focus();
+      } catch (e) {
+        clearReview();
+        report('Review unavailable: ' + e.message, true);
+      }
+    });
     for (const b of document.querySelectorAll('[data-add]')) b.addEventListener('click', () => addRow(b.dataset.add, {}, true));
     el('intake-form').addEventListener('submit', event => {
       event.preventDefault();
@@ -294,6 +406,7 @@
         if (file.size > LIMIT_BYTES) fail('input exceeds 128 KiB');
         const data = parseCase(await file.text());
         loadCase(data);
+        clearReview();
         report('Local JSON imported for editing. Review all fields before exporting; no upload occurred.');
       } catch (e) { report('Import refused; existing form retained: ' + e.message, true); }
       finally { event.target.value = ''; }

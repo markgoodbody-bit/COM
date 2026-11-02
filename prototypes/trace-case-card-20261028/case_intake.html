@@ -12,6 +12,9 @@ textarea { min-height:4rem; } button { cursor:pointer; font:inherit; border:1px 
 button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline:3px solid #1768a2; outline-offset:2px; }
 button[type=submit] { color:#fff; background:#244b72; } .row { border-top:1px solid #ccd5de; padding-top:1rem; margin-top:1rem; }
 .hint { color:#4b5968; } #status { padding:.7rem 0; font-weight:650; } #status[data-error=true] { color:#9c2424; }
+.review-entry { border-top:1px solid #ccd5de; padding:.65rem 0; }
+.review-value { white-space:pre-wrap; overflow-wrap:anywhere; unicode-bidi:plaintext; margin:.15rem 0 .5rem; }
+.review-field { margin:.3rem 0; }
 @media (min-width:680px) { .pair { display:grid; grid-template-columns:1fr 1fr; gap:1rem; } }
 @media print { button,.controls { display:none; } main { max-width:none; } }
 </style>
@@ -45,9 +48,11 @@ button[type=submit] { color:#fff; background:#244b72; } .row { border-top:1px so
 <label>What did you learn? <textarea data-field="learned" maxlength="1000"></textarea></label>
 <label>What is unresolved? <textarea data-field="unresolved" maxlength="1000"></textarea></label>
 <label>What is the next question or route? <textarea data-field="next" maxlength="1000"></textarea></label></fieldset>
+<button type="button" id="review-draft">Review draft without downloading</button>
 <button type="submit">Check and download JSON</button>
 <p id="status" tabindex="-1" role="status" aria-live="polite"></p>
 </form>
+<section id="draft-review" hidden tabindex="-1" aria-label="Review of your case, writer-supplied"></section>
 <section><h2>Next step</h2><p>Use the downloaded JSON with the separate <code>case_card.py</code> from the <a href="https://github.com/markgoodbody-bit/COM/tree/draft/engineering-return-trace-case-card-20261028/prototypes/trace-case-card-20261028" rel="noopener noreferrer">optional case-card prototype</a> to generate printable HTML. It is not a TRACE implementation or a verified incident report.</p></section>
 </main>
 <template id="template-claims"><div class="row" role="group" aria-label="Case claim">
