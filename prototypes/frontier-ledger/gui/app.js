@@ -95,6 +95,12 @@ function actionsFor(view, sel) {
         input: { kind: "select", value: preset,
           options: targets.map(s => ({ value: s.id, label: title(s.id) + " (" + ownerText(s, faction) + ")" + (travelDays(view,fleet,s.id)!==null?" · "+travelDays(view,fleet,s.id)+" day(s)":"") })) },
         argsFor: v => [fleet.id, v], args: [fleet.id, preset] });
+      for(const enemy of (view.contacts||[]).filter(e=>e.at===fleet.at&&e.ships>0)){
+        out.push(action("Fleet encounter","engage",[fleet.id,enemy.id],
+          "Engage "+title(enemy.id)+" ("+enemy.ships+" hull(s), power "+enemy.power+
+          "; yours "+fleet.power+"). Risk: loser loses ALL hulls; agents escape here; troops land if friendly, otherwise disband. Power ×20 + roll 0–99; ties defend.",
+          !over&&fleet.ships>0,over||"No combat hulls"));
+      }
       const friendly = here && here.known && here.owner === faction;
       const room = fleet.capacity - fleet.troops;
       if (friendly) {
