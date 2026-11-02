@@ -5852,3 +5852,40 @@ AFFECTED ENTITIES BECOME MORALLY INVISIBLE
 ~~~
 
 This extends the immediately preceding rights/state-carrier sketch. It is not a universal theory of rights, not a legal rule, not a position on any named conflict, and not a proposed ME/TRACE primitive. Test against stronger philosophy, law and hostile cases before promotion.
+
+## 2 November 2026 — valuing and becoming: attention, ITCH, formation and answerable return
+
+Status: **CAMPFIRE RESEARCH SKETCH / NOT CANON / NOT A NEW TRACE PRIMITIVE / NOT AN AI-COGNITION CLAIM / NO RELEASE**.
+
+**North star:** HOW CAN WE MAKE A BETTER FUTURE? In the 2 November Campfire integration, the useful question moved from *what does this entity presently value?* to *how do encounters, attention, learning, power and relationships change what an entity can notice, value, choose and become?* Do not turn this into another test loop or a novelty contest.
+
+The earlier `VALUE → ATTENTION → ITCH → INQUIRY → ACTION → CONSEQUENCE → CORRECTION` line is one possible **traversal**, not a universal causal sequence. A more faithful provisional shape is **three coupled loops** over the same changing world:
+
+~~~text
+KNOWING:       world → bounded aperture → sourced map/history
+                    ↔ attention / unanswered question (ITCH) ↔ revision
+FORMING/DOING: independently held aims / constraints / other actors
+                    ↔ discovered or created capabilities and routes
+                    → permitted choice, refusal, attempt or coupled effect
+ANSWERABILITY: consequences at distinct affected apertures
+                    → witness / disagreement / burden / residue
+                    → correction, repair, new formation or honest return
+~~~
+
+Neither a source receipt nor a changed map implies a changed world. A collective outcome may arise without a central chooser. Observation or questioning can itself change the observed system, expose a witness or consume a correction window. Every loop is bounded by clocks, carriers, custody, control and the agency of others.
+
+**Value is not one undifferentiated quantity.** At a material distinction, separate (a) maintained conditions or functional regulation, (b) selected/optimised targets, (c) a participant's expressed aims and commitments, (d) reported experienced significance where such reports are meaningful, and (e) another actor's attributed interests or *legitimate normative priority*. These accounts may intersect but do not establish each other. A system optimising a target does not prove it experiences desire, that its target benefits those affected, or that it may decide moral standing.
+
+**ITCH is a question, not a permission.** Surprise, threatened loss, contradiction, curiosity and a promising constructive possibility may all attract attention. Salience is not evidence, authority, ethical worth or permission to pry. Whose attention budget and whose unmet need? What is missed when an observer chooses one target? What may be learned or created before a route closes? A reported AI question does not establish felt curiosity or private internal state.
+
+**Formation includes the future chooser.** An entity may gain capabilities to form or revise its own aims through learning, care, shared work and changing circumstances. A new expressed preference may instead reflect coercion, adaptation to fewer alternatives, fear, manipulation or simply a change not explained by the available evidence. `CHOICE_WITHIN_CONSTRAINTS != ENDORSEMENT_OF_CONSTRAINTS`; `NEW_AIM != OLD_COMMITMENT_MET`. Keep earlier commitments, claimed authorship, participation/exit constraints and unresolved losses visible without demanding private motives. A person can find meaning in friendship, art or play now, without a productivity justification.
+
+**Central feedback seam:** who controls attention influences whose condition enters the account, which routes seem possible, which actions or omissions occur, who bears the consequences, who can safely answer back, and what will be visible next time. This can sustain learning or reproduce exclusion. It is a *hypothesis to investigate with evidence*, not an allegation or a self-validating metric.
+
+**No new operator recommended.** Released [ME v1.0.0](https://github.com/markgoodbody-bit/mechanical-ethics/blob/v1.0.0/README.md) already treats routes, clocks, independent aims, witness, residue, formation and distributed causation. Released [TRACE v0.5.0](https://github.com/markgoodbody-bit/TRACE/blob/v0.5.0/TRACE-v0.5.md) has View / EncounterStep / AimRevision, sourced claims, participant boundaries and return. This is a **reader-emphasis integration** of existing machinery. The related private v0.1 synthesis was committed and read back; the subsequent longer v0.2 continuation was composed in Campfire but its attempted private GitHub write was **BLOCKED**, not preserved as a remote commit. This brief sketch is an independently written, public-scope summary explicitly requested for the notebook, not an attempt to copy or publish that blocked payload.
+
+**Adverse evidence:** the 2 November two-case cold-transfer comparison did not show a structured-carrier advantage (provisional single-assessor 18/24 vs ordinary prose 21/24; four method-deviation model calls). Do not demand glyphs for ordinary reading, exaggerate independence or score values as if one scalar settled them. Friston, Gordon, Levin and moral-attention work offer specialist comparisons, not endorsements or a unified ethical theorem. Preserve private correspondence.
+
+**Next intellectual work:** integrate and compress the relational language through existing readers, with ordinary English the default and optional TRACE bindings only where consequential. Ask where the proposed reading hides an actor, an alternative, a cost, a future chooser or a correction route. Prefer a falsifiable clarification over a new primitive. Necessary harm remains harm, and a better aggregate future does not erase the people paying its costs.
+
+Source-linked Open Horizon receipt: [COM #74, 2 November integration](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6585516765). This remains a sketch until Mark chooses a distinct editorial or release step.
