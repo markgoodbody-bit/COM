@@ -143,6 +143,14 @@ test("a download that is only requested does not mark the campaign saved",()=>{
  assert.doesNotMatch(handler,/unsaved\s*=\s*false/);
 });
 
+test("a newly seen hostile fleet is announced once, and an engagement names itself",()=>{
+ const before={contacts:[]},after={contacts:[{id:"wanderer",at:"farpoint",ships:1,power:3}]};
+ assert.deepEqual(UI.newContacts(before,after),
+  ["Hostile fleet Wanderer at Farpoint (1 hull(s), power 3). Select your fleet there to see the Engage choice."]);
+ assert.deepEqual(UI.newContacts(after,after),[]);
+ assert.equal(UI.describe("engage",["iron","wanderer"],{}),"Iron engaged Wanderer.");
+});
+
 test("gui source keeps the bridge's rules: no HTML injection, inline code or remote resources",()=>{
  const html=fs.readFileSync(path.join(GUI,"index.html"),"utf8");
  const js=fs.readFileSync(path.join(GUI,"app.js"),"utf8"),css=fs.readFileSync(path.join(GUI,"style.css"),"utf8");
