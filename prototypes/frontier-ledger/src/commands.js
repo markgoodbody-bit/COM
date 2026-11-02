@@ -4,6 +4,7 @@ const E=require("./engine.js"), AI=require("./ai.js");
 const HELP=[
  "status | map | chart | agents | fleets | events | help",
  "board AGENT FLEET | leave AGENT | move FLEET SYSTEM",
+ "engage FLEET HOSTILE_FLEET (local contact; loser loses all hulls)",
  "mission AGENT diplomacy|recon|sabotage SYSTEM",
  "loadtroops FLEET COUNT | unloadtroops FLEET COUNT",
  "build SYSTEM patrol|troops|mine | invade FLEET SYSTEM [COMMANDER]",
@@ -54,6 +55,9 @@ function eventView(g,f,start=0) {
  const own=g.events.slice(start).filter(e=>e.faction===f);
  if(!own.length)return "No faction events recorded.";
  const recent=own.slice(-20).map(e=>{
+   if(e.type==="fleet_encounter")
+     return "Day "+e.day+": Fleet encounter @"+e.systemId+" "+e.outcome+"; "+e.lostFleet+" lost "+e.lostHulls+" hull(s)"+
+       (e.outcome==="lost"?"; agents ashore: "+(e.survivors.join(", ")||"none")+"; troops "+e.troopDisposition+": "+e.troops:"");
    if(e.type==="defence_notice")
      return "Day "+e.day+": Invasion @"+e.systemId+" "+e.outcome;
    if(e.type==="build_start" || e.type==="build_finish")
@@ -82,7 +86,7 @@ function execute(g,f,line) {
  if(typeof line!=="string"||line.length>240)throw Error("Command must be a short text line");
  const args=line.trim().split(/\s+/).filter(Boolean),verb=(args.shift()??"").toLowerCase();
  const exact=(n)=>{if(args.length!==n)throw Error(verb+" requires "+n+" argument(s)")};
- const mutating=new Set(["board","leave","move","mission","loadtroops","unloadtroops","build","invade","awaken","tick"]);
+ const mutating=new Set(["engage","board","leave","move","mission","loadtroops","unloadtroops","build","invade","awaken","tick"]);
  if(g.winner&&mutating.has(verb))throw Error("Campaign is over");
  let result;
  switch(verb){
@@ -93,6 +97,7 @@ function execute(g,f,line) {
  case "agents":exact(0);return agentsView(g,f);
  case "fleets":exact(0);return fleetsView(g,f);
  case "events":exact(0);return eventView(g,f);
+ case "engage":exact(2);result=E.engage(g,f,args[0],args[1]);return eventView(g,f,g.events.length-2);
  case "board":exact(2);result=E.boardAgent(g,f,args[0],args[1]);break;
  case "leave":exact(1);result=E.disembarkAgent(g,f,args[0]);break;
  case "move":exact(2);result=E.moveFleet(g,f,args[0],args[1]);break;
