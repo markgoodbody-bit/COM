@@ -5889,3 +5889,45 @@ Neither a source receipt nor a changed map implies a changed world. A collective
 **Next intellectual work:** integrate and compress the relational language through existing readers, with ordinary English the default and optional TRACE bindings only where consequential. Ask where the proposed reading hides an actor, an alternative, a cost, a future chooser or a correction route. Prefer a falsifiable clarification over a new primitive. Necessary harm remains harm, and a better aggregate future does not erase the people paying its costs.
 
 Source-linked Open Horizon receipt: [COM #74, 2 November integration](https://github.com/markgoodbody-bit/COM/issues/74#issuecomment-6585516765). This remains a sketch until Mark chooses a distinct editorial or release step.
+
+## 3 November 2026 — delegation is a changed permission landscape, not a completed outcome
+
+Status: **CAMPFIRE MIDDLE-OUT WORKED READING / NOT CANON / NO NEW TRACE PRIMITIVE / NO EXECUTABLE CLAIM / NO DEPLOYMENT**.
+
+**Concrete stimulus.** An owner wants an independent human co-steward and an AI collaborator to lead a public-facing service that receives other people's contributions. The team has prepared designs, but routinely escalates modest choices for fresh owner approval. The owner explicitly delegates broad product and operating decisions. Work could resume, yet actual service permissions, live safeguards and collaborator acceptance must still be distinguished. This note uses only the non-sensitive organisational shape of the 3 November YAC handoff. It is not a substitute for that project's authoritative private record.
+
+**Read the change across the coupled loops, with separate witnesses.**
+
+1. **KNOWING.** Before delegation, the observable state is a queue of proposed decisions and held deployments. Afterward there is an attributed owner instruction granting a *scope of decision authority*. That instruction is evidence of the owner's expressed intent, not evidence that the collaborator accepted, acquired provider access, deployed anything or delivered safe outcomes. Preserve source, time, actor, scope and uncertainty.
+2. **FORMING / DOING.** The grant can enlarge the delegate's *legitimate choice set*. It does not by itself enlarge their *technical capability set*. Repository write privileges, infrastructure access, credentials, active sessions, deployment controls, technical competence and on-call cover are separate factual questions. A competent delegate may choose an existing implementation or stop one; an AI collaborator cannot inherit human legal agency just because a role label changes.
+3. **ANSWERABILITY.** Third-party contributors continue to bear privacy, publication and withdrawal risks. Previously attached constraints, consent, custodial duties, incident response, independent review, STOP and rollback do not evaporate when the deciding actor changes. The owner remains a stakeholder and possible legally accountable custodian; the delegate must be identifiable to the affected parties through an appropriate answerability route, without exposing private identity unnecessarily. Observe accepted responsibility, actual action and outcome separately.
+
+**Compression that must not collapse:**
+
+~~~text
+DELEGATED DECISION AUTHORITY
+!= PROVIDER ACCESS / CREDENTIALS
+!= WILLING ACCEPTANCE OF RESPONSIBILITY
+!= EXECUTION
+!= THIRD-PARTY CONSENT
+!= SAFETY OR BENEFIT ACHIEVED
+
+A NEW GOAL OR ASSIGNMENT
+!= AN OLD COMMITMENT DISCHARGED
+
+LEGAL / CUSTODIAL RESPONSIBILITY
+!= CONTROL OF EVERY ROUTINE DECISION
+
+A SAFE HOLD ON ONE ACTION
+!= A STOP ORDER FOR ALL INDEPENDENT WORK
+~~~
+
+The *risk asymmetry* is structural, not a generic demand for signatures. Editing a draft or choosing a design is not the same event as exposing held submissions to the public. A deployment may cause disclosure that hiding later cannot undo; requiring independent gates and an accessible STOP at that boundary is justified. Conversely, requiring the owner to reapprove every safe, reversible preparatory decision can destroy autonomy, consume attention, stretch correction clocks and turn nominal delegation into theatre. **Friction can produce harm; speed can produce harm.** The delta cannot be scored without observations of both.
+
+**A discriminating meaning-loss example.** Two statements read simply “approved.” In case A, an owner agrees to a source design; the service stays unchanged and a delegate can iterate. In case B, a human operator activates public release of third-party content. The same word carries different actors, objects, authority, affected people, clocks, reversibility and outcomes. A portable reader should preserve those differences even if the final representation is ordinary prose. No new glyph is required.
+
+**Corresponding repair to the way we work.** Record a material decision once with source and scope; let agents execute ordinary work independently under that scope. When a capability is genuinely missing, return one consolidated access need. Separate owner intent, collaborator acceptance, live permissions and effective execution as different evidence states. Route safety incidents to the responsible human and keep the affected person's correction channel reachable. Do not make consent a fiction or treat an unanswered optional wake test as blocking unrelated work.
+
+**Against overclaim.** This is a case of applying known governance, delegation and least-privilege distinctions in a portable middle-out language, not a discovery that specialists lack them. Existing ME/TRACE source/history and post-decode relations may be enough. It does **not** establish that the current TRACE executable grammar can automatically decide delegated authority or legal liability; the accepted AimRevision source review already warns that post-decode historical bindings are not the same as an implemented derivation. Nor does a GitHub receipt establish a native agent wake or a running service change.
+
+**Provisional result:** KEEP AS WORKED NAVIGATION EXAMPLE, not a new primitive, test score or YAC operating instruction. The real measure is whether a newcomer can locate the actual blocker, preserve the nonnegotiable boundary, and proceed with independent useful work without inventing permission or demanding an unnecessary approval.
