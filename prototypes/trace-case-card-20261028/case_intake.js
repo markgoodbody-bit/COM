@@ -399,17 +399,56 @@
         report('JSON prepared as a local download. Keep it private; use case_card.py to make the printable card. No upload occurred.');
       } catch (e) { report('Not exported: ' + e.message, true); }
     });
+    // Local file selection never overwrites unsaved work until explicit confirmation.
+    // Edits and later file selections invalidate an outstanding asynchronous read.
+    let pendingImport = null;
+    let importEpoch = 0;
+    const importPanel = el('pending-import');
+    const importSummary = el('pending-import-summary');
+    function discardPendingImport() {
+      ++importEpoch;
+      pendingImport = null;
+      importPanel.hidden = true;
+      importSummary.textContent = '';
+    }
+    form.addEventListener('input', discardPendingImport);
+    form.addEventListener('change', discardPendingImport);
+    form.addEventListener('click', event => {
+      if (event.target && typeof event.target.closest === 'function' &&
+          event.target.closest('[data-add],[data-remove]')) discardPendingImport();
+    });
+    el('confirm-import').addEventListener('click', () => {
+      if (!pendingImport) { report('No local import is awaiting confirmation.', true); return; }
+      const data = pendingImport;
+      discardPendingImport();
+      loadCase(data);
+      clearReview();
+      report('Local JSON imported for editing. Review all fields before exporting; no upload occurred.');
+    });
+    el('cancel-import').addEventListener('click', () => {
+      discardPendingImport();
+      report('Import cancelled; your existing draft was retained.');
+    });
     el('import-json').addEventListener('change', async event => {
       const file = event.target.files && event.target.files[0];
       if (!file) return;
+      discardPendingImport();
+      const epoch = importEpoch;
       try {
         if (file.size > LIMIT_BYTES) fail('input exceeds 128 KiB');
         const data = parseCase(await file.text());
-        loadCase(data);
-        clearReview();
-        report('Local JSON imported for editing. Review all fields before exporting; no upload occurred.');
-      } catch (e) { report('Import refused; existing form retained: ' + e.message, true); }
-      finally { event.target.value = ''; }
-    });
+        if (epoch !== importEpoch) return;
+        pendingImport = data;
+        importSummary.textContent = 'Ready to import “' + data.title + '” (' +
+          data.claims.length + ' claims, ' + (data.parties || []).length +
+          ' perspectives, ' + (data.possibilities || []).length +
+          ' options). The current unsaved draft has not been replaced.';
+        importPanel.hidden = false;
+        el('confirm-import').focus();
+        report('Import validated locally, but not applied. Choose Replace or Keep.');
+      } catch (e) {
+        if (epoch === importEpoch) report('Import refused; existing form retained: ' + e.message, true);
+      } finally { event.target.value = ''; }
+    });;
   });
 })(typeof window !== 'undefined' ? window : globalThis);
