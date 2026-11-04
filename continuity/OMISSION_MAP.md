@@ -2,7 +2,7 @@
 
 Status: **WORKING INDEX OF VISIBLE NEGATIVE SPACE — NOT CANON / NOT A BOOT CHECKLIST**  
 Updated: 2026-09-13 — Europe/London  
-Rule: absence from `FRAMEWORK_HEAD.md` does not mean absence from history/evidence.
+Rule: absence from `COMHEADS.md` or `FRAMEWORK_HEAD.md` does not mean absence from history/evidence. Current status lives in COMHEADS; FRAMEWORK_HEAD is durable orientation.
 
 This map exists to help an aperture retrieve **less**, not to enumerate everything that exists.
 

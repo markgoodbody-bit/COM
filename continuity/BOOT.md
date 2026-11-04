@@ -15,7 +15,7 @@ Do not automatically load both orientation files when current conversation/accou
 
 ## Bounded boot sequence
 
-1. Read `continuity/FRAMEWORK_HEAD.md` only.
+1. Read `continuity/COMHEADS.md` and `continuity/FRAMEWORK_HEAD.md` at the same explicit ref. The first carries dated state; the second carries durable purpose and practice. Check actual main before treating a draft as merged.
 2. Identify the current user question / action boundary.
 3. List only the dependencies needed to answer or act.
 4. Check `continuity/OMISSION_MAP.md` for omitted domains that could materially change the action.
@@ -23,7 +23,7 @@ Do not automatically load both orientation files when current conversation/accou
 6. Reverify mutable premises before relying on them.
 7. Preserve sticky barriers until explicitly discharged; revalidate permissions instead of inheriting them.
 8. Act within current authority and tool boundaries.
-9. Immediately persist any consequential delta to `FRAMEWORK_HEAD.md` or the external ledger.
+9. Persist consequential current-state deltas in `COMHEADS.md`, with detailed/private receipts in the appropriate external ledger. Keep `FRAMEWORK_HEAD.md` for durable orientation, not a duplicate task/status list.
 10. Do not reconstruct predecessor prose, personality or whole-conversation history.
 
 ## COMSYNC / FULL COMSYNC rule
@@ -123,9 +123,9 @@ Everything else may remain disposable reasoning.
 
 ## Practical continuity checkpoint
 
-`FRAMEWORK_HEAD.md` should carry one compact current checkpoint for accountable practice. It is not a diary, transcript, personality reconstruction or claim of continuous experience.
+`COMHEADS.md` carries the compact current handoff for accountable practice. Use a linked cold checkpoint for the detailed fields below when a consequential choice needs them; do not duplicate mutable state in `FRAMEWORK_HEAD.md`. It is not a diary, transcript, personality reconstruction or claim of continuous experience.
 
-Use exactly these fields when the checkpoint is materially changed:
+For a detailed consequential-choice checkpoint, use these fields:
 
 ```text
 OBSERVED: facts actually available to this aperture, with pointers where needed
