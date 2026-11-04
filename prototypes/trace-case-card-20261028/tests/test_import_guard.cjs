@@ -9,6 +9,7 @@ const source = fs.readFileSync(path.join(__dirname, '..', 'case_intake.js'), 'ut
 const html = fs.readFileSync(path.join(__dirname, '..', 'case_intake.html'), 'utf8');
 const record = {title:'Imported synthetic case', claims:[{kind:'change',text:'An authored claim',evidence:'unknown'}]};
 const encoded = JSON.stringify(record);
+let active = null;   // the element focused last, as a browser keeps it
 
 class Element {
   constructor() {
@@ -16,7 +17,7 @@ class Element {
     this.dataset = {}; this.hidden = true; this.value = ''; this.textContent = '';
   }
   addEventListener(name, callback) { this.handlers[name] = callback; }
-  focus() { this.focused = true; }
+  focus() { this.focused = true; active = this; }
   querySelectorAll(selector) { return selector === '[data-field]' ? this.fields : []; }
   querySelector(selector) {
     return selector === '[data-remove]' ? this.removeButton :
@@ -65,6 +66,7 @@ function loadUI() {
   vm.runInNewContext(source, {document, window:{}, TextEncoder, Blob, URL, setTimeout,
     module:{exports:{}}}, {timeout:1000});
   listeners.DOMContentLoaded();
+  active = null;
   return elements;
 }
 async function select(elements, text=encoded) {
@@ -115,6 +117,23 @@ test('duplicate keys refuse without replacing the current form', async () => {
   assert.equal(e['case-title'].value, 'Keep this work');
   assert.equal(e['pending-import'].hidden, true);
   assert.match(e['status'].textContent, /Import refused/);
+});
+// CASE-IMPORT-BROWSER-CHECK-20261104: found in a real Edge journey, where report() took focus after Replace was focused.
+test('after a file is staged, focus rests on Replace, not on the status line', async () => {
+  const e = loadUI(); e['case-title'].value = 'Unsaved author work';
+  await select(e);
+  assert.equal(active, e['confirm-import']);
+  assert.match(e['status'].textContent, /Choose Replace or Keep/);
+});
+test('an edit that discards a staged import says so, without moving focus', async () => {
+  const e = loadUI(); e['case-title'].value = 'Unsaved author work';
+  await select(e);
+  active = e['case-title'];
+  e['intake-form'].handlers.input();
+  assert.equal(e['pending-import'].hidden, true);
+  assert.match(e['status'].textContent, /discarded because the draft changed; your edits are kept/);
+  assert.doesNotMatch(e['status'].textContent, /Choose Replace or Keep/);
+  assert.equal(active, e['case-title']);
 });
 test('hostile-looking title remains literal text in confirmation summary', async () => {
   const e = loadUI();

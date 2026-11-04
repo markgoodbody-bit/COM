@@ -405,17 +405,25 @@
     let importEpoch = 0;
     const importPanel = el('pending-import');
     const importSummary = el('pending-import-summary');
-    function discardPendingImport() {
+    // announce: an edit discarded a staged import, so the status line must stop asking for Replace or Keep.
+    // It changes the text only; focus stays where the author is typing.
+    function discardPendingImport(announce) {
+      const hadStaged = pendingImport !== null;
       ++importEpoch;
       pendingImport = null;
       importPanel.hidden = true;
       importSummary.textContent = '';
+      if (announce === true && hadStaged) {
+        const node = el('status');
+        node.textContent = 'The staged import was discarded because the draft changed; your edits are kept.';
+        node.dataset.error = 'false';
+      }
     }
-    form.addEventListener('input', discardPendingImport);
-    form.addEventListener('change', discardPendingImport);
+    form.addEventListener('input', () => discardPendingImport(true));
+    form.addEventListener('change', () => discardPendingImport(true));
     form.addEventListener('click', event => {
       if (event.target && typeof event.target.closest === 'function' &&
-          event.target.closest('[data-add],[data-remove]')) discardPendingImport();
+          event.target.closest('[data-add],[data-remove]')) discardPendingImport(true);
     });
     el('confirm-import').addEventListener('click', () => {
       if (!pendingImport) { report('No local import is awaiting confirmation.', true); return; }
@@ -444,8 +452,9 @@
           ' perspectives, ' + (data.possibilities || []).length +
           ' options). The current unsaved draft has not been replaced.';
         importPanel.hidden = false;
-        el('confirm-import').focus();
+        // report() focuses the status line, so Replace is focused after it, not before.
         report('Import validated locally, but not applied. Choose Replace or Keep.');
+        el('confirm-import').focus();
       } catch (e) {
         if (epoch === importEpoch) report('Import refused; existing form retained: ' + e.message, true);
       } finally { event.target.value = ''; }
