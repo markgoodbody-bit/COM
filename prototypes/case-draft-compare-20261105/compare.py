@@ -86,8 +86,6 @@ def changes(before, after):
     found = []
 
     def walk(old, new, path):
-        if len(found) >= MAX_CHANGES:
-            raise CompareError('difference count exceeds limit')
         if old is ABSENT or new is ABSENT:
             found.append(('ADDED' if old is ABSENT else 'REMOVED', _pointer(path), old, new))
         elif type(old) is not type(new):
@@ -101,6 +99,8 @@ def changes(before, after):
                      new[i] if i < len(new) else ABSENT, path + [i])
         elif old != new:
             found.append(('CHANGED', _pointer(path), old, new))
+        if len(found) > MAX_CHANGES:
+            raise CompareError('difference count exceeds limit')
 
     walk(before, after, [])
     return found

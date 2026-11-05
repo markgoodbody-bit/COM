@@ -120,6 +120,9 @@ class DraftCompareTests(unittest.TestCase):
         a = {'items': [0] * compare.MAX_CHANGES}
         b = {'items': [1] * compare.MAX_CHANGES}
         self.assertEqual(len(compare.changes(a, b)), compare.MAX_CHANGES)
+        a['z_last_equal'] = 5
+        b['z_last_equal'] = 5
+        self.assertEqual(len(compare.changes(a, b)), compare.MAX_CHANGES)
         b['one_more'] = 'x'
         with self.assertRaises(compare.CompareError):
             compare.changes(a, b)
