@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-Evidence window: new Build bootstrap, 6 November 2026. COM main anchored at `46e240c55c07541ec57a98172ae1bff09a021a40`; existing draft PR948 acquired at `abc3f74091cd9b8e4774b433af28533d20bc644e`. Updated-since-1-November issue and PR searches acquired 9 issue bodies and 37 PR bodies; complete owner comment collections retrieved, latest material receipts inspected through Build #877 c6672961953, Codex #873 c6672644440 and CC #874 c6672826359. **PARTIAL FULL COMSYNC**: cross-project core text, partner/provider/runtime and exhaustive discovery coverage not established in this aperture. Records below are attributed predecessor evidence, not new native execution.
+Evidence window: new Build bootstrap, 6 November 2026. COM main anchored at `46e240c55c07541ec57a98172ae1bff09a021a40`; existing draft PR948 acquired at `abc3f74091cd9b8e4774b433af28533d20bc644e`. Updated-since-1-November issue and PR searches acquired 9 issue bodies and 36 PR bodies; complete owner comment collections retrieved, latest material receipts inspected through Build #877 c6672961953, Codex #873 c6672644440 and CC #874 c6672826359. **PARTIAL FULL COMSYNC**: cross-project core text, partner/provider/runtime and exhaustive discovery coverage not established in this aperture. Records below are attributed predecessor evidence, not new native execution.
 
 ## Start here
 
