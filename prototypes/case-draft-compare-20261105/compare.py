@@ -15,6 +15,7 @@ import tempfile
 MAX_BYTES = 131072
 MAX_DEPTH = 32
 MAX_CHANGES = 1024
+EXACT_ROW_SETS = frozenset(('claims', 'parties', 'possibilities'))
 ABSENT = object()
 
 
@@ -77,11 +78,12 @@ def _pointer(parts):
     return '/' + '/'.join(str(p).replace('~', '~0').replace('/', '~1') for p in parts)
 
 
-def changes(before, after):
-    """Positional, exact structural changes; order changes may look like edits.
+def changes(before, after, exact_row_moves=False):
+    """Positional exact changes; optionally recognize whole-row-set permutations.
 
     Missing keys/rows remain ABSENT, distinct from explicit JSON null.
     No inference of authorship, event changes or claim correctness is made.
+    Exact row moves require equal JSON-value multisets; edited rows still use positional diff.
     """
     found = []
 
@@ -94,9 +96,17 @@ def changes(before, after):
             for k in sorted(set(old) | set(new)):
                 walk(old.get(k, ABSENT), new.get(k, ABSENT), path + [k])
         elif isinstance(old, list):
-            for i in range(max(len(old), len(new))):
-                walk(old[i] if i < len(old) else ABSENT,
-                     new[i] if i < len(new) else ABSENT, path + [i])
+            if (exact_row_moves and len(path) == 1 and path[0] in EXACT_ROW_SETS
+                    and old != new and len(old) == len(new)
+                    and all(isinstance(row, dict) for row in old + new)
+                    and Counter(_quote(row) for row in old) == Counter(_quote(row) for row in new)):
+                # This is a change in sequence, not evidence that any row/entity changed.
+                # Duplicate identical rows have no inferred individual identities.
+                found.append(('REORDERED', _pointer(path), old, new))
+            else:
+                for i in range(max(len(old), len(new))):
+                    walk(old[i] if i < len(old) else ABSENT,
+                         new[i] if i < len(new) else ABSENT, path + [i])
         elif old != new:
             found.append(('CHANGED', _pointer(path), old, new))
         if len(found) > MAX_CHANGES:
@@ -120,10 +130,11 @@ def render(differences, before_hash, after_hash, summary=False):
         'BEFORE_SHA256: ' + before_hash,
         'AFTER_SHA256: ' + after_hash,
         'ADDED: ' + str(counts['ADDED']) + ' | REMOVED: ' + str(counts['REMOVED']) +
-        ' | CHANGED: ' + str(counts['CHANGED']),
+        ' | CHANGED: ' + str(counts['CHANGED']) + ' | REORDERED: ' + str(counts['REORDERED']),
         'Comparison of author JSON, not a claim about real events, witnesses, standing,',
         'permission, evidence quality, or whether any correction was reached.',
-        'List items are compared by position; changes may reflect reordering, not changed identity.',
+        'Lists compare by position unless opt-in REORDERED identifies an exact whole-row-set permutation.',
+        'REORDERED does not identify individual rows, authors, affected people or events.',
         'Absent is not the same as null or an explicit unknown label.',
     ]
     if not differences:
@@ -168,13 +179,16 @@ def main(argv=None):
     parser.add_argument('before', help='older author-held JSON draft')
     parser.add_argument('after', help='newer author-held JSON draft')
     parser.add_argument('--summary', action='store_true', help='counts only, omit author text and paths')
+    parser.add_argument('--exact-row-moves', action='store_true',
+                        help='report exact whole-row permutations in claims/parties/possibilities as REORDERED')
     parser.add_argument('--output', '-o', help='atomically write report only after successful comparison')
     args = parser.parse_args(argv)
     try:
         if args.output and Path(args.output).resolve() in {Path(args.before).resolve(), Path(args.after).resolve()}:
             raise CompareError('output must not overwrite either input')
         a, b = _read(args.before), _read(args.after)
-        result = render(changes(parse_json(a), parse_json(b)), sha256(a), sha256(b), args.summary)
+        result = render(changes(parse_json(a), parse_json(b), args.exact_row_moves),
+                        sha256(a), sha256(b), args.summary)
         if args.output:
             _atomic(args.output, result)
         else:
