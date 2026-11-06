@@ -133,7 +133,8 @@ def render(differences, before_hash, after_hash, summary=False):
         ' | CHANGED: ' + str(counts['CHANGED']) + ' | REORDERED: ' + str(counts['REORDERED']),
         'Comparison of author JSON, not a claim about real events, witnesses, standing,',
         'permission, evidence quality, or whether any correction was reached.',
-        'Lists compare by position unless opt-in REORDERED identifies an exact whole-row-set permutation.',
+        'List items compare by position by default; changes may reflect reordering, not changed identity.',
+        'Opt-in REORDERED identifies only an exact whole-row-set permutation.',
         'REORDERED does not identify individual rows, authors, affected people or events.',
         'Absent is not the same as null or an explicit unknown label.',
     ]
