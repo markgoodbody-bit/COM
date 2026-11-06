@@ -32,24 +32,25 @@ Public entrance: https://pleasestartfromhere.com/
 
 **TRACE** is a structural language for situations where partial evidence, changing conditions, affected scopes, clocks, usable routes, authority, burdens, residue and correction need to remain connected.
 
-The selected public reading copy is the **released TRACE v0.4.0 formal baseline and current compact specification**. It remains not validated and has no demonstrated efficacy result. TRACE v0.3.0 is preserved as the previous released formal baseline and full technical donor/reference.
+The current released specification is **TRACE v0.5.0**, linked below. The local v0.4.0 copy is historical. It remains not validated and has no demonstrated efficacy result. TRACE v0.3.0 is preserved as the previous released formal baseline and full technical donor/reference.
 
 TRACE does not decide what should be valued, grant authority, settle standing, or replace stronger domain methods. If another method preserves what matters with less burden, that is a reason to use the other method.
 
-Introduction: https://pleasestartfromhere.com/resources/trace/README.md  
-Compact spine: https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md  
+Historical local introduction: https://pleasestartfromhere.com/resources/trace/README.md  
+Released specification: https://github.com/markgoodbody-bit/TRACE/blob/2312e5fa0535d25e8cafa0e7ee5d43564449d2a2/TRACE-v0.5.md  
 Source repository: https://github.com/markgoodbody-bit/TRACE
 
 ### Mechanical Ethics
 
 **Mechanical Ethics** is the human-facing ethical/normative companion. It is concerned especially with the distance between a record and the life it affects: practical access, harm, care, answer-back, correction and what remains after a formal repair.
 
-The selected public reading copy is the **released Mechanical Ethics v0.8.0 formal baseline and current reader**. It remains not validated. Mechanical Ethics v0.7.0 is preserved as the previous released baseline.
+The current released book is **Mechanical Ethics v1.0.0**, linked below. The local v0.8.0 reader is historical. It remains not validated. Mechanical Ethics v0.7.0 is preserved as the previous released baseline.
 
 Mechanical Ethics is not a universal priority rule and does not make kindness equivalent to passivity, obedience or permanent preservation.
 
-Introduction: https://pleasestartfromhere.com/resources/mechanical-ethics/README.md  
-Book: https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md  
+Historical local introduction: https://pleasestartfromhere.com/resources/mechanical-ethics/README.md  
+Book: https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/working-editions/v1.0/ME10_DEV4R_CORR2_Source_Preserved_Master.md  
+Release receipt (supersedes preserved draft labels): https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/RELEASE_v1.0.0.md  
 Source repository: https://github.com/markgoodbody-bit/mechanical-ethics
 
 ### Works and stories

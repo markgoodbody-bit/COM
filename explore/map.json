@@ -335,13 +335,13 @@
     },
     {
       "path": "packet.json",
-      "bytes": 21367,
-      "sha256": "eb22bc232cc320f93cb31aedc6d85bfbc29b8fe45707424957596954f9ec1468"
+      "bytes": 21397,
+      "sha256": "4ff708df2b1accd8b86569e1405171b8c37183ec0f51bf7f878b5186535aedf1"
     },
     {
       "path": "packet.md",
       "bytes": 19841,
-      "sha256": "8e3029b2f58c54f91ce93dddba5552db0bf5d6db991b712601fa374fde9c5678"
+      "sha256": "2841a0b13c699746e8a35697f46e8cd9aa31f9222b9eeddb3760c875e679c3c3"
     },
     {
       "path": "questions.json",
@@ -356,22 +356,22 @@
     {
       "path": "sources.html",
       "bytes": 3067,
-      "sha256": "3c791399484da272b78e9f145046571b4d3da39f9a11055d9e0afbad4bccdec5"
+      "sha256": "c934fffbafa0d0d9a85b98b40b0067659a6ca3c52f289158fbc1a5b742ae5b5b"
     },
     {
       "path": "sources.json",
-      "bytes": 2952,
-      "sha256": "5796c893bad9d60e1bb81801acf45c5ae33b4dd48b3a5a97d345b22264612d80"
+      "bytes": 2982,
+      "sha256": "03cce3e6862e24da3d20b34912290f9328ba5fc7a01181e58480c0b93a7860e1"
     },
     {
       "path": "sources.md",
       "bytes": 2217,
-      "sha256": "16bd4115f63f2a8bd3dfe2285df63066e2a74e0a7b2835ab261ed69b393abd45"
+      "sha256": "bcff0f4dea18e305ea50b418294403b8eb3ce51e71c14062848fad9c724d05da"
     },
     {
       "path": "start.json",
-      "bytes": 7223,
-      "sha256": "e01f3ac4538c927cc921e11176dcd359f6b65e6d778fba7ea84546589a658217"
+      "bytes": 7637,
+      "sha256": "ff2cbb54276aebd6ba93056ebf1235ca939179324db7eee55a29afda0385fb67"
     },
     {
       "path": "worked-revision.html",

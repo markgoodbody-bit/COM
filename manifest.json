@@ -1,11 +1,11 @@
 {
   "version": "0.1",
-  "site_edition": "0.8.55",
+  "site_edition": "0.8.56",
   "name": "Please Start From Here",
   "canonical_url": "https://pleasestartfromhere.com/",
   "purpose": "A voluntary starting point offered to any reader able to use it, for examining changing situations, constructive possibilities and consequential decisions where no account has the whole view and correction may arrive too late.",
   "status": "Working static orientation; not validation, project canon, operational permission or a claim of reader benefit.",
-  "updated": "2026-10-06",
+  "updated": "2026-11-06",
   "updated_meaning": "Date of the latest deliberate material revision to this site/manifest representation, matched to the newest change-history entry. Not build time, linked-source freshness or continuous monitoring.",
   "maintained_by": "Mark, with AI collaborators",
   "routes": {
@@ -78,9 +78,9 @@
     "explore_source_commit": "1b41e0c9fec685dcd462c925c651ec6bd4debd3a",
     "change_history_previous_source_commit": "55b9690d7a45a313871e1b5fbbfc64083c4b1ebd",
     "change_history_source_path": "public/changes.md in the maintained site source",
-    "change_history_sha256": "d482de19c1944cb66e136dfa0d8fe5e87f45cd846f36fef150794482de1bf05b",
-    "change_history_input_html_sha256": "8fb3cc21026f176b5dcd0bdcbf74ac6f1e3ac7f6bc32b7676aabd9cb45c0503b",
-    "change_history_addendum_note": "D016 through D038 and D045-D098 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries.",
+    "change_history_sha256": "1a9c75ab5c474bb1f4088bfd9c8df0ee60c6281bba60ea771240110d3a46d28e",
+    "change_history_input_html_sha256": "7683614f642cdbef38af56bf0cc6948c34b4e36c0f76f1241a92ceb2fc750943",
+    "change_history_addendum_note": "D016 through D038 and D045-D098 are manually paired Markdown/HTML entries; D045 records the D044 withdrawal of D039-D043. Earlier generator identity applies to the preserved older entries. D100 is the separately dated November current-release routing entry; earlier entries remain unchanged.",
     "arrival_handshake": {
       "source_patch": "ffe37610ea90db64ea5069083eb29518957d31a8",
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5647532119",
@@ -232,14 +232,14 @@
         "source": "explore/start.json",
         "title": "Start: complete JSON source text",
         "edition": "Site Preview 0.8.25, worked relationship route (D066); not validation",
-        "sha256": "e01f3ac4538c927cc921e11176dcd359f6b65e6d778fba7ea84546589a658217"
+        "sha256": "ff2cbb54276aebd6ba93056ebf1235ca939179324db7eee55a29afda0385fb67"
       },
       {
         "output": "read/orientation.html",
         "source": "llms.txt",
         "title": "Orientation: complete text source",
         "edition": "Site Preview 0.8.29, THR four-record currentness (D072); not validation",
-        "sha256": "15b3e5320da06f73111e6dc045c2a9db9a9b8c55d627f1b206a640ab69f60bd1"
+        "sha256": "09f3681e25172b8a3c7e3c5b9f0bdc3c36674198886e6e2b3b68c142ff53f426"
       },
       {
         "output": "read/trace-spine.html",
@@ -332,11 +332,11 @@
       "graph_sha256": "db9f7eeba8d1c17c89b1cec7228b4a17fbd49ec20be95ca8d4773bde0a55f04e",
       "scope": "Ten existing reading presentations; Futures composes its existing Shen Zhou art entrance with the reading room. Existing accounts and graph; non-generic standing is visible from the source kind field. No new semantics, art selection or measured reader benefit. Raw sources remain directly reachable."
     },
-    "change_history_html_sha256": "d042faa8dd13e2ec1111cf2727ff8333700b4e3ae22dbe902caa0aed409c2a33",
+    "change_history_html_sha256": "18cb1e9e7dd21a9e965cd155ad85d46ec0effa0dde566a9a0760a531dec98c53",
     "presentation": {
       "direction": "https://github.com/markgoodbody-bit/COM/issues/108#issuecomment-5586692116",
       "stylesheet": "/style.css",
-      "stylesheet_sha256": "53409e75810ede3ab33028c32229dc31ce6150ac2d3afc33ba8a9752098edeef",
+      "stylesheet_sha256": "3f18fa4c963ecfa1c34a5ef3d30c09dec97670dae1dcfcac7de63a5f5dd7dac3",
       "scope": "Shared HTML presentation; original source text, raw files and fixed editions unchanged."
     }
   },
@@ -360,5 +360,18 @@
     "third_party_rights": "Excluded from the grant; their own terms apply.",
     "provenance": "Requested, not a condition of permission.",
     "limit": "Custom scoped permission, not a standard open-content licence or guarantee of dataset inclusion."
+  },
+  "current_released_sources": {
+    "as_of": "2026-11-06",
+    "mechanical_ethics": {
+      "version": "1.0.0",
+      "book": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/working-editions/v1.0/ME10_DEV4R_CORR2_Source_Preserved_Master.md",
+      "release_receipt": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/RELEASE_v1.0.0.md"
+    },
+    "trace": {
+      "version": "0.5.0",
+      "specification": "https://github.com/markgoodbody-bit/TRACE/blob/2312e5fa0535d25e8cafa0e7ee5d43564449d2a2/TRACE-v0.5.md"
+    },
+    "local_copy_status": "Local ME0.8/TRACE0.4 files and their hashes remain historical snapshots. These current routes do not replace those bytes or extend permissions."
   }
 }

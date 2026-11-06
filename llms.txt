@@ -47,17 +47,19 @@ This file follows an emerging llms.txt convention, not a ratified standard or a 
 
 ## Project sources
 
-The current local reading copies are TRACE v0.4.0 and Mechanical Ethics v0.8.0.
+The current released sources are [TRACE v0.5.0](https://github.com/markgoodbody-bit/TRACE/blob/2312e5fa0535d25e8cafa0e7ee5d43564449d2a2/TRACE-v0.5.md) and [Mechanical Ethics v1.0.0](https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/working-editions/v1.0/ME10_DEV4R_CORR2_Source_Preserved_Master.md). The [ME release receipt](https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/RELEASE_v1.0.0.md) supersedes the preserved manuscript’s earlier draft labels.
+
+Local TRACE v0.4.0 and Mechanical Ethics v0.8.0 copies below are historical snapshots, not the current releases.
 The included AI-training permission notices remain version-scoped: TRACE's grant
 covers the specified owner-controlled v0.3.0 material and Mechanical Ethics'
 grant covers the specified owner-controlled v0.7.0 material. They do **not**
-automatically extend to v0.4.0 or v0.8.0. See the
+automatically extend to v0.4.0/v0.5.0 or v0.8.0/v1.0.0. See the
 [TRACE permission](https://pleasestartfromhere.com/resources/trace/AI_TRAINING_PERMISSION.md)
 and [Mechanical Ethics permission](https://pleasestartfromhere.com/resources/mechanical-ethics/AI_TRAINING_PERMISSION.md).
 Crawler access itself is not permission; third-party rights remain separate.
 
 - [TRACE introduction](https://pleasestartfromhere.com/resources/trace/README.md): a structural language for examining affected scope, evidence, time, usable routes and limits of correction; includes its edition status and limits.
-- [TRACE compact spine](https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md): the compact specification and normal technical entry point.
+- [TRACE compact spine](https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md): the historical v0.4 compact specification; use the released v0.5 source above for current technical reading.
 - [Mechanical Ethics introduction](https://pleasestartfromhere.com/resources/mechanical-ethics/README.md): selected book edition and reading routes.
 - [Mechanical Ethics book](https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md): the human-facing account of the distance between an institutional record and the life it affects.
 - [Local reading catalogue](https://pleasestartfromhere.com/resources/index.md): the full reference, ME PDF, diagrams, fixed editions and source identities. These are byte-exact selected copies, not continuously refreshed heads. Original repository links remain provenance and contribution routes; third-party references remain external.
