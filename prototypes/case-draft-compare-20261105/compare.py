@@ -7,6 +7,7 @@ import argparse
 from collections import Counter
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import sys
@@ -52,6 +53,10 @@ def _check_tree(item, depth=0):
             _check_tree(val, depth + 1)
     elif isinstance(item, str):
         _check_text(item)
+    elif isinstance(item, float) and not math.isfinite(item):
+        # JSON's numeric exponent can overflow Python's float without invoking
+        # parse_constant; reject it before distinct authored values collapse.
+        raise CompareError('non-finite JSON value')
 
 
 def _check_text(text):
