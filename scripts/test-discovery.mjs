@@ -172,9 +172,11 @@ test('released core aliases carry the released status without validation upgrade
 
 test('one-file project packet names the current released core versions',async()=>{
  const packet=await readFile('out/packet.md','utf8');
- assert.match(packet,/released TRACE v0\.4\.0 formal baseline and current compact specification/);
+ assert.match(packet,/current released specification is \*\*TRACE v0\.5\.0\*\*/);
+ assert.match(packet,/local v0\.4\.0 copy is historical/);
  assert.match(packet,/TRACE v0\.3\.0 is preserved as the previous released formal baseline and full technical donor\/reference/);
- assert.match(packet,/released Mechanical Ethics v0\.8\.0 formal baseline and current reader/);
+ assert.match(packet,/current released book is \*\*Mechanical Ethics v1\.0\.0\*\*/);
+ assert.match(packet,/local v0\.8\.0 reader is historical/);
  assert.match(packet,/Mechanical Ethics v0\.7\.0 is preserved as the previous released baseline/);
  assert.doesNotMatch(packet,/released TRACE v0\.3\.0 formal baseline and current specification/);
  assert.doesNotMatch(packet,/released Mechanical Ethics v0\.7\.0 formal baseline and current reader/);
@@ -187,10 +189,24 @@ test('Explore keeps historical source basis separate from current repository rou
  assert.equal(sources.me.commit,'44f7efb59806242fd26c572cbfbaaeaefaea2058');
  assert.match(sources.trace.label,/source snapshot/);
  assert.match(sources.me.label,/source snapshot/);
- assert.equal(sources['trace-home'].commit,'6c68fae8cbc51d0ef1e77a18e220ceb7a1207025');
- assert.equal(sources['me-home'].commit,'e2ef746e931161cb70ac46a4eaa122442134e86b');
+ assert.equal(sources.trace.url,'https://github.com/markgoodbody-bit/TRACE/blob/46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b/TRACE-SPINE.md');
+ assert.equal(sources.me.url,'https://github.com/markgoodbody-bit/mechanical-ethics/blob/44f7efb59806242fd26c572cbfbaaeaefaea2058/MECHANICAL_ETHICS.md');
+ assert.equal(sources['trace-home'].commit,'2312e5fa0535d25e8cafa0e7ee5d43564449d2a2');
+ assert.equal(sources['me-home'].commit,'e97a2aa97360c39d10857fdbf82d058ac77099aa');
  assert.match(sources['trace-home'].label,/current-source route/);
  assert.match(sources['me-home'].label,/current-source route/);
+ // The sections a current route names are headings in the README at that release commit, checked when these pins were set.
+ assert.deepEqual(sources['trace-home'].sections,['Read','Limits and rights']);
+ assert.deepEqual(sources['me-home'].sections,['Editions and project history','Read the released baseline','Release integrity and rights']);
+ // A current route agrees with the release the manifest names, and its url, raw url and commit name one object.
+ const released=JSON.parse(await readFile('out/manifest.json','utf8')).current_released_sources;
+ const commitOf=url=>url.match(/\/blob\/([0-9a-f]{40})\//)[1];
+ assert.equal(sources['trace-home'].commit,commitOf(released.trace.specification));
+ assert.equal(sources['me-home'].commit,commitOf(released.mechanical_ethics.book));
+ for(const [record,repository] of [[sources['trace-home'],'TRACE'],[sources['me-home'],'mechanical-ethics']]){
+   assert.equal(record.url,`https://github.com/markgoodbody-bit/${repository}/blob/${record.commit}/README.md`);
+   assert.equal(record.raw_url,`https://raw.githubusercontent.com/markgoodbody-bit/${repository}/${record.commit}/README.md`);
+ }
  const packet=JSON.parse(await readFile('out/explore/packet.json','utf8')).sources;
  assert.deepEqual(packet,sources);
 
@@ -204,6 +220,9 @@ test('Explore keeps historical source basis separate from current repository rou
    assert.match(humanPage,new RegExp(sources.me.commit));
    assert.doesNotMatch(humanPage,/8310d2531d3b2fe4e3b44c92d1d544a322f52bf4/);
    assert.doesNotMatch(humanPage,/25a9d793af1cded26dd2d766e1d1c08e1b30f652/);
+   // The previous release READMEs must not come back under a current label. Those commits stay valid elsewhere, for the local historical copies.
+   assert.doesNotMatch(humanPage,/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025/);
+   assert.doesNotMatch(humanPage,/e2ef746e931161cb70ac46a4eaa122442134e86b/);
  }
 
  const manifest=JSON.parse(await readFile('out/manifest.json','utf8'));
@@ -256,14 +275,16 @@ test('root metadata names only the first-party canonical origin',()=>{
 
 test('current history and edition agree',async()=>{
  const m=JSON.parse(await readFile('out/manifest.json'));
- assert.equal(m.site_edition,'0.8.55');
- assert.equal(m.updated,'2026-10-06');
+ assert.equal(m.site_edition,'0.8.56');
+ assert.equal(m.updated,'2026-11-06');
  const md=await readFile('out/changes.md','utf8');
  const rendered=await readFile('out/changes.html','utf8');
+ assert.match(md,/### D100\s+6 November 2026/);
+ assert.match(rendered,/<h3 id="d100">D100<\/h3>/);
  assert.match(md,/### D098\s+6 October 2026/);
  assert.match(rendered,/<h3 id="d098">D098<\/h3>/);
- assert.match(md,/Edition 0\.68/);
- assert.match(rendered,/Edition 0\.68/);
+ assert.match(md,/Edition 0\.8\.56/);
+ assert.match(rendered,/Edition 0\.8\.56/);
  assert.match(md,/### D097\s+30 September 2026/);
  assert.match(rendered,/<h3 id="d097">D097<\/h3>/);
  assert.match(md,/### D096\s+30 September 2026/);

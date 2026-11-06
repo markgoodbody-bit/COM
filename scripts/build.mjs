@@ -141,6 +141,23 @@ await applyContextualArt(path.join(root, 'out'), path.join(root, 'public'));
 await applyHouseStyle(path.join(root, 'out'));
 // These dedicated pages retain their reviewed, medium-specific styles.
 await copyWorks(path.join(root, 'public'), path.join(root, 'out'));
+// D099 reader copies existed only on Pages. Retain exact reviewed bytes in
+// the deterministic build, after house style, so its legacy routes also work offline.
+for (const [relative, expected] of [
+  [
+    "read/me-v0.8.html",
+    "ea5f54d87a4b7c88f6de4bf009db304f1e57b1bc53562e8abd5d26c9ea31671f"
+  ],
+  [
+    "explore/challenge-local.html",
+    "5b756ad7b70d4a1e1027bf28999eda4353eae736631af507ac64c4908cd98373"
+  ]
+]) {
+  const bytes = await readFile(path.join(root, 'public', relative));
+  if (createHash('sha256').update(bytes).digest('hex') !== expected) throw new Error('Retained published reader changed: ' + relative);
+  await mkdir(path.dirname(path.join(root, 'out', relative)), { recursive: true });
+  await writeFile(path.join(root, 'out', relative), bytes);
+}
 console.log('Static build: preserved reading sources; optional homepage navigation script, no server runtime.');
 for (const relativePath of ['out/index.html', 'out/404.html', 'downloads/Campfire-preview.html', ...machineFiles.map(name => 'out/' + name)]) {
   const bytes = await readFile(path.join(root, relativePath));

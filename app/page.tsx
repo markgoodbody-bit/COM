@@ -11,6 +11,10 @@ const reciprocalFormation = "https://github.com/markgoodbody-bit/COM/blob/main/a
 const reciprocalFormationWorked = "https://github.com/markgoodbody-bit/COM/blob/main/alignment/reciprocal_formation/WORKED_RELATIONSHIP.md";
 const answerableConstruction = "https://github.com/markgoodbody-bit/COM/blob/main/answerable-construction/README.md";
 const openHorizon = "https://github.com/markgoodbody-bit/COM/blob/main/open-horizon/README.md";
+const releasedME = "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/working-editions/v1.0/ME10_DEV4R_CORR2_Source_Preserved_Master.md";
+const releasedPDF = "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/working-editions/v1.0/Mechanical_Ethics_The_Moving_Ground_DEV4R_CORR2_Vector_A4.pdf";
+const releaseReceipt = "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/RELEASE_v1.0.0.md";
+const releasedTRACE = "https://github.com/markgoodbody-bit/TRACE/blob/2312e5fa0535d25e8cafa0e7ee5d43564449d2a2/TRACE-v0.5.md";
 const heroFallback = CAMP_FIRE.responsive.variants.find(copy => copy.width === 1440);
 if (!heroFallback) throw new Error('Missing pinned 1440px artwork fallback');
 export default function Home() {
@@ -33,6 +37,7 @@ export default function Home() {
             </div>
         </div>
         </div>
+        <section className="human-first-door" aria-labelledby="human-door-title"><p className="human-door-kicker">Independent research · free to read or leave</p><h2 id="human-door-title">Decisions can be right on paper and wrong in a life.</h2><p className="human-door-lead">Mechanical Ethics is a complete free book about what happens while real people wait for a correction — and what we can build to keep worthwhile futures open. TRACE is an optional technical companion.</p><nav className="human-door-routes" aria-label="Ways to begin"><a href="#step-story"><strong>Read the three-minute story</strong><span>One composite example</span></a><a href={releasedME}><strong>Read the complete book</strong><span>Released ME v1.0.0 · manuscript</span></a><a href="/llms.txt"><strong>Reading as an AI?</strong><span>Compact text route</span></a></nav><p className="human-door-neighbours">Related places: <a href="https://yetanotherclearing.com/">Yet Another Clearing</a> for public reading and experimental conversations (check live admission there); <a href="https://thehumanrecord.net/">The Human Record</a> for source and witness records. These are separate experiments.</p><p className="human-door-status">Mechanical Ethics v1.0.0 is the released book. <a href="/read/me-v0.8.html">Historical v0.8 HTML reader</a>. The wider research remains open to scrutiny and correction. <a href="#project">About this project</a> · <a href={releasedPDF}>Released PDF</a> · <a href={releasedME}>Released manuscript</a>.</p><p className="human-door-status"><a href="/explore/challenge-local.html">Prepare a challenge on your own device</a> (copy or save; NOT SUBMITTED, no account needed to prepare). <a href="/explore/challenge.html">How correction reaches the project</a>.</p><details className="human-door-details" id="human-door-limits"><summary>Limits, source status, and help with a housing problem now</summary><p>Mechanical Ethics v1.0.0 and TRACE v0.5.0 are released reading baselines, not validated methods. Yet Another Clearing and The Human Record are separate experiments. Reading grants no permission or obligation, and this project is not a substitute for established specialist help.</p><p><strong>For a housing problem affecting you now:</strong> this site is not a housing support service. <a href="https://england.shelter.org.uk/housing_advice/repairs/damp_and_mould_in_rented_homes">Shelter: damp and mould in rented homes</a> and <a href="https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector">GOV.UK: guidance for English social landlords</a> offer established starting points. The appropriate action depends on the situation; this site does not provide legal or clinical advice.</p></details></section>
         <article className="concrete-story opening-story" id="step-story" aria-labelledby="two-flats-heading">
           <header>
             <p className="eyebrow">One small story · Composite scene</p>
@@ -46,14 +51,14 @@ export default function Home() {
               <p><strong>What had changed by the time an inspection was offered?</strong></p>
               <p><strong>What could each household actually reach while the same wall was changing?</strong></p>
             </div>
-            <p className="story-source">A composite scene from <cite>Mechanical Ethics</cite>. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the fuller story</a>.</p>
+            <p className="story-source">A composite scene from <cite>Mechanical Ethics</cite>. <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read the fuller story in the historical local edition</a>.</p>
           </div>
           <details className="story-bridge" id="story-bridge">
             <summary>Looking more closely</summary>
             <p>Mechanical Ethics follows what happens to the family while the case moves through the system.</p>
             <p>TRACE distinguishes receiving an acknowledgement from reaching someone able to act. It separates the inspection&apos;s timing from the family&apos;s move, and the closing of the case from the consequences that remain.</p>
             <p>While the family was still there, who could act on the room? What would show that help had actually reached them?</p>
-            <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Read Mechanical Ethics</a> · <a href="/resources/trace/TRACE-SPINE.md">Explore TRACE</a></p>
+            <p><a href={releasedME}>Read Mechanical Ethics v1.0</a> · <a href={releasedTRACE}>Explore TRACE v0.5</a></p>
           </details>
           <div className="journey-options">
             <a className="journey-primary" href="#project">Continue: what this project is trying to do</a>
@@ -82,7 +87,7 @@ export default function Home() {
           </nav>
           <div className="project-parts">
             <p><a href="/explore/challenge.html">Challenge or disagree with the work</a>.</p>
-            <p><a href="/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href="/resources/trace/TRACE-SPINE.md">TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
+            <p><a href={releasedPDF}>Mechanical Ethics</a> is the human-facing book about the distance between an institutional record and the life it affects. <a href={releasedTRACE}>TRACE</a> is the compact structural language for examining evidence, time, usable routes and correction.</p>
             <details id="current-work" className="current-work">
               <summary>Current workshop — optional work in progress</summary>
               <p><a href={openHorizon}>Open Horizon</a> keeps the project larger than whichever instrument or topic is currently receiving attention. It is an expansion map and discoverability surface for underexplored better-future territory — not canon, not backlog, not TRACE schema, not a validation plan, and not a claim that this project owns the neighbouring fields.</p>
@@ -224,14 +229,14 @@ export default function Home() {
         <p className="route">Continue in your own context, or inspect external participation and reply limits under <a href="/explore/challenge.html">Challenge</a>.<br/><a href="https://pleasestartfromhere.com/explore/challenge.md">https://pleasestartfromhere.com/explore/challenge.md</a></p>
         <div className="readings">
           <article>
-            <h3><a href="https://pleasestartfromhere.com/resources/trace/README.md">TRACE</a></h3>
+            <h3><a href={releasedTRACE}>TRACE v0.5</a></h3>
             <p>A structural language for keeping affected scope, evidence, time, usable routes and the limits of correction connected.</p>
-            <p className="route"><a href="https://pleasestartfromhere.com/resources/trace/README.md">Introduction and edition status</a><br/><a href="https://pleasestartfromhere.com/resources/trace/TRACE-SPINE.md">Compact spine</a> · <a href="https://pleasestartfromhere.com/resources/trace/TRACE.md">Full reference</a><br/><a href={trace}>Source repository and history</a></p>
+            <p className="route"><a href="https://pleasestartfromhere.com/resources/trace/README.md">Historical local introduction</a><br/><a href={releasedTRACE}>Released v0.5 specification</a> · <a href="https://pleasestartfromhere.com/resources/trace/TRACE.md">Historical full reference</a><br/><a href={trace}>Source repository and history</a></p>
           </article>
           <article>
-            <h3><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/README.md">Mechanical Ethics</a></h3>
+            <h3><a href={releasedME}>Mechanical Ethics v1.0</a></h3>
             <p>The human-facing book about the distance between an institutional record and the life it affects, especially when correction arrives too late.</p>
-            <p className="route"><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/README.md">Introduction and edition status</a><br/><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Book: Markdown</a> · <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">PDF</a><br/><a href={me}>Source repository and history</a></p>
+            <p className="route"><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/README.md">Historical local introduction</a><br/><a href={releasedME}>Released v1.0 book</a> · <a href={releasedPDF}>Released PDF</a> · <a href={releaseReceipt}>Release receipt</a><br/><a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.md">Historical v0.8 Markdown</a> · <a href="https://pleasestartfromhere.com/resources/mechanical-ethics/MECHANICAL_ETHICS.pdf">Historical v0.8 PDF</a><br/><a href={me}>Source repository and history</a></p>
           </article>
         </div>
         <p><a href="https://pleasestartfromhere.com/resources/">All local reading files, diagrams and fixed editions</a>.</p>
@@ -255,7 +260,7 @@ export default function Home() {
     <footer>
       <p>Working preview · Site Preview {SITE_EDITION}. <a href="#top">Back to the opening</a> · <a href="/explore/#reading-map">Go to the map</a>.</p>
       <p>What changed and why: <a href="https://pleasestartfromhere.com/changes.html">https://pleasestartfromhere.com/changes.html</a></p>
-      <p>Current released reading copies: <a href={trace + "/tree/6c68fae8cbc51d0ef1e77a18e220ceb7a1207025"}>TRACE v0.4.0</a> · <a href={me + "/tree/e2ef746e931161cb70ac46a4eaa122442134e86b"}>Mechanical Ethics v0.8.0</a> · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>.</p>
+      <p>Current released sources: <a href={releasedTRACE}>TRACE v0.5.0</a> · <a href={releaseReceipt}>Mechanical Ethics v1.0.0</a>. Local v0.4/v0.8 copies remain historical · <a href="https://github.com/markgoodbody-bit/COM/issues/108">Build discussion</a>.</p>
       <details className="technical-handoff">
         <summary>Machine and technical routes</summary>
         <p><strong>Compact text and machine routes:</strong> <a href="https://pleasestartfromhere.com/llms.txt">llms.txt</a> · <a href="https://pleasestartfromhere.com/explore/start.json">start.json</a>. No special prompt is required; the site itself carries the invitation.</p>
