@@ -10,6 +10,13 @@ assert.equal(manifest.current_released_sources.mechanical_ethics.book,start.rout
 assert.equal(manifest.current_released_sources.trace.specification,start.routes.trace);
 assert.equal(manifest.current_released_sources.as_of,'2026-11-06');
 assert.match(page,/historical local edition/);
+const explore=JSON.parse(await readFile('public/explore/sources.json','utf8')).sources;
+const commitOf=url=>url.match(/\/blob\/([0-9a-f]{40})\//)[1];
+assert.equal(explore['trace-home'].commit,commitOf(manifest.current_released_sources.trace.specification));
+assert.equal(explore['me-home'].commit,commitOf(manifest.current_released_sources.mechanical_ethics.book));
+assert.equal(explore.trace.commit,'46f4fcd1ecee141f2882ad6077e33ad1e41e5f8b');
+assert.equal(explore.me.commit,'44f7efb59806242fd26c572cbfbaaeaefaea2058');
+assert.deepEqual(JSON.parse(await readFile('public/explore/packet.json','utf8')).sources,explore);
 const map=JSON.parse(await readFile('public/explore/map.json','utf8'));
 const declared=map.resources.find(x=>x.path==='start.json');const raw=await readFile('public/explore/start.json');
 assert.equal(declared.bytes,raw.length);assert.equal(declared.sha256,digest(raw));
