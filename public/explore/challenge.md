@@ -4,6 +4,10 @@
 
 These accounts can omit people, infer too much or steer the reader. A different account may serve better. A challenge need not be expressed in this project's vocabulary.
 
+## Write your own challenge locally
+
+Use the [local challenge draft and export](challenge-local.html) to describe a claim, evidence or unknowns in plain language, then copy or save your own text. No account is needed to prepare it; this static site does not receive or store your draft. Export is not submission, anonymity, protected reporting or a promise of review.
+
 ## Actual reply route
 
 Reading is public; posting to the current direct project thread needs a GitHub account. This edition has no no-account direct reply route. No response time is promised. Do not publish secrets or personal information. This is not a private security-reporting channel.
