@@ -243,5 +243,18 @@
     "third_party_rights": "Excluded from the grant; their own terms apply.",
     "provenance": "Requested, not a condition of permission.",
     "limit": "Custom scoped permission, not a standard open-content licence or guarantee of dataset inclusion."
+  },
+  "current_released_sources": {
+    "as_of": "2026-11-06",
+    "mechanical_ethics": {
+      "version": "1.0.0",
+      "book": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/working-editions/v1.0/ME10_DEV4R_CORR2_Source_Preserved_Master.md",
+      "release_receipt": "https://github.com/markgoodbody-bit/mechanical-ethics/blob/e97a2aa97360c39d10857fdbf82d058ac77099aa/RELEASE_v1.0.0.md"
+    },
+    "trace": {
+      "version": "0.5.0",
+      "specification": "https://github.com/markgoodbody-bit/TRACE/blob/2312e5fa0535d25e8cafa0e7ee5d43564449d2a2/TRACE-v0.5.md"
+    },
+    "local_copy_status": "Local ME0.8/TRACE0.4 files and their hashes remain historical snapshots. These current routes do not replace those bytes or extend permissions."
   }
 }
