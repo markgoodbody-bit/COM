@@ -172,9 +172,11 @@ test('released core aliases carry the released status without validation upgrade
 
 test('one-file project packet names the current released core versions',async()=>{
  const packet=await readFile('out/packet.md','utf8');
- assert.match(packet,/released TRACE v0\.4\.0 formal baseline and current compact specification/);
+ assert.match(packet,/current released specification is \*\*TRACE v0\.5\.0\*\*/);
+ assert.match(packet,/local v0\.4\.0 copy is historical/);
  assert.match(packet,/TRACE v0\.3\.0 is preserved as the previous released formal baseline and full technical donor\/reference/);
- assert.match(packet,/released Mechanical Ethics v0\.8\.0 formal baseline and current reader/);
+ assert.match(packet,/current released book is \*\*Mechanical Ethics v1\.0\.0\*\*/);
+ assert.match(packet,/local v0\.8\.0 reader is historical/);
  assert.match(packet,/Mechanical Ethics v0\.7\.0 is preserved as the previous released baseline/);
  assert.doesNotMatch(packet,/released TRACE v0\.3\.0 formal baseline and current specification/);
  assert.doesNotMatch(packet,/released Mechanical Ethics v0\.7\.0 formal baseline and current reader/);
