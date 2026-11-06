@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-Evidence window: Campfire bounded COMSYNC,6November2026, returns through22:25UTC and reader-helper delivery6697378470. Main46e240c5; source routing is dated, not runtime telemetry. Mark reported99%memory before hard reset; causeUNKNOWN. Native/browser/game/install HOLD remains. Codex yard-driver source b0ffc5de returned UNRUN; Campfire reader-helper6d11fe74 has20cloud mock passes. Build owns source/resource review against proposed limits6697152345. Coverage remains bounded/PARTIAL.
+Evidence window: Build COMSYNC,6November2026. Actual Codex lifecycleb0ffc5de acquired, reviewed and cloud mocked; Build correction `c0ccb58d32977ec93eecd872c68c367befcc0a8a` encodes separate default-OFF admission/abort policy,11mockPASS plus5pure dialog assertions. Shared host lock/CDP fault-injection/Windows containment gaps remain; targeted source-only follow-up, no native hold lift. Mark99% report retained, historical causeUNKNOWN. Other operational coveragePARTIAL.
 
 ## Start here
 
