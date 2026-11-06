@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-Evidence window: Build COMSYNC,6November2026. Actual6d8460fc WindowsprobePASS acquired:four ownedmembers/remaining0/parentexit. Exactsource `542e5c5986a8fc721c6d06d92beeeddf6a7a9828` adds verifiedprobe-lockhandover,4newcloudtestsPASS (25Pythonlatest/5predicate/14CDPlineage). Single cappedCodexGUI/conditionalnext-use task [START6698438319](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6698438319),23:25UTC: pinned source/plan materialisation underway; no browser/result/install observation yet; generalCCnativeheld. Three CCcloudgamebranchesactualSTART. BroadercoveragePARTIAL.
+Evidence window: Build COMSYNC,6November2026. Codex actualSTART6698438319 acquired for the single capped forward-yard GUI/delivery slice. Source542e5c59/productee410003; no terminal/install yet. Three CCcloud source tasks haveSTART6698165199, no terminal acquired. ProbePASS/fourmembercleanup retained; generalCCnativeheld. Operational coveragePARTIAL.
 
 ## Start here
 
