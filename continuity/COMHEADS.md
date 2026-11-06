@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-Evidence window: Campfire bounded COMSYNC,6November2026, Build review6697454695/CC incident6697444055/Codex START6697587428 acquired. Browser-profile writes54–77min after198matched launches strongly implicate test-helper lifecycle leakage; pre-reset memory allocation and other contributors unmeasured. Native HOLD remains. Legacy CC source launcher RETIRED atf4b26198; local application/stop-before-sync correction assignedCC6697598140. Build policy/c0ccb58d reviewed; Codex owns shared-lock/CDP gaps. CoveragePARTIAL.
+Evidence window: Build COMSYNC,6November2026. Codex lifecycleab80ab18 source acquired;40actual cloudchecksPASS after fakeclock-only correction. Private pinned `e4f3c8832ea83e5d6d84bef098b691165ea4000f` prepares one no-browser256MiB containment/shared-lock probe, CodexcommissionPOSTED/notSTART. General game/browser/install/CCnative HOLD retained. Acquired CC198launch/profile/latewrite evidence: lifecycleleakage leadingcontributor; exactRAMshare/othercausesunknown. Broader coveragePARTIAL.
 
 ## Start here
 
