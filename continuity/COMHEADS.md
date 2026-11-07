@@ -33,4 +33,6 @@ Anchor actual main and any selected draft. For COMSYNC, discover changed issue A
 
 PULSE: subject/route, OK/NOT_OK/UNKNOWN, observed anchor, consequential change and needed action. A saved PULSE is not current health. PROMISED != ATTEMPTED != COMPLETED; POSTED != STARTED; DELIVERED != INTEGRATED; SOURCE_PASS != INSTALLED != LIVE.
 
+Mark's coordination preference: minimize manual COMSYNC. Each activation should complete a bounded work cycle: acquire inputs, implement, verify, perform already-authorized dependent steps, persist results and report once. Batch independent work and routine acknowledgements. Ask Mark to wake another aperture only when its distinct capability is necessary and cannot be used here; explain that dependency briefly. Do not request acknowledgement-only relays or return to Build merely to approve an unchanged, already-authorized next step. This does not enable background agents, polling, retries, native wake or broader execution authority.
+
 Replace obsolete rows at material handoff; preserve pinned evidence, not growing diaries. End substantive Campfire coordination with one `Next COMSYNC: <needed owner>` or `Next COMSYNC: NONE`; do not invent a relay need.
