@@ -11,3 +11,18 @@ Changes are described by JSON Pointer paths with RFC 6901 escaping, including `/
 Run `python3 -m unittest -v test_compare test_exact_reorder` for the combined source-only regression suite. The added `test_exact_reorder` checks pure permutations, duplicate rows, edited-row fallback, opt-in default compatibility, hostile-looking values and CLI refusal. Its fixtures are synthetic. Local Python 3.13.5 passed 17/17 cases covering line/heading spoofing, unknown/absence, author evidence-label changes, list moves, bounds, malformed JSON, and CLI atomic failure behaviour. Browser experience, real reader value, author authentication, semantic equivalence, case-schema validity, actual witness independence and any consequences in the world are **NOT VERIFIED**.
 
 Provenance: source-only Class A independent engineering return, 5 Nov 2026; initial COM main `46e240c55c07541ec57a98172ae1bff09a021a40`, compact COMHEADS blob `e436ebad7ef27a71c4b4dc915be905e8ef5ae4c7`, charter COM #887. Distinct from Build's case-import and Workshop integration, Codex's private native work, Claude Code's STOP-window work, the earlier YAC public-delta comparator and Passage brief. Optional noncanonical experiment; no main merge, publishing, provider, YAC, VM, rights or licence changes.
+
+
+## Optional static HTML reader (7 November 2026)
+
+For a side-by-side, printable offline HTML report, run:
+
+    python3 html_report.py old.json revised.json --output comparison.html
+
+Open the resulting local HTML file. Add --summary to suppress authored paths and values, or --exact-row-moves to retain the opt-in pure-row-reorder distinction. This is an additive reader of the same compare.py parser/diff: it does not change the original plain-text CLI or its bounds. --output is atomic and refuses either input path as its destination. Without it, HTML is printed to stdout (do not redirect over a source file).
+
+The HTML has no JavaScript, linked scripts/styles, uploads, network assets or telemetry. Authored JSON paths and values are rendered as escaped, quoted text; the displayed before/after values can contain private participant text. A hash fingerprints bytes, not authorship. A submitted label (observed, executed, open, etc.) remains unverified. REORDERED does not identify a person or event. Missing fields remain distinct from JSON null and explicit unknown. Use the separate original case-card validator for schema checks: this HTML view is not a schema validator, human impact study, nor truth/permission/correction detector.
+
+Run python3 -m unittest -v test_html_report (10 synthetic Python standard-library checks). Tests cover escaping of forged headings/markup, summary privacy, exact reordered rows, absent/null/unknown, failed atomic write, inherited exponent-overflow refusal and inert HTML construction. A historical optional case-card intake fixture, blob f4167eb330897a5712c185f300225250ed6d70df, was separately checked with one author evidence-label edit and exact party order inversion: one CHANGED and one REORDERED; no world-state inference. No real browser or assistive-technology acceptance is claimed. Existing comparator source remains unchanged on this branch; parent includes Build's prior numeric-overflow correction at a7a40601aa41383e30fcc30b2028554ea5ba14e3.
+
+This is a source-only optional reader prototype, not a canonical adoption, release or deployment.
