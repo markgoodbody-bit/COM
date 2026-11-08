@@ -132,8 +132,14 @@ def render(differences, before_hash, after_hash, summary=False):
     counts = Counter(op for op, _, _, _ in differences)
     lines = [
         'ME/TRACE CASE DRAFT — LOCAL STRUCTURAL COMPARISON',
-        'BEFORE_SHA256: ' + before_hash,
-        'AFTER_SHA256: ' + after_hash,
+    ]
+    if summary:
+        # A digest of a private draft enables equality matching (and guesses
+        # about small/known drafts). Counts are not anonymous either.
+        lines.append('CONTENT_FINGERPRINTS_OMITTED: summary counts can still disclose information.')
+    else:
+        lines.extend(('BEFORE_SHA256: ' + before_hash, 'AFTER_SHA256: ' + after_hash))
+    lines.extend([
         'ADDED: ' + str(counts['ADDED']) + ' | REMOVED: ' + str(counts['REMOVED']) +
         ' | CHANGED: ' + str(counts['CHANGED']) + ' | REORDERED: ' + str(counts['REORDERED']),
         'Comparison of author JSON, not a claim about real events, witnesses, standing,',
@@ -142,7 +148,7 @@ def render(differences, before_hash, after_hash, summary=False):
         'Opt-in REORDERED identifies only an exact whole-row-set permutation.',
         'REORDERED does not identify individual rows, authors, affected people or events.',
         'Absent is not the same as null or an explicit unknown label.',
-    ]
+    ])
     if not differences:
         lines.append('NO_JSON_FIELD_CHANGE (not a claim that the world remained unchanged).')
     elif not summary:
@@ -151,7 +157,7 @@ def render(differences, before_hash, after_hash, summary=False):
             lines.append('  before: ' + _quote(old))
             lines.append('  after:  ' + _quote(new))
     else:
-        lines.append('SUMMARY_ONLY: paths and author values intentionally omitted.')
+        lines.append('SUMMARY_ONLY: paths, author values and file fingerprints omitted; counts remain share-sensitive.')
     return '\n'.join(lines) + '\n'
 
 
@@ -184,7 +190,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description='Compare two saved local case JSON drafts, never event truth')
     parser.add_argument('before', help='older author-held JSON draft')
     parser.add_argument('after', help='newer author-held JSON draft')
-    parser.add_argument('--summary', action='store_true', help='counts only, omit author text and paths')
+    parser.add_argument('--summary', action='store_true', help='counts only; omit author paths, values and content fingerprints (counts may still reveal information)')
     parser.add_argument('--exact-row-moves', action='store_true',
                         help='report exact whole-row permutations in claims/parties/possibilities as REORDERED')
     parser.add_argument('--output', '-o', help='atomically write report only after successful comparison')

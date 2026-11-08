@@ -52,6 +52,16 @@ def render_html(differences, before_hash, after_hash, summary=False):
                 '</div>' + extra + '</section>'
             )
     summary_line = ' · '.join(op + ': ' + str(counts[op]) for op in names)
+    # Exact byte hashes are linkable identifiers of a private draft; even an
+    # otherwise text-free summary should not expose them by default.
+    fingerprint_block = (
+        '<b>File fingerprints omitted in summary-only mode.</b>'
+        '<p>Counts can still reveal information; inspect before sharing.</p>'
+        if summary else
+        '<b>File-byte fingerprints (not authorship proof)</b>'
+        '<code>BEFORE_SHA256: ' + _escape(before_hash) + '</code>'
+        '<code>AFTER_SHA256: ' + _escape(after_hash) + '</code>'
+    )
     return '''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Local case-draft comparison (unverified)</title>
@@ -71,9 +81,7 @@ pre code{font-size:.88rem}footer{margin-top:2rem;border-top:1px solid var(--line
 </style></head><body><main>
 <header><h1>Local case-draft comparison</h1>
 <p class="intro">Comparison of author-supplied JSON only. It does not verify events, witnesses, claims, evidence labels, permissions, outcomes or correction reachability. If a specialist record or ordinary document diff is more suitable, use it.</p>
-<div class="meta"><b>File-byte fingerprints (not authorship proof)</b>
-<code>BEFORE_SHA256: ''' + _escape(before_hash) + '''</code>
-<code>AFTER_SHA256: ''' + _escape(after_hash) + '''</code>
+<div class="meta">''' + fingerprint_block + '''
 <p>''' + _escape(summary_line) + '''</p></div>
 <p class="caution">Absent is different from null and from an explicit unknown. Field changes are not proof that the world changed. Lists compare by position unless the optional exact-row-moves mode is requested.</p>
 </header><h2>Authored differences</h2>
@@ -86,7 +94,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description='Read two local author-held JSON drafts as a static HTML diff')
     parser.add_argument('before', help='older author draft JSON')
     parser.add_argument('after', help='newer author draft JSON')
-    parser.add_argument('--summary', action='store_true', help='omit all author paths and values')
+    parser.add_argument('--summary', action='store_true', help='omit author paths, values and file hashes; counts can still reveal information')
     parser.add_argument('--exact-row-moves', action='store_true', help='identify pure whole-row permutations')
     parser.add_argument('--output', '-o', help='atomically write a static HTML report (default stdout)')
     args = parser.parse_args(argv)
