@@ -12,6 +12,10 @@ import sys
 
 import compare
 
+MAX_HTML_BYTES = 2 * 1024 * 1024
+# Reserve room for the fixed page shell and labels while adding authored diffs.
+HTML_FRAME_RESERVE = 8 * 1024
+
 
 def _escape(value):
     return html.escape(value, quote=True)
@@ -30,6 +34,7 @@ def render_html(differences, before_hash, after_hash, summary=False):
     if any(op not in names for op, _, _, _ in differences):
         raise compare.CompareError('unsupported comparison operation')
     cells = []
+    detail_bytes = 0
     if summary:
         cells.append('<p>Summary only: author paths and values deliberately omitted.</p>')
     elif not differences:
@@ -42,7 +47,7 @@ def render_html(differences, before_hash, after_hash, summary=False):
             new_text = _escape(compare._quote(after))
             extra = ('<p class="caution">No row identity is inferred; the same complete '
                      'row values were supplied in a different order.</p>' if op == 'REORDERED' else '')
-            cells.append(
+            cell = (
                 '<section class="change" aria-labelledby="change-' + str(i) + '">'
                 '<h3 id="change-' + str(i) + '">' + names[op] + '</h3>'
                 '<p class="type">' + op + ' · JSON Pointer <code>' + path_text + '</code></p>'
@@ -51,6 +56,10 @@ def render_html(differences, before_hash, after_hash, summary=False):
                 '<div><h4>After (author data)</h4><pre><code>' + new_text + '</code></pre></div>'
                 '</div>' + extra + '</section>'
             )
+            detail_bytes += len(cell.encode('utf-8'))
+            if detail_bytes > MAX_HTML_BYTES - HTML_FRAME_RESERVE:
+                raise compare.CompareError('HTML detail exceeds 2 MiB report budget; use --summary or a specialist diff')
+            cells.append(cell)
     summary_line = ' · '.join(op + ': ' + str(counts[op]) for op in names)
     # Exact byte hashes are linkable identifiers of a private draft; even an
     # otherwise text-free summary should not expose them by default.
@@ -62,7 +71,7 @@ def render_html(differences, before_hash, after_hash, summary=False):
         '<code>BEFORE_SHA256: ' + _escape(before_hash) + '</code>'
         '<code>AFTER_SHA256: ' + _escape(after_hash) + '</code>'
     )
-    return '''<!doctype html>
+    page = '''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Local case-draft comparison (unverified)</title>
 <style>
@@ -88,6 +97,9 @@ pre code{font-size:.88rem}footer{margin-top:2rem;border-top:1px solid var(--line
 ''' + '\n'.join(cells) + '''
 <footer>No scripts, external resources, uploads or telemetry. This optional static report contains private author text unless summary-only mode was chosen. REORDERED means the same complete rows changed order, not that people or events were identified. Case-card schema validity is not checked here.</footer>
 </main></body></html>\n'''
+    if len(page.encode('utf-8')) > MAX_HTML_BYTES:
+        raise compare.CompareError('HTML report exceeds 2 MiB budget; use --summary or a specialist diff')
+    return page
 
 
 def main(argv=None):
