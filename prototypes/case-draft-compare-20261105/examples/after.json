@@ -1,0 +1,7 @@
+{
+  "fixture": "AUTHORED_EXAMPLE_NOT_A_REAL_PERSON_OR_EVENT",
+  "claim": "The table supports the intended work",
+  "evidence": "reported in this fictional example",
+  "maintenance": {"owner": "voluntary repair team", "funding": "paid time in this fictional example"},
+  "limit": "One use report does not establish future suitability"
+}
