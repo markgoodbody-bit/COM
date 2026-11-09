@@ -5,6 +5,7 @@ Not an event, truth, identity, author, or ethical-change detector. No network us
 """
 import argparse
 from collections import Counter
+from decimal import Decimal, InvalidOperation
 import hashlib
 import json
 import math
@@ -41,6 +42,20 @@ def _bad_constant(_value):
     raise CompareError('non-finite JSON value')
 
 
+def _preserved_float(token):
+    """Refuse decimal values that the existing float/report path would round away."""
+    value = float(token)
+    if not math.isfinite(value):
+        raise CompareError('non-finite JSON value')
+    try:
+        preserved = Decimal(token) == Decimal(repr(value))
+    except (InvalidOperation, ValueError, OverflowError):
+        raise CompareError('JSON number exceeds supported decimal range') from None
+    if not preserved:
+        raise CompareError('JSON number loses decimal precision; use a decimal-aware diff')
+    return value
+
+
 def _check_tree(item, depth=0):
     if depth > MAX_DEPTH:
         raise CompareError('JSON nesting exceeds limit')
@@ -68,7 +83,8 @@ def parse_json(raw):
     if not isinstance(raw, bytes) or len(raw) > MAX_BYTES:
         raise CompareError('input must be at most 128 KiB of UTF-8 JSON')
     try:
-        item = json.loads(raw.decode('utf-8'), object_pairs_hook=_unique, parse_constant=_bad_constant)
+        item = json.loads(raw.decode('utf-8'), object_pairs_hook=_unique,
+                          parse_constant=_bad_constant, parse_float=_preserved_float)
     except (UnicodeError, json.JSONDecodeError, RecursionError, ValueError) as exc:
         if isinstance(exc, CompareError):
             raise

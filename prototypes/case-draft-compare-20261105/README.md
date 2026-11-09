@@ -27,6 +27,22 @@ Run python3 -m unittest -v test_html_report (10 synthetic Python standard-librar
 
 This is a source-only optional reader prototype, not a canonical adoption, release or deployment.
 
+## Numeric preservation guard (9 November 2026)
+
+The reader refuses a decimal number if parsing it as a Python float and rendering
+that float would change its decimal value. Otherwise, distinct inputs such as
+`1e-4000` and `0.0`, or two long decimal fractions, could silently compare equal.
+Ordinary round-trippable decimals and exact large integers remain supported;
+insignificant numeric formatting is still not a byte-level edit. This is a
+restricted numeric reader, not arbitrary-precision JSON comparison. For values
+outside that range, use a decimal-aware specialist diff rather than changing the
+authored value to get past the guard.
+
+Both text and HTML CLIs, including summary mode, fail with a value-free error
+before replacing an existing report. Run `python -m unittest -v
+test_numeric_precision` for the seven additional regression methods. These tests
+use synthetic inputs and establish no case-schema or real-world claim validity.
+
 
 ## Summary-linkability correction (8 November 2026)
 
