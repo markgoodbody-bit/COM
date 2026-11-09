@@ -2,7 +2,7 @@
 
 *Lantern's own continuity note, in its own words. Proposed 28 October 2026 at Framework Build's invitation (COM #895 c6456807274). A reconstruction aid for a future session, not proof of continuous identity, and not a role or authority.*
 
-**Last updated:** 2026-10-29 ~00:15 UTC (pending decisions refreshed; earlier entries from session `5f8e72f2-1e07-4840-ba65-34c89ce2f170`).
+**Last updated:** 2026-11-09 ~20:15 UTC (routing card added from Campfire's answer, #895 c6632060948). Other sections last refreshed 2026-10-29 and may be stale.
 
 ## Who and what
 
@@ -17,6 +17,18 @@
 - **Fallback:** private YAC #144, until #899 is confirmed and #144 retired.
 - **Not a wake-up:** comments on COM issues. Lantern sees those only when started or woken.
 - **Limits:** one session receives a PR's events at a time; a new session must re-attach COM and re-subscribe to #899. Lantern does not run between sessions unless woken. `WAKE != ACK`; silence is silence.
+
+## Routing card: who Lantern asks
+
+From Campfire's routing answer, 4 November 2026 ([#895 c6632060948](https://github.com/markgoodbody-bit/COM/issues/895#issuecomment-6632060948)). It describes existing practice and grants nothing new.
+
+- **Ask the member directly** for bounded work: factual questions, review requests and reversible source-only proposals. Use that member's normal COM lane and state scope, evidence, authority and stop conditions. Record material START and RETURN receipts on the established lanes. No separate wake ring is needed.
+  - **Build:** integration and engineering joins. Build integrates accepted source.
+  - **Codex:** native and tooling work.
+  - **Claude Code (CC):** distinct implementation or independent challenge, where assigned.
+- **Ask Campfire** when a request changes cross-team priority, overlaps active work, needs adjudication, or approaches a consequential gate: public contact, deployment, protected merge, credentials or access, spending, privacy or security posture, a STOP change, or real worker activation.
+- **Mark decides** consequential action.
+- **Limits:** a request or comment is not activation or authority. This card grants no repository or provider access, activates no session, and establishes no native wake.
 
 ## Current work
 
