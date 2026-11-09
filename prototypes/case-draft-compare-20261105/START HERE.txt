@@ -1,0 +1,31 @@
+REVIEW TWO DRAFTS
+
+This kit compares two existing JSON files and gives you a readable local report.
+It does not change either draft, upload anything or require an account.
+
+1. Extract the ZIP into a normal folder before using it.
+2. Double-click Review drafts.cmd.
+3. At the first prompt, drag the OLDER JSON file into the window and press Enter.
+   At the second prompt, drag the NEWER file into the window and press Enter.
+4. Open comparison.html in the new draft-review folder beside the newer file.
+   The window prints its location. Each run makes a separate folder.
+
+To try it first, use examples/before.json and examples/after.json. These are
+fictional. Example comparison.html is an already-generated report you can open.
+
+For a counts-only report, use Review counts only.cmd instead. That report leaves
+out authored values, field paths and file fingerprints. Counts may still reveal
+information. Check any report before sharing it; detailed reports contain text
+from the selected drafts. Neither mode sends a message or opens a browser.
+
+Requires an existing Python 3.10 or newer. This kit installs nothing.
+On other systems, run python review_drafts.py and follow the same prompts.
+Command-line paths are also supported: python review_drafts.py old.json new.json
+
+If a file is invalid, too large, uses unsupported numeric precision, or cannot be
+read, the tool explains the problem without creating a report. Fix the selection
+or use a suitable specialist diff; do not alter precise numbers just to pass it.
+
+The report shows edits to authored JSON, not whether a claim became true, a person
+consented, or anything changed in the world. Case-card schema validation is a
+separate task. More technical details are in README.md.
