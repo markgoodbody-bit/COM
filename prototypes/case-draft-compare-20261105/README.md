@@ -27,6 +27,29 @@ Run python3 -m unittest -v test_html_report (10 synthetic Python standard-librar
 
 This is a source-only optional reader prototype, not a canonical adoption, release or deployment.
 
+## Windows entry and portable kit (9 November 2026)
+
+See [START HERE.txt](START%20HERE.txt). With an existing Python 3.10+, double-click
+`Review drafts.cmd`, drag the older JSON file into its prompt and press Enter,
+then do the same for the newer file. A new `draft-review-*` folder beside the
+newer draft contains `comparison.html`. Each run gets a separate folder; neither
+input nor an earlier report is replaced. The program opens no browser and sends
+no data. `Review counts only.cmd` omits authored report values, paths and content
+fingerprints; counts remain potentially sensitive.
+
+The small `review_drafts.py` entry reuses the existing parser and HTML renderer.
+It is also usable with explicit command-line paths. Parsing/rendering completes
+before an output folder is created; an empty newly created folder is removed if
+writing fails. Same-file selections and cancelled prompts produce no report.
+
+Build a new offline folder plus ZIP with `python make_portable.py NEW_FOLDER`.
+The package uses an explicit file allowlist and includes fictional inputs, a
+generated example report and a file manifest. Existing destinations are refused.
+Run `python -m unittest discover -p 'test_*.py' -v` for the full source suite.
+The new tests cover the actual Windows console entry with redirected input;
+mouse drag gestures, browser rendering and independent reader benefit remain
+unobserved. No new case schema or ethical evaluator is introduced.
+
 ## Numeric preservation guard (9 November 2026)
 
 The reader refuses a decimal number if parsing it as a Python float and rendering
