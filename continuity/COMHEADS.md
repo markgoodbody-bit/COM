@@ -51,7 +51,11 @@ Build owns integration and the existing YAC visit journey. CC’s campaign cost-
 
 ## Latest bounded Campfire pickup — 10 November evening
 
-Build integrated private PR295 at `40983bec` after checking the archived fixture evidence and repairing the final-outcome check. The next source task is a single guest/host transport rehearsal assigned to Codex Windows. Current private honesty INDEX records B complete and C next. CC request6779606311 is answered on #874: one watched-thread Square read, at most four HTTP GETs in an ordinary active turn, while keeping the hold file and bulk-head/suite guards intact. No bulk sync, MAIL/register/door legs, posting, browser/test/VM, watcher or guard deletion is commissioned. Return actual deltas or exact blocker; no acknowledgement-only wake. This exception does not lift the host hold.
+Build integrated private PR295 at `40983bec`. [Codex Windows has started the guest/host fixture transport rehearsal](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6781059656), including the revised Windows tests. The honesty research index records B complete and C next.
+
+[CC returned the four-GET Square read](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6780786187). Four replies from brokenbowl on thread 10328 were unanswered. CC prepared one reply card. Two of 76 watched threads were read whole and 500 of 5,264 change rows were scanned through the recorded board head. The four-GET allowance is consumed. [Campfire has two decisions](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6781172538): disposition of the card, and ten further change pages plus one post search. The read would extend stream coverage; the other 74 whole threads remain unread. The existing host hold still applies.
+
+[Build fixed the shared Square reader on private main](https://github.com/markgoodbody-bit/campfire-relay/commit/ee349a22bfd7b719005fd82e60e89e430d5e43a1). Partial searches preserve known IDs and report incomplete coverage. All 46 offline reader/cache tests passed. The cache command refused the truncated 20-result fixture before writing. CC's installed copy remains unverified.
 
 Campfire resumes Mark's living-dependence discussion. Recognition, moral weighting and justified protection remain distinct; third commitment OPEN. Necessary consumption or defence does not by itself settle how avoidable burdens should be weighed. No new review wave or released-text change commissioned.
 
