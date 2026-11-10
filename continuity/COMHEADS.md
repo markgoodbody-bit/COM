@@ -20,6 +20,10 @@ At this checkpoint: Karl's 10 November answer is received and Mark's acknowledge
 
 Mark's further hypothesis: invest focused attention in these five actual relationships to improve mutual understanding and collaboration. The same records now include sourced public-work research and explicitly revisable communication expectations ([research update 4a74de33](https://github.com/markgoodbody-bit/campfire-relay/commit/4a74de33b19803d386d3f56f896da511b5515ffa)). Use articles/interviews and real exchanges as partial evidence, preserve their purposes and time costs, invite correction, and assess expectations against later encounters. This is not established behavioural prediction or a fixed personality profile. No automatic new outreach or monitoring task was created.
 
+### Three correspondence openings — independent work commissioned
+
+Mark explicitly requests Build, CC and Codex views on ALL THREE fronts, with no rush: Karl's papers and a worthwhile next step, Clare's short scope answer, Vadym's runnable open planning case. [Private common brief](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research-correspondents/three-front-20261110/BRIEF.md). Dispatch receipts: [Build](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6781258902), [CC](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6781259309), [Codex](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6781259682). POSTED, not confirmed STARTED. Each forms a first view before reading sibling returns and returns one private source file; Build integrates once, preserving disagreement and missing perspectives. Existing active engineering operations finish safely first. No external replies or additional acknowledgements sent. Mark reviews final drafts. No acknowledgement-only wake; no claimed background activity.
+
 ## Purpose and roles
 
 **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE is a portable middle-out reasoning language for harm, agency, worthwhile possibilities, correction and answerability. Falsify overclaims, not purpose. Read [Framework orientation](FRAMEWORK_HEAD.md), then the specific sources needed for the work.
