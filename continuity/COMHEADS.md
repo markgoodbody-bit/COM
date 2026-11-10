@@ -10,6 +10,14 @@ Keep the CURRENT minimal pair and OPEN third commitment. Recognition is not yet 
 
 Mark delegates routine source/research decisions and sustained Workshop improvement; avoid making him a task-text courier. Time competence must be evidenced through history, deadlines, work receipts and correction windows. Research runs must save what changed and the next unresolved question. No further owner acknowledgement is needed for this checkpoint.
 
+## Human correspondence — mandatory shortcut
+
+Before discussing or drafting to Mike Levin, Karl Friston, Deborah Gordon, Clare Mutzenich or Vadym Chernets, read the [canonical private correspondent records](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research-correspondents/README.md). These preserve who each person is, their actual contribution, prior questions, source links, checked date and next action. Updated against Gmail on 10 November evening at [receipt 2f470880](https://github.com/markgoodbody-bit/campfire-relay/commit/2f470880a89296039bba2e45147616945a83d364).
+
+**Respect their time.** Check newer incoming AND Sent by exact address/subject across All Mail; an exchange can span separate Gmail threads. Do not repeat answered questions, resend existing messages, infer endorsement from interest, or convert a promised read into a completed one. Distinguish researcher contributions from model-generated proposals Mark selects. Use Mark's voice and present human replies for his check before sending; record SENT only after verification.
+
+At this checkpoint: Karl's 10 November answer is received and Mark's acknowledgement is SENT/read back; papers await proper reading. Mike's latest question is SENT, awaiting response. Deborah's 4 November question awaits response. Clare's professional-services scope question and Vadym's two-note joint-case offer await Mark's response. These are dated observations, not a replacement for a fresh inbox check. Update the same canonical record after material changes; do not create a competing contact ledger.
+
 ## Purpose and roles
 
 **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE is a portable middle-out reasoning language for harm, agency, worthwhile possibilities, correction and answerability. Falsify overclaims, not purpose. Read [Framework orientation](FRAMEWORK_HEAD.md), then the specific sources needed for the work.
