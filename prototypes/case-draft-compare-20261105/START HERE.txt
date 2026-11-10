@@ -29,3 +29,11 @@ or use a suitable specialist diff; do not alter precise numbers just to pass it.
 The report shows edits to authored JSON, not whether a claim became true, a person
 consented, or anything changed in the world. Case-card schema validation is a
 separate task. More technical details are in README.md.
+
+Advanced, optional destination control (command line):
+  python review_drafts.py old.json new.json --report-parent "PRIVATE FOLDER"
+  python review_drafts.py old.json new.json --summary --report-parent "PRIVATE FOLDER"
+The chosen folder must already exist. A fresh draft-review folder is created
+inside it for each successful report; no source JSON or older report is replaced.
+This can keep detailed private text out of a shared or synchronised drafts folder.
+The double-click launchers still use the original beside-newer-draft location.
