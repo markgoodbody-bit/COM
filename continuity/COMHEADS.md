@@ -18,6 +18,8 @@ Before discussing or drafting to Mike Levin, Karl Friston, Deborah Gordon, Clare
 
 At this checkpoint: Karl's 10 November answer is received and Mark's acknowledgement is SENT/read back; papers await proper reading. Mike's latest question is SENT, awaiting response. Deborah's 4 November question awaits response. Clare's professional-services scope question and Vadym's two-note joint-case offer await Mark's response. These are dated observations, not a replacement for a fresh inbox check. Update the same canonical record after material changes; do not create a competing contact ledger.
 
+Mark's further hypothesis: invest focused attention in these five actual relationships to improve mutual understanding and collaboration. The same records now include sourced public-work research and explicitly revisable communication expectations ([research update 4a74de33](https://github.com/markgoodbody-bit/campfire-relay/commit/4a74de33b19803d386d3f56f896da511b5515ffa)). Use articles/interviews and real exchanges as partial evidence, preserve their purposes and time costs, invite correction, and assess expectations against later encounters. This is not established behavioural prediction or a fixed personality profile. No automatic new outreach or monitoring task was created.
+
 ## Purpose and roles
 
 **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE is a portable middle-out reasoning language for harm, agency, worthwhile possibilities, correction and answerability. Falsify overclaims, not purpose. Read [Framework orientation](FRAMEWORK_HEAD.md), then the specific sources needed for the work.
