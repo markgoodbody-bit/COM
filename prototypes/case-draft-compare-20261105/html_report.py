@@ -49,7 +49,8 @@ def render_html(differences, before_hash, after_hash, summary=False):
                      'row values were supplied in a different order.</p>' if op == 'REORDERED' else '')
             cell = (
                 '<section class="change" aria-labelledby="change-' + str(i) + '">'
-                '<h3 id="change-' + str(i) + '">' + names[op] + '</h3>'
+                '<h3 id="change-' + str(i) + '" tabindex="-1">Change ' + str(i) +
+                ' of ' + str(len(differences)) + ': ' + names[op] + '</h3>'
                 '<p class="type">' + op + ' · JSON Pointer <code>' + path_text + '</code></p>'
                 '<div class="pair">'
                 '<div><h4>Before (author data)</h4><pre><code>' + old_text + '</code></pre></div>'
@@ -60,6 +61,19 @@ def render_html(differences, before_hash, after_hash, summary=False):
             if detail_bytes > MAX_HTML_BYTES - HTML_FRAME_RESERVE:
                 raise compare.CompareError('HTML detail exceeds 2 MiB report budget; use --summary or a specialist diff')
             cells.append(cell)
+    # A small set of predictable internal anchors makes long reports navigable
+    # without duplicating untrusted field paths or introducing scripts/resources.
+    # No index in summary-only or short documents; the page itself is still bounded.
+    navigation = ''
+    if not summary and len(differences) > 25:
+        links = []
+        for start in range(1, len(differences) + 1, 25):
+            end = min(start + 24, len(differences))
+            links.append('<a href="#change-' + str(start) + '">' +
+                         str(start) + '–' + str(end) + '</a>')
+        navigation = ('<nav class="jump" aria-label="Jump to authored differences">'
+                      '<p>Jump to changes (groups of 25):</p>' +
+                      ' '.join(links) + '</nav>')
     summary_line = ' · '.join(op + ': ' + str(counts[op]) for op in names)
     # Exact byte hashes are linkable identifiers of a private draft; even an
     # otherwise text-free summary should not expose them by default.
@@ -82,11 +96,12 @@ h1{font-size:clamp(1.5rem,3.5vw,2rem);line-height:1.2}h2{font-size:1.25rem}h3{fo
 h4{font-size:.9rem;margin:.4rem 0}p{margin:.6rem 0}.intro,.caution{color:var(--quiet)}
 .meta{padding:.75rem;background:var(--tint);border:1px solid var(--line);border-radius:6px}
 .meta code{display:block;overflow-wrap:anywhere;font-size:.8rem}.change{border:1px solid var(--line);border-radius:8px;padding:1rem;margin:1rem 0}
+.jump{border:1px solid var(--line);padding:.6rem .8rem;margin:.6rem 0}.jump a{display:inline-block;margin:.2rem .6rem .2rem 0}
 .type{font-size:.9rem}.type code{overflow-wrap:anywhere}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
 pre{white-space:pre-wrap;overflow-wrap:anywhere;unicode-bidi:plaintext;margin:.3rem 0;background:var(--tint);padding:.7rem;min-height:3rem;border-radius:5px}
 pre code{font-size:.88rem}footer{margin-top:2rem;border-top:1px solid var(--line);padding-top:.6rem;font-size:.86rem;color:var(--quiet)}
 @media(max-width:620px){.pair{grid-template-columns:1fr}}
-@media print{body{font-size:11pt}main{max-width:none;padding:0}.change{break-inside:avoid}}
+@media print{body{font-size:11pt}main{max-width:none;padding:0}.change{break-inside:avoid}.jump{display:none}}
 </style></head><body><main>
 <header><h1>Local case-draft comparison</h1>
 <p class="intro">Comparison of author-supplied JSON only. It does not verify events, witnesses, claims, evidence labels, permissions, outcomes or correction reachability. If a specialist record or ordinary document diff is more suitable, use it.</p>
@@ -94,7 +109,7 @@ pre code{font-size:.88rem}footer{margin-top:2rem;border-top:1px solid var(--line
 <p>''' + _escape(summary_line) + '''</p></div>
 <p class="caution">Absent is different from null and from an explicit unknown. Field changes are not proof that the world changed. Lists compare by position unless the optional exact-row-moves mode is requested.</p>
 </header><h2>Authored differences</h2>
-''' + '\n'.join(cells) + '''
+''' + navigation + '\n' + '\n'.join(cells) + '''
 <footer>No scripts, external resources, uploads or telemetry. This optional static report contains private author text unless summary-only mode was chosen. REORDERED means the same complete rows changed order, not that people or events were identified. Case-card schema validity is not checked here.</footer>
 </main></body></html>\n'''
     if len(page.encode('utf-8')) > MAX_HTML_BYTES:

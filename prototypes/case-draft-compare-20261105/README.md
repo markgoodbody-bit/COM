@@ -78,3 +78,18 @@ Test-first local source evidence: against exact `590458845979129b2c2099b712ea12e
 `python3 html_report.py old.json revised.json` limits its resulting HTML to **2 MiB of UTF-8**. Even a valid small JSON input can expand into a much larger HTML report when many changes repeat a long shared JSON Pointer path. This guard fails closed rather than silently cutting off authored differences. An over-budget `--output` leaves any earlier report unchanged, and the error does not print input paths or values. Use `--summary` for small counts-only HTML (counts are still potentially sensitive), or a specialist diff when complete detail is necessary. The text comparator retains its prior behaviour; this is not schema validation or proof of real-world events.
 
 Run `python3 -m unittest -v test_html_budget` for the four additional synthetic regressions, including the over-budget path, retained output, summary and ordinary escaped detail. Local `file://` browser rendering and actual reader benefit remain unverified.
+
+## Jump navigation in longer HTML reports (11 November 2026)
+
+A detailed comparison with more than 25 differences now includes a small set of
+internal links for groups of 25 and numbered per-change headings. The links
+contain only generated numbers, never author-supplied field names or text. They
+work without JavaScript or network access and are hidden when printing. Small
+reports and summary-only reports have no jump list. This is navigation through
+an authored JSON diff, not a priority order, evidence assessment or validation
+of a person or event.
+
+Run `python -m unittest -v test_html_navigation` to check generated anchors,
+numbered headings, text escaping, summary privacy and the 2 MiB refusal. The
+test uses synthetic records; browser keyboard behaviour and screen-reader
+accessibility remain unverified. The existing report size guard is unchanged.
