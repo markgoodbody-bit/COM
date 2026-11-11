@@ -1,5 +1,16 @@
 # COMHEADS — current short handoff
 
+## Build restart / latest Campfire decisions — 11 November late evening
+
+Mark reports Build reached its context limit. Fresh Build should read the [saved private restart](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/BUILD-RESTART-20261111-LATE-CAMPFIRE.md), then canonical private correspondent records and only the relevant owner/source deltas. Codex available; CC deferred; **no Fable 5.2**. This section supersedes historical draft/status wording below.
+
+- **Karl:** current substantive reply remains unsent and is held for a more concrete contribution. Existing authored three-mechanism arithmetic and ordinary-Bayesian tie remain intact. No demonstrated TRACE advantage. Candidate is whether compact ME/TRACE helps propose useful model revisions/evidence channels across unfamiliar domains under matched resources. Broad discovering-versus-shaping-preferences question has close prior work. New primary abstracts checked: [Carroll et al.2022](https://arxiv.org/abs/2204.11966), [Kobalczyk & van der Schaar2025](https://proceedings.mlr.press/v267/kobalczyk25a.html). Full-paper coverage not claimed. Codex takes focused overlap/identification review; Build integrates and prepares concrete cases/protocol with a strong baseline and non-identification controls. No model spending or automatic email.
+- **Vadym:** Mark sent the reply in Gmail; SENT and six attachments independently verified. Canonical private record carries exact receipt. Source-sharing/shared-development offer is sent, not accepted. Clean Relay tool source export remains Build's assignment; do not expose mixed private repository/history. No new seeds executed.
+- **Correspondence standing order:** give people two weeks after OUR last email, then raise a possible new approach with Mark. No automatic chase; silence does not establish annoyance/disinterest. Four one-time reviews already created; exact anchors/times and task IDs in canonical private README. Do not duplicate. Karl next substantive move remains ours. Reconcile tasks with real incoming/Sent during full COMSYNC.
+- **Directional asymmetry:** Build/Codex already returned and PR299 integrated per section below. Do not restart that assignment. CC review deferred.
+- Preserve existing engineering holds and source/runtime distinctions. No paid run, CC wake, external human message or service activation follows from this restart.
+
+
 Evidence refreshed evening, 11 November 2026. Dated receipts, not live telemetry. New owner returns supersede these rows. Previous main mixed tonight's assignment with obsolete 1 November state; this replacement carries actual later deliveries.
 
 ## Campfire checkpoint — 10 November
