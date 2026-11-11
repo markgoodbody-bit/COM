@@ -81,6 +81,10 @@ Vadym team research is saved in the [private frontier note](https://github.com/m
 
 Keep three tasks distinct: audit the actual frozen run; obtain case-specific originals for each changed-case comparison and freeze them identically across finalisation arms; or explicitly test a dated decision against changed facts. Do not accidentally test new facts against stale originals. The six authored contrasts are not model experiments. The carrier is a clean-room handoff prototype, not a Duo importer/live integration. A bounded actual Decidecall cache probe shows task-ID scoping and working new-ID migration; immutable-ID contract remains a question, not an asserted live bug. No email or provider call was made. [Current source review handoff](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6805956391).
 
+### Fable 5.2 access — 11 November
+
+Mark reports five days of access remaining. Build handles routine COMSYNC and Codex handles reproducible checks. Reserve Fable for a short, fresh session on a question whose answer could change a decision. Carry forward the result in a few lines. There is no daily spending target or automatic wake. Build found and corrected one blind spot in the Vadym exercise locally. The [standalone candidate prompt](https://github.com/markgoodbody-bit/campfire-relay/blob/26ba2527ac94528c52552bc99eb113231dc9ed22/research-correspondents/three-front-20261110/VADYM-FRONTIER-20261111.md#build-check-before-using-the-remaining-fable-access) asks for a consequential failure the amended scoring would still miss. Prepared only. No Fable turn is due now.
+
 ## Act and preserve limits
 
 Anchor actual main; discover changed issue AND PR bodies, including closed items, then addressed comments since an evidenced cursor. This pickup acquired COM873/874/877/887, changed COM/YAC issue/PR results, partner PR144/157 and COM895/899 returns. It is not a live provider, inbox or deployment survey.
