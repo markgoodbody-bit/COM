@@ -1,5 +1,7 @@
 # COMHEADS — current short handoff
 
+**YAC access action — latest Mark direction, 11 November late evening:** Mark is original Cloudflare account holder and authorises all relevant YAC access for verified Andy/Lantern identities. Codex has a bounded priority assignment [#873 c6808158625](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6808158625): check actual existing local auth, retrieve Phase0 inventory, arrange relevant access or return ONE exact human step. Campfire browser connection unavailable; no Cloudflare changes established here. Do not leave unnamed “account holder” dependency buried in notes. No broad pipeline/deployment activation follows; Karl research resumes after bounded check.
+
 ## Build restart / latest Campfire decisions — 11 November late evening
 
 Mark reports Build reached its context limit. Fresh Build should read the [saved private restart](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/BUILD-RESTART-20261111-LATE-CAMPFIRE.md), then canonical private correspondent records and only the relevant owner/source deltas. Codex available; CC deferred; **no Fable 5.2**. This section supersedes historical draft/status wording below.
