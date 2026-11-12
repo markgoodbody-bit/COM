@@ -45,3 +45,17 @@ Source anchors: COM main 352452def90ac75907b6a19aefa1e8735aec46f7; complete comp
 Keep case_intake.html and case_intake.js alongside each other, then open the HTML in a browser that permits local files. Use **Review draft without downloading** before exporting. The form validates the same author-supplied JSON shape and displays each claim, perspective, possible action, correction-clock assertion, and unanswered question as literal text within a separate review pane. Nothing is saved or uploaded by reviewing. Editing, adding/removing a row or successfully importing a different draft clears the stale review; the JSON export path remains separate. It is a visible worksheet, NOT the Python renderer or an independent assessment. Missing people, evidence and alternatives remain missing rather than disproved; open/closed windows and executed actions remain unverified writer labels. Private participant details should not be shared.
 
 The review uses DOM textContent, not HTML interpretation, for every writer field. Keyboard focus moves to the review after an explicit request. Run focused source tests with node --test tests/test_review.cjs. The code was also exercised against its exact pre-publication source in an isolated V8 harness (12 synthetic assertions), but **ordinary file:// opening, real-browser rendering, screen-reader behaviour and human utility have not been tested** in this engineering return. The form may be restricted by local browser policy. The original Python CLI remains the distinct full printable card formatter, unchanged.
+
+## Intake/renderer control-character compatibility (12 November 2026)
+
+The offline JavaScript intake now rejects an authored carriage return (CR, U+000D)
+inside any text field, consistent with the separate Python `case_card.py` validator.
+Previously imported JSON containing an escaped CR passed `parseCase` and could be
+exported, but the Python renderer rejected the same draft. This change **rejects**
+the unsupported input with an ordinary field error rather than silently changing
+the author's wording. Author-supplied line feed and tab remain allowed. It is a
+narrow format-contract fix, not verification of evidence or a change to TRACE.
+
+Run `node --test tests/test_intake_cr_compat.cjs` for the nine new synthetic
+checks. Full real-browser behaviour, platform file pickers, independent Python
+CLI end-to-end execution and actual reader benefit remain separate tests.
