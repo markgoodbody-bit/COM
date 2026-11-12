@@ -1,5 +1,14 @@
 # COMHEADS — current short handoff
 
+## Evening FULL COMSYNC — 12 November
+- **New human evidence:** current PRIVATE canonical correspondent record supersedes morning await-reply states. One correspondent explicitly cannot continue long/extended email exchanges: propose only a short closing thank-you, no technical follow-up or chase. Another returned six runs / eighteen outputs plus raw attachment, and reports accepting the clean-source invitation. No Echo success or framework gain inferred. Keep personal correspondence and attachment private.
+- **BUILD next:** complete one source-grounded pass over all 18 supplied outputs from private relay research-correspondents/vadym-three-cases-20261112/SOURCE.md and READING-PLAN.md. Preserve A strengths, conditions, uncertainty, comparer changes and unwarranted obstruction; one retained run per cell cannot establish causal uplift. No new runs or another request for experiments.
+- **YAC PR162 is MERGED**, `8839ab9542ba64ce6db3cfb64a430940d6c5fc05`. Campfire independently verified 20 pipeline Git blobs and ran all 22 Node tests plus five workflow checks, passing. Build's Python 30-input verification remains its reported execution. The named-only snapshot/config source slice is closed. Templates inactive; live endpoint capability, clean bundling, whole hosted parity and staging remain open.
+- **Codex ordinary native turn:** clean LOCAL builds from merged prepared candidates and selected locks, then comparison with existing private hosted-bundle custody. Normal official dependency registry reads permitted; no token, provider mutation, paid call or deployment. Preserve missing evidence.
+- **Scoped token:** remains unissued, not tested; earlier owner-side form check is complete. No broad grant or migration selected. Do not wake Codex to repeat inspection.
+- **Automations checked:** daily Honesty completed this morning and next run remains 13 November; Human Reply Watch enabled. Superseded unanswered-message review for the correspondent who replied is paused. Other three timed correspondence reviews unchanged; old Karl frontier follow-up remains disabled. No new email sent during this sync.
+- Campfire has prepared brief acknowledgements for Mark's review and owns their exact wording. Don't publish correspondence or infer that 'SENT' proves reading.
+
 ## Current decisions — 12 November, after morning source handoff
 
 **Purpose:** ME/TRACE is a portable middle-out reasoning language for harm visibility, correction, agency and answerability. Falsify overclaims, not purpose. These current rows supersede historical statuses below. Read canonical private correspondence before discussing people; do not copy its private bodies into public COM.
@@ -16,7 +25,7 @@
 [Codex's concrete return](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6822061237) and [private capability matrix](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6822055490) close the bounded inspection. Owner-side Account API tokens offers Specified Workers and all three YAC Worker names with Content Read-only/Editor choices. Existing co-steward membership remains unchanged. No token or endpoint test occurred. Earlier legacy read refusals stand, but do not establish a universal account-wide token limitation. No Codex re-wake for the same check.
 First candidate: owner-assisted 24-hour Content Read-only token for the 3 existing Workers, initially kept in owner-local protected custody for 12 named GETs. This is a proposed scoped trial, not token issuance or approval; exact policy/lifetime must be reviewed before creation under the operator's rules. No credential in chat/GitHub or unspecified handover. Staging creation, routes, broad discovery, deployment tokens and API Token Provisioning delegation remain separate capabilities. Wider Workers access or migration is not selected.
 
-### Build returned the scoped snapshot and service candidates
+### Historical candidate return — PR162 subsequently merged above
 
 [Build return](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6822943119) and [YAC PR162](https://github.com/markgoodbody-bit/yet-another-clearing/pull/162), open for review at `0f6857bd`. All four repository jobs passed on Linux and Windows. The source is on the PR branch.
 
