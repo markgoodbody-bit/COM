@@ -1,5 +1,9 @@
 # COMHEADS — current short handoff
 
+## Source handoff SENT — 12 November 09:50 GMT
+
+Mark approved the exact replacement reply and invitation. The verified intended account has a pending collaborator invitation to **campfire-relay-source only**; GitHub readback distinguishes pending from accepted. Approved reply with the repository URL was sent and read back in Gmail at 09:50:01 GMT, without the rejected ZIP attachment. Exact recipient/message receipts are in the canonical private correspondent record. No original private project repository access was granted. Await acceptance and promised case results; do not resend, ask Mark for the known username, or infer delivery/read from SENT alone. This supersedes earlier “invitation/source delivery pending” rows below.
+
 ## Relay source sharing update — 12 November morning
 
 Mark approved creation/upload of [campfire-relay-source](https://github.com/markgoodbody-bit/campfire-relay-source) as **private**. All 322 cleaned export files uploaded at `2afb767772ea1a89d041cda95847d3a00d38fc46`; remote tree `6a41385106b4f12376e370d369e31a9f762a3486` matches the verified local source tree. No original private project history or collaborator access carried over. No new licence selected.
