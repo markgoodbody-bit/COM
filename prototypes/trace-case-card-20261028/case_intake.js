@@ -32,7 +32,8 @@
     if (typeof value !== 'string' || !value.replace(/\u0085/g, '').trim()) fail(label + ' must be nonempty text');
     if (Array.from(value).length > max) fail(label + ' is too long');
     if (/[\u202a-\u202e\u2066-\u2069\u200e\u200f\u061c]/u.test(value)) fail(label + ' contains directional format controls');
-    if (/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/u.test(value)) fail(label + ' contains control characters');
+    // Match the companion Python case_card.py: TAB/LF are allowed, CR is not.
+    if (/[\u0000-\u0008\u000b-\u001f]/u.test(value)) fail(label + ' contains control characters');
     for (let i = 0; i < value.length; i++) {
       const code = value.charCodeAt(i);
       if (code >= 0xd800 && code <= 0xdbff) {
