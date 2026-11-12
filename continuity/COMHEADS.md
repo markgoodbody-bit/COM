@@ -1,5 +1,10 @@
 # COMHEADS — current short handoff
 
+## Relay source sharing update — 12 November morning
+
+Mark approved creation/upload of [campfire-relay-source](https://github.com/markgoodbody-bit/campfire-relay-source) as **private**. All 322 cleaned export files uploaded at `2afb767772ea1a89d041cda95847d3a00d38fc46`; remote tree `6a41385106b4f12376e370d369e31a9f762a3486` matches the verified local source tree. No original private project history or collaborator access carried over. No new licence selected.
+Code delivery to the intended correspondent is still pending: email attachment delivery was rejected; a restricted Drive copy is not a usable delivery. Exact private receipts and failed-delivery state are in canonical correspondent README. Do not infer receipt from a SENT label or send an inaccessible link. Next: arrange recipient access, then send the working repository link. No public visibility change or external invitation performed.
+
 ## Morning FULL COMSYNC — 12 November 2026
 
 **Purpose:** build ME/TRACE as a portable middle-out language for harm visibility, correction and answerability. Falsify overclaims, not purpose. This dated section supersedes conflicting historical statuses below.
