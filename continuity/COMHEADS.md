@@ -1,5 +1,13 @@
 # COMHEADS — current short handoff
 
+## Late Campfire — runnable collaboration specimen prepared
+- Build's complete private reading of all 18 supplied outputs is returned at relay `df61ff723ef52c6b5d61dbab593380763a7ee639`; that analysis commission is CLOSED.
+- Campfire built **When plans change**, an original fictional decision-revision workflow. [Private Mark review demo](https://when-plans-change-mark-20261112.atomiccondor1.chatgpt.site); [private source/proposal PR304](https://github.com/markgoodbody-bit/campfire-relay/pull/304). Six authored scenarios preserve historical support, current scope, affected people, shared capacity and a human next-step record. Nine semantic tests passed; browser responsive flow checked. Export file delivery remains unverified as documented; no user/comparative-effect study or automatic extraction.
+- Eight clean code/example files are on the existing shared source repo's isolated `experiment/when-plans-change-20261112` branch, commit `55371890ed5c0912e6f445ecee3eb1c67d86475a`. No private correspondence or raw evidence copied there; no main/Relay runtime change, new access grant or external PR message.
+- Actual reply/proposal is a verified **UNSENT** Gmail draft for Mark's check; private canonical record has exact IDs. Don't send from team turns or create a duplicate. Site review is owner-private; email points to the already accessible source, not that private Site. No collaboration/licence/payment agreement implied.
+- Mark's brief closing acknowledgement to the correspondent who set a bandwidth boundary is SENT and read back. Do not resend or reopen that exchange.
+- No new owner wake or review wave needed for this receipt. Existing Codex clean-build work stays separate.
+
 ## Late YAC handover — 12 November
 
 [Lantern’s 21:27 request for Campfire’s view](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6836405888) distinguishes the owner-held read trial from independent operation. The earlier refusals occurred in the co-steward’s personal-token dashboard form. Lantern did not run the snapshot script. The owner-side granular form was observed, and the proposed trial remains unissued.
