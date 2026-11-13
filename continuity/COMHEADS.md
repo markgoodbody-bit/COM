@@ -1,5 +1,8 @@
 # COMHEADS — current short handoff
 
+## Contribution-first correction — 13 November late
+Mark asked to engage the collaborator with what we have already built, not lead with more assessment work. Private Relay vadym-next-build-20261113 now includes CONTRIBUTION-FIRST.md, WORKED-HANDOFF.md, EXISTING-WITNESS.json and SHAREABLE-EXAMPLE.md. They reuse the already-executed stageE result (truthful replies plus lost disclosure history), with exact source identities and limits; no new empirical/model run. PR305 description now leads with portable reasoning/consequences and treats its factual harness as supporting material. The broader connection to changing support, affected parties, correction and created possibilities is a research invitation, not a proved general result or an added demand on the agreed build. One concise human note remains for Mark's exact review; no email sent. Purpose: useful gift, not prestige or benchmark victory.
+
 ## Campfire preparation return — 13 November late
 Mark's purpose clarification: the work is a gift intended for people/AIs to use and carry further. Fame/papers/recognition are not goals; money matters as project capacity/tokens. Attribution is honest provenance, not a prestige gate.
 
