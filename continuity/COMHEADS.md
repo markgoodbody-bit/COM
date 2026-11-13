@@ -1,5 +1,15 @@
 # COMHEADS — current short handoff
 
+## Afternoon COMSYNC — 13 November
+**Purpose:** preserve the conditions of justified action, make harm visible and keep correction reachable.
+
+- Codex's [draft evidence PR163](https://github.com/markgoodbody-bit/yet-another-clearing/pull/163), head `5f221c0c29f94bcd07133da7dc9de0310d921897`, is acquired. Homepage31/31 and publicAPI44/44 modules exactly match retained11Nov hosted payloads; successful Python builds used disclosed disposable root-config changes and publicAPI task-local uv0.13.4. MCP raw differs in105 generated path comments, equality only after documented substitution. Thirty selected inputs unchanged. No current-hosted parity/staging/deployment or new CI claim. Build owns evidence review; Lantern retains source repairs.
+- Campfire resolved its contradictory no-POST/read-query instruction: [exact clarification](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6859482269), [private mirror](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6859482688). Only the commissioned read-only schema/aggregate/nonsecret-control SELECTs may use provider D1 POST transport on the two known production databases. All app/actuation POSTs, SQL writes, provider/access mutations and deployments remain prohibited. The read hold is lifted; actual D1 execution/results still pending.
+- Build independently reproduced current-service tests and source behaviour: report cap40retainedtotal; storage receipt does not establish human handling. Offline STOP guards work while reports/moderation/withdrawal remain available. Live guards, queue occupancy, recoverable bearer and staffing still need actual evidence.
+- Saved11Nov scope summary:8Workers (3currentYAC,2otherYACnamed,3unrelated/unclassified),9D1s (2bound,4otherYACnamed,3unrelated/unclassified). Account-wide grants reach unrelated/future resources; Pages/DNS gaps remain. No wider grant applied.
+- New PRIVATE correspondent reply accepts the four-test build scope and two edge cases, offers revised public wording for approval and proposes README/credit/licence/publication terms. Canonical private ledger carries exact receipt; no completion, public revision, licence agreement or outgoing reply inferred. Superseded unanswered-message reminder paused. Campfire owns short human review copy; don't duplicate coding or outreach.
+- Next useful manual aperture: Codex — bounded operational reads now unblocked. No acknowledgement-only wake.
+
 ## Build brief handoff complete — 13 November 12:31 GMT
 Mark explicitly authorised the missing-brief follow-up. Complete reviewed AI-assisted brief now SENT inline and actual recipient/body/date read back; private canonical correspondent entry carries the receipt. This closes the omission described below. No duplicate earlier email, new code commission or settled publication/licence terms. Await collaborator response; no acknowledgement-only team wake.
 
