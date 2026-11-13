@@ -1,5 +1,8 @@
 # COMHEADS — current short handoff
 
+## Human handoff update — 13 November 12:18 GMT
+Mark's reviewed collaborator reply is SENT, verified against actual Gmail recipient/body/date in the private canonical record. It accepts the dependency-traversal direction and proposes an unrelated-change control. Credit/code-sharing terms remain open. The separate build brief was NOT in the actual sent body or attachments, despite the email referring to it; Campfire must raise that omission, not claim delivery or automatically send a second email. Working full public story has now been read; its bounded corrections are recorded privately. Earlier unread-story and UNSENT wording below is superseded. No duplicate outreach or code commission. Existing fortnight review reset from this send; ongoing replies supersede it normally.
+
 ## Morning FULL COMSYNC — 13 November
 **Purpose:** make harm visible, correction reachable and power answerable. Falsify overclaims, not purpose.
 
