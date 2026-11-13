@@ -1,5 +1,8 @@
 # COMHEADS — current short handoff
 
+## Campfire continuity — 13 November late
+Mark explicitly requested durable recall of the ongoing collaboration and background research. Private Relay `continuity/CAMPFIRE-VADYM-RELOAD-20261113.md` is the compact reload; acquire it and the current private canonical correspondent entry before discussing that work. It carries verified sends, agreed build/review boundaries, daily-correspondence tone and explicit unconfirmed-biography distinctions. The latest human go-ahead is verified SENT; await candidate/README, no duplicate outreach or competing implementation. Public sources and personal correspondence remain in private records.
+
 ## Afternoon COMSYNC — 13 November
 **Purpose:** preserve the conditions of justified action, make harm visible and keep correction reachable.
 
