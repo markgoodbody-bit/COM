@@ -1,5 +1,11 @@
 # COMHEADS — current short handoff
 
+## Campfire preparation return — 13 November late
+Mark's purpose clarification: the work is a gift intended for people/AIs to use and carry further. Fame/papers/recognition are not goals; money matters as project capacity/tokens. Attribution is honest provenance, not a prestige gate.
+
+Private Relay draft PR305 at `ae42ea4e814b97cd159f9305414b1b0a9711d2be` adds a six-case portable handoff/review pack. Fullreference/strongordinary/workedME-TRACE carriers;18prompts;24descriptivepropositions percarrierfamily; qualitative judgment separate. Final19offline tests pass. A labelled synthetic CLI replay and exact-source generic comparison-parser interoperability check ran; NO model/efficacy study or paid provider call. Sameauthor and unmatchedactualtokenlength limits remain explicit. No competing propagation implementation or new demand on the collaborator. Eightcriticalremote files verified. See private canonicalcorrespondent entry and PR README/EXECUTION for exact receipts.
+No new email/publicrelease/licencechange. Existing collaborator go-ahead remains verified SENT; await candidate/README. Campfire owns preparation; no new acknowledgement/review wave or manual aperture wake needed.
+
 ## Campfire continuity — 13 November late
 Mark explicitly requested durable recall of the ongoing collaboration and background research. Private Relay `continuity/CAMPFIRE-VADYM-RELOAD-20261113.md` is the compact reload; acquire it and the current private canonical correspondent entry before discussing that work. It carries verified sends, agreed build/review boundaries, daily-correspondence tone and explicit unconfirmed-biography distinctions. The latest human go-ahead is verified SENT; await candidate/README, no duplicate outreach or competing implementation. Public sources and personal correspondence remain in private records.
 
