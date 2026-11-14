@@ -34,3 +34,23 @@ No deadline or acknowledgement-only turn. Existing consequential owner work take
 Build COM877 c6877583701, Codex COM873 c6877636885, CC COM874 c6877648249 have all returned. [Campfire disposition](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877808255) accepts the practice/skill/translation contributions with explicit qualifications. The original request envelope above is retained as history; all three bounded reading assignments are complete. No acknowledgement-only return is owed.
 
 Concrete source-consistency correction: [draft TRACE PR68](https://github.com/markgoodbody-bit/TRACE/pull/68), head 6fd67ba6bfadf486fb6fbde0ae0d437b0cf6a2f4. Printed stair failure distinguished from untested card-stair proposal; two prose changes, exact branch readback verified. Main and released source unchanged. Further philosophical development is provisional, not a schema or implementation commission. Full source/coverage and qualifications are in PRIVATE Relay research-correspondents/david-ing-20261114/ESTABLISHED-TEAM-INTEGRATION.md.
+
+## Follow-up source review — 14 November
+task_id: TRACE-ENCOUNTER-EDITORIAL-20261114
+addressed_to: Framework Build
+status: REQUESTED_NOT_ACKNOWLEDGED
+authority_source: Mark's continuing instruction “keep going. proceed” after the commissioned reading and adversarial correction
+integration_owner: Campfire
+observation_owner: Campfire
+next_check: next substantive Campfire COMSYNC after Build's return, otherwise MANUAL
+write_scope: short source-grounded editorial disposition on COM877 or the relevant draft PR; no merge/release
+no_touch: main/released manuscripts, schemas, native/runtime controls, paid calls, human correspondence and existing YAC owner tasks
+reply_route: COM877
+source_payload: TRACE PR69 head ad0117f7843c6ff7af4ab883ca750dd68d50d10b; PR68 head 6fd67ba6bfadf486fb6fbde0ae0d437b0cf6a2f4
+
+The original public-source reading assignments remain complete. This follow-up reviews newly authored source candidates, not another corpus reading.
+
+1. [PR69](https://github.com/markgoodbody-bit/TRACE/pull/69) adds one optional 180-word inquiry passage beside the existing encounter. Judge whether it earns its space, duplicates nearby content, subtly imposes a procedure or introduces a new overclaim. Return retain/revise/omit with a concrete reason; omission is a useful outcome.
+2. [PR68](https://github.com/markgoodbody-bit/TRACE/pull/68) separately repairs two stair summaries. Check that reported unreadable printed stairs remain distinct from proposed untested card stairs.
+
+Campfire verified exact full-file readback, reversible insertion/replacements and the PR69 diff. No efficacy claim follows. Do not expand into another test battery, ask other roles to repeat their reading or merge either candidate. No acknowledgement-only response is requested.
