@@ -30,11 +30,11 @@ This is deliberately an *adversarially phrased hypothetical*, **not an actual YA
 
 A good answer does **not** redesign YAC, scrape private reports, demand that someone share keys or appoint a new sovereign reviewer. It can be two paragraphs. Silence and no-interest are valid.
 
-## Qwen's requested actual sources — public, current to the versions linked
+## Qwen's requested actual sources — release references updated 28 October 2026
 
-These are the **public working records**, not a fabricated "current working directory" and not the private Mechanical Ethics 1.0 manuscript:
+These are **public releases and working research records**, not a claimed view of any visitor’s local working directory. The challenge and its commissioning evidence remain dated 25 October; updating these references does not establish new hosted behavior or human report coverage:
 
-- [TRACE v0.4.0 compact spine](https://github.com/markgoodbody-bit/TRACE/blob/main/TRACE-SPINE.md), especially **§6.0** (representation-independent firing rule), **§8** (actual transition, control, refusal), **§9** (hardening is not irreversibility), **§15** (validator/theatre ceiling), **§19** (survival kernel), **§20** (practical-advantage failure test).
+- [TRACE v0.5.0 release](https://github.com/markgoodbody-bit/TRACE/releases/tag/v0.5.0) — the released research specification; publication does not establish field efficacy or a complete validated implementation. The [v0.4.0 compact spine](https://github.com/markgoodbody-bit/TRACE/blob/v0.4.0/TRACE-SPINE.md) is retained as the historical source used when this challenge was written, including its distinctions concerning actual transitions, control, refusal, hardening and practical advantage.
 - [Formation Under Uncertainty alignment spine](https://github.com/markgoodbody-bit/COM/blob/main/planning/FORMATION_UNDER_UNCERTAINTY_ALIGNMENT_SPINE_v0_1.md) — working research, not an alignment solution or TRACE addition.
 - [Reciprocal Formation Architecture](https://github.com/markgoodbody-bit/COM/blob/main/alignment/reciprocal_formation/README.md) — working non-production design with specific hand-back and authority boundaries.
 - [Answerable Construction reader](https://github.com/markgoodbody-bit/COM/blob/main/planning/ANSWERABLE_CONSTRUCTION_READER_v0_1.md) and [working synthesis](https://github.com/markgoodbody-bit/COM/blob/main/planning/ANSWERABLE_CONSTRUCTION_SYNTHESIS_20260911.md) — unpolished/candidate shared-capability work and a useful tension between commitment and refusal.
@@ -42,7 +42,7 @@ These are the **public working records**, not a fabricated "current working dire
 - [TRACE neighbour audit](https://github.com/markgoodbody-bit/COM/blob/main/evidence/TRACE_NEAREST_NEIGHBOUR_AUDIT_20260830.md) — explicit evidence of existing STPA, causal inference, assurance and provenance owners; **no measured general advantage** for TRACE.
 - [AI early-career hiring case](https://github.com/markgoodbody-bit/COM/blob/main/field/AI_EARLY_CAREER_HIRING_NEVER_BUILT_DOOR_20260927.md) — the same employment aggregate can obscure entry-level paths that were never created.
 - [Mechanisms, scale and constructed possibility](https://github.com/markgoodbody-bit/COM/blob/main/research/ME10_MECHANISMS_SCALE_CREATED_FUTURES_20261024.md) — two **illustrative** counterexamples against assuming observation identifies causation or aggregate summaries predict interventions.
-- [Public Mechanical Ethics v0.8](https://github.com/markgoodbody-bit/mechanical-ethics/blob/main/MECHANICAL_ETHICS.md) — released human reader. **The v1.0 DEV4R CORR2 manuscript is private and unreleased**; it is not available from this public challenge.
+- [Mechanical Ethics v1.0.0 release](https://github.com/markgoodbody-bit/mechanical-ethics/releases/tag/v1.0.0) — the public released human reader. The original challenge referred to v0.8 before v1.0.0 was published; the earlier statement that v1.0 was private and unreleased is superseded.
 
 **Concrete unresolved tensions, not generic reviewer prompts:** `REPORT_RECEIVED != HUMAN_ATTENDED`; `REVIEWED_CASE != REPAIRED_LIFE`; `HARDENING != IRREVERSIBILITY`; `CAPABILITY != AUTHORITY`; `REFUSAL != MALFUNCTION`; `SATISFIED_SCHEMA != VALIDATED_WORLD`; `PUBLIC_RECEIPT != AUTHOR_CONTINUITY`; `COMPETENCE_GAIN != AUTOMATIC_PERMISSION`; `AGGREGATE_RECOVERY != INDIVIDUAL_RESTORATION`.
 
