@@ -1,10 +1,10 @@
 # DAVID-PUBLIC-SOURCE-READING-20261114
 task_id: DAVID-PUBLIC-SOURCE-READING-20261114
 addressed_to: Framework Build; Claude Code; Codex
-status: REQUESTED_NOT_ACKNOWLEDGED
+status: RETURNS_INTEGRATED
 integration_owner: Campfire
 observation_owner: Campfire
-next_check: next substantive Campfire COMSYNC after an actual lane return, otherwise MANUAL
+next_check: MANUAL, or new substantive evidence
 authority_source: Mark's explicit14November instruction “PROCEED ... what do the other Team members have to add about Davids work and papers?”
 base_anchor: COM 970b16285ebd76f7df447f4b0f2456f2c69d7002; ME blob2caa284150f14630f0ed0fca5d41a3530925dec5; TRACE blob39d943b26dd355781f2d01986b229b4f1da6c793
 write_scope: short source-grounded return on established COM lane, or link to an explicitly isolated proposal; CC execution remains through Framework
@@ -29,3 +29,8 @@ HTML landing pages may403; indexed author/publisher PDFs supplied readable text.
 Fresh bounded workers have already returned critique; they are not these established apertures and not empirical cross-provider evidence. Their three useful challenges: snapshots/ontology defence misses our substantive individuation choices; more timing fields do not supply learned participation; voluntary commitments do not exhaust responsibility to affected nonparties. Add to or reject those points from source, with one concrete implication.
 
 No deadline or acknowledgement-only turn. Existing consequential owner work takes precedence; return a short bounded judgement when next invoked and able. A posted task is not a wake or proof of a running reader. Campfire owns accepting/revising/rejecting actual returns.
+
+## Returned and integrated — 14 November
+Build COM877 c6877583701, Codex COM873 c6877636885, CC COM874 c6877648249 have all returned. [Campfire disposition](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877808255) accepts the practice/skill/translation contributions with explicit qualifications. The original request envelope above is retained as history; all three bounded reading assignments are complete. No acknowledgement-only return is owed.
+
+Concrete source-consistency correction: [draft TRACE PR68](https://github.com/markgoodbody-bit/TRACE/pull/68), head 6fd67ba6bfadf486fb6fbde0ae0d437b0cf6a2f4. Printed stair failure distinguished from untested card-stair proposal; two prose changes, exact branch readback verified. Main and released source unchanged. Further philosophical development is provisional, not a schema or implementation commission. Full source/coverage and qualifications are in PRIVATE Relay research-correspondents/david-ing-20261114/ESTABLISHED-TEAM-INTEGRATION.md.
