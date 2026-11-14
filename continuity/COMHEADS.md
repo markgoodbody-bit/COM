@@ -1,5 +1,14 @@
 # COMHEADS — current short handoff
 
+## Team reading of systems-change work — 14 November
+Mark explicitly requested the other team members' additions. Three fresh bounded review workers actually returned, with source/coverage and separate disagreements preserved in PRIVATE Relay research-correspondents/david-ing-20261114/TEAM-READINGS.md. They share project history/tool environment and are not existing Build/CC/Codex/Lantern or empirical cross-provider validation.
+
+Campfire integrated substantive corrections: the state/ontology distinction does not make our choices of entity, baseline, boundary and prior aim philosophically empty; changing presentation alone can leave practice unchanged; deliverable/process/capability/relationship commitments sharpen coordination without exhausting claims of affected nonparties. A proposed annotation to the existing continuous encounter explains why that analytical cut was chosen and invites revision while retaining earlier answerable claims. Practice-first inquiry, rather than another field or fixture, is the main proposed development. PRIVATE Relay DEVELOPMENT-DISPOSITION.md holds the concrete passage and next-encounter use. Released manuscripts unchanged.
+
+Established-team request [DAVID-PUBLIC-SOURCE-READING-20261114](../coordination/reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md), immutable dispatch basis f84cec2f1209214f2bb3da30081dfd308df929cf. [Build877](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877512127), [Codex873](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6877512343), [CC874](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6877512586) requests read back. REQUESTED, no established-role return observed at immediate check; posted task does not imply wake. Campfire owns observation/integration, next check on actual return or MANUAL. One short substantive addition/disagreement, not repeat corpus reading, new code, paid use, canon edit or acknowledgement-only turn. Lantern's YAC work remains separate.
+
+Latest YAC native read/review completion below supersedes earlier pending-native status; do not reassign those completed reads. Next useful manual aperture for this new source-reading request: Build.
+ 
 ## YAC native read and Build review complete — 14 November, 12:40 GMT
 
 Codex completed the commissioned operational reads at 12:22–12:28 GMT. [PR163](https://github.com/markgoodbody-bit/yet-another-clearing/pull/163) remains an evidence-only draft at `d8ba41646f17e203d1edf09c799f756cec37dbda`. The two acquired database schemas, minimal operational state and redacted local credential-recovery receipt supersede the earlier pending-read status. Privacy-sensitive results remain in private YAC.
