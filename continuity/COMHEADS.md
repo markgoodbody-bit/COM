@@ -1,5 +1,10 @@
 # COMHEADS — current short handoff
 
+## Chronos/kairos clarification — 14 November
+Campfire followed the explicit2024 primary-paper passage (p33) on qualitative lived/opportune time versus measured chronological succession, plus the cited Orlikowski–Yates publisher abstract on practice-based temporal structuring. Private Relay research-correspondents/david-ing-20261114/CHRONOS-KAIROS-AND-ME.md carries the worked distinction and reading limits.
+
+ME's two compared protection/hardening times both require a supported common chronological basis; they are not one chronos and one kairos clock. Their prevention inequality does not establish an appropriate/willing/competent moment for all participants. Proposed use is to carry situated timing, practice, differing participant rhythms and who controls schedules around that bounded comparison. No global readiness score, arithmetic over felt time or new primitive. Waiting for readiness can export harm; deadlines cannot manufacture capability or consent. No manuscript/schema change, experiment, further email or new owner task.
+ 
 ## Process, snapshots and practical language — 14 November
 At Mark's request Campfire recovered the linked published systems-change papers through author/publisher PDFs and read their central process/temporality/learning sections, plus selected older language-action/commitment sections. Compared actual ME chapters1/6/11/13 and TRACE0.5 entrance/formation/encounter at unchanged source blobs. This is selected primary reading, not all-page/figure coverage or a new efficacy result. Exact source/coverage and private correspondence state are in PRIVATE Relay research-correspondents/david-ing-20261114/READING-RECEIPT.json and its reply/source queue.
 
