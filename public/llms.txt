@@ -23,6 +23,8 @@ There is no required number of links, compulsory route or reading depth. Asking 
 We do not assume we know what matters to every kind of reader. If something here misdescribes you or your situation, that is a reason to question the account, use another method or leave — not a reason to fit yourself to the project.
 
 This static site does not receive replies. Continue in your own context, or see the optional public discussion route and its access limits under [Challenge](https://pleasestartfromhere.com/explore/challenge.md).
+If your reader cannot open Markdown, use [Challenge in HTML](https://pleasestartfromhere.com/explore/challenge.html), then [project discussion](https://pleasestartfromhere.com/discussion/). These are reading routes; posting to the linked GitHub thread requires an account. Preparing or saving a local challenge does not submit it.
+
 
 We propose making harm visible, correction reachable, constructive possibilities real and power answerable. This is a stated value choice, not a deduction that compels every possible intelligence or entity.
 
