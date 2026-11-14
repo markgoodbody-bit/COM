@@ -1,0 +1,77 @@
+{
+  "format": "off-book-composition-research/0.1",
+  "ceiling": "DECLARED_DEPENDENCIES_ONLY_NOT_WORLD_TRUTH_OR_ETHICAL_APPROVAL",
+  "sources": {
+    "ME08": {"repo": "markgoodbody-bit/mechanical-ethics", "commit": "e2ef746e931161cb70ac46a4eaa122442134e86b", "blob": "0be2ea2aeb178b8387eedf0b72da2d325c6c5caf", "path": "MECHANICAL_ETHICS.md"},
+    "TRACE04": {"repo": "markgoodbody-bit/TRACE", "commit": "6c68fae8cbc51d0ef1e77a18e220ceb7a1207025", "blob": "fe67f4e931ebbf00456652ef33923dc1a391dd9b", "path": "TRACE-SPINE.md"},
+    "PR73": {"repo": "markgoodbody-bit/mechanical-ethics", "commit": "12fd57a322130cf40ca8c71888fa89315635235f", "blob": "f807be5d48436a33fc0d42e3a006175bf45b9453", "path": "research/kernel_first_human_20261014/THE_MOVING_GROUND_INTEGRATED_20261014.md"}
+  },
+  "examples": [
+    {
+      "id": "retained-skill",
+      "expression_type": "CONDITIONAL_INFERENCE",
+      "check": "retained_skill",
+      "source_refs": ["ME08", "TRACE04", "PR73"],
+      "claim": "Learner can independently locate unfamiliar books after a delay, under declared library conditions.",
+      "output_kind": "DESCRIPTIVE",
+      "scope": "one adult learner, catalogue task, four-week horizon",
+      "premises": {
+        "baseline": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Initially cannot perform this task independently."},
+        "observation": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Attempts and errors can be inspected without retaining unrelated personal history."},
+        "practice_feedback": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Usable guide, chosen attempts and relevant feedback reach learner."},
+        "transfer": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Succeeds on a different book without the memorised prompt."},
+        "retention": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Performs specified task after a delay; no universal skill inferred."},
+        "maintenance": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Equipment, continuing access and guide updates have named funded maintainers."},
+        "agency": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Learner may decline/change goal without unrelated access being withdrawn."}
+      },
+      "value_binding": {"expression_type": "UNRESOLVED_VALUE_CHOICE", "source": "learner's stated goal; maintainer and affected-party commitments", "decision": "No automatic judgement of overall benefit or justified cost."},
+      "invalidators": ["Only copied one prompt", "Skill decays", "Coerced attendance", "Unavailable equipment"],
+      "expected": "PREMISES_RECORDED_NOT_VERIFIED"
+    },
+    {
+      "id": "collective-prospect",
+      "expression_type": "CONDITIONAL_INFERENCE",
+      "check": "collective_prospect",
+      "source_refs": ["ME08", "TRACE04", "PR73"],
+      "claim": "A new weekly repair workshop route could be maintained by the proposed arrangement; not yet a delivered outcome.",
+      "output_kind": "DESCRIPTIVE_PROSPECT",
+      "scope": "room holder, tool keeper, instructor, voluntary learners; one term",
+      "premises": {
+        "baseline": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "No actor previously had all necessary resources to offer the specified usable sessions."},
+        "joint_route": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Room/tool access, instructor availability and learning access coincide on an executable schedule."},
+        "actors": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Distinct actors carry distinct capacities; no single collective intention asserted."},
+        "authority": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Named room permission and tool-use/safety competence apply to this bounded proposal; not universal moral approval."},
+        "maintenance": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Named maintainers, funding, repair and replacement dependencies for the term."},
+        "agency": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Participants can refuse; withdrawal/continuity consequences are disclosed."},
+        "burden": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Teaching, cleaning, caring and tool upkeep have exposed bearers and terms, not silently unpaid requirements."}
+      },
+      "value_binding": {"expression_type": "UNRESOLVED_VALUE_CHOICE", "source": "participants, maintainers and legitimate room/safety decision-makers", "decision": "Whose benefit and acceptable burden remain contestable."},
+      "invalidators": ["Permission withdrawn", "No coincident schedule", "Unacknowledged coercion", "Unsafe tools", "Funding absent"],
+      "expected": "PREMISES_RECORDED_NOT_VERIFIED"
+    },
+    {
+      "id": "stale-record-failed-inference",
+      "expression_type": "CONDITIONAL_INFERENCE",
+      "check": "stale_account",
+      "source_refs": ["TRACE04", "PR73"],
+      "claim": "Yesterday's account is wrong for a present claim about library hours.",
+      "output_kind": "DESCRIPTIVE",
+      "scope": "opening hours now, not street address or historical opening",
+      "premises": {
+        "account_time": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Recorded observation was yesterday."},
+        "intended_use": {"status": "ASSUMED_FOR_EXAMPLE", "proposition": "Receiver wants to know whether entry is available now."},
+        "relevant_change": {"status": "UNKNOWN", "proposition": "Current hours may have changed; passage of time alone does not establish this."},
+        "warrant_gap": {"status": "UNKNOWN", "proposition": "No current observation or supported invalidator establishes the old account is wrong for this use."}
+      },
+      "invalidators": ["Old account still matches current hours", "Claim was historical only"],
+      "expected": "INCOMPLETE"
+    }
+  ],
+  "handoff": {
+    "domain": "clinical treatment versus software halt",
+    "status": "STOP_HANDOFF",
+    "owner": "patient context, competent clinical decision-makers and legitimate authority",
+    "reason": "A generic halt may injure; no transferred software threshold, diagnosis or consent rule is justified.",
+    "actuation_authorised": false
+  }
+}
