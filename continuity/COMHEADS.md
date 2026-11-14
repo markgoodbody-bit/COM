@@ -1,5 +1,10 @@
 # COMHEADS — current short handoff
 
+## Bedtime checkpoint — 14 November 2026
+Mark has ended the voice session for bed. Sixteen individually tailored connector emails are now SENT and were read back in Gmail; this supersedes earlier shortlist-only/no-mail wording below. Canonical exact wording, send receipts and duplicate avoidance are in PRIVATE Relay research-correspondents/connector-outreach-20261114.md. Shannon's existing 31 October contact was not duplicated; Michael C. Jackson filled that slot. Mark approved three examples and authorised this completed batch; replies still require his review. No new Karl approach. Add the broader personal-reading invitation to the next ordinary collaborator reply after addressing its actual return.
+
+Read the updated [VOICE_COMHEAD](VOICE_COMHEAD.md) and PRIVATE Relay continuity/CAMPFIRE-BED-RELOAD-20261114.md for the final conversation state, voice errors and private context. No health/email-body details belong in this shared head. No new automation, message, team wake or release follows. Morning inbox status must be freshly verified; SENT does not establish delivery, reading or engagement.
+
 ## Campfire connector search — 14 November
 Mark accepted a sixteen-person first research map focused on people connecting disciplines, methods, ethical inquiry and practice. First deeper-study priorities: Gerald Midgley, Patrick Hoverstadt, Rika Preiser and David Ing. All sixteen primary-source connections, questions, public routes and reading limits are preserved in the saved report linked from PRIVATE Relay `research-correspondents/README.md`. This is a provisional fit shortlist, not established personal availability or a completed review of sixteen careers. Full Preiser 2025 editorial and selected Midgley/enactive-ethics sections examined; most other entries are profile/programme/abstract level. Continue source study from the individual queues, retain disagreement and avoid declaring inherited ideas new.
 
