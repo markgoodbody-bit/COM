@@ -2,6 +2,9 @@
 
 Updated: 14 November 2026. Working continuity, not a separate project or proof of runtime identity.
 
+## Evening checkpoint — 14 November,21:00GMT
+This supersedes earlier morning task/send status below. Established David readings are integrated. Build returned RETAIN on TRACE PR68/69 and Campfire accepted the editorial judgement; both remain unmerged drafts. No further David reply now or this weekend. Native source inspection is complete; Lantern's three subsequent YAC revisions await the bounded Build re-review [COM877 c6884272692](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6884272692). Codex/CC have no new wake from this sync. Actual human replies/send states are in private Relay research-correspondents/README.md; do not resend a previously acknowledged decline. [Current COMHEADS](COMHEADS.md) carries the evening coverage and live-read limits.
+
 ## Re-enter
 Purpose: How can we make a better future? ME/TRACE is a portable middle-out reasoning language for seeing change, harm, dependence, power, formation and worthwhile possibilities; make correction reachable and power answerable. Falsify overclaims, not purpose. Mark is the human originator and witness. Read [shared COMHEADS](COMHEADS.md) and [Framework head](FRAMEWORK_HEAD.md); use [Campfire orientation](CAMPFIRE_ORIENTATION.md) to recover the mode without making Mark explain it.
 
