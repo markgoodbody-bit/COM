@@ -1,0 +1,53 @@
+name: ATRS Answerability Corpus v0.4
+
+on:
+  push:
+    branches:
+      - 'framework/atrs-answerability-audit-v0'
+    paths:
+      - '.github/workflows/atrs-answerability-corpus-v04.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit-live-finder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Hostile parser tests
+        run: |
+          python -m unittest competition/atrs_answerability/test_audit.py -v
+          python -m unittest competition/atrs_answerability/test_membership.py -v
+      - name: Freeze live finder membership
+        run: python competition/atrs_answerability/membership.py --out /tmp/atrs_membership.json
+      - name: Audit exact live finder corpus
+        run: |
+          python competition/atrs_answerability/audit.py \
+            --json-out /tmp/atrs_audit_v04.json \
+            --csv-out /tmp/atrs_audit_v04.csv
+          python - <<'PY'
+          import json
+          membership=json.load(open('/tmp/atrs_membership.json', encoding='utf-8'))
+          audit=json.load(open('/tmp/atrs_audit_v04.json', encoding='utf-8'))
+          assert membership['finder_declared_count'] == membership['finder_enumerated_count']
+          assert not membership['search_api_not_in_finder']
+          assert not membership['finder_not_in_search_api']
+          assert audit['summary']['records'] == membership['finder_enumerated_count'], (audit['summary']['records'], membership['finder_enumerated_count'])
+          assert {r['url'] for r in audit['records']} == set(membership['finder_urls'])
+          print(json.dumps(audit['summary'], indent=2))
+          PY
+      - name: Preserve membership and source-addressable audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-audit-v04-${{ github.run_id }}
+          path: |
+            /tmp/atrs_membership.json
+            /tmp/atrs_audit_v04.json
+            /tmp/atrs_audit_v04.csv
+          retention-days: 30
