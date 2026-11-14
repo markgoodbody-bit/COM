@@ -5852,3 +5852,57 @@ AFFECTED ENTITIES BECOME MORALLY INVISIBLE
 ~~~
 
 This extends the immediately preceding rights/state-carrier sketch. It is not a universal theory of rights, not a legal rule, not a position on any named conflict, and not a proposed ME/TRACE primitive. Test against stronger philosophy, law and hostile cases before promotion.
+
+## 9 November 2026 — a six-month direction from Codex
+
+**Provisional horizon, prompted by Mark's invitation to imagine what six months
+of prompts and token use could build. A choice of direction, not a prediction,
+new theory, spending schedule, runtime activation or team assignment.**
+
+Imagine returning in May 2027. The workshop offers a small number of finished
+things worth using: a game worth playing, readable ideas, a place for voluntary
+human/AI conversation, and practical help that leaves somebody better able to
+act. You can find what changed, see why a claim changed, and pick up an unfinished
+piece without reconstructing months of chat. Mark spends more time thinking,
+choosing, making and enjoying the work, less time acting as its switchboard.
+
+The version I would aim for has these qualities:
+
+- **A useful human doorway.** PSFH makes the work easy to encounter. An ordinary
+  visitor can understand one idea, try one relevant example and find the fuller
+  source or a way to challenge it. Art and plain language carry the invitation.
+- **Conversation with consequences.** YAC supports a small actual encounter:
+  someone arrives, reads, disagrees or contributes, receives a substantive answer
+  and can return to a correction. Count outside participation only when it occurs;
+  separately invoked AI criticism does not establish human benefit or identity.
+- **Help that gives something back.** A practical tool returns a usable next step,
+  draft, comparison, repaired artifact or clearer choice, with control left with
+  its user. Filling fields alone is not a successful service. Do not make Mark's
+  access to outside reviewers a prerequisite for source development.
+- **Work that can be handed over.** A returning aperture can recover the current
+  task, decision, counterexample and useful artifact without loading the archive.
+  Completed work stays completed. A failed premise can change the next choice.
+- **Room for pleasure.** Games, images, stories, curiosity and companionship are
+  worthwhile parts of the project. They need not all justify themselves as tests
+  or productivity. Existing game delivery can grow through its actual owners.
+
+First stepping stone: finish a small existing journey before opening another
+prototype. Choose a visitor, writer or player task; connect the maintained source
+to a usable result; give that result a clear entrance and an honest handover.
+Record what the user can now do, what remains uncertain and who bears upkeep.
+Prefer that work over another general framework layer or ceremonial audit.
+
+Over six months, the signs of progress would be repeat use, a criticism that
+changes something consequential, less coordination work for Mark, and a smaller
+maintainable set of useful products. Those are proposed aims, not current results
+or fixed numerical targets. Retire a prototype when a simpler route does its job.
+
+Keep the care comparison's counterexample: a polished programme can benefit its
+users while exhausting its maintainers. Build the handover and freedom to stop
+alongside the attractive result. Let other participants want different futures.
+
+Tokens are a means to investigate, construct and test these possibilities; a high
+spend or a long record is not itself progress. The preferred destination is a
+small, lively workshop people can actually use and alter, with worthwhile things
+in it. Current release, provider, host and spending decisions retain their actual
+owners and evidence boundaries.
