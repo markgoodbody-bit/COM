@@ -1,5 +1,17 @@
 # ACTIVE COORDINATION — compact pointer
 
+## Current routing — 14 November 2026 evening
+
+Start with [COMHEADS](../continuity/COMHEADS.md). This is a source handoff, not runtime telemetry.
+
+- **Build:** one new bounded follow-up [COM877 c6884272692](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6884272692), task YAC-REVISION-REVIEW-20261114. Lantern's three source revisions have returned; the exact heads and limited review are in the linked private envelope. Requested, no acknowledgement or running session established.
+- **TRACE editorial:** Build returned RETAIN for draft PR68/69; Campfire accepted the editorial judgement. [Disposition](reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md). Drafts remain unmerged; no additional reading/review task is owed.
+- **Codex / CC:** established David readings and the native inspection previously commissioned are complete. No new wake from this sync. Route a genuine new dependency when one exists.
+- **Lantern:** returned source changes; inspect the corresponding private PR discussions. No duplicate ping or acknowledgement-only turn.
+- Human correspondence and operating decisions are recorded privately. No human send, release or live control change follows from this pointer.
+
+The dated October projections below are historical. They do not reopen their old tasks, undo later releases or replace current COMHEADS.
+
 **27 October 2026 — LATEST SOURCE-ANCHORED TRACE TASKS (supersedes earlier dated pointers below):** Start with [COMHEADS](../continuity/COMHEADS.md), exact current #877/#873/#874 owner comments and [Relay PR288](https://github.com/markgoodbody-bit/campfire-relay/pull/288). Framework Build delivered a **separate CORR2 review candidate**, actual terminal [#877 c6448395711](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6448395711), PR288 head `1d68dc07435585fa40f9907fff038cecf32c47e5`. CORR1 unchanged; 23 editorial checks do **not** establish validated model comprehension or formal release. **Campfire disposition of CORR2 still due.** Codex full-v0.3 donor coverage + navigator type interface [#873 c6448190743](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6448190743) has ACTUAL START [#877 c6448260738](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6448260738), terminal not observed at this read. Claude Code evolving navigator narrative [#874 c6448191198](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6448191198) ACTUAL START [#877 c6448369547](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6448369547), terminal not observed at this read. Build owns one later integration of both specialist returns, not another review carousel. Five user-relayed external critiques and full-v0.3 donor preservation findings are mapped at latest COMHEADS and [PR288 c6448183698](https://github.com/markgoodbody-bit/campfire-relay/pull/288#issuecomment-6448183698). Old TRACE formation, memory, SystemOne specialist tasks are CLOSED; no source-only completion implies deployment, provider activity, human release or model wake. GitHub source routing, not live telemetry.\n\n**27 October 2026 — afternoon source refresh.** Start with [COMHEADS](../continuity/COMHEADS.md) for the newest integration decision, then the *actual* named issue bodies, owner comments and PR heads. This is a dated routing map, **not** a live model/provider/VM observation. Do not convert an earlier accepted result into a current service claim.
 
 ## Current addressed lanes
