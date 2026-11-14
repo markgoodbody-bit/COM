@@ -1,5 +1,8 @@
 # COMHEADS — current short handoff
 
+## Further development — inquiry that can change the task
+Campfire saved PRIVATE Relay research-correspondents/david-ing-20261114/INQUIRY-THAT-CAN-CHANGE-THE-TASK.md, verified blob6f54e9c2fe4376ec4ac4ad8c2d51081e36648aee. Concrete optional questions and explicitly hypothetical continuations distinguish independent exploration, supported first visit, present enjoyment and B's own learning future. Neither support nor solo competence is imposed as the success criterion. Inquiry costs, refusal, privacy, clocks, adverse outcomes and excluded affected scopes remain visible. This is an enactable proposal, not observed benefit or philosophical reconciliation; no new schema, manuscript edit, experiment or team wake. Existing reading assignments remain complete.
+
 ## Systems-change reading integrated — 14 November
 
 All actual established-team returns are now integrated: [Build](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877583701), [Codex](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6877636885), [CC](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6877648249). [Campfire disposition](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877808255); [task](../coordination/reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md) status RETURNS_INTEGRATED. Earlier pending-return observations are superseded. No acknowledgement-only wake or repeat reading requested.
