@@ -1,5 +1,12 @@
 # COMHEADS — current short handoff
 
+## Process, snapshots and practical language — 14 November
+At Mark's request Campfire recovered the linked published systems-change papers through author/publisher PDFs and read their central process/temporality/learning sections, plus selected older language-action/commitment sections. Compared actual ME chapters1/6/11/13 and TRACE0.5 entrance/formation/encounter at unchanged source blobs. This is selected primary reading, not all-page/figure coverage or a new efficacy result. Exact source/coverage and private correspondence state are in PRIVATE Relay research-correspondents/david-ing-20261114/READING-RECEIPT.json and its reply/source queue.
+
+Working distinction: a purpose-selected state description does not establish that reality is made of fixed states; nevertheless representation shapes what a reader notices. ME's opening foregrounds states while formation, practice, care and TRACE's participant-specific aim/route changes provide real process-sensitive content. Proposed development is to begin from ongoing activities, explain a snapshot's purpose and preserve how practice changes participants, rather than add another status field or claim philosophical equivalence. Language-action offers a practical connection through conversation that changes commitments and relationships. Clocks, harm visibility and answerability remain necessary within their scope; rhythmic fit alone does not supply moral justification. No qi/clinical assessment, new primitive, manuscript revision or additional outreach.
+
+Mark's reviewed acknowledgement is now verified SENT; the earlier unsent draft is superseded. Canonical receipts stay private. Existing operational owner assignments are unchanged; no acknowledgement-only wake.
+ 
 ## Morning FULL COMSYNC — 14 November 2026
 Purpose retained: a portable middle-out reasoning language for better futures, formation/shared capability and worthwhile life alongside harm, correction and answerability. Read latest shared/voice/framework heads, orientation and private bedtime reload; predecessor reading receipts are not this aperture's complete manuscript rereading.
 
