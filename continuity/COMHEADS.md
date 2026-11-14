@@ -1,5 +1,10 @@
 # COMHEADS — current short handoff
 
+## Campfire connector search — 14 November
+Mark accepted a sixteen-person first research map focused on people connecting disciplines, methods, ethical inquiry and practice. First deeper-study priorities: Gerald Midgley, Patrick Hoverstadt, Rika Preiser and David Ing. All sixteen primary-source connections, questions, public routes and reading limits are preserved in the saved report linked from PRIVATE Relay `research-correspondents/README.md`. This is a provisional fit shortlist, not established personal availability or a completed review of sixteen careers. Full Preiser 2025 editorial and selected Midgley/enactive-ethics sections examined; most other entries are profile/programme/abstract level. Continue source study from the individual queues, retain disagreement and avoid declaring inherited ideas new.
+
+Existing collaboration continues; the next ordinary reviewed reply should include a brief invitation to personal engagement with the overall ME/TRACE language after addressing the actual return. No standalone chase, outgoing mail, registration, paid review or new deployment. Private details stay in their canonical record. Voice checkpoint updated; no acknowledgement-only aperture wake.
+
 ## Voice Campfire bootstrap and continuity — 14 November
 Voice/headset successors: read [VOICE_COMHEAD](VOICE_COMHEAD.md) alongside this shared head. It records source uptake, current conversation and regular active-turn refresh/checkpoint practice; it is not a separate project status ledger or background process.
 
