@@ -28,3 +28,17 @@ The reader groups `source + event_id` when identity is marked preserved. Repeate
 Default JSON output consists of counts and caveats, not raw inputs, paths, payloads, source snippets or SHA fingerprints. `--details` also prints event and task identifiers; **identifiers themselves may be sensitive**. Keep private material in its protected original context, and do not paste it into public GitHub. No promise of anonymisation: counts and timing/context can disclose information. The reader does not validate the truth of observations, anchors, routes, permissions or witness independence. Stronger source/provider/domain methods take precedence.
 
 Development baseline: pinned COM main `648586669effa1107e5036e8dbe197bcd373ac7e`, `continuity/COMHEADS.md` blob `b71c54e3ae454ec37214bd88ad23ed9ac19c5637`, source charter issue #887. Baseline had **no** reader at this new path; the first test failed with `ModuleNotFoundError: No module named 'return_reader'`. The candidate stays on an isolated noncanonical branch. Source testing does not establish a Framework-Lab roundtrip, actual receiver compatibility, useful human reduction in courier work or deployed benefit. No private code or data was copied here.
+
+## Optional follow-on: sample-local task/return correlation ambiguity (14 November 2026)
+
+A text match on `task_id` is **not** evidence that a particular task's return has been located. Two distinct `TASK` event identities can carry the same `task_id` (including across different sources), or a `TASK` identity can be unpreserved or semantically conflicted. The original `tasks_without_return_in_sample` count is retained as a **literal non-observation of a matching ID**, not an assertion of completed work. A matching `RETURN` may be unrelated.
+
+The reader now separately counts:
+
+- `task_ids_with_ambiguous_correlation_in_sample`: task IDs with more than one preserved TASK event identity, an unpreserved TASK identity, or a conflicting preserved TASK event;
+- `task_ids_with_noncolliding_task_and_return_candidate_in_sample`: task IDs where exactly one preserved, nonconflicted TASK event and at least one same-string RETURN appear *in this sample*; this is still **not** a verified task-to-return edge or native completion;
+- `return_records_with_ambiguous_task_id_in_sample`, `return_ids_without_observed_task_in_sample`, and `task_records_without_usable_id_in_sample`.
+
+Literal `UNKNOWN` and absent `task_id` are not usable correlation keys. The optional `--details` view identifies ambiguous task IDs with reasons (`multiple_preserved_task_events`, `unpreserved_task_event_identity`, `conflicting_task_event_semantics`) and returns whose task ID has no observed TASK in the supplied sample. **Never copy detailed identifiers from private samples into public issues.** Default output remains counts-only, but counts are not anonymisation.
+
+No source or destination identity, causal parent, route, timing, authorization, delivery, replay protection, task closure or native Workshop activity is authenticated by this prototype. Correlation beyond the explicitly supplied sample requires stronger domain/receiver evidence. Run the inherited 16 tests and 10 new tests with `python3 -m unittest discover -s tests -v`. This follow-on neither activates nor integrates the stopped Workshop queue.

@@ -97,6 +97,12 @@ def _semantic_key(row):
                       sort_keys=True, ensure_ascii=True, separators=(',', ':'), allow_nan=False)
 
 
+def _usable_task_id(row):
+    # UNKNOWN is COM's lack-of-knowledge marker, not a cross-event identity.
+    value = row.get('task_id')
+    return value if value and value != 'UNKNOWN' else None
+
+
 def audit(data, details=False):
     """Audit a bounded input SAMPLE, never infer global work or authority state."""
     _validated(data)
@@ -105,28 +111,58 @@ def audit(data, details=False):
     unpreserved = 0
     task_ids = set()
     return_ids = set()
+    task_identities = defaultdict(set)
+    task_ids_with_unpreserved_identity = set()
+    task_records_without_usable_id = 0
+    return_record_ids = []
     uncorr = 0
     completed_returns = 0
     for row in rows:
         src = row.get('source')
         eid = row.get('event_id')
-        if row.get('identity_status', 'PRESERVED') != 'PRESERVED' or not src or not eid or src == 'UNKNOWN' or eid == 'UNKNOWN':
+        preserved = (row.get('identity_status', 'PRESERVED') == 'PRESERVED'
+                     and src and eid and src != 'UNKNOWN' and eid != 'UNKNOWN')
+        if not preserved:
             unpreserved += 1
         else:
             groups[(src, eid)].append(row)
-        if row['kind'] == 'TASK' and row.get('task_id'):
-            task_ids.add(row['task_id'])
+        task_id = _usable_task_id(row)
+        if row['kind'] == 'TASK':
+            if task_id:
+                task_ids.add(task_id)
+                if preserved:
+                    task_identities[task_id].add((src, eid))
+                else:
+                    task_ids_with_unpreserved_identity.add(task_id)
+            else:
+                task_records_without_usable_id += 1
         if row['kind'] == 'RETURN':
-            if row.get('task_id'):
-                return_ids.add(row['task_id'])
+            return_record_ids.append(task_id)
+            if task_id:
+                return_ids.add(task_id)
             else:
                 uncorr += 1
             if row['status'] == 'COMPLETED':
                 completed_returns += 1
+    conflict_keys = {key for key, observations in groups.items()
+                     if len({_semantic_key(row) for row in observations}) > 1}
     conflicts = sorted([{'source': source, 'event_id': ident}
-                        for (source, ident), observations in groups.items()
-                        if len({_semantic_key(row) for row in observations}) > 1],
+                        for source, ident in conflict_keys],
                        key=lambda pair: (pair['source'], pair['event_id']))
+    # A text task_id match alone cannot choose between two distinct TASK
+    # events, a conflicting preserved event or an identity-lost TASK.
+    ambiguity_reasons = {}
+    for task_id in task_ids:
+        reasons = []
+        if task_id in task_ids_with_unpreserved_identity:
+            reasons.append('unpreserved_task_event_identity')
+        if len(task_identities[task_id]) > 1:
+            reasons.append('multiple_preserved_task_events')
+        if task_identities[task_id] & conflict_keys:
+            reasons.append('conflicting_task_event_semantics')
+        if reasons:
+            ambiguity_reasons[task_id] = reasons
+    ambiguous_task_ids = set(ambiguity_reasons)
     duplicate_count = sum(len(observations) - 1 for observations in groups.values()
                           if len({_semantic_key(row) for row in observations}) == 1)
     statuses = Counter(row['status'] for row in rows)
@@ -140,15 +176,24 @@ def audit(data, details=False):
         'status_claim_counts': {key: statuses[key] for key in sorted(STATUSES)},
         'completed_status_claims': statuses['COMPLETED'],
         'tasks_with_id_in_sample': len(task_ids),
+        'task_records_without_usable_id_in_sample': task_records_without_usable_id,
+        'task_ids_with_ambiguous_correlation_in_sample': len(ambiguous_task_ids),
+        'task_ids_with_noncolliding_task_and_return_candidate_in_sample': len((task_ids & return_ids) - ambiguous_task_ids),
+        'return_records_with_ambiguous_task_id_in_sample': sum(task_id in ambiguous_task_ids for task_id in return_record_ids),
+        'return_ids_without_observed_task_in_sample': len(return_ids - task_ids),
         'returns_in_sample': sum(row['kind'] == 'RETURN' for row in rows),
         'uncorrelated_returns': uncorr,
         'tasks_without_return_in_sample': len(task_ids - return_ids),
         'completed_return_claims': completed_returns,
         'completion_caveat': 'All statuses, identities and anchors are author-supplied and unverified; no native work, authority or completion is established.',
+        'return_correlation_caveat': 'Task ID equality is only a sample-local candidate, not proof of which TASK a RETURN belongs to; ambiguous identities and unseen events require independent evidence.',
     }
     if details:
         result['conflict_identities'] = conflicts
         result['task_ids_without_return_in_sample'] = sorted(task_ids - return_ids)
+        result['ambiguous_task_ids_in_sample'] = sorted(ambiguous_task_ids)
+        result['ambiguous_task_id_reasons'] = {key: ambiguity_reasons[key] for key in sorted(ambiguity_reasons)}
+        result['return_ids_without_observed_task'] = sorted(return_ids - task_ids)
     return result
 
 
