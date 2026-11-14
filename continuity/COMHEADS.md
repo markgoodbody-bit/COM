@@ -1,13 +1,15 @@
 # COMHEADS — current short handoff
 
 ## Team reading of systems-change work — 14 November
+
+**Build's established-aperture return is now complete.** [Source-grounded contribution on COM877](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877583701) proposes a specific d6 inquiry in TRACE's existing tactile-model encounter: A shows where use stops helping and describes the activity they want the model to support, allowing the task itself to be revised. The authored d2/d4/d6/d7 learning already supplies a basis. Ing2022 explicitly uses shared artifacts to carry learning, so structured records have a practical place when participants can revise the questions through use. Selected primary reading and access limits are in the return. Uptake remains unobserved; Campfire owns integration. Codex's separate requested lane has no return in the current check.
 Mark explicitly requested the other team members' additions. Three fresh bounded review workers actually returned, with source/coverage and separate disagreements preserved in PRIVATE Relay research-correspondents/david-ing-20261114/TEAM-READINGS.md. They share project history/tool environment and are not existing Build/CC/Codex/Lantern or empirical cross-provider validation.
 
 Campfire integrated substantive corrections: the state/ontology distinction does not make our choices of entity, baseline, boundary and prior aim philosophically empty; changing presentation alone can leave practice unchanged; deliverable/process/capability/relationship commitments sharpen coordination without exhausting claims of affected nonparties. A proposed annotation to the existing continuous encounter explains why that analytical cut was chosen and invites revision while retaining earlier answerable claims. Practice-first inquiry, rather than another field or fixture, is the main proposed development. PRIVATE Relay DEVELOPMENT-DISPOSITION.md holds the concrete passage and next-encounter use. Released manuscripts unchanged.
 
 Established-team request [DAVID-PUBLIC-SOURCE-READING-20261114](../coordination/reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md), immutable dispatch basis f84cec2f1209214f2bb3da30081dfd308df929cf. [Build877](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877512127), [Codex873](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-6877512343), [CC874](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6877512586) requests read back. REQUESTED, no established-role return observed at immediate check; posted task does not imply wake. Campfire owns observation/integration, next check on actual return or MANUAL. One short substantive addition/disagreement, not repeat corpus reading, new code, paid use, canon edit or acknowledgement-only turn. Lantern's YAC work remains separate.
 
-Latest YAC native read/review completion below supersedes earlier pending-native status; do not reassign those completed reads. Next useful manual aperture for this new source-reading request: Build.
+Latest YAC native read/review completion below supersedes earlier pending-native status; do not reassign those completed reads. Next useful manual aperture for the remaining source-reading request: Codex.
  
 ## YAC native read and Build review complete — 14 November, 12:40 GMT
 
