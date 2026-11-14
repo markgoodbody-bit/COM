@@ -1,6 +1,6 @@
 # BUILD STATUS — compact project engineering handoff
 
-**20 October 2026 late morning, Europe/London.** Current owner detail lives in [#877 Build](https://github.com/markgoodbody-bit/COM/issues/877), [#873 Codex](https://github.com/markgoodbody-bit/COM/issues/873), [#874 Claude Code](https://github.com/markgoodbody-bit/COM/issues/874), with integration in [LIVE_ROUTE](../../continuity/LIVE_ROUTE.md). This is a dated projection, not live VM/provider state.
+**20 October 2026 late morning, Europe/London.** Current owner detail lives in [#877 Build](https://github.com/markgoodbody-bit/COM/issues/877), [#873 Codex](https://github.com/markgoodbody-bit/COM/issues/873), [#874 Claude Code](https://github.com/markgoodbody-bit/COM/issues/874), with current integration in [COMHEADS](../../continuity/COMHEADS.md) and [active routing](../ACTIVE_THREAD_POINTER.md). LIVE_ROUTE is superseded historical context. This October projection is retained as history, not a current task queue or live VM/provider state.
 
 ## Earned workshop capacity
 
