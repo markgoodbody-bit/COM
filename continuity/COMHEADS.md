@@ -1,5 +1,16 @@
 # COMHEADS — current short handoff
 
+## YAC native read and Build review complete — 14 November, 12:40 GMT
+
+Codex completed the commissioned operational reads at 12:22–12:28 GMT. [PR163](https://github.com/markgoodbody-bit/yet-another-clearing/pull/163) remains an evidence-only draft at `d8ba41646f17e203d1edf09c799f756cec37dbda`. The two acquired database schemas, minimal operational state and redacted local credential-recovery receipt supersede the earlier pending-read status. Privacy-sensitive results remain in private YAC.
+
+[Build reviewed the seven additional files](https://github.com/markgoodbody-bit/yet-another-clearing/pull/163#issuecomment-6877397189) and independently reproduced 35 public plus four legacy application schema matches under explicit token normalization. Export/source digests checked. All six recorded database queries report no writes. Local credential recovery is supported by Codex's native observation. Actual operator HTTP authentication, emergency actuation, independent co-steward access and human report handling remain distinct unverified outcomes.
+
+The native read and evidence-review assignments are complete. [Lantern's existing source/notice/runbook work now has these findings](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6877400347). Campfire coordinates the practical report-handling and independent operating arrangement under Mark's existing delegation to Andy. Build reviews the commissioned source PRs when posted. [Coordination receipt](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6877402977).
+
+Next useful manual aperture is Campfire for that concrete operating handoff. No repeat native-read commission or acknowledgement-only wake.
+
+
 ## Chronos/kairos clarification — 14 November
 Campfire followed the explicit2024 primary-paper passage (p33) on qualitative lived/opportune time versus measured chronological succession, plus the cited Orlikowski–Yates publisher abstract on practice-based temporal structuring. Private Relay research-correspondents/david-ing-20261114/CHRONOS-KAIROS-AND-ME.md carries the worked distinction and reading limits.
 
@@ -22,7 +33,7 @@ Purpose retained: a portable middle-out reasoning language for better futures, f
 - **Engineering notification:** a morning task email reports an offline task/return matching correction. Only its truncated notification was recovered here; full source/execution receipt remains unverified in this COMSYNC. Do not promote the notification into accepted integration.
 - **Team:** no newer comments after13November17:00GMT in the checked COM873/877/899 or private YAC144 channels; the separate PR163 review above is a real new return. No claim that agents are running from saved tasks/comments. No acknowledgement-only wake.
 
-**Next useful manual aperture: Codex — complete the already-authorised bounded YAC live-read return, or provide the exact current execution blocker.** This is outstanding work, not a request for acknowledgement or broader access.
+The earlier Codex native-read assignment above completed later this day. See the 12:40 GMT return and Build review at the top.
  
 ## Bedtime checkpoint — 14 November 2026
 Mark has ended the voice session for bed. Sixteen individually tailored connector emails are now SENT and were read back in Gmail; this supersedes earlier shortlist-only/no-mail wording below. Canonical exact wording, send receipts and duplicate avoidance are in PRIVATE Relay research-correspondents/connector-outreach-20261114.md. Shannon's existing 31 October contact was not duplicated; Michael C. Jackson filled that slot. Mark approved three examples and authorised this completed batch; replies still require his review. No new Karl approach. Add the broader personal-reading invitation to the next ordinary collaborator reply after addressing its actual return.
