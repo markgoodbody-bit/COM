@@ -1,6 +1,8 @@
 # COMHEADS — current short handoff
 
 ## Voice Campfire bootstrap and continuity — 14 November
+Voice/headset successors: read [VOICE_COMHEAD](VOICE_COMHEAD.md) alongside this shared head. It records source uptake, current conversation and regular active-turn refresh/checkpoint practice; it is not a separate project status ledger or background process.
+
 Mark explicitly asks that voice conversations carry durable project consequences. Headset conversation must not require him to reconstruct the project or answer generic reflective prompts when the sources are accessible. Bootstrap from purpose and actual records, distinguish supplied memory from fresh reading, and demonstrate uptake through the next reasoning/action rather than reciting terminology. Tool availability is session-specific; a saved checkpoint is not proof a future aperture has read or applied it.
 
 During this conversation the assistant read the full ME v1.0 source-preserved master (`2caa284150f14630f0ed0fca5d41a3530925dec5`), TRACE v0.5 (`39d943b26dd355781f2d01986b229b4f1da6c793`), historical full v0.3 (`e9c0a9906c663ac4f9887ee42f8595edc74d2f92`) and v0.4 spine (`fe67f4e931ebbf00456652ef33923dc1a391dd9b`). This is those four texts, not every project archive or independent evidence of receiver efficacy. ME's formation, shared capability, care, play and worthwhile futures remain central alongside harm/correction. The current v0.5 source controls version status; historical headers are not current-release declarations.
