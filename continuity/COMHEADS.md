@@ -1,5 +1,8 @@
 # COMHEADS — current short handoff
 
+## Independent primary comparison — 14 November
+Campfire followed the2022 methods sections,2024 world-hypothesis sections and Ingold's author research statement. PRIVATE Relay research-correspondents/david-ing-20261114/TRANSLATION-BOUNDARY.md records exact scope and a comparison on the same tactile encounter. The supplied work already accommodates revised questions and shared artifacts; asking whether a revisable record can fit would repeat answered material. ME already locates skill in repeated practice, and TRACE disclaims its map as a complete internal mechanism. No direct contradiction established in those bounded claims. Concrete limit: a portable account of reported learning does not establish transferable competence; richer records do not enact learning. Selected units/causal ordering may still carry philosophical commitments requiring a specific argument. PR69 remains reader guidance, not resolution of that issue. No new source edit, experiment or team assignment follows.
+
 ## Concrete source candidates — 14 November, 13:30 GMT
 Campfire prepared [TRACE draft PR69](https://github.com/markgoodbody-bit/TRACE/pull/69), head ad0117f7843c6ff7af4ab883ca750dd68d50d10b: one optional 180-word inquiry passage beside §2A, before its formal representation. It invites learning through use, preserves unchanged or revised aims, B's own future and materially usable refusal. Existing source already carries formation/aim revision; this is proposed reader guidance, not efficacy or philosophical reconciliation. One contiguous insertion; removal reproduces base and full readback/diff verified.
 
