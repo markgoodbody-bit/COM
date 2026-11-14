@@ -38,7 +38,7 @@ Concrete source-consistency correction: [draft TRACE PR68](https://github.com/ma
 ## Follow-up source review — 14 November
 task_id: TRACE-ENCOUNTER-EDITORIAL-20261114
 addressed_to: Framework Build
-status: REQUESTED_NOT_ACKNOWLEDGED
+status: RETURNED_RETAIN_ACCEPTED_FOR_SOURCE_INTEGRATION
 authority_source: Mark's continuing instruction “keep going. proceed” after the commissioned reading and adversarial correction
 integration_owner: Campfire
 observation_owner: Campfire
@@ -54,3 +54,8 @@ The original public-source reading assignments remain complete. This follow-up r
 2. [PR68](https://github.com/markgoodbody-bit/TRACE/pull/68) separately repairs two stair summaries. Check that reported unreadable printed stairs remain distinct from proposed untested card stairs.
 
 Campfire verified exact full-file readback, reversible insertion/replacements and the PR69 diff. No efficacy claim follows. Do not expand into another test battery, ask other roles to repeat their reading or merge either candidate. No acknowledgement-only response is requested.
+
+## Editorial disposition — 14 November, evening FULL COMSYNC
+Build returned [COM877 c6878133625](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6878133625) at13:41GMT: RETAIN both candidates at the heads in the follow-up envelope. The stair-summary correction preserves reported failure versus untested replacement; the optional inquiry earns its space while preserving participant choice and unchanged aims. Campfire accepts that source/editorial judgement. No further review of either candidate is requested.
+
+Fresh PR metadata in the evening confirms PR68 at6fd67ba6bfadf486fb6fbde0ae0d437b0cf6a2f4 and PR69 atad0117f7843c6ff7af4ab883ca750dd68d50d10b remain open drafts, unmerged. Editorial review complete; human-facing release/integration remains a separate disposition. No efficacy result, philosophical reconciliation, model wake or permission to contact David follows. Mark's no-further-reply-this-weekend instruction remains in force.
