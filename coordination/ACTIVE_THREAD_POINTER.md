@@ -4,10 +4,10 @@
 
 Start with [COMHEADS](../continuity/COMHEADS.md). This is a source handoff, not runtime telemetry.
 
-- **Build:** one new bounded follow-up [COM877 c6884272692](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6884272692), task YAC-REVISION-REVIEW-20261114. Lantern's three source revisions have returned; the exact heads and limited review are in the linked private envelope. Requested, no acknowledgement or running session established.
+- **Build:** YAC revision review is integrated and closed; source PR164/166/165 are merged at YAC main7fc56d193cb041010f1dd445c9bbe20dadd0f548. New implementation task [COM877 c6885817883](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6885817883), YAC-PREPARED-DEPLOYMENT-WIRING-20261114: one isolated source PR for prepared-candidate/locked-command/config/receipt wiring. Requested, no acknowledgement or running session established.
 - **TRACE editorial:** Build returned RETAIN for draft PR68/69; Campfire accepted the editorial judgement. [Disposition](reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md). Drafts remain unmerged; no additional reading/review task is owed.
 - **Codex / CC:** established David readings and the native inspection previously commissioned are complete. No new wake from this sync. Route a genuine new dependency when one exists.
-- **Lantern:** returned source changes; inspect the corresponding private PR discussions. No duplicate ping or acknowledgement-only turn.
+- **Lantern:** source repairs accepted and merged. Existing private PR144 carries the integration receipt and a concrete request for actual human operating acceptance, not another generic proposal. No staffing promise or autonomous monitoring.
 - Human correspondence and operating decisions are recorded privately. No human send, release or live control change follows from this pointer.
 
 The dated October projections below are historical. They do not reopen their old tasks, undo later releases or replace current COMHEADS.
