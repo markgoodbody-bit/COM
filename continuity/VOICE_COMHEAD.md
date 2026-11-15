@@ -1,15 +1,17 @@
 # Voice Campfire — restart head
 
-Updated: 15 November 2026 after whole-project reread. Working continuity, not proof of runtime identity.
+Updated: 15 November 2026 after late FULL COMSYNC. Working continuity, not proof of runtime identity.
 
 ## Current checkpoint
+The requested personal reading has arrived. [Private receipt and disposition](https://github.com/markgoodbody-bit/campfire-relay/blob/bece87655ef1e054e240a5ea1f61596853dfaf08/research-correspondents/vadym-reading-20261115/RECEIPT-AND-NEXT.md) records both actual afternoon replies, their limits and current source checks. [One considered response for Mark](https://github.com/markgoodbody-bit/campfire-relay/blob/bece87655ef1e054e240a5ea1f61596853dfaf08/research-correspondents/vadym-reading-20261115/REPLY-FOR-MARK.md) and a real-case input are prepared, **UNSENT**. Do not ask again for the reading or treat theFriday commitment as still pending. Private correspondence remains private.
+
 Campfire has completed its own [96-file source reread and substantive reload](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/continuity/project-reread-20261115-campfire/RELOAD-AND-READING.md), including complete ME, current TRACE text with released differences, historical donor/spine, casebook and the wider readings listed in the exact manifest. Not every archive/code file/external work; not predecessor experience. Formation, learning, cooperation, art and worthwhile futures remain central.
 
 Build's [actual bounded review](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6899768369) has returned and Campfire has integrated it. The earlier acquisition block and resumed START are superseded. [Private review](https://github.com/markgoodbody-bit/campfire-relay/blob/277836d95c8bda3559b155992abf06dc7bd3465a/research-correspondents/vadym-first-slice-20261115/BUILD-IMPLEMENTATION-REVIEW.md) retains the original failure, separate diagnostic, acquisition limits and unverified browser use. Actual CLI JSON/Markdown export and own-envelope round trip exist; the honesty index now routes the existing consolidation to them. No field efficacy or completed consolidation is inferred.
 
-Campfire owns the considered substantive response for Mark. The acknowledgement and personal reading invitation were already SENT and verified; do not resend. No new Build/CC/Codex wake. YAC's existing cross-side review and actual human operating acceptance remain separate; no runtime was refreshed or activated here. TRACE working prose remains unreleased and exact v0.5.0 preserved. David weekend hold remains.
+Campfire has prepared the considered substantive response for Mark's review. The acknowledgement and personal reading invitation were already SENT and verified; do not resend. No new Build/CC/Codex wake. YAC's existing cross-side review and actual human operating acceptance remain separate; the source routes were freshly checked with no new return. Live status was unavailable and nothing was activated. TRACE working prose remains unreleased and exact v0.5.0 preserved. David weekend hold remains.
 
-[COMHEADS](COMHEADS.md) carries current ownership and coverage. Next useful manual aperture: NONE. Earlier dated sections below are historical, not new tasks or fresh personal reports.
+[COMHEADS](COMHEADS.md) carries current ownership and coverage. Repository and relevant mail/partner ingress are acquired; Square/YAC live-runtime coverage remains PARTIAL. Next useful manual aperture: NONE. Earlier dated sections below are historical, not new tasks or fresh personal reports.
 
 ## Re-enter
 Purpose: How can we make a better future? ME/TRACE is a portable middle-out reasoning language for seeing change, harm, dependence, power, formation and worthwhile possibilities; make correction reachable and power answerable. Falsify overclaims, not purpose. Mark is the human originator and witness. Read [shared COMHEADS](COMHEADS.md) and [Framework head](FRAMEWORK_HEAD.md); use [Campfire orientation](CAMPFIRE_ORIENTATION.md) to recover the mode without making Mark explain it.

@@ -1,12 +1,12 @@
 # ACTIVE COORDINATION — compact pointer
 
-## Current routing — 15 November 2026 after project reread
+## Current routing — 15 November 2026, late FULL COMSYNC
 Start with [COMHEADS](../continuity/COMHEADS.md). This is source coordination, not runtime telemetry.
 
-- **Campfire:** completed the [source reread and reload](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/continuity/project-reread-20261115-campfire/RELOAD-AND-READING.md); integrated the actual implementation return. Prepare the substantive response for Mark. Earlier approved acknowledgement is SENT and verified; do not resend.
+- **Campfire:** actual substantive correspondent reading received and integrated in [the private disposition](https://github.com/markgoodbody-bit/campfire-relay/blob/bece87655ef1e054e240a5ea1f61596853dfaf08/research-correspondents/vadym-reading-20261115/RECEIPT-AND-NEXT.md); [combined reply for Mark, UNSENT](https://github.com/markgoodbody-bit/campfire-relay/blob/bece87655ef1e054e240a5ea1f61596853dfaf08/research-correspondents/vadym-reading-20261115/REPLY-FOR-MARK.md) and real-case input prepared. Completed the [source reread and reload](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/continuity/project-reread-20261115-campfire/RELOAD-AND-READING.md); integrated the actual implementation return. Mark reviews the prepared response; no new external send. Earlier approved acknowledgement is SENT and verified; do not resend.
 - **Build:** VADYM-FIRST-SLICE-REVIEW-20261115 is [BOUNDED_REVIEW_RETURNED](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6899768369). Exact failure/diagnostic, acquisition and browser limits are preserved privately. No duplicate review or new acceptance gate.
 - **Scheduled research:** actual CLI export and own-envelope round trip now acquired. [Current private index](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/formation/honesty-long-run-20261110/INDEX.md) routes the existing consolidation; baseline example, not field evidence. No new fixture needed.
-- **Lantern / YAC:** earlier source observation: PR167 draft/unmerged atad9069b40efea0edf4d9660e09c85087e2a2b969. Existing PR144 cross-side review and actual human operating acceptance remain distinct. Not freshly rescanned during this reread; no new ping or activation.
+- **Lantern / YAC:** freshly checked at22:14GMT: PR167 draft/unmerged atad9069b40efea0edf4d9660e09c85087e2a2b969. Existing PR144 cross-side review and actual human operating acceptance remain distinct. PR144 recent comments show no new return to those requests; no new ping or activation.
 - **TRACE:** reviewed prose integrated through PR70 atd688c149afc15c90ab51afaf08fe303771e9de20 in unreleased working text. Exact v0.5.0 release preserved. No David weekend reply.
 - **Codex / CC:** no new separate assignment. The optional offline reader candidate remains source-only/unintegrated.
 
