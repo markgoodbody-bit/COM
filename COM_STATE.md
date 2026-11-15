@@ -1,7 +1,7 @@
 # COM_STATE v0.5.0
 
 STATUS: **CURRENT ROUTING PROJECTION / NOT DETAILED MUTABLE STATE / NOT TRUTH OR AUTHORITY**  
-ROUTER REFRESH: 2026-10-05 Europe/London
+ROUTER REFRESH: 2026-11-15 Europe/London
 
 COM is a working coordination surface, not canon, validation, consensus or a truth oracle.
 
@@ -80,11 +80,11 @@ Current project/public source is live TRACE `main`:
 
 ```text
 README.md
--> TRACE-SPINE.md
--> TRACE.md when full technical/schema detail is needed
+-> current complete specification linked by that README
+-> explicitly labelled working manuscript only when editorial work is material
 ```
 
-The live repository owns current status. Historical release/development detail is quarry and should be retrieved only when material.
+The live README owns current edition/status routing. `TRACE-SPINE.md` and `TRACE.md` are historical references; consult them only when their deeper donor meanings are material, not as alternate current specifications.
 
 ### Mechanical Ethics
 
@@ -92,8 +92,8 @@ Current project/public source is live mechanical-ethics `main`:
 
 ```text
 README.md
--> MECHANICAL_ETHICS.md
--> MECHANICAL_ETHICS.pdf when the generated reader carrier is useful
+-> current published edition and manuscript linked by that README
+-> that edition's reader PDF when the generated carrier is useful
 ```
 
 The live repository owns current status. Historical protected-source/development detail is quarry and should be retrieved only when material.

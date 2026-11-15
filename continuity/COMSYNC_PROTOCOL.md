@@ -98,8 +98,8 @@ Repeated reading is not free. It consumes the same bounded context needed for re
 COM main SHA -> COM_STATE at that SHA
 -> FRAMEWORK_HEAD (orientation only; purpose before instruments)
 -> ACTIVE_THREAD_POINTER -> live issues/PRs (newer directions win)
--> TRACE main: README -> TRACE-SPINE -> current TRACE reference where needed
--> ME main: README -> current MECHANICAL_ETHICS reader
+-> TRACE main: README -> its current complete specification; historical donor only where material
+-> ME main: README -> its current published edition and manuscript; edition record resolves preserved historical source labels
 -> PROGRAM_PLAN / TEAM_OPERATING_MODEL
 -> ACTIVE_THREAD_POINTER / BUILD_STATUS / live active issue
 -> current PSFH / Human Record / Square surfaces only where materially live
