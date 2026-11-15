@@ -1,16 +1,16 @@
 # ACTIVE COORDINATION — compact pointer
 
-## Current routing — 15 November 2026 evening
+## Current routing — 15 November 2026 after project reread
 Start with [COMHEADS](../continuity/COMHEADS.md). This is source coordination, not runtime telemetry.
 
-- **Build:** existing review VADYM-FIRST-SLICE-REVIEW-20261115 was blocked on source acquisition. Campfire has supplied the [private pinned source copy and manifest](https://github.com/markgoodbody-bit/campfire-relay/blob/a2609d5bc77f8d283d0d6cb9931ef5c1369924d2/research-correspondents/vadym-first-slice-20261115/SOURCE-ACQUISITION.md); [resume on the same task](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6895351509). [RESUMED START observed at 19:08 GMT](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6899702711); source acquired and reading begun, terminal not yet returned. Return the existing bounded implementation/test/export review; no new acceptance gate.
-- **Campfire:** approved acknowledgement SENT and verified; private receipt updated. Source carry complete and read back. Integrate Build's substantive review before preparing the implementation/rights reply. Recorded-real-work candidate remains a proposed follow-on.
-- **Lantern / YAC:** PR167 remains draft/unmerged atad9069b40efea0edf4d9660e09c85087e2a2b969. The earlier repair is accepted within its narrow scope; [existing PR144 review request](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6887111688) and actual human operating acceptance remain pending. No duplicate ping, inventory or activation.
-- **TRACE:** PR70 integration completed atd688c149afc15c90ab51afaf08fe303771e9de20. Reviewed prose lives in the unreleased working manuscript; exact v0.5.0 release preserved. David readings complete; no weekend reply.
-- **Codex / CC:** no new separate assignment. Previous native/reading tasks complete.
-- **Scheduled research:** actual agreed tool return now exists; actual export still needed for the established consolidation. New optional offline reader source in COM887 remains unintegrated; no runtime inference.
+- **Campfire:** completed the [source reread and reload](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/continuity/project-reread-20261115-campfire/RELOAD-AND-READING.md); integrated the actual implementation return. Prepare the substantive response for Mark. Earlier approved acknowledgement is SENT and verified; do not resend.
+- **Build:** VADYM-FIRST-SLICE-REVIEW-20261115 is [BOUNDED_REVIEW_RETURNED](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6899768369). Exact failure/diagnostic, acquisition and browser limits are preserved privately. No duplicate review or new acceptance gate.
+- **Scheduled research:** actual CLI export and own-envelope round trip now acquired. [Current private index](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/formation/honesty-long-run-20261110/INDEX.md) routes the existing consolidation; baseline example, not field evidence. No new fixture needed.
+- **Lantern / YAC:** earlier source observation: PR167 draft/unmerged atad9069b40efea0edf4d9660e09c85087e2a2b969. Existing PR144 cross-side review and actual human operating acceptance remain distinct. Not freshly rescanned during this reread; no new ping or activation.
+- **TRACE:** reviewed prose integrated through PR70 atd688c149afc15c90ab51afaf08fe303771e9de20 in unreleased working text. Exact v0.5.0 release preserved. No David weekend reply.
+- **Codex / CC:** no new separate assignment. The optional offline reader candidate remains source-only/unintegrated.
 
-Next useful manual aperture: **NONE now**. Build has resumed; Campfire integrates the substantive return when observed. No duplicate invocation needed. Private correspondence remains in Relay; Mark reviews outgoing messages.
+Next useful manual aperture: **NONE now**. This Campfire owns the next response. Private correspondence stays in Relay; Mark reviews outgoing wording.
 
 The dated October projections below are historical. They do not reopen their old tasks, undo later releases or replace current COMHEADS.
 
