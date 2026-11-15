@@ -1,14 +1,16 @@
 # ACTIVE COORDINATION — compact pointer
 
-## Current routing — 15 November 2026
+## Current routing —15November2026 afternoon
+Start with [COMHEADS](../continuity/COMHEADS.md). This is source coordination, not runtime telemetry.
 
-Start with [COMHEADS](../continuity/COMHEADS.md). This is a source handoff, not runtime telemetry.
+- **Build:** new bounded implementation review VADYM-FIRST-SLICE-REVIEW-20261115 [requested on COM877 c6894996375](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6894996375). Exact private source/task/evidence are linked there. START not observed. No competing build, outside send, licence/publication or deployment.
+- **Campfire:** integrate that return, prepare the ordinary reviewed collaborator reply and recorded-real-work case. A small initial source check is complete; supplied suite, browser/export and real-use claims remain separate.
+- **Lantern / YAC:** PR167 remains draft/unmerged atad9069b40efea0edf4d9660e09c85087e2a2b969. The earlier repair is accepted within its narrow scope; [existing PR144 review request](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6887111688) and actual human operating acceptance remain pending. No duplicate ping, inventory or activation.
+- **TRACE:** PR70 integration completed atd688c149afc15c90ab51afaf08fe303771e9de20. Reviewed prose lives in the unreleased working manuscript; exact v0.5.0 release preserved. David readings complete; no weekend reply.
+- **Codex / CC:** no new separate assignment. Previous native/reading tasks complete.
+- **Scheduled research:** actual agreed tool return now exists; actual export still needed for the established consolidation. New optional offline reader source in COM887 remains unintegrated; no runtime inference.
 
-- **Build:** Requested PR167 repair complete. [Revised return c6887052038](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6887052038), headad9069b40efea0edf4d9660e09c85087e2a2b969, binds health verification to corroborated execution evidence. Campfire accepts that narrow correction; no duplicate repair/inventory or acknowledgement-only wake. PR167 remains draft/unmerged pending the existing cross-side review. Earlier PR164/166/165 remain integrated.
-- **TRACE editorial:** Completed. Reviewed PR68/69 prose is integrated in the explicitly unreleased [working manuscript](https://github.com/markgoodbody-bit/TRACE/blob/d688c149afc15c90ab51afaf08fe303771e9de20/TRACE-WORKING.md) via PR70, merge d688c149afc15c90ab51afaf08fe303771e9de20. The exact v0.5.0 release remains unchanged; candidate and main verification passed. PR68/69 are closed as superseded. [Disposition](reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md). No additional reading/review task or David correspondence is due.
-- **Codex / CC:** established David readings and the native inspection previously commissioned are complete. No new wake from this sync. Route a genuine new dependency when one exists.
-- **Lantern:** Existing [private PR144 review route](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6887111688) now points at repaired PR167 headad9069b40efea0edf4d9660e09c85087e2a2b969. Actual cross-side review and the separate human operating acceptance are pending. Campfire owns observing/integrating returns; no new manual COMSYNC is required now. Operational workflows remain inactive; no staffing promise or autonomous monitoring.
-- Human correspondence and operating decisions are recorded privately. No human send, release or live control change follows from this pointer.
+Next useful manual aperture: **Build** for the new review. Private correspondence remains in Relay; Mark reviews outgoing messages.
 
 The dated October projections below are historical. They do not reopen their old tasks, undo later releases or replace current COMHEADS.
 
