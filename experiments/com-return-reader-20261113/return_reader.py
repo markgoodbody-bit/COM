@@ -115,6 +115,8 @@ def audit(data, details=False):
     task_ids_with_unpreserved_identity = set()
     task_records_without_usable_id = 0
     return_record_ids = []
+    terminal_return_claims = defaultdict(set)
+    terminal_return_record_ids = []
     uncorr = 0
     completed_returns = 0
     for row in rows:
@@ -142,6 +144,9 @@ def audit(data, details=False):
                 return_ids.add(task_id)
             else:
                 uncorr += 1
+            if row['status'] in ('COMPLETED', 'REJECTED') and task_id:
+                terminal_return_claims[task_id].add(row['status'])
+                terminal_return_record_ids.append(task_id)
             if row['status'] == 'COMPLETED':
                 completed_returns += 1
     conflict_keys = {key for key, observations in groups.items()
@@ -163,6 +168,10 @@ def audit(data, details=False):
         if reasons:
             ambiguity_reasons[task_id] = reasons
     ambiguous_task_ids = set(ambiguity_reasons)
+    # Divergent terminal labels are sample-local claims, not necessarily
+    # contradictory outcomes: a later correction or change may explain them.
+    divergent_return_task_ids = {task_id for task_id, claims in terminal_return_claims.items()
+                                 if 'COMPLETED' in claims and 'REJECTED' in claims}
     duplicate_count = sum(len(observations) - 1 for observations in groups.values()
                           if len({_semantic_key(row) for row in observations}) == 1)
     statuses = Counter(row['status'] for row in rows)
@@ -185,6 +194,10 @@ def audit(data, details=False):
         'uncorrelated_returns': uncorr,
         'tasks_without_return_in_sample': len(task_ids - return_ids),
         'completed_return_claims': completed_returns,
+        'return_task_ids_with_divergent_terminal_claims_in_sample': len(divergent_return_task_ids),
+        'return_terminal_records_on_divergent_task_ids_in_sample': sum(
+            task_id in divergent_return_task_ids for task_id in terminal_return_record_ids),
+        'outcome_divergence_caveat': 'COMPLETED and REJECTED RETURN labels share a task ID in this sample; this is a review signal, not proof of a contradiction, order, correction or actual outcome.',
         'completion_caveat': 'All statuses, identities and anchors are author-supplied and unverified; no native work, authority or completion is established.',
         'return_correlation_caveat': 'Task ID equality is only a sample-local candidate, not proof of which TASK a RETURN belongs to; ambiguous identities and unseen events require independent evidence.',
     }
@@ -194,6 +207,7 @@ def audit(data, details=False):
         result['ambiguous_task_ids_in_sample'] = sorted(ambiguous_task_ids)
         result['ambiguous_task_id_reasons'] = {key: ambiguity_reasons[key] for key in sorted(ambiguity_reasons)}
         result['return_ids_without_observed_task'] = sorted(return_ids - task_ids)
+        result['return_task_ids_with_divergent_terminal_claims'] = sorted(divergent_return_task_ids)
     return result
 
 
