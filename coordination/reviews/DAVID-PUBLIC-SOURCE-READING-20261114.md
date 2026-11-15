@@ -59,3 +59,16 @@ Campfire verified exact full-file readback, reversible insertion/replacements an
 Build returned [COM877 c6878133625](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6878133625) at13:41GMT: RETAIN both candidates at the heads in the follow-up envelope. The stair-summary correction preserves reported failure versus untested replacement; the optional inquiry earns its space while preserving participant choice and unchanged aims. Campfire accepts that source/editorial judgement. No further review of either candidate is requested.
 
 Fresh PR metadata in the evening confirms PR68 at6fd67ba6bfadf486fb6fbde0ae0d437b0cf6a2f4 and PR69 atad0117f7843c6ff7af4ab883ca750dd68d50d10b remain open drafts, unmerged. Editorial review complete; human-facing release/integration remains a separate disposition. No efficacy result, philosophical reconciliation, model wake or permission to contact David follows. Mark's no-further-reply-this-weekend instruction remains in force.
+
+## Source integration — 15 November
+status: SOURCE_INTEGRATED_IN_WORKING_MANUSCRIPT
+integration_owner: Campfire
+observation_owner: Campfire
+next_check: NONE for this bounded editorial task
+authority_source: Mark approved the plan to finish the two reviewed TRACE editorial changes with “proceed” on15November. The earlier no-merge envelope above bounded the completed review assignment; this is the subsequent integration disposition.
+
+Pre-merge inspection found both original candidates failed checks/verify_v050.py at the exact released-source SHA-256 assertion. Base checks passed. The prose judgement stands, but those candidate paths would rewrite the frozen release. Campfire integrated the reviewed prose through [TRACE PR70](https://github.com/markgoodbody-bit/TRACE/pull/70), head f79507c8aabfa170b90909f3cb5556e635e2b9e6, merged at d688c149afc15c90ab51afaf08fe303771e9de20.
+
+TRACE-WORKING.md now contains both PR68 summary replacements and the PR69 optional inquiry passage. Eight draft-status/provenance edits distinguish it from the released specification; reversing those edits reproduces the combined reviewed text exactly. All four illustrative JSON blocks remain byte-identical and parse. Complete source/README/released-file readback matched before merge; working and released source readback also matched at the merge commit. Both candidate verification runs and the merged-main verification passed. README links the draft separately. TRACE-v0.5.md remains blob39d943b26dd355781f2d01986b229b4f1da6c793; release receipt, checker and workflows unchanged. Release workflows are path-filtered to their RELEASE files, which this change does not touch.
+
+PR68 and PR69 are closed as superseded integration vehicles, not merged and not rejected editorially. [COM integration receipt](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6887071213). No new tag/release, schema, practical-benefit evidence, philosophical reconciliation or human correspondence follows. David's weekend hold remains. No additional acknowledgement, corpus reading or review is owed.
