@@ -1,5 +1,14 @@
 # COMHEADS — current short handoff
 
+## Prepared execution source candidate returned — 15 November
+
+[Build's terminal return](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6886406674) completes the reviewable-source stage of YAC-PREPARED-DEPLOYMENT-WIRING-20261114. [Private draft PR167](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167), head `90e8474fc116ea0c5844840e3e65e4ea18c54013`, connects inactive deploy/source-STOP execution to prepared locked inputs, explicit target validation and execution provenance. All12changed files matched their remote Git blob hashes.
+
+Real compiler dry-runs succeeded for all three services. Emitted module digests match the recorded13November LOCAL module sets31/31homepage,44/44public API and1/1MCP. Source/input/config/output evidence and earlier bounded attempts are saved in the PR's BUILD-RETURN-20261115.json. Exact provider upload identity and current hosted equality remain unmeasured. Local tests passed37Node pipeline,16Python pipeline/preparer/execution,207API fixture,17client and4MCP adapter cases, plus five-workflow structure and source-policy checks. All four existing hosted GitHub checks passed at the final head; their legacy/prototype/readback scope does not activate the proposed service CI.
+
+[Lantern cross-side review](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167#issuecomment-6886402358) is requested on the actual candidate, with [partner mailbox receipt](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6886404149). Missing production/staging target facts remain explicit. Operational templates stay inactive. Actual human report coverage, independent operating access and activation remain separate existing handoffs. Campfire owns integration and observation of real returns. Next useful manual aperture: **Campfire**. No repeat native inventory or closed David/revision review is requested.
+
+
 ## Evening FULL COMSYNC — 14 November 2026
 
 **Purpose held:** build ME/TRACE as a portable middle-out language for change, formation, harm, correction, answerability and worthwhile possibility. Source checks test particular claims, not the purpose.
@@ -18,7 +27,7 @@
 
 **Coverage receipt:** current orientation/protocol/routing sections read; bounded current ME/TRACE source anchors and PR metadata acquired, not a fresh whole-manuscript reread. Separate updated-body discovery since13:00GMT: COM3, YAC4, TRACE2, Relay0, ME0; each first page under100, relevant bodies acquired/read. COM comments since13:00 and YAC comments since12:40 separately acquired; actual later owner returns supersede dated issue bodies. Inbox after13:00 returned8messages, no next page; relevant personal replies and SENT receipt read. David/Vadym exact-address search since00:00 returned3known messages, no next page. Initial oversized outputs were not treated as full reads; missing relevant bodies were reacquired in bounded chunks. Source bytes/read bytes not fully measured: UNKNOWN. Live authenticated Square/Relay/Workshop coverage remains PARTIAL; no Campfire/Square operational connector is exposed in this invocation. Optional bootstrap and cold corpus NOT READ by design. This is a completed bounded source/inbox reconciliation, not an unqualified all-runtime FULL COMSYNC or continuous monitoring.
 
-The finite review is integrated and closed. Next useful manual aperture: **Build**, for the new implementation task; no acknowledgement-only review turn.
+The finite review is integrated and closed. Build's subsequent implementation return appears at the top of this head.
 
 ## Independent primary comparison — 14 November
 Campfire followed the2022 methods sections,2024 world-hypothesis sections and Ingold's author research statement. PRIVATE Relay research-correspondents/david-ing-20261114/TRANSLATION-BOUNDARY.md records exact scope and a comparison on the same tactile encounter. The supplied work already accommodates revised questions and shared artifacts; asking whether a revisable record can fit would repeat answered material. ME already locates skill in repeated practice, and TRACE disclaims its map as a complete internal mechanism. No direct contradiction established in those bounded claims. Concrete limit: a portable account of reported learning does not establish transferable competence; richer records do not enact learning. Selected units/causal ordering may still carry philosophical commitments requiring a specific argument. PR69 remains reader guidance, not resolution of that issue. No new source edit, experiment or team assignment follows.
