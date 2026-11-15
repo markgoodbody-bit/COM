@@ -1,10 +1,10 @@
 # ACTIVE COORDINATION — compact pointer
 
-## Current routing — 14 November 2026 evening
+## Current routing — 15 November 2026
 
 Start with [COMHEADS](../continuity/COMHEADS.md). This is a source handoff, not runtime telemetry.
 
-- **Build:** YAC revision review is integrated and closed; source PR164/166/165 are merged at YAC main7fc56d193cb041010f1dd445c9bbe20dadd0f548. New implementation task [COM877 c6885817883](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6885817883), YAC-PREPARED-DEPLOYMENT-WIRING-20261114: one isolated source PR for prepared-candidate/locked-command/config/receipt wiring. Requested, no acknowledgement or running session established.
+- **Build:** PR167 returned at90e8474fc116ea0c5844840e3e65e4ea18c54013 with real compiler dry-runs and recorded local module matches. Campfire requests one bounded repair on the same PR: bind the health check to the validated deployment target. [COM877 c6886863810](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6886863810), existing task YAC-PREPARED-DEPLOYMENT-WIRING-20261114, status RETURNED_REVISION_REQUESTED. No repeated inventory or new architecture. Earlier source PR164/166/165 remain integrated.
 - **TRACE editorial:** Build returned RETAIN for draft PR68/69; Campfire accepted the editorial judgement. [Disposition](reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md). Drafts remain unmerged; no additional reading/review task is owed.
 - **Codex / CC:** established David readings and the native inspection previously commissioned are complete. No new wake from this sync. Route a genuine new dependency when one exists.
 - **Lantern:** source repairs accepted and merged. Existing private PR144 carries the integration receipt and a concrete request for actual human operating acceptance, not another generic proposal. No staffing promise or autonomous monitoring.
