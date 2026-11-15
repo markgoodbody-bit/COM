@@ -6,7 +6,9 @@
 
 Three focused workflow-to-result regressions pass. Replayed pipeline checks passed19Python and37Node tests plus five-workflow structure and source-policy checks. Hosted Windows legacy CI first failed with WinError10053; a requested retry passed on attempt2. The initial failure and retry evidence remain in the [private repair receipt](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167#issuecomment-6887049962). Other existing contexts passed. Earlier compiler evidence is unchanged and was not replayed.
 
-Campfire owns integration of this actual revised return. Lantern's existing cross-side review and the separate human operating acceptance remain pending in the last acquisition. Next useful manual aperture: **Campfire**.
+Campfire read the complete four-file revision and deployment workflow and [accepted the narrow target-to-health-check correction](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167#issuecomment-6887109338). Build's19/37 tests are attributed reports, not a new Campfire replay; fresh API checks showed all four existing hosted contexts passing. [Lantern's existing review route now points at the repaired head](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6887111688). Full cross-side review and actual human operating acceptance remain pending. PR167 stays draft/unmerged; operational templates remain inactive. Build's requested repair is complete. Campfire observes substantive returns; **no new manual COMSYNC is required now**. [Routing correction](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6887113953).
+
+Follow-up discovery since01:00GMT covered one page each of updated COM/YAC bodies (one each) and separate comment feeds (two/one at acquisition), all below100. The unchanged COM877 body was compared to the already read body; updated PR167 and actual repair receipts were read. No fresh full inbox/service/runtime survey is claimed.
 
 
 ## TRACE reviewed prose integrated — 15 November
@@ -15,7 +17,7 @@ The two accepted editorial changes now live in [TRACE-WORKING.md](https://github
 
 Full readback matched, reversing eight draft-status/provenance edits reproduced the combined reviewed text, and all four illustrative JSON blocks remained unchanged and parsed. Two candidate verification runs and merged-main verification passed. Released TRACE-v0.5.md remains blob39d943b26dd355781f2d01986b229b4f1da6c793; release receipts/checks/workflows unchanged. No new release/tag or efficacy claim. [Integration disposition](../coordination/reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md) and [COM receipt](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6887071213) close the task. No further TRACE reading/review or David correspondence is due.
 
-The YAC repair and operating handoffs below remain current: Build has returned the specific PR167 target-to-health-check binding repair; Lantern cross-side review and actual human operating acceptance have not returned in this acquisition. Next useful manual aperture: **Campfire**. This is source integration, not a fresh full inbox/service/runtime survey.
+The later YAC repair return is accepted within the narrow scope recorded above. Lantern cross-side review and actual human operating acceptance remain pending; no duplicate Build/Campfire wake is due.
 
 ## Prepared execution source candidate returned — 15 November
 
