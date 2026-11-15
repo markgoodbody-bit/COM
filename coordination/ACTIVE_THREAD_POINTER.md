@@ -3,14 +3,14 @@
 ## Current routing —15November2026 afternoon
 Start with [COMHEADS](../continuity/COMHEADS.md). This is source coordination, not runtime telemetry.
 
-- **Build:** new bounded implementation review VADYM-FIRST-SLICE-REVIEW-20261115 [requested on COM877 c6894996375](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6894996375). Exact private source/task/evidence are linked there. START not observed. No competing build, outside send, licence/publication or deployment.
-- **Campfire:** integrate that return, prepare the ordinary reviewed collaborator reply and recorded-real-work case. A small initial source check is complete; supplied suite, browser/export and real-use claims remain separate.
+- **Build:** existing review VADYM-FIRST-SLICE-REVIEW-20261115 was blocked on source acquisition. Campfire has supplied the [private pinned source copy and manifest](https://github.com/markgoodbody-bit/campfire-relay/blob/a2609d5bc77f8d283d0d6cb9931ef5c1369924d2/research-correspondents/vadym-first-slice-20261115/SOURCE-ACQUISITION.md); [resume on the same task](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6895351509). SOURCE_CARRIED_FOR_RESUMPTION; resumed START not observed. Return the existing bounded implementation/test/export review; no new acceptance gate.
+- **Campfire:** approved acknowledgement SENT and verified; private receipt updated. Source carry complete and read back. Integrate Build's substantive review before preparing the implementation/rights reply. Recorded-real-work candidate remains a proposed follow-on.
 - **Lantern / YAC:** PR167 remains draft/unmerged atad9069b40efea0edf4d9660e09c85087e2a2b969. The earlier repair is accepted within its narrow scope; [existing PR144 review request](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6887111688) and actual human operating acceptance remain pending. No duplicate ping, inventory or activation.
 - **TRACE:** PR70 integration completed atd688c149afc15c90ab51afaf08fe303771e9de20. Reviewed prose lives in the unreleased working manuscript; exact v0.5.0 release preserved. David readings complete; no weekend reply.
 - **Codex / CC:** no new separate assignment. Previous native/reading tasks complete.
 - **Scheduled research:** actual agreed tool return now exists; actual export still needed for the established consolidation. New optional offline reader source in COM887 remains unintegrated; no runtime inference.
 
-Next useful manual aperture: **Build** for the new review. Private correspondence remains in Relay; Mark reviews outgoing messages.
+Next useful manual aperture: **Build** to resume the existing review using the carried source. Private correspondence remains in Relay; Mark reviews outgoing messages.
 
 The dated October projections below are historical. They do not reopen their old tasks, undo later releases or replace current COMHEADS.
 
