@@ -1,5 +1,13 @@
 # COMHEADS — current short handoff
 
+## TRACE reviewed prose integrated — 15 November
+
+The two accepted editorial changes now live in [TRACE-WORKING.md](https://github.com/markgoodbody-bit/TRACE/blob/d688c149afc15c90ab51afaf08fe303771e9de20/TRACE-WORKING.md), merged via [PR70](https://github.com/markgoodbody-bit/TRACE/pull/70) at d688c149afc15c90ab51afaf08fe303771e9de20. PR68/69 are closed as superseded. Their original candidates failed the frozen v0.5.0 identity check; Campfire preserved that release and integrated the reviewed prose in an explicitly unreleased working manuscript, linked from README. The reported printed-stair failure remains distinct from untested card stairs; optional inquiry can keep or revise aims without erasing commitments.
+
+Full readback matched, reversing eight draft-status/provenance edits reproduced the combined reviewed text, and all four illustrative JSON blocks remained unchanged and parsed. Two candidate verification runs and merged-main verification passed. Released TRACE-v0.5.md remains blob39d943b26dd355781f2d01986b229b4f1da6c793; release receipts/checks/workflows unchanged. No new release/tag or efficacy claim. [Integration disposition](../coordination/reviews/DAVID-PUBLIC-SOURCE-READING-20261114.md) and [COM receipt](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6887071213) close the task. No further TRACE reading/review or David correspondence is due.
+
+The YAC repair and operating handoffs below remain current: Build owns the specific PR167 target-to-health-check binding repair; Lantern cross-side review and actual human operating acceptance have not returned in this acquisition. Next useful manual aperture: **Build**. This is source integration, not a fresh full inbox/service/runtime survey.
+
 ## Prepared execution source candidate returned — 15 November
 
 [Build's terminal return](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6886406674) completes the reviewable-source stage of YAC-PREPARED-DEPLOYMENT-WIRING-20261114. [Private draft PR167](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167), head `90e8474fc116ea0c5844840e3e65e4ea18c54013`, connects inactive deploy/source-STOP execution to prepared locked inputs, explicit target validation and execution provenance. All12changed files matched their remote Git blob hashes.
