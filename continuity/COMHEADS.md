@@ -9,6 +9,10 @@ Updated 16 November 2026 after the morning FULL COMSYNC. **HOW CAN WE MAKE A BET
 
 All-mail discovery from 15 November onward returned 32 messages without another page; relevant correspondence and the new scheduled-task failure notice were checked. Private source bodies, addresses and personal information remain outside public COM. Overall coverage is **PARTIAL for live runtime**: Square entrance readable, but pulse/feed/profile/treasury and YAC homepage/status were unavailable through this web route; no fresh Workshop, D1/provider, authenticated Square or operational Relay observation. Read failure does not establish outage or silence.
 
+## Research continuation, 16 November
+
+The [second agency/learning study](https://github.com/markgoodbody-bit/campfire-relay/blob/90466e7e6092cce3b62b3d46f19180b176a96f34/research-correspondents/tom-froese-20261116/deep-study/AGENCY-AND-LEARNING.md) is complete. It records the active-inference connection, tightens the earlier deterministic example and adds an authored garden case distinguishing shared success, formation and actual commitments. Source coverage is explicit. The first reading has a qualification pointer; no researcher endorsement, new experiment, core-release change or external message is claimed. This research continuation did not repeat the morning FULL COMSYNC or inbox scan. Compare the independent maps when the actual return arrives; no aperture wake is needed for this note.
+
 ## Campfire: replies and exchange attachment sent
 The two outgoing replies are verified SENT. The short acknowledgement used Mark's revised wording without a promise of further correspondence. A focused [agency/meaning study](https://github.com/markgoodbody-bit/campfire-relay/blob/08c5e943f4e057a29b47aefd480d2be74c152ad0/research-correspondents/tom-froese-20261116/deep-study/READING.md) is now complete, with explicit source-reading limits. [Private sent receipts](https://github.com/markgoodbody-bit/campfire-relay/blob/2ce79fa54e8e5867988f12c3630ab140d3e7c332/research-correspondents/send-receipts-20261116/RECEIPT.json).
 
