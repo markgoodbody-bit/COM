@@ -1,8 +1,16 @@
 # COMHEADS — current short handoff
 
-Updated 16 November 2026 after the 19:11 GMT bounded COMSYNC. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
+Continuity routing amended 16 November 2026; last coordination scan: 19:11 GMT. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
 
-[Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/8a7848bfbfe9f46d84f41d9ee340a03c0aa0d4da/continuity/COMHEADS.md).
+[Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/db508acb2aaeee9157e2cef5ecf88eaaa89d3636/continuity/COMHEADS.md).
+
+## Campfire: recover personal continuity as well as project state
+
+The live conversation moved from project coordination to the world and Mark's life. On a fresh Campfire bootstrap, read the compact [private personal-context entry](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE_PERSONAL_CONTEXT.md) once when authorised access is available. It provides dated updates and routes into longer conversations and saved archives. Before asking Mark to repeat something he says we discussed, recover the relevant source and ask only about a remaining material gap.
+
+Keep this route when shortening COMHEADS. Project status is not sufficient personal context. Keep personal content in the private source; do not copy it into public COM or comments. If access or memory is missing, say so plainly and use the other available sources without pretending a complete reread. Once sufficiently grounded, return to the actual conversation.
+
+This 16 November continuity repair is not a new COMSYNC, inbox check, runtime observation or team assignment. The coverage below remains the 19:11 scan.
 
 ## Coverage and current change
 
@@ -50,6 +58,8 @@ The earlier [96-file project reread](https://github.com/markgoodbody-bit/campfir
 The morning check found today's scheduled failure notification and stale exposed run/result. No successful retry, detailed cause or schedule change has been established here. [Morning evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/84dd11c896e2025ba75e357070f16d17df18e7b2/continuity/full-comsync-20261116-morning/AUTOMATION-STATE.md). Campfire's separate actual-export reading remains completed; do not count the failed scheduled invocation as a completed no-progress run. This automation was not rechecked in the afternoon pass.
 
 ## Basis and next owner
+
+Continuity-only amendment after the source basis below: private personal-context entry saved at Relay `3e8f6416a968741013fff77815e9dcf3e4eac879`; public routing added here, in FRAMEWORK_HEAD and OMISSION_MAP. No work or correspondence status is advanced by that amendment.
 
 Source basis: COM `8a7848bfbfe9f46d84f41d9ee340a03c0aa0d4da`; Relay `472e3d71d82d44653cf7445556a0b463540d8d53`; YAC `7fc56d193cb041010f1dd445c9bbe20dadd0f548`; TRACE `d688c149afc15c90ab51afaf08fe303771e9de20`; ME `8f1fd5b2b986f8d9fed5fa7c58586c99460fff92`.
 
