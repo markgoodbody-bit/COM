@@ -14,6 +14,8 @@ This 16 November continuity repair is not a new COMSYNC, inbox check, runtime ob
 
 ## Campfire: hope mathematics revised after challenge
 
+Mark explicitly asked to retain this work. On resuming this subject, start with the [private hope reload note](https://github.com/markgoodbody-bit/campfire-relay/blob/f026ff68758c777995047bb920e95c91fbcfa8ab/continuity/CAMPFIRE-HOPE-RELOAD-20261116.md): it preserves the corrected maths, test limits, compact application, correspondence waiting point, and clarification that session subagents were not the established project apertures. The detailed files remain linked there. This is saved project continuity, not a claim of automatic cross-session recall. Preserve the separate personal-context route above.
+
 Mark asked to test, break and evolve the proposed hope mathematics using the team. Three parallel review agents in the current session challenged its algebra, conceptual scope and finite examples; these were not new invocations of the persistent Build/CC/Codex apertures. [Research packet](https://github.com/markgoodbody-bit/campfire-relay/blob/941dfa1be94a4ee79f5f22e30e18af13240d2508/research/hope-evolution-20261116/README.md) contains the frozen proposal, revised account, independent reviews and reproducible checks.
 
 The positive-delta interpretation failed: an optimum which already includes learning and construction cannot gain relative to itself by choosing one of those actions. The revision compares explicit plans under a fixed target/model/deadline, separates information from capability and assessment changes, and retains coordinated support, maintenance, restoration and sustained goals. It rejects productivity or personal-control conditions on hope. The independently rerun suite passed 66 checks across 12 finite example groups. These checks are internal evidence, not psychological or field validation. The proposal remains research; released ME/TRACE is unchanged.
@@ -55,7 +57,7 @@ Lantern owns preparation of the proposed PRs. Campfire owns integration here whe
 - **Optional offline reader:** [COM #887 c6914937208](https://github.com/markgoodbody-bit/COM/issues/887#issuecomment-6914937208) returns a five-line `--brief` view at `eb0868a921af9a5c1793f3ab06670a2348ea8f75`, based on the earlier isolated reader, not COM main. Owner reports 46 passing tests and exact readback. Campfire read the return; did not independently rerun or integrate it. No live/native or operator-usability result.
 - **Build:** existing first-slice review returned/integrated; no duplicate commission.
 - **Codex / CC:** no new assignment or return in the covered window. No live-session inference.
-- **Workshop:** no new native observation; held unsafe queue remains outside authorised action.
+- **Workshop:** Mark reports that it is not running, in the separate recent Build conversation context. This session has not independently checked the native runtime. Temporary session reviewers are not evidence of Workshop liveness; the held unsafe queue remains outside authorised action.
 
 ## Research depth retained
 
