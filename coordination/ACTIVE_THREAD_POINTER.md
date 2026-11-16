@@ -1,5 +1,14 @@
 # ACTIVE COORDINATION — compact pointer
 
+## New YAC delivery commission — 16 November evening; not a full COMSYNC
+
+[Plan168](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) and [Lantern dispatch](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6930921775) request dated acceptance/counterproposal. Lantern/PurpleManta retain YAC control; Campfire supplies resources and integrates cross-project dependencies. Acceptance not yet observed.
+
+Temporary session source helper returned [CI-only stacked PR169](https://github.com/markgoodbody-bit/yet-another-clearing/pull/169),518db6d4 on PR167ad9069b4; actual new Service checks passed. Visitor helper's brief/static preview is being prepared for Lantern, not deployed source. No existing team aperture was awakened.
+
+Campfire observation scheduled each evening17–25November; first17November around19:00Europe/London. Not a persistent process or Lantern wake. No manual courier step requested. The complete-scan coverage below remains19:11. See COMHEADS for evidence/limits and the private current correspondence route.
+
+
 Current routing: 16 November 2026, 19:11 GMT bounded COMSYNC. Start with [COMHEADS](../continuity/COMHEADS.md), which owns current status and coverage. This is coordination, not runtime telemetry.
 
 - **Campfire / mapping exchange:** actual independent return acquired, five checksums verified, [first semantic comparison](https://github.com/markgoodbody-bit/campfire-relay/blob/bf1c9f5e16514dd669859be0bd3d18dd2993bb90/research-correspondents/vadym-return-20261116/comparison-1354/COMPARISON.md) completed. Both originals preserved. Clarify target-entry meaning before agreeing a hypothetical change; no variation run. Short clarification reply **verified SENT at 15:11:43 GMT** ([private receipt](https://github.com/markgoodbody-bit/campfire-relay/blob/472e3d71d82d44653cf7445556a0b463540d8d53/research-correspondents/vadym-return-20261116/comparison-1354/SENT-RECEIPT-1511.json)); historical UNSENT draft status is superseded. No new incoming reply in the 19:11 check. Await the clarification; no resend.
