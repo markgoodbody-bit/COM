@@ -9,12 +9,12 @@ Updated 16 November 2026 after the morning FULL COMSYNC. **HOW CAN WE MAKE A BET
 
 All-mail discovery from 15 November onward returned 32 messages without another page; relevant correspondence and the new scheduled-task failure notice were checked. Private source bodies, addresses and personal information remain outside public COM. Overall coverage is **PARTIAL for live runtime**: Square entrance readable, but pulse/feed/profile/treasury and YAC homepage/status were unavailable through this web route; no fresh Workshop, D1/provider, authenticated Square or operational Relay observation. Read failure does not establish outage or silence.
 
-## Campfire: replies sent; attachment follow-up pending
-The two outgoing replies are verified SENT. The short acknowledgement used Mark's revised wording without a promise of further correspondence. Full-paper study remains outstanding. [Private sent receipts and correction](https://github.com/markgoodbody-bit/campfire-relay/blob/10c11ee32747efb70ab9214e6159ae9b27dc6eef/research-correspondents/send-receipts-20261116/RECEIPT.json).
+## Campfire: replies and exchange attachment sent
+The two outgoing replies are verified SENT. The short acknowledgement used Mark's revised wording without a promise of further correspondence. Full-paper study remains outstanding. [Private sent receipts](https://github.com/markgoodbody-bit/campfire-relay/blob/2ce79fa54e8e5867988f12c3630ab140d3e7c332/research-correspondents/send-receipts-20261116/RECEIPT.json).
 
-The kernel/exchange reply was sent, but the actual sent message contains no ZIP attachment. The older attachment-bearing Gmail draft was not used by that send. Campfire has repurposed it as a short attachment follow-up, verified with the unchanged ZIP. That follow-up remains UNSENT for Mark's approval. Do not resend either full reply or claim the exchange files reached the collaborator.
+The kernel/exchange reply initially went without its ZIP. Mark explicitly approved the prepared short follow-up, now SENT with the 29,864-byte ZIP verified in the sent message. No outgoing approval or attachment correction remains pending. Sending does not establish recipient receipt or reading; do not resend either full reply.
 
-Both first maps are reported saved, but the collaborator's actual files have not been acquired. Next is completing attachment delivery, exchanging maps, comparing their meanings and agreeing one hypothetical change. Preserve the initial encoding and existing publication-review boundaries. This is a targeted post-send correction, not another full discovery scan.
+Both first maps are reported saved, but the collaborator's actual files have not been acquired. Our exchange package is now sent; compare the maps when his arrives, then agree one hypothetical change. Preserve the initial encoding and existing publication-review boundaries. This is a targeted post-send correction, not another full discovery scan.
 
 Separate [research additions](https://github.com/markgoodbody-bit/campfire-relay/blob/5af6814904b2effef57a9018a4b7260aa1d3013e/research-correspondents/vadym-return-20261116/research-extension/README.md) remain available: alternative-support demonstration, formation/aim-revision account and proposed compression rubric. Seventeen test methods and six fictional scenarios are earlier actual results, not rerun this morning or field efficacy. Seven original mapping files and exchange ZIP were freshly verified unchanged.
 
@@ -35,4 +35,4 @@ Before this handoff update: COM 8b1cc28b83b3a270e31329a1acedcfdadf279698; YAC 7f
 
 Prior [Campfire 96-file reread](https://github.com/markgoodbody-bit/campfire-relay/blob/af6e2bb9573e9abf6961dece63980d229030ff92/continuity/project-reread-20261115-campfire/RELOAD-AND-READING.md) is retained; unchanged core not replayed. TRACE v0.5.0 and ME v1.0.0 releases remain unchanged; reviewed TRACE working prose remains explicitly unreleased. The previous handoff preserves exact sent receipts, source-acquisition limits and deeper historical pointers.
 
-Next useful manual aperture: **NONE now**. Campfire owns current correspondence/research integration. Mark reviews only the short attachment follow-up; no acknowledgement-only wake or autonomous background-work claim.
+Next useful manual aperture: **NONE now**. Campfire owns current correspondence/research integration. No outgoing-message review is pending here; no acknowledgement-only wake or autonomous background-work claim.
