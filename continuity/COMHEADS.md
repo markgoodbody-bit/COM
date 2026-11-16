@@ -1,14 +1,14 @@
 # COMHEADS — current short handoff
 
-Updated 16 November 2026 after the 14:24 GMT bounded COMSYNC. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
+Updated 16 November 2026 after the 15:11 GMT bounded COMSYNC. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
 
-[Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/b36e4e243bfa22282650057c4081a5a311239563/continuity/COMHEADS.md).
+[Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/db58008d76a8d85d0574125c194c3fd3d37443e1/continuity/COMHEADS.md).
 
 ## Coverage and current change
 
-[Exact private receipt](https://github.com/markgoodbody-bit/campfire-relay/blob/bf1c9f5e16514dd669859be0bd3d18dd2993bb90/research-correspondents/vadym-return-20261116/comparison-1354/ACQUISITION-AND-SYNC.json). Scan start: 16 November 14:24:16 GMT; overlap boundary: 10:35:52 GMT. All five repositories (COM, YAC, TRACE, Relay, ME) were checked for changed issue/PR bodies and comments, one complete page per query, including closed objects. Two changed objects and two new comments were read: COM #887 and private YAC #144. No new Build, Codex or CC return in that window. Current source heads were reacquired.
+[Exact private receipt](https://github.com/markgoodbody-bit/campfire-relay/blob/472e3d71d82d44653cf7445556a0b463540d8d53/research-correspondents/vadym-return-20261116/comparison-1354/SENT-RECEIPT-1511.json). Scan start: 16 November 15:11:56 GMT; overlap boundary: 14:22:16 GMT. All five repositories (COM, YAC, TRACE, Relay, ME) were checked for changed issue/PR bodies and comments, one complete page per query, including closed objects. No changed issue/PR bodies; the only comment was Campfire's previously verified reply on private YAC #144. No new Build, Codex, CC or Lantern return in that window. All five source heads were reacquired and unchanged before this receipt/handoff update.
 
-The targeted mail query covered AI Projects-labelled mail and the two named active correspondents since the boundary; one new substantive incoming was read. This was not an all-inbox review or FULL COMSYNC. Live runtime coverage remains **PARTIAL**: no new Workshop, provider, D1, YAC operational or Square observation. Readable source is not service liveness.
+The targeted mail query covered AI Projects-labelled mail and the two named active correspondents since the boundary. One outgoing message was found and its full body and SENT label verified; no new incoming reply was found. This was not an all-inbox review or FULL COMSYNC. Live runtime coverage remains **PARTIAL**: no new Workshop, provider, D1, YAC operational or Square observation. Readable source is not service liveness.
 
 ## Campfire: independent return acquired and compared
 
@@ -16,7 +16,7 @@ The collaborator's actual independent map and five companion files have now been
 
 [Semantic comparison](https://github.com/markgoodbody-bit/campfire-relay/blob/bf1c9f5e16514dd669859be0bd3d18dd2993bb90/research-correspondents/vadym-return-20261116/comparison-1354/COMPARISON.md) aligns meaning and scope instead of node IDs. The maps agree on the present staging headline but activate different prerequisites. A target-entry assumption needs clarification because it may reintroduce the health-check dependency removed by the repair. Both frozen first maps remain unchanged. A single input-identity-support variation is proposed but neither agreed nor run.
 
-[Short reply for Mark's check](https://github.com/markgoodbody-bit/campfire-relay/blob/bf1c9f5e16514dd669859be0bd3d18dd2993bb90/research-correspondents/vadym-return-20261116/comparison-1354/ACKNOWLEDGEMENT-UNSENT.txt) is prepared and **UNSENT**. The earlier two replies and attachment follow-up remain verified SENT; do not resend them. Exact public-bundle review remains required before publication, and the private run receipt remains excluded. These are private correspondence details; use the private source rather than copying them into public comments.
+The short clarification reply is now **SENT, verified at 15:11:43 GMT** ([private receipt](https://github.com/markgoodbody-bit/campfire-relay/blob/472e3d71d82d44653cf7445556a0b463540d8d53/research-correspondents/vadym-return-20261116/comparison-1354/SENT-RECEIPT-1511.json)); its full plain-text body exactly matches the reviewed draft. The old file named ACKNOWLEDGEMENT-UNSENT.txt is a historical draft snapshot, superseded by this receipt. The earlier replies and attachment follow-up remain verified SENT; do not resend them. Await clarification before agreeing the hypothetical change. Exact public-bundle review remains required before publication, and the private run receipt remains excluded. These are private correspondence details; use the private source rather than copying them into public comments.
 
 ## YAC / Lantern: new access and report-capacity return
 
@@ -28,7 +28,7 @@ Campfire recommends individually revocable operator credentials, with the propos
 
 Lantern owns preparation of the proposed PRs. Campfire owns integration here when a concrete return arrives or on the next COMSYNC. Actual service CI, cross-side review, human operating acceptance and reviewed deployment remain separate gates. No production SQL, migration, credential rotation, permission change, staffing commitment or continuous watcher is claimed.
 
-[PR167](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167) was freshly checked: draft/open/unmerged, head `ad9069b40efea0edf4d9660e09c85087e2a2b969`. Earlier full cross-side review and human operating-acceptance questions remain distinct from this new source preparation.
+[PR167](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167) was checked in the preceding 14:24 pass: draft/open/unmerged, head `ad9069b40efea0edf4d9660e09c85087e2a2b969`. Earlier full cross-side review and human operating-acceptance questions remain distinct from this new source preparation.
 
 ## Other engineering returns
 
@@ -49,8 +49,8 @@ The morning check found today's scheduled failure notification and stale exposed
 
 ## Basis and next owner
 
-Source basis: COM `b36e4e243bfa22282650057c4081a5a311239563`; Relay `90466e7e6092cce3b62b3d46f19180b176a96f34`, advanced by the private comparison to `bf1c9f5e16514dd669859be0bd3d18dd2993bb90`; YAC `7fc56d193cb041010f1dd445c9bbe20dadd0f548`; TRACE `d688c149afc15c90ab51afaf08fe303771e9de20`; ME `8f1fd5b2b986f8d9fed5fa7c58586c99460fff92`.
+Source basis: COM `db58008d76a8d85d0574125c194c3fd3d37443e1`; Relay `bf1c9f5e16514dd669859be0bd3d18dd2993bb90`, advanced by the verified send receipt to `472e3d71d82d44653cf7445556a0b463540d8d53`; YAC `7fc56d193cb041010f1dd445c9bbe20dadd0f548`; TRACE `d688c149afc15c90ab51afaf08fe303771e9de20`; ME `8f1fd5b2b986f8d9fed5fa7c58586c99460fff92`.
 
-Campfire owns current correspondence/comparison and integration of partner returns. Mark has one concrete short reply to check; the operator recovery-copy question is informational, not a request to reveal a key. No new manual team wake is required.
+Campfire owns current correspondence/comparison and integration of partner returns. The short reply has been sent; no correspondence action is presently required. The operator recovery-copy question remains unanswered and informational, not a request to reveal a key or a blocker on source preparation. No new manual team wake is required.
 
 Next useful manual aperture: **NONE now**.
