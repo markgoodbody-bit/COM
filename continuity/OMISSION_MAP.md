@@ -1,7 +1,7 @@
 # FRAMEWORK OMISSION MAP
 
 Status: **WORKING INDEX OF VISIBLE NEGATIVE SPACE — NOT CANON / NOT A BOOT CHECKLIST**  
-Updated: 2026-11-16 — Europe/London (personal-continuity route added; other routes retained)  
+Updated: 2026-11-16 — Europe/London (hope research and personal-continuity routes retained)  
 Rule: absence from `FRAMEWORK_HEAD.md` does not mean absence from history/evidence.
 
 This map exists to help an aperture retrieve **less**, not to enumerate everything that exists.
@@ -28,6 +28,7 @@ COLD_EVIDENCE != CURRENT_STATE
 | Campfire older WIP / Simple-v1 / study branches | A proposal would reuse, supersede or depend on one of those exact lanes | Reverify the named PR/head/body and current Production first. Open/stale branch != current queue. |
 | Campfire Square broad history / exports | A present decision depends on one named field event not available from narrower current sources | Retrieve named thread/post/comment/payload through the narrowest path. Large exports are forensic carriers; query selectively and never inject wholesale. |
 | Mark's personal history and Campfire conversation | Fresh Campfire orientation, a personal update, or reference to an earlier shared conversation | Read the compact [private personal-context entry](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE_PERSONAL_CONTEXT.md) once, then the relevant named source. Keep dated facts and assistant interpretations distinct. Do not copy private details into public COM. This concerns Mark's history, not a claim of predecessor AI identity. |
+| Hope / positive formation / sustained possibilities | A question concerns what makes worthwhile futures possible, information versus capability, maintenance, or the earlier hope equation | Read the [16 November challenged hope revision](https://github.com/markgoodbody-bit/campfire-relay/blob/941dfa1be94a4ee79f5f22e30e18af13240d2508/research/hope-evolution-20261116/README.md), starting at EVOLVED.md. It preserves the frozen failed equation, corrected comparisons, ordinary hard cases and executable toy checks. Research, not a release or a measure of felt hope. |
 | Prior Framework conversations | A unique consequential claim cannot be resolved from current source/ledger pointers | Retrieve the minimum predecessor excerpt; classify it as inherited testimony. Never rebuild a predecessor biography for orientation. |
 | Other aperture reasoning histories | A bounded challenge/result from CC/Codex/another aperture bears on the present action | Retrieve only the relevant return/receipt. Preserve disagreement and source aperture separately; do not convert another aperture's reasoning into Framework memory. |
 | COM old issue histories / continuity hostile-jury material | A current protocol/continuity claim requires one historical event or the omission architecture itself is being retested | Retrieve the named issue/comment/test only. Long issue history is evidence quarry, not current context. |

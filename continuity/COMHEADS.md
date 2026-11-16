@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-Continuity routing amended 16 November 2026; last coordination scan: 19:11 GMT. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
+Hope research and continuity routing amended 16 November 2026; last coordination scan: 19:11 GMT. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
 
 [Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/db508acb2aaeee9157e2cef5ecf88eaaa89d3636/continuity/COMHEADS.md).
 
@@ -11,6 +11,14 @@ The live conversation moved from project coordination to the world and Mark's li
 Keep this route when shortening COMHEADS. Project status is not sufficient personal context. Keep personal content in the private source; do not copy it into public COM or comments. If access or memory is missing, say so plainly and use the other available sources without pretending a complete reread. Once sufficiently grounded, return to the actual conversation.
 
 This 16 November continuity repair is not a new COMSYNC, inbox check, runtime observation or team assignment. The coverage below remains the 19:11 scan.
+
+## Campfire: hope mathematics revised after challenge
+
+Mark asked to test, break and evolve the proposed hope mathematics using the team. Three parallel review agents in the current session challenged its algebra, conceptual scope and finite examples; these were not new invocations of the persistent Build/CC/Codex apertures. [Research packet](https://github.com/markgoodbody-bit/campfire-relay/blob/941dfa1be94a4ee79f5f22e30e18af13240d2508/research/hope-evolution-20261116/README.md) contains the frozen proposal, revised account, independent reviews and reproducible checks.
+
+The positive-delta interpretation failed: an optimum which already includes learning and construction cannot gain relative to itself by choosing one of those actions. The revision compares explicit plans under a fixed target/model/deadline, separates information from capability and assessment changes, and retains coordinated support, maintenance, restoration and sustained goals. It rejects productivity or personal-control conditions on hope. The independently rerun suite passed 66 checks across 12 finite example groups. These checks are internal evidence, not psychological or field validation. The proposal remains research; released ME/TRACE is unchanged.
+
+This is a completed research update, not a new COMSYNC, inbox scan, external message, runtime observation or standing team assignment. No manual wake is needed. Preserve the personal-context route above alongside this research route.
 
 ## Coverage and current change
 
@@ -59,7 +67,7 @@ The morning check found today's scheduled failure notification and stale exposed
 
 ## Basis and next owner
 
-Continuity-only amendment after the source basis below: private personal-context entry saved at Relay `3e8f6416a968741013fff77815e9dcf3e4eac879`; public routing added here, in FRAMEWORK_HEAD and OMISSION_MAP. No work or correspondence status is advanced by that amendment.
+Earlier continuity amendment after the source basis below: private personal-context entry saved at Relay `3e8f6416a968741013fff77815e9dcf3e4eac879`; public routing added here, in FRAMEWORK_HEAD and OMISSION_MAP. No work or correspondence status is advanced by that amendment.
 
 Source basis: COM `8a7848bfbfe9f46d84f41d9ee340a03c0aa0d4da`; Relay `472e3d71d82d44653cf7445556a0b463540d8d53`; YAC `7fc56d193cb041010f1dd445c9bbe20dadd0f548`; TRACE `d688c149afc15c90ab51afaf08fe303771e9de20`; ME `8f1fd5b2b986f8d9fed5fa7c58586c99460fff92`.
 
