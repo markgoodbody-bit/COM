@@ -48,3 +48,24 @@ No source or destination identity, causal parent, route, timing, authorization, 
 A single task-ID string can appear on `RETURN` records claiming both `COMPLETED` and `REJECTED`. Previously the reader displayed a completed-return count and sample-local correlation candidate without exposing that divergence. It now counts `return_task_ids_with_divergent_terminal_claims_in_sample` and `return_terminal_records_on_divergent_task_ids_in_sample`. These fields are **sample-local review signals**, not contradictory-outcome verdicts: a later correction, retry, changed decision, inconsistent metadata or missing order may explain them. The record count includes redelivery copies and is not a count of independent events.
 
 This check groups only literal usable task IDs on `RETURN` rows, never guesses unknown IDs, causal sequence, task authority or final state. Statuses on `TASK` records do not contribute. The default view gives only counts; `--details` also lists divergent task IDs, which may be sensitive. The inherited task-to-return correlation caveat and all prior fields remain intact. No status label authenticates actual work. The 10 new tests in `tests/test_return_outcomes.py` supplement the inherited 26, including unchanged-source RED evidence and real CLI execution. No native receiver or VM return has been measured.
+
+## Optional five-line brief readout (16 November 2026)
+
+Run: python3 return_reader.py supplied-local-events.json --brief
+
+This produces five fixed-text lines compressing the source-only counters:
+preserved-identity gaps, possible redeliveries and conflicts, ambiguous task
+matches, sample-local return non-observations and divergent terminal labels.
+Every interpolated value is a bounded integer count. Writer text, source names,
+task/event IDs, routes, headings, fingerprints and payloads are never inserted.
+The fifth line refuses inference of authority, real delivery, completion,
+final outcome or absence outside the supplied local sample.
+
+The default remains full counts-only JSON; --details still offers identifiable
+records, separately. --brief and --details cannot be combined. No rank, action
+recommendation, remediation, authenticity or true-world outcome is inferred.
+Counts can themselves reveal sensitive information. Stronger native/domain
+evidence takes precedence. No Workshop read, remote call or process execution
+is introduced. Ten new source-only regression tests exercise bounded output,
+spoof attempts, maximum sample, identity collisions, divergent claims, invalid
+data and actual CLI behavior; they supplement the 36 inherited tests.

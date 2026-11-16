@@ -211,10 +211,61 @@ def audit(data, details=False):
     return result
 
 
+
+def brief_report(report):
+    """Five static, identifier-free lines for triage; never an outcome verdict.
+
+    Input is the counts-only result of audit(), not raw writer content.
+    Reject non-integer/implausible values even if a caller supplies a forged
+    report: no field from the event sample is interpolated into plain text.
+    """
+    def count(key):
+        value = report[key]
+        if type(value) is not int or not (0 <= value <= MAX_EVENTS):
+            raise InputError('invalid report count')
+        return value
+
+    rows = count('records')
+    identities = count('distinct_preserved_identities')
+    missing_identity = count('unpreserved_identity_records')
+    redeliveries = count('same_identity_redeliveries')
+    conflicts = count('identity_conflicts')
+    candidates = count('task_ids_with_noncolliding_task_and_return_candidate_in_sample')
+    ambiguous = count('task_ids_with_ambiguous_correlation_in_sample')
+    no_return = count('tasks_without_return_in_sample')
+    no_task = count('return_ids_without_observed_task_in_sample')
+    completed = count('completed_return_claims')
+    divergent = count('return_task_ids_with_divergent_terminal_claims_in_sample')
+
+    def noun(number, singular, plural):
+        return singular if number == 1 else plural
+
+    return '\n'.join((
+        f'Supplied sample: {rows} {noun(rows, "record", "records")}; '
+        f'{identities} preserved event identities; {missing_identity} '
+        f'{noun(missing_identity, "record", "records")} without preserved identity.',
+        f'Identity checks: {redeliveries} possible redeliveries; '
+        f'{conflicts} same-identity semantic conflicts.',
+        f'Task/RETURN strings: {candidates} noncolliding match candidates; '
+        f'{ambiguous} ambiguous task IDs; {no_return} '
+        f'{noun(no_return, "task ID", "task IDs")} without a matching '
+        f'RETURN in this sample; {no_task} '
+        f'{noun(no_task, "RETURN ID", "RETURN IDs")} without an observed TASK in this sample.',
+        f'RETURN claims: {completed} RETURN '
+        f'{noun(completed, "record", "records")} labelled COMPLETED; '
+        f'{divergent} {noun(divergent, "task ID", "task IDs")} with both '
+        'COMPLETED and REJECTED labels.',
+        'Limits: unverified supplied claims; no proof of authority, delivery, '
+        'completion, final outcome or absence outside this sample.',
+    ))
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description='Inspect supplied COM-style JSON events without executing anything')
     parser.add_argument('input', help='local UTF-8 JSON file, or - for stdin')
-    parser.add_argument('--details', action='store_true', help='also print event/task identifiers (may be sensitive)')
+    view = parser.add_mutually_exclusive_group()
+    view.add_argument('--details', action='store_true', help='also print event/task identifiers (may be sensitive)')
+    view.add_argument('--brief', action='store_true', help='five short counts-only lines; no input identifiers')
     args = parser.parse_args(argv)
     try:
         if args.input == '-':
@@ -225,7 +276,10 @@ def main(argv=None):
         if len(raw) > MAX_BYTES:
             raise InputError('input exceeds 1 MiB')
         result = audit(parse_input(raw.decode('utf-8')), details=args.details)
-        print(json.dumps(result, ensure_ascii=True, sort_keys=True, indent=2))
+        if args.brief:
+            print(brief_report(result))
+        else:
+            print(json.dumps(result, ensure_ascii=True, sort_keys=True, indent=2))
         return 0
     except (InputError, OSError, UnicodeError, TypeError, ValueError, OverflowError) as exc:
         # Do not echo malformed input, including purported commands, payload or raw paths.
