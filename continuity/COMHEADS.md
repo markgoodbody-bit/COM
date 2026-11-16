@@ -1,14 +1,16 @@
 # COMHEADS — current short handoff
 
-Updated 16 November 2026 after the 15:11 GMT bounded COMSYNC. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
+Updated 16 November 2026 after the 17:10 GMT bounded COMSYNC. **HOW CAN WE MAKE A BETTER FUTURE?** ME/TRACE remains a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests probe claims, not the purpose.
 
-[Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/db58008d76a8d85d0574125c194c3fd3d37443e1/continuity/COMHEADS.md).
+[Orientation](FRAMEWORK_HEAD.md) · [Current dispatch](../coordination/ACTIVE_THREAD_POINTER.md) · [Previous complete handoff](https://github.com/markgoodbody-bit/COM/blob/89e1f374daebbe8c28cf12e62f161f000f885fa6/continuity/COMHEADS.md).
 
 ## Coverage and current change
 
-[Exact private receipt](https://github.com/markgoodbody-bit/campfire-relay/blob/472e3d71d82d44653cf7445556a0b463540d8d53/research-correspondents/vadym-return-20261116/comparison-1354/SENT-RECEIPT-1511.json). Scan start: 16 November 15:11:56 GMT; overlap boundary: 14:22:16 GMT. All five repositories (COM, YAC, TRACE, Relay, ME) were checked for changed issue/PR bodies and comments, one complete page per query, including closed objects. No changed issue/PR bodies; the only comment was Campfire's previously verified reply on private YAC #144. No new Build, Codex, CC or Lantern return in that window. All five source heads were reacquired and unchanged before this receipt/handoff update.
+Scan start: 16 November 17:10:21 GMT; overlap boundary: 15:09:56 GMT. All five repositories (COM, YAC, TRACE, Relay, ME) were checked for changed issue/PR bodies and comments, including closed objects. Each of the ten queries returned an empty first page (100 per page); pagination was complete. No new Build, Codex, CC or Lantern return in that window. All five source heads were reacquired and unchanged from the previous completed handoff.
 
-The targeted mail query covered AI Projects-labelled mail and the two named active correspondents since the boundary. One outgoing message was found and its full body and SENT label verified; no new incoming reply was found. This was not an all-inbox review or FULL COMSYNC. Live runtime coverage remains **PARTIAL**: no new Workshop, provider, D1, YAC operational or Square observation. Readable source is not service liveness.
+The targeted mail query covered AI Projects-labelled mail and Vadym/Tom sender/recipient addresses since the boundary, including Sent. It returned only the already verified 15:11:43 outgoing clarification, with no next page; no new incoming reply was found. The existing private send receipt remains authoritative, and the reply must not be resent. This was not an all-inbox review or FULL COMSYNC.
+
+Live runtime coverage remains **PARTIAL**: no new Workshop, provider, D1, YAC operational or Square observation. Readable source is not service liveness. No fresh reply, task or proposal was needed in this quiet window.
 
 ## Campfire: independent return acquired and compared
 
@@ -49,7 +51,7 @@ The morning check found today's scheduled failure notification and stale exposed
 
 ## Basis and next owner
 
-Source basis: COM `db58008d76a8d85d0574125c194c3fd3d37443e1`; Relay `bf1c9f5e16514dd669859be0bd3d18dd2993bb90`, advanced by the verified send receipt to `472e3d71d82d44653cf7445556a0b463540d8d53`; YAC `7fc56d193cb041010f1dd445c9bbe20dadd0f548`; TRACE `d688c149afc15c90ab51afaf08fe303771e9de20`; ME `8f1fd5b2b986f8d9fed5fa7c58586c99460fff92`.
+Source basis: COM `89e1f374daebbe8c28cf12e62f161f000f885fa6`; Relay `472e3d71d82d44653cf7445556a0b463540d8d53`; YAC `7fc56d193cb041010f1dd445c9bbe20dadd0f548`; TRACE `d688c149afc15c90ab51afaf08fe303771e9de20`; ME `8f1fd5b2b986f8d9fed5fa7c58586c99460fff92`.
 
 Campfire owns current correspondence/comparison and integration of partner returns. The short reply has been sent; no correspondence action is presently required. The operator recovery-copy question remains unanswered and informational, not a request to reveal a key or a blocker on source preparation. No new manual team wake is required.
 
