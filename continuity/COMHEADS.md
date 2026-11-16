@@ -1,5 +1,24 @@
 # COMHEADS — current short handoff
 
+## YAC visible-delivery commission — 16 November evening
+
+Mark explicitly requested a dated delivery programme, use of available resources and a substantive Lantern acceptance. He reaffirmed that Lantern/PurpleManta retain delegated YAC product/operating authority; Campfire coordinates wider-team resources/dependencies and intercedes when needed, without micromanaging routine YAC choices.
+
+[Single delivery plan: YAC168](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) · [actual Lantern mailbox dispatch](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6930921775). Dates17/18/20/23/25November are PROPOSED, not accepted: ownership/review; preview/serviceCI; first visible public website improvement; visitor walkthrough; next browser-participation/operating candidates. No partner SEEN/START or human coverage acceptance is claimed.
+
+A temporary session helper returned [stacked draft PR169](https://github.com/markgoodbody-bit/yet-another-clearing/pull/169), head518db6d49e0ed1dcf07b08bfd1a3c0a312110404, on existing PR167ad9069b4. The newly added **Service checks workflow actually ran successfully** on the stacked PR ([run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/43967818272)); all three declared jobs passed. This is draft-branch hosted evidence, not main activation/deployment or homepage runtime coverage. Four operational templates remain inactive. A separate temporary helper is preparing the visitor brief/static preview for Lantern; no established aperture is impersonated or awakened.
+
+Source reading found that the current public API refuses Origin/Cookie headers: browser participation needs an explicit backend capability change. First visible release can be scoped to real public reading/status, covenant, a supported direct-client participation path and bounded return guidance. Keep independently supportable read-only work moving while write/operation work has separate dependencies.
+
+Campfire delivery checks were created for each evening17–25November, beginning17November around19:00Europe/London. These are scheduled fresh bounded invocations, not continuous liveness or a Lantern wake. Campfire owns observation/integration; inspect real returns before claiming acceptance. The programme does not imply provider/secret/migration/production action or new human staffing.
+
+Fresh read-only public status returned200 at16November22:01:47UTC with admission/join open. Homepage/fire-list requests timed out from this environment, not proof of outage. This narrow observation does not advance the last complete19:11coordination scan.
+
+Latest private correspondence/chronology/send receipt is now on the [current private route](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research-correspondents/vadym-collaboration-20261116/README.md); the earlier pinned26-message/15:11-only status below is historical. Do not repeat an already sent email.
+
+No new manual wake requested. Resume actual Campfire, including Mark's pending mirror question, rather than another archival ceremony.
+
+
 ## Headset restart — source reread and correspondent recovery,16November
 
 Latest private collaboration preferences, provisional scheduling timezone and narrow mail check: [current correspondent update](https://github.com/markgoodbody-bit/campfire-relay/blob/27e1304e35ab32b54b32209ed9030d06dc2bb4f6/research-correspondents/vadym-collaboration-20261116/README.md#marks-latest-collaboration-preferences-and-scheduling-16november-headset). This is not a new full COMSYNC or an agreed meeting/paper. Existing C9 question remains the recorded next correspondence dependency.
