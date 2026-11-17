@@ -1,17 +1,17 @@
 # ACTIVE COORDINATION — compact pointer
 
-17November2026 morning. [COMHEADS](../continuity/COMHEADS.md) owns current status/coverage. [Previous pointer](https://github.com/markgoodbody-bit/COM/blob/d9767f4605b770f16878ce5a78d4762d17f8527d/coordination/ACTIVE_THREAD_POINTER.md) is historical.
+17November2026 morning. [COMHEADS](../continuity/COMHEADS.md) owns current evidence and coverage.
 
-- **Build:** [TRACE reconstruction task954](https://github.com/markgoodbody-bit/COM/issues/954), [construction handoff877](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6942702115), [exact integrated contractf928f04e](https://github.com/markgoodbody-bit/TRACE/blob/f928f04e99e1b87c3c9b65fc9bcad6375bcda739/research/trace-0.6-foundations/INTEGRATION-20261117.md). Your preliminary source review is acquired and credited. Construct the crosswalk, full/spine candidate and testable finite lab. The reported later lab remains unrecovered; recover exact source or construct from pins, not another audit-only loop.
-- **Codex:** preliminary83+29checks and PR71 acquired. Reproduce final complete pin when Build returns it; no repeated baseline run now.
-- **CC:** new [ME1.1 literature/editorial construction955](https://github.com/markgoodbody-bit/COM/issues/955), [mailbox handoff](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6943813615). Return a source/passage map, actual edited sample and consolidated limits prose. Earlier TRACE critiques are complete; the latest timing-controller correction is in the updated contract.
-- **Campfire:** integrate source, literature and positive purpose; current private correspondence and review draft at the [private route](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research-correspondents/vadym-collaboration-20261116/README.md). Older waiting state superseded; do not resend.
-- **Lantern/Andy:** retain YACcontrol. Plan168dates remain proposed; resources167/169/170available, no new acceptance or deployment. Existing144mailbox sufficient; no duplicate ping.
-- **Workshop:** dated16Nov native restart/view evidence, no admitted autonomous AI worker. Fresh native liveness not checked this morning.
-- **Scheduled progress:**08:16run returned isolated reader-default repair and honesty checkpoint; source-only. Old standalone evening/honesty schedules paused. Current heads have the limits.
+- **Build:** [TRACE954](https://github.com/markgoodbody-bit/COM/issues/954). Candidate32ba2e0d acquired; construction is real, semantic review incomplete. Integrate the learning/agency case and reconcile useful meanings across0.3,0.4,0.5. Keep reviewed dispositions separate from generated38-heading/206-block inventory. Historical donors are not automatically implemented.
+- **Codex:** PR72review58e8afbc tests Buildd1eb4161, not32ba. The cancellation ambiguity is already repaired in later Build source. Target the actual next stable changed pin; no baseline rerun merely for activity.
+- **CC:** [ME955](https://github.com/markgoodbody-bit/COM/issues/955). PR89sample/source map/limits proposal4aa4a91c acquired. Integrate [Campfire's820-word Chapter12 candidate1e20589f](https://github.com/markgoodbody-bit/mechanical-ethics/blob/1e20589f50272919527beba194d978f66783efe6/working-editions/v1.1-drafts/cc-literature-sample-20261117/CAMPFIRE-INTEGRATED-CH12.md) and its precise source/limits corrections. Preserve earlier ME meanings through the historical review.
+- **Campfire:** integrate both tracks and source relationships; two temporary readers are reviewing TRACE and ME history. Full recovery/comparison is not complete. Private correspondence remains private; no new outgoing mail.
+- **Lantern/Andy:** retain YACcontrol; plan168dates remain proposed, resources167/169/170available. No new acceptance or deployment; existing144route sufficient.
+- **Workshop:** dated16Nov native restart/view evidence; no admitted autonomous AI worker. Fresh native liveness not checked.
+- **Scheduled progress:**08:16source-only reader-default/honesty result retained; capability/support study scheduled11:00. No automation change in this sync.
 
-[Two-track authorial brief](https://github.com/markgoodbody-bit/COM/blob/c26fd1493fbb00b11a4653d970165ef76045d8ff/coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md): preserve existing audience/presentation; TRACE internal reconstruction, ME focused revision; no new reader recruitment. Posted assignments do not establish acceptance.
+[Authorial brief e92f7570](https://github.com/markgoodbody-bit/COM/blob/e92f7570eb7190477eaf3bb7fd5d254a68354526/coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md): existing audience and presentation; TRACE internal reconstruction; ME focused revision; useful older material needs an explicit home or reason for change. Diagnose and retry failed lookups using canonical version/history/archive paths. No reader-recruitment prerequisite.
 
-Source-discovery watermark17Nov08:05:25UTC, with two-minute overlap next pass. All five repos' changed bodies/comments covered; runtime scope partial. Source-current is not service-live. Released ME1.0/TRACE0.5unchanged.
+Source watermark17Nov09:32:39UTC; two-minute overlap next pass. All five repos' changed bodies and separate comments covered through that boundary. Later exact reads/writes are supplements. Mail and runtime retain separate dated coverage. Source-current is not service-live.
 
-**Next manual COMSYNC: NONE for the added notes.** Mark reports Build active and CC/Codex occupied;955 and new source/case inputs are queued. Posted/requested is not independently observed acceptance.
+**Next manual COMSYNC: NONE.** Substantive inputs are on954/955; no acknowledgement-only wake.
