@@ -6,7 +6,7 @@
 
 ## Next versions: TRACE reconstruction and ME revision
 
-Mark's [two-track authorial brief](https://github.com/markgoodbody-bit/COM/blob/b1f0515cbc6920236e2ae34292f35d7b395620f0/coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) preserves the current audiences and overall presentation. **TRACE0.6** rebuilds its internal architecture and reconciles every inherited meaning; **ME1.1** retains the human book's shape while integrating literature and removing repetitive generic disclaimers. The complexity question is first for architecture; ME source/prose work proceeds alongside it. Existing outside-feedback relationships already supply readers; no new reader-recruitment prerequisite.
+Mark's [two-track authorial brief](https://github.com/markgoodbody-bit/COM/blob/c26fd1493fbb00b11a4653d970165ef76045d8ff/coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) preserves the current audiences and overall presentation. **TRACE0.6** rebuilds its internal architecture and reconciles every inherited meaning; **ME1.1** retains the human book's shape while integrating literature and removing repetitive generic disclaimers. The complexity question is first for architecture; ME source/prose work proceeds alongside it. Existing outside-feedback relationships already supply readers; no new reader-recruitment prerequisite.
 
 **CC has a new construction task:** [ME1.1 source map and edited sample955](https://github.com/markgoodbody-bit/COM/issues/955), [mailbox handoff](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-6943813615). Build retains TRACE; Codex retains actual-final-pin reproduction. These are posted assignments, not observed wake/acceptance.
 
@@ -19,6 +19,8 @@ Accepted repairs cover controlled evidence/clocks, normative holders, supporters
 Last night's later core/simulator and114-unit inventory are **REPORTED_WRITTEN / FINAL_SOURCE_NOT_RECOVERED** after bounded recovery. The integration contract is not that lab. Build now [has construction responsibility](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-6942702115): recover an exact prior version if available; otherwise construct the source crosswalk, reconstructed complete candidate, generated spine, mechanical coverage check and finite simulator. Do not wait indefinitely on an absent pin. Every0.5meaning needs an intelligible destination or explicit unresolved discrepancy; span/hash coverage is not semantic preservation.
 
 Codex reproduces the actual complete pin when returned. CC owes no repeated TRACE critique; its new ME1.1 text/source task is separate. Campfire owns integration, source recovery and primary-source follow-through. No claim a mailbox post wakes an agent. TRACEv0.5.0/MEv1.0.0 remain the releases;0.6is construction toward1.0.
+
+Campfire has supplied a [worked community-learning bridge](https://github.com/markgoodbody-bit/campfire-relay/blob/546cae25c4c6208cc7f560c40569e362c2973c57/research-correspondents/source-notes/TRACE06-COMMUNITY-LEARNING-WORKED-BRIDGE-20261117.md) and [cross-source inventory](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research-correspondents/source-notes/TRACE06-CROSS-SOURCE-INVENTORY-20261117.md), posted on [954](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-6944051118) and [955](https://github.com/markgoodbody-bit/COM/issues/955#issuecomment-6944051572). Earlier recommendations must meet the new sources in one account; source relationships and conflicts remain explicit. The inventory records bounded reading and missing bibliography, not completed synthesis. Campfire owns source recovery/integration; Build can use or revise the case instead of duplicating it.
 
 ## Personal and research continuity: keep these routes
 
@@ -48,4 +50,4 @@ Complete five-repository changed-body/separate-comment discovery since16Nov19:09
 
 Square stats/citizen/newGETs succeeded; complete latest invitation-thread comments10898and10045 contain no new delta. This is bounded, not whole-board/history coverage. Live scope remains PARTIAL: no fresh native Workshop/Relay/provider/D1 or record-levelTHR read. Original project-mail selection was incomplete and is superseded by the independent all-mail window and reconciliation above; the repository/runtime watermark is unchanged.
 
-**Next useful manual aperture: CC**, for the new substantive ME1.1 task955. Build's TRACE construction continues under the updated contract; no repeat Codex/Lantern wake. Campfire owns integration.
+**Next manual COMSYNC: NONE for these added notes.** Mark reports Build has been COMSYNCed and is working, while CC/Codex remain occupied. CC's new955 task and substantive inputs are queued on the normal routes; no extra acknowledgement-only interruption. Campfire owns integration.
