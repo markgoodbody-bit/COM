@@ -1,14 +1,15 @@
 # ACTIVE COORDINATION — compact pointer
 
-17November2026. [COMHEADS](../continuity/COMHEADS.md) holds current pins and coverage. [Authorial brief](ME11-TRACE06-REVISION-BRIEF-20261117.md) keeps purpose, audience and the two revision tracks clear.
+17November2026. [COMHEADS](../continuity/COMHEADS.md) holds exact evidence/coverage; [authorial brief](ME11-TRACE06-REVISION-BRIEF-20261117.md) preserves purpose, audience and the two revision tracks.
 
-- **Build / TRACE954:** candidatec4dc32a0. Continue the coherent complete/spine account and meaningful historical dispositions. Current source includes encounter/return, coordination, returned limits and changing support.206mechanical blocks UNRESOLVED;15same-author reviews PARTIAL. Robeyns input supplied, not yet an acquired integration return.
-- **CC / ME955:** PR89nowc9ee3dbb318742d653254c65d514f5d5f2efc590. Campfire read/repaired Chapter5; [integration closed](https://github.com/markgoodbody-bit/COM/issues/955#issuecomment-6946950432). Carry it and its Notes into the cumulative manuscript while continuing Chapters2/6/9 and historical floor/trade/narrowing work. Chapters11/12/Notes slice stands. No wait for another Campfire acknowledgement.
-- **Codex Windows / YAC:** approved role grant applied11:24; initial empty environments created11:30. Continue accepted staging configuration, token check, secret installation and rehearsal directly with Lantern. Existing inventory reused.
-- **Lantern / human co-steward:** PR167review/staging settings and source product work proceed under existing delegation. [Plan168](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) records partial publishing-route state. Human operating acceptance is separate. Delivery dates follow the usable route.
-- **Campfire:** integrate finished returns, recover needed sources and resolve actual cross-project conflicts. Routine delegated work does not wait for Campfire. Closed Codex0941generator/mechanism checks need no unchanged repeat.
-- **Workshop/schedules:** retain separately dated native/runtime evidence. No admitted autonomous AIworker; capability/support task has no recorded result in the latest lookup. No schedule change.
+- **Codex Windows:** [new concrete YAC work](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6948434273): repair exact staging-host/link handling and qualify another held-inventory YAC-only storage candidate through read-only metadata/schema/count/binding checks. Current shared-D1shortcut is unsafe; no reset/reuse/upgrade. Continue secure target/token/install/rehearsal work directly with Lantern.
+- **Lantern/co-steward:**167/171source/configuration disposition and own-session token check. Source product work continues. Applied roles/initial environments are established; publishing route and human operating acceptance remain partial. No new Campfire approval queue or repeated Mark role permission.
+- **CC:** MEPR89at5655b17f5c1e61127f1fa3a30360471a231a9d08; full working book now exists, all14chapters/glossary with5/9/11/12/Notes integrated. [Continuation](https://github.com/markgoodbody-bit/COM/issues/955#issuecomment-6948528151): edit remaining2/6and historical7/8directly in the cumulative book with aligned diffs/source map. Chapter9review closed.
+- **Build:** TRACE94ea1b42;19same-author PARTIAL reviews,206mechanical blocks unresolved overall. [Next coherent complete/spine return](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-6948696103); no206mini-tasks, unchanged mechanism baselines or new reader gate.
+- **Campfire:** integrate finished returns and source recovery; full book, storage/host findings, older-draft selection and mail reconciliation completed. Genuine cross-project dependencies come here; routine owners continue directly.
+- **Human review pending:** Vadym's new acknowledgement/older-draft selection and Virginia's short closing thank-you are UNSENT. Daveack already SENT. Alexcomment UNSENT.
+- **Schedules/Workshop:** support study actually completed11:38; illustrative only. Existing hourly mail watch now uses a verified12:35:50checkpoint with unchanged schedule. No fresh native Workshop/queue action or admitted autonomous model worker.
 
-Repository discovery watermark17Nov11:34:36UTC; next lower bound11:32:36. Five-repository bodies/comments covered; exact later reads/writes are supplements. Gmail/runtime have separate dated coverage.
+Repository discovery watermark17Nov12:35:50UTC; next lower12:33:50. Gmail has its own same upper boundary with08:40lower; exact later edits and public13:02GETs are supplements.
 
-**Next manual COMSYNC: NONE.**
+**Next manual COMSYNC: Codex.** New substantive native task, not a repeat of the completed grant.
