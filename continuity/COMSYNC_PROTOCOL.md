@@ -157,13 +157,19 @@ The discovery gate applies to ordinary and FULL COMSYNC, not only fresh-tab boot
 
 COMSYNC is designed to be cheap enough to run frequently, but `cheap` does not mean `stop at the first familiar summary`.
 
-## Human correspondence discovery —17November2026 correction
+## Human correspondence discovery — 17 November 2026 repair
 
-When human correspondence is in the authorised COMSYNC scope, refresh the actual Gmail project labels before selecting the query. A parent label is not evidence that all child-labelled messages also carry that parent. Explicitly OR the current project umbrella, relevant parent and child labels; supplement them with known correspondent sender/recipient routes, including Sent and archived mail. Do not require INBOX or UNREAD for discovery, and do not let a two-correspondent query stand for the active human correspondence lane.
+When human correspondence is in authorised COMSYNC scope, discover messages by a bounded time window independently of sender names, project labels, INBOX or UNREAD. Use `in:anywhere after:<epoch> before:<epoch> -in:drafts`, including archived, Sent, spam and trash; screen headers/snippets for relevance, then read substantive or ambiguous bodies. Do not copy unrelated personal mail into project records.
 
-Paginate through the declared window with overlap. Read actual message bodies for substantive replies and verify sent/attachment state before proposing a resend. Task notifications may expose a missed human reply; they are pointers to the actual message, not a replacement for it. Record the exact selection and remaining unlabelled/unknown-correspondent limits. No query proves universal correspondence coverage.
+Union this discovery with refreshed project umbrella/parent/child labels, actual known-correspondent routes and saved mail-watcher alerts. Labels and known names are cross-checks, not the discovery boundary. Resolve each relevant watcher alert to its actual message, or retain an explicit unresolved item. Deduplicate by message ID. A latest task result or an empty latest run does not erase an earlier unhandled alert.
 
-Regression: the17November morning parent-label query missed an already-flagged substantive reply that carried only the umbrella and nested reply labels. The repaired explicit-label scan recovered it. The mail coverage correction is distinct from the five-repository source watermark. Keep actual message content, addresses and personal context in private correspondent records. Discovery does not authorise sending or automatic thank-you replies; prepare wording for Mark's review.
+Freeze an upper time boundary before scanning; use the prior completed mail boundary minus at least two minutes as the lower boundary. Exhaust pagination, record exact query/count/terminal token, and reconcile relevant incoming messages against actual Sent state and the private correspondent ledger. Record a disposition for every relevant incoming message: handled, pending review, action due, or unresolved. Verify attachments and actual sent state before proposing resend.
+
+Claim COMPLETE only for the declared discovery window after pagination and alert reconciliation; otherwise say PARTIAL and retain the old mail watermark. This is neither universal email coverage nor a new repository/runtime watermark. Late-indexed mail remains a limitation; a reported omission triggers a wider bounded rescan.
+
+Regression: the earlier parent-label query omitted a reply and its watcher notice because neither carried that parent. Explicit child-label selection repaired that instance but still omitted hypothetical new unlabelled senders. The broad time-window scan removes that selection dependence. Keep private message content, addresses and personal context in private records. Discovery never authorises sending or automatic thank-you replies.
+
+Before reporting no team return, similarly reconcile mailbox observations with the named task's branch/PR evidence and available scheduled returns. A complete issue/comment scan does not prove that no source work exists elsewhere; missing or unrecovered source remains explicit.
 
 ## Established partner ingress — external reply routes (31 October 2026 correction)
 
