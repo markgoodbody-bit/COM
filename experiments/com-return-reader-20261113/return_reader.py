@@ -109,6 +109,8 @@ def audit(data, details=False):
     rows = data['events']
     groups = defaultdict(list)
     unpreserved = 0
+    identity_status_defaulted = 0
+    identity_status_defaulted_grouped = 0
     task_ids = set()
     return_ids = set()
     task_identities = defaultdict(set)
@@ -124,6 +126,10 @@ def audit(data, details=False):
         eid = row.get('event_id')
         preserved = (row.get('identity_status', 'PRESERVED') == 'PRESERVED'
                      and src and eid and src != 'UNKNOWN' and eid != 'UNKNOWN')
+        if 'identity_status' not in row:
+            identity_status_defaulted += 1
+            if preserved:
+                identity_status_defaulted_grouped += 1
         if not preserved:
             unpreserved += 1
         else:
@@ -180,6 +186,9 @@ def audit(data, details=False):
         'records': len(rows),
         'distinct_preserved_identities': len(groups),
         'unpreserved_identity_records': unpreserved,
+        'identity_status_defaulted_records': identity_status_defaulted,
+        'identity_status_defaulted_grouped_records': identity_status_defaulted_grouped,
+        'identity_default_caveat': 'Missing identity_status defaults to PRESERVED for compatibility; preservation is not verified and grouped defaulted identities are assumptions.',
         'same_identity_redeliveries': duplicate_count,
         'identity_conflicts': len(conflicts),
         'status_claim_counts': {key: statuses[key] for key in sorted(STATUSES)},
@@ -236,3 +245,4 @@ def main(argv=None):
 
 if __name__ == '__main__':
     sys.exit(main())
+
