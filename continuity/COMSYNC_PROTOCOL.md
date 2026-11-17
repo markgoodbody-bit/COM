@@ -157,6 +157,14 @@ The discovery gate applies to ordinary and FULL COMSYNC, not only fresh-tab boot
 
 COMSYNC is designed to be cheap enough to run frequently, but `cheap` does not mean `stop at the first familiar summary`.
 
+## Human correspondence discovery —17November2026 correction
+
+When human correspondence is in the authorised COMSYNC scope, refresh the actual Gmail project labels before selecting the query. A parent label is not evidence that all child-labelled messages also carry that parent. Explicitly OR the current project umbrella, relevant parent and child labels; supplement them with known correspondent sender/recipient routes, including Sent and archived mail. Do not require INBOX or UNREAD for discovery, and do not let a two-correspondent query stand for the active human correspondence lane.
+
+Paginate through the declared window with overlap. Read actual message bodies for substantive replies and verify sent/attachment state before proposing a resend. Task notifications may expose a missed human reply; they are pointers to the actual message, not a replacement for it. Record the exact selection and remaining unlabelled/unknown-correspondent limits. No query proves universal correspondence coverage.
+
+Regression: the17November morning parent-label query missed an already-flagged substantive reply that carried only the umbrella and nested reply labels. The repaired explicit-label scan recovered it. The mail coverage correction is distinct from the five-repository source watermark. Keep actual message content, addresses and personal context in private correspondent records. Discovery does not authorise sending or automatic thank-you replies; prepare wording for Mark's review.
+
 ## Established partner ingress — external reply routes (31 October 2026 correction)
 
 COM's issue/PR-body discovery alone does **not** cover messages that an independent collaborator carries on a different authorised repository or subscribed PR. When the current work involves a partner, and on a FULL COMSYNC in which that partner is an active project lane, resolve the partner's *latest declared* reply route and inspect its new/updated discussion and source pointers. Do not substitute the partner's wake/notification PR or an old COM welcome issue for its actual inbox. Record the latest observed sender, message ID and time, unanswered questions, and whether a receipt/SEEN actually followed. If the route is inaccessible, say `PARTNER_INGRESS_PARTIAL`; never infer silence or absence.
