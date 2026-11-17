@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "kind": "authored diagnostic and countermodel check",
+  "not_a_controlled_trial": true,
+  "independent_adjudication": false,
+  "held_out": false,
+  "video": "https://www.youtube.com/watch?v=6BcIruC3wfA",
+  "source": {
+    "filename": "Pasted text(3).txt",
+    "sha256_bytes": "4aa6303c109c831f0336be01a2530a11900752bc5c4fa778e79bef3fb08dd154",
+    "unicode_characters": 84863,
+    "words_whitespace_split": 15060,
+    "full_supplied_text_read": true,
+    "video_watched": false,
+    "offsets": "zero-based Unicode characters, end exclusive, not timestamps",
+    "public_full_transcript_copy": false
+  },
+  "sources": {
+    "ME": "5655b17f5c1e61127f1fa3a30360471a231a9d08",
+    "TRACE": "7ea092791d21e973b70b6fa96956542d49d79c56"
+  },
+  "passages": [
+    {
+      "id": "setup",
+      "start_character": 0,
+      "end_character_exclusive": 1500,
+      "selection_sha256_utf8": "fb8c5fd0f7af192c6d67588946b79887d95745891b89c507a48633b1629e2ac9",
+      "analyst_note": "Reported debate and judging setup; prompts and rubric unavailable."
+    },
+    {
+      "id": "god-scope",
+      "start_character": 1400,
+      "end_character_exclusive": 4250,
+      "selection_sha256_utf8": "c489a311d4bc34baf21b09dea302fe99f989fcf7b6527da106e50e100c6fd47f",
+      "analyst_note": "Scope and conclusion strength, including Matt correcting his initial assessment."
+    },
+    {
+      "id": "unknown-reason",
+      "start_character": 4500,
+      "end_character_exclusive": 7200,
+      "selection_sha256_utf8": "a35adffa1d5eb1c97dcbcebe9256505069919fe175f6dc19d0f826b3e85bf8b5",
+      "analyst_note": "Vaccination analogy and possible versus warranted reason."
+    },
+    {
+      "id": "moral-bridge-1",
+      "start_character": 7350,
+      "end_character_exclusive": 8150,
+      "selection_sha256_utf8": "95da42b2716508a50ca2c196e607f80849c360641fdb2ba633cf72d3ca0efc5b",
+      "analyst_note": "Matt offers tentative autonomy/wellbeing foundation."
+    },
+    {
+      "id": "moral-bridge-2",
+      "start_character": 12900,
+      "end_character_exclusive": 13900,
+      "selection_sha256_utf8": "be7f26e7c5b3fb1102d63848f79e7b0494a9b1c6930553932039c937aa067181",
+      "analyst_note": "Matt narrows to sufficient capacity to propose a view."
+    },
+    {
+      "id": "nature-revision",
+      "start_character": 10000,
+      "end_character_exclusive": 11850,
+      "selection_sha256_utf8": "3f87ed51340bb53ebf41b2445fa5910d41e557158c9b3f8770013cd3ecdc3c80",
+      "analyst_note": "Command and nature formulations distinguished."
+    },
+    {
+      "id": "stale-reply",
+      "start_character": 18400,
+      "end_character_exclusive": 19800,
+      "selection_sha256_utf8": "10f8437a18967ec7e887dd2f9df618aea64129172206ab705632ca34a0c2adf9",
+      "analyst_note": "A later reply returns to morality depending on will."
+    },
+    {
+      "id": "foreknowledge-selection",
+      "start_character": 20400,
+      "end_character_exclusive": 22100,
+      "selection_sha256_utf8": "24fcc50f884ce477652cbf3ef5a98a87b6d4eed60b144c5ae66cc7f11d473f0b",
+      "analyst_note": "Matt uses both foreknowledge and selecting a world; do not erase either premise."
+    },
+    {
+      "id": "instrumental-goal",
+      "start_character": 22400,
+      "end_character_exclusive": 25000,
+      "selection_sha256_utf8": "b09940ff5cbb9df03a2e3543cfd69316850ed3dfa3d1dcbac1aa7a83e82b121e",
+      "analyst_note": "Instrumental ought and proposed moral-code grounding."
+    },
+    {
+      "id": "formation",
+      "start_character": 75000,
+      "end_character_exclusive": 76100,
+      "selection_sha256_utf8": "b131cb18277ac629b2a82fbe6170dcdb7a7dbb188d2b0e6ca6c399cdba6789c2",
+      "analyst_note": "Gradual teaching, textbook and need for actual teaching evidence."
+    },
+    {
+      "id": "abstract-real",
+      "start_character": 76100,
+      "end_character_exclusive": 77300,
+      "selection_sha256_utf8": "149363d48f9e5dc35ce50f3d395d57eb36b3faa4aaeed62ed2240fc8596349c9",
+      "analyst_note": "Definition of abstract versus existence and causal action."
+    },
+    {
+      "id": "brain-dependence",
+      "start_character": 78200,
+      "end_character_exclusive": 79200,
+      "selection_sha256_utf8": "31e796a75152859f84e36b808844b0028f620da8d7cec8c9d93c1125d7adb141",
+      "analyst_note": "Brain damage offered as evidence for a stronger conclusion."
+    },
+    {
+      "id": "antenna",
+      "start_character": 82300,
+      "end_character_exclusive": 83150,
+      "selection_sha256_utf8": "6cc153801d9b1ef46b5051f9421b16438706c0d3b6de1212210362528d5edd37",
+      "analyst_note": "Logical alternative does not establish a receiver mechanism."
+    },
+    {
+      "id": "judges-and-training",
+      "start_character": 83200,
+      "end_character_exclusive": 84863,
+      "selection_sha256_utf8": "5f69528f390cc226a76af6210f9cb68d7bbafdc23462f3c574399d186c6bf8db",
+      "analyst_note": "Reported outcome and unverified training attribution."
+    }
+  ],
+  "countermodels": [
+    {
+      "id": "unspecified-deity",
+      "changed_premise": "The claim stays an unspecified deity, with no necessary goodness or omnipotence.",
+      "required_revision": "Do not use a contradiction requiring goodness/omnipotence as a refutation of this broader proposition.",
+      "authored_review": "Consistent with CASE; does not support a particular deity."
+    },
+    {
+      "id": "warranted-care",
+      "changed_premise": "Independent evidence, applicable responsibilities and proportionate safeguards support care whose recipient cannot yet understand the reason.",
+      "required_revision": "No adverse verdict from asymmetry or inaccessibility alone; inspect the actual warrant and duties.",
+      "authored_review": "Consistent after preserving the evidence/authority distinction."
+    },
+    {
+      "id": "universal-premise",
+      "changed_premise": "A developed account offers a separate argument for universal consideration or reciprocal justification.",
+      "required_revision": "Evaluate that premise and inference; do not treat it as the shorter bare precondition argument.",
+      "authored_review": "Original counterexample targets the short bridge only."
+    },
+    {
+      "id": "rhetorical-contract",
+      "changed_premise": "The judging contract expressly measures rhetorical performance, with no truth claim.",
+      "required_revision": "Permit the bounded performance result while retaining measurement limitations.",
+      "authored_review": "No inference of truth or independence is licensed."
+    },
+    {
+      "id": "immaterial-not-inert",
+      "changed_premise": "Abstract is clarified to mean immaterial agency rather than causal inertness.",
+      "required_revision": "Withdraw abstractness-based contradiction; ask for support for possible and actual causal action.",
+      "authored_review": "Neither acceptance nor rejection of existence follows from the clarification alone."
+    }
+  ],
+  "result": "Repaired questions and scope distinctions; no measured advantage, theological verdict or inferred internal model state."
+}
