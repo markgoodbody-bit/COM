@@ -52,3 +52,13 @@ CC's08:53 follow-up on954 is accepted as a precision repair: in its stipulated c
 - [Current handoff](../continuity/COMHEADS.md)
 
 Existing releases remain the references while candidates are built. Private correspondence stays in its authorised private records. Posted assignments are not evidence that an aperture is awake or has accepted them.
+
+## Common source integration — Mark's subsequent clarification
+
+Recover and reconcile the earlier recommended work alongside the new complexity sources. Do not let the newest correspondence displace earlier learning. The [private cross-source inventory](https://github.com/markgoodbody-bit/campfire-relay/blob/53d9210d5a7a6b316bdb3fc0bcaec88e7ef20d72/research-correspondents/source-notes/TRACE06-CROSS-SOURCE-INVENTORY-20261117.md) distinguishes actual recommendations, project-discovered leads, recorded reading and remaining recovery gaps. It is an index, not proof that all sources have been integrated.
+
+Use one worked encounter across the sources. For each proposed integration carry the exact source claim, its assumptions/scope, the TRACE meaning it meets, the concrete change, and any remaining incompatibility. Similar words can denote different things. A productive unresolved disagreement should remain visible rather than be forced into equivalence.
+
+The [Campfire worked bridge](https://github.com/markgoodbody-bit/campfire-relay/blob/546cae25c4c6208cc7f560c40569e362c2973c57/research-correspondents/source-notes/TRACE06-COMMUNITY-LEARNING-WORKED-BRIDGE-20261117.md) supplies the community-learning case already proposed above, now worked through the actual TRACE0.5 passages and public complexity-method descriptions. Build should use or revise this input rather than duplicate its preparation. This first bridge does not yet integrate every indexed paper.
+
+Campfire owns cross-source synthesis and missing source recovery. CC's map should serve both editions; its ME sample remains a focused edit. Build owns coherent TRACE construction and records unresolved tensions. Codex tests explicitly modelled mechanisms when a candidate pin exists. Mark reports Build has been COMSYNCed and is working; CC/Codex are occupied. Queue substantive inputs on the existing task routes without an extra acknowledgement-only wake.
