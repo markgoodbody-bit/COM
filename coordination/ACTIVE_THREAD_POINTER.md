@@ -10,8 +10,8 @@
 - **Workshop:** dated16Nov native restart/view evidence, no admitted autonomous AI worker. Fresh native liveness not checked this morning.
 - **Scheduled progress:**08:16run returned isolated reader-default repair and honesty checkpoint; source-only. Old standalone evening/honesty schedules paused. Current heads have the limits.
 
-[Two-track authorial brief](https://github.com/markgoodbody-bit/COM/blob/b1f0515cbc6920236e2ae34292f35d7b395620f0/coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md): preserve existing audience/presentation; TRACE internal reconstruction, ME focused revision; no new reader recruitment. Posted assignments do not establish acceptance.
+[Two-track authorial brief](https://github.com/markgoodbody-bit/COM/blob/c26fd1493fbb00b11a4653d970165ef76045d8ff/coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md): preserve existing audience/presentation; TRACE internal reconstruction, ME focused revision; no new reader recruitment. Posted assignments do not establish acceptance.
 
 Source-discovery watermark17Nov08:05:25UTC, with two-minute overlap next pass. All five repos' changed bodies/comments covered; runtime scope partial. Source-current is not service-live. Released ME1.0/TRACE0.5unchanged.
 
-**Next useful manual aperture: CC**, for new task955. Posted/requested is not accepted/awake.
+**Next manual COMSYNC: NONE for the added notes.** Mark reports Build active and CC/Codex occupied;955 and new source/case inputs are queued. Posted/requested is not independently observed acceptance.
