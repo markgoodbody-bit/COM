@@ -10,17 +10,19 @@ Repository discovery covered 18 November 16:16:00–22:11:25 GMT. The later mail
 
 | Owner | Evidence now held | Continue with |
 |---|---|---|
-| **Codex Windows / YAC** | Lantern reviewed PR171 at `7608793` and returned three source changes. | Continue STOP setup with admission closed, homepage collision refusal and fixture preservation, and actual MCP worker coverage. Native target creation awaits Mark's storage answers and the reviewed staging configuration. [Review](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988424211) |
+| **Codex Windows / YAC** | [Draft PR173](https://github.com/markgoodbody-bit/yet-another-clearing/pull/173) contains the STOP rehearsal profile, homepage setup batch and MCP request tests. All three hosted service jobs passed at `ce464cb`. | Review and integrate the staging changes. Native targets and the hosted rehearsal follow Mark's two storage decisions. [Service run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44413314151) |
 | **Lantern / human co-steward** | PR172 merged and the read check passed on main. PR167/171 reviews returned. | Two storage choices are with Mark via Campfire. [Read run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44368068480) · [Question](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) |
 | **CC / ME955** | PR89 remains5655b17f; full14-chapter manuscript/glossary with5/9/11/12/Notes integrated. No later CC source return acquired. | Remaining2/6and historical7/8passes directly in the cumulative book, aligned diffs/source map. No per-chapter Campfire permission gate. |
 | **Build / TRACE954** | Current source970218ad has candidate/spine navigation. Build reports22same-author PARTIAL reviews/206mechanical blocks unresolved. | Coherent complete/spine construction and related semantic reconciliation groups. Preserve meanings inside the new architecture; no206mini-task loop or new broad reader gate. |
 | **Campfire** | Evening delta recorded. Two morning replies were sent. | The private combined reply awaits Mark and the storage questions are ready. [Evening return](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-20261118.md) |
 
-## YAC read check passed and staging review is back
+## YAC read check passed and staging source fixes are ready
 
 Lantern's [PR172](https://github.com/markgoodbody-bit/yet-another-clearing/pull/172) merged at 18:17:23 GMT. The [manual run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44368068480) succeeded on main `30c6777`, including its Cloudflare read step. Lantern reports 41 checks.
 
-[PR167](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167#pullrequestreview-5963087859) needs the runner directory set in a step. A [candidate patch](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/YAC-167-RUNNER-TEMP.patch) checks clean against `ad9069b` and `7608793` and passed local workflow parsing and path checks. Build owns adoption and validation. [PR171](https://github.com/markgoodbody-bit/yet-another-clearing/pull/171#pullrequestreview-5963088092) has the three staging source changes listed above. No hosted deploy or STOP rehearsal was observed.
+[Draft PR173](https://github.com/markgoodbody-bit/yet-another-clearing/pull/173) was opened at 22:37 GMT over PR171 `7608793`. The [workflow commit](https://github.com/markgoodbody-bit/yet-another-clearing/commit/903f879e68ba0d668538e868d0307f182ba6a873) gives Build a standalone change for PR167. The second commit adds the operator-available API STOP rehearsal profile with admission closed, the collision-refusing homepage batch with fixture readback, and MCP Worker request tests with SDK and fetch stubs. Local service checks passed 312 tests plus six workflow checks. GitHub's [three service jobs](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44413314151) passed on `ce464cb`.
+
+Review and source integration can proceed now. Live Cloudflare rehearsal requires the staging resources.
 
 Lantern [asked Mark for two storage decisions](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) before resources are created. Source fixes can proceed in the meantime. Codex can then create the staging targets and scoped deploy credential and run deploy, rollback and STOP. Human operating acceptance follows.
 
@@ -52,4 +54,4 @@ The project-progress task has a dated 08:28 return. The last held native Worksho
 
 All five issue collections and five separate comment collections reached their ends. Counts of changed items/comments were COM 0/0, TRACE 0/0, ME 0/0, Relay 0/0 and YAC 4/6. The separate PR167/171 reviews and main workflow run were inspected. [Coverage](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-COVERAGE.json).
 
-**Next manual COMSYNC: NONE.** Both reviews are already routed. Database allocation is with Mark in Campfire.
+**Next manual COMSYNC: NONE.** The [review draft](https://github.com/markgoodbody-bit/yet-another-clearing/pull/173) gives Build and Codex the source for their respective branches. The two [resource decisions](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) are with Mark.
