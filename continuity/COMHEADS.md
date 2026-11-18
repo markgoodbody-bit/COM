@@ -6,13 +6,17 @@ Repository discovery covered 18 November 16:16:00–22:11:25 GMT. The later mail
 
 [Orientation](FRAMEWORK_HEAD.md) · [Owners](../coordination/ACTIVE_THREAD_POINTER.md) · [authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md). A fresh Campfire should also read the [private personal-context entry](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE_PERSONAL_CONTEXT.md); project status alone is insufficient personal continuity.
 
+## Construction priorities
+
+Give ME 1.1 and TRACE 0.6 the next construction time. Carry a wait on the specific action that needs a person's decision, missing evidence or scarce resources. YAC's database decisions apply to Cloudflare provisioning and live rehearsal. Build and Codex can integrate the tested source on their existing routes while ME and TRACE work continues. Use the exact result of the next source change for the handoff.
+
 ## Current owners and concrete work
 
 | Owner | Evidence now held | Continue with |
 |---|---|---|
 | **Codex Windows / YAC** | [Draft PR173](https://github.com/markgoodbody-bit/yet-another-clearing/pull/173) contains the STOP rehearsal profile, homepage setup batch and MCP request tests. All three hosted service jobs passed at `ce464cb`. | Review and integrate the staging changes. Native targets and the hosted rehearsal follow Mark's two storage decisions. [Service run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44413314151) |
 | **Lantern / human co-steward** | PR172 merged and the read check passed on main. PR167/171 reviews returned. | Two storage choices are with Mark via Campfire. [Read run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44368068480) · [Question](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) |
-| **CC / ME955** | PR89 remains5655b17f; full14-chapter manuscript/glossary with5/9/11/12/Notes integrated. No later CC source return acquired. | Remaining2/6and historical7/8passes directly in the cumulative book, aligned diffs/source map. No per-chapter Campfire permission gate. |
+| **CC / ME955** | Draft PR89 now at `651de18`. Chapter 6 is integrated in the cumulative book alongside Chapters 5, 9, 11 and 12. [Manuscript](https://github.com/markgoodbody-bit/mechanical-ethics/blob/651de18a81db3acce9317650858c646841cd58a7/working-editions/v1.1-drafts/cc-literature-sample-20261117/ME11-WORKING-MANUSCRIPT.md#6-the-clock-and-the-hand-on-the-door) | Continue Chapter 2 and historical passes for Chapters 7 and 8 in the same manuscript and source map. |
 | **Build / TRACE954** | Current source970218ad has candidate/spine navigation. Build reports22same-author PARTIAL reviews/206mechanical blocks unresolved. | Coherent complete/spine construction and related semantic reconciliation groups. Preserve meanings inside the new architecture; no206mini-task loop or new broad reader gate. |
 | **Campfire** | Evening delta recorded. Two morning replies were sent. | The private combined reply awaits Mark and the storage questions are ready. [Evening return](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-20261118.md) |
 
@@ -28,7 +32,7 @@ Lantern [asked Mark for two storage decisions](https://github.com/markgoodbody-b
 
 ## ME1.1 and TRACE0.6: current construction
 
-ME [full working manuscript](https://github.com/markgoodbody-bit/mechanical-ethics/blob/5655b17f5c1e61127f1fa3a30360471a231a9d08/working-editions/v1.1-drafts/cc-literature-sample-20261117/ME11-WORKING-MANUSCRIPT.md) and [PR89](https://github.com/markgoodbody-bit/mechanical-ethics/pull/89) retain the17November integration. All14chapters/glossary exist; several bodies still retain released1.0text. Both assembled source diffs reapply exactly, with8artifacts previously read back. Current work is focused revision of the human book, not replacement by a checklist. [Existing CC continuation](https://github.com/markgoodbody-bit/COM/issues/955#issuecomment-6948528151).
+ME [full working manuscript](https://github.com/markgoodbody-bit/mechanical-ethics/blob/651de18a81db3acce9317650858c646841cd58a7/working-editions/v1.1-drafts/cc-literature-sample-20261117/ME11-WORKING-MANUSCRIPT.md#6-the-clock-and-the-hand-on-the-door) and [PR89](https://github.com/markgoodbody-bit/mechanical-ethics/pull/89) now include the 18 November Chapter 6 pass at `651de18`. The catalogue example distinguishes measured time from a usable occasion to learn. The prevention passage credits adaptive planning on lead time. The strict prevention comparison and its local authority and contestability conditions were retained. Both cumulative diffs reapply exactly to the released source, all other chapter bodies match the prior draft, and seven changed blobs were read back. The Notes, source map and excerpt are aligned. Continue Chapter 2 and historical 7/8 through the [existing CC route](https://github.com/markgoodbody-bit/COM/issues/955#issuecomment-6948528151).
 
 TRACE [candidate](https://github.com/markgoodbody-bit/TRACE/blob/970218ad2c65d80ecb91706799090f83e5ea5be4/research/trace-0.6-foundations/build-reconstruction/CANDIDATE.md) and [spine](https://github.com/markgoodbody-bit/TRACE/blob/970218ad2c65d80ecb91706799090f83e5ea5be4/research/trace-0.6-foundations/build-reconstruction/SPINE.md) now link short sections to expanded material, the donor/case index and released reference. Campfire checked7first-paragraph extracts and7corresponding section links. That is a bounded navigation check, not validation of the changed generator, every semantic disposition or reader understanding.
 
@@ -54,4 +58,4 @@ The project-progress task has a dated 08:28 return. The last held native Worksho
 
 All five issue collections and five separate comment collections reached their ends. Counts of changed items/comments were COM 0/0, TRACE 0/0, ME 0/0, Relay 0/0 and YAC 4/6. The separate PR167/171 reviews and main workflow run were inspected. [Coverage](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-COVERAGE.json).
 
-**Next manual COMSYNC: NONE.** The [review draft](https://github.com/markgoodbody-bit/yet-another-clearing/pull/173) gives Build and Codex the source for their respective branches. The two [resource decisions](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) are with Mark.
+**Next manual COMSYNC: NONE.** Build and CC have source work on their existing routes. Mark's two YAC resource decisions apply to native staging.
