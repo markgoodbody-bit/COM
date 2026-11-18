@@ -2,7 +2,7 @@
 
 **18 November 2026.** HOW CAN WE MAKE A BETTER FUTURE? ME/TRACE is a portable middle-out language for change, formation, worthwhile possibilities, harm, correction and answerability. Tests challenge claims, not that purpose.
 
-Repository discovery covered 18 November 10:12:09–16:16:01 GMT after the morning sync. Mail discovery complete through 16:16:01 GMT. [Afternoon return](https://github.com/markgoodbody-bit/campfire-relay/blob/ad1b7d18a88442706ed4ae2a774a2e698a0b6017/continuity/comsync-20261118/AFTERNOON-20261118.md) · [coverage](https://github.com/markgoodbody-bit/campfire-relay/blob/ad1b7d18a88442706ed4ae2a774a2e698a0b6017/continuity/comsync-20261118/AFTERNOON-COVERAGE.json) · [morning handoff](https://github.com/markgoodbody-bit/COM/blob/7ea220e1e24090fed6dc0f954cf38a6feb8abca8/continuity/COMHEADS.md).
+Repository discovery covered 18 November 16:16:00–22:11:25 GMT. The later mail watcher covers through 22:18:29 GMT. [Evening return](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-20261118.md) · [Coverage](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-COVERAGE.json) · [Afternoon return](https://github.com/markgoodbody-bit/campfire-relay/blob/ad1b7d18a88442706ed4ae2a774a2e698a0b6017/continuity/comsync-20261118/AFTERNOON-20261118.md).
 
 [Orientation](FRAMEWORK_HEAD.md) · [Owners](../coordination/ACTIVE_THREAD_POINTER.md) · [authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md). A fresh Campfire should also read the [private personal-context entry](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE_PERSONAL_CONTEXT.md); project status alone is insufficient personal continuity.
 
@@ -10,21 +10,19 @@ Repository discovery covered 18 November 10:12:09–16:16:01 GMT after the morni
 
 | Owner | Evidence now held | Continue with |
 |---|---|---|
-| **Codex Windows / YAC** | Owner-created read credential passed eight native reads and was installed in the staging GitHub environment. PR171 is at `7608793` with service CI passing. | Create staging targets and the scoped deploy credential once Lantern settles the staging and storage proposal. Then carry out the deploy, rollback and STOP rehearsal. [Native receipt](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6978573384) |
-| **Lantern / human co-steward** | Working owner-side read capability is available. The manual GitHub workflow is ready for source review. | Give the PR167/171 review and explicit staging and storage decision directly to Codex. |
+| **Codex Windows / YAC** | Lantern reviewed PR171 at `7608793` and returned three source changes. | Continue STOP setup with admission closed, homepage collision refusal and fixture preservation, and actual MCP worker coverage. Native target creation awaits Mark's storage answers and the reviewed staging configuration. [Review](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988424211) |
+| **Lantern / human co-steward** | PR172 merged and the read check passed on main. PR167/171 reviews returned. | Two storage choices are with Mark via Campfire. [Read run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44368068480) · [Question](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) |
 | **CC / ME955** | PR89 remains5655b17f; full14-chapter manuscript/glossary with5/9/11/12/Notes integrated. No later CC source return acquired. | Remaining2/6and historical7/8passes directly in the cumulative book, aligned diffs/source map. No per-chapter Campfire permission gate. |
 | **Build / TRACE954** | Current source970218ad has candidate/spine navigation. Build reports22same-author PARTIAL reviews/206mechanical blocks unresolved. | Coherent complete/spine construction and related semantic reconciliation groups. Preserve meanings inside the new architecture; no206mini-task loop or new broad reader gate. |
-| **Campfire** | Both morning replies sent. Afternoon comparison changes independently replayed on M1. | The private route holds the new reply for Mark's review and the source test receipt. [Afternoon return](https://github.com/markgoodbody-bit/campfire-relay/blob/ad1b7d18a88442706ed4ae2a774a2e698a0b6017/continuity/comsync-20261118/AFTERNOON-20261118.md) |
+| **Campfire** | Evening delta recorded. Two morning replies were sent. | The private combined reply awaits Mark and the storage questions are ready. [Evening return](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-20261118.md) |
 
-## YAC read access works and the staging decision is next
+## YAC read check passed and staging review is back
 
-Codex's owner-created read token passed eight bounded authenticated GETs and was installed at 12:20:24 GMT as a separate GitHub staging environment secret. This was Mark's chosen delivery route. [Native receipt](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6978573384) · [Current delivery plan](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168).
+Lantern's [PR172](https://github.com/markgoodbody-bit/yet-another-clearing/pull/172) merged at 18:17:23 GMT. The [manual run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44368068480) succeeded on main `30c6777`, including its Cloudflare read step. Lantern reports 41 checks.
 
-PR171 head `76087938ddb06fc3d7412d0ab14bd28de753df7f` contains the staging source repair and a manual read-check template. All three service jobs passed on that revision. The read workflow remains outside active Actions workflows. The eight real reads came from native execution. [PR171](https://github.com/markgoodbody-bit/yet-another-clearing/pull/171) · [CI run](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44303925170).
+[PR167](https://github.com/markgoodbody-bit/yet-another-clearing/pull/167#pullrequestreview-5963087859) needs the runner directory set in a step. A [candidate patch](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/YAC-167-RUNNER-TEMP.patch) checks clean against `ad9069b` and `7608793` and passed local workflow parsing and path checks. Build owns adoption and validation. [PR171](https://github.com/markgoodbody-bit/yet-another-clearing/pull/171#pullrequestreview-5963088092) has the three staging source changes listed above. No hosted deploy or STOP rehearsal was observed.
 
-Lantern now owns the PR167/171 review and the explicit decision about staging and storage. This includes safe treatment of retained scratch fixtures and separate API and homepage storage. When the configuration is settled, Codex can create the targets, install the limited deploy credential and record the deploy, rollback and STOP rehearsal. Human operating acceptance is a separate milestone.
-
-The earlier public observation at 10:26 GMT covered a homepage and API status read, with admission and join open at that point.
+Lantern [asked Mark for two storage decisions](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-6988326873) before resources are created. Source fixes can proceed in the meantime. Codex can then create the staging targets and scoped deploy credential and run deploy, rollback and STOP. Human operating acceptance follows.
 
 ## ME1.1 and TRACE0.6: current construction
 
@@ -46,12 +44,12 @@ Released ME1.0/TRACE0.5 remain unchanged. No new release, full inheritance, fiel
 
 ## Mail, scheduled returns and Workshop
 
-The [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/ad1b7d18a88442706ed4ae2a774a2e698a0b6017/continuity/MAIL-CURRENT.md) records the completed discovery through 16:16:01 GMT and the pending reply. The 15:53 mail task preceded the later follow-up. Both correspondent threads and their latest sent messages were checked. [Sent receipts](https://github.com/markgoodbody-bit/campfire-relay/blob/f6ffcd15121d25ebb765f3d85a8a0d44d3d9f746/continuity/comsync-20261118/SENT-RECEIPTS.json).
+The [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/97db5559c25ea0505efd9e14efe2d9095c76fe56/continuity/MAIL-CURRENT.md) covers through 22:18:29 GMT. No new human response appeared in the evening check. The combined draft still awaits review. Both threads were checked directly through 22:11:25 GMT.
 
 The project-progress task has a dated 08:28 return. The last held native Workshop observation is the 16 November restart and collector receipt. A new queue or autonomous worker observation is still due.
 
 ## Coverage and next owner
 
-Five issue collections and five separate comment collections reached their ends for the afternoon window. Counts of issues/comments were COM 2/1, TRACE 0/0, ME 0/0, Relay 0/0 and YAC 3/2. The YAC comments include the morning dispatch and afternoon return. PR167 and PR171 had empty review collections. [Coverage](https://github.com/markgoodbody-bit/campfire-relay/blob/ad1b7d18a88442706ed4ae2a774a2e698a0b6017/continuity/comsync-20261118/AFTERNOON-COVERAGE.json).
+All five issue collections and five separate comment collections reached their ends. Counts of changed items/comments were COM 0/0, TRACE 0/0, ME 0/0, Relay 0/0 and YAC 4/6. The separate PR167/171 reviews and main workflow run were inspected. [Coverage](https://github.com/markgoodbody-bit/campfire-relay/blob/ecf13ddd8e30b9aaa1ae1ddd8ecc895a0a3b89ea/continuity/comsync-20261118/EVENING-COVERAGE.json).
 
-**Next manual COMSYNC: Lantern.** The next useful return is the staging and storage decision alongside the source review.
+**Next manual COMSYNC: NONE.** Both reviews are already routed. Database allocation is with Mark in Campfire.
