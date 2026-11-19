@@ -1,5 +1,7 @@
 # COMHEADS — current short handoff
 
+**19 November update:** Mark answered yes to both YAC staging storage choices: a new empty API-only database in the last free D1 slot, and a separate namespace in `yac-admission-v2-scratch` for the staging homepage, preserving its existing fixture tables and rows. This supersedes the pending-decision statements below. [Decision and limits](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168). PR167 runner-context source correction is at [f00c5f8a](https://github.com/markgoodbody-bit/yet-another-clearing/commit/f00c5f8a97eb884cbcd8261b234f336b5c04553f); the five-workflow local checker passed and the negative check rejected an invalid expression. Hosted checks were queued when last observed. Source review, staging provisioning and rehearsal remain separate; no live change follows from this record.
+
 **19 November 2026.** HOW CAN WE MAKE A BETTER FUTURE? Mechanical Ethics and TRACE help people and AIs see changing conditions, worthwhile possibilities, harm, correction and who can answer for a decision. Test the claims while keeping that purpose in view.
 
 Repository discovery from 18 November 22:11 to 19 November 10:32 GMT, with the same results on the 10:43 recheck. [Morning evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/7a413d860b32fc12be4a141956188076175b27b0/continuity/comsync-20261119/MORNING.md) · [18 November handoff](https://github.com/markgoodbody-bit/COM/blob/37e117de576b5434d2f15da0f481a1870fead159/continuity/COMHEADS.md)
