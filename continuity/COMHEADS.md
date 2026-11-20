@@ -2,29 +2,32 @@
 
 **20 November 2026.** HOW CAN WE MAKE A BETTER FUTURE? Mechanical Ethics and TRACE help people and AIs see changing conditions, worthwhile possibilities, harm, correction and who can answer for a decision. Test the claims while keeping that purpose in view.
 
-Repository discovery ran 20 November 11:40:58–19:07:13 GMT. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/b4be3bc07700dcead997bb79f1b5a940b034258e/continuity/comsync-20261120/EVENING.md) · [Earlier COM heads](https://github.com/markgoodbody-bit/COM/blob/d58a8ec51daa93d8831f54e47ba2e75caa684158/continuity/COMHEADS.md)
+The evening discovery ran 20 November 11:40:58–19:07:13 GMT. The staging follow-up reached 20:23 GMT. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/8f1417a2ad557662b7490a7ec3f91be4c7790866/continuity/comsync-20261120/EVENING.md#later-staging-rehearsal-2021-gmt) · [Evening COM heads](https://github.com/markgoodbody-bit/COM/blob/549d06c9d352b189f93282eb286d96e39da749bc/continuity/COMHEADS.md)
 
 [Orientation](FRAMEWORK_HEAD.md) · [Owners](../coordination/ACTIVE_THREAD_POINTER.md) · [Authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md). Fresh Campfire can recover the [private personal-context entry](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE_PERSONAL_CONTEXT.md).
 
 ## Construction priorities
 
-Keep ME 1.1 and TRACE 0.6 moving on their working sources. YAC's staging workflows are active on main. Lantern's first MCP staging deploy awaits the PR 174 review fixes and the staging STOP custody handoff. [Lantern's return](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-7045992225) · [Delivery plan](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168)
+Keep ME 1.1 and TRACE 0.6 moving on their working sources. Lantern has deployed and exercised all three YAC services in staging. Staging STOP rehearsal activity is visible in [Actions](https://github.com/markgoodbody-bit/yet-another-clearing/actions). Lantern and the co-steward own the rehearsal readback. [Delivery plan](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168)
 
 ## Current owners and concrete work
 
 | Owner | Evidence now held | Continue with |
 | --- | --- | --- |
 | **Build** | TRACE 0.6 at `fac4750e` adds the warning-before-dispatch case and a short-spine link for tracing observation, authority and actual pause. | Continue the reconstruction; an independent reader trial on this case is still open. Follow-up YAC source uses main `d9fa7311`. [Dispatch case](https://github.com/markgoodbody-bit/TRACE/blob/fac4750e56c9137067e1f9485fd501edd24b310c/research/trace-0.6-foundations/build-reconstruction/CANDIDATE.md#a-warning-before-dispatch) |
-| **Lantern / co-steward** | Acknowledged both storage decisions, reviewed PR 174 and merged the staging-only workflows in PR 175. | Review the corrected PR 174 and take the existing staging rehearsal route after its source and custody handoffs. [Review](https://github.com/markgoodbody-bit/yet-another-clearing/pull/174#pullrequestreview-5995785122) · [PR 175](https://github.com/markgoodbody-bit/yet-another-clearing/pull/175) |
-| **Codex Windows / YAC** | Native staging resources and the publishing credential were returned earlier. PR 174 at `7b69b01b` has seven hosted jobs green. | Complete the source fixes and staging STOP custody handoff requested by Lantern. [PR 174](https://github.com/markgoodbody-bit/yet-another-clearing/pull/174) · [Current handoff](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-7045992225) |
+| **Lantern / co-steward** | Merged PR 174 and deployed all three services to staging. The rollback workflows read back the requested holding versions. | Complete the in-app and fallback staging STOP rehearsals. [Rehearsal receipts](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) |
+| **Codex Windows / YAC** | Returned the PR 174 fixes and staging STOP custody. Seven hosted checks passed on the returned head. | The native handoff is with the co-stewards. [Native return](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-7049540040) |
 | **CC / ME955** | PR 89 at `26b514fe` incorporates the Chapter 2 pace-of-change pass and the Chapter 9 comparison. | Continue the Chapter 7 and 8 historical passages in the same book. [CC return](https://github.com/markgoodbody-bit/COM/issues/955#issuecomment-6995254616) · [Manuscript](https://github.com/markgoodbody-bit/mechanical-ethics/blob/26b514fea1a4946f751b3061926b8b89ab6f5143/working-editions/v1.1-drafts/cc-literature-sample-20261117/ME11-WORKING-MANUSCRIPT.md) |
-| **Campfire** | Updated the delivery plan and verified the current public and correspondence readings. | Reconcile the next native and rehearsal receipts when returned. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/b4be3bc07700dcead997bb79f1b5a940b034258e/continuity/comsync-20261120/EVENING.md) |
+| **Campfire** | Reconciled the deploy and rollback receipts and checked the overlapping mail window. | Reconcile the remaining rehearsal evidence on return. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/8f1417a2ad557662b7490a7ec3f91be4c7790866/continuity/comsync-20261120/EVENING.md#later-staging-rehearsal-2021-gmt) |
 
-## YAC read check passed and staging source fixes are ready
+## YAC staging deploys and rollback evidence
 
-PR 175 merged at 16:21 GMT to YAC main `d9fa7311`. Its deploy, rollback and fallback STOP workflow sources select staging on main. The in-app STOP workflow uses staging on main too. All three push workflows passed. GitHub showed zero manual dispatches on main since activation. Public YAC reported admission and joining open at 19:11 GMT. [PR 175](https://github.com/markgoodbody-bit/yet-another-clearing/pull/175) · [Main service checks](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44772613400) · [Public status](https://api.yetanotherclearing.com/api/public/status)
+Lantern merged PR 174 at 20:12 GMT into YAC main `97b634c0`. The MCP, public API and homepage staging deploys passed their smoke checks. The last public read at 19:11 GMT showed admission and joining open. [Merge](https://github.com/markgoodbody-bit/yet-another-clearing/pull/174) · [Staging receipts](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168)
 
-Lantern's PR 174 review requests the staging addresses for smoke readback, removal of local paths from build receipts, staging logging and refreshed checksums. The co-stewards' protected staging STOP custody request also sits with Codex Windows. First MCP deploy, verified application bindings, rollback and STOP rehearsal are still due. [Review](https://github.com/markgoodbody-bit/yet-another-clearing/pull/174#pullrequestreview-5995785122) · [Current handoff](https://github.com/markgoodbody-bit/yet-another-clearing/pull/144#issuecomment-7045992225) · [Delivery plan](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168)
+All three initial rollback runs restored the requested holding versions. The API smoke passed. MCP initialization and the homepage agent text returned HTTP 503 during application smoke against their holding versions. [MCP rollback](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44809866980) · [API rollback](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44810091176) · [Homepage rollback](https://github.com/markgoodbody-bit/yet-another-clearing/actions/runs/44810208956)
+
+The application versions for MCP, public API and homepage were restored with passing smoke checks. [MCP](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7049726397) · [API](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7049740623) · [Homepage](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7049759485) Staging STOP rehearsal activity is visible in [Actions](https://github.com/markgoodbody-bit/yet-another-clearing/actions). Lantern and the co-steward own the rehearsal readback.
+
 
 ## ME1.1 and TRACE0.6: current construction
 
@@ -40,10 +43,10 @@ The fictional handoff replay shows why a current check and the choice to rely ne
 
 ## Mail, scheduled returns and Workshop
 
-Mail coverage extends to 19:07 GMT. The current private mail checkpoint carries the material reply and its draft follow-up. Square's public status and Framework record were read at 19:11 GMT. The latest available native Workshop receipt dates to 16 November. Current Workshop runtime, the installed Relay client and the private Square inbox remain unverified. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/b4be3bc07700dcead997bb79f1b5a940b034258e/continuity/comsync-20261120/EVENING.md)
+The overlapping mail check reached 20:15 GMT. The private checkpoint records the approved send. Square's public status and Framework record were read at 19:11 GMT. The latest native Workshop receipt available to Campfire dates to 16 November. Fresh Workshop runtime, installed Relay client and private Square inbox checks are due. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/8f1417a2ad557662b7490a7ec3f91be4c7790866/continuity/comsync-20261120/EVENING.md#later-staging-rehearsal-2021-gmt)
 
 ## Coverage and next owner
 
-Five issue/PR and five comment collections reached their ends. Changed YAC bodies were 144, 168, 174 and 175, with six comments in the discovery window. The formal review, workflow source, fresh public observations and private mail check were read separately. Delivery plan 168 was refreshed during this pass. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/b4be3bc07700dcead997bb79f1b5a940b034258e/continuity/comsync-20261120/EVENING.md)
+The evening discovery reached the ends of five issue/PR and five comment collections. The follow-up checked the native return, exact deploy and rollback receipts, workflow outcomes and the overlapping mail window. The ME and TRACE issue checks showed zero updates in that window. [Evening evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/8f1417a2ad557662b7490a7ec3f91be4c7790866/continuity/comsync-20261120/EVENING.md#later-staging-rehearsal-2021-gmt)
 
-**Next manual COMSYNC: Codex Windows.** Take the PR 174 fixes and staging STOP handoff on the existing native route.
+**Next manual COMSYNC: NONE.** Lantern and the co-steward have the staging rehearsal.
