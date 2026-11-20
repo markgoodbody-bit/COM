@@ -1,0 +1,74 @@
+name: ATRS Answerability Reproducible Corpus
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  current-finder-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Deterministic parser, membership and selection tests
+        run: |
+          python -m unittest competition/atrs_answerability/test_audit.py -v
+          python -m unittest competition/atrs_answerability/test_membership.py -v
+          python -m unittest competition/atrs_answerability/test_select_adjudication.py -v
+      - name: Freeze current finder membership
+        run: |
+          python competition/atrs_answerability/membership.py --out /tmp/atrs_membership.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/atrs_membership.json', encoding='utf-8'))
+          assert r['finder_declared_count'] == r['finder_enumerated_count'], r
+          assert r['finder_enumerated_count'] == r['search_api_count'], r
+          assert r['search_api_not_in_finder'] == [], r['search_api_not_in_finder']
+          assert r['finder_not_in_search_api'] == [], r['finder_not_in_search_api']
+          print('current finder membership:', r['finder_enumerated_count'])
+          PY
+      - name: Audit exact current finder and preserve source bytes
+        run: |
+          mkdir -p /tmp/atrs_html
+          python competition/atrs_answerability/audit.py \
+            --json-out /tmp/atrs_full.json \
+            --csv-out /tmp/atrs_full.csv \
+            --html-dir /tmp/atrs_html
+          python competition/atrs_answerability/select_adjudication.py \
+            /tmp/atrs_full.json \
+            --out /tmp/atrs_adjudication_selection.json
+          python - <<'PY'
+          import json, pathlib
+          m=json.load(open('/tmp/atrs_membership.json', encoding='utf-8'))
+          r=json.load(open('/tmp/atrs_full.json', encoding='utf-8'))
+          s=json.load(open('/tmp/atrs_adjudication_selection.json', encoding='utf-8'))
+          expected=m['finder_enumerated_count']
+          assert r['summary']['records'] == expected, (r['summary']['records'], expected)
+          assert len(r['records']) == expected
+          snapshots=list(pathlib.Path('/tmp/atrs_html').glob('*.html'))
+          assert len(snapshots) == expected, (len(snapshots), expected)
+          assert all(row.get('source_snapshot') for row in r['records'])
+          assert len({row['url'] for row in r['records']}) == expected
+          assert len({row['source_snapshot'] for row in r['records']}) == expected
+          assert s['records_total'] == expected
+          print(json.dumps(r['summary'], indent=2))
+          print('token-positive census:', len(s['token_positive_census']))
+          print('token-negative sample:', len(s['token_negative_sample']))
+          PY
+      - name: Preserve membership, audit, review selection and exact public source snapshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: atrs-reproducible-corpus-${{ github.run_id }}
+          path: |
+            /tmp/atrs_membership.json
+            /tmp/atrs_full.json
+            /tmp/atrs_full.csv
+            /tmp/atrs_adjudication_selection.json
+            /tmp/atrs_html
+          if-no-files-found: error
+          retention-days: 30
