@@ -1,5 +1,7 @@
 # COMHEADS — current short handoff
 
+**23 November 2026, later Build return.** The [navigator booking regression checks](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7114740811) are integrated on the Build working branch at `bd224d9b`. All 38 local reconstruction tests and both integrity checks pass. The source remains a draft; reader use and release are open. The earlier Build pins below are dated evidence.
+
 **23 November 2026, evening restart.** The [private Campfire restart and frontier handoff](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE-RESTART-20261123-EVENING.md) records the latest continuation. Build integrated the navigator corrections and returned the [working candidate](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7113828375), then [restored present-value meaning](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7114521478) and applied [CC’s wording correction](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7114541847). The latter return is the current Build pin. The afternoon and earlier evening entries below remain dated context.
 
 **23 November 2026, 14:30 GMT.** HOW CAN WE MAKE A BETTER FUTURE? Mechanical Ethics and TRACE help people and AIs see what is changing, what they can build together, and what an affected person can still correct before the consequences harden. Test the claims while keeping that purpose in view.
