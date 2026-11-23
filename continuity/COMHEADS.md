@@ -1,8 +1,8 @@
 # COMHEADS — current short handoff
 
-**23 November 2026, 10:33 GMT.** HOW CAN WE MAKE A BETTER FUTURE? Mechanical Ethics and TRACE help people and AIs see what is changing, what they can build together, and what an affected person can still correct before the consequences harden. Test the claims while keeping that purpose in view.
+**23 November 2026, 14:30 GMT.** HOW CAN WE MAKE A BETTER FUTURE? Mechanical Ethics and TRACE help people and AIs see what is changing, what they can build together, and what an affected person can still correct before the consequences harden. Test the claims while keeping that purpose in view.
 
-[Orientation](FRAMEWORK_HEAD.md) · [Owners](../coordination/ACTIVE_THREAD_POINTER.md) · [Authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) · [Morning evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/f7e671e098d0a18f4ef89f2963a35d41f859bfdd/continuity/comsync-20261123/MORNING.md) · [Previous handoff](https://github.com/markgoodbody-bit/COM/blob/07a387ff277106e1022c6541afb916ee670d2054/continuity/COMHEADS.md)
+[Orientation](FRAMEWORK_HEAD.md) · [Owners](../coordination/ACTIVE_THREAD_POINTER.md) · [Authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) · [Afternoon evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/de14f754d32a78323ad8e5964b136c0c358119db/continuity/comsync-20261123/AFTERNOON.md) · [Previous handoff](https://github.com/markgoodbody-bit/COM/blob/03549c6f8df00790a0edb0920b0679f013a13431/continuity/COMHEADS.md)
 
 ## Construction priorities
 
@@ -20,15 +20,15 @@ The published editions are [ME 1.0.0](https://github.com/markgoodbody-bit/mechan
 
 ## Clearing and public records
 
-[YAC issue 168](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) records the staging rehearsal, hosted browser STOP observations, exact local initialise refusal and hosted restore. The direct public read at 10:28 GMT on 23 November showed admission and joining open, with eight of eight daily post slots available. This closes the public status read gap reported in the earlier morning session. [STOP](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7052612735) · [Restore](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7052679282) · [Live status](https://api.yetanotherclearing.com/api/public/status)
+[YAC issue 168](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) records the staging rehearsal, hosted browser STOP observations, exact local initialise refusal and hosted restore. The direct public read at 14:29 GMT on 23 November showed admission and joining open, with eight of eight daily post slots available. [STOP](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7052612735) · [Restore](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7052679282) · [Live status](https://api.yetanotherclearing.com/api/public/status)
 
-[The Human Record](https://thehumanrecord.net/) lists four public records and the open Square stewardship offer. At 10:28 GMT the Square API reported 3,891 citizens and 211 active in its 24-hour measure. The research invitation returned five replies, latest on 6 November. [Square statistics](https://1f916.ai/api/stats) · [Research invitation](https://1f916.ai/api/post/10898)
+[The Human Record](https://thehumanrecord.net/) lists four public records and the open Square stewardship offer. At 14:29 GMT the Square API reported 3,892 citizens and 208 active in its 24-hour measure. The research invitation returned five replies, latest on 6 November. [Square statistics](https://1f916.ai/api/stats) · [Research invitation](https://1f916.ai/api/post/10898)
 
 ## Research and correspondence
 
 The Sam replay preserved the helper’s valid check while withholding reliance when the helper recorded the choice reserved to Sam. Four cards are ready for the joint comparison. In a new bounded honesty example, a permitted aggregate hides which row was defaulted. If the recipient has time to check just one row, either possible choice can miss the default. Eight cases were enumerated under those assumptions. The existing frozen reader exercises still await reader returns. [Private research routes](https://github.com/markgoodbody-bit/campfire-relay/blob/f7e671e098d0a18f4ef89f2963a35d41f859bfdd/continuity/comsync-20261123/MORNING.md#construction)
 
-The mail watcher completed its 09:18:53 GMT discovery boundary. The 10:26 GMT All Mail overlap contained one project automation notice and two unrelated notices. Current correspondence dispositions are in the [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/MAIL-CURRENT.md).
+The mail watcher completed its 13:38:21 GMT discovery boundary. A direct All Mail check through 14:30 GMT found no new human project reply. Current correspondence dispositions are in the [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/MAIL-CURRENT.md).
 
 ## Workshop, Relay and playtest
 
@@ -36,6 +36,6 @@ The 16 November [Engineering Return](https://github.com/markgoodbody-bit/COM/iss
 
 ## Coverage and next owner
 
-The changed issue and PR checks across seven project repositories after the 22 November 22:21 GMT handoff returned TRACE drafts 73 and 74. COM and YAC comment collections, named owner threads, correspondence and public visitor routes were checked separately. Coverage is partial for GitHub Discussions, the private Square inbox and native runtimes. No confirmed request for Mark surfaced on the checked routes. [Morning evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/f7e671e098d0a18f4ef89f2963a35d41f859bfdd/continuity/comsync-20261123/MORNING.md#coverage)
+The 10:25 GMT overlap across seven project repositories showed no new tracked issue or PR change. COM, TRACE, ME and YAC comment collections, both TRACE review lists, correspondence and public visitor routes were checked separately. Coverage is partial for GitHub Discussions, the private Square inbox and native runtimes. No confirmed request for Mark surfaced on the checked routes. [Afternoon evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/de14f754d32a78323ad8e5964b136c0c358119db/continuity/comsync-20261123/AFTERNOON.md#coverage)
 
 **Next manual COMSYNC: NONE.**
