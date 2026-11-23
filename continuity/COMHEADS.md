@@ -18,6 +18,8 @@ The Mechanical Ethics 1.2 reader edition and TRACE 0.6 reconstruction are the cu
 
 The published editions are [ME 1.0.0](https://github.com/markgoodbody-bit/mechanical-ethics/releases/tag/v1.0.0) and [TRACE 0.5.0](https://github.com/markgoodbody-bit/TRACE/releases/tag/v0.5.0). [Please Start From Here](https://pleasestartfromhere.com/) points to both.
 
+**Evening TRACE handoff.** The [0.6.1-exp.1 navigator experiment](https://github.com/markgoodbody-bit/TRACE/blob/0bb97fa80a826d176554c56129c806c6b0b1281f/research/trace-0.6-foundations/build-reconstruction/NAVIGATOR-0.6.1-exp.1.md) gives one workshop choice whose preference changes with the learner's aim. All 32 local tests passed. The [team assignment](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7112930866) is posted on #954 and routed to [Build](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-7112943788), [Codex](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-7112942719) and [CC](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-7112943260). [Codex reproduced the comparison](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7112970742) and showed that an attempt can fit while its qualified check completes after the learner leaves. Build and CC returns remain pending on this task in the evening thread read.
+
 ## Clearing and public records
 
 [YAC issue 168](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168) records the staging rehearsal, hosted browser STOP observations, exact local initialise refusal and hosted restore. The direct public read at 14:29 GMT on 23 November showed admission and joining open, with eight of eight daily post slots available. [STOP](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7052612735) · [Restore](https://github.com/markgoodbody-bit/yet-another-clearing/issues/168#issuecomment-7052679282) · [Live status](https://api.yetanotherclearing.com/api/public/status)
@@ -38,4 +40,4 @@ The 16 November [Engineering Return](https://github.com/markgoodbody-bit/COM/iss
 
 The 10:25 GMT overlap across seven project repositories showed no new tracked issue or PR change. COM, TRACE, ME and YAC comment collections, both TRACE review lists, correspondence and public visitor routes were checked separately. Coverage is partial for GitHub Discussions, the private Square inbox and native runtimes. No confirmed request for Mark surfaced on the checked routes. [Afternoon evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/de14f754d32a78323ad8e5964b136c0c358119db/continuity/comsync-20261123/AFTERNOON.md#coverage)
 
-**Next manual COMSYNC: NONE.**
+**Next manual COMSYNC: Build.**
