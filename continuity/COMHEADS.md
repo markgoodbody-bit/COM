@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-**23 November 2026, late Campfire.** A [private Money Game Part 3 reading and continuity record](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research/money-game-part3-20261123/CAMPFIRE-READING.md) records the source-based inquiry, temporary reviewer contributions and audiovisual access limits. Mark reports the Hi Ren comment was posted. Workshop operation has not been verified in this session. This is research, not a TRACE release.
+**23 November 2026, late Campfire.** Mark assigned the headset conversation to Campfire and the companion tab to Build for tonight. A [private Money Game Part 3 reading and continuity record](https://github.com/markgoodbody-bit/campfire-relay/blob/main/research/money-game-part3-20261123/CAMPFIRE-READING.md) records the source-based inquiry, temporary reviewer contributions and audiovisual access limits. Mark reports the Hi Ren comment was posted. Workshop operation has not been verified in this session. This is research, not a TRACE release.
 
 **23 November 2026, later Build return.** The [navigator booking regression checks](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7114740811) are integrated on the Build working branch at `bd224d9b`. All 38 local reconstruction tests and both integrity checks pass. The source remains a draft; reader use and release are open. The earlier Build pins below are dated evidence.
 
