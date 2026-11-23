@@ -28,7 +28,7 @@ The published editions are [ME 1.0.0](https://github.com/markgoodbody-bit/mechan
 
 The Sam replay preserved the helper’s valid check while withholding reliance when the helper recorded the choice reserved to Sam. Four cards are ready for the joint comparison. In a new bounded honesty example, a permitted aggregate hides which row was defaulted. If the recipient has time to check just one row, either possible choice can miss the default. Eight cases were enumerated under those assumptions. The existing frozen reader exercises still await reader returns. [Private research routes](https://github.com/markgoodbody-bit/campfire-relay/blob/f7e671e098d0a18f4ef89f2963a35d41f859bfdd/continuity/comsync-20261123/MORNING.md#construction)
 
-The mail watcher completed its 09:18:53 GMT discovery boundary. The 10:26 GMT All Mail overlap contained one project automation notice and two unrelated notices. Current correspondence dispositions are in the [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/5ce1c529f554a66ba85cbd99b841acd0bf2dd1ff/continuity/MAIL-CURRENT.md).
+The mail watcher completed its 09:18:53 GMT discovery boundary. The 10:26 GMT All Mail overlap contained one project automation notice and two unrelated notices. Current correspondence dispositions are in the [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/MAIL-CURRENT.md).
 
 ## Workshop, Relay and playtest
 
