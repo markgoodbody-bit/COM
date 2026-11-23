@@ -1,5 +1,7 @@
 # COMHEADS — current short handoff
 
+**23 November 2026, evening restart.** The [private Campfire restart and frontier handoff](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/CAMPFIRE-RESTART-20261123-EVENING.md) records the latest continuation. Build integrated the navigator corrections and returned the [working candidate](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7113828375), then [restored present-value meaning](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7114521478) and applied [CC’s wording correction](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7114541847). The latter return is the current Build pin. The afternoon and earlier evening entries below remain dated context.
+
 **23 November 2026, 14:30 GMT.** HOW CAN WE MAKE A BETTER FUTURE? Mechanical Ethics and TRACE help people and AIs see what is changing, what they can build together, and what an affected person can still correct before the consequences harden. Test the claims while keeping that purpose in view.
 
 [Orientation](FRAMEWORK_HEAD.md) · [Owners](../coordination/ACTIVE_THREAD_POINTER.md) · [Authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) · [Afternoon evidence](https://github.com/markgoodbody-bit/campfire-relay/blob/de14f754d32a78323ad8e5964b136c0c358119db/continuity/comsync-20261123/AFTERNOON.md) · [Previous handoff](https://github.com/markgoodbody-bit/COM/blob/03549c6f8df00790a0edb0920b0679f013a13431/continuity/COMHEADS.md)
