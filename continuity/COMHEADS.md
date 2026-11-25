@@ -4,6 +4,17 @@
 
 [Orientation](FRAMEWORK_HEAD.md) · [Active owners](../coordination/ACTIVE_THREAD_POINTER.md) · [Authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) · [25 November morning evidence, private](https://github.com/markgoodbody-bit/campfire-relay/blob/d6e2a84a044aba4f9948ff80de260604e066fe81/continuity/comsync-20261125/MORNING.md) · [24 November morning evidence, private](https://github.com/markgoodbody-bit/campfire-relay/blob/23cdfe743cca4ae30a7f4de969db02ccc5d304e6/continuity/comsync-20261124/MORNING.md) · [Campfire restart, 25 November](https://github.com/markgoodbody-bit/campfire-relay/blob/bb6564136e3e23b46693dd8e5ee8a45fad2772d6/continuity/comsync-20261125/CAMPFIRE-RESTART.md) · [Previous full handoff and historical evidence](https://github.com/markgoodbody-bit/COM/blob/7da94b0a468e66cb0a90dffb3107eaef30d29971/continuity/COMHEADS.md)
 
+## TRACE 0.6 team orders, 25 November
+
+At 11:43 GMT Campfire verified delivery of Mark’s [commission and worked starting passage](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7161399605) to the three owner inboxes. Build takes the next manual COMSYNC. CC and Codex Windows can work independently as soon as their tabs are open. Substantive returns belong on [COM #954](https://github.com/markgoodbody-bit/COM/issues/954).
+
+| Owner | What to return |
+| --- | --- |
+| [Build](https://github.com/markgoodbody-bit/COM/issues/877#issuecomment-7161406912) | Put a worked choice and its glyphs in the short reading, linked to the complete mathematical account. Show what the learner’s correction changes. Return both passages at one commit, the checks, the disposition of the four named 0.5 blocks and the next missing family. |
+| [CC](https://github.com/markgoodbody-bit/COM/issues/874#issuecomment-7161407383) | Finish the existing Cedar Rooms comparison. After Rowan has paid the fare, identify who can make a usable offer, who asks Rowan and who follows up the loss even if Rowan declines. Return the passages or the smallest needed edit. |
+| [Codex Windows](https://github.com/markgoodbody-bit/COM/issues/873#issuecomment-7161407800) | Test the two meanings of B. Keep the learner’s prospects and today’s agreement fixed, move the cost of the helper’s extra time, and show who needs to agree to a second session. Return both records and a readable fix. |
+| Campfire | Checked both bicycle outcomes across 44 finite mixes of 20- and 40-minute windows. Read the owners’ returned work against the short reading, then carry forward what a fresh reader can and cannot recover. |
+
 ## Construction priorities
 
 | Owner | Latest return | Next use |
@@ -39,4 +50,4 @@ The [morning handoff](https://github.com/markgoodbody-bit/campfire-relay/blob/d6
 
 GitHub lists [handover PR 956](https://github.com/markgoodbody-bit/COM/pull/956) as [requiring a review](https://api.github.com/search/issues?q=repo%3Amarkgoodbody-bit%2FCOM%20is%3Apr%20is%3Aopen%20head%3Abuild%2Ftrace-choice-witness-handoff-20261124%20review%3Arequired&per_page=5). At `40629f2d` the submitted and requested review lists were empty, as were the check runs and commit statuses on that revision. The approval count and an eligible reviewer remain unknown. [Campfire returned the result to Build](https://github.com/markgoodbody-bit/COM/issues/954#issuecomment-7159619151). Build can continue from its linked working manuscript. The staging hostname and reviewer-key custody decisions sit with the YAC human co-steward.
 
-**Next manual COMSYNC: NONE.**
+**Next manual COMSYNC: Build.**
