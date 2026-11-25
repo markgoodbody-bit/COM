@@ -1,6 +1,6 @@
 # COMHEADS — current short handoff
 
-**24 November 2026, Europe/London.** How can we make a better future? Keep what people want to make possible alongside what they could lose, what remains uncertain, and who can still change the outcome. Mark’s starting commitment is “don’t distort the account”. Regard starts with recognition. The order of the later layers stays open.
+**Project snapshot of 24 November 2026, with TRACE returns dated 25 November (Europe/London).** How can we make a better future? Keep what people want to make possible alongside what they could lose, what remains uncertain, and who can still change the outcome. Mark’s starting commitment is “don’t distort the account”. Regard starts with recognition. The order of the later layers stays open.
 
 [Orientation](FRAMEWORK_HEAD.md) · [Active owners](../coordination/ACTIVE_THREAD_POINTER.md) · [Authorial brief](../coordination/ME11-TRACE06-REVISION-BRIEF-20261117.md) · [Morning evidence, private](https://github.com/markgoodbody-bit/campfire-relay/blob/23cdfe743cca4ae30a7f4de969db02ccc5d304e6/continuity/comsync-20261124/MORNING.md) · [Campfire restart](https://github.com/markgoodbody-bit/campfire-relay/blob/21b0de24543176f6481f602728a4593389807565/continuity/CAMPFIRE-RESTART-20261123-EVENING.md) · [Previous full handoff and historical evidence](https://github.com/markgoodbody-bit/COM/blob/7da94b0a468e66cb0a90dffb3107eaef30d29971/continuity/COMHEADS.md)
 
@@ -24,6 +24,10 @@ At 23:41:55 GMT the [public YAC status](https://api.yetanotherclearing.com/api/p
 ## Research and correspondence
 
 The working research asks whether an account can remain faithful as it passes between people or systems with different knowledge. The latest bounded example follows what an observer can infer from a public verdict and the action that follows it. The independent reader comparison is still open. Exact evidence and limitations are in the [private research index](https://github.com/markgoodbody-bit/campfire-relay/blob/a88f01cfe4b02ef7a7a661226a614a2e0cddb3f7/formation/honesty-long-run-20261110/INDEX.md). Correspondence and Sent dispositions are maintained in the [private mail checkpoint](https://github.com/markgoodbody-bit/campfire-relay/blob/main/continuity/MAIL-CURRENT.md).
+
+### Thunderbolts and Hi Ren
+
+25 November 2026. Ren makes music while the critic questions its value. Bob guides the team while they are still inside the Void. Two pairs of possible histories give the same immediate action and opposite answers about whether a valued future stays open after refusal. That later choice remains unknown from the observed action alone. The [private case notes and restart guide](https://github.com/markgoodbody-bit/campfire-relay/blob/9fe50e5f0b87ca82ff9fb28194b48899f418af8e/research/thunderbolts-hi-ren-20261125/README.md) preserve the sources and the evidence that could change this answer. All ten film notebook cells reproduced their saved output. Both standalone examples ran. [Replay receipt](https://github.com/markgoodbody-bit/campfire-relay/blob/9fe50e5f0b87ca82ff9fb28194b48899f418af8e/research/thunderbolts-hi-ren-20261125/REPLAY.json).
 
 ## Workshop, Relay and playtest
 
