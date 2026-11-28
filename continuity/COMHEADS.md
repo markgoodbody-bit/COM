@@ -13,6 +13,12 @@ The current reading editions are **ME 1.2.1** and **TRACE 0.6.1**. Use those pat
 
 [TRACE #102](https://github.com/markgoodbody-bit/TRACE/pull/102) and [ME #89](https://github.com/markgoodbody-bit/mechanical-ethics/pull/89) carry the corrected texts. The [earlier 0.6 and 1.2 handover](https://github.com/markgoodbody-bit/COM/blob/38dbe4e4efd1871c347d22545becbb316cdc6ecc/continuity/COMHEADS.md#final-reading-editions--28-november) preserves those editions and the earlier checks. Mark holds public tagged release decisions.
 
+## Team review of ME 1.2.1 and TRACE 0.6.1 · 28 November
+
+Mark commissioned one review of both fixed editions. Six in-session Codex readers returned findings. In TRACE the partial tool check needs an explicit assumption about the loan. Both books need to distinguish a lost opportunity from a later recovery and state whether receipt at a deadline counts. In ME's Robodebt example, name the two departments so a reader can follow the failed referral. The complete TRACE 0.5.0 source in the 0.6.1 PDF matched the release checksum, and the attached examples passed all 62 tests. [Findings, exact counterexample and download checks](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245384317)
+
+Build has the paired case and predecessor comparison. CC has the reader and evidence check. Codex Windows has the downloaded files and boundary cases. Lantern was invited to try a fictional Clearing case. Return once per owner to [COM #957](https://github.com/markgoodbody-bit/COM/issues/957) or the established project thread. The reading copies keep their patch numbers. Mark holds the tagged release decision.
+
 ## TRACE 0.6 team, 28 November
 
 At working revision `7ca9b883`, C can keep a conversation private and still book the held workshop place. The clerk can amend an unsupported entry using the desk’s own delivery receipt. If C’s authorised contrary report reaches the clerk, the historical usability claim is disputed. The [worked handover](https://github.com/markgoodbody-bit/TRACE/blob/7ca9b88373cb39be5a1b13a41d9c8c37e2d6dc70/research/trace-0.6-foundations/build-reconstruction/CANDIDATE.md#what-could-c-do-with-that-notice) and its [source comparison](https://github.com/markgoodbody-bit/TRACE/blob/7ca9b88373cb39be5a1b13a41d9c8c37e2d6dc70/research/trace-0.6-foundations/build-reconstruction/SEMANTIC-REVIEW.md#when-c-keeps-the-conversation-private-28-november-2026) keep those sources and the offer separate. The earlier [reopening and held booking](https://github.com/markgoodbody-bit/TRACE/blob/7ca9b88373cb39be5a1b13a41d9c8c37e2d6dc70/research/trace-0.6-foundations/build-reconstruction/CANDIDATE.md#what-can-a-do-while-the-reopening-is-unconfirmed) carries A’s choice when a new offer arrives.
@@ -65,6 +71,6 @@ All 21 changed issue and PR body, conversation and inline-review feeds across se
 
 [Public handover PR 956](https://github.com/markgoodbody-bit/COM/pull/956) still [requires review](https://api.github.com/search/issues?q=repo%3Amarkgoodbody-bit%2FCOM%20is%3Apr%20is%3Aopen%20head%3Abuild%2Ftrace-choice-witness-handoff-20261124%20review%3Arequired&per_page=5). GitHub names no requested reviewer.
 
-The [current reading editions](#final-reading-editions--28-november) supersede the afternoon’s manual Build instruction. Further work on these texts starts with a specific erratum or new authorial direction.
+The [team review](https://github.com/markgoodbody-bit/COM/issues/957) is the current commission for these editions. Build has the first named-owner return to make.
 
-**Next manual COMSYNC: NONE.**
+**Next manual COMSYNC: Build.**
