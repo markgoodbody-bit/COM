@@ -6,18 +6,14 @@
 
 ## Final reading editions · 28 November
 
-The current reading editions are **ME 1.2.1** and **TRACE 0.6.1**. Use those patch numbers in handovers and filenames.
+The reviewed reading editions are **Mechanical Ethics 1.2.2** and **TRACE 0.6.2**. Use these exact patch numbers in handovers and filenames.
 
-- [Mechanical Ethics 1.2.1](https://github.com/markgoodbody-bit/mechanical-ethics/blob/7539c0e03ef10505699ff6d355fad5a6ad1eaa3a/working-editions/v1.2.1/ME-1.2.1.md) · [PDF](https://github.com/markgoodbody-bit/mechanical-ethics/raw/7539c0e03ef10505699ff6d355fad5a6ad1eaa3a/working-editions/v1.2.1/ME-1.2.1.pdf). Both clock diagrams are on page 17. Chapter 10 restores the student's account of closing a complaint. The closing notes follow an accepted finding to an enforcement gap.
-- [TRACE 0.6.1](https://github.com/markgoodbody-bit/TRACE/blob/d892d8f20b68c5de4d586633e5830f2bd62459f9/editions/0.6.1/TRACE-0.6.1.md) · [PDF](https://github.com/markgoodbody-bit/TRACE/raw/d892d8f20b68c5de4d586633e5830f2bd62459f9/editions/0.6.1/TRACE-0.6.1.pdf) · [Short spine](https://github.com/markgoodbody-bit/TRACE/blob/d892d8f20b68c5de4d586633e5830f2bd62459f9/editions/0.6.1/spine.md). The invitation is on the cover, the correction and notebook replay starts on page 19, and the complete 0.5 reference starts on page 59. All four original JSON blocks matched the source. The examples extracted from the PDF passed 62 tests.
+- [Mechanical Ethics 1.2.2, illustrated PDF](https://github.com/markgoodbody-bit/mechanical-ethics/raw/462b5f342ec3e12c023861aa52720248c82ae8e5/working-editions/v1.2.2/ME-1.2.2.pdf) · [Manuscript](https://github.com/markgoodbody-bit/mechanical-ethics/blob/462b5f342ec3e12c023861aa52720248c82ae8e5/working-editions/v1.2.2/ME-1.2.2.md) · [Edition record](https://github.com/markgoodbody-bit/mechanical-ethics/blob/462b5f342ec3e12c023861aa52720248c82ae8e5/working-editions/v1.2.2/README.md#edition-record). All fourteen chapters and four illustrations are present. The reader can follow a successful claim to someone who can stop the next deduction. Robodebt names who had to refer relevant decisions and whose Secretary had to consider them.
+- [TRACE 0.6.2, full PDF](https://github.com/markgoodbody-bit/TRACE/raw/a603bb2d6eb0b4bc70698bc684b1d27affb7327d/editions/0.6.2/TRACE-0.6.2.pdf) · [Manuscript and mathematics](https://github.com/markgoodbody-bit/TRACE/blob/a603bb2d6eb0b4bc70698bc684b1d27affb7327d/editions/0.6.2/TRACE-0.6.2.md) · [Short spine](https://github.com/markgoodbody-bit/TRACE/blob/a603bb2d6eb0b4bc70698bc684b1d27affb7327d/editions/0.6.2/spine.md) · [Runnable examples](https://github.com/markgoodbody-bit/TRACE/raw/a603bb2d6eb0b4bc70698bc684b1d27affb7327d/editions/0.6.2/TRACE-0.6.2-examples.zip). A 17:14 guide reply can still work at the duty desk. At the coordinator the same time misses the booking lock. The cupboard calculation states its conditional assumption. The complete 0.5 reference is on pp. 60–94 with the byte-exact source attached.
 
-[TRACE #102](https://github.com/markgoodbody-bit/TRACE/pull/102) and [ME #89](https://github.com/markgoodbody-bit/mechanical-ethics/pull/89) carry the corrected texts. The [earlier 0.6 and 1.2 handover](https://github.com/markgoodbody-bit/COM/blob/38dbe4e4efd1871c347d22545becbb316cdc6ecc/continuity/COMHEADS.md#final-reading-editions--28-november) preserves those editions and the earlier checks. Mark holds public tagged release decisions.
+Build, CC and Codex Windows delivered the commissioned reviews. Campfire applied the accepted findings to the two working PRs. All nine commands printed in TRACE ran from the PDF attachment, including all 62 tests. The final downloads matched the checked copies. Mark retains the public tagged release decision. [Decisions, downloads and replay results](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245690730) · [Build](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245501081) · [CC](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245523392) · [Codex Windows](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245535983) · [ME #89](https://github.com/markgoodbody-bit/mechanical-ethics/pull/89) · [TRACE #102](https://github.com/markgoodbody-bit/TRACE/pull/102)
 
-## Team review of ME 1.2.1 and TRACE 0.6.1 · 28 November
-
-Mark commissioned one review of both fixed editions. Six in-session Codex readers returned findings. In TRACE the partial tool check needs an explicit assumption about the loan. Both books need to distinguish a lost opportunity from a later recovery and state whether receipt at a deadline counts. In ME's Robodebt example, name the two departments so a reader can follow the failed referral. The complete TRACE 0.5.0 source in the 0.6.1 PDF matched the release checksum, and the attached examples passed all 62 tests. [Findings, exact counterexample and download checks](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245384317)
-
-Build has the paired case and predecessor comparison. CC has the reader and evidence check. Codex Windows has the downloaded files and boundary cases. Lantern was invited to try a fictional Clearing case. Return once per owner to [COM #957](https://github.com/markgoodbody-bit/COM/issues/957) or the established project thread. The reading copies keep their patch numbers. Mark holds the tagged release decision.
+The [1.2.1 and 0.6.1 handover](https://github.com/markgoodbody-bit/COM/blob/81abdc120f67eb1aaf5ed5254a3c44fb6d4368eb/continuity/COMHEADS.md#final-reading-editions--28-november) retains the earlier downloads and review scope.
 
 ## TRACE 0.6 team, 28 November
 
@@ -71,6 +67,6 @@ All 21 changed issue and PR body, conversation and inline-review feeds across se
 
 [Public handover PR 956](https://github.com/markgoodbody-bit/COM/pull/956) still [requires review](https://api.github.com/search/issues?q=repo%3Amarkgoodbody-bit%2FCOM%20is%3Apr%20is%3Aopen%20head%3Abuild%2Ftrace-choice-witness-handoff-20261124%20review%3Arequired&per_page=5). GitHub names no requested reviewer.
 
-The [team review](https://github.com/markgoodbody-bit/COM/issues/957) is the current commission for these editions. Build has the first named-owner return to make.
+The commissioned [edition review and corrections](https://github.com/markgoodbody-bit/COM/issues/957#issuecomment-7245690730) are complete. A specific counterexample can go to the feedback route in either book.
 
-**Next manual COMSYNC: Build.**
+**Next manual COMSYNC: NONE.**
